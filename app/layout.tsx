@@ -1,11 +1,27 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
+import { Noto_Sans_KR, Noto_Serif_KR } from "next/font/google";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { BrushDefs } from "@/components/brush-defs";
 import "./globals.css";
 
 const SITE = "https://holdemmaster.com";
+
+const notoSansKr = Noto_Sans_KR({
+  // next/font 메타데이터상 latin 만 노출되나, Google이 제공하는 KR 웹폰트 파일에 한글이 포함됩니다.
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+  variable: "--font-noto-sans-kr",
+});
+
+const notoSerifKr = Noto_Serif_KR({
+  subsets: ["latin"],
+  weight: ["600", "700", "900"],
+  display: "swap",
+  variable: "--font-noto-serif-kr",
+});
 
 export const viewport: Viewport = {
   themeColor: "#0a1f10",
@@ -59,20 +75,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="ko">
+    <html lang="ko" className={`${notoSansKr.variable} ${notoSerifKr.variable}`}>
       <head>
-        {/* Pretendard Variable (한글 가독성 SOTA) — dynamic-subset, 비차단 로드 */}
-        <link rel="preconnect" href="https://cdn.jsdelivr.net" crossOrigin="anonymous" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
-        />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600;700;900&display=swap"
-        />
         {/* Organization JSON-LD (사이트 전역) */}
         <script
           type="application/ld+json"

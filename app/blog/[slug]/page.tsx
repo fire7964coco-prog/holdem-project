@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { notFound } from "next/navigation";
+import { getBlogLcpInfo, stripFirstBlogLcpBlock } from "@/lib/blog-lcp";
 import { POSTS, getPost } from "@/lib/posts";
 import BlogPostClient from "./blog-post-client";
 
@@ -20,10 +22,8 @@ export async function generateMetadata({
   const post = getPost(params.slug);
   if (!post) return { title: "포스트를 찾을 수 없습니다" };
 
-  // 본문 첫 이미지 추출 (LCP·OG 이미지)
-  const faqMatch = post.content.match(/:::faqcard\[([^\]]+)\]/);
-  const mdMatch = post.content.match(/!\[[^\]]*\]\(([^)\s]+)/);
-  const firstImg = faqMatch ? faqMatch[1] : mdMatch ? mdMatch[1] : null;
+  const lcp = getBlogLcpInfo(post.content);
+  const firstImg = lcp?.src ?? null;
   const ogImage = firstImg ? `${SITE}${firstImg}` : `${SITE}/opengraph.jpg`;
   const url = `${SITE}/blog/${post.slug}`;
 
@@ -61,10 +61,9 @@ export default function Page({ params }: { params: { slug: string } }) {
   const post = getPost(params.slug);
   if (!post) notFound();
 
-  // 본문 첫 이미지 — LCP preload 힌트로 사용
-  const faqMatch = post.content.match(/:::faqcard\[([^\]]+)\]/);
-  const mdMatch = post.content.match(/!\[[^\]]*\]\(([^)\s]+)/);
-  const firstImg = faqMatch ? faqMatch[1] : mdMatch ? mdMatch[1] : null;
+  const lcp = getBlogLcpInfo(post.content);
+  const firstImg = lcp?.src ?? null;
+  const contentForClient = lcp ? stripFirstBlogLcpBlock(post.content, lcp) : post.content;
   const url = `${SITE}/blog/${post.slug}`;
   const ogImage = firstImg ? `${SITE}${firstImg}` : `${SITE}/opengraph.jpg`;
 
@@ -118,20 +117,35 @@ export default function Page({ params }: { params: { slug: string } }) {
 
   const graph = [articleSchema, breadcrumbSchema, ...(faqSchema ? [faqSchema] : [])];
 
+  const heroSlot =
+    lcp != null ? (
+      <figure className="my-0 max-w-2xl mx-auto w-full">
+        <Image
+          src={lcp.src}
+          alt={lcp.alt.trim() || post.title}
+          width={lcp.width}
+          height={lcp.height}
+          priority
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
+          className="w-full h-auto rounded-xl border border-border bg-card/30"
+        />
+        {lcp.caption ? (
+          <figcaption className="text-center text-sm text-primary font-semibold mt-3 px-2 leading-snug">
+            {lcp.caption}
+          </figcaption>
+        ) : null}
+      </figure>
+    ) : undefined;
+
   return (
     <>
-      {firstImg && (
-        // LCP 이미지 우선 다운로드 — Next.js 가 <head> 로 호이스팅
-        // eslint-disable-next-line @next/next/no-page-custom-font
-        <link rel="preload" as="image" href={firstImg} fetchPriority="high" />
-      )}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({ "@context": "https://schema.org", "@graph": graph }),
         }}
       />
-      <BlogPostClient post={post} />
+      <BlogPostClient post={{ ...post, content: contentForClient }} heroSlot={heroSlot} />
     </>
   );
 }

@@ -1,5 +1,6 @@
 "use client";
 
+import type { ReactNode } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Clock, Tag, ChevronLeft, ChevronRight, Share2, Link2 } from "lucide-react";
@@ -230,7 +231,14 @@ function renderMarkdown(content: string): string {
     .replace(/^(?!<[h|u|t|h|l|d|p|r|b])(.+)$/gm, (m) => m.trim() ? m : '')
 }
 
-export default function BlogPost({ post }: { post: Post }) {
+export default function BlogPost({
+  post,
+  heroSlot,
+}: {
+  post: Post;
+  /** 서버(page.tsx)에서 next/image priority 로 올린 LCP 히어로 — 본문에서는 동일 블록 제거됨 */
+  heroSlot?: ReactNode;
+}) {
   const currentIndex = POSTS.findIndex((p) => p.slug === post.slug);
   const prevPost = currentIndex > 0 ? POSTS[currentIndex - 1] : null;
   const nextPost = currentIndex < POSTS.length - 1 ? POSTS[currentIndex + 1] : null;
@@ -310,6 +318,8 @@ export default function BlogPost({ post }: { post: Post }) {
                 ))}
               </div>
             </motion.header>
+
+            {heroSlot ? <div className="mb-8 -mx-0">{heroSlot}</div> : null}
 
             {/* Inline TOC — mobile only */}
             {hasToc && (
