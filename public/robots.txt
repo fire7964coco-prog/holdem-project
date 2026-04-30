@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://holdemmaster.com/sitemap.xml
+
+# Crawl-delay (optional, remove if not needed)
+Crawl-delay: 1

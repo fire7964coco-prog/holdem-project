@@ -1,0 +1,16 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background: primary amber/gold -->
+  <rect width="180" height="180" rx="36" fill="#DFAC2A"/>
+  <!-- Spade shape: dark green, centered -->
+  <path d="
+    M90 22
+    C 90 22, 36 56, 36 88
+    C 36 112, 60 122, 90 110
+    C 77 124, 74 142, 70 154
+    L110 154
+    C 106 142, 103 124, 90 110
+    C 120 122, 144 112, 144 88
+    C 144 56, 90 22, 90 22
+    Z
+  " fill="#04160C"/>
+</svg>
