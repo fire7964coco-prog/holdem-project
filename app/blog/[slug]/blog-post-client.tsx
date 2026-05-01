@@ -1,15 +1,22 @@
 "use client";
 
 import type { ReactNode } from "react";
+import dynamic from "next/dynamic";
 import Link from "next/link";
-import { motion } from "framer-motion";
 import { Clock, Tag, ChevronLeft, ChevronRight, Share2, Link2 } from "lucide-react";
 import { FaXTwitter, FaFacebookF } from "react-icons/fa6";
 import type { Post } from "@/lib/posts";
 import { POSTS } from "@/lib/posts";
-import { PokerOddsCalculator } from "@/components/poker-odds-calculator";
-import { QuizWidget } from "@/components/quiz-widget";
 import { useState, useRef } from "react";
+
+const PokerOddsCalculator = dynamic(
+  () => import("@/components/poker-odds-calculator").then((m) => m.PokerOddsCalculator),
+  { ssr: false, loading: () => <div className="h-32 rounded-xl bg-card animate-pulse" /> }
+);
+const QuizWidget = dynamic(
+  () => import("@/components/quiz-widget").then((m) => m.QuizWidget),
+  { ssr: false, loading: () => <div className="h-24 rounded-xl bg-card animate-pulse" /> }
+);
 
 function slugify(text: string): string {
   return text
@@ -288,11 +295,7 @@ export default function BlogPost({
           {/* Main content column */}
           <div className="min-w-0">
             {/* Article Header */}
-            <motion.header
-              initial={false}
-              animate={{ opacity: 1, y: 0 }}
-              className="mb-10"
-            >
+            <header className="mb-10">
               <div className="flex flex-wrap items-center gap-2 mb-4">
                 <span className="text-xs font-bold px-3 py-1 rounded-full bg-primary/15 text-primary border border-primary/25">
                   {post.category}
@@ -317,41 +320,29 @@ export default function BlogPost({
                   </span>
                 ))}
               </div>
-            </motion.header>
+            </header>
 
             {heroSlot ? <div className="mb-8 -mx-0">{heroSlot}</div> : null}
 
             {/* Inline TOC — mobile only */}
             {hasToc && (
-              <motion.div
-                initial={false}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.08 }}
-                className="xl:hidden bg-card border border-border rounded-2xl p-6 mb-6"
-              >
+              <div className="xl:hidden bg-card border border-border rounded-2xl p-6 mb-6">
                 <nav aria-label="목차">
                   <TocList headings={headings} />
                 </nav>
-              </motion.div>
+              </div>
             )}
 
                 {/* Interactive Calculator — 확률 계산기 포스트 & 홀덤 확률 완전 정복 */}
                 {(post.slug === "holdem-odds-calculator" || post.slug === "holdem-probability") && (
-                  <motion.div
-                    initial={false}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.09 }}
-                  >
+                  <div>
                     <PokerOddsCalculator />
-                  </motion.div>
+                  </div>
                 )}
 
                 {/* Article Body */}
-                <motion.article
+                <article
                   ref={contentRef}
-                  initial={false}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.1 }}
                   className="prose-holdem bg-card border border-border rounded-2xl p-6 md:p-10"
                 >
                   {post.content.includes(':::quiz:::')
@@ -382,7 +373,7 @@ export default function BlogPost({
                       />
                     )
                   }
-                </motion.article>
+                </article>
 
                 {/* Prev / Next Navigation */}
                 <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-4">
