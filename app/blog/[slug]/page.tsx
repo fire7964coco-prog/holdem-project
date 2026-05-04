@@ -117,24 +117,49 @@ export default function Page({ params }: { params: { slug: string } }) {
 
   const graph = [articleSchema, breadcrumbSchema, ...(faqSchema ? [faqSchema] : [])];
 
-  const heroSlot =
+  /**
+   * 첫 이미지(이전 LCP 후보)는 본문에서 제거되고 페이지 맨 하단 "이 글 전체 요약" 섹션으로 이동.
+   * 모바일 LCP를 이미지 → 제목 텍스트로 전환하기 위함이며 priority 미지정 → 기본 lazy 로드.
+   * OG/Twitter 이미지는 그대로 유지 (firstImg → ogImage).
+   */
+  const summarySlot =
     lcp != null ? (
-      <figure className="my-0 max-w-2xl mx-auto w-full">
-        <Image
-          src={lcp.src}
-          alt={lcp.alt.trim() || post.title}
-          width={lcp.width}
-          height={lcp.height}
-          priority
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
-          className="w-full h-auto rounded-xl border border-border bg-card/30"
-        />
-        {lcp.caption ? (
-          <figcaption className="text-center text-sm text-primary font-semibold mt-3 px-2 leading-snug">
-            {lcp.caption}
-          </figcaption>
-        ) : null}
-      </figure>
+      <section
+        aria-labelledby="post-summary-label"
+        style={{
+          marginTop: "60px",
+          borderTop: "1px solid hsl(var(--border))",
+          paddingTop: "32px",
+        }}
+      >
+        <p
+          id="post-summary-label"
+          style={{
+            textAlign: "center",
+            fontSize: "13px",
+            color: "hsl(var(--muted-foreground))",
+            marginBottom: "12px",
+          }}
+        >
+          📋 이 글 전체 요약
+        </p>
+        <figure className="my-0 max-w-2xl mx-auto w-full">
+          <Image
+            src={lcp.src}
+            alt={lcp.alt.trim() || post.title}
+            width={lcp.width}
+            height={lcp.height}
+            loading="lazy"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
+            className="w-full h-auto rounded-xl border border-border bg-card/30"
+          />
+          {lcp.caption ? (
+            <figcaption className="text-center text-sm text-primary font-semibold mt-3 px-2 leading-snug">
+              {lcp.caption}
+            </figcaption>
+          ) : null}
+        </figure>
+      </section>
     ) : undefined;
 
   return (
@@ -145,7 +170,7 @@ export default function Page({ params }: { params: { slug: string } }) {
           __html: JSON.stringify({ "@context": "https://schema.org", "@graph": graph }),
         }}
       />
-      <BlogPostClient post={{ ...post, content: contentForClient }} heroSlot={heroSlot} />
+      <BlogPostClient post={{ ...post, content: contentForClient }} summarySlot={summarySlot} />
     </>
   );
 }

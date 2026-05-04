@@ -240,11 +240,14 @@ function renderMarkdown(content: string): string {
 
 export default function BlogPost({
   post,
-  heroSlot,
+  summarySlot,
 }: {
   post: Post;
-  /** 서버(page.tsx)에서 next/image priority 로 올린 LCP 히어로 — 본문에서는 동일 블록 제거됨 */
-  heroSlot?: ReactNode;
+  /**
+   * 서버(page.tsx)에서 본문 첫 이미지를 추출·제거 후 "이 글 전체 요약" 섹션으로 만들어 전달.
+   * LCP를 제목 텍스트로 옮기기 위해 본문에서는 빠지고, 페이지 맨 하단(관련 글 다음)에 lazy 로드.
+   */
+  summarySlot?: ReactNode;
 }) {
   const currentIndex = POSTS.findIndex((p) => p.slug === post.slug);
   const prevPost = currentIndex > 0 ? POSTS[currentIndex - 1] : null;
@@ -321,8 +324,6 @@ export default function BlogPost({
                 ))}
               </div>
             </header>
-
-            {heroSlot ? <div className="mb-8 -mx-0">{heroSlot}</div> : null}
 
             {/* Inline TOC — mobile only */}
             {hasToc && (
@@ -423,6 +424,9 @@ export default function BlogPost({
                     </div>
                   </div>
                 )}
+
+                {/* 📋 이 글 전체 요약 — LCP 회피용으로 본문 첫 이미지를 페이지 최하단에 lazy 로드 */}
+                {summarySlot}
 
                 {/* Author Bio Card — E-E-A-T */}
                 <div className="mt-12 bg-card border border-border rounded-2xl p-6 flex items-start gap-5">
