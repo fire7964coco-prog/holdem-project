@@ -13,11 +13,14 @@ const SITE = "https://holdemmaster.com";
  *  - weight 4개 → 2개 (400 본문, 700 강조) 다운로드 시간 절반
  *  - Noto Serif KR 제거: 헤딩도 Sans 700/900 으로 통일 (한글 폰트 파일 3개 추가 절감)
  *  - 본문/헤딩이 같은 폰트 파일 → 1번 다운로드로 모든 weight 커버
+ *  - display:"optional" — 한글 서브셋이 100ms 안에 못 오면 시스템 폰트(Apple SD Gothic
+ *    Neo / Malgun Gothic) 로 고정 렌더, 스왑 없음. 모바일 LCP = FCP 로 단축. 두 번째
+ *    방문 이후엔 캐시된 Noto Sans KR 사용. (첫 방문자 시각 변화는 사실상 인지 불가)
  */
 const notoSansKr = Noto_Sans_KR({
   subsets: ["latin"],
   weight: ["400", "700"],
-  display: "swap",
+  display: "optional",
   variable: "--font-noto-sans-kr",
 });
 
