@@ -22,6 +22,7 @@ const NAV_LINKS = [
   { href: "/tournaments", label: "대회" },
   { href: "/quiz", label: "🃏 퀴즈" },
   { href: "/blog", label: "블로그" },
+  { href: "/about", label: "팀 소개" },
 ] as const;
 
 function DropdownMenu({
@@ -271,6 +272,7 @@ export function Header() {
               { href: "/tournaments", label: "홀덤 대회" },
               { href: "/quiz", label: "족보 퀴즈" },
               { href: "/blog", label: "전략 블로그" },
+              { href: "/about", label: "팀 소개" },
             ].map((link) => {
               const active = pathname.startsWith(link.href);
               return (
