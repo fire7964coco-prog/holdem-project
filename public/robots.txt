@@ -1,8 +1,5 @@
 User-agent: *
 Allow: /
 
-# Sitemap
+# 사이트맵 — 모든 URL trailing slash 없음 (next.config.mjs: trailingSlash:false 와 일치)
 Sitemap: https://holdemmaster.com/sitemap.xml
-
-# Crawl-delay (optional, remove if not needed)
-Crawl-delay: 1
