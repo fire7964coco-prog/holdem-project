@@ -74,6 +74,7 @@ export default function Page({ params }: { params: { slug: string } }) {
     "@type": "Article",
     headline: post.seoTitle || post.title,
     description: post.desc,
+    ...(post.tldr ? { abstract: post.tldr } : {}),
     datePublished: post.date,
     dateModified: post.updated || post.date,
     author: {

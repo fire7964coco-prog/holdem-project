@@ -336,6 +336,27 @@ export default function BlogPost({
               </div>
             </header>
 
+            {/* 한 줄 정답 — Featured Snippet 후보. 검색 의도에 가장 빠른 답.
+                 LCP 후보 텍스트 + Google 발췌 텍스트 진입을 동시에 노린다. */}
+            {post.tldr && (
+              <aside
+                aria-label="한 줄 정답"
+                className="mb-8 relative bg-gradient-to-br from-primary/10 via-primary/5 to-transparent border border-primary/30 rounded-2xl p-5 md:p-6"
+              >
+                <div className="flex items-start gap-3">
+                  <span
+                    className="flex-shrink-0 mt-0.5 inline-flex items-center gap-1 text-[11px] font-bold uppercase tracking-widest text-primary"
+                    aria-hidden="true"
+                  >
+                    💡 한 줄 정답
+                  </span>
+                </div>
+                <p className="mt-2 text-base md:text-lg text-foreground leading-relaxed font-medium">
+                  {post.tldr}
+                </p>
+              </aside>
+            )}
+
             {/* Inline TOC — mobile only · 모바일 LCP 개선용으로 기본 접힘 상태.
                  24+ 항목 TOC가 첫 화면을 차지해 LCP 후보가 되는 문제를 해결하면서
                  사용자가 클릭 시 펼쳐 볼 수 있도록 native <details> 사용 (JS 0). */}
