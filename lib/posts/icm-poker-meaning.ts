@@ -7,6 +7,7 @@ export const POST: Post = {
   desc: "【ICM이란】칩이 많아도 ICM 모르면 버블에서 틀린 판단을 합니다. ⚡토너먼트 칩을 실제 상금으로 환산하는 ICM의 핵심, 스택별 전략·버블 판단까지 실전 중심으로 완전 정리했습니다.",
   category: "토너먼트",
   date: "2026-04-16",
+  updated: "2026-05-06",
   readTime: "12분",
   emoji: "🏆",
   tags: ["ICM이란", "홀덤 ICM", "ICM 뜻", "포커 ICM", "토너먼트 ICM"],

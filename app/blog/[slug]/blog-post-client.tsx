@@ -306,7 +306,18 @@ export default function BlogPost({
                 <span className="flex items-center gap-1 text-xs text-muted-foreground">
                   <Clock className="w-3.5 h-3.5" /> {post.readTime} 읽기
                 </span>
-                <span className="text-xs text-muted-foreground">{post.date}</span>
+                <time dateTime={post.date} className="text-xs text-muted-foreground">
+                  {post.date} 작성
+                </time>
+                {post.updated && post.updated !== post.date && (
+                  <time
+                    dateTime={post.updated}
+                    className="text-xs px-2 py-0.5 rounded-full bg-primary/10 text-primary border border-primary/20"
+                    title="이 글은 최신 정보로 업데이트되었습니다"
+                  >
+                    {post.updated} 업데이트
+                  </time>
+                )}
               </div>
 
               <div className="text-6xl mb-6">{post.emoji}</div>

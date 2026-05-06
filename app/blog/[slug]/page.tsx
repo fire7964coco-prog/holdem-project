@@ -40,7 +40,7 @@ export async function generateMetadata({
       siteName: "홀덤마스터",
       locale: "ko_KR",
       publishedTime: post.date,
-      modifiedTime: post.date,
+      modifiedTime: post.updated || post.date,
       authors: ["홀덤마스터 편집팀"],
       tags: post.tags,
       images: [{ url: ogImage, width: 1200, height: 630, alt: post.title }],
@@ -53,6 +53,7 @@ export async function generateMetadata({
     },
     other: {
       "article:published_time": post.date,
+      "article:modified_time": post.updated || post.date,
     },
   };
 }
@@ -74,7 +75,7 @@ export default function Page({ params }: { params: { slug: string } }) {
     headline: post.seoTitle || post.title,
     description: post.desc,
     datePublished: post.date,
-    dateModified: post.date,
+    dateModified: post.updated || post.date,
     author: { "@type": "Person", name: "홀덤마스터 편집팀", url: SITE },
     publisher: {
       "@type": "Organization",
