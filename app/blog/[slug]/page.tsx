@@ -76,7 +76,12 @@ export default function Page({ params }: { params: { slug: string } }) {
     description: post.desc,
     datePublished: post.date,
     dateModified: post.updated || post.date,
-    author: { "@type": "Person", name: "홀덤마스터 편집팀", url: SITE },
+    author: {
+      "@type": "Organization",
+      name: "홀덤마스터 편집팀",
+      url: `${SITE}/about`,
+      logo: { "@type": "ImageObject", url: `${SITE}/favicon.svg` },
+    },
     publisher: {
       "@type": "Organization",
       name: "홀덤마스터",

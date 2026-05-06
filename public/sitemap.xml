@@ -15,6 +15,14 @@
     <priority>1.0</priority>
   </url>
 
+  <!-- 팀 소개 (E-E-A-T) -->
+  <url>
+    <loc>https://holdemmaster.com/about</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- 도구 -->
   <url>
     <loc>https://holdemmaster.com/calculator</loc>

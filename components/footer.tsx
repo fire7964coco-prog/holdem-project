@@ -121,7 +121,15 @@ export function Footer() {
         </div>
 
         <div className="border-t border-primary/12 pt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-muted-foreground leading-relaxed">
-          <p>&copy; {new Date().getFullYear()} 홀덤마스터. All rights reserved.</p>
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
+            <p>&copy; {new Date().getFullYear()} 홀덤마스터. All rights reserved.</p>
+            <Link
+              href="/about"
+              className="hover:text-primary transition-colors underline-offset-2 hover:underline"
+            >
+              팀 소개
+            </Link>
+          </div>
           <p className="text-center md:text-right opacity-80">
             본 사이트는 정보 제공 목적으로 운영되며, 실제 도박을 조장하지 않습니다. 만 19세 미만 이용 금지.
           </p>

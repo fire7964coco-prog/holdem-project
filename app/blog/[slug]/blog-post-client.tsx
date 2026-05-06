@@ -453,35 +453,72 @@ export default function BlogPost({
                 {/* 📋 이 글 전체 요약 — LCP 회피용으로 본문 첫 이미지를 페이지 최하단에 lazy 로드 */}
                 {summarySlot}
 
-                {/* Author Bio Card — E-E-A-T */}
-                <div className="mt-12 bg-card border border-border rounded-2xl p-6 flex items-start gap-5">
-                  <div className="w-16 h-16 rounded-full bg-primary/15 border-2 border-primary/30 flex items-center justify-center text-3xl flex-shrink-0">
-                    ♠
+                {/* Author Bio Card — E-E-A-T 강화. /about 으로 권한 페이지 연결 */}
+                <aside
+                  className="mt-12 bg-card border border-border rounded-2xl p-6 md:p-7"
+                  aria-label="작성자 정보"
+                >
+                  <div className="flex items-start gap-5 mb-4">
+                    <div className="w-16 h-16 rounded-full bg-primary/15 border-2 border-primary/30 flex items-center justify-center text-3xl flex-shrink-0">
+                      ♠
+                    </div>
+                    <div className="min-w-0 flex-1">
+                      <div className="text-xs text-muted-foreground mb-0.5">작성자</div>
+                      <div className="font-bold text-foreground text-lg mb-1">
+                        <Link href="/about" className="hover:text-primary transition-colors">
+                          홀덤마스터 편집팀
+                        </Link>
+                      </div>
+                      <p className="text-sm text-muted-foreground leading-relaxed">
+                        12년 경력의 포커 전략 전문가 팀. WSOP·KPT·APT 토너먼트 현장 취재 경험 보유.
+                        GTO 솔버(GTO+, PioSolver) 분석 기반의 데이터 중심 전략 콘텐츠를 제공합니다.
+                        모든 콘텐츠는 <strong className="text-foreground">실전 검증된 정보</strong>만을
+                        담습니다.
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <div className="text-xs text-muted-foreground mb-0.5">작성자</div>
-                    <div className="font-bold text-foreground text-lg mb-1">홀덤마스터 편집팀</div>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
-                      12년 경력의 포커 전략 전문가 팀. WSOP·KPT·APT 토너먼트 현장 취재 경험 보유.
-                      GTO 솔버(GTO+, PioSolver) 분석 기반의 데이터 중심 전략 콘텐츠를 제공합니다.
-                      모든 콘텐츠는 <strong className="text-foreground">실전 검증된 정보</strong>만을 담습니다.
-                    </p>
-                    <div className="mt-3 flex flex-wrap gap-2">
+
+                  {/* 권위·신뢰 시그널: 측정 가능한 운영 지표 */}
+                  <dl className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 border-t border-border">
+                    {[
+                      { label: "운영 경력", value: "12년+" },
+                      { label: "발행 글 수", value: "29편" },
+                      { label: "현장 취재", value: "WSOP·APT" },
+                      { label: "솔버 분석", value: "Pio · GTO+" },
+                    ].map(({ label, value }) => (
+                      <div key={label} className="text-center">
+                        <dt className="text-[10px] uppercase tracking-wider text-muted-foreground/80 mb-0.5">
+                          {label}
+                        </dt>
+                        <dd className="text-xs font-bold text-primary">{value}</dd>
+                      </div>
+                    ))}
+                  </dl>
+
+                  <div className="mt-4 pt-4 border-t border-border flex flex-wrap items-center justify-between gap-3">
+                    <div className="flex flex-wrap gap-2">
                       {[
                         { label: "포커 전략", href: "/strategy" },
                         { label: "GTO 분석", href: "/strategy" },
-                        { label: "토너먼트 전문", href: "/blog" },
-                        { label: "12년 경력", href: "/" },
+                        { label: "토너먼트", href: "/tournaments" },
                       ].map(({ label, href }) => (
-                        <Link key={label} href={href}>
-                          <span className="text-xs px-2.5 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary font-medium hover:bg-primary/25 hover:border-primary/50 transition-all cursor-pointer">
-                            {label}
-                          </span>
+                        <Link
+                          key={label}
+                          href={href}
+                          className="text-xs px-2.5 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary font-medium hover:bg-primary/25 hover:border-primary/50 transition-all"
+                        >
+                          {label}
                         </Link>
                       ))}
                     </div>
+                    <Link
+                      href="/about"
+                      className="text-xs font-semibold text-primary hover:underline inline-flex items-center gap-1"
+                    >
+                      편집팀 상세 소개 <ChevronRight className="w-3.5 h-3.5" />
+                    </Link>
                   </div>
-                </div>
+                </aside>
 
                 {/* Social Share Buttons */}
                 <div className="mt-8 bg-card border border-border rounded-xl p-5">
