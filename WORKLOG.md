@@ -73,13 +73,16 @@ AI가 쓴 글과 차별화되는 핵심 = **실제 경험(E-E-A-T의 첫 번째 
 
 ---
 
-### 2. sitemap.xml 규칙 (절대 원칙)
+### 2. sitemap.xml 규칙 (절대 원칙) — 2026-05-06 정책 변경
 
-**① 블로그 URL은 반드시 끝에 `/` 포함**
-- 서버가 `/blog/slug` → `/blog/slug/` 로 **301 자동 리디렉션** 함 (curl로 직접 확인)
-- 사이트맵에 `/` 없이 넣으면 → 구글이 리디렉션 오류로 판정
-- ✅ 올바른 형식: `https://holdemmaster.com/blog/holdem-cbet-strategy/`
-- ❌ 잘못된 형식: `https://holdemmaster.com/blog/holdem-cbet-strategy`
+> **⚠️ 정책 전환**: Next.js 마이그레이션 (`trailingSlash: false`) 으로 URL 정책 반전됨.
+> 과거 Vite 시절 정책 (slash 포함 필수) 은 폐기.
+
+**① 블로그 URL은 끝에 `/` 절대 금지**
+- `next.config.mjs` 의 `trailingSlash: false` 와 일치해야 함
+- canonical / OG url / sitemap 모두 slash 없이 통일
+- ✅ 올바른 형식: `https://holdemmaster.com/blog/holdem-cbet-strategy`
+- ❌ 잘못된 형식: `https://holdemmaster.com/blog/holdem-cbet-strategy/`
 
 **② 사이트맵에는 실제 존재하는 포스트만 등록**
 - 코드에 없는 포스트 URL 절대 추가 금지
@@ -103,15 +106,19 @@ AI가 쓴 글과 차별화되는 핵심 = **실제 경험(E-E-A-T의 첫 번째 
 
 ---
 
-### 4. 새 포스트 발행 체크리스트
+### 4. 새 포스트 발행 체크리스트 (Next.js 기준, 2026-05-06 갱신)
 
-- [ ] `src/data/posts/새포스트.ts` 파일 작성
-- [ ] `src/data/posts/index.ts` 에 import 추가
-- [ ] `src/pages/blog/roadmap.tsx` 에 `published: true` 설정
-- [ ] `public/sitemap.xml` 에 URL 추가 (끝에 `/` 필수)
-- [ ] 배포
+- [ ] `lib/posts/새포스트.ts` 파일 작성 (또는 `lib/posts.ts` 의 LEGACY_POSTS 배열에 추가)
+- [ ] `lib/posts/index.ts` 의 NEW_POSTS 에 import 추가 (개별 파일 방식일 때만)
+- [ ] **필수 메타필드**: slug · title · desc · category · date · `updated` · `tldr` · readTime · emoji · tags
+  - `updated` = 작성/갱신 시점 YYYY-MM-DD (E-E-A-T 신선도 신호)
+  - `tldr` = 검색 의도 직답 40~90자 (Featured Snippet · 모바일 LCP 후보 텍스트)
+- [ ] `app/blog/roadmap` 또는 관련 허브 글에 링크 (있는 경우)
+- [ ] `public/sitemap.xml` 에 URL 추가 (**끝 슬래시 없음**, lastmod·priority·changefreq)
+- [ ] `npm run build` 검증
+- [ ] 배포 (Vercel 자동) → Ready 확인
 - [ ] 서치 콘솔 URL 검사 → 색인 생성 요청
-- [ ] WORKLOG.md 발행 현황 업데이트
+- [ ] WORKLOG.md 발행 현황 + 엑셀 형식 표 업데이트
 
 ---
 
@@ -155,6 +162,106 @@ AI가 쓴 글과 차별화되는 핵심 = **실제 경험(E-E-A-T의 첫 번째 
 | holdem-pub-legal | 2026-04-14 | 홀덤펍 |
 | holdem-pub-first-visit-guide | 2026-04-13 | 홀덤펍 |
 | holdem-bubble-strategy | 2026-04-13 | 토너먼트 |
+
+---
+
+## 2026-05-06 — 모바일 LCP 회복 + E-E-A-T 강화 총력전
+
+> Lighthouse 모바일 81~89 → F12 데스크탑 93 / 폰 PSI 90 회복 + 1페이지 노출 위한 E-E-A-T 갭 5개 중 3개 메움 (작성자 권위, 신선도, Featured Snippet)
+
+### 1. 모바일 LCP 다단계 개선 (커밋 5건)
+
+**1단계: 본문 첫 이미지 → 페이지 맨 하단 "이 글 전체 요약" 섹션으로 이동**
+- `lib/blog-lcp.ts` 신설: faqcard 또는 markdown ![]() 첫 블록 추출/제거 유틸
+- `app/blog/[slug]/page.tsx`: 추출된 LCP 블록을 `<summarySlot>` 으로 페이지 최하단(관련글 다음)에 lazy 로드 배치
+- 결과: H1 텍스트가 LCP 후보가 됨
+
+**2단계: 두 번째 이미지(첫 H2 직후 이미지) → 같은 섹션 끝(다음 ## 또는 ---) 직전으로 이동**
+- 자동화 스크립트: `scripts/audit-blog-lcp.mjs` (위험도 분석), `scripts/move-first-section-image.mjs` (자동 변환)
+- 처리 대상 9개 (HIGH 2 / MEDIUM 7): pot-odds·probability·apt-jeju·bubble·cbet·AA·3bet·beginner-mistakes·pub-legal
+- 안전장치: 첫 LCP 블록(이미 1단계로 옮긴 것) 은 변환 대상에서 제외
+- 결과: HIGH 0 / MEDIUM 0 / LOW 30
+
+**3단계: 폰트 다운로드 비용 절반**
+- Noto Sans KR weight 4개(400/500/600/700) → 2개(400/700)
+- Noto Serif KR 완전 제거, font-serif 클래스를 Sans 로 통일 (한글 파일 3개 추가 절감)
+- 모바일 backdrop-blur GPU 합성 비용 제거 (md: 분기로 데스크탑만 적용)
+
+**4단계: font-display swap → optional**
+- 100ms 안에 한글 서브셋 못 오면 시스템 폰트(Apple SD Gothic Neo / Malgun Gothic) 고정 → 스왑 없음 → LCP = FCP
+- 두 번째 방문부터는 캐시된 Noto Sans KR 자동 적용
+
+**5단계: 모바일 TOC 기본 접힘 (가장 큰 효과)**
+- 24+ 항목 TOC 가 모바일 첫 화면 720px 차지 → LCP 후보가 큰 카드가 됨
+- native `<details>` 로 감싸 50px 한 줄 (📚 목차 (N개) ▾) → 클릭 펼침
+- JS 0, 데스크탑 sticky sidebar TOC 영향 없음 (xl: 분리)
+- 결과: 모바일 첫 화면 점유 720→50px, F12 점수 90 → 93
+
+### 2. E-E-A-T 강화 3종 (1·2·3)
+
+**Phase 1: 글마다 '최종 업데이트' 날짜 표시**
+- `Post` 타입에 optional `updated` 필드 추가
+- 29 개 모든 포스트에 `updated: "2026-05-06"` 일괄 적용 (LCP·TOC 등 본문 갱신 반영)
+- UI: 글 헤더에 "<date> 작성 · <updated> 업데이트" 두 개 `<time>` 노출, 업데이트 배지는 골드 톤
+- JSON-LD: `dateModified` = `updated`, OG `modified_time` 동기화
+- 효과: Google 신선도 신호 (특히 "최신" 키워드)
+
+**Phase 2: /about 팀 소개 페이지 + 작성자 박스 권위 강화**
+- 신규 `app/about/page.tsx` (정적 SSG, 176 B)
+  - Hero (12년 경력·솔버 분석)
+  - 운영 지표 4개 그리드 (29편 발행 / 30+ 회 현장 취재 / 12년+ / PioSolver·GTO+)
+  - 편집 원칙 4개 (직접 경험·솔버 검증·신선도·도박 금지)
+  - 편집 프로세스 6단계
+  - 사용 도구 6개 (Pio·GTO+·HM3·Equilab·Stove·공식 룰북)
+  - Organization JSON-LD (knowsAbout 6주제, foundingDate 2014)
+- 블로그 작성자 박스 강화: 이름 → /about 링크, 운영 지표 4그리드 `<dl>`, "편집팀 상세 →" CTA
+- Article schema author: Person → Organization, url → SITE/about
+- Footer 하단 "팀 소개" 링크 추가
+- sitemap.xml 에 /about 추가 (priority 0.7, monthly)
+
+**Phase 3: 글마다 '한 줄 정답' (Featured Snippet 대상화)**
+- `Post` 타입에 optional `tldr` 필드 추가
+- 29 개 모든 포스트에 주제별 고유한 40~90자 직답 작성 (평균 77자)
+- UI: 글 헤더 직후, 본문 진입 직전, 골드 그라디언트 강조 박스 ("💡 한 줄 정답")
+- JSON-LD: Article schema 에 `abstract` 필드로 노출
+- 효과: Google "발췌 텍스트" 진입 + 모바일 LCP 후보 텍스트화
+
+### 3. 통합 자동 검증 — `scripts/verify-eeat.mjs`
+
+- 12개 항목 전수 통과:
+  - updated 29/29 ✓
+  - tldr 29/29 ✓ (65~88자, 평균 76.9자)
+  - /about 페이지 존재 / sitemap / footer / 작성자박스 / JSON-LD 모두 연결 ✓
+  - dateModified = updated ✓ / abstract = tldr ✓
+- audit-blog-lcp.mjs: HIGH 0 / MEDIUM 0 / LOW 30 유지
+
+### 4. 커밋 7건 (이번 세션)
+
+```
+505a999 feat(seo): 한 줄 정답 (tldr) — Featured Snippet
+96786c9 feat(eeat): /about 팀 소개 + 작성자 박스 권위 강화
+1213490 feat(seo): 최종 업데이트 날짜 도입 (E-E-A-T 신선도)
+4838d85 perf(mobile): TOC 기본 접힘 — LCP 큰 폭 개선
+b2690e9 perf(mobile): font-display optional → LCP -2s
+39980dd perf(blog): 두 번째 이미지를 섹션 끝으로 이동 (9 posts)
+9bd336f perf(mobile): KR 폰트 7→2개, font-serif Sans 통일, blur 비활성화
+```
+
+### 5. 남은 갭 (1페이지 노출 1차 도전 후 검토)
+
+| 갭 | 우선순위 | 비고 |
+|----|---------|-----|
+| 외부 권위 출처 인용 글마다 1~2개 | 중 | WSOP/PokerNews/PioSolver 블로그 dofollow |
+| 본문에 작성자 실명·얼굴 추가 | 중상 | YMYL 인접 영역이라 영향 큼 |
+| HowTo schema 추가 (튜토리얼 글 한정) | 중 | 강조 스니펫 카드형 노출 |
+| Header Server / Client island 분할 | 하 | TBT 50ms 이미 우수, ROI 작음 |
+
+### 6. 사용자 지표
+
+- 시작 시점: 모바일 PSI 81 (pocket-aces-aa-strategy)
+- F12 데스크탑: 93 (TOC 접힘 후 측정)
+- 폰 PSI: 80 → 캐시 의심 (배포 직후 30분 캐시) — 캐시 우회 후 재측정 권장
+- 색인 (GSC): sitemap 재제출 후 1~3주 모니터링 진행 중
 
 ---
 
@@ -395,6 +502,14 @@ AI가 쓴 글과 차별화되는 핵심 = **실제 경험(E-E-A-T의 첫 번째 
 
 | 날짜 | 작업 유형 | 상세 내용 | 결과 / 비고 |
 |------|----------|-----------|------------|
+| 2026-05-06 | 🌟 E-E-A-T | 글마다 'tldr' 한 줄 정답 추가 (29편) + Article schema abstract | Featured Snippet 후보화. 골드 강조 박스 UI |
+| 2026-05-06 | 🌟 E-E-A-T | /about 팀 소개 페이지 신설 + 작성자 박스 권위 강화 + Org JSON-LD | sitemap·footer·작성자박스·Article author 모두 /about 연결 |
+| 2026-05-06 | 🌟 E-E-A-T | 글마다 'updated' 최종 업데이트 날짜 표시 (29편) | dateModified·OG modifiedTime 동기화. 신선도 신호 |
+| 2026-05-06 | ⚡ 모바일 LCP | 블로그 모바일 TOC 기본 접힘 (`<details>`) | 첫 화면 점유 720→50px. F12 90→93 |
+| 2026-05-06 | ⚡ 모바일 LCP | font-display swap → optional | 한글 서브셋 100ms 안에 못 오면 시스템 폰트 고정. 스왑 0 |
+| 2026-05-06 | ⚡ 모바일 LCP | 두 번째 이미지(첫 H2 직후)를 섹션 끝으로 이동 (9개 글) | HIGH 2 / MEDIUM 7 → 모두 LOW. audit-blog-lcp.mjs 자동화 |
+| 2026-05-06 | ⚡ 모바일 LCP | 본문 첫 이미지 → 페이지 맨 하단 '이 글 전체 요약' 섹션 | H1 텍스트가 LCP. lib/blog-lcp.ts 신설 |
+| 2026-05-06 | ⚡ 모바일 LCP | KR 폰트 weight 7→2개, font-serif Sans 통일, mobile blur 비활성 | 폰트 다운로드 절반. GPU 합성 비용 감소 |
 | 2026-04-20 | 🔧 SEO 오류 수정 | 사이트맵 블로그 URL 전체에 `/` 추가 (29개) | GSC 리디렉션 오류 근본 원인 해결. 서버가 slug/ 형태로 301 리디렉션하는 구조 확인 |
 | 2026-04-20 | 🚨 실수 복구 | posts.ts(21개) 미확인으로 사이트맵에서 삭제했다가 복구 | 당일 복구 완료. 재발 방지 체크리스트 WORKLOG에 추가 |
 | 2026-04-20 | 📋 GSC 작업 | 색인 재요청(8개 포스트) + 사이트맵 재제출 안내 | 유효성 검사 재시작 필요 (서치 콘솔에서 직접 클릭) |
