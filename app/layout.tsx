@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
-import { Noto_Sans_KR, Noto_Serif_KR } from "next/font/google";
+import { Noto_Sans_KR } from "next/font/google";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { BrushDefs } from "@/components/brush-defs";
@@ -8,19 +8,17 @@ import "./globals.css";
 
 const SITE = "https://holdemmaster.com";
 
+/**
+ * 모바일 LCP/TBT 최적화:
+ *  - weight 4개 → 2개 (400 본문, 700 강조) 다운로드 시간 절반
+ *  - Noto Serif KR 제거: 헤딩도 Sans 700/900 으로 통일 (한글 폰트 파일 3개 추가 절감)
+ *  - 본문/헤딩이 같은 폰트 파일 → 1번 다운로드로 모든 weight 커버
+ */
 const notoSansKr = Noto_Sans_KR({
-  // next/font 메타데이터상 latin 만 노출되나, Google이 제공하는 KR 웹폰트 파일에 한글이 포함됩니다.
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "700"],
   display: "swap",
   variable: "--font-noto-sans-kr",
-});
-
-const notoSerifKr = Noto_Serif_KR({
-  subsets: ["latin"],
-  weight: ["600", "700", "900"],
-  display: "swap",
-  variable: "--font-noto-serif-kr",
 });
 
 export const viewport: Viewport = {
@@ -75,7 +73,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="ko" className={`${notoSansKr.variable} ${notoSerifKr.variable}`}>
+    <html lang="ko" className={notoSansKr.variable}>
       <head>
         {/* Organization JSON-LD (사이트 전역) */}
         <script

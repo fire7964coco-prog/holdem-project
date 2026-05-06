@@ -4,9 +4,8 @@
  * 홀덤마스터 디자인 시스템 — Premium Casino Edition
  *
  * 글꼴: next/font/google 로 자체 호스팅 (layout.tsx)
- *   - Noto Sans KR  : 본문·UI · display:swap
- *   - Noto Serif KR : 디스플레이·헤딩
- *   - System fallback
+ *   - Noto Sans KR (400, 700) : 본문·UI·헤딩 모두 통일 · display:swap
+ *   - System fallback         : 폰트 도착 전 자연스러운 페이크
  *
  * 컬러 토큰 (HSL): 메이저 카지노 브랜드 톤을 참고한 깊은 에메랄드 + 24K 골드.
  * 모든 텍스트는 WCAG AA 대비(>= 4.5:1) 충족 — 라이트하우스 a11y 100점 가이드.
@@ -16,7 +15,9 @@
   --font-sans: var(--font-noto-sans-kr), -apple-system, BlinkMacSystemFont,
     'system-ui', Roboto, 'Helvetica Neue', 'Segoe UI',
     'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
-  --font-serif: var(--font-noto-serif-kr), 'Apple SD Gothic Neo', Georgia, 'Nanum Myeongjo', serif;
+  /* font-serif 클래스도 Sans 로 매핑 — Noto Serif KR 제거 후 추가 다운로드 0 */
+  --font-serif: var(--font-noto-sans-kr), -apple-system, BlinkMacSystemFont,
+    'system-ui', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
 
   /* ── 코어 시맨틱 토큰 ─────────────────────────────── */
   --color-background: hsl(var(--background));

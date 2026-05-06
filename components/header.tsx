@@ -122,8 +122,8 @@ export function Header() {
       <header
         className={`fixed top-0 w-full z-50 transition-all duration-500 ${
           isScrolled
-            ? "bg-background/85 backdrop-blur-xl border-b border-primary/25 shadow-[0_8px_32px_-8px_rgba(0,0,0,0.6)]"
-            : "bg-gradient-to-b from-background/40 to-transparent border-b border-transparent backdrop-blur-[2px]"
+            ? "bg-background/95 md:bg-background/85 md:backdrop-blur-xl border-b border-primary/25 shadow-[0_8px_32px_-8px_rgba(0,0,0,0.6)]"
+            : "bg-gradient-to-b from-background/95 to-transparent md:from-background/40 border-b border-transparent md:backdrop-blur-[2px]"
         }`}
       >
         <div
@@ -209,7 +209,7 @@ export function Header() {
           role="dialog"
           aria-modal="true"
           aria-label="모바일 네비게이션"
-          className="fixed inset-0 z-40 bg-background/96 backdrop-blur-2xl pt-24 pb-8 px-6 flex flex-col md:hidden animate-in fade-in"
+          className="fixed inset-0 z-40 bg-background pt-24 pb-8 px-6 flex flex-col md:hidden animate-in fade-in"
           style={{
             backgroundImage:
               "radial-gradient(ellipse 80% 50% at 50% 0%, hsl(43 60% 22% / 0.15) 0%, transparent 70%)",
