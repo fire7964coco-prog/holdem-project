@@ -3,7 +3,7 @@
 import type { ReactNode } from "react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
-import { Clock, Tag, ChevronLeft, ChevronRight, Share2, Link2 } from "lucide-react";
+import { Clock, Tag, ChevronLeft, ChevronRight, ChevronDown, Share2, Link2 } from "lucide-react";
 import { FaXTwitter, FaFacebookF } from "react-icons/fa6";
 import type { Post } from "@/lib/posts";
 import { POSTS } from "@/lib/posts";
@@ -35,7 +35,6 @@ function TocList({ headings }: { headings: { id: string; text: string; level: nu
   let h2Count = 0;
   return (
     <>
-      <p className="text-xs font-bold uppercase tracking-widest text-primary mb-4">목차</p>
       <ol className="space-y-1.5">
         {headings.map((h) => {
           if (h.level === 2) h2Count++;
@@ -289,6 +288,7 @@ export default function BlogPost({
             <aside className="hidden xl:block">
               <div className="sticky top-28">
                 <nav className="bg-card border border-border rounded-2xl p-5" aria-label="목차">
+                  <p className="text-xs font-bold uppercase tracking-widest text-primary mb-4">목차</p>
                   <TocList headings={headings} />
                 </nav>
               </div>
@@ -325,13 +325,27 @@ export default function BlogPost({
               </div>
             </header>
 
-            {/* Inline TOC — mobile only */}
+            {/* Inline TOC — mobile only · 모바일 LCP 개선용으로 기본 접힘 상태.
+                 24+ 항목 TOC가 첫 화면을 차지해 LCP 후보가 되는 문제를 해결하면서
+                 사용자가 클릭 시 펼쳐 볼 수 있도록 native <details> 사용 (JS 0). */}
             {hasToc && (
-              <div className="xl:hidden bg-card border border-border rounded-2xl p-6 mb-6">
-                <nav aria-label="목차">
+              <details className="xl:hidden group bg-card border border-border rounded-2xl mb-6">
+                <summary
+                  className="flex items-center justify-between gap-3 px-6 py-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden rounded-2xl hover:bg-card/70 transition-colors"
+                  aria-label="목차 펼치기/접기"
+                >
+                  <span className="flex items-center gap-2.5 text-xs font-bold uppercase tracking-widest text-primary">
+                    📚 목차 <span className="text-muted-foreground/60 font-normal normal-case tracking-normal">({headings.length}개)</span>
+                  </span>
+                  <ChevronDown
+                    className="w-5 h-5 text-primary transition-transform duration-200 group-open:rotate-180"
+                    aria-hidden="true"
+                  />
+                </summary>
+                <nav className="px-6 pb-6 pt-2 border-t border-border/60" aria-label="목차">
                   <TocList headings={headings} />
                 </nav>
-              </div>
+              </details>
             )}
 
                 {/* Interactive Calculator — 확률 계산기 포스트 & 홀덤 확률 완전 정복 */}
