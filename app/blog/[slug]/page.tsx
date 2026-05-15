@@ -22,8 +22,8 @@ export async function generateMetadata({
   const post = getPost(params.slug);
   if (!post) return { title: "포스트를 찾을 수 없습니다" };
 
-  const lcp = getBlogLcpInfo(post.content);
-  const firstImg = lcp?.src ?? null;
+  const lcpForMeta = getBlogLcpInfo(post.content);
+  const firstImg = lcpForMeta?.src ?? null;
   const ogImage = firstImg ? `${SITE}${firstImg}` : `${SITE}/opengraph.jpg`;
   const url = `${SITE}/blog/${post.slug}`;
 
@@ -62,8 +62,9 @@ export default function Page({ params }: { params: { slug: string } }) {
   const post = getPost(params.slug);
   if (!post) notFound();
 
-  const lcp = getBlogLcpInfo(post.content);
-  const firstImg = lcp?.src ?? null;
+  const lcpForMeta = getBlogLcpInfo(post.content);
+  const firstImg = lcpForMeta?.src ?? null;
+  const lcp = post.keepImagesInBody ? null : lcpForMeta;
   const contentForClient = lcp ? stripFirstBlogLcpBlock(post.content, lcp) : post.content;
   const url = `${SITE}/blog/${post.slug}`;
   const ogImage = firstImg ? `${SITE}${firstImg}` : `${SITE}/opengraph.jpg`;

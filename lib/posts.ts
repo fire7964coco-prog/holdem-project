@@ -21,6 +21,10 @@ export interface Post {
   * Google "발췌 텍스트" 후보가 되도록 한다.
   */
  tldr?: string;
+ /**
+  * true면 본문 이미지를 섹션 원위치에 유지하고, 하단 "이 글 전체 요약" 이미지 블록을 표시하지 않음.
+  */
+ keepImagesInBody?: boolean;
  readTime: string;
  emoji: string;
  tags: string[];

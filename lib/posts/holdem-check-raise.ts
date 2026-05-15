@@ -8,6 +8,8 @@ export const POST: Post = {
   desc: "【홀덤 체크레이즈】C벳만 하다가 체크 당하고 레이즈 맞으면 판이 꼬입니다. ⚡밸류·블러프 타이밍, OOP·IP 사이즈, 당했을 때 폴드·콜·3벳 기준까지 홀덤펍 실전에서 바로 쓸 기준을 11분에 정리했습니다.",
   tldr: "체크레이즈(Check-Raise)는 체크로 상대 베팅을 유도한 뒤 레이즈하는 수다. OOP·드라이 보드·C벳 많은 상대에게 특히 효과적이다.",
   date: "2026-05-15",
+  updated: "2026-05-15",
+  keepImagesInBody: true,
   category: "전략",
   readTime: "11분",
   tags: ["체크레이즈", "홀덤 체크레이즈", "check raise", "체크레이즈 타이밍", "홀덤 전략"],
@@ -21,8 +23,6 @@ export const POST: Post = {
 - 당했을 때는 상대 레인지를 좁히고 콜·폴드를 결정
 
 ---
-
-:::faqcard[/images/holdem-check-raise-faq.webp][홀덤 체크레이즈 핵심 요약 카드 — 뜻·타이밍·당했을 때 대응 한 장 정리][홀덤 체크레이즈란? 밸류·블러프·OOP 타이밍·실수 WORST 5 한 장으로]:::
 
 ## 1. 홀덤 체크레이즈란? — 한 줄 정리
 
@@ -62,7 +62,7 @@ export const POST: Post = {
 
 ## 3. 홀덤 체크레이즈 타이밍 — 언제 써야 하나
 
-![체크레이즈 타이밍 3가지 조건 — 보드 유리·상대 베팅 확률·레이즈 사이즈|w](/images/holdem-check-raise-timing.webp "홀덤 체크레이즈 타이밍 — 보드 유리·상대 C벳·레이즈 사이즈 3가지 조건")
+![홀덤 체크레이즈 타이밍 3가지 조건 — 보드 유리·상대 C벳 확률·레이즈 사이즈|w](/images/holdem-check-raise-timing.webp "홀덤 체크레이즈 타이밍 — 보드 유리·상대 C벳·레이즈 사이즈 3가지 조건")
 
 아무 때나 쓰면 바로 들켜요. 아래 3가지 조건이 맞을 때만 써야 해요.
 
@@ -101,7 +101,7 @@ export const POST: Post = {
 
 ## 5. 체크레이즈 당했을 때 — 어떻게 대응하나
 
-![체크레이즈 당했을 때 대응 3단계 — 레인지 축소·핸드 위치·콜·폴드 결정|w](/images/holdem-check-raise-counter.webp "홀덤 체크레이즈 당했을 때 — 레인지 축소·콜·폴드 3단계 대응")
+![홀덤 체크레이즈 당했을 때 대응 3단계 — 레인지 축소·핸드 강도·콜 폴드 결정|w](/images/holdem-check-raise-counter.webp "홀덤 체크레이즈 당했을 때 — 레인지 축소·콜·폴드 3단계 대응")
 
 여기가 진짜 실전이에요. 체크레이즈를 맞으면 당황하기 쉬운데, 차분하게 3단계로 생각하세요.
 
@@ -130,7 +130,7 @@ export const POST: Post = {
 
 ## 6. 체크레이즈 자주 하는 실수 WORST 5
 
-![체크레이즈 실수 WORST 5 — 남용·약한 핸드·사이즈·멀티웨이·블러프|w](/images/holdem-check-raise-mistakes.webp "홀덤 체크레이즈 실수 WORST 5 — 남용·약한 핸드·멀티웨이·블러프")
+![홀덤 체크레이즈 실수 WORST 5 — 남용·약한 핸드·사이즈·멀티웨이·블러프|w](/images/holdem-check-raise-mistakes.webp "홀덤 체크레이즈 초보 실수 WORST 5 — 남용·약한 핸드·멀티웨이·블러프")
 
 **실수 1 — 너무 자주 쓴다**
 
@@ -160,7 +160,7 @@ export const POST: Post = {
 
 ## 7. FAQ — 자주 묻는 질문
 
-![체크레이즈 FAQ — 비매너·리레이즈 대응·포지션·빈도|w](/images/holdem-check-raise-faq.webp "홀덤 체크레이즈 FAQ — 비매너·리레이즈·포지션·빈도")
+![홀덤 체크레이즈 FAQ — 비매너·리레이즈 대응·포지션·빈도|w](/images/holdem-check-raise-faq.webp "홀덤 체크레이즈 자주 묻는 질문 — 비매너·리레이즈·포지션·빈도")
 
 ### Q1. 체크레이즈는 비매너인가요?
 
