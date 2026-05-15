@@ -26,9 +26,11 @@ function slugify(text: string): string {
     .toLowerCase();
 }
 
+/** 목차: H2(##)만 노출 — 핵심 요약·FAQ Q·소제목(###) 제외 (모바일 LCP·가독성) */
 function extractHeadings(content: string): { id: string; text: string; level: number }[] {
-  const matches = [...content.matchAll(/^(#{2,3}) (.+)$/gm)];
-  return matches.map(m => ({ id: slugify(m[2]), text: m[2], level: m[1].length }));
+  return [...content.matchAll(/^## (.+)$/gm)]
+    .map((m) => ({ id: slugify(m[1]), text: m[1].trim(), level: 2 }))
+    .filter((h) => !/이 글 핵심 요약/.test(h.text));
 }
 
 function TocList({ headings }: { headings: { id: string; text: string; level: number }[] }) {

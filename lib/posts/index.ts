@@ -7,8 +7,10 @@ import { POST as icmPokerMeaning } from "./icm-poker-meaning";
 import { POST as pocketKingsKkStrategy } from "./pocket-kings-kk-strategy";
 import { POST as holdemRangeMeaning } from "./holdem-range-meaning";
 import { POST as holdemCbetStrategy } from "./holdem-cbet-strategy";
+import { POST as holdemCheckRaise } from "./holdem-check-raise";
 
 export const NEW_POSTS: Post[] = [
+  holdemCheckRaise,
   holdemCbetStrategy,
   holdemRangeMeaning,
   icmPokerMeaning,

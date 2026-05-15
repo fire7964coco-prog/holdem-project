@@ -261,6 +261,6 @@ VPIP(자발적 팟 참여율)와 PFR(프리플랍 레이즈율)을 관찰하면 
 
 오늘 정리한 내용을 실전에 적용하는 순서를 제안한다. 먼저 핸드 표기법(s/o/+/~)을 완전히 익히고, 다음으로 포지션별 레인지 감각을 잡고, 마지막으로 스트리트마다 상대 레인지를 좁히는 연습을 반복하면 된다.
 
-레인지 분석이 쌓이면 자연스럽게 [스타팅 핸드 레인지 완전 가이드](/blog/holdem-starting-hand-range)와 [팟오즈 계산법](/blog/holdem-pot-odds-calculation)을 결합해 수익 결정을 내릴 수 있게 된다. [초보 실수 10가지](/blog/holdem-beginner-mistakes-10)에서도 레인지 무시가 상위권 실수로 등장하니 함께 확인해두자.
+레인지 분석이 쌓이면 자연스럽게 [스타팅 핸드 레인지 완전 가이드](/blog/holdem-starting-hand-range)와 [팟오즈 계산법](/blog/holdem-pot-odds-calculation)을 결합해 수익 결정을 내릴 수 있게 된다. 상대 레인지를 좁히는 [홀덤 체크레이즈 전략](/blog/holdem-check-raise)과 [초보 실수 10가지](/blog/holdem-beginner-mistakes-10)도 함께 확인해두자.
 `,
 };
