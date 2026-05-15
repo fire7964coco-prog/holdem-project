@@ -1,3 +1,5 @@
+public/images/.compressed
+
 node_modules
 .next
 out

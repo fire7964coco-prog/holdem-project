@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "compress:images": "node scripts/compress-images.mjs --apply",
+    "compress:images:preview": "node scripts/compress-images.mjs"
   },
   "dependencies": {
     "@radix-ui/react-tabs": "^1.1.4",

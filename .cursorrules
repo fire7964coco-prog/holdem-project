@@ -232,13 +232,13 @@ export const newPosts = [...기존, holdemCheckRaise];
 
 ## 🖼️ 이미지 절대 원칙
 
+> **상세 가이드:** `docs/IMAGE_OPTIMIZATION.md` · 일괄 압축: `npm run compress:images`
+
 ### 형식·용량
 - 형식: 반드시 .webp (png, jpg 절대 금지)
-- 압축: sharp quality 75 이하
-- 히어로: 100KB 이하
-- 인포그래픽: 200KB 이하
-- 1MB 넘는 이미지 발견 시 즉시 재압축
-- PNG 발견 시 즉시 webp 변환 + 원본 삭제
+- 압축: WebP quality **65** (기본), 80KB 초과 시 `--aggressive`(60) · 가로 **1200px**
+- 목표: 파일당 **≤ 60KB**, 복잡한 카드 **≤ 80KB**, 글당 합계 **≤ 200KB**
+- PNG 발견 시 즉시 webp 변환 + `npm run compress:images` 실행
 
 ### LCP 최적화 (필수)
 - 상단 히어로 이미지에 반드시 `priority={true}` 부여
@@ -251,8 +251,9 @@ export const newPosts = [...기존, holdemCheckRaise];
 - 좋은 예: "강남 홀덤펍에서 AK로 3-bet 콜 상황, 보드 J92"
 - 나쁜 예: "홀덤 전략 이미지"
 
-### Windows PowerShell 압축 명령어
-node -e "const sharp=require('sharp'); sharp('input.png').webp({quality:75}).toFile('output.webp')"
+### 압축 명령어
+npm run compress:images          # public/images 전체 압축 + 반영
+npm run compress:images:preview  # .compressed 폴더에만 저장
 
 ---
 
