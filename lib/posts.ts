@@ -6053,6 +6053,8 @@ A. 생각보다 큽니다. 팟오즈 50%인 상황에서 승률 20%짜리 핸드
 - 3벳 사이즈: 인포지션(IP) 2.5~3배, 아웃오브포지션(OOP) 3~4배
 - 3벳 범위: 포지션·상대 스타일·스택 깊이로 조정
 
+플랍 이후 OOP 수비는 [홀덤 체크레이즈 전략](/blog/holdem-check-raise)과 [C벳 전략](/blog/holdem-cbet-strategy)이 한 세트예요. 같은 **배팅 전략** 클러스터: [블러핑](/blog/bluffing-strategy-when-and-how) · [오버벳](/blog/holdem-overbet-strategy) · [로드맵](/blog/roadmap).
+
 ---
 
 ## 홀덤 3벳이란? — 개념부터 정확히
