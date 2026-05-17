@@ -761,12 +761,12 @@ export default function Tournaments() {
     "@type": "Article",
     "headline": "홀덤 대회 완벽 가이드 — 국내·해외 포커 토너먼트 총정리 2026",
     "description": "KPT·피망포커·한게임 등 국내 홀덤 대회와 WSOP·WPT·EPT·APT 해외 포커 토너먼트를 한눈에 정리. 대회 구조, 전략, 참가 방법과 초보 로드맵 포함.",
-    "author": { "@type": "Organization", "name": "홀덤마스터", "url": "https://holdemmaster.com" },
-    "publisher": { "@type": "Organization", "name": "홀덤마스터", "url": "https://holdemmaster.com", "logo": { "@type": "ImageObject", "url": "https://holdemmaster.com/favicon.svg" } },
+    "author": { "@type": "Organization", "name": "홀덤마스터", "url": "https://www.holdemmaster.com" },
+    "publisher": { "@type": "Organization", "name": "홀덤마스터", "url": "https://www.holdemmaster.com", "logo": { "@type": "ImageObject", "url": "https://www.holdemmaster.com/favicon.svg" } },
     "datePublished": "2026-03-26",
     "dateModified": "2026-04-01",
-    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://holdemmaster.com/tournaments" },
-    "image": "https://holdemmaster.com/images/tournament-hall-wsop.webp",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.holdemmaster.com/tournaments" },
+    "image": "https://www.holdemmaster.com/images/tournament-hall-wsop.webp",
     "keywords": "홀덤 대회, 포커 토너먼트, KPT, WSOP, 홀덤 대회 참가방법, 피망 포커 대회, 한게임 포커 대회",
     "inLanguage": "ko-KR",
   };
@@ -775,8 +775,8 @@ export default function Tournaments() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://holdemmaster.com/" },
-      { "@type": "ListItem", "position": 2, "name": "홀덤 대회", "item": "https://holdemmaster.com/tournaments" },
+      { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://www.holdemmaster.com/" },
+      { "@type": "ListItem", "position": 2, "name": "홀덤 대회", "item": "https://www.holdemmaster.com/tournaments" },
     ],
   };
 

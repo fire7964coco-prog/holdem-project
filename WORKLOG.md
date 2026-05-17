@@ -14,7 +14,7 @@
 
 - [ ] [Google Search Console](https://search.google.com/search-console) → 속성 `holdemmaster.com`
 - [ ] **URL 검사**에 새 글 주소 입력  
-  예: `https://holdemmaster.com/blog/holdem-value-bet-sizing`
+  예: `https://www.holdemmaster.com/blog/holdem-value-bet-sizing`
 - [ ] **“색인 생성 요청”** 클릭 (이미 색인됐으면 “색인됨”만 확인)
 - [ ] `public/sitemap.xml`에 해당 URL·`lastmod`가 글 `updated` 날짜인지 확인  
   → 배포 시 `npm run build`가 **자동으로 sitemap 재생성** (`prebuild` → `generate:sitemap`)  
@@ -22,7 +22,7 @@
 
 ### B. 주 1회 (5분)
 
-- [ ] GSC → **Sitemaps** → `https://holdemmaster.com/sitemap.xml` **다시 제출** (이미 있어도 재제출 OK)
+- [ ] GSC → **Sitemaps** → `https://www.holdemmaster.com/sitemap.xml` **다시 제출** (이미 있어도 재제출 OK)
 - [ ] **실적** → **검색어** 탭: 클릭·노출 있는 쿼리 3개 메모 → 다음 글 제목·H2에 반영
 - [ ] **페이지** 탭: 노출 많은데 CTR 낮은 글 → `seoTitle`·`desc`만 손볼 후보로 표시
 
@@ -115,8 +115,8 @@ AI가 쓴 글과 차별화되는 핵심 = **실제 경험(E-E-A-T의 첫 번째 
 **① 블로그 URL은 끝에 `/` 절대 금지**
 - `next.config.mjs` 의 `trailingSlash: false` 와 일치해야 함
 - canonical / OG url / sitemap 모두 slash 없이 통일
-- ✅ 올바른 형식: `https://holdemmaster.com/blog/holdem-cbet-strategy`
-- ❌ 잘못된 형식: `https://holdemmaster.com/blog/holdem-cbet-strategy/`
+- ✅ 올바른 형식: `https://www.holdemmaster.com/blog/holdem-cbet-strategy`
+- ❌ 잘못된 형식: `https://www.holdemmaster.com/blog/holdem-cbet-strategy/`
 
 **② 사이트맵에는 실제 존재하는 포스트만 등록**
 - 코드에 없는 포스트 URL 절대 추가 금지
@@ -124,7 +124,7 @@ AI가 쓴 글과 차별화되는 핵심 = **실제 경험(E-E-A-T의 첫 번째 
 
 **③ 사이트맵 수정 후 할 일**
 1. 배포
-2. 서치 콘솔 → Sitemaps → `https://holdemmaster.com/sitemap.xml` 재제출
+2. 서치 콘솔 → Sitemaps → `https://www.holdemmaster.com/sitemap.xml` 재제출
 
 ---
 
@@ -375,7 +375,7 @@ b2690e9 perf(mobile): font-display optional → LCP -2s
 - 같은 날 복구 완료
 
 **남은 할 일:**
-- 서치 콘솔 → `https://holdemmaster.com/sitemap.xml` 재제출
+- 서치 콘솔 → `https://www.holdemmaster.com/sitemap.xml` 재제출
 - 리디렉션 오류 탭 → 유효성 검사 시작 클릭
 
 ---
@@ -482,7 +482,7 @@ b2690e9 perf(mobile): font-display optional → LCP -2s
 
 ### 7. 배포 및 Search Console
 - Replit 배포 완료 (commit: 08f731172)
-- sitemap.xml 제출: `https://holdemmaster.com/sitemap.xml`
+- sitemap.xml 제출: `https://www.holdemmaster.com/sitemap.xml`
 - C4 URL 수동 색인 요청: `holdem-split-pot-rules`
 
 ---

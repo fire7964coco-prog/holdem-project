@@ -117,8 +117,8 @@ export default function BlogIndex() {
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://holdemmaster.com/" },
-        { "@type": "ListItem", "position": 2, "name": "홀덤 전략 블로그", "item": "https://holdemmaster.com/blog" },
+        { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://www.holdemmaster.com/" },
+        { "@type": "ListItem", "position": 2, "name": "홀덤 전략 블로그", "item": "https://www.holdemmaster.com/blog" },
       ],
     },
   ];

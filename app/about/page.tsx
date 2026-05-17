@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Mail, ShieldCheck, Award, Users, BookOpen, Trophy } from "lucide-react";
 
-const SITE = "https://holdemmaster.com";
+const SITE = "https://www.holdemmaster.com";
 
 export const metadata: Metadata = {
   title: "팀 소개 — 누가 홀덤마스터를 운영하나요?",

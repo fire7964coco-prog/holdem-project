@@ -150,17 +150,17 @@ export default function Rules() {
       "headline": "포커 규칙 완벽 가이드 — 텍사스 홀덤·오마하·세븐카드 하는법 총정리 [2026]",
       "description": "텍사스 홀덤, 오마하, 세븐 카드 스터드 포커 게임 방법을 초보자도 이해할 수 있도록 완벽하게 정리했습니다. 포커 공통 규칙, 베팅 방식, 핸드 순위까지 한 페이지에서 확인하세요.",
       "author": { "@type": "Organization", "name": "홀덤마스터" },
-      "publisher": { "@type": "Organization", "name": "홀덤마스터", "url": "https://holdemmaster.com" },
+      "publisher": { "@type": "Organization", "name": "홀덤마스터", "url": "https://www.holdemmaster.com" },
       "dateModified": "2026-03-24",
       "keywords": "포커 규칙, 텍사스 홀덤 규칙, 오마하 포커, 세븐 카드 스터드, 포커 하는법, 포커 초보, 포커 베팅, 포커 핸드 순위",
-      "image": "https://holdemmaster.com/images/rules-texas-holdem.webp",
+      "image": "https://www.holdemmaster.com/images/rules-texas-holdem.webp",
     },
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://holdemmaster.com/" },
-        { "@type": "ListItem", "position": 2, "name": "게임 방법", "item": "https://holdemmaster.com/rules" },
+        { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://www.holdemmaster.com/" },
+        { "@type": "ListItem", "position": 2, "name": "게임 방법", "item": "https://www.holdemmaster.com/rules" },
       ],
     },
   ];

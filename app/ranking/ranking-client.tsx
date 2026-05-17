@@ -128,8 +128,8 @@ export default function Ranking() {
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://holdemmaster.com/" },
-        { "@type": "ListItem", "position": 2, "name": "추천 홀덤 사이트 랭킹 TOP 5", "item": "https://holdemmaster.com/ranking" },
+        { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://www.holdemmaster.com/" },
+        { "@type": "ListItem", "position": 2, "name": "추천 홀덤 사이트 랭킹 TOP 5", "item": "https://www.holdemmaster.com/ranking" },
       ],
     },
   ];

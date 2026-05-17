@@ -7,6 +7,7 @@ import { Clock, Tag, ChevronLeft, ChevronRight, ChevronDown, Share2, Link2 } fro
 import { FaXTwitter, FaFacebookF } from "react-icons/fa6";
 import type { Post } from "@/lib/posts";
 import { POSTS } from "@/lib/posts";
+import { SITE } from "@/lib/site";
 import { useState, useRef } from "react";
 
 const PokerOddsCalculator = dynamic(
@@ -257,7 +258,7 @@ export default function BlogPost({
 
   const [copied, setCopied] = useState(false);
   const contentRef = useRef<HTMLDivElement>(null);
-  const pageUrl = `https://holdemmaster.com/blog/${post.slug}`;
+  const pageUrl = `${SITE}/blog/${post.slug}`;
 
   function copyLink() {
     navigator.clipboard.writeText(pageUrl).then(() => {

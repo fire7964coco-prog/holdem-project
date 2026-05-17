@@ -59,8 +59,8 @@ export default function Glossary() {
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://holdemmaster.com/" },
-        { "@type": "ListItem", "position": 2, "name": "홀덤 포커 용어 사전", "item": "https://holdemmaster.com/glossary" },
+        { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://www.holdemmaster.com/" },
+        { "@type": "ListItem", "position": 2, "name": "홀덤 포커 용어 사전", "item": "https://www.holdemmaster.com/glossary" },
       ],
     },
   ];

@@ -100,7 +100,7 @@ export default function Omaha() {
       "headline": "오마하 포커 규칙 완벽 가이드 — PLO 홀 카드 4장 사용법",
       "description": "오마하 포커 기초 규칙을 초보자도 이해할 수 있게 정리했습니다. 홀 카드 4장 규칙, 팟 리밋 베팅, 텍사스 홀덤과의 차이점까지 한 페이지에서 완성.",
       "author": { "@type": "Organization", "name": "홀덤마스터" },
-      "publisher": { "@type": "Organization", "name": "홀덤마스터", "url": "https://holdemmaster.com" },
+      "publisher": { "@type": "Organization", "name": "홀덤마스터", "url": "https://www.holdemmaster.com" },
       "dateModified": "2026-03-24",
       "keywords": "오마하 포커, 오마하 규칙, PLO, 팟 리밋 오마하, 오마하 하이로, 포커 규칙",
     },
@@ -117,9 +117,9 @@ export default function Omaha() {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://holdemmaster.com/" },
-        { "@type": "ListItem", "position": 2, "name": "게임 방법", "item": "https://holdemmaster.com/rules" },
-        { "@type": "ListItem", "position": 3, "name": "오마하 포커 규칙", "item": "https://holdemmaster.com/rules/omaha" },
+        { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://www.holdemmaster.com/" },
+        { "@type": "ListItem", "position": 2, "name": "게임 방법", "item": "https://www.holdemmaster.com/rules" },
+        { "@type": "ListItem", "position": 3, "name": "오마하 포커 규칙", "item": "https://www.holdemmaster.com/rules/omaha" },
       ],
     },
   ];

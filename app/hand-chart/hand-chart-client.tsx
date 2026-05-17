@@ -73,7 +73,7 @@ export default function HandChart() {
       <SEO
         title="홀덤 스타팅 핸드 차트 — 포지션별 오픈 레인지 완전 가이드"
         description="UTG·HJ·CO·버튼·SB 포지션별 스타팅 핸드 169개를 한눈에 비교하는 인터랙티브 차트. 한국어 GTO 오픈 레인지 기준으로 색상 코딩, 버튼 하나로 포지션별 플레이 범위 즉시 확인."
-        canonical="https://holdemmaster.com/hand-chart"
+        canonical="https://www.holdemmaster.com/hand-chart"
         keywords={["홀덤 스타팅 핸드", "포지션별 핸드 차트", "홀덤 오픈 레인지", "UTG 레인지", "버튼 레인지", "GTO 스타팅 핸드"]}
       />
 

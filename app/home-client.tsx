@@ -202,11 +202,11 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "홀덤마스터",
-    "url": "https://holdemmaster.com",
+    "url": "https://www.holdemmaster.com",
     "description": "대한민국 최고의 텍사스 홀덤 정보 포털. 기초 규칙, 핸드 랭킹, 전략 가이드, 추천 사이트 랭킹.",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://holdemmaster.com/?s={search_term_string}",
+      "target": "https://www.holdemmaster.com/?s={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   };

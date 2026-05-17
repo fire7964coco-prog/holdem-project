@@ -12,7 +12,7 @@ const root = join(__dirname, "..");
 const jiti = createJiti(join(root, "scripts", "generate-sitemap.mjs"));
 const { POSTS } = jiti("../lib/posts.ts");
 
-const SITE = "https://holdemmaster.com";
+const SITE = "https://www.holdemmaster.com";
 
 /** trailing slash 없음 (next.config trailingSlash: false) */
 const STATIC_ROUTES = [

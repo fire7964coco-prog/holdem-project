@@ -99,7 +99,7 @@ export default function SevenCardStud() {
       "headline": "세븐 카드 스터드 포커 규칙 완벽 가이드",
       "description": "세븐 카드 스터드 포커 기초 규칙을 완벽하게 정리했습니다. 앤티, 브링인, 서드~세븐스 스트리트 5단계 베팅, 업카드 전략까지 한 페이지에서 마스터.",
       "author": { "@type": "Organization", "name": "홀덤마스터" },
-      "publisher": { "@type": "Organization", "name": "홀덤마스터", "url": "https://holdemmaster.com" },
+      "publisher": { "@type": "Organization", "name": "홀덤마스터", "url": "https://www.holdemmaster.com" },
       "dateModified": "2026-03-24",
       "keywords": "세븐 카드 스터드, 7카드 스터드, 스터드 포커 규칙, 스터드 하는법, 포커 규칙, 스터드 전략",
     },
@@ -116,9 +116,9 @@ export default function SevenCardStud() {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://holdemmaster.com/" },
-        { "@type": "ListItem", "position": 2, "name": "게임 방법", "item": "https://holdemmaster.com/rules" },
-        { "@type": "ListItem", "position": 3, "name": "세븐 카드 스터드", "item": "https://holdemmaster.com/rules/seven-card-stud" },
+        { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://www.holdemmaster.com/" },
+        { "@type": "ListItem", "position": 2, "name": "게임 방법", "item": "https://www.holdemmaster.com/rules" },
+        { "@type": "ListItem", "position": 3, "name": "세븐 카드 스터드", "item": "https://www.holdemmaster.com/rules/seven-card-stud" },
       ],
     },
   ];

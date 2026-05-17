@@ -84,13 +84,13 @@ export default function Hands() {
       "headline": "텍사스 홀덤 족보 순위 — 포커 핸드 랭킹 완벽 정리 2026",
       "description": "로열 플러시부터 하이카드까지 텍사스 홀덤 포커 족보 순위를 예시 카드와 함께 정리했습니다.",
       "author": { "@type": "Organization", "name": "홀덤마스터" },
-      "publisher": { "@type": "Organization", "name": "홀덤마스터", "url": "https://holdemmaster.com" },
+      "publisher": { "@type": "Organization", "name": "홀덤마스터", "url": "https://www.holdemmaster.com" },
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://holdemmaster.com/" },
-        { "@type": "ListItem", "position": 2, "name": "홀덤 족보 순위", "item": "https://holdemmaster.com/hands" },
+        { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://www.holdemmaster.com/" },
+        { "@type": "ListItem", "position": 2, "name": "홀덤 족보 순위", "item": "https://www.holdemmaster.com/hands" },
       ],
     },
   ];

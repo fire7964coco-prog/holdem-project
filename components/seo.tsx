@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { SITE } from "@/lib/site";
 
 interface SEOProps {
   title: string;
@@ -25,7 +26,7 @@ interface SEOProps {
 export function SEO({ title, description, path = "" }: SEOProps) {
   const siteName = "홀덤마스터";
   const fullTitle = `${title} | ${siteName}`;
-  const baseUrl = "https://holdemmaster.com";
+  const baseUrl = SITE;
   const canonical = `${baseUrl}${path}`;
 
   useEffect(() => {

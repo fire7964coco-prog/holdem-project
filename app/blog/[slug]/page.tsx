@@ -3,9 +3,8 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getBlogLcpInfo, stripFirstBlogLcpBlock } from "@/lib/blog-lcp";
 import { POSTS, getPost } from "@/lib/posts";
+import { SITE } from "@/lib/site";
 import BlogPostClient from "./blog-post-client";
-
-const SITE = "https://holdemmaster.com";
 
 /**
  * 빌드 타임에 모든 블로그 포스트(29개) URL 정적 생성

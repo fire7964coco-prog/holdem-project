@@ -8,11 +8,23 @@
  *
  * trailingSlash: false — sitemap.xml 형식과 일치 (구글 인덱싱 안정화)
  */
+const CANONICAL_HOST = "www.holdemmaster.com";
+
 const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   compress: true,
   trailingSlash: false,
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "holdemmaster.com" }],
+        destination: `https://${CANONICAL_HOST}/:path*`,
+        permanent: true,
+      },
+    ];
+  },
   typescript: {
     // 마이그레이션 단계: 기존 코드의 누락된 prop·타입 경고는 빌드 차단하지 않음.
     // 실제 런타임 동작은 모두 검증된 상태이며, 추후 점진 정리.

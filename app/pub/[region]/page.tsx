@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { PUB_REGIONS, REGION_MAP } from "@/lib/pubs";
 import PubRegionClient from "./pub-region-client";
 
-const SITE = "https://holdemmaster.com";
+const SITE = "https://www.holdemmaster.com";
 
 export function generateStaticParams() {
   return PUB_REGIONS.map((r) => ({ region: r.slug }));

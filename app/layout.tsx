@@ -5,8 +5,7 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { BrushDefs } from "@/components/brush-defs";
 import "./globals.css";
-
-const SITE = "https://holdemmaster.com";
+import { SITE } from "@/lib/site";
 
 /**
  * 모바일 LCP/TBT 최적화:

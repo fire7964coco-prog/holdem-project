@@ -121,7 +121,7 @@ export default function TexasHoldem() {
       "headline": "텍사스 홀덤 포커 규칙 완벽 가이드",
       "description": "텍사스 홀덤 기초 규칙을 처음 배우는 사람도 이해할 수 있도록 완벽하게 정리한 가이드. 블라인드·프리플랍·플랍·턴·리버·쇼다운 6단계, 베팅 옵션 7가지, 족보 순위 10가지, FAQ 8개.",
       "author": { "@type": "Organization", "name": "홀덤마스터" },
-      "publisher": { "@type": "Organization", "name": "홀덤마스터", "url": "https://holdemmaster.com" },
+      "publisher": { "@type": "Organization", "name": "홀덤마스터", "url": "https://www.holdemmaster.com" },
       "dateModified": "2026-03-24",
       "keywords": "텍사스 홀덤 규칙, 홀덤 하는법, 홀덤 베팅, 홀덤 족보, 블라인드, 프리플랍, 플랍, 턴, 리버, 쇼다운",
     },
@@ -138,9 +138,9 @@ export default function TexasHoldem() {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://holdemmaster.com/" },
-        { "@type": "ListItem", "position": 2, "name": "게임 방법", "item": "https://holdemmaster.com/rules" },
-        { "@type": "ListItem", "position": 3, "name": "텍사스 홀덤 규칙", "item": "https://holdemmaster.com/rules/texas-holdem" },
+        { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://www.holdemmaster.com/" },
+        { "@type": "ListItem", "position": 2, "name": "게임 방법", "item": "https://www.holdemmaster.com/rules" },
+        { "@type": "ListItem", "position": 3, "name": "텍사스 홀덤 규칙", "item": "https://www.holdemmaster.com/rules/texas-holdem" },
       ],
     },
   ];

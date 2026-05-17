@@ -13,13 +13,13 @@ export default function Strategy() {
       "headline": "텍사스 홀덤 전략 가이드 — 초급부터 고급까지 승률 올리는 법",
       "description": "텍사스 홀덤에서 승률을 높이는 실전 전략. 포지션 활용법, 스타팅 핸드 선택, 팟 오즈 계산, 블러핑 타이밍, GTO 전략까지 초급·중급·고급으로 구분해 설명합니다.",
       "author": { "@type": "Organization", "name": "홀덤마스터" },
-      "publisher": { "@type": "Organization", "name": "홀덤마스터", "url": "https://holdemmaster.com" },
+      "publisher": { "@type": "Organization", "name": "홀덤마스터", "url": "https://www.holdemmaster.com" },
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://holdemmaster.com/" },
-        { "@type": "ListItem", "position": 2, "name": "홀덤 전략 가이드", "item": "https://holdemmaster.com/strategy" },
+        { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://www.holdemmaster.com/" },
+        { "@type": "ListItem", "position": 2, "name": "홀덤 전략 가이드", "item": "https://www.holdemmaster.com/strategy" },
       ],
     },
   ];
