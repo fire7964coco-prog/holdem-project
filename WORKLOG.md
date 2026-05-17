@@ -5,6 +5,40 @@
 
 ---
 
+## 📋 GSC 루틴 — 글 발행·배포 후 10분 (필수)
+
+> **사이트맵 “제출”은 구글이 하는 일이고, 내가 GSC에 들어가서 눌러야 합니다.**  
+> (자동 제출 스크립트는 Search Console API 키가 있어야 가능 — 지금은 수동 루틴 권장)
+
+### A. 배포 직후 (매 글, 5분)
+
+- [ ] [Google Search Console](https://search.google.com/search-console) → 속성 `holdemmaster.com`
+- [ ] **URL 검사**에 새 글 주소 입력  
+  예: `https://holdemmaster.com/blog/holdem-value-bet-sizing`
+- [ ] **“색인 생성 요청”** 클릭 (이미 색인됐으면 “색인됨”만 확인)
+- [ ] `public/sitemap.xml`에 해당 URL·`lastmod`가 글 `updated` 날짜인지 확인  
+  → 배포 시 `npm run build`가 **자동으로 sitemap 재생성** (`prebuild` → `generate:sitemap`)  
+  → 수동만 할 때: `npm run generate:sitemap`
+
+### B. 주 1회 (5분)
+
+- [ ] GSC → **Sitemaps** → `https://holdemmaster.com/sitemap.xml` **다시 제출** (이미 있어도 재제출 OK)
+- [ ] **실적** → **검색어** 탭: 클릭·노출 있는 쿼리 3개 메모 → 다음 글 제목·H2에 반영
+- [ ] **페이지** 탭: 노출 많은데 CTR 낮은 글 → `seoTitle`·`desc`만 손볼 후보로 표시
+
+### C. 월 1회 (선택)
+
+- [ ] 색인 안 된 URL이 있으면 URL 검사로 원인 확인 (noindex·리다이렉트·404)
+- [ ] 옛 글 1~2편: 내부링크 2개 + `updated` 갱신 + 배포 → 해당 URL만 URL 검사
+
+### 체크리스트 메모란 (발행할 때마다 적기)
+
+| 날짜 | slug | URL 검사 | sitemap lastmod | 비고 |
+|------|------|:--------:|:---------------:|------|
+| | | ☐ | ☐ | |
+
+---
+
 ## 🏆 최우선 원칙 (2026-04-20 확정, 절대 잊지 말 것)
 
 ### 앞으로 모든 포스팅은 반드시 사람의 경험이 담겨야 한다

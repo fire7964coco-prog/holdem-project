@@ -80,5 +80,5 @@ export const POST: Post = {
    ✅ H2에 "홀덤" 키워드 포함
    ✅ index.ts에 import 추가
    ✅ roadmap.tsx에 published: true 등록
-   ✅ sitemap.xml에 URL 추가
+   ✅ npm run build (prebuild가 sitemap 자동 생성) 또는 npm run generate:sitemap
 ────────────────────────────────────────────── */

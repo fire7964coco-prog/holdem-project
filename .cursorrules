@@ -181,8 +181,8 @@ export const newPosts = [...기존, holdemCheckRaise];
 (아래 "JSON-LD" 섹션 참조)
 
 ### STEP 7: 빌드 & 배포
-- npm run build → 에러 없는지 확인
-- public/sitemap.xml에 새 URL 반영 확인
+- npm run build → prebuild가 `generate:sitemap` 실행 (블로그 lastmod = post.updated)
+- public/sitemap.xml에 새 slug·날짜 반영 확인
 - git add . → git commit → git push → Vercel 자동 배포
 
 ### STEP 8: WORKLOG.md 최상단에 작업 기록 추가
