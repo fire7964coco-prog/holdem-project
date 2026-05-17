@@ -219,6 +219,7 @@ export const POST: Post = {
 | 3 | [3벳 전략](/blog/holdem-3bet-strategy) | 리레이즈·4벳 라인 |
 | 4 | [블러핑 전략](/blog/bluffing-strategy-when-and-how) | 체크레이즈 블러프 스토리 |
 | 5 | [오버벳 전략](/blog/holdem-overbet-strategy) | 팟 극대화·사이즈 압박 |
+| 6 | [밸류벳 사이즈](/blog/holdem-value-bet-sizing) | 콜 받는 크기·얇은 밸류 |
 
 ### 기초·수학 클러스터
 

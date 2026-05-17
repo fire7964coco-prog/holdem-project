@@ -116,7 +116,7 @@ const PILLARS: Pillar[] = [
       { label: "3벳이란? 밸류·블러프 완전 정리", slug: "holdem-3bet-strategy",       published: true  },
       { label: "C벳이란 뜻·타이밍",        slug: "holdem-cbet-strategy",       published: true  },
       { label: "체크레이즈 전략",          slug: "holdem-check-raise",         published: true  },
-      { label: "밸류벳 크기 결정법",       published: false },
+      { label: "밸류벳 크기 결정법",       slug: "holdem-value-bet-sizing",    published: true  },
     ],
   },
   {
