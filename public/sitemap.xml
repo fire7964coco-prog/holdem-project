@@ -192,7 +192,7 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- 블로그 포스트 (31편) -->
+  <!-- 블로그 포스트 (32편) -->
 
   <url>
     <loc>https://www.holdemmaster.com/blog/apt-jeju-classic-2026-guide</loc>
@@ -238,7 +238,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/blog/holdem-cbet-strategy</loc>
-    <lastmod>2026-05-06</lastmod>
+    <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -335,6 +335,13 @@
   </url>
 
   <url>
+    <loc>https://www.holdemmaster.com/blog/holdem-small-blind-role</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://www.holdemmaster.com/blog/holdem-split-pot-rules</loc>
     <lastmod>2026-05-06</lastmod>
     <changefreq>monthly</changefreq>
@@ -350,7 +357,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/blog/holdem-tiebreak-rules</loc>
-    <lastmod>2026-05-08</lastmod>
+    <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

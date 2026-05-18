@@ -26,6 +26,7 @@ const CARD_MAP: Record<string, CardData> = {
   "holdem-hand-rankings":             { rank: "A", suit: "♥", rank2: "K", suit2: "♦" },
   "holdem-odds-calculator":           { rank: "9", suit: "♣", rank2: "8", suit2: "♣" },
   "holdem-blind-meaning":             { rank: "K", suit: "♦", rank2: "K", suit2: "♣" },
+  "holdem-small-blind-role":           { rank: "5", suit: "♠", rank2: "10", suit2: "♦" },
   "holdem-game-order":                { rank: "A", suit: "♥", rank2: "Q", suit2: "♠" },
   "bluffing-strategy-when-and-how":   { rank: "J", suit: "♥", rank2: "9", suit2: "♦" },
   "position-is-everything-in-holdem": { rank: "K", suit: "♣", rank2: "J", suit2: "♠" },

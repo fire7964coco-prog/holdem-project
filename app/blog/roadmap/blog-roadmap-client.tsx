@@ -52,7 +52,7 @@ const PILLARS: Pillar[] = [
       { label: "게임 진행 순서",           slug: "holdem-game-order",             published: true  },
       { label: "블라인드 뜻",              slug: "holdem-blind-meaning",          published: true  },
       { label: "스플릿 팟 완전 정복",      slug: "holdem-split-pot-rules",        published: true  },
-      { label: "스몰블라인드 역할",         published: false },
+      { label: "스몰블라인드 역할",         slug: "holdem-small-blind-role",       published: true  },
       { label: "체크 뜻·언제 쓰나",        published: false },
       { label: "레이즈 얼마나",            published: false },
     ],
