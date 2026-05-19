@@ -5,6 +5,14 @@
 
 ---
 
+## 🚨 포스팅 전 필수 (최우선)
+
+**포스팅할 때는 항상 키워드로 구글 검색 → Top 10 경쟁 글 분석 → 가장 경쟁력 있는 콘텐츠 생성.**
+
+→ 체크리스트: [`docs/SEO_COPY_GUIDELINES.md`](docs/SEO_COPY_GUIDELINES.md) · 스프린트: [`docs/SEO_SPRINT_45D.md`](docs/SEO_SPRINT_45D.md)
+
+---
+
 ## 🎯 구글 1페이지 스프린트 (45일, 2026-05-18~)
 
 > **전체 기획서 (다운로드):** [`docs/SEO_SPRINT_45D.md`](docs/SEO_SPRINT_45D.md)  
