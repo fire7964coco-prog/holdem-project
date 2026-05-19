@@ -22,7 +22,7 @@ export const POST: Post = {
 - 남용하면 바로 읽힘 — 빈도와 타이밍이 핵심
 - 당했을 때는 상대 레인지를 좁히고 콜·폴드를 결정
 
-이 글은 **배팅 전략** 클러스터(로드맵 P6)의 한 편이에요. 프리플랍·플랍 공격의 기본인 [홀덤 C벳 전략](/blog/holdem-cbet-strategy)을 먼저 익힌 뒤, OOP에서 역공하는 ==체크레이즈==를 이해하면 판이 한층 넓어집니다. 같은 클러스터: [3벳 전략](/blog/holdem-3bet-strategy) · [블러핑 전략](/blog/bluffing-strategy-when-and-how) · [오버벳 전략](/blog/holdem-overbet-strategy). 전체 지도는 [블로그 로드맵](/blog/roadmap)에서 볼 수 있어요.
+이 글은 **배팅 전략** 클러스터(로드맵 P6)의 한 편이에요. [홀덤 체크 뜻](/blog/holdem-check-meaning)으로 기본 행동을 먼저 익힌 뒤, 프리플랍·플랍 공격인 [홀덤 C벳 전략](/blog/holdem-cbet-strategy)을 보고 OOP에서 역공하는 ==체크레이즈==를 이해하면 판이 한층 넓어집니다. 같은 클러스터: [3벳 전략](/blog/holdem-3bet-strategy) · [블러핑 전략](/blog/bluffing-strategy-when-and-how) · [오버벳 전략](/blog/holdem-overbet-strategy). 전체 지도는 [블로그 로드맵](/blog/roadmap)에서 볼 수 있어요.
 
 ---
 

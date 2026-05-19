@@ -10,8 +10,10 @@ import { POST as holdemCbetStrategy } from "./holdem-cbet-strategy";
 import { POST as holdemCheckRaise } from "./holdem-check-raise";
 import { POST as holdemValueBetSizing } from "./holdem-value-bet-sizing";
 import { POST as holdemSmallBlindRole } from "./holdem-small-blind-role";
+import { POST as holdemCheckMeaning } from "./holdem-check-meaning";
 
 export const NEW_POSTS: Post[] = [
+  holdemCheckMeaning,
   holdemSmallBlindRole,
   holdemValueBetSizing,
   holdemCheckRaise,
