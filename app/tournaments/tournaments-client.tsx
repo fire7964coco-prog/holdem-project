@@ -792,7 +792,7 @@ export default function Tournaments() {
     "author": { "@type": "Organization", "name": "홀덤마스터", "url": "https://www.holdemmaster.com" },
     "publisher": { "@type": "Organization", "name": "홀덤마스터", "url": "https://www.holdemmaster.com", "logo": { "@type": "ImageObject", "url": "https://www.holdemmaster.com/favicon.svg" } },
     "datePublished": "2026-03-26",
-    "dateModified": "2026-05-19",
+    "dateModified": "2026-05-20",
     "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.holdemmaster.com/tournaments" },
     "image": "https://www.holdemmaster.com/images/tournament-hall-wsop.webp",
     "keywords": "홀덤 대회, 포커 토너먼트, KPT, WSOP, 홀덤 대회 참가방법, 피망 포커 대회, 한게임 포커 대회",
@@ -836,8 +836,8 @@ export default function Tournaments() {
   return (
     <>
       <SEO
-        title="⚡ 홀덤 대회 완벽 가이드 — 국내·해외 포커 토너먼트 총정리 2026"
-        description="⚡홀덤 대회⚡ KPT·피망포커·한게임·홀덤펍 리그부터 WSOP·WPT·EPT·APT까지. 국내외 포커 토너먼트 일정·바이인·전략·참가 방법을 한 페이지에 완벽 정리했습니다."
+        title="⚡ 홀덤 대회 일정 2026 — WSOP 5/26·GOP 인천 진행중"
+        description="【홀덤 대회 일정】GOP 인천(5/15~24) 진행중 · WSOP 5/26 개막. ⚡APT·EPT·KPC·AJPC 2026 공식 일정·종료/예정 표시 — 참가 전 일정표에서 확인하세요."
         keywords="홀덤 대회, 홀덤대회, 포커 토너먼트, KPT 코리아포커투어, 피망 포커 대회, 한게임 포커 대회, WSOP 참가방법, WPT, EPT, APT 아시아, 홀덤펍 리그, 포커 대회 일정 2026, 홀덤 토너먼트 전략, 포커 대회 참가 방법"
         path="/tournaments"
         schema={combinedSchema}
