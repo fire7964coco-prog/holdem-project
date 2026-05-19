@@ -78,42 +78,51 @@ const RANKINGS = [
   },
 ];
 
-const NEWS = [
+const POPULAR_GUIDES = [
   {
-    category: "전략",
-    href: "/blog/position-is-everything-in-holdem",
-    title: "2025년 포커 AI 분석: 프로들이 숨기는 핸드 선택 비법",
-    desc: "솔버와 GTO 전략을 활용해 실전에서 즉시 적용 가능한 핸드 레인지 최적화 방법을 공개합니다.",
-    date: "2025-03-20",
-    readTime: "8분",
-    img: "🃏",
+    category: "기초 규칙",
+    href: "/blog/holdem-blind-meaning",
+    title: "홀덤 블라인드 뜻 — 빅·스몰블라인드 차이 3분",
+    desc: "SB·BB·딜러 버튼·옵션 체크까지. GSC에서 가장 많이 찾는 블라인드 허브 글입니다.",
+    date: "2026-05",
+    readTime: "11분",
+    img: "🎯",
   },
   {
-    category: "토너먼트",
-    href: "/blog/wsop-2025-tournament-guide",
-    title: "WSOP 2025 일정 발표 — 한국 선수들이 주목해야 할 이벤트",
-    desc: "세계 최대 포커 토너먼트 WSOP 2025 공식 일정이 발표됐습니다. 한국 선수가 도전할 만한 베스트 이벤트 5선.",
-    date: "2025-03-18",
-    readTime: "5분",
-    img: "🏆",
+    category: "족보",
+    href: "/blog/holdem-hand-rankings-confusing",
+    title: "홀덤 족보 헷갈리는 TOP7 — 플러시·풀하우스 판정",
+    desc: "쇼다운에서 자주 틀리는 족보 비교. 표와 예시로 한 번에 정리합니다.",
+    date: "2026-04",
+    readTime: "9분",
+    img: "👑",
+  },
+  {
+    category: "기초 규칙",
+    href: "/blog/holdem-tiebreak-rules",
+    title: "홀덤 족보 같을 때 — 키커·스플릿 판정법",
+    desc: "원페어 대 원페어, 키커 한 장 차이. 실전 판정 순서를 단계별로 설명합니다.",
+    date: "2026-04",
+    readTime: "8분",
+    img: "⚖️",
   },
   {
     category: "초보 가이드",
-    href: "/blog/texas-holdem-beginner-guide-30min",
-    title: "홀덤 처음 시작하는 분들을 위한 30분 완성 기초 강의",
-    desc: "카드 배분부터 베팅 순서, 족보 판별까지. 오늘 배우고 오늘 바로 테이블에 앉을 수 있는 핵심만 담았습니다.",
-    date: "2025-03-15",
-    readTime: "12분",
-    img: "📚",
+    href: "/blog/holdem-check-meaning",
+    title: "홀덤 체크 뜻 — 패스가 아니라 베팅 0원",
+    desc: "BB 옵션·체크 금지 상황·콜·폴드 차이. 테이블에서 당황하지 않게 정리했습니다.",
+    date: "2026-05",
+    readTime: "9분",
+    img: "✋",
   },
   {
-    category: "심리전",
-    href: "/blog/bluffing-strategy-when-and-how",
-    title: "블러핑의 기술 — 언제, 어떻게 상대를 속여야 하는가",
-    desc: "무분별한 블러핑은 칩을 날립니다. 팟 오즈, 포지션, 상대 성향을 읽는 과학적 블러핑 전략.",
-    date: "2025-03-12",
+    category: "포지션",
+    href: "/blog/holdem-small-blind-role",
+    title: "스몰블라인드 역할 — 싸다고 콜하면 손해",
+    desc: "SB가 가장 불리한 이유, 빅블라인드와 다른 운영법, 초보 실수 패턴.",
+    date: "2026-05",
     readTime: "10분",
-    img: "🎭",
+    img: "⚡",
   },
 ];
 
@@ -740,15 +749,15 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex items-center justify-between mb-10">
             <div>
-              <h2 className="text-3xl font-serif font-bold text-foreground">최신 홀덤 전략 가이드 & 뉴스</h2>
-              <p className="text-muted-foreground mt-1 text-sm">매주 업데이트되는 전략 칼럼과 포커 소식</p>
+              <h2 className="text-3xl font-serif font-bold text-foreground">인기 홀덤 가이드 TOP 5</h2>
+              <p className="text-muted-foreground mt-1 text-sm">검색·실전에서 가장 많이 찾는 기초·족보 글</p>
             </div>
             <Link href="/blog" className="hidden md:flex items-center gap-1 text-primary text-sm font-semibold hover:text-yellow-400 transition-colors">
               블로그 전체 글 보기 <ChevronRight className="w-4 h-4" />
             </Link>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-            {NEWS.map((article, idx) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
+            {POPULAR_GUIDES.map((article, idx) => (
               <motion.div
                 key={article.title}
                 initial={false}
@@ -815,9 +824,9 @@ export default function Home() {
               { href: "/glossary", label: "홀덤 포커 용어 사전 100+" },
               { href: "/ranking", label: "추천 온라인 홀덤 사이트 랭킹" },
               { href: "/blog", label: "홀덤 전략 블로그 & 뉴스" },
-              { href: "/blog/texas-holdem-beginner-guide-30min", label: "초보자 30분 완성 기초 강의" },
-              { href: "/blog/bluffing-strategy-when-and-how", label: "블러핑 전략 — 언제 어떻게" },
-              { href: "/blog/position-is-everything-in-holdem", label: "포지션이 전부다 — 실전 가이드" },
+              { href: "/blog/holdem-blind-meaning", label: "홀덤 블라인드 뜻 — 빅·스몰 차이" },
+              { href: "/blog/holdem-check-meaning", label: "홀덤 체크 뜻 — 베팅 0원" },
+              { href: "/blog/holdem-tiebreak-rules", label: "홀덤 족보 같을 때 — 키커·스플릿" },
             ].map(link => (
               <Link key={link.href} href={link.href} className="flex items-center gap-1.5 text-muted-foreground hover:text-primary transition-colors py-1">
                 <ChevronRight className="w-3.5 h-3.5 text-primary flex-shrink-0" />
