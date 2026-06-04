@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "⚡ 홀덤 대회 일정 2026 — WSOP 5/26·GOP 인천 진행중",
+  title: "⚡ 홀덤 대회 일정 2026 — WSOP 진행중·APT 인천 예정",
   description:
-    "【홀덤 대회 일정】2026.05.19 공식 기준 · GOP 인천(5/15~24) 진행중 · WSOP 라스베이거스 5/26 개막. ⚡APT·EPT·KPC·AJPC 국내외 일정·바이인·종료/예정 상태를 한 페이지에.",
+    "【홀덤 대회 일정】2026.06.04 공식 기준 · WSOP 라스베이거스 진행중(~7/15) · APT 인천 8/7·EPT 바르셀로나 8/16 예정. ⚡국내외 일정·바이인·종료/진행중/예정 상태를 한 페이지에.",
   alternates: { canonical: `${SITE}/tournaments` },
   openGraph: {
     title: "⚡ 홀덤 대회 일정 2026 — WSOP·APT·GOP | 홀덤마스터",

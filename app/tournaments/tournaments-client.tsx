@@ -323,7 +323,7 @@ const BEGINNER_GUIDE = [
   },
 ];
 
-/** 2026-05-19 기준. WSOP·APT·EPT·GOP·AJPC 등 공식 일정 확인 후 반영. */
+/** 2026-06-04 기준. WSOP·APT·EPT·GOP·AJPC 등 공식 일정 확인 후 반영. */
 const SCHEDULE_2026 = [
   {
     id: "kpc-jeju",
@@ -470,10 +470,9 @@ const SCHEDULE_2026 = [
     buyin: "다양",
     emoji: "👑",
     color: "bg-primary/20 text-primary border-primary/40",
-    status: "ongoing" as const,
+    status: "ended" as const,
     link: "https://godsofpoker.com/series/incheon-2026",
-    highlight: true,
-    note: "GOP 공식 · 83개 이벤트 · 메인 7억원 GTD",
+    note: "GOP 공식 · 79개 트로피 · 메인 우승 Kyung Min Lee(₩1.48억)",
   },
   {
     id: "wsop-2026",
@@ -482,14 +481,14 @@ const SCHEDULE_2026 = [
     month: "5~7월",
     monthNum: 5,
     dateRange: "2026.05.26~07.15",
-    location: "미국 라스베이거스",
-    buyin: "$400~$10,000",
+    location: "미국 라스베이거스 (Horseshoe & Paris)",
+    buyin: "$300~$250,000",
     emoji: "🌎",
     color: "bg-yellow-500/15 text-yellow-400 border-yellow-500/30",
-    status: "upcoming" as const,
-    link: "https://www.wsop.com",
+    status: "ongoing" as const,
+    link: "https://www.wsop.com/tournaments/2026-57th-annual-world-series-of-poker/",
     highlight: true,
-    note: "WSOP 공식 · 100개 브레이슬릿 · Horseshoe & Paris LV",
+    note: "진행중 · 100개 브레이슬릿 · 메인이벤트 7/2~13",
   },
   {
     id: "apt-incheon",
@@ -572,14 +571,14 @@ const SCHEDULE_2026 = [
     type: "international" as const,
     month: "11월",
     monthNum: 11,
-    dateRange: "2026.11.13~11.29",
+    dateRange: "2026.11.12~11.29",
     location: "대만 타이베이 (Red Space)",
     buyin: "다양",
     emoji: "🏆",
     color: "bg-orange-500/15 text-orange-400 border-orange-500/30",
     status: "upcoming" as const,
-    link: "https://www.theasianpokertour.com/series",
-    note: "APT 공식 · 17일 · Red Space 타이베이 · 20주년",
+    link: "https://www.theasianpokertour.com/series/apt-championship-taipei-2026/info",
+    note: "APT 공식 · 메인 $500만 GTD(11/23~27) · 20주년 피날레",
   },
   {
     id: "wsop-paradise",
@@ -594,7 +593,7 @@ const SCHEDULE_2026 = [
     color: "bg-yellow-500/15 text-yellow-400 border-yellow-500/30",
     status: "upcoming" as const,
     link: "https://www.wsop.com",
-    note: "WSOP 공식 · Baha Mar 이전 · 15+ 브레이슬릿",
+    note: "WSOP 공식 · Baha Mar 신규 이전 · 이벤트 12/3~17 · 15+ 브레이슬릿",
   },
   {
     id: "gop-jeju-2026",
@@ -656,7 +655,7 @@ function ScheduleSection() {
       <div className="flex items-center gap-3 mb-5">
         <Calendar className="w-5 h-5 text-primary flex-shrink-0" />
         <h2 className="text-2xl font-serif font-bold text-foreground">2026 홀덤 대회 일정표</h2>
-        <span className="text-xs bg-primary/15 text-primary border border-primary/30 px-2.5 py-0.5 rounded-full font-bold">2026.05.19 기준</span>
+        <span className="text-xs bg-primary/15 text-primary border border-primary/30 px-2.5 py-0.5 rounded-full font-bold">2026.06.04 기준</span>
       </div>
       <p className="text-muted-foreground text-sm mb-5 leading-relaxed">
         WSOP·APT·EPT·GOP·AJPC 등 공식 발표 일정을 반영했습니다. 변경·연기는 각 대회 공식 사이트를 우선 확인하세요.
@@ -792,7 +791,7 @@ export default function Tournaments() {
     "author": { "@type": "Organization", "name": "홀덤마스터", "url": "https://www.holdemmaster.com" },
     "publisher": { "@type": "Organization", "name": "홀덤마스터", "url": "https://www.holdemmaster.com", "logo": { "@type": "ImageObject", "url": "https://www.holdemmaster.com/favicon.svg" } },
     "datePublished": "2026-03-26",
-    "dateModified": "2026-05-20",
+    "dateModified": "2026-06-04",
     "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.holdemmaster.com/tournaments" },
     "image": "https://www.holdemmaster.com/images/tournament-hall-wsop.webp",
     "keywords": "홀덤 대회, 포커 토너먼트, KPT, WSOP, 홀덤 대회 참가방법, 피망 포커 대회, 한게임 포커 대회",
@@ -836,8 +835,8 @@ export default function Tournaments() {
   return (
     <>
       <SEO
-        title="⚡ 홀덤 대회 일정 2026 — WSOP 5/26·GOP 인천 진행중"
-        description="【홀덤 대회 일정】GOP 인천(5/15~24) 진행중 · WSOP 5/26 개막. ⚡APT·EPT·KPC·AJPC 2026 공식 일정·종료/예정 표시 — 참가 전 일정표에서 확인하세요."
+        title="⚡ 홀덤 대회 일정 2026 — WSOP 진행중·APT 인천 예정"
+        description="【홀덤 대회 일정】WSOP 라스베이거스 진행중(~7/15) · APT 인천 8/7·EPT 바르셀로나 8/16 예정. ⚡2026 국내외 공식 일정·종료/진행중/예정 표시 — 참가 전 확인하세요."
         keywords="홀덤 대회, 홀덤대회, 포커 토너먼트, KPT 코리아포커투어, 피망 포커 대회, 한게임 포커 대회, WSOP 참가방법, WPT, EPT, APT 아시아, 홀덤펍 리그, 포커 대회 일정 2026, 홀덤 토너먼트 전략, 포커 대회 참가 방법"
         path="/tournaments"
         schema={combinedSchema}
@@ -862,7 +861,7 @@ export default function Tournaments() {
             국내 피망포커·한게임·KPT·홀덤펍 리그부터<br className="hidden md:block" />
             세계 최대 <strong className="text-foreground">WSOP·WPT·EPT·APT</strong>까지.<br />
             홀덤 대회의 모든 것을 한눈에 정리했습니다.
-            <span className="block mt-3 text-sm text-primary/90">2026년 5월 19일 기준 — GOP 인천 진행 중 · WSOP 라스베이거스 5/26 개막 · 일정표는 공식 사이트 확인 후 반영</span>
+            <span className="block mt-3 text-sm text-primary/90">2026년 6월 4일 기준 — WSOP 라스베이거스 진행 중(~7/15, 메인 7/2~13) · 하반기 APT 인천·EPT 바르셀로나 예정 · 공식 일정 확인 후 반영</span>
           </p>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-10 max-w-2xl mx-auto">
