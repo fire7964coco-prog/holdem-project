@@ -15,6 +15,8 @@ type Suit = "♠" | "♥" | "♦" | "♣";
 interface CardData { rank: string; suit: Suit; rank2?: string; suit2?: Suit; }
 
 const CARD_MAP: Record<string, CardData> = {
+  /* ── W5 포스트 (2026-06) ── */
+  "ak-offsuit-strategy":              { rank: "A", suit: "♠", rank2: "K", suit2: "♣" },
   /* ── C4 포스트 (2026-04) ── */
   "holdem-split-pot-rules":           { rank: "8", suit: "♥", rank2: "8", suit2: "♠" },
   /* ── C3 포스트 (2026-04) ── */

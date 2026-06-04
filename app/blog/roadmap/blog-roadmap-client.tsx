@@ -54,7 +54,7 @@ const PILLARS: Pillar[] = [
       { label: "스플릿 팟 완전 정복",      slug: "holdem-split-pot-rules",        published: true  },
       { label: "스몰블라인드 역할",         slug: "holdem-small-blind-role",       published: true  },
       { label: "체크 뜻·언제 쓰나",        slug: "holdem-check-meaning", published: true  },
-      { label: "레이즈 얼마나",            published: false },
+      { label: "레이즈 얼마나",            slug: "holdem-raise-how-much", published: false },
     ],
   },
   {
@@ -86,7 +86,7 @@ const PILLARS: Pillar[] = [
       { label: "프리플랍 폴드 기준",        slug: "when-to-fold-preflop-holdem",  published: true  },
       { label: "포켓에이스 AA 플레이법",   slug: "pocket-aces-aa-strategy",      published: true  },
       { label: "포켓킹 KK 플레이법",       slug: "pocket-kings-kk-strategy",    published: true  },
-      { label: "AK 오프수트 전략",         published: false },
+      { label: "AK 오프수트 전략",         slug: "ak-offsuit-strategy",          published: true  },
     ],
   },
   {

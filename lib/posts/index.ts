@@ -11,8 +11,9 @@ import { POST as holdemCheckRaise } from "./holdem-check-raise";
 import { POST as holdemValueBetSizing } from "./holdem-value-bet-sizing";
 import { POST as holdemSmallBlindRole } from "./holdem-small-blind-role";
 import { POST as holdemCheckMeaning } from "./holdem-check-meaning";
-
+import { POST as akOffsuitStrategy } from "./ak-offsuit-strategy";
 export const NEW_POSTS: Post[] = [
+  akOffsuitStrategy,
   holdemCheckMeaning,
   holdemSmallBlindRole,
   holdemValueBetSizing,
