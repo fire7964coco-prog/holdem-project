@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
 import { BookOpen, Trophy, Lightbulb, Library, ChevronRight, Star, Shield, CheckCircle, TrendingUp, Clock, Users, Award, ChevronDown, AlertTriangle } from "lucide-react";
 import { SEO } from "@/components/seo";
 import { useState } from "react";
@@ -437,12 +436,8 @@ export default function Home() {
 
           <div className="flex flex-col gap-4">
             {RANKINGS.map((site, idx) => (
-              <motion.div
+              <div
                 key={site.rank}
-                initial={false}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: idx * 0.08 }}
                 className="bg-card border border-border rounded-xl overflow-hidden hover:border-primary/40 transition-colors"
               >
                 <div className="flex flex-col md:flex-row items-stretch">
@@ -479,7 +474,7 @@ export default function Home() {
                     <a href={site.href} className="text-xs text-muted-foreground hover:text-primary transition-colors underline underline-offset-2">공식 사이트 →</a>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
 
@@ -689,13 +684,7 @@ export default function Home() {
             {FEATURES.map((feature, index) => {
               const Icon = feature.icon;
               return (
-                <motion.div
-                  key={feature.title}
-                  initial={false}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.4, delay: index * 0.08 }}
-                >
+                <div key={feature.title}>
                   <Link href={feature.href} className="block group h-full">
                     <div className="h-full bg-card border border-border rounded-xl p-6 hover:border-primary/50 hover:-translate-y-1 transition-all duration-300">
                       <div className="w-12 h-12 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center mb-5 group-hover:border-primary transition-colors">
@@ -710,7 +699,7 @@ export default function Home() {
                       </div>
                     </div>
                   </Link>
-                </motion.div>
+                </div>
               );
             })}
           </div>
@@ -758,13 +747,7 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
             {POPULAR_GUIDES.map((article, idx) => (
-              <motion.div
-                key={article.title}
-                initial={false}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: idx * 0.08 }}
-              >
+              <div key={article.title}>
                 <Link href={article.href}>
                   <article className="bg-card border border-border rounded-xl overflow-hidden hover:border-primary/40 hover:-translate-y-1 transition-all duration-300 group cursor-pointer h-full">
                     <div className="h-40 bg-gradient-to-br from-primary/10 to-card flex items-center justify-center text-6xl">
@@ -781,7 +764,7 @@ export default function Home() {
                     </div>
                   </article>
                 </Link>
-              </motion.div>
+              </div>
             ))}
           </div>
           <div className="mt-6 text-center md:hidden">
