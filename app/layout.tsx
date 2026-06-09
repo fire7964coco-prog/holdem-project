@@ -1,8 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import { Noto_Sans_KR } from "next/font/google";
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
+import { SiteHeader, SiteFooter, HtmlLangSync } from "@/components/site-chrome";
 import { BrushDefs } from "@/components/brush-defs";
 import "./globals.css";
 import { SITE } from "@/lib/site";
@@ -107,11 +106,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         <BrushDefs />
-        <Header />
+        <HtmlLangSync />
+        <SiteHeader />
         <main id="main-content" className="flex-grow pt-[68px] md:pt-20 relative z-10">
           {children}
         </main>
-        <Footer />
+        <SiteFooter />
 
         {/* Google Analytics — lazyOnload (메인 스레드 한가할 때 로드, TBT/렌더 차단 0) */}
         <Script
