@@ -18,6 +18,7 @@ const NAV_LINKS = [
     ],
   },
   { href: "/calculator", label: "계산기" },
+  { href: "/holdem-practice", label: "🎮 연습장" },
   { href: "/pub", label: "홀덤펍" },
   { href: "/tournaments", label: "대회" },
   { href: "/quiz", label: "🃏 퀴즈" },
@@ -268,6 +269,7 @@ export function Header() {
 
             {[
               { href: "/calculator", label: "확률 계산기" },
+              { href: "/holdem-practice", label: "🎮 홀덤 연습장" },
               { href: "/pub", label: "지역별 홀덤펍" },
               { href: "/tournaments", label: "홀덤 대회" },
               { href: "/quiz", label: "족보 퀴즈" },
