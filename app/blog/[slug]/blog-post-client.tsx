@@ -19,7 +19,7 @@ const QuizWidget = dynamic(
   { ssr: false, loading: () => <div className="h-24 rounded-xl bg-card animate-pulse" /> }
 );
 
-function slugify(text: string): string {
+export function slugify(text: string): string {
   return text
     .replace(/[^\w\s가-힣]/g, '')
     .trim()
@@ -28,7 +28,7 @@ function slugify(text: string): string {
 }
 
 /** 목차: H2(##)만 노출 — 핵심 요약·FAQ Q·소제목(###) 제외 (모바일 LCP·가독성) */
-function extractHeadings(content: string): { id: string; text: string; level: number }[] {
+export function extractHeadings(content: string): { id: string; text: string; level: number }[] {
   return [...content.matchAll(/^## (.+)$/gm)]
     .map((m) => ({ id: slugify(m[1]), text: m[1].trim(), level: 2 }))
     .filter((h) => !/이 글 핵심 요약/.test(h.text));
@@ -69,7 +69,7 @@ function TocList({ headings }: { headings: { id: string; text: string; level: nu
   );
 }
 
-function renderMarkdown(content: string): string {
+export function renderMarkdown(content: string): string {
   /**
    * 첫 번째 이미지(LCP 후보)는 eager + fetchpriority="high"로 우선 로드,
    * 그 이후 이미지는 모두 loading="lazy" 처리.

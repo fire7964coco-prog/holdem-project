@@ -3,6 +3,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getBlogLcpInfo, stripFirstBlogLcpBlock } from "@/lib/blog-lcp";
 import { POSTS, getPost } from "@/lib/posts";
+import { hasEnPost } from "@/lib/posts-en";
 import { SITE } from "@/lib/site";
 import BlogPostClient from "./blog-post-client";
 
@@ -25,12 +26,19 @@ export async function generateMetadata({
   const firstImg = lcpForMeta?.src ?? null;
   const ogImage = firstImg ? `${SITE}${firstImg}` : `${SITE}/opengraph.jpg`;
   const url = `${SITE}/blog/${post.slug}`;
+  const enUrl = `${SITE}/en/blog/${post.slug}`;
+  const hasEn = hasEnPost(post.slug);
 
   return {
     title: post.seoTitle || post.title,
     description: post.desc,
     keywords: post.tags.join(", "),
-    alternates: { canonical: url },
+    alternates: {
+      canonical: url,
+      ...(hasEn
+        ? { languages: { ko: url, en: enUrl, "x-default": enUrl } }
+        : {}),
+    },
     openGraph: {
       type: "article",
       url,
