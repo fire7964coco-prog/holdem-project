@@ -199,6 +199,13 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://www.holdemmaster.com/ja/blog</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- 블로그 포스트 (35편) -->
 
   <url>
@@ -299,6 +306,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-hand-rankings" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-hand-rankings" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-hand-rankings" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-hand-rankings" />
   </url>
 
@@ -449,7 +457,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- 영어 블로그 포스트 (1편) -->
+  <!-- 다국어 블로그 포스트 (2편) -->
 
   <url>
     <loc>https://www.holdemmaster.com/en/blog/holdem-hand-rankings</loc>
@@ -458,6 +466,18 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-hand-rankings" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-hand-rankings" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-hand-rankings" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-hand-rankings" />
+  </url>
+
+  <url>
+    <loc>https://www.holdemmaster.com/ja/blog/holdem-hand-rankings</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-hand-rankings" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-hand-rankings" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-hand-rankings" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-hand-rankings" />
   </url>
 

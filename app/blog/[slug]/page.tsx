@@ -3,7 +3,8 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getBlogLcpInfo, stripFirstBlogLcpBlock } from "@/lib/blog-lcp";
 import { POSTS, getPost } from "@/lib/posts";
-import { hasEnPost } from "@/lib/posts-en";
+import { HTML_LANG } from "@/lib/intl";
+import { secondaryLocalesForSlug } from "@/lib/intl-posts";
 import { SITE } from "@/lib/site";
 import BlogPostClient from "./blog-post-client";
 
@@ -26,8 +27,16 @@ export async function generateMetadata({
   const firstImg = lcpForMeta?.src ?? null;
   const ogImage = firstImg ? `${SITE}${firstImg}` : `${SITE}/opengraph.jpg`;
   const url = `${SITE}/blog/${post.slug}`;
-  const enUrl = `${SITE}/en/blog/${post.slug}`;
-  const hasEn = hasEnPost(post.slug);
+  const secondaries = secondaryLocalesForSlug(post.slug);
+
+  let languages: Record<string, string> | undefined;
+  if (secondaries.length > 0) {
+    languages = { ko: url };
+    for (const l of secondaries) languages[HTML_LANG[l]] = `${SITE}/${l}/blog/${post.slug}`;
+    languages["x-default"] = secondaries.includes("en")
+      ? `${SITE}/en/blog/${post.slug}`
+      : `${SITE}/${secondaries[0]}/blog/${post.slug}`;
+  }
 
   return {
     title: post.seoTitle || post.title,
@@ -35,9 +44,7 @@ export async function generateMetadata({
     keywords: post.tags.join(", "),
     alternates: {
       canonical: url,
-      ...(hasEn
-        ? { languages: { ko: url, en: enUrl, "x-default": enUrl } }
-        : {}),
+      ...(languages ? { languages } : {}),
     },
     openGraph: {
       type: "article",

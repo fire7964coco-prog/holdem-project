@@ -3,13 +3,13 @@ import { postsForLocale } from "@/lib/intl-posts";
 import { intlBlogMetadata, IntlBlogArticle } from "@/lib/intl-blog-page";
 
 export function generateStaticParams() {
-  return postsForLocale("en").map((p) => ({ slug: p.slug }));
+  return postsForLocale("ja").map((p) => ({ slug: p.slug }));
 }
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
-  return intlBlogMetadata("en", params.slug);
+  return intlBlogMetadata("ja", params.slug);
 }
 
 export default function Page({ params }: { params: { slug: string } }) {
-  return <IntlBlogArticle locale="en" slug={params.slug} />;
+  return <IntlBlogArticle locale="ja" slug={params.slug} />;
 }
