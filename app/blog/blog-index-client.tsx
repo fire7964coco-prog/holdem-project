@@ -30,6 +30,18 @@ const CARD_MAP: Record<string, CardData> = {
   "holdem-blind-meaning":             { rank: "K", suit: "♦", rank2: "K", suit2: "♣" },
   "holdem-small-blind-role":           { rank: "5", suit: "♠", rank2: "10", suit2: "♦" },
   "holdem-check-meaning":             { rank: "7", suit: "♣", rank2: "7", suit2: "♦" },
+  "holdem-button-position":           { rank: "A", suit: "♣", rank2: "9", suit2: "♣" },
+  "holdem-3bet-strategy":             { rank: "A", suit: "♦", rank2: "5", suit2: "♦" },
+  "holdem-range-meaning":             { rank: "Q", suit: "♣", rank2: "10", suit2: "♣" },
+  "holdem-cbet-strategy":             { rank: "K", suit: "♠", rank2: "Q", suit2: "♠" },
+  "holdem-check-raise":               { rank: "6", suit: "♥", rank2: "6", suit2: "♣" },
+  "holdem-value-bet-sizing":          { rank: "A", suit: "♥", rank2: "J", suit2: "♥" },
+  "holdem-bubble-strategy":           { rank: "4", suit: "♠", rank2: "4", suit2: "♦" },
+  "icm-poker-meaning":                { rank: "Q", suit: "♦", rank2: "8", suit2: "♦" },
+  "pocket-aces-aa-strategy":          { rank: "A", suit: "♠", rank2: "A", suit2: "♦" },
+  "pocket-kings-kk-strategy":         { rank: "K", suit: "♠", rank2: "K", suit2: "♥" },
+  "holdem-pub-legal":                 { rank: "5", suit: "♣", rank2: "2", suit2: "♣" },
+  "holdem-pub-first-visit-guide":     { rank: "J", suit: "♦", rank2: "8", suit2: "♠" },
   "holdem-game-order":                { rank: "A", suit: "♥", rank2: "Q", suit2: "♠" },
   "bluffing-strategy-when-and-how":   { rank: "J", suit: "♥", rank2: "9", suit2: "♦" },
   "position-is-everything-in-holdem": { rank: "K", suit: "♣", rank2: "J", suit2: "♠" },
@@ -44,6 +56,22 @@ const CARD_MAP: Record<string, CardData> = {
   "holdem-pot-odds-calculation":      { rank: "10", suit: "♦", rank2: "9", suit2: "♦" },
   "holdem-probability":               { rank: "J", suit: "♠", rank2: "10", suit2: "♥" },
 };
+
+const FALLBACK_CARD_POOL: CardData[] = [
+  { rank: "Q", suit: "♥", rank2: "9", suit2: "♥" },
+  { rank: "J", suit: "♣", rank2: "10", suit2: "♣" },
+  { rank: "8", suit: "♠", rank2: "8", suit2: "♦" },
+  { rank: "A", suit: "♦", rank2: "4", suit2: "♦" },
+  { rank: "K", suit: "♣", rank2: "9", suit2: "♣" },
+  { rank: "10", suit: "♥", rank2: "7", suit2: "♥" },
+  { rank: "6", suit: "♠", rank2: "5", suit2: "♠" },
+  { rank: "Q", suit: "♠", rank2: "6", suit2: "♦" },
+];
+
+function getFallbackCard(slug: string) {
+  const hash = [...slug].reduce((sum, char) => sum + char.charCodeAt(0), 0);
+  return FALLBACK_CARD_POOL[hash % FALLBACK_CARD_POOL.length];
+}
 
 function isRed(suit: Suit) { return suit === "♥" || suit === "♦"; }
 
@@ -78,7 +106,7 @@ function PokerCard({ rank, suit, w, h, tilt = 0, shadow = true }:
 
 /* 썸네일 컴포넌트 — 카드 2장 겹쳐서 표시 */
 function CardThumb({ slug, featured = false }: { slug: string; featured?: boolean }) {
-  const data = CARD_MAP[slug] ?? { rank: "A", suit: "♠" as Suit, rank2: "K", suit2: "♠" as Suit };
+  const data = CARD_MAP[slug] ?? getFallbackCard(slug);
   const { rank, suit, rank2, suit2 } = data;
 
   const W = featured ? 90 : 60;

@@ -98,7 +98,7 @@ const PILLARS: Pillar[] = [
     textColor: "#d1fae5",
     clusters: [
       { label: "포지션이 전부다",           slug: "position-is-everything-in-holdem", published: true  },
-      { label: "버튼 포지션 유리한 이유",   published: false },
+      { label: "버튼 포지션 유리한 이유",   slug: "holdem-button-position", published: true },
       { label: "UTG 포지션 플레이법",      published: false },
       { label: "컷오프 포지션 전략",       published: false },
     ],
