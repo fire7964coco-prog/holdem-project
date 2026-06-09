@@ -2,11 +2,13 @@ import type { Post } from "./posts";
 import { SECONDARY_LOCALES, type SecondaryLocale } from "./intl";
 import { EN_POSTS } from "./posts-en";
 import { JA_POSTS } from "./posts-ja";
+import { ES_POSTS } from "./posts-es";
 
 /** 보조 언어별 포스트 목록 */
 export const POSTS_BY_LOCALE: Record<SecondaryLocale, Post[]> = {
   en: EN_POSTS,
   ja: JA_POSTS,
+  es: ES_POSTS,
 };
 
 export function getPostByLocale(locale: SecondaryLocale, slug: string): Post | undefined {

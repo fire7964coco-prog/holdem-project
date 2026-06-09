@@ -3,7 +3,7 @@
  * 한국어는 루트(/)에 그대로 두고, 추가 언어만 /{locale}/... 로 발행한다.
  * 새 언어 추가 = 아래 SECONDARY_LOCALES + CHROME 에 항목만 추가.
  */
-export const SECONDARY_LOCALES = ["en", "ja"] as const;
+export const SECONDARY_LOCALES = ["en", "ja", "es"] as const;
 export type SecondaryLocale = (typeof SECONDARY_LOCALES)[number];
 
 export function isSecondaryLocale(value: string): value is SecondaryLocale {
@@ -20,12 +20,14 @@ export function localeFromPath(pathname: string): SecondaryLocale | null {
 export const OG_LOCALE: Record<SecondaryLocale, string> = {
   en: "en_US",
   ja: "ja_JP",
+  es: "es_ES",
 };
 
 /** <html lang> 및 hreflang 코드 */
 export const HTML_LANG: Record<SecondaryLocale, string> = {
   en: "en",
   ja: "ja",
+  es: "es",
 };
 
 interface ChromeStrings {
@@ -98,6 +100,24 @@ export const POST_LABELS: Record<SecondaryLocale, PostLabels> = {
     blogIntro:
       "何が何に勝つかだけでなく、その理由とテーブルでの使い方まで解説する実戦的ガイド。",
   },
+  es: {
+    contents: "Contenido",
+    quickAnswer: "Respuesta rápida",
+    category: "Guía para principiantes",
+    readSuffix: "de lectura",
+    published: "Publicado",
+    updated: "Actualizado",
+    prev: "Anterior",
+    next: "Siguiente",
+    related: "Relacionado",
+    share: "Comparte este artículo",
+    copy: "Copiar enlace",
+    copied: "¡Copiado!",
+    back: "Volver a todos los artículos",
+    blogTitle: "Blog de estrategia de Texas Hold'em",
+    blogIntro:
+      "Guías prácticas que explican no solo qué mano gana a cuál, sino por qué — y cómo usarlo en la mesa.",
+  },
 };
 
 export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
@@ -128,5 +148,19 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     languageHeading: "言語",
     disclaimer:
       "本サイトは情報提供のみを目的とし、実際のギャンブルを助長するものではありません。18歳以上限定。",
+  },
+  es: {
+    skip: "Saltar al contenido",
+    brand: "HoldemMaster",
+    blogLabel: "Blog",
+    menuOpen: "Abrir menú",
+    menuClose: "Cerrar menú",
+    koLabel: "한국어",
+    tagline:
+      "Estrategia de Texas Hold'em clara y práctica. Guías que explican no solo qué gana a qué, sino por qué.",
+    contentHeading: "Contenido",
+    languageHeading: "Idioma",
+    disclaimer:
+      "Este sitio es solo para fines informativos y no promueve el juego con dinero real. Solo mayores de 18 años.",
   },
 };
