@@ -3,7 +3,7 @@
  * 한국어는 루트(/)에 그대로 두고, 추가 언어만 /{locale}/... 로 발행한다.
  * 새 언어 추가 = 아래 SECONDARY_LOCALES + CHROME 에 항목만 추가.
  */
-export const SECONDARY_LOCALES = ["en", "ja", "es", "zh", "ar", "pt", "id", "ms", "vi"] as const;
+export const SECONDARY_LOCALES = ["en", "ja", "es", "zh", "ar", "pt", "id", "ms", "vi", "hi"] as const;
 export type SecondaryLocale = (typeof SECONDARY_LOCALES)[number];
 
 export function isSecondaryLocale(value: string): value is SecondaryLocale {
@@ -34,6 +34,7 @@ export const OG_LOCALE: Record<SecondaryLocale, string> = {
   id: "id_ID",
   ms: "ms_MY",
   vi: "vi_VN",
+  hi: "hi_IN",
 };
 
 /** <html lang> 및 hreflang 코드 (zh는 간체 = zh-Hans, pt는 브라질 = pt-BR) */
@@ -47,6 +48,7 @@ export const HTML_LANG: Record<SecondaryLocale, string> = {
   id: "id",
   ms: "ms",
   vi: "vi",
+  hi: "hi",
 };
 
 interface ChromeStrings {
@@ -245,6 +247,24 @@ export const POST_LABELS: Record<SecondaryLocale, PostLabels> = {
     blogIntro:
       "Những hướng dẫn thực dụng giải thích không chỉ tay bài nào thắng, mà còn vì sao — và cách dùng nó tại bàn.",
   },
+  hi: {
+    contents: "विषय-सूची",
+    quickAnswer: "त्वरित उत्तर",
+    category: "शुरुआती गाइड",
+    readSuffix: "पढ़ने में",
+    published: "प्रकाशित",
+    updated: "अपडेट",
+    prev: "पिछला",
+    next: "अगला",
+    related: "संबंधित लेख",
+    share: "यह लेख साझा करें",
+    copy: "लिंक कॉपी करें",
+    copied: "कॉपी हो गया!",
+    back: "सभी लेखों पर वापस जाएँ",
+    blogTitle: "टेक्सस होल्डम रणनीति ब्लॉग",
+    blogIntro:
+      "व्यावहारिक गाइड जो सिर्फ़ यह नहीं बतातीं कि कौन-सा हाथ जीतता है, बल्कि क्यों — और टेबल पर इसका इस्तेमाल कैसे करें।",
+  },
 };
 
 export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
@@ -373,5 +393,19 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     languageHeading: "Ngôn ngữ",
     disclaimer:
       "Trang web này chỉ nhằm mục đích thông tin và không khuyến khích cờ bạc bằng tiền thật. Chỉ dành cho người trên 18 tuổi.",
+  },
+  hi: {
+    skip: "मुख्य सामग्री पर जाएँ",
+    brand: "HoldemMaster",
+    blogLabel: "ब्लॉग",
+    menuOpen: "मेन्यू खोलें",
+    menuClose: "मेन्यू बंद करें",
+    koLabel: "한국어",
+    tagline:
+      "स्पष्ट और व्यावहारिक टेक्सस होल्डम रणनीति। ऐसी गाइड जो सिर्फ़ यह नहीं बतातीं कि कौन-सा हाथ जीतता है, बल्कि क्यों जीतता है यह भी समझाती हैं।",
+    contentHeading: "सामग्री",
+    languageHeading: "भाषा",
+    disclaimer:
+      "यह साइट केवल जानकारी के लिए है और असली पैसे के जुए को बढ़ावा नहीं देती। केवल 18 वर्ष से अधिक आयु के लिए।",
   },
 };
