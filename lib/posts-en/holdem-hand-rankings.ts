@@ -160,6 +160,8 @@ At showdown, the highest card wins, then the next, and so on down all five. If a
 
 ## How Kickers and Ties Actually Work
 
+![Poker showdown — comparing two players' best five-card hands](/images/holdem-hand-rankings-showdown.webp "At showdown, the best five-card hand takes the pot")
+
 This is the part that decides real pots — and the part most charts skip. When two players have the **same hand type**, work through this exact order:
 
 1. **Compare the hand rank.** A flush always beats a straight, full house always beats a flush, and so on.
@@ -167,17 +169,20 @@ This is the part that decides real pots — and the part most charts skip. When 
 3. **Compare the kickers.** If the made hand ties, the leftover cards break it, one at a time from the top.
 4. **Still identical? Split the pot.** Suits never break the tie.
 
-| Hand type | What you compare | Can a kicker decide it? | Can it split? |
-|------|------|------|------|
-| **High Card** | All 5, highest first | Yes (all 5 are kickers) | Yes |
-| **One Pair** | Pair, then 3 kickers | Yes | Yes |
-| **Two Pair** | High pair, low pair, 1 kicker | Yes | Yes |
-| **Three of a Kind** | Trips rank, then 2 kickers | Yes | Yes |
-| **Straight** | Top card only | No | Yes |
-| **Flush** | All 5, highest first | Yes | Yes |
-| **Full House** | Trips rank, then pair rank | No | Yes |
-| **Four of a Kind** | Quad rank, then 1 kicker | Yes | Yes |
-| **Straight Flush** | Top card only | No | Yes |
+The badge on the right shows whether a **kicker is used to decide the hand**.
+
+:::tiebreak
+Royal Flush|Always a tie (split pot)|-No kicker
+Straight Flush|Highest card only|-No kicker
+Four of a Kind|Quad rank → 5th card|+Kicker
+Full House|Trips rank → pair rank|-No kicker
+Flush|Compare all 5, high to low|+Kicker
+Straight|Highest card only|-No kicker
+Three of a Kind|Trips rank → 2 kickers|+Kicker
+Two Pair|High pair → low pair → kicker|+Kicker
+One Pair|Pair rank → 3 kickers|+Kicker
+High Card|Compare all 5, high to low|+Kicker
+:::
 
 A **kicker** is simply a card that isn't part of your made hand but is still used to break ties. With A-A-K vs A-A-Q, both have aces — the king kicker wins. This is why pros care so much about the *quality* of their high cards, not just whether they paired.
 

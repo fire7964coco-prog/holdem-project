@@ -94,6 +94,33 @@ export function renderMarkdown(content: string): string {
       : { loading: "lazy", fetchpriority: "auto" };
 
   return content
+    // Tie-break rule rows — language-independent block (rows come from markdown).
+    // Syntax: :::tiebreak  (then one row per line)  name|rule|(+/-)kickerLabel  ... :::
+    // MUST run before table / bold processing so its "|" separators don't leak.
+    .replace(/^:::tiebreak\n([\s\S]*?)\n:::$/gm, (_, body) => {
+      const rows = body
+        .trim()
+        .split('\n')
+        .filter((l: string) => l.trim().length > 0)
+        .map((line: string, i: number) => {
+          const [name = '', rule = '', kickerRaw = ''] = line.split('|').map((s: string) => s.trim());
+          const applies = kickerRaw.startsWith('+');
+          const kickerLabel = kickerRaw.replace(/^[+-]\s*/, '');
+          const pill = applies
+            ? 'background:rgba(34,197,94,0.14);color:#22c55e;border:1px solid rgba(34,197,94,0.35)'
+            : 'background:rgba(255,255,255,0.05);color:var(--muted-foreground);border:1px solid rgba(255,255,255,0.1)';
+          return (
+            `<div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;padding:8px 12px;border-radius:8px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);margin-bottom:5px">` +
+            `<div style="width:22px;height:22px;border-radius:50%;background:rgba(212,175,55,0.15);border:1px solid rgba(212,175,55,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#d4af37;flex-shrink:0">${i + 1}</div>` +
+            `<div style="font-weight:700;color:var(--foreground);font-size:13px;min-width:96px;flex-shrink:0">${name}</div>` +
+            `<div style="flex:1;min-width:140px;color:var(--muted-foreground);font-size:12.5px;line-height:1.45">${rule}</div>` +
+            (kickerLabel ? `<div style="font-size:11px;font-weight:700;padding:2px 9px;border-radius:999px;flex-shrink:0;${pill}">${kickerLabel}</div>` : '') +
+            `</div>`
+          );
+        })
+        .join('');
+      return `<div style="margin:14px 0">${rows}</div>`;
+    })
     // Numbered step cards — MUST run before **bold** processing
     .replace(/^\*\*(\d+)\. (.+?)\*\*\s*[—–]?\s*(.+)$/gm, (_, num, title, desc) =>
       `<div style="display:flex;gap:12px;align-items:flex-start;margin:10px 0;padding:14px 16px;background:rgba(255,255,255,0.04);border-radius:10px;border:1px solid rgba(255,255,255,0.09)">` +

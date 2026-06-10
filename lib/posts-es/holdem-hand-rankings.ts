@@ -160,6 +160,8 @@ En el showdown gana la carta más alta, luego la siguiente, y así con las cinco
 
 ## Cómo funcionan de verdad los kickers y los empates
 
+![Showdown de póker — comparando las mejores cinco cartas de dos jugadores](/images/holdem-hand-rankings-showdown.webp "En el showdown gana la mejor mano de cinco cartas")
+
 Esta es la parte que decide botes reales — y la que muchas tablas se saltan. Cuando dos jugadores tienen el **mismo tipo de mano**, sigue este orden exacto:
 
 1. **Compara el tipo de mano.** Un color siempre gana a una escalera, un full siempre gana a un color, etc.
@@ -167,17 +169,20 @@ Esta es la parte que decide botes reales — y la que muchas tablas se saltan. C
 3. **Compara los kickers.** Si la mano hecha empata, las cartas restantes deciden, una a una desde arriba.
 4. **¿Sigue idéntico? Se divide el bote.** Los palos nunca rompen el empate.
 
-| Tipo de mano | Qué comparas | ¿Decide el kicker? | ¿Puede dividirse? |
-|------|------|------|------|
-| **Carta Alta** | Las 5, de mayor a menor | Sí (las 5 son kickers) | Sí |
-| **Pareja** | La pareja, luego 3 kickers | Sí | Sí |
-| **Doble Pareja** | Pareja alta, baja, 1 kicker | Sí | Sí |
-| **Trío** | Valor del trío, luego 2 kickers | Sí | Sí |
-| **Escalera** | Solo la carta más alta | No | Sí |
-| **Color** | Las 5, de mayor a menor | Sí | Sí |
-| **Full** | Valor del trío, luego de la pareja | No | Sí |
-| **Póker** | Valor del póker, luego 1 kicker | Sí | Sí |
-| **Escalera de Color** | Solo la carta más alta | No | Sí |
+La insignia de la derecha indica si el **kicker se usa para decidir la mano**.
+
+:::tiebreak
+Escalera Real|Siempre empate (bote dividido)|-Sin kicker
+Escalera de Color|Solo la carta más alta|-Sin kicker
+Póker|Valor del póker → 5.ª carta|+Con kicker
+Full|Valor del trío → de la pareja|-Sin kicker
+Color|Las 5, de mayor a menor|+Con kicker
+Escalera|Solo la carta más alta|-Sin kicker
+Trío|Valor del trío → 2 kickers|+Con kicker
+Doble Pareja|Pareja alta → baja → kicker|+Con kicker
+Pareja|Valor de la pareja → 3 kickers|+Con kicker
+Carta Alta|Las 5, de mayor a menor|+Con kicker
+:::
 
 Un **kicker** es simplemente una carta que no forma parte de tu mano hecha pero que rompe empates. Con A-A-K contra A-A-Q, ambos tienen pareja de ases — gana el kicker K. Por eso los buenos jugadores cuidan tanto la *calidad* de sus cartas altas, no solo si emparejaron.
 
