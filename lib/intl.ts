@@ -3,7 +3,7 @@
  * 한국어는 루트(/)에 그대로 두고, 추가 언어만 /{locale}/... 로 발행한다.
  * 새 언어 추가 = 아래 SECONDARY_LOCALES + CHROME 에 항목만 추가.
  */
-export const SECONDARY_LOCALES = ["en", "ja", "es", "zh", "ar", "pt", "id", "ms", "vi", "hi", "de"] as const;
+export const SECONDARY_LOCALES = ["en", "ja", "es", "zh", "ar", "pt", "id", "ms", "vi", "hi", "de", "tr"] as const;
 export type SecondaryLocale = (typeof SECONDARY_LOCALES)[number];
 
 export function isSecondaryLocale(value: string): value is SecondaryLocale {
@@ -36,6 +36,7 @@ export const OG_LOCALE: Record<SecondaryLocale, string> = {
   vi: "vi_VN",
   hi: "hi_IN",
   de: "de_DE",
+  tr: "tr_TR",
 };
 
 /** <html lang> 및 hreflang 코드 (zh는 간체 = zh-Hans, pt는 브라질 = pt-BR) */
@@ -51,6 +52,7 @@ export const HTML_LANG: Record<SecondaryLocale, string> = {
   vi: "vi",
   hi: "hi",
   de: "de",
+  tr: "tr",
 };
 
 interface ChromeStrings {
@@ -285,6 +287,24 @@ export const POST_LABELS: Record<SecondaryLocale, PostLabels> = {
     blogIntro:
       "Praxisnahe Ratgeber, die nicht nur erklären, welche Hand gewinnt, sondern auch warum — und wie du es am Tisch nutzt.",
   },
+  tr: {
+    contents: "İçindekiler",
+    quickAnswer: "Hızlı Yanıt",
+    category: "Başlangıç Rehberi",
+    readSuffix: "okuma",
+    published: "Yayınlandı",
+    updated: "Güncellendi",
+    prev: "Önceki",
+    next: "Sonraki",
+    related: "İlgili Yazılar",
+    share: "Bu yazıyı paylaş",
+    copy: "Bağlantıyı kopyala",
+    copied: "Kopyalandı!",
+    back: "Tüm yazılara dön",
+    blogTitle: "Texas Hold'em Strateji Blogu",
+    blogIntro:
+      "Sadece hangi elin kazandığını değil, neden kazandığını ve masada nasıl kullanılacağını açıklayan pratik rehberler.",
+  },
 };
 
 export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
@@ -441,5 +461,19 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     languageHeading: "Sprache",
     disclaimer:
       "Diese Seite dient nur zur Information und fördert kein Echtgeld-Glücksspiel. Nur für Personen ab 18 Jahren.",
+  },
+  tr: {
+    skip: "İçeriğe geç",
+    brand: "HoldemMaster",
+    blogLabel: "Blog",
+    menuOpen: "Menüyü aç",
+    menuClose: "Menüyü kapat",
+    koLabel: "한국어",
+    tagline:
+      "Net ve pratik Texas Hold'em stratejisi. Sadece hangi elin kazandığını değil, neden kazandığını da açıklayan rehberler.",
+    contentHeading: "İçerik",
+    languageHeading: "Dil",
+    disclaimer:
+      "Bu site yalnızca bilgilendirme amaçlıdır ve gerçek parayla kumarı teşvik etmez. Yalnızca 18 yaş üstü için.",
   },
 };
