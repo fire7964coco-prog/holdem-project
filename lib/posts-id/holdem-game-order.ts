@@ -201,7 +201,7 @@ B cek, A bertaruh **15.000** (sekitar setengah pot), B call.
 
 **Pemenang: B** — three of a kind mengalahkan dua pasang.
 
-Pelajarannya: saat river membuat A jadi dua pasang, itu *terasa* tangan menang, tapi B sudah punya set sejak flop. **Membaca seluruh meja, bukan cuma peningkatan tangan sendiri, adalah inti Hold'em.**
+Pelajarannya: saat river membuat A jadi dua pasang, itu *terasa seperti* tangan menang, tapi B sudah punya set sejak flop. **Membaca seluruh meja, bukan cuma peningkatan tangan sendiri, adalah inti Hold'em.**
 
 ---
 

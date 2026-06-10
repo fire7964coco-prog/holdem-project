@@ -189,7 +189,7 @@ B semak, A bertaruh **15,000** (kira-kira separuh pot), B call.
 ### River: A♥
 
 - **A:** As berpasangan — kini **dua pasang (As dan King)**. Terlalu yakin lalu bertaruh **30,000**.
-- **B:** set masih menggilis dua pasang. Naikkan ke **70,000**.
+- **B:** set masih menghancurkan dua pasang. Naikkan ke **70,000**.
 - **A:** percaya dua pasangnya cukup bagus, lalu call.
 
 **Pot: 198,000**
