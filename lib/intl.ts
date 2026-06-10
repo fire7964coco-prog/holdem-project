@@ -3,7 +3,7 @@
  * 한국어는 루트(/)에 그대로 두고, 추가 언어만 /{locale}/... 로 발행한다.
  * 새 언어 추가 = 아래 SECONDARY_LOCALES + CHROME 에 항목만 추가.
  */
-export const SECONDARY_LOCALES = ["en", "ja", "es", "zh", "ar", "pt", "id", "ms"] as const;
+export const SECONDARY_LOCALES = ["en", "ja", "es", "zh", "ar", "pt", "id", "ms", "vi"] as const;
 export type SecondaryLocale = (typeof SECONDARY_LOCALES)[number];
 
 export function isSecondaryLocale(value: string): value is SecondaryLocale {
@@ -33,6 +33,7 @@ export const OG_LOCALE: Record<SecondaryLocale, string> = {
   pt: "pt_BR",
   id: "id_ID",
   ms: "ms_MY",
+  vi: "vi_VN",
 };
 
 /** <html lang> 및 hreflang 코드 (zh는 간체 = zh-Hans, pt는 브라질 = pt-BR) */
@@ -45,6 +46,7 @@ export const HTML_LANG: Record<SecondaryLocale, string> = {
   pt: "pt-BR",
   id: "id",
   ms: "ms",
+  vi: "vi",
 };
 
 interface ChromeStrings {
@@ -225,6 +227,24 @@ export const POST_LABELS: Record<SecondaryLocale, PostLabels> = {
     blogIntro:
       "Panduan praktikal yang menerangkan bukan sekadar tangan mana menang, tetapi sebabnya — dan cara menggunakannya di meja.",
   },
+  vi: {
+    contents: "Mục lục",
+    quickAnswer: "Trả lời nhanh",
+    category: "Hướng dẫn người mới",
+    readSuffix: "đọc",
+    published: "Đăng",
+    updated: "Cập nhật",
+    prev: "Trước",
+    next: "Tiếp",
+    related: "Bài viết liên quan",
+    share: "Chia sẻ bài viết này",
+    copy: "Sao chép liên kết",
+    copied: "Đã sao chép!",
+    back: "Quay lại tất cả bài viết",
+    blogTitle: "Blog chiến thuật Texas Hold'em",
+    blogIntro:
+      "Những hướng dẫn thực dụng giải thích không chỉ tay bài nào thắng, mà còn vì sao — và cách dùng nó tại bàn.",
+  },
 };
 
 export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
@@ -339,5 +359,19 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     languageHeading: "Bahasa",
     disclaimer:
       "Laman ini untuk tujuan maklumat sahaja dan tidak menggalakkan perjudian wang sebenar. Untuk usia 18 tahun ke atas sahaja.",
+  },
+  vi: {
+    skip: "Bỏ qua đến nội dung",
+    brand: "HoldemMaster",
+    blogLabel: "Blog",
+    menuOpen: "Mở menu",
+    menuClose: "Đóng menu",
+    koLabel: "한국어",
+    tagline:
+      "Chiến thuật Texas Hold'em rõ ràng và thực dụng. Những hướng dẫn giải thích không chỉ tay bài nào thắng, mà còn vì sao.",
+    contentHeading: "Nội dung",
+    languageHeading: "Ngôn ngữ",
+    disclaimer:
+      "Trang web này chỉ nhằm mục đích thông tin và không khuyến khích cờ bạc bằng tiền thật. Chỉ dành cho người trên 18 tuổi.",
   },
 };

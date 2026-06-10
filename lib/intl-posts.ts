@@ -8,6 +8,7 @@ import { AR_POSTS } from "./posts-ar";
 import { PT_POSTS } from "./posts-pt";
 import { ID_POSTS } from "./posts-id";
 import { MS_POSTS } from "./posts-ms";
+import { VI_POSTS } from "./posts-vi";
 
 /** 보조 언어별 포스트 목록 */
 export const POSTS_BY_LOCALE: Record<SecondaryLocale, Post[]> = {
@@ -19,6 +20,7 @@ export const POSTS_BY_LOCALE: Record<SecondaryLocale, Post[]> = {
   pt: PT_POSTS,
   id: ID_POSTS,
   ms: MS_POSTS,
+  vi: VI_POSTS,
 };
 
 export function getPostByLocale(locale: SecondaryLocale, slug: string): Post | undefined {

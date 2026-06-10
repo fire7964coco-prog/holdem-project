@@ -248,6 +248,13 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://www.holdemmaster.com/vi/blog</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- 블로그 포스트 (35편) -->
 
   <url>
@@ -355,6 +362,7 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-hand-rankings" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-hand-rankings" />
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/holdem-hand-rankings" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://www.holdemmaster.com/vi/blog/holdem-hand-rankings" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-hand-rankings" />
   </url>
 
@@ -505,7 +513,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- 다국어 블로그 포스트 (8편) -->
+  <!-- 다국어 블로그 포스트 (9편) -->
 
   <url>
     <loc>https://www.holdemmaster.com/en/blog/holdem-hand-rankings</loc>
@@ -521,6 +529,7 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-hand-rankings" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-hand-rankings" />
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/holdem-hand-rankings" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://www.holdemmaster.com/vi/blog/holdem-hand-rankings" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-hand-rankings" />
   </url>
 
@@ -538,6 +547,7 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-hand-rankings" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-hand-rankings" />
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/holdem-hand-rankings" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://www.holdemmaster.com/vi/blog/holdem-hand-rankings" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-hand-rankings" />
   </url>
 
@@ -555,6 +565,7 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-hand-rankings" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-hand-rankings" />
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/holdem-hand-rankings" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://www.holdemmaster.com/vi/blog/holdem-hand-rankings" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-hand-rankings" />
   </url>
 
@@ -572,6 +583,7 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-hand-rankings" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-hand-rankings" />
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/holdem-hand-rankings" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://www.holdemmaster.com/vi/blog/holdem-hand-rankings" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-hand-rankings" />
   </url>
 
@@ -589,6 +601,7 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-hand-rankings" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-hand-rankings" />
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/holdem-hand-rankings" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://www.holdemmaster.com/vi/blog/holdem-hand-rankings" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-hand-rankings" />
   </url>
 
@@ -606,6 +619,7 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-hand-rankings" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-hand-rankings" />
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/holdem-hand-rankings" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://www.holdemmaster.com/vi/blog/holdem-hand-rankings" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-hand-rankings" />
   </url>
 
@@ -623,6 +637,7 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-hand-rankings" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-hand-rankings" />
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/holdem-hand-rankings" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://www.holdemmaster.com/vi/blog/holdem-hand-rankings" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-hand-rankings" />
   </url>
 
@@ -640,6 +655,25 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-hand-rankings" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-hand-rankings" />
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/holdem-hand-rankings" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://www.holdemmaster.com/vi/blog/holdem-hand-rankings" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-hand-rankings" />
+  </url>
+
+  <url>
+    <loc>https://www.holdemmaster.com/vi/blog/holdem-hand-rankings</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-hand-rankings" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-hand-rankings" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-hand-rankings" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-hand-rankings" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-hand-rankings" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.holdemmaster.com/ar/blog/holdem-hand-rankings" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-hand-rankings" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-hand-rankings" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/holdem-hand-rankings" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://www.holdemmaster.com/vi/blog/holdem-hand-rankings" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-hand-rankings" />
   </url>
 
