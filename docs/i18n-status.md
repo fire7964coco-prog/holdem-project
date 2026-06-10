@@ -1,9 +1,16 @@
 # 다국어(i18n) 발행 현황 메모
 
 > 마지막 업데이트: 2026-06-10
-> 목표: 핵심 글을 18개 언어로 다국어화 (현재 **12개 번역** 완료)
+> 목표: 핵심 글을 18개 언어로 다국어화
 
-## 1. 발행된 번역 현황
+## 0. 글별 다국어화 진행 현황
+
+| 글(slug) | 발행된 언어 | 상태 |
+|----------|------------|------|
+| holdem-hand-rankings | en·ja·es·zh·ar·pt·id·ms·vi·hi·de·tr (12개) | ✅ 완료 |
+| holdem-game-order | en·ja·es (진행 중) | 🔄 작업 중 |
+
+## 1. 발행된 번역 현황 (holdem-hand-rankings 기준)
 
 현재 다국어화된 글은 **`holdem-hand-rankings`(홀덤 족보 순위)** 1편이며, 아래 12개 언어로 발행됨.
 
@@ -47,6 +54,27 @@
 - **본문 내부 링크는 반드시 `/<locale>/blog/슬러그`.** `/blog/...`(언어 코드 없음)나 다른 언어 경로면 빌드가 막힘 → `scripts/check-intl-links.mjs` (prebuild에서 자동 실행).
 - 숫자 표기: 언어권 관례 반영 (예: de/tr/vi 소수점 쉼표, en/hi/ms 마침표).
 - 공통 쇼다운 이미지(`/images/holdem-hand-rankings-showdown.webp`)는 "kicker/타이브레이크" 섹션 직후에 삽입.
+
+## 3-1. 카피·현지화 전략 (holdem-game-order 시리즈에서 확립 — 매우 중요)
+
+다국어 페이지는 사이트 권위가 낮으므로 빅키워드 정면승부 대신 **현지인이 실제로 가장 많이 검색하는 롱테일**을 노린다.
+
+- **기준(base)과 키워드(targeting)는 분리한다.**
+  - 기준 텍스트 = **영어판**. 이유: ① 글로벌 영어 키워드 볼륨이 가장 큼, ② 영어판을 "가장 잘 다듬은 완성본"으로 만들어 두면 나머지 언어 품질이 균일해짐. (한국어 원본은 출발점, 영어판에서 1차 개선·구조화.)
+  - **번역 ≠ 영어 키워드 직역.** 각 언어의 title·seoTitle·desc·tags·소제목은 **그 나라 실제 검색의도**로 다시 쓴다.
+    - 예) ja: `テキサスホールデム やり方`, `ポーカー 流れ` / es: `como jugar poker texas holdem`, `como se juega al poker`, `poker para principiantes`
+- **톤: 한국식 "완전정복 / 완벽 가이드" 딱딱한 느낌 금지.** 유튜브 자극적 썸네일 키워드처럼 **호기심·페인포인트 자극형 카피**로 경쟁력 확보.
+  - seoTitle은 후킹형: 예) es `"¿No sabes cuándo apostar? — Cómo se juega una mano de póker"`
+  - desc는 공감형 후킹으로 시작: 예) `"…te quedas en blanco cuando llega tu turno. Le pasa a todo el mundo."`
+- **본문 구조·실전 예시·표·FAQ는 영어판의 검증된 것을 유지**하되, 용어는 각국 포커 문화 표현으로 현지화. (es: Color=플러시, Póker=포카드, bote, proyecto / ja: 役, セット, ノーペア 등)
+- **내부 링크 규칙**: 번역본 본문에서는 **이미 그 언어로 발행된 글만** `/<locale>/blog/슬러그`로 링크. (미발행 글·한국어 랜딩 페이지는 링크하지 않음 → check-intl-links 통과 + UX 일관성). 외부 출처는 해당 언어 위키백과 등으로.
+
+### holdem-game-order 공용 이미지 (텍스트프리/영어 라벨 → 전 언어 재사용)
+- `/images/blog-holdem-game-flow.webp` — 6단계 흐름도(SVG 재생성, 영어 라벨)
+- `/images/blog-holdem-card-stages.webp` — FLOP/TURN/RIVER
+- `/images/blog-holdem-showdown.webp` — SHOWDOWN
+- `/images/holdem-game-example-fullhand.webp` — 실전 한 판(보드 A-K-9-3-2, 본문 예시와 일치)
+- `/images/holdem-betting-options-guide.webp` — 베팅 액션
 
 ## 4. 한국어 원본 글 목록 (다국어화 후보 풀)
 
