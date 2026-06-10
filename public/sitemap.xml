@@ -364,9 +364,12 @@
 
   <url>
     <loc>https://www.holdemmaster.com/blog/holdem-game-order</loc>
-    <lastmod>2026-05-06</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-game-order" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-game-order" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-game-order" />
   </url>
 
   <url>
@@ -537,7 +540,17 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- 다국어 블로그 포스트 (12편) -->
+  <!-- 다국어 블로그 포스트 (13편) -->
+
+  <url>
+    <loc>https://www.holdemmaster.com/en/blog/holdem-game-order</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-game-order" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-game-order" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-game-order" />
+  </url>
 
   <url>
     <loc>https://www.holdemmaster.com/en/blog/holdem-hand-rankings</loc>
