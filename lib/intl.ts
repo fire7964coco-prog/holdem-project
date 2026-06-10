@@ -3,7 +3,7 @@
  * 한국어는 루트(/)에 그대로 두고, 추가 언어만 /{locale}/... 로 발행한다.
  * 새 언어 추가 = 아래 SECONDARY_LOCALES + CHROME 에 항목만 추가.
  */
-export const SECONDARY_LOCALES = ["en", "ja", "es", "zh", "ar", "pt", "id"] as const;
+export const SECONDARY_LOCALES = ["en", "ja", "es", "zh", "ar", "pt", "id", "ms"] as const;
 export type SecondaryLocale = (typeof SECONDARY_LOCALES)[number];
 
 export function isSecondaryLocale(value: string): value is SecondaryLocale {
@@ -32,6 +32,7 @@ export const OG_LOCALE: Record<SecondaryLocale, string> = {
   ar: "ar_AR",
   pt: "pt_BR",
   id: "id_ID",
+  ms: "ms_MY",
 };
 
 /** <html lang> 및 hreflang 코드 (zh는 간체 = zh-Hans, pt는 브라질 = pt-BR) */
@@ -43,6 +44,7 @@ export const HTML_LANG: Record<SecondaryLocale, string> = {
   ar: "ar",
   pt: "pt-BR",
   id: "id",
+  ms: "ms",
 };
 
 interface ChromeStrings {
@@ -205,6 +207,24 @@ export const POST_LABELS: Record<SecondaryLocale, PostLabels> = {
     blogIntro:
       "Panduan praktis yang menjelaskan bukan hanya tangan mana yang menang, tapi kenapa — dan cara memakainya di meja.",
   },
+  ms: {
+    contents: "Kandungan",
+    quickAnswer: "Jawapan Pantas",
+    category: "Panduan Pemula",
+    readSuffix: "bacaan",
+    published: "Diterbitkan",
+    updated: "Dikemas kini",
+    prev: "Sebelumnya",
+    next: "Seterusnya",
+    related: "Artikel Berkaitan",
+    share: "Kongsi artikel ini",
+    copy: "Salin pautan",
+    copied: "Disalin!",
+    back: "Kembali ke semua artikel",
+    blogTitle: "Blog Strategi Texas Hold'em",
+    blogIntro:
+      "Panduan praktikal yang menerangkan bukan sekadar tangan mana menang, tetapi sebabnya — dan cara menggunakannya di meja.",
+  },
 };
 
 export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
@@ -305,5 +325,19 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     languageHeading: "Bahasa",
     disclaimer:
       "Situs ini hanya untuk informasi dan tidak mendorong perjudian uang sungguhan. Hanya untuk usia 18 tahun ke atas.",
+  },
+  ms: {
+    skip: "Langkau ke kandungan",
+    brand: "HoldemMaster",
+    blogLabel: "Blog",
+    menuOpen: "Buka menu",
+    menuClose: "Tutup menu",
+    koLabel: "한국어",
+    tagline:
+      "Strategi Texas Hold'em yang jelas dan praktikal. Panduan yang menerangkan bukan sekadar tangan mana menang, tetapi sebabnya.",
+    contentHeading: "Kandungan",
+    languageHeading: "Bahasa",
+    disclaimer:
+      "Laman ini untuk tujuan maklumat sahaja dan tidak menggalakkan perjudian wang sebenar. Untuk usia 18 tahun ke atas sahaja.",
   },
 };
