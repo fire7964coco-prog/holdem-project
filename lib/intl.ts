@@ -3,7 +3,7 @@
  * 한국어는 루트(/)에 그대로 두고, 추가 언어만 /{locale}/... 로 발행한다.
  * 새 언어 추가 = 아래 SECONDARY_LOCALES + CHROME 에 항목만 추가.
  */
-export const SECONDARY_LOCALES = ["en", "ja", "es"] as const;
+export const SECONDARY_LOCALES = ["en", "ja", "es", "zh"] as const;
 export type SecondaryLocale = (typeof SECONDARY_LOCALES)[number];
 
 export function isSecondaryLocale(value: string): value is SecondaryLocale {
@@ -21,13 +21,15 @@ export const OG_LOCALE: Record<SecondaryLocale, string> = {
   en: "en_US",
   ja: "ja_JP",
   es: "es_ES",
+  zh: "zh_CN",
 };
 
-/** <html lang> 및 hreflang 코드 */
+/** <html lang> 및 hreflang 코드 (zh는 간체 = zh-Hans) */
 export const HTML_LANG: Record<SecondaryLocale, string> = {
   en: "en",
   ja: "ja",
   es: "es",
+  zh: "zh-Hans",
 };
 
 interface ChromeStrings {
@@ -118,6 +120,24 @@ export const POST_LABELS: Record<SecondaryLocale, PostLabels> = {
     blogIntro:
       "Guías prácticas que explican no solo qué mano gana a cuál, sino por qué — y cómo usarlo en la mesa.",
   },
+  zh: {
+    contents: "目录",
+    quickAnswer: "一句话答案",
+    category: "新手指南",
+    readSuffix: "阅读",
+    published: "发布",
+    updated: "更新",
+    prev: "上一篇",
+    next: "下一篇",
+    related: "相关文章",
+    share: "分享这篇文章",
+    copy: "复制链接",
+    copied: "已复制！",
+    back: "返回全部文章",
+    blogTitle: "德州扑克策略博客",
+    blogIntro:
+      "实用攻略：不只讲什么牌赢什么牌，更讲清原因，以及在牌桌上怎么用。",
+  },
 };
 
 export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
@@ -162,5 +182,19 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     languageHeading: "Idioma",
     disclaimer:
       "Este sitio es solo para fines informativos y no promueve el juego con dinero real. Solo mayores de 18 años.",
+  },
+  zh: {
+    skip: "跳到正文",
+    brand: "HoldemMaster",
+    blogLabel: "博客",
+    menuOpen: "打开菜单",
+    menuClose: "关闭菜单",
+    koLabel: "한국어",
+    tagline:
+      "清晰实用的德州扑克策略。不只告诉你什么牌赢什么牌，更讲清背后的原因。",
+    contentHeading: "内容",
+    languageHeading: "语言",
+    disclaimer:
+      "本网站仅供信息参考，不鼓励任何真实赌博。仅限18岁以上人士。",
   },
 };
