@@ -3,7 +3,7 @@
  * 한국어는 루트(/)에 그대로 두고, 추가 언어만 /{locale}/... 로 발행한다.
  * 새 언어 추가 = 아래 SECONDARY_LOCALES + CHROME 에 항목만 추가.
  */
-export const SECONDARY_LOCALES = ["en", "ja", "es", "zh", "ar"] as const;
+export const SECONDARY_LOCALES = ["en", "ja", "es", "zh", "ar", "pt"] as const;
 export type SecondaryLocale = (typeof SECONDARY_LOCALES)[number];
 
 export function isSecondaryLocale(value: string): value is SecondaryLocale {
@@ -30,15 +30,17 @@ export const OG_LOCALE: Record<SecondaryLocale, string> = {
   es: "es_ES",
   zh: "zh_CN",
   ar: "ar_AR",
+  pt: "pt_BR",
 };
 
-/** <html lang> 및 hreflang 코드 (zh는 간체 = zh-Hans) */
+/** <html lang> 및 hreflang 코드 (zh는 간체 = zh-Hans, pt는 브라질 = pt-BR) */
 export const HTML_LANG: Record<SecondaryLocale, string> = {
   en: "en",
   ja: "ja",
   es: "es",
   zh: "zh-Hans",
   ar: "ar",
+  pt: "pt-BR",
 };
 
 interface ChromeStrings {
@@ -165,6 +167,24 @@ export const POST_LABELS: Record<SecondaryLocale, PostLabels> = {
     blogIntro:
       "أدلّة عملية تشرح ليس فقط أي يد تتفوق على الأخرى، بل لماذا — وكيف تستخدمها على الطاولة.",
   },
+  pt: {
+    contents: "Conteúdo",
+    quickAnswer: "Resposta rápida",
+    category: "Guia para iniciantes",
+    readSuffix: "de leitura",
+    published: "Publicado",
+    updated: "Atualizado",
+    prev: "Anterior",
+    next: "Próximo",
+    related: "Artigos relacionados",
+    share: "Compartilhe este artigo",
+    copy: "Copiar link",
+    copied: "Copiado!",
+    back: "Voltar para todos os artigos",
+    blogTitle: "Blog de estratégia de Texas Hold'em",
+    blogIntro:
+      "Guias práticos que explicam não só qual mão ganha de qual, mas por quê — e como usar isso na mesa.",
+  },
 };
 
 export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
@@ -237,5 +257,19 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     languageHeading: "اللغة",
     disclaimer:
       "هذا الموقع لأغراض المعلومات فقط ولا يشجّع على القمار بأموال حقيقية. للبالغين فوق 18 عامًا فقط.",
+  },
+  pt: {
+    skip: "Pular para o conteúdo",
+    brand: "HoldemMaster",
+    blogLabel: "Blog",
+    menuOpen: "Abrir menu",
+    menuClose: "Fechar menu",
+    koLabel: "한국어",
+    tagline:
+      "Estratégia de Texas Hold'em de forma clara e prática. Guias que explicam não só qual mão ganha de qual, mas por quê.",
+    contentHeading: "Conteúdo",
+    languageHeading: "Idioma",
+    disclaimer:
+      "Este site é apenas informativo e não incentiva apostas com dinheiro real. Somente para maiores de 18 anos.",
   },
 };
