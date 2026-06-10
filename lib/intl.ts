@@ -3,7 +3,7 @@
  * 한국어는 루트(/)에 그대로 두고, 추가 언어만 /{locale}/... 로 발행한다.
  * 새 언어 추가 = 아래 SECONDARY_LOCALES + CHROME 에 항목만 추가.
  */
-export const SECONDARY_LOCALES = ["en", "ja", "es", "zh", "ar", "pt", "id", "ms", "vi", "hi"] as const;
+export const SECONDARY_LOCALES = ["en", "ja", "es", "zh", "ar", "pt", "id", "ms", "vi", "hi", "de"] as const;
 export type SecondaryLocale = (typeof SECONDARY_LOCALES)[number];
 
 export function isSecondaryLocale(value: string): value is SecondaryLocale {
@@ -35,6 +35,7 @@ export const OG_LOCALE: Record<SecondaryLocale, string> = {
   ms: "ms_MY",
   vi: "vi_VN",
   hi: "hi_IN",
+  de: "de_DE",
 };
 
 /** <html lang> 및 hreflang 코드 (zh는 간체 = zh-Hans, pt는 브라질 = pt-BR) */
@@ -49,6 +50,7 @@ export const HTML_LANG: Record<SecondaryLocale, string> = {
   ms: "ms",
   vi: "vi",
   hi: "hi",
+  de: "de",
 };
 
 interface ChromeStrings {
@@ -265,6 +267,24 @@ export const POST_LABELS: Record<SecondaryLocale, PostLabels> = {
     blogIntro:
       "व्यावहारिक गाइड जो सिर्फ़ यह नहीं बतातीं कि कौन-सा हाथ जीतता है, बल्कि क्यों — और टेबल पर इसका इस्तेमाल कैसे करें।",
   },
+  de: {
+    contents: "Inhalt",
+    quickAnswer: "Kurze Antwort",
+    category: "Einsteiger-Guide",
+    readSuffix: "Lesezeit",
+    published: "Veröffentlicht",
+    updated: "Aktualisiert",
+    prev: "Zurück",
+    next: "Weiter",
+    related: "Ähnliche Artikel",
+    share: "Diesen Artikel teilen",
+    copy: "Link kopieren",
+    copied: "Kopiert!",
+    back: "Zurück zu allen Artikeln",
+    blogTitle: "Texas-Hold'em-Strategie-Blog",
+    blogIntro:
+      "Praxisnahe Ratgeber, die nicht nur erklären, welche Hand gewinnt, sondern auch warum — und wie du es am Tisch nutzt.",
+  },
 };
 
 export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
@@ -407,5 +427,19 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     languageHeading: "भाषा",
     disclaimer:
       "यह साइट केवल जानकारी के लिए है और असली पैसे के जुए को बढ़ावा नहीं देती। केवल 18 वर्ष से अधिक आयु के लिए।",
+  },
+  de: {
+    skip: "Zum Inhalt springen",
+    brand: "HoldemMaster",
+    blogLabel: "Blog",
+    menuOpen: "Menü öffnen",
+    menuClose: "Menü schließen",
+    koLabel: "한국어",
+    tagline:
+      "Klare und praxisnahe Texas-Hold'em-Strategie. Ratgeber, die nicht nur erklären, welche Hand gewinnt, sondern auch warum.",
+    contentHeading: "Inhalt",
+    languageHeading: "Sprache",
+    disclaimer:
+      "Diese Seite dient nur zur Information und fördert kein Echtgeld-Glücksspiel. Nur für Personen ab 18 Jahren.",
   },
 };
