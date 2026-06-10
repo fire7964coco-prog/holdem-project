@@ -3,11 +3,18 @@
  * 한국어는 루트(/)에 그대로 두고, 추가 언어만 /{locale}/... 로 발행한다.
  * 새 언어 추가 = 아래 SECONDARY_LOCALES + CHROME 에 항목만 추가.
  */
-export const SECONDARY_LOCALES = ["en", "ja", "es", "zh"] as const;
+export const SECONDARY_LOCALES = ["en", "ja", "es", "zh", "ar"] as const;
 export type SecondaryLocale = (typeof SECONDARY_LOCALES)[number];
 
 export function isSecondaryLocale(value: string): value is SecondaryLocale {
   return (SECONDARY_LOCALES as readonly string[]).includes(value);
+}
+
+/** RTL(오른쪽→왼쪽) 언어. 아랍어 등. */
+export const RTL_LOCALES: readonly SecondaryLocale[] = ["ar"];
+
+export function dirForLocale(locale: SecondaryLocale | null): "rtl" | "ltr" {
+  return locale && RTL_LOCALES.includes(locale) ? "rtl" : "ltr";
 }
 
 /** 경로에서 보조 언어 추출 (/en/..., /ja/...). 한국어(루트)면 null. */
@@ -22,6 +29,7 @@ export const OG_LOCALE: Record<SecondaryLocale, string> = {
   ja: "ja_JP",
   es: "es_ES",
   zh: "zh_CN",
+  ar: "ar_AR",
 };
 
 /** <html lang> 및 hreflang 코드 (zh는 간체 = zh-Hans) */
@@ -30,6 +38,7 @@ export const HTML_LANG: Record<SecondaryLocale, string> = {
   ja: "ja",
   es: "es",
   zh: "zh-Hans",
+  ar: "ar",
 };
 
 interface ChromeStrings {
@@ -138,6 +147,24 @@ export const POST_LABELS: Record<SecondaryLocale, PostLabels> = {
     blogIntro:
       "实用攻略：不只讲什么牌赢什么牌，更讲清原因，以及在牌桌上怎么用。",
   },
+  ar: {
+    contents: "المحتويات",
+    quickAnswer: "الإجابة السريعة",
+    category: "دليل المبتدئين",
+    readSuffix: "للقراءة",
+    published: "نُشر",
+    updated: "حُدّث",
+    prev: "السابق",
+    next: "التالي",
+    related: "مقالات ذات صلة",
+    share: "شارك هذا المقال",
+    copy: "نسخ الرابط",
+    copied: "تم النسخ!",
+    back: "العودة إلى كل المقالات",
+    blogTitle: "مدوّنة استراتيجية تكساس هولدم",
+    blogIntro:
+      "أدلّة عملية تشرح ليس فقط أي يد تتفوق على الأخرى، بل لماذا — وكيف تستخدمها على الطاولة.",
+  },
 };
 
 export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
@@ -196,5 +223,19 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     languageHeading: "语言",
     disclaimer:
       "本网站仅供信息参考，不鼓励任何真实赌博。仅限18岁以上人士。",
+  },
+  ar: {
+    skip: "تخطَّ إلى المحتوى",
+    brand: "HoldemMaster",
+    blogLabel: "المدوّنة",
+    menuOpen: "فتح القائمة",
+    menuClose: "إغلاق القائمة",
+    koLabel: "한국어",
+    tagline:
+      "استراتيجية تكساس هولدم بشكل واضح وعملي. أدلّة تشرح ليس فقط أي يد تتفوق على الأخرى، بل لماذا.",
+    contentHeading: "المحتوى",
+    languageHeading: "اللغة",
+    disclaimer:
+      "هذا الموقع لأغراض المعلومات فقط ولا يشجّع على القمار بأموال حقيقية. للبالغين فوق 18 عامًا فقط.",
   },
 };

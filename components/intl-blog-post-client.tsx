@@ -7,7 +7,7 @@ import { FaXTwitter, FaFacebookF } from "react-icons/fa6";
 import { useState, useRef } from "react";
 import type { Post } from "@/lib/posts";
 import { SITE } from "@/lib/site";
-import { POST_LABELS, type SecondaryLocale } from "@/lib/intl";
+import { POST_LABELS, dirForLocale, type SecondaryLocale } from "@/lib/intl";
 import { postsForLocale } from "@/lib/intl-posts";
 import { renderMarkdown, extractHeadings } from "@/app/blog/[slug]/blog-post-client";
 
@@ -49,6 +49,7 @@ export default function IntlBlogPostClient({
   summarySlot?: ReactNode;
 }) {
   const t = POST_LABELS[locale];
+  const dir = dirForLocale(locale);
   const posts = postsForLocale(locale);
   const base = `/${locale}/blog`;
 
@@ -75,7 +76,7 @@ export default function IntlBlogPostClient({
   )}</p>`;
 
   return (
-    <>
+    <div dir={dir}>
       <div className="bg-card border-b border-border">
         <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-2 text-xs text-muted-foreground">
           <Link href={base} className="hover:text-primary transition-colors">{t.blogLabel}</Link>
@@ -258,6 +259,6 @@ export default function IntlBlogPostClient({
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

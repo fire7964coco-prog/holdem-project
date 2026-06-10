@@ -206,7 +206,8 @@ export function renderMarkdown(content: string): string {
           return `<div style="width:32px;height:46px;background:white;border-radius:5px;display:inline-flex;align-items:center;justify-content:center;border:1px solid #d1d5db;box-shadow:0 1px 3px rgba(0,0,0,0.35);flex-shrink:0"><span style="font-size:11px;font-weight:800;color:${color};line-height:1;letter-spacing:-0.5px">${card}</span></div>`;
         }).join('');
         const captionHtml = caption ? `<span style="font-size:11px;color:var(--muted-foreground);align-self:flex-end;padding-bottom:2px">${caption}</span>` : '';
-        return `<div style="display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:12px 0;padding:12px 16px;background:rgba(255,255,255,0.04);border-radius:10px;border:1px solid rgba(255,255,255,0.08)">${cardHtml}${captionHtml}</div>`;
+        // 카드 시퀀스는 항상 LTR 유지(RTL 언어에서 A-K-Q-J-10 순서가 뒤집히지 않도록).
+        return `<div style="display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:12px 0;padding:12px 16px;background:rgba(255,255,255,0.04);border-radius:10px;border:1px solid rgba(255,255,255,0.08)"><span style="display:inline-flex;flex-wrap:wrap;gap:6px;align-items:center;direction:ltr">${cardHtml}</span>${captionHtml}</div>`;
       }
     )
     .replace(

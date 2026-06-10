@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE } from "@/lib/site";
-import { CHROME, POST_LABELS, OG_LOCALE, type SecondaryLocale } from "@/lib/intl";
+import { CHROME, POST_LABELS, OG_LOCALE, dirForLocale, type SecondaryLocale } from "@/lib/intl";
 import { postsForLocale } from "@/lib/intl-posts";
 
 export function intlBlogIndexMetadata(locale: SecondaryLocale): Metadata {
@@ -29,7 +29,7 @@ export function IntlBlogIndex({ locale }: { locale: SecondaryLocale }) {
   const base = `/${locale}/blog`;
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-16">
+    <div dir={dirForLocale(locale)} className="max-w-4xl mx-auto px-4 py-16">
       <header className="mb-10">
         <h1 className="text-3xl md:text-4xl font-serif font-black text-foreground mb-3">{t.blogTitle}</h1>
         <p className="text-lg text-muted-foreground">{t.blogIntro}</p>

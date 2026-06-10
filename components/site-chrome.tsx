@@ -6,7 +6,7 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { IntlHeader } from "@/components/intl-header";
 import { IntlFooter } from "@/components/intl-footer";
-import { localeFromPath, HTML_LANG } from "@/lib/intl";
+import { localeFromPath, HTML_LANG, dirForLocale } from "@/lib/intl";
 
 function useLocale() {
   const pathname = usePathname() || "/";
@@ -32,6 +32,7 @@ export function HtmlLangSync() {
   const locale = useLocale();
   useEffect(() => {
     document.documentElement.lang = locale ? HTML_LANG[locale] : "ko";
+    document.documentElement.dir = dirForLocale(locale);
   }, [locale]);
   return null;
 }

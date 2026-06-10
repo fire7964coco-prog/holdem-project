@@ -4,6 +4,7 @@ import { EN_POSTS } from "./posts-en";
 import { JA_POSTS } from "./posts-ja";
 import { ES_POSTS } from "./posts-es";
 import { ZH_POSTS } from "./posts-zh";
+import { AR_POSTS } from "./posts-ar";
 
 /** 보조 언어별 포스트 목록 */
 export const POSTS_BY_LOCALE: Record<SecondaryLocale, Post[]> = {
@@ -11,6 +12,7 @@ export const POSTS_BY_LOCALE: Record<SecondaryLocale, Post[]> = {
   ja: JA_POSTS,
   es: ES_POSTS,
   zh: ZH_POSTS,
+  ar: AR_POSTS,
 };
 
 export function getPostByLocale(locale: SecondaryLocale, slug: string): Post | undefined {
