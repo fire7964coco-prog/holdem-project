@@ -13,7 +13,9 @@ import { POST as holdemSmallBlindRole } from "./holdem-small-blind-role";
 import { POST as holdemCheckMeaning } from "./holdem-check-meaning";
 import { POST as akOffsuitStrategy } from "./ak-offsuit-strategy";
 import { POST as holdemButtonPosition } from "./holdem-button-position";
+import { POST as holdemTournamentVsCashGame } from "./holdem-tournament-vs-cash-game";
 export const NEW_POSTS: Post[] = [
+  holdemTournamentVsCashGame,
   holdemButtonPosition,
   akOffsuitStrategy,
   holdemCheckMeaning,

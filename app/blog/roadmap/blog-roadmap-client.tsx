@@ -19,7 +19,8 @@ interface Pillar {
   color: string;
   textColor: string;
   clusters: ClusterNode[];
-  clusterR?: number;    // 클러스터를 중심에서 더 멀리 배치 (기본 0)
+  pillarR?: number;     // 중심→필라 줄기 길이 (기본 PILLAR_R). 짧/장/중으로 번갈아 겹침 방지
+  clusterR?: number;    // 클러스터를 필라에서 더 멀리 배치 (기본 0)
   clusterGap?: number;  // 클러스터 간 간격 (기본 CLUSTER_GAP)
 }
 
@@ -29,7 +30,8 @@ const PILLARS: Pillar[] = [
     id: "p1",
     label: "홀덤 족보",
     emoji: "👑",
-    angle: 15,
+    angle: 20,
+    pillarR: 330,
     color: "#7c3aed",
     textColor: "#ede9fe",
     clusters: [
@@ -45,7 +47,8 @@ const PILLARS: Pillar[] = [
     id: "p2",
     label: "기초 규칙",
     emoji: "📖",
-    angle: 70,
+    angle: 60,
+    pillarR: 150,
     color: "#1d4ed8",
     textColor: "#dbeafe",
     clusters: [
@@ -61,10 +64,10 @@ const PILLARS: Pillar[] = [
     id: "p3",
     label: "확률·수학",
     emoji: "🎲",
-    angle: 112,
+    angle: 100,
     color: "#b91c1c",
     textColor: "#fee2e2",
-    clusterR: 30,
+    pillarR: 235,
     clusters: [
       { label: "포커 확률 계산기",          slug: "holdem-odds-calculator",        published: true  },
       { label: "아웃츠 계산법",             slug: "holdem-outs-calculation",       published: true  },
@@ -78,7 +81,8 @@ const PILLARS: Pillar[] = [
     id: "p4",
     label: "스타팅 핸드",
     emoji: "🃏",
-    angle: 205,
+    angle: 180,
+    pillarR: 150,
     color: "#b45309",
     textColor: "#fef3c7",
     clusters: [
@@ -93,7 +97,9 @@ const PILLARS: Pillar[] = [
     id: "p5",
     label: "포지션 전략",
     emoji: "🎯",
-    angle: 240,
+    angle: 220,
+    pillarR: 290,
+    clusterGap: 48,
     color: "#065f46",
     textColor: "#d1fae5",
     clusters: [
@@ -107,7 +113,9 @@ const PILLARS: Pillar[] = [
     id: "p6",
     label: "배팅 전략",
     emoji: "💰",
-    angle: 282,
+    angle: 262,
+    pillarR: 155,
+    clusterGap: 56,
     color: "#0e7490",
     textColor: "#cffafe",
     clusters: [
@@ -123,8 +131,9 @@ const PILLARS: Pillar[] = [
     id: "p7",
     label: "초보 가이드",
     emoji: "🌱",
-    angle: 358,
-    clusterR: 30,
+    angle: 342,
+    pillarR: 245,
+    clusterGap: 48,
     color: "#92400e",
     textColor: "#fed7aa",
     clusters: [
@@ -138,14 +147,14 @@ const PILLARS: Pillar[] = [
     id: "p8",
     label: "토너먼트",
     emoji: "🏆",
-    angle: 328,
+    angle: 302,
     color: "#6d28d9",
-    clusterR: 55,
+    pillarR: 290,
     textColor: "#ede9fe",
     clusters: [
       { label: "WSOP 2025 가이드",        slug: "wsop-2025-tournament-guide",   published: true  },
       { label: "APT 제주 클래식 2026",    slug: "apt-jeju-classic-2026-guide",  published: true  },
-      { label: "토너먼트 vs 캐시게임",     published: false },
+      { label: "토너먼트 vs 캐시게임",     slug: "holdem-tournament-vs-cash-game", published: true },
       { label: "ICM이란 뜻",               slug: "icm-poker-meaning",            published: true  },
       { label: "버블 전략",               slug: "holdem-bubble-strategy", published: true  },
     ],
@@ -154,11 +163,11 @@ const PILLARS: Pillar[] = [
     id: "p9",
     label: "홀덤펍",
     emoji: "🍺",
-    angle: 162,
+    angle: 140,
     color: "#be185d",
     textColor: "#fce7f3",
-    clusterR: 90,
-    clusterGap: 38,
+    pillarR: 275,
+    clusterGap: 33,
     clusters: [
       { label: "홀덤펍 처음 가는 법",     slug: "holdem-pub-first-visit-guide", published: true  },
       { label: "홀덤펍 에티켓",           published: false },
@@ -175,7 +184,7 @@ const PILLARS: Pillar[] = [
 ];
 
 /* ── SVG 좌표 계산 ───────────────────────────────────────────── */
-const CX = 700, CY = 460;
+const CX = 700, CY = 500;
 const PILLAR_R = 210;
 const CLUSTER_BASE_R = 200;
 const CLUSTER_GAP = 46;
@@ -262,7 +271,7 @@ export default function BlogRoadmap() {
         <div className="w-full overflow-x-auto pb-8">
           <svg
             ref={svgRef}
-            viewBox="0 0 1400 920"
+            viewBox="0 0 1400 1020"
             className="w-full max-w-6xl mx-auto block"
             style={{ minWidth: 700 }}
           >
@@ -277,7 +286,7 @@ export default function BlogRoadmap() {
                 <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
               </filter>
             </defs>
-            <rect width="1400" height="920" fill="url(#bgGrad)" rx="16" />
+            <rect width="1400" height="1020" fill="url(#bgGrad)" rx="16" />
 
             {/* 장식용 동심원 */}
             {[100, 200, 310, 430].map(r => (
@@ -286,7 +295,8 @@ export default function BlogRoadmap() {
             ))}
 
             {PILLARS.map(pillar => {
-              const pa = polar(CX, CY, PILLAR_R, pillar.angle);
+              const pillarR = pillar.pillarR ?? PILLAR_R;
+              const pa = polar(CX, CY, pillarR, pillar.angle);
 
               return (
                 <g key={pillar.id}>
@@ -304,7 +314,7 @@ export default function BlogRoadmap() {
                     const gap = pillar.clusterGap ?? CLUSTER_GAP;
                     const spread = (ci - (pillar.clusters.length - 1) / 2) * gap;
                     const perpAngle = pillar.angle + 90;
-                    const baseR = PILLAR_R + CLUSTER_BASE_R + (pillar.clusterR ?? 0);
+                    const baseR = pillarR + CLUSTER_BASE_R + (pillar.clusterR ?? 0);
                     const bx = polar(CX, CY, baseR, pillar.angle).x;
                     const by = polar(CX, CY, baseR, pillar.angle).y;
                     const cx2 = bx + spread * Math.cos(perpAngle * RAD);
