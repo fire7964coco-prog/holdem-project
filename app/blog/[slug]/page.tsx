@@ -145,7 +145,7 @@ export default function Page({ params }: { params: { slug: string } }) {
    * OG/Twitter 이미지는 그대로 유지 (firstImg → ogImage).
    */
   const summarySlot =
-    lcp != null ? (
+    lcp != null && !post.hideSummaryImageSlot ? (
       <section
         aria-labelledby="post-summary-label"
         style={{

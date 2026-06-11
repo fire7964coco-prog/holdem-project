@@ -10,8 +10,9 @@
 ### 작업 내용
 - 영어 기준본 추가: `en/blog/holdem-tournament-vs-cash-game`
 - 영어 기준본 품질 보강: 실전 $1/$2 캐시게임·$50 토너먼트 예시, 버블 AKo ICM 예시, 초보 선택 프레임 추가
+- 성능 수정: `hideSummaryImageSlot` 추가로 첫 이미지는 LCP 최적화 제거 유지, 하단 요약 이미지 슬롯만 숨김
 - 초안 점검: `holdem-tournament-vs-cash-game` FAQ 재사용 이미지 제거
-- 하단 구성 정리: `keepImagesInBody` 적용으로 자동 `이 글 전체 요약` 이미지 슬롯 제거, 결론 테이블 제거
+- 하단 구성 정리: 자동 `이 글 전체 요약` 이미지 슬롯 제거, 결론 테이블 제거
 - 이미지 alt 최적화: 본문 이미지 3개 alt를 장면·의도 중심으로 수정
 - 카피/문장 다듬기: `seoTitle`, `desc`, 어색한 표현 일부 개선
 

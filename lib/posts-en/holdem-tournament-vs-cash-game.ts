@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "토너먼트",
   date: "2026-06-11",
   updated: "2026-06-11",
-  keepImagesInBody: true,
+  hideSummaryImageSlot: true,
   readTime: "16 min",
   emoji: "🏆",
   tags: [

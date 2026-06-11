@@ -25,6 +25,11 @@ export interface Post {
   * true면 본문 이미지를 섹션 원위치에 유지하고, 하단 "이 글 전체 요약" 이미지 블록을 표시하지 않음.
   */
  keepImagesInBody?: boolean;
+ /**
+  * true면 첫 이미지는 LCP 최적화를 위해 본문에서 제거하되,
+  * 하단 "이 글 전체 요약" 이미지 슬롯도 표시하지 않음.
+  */
+ hideSummaryImageSlot?: boolean;
  readTime: string;
  emoji: string;
  tags: string[];
