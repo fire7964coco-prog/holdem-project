@@ -8,6 +8,8 @@
 ## 2026-06-11
 
 ### 작업 내용
+- 스페인어 현지화 버전 추가: `es/blog/holdem-tournament-vs-cash-game`
+- 다국어 현지화 규칙 보강: 스페인어/LATAM 포커 검색 표현 예시 추가
 - 중국어 간체 현지화 버전 추가: `zh/blog/holdem-tournament-vs-cash-game`
 - 다국어 현지화 규칙 보강: 중국어 간체 포커 검색 표현 예시 추가
 - 일본어 현지화 버전 추가: `ja/blog/holdem-tournament-vs-cash-game`
@@ -21,14 +23,15 @@
 - 카피/문장 다듬기: `seoTitle`, `desc`, 어색한 표현 일부 개선
 
 ### 발행 현황
-- 총 포스트: 40개 (목표 50개까지 10개 남음)
+- 총 포스트: 41개 (목표 50개까지 9개 남음)
 
 ### 특이사항
 - `ReadLints` 기준 수정 파일 린트 오류 없음
+- 스페인어 SERP 기준 `cash games`, `partidas cash`, `torneos`, `buy-in`, `bankroll`, `ICM`, `burbuja`, `mesa final` 표현 반영
 - 중국어 SERP 기준 `现金局`, `现金桌`, `锦标赛`, `买入`, `Bankroll`, `ICM`, `泡沫期`, `钱圈` 표현 반영
 - 일본어 SERP 기준 `キャッシュゲーム`, `リングゲーム`, `トーナメント`, `バイイン`, `バンクロール`, `ICM`, `インマネ` 표현 반영
 - 영어 기준본은 SERP 경쟁 글 기준으로 칩 가치·블라인드·ICM·뱅크롤·초보 선택 기준 강화
-- `npm run check:intl-links` 통과 (27편, 12개 언어)
+- `npm run check:intl-links` 통과 (28편, 12개 언어)
 
 ---
 
