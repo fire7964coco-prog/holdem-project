@@ -8,13 +8,22 @@
 ## 2026-06-11
 
 ### 작업 내용
+- 신규 글 발행 및 영어 현지화: `texas-holdem-rules-for-beginners` (LowFruits 롱테일 키워드 기반 초보자 규칙 가이드)
 - 신규 글 발행 및 12개 언어 현지화 배포: `holdem-tournament-vs-cash-game`
 - 성능 수정: LCP 이미지 최적화 유지 + 하단 요약 이미지 슬롯 제거
 
 ### 발행 현황
-- 총 포스트: 49개 (목표 50개까지 1개 남음)
+- 총 포스트: 50개 (목표 50개 달성)
 
 ### 특이사항
+- 공용 영어 PDF 치트시트 제작: `public/downloads/texas-holdem-rules-for-beginners.pdf` (2페이지, 핸드 랭킹·게임 흐름·액션 순서·칩 세팅·초보 실수 / SERP Top10 분석 반영)
+- PDF 생성기를 HTML/CSS → Chromium 렌더 방식으로 전환: `scripts/generate-beginner-pdf.mjs` (Playwright devDependency 추가, `npm run generate:beginner-pdf`)
+  - 콘텐츠를 언어별 `CONTENT` 데이터로 분리 → 신규 언어는 키만 추가하면 생성 (한/일/중/아랍은 fontStack·dir만 지정)
+  - 파비콘(`public/favicon.svg`)·`holdemmaster.com` URL을 헤더에 브랜딩으로 삽입
+  - 정적 자산이라 사이트 런타임 성능에는 영향 없음 (생성은 로컬/빌드 도구 영역)
+- 한국어 PDF 추가: `public/downloads/texas-holdem-rules-for-beginners-ko.pdf` (Malgun Gothic 렌더, 2페이지)
+  - 한국어 글은 한국어 PDF, 영어 글은 영어 PDF로 각각 연결
+  - 실행: `node scripts/generate-beginner-pdf.mjs`(전체) / `... en ko`(지정 언어)
 - 다국어 현지화 원칙 정리: 현지어 우선, 어색한 포커 용어는 영어 원단어 사용/병기
 
 ---

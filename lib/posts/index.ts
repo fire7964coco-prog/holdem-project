@@ -14,7 +14,9 @@ import { POST as holdemCheckMeaning } from "./holdem-check-meaning";
 import { POST as akOffsuitStrategy } from "./ak-offsuit-strategy";
 import { POST as holdemButtonPosition } from "./holdem-button-position";
 import { POST as holdemTournamentVsCashGame } from "./holdem-tournament-vs-cash-game";
+import { POST as texasHoldemRulesForBeginners } from "./texas-holdem-rules-for-beginners";
 export const NEW_POSTS: Post[] = [
+  texasHoldemRulesForBeginners,
   holdemTournamentVsCashGame,
   holdemButtonPosition,
   akOffsuitStrategy,
