@@ -10,6 +10,7 @@
 ### 작업 내용
 - 신규 글 발행 및 영어 현지화: `texas-holdem-rules-for-beginners` (LowFruits 롱테일 키워드 기반 초보자 규칙 가이드)
 - 일본어 현지화 추가: `texas-holdem-rules-for-beginners` (初心者向けルール・チップ・PDFチートシート)
+- 중국어 간체 현지화 추가: `texas-holdem-rules-for-beginners` (德州扑克新手规则·筹码设置·PDF速查表)
 - 디자인 개선: 블로그 내 `/downloads/*.pdf` 링크를 강조 CTA 카드/버튼으로 자동 렌더링
 - 카니발라이제이션 방지: 초보 규칙 글 ↔ 게임 진행 순서 글 ↔ `/rules/texas-holdem` 역할 분리 및 내부링크 조정
 - 신규 글 발행 및 12개 언어 현지화 배포: `holdem-tournament-vs-cash-game`
@@ -26,6 +27,7 @@
   - 정적 자산이라 사이트 런타임 성능에는 영향 없음 (생성은 로컬/빌드 도구 영역)
 - 한국어 PDF 추가: `public/downloads/texas-holdem-rules-for-beginners-ko.pdf` (Malgun Gothic 렌더, 2페이지)
 - 일본어 PDF 추가: `public/downloads/texas-holdem-rules-for-beginners-ja.pdf` (Yu Gothic/Meiryo 렌더, 2페이지)
+- 중국어 PDF 추가: `public/downloads/texas-holdem-rules-for-beginners-zh.pdf` (Microsoft YaHei/Noto Sans SC 렌더, 2페이지)
   - 한국어 글은 한국어 PDF, 영어 글은 영어 PDF로 각각 연결
   - 실행: `node scripts/generate-beginner-pdf.mjs`(전체) / `... en ko`(지정 언어)
 - 다국어 현지화 원칙 정리: 현지어 우선, 어색한 포커 용어는 영어 원단어 사용/병기

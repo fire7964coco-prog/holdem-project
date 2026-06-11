@@ -566,6 +566,7 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/texas-holdem-rules-for-beginners" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/texas-holdem-rules-for-beginners" />
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/texas-holdem-rules-for-beginners" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/texas-holdem-rules-for-beginners" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/texas-holdem-rules-for-beginners" />
   </url>
 
@@ -583,7 +584,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- 다국어 블로그 포스트 (38편) -->
+  <!-- 다국어 블로그 포스트 (39편) -->
 
   <url>
     <loc>https://www.holdemmaster.com/en/blog/holdem-game-order</loc>
@@ -656,6 +657,7 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/texas-holdem-rules-for-beginners" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/texas-holdem-rules-for-beginners" />
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/texas-holdem-rules-for-beginners" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/texas-holdem-rules-for-beginners" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/texas-holdem-rules-for-beginners" />
   </url>
 
@@ -730,6 +732,7 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/texas-holdem-rules-for-beginners" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/texas-holdem-rules-for-beginners" />
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/texas-holdem-rules-for-beginners" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/texas-holdem-rules-for-beginners" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/texas-holdem-rules-for-beginners" />
   </url>
 
@@ -857,6 +860,18 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-tournament-vs-cash-game" />
+  </url>
+
+  <url>
+    <loc>https://www.holdemmaster.com/zh/blog/texas-holdem-rules-for-beginners</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/texas-holdem-rules-for-beginners" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/texas-holdem-rules-for-beginners" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/texas-holdem-rules-for-beginners" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/texas-holdem-rules-for-beginners" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/texas-holdem-rules-for-beginners" />
   </url>
 
   <url>
