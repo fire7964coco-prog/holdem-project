@@ -70,45 +70,24 @@ If poker hand rankings are still new, open [Texas Hold'em hand rankings](/en/blo
 
 ---
 
-## How to Play Texas Hold'em Step by Step
+## How to Play Texas Hold'em — Beginner Flow Summary
 
-Here is a full hand from start to finish.
+This article gives you the **beginner version of the flow** so you can sit down without freezing. If you want a deeper street-by-street walkthrough with one full hand, betting order, and examples, read [Texas Hold'em order of play](/en/blog/holdem-game-order) next.
 
-### 1. The dealer button is placed
+| Order | Stage | What beginners should remember |
+|------:|-------|--------------------------------|
+| 1 | Dealer button | Sets blinds and action order |
+| 2 | Small blind / big blind | Forced bets before cards are dealt |
+| 3 | Two hole cards | Private cards only you can see |
+| 4 | Preflop | Action starts left of the big blind |
+| 5 | Flop, turn, river | Community cards come 3, then 1, then 1 |
+| 6 | Showdown | Remaining players compare the best 5-card hand |
 
-The dealer button marks the player who is treated as the dealer position for that hand. In a home game, the button may also deal the cards. In a casino or online game, the button still rotates even if a real dealer handles the cards.
-
-### 2. The blinds are posted
-
-The player left of the button posts the small blind. The next player posts the big blind.
-
-If the blinds are 1/2, the small blind posts 1 chip and the big blind posts 2 chips before seeing their cards.
-
-### 3. Each player receives 2 hole cards
-
-Cards are dealt one at a time, face down, until every player has two private cards.
-
-### 4. Preflop betting begins
-
-The first player to act preflop is the player left of the big blind. This seat is often called under the gun.
-
-Players can usually:
-
-- **Fold**: give up the hand
-- **Call**: match the current bet
-- **Raise**: increase the price to continue
-
-### 5. The flop, turn, and river are dealt
-
-After preflop betting ends, the dealer reveals the flop, then the turn, then the river. There is a betting round after each street.
+For your first session, the key idea is simple: **every time a new street appears, another betting round happens.**
 
 ![Texas Hold'em preflop step with blinds posted and two hole cards dealt](/images/rules-step2-preflop.webp "How to play Texas Hold'em step by step — preflop action after blinds")
 
-### 6. The best hand wins
-
-If more than one player remains after the river betting round, they show their cards. The best five-card poker hand wins the pot.
-
-If everyone folds to one player's bet before showdown, that player wins immediately and does not have to show their cards.
+For the detailed version, continue with [Texas Hold'em order of play from blinds to showdown](/en/blog/holdem-game-order).
 
 ---
 

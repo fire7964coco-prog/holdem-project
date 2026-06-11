@@ -16,7 +16,7 @@ export const POST: Post = {
   content: `
 Everyone who sits down to their first game of Texas Hold'em asks the same thing: *"Wait — whose turn is it, and when do I put money in?"* You know you get cards. What you don't know is when to bet, when more cards come out, and how the winner is actually decided.
 
-This guide answers all of it. You'll get the complete order of play in six clear stages, one full hand walked through card by card, all seven betting actions explained, the ten hand rankings, and the five mistakes that quietly drain beginners' chips. Read it once and you can take a seat today.
+This is the **order-of-play guide**: blinds, preflop, flop, turn, river, showdown, and who acts first at each point. If you are completely new and want the broader beginner package — rules, chips, hand rankings, first strategy, and a printable PDF — start with [Texas Hold'em rules for beginners](/en/blog/texas-holdem-rules-for-beginners). Then come back here for the detailed hand flow.
 
 ---
 

@@ -196,6 +196,13 @@ export default function TexasHoldem() {
           <h2 className="text-2xl font-serif font-bold text-foreground mb-4">텍사스 홀덤이란?</h2>
           <div className="space-y-3 text-muted-foreground leading-relaxed">
             <p>텍사스 홀덤은 전 세계에서 가장 많이 플레이되는 포커 게임입니다. 각 플레이어는 <strong className="text-foreground">홀 카드 2장</strong>을 받고, 테이블에 공개되는 <strong className="text-foreground">커뮤니티 카드 5장</strong>과 조합해 최강의 5장을 만드는 게임입니다.</p>
+            <p>
+              완전 초보라면 이 상세 규칙 페이지를 읽기 전에{" "}
+              <Link href="/blog/texas-holdem-rules-for-beginners" className="text-primary hover:underline font-semibold">
+                텍사스 홀덤 초보 규칙 PDF 가이드
+              </Link>
+              로 카드 순서·칩 세팅·기본 실수를 먼저 빠르게 잡아도 좋습니다.
+            </p>
             <p>이 가이드에서 배울 내용:</p>
             <ul className="space-y-1.5 ml-4">
               {["텍사스 홀덤 6단계 게임 진행 순서 (블라인드 → 쇼다운)", "베팅 옵션 7가지 — 폴드·체크·콜·벳·레이즈·리레이즈·올인", "족보(핸드 랭킹) 10가지 — 로열 플러시부터 하이카드까지", "초보자가 자주 하는 실수와 해결법"].map((item, i) => (

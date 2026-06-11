@@ -9,6 +9,7 @@
 
 ### 작업 내용
 - 신규 글 발행 및 영어 현지화: `texas-holdem-rules-for-beginners` (LowFruits 롱테일 키워드 기반 초보자 규칙 가이드)
+- 카니발라이제이션 방지: 초보 규칙 글 ↔ 게임 진행 순서 글 ↔ `/rules/texas-holdem` 역할 분리 및 내부링크 조정
 - 신규 글 발행 및 12개 언어 현지화 배포: `holdem-tournament-vs-cash-game`
 - 성능 수정: LCP 이미지 최적화 유지 + 하단 요약 이미지 슬롯 제거
 
