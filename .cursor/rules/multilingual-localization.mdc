@@ -1,0 +1,17 @@
+---
+description: Multilingual poker content localization rules
+globs: lib/posts-*/**/*.ts
+alwaysApply: false
+---
+
+# Multilingual Poker Localization
+
+- Translate for the target language's poker community, not word-for-word from Korean or English.
+- Use local poker terms first when they are natural and commonly searched.
+- If a localized term feels awkward, ambiguous, or less common, keep the English poker term or pair it with the local term.
+- Prefer search-native expressions for each market:
+  - Japanese: `キャッシュゲーム`, `リングゲーム`, `トーナメント`, `バイイン`, `バンクロール`, `ICM`, `インマネ`, `ショートスタック`.
+  - English: `cash game`, `tournament`, `buy-in`, `bankroll`, `ICM`, `bubble`, `final table`.
+- Do not over-translate poker jargon that players normally consume in English or katakana.
+- Preserve the same slug across languages so hreflang links stay valid.
+- Localize `seoTitle`, `desc`, `tldr`, headings, FAQ, and examples for the target market's search intent.
