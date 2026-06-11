@@ -8,6 +8,8 @@
 ## 2026-06-11
 
 ### 작업 내용
+- 영어 기준본 추가: `en/blog/holdem-tournament-vs-cash-game`
+- 영어 기준본 품질 보강: 실전 $1/$2 캐시게임·$50 토너먼트 예시, 버블 AKo ICM 예시, 초보 선택 프레임 추가
 - 초안 점검: `holdem-tournament-vs-cash-game` FAQ 재사용 이미지 제거
 - 하단 구성 정리: `keepImagesInBody` 적용으로 자동 `이 글 전체 요약` 이미지 슬롯 제거, 결론 테이블 제거
 - 이미지 alt 최적화: 본문 이미지 3개 alt를 장면·의도 중심으로 수정
@@ -18,6 +20,8 @@
 
 ### 특이사항
 - `ReadLints` 기준 수정 파일 린트 오류 없음
+- 영어 기준본은 SERP 경쟁 글 기준으로 칩 가치·블라인드·ICM·뱅크롤·초보 선택 기준 강화
+- `npm run check:intl-links` 통과 (25편, 12개 언어)
 
 ---
 

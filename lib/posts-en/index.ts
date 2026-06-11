@@ -1,13 +1,14 @@
 import type { Post } from "../posts";
 import { POST as holdemHandRankings } from "./holdem-hand-rankings";
 import { POST as holdemGameOrder } from "./holdem-game-order";
+import { POST as holdemTournamentVsCashGame } from "./holdem-tournament-vs-cash-game";
 
 /**
  * 영어(en) 블로그 포스트.
  * 한국어 원본을 기계 번역이 아닌 영어권 포커 문화에 맞게 현지화한 글만 등록한다.
  * 슬러그는 한국어 글과 동일하게 맞춰 hreflang 상호 링크가 성립하도록 한다.
  */
-export const EN_POSTS: Post[] = [holdemHandRankings, holdemGameOrder];
+export const EN_POSTS: Post[] = [holdemHandRankings, holdemGameOrder, holdemTournamentVsCashGame];
 
 export function getEnPost(slug: string): Post | undefined {
   return EN_POSTS.find((p) => p.slug === slug);
