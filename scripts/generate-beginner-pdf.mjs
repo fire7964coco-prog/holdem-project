@@ -219,6 +219,101 @@ const CONTENT = {
     },
     tip: "팁: 한 부씩 인쇄해 처음 몇 판은 테이블 옆에 두고 보세요.",
   },
+
+  ja: {
+    dir: "ltr",
+    compact: true,
+    fileName: "texas-holdem-rules-for-beginners-ja.pdf",
+    fontStack: "'Yu Gothic', 'Meiryo', 'Noto Sans JP', sans-serif",
+    brand: "holdemmaster.com",
+    title: "テキサスホールデム初心者ルール",
+    subtitle: "1枚で確認: 役の強さ、ゲームの流れ、基本アクション",
+    page2Title: "プレイ・ベット・勝ち方 - 初心者リファレンス",
+    footer1: "holdemmaster.com · テキサスホールデム初心者ルール",
+    footer2: "完全ガイド: holdemmaster.com/ja/blog/texas-holdem-rules-for-beginners",
+    pageLabel: (n, total) => `${total}ページ中 ${n}ページ`,
+    howItWorks: {
+      heading: "ゲームの仕組み",
+      paras: [
+        "各プレイヤーは自分だけが見られるホールカードを2枚受け取り、中央には共通カード5枚が開きます。",
+        "ホールカードと共通カードを組み合わせ、最も強い5枚の役を作ります - ホールカードは2枚、1枚、または0枚でも使えます。",
+        "ベットラウンドはプリフロップ、フロップ、ターン、リバーの4回。ショーダウンでは最強の5枚がポットを獲得します。",
+      ],
+    },
+    handRankings: {
+      heading: "役の強さ",
+      hint: "上ほど強い",
+      headers: ["", "役", "例", "意味"],
+      rows: [
+        ["ロイヤルフラッシュ", ["A", "K", "Q", "J", "10"], "spade", "最強の役"],
+        ["ストレートフラッシュ", ["9", "8", "7", "6", "5"], "heart", "同じスートで5連続"],
+        ["フォーカード", ["Q", "Q", "Q", "Q"], null, "同じ数字4枚"],
+        ["フルハウス", ["K", "K", "K", "7", "7"], null, "スリーカード + ペア"],
+        ["フラッシュ", ["A", "J", "8", "5", "2"], "diamond", "同じスート5枚"],
+        ["ストレート", ["10", "9", "8", "7", "6"], null, "スート混合で5連続"],
+        ["スリーカード", ["8", "8", "8"], null, "同じ数字3枚"],
+        ["ツーペア", ["A", "A", "9", "9"], null, "2つのペア"],
+        ["ワンペア", ["J", "J"], null, "同じ数字2枚"],
+        ["ハイカード", ["A", "K", "7", "4", "2"], null, "役なし"],
+      ],
+      tiebreak:
+        "同じ役なら高いカードから比較します。ベスト5枚が完全に同じならポットを分けます。",
+    },
+    bettingRounds: {
+      heading: "4つのベットラウンド",
+      steps: [
+        ["プリフロップ", "0枚", "ホールカード2枚で判断"],
+        ["フロップ", "3枚", "最初の共通カード"],
+        ["ターン", "+1枚", "4枚目の共通カード"],
+        ["リバー", "+1枚", "最後の共通カード"],
+      ],
+      showdown:
+        "ショーダウン: リバー後に2人以上残れば、最強の5枚がポットを獲得します。",
+    },
+    whoActsFirst: {
+      heading: "誰からアクションする?",
+      rows: [
+        ["プリフロップ:", "ビッグブラインドの左隣から始まります。"],
+        ["フロップ以降:", "ボタン左側の残っている最初のプレイヤーから。"],
+      ],
+      memory: "覚え方: フロップ前はBBの左。フロップ後はボタンの左。",
+    },
+    bettingActions: {
+      heading: "ベットアクション",
+      hint: "基本はこの4つ",
+      actions: [
+        ["フォールド", "手を降りる。"],
+        ["チェック", "ベットせず番を回す。"],
+        ["コール", "現在のベット額に合わせる。"],
+        ["ベット / レイズ", "チップを入れる、または上乗せする。"],
+      ],
+    },
+    startingHands: {
+      heading: "強いスターティングハンド",
+      hint: "初心者が扱いやすい",
+      line: "AA  KK  QQ  JJ   —   AK  AQ   —   TT-77   —   スーテッドブロードウェイ (KQs, QJs, JTs)",
+    },
+    chipSetup: {
+      heading: "簡単なホームゲーム用チップ設定",
+      hint: "合計200 = ブラインド1/2で100BB",
+      headers: ["チップ", "価値", "1人あたり", "合計"],
+      rows: [
+        ["白", "1", "20", "20"],
+        ["赤", "5", "16", "80"],
+        ["青", "25", "4", "100"],
+      ],
+    },
+    mistakes: {
+      heading: "初心者がよくするミス",
+      items: [
+        "ホールカード2枚を必ず使うと思い込む - 基準はベスト5枚。",
+        "フロップ後にアクション順が変わることを忘れる。",
+        "エース1枚だけで参加しすぎる - 弱いエースは負けやすい。",
+        "すべてのドローを追いかける - コールする価格が合う時だけ。",
+      ],
+    },
+    tip: "ヒント: 最初の数回は印刷してテーブル横に置いておくと安心です。",
+  },
 };
 
 // ── HTML 빌드 ───────────────────────────────────────────
@@ -399,11 +494,19 @@ function renderHtml(c, favicon, langCode = "en") {
 
   p.tip { font-size: 10px; font-weight: 700; color: var(--green); margin-top: 24px; }
 
+  /* 일본어처럼 문장이 길어지는 언어는 2페이지 구조를 유지하기 위해 살짝 압축 */
+  body.compact .body { padding-top: 26px; }
+  body.compact h2.sec { margin-top: 24px; }
+  body.compact p.lead { font-size: 10.1px; line-height: 1.65; margin-top: 11px; }
+  body.compact tbody td { font-size: 9.6px; padding: 8px 10px; }
+  body.compact .round-body { padding: 9px 10px 11px; }
+  body.compact p.showdown { font-size: 9.5px; margin-top: 12px; }
+
   /* 푸터 */
   .footer { position: absolute; left: 0.55in; right: 0.55in; bottom: 0.3in; border-top: 1px solid var(--border); padding-top: 8px; display: flex; justify-content: space-between; font-size: 8.5px; color: var(--gray); }
 </style>
 </head>
-<body>
+<body class="${c.compact ? "compact" : ""}">
   <!-- 페이지 1 -->
   <section class="page first">
     <div class="header">

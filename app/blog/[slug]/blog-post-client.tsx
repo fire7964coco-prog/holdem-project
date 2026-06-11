@@ -145,6 +145,21 @@ export function renderMarkdown(content: string): string {
       const a = imgAttrs(src);
       return `<figure class="my-4 sm:my-6 max-w-2xl mx-auto"><img src="${src}" alt="${alt}" width="1200" height="630" loading="${a.loading}" fetchpriority="${a.fetchpriority}" decoding="async" class="w-full h-auto rounded-xl border border-border transition-transform duration-200 hover:scale-[1.015] hover:shadow-lg" /></figure>`;
     })
+    .replace(
+      /\[([^\]]+)\]\((\/downloads\/[^)]+\.pdf)\)/g,
+      (_, label, href) =>
+        `<a href="${href}" class="group my-6 flex flex-col gap-4 rounded-2xl border border-primary/35 bg-gradient-to-br from-primary/15 via-primary/10 to-card p-5 no-underline shadow-[0_18px_50px_rgba(0,0,0,0.18)] transition-all hover:-translate-y-0.5 hover:border-primary/60 hover:shadow-[0_22px_70px_rgba(212,175,55,0.16)] sm:flex-row sm:items-center sm:justify-between">` +
+        `<span class="flex items-start gap-4">` +
+        `<span class="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl border border-primary/40 bg-primary/20 text-2xl shadow-inner">📄</span>` +
+        `<span>` +
+        `<span class="mb-1 block text-[11px] font-bold uppercase tracking-[0.18em] text-primary/90">PDF Cheat Sheet</span>` +
+        `<span class="block text-lg font-black leading-snug text-foreground">${label}</span>` +
+        `<span class="mt-1 block text-sm leading-relaxed text-muted-foreground">Printable PDF · quick table reference</span>` +
+        `</span>` +
+        `</span>` +
+        `<span class="inline-flex shrink-0 items-center justify-center rounded-full bg-primary px-5 py-3 text-sm font-black text-black transition-transform group-hover:scale-105">PDF ↓</span>` +
+        `</a>`
+    )
     .replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-primary underline underline-offset-2 hover:brightness-125 transition-all">$1 ↗</a>')
     .replace(/\[([^\]]+)\]\((?!https?:\/\/)([^)]+)\)/g, '<a href="$2" class="text-primary underline underline-offset-2 hover:brightness-125 transition-all">$1</a>')
     .replace(/^---$/gm, '<hr class="border-border my-8" />')
