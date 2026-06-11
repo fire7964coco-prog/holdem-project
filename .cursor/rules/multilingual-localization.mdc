@@ -18,6 +18,7 @@ alwaysApply: false
   - Arabic: `كاش جيم`, `بطولات البوكر`, `باي-إن`, `بانكرول`, `Bankroll`, `ICM`, `Bubble`, `Final Table`, `Short Stack`, `MTT`, `SNG`.
   - Turkish: `cash game`, `nakit oyun`, `turnuva pokeri`, `buy-in`, `bankroll yönetimi`, `ICM`, `bubble`, `final table`, `short stack`, `MTT`, `Sit & Go`.
   - Vietnamese: `Cash Game`, `Tournament`, `giải đấu`, `buy-in`, `bankroll`, `BRM`, `ICM`, `bubble`, `ITM`, `final table`, `MTT`, `SNG`.
+  - Malay: `cash game`, `tournament`, `kejohanan`, `buy-in`, `bankroll`, `ICM`, `bubble`, `final table`, `short stack`, `MTT`, `Sit & Go`.
   - English: `cash game`, `tournament`, `buy-in`, `bankroll`, `ICM`, `bubble`, `final table`.
 - Do not over-translate poker jargon that players normally consume in English or katakana.
 - Preserve the same slug across languages so hreflang links stay valid.
