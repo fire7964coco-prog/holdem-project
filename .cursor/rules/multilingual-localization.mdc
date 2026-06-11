@@ -14,6 +14,7 @@ alwaysApply: false
   - Simplified Chinese: `现金局`, `现金桌`, `锦标赛`, `买入`, `资金管理`, `Bankroll`, `ICM`, `泡沫期`, `钱圈`, `决赛桌`, `短筹码`.
   - Spanish: `cash games`, `partidas cash`, `torneos`, `buy-in`, `bankroll`, `ICM`, `burbuja`, `mesa final`, `stack corto`, `MTT`, `SNG`.
   - Indonesian: `cash game`, `permainan tunai`, `turnamen`, `buy-in`, `bankroll`, `ICM`, `bubble`, `gelembung`, `meja final`, `stack pendek`, `MTT`.
+  - German: `Cash Game`, `Turnierpoker`, `Buy-in`, `Bankroll-Management`, `ICM`, `Bubble`, `Final Table`, `Short Stack`, `MTT`, `SNG`.
   - English: `cash game`, `tournament`, `buy-in`, `bankroll`, `ICM`, `bubble`, `final table`.
 - Do not over-translate poker jargon that players normally consume in English or katakana.
 - Preserve the same slug across languages so hreflang links stay valid.
