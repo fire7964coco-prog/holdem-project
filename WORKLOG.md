@@ -8,30 +8,16 @@
 ## 2026-06-11
 
 ### 작업 내용
-- 스페인어 현지화 버전 추가: `es/blog/holdem-tournament-vs-cash-game`
-- 다국어 현지화 규칙 보강: 스페인어/LATAM 포커 검색 표현 예시 추가
-- 중국어 간체 현지화 버전 추가: `zh/blog/holdem-tournament-vs-cash-game`
-- 다국어 현지화 규칙 보강: 중국어 간체 포커 검색 표현 예시 추가
-- 일본어 현지화 버전 추가: `ja/blog/holdem-tournament-vs-cash-game`
-- 다국어 현지화 규칙 추가: 현지어 우선, 어색하거나 애매한 포커 용어는 영어 원단어 사용/병기
-- 영어 기준본 추가: `en/blog/holdem-tournament-vs-cash-game`
-- 영어 기준본 품질 보강: 실전 $1/$2 캐시게임·$50 토너먼트 예시, 버블 AKo ICM 예시, 초보 선택 프레임 추가
-- 성능 수정: `hideSummaryImageSlot` 추가로 첫 이미지는 LCP 최적화 제거 유지, 하단 요약 이미지 슬롯만 숨김
-- 초안 점검: `holdem-tournament-vs-cash-game` FAQ 재사용 이미지 제거
-- 하단 구성 정리: 자동 `이 글 전체 요약` 이미지 슬롯 제거, 결론 테이블 제거
-- 이미지 alt 최적화: 본문 이미지 3개 alt를 장면·의도 중심으로 수정
-- 카피/문장 다듬기: `seoTitle`, `desc`, 어색한 표현 일부 개선
+- 신규 글 발행: `holdem-tournament-vs-cash-game`
+- 다국어 현지화 추가: `en`, `ja`, `zh`, `es`, `id`
+- 성능 수정: `hideSummaryImageSlot`로 LCP 이미지 최적화 유지 + 하단 요약 이미지 슬롯 제거
+- 다국어 현지화 규칙 추가: 현지어 우선, 어색한 포커 용어는 영어 원단어 사용/병기
 
 ### 발행 현황
-- 총 포스트: 41개 (목표 50개까지 9개 남음)
+- 총 포스트: 42개 (목표 50개까지 8개 남음)
 
 ### 특이사항
-- `ReadLints` 기준 수정 파일 린트 오류 없음
-- 스페인어 SERP 기준 `cash games`, `partidas cash`, `torneos`, `buy-in`, `bankroll`, `ICM`, `burbuja`, `mesa final` 표현 반영
-- 중국어 SERP 기준 `现金局`, `现金桌`, `锦标赛`, `买入`, `Bankroll`, `ICM`, `泡沫期`, `钱圈` 표현 반영
-- 일본어 SERP 기준 `キャッシュゲーム`, `リングゲーム`, `トーナメント`, `バイイン`, `バンクロール`, `ICM`, `インマネ` 표현 반영
-- 영어 기준본은 SERP 경쟁 글 기준으로 칩 가치·블라인드·ICM·뱅크롤·초보 선택 기준 강화
-- `npm run check:intl-links` 통과 (28편, 12개 언어)
+- `WORKLOG.md`는 날짜별 작업 색인 용도로 짧게 유지하기로 정리
 
 ---
 
