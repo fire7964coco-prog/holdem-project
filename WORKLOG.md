@@ -5,6 +5,24 @@
 
 ---
 
+## 2026-06-12 (3)
+
+### 작업 내용
+- 신규 글 발행: `holdem-tournament-buy-in-cost` ("홀덤 대회 바이인·참가비 — 초보는 얼마짜리부터 나가야 할까?")
+  - `/tournaments` 필라의 비용/바이인 클러스터 글 — Google SERP 웹검색 후 롱테일 H2 설계
+  - 타깃 롱테일: 홀덤 대회 바이인 뜻, 홀덤 대회 참가비 평균, 홀덤펍 대회 참가비, APT 바이인, APPT 코리아 바이인, WSOP 참가비, 리엔트리 포함 총비용, 새틀라이트 비용
+  - 공식 숫자 반영: APT 인천 메인 KRW 2.5M, APT 제주 클래식 메인 KRW 2.3M, APPT 코리아 메인 KRW 1.8M/하이롤러 KRW 5M, WSOP 2026 $300~$250K·메인 $10K
+  - 양방향 내부링크: `/tournaments` 카드 추가, `holdem-tournament-how-to-enter`·`holdem-tournament-vs-cash-game`·WSOP·APT 제주 글에서 신규 글 연결
+
+### 발행 현황
+- 총 포스트: 52개 (목표 50개 초과 달성)
+
+### 특이사항
+- 카니발라이제이션 방지: 참가방법 글은 신청 절차, 바이인 글은 비용/예산 계산으로 역할 분리
+- 신규 이미지 생성 없이 기존 webp 재사용 (tournament-table-action)
+
+---
+
 ## 2026-06-12 (2)
 
 ### 작업 내용
