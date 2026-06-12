@@ -1402,7 +1402,7 @@ export default function Tournaments() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
             {[
-              { href: "/blog/holdem-tournament-how-to-enter", emoji: "🎫", title: "홀덤 대회 참가 방법", desc: "온라인 무료부터 WSOP까지 단계별 신청법" },
+              { href: "/blog/holdem-tournament-how-to-enter/", emoji: "🎫", title: "홀덤 대회 참가 방법", desc: "온라인 무료부터 WSOP까지 단계별 신청법" },
               { href: "/calculator", emoji: "🎲", title: "포커 확률 계산기", desc: "아웃츠·팟오즈·승률을 실시간 계산" },
               { href: "/blog/holdem-hand-rankings", emoji: "🃏", title: "족보 순위표", desc: "로열 플러시~하이카드 완벽 정리" },
               { href: "/blog/holdem-starting-hand-range", emoji: "📊", title: "스타팅 핸드 169가지", desc: "대회 핸드 선택 완전 가이드" },
