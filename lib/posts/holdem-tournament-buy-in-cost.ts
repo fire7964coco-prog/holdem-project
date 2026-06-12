@@ -261,6 +261,7 @@ WSOP Main Event 바이인은 $10,000입니다. 하지만 WSOP에는 $300, $500, 
 
 | 관련 글 | 연결 내용 |
 |---------|-----------|
+| [홀덤 대회 세금·신고](/blog/holdem-tournament-tax-guide/) | 상금 원천징수와 해외 대회 세금 |
 | [홀덤 대회 참가 방법](/blog/holdem-tournament-how-to-enter/) | 온라인 무료부터 WSOP까지 단계별 신청법 |
 | [홀덤 대회 완벽 가이드](/tournaments/) | 2026 국내·해외 대회 일정과 추천 루트 |
 | [홀덤 토너먼트 vs 캐시게임 차이](/blog/holdem-tournament-vs-cash-game/) | 토너먼트 칩과 돈의 차이 |

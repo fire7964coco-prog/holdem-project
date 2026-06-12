@@ -5,6 +5,23 @@
 
 ---
 
+## 2026-06-12 (4)
+
+### 작업 내용
+- 신규 글 발행: `holdem-tournament-tax-guide` ("홀덤 대회 세금 — 상금 받으면 신고해야 할까?")
+  - `/tournaments` 필라의 세금/신고 클러스터 글 — Google SERP + 국세청 기타소득 + IRS 비거주자 원천징수 자료 확인 후 작성
+  - 타깃 롱테일: 홀덤 대회 세금, 포커 상금 세금, 기타소득 4.4%, 홀덤 상금 신고, WSOP 세금 30%, 해외 포커 상금 한국 신고, 외국납부세액공제
+  - YMYL 안전 처리: 세무 조언 아님 명시, 국내/해외/미국 WSOP 케이스별로 단정 금지, 고액 상금은 세무사 상담 권고
+  - 양방향 내부링크: `/tournaments` 카드 추가, `holdem-tournament-buy-in-cost`·`holdem-tournament-how-to-enter`·`holdem-tournament-vs-cash-game`·WSOP·APT 제주 글에서 신규 글 연결
+
+### 발행 현황
+- 총 포스트: 53개 (목표 50개 초과 달성)
+
+### 특이사항
+- 이미지 최적화 확인: `public/images/tournament-trophy.webp` 70.9KB WebP (복잡한 트로피/칩 이미지 기준 80KB 이하)
+
+---
+
 ## 2026-06-12 (3)
 
 ### 작업 내용
