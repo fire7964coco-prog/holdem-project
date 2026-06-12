@@ -5,6 +5,24 @@
 
 ---
 
+## 2026-06-12 (5)
+
+### 작업 내용
+- 신규 글 발행: `holdem-tournament-schedule-check` ("홀덤 대회 일정 확인법 — 국내·해외 포커 토너먼트 어디서 볼까?")
+  - `/tournaments` 필라의 일정 신뢰성 클러스터 글 — Google SERP + WSOP·APT·APPT·EPT·WPT 공식 일정 + PokerNews·SoMuchPoker·The Hendon Mob 확인 후 작성
+  - 타깃 롱테일: 홀덤 대회 일정, 포커 대회 일정, 포커 토너먼트 일정, WSOP 일정, APT 일정, APPT 코리아 일정, EPT 일정, WPT 일정, PokerNews 일정
+  - 차별화: 단순 일정표 반복이 아니라 공식 사이트 우선순위, 종합 캘린더 활용법, 날짜·장소·바이인·레이트 레지 교차검증 체크리스트 제공
+  - 양방향 내부링크: `/tournaments` 카드 추가, `holdem-tournament-how-to-enter`·`holdem-tournament-buy-in-cost`·`holdem-tournament-tax-guide`·`holdem-tournament-vs-cash-game`에서 신규 글 연결
+
+### 발행 현황
+- 총 포스트: 54개 (목표 50개 초과 달성)
+
+### 특이사항
+- 신규 이미지 생성 없이 기존 `tournament-hall-wsop.webp` 재사용
+- `npm run build` 통과: 다국어 내부 링크 검사 통과, sitemap.xml 41 blog posts + 39 intl posts 반영
+
+---
+
 ## 2026-06-12 (4)
 
 ### 작업 내용

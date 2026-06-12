@@ -262,6 +262,7 @@ WSOP·EPT 등 해외에서 받은 포커 대회 상금은 원칙적으로 국내
 
 | 관련 글 | 연결 내용 |
 |---------|-----------|
+| [홀덤 대회 일정 확인법](/blog/holdem-tournament-schedule-check/) | WSOP·APT·APPT 공식 일정 교차검증 |
 | [홀덤 대회 세금·신고](/blog/holdem-tournament-tax-guide/) | 상금 수령 후 원천징수·신고 기준 |
 | [홀덤 대회 바이인·참가비](/blog/holdem-tournament-buy-in-cost/) | 홀덤펍·APT·WSOP 비용과 총예산 계산 |
 | [홀덤 대회 완벽 가이드](/tournaments/) | 국내·해외 대회 종류와 2026 일정 전체 지도 |

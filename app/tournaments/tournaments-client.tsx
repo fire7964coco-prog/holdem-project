@@ -227,7 +227,7 @@ const KOREA_HUB_2026 = [
       { name: "KPC x LPT Series", date: "1.03~1.18" },
       { name: "APT 제주 클래식", date: "1.30~2.08", hot: true },
       { name: "Triton Poker (ONE+SHR)", date: "3.05~4.01", hot: true },
-      { name: "APT 제주 (가을)", date: "9.25~10.04" },
+      { name: "APT 제주 (가을)", date: "9.25~10.07" },
       { name: "GOP 제주 (Olympus Return)", date: "12.04~12.13" },
     ],
   },
@@ -586,7 +586,7 @@ const SCHEDULE_2026 = [
     type: "domestic" as const,
     month: "9~10월",
     monthNum: 9,
-    dateRange: "2026.09.25~10.04",
+    dateRange: "2026.09.25~10.07",
     location: "한국 제주",
     buyin: "다양",
     emoji: "🍂",
@@ -1402,15 +1402,16 @@ export default function Tournaments() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
             {[
+              { href: "/blog/holdem-tournament-schedule-check/", emoji: "📅", title: "홀덤 대회 일정 확인법", desc: "WSOP·APT·APPT 공식 일정 교차검증" },
               { href: "/blog/holdem-tournament-tax-guide/", emoji: "🧾", title: "홀덤 대회 세금·신고", desc: "상금 원천징수·WSOP 30%·외국납부세액" },
               { href: "/blog/holdem-tournament-buy-in-cost/", emoji: "💰", title: "홀덤 대회 바이인·참가비", desc: "홀덤펍·APT·WSOP 비용과 총예산 계산" },
               { href: "/blog/holdem-tournament-how-to-enter/", emoji: "🎫", title: "홀덤 대회 참가 방법", desc: "온라인 무료부터 WSOP까지 단계별 신청법" },
               { href: "/calculator", emoji: "🎲", title: "포커 확률 계산기", desc: "아웃츠·팟오즈·승률을 실시간 계산" },
-              { href: "/blog/holdem-hand-rankings", emoji: "🃏", title: "족보 순위표", desc: "로열 플러시~하이카드 완벽 정리" },
-              { href: "/blog/holdem-starting-hand-range", emoji: "📊", title: "스타팅 핸드 169가지", desc: "대회 핸드 선택 완전 가이드" },
-              { href: "/blog/holdem-outs-calculation", emoji: "📐", title: "홀덤 아웃츠 계산법", desc: "드로우 상황별 승률 계산법" },
-              { href: "/blog/position-is-everything-in-holdem", emoji: "🎯", title: "포지션 전략 가이드", desc: "대회에서 포지션 활용하는 법" },
-              { href: "/blog/when-to-fold-preflop-holdem", emoji: "♠", title: "프리플랍 폴드 기준", desc: "대회 초반 핸드 선택 기준표" },
+              { href: "/blog/holdem-hand-rankings/", emoji: "🃏", title: "족보 순위표", desc: "로열 플러시~하이카드 완벽 정리" },
+              { href: "/blog/holdem-starting-hand-range/", emoji: "📊", title: "스타팅 핸드 169가지", desc: "대회 핸드 선택 완전 가이드" },
+              { href: "/blog/holdem-outs-calculation/", emoji: "📐", title: "홀덤 아웃츠 계산법", desc: "드로우 상황별 승률 계산법" },
+              { href: "/blog/position-is-everything-in-holdem/", emoji: "🎯", title: "포지션 전략 가이드", desc: "대회에서 포지션 활용하는 법" },
+              { href: "/blog/when-to-fold-preflop-holdem/", emoji: "♠", title: "프리플랍 폴드 기준", desc: "대회 초반 핸드 선택 기준표" },
             ].map((item) => (
               <Link key={item.href} href={item.href}>
                 <div className="bg-card border border-border rounded-xl p-4 hover:border-primary/40 transition-colors cursor-pointer flex items-start gap-3">
