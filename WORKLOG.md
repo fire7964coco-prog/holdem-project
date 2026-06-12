@@ -5,6 +5,22 @@
 
 ---
 
+## 2026-06-12 (2)
+
+### 작업 내용
+- 신규 글 발행: `holdem-tournament-how-to-enter` ("홀덤 대회 참가 방법 — 온라인 무료부터 WSOP까지 단계별 가이드")
+  - `/tournaments` 필라의 클러스터 글 (참가 방법 주제) — SERP Top10 분석 후 차별화: 단계별 로드맵 + 현장 실전 절차(E-E-A-T) + 위성/초대권 시스템 구체화
+  - 양방향 내부링크: `/tournaments` 가이드 카드 추가, `holdem-tournament-vs-cash-game`·`wsop-2025-tournament-guide`·`apt-jeju-classic-2026-guide` → 신규 글 역링크
+  - 히어로/본문 이미지는 기존 webp 재사용 (tournament-hall-wsop, tournament-table-action, wsop-satellite-tournament, tournament-trophy)
+
+### 발행 현황
+- 총 포스트: 51개 (목표 50개 초과 달성)
+
+### 특이사항
+- 카니발라이제이션 방지: 본 글은 "참가 방법(절차) 허브 클러스터", WSOP 글은 해외 메이저 전용, APT 제주 글은 특정 대회 후기로 역할 분리
+
+---
+
 ## 2026-06-12
 
 ### 작업 내용
