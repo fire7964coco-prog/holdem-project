@@ -40,9 +40,9 @@ Same hand. Completely different result. The only thing that changed was my seat.
 
 ## What Position Actually Means in Poker
 
-"Position" isn't about your physical chair — it's about **the order in which you commit chips relative to everyone else**. Act early and you're guessing into the dark. Act last and you've watched every opponent move before spending a single chip. The later you act, the more information you hold, and in poker, information is money.
+"Position" isn't about your physical chair — it's about ==the order in which you commit chips relative to everyone else==. Act early and you're guessing into the dark. Act last and you've watched every opponent move before spending a single chip. The later you act, the more information you hold, and in poker, ==information is money==.
 
-One number puts it in perspective: the Button earns approximately **8 big blinds per 100 hands more than UTG**, purely from acting last — before any edge from card selection is added.
+One number puts it in perspective: the Button earns approximately ==g:**8 big blinds per 100 hands more** than UTG==, purely from acting last — before any edge from card selection is added.
 
 ---
 
@@ -72,7 +72,7 @@ At a full nine-handed table, positions run clockwise from the dealer button. Pre
 
 The three seats directly left of the big blind. You act **first preflop** — before anyone has shown strength or weakness — and you'll be out of position on most postflop streets.
 
-The implication is mechanical: **play tight**. When you open-raise from UTG and get four callers, those players all have position on you for three streets. Hands that look playable anywhere else become a slow chip leak here.
+The implication is mechanical: ==r:**play tight**==. When you open-raise from UTG and get four callers, those players all have position on you for three streets. Hands that look playable anywhere else become ==r:a slow chip leak== here.
 
 **Opening range: ~12%** — premium pairs (JJ+), strong suited aces (AKs–AJs), offsuit broadway (AKo, AQo), suited broadways (KQs). That's roughly the top one in eight hands. For a full breakdown of which hands rank above which, see [Texas Hold'em hand rankings](/en/blog/holdem-hand-rankings).
 
@@ -157,11 +157,11 @@ Every strategic advantage in poker reduces to information. The button has more o
 
 You're **on the button** holding A♦ 9♦ — a complete miss. The small blind checks. The big blind checks. The UTG player who called preflop checks too.
 
-Three checks. You now know: nobody connected with this board. A bet wins the pot far more often than it loses. You fire. They fold.
+Three checks. You now know: nobody connected with this board. ==g:A bet wins the pot far more often than it loses.== You fire. They fold.
 
-Now flip it: **you're UTG with the same A♦ 9♦.** You act before everyone. You check. The button bets into you. Now you're calling with air against a player who just watched you check weakness. You fold — the button wins without having a better hand.
+Now flip it: **you're UTG with the same A♦ 9♦.** You act before everyone. You check. The button bets into you. Now you're calling with air against a player who just watched you check weakness. ==r:You fold — the button wins without having a better hand.==
 
-This plays out dozens of times per session. Over a year, the gap between BTN and UTG is worth thousands of chips in a live game, entirely from acting last.
+This plays out dozens of times per session. Over a year, ==the gap between BTN and UTG is worth thousands of chips in a live game==, entirely from acting last.
 
 ---
 
@@ -212,9 +212,10 @@ Here is the one-line practical guide for each position when the action folds aro
 
 ## Position Locks In Before the Flop — and Never Changes
 
-One thing beginners miss: **postflop position is set at the start of the hand and does not change.** If you're on the button, you act last on the flop, turn, and river — regardless of who bet or raised preflop. The small blind always acts first postflop, every street, even if they 3-bet preflop.
+> **The rule beginners miss**
+> Postflop position is set at the start of the hand and never changes. Button acts last on flop, turn, and river — no matter who 3-bet preflop. Small blind always acts first postflop, every single street. The positional edge you gain preflop compounds across all three remaining streets.
 
-This is the core reason "playing in position" is so powerful. When you call a raise from the button, you carry the positional advantage across three streets. When you call from the big blind, you're out of position for all three. That gap compounds.
+When you call a raise from the button, you carry that advantage across the entire hand. When you call from the big blind, you're out of position for all three streets. ==That gap compounds — and it's why the same hand, called from different seats, produces completely different results.==
 
 ---
 
