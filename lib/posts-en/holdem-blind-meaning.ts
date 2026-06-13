@@ -135,6 +135,8 @@ Because the big blind has already put in one full bet, it can profitably **call*
 
 ## Blind Steal: a Core Strategy
 
+![Chip stack falling toward the pot on a poker table — a blind steal push from the button](/images/holdem-blind-steal.webp)
+
 A **blind steal** is a raise made to win the blinds when the table has folded around to you. From the ==**button or cutoff**==, if everyone folds, only the SB and BB chips are out there — a raise that gets them both to fold wins those chips uncontested. When the blinds fight back with a re-raise, that's a **re-steal (3-bet)**.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
