@@ -2,6 +2,7 @@
 
 import type { ReactNode } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Clock, Tag, ChevronLeft, ChevronRight, ChevronDown, Share2, Link2 } from "lucide-react";
 import { FaXTwitter, FaFacebookF } from "react-icons/fa6";
 import { useState, useRef } from "react";
@@ -122,13 +123,13 @@ export default function IntlBlogPostClient({
 
               {post.image && (
                 <div className="mb-6 rounded-2xl overflow-hidden">
-                  <img
+                  <Image
                     src={post.image}
                     alt={post.imageAlt ?? post.title}
                     width={1200}
                     height={675}
                     className="w-full h-auto object-cover"
-                    loading="eager"
+                    priority
                   />
                 </div>
               )}

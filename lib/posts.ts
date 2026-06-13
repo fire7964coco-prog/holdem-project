@@ -32,6 +32,10 @@ export interface Post {
  hideSummaryImageSlot?: boolean;
  readTime: string;
  emoji: string;
+ /** 히어로 이미지 경로 (예: /images/holdem-positions-hero.webp) */
+ image?: string;
+ /** 이미지 alt 텍스트 */
+ imageAlt?: string;
  tags: string[];
  content: string;
 }

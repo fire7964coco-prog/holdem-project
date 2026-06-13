@@ -48,7 +48,7 @@ One number puts it in perspective: the Button earns approximately **8 big blinds
 
 ## The 9-Max Seat Map
 
-At a full nine-handed table, positions run clockwise from the dealer button. Preflop the action starts with UTG (left of the big blind). Postflop it restarts with the small blind.
+At a full nine-handed table, positions run clockwise from the dealer button. Preflop the action starts with UTG (left of the big blind). Postflop it restarts with the small blind. For the exact sequence of betting actions across all four streets, see [the order of play in a hand](/en/blog/holdem-game-order).
 
 | Seat | Abbr | Zone | Preflop | Postflop |
 |------|------|------|---------|----------|
@@ -74,7 +74,7 @@ The three seats directly left of the big blind. You act **first preflop** — be
 
 The implication is mechanical: **play tight**. When you open-raise from UTG and get four callers, those players all have position on you for three streets. Hands that look playable anywhere else become a slow chip leak here.
 
-**Opening range: ~12%** — premium pairs (JJ+), strong suited aces (AKs–AJs), offsuit broadway (AKo, AQo), suited broadways (KQs). That's roughly the top one in eight hands.
+**Opening range: ~12%** — premium pairs (JJ+), strong suited aces (AKs–AJs), offsuit broadway (AKo, AQo), suited broadways (KQs). That's roughly the top one in eight hands. For a full breakdown of which hands rank above which, see [Texas Hold'em hand rankings](/en/blog/holdem-hand-rankings).
 
 > **The UTG mistake:** raising K♥ 9♥ because it looks nice. In late position it's profitable; from UTG you face six players who can all dominate it before the flop even arrives. The hand has to be *good enough to play out of position against multiple opponents*.
 
@@ -149,6 +149,8 @@ The strategic consequence: **6-max UTG plays like 9-max Hijack**. You face only 
 
 ## Why the Button Is the Best Position in Poker
 
+![Dealer button and K♦ 7♠ 2♥ board on a poker table — the button fires a bluff after three checks](/images/holdem-button-dealer-board.webp)
+
 Every strategic advantage in poker reduces to information. The button has more of it than any other seat, and here's a concrete moment where it shows:
 
 **Board: K♦ 7♠ 2♥** — a dry flop that hits very few hands.
@@ -163,21 +165,48 @@ This plays out dozens of times per session. Over a year, the gap between BTN and
 
 ---
 
+## Starting Hand Quick Reference: Open or Fold?
+
+The same hand plays completely differently depending on your seat. Here is how ten representative hands change across positions when the action folds to you:
+
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
+
+| Hand | UTG | LJ | HJ | CO | BTN | SB |
+|------|-----|----|----|-----|-----|-----|
+| A♠ A♥ | ✅ Raise | ✅ Raise | ✅ Raise | ✅ Raise | ✅ Raise | ✅ Raise |
+| K♠ Q♠ | ✅ Raise | ✅ Raise | ✅ Raise | ✅ Raise | ✅ Raise | ✅ Raise |
+| J♥ J♦ | ✅ Raise | ✅ Raise | ✅ Raise | ✅ Raise | ✅ Raise | ✅ Raise |
+| A♣ J♣ | ✅ Raise | ✅ Raise | ✅ Raise | ✅ Raise | ✅ Raise | ✅ Raise |
+| T♠ 9♠ | ❌ Fold | ⚠️ Borderline | ✅ Raise | ✅ Raise | ✅ Raise | ✅ Raise |
+| 7♦ 7♣ | ❌ Fold | ✅ Raise | ✅ Raise | ✅ Raise | ✅ Raise | ✅ Raise |
+| A♥ 5♥ | ❌ Fold | ❌ Fold | ⚠️ Borderline | ✅ Raise | ✅ Raise | ✅ Raise |
+| K♠ 9♦ | ❌ Fold | ❌ Fold | ❌ Fold | ⚠️ Borderline | ✅ Raise | ✅ Raise |
+| 6♣ 5♣ | ❌ Fold | ❌ Fold | ❌ Fold | ✅ Raise | ✅ Raise | ⚠️ Borderline |
+| J♦ 7♦ | ❌ Fold | ❌ Fold | ❌ Fold | ❌ Fold | ✅ Raise | ❌ Fold |
+
+> **Key takeaway:** T9s folds from UTG but raises from CO. K9o never opens from early-middle position but is a standard button open. The hand didn't get better — your seat did.
+
+</div>
+
+---
+
+:::rangechart:::
+
 ## What to Actually Do from Each Seat
 
 Here is the one-line practical guide for each position when the action folds around to you:
 
-| Seat | The default play |
-|------|-----------------|
-| UTG | Open only premium hands; fold anything marginal without hesitation |
-| UTG+1 | Nearly identical to UTG; a small step wider on suited connectors |
-| UTG+2 | Start adding medium pairs and suited aces |
-| Lojack | Solid open range; 3-bet bluff if UTG has opened very tight |
-| Hijack | Steal when early seats fold; attack limpers aggressively |
-| Cutoff | Raise wide when it folds to you; pressure the blinds every time |
-| Button | When it folds to you, raise ~40% of hands; **never limp the button** |
-| Small Blind | Raise-or-fold; do not call — you act first on every postflop street |
-| Big Blind | Defend wider using pot odds; 3-bet bluff against late-position steals |
+| Seat | Open % | The default play |
+|------|--------|-----------------|
+| UTG | ~12% | Open only premium hands; fold anything marginal without hesitation |
+| UTG+1 | ~13% | Nearly identical to UTG; a small step wider on suited connectors |
+| UTG+2 | ~15% | Start adding medium pairs and suited aces |
+| Lojack | ~16% | Solid open range; 3-bet bluff if UTG has opened very tight |
+| Hijack | ~20% | Steal when early seats fold; attack limpers aggressively |
+| Cutoff | ~28% | Raise wide when it folds to you; pressure the blinds every time |
+| Button | ~40% | When it folds to you, raise ~40% of hands; **never limp the button** |
+| Small Blind | ~35% | Raise-or-fold; do not call — you act first on every postflop street |
+| Big Blind | Defend ~40% | Defend wider using pot odds; 3-bet bluff against late-position steals |
 
 ---
 
@@ -225,6 +254,27 @@ A. No. Postflop position is fixed at the beginning of the hand and never changes
 
 ---
 
+## Position Profitability at a Glance
+
+These BB/100 figures are approximate averages from large poker database studies — individual results vary, but the **ranking is consistent** across all player pools:
+
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
+
+| Position | Avg BB/100 (6-max) | Relative to BB |
+|----------|-------------------|----------------|
+| Button (BTN) | +8 to +12 | Best seat |
+| Cutoff (CO) | +4 to +6 | 2nd best |
+| Hijack (HJ) | +1 to +3 | Slightly above break-even |
+| UTG (6-max) | -1 to +1 | Near break-even |
+| Big Blind (BB) | -4 to -6 | Forced bet disadvantage |
+| Small Blind (SB) | -8 to -12 | Worst seat |
+
+> **Why is SB worse than BB?** Both post forced bets, but the SB acts *first postflop* every single street. The BB at least acts last preflop and second postflop — better than acting first in every spot. The SB has no structural edge anywhere.
+
+</div>
+
+---
+
 ## The Takeaways
 
 1. **Position = when you act.** Later is always better because you see more before spending chips — the button earns ~8 BB/100 more than UTG for this reason alone.
@@ -233,5 +283,32 @@ A. No. Postflop position is fixed at the beginning of the hand and never changes
 4. **Postflop position is locked in for the whole hand** — the positional edge you gain preflop by calling in position compounds across flop, turn, and river.
 
 New to the game? The [beginner's guide to Texas Hold'em rules](/en/blog/texas-holdem-rules-for-beginners) covers how a hand works from start to finish, and [the order of play](/en/blog/holdem-game-order) shows exactly when each seat acts across all four streets. For the forced bets posted by the two seats left of the button, the [small blind and big blind guide](/en/blog/holdem-blind-meaning) explains why they exist and how to play them well.
+
+---
+
+## Related Posts
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
+  <a href="/en/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Beginner Guide</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Texas Hold'em Rules for Beginners</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">How a full hand works from deal to showdown</div>
+  </a>
+  <a href="/en/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Order of Play</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Order of Play in Texas Hold'em</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Preflop → flop → turn → river action sequence</div>
+  </a>
+  <a href="/en/blog/holdem-blind-meaning" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Blinds</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Small Blind & Big Blind Explained</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Why they exist and how to play them correctly</div>
+  </a>
+  <a href="/en/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Hand Rankings</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Texas Hold'em Hand Rankings</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Royal flush down to high card — all 10 ranks</div>
+  </a>
+</div>
 `.trim(),
 };
