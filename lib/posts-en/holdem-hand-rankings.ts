@@ -184,7 +184,7 @@ One Pair|Pair rank → 3 kickers|+Kicker
 High Card|Compare all 5, high to low|+Kicker
 :::
 
-A **kicker** is simply a card that isn't part of your made hand but is still used to break ties. With A-A-K vs A-A-Q, both have aces — the king kicker wins. This is why pros care so much about the *quality* of their high cards, not just whether they paired.
+A **kicker** is simply a card that isn't part of your made hand but is still used to break ties. With A-A-K vs A-A-Q, both have aces — the king kicker wins. This is why pros care so much about the *quality* of their high cards, not just whether they paired. For every hand's tie rule in one place, see the [kicker and tie-breaker guide](/en/blog/holdem-tiebreak-rules); when the best five cards match exactly, the pot is [split](/en/blog/holdem-split-pot-rules).
 
 ---
 
@@ -285,7 +285,7 @@ The takeaway: learn the standard order once and it carries you through nearly ev
 
 **Q. Does a flush beat a straight in poker?**
 
-A. Yes. A flush is #5 and a straight is #6, so a flush always wins. It's higher because five cards of one suit are statistically harder to make than five in sequence.
+A. Yes. A flush is #5 and a straight is #6, so a flush always wins — see [why a flush beats a straight](/en/blog/holdem-flush-vs-straight). It's higher because five cards of one suit are statistically harder to make than five in sequence.
 
 **Q. Does a full house beat a flush?**
 

@@ -5,6 +5,17 @@
 
 ---
 
+## 2026-06-13
+
+### 작업 내용
+- 다국어 `<html lang>`/`dir` 서버 신호 개선: 루트 레이아웃 `<head>`에 페인트 직전 동기 부트스트랩 스크립트 추가 — URL 첫 세그먼트(`/en`,`/ar` 등)로 `lang`/`dir`을 하이드레이션 이전에 보정 (RTL 깜빡임·언어 신호·접근성). 매핑은 `lib/intl` 단일 소스에서 생성, `suppressHydrationWarning` 적용.
+- 영어(en) 섹션 필라-클러스터 보강: P1 족보 + P2 규칙 두 필라에 클러스터 4편 현지화 발행 — `holdem-flush-vs-straight`, `holdem-tiebreak-rules`, `holdem-blind-meaning`, `holdem-split-pot-rules`. EN SERP Top10 분석 후 작성, slug는 한국어와 동일(hreflang 상호 링크). 기존 EN 필라(`holdem-hand-rankings`, `texas-holdem-rules-for-beginners`)에서 신규 클러스터로 양방향 내부링크 연결. EN 포스트 4→8편.
+
+### 특이사항
+- `npm run build` 통과(127 페이지), `check:intl-links` 통과(43편), sitemap 다국어 39→43편 + 신규 EN slug에 ko/en/x-default hreflang 반영 확인. `<html lang>` 부트스트랩 스크립트 아랍어 정적 HTML head 주입 확인. `HtmlLangSync`는 클라이언트 라우트 이동용으로 유지.
+
+---
+
 ## 2026-06-12 (5)
 
 ### 작업 내용

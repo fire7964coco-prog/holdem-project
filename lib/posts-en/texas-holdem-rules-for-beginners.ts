@@ -44,7 +44,7 @@ This guide explains ==how to play Texas Hold'em for beginners== in plain English
 
 The basic rules of Texas Hold'em are simple once you see the table in order.
 
-Every hand starts with a dealer button. The two players to the left of the button post forced bets called the **small blind** and **big blind**. Then every player receives two cards face down. These are your hole cards.
+Every hand starts with a dealer button. The two players to the left of the button post forced bets called the **small blind** and **big blind** — if those feel confusing, see [what blinds are and how the small and big blind work](/en/blog/holdem-blind-meaning). Then every player receives two cards face down. These are your hole cards.
 
 After that, the dealer reveals five shared cards in the middle of the table:
 
@@ -241,7 +241,7 @@ Basic hand ranking from strongest to weakest:
 | 9 | One pair |
 | 10 | High card |
 
-If two players have the same type of hand, compare the highest relevant cards. If the best five cards are exactly the same, the pot is split.
+If two players have the same type of hand, compare the highest relevant cards — see the [kicker and tie-breaker rules](/en/blog/holdem-tiebreak-rules). If the best five cards are exactly the same, the pot is [split](/en/blog/holdem-split-pot-rules).
 
 ---
 

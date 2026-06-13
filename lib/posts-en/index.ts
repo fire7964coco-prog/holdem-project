@@ -3,6 +3,10 @@ import { POST as holdemHandRankings } from "./holdem-hand-rankings";
 import { POST as holdemGameOrder } from "./holdem-game-order";
 import { POST as holdemTournamentVsCashGame } from "./holdem-tournament-vs-cash-game";
 import { POST as texasHoldemRulesForBeginners } from "./texas-holdem-rules-for-beginners";
+import { POST as holdemFlushVsStraight } from "./holdem-flush-vs-straight";
+import { POST as holdemTiebreakRules } from "./holdem-tiebreak-rules";
+import { POST as holdemBlindMeaning } from "./holdem-blind-meaning";
+import { POST as holdemSplitPotRules } from "./holdem-split-pot-rules";
 
 /**
  * 영어(en) 블로그 포스트.
@@ -12,7 +16,11 @@ import { POST as texasHoldemRulesForBeginners } from "./texas-holdem-rules-for-b
 export const EN_POSTS: Post[] = [
   texasHoldemRulesForBeginners,
   holdemHandRankings,
+  holdemFlushVsStraight,
+  holdemTiebreakRules,
   holdemGameOrder,
+  holdemBlindMeaning,
+  holdemSplitPotRules,
   holdemTournamentVsCashGame,
 ];
 

@@ -1,10 +1,28 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
-import { Noto_Sans_KR } from "next/font/google";
+import { Noto_Sans_KR, DM_Sans } from "next/font/google";
 import { SiteHeader, SiteFooter, HtmlLangSync } from "@/components/site-chrome";
 import { BrushDefs } from "@/components/brush-defs";
 import "./globals.css";
 import { SITE } from "@/lib/site";
+import { SECONDARY_LOCALES, HTML_LANG, RTL_LOCALES } from "@/lib/intl";
+
+/**
+ * 페인트 직전 동기 실행: URL 첫 세그먼트(/en, /ar 등)를 보고 <html>의 lang/dir을
+ * 서버 기본값(ko/ltr)에서 해당 보조 언어로 즉시 보정한다.
+ * - 보조 언어 정적 HTML은 lang="ko"로 출력되지만, 이 스크립트가 React 하이드레이션
+ *   이전에 실행돼 크롤러가 렌더링하는 DOM·스크린리더·RTL 레이아웃에 올바른 언어 신호를 준다.
+ * - 매핑은 lib/intl 단일 소스에서 생성 → drift 방지.
+ */
+const LOCALE_LANG_MAP = Object.fromEntries(
+  SECONDARY_LOCALES.map((l) => [l, HTML_LANG[l]])
+);
+const RTL_MAP = Object.fromEntries(RTL_LOCALES.map((l) => [l, 1]));
+const LANG_BOOTSTRAP = `(function(){try{var s=location.pathname.split('/')[1];var L=${JSON.stringify(
+  LOCALE_LANG_MAP
+)};var R=${JSON.stringify(
+  RTL_MAP
+)};var e=document.documentElement;e.lang=L[s]||'ko';e.dir=R[s]?'rtl':'ltr';}catch(_){}})();`;
 
 /**
  * 모바일 LCP/TBT 최적화:
@@ -21,6 +39,19 @@ const notoSansKr = Noto_Sans_KR({
   display: "optional",
   preload: false,
   variable: "--font-noto-sans-kr",
+});
+
+/**
+ * DM Sans — 팩트풀니스 에디토리얼 감성 폰트
+ * 라틴 글자·숫자·헤딩에 적용 (한글은 Noto Sans KR 폴백)
+ * weight 800(ExtraBold)로 H2는 크기 아닌 굵기로 존재감
+ */
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  weight: ["400", "600", "800"],
+  display: "optional",
+  preload: false,
+  variable: "--font-dm-sans",
 });
 
 export const viewport: Viewport = {
@@ -75,8 +106,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="ko" className={notoSansKr.variable}>
+    <html lang="ko" dir="ltr" suppressHydrationWarning className={`${notoSansKr.variable} ${dmSans.variable}`}>
       <head>
+        {/* 보조 언어 경로에서 lang/dir을 페인트 직전 보정 (RTL 깜빡임·언어 신호) */}
+        <script dangerouslySetInnerHTML={{ __html: LANG_BOOTSTRAP }} />
         {/* Organization JSON-LD (사이트 전역) */}
         <script
           type="application/ld+json"

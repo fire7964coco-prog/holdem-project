@@ -12,11 +12,12 @@
  */
 
 @theme inline {
-  --font-sans: var(--font-noto-sans-kr), -apple-system, BlinkMacSystemFont,
+  /* DM Sans를 앞에 배치 → 라틴 글자·숫자는 팩트풀니스 감성 DM Sans 렌더
+     한글은 DM Sans에 없으므로 자동으로 Noto Sans KR 폴백              */
+  --font-sans: var(--font-dm-sans), var(--font-noto-sans-kr), -apple-system, BlinkMacSystemFont,
     'system-ui', Roboto, 'Helvetica Neue', 'Segoe UI',
     'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
-  /* font-serif 클래스도 Sans 로 매핑 — Noto Serif KR 제거 후 추가 다운로드 0 */
-  --font-serif: var(--font-noto-sans-kr), -apple-system, BlinkMacSystemFont,
+  --font-serif: var(--font-dm-sans), var(--font-noto-sans-kr), -apple-system, BlinkMacSystemFont,
     'system-ui', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
 
   /* ── 코어 시맨틱 토큰 ─────────────────────────────── */
@@ -104,8 +105,9 @@
 
   h1, h2, h3, h4, h5, h6 {
     @apply font-serif tracking-tight text-primary;
+    font-weight: 800;              /* DM Sans ExtraBold — 크기 아닌 굵기로 헤딩 존재감 */
     text-shadow: 0 2px 14px rgba(0, 0, 0, 0.55);
-    letter-spacing: -0.01em;
+    letter-spacing: -0.02em;
   }
 
   /* 포커스 링: 키보드 사용자에게만 보이고 디자인 깨지 않음 */
