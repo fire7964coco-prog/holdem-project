@@ -14,9 +14,9 @@ export const POST: Post = {
   emoji: "💰",
   tags: ["what are blinds in poker", "small blind big blind", "poker blinds explained", "big blind option", "blind defense", "blind steal", "texas holdem blinds"],
   content: `
-You sit down, the cards aren't even out yet, and the dealer says: "small blind, big blind." Two players push chips in — before anyone has seen a single card. If that made you freeze the first time, you're not alone.
+You sit down, the cards aren't even out yet, and the dealer says: "small blind, big blind." Two players push chips in — ==before anyone has seen a single card==. If that made you freeze the first time, you're not alone.
 
-Blinds are the engine that keeps poker moving, and once they click, a lot of the game's number-talk ("2BB raise," "20BB stack") suddenly makes sense. Here's everything in one quick read.
+Blinds are ==the engine that keeps poker moving==, and once they click, a lot of the game's number-talk ("2BB raise," "20BB stack") suddenly makes sense. Here's everything in one quick read.
 
 ---
 
@@ -40,7 +40,7 @@ Blinds are the engine that keeps poker moving, and once they click, a lot of the
 
 A **blind** is a bet you're forced to make *before* your cards arrive — you're betting "blind," sight unseen. There are two of them every hand.
 
-Why force anyone to pay? To keep the game alive. Without blinds, every player could fold and wait endlessly for premium hands; pots would be empty, bluffing would be pointless, and the game would stall. Two forced bets every hand guarantee there's always something to fight for.
+Why force anyone to pay? To keep the game alive. ==r:Without blinds, every player could fold and wait endlessly for premium hands==; pots would be empty, bluffing would be pointless, and the game would stall. ==g:Two forced bets every hand guarantee there's always something to fight for.==
 
 ---
 
@@ -69,11 +69,19 @@ Both blinds sit just left of the dealer button, and the button moves one seat cl
 
 ## The Big Blind Is the Table's Unit
 
-Searchers look up "big blind" on its own for a reason: it's not just a seat, it's the **measuring stick** for the entire game.
+Searchers look up "big blind" on its own for a reason: it's not just a seat, it's the ==**measuring stick** for the entire game==.
 
-- **"2BB raise"** = raise to twice the big blind
-- **"20BB stack"** = enough chips to post the big blind 20 times
-- **"BB defense"** = protecting the big blind you've already put in
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
+
+| BB expression | What it means | Real example ($1/$2 game) |
+|---------------|---------------|--------------------------|
+| **2BB raise** | Raise to twice the big blind | Raise to $4 |
+| **20BB stack** | 20 × the big blind in chips | $40 stack |
+| **3BB open** | Standard preflop raise size | Raise to $6 |
+| **BB defense** | Calling a raise from the BB seat | You've posted $2, facing $6 raise → call $4 more |
+| **100BB deep** | Full stack, standard cash game | $200 at a $1/$2 table |
+
+</div>
 
 Understand the big blind and the game's number-talk — raise sizes, stack depth, tournament pressure — all unlocks at once.
 
@@ -83,10 +91,25 @@ Understand the big blind and the game's number-talk — raise sizes, stack depth
 
 Stakes are written **SB/BB**. A "$1/$2" game means a $1 small blind and a $2 big blind; the small blind is the smaller number, the big blind the larger.
 
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
+
+| Stakes | Small Blind | Big Blind | Typical buy-in |
+|--------|-------------|-----------|----------------|
+| $0.5/$1 | $0.50 | $1 | $60–$100 |
+| $1/$2 | $1 | $2 | $100–$300 |
+| $2/$5 | $2 | $5 | $200–$500 |
+| $5/$10 | $5 | $10 | $500–$2,000 |
+| 25/50 (tournament) | 25 chips | 50 chips | Blind level 1 |
+| 100/200 (tournament) | 100 chips | 200 chips | Mid-level |
+
+> **The golden rule:** ==always check the stakes sign before sitting down== — some rooms run non-standard structures like $1/$3 or $2/$3.
+
+</div>
+
 ### Cash game vs tournament
 
-- **Cash game:** blinds stay **fixed**. Sit in a $1/$2 game and it's $1/$2 until you leave. (For a deeper comparison, see [tournaments vs cash games](/en/blog/holdem-tournament-vs-cash-game).)
-- **Tournament:** blinds **rise** on a timer (e.g. 25/50 → 50/100 → 100/200), so the pressure to act builds as the night goes on.
+- **Cash game:** blinds stay ==g:**fixed**==. Sit in a $1/$2 game and it's $1/$2 until you leave. (For a deeper comparison, see [tournaments vs cash games](/en/blog/holdem-tournament-vs-cash-game).)
+- **Tournament:** blinds ==r:**rise** on a timer== (e.g. 25/50 → 50/100 → 100/200), so the pressure to act builds as the night goes on.
 
 ### Antes and the BB ante
 
@@ -110,7 +133,18 @@ Because the big blind has already put in one full bet, it can profitably **call*
 
 ## Blind Steal: a Core Strategy
 
-A **blind steal** is a raise made to win the blinds when the table has folded around to you. From the **button or cutoff**, if everyone folds, only the SB and BB chips are out there — a raise that gets them both to fold wins those chips uncontested. Steals work best against tight blinds, with a sizing of around 2–2.5 BB. When the blinds fight back with a re-raise to protect their chips, that's a **re-steal (3-bet)**.
+A **blind steal** is a raise made to win the blinds when the table has folded around to you. From the ==**button or cutoff**==, if everyone folds, only the SB and BB chips are out there — a raise that gets them both to fold wins those chips uncontested. When the blinds fight back with a re-raise, that's a **re-steal (3-bet)**.
+
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
+
+| Position | Steal frequency | Sizing | Notes |
+|----------|----------------|--------|-------|
+| Button (BTN) | High — only SB/BB left | 2–2.5 BB | Best steal seat; always consider it |
+| Cutoff (CO) | Medium-high | 2.5 BB | One extra player behind vs BTN |
+| Small Blind | N/A to steal | — | You *are* the blind; focus on defense |
+| Big Blind | Defend or 3-bet | — | ==r:Never just call a steal — raise or fold== |
+
+</div>
 
 ---
 
@@ -149,5 +183,27 @@ A. Not quite — "the blinds" refers to both the small and big blind together, w
 3. Play the blinds carefully: **raise-or-fold the small blind**, **defend the big blind with pot odds**, and **steal** from late position when it folds to you.
 
 New to the game overall? The [beginner's guide to Texas Hold'em rules](/en/blog/texas-holdem-rules-for-beginners) covers the basics, [the order of play in a hand](/en/blog/holdem-game-order) shows exactly when each blind acts, and [poker positions explained](/en/blog/holdem-positions) covers how your seat — not just the blinds — shapes every decision.
+
+---
+
+## Related Posts
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
+  <a href="/en/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Positions</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Poker Table Positions Explained</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">UTG to button, 6-max vs 9-max, opening ranges</div>
+  </a>
+  <a href="/en/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Order of Play</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Order of Play in Texas Hold'em</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Preflop → flop → turn → river action sequence</div>
+  </a>
+  <a href="/en/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Beginner Guide</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Texas Hold'em Rules for Beginners</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">How a full hand works from deal to showdown</div>
+  </a>
+</div>
 `.trim(),
 };
