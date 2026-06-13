@@ -106,7 +106,7 @@ The easy memory trick:
 
 **Before the flop, look left of the big blind. After the flop, look left of the button.**
 
-That is why the button is such a powerful position. The button usually acts last on the flop, turn, and river, which means they get to see what everyone else does first. For a deeper explanation of why this matters, read button position strategy when the Korean source article is localized into English.
+That is why the button is such a powerful position. The button usually acts last on the flop, turn, and river, which means they get to see what everyone else does first. For a full breakdown of every seat name — UTG to button, 6-max vs 9-max, and what opening range each spot allows — see the [poker positions guide](/en/blog/holdem-positions).
 
 ---
 

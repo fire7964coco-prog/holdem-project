@@ -256,7 +256,7 @@ You can memorize the order of play and still bleed chips if you make these.
 
 ### 2. Ignoring position
 
-The closer you are to the button, the better — acting last lets you see what everyone else does before you decide. Play tight in early position and more aggressively in late position.
+The closer you are to the button, the better — acting last lets you see what everyone else does before you decide. Play tight in early position and more aggressively in late position. For the full seat map and opening ranges per position, see [poker positions explained: UTG to button](/en/blog/holdem-positions).
 
 ### 3. Chasing draws blindly
 

@@ -7,6 +7,7 @@ import { POST as holdemFlushVsStraight } from "./holdem-flush-vs-straight";
 import { POST as holdemTiebreakRules } from "./holdem-tiebreak-rules";
 import { POST as holdemBlindMeaning } from "./holdem-blind-meaning";
 import { POST as holdemSplitPotRules } from "./holdem-split-pot-rules";
+import { POST as holdemPositions } from "./holdem-positions";
 
 /**
  * 영어(en) 블로그 포스트.
@@ -21,6 +22,7 @@ export const EN_POSTS: Post[] = [
   holdemGameOrder,
   holdemBlindMeaning,
   holdemSplitPotRules,
+  holdemPositions,
   holdemTournamentVsCashGame,
 ];
 

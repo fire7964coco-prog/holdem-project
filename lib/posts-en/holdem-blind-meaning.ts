@@ -148,6 +148,6 @@ A. Not quite — "the blinds" refers to both the small and big blind together, w
 2. The **big blind is the table's unit** — raises, stacks, and pressure are all measured in BBs.
 3. Play the blinds carefully: **raise-or-fold the small blind**, **defend the big blind with pot odds**, and **steal** from late position when it folds to you.
 
-New to the game overall? The [beginner's guide to Texas Hold'em rules](/en/blog/texas-holdem-rules-for-beginners) covers the basics, and [the order of play in a hand](/en/blog/holdem-game-order) shows exactly when each blind acts.
+New to the game overall? The [beginner's guide to Texas Hold'em rules](/en/blog/texas-holdem-rules-for-beginners) covers the basics, [the order of play in a hand](/en/blog/holdem-game-order) shows exactly when each blind acts, and [poker positions explained](/en/blog/holdem-positions) covers how your seat — not just the blinds — shapes every decision.
 `.trim(),
 };
