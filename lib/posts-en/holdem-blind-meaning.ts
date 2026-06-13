@@ -11,7 +11,7 @@ export const POST: Post = {
   updated: "2026-06-13",
   keepImagesInBody: true,
   readTime: "9 min",
-  emoji: "⚡",
+  emoji: "💰",
   tags: ["what are blinds in poker", "small blind big blind", "poker blinds explained", "big blind option", "blind defense", "blind steal", "texas holdem blinds"],
   content: `
 You sit down, the cards aren't even out yet, and the dealer says: "small blind, big blind." Two players push chips in — before anyone has seen a single card. If that made you freeze the first time, you're not alone.
