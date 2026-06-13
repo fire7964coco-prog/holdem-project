@@ -12,6 +12,8 @@ export const POST: Post = {
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🎯",
+  image: "/images/holdem-positions-hero.webp",
+  imageAlt: "Top-down view of a professional poker table showing 9 player positions with chip stacks and a gold dealer button",
   tags: [
     "poker positions explained",
     "UTG poker",

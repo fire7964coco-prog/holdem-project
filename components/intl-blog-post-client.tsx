@@ -120,7 +120,18 @@ export default function IntlBlogPostClient({
                 )}
               </div>
 
-              <div className="text-6xl mb-6">{post.emoji}</div>
+              {post.image && (
+                <div className="mb-6 rounded-2xl overflow-hidden">
+                  <img
+                    src={post.image}
+                    alt={post.imageAlt ?? post.title}
+                    width={1200}
+                    height={675}
+                    className="w-full h-auto object-cover"
+                    loading="eager"
+                  />
+                </div>
+              )}
 
               <h1 className="text-3xl md:text-4xl font-serif font-black text-foreground leading-tight mb-4">
                 {post.title}
