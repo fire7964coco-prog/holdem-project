@@ -2,7 +2,6 @@
 
 import type { ReactNode } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { Clock, Tag, ChevronLeft, ChevronRight, ChevronDown, Share2, Link2 } from "lucide-react";
 import { FaXTwitter, FaFacebookF } from "react-icons/fa6";
 import { useState, useRef } from "react";
@@ -123,14 +122,18 @@ export default function IntlBlogPostClient({
 
               {post.image && (
                 <div className="mb-6 rounded-2xl overflow-hidden">
-                  <Image
+                  {/* Plain <img> so preload URL in server component matches exactly.
+                      next/image rewrites src to /_next/image?... which breaks the preload hint. */}
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
                     src={post.image}
                     alt={post.imageAlt ?? post.title}
                     width={1200}
                     height={675}
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
-                    className="w-full h-auto object-cover"
-                    priority
+                    fetchPriority="high"
+                    loading="eager"
+                    decoding="async"
+                    className="w-full h-auto object-cover rounded-2xl"
                   />
                 </div>
               )}
