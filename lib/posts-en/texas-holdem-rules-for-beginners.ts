@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "texas-holdem-rules-for-beginners",
   title: "How to Play Texas Hold'em for Beginners — Rules, Chips, Hands, and First Strategy",
   seoTitle: "New to Hold'em? Start Here — Texas Hold'em Rules for Beginners",
-  desc: "Confused by blinds, chips, turns, and who acts first? Learn Texas Hold'em rules for beginners with step-by-step examples, home-game chip setup, and a printable cheat sheet.",
+  desc: "Confused by blinds and action order? Texas Hold'em rules for beginners — step-by-step flow, home-game chip setup, starting hands, and a printable cheat sheet.",
   tldr: "Texas Hold'em gives each player 2 hole cards, uses 5 community cards, and the best 5-card poker hand wins after four betting rounds.",
   category: "초보 가이드",
   date: "2026-06-11",
@@ -12,6 +12,8 @@ export const POST: Post = {
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
+  image: "/images/rules-texas-holdem.webp",
+  imageAlt: "Texas Hold'em table layout for beginners — blinds posted, hole cards dealt, community cards in the center",
   tags: [
     "texas holdem rules for beginners",
     "how to play texas holdem for beginners",
@@ -48,6 +50,8 @@ Every hand starts with a dealer button. The two players to the left of the butto
 
 After that, the dealer reveals five shared cards in the middle of the table:
 
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
+
 | Stage | Cards revealed | What happens |
 |------|----------------|--------------|
 | Preflop | 0 community cards | Players act using only their 2 hole cards |
@@ -56,7 +60,9 @@ After that, the dealer reveals five shared cards in the middle of the table:
 | River | 1 final card | Fifth community card appears |
 | Showdown | No new cards | Remaining players compare best 5-card hands |
 
-You do **not** need to use both of your hole cards. You can use two, one, or even zero hole cards if the board itself makes the best hand.
+</div>
+
+==r:You do **not** need to use both of your hole cards.== You can use two, one, or even zero hole cards if the board itself makes the best hand.
 
 For example:
 
@@ -83,7 +89,7 @@ This article gives you the **beginner version of the flow** so you can sit down 
 | 5 | Flop, turn, river | Community cards come 3, then 1, then 1 |
 | 6 | Showdown | Remaining players compare the best 5-card hand |
 
-For your first session, the key idea is simple: **every time a new street appears, another betting round happens.**
+For your first session, the key idea is simple: ==**every time a new street appears, another betting round happens.**==
 
 ![Texas Hold'em preflop step with blinds posted and two hole cards dealt](/images/rules-step2-preflop.webp "How to play Texas Hold'em step by step — preflop action after blinds")
 
@@ -104,9 +110,9 @@ This is one of the most common beginner questions because the answer changes aft
 
 The easy memory trick:
 
-**Before the flop, look left of the big blind. After the flop, look left of the button.**
+==**Before the flop, look left of the big blind. After the flop, look left of the button.**==
 
-That is why the button is such a powerful position. The button usually acts last on the flop, turn, and river, which means they get to see what everyone else does first. For a full breakdown of every seat name — UTG to button, 6-max vs 9-max, and what opening range each spot allows — see the [poker positions guide](/en/blog/holdem-positions).
+That is why ==g:the button is such a powerful position==. ==The button usually acts last on the flop, turn, and river==, which means they get to see what everyone else does first. For a full breakdown of every seat name — UTG to button, 6-max vs 9-max, and what opening range each spot allows — see the [poker positions guide](/en/blog/holdem-positions).
 
 ---
 
@@ -124,14 +130,18 @@ For beginners, keep the numbers simple. You do not need five different chip colo
 
 For a first home game, this setup works well:
 
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
+
 | Chip color | Value | Chips per player | Total value |
 |-----------|-------|------------------|-------------|
 | White | 1 | 20 | 20 |
 | Red | 5 | 16 | 80 |
 | Blue | 25 | 4 | 100 |
-| Total |  | 40 chips | 200 |
+| **Total** | | **40 chips** | **200** |
 
-With 200 chips and 1/2 blinds, every player starts with 100 big blinds. That gives beginners enough room to fold, call, raise, and see flops without going broke too quickly.
+</div>
+
+With 200 chips and 1/2 blinds, ==g:every player starts with 100 big blinds==. That gives beginners enough room to fold, call, raise, and see flops ==without going broke too quickly==.
 
 ---
 
@@ -149,7 +159,7 @@ If you are playing a small home cash game, choose a buy-in that everyone is comf
 | $0.05 / $0.10 | $10 to $20 | Still small, but decisions feel real |
 | $0.10 / $0.25 | $25 to $50 | Better after players know the rules |
 
-Do not start with stakes that make people nervous. Nervous beginners do not learn faster. They just fold too much, call too emotionally, or argue about rules.
+==r:Do not start with stakes that make people nervous.== Nervous beginners do not learn faster. They just fold too much, call too emotionally, or argue about rules.
 
 For online practice, use free tables until you can explain the action order without thinking. Then move up slowly.
 
@@ -184,7 +194,9 @@ In a casual home game, the most important thing is consistency. Announce the str
 
 Once the rules make sense, your first strategy should be boring and solid.
 
-Most beginners lose chips because they play too many hands, chase weak draws, or call just because they are curious. Your first goal is not to bluff everyone. Your first goal is to stop donating chips.
+==r:Most beginners lose chips because they play too many hands, chase weak draws, or call just because they are curious.== Your first goal is not to bluff everyone. ==g:Your first goal is to stop donating chips.==
+
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Beginner rule | Why it works |
 |--------------|--------------|
@@ -193,6 +205,8 @@ Most beginners lose chips because they play too many hands, chase weak draws, or
 | Fold more from early position | Too many players act after you |
 | Respect big river bets | Beginners under-bluff many river spots |
 | Do not chase every draw | A draw needs the right price to continue |
+
+</div>
 
 Good beginner starting hands include:
 
@@ -301,8 +315,30 @@ There are 1,326 exact two-card combinations, but players usually group them into
 
 Texas Hold'em is easier to learn when you separate rules from strategy.
 
-First, learn the flow: blinds, two hole cards, five community cards, four betting rounds, and best five-card hand. Then learn position, starting hands, and basic pot decisions.
+First, ==learn the flow==: blinds, two hole cards, five community cards, four betting rounds, and best five-card hand. ==g:Then learn position, starting hands, and basic pot decisions.==
 
 For your next step, review [Texas Hold'em hand rankings](/en/blog/holdem-hand-rankings), practice with the [starting hand chart](/hand-chart/), and use the [poker odds calculator](/calculator/) when you want to understand why a call is profitable or not.
+
+---
+
+## Related Posts
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
+  <a href="/en/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Game Flow</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Texas Hold'em Order of Play</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Full hand flow — preflop to showdown with real examples</div>
+  </a>
+  <a href="/en/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Hand Rankings</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Poker Hand Rankings — Best to Worst</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">All 10 hands with odds, examples, and board puzzles</div>
+  </a>
+  <a href="/en/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Positions</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Poker Positions: UTG to Button</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Why the button wins — seat map and opening ranges</div>
+  </a>
+</div>
 `.trim(),
 };
