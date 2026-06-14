@@ -19,7 +19,9 @@ import { POST as holdemTournamentHowToEnter } from "./holdem-tournament-how-to-e
 import { POST as holdemTournamentBuyInCost } from "./holdem-tournament-buy-in-cost";
 import { POST as holdemTournamentTaxGuide } from "./holdem-tournament-tax-guide";
 import { POST as holdemTournamentScheduleCheck } from "./holdem-tournament-schedule-check";
+import { POST as holdemMasters7thGuide } from "./holdem-masters-7th-guide";
 export const NEW_POSTS: Post[] = [
+  holdemMasters7thGuide,
   holdemTournamentScheduleCheck,
   holdemTournamentTaxGuide,
   holdemTournamentBuyInCost,

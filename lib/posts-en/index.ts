@@ -10,6 +10,8 @@ import { POST as holdemSplitPotRules } from "./holdem-split-pot-rules";
 import { POST as holdemPositions } from "./holdem-positions";
 import { POST as holdemBettingActions } from "./holdem-betting-actions";
 import { POST as holdemStartingHandsChart } from "./holdem-starting-hands-chart";
+import { POST as holdemShowdownRules } from "./holdem-showdown-rules";
+import { POST as holdemReadingTheBoard } from "./holdem-reading-the-board";
 
 /**
  * 영어(en) 블로그 포스트.
@@ -28,6 +30,8 @@ export const EN_POSTS: Post[] = [
   holdemTournamentVsCashGame,
   holdemBettingActions,
   holdemStartingHandsChart,
+  holdemShowdownRules,
+  holdemReadingTheBoard,
 ];
 
 export function getEnPost(slug: string): Post | undefined {

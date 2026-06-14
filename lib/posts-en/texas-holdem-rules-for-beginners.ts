@@ -342,6 +342,11 @@ For your next step, review [Texas Hold'em hand rankings](/en/blog/holdem-hand-ra
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Check, Call, Raise, Fold Explained</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">When to use each action + decision table</div>
   </a>
+  <a href="/en/blog/holdem-showdown-rules/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Showdown</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Showdown Rules: Who Shows First?</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Last aggressor, mucking, slow rolling, and all-in rules</div>
+  </a>
 </div>
 `.trim(),
 };

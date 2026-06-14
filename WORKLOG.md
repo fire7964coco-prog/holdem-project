@@ -5,6 +5,42 @@
 
 ---
 
+## 2026-06-15
+
+### 작업 내용
+- 영문 클러스터 2개 신규 작성 (배포는 다음 날 예정): `holdem-showdown-rules`, `holdem-reading-the-board`
+- 한국어 시즌 포스트 신규 작성: `holdem-masters-7th-guide` (WPL 제7회 홀덤 마스터스 2026 완전 가이드)
+- 각 포스트: SERP 분석 → 롱테일 H2 구조 → 히어로 이미지 생성 → amber 테이블 + 하이라이트 + FAQ + 관련글
+- 필라 포스트 양방향 내부링크 업데이트 (texas-holdem-rules-for-beginners, holdem-hand-rankings)
+
+### 발행 현황
+- 한국어 포스트: 30개 (총 포스트 32개 예정, 일부 배포 전)
+- 영문 포스트: 13개
+
+---
+
+## 2026-06-14 (2차)
+
+### 작업 내용
+- 영문 클러스터 2개 신규 발행: `holdem-betting-actions`, `holdem-starting-hands-chart`
+- 각 포스트: SERP 분석 → 롱테일 H2 구조 → 히어로 이미지 생성(42/44KB) → amber 테이블 + 하이라이트 + FAQ + Related Posts
+- 필라 포스트 양방향 내부링크 업데이트 (texas-holdem-rules-for-beginners, holdem-hand-rankings)
+
+### 발행 현황
+- 영문 포스트: 11개 (총 포스트 29개, 목표 50개까지 21개 남음)
+
+---
+
+## 2026-06-14
+
+### 작업 내용
+- 영문 포스트 시각화 개선 완료: `texas-holdem-rules-for-beginners` (hero image, desc 160자, 하이라이트, amber 테이블 3개, Related Posts)
+
+### 발행 현황
+- 총 포스트: 29개 (목표 50개까지 21개 남음)
+
+---
+
 ## 2026-06-13
 
 ### 작업 내용

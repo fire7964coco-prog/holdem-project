@@ -276,7 +276,7 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- 블로그 포스트 (41편) -->
+  <!-- 블로그 포스트 (42편) -->
 
   <url>
     <loc>https://www.holdemmaster.com/blog/ak-offsuit-strategy</loc>
@@ -413,6 +413,13 @@
   <url>
     <loc>https://www.holdemmaster.com/blog/holdem-hand-rankings-confusing</loc>
     <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.holdemmaster.com/blog/holdem-masters-7th-guide</loc>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -624,7 +631,17 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- 다국어 블로그 포스트 (44편) -->
+  <!-- 다국어 블로그 포스트 (48편) -->
+
+  <url>
+    <loc>https://www.holdemmaster.com/en/blog/holdem-betting-actions</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-betting-actions" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-betting-actions" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-betting-actions" />
+  </url>
 
   <url>
     <loc>https://www.holdemmaster.com/en/blog/holdem-blind-meaning</loc>
@@ -699,6 +716,26 @@
   </url>
 
   <url>
+    <loc>https://www.holdemmaster.com/en/blog/holdem-reading-the-board</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-reading-the-board" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-reading-the-board" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-reading-the-board" />
+  </url>
+
+  <url>
+    <loc>https://www.holdemmaster.com/en/blog/holdem-showdown-rules</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-showdown-rules" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-showdown-rules" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-showdown-rules" />
+  </url>
+
+  <url>
     <loc>https://www.holdemmaster.com/en/blog/holdem-split-pot-rules</loc>
     <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
@@ -706,6 +743,16 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-split-pot-rules" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-split-pot-rules" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-split-pot-rules" />
+  </url>
+
+  <url>
+    <loc>https://www.holdemmaster.com/en/blog/holdem-starting-hands-chart</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-starting-hands-chart" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-starting-hands-chart" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-starting-hands-chart" />
   </url>
 
   <url>
