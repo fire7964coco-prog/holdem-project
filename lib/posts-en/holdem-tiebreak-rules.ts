@@ -58,8 +58,8 @@ A ==**kicker**== is a card in your best five that isn't part of the made hand bu
 
 | Player | Best Five | Top Kicker | Result |
 |--------|-----------|-----------|--------|
-| A | A♠ A♦ ==g:K♦== Q♠ 7♥ | ==g:K== | **Wins** |
-| B | A♥ A♦ Q♠ ==r:9♣== 7♥ | Q (board's card!) | Loses |
+| A | A♠ A♦ ==g:K♦== Q♠ 7♥ | ==g:K (hole card)== | **Wins** |
+| B | A♥ A♦ ==r:Q♠== 9♣ 7♥ | ==r:Q (board card — 9 doesn't play)== | Loses |
 
 </div>
 
@@ -177,7 +177,7 @@ Lock in the order with the [complete hand rankings](/en/blog/holdem-hand-ranking
   <a href="/en/blog/holdem-split-pot-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Split Pot</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">When Is a Pot Split?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">5 chop situations and 3 things players wrongly think wins</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">5 chop situations and 3 things players wrongly think win</div>
   </a>
 </div>
 `.trim(),
