@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "holdem-game-order",
   title: "How to Play Texas Hold'em: The Order of Play From Blinds to Showdown",
   seoTitle: "Lost on When to Bet? — Texas Hold'em Order of Play Explained",
-  desc: "New to Hold'em and freezing on when it's your turn to bet? It happens to everyone. Here's the full order of play — blinds, preflop, flop, turn, river, and showdown — walked through one real hand so you can sit down and play today.",
+  desc: "Freeze on 'whose turn is it?' at Hold'em? Here's the full order of play — preflop, flop, turn, river, showdown — with a real hand walked through step by step.",
   tldr: "A hand of Texas Hold'em runs: post blinds → deal two hole cards → preflop → flop (3 cards) → turn (1 card) → river (1 card) → showdown, with four betting rounds in total.",
   category: "초보 가이드",
   date: "2026-06-10",
@@ -12,9 +12,11 @@ export const POST: Post = {
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎬",
+  image: "/images/blog-holdem-game-flow.webp",
+  imageAlt: "Texas Hold'em order of play diagram — blinds, preflop, flop, turn, river, showdown all six stages",
   tags: ["how to play texas holdem", "texas holdem rules", "poker order of play", "preflop flop turn river", "poker betting rounds", "texas holdem for beginners", "how a poker hand works", "poker showdown"],
   content: `
-Everyone who sits down to their first game of Texas Hold'em asks the same thing: *"Wait — whose turn is it, and when do I put money in?"* You know you get cards. What you don't know is when to bet, when more cards come out, and how the winner is actually decided.
+Everyone who sits down to their first game of Texas Hold'em asks the same thing: ==r:*"Wait — whose turn is it, and when do I put money in?"*== You know you get cards. What you don't know is when to bet, when more cards come out, and how the winner is actually decided.
 
 This is the **order-of-play guide**: blinds, preflop, flop, turn, river, showdown, and who acts first at each point. If you are completely new and want the broader beginner package — rules, chips, hand rankings, first strategy, and a printable PDF — start with [Texas Hold'em rules for beginners](/en/blog/texas-holdem-rules-for-beginners). Then come back here for the detailed hand flow.
 
@@ -42,14 +44,18 @@ Before any cards come out, two things set the table: the **dealer button** and t
 
 The **dealer button (the "button," marked D)** is a round disc that marks who is "on the deal" for that hand. Even with a house dealer, the button decides the betting order, and it moves one seat clockwise after every hand.
 
-The **blinds** are forced bets posted before the cards are dealt. Without them, everyone could just check and fold for free; the blinds put money in the middle and give players a reason to compete.
+The **blinds** are forced bets posted before the cards are dealt. Without them, everyone could just check and fold for free; ==g:the blinds put money in the middle and give players a reason to compete==.
+
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Blind | Position | Example |
 |------|------|------|
 | Small Blind (SB) | First seat left of the button | 1,000 |
 | Big Blind (BB) | Second seat left of the button | 2,000 |
 
-The blinds aren't just an entry fee — they're the starting point of position and strategy.
+</div>
+
+The blinds aren't just an entry fee — ==they're the starting point of position and strategy==.
 
 ---
 
@@ -64,7 +70,7 @@ Action starts to the left of the big blind and moves clockwise. On your turn you
 - **Raise** — bet more than the big blind to put pressure on opponents.
 - **3-bet** — a raise over someone else's raise. A strong-hand signal.
 
-Most beginners play almost every hand "just to see a flop." That's the single most expensive habit in poker. **Good players fold most of their hands preflop and play only around 15–25% of them.**
+==r:Most beginners play almost every hand "just to see a flop." That's the single most expensive habit in poker.== ==g:**Good players fold most of their hands preflop and play only around 15–25% of them.**==
 
 ### Solid starting hands for beginners
 
@@ -99,7 +105,7 @@ The turn is a strategically heavy street:
 - What do your opponent's preflop and flop actions say about their range?
 - Is this hand worth taking all the way to the river?
 
-If you check passively on the turn and then suddenly fire a big bet on the river, observant opponents read weakness. **With a strong hand, bet the turn to build the pot** while your opponent is still willing to call.
+==r:If you check passively on the turn and then suddenly fire a big bet on the river, observant opponents read weakness.== ==g:**With a strong hand, bet the turn to build the pot**== while your opponent is still willing to call.
 
 ---
 
@@ -135,6 +141,8 @@ Showdown rules:
 
 ## The Whole Order at a Glance
 
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
+
 | Stage | What happens | Community cards | Betting? |
 |------|------|------|------|
 | Blinds | SB and BB post forced bets | 0 | Forced |
@@ -143,6 +151,8 @@ Showdown rules:
 | Turn | One more community card | 4 | ✅ |
 | River | Final community card | 5 | ✅ |
 | Showdown | Best five cards compared → winner | 5 | — |
+
+</div>
 
 ### ⚡ A one-line memory hook for each street
 
@@ -201,7 +211,7 @@ B checks, A bets **15,000** (about half pot), B calls.
 
 **Winner: B** — three of a kind beats two pair.
 
-The lesson: when the river paired A's hand to two pair, it *felt* like the winner — but B had a set from the flop the entire time. **Reading the whole board, not just your own improvement, is the heart of Hold'em.**
+The lesson: ==r:when the river paired A's hand to two pair, it *felt* like the winner — but B had a set from the flop the entire time.== ==g:**Reading the whole board, not just your own improvement, is the heart of Hold'em.**==
 
 ---
 
@@ -210,6 +220,8 @@ The lesson: when the river paired A's hand to two pair, it *felt* like the winne
 ![The poker betting actions — check, call, fold, bet, raise, re-raise, all-in](/images/holdem-betting-options-guide.webp "Every betting action you can take in Texas Hold'em")
 
 Here is every action available at the table — the part beginners mix up most.
+
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Action | What it does | When it's available |
 |------|------|------|
@@ -221,13 +233,17 @@ Here is every action available at the table — the part beginners mix up most.
 | Re-raise (3-bet) | Raise over a raise | When there's a raise to you |
 | All-in | Push all your chips in | Anytime |
 
-**Important:** you cannot check preflop, because the big blind is already a live bet. Checking only becomes possible from the flop onward.
+</div>
+
+==r:**Important:** you cannot check preflop==, because the big blind is already a live bet. ==Checking only becomes possible from the flop onward.==
 
 ---
 
 ## The 10 Poker Hand Rankings You Must Know
 
 To win at showdown, you need to instantly know which hand beats which. This is the **hand ranking** order.
+
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Rank | Hand | Example | Frequency |
 |------|------|------|------|
@@ -241,6 +257,8 @@ To win at showdown, you need to instantly know which hand beats which. This is t
 | 8 | Two Pair | J♠ J♥ 8♦ 8♣ A♠ | Common |
 | 9 | One Pair | K♠ K♥ 7♦ 4♣ 2♠ | Very common |
 | 10 | High Card | A♠ Q♥ 8♦ 5♣ 2♠ | Very common |
+
+</div>
 
 Want the full breakdown — including how kickers and ties decide a winner? See the complete guide to [poker hand rankings](/en/blog/holdem-hand-rankings).
 
@@ -319,10 +337,32 @@ Four: preflop, flop, turn, and river. The blinds are forced bets, and the showdo
 
 ## The 3 Things to Remember
 
-1. **The order:** blinds → preflop → flop (3) → turn (1) → river (1) → showdown, with four betting rounds.
-2. **The reads:** on every street, judge both what you have now and what you can still make — and watch the whole board, not just your own hand.
-3. **The discipline:** fold most hands preflop, respect position, and only bet big when your story makes sense.
+1. ==**The order:**== blinds → preflop → flop (3) → turn (1) → river (1) → showdown, with ==four betting rounds==.
+2. ==**The reads:**== on every street, judge both what you have now and what you can still make — and watch the whole board, not just your own hand.
+3. ==g:**The discipline:**== fold most hands preflop, respect position, and only bet big when your story makes sense.
 
 Learn the sequence cold, drill it with free games, and you'll never again freeze wondering whose turn it is. You're ready to sit down.
+
+---
+
+## Related Posts
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
+  <a href="/en/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Beginner Guide</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Texas Hold'em Rules for Beginners</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Full rules, chips, hand rankings + printable PDF</div>
+  </a>
+  <a href="/en/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Hand Rankings</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Poker Hand Rankings — Best to Worst</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">All 10 hands with odds, examples, and board puzzles</div>
+  </a>
+  <a href="/en/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Positions</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Poker Positions: UTG to Button</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Seat map, opening ranges, and why position wins</div>
+  </a>
+</div>
 `.trim(),
 };
