@@ -29,8 +29,6 @@ You need to know what the blinds are, when it is your turn, how the five communi
 
 This guide explains ==how to play Texas Hold'em for beginners== in plain English, with the exact order of play, beginner chip setup, dealing basics, and a printable cheat sheet you can keep beside the table.
 
-![Texas Hold'em table showing blinds, hole cards, and community cards for beginners](/images/rules-texas-holdem.webp "Texas Hold'em rules for beginners — table layout with blinds and community cards")
-
 ### Quick answer
 
 - Each player gets **2 private hole cards**
