@@ -113,26 +113,8 @@ export function IntlBlogArticle({ locale, slug }: { locale: SecondaryLocale; slu
 
   const graph = [articleSchema, breadcrumbSchema, ...(faqSchema ? [faqSchema] : [])];
 
-  // Detect LCP image: post.image field takes priority, then first markdown image
-  const lcpImageSrc = (() => {
-    if (post.image) return post.image;
-    const m = post.content.match(/!\[[^\]]*\]\(([^)\s]+)/);
-    return m ? m[1] : null;
-  })();
-
   return (
     <>
-      {/* Preload the LCP hero image from the server component so the browser
-          fetches it immediately — before JS hydrates the client component. */}
-      {lcpImageSrc && (
-        <link
-          rel="preload"
-          as="image"
-          href={lcpImageSrc}
-          // @ts-expect-error fetchpriority is valid HTML but not yet in React types
-          fetchpriority="high"
-        />
-      )}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@graph": graph }) }}
