@@ -339,6 +339,8 @@ A. Yes. Three of a kind is #7 and two pair is #8, so trips win. Two pair only be
 
 Learn the order in an afternoon, drill the confusing pairs, and run the suits → straights → pairs scan on every board. Do that and you'll never again push the pot the wrong way.
 
+Once you know the rankings, the natural next step is knowing which hands to start with — use the [Texas Hold'em starting hands chart by position](/en/blog/holdem-starting-hands-chart/) to see exactly which hole cards to play from each seat.
+
 ---
 
 ## Related Posts
@@ -363,6 +365,11 @@ Learn the order in an afternoon, drill the confusing pairs, and run the suits �
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Beginner Guide</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Texas Hold'em Rules for Beginners</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Full rules from deal to showdown</div>
+  </a>
+  <a href="/en/blog/holdem-starting-hands-chart/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Starting Hands</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Starting Hands Chart by Position</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Which hole cards to play from UTG to button</div>
   </a>
 </div>
 `.trim(),
