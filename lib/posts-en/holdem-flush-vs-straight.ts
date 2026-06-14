@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "holdem-flush-vs-straight",
   title: "Does a Flush Beat a Straight? The Math, the Misreads, and Every Tie Rule",
   seoTitle: "Played a Straight, Lost to a Flush? — Why a Flush Beats a Straight",
-  desc: "Your straight felt unbeatable — then a flush quietly took the pot. Here's why a flush always beats a straight in Texas Hold'em, the exact odds behind it, the three board spots that fool players, and how flush and straight ties are broken.",
+  desc: "Straight felt unbeatable — then a flush took the pot? A flush always beats a straight. Here's why, 3 board spots that fool players, and every tie-break rule.",
   tldr: "A flush (five cards of one suit, ~0.197%) always beats a straight (five in sequence, ~0.392%) in Texas Hold'em — because a flush is about twice as hard to make.",
   category: "초보 가이드",
   date: "2026-06-13",
