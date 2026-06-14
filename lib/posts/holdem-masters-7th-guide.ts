@@ -50,10 +50,18 @@ WPL 앱만 있으면 오늘 저녁부터 예선 새틀라이트에 도전할 수
 
 </div>
 
-<a href="/images/wpl-7th-poster.webp" target="_blank" rel="noopener" style="display:block;cursor:zoom-in">
-  <img src="/images/wpl-7th-poster.webp" alt="WPL 제7회 홀덤 마스터스 공식 포스터 — ONE TICKET THE ULTIMATE PRIZE" style="width:100%;border-radius:12px" />
-</a>
-<p style="font-size:12px;color:var(--muted-foreground);margin-top:6px">이미지 출처: WPL 공식 (<a href="https://wpl.winjoygame.com" target="_blank" rel="noopener">wpl.winjoygame.com</a>) · 클릭하면 원본 크기로 볼 수 있습니다</p>
+<div style="display:flex;flex-direction:column;gap:0;border-radius:14px;overflow:hidden;margin:24px 0">
+  <img src="/images/wpl-7th-schedule-1.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 1" style="width:100%;display:block" />
+  <img src="/images/wpl-7th-schedule-2.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 2" style="width:100%;display:block" />
+  <img src="/images/wpl-7th-schedule-3.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 3" style="width:100%;display:block" />
+  <img src="/images/wpl-7th-schedule-4.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 4" style="width:100%;display:block" />
+  <img src="/images/wpl-7th-schedule-5.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 5" style="width:100%;display:block" />
+  <img src="/images/wpl-7th-schedule-6.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 6" style="width:100%;display:block" />
+  <img src="/images/wpl-7th-schedule-7.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 7" style="width:100%;display:block" />
+  <img src="/images/wpl-7th-schedule-8.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 8" style="width:100%;display:block" />
+  <img src="/images/wpl-7th-schedule-9.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 9" style="width:100%;display:block" />
+</div>
+<p style="font-size:12px;color:var(--muted-foreground);margin-top:4px">이미지 출처: WPL 공식 (<a href="https://wpl.winjoygame.com" target="_blank" rel="noopener">wpl.winjoygame.com</a>)</p>
 
 6회 대비 가장 크게 바뀐 점은 ==g:참가 구조 단순화==입니다. 이전에는 초대권 종류가 여럿 있었지만, 이번 7회는 **초대권 1장으로 메인 이벤트 DAY1 직행**. 복잡하게 생각할 필요 없이 새틀라이트만 통과하면 됩니다.
 
