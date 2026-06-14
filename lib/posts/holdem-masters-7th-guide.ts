@@ -51,15 +51,15 @@ WPL 앱만 있으면 오늘 저녁부터 예선 새틀라이트에 도전할 수
 </div>
 
 <div style="display:flex;flex-direction:column;gap:0;border-radius:14px;overflow:hidden;margin:24px 0">
-  <img src="/images/wpl-7th-schedule-1.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 1" style="width:100%;display:block" />
-  <img src="/images/wpl-7th-schedule-2.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 2" style="width:100%;display:block" />
-  <img src="/images/wpl-7th-schedule-3.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 3" style="width:100%;display:block" />
-  <img src="/images/wpl-7th-schedule-4.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 4" style="width:100%;display:block" />
-  <img src="/images/wpl-7th-schedule-5.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 5" style="width:100%;display:block" />
-  <img src="/images/wpl-7th-schedule-6.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 6" style="width:100%;display:block" />
-  <img src="/images/wpl-7th-schedule-7.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 7" style="width:100%;display:block" />
-  <img src="/images/wpl-7th-schedule-8.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 8" style="width:100%;display:block" />
-  <img src="/images/wpl-7th-schedule-9.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 9" style="width:100%;display:block" />
+  <img src="/images/wpl-7th-schedule-1.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 1" width="900" height="1270" style="width:100%;display:block" />
+  <img src="/images/wpl-7th-schedule-2.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 2" width="900" height="1270" loading="lazy" style="width:100%;display:block" />
+  <img src="/images/wpl-7th-schedule-3.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 3" width="900" height="1270" loading="lazy" style="width:100%;display:block" />
+  <img src="/images/wpl-7th-schedule-4.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 4" width="900" height="1270" loading="lazy" style="width:100%;display:block" />
+  <img src="/images/wpl-7th-schedule-5.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 5" width="900" height="1270" loading="lazy" style="width:100%;display:block" />
+  <img src="/images/wpl-7th-schedule-6.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 6" width="900" height="1270" loading="lazy" style="width:100%;display:block" />
+  <img src="/images/wpl-7th-schedule-7.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 7" width="900" height="1270" loading="lazy" style="width:100%;display:block" />
+  <img src="/images/wpl-7th-schedule-8.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 8" width="900" height="1270" loading="lazy" style="width:100%;display:block" />
+  <img src="/images/wpl-7th-schedule-9.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 9" width="900" height="1270" loading="lazy" style="width:100%;display:block" />
 </div>
 <p style="font-size:12px;color:var(--muted-foreground);margin-top:4px">이미지 출처: WPL 공식 (<a href="https://wpl.winjoygame.com" target="_blank" rel="noopener">wpl.winjoygame.com</a>)</p>
 
