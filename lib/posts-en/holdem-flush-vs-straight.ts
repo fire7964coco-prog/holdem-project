@@ -12,11 +12,13 @@ export const POST: Post = {
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "⚡",
+  image: "/images/holdem-flush-vs-straight-hero.webp",
+  imageAlt: "Flush hand (A J 6 2 spades) facing a straight (9 8 7 5 mixed suits) at showdown with dealer button between them",
   tags: ["does a flush beat a straight", "flush vs straight", "poker hand rankings", "why does a flush beat a straight", "flush tie breaker", "straight tie breaker", "poker odds"],
   content: `
-You slide your straight forward, sure it's good — then your opponent quietly turns over a flush and the dealer pushes the pot the other way. If you've felt that exact sting, you're in good company: "does a flush beat a straight" is one of the most-searched poker questions on the planet.
+You slide your straight forward, sure it's good — then your opponent quietly turns over a flush and ==r:the dealer pushes the pot the other way==. If you've felt that exact sting, you're in good company: "does a flush beat a straight" is one of the most-searched poker questions on the planet.
 
-The short answer is yes, every time. The interesting part is *why* — and the three board spots where players still get it wrong live at the table.
+The short answer is ==g:yes, every time==. The interesting part is *why* — and the three board spots where players still get it wrong live at the table.
 
 ---
 
@@ -27,7 +29,9 @@ The short answer is yes, every time. The interesting part is *why* — and the t
 
 ## A Flush Beats a Straight — Where They Sit
 
-Here's the hierarchy around the two hands people confuse most. The flush sits one rung above the straight, and that never changes in standard Hold'em.
+Here's the hierarchy around the two hands people confuse most. ==The flush sits one rung above the straight, and that never changes in standard Hold'em.==
+
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Rank | Hand | Example |
 |------|------|------|
@@ -44,6 +48,8 @@ Here's the hierarchy around the two hands people confuse most. The flush sits on
 
 Want the whole ladder with odds and examples? Start with the [full poker hand rankings guide](/en/blog/holdem-hand-rankings). This article zooms in on the flush-versus-straight matchup.
 
+</div>
+
 ---
 
 ## Why a Flush Wins — Proven With the Math
@@ -52,25 +58,31 @@ Hand strength in poker is decided by one thing: **how hard the hand is to make**
 
 Count the five-card combinations possible from a 52-card deck and the order falls out on its own:
 
-| Hand | Combinations | Probability |
-|------|------|------|
-| Four of a Kind | 624 | 0.024% |
-| Full House | 3,744 | 0.144% |
-| **Flush** | **5,108** | **0.197%** |
-| **Straight** | **10,200** | **0.392%** |
-| Three of a Kind | 54,912 | 2.11% |
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-A straight has roughly **twice** as many ways to come together as a flush, so it shows up twice as often — which makes it the weaker hand.
+| Hand | Combinations | Probability | Verdict |
+|------|------|------|------|
+| Four of a Kind | 624 | 0.024% | Beats flush |
+| Full House | 3,744 | 0.144% | Beats flush |
+| **Flush** | **5,108** | **0.197%** | **Beats straight ✅** |
+| **Straight** | **10,200** | **0.392%** | **Loses to flush ❌** |
+| Three of a Kind | 54,912 | 2.11% | Loses to straight |
+
+</div>
+
+A straight has roughly ==r:**twice** as many ways to come together as a flush==, so it shows up twice as often — which makes it the weaker hand.
 
 ### Why this feels backwards
 
-A straight only needs five ranks in a row, and **the suits don't matter**. That freedom creates a huge number of combinations. A flush is the opposite: every one of the five cards has to share **the same suit**, and only one of four suits can do it at a time. Far fewer ways to get there means the flush is rarer — and rarer always wins.
+A straight only needs five ranks in a row, and ==**the suits don't matter**==. That freedom creates a huge number of combinations. A flush is the opposite: every one of the five cards has to share ==**the same suit**==, and only one of four suits can do it at a time. ==g:Far fewer ways to get there means the flush is rarer — and rarer always wins.==
 
 > **At the table:** if you hold a flush draw and your opponent is drawing to a straight, you're in great shape. Even when **both** draws complete, your flush beats their straight at showdown.
 
 ---
 
 ## 3 Board Spots That Still Fool Players
+
+![Board showing 8♥ 7♥ 6♥ 5♠ A♣ — three hearts on board means a flush is live even if you hold a straight](/images/holdem-flush-vs-straight-board.webp "Three suited cards on board — flush draw live against your straight")
 
 Knowing the rule isn't the same as reading it live. These are the three spots where the mistake actually happens.
 
@@ -125,13 +137,15 @@ Queen tops jack, so A wins. If the top cards match, the straights are identical 
 
 ## When Both Happen at Once: the Straight Flush
 
+![9♥ 8♥ 7♥ 6♥ 5♥ — a straight flush in hearts, the #2 hand in poker](/images/holdem-flush-vs-straight-sf.webp "Straight flush — five hearts in sequence, beaten only by a royal flush")
+
 If your five cards are **both** suited **and** in sequence, you don't have "a flush plus a straight" — you have a **straight flush (#2)**, beaten only by a royal flush. So the moment your flush cards are also connected (like 9♥ 8♥ 7♥ 6♥ 5♥), you're holding one of the rarest hands in the game.
 
 ---
 
 ## The One Real Exception: Short Deck
 
-In **Short Deck (6+) Hold'em**, the 2s through 5s are removed from the deck. With fewer cards, a flush becomes *harder* to make than a full house — so in that format the ranking shifts and a **flush beats a full house**. The principle never changes: the rarer hand wins. Only the deck changed. In standard Texas Hold'em with a full 52-card deck, a flush beats a straight and loses to a full house, every time.
+In **Short Deck (6+) Hold'em**, the 2s through 5s are removed from the deck. With fewer cards, a flush becomes *harder* to make than a full house — so in that format the ranking shifts and a ==r:**flush beats a full house**==. The principle never changes: ==the rarer hand wins==. Only the deck changed. In standard Texas Hold'em with a full 52-card deck, ==g:a flush beats a straight and loses to a full house, every time==.
 
 ---
 
@@ -166,5 +180,27 @@ A. No. One is always ranked above the other, so the flush simply wins — a spli
 3. Watch the board: **three of one suit** means a flush is live, and a suited *and* connected hand is a straight flush.
 
 Lock in the order with the [complete hand rankings](/en/blog/holdem-hand-rankings), learn how close hands are decided in the [tie-breaker and kicker guide](/en/blog/holdem-tiebreak-rules), and if you're brand new, the [beginner's guide to Texas Hold'em rules](/en/blog/texas-holdem-rules-for-beginners) ties it all together.
+
+---
+
+## Related Posts
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
+  <a href="/en/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Hand Rankings</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Poker Hand Rankings — Best to Worst</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">All 10 hands with odds, examples, and board puzzles</div>
+  </a>
+  <a href="/en/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Tiebreaker</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Kicker & Tie-Breaker Rules</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Same flush or straight — who wins the pot?</div>
+  </a>
+  <a href="/en/blog/holdem-split-pot-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Split Pot</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">When Is a Pot Split?</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">5 chop situations including identical flushes</div>
+  </a>
+</div>
 `.trim(),
 };
