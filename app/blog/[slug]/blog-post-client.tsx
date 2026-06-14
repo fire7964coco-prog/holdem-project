@@ -165,9 +165,9 @@ export function renderMarkdown(content: string): string {
     .replace(
       /^\*\*Q\. (.+?)\*\*\n\nA\. ([\s\S]+?)(?=\n\n\*\*Q\.|\n\n---|\n\n##|$)/gm,
       (_, q, a) =>
-        `<div style="margin-bottom:12px;border:1px solid rgba(212,175,55,0.22);border-radius:12px;overflow:hidden">` +
-        `<div style="padding:11px 16px;background:rgba(212,175,55,0.10);border-bottom:1px solid rgba(212,175,55,0.18);display:flex;gap:10px;align-items:flex-start">` +
-        `<span style="flex-shrink:0;width:22px;height:22px;border-radius:50%;background:rgba(212,175,55,0.2);border:1px solid rgba(212,175,55,0.5);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#d4af37;margin-top:1px">Q</span>` +
+        `<div style="margin-bottom:12px;border:2px solid rgba(234,88,12,0.55);border-radius:12px;overflow:hidden">` +
+        `<div style="padding:11px 16px;background:rgba(234,88,12,0.10);border-bottom:2px solid rgba(234,88,12,0.30);display:flex;gap:10px;align-items:flex-start">` +
+        `<span style="flex-shrink:0;width:22px;height:22px;border-radius:50%;background:rgba(234,88,12,0.20);border:1.5px solid rgba(234,88,12,0.70);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#ea580c;margin-top:1px">Q</span>` +
         `<span style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.5">${q.trim()}</span>` +
         `</div>` +
         `<div style="padding:12px 16px 12px 48px;font-size:13.5px;color:var(--muted-foreground);line-height:1.7">${a.trim()}</div>` +
