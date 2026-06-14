@@ -12,11 +12,13 @@ export const POST: Post = {
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🃏",
+  image: "/images/holdem-hand-rankings-hero.webp",
+  imageAlt: "Royal Flush — 10 J Q K A of spades on a poker table with chip stacks and dealer button",
   tags: ["poker hand rankings", "texas holdem hands", "poker hands order", "what beats what in poker", "poker kicker", "poker tie breaker", "best poker hands", "holdem hand chart"],
   content: `
-You're heads-up on the river. You made your flush, you're sure it's good — and then the dealer pushes the pot the other way. The board was paired, your opponent had a full house, and you never saw it coming.
+You're heads-up on the river. You made your flush, you're sure it's good — and then ==r:the dealer pushes the pot the other way==. The board was paired, your opponent had a full house, and you never saw it coming.
 
-Almost every "I thought I won" moment comes down to one thing: not reading the **poker hand rankings** fast enough. The order itself takes five minutes to learn. Reading it live, under pressure, with a paired or coordinated board — that's the part nobody explains well.
+Almost every "I thought I won" moment comes down to one thing: ==not reading the **poker hand rankings** fast enough==. The order itself takes five minutes to learn. Reading it live, under pressure, with a paired or coordinated board — ==that's the part nobody explains well==.
 
 This guide fixes both. You'll get the full ranking order with the real odds, every tiebreaker rule, three live board puzzles so you can practice "find your best five," and a 1-second routine for reading any board at the table.
 
@@ -25,6 +27,8 @@ This guide fixes both. You'll get the full ranking order with the real odds, eve
 ## Poker Hand Rankings: The Full Order at a Glance
 
 Start here. This is the entire hierarchy, strongest to weakest, with the long-run odds of being dealt each hand by the river in Texas Hold'em.
+
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | # | Hand | Also called | What it is | Odds (by river) |
 |------|------|------|------|------|
@@ -38,6 +42,8 @@ Start here. This is the entire hierarchy, strongest to weakest, with the long-ru
 | **8** | Two Pair | — | Two different pairs | 23.5% |
 | **9** | One Pair | — | Two cards of one rank | 43.8% |
 | **10** | High Card | "No pair" | No combination at all | 17.4% |
+
+</div>
 
 > **The one rule that wins arguments**
 > One Pair and High Card together make up roughly 61% of all seven-card hands by the river. Big hands feel common because they're memorable — but most pots are decided by a pair and a kicker.
@@ -190,6 +196,8 @@ A **kicker** is simply a card that isn't part of your made hand but is still use
 
 ## Read the Board: 3 Live Puzzles
 
+![K-K-K-A-4 board on a poker table — can you spot the full house before the dealer does?](/images/holdem-hand-rankings-board-puzzle.webp "Poker board reading puzzle — find your best five-card hand")
+
 Knowing the order isn't the same as reading it fast. Here are three real spots. Cover the answer, find your best five cards out of seven, then check.
 
 ### Puzzle 1 — The hidden full house
@@ -220,6 +228,8 @@ You hold **A♥ 3♣**. The board already has trip kings.
 
 ## Quick Answers to the Matchups People Argue About
 
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
+
 | Matchup | Winner | Why |
 |------|------|------|
 | Flush vs Straight | **Flush** | #5 beats #6 |
@@ -230,25 +240,29 @@ You hold **A♥ 3♣**. The board already has trip kings.
 | Same pair, K kicker vs J kicker | **K kicker** | Higher kicker wins |
 | Four of a Kind vs Full House | **Four of a Kind** | #3 beats #4 |
 
+</div>
+
 ---
 
 ## Why the Order Is What It Is
 
-The ranking isn't arbitrary — it's pure probability. **The harder a hand is to make, the higher it ranks.** A flush sits above a straight because, in a 52-card deck, there are simply fewer ways to make five of one suit than five in sequence across any suits. That single principle explains the entire hierarchy.
+The ranking isn't arbitrary — it's ==pure probability==. ==g:**The harder a hand is to make, the higher it ranks.**== A flush sits above a straight because, in a 52-card deck, there are simply fewer ways to make five of one suit than five in sequence across any suits. That single principle explains the entire hierarchy.
 
-It also explains the one big exception you'll meet: in **Short Deck (6+) Hold'em**, where the 2s through 5s are removed, flushes become harder than full houses — so in that format a **flush beats a full house**. The math changed, so the order changed. More on game-by-game differences below.
+It also explains the one big exception you'll meet: in **Short Deck (6+) Hold'em**, where the 2s through 5s are removed, flushes become harder than full houses — so in that format a ==r:**flush beats a full house**==. The math changed, so the order changed. More on game-by-game differences below.
 
 ---
 
 ## The 1-Second Hand-Reading Routine
 
+![Paired board with flush draw — Q-9-9-7-6 showing multiple possible hands](/images/holdem-hand-rankings-board-read.webp "How to read a poker board fast — suits, straights, pairs in order")
+
 Under a time bank, run this scan in order every time the board is complete:
 
-**1. Suits first** — are there three or more of one suit on the board? If yes, a flush is possible. Check your suit.
+**1. Suits first** — are there three or more of one suit on the board? If yes, ==a flush is possible==. Check your suit.
 
-**2. Connectedness next** — are there cards close in rank (like 8-9-10)? If yes, a straight is live.
+**2. Connectedness next** — are there cards close in rank (like 8-9-10)? If yes, ==a straight is live==.
 
-**3. Pairs last** — is the board paired? If yes, full houses and quads are on the table, and your flush or straight may be in danger.
+**3. Pairs last** — is the board paired? ==r:If yes, full houses and quads are on the table, and your flush or straight may be in danger.==
 
 Trained players read the board in this exact order — danger first (flush/straight on the board), then whether the board is paired (which threatens everything). Build the habit and you'll stop making rushed river calls.
 
@@ -324,5 +338,32 @@ A. Yes. Three of a kind is #7 and two pair is #8, so trips win. Two pair only be
 3. **The reality:** most pots are won with one pair or high card, so your kicker is worth more than you think.
 
 Learn the order in an afternoon, drill the confusing pairs, and run the suits → straights → pairs scan on every board. Do that and you'll never again push the pot the wrong way.
+
+---
+
+## Related Posts
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
+  <a href="/en/blog/holdem-flush-vs-straight" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Hand Matchup</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Does a Flush Beat a Straight?</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">The math, the misreads, and every tie rule</div>
+  </a>
+  <a href="/en/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Tiebreaker</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Kicker & Tie-Breaker Rules</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Same pair — who wins? Kicker and split pot rules</div>
+  </a>
+  <a href="/en/blog/holdem-split-pot-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Split Pot</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">When Is a Pot Split?</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Chop rules and the 5 tie situations explained</div>
+  </a>
+  <a href="/en/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Beginner Guide</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Texas Hold'em Rules for Beginners</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Full rules from deal to showdown</div>
+  </a>
+</div>
 `.trim(),
 };
