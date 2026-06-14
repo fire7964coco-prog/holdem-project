@@ -88,7 +88,7 @@ In No-Limit Hold'em (the most common format):
 
 - **Minimum raise**: at least the size of the previous bet or raise
 - **Maximum raise**: your entire remaining stack (all-in)
-- **Re-raise**: players can re-raise as many times as there are active players
+- **Re-raise**: in no-limit, there is no cap — players can re-raise as many times as they want
 
 Example: Big blind is $2. The first player bets $6. You want to raise. ==g:The minimum raise is $6 more== — total of $12. The maximum is your whole stack.
 
@@ -102,7 +102,7 @@ All-in means you bet every chip you have left. You can go all-in at any point wh
 
 If your all-in is less than the current bet, you can still win the **main pot** — up to your own contribution from each player. Any excess chips from other players form a ==side pot== you cannot win.
 
-Example: You have $40 left. The bet is $100. You go all-in for $40. A main pot of $120 ($40 × 3 players) is yours to win. The remaining $60 from each other player forms a side pot between them only.
+Example: You have $40 left. The bet is $100. Three players. You go all-in for $40. Main pot = $40 × 3 = $120 (you can win this). The remaining $60 from each of the other two players ($120 total) becomes a ==side pot== you cannot touch — it plays out between them only.
 
 For split pot and side pot rules in detail, see [Texas Hold'em split pot and chop rules](/en/blog/holdem-split-pot-rules/).
 
@@ -134,15 +134,15 @@ You're first to act on the flop. No one has bet. You toss in chips anyway. That 
 
 ### Mistake 2: String raising in live poker
 
-You say "I call" then push more chips forward. In live poker, your action is locked as a call. Always say "raise" before touching your chips.
+You say "I call" — then push more chips forward and try to add a raise on top. Seen it happen constantly at low-stakes tables. In live poker, your action locks the moment you say a word. Always announce "raise" before touching your chips, or the dealer rules it a call.
 
-### Mistake 3: Check-folding too much on the river
+### Mistake 3: Check-folding every river bet
 
-Beginners often check and immediately fold to any river bet, even a tiny one. Small river bets are often bluffs or thin value. Sometimes calling a small bet to see your opponent's hand is correct, especially when you have a bluff-catcher.
+A player bets $5 into a $60 pot on the river. Beginner checks, sees the $5, folds immediately. That's almost never correct. Small river bets are frequently bluffs or thin value. ==Calling a tiny river bet with any showdown value is usually right== — you only need to be good about 8% of the time to break even on that call.
 
 ### Mistake 4: Forgetting the big blind can check preflop
 
-If everyone just calls (limps), the big blind can check to see the flop for free because the BB bet is already live. Many beginners forget this and fold or bet needlessly from the BB.
+Everyone limps around. The BB hesitates, then folds. That's a free flop thrown away. ==g:If no one raised, the BB may check to see the flop at zero extra cost== — the blind is already live. This comes up every orbit and beginners miss it for weeks.
 
 ---
 

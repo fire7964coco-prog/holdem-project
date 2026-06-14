@@ -181,7 +181,7 @@ A. Suited adds about 2–3% equity over the same offsuit hand — meaningful but
 
 **Q. Is AK a good hand even if it misses the flop?**
 
-A. Yes, AK is a top-5 hand. Before the flop, AK is competitive against any pair below queens. When it hits an ace or king, it makes top pair with the best possible kicker. When it misses, fold to aggression — don't call down without equity.
+A. Yes, AK is a top-5 hand. Before the flop, AK runs roughly even against QQ and JJ (around 43–45%), and becomes a clear favorite only against pairs 66 and below. It is still correct to raise and re-raise with AK preflop — the equity is close enough, and you're building a pot you're often favored to win by the river. When AK hits an ace or king on the flop, it makes top pair with the best possible kicker. When it completely misses, fold to heavy aggression.
 
 ---
 
