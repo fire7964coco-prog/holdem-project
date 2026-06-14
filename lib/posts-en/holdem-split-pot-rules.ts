@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "holdem-split-pot-rules",
   title: "When Is a Pot Split? Texas Hold'em Chop Rules and the 5 Tie Situations",
   seoTitle: "Won the Hand but Got Half? — Texas Hold'em Split Pot & Chop Rules",
-  desc: "You were sure you won — then the dealer pushed you half the chips. Here are the five ways a pot gets split (or 'chopped') in Texas Hold'em, the three things that never break a tie, and how the odd chip and side pots are handled.",
+  desc: "Won the hand but got half the chips? Here are the 5 ways a pot splits in Hold'em, the 3 things that never break a tie, and how the odd chip rule works.",
   tldr: "A pot is split when two or more players have the identical best five-card hand at showdown. Suits never break the tie, and any odd chip goes to the player nearest the dealer's left.",
   category: "초보 가이드",
   date: "2026-06-13",
@@ -12,11 +12,13 @@ export const POST: Post = {
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🃏",
+  image: "/images/holdem-split-pot-hero.webp",
+  imageAlt: "Poker split pot — board 8♠ 8♥ 8♦ A♣ K♠ with J♠ 10♥ vs 5♣ 2♦, chips divided by a gold line since neither hand beats the board",
   tags: ["split pot poker", "chop pot", "when is a pot split", "texas holdem tie", "board plays", "side pot", "odd chip rule"],
   content: `
-Early in my poker days I led every street — raised preflop, bet the flop and turn, got called on the river. I flipped over J-10. My opponent turned over **5-2**. "I win, right?" The dealer said nothing and pointed at the board: **8-8-8-A-K**. Neither of our hole cards beat trip eights with an ace-king kicker, so the dealer quietly cut the pot in half.
+Early in my poker days I led every street — raised preflop, bet the flop and turn, got called on the river. I flipped over J-10. My opponent turned over **5-2**. "I win, right?" The dealer said nothing and pointed at the board: ==**8-8-8-A-K**==. ==r:Neither of our hole cards beat trip eights with an ace-king kicker==, so the dealer quietly cut the pot in half.
 
-Getting half a pot you were sure you'd won is jarring. But "split pots" follow clear rules — and knowing them also sharpens how you read what your opponents can have.
+Getting half a pot you were sure you'd won is jarring. But ==g:"split pots" follow clear rules== — and knowing them also sharpens how you read what your opponents can have.
 
 ---
 
@@ -29,7 +31,7 @@ Getting half a pot you were sure you'd won is jarring. But "split pots" follow c
 
 "Split pot" is the rulebook term; "chop" is what players say at the table ("we're chopping"). They mean exactly the same outcome — equal shares to everyone whose best five-card hand ties. People search both, so you'll see them used interchangeably.
 
-Remember the foundation: your hand is the **best five cards** out of your two hole cards plus the five on the board. When two players' best fives are identical in rank, neither is "more" of a winner — they tie.
+Remember the foundation: your hand is the ==**best five cards**== out of your two hole cards plus the five on the board. ==r:When two players' best fives are identical in rank, neither is "more" of a winner== — they tie.
 
 ---
 
@@ -40,13 +42,17 @@ Remember the foundation: your hand is the **best five cards** out of your two ho
 ### 1. Identical best five cards
 Two players make the exact same five-card hand — same ranks, even if their hole cards differ in suit.
 
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:20px 0">
+
 | | Player A | Player B |
 |---|---|---|
 | **Hole** | K♠ 7♣ | K♥ 2♦ |
 | **Board** | K♦ K♣ Q♥ Q♦ J♠ | (same) |
-| **Best five** | K-K-K-Q-Q | K-K-K-Q-Q → **split** |
+| **Best five** | ==g:K-K-K-Q-Q== | ==g:K-K-K-Q-Q → split== |
 
-Both make the full house KKK-QQ from the board plus a king. The suits of those kings don't matter.
+</div>
+
+Both make the full house KKK-QQ from the board plus a king. ==r:The suits of those kings don't matter.==
 
 ### 2. The board plays
 The five community cards are already the strongest hand, and no one's hole cards improve on it — so everyone left in the hand shares. That's the 8-8-8-A-K board from the story above. On a board like A♠ K♠ Q♠ J♠ 10♠ (a royal flush), every remaining player chops.
@@ -66,16 +72,18 @@ Pairs and two pairs are usually decided by kickers — but if the kickers match 
 
 ## 3 Things That Never Break a Tie
 
+![Spade royal flush = Heart royal flush with a golden equals sign between them — suits never decide a winner in Texas Hold'em](/images/holdem-split-pot-suit-equals.webp "Identical ranks always split — no suit ranking in Texas Hold'em")
+
 These are the misconceptions that cause "wait, why is it a split?!" arguments.
 
 ### ❌ "My suit is higher, so I win"
-A spade flush does **not** beat a heart flush. Texas Hold'em has no suit ranking — identical ranks split, full stop. (This trips up players coming from games that *do* rank suits.)
+==r:A spade flush does **not** beat a heart flush.== Texas Hold'em has no suit ranking — ==identical ranks split, full stop==. (This trips up players coming from games that *do* rank suits.)
 
 ### ❌ "My hole cards are higher, so I win"
-Board 9♠ 8♦ 7♣ 6♥ 5♠ (a made straight). You hold A♠ K♦; your opponent holds 2♣ 3♥. **Split.** Both of you simply play the board's 9-8-7-6-5 — your big hole cards never enter the best five.
+Board 9♠ 8♦ 7♣ 6♥ 5♠ (a made straight). You hold A♠ K♦; your opponent holds 2♣ 3♥. ==r:**Split.**== Both of you simply play the board's 9-8-7-6-5 — ==r:your big hole cards never enter the best five==.
 
 ### ❌ "I used both my cards and they used one"
-How many hole cards you use is irrelevant. The only thing that counts is the strongest five of seven. If both players land on the same best five, it's a chop no matter how you got there.
+==r:How many hole cards you use is irrelevant.== The only thing that counts is the strongest five of seven. ==g:If both players land on the same best five, it's a chop no matter how you got there.==
 
 ---
 
@@ -83,15 +91,15 @@ How many hole cards you use is irrelevant. The only thing that counts is the str
 
 Sometimes a pot won't divide evenly — a 101-chip pot between two players is 50 and 51, and there are no half-chips. The rule:
 
-> The leftover odd chip goes to the tied player **nearest the dealer's left** (the earliest winner clockwise from the button).
+> ==The leftover odd chip goes to the tied player **nearest the dealer's left**== (the earliest winner clockwise from the button).
 
-In a three-way split with two odd chips, the two earliest seats clockwise each get one. Online, the software handles this automatically by position.
+In a three-way split with two odd chips, the two earliest seats clockwise each get one. ==g:Online, the software handles this automatically by position.==
 
 ---
 
 ## Splits and All-Ins: Side Pots
 
-When someone is all-in, the chips form a **main pot** (everyone is eligible) plus one or more **side pots** (only the deeper players who kept betting). Each pot is awarded — or chopped — **separately**, based on the best hand among that pot's eligible players. So it's entirely possible for the main pot to be split three ways while a side pot is won outright by one of the deeper stacks. An all-in player can only ever win or chop the pots they actually contributed to.
+When someone is all-in, the chips form a ==**main pot**== (everyone is eligible) plus one or more ==**side pots**== (only the deeper players who kept betting). Each pot is awarded — or chopped — ==**separately**==, based on the best hand among that pot's eligible players. ==g:So it's entirely possible for the main pot to be split three ways while a side pot is won outright by one of the deeper stacks.== ==r:An all-in player can only ever win or chop the pots they actually contributed to.==
 
 ---
 
@@ -125,10 +133,32 @@ A. The pot breaks into a main pot and side pots; each is awarded or chopped sepa
 
 ## The Takeaways
 
-1. A pot **splits** (chops) when two or more players share the **identical best five of seven**.
-2. **Suits, higher hole cards, and how many cards you used** never break a tie.
-3. The **odd chip** goes to the player nearest the dealer's left, and **side pots** are settled separately from the main pot.
+1. A pot ==**splits**== (chops) when two or more players share the ==**identical best five of seven**==.
+2. ==r:**Suits, higher hole cards, and how many cards you used**== never break a tie.
+3. The ==**odd chip**== goes to the player nearest the dealer's left, and ==**side pots**== are settled separately from the main pot.
 
 Brush up on the order in the [complete hand rankings](/en/blog/holdem-hand-rankings), master close hands in the [kicker and tie-breaker guide](/en/blog/holdem-tiebreak-rules), and settle the classic argument in [does a flush beat a straight](/en/blog/holdem-flush-vs-straight).
+
+---
+
+## Related Posts
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
+  <a href="/en/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Hand Rankings</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Poker Hand Rankings — Best to Worst</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">All 10 hands with odds, examples, and board puzzles</div>
+  </a>
+  <a href="/en/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Tiebreaker</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Kicker & Tie-Breaker Rules</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">How kickers decide same-hand showdowns</div>
+  </a>
+  <a href="/en/blog/holdem-flush-vs-straight" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Hand Matchup</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Does a Flush Beat a Straight?</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Math and board spots for the #1 confusion</div>
+  </a>
+</div>
 `.trim(),
 };
