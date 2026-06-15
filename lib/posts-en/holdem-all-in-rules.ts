@@ -58,6 +58,8 @@ Two valid ways:
 
 **2. Push all chips forward** — Slide your entire stack toward the center in one clean motion. Pushing chips forward in pieces can look like a string bet, so move everything at once.
 
+![Texas Hold'em all-in declaration — dealer separates main pot and side pot chips on green felt after player goes all-in](/images/holdem-all-in-declare.webp)
+
 ==r:Never push a single chip forward and say "all-in" — the dealer counts it as the chip's face value, not your full stack.== Always move everything or declare verbally.
 
 ---
@@ -118,16 +120,16 @@ The rule: ==each side pot is built by taking the next-smallest stack's contribut
 
 **Example:**
 
-Blinds $1/$2. Pot is 3-way.
+Blinds $1/$2. Pot is 4-way.
 
 1. Player A bets $10.
 2. Player B raises to $25.
 3. Player C goes all-in for **$30** (only $5 more than B's raise of $25 — not a full raise increment).
 
-What happens to Player A?
+What happens to Player A and Player D?
 
 - Player A already acted (bet $10). Because C's all-in of $30 is **less than a full raise** (which would require at least $40 = $25 + $15 minimum), the action does NOT reopen for Player A. ==A can only call or fold — they cannot re-raise.==
-- Player D (if they haven't acted yet) **can still raise normally**.
+- Player D has not yet acted — **Player D can still raise normally**.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -192,7 +194,7 @@ A. In tournaments, yes — once all betting is done with an all-in, all involved
 
 **Q. Can you run it twice in a poker all-in?**
 
-A. Running it twice (dealing the remaining community cards twice and splitting the pot) is allowed in many cash games if both players agree after the all-in. It is generally not allowed in tournaments. The option must be offered before any cards are dealt out.
+A. Running it twice (dealing the remaining community cards twice and splitting the pot) is allowed in many cash games if both players agree after the all-in. It is generally not allowed in tournaments. The option must be agreed upon before the remaining community cards are run out.
 
 **Q. What is the "table stakes" rule exactly?**
 
