@@ -5,6 +5,44 @@
 
 ---
 
+## 2026-06-16
+
+### 작업 내용
+- `.cursorrules` H2 롱테일 키워드 규칙 추가: 영어 포스트 작성 전 PAA·자동완성으로 실제 검색 쿼리 도출 → H2에 직접 배치하는 절차 명시
+- `holdem-all-in-rules` H2 3개 실제 검색 쿼리로 교체: "How Do Side Pots Work in Poker?", "Does Going All-In Reopen the Betting?", "What Happens If You Go All-In Wrong?"
+- `holdem-all-in-rules` 콘텐츠 보강 (91점 목표): 누적 숏 올인 규칙(TDA Rule 47), Quick Decision Guide 표, E-E-A-T 경험담, FAQ 1개 추가
+- GSC·GA4 데이터 분석: Organic Search 58% 확인, 카니발리제이션 발견
+- 키워드 카니발리제이션 수정: `/hands` vs `/blog/holdem-hand-rankings` — `/hands` 제목을 툴 포커스로 차별화, 블로그 포스트 seoTitle 키워드 앞배치, `/hands`에서 블로그 포스트로 내부링크 추가
+
+### 특이사항
+- GA4 인기 페이지 3위에 404 페이지 발견 (33 조회) — 원인 URL 서치 콘솔 색인 탭에서 추가 확인 필요
+- GSC 쿼리 분석: "홀덤 족보 순위" 80 노출 / 9.8위 → 카니발리제이션 수정으로 순위 상승 기대
+- www 중복 URL 이슈 (이전에 이미 해결 완료)
+
+### 발행 현황
+- 총 포스트: 32개 (목표 50개까지 18개 남음)
+
+---
+
+## 2026-06-15 (3)
+
+### 작업 내용
+- 신규 EN 클러스터 발행: `holdem-all-in-rules` (Rules 필라 7번째 클러스터)
+- Top 20 SERP 분석 후 경쟁 공백 3가지 보강: 리레이즈 재오픈 규칙, 4자 사이드팟 계산표, 올인 쇼다운 플로우
+- `texas-holdem-rules-for-beginners` 관련 글 섹션에 양방향 링크 추가
+
+### 발행 현황
+- EN 포스트: 14개 (Rules 필라 7개)
+
+---
+
+## 2026-06-15 (2)
+
+### 작업 내용
+- `/en/blog/holdem-showdown-rules/` 섹션 이미지 3장 추가: who-shows-first(41KB), slow-roll(35KB), cards-speak(47KB)
+
+---
+
 ## 2026-06-15
 
 ### 작업 내용
