@@ -103,9 +103,9 @@ export default function Hands() {
   return (
     <>
       <SEO
-        title="⚡ 홀덤 족보 순위 10가지 — 온라인 포커 필수 암기표 [2026]"
-        description="⚡홀덤 족보⚡ 10가지 완벽 정리! 로열플러시·포카드·풀하우스 등 예시 카드·확률과 함께 정리했습니다. 한번 보면 절대 안 헷갈립니다."
-        keywords="포커 족보 순서, 텍사스 홀덤 족보, 홀덤 족보 순위, 포커 핸드 랭킹, 로열 플러시 확률, 풀하우스 플러시 비교, 홀덤 족보 외우기, 포커 패 순서, 스트레이트 플러시, 포카드 족보"
+        title="홀덤 족보 카드 — 로열플러시~하이카드 예시·확률 한눈에 [2026]"
+        description="텍사스 홀덤 족보 10가지를 예시 카드·확률과 함께 한눈에 보는 레퍼런스 카드. 게임 중 빠르게 확인할 때 사용하세요."
+        keywords="포커 족보 카드, 텍사스 홀덤 족보 예시, 홀덤 핸드 랭킹 카드, 포커 핸드 확률, 로열 플러시 확률, 풀하우스 플러시 비교, 포커 패 순서 카드"
         path="/hands"
         schema={jsonLd}
       />
@@ -218,6 +218,12 @@ export default function Hands() {
           aria-label="관련 가이드"
           className="mt-8"
         >
+          <div className="mb-5 p-4 bg-primary/5 border border-primary/20 rounded-xl">
+            <p className="text-sm text-muted-foreground mb-2">📖 족보 순서를 <strong className="text-foreground">왜 그렇게 외워야 하는지</strong> 확률과 함께 더 깊이 알고 싶다면</p>
+            <Link href="/blog/holdem-hand-rankings/" className="text-primary font-bold text-sm hover:underline">
+              → 홀덤 족보 순위 완전 정리 — 확률·보드 판단까지 한 번에 읽기
+            </Link>
+          </div>
           <h2 className="text-base font-bold text-muted-foreground mb-4">다음으로 읽어보세요</h2>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
             {[
