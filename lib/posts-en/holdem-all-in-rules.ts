@@ -66,6 +66,8 @@ Two valid ways:
 
 The all-in player can only win what they put in multiplied by the number of callers. Any chips bet beyond that form a **side pot** that belongs exclusively to the players who funded it.
 
+![Texas Hold'em all-in side pot — dealer separating chips into main pot and side pot as Player A is capped](/images/holdem-all-in-side-pot.webp)
+
 ### 3-Player Example (Standard)
 
 | Player | Stack | Action |
@@ -111,6 +113,8 @@ The rule: ==each side pot is built by taking the next-smallest stack's contribut
 ==r:This is the single most disputed all-in rule at live tables.==
 
 **The rule:** If a player goes all-in for **less than a full raise**, that all-in does NOT reopen the betting for players who have already acted in that round.
+
+![Poker re-raise rule after all-in — Player C goes all-in for less than a full raise, Player A can only call or fold](/images/holdem-all-in-reraise-rule.webp)
 
 **Example:**
 
