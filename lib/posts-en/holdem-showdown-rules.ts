@@ -44,6 +44,8 @@ The rule depends on how the final betting round ended.
 
 </div>
 
+![Texas Hold'em showdown — golden arrow pointing to the last aggressor who must show cards first](/images/holdem-showdown-who-shows-first.webp)
+
 ==g:The key phrase is "last aggressor."== If you bet the river and got called, you show first — not the caller. The caller gets to see your hand before deciding whether to show or muck theirs.
 
 ---
@@ -94,6 +96,8 @@ For the full breakdown of side pot math, see [Texas Hold'em split pot and chop r
 
 ## What Is the "Cards Speak" Rule?
 
+![Cards Speak rule in poker — player says "I have a pair" but the board shows a stronger hand wins](/images/holdem-showdown-cards-speak.webp)
+
 "Cards speak" means ==the best hand wins regardless of what players say==.
 
 If a player misreads their hand and says "I have a pair," but they actually have a straight — the straight wins. The dealer reads the cards and awards the pot to the best hand shown.
@@ -109,6 +113,8 @@ Real situation: you hold J♥ T♥ on a board of Q♥ 9♥ 8♥ 2♣ 5♦. You h
 Slow rolling is ==deliberately taking a long time to show a very strong hand when you know you've won==.
 
 You have the nuts. The opponent shows a strong hand. You pause, pretend to think, peek at your cards slowly, make everyone wait — then flip the winner. Technically legal. Universally disliked.
+
+![Slow rolling in poker — other players frustrated as one player deliberately delays showing winning hand](/images/holdem-showdown-slow-roll.webp)
 
 ==r:Slow rolling is the fastest way to create enemies at a poker table.== It's interpreted as deliberately rubbing in a win. The unwritten rule: if you have the best possible hand, flip it immediately. There is no strategic benefit to slow rolling. The only outcome is tension.
 
