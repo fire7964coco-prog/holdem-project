@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Going all-in means betting every chip you have. You can only win what you matched from each opponent (the main pot). Extra bets from bigger stacks form a side pot you cannot win. An all-in for less than a full raise does NOT reopen the betting for players who already acted.",
   category: "초보 가이드",
   date: "2026-06-15",
-  updated: "2026-06-15",
+  updated: "2026-06-15", 
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "♠",
@@ -64,7 +64,7 @@ Two valid ways:
 
 ---
 
-## Side Pots — Why They Exist and How They Work
+## How Do Side Pots Work in Poker? (Why the All-In Player Gets Capped)
 
 The all-in player can only win what they put in multiplied by the number of callers. Any chips bet beyond that form a **side pot** that belongs exclusively to the players who funded it.
 
@@ -110,7 +110,7 @@ The rule: ==each side pot is built by taking the next-smallest stack's contribut
 
 ---
 
-## The Re-Raise Rule Most Players Get Wrong
+## Does Going All-In Reopen the Betting? — The Rule Most Players Get Wrong
 
 ==r:This is the single most disputed all-in rule at live tables.==
 
@@ -159,7 +159,7 @@ When all betting is complete and a player is all-in, here is what happens at sho
 
 ---
 
-## Common All-In Mistakes Beginners Make
+## What Happens If You Go All-In Wrong? — 5 Mistakes to Avoid
 
 ### Mistake 1: Thinking the all-in player can win the side pot
 They cannot. Once the all-in player is capped, any additional chips bet by larger stacks belong to a pot the all-in player has no claim to.
