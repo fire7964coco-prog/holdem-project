@@ -82,6 +82,8 @@ A **dry board** like K♠ 7♦ 2♣ rainbow (three different suits) has almost n
 
 A **wet board** like J♥ T♥ 8♣ is loaded. Any heart could complete a flush. Any 9, 7, or Q could complete a straight. If you flopped two pair here, ==you need to bet big to protect against draws==.
 
+![Dry board vs wet board in Texas Hold'em — K72 rainbow (dry) vs JT8 two-tone (wet) with flush and straight draw arrows](/images/holdem-reading-dry-vs-wet-board.webp)
+
 ==g:Reading the board texture is the starting point for all poker decisions.==
 
 ---
@@ -95,6 +97,8 @@ A flush requires 5 cards of the same suit. With 5 community cards visible, check
 - 3 suited cards on the flop = **flush draw possible** (anyone holding 2 cards of that suit has a made flush if a 4th suit card hits)
 - 4 suited cards by the turn = **anyone with ONE card of that suit has a flush**
 - 5 suited cards on the board = the flush is on the board itself (playing the board flush — likely a split pot)
+
+![NOT A FLUSH — holding A♠ with only 3 spades on the board does not make a flush in Texas Hold'em](/images/holdem-reading-flush-draw-mistake.webp)
 
 ==r:Common beginner error: holding A♠ on a board of 2♠ 5♠ 9♥ J♥ T♠ and thinking you have a flush.== You need 5 cards of the same suit. A♠ plus two spades on the board = only 3 spades. You have high card ace, not a flush.
 
@@ -112,6 +116,8 @@ Example: You hold 8♦ 6♣. Board: 7♥ 5♠ 4♣ K♦ 2♠.
 
 Your 7 cards ranked: K, 8, 7, 6, 5, 4, 2.
 Is there 5 in a row? 8-7-6-5-4. Yes — you have an 8-high straight.
+
+![8-high straight in Texas Hold'em — 7 cards spread with 8-7-6-5-4 highlighted in gold showing the made straight](/images/holdem-reading-straight-example.webp)
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
