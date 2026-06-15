@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "holdem-showdown-rules",
   title: "Texas Hold'em Showdown Rules: Who Shows First, Mucking, and Slow Rolling",
   seoTitle: "Won the Pot but Got Stared Down? — Texas Hold'em Showdown Rules Explained",
-  desc: "Who shows cards first at showdown? Can you muck without showing? Texas Hold'em showdown rules explained — last aggressor, cards speak, slow roll, and all-in showdowns.",
+  desc: "Who shows cards first at showdown? Can you muck without showing? Hold'em showdown rules — last aggressor, cards speak, slow roll, and all-in situations explained.",
   tldr: "At showdown, the last player to bet or raise shows first. If the river was checked through, the first active player left of the button shows first. You can muck without showing if you lose, but opponents can request to see a called hand.",
   category: "초보 가이드",
   date: "2026-06-15",
@@ -104,7 +104,7 @@ If a player misreads their hand and says "I have a pair," but they actually have
 
 This works both ways. If you think you lost and muck without showing, but your hand would have been the winner — ==r:the pot is gone==. Your hand is dead once it touches the muck. Always let the dealer read your hand before mucking if you're not 100% sure you lost.
 
-Real situation: you hold J♥ T♥ on a board of Q♥ 9♥ 8♥ 2♣ 5♦. You have a queen-high flush. Opponent shows K♣ Q♦ (one pair of queens). You win. Don't muck because you see their queen.
+Real situation: you hold J♥ T♥ on a board of Q♥ 9♥ 8♥ 2♣ 5♦. You have a queen-high straight flush (Q-J-T-9-8 of hearts). Opponent shows K♣ Q♦ (one pair of queens). You win by a mile. Don't muck just because you see their queen.
 
 ---
 
