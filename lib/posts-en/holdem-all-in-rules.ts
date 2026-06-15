@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Going all-in means betting every chip you have. You can only win what you matched from each opponent (the main pot). Extra bets from bigger stacks form a side pot you cannot win. An all-in for less than a full raise does NOT reopen the betting for players who already acted.",
   category: "초보 가이드",
   date: "2026-06-15",
-  updated: "2026-06-15", 
+  updated: "2026-06-15",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "♠",
@@ -26,7 +26,9 @@ You're short-stacked. You shove. The player behind calls. A third player re-rais
 
 You have no idea what's happening.
 
-==This is the all-in — and most beginners never learn the rules until they're sitting in the middle of one.== This guide covers every situation: main pots, side pots, re-raise eligibility, and showdown order. No more confusion at the table.
+I've been at that table. The first time I went all-in at a live holdem pub, I didn't know whether I could still win anything, whether the other player could re-raise, or even which pile of chips was mine. Nobody explained it.
+
+==This guide covers every situation: main pots, side pots, re-raise eligibility, and showdown order.== No more freezing when the dealer starts counting stacks.
 
 ## What Does "All-In" Mean in Texas Hold'em?
 
@@ -112,7 +114,7 @@ The rule: ==each side pot is built by taking the next-smallest stack's contribut
 
 ## Does Going All-In Reopen the Betting? — The Rule Most Players Get Wrong
 
-==r:This is the single most disputed all-in rule at live tables.==
+==r:This is the single most disputed all-in rule at live tables — I've watched two players argue about it for five minutes while the whole table waited. Both were wrong.==
 
 **The rule:** If a player goes all-in for **less than a full raise**, that all-in does NOT reopen the betting for players who have already acted in that round.
 
@@ -141,6 +143,48 @@ What happens to Player A and Player D?
 </div>
 
 Why does this exist? It protects players from being forced into larger raises by partial all-ins. A full raise signals real aggression — a short-stack all-in for scraps doesn't.
+
+### Advanced Case: What If Multiple Players Go All-In Short?
+
+This is the version that trips up even regulars. Multiple short all-ins can **add up** to a full raise — and if their combined increments reach the threshold, betting reopens for players who already acted.
+
+This is TDA Rule 47 (the official tournament directors rule), and most card rooms follow it.
+
+**Example (Blinds $1/$2):**
+
+1. Player A bets $10.
+2. Player B goes all-in for **$14** (+$4 increment — not a full raise alone)
+3. Player C goes all-in for **$21** (+$7 increment — not a full raise alone)
+
+Combined increments: $4 + $7 = **$11** — that meets the $10 minimum raise threshold.
+
+**Result: betting REOPENS for Player A.** A can fold, call, or re-raise, even though neither B nor C individually made a full raise.
+
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
+
+| B's all-in | C's all-in | Combined increment | Reopens for A? |
+|---|---|---|---|
+| $14 (+$4) | $18 (+$4) | $8 — below $10 | ❌ No |
+| $14 (+$4) | $21 (+$7) | $11 — meets $10 | ✅ Yes |
+| $15 (+$5) | $25 (+$10) | $15 — meets $10 | ✅ Yes |
+
+</div>
+
+The minimum raise threshold is always the *last full valid raise* — not any cumulative total.
+
+### Quick Decision Guide — Does This All-In Reopen Betting?
+
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
+
+| Situation | Reopens for players who already acted? |
+|---|---|
+| Single all-in < full raise | ❌ No — call or fold only |
+| Single all-in ≥ full raise | ✅ Yes — all can re-raise |
+| Multiple short all-ins, combined < full raise | ❌ No |
+| Multiple short all-ins, combined ≥ full raise | ✅ Yes |
+| Player who has NOT yet acted | ✅ Always can raise (regardless) |
+
+</div>
 
 ---
 
@@ -203,6 +247,10 @@ A. Table stakes means you can only wager chips that were in front of you when th
 **Q. If two players go all-in for different amounts, who shows first?**
 
 A. The last all-in bet is treated as the last aggressive action. Standard showdown rules apply: the last player to make an all-in or aggressive move shows first. If it was a called all-in with no further action, the caller can muck if they lose after seeing the all-in player's hand.
+
+**Q. Are all-in rules different in tournaments vs. cash games?**
+
+A. The core rules are the same, but there are two practical differences. First, in tournaments all hands involved in an all-in are tabled face-up as soon as all betting is complete (TDA Rule 16) — you cannot muck until showdown. In cash games, standard showdown order applies and players can muck. Second, running it twice is common in cash games (if both players agree) but is generally not permitted in tournaments.
 
 ---
 
