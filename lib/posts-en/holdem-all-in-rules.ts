@@ -60,7 +60,7 @@ Two valid ways:
 
 ![Texas Hold'em all-in declaration — dealer separates main pot and side pot chips on green felt after player goes all-in](/images/holdem-all-in-declare.webp)
 
-==r:Never push a single chip forward and say "all-in" — the dealer counts it as the chip's face value, not your full stack.== Always move everything or declare verbally.
+==r:Never push a single chip forward without saying anything — the dealer counts it as just that chip's value, not your full stack.== Always declare "all-in" out loud, or move your entire stack at once.
 
 ---
 
