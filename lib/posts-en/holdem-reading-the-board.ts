@@ -4,8 +4,8 @@ export const POST: Post = {
   slug: "holdem-reading-the-board",
   title: "How to Read the Board in Texas Hold'em: Find Your Best 5-Card Hand Every Time",
   seoTitle: "Stared at the Board and Still Confused? — How to Find Your Best 5 Cards in Hold'em",
-  desc: "Learn how to read the Texas Hold'em board and pick the best 5-card hand from 7 cards. Covers wet vs dry boards, playing the board, flush draws, and common beginner mistakes.",
-  tldr: "You always use the best 5 cards from your 2 hole cards plus 5 community cards (7 total). You can use both hole cards, one, or even none (playing the board). The board with the highest card combinations determines whether you have pairs, straights, flushes, and more.",
+  desc: "Learn how to read the Hold'em board and find your best 5-card hand from 7. Covers wet vs dry boards, playing the board, flush draws, and common beginner mistakes.",
+  tldr: "You always use the best 5 cards from your 2 hole cards plus 5 community cards (7 total). You can use both hole cards, one, or even none (playing the board). Always check all 7 cards together — not just your hole cards — to spot pairs, straights, flushes, and more.",
   category: "초보 가이드",
   date: "2026-06-15",
   updated: "2026-06-15",
@@ -59,7 +59,7 @@ Example: Board is A♠ K♠ Q♠ J♠ T♠. That's a royal flush. You hold 5♥ 
 
 The catch: ==r:every active player is also playing the board==. If nobody has a card that improves on those 5 community cards, the pot is chopped equally between all remaining players.
 
-To win by playing the board outright, you need the community cards to make the best possible 5-card hand, and no opponent to have any card that makes a 6th improvement. In most cases, playing the board means a split pot, not a win.
+To win by playing the board outright, you need the community cards to already be the best possible 5-card hand, and no opponent to hold a card that beats it. In most cases, playing the board means a split pot, not a win.
 
 ---
 
