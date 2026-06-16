@@ -2468,6 +2468,10 @@ A. BB 수비 범위는 **팟 오즈**를 기반으로 결정합니다. 상대가
  emoji: " ",
  tags: ["WSOP", "포커 토너먼트", "2025", "세계 대회"],
  content: `
+<div style="background:rgba(212,175,55,0.12);border:1px solid rgba(212,175,55,0.4);border-radius:12px;padding:14px 20px;margin:0 0 28px">
+📅 <strong>2026 대회가 지금 진행 중입니다</strong> — 최신 일정·참가 방법은 <a href="/blog/wsop-2026-tournament-guide/" style="color:var(--primary);font-weight:700">WSOP 2026 완전 가이드</a>에서 확인하세요.
+</div>
+
 ## WSOP가 뭔지 모르면 포커를 모르는 겁니다
 
 안녕하세요! 홀덤마스터입니다.
