@@ -303,7 +303,7 @@ This is what no other guide tells you. Here's a realistic Day 1 timeline for a l
 | 100 | ~13 | 1.5–2x buy-in | 25–30% of prize pool |
 | 500 | ~60 | 1.5–2x buy-in | 20–25% of prize pool |
 | 2,000 | ~250 | 1.7–2.2x buy-in | 15–20% of prize pool |
-| 10,000 | ~1,200 | 1.7–2.2x buy-in | 10–15% of prize pool |
+| 10,000 | ~1,200 | 1.5–2x buy-in | 8–12% of prize pool |
 
 **Real example (WPT 2025, $3,500 buy-in, 1,447 entries):**
 - Prize pool: $4,630,400
@@ -374,7 +374,7 @@ A. The bubble is the stage just before the money — one more elimination and ev
 
 **Q. Can I enter a major tournament like WSOP as a beginner?**
 
-A. Yes. There is no skill requirement to enter any public poker tournament — just the buy-in and valid ID. The WSOP runs events from $400 up to $10,000. For a first major event, consider a $400–$600 daily event rather than the Main Event to get a feel for the structure. [How to Enter WSOP 2026 →](/en/blog/wsop-2026-tournament-guide/)
+A. Yes. There is no skill requirement to enter any public poker tournament — just the buy-in and valid ID. The WSOP Main Event is $10,000, but daily side events typically range from $500 to $3,000. For a first major event, consider a $500–$800 daily event to get a feel for the structure before committing to the Main Event.
 
 **Q. What does ITM mean in poker?**
 
@@ -394,10 +394,10 @@ A. Technically yes — through a chain of satellite qualifiers. A $5 super-satel
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Tournament vs Cash Game</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">8 differences that change everything</div>
   </a>
-  <a href="/en/blog/wsop-2026-tournament-guide/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Next Step</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">WSOP 2026 Entry Guide</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">GGPoker satellite → Las Vegas check-in</div>
+  <a href="/en/blog/holdem-starting-hands-chart/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Strategy</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Starting Hands Chart</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Which hands to play in early levels</div>
   </a>
   <a href="/en/blog/texas-holdem-rules-for-beginners/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Start Here</div>
