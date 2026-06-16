@@ -91,6 +91,7 @@ const INTERNATIONAL = [
       "WSOP Circuit 지역 대회로 브레이슬릿 도전 가능",
     ],
     link: "https://www.wsop.com",
+    blogLink: "/blog/wsop-2026-tournament-guide/",
   },
   {
     id: "wpt",
@@ -1225,10 +1226,18 @@ export default function Tournaments() {
                         </li>
                       ))}
                     </ul>
-                    <a href={t.link} target="_blank" rel="noopener noreferrer"
-                      className="mt-4 inline-flex items-center gap-1.5 text-xs text-primary font-semibold hover:underline">
-                      공식 사이트 <ChevronRight className="w-3.5 h-3.5" />
-                    </a>
+                    <div className="mt-4 flex flex-wrap gap-2 items-center">
+                      <a href={t.link} target="_blank" rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 text-xs text-primary font-semibold hover:underline">
+                        공식 사이트 <ExternalLink className="w-3 h-3" />
+                      </a>
+                      {"blogLink" in t && t.blogLink && (
+                        <Link href={t.blogLink as string}
+                          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-primary/15 border border-primary/35 text-xs text-primary font-bold hover:bg-primary/25 transition-colors">
+                          🏆 WSOP 2026 완전 가이드 <ChevronRight className="w-3.5 h-3.5" />
+                        </Link>
+                      )}
+                    </div>
                   </div>
                 </div>
               </motion.div>
@@ -1400,6 +1409,25 @@ export default function Tournaments() {
           <h2 className="text-lg font-serif font-bold text-foreground mb-4 flex items-center gap-2">
             <BookOpen className="w-4 h-4 text-primary" /> 홀덤 대회 준비에 도움이 되는 가이드
           </h2>
+
+          {/* WSOP 2026 Featured */}
+          <Link href="/blog/wsop-2026-tournament-guide/">
+            <div className="mb-4 p-5 bg-card border-2 border-yellow-500/40 rounded-2xl hover:border-yellow-500/70 transition-colors cursor-pointer shadow-lg shadow-yellow-500/8 relative overflow-hidden">
+              <div className="absolute top-0 right-0 bg-green-500/20 text-green-400 text-[10px] font-bold px-2.5 py-1 rounded-bl-xl tracking-wide">🔴 LIVE 진행중</div>
+              <div className="flex items-start gap-4">
+                <div className="text-3xl flex-shrink-0 mt-0.5">🏆</div>
+                <div className="flex-1">
+                  <div className="text-[11px] font-bold text-yellow-400 uppercase tracking-widest mb-1">WSOP 2026 · 지금 라스베이거스에서 진행 중</div>
+                  <div className="text-base font-bold text-foreground mb-1 leading-tight">WSOP 2026 완전 가이드 — 일정·메인이벤트·한국인 참가 방법</div>
+                  <div className="text-xs text-muted-foreground leading-relaxed">메인이벤트 7월 2일 시작 · GGPoker $0.50 위성으로 $10,000 시트 도전 가능 · 파이널 테이블 8/3~5 ESPN 생중계</div>
+                  <div className="mt-2 inline-flex items-center gap-1 text-xs text-primary font-bold">
+                    자세히 보기 <ChevronRight className="w-3.5 h-3.5" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Link>
+
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
             {[
               { href: "/blog/holdem-tournament-schedule-check/", emoji: "📅", title: "홀덤 대회 일정 확인법", desc: "WSOP·APT·APPT 공식 일정 교차검증" },
