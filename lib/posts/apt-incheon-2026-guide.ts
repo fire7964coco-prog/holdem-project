@@ -131,14 +131,14 @@ $35 또는 $200 메가 위성 → 메인이벤트 시트 직행
 **4. KYC(본인 인증) 완료 — 가장 중요** — 위성 시트를 따더라도 KYC가 미완료면 현장에서 시트를 못 받습니다.
 
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.3);border-radius:14px;padding:16px 20px;margin:16px 0">
-<div style="font-size:13px;font-weight:700;color:var(--primary);margin-bottom:10px">KYC 진행 방법</div>
+<div style="font-size:13px;font-weight:700;color:var(--primary);margin-bottom:10px">KYC 진행 방법 (PC 기준)</div>
 <div style="font-size:13px;color:var(--muted-foreground);line-height:1.7">
 ① 로그인 후 우측 상단 프로필 아이콘 → <strong style="color:var(--foreground)">My Account</strong><br/>
-② <strong style="color:var(--foreground)">Verification</strong> 탭 클릭<br/>
-③ 여권 또는 국가 ID 앞면 사진 업로드 (정방향, 글자 선명하게)<br/>
-④ 셀피(얼굴 + 서류 함께) 사진 업로드<br/>
-⑤ 심사 완료까지 보통 24~48시간 소요<br/>
-→ "Verified" 표시 뜨면 완료
+② <strong style="color:var(--foreground)">My Documents</strong> 선택<br/>
+③ 여권·운전면허증·국가 ID 중 하나의 앞면 사진 업로드 (글자 선명하게)<br/>
+④ 제출 후 심사 완료까지 <strong style="color:var(--foreground)">최대 5 영업일</strong> 소요 (보통 1~3일)<br/>
+→ 모바일은: Me 아이콘(하단 왼쪽) → My Info → My Documents<br/>
+→ 심사 결과는 이메일로 통보. 스팸함도 확인할 것.
 </div>
 </div>
 
@@ -208,8 +208,8 @@ $20 스텝 위성 → OnLive Day 1 → **집에서 Day 1 플레이** → ITM 생
 
 | 출발지 | 방법 | 소요 시간 | 비용 |
 |--------|------|---------|------|
-| **인천공항 T1** | 무료 셔틀버스 (정류장: T1 1층 출구 부근) | 약 5분 | 무료 |
-| **인천공항 T2** | T2 → T1 셔틀 이동 후 동일 | 약 20분 | 무료 |
+| **인천공항 T1** | 무료 셔틀버스 (T1 1층 **3C 게이트** 정류장) / 20~30분 간격 / 05:00~23:00 | 약 5~10분 | 무료 |
+| **인천공항 T2** | 무료 셔틀버스 (T2 1층 **4A 게이트**) / 60분 간격 / 05:30~23:30 | 약 20분 | 무료 |
 | **서울 시내** | 공항철도(AREX) → 인천공항 → 셔틀버스 | 약 60분 | 9,500~18,000원 |
 | **자가용** | 인천국제공항고속도로 → 파라다이스 시티 주차장 | 거리따라 다름 | 주차비 별도 |
 
