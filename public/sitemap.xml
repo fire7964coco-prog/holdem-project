@@ -652,7 +652,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- 다국어 블로그 포스트 (49편) -->
+  <!-- 다국어 블로그 포스트 (50편) -->
 
   <url>
     <loc>https://www.holdemmaster.com/en/blog/holdem-all-in-rules</loc>
@@ -794,6 +794,16 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-tiebreak-rules" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-tiebreak-rules" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-tiebreak-rules" />
+  </url>
+
+  <url>
+    <loc>https://www.holdemmaster.com/en/blog/holdem-tournament</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-tournament" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-tournament" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-tournament" />
   </url>
 
   <url>

@@ -1,4 +1,5 @@
 import type { Post } from "../posts";
+import { POST as holdemTournament } from "./holdem-tournament";
 import { POST as holdemHandRankings } from "./holdem-hand-rankings";
 import { POST as holdemGameOrder } from "./holdem-game-order";
 import { POST as holdemTournamentVsCashGame } from "./holdem-tournament-vs-cash-game";
@@ -20,6 +21,7 @@ import { POST as holdemAllInRules } from "./holdem-all-in-rules";
  * 슬러그는 한국어 글과 동일하게 맞춰 hreflang 상호 링크가 성립하도록 한다.
  */
 export const EN_POSTS: Post[] = [
+  holdemTournament,
   texasHoldemRulesForBeginners,
   holdemHandRankings,
   holdemFlushVsStraight,
