@@ -38,6 +38,11 @@ export interface Post {
  imageAlt?: string;
  tags: string[];
  content: string;
+ /**
+  * 레이아웃 선택: 기본값은 일반 블로그 포스트 레이아웃.
+  * "tournament-guide" → 대회 참가 가이드 시리즈 전용 레이아웃.
+  */
+ layout?: "tournament-guide";
 }
 
 const LEGACY_POSTS: Post[] = [

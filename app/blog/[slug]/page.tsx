@@ -7,6 +7,7 @@ import { HTML_LANG } from "@/lib/intl";
 import { secondaryLocalesForSlug } from "@/lib/intl-posts";
 import { SITE } from "@/lib/site";
 import BlogPostClient from "./blog-post-client";
+import TournamentGuidePost from "@/components/tournament-guide-post";
 
 /**
  * 빌드 타임에 모든 블로그 포스트(29개) URL 정적 생성
@@ -192,7 +193,11 @@ export default function Page({ params }: { params: { slug: string } }) {
           __html: JSON.stringify({ "@context": "https://schema.org", "@graph": graph }),
         }}
       />
-      <BlogPostClient post={{ ...post, content: contentForClient }} summarySlot={summarySlot} />
+      {post.layout === "tournament-guide" ? (
+        <TournamentGuidePost post={{ ...post, content: contentForClient }} summarySlot={summarySlot} />
+      ) : (
+        <BlogPostClient post={{ ...post, content: contentForClient }} summarySlot={summarySlot} />
+      )}
     </>
   );
 }
