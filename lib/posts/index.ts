@@ -1,4 +1,5 @@
 import type { Post } from "../posts";
+import { POST as ggpokerWsopExpressSatelliteGuide } from "./ggpoker-wsop-express-satellite-guide";
 import { POST as apptKorea2026Guide } from "./appt-korea-2026-guide";
 import { POST as aptIncheon2026Guide } from "./apt-incheon-2026-guide";
 import { POST as holdemBubbleStrategy } from "./holdem-bubble-strategy";
@@ -24,6 +25,7 @@ import { POST as holdemTournamentScheduleCheck } from "./holdem-tournament-sched
 import { POST as holdemMasters7thGuide } from "./holdem-masters-7th-guide";
 import { POST as wsop2026TournamentGuide } from "./wsop-2026-tournament-guide";
 export const NEW_POSTS: Post[] = [
+  ggpokerWsopExpressSatelliteGuide,
   apptKorea2026Guide,
   aptIncheon2026Guide,
   wsop2026TournamentGuide,

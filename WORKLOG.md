@@ -5,6 +5,28 @@
 
 ---
 
+## 2026-06-17
+
+### 작업 내용
+- 신규 글 발행: `ggpoker-wsop-express-satellite-guide` — GGPoker WSOP Express 위성 단계별 완전 가이드 (Step 0~4 구조·무료 티켓·Bracelet Pass 패키지 실제 신청 순서로 정리)
+- `wsop-2026-tournament-guide` 내부링크 추가 (GGPoker Express 섹션 → 새 가이드 연결)
+
+### 발행 현황
+- 총 포스트: 33개 (목표 50개까지 17개 남음)
+
+---
+
+## 2026-06-16 (6)
+
+### 작업 내용
+- EN Tournament Pillar 신규 발행: `holdem-tournament` (영어 3번째 필라, 15개 EN 포스트)
+- SERP Top 20 분석 후 차별화: Day-1 타임라인, 형식 결정 비교표, 실제 비용 구조, 초보 체크리스트
+
+### 발행 현황
+- 총 EN 포스트: 15개
+
+---
+
 ## 2026-06-16 (5)
 
 ### 작업 내용
