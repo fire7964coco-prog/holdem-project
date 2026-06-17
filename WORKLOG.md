@@ -5,6 +5,20 @@
 
 ---
 
+## 2026-06-17 (3)
+
+### 작업 내용
+- 신규 EN 글 발행: `ept-barcelona-2026-guide` — EPT Barcelona 2026 Complete Player Guide (Aug 16–29, Casino Barcelona)
+- SERP Top20 분석 + 롱테일 키워드 10개 H2 배치 전략 적용
+- 차별화: Source of Funds 신고서 안내, 총 트립 비용 3가지 시나리오, Day 1 생존 가이드 (경쟁글 전부 누락 항목)
+- Power Path $0.50→Gold Pass 단계별 가이드, 숙소 7곳 비교표, 공항→카지노 교통 4가지 비교
+
+### 발행 현황
+- 총 EN 포스트: 16개
+- 총 KO 포스트: 38개
+
+---
+
 ## 2026-06-17 (2)
 
 ### 작업 내용
