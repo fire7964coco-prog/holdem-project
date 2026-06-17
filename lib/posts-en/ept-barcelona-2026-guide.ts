@@ -6,7 +6,7 @@ export const POST: Post = {
   title: "EPT Barcelona 2026 — Complete Player Guide: Schedule, Buy-Ins & How to Qualify",
   desc: "EPT Barcelona 2026 runs Aug 16–29 at Casino Barcelona. From $0.50 Power Path satellites to the €5,300 Main Event — complete first-timer guide with schedule, buy-ins, hotel picks, and day-by-day tips.",
   tldr: "EPT Barcelona 2026 is Aug 16–29 at Casino Barcelona. Main Event buy-in: €5,300. Cheapest online path: Power Path from $0.50 → Gold Pass (€5,300 ME + 8-night hotel + €690 expenses). You need a PokerStars Live account and a valid passport. Book hotels early — August is peak season.",
-  category: "tournament",
+  category: "초보 가이드",
   date: "2026-06-17",
   updated: "2026-06-17",
   keepImagesInBody: true,
@@ -29,29 +29,36 @@ export const POST: Post = {
   content: `
 I almost missed my first EPT because of a form I'd never heard of.
 
-I'd won my satellite seat, booked flights to Barcelona, sorted the hotel — and then someone at the casino desk told me I needed to complete a **Source of Funds declaration** before I could hand over a single euro. I had no idea what that was. The guy behind me in line, a regular, just laughed and said: "Should've done that online weeks ago."
+I'd won my satellite seat, booked flights to Barcelona, sorted the hotel — and then someone at the casino desk told me I needed to complete a ==**Source of Funds declaration**== before I could hand over a single euro. I had no idea what that was. The guy behind me in line, a regular, just laughed and said: ==r:"Should've done that online weeks ago."==
 
 Don't be me. This guide covers everything — from winning your seat for under a dollar to what actually happens when you walk into Casino Barcelona on Day 1.
 
 ---
 
+> **Quick answer**
+> EPT Barcelona 2026 is ==**Aug 16–29**== at Casino Barcelona. Main Event: ==**€5,300**==. Cheapest path: Power Path from $0.50 → ==g:Gold Pass (€5,300 ME seat + 8-night hotel + €690 expenses)==. You need a PokerStars Live account and a valid passport. ==r:Book hotels now — August is peak season.==
+
+---
+
 ## What Is EPT Barcelona 2026? The Numbers in 30 Seconds
 
-The **European Poker Tour (EPT)** is the flagship live poker series run by PokerStars. Barcelona is its oldest and biggest stop — the one every European player has on their bucket list.
+The ==**European Poker Tour (EPT)**== is the flagship live poker series run by PokerStars. Barcelona is its oldest and biggest stop — the one every European player has on their bucket list.
 
-Here's what matters for 2026:
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Stat | 2026 (Confirmed) | 2025 (Actual) |
-|---|---|---|
-| Dates | Aug 16–29, 2026 | Aug 18–31, 2025 |
+|:---:|---|---|
+| Dates | ==**Aug 16–29, 2026**== | Aug 18–31, 2025 |
 | Venue | Casino Barcelona | Casino Barcelona |
-| Main Event buy-in | €5,300 | €5,300 |
-| 2025 entries | — | **2,045** (3rd largest in EPT history) |
-| 2025 prize pool | — | **€9,918,250** |
-| 2025 first prize | — | **€1,217,175** (Thomas Eychenne, France) |
+| Main Event buy-in | ==**€5,300**== | €5,300 |
+| 2025 entries | — | ==g:**2,045**== (3rd largest in EPT history) |
+| 2025 prize pool | — | ==g:**€9,918,250**== |
+| 2025 first prize | — | ==g:**€1,217,175**== (Thomas Eychenne, France) |
 | Events range | €825 – €100,000 | €825 – €100,000 |
 
-The 2025 field of 2,045 was the **third-largest Main Event in EPT history**. Expect similar or bigger numbers in 2026 — Barcelona consistently draws the largest fields on the European calendar.
+</div>
+
+The 2025 field of 2,045 was the ==**third-largest Main Event in EPT history**==. Expect similar or bigger numbers in 2026 — Barcelona consistently draws the largest fields on the European calendar.
 
 ---
 
@@ -59,36 +66,42 @@ The 2025 field of 2,045 was the **third-largest Main Event in EPT history**. Exp
 
 The festival runs two parallel series: the **PokerStars Open** (accessible entry points) and the **EPT** (premium events). Both share Casino Barcelona.
 
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
+
 | Event | Dates | Buy-In | Who It's For |
 |---|---|---|---|
 | PokerStars Cup | Aug 20–21 | **€825** | Best entry point for first-timers |
 | PokerStars Open Main Event | Aug 16–22 | **€1,650** | Mid-stakes grinders |
 | PokerStars Open High Roller | Aug 21–23 | **€2,700** | Bridge between Open & EPT |
 | EPT Mystery Bounty | Aug 25–27 | **€3,250** | Knockout format with random bounties |
-| **EPT Main Event** | **Aug 22–29** | **€5,300** | The one everyone wants |
+| ==**EPT Main Event**== | ==**Aug 22–29**== | ==**€5,300**== | The one everyone wants |
 | EPT High Roller | Aug 27–29 | **€10,300** | Serious regulars |
 | EPT Super High Roller | Aug 21–23 | **€100,000** | Elite pros only |
 
-> **First-timer tip:** If the €5,300 Main Event feels like a stretch, the **€825 PokerStars Cup** is a legitimate tournament with real prize money. Many players use it as a warm-up before taking a shot at the Main Event.
+</div>
+
+> **First-timer tip:** If the €5,300 Main Event feels like a stretch, the ==g:**€825 PokerStars Cup**== is a legitimate tournament with real prize money. Many players use it as a warm-up before taking a shot at the Main Event.
 
 ---
 
 ## How to Qualify Online for EPT Barcelona 2026 — PokerStars Power Path From $0.50
 
-This is how most people in the field get there — not by wiring €5,300 to PokerStars, but by grinding their way up a four-step satellite ladder.
+This is how most people in the field get there — ==r:not by wiring €5,300 to PokerStars==, but by grinding their way up a four-step satellite ladder.
 
 ### Power Path: The Four-Step Route
 
-PokerStars designed Power Path specifically to stop pros from buying directly into the final stage. That protects recreational players — and it's genuinely the cheapest path to a live EPT seat.
+PokerStars designed Power Path specifically to ==stop pros from buying directly into the final stage==. That protects recreational players — and it's genuinely the cheapest path to a live EPT seat.
 
-**How it works:**
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Step | Format | Buy-In | Can Buy In Directly? |
 |---|---|---|---|
 | Step 1 | $0.50 Spin & Go (or $1 On Demand SNG) | **$0.50** | ✅ Yes (or free daily ticket) |
 | Step 2 | $1.50 MTT | **$1.50** | ✅ Yes |
 | Step 3 | $11 MTT | **$11** | ✅ Yes |
-| Step 4 | $55 MTT | — | ❌ **Must win a Step 3 ticket** |
+| Step 4 | $55 MTT | — | ==r:❌ Must win a Step 3 ticket== |
+
+</div>
 
 Win Step 4 and you receive one of three Power Passes:
 
@@ -96,16 +109,16 @@ Win Step 4 and you receive one of three Power Passes:
 |---|---|---|
 | Bronze Pass | ~$530 | Online tournament credits |
 | Silver Pass | ~$2,300 | Mid-tier live event entries |
-| **Gold Pass** | **~$10,300** | €5,300 ME + €1,100 side event + 8 nights hotel + expenses |
+| ==**Gold Pass**== | ==g:**~$10,300**== | ==g:€5,300 ME + €1,100 side event + 8 nights hotel + expenses== |
 
-The **Gold Pass** is the one you want. PokerStars aims for at least 25% of the Main Event field to be satellite qualifiers — so the seats are real.
+==g:The **Gold Pass** is the one you want.== PokerStars aims for at least 25% of the Main Event field to be satellite qualifiers — so the seats are real.
 
 ### How to Find Power Path in the PokerStars Client
 
 1. Open PokerStars → click **Events** tab
 2. Search for "Power Path" or "EPT Barcelona"
 3. Select your starting step
-4. You'll also see free Step 1 tickets credited daily if you play any real-money game
+4. You'll also see ==g:free Step 1 tickets credited daily== if you play any real-money game
 
 ---
 
@@ -116,17 +129,19 @@ Don't want to grind four steps? PokerStars also runs **direct satellites** for E
 - Buy-ins from **€1 / $1** up to **€550+**
 - Win a seat or travel package outright
 - Find them under **Events → Live Events → EPT Barcelona** in the PokerStars lobby
-- Available in the run-up to the festival — frequency increases from late July
+- Available in the run-up to the festival — ==frequency increases from late July==
 
-> **The math:** A €109 direct satellite typically sends 1 in every 10–15 players to the Main Event. If you're a winning player, this route can make sense. For casual players, Power Path gives more shots per dollar.
+> **The math:** A €109 direct satellite typically sends 1 in every 10–15 players to the Main Event. If you're a winning player, this route can make sense. ==r:For casual players, Power Path gives more shots per dollar.==
 
 ---
 
 ## EPT Barcelona 2026 Total Trip Cost — Realistic Budget Breakdown
 
-Here's what competitors don't tell you: the buy-in is just part of the cost. Let's break down what a realistic EPT Barcelona trip actually costs.
+==r:Here's what competitors don't tell you: the buy-in is just part of the cost.== Let's break down what a realistic EPT Barcelona trip actually costs.
 
 ### Budget Scenario: PokerStars Cup (€825)
+
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Item | Estimated Cost |
 |---|---|
@@ -134,9 +149,13 @@ Here's what competitors don't tell you: the buy-in is just part of the cost. Let
 | Hotel (7 nights, mid-range near casino) | €700–€1,200 |
 | PokerStars Cup buy-in | **€825** |
 | Daily food & transport | €50–€80/day × 7 = €350–€560 |
-| **Total trip estimate** | **€2,025–€2,985** |
+| ==**Total trip estimate**== | ==**€2,025–€2,985**== |
+
+</div>
 
 ### Standard Scenario: EPT Main Event (€5,300)
+
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Item | Estimated Cost |
 |---|---|
@@ -145,49 +164,55 @@ Here's what competitors don't tell you: the buy-in is just part of the cost. Let
 | EPT Main Event buy-in | **€5,300** |
 | Daily food & transport (10 days) | €500–€800 |
 | Side events (optional) | €825–€3,250 |
-| **Total trip estimate** | **€7,750–€11,550** |
+| ==**Total trip estimate**== | ==**€7,750–€11,550**== |
+
+</div>
 
 ### Gold Pass Scenario: Win It Online
+
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Item | Estimated Cost |
 |---|---|
 | Power Path buy-ins to reach Step 4 | **$11–$55** |
-| Gold Pass covers: ME entry + side event + 8 nights | ✅ Included (~€10,300 value) |
+| Gold Pass covers: ME entry + side event + 8 nights | ==g:✅ Included (~€10,300 value)== |
 | Flights (not always included) | €150–€400 |
 | Food & extra days | €400–€600 |
-| **Total out-of-pocket** | **~€550–€1,000** |
+| ==**Total out-of-pocket**== | ==g:**~€550–€1,000**== |
 
-The Gold Pass route is by far the most cost-effective. Even if you spend $100 grinding your way to Step 4, a Gold Pass represents a 100× return on value.
+</div>
+
+==g:The Gold Pass route is by far the most cost-effective.== Even if you spend $100 grinding your way to Step 4, a Gold Pass represents a 100× return on value.
 
 ---
 
 ## PokerStars Live Account Setup & Source of Funds Declaration
 
-Two admin tasks that catch first-timers off guard. Do both **before you land in Barcelona**.
+==r:Two admin tasks that catch first-timers off guard.== Do both **before you land in Barcelona**.
 
 ### 1. Create a PokerStars Live Account (Mandatory)
 
-Every EPT player must have a PokerStars Live account — without it, you can't register for any tournament.
+Every EPT player must have a PokerStars Live account — ==r:without it, you can't register for any tournament==.
 
 **Steps:**
-1. Download the **PokerStars Live** app (iOS or Android)
+1. Download the ==**PokerStars Live**== app (iOS or Android)
 2. Tap the icon in the top-right corner
 3. Follow the on-screen instructions
 4. Complete identity verification (passport photo required)
 
-Creating your account at the casino desk adds 20–30 minutes to your registration time. Do it at home.
+==Creating your account at the casino desk adds 20–30 minutes to your registration time. Do it at home.==
 
 ### 2. Source of Funds Declaration (Cash Transactions)
 
-This is the one almost nobody warns you about. Any time you pay for a tournament with **cash** at Casino Barcelona, Spanish regulations require you to declare the source of that money.
+This is the one almost nobody warns you about. Any time you pay for a tournament with **cash** at Casino Barcelona, ==r:Spanish regulations require you to declare the source of that money==.
 
 **How to complete it in advance:**
 1. Log into your **PokerStars Live** account at [pokerstarslive.com](https://www.pokerstarslive.com/ept/barcelona/)
 2. Find the **Source of Funds** form in your account compliance section (look for the link on the official EPT Barcelona page under "Buy-in")
 3. Fill out the form (income source + supporting documentation)
-4. Submit and wait for confirmation — usually processed same day
+4. Submit and wait for confirmation — ==g:usually processed same day==
 
-If you're paying by credit/debit card or pre-purchased tournament tokens, you may not need this. But if there's any chance you'll use cash, complete it now. The form takes 10 minutes. Doing it at the casino desk takes 45.
+==r:If there's any chance you'll use cash, complete it now.== The form takes 10 minutes. Doing it at the casino desk takes 45.
 
 ---
 
@@ -204,31 +229,35 @@ It's adjoined to the 5-star **Hotel Arts** right on the waterfront. The Port Ol�
 
 ### Entry Requirements
 
-- Minimum age: **18+**
-- Valid **government-issued passport or national ID** required
-- Free admission to the casino
+- Minimum age: ==**18+**==
+- Valid ==**government-issued passport or national ID**== required
+- ==g:Free admission to the casino==
 
 ### Dress Code
 
 Casino Barcelona is more relaxed than Monte Carlo — but there are real rules:
 
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
+
 | ✅ Allowed | ❌ Not Allowed |
 |---|---|
-| Smart casual | Sportswear (jerseys, tracksuits) |
-| Chino / dress trousers | Shorts (any kind) |
-| Sneakers | Flip-flops / espadrilles |
-| T-shirts (non-athletic) | Swimsuits or beachwear |
-| — | Sleeveless undershirts |
-| — | Motorcycle helmets |
-| — | Large backpacks |
+| Smart casual | ==r:Sportswear (jerseys, tracksuits)== |
+| Chino / dress trousers | ==r:Shorts (any kind)== |
+| Sneakers | ==r:Flip-flops / espadrilles== |
+| T-shirts (non-athletic) | ==r:Swimsuits or beachwear== |
+| — | ==r:Sleeveless undershirts== |
+| — | ==r:Motorcycle helmets== |
+| — | ==r:Large backpacks== |
 
-> **Practical note:** The official PokerStars Live page states "Casual, but no sportswear/shorts." Even smart-looking shorts are not permitted in the tournament area. The casino is 5 minutes from the beach — change before you come in.
+</div>
+
+> **Practical note:** The official PokerStars Live page states ==r:"Casual, but no sportswear/shorts."== Even smart-looking shorts are not permitted in the tournament area. The casino is 5 minutes from the beach — ==r:change before you come in==.
 
 ---
 
 ## Where to Stay for EPT Barcelona 2026 — Hotels Near Casino Barcelona
 
-August is peak tourist season in Barcelona. Book early. Prices for proximity to the casino roughly triple compared to low season.
+==r:August is peak tourist season in Barcelona. Book early.== Prices for proximity to the casino roughly triple compared to low season.
 
 ### Right Next Door (3 min or less)
 
@@ -236,7 +265,7 @@ August is peak tourist season in Barcelona. Book early. Prices for proximity to 
 |---|---|---|---|
 | **Hotel Arts Barcelona** ⭐⭐⭐⭐⭐ | Adjoined | Ultra-luxury, where Gold Pass qualifiers often stay | €400–€700/night |
 | **Sofitel Barcelona Skipper** ⭐⭐⭐⭐⭐ | 3-min walk | Luxury, business crowd | €250–€450/night |
-| **Hotel SB Icaria** ⭐⭐⭐⭐ | 3-min walk | Rooftop pool, great value, EPT favourite | €150–€280/night |
+| ==g:**Hotel SB Icaria**== ⭐⭐⭐⭐ | 3-min walk | Rooftop pool, great value, EPT favourite | ==g:€150–€280/night== |
 
 ### Mid-Range (15–25 min walk or short metro)
 
@@ -252,24 +281,26 @@ August is peak tourist season in Barcelona. Book early. Prices for proximity to 
 - **Hotel Lyon** (near Gothic Quarter): ~€60–€90/night, 18-min metro + walk
 - **Various Ibis hotels** in Sant Marti: ~€80–€120/night
 
-> **Our pick for first-timers:** Hotel SB Icaria hits the sweet spot — three minutes to the felt, rooftop pool for recovery days, and prices that don't require a final table finish to justify.
+> **Our pick for first-timers:** ==g:Hotel SB Icaria hits the sweet spot== — three minutes to the felt, rooftop pool for recovery days, and prices that don't require a final table finish to justify.
 
 ---
 
 ## How to Get to Casino Barcelona From Barcelona El Prat Airport
 
-Barcelona El Prat (BCN) is about 12km from the casino — roughly 25–40 minutes depending on traffic.
+Barcelona El Prat (BCN) is about ==12km from the casino== — roughly 25–40 minutes depending on traffic.
 
-### Options
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Method | Duration | Cost | Notes |
 |---|---|---|---|
-| **Taxi / Uber** | 25–35 min | €30–€40 | Easiest with luggage |
+| ==g:**Taxi / Uber**== | 25–35 min | €30–€40 | ==g:Easiest with luggage== |
 | **Aerobus (A1)** | 35 min | ~€6–7 | To Plaça Catalunya, then taxi or metro to casino |
 | **Metro (L9 Sud)** | 45–55 min | ~€5–6 | L9 Sud → transfer to L4 → Ciutadella/Vila Olímpica (10-min walk to casino) |
 | **PokerStars Travel** | Variable | Small fee | Pre-arranged transfer, book via PokerStars Live |
 
-> **With luggage:** Take a taxi or pre-book PokerStars Travel. The metro with bags and a 45-minute journey is miserable after a long flight. You'll be at the casino for two weeks — save the stress for the tables.
+</div>
+
+> **With luggage:** Take a taxi or pre-book PokerStars Travel. ==r:The metro with bags and a 45-minute journey is miserable after a long flight.== You'll be at the casino for two weeks — save the stress for the tables.
 
 ---
 
@@ -281,14 +312,14 @@ Barcelona El Prat (BCN) is about 12km from the casino — roughly 25–40 minute
 
 ## Day 1 of the EPT Main Event — What First-Timers Need to Know
 
-Day 1 is split across multiple starting flights (Day 1A, 1B, 1C, sometimes 1D). You pick one. Most players choose Day 1B or 1C — they're typically larger fields, which sounds intimidating but also means more recreational players.
+Day 1 is split across multiple starting flights (Day 1A, 1B, 1C, sometimes 1D). You pick one. Most players choose ==Day 1B or 1C== — they're typically larger fields, which sounds intimidating but also means more recreational players.
 
 ### What to Bring
 
-- **Passport or national ID** (no passport, no play — this is non-negotiable)
-- Your **PokerStars Live account** verified and active
+- ==**Passport or national ID**== (==r:no passport, no play== — this is non-negotiable)
+- Your ==**PokerStars Live account**== verified and active
 - **Source of Funds form** completed if paying with cash
-- A light jacket (the casino AC is aggressive in August)
+- A light jacket (==r:the casino AC is aggressive in August==)
 - Snacks for the pocket (official breaks are infrequent)
 - Headphones (optional, but they help with table noise)
 
@@ -296,22 +327,26 @@ Day 1 is split across multiple starting flights (Day 1A, 1B, 1C, sometimes 1D). 
 
 > Times below are based on historical EPT Barcelona schedules. The official 2026 schedule will be confirmed on the PokerStars Live page — always check before you travel.
 
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
+
 | Time | What Happens |
 |---|---|
-| ~11:00 | Registration opens (be there 30 min early minimum) |
+| ~11:00 | Registration opens (==r:be there 30 min early minimum==) |
 | ~12:00 | Cards in the air — Day 1 begins |
 | ~20:30 | End of play for Day 1 (usually 8–10 levels) |
-| Day 2+ | Only players who bagged chips continue |
+| Day 2+ | ==g:Only players who bagged chips continue== |
+
+</div>
 
 ### Common First-Timer Mistakes
 
-**1. Arriving at start time.** Registration queues can be 30–45 minutes long. Arrive at least 30 minutes before cards in the air.
+**1. Arriving at start time.** ==r:Registration queues can be 30–45 minutes long.== Arrive at least 30 minutes before cards in the air.
 
 **2. Not knowing the blind structure.** Download the schedule from the official PokerStars Live page before you arrive. Know when the first break is, how long levels are, and what the blinds look like at your starting stack.
 
-**3. Playing out of position too wide early.** With deep stacks (100BB+), Day 1 of the EPT Main Event rewards patience. The field will make mistakes. You don't need to push edges in the first two levels.
+**3. Playing too wide early.** With deep stacks (100BB+), ==Day 1 of the EPT Main Event rewards patience==. The field will make mistakes. You don't need to push edges in the first two levels.
 
-**4. Forgetting to bag your chips.** At the end of the day, staff will instruct you to bag and tag. Don't leave without getting a bag from the staff — your chip count is recorded and signed.
+**4. Forgetting to bag your chips.** ==r:Don't leave without getting a bag from staff== — your chip count is recorded and signed at the end of Day 1.
 
 ---
 
@@ -320,14 +355,14 @@ Day 1 is split across multiple starting flights (Day 1A, 1B, 1C, sometimes 1D). 
 Print this and check it off before you leave for the airport:
 
 **Documents**
-- [ ] Passport (or national ID for EU citizens)
+- [ ] ==**Passport**== (or national ID for EU citizens)
 - [ ] PokerStars Live account verified on your phone
-- [ ] Source of Funds declaration completed (if paying cash)
+- [ ] ==Source of Funds declaration completed== (if paying cash)
 - [ ] Hotel confirmation
 - [ ] Travel insurance
 
 **For the Casino**
-- [ ] Smart casual clothing (no flip-flops, no sportswear)
+- [ ] Smart casual clothing (==r:no flip-flops, no shorts, no sportswear==)
 - [ ] Comfortable shoes (you'll stand in queues)
 - [ ] Light jacket for the casino AC
 - [ ] Earbuds/headphones
@@ -336,26 +371,31 @@ Print this and check it off before you leave for the airport:
 **Practical**
 - [ ] Euros in cash + card (ATMs near Port Olímpic)
 - [ ] Sunscreen (beach recovery days are real)
-- [ ] Basic Spanish phrases printed out (casino staff speak English, restaurants vary)
+- [ ] Basic Spanish phrases (casino staff speak English, restaurants vary)
 
 ---
 
 ## FAQ — EPT Barcelona 2026
 
-**Can I play EPT Barcelona if I've never played a live tournament before?**
-Yes — but start with the €825 PokerStars Cup rather than the Main Event. The Cup has a smaller field, shorter structure, and a lower buy-in. It's the best way to experience a PokerStars Live festival before committing €5,300.
+**Q. Can I play EPT Barcelona if I've never played a live tournament before?**
 
-**Do I need a PokerStars account to play, or just a PokerStars Live account?**
-You need a **PokerStars Live** account (separate from your online play account). Create it via the PokerStars Live app on iOS or Android before you arrive. Your online PokerStars account does not automatically count.
+A. Yes — but ==g:start with the €825 PokerStars Cup== rather than the Main Event. The Cup has a smaller field, shorter structure, and a lower buy-in. It's the best way to experience a PokerStars Live festival before committing €5,300.
 
-**What is the Source of Funds form and is it really required?**
-Yes. Under Spanish casino regulations, any cash transaction over a certain threshold requires you to declare the origin of the funds. This applies to tournament buy-ins paid in cash at the Casino Barcelona desk. You can complete the form online through your PokerStars Live account in advance — it takes about 10 minutes. Card or pre-purchased token payments may not require it.
+**Q. Do I need a PokerStars account to play, or just a PokerStars Live account?**
 
-**What happens if I win a Power Path Gold Pass — is the hotel automatically booked?**
-PokerStars will contact you after you win the pass. The Gold Pass typically includes: €5,300 ME entry, a €1,100 side event credit, 8 nights accommodation (usually Hotel Arts or equivalent), and a daily expense allowance. You'll coordinate booking with the PokerStars Live team — they have dedicated support.
+A. You need a ==**PokerStars Live**== account (separate from your online play account). Create it via the PokerStars Live app on iOS or Android before you arrive. ==r:Your online PokerStars account does not automatically count.==
 
-**Is Barcelona safe for poker players carrying large amounts of cash?**
-Barcelona's Port Olímpic area is generally safe. That said, pickpocketing is common in tourist-heavy areas — Las Ramblas especially. Use the casino's chip token system for large buy-ins rather than carrying cash, and keep winnings in the casino safe or hotel room safe until you need them.
+**Q. What is the Source of Funds form and is it really required?**
+
+A. Yes. Under Spanish casino regulations, any cash transaction over a certain threshold requires you to declare the origin of the funds. You can complete the form online through your PokerStars Live account in advance — ==g:it takes about 10 minutes==. Card or pre-purchased token payments may not require it.
+
+**Q. What happens if I win a Power Path Gold Pass — is the hotel automatically booked?**
+
+A. PokerStars will contact you after you win the pass. The Gold Pass typically includes: ==g:€5,300 ME entry + €1,100 side event credit + 8 nights hotel + daily expenses==. You'll coordinate booking with the PokerStars Live team — they have dedicated support.
+
+**Q. Is Barcelona safe for poker players carrying large amounts of cash?**
+
+A. Barcelona's Port Olímpic area is generally safe. ==r:Pickpocketing is common in tourist-heavy areas — Las Ramblas especially.== Use the casino's chip token system for large buy-ins rather than carrying cash, and keep winnings in the hotel room safe.
 
 ---
 
