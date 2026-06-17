@@ -5,7 +5,7 @@ export const POST: Post = {
   seoTitle: "First Time at EPT Barcelona? Everything You Need to Play in 2026",
   title: "EPT Barcelona 2026 — Complete Player Guide: Schedule, Buy-Ins & How to Qualify",
   desc: "EPT Barcelona 2026 runs Aug 16–29 at Casino Barcelona. From $0.50 Power Path satellites to the €5,300 Main Event — complete first-timer guide with schedule, buy-ins, hotel picks, and day-by-day tips.",
-  tldr: "EPT Barcelona 2026 is Aug 16–29 at Casino Barcelona. Main Event buy-in: €5,300. Cheapest online path: Power Path from $0.50 → Gold Pass (€5,300 ME + hotel + flights). You need a PokerStars Live account and a valid passport. Book hotels early — August is peak season.",
+  tldr: "EPT Barcelona 2026 is Aug 16–29 at Casino Barcelona. Main Event buy-in: €5,300. Cheapest online path: Power Path from $0.50 → Gold Pass (€5,300 ME + 8-night hotel + €690 expenses). You need a PokerStars Live account and a valid passport. Book hotels early — August is peak season.",
   category: "tournament",
   date: "2026-06-17",
   updated: "2026-06-17",
@@ -51,7 +51,7 @@ Here's what matters for 2026:
 | 2025 first prize | — | **€1,217,175** (Thomas Eychenne, France) |
 | Events range | €825 – €100,000 | €825 – €100,000 |
 
-In 2025 the field broke 2,000 entries for the second time. Expect similar or bigger numbers in 2026 — EPT Barcelona has grown every year since 2022.
+The 2025 field of 2,045 was the **third-largest Main Event in EPT history**. Expect similar or bigger numbers in 2026 — Barcelona consistently draws the largest fields on the European calendar.
 
 ---
 
@@ -95,7 +95,7 @@ Win Step 4 and you receive one of three Power Passes:
 | Pass | Value | What's Included |
 |---|---|---|
 | Bronze Pass | ~$530 | Online tournament credits |
-| Silver Pass | ~$2,500 | Mid-tier live event entries |
+| Silver Pass | ~$2,300 | Mid-tier live event entries |
 | **Gold Pass** | **~$10,300** | €5,300 ME + €1,100 side event + 8 nights hotel + expenses |
 
 The **Gold Pass** is the one you want. PokerStars aims for at least 25% of the Main Event field to be satellite qualifiers — so the seats are real.
@@ -182,10 +182,10 @@ Creating your account at the casino desk adds 20–30 minutes to your registrati
 This is the one almost nobody warns you about. Any time you pay for a tournament with **cash** at Casino Barcelona, Spanish regulations require you to declare the source of that money.
 
 **How to complete it in advance:**
-1. Log into your PokerStars Live account online
-2. Navigate to **Account → Compliance → Source of Funds**
-3. Fill out the form (income source, documentation)
-4. Submit and wait for confirmation (usually same day)
+1. Log into your **PokerStars Live** account at [pokerstarslive.com](https://www.pokerstarslive.com/ept/barcelona/)
+2. Find the **Source of Funds** form in your account compliance section (look for the link on the official EPT Barcelona page under "Buy-in")
+3. Fill out the form (income source + supporting documentation)
+4. Submit and wait for confirmation — usually processed same day
 
 If you're paying by credit/debit card or pre-purchased tournament tokens, you may not need this. But if there's any chance you'll use cash, complete it now. The form takes 10 minutes. Doing it at the casino desk takes 45.
 
@@ -215,13 +215,14 @@ Casino Barcelona is more relaxed than Monte Carlo — but there are real rules:
 | ✅ Allowed | ❌ Not Allowed |
 |---|---|
 | Smart casual | Sportswear (jerseys, tracksuits) |
-| Shorts (smart) | Flip-flops / espadrilles |
-| Sneakers | Swimsuits or beachwear |
-| T-shirts | Sleeveless undershirts |
+| Chino / dress trousers | Shorts (any kind) |
+| Sneakers | Flip-flops / espadrilles |
+| T-shirts (non-athletic) | Swimsuits or beachwear |
+| — | Sleeveless undershirts |
 | — | Motorcycle helmets |
 | — | Large backpacks |
 
-> **Practical note:** The casino is 5 minutes from the beach. Plenty of players make the mistake of walking over in flip-flops after a swim. They turn you away at the door — no exceptions.
+> **Practical note:** The official PokerStars Live page states "Casual, but no sportswear/shorts." Even smart-looking shorts are not permitted in the tournament area. The casino is 5 minutes from the beach — change before you come in.
 
 ---
 
@@ -229,22 +230,22 @@ Casino Barcelona is more relaxed than Monte Carlo — but there are real rules:
 
 August is peak tourist season in Barcelona. Book early. Prices for proximity to the casino roughly triple compared to low season.
 
-### By the Casino (3–10 min walk)
+### Right Next Door (3 min or less)
 
 | Hotel | Distance | Vibe | Approx. Cost |
 |---|---|---|---|
-| **Hotel Arts Barcelona** ⭐⭐⭐⭐⭐ | Adjoined | Ultra-luxury, where qualifiers often stay | €400–€700/night |
+| **Hotel Arts Barcelona** ⭐⭐⭐⭐⭐ | Adjoined | Ultra-luxury, where Gold Pass qualifiers often stay | €400–€700/night |
 | **Sofitel Barcelona Skipper** ⭐⭐⭐⭐⭐ | 3-min walk | Luxury, business crowd | €250–€450/night |
 | **Hotel SB Icaria** ⭐⭐⭐⭐ | 3-min walk | Rooftop pool, great value, EPT favourite | €150–€280/night |
-| **H10 Marina Barcelona** ⭐⭐⭐⭐ | 10-min walk | Clean, modern, quieter | €120–€220/night |
 
 ### Mid-Range (15–25 min walk or short metro)
 
 | Hotel | Distance | Notes |
 |---|---|---|
-| **Hotel Paxton** (Poblenou) | 15-min walk | Trendy neighbourhood, good value |
-| **NH Barcelona Diagonal Center** | 24-min walk | Reliable chain, good beds |
-| **Four Points by Sheraton** (Sant Marti) | 20-min walk | Business-class comfort |
+| **H10 Marina Barcelona** ⭐⭐⭐⭐ | ~19-min walk | Modern, quieter, gym & Mediterranean restaurant |
+| **Hotel Paxton** (Poblenou) | ~15-min walk | Trendy neighbourhood, good value |
+| **NH Barcelona Diagonal Center** | ~24-min walk | Reliable chain, good beds |
+| **Four Points by Sheraton** (Sant Marti) | ~20-min walk | Business-class comfort |
 
 ### Budget (30+ min walk or 1–2 metro stops)
 
@@ -264,8 +265,8 @@ Barcelona El Prat (BCN) is about 12km from the casino — roughly 25–40 minute
 | Method | Duration | Cost | Notes |
 |---|---|---|---|
 | **Taxi / Uber** | 25–35 min | €30–€40 | Easiest with luggage |
-| **Aerobus (A1)** | 35 min | ~€6.75 | To Plaça Catalunya, then taxi to casino |
-| **Metro (L9 Sud)** | 45–55 min | ~€5.15 | Transfer at Torrassa to L1, walk from Ciutadella |
+| **Aerobus (A1)** | 35 min | ~€6–7 | To Plaça Catalunya, then taxi or metro to casino |
+| **Metro (L9 Sud)** | 45–55 min | ~€5–6 | L9 Sud → transfer to L4 → Ciutadella/Vila Olímpica (10-min walk to casino) |
 | **PokerStars Travel** | Variable | Small fee | Pre-arranged transfer, book via PokerStars Live |
 
 > **With luggage:** Take a taxi or pre-book PokerStars Travel. The metro with bags and a 45-minute journey is miserable after a long flight. You'll be at the casino for two weeks — save the stress for the tables.
@@ -287,10 +288,12 @@ Day 1 is split across multiple starting flights (Day 1A, 1B, 1C, sometimes 1D). 
 
 ### The Day 1 Timeline
 
+> Times below are based on historical EPT Barcelona schedules. The official 2026 schedule will be confirmed on the PokerStars Live page — always check before you travel.
+
 | Time | What Happens |
 |---|---|
-| 11:00 | Registration opens (be there 30 min early minimum) |
-| 12:00 | Cards in the air — Day 1 begins |
+| ~11:00 | Registration opens (be there 30 min early minimum) |
+| ~12:00 | Cards in the air — Day 1 begins |
 | ~20:30 | End of play for Day 1 (usually 8–10 levels) |
 | Day 2+ | Only players who bagged chips continue |
 
