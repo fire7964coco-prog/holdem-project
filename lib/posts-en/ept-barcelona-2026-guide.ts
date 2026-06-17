@@ -273,6 +273,12 @@ Barcelona El Prat (BCN) is about 12km from the casino — roughly 25–40 minute
 
 ---
 
+![EPT Barcelona tournament floor — Casino Barcelona main room packed with players at green felt tables under golden spotlights](/images/ept-barcelona-2026-tournament-floor.webp)
+
+*This is what you're walking into. Casino Barcelona's main tournament floor during EPT — dozens of tables, a packed field, and a clock counting down. The player with headphones at the front? That'll be you.*
+
+---
+
 ## Day 1 of the EPT Main Event — What First-Timers Need to Know
 
 Day 1 is split across multiple starting flights (Day 1A, 1B, 1C, sometimes 1D). You pick one. Most players choose Day 1B or 1C — they're typically larger fields, which sounds intimidating but also means more recreational players.
