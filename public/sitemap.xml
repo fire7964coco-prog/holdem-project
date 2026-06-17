@@ -276,7 +276,7 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- 블로그 포스트 (46편) -->
+  <!-- 블로그 포스트 (47편) -->
 
   <url>
     <loc>https://www.holdemmaster.com/blog/ak-offsuit-strategy</loc>
@@ -295,6 +295,13 @@
   <url>
     <loc>https://www.holdemmaster.com/blog/apt-incheon-2026-guide</loc>
     <lastmod>2026-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.holdemmaster.com/blog/apt-jeju-2026-fall-guide</loc>
+    <lastmod>2026-06-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
