@@ -31,10 +31,12 @@ I once watched a regular at my local poker club fold pocket queens from UTG. The
 
 Three orbits later he limped Q♠Q♦ on the button, trapped a UTG raiser, and stacked them. Same hand, different seat — completely different result.
 
-That's position. Not a suggestion. A structural edge that compounds every single hand you play.
+That's position. ==r:Not a suggestion.== A structural edge that compounds every single hand you play.
+
+---
 
 > **Quick answer**
-> The button and cutoff produce most of your winnings because acting last gives you 15–25% more equity realization than out-of-position players. UTG opens only ~13% of hands; the button opens ~45%. And position rewrites every postflop decision — c-bet frequency, bluff sizing, pot control — not just what you open preflop.
+> The button and cutoff produce most of your winnings because acting last gives you ==**15–25% more equity realization**== than out-of-position players. UTG opens only ~13% of hands; the button opens ~45%. And position rewrites every postflop decision — c-bet frequency, bluff sizing, pot control — not just what you open preflop.
 
 ---
 
@@ -49,9 +51,9 @@ This single fact is worth more than any hand reading skill or bluffing trick. He
 | **OOP (act first)** | Zero information — you bet blind into the unknown |
 | **IP (act last)** | Your opponent's check, bet, or fold before you decide |
 
-GTO solvers put an exact number on it: **IP players realize 85–100% of their theoretical equity. OOP players realize only 60–85%.** That 15–25% gap doesn't come from better cards — both players hold equivalent card distributions over thousands of hands. It comes entirely from acting last.
+GTO solvers put an exact number on it: ==g:**IP players realize 85–100% of their theoretical equity.**== ==r:OOP players realize only 60–85%.== That 15–25% gap doesn't come from better cards — both players hold equivalent card distributions over thousands of hands. It comes entirely from acting last.
 
-Think about what that means at a ₩10/₩20 live game running 30 hands per hour. Over eight hours, if you're consistently OOP, you're bleeding equity on every marginal hand. Position is the leak you can fix right now — no studying hand histories, no solver work — just sitting down in the right seat.
+Think about what that means at a ₩10/₩20 live game running 30 hands per hour. Over eight hours, if you're consistently OOP, you're ==r:bleeding equity on every marginal hand==. Position is the leak you can fix right now — no studying hand histories, no solver work — just ==g:sitting down in the right seat==.
 
 ---
 
@@ -83,7 +85,7 @@ For a full seat-by-seat name breakdown and the 6-max vs 9-max range comparison, 
 
 ## Why Is the Button the Best Position in Poker? (Solver-Backed Proof)
 
-The button acts **last on every postflop street — guaranteed**. No other seat can say that. From the SB onward you're always first; the button is always last.
+The button acts ==**last on every postflop street — guaranteed**==. No other seat can say that. ==r:From the SB onward you're always first; the button is always last.==
 
 This translates directly into profit. Studies comparing position profitability across millions of hands consistently show:
 
@@ -91,9 +93,9 @@ This translates directly into profit. Studies comparing position profitability a
 - **Cutoff:** Second-most profitable, only the button acts behind you
 - **UTG / SB:** Consistently the biggest losing seats when measured in BB/100
 
-The button can open ~45% of hands **profitably** — not recklessly — because position compensates for weaker card strength. You'll see every opponent check, bet, or fold before you act on the flop. You can take free cards with draws, value-bet thin rivers, and fold to aggression without paying for more streets.
+The button can open ==g:~45% of hands **profitably**== — not recklessly — because position compensates for weaker card strength. You'll see every opponent check, bet, or fold before you act on the flop. You can take free cards with draws, value-bet thin rivers, and fold to aggression without paying for more streets.
 
-The cutoff is second-best for one reason: only the button acts behind you. If the button folds (which happens often), you become the de facto last-to-act player postflop. CO opens ~27–30% of hands.
+The cutoff is second-best for one reason: ==**only the button acts behind you**==. If the button folds (which happens often), you become the de facto last-to-act player postflop. CO opens ~27–30% of hands.
 
 > **Live game tip:** At a ₩10/₩20 holdem pub, players regularly limp from the button because "I don't have a great hand." That's leaving profit on the table. Open-raise or fold — the positional premium on the button is too valuable to limp away.
 
@@ -128,9 +130,9 @@ This is the number most guides skip. GTO solvers measure **equity realization** 
 | **In position (IP)** | **85–100%** | Act last → see all information → bluff and value at optimal frequency |
 | **Out of position (OOP)** | **60–85%** | Act first → bleed equity on marginal decisions across streets |
 
-The gap is **15–25 percentage points**. Consider a hand like 8♥7♥ on a K♥4♠2♥ flop. IP, you have a flush draw and two overcards to lower pairs — you can call a bet and see the turn cheaply, or bluff the pot when checked to. OOP, you often have to bet into the unknown on the flop and then face a raise, or check and give away the free card.
+The gap is ==**15–25 percentage points**==. Consider a hand like 8♥7♥ on a K♥4♠2♥ flop. ==g:IP, you have a flush draw and can call cheaply or bluff when checked to.== ==r:OOP, you often have to bet blind into the unknown, then face a raise, or check and give the free card away.==
 
-Over thousands of hands the equity leak compounds. Winning players don't just play good cards — they play good cards in good positions.
+Over thousands of hands the equity leak compounds. ==g:Winning players don't just play good cards — they play good cards in good positions.==
 
 ---
 
@@ -154,7 +156,7 @@ Every seat gets a different opening range because **the number of players acting
 
 </div>
 
-The practical rule: **each position moving toward the button, add roughly 5–8% of hands to your opening range.** Remove the weakest suited connectors and offsuit broadways first as you move earlier.
+The practical rule: ==**each position moving toward the button, add roughly 5–8% of hands to your opening range.**== ==r:Remove the weakest suited connectors and offsuit broadways first as you move earlier.==
 
 For the complete hand-by-hand starting hand breakdown, see [poker starting hands chart](/en/blog/holdem-starting-hands-chart/).
 
@@ -171,9 +173,9 @@ UTG is the toughest seat to play profitably. You act first preflop AND will be f
 - Some players add 77 and ATs as the 6th row
 
 **Common UTG mistakes:**
-- Opening KJo or QJo from UTG — you're dominated often and OOP all hand
-- Calling a 3-bet with AJo from UTG — now you're in a bloated pot, OOP, vs a strong range
-- Limping — signals weakness and invites everyone to play with good pot odds against you
+- ==r:Opening KJo or QJo from UTG== — you're dominated often and OOP all hand
+- ==r:Calling a 3-bet with AJo from UTG== — now you're in a bloated pot, OOP, vs a strong range
+- ==r:Limping== — signals weakness and invites everyone to play with good pot odds against you
 
 > **The discipline test:** If you're folding AJo from UTG, you're probably playing correctly. Feels wrong, earns more.
 
@@ -205,9 +207,9 @@ From the button, many boards allow you to c-bet with air and backdoor draws beca
 
 The small blind is the most deceptive position in poker. You get a 50% discount to call preflop — but you're stuck OOP for the rest of the hand against the entire remaining table.
 
-Modern GTO strategy has a strong recommendation for the SB: **3-bet or fold, rarely flat-call.**
+Modern GTO strategy has a strong recommendation for the SB: ==**3-bet or fold, rarely flat-call.**==
 
-Here's why: If you flat-call from the SB, you're entering a pot OOP with a capped range (you'd have re-raised with monsters). The BB can squeeze, and any caller can attack you knowing your range is weak. You're stuck in position purgatory.
+Here's why: ==r:If you flat-call from the SB, you're entering a pot OOP with a capped range.== The BB can squeeze, and any caller can attack you knowing your range is weak. You're stuck in ==r:position purgatory==.
 
 Instead:
 - **3-bet** your strong hands and select bluffs (A5s, A4s — these have blocker value)
@@ -235,9 +237,9 @@ Position is the foundation of effective bluffing. The reason: a credible bluff r
 - Bluff sizing OOP should be larger (60–75% pot) because you need to deny their positional advantage
 
 **The position-bluff ruleset:**
-1. Most profitable bluffs have position — you see their weakness before you commit
-2. OOP check-raises are your best bluffing tool — they force IP players to react without full information
-3. River bluffs are almost always better IP — their river check is a surrender signal you get to read first
+1. ==g:Most profitable bluffs have position== — you see their weakness before you commit
+2. ==g:OOP check-raises are your best bluffing tool== — they force IP players to react without full information
+3. ==r:River bluffs OOP are expensive== — their river check is a surrender signal ==g:you only read from IP==
 
 ---
 
@@ -314,14 +316,16 @@ A. Significantly. In position (button or cutoff), you can c-bet 65–75% of flop
 
 ---
 
-## Key Takeaways: Position Strategy in No-Limit Hold'em
+## The Takeaways
 
-1. **Position = equity realization.** IP players capture 85–100% of their equity; OOP players only 60–85%. The 15–25% gap comes from acting last, not from better cards.
-2. **Ranges slide with position.** UTG opens ~13%; button opens ~45%. Playing UTG hands on the button leaves profit — playing button hands from UTG bleeds chips.
-3. **Late position is the profit center.** Button and cutoff generate most winning players' winrate. Protect those seats with aggressive, wide opening and frequent c-betting.
-4. **Small blind is the hardest position.** 3-bet or fold — limping or flat-calling creates exploitable OOP spots in bloated pots.
-5. **Check-behind is an IP weapon.** Not every IP hand needs a c-bet. Selective checks on the flop control pot size and set up deceptive turn bets.
-6. **6-max compresses the map.** UTG in 6-max is closer to middle position in full ring — slightly wider ranges, slightly less OOP frequency.
+1. **Position = equity realization.** ==g:IP players capture 85–100% of their equity==; ==r:OOP players only 60–85%==. The gap comes from acting last, not from better cards.
+2. **Ranges slide with position.** UTG opens ~13%; button opens ==g:~45%==. ==r:Playing button hands from UTG bleeds chips.==
+3. **Late position is the profit center.** Button and cutoff generate most winning players' winrate. ==g:Open wide, c-bet frequently, and protect those seats.==
+4. **Small blind is the hardest position.** ==**3-bet or fold**== — limping or flat-calling creates exploitable OOP spots in bloated pots.
+5. **Check-behind is an IP weapon.** ==g:Not every IP hand needs a c-bet.== Selective checks control pot size and set up deceptive turn bets.
+6. **6-max compresses the map.** UTG in 6-max plays closer to middle position in full ring — slightly wider ranges, slightly less OOP exposure.
+
+For the seat-by-seat name breakdown and 6-max vs 9-max range tables, see [poker positions explained](/en/blog/holdem-positions). For the hands to play from each seat, see the [starting hands chart by position](/en/blog/holdem-starting-hands-chart). And for why blind seats cost you despite the discounted price, the [small blind & big blind guide](/en/blog/holdem-blind-meaning) covers it in detail.
 
 ---
 
