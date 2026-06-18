@@ -691,7 +691,7 @@ const SCHEDULE_2026 = [
     color: "bg-blue-500/15 text-blue-400 border-blue-500/30",
     status: "upcoming" as const,
     link: "https://www.worldpokertour.com",
-    note: "WPT 공식 · Prime 챔피언십 12/8~14 발표 · 메인($10,400) 일정 발표 대기",
+    note: "WPT 공식 · 2025 Prime 챔피언십 우승 Schuyler Thornton($2.26M) · 2026 메인($10,400) 일정 발표 대기",
   },
   {
     id: "hpl-league",
@@ -723,7 +723,7 @@ function ScheduleSection() {
       <div className="flex items-center gap-3 mb-5">
         <Calendar className="w-5 h-5 text-primary flex-shrink-0" />
         <h2 className="text-2xl font-serif font-bold text-foreground">2026 홀덤 대회 일정표</h2>
-        <span className="text-xs bg-primary/15 text-primary border border-primary/30 px-2.5 py-0.5 rounded-full font-bold">2026.06.12 기준</span>
+        <span className="text-xs bg-primary/15 text-primary border border-primary/30 px-2.5 py-0.5 rounded-full font-bold">2026.06.18 기준</span>
       </div>
       <p className="text-muted-foreground text-sm mb-5 leading-relaxed">
         WSOP·APT·APPT·EPT·GOP·AJPC·Triton 공식 발표 일정을 웹검색으로 재확인해 반영했습니다. 변경·연기는 각 대회 공식 사이트를 우선 확인하세요.
@@ -957,8 +957,8 @@ export default function Tournaments() {
             {[
               { icon: MapPin, label: "한국 개최 대회 (2026)", value: "13개+" },
               { icon: Globe, label: "2026 전체 일정", value: "20개+" },
-              { icon: Users, label: "WSOP 참가자", value: "15만명+" },
-              { icon: DollarSign, label: "WSOP 최고 상금", value: "$121억" },
+              { icon: Users, label: "WSOP 참가자", value: "24만명+" },
+              { icon: DollarSign, label: "WSOP 최고 상금", value: "$9,404만" },
             ].map(({ icon: Icon, label, value }) => (
               <div key={label} className="bg-card border border-border rounded-xl p-4 text-center">
                 <Icon className="w-5 h-5 text-primary mx-auto mb-1.5" />
