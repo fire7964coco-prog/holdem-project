@@ -185,8 +185,21 @@ export default function Page({ params }: { params: { slug: string } }) {
       </section>
     ) : undefined;
 
+  // keepImagesInBody 포스트는 히어로 이미지가 본문 내 <img>로 렌더됨.
+  // <link rel="preload">를 head에 주입해 브라우저가 HTML 파싱 초기에 이미지를 발견하도록 해 LCP 개선.
+  const heroPreload =
+    post.keepImagesInBody && firstImg ? (
+      <link
+        rel="preload"
+        as="image"
+        href={firstImg}
+        fetchPriority="high"
+      />
+    ) : null;
+
   return (
     <>
+      {heroPreload}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
