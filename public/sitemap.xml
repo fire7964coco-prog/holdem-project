@@ -673,7 +673,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- 다국어 블로그 포스트 (51편) -->
+  <!-- 다국어 블로그 포스트 (52편) -->
 
   <url>
     <loc>https://www.holdemmaster.com/en/blog/ept-barcelona-2026-guide</loc>
@@ -868,6 +868,16 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/texas-holdem-rules-for-beginners" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/texas-holdem-rules-for-beginners" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/texas-holdem-rules-for-beginners" />
+  </url>
+
+  <url>
+    <loc>https://www.holdemmaster.com/en/blog/wpt-australia-2026-guide</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/wpt-australia-2026-guide" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/wpt-australia-2026-guide" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/wpt-australia-2026-guide" />
   </url>
 
   <url>
