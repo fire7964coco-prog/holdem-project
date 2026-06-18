@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "holdem-position-play",
   title: "Poker Position Strategy: Complete Playbook for Every Seat",
   seoTitle: "Why 70% of Poker Winnings Come from Two Seats — Position Strategy Guide",
-  desc: "Position is the single biggest edge in No-Limit Hold'em. This pillar guide shows how IP vs OOP creates a 15–25% equity gap, sets opening ranges for every seat (UTG 13% → Button 45%), and gives you postflop c-bet, bluff, and pot-control tactics by position.",
+  desc: "Acting last gives 15–25% more equity than acting first. Opening ranges for all 9 seats, c-bet frequencies, and postflop tactics — the complete position guide.",
   tldr: "The button and cutoff generate most of your profit because acting last gives you a 15–25% equity realization advantage over out-of-position players. UTG opens only 13% of hands; the button opens up to 45%. Position doesn't just affect what you play preflop — it changes every c-bet, bluff, and pot-control decision on the flop, turn, and river.",
   category: "strategy",
   date: "2026-06-18",
@@ -79,13 +79,13 @@ Before we get into strategy, let's lock in the map. Every position is measured b
 
 **6-max note:** Drop UTG, UTG+1, UTG+2, and Lojack. The six remaining seats are UTG (=HJ), Hijack, Cutoff, Button, SB, BB. Your opening ranges in 6-max are wider at every seat because fewer players act behind you.
 
-For a full seat-by-seat name breakdown and the 6-max vs 9-max range comparison, see the [poker positions guide](/en/blog/holdem-positions/).
+For a full seat-by-seat name breakdown and the 6-max vs 9-max range comparison, see the [poker positions guide](/en/blog/holdem-positions).
 
 ---
 
 ## Why Is the Button the Best Position in Poker? (Solver-Backed Proof)
 
-The button acts ==**last on every postflop street — guaranteed**==. No other seat can say that. ==r:From the SB onward you're always first; the button is always last.==
+The button acts ==**last on every postflop street — guaranteed**==. No other seat can say that. ==r:The small blind acts first on every postflop street; the button is always last.==
 
 This translates directly into profit. Studies comparing position profitability across millions of hands consistently show:
 
@@ -160,7 +160,7 @@ Every seat gets a different opening range because **the number of players acting
 
 The practical rule: ==**each position moving toward the button, add roughly 5–8% of hands to your opening range.**== ==r:Remove the weakest suited connectors and offsuit broadways first as you move earlier.==
 
-For the complete hand-by-hand starting hand breakdown, see [poker starting hands chart](/en/blog/holdem-starting-hands-chart/).
+For the complete hand-by-hand starting hand breakdown, see [poker starting hands chart](/en/blog/holdem-starting-hands-chart).
 
 ---
 
@@ -172,7 +172,7 @@ UTG is the toughest seat to play profitably. You act first preflop AND will be f
 - All pocket pairs 88 and above (AA–88)
 - AK, AQ, AJs+ (offsuit AJ is marginal in tighter lineups)
 - KQs, QJs, JTs (for board coverage and blockers)
-- Some players add 77 and ATs as the 6th row
+- Some players add 77 and ATs to their range in softer lineups
 
 **Common UTG mistakes:**
 - ==r:Opening KJo or QJo from UTG== — you're dominated often and OOP all hand
@@ -220,7 +220,7 @@ Instead:
 
 **SB sizing:** Because you're OOP, 3-bet to 4× (vs 3× when IP). You're charging more precisely because you won't have the postflop edge to compensate for a smaller raise.
 
-For a complete blind-specific strategy, see [small blind and big blind guide](/en/blog/holdem-blind-meaning/).
+For a complete blind-specific strategy, see [small blind and big blind guide](/en/blog/holdem-blind-meaning).
 
 ---
 
@@ -276,7 +276,7 @@ Position strategy shifts between formats because the seat count compresses or ex
 
 </div>
 
-**Key 6-max adjustment:** In 6-max, UTG is only 4 seats from the button (vs 8 in a full ring). This means UTG in 6-max plays closer to a Lojack in full ring — slightly wider range, slightly less OOP pressure. Many players tighten UTG 6-max unnecessarily because they carry over full-ring habits.
+**Key 6-max adjustment:** In 6-max, UTG is only 3 seats from the button (vs 6 in a full ring). This means UTG in 6-max plays closer to a Lojack in full ring — slightly wider range, slightly less OOP pressure. Many players tighten UTG 6-max unnecessarily because they carry over full-ring habits.
 
 **Key 9-max adjustment:** In full ring, you see many more orbits from UTG, UTG+1, UTG+2 — all OOP seats. Playing disciplined ranges from these seats is more important in full ring than in 6-max, because you face the equity leak more often per session.
 
@@ -290,7 +290,7 @@ The mechanics are identical but the **implications differ**:
 
 **Tournaments:** Stack depth shrinks as blinds increase. Short stacks (<15 BB) play near-push/fold strategy where positional nuance matters less. The key position concept in tournaments is **when to steal late position vs tighten up near the bubble** — stealing from the BTN/CO with 20–30 BB is standard; doing it with 8 BB is ICM-dependent.
 
-For tournament-specific strategy, see the [tournament vs cash game guide](/en/blog/holdem-tournament-vs-cash-game/).
+For tournament-specific strategy, see the [tournament vs cash game guide](/en/blog/holdem-tournament-vs-cash-game).
 
 ---
 
