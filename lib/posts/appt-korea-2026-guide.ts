@@ -319,6 +319,11 @@ A. PokerStars Live 현장 문의: +82-10-4194-6121 / 이메일: manila@pokerstar
 ## 관련 글
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
+  <a href="/blog/pokerstars-appt-satellite-guide/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">심화</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">PokerStars APPT 위성 단계별 가이드</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Power Path $0.50 → APPT 시트 실전 경로</div>
+  </a>
   <a href="/blog/apt-incheon-2026-guide/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">시리즈 1편</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">APT 인천 2026 참가 가이드</div>
