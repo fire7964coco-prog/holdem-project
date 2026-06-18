@@ -33,7 +33,8 @@ Three orbits later he limped Q♠Q♦ on the button, trapped a UTG raiser, and s
 
 That's position. Not a suggestion. A structural edge that compounds every single hand you play.
 
-> **30-second summary:** The button and cutoff produce most of your winnings because acting last gives you 15–25% more equity realization than out-of-position players. UTG opens only ~13% of hands; the button opens ~45%. And position rewrites every postflop decision — c-bet frequency, bluff sizing, pot control — not just what you open preflop.
+> **Quick answer**
+> The button and cutoff produce most of your winnings because acting last gives you 15–25% more equity realization than out-of-position players. UTG opens only ~13% of hands; the button opens ~45%. And position rewrites every postflop decision — c-bet frequency, bluff sizing, pot control — not just what you open preflop.
 
 ---
 
@@ -289,32 +290,27 @@ For tournament-specific strategy, see the [tournament vs cash game guide](/en/bl
 
 ---
 
-## Frequently Asked Questions About Poker Position Strategy
+## FAQ
 
-:::faqcard
-**What is the best position in poker and why?**
-The button (dealer position) is the best seat in No-Limit Hold'em because it acts last on every postflop street — flop, turn, and river. This informational advantage allows the button to realize 85–100% of its equity, compared to 60–85% for out-of-position players. GTO data shows the button is the single most profitable seat at any table size.
-:::
+**Q. What is the best position in poker and why?**
 
-:::faqcard
-**How wide should you open from UTG vs the button?**
-From UTG in a 9-max game, a solid opening range is approximately 13–15% of hands — premium pairs (88+), strong broadways (AK, AQ, AJs, KQs), and a few suited connectors for range balance. From the button, you can profitably open 43–45% of hands because position compensates for weaker card strength. Playing the same range from UTG as the button is one of the most common leaks at every stake.
-:::
+A. The button (dealer position) is the best seat in No-Limit Hold'em because it acts last on every postflop street — flop, turn, and river. This informational advantage allows the button to realize 85–100% of its equity, compared to 60–85% for out-of-position players. GTO data shows the button is the single most profitable seat at any table size.
 
-:::faqcard
-**What does 'in position' mean in poker?**
-"In position" means you act after your opponent on the current and future streets of a hand. Typically this means sitting closer to the dealer button. When you're in position, you see your opponent's action — check, bet, fold — before spending a chip, giving you an informational and strategic edge every decision point.
-:::
+**Q. How wide should I open from UTG vs the button?**
 
-:::faqcard
-**Should you always 3-bet from the small blind?**
-Modern GTO strategy recommends a 3-bet or fold approach from the SB, rather than flat-calling. Flat-calling from the SB creates a capped, out-of-position range that the big blind can squeeze and the original raiser can exploit. When you do enter the pot from the SB, 3-bet with strong hands and select bluffs (A5s, A4s for blocker value), and fold everything else.
-:::
+A. From UTG in a 9-max game, open approximately 13–15% of hands — premium pairs (88+), strong broadways (AK, AQ, AJs, KQs), and a few suited connectors for range balance. From the button, you can profitably open 43–45% of hands because position compensates for weaker card strength. Playing the same range from UTG as the button is one of the most common leaks at every stake.
 
-:::faqcard
-**How does position affect c-bet frequency?**
-Significantly. In position (button or cutoff), you can c-bet 65–75% of flops because you see your opponent's action first and can barrel selectively on turn and river. Out of position, your c-bet frequency drops to 40–50% — you're betting blind into unknown responses and your range is more visible to the in-position caller. Betting the same frequency OOP as IP is a common and costly error.
-:::
+**Q. What does "in position" mean in poker?**
+
+A. "In position" means you act after your opponent on the current and future streets of a hand — typically because you sit closer to the dealer button. When you're in position, you see your opponent's action — check, bet, fold — before spending a chip, giving you an informational and strategic edge at every decision point.
+
+**Q. Should you always 3-bet from the small blind?**
+
+A. Modern GTO strategy recommends 3-bet or fold from the SB, rather than flat-calling. Flat-calling creates a capped, out-of-position range that the big blind can squeeze and the original raiser can exploit. When you do enter the pot from the SB, 3-bet with strong hands and select bluffs (A5s, A4s for blocker value), and fold everything else.
+
+**Q. How does position affect c-bet frequency?**
+
+A. Significantly. In position (button or cutoff), you can c-bet 65–75% of flops because you see your opponent's action first and can barrel selectively on later streets. Out of position, your c-bet frequency drops to 40–50% — you're betting blind into unknown responses and your range is more visible to the in-position caller. Betting the same frequency OOP as IP is a common and costly error.
 
 ---
 
@@ -332,28 +328,26 @@ Significantly. In position (button or cutoff), you can c-bet 65–75% of flops b
 ## Related Posts
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
-  <a href="/en/blog/holdem-positions/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/en/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Positions</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">All 9 Poker Position Names Explained</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">UTG, Lojack, Hijack, Cutoff, Button — 6-max vs 9-max seat map</div>
   </a>
-  <a href="/en/blog/holdem-starting-hands-chart/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/en/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Starting Hands</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Starting Hands Chart by Position</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Which hands to play from each seat — printable reference chart</div>
   </a>
-  <a href="/en/blog/holdem-blind-meaning/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/en/blog/holdem-blind-meaning" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Blinds</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Small Blind & Big Blind Strategy</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Why the discounted seats are the hardest to profit from</div>
   </a>
-  <a href="/en/blog/holdem-tournament-vs-cash-game/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/en/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Tournament</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Tournament vs Cash Game Strategy</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">How position decisions change when ICM applies</div>
   </a>
 </div>
-`,
+`.trim(),
 };
-
-export default POST;
