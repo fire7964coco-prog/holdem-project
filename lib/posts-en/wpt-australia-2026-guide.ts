@@ -1,11 +1,11 @@
-import type { Post } from "../posts";
+﻿import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "wpt-australia-2026-guide",
   title: "WPT Australia 2026 — Complete Player Guide: Schedule, Satellites & Real Costs",
   seoTitle: "First Time at WPT Australia? Everything You Need to Play in 2026",
-  desc: "WPT Australia 2026 runs Sep 10–30 at The Star Sydney. Two championships: AUD $1,500 Prime (Sep 17–22) and AUD $5,000 Main (Sep 24–30). 36 events, AUD $10M+ prize pools, on-site satellite from AUD $255, plus the real trip-cost breakdown competitors don't show you.",
-  tldr: "WPT Australia 2026: Sep 10–30, The Star Sydney. Two flagships: AUD $1,500 WPT Prime (Sep 17–22) and AUD $5,000 WPT Championship (Sep 24–30). On-site satellites from AUD ~$255. Winner gets extra $10,400 WPT World Championship seat. Must be 18+, Star Club member, and smart-casual dress enforced.",
+  desc: "WPT Australia 2026 runs Sep 10–30 at The Star Sydney. Two championships: AUD $1,500 Prime (Sep 17–22) and AUD $5,000 Main (Sep 23–30). 36 events, AUD $10M+ prize pools, on-site satellite from AUD $255, plus the real trip-cost breakdown competitors don't show you.",
+  tldr: "WPT Australia 2026: Sep 10–30, The Star Sydney. Two flagships: AUD $1,500 WPT Prime (Sep 17–22) and AUD $5,000 WPT Championship (Sep 23–30). On-site satellites from AUD ~$255. Winner gets extra $10,400 WPT World Championship seat. Must be 18+, Star Club member, and smart-casual dress enforced.",
   category: "초보 가이드",
   date: "2026-06-18",
   updated: "2026-06-18",
@@ -35,13 +35,13 @@ This guide covers everything competitors skip.
 ---
 
 > **Quick Answer**
-> WPT Australia 2026 is ==**Sep 10–30**== at The Star Sydney, Darling Harbour. Two championship events: ==**AUD $1,500 WPT Prime**== (Sep 17–22) and ==**AUD $5,000 WPT Australia Championship**== (Sep 24–30). Championship winner also receives a ==g:$10,400 seat to WPT World Championship at Wynn Las Vegas== in December. ==r:WPT Global does NOT operate in Australia — on-site satellites only.==
+> WPT Australia 2026 is ==**Sep 10–30**== at The Star Sydney, Darling Harbour. Two championship events: ==**AUD $1,500 WPT Prime**== (Sep 17–22) and ==**AUD $5,000 WPT Australia Championship**== (Sep 23–30). Championship winner also receives a ==g:$10,400 seat to WPT World Championship at Wynn Las Vegas== in December. ==r:WPT Global does NOT operate in Australia — on-site satellites only.==
 
 ---
 
 ## WPT Australia 2026 in 30 Seconds — What's New & Why It Matters
 
-This year's festival moves to ==**The Star Sydney**== (previously Gold Coast) and introduces a **dual-championship format** — a first for any WPT Australian stop.
+This year's festival returns to ==**The Star Sydney**== and introduces a **dual-championship format** — a first for any WPT Australian stop. (The 2024 event was held at The Star Gold Coast; the move to Sydney began with the 2025 edition.)
 
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.25);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -71,7 +71,7 @@ This is the question every first-timer asks. Here's the honest breakdown:
 
 | | WPT Prime Australia | WPT Australia Championship |
 |:---:|---|---|
-| Dates | ==**Sep 17–22**== | ==**Sep 24–30**== |
+| Dates | ==**Sep 17–22**== | ==**Sep 23–30**== |
 | Buy-In | ==g:AUD $1,500== (~USD $980) | AUD $5,000 (~USD $3,270) |
 | Field Size (est.) | 500–800 entries | 400–600 entries |
 | Structure | Deep-stack, multi-flight | Deep-stack, 3 flights |
@@ -89,7 +89,7 @@ This is the question every first-timer asks. Here's the honest breakdown:
 
 ### ⚠️ Critical Fact: WPT Global Does NOT Work in Australia
 
-==r:WPT Global, the main online satellite platform for WPT events globally, is **restricted in Australia**.== Australian residents cannot use WPT Global to qualify. This catches international players off-guard too — if you're travelling from a WPT Global-eligible country, you won't find APPT Australia-specific satellites on the platform.
+==r:WPT Global, the main online satellite platform for WPT events globally, is **restricted in Australia**.== Australian residents cannot use WPT Global to qualify. This catches international players off-guard too — if you're travelling from a WPT Global-eligible country, you won't find WPT Australia-specific satellites on the platform.
 
 **Your satellite options are on-site at The Star Sydney.**
 
@@ -105,7 +105,7 @@ This is the question every first-timer asks. Here's the honest breakdown:
 
 </div>
 
-> **How Step Satellites Work at The Star**: Step 1 (~AUD $180) → win a Step 2 ticket → Step 2 (~AUD $1,075 equivalent) → win 1-in-8 Championship seats. Alternatively, skip Step 1 and enter Step 2 direct for ~AUD $1,075.
+> **How Step Satellites Work at The Star**: Step 1 (~AUD $255) → win a ticket to the Direct Qualifier → 1-in-8 players win a Championship seat. Alternatively, skip Step 1 and enter the Direct Qualifier straight for ~AUD $1,075. Exact 2026 buy-ins confirmed at [starpoker.com.au](https://www.starpoker.com.au) closer to the event.
 
 ### Can Overseas Players Qualify Online?
 
@@ -125,7 +125,7 @@ If you're outside Australia and want to warm up with online satellites before fl
 | **WPT Prime Australia Championship** | ==**Sep 17–22**== | ==**$1,500**== | ==g:Livestreamed FT== |
 | Bonzai Bounty | Sep 19 | $460 | Progressive bounty |
 | **$10K WPT High Roller** | Sep 23–24 | $10,000 | High roller |
-| **WPT Australia Championship** | ==**Sep 24–30**== | ==**$5,000**== | ==g:Livestreamed FT== |
+| **WPT Australia Championship** | ==**Sep 23–30**== | ==**$5,000**== | ==g:Livestreamed FT== |
 | Mini-Championship | Sep 27–28 | $2,000 | 2-day format |
 | WPT World Champs Warm-Up | Sep 29–30 | $1,150 | Warm-up for Dec WC |
 | Australian PLO Championship | Sep 29–30 | $5,000 | Pot Limit Omaha |
@@ -158,7 +158,7 @@ With the 2026 buy-in reduced to AUD $5,000 (down from $5,500 in 2025) and a new 
 
 ![WPT Australia poker tables at The Star Sydney with Darling Harbour views — players competing in 2026 championship](/images/wpt-australia-2026-tournament-floor.webp)
 
-*The Star Sydney's poker room overlooks Darling Harbour. September weather averages 18–22°C — perfect for a three-week poker trip.*
+*The Star Sydney's poker room overlooks Darling Harbour. Sydney in September: daytime highs 19–22°C, cool evenings around 11–13°C — pack a light jacket for late-night cash game sessions.*
 
 ---
 
@@ -245,13 +245,15 @@ Most international visitors need either an **ETA (Electronic Travel Authority)**
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.25);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Passport | Visa Type | How to Apply | Cost | Processing |
-|---|---|---|---|---|
-| UK, USA, Canada, EU, Japan, Korea, Singapore | ETA (subclass 601) | [eta.homeaffairs.gov.au](https://eta.homeaffairs.gov.au) or ETA app | AUD $20 | Minutes–hours |
-| Most other countries | Visitor Visa (subclass 600) | immi.homeaffairs.gov.au | AUD $190 | Days–weeks |
+|| **UK + 35 EU/European countries** (Germany, France, Italy, Spain, etc.) | ==g:eVisitor (subclass 651)== | [immi.homeaffairs.gov.au](https://immi.homeaffairs.gov.au) | ==g:**FREE**== | Usually instant-1 day |
+|| **USA, Canada, Japan, Korea, Singapore, Hong Kong** | ETA (subclass 601) | [Australian ETA app](https://eta.homeaffairs.gov.au) (mobile only) | AUD $20 | Usually instant |
+|| Most other countries | Visitor Visa (subclass 600) | [immi.homeaffairs.gov.au](https://immi.homeaffairs.gov.au) | AUD $200 | Days-weeks |
+
+
 
 </div>
 
-==r:Apply before you book flights.== ETA is usually instant, but apply at least 1 week in advance. Check your specific passport requirements at [homeaffairs.gov.au](https://www.homeaffairs.gov.au/visa-subclass-601).
+==r:Apply before you book flights.== eVisitor/ETA is usually instant, but apply at least 1 week in advance. Check your specific passport requirements at [homeaffairs.gov.au/visa-subclass-601](https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/electronic-travel-authority-601).
 
 ---
 
@@ -263,7 +265,7 @@ Here's what a full WPT Australia trip actually costs, based on 2025 data:
 
 | Scenario | Buy-In | Hotel (10 nights) | Flights (Asia/Pacific) | Food & Transport | **Total** |
 |:---:|---|---|---|---|---|
-| **Budget** | AUD $1,500 (Prime, satellite) | AUD $1,200 (budget hotel) | ~AUD $800 | AUD $600 | ==g:~AUD $4,100== |
+| **Budget** | AUD $255 (satellite step) | AUD $1,200 (budget hotel) | ~AUD $800 | AUD $600 | ==g:~AUD $2,855== |
 | **Standard** | AUD $1,500 (Prime) | AUD $2,500 (3-star) | ~AUD $1,200 | AUD $900 | ==**~AUD $6,100**== |
 | **Full Experience** | AUD $1,500 + $5,000 (both) | AUD $5,000 (The Star Grand) | ~AUD $1,500 | AUD $1,200 | ~AUD $14,200 |
 
