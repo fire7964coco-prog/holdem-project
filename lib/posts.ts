@@ -1,4 +1,4 @@
-import { NEW_POSTS } from "./posts/index";
+﻿import { NEW_POSTS } from "./posts/index";
 
 export type Category = "전략" | "초보 가이드" | "토너먼트" | "심리전" | "사이트 리뷰" | "확률·수학";
 
@@ -1412,7 +1412,7 @@ A. 모바일에서는 **"Poker Cruncher"(iOS)**, **"PokerBoss"(Android)**를 추
 
 ## 홀덤 블라인드 뜻이 뭔가요?
 
-![홀덤 블라인드 완전 정복 — 블라인드 뜻·강제 베팅 이유·스몰빅블라인드 차이 핵심 정리 인포그래픽](/images/holdem-blind-meaning/holdem-blind-meaning-h1-intro.webp)
+![홀덤 블라인드 완전 정복 — 블라인드 뜻·강제 베팅 이유·스몰빅블라인드 차이 핵심 정리 인포그래픽](/images/holdem-blind-meaning-h1-intro.webp)
 
 **블라인드(Blind)** 는 영어로 "눈이 먼"이라는 뜻이에요.
 
@@ -1564,7 +1564,7 @@ BB 디펜스 레인지 (상대 BTN 2.5 BB 레이즈 기준):
 
 ## 블라인드 관련 자주 묻는 질문
 
-![블라인드 관련 자주 묻는 질문 — 매판 교대·SB 절반 여부·프리플랍 폴드·옵션 체크·고수 전략 5가지 FAQ 인포그래픽](/images/holdem-blind-meaning/holdem-blind-faq.webp)
+![블라인드 관련 자주 묻는 질문 — 매판 교대·SB 절반 여부·프리플랍 폴드·옵션 체크·고수 전략 5가지 FAQ 인포그래픽](/images/holdem-blind-faq.webp)
 
 **Q. 블라인드는 매판마다 두 명이 똑같이 내나요?**
 
