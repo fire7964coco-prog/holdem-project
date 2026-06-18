@@ -119,6 +119,8 @@ This is determined preflop. If you're on the button and the big blind calls your
 2. **Pot size is harder to control.** You can't prevent them from betting when you'd prefer a cheap showdown.
 3. **You under-realize equity.** Draws and marginal made hands lose value because you often fold before seeing the card you need.
 
+![IP vs OOP comparison — Button (IP) acts last and realizes 85–100% equity; UTG (OOP) acts first and realizes only 60–85% equity](/images/holdem-position-play-ip-vs-oop.webp)
+
 ---
 
 ## The 15–25% Equity Realization Gap: How OOP Costs You Money Every Hand
