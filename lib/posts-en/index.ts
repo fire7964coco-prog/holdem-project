@@ -14,6 +14,7 @@ import { POST as holdemStartingHandsChart } from "./holdem-starting-hands-chart"
 import { POST as holdemShowdownRules } from "./holdem-showdown-rules";
 import { POST as holdemReadingTheBoard } from "./holdem-reading-the-board";
 import { POST as holdemAllInRules } from "./holdem-all-in-rules";
+import { POST as holdemPositionPlay } from "./holdem-position-play";
 import { POST as wptAustralia2026Guide } from "./wpt-australia-2026-guide";
 import { POST as eptBarcelona2026Guide } from "./ept-barcelona-2026-guide";
 
@@ -23,6 +24,7 @@ import { POST as eptBarcelona2026Guide } from "./ept-barcelona-2026-guide";
  * 슬러그는 한국어 글과 동일하게 맞춰 hreflang 상호 링크가 성립하도록 한다.
  */
 export const EN_POSTS: Post[] = [
+  holdemPositionPlay,
   wptAustralia2026Guide,
   eptBarcelona2026Guide,
   holdemTournament,

@@ -5,6 +5,20 @@
 
 ---
 
+## 2026-06-18 (3)
+
+### 작업 내용
+- 신규 EN 필라 글 발행: `holdem-position-play` — Poker Position Strategy: Complete Playbook for Every Seat
+- SERP Top20 분석 → 경쟁글이 빠뜨린 3가지 포함: IP vs OOP 에퀴티 실현 갭 수치(85–100% vs 60–85%), 포지션별 c-bet 빈도(BTN 65–75%, OOP 40–50%), 홀덤펍 live game 실전 맥락
+- 10개 H2에 롱테일 키워드 배치 ("Why is the button the best position in poker", "early position poker strategy UTG", "small blind poker strategy 3-bet or fold" 등)
+- 히어로 이미지 생성 (9포지션 다이어그램, BTN/CO 골드 강조) → 38.5KB 압축
+- `holdem-positions` 클러스터↔필라 양방향 내부링크 연결
+
+### 발행 현황
+- 총 포스트: 50개 (목표 달성!)
+
+---
+
 ## 2026-06-18 (2)
 
 ### 작업 내용

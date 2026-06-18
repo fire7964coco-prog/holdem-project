@@ -285,6 +285,8 @@ These BB/100 figures are approximate averages from large poker database studies 
 
 New to the game? The [beginner's guide to Texas Hold'em rules](/en/blog/texas-holdem-rules-for-beginners) covers how a hand works from start to finish, and [the order of play](/en/blog/holdem-game-order) shows exactly when each seat acts across all four streets. For the forced bets posted by the two seats left of the button, the [small blind and big blind guide](/en/blog/holdem-blind-meaning) explains why they exist and how to play them well.
 
+Ready to turn position knowledge into profit? The [poker position strategy pillar guide](/en/blog/holdem-position-play/) goes deeper into IP vs OOP equity realization, c-bet frequencies by seat, and how position changes your bluffing game postflop.
+
 ---
 
 ## Related Posts
