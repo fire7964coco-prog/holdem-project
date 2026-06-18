@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "wpt-australia-2026-guide",
   title: "WPT Australia 2026 — Complete Player Guide: Schedule, Satellites & Real Costs",
   seoTitle: "First Time at WPT Australia? Everything You Need to Play in 2026",
-  desc: "WPT Australia 2026 runs Sep 10–30 at The Star Sydney. Two championships: AUD $1,500 Prime (Sep 17–22) and AUD $5,000 Main (Sep 23–30). 36 events, AUD $10M+ prize pools, on-site satellite from AUD $255, plus the real trip-cost breakdown competitors don't show you.",
+  desc: "WPT Australia 2026 — Sep 10–30, The Star Sydney. AUD $1,500 Prime + AUD $5,000 Championship. Satellite from AUD ~$255. Real trip costs rivals don't publish.",
   tldr: "WPT Australia 2026: Sep 10–30, The Star Sydney. Two flagships: AUD $1,500 WPT Prime (Sep 17–22) and AUD $5,000 WPT Championship (Sep 23–30). On-site satellites from AUD ~$255. Winner gets extra $10,400 WPT World Championship seat. Must be 18+, Star Club member, and smart-casual dress enforced.",
   category: "초보 가이드",
   date: "2026-06-18",

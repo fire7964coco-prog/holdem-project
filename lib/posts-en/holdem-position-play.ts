@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "holdem-position-play",
   title: "Poker Position Strategy: Complete Playbook for Every Seat",
   seoTitle: "Why 70% of Poker Winnings Come from Two Seats — Position Strategy Guide",
-  desc: "Acting last gives 15–25% more equity than acting first. Opening ranges for all 9 seats, c-bet frequencies, and postflop tactics — the complete position guide.",
+  desc: "Fold JJ from UTG, win with JJ on the button — same hand, different result. Here's why position gives 15–25% more equity and the range guide for all 9 seats.",
   tldr: "The button and cutoff generate most of your profit because acting last gives you a 15–25% equity realization advantage over out-of-position players. UTG opens only 13% of hands; the button opens up to 45%. Position doesn't just affect what you play preflop — it changes every c-bet, bluff, and pot-control decision on the flop, turn, and river.",
   category: "strategy",
   date: "2026-06-18",
