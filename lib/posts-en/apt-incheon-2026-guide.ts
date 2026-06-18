@@ -4,8 +4,8 @@ export const POST: Post = {
   slug: "apt-incheon-2026-guide",
   title: "APT Incheon 2026 — Poker Festival + Korea Travel Guide",
   seoTitle: "Flying to Korea for Poker? APT Incheon 2026 at Paradise City + Seoul in 3 Days",
-  desc: "APT Incheon 2026: Aug 7–16, Paradise City Casino — 5 min from the airport. $2.7M GTD, Main Event ~$1,700, satellites from $3.50 via Natural8. Plus a 3-day Seoul itinerary to make the most of your trip.",
-  tldr: "APT Incheon 2026 runs Aug 7–16 at Paradise City Casino, Incheon — literally connected to the international airport. Main Event: KRW 2,500,000 (~$1,703) buy-in, $1M GTD. Qualify from $3.50 via Natural8 step satellites. Foreign nationals only (Korean citizens cannot enter). Seoul is 60 min away and is one of the best cities in Asia for food, culture, and nightlife.",
+  desc: "APT Incheon 2026 — Aug 7–16, Paradise City Casino near Incheon Airport. $2.7M GTD, Main Event ~$1,700. Qualify from $3.50 via Natural8. Seoul 3-day guide inside.",
+  tldr: "APT Incheon 2026 runs Aug 7–16 at Paradise City Casino, Incheon — 10 min by free shuttle from Terminal 1. Main Event: KRW 2,500,000 (~$1,703) buy-in, $1M GTD. Qualify from $3.50 via Natural8 step satellites. Foreign nationals only (Korean citizens cannot enter). Seoul is 60 min away and is one of the best cities in Asia for food, culture, and nightlife.",
   category: "tournament",
   date: "2026-06-18",
   updated: "2026-06-18",
@@ -34,7 +34,7 @@ The poker trip and the Korea trip are the same trip.
 ---
 
 > **Quick answer**
-> APT Incheon 2026 runs ==**Aug 7–16**== at Paradise City Casino, Incheon. The casino is ==g:physically connected to Incheon International Airport== — no taxi, no transit. Main Event buy-in: ==**KRW 2,500,000 (~$1,703)**==, $1M guaranteed. Step satellites start from ==g:**$3.50 via Natural8**==. Casino is ==r:foreign nationals only== — Korean citizens cannot enter.
+> APT Incheon 2026 runs ==**Aug 7–16**== at Paradise City Casino, Incheon. The resort is ==g:10 min by free shuttle from Incheon Airport Terminal 1== — departs every 30 min, no charge. Main Event buy-in: ==**KRW 2,500,000 (~$1,703)**==, $1M guaranteed. Step satellites start from ==g:**$3.50 via Natural8**==. Casino is ==r:foreign nationals only== — Korean citizens cannot enter.
 
 ---
 
@@ -129,10 +129,10 @@ Paradise City isn't a standalone casino — it's an ==**integrated resort built 
 
 **What that means for you:**
 
-- ==g:Walk directly from the terminal to the casino== via indoor connection — no taxi, no transit, no weather issues
-- 5-star hotel (Inspire Entertainment Resort) on-site with direct casino access
+- ==g:Free shuttle bus runs every 30 min from Terminal 1 (Gates 3C & 14C)== — ~10 min, no charge, no weather issues
+- 5-star hotel (Hotel Paradise) on-site with direct casino access
 - International food hall, spa, and entertainment complex
-- 20-minute drive to central Incheon; 45–60 minutes to central Seoul via AREX train from the airport
+- 45–60 minutes to central Seoul via AREX train from the airport
 
 **Venue rules to know:**
 - Dress code: no flip-flops, no pajamas
@@ -144,14 +144,14 @@ Paradise City isn't a standalone casino — it's an ==**integrated resort built 
 
 ## Getting There: Incheon Airport to Paradise City
 
-The logistics couldn't be simpler for an international player:
+Paradise City runs its own complimentary transfer from the airport:
 
 | Option | Journey | Cost | Notes |
 |---|---|---|---|
-| **Walk / Indoor Connection** | ==g:**~5 min**== | Free | Best option — direct from Terminal 1 |
-| AREX Train → Taxi | 20 min + 10 min | ~$5 | From Terminal 2, AREX to Geomam Station then taxi |
-| Taxi from T1 | ~10 min | ~$8–10 | Metered, convenient |
-| Taxi from T2 | ~20 min | ~$15–20 | Slightly longer distance |
+| ==g:**Free shuttle (from T1)**== | ==g:~10 min== | ==g:Free== | Best option — Gate 3C or 14C, every 30 min (5am–11pm) |
+| Free shuttle (from T2) | ~20 min | Free | Gate 2A, every 60 min |
+| Taxi from T1 | ~15–20 min | ~$15–20 | Metered, available 24/7 |
+| AREX to Unseo Station → taxi | ~20 min total | ~$8 | Useful if train schedule aligns |
 
 If you're flying through Incheon and have a long layover: ==g:the casino is accessible during a transit stop== — check with your airline about visa requirements for your nationality during transit.
 
@@ -163,7 +163,7 @@ Most flights to Korea route through Seoul, so you have every reason to add 2–3
 
 ### Day 1 — Old Seoul: Palaces, Hanoks & Street Food
 
-**Morning:** Start at ==**Gyeongbokgung Palace**== (Gyeongbokgung Station, Line 3). Built in 1395, the palace grounds are massive and free with a hanbok rental — rent traditional Korean dress and get free palace admission. Allocate 2 hours.
+**Morning:** Start at ==**Gyeongbokgung Palace**== (Gyeongbokgung Station, Line 3). Built in 1395, the palace grounds are massive. Admission is ~₩3,000 — or rent a hanbok (~₩20,000) from nearby shops for ==g:free palace entry==. Allocate 2 hours.
 
 **Midday:** Walk 15 minutes to ==**Bukchon Hanok Village**== — a residential hillside neighborhood of 900+ traditional Korean houses (hanoks) dating to the Joseon dynasty. Visit between 10am–5pm; it's still a residential area so noise is expected to be kept down. The view from the top of Gahoe-dong is the single most photographed spot in Seoul.
 
@@ -173,11 +173,13 @@ Most flights to Korea route through Seoul, so you have every reason to add 2–3
 
 ### Day 2 — Young Seoul: K-Culture & Nightlife
 
-**Afternoon:** ==**Hongdae**== is where Seoul's creative and youth energy concentrates — street performers, indie record shops, art markets, and the highest density of cafes per block you'll find anywhere. It's also adjacent to the best live music venues in the city. Arrive around 3pm to start with coffee and build into the evening.
+**Morning:** ==**Ikseon-dong**== is a tight cluster of converted hanok buildings turned into brunch cafes and specialty coffee shops — a 10-minute walk from Gyeongbokgung. Great first stop before the day opens up.
+
+**Afternoon:** ==**Hongdae**== is where Seoul's creative and youth energy concentrates — street performers, indie record shops, art markets, and a high concentration of cafes and live music venues. Arrive around 3pm, start with coffee, and build into the evening.
 
 **Evening:** Walk or take a short taxi to ==**Myeongdong**== for street food dinner. The main strip is lined with vendors running Korean fried chicken, tteokbokki (spicy rice cake), hotteok (sweet pancakes), and cheese corn dogs until midnight. ==g:Budget ₩20,000–30,000 (~$15–22) to eat your way through the street.== The surrounding shops are K-beauty central — Innisfree, Etude House, Laneige — if that's relevant.
 
-**Late night:** Korean BBQ. Sit at a table with a charcoal grill built in, order samgyeopsal (grilled pork belly), wrap it in lettuce with garlic and ssamjang paste, and do it with soju. This is the dinner. Most galbi restaurants run until 2am.
+**Late night:** Korean BBQ. Sit at a table with a charcoal grill built in, order samgyeopsal (grilled pork belly), wrap it in lettuce with garlic and ssamjang paste, and do it with soju. This is the dinner. Most Korean BBQ restaurants run until 2am.
 
 ---
 
@@ -237,7 +239,7 @@ Compared to EPT Barcelona (~€5,300 Main) or WPT Australia (~AUD $5,000 Main), 
 
 **Q. Is Paradise City Casino really walkable from Incheon Airport?**
 
-A. Yes, Terminal 1 has a direct indoor connection — you can walk from the arrivals hall to the casino without going outside. Terminal 2 requires a short taxi or shuttle (10–15 min). Paradise City is designed as an airport-adjacent resort specifically for international arrivals.
+A. Very close. Paradise City runs a free shuttle from Terminal 1 (Gates 3C & 14C) every 30 minutes — the ride takes about 10 minutes. Terminal 2 has its own shuttle every 60 minutes from Gate 2A. The resort is an airport-adjacent integrated complex specifically designed for international arrivals.
 
 **Q. Can I play the APT Incheon Main Event if I've never played a live tournament?**
 
@@ -245,7 +247,7 @@ A. Yes. The buy-in (~$1,703) is significant but the structure is beginner-friend
 
 **Q. How do I get from Paradise City to Seoul?**
 
-A. Take the AREX Airport Express from Incheon Airport (walk from Paradise City terminal connection). Direct trains reach Seoul Station in ~43 min (~$8). All-stop trains reach Hongdae, Suseo, and other neighborhoods in ~60–70 min.
+A. Take the free shuttle back to Incheon Airport Terminal 1, then board the AREX Airport Express. Direct trains reach Seoul Station in ~43 min (~$8). All-stop AREX trains also serve Hongdae (Hongik University Station) in ~60–70 min — convenient if you're staying in the Hongdae/Mapo area.
 
 **Q. Do I need to speak Korean to navigate Seoul?**
 
@@ -296,4 +298,3 @@ Heading to APT Incheon? The [tournament vs cash game guide](/en/blog/holdem-tour
 `.trim(),
 };
 
-export default POST;
