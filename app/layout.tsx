@@ -48,7 +48,7 @@ const notoSansKr = Noto_Sans_KR({
  */
 const dmSans = DM_Sans({
   subsets: ["latin"],
-  weight: ["400", "600", "800"],
+  weight: ["400", "800"],
   display: "optional",
   preload: false,
   variable: "--font-dm-sans",

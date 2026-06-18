@@ -90,7 +90,7 @@
   html {
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
-    text-rendering: optimizeLegibility;
+    text-rendering: auto;
   }
   body {
     @apply bg-background text-foreground antialiased font-sans selection:bg-primary selection:text-primary-foreground;
@@ -100,7 +100,6 @@
     background-image:
       radial-gradient(ellipse 1100px 420px at 50% -8%, hsl(152 55% 14% / 0.85) 0%, transparent 65%),
       radial-gradient(ellipse 700px 400px at 110% 18%, hsl(43 60% 22% / 0.18) 0%, transparent 60%);
-    background-attachment: fixed;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -236,7 +235,7 @@
   gap: 0.5rem;
   padding: 0.875rem 1.75rem;
   border-radius: var(--radius-md);
-  font-weight: 600;
+  font-weight: 700;
   color: hsl(var(--foreground));
   background: hsl(152 50% 9% / 0.6);
   border: 1px solid hsl(43 38% 26% / 0.7);
