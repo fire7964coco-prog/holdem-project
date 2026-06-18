@@ -92,6 +92,7 @@ const INTERNATIONAL = [
     ],
     link: "https://www.wsop.com",
     blogLink: "/blog/wsop-2026-tournament-guide/",
+    blogLabel: "🏆 WSOP 2026 완전 가이드",
   },
   {
     id: "wpt",
@@ -146,6 +147,8 @@ const INTERNATIONAL = [
       "온라인 예선으로 비용 절감 진출 가능",
     ],
     link: "https://www.theasianpokertour.com",
+    blogLink: "/blog/apt-incheon-2026-guide/",
+    blogLabel: "📖 APT 인천 2026 참가 가이드",
   },
 ];
 
@@ -504,6 +507,7 @@ const SCHEDULE_2026 = [
     link: "https://www.wsop.com/tournaments/2026-57th-annual-world-series-of-poker/",
     highlight: true,
     note: "진행중 · 100개 브레이슬릿 · 메인이벤트 7/2~13",
+    blogLink: "/blog/wsop-2026-tournament-guide/",
   },
   {
     id: "apt-incheon",
@@ -519,6 +523,7 @@ const SCHEDULE_2026 = [
     status: "upcoming" as const,
     link: "https://www.theasianpokertour.com/series/apt-incheon-south-korea-2026",
     note: "APT 공식 · Paradise City · 메인 KRW 15억 GTD",
+    blogLink: "/blog/apt-incheon-2026-guide/",
   },
   {
     id: "ept-barcelona",
@@ -565,6 +570,7 @@ const SCHEDULE_2026 = [
     link: "https://www.pokerstarslive.com/appt/korea/",
     highlight: true,
     note: "PokerStars 공식 · 6년 만의 한국 복귀 · 메인 9/10~14(₩1.8M) · 총 ₩20억+ GTD",
+    blogLink: "/blog/appt-korea-2026-guide/",
   },
   {
     id: "gop-taipei-2",
@@ -595,6 +601,7 @@ const SCHEDULE_2026 = [
     status: "upcoming" as const,
     link: "https://www.theasianpokertour.com/series",
     note: "APT 공식 · 제주 신화월드 · 가을 시리즈",
+    blogLink: "/blog/apt-jeju-2026-fall-guide/",
   },
   {
     id: "gop-incheon-2",
@@ -789,12 +796,20 @@ function ScheduleSection() {
                 <span className="text-[11px] text-foreground/80 leading-snug">{t.note}</span>
               </div>
             )}
-            {t.link && (
-              <a href={t.link} target="_blank" rel="noopener noreferrer"
-                className="flex items-center gap-1 text-[11px] text-primary font-semibold hover:underline mt-auto">
-                공식 사이트 <ExternalLink className="w-3 h-3" />
-              </a>
-            )}
+            <div className="flex flex-wrap items-center gap-2 mt-auto">
+              {t.link && (
+                <a href={t.link} target="_blank" rel="noopener noreferrer"
+                  className="flex items-center gap-1 text-[11px] text-primary font-semibold hover:underline">
+                  공식 사이트 <ExternalLink className="w-3 h-3" />
+                </a>
+              )}
+              {"blogLink" in t && t.blogLink && (
+                <Link href={t.blogLink as string}
+                  className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-primary/15 border border-primary/35 text-[11px] text-primary font-bold hover:bg-primary/25 transition-colors">
+                  📖 상세 가이드 <ChevronRight className="w-3 h-3" />
+                </Link>
+              )}
+            </div>
           </motion.div>
         ))}
       </div>
@@ -1234,7 +1249,7 @@ export default function Tournaments() {
                       {"blogLink" in t && t.blogLink && (
                         <Link href={t.blogLink as string}
                           className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-primary/15 border border-primary/35 text-xs text-primary font-bold hover:bg-primary/25 transition-colors">
-                          🏆 WSOP 2026 완전 가이드 <ChevronRight className="w-3.5 h-3.5" />
+                          {"blogLabel" in t && t.blogLabel ? (t.blogLabel as string) : "📖 상세 가이드"} <ChevronRight className="w-3.5 h-3.5" />
                         </Link>
                       )}
                     </div>
