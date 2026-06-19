@@ -450,7 +450,14 @@ The machine itself is ==g:free to use — you only pay for the ramen==. Instruct
 - **Banpo** (반포) — evening pick, rainbow fountain bridge show after dark. Lines 3/7/9 Express Bus Terminal.
 - **Ttukseom** (뚝섬) — quietest, local vibe. Line 7 Ttukseom Resort.
 
-**Getting there from Paradise City:** Free shuttle → T1 → AREX All-Stop (~60 min) → ==**Yeouinaru Station (Line 5)**== → 2-minute walk to park entrance and Runner Station.
+**Getting to Hangang Park from Paradise City:** Free shuttle → T1 → AREX All-Stop (~60 min) to any central Seoul station, then pick your park:
+
+- **Yeouido** — Yeouinaru Station (Line 5, Exit 2) · Runner Station with showers/lockers on-site
+- **Banpo** — Express Bus Terminal (Lines 3/7/9) · 5-min walk · rainbow fountain at night
+- **Ichon** (이촌) — Ichon Station (Line 4 / Gyeongui-Jungang Line) · quieter, local crowd
+- **Ttukseom** — Ttukseom Resort Station (Line 7) · connects to Seoul Forest
+
+==g:Every Han River park has its own GS25, CU, or 7-Eleven with the ramen machine — you're not limited to one spot.== Pick whichever park is closest to where you already are in Seoul.
 
 ---
 
