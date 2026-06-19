@@ -192,60 +192,60 @@ Here's what to do with 1–3 free days:
 
 **Evening:** Head to ==**Gwangjang Market**== (Jongno 5-ga Station, Line 1) for dinner. Seoul's oldest covered market has over 5,000 stalls — the food tour circuit covers bindaetteok (mung bean pancakes), bibimbap, mayak gimbap, and sannakji (live octopus, optional). ==g:One of the best food experiences in Asia for under $10.==
 
-**After dinner:** Walk 10 minutes to ==**Cheonggyecheon Stream**== — a 5.8km urban stream running through central Seoul, restored from a buried highway in 2005. Locals sit along the banks at night, feet dangling near the water. Completely free, open 24 hours.
-
-<div style="display:flex;gap:6px;margin:14px 0">
-  <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-cheonggyecheon1.webp" alt="Cheonggyecheon Stream wide view — elevated walkway and stepping stones with central Seoul skyscrapers visible behind the tree line" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
-    <p style="font-size:11px;color:#888;margin:4px 0 0">The stream cuts through the middle of the city</p>
-  </div>
-  <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-cheonggyecheon2.webp" alt="Cheonggyecheon Stream close-up — white egret standing in the flowing water, couple sitting on rocks by the bank" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
-    <p style="font-size:11px;color:#888;margin:4px 0 0">Wildlife and flowing water in the middle of Seoul</p>
-  </div>
-  <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-cheonggyecheon3.webp" alt="Cheonggyecheon Stream walking path — weeping willow trees alongside the stream, pedestrians strolling the riverside trail" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
-    <p style="font-size:11px;color:#888;margin:4px 0 0">5.8km walkable stream path — free, open 24h</p>
-  </div>
-</div>
-
 ---
 
-### Day 2 — Young Seoul: K-Culture & Nightlife
+### Day 2 — Hongdae, Myeongdong & Cheonggyecheon
 
-**Morning:** ==**Ikseon-dong**== is a tight cluster of converted hanok buildings turned into brunch cafes and specialty coffee shops — a 10-minute walk from Gyeongbokgung. Great first stop before the day opens up.
+**Morning:** ==**Ikseon-dong**== — a cluster of century-old hanok buildings converted into brunch cafes and specialty coffee shops, a 10-minute walk from Gyeongbokgung. Small alleys, no tourists yet, good coffee. Great way to ease into the day before it gets busy.
 
-**Afternoon:** ==**Hongdae**== is where Seoul's creative and youth energy concentrates — street performers, indie record shops, art markets, and a high concentration of cafes and live music venues. Arrive around 3pm, start with coffee, and build into the evening.
+**Afternoon:** Take the subway west to ==**Hongdae**== (Hongik University Station — Line 2, also direct AREX from Incheon). Named after Hongik University, one of Korea's top art schools, the area has three zones: the ==**central walking street**== where K-pop dance crews and buskers perform from the afternoon; ==**Yeonnam-dong**== to the north, a quieter cluster of independent cafes along the Gyeongui Line Forest Park (a linear park built on old railway tracks); and the ==**club district**== between Exits 6 and 9 for later. The whole area runs until dawn — come for the afternoon energy, stay as long as you want.
 
 <div style="display:flex;gap:6px;margin:14px 0">
   <div style="flex:1;min-width:0;text-align:center">
     <img src="/images/apt-incheon-2026-guide-hongdae.webp" alt="Hongik University Station (Hongdae) subway entrance — Lines 2, Airport Express, and Gyeongui-Jungang, with rental bikes parked outside" style="width:100%;height:auto;border-radius:6px" />
-    <p style="font-size:11px;color:#888;margin:4px 0 0">Hongdae Station — AREX direct from Incheon Airport (43 min)</p>
+    <p style="font-size:11px;color:#888;margin:4px 0 0">Hongdae Station — on AREX, 43 min direct from Incheon Airport</p>
   </div>
   <div style="flex:1;min-width:0;text-align:center">
     <img src="/images/apt-incheon-2026-guide-kbeauty.webp" alt="Olive Young store in Hongdae — Korea's biggest health and beauty chain with thousands of K-beauty and skincare products" style="width:100%;height:auto;border-radius:6px" />
-    <p style="font-size:11px;color:#888;margin:4px 0 0">Olive Young Hongdae — K-beauty brands you've seen on TikTok</p>
+    <p style="font-size:11px;color:#888;margin:4px 0 0">Olive Young — every K-beauty brand you've seen on TikTok</p>
   </div>
 </div>
 
-**Evening:** Walk or take a short taxi to ==**Myeongdong**== for street food dinner. The main strip is lined with vendors running Korean fried chicken, tteokbokki (spicy rice cake), hotteok (sweet pancakes), and cheese corn dogs until midnight. ==g:Budget ₩20,000–30,000 (~$15–22) to eat your way through the street.== The surrounding shops are K-beauty central — Innisfree, Etude House, Laneige — if that's relevant.
+**Evening:** Subway to ==**Myeongdong**== (Line 4, Exit 6). Seoul's most visited neighborhood by foreign tourists — and for good reason. The main pedestrian street (Myeongdong-gil) runs about 800m end-to-end: K-beauty flagship stores (Olive Young, Innisfree, Laneige, Sulwhasoo) on both sides, street food vendors filling the gaps from 5pm. ==g:Best street food: hotteok (brown sugar pancakes), tteokbokki, cheese corn dogs, lobster skewers.== For a proper meal, ==**Myeongdong Kyoja**== (since 1966) is the one worth queuing for — kalguksu (knife-cut noodles) and mandu (dumplings). Most shops close around 10pm; the airport bus back to Incheon stops ==g:right outside Myeongdong Station==. ==g:Bring your passport — K-beauty stores offer on-the-spot tax refunds.==
 
 <div style="display:flex;gap:6px;margin:14px 0">
   <div style="flex:1;min-width:0;text-align:center">
     <img src="/images/apt-incheon-2026-guide-myeongdong1.webp" alt="Myeongdong Kyoja restaurant exterior — Seoul's most famous kalguksu and mandu spot since 1966, always packed with tourists and locals" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
-    <p style="font-size:11px;color:#888;margin:4px 0 0">Myeongdong Kyoja — knife-cut noodles since 1966</p>
+    <p style="font-size:11px;color:#888;margin:4px 0 0">Myeongdong Kyoja — knife-cut noodles since 1966, always queuing</p>
   </div>
   <div style="flex:1;min-width:0;text-align:center">
     <img src="/images/apt-incheon-2026-guide-myeongdong2.webp" alt="Airport Bus stop at Myeongdong Station — direct coach service to Incheon Airport from central Seoul" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
-    <p style="font-size:11px;color:#888;margin:4px 0 0">Airport bus from Myeongdong → Incheon in ~60 min</p>
+    <p style="font-size:11px;color:#888;margin:4px 0 0">Airport bus stop right at Myeongdong Station → Incheon ~60 min</p>
   </div>
   <div style="flex:1;min-width:0;text-align:center">
     <img src="/images/apt-incheon-2026-guide-myeongdong3.webp" alt="Myeongdong shopping street lined with colorful K-beauty stores and pharmacies — Holika Holika visible on the right" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
-    <p style="font-size:11px;color:#888;margin:4px 0 0">Myeongdong street — K-beauty shops every 10 steps</p>
+    <p style="font-size:11px;color:#888;margin:4px 0 0">Myeongdong-gil — 800m of K-beauty, street food, and neon signs</p>
   </div>
 </div>
 
-**Late night:** Korean BBQ. Sit at a table with a charcoal grill built in, order samgyeopsal (grilled pork belly), wrap it in lettuce with garlic and ssamjang paste, and do it with soju. This is the dinner. Most Korean BBQ restaurants run until 2am.
+**Night walk:** From Myeongdong, walk north for about 10 minutes and you drop down into ==**Cheonggyecheon Stream**== (청계천). An 11km urban waterway that runs through the heart of downtown Seoul — buried under a highway after the Korean War, excavated and restored in 2005. The path runs below street level, flanked by stone walls, willows, and summer shade. ==g:Egrets nest in the water.== At night the light installations reflect on the surface and locals sit along the banks with convenience store drinks. Subway exits come up every few minutes along the entire path, so you can walk as much or as little as you want and surface anywhere.
+
+<div style="display:flex;gap:6px;margin:14px 0">
+  <div style="flex:1;min-width:0;text-align:center">
+    <img src="/images/apt-incheon-2026-guide-cheonggyecheon1.webp" alt="Cheonggyecheon Stream wide view — elevated walkway and stepping stones with central Seoul skyscrapers visible behind the tree line" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <p style="font-size:11px;color:#888;margin:4px 0 0">11km stream running through central Seoul — free, 24h</p>
+  </div>
+  <div style="flex:1;min-width:0;text-align:center">
+    <img src="/images/apt-incheon-2026-guide-cheonggyecheon2.webp" alt="Cheonggyecheon Stream close-up — white egret standing in the flowing water, couple sitting on rocks by the bank" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <p style="font-size:11px;color:#888;margin:4px 0 0">Egrets nesting in the stream — in the middle of a capital city</p>
+  </div>
+  <div style="flex:1;min-width:0;text-align:center">
+    <img src="/images/apt-incheon-2026-guide-cheonggyecheon3.webp" alt="Cheonggyecheon Stream walking path — weeping willow trees alongside the stream, pedestrians strolling the riverside trail" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <p style="font-size:11px;color:#888;margin:4px 0 0">Subway exits every few minutes along the path — walk as far as you like</p>
+  </div>
+</div>
+
+**Late night:** Korean BBQ. Sit at a table with a charcoal grill built in, order samgyeopsal (grilled pork belly), wrap it in lettuce with garlic and ssamjang paste, pair with soju. Most Korean BBQ restaurants run until 2am.
 
 ---
 
