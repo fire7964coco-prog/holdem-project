@@ -29,7 +29,7 @@ Seoul has been on everyone's travel list since Parasite won the Oscars, Squid Ga
 
 APT Incheon 2026. August 7–16. Paradise City Casino. $2.7 million in guaranteed prize pools. And when the cards are away — bibimbap, Han River nights, palace walks, and Korean fried chicken until 4am.
 
-The poker trip and the Korea trip are the same trip.
+The poker trip and the Korea trip are the same trip. ==g:Paradise City is 10 minutes from the airport, and Seoul is 1 hour away by subway.== You can come just for the casino, just for sightseeing, or do both — the location makes it easy either way.
 
 ---
 
@@ -157,9 +157,28 @@ If you're flying through Incheon and have a long layover: ==g:the casino is acce
 
 ---
 
-## Seoul 3-Day Itinerary (Before or After the Tournament)
+## Seoul Day Trips: 1 Hour from Paradise City
 
-Most flights to Korea route through Seoul, so you have every reason to add 2–3 days on either side of the festival. Here's a realistic first-timer route that covers the highlights.
+Here's the setup most tournament players don't realize until they arrive: ==**Paradise City is your base, and Seoul is just 1 hour away**==.
+
+You can stay at the casino hotel the whole trip — play your sessions, sleep, repeat. Or you can do what most regulars do: finish your morning session, grab the subway, spend the afternoon in Hongdae or Myeongdong, and be back at the felt by evening. The transit makes it completely realistic.
+
+**Getting from Paradise City to Seoul:**
+
+<div style="overflow-x:auto;margin:14px 0">
+
+| Route | Destination | Journey | Cost |
+|---|---|---|---|
+| ==g:**Free shuttle → T1 → AREX**== | Hongdae / Seoul Station | ==g:~50 min== | ~₩9,500 (~$7) |
+| Airport Bus 6001 | Myeongdong / City Hall | ~60 min | ~₩17,000 (~$13) |
+| Airport Bus 6015 | Gangnam / Yangjae | ~70 min | ~₩17,000 (~$13) |
+| Taxi direct | Hongdae / Myeongdong | ~50–60 min | ~$35–50 |
+
+</div>
+
+==g:The AREX is the best option==: free shuttle to Terminal 1 → board the direct train → Hongik University Station (Hongdae) in 43 minutes. Trains run every 6–9 minutes, 5am to midnight. Airport buses run direct to Myeongdong and Gangnam if you prefer.
+
+Here's what to do with 1–3 free days:
 
 ![Google Maps overview showing Paradise City in Incheon and the distance to central Seoul — approximately 50km west of the city](/images/apt-incheon-2026-guide-map-wide.webp)
 
