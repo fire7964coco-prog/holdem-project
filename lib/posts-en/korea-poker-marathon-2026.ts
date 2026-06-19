@@ -31,6 +31,10 @@ That story resonated beyond the ARMY fandom. It resonated with the overlap that 
 
 Korea is where both come together perfectly. ==**World-class autumn marathons. A foreigner-only casino 10 minutes from the airport. And the best city food scene in Asia in between.**==
 
+![2026 Goyang Half Marathon official record — 1:51:10, Male Half division, Bib 5448, March 8 2026](/images/korea-poker-marathon-2026-marathon-record.webp)
+
+*The author's result from the 2026 Goyang Half Marathon. Korea's race organization is tight — official chip times, digital result cards, instant sharing.*
+
 ---
 
 > **Quick answer**
@@ -66,6 +70,10 @@ The case isn't complicated. It's about timing and location.
 
 ==r:Korean summer (June–August) is hot and humid — races are concentrated in March and October–November for a reason.== If you're planning a Korea trip around running, October or November is the target window.
 
+![Korean autumn marathon finish line — runners crossing the finish with timer board visible, spectators and photographers at the line](/images/korea-poker-marathon-2026-marathon-finish.webp)
+
+*Finish line energy at a Korean autumn race. The clock reads around 1:34 — competitive local runners set the pace, recreational runners finish behind them through the morning.*
+
 ---
 
 ## Chuncheon Marathon 2026 — Oct 25
@@ -73,6 +81,10 @@ The case isn't complicated. It's about timing and location.
 ==**Chuncheon**== (춘천) is a small city 90 minutes east of Seoul by express train, set at the confluence of two rivers in a mountain valley in Gangwon Province. Koreans call it "romantic." The marathon it hosts is one of the most respected in Asia.
 
 **The race:** Founded in 1946 — Korea's second oldest marathon. ==g:IAAF Silver Label status== (the tier below World Marathon Majors). Full 42.195K + 10K. Start at Gongjicheon Bridge, 9:00am. The course loops around ==**Uiam Lake**== (의암호), a reservoir surrounded by mountains changing colour in late October. Temperature on race day typically runs 8–14°C — conditions that produce personal bests.
+
+![Runners with race bibs in an autumn Korean park — orange and red foliage lining the race course, morning light](/images/korea-poker-marathon-2026-marathon-race.webp)
+
+*Autumn race morning in Korea. This is what October running looks like — 10–14°C, fallen leaves, quiet park roads.*
 
 **The course reality:** Not flat. Rolling hills around the 5K and 30K marks, with an uphill section near Chuncheon Dam that thins the field. But the reward — running next to silent mountain lakes with autumn foliage and no traffic — is unlike anything in an urban marathon. Multiple race reports from international runners describe it as the most scenic race they've run in Asia.
 
