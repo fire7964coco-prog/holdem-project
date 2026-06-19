@@ -425,11 +425,11 @@ That's it. That's the experience that's been posted on Korean social media milli
 
 <div style="display:flex;gap:12px;margin:18px 0;flex-wrap:wrap">
   <div style="flex:1;min-width:200px">
-    <img src="/images/korea-poker-marathon-2026-ramen-machine.webp" alt="Han River ramen cooking machine at GS25 convenience store — automatic hot water dispenser for instant noodles in paper bowls" style="width:100%;border-radius:8px;display:block" />
+    <img src="/images/korea-poker-marathon-2026-ramen-machine.webp" alt="Han River ramen cooking machine at GS25 convenience store — automatic hot water dispenser for instant noodles in paper bowls" style="width:100%;height:280px;object-fit:cover;border-radius:8px;display:block" />
     <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">The machine at the park convenience store. Scan your barcode bowl, press Start — machine handles the rest. Machine use is free.</p>
   </div>
   <div style="flex:1;min-width:200px">
-    <img src="/images/korea-poker-marathon-2026-ramen.webp" alt="Bowl of Han River ramen — Shin Ramyun instant noodles in paper bowl with egg on top, eaten at the riverbank" style="width:100%;border-radius:8px;display:block" />
+    <img src="/images/korea-poker-marathon-2026-ramen.webp" alt="Bowl of Han River ramen — Shin Ramyun instant noodles in paper bowl with egg on top, eaten at the riverbank" style="width:100%;height:280px;object-fit:cover;border-radius:8px;display:block" />
     <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">The result. Hot Shin Ramyun with egg by the Han River. Total cost ₩4,000–5,000 (~$3). Possibly the best post-run meal in Seoul.</p>
   </div>
 </div>
