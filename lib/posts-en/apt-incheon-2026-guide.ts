@@ -161,25 +161,9 @@ If you're flying through Incheon and have a long layover: ==g:the casino is acce
 
 Most flights to Korea route through Seoul, so you have every reason to add 2–3 days on either side of the festival. Here's a realistic first-timer route that covers the highlights.
 
-![Wide map from Paradise City Incheon to central Seoul — Paradise City marker and AREX airport railroad route](/images/apt-incheon-2026-guide-map-wide.webp)
+![Google Maps overview showing Paradise City in Incheon and the distance to central Seoul — approximately 50km west of the city](/images/apt-incheon-2026-guide-map-wide.webp)
 
-![Central Seoul map — markers for Hongdae, Gyeongbokgung, Cheonggyecheon, Myeongdong, Namsan, and Seongsu with Gangnam-gu district boundary outlined](/images/apt-incheon-2026-guide-map-seoul.webp)
-
-<div style="overflow-x:auto;margin:20px 0">
-
-| From Paradise City | To | Transit | Time |
-|---|---|---|---|
-| Paradise City | Incheon Airport (T1) | Free shuttle | ~10 min |
-| Incheon Airport | Hongdae | AREX all-stop train | ~60 min |
-| Hongdae | Gyeongbokgung / Myeongdong | Subway Line 3 or 4 | ~25–35 min |
-| Gyeongbokgung | Cheonggyecheon | Walk | ~10 min |
-| Myeongdong | Namsan (N Seoul Tower) | Walk or cable car | ~15–25 min |
-| Hongdae | Gangnam | Subway Line 2 | ~30 min |
-| Gangnam | Seongsu | Subway Line 2 | ~15 min |
-
-</div>
-
-The blue dashed line on the first map shows the ==**AREX Airport Railroad**== — your main link from the tournament venue to central Seoul. Once in the city, the subway connects everything else. Marker positions are approximate.
+![Google Maps zoomed into central Seoul showing Namsan area — Hongdae is to the west, Gyeongbokgung Palace to the north](/images/apt-incheon-2026-guide-map-seoul.webp)
 
 ### Day 1 — Old Seoul: Palaces, Hanoks & Street Food
 
