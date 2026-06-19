@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "korea-poker-marathon-2026",
   title: "Korea Run + Play 2026 — Marathons & Poker in One Trip",
   seoTitle: "Korea Poker & Marathon 2026 — Chuncheon, JTBC + Paradise City Guide",
-  desc: "Run Chuncheon or JTBC Seoul Marathon in perfect Oct–Nov weather, then play poker at Paradise City Casino. Full 2026 calendar + foreign runner registration guide.",
+  desc: "Run Chuncheon or JTBC Seoul Marathon in perfect Oct–Nov weather, then play poker at Paradise City. Full 2026 calendar + foreign runner registration guide.",
   tldr: "Korea's top autumn marathons (Chuncheon Oct 25, JTBC Seoul Nov 1, Gaimin Run Nov 15) align with perfect running weather. Paradise City Casino near Incheon Airport runs year-round cash games — foreigners only, 10 min from the terminal. One trip covers both.",
   category: "tournament",
   date: "2026-06-19",
@@ -21,11 +21,11 @@ export const POST: Post = {
     "Korea poker run trip",
     "Paradise City Casino poker",
     "running poker Korea",
-    "Gaimin Run Korea 2026",
+    "Garmin Run Korea 2026",
     "Seoul marathon foreign runners",
   ],
   content: `
-On May 17, 2026, BTS's Suga woke up at 6am in his Menlo Park hotel, ran San Francisco's 12K Bay to Breakers race in 1:04:43 — then performed to 50,000 fans at Stanford Stadium that evening. RM later revealed the context: ==g:Suga runs 10K every day.== He heard about the race and simply entered.
+On May 17, 2026, BTS's Suga woke up at 6am in his Palo Alto hotel, ran San Francisco's 12K Bay to Breakers race in 1:04:43 — then performed to 50,000 fans at Stanford Stadium that evening. RM later revealed the context: ==g:Suga runs 10K every day.== He heard about the race and simply entered.
 
 That story resonated beyond the ARMY fandom. It resonated with the overlap that already exists: people who play cards and people who run. The two communities share more than anyone documents — the discipline, the variance tolerance, the obsessive optimization.
 
@@ -69,7 +69,7 @@ The case isn't complicated. It's about timing and location.
 | ==**YTN Seoul Tour Marathon**== | ==**Sep 6**== | Half, 10K | Seoul Plaza | [run.ytn.co.kr](http://run.ytn.co.kr) | Closed Jul 15 |
 | ==g:**Chuncheon Marathon**== | ==g:**Oct 25**== | ==g:Full, 10K== | ==g:Chuncheon== | ==g:[chuncheonmarathon.com](https://www.chuncheonmarathon.com)== | ==g:Open now== |
 | ==**JTBC Seoul Marathon**== | ==**Nov 1**== | Full, 10K | Seoul (Sangam) | [worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon) | Open (closes Sep 4) |
-| Gaimin Run Korea | Nov 15 | Half, 10K | Goyang | [runable.me](http://runable.me/product/18977?comp=18962) | Open Jul 1–3 |
+| Garmin Run Korea | Nov 15 | Half, 10K | Goyang | [runable.me](http://runable.me/product/18977?comp=18962) | Open Jul 1–3 |
 
 </div>
 
@@ -85,7 +85,7 @@ The case isn't complicated. It's about timing and location.
 
 ==**Chuncheon**== (춘천) is a small city 90 minutes east of Seoul by express train, set at the confluence of two rivers in a mountain valley in Gangwon Province. Koreans call it "romantic." The marathon it hosts is one of the most respected in Asia.
 
-**The race:** Founded in 1946 — Korea's second oldest marathon. ==g:IAAF Silver Label status== (the tier below World Marathon Majors). Full 42.195K + 10K. Start at Gongjicheon Bridge, 9:00am. The course loops around ==**Uiam Lake**== (의암호), a reservoir surrounded by mountains changing colour in late October. Temperature on race day typically runs 8–14°C — conditions that produce personal bests.
+**The race:** Founded in 1946 — Korea's second oldest marathon. ==g:AIMS-certified international course== — the global standard below World Marathon Majors. Full 42.195K + 10K. Start at Gongjicheon Bridge, 9:00am. The course loops around ==**Uiam Lake**== (의암호), a reservoir surrounded by mountains changing colour in late October. Temperature on race day typically runs 8–14°C — conditions that produce personal bests.
 
 ![Runners with race bibs in an autumn Korean park — orange and red foliage lining the race course, morning light](/images/korea-poker-marathon-2026-marathon-race.webp)
 
@@ -115,7 +115,7 @@ The ==**JTBC Seoul Marathon**== is Korea's premier urban race — 25,000–50,00
 **The course:** Starts at ==Sangam World Cup Stadium== (Line 6, Sangam World Cup Stadium Station). Runs through Deoksugung Palace, Gwanghwamun Square, and Dongdaemun — the full sweep of Seoul's historic and modern identity. Full marathon finishes at ==Olympic Park==; 10K finishes at ==Yeouido Park==. Time limit: 5 hours for full.
 
 **Race details:**
-- Date: ==**November 1, 2026 (Sunday)**==, 7:30am start
+- Date: ==**November 1, 2026 (Sunday)**==, 8:00am start
 - Distances: Full 42.195K · 10K
 - Start: Sangam World Cup Stadium
 - Expo (race pack pickup): SETEC, Gangnam — Oct 29–31, 10am–6pm
@@ -132,7 +132,7 @@ Foreign runners residing outside Korea register exclusively through ==**[worldsm
 
 ## Gaimin Run Korea 2026 — Nov 15
 
-==**Gaimin Run Korea**== (가민런 코리아) is the newer entry on the calendar — but the venue makes it worth noting.
+==**Garmin Run Korea**== (가민런 코리아) is the newer entry on the calendar — but the venue makes it worth noting.
 
 The race is held at ==**Goyang Sports Complex**== (고양종합운동장) in Ilsan, Gyeonggi Province. International runners may recognize the stadium from a different context: this is the same venue used for ==g:BTS and BLACKPINK concerts==, among the largest K-pop events in Korea. For K-culture tourists who also run, the combination is worth the detour.
 
@@ -143,7 +143,7 @@ The race is held at ==**Goyang Sports Complex**== (고양종합운동장) in Ils
 - Entry fee: Half ₩80,000 · 10K ₩60,000
 - Registration: [runable.me](http://runable.me/product/18977?comp=18962) — ==r:Jul 1–3 only, lottery selection==
 
-Goyang is ~30 min from Hongdae by subway (Line 3 from Hongjae). Easy day trip from Seoul.
+Goyang is ~50 min from central Seoul by subway (Line 3, Daehwa direction toward Ilsan). Easy day trip.
 
 ---
 
@@ -207,7 +207,7 @@ For the full tournament picture (APT Incheon runs August 7–16 with $2.7M GTD),
 | ==g:**Sep 25–Oct 7**== | ==g:🃏 Poker== | ==g:**APT Jeju 2026** · $1.5M Main GTD== | ==g:LES A Casino, Jeju== |
 | ==**Oct 25**== | ==**🏃 Marathon**== | ==**Chuncheon Marathon**== (Full/10K) | ==**Chuncheon, Gangwon**== |
 | ==**Nov 1**== | ==**🏃 Marathon**== | ==**JTBC Seoul Marathon**== (Full/10K) | ==**Sangam, Seoul**== |
-| Nov 15 | 🏃 Marathon | Gaimin Run Korea (Half/10K) | Goyang (Ilsan) |
+| Nov 15 | 🏃 Marathon | Garmin Run Korea (Half/10K) | Goyang (Ilsan) |
 | Year-round | 🃏 Cash | Paradise City cash games (NLHE) | Incheon Airport |
 
 </div>
@@ -288,7 +288,7 @@ A. Yes. Paradise City Casino operates 24/7. Sunday post-race check-in is standar
 
 A. Yes. The foreigner registration tab at chuncheonmarathon.com is designed for overseas participants. You need a passport number, email, and payment method. Race kit is distributed at the venue before the race.
 
-**Q. What's the connection to K-pop at the Gaimin Run venue?**
+**Q. What's the connection to K-pop at the Garmin Run venue?**
 
 A. Goyang Sports Complex is one of Korea's largest concert stadiums — BTS, BLACKPINK, and most major K-pop acts hold Gyeonggi Province concerts there. For K-culture fans who also run, the stadium itself is part of the draw. The race and the venue's reputation are two separate things, but they share an audience.
 
@@ -300,7 +300,7 @@ Korea has the best autumn running conditions in East Asia, a casino 10 minutes f
 
 The community of people who hold both a poker bankroll and a marathon training log is real. BTS's Suga didn't invent the overlap — he just made it visible.
 
-Dates to bookmark: ==**Chuncheon Oct 25**==, ==**JTBC Seoul Nov 1**==, Gaimin Run Nov 15. Paradise City open year-round.
+Dates to bookmark: ==**Chuncheon Oct 25**==, ==**JTBC Seoul Nov 1**==, Garmin Run Nov 15. Paradise City open year-round.
 
 For the full poker tournament picture (APT Incheon, $2.7M GTD, August 7–16): [APT Incheon 2026 Guide](/en/blog/apt-incheon-2026-guide/). For tournament vs cash game strategy differences: [Tournament vs Cash Game](/en/blog/holdem-tournament-vs-cash-game/).
 
@@ -309,7 +309,7 @@ For the full poker tournament picture (APT Incheon, $2.7M GTD, August 7–16): [
 ## Related Posts
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
-  <a href="/en/blog/apt-incheon-2026-guide" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/en/blog/apt-incheon-2026-guide/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Tournament</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">APT Incheon 2026 Guide</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Aug 7–16, Paradise City Casino · $2.7M GTD</div>
