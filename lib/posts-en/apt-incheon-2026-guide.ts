@@ -4,11 +4,11 @@ export const POST: Post = {
   slug: "apt-incheon-2026-guide",
   title: "APT Incheon 2026 — Poker Festival + Korea Travel Guide",
   seoTitle: "Flying to Korea for Poker? APT Incheon 2026 at Paradise City + Seoul in 3 Days",
-  desc: "APT Incheon 2026 — Aug 7–16, Paradise City Casino near Incheon Airport. $2.7M GTD, Main Event ~$1,700. Qualify from $3.50 via Natural8. Seoul 3-day guide inside.",
-  tldr: "APT Incheon 2026 runs Aug 7–16 at Paradise City Casino, Incheon — 10 min by free shuttle from Terminal 1. Main Event: KRW 2,500,000 (~$1,703) buy-in, $1M GTD. Qualify from $3.50 via Natural8 step satellites. Foreign nationals only (Korean citizens cannot enter). Seoul is 60 min away and is one of the best cities in Asia for food, culture, and nightlife.",
+  desc: "APT Incheon 2026 — Aug 7–16, Paradise City Casino near Incheon Airport. $2.7M GTD, Main Event ~$1,700. Qualify from $3.50 via Natural8. Seoul 3-day guide.",
+  tldr: "APT Incheon 2026 runs Aug 7–16 at Paradise City Casino, Incheon — 10 min by free shuttle from Terminal 1. Main Event: KRW 2,500,000 (~$1,703) buy-in, $1M GTD. Qualify from $3.50 via Natural8 step satellites. Foreign nationals only (Korean citizens cannot enter). Seoul is ~1 hour away and is one of the best cities in Asia for food, culture, and nightlife.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-06-18",
+  updated: "2026-06-19",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🇰🇷",
@@ -169,14 +169,15 @@ You can stay at the casino hotel the whole trip — play your sessions, sleep, r
 
 | Route | Destination | Journey | Cost |
 |---|---|---|---|
-| ==g:**Free shuttle → T1 → AREX**== | Hongdae / Seoul Station | ==g:~50 min== | ~₩9,500 (~$7) |
+| ==g:**Free shuttle → T1 → AREX Express**== | ==g:Seoul Station== | ==g:~53 min== | ==g:~₩11,000 (~$8)== |
+| Free shuttle → T1 → AREX All-Stop | Hongdae (Hongik Univ.) | ~70 min | ~₩4,750 (~$3.50) |
 | Airport Bus 6001 | Myeongdong / City Hall | ~60 min | ~₩17,000 (~$13) |
 | Airport Bus 6015 | Gangnam / Yangjae | ~70 min | ~₩17,000 (~$13) |
 | Taxi direct | Hongdae / Myeongdong | ~50–60 min | ~$35–50 |
 
 </div>
 
-==g:The AREX is the best option==: free shuttle to Terminal 1 → board the direct train → Hongik University Station (Hongdae) in 43 minutes. Trains run every 6–9 minutes, 5am to midnight. Airport buses run direct to Myeongdong and Gangnam if you prefer.
+==g:Two AREX options from T1==: the **Express** (non-stop to Seoul Station in 43 min, ₩11,000 — then transfer to Line 2 or 4) or the **All-Stop** (direct to Hongdae/Hongik University Station with no transfer, ~60 min, ₩4,750). All-Stop trains run every 6–10 minutes, 5am to midnight. Airport buses run direct to Myeongdong and Gangnam if you prefer.
 
 Here's what to do with 1–3 free days:
 
@@ -203,7 +204,7 @@ Here's what to do with 1–3 free days:
 <div style="display:flex;gap:6px;margin:14px 0">
   <div style="flex:1;min-width:0;text-align:center">
     <img src="/images/apt-incheon-2026-guide-hongdae.webp" alt="Hongik University Station (Hongdae) subway entrance — Lines 2, Airport Express, and Gyeongui-Jungang, with rental bikes parked outside" style="width:100%;height:auto;border-radius:6px" />
-    <p style="font-size:11px;color:#888;margin:4px 0 0">Hongdae Station — on AREX, 43 min direct from Incheon Airport</p>
+    <p style="font-size:11px;color:#888;margin:4px 0 0">Hongdae Station — AREX All-Stop direct from Incheon Airport (~60 min, no transfer)</p>
   </div>
   <div style="flex:1;min-width:0;text-align:center">
     <img src="/images/apt-incheon-2026-guide-kbeauty.webp" alt="Olive Young store in Hongdae — Korea's biggest health and beauty chain with thousands of K-beauty and skincare products" style="width:100%;height:auto;border-radius:6px" />
@@ -313,7 +314,7 @@ A. Yes. The buy-in (~$1,703) is significant but the structure is beginner-friend
 
 **Q. How do I get from Paradise City to Seoul?**
 
-A. Take the free shuttle back to Incheon Airport Terminal 1, then board the AREX Airport Express. Direct trains reach Seoul Station in ~43 min (~$8). All-stop AREX trains also serve Hongdae (Hongik University Station) in ~60–70 min — convenient if you're staying in the Hongdae/Mapo area.
+A. Take the free shuttle back to Incheon Airport Terminal 1, then board the AREX. Two options: **Express** (non-stop to Seoul Station, ~43 min, ₩11,000) or **All-Stop** (direct to Hongdae/Hongik University Station with no transfer, ~60 min, ₩4,750). The All-Stop is cheaper and drops you in Hongdae without any transfers.
 
 **Q. Do I need to speak Korean to navigate Seoul?**
 
@@ -327,7 +328,7 @@ A. Both work, but ==g:arriving 2–3 days early is recommended==. You recover fr
 
 ## The Takeaways
 
-1. **APT Incheon 2026** runs ==**Aug 7–16**== at Paradise City Casino — 5 min from Incheon Airport, $2.7M GTD.
+1. **APT Incheon 2026** runs ==**Aug 7–16**== at Paradise City Casino — 10 min from Incheon Airport by free shuttle, $2.7M GTD.
 2. **Main Event** buy-in: ==**~$1,703**== with ==g:$1M guaranteed==. Cheaper than WPT or EPT by 3x.
 3. **Qualify from $3.50** via Natural8 step satellites. OnLive format lets you start Day 1 from home.
 4. **Seoul is 60 min away** and is one of Asia's best travel destinations — ==g:palaces, BBQ, nightlife, and unbeatable street food.==
