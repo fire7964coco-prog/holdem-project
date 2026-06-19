@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Korea Run + Play 2026 — Marathons & Poker in One Trip",
   seoTitle: "Korea Poker & Marathon 2026 — Chuncheon, JTBC + Paradise City Guide",
   desc: "Run Chuncheon or JTBC Seoul Marathon in perfect Oct–Nov weather, then play poker at Paradise City. Full 2026 calendar + foreign runner registration guide.",
-  tldr: "Korea's top autumn marathons (Chuncheon Oct 25, JTBC Seoul Nov 1, Gaimin Run Nov 15) align with perfect running weather. Paradise City Casino near Incheon Airport runs year-round cash games — foreigners only, 10 min from the terminal. One trip covers both.",
+  tldr: "Korea's top autumn marathons (Chuncheon Oct 25, JTBC Seoul Nov 1, Garmin Run Nov 15) align with perfect running weather. Paradise City Casino near Incheon Airport runs year-round cash games — foreigners only, 10 min from the terminal. One trip covers both.",
   category: "tournament",
   date: "2026-06-19",
   updated: "2026-06-19",
@@ -43,7 +43,7 @@ Korea is where both come together perfectly. ==**World-class autumn marathons. A
 ---
 
 > **Quick answer**
-> Korea poker tournaments: ==**APT Incheon Aug 7–16**==, ==**APT Jeju Sep 25–Oct 7**== (both at foreigners-only casinos). Korea marathons: ==**Chuncheon Oct 25**==, ==**JTBC Seoul Nov 1**==, ==**Gaimin Run Nov 15**==. APT Jeju ends Oct 7 → Chuncheon starts Oct 25 — ==g:18-day gap, one trip covers both.==
+> Korea poker tournaments: ==**APT Incheon Aug 7–16**==, ==**APT Jeju Sep 25–Oct 7**== (both at foreigners-only casinos). Korea marathons: ==**Chuncheon Oct 25**==, ==**JTBC Seoul Nov 1**==, ==**Garmin Run Nov 15**==. APT Jeju ends Oct 7 → Chuncheon starts Oct 25 — ==g:18-day gap, one trip covers both.==
 
 ---
 
@@ -83,7 +83,7 @@ The case isn't complicated. It's about timing and location.
 
 ## Chuncheon Marathon 2026 — Oct 25
 
-==**Chuncheon**== (춘천) is a small city 90 minutes east of Seoul by express train, set at the confluence of two rivers in a mountain valley in Gangwon Province. Koreans call it "romantic." The marathon it hosts is one of the most respected in Asia.
+==**Chuncheon**== (춘천) is a small city ~80–90 minutes east of Seoul by express train, set at the confluence of two rivers in a mountain valley in Gangwon Province. Koreans call it "romantic." The marathon it hosts is one of the most respected in Asia.
 
 **The race:** Founded in 1946 — Korea's second oldest marathon. ==g:AIMS-certified international course== — the global standard below World Marathon Majors. Full 42.195K + 10K. Start at Gongjicheon Bridge, 9:00am. The course loops around ==**Uiam Lake**== (의암호), a reservoir surrounded by mountains changing colour in late October. Temperature on race day typically runs 8–14°C — conditions that produce personal bests.
 
@@ -102,7 +102,7 @@ The case isn't complicated. It's about timing and location.
 
 ==r:Slots sold out in under 3 minutes last year. Have your passport number and payment ready before the window opens.==
 
-**Getting there from Seoul:** ITX-Cheongchun express train from Yongsan Station → Chuncheon, ~70 min, ~₩8,000. Or subway Line 1/경의중앙선 to Cheongnyangni, then Chuncheon line (~90 min total). Affordable, scenic, no car required.
+**Getting there from Seoul:** ITX-Cheongchun express train from Yongsan Station → Chuncheon, ~80–90 min, ~₩8,800. Or subway 경의중앙선 to Cheongnyangni, then Chuncheon line (~100 min total, cheaper). Affordable, scenic, no car required.
 
 **The Chuncheon → Paradise City route:** After the race, express train back to Seoul (~70 min) → AREX from Seoul Station or Hongdae → Paradise City shuttle from T1. Total: ~3 hours. Entirely doable on post-race Sunday evening.
 
@@ -130,7 +130,7 @@ Foreign runners residing outside Korea register exclusively through ==**[worldsm
 
 ---
 
-## Gaimin Run Korea 2026 — Nov 15
+## Garmin Run Korea 2026 — Nov 15
 
 ==**Garmin Run Korea**== (가민런 코리아) is the newer entry on the calendar — but the venue makes it worth noting.
 
@@ -295,7 +295,7 @@ For the full tournament picture (APT Incheon runs August 7–16 with $2.7M GTD),
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">Sep 25–Oct 7</td>
       <td style="padding:9px 12px">🃏 <strong>APT Jeju 2026</strong></td>
       <td style="padding:9px 12px">LES A Casino, Jeju</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">$1.5M Main GTD · 13 days to Chuncheon</td>
+      <td style="padding:9px 12px;color:var(--muted-foreground)">$1.5M Main GTD · 18 days to Chuncheon Marathon</td>
     </tr>
     <tr style="background:rgba(34,197,94,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">Oct 25 (Sun)</td>
@@ -380,7 +380,7 @@ The cleanest double-dip: APT Incheon (Aug 7–16) → rest in Seoul → Chuncheo
 | Day 1 (Thu) | Fly in → check in Paradise City or Seoul hotel · evening cash game or rest |
 | Day 2 (Fri) | Seoul sightseeing — Gyeongbokgung, Bukchon, Gwangjang Market |
 | Day 3 (Sat) | Expo at SETEC (Gangnam) for race kit pickup · light run · early sleep |
-| Day 4 (Sun) | ==**JTBC Seoul Marathon**== (7:30am start) · recovery meal · rest |
+| Day 4 (Sun) | ==**JTBC Seoul Marathon**== (8:00am start) · recovery meal · rest |
 | Day 5 (Mon) | Seoul day: Hongdae, Myeongdong, Cheonggyecheon walk |
 | Day 6 (Tue) | Move to Paradise City · afternoon + evening cash game session |
 | Day 7 (Wed) | Morning poker · AREX to Incheon Airport · fly out |
@@ -513,12 +513,12 @@ For the full poker tournament picture (APT Incheon, $2.7M GTD, August 7–16): [
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">APT Incheon 2026 Guide</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Aug 7–16, Paradise City Casino · $2.7M GTD</div>
   </a>
-  <a href="/en/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/en/blog/holdem-tournament/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Basics</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">How Poker Tournaments Work</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Buy-ins, blinds, satellites & first-timer checklist</div>
   </a>
-  <a href="/en/blog/wpt-australia-2026-guide" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/en/blog/wpt-australia-2026-guide/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Asia-Pacific</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">WPT Australia 2026 Guide</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">The Star Sydney — Sep 10–30</div>
