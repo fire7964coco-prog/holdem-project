@@ -181,7 +181,15 @@ Most flights to Korea route through Seoul, so you have every reason to add 2–3
 
 **Afternoon:** ==**Hongdae**== is where Seoul's creative and youth energy concentrates — street performers, indie record shops, art markets, and a high concentration of cafes and live music venues. Arrive around 3pm, start with coffee, and build into the evening.
 
+![Hongik University Station (Hongdae) subway entrance — Lines 2, Airport Express, and Gyeongui-Jungang, with rental bikes parked outside](/images/apt-incheon-2026-guide-hongdae.webp)
+
+*Hongdae Station connects directly to AREX — you can ride straight here from Incheon Airport in 43 minutes without changing trains.*
+
 **Evening:** Walk or take a short taxi to ==**Myeongdong**== for street food dinner. The main strip is lined with vendors running Korean fried chicken, tteokbokki (spicy rice cake), hotteok (sweet pancakes), and cheese corn dogs until midnight. ==g:Budget ₩20,000–30,000 (~$15–22) to eat your way through the street.== The surrounding shops are K-beauty central — Innisfree, Etude House, Laneige — if that's relevant.
+
+![Olive Young store in Hongdae — Korea's biggest health and beauty chain, with thousands of K-beauty, skincare, and cosmetics products under one roof](/images/apt-incheon-2026-guide-kbeauty.webp)
+
+*Olive Young is Korea's answer to Sephora. The Hongdae branch is one of the largest — grab skincare, sheet masks, and sunscreen brands you've only seen on TikTok.*
 
 **Late night:** Korean BBQ. Sit at a table with a charcoal grill built in, order samgyeopsal (grilled pork belly), wrap it in lettuce with garlic and ssamjang paste, and do it with soju. This is the dinner. Most Korean BBQ restaurants run until 2am.
 
