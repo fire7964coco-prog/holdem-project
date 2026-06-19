@@ -173,6 +173,23 @@ Most flights to Korea route through Seoul, so you have every reason to add 2–3
 
 **Evening:** Head to ==**Gwangjang Market**== (Jongno 5-ga Station, Line 1) for dinner. Seoul's oldest covered market has over 5,000 stalls — the food tour circuit covers bindaetteok (mung bean pancakes), bibimbap, mayak gimbap, and sannakji (live octopus, optional). ==g:One of the best food experiences in Asia for under $10.==
 
+**After dinner:** Walk 10 minutes to ==**Cheonggyecheon Stream**== — a 5.8km urban stream running through central Seoul, restored from a buried highway in 2005. Locals sit along the banks at night, feet dangling near the water. Completely free, open 24 hours.
+
+<div style="display:flex;gap:6px;margin:14px 0">
+  <div style="flex:1;min-width:0;text-align:center">
+    <img src="/images/apt-incheon-2026-guide-cheonggyecheon1.webp" alt="Cheonggyecheon Stream wide view — elevated walkway and stepping stones with central Seoul skyscrapers visible behind the tree line" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <p style="font-size:11px;color:#888;margin:4px 0 0">The stream cuts through the middle of the city</p>
+  </div>
+  <div style="flex:1;min-width:0;text-align:center">
+    <img src="/images/apt-incheon-2026-guide-cheonggyecheon2.webp" alt="Cheonggyecheon Stream close-up — white egret standing in the flowing water, couple sitting on rocks by the bank" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <p style="font-size:11px;color:#888;margin:4px 0 0">Wildlife and flowing water in the middle of Seoul</p>
+  </div>
+  <div style="flex:1;min-width:0;text-align:center">
+    <img src="/images/apt-incheon-2026-guide-cheonggyecheon3.webp" alt="Cheonggyecheon Stream walking path — weeping willow trees alongside the stream, pedestrians strolling the riverside trail" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <p style="font-size:11px;color:#888;margin:4px 0 0">5.8km walkable stream path — free, open 24h</p>
+  </div>
+</div>
+
 ---
 
 ### Day 2 — Young Seoul: K-Culture & Nightlife
@@ -186,6 +203,21 @@ Most flights to Korea route through Seoul, so you have every reason to add 2–3
 *Hongdae Station connects directly to AREX — you can ride straight here from Incheon Airport in 43 minutes without changing trains.*
 
 **Evening:** Walk or take a short taxi to ==**Myeongdong**== for street food dinner. The main strip is lined with vendors running Korean fried chicken, tteokbokki (spicy rice cake), hotteok (sweet pancakes), and cheese corn dogs until midnight. ==g:Budget ₩20,000–30,000 (~$15–22) to eat your way through the street.== The surrounding shops are K-beauty central — Innisfree, Etude House, Laneige — if that's relevant.
+
+<div style="display:flex;gap:6px;margin:14px 0">
+  <div style="flex:1;min-width:0;text-align:center">
+    <img src="/images/apt-incheon-2026-guide-myeongdong1.webp" alt="Myeongdong Kyoja restaurant exterior — Seoul's most famous kalguksu and mandu spot since 1966, always packed with tourists and locals" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <p style="font-size:11px;color:#888;margin:4px 0 0">Myeongdong Kyoja — knife-cut noodles since 1966</p>
+  </div>
+  <div style="flex:1;min-width:0;text-align:center">
+    <img src="/images/apt-incheon-2026-guide-myeongdong2.webp" alt="Airport Bus stop at Myeongdong Station — direct coach service to Incheon Airport from central Seoul" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <p style="font-size:11px;color:#888;margin:4px 0 0">Airport bus from Myeongdong → Incheon in ~60 min</p>
+  </div>
+  <div style="flex:1;min-width:0;text-align:center">
+    <img src="/images/apt-incheon-2026-guide-myeongdong3.webp" alt="Myeongdong shopping street lined with colorful K-beauty stores and pharmacies — Holika Holika visible on the right" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <p style="font-size:11px;color:#888;margin:4px 0 0">Myeongdong street — K-beauty shops every 10 steps</p>
+  </div>
+</div>
 
 ![Olive Young store in Hongdae — Korea's biggest health and beauty chain, with thousands of K-beauty, skincare, and cosmetics products under one roof](/images/apt-incheon-2026-guide-kbeauty.webp)
 
