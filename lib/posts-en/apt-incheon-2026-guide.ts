@@ -217,9 +217,16 @@ Here's what to do with 1–3 free days:
 
 **Afternoon:** ==**Hongdae**== is where Seoul's creative and youth energy concentrates — street performers, indie record shops, art markets, and a high concentration of cafes and live music venues. Arrive around 3pm, start with coffee, and build into the evening.
 
-![Hongik University Station (Hongdae) subway entrance — Lines 2, Airport Express, and Gyeongui-Jungang, with rental bikes parked outside](/images/apt-incheon-2026-guide-hongdae.webp)
-
-*Hongdae Station connects directly to AREX — you can ride straight here from Incheon Airport in 43 minutes without changing trains.*
+<div style="display:flex;gap:6px;margin:14px 0">
+  <div style="flex:1;min-width:0;text-align:center">
+    <img src="/images/apt-incheon-2026-guide-hongdae.webp" alt="Hongik University Station (Hongdae) subway entrance — Lines 2, Airport Express, and Gyeongui-Jungang, with rental bikes parked outside" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <p style="font-size:11px;color:#888;margin:4px 0 0">Hongdae Station — AREX direct from Incheon Airport (43 min)</p>
+  </div>
+  <div style="flex:1;min-width:0;text-align:center">
+    <img src="/images/apt-incheon-2026-guide-kbeauty.webp" alt="Olive Young store in Hongdae — Korea's biggest health and beauty chain with thousands of K-beauty and skincare products" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <p style="font-size:11px;color:#888;margin:4px 0 0">Olive Young Hongdae — K-beauty brands you've seen on TikTok</p>
+  </div>
+</div>
 
 **Evening:** Walk or take a short taxi to ==**Myeongdong**== for street food dinner. The main strip is lined with vendors running Korean fried chicken, tteokbokki (spicy rice cake), hotteok (sweet pancakes), and cheese corn dogs until midnight. ==g:Budget ₩20,000–30,000 (~$15–22) to eat your way through the street.== The surrounding shops are K-beauty central — Innisfree, Etude House, Laneige — if that's relevant.
 
@@ -237,10 +244,6 @@ Here's what to do with 1–3 free days:
     <p style="font-size:11px;color:#888;margin:4px 0 0">Myeongdong street — K-beauty shops every 10 steps</p>
   </div>
 </div>
-
-![Olive Young store in Hongdae — Korea's biggest health and beauty chain, with thousands of K-beauty, skincare, and cosmetics products under one roof](/images/apt-incheon-2026-guide-kbeauty.webp)
-
-*Olive Young is Korea's answer to Sephora. The Hongdae branch is one of the largest — grab skincare, sheet masks, and sunscreen brands you've only seen on TikTok.*
 
 **Late night:** Korean BBQ. Sit at a table with a charcoal grill built in, order samgyeopsal (grilled pork belly), wrap it in lettuce with garlic and ssamjang paste, and do it with soju. This is the dinner. Most Korean BBQ restaurants run until 2am.
 
