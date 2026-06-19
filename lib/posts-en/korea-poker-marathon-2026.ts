@@ -31,9 +31,14 @@ That story resonated beyond the ARMY fandom. It resonated with the overlap that 
 
 Korea is where both come together perfectly. ==**World-class autumn marathons. A foreigner-only casino 10 minutes from the airport. And the best city food scene in Asia in between.**==
 
-![2026 Goyang Half Marathon official record — 1:51:10, Male Half division, Bib 5448, March 8 2026](/images/korea-poker-marathon-2026-marathon-record.webp)
-
-*The author's result from the 2026 Goyang Half Marathon. Korea's race organization is tight — official chip times, digital result cards, instant sharing.*
+<div style="display:flex;align-items:flex-start;gap:16px;margin:20px 0">
+  <img src="/images/korea-poker-marathon-2026-marathon-record.webp" alt="2026 Goyang Half Marathon official result card — 1:51:10 chip time, Male Half division" style="width:160px;flex-shrink:0;border-radius:8px" />
+  <div style="font-size:14px;line-height:1.7;color:var(--muted-foreground)">
+    <strong style="display:block;margin-bottom:6px;color:var(--foreground)">Personal record — 2026 Goyang Half Marathon</strong>
+    Chip time: <strong>1:51:10</strong> · Male Half division · Bib 5448<br />
+    Korea's race organization is surprisingly polished — official chip times, instant digital result cards, and real-time tracking. Foreign runners get the same experience as locals.
+  </div>
+</div>
 
 ---
 
