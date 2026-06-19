@@ -163,7 +163,7 @@ Most flights to Korea route through Seoul, so you have every reason to add 2–3
 
 ![Google Maps overview showing Paradise City in Incheon and the distance to central Seoul — approximately 50km west of the city](/images/apt-incheon-2026-guide-map-wide.webp)
 
-![Google Maps zoomed into central Seoul showing Namsan area — Hongdae is to the west, Gyeongbokgung Palace to the north](/images/apt-incheon-2026-guide-map-seoul.webp)
+![Google Maps zoomed into central Seoul with Namsan (N Seoul Tower) marked — Hongdae to the west, Han River to the south](/images/apt-incheon-2026-guide-map-seoul.webp)
 
 ### Day 1 — Old Seoul: Palaces, Hanoks & Street Food
 
