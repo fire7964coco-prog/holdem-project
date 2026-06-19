@@ -387,6 +387,55 @@ The cleanest double-dip: APT Incheon (Aug 7–16) → rest in Seoul → Chuncheo
 
 ---
 
+## Han River Running — Where Marathoners Train in Seoul
+
+Between sessions or between race days, there's one place every runner in Seoul ends up: ==**Hangang (Han River) Park**==.
+
+The Han River runs through the center of Seoul. Both banks have continuous cycling and running paths stretching for kilometres — flat, paved, and separated from traffic. No hills. No intersections. Just river views, city skyline, and other runners.
+
+<div style="display:flex;gap:12px;margin:18px 0;flex-wrap:wrap">
+  <div style="flex:1;min-width:240px">
+    <img src="/images/korea-poker-marathon-2026-hangang1.webp" alt="Han River park cycling and running path — bench in foreground, cyclists and pedestrians along the riverside, Seoul skyline in background" style="width:100%;border-radius:8px;display:block" />
+    <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">Han River running path — flat, wide, car-free. A favourite warm-up route for marathon runners training in Seoul.</p>
+  </div>
+  <div style="flex:1;min-width:240px">
+    <img src="/images/korea-poker-marathon-2026-hangang2.webp" alt="Han River parkway with poplar trees, cyclists on the riverside path, apartment towers visible across the river" style="width:100%;border-radius:8px;display:block" />
+    <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">The Hangang bicycle and jogging path — 40km of continuous riverside trail accessible from Hongdae, Yeouido, and Ttukseom.</p>
+  </div>
+</div>
+
+**For runners:** The Yeouido Hangang Park section is the most popular — wide path, direct subway access (Line 5 Yeouinaru or Yeouido), and open 24 hours. Ttukseom (Line 2) and Banpo (Lines 3/7) are quieter. Most international runners use Yeouido as a base for pre-race shakeout runs or post-race recovery walks.
+
+**The gear:** Bike rentals are available at every park entrance (₩3,000–5,000/hr for standard bikes, more for electric). Running paths are well-lit at night.
+
+---
+
+### Han River Ramen — Korea's Most Famous Outdoor Meal
+
+Then there's the part that no one explains to runners but everyone remembers: ==**한강라면 (Han River Ramen)**==.
+
+You buy instant ramen from a vending machine at the park. You add your own egg (also from the machine). You take your bowl to a bench by the river and eat it there. That's it. That's the experience that's been shared millions of times on Korean social media and now draws international visitors specifically to replicate it.
+
+<div style="display:flex;gap:12px;margin:18px 0;flex-wrap:wrap">
+  <div style="flex:1;min-width:200px">
+    <img src="/images/korea-poker-marathon-2026-ramen-machine.webp" alt="Cook & Paper instant ramen vending machine at Han River park — two cup noodles dispensed with hot water" style="width:100%;border-radius:8px;display:block" />
+    <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">The machine. ₩2,000–3,000 for a cup of ramen, hot water included. Egg add-on optional.</p>
+  </div>
+  <div style="flex:1;min-width:200px">
+    <img src="/images/korea-poker-marathon-2026-ramen.webp" alt="Han River ramen in a cup — instant noodles with egg on top, eaten by the river" style="width:100%;border-radius:8px;display:block" />
+    <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">The result. Shin Ramyun or Buldak with a soft egg — by the river, on a bench, in the open air. A rite of passage.</p>
+  </div>
+</div>
+
+==g:Cost: ₩2,000–4,000 (~$1.50–3).== Machines are at Yeouido, Ttukseom, Banpo, and most other Hangang Park sections. The GS25 and CU convenience stores in the park also have indoor seating if the weather is cold.
+
+For a marathon runner doing a rest-day recovery walk in Seoul, this is the move: Hangang Park → riverside jog → ramen from the machine → sit on a bench watching the Han River. It's free (nearly), it's fast, and it's the experience Korean runners talk about.
+
+**Getting to Hangang Park from Paradise City:**
+Free shuttle → T1 → AREX All-Stop to Hongdae (~60 min) → Line 2 to Hapjeong or Dangsan → 5-minute walk to Yanghwa/Hapjeong Hangang Park entrance.
+
+---
+
 ## Marathon Calendar Reference
 
 For the full up-to-date Korean marathon schedule (all distances, registration links, and dates): [marathon.pe.kr](http://marathon.pe.kr/index_calendar.html)
