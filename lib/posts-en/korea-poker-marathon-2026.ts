@@ -164,17 +164,39 @@ Note: Korea's summer heat peaks in August. September is still warm (20–28°C),
 
 ## Korea Poker Tournaments: Oct–Dec 2026
 
-This is where the calendar gets interesting. Three separate poker festivals run at Korean venues during the exact same window as the autumn marathons — and one of them overlaps directly with JTBC Seoul.
+This is where the calendar gets interesting. Three poker festivals run at Korean venues in the exact same autumn window as the marathons — and one overlaps directly with JTBC Seoul.
 
-<div style="overflow-x:auto;margin:16px 0">
-
-| Dates | Tournament | Venue | Status |
-|---|---|---|---|
-| ==g:**Sep 25–Oct 7**== | ==g:**APT Jeju 2026**== | ==g:LES A Casino, Jeju== | ==g:Confirmed== |
-| ==**Oct 30–Nov 8**== | ==**GOP Incheon — The Labyrinth Trail**== | ==**Paradise City, Incheon**== | ==**Confirmed**== |
-| Nov 15 | Garmin Run Korea (marathon) | Goyang | — |
-| Dec 4–13 | AJPC Samurai Circuit Incheon III | Paradise City, Incheon | Confirmed |
-
+<div style="overflow-x:auto;margin:20px 0">
+<table style="width:100%;border-collapse:collapse;font-size:14px;line-height:1.5">
+  <thead>
+    <tr style="border-bottom:2px solid rgba(255,255,255,0.12)">
+      <th style="text-align:left;padding:10px 14px;color:var(--muted-foreground);font-weight:600;white-space:nowrap;width:160px">Dates</th>
+      <th style="text-align:left;padding:10px 14px;color:var(--muted-foreground);font-weight:600">Tournament</th>
+      <th style="text-align:left;padding:10px 14px;color:var(--muted-foreground);font-weight:600">Venue</th>
+      <th style="text-align:left;padding:10px 14px;color:var(--muted-foreground);font-weight:600">Key Info</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="background:rgba(212,175,55,0.07);border-bottom:1px solid rgba(255,255,255,0.06)">
+      <td style="padding:10px 14px;font-weight:700;white-space:nowrap">Sep 25 – Oct 7</td>
+      <td style="padding:10px 14px"><strong>APT Jeju 2026</strong></td>
+      <td style="padding:10px 14px">LES A Casino, Jeju</td>
+      <td style="padding:10px 14px;color:var(--muted-foreground)">Main Event $1.5M GTD · ends 18 days before Chuncheon Marathon</td>
+    </tr>
+    <tr style="background:rgba(212,175,55,0.07);border-bottom:1px solid rgba(255,255,255,0.06)">
+      <td style="padding:10px 14px;font-weight:700;white-space:nowrap">Oct 30 – Nov 8</td>
+      <td style="padding:10px 14px"><strong>GOP Incheon<br/><span style="font-size:12px;color:var(--muted-foreground)">The Labyrinth Trail</span></strong></td>
+      <td style="padding:10px 14px">Paradise City, Incheon</td>
+      <td style="padding:10px 14px"><span style="background:rgba(239,68,68,0.15);color:#f87171;padding:2px 7px;border-radius:4px;font-size:12px;font-weight:600">⚡ JTBC Marathon Nov 1 = Day 3 of this tournament</span></td>
+    </tr>
+    <tr style="background:rgba(212,175,55,0.07);border-bottom:1px solid rgba(255,255,255,0.06)">
+      <td style="padding:10px 14px;font-weight:700;white-space:nowrap">Dec 4 – Dec 13</td>
+      <td style="padding:10px 14px"><strong>AJPC Samurai Circuit<br/><span style="font-size:12px;color:var(--muted-foreground)">Incheon 2026 III</span></strong></td>
+      <td style="padding:10px 14px">Paradise City, Incheon</td>
+      <td style="padding:10px 14px;color:var(--muted-foreground)">Year-end option · schedule TBA</td>
+    </tr>
+  </tbody>
+</table>
 </div>
 
 ### APT Jeju 2026 — Sep 25–Oct 7
@@ -234,22 +256,85 @@ For the full tournament picture (APT Incheon runs August 7–16 with $2.7M GTD),
 
 **Full 2026 Korea poker + marathon calendar:**
 
-<div style="overflow-x:auto;margin:16px 0">
-
-| Date | Type | Event | Venue |
-|---|---|---|---|
-| May 15–24 | 🃏 Poker | GOP Incheon 2026 *(done)* | Paradise City, Incheon |
-| May 15–25 | 🃏 Poker | TLPT Jeju 2026 *(done)* | LES A Casino, Jeju |
-| ==g:**Aug 7–16**== | ==g:🃏 Poker== | ==g:**APT Incheon 2026** · $2.7M GTD== | ==g:Paradise City, Incheon== |
-| Sep 6 | 🏃 Marathon | YTN Seoul Tour Marathon (Half/10K) | Seoul Plaza |
-| ==g:**Sep 25–Oct 7**== | ==g:🃏 Poker== | ==g:**APT Jeju 2026** · $1.5M Main GTD== | ==g:LES A Casino, Jeju== |
-| ==**Oct 25**== | ==**🏃 Marathon**== | ==**Chuncheon Marathon**== (Full/10K) | ==**Chuncheon, Gangwon**== |
-| Oct 30–Nov 8 | 🃏 Poker | ==**GOP Incheon — The Labyrinth Trail**== | Paradise City, Incheon |
-| ==**Nov 1**== | ==**🏃 Marathon**== | ==**⚡ JTBC Seoul Marathon**== (Full/10K) ← same week as GOP | ==**Sangam, Seoul**== |
-| Nov 15 | 🏃 Marathon | Garmin Run Korea (Half/10K) | Goyang (Ilsan) |
-| Dec 4–13 | 🃏 Poker | AJPC Samurai Circuit Incheon III | Paradise City, Incheon |
-| Year-round | 🃏 Cash | Paradise City cash games (NLHE) | Incheon Airport |
-
+<div style="overflow-x:auto;margin:20px 0">
+<table style="width:100%;border-collapse:collapse;font-size:13px;line-height:1.5">
+  <thead>
+    <tr style="border-bottom:2px solid rgba(255,255,255,0.12)">
+      <th style="text-align:left;padding:9px 12px;color:var(--muted-foreground);font-weight:600;white-space:nowrap">Date</th>
+      <th style="text-align:left;padding:9px 12px;color:var(--muted-foreground);font-weight:600">Event</th>
+      <th style="text-align:left;padding:9px 12px;color:var(--muted-foreground);font-weight:600">Venue</th>
+      <th style="text-align:left;padding:9px 12px;color:var(--muted-foreground);font-weight:600">Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="opacity:0.5;border-bottom:1px solid rgba(255,255,255,0.05)">
+      <td style="padding:8px 12px;white-space:nowrap">May 15–24</td>
+      <td style="padding:8px 12px">🃏 GOP Incheon 2026 <em>(done)</em></td>
+      <td style="padding:8px 12px">Paradise City, Incheon</td>
+      <td style="padding:8px 12px;color:var(--muted-foreground)">Completed</td>
+    </tr>
+    <tr style="opacity:0.5;border-bottom:1px solid rgba(255,255,255,0.05)">
+      <td style="padding:8px 12px;white-space:nowrap">May 15–25</td>
+      <td style="padding:8px 12px">🃏 TLPT Jeju 2026 <em>(done)</em></td>
+      <td style="padding:8px 12px">LES A Casino, Jeju</td>
+      <td style="padding:8px 12px;color:var(--muted-foreground)">Completed</td>
+    </tr>
+    <tr style="background:rgba(212,175,55,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
+      <td style="padding:9px 12px;font-weight:700;white-space:nowrap">Aug 7–16</td>
+      <td style="padding:9px 12px">🃏 <strong>APT Incheon 2026</strong></td>
+      <td style="padding:9px 12px">Paradise City, Incheon</td>
+      <td style="padding:9px 12px;color:var(--muted-foreground)">$2.7M GTD · Main Event $1M GTD</td>
+    </tr>
+    <tr style="background:rgba(34,197,94,0.05);border-bottom:1px solid rgba(255,255,255,0.06)">
+      <td style="padding:9px 12px;font-weight:700;white-space:nowrap">Sep 6</td>
+      <td style="padding:9px 12px">🏃 YTN Seoul Tour Marathon</td>
+      <td style="padding:9px 12px">Seoul Plaza</td>
+      <td style="padding:9px 12px;color:var(--muted-foreground)">Half · 10K · 7:30am · Reg. closed</td>
+    </tr>
+    <tr style="background:rgba(212,175,55,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
+      <td style="padding:9px 12px;font-weight:700;white-space:nowrap">Sep 25–Oct 7</td>
+      <td style="padding:9px 12px">🃏 <strong>APT Jeju 2026</strong></td>
+      <td style="padding:9px 12px">LES A Casino, Jeju</td>
+      <td style="padding:9px 12px;color:var(--muted-foreground)">$1.5M Main GTD · 13 days to Chuncheon</td>
+    </tr>
+    <tr style="background:rgba(34,197,94,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
+      <td style="padding:9px 12px;font-weight:700;white-space:nowrap">Oct 25 (Sun)</td>
+      <td style="padding:9px 12px">🏃 <strong>Chuncheon Marathon</strong></td>
+      <td style="padding:9px 12px">Gongjicheon, Chuncheon</td>
+      <td style="padding:9px 12px;color:var(--muted-foreground)">Full · 10K · 9:00am · Reg. Jul 14</td>
+    </tr>
+    <tr style="background:rgba(212,175,55,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
+      <td style="padding:9px 12px;font-weight:700;white-space:nowrap">Oct 30–Nov 8</td>
+      <td style="padding:9px 12px">🃏 <strong>GOP Incheon<br/><span style="font-size:11px;font-weight:400;opacity:0.7">The Labyrinth Trail</span></strong></td>
+      <td style="padding:9px 12px">Paradise City, Incheon</td>
+      <td style="padding:9px 12px"><span style="background:rgba(239,68,68,0.18);color:#fca5a5;padding:1px 6px;border-radius:3px;font-size:11px;font-weight:700">⚡ JTBC Marathon on Day 3</span></td>
+    </tr>
+    <tr style="background:rgba(239,68,68,0.06);border-bottom:1px solid rgba(255,255,255,0.06)">
+      <td style="padding:9px 12px;font-weight:700;white-space:nowrap">Nov 1 (Sun)</td>
+      <td style="padding:9px 12px">🏃 <strong>JTBC Seoul Marathon</strong></td>
+      <td style="padding:9px 12px">Sangam WC Stadium → Olympic Park</td>
+      <td style="padding:9px 12px"><span style="background:rgba(239,68,68,0.18);color:#fca5a5;padding:1px 6px;border-radius:3px;font-size:11px;font-weight:700">⚡ GOP tournament running same week</span></td>
+    </tr>
+    <tr style="background:rgba(34,197,94,0.05);border-bottom:1px solid rgba(255,255,255,0.06)">
+      <td style="padding:9px 12px;font-weight:700;white-space:nowrap">Nov 15 (Sun)</td>
+      <td style="padding:9px 12px">🏃 Garmin Run Korea</td>
+      <td style="padding:9px 12px">Goyang Sports Complex</td>
+      <td style="padding:9px 12px;color:var(--muted-foreground)">Half · 10K · 8:00am · Reg. Jul 1–3</td>
+    </tr>
+    <tr style="background:rgba(212,175,55,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
+      <td style="padding:9px 12px;font-weight:700;white-space:nowrap">Dec 4–13</td>
+      <td style="padding:9px 12px">🃏 AJPC Samurai Circuit III</td>
+      <td style="padding:9px 12px">Paradise City, Incheon</td>
+      <td style="padding:9px 12px;color:var(--muted-foreground)">Schedule TBA</td>
+    </tr>
+    <tr style="border-top:1px solid rgba(255,255,255,0.08)">
+      <td style="padding:9px 12px;color:var(--muted-foreground)">Year-round</td>
+      <td style="padding:9px 12px">🃏 Cash games (NLHE)</td>
+      <td style="padding:9px 12px">Paradise City, Incheon</td>
+      <td style="padding:9px 12px;color:var(--muted-foreground)">Open 24/7 · foreigners only</td>
+    </tr>
+  </tbody>
+</table>
 </div>
 
 ==g:The sweet spot nobody talks about:== **APT Jeju ends October 7 — Chuncheon Marathon is October 25.** That's an 18-day gap. Play the tournament, stay in Korea, run the race. One flight covers both. And if you're willing to stay through November 1, JTBC Seoul is right there too.
