@@ -219,11 +219,11 @@ Here's what to do with 1–3 free days:
 
 <div style="display:flex;gap:6px;margin:14px 0">
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-hongdae.webp" alt="Hongik University Station (Hongdae) subway entrance — Lines 2, Airport Express, and Gyeongui-Jungang, with rental bikes parked outside" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <img src="/images/apt-incheon-2026-guide-hongdae.webp" alt="Hongik University Station (Hongdae) subway entrance — Lines 2, Airport Express, and Gyeongui-Jungang, with rental bikes parked outside" style="width:100%;height:auto;border-radius:6px" />
     <p style="font-size:11px;color:#888;margin:4px 0 0">Hongdae Station — AREX direct from Incheon Airport (43 min)</p>
   </div>
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-kbeauty.webp" alt="Olive Young store in Hongdae — Korea's biggest health and beauty chain with thousands of K-beauty and skincare products" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <img src="/images/apt-incheon-2026-guide-kbeauty.webp" alt="Olive Young store in Hongdae — Korea's biggest health and beauty chain with thousands of K-beauty and skincare products" style="width:100%;height:auto;border-radius:6px" />
     <p style="font-size:11px;color:#888;margin:4px 0 0">Olive Young Hongdae — K-beauty brands you've seen on TikTok</p>
   </div>
 </div>
