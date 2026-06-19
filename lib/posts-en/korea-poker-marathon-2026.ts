@@ -43,7 +43,7 @@ Korea is where both come together perfectly. ==**World-class autumn marathons. A
 ---
 
 > **Quick answer**
-> Korea's major autumn marathons: ==**Chuncheon (Oct 25)**==, ==**JTBC Seoul (Nov 1)**==, ==**Gaimin Run Korea (Nov 15)**==. Paradise City Casino runs year-round poker cash games — ==g:free shuttle from Incheon Airport Terminal 1==, foreigners only. October–November weather: 8–15°C, ideal for running and travel.
+> Korea poker tournaments: ==**APT Incheon Aug 7–16**==, ==**APT Jeju Sep 25–Oct 7**== (both at foreigners-only casinos). Korea marathons: ==**Chuncheon Oct 25**==, ==**JTBC Seoul Nov 1**==, ==**Gaimin Run Nov 15**==. APT Jeju ends Oct 7 → Chuncheon starts Oct 25 — ==g:18-day gap, one trip covers both.==
 
 ---
 
@@ -147,6 +147,23 @@ Goyang is ~30 min from Hongdae by subway (Line 3 from Hongjae). Easy day trip fr
 
 ---
 
+## APT Jeju 2026 — Sep 25–Oct 7
+
+If the timing works, ==**APT Jeju 2026**== might be the most interesting poker stop in Korea this year — not for the prize pool (the Main Event carries a KRW 2.2 billion / ~$1.5M guarantee), but for the location.
+
+==**Jeju Island**== is Korea's Hawaii. Volcanic island off the southern coast, sub-tropical climate, no visa required for most nationalities. The tournament runs at ==**LES A Casino**== inside ==**Jeju Shinhwa World**== — a resort complex with hotels, theme parks, and a poker room that hosts international events year-round.
+
+**The case for the overlap:** APT Jeju ends October 7. Chuncheon Marathon starts October 25. That's 18 days — enough time to fly to Seoul, rest, do day trips, and line up at the start in Chuncheon. JTBC Seoul on November 1 is even more comfortable. Someone who runs this sequence is doing something essentially no English-language guide covers.
+
+**APT Jeju 2026 basics:**
+- Dates: September 25 – October 7, 2026
+- Venue: LES A Casino, 38 Sinhwayeoksa-ro, Seogwipo, Jeju — inside Jeju Shinhwa World
+- Main Event: KRW 2,300,000 (~$1,600) buy-in · KRW 2.2B (~$1.5M) GTD
+- Foreigners only · 19+ · valid non-Korean passport required
+- Info: [theasianpokertour.com](https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/info)
+
+---
+
 ## YTN Seoul Tour Marathon 2026 — Sep 6
 
 For those arriving in September, the ==**YTN Seoul Tour Marathon**== runs from ==**Seoul Plaza**== (서울광장) — directly in front of City Hall, with Deoksugung Palace and the downtown skyline as the backdrop.
@@ -177,22 +194,57 @@ While the marathons run Oct–Nov, ==**Paradise City Casino**== runs year-round.
 
 For the full tournament picture (APT Incheon runs August 7–16 with $2.7M GTD), see the [APT Incheon 2026 guide](/en/blog/apt-incheon-2026-guide/).
 
-**The marathon-poker schedule overlap:**
+**Full 2026 Korea poker + marathon calendar:**
 
 <div style="overflow-x:auto;margin:16px 0">
 
-| Date | Event | Location |
-|---|---|---|
-| Aug 7–16 | ==g:APT Incheon 2026 Tournament== | Paradise City Casino |
-| Sep 6 | YTN Seoul Tour Marathon | Seoul Plaza |
-| Oct 25 | ==**Chuncheon Marathon**== | Chuncheon (Gangwon) |
-| Nov 1 | ==**JTBC Seoul Marathon**== | Sangam, Seoul |
-| Nov 15 | Gaimin Run Korea | Goyang (Ilsan) |
-| Year-round | Paradise City cash games | Incheon Airport |
+| Date | Type | Event | Venue |
+|---|---|---|---|
+| May 15–24 | 🃏 Poker | GOP Incheon 2026 *(done)* | Paradise City, Incheon |
+| May 15–25 | 🃏 Poker | TLPT Jeju 2026 *(done)* | LES A Casino, Jeju |
+| ==g:**Aug 7–16**== | ==g:🃏 Poker== | ==g:**APT Incheon 2026** · $2.7M GTD== | ==g:Paradise City, Incheon== |
+| Sep 6 | 🏃 Marathon | YTN Seoul Tour Marathon (Half/10K) | Seoul Plaza |
+| ==g:**Sep 25–Oct 7**== | ==g:🃏 Poker== | ==g:**APT Jeju 2026** · $1.5M Main GTD== | ==g:LES A Casino, Jeju== |
+| ==**Oct 25**== | ==**🏃 Marathon**== | ==**Chuncheon Marathon**== (Full/10K) | ==**Chuncheon, Gangwon**== |
+| ==**Nov 1**== | ==**🏃 Marathon**== | ==**JTBC Seoul Marathon**== (Full/10K) | ==**Sangam, Seoul**== |
+| Nov 15 | 🏃 Marathon | Gaimin Run Korea (Half/10K) | Goyang (Ilsan) |
+| Year-round | 🃏 Cash | Paradise City cash games (NLHE) | Incheon Airport |
 
 </div>
 
-The cleanest combined itinerary: fly to Korea for Chuncheon (Oct 25) or JTBC (Nov 1), run the race, then position at Paradise City for 2–3 days of cash games before flying out.
+==g:The sweet spot nobody talks about:== **APT Jeju ends October 7 — Chuncheon Marathon is October 25.** That's an 18-day gap. Play the tournament, stay in Korea, run the race. One flight covers both. And if you're willing to stay through November 1, JTBC Seoul is right there too.
+
+The cleanest double-dip: APT Incheon (Aug 7–16) → rest in Seoul → Chuncheon Marathon (Oct 25) or JTBC (Nov 1). Or: APT Jeju (Sep 25–Oct 7) → 18 days in Korea → Chuncheon (Oct 25).
+
+---
+
+## Sample Itineraries — How to Combine Both
+
+**Option A: APT Incheon + JTBC Seoul (extended stay)**
+
+| Day | Plan |
+|---|---|
+| Day 1 (Aug 7) | Fly in → Paradise City · APT Incheon opens |
+| Aug 7–16 | ==g:APT Incheon 2026 tournaments== |
+| Aug 17–Oct 24 | Extended Korea stay — Seoul, Busan, Gyeongju day trips · cash games |
+| Oct 25 | ==**Chuncheon Marathon**== · back to Seoul/Paradise City |
+| Nov 1 | ==**JTBC Seoul Marathon**== |
+| Nov 2+ | Fly out |
+
+*This is the maximum-coverage option. Most players wouldn't stay 2+ months, but it shows what's possible with the calendar.*
+
+**Option B: APT Jeju + Chuncheon Marathon (18-day gap)**
+
+| Day | Plan |
+|---|---|
+| Sep 25 | Fly in → Jeju Shinhwa World · APT Jeju opens |
+| Sep 25–Oct 7 | ==g:APT Jeju 2026 tournaments== · explore Jeju between sessions |
+| Oct 8–9 | Fly Jeju → Seoul · check into Seoul or Paradise City hotel |
+| Oct 10–24 | Seoul time — Gyeongbokgung, Hongdae, Myeongdong, cash games |
+| ==**Oct 25**== | ==**Chuncheon Marathon**== (ITX from Seoul, 70 min) |
+| Oct 26–31 | Recovery · Seoul or Paradise City cash games |
+| Nov 1 | Optional: ==**JTBC Seoul Marathon**== (back-to-back week) |
+| Nov 2 | Fly out from Incheon Airport |
 
 ---
 
