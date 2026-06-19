@@ -161,10 +161,6 @@ If you're flying through Incheon and have a long layover: ==g:the casino is acce
 
 Most flights to Korea route through Seoul, so you have every reason to add 2–3 days on either side of the festival. Here's a realistic first-timer route that covers the highlights.
 
-![Google Maps overview showing Paradise City in Incheon and the distance to central Seoul — approximately 50km west of the city](/images/apt-incheon-2026-guide-map-wide.webp)
-
-![Google Maps zoomed into central Seoul with Namsan (N Seoul Tower) marked — Hongdae to the west, Han River to the south](/images/apt-incheon-2026-guide-map-seoul.webp)
-
 ### Day 1 — Old Seoul: Palaces, Hanoks & Street Food
 
 **Morning:** Start at ==**Gyeongbokgung Palace**== (Gyeongbokgung Station, Line 3). Built in 1395, the palace grounds are massive. Admission is ~₩3,000 — or rent a hanbok (~₩20,000) from nearby shops for ==g:free palace entry==. Allocate 2 hours.
