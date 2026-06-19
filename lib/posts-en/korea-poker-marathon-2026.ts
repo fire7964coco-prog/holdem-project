@@ -387,52 +387,70 @@ The cleanest double-dip: APT Incheon (Aug 7–16) → rest in Seoul → Chuncheo
 
 ---
 
-## Han River Running — Where Marathoners Train in Seoul
+## Han River Running — Seoul's 80km Riverside Trail
 
-Between sessions or between race days, there's one place every runner in Seoul ends up: ==**Hangang (Han River) Park**==.
+Between race days or tournament sessions, there's one place every runner in Seoul ends up: ==**Hangang (Han River) Park**==.
 
-The Han River runs through the center of Seoul. Both banks have continuous cycling and running paths stretching for kilometres — flat, paved, and separated from traffic. No hills. No intersections. Just river views, city skyline, and other runners.
+The Han River cuts through the center of Seoul, and both banks have over ==g:80 kilometres of flat, paved running and cycling paths== — continuous, car-free, open 24 hours. No hills. No traffic lights. Just river air, city skyline, and other runners.
 
 <div style="display:flex;gap:12px;margin:18px 0;flex-wrap:wrap">
   <div style="flex:1;min-width:240px">
-    <img src="/images/korea-poker-marathon-2026-hangang1.webp" alt="Han River park cycling and running path — bench in foreground, cyclists and pedestrians along the riverside, Seoul skyline in background" style="width:100%;border-radius:8px;display:block" />
-    <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">Han River running path — flat, wide, car-free. A favourite warm-up route for marathon runners training in Seoul.</p>
+    <img src="/images/korea-poker-marathon-2026-hangang1.webp" alt="Han River park cycling and running path — couple on bench in foreground, cyclists and pedestrians along the riverside, Seoul skyline across the river" style="width:100%;border-radius:8px;display:block" />
+    <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">Yeouido Hangang Park — the most popular section for runners. Flat, wide, car-free, open 24 hours.</p>
   </div>
   <div style="flex:1;min-width:240px">
-    <img src="/images/korea-poker-marathon-2026-hangang2.webp" alt="Han River parkway with poplar trees, cyclists on the riverside path, apartment towers visible across the river" style="width:100%;border-radius:8px;display:block" />
-    <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">The Hangang bicycle and jogging path — 40km of continuous riverside trail accessible from Hongdae, Yeouido, and Ttukseom.</p>
+    <img src="/images/korea-poker-marathon-2026-hangang2.webp" alt="Han River park tree-lined running path — jogger and cyclist visible on the riverside trail, apartment towers across the river" style="width:100%;border-radius:8px;display:block" />
+    <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">The riverside path continues for kilometres in both directions — used by locals for daily runs, cyclists, and early morning walks.</p>
   </div>
 </div>
 
-**For runners:** The Yeouido Hangang Park section is the most popular — wide path, direct subway access (Line 5 Yeouinaru or Yeouido), and open 24 hours. Ttukseom (Line 2) and Banpo (Lines 3/7) are quieter. Most international runners use Yeouido as a base for pre-race shakeout runs or post-race recovery walks.
+**Popular running routes:**
 
-**The gear:** Bike rentals are available at every park entrance (₩3,000–5,000/hr for standard bikes, more for electric). Running paths are well-lit at night.
+- **Yeouido 5K loop** — Start/finish at Yeouinaru Station (Line 5, Exit 2). Flat loop around Yeouido island past the National Assembly and 63 Building. Most beginner-friendly.
+- **Yeouido "Sweet Potato" 8K** — Extended loop from Yeouinaru that traces a route resembling a sweet potato on GPS. Start at the **Runner Station** (inside Yeouinaru Station) — showers, lockers, and changing rooms are available there.
+- **Banpo 5K stretch** — Between Dongjak and Dongho Bridges, south bank. Access via Express Bus Terminal (Lines 3/7/9). Quiet, scenic, good for evening runs (Banpo Bridge rainbow fountain lights up after dark).
+- **Ttukseom** — Line 7, Ttukseom Resort Station. Connects to Seoul Forest. Local, less crowded.
+
+==g:Best times: early morning (6–8am) or evening (6–8pm).== The paths are well-lit at night. Bike rentals at most park entrances cost ₩3,000–5,000/hr.
 
 ---
 
-### Han River Ramen — Korea's Most Famous Outdoor Meal
+### Han River Ramen (한강라면) — The Only Post-Run Meal That Matters
 
-Then there's the part that no one explains to runners but everyone remembers: ==**한강라면 (Han River Ramen)**==.
+Then there's the part no one tells runners about — but everyone remembers: ==**한강라면 (Hangang Ramen)**==.
 
-You buy instant ramen from a vending machine at the park. You add your own egg (also from the machine). You take your bowl to a bench by the river and eat it there. That's it. That's the experience that's been shared millions of times on Korean social media and now draws international visitors specifically to replicate it.
+You walk into the GS25, CU, or 7-Eleven inside the park. You buy an instant ramen (Shin Ramyun, Buldak, Jin Ramen — your call). The staff gives you a ==g:special paper bowl with a barcode==. You take it to the ramen cooking machine outside, scan the barcode, and press Start. The machine automatically measures and pours perfectly heated water. Four minutes later, you crack in an egg, stir, and carry your bowl to a bench by the river.
+
+That's it. That's the experience that's been posted on Korean social media millions of times and now draws international visitors specifically to replicate it.
 
 <div style="display:flex;gap:12px;margin:18px 0;flex-wrap:wrap">
   <div style="flex:1;min-width:200px">
-    <img src="/images/korea-poker-marathon-2026-ramen-machine.webp" alt="Cook & Paper instant ramen vending machine at Han River park — two cup noodles dispensed with hot water" style="width:100%;border-radius:8px;display:block" />
-    <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">The machine. ₩2,000–3,000 for a cup of ramen, hot water included. Egg add-on optional.</p>
+    <img src="/images/korea-poker-marathon-2026-ramen-machine.webp" alt="Han River ramen cooking machine at GS25 convenience store — automatic hot water dispenser for instant noodles in paper bowls" style="width:100%;border-radius:8px;display:block" />
+    <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">The machine at the park convenience store. Scan your barcode bowl, press Start — machine handles the rest. Machine use is free.</p>
   </div>
   <div style="flex:1;min-width:200px">
-    <img src="/images/korea-poker-marathon-2026-ramen.webp" alt="Han River ramen in a cup — instant noodles with egg on top, eaten by the river" style="width:100%;border-radius:8px;display:block" />
-    <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">The result. Shin Ramyun or Buldak with a soft egg — by the river, on a bench, in the open air. A rite of passage.</p>
+    <img src="/images/korea-poker-marathon-2026-ramen.webp" alt="Bowl of Han River ramen — Shin Ramyun instant noodles in paper bowl with egg on top, eaten at the riverbank" style="width:100%;border-radius:8px;display:block" />
+    <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">The result. Hot Shin Ramyun with egg by the Han River. Total cost ₩4,000–5,000 (~$3). Possibly the best post-run meal in Seoul.</p>
   </div>
 </div>
 
-==g:Cost: ₩2,000–4,000 (~$1.50–3).== Machines are at Yeouido, Ttukseom, Banpo, and most other Hangang Park sections. The GS25 and CU convenience stores in the park also have indoor seating if the weather is cold.
+**What it costs:**
 
-For a marathon runner doing a rest-day recovery walk in Seoul, this is the move: Hangang Park → riverside jog → ramen from the machine → sit on a bench watching the Han River. It's free (nearly), it's fast, and it's the experience Korean runners talk about.
+| Item | Price (KRW) | ~USD |
+|---|---|---|
+| Ramen + barcode bowl (at GS25/CU/7-Eleven) | ₩3,500–4,000 | ~$2.60–3.00 |
+| Raw egg | ₩500 | ~$0.40 |
+| Kimchi pack | ₩1,500 | ~$1.10 |
+| Picnic mat rental | ₩3,000–5,000 | ~$2.20–3.70 |
 
-**Getting to Hangang Park from Paradise City:**
-Free shuttle → T1 → AREX All-Stop to Hongdae (~60 min) → Line 2 to Hapjeong or Dangsan → 5-minute walk to Yanghwa/Hapjeong Hangang Park entrance.
+The machine itself is ==g:free to use — you only pay for the ramen==. Instructions are posted in Korean and English. Most parks also offer food delivery zones if you want fried chicken instead.
+
+**Best parks for Han River ramen:**
+- **Yeouido** (여의도) — beginner pick, most facilities, closest to Runner Station. Line 5 Yeouinaru, Exit 2.
+- **Banpo** (반포) — evening pick, rainbow fountain bridge show after dark. Lines 3/7/9 Express Bus Terminal.
+- **Ttukseom** (뚝섬) — quietest, local vibe. Line 7 Ttukseom Resort.
+
+**Getting there from Paradise City:** Free shuttle → T1 → AREX All-Stop (~60 min) → ==**Yeouinaru Station (Line 5)**== → 2-minute walk to park entrance and Runner Station.
 
 ---
 
