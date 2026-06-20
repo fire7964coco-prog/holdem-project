@@ -5,6 +5,21 @@
 
 ---
 
+## 2026-06-20
+
+### 작업 내용
+- 커뮤니티 기능 Phase 0+1 개발 및 Production 배포 (`/community` 신규 경로, 기존 SEO 경로 영향 없음)
+- Supabase 연동: DB 스키마 6개 테이블(profiles/posts/comments/likes/event_entries/translations) + RLS + 트리거
+- 이메일 회원가입/로그인/로그아웃 + 피드(어드민+커뮤니티 혼합) + 글쓰기 + 좋아요 구현
+- `feature/community` 브랜치 작업 → main 머지, middleware는 `/community/*` 에만 적용
+- `korea-poker-marathon-2026` 오타/사실 검수 (Garmin 오타, JTBC 8am, APT제주→춘천 18일 등) + 한강라면 사진 정렬
+
+### 특이사항
+- 커뮤니티 인프라: Supabase(Seoul, Free) + Vercel 환경변수 설정 완료
+- 진행 상세/다음 단계(Phase 2)는 session-handoff.md 참조
+
+---
+
 ## 2026-06-19
 
 ### 작업 내용
