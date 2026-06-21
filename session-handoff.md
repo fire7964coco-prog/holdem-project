@@ -9,73 +9,32 @@
 
 ---
 
-## ✅ 완료한 작업 (Phase 0 → Phase 3 완료)
+## ✅ 완료한 작업 (Phase 0 → Phase 4 완료)
 
 - **Phase 0**: `/community` 라우트 신설 + Supabase 클라이언트 설정
 - **Phase 1**: 이메일 회원가입/로그인/로그아웃 + 피드 + 글쓰기 + 좋아요 (Production 배포 완료)
 - **Phase 2**: 포스트카드 컴포넌트 분리, 글 상세/댓글, 다국어 피드+번역, Explore/프로필 탭
 - **Phase 3**: 커뮤니티 UI 다국어 전환(LABELS), Blog→Community CTA, 이벤트 탭 구현 — **전부 main 커밋·배포 완료**
   - 커밋: `3cef3bf` (feat: event tab - number picker + condition check)
+- **Phase 4**: 홈 피드 통합 — `holdemmaster.com/` 커뮤니티 피드로 전면 교체
+  - 브랜치: `feature/homepage-to-feed` (커밋 `f1e50c1`) — **PR 머지 후 Vercel 배포 필요**
+  - `/login`, `/post/[id]`, `/auth/callback` 라우트 신설
+  - `/community/*` → 301 영구 리다이렉트 설정
 
 ---
 
-## 🚀 다음 세션 첫 번째 할 일 — Phase 4: 홈 피드 통합
+## 🚀 다음 세션 첫 번째 할 일 — Phase 4 PR 머지 + Phase 5 계획
 
-### 목표
-```
-현재: holdemmaster.com/     ← 기존 SEO 홈 (home-client.tsx)
-       holdemmaster.com/community ← 커뮤니티 피드
+### 즉시 할 일
+1. `feature/homepage-to-feed` → `main` PR 머지 → Vercel 자동 배포 확인
+2. 배포 후 `holdemmaster.com/` 피드 정상 렌더링 확인
+3. `holdemmaster.com/community` → `/` 301 리다이렉트 동작 확인
 
-변경: holdemmaster.com/     ← 커뮤니티 피드로 전면 교체
-       holdemmaster.com/blog/... ← SEO 블로그 URL 그대로 유지 (절대 건드리지 않음)
-       holdemmaster.com/community → 301 리다이렉트 → /
-```
-
-### 작업 브랜치
-```
-git checkout -b feature/homepage-to-feed
-```
-
-### 작업 순서 (이 순서대로 진행)
-
-**STEP 1. `app/page.tsx` 교체**
-- 현재: `HomeClient` 컴포넌트 렌더링
-- 변경: `app/community/page.tsx`의 서버 로직을 `app/page.tsx`로 이식
-- `export const dynamic = "force-dynamic"` 추가 (Supabase 인증 때문에 필수)
-- SEO 메타: "홀덤마스터 커뮤니티 — 전 세계 포커 플레이어의 피드" 방향으로 재작성
-  (기존 홈 키워드 블라인드·족보·홀덤전략을 description에 포함)
-
-**STEP 2. `app/home-client.tsx` 처리**
-- 기존 홈 컴포넌트 → 삭제 또는 `app/_archive/home-client.tsx`로 이동
-
-**STEP 3. `app/community/page.tsx` 처리**
-- 코드를 `app/page.tsx`로 이동했으므로 삭제
-- `app/community/` 하위 라우트 처리:
-  - `app/community/post/[id]` → `app/post/[id]`로 이동 (또는 /community/post/[id] 그대로 유지도 가능)
-  - `app/community/login/` → `app/login/`으로 이동
-  - `app/community/auth/callback/` → `app/auth/callback/`으로 이동
-
-**STEP 4. `next.config.mjs`에 301 리다이렉트 추가**
-```js
-redirects: async () => [
-  { source: '/community', destination: '/', permanent: true },
-  { source: '/community/:path*', destination: '/:path*', permanent: true },
-]
-```
-
-**STEP 5. `middleware.ts` 패턴 업데이트**
-- `/community/*` → `/` 기준으로 인증 처리 패턴 변경
-
-**STEP 6. `components/community-cta.tsx` 링크 수정**
-- `/community` → `/` 로 변경
-
-**STEP 7. 빌드 확인 + 커밋**
-```
-npm run build
-git add -A
-git commit (Phase 4: homepage → feed 통합)
-git push
-```
+### Phase 5 후보 작업 (논의 후 결정)
+- 홈 SEO 메타 최적화 (기존 홈 키워드 트래픽 모니터링)
+- 커뮤니티 이미지 업로드 기능 (Supabase Storage)
+- 알림 시스템 (댓글·좋아요 알림)
+- 어드민 포스트 관리 페이지
 
 ---
 

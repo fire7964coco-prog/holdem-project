@@ -5,6 +5,22 @@
 
 ---
 
+## 2026-06-21 (4차)
+
+### 작업 내용
+- Phase 4: 홈 피드 통합 — `holdemmaster.com/` 이 커뮤니티 피드로 전면 교체
+- `app/page.tsx` 커뮤니티 서버 로직으로 교체 (force-dynamic, Supabase 인증)
+- 라우트 이동: `/community/login` → `/login`, `/community/post/[id]` → `/post/[id]`, `/community/auth/callback` → `/auth/callback`
+- `next.config.mjs`: `/community`, `/community/:path*` → 301 영구 리다이렉트 추가
+- `middleware.ts`: 매처 `/community/:path*` → `/, /login, /post/*, /auth/*` 업데이트
+- `community-cta.tsx`, `post-card.tsx`, `actions.ts`, `community-client.tsx` 내 경로 전부 업데이트
+- 브랜치 `feature/homepage-to-feed` 커밋·푸시 완료
+
+### 발행 현황
+- 총 포스트: 29개 (목표 50개까지 21개 남음)
+
+---
+
 ## 2026-06-21 (3차)
 
 ### 작업 내용
