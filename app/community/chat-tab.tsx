@@ -164,8 +164,18 @@ export default function ChatTab({
 
   // Supabase Realtime 구독
   useEffect(() => {
-    const channel = supabaseRef.current
-      .channel(`chat-room-${ROOM}`)
+    const supabase = supabaseRef.current;
+    const channelName = `chat-room-${ROOM}`;
+
+    // 동일 이름의 기존 채널이 남아있으면 먼저 제거
+    supabase.getChannels().forEach((ch) => {
+      if (ch.topic === `realtime:${channelName}`) {
+        supabase.removeChannel(ch);
+      }
+    });
+
+    const channel = supabase
+      .channel(channelName)
       .on(
         "postgres_changes",
         {
@@ -181,7 +191,7 @@ export default function ChatTab({
       .subscribe();
 
     return () => {
-      supabaseRef.current.removeChannel(channel);
+      supabase.removeChannel(channel);
     };
   }, []);
 
