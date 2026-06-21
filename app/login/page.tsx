@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
+import { useState, useEffect, Suspense } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
 
 type Mode = "login" | "signup";
@@ -9,8 +9,9 @@ type Mode = "login" | "signup";
 const GOLD = "#d4af37";
 const BG = "#0b1120";
 
-export default function LoginPage() {
+function LoginForm() {
   const router = useRouter();
+  const searchParams = useSearchParams();
   const supabase = createClient();
 
   const [mode, setMode] = useState<Mode>("login");
@@ -22,11 +23,17 @@ export default function LoginPage() {
   const [msg, setMsg] = useState<string | null>(null);
   const [err, setErr] = useState<string | null>(null);
 
-  // 뒤로가기로 돌아왔을 때 로딩 상태 초기화
+  // 뒤로가기로 돌아왔을 때 로딩 상태 초기화 + OAuth 에러 표시
   useEffect(() => {
     setSocialLoading(null);
     setLoading(false);
-  }, []);
+    const errorParam = searchParams.get("error");
+    if (errorParam === "oauth") {
+      setErr("로그인 요청이 만료되었습니다. 다시 시도해주세요.");
+    } else if (errorParam === "auth") {
+      setErr("인증에 실패했습니다. 다시 시도해주세요.");
+    }
+  }, [searchParams]);
 
   const detectLanguage = () => {
     if (typeof navigator === "undefined") return "ko";
@@ -211,5 +218,13 @@ export default function LoginPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function LoginPage() {
+  return (
+    <Suspense>
+      <LoginForm />
+    </Suspense>
   );
 }

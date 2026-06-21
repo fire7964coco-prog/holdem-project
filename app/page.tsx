@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import CommunityClient, { type FeedPost, type CurrentUser } from "./community/community-client";
 import { CURRENT_EVENT_ID } from "@/lib/event-config";
@@ -23,7 +24,17 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function Page() {
+export default async function Page({
+  searchParams,
+}: {
+  searchParams: Promise<Record<string, string>>;
+}) {
+  // OAuth 에러 (bad_oauth_state 등) → 로그인 페이지로 안내
+  const sp = await searchParams;
+  if (sp.error || sp.error_code) {
+    redirect("/login?error=oauth");
+  }
+
   const supabase = await createClient();
 
   const {
