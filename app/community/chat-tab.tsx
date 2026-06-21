@@ -253,6 +253,30 @@ export default function ChatTab({
         </span>
       </div>
 
+      {/* 툴 배너 */}
+      <div
+        className="flex gap-2 px-3 py-2 overflow-x-auto flex-shrink-0"
+        style={{ borderBottom: `1px solid ${BORDER}`, scrollbarWidth: "none" }}
+      >
+        {[
+          { icon: "🧮", label: "계산기", href: "/calculator/" },
+          { icon: "🎯", label: "퀴즈", href: "/quiz/" },
+          { icon: "📊", label: "핸드차트", href: "/hand-chart/" },
+          { icon: "🃏", label: "족보", href: "/ranking/" },
+          { icon: "📖", label: "용어사전", href: "/glossary/" },
+        ].map((t) => (
+          <Link
+            key={t.href}
+            href={t.href}
+            className="flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-semibold flex-shrink-0 transition-opacity active:opacity-70"
+            style={{ background: "rgba(212,175,55,0.1)", color: GOLD, border: "1px solid rgba(212,175,55,0.2)" }}
+          >
+            <span>{t.icon}</span>
+            <span>{t.label}</span>
+          </Link>
+        ))}
+      </div>
+
       {/* 메시지 목록 */}
       <div
         className="flex-1 overflow-y-auto px-3 py-2 space-y-1.5"

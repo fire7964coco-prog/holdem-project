@@ -25,6 +25,10 @@ export type FeedPost = {
   category?: string | null;
   /** 블로그 읽기 시간 (예: "8분") */
   readTime?: string | null;
+  /** 앱 내부 라우트 링크 (계산기, 퀴즈, 족보 등) */
+  pageHref?: string | null;
+  /** 앱 페이지 카드 아이콘 (이모지) */
+  pageIcon?: string | null;
 };
 
 export const GOLD = "#d4af37";
@@ -105,9 +109,32 @@ export default function PostCard({
   clickable?: boolean;
 }) {
   const isBlogTeaser = !!post.blogSlug;
+  const isPageTeaser = !!post.pageHref;
   const blogHref = post.blogLocale
     ? `/${post.blogLocale}/blog/${post.blogSlug}`
     : `/blog/${post.blogSlug}`;
+
+  // pageHref 카드: 별도 렌더
+  if (isPageTeaser) {
+    return (
+      <Link
+        href={post.pageHref!}
+        className="block mx-3 my-1.5 rounded-2xl overflow-hidden active:scale-[0.99] transition-transform"
+        style={{ background: "linear-gradient(135deg, #0f1a2e 0%, #162035 100%)", border: "1px solid rgba(212,175,55,0.18)" }}
+      >
+        <div className="flex items-center gap-4 px-5 py-4">
+          <span className="text-3xl flex-shrink-0">{post.pageIcon ?? "📄"}</span>
+          <div className="flex-1 min-w-0">
+            <p className="text-[13px] font-black" style={{ color: GOLD }}>{post.title}</p>
+            <p className="text-[12px] mt-0.5 line-clamp-1" style={{ color: "rgba(255,255,255,0.45)" }}>{post.content}</p>
+          </div>
+          <span className="text-[11px] font-bold px-3 py-1.5 rounded-xl flex-shrink-0" style={{ background: "rgba(212,175,55,0.12)", color: GOLD }}>
+            바로가기 →
+          </span>
+        </div>
+      </Link>
+    );
+  }
   const isMyLang = post.language === myLanguage;
   const [translated, setTranslated] = useState<string | null>(null);
   const [showOriginal, setShowOriginal] = useState(false);

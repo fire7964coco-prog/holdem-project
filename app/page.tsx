@@ -115,8 +115,72 @@ export default async function Page({
     readTime: p.readTime,
   }));
 
-  // 커뮤니티 글 + 블로그 티저 통합 후 최신순 정렬
-  const posts: FeedPost[] = [...communityPosts, ...blogTeasers].sort(
+  // 앱 내부 도구/필라 페이지 카드 — 피드에 고정 노출
+  const PAGE_TEASERS: FeedPost[] = [
+    {
+      id: "page:ranking",
+      type: "admin", language: "ko",
+      title: "홀덤 족보 완전 정리",
+      content: "로열플러시부터 하이카드까지 — 10가지 핸드 랭킹을 한눈에 확인하세요.",
+      imageUrl: null, likeCount: 0, commentCount: 0,
+      createdAt: "2026-01-01T00:00:00Z",
+      authorNickname: "HoldemMaster", authorAvatar: null, authorBadge: null, liked: false,
+      pageHref: "/ranking/", pageIcon: "🃏",
+    },
+    {
+      id: "page:hand-chart",
+      type: "admin", language: "ko",
+      title: "스타팅 핸드 차트",
+      content: "포지션별 오픈/콜/3-bet 핸드 범위를 차트로 확인하세요.",
+      imageUrl: null, likeCount: 0, commentCount: 0,
+      createdAt: "2026-01-02T00:00:00Z",
+      authorNickname: "HoldemMaster", authorAvatar: null, authorBadge: null, liked: false,
+      pageHref: "/hand-chart/", pageIcon: "📊",
+    },
+    {
+      id: "page:calculator",
+      type: "admin", language: "ko",
+      title: "팟오즈 & 에퀴티 계산기",
+      content: "내 핸드의 에퀴티와 팟오즈를 실시간으로 계산해보세요.",
+      imageUrl: null, likeCount: 0, commentCount: 0,
+      createdAt: "2026-01-03T00:00:00Z",
+      authorNickname: "HoldemMaster", authorAvatar: null, authorBadge: null, liked: false,
+      pageHref: "/calculator/", pageIcon: "🧮",
+    },
+    {
+      id: "page:quiz",
+      type: "admin", language: "ko",
+      title: "홀덤 실력 테스트 퀴즈",
+      content: "10문제로 내 홀덤 수준을 확인해보세요. 결과 공유도 가능!",
+      imageUrl: null, likeCount: 0, commentCount: 0,
+      createdAt: "2026-01-04T00:00:00Z",
+      authorNickname: "HoldemMaster", authorAvatar: null, authorBadge: null, liked: false,
+      pageHref: "/quiz/", pageIcon: "🎯",
+    },
+    {
+      id: "page:glossary",
+      type: "admin", language: "ko",
+      title: "홀덤 용어 사전",
+      content: "올인, 블러프, ICM, 팟오즈… 헷갈리는 용어를 한 번에 정리.",
+      imageUrl: null, likeCount: 0, commentCount: 0,
+      createdAt: "2026-01-05T00:00:00Z",
+      authorNickname: "HoldemMaster", authorAvatar: null, authorBadge: null, liked: false,
+      pageHref: "/glossary/", pageIcon: "📖",
+    },
+    {
+      id: "page:pub",
+      type: "admin", language: "ko",
+      title: "내 근처 홀덤펍 찾기",
+      content: "서울·경기 홀덤펍 위치, 바이인, 블라인드 구조 한 번에 비교.",
+      imageUrl: null, likeCount: 0, commentCount: 0,
+      createdAt: "2026-01-06T00:00:00Z",
+      authorNickname: "HoldemMaster", authorAvatar: null, authorBadge: null, liked: false,
+      pageHref: "/pub/", pageIcon: "🍺",
+    },
+  ];
+
+  // 커뮤니티 글 + 블로그 티저 + 앱 페이지 카드 통합 후 최신순 정렬
+  const posts: FeedPost[] = [...communityPosts, ...blogTeasers, ...PAGE_TEASERS].sort(
     (a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
   );
 

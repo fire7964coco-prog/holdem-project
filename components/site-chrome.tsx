@@ -23,8 +23,13 @@ function useLocale() {
 const LOCALE_FEED_ROOTS = ["/en", "/ja", "/zh", "/es", "/ar", "/pt", "/id", "/ms", "/vi", "/hi", "/de", "/tr"];
 
 function isFeedAppRoute(pathname: string) {
-  // 루트 한국어 피드 + 로그인 + 글 상세
-  if (pathname === "/" || pathname === "/login" || pathname.startsWith("/post/")) return true;
+  // 루트 한국어 피드 + 로그인 + 글 상세 + 블로그 (피드 내 티저 클릭 시 일관된 UX)
+  if (
+    pathname === "/" ||
+    pathname === "/login" ||
+    pathname.startsWith("/post/") ||
+    pathname.startsWith("/blog/")
+  ) return true;
   // 각 locale 루트 피드 (/en, /en/ 등) — /en/blog는 포함하지 않는다
   return LOCALE_FEED_ROOTS.some((p) => pathname === p || pathname === p + "/");
 }
