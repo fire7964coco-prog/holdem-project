@@ -214,8 +214,7 @@ export async function updateNickname(formData: FormData) {
   revalidatePath("/");
   return { success: true };
 }
-
-
+export async function toggleLike(postId: string) {
   const supabase = await createClient();
   const {
     data: { user },
