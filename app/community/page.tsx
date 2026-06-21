@@ -45,7 +45,7 @@ export default async function CommunityPage() {
     likedIds = (likes ?? []).map((l) => l.post_id);
   }
 
-  const posts: FeedPost[] = (postsRaw ?? []).map((p: any) => ({
+  const toFeedPost = (p: any): FeedPost => ({
     id: p.id,
     type: p.type,
     language: p.language,
@@ -55,17 +55,33 @@ export default async function CommunityPage() {
     likeCount: p.like_count,
     commentCount: p.comment_count,
     createdAt: p.created_at,
-    authorNickname: p.profiles?.nickname ?? "Unknown",
-    authorAvatar: p.profiles?.avatar_url ?? null,
-    authorBadge: p.profiles?.badge ?? null,
+    authorNickname: p.profiles?.nickname ?? currentUser?.nickname ?? "Unknown",
+    authorAvatar: p.profiles?.avatar_url ?? currentUser?.avatar_url ?? null,
+    authorBadge: p.profiles?.badge ?? currentUser?.badge ?? null,
     liked: likedIds.includes(p.id),
-  }));
+  });
+
+  const posts: FeedPost[] = (postsRaw ?? []).map(toFeedPost);
+
+  // 프로필 탭용: 내가 쓴 글 전체
+  let myPosts: FeedPost[] = [];
+  if (user) {
+    const { data: mine } = await supabase
+      .from("posts")
+      .select(
+        "id, type, language, title, content, image_url, like_count, comment_count, created_at, author_id"
+      )
+      .eq("author_id", user.id)
+      .order("created_at", { ascending: false });
+    myPosts = (mine ?? []).map(toFeedPost);
+  }
 
   return (
     <CommunityClient
       currentUser={currentUser}
       myLanguage={myLanguage}
       initialPosts={posts}
+      myPosts={myPosts}
     />
   );
 }

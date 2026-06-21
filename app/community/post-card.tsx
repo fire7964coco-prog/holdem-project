@@ -1,0 +1,187 @@
+"use client";
+
+import { useState } from "react";
+import Link from "next/link";
+
+export type FeedPost = {
+  id: string;
+  type: "admin" | "community";
+  language: string;
+  title: string;
+  content: string;
+  imageUrl: string | null;
+  likeCount: number;
+  commentCount: number;
+  createdAt: string;
+  authorNickname: string;
+  authorAvatar: string | null;
+  authorBadge: string | null;
+  liked: boolean;
+};
+
+export const GOLD = "#d4af37";
+export const BG = "#0b1120";
+export const CARD = "#0f1a2e";
+
+export const FLAG: Record<string, string> = {
+  ko: "🇰🇷", en: "🇺🇸", ja: "🇯🇵", zh: "🇨🇳", es: "🇪🇸", de: "🇩🇪",
+  pt: "🇧🇷", ar: "🇸🇦", tr: "🇹🇷", vi: "🇻🇳", id: "🇮🇩", ms: "🇲🇾", hi: "🇮🇳",
+};
+
+const BADGE: Record<string, { label: string; color: string }> = {
+  winner: { label: "🏆 우승", color: "#facc15" },
+  hot: { label: "🔥 인기", color: "#f87171" },
+  top: { label: "⭐ TOP", color: "#60a5fa" },
+  participant: { label: "🎟️ 참여", color: "#34d399" },
+};
+
+export function timeAgo(iso: string): string {
+  const diff = Date.now() - new Date(iso).getTime();
+  const m = Math.floor(diff / 60000);
+  if (m < 1) return "now";
+  if (m < 60) return `${m}m`;
+  const h = Math.floor(m / 60);
+  if (h < 24) return `${h}h`;
+  return `${Math.floor(h / 24)}d`;
+}
+
+export function Avatar({ post, size = 36 }: { post: Pick<FeedPost, "type" | "authorAvatar" | "authorNickname">; size?: number }) {
+  if (post.type === "admin") {
+    return (
+      <div className="rounded-full flex items-center justify-center flex-shrink-0" style={{ width: size, height: size, background: "linear-gradient(135deg,#d4af37,#f0d060)" }}>
+        <span className="font-black" style={{ fontSize: size * 0.28, color: BG }}>HM</span>
+      </div>
+    );
+  }
+  if (post.authorAvatar) {
+    return <img src={post.authorAvatar} alt={post.authorNickname} className="rounded-full object-cover flex-shrink-0" style={{ width: size, height: size }} />;
+  }
+  return (
+    <div className="rounded-full flex items-center justify-center flex-shrink-0" style={{ width: size, height: size, background: "rgba(255,255,255,0.1)" }}>
+      <span className="font-bold" style={{ fontSize: size * 0.4, color: "#fff" }}>{post.authorNickname.slice(0, 1).toUpperCase()}</span>
+    </div>
+  );
+}
+
+export default function PostCard({
+  post,
+  myLanguage,
+  onLike,
+  clickable = true,
+}: {
+  post: FeedPost;
+  myLanguage: string;
+  onLike: (id: string) => void;
+  clickable?: boolean;
+}) {
+  const isMyLang = post.language === myLanguage;
+  const [translated, setTranslated] = useState<string | null>(null);
+  const [showOriginal, setShowOriginal] = useState(false);
+  const [translating, setTranslating] = useState(false);
+  const [transErr, setTransErr] = useState(false);
+
+  const badge = post.authorBadge ? BADGE[post.authorBadge] : null;
+  const showTitle = post.type === "admin" && post.title && post.title !== post.content;
+  const bodyText = translated && !showOriginal ? translated : post.content;
+
+  async function handleTranslate() {
+    if (translated) {
+      setShowOriginal((v) => !v);
+      return;
+    }
+    setTranslating(true);
+    setTransErr(false);
+    try {
+      const res = await fetch("/api/community/translate", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ postId: post.id, target: myLanguage, text: post.content }),
+      });
+      const data = await res.json();
+      if (data?.translated) {
+        setTranslated(data.translated);
+        setShowOriginal(false);
+      } else {
+        setTransErr(true);
+      }
+    } catch {
+      setTransErr(true);
+    } finally {
+      setTranslating(false);
+    }
+  }
+
+  return (
+    <article
+      className="mx-3 mb-3 rounded-2xl overflow-hidden"
+      style={{
+        background: CARD,
+        border: "1px solid rgba(255,255,255,0.06)",
+        opacity: isMyLang || translated ? 1 : 0.62,
+        transition: "opacity 0.2s",
+      }}
+    >
+      <div className="flex items-center gap-2.5 px-4 pt-3.5 pb-2">
+        <Avatar post={post} />
+        <div className="flex-1 min-w-0">
+          <div className="flex items-center gap-1.5">
+            <p className="text-[13px] font-bold truncate" style={{ color: post.type === "admin" ? GOLD : "#f0e8c8" }}>
+              {post.type === "admin" ? "HoldemMaster" : post.authorNickname}
+            </p>
+            {badge && (
+              <span className="text-[9px] font-bold px-1.5 py-0.5 rounded-full flex-shrink-0" style={{ background: "rgba(255,255,255,0.07)", color: badge.color }}>
+                {badge.label}
+              </span>
+            )}
+          </div>
+          <p className="text-[10px]" style={{ color: "rgba(255,255,255,0.32)" }}>
+            {FLAG[post.language] ?? "🌐"} {timeAgo(post.createdAt)}
+          </p>
+        </div>
+      </div>
+
+      <Link href={clickable ? `/community/post/${post.id}` : "#"} className={clickable ? "block" : "block pointer-events-none"}>
+        {showTitle && (
+          <div className="px-4 pb-1.5">
+            <p className="text-[15px] font-bold leading-snug" style={{ color: "#f0e8c8" }}>{post.title}</p>
+          </div>
+        )}
+        <div className="px-4 pb-3">
+          <p className="text-[13.5px] leading-relaxed whitespace-pre-wrap" style={{ color: "rgba(240,232,200,0.88)" }}>
+            {bodyText}
+          </p>
+        </div>
+        {post.imageUrl && <img src={post.imageUrl} alt="" className="w-full object-cover" style={{ maxHeight: 340 }} />}
+      </Link>
+
+      {!isMyLang && (
+        <div className="px-4 pb-1">
+          <button
+            onClick={handleTranslate}
+            disabled={translating}
+            className="text-[11px] font-semibold px-2.5 py-1 rounded-full active:scale-95 transition-transform disabled:opacity-50"
+            style={{ background: "rgba(212,175,55,0.1)", color: GOLD }}
+          >
+            {translating ? "번역 중..." : translated ? (showOriginal ? "🌐 번역 보기" : "↩ 원문 보기") : `🌐 ${FLAG[myLanguage] ?? ""} 번역`}
+          </button>
+          {transErr && <span className="text-[11px] ml-2" style={{ color: "#f87171" }}>번역 실패</span>}
+        </div>
+      )}
+
+      <div className="flex items-center gap-5 px-4 py-2.5">
+        <button onClick={() => onLike(post.id)} className="flex items-center gap-1.5 active:scale-90 transition-transform">
+          <svg className="w-[18px] h-[18px]" fill={post.liked ? "#f87171" : "none"} viewBox="0 0 24 24" stroke={post.liked ? "#f87171" : "rgba(255,255,255,0.35)"} strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+          </svg>
+          <span className="text-xs" style={{ color: post.liked ? "#f87171" : "rgba(255,255,255,0.35)" }}>{post.likeCount}</span>
+        </button>
+        <Link href={`/community/post/${post.id}`} className="flex items-center gap-1.5 active:scale-90 transition-transform">
+          <svg className="w-[18px] h-[18px]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} style={{ color: "rgba(255,255,255,0.35)" }}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+          </svg>
+          <span className="text-xs" style={{ color: "rgba(255,255,255,0.35)" }}>{post.commentCount}</span>
+        </Link>
+      </div>
+    </article>
+  );
+}

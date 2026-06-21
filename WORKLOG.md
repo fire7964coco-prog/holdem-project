@@ -5,6 +5,22 @@
 
 ---
 
+## 2026-06-21
+
+### 작업 내용
+- 커뮤니티 Phase 2 (feature/community 브랜치): 피드 카드 카드형 레이아웃 재구성(`post-card.tsx` 컴포넌트 분리)
+- 글 상세 페이지 신설 `/community/post/[id]` + 댓글 작성/표시/삭제 (`addComment`/`deleteComment` 액션)
+- 다국어 피드: 자국어 밝게/타언어 흐리게 + Gemini 번역 버튼 (translations 캐싱)
+- Gemini 번역 API 라우트 `/api/community/translate` (gemini-2.5-flash, thinking off, 포커 용어 원어 유지 시스템 프롬프트) — 로컬 테스트 통과
+- Explore 탭 [전략 포스팅]/[커뮤니티] 서브탭 필터, 프로필 탭(내 글·받은 좋아요·댓글 수·뱃지) 구현
+- 번역 캐시 쓰기용 service role 클라이언트 추가(`lib/supabase/admin.ts`, 키 없으면 캐싱만 생략)
+
+### 특이사항
+- 기존 /blog·SEO 라우트 영향 없음 (middleware는 /community/* 한정). 빌드 통과.
+- 배포 전 필요: Vercel `GEMINI_API_KEY`(필수), `SUPABASE_SERVICE_ROLE_KEY`(선택, 번역 캐싱용) 환경변수 추가
+
+---
+
 ## 2026-06-19
 
 ### 작업 내용
