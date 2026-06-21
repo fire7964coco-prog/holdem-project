@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
 
@@ -21,6 +21,12 @@ export default function LoginPage() {
   const [socialLoading, setSocialLoading] = useState<"google" | null>(null);
   const [msg, setMsg] = useState<string | null>(null);
   const [err, setErr] = useState<string | null>(null);
+
+  // 뒤로가기로 돌아왔을 때 로딩 상태 초기화
+  useEffect(() => {
+    setSocialLoading(null);
+    setLoading(false);
+  }, []);
 
   const detectLanguage = () => {
     if (typeof navigator === "undefined") return "ko";
