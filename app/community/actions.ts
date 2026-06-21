@@ -53,6 +53,61 @@ export async function createPost(formData: FormData) {
   return { success: true };
 }
 
+export async function addComment(postId: string, content: string) {
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
+  if (!user) {
+    return { error: "로그인이 필요합니다." };
+  }
+
+  const text = content.trim();
+  if (!text) {
+    return { error: "내용을 입력해주세요." };
+  }
+
+  const { error } = await supabase.from("comments").insert({
+    post_id: postId,
+    author_id: user.id,
+    content: text,
+  });
+
+  if (error) {
+    return { error: error.message };
+  }
+
+  revalidatePath(`/community/post/${postId}`);
+  revalidatePath("/community");
+  return { success: true };
+}
+
+export async function deleteComment(commentId: string, postId: string) {
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
+  if (!user) {
+    return { error: "로그인이 필요합니다." };
+  }
+
+  const { error } = await supabase
+    .from("comments")
+    .delete()
+    .eq("id", commentId)
+    .eq("author_id", user.id);
+
+  if (error) {
+    return { error: error.message };
+  }
+
+  revalidatePath(`/community/post/${postId}`);
+  revalidatePath("/community");
+  return { success: true };
+}
+
 export async function toggleLike(postId: string) {
   const supabase = await createClient();
   const {

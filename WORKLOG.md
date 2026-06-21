@@ -5,18 +5,19 @@
 
 ---
 
-## 2026-06-20
+## 2026-06-21
 
 ### 작업 내용
-- 커뮤니티 기능 Phase 0+1 개발 및 Production 배포 (`/community` 신규 경로, 기존 SEO 경로 영향 없음)
-- Supabase 연동: DB 스키마 6개 테이블(profiles/posts/comments/likes/event_entries/translations) + RLS + 트리거
-- 이메일 회원가입/로그인/로그아웃 + 피드(어드민+커뮤니티 혼합) + 글쓰기 + 좋아요 구현
-- `feature/community` 브랜치 작업 → main 머지, middleware는 `/community/*` 에만 적용
-- `korea-poker-marathon-2026` 오타/사실 검수 (Garmin 오타, JTBC 8am, APT제주→춘천 18일 등) + 한강라면 사진 정렬
+- 커뮤니티 Phase 2 (feature/community 브랜치): 피드 카드 카드형 레이아웃 재구성(`post-card.tsx` 컴포넌트 분리)
+- 글 상세 페이지 신설 `/community/post/[id]` + 댓글 작성/표시/삭제 (`addComment`/`deleteComment` 액션)
+- 다국어 피드: 자국어 밝게/타언어 흐리게 + Gemini 번역 버튼 (translations 캐싱)
+- Gemini 번역 API 라우트 `/api/community/translate` (gemini-2.5-flash, thinking off, 포커 용어 원어 유지 시스템 프롬프트) — 로컬 테스트 통과
+- Explore 탭 [전략 포스팅]/[커뮤니티] 서브탭 필터, 프로필 탭(내 글·받은 좋아요·댓글 수·뱃지) 구현
+- 번역 캐시 쓰기용 service role 클라이언트 추가(`lib/supabase/admin.ts`, 키 없으면 캐싱만 생략)
 
 ### 특이사항
-- 커뮤니티 인프라: Supabase(Seoul, Free) + Vercel 환경변수 설정 완료
-- 진행 상세/다음 단계(Phase 2)는 session-handoff.md 참조
+- 기존 /blog·SEO 라우트 영향 없음 (middleware는 /community/* 한정). 빌드 통과.
+- 배포 전 필요: Vercel `GEMINI_API_KEY`(필수), `SUPABASE_SERVICE_ROLE_KEY`(선택, 번역 캐싱용) 환경변수 추가
 
 ---
 

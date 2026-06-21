@@ -4,6 +4,9 @@ import { useState, useTransition } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { signOut, createPost, toggleLike } from "./actions";
+import PostCard, { type FeedPost, Avatar, FLAG, GOLD, BG, CARD } from "./post-card";
+
+export type { FeedPost } from "./post-card";
 
 export type CurrentUser = {
   id: string;
@@ -13,52 +16,24 @@ export type CurrentUser = {
   badge: string | null;
 };
 
-export type FeedPost = {
-  id: string;
-  type: "admin" | "community";
-  language: string;
-  title: string;
-  content: string;
-  imageUrl: string | null;
-  likeCount: number;
-  commentCount: number;
-  createdAt: string;
-  authorNickname: string;
-  authorAvatar: string | null;
-  authorBadge: string | null;
-  liked: boolean;
+const BADGE_LABEL: Record<string, string> = {
+  winner: "🏆 우승자", hot: "🔥 인기 유저", top: "⭐ TOP 유저", participant: "🎟️ 이벤트 참여",
 };
-
-const GOLD = "#d4af37";
-const BG = "#0b1120";
-const CARD = "#0f1a2e";
-
-const FLAG: Record<string, string> = {
-  ko: "🇰🇷", en: "🇺🇸", ja: "🇯🇵", zh: "🇨🇳", es: "🇪🇸", de: "🇩🇪",
-  pt: "🇧🇷", ar: "🇸🇦", tr: "🇹🇷", vi: "🇻🇳", id: "🇮🇩", ms: "🇲🇾", hi: "🇮🇳",
-};
-
-function timeAgo(iso: string): string {
-  const diff = Date.now() - new Date(iso).getTime();
-  const m = Math.floor(diff / 60000);
-  if (m < 1) return "now";
-  if (m < 60) return `${m}m`;
-  const h = Math.floor(m / 60);
-  if (h < 24) return `${h}h`;
-  return `${Math.floor(h / 24)}d`;
-}
 
 export default function CommunityClient({
   currentUser,
   myLanguage,
   initialPosts,
+  myPosts,
 }: {
   currentUser: CurrentUser | null;
   myLanguage: string;
   initialPosts: FeedPost[];
+  myPosts: FeedPost[];
 }) {
   const router = useRouter();
   const [tab, setTab] = useState<"home" | "explore" | "event" | "profile">("home");
+  const [exploreSub, setExploreSub] = useState<"strategy" | "community">("strategy");
   const [posts, setPosts] = useState<FeedPost[]>(initialPosts);
   const [writeOpen, setWriteOpen] = useState(false);
   const [draft, setDraft] = useState("");
@@ -69,7 +44,6 @@ export default function CommunityClient({
       router.push("/community/login");
       return;
     }
-    // optimistic
     setPosts((prev) =>
       prev.map((p) =>
         p.id === postId
@@ -95,6 +69,13 @@ export default function CommunityClient({
       }
     });
   }
+
+  const strategyPosts = posts.filter((p) => p.type === "admin");
+  const communityPosts = posts.filter((p) => p.type === "community");
+  const explorePosts = exploreSub === "strategy" ? strategyPosts : communityPosts;
+
+  const totalLikes = myPosts.reduce((s, p) => s + p.likeCount, 0);
+  const totalComments = myPosts.reduce((s, p) => s + p.commentCount, 0);
 
   return (
     <div className="min-h-screen flex flex-col" style={{ background: BG, fontFamily: "'Inter','Pretendard',sans-serif" }}>
@@ -125,80 +106,112 @@ export default function CommunityClient({
       </header>
 
       {/* 본문 */}
-      <div className="flex-1 overflow-y-auto pb-24">
+      <div className="flex-1 overflow-y-auto pt-3 pb-24">
+        {/* ── 피드 ── */}
         {tab === "home" && (
+          posts.length === 0 ? (
+            <EmptyState icon="🃏" title="아직 글이 없습니다" sub="첫 번째 글을 남겨보세요!" />
+          ) : (
+            posts.map((p) => (
+              <PostCard key={p.id} post={p} myLanguage={myLanguage} onLike={onLike} />
+            ))
+          )
+        )}
+
+        {/* ── 탐색 ── */}
+        {tab === "explore" && (
           <div>
-            {posts.length === 0 ? (
-              <div className="flex flex-col items-center justify-center py-24 px-6 text-center">
-                <span className="text-3xl mb-3">🃏</span>
-                <p className="text-sm font-bold mb-1" style={{ color: "#f0e8c8" }}>아직 글이 없습니다</p>
-                <p className="text-xs" style={{ color: "rgba(255,255,255,0.4)" }}>
-                  첫 번째 글을 남겨보세요!
-                </p>
-              </div>
+            <div className="flex gap-2 px-3 mb-3">
+              {([
+                { key: "strategy", label: "✦ 전략 포스팅" },
+                { key: "community", label: "🌏 커뮤니티" },
+              ] as const).map((s) => (
+                <button
+                  key={s.key}
+                  onClick={() => setExploreSub(s.key)}
+                  className="px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all"
+                  style={
+                    exploreSub === s.key
+                      ? { background: GOLD, color: BG }
+                      : { background: "rgba(212,175,55,0.08)", color: "rgba(212,175,55,0.55)", border: "1px solid rgba(212,175,55,0.15)" }
+                  }
+                >
+                  {s.label}
+                </button>
+              ))}
+            </div>
+            {explorePosts.length === 0 ? (
+              <EmptyState
+                icon={exploreSub === "strategy" ? "📚" : "🌏"}
+                title={exploreSub === "strategy" ? "전략 글이 없습니다" : "커뮤니티 글이 없습니다"}
+                sub={exploreSub === "strategy" ? "곧 전략 콘텐츠가 추가됩니다" : "첫 글을 남겨보세요!"}
+              />
             ) : (
-              posts.map((p) => (
-                <div key={p.id} style={{ background: CARD, borderBottom: "1px solid rgba(255,255,255,0.04)" }}>
-                  <div className="flex items-center gap-2 px-4 py-2.5">
-                    {p.type === "admin" ? (
-                      <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)" }}>
-                        <span className="font-black" style={{ fontSize: 8, color: BG }}>HM</span>
-                      </div>
-                    ) : p.authorAvatar ? (
-                      <img src={p.authorAvatar} alt={p.authorNickname} className="w-8 h-8 rounded-full object-cover flex-shrink-0" />
-                    ) : (
-                      <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: "rgba(255,255,255,0.1)" }}>
-                        <span className="text-xs font-bold" style={{ color: "#fff" }}>{p.authorNickname.slice(0, 1).toUpperCase()}</span>
-                      </div>
-                    )}
-                    <div className="flex-1 min-w-0">
-                      <p className="text-xs font-bold" style={{ color: p.type === "admin" ? GOLD : "#f0e8c8" }}>
-                        {p.type === "admin" ? "HoldemMaster" : p.authorNickname}
-                      </p>
-                      <p className="text-[10px]" style={{ color: "rgba(255,255,255,0.3)" }}>
-                        {FLAG[p.language] ?? "🌐"} {timeAgo(p.createdAt)}
-                      </p>
-                    </div>
-                  </div>
-
-                  {p.title && p.title !== p.content && (
-                    <div className="px-4 pb-1">
-                      <p className="text-sm font-bold leading-snug" style={{ color: "#f0e8c8" }}>{p.title}</p>
-                    </div>
-                  )}
-                  <div className="px-4 pb-2">
-                    <p className="text-sm leading-snug whitespace-pre-wrap" style={{ color: "rgba(240,232,200,0.85)" }}>{p.content}</p>
-                  </div>
-                  {p.imageUrl && <img src={p.imageUrl} alt="" className="w-full object-cover" style={{ maxHeight: 320 }} />}
-
-                  <div className="flex items-center gap-5 px-4 py-2.5">
-                    <button onClick={() => onLike(p.id)} className="flex items-center gap-1.5 active:scale-90 transition-transform">
-                      <svg className="w-5 h-5" fill={p.liked ? "#f87171" : "none"} viewBox="0 0 24 24" stroke={p.liked ? "#f87171" : "rgba(255,255,255,0.35)"} strokeWidth={2}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                      </svg>
-                      <span className="text-xs" style={{ color: p.liked ? "#f87171" : "rgba(255,255,255,0.35)" }}>{p.likeCount}</span>
-                    </button>
-                    <div className="flex items-center gap-1.5">
-                      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} style={{ color: "rgba(255,255,255,0.35)" }}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-                      </svg>
-                      <span className="text-xs" style={{ color: "rgba(255,255,255,0.35)" }}>{p.commentCount}</span>
-                    </div>
-                  </div>
-                </div>
+              explorePosts.map((p) => (
+                <PostCard key={p.id} post={p} myLanguage={myLanguage} onLike={onLike} />
               ))
             )}
           </div>
         )}
 
-        {tab !== "home" && (
-          <div className="flex flex-col items-center justify-center py-24 px-6 text-center">
-            <span className="text-3xl mb-3">🚧</span>
-            <p className="text-sm font-bold mb-1" style={{ color: "#f0e8c8" }}>준비 중</p>
-            <p className="text-xs" style={{ color: "rgba(255,255,255,0.4)" }}>
-              {tab === "explore" ? "탐색" : tab === "event" ? "이벤트" : "프로필"} 기능은 곧 추가됩니다
-            </p>
-          </div>
+        {/* ── 이벤트 ── */}
+        {tab === "event" && (
+          <EmptyState icon="🎰" title="이벤트 준비 중" sub="로또형 이벤트가 곧 열립니다" />
+        )}
+
+        {/* ── 프로필 ── */}
+        {tab === "profile" && (
+          !currentUser ? (
+            <div className="px-4">
+              <div className="rounded-2xl p-6 text-center" style={{ background: CARD, border: "1px solid rgba(212,175,55,0.2)" }}>
+                <div className="text-3xl mb-3">👤</div>
+                <p className="text-sm font-bold mb-1" style={{ color: "#f0e8c8" }}>로그인이 필요합니다</p>
+                <p className="text-xs mb-4" style={{ color: "rgba(255,255,255,0.4)" }}>내 글과 활동 내역을 확인하려면 로그인하세요</p>
+                <Link href="/community/login" className="inline-block px-5 py-2.5 rounded-xl text-sm font-bold" style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: BG }}>
+                  로그인 / 회원가입 →
+                </Link>
+              </div>
+            </div>
+          ) : (
+            <div className="px-3 space-y-3">
+              {/* 프로필 헤더 */}
+              <div className="flex flex-col items-center py-6 rounded-2xl" style={{ background: CARD, border: "1px solid rgba(212,175,55,0.12)" }}>
+                <Avatar post={{ type: "community", authorAvatar: currentUser.avatar_url, authorNickname: currentUser.nickname }} size={64} />
+                <p className="font-bold text-base mt-3" style={{ color: "#f0e8c8" }}>
+                  {FLAG[currentUser.language] ?? "🌐"} {currentUser.nickname}
+                </p>
+                {currentUser.badge && BADGE_LABEL[currentUser.badge] && (
+                  <span className="text-[11px] font-bold px-2.5 py-0.5 rounded-full mt-2" style={{ background: "rgba(212,175,55,0.12)", color: GOLD }}>
+                    {BADGE_LABEL[currentUser.badge]}
+                  </span>
+                )}
+                <div className="flex gap-8 mt-4">
+                  {[
+                    { label: "내 글", val: myPosts.length },
+                    { label: "받은 좋아요", val: totalLikes },
+                    { label: "댓글", val: totalComments },
+                  ].map((s) => (
+                    <div key={s.label} className="text-center">
+                      <p className="text-base font-bold" style={{ color: "#f0e8c8" }}>{s.val}</p>
+                      <p className="text-[10px]" style={{ color: "rgba(255,255,255,0.4)" }}>{s.label}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* 내 글 목록 */}
+              <p className="text-xs font-bold px-1 pt-1" style={{ color: "rgba(212,175,55,0.7)" }}>내가 쓴 글</p>
+              {myPosts.length === 0 ? (
+                <EmptyState icon="✍️" title="아직 작성한 글이 없습니다" sub="첫 글을 남겨보세요!" />
+              ) : (
+                myPosts.map((p) => (
+                  <div key={p.id} className="-mx-3">
+                    <PostCard post={p} myLanguage={myLanguage} onLike={onLike} />
+                  </div>
+                ))
+              )}
+            </div>
+          )
         )}
       </div>
 
@@ -228,7 +241,7 @@ export default function CommunityClient({
       )}
 
       {/* FAB */}
-      {tab === "home" && (
+      {(tab === "home" || tab === "explore") && (
         <button
           onClick={() => (currentUser ? setWriteOpen(true) : router.push("/community/login"))}
           className="fixed flex items-center justify-center rounded-full active:scale-95 transition-transform"
@@ -243,17 +256,27 @@ export default function CommunityClient({
       {/* 하단 네비 */}
       <nav className="fixed bottom-0 left-0 right-0 flex items-center" style={{ background: "rgba(11,17,32,0.95)", backdropFilter: "blur(12px)", borderTop: "1px solid rgba(212,175,55,0.12)", height: 64, zIndex: 40 }}>
         {([
-          { key: "home", label: "피드" },
-          { key: "explore", label: "탐색" },
-          { key: "event", label: "이벤트" },
-          { key: "profile", label: "프로필" },
+          { key: "home", label: "피드", icon: "🏠" },
+          { key: "explore", label: "탐색", icon: "🔍" },
+          { key: "event", label: "이벤트", icon: "🎰" },
+          { key: "profile", label: "프로필", icon: "👤" },
         ] as const).map((n) => (
           <button key={n.key} onClick={() => setTab(n.key)} className="flex-1 flex flex-col items-center justify-center gap-1 py-2" style={{ color: tab === n.key ? GOLD : "rgba(255,255,255,0.3)" }}>
-            <span className="text-[15px]">{n.key === "home" ? "🏠" : n.key === "explore" ? "🔍" : n.key === "event" ? "🎰" : "👤"}</span>
+            <span className="text-[15px]">{n.icon}</span>
             <span className="text-[10px] font-semibold">{n.label}</span>
           </button>
         ))}
       </nav>
+    </div>
+  );
+}
+
+function EmptyState({ icon, title, sub }: { icon: string; title: string; sub: string }) {
+  return (
+    <div className="flex flex-col items-center justify-center py-24 px-6 text-center">
+      <span className="text-3xl mb-3">{icon}</span>
+      <p className="text-sm font-bold mb-1" style={{ color: "#f0e8c8" }}>{title}</p>
+      <p className="text-xs" style={{ color: "rgba(255,255,255,0.4)" }}>{sub}</p>
     </div>
   );
 }
