@@ -9,33 +9,56 @@
 
 ---
 
-## ✅ 완료한 작업 (Phase 0 → Phase 4 완료)
+## ✅ 완료한 작업 (Phase 0 → Phase 5 완료)
 
 - **Phase 0**: `/community` 라우트 신설 + Supabase 클라이언트 설정
 - **Phase 1**: 이메일 회원가입/로그인/로그아웃 + 피드 + 글쓰기 + 좋아요 (Production 배포 완료)
 - **Phase 2**: 포스트카드 컴포넌트 분리, 글 상세/댓글, 다국어 피드+번역, Explore/프로필 탭
-- **Phase 3**: 커뮤니티 UI 다국어 전환(LABELS), Blog→Community CTA, 이벤트 탭 구현 — **전부 main 커밋·배포 완료**
-  - 커밋: `3cef3bf` (feat: event tab - number picker + condition check)
-- **Phase 4**: 홈 피드 통합 — `holdemmaster.com/` 커뮤니티 피드로 전면 교체 (커밋 `f1e50c1`, main 배포 완료)
+- **Phase 3**: 커뮤니티 UI 다국어 전환(LABELS), Blog→Community CTA, 이벤트 탭 구현
+- **Phase 4**: 홈 피드 통합 — `holdemmaster.com/` 커뮤니티 피드로 전면 교체
   - `/login`, `/post/[id]`, `/auth/callback` 라우트 신설 / `/community/*` → 301 리다이렉트
-- **Phase 5 (진행 중)**: 홈 단순화 + 블로그→피드 통합 (목업 기준)
-  - 홈/로그인/글상세에서 옛 사이트 헤더·푸터 숨김 (`site-chrome.tsx` `isFeedAppRoute`) — 커밋 `7158b82`
-  - 블로그 29편을 "티저 카드"로 피드 자동 노출 (`전체 읽기 → /blog/slug`) — 커밋 `b441019`
-  - 디자인 레퍼런스: `C:\Users\하봄\Downloads\cursor-discussion-v1\design-ref-*.tsx` (8종)
+- **Phase 5**: 홈 단순화 + 다국어 피드 12개 언어 신설 + 보안 패치
+  - 홈/로그인/글상세에서 옛 헤더·푸터 숨김 (`site-chrome.tsx` `isFeedAppRoute`)
+  - 블로그 글 → 티저 카드로 피드 자동 노출
+  - 12개 언어 `/en`, `/ja`, `/zh`, `/es`, `/de`, `/pt`, `/ar`, `/id`, `/ms`, `/vi`, `/hi`, `/tr` 로케일 피드 신설
+  - 이벤트 탭 12개 언어 현지화 (`EVENT_LABELS`)
+  - **보안 패치** (커밋 `45dddca`):
+    - `/api/community/translate` 로그인 필수 + 텍스트 3,000자 제한 + target 화이트리스트
+    - `/auth/callback` Open Redirect 차단 (`safeNext` 검증)
+    - `submitEventEntry` 번호 1~45 서버 검증 + `is_eligible` 하드코딩 제거
+    - `createPost` 5,000자 / `addComment` 1,000자 / 제목 100자 길이 제한
 
 ---
 
-## 🚀 다음 세션 첫 번째 할 일 — 목업 기준 디자인 정합 마무리
+## 🚀 다음 세션 첫 번째 할 일 — 유저글 피드 → 실시간 채팅으로 전환
 
-### 목업 대비 아직 미반영 (우선순위순)
-1. **탐색(Explore) 탭 리디자인**: 목업 = 인기 해시태그 + 어드민 추천 글 + 언어별 탐색. 현재 = 단순 strategy/community 목록
-2. **이벤트 탭**: 목업 = 로또 + 지난 추첨 YouTube 임베드 + 리워드 클레임. 현재 구현과 비교 필요 (`event-tab.tsx`)
-3. **피드 스토리바**: 목업 = 온라인 유저 가로 스크롤 (실시간 presence 필요 — 백엔드 작업)
-4. 블로그 티저 다국어 연결: 현재 모두 `/blog/ko` 연결 → 유저 언어별 `/en/blog` 등 연결 고려
+### 배경 결정사항 (사용자 확정)
+현재 인스타그램식 피드 구조에서 **YouTube 실시간 채팅** 방식으로 유저 참여 UI를 변경하기로 함.
+이유:
+- 초기 운영 단계에서 유저 글이 적어 피드가 비어 보이는 문제
+- 홀덤 유저는 전략 글 읽으러 오는 게 주 목적 → 짧은 채팅이 더 자연스러운 참여 방식
+- 짧은 메시지 입력이 긴 글 쓰기보다 진입장벽이 훨씬 낮음
+- Supabase Realtime으로 구현 가능
 
-### 참고
-- 블로그 티저는 `app/page.tsx`에서 `POSTS`(lib/posts.ts) → FeedPost 변환해 주입. 좋아요/댓글 없음, 클릭 시 `/blog/[slug]`
-- Gemini 번역 키 Vercel 미설정 → 번역 버튼 동작 안 함 (env: `GEMINI_API_KEY`)
+### 구현 방향 (아직 미결정 — 다음 세션에서 사용자와 논의 후 진행)
+1. **채팅 탭 구조**: 탭 중 하나를 채팅으로 교체하거나, 피드 하단에 채팅창 붙이는 방식 중 선택
+2. **채팅 룸 구성**: 글로벌 단일 룸 vs 언어별 룸
+3. **기술 스택**: Supabase Realtime (`supabase.channel().on('postgres_changes', ...)`)
+4. **DB**: `chat_messages` 테이블 신설 (id, room, user_id, content, created_at)
+
+### 구현 시 참고
+- Supabase Realtime 문서: https://supabase.com/docs/guides/realtime
+- 현재 커뮤니티 클라이언트: `app/community/community-client.tsx` (탭 구조 있음)
+- 이벤트 탭: `app/community/event-tab.tsx`
+- DB 스키마: `supabase/schema.sql`
+
+---
+
+## 남은 보안 권장 항목 (다음 기회에)
+
+- 🟡 **RLS: `profiles.badge` UPDATE 차단** — Supabase 대시보드에서 DB 트리거 추가 필요
+- 🟡 **Rate limiting** — 글/댓글 분당 횟수 제한 (Upstash Redis 연동)
+- 🟡 **로그인 브루트포스 방지** — Supabase 대시보드 Rate Limits 강화 or Cloudflare Turnstile
 
 ---
 
@@ -45,15 +68,6 @@
 - `app/en/blog/[slug]/`, `app/ja/blog/[slug]/` 등 다국어 블로그 라우트
 - `public/sitemap.xml` — 자동 생성되므로 수동 수정 금지
 - 기존 포스트 29개 slug
-
----
-
-## 🔧 기술 리스크 (미리 알고 시작)
-
-1. **홈이 SSG → SSR 전환**: `force-dynamic` 추가로 Lighthouse 성능 점수 하락 가능
-   → 대응: 피드는 클라이언트 fetch로 분리해 초기 HTML은 정적으로 유지하는 방법 검토
-2. **middleware 패턴**: `/community/*` → `/` + `/post/[id]` 등으로 변경 필요
-3. **기존 홈 SEO**: 메타 교체 시 기존 홈 키워드 트래픽 일부 영향 가능 → description에 기존 핵심 키워드 포함으로 완화
 
 ---
 
@@ -74,17 +88,17 @@
 - 기존 /blog, /en/blog 등 SEO 경로는 절대 건드리지 않음
 - DB/Auth: **Supabase** (PostgreSQL + Auth)
 - 번역: **Gemini Flash** + translations 테이블 캐싱, 포커 용어 원어 유지
-- 어드민 포스팅: language 태그(ko=50, en/ja/zh=30), 내 언어만 노출
-- 커뮤니티 포스팅: 전체 통합 피드, 자국어 밝게 + 타국어 흐리게 + 번역 버튼
-- 비로그인: 글 읽기 가능, 좋아요/댓글 클릭 시 로그인 유도
+- 어드민 포스팅: language 태그, 내 언어만 노출
+- 커뮤니티 포스팅 → **실시간 채팅으로 전환 예정**
+- 비로그인: 채팅 읽기 가능, 메시지 전송은 로그인 필요
 - 이벤트 리워드: 기프트콘(3개→5천원/4개→1만원/5~6개→5만원)
 
 ## 🗒️ 참고 파일 위치
 
-- 현재 홈 컴포넌트: `app/home-client.tsx` (교체 대상)
-- 현재 커뮤니티: `app/community/` (홈으로 이동 대상)
+- 커뮤니티 클라이언트: `app/community/community-client.tsx`
+- 이벤트 탭: `app/community/event-tab.tsx`
+- 포스트카드: `app/community/post-card.tsx`
 - 이벤트 설정: `lib/event-config.ts`
-- CTA 컴포넌트: `components/community-cta.tsx` (링크 수정 대상)
 - 번역 API: `app/api/community/translate/route.ts`
 - DB 스키마: `supabase/schema.sql`
-- 디자인 레퍼런스: `C:\Users\하봄\Downloads\cursor-discussion-v1\` (★ 3개 파일)
+- 디자인 레퍼런스: `C:\Users\하봄\Downloads\cursor-discussion-v1\` (★ 8종)
