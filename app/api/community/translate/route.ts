@@ -4,6 +4,8 @@ import { createAdminClient } from "@/lib/supabase/admin";
 
 export const dynamic = "force-dynamic";
 
+const MAX_TEXT_LENGTH = 3000;
+
 const LANG_NAME: Record<string, string> = {
   ko: "Korean", en: "English", ja: "Japanese", zh: "Simplified Chinese",
   es: "Spanish", de: "German", pt: "Portuguese (Brazil)", ar: "Arabic",
@@ -16,6 +18,13 @@ Keep common poker terms in their widely-used form (e.g. 3-bet, pot odds, ICM, al
 Do not add explanations, notes, or quotation marks. Output ONLY the translated text.`;
 
 export async function POST(req: Request) {
+  // 로그인 필수 — 무인증 Gemini 비용 남용 방지
+  const supabaseAuth = await createClient();
+  const { data: { user } } = await supabaseAuth.auth.getUser();
+  if (!user) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
+
   let body: { postId?: string; target?: string; text?: string };
   try {
     body = await req.json();
@@ -28,12 +37,21 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "Missing target or text" }, { status: 400 });
   }
 
-  const targetName = LANG_NAME[target] ?? "English";
+  // target 화이트리스트 검증
+  if (!(target in LANG_NAME)) {
+    return NextResponse.json({ error: "Unsupported target language" }, { status: 400 });
+  }
 
-  // 1) 캐시 조회 (public read)
+  // 텍스트 길이 제한 (Gemini 비용·DoS 방지)
+  if (text.length > MAX_TEXT_LENGTH) {
+    return NextResponse.json({ error: "Text too long" }, { status: 400 });
+  }
+
+  const targetName = LANG_NAME[target];
+
+  // 1) 캐시 조회
   if (postId) {
-    const supabase = await createClient();
-    const { data: cached } = await supabase
+    const { data: cached } = await supabaseAuth
       .from("translations")
       .select("content")
       .eq("post_id", postId)

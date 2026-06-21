@@ -21,8 +21,8 @@ export async function createPost(formData: FormData) {
     redirect("/login");
   }
 
-  const title = String(formData.get("title") || "").trim();
-  const content = String(formData.get("content") || "").trim();
+  const title = String(formData.get("title") || "").trim().slice(0, 100);
+  const content = String(formData.get("content") || "").trim().slice(0, 5000);
 
   if (!content) {
     return { error: "내용을 입력해주세요." };
@@ -64,7 +64,7 @@ export async function addComment(postId: string, content: string) {
     return { error: "로그인이 필요합니다." };
   }
 
-  const text = content.trim();
+  const text = content.trim().slice(0, 1000);
   if (!text) {
     return { error: "내용을 입력해주세요." };
   }
@@ -150,7 +150,13 @@ export async function submitEventEntry(numbers: number[]) {
   const { data: { user } } = await supabase.auth.getUser();
 
   if (!user) return { error: "로그인이 필요합니다." };
-  if (numbers.length !== 6) return { error: "번호 6개를 선택해주세요." };
+  if (!Array.isArray(numbers) || numbers.length !== 6) return { error: "번호 6개를 선택해주세요." };
+
+  // 서버 측 번호 유효성 검증 (클라이언트 우회 방지)
+  const isValidNumbers =
+    numbers.every((n) => Number.isInteger(n) && n >= 1 && n <= 45) &&
+    new Set(numbers).size === 6;
+  if (!isValidNumbers) return { error: "유효하지 않은 번호입니다." };
 
   // 참여 조건 체크
   const { data: posts } = await supabase
@@ -172,11 +178,12 @@ export async function submitEventEntry(numbers: number[]) {
     };
   }
 
+  // is_eligible은 DB 기본값(false)으로 두고 서버 액션에서 직접 설정하지 않음
+  // 이미 위에서 서버 측 조건 검증(isEligible)을 통과한 경우에만 여기 도달
   const { error } = await supabase.from("event_entries").insert({
     user_id: user.id,
     event_id: CURRENT_EVENT_ID,
     numbers: numbers.sort((a, b) => a - b),
-    is_eligible: true,
   });
 
   if (error) {
