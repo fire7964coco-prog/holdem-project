@@ -5,7 +5,21 @@
 
 ---
 
-## 2026-06-21 (7차)
+## 2026-06-21 (8차)
+
+### 작업 내용
+- Google OAuth 소셜 로그인 추가: 로그인 페이지에 "Google로 계속하기" 버튼 추가
+- Supabase Authentication → Google Provider 활성화 + Client ID/Secret 설정
+- Google Cloud Console OAuth 앱 게시 (테스트 모드 → 프로덕션)
+- 뒤로가기 시 "처리 중..." 고착 버그 수정 (useEffect로 상태 초기화)
+- 카카오 로그인 버튼 제거 (요청)
+
+### 발행 현황
+- 총 포스트: 29개 (목표 50개까지 21개 남음)
+
+---
+
+
 
 ### 작업 내용
 - 유저 참여 UI 전환: 피드의 탐색(Explore) 탭 → 실시간 채팅(Chat) 탭으로 교체

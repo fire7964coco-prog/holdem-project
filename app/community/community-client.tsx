@@ -3,7 +3,7 @@
 import { useState, useTransition } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { signOut, createPost, toggleLike } from "./actions";
+import { signOut, createPost, toggleLike, updateNickname } from "./actions";
 import PostCard, {
   type FeedPost,
   Avatar,
@@ -372,6 +372,10 @@ export default function CommunityClient({
   const [draft, setDraft] = useState("");
   const [isPending, startTransition] = useTransition();
 
+  const [editingNickname, setEditingNickname] = useState(false);
+  const [nicknameInput, setNicknameInput] = useState("");
+  const [nicknameErr, setNicknameErr] = useState<string | null>(null);
+
   const badgeLabel: Record<string, string> = {
     winner: L.badge_winner,
     hot: L.badge_hot,
@@ -460,7 +464,49 @@ export default function CommunityClient({
               <div className="px-3 space-y-3">
                 <div className="flex flex-col items-center py-6 rounded-2xl" style={{ background: CARD, border: "1px solid rgba(212,175,55,0.12)" }}>
                   <Avatar post={{ type: "community", authorAvatar: currentUser.avatar_url, authorNickname: currentUser.nickname }} size={64} />
-                  <p className="font-bold text-base mt-3" style={{ color: "#f0e8c8" }}>{FLAG[currentUser.language] ?? "🌐"} {currentUser.nickname}</p>
+                  {editingNickname ? (
+                    <form
+                      action={async (fd) => {
+                        const res = await updateNickname(fd);
+                        if (res?.error) { setNicknameErr(res.error); }
+                        else { setEditingNickname(false); setNicknameErr(null); router.refresh(); }
+                      }}
+                      className="flex flex-col items-center gap-1.5 mt-3 w-full px-6"
+                    >
+                      <input
+                        name="nickname"
+                        defaultValue={currentUser.nickname}
+                        maxLength={20}
+                        autoFocus
+                        className="w-full px-3 py-2 rounded-xl text-sm text-center outline-none"
+                        style={{ background: "rgba(255,255,255,0.08)", color: "#f0e8c8", border: "1px solid rgba(212,175,55,0.3)" }}
+                        onChange={(e) => setNicknameInput(e.target.value)}
+                      />
+                      {nicknameErr && <p className="text-[11px]" style={{ color: "#f87171" }}>{nicknameErr}</p>}
+                      <div className="flex gap-2 w-full">
+                        <button
+                          type="button"
+                          onClick={() => { setEditingNickname(false); setNicknameErr(null); }}
+                          className="flex-1 py-1.5 rounded-lg text-xs font-semibold"
+                          style={{ background: "rgba(255,255,255,0.06)", color: "rgba(255,255,255,0.5)" }}
+                        >취소</button>
+                        <button
+                          type="submit"
+                          className="flex-[2] py-1.5 rounded-lg text-xs font-bold"
+                          style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: BG }}
+                        >저장</button>
+                      </div>
+                    </form>
+                  ) : (
+                    <div className="flex items-center gap-1.5 mt-3">
+                      <p className="font-bold text-base" style={{ color: "#f0e8c8" }}>{FLAG[currentUser.language] ?? "🌐"} {currentUser.nickname}</p>
+                      <button
+                        onClick={() => { setEditingNickname(true); setNicknameInput(currentUser.nickname); }}
+                        className="text-[13px] opacity-50 hover:opacity-100 transition-opacity"
+                        title="닉네임 변경"
+                      >✏️</button>
+                    </div>
+                  )}
                   {currentUser.badge && badgeLabel[currentUser.badge] && (
                     <span className="text-[11px] font-bold px-2.5 py-0.5 rounded-full mt-2" style={{ background: "rgba(212,175,55,0.12)", color: GOLD }}>
                       {badgeLabel[currentUser.badge]}

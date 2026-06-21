@@ -195,7 +195,27 @@ export async function submitEventEntry(numbers: number[]) {
   return { success: true };
 }
 
-export async function toggleLike(postId: string) {
+export async function updateNickname(formData: FormData) {
+  const supabase = await createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) return { error: "로그인이 필요합니다." };
+
+  const nickname = String(formData.get("nickname") || "").trim().slice(0, 20);
+  if (!nickname) return { error: "닉네임을 입력해주세요." };
+  if (nickname.length < 2) return { error: "닉네임은 2자 이상이어야 합니다." };
+
+  const { error } = await supabase
+    .from("profiles")
+    .update({ nickname })
+    .eq("id", user.id);
+
+  if (error) return { error: error.message };
+
+  revalidatePath("/");
+  return { success: true };
+}
+
+
   const supabase = await createClient();
   const {
     data: { user },
