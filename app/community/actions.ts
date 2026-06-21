@@ -3,6 +3,7 @@
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
+import { CURRENT_EVENT_ID, EVENT_CONDITION } from "@/lib/event-config";
 
 export async function signOut() {
   const supabase = await createClient();
@@ -104,6 +105,85 @@ export async function deleteComment(commentId: string, postId: string) {
   }
 
   revalidatePath(`/community/post/${postId}`);
+  revalidatePath("/community");
+  return { success: true };
+}
+
+// ── 이벤트 ─────────────────────────────────────────────────
+
+/** 현재 유저의 이벤트 참여 데이터 조회 */
+export async function getEventData() {
+  const supabase = await createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+
+  if (!user) {
+    return { myEntry: null, myPostCount: 0, myLikeCount: 0 };
+  }
+
+  const [entryRes, postsRes] = await Promise.all([
+    supabase
+      .from("event_entries")
+      .select("numbers")
+      .eq("user_id", user.id)
+      .eq("event_id", CURRENT_EVENT_ID)
+      .maybeSingle(),
+    supabase
+      .from("posts")
+      .select("like_count")
+      .eq("author_id", user.id)
+      .eq("type", "community"),
+  ]);
+
+  const myPostCount = postsRes.data?.length ?? 0;
+  const myLikeCount = postsRes.data?.reduce((s, p) => s + (p.like_count ?? 0), 0) ?? 0;
+
+  return {
+    myEntry: entryRes.data ?? null,
+    myPostCount,
+    myLikeCount,
+  };
+}
+
+/** 이벤트 번호 제출 */
+export async function submitEventEntry(numbers: number[]) {
+  const supabase = await createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+
+  if (!user) return { error: "로그인이 필요합니다." };
+  if (numbers.length !== 6) return { error: "번호 6개를 선택해주세요." };
+
+  // 참여 조건 체크
+  const { data: posts } = await supabase
+    .from("posts")
+    .select("like_count")
+    .eq("author_id", user.id)
+    .eq("type", "community");
+
+  const myPostCount = posts?.length ?? 0;
+  const myLikeCount = posts?.reduce((s, p) => s + (p.like_count ?? 0), 0) ?? 0;
+
+  const isEligible =
+    myPostCount >= EVENT_CONDITION.minPosts &&
+    myLikeCount >= EVENT_CONDITION.minLikes;
+
+  if (!isEligible) {
+    return {
+      error: `참여 조건 미충족 (글 ${EVENT_CONDITION.minPosts}개, 좋아요 ${EVENT_CONDITION.minLikes}개 필요)`,
+    };
+  }
+
+  const { error } = await supabase.from("event_entries").insert({
+    user_id: user.id,
+    event_id: CURRENT_EVENT_ID,
+    numbers: numbers.sort((a, b) => a - b),
+    is_eligible: true,
+  });
+
+  if (error) {
+    if (error.code === "23505") return { error: "이미 참여하셨습니다." };
+    return { error: error.message };
+  }
+
   revalidatePath("/community");
   return { success: true };
 }

@@ -13,6 +13,7 @@ import PostCard, {
   CARD,
   BORDER,
 } from "./post-card";
+import EventTab from "./event-tab";
 
 export type { FeedPost } from "./post-card";
 
@@ -237,16 +238,24 @@ function getTrending(posts: FeedPost[]) {
   return [...posts].sort((a, b) => b.likeCount - a.likeCount).slice(0, 4);
 }
 
+type EventData = {
+  myEntry: { numbers: number[] } | null;
+  myPostCount: number;
+  myLikeCount: number;
+} | null;
+
 export default function CommunityClient({
   currentUser,
   myLanguage,
   initialPosts,
   myPosts,
+  eventData,
 }: {
   currentUser: CurrentUser | null;
   myLanguage: string;
   initialPosts: FeedPost[];
   myPosts: FeedPost[];
+  eventData: EventData;
 }) {
   const router = useRouter();
   const L = getL(myLanguage);
@@ -353,7 +362,10 @@ export default function CommunityClient({
 
         {/* 이벤트 */}
         {tab === "event" && (
-          <EmptyState icon="🎰" title={L.eventComing} sub={L.eventComingSub} />
+          <EventTab
+            isLoggedIn={!!currentUser}
+            initialData={eventData}
+          />
         )}
 
         {/* 프로필 */}

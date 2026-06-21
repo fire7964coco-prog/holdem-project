@@ -1,5 +1,6 @@
 import { createClient } from "@/lib/supabase/server";
 import CommunityClient, { type FeedPost, type CurrentUser } from "./community-client";
+import { CURRENT_EVENT_ID } from "@/lib/event-config";
 
 export const dynamic = "force-dynamic";
 
@@ -76,12 +77,36 @@ export default async function CommunityPage() {
     myPosts = (mine ?? []).map(toFeedPost);
   }
 
+  // 이벤트 탭용: 내 참여 현황
+  let eventData: { myEntry: { numbers: number[] } | null; myPostCount: number; myLikeCount: number } | null = null;
+  if (user) {
+    const [entryRes, postsForEvent] = await Promise.all([
+      supabase
+        .from("event_entries")
+        .select("numbers")
+        .eq("user_id", user.id)
+        .eq("event_id", CURRENT_EVENT_ID)
+        .maybeSingle(),
+      supabase
+        .from("posts")
+        .select("like_count")
+        .eq("author_id", user.id)
+        .eq("type", "community"),
+    ]);
+    eventData = {
+      myEntry: entryRes.data ?? null,
+      myPostCount: postsForEvent.data?.length ?? 0,
+      myLikeCount: postsForEvent.data?.reduce((s, p) => s + (p.like_count ?? 0), 0) ?? 0,
+    };
+  }
+
   return (
     <CommunityClient
       currentUser={currentUser}
       myLanguage={myLanguage}
       initialPosts={posts}
       myPosts={myPosts}
+      eventData={eventData}
     />
   );
 }
