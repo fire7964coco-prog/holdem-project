@@ -3,6 +3,7 @@ import { createClient } from "@/lib/supabase/server";
 import CommunityClient, { type FeedPost, type CurrentUser } from "./community/community-client";
 import { CURRENT_EVENT_ID } from "@/lib/event-config";
 import { SITE } from "@/lib/site";
+import { POSTS } from "@/lib/posts";
 
 export const dynamic = "force-dynamic";
 
@@ -80,7 +81,33 @@ export default async function Page() {
     liked: likedIds.includes(p.id),
   });
 
-  const posts: FeedPost[] = (postsRaw ?? []).map(toFeedPost);
+  const communityPosts: FeedPost[] = (postsRaw ?? []).map(toFeedPost);
+
+  // 블로그 글 29편을 "티저 카드"로 피드에 자동 노출 → /blog/[slug] 로 연결.
+  // 어드민 전략 콘텐츠 역할을 하며 Strategy 필터에 포함된다.
+  const blogTeasers: FeedPost[] = POSTS.map((p) => ({
+    id: `blog:${p.slug}`,
+    type: "admin",
+    language: "ko",
+    title: p.title,
+    content: p.tldr || p.desc,
+    imageUrl: p.image ?? null,
+    likeCount: 0,
+    commentCount: 0,
+    createdAt: new Date(p.updated || p.date).toISOString(),
+    authorNickname: "HoldemMaster",
+    authorAvatar: null,
+    authorBadge: null,
+    liked: false,
+    blogSlug: p.slug,
+    category: p.category,
+    readTime: p.readTime,
+  }));
+
+  // 커뮤니티 글 + 블로그 티저 통합 후 최신순 정렬
+  const posts: FeedPost[] = [...communityPosts, ...blogTeasers].sort(
+    (a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
+  );
 
   // 프로필 탭용: 내가 쓴 글 전체
   let myPosts: FeedPost[] = [];

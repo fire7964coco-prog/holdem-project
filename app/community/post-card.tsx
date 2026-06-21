@@ -17,6 +17,12 @@ export type FeedPost = {
   authorAvatar: string | null;
   authorBadge: string | null;
   liked: boolean;
+  /** 블로그 티저 카드용 — 설정 시 /blog/[slug] 로 연결되는 SEO 글 티저로 렌더 */
+  blogSlug?: string | null;
+  /** 블로그 카테고리 (티저 배지) */
+  category?: string | null;
+  /** 블로그 읽기 시간 (예: "8분") */
+  readTime?: string | null;
 };
 
 export const GOLD = "#d4af37";
@@ -96,6 +102,7 @@ export default function PostCard({
   onLike: (id: string) => void;
   clickable?: boolean;
 }) {
+  const isBlogTeaser = !!post.blogSlug;
   const isMyLang = post.language === myLanguage;
   const [translated, setTranslated] = useState<string | null>(null);
   const [showOriginal, setShowOriginal] = useState(false);
@@ -133,9 +140,83 @@ export default function PostCard({
     }
   }
 
+  // 목업 기준: 어드민=골드 테두리, 유저=초록 테두리로 시각 구분
   const adminBorder = post.type === "admin"
     ? "1px solid rgba(212,175,55,0.25)"
-    : "1px solid rgba(255,255,255,0.06)";
+    : "1px solid rgba(52,211,153,0.18)";
+
+  // ── 블로그 티저 카드 (목업의 "⭐ 어드민 티저 카드 → /blog 연결") ──
+  if (isBlogTeaser) {
+    return (
+      <article
+        className="mx-3 lg:mx-0 mb-3 rounded-2xl overflow-hidden"
+        style={{ background: CARD, border: "1px solid rgba(212,175,55,0.25)" }}
+      >
+        <div
+          className="hidden lg:block"
+          style={{ height: 3, background: "linear-gradient(90deg,#d4af37,#f0d060,transparent)" }}
+        />
+        <Link href={`/blog/${post.blogSlug}`} className="block">
+          {/* 작성자 */}
+          <div className="flex items-center gap-2.5 px-4 lg:px-5 pt-3.5 lg:pt-4 pb-2">
+            <div className="w-8 h-8 lg:w-10 lg:h-10 flex-shrink-0">
+              <Avatar post={post} size={36} />
+            </div>
+            <div className="flex-1 min-w-0">
+              <div className="flex items-center gap-1.5 flex-wrap">
+                <p className="text-[13px] lg:text-sm font-bold" style={{ color: GOLD }}>
+                  HoldemMaster
+                </p>
+                {post.category && (
+                  <span
+                    className="text-[10px] px-2 py-0.5 rounded-full font-bold flex-shrink-0"
+                    style={{ background: "rgba(212,175,55,0.12)", color: GOLD, border: "1px solid rgba(212,175,55,0.3)" }}
+                  >
+                    {post.category}
+                  </span>
+                )}
+              </div>
+              <p className="text-[10px] mt-0.5" style={{ color: "rgba(255,255,255,0.3)" }}>
+                📖 {post.readTime ?? ""} · 블로그
+              </p>
+            </div>
+          </div>
+
+          {/* 제목 */}
+          <div className="px-4 lg:px-5 pb-1.5">
+            <p className="text-[15px] font-bold leading-snug" style={{ color: "#f0e8c8" }}>
+              {post.title}
+            </p>
+          </div>
+
+          {/* 요약 발췌 */}
+          <div className="px-4 lg:px-5 pb-3">
+            <p
+              className="text-[13.5px] lg:text-sm leading-relaxed line-clamp-3"
+              style={{ color: "rgba(240,232,200,0.7)" }}
+            >
+              {post.content}
+            </p>
+          </div>
+
+          {post.imageUrl && (
+            <img src={post.imageUrl} alt="" className="w-full object-cover" style={{ maxHeight: 340 }} />
+          )}
+        </Link>
+
+        {/* 전체 읽기 CTA */}
+        <div className="px-4 lg:px-5 py-3" style={{ borderTop: "1px solid rgba(255,255,255,0.05)" }}>
+          <Link
+            href={`/blog/${post.blogSlug}`}
+            className="inline-flex items-center gap-1.5 text-sm font-bold px-4 py-2 rounded-xl active:scale-95 transition-transform"
+            style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: BG }}
+          >
+            전체 읽기 →
+          </Link>
+        </div>
+      </article>
+    );
+  }
 
   return (
     <article

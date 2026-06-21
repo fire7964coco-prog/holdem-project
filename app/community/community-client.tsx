@@ -775,7 +775,7 @@ export default function CommunityClient({
                   <p className="text-sm font-bold mb-3" style={{ color: "#f0e8c8" }}>{L.trendingTitle}</p>
                   {trending.map((t, i) => (
                     <Link
-                      href={`/post/${t.id}`}
+                      href={t.blogSlug ? `/blog/${t.blogSlug}` : `/post/${t.id}`}
                       key={t.id}
                       className="flex items-start gap-3 mb-3 last:mb-0 hover:opacity-80 transition-opacity"
                     >
