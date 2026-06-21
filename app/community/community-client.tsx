@@ -368,6 +368,7 @@ export default function CommunityClient({
           <EventTab
             isLoggedIn={!!currentUser}
             initialData={eventData}
+            lang={pageLocale ?? myLanguage}
           />
         )}
 

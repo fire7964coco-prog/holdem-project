@@ -11,6 +11,7 @@
 - 홈 단순화: 홈(`/`)·로그인·글상세에서 옛 사이트 헤더/푸터 숨김 (`site-chrome.tsx` `isFeedAppRoute` + `MainContent` 래퍼) — 블로그 등 SEO 페이지는 헤더 유지
 - 블로그→피드 통합: 블로그 글 전체(`POSTS`)를 "티저 카드"로 홈 피드에 자동 노출, `전체 읽기 → /blog/[slug]` 연결 (목업 "어드민 티저 카드" 구현)
 - `FeedPost`에 `blogSlug/category/readTime` 추가, `post-card.tsx`에 티저 카드 렌더 분기, 유저 글 초록 테두리로 시각 구분
+- 다국어 피드 3개 신설: `/en` `/ja` `/zh` — 각 locale 번역 블로그 티저(`postsForLocale`) + 커뮤니티 글 혼합, `pageLocale`로 UI 언어 고정, 옛 헤더 숨김 처리
 - 디자인 레퍼런스: `cursor-discussion-v1/design-ref-*.tsx` 8종 기준
 
 ### 발행 현황

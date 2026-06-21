@@ -83,14 +83,143 @@ function NumberBall({
   );
 }
 
+// ── 이벤트 탭 다국어 라벨 ────────────────────────────────────
+const EVENT_LABELS = {
+  ko: {
+    eventBadge: "2026년 6월 이벤트",
+    eventTitle: "번호 6개 선택 — 기프트콘 증정!",
+    eventDesc: "1~45 중 6개를 선택하세요. 3개 이상 일치하면 기프트콘을 드립니다.",
+    match3: "3개 일치", match4: "4개 일치", match56: "5~6개 일치",
+    prize3: "5,000원", prize4: "10,000원", prize56: "50,000원",
+    loginRequired: "로그인 후 참여 가능",
+    loginDesc: "이벤트에 참여하려면 로그인하세요.",
+    loginBtn: "로그인 / 회원가입 →",
+    condTitle: "🎯 참여 조건",
+    condDesc: "아래 조건을 달성하면 번호를 선택할 수 있습니다.",
+    postLabel: (n: number) => `글 작성 ${n}개`,
+    likeLabel: (n: number) => `좋아요 ${n}개 받기`,
+    condHint: "피드에 글을 올리고 좋아요를 받으면 참여 가능합니다!",
+    resultTitle: (n: number) => `🎉 결과 발표 — ${n}개 일치!`,
+    winningLabel: "당첨 번호",
+    myNumLabel: "내가 선택한 번호",
+    noMatch: "아쉽네요. 다음 이벤트를 기대해주세요! 🍀",
+    doneTitle: "참여 완료!",
+    doneNumLabel: "내가 선택한 번호",
+    pending: "⏳ 결과 발표 대기 중",
+    pendingDesc: "당첨 번호 발표 후 여기서 확인할 수 있습니다.",
+    pickTitle: (picked: number) => `🎯 번호 선택 (${picked}/6)`,
+    reset: "초기화",
+    moreNeeded: (n: number) => `${n}개 더 선택`,
+    moreNeededBtn: (n: number) => `${n}개 더 선택하세요`,
+    submit: "🎰 번호 제출하기",
+    submitting: "제출 중...",
+  },
+  en: {
+    eventBadge: "June 2026 Event",
+    eventTitle: "Pick 6 Numbers — Win a Gift Voucher!",
+    eventDesc: "Choose 6 numbers from 1–45. Match 3 or more to win a gift voucher.",
+    match3: "3 matches", match4: "4 matches", match56: "5–6 matches",
+    prize3: "₩5,000", prize4: "₩10,000", prize56: "₩50,000",
+    loginRequired: "Login to Participate",
+    loginDesc: "Please log in to join the event.",
+    loginBtn: "Log In / Sign Up →",
+    condTitle: "🎯 Requirements",
+    condDesc: "Meet the conditions below to unlock number selection.",
+    postLabel: (n: number) => `Write ${n} posts`,
+    likeLabel: (n: number) => `Get ${n} likes`,
+    condHint: "Post on the feed and collect likes to unlock participation!",
+    resultTitle: (n: number) => `🎉 Result — ${n} match${n !== 1 ? "es" : ""}!`,
+    winningLabel: "Winning Numbers",
+    myNumLabel: "My Numbers",
+    noMatch: "Better luck next time! 🍀",
+    doneTitle: "Entry Submitted!",
+    doneNumLabel: "My Numbers",
+    pending: "⏳ Awaiting Results",
+    pendingDesc: "You can check here once the winning numbers are announced.",
+    pickTitle: (picked: number) => `🎯 Pick Numbers (${picked}/6)`,
+    reset: "Reset",
+    moreNeeded: (n: number) => `${n} more to go`,
+    moreNeededBtn: (n: number) => `Pick ${n} more number${n !== 1 ? "s" : ""}`,
+    submit: "🎰 Submit Numbers",
+    submitting: "Submitting...",
+  },
+  ja: {
+    eventBadge: "2026年6月イベント",
+    eventTitle: "6つの番号を選択 — ギフト券プレゼント!",
+    eventDesc: "1〜45の中から6つを選んでください。3つ以上一致でギフト券をプレゼント。",
+    match3: "3つ一致", match4: "4つ一致", match56: "5〜6つ一致",
+    prize3: "₩5,000", prize4: "₩10,000", prize56: "₩50,000",
+    loginRequired: "ログインして参加",
+    loginDesc: "イベントに参加するにはログインしてください。",
+    loginBtn: "ログイン / 会員登録 →",
+    condTitle: "🎯 参加条件",
+    condDesc: "以下の条件を達成すると番号を選択できます。",
+    postLabel: (n: number) => `投稿 ${n}件`,
+    likeLabel: (n: number) => `いいね ${n}件獲得`,
+    condHint: "フィードに投稿していいねをもらうと参加できます！",
+    resultTitle: (n: number) => `🎉 結果発表 — ${n}つ一致!`,
+    winningLabel: "当選番号",
+    myNumLabel: "選択した番号",
+    noMatch: "残念でした。次のイベントをお楽しみに！ 🍀",
+    doneTitle: "参加完了!",
+    doneNumLabel: "選択した番号",
+    pending: "⏳ 結果発表待ち",
+    pendingDesc: "当選番号発表後にここで確認できます。",
+    pickTitle: (picked: number) => `🎯 番号選択 (${picked}/6)`,
+    reset: "リセット",
+    moreNeeded: (n: number) => `あと${n}つ`,
+    moreNeededBtn: (n: number) => `あと${n}つ選んでください`,
+    submit: "🎰 番号を提出する",
+    submitting: "送信中...",
+  },
+  zh: {
+    eventBadge: "2026年6月活动",
+    eventTitle: "选择6个号码 — 赢取礼品券!",
+    eventDesc: "从1~45中选择6个号码，匹配3个或以上即可获得礼品券。",
+    match3: "匹配3个", match4: "匹配4个", match56: "匹配5~6个",
+    prize3: "₩5,000", prize4: "₩10,000", prize56: "₩50,000",
+    loginRequired: "登录后参与",
+    loginDesc: "请登录以参加活动。",
+    loginBtn: "登录 / 注册 →",
+    condTitle: "🎯 参与条件",
+    condDesc: "达成以下条件即可选择号码。",
+    postLabel: (n: number) => `发帖 ${n}篇`,
+    likeLabel: (n: number) => `获得 ${n}个点赞`,
+    condHint: "在动态发帖并获得点赞后即可参与！",
+    resultTitle: (n: number) => `🎉 结果公布 — 匹配${n}个!`,
+    winningLabel: "中奖号码",
+    myNumLabel: "我选择的号码",
+    noMatch: "遗憾！期待下次活动！ 🍀",
+    doneTitle: "参与完成!",
+    doneNumLabel: "我选择的号码",
+    pending: "⏳ 等待结果公布",
+    pendingDesc: "中奖号码公布后可在此查看。",
+    pickTitle: (picked: number) => `🎯 选择号码 (${picked}/6)`,
+    reset: "重置",
+    moreNeeded: (n: number) => `还需${n}个`,
+    moreNeededBtn: (n: number) => `请再选${n}个号码`,
+    submit: "🎰 提交号码",
+    submitting: "提交中...",
+  },
+} as const;
+
+type EventLangKey = keyof typeof EVENT_LABELS;
+
+function getEL(lang: string) {
+  return EVENT_LABELS[(lang as EventLangKey) in EVENT_LABELS ? (lang as EventLangKey) : "en"];
+}
+
 export default function EventTab({
   isLoggedIn,
   initialData,
+  lang = "ko",
 }: {
   isLoggedIn: boolean;
   initialData: EventData | null;
+  lang?: string;
 }) {
   const router = useRouter();
+  const EL = getEL(lang);
   const [data, setData] = useState<EventData | null>(initialData);
   const [picked, setPicked] = useState<number[]>([]);
   const [isPending, startTransition] = useTransition();
@@ -167,20 +296,20 @@ export default function EventTab({
           <div className="flex items-center gap-2 mb-2">
             <span className="text-xl">🎰</span>
             <span className="text-xs font-black px-2 py-0.5 rounded-full" style={{ background: "rgba(212,175,55,0.15)", color: GOLD }}>
-              2026년 6월 이벤트
+              {EL.eventBadge}
             </span>
           </div>
           <h2 className="text-base font-black mb-1" style={{ color: "#f0e8c8" }}>
-            번호 6개 선택 — 기프트콘 증정!
+            {EL.eventTitle}
           </h2>
           <p className="text-xs leading-relaxed mb-3" style={{ color: "rgba(255,255,255,0.45)" }}>
-            1~45 중 6개를 선택하세요. 3개 이상 일치하면 기프트콘을 드립니다.
+            {EL.eventDesc}
           </p>
           <div className="grid grid-cols-3 gap-2 text-center text-xs">
             {[
-              { match: "3개 일치", prize: "5,000원" },
-              { match: "4개 일치", prize: "10,000원" },
-              { match: "5~6개 일치", prize: "50,000원" },
+              { match: EL.match3, prize: EL.prize3 },
+              { match: EL.match4, prize: EL.prize4 },
+              { match: EL.match56, prize: EL.prize56 },
             ].map((r) => (
               <div
                 key={r.match}
@@ -202,16 +331,16 @@ export default function EventTab({
           style={{ background: CARD, border: `1px solid ${BORDER}` }}
         >
           <div className="text-4xl mb-3">🔒</div>
-          <p className="text-sm font-bold mb-1" style={{ color: "#f0e8c8" }}>로그인 후 참여 가능</p>
+          <p className="text-sm font-bold mb-1" style={{ color: "#f0e8c8" }}>{EL.loginRequired}</p>
           <p className="text-xs mb-4" style={{ color: "rgba(255,255,255,0.4)" }}>
-            이벤트에 참여하려면 로그인하세요.
+            {EL.loginDesc}
           </p>
           <Link
-            href="/community/login"
+            href="/login"
             className="inline-block px-5 py-2.5 rounded-xl text-sm font-bold"
             style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: BG }}
           >
-            로그인 / 회원가입 →
+            {EL.loginBtn}
           </Link>
         </div>
       )}
@@ -222,24 +351,24 @@ export default function EventTab({
           className="rounded-2xl p-5"
           style={{ background: CARD, border: `1px solid ${BORDER}` }}
         >
-          <p className="text-sm font-bold mb-1" style={{ color: "#f0e8c8" }}>🎯 참여 조건</p>
+          <p className="text-sm font-bold mb-1" style={{ color: "#f0e8c8" }}>{EL.condTitle}</p>
           <p className="text-xs mb-4" style={{ color: "rgba(255,255,255,0.4)" }}>
-            아래 조건을 달성하면 번호를 선택할 수 있습니다.
+            {EL.condDesc}
           </p>
           <div className="space-y-3">
             <ProgressBar
               value={myPostCount}
               max={EVENT_CONDITION.minPosts}
-              label={`글 작성 ${EVENT_CONDITION.minPosts}개`}
+              label={EL.postLabel(EVENT_CONDITION.minPosts)}
             />
             <ProgressBar
               value={myLikeCount}
               max={EVENT_CONDITION.minLikes}
-              label={`좋아요 ${EVENT_CONDITION.minLikes}개 받기`}
+              label={EL.likeLabel(EVENT_CONDITION.minLikes)}
             />
           </div>
           <p className="text-xs mt-4 text-center" style={{ color: "rgba(255,255,255,0.3)" }}>
-            피드에 글을 올리고 좋아요를 받으면 참여 가능합니다!
+            {EL.condHint}
           </p>
         </div>
       )}
@@ -254,7 +383,7 @@ export default function EventTab({
             /* 결과 발표 후 */
             <>
               <p className="text-sm font-bold mb-3" style={{ color: "#f0e8c8" }}>
-                🎉 결과 발표 — {matchCount}개 일치!
+                {EL.resultTitle(matchCount)}
                 {prize && (
                   <span
                     className="ml-2 text-xs px-2 py-0.5 rounded-full font-black"
@@ -265,16 +394,14 @@ export default function EventTab({
                 )}
               </p>
 
-              {/* 당첨 번호 */}
-              <p className="text-xs mb-2" style={{ color: GOLD }}>당첨 번호</p>
+              <p className="text-xs mb-2" style={{ color: GOLD }}>{EL.winningLabel}</p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {WINNING_NUMBERS.map((n) => (
                   <NumberBall key={n} n={n} selected={myEntry.numbers.includes(n)} winning disabled />
                 ))}
               </div>
 
-              {/* 내 번호 */}
-              <p className="text-xs mb-2" style={{ color: "rgba(255,255,255,0.5)" }}>내가 선택한 번호</p>
+              <p className="text-xs mb-2" style={{ color: "rgba(255,255,255,0.5)" }}>{EL.myNumLabel}</p>
               <div className="flex flex-wrap gap-2">
                 {myEntry.numbers.map((n) => (
                   <NumberBall key={n} n={n} selected winning={WINNING_NUMBERS!.includes(n)} disabled />
@@ -283,7 +410,7 @@ export default function EventTab({
 
               {matchCount < 3 && (
                 <p className="text-xs mt-4 text-center" style={{ color: "rgba(255,255,255,0.3)" }}>
-                  아쉽네요. 다음 이벤트를 기대해주세요! 🍀
+                  {EL.noMatch}
                 </p>
               )}
             </>
@@ -292,10 +419,10 @@ export default function EventTab({
             <>
               <div className="flex items-center gap-2 mb-3">
                 <span className="text-lg">✅</span>
-                <p className="text-sm font-bold" style={{ color: "#f0e8c8" }}>참여 완료!</p>
+                <p className="text-sm font-bold" style={{ color: "#f0e8c8" }}>{EL.doneTitle}</p>
               </div>
               <p className="text-xs mb-3" style={{ color: "rgba(255,255,255,0.4)" }}>
-                내가 선택한 번호
+                {EL.doneNumLabel}
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {myEntry.numbers.map((n) => (
@@ -306,9 +433,9 @@ export default function EventTab({
                 className="rounded-xl px-4 py-3 text-center"
                 style={{ background: "rgba(212,175,55,0.06)", border: "1px solid rgba(212,175,55,0.15)" }}
               >
-                <p className="text-xs font-bold" style={{ color: GOLD }}>⏳ 결과 발표 대기 중</p>
+                <p className="text-xs font-bold" style={{ color: GOLD }}>{EL.pending}</p>
                 <p className="text-xs mt-1" style={{ color: "rgba(255,255,255,0.3)" }}>
-                  당첨 번호 발표 후 여기서 확인할 수 있습니다.
+                  {EL.pendingDesc}
                 </p>
               </div>
             </>
@@ -324,7 +451,7 @@ export default function EventTab({
         >
           <div className="flex items-center justify-between mb-4">
             <p className="text-sm font-bold" style={{ color: "#f0e8c8" }}>
-              🎯 번호 선택 ({picked.length}/6)
+              {EL.pickTitle(picked.length)}
             </p>
             {picked.length > 0 && (
               <button
@@ -332,7 +459,7 @@ export default function EventTab({
                 className="text-xs px-2.5 py-1 rounded-full"
                 style={{ background: "rgba(255,255,255,0.06)", color: "rgba(255,255,255,0.4)" }}
               >
-                초기화
+                {EL.reset}
               </button>
             )}
           </div>
@@ -366,7 +493,7 @@ export default function EventTab({
                   </span>
                 ))}
               <span className="text-xs ml-auto" style={{ color: "rgba(255,255,255,0.3)" }}>
-                {6 - picked.length}개 더 선택
+                {EL.moreNeeded(6 - picked.length)}
               </span>
             </div>
           )}
@@ -386,7 +513,7 @@ export default function EventTab({
               color: picked.length === 6 ? BG : "rgba(255,255,255,0.3)",
             }}
           >
-            {isPending ? "제출 중..." : picked.length === 6 ? "🎰 번호 제출하기" : `${6 - picked.length}개 더 선택하세요`}
+            {isPending ? EL.submitting : picked.length === 6 ? EL.submit : EL.moreNeededBtn(6 - picked.length)}
           </button>
         </div>
       )}
