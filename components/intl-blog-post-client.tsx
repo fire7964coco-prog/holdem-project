@@ -11,6 +11,7 @@ import { SITE } from "@/lib/site";
 import { POST_LABELS, dirForLocale, type SecondaryLocale } from "@/lib/intl";
 import { postsForLocale } from "@/lib/intl-posts";
 import { renderMarkdown, extractHeadings } from "@/app/blog/[slug]/blog-post-client";
+import CommunityCTA from "@/components/community-cta";
 
 function IntlTocList({ headings }: { headings: { id: string; text: string; level: number }[] }) {
   let h2Count = 0;
@@ -263,6 +264,9 @@ export default function IntlBlogPostClient({
                 </button>
               </div>
             </div>
+
+            {/* Community CTA */}
+            <CommunityCTA locale={locale as Parameters<typeof CommunityCTA>[0]["locale"]} />
 
             <div className="mt-10 text-center">
               <Link href={base} className="inline-flex items-center gap-2 text-primary font-semibold hover:text-yellow-400 transition-colors">

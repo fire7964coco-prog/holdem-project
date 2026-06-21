@@ -24,21 +24,217 @@ export type CurrentUser = {
   badge: string | null;
 };
 
-const BADGE_LABEL: Record<string, string> = {
-  winner: "🏆 우승자",
-  hot: "🔥 인기 유저",
-  top: "⭐ TOP 유저",
-  participant: "🎟️ 이벤트 참여",
-};
+// ── 다국어 UI 라벨 ──────────────────────────────────────────
+const LABELS = {
+  ko: {
+    logout: "로그아웃",
+    login: "로그인",
+    loginArrow: "로그인 →",
+    loginSignup: "로그인 / 회원가입 →",
+    feed: "피드",
+    explore: "탐색",
+    event: "이벤트",
+    profile: "프로필",
+    trendingExplore: "트렌딩/탐색",
+    writePost: "✏️ 글 쓰기",
+    searchPlaceholder: "전략, 핸드, 플레이어 검색...",
+    writePlaceholder: "핸드, 전략, 결과를 공유해보세요...",
+    postButton: "게시",
+    posting: "게시 중...",
+    postNow: "게시하기",
+    writeModalTitle: "새 글 작성",
+    draftPlaceholder: "무슨 생각을 하고 계신가요?",
+    cancel: "취소",
+    multiLangBannerFull: "모든 언어 포스팅을 표시합니다. 타언어 글에는 번역 버튼이 있습니다.",
+    strategyPosts: "✦ 전략 포스팅",
+    communityTab: "🌏 커뮤니티",
+    communityPostsLong: "🌏 커뮤니티 글",
+    emptyFeedTitle: "아직 글이 없습니다",
+    emptyFeedSub: "첫 번째 글을 남겨보세요!",
+    emptyStrategyTitle: "전략 글이 없습니다",
+    emptyCommunityTitle: "커뮤니티 글이 없습니다",
+    comingSoon: "곧 추가됩니다",
+    eventComing: "이벤트 준비 중",
+    eventComingSub: "로또형 이벤트가 곧 열립니다",
+    loginRequired: "로그인이 필요합니다",
+    loginRequiredSub: "내 글과 활동 내역을 확인하려면 로그인하세요",
+    myPostsStat: "내 글",
+    likesStat: "받은 좋아요",
+    commentsStat: "댓글",
+    myPostsSection: "내가 쓴 글",
+    noPostsTitle: "아직 작성한 글이 없습니다",
+    noPostsSub: "첫 글을 남겨보세요!",
+    trendingTitle: "🔥 이번 주 인기글",
+    eventBadge: "🎰 이벤트 · 준비 중",
+    eventTitle: "번호 6개 선택\n기프트콘 증정!",
+    eventDesc: "3개 일치 → 5천원 · 4개 → 1만원\n5~6개 → 5만원",
+    eventButton: "이벤트 보기 →",
+    communityLang: "🌐 커뮤니티 언어",
+    badge_winner: "🏆 우승자",
+    badge_hot: "🔥 인기 유저",
+    badge_top: "⭐ TOP 유저",
+    badge_participant: "🎟️ 이벤트 참여",
+  },
+  en: {
+    logout: "Logout",
+    login: "Log in",
+    loginArrow: "Log in →",
+    loginSignup: "Log in / Sign up →",
+    feed: "Feed",
+    explore: "Explore",
+    event: "Events",
+    profile: "Profile",
+    trendingExplore: "Trending",
+    writePost: "✏️ Write Post",
+    searchPlaceholder: "Search strategy, hands, players...",
+    writePlaceholder: "Share your hand, strategy, or results...",
+    postButton: "Post",
+    posting: "Posting...",
+    postNow: "Post",
+    writeModalTitle: "New Post",
+    draftPlaceholder: "What's on your mind?",
+    cancel: "Cancel",
+    multiLangBannerFull: "Showing posts in all languages. Posts in other languages have a Translate button.",
+    strategyPosts: "✦ Strategy Posts",
+    communityTab: "🌏 Community",
+    communityPostsLong: "🌏 Community Posts",
+    emptyFeedTitle: "No posts yet",
+    emptyFeedSub: "Be the first to post!",
+    emptyStrategyTitle: "No strategy posts yet",
+    emptyCommunityTitle: "No community posts yet",
+    comingSoon: "Coming soon",
+    eventComing: "Events Coming Soon",
+    eventComingSub: "Lotto-style events opening soon",
+    loginRequired: "Login Required",
+    loginRequiredSub: "Log in to see your posts and activity",
+    myPostsStat: "Posts",
+    likesStat: "Likes",
+    commentsStat: "Comments",
+    myPostsSection: "My Posts",
+    noPostsTitle: "No posts yet",
+    noPostsSub: "Write your first post!",
+    trendingTitle: "🔥 Trending This Week",
+    eventBadge: "🎰 Event · Coming Soon",
+    eventTitle: "Pick 6 Numbers\nWin Gift Cards!",
+    eventDesc: "3 match → ₩5,000 · 4 match → ₩10,000\n5–6 match → ₩50,000",
+    eventButton: "View Event →",
+    communityLang: "🌐 Community Languages",
+    badge_winner: "🏆 Winner",
+    badge_hot: "🔥 Popular",
+    badge_top: "⭐ Top User",
+    badge_participant: "🎟️ Event Participant",
+  },
+  ja: {
+    logout: "ログアウト",
+    login: "ログイン",
+    loginArrow: "ログイン →",
+    loginSignup: "ログイン / 登録 →",
+    feed: "フィード",
+    explore: "探索",
+    event: "イベント",
+    profile: "プロフィール",
+    trendingExplore: "トレンド",
+    writePost: "✏️ 投稿する",
+    searchPlaceholder: "戦略、ハンド、プレイヤーを検索...",
+    writePlaceholder: "ハンド、戦略、結果をシェアしよう...",
+    postButton: "投稿",
+    posting: "投稿中...",
+    postNow: "投稿する",
+    writeModalTitle: "新規投稿",
+    draftPlaceholder: "何を考えていますか？",
+    cancel: "キャンセル",
+    multiLangBannerFull: "全言語の投稿を表示しています。他言語の投稿には翻訳ボタンがあります。",
+    strategyPosts: "✦ 戦略投稿",
+    communityTab: "🌏 コミュニティ",
+    communityPostsLong: "🌏 コミュニティ投稿",
+    emptyFeedTitle: "まだ投稿がありません",
+    emptyFeedSub: "最初の投稿をしてみよう！",
+    emptyStrategyTitle: "戦略投稿がありません",
+    emptyCommunityTitle: "コミュニティ投稿がありません",
+    comingSoon: "近日公開",
+    eventComing: "イベント準備中",
+    eventComingSub: "ロト形式のイベントが近日開催",
+    loginRequired: "ログインが必要です",
+    loginRequiredSub: "投稿と活動履歴を確認するにはログインしてください",
+    myPostsStat: "投稿",
+    likesStat: "いいね",
+    commentsStat: "コメント",
+    myPostsSection: "自分の投稿",
+    noPostsTitle: "まだ投稿がありません",
+    noPostsSub: "最初の投稿をしよう！",
+    trendingTitle: "🔥 今週のトレンド",
+    eventBadge: "🎰 イベント · 準備中",
+    eventTitle: "6つの数字を選んで\nギフト券をゲット！",
+    eventDesc: "3一致 → ₩5,000 · 4一致 → ₩10,000\n5〜6一致 → ₩50,000",
+    eventButton: "イベントを見る →",
+    communityLang: "🌐 コミュニティ言語",
+    badge_winner: "🏆 優勝者",
+    badge_hot: "🔥 人気ユーザー",
+    badge_top: "⭐ TOPユーザー",
+    badge_participant: "🎟️ イベント参加",
+  },
+  zh: {
+    logout: "退出登录",
+    login: "登录",
+    loginArrow: "登录 →",
+    loginSignup: "登录 / 注册 →",
+    feed: "动态",
+    explore: "探索",
+    event: "活动",
+    profile: "我的",
+    trendingExplore: "热门",
+    writePost: "✏️ 发帖",
+    searchPlaceholder: "搜索策略、手牌、玩家...",
+    writePlaceholder: "分享你的手牌、策略或战果...",
+    postButton: "发布",
+    posting: "发布中...",
+    postNow: "发布",
+    writeModalTitle: "新帖子",
+    draftPlaceholder: "你在想什么？",
+    cancel: "取消",
+    multiLangBannerFull: "显示所有语言的帖子。其他语言的帖子有翻译按钮。",
+    strategyPosts: "✦ 策略帖子",
+    communityTab: "🌏 社区",
+    communityPostsLong: "🌏 社区帖子",
+    emptyFeedTitle: "暂无帖子",
+    emptyFeedSub: "来发第一条帖子吧！",
+    emptyStrategyTitle: "暂无策略帖子",
+    emptyCommunityTitle: "暂无社区帖子",
+    comingSoon: "即将推出",
+    eventComing: "活动准备中",
+    eventComingSub: "彩票式活动即将开启",
+    loginRequired: "需要登录",
+    loginRequiredSub: "登录以查看你的帖子和活动记录",
+    myPostsStat: "帖子",
+    likesStat: "获赞",
+    commentsStat: "评论",
+    myPostsSection: "我的帖子",
+    noPostsTitle: "暂无帖子",
+    noPostsSub: "写下第一条帖子！",
+    trendingTitle: "🔥 本周热帖",
+    eventBadge: "🎰 活动 · 准备中",
+    eventTitle: "选6个数字\n赢取礼品券！",
+    eventDesc: "3个匹配 → ₩5,000 · 4个 → ₩10,000\n5~6个 → ₩50,000",
+    eventButton: "查看活动 →",
+    communityLang: "🌐 社区语言",
+    badge_winner: "🏆 冠军",
+    badge_hot: "🔥 人气用户",
+    badge_top: "⭐ TOP用户",
+    badge_participant: "🎟️ 活动参与者",
+  },
+} as const;
+
+type LangKey = keyof typeof LABELS;
+
+function getL(lang: string) {
+  return LABELS[(lang as LangKey) in LABELS ? (lang as LangKey) : "en"];
+}
 
 const FILTER_PILLS = ["All", "Strategy", "Community"] as const;
-type FilterKey = typeof FILTER_PILLS[number];
+type FilterKey = (typeof FILTER_PILLS)[number];
 
-// ── 트렌딩: 실제 posts에서 상위 4개 도출 ──────────────────────
 function getTrending(posts: FeedPost[]) {
-  return [...posts]
-    .sort((a, b) => b.likeCount - a.likeCount)
-    .slice(0, 4);
+  return [...posts].sort((a, b) => b.likeCount - a.likeCount).slice(0, 4);
 }
 
 export default function CommunityClient({
@@ -53,6 +249,8 @@ export default function CommunityClient({
   myPosts: FeedPost[];
 }) {
   const router = useRouter();
+  const L = getL(myLanguage);
+
   const [tab, setTab] = useState<"home" | "explore" | "event" | "profile">("home");
   const [exploreSub, setExploreSub] = useState<"strategy" | "community">("strategy");
   const [feedFilter, setFeedFilter] = useState<FilterKey>("All");
@@ -60,6 +258,13 @@ export default function CommunityClient({
   const [writeOpen, setWriteOpen] = useState(false);
   const [draft, setDraft] = useState("");
   const [isPending, startTransition] = useTransition();
+
+  const badgeLabel: Record<string, string> = {
+    winner: L.badge_winner,
+    hot: L.badge_hot,
+    top: L.badge_top,
+    participant: L.badge_participant,
+  };
 
   function onLike(postId: string) {
     if (!currentUser) { router.push("/community/login"); return; }
@@ -99,14 +304,14 @@ export default function CommunityClient({
   const totalLikes = myPosts.reduce((s, p) => s + p.likeCount, 0);
   const totalComments = myPosts.reduce((s, p) => s + p.commentCount, 0);
 
-  // ── 공용: 탭별 컨텐츠 ──────────────────────────────────────
+  // ── 탭별 컨텐츠 ────────────────────────────────────────────
   function TabContent({ desktop = false }: { desktop?: boolean }) {
     return (
       <>
         {/* 피드 */}
         {tab === "home" && (
           filteredPosts.length === 0
-            ? <EmptyState icon="🃏" title="아직 글이 없습니다" sub="첫 번째 글을 남겨보세요!" />
+            ? <EmptyState icon="🃏" title={L.emptyFeedTitle} sub={L.emptyFeedSub} />
             : filteredPosts.map((p) => (
                 <PostCard key={p.id} post={p} myLanguage={myLanguage} onLike={onLike} />
               ))
@@ -128,13 +333,17 @@ export default function CommunityClient({
                         : { background: "rgba(212,175,55,0.08)", color: "rgba(212,175,55,0.55)", border: "1px solid rgba(212,175,55,0.15)" }
                     }
                   >
-                    {s === "strategy" ? "✦ 전략 포스팅" : "🌏 커뮤니티"}
+                    {s === "strategy" ? L.strategyPosts : L.communityTab}
                   </button>
                 ))}
               </div>
             )}
             {explorePosts.length === 0
-              ? <EmptyState icon={exploreSub === "strategy" ? "📚" : "🌏"} title={exploreSub === "strategy" ? "전략 글이 없습니다" : "커뮤니티 글이 없습니다"} sub="곧 추가됩니다" />
+              ? <EmptyState
+                  icon={exploreSub === "strategy" ? "📚" : "🌏"}
+                  title={exploreSub === "strategy" ? L.emptyStrategyTitle : L.emptyCommunityTitle}
+                  sub={L.comingSoon}
+                />
               : explorePosts.map((p) => (
                   <PostCard key={p.id} post={p} myLanguage={myLanguage} onLike={onLike} />
                 ))
@@ -144,7 +353,7 @@ export default function CommunityClient({
 
         {/* 이벤트 */}
         {tab === "event" && (
-          <EmptyState icon="🎰" title="이벤트 준비 중" sub="로또형 이벤트가 곧 열립니다" />
+          <EmptyState icon="🎰" title={L.eventComing} sub={L.eventComingSub} />
         )}
 
         {/* 프로필 */}
@@ -154,10 +363,10 @@ export default function CommunityClient({
               <div className="px-4">
                 <div className="rounded-2xl p-6 text-center" style={{ background: CARD, border: "1px solid rgba(212,175,55,0.2)" }}>
                   <div className="text-3xl mb-3">👤</div>
-                  <p className="text-sm font-bold mb-1" style={{ color: "#f0e8c8" }}>로그인이 필요합니다</p>
-                  <p className="text-xs mb-4" style={{ color: "rgba(255,255,255,0.4)" }}>내 글과 활동 내역을 확인하려면 로그인하세요</p>
+                  <p className="text-sm font-bold mb-1" style={{ color: "#f0e8c8" }}>{L.loginRequired}</p>
+                  <p className="text-xs mb-4" style={{ color: "rgba(255,255,255,0.4)" }}>{L.loginRequiredSub}</p>
                   <Link href="/community/login" className="inline-block px-5 py-2.5 rounded-xl text-sm font-bold" style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: BG }}>
-                    로그인 / 회원가입 →
+                    {L.loginSignup}
                   </Link>
                 </div>
               </div>
@@ -166,13 +375,17 @@ export default function CommunityClient({
                 <div className="flex flex-col items-center py-6 rounded-2xl" style={{ background: CARD, border: "1px solid rgba(212,175,55,0.12)" }}>
                   <Avatar post={{ type: "community", authorAvatar: currentUser.avatar_url, authorNickname: currentUser.nickname }} size={64} />
                   <p className="font-bold text-base mt-3" style={{ color: "#f0e8c8" }}>{FLAG[currentUser.language] ?? "🌐"} {currentUser.nickname}</p>
-                  {currentUser.badge && BADGE_LABEL[currentUser.badge] && (
+                  {currentUser.badge && badgeLabel[currentUser.badge] && (
                     <span className="text-[11px] font-bold px-2.5 py-0.5 rounded-full mt-2" style={{ background: "rgba(212,175,55,0.12)", color: GOLD }}>
-                      {BADGE_LABEL[currentUser.badge]}
+                      {badgeLabel[currentUser.badge]}
                     </span>
                   )}
                   <div className="flex gap-8 mt-4">
-                    {[{ label: "내 글", val: myPosts.length }, { label: "받은 좋아요", val: totalLikes }, { label: "댓글", val: totalComments }].map((s) => (
+                    {[
+                      { label: L.myPostsStat, val: myPosts.length },
+                      { label: L.likesStat, val: totalLikes },
+                      { label: L.commentsStat, val: totalComments },
+                    ].map((s) => (
                       <div key={s.label} className="text-center">
                         <p className="text-base font-bold" style={{ color: "#f0e8c8" }}>{s.val}</p>
                         <p className="text-[10px]" style={{ color: "rgba(255,255,255,0.4)" }}>{s.label}</p>
@@ -180,9 +393,9 @@ export default function CommunityClient({
                     ))}
                   </div>
                 </div>
-                <p className="text-xs font-bold px-1 pt-1" style={{ color: "rgba(212,175,55,0.7)" }}>내가 쓴 글</p>
+                <p className="text-xs font-bold px-1 pt-1" style={{ color: "rgba(212,175,55,0.7)" }}>{L.myPostsSection}</p>
                 {myPosts.length === 0
-                  ? <EmptyState icon="✍️" title="아직 작성한 글이 없습니다" sub="첫 글을 남겨보세요!" />
+                  ? <EmptyState icon="✍️" title={L.noPostsTitle} sub={L.noPostsSub} />
                   : myPosts.map((p) => (
                       <div key={p.id} className="-mx-3">
                         <PostCard post={p} myLanguage={myLanguage} onLike={onLike} />
@@ -196,7 +409,7 @@ export default function CommunityClient({
     );
   }
 
-  // ── 공용: 글쓰기 모달 ──────────────────────────────────────
+  // ── 글쓰기 모달 ────────────────────────────────────────────
   const WriteModal = writeOpen && (
     <div
       className="fixed inset-0 z-50 flex items-end lg:items-center justify-center"
@@ -208,11 +421,11 @@ export default function CommunityClient({
         style={{ background: CARD, border: "1px solid rgba(212,175,55,0.2)" }}
         onClick={(e) => e.stopPropagation()}
       >
-        <p className="text-sm font-bold mb-3" style={{ color: "#f0e8c8" }}>새 글 작성</p>
+        <p className="text-sm font-bold mb-3" style={{ color: "#f0e8c8" }}>{L.writeModalTitle}</p>
         <textarea
           value={draft}
           onChange={(e) => setDraft(e.target.value)}
-          placeholder="무슨 생각을 하고 계신가요?"
+          placeholder={L.draftPlaceholder}
           rows={4}
           className="w-full px-3 py-2.5 rounded-xl text-sm outline-none resize-none"
           style={{ background: "rgba(255,255,255,0.06)", color: "#f0e8c8", border: "1px solid rgba(255,255,255,0.1)" }}
@@ -222,13 +435,13 @@ export default function CommunityClient({
             onClick={() => setWriteOpen(false)}
             className="flex-1 py-2.5 rounded-xl text-sm font-semibold"
             style={{ background: "rgba(255,255,255,0.06)", color: "rgba(255,255,255,0.5)" }}
-          >취소</button>
+          >{L.cancel}</button>
           <button
             onClick={onSubmitPost}
             disabled={isPending || !draft.trim()}
             className="flex-[2] py-2.5 rounded-xl text-sm font-bold disabled:opacity-50"
             style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: BG }}
-          >{isPending ? "게시 중..." : "게시하기"}</button>
+          >{isPending ? L.posting : L.postNow}</button>
         </div>
       </div>
     </div>
@@ -259,13 +472,13 @@ export default function CommunityClient({
               </span>
               <form action={signOut}>
                 <button className="text-xs font-semibold px-3 py-1.5 rounded-full" style={{ background: "rgba(255,255,255,0.06)", color: "rgba(255,255,255,0.6)" }}>
-                  로그아웃
+                  {L.logout}
                 </button>
               </form>
             </div>
           ) : (
             <Link href="/community/login" className="text-xs font-bold px-3 py-1.5 rounded-full" style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: BG }}>
-              로그인
+              {L.login}
             </Link>
           )}
         </header>
@@ -294,10 +507,10 @@ export default function CommunityClient({
           style={{ background: "rgba(11,17,32,0.95)", backdropFilter: "blur(12px)", borderTop: "1px solid rgba(212,175,55,0.12)", height: 64, zIndex: 40 }}
         >
           {([
-            { key: "home", label: "피드", icon: "🏠" },
-            { key: "explore", label: "탐색", icon: "🔍" },
-            { key: "event", label: "이벤트", icon: "🎰" },
-            { key: "profile", label: "프로필", icon: "👤" },
+            { key: "home",    label: L.feed,    icon: "🏠" },
+            { key: "explore", label: L.explore, icon: "🔍" },
+            { key: "event",   label: L.event,   icon: "🎰" },
+            { key: "profile", label: L.profile, icon: "👤" },
           ] as const).map((n) => (
             <button
               key={n.key}
@@ -338,15 +551,15 @@ export default function CommunityClient({
               style={{ background: "rgba(255,255,255,0.05)", border: `1px solid ${BORDER}` }}
             >
               <span style={{ color: "rgba(255,255,255,0.3)" }}>🔍</span>
-              <span className="text-sm" style={{ color: "rgba(255,255,255,0.2)" }}>전략, 핸드, 플레이어 검색...</span>
+              <span className="text-sm" style={{ color: "rgba(255,255,255,0.2)" }}>{L.searchPlaceholder}</span>
             </div>
 
             {/* 상단 네비 */}
             <nav className="flex items-center gap-1 ml-4">
               {([
-                { key: "home", label: "피드" },
-                { key: "explore", label: "탐색" },
-                { key: "event", label: "이벤트" },
+                { key: "home",    label: L.feed },
+                { key: "explore", label: L.explore },
+                { key: "event",   label: L.event },
               ] as const).map((n) => (
                 <button
                   key={n.key}
@@ -384,7 +597,7 @@ export default function CommunityClient({
                       className="text-xs font-semibold px-3 py-1.5 rounded-full"
                       style={{ background: "rgba(255,255,255,0.06)", color: "rgba(255,255,255,0.5)" }}
                     >
-                      로그아웃
+                      {L.logout}
                     </button>
                   </form>
                 </>
@@ -394,7 +607,7 @@ export default function CommunityClient({
                   className="text-sm font-bold px-4 py-2 rounded-full"
                   style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: BG }}
                 >
-                  로그인 →
+                  {L.loginArrow}
                 </Link>
               )}
             </div>
@@ -408,10 +621,10 @@ export default function CommunityClient({
           <aside style={{ width: 220, flexShrink: 0 }}>
             <div className="sticky top-20 flex flex-col gap-1">
               {([
-                { key: "home",    icon: "⊞", label: "피드" },
-                { key: "explore", icon: "🔥", label: "트렌딩/탐색" },
-                { key: "event",   icon: "🎰", label: "이벤트", badge: "Soon" },
-                { key: "profile", icon: "👤", label: "프로필" },
+                { key: "home",    icon: "⊞", label: L.feed },
+                { key: "explore", icon: "🔥", label: L.trendingExplore },
+                { key: "event",   icon: "🎰", label: L.event, badge: "Soon" },
+                { key: "profile", icon: "👤", label: L.profile },
               ] as const).map((item) => (
                 <button
                   key={item.key}
@@ -442,7 +655,7 @@ export default function CommunityClient({
                 className="w-full py-2.5 rounded-xl text-sm font-bold"
                 style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: BG }}
               >
-                ✏️ 글 쓰기
+                {L.writePost}
               </button>
             </div>
           </aside>
@@ -494,13 +707,13 @@ export default function CommunityClient({
                     className="flex-1 px-4 py-2 rounded-full text-sm"
                     style={{ background: "rgba(255,255,255,0.04)", color: "rgba(255,255,255,0.2)", border: `1px solid ${BORDER}` }}
                   >
-                    핸드, 전략, 결과를 공유해보세요...
+                    {L.writePlaceholder}
                   </div>
                   <button
                     className="px-4 py-2 rounded-full text-sm font-bold flex-shrink-0"
                     style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: BG }}
                   >
-                    게시
+                    {L.postButton}
                   </button>
                 </div>
 
@@ -511,8 +724,7 @@ export default function CommunityClient({
                 >
                   <span>🌐</span>
                   <p className="text-xs" style={{ color: "rgba(255,255,255,0.4)" }}>
-                    모든 언어 포스팅을 표시합니다. 타언어 글에는{" "}
-                    <span style={{ color: GOLD, fontWeight: 700 }}>번역 버튼</span>이 있습니다.
+                    {L.multiLangBannerFull}
                   </p>
                 </div>
               </>
@@ -532,7 +744,7 @@ export default function CommunityClient({
                         : { background: "rgba(212,175,55,0.08)", color: "rgba(212,175,55,0.55)", border: "1px solid rgba(212,175,55,0.15)" }
                     }
                   >
-                    {s === "strategy" ? "✦ 전략 포스팅" : "🌏 커뮤니티 글"}
+                    {s === "strategy" ? L.strategyPosts : L.communityPostsLong}
                   </button>
                 ))}
               </div>
@@ -548,7 +760,7 @@ export default function CommunityClient({
               {/* 트렌딩 */}
               {trending.length > 0 && (
                 <div className="rounded-2xl p-4" style={{ background: CARD, border: `1px solid ${BORDER}` }}>
-                  <p className="text-sm font-bold mb-3" style={{ color: "#f0e8c8" }}>🔥 이번 주 인기글</p>
+                  <p className="text-sm font-bold mb-3" style={{ color: "#f0e8c8" }}>{L.trendingTitle}</p>
                   {trending.map((t, i) => (
                     <Link
                       href={`/community/post/${t.id}`}
@@ -579,23 +791,23 @@ export default function CommunityClient({
                 className="rounded-2xl p-4"
                 style={{ background: "linear-gradient(135deg,rgba(212,175,55,0.12),rgba(212,175,55,0.04))", border: "1px solid rgba(212,175,55,0.25)" }}
               >
-                <p className="text-xs font-bold mb-1" style={{ color: GOLD }}>🎰 6월 이벤트 · 준비 중</p>
-                <p className="text-sm font-bold mb-1.5" style={{ color: "#f0e8c8" }}>번호 6개 선택<br />기프트콘 증정!</p>
-                <p className="text-xs mb-3" style={{ color: "rgba(255,255,255,0.4)" }}>
-                  3개 일치 → 5천원 · 4개 → 1만원<br />5~6개 → 5만원
+                <p className="text-xs font-bold mb-1" style={{ color: GOLD }}>{L.eventBadge}</p>
+                <p className="text-sm font-bold mb-1.5 whitespace-pre-line" style={{ color: "#f0e8c8" }}>{L.eventTitle}</p>
+                <p className="text-xs mb-3 whitespace-pre-line" style={{ color: "rgba(255,255,255,0.4)" }}>
+                  {L.eventDesc}
                 </p>
                 <button
                   onClick={() => setTab("event")}
                   className="w-full py-2 rounded-xl text-sm font-bold"
                   style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: BG }}
                 >
-                  이벤트 보기 →
+                  {L.eventButton}
                 </button>
               </div>
 
               {/* 커뮤니티 언어 */}
               <div className="rounded-2xl p-4" style={{ background: CARD, border: `1px solid ${BORDER}` }}>
-                <p className="text-xs font-bold mb-2" style={{ color: "rgba(255,255,255,0.4)" }}>🌐 커뮤니티 언어</p>
+                <p className="text-xs font-bold mb-2" style={{ color: "rgba(255,255,255,0.4)" }}>{L.communityLang}</p>
                 <div className="flex flex-wrap gap-1.5">
                   {(["ko", "en", "ja", "zh", "es", "de"] as const).map((l) => (
                     <span

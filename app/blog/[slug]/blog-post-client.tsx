@@ -8,6 +8,7 @@ import { FaXTwitter, FaFacebookF } from "react-icons/fa6";
 import type { Post } from "@/lib/posts";
 import { POSTS } from "@/lib/posts";
 import { SITE } from "@/lib/site";
+import CommunityCTA from "@/components/community-cta";
 import { useState, useRef } from "react";
 
 const PokerOddsCalculator = dynamic(
@@ -668,6 +669,9 @@ export default function BlogPost({
                     </button>
                   </div>
                 </div>
+
+                {/* Community CTA */}
+                <CommunityCTA locale="ko" />
 
                 {/* Back to Blog */}
                 <div className="mt-10 text-center">
