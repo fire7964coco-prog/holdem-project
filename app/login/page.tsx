@@ -18,7 +18,7 @@ export default function LoginPage() {
   const [password, setPassword] = useState("");
   const [nickname, setNickname] = useState("");
   const [loading, setLoading] = useState(false);
-  const [socialLoading, setSocialLoading] = useState<"google" | "kakao" | null>(null);
+  const [socialLoading, setSocialLoading] = useState<"google" | null>(null);
   const [msg, setMsg] = useState<string | null>(null);
   const [err, setErr] = useState<string | null>(null);
 
@@ -132,24 +132,6 @@ export default function LoginPage() {
             )}
           </button>
 
-          <button
-            onClick={() => handleSocialLogin("kakao")}
-            disabled={!!socialLoading}
-            className="w-full flex items-center justify-center gap-3 py-3 rounded-xl text-sm font-semibold transition-opacity disabled:opacity-50 active:scale-[0.98]"
-            style={{ background: "#FEE500", color: "#191919" }}
-          >
-            {socialLoading === "kakao" ? (
-              <span>처리 중...</span>
-            ) : (
-              <>
-                {/* Kakao 말풍선 SVG */}
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="#191919">
-                  <path d="M12 3C6.48 3 2 6.48 2 10.8c0 2.76 1.74 5.19 4.35 6.6L5.4 21l4.47-2.94C10.56 18.33 11.28 18.4 12 18.4c5.52 0 10-3.41 10-7.6S17.52 3 12 3z"/>
-                </svg>
-                카카오로 계속하기
-              </>
-            )}
-          </button>
         </div>
 
         {/* 구분선 */}
