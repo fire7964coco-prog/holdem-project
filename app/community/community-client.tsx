@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState, useTransition } from "react";
 import Link from "next/link";
@@ -279,7 +279,7 @@ const LABELS = {
     comingSoon: "قريباً", eventComing: "أحداث قريباً", eventComingSub: "أحداث على غرار اليانصيب ستفتح قريباً",
     loginRequired: "يلزم تسجيل الدخول", loginRequiredSub: "سجل دخولك لرؤية منشوراتك ونشاطك",
     myPostsStat: "منشورات", likesStat: "إعجابات", commentsStat: "تعليقات", myPostsSection: "منشوراتي", noPostsTitle: "لا منشورات", noPostsSub: "اكتب منشورك الأول!",
-    trendingTitle: "🔥 الرائج هذا الأسبوع", eventBadge: "🎰 حدث · قريباً", eventTitle: "اختر 6 أرقام\naربح بطاقات هدايا!", eventDesc: "3 مطابقات → ₩5,000 · 4 → ₩10,000\n5–6 → ₩50,000",
+    trendingTitle: "🔥 الرائج هذا الأسبوع", eventBadge: "🎰 حدث · قريباً", eventTitle: "اختر 6 أرقام\nاربح بطاقات هدايا!", eventDesc: "3 مطابقات → ₩5,000 · 4 → ₩10,000\n5–6 → ₩50,000",
     eventButton: "عرض الحدث →", communityLang: "🌐 لغات المجتمع",
     badge_winner: "🏆 فائز", badge_hot: "🔥 شعبي", badge_top: "⭐ أفضل مستخدم", badge_participant: "🎟️ مشارك",
   },
