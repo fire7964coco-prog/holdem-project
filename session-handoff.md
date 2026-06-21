@@ -16,25 +16,26 @@
 - **Phase 2**: 포스트카드 컴포넌트 분리, 글 상세/댓글, 다국어 피드+번역, Explore/프로필 탭
 - **Phase 3**: 커뮤니티 UI 다국어 전환(LABELS), Blog→Community CTA, 이벤트 탭 구현 — **전부 main 커밋·배포 완료**
   - 커밋: `3cef3bf` (feat: event tab - number picker + condition check)
-- **Phase 4**: 홈 피드 통합 — `holdemmaster.com/` 커뮤니티 피드로 전면 교체
-  - 브랜치: `feature/homepage-to-feed` (커밋 `f1e50c1`) — **PR 머지 후 Vercel 배포 필요**
-  - `/login`, `/post/[id]`, `/auth/callback` 라우트 신설
-  - `/community/*` → 301 영구 리다이렉트 설정
+- **Phase 4**: 홈 피드 통합 — `holdemmaster.com/` 커뮤니티 피드로 전면 교체 (커밋 `f1e50c1`, main 배포 완료)
+  - `/login`, `/post/[id]`, `/auth/callback` 라우트 신설 / `/community/*` → 301 리다이렉트
+- **Phase 5 (진행 중)**: 홈 단순화 + 블로그→피드 통합 (목업 기준)
+  - 홈/로그인/글상세에서 옛 사이트 헤더·푸터 숨김 (`site-chrome.tsx` `isFeedAppRoute`) — 커밋 `7158b82`
+  - 블로그 29편을 "티저 카드"로 피드 자동 노출 (`전체 읽기 → /blog/slug`) — 커밋 `b441019`
+  - 디자인 레퍼런스: `C:\Users\하봄\Downloads\cursor-discussion-v1\design-ref-*.tsx` (8종)
 
 ---
 
-## 🚀 다음 세션 첫 번째 할 일 — Phase 4 PR 머지 + Phase 5 계획
+## 🚀 다음 세션 첫 번째 할 일 — 목업 기준 디자인 정합 마무리
 
-### 즉시 할 일
-1. `feature/homepage-to-feed` → `main` PR 머지 → Vercel 자동 배포 확인
-2. 배포 후 `holdemmaster.com/` 피드 정상 렌더링 확인
-3. `holdemmaster.com/community` → `/` 301 리다이렉트 동작 확인
+### 목업 대비 아직 미반영 (우선순위순)
+1. **탐색(Explore) 탭 리디자인**: 목업 = 인기 해시태그 + 어드민 추천 글 + 언어별 탐색. 현재 = 단순 strategy/community 목록
+2. **이벤트 탭**: 목업 = 로또 + 지난 추첨 YouTube 임베드 + 리워드 클레임. 현재 구현과 비교 필요 (`event-tab.tsx`)
+3. **피드 스토리바**: 목업 = 온라인 유저 가로 스크롤 (실시간 presence 필요 — 백엔드 작업)
+4. 블로그 티저 다국어 연결: 현재 모두 `/blog/ko` 연결 → 유저 언어별 `/en/blog` 등 연결 고려
 
-### Phase 5 후보 작업 (논의 후 결정)
-- 홈 SEO 메타 최적화 (기존 홈 키워드 트래픽 모니터링)
-- 커뮤니티 이미지 업로드 기능 (Supabase Storage)
-- 알림 시스템 (댓글·좋아요 알림)
-- 어드민 포스트 관리 페이지
+### 참고
+- 블로그 티저는 `app/page.tsx`에서 `POSTS`(lib/posts.ts) → FeedPost 변환해 주입. 좋아요/댓글 없음, 클릭 시 `/blog/[slug]`
+- Gemini 번역 키 Vercel 미설정 → 번역 버튼 동작 안 함 (env: `GEMINI_API_KEY`)
 
 ---
 
