@@ -195,7 +195,7 @@ export default function PostCard({
 
       {/* 본문 */}
       <Link
-        href={clickable ? `/community/post/${post.id}` : "#"}
+        href={clickable ? `/post/${post.id}` : "#"}
         className={clickable ? "block" : "block pointer-events-none"}
       >
         {showTitle && (
@@ -301,7 +301,7 @@ export default function PostCard({
         </button>
 
         <Link
-          href={`/community/post/${post.id}`}
+          href={`/post/${post.id}`}
           className="flex items-center gap-1.5 active:scale-90 transition-transform"
         >
           <svg

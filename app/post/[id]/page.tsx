@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
-import { type FeedPost } from "../../community-client";
+import { type FeedPost } from "@/app/community/community-client";
 import PostDetailClient, { type CommentItem } from "./post-detail-client";
 
 export const dynamic = "force-dynamic";

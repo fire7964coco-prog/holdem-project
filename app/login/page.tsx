@@ -41,7 +41,7 @@ export default function LoginPage() {
             name: nickname || email.split("@")[0],
             language: detectLanguage(),
           },
-          emailRedirectTo: `${window.location.origin}/community/auth/callback`,
+          emailRedirectTo: `${window.location.origin}/auth/callback`,
         },
       });
       if (error) {
@@ -54,7 +54,7 @@ export default function LoginPage() {
       if (error) {
         setErr(error.message);
       } else {
-        router.push("/community");
+        router.push("/");
         router.refresh();
       }
     }

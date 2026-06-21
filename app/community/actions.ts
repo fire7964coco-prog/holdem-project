@@ -8,7 +8,7 @@ import { CURRENT_EVENT_ID, EVENT_CONDITION } from "@/lib/event-config";
 export async function signOut() {
   const supabase = await createClient();
   await supabase.auth.signOut();
-  redirect("/community");
+  redirect("/");
 }
 
 export async function createPost(formData: FormData) {
@@ -18,7 +18,7 @@ export async function createPost(formData: FormData) {
   } = await supabase.auth.getUser();
 
   if (!user) {
-    redirect("/community/login");
+    redirect("/login");
   }
 
   const title = String(formData.get("title") || "").trim();
@@ -50,7 +50,7 @@ export async function createPost(formData: FormData) {
     return { error: error.message };
   }
 
-  revalidatePath("/community");
+  revalidatePath("/");
   return { success: true };
 }
 
@@ -79,8 +79,8 @@ export async function addComment(postId: string, content: string) {
     return { error: error.message };
   }
 
-  revalidatePath(`/community/post/${postId}`);
-  revalidatePath("/community");
+  revalidatePath(`/post/${postId}`);
+  revalidatePath("/");
   return { success: true };
 }
 
@@ -104,8 +104,8 @@ export async function deleteComment(commentId: string, postId: string) {
     return { error: error.message };
   }
 
-  revalidatePath(`/community/post/${postId}`);
-  revalidatePath("/community");
+  revalidatePath(`/post/${postId}`);
+  revalidatePath("/");
   return { success: true };
 }
 
@@ -184,7 +184,7 @@ export async function submitEventEntry(numbers: number[]) {
     return { error: error.message };
   }
 
-  revalidatePath("/community");
+  revalidatePath("/");
   return { success: true };
 }
 
@@ -211,6 +211,6 @@ export async function toggleLike(postId: string) {
     await supabase.from("likes").insert({ post_id: postId, user_id: user.id });
   }
 
-  revalidatePath("/community");
+  revalidatePath("/");
   return { success: true };
 }

@@ -5,7 +5,19 @@
 
 ---
 
-## 2026-06-21
+## 2026-06-21 (3차)
+
+### 작업 내용
+- 커뮤니티 UI 다국어 전환: `community-client.tsx`에 LABELS 객체(ko/en/ja/zh) 추가, `getL(myLanguage)` 자동 전환
+- Blog → Community CTA 신설: `components/community-cta.tsx` (13개 언어 현지화 카피)
+- 한국어/다국어 블로그 포스트 하단에 CommunityCTA 삽입 (blog-post-client.tsx, intl-blog-post-client.tsx 전체 적용)
+
+### 발행 현황
+- 총 포스트: 29개 (목표 50개까지 21개 남음)
+
+---
+
+## 2026-06-21 (2차)
 
 ### 작업 내용
 - 커뮤니티 Phase 2 (feature/community 브랜치): 피드 카드 카드형 레이아웃 재구성(`post-card.tsx` 컴포넌트 분리)

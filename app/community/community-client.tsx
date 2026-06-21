@@ -276,7 +276,7 @@ export default function CommunityClient({
   };
 
   function onLike(postId: string) {
-    if (!currentUser) { router.push("/community/login"); return; }
+    if (!currentUser) { router.push("/login"); return; }
     setPosts((prev) =>
       prev.map((p) =>
         p.id === postId
@@ -377,7 +377,7 @@ export default function CommunityClient({
                   <div className="text-3xl mb-3">👤</div>
                   <p className="text-sm font-bold mb-1" style={{ color: "#f0e8c8" }}>{L.loginRequired}</p>
                   <p className="text-xs mb-4" style={{ color: "rgba(255,255,255,0.4)" }}>{L.loginRequiredSub}</p>
-                  <Link href="/community/login" className="inline-block px-5 py-2.5 rounded-xl text-sm font-bold" style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: BG }}>
+                  <Link href="/login" className="inline-block px-5 py-2.5 rounded-xl text-sm font-bold" style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: BG }}>
                     {L.loginSignup}
                   </Link>
                 </div>
@@ -489,7 +489,7 @@ export default function CommunityClient({
               </form>
             </div>
           ) : (
-            <Link href="/community/login" className="text-xs font-bold px-3 py-1.5 rounded-full" style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: BG }}>
+            <Link href="/login" className="text-xs font-bold px-3 py-1.5 rounded-full" style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: BG }}>
               {L.login}
             </Link>
           )}
@@ -503,7 +503,7 @@ export default function CommunityClient({
         {/* 모바일 FAB */}
         {(tab === "home" || tab === "explore") && (
           <button
-            onClick={() => currentUser ? setWriteOpen(true) : router.push("/community/login")}
+            onClick={() => currentUser ? setWriteOpen(true) : router.push("/login")}
             className="fixed flex items-center justify-center rounded-full active:scale-95 transition-transform"
             style={{ bottom: 80, right: 20, width: 52, height: 52, background: "linear-gradient(135deg,#d4af37,#f0d060)", boxShadow: "0 4px 20px rgba(212,175,55,0.4)", zIndex: 45 }}
           >
@@ -615,7 +615,7 @@ export default function CommunityClient({
                 </>
               ) : (
                 <Link
-                  href="/community/login"
+                  href="/login"
                   className="text-sm font-bold px-4 py-2 rounded-full"
                   style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: BG }}
                 >
@@ -663,7 +663,7 @@ export default function CommunityClient({
               <div style={{ borderTop: `1px solid ${BORDER}`, margin: "8px 0" }} />
 
               <button
-                onClick={() => currentUser ? setWriteOpen(true) : router.push("/community/login")}
+                onClick={() => currentUser ? setWriteOpen(true) : router.push("/login")}
                 className="w-full py-2.5 rounded-xl text-sm font-bold"
                 style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: BG }}
               >
@@ -701,7 +701,7 @@ export default function CommunityClient({
                 <div
                   className="rounded-2xl p-4 mb-4 flex items-center gap-3 cursor-pointer"
                   style={{ background: CARD, border: `1px solid ${BORDER}` }}
-                  onClick={() => currentUser ? setWriteOpen(true) : router.push("/community/login")}
+                  onClick={() => currentUser ? setWriteOpen(true) : router.push("/login")}
                 >
                   {currentUser ? (
                     <div
@@ -775,7 +775,7 @@ export default function CommunityClient({
                   <p className="text-sm font-bold mb-3" style={{ color: "#f0e8c8" }}>{L.trendingTitle}</p>
                   {trending.map((t, i) => (
                     <Link
-                      href={`/community/post/${t.id}`}
+                      href={`/post/${t.id}`}
                       key={t.id}
                       className="flex items-start gap-3 mb-3 last:mb-0 hover:opacity-80 transition-opacity"
                     >

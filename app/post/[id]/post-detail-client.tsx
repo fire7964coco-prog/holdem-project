@@ -3,8 +3,8 @@
 import { useState, useTransition } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { addComment, deleteComment, toggleLike } from "../../actions";
-import PostCard, { type FeedPost, timeAgo, GOLD, BG, CARD } from "../../post-card";
+import { addComment, deleteComment, toggleLike } from "@/app/community/actions";
+import PostCard, { type FeedPost, timeAgo, GOLD, BG, CARD } from "@/app/community/post-card";
 
 export type CommentItem = {
   id: string;
@@ -35,7 +35,7 @@ export default function PostDetailClient({
 
   function onLike(postId: string) {
     if (!currentUserId) {
-      router.push("/community/login");
+      router.push("/login");
       return;
     }
     setPost((p) => ({ ...p, liked: !p.liked, likeCount: p.likeCount + (p.liked ? -1 : 1) }));
@@ -48,7 +48,7 @@ export default function PostDetailClient({
     const text = draft.trim();
     if (!text) return;
     if (!currentUserId) {
-      router.push("/community/login");
+      router.push("/login");
       return;
     }
     startTransition(async () => {
@@ -72,7 +72,7 @@ export default function PostDetailClient({
     <div className="min-h-screen flex flex-col" style={{ background: BG, fontFamily: "'Inter','Pretendard',sans-serif" }}>
       {/* 헤더 */}
       <header className="sticky top-0 z-40 flex items-center gap-3 px-4 py-3" style={{ background: "rgba(11,17,32,0.95)", borderBottom: "1px solid rgba(212,175,55,0.12)", backdropFilter: "blur(10px)" }}>
-        <Link href="/community" className="flex items-center justify-center w-8 h-8 rounded-full active:scale-90 transition-transform" style={{ background: "rgba(255,255,255,0.06)" }}>
+        <Link href="/" className="flex items-center justify-center w-8 h-8 rounded-full active:scale-90 transition-transform" style={{ background: "rgba(255,255,255,0.06)" }}>
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} style={{ color: "#f0e8c8" }}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
           </svg>
@@ -146,7 +146,7 @@ export default function PostDetailClient({
       ) : (
         <div className="fixed bottom-0 left-0 right-0 px-4 py-3 flex items-center gap-3" style={{ background: "rgba(11,17,32,0.97)", borderTop: "1px solid rgba(212,175,55,0.15)", backdropFilter: "blur(10px)" }}>
           <p className="text-xs flex-1" style={{ color: "rgba(255,255,255,0.5)" }}>댓글을 남기려면 로그인하세요</p>
-          <Link href="/community/login" className="px-4 py-2.5 rounded-xl text-xs font-bold flex-shrink-0" style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: BG }}>
+          <Link href="/login" className="px-4 py-2.5 rounded-xl text-xs font-bold flex-shrink-0" style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: BG }}>
             로그인 →
           </Link>
         </div>

@@ -106,7 +106,7 @@ export default function CommunityCTA({ locale = "ko" }: { locale?: Locale }) {
           </p>
         </div>
         <Link
-          href="/community"
+          href="/"
           className="flex-shrink-0 px-5 py-2.5 rounded-xl text-sm font-bold transition-opacity hover:opacity-90"
           style={{
             background: "linear-gradient(135deg,#d4af37,#f0d060)",

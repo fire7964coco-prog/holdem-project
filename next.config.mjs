@@ -23,6 +23,16 @@ const nextConfig = {
         destination: `https://${CANONICAL_HOST}/:path*`,
         permanent: true,
       },
+      {
+        source: "/community",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/community/:path*",
+        destination: "/:path*",
+        permanent: true,
+      },
     ];
   },
   typescript: {
