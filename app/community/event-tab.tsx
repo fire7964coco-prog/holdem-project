@@ -228,15 +228,6 @@ const EVENT_LABELS = {
     doneTitle: "Participação enviada!", doneNumLabel: "Meus números", pending: "⏳ Aguardando resultados", pendingDesc: "Você pode conferir aqui quando os números forem anunciados.",
     pickTitle: (p: number) => `🎯 Escolher números (${p}/6)`, reset: "Resetar", moreNeeded: (n: number) => `Mais ${n}`, moreNeededBtn: (n: number) => `Escolha mais ${n} número${n !== 1 ? "s" : ""}`, submit: "🎰 Enviar números", submitting: "Enviando...",
   },
-  ar: {
-    eventBadge: "حدث يونيو 2026", eventTitle: "اختر 6 أرقام — اربح بطاقة هدية!", eventDesc: "اختر 6 أرقام من 1 إلى 45. طابق 3 أو أكثر للفوز.",
-    match3: "3 مطابقات", match4: "4 مطابقات", match56: "5–6 مطابقات", prize3: "₩5,000", prize4: "₩10,000", prize56: "₩50,000",
-    loginRequired: "سجل الدخول للمشاركة", loginDesc: "يرجى تسجيل الدخول للانضمام إلى الحدث.", loginBtn: "دخول / تسجيل →",
-    condTitle: "🎯 الشروط", condDesc: "أكمل الشروط لفتح اختيار الأرقام.", postLabel: (n: number) => `اكتب ${n} منشور`, likeLabel: (n: number) => `احصل على ${n} إعجاب`, condHint: "انشر في الخلاصة واجمع الإعجابات للمشاركة!",
-    resultTitle: (n: number) => `🎉 النتيجة — ${n} مطابقة!`, winningLabel: "الأرقام الفائزة", myNumLabel: "أرقامي", noMatch: "حظاً أوفر في المرة القادمة! 🍀",
-    doneTitle: "تم التسجيل!", doneNumLabel: "أرقامي", pending: "⏳ في انتظار النتائج", pendingDesc: "يمكنك التحقق هنا بمجرد الإعلان عن الأرقام.",
-    pickTitle: (p: number) => `🎯 اختر الأرقام (${p}/6)`, reset: "إعادة تعيين", moreNeeded: (n: number) => `${n} أكثر`, moreNeededBtn: (n: number) => `اختر ${n} رقم إضافي`, submit: "🎰 إرسال الأرقام", submitting: "جاري الإرسال...",
-  },
   id: {
     eventBadge: "Event Juni 2026", eventTitle: "Pilih 6 Angka — Menangkan Voucher!", eventDesc: "Pilih 6 angka dari 1–45. Cocokkan 3 atau lebih untuk menang.",
     match3: "3 cocok", match4: "4 cocok", match56: "5–6 cocok", prize3: "₩5.000", prize4: "₩10.000", prize56: "₩50.000",
@@ -263,15 +254,6 @@ const EVENT_LABELS = {
     resultTitle: (n: number) => `🎉 Kết quả — ${n} khớp!`, winningLabel: "Số trúng thưởng", myNumLabel: "Số của tôi", noMatch: "Chúc may mắn lần sau! 🍀",
     doneTitle: "Đã tham gia!", doneNumLabel: "Số của tôi", pending: "⏳ Chờ kết quả", pendingDesc: "Bạn có thể kiểm tra tại đây sau khi công bố số.",
     pickTitle: (p: number) => `🎯 Chọn số (${p}/6)`, reset: "Đặt lại", moreNeeded: (n: number) => `Còn ${n}`, moreNeededBtn: (n: number) => `Chọn thêm ${n} số`, submit: "🎰 Gửi số", submitting: "Đang gửi...",
-  },
-  hi: {
-    eventBadge: "जून 2026 इवेंट", eventTitle: "6 नंबर चुनें — गिफ्ट कार्ड जीतें!", eventDesc: "1–45 में से 6 नंबर चुनें। 3 या अधिक मेल खाने पर जीतें।",
-    match3: "3 मेल", match4: "4 मेल", match56: "5–6 मेल", prize3: "₩5,000", prize4: "₩10,000", prize56: "₩50,000",
-    loginRequired: "भाग लेने के लिए लॉग इन करें", loginDesc: "इवेंट में शामिल होने के लिए कृपया लॉग इन करें।", loginBtn: "लॉग इन / साइन अप →",
-    condTitle: "🎯 शर्तें", condDesc: "नंबर चुनने को अनलॉक करने के लिए शर्तें पूरी करें।", postLabel: (n: number) => `${n} पोस्ट लिखें`, likeLabel: (n: number) => `${n} लाइक पाएं`, condHint: "फीड पर पोस्ट करें और लाइक पाएं!",
-    resultTitle: (n: number) => `🎉 परिणाम — ${n} मेल!`, winningLabel: "जीतने वाले नंबर", myNumLabel: "मेरे नंबर", noMatch: "अगली बार शुभकामनाएं! 🍀",
-    doneTitle: "प्रविष्टि सबमिट!", doneNumLabel: "मेरे नंबर", pending: "⏳ परिणाम का इंतजार", pendingDesc: "नंबर घोषित होने पर यहां देख सकते हैं।",
-    pickTitle: (p: number) => `🎯 नंबर चुनें (${p}/6)`, reset: "रीसेट", moreNeeded: (n: number) => `${n} और`, moreNeededBtn: (n: number) => `${n} और नंबर चुनें`, submit: "🎰 नंबर सबमिट करें", submitting: "सबमिट हो रहा है...",
   },
   tr: {
     eventBadge: "Haziran 2026 Etkinliği", eventTitle: "6 Numara Seç — Hediye Kartı Kazan!", eventDesc: "1–45 arasından 6 numara seç. 3 veya fazlası eşleşirse kazanırsın.",
