@@ -205,3 +205,28 @@ create policy "events_insert" on public.event_entries for insert with check (aut
 -- translations: 누구나 읽기 (쓰기는 서버에서 service role로만)
 drop policy if exists "translations_read" on public.translations;
 create policy "translations_read" on public.translations for select using (true);
+
+-- ============================================================
+-- 7. chat_messages (Supabase Realtime 글로벌 채팅 — Phase 6)
+-- ============================================================
+create table if not exists public.chat_messages (
+  id          uuid primary key default gen_random_uuid(),
+  room        text not null default 'global',
+  user_id     uuid references public.profiles(id) on delete cascade,
+  nickname    text not null,
+  language    text not null default 'ko',
+  content     text not null check (char_length(content) <= 200),
+  created_at  timestamptz not null default now()
+);
+
+create index if not exists chat_messages_room_created_at_idx
+  on public.chat_messages(room, created_at desc);
+
+alter table public.chat_messages enable row level security;
+
+drop policy if exists "chat_read"   on public.chat_messages;
+drop policy if exists "chat_insert" on public.chat_messages;
+-- 비로그인도 읽기 가능, 로그인 유저만 자신 명의로 작성 가능
+create policy "chat_read"   on public.chat_messages for select using (true);
+create policy "chat_insert" on public.chat_messages for insert
+  with check (auth.uid() = user_id);

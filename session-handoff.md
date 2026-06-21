@@ -9,7 +9,7 @@
 
 ---
 
-## ✅ 완료한 작업 (Phase 0 → Phase 5 완료)
+## ✅ 완료한 작업 (Phase 0 → Phase 6 완료)
 
 - **Phase 0**: `/community` 라우트 신설 + Supabase 클라이언트 설정
 - **Phase 1**: 이메일 회원가입/로그인/로그아웃 + 피드 + 글쓰기 + 좋아요 (Production 배포 완료)
@@ -27,30 +27,29 @@
     - `/auth/callback` Open Redirect 차단 (`safeNext` 검증)
     - `submitEventEntry` 번호 1~45 서버 검증 + `is_eligible` 하드코딩 제거
     - `createPost` 5,000자 / `addComment` 1,000자 / 제목 100자 길이 제한
+- **Phase 6**: 실시간 채팅 전환
+  - 탐색(Explore) 탭 → 채팅(Chat) 탭으로 교체 (13개 언어 LABELS 포함)
+  - `app/community/chat-tab.tsx` 신규: Supabase Realtime 글로벌 단일 룸
+  - `supabase/schema.sql` — `chat_messages` 테이블 + RLS 추가 (섹션 7)
+  - 빌드 성공 확인 ✅
 
 ---
 
-## 🚀 다음 세션 첫 번째 할 일 — 유저글 피드 → 실시간 채팅으로 전환
+## 🚀 다음 세션 첫 번째 할 일 — Supabase 설정 적용 및 배포
 
-### 배경 결정사항 (사용자 확정)
-현재 인스타그램식 피드 구조에서 **YouTube 실시간 채팅** 방식으로 유저 참여 UI를 변경하기로 함.
-이유:
-- 초기 운영 단계에서 유저 글이 적어 피드가 비어 보이는 문제
-- 홀덤 유저는 전략 글 읽으러 오는 게 주 목적 → 짧은 채팅이 더 자연스러운 참여 방식
-- 짧은 메시지 입력이 긴 글 쓰기보다 진입장벽이 훨씬 낮음
-- Supabase Realtime으로 구현 가능
+### 즉시 해야 할 Supabase 작업 (UI에서 수동)
+1. **Supabase 대시보드 → SQL Editor** → `supabase/schema.sql` 마지막 섹션(7. chat_messages) 붙여넣고 실행
+2. **Supabase 대시보드 → Database → Replication** → `chat_messages` 테이블 Realtime 토글 ON
 
-### 구현 방향 (아직 미결정 — 다음 세션에서 사용자와 논의 후 진행)
-1. **채팅 탭 구조**: 탭 중 하나를 채팅으로 교체하거나, 피드 하단에 채팅창 붙이는 방식 중 선택
-2. **채팅 룸 구성**: 글로벌 단일 룸 vs 언어별 룸
-3. **기술 스택**: Supabase Realtime (`supabase.channel().on('postgres_changes', ...)`)
-4. **DB**: `chat_messages` 테이블 신설 (id, room, user_id, content, created_at)
+### 그 다음 배포
+```
+git add . && git commit -m "feat: 실시간 채팅 탭 추가 (Phase 6)" && git push
+```
 
-### 구현 시 참고
-- Supabase Realtime 문서: https://supabase.com/docs/guides/realtime
-- 현재 커뮤니티 클라이언트: `app/community/community-client.tsx` (탭 구조 있음)
-- 이벤트 탭: `app/community/event-tab.tsx`
-- DB 스키마: `supabase/schema.sql`
+### 배포 후 선택적 개선사항
+- 채팅 메시지 50개 이상 쌓이면 페이지네이션 or "이전 메시지 불러오기" 버튼 추가
+- 채팅 메시지 신고/삭제 (어드민 기능)
+- 욕설 필터링
 
 ---
 

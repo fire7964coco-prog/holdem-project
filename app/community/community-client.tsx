@@ -14,6 +14,7 @@ import PostCard, {
   BORDER,
 } from "./post-card";
 import EventTab from "./event-tab";
+import ChatTab from "./chat-tab";
 
 export type { FeedPost } from "./post-card";
 
@@ -33,10 +34,9 @@ const LABELS = {
     loginArrow: "로그인 →",
     loginSignup: "로그인 / 회원가입 →",
     feed: "피드",
-    explore: "탐색",
+    chat: "채팅",
     event: "이벤트",
     profile: "프로필",
-    trendingExplore: "트렌딩/탐색",
     writePost: "✏️ 글 쓰기",
     searchPlaceholder: "전략, 핸드, 플레이어 검색...",
     writePlaceholder: "핸드, 전략, 결과를 공유해보세요...",
@@ -82,10 +82,9 @@ const LABELS = {
     loginArrow: "Log in →",
     loginSignup: "Log in / Sign up →",
     feed: "Feed",
-    explore: "Explore",
+    chat: "Chat",
     event: "Events",
     profile: "Profile",
-    trendingExplore: "Trending",
     writePost: "✏️ Write Post",
     searchPlaceholder: "Search strategy, hands, players...",
     writePlaceholder: "Share your hand, strategy, or results...",
@@ -131,10 +130,9 @@ const LABELS = {
     loginArrow: "ログイン →",
     loginSignup: "ログイン / 登録 →",
     feed: "フィード",
-    explore: "探索",
+    chat: "チャット",
     event: "イベント",
     profile: "プロフィール",
-    trendingExplore: "トレンド",
     writePost: "✏️ 投稿する",
     searchPlaceholder: "戦略、ハンド、プレイヤーを検索...",
     writePlaceholder: "ハンド、戦略、結果をシェアしよう...",
@@ -180,10 +178,9 @@ const LABELS = {
     loginArrow: "登录 →",
     loginSignup: "登录 / 注册 →",
     feed: "动态",
-    explore: "探索",
+    chat: "聊天",
     event: "活动",
     profile: "我的",
-    trendingExplore: "热门",
     writePost: "✏️ 发帖",
     searchPlaceholder: "搜索策略、手牌、玩家...",
     writePlaceholder: "分享你的手牌、策略或战果...",
@@ -225,7 +222,7 @@ const LABELS = {
   },
   es: {
     logout: "Cerrar sesión", login: "Iniciar sesión", loginArrow: "Iniciar sesión →", loginSignup: "Iniciar sesión / Registrarse →",
-    feed: "Feed", explore: "Explorar", event: "Eventos", profile: "Perfil", trendingExplore: "Tendencias",
+    feed: "Feed", chat: "Chat", event: "Eventos", profile: "Perfil",
     writePost: "✏️ Escribir", searchPlaceholder: "Buscar estrategia, manos, jugadores...", writePlaceholder: "Comparte tu mano, estrategia o resultado...",
     postButton: "Publicar", posting: "Publicando...", postNow: "Publicar", writeModalTitle: "Nueva publicación", draftPlaceholder: "¿Qué estás pensando?", cancel: "Cancelar",
     multiLangBannerFull: "Mostrando publicaciones en todos los idiomas. Las publicaciones en otros idiomas tienen botón de traducción.",
@@ -240,7 +237,7 @@ const LABELS = {
   },
   de: {
     logout: "Abmelden", login: "Anmelden", loginArrow: "Anmelden →", loginSignup: "Anmelden / Registrieren →",
-    feed: "Feed", explore: "Entdecken", event: "Events", profile: "Profil", trendingExplore: "Trends",
+    feed: "Feed", chat: "Chat", event: "Events", profile: "Profil",
     writePost: "✏️ Schreiben", searchPlaceholder: "Strategie, Hände, Spieler suchen...", writePlaceholder: "Hand, Strategie oder Ergebnis teilen...",
     postButton: "Posten", posting: "Posten...", postNow: "Posten", writeModalTitle: "Neuer Beitrag", draftPlaceholder: "Was denkst du?", cancel: "Abbrechen",
     multiLangBannerFull: "Zeigt Beiträge in allen Sprachen. Beiträge in anderen Sprachen haben eine Übersetzungsschaltfläche.",
@@ -255,7 +252,7 @@ const LABELS = {
   },
   pt: {
     logout: "Sair", login: "Entrar", loginArrow: "Entrar →", loginSignup: "Entrar / Cadastrar →",
-    feed: "Feed", explore: "Explorar", event: "Eventos", profile: "Perfil", trendingExplore: "Tendências",
+    feed: "Feed", chat: "Chat", event: "Eventos", profile: "Perfil",
     writePost: "✏️ Escrever", searchPlaceholder: "Buscar estratégia, mãos, jogadores...", writePlaceholder: "Compartilhe sua mão, estratégia ou resultado...",
     postButton: "Publicar", posting: "Publicando...", postNow: "Publicar", writeModalTitle: "Nova publicação", draftPlaceholder: "O que você está pensando?", cancel: "Cancelar",
     multiLangBannerFull: "Mostrando publicações em todos os idiomas. Publicações em outros idiomas têm botão de tradução.",
@@ -270,7 +267,7 @@ const LABELS = {
   },
   id: {
     logout: "Keluar", login: "Masuk", loginArrow: "Masuk →", loginSignup: "Masuk / Daftar →",
-    feed: "Feed", explore: "Jelajahi", event: "Event", profile: "Profil", trendingExplore: "Trending",
+    feed: "Feed", chat: "Chat", event: "Event", profile: "Profil",
     writePost: "✏️ Tulis", searchPlaceholder: "Cari strategi, kartu, pemain...", writePlaceholder: "Bagikan kartu, strategi, atau hasilmu...",
     postButton: "Posting", posting: "Memposting...", postNow: "Posting", writeModalTitle: "Postingan Baru", draftPlaceholder: "Apa yang kamu pikirkan?", cancel: "Batal",
     multiLangBannerFull: "Menampilkan postingan semua bahasa. Postingan bahasa lain memiliki tombol terjemahan.",
@@ -285,7 +282,7 @@ const LABELS = {
   },
   ms: {
     logout: "Log keluar", login: "Log masuk", loginArrow: "Log masuk →", loginSignup: "Log masuk / Daftar →",
-    feed: "Feed", explore: "Terokai", event: "Acara", profile: "Profil", trendingExplore: "Trending",
+    feed: "Feed", chat: "Chat", event: "Acara", profile: "Profil",
     writePost: "✏️ Tulis", searchPlaceholder: "Cari strategi, kad, pemain...", writePlaceholder: "Kongsi kad, strategi atau keputusan anda...",
     postButton: "Hantar", posting: "Menghantar...", postNow: "Hantar", writeModalTitle: "Siaran Baru", draftPlaceholder: "Apa yang anda fikirkan?", cancel: "Batal",
     multiLangBannerFull: "Menunjukkan siaran semua bahasa. Siaran bahasa lain mempunyai butang terjemahan.",
@@ -300,7 +297,7 @@ const LABELS = {
   },
   vi: {
     logout: "Đăng xuất", login: "Đăng nhập", loginArrow: "Đăng nhập →", loginSignup: "Đăng nhập / Đăng ký →",
-    feed: "Feed", explore: "Khám phá", event: "Sự kiện", profile: "Hồ sơ", trendingExplore: "Xu hướng",
+    feed: "Feed", chat: "Chat", event: "Sự kiện", profile: "Hồ sơ",
     writePost: "✏️ Viết bài", searchPlaceholder: "Tìm kiếm chiến lược, bài, người chơi...", writePlaceholder: "Chia sẻ bài của bạn, chiến lược hoặc kết quả...",
     postButton: "Đăng", posting: "Đang đăng...", postNow: "Đăng", writeModalTitle: "Bài viết mới", draftPlaceholder: "Bạn đang nghĩ gì?", cancel: "Hủy",
     multiLangBannerFull: "Hiển thị bài viết tất cả ngôn ngữ. Bài viết ngôn ngữ khác có nút dịch.",
@@ -315,7 +312,7 @@ const LABELS = {
   },
   tr: {
     logout: "Çıkış yap", login: "Giriş yap", loginArrow: "Giriş yap →", loginSignup: "Giriş / Kayıt →",
-    feed: "Feed", explore: "Keşfet", event: "Etkinlikler", profile: "Profil", trendingExplore: "Trendler",
+    feed: "Feed", chat: "Sohbet", event: "Etkinlikler", profile: "Profil",
     writePost: "✏️ Yaz", searchPlaceholder: "Strateji, el, oyuncu ara...", writePlaceholder: "El, strateji veya sonucunu paylaş...",
     postButton: "Paylaş", posting: "Paylaşılıyor...", postNow: "Paylaş", writeModalTitle: "Yeni Gönderi", draftPlaceholder: "Ne düşünüyorsun?", cancel: "İptal",
     multiLangBannerFull: "Tüm dillerdeki gönderiler gösteriliyor. Diğer dillerdeki gönderilerde çeviri butonu var.",
@@ -368,8 +365,7 @@ export default function CommunityClient({
   const router = useRouter();
   const L = getL(pageLocale ?? myLanguage);
 
-  const [tab, setTab] = useState<"home" | "explore" | "event" | "profile">("home");
-  const [exploreSub, setExploreSub] = useState<"strategy" | "community">("strategy");
+  const [tab, setTab] = useState<"home" | "chat" | "event" | "profile">("home");
   const [feedFilter, setFeedFilter] = useState<FilterKey>("All");
   const [posts, setPosts] = useState<FeedPost[]>(initialPosts);
   const [writeOpen, setWriteOpen] = useState(false);
@@ -412,11 +408,6 @@ export default function CommunityClient({
       ? posts.filter((p) => p.type === "community")
       : posts;
 
-  const explorePosts =
-    exploreSub === "strategy"
-      ? posts.filter((p) => p.type === "admin")
-      : posts.filter((p) => p.type === "community");
-
   const trending = getTrending(posts);
   const totalLikes = myPosts.reduce((s, p) => s + p.likeCount, 0);
   const totalComments = myPosts.reduce((s, p) => s + p.commentCount, 0);
@@ -434,38 +425,12 @@ export default function CommunityClient({
               ))
         )}
 
-        {/* 탐색 */}
-        {tab === "explore" && (
-          <div>
-            {!desktop && (
-              <div className="flex gap-2 px-3 mb-3">
-                {(["strategy", "community"] as const).map((s) => (
-                  <button
-                    key={s}
-                    onClick={() => setExploreSub(s)}
-                    className="px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all"
-                    style={
-                      exploreSub === s
-                        ? { background: GOLD, color: BG }
-                        : { background: "rgba(212,175,55,0.08)", color: "rgba(212,175,55,0.55)", border: "1px solid rgba(212,175,55,0.15)" }
-                    }
-                  >
-                    {s === "strategy" ? L.strategyPosts : L.communityTab}
-                  </button>
-                ))}
-              </div>
-            )}
-            {explorePosts.length === 0
-              ? <EmptyState
-                  icon={exploreSub === "strategy" ? "📚" : "🌏"}
-                  title={exploreSub === "strategy" ? L.emptyStrategyTitle : L.emptyCommunityTitle}
-                  sub={L.comingSoon}
-                />
-              : explorePosts.map((p) => (
-                  <PostCard key={p.id} post={p} myLanguage={myLanguage} onLike={onLike} />
-                ))
-            }
-          </div>
+        {/* 채팅 */}
+        {tab === "chat" && (
+          <ChatTab
+            currentUser={currentUser}
+            lang={pageLocale ?? myLanguage}
+          />
         )}
 
         {/* 이벤트 */}
@@ -610,7 +575,7 @@ export default function CommunityClient({
         </div>
 
         {/* 모바일 FAB */}
-        {(tab === "home" || tab === "explore") && (
+        {tab === "home" && (
           <button
             onClick={() => currentUser ? setWriteOpen(true) : router.push("/login")}
             className="fixed flex items-center justify-center rounded-full active:scale-95 transition-transform"
@@ -629,7 +594,7 @@ export default function CommunityClient({
         >
           {([
             { key: "home",    label: L.feed,    icon: "🏠" },
-            { key: "explore", label: L.explore, icon: "🔍" },
+            { key: "chat",    label: L.chat,    icon: "💬" },
             { key: "event",   label: L.event,   icon: "🎰" },
             { key: "profile", label: L.profile, icon: "👤" },
           ] as const).map((n) => (
@@ -679,7 +644,7 @@ export default function CommunityClient({
             <nav className="flex items-center gap-1 ml-4">
               {([
                 { key: "home",    label: L.feed },
-                { key: "explore", label: L.explore },
+                { key: "chat",    label: L.chat },
                 { key: "event",   label: L.event },
               ] as const).map((n) => (
                 <button
@@ -743,7 +708,7 @@ export default function CommunityClient({
             <div className="sticky top-20 flex flex-col gap-1">
               {([
                 { key: "home",    icon: "⊞", label: L.feed },
-                { key: "explore", icon: "🔥", label: L.trendingExplore },
+                { key: "chat",    icon: "💬", label: L.chat },
                 { key: "event",   icon: "🎰", label: L.event, badge: "Soon" },
                 { key: "profile", icon: "👤", label: L.profile },
               ] as const).map((item) => (
@@ -849,26 +814,6 @@ export default function CommunityClient({
                   </p>
                 </div>
               </>
-            )}
-
-            {/* Explore 서브탭 (데스크탑) */}
-            {tab === "explore" && (
-              <div className="flex gap-2 mb-4">
-                {(["strategy", "community"] as const).map((s) => (
-                  <button
-                    key={s}
-                    onClick={() => setExploreSub(s)}
-                    className="px-4 py-2 rounded-full text-sm font-semibold transition-all"
-                    style={
-                      exploreSub === s
-                        ? { background: GOLD, color: BG }
-                        : { background: "rgba(212,175,55,0.08)", color: "rgba(212,175,55,0.55)", border: "1px solid rgba(212,175,55,0.15)" }
-                    }
-                  >
-                    {s === "strategy" ? L.strategyPosts : L.communityPostsLong}
-                  </button>
-                ))}
-              </div>
             )}
 
             <TabContent desktop />

@@ -5,6 +5,24 @@
 
 ---
 
+## 2026-06-21 (7차)
+
+### 작업 내용
+- 유저 참여 UI 전환: 피드의 탐색(Explore) 탭 → 실시간 채팅(Chat) 탭으로 교체
+- `app/community/chat-tab.tsx` 신규 생성: Supabase Realtime (`postgres_changes` INSERT) 글로벌 단일 룸
+- `supabase/schema.sql`: `chat_messages` 테이블 + RLS (비로그인 읽기 허용, 로그인 유저만 전송) 추가
+- 13개 언어 LABELS에 `chat` 키 추가 (explore/trendingExplore 제거)
+- 모바일 하단 네비·데스크탑 헤더·사이드바 탐색 → 채팅 아이콘(💬) 으로 교체
+
+### 발행 현황
+- 총 포스트: 29개 (목표 50개까지 21개 남음)
+
+### 특이사항
+- Supabase 대시보드 → SQL Editor에서 `supabase/schema.sql` 마지막 섹션(7. chat_messages) 실행 필요
+- Supabase 대시보드 → Database → Replication에서 `chat_messages` 테이블 Realtime 활성화 필요
+
+---
+
 ## 2026-06-21 (6차)
 
 ### 작업 내용
