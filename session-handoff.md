@@ -30,13 +30,21 @@
   - ⚠️ NEXT_PUBLIC 변수는 빌드 시점에 박힘 → 값 바꾸면 반드시 Redeploy
 - **이메일 확인(Confirm email)**: Supabase에서 이미 OFF 상태 (가입 즉시 로그인됨)
 - **로컬**: `.env.local` 에 동일 값 (git ignore됨)
+- **Gemini API 키**: 발급 완료 (Google AI Studio, 프로젝트 995424042508)
+  - 새 형식 키 (`AQ.Ab8...` — AIzaSy 접두사 없음, 이게 정상)
+  - 로컬 `.env.local`의 `GEMINI_API_KEY`에 입력 완료 ✅
+  - ⚠️ Vercel 환경변수 `GEMINI_API_KEY`는 **아직 미설정** → 번역 기능 배포 전 추가 필요
 
 ---
 
 ## 🔄 다음 세션에 이어할 것 (Phase 2)
+> 시작 멘트: "session-handoff.md 읽고 Phase 2 이어서 하자. feature/community 브랜치에서 작업하고 기존 /blog 경로는 건드리지 마."
+> Gemini 키는 발급 완료 (위 인프라 섹션 참조). 번역 기능 배포 전 Vercel 환경변수만 추가하면 됨.
+
 - [ ] 피드 카드 레이아웃 다듬기 (현재 글이 헤더에 붙고 여백 없음 — 디자인 정리)
 - [ ] 댓글 시스템 (글 상세 페이지 /community/post/[id] + 댓글 작성/표시)
 - [ ] 다국어: 자국어 밝게 / 타언어 흐리게 + Gemini 번역 버튼 (translations 캐싱 활용)
+- [ ] Gemini 번역 API 라우트 + Vercel GEMINI_API_KEY 환경변수 추가
 - [ ] Explore 탭: [전략 포스팅] [커뮤니티] 서브탭 필터
 - [ ] 프로필 탭: 내 글, 좋아요 수, 뱃지
 - [ ] (선택) Google OAuth 추가
