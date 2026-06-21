@@ -475,7 +475,7 @@ export default function CommunityClient({
                     >
                       <input
                         name="nickname"
-                        defaultValue={currentUser.nickname}
+                        value={nicknameInput}
                         maxLength={20}
                         autoFocus
                         className="w-full px-3 py-2 rounded-xl text-sm text-center outline-none"
