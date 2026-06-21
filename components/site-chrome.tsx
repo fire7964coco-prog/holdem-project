@@ -19,12 +19,14 @@ function useLocale() {
  * 옛 사이트 헤더·푸터(가이드·계산기·블로그 등 풀 네비)를 숨긴다.
  * 블로그·규칙 등 SEO 페이지는 기존 헤더를 그대로 유지한다.
  */
+/** locale 루트 피드 페이지 목록 (/en, /ja, /zh 등) */
+const LOCALE_FEED_ROOTS = ["/en", "/ja", "/zh", "/es", "/ar", "/pt", "/id", "/ms", "/vi", "/hi", "/de", "/tr"];
+
 function isFeedAppRoute(pathname: string) {
-  return (
-    pathname === "/" ||
-    pathname === "/login" ||
-    pathname.startsWith("/post/")
-  );
+  // 루트 한국어 피드 + 로그인 + 글 상세
+  if (pathname === "/" || pathname === "/login" || pathname.startsWith("/post/")) return true;
+  // 각 locale 루트 피드 (/en, /en/ 등) — /en/blog는 포함하지 않는다
+  return LOCALE_FEED_ROOTS.some((p) => pathname === p || pathname === p + "/");
 }
 
 export function SiteHeader() {

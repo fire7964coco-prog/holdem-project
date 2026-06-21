@@ -17,8 +17,10 @@ export type FeedPost = {
   authorAvatar: string | null;
   authorBadge: string | null;
   liked: boolean;
-  /** 블로그 티저 카드용 — 설정 시 /blog/[slug] 로 연결되는 SEO 글 티저로 렌더 */
+  /** 블로그 티저 카드용 — 설정 시 블로그 글 티저로 렌더 */
   blogSlug?: string | null;
+  /** locale 피드에서 전달 — /en/blog/[slug] 등 locale-aware 링크 생성용 */
+  blogLocale?: string | null;
   /** 블로그 카테고리 (티저 배지) */
   category?: string | null;
   /** 블로그 읽기 시간 (예: "8분") */
@@ -103,6 +105,9 @@ export default function PostCard({
   clickable?: boolean;
 }) {
   const isBlogTeaser = !!post.blogSlug;
+  const blogHref = post.blogLocale
+    ? `/${post.blogLocale}/blog/${post.blogSlug}`
+    : `/blog/${post.blogSlug}`;
   const isMyLang = post.language === myLanguage;
   const [translated, setTranslated] = useState<string | null>(null);
   const [showOriginal, setShowOriginal] = useState(false);
@@ -156,7 +161,7 @@ export default function PostCard({
           className="hidden lg:block"
           style={{ height: 3, background: "linear-gradient(90deg,#d4af37,#f0d060,transparent)" }}
         />
-        <Link href={`/blog/${post.blogSlug}`} className="block">
+        <Link href={blogHref} className="block">
           {/* 작성자 */}
           <div className="flex items-center gap-2.5 px-4 lg:px-5 pt-3.5 lg:pt-4 pb-2">
             <div className="w-8 h-8 lg:w-10 lg:h-10 flex-shrink-0">
@@ -207,7 +212,7 @@ export default function PostCard({
         {/* 전체 읽기 CTA */}
         <div className="px-4 lg:px-5 py-3" style={{ borderTop: "1px solid rgba(255,255,255,0.05)" }}>
           <Link
-            href={`/blog/${post.blogSlug}`}
+            href={blogHref}
             className="inline-flex items-center gap-1.5 text-sm font-bold px-4 py-2 rounded-xl active:scale-95 transition-transform"
             style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: BG }}
           >

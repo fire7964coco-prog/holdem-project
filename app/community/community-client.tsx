@@ -247,18 +247,21 @@ type EventData = {
 export default function CommunityClient({
   currentUser,
   myLanguage,
+  pageLocale,
   initialPosts,
   myPosts,
   eventData,
 }: {
   currentUser: CurrentUser | null;
   myLanguage: string;
+  /** locale 전용 피드 페이지에서 전달 — UI 언어를 강제 지정 */
+  pageLocale?: string;
   initialPosts: FeedPost[];
   myPosts: FeedPost[];
   eventData: EventData;
 }) {
   const router = useRouter();
-  const L = getL(myLanguage);
+  const L = getL(pageLocale ?? myLanguage);
 
   const [tab, setTab] = useState<"home" | "explore" | "event" | "profile">("home");
   const [exploreSub, setExploreSub] = useState<"strategy" | "community">("strategy");
@@ -775,7 +778,7 @@ export default function CommunityClient({
                   <p className="text-sm font-bold mb-3" style={{ color: "#f0e8c8" }}>{L.trendingTitle}</p>
                   {trending.map((t, i) => (
                     <Link
-                      href={t.blogSlug ? `/blog/${t.blogSlug}` : `/post/${t.id}`}
+                      href={t.blogSlug ? (t.blogLocale ? `/${t.blogLocale}/blog/${t.blogSlug}` : `/blog/${t.blogSlug}`) : `/post/${t.id}`}
                       key={t.id}
                       className="flex items-start gap-3 mb-3 last:mb-0 hover:opacity-80 transition-opacity"
                     >
