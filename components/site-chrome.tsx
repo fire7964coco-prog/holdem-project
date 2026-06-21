@@ -1,56 +1,72 @@
 "use client";
 
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
-import { IntlHeader } from "@/components/intl-header";
-import { IntlFooter } from "@/components/intl-footer";
 import { localeFromPath, HTML_LANG, dirForLocale } from "@/lib/intl";
 
-function useLocale() {
-  const pathname = usePathname() || "/";
-  return localeFromPath(pathname);
-}
+const GOLD = "#d4af37";
+const BG = "#0b1120";
 
-/**
- * 피드 앱(커뮤니티) 라우트 — 홈 피드 · 로그인 · 글 상세.
- * 이 경로들은 자체 헤더/하단 네비를 가진 단순 앱 화면이므로
- * 옛 사이트 헤더·푸터(가이드·계산기·블로그 등 풀 네비)를 숨긴다.
- * 블로그·규칙 등 SEO 페이지는 기존 헤더를 그대로 유지한다.
- */
-/** locale 루트 피드 페이지 목록 (/en, /ja, /zh 등) */
 const LOCALE_FEED_ROOTS = ["/en", "/ja", "/zh", "/es", "/ar", "/pt", "/id", "/ms", "/vi", "/hi", "/de", "/tr"];
 
+/**
+ * 피드 앱 라우트 — 자체 헤더를 가지므로 SiteHeader/SiteFooter 불필요
+ * 블로그도 포함: 피드 내 티저 클릭 → 동일 다크 UI 유지
+ */
 function isFeedAppRoute(pathname: string) {
-  // 루트 한국어 피드 + 로그인 + 글 상세 + 블로그 (피드 내 티저 클릭 시 일관된 UX)
   if (
     pathname === "/" ||
     pathname === "/login" ||
     pathname.startsWith("/post/") ||
     pathname.startsWith("/blog/")
   ) return true;
-  // 각 locale 루트 피드 (/en, /en/ 등) — /en/blog는 포함하지 않는다
   return LOCALE_FEED_ROOTS.some((p) => pathname === p || pathname === p + "/");
+}
+
+/** 미니 다크 탑바 — 툴/필라 페이지에서 홈 피드로 돌아가는 버튼 */
+function AppTopBar() {
+  return (
+    <div
+      className="sticky top-0 z-50 flex items-center px-4 h-11"
+      style={{ background: BG, borderBottom: "1px solid rgba(212,175,55,0.15)" }}
+    >
+      <Link
+        href="/"
+        className="flex items-center gap-1.5 text-sm font-bold transition-opacity hover:opacity-70"
+        style={{ color: GOLD }}
+      >
+        <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+        </svg>
+        홈피드
+      </Link>
+      <span
+        className="text-[11px] font-black tracking-widest ml-auto"
+        style={{ color: "rgba(212,175,55,0.4)" }}
+      >
+        HM
+      </span>
+    </div>
+  );
 }
 
 export function SiteHeader() {
   const pathname = usePathname() || "/";
-  const locale = useLocale();
+  // 피드 앱 라우트(홈·로그인·글상세·블로그)는 자체 헤더 — 탑바 불필요
   if (isFeedAppRoute(pathname)) return null;
-  return locale ? <IntlHeader locale={locale} /> : <Header />;
+  // 나머지 모든 페이지(계산기·퀴즈·족보·규칙 등)는 미니 다크 탑바
+  return <AppTopBar />;
 }
 
+/** 옛 사이트 푸터 — 전면 피드 전환으로 완전 제거 */
 export function SiteFooter() {
-  const pathname = usePathname() || "/";
-  const locale = useLocale();
-  if (isFeedAppRoute(pathname)) return null;
-  return locale ? <IntlFooter locale={locale} /> : <Footer />;
+  return null;
 }
 
 /**
- * <main> 래퍼 — SEO 페이지에서는 고정 헤더 높이만큼 상단 패딩을 주고,
- * 피드 앱 라우트에서는 헤더가 없으므로 패딩을 제거해 빈 공간을 없앤다.
+ * <main> 래퍼 — 헤더가 없는 피드 앱 전체에서 상단 패딩 제거.
+ * 툴 페이지에서는 AppTopBar(h-11 = 44px) 높이만큼 패딩 추가.
  */
 export function MainContent({ children }: { children: React.ReactNode }) {
   const pathname = usePathname() || "/";
@@ -58,11 +74,7 @@ export function MainContent({ children }: { children: React.ReactNode }) {
   return (
     <main
       id="main-content"
-      className={
-        isApp
-          ? "relative z-10"
-          : "flex-grow pt-[68px] md:pt-20 relative z-10"
-      }
+      className={isApp ? "relative z-10" : "relative z-10 pt-11"}
     >
       {children}
     </main>
@@ -71,11 +83,10 @@ export function MainContent({ children }: { children: React.ReactNode }) {
 
 /**
  * 보조 언어 경로에서는 <html lang>을 해당 언어로, 그 외에는 "ko"로 동기화.
- * 루트 레이아웃은 SSG 유지를 위해 lang="ko"로 정적 렌더되며,
- * 이 컴포넌트가 클라이언트에서 보조 언어 경로의 lang을 보정한다.
  */
 export function HtmlLangSync() {
-  const locale = useLocale();
+  const pathname = usePathname() || "/";
+  const locale = localeFromPath(pathname);
   useEffect(() => {
     document.documentElement.lang = locale ? HTML_LANG[locale] : "ko";
     document.documentElement.dir = dirForLocale(locale);
