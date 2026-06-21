@@ -361,35 +361,10 @@ export default function BlogPost({
   const hasToc = headings.length >= 2;
 
   return (
-    <>
-      {/* Breadcrumb */}
-      <div className="bg-card border-b border-border">
-        <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-2 text-xs text-muted-foreground">
-          <Link href="/" className="hover:text-primary transition-colors">홈</Link>
-          <span>/</span>
-          <Link href="/blog" className="hover:text-primary transition-colors">블로그</Link>
-          <span>/</span>
-          <span className="text-foreground truncate max-w-[200px]">{post.title}</span>
-        </div>
-      </div>
-
-      <div className="max-w-6xl mx-auto px-4 py-12">
-        <div className={hasToc ? "xl:grid xl:grid-cols-[220px_1fr] xl:gap-10" : ""}>
-
-          {/* Sticky sidebar TOC — desktop only */}
-          {hasToc && (
-            <aside className="hidden xl:block">
-              <div className="sticky top-28">
-                <nav className="bg-card border border-border rounded-2xl p-5" aria-label="목차">
-                  <p className="text-xs font-bold uppercase tracking-widest text-primary mb-4">목차</p>
-                  <TocList headings={headings} />
-                </nav>
-              </div>
-            </aside>
-          )}
-
-          {/* Main content column */}
-          <div className="min-w-0">
+    <div className="min-h-screen" style={{ background: "#0b1120", fontFamily: "'Inter','Pretendard',sans-serif" }}>
+      <div className="max-w-2xl mx-auto px-4 pt-4 pb-20">
+        {/* Main content column */}
+        <div className="min-w-0">
             {/* Article Header */}
             <header className="mb-10">
               <div className="flex flex-wrap items-center gap-2 mb-4">
@@ -680,8 +655,7 @@ export default function BlogPost({
                   </Link>
                 </div>
           </div>{/* end main content column */}
-        </div>{/* end grid */}
       </div>
-    </>
+    </div>
   );
 }
