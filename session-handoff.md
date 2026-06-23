@@ -51,16 +51,15 @@
   - `chat-tab.tsx`, `event-tab.tsx`, `community-client.tsx`, `post-detail-client.tsx` → 토큰 일괄 적용
   - `layout.tsx` → Noto Sans KR / DM Sans weight 500·600 추가
   - 타 언어 포스트 opacity 흐림 제거
-- 로컬 dev 서버 실행 중 (port 3001, port 3000 이미 점유) — **배포 아직 안 함**
+- 커뮤니티 UI 가독성 개선 → 배포 완료 (커밋: `ad112ca`)
 - GSC 분석: `/en/blog/texas-holdem-rules-for-beginners` 3개월 659 노출·순위 53.7·클릭 0
   - 영어 포스트는 `lib/posts-en/` 에 총 **20개** 존재
   - 영어 전략: 1페이지 진입이 목표 → 기존 페이지 강화 → 롱테일 공략 순서
 
 ### 다음 세션 할 일 (우선순위 순)
-1. **영어 SEO 강화** — `/en/blog/texas-holdem-rules-for-beginners` 경쟁 분석 후 컨텐츠 보강
-2. **가독성 개선 배포** — 로컬 확인 완료 후 `git push`
+1. **영어 SEO 강화 계속** — 다른 EN 포스트 GSC 분석 및 보강 (texas-holdem-rules-for-beginners 완료)
+2. **블로그 포스트 추가** — 현재 29개(KR) + 20개(EN), 목표 50개
 3. **디자인 재검토** — 크림색 editorial 디자인 (나중에)
-4. **블로그 포스트 추가** — 현재 29개(KR) + 20개(EN), 목표 50개
 
 ---
 
