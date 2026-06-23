@@ -12,12 +12,13 @@
  */
 
 @theme inline {
-  /* Inter → 영문/숫자 UI, Noto Sans KR → 한글 폴백 */
-  --font-sans: var(--font-inter), var(--font-noto-sans-kr), -apple-system, BlinkMacSystemFont,
+  /* DM Sans를 앞에 배치 → 라틴 글자·숫자는 팩트풀니스 감성 DM Sans 렌더
+     한글은 DM Sans에 없으므로 자동으로 Noto Sans KR 폴백              */
+  --font-sans: var(--font-dm-sans), var(--font-noto-sans-kr), -apple-system, BlinkMacSystemFont,
     'system-ui', Roboto, 'Helvetica Neue', 'Segoe UI',
     'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
-  /* Lora → 에디토리얼 세리프 헤드라인 */
-  --font-serif: var(--font-lora), var(--font-noto-sans-kr), Georgia, 'Times New Roman', serif;
+  --font-serif: var(--font-dm-sans), var(--font-noto-sans-kr), -apple-system, BlinkMacSystemFont,
+    'system-ui', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
 
   /* ── 코어 시맨틱 토큰 ─────────────────────────────── */
   --color-background: hsl(var(--background));

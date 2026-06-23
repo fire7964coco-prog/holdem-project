@@ -13,10 +13,6 @@ import PostCard, {
   BG,
   CARD,
   BORDER,
-  INK,
-  MUTED,
-  RED,
-  NAV,
 } from "./post-card";
 import EventTab from "./event-tab";
 import ChatTab from "./chat-tab";
@@ -603,19 +599,19 @@ export default function CommunityClient({
         {tab === "profile" && (
           !currentUser
             ? (
-              <div className="px-5 pt-6">
-                <div className="rounded p-6 text-center" style={{ background: CARD, border: `1px solid ${BORDER}` }}>
+              <div className="px-4">
+                <div className="rounded-2xl p-6 text-center" style={{ background: CARD, border: "1px solid rgba(212,175,55,0.2)" }}>
                   <div className="text-3xl mb-3">👤</div>
-                  <p className="text-[15px] font-medium mb-1" style={{ color: INK, fontFamily: "var(--font-lora),serif" }}>{L.loginRequired}</p>
-                  <p className="text-sm mb-4" style={{ color: MUTED, fontFamily: "var(--font-inter),sans-serif" }}>{L.loginRequiredSub}</p>
-                  <Link href="/login" className="inline-block px-5 py-2.5 rounded text-sm font-semibold" style={{ background: INK, color: BG, fontFamily: "var(--font-inter),sans-serif" }}>
+                  <p className="text-sm font-bold mb-1" style={{ color: "#f0e8c8" }}>{L.loginRequired}</p>
+                  <p className="text-xs mb-4" style={{ color: "rgba(255,255,255,0.4)" }}>{L.loginRequiredSub}</p>
+                  <Link href="/login" className="inline-block px-5 py-2.5 rounded-xl text-sm font-bold" style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: BG }}>
                     {L.loginSignup}
                   </Link>
                 </div>
               </div>
             ) : (
-              <div className="px-5 pt-4 space-y-4">
-                <div className="flex flex-col items-center py-6 rounded" style={{ background: CARD, border: `1px solid ${BORDER}` }}>
+              <div className="px-3 space-y-3">
+                <div className="flex flex-col items-center py-6 rounded-2xl" style={{ background: CARD, border: "1px solid rgba(212,175,55,0.12)" }}>
                   <Avatar post={{ type: "community", authorAvatar: currentUser.avatar_url, authorNickname: currentUser.nickname }} size={64} />
                   {editingNickname ? (
                     <form
@@ -631,28 +627,28 @@ export default function CommunityClient({
                         value={nicknameInput}
                         maxLength={20}
                         autoFocus
-                        className="w-full px-3 py-2 rounded text-sm text-center outline-none"
-                        style={{ background: BG, color: INK, border: `1px solid ${BORDER}`, fontFamily: "var(--font-inter),sans-serif" }}
+                        className="w-full px-3 py-2 rounded-xl text-sm text-center outline-none"
+                        style={{ background: "rgba(255,255,255,0.08)", color: "#f0e8c8", border: "1px solid rgba(212,175,55,0.3)" }}
                         onChange={(e) => setNicknameInput(e.target.value)}
                       />
-                      {nicknameErr && <p className="text-[11px]" style={{ color: RED }}>{nicknameErr}</p>}
+                      {nicknameErr && <p className="text-[11px]" style={{ color: "#f87171" }}>{nicknameErr}</p>}
                       <div className="flex gap-2 w-full">
                         <button
                           type="button"
                           onClick={() => { setEditingNickname(false); setNicknameErr(null); }}
-                          className="flex-1 py-1.5 rounded text-xs font-semibold"
-                          style={{ background: BORDER, color: MUTED, fontFamily: "var(--font-inter),sans-serif" }}
+                          className="flex-1 py-1.5 rounded-lg text-xs font-semibold"
+                          style={{ background: "rgba(255,255,255,0.06)", color: "rgba(255,255,255,0.5)" }}
                         >취소</button>
                         <button
                           type="submit"
-                          className="flex-[2] py-1.5 rounded text-xs font-semibold"
-                          style={{ background: INK, color: BG, fontFamily: "var(--font-inter),sans-serif" }}
+                          className="flex-[2] py-1.5 rounded-lg text-xs font-bold"
+                          style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: BG }}
                         >저장</button>
                       </div>
                     </form>
                   ) : (
                     <div className="flex items-center gap-1.5 mt-3">
-                      <p className="font-medium text-base" style={{ color: INK, fontFamily: "var(--font-lora),serif" }}>{FLAG[currentUser.language] ?? "🌐"} {currentUser.nickname}</p>
+                      <p className="font-bold text-base" style={{ color: "#f0e8c8" }}>{FLAG[currentUser.language] ?? "🌐"} {currentUser.nickname}</p>
                       <button
                         onClick={() => { setEditingNickname(true); setNicknameInput(currentUser.nickname); }}
                         className="text-[13px] opacity-50 hover:opacity-100 transition-opacity"
@@ -661,7 +657,7 @@ export default function CommunityClient({
                     </div>
                   )}
                   {currentUser.badge && badgeLabel[currentUser.badge] && (
-                    <span className="text-[11px] font-semibold px-2.5 py-0.5 rounded mt-2" style={{ background: BORDER, color: MUTED, fontFamily: "var(--font-inter),sans-serif" }}>
+                    <span className="text-[11px] font-bold px-2.5 py-0.5 rounded-full mt-2" style={{ background: "rgba(212,175,55,0.12)", color: GOLD }}>
                       {badgeLabel[currentUser.badge]}
                     </span>
                   )}
@@ -672,13 +668,13 @@ export default function CommunityClient({
                       { label: L.commentsStat, val: totalComments },
                     ].map((s) => (
                       <div key={s.label} className="text-center">
-                        <p className="text-base font-semibold" style={{ color: INK, fontFamily: "var(--font-lora),serif" }}>{s.val}</p>
-                        <p className="text-[10px]" style={{ color: MUTED, fontFamily: "var(--font-inter),sans-serif" }}>{s.label}</p>
+                        <p className="text-base font-bold" style={{ color: "#f0e8c8" }}>{s.val}</p>
+                        <p className="text-[10px]" style={{ color: "rgba(255,255,255,0.4)" }}>{s.label}</p>
                       </div>
                     ))}
                   </div>
                 </div>
-                <p className="text-[11px] font-bold tracking-widest uppercase px-1 pt-1" style={{ color: MUTED, fontFamily: "var(--font-inter),sans-serif" }}>{L.myPostsSection}</p>
+                <p className="text-xs font-bold px-1 pt-1" style={{ color: "rgba(212,175,55,0.7)" }}>{L.myPostsSection}</p>
                 {myPosts.length === 0
                   ? <EmptyState icon="✍️" title={L.noPostsTitle} sub={L.noPostsSub} />
                   : myPosts.map((p) => (
@@ -698,42 +694,39 @@ export default function CommunityClient({
   const WriteModal = writeOpen && (
     <div
       className="fixed inset-0 z-50 flex items-end lg:items-center justify-center"
-      style={{ background: "rgba(32,49,42,0.5)", backdropFilter: "blur(4px)" }}
+      style={{ background: "rgba(0,0,0,0.6)" }}
       onClick={() => setWriteOpen(false)}
     >
       <div
-        className="w-full max-w-lg rounded-t-2xl lg:rounded-xl p-5"
-        style={{ background: BG, borderTop: `2px solid ${INK}` }}
+        className="w-full max-w-lg rounded-t-2xl lg:rounded-2xl p-5"
+        style={{ background: CARD, border: "1px solid rgba(212,175,55,0.2)" }}
         onClick={(e) => e.stopPropagation()}
       >
-        <p className="text-base font-medium mb-3" style={{ color: INK, fontFamily: FONT_SERIF }}>{L.writeModalTitle}</p>
+        <p className="text-sm font-bold mb-3" style={{ color: "#f0e8c8" }}>{L.writeModalTitle}</p>
         <textarea
           value={draft}
           onChange={(e) => setDraft(e.target.value)}
           placeholder={L.draftPlaceholder}
           rows={4}
-          className="w-full px-3 py-2.5 rounded text-sm outline-none resize-none"
-          style={{ background: CARD, color: INK, border: `1px solid ${BORDER}`, fontFamily: FONT_SANS }}
+          className="w-full px-3 py-2.5 rounded-xl text-sm outline-none resize-none"
+          style={{ background: "rgba(255,255,255,0.06)", color: "#f0e8c8", border: "1px solid rgba(255,255,255,0.1)" }}
         />
         <div className="flex gap-2 mt-3">
           <button
             onClick={() => setWriteOpen(false)}
-            className="flex-1 py-2.5 rounded text-sm font-semibold"
-            style={{ background: CARD, color: MUTED, border: `1px solid ${BORDER}`, fontFamily: FONT_SANS }}
+            className="flex-1 py-2.5 rounded-xl text-sm font-semibold"
+            style={{ background: "rgba(255,255,255,0.06)", color: "rgba(255,255,255,0.5)" }}
           >{L.cancel}</button>
           <button
             onClick={onSubmitPost}
             disabled={isPending || !draft.trim()}
-            className="flex-[2] py-2.5 rounded text-sm font-semibold disabled:opacity-50"
-            style={{ background: INK, color: BG, fontFamily: FONT_SANS }}
+            className="flex-[2] py-2.5 rounded-xl text-sm font-bold disabled:opacity-50"
+            style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: BG }}
           >{isPending ? L.posting : L.postNow}</button>
         </div>
       </div>
     </div>
   );
-
-  const FONT_SANS = "var(--font-inter), var(--font-noto-sans-kr), sans-serif";
-  const FONT_SERIF = "var(--font-lora), Georgia, serif";
 
   if (loading) {
     return (
@@ -741,102 +734,58 @@ export default function CommunityClient({
         <div style={{ textAlign: "center" }}>
           <div
             style={{
-              width: 36, height: 36, borderRadius: "50%",
-              border: `2.5px solid rgba(32,49,42,0.12)`,
-              borderTopColor: INK,
+              width: 40, height: 40, borderRadius: "50%",
+              border: `3px solid rgba(212,175,55,0.2)`,
+              borderTopColor: GOLD,
               animation: "spin 0.8s linear infinite",
               margin: "0 auto 12px",
             }}
           />
           <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
-          <p style={{ color: MUTED, fontSize: 13, fontFamily: FONT_SANS }}>Loading…</p>
+          <p style={{ color: "rgba(255,255,255,0.3)", fontSize: 13 }}>Loading…</p>
         </div>
       </div>
     );
   }
 
   return (
-    <div style={{ background: BG, fontFamily: FONT_SANS }}>
+    <div style={{ background: BG, fontFamily: "'Inter','Pretendard',sans-serif" }}>
 
       {/* ════════════════════════════════════════════════════════
           MOBILE  (< lg)
       ════════════════════════════════════════════════════════ */}
       <div className="lg:hidden min-h-screen flex flex-col">
-        {/* 모바일 마스트헤드 */}
+        {/* 모바일 헤더 */}
         <header
-          className="sticky top-0 z-40 px-5"
-          style={{ background: BG, borderBottom: `1px solid ${BORDER}` }}
+          className="sticky top-0 z-40 flex items-center justify-between px-4 py-3"
+          style={{ background: "rgba(11,17,32,0.95)", borderBottom: "1px solid rgba(212,175,55,0.12)", backdropFilter: "blur(10px)" }}
         >
-          {/* 상단 줄: 서브 라벨 + 로그인 */}
-          <div className="flex items-center justify-between pt-3 pb-1">
-            <span
-              className="text-[11px] font-bold tracking-widest uppercase"
-              style={{ color: MUTED, fontFamily: FONT_SANS }}
-            >
-              글로벌 포커 커뮤니티
-            </span>
-            {currentUser ? (
-              <div className="flex items-center gap-2">
-                <span className="text-[11px]" style={{ color: MUTED }}>
-                  {FLAG[currentUser.language] ?? "🌐"} {currentUser.nickname}
-                </span>
-                <form action={signOut}>
-                  <button
-                    className="text-[11px] font-semibold px-2.5 py-1 rounded-full"
-                    style={{ background: CARD, color: MUTED, border: `1px solid ${BORDER}` }}
-                  >
-                    {L.logout}
-                  </button>
-                </form>
-              </div>
-            ) : (
-              <Link
-                href="/login"
-                className="text-[11px] font-bold px-3 py-1 rounded-full"
-                style={{ background: INK, color: BG }}
-              >
-                {L.login}
-              </Link>
-            )}
-          </div>
-
-          {/* 마스트헤드 타이틀 */}
-          <h1
-            className="text-[28px] leading-tight pb-3"
-            style={{ color: INK, fontFamily: FONT_SERIF, fontWeight: 500, letterSpacing: "-0.4px" }}
-          >
-            홀덤 라운지
-          </h1>
-
-          {/* 필터 탭 (언더라인 스타일) */}
-          {tab === "home" && (
-            <div className="flex items-center gap-5 -mx-1">
-              {FILTER_PILLS.map((f) => {
-                const labels: Record<string, string> = { All: "전체", Strategy: "전략", Community: "커뮤니티" };
-                const active = feedFilter === f;
-                return (
-                  <button
-                    key={f}
-                    onClick={() => setFeedFilter(f)}
-                    className="pb-2 text-[14px] transition-all"
-                    style={{
-                      color: active ? INK : MUTED,
-                      fontWeight: active ? 700 : 400,
-                      fontStyle: active ? "normal" : "italic",
-                      borderBottom: active ? `2px solid ${INK}` : "2px solid transparent",
-                      fontFamily: FONT_SERIF,
-                    }}
-                  >
-                    {labels[f]}
-                  </button>
-                );
-              })}
+          <div className="flex items-center gap-2">
+            <div className="w-7 h-7 rounded-lg flex items-center justify-center" style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)" }}>
+              <span className="font-black text-xs" style={{ color: BG }}>HM</span>
             </div>
+            <span className="font-bold text-base" style={{ color: "#f0e8c8" }}>Community</span>
+          </div>
+          {currentUser ? (
+            <div className="flex items-center gap-2">
+              <span className="text-xs" style={{ color: "rgba(255,255,255,0.6)" }}>
+                {FLAG[currentUser.language] ?? "🌐"} {currentUser.nickname}
+              </span>
+              <form action={signOut}>
+                <button className="text-xs font-semibold px-3 py-1.5 rounded-full" style={{ background: "rgba(255,255,255,0.06)", color: "rgba(255,255,255,0.6)" }}>
+                  {L.logout}
+                </button>
+              </form>
+            </div>
+          ) : (
+            <Link href="/login" className="text-xs font-bold px-3 py-1.5 rounded-full" style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: BG }}>
+              {L.login}
+            </Link>
           )}
         </header>
 
         {/* 모바일 본문 */}
-        <div className="flex-1 overflow-y-auto pb-24">
+        <div className="flex-1 overflow-y-auto pt-3 pb-24">
           <TabContent />
         </div>
 
@@ -845,21 +794,21 @@ export default function CommunityClient({
           <button
             onClick={() => currentUser ? setWriteOpen(true) : router.push("/login")}
             className="fixed flex items-center justify-center rounded-full active:scale-95 transition-transform"
-            style={{ bottom: 80, right: 20, width: 48, height: 48, background: INK, boxShadow: "0 4px 16px rgba(32,49,42,0.35)", zIndex: 45 }}
+            style={{ bottom: 80, right: 20, width: 52, height: 52, background: "linear-gradient(135deg,#d4af37,#f0d060)", boxShadow: "0 4px 20px rgba(212,175,55,0.4)", zIndex: 45 }}
           >
-            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} style={{ color: BG }}>
+            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} style={{ color: BG }}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
             </svg>
           </button>
         )}
 
-        {/* 모바일 하단 네비 (다크그린) */}
+        {/* 모바일 하단 네비 */}
         <nav
           className="fixed bottom-0 left-0 right-0 flex items-center"
-          style={{ background: NAV, borderTop: `1px solid rgba(255,255,255,0.06)`, height: 62, zIndex: 40 }}
+          style={{ background: "rgba(11,17,32,0.95)", backdropFilter: "blur(12px)", borderTop: "1px solid rgba(212,175,55,0.12)", height: 64, zIndex: 40 }}
         >
           {([
-            { key: "home",    label: L.feed,    icon: "⊞" },
+            { key: "home",    label: L.feed,    icon: "🏠" },
             { key: "chat",    label: L.chat,    icon: "💬" },
             { key: "event",   label: L.event,   icon: "🎰" },
             { key: "profile", label: L.profile, icon: "👤" },
@@ -867,11 +816,11 @@ export default function CommunityClient({
             <button
               key={n.key}
               onClick={() => setTab(n.key)}
-              className="flex-1 flex flex-col items-center justify-center gap-0.5 py-2"
-              style={{ color: tab === n.key ? BG : "rgba(244,240,231,0.4)" }}
+              className="flex-1 flex flex-col items-center justify-center gap-1 py-2"
+              style={{ color: tab === n.key ? GOLD : "rgba(255,255,255,0.3)" }}
             >
-              <span className="text-[16px]">{n.icon}</span>
-              <span className="text-[10px] font-semibold" style={{ fontFamily: FONT_SANS }}>{n.label}</span>
+              <span className="text-[15px]">{n.icon}</span>
+              <span className="text-[10px] font-semibold">{n.label}</span>
             </button>
           ))}
         </nav>
@@ -882,27 +831,32 @@ export default function CommunityClient({
       ════════════════════════════════════════════════════════ */}
       <div className="hidden lg:block min-h-screen">
 
-        {/* 데스크탑 마스트헤드 헤더 */}
+        {/* 데스크탑 스티키 헤더 */}
         <header
           className="sticky top-0 z-50"
-          style={{ background: BG, borderBottom: `1px solid ${BORDER}` }}
+          style={{ background: "rgba(11,17,32,0.96)", borderBottom: `1px solid ${BORDER}`, backdropFilter: "blur(12px)" }}
         >
-          <div className="flex items-center gap-6 px-8 max-w-screen-xl mx-auto">
-            {/* 마스트헤드 타이틀 */}
-            <div className="flex flex-col justify-center py-3 mr-4 flex-shrink-0" style={{ borderRight: `1px solid ${BORDER}`, paddingRight: 24 }}>
-              <span className="text-[10px] font-bold tracking-widest uppercase" style={{ color: MUTED, fontFamily: FONT_SANS }}>
-                글로벌 포커 커뮤니티
-              </span>
-              <span
-                className="text-[22px] leading-tight"
-                style={{ color: INK, fontFamily: FONT_SERIF, fontWeight: 500, letterSpacing: "-0.3px" }}
-              >
-                홀덤 라운지
-              </span>
+          <div className="flex items-center gap-4 px-6 py-3 max-w-screen-xl mx-auto">
+            {/* 로고 */}
+            <div className="flex items-center gap-2.5 mr-4 flex-shrink-0">
+              <div className="w-8 h-8 rounded-xl flex items-center justify-center" style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)" }}>
+                <span className="font-black text-sm" style={{ color: BG }}>HM</span>
+              </div>
+              <span className="font-black text-base" style={{ color: GOLD }}>HoldemMaster</span>
+              <span className="text-xs px-2 py-0.5 rounded-full font-semibold" style={{ background: "rgba(212,175,55,0.1)", color: "rgba(212,175,55,0.7)" }}>Community</span>
             </div>
 
-            {/* 상단 네비 (언더라인) */}
-            <nav className="flex items-center gap-6">
+            {/* 검색창 */}
+            <div
+              className="flex items-center gap-2 flex-1 max-w-sm px-4 py-2 rounded-full"
+              style={{ background: "rgba(255,255,255,0.05)", border: `1px solid ${BORDER}` }}
+            >
+              <span style={{ color: "rgba(255,255,255,0.3)" }}>🔍</span>
+              <span className="text-sm" style={{ color: "rgba(255,255,255,0.2)" }}>{L.searchPlaceholder}</span>
+            </div>
+
+            {/* 상단 네비 */}
+            <nav className="flex items-center gap-1 ml-4">
               {([
                 { key: "home",    label: L.feed },
                 { key: "chat",    label: L.chat },
@@ -911,13 +865,10 @@ export default function CommunityClient({
                 <button
                   key={n.key}
                   onClick={() => setTab(n.key)}
-                  className="py-4 text-sm transition-all"
+                  className="px-4 py-2 rounded-full text-sm font-semibold transition-all"
                   style={{
-                    color: tab === n.key ? INK : MUTED,
-                    fontWeight: tab === n.key ? 700 : 400,
-                    fontStyle: tab === n.key ? "normal" : "italic",
-                    borderBottom: tab === n.key ? `2px solid ${INK}` : "2px solid transparent",
-                    fontFamily: FONT_SERIF,
+                    background: tab === n.key ? "rgba(212,175,55,0.15)" : "transparent",
+                    color: tab === n.key ? GOLD : "rgba(255,255,255,0.4)",
                   }}
                 >
                   {n.label}
@@ -926,23 +877,26 @@ export default function CommunityClient({
             </nav>
 
             {/* 우측 */}
-            <div className="flex items-center gap-3 ml-auto">
-              <span className="text-sm" style={{ color: MUTED, fontFamily: FONT_SANS }}>
+            <div className="flex items-center gap-2 ml-auto">
+              <div
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm"
+                style={{ background: "rgba(255,255,255,0.05)", border: `1px solid ${BORDER}`, color: "rgba(255,255,255,0.4)" }}
+              >
                 {FLAG[myLanguage] ?? "🌐"} {myLanguage.toUpperCase()}
-              </span>
+              </div>
               {currentUser ? (
                 <>
-                  <button
-                    className="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold"
-                    style={{ background: INK, color: BG, fontFamily: FONT_SANS }}
+                  <div
+                    className="w-8 h-8 rounded-full flex items-center justify-center text-xs font-black cursor-pointer"
+                    style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: BG }}
                     onClick={() => setTab("profile")}
                   >
                     {currentUser.nickname.slice(0, 2).toUpperCase()}
-                  </button>
+                  </div>
                   <form action={signOut}>
                     <button
                       className="text-xs font-semibold px-3 py-1.5 rounded-full"
-                      style={{ background: CARD, color: MUTED, border: `1px solid ${BORDER}`, fontFamily: FONT_SANS }}
+                      style={{ background: "rgba(255,255,255,0.06)", color: "rgba(255,255,255,0.5)" }}
                     >
                       {L.logout}
                     </button>
@@ -951,8 +905,8 @@ export default function CommunityClient({
               ) : (
                 <Link
                   href="/login"
-                  className="text-sm font-semibold px-4 py-2 rounded-full"
-                  style={{ background: INK, color: BG, fontFamily: FONT_SANS }}
+                  className="text-sm font-bold px-4 py-2 rounded-full"
+                  style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: BG }}
                 >
                   {L.loginArrow}
                 </Link>
@@ -965,8 +919,8 @@ export default function CommunityClient({
         <div className="flex max-w-screen-xl mx-auto px-4 py-6 gap-6">
 
           {/* ── 왼쪽 사이드바 ── */}
-          <aside style={{ width: 200, flexShrink: 0 }}>
-            <div className="sticky top-20 flex flex-col gap-0.5">
+          <aside style={{ width: 220, flexShrink: 0 }}>
+            <div className="sticky top-20 flex flex-col gap-1">
               {([
                 { key: "home",    icon: "⊞", label: L.feed },
                 { key: "chat",    icon: "💬", label: L.chat },
@@ -976,21 +930,18 @@ export default function CommunityClient({
                 <button
                   key={item.key}
                   onClick={() => setTab(item.key)}
-                  className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-left transition-all"
+                  className="flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-semibold text-left transition-all"
                   style={{
-                    background: tab === item.key ? CARD : "transparent",
-                    color: tab === item.key ? INK : MUTED,
-                    fontWeight: tab === item.key ? 600 : 400,
-                    fontFamily: FONT_SANS,
-                    borderLeft: tab === item.key ? `3px solid ${INK}` : "3px solid transparent",
+                    background: tab === item.key ? "rgba(212,175,55,0.1)" : "transparent",
+                    color: tab === item.key ? GOLD : "rgba(255,255,255,0.4)",
                   }}
                 >
                   <span>{item.icon}</span>
                   <span>{item.label}</span>
                   {item.badge && (
                     <span
-                      className="ml-auto text-[9px] px-1.5 py-0.5 rounded font-bold"
-                      style={{ background: "#7a2e2e", color: "#f4f0e7" }}
+                      className="ml-auto text-[9px] px-1.5 py-0.5 rounded-full font-black"
+                      style={{ background: "#f97316", color: "#fff" }}
                     >
                       {item.badge}
                     </span>
@@ -998,12 +949,12 @@ export default function CommunityClient({
                 </button>
               ))}
 
-              <div style={{ borderTop: `1px solid ${BORDER}`, margin: "10px 0" }} />
+              <div style={{ borderTop: `1px solid ${BORDER}`, margin: "8px 0" }} />
 
               <button
                 onClick={() => currentUser ? setWriteOpen(true) : router.push("/login")}
-                className="w-full py-2.5 rounded-lg text-sm font-semibold"
-                style={{ background: INK, color: BG, fontFamily: FONT_SANS }}
+                className="w-full py-2.5 rounded-xl text-sm font-bold"
+                style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: BG }}
               >
                 {L.writePost}
               </button>
@@ -1012,63 +963,56 @@ export default function CommunityClient({
 
           {/* ── 메인 피드 ── */}
           <main style={{ flex: 1, maxWidth: 640 }}>
-            {/* 필터 (언더라인, Home 탭에서만) */}
+            {/* 필터 칩 (Home 탭에서만) */}
             {tab === "home" && (
               <>
-                <div className="flex items-center gap-6 mb-5" style={{ borderBottom: `1px solid ${BORDER}` }}>
-                  {FILTER_PILLS.map((f) => {
-                    const labels: Record<string, string> = { All: "전체", Strategy: "전략", Community: "커뮤니티" };
-                    const active = feedFilter === f;
-                    return (
-                      <button
-                        key={f}
-                        onClick={() => setFeedFilter(f)}
-                        className="pb-3 text-sm transition-all"
-                        style={{
-                          color: active ? INK : MUTED,
-                          fontWeight: active ? 700 : 400,
-                          fontStyle: active ? "normal" : "italic",
-                          borderBottom: active ? `2px solid ${INK}` : "2px solid transparent",
-                          marginBottom: -1,
-                          fontFamily: FONT_SERIF,
-                        }}
-                      >
-                        {labels[f]}
-                      </button>
-                    );
-                  })}
-                  <span className="ml-auto text-xs pb-3" style={{ color: MUTED, fontFamily: FONT_SANS }}>
-                    🌏 {Object.keys(FLAG).length}개 언어
+                <div className="flex items-center gap-2 mb-4 flex-wrap">
+                  {FILTER_PILLS.map((f) => (
+                    <button
+                      key={f}
+                      onClick={() => setFeedFilter(f)}
+                      className="px-3 py-1.5 rounded-full text-xs font-semibold transition-all"
+                      style={{
+                        background: feedFilter === f ? "rgba(212,175,55,0.15)" : "rgba(255,255,255,0.05)",
+                        color: feedFilter === f ? GOLD : "rgba(255,255,255,0.4)",
+                        border: `1px solid ${feedFilter === f ? "rgba(212,175,55,0.3)" : "rgba(255,255,255,0.08)"}`,
+                      }}
+                    >
+                      {f}
+                    </button>
+                  ))}
+                  <span className="ml-auto text-xs" style={{ color: "rgba(255,255,255,0.3)" }}>
+                    🌏 {Object.keys(FLAG).length} languages
                   </span>
                 </div>
 
-                {/* 글쓰기 박스 */}
+                {/* 글쓰기 박스 (인라인) */}
                 <div
-                  className="rounded p-4 mb-5 flex items-center gap-3 cursor-pointer"
+                  className="rounded-2xl p-4 mb-4 flex items-center gap-3 cursor-pointer"
                   style={{ background: CARD, border: `1px solid ${BORDER}` }}
                   onClick={() => currentUser ? setWriteOpen(true) : router.push("/login")}
                 >
                   {currentUser ? (
                     <div
-                      className="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0"
-                      style={{ background: INK, color: BG, fontFamily: FONT_SANS }}
+                      className="w-9 h-9 rounded-full flex items-center justify-center text-xs font-black flex-shrink-0"
+                      style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: BG }}
                     >
                       {currentUser.nickname.slice(0, 2).toUpperCase()}
                     </div>
                   ) : (
-                    <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: BORDER }}>
-                      <span style={{ color: MUTED }}>👤</span>
+                    <div className="w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: "rgba(255,255,255,0.08)" }}>
+                      <span style={{ color: "rgba(255,255,255,0.4)" }}>👤</span>
                     </div>
                   )}
                   <div
-                    className="flex-1 px-4 py-2 rounded text-sm"
-                    style={{ background: BG, color: MUTED, border: `1px solid ${BORDER}`, fontFamily: FONT_SANS }}
+                    className="flex-1 px-4 py-2 rounded-full text-sm"
+                    style={{ background: "rgba(255,255,255,0.04)", color: "rgba(255,255,255,0.2)", border: `1px solid ${BORDER}` }}
                   >
                     {L.writePlaceholder}
                   </div>
                   <button
-                    className="px-4 py-2 rounded text-sm font-semibold flex-shrink-0"
-                    style={{ background: INK, color: BG, fontFamily: FONT_SANS }}
+                    className="px-4 py-2 rounded-full text-sm font-bold flex-shrink-0"
+                    style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: BG }}
                   >
                     {L.postButton}
                   </button>
@@ -1076,11 +1020,11 @@ export default function CommunityClient({
 
                 {/* 다국어 배너 */}
                 <div
-                  className="rounded px-4 py-2.5 mb-5 flex items-center gap-2"
-                  style={{ background: CARD, border: `1px solid ${BORDER}` }}
+                  className="rounded-xl px-4 py-2.5 mb-4 flex items-center gap-2"
+                  style={{ background: "rgba(212,175,55,0.06)", border: "1px solid rgba(212,175,55,0.15)" }}
                 >
                   <span>🌐</span>
-                  <p className="text-xs" style={{ color: MUTED, fontFamily: FONT_SANS }}>
+                  <p className="text-xs" style={{ color: "rgba(255,255,255,0.4)" }}>
                     {L.multiLangBannerFull}
                   </p>
                 </div>
@@ -1091,85 +1035,69 @@ export default function CommunityClient({
           </main>
 
           {/* ── 오른쪽 사이드바 ── */}
-          <aside style={{ width: 240, flexShrink: 0 }}>
-            <div className="sticky top-20 flex flex-col gap-5">
+          <aside style={{ width: 260, flexShrink: 0 }}>
+            <div className="sticky top-20 flex flex-col gap-4">
 
               {/* 트렌딩 */}
               {trending.length > 0 && (
-                <div>
-                  <p
-                    className="text-[11px] font-bold tracking-widest uppercase mb-3"
-                    style={{ color: MUTED, fontFamily: FONT_SANS }}
-                  >
-                    🔥 이번 주 인기
-                  </p>
+                <div className="rounded-2xl p-4" style={{ background: CARD, border: `1px solid ${BORDER}` }}>
+                  <p className="text-sm font-bold mb-3" style={{ color: "#f0e8c8" }}>{L.trendingTitle}</p>
                   {trending.map((t, i) => (
                     <Link
                       href={t.blogSlug ? (t.blogLocale ? `/${t.blogLocale}/blog/${t.blogSlug}` : `/blog/${t.blogSlug}`) : `/post/${t.id}`}
                       key={t.id}
-                      className="flex items-start gap-3 mb-3 last:mb-0 group"
+                      className="flex items-start gap-3 mb-3 last:mb-0 hover:opacity-80 transition-opacity"
                     >
                       <span
-                        className="text-sm font-bold w-4 flex-shrink-0 mt-0.5"
-                        style={{ color: i === 0 ? RED : MUTED, fontFamily: FONT_SANS }}
+                        className="text-base font-black w-5 flex-shrink-0 text-center"
+                        style={{ color: i === 0 ? GOLD : "rgba(255,255,255,0.3)" }}
                       >
                         {i + 1}
                       </span>
                       <div>
-                        <p
-                          className="text-[13px] leading-snug line-clamp-2 group-hover:underline"
-                          style={{ color: INK, fontFamily: FONT_SERIF }}
-                        >
+                        <p className="text-xs font-semibold leading-snug line-clamp-2" style={{ color: "#f0e8c8" }}>
                           {FLAG[t.language] ?? "🌐"} {t.title || t.content.slice(0, 40)}
                         </p>
-                        <p className="text-[11px] mt-0.5" style={{ color: MUTED, fontFamily: FONT_SANS }}>
+                        <p className="text-[10px] mt-0.5" style={{ color: "rgba(255,255,255,0.3)" }}>
                           ❤️ {t.likeCount} · 💬 {t.commentCount}
                         </p>
                       </div>
                     </Link>
                   ))}
-                  <div style={{ borderBottom: `1px solid ${BORDER}`, marginTop: 8 }} />
                 </div>
               )}
 
               {/* 이벤트 배너 */}
-              <div className="rounded p-4" style={{ background: CARD, border: `1px solid ${BORDER}` }}>
-                <p className="text-[10px] font-bold tracking-widest uppercase mb-1" style={{ color: RED, fontFamily: FONT_SANS }}>
-                  🎰 이벤트
-                </p>
-                <p
-                  className="text-[16px] font-medium mb-1.5 whitespace-pre-line"
-                  style={{ color: INK, fontFamily: FONT_SERIF }}
-                >
-                  {L.eventTitle}
-                </p>
-                <p className="text-[12px] mb-3 whitespace-pre-line" style={{ color: MUTED, fontFamily: FONT_SANS }}>
+              <div
+                className="rounded-2xl p-4"
+                style={{ background: "linear-gradient(135deg,rgba(212,175,55,0.12),rgba(212,175,55,0.04))", border: "1px solid rgba(212,175,55,0.25)" }}
+              >
+                <p className="text-xs font-bold mb-1" style={{ color: GOLD }}>{L.eventBadge}</p>
+                <p className="text-sm font-bold mb-1.5 whitespace-pre-line" style={{ color: "#f0e8c8" }}>{L.eventTitle}</p>
+                <p className="text-xs mb-3 whitespace-pre-line" style={{ color: "rgba(255,255,255,0.4)" }}>
                   {L.eventDesc}
                 </p>
                 <button
                   onClick={() => setTab("event")}
-                  className="w-full py-2 rounded text-sm font-semibold"
-                  style={{ background: INK, color: BG, fontFamily: FONT_SANS }}
+                  className="w-full py-2 rounded-xl text-sm font-bold"
+                  style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: BG }}
                 >
                   {L.eventButton}
                 </button>
               </div>
 
               {/* 커뮤니티 언어 */}
-              <div>
-                <p className="text-[11px] font-bold tracking-widest uppercase mb-2" style={{ color: MUTED, fontFamily: FONT_SANS }}>
-                  {L.communityLang}
-                </p>
+              <div className="rounded-2xl p-4" style={{ background: CARD, border: `1px solid ${BORDER}` }}>
+                <p className="text-xs font-bold mb-2" style={{ color: "rgba(255,255,255,0.4)" }}>{L.communityLang}</p>
                 <div className="flex flex-wrap gap-1.5">
                   {(["ko", "en", "ja", "zh", "es", "de"] as const).map((l) => (
                     <span
                       key={l}
-                      className="text-[11px] px-2 py-1 rounded font-semibold"
+                      className="text-xs px-2 py-1 rounded-lg font-semibold"
                       style={{
-                        background: l === myLanguage ? INK : CARD,
-                        color: l === myLanguage ? BG : MUTED,
-                        border: `1px solid ${BORDER}`,
-                        fontFamily: FONT_SANS,
+                        background: l === myLanguage ? "rgba(212,175,55,0.18)" : "rgba(255,255,255,0.05)",
+                        color: l === myLanguage ? GOLD : "rgba(255,255,255,0.4)",
+                        border: `1px solid ${l === myLanguage ? "rgba(212,175,55,0.3)" : "transparent"}`,
                       }}
                     >
                       {FLAG[l]} {l.toUpperCase()}
@@ -1193,8 +1121,8 @@ function EmptyState({ icon, title, sub }: { icon: string; title: string; sub: st
   return (
     <div className="flex flex-col items-center justify-center py-24 px-6 text-center">
       <span className="text-3xl mb-3">{icon}</span>
-      <p className="text-[15px] font-medium mb-1" style={{ color: INK, fontFamily: "var(--font-lora), Georgia, serif" }}>{title}</p>
-      <p className="text-sm" style={{ color: MUTED, fontFamily: "var(--font-inter), sans-serif" }}>{sub}</p>
+      <p className="text-sm font-bold mb-1" style={{ color: "#f0e8c8" }}>{title}</p>
+      <p className="text-xs" style={{ color: "rgba(255,255,255,0.4)" }}>{sub}</p>
     </div>
   );
 }
