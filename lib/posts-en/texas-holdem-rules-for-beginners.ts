@@ -42,7 +42,7 @@ This guide explains ==how to play Texas Hold'em for beginners== in plain English
 Key facts:
 - You can use both hole cards, one, or even zero — whichever makes the best hand
 - The dealer button rotates every hand, so blinds and action order shift each round
-- You win without showdown if everyone else folds before the river
+- You win without showdown if everyone else folds at any point
 
 ---
 
@@ -198,14 +198,14 @@ In a casual home game, the most important thing is consistency. Announce the str
 
 Position means **when you act in each betting round**. Acting later means you have seen what other players do first — and that information is worth more than most beginners realize.
 
-| Seat | Name | Preflop action order | Key point |
+| Seat | Name | Preflop order (9-max) | Key point |
 |------|------|----------------------|-----------|
-| Left of BB | UTG (Under the Gun) | First | Most players still to act — play tightest |
-| Middle | MP / HJ | 4th–6th | Moderate range, still cautious |
-| One left of BTN | CO (Cutoff) | 7th | Second-best seat — widen range |
-| Last to act post-flop | BTN (Button) | 8th (last) | **Best seat** — sees everyone before acting |
-| Left of dealer | SB (Small Blind) | 9th pre, 1st post | Worst seat — acts first every street |
-| Two left of dealer | BB (Big Blind) | Last pre, 2nd post | Defends wide; still out of position most streets |
+| Early position | UTG (Under the Gun) | 1st | Most players still to act — play tightest |
+| Middle | MP / HJ | 4th–5th | Moderate range, still cautious |
+| One left of BTN | CO (Cutoff) | 6th | Second-best seat — widen range |
+| Last post-flop | BTN (Button) | 7th pre; **last** post | **Best seat** — acts last every postflop street |
+| Left of dealer | SB (Small Blind) | 8th pre, 1st post | Worst seat — acts first every postflop street |
+| Two left of dealer | BB (Big Blind) | Last pre (9th), 2nd post | Has option to raise preflop; out of position postflop |
 
 ==g:The button is the most profitable seat at the table.== You act last on the flop, turn, and river — meaning every player shows you their hand strength before you decide. For a full position guide, see [poker positions: UTG to button](/en/blog/holdem-positions).
 
@@ -246,7 +246,7 @@ Good beginner starting hands include:
 
 </div>
 
-For a full 169-hand chart organized by position (UTG to button), see the [Texas Hold'em starting hands chart by position](/en/blog/holdem-starting-hands-chart/). And before you can use starting hands correctly, you need to know your [betting actions — check, call, raise, fold](/en/blog/holdem-betting-actions/).
+For a full 169-hand chart organized by position (UTG to button), see the [Texas Hold'em starting hands chart by position](/en/blog/holdem-starting-hands-chart). And before you can use starting hands correctly, you need to know your [betting actions — check, call, raise, fold](/en/blog/holdem-betting-actions).
 
 ---
 
@@ -311,7 +311,7 @@ Basic hand ranking from strongest to weakest (with how often you make each hand 
 | 7 | Three of a kind | 4.8% — good hand, but board matters |
 | 8 | Two pair | 23.5% — most common "strong" hand |
 | 9 | One pair | 43.8% — the most frequent hand at showdown |
-| 10 | High card | 17.4% — usually loses; fold pre-flop |
+| 10 | High card | 17.4% — weakest hand at showdown; wins mainly through bluffing |
 
 If two players have the same type of hand, compare the highest relevant cards — see the [kicker and tie-breaker rules](/en/blog/holdem-tiebreak-rules). If the best five cards are exactly the same, the pot is [split](/en/blog/holdem-split-pot-rules).
 
@@ -387,7 +387,7 @@ Texas Hold'em is easier to learn when you separate rules from strategy.
 
 First, ==learn the flow==: blinds, two hole cards, five community cards, four betting rounds, and best five-card hand. ==g:Then learn position, starting hands, and basic pot decisions.==
 
-For your next step, review [Texas Hold'em hand rankings](/en/blog/holdem-hand-rankings), practice with the [starting hand chart](/hand-chart/), and use the [poker odds calculator](/calculator/) when you want to understand why a call is profitable or not.
+For your next step, review [Texas Hold'em hand rankings](/en/blog/holdem-hand-rankings), practice with the [starting hand chart](/hand-chart), and use the [poker odds calculator](/calculator) when you want to understand why a call is profitable or not.
 
 ---
 
@@ -409,17 +409,17 @@ For your next step, review [Texas Hold'em hand rankings](/en/blog/holdem-hand-ra
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Poker Positions: UTG to Button</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Why the button wins — seat map and opening ranges</div>
   </a>
-  <a href="/en/blog/holdem-betting-actions/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/en/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Betting</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Check, Call, Raise, Fold Explained</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">When to use each action + decision table</div>
   </a>
-  <a href="/en/blog/holdem-showdown-rules/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/en/blog/holdem-showdown-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Showdown</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Showdown Rules: Who Shows First?</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Last aggressor, mucking, slow rolling, and all-in rules</div>
   </a>
-  <a href="/en/blog/holdem-all-in-rules/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/en/blog/holdem-all-in-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">All-In</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">All-In Rules: Side Pots & Reraises</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Main pot, side pot, and re-raise eligibility</div>
