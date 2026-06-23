@@ -1,8 +1,9 @@
 ﻿"use client";
 
-import { useState, useTransition } from "react";
+import { useState, useTransition, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { createClient } from "@/lib/supabase/client";
 import { signOut, createPost, toggleLike, updateNickname } from "./actions";
 import PostCard, {
   type FeedPost,
@@ -15,6 +16,10 @@ import PostCard, {
 } from "./post-card";
 import EventTab from "./event-tab";
 import ChatTab from "./chat-tab";
+import { POSTS } from "@/lib/posts";
+import { postsForLocale } from "@/lib/intl-posts";
+import { isSecondaryLocale } from "@/lib/intl";
+import { CURRENT_EVENT_ID } from "@/lib/event-config";
 
 export type { FeedPost } from "./post-card";
 
@@ -347,34 +352,178 @@ type EventData = {
 } | null;
 
 export default function CommunityClient({
-  currentUser,
-  myLanguage,
   pageLocale,
-  initialPosts,
-  myPosts,
-  eventData,
 }: {
-  currentUser: CurrentUser | null;
-  myLanguage: string;
   /** locale 전용 피드 페이지에서 전달 — UI 언어를 강제 지정 */
   pageLocale?: string;
-  initialPosts: FeedPost[];
-  myPosts: FeedPost[];
-  eventData: EventData;
 }) {
   const router = useRouter();
-  const L = getL(pageLocale ?? myLanguage);
 
+  const [loading, setLoading] = useState(true);
+  const [currentUser, setCurrentUser] = useState<CurrentUser | null>(null);
+  const [myLanguage, setMyLanguage] = useState(pageLocale ?? "ko");
   const [tab, setTab] = useState<"home" | "chat" | "event" | "profile">("home");
   const [feedFilter, setFeedFilter] = useState<FilterKey>("All");
-  const [posts, setPosts] = useState<FeedPost[]>(initialPosts);
+  const [posts, setPosts] = useState<FeedPost[]>([]);
   const [writeOpen, setWriteOpen] = useState(false);
   const [draft, setDraft] = useState("");
   const [isPending, startTransition] = useTransition();
+  const [myPosts, setMyPosts] = useState<FeedPost[]>([]);
+  const [eventData, setEventData] = useState<EventData>(null);
 
   const [editingNickname, setEditingNickname] = useState(false);
   const [nicknameInput, setNicknameInput] = useState("");
   const [nicknameErr, setNicknameErr] = useState<string | null>(null);
+
+  useEffect(() => {
+    // OAuth 에러 파라미터 처리
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("error") || params.get("error_code")) {
+      router.push("/login?error=oauth");
+      return;
+    }
+
+    const supabase = createClient();
+
+    // 한국어 페이지용 정적 티저 카드 (페이지 로드 즉시 노출)
+    const PAGE_TEASERS: FeedPost[] = !pageLocale ? [
+      { id: "page:ranking", type: "admin", language: "ko", title: "홀덤 족보 완전 정리", content: "로열플러시부터 하이카드까지 — 10가지 핸드 랭킹을 한눈에 확인하세요.", imageUrl: null, likeCount: 0, commentCount: 0, createdAt: "2026-01-01T00:00:00Z", authorNickname: "HoldemMaster", authorAvatar: null, authorBadge: null, liked: false, pageHref: "/ranking/", pageIcon: "🃏" },
+      { id: "page:hand-chart", type: "admin", language: "ko", title: "스타팅 핸드 차트", content: "포지션별 오픈/콜/3-bet 핸드 범위를 차트로 확인하세요.", imageUrl: null, likeCount: 0, commentCount: 0, createdAt: "2026-01-02T00:00:00Z", authorNickname: "HoldemMaster", authorAvatar: null, authorBadge: null, liked: false, pageHref: "/hand-chart/", pageIcon: "📊" },
+      { id: "page:calculator", type: "admin", language: "ko", title: "팟오즈 & 에퀴티 계산기", content: "내 핸드의 에퀴티와 팟오즈를 실시간으로 계산해보세요.", imageUrl: null, likeCount: 0, commentCount: 0, createdAt: "2026-01-03T00:00:00Z", authorNickname: "HoldemMaster", authorAvatar: null, authorBadge: null, liked: false, pageHref: "/calculator/", pageIcon: "🧮" },
+      { id: "page:quiz", type: "admin", language: "ko", title: "홀덤 실력 테스트 퀴즈", content: "10문제로 내 홀덤 수준을 확인해보세요. 결과 공유도 가능!", imageUrl: null, likeCount: 0, commentCount: 0, createdAt: "2026-01-04T00:00:00Z", authorNickname: "HoldemMaster", authorAvatar: null, authorBadge: null, liked: false, pageHref: "/quiz/", pageIcon: "🎯" },
+      { id: "page:glossary", type: "admin", language: "ko", title: "홀덤 용어 사전", content: "올인, 블러프, ICM, 팟오즈… 헷갈리는 용어를 한 번에 정리.", imageUrl: null, likeCount: 0, commentCount: 0, createdAt: "2026-01-05T00:00:00Z", authorNickname: "HoldemMaster", authorAvatar: null, authorBadge: null, liked: false, pageHref: "/glossary/", pageIcon: "📖" },
+      { id: "page:pub", type: "admin", language: "ko", title: "내 근처 홀덤펍 찾기", content: "서울·경기 홀덤펍 위치, 바이인, 블라인드 구조 한 번에 비교.", imageUrl: null, likeCount: 0, commentCount: 0, createdAt: "2026-01-06T00:00:00Z", authorNickname: "HoldemMaster", authorAvatar: null, authorBadge: null, liked: false, pageHref: "/pub/", pageIcon: "🍺" },
+    ] : [];
+
+    // 정적 블로그 티저 (동기 계산)
+    const blogTeasers: FeedPost[] = pageLocale && isSecondaryLocale(pageLocale)
+      ? postsForLocale(pageLocale).map((p) => ({
+          id: `blog:${p.slug}`,
+          type: "admin" as const,
+          language: pageLocale,
+          title: p.title,
+          content: p.tldr || p.desc,
+          imageUrl: p.image ?? null,
+          likeCount: 0,
+          commentCount: 0,
+          createdAt: new Date(p.updated || p.date).toISOString(),
+          authorNickname: "HoldemMaster",
+          authorAvatar: null,
+          authorBadge: null,
+          liked: false,
+          blogSlug: p.slug,
+          blogLocale: pageLocale,
+          category: p.category,
+          readTime: p.readTime,
+        }))
+      : POSTS.map((p) => ({
+          id: `blog:${p.slug}`,
+          type: "admin" as const,
+          language: "ko",
+          title: p.title,
+          content: p.tldr || p.desc,
+          imageUrl: p.image ?? null,
+          likeCount: 0,
+          commentCount: 0,
+          createdAt: new Date(p.updated || p.date).toISOString(),
+          authorNickname: "HoldemMaster",
+          authorAvatar: null,
+          authorBadge: null,
+          liked: false,
+          blogSlug: p.slug,
+          category: p.category,
+          readTime: p.readTime,
+        }));
+
+    async function load() {
+      // 인증 + 프로필
+      const { data: { user } } = await supabase.auth.getUser();
+      let currentUserData: CurrentUser | null = null;
+      let lang = pageLocale ?? "ko";
+
+      if (user) {
+        const { data: profile } = await supabase
+          .from("profiles")
+          .select("id, nickname, language, avatar_url, badge")
+          .eq("id", user.id)
+          .single();
+        if (profile) {
+          currentUserData = profile as CurrentUser;
+          if (!pageLocale) lang = profile.language;
+        }
+      }
+      setCurrentUser(currentUserData);
+      setMyLanguage(lang);
+
+      // 커뮤니티 글 fetch
+      const adminLang = pageLocale ?? lang;
+      const { data: postsRaw } = await supabase
+        .from("posts")
+        .select("id, type, language, title, content, image_url, like_count, comment_count, created_at, author_id, profiles(nickname, avatar_url, badge)")
+        .or(`type.eq.community,and(type.eq.admin,language.eq.${adminLang})`)
+        .order("created_at", { ascending: false })
+        .limit(30);
+
+      // 좋아요 목록
+      let likedIds: string[] = [];
+      if (user) {
+        const { data: likes } = await supabase
+          .from("likes")
+          .select("post_id")
+          .eq("user_id", user.id);
+        likedIds = (likes ?? []).map((l) => l.post_id);
+      }
+
+      const toFeedPost = (p: any): FeedPost => ({
+        id: p.id,
+        type: p.type,
+        language: p.language,
+        title: p.title,
+        content: p.content,
+        imageUrl: p.image_url,
+        likeCount: p.like_count,
+        commentCount: p.comment_count,
+        createdAt: p.created_at,
+        authorNickname: p.profiles?.nickname ?? currentUserData?.nickname ?? "Unknown",
+        authorAvatar: p.profiles?.avatar_url ?? currentUserData?.avatar_url ?? null,
+        authorBadge: p.profiles?.badge ?? currentUserData?.badge ?? null,
+        liked: likedIds.includes(p.id),
+      });
+
+      const communityPosts: FeedPost[] = (postsRaw ?? []).map(toFeedPost);
+
+      const allPosts = [...communityPosts, ...blogTeasers, ...PAGE_TEASERS].sort(
+        (a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
+      );
+      setPosts(allPosts);
+      setLoading(false);
+
+      // 내 글 + 이벤트 데이터 (로그인 시)
+      if (user) {
+        const { data: mine } = await supabase
+          .from("posts")
+          .select("id, type, language, title, content, image_url, like_count, comment_count, created_at, author_id")
+          .eq("author_id", user.id)
+          .order("created_at", { ascending: false });
+        setMyPosts((mine ?? []).map(toFeedPost));
+
+        const [entryRes, postsForEvent] = await Promise.all([
+          supabase.from("event_entries").select("numbers").eq("user_id", user.id).eq("event_id", CURRENT_EVENT_ID).maybeSingle(),
+          supabase.from("posts").select("like_count").eq("author_id", user.id).eq("type", "community"),
+        ]);
+        setEventData({
+          myEntry: entryRes.data ?? null,
+          myPostCount: postsForEvent.data?.length ?? 0,
+          myLikeCount: postsForEvent.data?.reduce((s, p) => s + (p.like_count ?? 0), 0) ?? 0,
+        });
+      }
+    }
+
+    load();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pageLocale]);
+
+  const L = getL(pageLocale ?? myLanguage);
 
   const badgeLabel: Record<string, string> = {
     winner: L.badge_winner,
@@ -578,6 +727,26 @@ export default function CommunityClient({
       </div>
     </div>
   );
+
+  if (loading) {
+    return (
+      <div style={{ background: BG, minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <div style={{ textAlign: "center" }}>
+          <div
+            style={{
+              width: 40, height: 40, borderRadius: "50%",
+              border: `3px solid rgba(212,175,55,0.2)`,
+              borderTopColor: GOLD,
+              animation: "spin 0.8s linear infinite",
+              margin: "0 auto 12px",
+            }}
+          />
+          <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
+          <p style={{ color: "rgba(255,255,255,0.3)", fontSize: 13 }}>Loading…</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div style={{ background: BG, fontFamily: "'Inter','Pretendard',sans-serif" }}>

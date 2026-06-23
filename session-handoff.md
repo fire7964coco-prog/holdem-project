@@ -5,7 +5,7 @@
 ---
 
 ## 📅 마지막 작업일
-2026-06-21
+2026-06-23
 
 ---
 
@@ -35,21 +35,18 @@
 
 ---
 
-## 🚀 다음 세션 첫 번째 할 일 — Supabase 설정 적용 및 배포
+## 🚀 다음 세션 할 일
 
-### 즉시 해야 할 Supabase 작업 (UI에서 수동)
-1. **Supabase 대시보드 → SQL Editor** → `supabase/schema.sql` 마지막 섹션(7. chat_messages) 붙여넣고 실행
-2. **Supabase 대시보드 → Database → Replication** → `chat_messages` 테이블 Realtime 토글 ON
+### Phase 6 완료 ✅ (배포 완료)
+- `chat_messages` 테이블 Supabase SQL 실행 완료
+- Supabase Realtime Publications → `chat_messages` 토글 ON 완료
+- git push → Vercel 배포 완료 (커밋: `8d6beb2`)
 
-### 그 다음 배포
-```
-git add . && git commit -m "feat: 실시간 채팅 탭 추가 (Phase 6)" && git push
-```
-
-### 배포 후 선택적 개선사항
+### 선택적 개선사항 (다음 작업 후보)
 - 채팅 메시지 50개 이상 쌓이면 페이지네이션 or "이전 메시지 불러오기" 버튼 추가
 - 채팅 메시지 신고/삭제 (어드민 기능)
 - 욕설 필터링
+- SEO 블로그 포스트 추가 (현재 29개, 목표 50개까지 21개 남음)
 
 ---
 

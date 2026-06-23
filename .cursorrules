@@ -206,7 +206,7 @@ Holdem_Project/
 - 클러스터는 반드시 해당 필라를 첫 번째 내부링크로 연결
 - 필라 ↔ 클러스터 양방향 링크 필수
 - 같은 필라 내 클러스터끼리도 링크
-- URL: /blog/holdem-[구체적-주제]/ (끝에 / 필수)
+- URL: /blog/holdem-[구체적-주제] (끝에 / 없음, trailingSlash: false)
 
 ---
 
@@ -342,8 +342,8 @@ npm run compress:images:preview  # .compressed 폴더에만 저장
 - 본문 내 관련 포스트 링크 최소 3개
 - 포스트 하단 "관련 글" 섹션 2-3개
 - 양방향 링크 필수 (새 포스트 발행 시 기존 포스트도 업데이트)
-- URL 끝에 / 필수: `/blog/holdem-rules/` (없으면 301 → SEO 손실)
-- 마크다운 형식: `[링크 텍스트](/blog/holdem-rules/)`
+- URL 끝에 / 붙이지 말 것: `/blog/holdem-rules` (`next.config.mjs`에 `trailingSlash: false` 설정 — / 있으면 오히려 301 발생)
+- 마크다운 형식: `[링크 텍스트](/blog/holdem-rules)`
 
 ---
 
@@ -405,8 +405,8 @@ export const metadata: Metadata = {
   },
 };
 
-### vercel.json
-{ "trailingSlash": true }
+### next.config.mjs
+trailingSlash: false  // URL 끝에 / 없음 (있으면 301 → SEO 손실)
 
 ### 사이트맵
 - public/sitemap.xml에 새 포스트 URL 자동 반영 점검
@@ -419,7 +419,7 @@ export const metadata: Metadata = {
 1. 기존 포스트(29개) slug 변경 (URL 바뀌면 SEO 초기화)
 2. 기존 포스트 데이터 임의 수정/삭제
 3. 이미지를 jpg/png로 저장
-4. URL 끝의 / 제거
+4. URL 끝에 / 추가 (trailingSlash: false — / 붙이면 301 리다이렉트 발생)
 5. meta description 160자 초과
 6. 5줄 이상 긴 문단
 7. 경험담 없는 AI 백과사전식 포스트
