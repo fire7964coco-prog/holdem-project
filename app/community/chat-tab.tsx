@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/client";
-import { BG, BORDER, CARD, FLAG, GOLD } from "./post-card";
+import { BG, BORDER, CARD, FLAG, GOLD, TEXT_PRIMARY, TEXT_BODY, TEXT_SECONDARY, TEXT_MUTED, SURFACE } from "./post-card";
 import type { CurrentUser } from "./community-client";
 
 interface ChatMessage {
@@ -245,10 +245,7 @@ export default function ChatTab({
         >
           {L.live}
         </span>
-        <span
-          className="text-[11px] ml-auto"
-          style={{ color: "rgba(255,255,255,0.25)" }}
-        >
+        <span className="text-[11px] ml-auto font-medium" style={{ color: TEXT_MUTED }}>
           🌍 Global · {messages.length}
         </span>
       </div>
@@ -286,10 +283,7 @@ export default function ChatTab({
         }}
       >
         {messages.length === 0 ? (
-          <div
-            className="flex items-center justify-center h-full text-sm text-center px-4"
-            style={{ color: "rgba(255,255,255,0.25)" }}
-          >
+          <div className="flex items-center justify-center h-full text-sm text-center px-4 font-medium" style={{ color: TEXT_SECONDARY }}>
             {L.empty}
           </div>
         ) : (
@@ -300,16 +294,10 @@ export default function ChatTab({
                 <span className="text-sm flex-shrink-0">
                   {FLAG[m.language] ?? "🌐"}
                 </span>
-                <span
-                  className="text-[12px] font-bold flex-shrink-0"
-                  style={{ color: isMe ? GOLD : "rgba(212,175,55,0.55)" }}
-                >
+                <span className="text-[12px] font-bold flex-shrink-0" style={{ color: isMe ? GOLD : TEXT_SECONDARY }}>
                   {m.nickname}
                 </span>
-                <span
-                  className="text-sm break-words min-w-0"
-                  style={{ color: "#ddd5bb" }}
-                >
+                <span className="text-sm break-words min-w-0" style={{ color: TEXT_BODY }}>
                   {m.content}
                 </span>
               </div>
@@ -341,8 +329,8 @@ export default function ChatTab({
                 disabled={sending}
                 className="flex-1 px-3 py-2 rounded-xl text-sm outline-none"
                 style={{
-                  background: "rgba(255,255,255,0.06)",
-                  color: "#f0e8c8",
+                  background: SURFACE,
+                  color: TEXT_PRIMARY,
                   border: `1px solid ${BORDER}`,
                 }}
               />
@@ -372,10 +360,7 @@ export default function ChatTab({
             className="flex items-center justify-between gap-3 px-3 py-2 rounded-xl"
             style={{ background: CARD, border: `1px solid ${BORDER}` }}
           >
-            <span
-              className="text-sm"
-              style={{ color: "rgba(255,255,255,0.4)" }}
-            >
+            <span className="text-sm font-medium" style={{ color: TEXT_SECONDARY }}>
               {L.loginCta}
             </span>
             <Link

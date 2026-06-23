@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { getEventData, submitEventEntry } from "./actions";
 import { EVENT_CONDITION, WINNING_NUMBERS, PRIZE_TABLE } from "@/lib/event-config";
-import { GOLD, BG, CARD, BORDER } from "./post-card";
+import { GOLD, BG, CARD, BORDER, TEXT_PRIMARY, TEXT_BODY, TEXT_SECONDARY, TEXT_MUTED, SURFACE } from "./post-card";
 
 type EventData = {
   myEntry: { numbers: number[] } | null;
@@ -18,12 +18,12 @@ function ProgressBar({ value, max, label }: { value: number; max: number; label:
   return (
     <div>
       <div className="flex justify-between items-center mb-1">
-        <span className="text-xs" style={{ color: "rgba(255,255,255,0.5)" }}>{label}</span>
-        <span className="text-xs font-bold" style={{ color: value >= max ? GOLD : "rgba(255,255,255,0.5)" }}>
+        <span className="text-xs font-medium" style={{ color: TEXT_SECONDARY }}>{label}</span>
+        <span className="text-xs font-bold" style={{ color: value >= max ? GOLD : TEXT_SECONDARY }}>
           {value} / {max} {value >= max ? "✓" : ""}
         </span>
       </div>
-      <div className="h-1.5 rounded-full overflow-hidden" style={{ background: "rgba(255,255,255,0.08)" }}>
+      <div className="h-1.5 rounded-full overflow-hidden" style={{ background: SURFACE }}>
         <div
           className="h-full rounded-full transition-all duration-700"
           style={{
@@ -67,8 +67,8 @@ function NumberBall({
           ? "linear-gradient(135deg,#d4af37,#f0d060)"
           : selected
           ? "rgba(212,175,55,0.85)"
-          : "rgba(255,255,255,0.07)",
-        color: isMatch || selected ? BG : "rgba(255,255,255,0.55)",
+          : SURFACE,
+        color: isMatch || selected ? BG : TEXT_SECONDARY,
         border: winning && !selected
           ? "2px solid rgba(212,175,55,0.6)"
           : selected
@@ -362,10 +362,10 @@ export default function EventTab({
               {EL.eventBadge}
             </span>
           </div>
-          <h2 className="text-base font-black mb-1" style={{ color: "#f0e8c8" }}>
+          <h2 className="text-base font-bold mb-1" style={{ color: TEXT_PRIMARY }}>
             {EL.eventTitle}
           </h2>
-          <p className="text-xs leading-relaxed mb-3" style={{ color: "rgba(255,255,255,0.45)" }}>
+          <p className="text-xs leading-relaxed mb-3" style={{ color: TEXT_BODY }}>
             {EL.eventDesc}
           </p>
           <div className="grid grid-cols-3 gap-2 text-center text-xs">
@@ -380,7 +380,7 @@ export default function EventTab({
                 style={{ background: "rgba(212,175,55,0.08)", border: "1px solid rgba(212,175,55,0.15)" }}
               >
                 <p className="font-bold" style={{ color: GOLD }}>{r.prize}</p>
-                <p style={{ color: "rgba(255,255,255,0.4)" }}>{r.match}</p>
+                <p className="font-medium" style={{ color: TEXT_SECONDARY }}>{r.match}</p>
               </div>
             ))}
           </div>
@@ -394,8 +394,8 @@ export default function EventTab({
           style={{ background: CARD, border: `1px solid ${BORDER}` }}
         >
           <div className="text-4xl mb-3">🔒</div>
-          <p className="text-sm font-bold mb-1" style={{ color: "#f0e8c8" }}>{EL.loginRequired}</p>
-          <p className="text-xs mb-4" style={{ color: "rgba(255,255,255,0.4)" }}>
+          <p className="text-sm font-bold mb-1" style={{ color: TEXT_PRIMARY }}>{EL.loginRequired}</p>
+          <p className="text-xs mb-4" style={{ color: TEXT_BODY }}>
             {EL.loginDesc}
           </p>
           <Link
@@ -414,8 +414,8 @@ export default function EventTab({
           className="rounded-2xl p-5"
           style={{ background: CARD, border: `1px solid ${BORDER}` }}
         >
-          <p className="text-sm font-bold mb-1" style={{ color: "#f0e8c8" }}>{EL.condTitle}</p>
-          <p className="text-xs mb-4" style={{ color: "rgba(255,255,255,0.4)" }}>
+          <p className="text-sm font-bold mb-1" style={{ color: TEXT_PRIMARY }}>{EL.condTitle}</p>
+          <p className="text-xs mb-4" style={{ color: TEXT_BODY }}>
             {EL.condDesc}
           </p>
           <div className="space-y-3">
@@ -430,7 +430,7 @@ export default function EventTab({
               label={EL.likeLabel(EVENT_CONDITION.minLikes)}
             />
           </div>
-          <p className="text-xs mt-4 text-center" style={{ color: "rgba(255,255,255,0.3)" }}>
+          <p className="text-xs mt-4 text-center font-medium" style={{ color: TEXT_SECONDARY }}>
             {EL.condHint}
           </p>
         </div>
@@ -445,7 +445,7 @@ export default function EventTab({
           {WINNING_NUMBERS ? (
             /* 결과 발표 후 */
             <>
-              <p className="text-sm font-bold mb-3" style={{ color: "#f0e8c8" }}>
+              <p className="text-sm font-bold mb-3" style={{ color: TEXT_PRIMARY }}>
                 {EL.resultTitle(matchCount)}
                 {prize && (
                   <span
@@ -464,7 +464,7 @@ export default function EventTab({
                 ))}
               </div>
 
-              <p className="text-xs mb-2" style={{ color: "rgba(255,255,255,0.5)" }}>{EL.myNumLabel}</p>
+              <p className="text-xs mb-2 font-medium" style={{ color: TEXT_SECONDARY }}>{EL.myNumLabel}</p>
               <div className="flex flex-wrap gap-2">
                 {myEntry.numbers.map((n) => (
                   <NumberBall key={n} n={n} selected winning={WINNING_NUMBERS!.includes(n)} disabled />
@@ -472,7 +472,7 @@ export default function EventTab({
               </div>
 
               {matchCount < 3 && (
-                <p className="text-xs mt-4 text-center" style={{ color: "rgba(255,255,255,0.3)" }}>
+                <p className="text-xs mt-4 text-center font-medium" style={{ color: TEXT_SECONDARY }}>
                   {EL.noMatch}
                 </p>
               )}
@@ -482,9 +482,9 @@ export default function EventTab({
             <>
               <div className="flex items-center gap-2 mb-3">
                 <span className="text-lg">✅</span>
-                <p className="text-sm font-bold" style={{ color: "#f0e8c8" }}>{EL.doneTitle}</p>
+                <p className="text-sm font-bold" style={{ color: TEXT_PRIMARY }}>{EL.doneTitle}</p>
               </div>
-              <p className="text-xs mb-3" style={{ color: "rgba(255,255,255,0.4)" }}>
+              <p className="text-xs mb-3 font-medium" style={{ color: TEXT_SECONDARY }}>
                 {EL.doneNumLabel}
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
@@ -497,7 +497,7 @@ export default function EventTab({
                 style={{ background: "rgba(212,175,55,0.06)", border: "1px solid rgba(212,175,55,0.15)" }}
               >
                 <p className="text-xs font-bold" style={{ color: GOLD }}>{EL.pending}</p>
-                <p className="text-xs mt-1" style={{ color: "rgba(255,255,255,0.3)" }}>
+                <p className="text-xs mt-1 font-medium" style={{ color: TEXT_BODY }}>
                   {EL.pendingDesc}
                 </p>
               </div>
@@ -513,14 +513,14 @@ export default function EventTab({
           style={{ background: CARD, border: `1px solid ${BORDER}` }}
         >
           <div className="flex items-center justify-between mb-4">
-            <p className="text-sm font-bold" style={{ color: "#f0e8c8" }}>
+            <p className="text-sm font-bold" style={{ color: TEXT_PRIMARY }}>
               {EL.pickTitle(picked.length)}
             </p>
             {picked.length > 0 && (
               <button
                 onClick={() => setPicked([])}
-                className="text-xs px-2.5 py-1 rounded-full"
-                style={{ background: "rgba(255,255,255,0.06)", color: "rgba(255,255,255,0.4)" }}
+                className="text-xs px-2.5 py-1 rounded-full font-medium"
+                style={{ background: SURFACE, color: TEXT_SECONDARY }}
               >
                 {EL.reset}
               </button>
@@ -555,7 +555,7 @@ export default function EventTab({
                     {n}
                   </span>
                 ))}
-              <span className="text-xs ml-auto" style={{ color: "rgba(255,255,255,0.3)" }}>
+              <span className="text-xs ml-auto font-medium" style={{ color: TEXT_MUTED }}>
                 {EL.moreNeeded(6 - picked.length)}
               </span>
             </div>
@@ -572,8 +572,8 @@ export default function EventTab({
             style={{
               background: picked.length === 6
                 ? "linear-gradient(135deg,#d4af37,#f0d060)"
-                : "rgba(255,255,255,0.05)",
-              color: picked.length === 6 ? BG : "rgba(255,255,255,0.3)",
+                : SURFACE,
+              color: picked.length === 6 ? BG : TEXT_MUTED,
             }}
           >
             {isPending ? EL.submitting : picked.length === 6 ? EL.submit : EL.moreNeededBtn(6 - picked.length)}

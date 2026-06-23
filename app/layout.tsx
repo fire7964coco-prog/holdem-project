@@ -35,7 +35,7 @@ const LANG_BOOTSTRAP = `(function(){try{var s=location.pathname.split('/')[1];va
  */
 const notoSansKr = Noto_Sans_KR({
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["400", "500", "600", "700"],
   display: "optional",
   preload: false,
   variable: "--font-noto-sans-kr",
@@ -48,7 +48,7 @@ const notoSansKr = Noto_Sans_KR({
  */
 const dmSans = DM_Sans({
   subsets: ["latin"],
-  weight: ["400", "800"],
+  weight: ["400", "500", "600", "700", "800"],
   display: "optional",
   preload: false,
   variable: "--font-dm-sans",

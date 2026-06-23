@@ -9,6 +9,15 @@
 
 ### 작업 내용
 - 홈 피드 에디토리얼 크림 디자인 시도 후 revert — 기존 다크 피드 UI로 복원 (커밋: `ffa02d0`)
+- GSC 분석 기반 EN 포스트 SEO 강화: `/en/blog/texas-holdem-rules-for-beginners` (커밋: `71487b8`)
+  - seoTitle에 "how to play texas holdem for beginners" 메인 키워드 포함
+  - desc에 "dummies" 롱테일 시그널 삽입
+  - Quick Answer 박스 → 7단계 번호 리스트 (Featured Snippet 최적화)
+  - 스타팅 핸드 차트: 텍스트 4행 → 4티어 등급 시각 테이블
+  - 포지션 섹션 (UTG~BTN) 본문 직접 통합
+  - 팟오즈 + 룰 오브 2&4 섹션 신규 추가
+  - 족보 테이블: 출현 확률% 컬럼 추가
+  - FAQ: "dummies" + "quick texas holdem rules" 롱테일 Q&A 3개 추가
 
 ### 발행 현황
 - 총 포스트: 29개 (목표 50개까지 21개 남음)

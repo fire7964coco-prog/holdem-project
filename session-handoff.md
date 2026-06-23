@@ -5,7 +5,7 @@
 ---
 
 ## 📅 마지막 작업일
-2026-06-23
+2026-06-23 (오후 세션)
 
 ---
 
@@ -42,11 +42,25 @@
 - Supabase Realtime Publications → `chat_messages` 토글 ON 완료
 - git push → Vercel 배포 완료 (커밋: `8d6beb2`)
 
-### 선택적 개선사항 (다음 작업 후보)
-- 채팅 메시지 50개 이상 쌓이면 페이지네이션 or "이전 메시지 불러오기" 버튼 추가
-- 채팅 메시지 신고/삭제 (어드민 기능)
-- 욕설 필터링
-- SEO 블로그 포스트 추가 (현재 29개, 목표 50개까지 21개 남음)
+### 이번 세션에서 한 작업
+- CSR 전환: `app/page.tsx`, `app/[locale]/page.tsx` → `force-dynamic` 제거, 데이터 패칭 클라이언트로 이동
+- 커뮤니티 UI 가독성 개선 (다크 테마 유지):
+  - `post-card.tsx` — 텍스트 토큰 신규 정의 (`TEXT_PRIMARY`, `TEXT_BODY`, `TEXT_SECONDARY`, `TEXT_MUTED`, `DIVIDER`, `SURFACE`)
+  - `CARD` 배경 `#0f1a2e` → `#162032` (한 톤 업)
+  - `TEXT_PRIMARY` `#f0e8c8` → `#f8f2e2`, `TEXT_BODY` `#e4dcc4` → `#ede5cf`
+  - `chat-tab.tsx`, `event-tab.tsx`, `community-client.tsx`, `post-detail-client.tsx` → 토큰 일괄 적용
+  - `layout.tsx` → Noto Sans KR / DM Sans weight 500·600 추가
+  - 타 언어 포스트 opacity 흐림 제거
+- 로컬 dev 서버 실행 중 (port 3001, port 3000 이미 점유) — **배포 아직 안 함**
+- GSC 분석: `/en/blog/texas-holdem-rules-for-beginners` 3개월 659 노출·순위 53.7·클릭 0
+  - 영어 포스트는 `lib/posts-en/` 에 총 **20개** 존재
+  - 영어 전략: 1페이지 진입이 목표 → 기존 페이지 강화 → 롱테일 공략 순서
+
+### 다음 세션 할 일 (우선순위 순)
+1. **영어 SEO 강화** — `/en/blog/texas-holdem-rules-for-beginners` 경쟁 분석 후 컨텐츠 보강
+2. **가독성 개선 배포** — 로컬 확인 완료 후 `git push`
+3. **디자인 재검토** — 크림색 editorial 디자인 (나중에)
+4. **블로그 포스트 추가** — 현재 29개(KR) + 20개(EN), 목표 50개
 
 ---
 
