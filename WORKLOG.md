@@ -8,6 +8,9 @@
 ## 2026-06-23
 
 ### 작업 내용
+- `holdem-3bet-strategy` 검수 및 수정: updated 날짜 갱신 (2026-05-06→2026-06-23), mistakes/faq 이미지 압축 최적화 (각 60KB 이하)
+- `apt-incheon-2026-guide` 검수 및 수정 (커밋: `c3b55ae`): trailing slash 4개, OnLive Day3→Day2 오류, updated 날짜
+- `/tournaments` 검수 및 수정 (커밋: `9dcea52`): trailing slash 16개 제거, 한게임 운영사 '카카오게임즈→NHN' 정정, dateModified·기준일 업데이트
 - 홈 피드 에디토리얼 크림 디자인 시도 후 revert — 기존 다크 피드 UI로 복원 (커밋: `ffa02d0`)
 - GSC 분석 기반 EN 포스트 SEO 강화: `/en/blog/texas-holdem-rules-for-beginners` (커밋: `71487b8`)
   - seoTitle에 "how to play texas holdem for beginners" 메인 키워드 포함
