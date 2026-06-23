@@ -8,23 +8,23 @@
 ## 2026-06-23
 
 ### 작업 내용
-- `holdem-tiebreak-rules` 사실 오류 수정: WORST 실수 1 보드 Q♣J♥10♦9♠8♥→10♣9♥8♦7♠6♥ (K가 보드에 연결되는 오류 정정, 스플릿 팟 예시 정확히 복원)
-- `holdem-3bet-strategy` 검수 및 수정: updated 날짜 갱신 (2026-05-06→2026-06-23), mistakes/faq 이미지 압축, defense/squeeze 플레이스홀더 이미지 신규 제작 (46KB·39KB)
+- **★ 클로드코드 이관 준비**: `CLAUDE.md`·`session-handoff.md`·`WORKLOG.md` 전면 최신화 (인수인계용 노하우 추가)
+- `holdem-tiebreak-rules` 사실 오류 수정: WORST 실수 1 보드 Q♣J♥10♦9♠8♥→10♣9♥8♦7♠6♥ (K가 보드에 연결돼 K-K 단독승리가 되던 오류 → 진짜 스플릿 팟으로 정정) (커밋: `5eb9d18`)
+- `holdem-3bet-strategy` 검수 및 수정: updated 날짜 갱신, mistakes/faq 이미지 압축, defense/squeeze 플레이스홀더 이미지 신규 제작 (46KB·39KB) (커밋: `ccedbc4`, `4adc84d`)
 - `apt-incheon-2026-guide` 검수 및 수정 (커밋: `c3b55ae`): trailing slash 4개, OnLive Day3→Day2 오류, updated 날짜
 - `/tournaments` 검수 및 수정 (커밋: `9dcea52`): trailing slash 16개 제거, 한게임 운영사 '카카오게임즈→NHN' 정정, dateModified·기준일 업데이트
 - 홈 피드 에디토리얼 크림 디자인 시도 후 revert — 기존 다크 피드 UI로 복원 (커밋: `ffa02d0`)
-- GSC 분석 기반 EN 포스트 SEO 강화: `/en/blog/texas-holdem-rules-for-beginners` (커밋: `71487b8`)
-  - seoTitle에 "how to play texas holdem for beginners" 메인 키워드 포함
-  - desc에 "dummies" 롱테일 시그널 삽입
-  - Quick Answer 박스 → 7단계 번호 리스트 (Featured Snippet 최적화)
-  - 스타팅 핸드 차트: 텍스트 4행 → 4티어 등급 시각 테이블
-  - 포지션 섹션 (UTG~BTN) 본문 직접 통합
-  - 팟오즈 + 룰 오브 2&4 섹션 신규 추가
-  - 족보 테이블: 출현 확률% 컬럼 추가
-  - FAQ: "dummies" + "quick texas holdem rules" 롱테일 Q&A 3개 추가
+- GSC 분석 기반 EN 포스트 SEO 강화: `/en/blog/texas-holdem-rules-for-beginners` (커밋: `71487b8`, `382f1d3`)
+  - seoTitle에 "how to play texas holdem for beginners" 메인 키워드 포함, desc에 "dummies" 롱테일
+  - Quick Answer 7단계 리스트(Featured Snippet), 4티어 핸드 차트, 포지션·팟오즈·룰오브2&4 섹션 추가
+  - 검수 후 BTN/SB 포지션 순서 오류·high card 잘못된 조언 수정, trailing slash 6개 제거
+
+### 특이사항
+- **포커 핸드 예시 사실오류 교훈**: AI가 그럴듯해 보이는 보드를 생성하면 베스트 5장 검산 없이 통과시키면 안 됨. 앞으로 모든 핸드 예시는 7장→베스트5장 명시적 검산 필수 (tiebreak 오류가 클로드코드 검수에서 발견됨)
 
 ### 발행 현황
-- 총 포스트: 29개 (목표 50개까지 21개 남음)
+- 한국어 블로그: **48개** (LEGACY 21 + NEW_POSTS 27, sitemap 기준) / 영어: 20개
+- 목표 50개까지 한국어 2개 남음
 
 ---
 
