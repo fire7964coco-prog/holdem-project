@@ -637,13 +637,13 @@ export default function CommunityClient({
     setLoadingMore(false);
   }, [hasMore, loadingMore, tab, communityOffset, myLanguage, currentUser, pageLocale]);
 
-  // IntersectionObserver — sentinel이 보이면 더 로드
+  // IntersectionObserver — sentinel 400px 전에 미리 로드 (딜레이 없음)
   useEffect(() => {
     const sentinel = sentinelRef.current;
     if (!sentinel) return;
     const observer = new IntersectionObserver(
       (entries) => { if (entries[0].isIntersecting) loadMorePosts(); },
-      { threshold: 0.1 }
+      { rootMargin: "0px 0px 400px 0px", threshold: 0 }
     );
     observer.observe(sentinel);
     return () => observer.disconnect();
@@ -951,26 +951,13 @@ export default function CommunityClient({
         {/* 모바일 본문 */}
         <div className="flex-1 overflow-y-auto pb-24">
           <TabContent />
-          {/* 무한스크롤 sentinel */}
+          {/* 무한스크롤 sentinel — 400px 미리 감지해 선제 로드 */}
           {tab === "home" && (
-            <div ref={sentinelRef} className="flex flex-col items-center py-6 gap-2">
-              {loadingMore && (
-                <>
-                  <div
-                    style={{
-                      width: 24, height: 24, borderRadius: "50%",
-                      border: "2.5px solid rgba(32,49,42,0.15)",
-                      borderTopColor: INK,
-                      animation: "spin 0.8s linear infinite",
-                    }}
-                  />
-                  <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
-                  <span style={{ fontSize: 11, color: MUTED, fontFamily: FONT_SANS }}>불러오는 중…</span>
-                </>
-              )}
-              {!hasMore && posts.length > PAGE_SIZE && (
-                <span style={{ fontSize: 11, color: MUTED, fontFamily: FONT_SANS }}>♠ 모든 글을 다 봤습니다</span>
-              )}
+            <div ref={sentinelRef} style={{ height: 1 }} />
+          )}
+          {tab === "home" && !hasMore && posts.length > PAGE_SIZE && (
+            <div className="flex justify-center py-5">
+              <span style={{ fontSize: 11, color: MUTED, fontFamily: FONT_SANS }}>♠ 모든 글을 다 봤습니다</span>
             </div>
           )}
         </div>
