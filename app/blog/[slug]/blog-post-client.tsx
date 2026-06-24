@@ -494,7 +494,7 @@ export default function BlogPost({
                  24+ 항목 TOC가 첫 화면을 차지해 LCP 후보가 되는 문제를 해결하면서
                  사용자가 클릭 시 펼쳐 볼 수 있도록 native <details> 사용 (JS 0). */}
             {hasToc && (
-              <details className="xl:hidden group bg-card border border-border rounded-2xl mb-6">
+              <details open className="group bg-card border border-border rounded-2xl mb-6">
                 <summary
                   className="flex items-center justify-between gap-3 px-6 py-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden rounded-2xl hover:bg-card/70 transition-colors"
                   aria-label="목차 펼치기/접기"
