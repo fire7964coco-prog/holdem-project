@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import { Noto_Sans_KR, DM_Sans } from "next/font/google";
-import { SiteHeader, SiteFooter, HtmlLangSync, MainContent } from "@/components/site-chrome";
+import { SiteHeader, SiteFooter, HtmlLangSync, MainContent, ScrollToTopButton } from "@/components/site-chrome";
 import { BrushDefs } from "@/components/brush-defs";
 import "./globals.css";
 import { SITE } from "@/lib/site";
@@ -143,6 +143,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <SiteHeader />
         <MainContent>{children}</MainContent>
         <SiteFooter />
+        <ScrollToTopButton />
 
         {/* Google Analytics — lazyOnload (메인 스레드 한가할 때 로드, TBT/렌더 차단 0) */}
         <Script

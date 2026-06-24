@@ -2,13 +2,21 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { localeFromPath, HTML_LANG, dirForLocale } from "@/lib/intl";
 
 const GOLD = "#d4af37";
 const BG = "#0b1120";
 
 const LOCALE_FEED_ROOTS = ["/en", "/ja", "/zh", "/es", "/ar", "/pt", "/id", "/ms", "/vi", "/hi", "/de", "/tr"];
+
+/** 로케일별 커뮤니티 CTA 레이블 */
+const NAV_CTA: Record<string, string> = {
+  en: "Community →", ja: "コミュニティ →", zh: "社区 →",
+  es: "Comunidad →", de: "Community →", ar: "المجتمع →",
+  tr: "Topluluk →", vi: "Cộng đồng →", id: "Komunitas →",
+  ms: "Komuniti →", pt: "Comunidade →", hi: "समुदाय →",
+};
 
 /**
  * 피드 앱 라우트 — 자체 헤더를 가지므로 SiteHeader/SiteFooter 불필요
@@ -26,18 +34,20 @@ function isFeedAppRoute(pathname: string) {
   return LOCALE_FEED_ROOTS.some((p) => pathname.startsWith(p + "/blog"));
 }
 
-/** 미니 다크 탑바 — 툴/필라 페이지에서 홈 피드로 돌아가는 버튼 */
+/** 미니 다크 탑바 — 툴/필라 페이지에서 홈 피드로 돌아가는 버튼 + 커뮤니티 CTA */
 function AppTopBar() {
   const pathname = usePathname() || "/";
   const locale = localeFromPath(pathname);
   const homeHref = locale ? `/${locale}` : "/";
-  const label = locale ? "Home" : "홈피드";
+  const backLabel = locale ? "Home" : "홈피드";
+  const ctaLabel = locale ? (NAV_CTA[locale] ?? "Community →") : "커뮤니티 →";
 
   return (
     <div
-      className="sticky top-0 z-50 flex items-center px-4 h-11"
+      className="sticky top-0 z-50 flex items-center px-4 h-11 gap-3"
       style={{ background: BG, borderBottom: "1px solid rgba(212,175,55,0.15)" }}
     >
+      {/* 뒤로가기 */}
       <Link
         href={homeHref}
         className="flex items-center gap-1.5 text-sm font-bold transition-opacity hover:opacity-70"
@@ -46,15 +56,59 @@ function AppTopBar() {
         <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
         </svg>
-        {label}
+        {backLabel}
       </Link>
-      <span
-        className="text-[11px] font-black tracking-widest ml-auto"
-        style={{ color: "rgba(212,175,55,0.4)" }}
-      >
-        HM
-      </span>
+
+      {/* 우측: 커뮤니티 CTA + 로고 */}
+      <div className="ml-auto flex items-center gap-2.5">
+        <Link
+          href={homeHref}
+          className="px-3 py-1 rounded-lg text-[11px] font-bold leading-none transition-opacity hover:opacity-90"
+          style={{
+            background: "linear-gradient(135deg,#d4af37,#f0d060)",
+            color: "#0b1120",
+          }}
+        >
+          {ctaLabel}
+        </Link>
+        <span
+          className="text-[11px] font-black tracking-widest"
+          style={{ color: "rgba(212,175,55,0.4)" }}
+        >
+          HM
+        </span>
+      </div>
     </div>
+  );
+}
+
+/** 스크롤 300px 이상 시 나타나는 맨 위로 버튼 */
+export function ScrollToTopButton() {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setVisible(window.scrollY > 300);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  return (
+    <button
+      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      aria-label="맨 위로 이동"
+      className="fixed bottom-6 right-4 z-50 w-11 h-11 rounded-full flex items-center justify-center shadow-lg transition-all duration-200 hover:scale-110 active:scale-95"
+      style={{
+        background: "linear-gradient(135deg,#d4af37,#f0d060)",
+        color: "#0b1120",
+        opacity: visible ? 1 : 0,
+        pointerEvents: visible ? "auto" : "none",
+        transform: visible ? "translateY(0)" : "translateY(12px)",
+      }}
+    >
+      <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.8}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M5 15l7-7 7 7" />
+      </svg>
+    </button>
   );
 }
 
