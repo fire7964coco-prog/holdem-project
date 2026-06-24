@@ -399,7 +399,7 @@ export default function BlogPost({
   const hasToc = headings.length >= 2;
 
   return (
-    <div className="min-h-screen" style={{ background: "#0b1120", fontFamily: "'Inter','Pretendard',sans-serif" }}>
+    <div className="min-h-screen">
       {/* Sticky 탑바 — 뒤로가기 + 커뮤니티 CTA */}
       <div
         className="sticky top-0 z-50 flex items-center px-4 h-11 gap-3"
@@ -427,9 +427,24 @@ export default function BlogPost({
         </div>
       </div>
 
-      <div className="max-w-2xl mx-auto px-4 pt-4 pb-20">
-        {/* Main content column */}
-        <div className="min-w-0">
+      {/* 영어 버전과 동일한 max-w-6xl 와이드 레이아웃 */}
+      <div className="max-w-6xl mx-auto px-4 py-12">
+        <div className={hasToc ? "xl:grid xl:grid-cols-[220px_1fr] xl:gap-10" : ""}>
+
+          {/* 데스크탑 사이드바 TOC — xl 이상에서만 표시 */}
+          {hasToc && (
+            <aside className="hidden xl:block">
+              <div className="sticky top-28">
+                <nav className="bg-card border border-border rounded-2xl p-5" aria-label="목차">
+                  <p className="text-xs font-bold uppercase tracking-widest text-primary mb-4">📚 목차</p>
+                  <TocList headings={headings} />
+                </nav>
+              </div>
+            </aside>
+          )}
+
+          {/* 메인 콘텐츠 컬럼 */}
+          <div className="min-w-0">
             {/* Article Header */}
             <header className="mb-10">
               <div className="flex flex-wrap items-center gap-2 mb-4">
@@ -469,8 +484,7 @@ export default function BlogPost({
               </div>
             </header>
 
-            {/* 한 줄 정답 — Featured Snippet 후보. 검색 의도에 가장 빠른 답.
-                 LCP 후보 텍스트 + Google 발췌 텍스트 진입을 동시에 노린다. */}
+            {/* 한 줄 정답 — Featured Snippet 후보 */}
             {post.tldr && (
               <aside
                 aria-label="한 줄 정답"
@@ -490,11 +504,9 @@ export default function BlogPost({
               </aside>
             )}
 
-            {/* Inline TOC — mobile only · 모바일 LCP 개선용으로 기본 접힘 상태.
-                 24+ 항목 TOC가 첫 화면을 차지해 LCP 후보가 되는 문제를 해결하면서
-                 사용자가 클릭 시 펼쳐 볼 수 있도록 native <details> 사용 (JS 0). */}
+            {/* 모바일 인라인 TOC — xl 미만에서만 표시 (데스크탑은 사이드바) */}
             {hasToc && (
-              <details open className="group bg-card border border-border rounded-2xl mb-6">
+              <details className="xl:hidden group bg-card border border-border rounded-2xl mb-6">
                 <summary
                   className="flex items-center justify-between gap-3 px-6 py-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden rounded-2xl hover:bg-card/70 transition-colors"
                   aria-label="목차 펼치기/접기"
@@ -513,213 +525,213 @@ export default function BlogPost({
               </details>
             )}
 
-                {/* Interactive Calculator — 확률 계산기 포스트 & 홀덤 확률 완전 정복 */}
-                {(post.slug === "holdem-odds-calculator" || post.slug === "holdem-probability") && (
-                  <div>
-                    <PokerOddsCalculator />
+            {/* Interactive Calculator — 확률 계산기 포스트 & 홀덤 확률 완전 정복 */}
+            {(post.slug === "holdem-odds-calculator" || post.slug === "holdem-probability") && (
+              <div>
+                <PokerOddsCalculator />
+              </div>
+            )}
+
+            {/* Article Body */}
+            <article
+              ref={contentRef}
+              className="prose-holdem bg-card border border-border rounded-2xl p-6 md:p-10"
+            >
+              {post.content.includes(':::quiz:::')
+                ? (() => {
+                    const parts = post.content.split(/^:::quiz:::$/m);
+                    return (
+                      <>
+                        {parts.map((part, i) => (
+                          <div key={i}>
+                            <div
+                              className="text-muted-foreground leading-relaxed"
+                              dangerouslySetInnerHTML={{
+                                __html: `<p class="text-muted-foreground text-base leading-relaxed mb-4">${renderMarkdown(part)}</p>`,
+                              }}
+                            />
+                            {i < parts.length - 1 && <QuizWidget />}
+                          </div>
+                        ))}
+                      </>
+                    );
+                  })()
+                : (
+                  <div
+                    className="text-muted-foreground leading-relaxed"
+                    dangerouslySetInnerHTML={{
+                      __html: `<p class="text-muted-foreground text-base leading-relaxed mb-4">${renderMarkdown(post.content)}</p>`,
+                    }}
+                  />
+                )
+              }
+            </article>
+
+            {/* Prev / Next Navigation */}
+            <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-4">
+              {prevPost ? (
+                <Link href={`/blog/${prevPost.slug}`}>
+                  <div className="flex items-center gap-3 p-4 bg-card border border-border rounded-xl hover:border-primary/40 transition-colors group cursor-pointer">
+                    <ChevronLeft className="w-5 h-5 text-primary flex-shrink-0" />
+                    <div>
+                      <div className="text-xs text-muted-foreground mb-0.5">이전 글</div>
+                      <div className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors line-clamp-2">
+                        {prevPost.title}
+                      </div>
+                    </div>
                   </div>
-                )}
+                </Link>
+              ) : <div />}
 
-                {/* Article Body */}
-                <article
-                  ref={contentRef}
-                  className="prose-holdem bg-card border border-border rounded-2xl p-6 md:p-10"
-                >
-                  {post.content.includes(':::quiz:::')
-                    ? (() => {
-                        const parts = post.content.split(/^:::quiz:::$/m);
-                        return (
-                          <>
-                            {parts.map((part, i) => (
-                              <div key={i}>
-                                <div
-                                  className="text-muted-foreground leading-relaxed"
-                                  dangerouslySetInnerHTML={{
-                                    __html: `<p class="text-muted-foreground text-base leading-relaxed mb-4">${renderMarkdown(part)}</p>`,
-                                  }}
-                                />
-                                {i < parts.length - 1 && <QuizWidget />}
-                              </div>
-                            ))}
-                          </>
-                        );
-                      })()
-                    : (
-                      <div
-                        className="text-muted-foreground leading-relaxed"
-                        dangerouslySetInnerHTML={{
-                          __html: `<p class="text-muted-foreground text-base leading-relaxed mb-4">${renderMarkdown(post.content)}</p>`,
-                        }}
-                      />
-                    )
-                  }
-                </article>
+              {nextPost ? (
+                <Link href={`/blog/${nextPost.slug}`}>
+                  <div className="flex items-center gap-3 p-4 bg-card border border-border rounded-xl hover:border-primary/40 transition-colors group cursor-pointer text-right justify-end">
+                    <div>
+                      <div className="text-xs text-muted-foreground mb-0.5">다음 글</div>
+                      <div className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors line-clamp-2">
+                        {nextPost.title}
+                      </div>
+                    </div>
+                    <ChevronRight className="w-5 h-5 text-primary flex-shrink-0" />
+                  </div>
+                </Link>
+              ) : <div />}
+            </div>
 
-                {/* Prev / Next Navigation */}
-                <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {prevPost ? (
-                    <Link href={`/blog/${prevPost.slug}`}>
-                      <div className="flex items-center gap-3 p-4 bg-card border border-border rounded-xl hover:border-primary/40 transition-colors group cursor-pointer">
-                        <ChevronLeft className="w-5 h-5 text-primary flex-shrink-0" />
-                        <div>
-                          <div className="text-xs text-muted-foreground mb-0.5">이전 글</div>
-                          <div className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors line-clamp-2">
-                            {prevPost.title}
-                          </div>
-                        </div>
+            {/* Related Posts */}
+            {related.length > 0 && (
+              <div className="mt-12">
+                <h2 className="text-xl font-serif font-bold text-foreground mb-5">관련 글</h2>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  {related.map((r) => (
+                    <Link key={r.slug} href={`/blog/${r.slug}`}>
+                      <div className="bg-card border border-border rounded-xl p-4 hover:border-primary/40 hover:-translate-y-0.5 transition-all cursor-pointer group">
+                        <div className="text-3xl mb-3">{r.emoji}</div>
+                        <div className="text-xs text-muted-foreground mb-1">{r.category}</div>
+                        <h3 className="text-sm font-bold text-foreground group-hover:text-primary transition-colors line-clamp-2">{r.title}</h3>
                       </div>
                     </Link>
-                  ) : <div />}
-
-                  {nextPost ? (
-                    <Link href={`/blog/${nextPost.slug}`}>
-                      <div className="flex items-center gap-3 p-4 bg-card border border-border rounded-xl hover:border-primary/40 transition-colors group cursor-pointer text-right justify-end">
-                        <div>
-                          <div className="text-xs text-muted-foreground mb-0.5">다음 글</div>
-                          <div className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors line-clamp-2">
-                            {nextPost.title}
-                          </div>
-                        </div>
-                        <ChevronRight className="w-5 h-5 text-primary flex-shrink-0" />
-                      </div>
-                    </Link>
-                  ) : <div />}
+                  ))}
                 </div>
+              </div>
+            )}
 
-                {/* Related Posts */}
-                {related.length > 0 && (
-                  <div className="mt-12">
-                    <h2 className="text-xl font-serif font-bold text-foreground mb-5">관련 글</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                      {related.map((r) => (
-                        <Link key={r.slug} href={`/blog/${r.slug}`}>
-                          <div className="bg-card border border-border rounded-xl p-4 hover:border-primary/40 hover:-translate-y-0.5 transition-all cursor-pointer group">
-                            <div className="text-3xl mb-3">{r.emoji}</div>
-                            <div className="text-xs text-muted-foreground mb-1">{r.category}</div>
-                            <h3 className="text-sm font-bold text-foreground group-hover:text-primary transition-colors line-clamp-2">{r.title}</h3>
-                          </div>
-                        </Link>
-                      ))}
-                    </div>
+            {/* 📋 이 글 전체 요약 — LCP 회피용으로 본문 첫 이미지를 페이지 최하단에 lazy 로드 */}
+            {summarySlot}
+
+            {/* Author Bio Card — E-E-A-T 강화 */}
+            <aside
+              className="mt-12 bg-card border border-border rounded-2xl p-6 md:p-7"
+              aria-label="작성자 정보"
+            >
+              <div className="flex items-start gap-5 mb-4">
+                <div className="w-16 h-16 rounded-full bg-primary/15 border-2 border-primary/30 flex items-center justify-center text-3xl flex-shrink-0">
+                  ♠
+                </div>
+                <div className="min-w-0 flex-1">
+                  <div className="text-xs text-muted-foreground mb-0.5">작성자</div>
+                  <div className="font-bold text-foreground text-lg mb-1">
+                    <Link href="/about" className="hover:text-primary transition-colors">
+                      홀덤마스터 편집팀
+                    </Link>
                   </div>
-                )}
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    12년 경력의 포커 전략 전문가 팀. WSOP·KPT·APT 토너먼트 현장 취재 경험 보유.
+                    GTO 솔버(GTO+, PioSolver) 분석 기반의 데이터 중심 전략 콘텐츠를 제공합니다.
+                    모든 콘텐츠는 <strong className="text-foreground">실전 검증된 정보</strong>만을
+                    담습니다.
+                  </p>
+                </div>
+              </div>
 
-                {/* 📋 이 글 전체 요약 — LCP 회피용으로 본문 첫 이미지를 페이지 최하단에 lazy 로드 */}
-                {summarySlot}
-
-                {/* Author Bio Card — E-E-A-T 강화. /about 으로 권한 페이지 연결 */}
-                <aside
-                  className="mt-12 bg-card border border-border rounded-2xl p-6 md:p-7"
-                  aria-label="작성자 정보"
-                >
-                  <div className="flex items-start gap-5 mb-4">
-                    <div className="w-16 h-16 rounded-full bg-primary/15 border-2 border-primary/30 flex items-center justify-center text-3xl flex-shrink-0">
-                      ♠
-                    </div>
-                    <div className="min-w-0 flex-1">
-                      <div className="text-xs text-muted-foreground mb-0.5">작성자</div>
-                      <div className="font-bold text-foreground text-lg mb-1">
-                        <Link href="/about" className="hover:text-primary transition-colors">
-                          홀덤마스터 편집팀
-                        </Link>
-                      </div>
-                      <p className="text-sm text-muted-foreground leading-relaxed">
-                        12년 경력의 포커 전략 전문가 팀. WSOP·KPT·APT 토너먼트 현장 취재 경험 보유.
-                        GTO 솔버(GTO+, PioSolver) 분석 기반의 데이터 중심 전략 콘텐츠를 제공합니다.
-                        모든 콘텐츠는 <strong className="text-foreground">실전 검증된 정보</strong>만을
-                        담습니다.
-                      </p>
-                    </div>
+              <dl className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 border-t border-border">
+                {[
+                  { label: "운영 경력", value: "12년+" },
+                  { label: "발행 글 수", value: "29편" },
+                  { label: "현장 취재", value: "WSOP·APT" },
+                  { label: "솔버 분석", value: "Pio · GTO+" },
+                ].map(({ label, value }) => (
+                  <div key={label} className="text-center">
+                    <dt className="text-[10px] uppercase tracking-wider text-muted-foreground/80 mb-0.5">
+                      {label}
+                    </dt>
+                    <dd className="text-xs font-bold text-primary">{value}</dd>
                   </div>
+                ))}
+              </dl>
 
-                  {/* 권위·신뢰 시그널: 측정 가능한 운영 지표 */}
-                  <dl className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 border-t border-border">
-                    {[
-                      { label: "운영 경력", value: "12년+" },
-                      { label: "발행 글 수", value: "29편" },
-                      { label: "현장 취재", value: "WSOP·APT" },
-                      { label: "솔버 분석", value: "Pio · GTO+" },
-                    ].map(({ label, value }) => (
-                      <div key={label} className="text-center">
-                        <dt className="text-[10px] uppercase tracking-wider text-muted-foreground/80 mb-0.5">
-                          {label}
-                        </dt>
-                        <dd className="text-xs font-bold text-primary">{value}</dd>
-                      </div>
-                    ))}
-                  </dl>
-
-                  <div className="mt-4 pt-4 border-t border-border flex flex-wrap items-center justify-between gap-3">
-                    <div className="flex flex-wrap gap-2">
-                      {[
-                        { label: "포커 전략", href: "/strategy" },
-                        { label: "GTO 분석", href: "/strategy" },
-                        { label: "토너먼트", href: "/tournaments" },
-                      ].map(({ label, href }) => (
-                        <Link
-                          key={label}
-                          href={href}
-                          className="text-xs px-2.5 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary font-medium hover:bg-primary/25 hover:border-primary/50 transition-all"
-                        >
-                          {label}
-                        </Link>
-                      ))}
-                    </div>
+              <div className="mt-4 pt-4 border-t border-border flex flex-wrap items-center justify-between gap-3">
+                <div className="flex flex-wrap gap-2">
+                  {[
+                    { label: "포커 전략", href: "/strategy" },
+                    { label: "GTO 분석", href: "/strategy" },
+                    { label: "토너먼트", href: "/tournaments" },
+                  ].map(({ label, href }) => (
                     <Link
-                      href="/about"
-                      className="text-xs font-semibold text-primary hover:underline inline-flex items-center gap-1"
+                      key={label}
+                      href={href}
+                      className="text-xs px-2.5 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary font-medium hover:bg-primary/25 hover:border-primary/50 transition-all"
                     >
-                      편집팀 상세 소개 <ChevronRight className="w-3.5 h-3.5" />
+                      {label}
                     </Link>
-                  </div>
-                </aside>
-
-                {/* Social Share Buttons */}
-                <div className="mt-8 bg-card border border-border rounded-xl p-5">
-                  <div className="flex items-center gap-3 flex-wrap">
-                    <span className="flex items-center gap-1.5 text-sm font-semibold text-foreground">
-                      <Share2 className="w-4 h-4 text-primary" aria-hidden="true" /> 이 글 공유하기
-                    </span>
-                    <a
-                      href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=${encodeURIComponent(pageUrl)}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="이 글을 트위터에 공유하기"
-                      className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#1da1f2]/10 border border-[#1da1f2]/30 text-[#1da1f2] text-xs font-semibold hover:bg-[#1da1f2]/20 transition-all"
-                    >
-                      <FaXTwitter className="w-3.5 h-3.5" aria-hidden="true" /> Twitter
-                    </a>
-                    <a
-                      href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(pageUrl)}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="이 글을 페이스북에 공유하기"
-                      className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#1877f2]/10 border border-[#1877f2]/30 text-[#1877f2] text-xs font-semibold hover:bg-[#1877f2]/20 transition-all"
-                    >
-                      <FaFacebookF className="w-3.5 h-3.5" aria-hidden="true" /> Facebook
-                    </a>
-                    <button
-                      type="button"
-                      onClick={copyLink}
-                      aria-label="이 글의 링크를 복사하기"
-                      className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-primary/10 border border-primary/30 text-primary text-xs font-semibold hover:bg-primary/20 transition-all"
-                    >
-                      <Link2 className="w-3.5 h-3.5" aria-hidden="true" />
-                      {copied ? "복사됨!" : "링크 복사"}
-                    </button>
-                  </div>
+                  ))}
                 </div>
+                <Link
+                  href="/about"
+                  className="text-xs font-semibold text-primary hover:underline inline-flex items-center gap-1"
+                >
+                  편집팀 상세 소개 <ChevronRight className="w-3.5 h-3.5" />
+                </Link>
+              </div>
+            </aside>
 
-                {/* Community CTA */}
-                <CommunityCTA locale="ko" />
+            {/* Social Share Buttons */}
+            <div className="mt-8 bg-card border border-border rounded-xl p-5">
+              <div className="flex items-center gap-3 flex-wrap">
+                <span className="flex items-center gap-1.5 text-sm font-semibold text-foreground">
+                  <Share2 className="w-4 h-4 text-primary" aria-hidden="true" /> 이 글 공유하기
+                </span>
+                <a
+                  href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=${encodeURIComponent(pageUrl)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="이 글을 트위터에 공유하기"
+                  className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#1da1f2]/10 border border-[#1da1f2]/30 text-[#1da1f2] text-xs font-semibold hover:bg-[#1da1f2]/20 transition-all"
+                >
+                  <FaXTwitter className="w-3.5 h-3.5" aria-hidden="true" /> Twitter
+                </a>
+                <a
+                  href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(pageUrl)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="이 글을 페이스북에 공유하기"
+                  className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#1877f2]/10 border border-[#1877f2]/30 text-[#1877f2] text-xs font-semibold hover:bg-[#1877f2]/20 transition-all"
+                >
+                  <FaFacebookF className="w-3.5 h-3.5" aria-hidden="true" /> Facebook
+                </a>
+                <button
+                  type="button"
+                  onClick={copyLink}
+                  aria-label="이 글의 링크를 복사하기"
+                  className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-primary/10 border border-primary/30 text-primary text-xs font-semibold hover:bg-primary/20 transition-all"
+                >
+                  <Link2 className="w-3.5 h-3.5" aria-hidden="true" />
+                  {copied ? "복사됨!" : "링크 복사"}
+                </button>
+              </div>
+            </div>
 
-                {/* Back to Blog */}
-                <div className="mt-10 text-center">
-                  <Link href="/blog" className="inline-flex items-center gap-2 text-primary font-semibold hover:text-yellow-400 transition-colors">
-                    <ChevronLeft className="w-4 h-4" /> 블로그 목록으로 돌아가기
-                  </Link>
-                </div>
+            {/* Community CTA */}
+            <CommunityCTA locale="ko" />
+
+            {/* Back to Blog */}
+            <div className="mt-10 text-center">
+              <Link href="/blog" className="inline-flex items-center gap-2 text-primary font-semibold hover:text-yellow-400 transition-colors">
+                <ChevronLeft className="w-4 h-4" /> 블로그 목록으로 돌아가기
+              </Link>
+            </div>
           </div>{/* end main content column */}
+        </div>
       </div>
     </div>
   );
