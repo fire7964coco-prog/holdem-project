@@ -25,6 +25,40 @@ export type FeedPost = {
   pageIcon?: string | null;
 };
 
+// ── 블로그 티저 카드 UI 라벨 (언어별) ────────────────────────
+const CARD_LABELS: Record<string, { blog: string; readMore: string; goTo: string }> = {
+  ko: { blog: "블로그",   readMore: "전체 읽기 →", goTo: "바로가기 →" },
+  en: { blog: "Blog",     readMore: "Read more →",  goTo: "Go →" },
+  ja: { blog: "ブログ",   readMore: "続きを読む →", goTo: "詳細 →" },
+  zh: { blog: "博客",     readMore: "阅读全文 →",   goTo: "前往 →" },
+  es: { blog: "Blog",     readMore: "Leer más →",   goTo: "Ver →" },
+  de: { blog: "Blog",     readMore: "Weiterlesen →", goTo: "Öffnen →" },
+  ar: { blog: "مدوّنة",  readMore: "اقرأ المزيد →", goTo: "انتقل →" },
+  tr: { blog: "Blog",     readMore: "Devamını oku →", goTo: "Git →" },
+  vi: { blog: "Blog",     readMore: "Đọc thêm →",   goTo: "Xem →" },
+  id: { blog: "Blog",     readMore: "Baca selengkapnya →", goTo: "Buka →" },
+  ms: { blog: "Blog",     readMore: "Baca lagi →",  goTo: "Buka →" },
+  pt: { blog: "Blog",     readMore: "Ler mais →",   goTo: "Abrir →" },
+  hi: { blog: "ब्लॉग",  readMore: "पूरा पढ़ें →", goTo: "जाएँ →" },
+};
+
+// 한국어 카테고리 문자열 → 언어별 번역
+const CATEGORY_I18N: Record<string, Partial<Record<string, string>>> = {
+  "초보 가이드": { en: "Beginner Guide", ja: "初心者ガイド", zh: "新手指南", es: "Guía básica", de: "Einsteiger-Guide", ar: "دليل المبتدئين", tr: "Başlangıç Rehberi", vi: "Hướng dẫn cơ bản", id: "Panduan Pemula", ms: "Panduan Asas", pt: "Guia Básico", hi: "शुरुआती गाइड" },
+  "토너먼트":   { en: "Tournament",      ja: "トーナメント",   zh: "锦标赛",     es: "Torneo",        de: "Turnier",          ar: "بطولة",             tr: "Turnuva",          vi: "Giải đấu",          id: "Turnamen",          ms: "Kejohanan",          pt: "Torneio",       hi: "टूर्नामेंट" },
+  "strategy":   { en: "Strategy",        ja: "戦略",           zh: "策略",       es: "Estrategia",    de: "Strategie",        ar: "استراتيجية",        tr: "Strateji",         vi: "Chiến thuật",       id: "Strategi",          ms: "Strategi",           pt: "Estratégia",    hi: "रणनीति" },
+  "tournament": { en: "Tournament",      ja: "トーナメント",   zh: "锦标赛",     es: "Torneo",        de: "Turnier",          ar: "بطولة",             tr: "Turnuva",          vi: "Giải đấu",          id: "Turnamen",          ms: "Kejohanan",          pt: "Torneio",       hi: "टूर्नामेंट" },
+};
+
+function getCardLabel(lang: string) {
+  return CARD_LABELS[lang] ?? CARD_LABELS.en;
+}
+
+function translateCategory(category: string, lang: string): string {
+  if (lang === "ko") return category;
+  return CATEGORY_I18N[category]?.[lang] ?? category;
+}
+
 // ── 커뮤니티 디자인 토큰 ─────────────────────────────────────
 export const GOLD = "#d4af37";
 export const BG = "#0b1120";
@@ -129,7 +163,7 @@ export default function PostCard({
             <p className="text-[12px] mt-0.5 line-clamp-1" style={{ color: TEXT_SECONDARY }}>{post.content}</p>
           </div>
           <span className="text-[11px] font-bold px-3 py-1.5 rounded-xl flex-shrink-0" style={{ background: "rgba(212,175,55,0.12)", color: GOLD }}>
-            바로가기 →
+            {getCardLabel(myLanguage).goTo}
           </span>
         </div>
       </Link>
@@ -168,6 +202,8 @@ export default function PostCard({
     : "1px solid rgba(52,211,153,0.18)";
 
   if (isBlogTeaser) {
+    const cardLang = post.blogLocale ?? myLanguage;
+    const CL = getCardLabel(cardLang);
     return (
       <article
         className="mx-3 lg:mx-0 mb-3 rounded-2xl overflow-hidden"
@@ -184,12 +220,12 @@ export default function PostCard({
                 <p className="text-[13px] lg:text-sm font-bold" style={{ color: GOLD }}>HoldemMaster</p>
                 {post.category && (
                   <span className="text-[10px] px-2 py-0.5 rounded-full font-bold flex-shrink-0" style={{ background: "rgba(212,175,55,0.12)", color: GOLD, border: "1px solid rgba(212,175,55,0.3)" }}>
-                    {post.category}
+                    {translateCategory(post.category, cardLang)}
                   </span>
                 )}
               </div>
               <p className="text-[10px] mt-0.5" style={{ color: TEXT_MUTED }}>
-                📖 {post.readTime ?? ""} · 블로그
+                📖 {post.readTime ?? ""} · {CL.blog}
               </p>
             </div>
           </div>
@@ -207,7 +243,7 @@ export default function PostCard({
         </Link>
         <div className="px-4 lg:px-5 py-3" style={{ borderTop: `1px solid ${DIVIDER}` }}>
           <Link href={blogHref} className="inline-flex items-center gap-1.5 text-sm font-bold px-4 py-2 rounded-xl active:scale-95 transition-transform" style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: BG }}>
-            전체 읽기 →
+            {CL.readMore}
           </Link>
         </div>
       </article>
