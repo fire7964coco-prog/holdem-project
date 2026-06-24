@@ -164,16 +164,16 @@ export default function PostCard({
     return (
       <Link
         href={post.pageHref!}
-        className="block mx-3 my-1.5 rounded-2xl overflow-hidden active:scale-[0.99] transition-transform"
-        style={{ background: "linear-gradient(135deg, #0f1a2e 0%, #162035 100%)", border: "1px solid rgba(212,175,55,0.18)" }}
+        className="block mx-3 my-1.5 rounded-2xl overflow-hidden active:scale-[0.98] transition-transform"
+        style={{ background: "linear-gradient(135deg, #1a3a2a 0%, #1f4433 100%)", border: "1px solid rgba(212,175,55,0.28)" }}
       >
         <div className="flex items-center gap-4 px-5 py-4">
           <span className="text-3xl flex-shrink-0">{post.pageIcon ?? "📄"}</span>
           <div className="flex-1 min-w-0">
-            <p className="text-[13px] font-bold" style={{ color: GOLD }}>{post.title}</p>
-            <p className="text-[12px] mt-0.5 line-clamp-1" style={{ color: TEXT_SECONDARY }}>{post.content}</p>
+            <p className="text-[14px] font-extrabold leading-snug" style={{ color: "#f5f0e8" }}>{post.title}</p>
+            <p className="text-[12px] mt-1 line-clamp-1" style={{ color: "rgba(245,240,232,0.65)" }}>{post.content}</p>
           </div>
-          <span className="text-[11px] font-bold px-3 py-1.5 rounded-xl flex-shrink-0" style={{ background: "rgba(212,175,55,0.12)", color: GOLD }}>
+          <span className="text-[12px] font-bold px-3 py-1.5 rounded-xl flex-shrink-0 whitespace-nowrap" style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: "#0d1c14" }}>
             {getCardLabel(myLanguage).goTo}
           </span>
         </div>
