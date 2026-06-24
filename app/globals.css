@@ -145,17 +145,26 @@
   font-size: 1.175rem;      /* 18.8px — EB Garamond 최적 가독성 */
   line-height: 1.85;        /* 여유로운 행간, 팩트풀니스 페이퍼백 수준 */
   letter-spacing: 0.01em;
-  color: hsl(var(--foreground));
+  color: #1a1a1a;           /* 크림 테마 foreground(다크그린) 대신 거의 검정으로 */
 }
 .blog-prose p {
   font-size: 1.15rem;
   line-height: 1.85;
   margin-bottom: 1.4em;
+  color: #1a1a1a;
 }
 .blog-prose li {
   font-family: var(--font-serif);
   font-size: 1.12rem;
   line-height: 1.75;
+  color: #1a1a1a;
+}
+.blog-prose strong {
+  color: #111111;
+  font-weight: 700;
+}
+.blog-prose h1, .blog-prose h2, .blog-prose h3, .blog-prose h4 {
+  color: #111111;
 }
 .blog-prose h2 {
   font-size: 1.6rem;
