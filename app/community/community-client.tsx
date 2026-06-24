@@ -522,6 +522,7 @@ export default function CommunityClient({
         likeCount: p.like_count,
         commentCount: p.comment_count,
         createdAt: p.created_at,
+        authorId: p.author_id ?? null,
         authorNickname: p.profiles?.nickname ?? currentUserData?.nickname ?? "Unknown",
         authorAvatar: p.profiles?.avatar_url ?? currentUserData?.avatar_url ?? null,
         authorBadge: p.profiles?.badge ?? currentUserData?.badge ?? null,
@@ -612,7 +613,7 @@ export default function CommunityClient({
           filteredPosts.length === 0
             ? <EmptyState icon="🃏" title={L.emptyFeedTitle} sub={L.emptyFeedSub} />
             : filteredPosts.map((p) => (
-                <PostCard key={p.id} post={p} myLanguage={myLanguage} onLike={onLike} />
+                <PostCard key={p.id} post={p} myLanguage={myLanguage} myUserId={currentUser?.id} onLike={onLike} />
               ))
         )}
 
@@ -717,7 +718,7 @@ export default function CommunityClient({
                   ? <EmptyState icon="✍️" title={L.noPostsTitle} sub={L.noPostsSub} />
                   : myPosts.map((p) => (
                       <div key={p.id} className="-mx-3">
-                        <PostCard post={p} myLanguage={myLanguage} onLike={onLike} />
+                        <PostCard post={p} myLanguage={myLanguage} myUserId={currentUser?.id} onLike={onLike} />
                       </div>
                     ))
                 }

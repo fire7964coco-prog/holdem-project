@@ -13,6 +13,7 @@ export type FeedPost = {
   likeCount: number;
   commentCount: number;
   createdAt: string;
+  authorId?: string | null;
   authorNickname: string;
   authorAvatar: string | null;
   authorBadge: string | null;
@@ -142,14 +143,17 @@ export function Avatar({
 export default function PostCard({
   post,
   myLanguage,
+  myUserId,
   onLike,
   clickable = true,
 }: {
   post: FeedPost;
   myLanguage: string;
+  myUserId?: string;
   onLike: (id: string) => void;
   clickable?: boolean;
 }) {
+  const isMyPost = !!myUserId && !!post.authorId && myUserId === post.authorId;
   const isBlogTeaser = !!post.blogSlug;
   const isPageTeaser = !!post.pageHref;
   const blogHref = post.blogLocale
@@ -335,13 +339,25 @@ export default function PostCard({
       )}
 
       <div className="flex items-center gap-5 px-4 lg:px-5 py-2.5 lg:pt-3" style={{ borderTop: `1px solid ${DIVIDER}` }}>
-        <button onClick={() => onLike(post.id)} className="flex items-center gap-1.5 active:scale-90 transition-transform">
+        <button
+          onClick={() => !isMyPost && onLike(post.id)}
+          disabled={isMyPost}
+          title={isMyPost ? "본인 글에는 좋아요를 누를 수 없습니다" : undefined}
+          className="flex items-center gap-1.5 transition-transform"
+          style={{ opacity: isMyPost ? 0.35 : 1, cursor: isMyPost ? "not-allowed" : "pointer" }}
+        >
           <svg className="w-[18px] h-[18px] lg:w-5 lg:h-5" fill={post.liked ? "#f87171" : "none"} viewBox="0 0 24 24" stroke={post.liked ? "#f87171" : TEXT_MUTED} strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
           </svg>
           <span className="text-xs lg:text-sm font-semibold" style={{ color: post.liked ? "#f87171" : TEXT_SECONDARY }}>{post.likeCount}</span>
         </button>
-        <Link href={`/post/${post.id}`} className="flex items-center gap-1.5 active:scale-90 transition-transform">
+        <Link
+          href={isMyPost ? "#" : `/post/${post.id}`}
+          onClick={(e) => { if (isMyPost) e.preventDefault(); }}
+          title={isMyPost ? "본인 글에는 댓글을 달 수 없습니다" : undefined}
+          className="flex items-center gap-1.5 transition-transform"
+          style={{ opacity: isMyPost ? 0.35 : 1, cursor: isMyPost ? "not-allowed" : "pointer" }}
+        >
           <svg className="w-[18px] h-[18px] lg:w-5 lg:h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} style={{ color: TEXT_MUTED }}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
           </svg>

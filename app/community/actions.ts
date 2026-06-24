@@ -64,6 +64,16 @@ export async function addComment(postId: string, content: string) {
     return { error: "로그인이 필요합니다." };
   }
 
+  // 자신의 글에는 댓글 금지
+  const { data: post } = await supabase
+    .from("posts")
+    .select("author_id")
+    .eq("id", postId)
+    .single();
+  if (post?.author_id === user.id) {
+    return { error: "본인 글에는 댓글을 달 수 없습니다." };
+  }
+
   const text = content.trim().slice(0, 1000);
   if (!text) {
     return { error: "내용을 입력해주세요." };
@@ -222,6 +232,16 @@ export async function toggleLike(postId: string) {
 
   if (!user) {
     return { error: "로그인이 필요합니다." };
+  }
+
+  // 자신의 글에는 좋아요 금지
+  const { data: post } = await supabase
+    .from("posts")
+    .select("author_id")
+    .eq("id", postId)
+    .single();
+  if (post?.author_id === user.id) {
+    return { error: "본인 글에는 좋아요를 누를 수 없습니다." };
   }
 
   const { data: existing } = await supabase

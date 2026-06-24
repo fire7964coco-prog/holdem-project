@@ -11,8 +11,8 @@ export const CURRENT_EVENT_ID = "2026-W26";
 
 /** 참여 조건 */
 export const EVENT_CONDITION = {
-  minPosts: 3,   // 커뮤니티 글 최소 작성 수
-  minLikes: 3,   // 내 글에 받은 좋아요 합계 최솟값
+  minPosts: 1,   // 커뮤니티 글 최소 작성 수
+  minLikes: 1,   // 내 글에 받은 좋아요 합계 최솟값
 };
 
 /**
