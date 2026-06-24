@@ -6,7 +6,7 @@
 ---
 
 ## 📅 마지막 작업일
-2026-06-24 (Cursor 세션)
+2026-06-24 (Cursor 세션 — 오후 작업 추가)
 
 ---
 
@@ -26,7 +26,27 @@
 
 ---
 
-## 🔥 이번 세션(2026-06-24)에 한 일
+## 🔥 이번 세션(2026-06-24) 오후 추가 작업
+
+1. **블로그 본문 폰트 변경**: EB Garamond(세리프, 번짐) → **Noto Sans KR** (구글폰트 산세리프, 선명)
+   - `app/globals.css` `.blog-prose` 폰트·색상·자간 수정
+   - 본문 텍스트 색상 `#111111` (검정)으로 고정
+
+2. **이벤트 탭 추첨 일정 안내 추가**: 상금 표 아래 "매주 일요일 오후 7시 KST 비트코인 블록 해시 자동 추첨" 박스
+   - `event-tab.tsx`: 12개 언어 `drawSchedule` 라벨 + `EventLocalDrawTime` 컴포넌트 (KST 아닌 경우 현지 시간 자동 변환)
+   - `community-client.tsx`: 데스크탑 사이드바 이벤트 배너에도 동일 추가 + `LocalDrawTime` 컴포넌트
+
+3. **블로그 진입 시 스크롤 상단 강제 이동** (피드에서 클릭 시 중간부터 보이던 버그)
+   - `blog-post-client.tsx`, `intl-blog-post-client.tsx` 에 `useEffect(() => window.scrollTo(0,0), [])` 추가
+
+4. **모바일 피드 무한스크롤 구현**
+   - `community-client.tsx`: `PAGE_SIZE=20`, `IntersectionObserver`로 Supabase 커뮤니티 글 페이지네이션
+   - `rootMargin: "0px 0px 400px 0px"` — 바닥 400px 위에서 선제 로드 (딜레이 없음)
+   - ⚠️ **현재 블로그 티저(48개)는 정적이라 여전히 한 번에 로드됨** → 효과는 커뮤니티 글 20개+ 쌓이면 체감
+
+---
+
+## 🔥 이전 세션(2026-06-24)에 한 일
 
 1. **`holdem-bankroll-management` 신규 포스트 발행** (영어 스타일 표준 적용 1호 한국어 포스트)
    - image/imageAlt/keepImagesInBody 필드 추가
@@ -53,16 +73,19 @@
    - 추천 주제: 홀덤 스몰블라인드 전략 (GSC에서 `스몰블라인드` 검색량 확인됨)
    - 또는: 홀덤 체크 뜻 / 홀덤 레이즈 얼마나 / 버튼 포지션 전략
 
-2. **기존 글 전수 검수** (아직 안 한 것)
+2. **블로그 티저도 무한스크롤에 포함** (선택 사항)
+   - 현재 블로그 티저 48개가 정적으로 한 번에 로드됨
+   - `filteredPosts`를 `displayedCount` state로 잘라서 스크롤 시 추가 표시하면 초기 로딩 더 빨라짐
+
+3. **기존 글 전수 검수** (아직 안 한 것)
    - 포커 핸드 예시 사실오류 확인 (7장→베스트5장 검산)
    - trailing slash `/blog/x/` → `/blog/x` 정리
    - 깨진/플레이스홀더 이미지 (1KB짜리) 찾아 교체
    - 오래된 `updated` 날짜 갱신
 
-3. **영어 SEO 강화** — EN 포스트 GSC 분석 후 보강 (`texas-holdem-rules` 완료, 19개 남음)
+4. **영어 SEO 강화** — EN 포스트 GSC 분석 후 보강 (`texas-holdem-rules` 완료, 19개 남음)
 
-4. **기존 한국어 포스트 스타일 표준화** — `holdem-bankroll-management`, `holdem-blind-meaning` 방식으로 나머지 포스트들도 순차 업데이트
-   - 우선순위: GSC 노출 높은 글부터
+5. **기존 한국어 포스트 스타일 표준화** — `holdem-bankroll-management`, `holdem-blind-meaning` 방식으로 나머지 포스트들도 순차 업데이트
 
 ---
 
