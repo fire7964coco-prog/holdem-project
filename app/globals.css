@@ -142,19 +142,19 @@
 /* ── 블로그 본문 타이포그래피 (팩트풀니스 스타일) ────── */
 .blog-prose {
   font-family: var(--font-serif);
-  font-size: 1.1rem;        /* 17.6px — 책 본문급 */
+  font-size: 1.175rem;      /* 18.8px — EB Garamond 최적 가독성 */
   line-height: 1.85;        /* 여유로운 행간, 팩트풀니스 페이퍼백 수준 */
   letter-spacing: 0.01em;
   color: hsl(var(--foreground));
 }
 .blog-prose p {
-  font-size: 1.08rem;
+  font-size: 1.15rem;
   line-height: 1.85;
   margin-bottom: 1.4em;
 }
 .blog-prose li {
   font-family: var(--font-serif);
-  font-size: 1.05rem;
+  font-size: 1.12rem;
   line-height: 1.75;
 }
 .blog-prose h2 {
