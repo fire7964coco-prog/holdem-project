@@ -142,19 +142,22 @@
 /* ── 블로그 본문 타이포그래피 (Noto Sans KR — 산세리프, 화면 최적) ── */
 .blog-prose {
   font-family: var(--font-noto-sans-kr), var(--font-sans);
-  font-size: 1.05rem;       /* Noto Sans KR은 EB Garamond보다 시각적으로 커 보임 */
+  font-size: 1.05rem;
   line-height: 1.9;
-  letter-spacing: -0.01em; /* Noto Sans KR 표준 트래킹 */
+  letter-spacing: -0.01em;
   word-break: keep-all;
+  color: #111111;
 }
 .blog-prose p {
   font-size: 1.05rem;
   line-height: 1.9;
   margin-bottom: 1.4em;
+  color: #111111;
 }
 .blog-prose li {
   font-size: 1.02rem;
   line-height: 1.8;
+  color: #111111;
 }
 .blog-prose h2 {
   font-size: 1.5rem;
