@@ -17,10 +17,10 @@ export const EVENT_CONDITION = {
  */
 export const WINNING_NUMBERS: number[] | null = null;
 
-/** 상금 테이블 */
+/** 상금 테이블 (한국어 결과 표시용) */
 export const PRIZE_TABLE: Record<number, string> = {
-  3: "기프트콘 5,000원",
-  4: "기프트콘 10,000원",
-  5: "기프트콘 50,000원",
-  6: "기프트콘 50,000원",
+  3: "기프트콘 5만원",
+  4: "기프트콘 30만원",
+  5: "기프트콘 100만원",
+  6: "기프트콘 100만원",
 };
