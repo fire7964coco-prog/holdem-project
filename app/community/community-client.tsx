@@ -38,6 +38,11 @@ export type CurrentUser = {
 // ── 다국어 UI 라벨 ──────────────────────────────────────────
 const LABELS = {
   ko: {
+    siteTitle: "홀덤마스터",
+    siteSubtitle: "글로벌 포커 커뮤니티",
+    filterAll: "전체",
+    filterStrategy: "전략",
+    filterCommunity: "커뮤니티",
     logout: "로그아웃",
     login: "로그인",
     loginArrow: "로그인 →",
@@ -86,6 +91,11 @@ const LABELS = {
     badge_participant: "🎟️ 이벤트 참여",
   },
   en: {
+    siteTitle: "HoldemMaster",
+    siteSubtitle: "Global Poker Community",
+    filterAll: "All",
+    filterStrategy: "Strategy",
+    filterCommunity: "Community",
     logout: "Logout",
     login: "Log in",
     loginArrow: "Log in →",
@@ -134,6 +144,11 @@ const LABELS = {
     badge_participant: "🎟️ Event Participant",
   },
   ja: {
+    siteTitle: "HoldemMaster",
+    siteSubtitle: "グローバルポーカーコミュニティ",
+    filterAll: "すべて",
+    filterStrategy: "戦略",
+    filterCommunity: "コミュニティ",
     logout: "ログアウト",
     login: "ログイン",
     loginArrow: "ログイン →",
@@ -182,6 +197,11 @@ const LABELS = {
     badge_participant: "🎟️ イベント参加",
   },
   zh: {
+    siteTitle: "HoldemMaster",
+    siteSubtitle: "全球扑克社区",
+    filterAll: "全部",
+    filterStrategy: "策略",
+    filterCommunity: "社区",
     logout: "退出登录",
     login: "登录",
     loginArrow: "登录 →",
@@ -230,6 +250,8 @@ const LABELS = {
     badge_participant: "🎟️ 活动参与者",
   },
   es: {
+    siteTitle: "HoldemMaster", siteSubtitle: "Comunidad Global de Póker",
+    filterAll: "Todo", filterStrategy: "Estrategia", filterCommunity: "Comunidad",
     logout: "Cerrar sesión", login: "Iniciar sesión", loginArrow: "Iniciar sesión →", loginSignup: "Iniciar sesión / Registrarse →",
     feed: "Feed", chat: "Chat", event: "Eventos", profile: "Perfil",
     writePost: "✏️ Escribir", searchPlaceholder: "Buscar estrategia, manos, jugadores...", writePlaceholder: "Comparte tu mano, estrategia o resultado...",
@@ -245,6 +267,8 @@ const LABELS = {
     badge_winner: "🏆 Campeón", badge_hot: "🔥 Popular", badge_top: "⭐ Top Usuario", badge_participant: "🎟️ Participante",
   },
   de: {
+    siteTitle: "HoldemMaster", siteSubtitle: "Globale Poker-Community",
+    filterAll: "Alle", filterStrategy: "Strategie", filterCommunity: "Community",
     logout: "Abmelden", login: "Anmelden", loginArrow: "Anmelden →", loginSignup: "Anmelden / Registrieren →",
     feed: "Feed", chat: "Chat", event: "Events", profile: "Profil",
     writePost: "✏️ Schreiben", searchPlaceholder: "Strategie, Hände, Spieler suchen...", writePlaceholder: "Hand, Strategie oder Ergebnis teilen...",
@@ -260,6 +284,8 @@ const LABELS = {
     badge_winner: "🏆 Gewinner", badge_hot: "🔥 Beliebt", badge_top: "⭐ Top User", badge_participant: "🎟️ Teilnehmer",
   },
   pt: {
+    siteTitle: "HoldemMaster", siteSubtitle: "Comunidade Global de Poker",
+    filterAll: "Tudo", filterStrategy: "Estratégia", filterCommunity: "Comunidade",
     logout: "Sair", login: "Entrar", loginArrow: "Entrar →", loginSignup: "Entrar / Cadastrar →",
     feed: "Feed", chat: "Chat", event: "Eventos", profile: "Perfil",
     writePost: "✏️ Escrever", searchPlaceholder: "Buscar estratégia, mãos, jogadores...", writePlaceholder: "Compartilhe sua mão, estratégia ou resultado...",
@@ -275,6 +301,8 @@ const LABELS = {
     badge_winner: "🏆 Campeão", badge_hot: "🔥 Popular", badge_top: "⭐ Top Usuário", badge_participant: "🎟️ Participante",
   },
   id: {
+    siteTitle: "HoldemMaster", siteSubtitle: "Komunitas Poker Global",
+    filterAll: "Semua", filterStrategy: "Strategi", filterCommunity: "Komunitas",
     logout: "Keluar", login: "Masuk", loginArrow: "Masuk →", loginSignup: "Masuk / Daftar →",
     feed: "Feed", chat: "Chat", event: "Event", profile: "Profil",
     writePost: "✏️ Tulis", searchPlaceholder: "Cari strategi, kartu, pemain...", writePlaceholder: "Bagikan kartu, strategi, atau hasilmu...",
@@ -290,6 +318,8 @@ const LABELS = {
     badge_winner: "🏆 Juara", badge_hot: "🔥 Populer", badge_top: "⭐ Top User", badge_participant: "🎟️ Peserta",
   },
   ms: {
+    siteTitle: "HoldemMaster", siteSubtitle: "Komuniti Poker Global",
+    filterAll: "Semua", filterStrategy: "Strategi", filterCommunity: "Komuniti",
     logout: "Log keluar", login: "Log masuk", loginArrow: "Log masuk →", loginSignup: "Log masuk / Daftar →",
     feed: "Feed", chat: "Chat", event: "Acara", profile: "Profil",
     writePost: "✏️ Tulis", searchPlaceholder: "Cari strategi, kad, pemain...", writePlaceholder: "Kongsi kad, strategi atau keputusan anda...",
@@ -305,6 +335,8 @@ const LABELS = {
     badge_winner: "🏆 Juara", badge_hot: "🔥 Popular", badge_top: "⭐ Top User", badge_participant: "🎟️ Peserta",
   },
   vi: {
+    siteTitle: "HoldemMaster", siteSubtitle: "Cộng Đồng Poker Toàn Cầu",
+    filterAll: "Tất cả", filterStrategy: "Chiến lược", filterCommunity: "Cộng đồng",
     logout: "Đăng xuất", login: "Đăng nhập", loginArrow: "Đăng nhập →", loginSignup: "Đăng nhập / Đăng ký →",
     feed: "Feed", chat: "Chat", event: "Sự kiện", profile: "Hồ sơ",
     writePost: "✏️ Viết bài", searchPlaceholder: "Tìm kiếm chiến lược, bài, người chơi...", writePlaceholder: "Chia sẻ bài của bạn, chiến lược hoặc kết quả...",
@@ -320,6 +352,8 @@ const LABELS = {
     badge_winner: "🏆 Vô địch", badge_hot: "🔥 Phổ biến", badge_top: "⭐ Top User", badge_participant: "🎟️ Người tham gia",
   },
   tr: {
+    siteTitle: "HoldemMaster", siteSubtitle: "Global Poker Topluluğu",
+    filterAll: "Tümü", filterStrategy: "Strateji", filterCommunity: "Topluluk",
     logout: "Çıkış yap", login: "Giriş yap", loginArrow: "Giriş yap →", loginSignup: "Giriş / Kayıt →",
     feed: "Feed", chat: "Sohbet", event: "Etkinlikler", profile: "Profil",
     writePost: "✏️ Yaz", searchPlaceholder: "Strateji, el, oyuncu ara...", writePlaceholder: "El, strateji veya sonucunu paylaş...",
@@ -773,7 +807,7 @@ export default function CommunityClient({
               className="text-[11px] font-bold tracking-widest uppercase"
               style={{ color: MUTED, fontFamily: FONT_SANS }}
             >
-              글로벌 포커 커뮤니티
+              {L.siteSubtitle}
             </span>
             {currentUser ? (
               <div className="flex items-center gap-2">
@@ -805,14 +839,14 @@ export default function CommunityClient({
             className="text-[28px] leading-tight pb-3"
             style={{ color: INK, fontFamily: FONT_SERIF, fontWeight: 500, letterSpacing: "-0.4px" }}
           >
-            홀덤 라운지
+            {L.siteTitle}
           </h1>
 
           {/* 필터 탭 (언더라인 스타일) */}
           {tab === "home" && (
             <div className="flex items-center gap-5 -mx-1">
               {FILTER_PILLS.map((f) => {
-                const labels: Record<string, string> = { All: "전체", Strategy: "전략", Community: "커뮤니티" };
+                const labels: Record<string, string> = { All: L.filterAll, Strategy: L.filterStrategy, Community: L.filterCommunity };
                 const active = feedFilter === f;
                 return (
                   <button
@@ -891,13 +925,13 @@ export default function CommunityClient({
             {/* 마스트헤드 타이틀 */}
             <div className="flex flex-col justify-center py-3 mr-4 flex-shrink-0" style={{ borderRight: `1px solid ${BORDER}`, paddingRight: 24 }}>
               <span className="text-[10px] font-bold tracking-widest uppercase" style={{ color: MUTED, fontFamily: FONT_SANS }}>
-                글로벌 포커 커뮤니티
+                {L.siteSubtitle}
               </span>
               <span
                 className="text-[22px] leading-tight"
                 style={{ color: INK, fontFamily: FONT_SERIF, fontWeight: 500, letterSpacing: "-0.3px" }}
               >
-                홀덤 라운지
+                {L.siteTitle}
               </span>
             </div>
 
@@ -1017,7 +1051,7 @@ export default function CommunityClient({
               <>
                 <div className="flex items-center gap-6 mb-5" style={{ borderBottom: `1px solid ${BORDER}` }}>
                   {FILTER_PILLS.map((f) => {
-                    const labels: Record<string, string> = { All: "전체", Strategy: "전략", Community: "커뮤니티" };
+                    const labels: Record<string, string> = { All: L.filterAll, Strategy: L.filterStrategy, Community: L.filterCommunity };
                     const active = feedFilter === f;
                     return (
                       <button
