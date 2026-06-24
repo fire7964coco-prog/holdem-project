@@ -77,13 +77,41 @@ export default function IntlBlogPostClient({
     post.content.replace(/^:::quiz:::$/m, ""),
   )}</p>`;
 
+  const CTA_LABEL: Record<string, string> = {
+    en: "Community →", ja: "コミュニティ →", zh: "社区 →",
+    es: "Comunidad →", de: "Community →", ar: "المجتمع →",
+    tr: "Topluluk →", vi: "Cộng đồng →", id: "Komunitas →",
+    ms: "Komuniti →", pt: "Comunidade →", hi: "समुदाय →",
+  };
+
   return (
     <div dir={dir}>
-      <div className="bg-card border-b border-border">
-        <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-2 text-xs text-muted-foreground">
-          <Link href={base} className="hover:text-primary transition-colors">{t.blogLabel}</Link>
-          <span>/</span>
-          <span className="text-foreground truncate max-w-[200px]">{post.title}</span>
+      {/* Sticky 탑바 — 브레드크럼 + 커뮤니티 CTA */}
+      <div
+        className="sticky top-0 z-50 flex items-center px-4 h-11 gap-2"
+        style={{ background: "#0b1120", borderBottom: "1px solid rgba(212,175,55,0.15)" }}
+      >
+        <Link
+          href={`/${locale}`}
+          className="flex items-center gap-1 text-xs font-bold transition-opacity hover:opacity-70"
+          style={{ color: "#d4af37" }}
+        >
+          <ChevronLeft className="w-3.5 h-3.5" strokeWidth={2.5} />
+          Home
+        </Link>
+        <span className="text-muted-foreground/40 text-xs">/</span>
+        <span className="text-xs text-muted-foreground truncate max-w-[140px]">{post.title}</span>
+        <div className="ml-auto flex items-center gap-2.5">
+          <Link
+            href={`/${locale}`}
+            className="px-3 py-1 rounded-lg text-[11px] font-bold leading-none transition-opacity hover:opacity-90"
+            style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: "#0b1120" }}
+          >
+            {CTA_LABEL[locale] ?? "Community →"}
+          </Link>
+          <span className="text-[11px] font-black tracking-widest" style={{ color: "rgba(212,175,55,0.4)" }}>
+            HM
+          </span>
         </div>
       </div>
 

@@ -122,6 +122,31 @@ export function renderMarkdown(content: string): string {
         .join('');
       return `<div style="margin:14px 0">${rows}</div>`;
     })
+    // ── 매거진 컴포넌트: :::stripe ── 타이포 스탯 스트라이프 (값 | 라벨, 한 줄당 한 칸)
+    // "|" 구분자를 쓰므로 table 처리보다 먼저 실행해야 한다.
+    .replace(/^:::stripe\n([\s\S]*?)\n:::$/gm, (_, body) => {
+      const rows = body
+        .trim()
+        .split('\n')
+        .filter((l: string) => l.trim().length > 0);
+      const cells = rows
+        .map((line: string, i: number) => {
+          const [value = '', label = ''] = line.split('|').map((s: string) => s.trim());
+          const border = i === rows.length - 1 ? '' : 'border-right:1px solid hsl(43 38% 26%)';
+          return (
+            `<div style="flex:1;min-width:84px;padding:18px 8px;text-align:center;${border}">` +
+            `<div style="font-size:27px;font-weight:900;color:hsl(43 78% 58%);line-height:1">${value}</div>` +
+            `<div style="font-size:11.5px;color:hsl(152 12% 78%);margin-top:8px;line-height:1.4">${label}</div>` +
+            `</div>`
+          );
+        })
+        .join('');
+      return `<div style="display:flex;flex-wrap:wrap;margin:28px 0;border-top:1px solid hsl(43 38% 26%);border-bottom:1px solid hsl(43 38% 26%)">${cells}</div>`;
+    })
+    // ── 매거진 컴포넌트: :::lead ── 드롭캡 리드 문단 (.lead-para 스타일은 globals.css)
+    // 내부 **bold**/[링크]는 아래 공통 처리에서 변환되도록 원문 그대로 감싼다.
+    .replace(/^:::lead\n([\s\S]*?)\n:::$/gm, (_, body) =>
+      `<p class="lead-para">${body.trim()}</p>`)
     // Numbered step cards — MUST run before **bold** processing
     .replace(/^\*\*(\d+)\. (.+?)\*\*\s*[—–]?\s*(.+)$/gm, (_, num, title, desc) =>
       `<div style="display:flex;gap:12px;align-items:flex-start;margin:10px 0;padding:14px 16px;background:rgba(255,255,255,0.04);border-radius:10px;border:1px solid rgba(255,255,255,0.09)">` +
@@ -315,6 +340,19 @@ export function renderMarkdown(content: string): string {
         `<p style="font-size:14px;color:#d4af37;margin:0;letter-spacing:0.4px;font-weight:700">${caption}</p>` +
         `</div></div></div>`;
     })
+    // ── 매거진 컴포넌트: :::kicker[text]::: ── H2 바로 위 아이브로우(소제목 라벨).
+    // 아래 음수 margin 으로 다음 ## 제목에 바짝 붙인다(제목은 TOC 유지를 위해 ##로 둠).
+    .replace(/^:::kicker\[([^\]]+)\]:::$/gm, (_, text) =>
+      `<div style="font-size:11px;font-weight:800;letter-spacing:0.16em;text-transform:uppercase;color:hsl(43 78% 58%);margin:2.6rem 0 -1.9rem">${text}</div>`)
+    // ── 매거진 컴포넌트: :::pull[text]::: ── 풀쿼트(큰 인용). <br> 줄바꿈 허용.
+    .replace(/^:::pull\[([^\]]+)\]:::$/gm, (_, text) =>
+      `<figure style="margin:34px 0;text-align:center">` +
+      `<div style="font-size:46px;line-height:0.4;color:hsl(43 78% 58%);opacity:0.5;margin-bottom:14px">&ldquo;</div>` +
+      `<p style="font-size:22px;font-weight:800;line-height:1.55;color:hsl(45 28% 92%);margin:0;letter-spacing:-0.01em">${text}</p>` +
+      `</figure>`)
+    // ── 매거진 컴포넌트: :::note[text]::: ── 여백형 에디토리얼 노트(이탤릭 + 골드 좌측선)
+    .replace(/^:::note\[([^\]]+)\]:::$/gm, (_, text) =>
+      `<div style="margin:26px 0;padding:16px 20px;border-left:3px solid hsl(43 78% 58%);font-size:15px;color:hsl(152 12% 78%);font-style:italic;line-height:1.7">${text}</div>`)
     // :::tip[text]::: single-line tip callout
     .replace(/^:::tip\[([^\]]+)\]:::$/gm, (_, text) =>
       `<div style="display:flex;gap:10px;align-items:center;margin:14px 0;padding:12px 16px;background:rgba(59,130,246,0.07);border-radius:10px;border:1px solid rgba(59,130,246,0.2);font-size:13px;color:var(--foreground)">` +
@@ -362,6 +400,33 @@ export default function BlogPost({
 
   return (
     <div className="min-h-screen" style={{ background: "#0b1120", fontFamily: "'Inter','Pretendard',sans-serif" }}>
+      {/* Sticky 탑바 — 뒤로가기 + 커뮤니티 CTA */}
+      <div
+        className="sticky top-0 z-50 flex items-center px-4 h-11 gap-3"
+        style={{ background: "#0b1120", borderBottom: "1px solid rgba(212,175,55,0.15)" }}
+      >
+        <Link
+          href="/"
+          className="flex items-center gap-1.5 text-sm font-bold transition-opacity hover:opacity-70"
+          style={{ color: "#d4af37" }}
+        >
+          <ChevronLeft className="w-4 h-4 -ml-0.5" strokeWidth={2.5} />
+          홈피드
+        </Link>
+        <div className="ml-auto flex items-center gap-2.5">
+          <Link
+            href="/"
+            className="px-3 py-1 rounded-lg text-[11px] font-bold leading-none transition-opacity hover:opacity-90"
+            style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: "#0b1120" }}
+          >
+            커뮤니티 →
+          </Link>
+          <span className="text-[11px] font-black tracking-widest" style={{ color: "rgba(212,175,55,0.4)" }}>
+            HM
+          </span>
+        </div>
+      </div>
+
       <div className="max-w-2xl mx-auto px-4 pt-4 pb-20">
         {/* Main content column */}
         <div className="min-w-0">
