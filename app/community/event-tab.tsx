@@ -3,9 +3,18 @@
 import { useState, useTransition, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { createClient } from "@/lib/supabase/client";
 import { getEventData, submitEventEntry } from "./actions";
-import { EVENT_CONDITION, WINNING_NUMBERS, PRIZE_TABLE } from "@/lib/event-config";
+import { EVENT_CONDITION, CURRENT_EVENT_ID, PRIZE_TABLE } from "@/lib/event-config";
 import { GOLD, BG, CARD, BORDER, TEXT_PRIMARY, TEXT_BODY, TEXT_SECONDARY, TEXT_MUTED, SURFACE } from "./post-card";
+
+type DrawInfo = {
+  block_height: number;
+  block_hash: string;
+  winning_numbers: number[];
+  explorer_url: string;
+  drawn_at: string;
+} | null;
 
 type EventData = {
   myEntry: { numbers: number[] } | null;
@@ -288,6 +297,7 @@ export default function EventTab({
   const [isPending, startTransition] = useTransition();
   const [submitError, setSubmitError] = useState<string | null>(null);
   const [submitted, setSubmitted] = useState(false);
+  const [drawInfo, setDrawInfo] = useState<DrawInfo>(null);
 
   // 로그인 유저 데이터를 초기화 후에도 새로 불러올 수 있게
   useEffect(() => {
@@ -295,6 +305,17 @@ export default function EventTab({
       getEventData().then(setData);
     }
   }, [isLoggedIn, initialData]);
+
+  // 이번 주 추첨 결과 fetch (공개 — 비로그인도 조회 가능)
+  useEffect(() => {
+    const supabase = createClient();
+    supabase
+      .from("event_draws")
+      .select("block_height,block_hash,winning_numbers,explorer_url,drawn_at")
+      .eq("event_id", CURRENT_EVENT_ID)
+      .single()
+      .then(({ data }) => { if (data) setDrawInfo(data as DrawInfo); });
+  }, []);
 
   const myPostCount = data?.myPostCount ?? 0;
   const myLikeCount = data?.myLikeCount ?? 0;
@@ -332,10 +353,11 @@ export default function EventTab({
     });
   }
 
-  // 결과 계산
+  // 결과 계산 (DB에서 가져온 당첨번호 사용)
+  const winningNumbers = drawInfo?.winning_numbers ?? null;
   const matchCount =
-    myEntry && WINNING_NUMBERS
-      ? myEntry.numbers.filter((n) => WINNING_NUMBERS!.includes(n)).length
+    myEntry && winningNumbers
+      ? myEntry.numbers.filter((n) => winningNumbers.includes(n)).length
       : 0;
   const prize = PRIZE_TABLE[matchCount] ?? null;
 
@@ -442,7 +464,7 @@ export default function EventTab({
           className="rounded-2xl p-5"
           style={{ background: CARD, border: `1px solid ${BORDER}` }}
         >
-          {WINNING_NUMBERS ? (
+          {winningNumbers ? (
             /* 결과 발표 후 */
             <>
               <p className="text-sm font-bold mb-3" style={{ color: TEXT_PRIMARY }}>
@@ -459,7 +481,7 @@ export default function EventTab({
 
               <p className="text-xs mb-2" style={{ color: GOLD }}>{EL.winningLabel}</p>
               <div className="flex flex-wrap gap-2 mb-4">
-                {WINNING_NUMBERS.map((n) => (
+                {winningNumbers.map((n) => (
                   <NumberBall key={n} n={n} selected={myEntry.numbers.includes(n)} winning disabled />
                 ))}
               </div>
@@ -467,7 +489,7 @@ export default function EventTab({
               <p className="text-xs mb-2 font-medium" style={{ color: TEXT_SECONDARY }}>{EL.myNumLabel}</p>
               <div className="flex flex-wrap gap-2">
                 {myEntry.numbers.map((n) => (
-                  <NumberBall key={n} n={n} selected winning={WINNING_NUMBERS!.includes(n)} disabled />
+                  <NumberBall key={n} n={n} selected winning={winningNumbers.includes(n)} disabled />
                 ))}
               </div>
 
@@ -475,6 +497,27 @@ export default function EventTab({
                 <p className="text-xs mt-4 text-center font-medium" style={{ color: TEXT_SECONDARY }}>
                   {EL.noMatch}
                 </p>
+              )}
+
+              {/* 블록해시 공정성 검증 */}
+              {drawInfo && (
+                <div className="mt-4 p-3 rounded-xl" style={{ background: SURFACE, border: `1px solid ${BORDER}` }}>
+                  <p className="text-[10px] font-bold mb-1" style={{ color: TEXT_MUTED }}>
+                    🔗 Verified by Bitcoin Block #{drawInfo.block_height}
+                  </p>
+                  <p className="text-[9px] font-mono break-all mb-2" style={{ color: TEXT_MUTED }}>
+                    {drawInfo.block_hash}
+                  </p>
+                  <a
+                    href={drawInfo.explorer_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[10px] font-bold underline"
+                    style={{ color: GOLD }}
+                  >
+                    Verify on Blockstream Explorer →
+                  </a>
+                </div>
               )}
             </>
           ) : (
@@ -499,6 +542,9 @@ export default function EventTab({
                 <p className="text-xs font-bold" style={{ color: GOLD }}>{EL.pending}</p>
                 <p className="text-xs mt-1 font-medium" style={{ color: TEXT_BODY }}>
                   {EL.pendingDesc}
+                </p>
+                <p className="text-[10px] mt-2" style={{ color: TEXT_MUTED }}>
+                  🔗 Draw: Bitcoin block hash · Every Sunday 7 PM KST
                 </p>
               </div>
             </>

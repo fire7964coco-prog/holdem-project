@@ -230,3 +230,22 @@ drop policy if exists "chat_insert" on public.chat_messages;
 create policy "chat_read"   on public.chat_messages for select using (true);
 create policy "chat_insert" on public.chat_messages for insert
   with check (auth.uid() = user_id);
+
+-- ============================================================
+-- 8. event_draws (비트코인 해시 기반 자동 추첨 — Phase 7)
+-- ============================================================
+create table if not exists public.event_draws (
+  id              uuid primary key default gen_random_uuid(),
+  event_id        text not null unique,          -- 'YYYY-WNN' 형식 (예: 2026-W27)
+  block_height    bigint not null,               -- 비트코인 블록 번호
+  block_hash      text not null,                 -- 64자리 hex
+  winning_numbers integer[] not null,            -- 추출된 1~45 번호 6개
+  drawn_at        timestamptz not null default now(),
+  explorer_url    text                           -- 블록 탐색기 URL (검증용)
+);
+
+alter table public.event_draws enable row level security;
+
+-- 누구나 읽기 가능 (공개 검증), 쓰기는 서버 cron(service role)만
+drop policy if exists "draws_read" on public.event_draws;
+create policy "draws_read" on public.event_draws for select using (true);

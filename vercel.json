@@ -4,6 +4,12 @@
   "buildCommand": "next build",
   "devCommand": "next dev",
   "installCommand": "npm install",
+  "crons": [
+    {
+      "path": "/api/cron/draw-event",
+      "schedule": "0 10 * * 0"
+    }
+  ],
   "redirects": [
     {
       "source": "/:path*",
