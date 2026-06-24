@@ -10,7 +10,7 @@ import { POSTS } from "@/lib/posts";
 import { SITE } from "@/lib/site";
 import CommunityCTA from "@/components/community-cta";
 import BlogTopBar from "@/components/blog-top-bar";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 
 const PokerOddsCalculator = dynamic(
   () => import("@/components/poker-odds-calculator").then((m) => m.PokerOddsCalculator),
@@ -452,6 +452,11 @@ export default function BlogPost({
   const [copied, setCopied] = useState(false);
   const contentRef = useRef<HTMLDivElement>(null);
   const pageUrl = `${SITE}/blog/${post.slug}`;
+
+  // 피드 등에서 진입 시 스크롤 상단 고정
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "instant" });
+  }, []);
 
   function copyLink() {
     navigator.clipboard.writeText(pageUrl).then(() => {

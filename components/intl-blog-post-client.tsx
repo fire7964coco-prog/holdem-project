@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Clock, Tag, ChevronLeft, ChevronRight, ChevronDown, Share2, Link2 } from "lucide-react";
 import { FaXTwitter, FaFacebookF } from "react-icons/fa6";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import type { Post } from "@/lib/posts";
 import { SITE } from "@/lib/site";
 import { POST_LABELS, dirForLocale, type SecondaryLocale } from "@/lib/intl";
@@ -64,6 +64,11 @@ export default function IntlBlogPostClient({
   const [copied, setCopied] = useState(false);
   const contentRef = useRef<HTMLDivElement>(null);
   const pageUrl = `${SITE}${base}/${post.slug}`;
+
+  // 피드 등에서 진입 시 스크롤 상단 고정
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "instant" });
+  }, []);
 
   function copyLink() {
     navigator.clipboard.writeText(pageUrl).then(() => {
