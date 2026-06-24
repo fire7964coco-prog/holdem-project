@@ -98,6 +98,7 @@ const EVENT_LABELS = {
     eventBadge: "2026년 6월 이벤트",
     eventTitle: "번호 6개 선택 — 기프트콘 증정!",
     eventDesc: "1~45 중 6개를 선택하세요. 3개 이상 일치하면 기프트콘을 드립니다.",
+    drawSchedule: "🔗 매주 일요일 오후 7시, 비트코인 블록 해시로 자동 추첨됩니다.",
     match3: "3개 일치", match4: "4개 일치", match56: "5개 일치",
     prize3: "5만원", prize4: "30만원", prize56: "100만원",
     loginRequired: "로그인 후 참여 가능",
@@ -127,6 +128,7 @@ const EVENT_LABELS = {
     eventBadge: "June 2026 Event",
     eventTitle: "Pick 6 Numbers — Win a Gift Voucher!",
     eventDesc: "Choose 6 numbers from 1–45. Match 3 or more to win a gift voucher.",
+    drawSchedule: "🔗 Draw every Sunday at 7 PM KST via Bitcoin block hash.",
     match3: "3 matches", match4: "4 matches", match56: "5 matches",
     prize3: "$30", prize4: "$200", prize56: "$1,000",
     loginRequired: "Login to Participate",
@@ -156,6 +158,7 @@ const EVENT_LABELS = {
     eventBadge: "2026年6月イベント",
     eventTitle: "6つの番号を選択 — ギフト券プレゼント!",
     eventDesc: "1〜45の中から6つを選んでください。3つ以上一致でギフト券をプレゼント。",
+    drawSchedule: "🔗 毎週日曜日 午後7時（KST）にビットコインブロックハッシュで自動抽選。",
     match3: "3つ一致", match4: "4つ一致", match56: "5つ一致",
     prize3: "$30", prize4: "$200", prize56: "$1,000",
     loginRequired: "ログインして参加",
@@ -185,6 +188,7 @@ const EVENT_LABELS = {
     eventBadge: "2026年6月活动",
     eventTitle: "选择6个号码 — 赢取礼品券!",
     eventDesc: "从1~45中选择6个号码，匹配3个或以上即可获得礼品券。",
+    drawSchedule: "🔗 每周日晚7点（KST），通过比特币区块哈希自动抽签。",
     match3: "匹配3个", match4: "匹配4个", match56: "匹配5个",
     prize3: "$30", prize4: "$200", prize56: "$1,000",
     loginRequired: "登录后参与",
@@ -212,6 +216,7 @@ const EVENT_LABELS = {
   },
   es: {
     eventBadge: "Evento de junio 2026", eventTitle: "¡Elige 6 números — Gana un vale!", eventDesc: "Elige 6 números del 1 al 45. Acierta 3 o más para ganar un vale.",
+    drawSchedule: "🔗 Sorteo automático cada domingo a las 7 PM KST mediante Bitcoin block hash.",
     match3: "3 aciertos", match4: "4 aciertos", match56: "5 aciertos", prize3: "$30", prize4: "$200", prize56: "$1,000",
     loginRequired: "Inicia sesión para participar", loginDesc: "Por favor inicia sesión para unirte al evento.", loginBtn: "Iniciar sesión / Registrarse →",
     condTitle: "🎯 Requisitos", condDesc: "Cumple las condiciones para desbloquear la selección.", postLabel: (n: number) => `Escribe ${n} publicaciones`, likeLabel: (n: number) => `Obtén ${n} me gusta`, condHint: "¡Publica en el feed y consigue me gusta para participar!",
@@ -221,6 +226,7 @@ const EVENT_LABELS = {
   },
   de: {
     eventBadge: "Juni 2026 Event", eventTitle: "6 Zahlen wählen — Geschenkkarte gewinnen!", eventDesc: "Wähle 6 Zahlen von 1–45. Triff 3 oder mehr für eine Geschenkkarte.",
+    drawSchedule: "🔗 Automatische Ziehung jeden Sonntag um 19 Uhr KST per Bitcoin Block Hash.",
     match3: "3 Treffer", match4: "4 Treffer", match56: "5 Treffer", prize3: "$30", prize4: "$200", prize56: "$1,000",
     loginRequired: "Anmelden zum Mitmachen", loginDesc: "Bitte melde dich an, um am Event teilzunehmen.", loginBtn: "Anmelden / Registrieren →",
     condTitle: "🎯 Voraussetzungen", condDesc: "Erfülle die Bedingungen, um die Zahlenauswahl freizuschalten.", postLabel: (n: number) => `${n} Beiträge schreiben`, likeLabel: (n: number) => `${n} Likes erhalten`, condHint: "Poste im Feed und sammle Likes, um mitzumachen!",
@@ -230,6 +236,7 @@ const EVENT_LABELS = {
   },
   pt: {
     eventBadge: "Evento junho 2026", eventTitle: "Escolha 6 números — Ganhe um vale!", eventDesc: "Escolha 6 números de 1 a 45. Acerte 3 ou mais para ganhar um vale.",
+    drawSchedule: "🔗 Sorteio automático todo domingo às 19h KST via hash do bloco Bitcoin.",
     match3: "3 acertos", match4: "4 acertos", match56: "5 acertos", prize3: "$30", prize4: "$200", prize56: "$1,000",
     loginRequired: "Login para participar", loginDesc: "Faça login para participar do evento.", loginBtn: "Entrar / Cadastrar →",
     condTitle: "🎯 Requisitos", condDesc: "Cumpra as condições para desbloquear a seleção.", postLabel: (n: number) => `Escreva ${n} publicações`, likeLabel: (n: number) => `Receba ${n} curtidas`, condHint: "Publique no feed e receba curtidas para participar!",
@@ -239,6 +246,7 @@ const EVENT_LABELS = {
   },
   id: {
     eventBadge: "Event Juni 2026", eventTitle: "Pilih 6 Angka — Menangkan Voucher!", eventDesc: "Pilih 6 angka dari 1–45. Cocokkan 3 atau lebih untuk menang.",
+    drawSchedule: "🔗 Undian otomatis setiap Minggu jam 7 malam KST via Bitcoin block hash.",
     match3: "3 cocok", match4: "4 cocok", match56: "5 cocok", prize3: "$30", prize4: "$200", prize56: "$1,000",
     loginRequired: "Login untuk berpartisipasi", loginDesc: "Silakan login untuk bergabung event.", loginBtn: "Masuk / Daftar →",
     condTitle: "🎯 Syarat", condDesc: "Penuhi syarat untuk membuka pemilihan angka.", postLabel: (n: number) => `Tulis ${n} postingan`, likeLabel: (n: number) => `Dapat ${n} suka`, condHint: "Posting di feed dan kumpulkan suka untuk berpartisipasi!",
@@ -248,6 +256,7 @@ const EVENT_LABELS = {
   },
   ms: {
     eventBadge: "Acara Jun 2026", eventTitle: "Pilih 6 Nombor — Menang Baucar!", eventDesc: "Pilih 6 nombor dari 1–45. Padankan 3 atau lebih untuk menang.",
+    drawSchedule: "🔗 Cabutan automatik setiap Ahad jam 7 petang KST melalui Bitcoin block hash.",
     match3: "3 padanan", match4: "4 padanan", match56: "5 padanan", prize3: "$30", prize4: "$200", prize56: "$1,000",
     loginRequired: "Log masuk untuk sertai", loginDesc: "Sila log masuk untuk menyertai acara.", loginBtn: "Log masuk / Daftar →",
     condTitle: "🎯 Syarat", condDesc: "Penuhi syarat untuk membuka pemilihan nombor.", postLabel: (n: number) => `Tulis ${n} siaran`, likeLabel: (n: number) => `Dapat ${n} suka`, condHint: "Posting di feed dan kumpul suka untuk sertai!",
@@ -257,6 +266,7 @@ const EVENT_LABELS = {
   },
   vi: {
     eventBadge: "Sự kiện tháng 6/2026", eventTitle: "Chọn 6 số — Nhận thẻ quà tặng!", eventDesc: "Chọn 6 số từ 1–45. Khớp 3 số trở lên để thắng.",
+    drawSchedule: "🔗 Quay thưởng tự động mỗi Chủ nhật lúc 7 giờ tối KST qua Bitcoin block hash.",
     match3: "3 khớp", match4: "4 khớp", match56: "5 khớp", prize3: "$30", prize4: "$200", prize56: "$1,000",
     loginRequired: "Đăng nhập để tham gia", loginDesc: "Vui lòng đăng nhập để tham gia sự kiện.", loginBtn: "Đăng nhập / Đăng ký →",
     condTitle: "🎯 Điều kiện", condDesc: "Hoàn thành điều kiện để mở khóa chọn số.", postLabel: (n: number) => `Viết ${n} bài`, likeLabel: (n: number) => `Nhận ${n} lượt thích`, condHint: "Đăng bài lên feed và nhận lượt thích để tham gia!",
@@ -266,6 +276,7 @@ const EVENT_LABELS = {
   },
   tr: {
     eventBadge: "Haziran 2026 Etkinliği", eventTitle: "6 Numara Seç — Hediye Kartı Kazan!", eventDesc: "1–45 arasından 6 numara seç. 3 veya fazlası eşleşirse kazanırsın.",
+    drawSchedule: "🔗 Her Pazar saat 19:00 KST'de Bitcoin block hash ile otomatik çekiliş.",
     match3: "3 eşleşme", match4: "4 eşleşme", match56: "5 eşleşme", prize3: "$30", prize4: "$200", prize56: "$1,000",
     loginRequired: "Katılmak için giriş yap", loginDesc: "Etkinliğe katılmak için lütfen giriş yapın.", loginBtn: "Giriş / Kayıt →",
     condTitle: "🎯 Koşullar", condDesc: "Numara seçimini açmak için koşulları tamamla.", postLabel: (n: number) => `${n} gönderi yaz`, likeLabel: (n: number) => `${n} beğeni al`, condHint: "Feed'e gönderi yap ve beğeni topla!",
@@ -405,6 +416,16 @@ export default function EventTab({
                 <p className="font-medium" style={{ color: TEXT_SECONDARY }}>{r.match}</p>
               </div>
             ))}
+          </div>
+
+          {/* 추첨 일정 안내 */}
+          <div
+            className="mt-3 px-3 py-2.5 rounded-xl flex items-start gap-2"
+            style={{ background: "rgba(212,175,55,0.06)", border: "1px solid rgba(212,175,55,0.15)" }}
+          >
+            <p className="text-[11px] leading-relaxed font-medium" style={{ color: TEXT_SECONDARY }}>
+              {EL.drawSchedule}
+            </p>
           </div>
         </div>
       </div>
