@@ -1,6 +1,6 @@
 ﻿"use client";
 
-import { useState, useTransition, useEffect } from "react";
+import { useState, useTransition, useEffect, useRef, useCallback } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
@@ -424,6 +424,13 @@ export default function CommunityClient({
   const [nicknameInput, setNicknameInput] = useState("");
   const [nicknameErr, setNicknameErr] = useState<string | null>(null);
 
+  // ── 무한스크롤 ────────────────────────────────────────────
+  const PAGE_SIZE = 20;
+  const [communityOffset, setCommunityOffset] = useState(PAGE_SIZE);
+  const [hasMore, setHasMore] = useState(true);
+  const [loadingMore, setLoadingMore] = useState(false);
+  const sentinelRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     // OAuth 에러 파라미터 처리
     const params = new URLSearchParams(window.location.search);
@@ -504,14 +511,15 @@ export default function CommunityClient({
       setCurrentUser(currentUserData);
       setMyLanguage(lang);
 
-      // 커뮤니티 글 fetch
+      // 커뮤니티 글 fetch (초기 PAGE_SIZE개만)
       const adminLang = pageLocale ?? lang;
       const { data: postsRaw } = await supabase
         .from("posts")
         .select("id, type, language, title, content, image_url, like_count, comment_count, created_at, author_id, profiles(nickname, avatar_url, badge)")
         .or(`type.eq.community,and(type.eq.admin,language.eq.${adminLang})`)
         .order("created_at", { ascending: false })
-        .limit(30);
+        .range(0, PAGE_SIZE - 1);
+      if ((postsRaw?.length ?? 0) < PAGE_SIZE) setHasMore(false);
 
       // 좋아요 목록
       let likedIds: string[] = [];
@@ -581,6 +589,65 @@ export default function CommunityClient({
     top: L.badge_top,
     participant: L.badge_participant,
   };
+
+  // ── 추가 로드 (무한스크롤) ──────────────────────────────────
+  const loadMorePosts = useCallback(async () => {
+    if (!hasMore || loadingMore || tab !== "home") return;
+    setLoadingMore(true);
+    const supabase = createClient();
+    const adminLang = pageLocale ?? myLanguage;
+    const { data: postsRaw } = await supabase
+      .from("posts")
+      .select("id, type, language, title, content, image_url, like_count, comment_count, created_at, author_id, profiles(nickname, avatar_url, badge)")
+      .or(`type.eq.community,and(type.eq.admin,language.eq.${adminLang})`)
+      .order("created_at", { ascending: false })
+      .range(communityOffset, communityOffset + PAGE_SIZE - 1);
+
+    const count = postsRaw?.length ?? 0;
+    if (count < PAGE_SIZE) setHasMore(false);
+
+    if (count > 0) {
+      let likedIds: string[] = [];
+      if (currentUser) {
+        const { data: likes } = await supabase
+          .from("likes").select("post_id")
+          .eq("user_id", currentUser.id)
+          .in("post_id", postsRaw!.map((p: any) => p.id));
+        likedIds = (likes ?? []).map((l: any) => l.post_id);
+      }
+      const newPosts: FeedPost[] = postsRaw!.map((p: any) => ({
+        id: p.id, type: p.type, language: p.language,
+        title: p.title, content: p.content, imageUrl: p.image_url,
+        likeCount: p.like_count, commentCount: p.comment_count,
+        createdAt: p.created_at, authorId: p.author_id ?? null,
+        authorNickname: p.profiles?.nickname ?? "Unknown",
+        authorAvatar: p.profiles?.avatar_url ?? null,
+        authorBadge: p.profiles?.badge ?? null,
+        liked: likedIds.includes(p.id),
+      }));
+      setPosts(prev => {
+        const existingIds = new Set(prev.map(p => p.id));
+        const fresh = newPosts.filter(p => !existingIds.has(p.id));
+        return [...prev, ...fresh].sort(
+          (a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
+        );
+      });
+    }
+    setCommunityOffset(prev => prev + PAGE_SIZE);
+    setLoadingMore(false);
+  }, [hasMore, loadingMore, tab, communityOffset, myLanguage, currentUser, pageLocale]);
+
+  // IntersectionObserver — sentinel이 보이면 더 로드
+  useEffect(() => {
+    const sentinel = sentinelRef.current;
+    if (!sentinel) return;
+    const observer = new IntersectionObserver(
+      (entries) => { if (entries[0].isIntersecting) loadMorePosts(); },
+      { threshold: 0.1 }
+    );
+    observer.observe(sentinel);
+    return () => observer.disconnect();
+  }, [loadMorePosts]);
 
   function onLike(postId: string) {
     if (!currentUser) { router.push("/login"); return; }
@@ -884,6 +951,28 @@ export default function CommunityClient({
         {/* 모바일 본문 */}
         <div className="flex-1 overflow-y-auto pb-24">
           <TabContent />
+          {/* 무한스크롤 sentinel */}
+          {tab === "home" && (
+            <div ref={sentinelRef} className="flex flex-col items-center py-6 gap-2">
+              {loadingMore && (
+                <>
+                  <div
+                    style={{
+                      width: 24, height: 24, borderRadius: "50%",
+                      border: "2.5px solid rgba(32,49,42,0.15)",
+                      borderTopColor: INK,
+                      animation: "spin 0.8s linear infinite",
+                    }}
+                  />
+                  <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
+                  <span style={{ fontSize: 11, color: MUTED, fontFamily: FONT_SANS }}>불러오는 중…</span>
+                </>
+              )}
+              {!hasMore && posts.length > PAGE_SIZE && (
+                <span style={{ fontSize: 11, color: MUTED, fontFamily: FONT_SANS }}>♠ 모든 글을 다 봤습니다</span>
+              )}
+            </div>
+          )}
         </div>
 
         {/* 모바일 FAB */}
