@@ -1,0 +1,90 @@
+---
+description: 성능 최적화, 빌드·배포 워크플로우, GSC 루틴, Supabase 인프라
+globs: app/**, components/**, next.config.mjs, lib/supabase/**
+alwaysApply: false
+---
+
+# 기술·성능 규칙 — 홀덤마스터
+
+## ⚡ 성능 최적화 수칙
+
+- `framer-motion`은 `next/dynamic` + `{ ssr: false }`로 로드 (TBT 감소)
+- 불필요한 import 제거 → JS 번들 최소화
+- 이미지 캐시: `next.config.mjs` `images.minimumCacheTTL: 31536000` 유지
+- AVIF 포맷 지원 활성화 유지
+- 모바일 backdrop-blur: `md:` 분기로 데스크탑만 적용 (GPU 합성 비용)
+- 모바일 TOC: `<details>` 기본 접힘 (50px) 유지
+
+---
+
+## 🚀 빌드 & 배포 워크플로우
+
+```bash
+# 1. 빌드 확인 (sitemap 자동 생성 포함)
+npm run build
+
+# 2. 배포
+git add .
+git commit -m "feat/fix/refactor: 변경 내용 요약"
+git push  # Vercel 자동 배포 트리거
+
+# 3. 배포 후 GSC 색인 요청 (새 포스트·수정 시)
+# → search.google.com/search-console → URL 검사 → 색인 생성 요청
+```
+
+### 사이트맵 규칙
+- `npm run build` 실행 시 `scripts/generate-sitemap.mjs`가 자동 실행됨
+- `public/sitemap.xml` 수동 수정 금지
+- URL 끝에 `/` 없음 (`trailingSlash: false` — `/` 붙이면 301)
+
+---
+
+## 🔧 Supabase 인프라 (커뮤니티 기능)
+
+| 항목 | 값 |
+|------|-----|
+| 프로젝트 | holdemmaster-community (Free Plan, Seoul) |
+| Project URL | `https://idikicmooauorjurdkzh.supabase.co` |
+| 테이블 | profiles / posts / comments / likes / event_entries / translations / chat_messages |
+| Realtime | `chat_messages`만 활성화 |
+| 이메일 확인 | OFF (가입 즉시 로그인) |
+
+### 환경변수 (Vercel 설정 필요)
+- `NEXT_PUBLIC_SUPABASE_URL` ✅ 설정됨
+- `NEXT_PUBLIC_SUPABASE_ANON_KEY` ✅ 설정됨
+- `GEMINI_API_KEY` ⚠️ **Vercel 미설정 → 프로덕션 번역 비활성** (설정하면 번역 켜짐)
+
+---
+
+## 📋 GSC 루틴 (포스트 발행 후 필수)
+
+### 배포 직후 (매 글)
+1. [Google Search Console](https://search.google.com/search-console) 접속
+2. URL 검사 → 새 글 주소 입력
+3. **"색인 생성 요청"** 클릭
+
+### 주 1회
+- GSC → Sitemaps → `https://www.holdemmaster.com/sitemap.xml` 재제출
+- 검색어 탭: 클릭·노출 있는 쿼리 3개 메모 → 다음 글 제목·H2에 반영
+- 페이지 탭: 노출 많은데 CTR 낮은 글 → `seoTitle`·`desc` 보강 후보로 표시
+
+### 핵심 추적 지표 (GSC 목표)
+| 지표 | 현재 | 목표 |
+|------|------|------|
+| 평균 순위 | ~9.5 | ≤7 |
+| 클릭 | 61 (3개월) | 100~180 |
+| 1위 URL | holdem-blind-meaning | CTR 지속 상승 |
+
+---
+
+## 🛡️ 보안 현황
+
+### 완료
+- 번역 API: 로그인 필수 + 3,000자 제한 + target 화이트리스트
+- `/auth/callback`: Open Redirect 차단
+- 글 5,000자 / 댓글 1,000자 / 제목 100자 제한
+
+### 남은 권장 항목 (시급하지 않음)
+- `profiles.badge` UPDATE RLS 트리거
+- Rate limiting (Upstash Redis)
+- 로그인 브루트포스 방지

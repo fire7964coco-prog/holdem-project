@@ -5,6 +5,20 @@
 
 ---
 
+## 2026-06-24
+
+### 작업 내용
+- 신규 포스트 발행: `holdem-bankroll-management` — 홀덤 뱅크롤 관리 가이드 (영어 스타일 표준 적용 1호)
+- `holdem-blind-meaning` 포스트 스타일 표준화: image/imageAlt/keepImagesInBody 추가, 인포그래픽 5개 → 실사 2개, FAQ A. 접두어 추가
+- `.cursorrules` 구조 재편: 565줄 → 90줄 핵심만 유지, 세부 규칙 `.cursor/rules/` 3개 파일로 분리
+  - `posting.mdc` (SEO·형식·체크리스트), `content.mdc` (이미지·JSON-LD·다국어), `tech.mdc` (성능·빌드·인프라)
+
+### 발행 현황
+- 한국어 블로그: **49개** (LEGACY 21 + NEW_POSTS 28) / 영어: 20개
+- 목표 50개까지 한국어 **1개 남음**
+
+---
+
 ## 2026-06-23
 
 ### 작업 내용
@@ -534,18 +548,17 @@
 
 ---
 
-## 🚨 포스팅 전 필수 (최우선)
+---
 
-**포스팅할 때는 항상 키워드로 구글 검색 → Top 10 경쟁 글 분석 → 가장 경쟁력 있는 콘텐츠 생성.**
-
-→ 체크리스트: [`docs/SEO_COPY_GUIDELINES.md`](docs/SEO_COPY_GUIDELINES.md) · 스프린트: [`docs/SEO_SPRINT_45D.md`](docs/SEO_SPRINT_45D.md)
+> ⚠️ **아래 섹션들은 2026-06-24에 `.cursor/rules/` 로 이관됨**
+> - 포스팅 규칙 → `.cursor/rules/posting.mdc`
+> - 이미지·콘텐츠 기준 → `.cursor/rules/content.mdc`
+> - 성능·기술·GSC 루틴 → `.cursor/rules/tech.mdc`
+> 이 아래 내용은 **역사적 기록**으로만 보관. 규칙 확인은 `.cursor/rules/` 참고.
 
 ---
 
-## 🎯 구글 1페이지 스프린트 (45일, 2026-05-18~)
-
-> **전체 기획서 (다운로드):** [`docs/SEO_SPRINT_45D.md`](docs/SEO_SPRINT_45D.md)  
-> GSC·GA4 기반. 90일 → **45일 압축** (기존 키워드 활성화 2~3편/주, 신규 **주 1편**).
+## 🎯 구글 1페이지 스프린트 기록 (2026-05-18 시작)
 
 ### 핵심 숫자 (출발점)
 

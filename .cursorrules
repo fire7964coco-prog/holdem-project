@@ -1,565 +1,84 @@
-# 홀덤마스터 (holdemmaster.com) — Cursor AI 마스터 가이드
+# 홀덤마스터 (holdemmaster.com) — Cursor AI 가이드
 
-## 🚨 최우선 원칙: 포스팅 전 경쟁 SERP 분석 (절대 생략 금지)
-
-**포스팅할 때는 항상 타깃 키워드로 구글 검색 → 상위 10개 경쟁 글·사이트를 분석한 뒤 → 그보다 경쟁력 있는 콘텐츠를 생성한다.**
-
-- 글·메타·이미지 작성 **전에** SERP Top 10 URL을 열어 H2·분량·FAQ·표·실전 예시를 비교할 것.
-- “우리가 더 줄 것” 3가지(빠진 질문, E-E-A-T 실전, 표/인포/내부링크)를 정한 뒤 초안 작성.
-- 상세 워크플로: `docs/SEO_COPY_GUIDELINES.md` 최상단.
+## 🎯 프로젝트 목표
+**구글 1페이지 달성** — 한국어/영어 블로그를 구글 상위 노출해 커뮤니티 활성화
+- 사이트: holdemmaster.com · 배포: Vercel (git push → 자동)
+- 로컬: `C:\Users\하봄\Downloads\Holdem_Project`
 
 ---
 
-## 🏆 최우선 원칙: E-E-A-T (경험·전문성·권위·신뢰)
-
-**모든 포스팅은 반드시 사람의 생생한 경험이 담겨야 한다.**
-
-- 사용자가 제공하는 홀덤펍 경험·핸드 상황·현장 메모를 SEO 포스팅으로 가공
-- 단순 정보 나열식 글 작성 엄격 금지 (구글 E-E-A-T 위반 = SEO 역효과)
-- 이 원칙 없이 새 포스팅 작성 절대 금지
+## ⚙️ 기술 스택
+- Next.js 14.2.18 (App Router, SSG) · TypeScript · TailwindCSS v4
+- DB/Auth: Supabase (Seoul) · 번역: Gemini Flash API
+- 패키지: npm · 설정 파일: `next.config.mjs` (확장자 .mjs 주의)
 
 ---
 
-## 🎯 두 번째 최우선 원칙: SEO 카피 = "호기심 훅 + 핵심 키워드" 하이브리드
+## 📊 현재 상태 (2026-06-24 기준)
+| 구분 | 수 | 위치 |
+|------|-----|------|
+| 한국어 LEGACY 포스트 | 21개 | `lib/posts.ts` |
+| 한국어 NEW 포스트 | 28개 | `lib/posts/[slug].ts` + `lib/posts/index.ts` |
+| 영어 포스트 | 20개 | `lib/posts-en/[slug].ts` |
+| **한국어 합계** | **49개** | 목표 50개 → 1개 남음 |
 
-**구글 검색 결과의 제목·설명은 유튜브 썸네일과 같다. 클릭 안 되면 모든 SEO 작업이 무의미하다.**
-
-### 절대 규칙 (`seoTitle` / `desc` 작성 시)
-
-1. **딱딱한 정보형 금지** — "OO 뜻 정리", "OO 가이드", "OO 완벽 정리" 같은 평범한 톤은 경쟁 글에 묻혀 클릭 안 됨
-2. **호기심·자극형 훅을 반드시 앞에** 배치 — "왜 OO일까?", "OO인데 왜 졌지?", "매판마다 칩이 빠지는 이유" 같은 질문/감정형
-3. **훅 뒤에 ' — '로 핵심 키워드 묶음** — GSC에서 사람들이 실제로 치는 단어를 자연스럽게 붙임
-4. **`desc`도 동일 원칙** — 첫 문장은 호기심·공감 한 줄, 둘째 문장에서 무엇을 알 수 있는지(키워드 포함)
-5. **본문 글 톤은 친근하게 유지** — 사용자가 의도한 "친구한테 설명하듯" 톤은 절대 정보형으로 깎지 말 것
-
-### 검증된 패턴 템플릿
-
-\`\`\`
-seoTitle: "[호기심·자극 훅] — [핵심 키워드 2~3개 자연스럽게]"
-desc: "[공감/호기심 한 문장]. [무엇을 알려주는지 + 키워드 + 시간(N분)] 정리했습니다."
-\`\`\`
-
-### 좋은 예시 vs 나쁜 예시
-
-| 구분 | ❌ 나쁨 (정보형) | ✅ 좋음 (호기심 + 키워드) |
-|------|------------------|---------------------------|
-| 블라인드 | "홀덤 블라인드 뜻 정리" | **"매판마다 칩이 빠지는 이유 — 홀덤 블라인드 뜻과 SB·BB 차이"** |
-| 타이브레이크 | "홀덤 같은 족보 승자 결정법" | **"같은 원페어인데 왜 내가 졌지? — 홀덤 키커·스플릿 팟 규칙"** |
-
-### 작업 시 체크리스트
-
-- [ ] 호기심·공감·자극 훅이 제목 앞에 있는가?
-- [ ] GSC 상위 쿼리 단어 2~3개가 자연스럽게 들어갔는가?
-- [ ] 한국어 검색 결과에서 잘리지 않게 길이 적정한가? (제목 ~32자, 설명 ~95자)
-- [ ] description이 정보 나열이 아니라 첫 문장에서 공감을 일으키는가?
-- [ ] 본문 톤(친근체)은 유지한 채 메타만 자극적인가?
-
-### ⚠️ 절대 금지 (과거 실수 기록)
-
-- 사용자의 호기심형 제목을 정보형으로 단독 교체 ❌  
-  (CTR이 이미 잘 나오고 있다면 호기심 훅은 살리고 키워드만 보강할 것)
-- "완벽 정리", "총정리" 등 흔한 마무리 단어로 끝내는 것 ❌  
-  (대신 핵심 키워드 명사로 끝낼 것: "키커·스플릿 팟 규칙", "SB·BB 차이" 등)
-
-> 자세한 가이드와 글별 카피 예시는 \`docs/SEO_COPY_GUIDELINES.md\` 참조.
+> ⚠️ 포스트 수 확인 시 반드시 `posts.ts`와 `lib/posts/index.ts` **두 곳 모두** 확인할 것
 
 ---
 
-## 🔍 롱테일 클러스터링 전략 (영어 포스트 필수 적용)
-
-**하나의 포스트에서 관련 롱테일 키워드 6~8개를 동시에 커버한다.**
-개별 롱테일마다 얇은 글을 여러 개 쓰면 thin content 패널티 위험 + 링크 분산.
-한 글에서 FAQ + H3 섹션으로 묶으면 시맨틱 커버리지가 넓어지고 내용도 두텁다.
-
-### 롱테일 선정 기준
-1. **메인 키워드**: 검색량 높지만 경쟁 강함 → 필라/섹션 제목으로 정조준
-2. **서브 롱테일**: "what does X mean", "why is X", "X vs Y difference" → FAQ 항목으로 커버
-3. **비교형**: "6-max vs 9-max", "SB vs BB" → 비교 표/섹션으로 커버
-4. **초보 질문형**: "can I do X from Y position" → 실전 가이드 섹션으로 커버
-
-### 영어 포스트 H2 작성 필수 순서 (절대 생략 금지)
-
-1. **웹검색으로 롱테일 키워드 도출 먼저** — 포스트 초안 작성 전에 반드시 아래 검색을 실행:
-   - `[메인 키워드]` 구글 검색 → People Also Ask(PAA) 질문 전부 수집
-   - `[메인 키워드] how`, `[메인 키워드] what`, `[메인 키워드] when`, `[메인 키워드] can you` 자동완성 확인
-   - 검색량이 높은 실제 질문 6~8개를 목록으로 정리
-2. **수집된 실제 검색 쿼리를 H2 제목에 직접 사용** — 의역하지 말고 검색자가 치는 표현 그대로 (또는 아주 가깝게) H2로 배치
-   - 좋은 예: "How to Go All-In in Texas Hold'em" (검색자 표현 그대로)
-   - 나쁜 예: "All-In Mechanics" (검색자가 치지 않는 단어)
-3. 경쟁 Top 5가 다루지 않은 PAA 질문이 있으면 **별도 H2 섹션으로 독립** — 차별화 포인트
-4. 수집된 롱테일 중 H2에 못 담은 나머지는 **FAQ 항목**으로 처리
-
-### 적용 방법
-- SERP 분석 후 **경쟁 글에 없는 FAQ 2~3개**를 추가로 발굴
-- H2 섹션 제목에 롱테일 키워드를 자연스럽게 포함
-- FAQ 섹션에 \`**Q. [롱테일 키워드 문장]**\` 형식으로 8개까지 작성
-- 각 FAQ 답변은 2~4줄로 충분 (Google Featured Snippet 최적화)
-
-### SERP 경쟁 우위 체크리스트
-- [ ] 경쟁 Top 5가 빠뜨린 각도(경험담·라이브·비교)가 포함되어 있는가?
-- [ ] 6~8개 롱테일이 자연스럽게 FAQ + 섹션에 분산되어 있는가?
-- [ ] 각 H2에 핵심 롱테일 단어가 최소 1개 포함되어 있는가?
-- [ ] 표(Table)가 최소 2개 이상 있는가? (스니펫 추출 + 가독성)
+## 🏛️ 11개 필라 슬러그 (URL 절대 변경 금지)
+| 필라 | slug |
+|------|------|
+| 족보 | `holdem-hand-rankings` |
+| 규칙 | `holdem-rules` |
+| 확률 | `holdem-probability` |
+| 전략 | `holdem-strategy` |
+| 스타팅핸드 | `holdem-starting-hands` |
+| 토너먼트 | `holdem-tournament` |
+| 홀덤펍 | `holdem-pub-guide` |
+| 용어사전 | `holdem-glossary` |
+| 포지션 | `holdem-position-play` |
+| 팟오즈 | `holdem-pot-odds` |
+| 블러프 | `holdem-bluff-spot` |
 
 ---
 
-## 🌐 다국어 포스트 현지화 원칙 (절대 직역 금지)
-
-**다국어 포스트는 한국어/영어 원문을 기계적으로 번역하지 않고, 해당 언어권 포커 커뮤니티가 실제로 쓰는 표현으로 현지화한다.**
-
-- 현지어 표현이 자연스럽고 검색량이 있으면 현지어를 우선 사용
-- 현지어 번역이 어색하거나 의미가 흐려지면 영어 원단어를 그대로 쓰거나 병기
-- 포커 전문 용어는 과번역 금지: `ICM`, `bubble`, `short stack`, `buy-in`, `bankroll` 등은 현지 검색 관습을 따른다
-- 일본어 예시: `キャッシュゲーム`, `リングゲーム`, `トーナメント`, `バイイン`, `バンクロール`, `ICM`, `インマネ`, `ショートスタック`
-- 중국어 간체 예시: `现金局`, `现金桌`, `锦标赛`, `买入`, `资金管理`, `Bankroll`, `ICM`, `泡沫期`, `钱圈`, `决赛桌`, `短筹码`
-- 스페인어 예시: `cash games`, `partidas cash`, `torneos`, `buy-in`, `bankroll`, `ICM`, `burbuja`, `mesa final`, `stack corto`, `MTT`, `SNG`
-- 인도네시아어 예시: `cash game`, `permainan tunai`, `turnamen`, `buy-in`, `bankroll`, `ICM`, `bubble`, `gelembung`, `meja final`, `stack pendek`, `MTT`
-- 독일어 예시: `Cash Game`, `Turnierpoker`, `Buy-in`, `Bankroll-Management`, `ICM`, `Bubble`, `Final Table`, `Short Stack`, `MTT`, `SNG`
-- 아랍어 예시: `كاش جيم`, `بطولات البوكر`, `باي-إن`, `بانكرول`, `Bankroll`, `ICM`, `Bubble`, `Final Table`, `Short Stack`, `MTT`, `SNG`
-- 터키어 예시: `cash game`, `nakit oyun`, `turnuva pokeri`, `buy-in`, `bankroll yönetimi`, `ICM`, `bubble`, `final table`, `short stack`, `MTT`, `Sit & Go`
-- 베트남어 예시: `Cash Game`, `Tournament`, `giải đấu`, `buy-in`, `bankroll`, `BRM`, `ICM`, `bubble`, `ITM`, `final table`, `MTT`, `SNG`
-- 말레이어 예시: `cash game`, `tournament`, `kejohanan`, `buy-in`, `bankroll`, `ICM`, `bubble`, `final table`, `short stack`, `MTT`, `Sit & Go`
-- 포르투갈어(pt-BR) 예시: `cash game`, `torneio`, `buy-in`, `bankroll`, `gestão de banca`, `ICM`, `bolha`, `mesa final`, `short stack`, `MTT`, `Sit & Go`
-- 힌디어 예시: `cash game`, `tournament`, `buy-in`, `bankroll`, `ICM`, `bubble`, `final table`, `short stack`, `MTT`, `Sit & Go`
-- 각 언어별 `seoTitle`, `desc`, `tldr`, H2, FAQ는 해당 언어 SERP 기준으로 다시 작성
-- slug는 모든 언어에서 동일하게 유지해 hreflang 상호 링크를 보존
+## ⚠️ 절대 금지 (SEO 초기화 또는 서버 오류 유발)
+1. 기존 포스트 **slug 변경** (URL 바뀌면 구글 색인 초기화)
+2. `lib/posts.ts` LEGACY 포스트 임의 수정/삭제
+3. 이미지를 `.jpg` / `.png` 로 저장 (webp 전용)
+4. URL 끝에 `/` 추가 — `trailingSlash: false` 설정됨, `/` 붙이면 301 발생
+5. `public/sitemap.xml` 수동 수정 (빌드 시 자동 생성)
+6. meta description 160자 초과
+7. 히어로 이미지에 `priority` 누락
+8. `app/blog/[slug]/` 및 다국어 라우트 구조 변경
 
 ---
 
-## 🎯 프로젝트 정보
-
-- 사이트: holdemmaster.com
-- 도메인: holdemmaster.com (Vercel 자동 배포, git push → 배포)
-- 현재: 29개 포스트 / 목표 50개
-- 로컬 경로: C:\Users\하봄\Downloads\Holdem_Project
-- Lighthouse 목표: 모바일 성능 95점 이상
-
----
-
-## ⚙️ 기술 스택 (실제 확인됨)
-
-- 프레임워크: **Next.js 14.2.18 (App Router) — SSG**
-- 언어: TypeScript
-- 스타일링: TailwindCSS v4
-- 이미지: next/image
-- 패키지매니저: npm
-- 설정 파일: next.config.mjs (확장자 .mjs 주의)
-
----
-
-## 📁 실제 폴더 구조 (확인 완료)
-
-Holdem_Project/
-├── app/                       ← Next.js 라우트 (11개, 필라와 일치)
-│   ├── blog/[slug]/           ← 개별 포스트 (동적 라우트)
-│   ├── calculator/            ← 계산기
-│   ├── glossary/              ← 용어 사전 (P8)
-│   ├── hand-chart/            ← 핸드 차트
-│   ├── hands/                 ← 핸드별 페이지
-│   ├── pub/                   ← 홀덤펍 (P7)
-│   ├── quiz/                  ← 퀴즈
-│   ├── ranking/               ← 족보 (P1)
-│   ├── rules/                 ← 규칙 (P2)
-│   ├── strategy/              ← 전략 (P4)
-│   └── tournaments/           ← 토너먼트 (P6)
-├── components/                ← 공통 React 컴포넌트
-├── lib/                       ← 데이터·유틸 (핵심)
-│   ├── posts.ts               ← 구형 포스트 21개 (배열)
-│   ├── posts/                 ← 신형 포스트 개별 파일
-│   │   ├── index.ts           ← import 모음
-│   │   └── [slug].ts          ← 각 포스트
-│   ├── blog-lcp.ts            ← LCP 최적화 데이터
-│   ├── poker-eval.ts          ← 포커 핸드 평가
-│   ├── pubs.ts                ← 홀덤펍 데이터
-│   └── utils.ts
-├── public/
-│   ├── images/                ← 모든 webp (flat 구조)
-│   └── sitemap.xml            ← 자동 생성
-├── scripts/                   ← 빌드 스크립트
-├── next.config.mjs
-├── vercel.json
-├── package.json
-├── WORKLOG.md                 ← 작업일지 (매번 업데이트)
-└── .cursorrules
-
----
-
-## 🏛️ 콘텐츠 전략 — 필라-클러스터
-
-### 11개 필라 (전부 발행 완료)
-
-| # | 필라 | slug |
-|---|---|---|
-| P1 | 홀덤 족보 완전 정리 | holdem-hand-rankings |
-| P2 | 홀덤 규칙 완전 정리 | holdem-rules |
-| P3 | 홀덤 확률 완전 정리 | holdem-probability |
-| P4 | 홀덤 전략 완전 정리 | holdem-strategy |
-| P5 | 스타팅핸드 완전 정리 | holdem-starting-hands |
-| P6 | 토너먼트 완전 정리 | holdem-tournament |
-| P7 | 홀덤펍 가이드 | holdem-pub-guide |
-| P8 | 홀덤 용어 사전 | holdem-glossary |
-| P9 | 포지션 플레이 | holdem-position-play |
-| P10 | 팟오즈 & 에퀴티 | holdem-pot-odds |
-| P11 | 블러프 전략 | holdem-bluff-spot |
-
-### 클러스터 작성 규칙
-- 클러스터는 반드시 해당 필라를 첫 번째 내부링크로 연결
-- 필라 ↔ 클러스터 양방향 링크 필수
-- 같은 필라 내 클러스터끼리도 링크
-- URL: /blog/holdem-[구체적-주제] (끝에 / 없음, trailingSlash: false)
-
----
-
-## ✨ 포스트 형식 표준 — 영어 블로그 스타일 기준 (2026-06-24 이후 모든 포스트)
-
-**영어 블로그(`/en/blog/`)가 한국어 블로그보다 레이아웃이 깔끔한 이유:**
-영어 포스트는 `image` + `imageAlt` + `keepImagesInBody: true` + `tldr` 필드를 항상 갖추고,
-FAQ를 `**Q. ...**` / `A. ...` 형식으로 작성해 스타일드 카드로 렌더된다.
-**새 한국어 포스트도 동일 형식을 따른다.**
-
-### 필수 필드 체크리스트 (새 포스트 작성 시 전부 포함)
-
-| 필드 | 설명 | 예시 |
-|------|------|------|
-| `slug` | URL 식별자 | `holdem-check-raise` |
-| `title` | 제목 40자 이하 | |
-| `seoTitle` | 호기심 훅 + 키워드 하이브리드 | `"같은 패인데 왜 졌지? — 홀덤 키커 규칙"` |
-| `desc` | 메타 description 120-160자 | |
-| `tldr` | Quick Answer 박스 한 문장 | 렌더러가 💡 박스로 표시 |
-| `image` | 히어로 이미지 경로 | `/images/[slug]-hero.webp` |
-| `imageAlt` | 구체적 상황 묘사 alt | `"강남 펍 J92 보드에서 체크레이즈 상황"` |
-| `keepImagesInBody` | **항상 `true`** | 히어로 이미지를 본문 상단에 유지 |
-| `category` | 카테고리 | `전략` / `초보 가이드` / `토너먼트` |
-| `tags` | 검색 키워드 배열 5~8개 | |
-| `date` | 발행일 | `2026-06-24` |
-| `readTime` | 예상 읽기 시간 | `13분` |
-
-### FAQ 형식 — 반드시 이 형식으로 작성
-
-```markdown
-**Q. 질문 텍스트를 그대로?**
-
-A. 답변 2~4줄. 검색자가 실제로 치는 문장을 Q에 넣는다.
-
-**Q. 두 번째 질문?**
-
-A. 답변.
-```
-
-> ❌ 금지: `### Q1. 질문` 형식 (구형 스타일, 스타일드 카드 미렌더)
-
-### 포스트 본문 구조 (순서 고정)
-
-```
-[히어로 이미지 — 본문 첫 번째 이미지, priority 자동 적용]
-
-[도입부 — :::lead 블록으로 경험담 2~3줄]
-
----
-
-### 이 글 핵심 요약
-:::stripe
-값 | 라벨
-:::
-
-## H2 섹션들
-
-[본문 이미지 2개 적절한 위치에 삽입]
-
-## FAQ — 자주 묻는 질문
-
-**Q. ...**
-
-A. ...
-
----
-
-## 마무리
+## 🔧 핵심 명령어
+```bash
+npm run build          # 빌드 + sitemap 자동 생성 (배포 전 필수)
+npm run dev            # 개발 서버
+npm run compress:images  # public/images 전체 webp 압축
+git push               # Vercel 자동 배포 트리거
 ```
 
 ---
 
-## 📝 새 포스트 추가 STEP BY STEP
-
-### STEP 1: 포스트 파일 생성
-경로: `lib/posts/[slug].ts`
-파일명 = slug (예: `holdem-check-raise.ts`)
-
-### STEP 2: 포스트 데이터 작성 (영어 스타일 기준)
-
-```ts
-import type { Post } from "../posts";
-
-export const POST: Post = {
-  slug: 'holdem-check-raise',
-  title: '제목 40자 이하',
-  seoTitle: '호기심 훅 — 핵심 키워드 조합',
-  desc: '메타 description 120-160자',
-  tldr: 'Quick Answer 한 문장 — 렌더러가 💡 박스로 표시',
-  category: '전략',
-  tags: ['체크레이즈', '홀덤전략'],
-  date: '2026-06-24',
-  updated: '2026-06-24',
-  readTime: '8분',
-  emoji: '🎯',
-  image: '/images/holdem-check-raise-hero.webp',
-  imageAlt: '강남 홀덤펍에서 체크레이즈 상황 — 보드 J92 레인보우',
-  keepImagesInBody: true,   // ← 반드시 true
-  content: `[마크다운 본문]`,
-};
-
-export default POST;
-```
-
-### STEP 3: lib/posts/index.ts에 import 추가
-import holdemCheckRaise from './holdem-check-raise';
-export const newPosts = [...기존, holdemCheckRaise];
-
-### STEP 4: 이미지 추가
-- 경로: `public/images/[slug]-hero.webp`
-- 100KB 이하, 1200×675, webp quality 75
-- alt 태그 구체적으로 작성
-
-### STEP 5: 내부링크 양방향 연결
-- 새 포스트에 관련 기존 포스트 링크 최소 3개
-- 기존 관련 포스트에도 새 포스트 링크 추가
-
-### STEP 6: JSON-LD 구조화 데이터 자동 포함 확인
-(아래 "JSON-LD" 섹션 참조)
-
-### STEP 7: 빌드 & 배포
-- npm run build → prebuild가 `generate:sitemap` 실행 (블로그 lastmod = post.updated)
-- public/sitemap.xml에 새 slug·날짜 반영 확인
-- git add . → git commit → git push → Vercel 자동 배포
-
-### STEP 8: WORKLOG.md 최상단에 작업 기록 추가
+## 📂 세부 규칙 위치
+| 규칙 종류 | 파일 | 적용 방식 |
+|-----------|------|-----------|
+| 포스팅 (SEO·형식·체크리스트) | `.cursor/rules/posting.mdc` | `lib/posts/**` 파일 작업 시 자동 적용 |
+| 이미지·글쓰기·JSON-LD·다국어 | `.cursor/rules/content.mdc` | `lib/posts/**` 파일 작업 시 자동 적용 |
+| 성능·빌드·기술 규칙 | `.cursor/rules/tech.mdc` | 코드 파일 작업 시 자동 적용 |
 
 ---
 
-## 📐 JSON-LD 구조화 데이터 (필수)
-
-**모든 포스트에 아래 3종을 자동 포함시킨다.**
-
-### 1. Article 스키마
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "[포스트 title]",
-  "description": "[포스트 description]",
-  "datePublished": "[publishedAt]",
-  "author": { "@type": "Organization", "name": "홀덤마스터" },
-  "image": "https://holdemmaster.com[image 경로]"
-}
-
-### 2. FAQPage 스키마 (FAQ 섹션 있을 때)
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [{
-    "@type": "Question",
-    "name": "[질문]",
-    "acceptedAnswer": { "@type": "Answer", "text": "[답변]" }
-  }]
-}
-
-### 3. BreadcrumbList 스키마
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://holdemmaster.com/" },
-    { "@type": "ListItem", "position": 2, "name": "블로그", "item": "https://holdemmaster.com/blog/" },
-    { "@type": "ListItem", "position": 3, "name": "[포스트 title]" }
-  ]
-}
-
-→ Next.js의 `<script type="application/ld+json">` 태그로 head에 삽입
-
----
-
-## 🖼️ 이미지 절대 원칙
-
-> **상세 가이드:** `docs/IMAGE_OPTIMIZATION.md` · 일괄 압축: `npm run compress:images`
-
-### 형식·용량
-- 형식: 반드시 .webp (png, jpg 절대 금지)
-- 압축: WebP quality **65** (기본), 80KB 초과 시 `--aggressive`(60) · 가로 **1200px**
-- 목표: 파일당 **≤ 60KB**, 복잡한 카드 **≤ 80KB**, 글당 합계 **≤ 200KB**
-- PNG 발견 시 즉시 webp 변환 + `npm run compress:images` 실행
-
-### LCP 최적화 (필수)
-- 상단 히어로 이미지에 반드시 `priority={true}` 부여
-- next/image의 width/height 명시
-- next.config.mjs에 `minimumCacheTTL: 31536000` 유지
-
-### 접근성 (alt 태그)
-- 모든 이미지에 구체적 의미가 담긴 alt 작성
-- 단순 키워드 나열 금지
-- 좋은 예: "강남 홀덤펍에서 AK로 3-bet 콜 상황, 보드 J92"
-- 나쁜 예: "홀덤 전략 이미지"
-
-### 압축 명령어
-npm run compress:images          # public/images 전체 압축 + 반영
-npm run compress:images:preview  # .compressed 폴더에만 저장
-
----
-
-## ⚡ 성능 최적화 절대 수칙
-
-- framer-motion은 `next/dynamic` + `{ ssr: false }`로 로드 (TBT 감소)
-- 불필요한 import 제거 → JS 번들 최소화
-- 이미지 캐시: next.config.mjs `images.minimumCacheTTL: 31536000` 유지
-- AVIF 포맷 지원 활성화
-
----
-
-## 🔗 내부링크 규칙
-
-- 본문 내 관련 포스트 링크 최소 3개
-- 포스트 하단 "관련 글" 섹션 2-3개
-- 양방향 링크 필수 (새 포스트 발행 시 기존 포스트도 업데이트)
-- URL 끝에 / 붙이지 말 것: `/blog/holdem-rules` (`next.config.mjs`에 `trailingSlash: false` 설정 — / 있으면 오히려 301 발생)
-- 마크다운 형식: `[링크 텍스트](/blog/holdem-rules)`
-
----
-
-## 📊 포스트 본문 구조 (이 순서 준수)
-
-1. 히어로 이미지 (next/image, priority, 구체적 alt)
-2. 도입부 — 독자 공감형 (3줄 이내)
-3. 핵심 요약 박스 (10초 요약, SEO 추출용)
-4. H2 섹션들: 이미지 → 짧은 설명 (2-3줄) → 표/리스트
-5. FAQ 섹션 (3-5개, FAQPage JSON-LD 연결)
-6. 관련 글 섹션 (내부링크)
-
----
-
-## ✅ 글쓰기 DO vs DON'T
-
-### DO
-- 문단 2-3줄에서 엔터
-- 이미지 먼저, 설명은 짧게
-- 표로 원리 설명
-- 경험담 구체적으로 ("AK 들고 3-bet 콜 받았더니...")
-- 키워드 자연스럽게 반복
-
-### DON'T
-- AI 백과사전식 글
-- 이미지 없이 텍스트만 나열
-- 5줄 이상 긴 문단
-- 키워드 억지 삽입
-- 영어 섞어쓰기 (한국어 독자 대상)
-
----
-
-## 🚀 SEO 핵심 규칙
-
-### URL (절대 변경 금지)
-- 홈: holdemmaster.com/
-- 블로그 목록: holdemmaster.com/blog/
-- 개별 포스트: holdemmaster.com/blog/[slug]/
-
-### 메타데이터 길이
-- title: 40자 이하
-- description: 120-160자
-
-### Next.js generateStaticParams (필수)
-// app/blog/[slug]/page.tsx
-export async function generateStaticParams() {
-  return allPosts.map((post) => ({ slug: post.slug }));
-}
-
-### Next.js Metadata API
-export const metadata: Metadata = {
-  title: '...',
-  description: '...',
-  openGraph: {
-    title: '...',
-    description: '...',
-    images: ['/images/[slug]-hero.webp'],
-    type: 'article',
-  },
-};
-
-### next.config.mjs
-trailingSlash: false  // URL 끝에 / 없음 (있으면 301 → SEO 손실)
-
-### 사이트맵
-- public/sitemap.xml에 새 포스트 URL 자동 반영 점검
-- 새 포스트 발행 후 빌드하면 자동 갱신
-
----
-
-## ⚠️ 절대 금지 사항
-
-1. 기존 포스트(29개) slug 변경 (URL 바뀌면 SEO 초기화)
-2. 기존 포스트 데이터 임의 수정/삭제
-3. 이미지를 jpg/png로 저장
-4. URL 끝에 / 추가 (trailingSlash: false — / 붙이면 301 리다이렉트 발생)
-5. meta description 160자 초과
-6. 5줄 이상 긴 문단
-7. 경험담 없는 AI 백과사전식 포스트
-8. lib/posts.ts와 lib/posts/index.ts 동시 확인 없이 포스트 목록 수정
-9. 이미지 alt 태그 누락 또는 키워드 나열만
-10. 히어로 이미지에 priority 누락
-
----
-
-## 📓 WORKLOG.md 작성 규칙
-
-**WORKLOG.md는 상세 보고서가 아니라, 나중에 날짜별로 “언제 무엇을 했는지” 빠르게 찾기 위한 짧은 작업 색인이다.**
-
-### 형식
-## YYYY-MM-DD
-
-### 작업 내용
-- 새 포스트/다국어 글/주요 코드 수정처럼 나중에 찾을 가치가 있는 작업만 1줄씩 기록
-- 같은 주제의 세부 작업은 묶어서 1줄로 요약
-- 여러 언어를 순차 발행하는 작업은 언어마다 기록하지 말고, 전체 완료 후 `신규 글 발행 및 12개 언어 현지화 배포: [slug]`처럼 한 번만 기록
-- 검수 명령, 작은 문장 수정, 세부 표현 목록, 반복된 빌드 결과는 적지 않음
-
-### 발행 현황
-- 총 포스트: [N]개 (목표 50개까지 [50-N]개 남음)
-
-### 특이사항
-- 배포/검색/성능/구조 변경처럼 나중에 추적할 중요한 이슈만 짧게 기록
-- 특이사항이 없으면 생략 가능
-
-### 절대 규칙
-- 날짜 형식: ## YYYY-MM-DD
-- 발행 총 포스트 수 항상 업데이트
-- 새 포스트 추가 시 slug 반드시 기록
-- 한 날짜 섹션은 가능하면 5~8줄 안팎으로 유지
-- 상세 검수 로그나 체크리스트는 커밋 메시지/대화/PR에 남기고 WORKLOG에는 넣지 않음
-- 파일 맨 위(최신순)에 추가
-
-### 기록 타이밍
-| 상황 | 기록 |
-|---|---|
-| 새 포스트 발행 | 전체 작업 완료 후 1회 기록 |
-| 코드 수정 (성능, 버그) | 반드시 |
-| 이미지 작업 | 기록 |
-| 내부링크 업데이트 | 기록 |
-| 단순 질답 | 생략 가능 |
-
----
-
-## 💡 작업 워크플로우 (전체 흐름)
-
-사용자 경험 메모 전달
-  ↓
-커서가 SEO 포스팅 초안 작성 (이 .cursorrules 기준)
-  ↓
-lib/posts/[slug].ts 생성 (JSON-LD 데이터 포함)
-  ↓
-public/images/[slug]-hero.webp 추가 (100KB 이하, 구체적 alt)
-  ↓
-lib/posts/index.ts에 import 추가
-  ↓
-관련 기존 포스트에 양방향 내부링크 추가
-  ↓
-npm run build → 빌드 확인 + sitemap 점검
-  ↓
-git add . → commit → push → Vercel 자동 배포
-  ↓
-WORKLOG.md 최상단에 작업 기록
+## 🗒️ 핵심 파일 위치
+| 용도 | 경로 |
+|------|------|
+| 세션 인수인계 | `session-handoff.md` |
+| 작업 일지 | `WORKLOG.md` |
+| 프로젝트 전체 가이드 | `CLAUDE.md` |
+| 커뮤니티 클라이언트 | `app/community/community-client.tsx` |
+| DB 스키마 | `supabase/schema.sql` |
