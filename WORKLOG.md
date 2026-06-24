@@ -8,6 +8,8 @@
 ## 2026-06-24
 
 ### 작업 내용
+- 블로그 전체 디자인 리뉴얼: 크림 테마(globals.css), EB Garamond 세리프 폰트(팩트풀니스 스타일), BlogTopBar 공용 컴포넌트 신설(#1a3a2a, 홈피드·커뮤니티 버튼), 중복 탑바 제거(blog/layout.tsx), 한국어·영어 max-w-6xl 통일
+- PPT 스타일 신규 마크다운 컴포넌트 추가: `:::card`, `:::steps`, `:::compare`
 - 크림 에디토리얼 디자인 복원: globals.css Inter/Lora 폰트·크림 팔레트, community-client.tsx 크림 레이아웃, layout.tsx DM Sans → Inter+Lora 교체, post-card.tsx 색상 토큰 INK=#0d1c14·MUTED=#42372a로 진하게 보강 (이벤트탭 가독성 개선)
 - 신규 포스트 발행: `holdem-bankroll-management` — 홀덤 뱅크롤 관리 가이드 (영어 스타일 표준 적용 1호)
 - `holdem-blind-meaning` 포스트 스타일 표준화: image/imageAlt/keepImagesInBody 추가, 인포그래픽 5개 → 실사 2개, FAQ A. 접두어 추가
