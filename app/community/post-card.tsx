@@ -113,7 +113,7 @@ export function Avatar({
         className="rounded-full flex items-center justify-center flex-shrink-0"
         style={{ width: size, height: size, background: "linear-gradient(135deg,#d4af37,#f0d060)" }}
       >
-        <span className="font-black" style={{ fontSize: size * 0.28, color: BG }}>HM</span>
+        <span style={{ fontSize: size * 0.52, color: "#0d1c14", lineHeight: 1 }}>♠</span>
       </div>
     );
   }
