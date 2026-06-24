@@ -39,7 +39,7 @@ export type CurrentUser = {
 const LABELS = {
   ko: {
     siteTitle: "홀덤마스터",
-    siteSubtitle: "글로벌 포커 커뮤니티",
+    siteSubtitle: "Global Poker Community",
     filterAll: "전체",
     filterStrategy: "전략",
     filterCommunity: "커뮤니티",
@@ -145,7 +145,7 @@ const LABELS = {
   },
   ja: {
     siteTitle: "HoldemMaster",
-    siteSubtitle: "グローバルポーカーコミュニティ",
+    siteSubtitle: "Global Poker Community",
     filterAll: "すべて",
     filterStrategy: "戦略",
     filterCommunity: "コミュニティ",
@@ -198,7 +198,7 @@ const LABELS = {
   },
   zh: {
     siteTitle: "HoldemMaster",
-    siteSubtitle: "全球扑克社区",
+    siteSubtitle: "Global Poker Community",
     filterAll: "全部",
     filterStrategy: "策略",
     filterCommunity: "社区",
@@ -250,7 +250,7 @@ const LABELS = {
     badge_participant: "🎟️ 活动参与者",
   },
   es: {
-    siteTitle: "HoldemMaster", siteSubtitle: "Comunidad Global de Póker",
+    siteTitle: "HoldemMaster", siteSubtitle: "Global Poker Community",
     filterAll: "Todo", filterStrategy: "Estrategia", filterCommunity: "Comunidad",
     logout: "Cerrar sesión", login: "Iniciar sesión", loginArrow: "Iniciar sesión →", loginSignup: "Iniciar sesión / Registrarse →",
     feed: "Feed", chat: "Chat", event: "Eventos", profile: "Perfil",
@@ -267,7 +267,7 @@ const LABELS = {
     badge_winner: "🏆 Campeón", badge_hot: "🔥 Popular", badge_top: "⭐ Top Usuario", badge_participant: "🎟️ Participante",
   },
   de: {
-    siteTitle: "HoldemMaster", siteSubtitle: "Globale Poker-Community",
+    siteTitle: "HoldemMaster", siteSubtitle: "Global Poker Community",
     filterAll: "Alle", filterStrategy: "Strategie", filterCommunity: "Community",
     logout: "Abmelden", login: "Anmelden", loginArrow: "Anmelden →", loginSignup: "Anmelden / Registrieren →",
     feed: "Feed", chat: "Chat", event: "Events", profile: "Profil",
@@ -284,7 +284,7 @@ const LABELS = {
     badge_winner: "🏆 Gewinner", badge_hot: "🔥 Beliebt", badge_top: "⭐ Top User", badge_participant: "🎟️ Teilnehmer",
   },
   pt: {
-    siteTitle: "HoldemMaster", siteSubtitle: "Comunidade Global de Poker",
+    siteTitle: "HoldemMaster", siteSubtitle: "Global Poker Community",
     filterAll: "Tudo", filterStrategy: "Estratégia", filterCommunity: "Comunidade",
     logout: "Sair", login: "Entrar", loginArrow: "Entrar →", loginSignup: "Entrar / Cadastrar →",
     feed: "Feed", chat: "Chat", event: "Eventos", profile: "Perfil",
@@ -301,7 +301,7 @@ const LABELS = {
     badge_winner: "🏆 Campeão", badge_hot: "🔥 Popular", badge_top: "⭐ Top Usuário", badge_participant: "🎟️ Participante",
   },
   id: {
-    siteTitle: "HoldemMaster", siteSubtitle: "Komunitas Poker Global",
+    siteTitle: "HoldemMaster", siteSubtitle: "Global Poker Community",
     filterAll: "Semua", filterStrategy: "Strategi", filterCommunity: "Komunitas",
     logout: "Keluar", login: "Masuk", loginArrow: "Masuk →", loginSignup: "Masuk / Daftar →",
     feed: "Feed", chat: "Chat", event: "Event", profile: "Profil",
@@ -318,7 +318,7 @@ const LABELS = {
     badge_winner: "🏆 Juara", badge_hot: "🔥 Populer", badge_top: "⭐ Top User", badge_participant: "🎟️ Peserta",
   },
   ms: {
-    siteTitle: "HoldemMaster", siteSubtitle: "Komuniti Poker Global",
+    siteTitle: "HoldemMaster", siteSubtitle: "Global Poker Community",
     filterAll: "Semua", filterStrategy: "Strategi", filterCommunity: "Komuniti",
     logout: "Log keluar", login: "Log masuk", loginArrow: "Log masuk →", loginSignup: "Log masuk / Daftar →",
     feed: "Feed", chat: "Chat", event: "Acara", profile: "Profil",
@@ -335,7 +335,7 @@ const LABELS = {
     badge_winner: "🏆 Juara", badge_hot: "🔥 Popular", badge_top: "⭐ Top User", badge_participant: "🎟️ Peserta",
   },
   vi: {
-    siteTitle: "HoldemMaster", siteSubtitle: "Cộng Đồng Poker Toàn Cầu",
+    siteTitle: "HoldemMaster", siteSubtitle: "Global Poker Community",
     filterAll: "Tất cả", filterStrategy: "Chiến lược", filterCommunity: "Cộng đồng",
     logout: "Đăng xuất", login: "Đăng nhập", loginArrow: "Đăng nhập →", loginSignup: "Đăng nhập / Đăng ký →",
     feed: "Feed", chat: "Chat", event: "Sự kiện", profile: "Hồ sơ",
@@ -352,7 +352,7 @@ const LABELS = {
     badge_winner: "🏆 Vô địch", badge_hot: "🔥 Phổ biến", badge_top: "⭐ Top User", badge_participant: "🎟️ Người tham gia",
   },
   tr: {
-    siteTitle: "HoldemMaster", siteSubtitle: "Global Poker Topluluğu",
+    siteTitle: "HoldemMaster", siteSubtitle: "Global Poker Community",
     filterAll: "Tümü", filterStrategy: "Strateji", filterCommunity: "Topluluk",
     logout: "Çıkış yap", login: "Giriş yap", loginArrow: "Giriş yap →", loginSignup: "Giriş / Kayıt →",
     feed: "Feed", chat: "Sohbet", event: "Etkinlikler", profile: "Profil",
