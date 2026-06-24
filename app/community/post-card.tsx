@@ -59,17 +59,24 @@ function translateCategory(category: string, lang: string): string {
   return CATEGORY_I18N[category]?.[lang] ?? category;
 }
 
-// ── 커뮤니티 디자인 토큰 ─────────────────────────────────────
-export const GOLD = "#d4af37";
-export const BG = "#0b1120";
-export const CARD = "#162032";            // ↑ 카드 배경 한 톤 올림 (대비 향상)
-export const BORDER = "rgba(212,175,55,0.14)";
-export const TEXT_PRIMARY = "#f8f2e2";   // ↑ 제목·강조 — 거의 화이트 아이보리
-export const TEXT_BODY = "#ede5cf";       // ↑ 본문 — 밝고 선명하게
-export const TEXT_SECONDARY = "#d4c9aa";  // ↑ 설명·메타 — 이전보다 훨씬 밝음
-export const TEXT_MUTED = "#a89f88";     // ↑ 비활성·데코 — 읽을 수 있는 수준
-export const DIVIDER = "rgba(255,255,255,0.10)";
-export const SURFACE = "rgba(255,255,255,0.09)";
+// ── 크림 에디토리얼 디자인 토큰 ──────────────────────────────
+export const BG     = "#f4f0e7";   // 크림 배경
+export const CARD   = "#ebe5d6";   // 카드/섹션 배경
+export const BORDER = "#d8d0be";   // 따뜻한 경계선
+export const INK    = "#0d1c14";   // 다크 포레스트 그린 (진한 메인 텍스트)
+export const MUTED  = "#42372a";   // 다크 웜브라운 (보조 텍스트)
+export const RED    = "#7a2e2e";   // 좋아요·액센트
+export const GREEN  = "#3a6b54";   // 온라인 표시
+export const NAV    = "#0d1c14";   // 하단 내비
+export const GOLD   = "#0d1c14";   // 버튼·강조 색상 (= INK)
+
+// ── 이전 토큰명 호환 (event-tab 등에서 사용) ─────────────────
+export const TEXT_PRIMARY   = "#0d1c14";   // 제목·강조
+export const TEXT_BODY      = "#1a2e20";   // 본문
+export const TEXT_SECONDARY = "#42372a";   // 메타·설명
+export const TEXT_MUTED     = "#6a5c44";   // 비활성·데코
+export const DIVIDER        = "#d0c8b8";   // 구분선
+export const SURFACE        = "#e2dccf";   // 프로그레스 배경 등
 
 export const FLAG: Record<string, string> = {
   ko: "🇰🇷", en: "🇺🇸", ja: "🇯🇵", zh: "🇨🇳", es: "🇪🇸", de: "🇩🇪",

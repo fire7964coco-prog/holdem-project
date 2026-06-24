@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
-import { Noto_Sans_KR, DM_Sans } from "next/font/google";
+import { Noto_Sans_KR, Inter, Lora } from "next/font/google";
 import { SiteHeader, SiteFooter, HtmlLangSync, MainContent, ScrollToTopButton } from "@/components/site-chrome";
 import { BrushDefs } from "@/components/brush-defs";
 import "./globals.css";
@@ -42,16 +42,28 @@ const notoSansKr = Noto_Sans_KR({
 });
 
 /**
- * DM Sans — 팩트풀니스 에디토리얼 감성 폰트
- * 라틴 글자·숫자·헤딩에 적용 (한글은 Noto Sans KR 폴백)
- * weight 800(ExtraBold)로 H2는 크기 아닌 굵기로 존재감
+ * Inter — 모바일 최적 UI 산세리프
+ * 영자·숫자 가독성 최고, 모든 기기 완벽 지원
  */
-const dmSans = DM_Sans({
+const inter = Inter({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
+  weight: ["400", "500", "600", "700"],
   display: "optional",
   preload: false,
-  variable: "--font-dm-sans",
+  variable: "--font-inter",
+});
+
+/**
+ * Lora — 에디토리얼 세리프
+ * 전략 글 헤드라인, 마스트헤드·인용에 사용
+ * 모바일 가독성 최고의 세리프 폰트
+ */
+const lora = Lora({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  display: "optional",
+  preload: false,
+  variable: "--font-lora",
 });
 
 export const viewport: Viewport = {
@@ -106,7 +118,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="ko" dir="ltr" suppressHydrationWarning className={`${notoSansKr.variable} ${dmSans.variable}`}>
+    <html lang="ko" dir="ltr" suppressHydrationWarning className={`${notoSansKr.variable} ${inter.variable} ${lora.variable}`}>
       <head>
         {/* 보조 언어 경로에서 lang/dir을 페인트 직전 보정 (RTL 깜빡임·언어 신호) */}
         <script dangerouslySetInnerHTML={{ __html: LANG_BOOTSTRAP }} />
