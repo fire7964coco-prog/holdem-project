@@ -21,25 +21,32 @@ function isFeedAppRoute(pathname: string) {
     pathname.startsWith("/post/") ||
     pathname.startsWith("/blog/")
   ) return true;
-  return LOCALE_FEED_ROOTS.some((p) => pathname === p || pathname === p + "/");
+  if (LOCALE_FEED_ROOTS.some((p) => pathname === p || pathname === p + "/")) return true;
+  // 보조 언어 블로그 경로 (/en/blog, /en/blog/slug 등)도 자체 헤더 사용
+  return LOCALE_FEED_ROOTS.some((p) => pathname.startsWith(p + "/blog"));
 }
 
 /** 미니 다크 탑바 — 툴/필라 페이지에서 홈 피드로 돌아가는 버튼 */
 function AppTopBar() {
+  const pathname = usePathname() || "/";
+  const locale = localeFromPath(pathname);
+  const homeHref = locale ? `/${locale}` : "/";
+  const label = locale ? "Home" : "홈피드";
+
   return (
     <div
       className="sticky top-0 z-50 flex items-center px-4 h-11"
       style={{ background: BG, borderBottom: "1px solid rgba(212,175,55,0.15)" }}
     >
       <Link
-        href="/"
+        href={homeHref}
         className="flex items-center gap-1.5 text-sm font-bold transition-opacity hover:opacity-70"
         style={{ color: GOLD }}
       >
         <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
         </svg>
-        홈피드
+        {label}
       </Link>
       <span
         className="text-[11px] font-black tracking-widest ml-auto"
