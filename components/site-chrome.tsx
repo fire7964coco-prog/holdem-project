@@ -1,12 +1,9 @@
 "use client";
 
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { localeFromPath, HTML_LANG, dirForLocale } from "@/lib/intl";
-
-const GOLD = "#d4af37";
-const BG = "#0b1120";
+import BlogTopBar from "@/components/blog-top-bar";
 
 const LOCALE_FEED_ROOTS = ["/en", "/ja", "/zh", "/es", "/ar", "/pt", "/id", "/ms", "/vi", "/hi", "/de", "/tr"];
 
@@ -20,9 +17,9 @@ const NAV_CTA: Record<string, string> = {
 
 /**
  * 피드 앱 라우트 — 자체 헤더를 가지므로 SiteHeader/SiteFooter 불필요
- * 블로그도 포함: 피드 내 티저 클릭 → 동일 다크 UI 유지
+ * 블로그도 포함: 블로그 전용 BlogTopBar 컴포넌트가 담당
  */
-function isFeedAppRoute(pathname: string) {
+function isFeedAppRoute(pathname: string): boolean {
   if (
     pathname === "/" ||
     pathname === "/login" ||
@@ -30,57 +27,9 @@ function isFeedAppRoute(pathname: string) {
     pathname.startsWith("/blog/")
   ) return true;
   if (LOCALE_FEED_ROOTS.some((p) => pathname === p || pathname === p + "/")) return true;
-  // 보조 언어 블로그 경로 (/en/blog, /en/blog/slug 등)도 자체 헤더 사용
   return LOCALE_FEED_ROOTS.some((p) => pathname.startsWith(p + "/blog"));
 }
 
-/** 미니 다크 탑바 — 툴/필라 페이지에서 홈 피드로 돌아가는 버튼 + 커뮤니티 CTA */
-function AppTopBar() {
-  const pathname = usePathname() || "/";
-  const locale = localeFromPath(pathname);
-  const homeHref = locale ? `/${locale}` : "/";
-  const backLabel = locale ? "Home" : "홈피드";
-  const ctaLabel = locale ? (NAV_CTA[locale] ?? "Community →") : "커뮤니티 →";
-
-  return (
-    <div
-      className="sticky top-0 z-50 flex items-center px-4 h-11 gap-3"
-      style={{ background: BG, borderBottom: "1px solid rgba(212,175,55,0.15)" }}
-    >
-      {/* 뒤로가기 */}
-      <Link
-        href={homeHref}
-        className="flex items-center gap-1.5 text-sm font-bold transition-opacity hover:opacity-70"
-        style={{ color: GOLD }}
-      >
-        <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-        </svg>
-        {backLabel}
-      </Link>
-
-      {/* 우측: 커뮤니티 CTA + 로고 */}
-      <div className="ml-auto flex items-center gap-2.5">
-        <Link
-          href={homeHref}
-          className="px-3 py-1 rounded-lg text-[11px] font-bold leading-none transition-opacity hover:opacity-90"
-          style={{
-            background: "linear-gradient(135deg,#d4af37,#f0d060)",
-            color: "#0b1120",
-          }}
-        >
-          {ctaLabel}
-        </Link>
-        <span
-          className="text-[11px] font-black tracking-widest"
-          style={{ color: "rgba(212,175,55,0.4)" }}
-        >
-          HM
-        </span>
-      </div>
-    </div>
-  );
-}
 
 /** 스크롤 300px 이상 시 나타나는 맨 위로 버튼 */
 export function ScrollToTopButton() {
@@ -114,10 +63,13 @@ export function ScrollToTopButton() {
 
 export function SiteHeader() {
   const pathname = usePathname() || "/";
+  const locale = localeFromPath(pathname);
   // 피드 앱 라우트(홈·로그인·글상세·블로그)는 자체 헤더 — 탑바 불필요
   if (isFeedAppRoute(pathname)) return null;
-  // 나머지 모든 페이지(계산기·퀴즈·족보·규칙 등)는 미니 다크 탑바
-  return <AppTopBar />;
+  // 나머지 모든 페이지(계산기·퀴즈·족보·규칙 등)는 BlogTopBar 공용 컴포넌트
+  const homeHref = locale ? `/${locale}` : "/";
+  const ctaLabel = locale ? (NAV_CTA[locale] ?? "Community") : "커뮤니티";
+  return <BlogTopBar homeHref={homeHref} communityLabel={ctaLabel} />;
 }
 
 /** 옛 사이트 푸터 — 전면 피드 전환으로 완전 제거 */

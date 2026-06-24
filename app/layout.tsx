@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
-import { Noto_Sans_KR, Inter, Lora } from "next/font/google";
+import { Noto_Sans_KR, Inter, Lora, EB_Garamond } from "next/font/google";
 import { SiteHeader, SiteFooter, HtmlLangSync, MainContent, ScrollToTopButton } from "@/components/site-chrome";
 import { BrushDefs } from "@/components/brush-defs";
 import "./globals.css";
@@ -56,14 +56,25 @@ const inter = Inter({
 /**
  * Lora — 에디토리얼 세리프
  * 전략 글 헤드라인, 마스트헤드·인용에 사용
- * 모바일 가독성 최고의 세리프 폰트
  */
 const lora = Lora({
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
+  weight: ["400", "500", "600", "700"],
   display: "optional",
   preload: false,
   variable: "--font-lora",
+});
+
+/**
+ * EB Garamond — Adobe Caslon Pro와 동일 계열 올드스타일 세리프
+ * 팩트풀니스 느낌의 본문 가독성, 크림 배경과 최적 궁합
+ */
+const ebGaramond = EB_Garamond({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  display: "optional",
+  preload: false,
+  variable: "--font-eb-garamond",
 });
 
 export const viewport: Viewport = {
@@ -118,7 +129,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="ko" dir="ltr" suppressHydrationWarning className={`${notoSansKr.variable} ${inter.variable} ${lora.variable}`}>
+    <html lang="ko" dir="ltr" suppressHydrationWarning className={`${notoSansKr.variable} ${inter.variable} ${lora.variable} ${ebGaramond.variable}`}>
       <head>
         {/* 보조 언어 경로에서 lang/dir을 페인트 직전 보정 (RTL 깜빡임·언어 신호) */}
         <script dangerouslySetInnerHTML={{ __html: LANG_BOOTSTRAP }} />

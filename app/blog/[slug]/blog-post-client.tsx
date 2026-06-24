@@ -9,6 +9,7 @@ import type { Post } from "@/lib/posts";
 import { POSTS } from "@/lib/posts";
 import { SITE } from "@/lib/site";
 import CommunityCTA from "@/components/community-cta";
+import BlogTopBar from "@/components/blog-top-bar";
 import { useState, useRef } from "react";
 
 const PokerOddsCalculator = dynamic(
@@ -108,11 +109,11 @@ export function renderMarkdown(content: string): string {
           const applies = kickerRaw.startsWith('+');
           const kickerLabel = kickerRaw.replace(/^[+-]\s*/, '');
           const pill = applies
-            ? 'background:rgba(34,197,94,0.14);color:#22c55e;border:1px solid rgba(34,197,94,0.35)'
-            : 'background:rgba(255,255,255,0.05);color:var(--muted-foreground);border:1px solid rgba(255,255,255,0.1)';
+            ? 'background:rgba(34,197,94,0.14);color:#16803c;border:1px solid rgba(34,197,94,0.35)'
+            : 'background:rgba(0,0,0,0.05);color:var(--muted-foreground);border:1px solid rgba(0,0,0,0.10)';
           return (
-            `<div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;padding:8px 12px;border-radius:8px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);margin-bottom:5px">` +
-            `<div style="width:22px;height:22px;border-radius:50%;background:rgba(212,175,55,0.15);border:1px solid rgba(212,175,55,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#d4af37;flex-shrink:0">${i + 1}</div>` +
+            `<div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;padding:8px 12px;border-radius:8px;background:#f0ebe0;border:1px solid #d8d0be;margin-bottom:5px">` +
+            `<div style="width:22px;height:22px;border-radius:50%;background:rgba(196,154,24,0.15);border:1px solid rgba(196,154,24,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#b8820a;flex-shrink:0">${i + 1}</div>` +
             `<div style="font-weight:700;color:var(--foreground);font-size:13px;min-width:96px;flex-shrink:0">${name}</div>` +
             `<div style="flex:1;min-width:140px;color:var(--muted-foreground);font-size:12.5px;line-height:1.45">${rule}</div>` +
             (kickerLabel ? `<div style="font-size:11px;font-weight:700;padding:2px 9px;border-radius:999px;flex-shrink:0;${pill}">${kickerLabel}</div>` : '') +
@@ -132,16 +133,16 @@ export function renderMarkdown(content: string): string {
       const cells = rows
         .map((line: string, i: number) => {
           const [value = '', label = ''] = line.split('|').map((s: string) => s.trim());
-          const border = i === rows.length - 1 ? '' : 'border-right:1px solid hsl(43 38% 26%)';
+          const border = i === rows.length - 1 ? '' : 'border-right:1px solid #d8d0be';
           return (
             `<div style="flex:1;min-width:84px;padding:18px 8px;text-align:center;${border}">` +
-            `<div style="font-size:27px;font-weight:900;color:hsl(43 78% 58%);line-height:1">${value}</div>` +
-            `<div style="font-size:11.5px;color:hsl(152 12% 78%);margin-top:8px;line-height:1.4">${label}</div>` +
+            `<div style="font-size:27px;font-weight:900;color:hsl(43 65% 40%);line-height:1">${value}</div>` +
+            `<div style="font-size:11.5px;color:hsl(30 22% 36%);margin-top:8px;line-height:1.4">${label}</div>` +
             `</div>`
           );
         })
         .join('');
-      return `<div style="display:flex;flex-wrap:wrap;margin:28px 0;border-top:1px solid hsl(43 38% 26%);border-bottom:1px solid hsl(43 38% 26%)">${cells}</div>`;
+      return `<div style="display:flex;flex-wrap:wrap;margin:28px 0;border-top:1px solid #d8d0be;border-bottom:1px solid #d8d0be">${cells}</div>`;
     })
     // ── 매거진 컴포넌트: :::lead ── 드롭캡 리드 문단 (.lead-para 스타일은 globals.css)
     // 내부 **bold**/[링크]는 아래 공통 처리에서 변환되도록 원문 그대로 감싼다.
@@ -149,8 +150,8 @@ export function renderMarkdown(content: string): string {
       `<p class="lead-para">${body.trim()}</p>`)
     // Numbered step cards — MUST run before **bold** processing
     .replace(/^\*\*(\d+)\. (.+?)\*\*\s*[—–]?\s*(.+)$/gm, (_, num, title, desc) =>
-      `<div style="display:flex;gap:12px;align-items:flex-start;margin:10px 0;padding:14px 16px;background:rgba(255,255,255,0.04);border-radius:10px;border:1px solid rgba(255,255,255,0.09)">` +
-      `<div style="width:26px;height:26px;border-radius:50%;background:rgba(212,175,55,0.15);border:1px solid rgba(212,175,55,0.4);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:#d4af37;flex-shrink:0;margin-top:2px">${num}</div>` +
+      `<div style="display:flex;gap:12px;align-items:flex-start;margin:10px 0;padding:14px 16px;background:#f0ebe0;border-radius:10px;border:1px solid #d8d0be">` +
+      `<div style="width:26px;height:26px;border-radius:50%;background:rgba(196,154,24,0.15);border:1px solid rgba(196,154,24,0.4);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:#b8820a;flex-shrink:0;margin-top:2px">${num}</div>` +
       `<div><div style="font-size:14px;font-weight:700;color:var(--foreground);margin-bottom:4px">${title.replace(/:$/, '')}</div>` +
       `<div style="font-size:13px;color:var(--muted-foreground);line-height:1.65">${desc}</div></div></div>`)
     .replace(/^### (.+)$/gm, (_, text) =>
@@ -213,6 +214,70 @@ export function renderMarkdown(content: string): string {
         return `<tr class="border-b border-border">${cells.map((c: string) => `<td class="px-4 py-2.5 text-sm text-muted-foreground">${c.trim()}</td>`).join('')}</tr>`;
       }
     )
+    // ── PPT 카드: :::card\n아이콘 | 제목 | 설명\n:::
+    // 예) ✅ | 포지션 우선 | 핸드보다 앉은 자리가 더 중요하다
+    .replace(/^:::card\n([\s\S]*?)\n:::$/gm, (_, body) => {
+      const items = body.trim().split('\n').filter((l: string) => l.trim()).map((line: string, i: number) => {
+        const [icon = '', title = '', desc = ''] = line.split('|').map((s: string) => s.trim());
+        return (
+          `<div style="display:flex;align-items:flex-start;gap:14px;padding:16px 18px;border-radius:14px;background:#ebe5d6;border:1px solid #d8d0be;margin-bottom:10px">` +
+          `<div style="width:40px;height:40px;border-radius:10px;background:linear-gradient(135deg,#d4af37,#f0d060);display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0">${icon || String(i + 1)}</div>` +
+          `<div style="flex:1;min-width:0">` +
+          `<p style="font-weight:800;font-size:15px;color:#0d1c14;margin:0 0 4px">${title}</p>` +
+          (desc ? `<p style="font-size:13px;color:#42372a;margin:0;line-height:1.6">${desc}</p>` : '') +
+          `</div></div>`
+        );
+      }).join('');
+      return `<div style="margin:28px 0">${items}</div>`;
+    })
+
+    // ── 단계 플로우: :::steps\n제목 | 설명\n:::
+    // 예) 프리플랍 | 포지션 확인 후 핸드 범위 결정
+    .replace(/^:::steps\n([\s\S]*?)\n:::$/gm, (_, body) => {
+      const items = body.trim().split('\n').filter((l: string) => l.trim());
+      const total = items.length;
+      const cards = items.map((line: string, i: number) => {
+        const [title = '', desc = ''] = line.split('|').map((s: string) => s.trim());
+        const isLast = i === total - 1;
+        return (
+          `<div style="display:flex;gap:12px;align-items:stretch">` +
+          `<div style="display:flex;flex-direction:column;align-items:center;flex-shrink:0">` +
+          `<div style="width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#d4af37,#f0d060);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:900;color:#0d1c14;flex-shrink:0">${i + 1}</div>` +
+          (!isLast ? `<div style="width:2px;flex:1;min-height:20px;background:linear-gradient(#d4af37,#d8d0be);margin:4px 0"></div>` : '') +
+          `</div>` +
+          `<div style="padding:4px 0 ${isLast ? 0 : 20}px">` +
+          `<p style="font-weight:800;font-size:15px;color:#0d1c14;margin:4px 0 4px">${title}</p>` +
+          (desc ? `<p style="font-size:13px;color:#42372a;margin:0;line-height:1.6">${desc}</p>` : '') +
+          `</div></div>`
+        );
+      }).join('');
+      return `<div style="margin:28px 0;padding:22px 20px;background:#ebe5d6;border:1px solid #d8d0be;border-radius:16px">${cards}</div>`;
+    })
+
+    // ── A vs B 비교: :::compare\n왼쪽제목 | 오른쪽제목\n항목A | 항목B\n:::
+    .replace(/^:::compare\n([\s\S]*?)\n:::$/gm, (_, body) => {
+      const lines = body.trim().split('\n').filter((l: string) => l.trim());
+      const [headerLine, ...rows] = lines;
+      const [leftH = '', rightH = ''] = headerLine.split('|').map((s: string) => s.trim());
+      const header = (
+        `<div style="display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-bottom:6px">` +
+        `<div style="padding:10px 14px;background:linear-gradient(135deg,#d4af37,#f0d060);border-radius:10px 0 0 0;font-weight:900;font-size:13px;color:#0d1c14;text-align:center">${leftH}</div>` +
+        `<div style="padding:10px 14px;background:#e2dccf;border-radius:0 10px 0 0;font-weight:900;font-size:13px;color:#42372a;text-align:center">${rightH}</div>` +
+        `</div>`
+      );
+      const rowHtml = rows.map((line: string, i: number) => {
+        const [left = '', right = ''] = line.split('|').map((s: string) => s.trim());
+        const bg = i % 2 === 0 ? '#ebe5d6' : '#f0ebe0';
+        return (
+          `<div style="display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-bottom:2px">` +
+          `<div style="padding:10px 14px;background:${bg};font-size:13px;color:#0d1c14;font-weight:600">${left}</div>` +
+          `<div style="padding:10px 14px;background:${bg};font-size:13px;color:#42372a">${right}</div>` +
+          `</div>`
+        );
+      }).join('');
+      return `<div style="margin:28px 0;border-radius:12px;overflow:hidden;border:1px solid #d8d0be">${header}${rowHtml}</div>`;
+    })
+
     .replace(/(<tr.*<\/tr>\n?)+/g, (m) => `<div class="overflow-x-auto my-6"><table class="w-full border border-border rounded-lg overflow-hidden">${m}</table></div>`)
     .replace(/^> \*\*(.+?)\*\*\n((?:^> .+\n?)+)/gm, (_, title, body) => {
       const lines = body.replace(/^> /gm, '').trim();
@@ -274,13 +339,13 @@ export function renderMarkdown(content: string): string {
             return `<div style="width:26px;height:38px;background:white;border-radius:4px;display:inline-flex;align-items:center;justify-content:center;border:1px solid #d1d5db;box-shadow:0 1px 2px rgba(0,0,0,0.25);flex-shrink:0"><span style="font-size:8px;font-weight:800;color:${color};line-height:1;letter-spacing:-0.5px">${card}</span></div>`;
           }).join('');
           const isTop = rank <= 3;
-          const rankColor = rank === 1 ? '#f59e0b' : rank <= 3 ? '#d4af37' : 'rgba(255,255,255,0.45)';
-          const bg = isTop ? 'rgba(212,175,55,0.07)' : 'rgba(255,255,255,0.02)';
+          const rankColor = rank === 1 ? '#b8820a' : rank <= 3 ? '#c49a18' : '#6b5040';
+          const bg = isTop ? 'rgba(212,175,55,0.10)' : 'rgba(0,0,0,0.02)';
           return `<div style="display:flex;align-items:center;gap:6px;padding:4px 8px;border-radius:6px;background:${bg};margin-bottom:3px"><div style="font-size:11px;font-weight:800;color:${rankColor};width:16px;text-align:right;flex-shrink:0">${rank}</div><div style="font-size:10px;font-weight:600;color:var(--foreground);width:84px;flex-shrink:0;line-height:1.2">${kr}</div><div style="display:flex;gap:2px;flex-wrap:nowrap">${cardHtml}</div></div>`;
         };
         const left  = ranks.slice(0, 5).map(makeRow).join('');
         const right = ranks.slice(5).map(makeRow).join('');
-        return `<div style="background:rgba(15,25,15,0.85);border:1px solid rgba(212,175,55,0.3);border-radius:14px;padding:14px 16px;margin:16px 0"><div style="font-size:11px;font-weight:700;color:#d4af37;text-align:center;margin-bottom:10px;letter-spacing:0.4px">홀덤족보 순위 10가지 완전 정리표</div><div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 14px">${left}${right}</div><div style="font-size:9px;color:var(--muted-foreground);text-align:center;margin-top:8px">1위(강함) → 10위(약함) · 카드는 예시</div></div>`;
+        return `<div style="background:#f0ebe0;border:1px solid #d8d0be;border-radius:14px;padding:14px 16px;margin:16px 0"><div style="font-size:11px;font-weight:700;color:#c49a18;text-align:center;margin-bottom:10px;letter-spacing:0.4px">홀덤족보 순위 10가지 완전 정리표</div><div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 14px">${left}${right}</div><div style="font-size:9px;color:var(--muted-foreground);text-align:center;margin-top:8px">1위(강함) → 10위(약함) · 카드는 예시</div></div>`;
       }
     )
     .replace(
@@ -294,7 +359,7 @@ export function renderMarkdown(content: string): string {
         }).join('');
         const captionHtml = caption ? `<span style="font-size:11px;color:var(--muted-foreground);align-self:flex-end;padding-bottom:2px">${caption}</span>` : '';
         // 카드 시퀀스는 항상 LTR 유지(RTL 언어에서 A-K-Q-J-10 순서가 뒤집히지 않도록).
-        return `<div style="display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:12px 0;padding:12px 16px;background:rgba(255,255,255,0.04);border-radius:10px;border:1px solid rgba(255,255,255,0.08)"><span style="display:inline-flex;flex-wrap:wrap;gap:6px;align-items:center;direction:ltr">${cardHtml}</span>${captionHtml}</div>`;
+        return `<div style="display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:12px 0;padding:12px 16px;background:#f0ebe0;border-radius:10px;border:1px solid #d8d0be"><span style="display:inline-flex;flex-wrap:wrap;gap:6px;align-items:center;direction:ltr">${cardHtml}</span>${captionHtml}</div>`;
       }
     )
     .replace(
@@ -302,7 +367,7 @@ export function renderMarkdown(content: string): string {
       (_, naverQuery, label) => {
         const naverUrl = `https://map.naver.com/v5/search/${encodeURIComponent(naverQuery)}`;
         const kakaoUrl = `https://map.kakao.com/?q=${encodeURIComponent(naverQuery)}`;
-        return `<div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:20px 24px;margin:24px 0">
+        return `<div style="background:#f0ebe0;border:1px solid #d8d0be;border-radius:16px;padding:20px 24px;margin:24px 0">
   <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px">
     <div style="width:44px;height:44px;border-radius:12px;background:rgba(212,175,55,0.15);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:20px">🗺️</div>
     <div>
@@ -326,33 +391,33 @@ export function renderMarkdown(content: string): string {
     .replace(/^> (.+)$/gm, '<blockquote class="my-4 pl-4 border-l-4 border-primary/40 text-muted-foreground italic text-sm">$1</blockquote>')
     // → result blocks (after bold so inner bold is already processed)
     .replace(/^→ (.+)$/gm, (_, text) =>
-      `<div style="display:flex;gap:10px;align-items:flex-start;margin:10px 0;padding:14px 16px;background:rgba(212,175,55,0.06);border-left:3px solid rgba(212,175,55,0.55);border-radius:0 10px 10px 0">` +
+      `<div style="display:flex;gap:10px;align-items:flex-start;margin:10px 0;padding:14px 16px;background:rgba(212,175,55,0.10);border-left:3px solid rgba(196,154,24,0.7);border-radius:0 10px 10px 0">` +
       `<span style="color:#d4af37;font-weight:900;font-size:17px;flex-shrink:0;line-height:1.5">→</span>` +
       `<div style="font-size:14px;line-height:1.7;color:var(--foreground)">${text}</div></div>`)
     // :::faqcard[/path/img.webp][alt][caption]::: — notebook-style FAQ visual card
     // LCP 후보(보통 글 첫머리)면 eager+fetchpriority=high, 아니면 lazy
     .replace(/^:::faqcard\[([^\]]+)\]\[([^\]]*)\]\[([^\]]*)\]:::$/gm, (_, src, alt, caption) => {
       const a = imgAttrs(src);
-      return `<div style="margin:28px 0;padding:3px;border-radius:18px;background:linear-gradient(135deg,rgba(212,175,55,0.55) 0%,rgba(56,189,248,0.35) 48%,rgba(212,175,55,0.45) 100%);box-shadow:0 8px 32px rgba(0,0,0,0.45)">` +
-        `<div style="background:rgba(10,22,12,0.96);border-radius:16px;overflow:hidden">` +
+      return `<div style="margin:28px 0;padding:3px;border-radius:18px;background:linear-gradient(135deg,rgba(196,154,24,0.55) 0%,rgba(56,189,248,0.25) 48%,rgba(196,154,24,0.45) 100%);box-shadow:0 6px 24px rgba(0,0,0,0.15)">` +
+        `<div style="background:#faf6ed;border-radius:16px;overflow:hidden">` +
         `<img src="${src}" alt="${alt}" loading="${a.loading}" fetchpriority="${a.fetchpriority}" decoding="async" width="1124" height="613" style="width:100%;height:auto;display:block" />` +
-        `<div style="padding:10px 18px;border-top:1px solid rgba(212,175,55,0.2);text-align:center">` +
-        `<p style="font-size:14px;color:#d4af37;margin:0;letter-spacing:0.4px;font-weight:700">${caption}</p>` +
+        `<div style="padding:10px 18px;border-top:1px solid rgba(196,154,24,0.25);text-align:center">` +
+        `<p style="font-size:14px;color:#b8820a;margin:0;letter-spacing:0.4px;font-weight:700">${caption}</p>` +
         `</div></div></div>`;
     })
     // ── 매거진 컴포넌트: :::kicker[text]::: ── H2 바로 위 아이브로우(소제목 라벨).
     // 아래 음수 margin 으로 다음 ## 제목에 바짝 붙인다(제목은 TOC 유지를 위해 ##로 둠).
     .replace(/^:::kicker\[([^\]]+)\]:::$/gm, (_, text) =>
-      `<div style="font-size:11px;font-weight:800;letter-spacing:0.16em;text-transform:uppercase;color:hsl(43 78% 58%);margin:2.6rem 0 -1.9rem">${text}</div>`)
+      `<div style="font-size:11px;font-weight:800;letter-spacing:0.16em;text-transform:uppercase;color:hsl(43 65% 40%);margin:2.6rem 0 -1.9rem">${text}</div>`)
     // ── 매거진 컴포넌트: :::pull[text]::: ── 풀쿼트(큰 인용). <br> 줄바꿈 허용.
     .replace(/^:::pull\[([^\]]+)\]:::$/gm, (_, text) =>
       `<figure style="margin:34px 0;text-align:center">` +
       `<div style="font-size:46px;line-height:0.4;color:hsl(43 78% 58%);opacity:0.5;margin-bottom:14px">&ldquo;</div>` +
-      `<p style="font-size:22px;font-weight:800;line-height:1.55;color:hsl(45 28% 92%);margin:0;letter-spacing:-0.01em">${text}</p>` +
+      `<p style="font-size:22px;font-weight:800;line-height:1.55;color:hsl(152 45% 8%);margin:0;letter-spacing:-0.01em">${text}</p>` +
       `</figure>`)
     // ── 매거진 컴포넌트: :::note[text]::: ── 여백형 에디토리얼 노트(이탤릭 + 골드 좌측선)
     .replace(/^:::note\[([^\]]+)\]:::$/gm, (_, text) =>
-      `<div style="margin:26px 0;padding:16px 20px;border-left:3px solid hsl(43 78% 58%);font-size:15px;color:hsl(152 12% 78%);font-style:italic;line-height:1.7">${text}</div>`)
+      `<div style="margin:26px 0;padding:16px 20px;border-left:3px solid hsl(43 65% 44%);font-size:15px;color:hsl(30 22% 36%);font-style:italic;line-height:1.7">${text}</div>`)
     // :::tip[text]::: single-line tip callout
     .replace(/^:::tip\[([^\]]+)\]:::$/gm, (_, text) =>
       `<div style="display:flex;gap:10px;align-items:center;margin:14px 0;padding:12px 16px;background:rgba(59,130,246,0.07);border-radius:10px;border:1px solid rgba(59,130,246,0.2);font-size:13px;color:var(--foreground)">` +
@@ -400,41 +465,14 @@ export default function BlogPost({
 
   return (
     <div className="min-h-screen">
-      {/* Sticky 탑바 — 뒤로가기 + 커뮤니티 CTA */}
-      <div
-        className="sticky top-0 z-50 flex items-center px-4 h-11 gap-3"
-        style={{ background: "#0b1120", borderBottom: "1px solid rgba(212,175,55,0.15)" }}
-      >
-        <Link
-          href="/"
-          className="flex items-center gap-1.5 text-sm font-bold transition-opacity hover:opacity-70"
-          style={{ color: "#d4af37" }}
-        >
-          <ChevronLeft className="w-4 h-4 -ml-0.5" strokeWidth={2.5} />
-          홈피드
-        </Link>
-        <div className="ml-auto flex items-center gap-2.5">
-          <Link
-            href="/"
-            className="px-3 py-1 rounded-lg text-[11px] font-bold leading-none transition-opacity hover:opacity-90"
-            style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: "#0b1120" }}
-          >
-            커뮤니티 →
-          </Link>
-          <span className="text-[11px] font-black tracking-widest" style={{ color: "rgba(212,175,55,0.4)" }}>
-            HM
-          </span>
-        </div>
-      </div>
-
-      {/* 영어 버전과 동일한 max-w-6xl 와이드 레이아웃 */}
-      <div className="max-w-6xl mx-auto px-4 py-12">
+      <BlogTopBar homeHref="/" communityLabel="커뮤니티" />
+      <div className="max-w-6xl mx-auto px-4 py-10">
         <div className={hasToc ? "xl:grid xl:grid-cols-[220px_1fr] xl:gap-10" : ""}>
 
           {/* 데스크탑 사이드바 TOC — xl 이상에서만 표시 */}
           {hasToc && (
             <aside className="hidden xl:block">
-              <div className="sticky top-28">
+              <div className="sticky top-16">
                 <nav className="bg-card border border-border rounded-2xl p-5" aria-label="목차">
                   <p className="text-xs font-bold uppercase tracking-widest text-primary mb-4">📚 목차</p>
                   <TocList headings={headings} />
@@ -535,7 +573,7 @@ export default function BlogPost({
             {/* Article Body */}
             <article
               ref={contentRef}
-              className="prose-holdem bg-card border border-border rounded-2xl p-6 md:p-10"
+              className="prose-holdem blog-prose bg-card border border-border rounded-2xl p-6 md:p-10"
             >
               {post.content.includes(':::quiz:::')
                 ? (() => {

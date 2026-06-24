@@ -8,6 +8,7 @@
 ## 2026-06-24
 
 ### 작업 내용
+- 크림 에디토리얼 디자인 복원: globals.css Inter/Lora 폰트·크림 팔레트, community-client.tsx 크림 레이아웃, layout.tsx DM Sans → Inter+Lora 교체, post-card.tsx 색상 토큰 INK=#0d1c14·MUTED=#42372a로 진하게 보강 (이벤트탭 가독성 개선)
 - 신규 포스트 발행: `holdem-bankroll-management` — 홀덤 뱅크롤 관리 가이드 (영어 스타일 표준 적용 1호)
 - `holdem-blind-meaning` 포스트 스타일 표준화: image/imageAlt/keepImagesInBody 추가, 인포그래픽 5개 → 실사 2개, FAQ A. 접두어 추가
 - `.cursorrules` 구조 재편: 565줄 → 90줄 핵심만 유지, 세부 규칙 `.cursor/rules/` 3개 파일로 분리

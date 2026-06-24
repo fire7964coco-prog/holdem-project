@@ -12,6 +12,7 @@ import { POST_LABELS, dirForLocale, type SecondaryLocale } from "@/lib/intl";
 import { postsForLocale } from "@/lib/intl-posts";
 import { renderMarkdown, extractHeadings } from "@/app/blog/[slug]/blog-post-client";
 import CommunityCTA from "@/components/community-cta";
+import BlogTopBar from "@/components/blog-top-bar";
 
 function IntlTocList({ headings }: { headings: { id: string; text: string; level: number }[] }) {
   let h2Count = 0;
@@ -86,40 +87,15 @@ export default function IntlBlogPostClient({
 
   return (
     <div dir={dir}>
-      {/* Sticky 탑바 — 브레드크럼 + 커뮤니티 CTA */}
-      <div
-        className="sticky top-0 z-50 flex items-center px-4 h-11 gap-2"
-        style={{ background: "#0b1120", borderBottom: "1px solid rgba(212,175,55,0.15)" }}
-      >
-        <Link
-          href={`/${locale}`}
-          className="flex items-center gap-1 text-xs font-bold transition-opacity hover:opacity-70"
-          style={{ color: "#d4af37" }}
-        >
-          <ChevronLeft className="w-3.5 h-3.5" strokeWidth={2.5} />
-          Home
-        </Link>
-        <span className="text-muted-foreground/40 text-xs">/</span>
-        <span className="text-xs text-muted-foreground truncate max-w-[140px]">{post.title}</span>
-        <div className="ml-auto flex items-center gap-2.5">
-          <Link
-            href={`/${locale}`}
-            className="px-3 py-1 rounded-lg text-[11px] font-bold leading-none transition-opacity hover:opacity-90"
-            style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: "#0b1120" }}
-          >
-            {CTA_LABEL[locale] ?? "Community →"}
-          </Link>
-          <span className="text-[11px] font-black tracking-widest" style={{ color: "rgba(212,175,55,0.4)" }}>
-            HM
-          </span>
-        </div>
-      </div>
-
-      <div className="max-w-6xl mx-auto px-4 py-12">
+      <BlogTopBar
+        homeHref={`/${locale}`}
+        communityLabel={CTA_LABEL[locale] ?? "Community"}
+      />
+      <div className="max-w-6xl mx-auto px-4 py-10">
         <div className={hasToc ? "xl:grid xl:grid-cols-[220px_1fr] xl:gap-10" : ""}>
           {hasToc && (
             <aside className="hidden xl:block">
-              <div className="sticky top-28">
+              <div className="sticky top-16">
                 <nav className="bg-card border border-border rounded-2xl p-5" aria-label={t.contents}>
                   <p className="text-xs font-bold uppercase tracking-widest text-primary mb-4">{t.contents}</p>
                   <IntlTocList headings={headings} />
@@ -209,7 +185,7 @@ export default function IntlBlogPostClient({
               </details>
             )}
 
-            <article ref={contentRef} className="prose-holdem bg-card border border-border rounded-2xl p-6 md:p-10">
+            <article ref={contentRef} className="prose-holdem blog-prose bg-card border border-border rounded-2xl p-6 md:p-10">
               <div className="text-muted-foreground leading-relaxed" dangerouslySetInnerHTML={{ __html: bodyHtml }} />
             </article>
 
