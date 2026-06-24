@@ -92,6 +92,30 @@ function NumberBall({
   );
 }
 
+/** 일요일 오후 7시 KST → 방문자 현지 시간 자동 변환 */
+function EventLocalDrawTime() {
+  const [localStr, setLocalStr] = useState<string | null>(null);
+  useEffect(() => {
+    const tzOffsetMin = -new Date().getTimezoneOffset();
+    if (tzOffsetMin === 9 * 60) return; // KST면 표시 불필요
+    const now = new Date();
+    const day = now.getDay();
+    const daysUntil = day === 0 ? 7 : 7 - day;
+    const nextSun = new Date(now);
+    nextSun.setDate(now.getDate() + daysUntil);
+    nextSun.setUTCHours(10, 0, 0, 0); // 10:00 UTC = 19:00 KST
+    setLocalStr(nextSun.toLocaleString([], {
+      weekday: "short", hour: "2-digit", minute: "2-digit", timeZoneName: "short",
+    }));
+  }, []);
+  if (!localStr) return null;
+  return (
+    <p className="text-[10px] mt-1.5" style={{ color: TEXT_MUTED }}>
+      📍 현지 시간 기준: {localStr}
+    </p>
+  );
+}
+
 // ── 이벤트 탭 다국어 라벨 ────────────────────────────────────
 const EVENT_LABELS = {
   ko: {
@@ -420,12 +444,13 @@ export default function EventTab({
 
           {/* 추첨 일정 안내 */}
           <div
-            className="mt-3 px-3 py-2.5 rounded-xl flex items-start gap-2"
+            className="mt-3 px-3 py-2.5 rounded-xl"
             style={{ background: "rgba(212,175,55,0.06)", border: "1px solid rgba(212,175,55,0.15)" }}
           >
             <p className="text-[11px] leading-relaxed font-medium" style={{ color: TEXT_SECONDARY }}>
               {EL.drawSchedule}
             </p>
+            <EventLocalDrawTime />
           </div>
         </div>
       </div>

@@ -83,6 +83,7 @@ const LABELS = {
     eventBadge: "🎰 이벤트 · 준비 중",
     eventTitle: "번호 6개 선택\n기프트콘 증정!",
     eventDesc: "3개 → 5만원 · 4개 → 30만원\n5개 → 100만원",
+    eventDrawSchedule: "🔗 매주 일요일 오후 7시 (KST)\n비트코인 블록 해시로 자동 추첨",
     eventButton: "이벤트 보기 →",
     communityLang: "🌐 커뮤니티 언어",
     badge_winner: "🏆 우승자",
@@ -136,6 +137,7 @@ const LABELS = {
     eventBadge: "🎰 Event · Coming Soon",
     eventTitle: "Pick 6 Numbers\nWin Gift Cards!",
     eventDesc: "3 match → $30 · 4 match → $200\n5 match → $1,000",
+    eventDrawSchedule: "🔗 Every Sunday 7 PM KST\nAuto-draw via Bitcoin block hash",
     eventButton: "View Event →",
     communityLang: "🌐 Community Languages",
     badge_winner: "🏆 Winner",
@@ -189,6 +191,7 @@ const LABELS = {
     eventBadge: "🎰 イベント · 準備中",
     eventTitle: "6つの数字を選んで\nギフト券をゲット！",
     eventDesc: "3一致 → $30 · 4 → $200\n5 → $1,000",
+    eventDrawSchedule: "🔗 毎週日曜 午後7時 (KST)\nBitcoin block hashで自動抽選",
     eventButton: "イベントを見る →",
     communityLang: "🌐 コミュニティ言語",
     badge_winner: "🏆 優勝者",
@@ -242,6 +245,7 @@ const LABELS = {
     eventBadge: "🎰 活动 · 准备中",
     eventTitle: "选6个数字\n赢取礼品券！",
     eventDesc: "3个匹配 → $30 · 4 → $200\n5 → $1,000",
+    eventDrawSchedule: "🔗 每周日晚7点 (KST)\n比特币区块哈希自动抽签",
     eventButton: "查看活动 →",
     communityLang: "🌐 社区语言",
     badge_winner: "🏆 冠军",
@@ -263,6 +267,7 @@ const LABELS = {
     loginRequired: "Inicio de sesión requerido", loginRequiredSub: "Inicia sesión para ver tus publicaciones y actividad",
     myPostsStat: "Publicaciones", likesStat: "Me gusta", commentsStat: "Comentarios", myPostsSection: "Mis publicaciones", noPostsTitle: "Sin publicaciones", noPostsSub: "¡Escribe tu primera publicación!",
     trendingTitle: "🔥 Tendencias esta semana", eventBadge: "🎰 Evento · Próximamente", eventTitle: "Elige 6 números\n¡Gana tarjetas regalo!", eventDesc: "3 coincidencias → $30 · 4 → $200\n5 → $1,000",
+    eventDrawSchedule: "🔗 Cada domingo 7 PM KST\nSorteo automático via Bitcoin block hash",
     eventButton: "Ver evento →", communityLang: "🌐 Idiomas de la comunidad",
     badge_winner: "🏆 Campeón", badge_hot: "🔥 Popular", badge_top: "⭐ Top Usuario", badge_participant: "🎟️ Participante",
   },
@@ -280,6 +285,7 @@ const LABELS = {
     loginRequired: "Anmeldung erforderlich", loginRequiredSub: "Melde dich an, um deine Beiträge zu sehen",
     myPostsStat: "Beiträge", likesStat: "Likes", commentsStat: "Kommentare", myPostsSection: "Meine Beiträge", noPostsTitle: "Keine Beiträge", noPostsSub: "Schreibe deinen ersten Beitrag!",
     trendingTitle: "🔥 Trends dieser Woche", eventBadge: "🎰 Event · Demnächst", eventTitle: "6 Zahlen wählen\nGeschenkkarten gewinnen!", eventDesc: "3 Treffer → $30 · 4 → $200\n5 → $1,000",
+    eventDrawSchedule: "🔗 Jeden Sonntag 19 Uhr KST\nAuto-Ziehung per Bitcoin Block Hash",
     eventButton: "Event ansehen →", communityLang: "🌐 Community-Sprachen",
     badge_winner: "🏆 Gewinner", badge_hot: "🔥 Beliebt", badge_top: "⭐ Top User", badge_participant: "🎟️ Teilnehmer",
   },
@@ -297,6 +303,7 @@ const LABELS = {
     loginRequired: "Login necessário", loginRequiredSub: "Faça login para ver suas publicações e atividades",
     myPostsStat: "Publicações", likesStat: "Curtidas", commentsStat: "Comentários", myPostsSection: "Minhas publicações", noPostsTitle: "Sem publicações", noPostsSub: "Escreva sua primeira publicação!",
     trendingTitle: "🔥 Tendências desta semana", eventBadge: "🎰 Evento · Em breve", eventTitle: "Escolha 6 números\nGanhe vales-presente!", eventDesc: "3 acertos → $30 · 4 → $200\n5 → $1,000",
+    eventDrawSchedule: "🔗 Todo domingo 19h KST\nSorteio automático via Bitcoin block hash",
     eventButton: "Ver evento →", communityLang: "🌐 Idiomas da comunidade",
     badge_winner: "🏆 Campeão", badge_hot: "🔥 Popular", badge_top: "⭐ Top Usuário", badge_participant: "🎟️ Participante",
   },
@@ -314,6 +321,7 @@ const LABELS = {
     loginRequired: "Login diperlukan", loginRequiredSub: "Login untuk melihat postingan dan aktivitasmu",
     myPostsStat: "Postingan", likesStat: "Suka", commentsStat: "Komentar", myPostsSection: "Postinganku", noPostsTitle: "Belum ada postingan", noPostsSub: "Tulis postingan pertamamu!",
     trendingTitle: "🔥 Trending Minggu Ini", eventBadge: "🎰 Event · Segera", eventTitle: "Pilih 6 Angka\nMenangkan Voucher!", eventDesc: "3 cocok → $30 · 4 → $200\n5 → $1,000",
+    eventDrawSchedule: "🔗 Setiap Minggu jam 7 malam KST\nUndian otomatis via Bitcoin block hash",
     eventButton: "Lihat event →", communityLang: "🌐 Bahasa Komunitas",
     badge_winner: "🏆 Juara", badge_hot: "🔥 Populer", badge_top: "⭐ Top User", badge_participant: "🎟️ Peserta",
   },
@@ -331,6 +339,7 @@ const LABELS = {
     loginRequired: "Log masuk diperlukan", loginRequiredSub: "Log masuk untuk melihat siaran dan aktiviti anda",
     myPostsStat: "Siaran", likesStat: "Suka", commentsStat: "Komen", myPostsSection: "Siaran saya", noPostsTitle: "Tiada siaran", noPostsSub: "Tulis siaran pertama anda!",
     trendingTitle: "🔥 Trending Minggu Ini", eventBadge: "🎰 Acara · Akan datang", eventTitle: "Pilih 6 Nombor\nMenang Baucar!", eventDesc: "3 padanan → $30 · 4 → $200\n5 → $1,000",
+    eventDrawSchedule: "🔗 Setiap Ahad jam 7 petang KST\nCabutan automatik via Bitcoin block hash",
     eventButton: "Lihat acara →", communityLang: "🌐 Bahasa Komuniti",
     badge_winner: "🏆 Juara", badge_hot: "🔥 Popular", badge_top: "⭐ Top User", badge_participant: "🎟️ Peserta",
   },
@@ -348,6 +357,7 @@ const LABELS = {
     loginRequired: "Cần đăng nhập", loginRequiredSub: "Đăng nhập để xem bài viết và hoạt động của bạn",
     myPostsStat: "Bài viết", likesStat: "Lượt thích", commentsStat: "Bình luận", myPostsSection: "Bài của tôi", noPostsTitle: "Chưa có bài", noPostsSub: "Viết bài đầu tiên của bạn!",
     trendingTitle: "🔥 Xu hướng tuần này", eventBadge: "🎰 Sự kiện · Sắp tới", eventTitle: "Chọn 6 số\nNhận thẻ quà tặng!", eventDesc: "3 khớp → $30 · 4 → $200\n5 → $1,000",
+    eventDrawSchedule: "🔗 Mỗi Chủ nhật 7 tối KST\nQuay thưởng tự động via Bitcoin block hash",
     eventButton: "Xem sự kiện →", communityLang: "🌐 Ngôn ngữ cộng đồng",
     badge_winner: "🏆 Vô địch", badge_hot: "🔥 Phổ biến", badge_top: "⭐ Top User", badge_participant: "🎟️ Người tham gia",
   },
@@ -365,6 +375,7 @@ const LABELS = {
     loginRequired: "Giriş gerekli", loginRequiredSub: "Gönderi ve etkinliğinizi görmek için giriş yapın",
     myPostsStat: "Gönderi", likesStat: "Beğeni", commentsStat: "Yorum", myPostsSection: "Gönderilerim", noPostsTitle: "Gönderi yok", noPostsSub: "İlk gönderinizi yazın!",
     trendingTitle: "🔥 Bu Haftanın Trendleri", eventBadge: "🎰 Etkinlik · Yakında", eventTitle: "6 Numara Seç\nHediye Kartı Kazan!", eventDesc: "3 eşleşme → $30 · 4 → $200\n5 → $1,000",
+    eventDrawSchedule: "🔗 Her Pazar 19:00 KST\nBitcoin block hash ile otomatik çekiliş",
     eventButton: "Etkinliği gör →", communityLang: "🌐 Topluluk Dilleri",
     badge_winner: "🏆 Kazanan", badge_hot: "🔥 Popüler", badge_top: "⭐ Top Kullanıcı", badge_participant: "🎟️ Katılımcı",
   },
@@ -1170,7 +1181,7 @@ export default function CommunityClient({
               {/* 이벤트 배너 */}
               <div className="rounded p-4" style={{ background: CARD, border: `1px solid ${BORDER}` }}>
                 <p className="text-[10px] font-bold tracking-widest uppercase mb-1" style={{ color: RED, fontFamily: FONT_SANS }}>
-                  🎰 이벤트
+                  {L.eventBadge}
                 </p>
                 <p
                   className="text-[16px] font-medium mb-1.5 whitespace-pre-line"
@@ -1178,9 +1189,19 @@ export default function CommunityClient({
                 >
                   {L.eventTitle}
                 </p>
-                <p className="text-[12px] mb-3 whitespace-pre-line" style={{ color: MUTED, fontFamily: FONT_SANS }}>
+                <p className="text-[12px] mb-2 whitespace-pre-line" style={{ color: MUTED, fontFamily: FONT_SANS }}>
                   {L.eventDesc}
                 </p>
+                {/* 추첨 일정 안내 */}
+                <div
+                  className="rounded px-3 py-2 mb-3 whitespace-pre-line"
+                  style={{ background: "rgba(212,175,55,0.07)", border: "1px solid rgba(212,175,55,0.18)" }}
+                >
+                  <p className="text-[11px] leading-relaxed" style={{ color: MUTED, fontFamily: FONT_SANS }}>
+                    {L.eventDrawSchedule}
+                  </p>
+                  <LocalDrawTime fontFamily={FONT_SANS} muted={MUTED} />
+                </div>
                 <button
                   onClick={() => setTab("event")}
                   className="w-full py-2 rounded text-sm font-semibold"
@@ -1221,6 +1242,32 @@ export default function CommunityClient({
       {/* 공용 글쓰기 모달 */}
       {WriteModal}
     </div>
+  );
+}
+
+/** 일요일 오후 7시 KST를 방문자 현지 시간으로 변환해 표시 */
+function LocalDrawTime({ fontFamily, muted }: { fontFamily: string; muted: string }) {
+  const [localStr, setLocalStr] = useState<string | null>(null);
+  useEffect(() => {
+    const tzOffsetMin = -new Date().getTimezoneOffset();
+    if (tzOffsetMin === 9 * 60) return; // 이미 KST면 표시 불필요
+    // 다음 일요일 KST 19:00 = UTC 10:00
+    const now = new Date();
+    const day = now.getDay();
+    const daysUntil = day === 0 ? 7 : 7 - day;
+    const nextSun = new Date(now);
+    nextSun.setDate(now.getDate() + daysUntil);
+    nextSun.setUTCHours(10, 0, 0, 0);
+    const fmt = nextSun.toLocaleString([], {
+      weekday: "short", hour: "2-digit", minute: "2-digit", timeZoneName: "short",
+    });
+    setLocalStr(fmt);
+  }, []);
+  if (!localStr) return null;
+  return (
+    <p className="text-[10px] mt-1" style={{ color: muted, fontFamily, opacity: 0.75 }}>
+      📍 현지 시간: {localStr}
+    </p>
   );
 }
 
