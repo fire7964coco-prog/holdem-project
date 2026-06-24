@@ -155,8 +155,8 @@ export function renderMarkdown(content: string): string {
       `<div><div style="font-size:14px;font-weight:700;color:var(--foreground);margin-bottom:4px">${title.replace(/:$/, '')}</div>` +
       `<div style="font-size:13px;color:var(--muted-foreground);line-height:1.65">${desc}</div></div></div>`)
     .replace(/^### (.+)$/gm, (_, text) =>
-      `<h3 id="${slugify(text)}" style="font-size:15px;font-weight:700;margin:24px 0 10px;padding:10px 16px;background:rgba(212,175,55,0.06);border-left:3px solid rgba(212,175,55,0.5);border-radius:0 8px 8px 0;color:var(--foreground);word-break:keep-all;overflow-wrap:break-word;line-height:1.45">${text}</h3>`)
-    .replace(/^## (.+)$/gm, (_, text) => `<h2 id="${slugify(text)}" class="blog-h2 text-xl sm:text-2xl font-serif font-bold text-foreground mt-10 mb-4 pb-2 border-b border-border">${text}</h2>`)
+      `<h3 id="${slugify(text)}" style="font-size:15px;font-weight:800;margin:20px 0 10px;padding:10px 16px;background:rgba(212,175,55,0.07);border-left:3px solid rgba(212,175,55,0.6);border-radius:0 8px 8px 0;color:var(--foreground);word-break:keep-all;overflow-wrap:break-word;line-height:1.45;letter-spacing:-0.01em">${text}</h3>`)
+    .replace(/^## (.+)$/gm, (_, text) => `<h2 id="${slugify(text)}" class="blog-h2 text-xl sm:text-2xl font-serif font-extrabold text-foreground mt-8 sm:mt-10 mb-3 pb-2 border-b-2 border-primary/30">${text}</h2>`)
     .replace(/^# (.+)$/gm, '<h1 class="text-3xl font-serif font-black text-foreground mt-6 mb-5">$1</h1>')
     // FAQ cards — MUST run before **bold** processing (bold would consume the ** markers first)
     .replace(
