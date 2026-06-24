@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import Link from "next/link";
@@ -237,7 +237,7 @@ export default function PostCard({
             </div>
           </div>
           <div className="px-4 lg:px-5 pb-1.5">
-            <p className="text-[15px] font-bold leading-snug" style={{ color: TEXT_PRIMARY }}>{post.title}</p>
+            <p className="text-[17px] font-extrabold leading-snug" style={{ color: TEXT_PRIMARY }}>{post.title}</p>
           </div>
           <div className="px-4 lg:px-5 pb-3">
             <p className="text-[13.5px] lg:text-sm leading-relaxed line-clamp-3" style={{ color: TEXT_BODY }}>
@@ -296,7 +296,7 @@ export default function PostCard({
       <Link href={clickable ? `/post/${post.id}` : "#"} className={clickable ? "block" : "block pointer-events-none"}>
         {showTitle && (
           <div className="px-4 lg:px-5 pb-1.5">
-            <p className="text-[15px] font-bold leading-snug" style={{ color: TEXT_PRIMARY }}>{post.title}</p>
+            <p className="text-[17px] font-extrabold leading-snug" style={{ color: TEXT_PRIMARY }}>{post.title}</p>
           </div>
         )}
         <div className="px-4 lg:px-5 pb-3">
