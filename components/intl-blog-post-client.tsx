@@ -184,7 +184,7 @@ export default function IntlBlogPostClient({
               </details>
             )}
 
-            <article ref={contentRef} className="prose-holdem blog-prose bg-card border border-border rounded-2xl p-6 md:p-10">
+            <article ref={contentRef} className="prose-holdem blog-prose bg-card border border-border rounded-2xl p-4 sm:p-6 md:p-10">
               <div className="text-muted-foreground leading-relaxed" dangerouslySetInnerHTML={{ __html: bodyHtml }} />
             </article>
 

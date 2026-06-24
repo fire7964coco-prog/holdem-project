@@ -155,8 +155,8 @@ export function renderMarkdown(content: string): string {
       `<div><div style="font-size:14px;font-weight:700;color:var(--foreground);margin-bottom:4px">${title.replace(/:$/, '')}</div>` +
       `<div style="font-size:13px;color:var(--muted-foreground);line-height:1.65">${desc}</div></div></div>`)
     .replace(/^### (.+)$/gm, (_, text) =>
-      `<h3 id="${slugify(text)}" style="font-size:16px;font-weight:700;margin:24px 0 10px;padding:10px 16px;background:rgba(212,175,55,0.06);border-left:3px solid rgba(212,175,55,0.5);border-radius:0 8px 8px 0;color:var(--foreground)">${text}</h3>`)
-    .replace(/^## (.+)$/gm, (_, text) => `<h2 id="${slugify(text)}" class="text-2xl font-serif font-bold text-foreground mt-10 mb-4 pb-2 border-b border-border">${text}</h2>`)
+      `<h3 id="${slugify(text)}" style="font-size:15px;font-weight:700;margin:24px 0 10px;padding:10px 16px;background:rgba(212,175,55,0.06);border-left:3px solid rgba(212,175,55,0.5);border-radius:0 8px 8px 0;color:var(--foreground);word-break:keep-all;overflow-wrap:break-word;line-height:1.45">${text}</h3>`)
+    .replace(/^## (.+)$/gm, (_, text) => `<h2 id="${slugify(text)}" class="blog-h2 text-xl sm:text-2xl font-serif font-bold text-foreground mt-10 mb-4 pb-2 border-b border-border">${text}</h2>`)
     .replace(/^# (.+)$/gm, '<h1 class="text-3xl font-serif font-black text-foreground mt-6 mb-5">$1</h1>')
     // FAQ cards — MUST run before **bold** processing (bold would consume the ** markers first)
     .replace(
@@ -167,7 +167,7 @@ export function renderMarkdown(content: string): string {
         `<span style="flex-shrink:0;width:22px;height:22px;border-radius:50%;background:rgba(234,88,12,0.20);border:1.5px solid rgba(234,88,12,0.70);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#ea580c;margin-top:1px">Q</span>` +
         `<span style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.5">${q.trim()}</span>` +
         `</div>` +
-        `<div style="padding:12px 16px 12px 48px;font-size:13.5px;color:var(--muted-foreground);line-height:1.7">${a.trim()}</div>` +
+        `<div class="blog-faq-answer" style="padding:12px 16px 12px 48px;font-size:13.5px;color:var(--muted-foreground);line-height:1.7">${a.trim()}</div>` +
         `</div>`
     )
     .replace(/==r:(.+?)==/g, '<mark class="brush-hl brush-hl-red">$1</mark>')
@@ -275,7 +275,7 @@ export function renderMarkdown(content: string): string {
           `</div>`
         );
       }).join('');
-      return `<div style="margin:28px 0;border-radius:12px;overflow:hidden;border:1px solid #d8d0be">${header}${rowHtml}</div>`;
+      return `<div class="blog-scroll-x" style="margin:0"><div style="min-width:300px;border-radius:12px;overflow:hidden;border:1px solid #d8d0be">${header}${rowHtml}</div></div>`;
     })
 
     .replace(/(<tr.*<\/tr>\n?)+/g, (m) => `<div class="overflow-x-auto my-6"><table class="w-full border border-border rounded-lg overflow-hidden">${m}</table></div>`)
@@ -345,7 +345,7 @@ export function renderMarkdown(content: string): string {
         };
         const left  = ranks.slice(0, 5).map(makeRow).join('');
         const right = ranks.slice(5).map(makeRow).join('');
-        return `<div style="background:#f0ebe0;border:1px solid #d8d0be;border-radius:14px;padding:14px 16px;margin:16px 0"><div style="font-size:11px;font-weight:700;color:#c49a18;text-align:center;margin-bottom:10px;letter-spacing:0.4px">홀덤족보 순위 10가지 완전 정리표</div><div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 14px">${left}${right}</div><div style="font-size:9px;color:var(--muted-foreground);text-align:center;margin-top:8px">1위(강함) → 10위(약함) · 카드는 예시</div></div>`;
+        return `<div class="blog-scroll-x" style="margin:16px 0"><div style="background:#f0ebe0;border:1px solid #d8d0be;border-radius:14px;padding:14px 16px;min-width:420px"><div style="font-size:11px;font-weight:700;color:#c49a18;text-align:center;margin-bottom:10px;letter-spacing:0.4px">홀덤족보 순위 10가지 완전 정리표</div><div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 14px">${left}${right}</div><div style="font-size:9px;color:var(--muted-foreground);text-align:center;margin-top:8px">1위(강함) → 10위(약함) · 카드는 예시</div></div></div>`;
       }
     )
     .replace(
@@ -578,7 +578,7 @@ export default function BlogPost({
             {/* Article Body */}
             <article
               ref={contentRef}
-              className="prose-holdem blog-prose bg-card border border-border rounded-2xl p-6 md:p-10"
+              className="prose-holdem blog-prose bg-card border border-border rounded-2xl p-4 sm:p-6 md:p-10"
             >
               {post.content.includes(':::quiz:::')
                 ? (() => {
