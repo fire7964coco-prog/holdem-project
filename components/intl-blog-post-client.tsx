@@ -122,8 +122,14 @@ export default function IntlBlogPostClient({
                 )}
               </div>
 
+              {/* H1 제목 먼저 → 텍스트 LCP 확보 (이미지 LCP보다 빠름) */}
+              <h1 className="text-3xl md:text-4xl font-serif font-black text-foreground leading-tight mb-4">
+                {post.title}
+              </h1>
+              <p className="text-lg text-muted-foreground leading-relaxed">{post.desc}</p>
+
               {post.image && (
-                <div className="mb-6 rounded-2xl overflow-hidden">
+                <div className="mt-6 rounded-2xl overflow-hidden">
                   <Image
                     src={post.image}
                     alt={post.imageAlt ?? post.title}
@@ -135,11 +141,6 @@ export default function IntlBlogPostClient({
                   />
                 </div>
               )}
-
-              <h1 className="text-3xl md:text-4xl font-serif font-black text-foreground leading-tight mb-4">
-                {post.title}
-              </h1>
-              <p className="text-lg text-muted-foreground leading-relaxed">{post.desc}</p>
 
               <div className="flex flex-wrap gap-2 mt-5">
                 {post.tags.map((tag) => (
