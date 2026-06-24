@@ -27,6 +27,7 @@ const CHAT_LABELS = {
     loginBtn: "로그인 →",
     empty: "아직 메시지가 없습니다. 첫 채팅을 남겨보세요!",
     live: "LIVE",
+    tools: ["🧮 계산기", "🎯 퀴즈", "📊 핸드차트", "🃏 족보", "📖 용어사전"],
   },
   en: {
     placeholder: "Type a message...",
@@ -35,6 +36,7 @@ const CHAT_LABELS = {
     loginBtn: "Log in →",
     empty: "No messages yet. Be the first to chat!",
     live: "LIVE",
+    tools: ["🧮 Calculator", "🎯 Quiz", "📊 Hand Chart", "🃏 Rankings", "📖 Glossary"],
   },
   ja: {
     placeholder: "メッセージを入力...",
@@ -43,6 +45,7 @@ const CHAT_LABELS = {
     loginBtn: "ログイン →",
     empty: "まだメッセージはありません。最初のチャットを送ってみよう！",
     live: "LIVE",
+    tools: ["🧮 計算機", "🎯 クイズ", "📊 ハンドチャート", "🃏 役一覧", "📖 用語集"],
   },
   zh: {
     placeholder: "输入聊天消息...",
@@ -51,6 +54,7 @@ const CHAT_LABELS = {
     loginBtn: "登录 →",
     empty: "还没有消息，来发第一条吧！",
     live: "LIVE",
+    tools: ["🧮 计算器", "🎯 测验", "📊 起手牌图", "🃏 牌型", "📖 术语表"],
   },
   es: {
     placeholder: "Escribe un mensaje...",
@@ -59,6 +63,7 @@ const CHAT_LABELS = {
     loginBtn: "Iniciar sesión →",
     empty: "Aún no hay mensajes. ¡Sé el primero!",
     live: "LIVE",
+    tools: ["🧮 Calculadora", "🎯 Quiz", "📊 Tabla de Manos", "🃏 Manos", "📖 Glosario"],
   },
   de: {
     placeholder: "Nachricht eingeben...",
@@ -67,6 +72,7 @@ const CHAT_LABELS = {
     loginBtn: "Anmelden →",
     empty: "Noch keine Nachrichten. Schreibe die erste!",
     live: "LIVE",
+    tools: ["🧮 Rechner", "🎯 Quiz", "📊 Hand-Chart", "🃏 Hand-Ranking", "📖 Glossar"],
   },
   pt: {
     placeholder: "Digite uma mensagem...",
@@ -75,6 +81,7 @@ const CHAT_LABELS = {
     loginBtn: "Entrar →",
     empty: "Sem mensagens ainda. Seja o primeiro!",
     live: "LIVE",
+    tools: ["🧮 Calculadora", "🎯 Quiz", "📊 Tabela de Mãos", "🃏 Mãos", "📖 Glossário"],
   },
   id: {
     placeholder: "Tulis pesan...",
@@ -83,6 +90,7 @@ const CHAT_LABELS = {
     loginBtn: "Masuk →",
     empty: "Belum ada pesan. Jadilah yang pertama!",
     live: "LIVE",
+    tools: ["🧮 Kalkulator", "🎯 Kuis", "📊 Tabel Kartu", "🃏 Peringkat", "📖 Glosarium"],
   },
   ms: {
     placeholder: "Tulis mesej...",
@@ -91,6 +99,7 @@ const CHAT_LABELS = {
     loginBtn: "Log masuk →",
     empty: "Tiada mesej lagi. Jadilah yang pertama!",
     live: "LIVE",
+    tools: ["🧮 Kalkulator", "🎯 Kuiz", "📊 Carta Tangan", "🃏 Peringkat", "📖 Glosari"],
   },
   vi: {
     placeholder: "Nhập tin nhắn...",
@@ -99,6 +108,7 @@ const CHAT_LABELS = {
     loginBtn: "Đăng nhập →",
     empty: "Chưa có tin nhắn. Hãy là người đầu tiên!",
     live: "LIVE",
+    tools: ["🧮 Máy tính", "🎯 Trắc nghiệm", "📊 Bảng bài", "🃏 Thứ hạng", "📖 Từ điển"],
   },
   tr: {
     placeholder: "Mesaj yaz...",
@@ -107,6 +117,7 @@ const CHAT_LABELS = {
     loginBtn: "Giriş yap →",
     empty: "Henüz mesaj yok. İlk mesajı sen gönder!",
     live: "LIVE",
+    tools: ["🧮 Hesap Makinesi", "🎯 Sınav", "📊 El Tablosu", "🃏 El Sıralaması", "📖 Sözlük"],
   },
   hi: {
     placeholder: "संदेश लिखें...",
@@ -115,6 +126,7 @@ const CHAT_LABELS = {
     loginBtn: "लॉगिन →",
     empty: "अभी कोई संदेश नहीं। पहला संदेश भेजें!",
     live: "LIVE",
+    tools: ["🧮 Calculator", "🎯 Quiz", "📊 Hand Chart", "🃏 Rankings", "📖 Glossary"],
   },
   ar: {
     placeholder: "اكتب رسالة...",
@@ -123,6 +135,7 @@ const CHAT_LABELS = {
     loginBtn: "تسجيل الدخول →",
     empty: "لا رسائل بعد. كن أول من يتحدث!",
     live: "LIVE",
+    tools: ["🧮 حاسبة", "🎯 اختبار", "📊 جدول الأيدي", "🃏 ترتيب الأيدي", "📖 معجم"],
   },
 } as const;
 
@@ -255,28 +268,21 @@ export default function ChatTab({
         className="flex gap-2 px-3 py-2 overflow-x-auto flex-shrink-0"
         style={{ borderBottom: `1px solid ${BORDER}`, scrollbarWidth: "none" }}
       >
-        {[
-          { icon: "🧮", label: "계산기", href: "/calculator/" },
-          { icon: "🎯", label: "퀴즈", href: "/quiz/" },
-          { icon: "📊", label: "핸드차트", href: "/hand-chart/" },
-          { icon: "🃏", label: "족보", href: "/ranking/" },
-          { icon: "📖", label: "용어사전", href: "/glossary/" },
-        ].map((t) => (
+        {["/calculator", "/quiz", "/hand-chart", "/ranking", "/glossary"].map((href, i) => (
           <Link
-            key={t.href}
-            href={t.href}
-            className="flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-semibold flex-shrink-0 transition-opacity active:opacity-70"
+            key={href}
+            href={href}
+            className="flex items-center gap-1 px-3 py-1 rounded-full text-[11px] font-semibold flex-shrink-0 transition-opacity active:opacity-70 whitespace-nowrap"
             style={{ background: "rgba(212,175,55,0.1)", color: GOLD, border: "1px solid rgba(212,175,55,0.2)" }}
           >
-            <span>{t.icon}</span>
-            <span>{t.label}</span>
+            {L.tools[i]}
           </Link>
         ))}
       </div>
 
       {/* 메시지 목록 */}
       <div
-        className="flex-1 overflow-y-auto px-3 py-2 space-y-1.5"
+        className="flex-1 overflow-y-auto px-3 py-3 space-y-2"
         style={{
           scrollbarWidth: "thin",
           scrollbarColor: "rgba(212,175,55,0.15) transparent",
@@ -290,16 +296,36 @@ export default function ChatTab({
           messages.map((m) => {
             const isMe = m.user_id === currentUser?.id;
             return (
-              <div key={m.id} className="flex items-baseline gap-1.5">
-                <span className="text-sm flex-shrink-0">
-                  {FLAG[m.language] ?? "🌐"}
-                </span>
-                <span className="text-[12px] font-bold flex-shrink-0" style={{ color: isMe ? GOLD : TEXT_SECONDARY }}>
-                  {m.nickname}
-                </span>
-                <span className="text-sm break-words min-w-0" style={{ color: TEXT_BODY }}>
+              <div
+                key={m.id}
+                className={`flex flex-col gap-0.5 ${isMe ? "items-end" : "items-start"}`}
+              >
+                {/* 닉네임 + 국기 */}
+                {!isMe && (
+                  <div className="flex items-center gap-1 px-1">
+                    <span className="text-[11px]">{FLAG[m.language] ?? "🌐"}</span>
+                    <span className="text-[11px] font-bold" style={{ color: TEXT_MUTED }}>
+                      {m.nickname}
+                    </span>
+                  </div>
+                )}
+                {/* 말풍선 */}
+                <div
+                  className="max-w-[75%] px-3.5 py-2 text-sm leading-relaxed break-words"
+                  style={isMe ? {
+                    background: "linear-gradient(135deg,#d4af37,#f0d060)",
+                    color: "#0b1120",
+                    borderRadius: "18px 18px 4px 18px",
+                    fontWeight: 600,
+                  } : {
+                    background: CARD,
+                    color: TEXT_BODY,
+                    border: `1px solid ${BORDER}`,
+                    borderRadius: "18px 18px 18px 4px",
+                  }}
+                >
                   {m.content}
-                </span>
+                </div>
               </div>
             );
           })
