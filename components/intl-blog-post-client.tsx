@@ -8,7 +8,7 @@ import { FaXTwitter, FaFacebookF } from "react-icons/fa6";
 import { useState, useRef, useEffect } from "react";
 import type { Post } from "@/lib/posts";
 import { SITE } from "@/lib/site";
-import { POST_LABELS, dirForLocale, type SecondaryLocale } from "@/lib/intl";
+import { POST_LABELS, NAV_CTA, NAV_HOME_FEED, dirForLocale, type SecondaryLocale } from "@/lib/intl";
 import { postsForLocale } from "@/lib/intl-posts";
 import { renderMarkdown, extractHeadings } from "@/app/blog/[slug]/blog-post-client";
 import CommunityCTA from "@/components/community-cta";
@@ -83,18 +83,12 @@ export default function IntlBlogPostClient({
     post.content.replace(/^:::quiz:::$/m, ""),
   )}</p>`;
 
-  const CTA_LABEL: Record<string, string> = {
-    en: "Community →", ja: "コミュニティ →", zh: "社区 →",
-    es: "Comunidad →", de: "Community →", ar: "المجتمع →",
-    tr: "Topluluk →", vi: "Cộng đồng →", id: "Komunitas →",
-    ms: "Komuniti →", pt: "Comunidade →", hi: "समुदाय →",
-  };
-
   return (
     <div dir={dir}>
       <BlogTopBar
         homeHref={`/${locale}`}
-        communityLabel={CTA_LABEL[locale] ?? "Community"}
+        homeFeedLabel={NAV_HOME_FEED[locale]}
+        communityLabel={NAV_CTA[locale]}
       />
       <div className="max-w-6xl mx-auto px-4 py-10">
         <div className={hasToc ? "xl:grid xl:grid-cols-[220px_1fr] xl:gap-10" : ""}>

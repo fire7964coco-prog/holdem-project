@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE } from "@/lib/site";
-import { CHROME, POST_LABELS, OG_LOCALE, dirForLocale, type SecondaryLocale } from "@/lib/intl";
+import { CHROME, POST_LABELS, OG_LOCALE, NAV_CTA, NAV_HOME_FEED, dirForLocale, type SecondaryLocale } from "@/lib/intl";
 import { postsForLocale } from "@/lib/intl-posts";
+import BlogTopBar from "@/components/blog-top-bar";
 
 export function intlBlogIndexMetadata(locale: SecondaryLocale): Metadata {
   const t = POST_LABELS[locale];
@@ -29,7 +30,13 @@ export function IntlBlogIndex({ locale }: { locale: SecondaryLocale }) {
   const base = `/${locale}/blog`;
 
   return (
-    <div dir={dirForLocale(locale)} className="max-w-4xl mx-auto px-4 py-16">
+    <div dir={dirForLocale(locale)}>
+      <BlogTopBar
+        homeHref={`/${locale}`}
+        homeFeedLabel={NAV_HOME_FEED[locale]}
+        communityLabel={NAV_CTA[locale]}
+      />
+      <div className="max-w-4xl mx-auto px-4 py-16">
       <header className="mb-10">
         <h1 className="text-3xl md:text-4xl font-serif font-black text-foreground mb-3">{t.blogTitle}</h1>
         <p className="text-lg text-muted-foreground">{t.blogIntro}</p>
@@ -61,6 +68,7 @@ export function IntlBlogIndex({ locale }: { locale: SecondaryLocale }) {
             </article>
           </Link>
         ))}
+      </div>
       </div>
     </div>
   );

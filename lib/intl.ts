@@ -477,3 +477,35 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
       "Bu site yalnızca bilgilendirme amaçlıdır ve gerçek parayla kumarı teşvik etmez. Yalnızca 18 yaş üstü için.",
   },
 };
+
+/** 블로그 탑바 — 홈 피드 버튼 (한국어 기본값: 홈피드) */
+export const NAV_HOME_FEED: Record<SecondaryLocale, string> = {
+  en: "Home Feed",
+  ja: "ホームフィード",
+  es: "Feed Inicio",
+  zh: "首页动态",
+  ar: "الصفحة الرئيسية",
+  pt: "Feed Início",
+  id: "Feed Beranda",
+  ms: "Feed Utama",
+  vi: "Trang chủ",
+  hi: "होम फ़ीड",
+  de: "Start-Feed",
+  tr: "Ana Sayfa",
+};
+
+/** 블로그 탑바 — 커뮤니티 CTA 버튼 */
+export const NAV_CTA: Record<SecondaryLocale, string> = {
+  en: "Community →",
+  ja: "コミュニティ →",
+  zh: "社区 →",
+  es: "Comunidad →",
+  de: "Community →",
+  ar: "المجتمع →",
+  tr: "Topluluk →",
+  vi: "Cộng đồng →",
+  id: "Komunitas →",
+  ms: "Komuniti →",
+  pt: "Comunidade →",
+  hi: "समुदाय →",
+};
