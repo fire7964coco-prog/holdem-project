@@ -210,30 +210,106 @@ Holdem_Project/
 
 ---
 
+## ✨ 포스트 형식 표준 — 영어 블로그 스타일 기준 (2026-06-24 이후 모든 포스트)
+
+**영어 블로그(`/en/blog/`)가 한국어 블로그보다 레이아웃이 깔끔한 이유:**
+영어 포스트는 `image` + `imageAlt` + `keepImagesInBody: true` + `tldr` 필드를 항상 갖추고,
+FAQ를 `**Q. ...**` / `A. ...` 형식으로 작성해 스타일드 카드로 렌더된다.
+**새 한국어 포스트도 동일 형식을 따른다.**
+
+### 필수 필드 체크리스트 (새 포스트 작성 시 전부 포함)
+
+| 필드 | 설명 | 예시 |
+|------|------|------|
+| `slug` | URL 식별자 | `holdem-check-raise` |
+| `title` | 제목 40자 이하 | |
+| `seoTitle` | 호기심 훅 + 키워드 하이브리드 | `"같은 패인데 왜 졌지? — 홀덤 키커 규칙"` |
+| `desc` | 메타 description 120-160자 | |
+| `tldr` | Quick Answer 박스 한 문장 | 렌더러가 💡 박스로 표시 |
+| `image` | 히어로 이미지 경로 | `/images/[slug]-hero.webp` |
+| `imageAlt` | 구체적 상황 묘사 alt | `"강남 펍 J92 보드에서 체크레이즈 상황"` |
+| `keepImagesInBody` | **항상 `true`** | 히어로 이미지를 본문 상단에 유지 |
+| `category` | 카테고리 | `전략` / `초보 가이드` / `토너먼트` |
+| `tags` | 검색 키워드 배열 5~8개 | |
+| `date` | 발행일 | `2026-06-24` |
+| `readTime` | 예상 읽기 시간 | `13분` |
+
+### FAQ 형식 — 반드시 이 형식으로 작성
+
+```markdown
+**Q. 질문 텍스트를 그대로?**
+
+A. 답변 2~4줄. 검색자가 실제로 치는 문장을 Q에 넣는다.
+
+**Q. 두 번째 질문?**
+
+A. 답변.
+```
+
+> ❌ 금지: `### Q1. 질문` 형식 (구형 스타일, 스타일드 카드 미렌더)
+
+### 포스트 본문 구조 (순서 고정)
+
+```
+[히어로 이미지 — 본문 첫 번째 이미지, priority 자동 적용]
+
+[도입부 — :::lead 블록으로 경험담 2~3줄]
+
+---
+
+### 이 글 핵심 요약
+:::stripe
+값 | 라벨
+:::
+
+## H2 섹션들
+
+[본문 이미지 2개 적절한 위치에 삽입]
+
+## FAQ — 자주 묻는 질문
+
+**Q. ...**
+
+A. ...
+
+---
+
+## 마무리
+```
+
+---
+
 ## 📝 새 포스트 추가 STEP BY STEP
 
 ### STEP 1: 포스트 파일 생성
 경로: `lib/posts/[slug].ts`
 파일명 = slug (예: `holdem-check-raise.ts`)
 
-### STEP 2: 포스트 데이터 작성
+### STEP 2: 포스트 데이터 작성 (영어 스타일 기준)
 
-import { BlogPost } from '../types';
+```ts
+import type { Post } from "../posts";
 
-const post: BlogPost = {
+export const POST: Post = {
   slug: 'holdem-check-raise',
   title: '제목 40자 이하',
-  description: '메타 description 120-160자',
-  category: 'strategy',
+  seoTitle: '호기심 훅 — 핵심 키워드 조합',
+  desc: '메타 description 120-160자',
+  tldr: 'Quick Answer 한 문장 — 렌더러가 💡 박스로 표시',
+  category: '전략',
   tags: ['체크레이즈', '홀덤전략'],
-  publishedAt: '2026-05-01',
-  readTime: 8,
+  date: '2026-06-24',
+  updated: '2026-06-24',
+  readTime: '8분',
+  emoji: '🎯',
   image: '/images/holdem-check-raise-hero.webp',
   imageAlt: '강남 홀덤펍에서 체크레이즈 상황 — 보드 J92 레인보우',
+  keepImagesInBody: true,   // ← 반드시 true
   content: `[마크다운 본문]`,
 };
 
-export default post;
+export default POST;
+```
 
 ### STEP 3: lib/posts/index.ts에 import 추가
 import holdemCheckRaise from './holdem-check-raise';
