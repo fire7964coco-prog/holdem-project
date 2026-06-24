@@ -139,61 +139,49 @@
   }
 }
 
-/* ── 블로그 본문 타이포그래피 (팩트풀니스 스타일) ────── */
+/* ── 블로그 본문 타이포그래피 (Noto Sans KR — 산세리프, 화면 최적) ── */
 .blog-prose {
-  font-family: var(--font-serif);
-  font-size: 1.175rem;      /* 18.8px — EB Garamond 최적 가독성 */
-  line-height: 1.85;        /* 여유로운 행간, 팩트풀니스 페이퍼백 수준 */
-  letter-spacing: 0.01em;
-  color: #1a1a1a;           /* 크림 테마 foreground(다크그린) 대신 거의 검정으로 */
+  font-family: var(--font-noto-sans-kr), var(--font-sans);
+  font-size: 1.05rem;       /* Noto Sans KR은 EB Garamond보다 시각적으로 커 보임 */
+  line-height: 1.9;
+  letter-spacing: -0.01em; /* Noto Sans KR 표준 트래킹 */
+  word-break: keep-all;
 }
 .blog-prose p {
-  font-size: 1.15rem;
-  line-height: 1.85;
+  font-size: 1.05rem;
+  line-height: 1.9;
   margin-bottom: 1.4em;
-  color: #1a1a1a;
 }
 .blog-prose li {
-  font-family: var(--font-serif);
-  font-size: 1.12rem;
-  line-height: 1.75;
-  color: #1a1a1a;
-}
-.blog-prose strong {
-  color: #111111;
-  font-weight: 700;
-}
-.blog-prose h1, .blog-prose h2, .blog-prose h3, .blog-prose h4 {
-  color: #111111;
+  font-size: 1.02rem;
+  line-height: 1.8;
 }
 .blog-prose h2 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 800;
   margin-top: 2.4em;
   margin-bottom: 0.7em;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 }
 .blog-prose h3 {
-  font-size: 1.22rem;
+  font-size: 1.18rem;
   font-weight: 700;
   margin-top: 1.8em;
   margin-bottom: 0.5em;
+  letter-spacing: -0.02em;
 }
 .blog-prose strong, .blog-prose b {
   font-weight: 700;
-  color: hsl(var(--foreground));
 }
-/* 드롭캡 리드 문단 (:::lead) — 팩트풀니스 챕터 오프닝 스타일 */
+/* 드롭캡 리드 문단 (:::lead) */
 .lead-para {
-  font-family: var(--font-serif);
-  font-size: 1.18rem;
-  line-height: 1.8;
-  color: hsl(var(--foreground));
+  font-family: var(--font-noto-sans-kr), var(--font-sans);
+  font-size: 1.08rem;
+  line-height: 1.85;
   margin-bottom: 1.5em;
 }
 .lead-para::first-letter {
-  font-family: var(--font-serif);
-  font-size: 4em;
+  font-size: 3.5em;
   font-weight: 800;
   float: left;
   line-height: 0.78;
