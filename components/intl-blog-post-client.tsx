@@ -65,7 +65,7 @@ export default function IntlBlogPostClient({
   const contentRef = useRef<HTMLDivElement>(null);
   const pageUrl = `${SITE}${base}/${post.slug}`;
 
-  // 피드 등에서 진입 시 스크롤 상단 고정
+  // ?? ??? ?? ? ??? ?? ??
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "instant" });
   }, []);
@@ -125,8 +125,8 @@ export default function IntlBlogPostClient({
                 )}
               </div>
 
-              {/* H1 제목 먼저 → 텍스트 LCP 확보 (이미지 LCP보다 빠름) */}
-              <h1 className="text-3xl md:text-4xl font-serif font-extrabold text-foreground leading-tight mb-4">
+              {/* H1 ?? ?? ? ??? LCP ?? (??? LCP?? ??) */}
+              <h1 className="text-3xl md:text-4xl font-extrabold text-foreground leading-tight mb-4">
                 {post.title}
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed">{post.desc}</p>
@@ -161,7 +161,7 @@ export default function IntlBlogPostClient({
               >
                 <div className="flex items-start gap-3">
                   <span className="flex-shrink-0 mt-0.5 inline-flex items-center gap-1 text-[11px] font-bold uppercase tracking-widest text-primary" aria-hidden="true">
-                    💡 {t.quickAnswer}
+                    ?? {t.quickAnswer}
                   </span>
                 </div>
                 <p className="mt-2 text-base md:text-lg text-foreground leading-relaxed font-medium">
@@ -174,7 +174,7 @@ export default function IntlBlogPostClient({
               <details className="xl:hidden group bg-card border border-border rounded-2xl mb-6">
                 <summary className="flex items-center justify-between gap-3 px-6 py-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden rounded-2xl hover:bg-card/70 transition-colors">
                   <span className="flex items-center gap-2.5 text-xs font-bold uppercase tracking-widest text-primary">
-                    📚 {t.contents} <span className="text-muted-foreground/60 font-normal normal-case tracking-normal">({headings.length})</span>
+                    ?? {t.contents} <span className="text-muted-foreground/60 font-normal normal-case tracking-normal">({headings.length})</span>
                   </span>
                   <ChevronDown className="w-5 h-5 text-primary transition-transform duration-200 group-open:rotate-180" aria-hidden="true" />
                 </summary>
@@ -220,7 +220,7 @@ export default function IntlBlogPostClient({
 
             {related.length > 0 && (
               <div className="mt-12">
-                <h2 className="text-xl font-serif font-bold text-foreground mb-5">{t.related}</h2>
+                <h2 className="text-xl font-bold text-foreground mb-5">{t.related}</h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   {related.map((r) => (
                     <Link key={r.slug} href={`${base}/${r.slug}`}>
