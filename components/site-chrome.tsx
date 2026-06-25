@@ -2,18 +2,10 @@
 
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { localeFromPath, HTML_LANG, dirForLocale } from "@/lib/intl";
+import { localeFromPath, HTML_LANG, NAV_CTA, NAV_HOME_FEED, dirForLocale } from "@/lib/intl";
 import BlogTopBar from "@/components/blog-top-bar";
 
 const LOCALE_FEED_ROOTS = ["/en", "/ja", "/zh", "/es", "/ar", "/pt", "/id", "/ms", "/vi", "/hi", "/de", "/tr"];
-
-/** 로케일별 커뮤니티 CTA 레이블 */
-const NAV_CTA: Record<string, string> = {
-  en: "Community →", ja: "コミュニティ →", zh: "社区 →",
-  es: "Comunidad →", de: "Community →", ar: "المجتمع →",
-  tr: "Topluluk →", vi: "Cộng đồng →", id: "Komunitas →",
-  ms: "Komuniti →", pt: "Comunidade →", hi: "समुदाय →",
-};
 
 /**
  * 피드 앱 라우트 — 자체 헤더를 가지므로 SiteHeader/SiteFooter 불필요
@@ -68,8 +60,9 @@ export function SiteHeader() {
   if (isFeedAppRoute(pathname)) return null;
   // 나머지 모든 페이지(계산기·퀴즈·족보·규칙 등)는 BlogTopBar 공용 컴포넌트
   const homeHref = locale ? `/${locale}` : "/";
-  const ctaLabel = locale ? (NAV_CTA[locale] ?? "Community") : "커뮤니티";
-  return <BlogTopBar homeHref={homeHref} communityLabel={ctaLabel} />;
+  const ctaLabel = locale ? NAV_CTA[locale] : "커뮤니티";
+  const homeFeedLabel = locale ? NAV_HOME_FEED[locale] : "홈피드";
+  return <BlogTopBar homeHref={homeHref} homeFeedLabel={homeFeedLabel} communityLabel={ctaLabel} />;
 }
 
 /** 옛 사이트 푸터 — 전면 피드 전환으로 완전 제거 */

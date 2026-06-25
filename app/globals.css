@@ -142,36 +142,75 @@
 /* ── 블로그 본문 타이포그래피 (Noto Sans KR — 산세리프, 화면 최적) ── */
 .blog-prose {
   font-family: var(--font-noto-sans-kr), var(--font-sans);
-  font-size: 1.05rem;
-  line-height: 1.9;
+  font-size: 0.95rem;
+  line-height: 1.85;
   letter-spacing: -0.01em;
   word-break: keep-all;
   color: #111111;
 }
+@media (min-width: 640px) {
+  .blog-prose {
+    font-size: 1.05rem;
+    line-height: 1.9;
+  }
+}
 .blog-prose p {
-  font-size: 1.05rem;
-  line-height: 1.9;
-  margin-bottom: 1.4em;
+  font-size: 0.95rem;
+  line-height: 1.85;
+  margin-bottom: 1.2em;
   color: #111111;
+}
+@media (min-width: 640px) {
+  .blog-prose p {
+    font-size: 1.05rem;
+    line-height: 1.9;
+    margin-bottom: 1.4em;
+  }
 }
 .blog-prose li {
-  font-size: 1.02rem;
-  line-height: 1.8;
+  font-size: 0.93rem;
+  line-height: 1.75;
   color: #111111;
 }
+@media (min-width: 640px) {
+  .blog-prose li {
+    font-size: 1.02rem;
+    line-height: 1.8;
+  }
+}
 .blog-prose h2 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 800;
-  margin-top: 2.4em;
-  margin-bottom: 0.7em;
+  margin-top: 2rem;
+  margin-bottom: 0.65em;
   letter-spacing: -0.03em;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  line-height: 1.4;
+  scroll-margin-top: 68px;
+}
+@media (min-width: 640px) {
+  .blog-prose h2 {
+    font-size: 1.5rem;
+    margin-top: 2.4em;
+  }
 }
 .blog-prose h3 {
-  font-size: 1.18rem;
-  font-weight: 700;
-  margin-top: 1.8em;
+  font-size: 1.05rem;
+  font-weight: 800;
+  margin-top: 1.5em;
   margin-bottom: 0.5em;
   letter-spacing: -0.02em;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  line-height: 1.45;
+  scroll-margin-top: 68px;
+}
+@media (min-width: 640px) {
+  .blog-prose h3 {
+    font-size: 1.18rem;
+    margin-top: 1.8em;
+  }
 }
 .blog-prose strong, .blog-prose b {
   font-weight: 700;
@@ -428,4 +467,72 @@ mark.brush-hl-blue::before {
       rgba(99,179,237,0.40) 78%, rgba(99,179,237,0.10) 100%);
   filter: url(#rough-brush);
   z-index: -1;
+}
+
+/* renderMarkdown에서 직접 부여하는 H2 클래스 */
+.blog-h2 {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  line-height: 1.4;
+  font-weight: 800 !important;   /* Tailwind utility font-bold(700) 덮어쓰기 */
+  scroll-margin-top: 68px;       /* sticky topbar 높이 보정 */
+}
+
+/* ── 모바일 블로그 최적화 ─────────────────────────────────── */
+
+/* 형광펜 하이라이트: 모바일에서 줄 넘김 시 padding 축소 */
+@media (max-width: 639px) {
+  mark.brush-hl,
+  mark.brush-hl-red,
+  mark.brush-hl-green,
+  mark.brush-hl-blue {
+    padding: 0.08em 0.25em 0.12em 0.2em;
+  }
+}
+
+/* ── 모바일 H2 섹션 구분 레이아웃 ────────────────────────
+ * 모바일에서 새 섹션 시작이 명확히 보이도록:
+ * - 위쪽에 골드 accent 바 + 여백
+ * - 기존 밑줄 유지 (double-border 구조로 섹션 구분)
+ * ─────────────────────────────────────────────────────── */
+@media (max-width: 639px) {
+  .blog-h2 {
+    margin-top: 2rem !important;
+    padding-top: 1.2rem;
+    border-top: 2px solid hsl(var(--border));
+  }
+  /* 첫 번째 H2는 위쪽 구분선 불필요 */
+  .blog-prose .blog-h2:first-of-type {
+    border-top: none;
+    padding-top: 0;
+    margin-top: 0.5rem !important;
+  }
+}
+
+/* 블로그 표 — 모바일에서 셀 패딩 줄여 칸 구도 유지 */
+@media (max-width: 639px) {
+  .blog-prose table th,
+  .blog-prose table td {
+    padding: 7px 10px !important;
+    font-size: 0.78rem;
+    white-space: normal;
+    word-break: keep-all;
+  }
+}
+
+/* FAQ 카드 answer 들여쓰기 — 모바일 좁은 화면에서 48px→16px */
+@media (max-width: 639px) {
+  .blog-faq-answer {
+    padding-left: 16px !important;
+  }
+}
+
+/* :::compare / :::handtable 모바일 가로 스크롤 컨테이너 */
+.blog-scroll-x {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 28px 0;
+}
+.blog-scroll-x > div {
+  min-width: 300px;
 }

@@ -7,11 +7,13 @@ const GOLD = "#d4af37";
 
 interface BlogTopBarProps {
   homeHref?: string;         // 홈피드 링크 (기본: "/")
+  homeFeedLabel?: string;    // 홈피드 버튼 레이블 (기본: "홈피드")
   communityLabel?: string;   // 커뮤니티 버튼 레이블 (기본: "커뮤니티")
 }
 
 export default function BlogTopBar({
   homeHref = "/",
+  homeFeedLabel = "홈피드",
   communityLabel = "커뮤니티",
 }: BlogTopBarProps) {
   return (
@@ -37,7 +39,7 @@ export default function BlogTopBar({
         <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.8}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
         </svg>
-        홈피드
+        {homeFeedLabel}
       </Link>
 
       {/* 가운데: 로고 */}
