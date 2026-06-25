@@ -8,6 +8,8 @@
 ## 2026-06-24
 
 ### 작업 내용
+- wsop-2026-tournament-guide 검수: trailing slash 5곳, FAQ A. 접두어, 종료 이벤트(#50·#63), keepImagesInBody, 사실오류(딜러→서빙직원) 수정
+- 피드 PAGE_TEASERS 누락 페이지 4개 추가 (tournaments/rules/strategy/holdem-practice) + 기존 6개 trailing slash 제거
 - 블로그 본문 폰트 EB Garamond → Noto Sans KR 변경, 텍스트 색상 #111111(검정) 고정
 - 이벤트 탭 추첨 일정 안내 추가: "매주 일요일 오후 7시 KST 비트코인 블록 해시 자동 추첨" (12개 언어 + 현지 시간 자동 변환)
 - 블로그 진입 시 스크롤 상단 강제 이동 버그 수정 (피드 클릭 시 중간부터 보이던 문제)
