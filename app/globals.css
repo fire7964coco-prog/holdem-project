@@ -16,16 +16,10 @@
   --font-sans: var(--font-inter), var(--font-noto-sans-kr), -apple-system, BlinkMacSystemFont,
     'system-ui', Roboto, 'Helvetica Neue', 'Segoe UI',
     'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
-  /* EB Garamond → 팩트풀니스 스타일 본문 세리프 (Adobe Caslon Pro 계열)
-   * 폴백 순서:
-   *  1) EB Garamond — Next.js self-hosted, 모든 기기 동일 (주 서체)
-   *  2) Lora        — Next.js self-hosted 세리프 (로딩 전 보조)
-   *  3) Palatino Linotype / Book Antiqua — Windows 내장 세리프
-   *  4) Palatino    — macOS/iOS 내장, Caslon과 유사한 올드스타일
-   *  5) Georgia     — 모든 기기 내장, 화면 최적화 세리프
-   *  6) Noto Sans KR — 한글 폴백 (산세리프이나 가독성 최우선)
-   */
-  --font-serif: var(--font-eb-garamond), var(--font-lora), 'Palatino Linotype', 'Book Antiqua', Palatino, Georgia, var(--font-noto-sans-kr), serif;
+  /* font-serif → sans-serif 통일 (EB Garamond 제거, 한글 혼용 굵기 불균일 문제 해결) */
+  --font-serif: var(--font-inter), var(--font-noto-sans-kr), -apple-system, BlinkMacSystemFont,
+    'system-ui', Roboto, 'Helvetica Neue', 'Segoe UI',
+    'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
 
   /* ── 코어 시맨틱 토큰 ─────────────────────────────── */
   --color-background: hsl(var(--background));
