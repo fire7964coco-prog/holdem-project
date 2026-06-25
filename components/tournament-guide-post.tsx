@@ -122,7 +122,7 @@ export default function TournamentGuidePost({
               </span>
               <span className="text-xs text-muted-foreground">{post.date} 업데이트</span>
             </div>
-            <h1 className="text-3xl md:text-4xl font-serif font-black text-foreground leading-tight mb-3">
+                <h1 className="text-3xl md:text-4xl font-serif font-extrabold text-foreground leading-tight mb-3">
               {post.title}
             </h1>
           </div>

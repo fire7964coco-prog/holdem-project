@@ -513,7 +513,7 @@ export default function BlogPost({
 
               <div className="text-6xl mb-6">{post.emoji}</div>
 
-              <h1 className="text-3xl md:text-4xl font-serif font-black text-foreground leading-tight mb-4">
+              <h1 className="text-3xl md:text-4xl font-serif font-extrabold text-foreground leading-tight mb-4">
                 {post.title}
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed">{post.desc}</p>

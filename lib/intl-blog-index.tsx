@@ -38,7 +38,7 @@ export function IntlBlogIndex({ locale }: { locale: SecondaryLocale }) {
       />
       <div className="max-w-4xl mx-auto px-4 py-16">
       <header className="mb-10">
-        <h1 className="text-3xl md:text-4xl font-serif font-black text-foreground mb-3">{t.blogTitle}</h1>
+        <h1 className="text-3xl md:text-4xl font-serif font-extrabold text-foreground mb-3">{t.blogTitle}</h1>
         <p className="text-lg text-muted-foreground">{t.blogIntro}</p>
       </header>
 
