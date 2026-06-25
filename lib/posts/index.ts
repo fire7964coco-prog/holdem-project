@@ -29,7 +29,6 @@ import { POST as wsop2026TournamentGuide } from "./wsop-2026-tournament-guide";
 import { POST as holdemBankrollManagement } from "./holdem-bankroll-management";
 import { POST as holdemCommunityEventGuide } from "./holdem-community-event-guide";
 export const NEW_POSTS: Post[] = [
-  holdemCommunityEventGuide,
   holdemBankrollManagement,
   pokerstarsApptSatelliteGuide,
   aptJeju2026FallGuide,
@@ -58,4 +57,5 @@ export const NEW_POSTS: Post[] = [
   holdemPubLegal,
   holdemPubFirstVisitGuide,
   holdemBubbleStrategy,
+  holdemCommunityEventGuide,
 ];
