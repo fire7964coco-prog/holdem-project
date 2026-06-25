@@ -392,7 +392,6 @@ mark.brush-hl-green,
 mark.brush-hl-blue {
   background: none;
   color: var(--foreground);
-  font-weight: 700;
   position: relative;
   padding: 0.12em 0.4em 0.18em 0.35em;
   border-radius: 0;
