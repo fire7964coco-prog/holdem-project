@@ -216,15 +216,6 @@
   line-height: 1.85;
   margin-bottom: 1.5em;
 }
-.lead-para::first-letter {
-  font-size: 3.5em;
-  font-weight: 800;
-  float: left;
-  line-height: 0.78;
-  margin-right: 0.1em;
-  margin-top: 0.08em;
-  color: hsl(var(--primary));
-}
 
 /* ── 럭셔리 스크롤바 ────────────────────────────────── */
 ::-webkit-scrollbar {
