@@ -5,6 +5,18 @@
 
 ---
 
+## 2026-06-25
+
+### 작업 내용
+- 폰트 대규모 통일: font-serif → sans-serif (Inter + Noto Sans KR), brush-hl font-weight 제거, Noto Sans KR 800/900 추가, 본문 bold font-semibold로 조정
+- 신규 포스트 발행: holdem-community-event-guide — 홀덤 커뮤니티 추천 + 주간 이벤트 안내
+
+### 발행 현황
+- **한국어 포스트: 50개** (목표 달성 🎯)
+- 영어 포스트: 20개
+
+---
+
 ## 2026-06-24
 
 ### 작업 내용
