@@ -174,7 +174,7 @@ export function renderMarkdown(content: string): string {
     .replace(/==g:(.+?)==/g, '<mark class="brush-hl brush-hl-green">$1</mark>')
     .replace(/==b:(.+?)==/g, '<mark class="brush-hl brush-hl-blue">$1</mark>')
     .replace(/==(.+?)==/g, '<mark class="brush-hl">$1</mark>')
-    .replace(/\*\*(.+?)\*\*/g, '<strong class="font-bold text-foreground">$1</strong>')
+    .replace(/\*\*(.+?)\*\*/g, '<mark class="brush-hl">$1</mark>')
     .replace(/\*(.+?)\*/g, '<em class="italic text-foreground/90">$1</em>')
     .replace(/!\[([^\]]*)\]\(([^)]+?)\s+"([^"]+)"\)/g, (_, alt, src, cap) => {
       const a = imgAttrs(src);
