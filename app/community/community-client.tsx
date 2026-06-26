@@ -555,8 +555,25 @@ export default function CommunityClient({
 
       const communityPosts: FeedPost[] = (postsRaw ?? []).map(toFeedPost);
 
+      // GSC 클릭 기준 상위 고정 (2026-06-26) — 이 순서대로 피드 최상단에 고정
+      const PINNED_IDS = [
+        "page:tournaments",
+        "blog:holdem-masters-7th-guide",
+        "blog:apt-incheon-2026-guide",
+        "blog:holdem-tiebreak-rules",
+        "blog:appt-korea-2026-guide",
+        "blog:pocket-kings-kk-strategy",
+      ];
+
       const allPosts = [...communityPosts, ...blogTeasers, ...PAGE_TEASERS].sort(
-        (a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
+        (a, b) => {
+          const ai = PINNED_IDS.indexOf(a.id);
+          const bi = PINNED_IDS.indexOf(b.id);
+          if (ai !== -1 && bi === -1) return -1;
+          if (ai === -1 && bi !== -1) return 1;
+          if (ai !== -1 && bi !== -1) return ai - bi;
+          return new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime();
+        }
       );
       setPosts(allPosts);
       setLoading(false);
