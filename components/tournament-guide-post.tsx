@@ -1,8 +1,8 @@
 "use client";
 
 import type { ReactNode } from "react";
-import Image from "next/image";
 import Link from "next/link";
+import CardThumb from "./card-thumb";
 import { ChevronLeft, ChevronRight, ChevronDown, Share2, Link2, MapPin, Calendar, DollarSign, AlertTriangle, BookOpen } from "lucide-react";
 import { FaXTwitter, FaFacebookF } from "react-icons/fa6";
 import type { Post } from "@/lib/posts";
@@ -256,25 +256,16 @@ export default function TournamentGuidePost({
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   {related.map(r => (
                     <Link key={r.slug} href={`/blog/${r.slug}`}>
-                      <div className="bg-card border border-border rounded-xl overflow-hidden hover:border-primary/40 hover:-translate-y-0.5 transition-all cursor-pointer group">
-                        {r.image ? (
-                          <div className="relative w-full h-36 bg-muted">
-                            <Image
-                              src={r.image}
-                              alt={r.imageAlt ?? r.title}
-                              fill
-                              sizes="(max-width: 768px) 100vw, 33vw"
-                              className="object-cover"
-                            />
+                      <div className="bg-card border border-border rounded-xl overflow-hidden hover:border-primary/40 hover:-translate-y-1 transition-all duration-300 cursor-pointer group h-full flex flex-col">
+                        <div className="h-36 bg-gradient-to-br from-[#0d2618] via-[#0a3320] to-[#071a10] flex items-center justify-center flex-shrink-0">
+                          <CardThumb slug={r.slug} />
+                        </div>
+                        <div className="p-4 flex flex-col flex-1">
+                          <div className="text-xs font-bold px-2 py-0.5 rounded-full bg-primary/15 text-primary border border-primary/20 self-start mb-2">{r.category}</div>
+                          <h3 className="text-sm font-bold text-foreground group-hover:text-primary transition-colors line-clamp-2 flex-1">{r.title}</h3>
+                          <div className="flex items-center justify-end text-xs text-primary font-semibold mt-3 pt-3 border-t border-border group-hover:gap-1 transition-all gap-0.5">
+                            읽기 <span>›</span>
                           </div>
-                        ) : (
-                          <div className="w-full h-36 bg-muted flex items-center justify-center text-4xl">
-                            {r.emoji}
-                          </div>
-                        )}
-                        <div className="p-4">
-                          <div className="text-xs text-muted-foreground mb-1">{r.category}</div>
-                          <h3 className="text-sm font-bold text-foreground group-hover:text-primary transition-colors line-clamp-2">{r.title}</h3>
                         </div>
                       </div>
                     </Link>
