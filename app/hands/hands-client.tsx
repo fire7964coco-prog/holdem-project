@@ -220,7 +220,7 @@ export default function Hands() {
         >
           <div className="mb-5 p-4 bg-primary/5 border border-primary/20 rounded-xl">
             <p className="text-sm text-muted-foreground mb-2">📖 족보 순서를 <strong className="text-foreground">왜 그렇게 외워야 하는지</strong> 확률과 함께 더 깊이 알고 싶다면</p>
-            <Link href="/blog/holdem-hand-rankings/" className="text-primary font-bold text-sm hover:underline">
+            <Link href="/blog/holdem-hand-rankings" className="text-primary font-bold text-sm hover:underline">
               → 홀덤 족보 순위 완전 정리 — 확률·보드 판단까지 한 번에 읽기
             </Link>
           </div>
