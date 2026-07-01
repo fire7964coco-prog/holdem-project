@@ -161,23 +161,42 @@ export default function PostCard({
     : `/blog/${post.blogSlug}`;
 
   if (isPageTeaser) {
+    const CL = getCardLabel(myLanguage);
     return (
-      <Link
-        href={post.pageHref!}
-        className="block mx-3 my-1.5 rounded-2xl overflow-hidden active:scale-[0.98] transition-transform"
-        style={{ background: "linear-gradient(135deg, #1a3a2a 0%, #1f4433 100%)", border: "1px solid rgba(212,175,55,0.28)" }}
+      <article
+        className="mx-3 mb-3 rounded-2xl overflow-hidden lg:hidden"
+        style={{ background: CARD, border: "1px solid rgba(212,175,55,0.25)" }}
       >
-        <div className="flex items-center gap-4 px-5 py-4">
-          <span className="text-3xl flex-shrink-0">{post.pageIcon ?? "📄"}</span>
-          <div className="flex-1 min-w-0">
-            <p className="text-[14px] font-extrabold leading-snug" style={{ color: "#f5f0e8" }}>{post.title}</p>
-            <p className="text-[12px] mt-1 line-clamp-1" style={{ color: "rgba(245,240,232,0.65)" }}>{post.content}</p>
+        <Link href={post.pageHref!} className="block">
+          <div className="flex items-center gap-2.5 px-4 pt-3.5 pb-2">
+            <div
+              className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0"
+              style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)" }}
+            >
+              <span style={{ fontSize: 14, lineHeight: 1 }}>{post.pageIcon ?? "📄"}</span>
+            </div>
+            <div className="flex-1 min-w-0">
+              <p className="text-[13px] font-bold" style={{ color: GOLD }}>HoldemMaster</p>
+              <p className="text-[10px] mt-0.5" style={{ color: TEXT_MUTED }}>가이드</p>
+            </div>
           </div>
-          <span className="text-[12px] font-bold px-3 py-1.5 rounded-xl flex-shrink-0 whitespace-nowrap" style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: "#0d1c14" }}>
-            {getCardLabel(myLanguage).goTo}
-          </span>
+          <div className="px-4 pb-1.5">
+            <p className="text-[17px] font-extrabold leading-snug" style={{ color: TEXT_PRIMARY }}>{post.title}</p>
+          </div>
+          <div className="px-4 pb-3">
+            <p className="text-[13.5px] leading-relaxed line-clamp-2" style={{ color: TEXT_BODY }}>{post.content}</p>
+          </div>
+        </Link>
+        <div className="px-4 py-3" style={{ borderTop: `1px solid ${DIVIDER}` }}>
+          <Link
+            href={post.pageHref!}
+            className="inline-flex items-center gap-1.5 text-sm font-bold px-4 py-2 rounded-xl active:scale-95 transition-transform"
+            style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: BG }}
+          >
+            {CL.goTo}
+          </Link>
         </div>
-      </Link>
+      </article>
     );
   }
 

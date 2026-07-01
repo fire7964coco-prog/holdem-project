@@ -27,6 +27,20 @@ import { CURRENT_EVENT_ID } from "@/lib/event-config";
 
 export type { FeedPost } from "./post-card";
 
+// 허브 페이지 목록 — 데스크탑 왼쪽 사이드바에 표시 (한국어 피드 전용)
+const HUB_PAGES = [
+  { href: "/tournaments",     icon: "🏆", label: "홀덤 대회 일정" },
+  { href: "/pub",             icon: "🍺", label: "내 근처 홀덤펍" },
+  { href: "/strategy",        icon: "⚡", label: "전략 가이드" },
+  { href: "/rules",           icon: "📋", label: "홀덤 규칙" },
+  { href: "/calculator",      icon: "🧮", label: "팟오즈 계산기" },
+  { href: "/ranking",         icon: "🃏", label: "족보 정리" },
+  { href: "/hand-chart",      icon: "📊", label: "핸드 차트" },
+  { href: "/quiz",            icon: "🎯", label: "실력 테스트" },
+  { href: "/glossary",        icon: "📖", label: "용어 사전" },
+  { href: "/holdem-practice", icon: "🎮", label: "홀덤 연습장" },
+] as const;
+
 export type CurrentUser = {
   id: string;
   nickname: string;
@@ -1151,6 +1165,32 @@ export default function CommunityClient({
               >
                 {L.writePost}
               </button>
+
+              {/* 허브 메뉴 — 한국어 피드에서만 표시 */}
+              {!pageLocale && (
+                <>
+                  <div style={{ borderTop: `1px solid ${BORDER}`, margin: "10px 0 6px" }} />
+                  <p
+                    className="text-[10px] font-bold tracking-widest uppercase px-3 mb-1"
+                    style={{ color: MUTED, fontFamily: FONT_SANS }}
+                  >
+                    홀덤 가이드
+                  </p>
+                  {HUB_PAGES.map((p) => (
+                    <Link
+                      key={p.href}
+                      href={p.href}
+                      className="flex items-center gap-2.5 px-3 py-2 rounded-lg text-[13px] transition-colors"
+                      style={{ color: MUTED, fontFamily: FONT_SANS }}
+                      onMouseEnter={(e) => (e.currentTarget.style.background = CARD)}
+                      onMouseLeave={(e) => (e.currentTarget.style.background = "transparent")}
+                    >
+                      <span style={{ fontSize: 14 }}>{p.icon}</span>
+                      <span>{p.label}</span>
+                    </Link>
+                  ))}
+                </>
+              )}
             </div>
           </aside>
 
