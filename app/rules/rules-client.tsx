@@ -13,7 +13,7 @@ const GAME_TILES = [
     desc: "텍사스 홀덤 포커를 가장 쉽게 즐기는 방법",
     cta: "LEARN TO PLAY",
     bg: "from-[#0d2818] via-[#1a4a2e] to-[#0d2818]",
-    href: "/rules/texas-holdem",
+    href: "/blog/holdem-rules",
   },
   {
     id: "omaha",
@@ -41,14 +41,14 @@ const GAME_SECTIONS = [
     title: "텍사스 홀덤 플레이 방법",
     game: "텍사스 홀덤",
     players: "2~10명",
-    href: "/rules/texas-holdem",
-    linkText: "텍사스 홀덤 규칙 전체 보기",
+    href: "/blog/holdem-rules",
+    linkText: "텍사스 홀덤 규칙 상세 가이드 보기",
     badge: "가장 인기",
     image: "/images/rules-texas-holdem.webp",
     imageAlt: "텍사스 홀덤 포커 테이블 — 커뮤니티 카드와 칩",
     paragraphs: [
-      "'포커계의 캐딜락'이라고도 불리는 텍사스 홀덤은 여러분이 가장 많이 접하게 될 포커 형식입니다. 온라인에서 가장 인기 있는 포커 게임이며, 홈 게임에서 친구들과 함께 플레이할 가능성도 가장 높은 게임입니다.",
-      "토너먼트 형식으로 플레이하든 링 게임 형식으로 플레이하든 기본적인 포커 규칙과 포커 핸드 순위는 변하지 않습니다. 대부분의 사람들이 '포커 하는 법을 알고 싶다'고 말할 때는 텍사스 홀덤의 기본을 배우고 싶다는 뜻입니다.",
+      "'포커계의 캐딜락'이라고도 불리는 텍사스 홀덤은 세 게임 중 가장 인기 있고, 전략 깊이도 가장 높습니다. 홀카드 2장만으로 상대를 읽어야 하기 때문에 포지션과 베팅 패턴이 승패를 좌우합니다.",
+      "블라인드 구조, 4라운드 베팅(프리플랍→플랍→턴→리버), 사이드팟 규칙까지 — 한 판 흐름 전체를 블로그 상세 가이드에서 순서대로 확인할 수 있습니다.",
     ],
     tip: {
       title: "홀덤마스터 입문 팁",
@@ -151,7 +151,7 @@ export default function Rules() {
       "description": "텍사스 홀덤, 오마하, 세븐 카드 스터드 포커 게임 방법을 초보자도 이해할 수 있도록 완벽하게 정리했습니다. 포커 공통 규칙, 베팅 방식, 핸드 순위까지 한 페이지에서 확인하세요.",
       "author": { "@type": "Organization", "name": "홀덤마스터" },
       "publisher": { "@type": "Organization", "name": "홀덤마스터", "url": "https://www.holdemmaster.com" },
-      "dateModified": "2026-03-24",
+      "dateModified": "2026-07-01",
       "keywords": "포커 규칙, 텍사스 홀덤 규칙, 오마하 포커, 세븐 카드 스터드, 포커 하는법, 포커 초보, 포커 베팅, 포커 핸드 순위",
       "image": "https://www.holdemmaster.com/images/rules-texas-holdem.webp",
     },
@@ -190,7 +190,7 @@ export default function Rules() {
             포커 규칙 완벽 가이드
           </h1>
           <div className="flex items-center gap-4 text-sm text-muted-foreground border-b border-border pb-4">
-            <span className="flex items-center gap-1.5"><Calendar className="w-3.5 h-3.5" />최종 업데이트: 2026년 3월 24일</span>
+            <span className="flex items-center gap-1.5"><Calendar className="w-3.5 h-3.5" />최종 업데이트: 2026년 7월 1일</span>
             <span className="flex items-center gap-1.5"><Clock className="w-3.5 h-3.5" />7분 읽기</span>
           </div>
         </motion.div>
@@ -443,14 +443,18 @@ export default function Rules() {
               <span className="w-6 h-6 rounded-full bg-primary/20 border border-primary/40 text-primary text-xs flex items-center justify-center font-bold">4</span>
               액션 (베팅 행동)
             </h3>
-            <p className="text-sm text-muted-foreground mb-4">포커 게임 전반에 걸쳐 사용되는 행동(액션) 용어들입니다. 모든 포커 변형 게임에서 공통으로 사용됩니다.</p>
-            <div className="space-y-2">
+            <p className="text-sm text-muted-foreground mb-4">모든 포커 변형 게임에서 공통으로 사용되는 5가지 행동입니다.</p>
+            <div className="flex flex-wrap gap-2 mb-3">
               {ACTIONS.map((action) => (
-                <div key={action.name} className="flex items-start gap-3 bg-card border border-border rounded-lg px-4 py-3">
-                  <span className={`font-bold text-sm ${action.color} shrink-0 w-32`}>{action.name}</span>
-                  <span className="text-sm text-muted-foreground">{action.desc}</span>
-                </div>
+                <span key={action.name} className={`text-sm font-semibold px-3 py-1 rounded-full bg-card border border-border ${action.color}`}>
+                  {action.name}
+                </span>
               ))}
+            </div>
+            <div className="mt-2 text-right">
+              <Link href="/blog/holdem-rules#베팅" className="text-sm text-primary hover:underline inline-flex items-center gap-1">
+                각 액션 조건·예시 상세 보기 <ChevronRight className="w-3 h-3" />
+              </Link>
             </div>
           </div>
 
@@ -460,20 +464,19 @@ export default function Rules() {
               <span className="w-6 h-6 rounded-full bg-primary/20 border border-primary/40 text-primary text-xs flex items-center justify-center font-bold">5</span>
               베팅 라운드
             </h3>
-            <p className="text-sm text-muted-foreground mb-4">홀덤이나 오마하처럼 커뮤니티 카드를 사용하는 게임(플랍 게임)에서 베팅 라운드는 다음과 같이 구성됩니다.</p>
-            <div className="flex flex-col sm:flex-row gap-2">
+            <p className="text-sm text-muted-foreground mb-4">홀덤·오마하 같은 플랍 게임은 4라운드로 진행됩니다.</p>
+            <div className="flex flex-col sm:flex-row gap-2 mb-3">
               {BETTING_ROUNDS.map((round, i) => (
-                <div key={round.name} className="flex-1 bg-card border border-border rounded-xl p-4">
-                  <div className="text-xs font-bold text-primary/60 mb-1">{i + 1}번째</div>
+                <div key={round.name} className="flex-1 bg-card border border-border rounded-xl px-4 py-3 text-center">
+                  <div className="text-xs font-bold text-primary/60 mb-0.5">{i + 1}번째</div>
                   <div className="font-bold text-foreground text-sm">{round.name}</div>
-                  <div className="text-xs text-muted-foreground/60 mb-1">{round.eng}</div>
-                  <p className="text-xs text-muted-foreground leading-relaxed">{round.desc}</p>
+                  <div className="text-xs text-muted-foreground/60">{round.eng}</div>
                 </div>
               ))}
             </div>
-            <div className="mt-3 text-right">
-              <Link href="/rules/texas-holdem" className="text-sm text-primary hover:underline inline-flex items-center gap-1">
-                텍사스 홀덤 진행 순서 전체 보기 <ChevronRight className="w-3 h-3" />
+            <div className="mt-2 text-right">
+              <Link href="/blog/holdem-rules" className="text-sm text-primary hover:underline inline-flex items-center gap-1">
+                텍사스 홀덤 한 판 흐름 상세 가이드 <ChevronRight className="w-3 h-3" />
               </Link>
             </div>
           </div>
@@ -505,9 +508,9 @@ export default function Rules() {
           <h2 className="text-2xl font-serif font-bold text-foreground mb-3">지금 바로 포커를 시작해보세요</h2>
           <p className="text-muted-foreground mb-6">텍사스 홀덤부터 차근차근 — 가장 인기 있는 포커 게임의 상세 규칙을 확인하세요.</p>
           <div className="flex flex-wrap gap-3 justify-center">
-            <Link href="/rules/texas-holdem"
+            <Link href="/blog/holdem-rules"
               className="inline-flex items-center gap-1.5 bg-primary text-black font-semibold rounded-full px-6 py-2.5 hover:bg-primary/90 transition-colors">
-              텍사스 홀덤 시작하기 <ChevronRight className="w-4 h-4" />
+              텍사스 홀덤 규칙 완전 정복 <ChevronRight className="w-4 h-4" />
             </Link>
             <Link href="/hands"
               className="inline-flex items-center gap-1.5 border border-border text-foreground font-semibold rounded-full px-6 py-2.5 hover:border-primary/50 transition-colors">
