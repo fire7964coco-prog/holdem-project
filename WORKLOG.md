@@ -3,6 +3,35 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-01
+### 작업 내용
+
+#### P2 필라 포스트 발행
+- `holdem-rules` 발행 — 텍사스 홀덤 규칙 완전 정복 (18분, 이미지 4개, FAQ 6개)
+  - "홀덤 룰" SERP Top6 경쟁 분석 캔버스 작성 (holdem-rules-serp-analysis)
+  - 번 카드(Burn Card) 설명 + 포지션 중요성 추가
+  - 히어로 이미지 교체: 딜러버튼·SB·BB 위치·행동순서 인포그래픽 (54KB)
+
+#### SEO 구조 개선 — 앱 페이지 카니발라이제이션 해소
+- `/rules/texas-holdem`: **noindex** 추가 + 하단에 `/blog/holdem-rules` 링크 추가
+- `/rules`: 메타 타이틀·설명 추가 ("포커 게임 종류별 규칙 허브"로 차별화)
+- `/rules`: 텍사스 홀덤 섹션 내용 차별화, 모든 texas-holdem 링크 → `/blog/holdem-rules` 교체
+- `/rules`: 액션·베팅라운드 섹션 간략화 (상세 설명 제거 → 블로그 링크)
+- `/hands`: **noindex** 추가, trailing slash 버그 수정
+
+### 발행 현황
+- 한국어 총 포스트: **51개** (필라 포스트: 3개 — holdem-hand-rankings, holdem-probability, holdem-rules)
+- 영어 포스트: 20개
+
+### 앱 페이지 색인 현황
+| 페이지 | 구글 색인 | 비고 |
+|--------|----------|------|
+| `/rules` | ✅ 색인 | "포커 게임 종류" 허브 |
+| `/rules/omaha` | ✅ 색인 | 블로그 없음, 18위 |
+| `/rules/seven-card-stud` | ✅ 색인 | 블로그 없음 |
+| `/rules/texas-holdem` | ❌ noindex | `/blog/holdem-rules`로 역할 이전 |
+| `/hands` | ❌ noindex | `/blog/holdem-hand-rankings`로 역할 이전 |
+
 ---
 
 ## 2026-06-25

@@ -6,7 +6,7 @@
 ---
 
 ## 📅 마지막 작업일
-2026-06-25 (데스크탑 Cursor 세션)
+2026-07-01 (데스크탑 Cursor 세션)
 
 ---
 
@@ -17,118 +17,57 @@
 - 커뮤니티 기능(피드·채팅·이벤트·다국어·로그인): 전부 완성·배포됨 → 더 만들 것 없음
 - 핵심 작업: **구글 1페이지 달성**을 위한 콘텐츠 품질 향상 + 신규 포스트 발행
 
-### 현재 발행 현황 (정확한 수치)
-- **한국어 블로그: 50개** (`lib/posts.ts` LEGACY 21개 + `lib/posts/` NEW 29개) ✅ 목표 달성
+### 현재 발행 현황
+- **한국어 블로그: 51개** (`lib/posts.ts` LEGACY 21개 + `lib/posts/` NEW 30개)
 - **영어 블로그: 20개** (`lib/posts-en/`)
-
-> ⚠️ WORKLOG 일부 오래된 기록에 "총 포스트 29개" 등의 오기가 있음. 실제 수치는 위가 정확.
-
----
-
-## 🔥 이번 세션(2026-06-25) 작업 내용
-
-### 폰트 대규모 정리
-1. **Inter(Threads 스타일) 적용** — `.blog-prose` 폰트를 Noto Sans KR → Inter 우선으로 변경
-2. **font-serif 완전 제거** — `--font-serif` CSS 변수를 Inter+Noto Sans KR 동일하게 덮어씀 (EB Garamond 제거)
-   - 이유: 한글이 EB Garamond 폴백 시 900 weight 합성 → "뜻", "닙" 같은 복잡한 글자가 뭉침
-3. **Noto Sans KR 800/900 weight 추가 로드** — 제목 한글 균일 렌더
-4. **블로그 h1 제목 font-black(900) → font-extrabold(800)** 변경
-5. **brush-hl(==강조==) font-weight:700 제거** — 형광펜은 색만, 굵기 없음
-6. **본문 \*\*bold\*\* → font-semibold(600)** — 이전보다 덜 두드러짐
-7. **lead-para 드롭캡(::first-letter) 제거** — "처", "홀" 첫 글자가 무식하게 크던 문제
-
-### 포스트 발행
-8. **holdem-community-event-guide 발행** — 한국어 50번째 포스트 🎯
-   - 키워드: 홀덤 커뮤니티 추천
-   - 내용: 커뮤니티 소개 + 매주 일요일 비트코인 블록해시 추첨 이벤트 안내
-   - 피드 하단 배치 (date: 2026-01-01)
-   - 상금 테이블: 3개/4개/5개 맞추면 5만/30만/100만원 기프트콘
+- **필라 포스트 발행 현황**: holdem-hand-rankings(P1) ✅ · holdem-probability(P?) ✅ · holdem-rules(P2) ✅
 
 ---
 
-## 🔥 이전 세션(2026-06-24) 오후 추가 작업
+## 🔥 이번 세션(2026-07-01) 작업 내용
 
-1. **블로그 본문 폰트 변경**: EB Garamond(세리프, 번짐) → **Noto Sans KR** (구글폰트 산세리프, 선명)
-   - `app/globals.css` `.blog-prose` 폰트·색상·자간 수정
-   - 본문 텍스트 색상 `#111111` (검정)으로 고정
+### 1. P2 필라 포스트 발행 (`holdem-rules`)
+- 18분 분량, 이미지 4개, FAQ 6개, 내부링크 6개
+- 번 카드(Burn Card) 설명 + 포지션 중요성 추가
+- 히어로 이미지: 딜러버튼·SB·BB 위치·행동순서 인포그래픽으로 교체 (54KB)
+- "홀덤 룰" SERP Top6 경쟁 분석 → 콘텐츠 품질 우세, 도메인 권위만 부족
 
-2. **이벤트 탭 추첨 일정 안내 추가**: 상금 표 아래 "매주 일요일 오후 7시 KST 비트코인 블록 해시 자동 추첨" 박스
-   - `event-tab.tsx`: 12개 언어 `drawSchedule` 라벨 + `EventLocalDrawTime` 컴포넌트 (KST 아닌 경우 현지 시간 자동 변환)
-   - `community-client.tsx`: 데스크탑 사이드바 이벤트 배너에도 동일 추가 + `LocalDrawTime` 컴포넌트
+### 2. SEO 구조 개선 — 앱 페이지 카니발라이제이션 해소
+- `/rules/texas-holdem` → **noindex** (블로그와 100% 키워드 겹침)
+- `/hands` → **noindex** (`/blog/holdem-hand-rankings`와 겹침)
+- `/rules` → 메타 추가, 텍사스 홀덤 내용 차별화, 모든 링크 → `/blog/holdem-rules`로 교체
+- trailing slash 버그 수정 (`/blog/holdem-hand-rankings/` → `/blog/holdem-hand-rankings`)
 
-3. **블로그 진입 시 스크롤 상단 강제 이동** (피드에서 클릭 시 중간부터 보이던 버그)
-   - `blog-post-client.tsx`, `intl-blog-post-client.tsx` 에 `useEffect(() => window.scrollTo(0,0), [])` 추가
-
-4. **모바일 피드 무한스크롤 구현**
-   - `community-client.tsx`: `PAGE_SIZE=20`, `IntersectionObserver`로 Supabase 커뮤니티 글 페이지네이션
-   - `rootMargin: "0px 0px 400px 0px"` — 바닥 400px 위에서 선제 로드 (딜레이 없음)
-   - ⚠️ **현재 블로그 티저(48개)는 정적이라 여전히 한 번에 로드됨** → 효과는 커뮤니티 글 20개+ 쌓이면 체감
-
----
-
-## 🔥 이전 세션(2026-06-24)에 한 일
-
-1. **`holdem-bankroll-management` 신규 포스트 발행** (영어 스타일 표준 적용 1호 한국어 포스트)
-   - image/imageAlt/keepImagesInBody 필드 추가
-   - FAQ A. 접두어 추가, 인포그래픽 제거 → 실사 이미지 2개
-   - 빌드·배포 완료 (커밋: `5162eb8`)
-
-2. **`holdem-blind-meaning` 기존 포스트 스타일 표준화**
-   - image/imageAlt/keepImagesInBody 필드 추가
-   - 인포그래픽·일러스트 5개 제거 → 실사 이미지 2개 (`holdem-blind-meaning-hero.webp`, `holdem-button-dealer-board.webp`)
-   - FAQ 7개 A. 접두어 추가
-   - 빌드·배포 완료 (커밋: `61041e4`)
-
-3. **Cursor 규칙 구조 재편** (`.cursorrules` 분리)
-   - `.cursorrules`: 565줄 → 90줄 핵심만 유지
-   - `.cursor/rules/posting.mdc`: 포스팅 SEO·형식·체크리스트 (Auto Attached: `lib/posts/**`)
-   - `.cursor/rules/content.mdc`: 이미지·글쓰기·JSON-LD·다국어 (Auto Attached)
-   - `.cursor/rules/tech.mdc`: 성능·빌드·GSC·Supabase 인프라 (Auto Attached)
+### 앱 페이지 색인 현황 (최신)
+| 페이지 | 구글 색인 | 비고 |
+|--------|----------|------|
+| `/rules` | ✅ 색인 | "포커 게임 종류 허브", 384 노출/27.6위 |
+| `/rules/omaha` | ✅ 색인 | 96 노출/18위, 유지 |
+| `/rules/seven-card-stud` | ✅ 색인 | 유지 |
+| `/rules/texas-holdem` | ❌ noindex | `/blog/holdem-rules`로 역할 이전 |
+| `/hands` | ❌ noindex | `/blog/holdem-hand-rankings`로 역할 이전 |
 
 ---
 
 ## 🚀 다음 세션 할 일 (우선순위 순)
 
-1. **한국어 50개 달성 완료** → 다음 목표: **영어 포스트 보강** (현재 20개)
-   - EN 포스트 GSC 분석 후 클릭/노출 낮은 글 리라이팅 또는 신규 발행
+### 1순위 — 즉시 할 것
+- **GSC에서 `/blog/holdem-rules` URL 수동 색인 요청** (오늘 발행, 아직 크롤 안 됨)
+  - 구글 서치콘솔 → URL 검사 → "색인 생성 요청"
 
-2. **기존 글 전수 검수** (아직 안 한 것)
-   - 포커 핸드 예시 사실오류 확인 (7장→베스트5장 검산)
-   - trailing slash `/blog/x/` → `/blog/x` 정리
-   - 깨진/플레이스홀더 이미지 (1KB짜리) 찾아 교체
-   - 오래된 `updated` 날짜 갱신
+### 2순위 — 영어 포스트 SEO 강화
+- GSC 기준: `/en/blog/texas-holdem-rules-for-beginners` **노출 1,140 / 순위 54.7위** → 가장 임팩트 큰 개선 대상
+- 영어 포스트 20개 중 노출 많고 순위 낮은 것들 순서대로 리라이팅
 
-3. **블로그 티저도 무한스크롤에 포함** (선택 사항)
-   - 현재 블로그 티저 48개가 정적으로 한 번에 로드됨
-   - `filteredPosts`를 `displayedCount` state로 잘라서 스크롤 시 추가 표시하면 초기 로딩 더 빨라짐
+### 3순위 — 필라 포스트 추가 발행
+- P3: 홀덤 확률 (pillar 미발행 또는 보강 필요 확인)
+- P4~P11 필라 중 블로그 없는 것들 순차 발행
+- 참고: `canvases/content-roadmap.canvas.tsx`에 전체 목록 있음
 
-3. **기존 글 전수 검수** (아직 안 한 것)
-   - 포커 핸드 예시 사실오류 확인 (7장→베스트5장 검산)
-   - trailing slash `/blog/x/` → `/blog/x` 정리
-   - 깨진/플레이스홀더 이미지 (1KB짜리) 찾아 교체
-   - 오래된 `updated` 날짜 갱신
-
-4. **영어 SEO 강화** — EN 포스트 GSC 분석 후 보강 (`texas-holdem-rules` 완료, 19개 남음)
-
-5. **기존 한국어 포스트 스타일 표준화** — `holdem-bankroll-management`, `holdem-blind-meaning` 방식으로 나머지 포스트들도 순차 업데이트
-
----
-
-## 📐 포스트 형식 표준 (2026-06-24 확정)
-
-새 포스트 AND 기존 포스트 업데이트 시 모두 적용:
-
-```ts
-{
-  image: '/images/[slug]-hero.webp',      // 필수
-  imageAlt: '구체적 상황 묘사',            // 키워드 나열 금지
-  keepImagesInBody: true,                 // 항상 true
-  tldr: 'Quick Answer 한 문장',           // 💡 박스로 렌더됨
-  // FAQ 형식: **Q. ...** \n\n A. ...
-}
-```
-
-> 상세 규칙: `.cursor/rules/posting.mdc`
+### 4순위 — 기존 글 검수
+- trailing slash 전수 점검 (`/blog/x/` → `/blog/x`)
+- 1KB 플레이스홀더 이미지 찾아서 교체
+- 포커 핸드 예시 사실오류 검산 (CLAUDE.md §13 참조)
 
 ---
 
@@ -166,6 +105,7 @@
 | 기술·성능 규칙 | `.cursor/rules/tech.mdc` |
 | 커뮤니티 클라이언트 | `app/community/community-client.tsx` |
 | DB 스키마 | `supabase/schema.sql` |
+| 콘텐츠 로드맵 캔버스 | `canvases/content-roadmap.canvas.tsx` |
 
 ---
 
@@ -176,6 +116,7 @@
 - 커뮤니티 메인 = 실시간 채팅 (피드 + 채팅 + 이벤트)
 - 비로그인: 읽기 가능, 작성/전송은 로그인 필요
 - 이미지: webp 전용, 실사 사진만 (인포그래픽·일러스트 금지)
+- 앱 도구 페이지(`/hands`, `/rules/texas-holdem`)는 noindex → 블로그 필라가 키워드 단독 타깃
 
 ---
 
