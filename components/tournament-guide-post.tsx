@@ -1,6 +1,7 @@
 "use client";
 
 import type { ReactNode } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { ChevronLeft, ChevronRight, ChevronDown, Share2, Link2, MapPin, Calendar, DollarSign, AlertTriangle, BookOpen } from "lucide-react";
 import { FaXTwitter, FaFacebookF } from "react-icons/fa6";
@@ -254,11 +255,27 @@ export default function TournamentGuidePost({
                 <h2 className="text-xl font-serif font-bold text-foreground mb-5">관련 대회 가이드</h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   {related.map(r => (
-                    <Link key={r.slug} href={`/blog/${r.slug}/`}>
-                      <div className="bg-card border border-border rounded-xl p-4 hover:border-primary/40 hover:-translate-y-0.5 transition-all cursor-pointer group">
-                        <div className="text-3xl mb-3">{r.emoji}</div>
-                        <div className="text-xs text-muted-foreground mb-1">{r.category}</div>
-                        <h3 className="text-sm font-bold text-foreground group-hover:text-primary transition-colors line-clamp-2">{r.title}</h3>
+                    <Link key={r.slug} href={`/blog/${r.slug}`}>
+                      <div className="bg-card border border-border rounded-xl overflow-hidden hover:border-primary/40 hover:-translate-y-0.5 transition-all cursor-pointer group">
+                        {r.image ? (
+                          <div className="relative w-full h-36 bg-muted">
+                            <Image
+                              src={r.image}
+                              alt={r.imageAlt ?? r.title}
+                              fill
+                              sizes="(max-width: 768px) 100vw, 33vw"
+                              className="object-cover"
+                            />
+                          </div>
+                        ) : (
+                          <div className="w-full h-36 bg-muted flex items-center justify-center text-4xl">
+                            {r.emoji}
+                          </div>
+                        )}
+                        <div className="p-4">
+                          <div className="text-xs text-muted-foreground mb-1">{r.category}</div>
+                          <h3 className="text-sm font-bold text-foreground group-hover:text-primary transition-colors line-clamp-2">{r.title}</h3>
+                        </div>
                       </div>
                     </Link>
                   ))}
