@@ -466,6 +466,17 @@ export default function TexasHoldem() {
           </div>
         </section>
 
+        {/* 블로그 포스팅 유도 */}
+        <motion.div initial={false} whileInView={{ opacity: 1 }} viewport={{ once: true }}
+          className="bg-card border border-border rounded-2xl p-6">
+          <p className="text-sm text-muted-foreground mb-1">더 깊게 공부하고 싶다면</p>
+          <h3 className="text-lg font-bold text-foreground mb-2">홀덤 규칙 완전 정복 가이드 (블로그)</h3>
+          <p className="text-sm text-muted-foreground mb-4">사이드팟 계산 예시, 초보 오해 5가지, 실전 경험담까지 — 이 페이지보다 더 상세한 설명이 필요하다면 블로그 포스팅을 읽어보세요.</p>
+          <Link href="/blog/holdem-rules" className="inline-flex items-center gap-1.5 bg-primary text-black font-semibold rounded-full px-6 py-2.5 hover:bg-primary/90 transition-colors text-sm">
+            블로그 포스팅 읽기 <ChevronRight className="w-4 h-4" />
+          </Link>
+        </motion.div>
+
         {/* CTA */}
         <motion.div initial={false} whileInView={{ opacity: 1 }} viewport={{ once: true }}
           className="bg-gradient-to-br from-primary/10 via-primary/5 to-transparent border border-primary/20 rounded-2xl p-8 text-center">
