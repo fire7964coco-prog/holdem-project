@@ -10,7 +10,8 @@ import { POSTS } from "@/lib/posts";
 import { SITE } from "@/lib/site";
 import CommunityCTA from "@/components/community-cta";
 import BlogTopBar from "@/components/blog-top-bar";
-import { useState, useRef, useEffect } from "react";
+import Image from "next/image";
+import { useState, useRef, useEffect, useCallback } from "react";
 
 const PokerOddsCalculator = dynamic(
   () => import("@/components/poker-odds-calculator").then((m) => m.PokerOddsCalculator),
@@ -450,6 +451,7 @@ export default function BlogPost({
   const related = POSTS.filter((p) => p.slug !== post.slug && p.category === post.category).slice(0, 3);
 
   const [copied, setCopied] = useState(false);
+  const [showStickyNext, setShowStickyNext] = useState(false);
   const contentRef = useRef<HTMLDivElement>(null);
   const pageUrl = `${SITE}/blog/${post.slug}`;
 
@@ -457,6 +459,18 @@ export default function BlogPost({
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "instant" });
   }, []);
+
+  // 스크롤 60% 지나면 모바일 스티키 CTA 표시
+  const handleScroll = useCallback(() => {
+    const scrolled = window.scrollY;
+    const total = document.documentElement.scrollHeight - window.innerHeight;
+    setShowStickyNext(total > 0 && scrolled / total > 0.6);
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [handleScroll]);
 
   function copyLink() {
     navigator.clipboard.writeText(pageUrl).then(() => {
@@ -610,15 +624,17 @@ export default function BlogPost({
               }
             </article>
 
-            {/* Prev / Next Navigation */}
+            {/* Prev / Next Navigation — 강조형 CTA 버튼 */}
             <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-4">
               {prevPost ? (
-                <Link href={`/blog/${prevPost.slug}`}>
-                  <div className="flex items-center gap-3 p-4 bg-card border border-border rounded-xl hover:border-primary/40 transition-colors group cursor-pointer">
-                    <ChevronLeft className="w-5 h-5 text-primary flex-shrink-0" />
-                    <div>
-                      <div className="text-xs text-muted-foreground mb-0.5">이전 글</div>
-                      <div className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors line-clamp-2">
+                <Link href={`/blog/${prevPost.slug}`} className="group">
+                  <div className="flex items-center gap-4 p-5 rounded-2xl border border-border bg-card hover:border-primary/50 hover:-translate-y-0.5 transition-all cursor-pointer">
+                    <div className="w-9 h-9 rounded-full bg-card border border-border flex items-center justify-center flex-shrink-0 group-hover:border-primary/50 transition-colors">
+                      <ChevronLeft className="w-5 h-5 text-primary" />
+                    </div>
+                    <div className="min-w-0">
+                      <div className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground mb-1">← 이전 글</div>
+                      <div className="text-sm font-bold text-foreground group-hover:text-primary transition-colors line-clamp-2 leading-snug">
                         {prevPost.title}
                       </div>
                     </div>
@@ -627,31 +643,56 @@ export default function BlogPost({
               ) : <div />}
 
               {nextPost ? (
-                <Link href={`/blog/${nextPost.slug}`}>
-                  <div className="flex items-center gap-3 p-4 bg-card border border-border rounded-xl hover:border-primary/40 transition-colors group cursor-pointer text-right justify-end">
-                    <div>
-                      <div className="text-xs text-muted-foreground mb-0.5">다음 글</div>
-                      <div className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors line-clamp-2">
+                <Link href={`/blog/${nextPost.slug}`} className="group">
+                  <div
+                    className="flex items-center justify-between gap-4 p-5 rounded-2xl cursor-pointer transition-all hover:-translate-y-0.5 hover:shadow-lg"
+                    style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", boxShadow: "0 2px 12px rgba(212,175,55,0.25)" }}
+                  >
+                    <div className="min-w-0">
+                      <div className="text-[10px] font-bold uppercase tracking-widest mb-1" style={{ color: "rgba(13,28,20,0.6)" }}>다음 글 읽기 →</div>
+                      <div className="text-sm font-extrabold leading-snug line-clamp-2" style={{ color: "#0d1c14" }}>
                         {nextPost.title}
                       </div>
                     </div>
-                    <ChevronRight className="w-5 h-5 text-primary flex-shrink-0" />
+                    <div className="w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: "rgba(13,28,20,0.12)" }}>
+                      <ChevronRight className="w-5 h-5" style={{ color: "#0d1c14" }} />
+                    </div>
                   </div>
                 </Link>
               ) : <div />}
             </div>
 
-            {/* Related Posts */}
+            {/* Related Posts — 이미지 카드형 */}
             {related.length > 0 && (
               <div className="mt-12">
-                <h2 className="text-xl font-serif font-bold text-foreground mb-5">관련 글</h2>
+                <p className="text-[11px] font-bold uppercase tracking-widest text-muted-foreground mb-4">✦ 함께 읽으면 좋은 글</p>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   {related.map((r) => (
-                    <Link key={r.slug} href={`/blog/${r.slug}`}>
-                      <div className="bg-card border border-border rounded-xl p-4 hover:border-primary/40 hover:-translate-y-0.5 transition-all cursor-pointer group">
-                        <div className="text-3xl mb-3">{r.emoji}</div>
-                        <div className="text-xs text-muted-foreground mb-1">{r.category}</div>
-                        <h3 className="text-sm font-bold text-foreground group-hover:text-primary transition-colors line-clamp-2">{r.title}</h3>
+                    <Link key={r.slug} href={`/blog/${r.slug}`} className="group">
+                      <div className="bg-card border border-border rounded-2xl overflow-hidden hover:border-primary/40 hover:-translate-y-1 transition-all cursor-pointer h-full flex flex-col">
+                        {r.image ? (
+                          <div className="relative w-full aspect-[16/9] bg-muted overflow-hidden">
+                            <Image
+                              src={r.image}
+                              alt={r.imageAlt ?? r.title}
+                              fill
+                              sizes="(max-width:768px) 100vw, 33vw"
+                              className="object-cover group-hover:scale-105 transition-transform duration-300"
+                              loading="lazy"
+                            />
+                          </div>
+                        ) : (
+                          <div className="flex items-center justify-center aspect-[16/9] bg-primary/5 text-4xl">
+                            {r.emoji}
+                          </div>
+                        )}
+                        <div className="p-4 flex flex-col flex-1">
+                          <div className="text-[10px] font-bold uppercase tracking-widest text-primary mb-1.5">{r.category}</div>
+                          <h3 className="text-sm font-bold text-foreground group-hover:text-primary transition-colors line-clamp-2 leading-snug flex-1">{r.title}</h3>
+                          <div className="flex items-center gap-1 mt-3 text-xs text-primary font-semibold">
+                            읽기 <ChevronRight className="w-3.5 h-3.5" />
+                          </div>
+                        </div>
                       </div>
                     </Link>
                   ))}
@@ -776,6 +817,24 @@ export default function BlogPost({
           </div>{/* end main content column */}
         </div>
       </div>
+
+      {/* 모바일 스티키 CTA — 스크롤 60% 이후 표시, 다음 글 있을 때만 */}
+      {nextPost && (
+        <div
+          className={`xl:hidden fixed bottom-0 left-0 right-0 z-50 transition-all duration-300 ${showStickyNext ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"}`}
+          style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", boxShadow: "0 -4px 24px rgba(212,175,55,0.35)" }}
+        >
+          <Link href={`/blog/${nextPost.slug}`} className="flex items-center justify-between gap-3 px-5 py-4">
+            <div className="min-w-0">
+              <div className="text-[10px] font-bold uppercase tracking-widest mb-0.5" style={{ color: "rgba(13,28,20,0.55)" }}>다음 글 읽기 →</div>
+              <div className="text-sm font-extrabold truncate" style={{ color: "#0d1c14" }}>{nextPost.title}</div>
+            </div>
+            <div className="w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: "rgba(13,28,20,0.15)" }}>
+              <ChevronRight className="w-5 h-5" style={{ color: "#0d1c14" }} />
+            </div>
+          </Link>
+        </div>
+      )}
     </div>
   );
 }
