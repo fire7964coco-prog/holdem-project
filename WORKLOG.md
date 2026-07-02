@@ -15,6 +15,7 @@
 - holdem-showdown-rules: seoTitle CTR 샤픈("Who Flips First?"), trailing slash 4곳 제거, 내부링크 2개(all-in-rules·game-order), FAQ "win without showdown" 롱테일. 이미지 4개 정밀 일치 확인
 - holdem-all-in-rules: 룰·수학 오류 없음(사이드팟·TDA47/16 웹검증). seoTitle/desc CTR 개선, 본문 내부링크 0→3, slash 3곳. 이미지 4개 정밀 일치
 - holdem-starting-hands-chart: **§13 AK 에쿼티 오류 정정**(모든 페어 상대 코인플립, 66↓ clear favorite 아님). :::rangechart::: 인터랙티브 삽입, 내부링크 2(hand-rankings·betting-actions), slash 5곳. **커서 신규 EN 실사 2개 추가**(프리미엄핸드 AA·KK·QQ·AKs / A♣4♦ 함정 vs A♠K♦, §13 카드검증 완료)
+- holdem-reading-the-board: **§13 플러시 스페이드 개수 오류 정정**(보드 3스페이드+A♠=4장인데 "3 total"로 오기, 이미지와 불일치→정정). 내부링크 2(split-pot·hand-rankings), slash 3곳. 이미지 4개 카드검증
 - 빌드: ✅ 51 blog posts / 배포: ✅ Vercel (…·1f120ab·2d8206b)
 
 ### 블로그 CTA 3종 강화 배포
