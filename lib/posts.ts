@@ -2493,20 +2493,20 @@ A. BB 수비 범위는 **팟 오즈**를 기반으로 결정합니다. 상대가
  {
  slug: "wsop-2025-tournament-guide",
  title: "WSOP 2025 한국인도 참가할 수 있나요? — 일정·바이인·참가 방법",
- seoTitle: "한국 선수가 WSOP 참가하는 법 — 일정·바이인·위성",
- desc: "WSOP는 프로만 가는 대회가 아닙니다. 2025 일정·장소·메인 이벤트 결과와 한국인 참가 절차, GGPoker 위성 경로까지 정리했습니다.",
+ seoTitle: "WSOP 2025 결과 — 메인 우승자·상금·참가자 9,735명",
+ desc: "WSOP 2025 메인 이벤트는 9,735명이 참가해 Michael Mizrachi가 상금 $1,000만(약 130억 원)에 우승했습니다. 대회 결과와 한국인 참가 기록, 다음 WSOP 도전 위성 경로까지 정리했습니다.",
  tldr: "WSOP 2025는 5월 27일~7월 16일 호스슈·파리 라스베이거스에서 열렸고, 메인 이벤트 바이인은 $10,000입니다.",
  category: "토너먼트",
  date: "2026-03-10",
- updated: "2026-06-08",
+ updated: "2026-07-02",
  readTime: "8분",
  emoji: " ",
  image: "/images/wsop-2025-tournament-guide-hero.webp",
  imageAlt: "WSOP 2025 메인 이벤트 트로피와 포커 칩이 놓인 그린 펠트 테이블",
- tags: ["WSOP", "포커 토너먼트", "2025", "세계 대회"],
+ tags: ["WSOP 2025 결과", "WSOP 우승자", "WSOP", "포커 토너먼트", "WSOP 한국인 참가", "세계 대회"],
  content: `
 <div style="background:rgba(212,175,55,0.12);border:1px solid rgba(212,175,55,0.4);border-radius:12px;padding:14px 20px;margin:0 0 28px">
-📅 <strong>2026 대회가 지금 진행 중입니다</strong> — 최신 일정·참가 방법은 <a href="/blog/wsop-2026-tournament-guide/" style="color:var(--primary);font-weight:700">WSOP 2026 완전 가이드</a>에서 확인하세요.
+📅 <strong>2026 대회가 지금 진행 중입니다</strong> — 최신 일정·참가 방법은 <a href="/blog/wsop-2026-tournament-guide" style="color:var(--primary);font-weight:700">WSOP 2026 완전 가이드</a>에서 확인하세요.
 </div>
 
 ## WSOP가 뭔지 모르면 포커를 모르는 겁니다
