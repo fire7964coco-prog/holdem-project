@@ -69,6 +69,8 @@ These hands should almost always be raised preflop, from any position at the tab
 
 </div>
 
+![Four premium Texas Hold'em starting hands — pocket aces, pocket kings, pocket queens, and ace-king suited — glowing gold on dark green felt](/images/holdem-starting-hands-premium.webp "The premium tier — hands you can raise from any position")
+
 ==g:With hands 1–5 (pocket pairs), always raise and often re-raise preflop to build the pot.== With AK and AQ, your goal is to get heads-up where your overcards have maximum equity. (Fuzzy on what actually beats what once the board comes? Review the [poker hand rankings](/en/blog/holdem-hand-rankings).)
 
 ---
@@ -141,6 +143,8 @@ These hands look playable but consistently lose chips over sessions:
 | Any two suited cards | Flush only hits ~5% of the time | "But they're the same suit" |
 
 </div>
+
+![Weak ace trap in Texas Hold'em — A♣ 4♦ outlined in red as a losing hand, dominated by A♠ K♦ in gold](/images/holdem-starting-hands-weak-ace-trap.webp "Weak aces look strong but stay dominated — fold them preflop")
 
 The ==r:most expensive mistake beginners make is calling raises with weak aces== like A♣ 4♦. When you hit a pair of aces, you're often second-best to A♣ K♦ or A♣ Q♦ — and you lose a big pot thinking you have top pair.
 
