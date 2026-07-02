@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "You always use the best 5 cards from your 2 hole cards plus 5 community cards (7 total). You can use both hole cards, one, or even none (playing the board). Always check all 7 cards together — not just your hole cards — to spot pairs, straights, flushes, and more.",
   category: "초보 가이드",
   date: "2026-06-15",
-  updated: "2026-06-15",
+  updated: "2026-07-02",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -59,7 +59,7 @@ Example: Board is A♠ K♠ Q♠ J♠ T♠. That's a royal flush. You hold 5♥ 
 
 The catch: ==r:every active player is also playing the board==. If nobody has a card that improves on those 5 community cards, the pot is chopped equally between all remaining players.
 
-To win by playing the board outright, you need the community cards to already be the best possible 5-card hand, and no opponent to hold a card that beats it. In most cases, playing the board means a split pot, not a win.
+To win by playing the board outright, you need the community cards to already be the best possible 5-card hand, and no opponent to hold a card that beats it. In most cases, playing the board means a [split pot](/en/blog/holdem-split-pot-rules), not a win.
 
 ---
 
@@ -100,7 +100,7 @@ A flush requires 5 cards of the same suit. With 5 community cards visible, check
 
 ![NOT A FLUSH — holding A♠ with only 3 spades on the board does not make a flush in Texas Hold'em](/images/holdem-reading-flush-draw-mistake.webp)
 
-==r:Common beginner error: holding A♠ on a board of 2♠ 5♠ 9♥ J♥ T♠ and thinking you have a flush.== You need 5 cards of the same suit. A♠ plus two spades on the board = only 3 spades. You have high card ace, not a flush.
+==r:Common beginner error: holding A♠ on a board of 2♠ 5♠ 9♥ J♥ T♠ and thinking you have a flush.== You need 5 cards of the same suit. The board has only three spades (2♠ 5♠ T♠); even with your A♠ that is just four — you have high card ace, not a flush.
 
 To have a flush you need to contribute at least 1 card to hit 5 total of one suit.
 
@@ -160,7 +160,7 @@ Use this checklist every time you see all 5 community cards:
 
 **Step 4:** If none of the above — your best hand is probably high card or one/two pair using your highest cards with the highest board cards.
 
-**Step 5:** Out of all possible hands you identified, ==your best hand is the strongest one==.
+**Step 5:** Out of all possible hands you identified, ==your best hand is the strongest one== — whichever sits highest on the [poker hand rankings](/en/blog/holdem-hand-rankings).
 
 You always play exactly 5 cards. If you have a straight AND a pair — the straight wins. You don't combine them.
 
@@ -217,17 +217,17 @@ A. Yes. Ace can be high (A-K-Q-J-T, Broadway) or low (A-2-3-4-5, "the wheel"). T
 ## Related Posts
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
-  <a href="/en/blog/holdem-hand-rankings/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/en/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Pillar</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Texas Hold'em Hand Rankings</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Full ranking from royal flush to high card</div>
   </a>
-  <a href="/en/blog/holdem-tiebreak-rules/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/en/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Tiebreaker</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Kicker and Tie-Breaker Rules</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Same hand rank — who actually wins?</div>
   </a>
-  <a href="/en/blog/holdem-starting-hands-chart/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/en/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Starting Hands</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Starting Hands Chart for Beginners</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Which 2 cards are worth playing?</div>
