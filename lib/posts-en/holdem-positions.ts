@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Position is when you act relative to the dealer button. The Button acts last on every postflop street and can open ~40% of hands; UTG acts first and should open only ~12%. Every seat between them gets a sliding range.",
   category: "초보 가이드",
   date: "2026-06-13",
-  updated: "2026-06-13",
+  updated: "2026-07-02",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🎯",
@@ -49,6 +49,8 @@ One number puts it in perspective: the Button earns approximately ==g:**8 big bl
 ## The 9-Max Seat Map
 
 At a full nine-handed table, positions run clockwise from the dealer button. Preflop the action starts with UTG (left of the big blind). Postflop it restarts with the small blind. For the exact sequence of betting actions across all four streets, see [the order of play in a hand](/en/blog/holdem-game-order).
+
+![Nine-handed poker table with chip stacks at every seat and the dealer button marked D in front of one player](/images/holdem-button-position-hero.webp "The dealer button sets every seat's position and the order of play")
 
 | Seat | Abbr | Zone | Preflop | Postflop |
 |------|------|------|---------|----------|
@@ -285,7 +287,7 @@ These BB/100 figures are approximate averages from large poker database studies 
 
 New to the game? The [beginner's guide to Texas Hold'em rules](/en/blog/texas-holdem-rules-for-beginners) covers how a hand works from start to finish, and [the order of play](/en/blog/holdem-game-order) shows exactly when each seat acts across all four streets. For the forced bets posted by the two seats left of the button, the [small blind and big blind guide](/en/blog/holdem-blind-meaning) explains why they exist and how to play them well.
 
-Ready to turn position knowledge into profit? The [poker position strategy pillar guide](/en/blog/holdem-position-play/) goes deeper into IP vs OOP equity realization, c-bet frequencies by seat, and how position changes your bluffing game postflop.
+Ready to turn position knowledge into profit? The [poker position strategy pillar guide](/en/blog/holdem-position-play) goes deeper into IP vs OOP equity realization, c-bet frequencies by seat, and how position changes your bluffing game postflop.
 
 ---
 
