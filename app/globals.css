@@ -462,9 +462,9 @@ a.brush-link {
   position: relative;
   padding: 0.12em 0.4em 0.18em 0.35em;
   text-decoration: underline;
-  text-decoration-color: rgba(var(--hl), 0.85);
+  text-decoration-color: rgba(var(--hl), 1);
   text-underline-offset: 2px;
-  text-decoration-thickness: 2px;
+  text-decoration-thickness: 3px;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
   isolation: isolate;
