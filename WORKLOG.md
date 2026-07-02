@@ -10,7 +10,8 @@
 - holdem-hand-rankings: **§13 사실오류 정정** — Puzzle 2 보드 7♥8♥9♥10♥J♠+K♥를 "스트레이트플러시"로 오기(실제 K-high 플러시) → 홀 6♥로 교체해 진짜 ten-high 스트플로 수정. trailing slash 3곳 제거, FAQ 롱테일 2개
 - holdem-game-order: 신규 H2 "Who Acts First on Each Street?"(최상위 PAA·헤드업 예외) + 미사용 클러스터 내부링크 5개(blind-meaning·starting-hands-chart·betting-actions·showdown-rules·all-in-rules). §13 전체핸드 예시·팟산수 검산 통과
 - holdem-positions: 이미지 점검 후 9-Max Seat Map 섹션에 딜러버튼 풀테이블 실사 추가(본문 이미지 1→2), trailing slash(position-play) 정리. 콘텐츠 이미 충실해 유지
-- 빌드: ✅ 51 blog posts / 배포: ✅ Vercel (ce948ec·15319f1)
+- holdem-betting-actions: §13 min-raise 예시 모호성 정정(포스트플랍 클린 예시+프리플랍 주석), trailing slash 5곳 제거, 내부링크 3개(all-in-rules·positions·hand-rankings), 본문 이미지 0→1(칩스택 실사), FAQ "limp 뜻" 롱테일
+- 빌드: ✅ 51 blog posts / 배포: ✅ Vercel (ce948ec·15319f1·0a4b91c)
 
 ### 블로그 CTA 3종 강화 배포
 - 다음 글 버튼: 금색 그라디언트 대형 CTA 버튼으로 교체
