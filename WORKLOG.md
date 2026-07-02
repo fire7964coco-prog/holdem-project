@@ -13,7 +13,8 @@
 - holdem-betting-actions: §13 min-raise 예시 모호성 정정(포스트플랍 클린 예시+프리플랍 주석), trailing slash 5곳 제거, 내부링크 3개(all-in-rules·positions·hand-rankings), 본문 이미지 0→1(칩스택 실사), FAQ "limp 뜻" 롱테일
 - holdem-flush-vs-straight: **§13 사실오류 정정** — Spot2 "또 하트=straight flush" 과잉주장(실제 6♥만 SF)→정정. reading-the-board 링크, FAQ "Does a straight beat a flush?" 역방향 롱테일. 이미지 3개 정밀 일치 확인
 - holdem-showdown-rules: seoTitle CTR 샤픈("Who Flips First?"), trailing slash 4곳 제거, 내부링크 2개(all-in-rules·game-order), FAQ "win without showdown" 롱테일. 이미지 4개 정밀 일치 확인
-- 빌드: ✅ 51 blog posts / 배포: ✅ Vercel (ce948ec·15319f1·0a4b91c·7f6af4a·6de2837)
+- holdem-all-in-rules: 룰·수학 오류 없음(사이드팟·TDA47/16 웹검증). seoTitle/desc CTR 개선, 본문 내부링크 0→3, slash 3곳. 이미지 4개 정밀 일치
+- 빌드: ✅ 51 blog posts / 배포: ✅ Vercel (…·6de2837·1f120ab)
 
 ### 블로그 CTA 3종 강화 배포
 - 다음 글 버튼: 금색 그라디언트 대형 CTA 버튼으로 교체
