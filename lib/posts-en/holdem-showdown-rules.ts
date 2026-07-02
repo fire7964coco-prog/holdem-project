@@ -3,12 +3,12 @@ import type { Post } from "../posts";
 export const POST: Post = {
   slug: "holdem-showdown-rules",
   title: "Texas Hold'em Showdown Rules: Who Shows First, Mucking, and Slow Rolling",
-  seoTitle: "Won the Pot but Got Stared Down? — Texas Hold'em Showdown Rules Explained",
+  seoTitle: "Who Flips First? — Texas Hold'em Showdown Rules, Muck & Slow Roll",
   desc: "Who shows cards first at showdown? Can you muck without showing? Hold'em showdown rules — last aggressor, cards speak, slow roll, and all-in situations explained.",
   tldr: "At showdown, the last player to bet or raise shows first. If the river was checked through, the first active player left of the button shows first. You can muck without showing if you lose, but opponents can request to see a called hand.",
   category: "초보 가이드",
   date: "2026-06-15",
-  updated: "2026-06-15",
+  updated: "2026-07-02",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🂠",
@@ -32,7 +32,7 @@ The dealer looks back and forth. Other players at the table sigh.
 
 ## Who Has to Show Cards First at Showdown?
 
-The rule depends on how the final betting round ended.
+The rule depends on how the final betting round ended (for the full street-by-street sequence that leads here, see [the order of play](/en/blog/holdem-game-order)).
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -90,7 +90,7 @@ When a player goes all-in and there's no more betting possible, all remaining ca
 
 One nuance: if there is a **side pot** (other players still have chips and keep betting), the side pot players continue betting and their showdown follows the last-aggressor rule. The all-in player's hand is shown, but side pot resolution goes last-aggressor first.
 
-For the full breakdown of side pot math, see [Texas Hold'em split pot and chop rules](/en/blog/holdem-split-pot-rules/).
+For how side pots are built and paid when players are all-in, see [all-in rules and side pots](/en/blog/holdem-all-in-rules); for chopped pots, see [split pot and chop rules](/en/blog/holdem-split-pot-rules).
 
 ---
 
@@ -178,22 +178,26 @@ A. When a player goes all-in and no further betting is possible, all hands invol
 
 A. Cards speak means the best hand wins based on what the cards actually show — not based on what players say. A player who misreads their hand and declares the wrong hand still wins if their actual cards are the best hand. Conversely, a player who mucks without verifying they lost has no claim to the pot, even if their hand would have won.
 
+**Q. Do you have to show your cards if you win without a showdown?**
+
+A. No. If everyone else folds before the river showdown, you win the pot immediately and never have to reveal your hole cards. Showing is optional — some players flip a bluff to needle opponents, but you are never required to show a hand that won uncontested.
+
 ---
 
 ## Related Posts
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
-  <a href="/en/blog/texas-holdem-rules-for-beginners/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/en/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Pillar</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Texas Hold'em Rules for Beginners</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Full rules — blinds to showdown</div>
   </a>
-  <a href="/en/blog/holdem-split-pot-rules/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/en/blog/holdem-split-pot-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Split Pot</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Split Pot and Side Pot Rules</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">When the pot is chopped and how side pots work</div>
   </a>
-  <a href="/en/blog/holdem-tiebreak-rules/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/en/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Tiebreaker</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Kicker and Tie-Breaker Rules</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Same hand — who wins at showdown?</div>
