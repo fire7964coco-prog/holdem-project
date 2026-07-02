@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em gives each player 2 hole cards, uses 5 community cards, and the best 5-card poker hand wins after four betting rounds.",
   category: "초보 가이드",
   date: "2026-06-11",
-  updated: "2026-06-23",
+  updated: "2026-07-02",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -21,6 +21,8 @@ export const POST: Post = {
     "who goes first in texas holdem",
     "texas holdem cheat sheet",
     "poker chips for beginners",
+    "how many players in texas holdem",
+    "no limit texas holdem",
   ],
   content: `
 If you searched for ==Texas Hold'em rules for beginners==, you probably do not need a casino rulebook yet.
@@ -66,7 +68,7 @@ After that, the dealer reveals five shared cards in the middle of the table:
 
 </div>
 
-==r:You do **not** need to use both of your hole cards.== You can use two, one, or even zero hole cards if the board itself makes the best hand.
+==r:You do **not** need to use both of your hole cards.== You can use two, one, or even zero hole cards if the board itself makes the best hand — a skill called [reading the board](/en/blog/holdem-reading-the-board).
 
 For example:
 
@@ -76,7 +78,7 @@ For example:
 | 8♠ 8♦ | K♣ 8♥ 4♠ 4♦ J♣ | Full house, eights full of fours |
 | 2♣ 3♦ | A♠ K♠ Q♠ J♠ 10♠ | Royal flush on the board |
 
-If poker hand rankings are still new, open [Texas Hold'em hand rankings](/en/blog/holdem-hand-rankings) before you play. Knowing whether a flush beats a straight is more important than memorizing advanced strategy.
+If poker hand rankings are still new, open [Texas Hold'em hand rankings](/en/blog/holdem-hand-rankings) before you play. Knowing [whether a flush beats a straight](/en/blog/holdem-flush-vs-straight) is more important than memorizing advanced strategy.
 
 ---
 
@@ -98,6 +100,24 @@ For your first session, the key idea is simple: ==**every time a new street appe
 ![Texas Hold'em preflop step with blinds posted and two hole cards dealt](/images/rules-step2-preflop.webp "How to play Texas Hold'em step by step — preflop action after blinds")
 
 For the detailed version, continue with [Texas Hold'em order of play from blinds to showdown](/en/blog/holdem-game-order).
+
+---
+
+## How Many Players Can Play Texas Hold'em?
+
+Texas Hold'em works with anywhere from **2 to 10 players** at one table. You do not need a full table to start — you just need at least two people.
+
+| Players | What it's called | Beginner notes |
+|--------:|------------------|----------------|
+| 2 | Heads-up | Fast and aggressive; blinds are reversed (see below) |
+| 3–6 | Short-handed (6-max) | Most common online; more hands are playable |
+| 7–10 | Full ring (9-max) | Classic home/casino game; play tighter, more folding |
+
+For a first home game, **4 to 6 players** is the sweet spot — enough action to learn, few enough that hands move quickly.
+
+==g:When only two players are left (or you start with two), that is called heads-up.== The rules are the same with one twist: ==the button posts the small blind and acts first before the flop, but the big blind acts first on the flop, turn, and river.== That reversal keeps the game fair when one player would otherwise always act last.
+
+The number of players also shifts your strategy — the more opponents, the more likely someone has a strong hand, so you fold weaker holdings. If you are deciding between a casual ring game and a competitive format, see [cash game vs tournament](/en/blog/holdem-tournament-vs-cash-game).
 
 ---
 
@@ -165,7 +185,23 @@ If you are playing a small home cash game, choose a buy-in that everyone is comf
 
 ==r:Do not start with stakes that make people nervous.== Nervous beginners do not learn faster. They just fold too much, call too emotionally, or argue about rules.
 
+Note that a **tournament** buy-in works differently from a cash game: you pay one fixed entry, get a set stack of non-cashable chips, and play until one player has them all. If you are unsure which you want, read [cash game vs tournament](/en/blog/holdem-tournament-vs-cash-game) first.
+
 For online practice, use free tables until you can explain the action order without thinking. Then move up slowly.
+
+---
+
+## No-Limit, Limit, or Pot-Limit? Which Texas Hold'em Are You Playing?
+
+When people say "Texas Hold'em," they almost always mean **No-Limit Hold'em (NLHE)** — the format used in the WSOP Main Event and nearly every home game. The dealing, blinds, and hand rankings are identical across all three formats. The only thing that changes is **how much you are allowed to bet.**
+
+| Format | How much can you bet? | Where you'll see it |
+|--------|-----------------------|---------------------|
+| **No-Limit (NLHE)** | Any amount up to all your chips ("all-in") | Default game — home games, most casinos, WSOP |
+| **Fixed-Limit** | Only fixed increments (a set small bet, then a double bet on turn/river) | Older casino tables; fewer big swings |
+| **Pot-Limit** | Up to the current size of the pot | Rare for Hold'em; standard for Omaha (PLO) |
+
+For beginners, ==g:assume you are playing No-Limit unless someone says otherwise.== No-Limit is the easiest to *understand* (bet whatever you want) but the most punishing to *play* badly, because one wrong call can cost your whole stack. That is exactly why the pot odds section below and your [betting actions — check, call, raise, fold](/en/blog/holdem-betting-actions) matter so much.
 
 ---
 
@@ -378,6 +414,18 @@ The two players to the left of the dealer button must post forced bets before ca
 ### What is the quick version of Texas Hold'em rules?
 
 Post blinds → deal 2 hole cards → preflop betting → reveal 3 community cards (flop) + betting → reveal 1 card (turn) + betting → reveal 1 card (river) + betting → best hand wins. Total: four betting rounds, five community cards, one winner.
+
+### How many players do you need to play Texas Hold'em?
+
+You need at least 2 players and can seat up to 10. With exactly two players it is called heads-up, and the blinds reverse — the button posts the small blind and acts first preflop, while the big blind acts first after the flop. For a first home game, 4 to 6 players keeps the action fast and easy to follow.
+
+### What does no-limit mean in Texas Hold'em?
+
+No-Limit means you can bet any amount up to all of your chips on any betting round — that is the "all-in" move. It is the default and most popular format, including the WSOP Main Event. Limit Hold'em caps each bet to a fixed size, and Pot-Limit caps your bet to the current pot size.
+
+### How long does one hand of Texas Hold'em take?
+
+A single hand usually takes about 10 to 60 seconds, though a big multi-way pot with tough decisions can run several minutes. A casual home session of a few hours will play through dozens of hands, so nobody has to commit a whole evening to one deal.
 
 ---
 
