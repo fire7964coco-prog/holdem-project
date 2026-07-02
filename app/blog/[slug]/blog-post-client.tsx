@@ -200,8 +200,8 @@ export function renderMarkdown(content: string): string {
         `<span class="inline-flex shrink-0 items-center justify-center rounded-full bg-primary px-5 py-3 text-sm font-black text-black transition-transform group-hover:scale-105">PDF ↓</span>` +
         `</a>`
     )
-    .replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="font-semibold text-foreground bg-primary/15 box-decoration-clone rounded px-1 py-0.5 underline decoration-primary/60 underline-offset-2 hover:bg-primary/30 transition-colors">$1 ↗</a>')
-    .replace(/\[([^\]]+)\]\((?!https?:\/\/)([^)]+)\)/g, '<a href="$2" class="font-semibold text-foreground bg-primary/15 box-decoration-clone rounded px-1 py-0.5 underline decoration-primary/60 underline-offset-2 hover:bg-primary/30 transition-colors">$1</a>')
+    .replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="brush-link">$1 ↗</a>')
+    .replace(/\[([^\]]+)\]\((?!https?:\/\/)([^)]+)\)/g, '<a href="$2" class="brush-link">$1</a>')
     .replace(/^---$/gm, '<hr class="border-border my-8" />')
     .replace(/^\|[-:\s|]+\|$/gm, '')
     .replace(
