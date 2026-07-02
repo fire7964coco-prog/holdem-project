@@ -81,6 +81,10 @@ export function renderMarkdown(content: string): string {
    * 정규식 체인은 패턴별로 순차 실행되므로 단순 카운터로는
    * "문서 순서상 첫 이미지"를 잡을 수 없다 → 본문을 스캔해 LCP 이미지 src를 미리 결정.
    */
+  // 인라인 링크 형광색 순환(SSR 하이드레이션 일관성 위해 순서 기반 카운터)
+  const LINK_HL = ['212,175,55', '236,72,153', '34,197,94', '249,115,22', '168,85,247'];
+  let hlIdx = 0;
+
   let lcpSrc: string | null = null;
   const faq = content.match(/:::faqcard\[([^\]]+)\]/);
   const md = content.match(/!\[[^\]]*\]\(([^)\s]+)/);
@@ -200,8 +204,8 @@ export function renderMarkdown(content: string): string {
         `<span class="inline-flex shrink-0 items-center justify-center rounded-full bg-primary px-5 py-3 text-sm font-black text-black transition-transform group-hover:scale-105">PDF ↓</span>` +
         `</a>`
     )
-    .replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="brush-link">$1 ↗</a>')
-    .replace(/\[([^\]]+)\]\((?!https?:\/\/)([^)]+)\)/g, '<a href="$2" class="brush-link">$1</a>')
+    .replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, (_m, t, u) => `<a href="${u}" target="_blank" rel="noopener noreferrer" class="brush-link" style="--hl:${LINK_HL[hlIdx++ % LINK_HL.length]}">${t} ↗</a>`)
+    .replace(/\[([^\]]+)\]\((?!https?:\/\/)([^)]+)\)/g, (_m, t, u) => `<a href="${u}" class="brush-link" style="--hl:${LINK_HL[hlIdx++ % LINK_HL.length]}">${t}</a>`)
     .replace(/^---$/gm, '<hr class="border-border my-8" />')
     .replace(/^\|[-:\s|]+\|$/gm, '')
     .replace(
