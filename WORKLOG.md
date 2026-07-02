@@ -9,7 +9,8 @@
 - texas-holdem-rules-for-beginners: EN SERP·PAA 재조사 → 롱테일 갭 2개 신규 H2(How Many Players·헤드업 블라인드 역전 / No-Limit·Limit·Pot-Limit 포맷), 미사용 EN 클러스터 내부링크 3개(flush-vs-straight·reading-the-board·tournament-vs-cash-game), FAQ 롱테일 3개
 - holdem-hand-rankings: **§13 사실오류 정정** — Puzzle 2 보드 7♥8♥9♥10♥J♠+K♥를 "스트레이트플러시"로 오기(실제 K-high 플러시) → 홀 6♥로 교체해 진짜 ten-high 스트플로 수정. trailing slash 3곳 제거, FAQ 롱테일 2개
 - holdem-game-order: 신규 H2 "Who Acts First on Each Street?"(최상위 PAA·헤드업 예외) + 미사용 클러스터 내부링크 5개(blind-meaning·starting-hands-chart·betting-actions·showdown-rules·all-in-rules). §13 전체핸드 예시·팟산수 검산 통과
-- 빌드: ✅ 51 blog posts / 배포: ✅ Vercel (ce948ec)
+- holdem-positions: 이미지 점검 후 9-Max Seat Map 섹션에 딜러버튼 풀테이블 실사 추가(본문 이미지 1→2), trailing slash(position-play) 정리. 콘텐츠 이미 충실해 유지
+- 빌드: ✅ 51 blog posts / 배포: ✅ Vercel (ce948ec·15319f1)
 
 ### 블로그 CTA 3종 강화 배포
 - 다음 글 버튼: 금색 그라디언트 대형 CTA 버튼으로 교체
