@@ -3,6 +3,9 @@
 > Claude Code가 이 프로젝트를 처음 열 때 반드시 읽는 파일.
 > 작업 전 **`session-handoff.md` → `WORKLOG.md`** 순서로 함께 확인할 것.
 > (이 프로젝트는 2026-06-23에 Cursor → Claude Code로 이관됨)
+>
+> ### ⚡ 포스팅 작업 자동 규칙 (필수)
+> **포스트(`lib/posts/`·`lib/posts.ts`·`lib/posts-en/`)를 작성·검수·수정하기 전에 반드시 `.cursor/rules/posting.mdc`(통합 포스팅·콘텐츠 마스터 규칙)를 먼저 읽고 시작하라.** 이 파일 하나에 SEO 카피·형식·이미지·§13 핸드검산·다국어·재사용 컴포넌트·배포/GSC 규칙이 모두 통합돼 있다. (이 지시는 CLAUDE.md 기본 동작을 OVERRIDE 한다.)
 
 ---
 

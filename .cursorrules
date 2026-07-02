@@ -66,11 +66,14 @@ git push               # Vercel 자동 배포 트리거
 ---
 
 ## 📂 세부 규칙 위치
+> ⭐ **포스팅·콘텐츠 작업의 단일 마스터 = `.cursor/rules/posting.mdc`** (SEO·형식·이미지·§13 핸드검산·다국어·컴포넌트·배포 통합). 포스트 작업 전 반드시 이 파일부터 읽는다.
+
 | 규칙 종류 | 파일 | 적용 방식 |
 |-----------|------|-----------|
-| 포스팅 (SEO·형식·체크리스트) | `.cursor/rules/posting.mdc` | `lib/posts/**` 파일 작업 시 자동 적용 |
-| 이미지·글쓰기·JSON-LD·다국어 | `.cursor/rules/content.mdc` | `lib/posts/**` 파일 작업 시 자동 적용 |
-| 성능·빌드·기술 규칙 | `.cursor/rules/tech.mdc` | 코드 파일 작업 시 자동 적용 |
+| **포스팅·콘텐츠 (통합 마스터)** | `.cursor/rules/posting.mdc` | `lib/posts/**`·`public/images/**` 작업 시 자동 적용 |
+| 이미지·글쓰기·JSON-LD·다국어 (→posting.mdc로 통합됨) | `.cursor/rules/content.mdc` | 보조 참고용 |
+| 성능·빌드·인프라·보안 | `.cursor/rules/tech.mdc` | 코드 파일 작업 시 자동 적용 |
+| 언어별 상세 용어 | `.cursor/rules/multilingual-localization.mdc` | `lib/posts-*/**` 작업 시 |
 
 ---
 
