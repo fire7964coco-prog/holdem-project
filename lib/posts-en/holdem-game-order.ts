@@ -8,13 +8,13 @@ export const POST: Post = {
   tldr: "A hand of Texas Hold'em runs: post blinds → deal two hole cards → preflop → flop (3 cards) → turn (1 card) → river (1 card) → showdown, with four betting rounds in total.",
   category: "초보 가이드",
   date: "2026-06-10",
-  updated: "2026-06-10",
+  updated: "2026-07-02",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎬",
   image: "/images/blog-holdem-game-flow.webp",
   imageAlt: "Texas Hold'em order of play diagram — blinds, preflop, flop, turn, river, showdown all six stages",
-  tags: ["how to play texas holdem", "texas holdem rules", "poker order of play", "preflop flop turn river", "poker betting rounds", "texas holdem for beginners", "how a poker hand works", "poker showdown"],
+  tags: ["how to play texas holdem", "texas holdem rules", "poker order of play", "preflop flop turn river", "poker betting rounds", "who acts first in poker", "how a poker hand works", "poker showdown"],
   content: `
 Everyone who sits down to their first game of Texas Hold'em asks the same thing: ==r:*"Wait — whose turn is it, and when do I put money in?"*== You know you get cards. What you don't know is when to bet, when more cards come out, and how the winner is actually decided.
 
@@ -44,7 +44,7 @@ Before any cards come out, two things set the table: the **dealer button** and t
 
 The **dealer button (the "button," marked D)** is a round disc that marks who is "on the deal" for that hand. Even with a house dealer, the button decides the betting order, and it moves one seat clockwise after every hand.
 
-The **blinds** are forced bets posted before the cards are dealt. Without them, everyone could just check and fold for free; ==g:the blinds put money in the middle and give players a reason to compete==.
+The **blinds** are forced bets posted before the cards are dealt. Without them, everyone could just check and fold for free; ==g:the blinds put money in the middle and give players a reason to compete==. (New to them? See exactly [how the small and big blind work](/en/blog/holdem-blind-meaning).)
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -77,6 +77,8 @@ Action starts to the left of the big blind and moves clockwise. On your turn you
 - **Premium:** A♠A♥ (pocket aces), K♠K♥, Q♠Q♥, J♠J♥
 - **Strong:** A♠K♥ ("Big Slick"), A♠Q♥, A♠J♥, 10♠10♥
 - **Situational:** 9♠9♥, 8♠8♥, K♠Q♥, K♠J♥
+
+Which of these you can actually open depends on your seat. For the full 169-hand chart broken down by position, see the [Texas Hold'em starting hands chart](/en/blog/holdem-starting-hands-chart).
 
 ---
 
@@ -136,6 +138,29 @@ Showdown rules:
 - The player who made the last aggressive action (bet or raise) shows first; if the river was checked through, the first active player to the left of the button shows first.
 - A losing player may simply **muck** (fold without showing).
 - Equal hands **split the pot** ("chop") evenly.
+
+Who has to show first, when you can muck, and the etiquette around slow-rolling are covered in full in the [showdown rules](/en/blog/holdem-showdown-rules).
+
+---
+
+## Who Acts First on Each Street?
+
+"Whose turn is it?" has a different answer before and after the flop — and that single shift is the engine behind position strategy.
+
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
+
+| Street | First to act | Last to act |
+|------|------|------|
+| Preflop | Player left of the big blind ("UTG") | Big blind |
+| Flop | Small blind (or first live player left of the button) | Button |
+| Turn | Same as the flop | Button |
+| River | Same as the flop | Button |
+
+</div>
+
+The memory trick: ==**before the flop, look left of the big blind; after the flop, look left of the button.**== The button acts last on every postflop street, which is exactly why it's the most profitable seat — see [poker positions: UTG to button](/en/blog/holdem-positions).
+
+==g:**Heads-up (2 players) is the exception:**== the button posts the *small* blind and acts **first** preflop, but **last** on the flop, turn, and river. That is the order used in the full-hand walkthrough below.
 
 ---
 
@@ -237,6 +262,8 @@ Here is every action available at the table — the part beginners mix up most.
 
 ==r:**Important:** you cannot check preflop==, because the big blind is already a live bet. ==Checking only becomes possible from the flop onward.==
 
+For a deeper decision guide on when to use each move — with a check-call-raise-fold decision table — see [betting actions explained](/en/blog/holdem-betting-actions).
+
 ---
 
 ## The 10 Poker Hand Rankings You Must Know
@@ -327,7 +354,7 @@ Pot odds are the ratio of the current pot size to the amount you must call. If t
 
 **Q. When should I go all-in?**
 
-All-in means betting every chip you have. Use it with a very strong hand (the nuts), or as a bluff to fold out opponents. Once you're all-in you can't bet again, but you remain eligible for the portion of the pot you matched.
+All-in means betting every chip you have. Use it with a very strong hand (the nuts), or as a bluff to fold out opponents. Once you're all-in you can't bet again, but you remain eligible for the portion of the pot you matched. When stacks differ, this creates side pots — see [all-in rules and side pots](/en/blog/holdem-all-in-rules).
 
 **Q. How many betting rounds are there in a hand?**
 
