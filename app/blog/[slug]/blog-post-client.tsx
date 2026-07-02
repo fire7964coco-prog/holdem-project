@@ -428,24 +428,15 @@ export function renderMarkdown(content: string): string {
       `<div style="display:inline-flex;align-items:center;gap:10px;margin:8px 8px 8px 0;padding:8px 18px;background:rgba(212,175,55,0.1);border:1px solid rgba(212,175,55,0.3);border-radius:100px">` +
       `<span style="font-size:20px;font-weight:800;color:#d4af37">${num}</span>` +
       `<span style="font-size:12px;color:var(--muted-foreground)">${label}</span></div>`)
-    // :::eventcta::: — 본문 중간 이벤트 참여 유도 CTA (클릭 시 홈 커뮤니티 이벤트 탭)
-    .replace(/^:::eventcta:::$/gm, () => {
-      const ball = (n: string) =>
-        `<span style="width:36px;height:36px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;color:#0b1120;background:linear-gradient(145deg,#fbe9a8,#d4af37);box-shadow:0 3px 8px rgba(0,0,0,0.35),inset 0 1px 1px rgba(255,255,255,0.55)">${n}</span>`;
-      const prize = (m: string, p: string) =>
-        `<span style="display:inline-flex;align-items:center;gap:5px;padding:6px 11px;border-radius:8px;background:rgba(255,255,255,0.05);border:1px solid rgba(212,175,55,0.22);font-size:12px;font-weight:700;color:rgba(247,240,220,0.85);white-space:nowrap"><b style="color:#f0d060">${m}</b>${p}</span>`;
-      return `<a href="/?tab=event" style="display:block;text-decoration:none;margin:36px 0;border-radius:20px;overflow:hidden;background:radial-gradient(130% 130% at 100% 0%,#1c2743 0%,#0a0f1c 60%);border:1px solid rgba(212,175,55,0.38);box-shadow:0 14px 40px rgba(0,0,0,0.3)">` +
-        `<div style="height:4px;background:linear-gradient(90deg,#b8860b,#f7d774,#b8860b)"></div>` +
-        `<div style="padding:24px">` +
-        `<div style="display:inline-flex;align-items:center;gap:7px;padding:5px 13px;border-radius:100px;background:rgba(212,175,55,0.12);border:1px solid rgba(212,175,55,0.32);font-size:11.5px;font-weight:800;letter-spacing:0.03em;color:#f0d060;margin-bottom:14px">🎰 홀덤마스터 무료 이벤트 · 매주 일요일 추첨</div>` +
-        `<div style="font-size:22px;font-weight:900;line-height:1.34;color:#f7f0dc;margin:0 0 6px;letter-spacing:-0.01em">번호 6개 맞히고 <span style="color:#f7d774">최대 100만원</span> 기프트콘</div>` +
-        `<div style="font-size:13px;line-height:1.6;color:rgba(255,255,255,0.52);margin:0 0 18px">1~45 중 6개만 고르면 끝 · 3개만 맞아도 당첨 · 비트코인 블록해시로 누구나 검증 가능한 공정 추첨</div>` +
-        `<div style="display:flex;gap:9px;flex-wrap:wrap;margin-bottom:20px">${ball("7")}${ball("12")}${ball("19")}${ball("24")}${ball("33")}${ball("41")}</div>` +
-        `<div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">` +
-        `<div style="display:flex;gap:7px;flex-wrap:wrap;flex:1;min-width:180px">${prize("3개", "5만원")}${prize("4개", "30만원")}${prize("5·6개", "100만원")}</div>` +
-        `<span style="flex-shrink:0;display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:14px 26px;border-radius:12px;background:linear-gradient(135deg,#f7d774,#d4af37);color:#0b1120;font-size:15px;font-weight:900;box-shadow:0 6px 18px rgba(212,175,55,0.35);white-space:nowrap">이벤트 참여하기 →</span>` +
-        `</div></div></a>`;
-    })
+    // :::eventcta::: — 본문 중간 이벤트 참여 유도 소형 CTA (클릭 시 홈 커뮤니티 이벤트 탭)
+    .replace(/^:::eventcta:::$/gm, () =>
+      `<a href="/?tab=event" style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;text-decoration:none;margin:24px 0;padding:12px 14px 12px 16px;border-radius:12px;background:linear-gradient(135deg,#0f1626 0%,#141c30 100%);border:1px solid rgba(212,175,55,0.32);box-shadow:0 4px 16px rgba(0,0,0,0.16)">` +
+      `<span style="flex:1;min-width:150px;display:flex;align-items:center;gap:9px">` +
+      `<span style="font-size:18px;flex-shrink:0">🎰</span>` +
+      `<span style="font-size:13.5px;font-weight:700;line-height:1.45;color:#f0e8d0">매주 일요일 기프트콘 이벤트 진행 중 <span style="color:rgba(255,255,255,0.45);font-weight:500">· 번호 6개 선택</span></span>` +
+      `</span>` +
+      `<span style="flex-shrink:0;display:inline-flex;align-items:center;gap:5px;padding:9px 16px;border-radius:9px;background:linear-gradient(135deg,#f7d774,#d4af37);color:#0b1120;font-size:13px;font-weight:800;white-space:nowrap">이벤트 참여하기 →</span>` +
+      `</a>`)
     .replace(/^- (.+)$/gm, '<li class="flex gap-2 text-muted-foreground text-sm leading-relaxed mb-1"><span class="text-primary mt-1 flex-shrink-0">•</span><span>$1</span></li>')
     .replace(/(<li.*<\/li>\n?)+/g, (m) => `<ul class="my-4 space-y-1">${m}</ul>`)
     .replace(/\n\n/g, '</p><p class="text-muted-foreground text-base leading-relaxed mb-4">')
