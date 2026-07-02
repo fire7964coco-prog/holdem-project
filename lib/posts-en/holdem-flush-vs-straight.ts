@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A flush (five cards of one suit, ~0.197%) always beats a straight (five in sequence, ~0.392%) in Texas Hold'em — because a flush is about twice as hard to make.",
   category: "초보 가이드",
   date: "2026-06-13",
-  updated: "2026-06-13",
+  updated: "2026-07-02",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "⚡",
@@ -84,7 +84,7 @@ A straight only needs five ranks in a row, and ==**the suits don't matter**==. T
 
 ![Board showing 8♥ 7♥ 6♥ 5♠ A♣ — three hearts on board means a flush is live even if you hold a straight](/images/holdem-flush-vs-straight-board.webp "Three suited cards on board — flush draw live against your straight")
 
-Knowing the rule isn't the same as reading it live. These are the three spots where the mistake actually happens.
+Knowing the rule isn't the same as reading it live — that skill is exactly what [reading the board](/en/blog/holdem-reading-the-board) trains. These are the three spots where the mistake actually happens.
 
 ### Spot 1 — You make a straight, but the board is three of a suit
 
@@ -96,7 +96,7 @@ You hold **9♠ 10♠** for a clean **6-7-8-9-10 straight**. Feels strong — bu
 
 :::hand[8♥,7♥,6♠,2♣] Board (4 cards, turn):::
 
-You hold **9♥ 5♥**. You've already got the **5-6-7-8-9 straight** — so why keep eyeing the hearts? Because if another heart lands, your hand becomes a **straight flush (#2)**, which crushes everything. When you can draw to the bigger hand for free, play with that upgrade in mind.
+You hold **9♥ 5♥**. You've already got the **5-6-7-8-9 straight** — so why keep eyeing the hearts? Because you also hold **four to a flush** (9♥ 8♥ 7♥ 5♥): any heart on the river upgrades your straight to a flush, and the **6♥ specifically** completes a **5-6-7-8-9 straight flush (#2)** that crushes everything. When you can draw to a bigger hand for free, play with that upgrade in mind.
 
 ### Spot 3 — You have the flush, they table a straight
 
@@ -154,6 +154,10 @@ In **Short Deck (6+) Hold'em**, the 2s through 5s are removed from the deck. Wit
 **Q. Does a flush beat a straight in poker?**
 
 A. Yes. A flush is the #5 hand and a straight is #6, so a flush always wins in standard Texas Hold'em because five cards of one suit are harder to make than five in sequence.
+
+**Q. Does a straight beat a flush?**
+
+A. No. A straight (#6) never beats a flush (#5) in standard Texas Hold'em. It's a common mix-up because a straight can feel harder to complete, but a flush is statistically rarer — so the flush always wins the pot.
 
 **Q. Why does a flush beat a straight if a straight looks harder?**
 
