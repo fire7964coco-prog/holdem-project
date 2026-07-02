@@ -6,7 +6,7 @@
 ---
 
 ## 📅 마지막 작업일
-2026-07-01 (데스크탑 Cursor 세션)
+2026-07-02 (데스크탑 Cursor 세션)
 
 ---
 
@@ -24,47 +24,43 @@
 
 ---
 
-## 🔥 이번 세션(2026-07-01) 작업 내용
+## 🔥 이번 세션(2026-07-02) 작업 내용
 
-### 1. P2 필라 포스트 발행 (`holdem-rules`)
-- 18분 분량, 이미지 4개, FAQ 6개, 내부링크 6개
-- 번 카드(Burn Card) 설명 + 포지션 중요성 추가
-- 히어로 이미지: 딜러버튼·SB·BB 위치·행동순서 인포그래픽으로 교체 (54KB)
-- "홀덤 룰" SERP Top6 경쟁 분석 → 콘텐츠 품질 우세, 도메인 권위만 부족
+### 1. 관련 글 카드 UI 개선 (`tournament-guide-post.tsx`)
+- 관련 글 카드에 실제 히어로 이미지 썸네일 표시 (`next/image`)
+- 이미지 없는 포스트는 포커카드 SVG 폴백 (`components/card-thumb.tsx`)
+- `CardThumb` 공유 컴포넌트 분리 → `blog-index-client.tsx` 중복 코드 140줄 제거
+- trailing slash 버그 수정 (관련 글 링크 `/blog/slug/` → `/blog/slug`)
 
-### 2. SEO 구조 개선 — 앱 페이지 카니발라이제이션 해소
-- `/rules/texas-holdem` → **noindex** (블로그와 100% 키워드 겹침)
-- `/hands` → **noindex** (`/blog/holdem-hand-rankings`와 겹침)
-- `/rules` → 메타 추가, 텍사스 홀덤 내용 차별화, 모든 링크 → `/blog/holdem-rules`로 교체
-- trailing slash 버그 수정 (`/blog/holdem-hand-rankings/` → `/blog/holdem-hand-rankings`)
-
-### 앱 페이지 색인 현황 (최신)
-| 페이지 | 구글 색인 | 비고 |
-|--------|----------|------|
-| `/rules` | ✅ 색인 | "포커 게임 종류 허브", 384 노출/27.6위 |
-| `/rules/omaha` | ✅ 색인 | 96 노출/18위, 유지 |
-| `/rules/seven-card-stud` | ✅ 색인 | 유지 |
-| `/rules/texas-holdem` | ❌ noindex | `/blog/holdem-rules`로 역할 이전 |
-| `/hands` | ❌ noindex | `/blog/holdem-hand-rankings`로 역할 이전 |
+### 2. WSOP 2025 · APT 제주 2026 히어로 이미지 생성 및 추가
+- `wsop-2025-tournament-guide-hero.webp` 생성 (77.8KB) → `lib/posts.ts` image 필드 추가
+- `apt-jeju-classic-2026-guide-hero.webp` 생성 (79.1KB) → `lib/posts.ts` image 필드 추가
+- 이제 토너먼트 카테고리 관련 글 3장 모두 실제 사진 썸네일로 표시
 
 ---
 
 ## 🚀 다음 세션 할 일 (우선순위 순)
 
 ### 1순위 — 즉시 할 것
-- **GSC에서 `/blog/holdem-rules` URL 수동 색인 요청** (오늘 발행, 아직 크롤 안 됨)
+- **GSC에서 `/blog/holdem-rules` URL 수동 색인 요청** (아직 확인 안 된 경우)
   - 구글 서치콘솔 → URL 검사 → "색인 생성 요청"
 
 ### 2순위 — 영어 포스트 SEO 강화
 - GSC 기준: `/en/blog/texas-holdem-rules-for-beginners` **노출 1,140 / 순위 54.7위** → 가장 임팩트 큰 개선 대상
 - 영어 포스트 20개 중 노출 많고 순위 낮은 것들 순서대로 리라이팅
 
-### 3순위 — 필라 포스트 추가 발행
-- P3: 홀덤 확률 (pillar 미발행 또는 보강 필요 확인)
+### 3순위 — 이미지 없는 토너먼트 포스트 이미지 추가
+- 아직 `image` 필드 없는 토너먼트 포스트들:
+  - `holdem-tournament-tax-guide`, `holdem-bubble-strategy`, `holdem-tournament-schedule-check`
+  - `holdem-tournament-how-to-enter`, `holdem-tournament-buy-in-cost`, `icm-poker-meaning`
+  - `holdem-tournament-vs-cash-game` (lib/posts/ 소속)
+- 이미지 생성 → webp 변환(quality 50, 60~80KB 이하) → image 필드 추가
+
+### 4순위 — 필라 포스트 추가 발행
 - P4~P11 필라 중 블로그 없는 것들 순차 발행
 - 참고: `canvases/content-roadmap.canvas.tsx`에 전체 목록 있음
 
-### 4순위 — 기존 글 검수
+### 5순위 — 기존 글 검수
 - trailing slash 전수 점검 (`/blog/x/` → `/blog/x`)
 - 1KB 플레이스홀더 이미지 찾아서 교체
 - 포커 핸드 예시 사실오류 검산 (CLAUDE.md §13 참조)
