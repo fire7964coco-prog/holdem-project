@@ -3,6 +3,8 @@ import type { Post } from "../posts";
 export const POST: Post = {
   slug: "holdem-value-bet-sizing",
   emoji: "💎",
+  image: "/images/holdem-value-bet-sizing-chart.webp",
+  imageAlt: "홀덤 밸류벳 크기를 플랍·턴·리버 스트리트별 팟 비율로 정리한 베팅 사이즈 전략 표",
   title: "홀덤 밸류벳 사이즈 — 팟의 몇 %가 맞는지 완전 정복",
   seoTitle: "밸류벳 작게 하면 돈 새는 이유 — 홀덤 사이즈 기준",
   desc: "【밸류벳 사이즈】탑 페어 잡고 팟의 30%만 쐈다가 상대가 싸게 콜하고 턴에 역전당 본 적 있나요? ⚡스트리트별 %·얇은 밸류·콜링 스테이션 대응까지 홀덤펍 실전 기준을 12분에 정리했습니다.",

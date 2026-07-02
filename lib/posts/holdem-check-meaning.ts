@@ -12,6 +12,8 @@ export const POST: Post = {
   keepImagesInBody: true,
   readTime: "9분",
   emoji: "✋",
+  image: "/images/holdem-check-meaning-mistakes.webp",
+  imageAlt: "홀덤에서 체크하면 안 되는 초보 실수 네 가지를 실수·이유·대안 행동으로 정리한 표",
   tags: ["홀덤 체크 뜻", "체크 뜻", "홀덤 체크", "홀덤 기초", "BB 옵션", "홀덤 초보"],
   content: `
 ## ⚡ 홀덤 체크 뜻, "패스"라고 부르면 안 되는 이유

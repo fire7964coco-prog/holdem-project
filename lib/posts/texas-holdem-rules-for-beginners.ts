@@ -12,6 +12,8 @@ export const POST: Post = {
   keepImagesInBody: true,
   readTime: "14분",
   emoji: "♠️",
+  image: "/images/rules-texas-holdem.webp",
+  imageAlt: "녹색 홀덤 테이블 위에 공용 카드와 여러 색 칩이 쌓여 있고 앞에 홀카드 두 장이 놓인 모습",
   tags: [
     "텍사스 홀덤 초보 규칙",
     "홀덤 하는 법",

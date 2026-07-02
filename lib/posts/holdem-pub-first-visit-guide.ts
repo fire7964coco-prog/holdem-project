@@ -11,6 +11,8 @@ export const POST: Post = {
   updated: "2026-05-19",
   readTime: "12분",
   emoji: "🍺",
+  image: "/images/holdem-pub-players-table.webp",
+  imageAlt: "홀덤펍 테이블에 앉아 칩을 앞에 두고 카드 게임을 즐기는 두 손님",
   tags: ["홀덤펍", "홀덤펍 처음 가는 법", "홀덤펍 초보", "홀덤펍 에티켓", "홀덤펍 비용"],
   content: `
 ---

@@ -3,6 +3,8 @@ import type { Post } from "../posts";
 export const POST: Post = {
   slug: "holdem-check-raise",
   emoji: "🪤",
+  image: "/images/holdem-check-raise-counter.webp",
+  imageAlt: "체크레이즈를 당했을 때 상대 범위 축소부터 콜·폴드 결정까지 단계별로 정리한 대응 표",
   title: "홀덤 체크레이즈란 — 뜻과 타이밍 완전 정복",
   seoTitle: "⚡ 체크레이즈 맞으면 판이 꼬입니다 — 뜻·대응 3분",
   desc: "【홀덤 체크레이즈】C벳 했는데 체크-레이즈 맞으면 당황하죠. ⚡밸류·블러프 타이밍·OOP 사이즈·당했을 때 폴드·콜·3벳 기준 — 체류 1분+ 읽는 실전형 11분 가이드.",

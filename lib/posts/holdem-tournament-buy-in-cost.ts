@@ -12,6 +12,8 @@ export const POST: Post = {
   hideSummaryImageSlot: true,
   readTime: "16분",
   emoji: "💰",
+  image: "/images/tournament-table-action.webp",
+  imageAlt: "토너먼트 시계 옆에 쌓인 여러 색의 칩 스택과 딜러 버튼이 놓인 홀덤 테이블",
   tags: [
     "홀덤 대회 바이인",
     "홀덤 대회 참가비",

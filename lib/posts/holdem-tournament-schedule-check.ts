@@ -12,6 +12,8 @@ export const POST: Post = {
   hideSummaryImageSlot: true,
   readTime: "14분",
   emoji: "📅",
+  image: "/images/tournament-hall-wsop.webp",
+  imageAlt: "수많은 포커 테이블이 가득 들어찬 대형 홀덤 토너먼트 대회장 전경",
   tags: [
     "홀덤 대회 일정",
     "포커 대회 일정",

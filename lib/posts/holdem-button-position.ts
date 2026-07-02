@@ -12,6 +12,8 @@ export const POST: Post = {
   keepImagesInBody: true,
   readTime: "15분",
   emoji: "🎯",
+  image: "/images/holdem-button-position-hero.webp",
+  imageAlt: "스포트라이트가 딜러 버튼 자리를 비추는 홀덤 테이블, 버튼 포지션이 가장 유리한 자리임을 보여주는 장면",
   tags: ["홀덤 버튼 포지션", "버튼 포지션", "BTN 전략", "홀덤 포지션 순서", "블라인드 스틸", "인포지션"],
   content: `
 홀덤을 어느 정도 친 사람이라면 "버튼이 제일 좋은 자리"라는 말을 수도 없이 들었을 겁니다. 그런데 정작 **왜** 버튼이 유리한지, 그 유리함을 어떻게 돈으로 바꾸는지 설명할 수 있는 사람은 많지 않습니다.

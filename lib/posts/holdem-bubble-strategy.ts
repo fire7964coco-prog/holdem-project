@@ -10,6 +10,8 @@ export const POST: Post = {
   updated: "2026-05-06",
   readTime: "13분",
   emoji: "🫧",
+  image: "/images/holdem-bubble-chips.webp",
+  imageAlt: "초록 펠트 위에 쌓인 여러 색의 포커 칩 더미와 에이스 두 장",
   tags: ["홀덤 버블 전략", "버블 플레이", "숏스택 버블", "빅스택 버블", "토너먼트 생존"],
   content: `
 ---

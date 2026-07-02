@@ -11,6 +11,8 @@ export const POST: Post = {
   updated: "2026-05-06",
   readTime: "13분",
   emoji: "👑",
+  image: "/images/kk-position-fold-real.webp",
+  imageAlt: "카지노 포커 테이블에서 포켓 킹 두 장을 들고 보드를 보며 고민하는 플레이어",
   tags: ["포켓킹 플레이법", "KK 전략", "포켓킹 에이스 보드", "홀덤 KK", "KK 프리플랍"],
   content: `
 홀덤펍에서 K♠K♥를 받았을 때의 그 짜릿함은 경험해본 분들은 아실 겁니다. AA 다음으로 강력한 핸드, 카우보이라고도 불리는 ==포켓킹==이에요. 그런데 왜 자꾸 지는 걸까요?

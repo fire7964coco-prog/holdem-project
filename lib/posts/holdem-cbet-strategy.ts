@@ -11,6 +11,8 @@ export const POST: Post = {
   updated: "2026-05-19",
   readTime: "11분",
   emoji: "🎯",
+  image: "/images/overbet-board-texture-guide.webp",
+  imageAlt: "드라이 보드와 웻 보드를 실제 카드로 비교해 C벳 여부 판단 기준을 보여주는 카드",
   tags: ["c벳", "컨티뉴에이션 벳", "c벳 타이밍", "더블 배럴", "드라이 보드"],
   content: `
 홀덤을 막 배운 사람들이 공통으로 겪는 상황이 있다. 프리플랍에서 AK로 3BB 레이즈했는데, 플랍이 Q♥7♦2♣으로 깔렸다. 손에 아무것도 없다. 이때 어떻게 해야 할까?

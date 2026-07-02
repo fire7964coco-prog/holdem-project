@@ -12,6 +12,8 @@ export const POST: Post = {
   hideSummaryImageSlot: true,
   readTime: "16분",
   emoji: "🏆",
+  image: "/images/icm-chips-not-money-real.webp",
+  imageAlt: "초록 펠트 위에 놓인 에이스 카드와 검정 칩 더미 — 토너먼트 칩과 캐시 게임의 차이",
   tags: [
     "홀덤 토너먼트 캐시게임 차이",
     "토너먼트 vs 캐시게임",

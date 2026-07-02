@@ -11,6 +11,8 @@ export const POST: Post = {
   updated: "2026-05-06",
   readTime: "11분",
   emoji: "⚖️",
+  image: "/images/holdem-pub-legal-card-table.webp",
+  imageAlt: "홀덤펍 테이블에서 딜러가 카드를 나눠주고 플레이어가 홀카드와 파란 칩을 앞에 둔 게임 장면",
   tags: ["홀덤펍 합법", "홀덤펍 불법", "홀덤 도박죄", "홀덤펍 법적 기준", "홀덤펍 처벌"],
   content: `
 ---

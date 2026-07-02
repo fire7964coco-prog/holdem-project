@@ -11,6 +11,8 @@ export const POST: Post = {
   updated: "2026-05-06",
   readTime: "12분",
   emoji: "🃏",
+  image: "/images/pocket-aces-aa-intro-infographic.webp",
+  imageAlt: "포켓에이스 AA 핵심 전략 다섯 가지를 프리플랍·웻보드·멀티웨이로 정리한 요약 노트",
   tags: ["포켓에이스 플레이법", "홀덤 AA 전략", "AA 슬로우플레이", "포켓에이스 프리플랍", "AA 셋업"],
   content: `
 처음 홀덤펍에서 ==포켓에이스==를 받았던 날을 아직도 기억합니다. 심장이 빠르게 뛰었고, "이번엔 무조건이다"라는 생각이 들었어요. 프리플랍에서 림프(콜만)하고 들어갔습니다. 상대를 트랩하려고요.

@@ -11,6 +11,8 @@ export const POST: Post = {
   updated: "2026-05-06",
   readTime: "12분",
   emoji: "🏆",
+  image: "/images/icm-stack-strategy-players.webp",
+  imageAlt: "토너먼트 테이블에 둘러앉은 플레이어들, 스택 크기에 따라 ICM 판단이 달라지는 실전 상황",
   tags: ["ICM이란", "홀덤 ICM", "ICM 뜻", "포커 ICM", "토너먼트 ICM"],
   content: `
 홀덤펍 토너먼트 버블 상황입니다. 10명 SNG, 3명 머니인. 지금 4명이 남았어요. 제 스택은 중간 정도. UTG가 올인을 치고 제 핸드는 A♠J♥. 프리플랍 에퀴티 기준으로는 콜이 맞습니다. 그런데 왠지 폴드해야 할 것 같은 느낌이 들어요.

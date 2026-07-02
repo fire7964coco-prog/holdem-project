@@ -12,6 +12,8 @@ export const POST: Post = {
   hideSummaryImageSlot: true,
   readTime: "17분",
   emoji: "🎫",
+  image: "/images/wsop-satellite-tournament.webp",
+  imageAlt: "위성 예선을 상징하는 금색 코인이 놓인 포커 테이블 — 본선 참가 티켓을 따는 관문",
   tags: [
     "홀덤 대회 참가 방법",
     "홀덤 토너먼트 참가",

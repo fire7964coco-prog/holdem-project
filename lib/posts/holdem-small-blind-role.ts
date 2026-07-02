@@ -12,6 +12,8 @@ export const POST: Post = {
   keepImagesInBody: true,
   readTime: "10분",
   emoji: "⚡",
+  image: "/images/holdem-small-blind-position.webp",
+  imageAlt: "홀덤 테이블에서 딜러 버튼 왼쪽의 스몰블라인드 자리와 빅블라인드 위치를 표시한 화면",
   tags: ["스몰블라인드 역할", "스몰블라인드 뜻", "빅블라인드 차이", "홀덤 블라인드", "홀덤 포지션", "홀덤 초보"],
   content: `
 ## ⚡ 스몰블라인드 역할, 싸 보이는데 왜 제일 위험할까?
