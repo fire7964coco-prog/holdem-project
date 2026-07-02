@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In Texas Hold'em, only play the top 10–40% of starting hands depending on your position. Premium pairs (AA–JJ) and AK raise from anywhere. Most hands should be folded preflop, especially from early position.",
   category: "초보 가이드",
   date: "2026-06-14",
-  updated: "2026-06-14",
+  updated: "2026-07-02",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🂡",
@@ -69,7 +69,7 @@ These hands should almost always be raised preflop, from any position at the tab
 
 </div>
 
-==g:With hands 1–5 (pocket pairs), always raise and often re-raise preflop to build the pot.== With AK and AQ, your goal is to get heads-up where your overcards have maximum equity.
+==g:With hands 1–5 (pocket pairs), always raise and often re-raise preflop to build the pot.== With AK and AQ, your goal is to get heads-up where your overcards have maximum equity. (Fuzzy on what actually beats what once the board comes? Review the [poker hand rankings](/en/blog/holdem-hand-rankings).)
 
 ---
 
@@ -92,7 +92,7 @@ From early position, many players still act after you — so you need stronger h
 
 The rule: ==the later you act, the more hands you can open profitably==. Because the button always acts last postflop, it's the most valuable seat in poker.
 
-For a full breakdown of every seat name (UTG, HJ, CO, BTN, SB, BB), see the [poker positions guide](/en/blog/holdem-positions/).
+For a full breakdown of every seat name (UTG, HJ, CO, BTN, SB, BB), see the [poker positions guide](/en/blog/holdem-positions).
 
 ---
 
@@ -152,12 +152,14 @@ For your first 20+ sessions, use a reference chart literally:
 
 1. **Check your position** before looking at your cards
 2. **Match your hole cards** to the chart for that position
-3. **Raise or fold** — avoid calling (limping) as a default action
+3. **Raise or fold** — avoid calling ([limping](/en/blog/holdem-betting-actions)) as a default action
 4. **Fold everything else** even if it feels tight
 
 ==g:It feels boring. That's the point.== Tight-aggressive preflop selection is the foundation of every winning poker style, from beginner cash games to high-stakes tournaments.
 
-Once your rules knowledge is solid, use the [Texas Hold'em starting hand chart tool](/hand-chart/) to explore expanded ranges for each position.
+:::rangechart:::
+
+Once your rules knowledge is solid, use the [Texas Hold'em starting hand chart tool](/hand-chart) to explore expanded ranges for each position.
 
 ---
 
@@ -181,24 +183,24 @@ A. Suited adds about 2–3% equity over the same offsuit hand — meaningful but
 
 **Q. Is AK a good hand even if it misses the flop?**
 
-A. Yes, AK is a top-5 hand. Before the flop, AK runs roughly even against QQ and JJ (around 43–45%), and becomes a clear favorite only against pairs 66 and below. It is still correct to raise and re-raise with AK preflop — the equity is close enough, and you're building a pot you're often favored to win by the river. When AK hits an ace or king on the flop, it makes top pair with the best possible kicker. When it completely misses, fold to heavy aggression.
+A. Yes, AK is a top-5 hand. Before the flop, AK runs roughly even against QQ and JJ (around 43–45%) and stays about a coin flip against every pocket pair — even small ones (the classic "race"). AK is only a clear favorite against the non-pair hands it dominates, like AQ, AJ, and KQ. It is still correct to raise and re-raise with AK preflop — the equity is close enough, and you're building a pot you're often favored to win by the river. When AK hits an ace or king on the flop, it makes top pair with the best possible kicker. When it completely misses, fold to heavy aggression.
 
 ---
 
 ## Related Posts
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
-  <a href="/en/blog/holdem-hand-rankings/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/en/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Pillar</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Poker Hand Rankings — Best to Worst</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">All 10 hands explained with odds and examples</div>
   </a>
-  <a href="/en/blog/holdem-positions/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/en/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Positions</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Poker Positions: UTG to Button</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Why position changes which hands to play</div>
   </a>
-  <a href="/en/blog/holdem-tiebreak-rules/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/en/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Hand Rankings</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Poker Kicker and Tie-Breaker Rules</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Same pair but different result — kicker decides</div>
