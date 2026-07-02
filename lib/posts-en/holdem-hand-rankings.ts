@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Poker hand rankings from best to worst are: Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, One Pair, and High Card.",
   category: "초보 가이드",
   date: "2026-06-09",
-  updated: "2026-06-09",
+  updated: "2026-07-02",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🃏",
@@ -212,9 +212,9 @@ You hold **Q♥ Q♦**. What's your best hand?
 
 :::hand[7♥,8♥,9♥,10♥,J♠] Board (5 cards):::
 
-You hold **K♥ 2♣**. The board has four hearts.
+You hold **6♥ 2♣**. The board has four hearts.
 
-→ Your K♥ is the fifth heart, so you think "flush." But look at the sequence: **K♥ 10♥ 9♥ 8♥ 7♥** is five hearts *in a row* — a **king-high straight flush**, the #2 hand. Always check whether your flush cards are also connected before you assume it's just a flush.
+→ Your 6♥ is the fifth heart, so you think "flush." But look at the sequence: **10♥ 9♥ 8♥ 7♥ 6♥** is five hearts *in a row* — a **ten-high straight flush**, the #2 hand. (Swap that 6♥ for a K♥ and the hearts are 7-8-9-10-K — no longer connected, so it drops to a plain king-high flush.) Always check whether your flush cards are also *consecutive* before you assume a straight flush.
 
 ### Puzzle 3 — When you have to share
 
@@ -329,6 +329,14 @@ A. The Royal Flush (A-K-Q-J-10 of one suit). It's unbeatable and can only ever t
 
 A. Yes. Three of a kind is #7 and two pair is #8, so trips win. Two pair only beats one pair and high card.
 
+**Q. Does a straight flush beat four of a kind?**
+
+A. Yes. A straight flush (#2) beats four of a kind (#3) — five cards in sequence of one suit outrank quads. The only thing above a straight flush is a royal flush, which is just the ace-high version of it.
+
+**Q. What is the lowest (worst) hand in poker?**
+
+A. The worst possible hand is 7-5-4-3-2 in mixed suits ("seven-high"). It's the lowest high-card holding that isn't a pair, straight, or flush — the classic "you have nothing" hand.
+
 ---
 
 ## The 3 Things to Remember
@@ -339,7 +347,7 @@ A. Yes. Three of a kind is #7 and two pair is #8, so trips win. Two pair only be
 
 Learn the order in an afternoon, drill the confusing pairs, and run the suits → straights → pairs scan on every board. Do that and you'll never again push the pot the wrong way.
 
-Once you know the rankings, the natural next step is knowing which hands to start with — use the [Texas Hold'em starting hands chart by position](/en/blog/holdem-starting-hands-chart/) to see exactly which hole cards to play from each seat.
+Once you know the rankings, the natural next step is knowing which hands to start with — use the [Texas Hold'em starting hands chart by position](/en/blog/holdem-starting-hands-chart) to see exactly which hole cards to play from each seat.
 
 ---
 
@@ -366,12 +374,12 @@ Once you know the rankings, the natural next step is knowing which hands to star
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Texas Hold'em Rules for Beginners</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Full rules from deal to showdown</div>
   </a>
-  <a href="/en/blog/holdem-starting-hands-chart/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/en/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Starting Hands</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Starting Hands Chart by Position</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Which hole cards to play from UTG to button</div>
   </a>
-  <a href="/en/blog/holdem-reading-the-board/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/en/blog/holdem-reading-the-board" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Board Reading</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">How to Read the Board in Hold'em</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Find your best 5 cards from 7 — wet vs dry board</div>
