@@ -81,6 +81,9 @@ export default function HandChart() {
 
         {/* Hero */}
         <div className="text-center space-y-3">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/30 text-primary text-xs font-bold tracking-wide">
+            ♠ 인터랙티브 스타팅 핸드 도구
+          </div>
           <h1 className="text-3xl md:text-4xl font-bold text-foreground">
             홀덤 스타팅 핸드 차트
           </h1>
@@ -201,7 +204,7 @@ export default function HandChart() {
                       onMouseLeave={() => setHoveredCell(null)}
                     >
                       <span
-                        className="text-[8px] md:text-[10px] font-bold leading-none select-none"
+                        className="text-[9px] md:text-[11px] font-bold leading-none select-none"
                         style={{ color: textColor }}
                       >
                         {isPair ? (
@@ -282,7 +285,7 @@ export default function HandChart() {
 
         {/* Position Table */}
         <section className="space-y-4">
-          <h2 className="text-xl font-bold text-foreground">포지션별 오픈 레인지 요약</h2>
+          <h2 className="text-xl font-bold text-foreground border-l-4 border-primary pl-3">포지션별 오픈 레인지 요약</h2>
           <div className="overflow-x-auto rounded-xl border border-border/50">
             <table className="w-full text-sm">
               <thead>
@@ -335,7 +338,7 @@ export default function HandChart() {
 
         {/* Why section */}
         <section className="space-y-4">
-          <h2 className="text-xl font-bold text-foreground">포지션이 핸드 선택에 영향을 주는 이유</h2>
+          <h2 className="text-xl font-bold text-foreground border-l-4 border-primary pl-3">포지션이 핸드 선택에 영향을 주는 이유</h2>
           <div className="grid md:grid-cols-2 gap-4">
             {[
               {
@@ -344,8 +347,8 @@ export default function HandChart() {
                 icon: "📍",
               },
               {
-                title: "UTG는 9명이 뒤에 있다",
-                desc: "UTG에서 오픈 레이즈 시 8명의 리액션을 모릅니다. 리레이즈 확률이 높아 투페어 이상의 드로우 EV가 낮아지므로 프리미엄 핸드 위주로 좁혀야 합니다.",
+                title: "UTG는 뒤에 8명이 있다",
+                desc: "9인 테이블 UTG에서 오픈 레이즈 시 뒤 8명의 리액션을 모릅니다. 리레이즈 확률이 높아 수티드 커넥터 같은 투기적 핸드가 제 가치를 실현하기 어려우므로, 프리미엄 핸드 위주로 좁혀야 합니다.",
                 icon: "⚠️",
               },
               {
@@ -370,7 +373,7 @@ export default function HandChart() {
 
         {/* FAQ */}
         <section className="space-y-3">
-          <h2 className="text-xl font-bold text-foreground">자주 묻는 질문</h2>
+          <h2 className="text-xl font-bold text-foreground border-l-4 border-primary pl-3">자주 묻는 질문</h2>
           {[
             {
               q: "스타팅 핸드 차트를 무조건 따라야 하나요?",
