@@ -4,7 +4,7 @@ import { SITE } from "@/lib/site";
 export const metadata: Metadata = {
   title: "⚡ 홀덤 대회 일정 2026 — WSOP 진행중·APT 인천 예정",
   description:
-    "【홀덤 대회 일정】2026.06.04 공식 기준 · WSOP 라스베이거스 진행중(~7/15) · APT 인천 8/7·EPT 바르셀로나 8/16 예정. ⚡국내외 일정·바이인·종료/진행중/예정 상태를 한 페이지에.",
+    "【홀덤 대회 일정】2026.07.02 기준 · WSOP 라스베이거스 진행중(메인 7/2~13) · APT 인천 8/7·APPT 코리아 9/3·EPT 바르셀로나 8/16 예정. ⚡국내외 일정·바이인·종료/진행중/예정 상태를 한 페이지에.",
   alternates: { canonical: `${SITE}/tournaments` },
   openGraph: {
     title: "⚡ 홀덤 대회 일정 2026 — WSOP·APT·GOP | 홀덤마스터",

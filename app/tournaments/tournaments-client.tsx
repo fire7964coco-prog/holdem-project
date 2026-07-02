@@ -85,7 +85,7 @@ const INTERNATIONAL = [
     badgeColor: "bg-primary/20 text-primary border-primary/40",
     desc: "1970년부터 시작된 세계 포커의 올림픽. 2026년에는 라스베이거스 Horseshoe·Paris 카지노에서 100개의 브레이슬릿 이벤트가 열립니다. 골드 브레이슬릿(Gold Bracelet) 획득은 포커 선수 최고의 영예입니다. 한국 선수들도 매년 수십 명이 참가하는 세계적 홀덤 대회입니다.",
     highlights: [
-      "2025 시리즈 총 참가 246,960명·상금 $4.81억 — 역대 최고 기록",
+      "2025 시리즈 총 참가 246,960명·상금 $4.82억 — 역대 최고 기록",
       "2026 메인이벤트 7/2 시작, 파이널 테이블은 8/3~5 ESPN 생중계",
       "WSOP.com·GGPoker 온라인 예선으로 위성 진출 가능",
       "WSOP Circuit 지역 대회로 브레이슬릿 도전 가능",
@@ -326,7 +326,7 @@ const BEGINNER_GUIDE = [
   },
 ];
 
-/** 2026-06-12 기준. WSOP·APT·EPT·GOP·AJPC·APPT·Triton 등 공식 일정 웹검색 재확인 후 반영. */
+/** 2026-07-02 기준. WSOP·APT·EPT·GOP·AJPC·APPT·Triton 등 공식 일정 웹검색 재확인 후 반영. */
 const SCHEDULE_2026 = [
   {
     id: "kpc-jeju",
@@ -723,7 +723,7 @@ function ScheduleSection() {
       <div className="flex items-center gap-3 mb-5">
         <Calendar className="w-5 h-5 text-primary flex-shrink-0" />
         <h2 className="text-2xl font-serif font-bold text-foreground">2026 홀덤 대회 일정표</h2>
-        <span className="text-xs bg-primary/15 text-primary border border-primary/30 px-2.5 py-0.5 rounded-full font-bold">2026.06.23 기준</span>
+        <span className="text-xs bg-primary/15 text-primary border border-primary/30 px-2.5 py-0.5 rounded-full font-bold">2026.07.02 기준</span>
       </div>
       <p className="text-muted-foreground text-sm mb-5 leading-relaxed">
         WSOP·APT·APPT·EPT·GOP·AJPC·Triton 공식 발표 일정을 웹검색으로 재확인해 반영했습니다. 변경·연기는 각 대회 공식 사이트를 우선 확인하세요.
@@ -867,7 +867,7 @@ export default function Tournaments() {
     "author": { "@type": "Organization", "name": "홀덤마스터", "url": "https://www.holdemmaster.com" },
     "publisher": { "@type": "Organization", "name": "홀덤마스터", "url": "https://www.holdemmaster.com", "logo": { "@type": "ImageObject", "url": "https://www.holdemmaster.com/favicon.svg" } },
     "datePublished": "2026-03-26",
-    "dateModified": "2026-06-23",
+    "dateModified": "2026-07-02",
     "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.holdemmaster.com/tournaments" },
     "image": "https://www.holdemmaster.com/images/tournament-hall-wsop.webp",
     "keywords": "홀덤 대회, 포커 토너먼트, KPT, WSOP, 홀덤 대회 참가방법, 피망 포커 대회, 한게임 포커 대회",
@@ -950,7 +950,7 @@ export default function Tournaments() {
             국내 피망포커·한게임·KPT·홀덤펍 리그부터<br className="hidden md:block" />
             세계 최대 <strong className="text-foreground">WSOP·WPT·EPT·APT</strong>까지.<br />
             홀덤 대회의 모든 것을 한눈에 정리했습니다.
-            <span className="block mt-3 text-sm text-primary/90">2026년 6월 23일 기준 — WSOP 라스베이거스 진행 중(~7/15, 메인 7/2~13) · 하반기 APT 인천(8/7)·APPT 코리아(9/3)·EPT 바르셀로나(8/16) 예정 · 공식 일정 웹검색 재확인 반영</span>
+            <span className="block mt-3 text-sm text-primary/90">2026년 7월 2일 기준 — WSOP 라스베이거스 메인이벤트 진행 중(메인 7/2~13, 파이널 테이블 8/3~5 ESPN 생중계) · 하반기 APT 인천(8/7)·APPT 코리아(9/3)·EPT 바르셀로나(8/16) 예정 · 공식 일정 웹검색 재확인 반영</span>
           </p>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-10 max-w-2xl mx-auto">
