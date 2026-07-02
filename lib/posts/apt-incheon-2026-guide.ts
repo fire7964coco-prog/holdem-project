@@ -16,6 +16,18 @@ export const POST: Post = {
   image: "/images/apt-incheon-2026-guide-hero.webp",
   imageAlt: "APT 인천 2026 파라다이스 시티 카지노 포커 토너먼트 — 메인이벤트 테이블 전경",
   keepImagesInBody: true,
+  event: {
+    name: "APT 인천 2026 (Asian Poker Tour Incheon 2026)",
+    startDate: "2026-08-07",
+    endDate: "2026-08-16",
+    locationName: "파라다이스 시티 (Paradise City)",
+    locationAddress: "인천광역시 중구 영종해안남로321번길 186",
+    lowPriceKRW: 400000,
+    highPriceKRW: 35000000,
+    offerUrl: "https://www.theasianpokertour.com/series/apt-incheon-south-korea-2026/events",
+    organizerName: "Asian Poker Tour",
+    organizerUrl: "https://www.theasianpokertour.com",
+  },
   content: `
 APT 인천 2026에 참가하고 싶은데 어디서부터 시작해야 할지 모르겠다면, 이 글이 그 답입니다.
 

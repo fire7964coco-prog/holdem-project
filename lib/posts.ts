@@ -43,6 +43,25 @@ export interface Post {
   * "tournament-guide" → 대회 참가 가이드 시리즈 전용 레이아웃.
   */
  layout?: "tournament-guide";
+ /**
+  * 대회/이벤트 글에 지정하면 Event 구조화 데이터(JSON-LD)를 생성한다.
+  * 구글 이벤트 리치결과 노출 대상이 됨. (날짜는 ISO 8601 YYYY-MM-DD)
+  */
+ event?: {
+   name: string;
+   startDate: string;
+   endDate?: string;
+   locationName: string;
+   locationAddress: string;
+   /** 최저 바이인(원) */
+   lowPriceKRW?: number;
+   /** 최고 바이인(원) */
+   highPriceKRW?: number;
+   /** 공식 등록/일정 URL */
+   offerUrl?: string;
+   organizerName?: string;
+   organizerUrl?: string;
+ };
 }
 
 const LEGACY_POSTS: Post[] = [

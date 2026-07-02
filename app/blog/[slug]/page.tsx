@@ -138,7 +138,53 @@ export default function Page({ params }: { params: { slug: string } }) {
       ? { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqItems }
       : null;
 
-  const graph = [articleSchema, breadcrumbSchema, ...(faqSchema ? [faqSchema] : [])];
+  // 대회/이벤트 글이면 Event JSON-LD 생성 (구글 이벤트 리치결과 대상)
+  const eventSchema = post.event
+    ? {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        name: post.event.name,
+        startDate: post.event.startDate,
+        ...(post.event.endDate ? { endDate: post.event.endDate } : {}),
+        eventStatus: "https://schema.org/EventScheduled",
+        eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+        location: {
+          "@type": "Place",
+          name: post.event.locationName,
+          address: post.event.locationAddress,
+        },
+        image: [ogImage],
+        description: post.desc,
+        ...(post.event.lowPriceKRW
+          ? {
+              offers: {
+                "@type": "AggregateOffer",
+                priceCurrency: "KRW",
+                lowPrice: post.event.lowPriceKRW,
+                ...(post.event.highPriceKRW ? { highPrice: post.event.highPriceKRW } : {}),
+                ...(post.event.offerUrl ? { url: post.event.offerUrl } : {}),
+                availability: "https://schema.org/InStock",
+              },
+            }
+          : {}),
+        ...(post.event.organizerName
+          ? {
+              organizer: {
+                "@type": "Organization",
+                name: post.event.organizerName,
+                ...(post.event.organizerUrl ? { url: post.event.organizerUrl } : {}),
+              },
+            }
+          : {}),
+      }
+    : null;
+
+  const graph = [
+    articleSchema,
+    breadcrumbSchema,
+    ...(eventSchema ? [eventSchema] : []),
+    ...(faqSchema ? [faqSchema] : []),
+  ];
 
   /**
    * 첫 이미지(이전 LCP 후보)는 본문에서 제거되고 페이지 맨 하단 "이 글 전체 요약" 섹션으로 이동.
