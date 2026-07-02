@@ -428,6 +428,18 @@ export function renderMarkdown(content: string): string {
       `<div style="display:inline-flex;align-items:center;gap:10px;margin:8px 8px 8px 0;padding:8px 18px;background:rgba(212,175,55,0.1);border:1px solid rgba(212,175,55,0.3);border-radius:100px">` +
       `<span style="font-size:20px;font-weight:800;color:#d4af37">${num}</span>` +
       `<span style="font-size:12px;color:var(--muted-foreground)">${label}</span></div>`)
+    // :::eventcta::: — 본문 중간 이벤트 참여 유도 CTA (클릭 시 홈 커뮤니티 이벤트 탭)
+    .replace(/^:::eventcta:::$/gm, () =>
+      `<a href="/?tab=event" style="display:block;text-decoration:none;margin:32px 0;border-radius:16px;overflow:hidden;background:linear-gradient(135deg,#0b1120 0%,#141c30 100%);border:1px solid rgba(212,175,55,0.35);box-shadow:0 8px 28px rgba(0,0,0,0.18)">` +
+      `<div style="height:4px;width:100%;background:linear-gradient(90deg,#d4af37,#f0d060,transparent)"></div>` +
+      `<div style="padding:20px 22px;display:flex;align-items:center;gap:16px;flex-wrap:wrap">` +
+      `<div style="flex:1;min-width:210px">` +
+      `<div style="display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:800;letter-spacing:0.04em;color:#f0d060;margin-bottom:8px">🎰 홀덤마스터 무료 이벤트</div>` +
+      `<div style="font-size:18px;font-weight:900;line-height:1.4;color:#f5eeda;margin:0 0 6px">번호 6개 고르고 기프트콘 받아가세요</div>` +
+      `<div style="font-size:13px;line-height:1.6;color:rgba(255,255,255,0.55);margin:0">1~45 중 6개 선택 · 매주 일요일 자동 추첨 · 3개 이상 맞으면 당첨. 레인지 공부하다 잠깐 쉬어가며 참여해보세요.</div>` +
+      `</div>` +
+      `<span style="flex-shrink:0;display:inline-flex;align-items:center;gap:6px;padding:13px 22px;border-radius:12px;background:linear-gradient(135deg,#d4af37,#f0d060);color:#0b1120;font-size:15px;font-weight:900;white-space:nowrap">이벤트 참여하기 →</span>` +
+      `</div></a>`)
     .replace(/^- (.+)$/gm, '<li class="flex gap-2 text-muted-foreground text-sm leading-relaxed mb-1"><span class="text-primary mt-1 flex-shrink-0">•</span><span>$1</span></li>')
     .replace(/(<li.*<\/li>\n?)+/g, (m) => `<ul class="my-4 space-y-1">${m}</ul>`)
     .replace(/\n\n/g, '</p><p class="text-muted-foreground text-base leading-relaxed mb-4">')

@@ -445,6 +445,12 @@ export default function CommunityClient({
   const [loadingMore, setLoadingMore] = useState(false);
   const sentinelRef = useRef<HTMLDivElement>(null);
 
+  // 외부 링크(블로그 CTA 등)에서 ?tab=event 로 진입 시 해당 탭 바로 열기
+  useEffect(() => {
+    const t = new URLSearchParams(window.location.search).get("tab");
+    if (t === "event" || t === "chat" || t === "profile") setTab(t);
+  }, []);
+
   useEffect(() => {
     // OAuth 에러 파라미터 처리
     const params = new URLSearchParams(window.location.search);
