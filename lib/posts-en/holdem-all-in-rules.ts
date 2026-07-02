@@ -3,12 +3,12 @@ import type { Post } from "../posts";
 export const POST: Post = {
   slug: "holdem-all-in-rules",
   title: "Texas Hold'em All-In Rules: Side Pots, Reraises & Showdown",
-  seoTitle: "Went All-In and Still Confused? — Texas Hold'em All-In Rules Fully Explained",
-  desc: "Texas Hold'em all-in rules explained — table stakes, side pots, re-raise eligibility, and showdown order. Everything you need before pushing all your chips.",
+  seoTitle: "Went All-In and Still Confused? — Texas Hold'em All-In Rules & Side Pots",
+  desc: "Shoved all your chips and not sure what you can even win? Texas Hold'em all-in rules — table stakes, side pots, re-raise eligibility, and showdown order, explained.",
   tldr: "Going all-in means betting every chip you have. You can only win what you matched from each opponent (the main pot). Extra bets from bigger stacks form a side pot you cannot win. An all-in for less than a full raise does NOT reopen the betting for players who already acted.",
   category: "초보 가이드",
   date: "2026-06-15",
-  updated: "2026-06-15",
+  updated: "2026-07-02",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "♠",
@@ -28,7 +28,7 @@ You have no idea what's happening.
 
 I've been at that table. The first time I went all-in at a live holdem pub, I didn't know whether I could still win anything, whether the other player could re-raise, or even which pile of chips was mine. Nobody explained it.
 
-==This guide covers every situation: main pots, side pots, re-raise eligibility, and showdown order.== No more freezing when the dealer starts counting stacks.
+==This guide covers every situation: main pots, side pots, re-raise eligibility, and showdown order.== No more freezing when the dealer starts counting stacks. (If the basic betting flow is still fuzzy, the [beginner's rules guide](/en/blog/texas-holdem-rules-for-beginners) covers it first.)
 
 ## What Does "All-In" Mean in Texas Hold'em?
 
@@ -116,7 +116,7 @@ The rule: ==each side pot is built by taking the next-smallest stack's contribut
 
 ==r:This is the single most disputed all-in rule at live tables — I've watched two players argue about it for five minutes while the whole table waited. Both were wrong.==
 
-**The rule:** If a player goes all-in for **less than a full raise**, that all-in does NOT reopen the betting for players who have already acted in that round.
+**The rule:** If a player goes all-in for **less than a [full raise](/en/blog/holdem-betting-actions)**, that all-in does NOT reopen the betting for players who have already acted in that round.
 
 ![Poker re-raise rule after all-in — Player C goes all-in for less than a full raise, Player A can only call or fold](/images/holdem-all-in-reraise-rule.webp)
 
@@ -192,7 +192,7 @@ The minimum raise threshold is always the *last full valid raise* — not any cu
 
 When all betting is complete and a player is all-in, here is what happens at showdown:
 
-1. **Cards are turned face-up.** In tournaments, all hands involved in the all-in are typically tabled once betting is complete. In cash games, the standard last-aggressor rule applies first, then all-in players show.
+1. **Cards are turned face-up.** In tournaments, all hands involved in the all-in are typically tabled once betting is complete. In cash games, the standard [last-aggressor showdown rule](/en/blog/holdem-showdown-rules) applies first, then all-in players show.
 2. **Side pots are awarded first.** The dealer resolves the most recently created side pot first, then works backward to the main pot.
 3. **Cards speak.** The best hand wins each pot they're eligible for — regardless of what players say they have.
 4. **Multiple winners are possible.** Player A can win the main pot. Player B can win the side pot. Neither takes everything just because they won "their" pot.
@@ -257,17 +257,17 @@ A. The core rules are the same, but there are two practical differences. First, 
 ## Related Posts
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
-  <a href="/en/blog/texas-holdem-rules-for-beginners/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/en/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Pillar</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Texas Hold'em Rules for Beginners</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Complete rules from blinds to showdown</div>
   </a>
-  <a href="/en/blog/holdem-split-pot-rules/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/en/blog/holdem-split-pot-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Split Pot</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Split Pot and Chop Rules</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">When pots are chopped and why</div>
   </a>
-  <a href="/en/blog/holdem-showdown-rules/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/en/blog/holdem-showdown-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Showdown</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Showdown Rules</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Who shows first and when you can muck</div>
