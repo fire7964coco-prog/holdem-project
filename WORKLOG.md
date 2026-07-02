@@ -12,6 +12,16 @@
 - 모바일 스티키 CTA: 스크롤 60% 이후 하단 고정 바 (xl 이상 숨김)
 - 빌드: ✅ 51 blog posts / 배포: ✅ Vercel
 
+### SEO 검수·강화 대량 배포 (Claude Code 세션)
+- 족보 클러스터 4개 §13 사실오류 정정: 스트레이트플러시 오류, 플러시/스트레이트 혼동, "마운틴=로열플러시" 오기 → 정정. 별명표·PAA FAQ·신선도 강화
+- holdem-starting-hand-range: 플러시확률(완성 0.8%/드로우 11%) 정정, 이미지 맥락 교체(칩스택·깨끗한 포지션도), seoTitle CTR 강화
+- CTR/검수: when-to-fold, holdem-tournament-how-to-enter(trailing slash 22개 정리), apt-incheon-2026(Event JSON-LD), wsop-2025(결과 recap 전환), /tournaments(신선도)
+- 디자인: 인라인 링크 형광 붓칠(5색)+밑줄, :::eventcta::: 컴포넌트 신설
+- 규칙: posting.mdc를 포스팅·콘텐츠 단일 마스터로 통합 + 포스트 작업 시 자동 읽기(CLAUDE.md) + 검수 체크리스트(SEO 메타 CTR 1순위)
+- /hand-chart 세련 개편 + 모바일 최적화 + 내부링크(양방향)
+- 8/16 APT 인천 대회 후 자산화 클라우드 알림 예약
+- 빌드 ✅ / 배포 ✅
+
 ---
 
 ## 2026-07-01

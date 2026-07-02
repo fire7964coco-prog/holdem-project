@@ -6,7 +6,7 @@
 ---
 
 ## 📅 마지막 작업일
-2026-07-02 (데스크탑 Cursor 세션)
+2026-07-02 (Claude Code 세션 — SEO 검수·강화 대량 + /hand-chart 개편)
 
 ---
 
@@ -24,46 +24,45 @@
 
 ---
 
-## 🔥 이번 세션(2026-07-02) 작업 내용
+## 🔥 이번 세션(2026-07-02, Claude Code) 작업 내용
 
-### 1. 관련 글 카드 UI 개선 (`tournament-guide-post.tsx`)
-- 관련 글 카드에 실제 히어로 이미지 썸네일 표시 (`next/image`)
-- 이미지 없는 포스트는 포커카드 SVG 폴백 (`components/card-thumb.tsx`)
-- `CardThumb` 공유 컴포넌트 분리 → `blog-index-client.tsx` 중복 코드 140줄 제거
-- trailing slash 버그 수정 (관련 글 링크 `/blog/slug/` → `/blog/slug`)
+### 콘텐츠 검수·강화 (§13 사실오류 정정 포함)
+- **족보 클러스터 4개**: 필라(holdem-hand-rankings) + 보조 3개(tiebreak·confusing·vs-7poker). §13 오류 3건 정정 — 스트레이트플러시 오기, 플러시/스트레이트 혼동, **"마운틴=로열플러시" 오기(→A-K-Q-J-10 스트레이트)**. 별명표·PAA FAQ·신선도 강화
+- **holdem-starting-hand-range**: 플러시확률(완성 0.8%/드로우 11%) 정정, 이미지 맥락 교체(칩스택·깨끗한 포지션도), seoTitle CTR 강화
+- **CTR·검수**: when-to-fold, holdem-tournament-how-to-enter(trailing slash 22개 정리), apt-incheon-2026(Event JSON-LD 추가), wsop-2025(결과 recap 전환), /tournaments(신선도)
 
-### 2. WSOP 2025 · APT 제주 2026 히어로 이미지 생성 및 추가
-- `wsop-2025-tournament-guide-hero.webp` 생성 (77.8KB) → `lib/posts.ts` image 필드 추가
-- `apt-jeju-classic-2026-guide-hero.webp` 생성 (79.1KB) → `lib/posts.ts` image 필드 추가
-- 이제 토너먼트 카테고리 관련 글 3장 모두 실제 사진 썸네일로 표시
+### 디자인·시스템
+- 인라인 링크 **형광 붓칠(5색)+밑줄** 강조, `:::eventcta:::` 이벤트 CTA 컴포넌트 신설
+- **규칙 통합**: `.cursor/rules/posting.mdc`를 포스팅·콘텐츠 **단일 마스터**로 통합 + 포스트 작업 시 자동 읽기(CLAUDE.md 지시) + 기존 글 검수 체크리스트(SEO 메타 CTR 1순위)
+- **/hand-chart** 세련 개편 + 모바일 최적화 + 내부링크(양방향)
+
+### 예약/메모리
+- 8/16 APT 인천 대회 후 자산화 클라우드 알림 예약(routine)
+- 메모리: `gsc-28day-snapshot-2026-07`, `apt-incheon-2026-post-event-asset`
 
 ---
 
 ## 🚀 다음 세션 할 일 (우선순위 순)
 
-### 1순위 — 즉시 할 것
-- **GSC에서 `/blog/holdem-rules` URL 수동 색인 요청** (아직 확인 안 된 경우)
-  - 구글 서치콘솔 → URL 검사 → "색인 생성 요청"
+> ⚠️ 포스트 작업 전 `.cursor/rules/posting.mdc`(통합 마스터) 먼저 읽기 — 이제 자동 적용됨.
 
-### 2순위 — 영어 포스트 SEO 강화
-- GSC 기준: `/en/blog/texas-holdem-rules-for-beginners` **노출 1,140 / 순위 54.7위** → 가장 임팩트 큰 개선 대상
-- 영어 포스트 20개 중 노출 많고 순위 낮은 것들 순서대로 리라이팅
+### 1순위 — 영어 포스트 SEO 강화 (다음 트랙, 진행 예정)
+- 대상: `lib/posts-en/` 20개. GSC상 "how to play texas holdem / rules for dummies" 클러스터가 노출 많고 순위 페이지5~8
+- ⚠️ 참고: 해당 EN 룰 글 콘텐츠는 이미 우수 → 문제는 **도메인 권위**(대형 경쟁사). 콘텐츠 추가보다 EN SERP·PAA 재조사·롱테일 커버·내부링크·장기 백링크 관점 접근
+- 규칙: posting.mdc(다국어 현지화·EN 롱테일 클러스터링) + memory `gsc-28day-snapshot-2026-07` 확인 후 시작
 
-### 3순위 — 이미지 없는 토너먼트 포스트 이미지 추가
-- 아직 `image` 필드 없는 토너먼트 포스트들:
-  - `holdem-tournament-tax-guide`, `holdem-bubble-strategy`, `holdem-tournament-schedule-check`
-  - `holdem-tournament-how-to-enter`, `holdem-tournament-buy-in-cost`, `icm-poker-meaning`
-  - `holdem-tournament-vs-cash-game` (lib/posts/ 소속)
-- 이미지 생성 → webp 변환(quality 50, 60~80KB 이하) → image 필드 추가
+### 2순위 — GSC 색인 재요청
+- 오늘 수정한 URL 재크롤링: 족보 4개·starting-hand-range·/hand-chart·/tournaments·apt-incheon·wsop-2025
 
-### 4순위 — 필라 포스트 추가 발행
-- P4~P11 필라 중 블로그 없는 것들 순차 발행
-- 참고: `canvases/content-roadmap.canvas.tsx`에 전체 목록 있음
+### 3순위 — 남은 GSC 한국어 기회
+- "블라인드 스틸"(pos 7.4·노출73·클릭0) 제목/메타 CTR 개선, ICM 클러스터(툴 의도)
 
-### 5순위 — 기존 글 검수
-- trailing slash 전수 점검 (`/blog/x/` → `/blog/x`)
-- 1KB 플레이스홀더 이미지 찾아서 교체
-- 포커 핸드 예시 사실오류 검산 (CLAUDE.md §13 참조)
+### 4순위 — 8/16 이후
+- APT 인천 대회 종료 후 결과 recap 자산화 (클라우드 알림 예약됨, memory `apt-incheon-2026-post-event-asset`)
+
+### 참고
+- Notion 연동(MCP)은 여유 있을 때
+- 토너먼트 포스트 image 필드는 이번 세션 이전에 대부분 추가 완료됨
 
 ---
 
