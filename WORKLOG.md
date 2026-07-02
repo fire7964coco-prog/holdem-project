@@ -5,6 +5,11 @@
 
 ## 2026-07-02
 
+### 영어 포스트 SEO 강화 트랙 시작 (Claude Code 세션)
+- texas-holdem-rules-for-beginners: EN SERP·PAA 재조사 → 롱테일 갭 2개 신규 H2(How Many Players·헤드업 블라인드 역전 / No-Limit·Limit·Pot-Limit 포맷), 미사용 EN 클러스터 내부링크 3개(flush-vs-straight·reading-the-board·tournament-vs-cash-game), FAQ 롱테일 3개
+- holdem-hand-rankings: **§13 사실오류 정정** — Puzzle 2 보드 7♥8♥9♥10♥J♠+K♥를 "스트레이트플러시"로 오기(실제 K-high 플러시) → 홀 6♥로 교체해 진짜 ten-high 스트플로 수정. trailing slash 3곳 제거, FAQ 롱테일 2개
+- 빌드: ✅ 51 blog posts / 배포: ✅ Vercel (d3ce196)
+
 ### 블로그 CTA 3종 강화 배포
 - 다음 글 버튼: 금색 그라디언트 대형 CTA 버튼으로 교체
 - 이전 글 버튼: 테두리 카드형으로 정돈

@@ -46,13 +46,16 @@
 
 > ⚠️ 포스트 작업 전 `.cursor/rules/posting.mdc`(통합 마스터) 먼저 읽기 — 이제 자동 적용됨.
 
-### 1순위 — 영어 포스트 SEO 강화 (다음 트랙, 진행 예정)
+### 1순위 — 영어 포스트 SEO 강화 (진행 중)
 - 대상: `lib/posts-en/` 20개. GSC상 "how to play texas holdem / rules for dummies" 클러스터가 노출 많고 순위 페이지5~8
 - ⚠️ 참고: 해당 EN 룰 글 콘텐츠는 이미 우수 → 문제는 **도메인 권위**(대형 경쟁사). 콘텐츠 추가보다 EN SERP·PAA 재조사·롱테일 커버·내부링크·장기 백링크 관점 접근
 - 규칙: posting.mdc(다국어 현지화·EN 롱테일 클러스터링) + memory `gsc-28day-snapshot-2026-07` 확인 후 시작
+- **✅ 완료(2026-07-02)**: `texas-holdem-rules-for-beginners`(H2 2개·내부링크 3개·FAQ 3개), `holdem-hand-rankings`(§13 스트플 오류 정정·slash·FAQ 2개)
+- **다음 후보**: `holdem-game-order`(룰글이 "step 2"로 링크 → 클러스터 완성), `holdem-positions`/`holdem-betting-actions`(룰글이 다수 링크), `holdem-flush-vs-straight`(족보 클러스터 앵커 다수). 방식 동일: EN SERP·PAA 재조사 → 롱테일 갭·내부링크·§13 검산
 
 ### 2순위 — GSC 색인 재요청
 - 오늘 수정한 URL 재크롤링: 족보 4개·starting-hand-range·/hand-chart·/tournaments·apt-incheon·wsop-2025
+- **EN 추가**: `/en/blog/texas-holdem-rules-for-beginners`, `/en/blog/holdem-hand-rankings`
 
 ### 3순위 — 남은 GSC 한국어 기회
 - "블라인드 스틸"(pos 7.4·노출73·클릭0) 제목/메타 CTR 개선, ICM 클러스터(툴 의도)
