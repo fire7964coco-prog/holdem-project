@@ -11,7 +11,8 @@
 - holdem-game-order: 신규 H2 "Who Acts First on Each Street?"(최상위 PAA·헤드업 예외) + 미사용 클러스터 내부링크 5개(blind-meaning·starting-hands-chart·betting-actions·showdown-rules·all-in-rules). §13 전체핸드 예시·팟산수 검산 통과
 - holdem-positions: 이미지 점검 후 9-Max Seat Map 섹션에 딜러버튼 풀테이블 실사 추가(본문 이미지 1→2), trailing slash(position-play) 정리. 콘텐츠 이미 충실해 유지
 - holdem-betting-actions: §13 min-raise 예시 모호성 정정(포스트플랍 클린 예시+프리플랍 주석), trailing slash 5곳 제거, 내부링크 3개(all-in-rules·positions·hand-rankings), 본문 이미지 0→1(칩스택 실사), FAQ "limp 뜻" 롱테일
-- 빌드: ✅ 51 blog posts / 배포: ✅ Vercel (ce948ec·15319f1·0a4b91c)
+- holdem-flush-vs-straight: **§13 사실오류 정정** — Spot2 "또 하트=straight flush" 과잉주장(실제 6♥만 SF)→정정. reading-the-board 링크, FAQ "Does a straight beat a flush?" 역방향 롱테일. 이미지 3개 정밀 일치 확인
+- 빌드: ✅ 51 blog posts / 배포: ✅ Vercel (ce948ec·15319f1·0a4b91c·7f6af4a)
 
 ### 블로그 CTA 3종 강화 배포
 - 다음 글 버튼: 금색 그라디언트 대형 CTA 버튼으로 교체
