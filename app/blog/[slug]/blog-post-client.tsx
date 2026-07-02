@@ -429,13 +429,14 @@ export function renderMarkdown(content: string): string {
       `<span style="font-size:20px;font-weight:800;color:#d4af37">${num}</span>` +
       `<span style="font-size:12px;color:var(--muted-foreground)">${label}</span></div>`)
     // :::eventcta::: — 본문 중간 이벤트 참여 유도 소형 CTA (클릭 시 홈 커뮤니티 이벤트 탭)
+    // 색: 프로젝트 팔레트(웜 크림 bg + 다크그린 텍스트 + 골드 액센트) 기준, 네이비 미사용
     .replace(/^:::eventcta:::$/gm, () =>
-      `<a href="/?tab=event" style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;text-decoration:none;margin:24px 0;padding:12px 14px 12px 16px;border-radius:12px;background:linear-gradient(135deg,#0f1626 0%,#141c30 100%);border:1px solid rgba(212,175,55,0.32);box-shadow:0 4px 16px rgba(0,0,0,0.16)">` +
+      `<a href="/?tab=event" style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;text-decoration:none;margin:24px 0;padding:12px 14px 12px 16px;border-radius:12px;background:linear-gradient(135deg,hsl(40 45% 97%) 0%,hsl(40 48% 92%) 100%);border:1px solid hsl(43 55% 68%);box-shadow:0 3px 14px hsl(43 40% 40% / 0.14)">` +
       `<span style="flex:1;min-width:150px;display:flex;align-items:center;gap:9px">` +
       `<span style="font-size:18px;flex-shrink:0">🎰</span>` +
-      `<span style="font-size:13.5px;font-weight:700;line-height:1.45;color:#f0e8d0">매주 일요일 기프트콘 이벤트 진행 중 <span style="color:rgba(255,255,255,0.45);font-weight:500">· 번호 6개 선택</span></span>` +
+      `<span style="font-size:13.5px;font-weight:700;line-height:1.45;color:hsl(152 45% 12%)">매주 일요일 기프트콘 이벤트 진행 중 <span style="color:hsl(152 14% 38%);font-weight:500">· 번호 6개 선택</span></span>` +
       `</span>` +
-      `<span style="flex-shrink:0;display:inline-flex;align-items:center;gap:5px;padding:9px 16px;border-radius:9px;background:linear-gradient(135deg,#f7d774,#d4af37);color:#0b1120;font-size:13px;font-weight:800;white-space:nowrap">이벤트 참여하기 →</span>` +
+      `<span style="flex-shrink:0;display:inline-flex;align-items:center;gap:5px;padding:9px 16px;border-radius:9px;background:linear-gradient(135deg,hsl(43 68% 50%),hsl(43 65% 42%));color:hsl(40 45% 97%);font-size:13px;font-weight:800;white-space:nowrap;box-shadow:0 2px 8px hsl(43 60% 40% / 0.35)">이벤트 참여하기 →</span>` +
       `</a>`)
     .replace(/^- (.+)$/gm, '<li class="flex gap-2 text-muted-foreground text-sm leading-relaxed mb-1"><span class="text-primary mt-1 flex-shrink-0">•</span><span>$1</span></li>')
     .replace(/(<li.*<\/li>\n?)+/g, (m) => `<ul class="my-4 space-y-1">${m}</ul>`)
