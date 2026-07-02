@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In Texas Hold'em you have 5 actions: fold (quit), check (pass free), call (match a bet), bet (open a round), or raise (increase a bet). Check is only available when no one has bet yet in that round.",
   category: "초보 가이드",
   date: "2026-06-14",
-  updated: "2026-06-14",
+  updated: "2026-07-02",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "🃏",
@@ -18,6 +18,7 @@ export const POST: Post = {
     "when to check in poker",
     "poker betting actions",
     "texas holdem raise rules",
+    "what is limping in poker",
   ],
   image: "/images/holdem-betting-actions-hero.webp",
   imageAlt: "Texas Hold'em table showing CHECK, CALL, RAISE, FOLD chip stacks — a player holds hole cards while deciding their action",
@@ -60,7 +61,7 @@ You can check when:
 
 If someone bets after you check, you now face a new decision: fold, call, or raise. Checking and then raising when an opponent bets is called a ==check-raise== — it's completely legal and a powerful move when used correctly.
 
-For the full street-by-street breakdown of who acts when, see [Texas Hold'em order of play](/en/blog/holdem-game-order/).
+For the full street-by-street breakdown of who acts when, see [Texas Hold'em order of play](/en/blog/holdem-game-order).
 
 ---
 
@@ -84,13 +85,15 @@ Real example: you're on the flop with K♠ 8♦. No one has bet. You ==check==. 
 
 ## Texas Hold'em Raise Rules — How Much Can You Raise?
 
+![Tall chip stacks and a dealer button on a green felt table during a betting round](/images/tournament-table-action.webp "Raising means putting more chips in — up to your whole stack in No-Limit")
+
 In No-Limit Hold'em (the most common format):
 
 - **Minimum raise**: at least the size of the previous bet or raise
 - **Maximum raise**: your entire remaining stack (all-in)
 - **Re-raise**: in no-limit, there is no cap — players can re-raise as many times as they want
 
-Example: Big blind is $2. The first player bets $6. You want to raise. ==g:The minimum raise is $6 more== — total of $12. The maximum is your whole stack.
+Example: on the flop, the first player bets $6. You want to raise. ==g:The minimum raise is $6 more== — a total of $12. The maximum is your whole stack (all-in). (Preflop is the same idea, but the big blind counts as the opening bet, so a raise must be at least one big blind more than the last raise.)
 
 In live poker, always announce "raise" before moving chips. Pushing chips forward without saying "raise" first gets ruled a call in most cardrooms.
 
@@ -104,7 +107,7 @@ If your all-in is less than the current bet, you can still win the **main pot** 
 
 Example: You have $40 left. The bet is $100. Three players. You go all-in for $40. Main pot = $40 × 3 = $120 (you can win this). The remaining $60 from each of the other two players ($120 total) becomes a ==side pot== you cannot touch — it plays out between them only.
 
-For split pot and side pot rules in detail, see [Texas Hold'em split pot and chop rules](/en/blog/holdem-split-pot-rules/).
+For how side pots are built and paid when stacks differ, see [all-in rules and side pots](/en/blog/holdem-all-in-rules); for tied hands, see [split pot and chop rules](/en/blog/holdem-split-pot-rules).
 
 ---
 
@@ -122,7 +125,7 @@ Most beginners call too much with weak hands and check-fold too much on good one
 
 </div>
 
-One rule that saves beginners chips fast: ==r:if a hand is not strong enough to raise, it usually should be folded, not called==. Calling with marginal hands in bad position is how chips disappear slowly over sessions.
+One rule that saves beginners chips fast: ==r:if a hand is not strong enough to raise, it usually should be folded, not called==. Calling with marginal hands out of [position](/en/blog/holdem-positions) is how chips disappear slowly over sessions. Not sure what counts as "strong"? Line it up against the [poker hand rankings](/en/blog/holdem-hand-rankings) first.
 
 ---
 
@@ -168,22 +171,26 @@ A. In live poker, acting out of turn is penalized. The action may be ruled dead 
 
 A. Only if the all-in constitutes a full legal raise. If the all-in is less than the minimum raise amount, remaining players can only call — re-raising is not allowed in that spot.
 
+**Q. What does it mean to limp in poker?**
+
+A. Limping means entering the pot preflop by only calling the big blind instead of raising. It's generally considered a weak play: you take no initiative and let opponents in cheaply. Most winning players either raise or fold preflop, and only limp in specific spots (like behind other limpers with a speculative hand).
+
 ---
 
 ## Related Posts
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
-  <a href="/en/blog/texas-holdem-rules-for-beginners/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/en/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Pillar</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Texas Hold'em Rules for Beginners</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Full rules guide — blinds to showdown</div>
   </a>
-  <a href="/en/blog/holdem-game-order/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/en/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Game Flow</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Texas Hold'em Order of Play</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Preflop to river with real hand examples</div>
   </a>
-  <a href="/en/blog/holdem-blind-meaning/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/en/blog/holdem-blind-meaning" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Blinds</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Small Blind vs Big Blind Explained</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Why you pay before seeing cards</div>
