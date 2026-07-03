@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "WPT Australia 2026 — Complete Player Guide: Schedule, Satellites & Real Costs",
   seoTitle: "First Time at WPT Australia? Everything You Need to Play in 2026",
   desc: "WPT Australia 2026 — Sep 10–30, The Star Sydney. AUD $1,500 Prime + AUD $5,000 Championship. Satellite from AUD ~$255. Real trip costs rivals don't publish.",
-  tldr: "WPT Australia 2026: Sep 10–30, The Star Sydney. Two flagships: AUD $1,500 WPT Prime (Sep 17–22) and AUD $5,000 WPT Championship (Sep 23–30). On-site satellites from AUD ~$255. Winner gets extra $10,400 WPT World Championship seat. Must be 18+, Star Club member, and smart-casual dress enforced.",
+  tldr: "WPT Australia 2026: Sep 10–30, The Star Sydney. Two flagships: AUD $1,500 WPT Prime (Sep 17–22) and AUD $5,000 WPT Championship (Sep 24–30). On-site satellites from AUD ~$255. Winner gets extra $10,400 WPT World Championship seat. Must be 18+, Star Club member, and smart-casual dress enforced.",
   category: "초보 가이드",
   date: "2026-06-18",
-  updated: "2026-06-18",
+  updated: "2026-07-03",
   readTime: "14 min",
   emoji: "🦘",
   layout: "tournament-guide",
@@ -35,7 +35,7 @@ This guide covers everything competitors skip.
 ---
 
 > **Quick Answer**
-> WPT Australia 2026 is ==**Sep 10–30**== at The Star Sydney, Darling Harbour. Two championship events: ==**AUD $1,500 WPT Prime**== (Sep 17–22) and ==**AUD $5,000 WPT Australia Championship**== (Sep 23–30). Championship winner also receives a ==g:$10,400 seat to WPT World Championship at Wynn Las Vegas== in December. ==r:WPT Global does NOT operate in Australia — on-site satellites only.==
+> WPT Australia 2026 is ==**Sep 10–30**== at The Star Sydney, Darling Harbour. Two championship events: ==**AUD $1,500 WPT Prime**== (Sep 17–22) and ==**AUD $5,000 WPT Australia Championship**== (Sep 24–30). Championship winner also receives a ==g:$10,400 seat to WPT World Championship at Wynn Las Vegas== in December. ==r:WPT Global does NOT operate in Australia — on-site satellites only.==
 
 ---
 
@@ -71,7 +71,7 @@ This is the question every first-timer asks. Here's the honest breakdown:
 
 | | WPT Prime Australia | WPT Australia Championship |
 |:---:|---|---|
-| Dates | ==**Sep 17–22**== | ==**Sep 23–30**== |
+| Dates | ==**Sep 17–22**== | ==**Sep 24–30**== |
 | Buy-In | ==g:AUD $1,500== (~USD $980) | AUD $5,000 (~USD $3,270) |
 | Field Size (est.) | 500–800 entries | 400–600 entries |
 | Structure | Deep-stack, multi-flight | Deep-stack, 3 flights |
@@ -125,7 +125,7 @@ If you're outside Australia and want to warm up with online satellites before fl
 | **WPT Prime Australia Championship** | ==**Sep 17–22**== | ==**$1,500**== | ==g:Livestreamed FT== |
 | Bonzai Bounty | Sep 19 | $460 | Progressive bounty |
 | **$10K WPT High Roller** | Sep 23–24 | $10,000 | High roller |
-| **WPT Australia Championship** | ==**Sep 23–30**== | ==**$5,000**== | ==g:Livestreamed FT== |
+| **WPT Australia Championship** | ==**Sep 24–30**== | ==**$5,000**== | ==g:Livestreamed FT== |
 | Mini-Championship | Sep 27–28 | $2,000 | 2-day format |
 | WPT World Champs Warm-Up | Sep 29–30 | $1,150 | Warm-up for Dec WC |
 | Australian PLO Championship | Sep 29–30 | $5,000 | Pot Limit Omaha |
@@ -245,9 +245,10 @@ Most international visitors need either an **ETA (Electronic Travel Authority)**
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.25);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Passport | Visa Type | How to Apply | Cost | Processing |
-|| **UK + 35 EU/European countries** (Germany, France, Italy, Spain, etc.) | ==g:eVisitor (subclass 651)== | [immi.homeaffairs.gov.au](https://immi.homeaffairs.gov.au) | ==g:**FREE**== | Usually instant-1 day |
-|| **USA, Canada, Japan, Korea, Singapore, Hong Kong** | ETA (subclass 601) | [Australian ETA app](https://eta.homeaffairs.gov.au) (mobile only) | AUD $20 | Usually instant |
-|| Most other countries | Visitor Visa (subclass 600) | [immi.homeaffairs.gov.au](https://immi.homeaffairs.gov.au) | AUD $200 | Days-weeks |
+|---|---|---|---|---|
+| **UK + 35 EU/European countries** (Germany, France, Italy, Spain, etc.) | ==g:eVisitor (subclass 651)== | [immi.homeaffairs.gov.au](https://immi.homeaffairs.gov.au) | ==g:**FREE**== | Usually instant-1 day |
+| **USA, Canada, Japan, Korea, Singapore, Hong Kong** | ETA (subclass 601) | [Australian ETA app](https://eta.homeaffairs.gov.au) (mobile only) | AUD $20 | Usually instant |
+| Most other countries | Visitor Visa (subclass 600) | [immi.homeaffairs.gov.au](https://immi.homeaffairs.gov.au) | AUD $200 | Days-weeks |
 
 
 
@@ -306,17 +307,17 @@ A. Yes. The Star Poker room runs cash games daily ==g:10 AM – 4 AM==, stakes f
 ## Related Guides
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
-  <a href="/en/blog/holdem-tournament/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/en/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Must Read</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">How Poker Tournaments Work</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Buy-ins, blinds, satellites & Day-1 checklist</div>
   </a>
-  <a href="/en/blog/ept-barcelona-2026-guide/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/en/blog/ept-barcelona-2026-guide" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Compare</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">EPT Barcelona 2026 Guide</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Europe's biggest summer poker festival</div>
   </a>
-  <a href="/en/blog/holdem-tournament-vs-cash-game/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/en/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Start Here</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Tournament vs Cash Game</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Which format fits your style?</div>
