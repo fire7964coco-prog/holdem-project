@@ -33,7 +33,7 @@ export const POST: Post = {
 
 이 글은 ==홀덤 대회 바이인·참가비==를 초보자 기준으로 정리한 비용 가이드입니다. 홀덤펍 소규모 대회, 국내 대형 APT·APPT, 해외 WSOP·EPT, 리엔트리·애드온까지 포함한 총비용, 그리고 새틀라이트로 바이인을 줄이는 방법까지 한 번에 보겠습니다.
 
-처음 대회 신청 절차 자체가 궁금하다면 [홀덤 대회 참가 방법](/blog/holdem-tournament-how-to-enter/)을 먼저 읽고, 이 글로 돌아오면 비용 판단이 훨씬 쉬워집니다. 전체 일정은 [홀덤 대회 완벽 가이드](/tournaments/)에서 확인할 수 있습니다.
+처음 대회 신청 절차 자체가 궁금하다면 [홀덤 대회 참가 방법](/blog/holdem-tournament-how-to-enter)을 먼저 읽고, 이 글로 돌아오면 비용 판단이 훨씬 쉬워집니다. 전체 일정은 [홀덤 대회 완벽 가이드](/tournaments/)에서 확인할 수 있습니다.
 
 ![홀덤 토너먼트 테이블 위 칩과 참가권 — 홀덤 대회 바이인·참가비 계산 가이드](/images/tournament-table-action.webp "홀덤 대회 바이인·참가비 — 초보 총비용 계산")
 
@@ -101,7 +101,7 @@ export const POST: Post = {
 
 홀덤펍에서 실제로 조심해야 할 건 "첫 바이인"보다 **총 투입 금액**입니다. 5만 원 대회라고 생각하고 갔는데 리엔트리 2번, 애드온 1번을 하면 체감 비용은 15만~20만 원으로 올라갈 수 있습니다.
 
-처음이라면 [홀덤펍 처음 가는 법](/blog/holdem-pub-first-visit-guide/)을 먼저 읽고, 매장에 전화나 DM으로 "바이인, 리엔트리, 시상 구조"를 확인하세요. 운영 방식의 합법성 기준이 궁금하면 [홀덤펍 합법·불법 기준](/blog/holdem-pub-legal/)도 같이 보면 좋습니다.
+처음이라면 [홀덤펍 처음 가는 법](/blog/holdem-pub-first-visit-guide)을 먼저 읽고, 매장에 전화나 DM으로 "바이인, 리엔트리, 시상 구조"를 확인하세요. 운영 방식의 합법성 기준이 궁금하면 [홀덤펍 합법·불법 기준](/blog/holdem-pub-legal)도 같이 보면 좋습니다.
 
 ---
 
@@ -122,7 +122,7 @@ export const POST: Post = {
 
 이 표만 보면 "대형 대회는 너무 비싸다"라고 느낄 수 있습니다. 하지만 실제로는 메인 이벤트만 있는 게 아닙니다. National Cup, Mini Main, Mega Qualifier 같은 낮은 바이인 이벤트를 고르면 35만~120만 원대에서도 대형 페스티벌 분위기를 경험할 수 있습니다.
 
-APT 제주 사례가 궁금하다면 [APT 제주 클래식 2026 가이드](/blog/apt-jeju-classic-2026-guide/)를 참고하세요. 같은 페스티벌 안에서도 이벤트별 비용 차이가 얼마나 큰지 확인할 수 있습니다.
+APT 제주 사례가 궁금하다면 [APT 제주 클래식 2026 가이드](/blog/apt-jeju-classic-2026-guide)를 참고하세요. 같은 페스티벌 안에서도 이벤트별 비용 차이가 얼마나 큰지 확인할 수 있습니다.
 
 ---
 
@@ -142,7 +142,7 @@ APT 제주 사례가 궁금하다면 [APT 제주 클래식 2026 가이드](/blog
 
 여기서 중요한 건 바이인만이 아닙니다. 라스베이거스까지 가려면 항공권, 숙박, 식비, 현지 교통비까지 들어갑니다. $500 이벤트 하나를 치러 가도 실제 총비용은 훨씬 커집니다. 그래서 WSOP 첫 도전은 직접 메인 바이인보다 **저바이인 이벤트 + 온라인 위성** 조합이 현실적입니다.
 
-해외 대회 참가 절차는 [한국 선수 WSOP 참가 가이드](/blog/wsop-2025-tournament-guide/)에서 더 자세히 다룹니다.
+해외 대회 참가 절차는 [한국 선수 WSOP 참가 가이드](/blog/wsop-2025-tournament-guide)에서 더 자세히 다룹니다.
 
 ---
 
@@ -169,7 +169,7 @@ APT 제주 사례가 궁금하다면 [APT 제주 클래식 2026 가이드](/blog
 - 애드온이 있는가?
 - 레이트 등록이 몇 레벨까지인가?
 
-토너먼트 구조 자체가 헷갈린다면 [홀덤 토너먼트 vs 캐시게임 차이](/blog/holdem-tournament-vs-cash-game/)를 먼저 읽어보세요. 리엔트리가 있어도 토너먼트 칩은 현금이 아니라 순위 경쟁용 점수입니다.
+토너먼트 구조 자체가 헷갈린다면 [홀덤 토너먼트 vs 캐시게임 차이](/blog/holdem-tournament-vs-cash-game)를 먼저 읽어보세요. 리엔트리가 있어도 토너먼트 칩은 현금이 아니라 순위 경쟁용 점수입니다.
 
 ---
 
@@ -189,7 +189,7 @@ APT 제주 사례가 궁금하다면 [APT 제주 클래식 2026 가이드](/blog
 
 단, 새틀라이트는 "싸게 들어가는 확정 티켓(확정적인 시트)"이 아닙니다. 입상해야 시트가 나오기 때문에 여러 번 도전할 예산과 시간이 필요합니다. 그래도 초보 입장에서는 직접 250만 원을 내는 것보다, 35만~50만 원대 위성에서 경험을 쌓으며 시트를 노리는 편이 훨씬 현실적입니다.
 
-새틀라이트 참가 흐름은 [홀덤 대회 참가 방법](/blog/holdem-tournament-how-to-enter/)에서 단계별로 정리했습니다.
+새틀라이트 참가 흐름은 [홀덤 대회 참가 방법](/blog/holdem-tournament-how-to-enter)에서 단계별로 정리했습니다.
 
 ---
 
@@ -263,13 +263,13 @@ WSOP Main Event 바이인은 $10,000입니다. 하지만 WSOP에는 $300, $500, 
 
 | 관련 글 | 연결 내용 |
 |---------|-----------|
-| [홀덤 대회 일정 확인법](/blog/holdem-tournament-schedule-check/) | 공식 일정과 바이인 변경 여부 확인 |
-| [홀덤 대회 세금·신고](/blog/holdem-tournament-tax-guide/) | 상금 원천징수와 해외 대회 세금 |
-| [홀덤 대회 참가 방법](/blog/holdem-tournament-how-to-enter/) | 온라인 무료부터 WSOP까지 단계별 신청법 |
+| [홀덤 대회 일정 확인법](/blog/holdem-tournament-schedule-check) | 공식 일정과 바이인 변경 여부 확인 |
+| [홀덤 대회 세금·신고](/blog/holdem-tournament-tax-guide) | 상금 원천징수와 해외 대회 세금 |
+| [홀덤 대회 참가 방법](/blog/holdem-tournament-how-to-enter) | 온라인 무료부터 WSOP까지 단계별 신청법 |
 | [홀덤 대회 완벽 가이드](/tournaments/) | 2026 국내·해외 대회 일정과 추천 루트 |
-| [홀덤 토너먼트 vs 캐시게임 차이](/blog/holdem-tournament-vs-cash-game/) | 토너먼트 칩과 돈의 차이 |
-| [APT 제주 클래식 2026 가이드](/blog/apt-jeju-classic-2026-guide/) | 국내 대형 대회 바이인·상금 사례 |
-| [한국 선수 WSOP 참가 가이드](/blog/wsop-2025-tournament-guide/) | WSOP 비용·일정·위성 진출 |
-| [ICM이란 뜻](/blog/icm-poker-meaning/) | 대회 상금 구조와 칩 가치 이해 |
+| [홀덤 토너먼트 vs 캐시게임 차이](/blog/holdem-tournament-vs-cash-game) | 토너먼트 칩과 돈의 차이 |
+| [APT 제주 클래식 2026 가이드](/blog/apt-jeju-classic-2026-guide) | 국내 대형 대회 바이인·상금 사례 |
+| [한국 선수 WSOP 참가 가이드](/blog/wsop-2025-tournament-guide) | WSOP 비용·일정·위성 진출 |
+| [ICM이란 뜻](/blog/icm-poker-meaning) | 대회 상금 구조와 칩 가치 이해 |
 `.trim(),
 };

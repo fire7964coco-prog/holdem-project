@@ -51,7 +51,7 @@ WPL 앱만 있으면 오늘 저녁부터 예선 새틀라이트에 도전할 수
 </div>
 
 <div style="display:flex;flex-direction:column;gap:0;border-radius:14px;overflow:hidden;margin:24px 0">
-  <img src="/images/wpl-7th-schedule-1.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 1" width="900" height="1270" style="width:100%;display:block" />
+  <img src="/images/wpl-7th-schedule-1.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 1" width="900" height="1270" loading="lazy" style="width:100%;display:block" />
   <img src="/images/wpl-7th-schedule-2.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 2" width="900" height="1270" loading="lazy" style="width:100%;display:block" />
   <img src="/images/wpl-7th-schedule-3.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 3" width="900" height="1270" loading="lazy" style="width:100%;display:block" />
   <img src="/images/wpl-7th-schedule-4.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 4" width="900" height="1270" loading="lazy" style="width:100%;display:block" />
@@ -136,7 +136,7 @@ WPL 앱만 있으면 오늘 저녁부터 예선 새틀라이트에 도전할 수
 
 새틀라이트는 1등이나 10등이나 같은 초대권입니다. 칩이 10배 많아도 1등 상이 더 크지 않습니다. ==r:칩 1등 욕심에 버블에서 날리는 게 가장 흔한 실수==입니다.
 
-버블 전략의 자세한 내용은 [홀덤 버블 전략 완전 분석](/blog/holdem-bubble-strategy/)에서, ICM 개념은 [ICM이란? 토너먼트 필수 개념](/blog/icm-poker-meaning/)에서 확인하세요.
+버블 전략의 자세한 내용은 [홀덤 버블 전략 완전 분석](/blog/holdem-bubble-strategy)에서, ICM 개념은 [ICM이란? 토너먼트 필수 개념](/blog/icm-poker-meaning)에서 확인하세요.
 
 ---
 
@@ -186,24 +186,24 @@ A. 네. 각 새틀라이트는 독립적으로 운영되며, 초대권을 획득
 
 **Q. 오프라인 본선 경험이 전혀 없는데 나갈 수 있나요?**
 
-A. 충분히 가능합니다. 홀덤 마스터스는 아마추어부터 프로까지 누구나 참가하는 오픈 대회입니다. 다만 오프라인 토너먼트는 홀덤펍 리그 등에서 미리 경험을 쌓으면 현장 적응이 훨씬 쉽습니다. [홀덤펍 처음 방문 가이드](/blog/holdem-pub-first-visit-guide/)와 [홀덤 대회 참가 방법](/blog/holdem-tournament-how-to-enter/)을 미리 읽어두세요.
+A. 충분히 가능합니다. 홀덤 마스터스는 아마추어부터 프로까지 누구나 참가하는 오픈 대회입니다. 다만 오프라인 토너먼트는 홀덤펍 리그 등에서 미리 경험을 쌓으면 현장 적응이 훨씬 쉽습니다. [홀덤펍 처음 방문 가이드](/blog/holdem-pub-first-visit-guide)와 [홀덤 대회 참가 방법](/blog/holdem-tournament-how-to-enter)을 미리 읽어두세요.
 
 ---
 
 ## 관련 글
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
-  <a href="/blog/holdem-tournament-how-to-enter/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/blog/holdem-tournament-how-to-enter" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">참가 가이드</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">홀덤 대회 참가 방법 단계별 가이드</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">온라인 무료부터 WSOP까지</div>
   </a>
-  <a href="/blog/holdem-bubble-strategy/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/blog/holdem-bubble-strategy" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">버블 전략</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">홀덤 버블 전략 실전 분석</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">빅·미들·숏스택 버블 생존법</div>
   </a>
-  <a href="/blog/icm-poker-meaning/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/blog/icm-poker-meaning" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">ICM</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ICM이란? 토너먼트 필수 개념</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">칩이 돈이 아닌 이유</div>
