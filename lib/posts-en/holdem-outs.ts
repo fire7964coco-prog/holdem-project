@@ -44,6 +44,8 @@ Everything downstream — your equity, your [pot odds](/en/blog/holdem-pot-odds)
 
 ## How to Count Your Outs (Step by Step)
 
+![A player holds the ace and king of spades and studies a low three-card flop on green felt, counting overcard outs before acting](/images/holdem-outs-counting.webp "A-K on a low flop is a textbook counting spot — six overcard outs, plus the backdoors")
+
 Counting outs is a three-step routine you run on every draw until it's automatic:
 
 :::steps
@@ -151,6 +153,8 @@ Same logic on a **flush + gutshot**: 9 flush outs + 4 gutshot cards, but one of 
 ---
 
 ## Dirty Outs: The Cards That Only Look Like Wins
+
+![A coordinated flush-heavy board with a paired card and chips pushed forward, the kind of spot where a completing card can still lose](/images/holdem-outs-dirty-outs.webp "A tempting board where hitting your flush can still pay off a full house — the classic dirty out")
 
 This is the section most guides skip, and it's the one that actually saves money. A **dirty out** (or "tainted" out) is a card that completes your hand but can still lose — so counting it at full value overstates your equity. Winning players count raw outs, then *discount* the dirty ones before reaching for the Rule of 4 and 2.
 
