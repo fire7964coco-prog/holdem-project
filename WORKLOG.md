@@ -5,7 +5,8 @@
 
 ## 2026-07-03
 
-### 영어 포스트 SEO 강화 (11~15편째, Claude Code 세션)
+### 영어 포스트 SEO 강화 (11~16편째, Claude Code 세션)
+- holdem-position-play(16편째·**포지션 필라**): 정밀검수(17분 심층글). **현지화 누수 교정** — 영어 글에 ₩10/₩20(원화)·"holdem pub" 혼입 → $1/$2·generic live game으로 교정(도입부 경험담 유지). PAA FAQ 추가(early/middle/late 3분류=경쟁 공통 프레이밍). 검산 통과(포지션순서·플러시드로우·equity 85-100/60-85%). 이미지 IP/OOP 인포그래픽 영어·수치정확 확인
 - holdem-tournament(15편째·**필라**): 필라 정밀검수. **trailing slash 4곳 제거**(tournament-vs-cash·starting-hands-chart·rules-for-beginners·본문 비교링크 → 301 방지). 클러스터 허브 강화(블라인드레벨 섹션→blind-meaning 본문링크, Related 카드 3→5개 blind-meaning·positions 추가). PAA FAQ 2개(late reg 중도입장·중도이탈시 칩 소멸=캐시게임 오해해소). 검산 통과. 속도: 히어로 LCP 81.8→78.3KB 재압축(≤80KB 준수). ⚠️ 별도 요청으로 tournament-vs-cash 본문 이미지 3개 820→1200px 업스케일도 진행(5490918)
 - holdem-tournament-vs-cash-game(14편째): 이미 16분 심층글 → 최대 레버리지 2가지 공략. 토너먼트 필라(holdem-tournament) 내부링크 본문+Related 카드 신설(클러스터 권위 집중). PAA FAQ 3개(pros play which·what is the bubble·more profitable per hour). 검산 통과. 속도점검 통과(본문 이미지3개 총 ~50KB 경량)
 - holdem-blind-meaning(13편째): **핵심 키워드**('poker blinds'). SERP·PAA 조사로 경쟁 글 대비 갭 2건 신규 섹션화 — 헤드업 블라인드(버튼이 SB·프리플랍 선행)·미스드/입장 포스팅(dead SB·live BB). FAQ 2개(heads-up·miss blind). desc ~220→~155자 CTR 조정. **이번 검수부터 속도점검 항목 추가**(히어로 30KB·본문2개 총 ~64KB·1200×675·LCP priority 자동=통과)
