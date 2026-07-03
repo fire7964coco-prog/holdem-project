@@ -165,7 +165,7 @@ Your equity | Flush draw ≈ 35% (Rule of 4)
 Decision | 35% > 25% → a clearly profitable ==g:call==
 :::
 
-That's the moment all the numbers pay off: your **drawing odds (35%)** beat your **pot odds (25%)**, so calling wins money in the long run even though you'll lose the hand more often than not. When the draw is bigger than the price, you call; when it's smaller, you fold — no gut feeling required.
+That's the moment all the numbers pay off: your **drawing odds (35%)** beat your **pot odds (25%)**, so calling wins money in the long run even though you'll lose the hand more often than not. When the draw is bigger than the price, you call; when it's smaller, you fold — no gut feeling required. For the full method, bet-size cheat sheet, and how implied odds change the call, see [how to calculate pot odds](/en/blog/holdem-pot-odds).
 
 ---
 
