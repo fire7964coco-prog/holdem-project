@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "When two hands share the same rank, first compare the cards that make the hand, then the kickers from highest to lowest. If all five cards match, the pot is split — suits never break a tie.",
   category: "초보 가이드",
   date: "2026-06-13",
-  updated: "2026-06-13",
+  updated: "2026-07-03",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "⚖️",
@@ -63,7 +63,7 @@ A ==**kicker**== is a card in your best five that isn't part of the made hand bu
 
 </div>
 
-==g:K beats Q, so Player A wins.== Both flopped aces; the side card decided the pot. This is the single most common way beginners lose a hand they thought was a tie — so the *quality* of your second card matters as much as the pair itself, which is why [starting-hand selection](/en/blog/texas-holdem-rules-for-beginners) is so important.
+==g:K beats Q, so Player A wins.== Both flopped aces; the side card decided the pot. This is the single most common way beginners lose a hand they thought was a tie — so the *quality* of your second card matters as much as the pair itself, which is why [choosing strong starting hands](/en/blog/holdem-starting-hands-chart) is so important.
 
 > **The trap:** Player B held a 9 but their kicker is the board's **Q**. ==r:You always build the best five from seven cards== — a high board card can outrank your hole card and take the kicker slot.
 
@@ -144,6 +144,14 @@ A. Only if the kicker is part of your best five-card hand. If the board provides
 **Q. Do straights and flushes use kickers?**
 
 A. Straights are decided by the highest card with no kicker. Flushes compare all five cards from the top, so the lower cards act like kickers — but suit is never used.
+
+**Q. Who wins if both players have the same two pair?**
+
+A. Compare the higher pair first, then the lower pair, then the single kicker. K-K-9-9 with a Q kicker beats K-K-9-9 with a J kicker. If all five cards match, the pot is split.
+
+**Q. What happens if two players have the same straight or flush?**
+
+A. A straight is ranked only by its highest card, so matching top cards mean a split. A flush compares all five cards from the top down; if every rank matches, the pot is split — suit never breaks it.
 
 **Q. Can three players split one pot?**
 
