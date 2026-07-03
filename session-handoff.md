@@ -6,7 +6,7 @@
 ---
 
 ## 📅 마지막 작업일
-2026-07-03 (Claude Code 세션 — EN 강화 11~18편째: …apt-incheon, wpt-australia가이드)
+2026-07-03 (Claude Code 세션 — EN 강화 11~19편째: …apt-incheon, wpt-australia, ept-barcelona가이드)
 
 ---
 
@@ -52,7 +52,7 @@
 - 규칙: posting.mdc(다국어 현지화·EN 롱테일 클러스터링) + memory `gsc-28day-snapshot-2026-07` 확인 후 시작
 - **✅ 완료(2026-07-02)**: `texas-holdem-rules-for-beginners`(H2 2개·내부링크 3개·FAQ 3개), `holdem-hand-rankings`(§13 스트플 오류 정정·slash·FAQ 2개), `holdem-game-order`(H2 who-acts-first·내부링크 5개), `holdem-positions`(이미지 추가·slash), `holdem-betting-actions`(§13 min-raise·slash 5·링크 3·이미지·FAQ limp), `holdem-flush-vs-straight`(§13 SF 과잉주장·링크·FAQ), `holdem-showdown-rules`(seoTitle CTR·slash 4·링크·FAQ), `holdem-all-in-rules`(CTR·본문링크 3·slash 3, 룰오류無), `holdem-starting-hands-chart`(§13 AK에쿼티·rangechart·slash 5·커서이미지2), `holdem-reading-the-board`(§13 플러시개수·링크2·slash 3), `holdem-tiebreak-rules`(§13 전체검산·이미지3점검·내부링크 starting-hands-chart 정밀화·롱테일 FAQ 2개), `holdem-split-pot-rules`(SERP·PAA 조사·§13 원페어예시 정정·토너먼트chop 분화/전략/odd chip 롱테일 FAQ 3개), `holdem-blind-meaning`(핵심키워드·헤드업/미스드 블라인드 신규섹션·FAQ 2개·desc CTR·속도점검 통과), `holdem-tournament-vs-cash-game`(토너먼트필라 내부링크+Related카드·PAA FAQ 3개 bubble정의/pros/hourly·속도통과), `holdem-tournament`(**필라**·트슬래시4제거·클러스터허브 Related 5카드·PAA FAQ 2개 latereg/중도이탈·히어로 재압축), `holdem-position-play`(**포지션필라**·현지화누수 ₩/holdempub 교정·early/mid/late FAQ·**본문이미지 2→4개** 오프닝레인지인포+블라인드스틸실사 커서생성)
 - ⚠️ **이미지 점검 필수화**: EN 강화 시 각 글 이미지 맥락 적합/깨짐/한글오버레이 여부 확인, 더 맞는 실사 있으면 교체·추가(사용자 지시). 주의: `holdem-small-blind-position`·`poker-table-reference` 등 다수 포지션 이미지가 **한국어 인포그래픽/사이트 스크린샷**이라 EN 글에 부적합. 언어중립 실사(예: `holdem-button-position-hero`, `tournament-table-action`)만 재사용
-- **다음 후보**: 남은 이벤트가이드 `ept-barcelona-2026-guide`·`korea-poker-marathon-2026`. 그 외 초반 완료분 재점검.
+- **다음 후보**: 남은 이벤트가이드 `korea-poker-marathon-2026`(마지막). 그 후 초반 완료분(hand-rankings·rules·game-order 등) 트슬래시·이미지 재점검 또는 신규 한국어 포스트.
 - ⚠️ **이벤트가이드 = 웹 교차검증 필수(사용자 강조)**: wpt-australia에서 Championship 날짜 하루 오기(23→24) 웹검증으로 발견·정정. ept·korea-marathon도 날짜·바이인·일정 반드시 공식/복수소스 재확인. 마크다운 표 `||`/구분행 누락, 트슬래시도 함께 점검
 - ⚠️ **이벤트가이드 속도 점검 필수**: apt-incheon에서 갤러리 raw `<img>`에 loading=lazy 누락 발견·수정. **다른 이벤트가이드도 raw `<img>` grep해서 lazy 없으면 추가**(마크다운 `![]()`는 renderMarkdown이 자동 lazy 처리하나 raw img는 미처리). 이미지 다수라 초기로드 속도에 직결
 - ⚠️ **현지화 누수 점검 필수**: position-play에서 영어 글에 ₩(원화)·"holdem pub"(홀덤펍) 혼입 발견·교정함. **다른 EN 글도 강화 시 ₩·홀덤펍·한국식표현 grep 점검**(글로벌 EN 독자용). 도입부 실경험담의 'local poker club' 수준은 E-E-A-T로 유지 OK
@@ -61,7 +61,7 @@
 
 ### 2순위 — GSC 색인 재요청
 - 오늘 수정한 URL 재크롤링: 족보 4개·starting-hand-range·/hand-chart·/tournaments·apt-incheon·wsop-2025
-- **EN 추가**: `/en/blog/texas-holdem-rules-for-beginners`, `/en/blog/holdem-hand-rankings`, `/en/blog/holdem-game-order`, `/en/blog/holdem-positions`, `/en/blog/holdem-betting-actions`, `/en/blog/holdem-flush-vs-straight`, `/en/blog/holdem-showdown-rules`, `/en/blog/holdem-all-in-rules`, `/en/blog/holdem-starting-hands-chart`, `/en/blog/holdem-reading-the-board`, `/en/blog/holdem-tiebreak-rules`, `/en/blog/holdem-split-pot-rules`, `/en/blog/holdem-blind-meaning`, `/en/blog/holdem-tournament-vs-cash-game`, `/en/blog/holdem-tournament`, `/en/blog/holdem-position-play`, `/en/blog/apt-incheon-2026-guide`, `/en/blog/wpt-australia-2026-guide`
+- **EN 추가**: `/en/blog/texas-holdem-rules-for-beginners`, `/en/blog/holdem-hand-rankings`, `/en/blog/holdem-game-order`, `/en/blog/holdem-positions`, `/en/blog/holdem-betting-actions`, `/en/blog/holdem-flush-vs-straight`, `/en/blog/holdem-showdown-rules`, `/en/blog/holdem-all-in-rules`, `/en/blog/holdem-starting-hands-chart`, `/en/blog/holdem-reading-the-board`, `/en/blog/holdem-tiebreak-rules`, `/en/blog/holdem-split-pot-rules`, `/en/blog/holdem-blind-meaning`, `/en/blog/holdem-tournament-vs-cash-game`, `/en/blog/holdem-tournament`, `/en/blog/holdem-position-play`, `/en/blog/apt-incheon-2026-guide`, `/en/blog/wpt-australia-2026-guide`, `/en/blog/ept-barcelona-2026-guide`
 
 ### 3순위 — 남은 GSC 한국어 기회
 - "블라인드 스틸"(pos 7.4·노출73·클릭0) 제목/메타 CTR 개선, ICM 클러스터(툴 의도)

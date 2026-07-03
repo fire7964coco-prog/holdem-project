@@ -5,7 +5,8 @@
 
 ## 2026-07-03
 
-### 영어 포스트 SEO 강화 (11~18편째, Claude Code 세션)
+### 영어 포스트 SEO 강화 (11~19편째, Claude Code 세션)
+- ept-barcelona-2026-guide(19편째·이벤트가이드): **웹 교차검증** — 전 이벤트 날짜가 공식 PokerStars Live와 100% 일치(ME Aug22-29 등), 2025 데이터(Eychenne 우승·€1,217,175·2,045엔트리)도 일치. 정밀정정: '3rd largest in EPT history'→'EPT **Barcelona** history'(소스는 바르셀로나 한정 기록, 2곳). 트슬래시 3개. 히어로 91.5KB→1200×675 75.5KB
 - wpt-australia-2026-guide(18편째·이벤트가이드): **웹 교차검증 철저**. ★사실정정: WPT Australia Championship 날짜 Sep 23–30→**Sep 24–30**(4곳, WPT공식·PokerTube 확인). 비자 표 마크다운 깨짐(`||`·구분행 누락) 복구. 트슬래시 3개 제거. 속도: 히어로 92.1KB·floor 88.7KB → 1200×675 리사이즈 74.7/76.3KB. Prime·Ladies·36events 등 나머지 정보 재확인 일치
 - apt-incheon-2026-guide(17편째·이벤트가이드): 대회 사실 **웹검증 통과**(날짜·바이인·GTD·이벤트라인업 전부 일치). **속도**: 갤러리 raw `<img>` 8개에 loading=lazy 추가(마크다운 이미지는 renderMarkdown이 first-eager/rest-lazy 자동처리, raw img는 미적용이었음). 이미지 12개 667KB→lazy로 초기로드 축소. ⚠️ 다른 이벤트가이드(wpt·ept·korea-marathon)도 raw img lazy 누락 가능성
 - holdem-position-play(16편째·**포지션 필라**): 정밀검수(17분 심층글). **본문 이미지 2→4개 추가**(커서 생성): 오프닝레인지 9좌석 인포그래픽(숫자·시계방향 좌석순서 §13 검산, 2회 교정) + 버튼 블라인드스틸 실사. 마크다운 삽입은 Claude가 정위치 처리. **현지화 누수 교정** — 영어 글에 ₩10/₩20(원화)·"holdem pub" 혼입 → $1/$2·generic live game으로 교정(도입부 경험담 유지). PAA FAQ 추가(early/middle/late 3분류=경쟁 공통 프레이밍). 검산 통과(포지션순서·플러시드로우·equity 85-100/60-85%). 이미지 IP/OOP 인포그래픽 영어·수치정확 확인
