@@ -258,7 +258,7 @@ export function renderMarkdown(content: string): string {
         );
       }).join('');
       return (
-        `<div style="margin:30px 0;padding:14px 16px 16px;background:linear-gradient(rgba(28,74,52,0.14),rgba(28,74,52,0.05)),var(--card);border:1px solid var(--border);border-radius:16px">` +
+        `<div style="margin:30px 0;padding:14px 16px 16px;background:linear-gradient(rgba(28,74,52,0.14),rgba(28,74,52,0.05)),var(--card);border:2px solid #ffd23f;box-shadow:0 0 12px rgba(255,210,63,0.45);border-radius:16px">` +
         `<div style="font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--primary);margin:2px 0 12px;padding-left:2px">${heading}</div>` +
         `<div style="display:flex;gap:12px;flex-wrap:wrap">${cards}</div>` +
         `</div>`
