@@ -5,7 +5,8 @@
 
 ## 2026-07-03
 
-### 영어 포스트 SEO 강화 (11~12편째, Claude Code 세션)
+### 영어 포스트 SEO 강화 (11~13편째, Claude Code 세션)
+- holdem-blind-meaning(13편째): **핵심 키워드**('poker blinds'). SERP·PAA 조사로 경쟁 글 대비 갭 2건 신규 섹션화 — 헤드업 블라인드(버튼이 SB·프리플랍 선행)·미스드/입장 포스팅(dead SB·live BB). FAQ 2개(heads-up·miss blind). desc ~220→~155자 CTR 조정. **이번 검수부터 속도점검 항목 추가**(히어로 30KB·본문2개 총 ~64KB·1200×675·LCP priority 자동=통과)
 - holdem-split-pot-rules(12편째): **실제 SERP·PAA 조사** 후 강화. §13 상황5 '킥커까지 동일' 예시가 하이카드였음→실제 원페어 타이(보드 A♦Q♠9♣6♥2♠ AK vs AK → A-A-K-Q-9)로 정정, 전 예시 검산 통과. 경쟁1위 PokerNews 미커버 갭 공략: 토너먼트 chop(딜)vs자동 split 분화 FAQ(+tournament-vs-cash-game 링크)·'call to win split pot' 전략 롱테일·odd chip 무늬 뉘앙스. 히어로 이미지(888AK 촙) 정합 확인
 - holdem-tiebreak-rules(11편째): §13 전체 핸드 검산 통과(킥커 A♠K♦vs A♥9♣·투페어 KKQQ·풀하우스·스플릿 K-J-3 보드 A-K-Q-Q-J·보드플레이 A-A-K-Q-J 오류無). 이미지 3개(hero·best5·split) 맥락·용량·영어라벨 점검 OK. 내부링크 정밀화(starting-hand selection→holdem-starting-hands-chart 전용 글). 롱테일 FAQ 2개 추가(같은 투페어 승자 / 같은 스트레이트·플러시 촙). updated 갱신
 - 발행 현황: 한국어 51 + 영어 20 (build "51 blog posts + 55 intl")
