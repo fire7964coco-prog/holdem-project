@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "The button and cutoff generate most of your profit because acting last gives you a 15–25% equity realization advantage over out-of-position players. UTG opens only 13% of hands; the button opens up to 45%. Position doesn't just affect what you play preflop — it changes every c-bet, bluff, and pot-control decision on the flop, turn, and river.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-06-18",
+  updated: "2026-07-03",
   keepImagesInBody: true,
   readTime: "17 min",
   emoji: "🎯",
@@ -53,7 +53,7 @@ This single fact is worth more than any hand reading skill or bluffing trick. He
 
 GTO solvers put an exact number on it: ==g:**IP players realize 85–100% of their theoretical equity.**== ==r:OOP players realize only 60–85%.== That 15–25% gap doesn't come from better cards — both players hold equivalent card distributions over thousands of hands. It comes entirely from acting last.
 
-Think about what that means at a ₩10/₩20 live game running 30 hands per hour. Over eight hours, if you're consistently OOP, you're ==r:bleeding equity on every marginal hand==. Position is the leak you can fix right now — no studying hand histories, no solver work — just ==g:sitting down in the right seat==.
+Think about what that means at a $1/$2 live game running 30 hands per hour. Over eight hours, if you're consistently OOP, you're ==r:bleeding equity on every marginal hand==. Position is the leak you can fix right now — no studying hand histories, no solver work — just ==g:sitting down in the right seat==.
 
 ---
 
@@ -97,7 +97,7 @@ The button can open ==g:~45% of hands **profitably**== — not recklessly — be
 
 The cutoff is second-best for one reason: ==**only the button acts behind you**==. If the button folds (which happens often), you become the de facto last-to-act player postflop. CO opens ~27–30% of hands.
 
-> **Live game tip:** At a ₩10/₩20 holdem pub, players regularly limp from the button because "I don't have a great hand." That's leaving profit on the table. Open-raise or fold — the positional premium on the button is too valuable to limp away.
+> **Live game tip:** At a $1/$2 live game, players regularly limp from the button because "I don't have a great hand." That's leaving profit on the table. Open-raise or fold — the positional premium on the button is too valuable to limp away.
 
 ---
 
@@ -255,7 +255,7 @@ One of the most underused IP skills is the **strategic check-behind**. When you'
 
 OOP, this option barely exists. You check, they bet, you're forced to call or fold without the pot control you wanted.
 
-> **Live poker application:** At the holdem pub, most recreational players c-bet 100% from the button with nothing. Checking with medium-strength hands on the button is invisible to them — they see the flop, see a check, and don't update their range reads. Against this type of player, the deceptive check-behind sets up a profitable turn or river bet they never see coming.
+> **Live poker application:** At a low-stakes live game, most recreational players c-bet 100% from the button with nothing. Checking with medium-strength hands on the button is invisible to them — they see the flop, see a check, and don't update their range reads. Against this type of player, the deceptive check-behind sets up a profitable turn or river bet they never see coming.
 
 ---
 
@@ -315,6 +315,10 @@ A. Modern GTO strategy recommends 3-bet or fold from the SB, rather than flat-ca
 **Q. How does position affect c-bet frequency?**
 
 A. Significantly. In position (button or cutoff), you can c-bet 65–75% of flops because you see your opponent's action first and can barrel selectively on later streets. Out of position, your c-bet frequency drops to 40–50% — you're betting blind into unknown responses and your range is more visible to the in-position caller. Betting the same frequency OOP as IP is a common and costly error.
+
+**Q. What are early, middle, and late position in poker?**
+
+A. Early position is the first few seats to act — UTG, UTG+1, UTG+2 in a full ring — where you play the tightest range. Middle position (Lojack, Hijack) sits in between with a slightly wider range and partial information. Late position (Cutoff and Button) acts last or near-last and plays the widest, most aggressive range. The rule of thumb: the closer you are to the button, the more hands you can profitably play.
 
 ---
 
