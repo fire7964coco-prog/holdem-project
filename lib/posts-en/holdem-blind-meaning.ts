@@ -4,11 +4,11 @@ export const POST: Post = {
   slug: "holdem-blind-meaning",
   title: "What Are Blinds in Poker? Small Blind vs Big Blind, Explained Simply",
   seoTitle: "Paying Before You See a Card? — Small Blind vs Big Blind Explained",
-  desc: "Why do two players bet before anyone has seen a card? Here's what the small blind and big blind are, where they sit, how much they cost, the big blind's option to check, and how blinds shape every decision at the table.",
+  desc: "Why do two players bet before anyone's seen a card? What the small blind and big blind are, where they sit, what they cost, the heads-up twist, and how blinds shape every hand.",
   tldr: "Blinds are forced bets posted before cards are dealt. The small blind sits left of the dealer button and the big blind to their left; the big blind — usually double the small blind — is the table's betting unit.",
   category: "초보 가이드",
   date: "2026-06-13",
-  updated: "2026-06-13",
+  updated: "2026-07-03",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "💰",
@@ -123,6 +123,16 @@ In many cash games a player may post a **straddle** — a voluntary extra blind 
 
 ---
 
+## Two Twists: Heads-Up and Missed Blinds
+
+### Heads-up — the button posts the small blind
+When only two players are left in a hand (or in a heads-up match), the usual rule ==r:flips==. The **dealer button posts the small blind** and acts ==**first**== before the flop, while the other player posts the big blind and acts ==**last**== preflop — then first on every later street. It's the one time the button pays a blind, and it catches almost everyone the first time.
+
+### Joining a table or missing a blind
+Sit down at a live cash game and you usually can't play for free: you either **post a big blind** to be dealt in right away, or wait for the blind to reach your seat. If you step away and ==**miss your blinds**==, on return you post them to rejoin — the missed big blind plays as a live bet, and the missed small blind is a ==**dead**== chip pulled straight into the pot. Online tables handle all of this automatically.
+
+---
+
 ## Playing From the Blinds
 
 ### Small blind: keep it simple
@@ -177,6 +187,14 @@ A. Yes. The dealer button moves one seat clockwise each hand, so the small and b
 **Q. Is "the big blind" the same as "the blinds"?**
 
 A. Not quite — "the blinds" refers to both the small and big blind together, while the big blind is specifically the larger forced bet and the table's base unit.
+
+**Q. Who posts the blinds in heads-up poker?**
+
+A. With only two players, the rule flips: the dealer button posts the small blind and acts first before the flop, while the other player posts the big blind and acts last preflop. It is the only time the button pays a blind.
+
+**Q. What happens if you miss your blind?**
+
+A. When you return you post the missed blinds to be dealt back in — the big blind plays as a live bet and the small blind is a dead chip added to the pot. Alternatively, you can wait until the big blind naturally reaches your seat.
 
 ---
 
