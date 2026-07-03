@@ -204,6 +204,10 @@ export function renderMarkdown(content: string): string {
         `<span class="inline-flex shrink-0 items-center justify-center rounded-full bg-primary px-5 py-3 text-sm font-black text-black transition-transform group-hover:scale-105">PDF ↓</span>` +
         `</a>`
     )
+    // 인라인 썸네일 링크: [텍스트](/url "thumb:/images/x.webp") — 앵커 앞 미니 썸네일(핵심 링크 1~2개만 선택적 사용, 남발 금지)
+    .replace(/\[([^\]]+)\]\((?!https?:\/\/)([^)\s"]+)\s+"thumb:([^"]+)"\)/g, (_m, t, u, img) =>
+      `<a href="${u}" class="brush-link" style="--hl:${LINK_HL[hlIdx++ % LINK_HL.length]}"><img src="${img}" alt="" loading="lazy" style="display:inline-block;width:1.3em;height:1.3em;object-fit:cover;border-radius:4px;vertical-align:-0.32em;margin-right:5px;border:1.5px solid #ffd23f" />${t}</a>`
+    )
     .replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, (_m, t, u) => `<a href="${u}" target="_blank" rel="noopener noreferrer" class="brush-link" style="--hl:${LINK_HL[hlIdx++ % LINK_HL.length]}">${t} ↗</a>`)
     .replace(/\[([^\]]+)\]\((?!https?:\/\/)([^)]+)\)/g, (_m, t, u) => `<a href="${u}" class="brush-link" style="--hl:${LINK_HL[hlIdx++ % LINK_HL.length]}">${t}</a>`)
     .replace(/^---$/gm, '<hr class="border-border my-8" />')
