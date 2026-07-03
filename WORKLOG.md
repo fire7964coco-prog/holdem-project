@@ -5,6 +5,10 @@
 
 ## 2026-07-03
 
+### 트레일링 슬래시 전수점검 (EN 클린 / KO 65개 정정)
+- EN 20개 전수 스캔: 트슬래시 0·raw img 전부 lazy = 클린 확인
+- **KO 51개 스캔에서 내부링크 trailing slash 65개 발견** → 9개 파일 sed 일괄 제거(301 방지). buy-in-cost 14·schedule-check 13·tax-guide 9·masters-7th 7·posts.ts 6·ggpoker-wsop 5·tournament-vs-cash 4·apt-jeju-fall 4·appt-satellite 3. + masters-7th 일정표 img lazy 1개 보강. 링크전용이라 updated 미갱신
+
 ### 영어 포스트 SEO 강화 (11~20편째, Claude Code 세션)
 - korea-poker-marathon-2026(20편째·이벤트가이드·마지막): **웹 교차검증** — Chuncheon Oct25(공지천교·접수7/14)·JTBC Nov1·APT Jeju Sep25-Oct7·Suga 일화 전부 실제 확인. **APT Jeju 사실정정**: 미확인 'Main $1.5M GTD/KRW2.2B'→확정 '$3.5M+ 총GTD·136events', 'schedule TBA'→발표됨. 트슬래시 6개. 갤러리 raw img 5개 lazy. 히어로 84.5→72.6KB. → **EN 이벤트가이드 4개 전부 완료**
 - ept-barcelona-2026-guide(19편째·이벤트가이드): **웹 교차검증** — 전 이벤트 날짜가 공식 PokerStars Live와 100% 일치(ME Aug22-29 등), 2025 데이터(Eychenne 우승·€1,217,175·2,045엔트리)도 일치. 정밀정정: '3rd largest in EPT history'→'EPT **Barcelona** history'(소스는 바르셀로나 한정 기록, 2곳). 트슬래시 3개. 히어로 91.5KB→1200×675 75.5KB. **본문 이미지 2→4개 추가**(커서): Power Path 사다리 인포그래픽(5단계 $0.50~Gold Pass 숫자검산, 1회 교정) + 포트올림픽 주간 실사
