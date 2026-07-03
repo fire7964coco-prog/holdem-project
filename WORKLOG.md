@@ -5,6 +5,15 @@
 
 ## 2026-07-03
 
+### EN Odds 클러스터 #2 — holdem-outs (How to Count Outs) 신규
+- **Odds & Math 필라 클러스터 2번째**. pot-odds(가격)의 상류 = "아웃츠 세는 법(counting)" 전용글. 토픽오소리티: 허브→클러스터 계속 채움.
+- 타깃: how to count outs·what are outs·poker outs chart·flush draw outs(9)·straight draw outs(8)·gutshot(4)·dirty/tainted outs·outs to odds. H2 7개(정의·단계별카운트·드로우별 아웃츠표·아웃츠→배당 마스터표·4-2룰+오차보정·콤보겹침·더티아웃)+FAQ 8.
+- **경쟁 갭 4개 공략**(리서치 서브에이전트 SERP/PAA): ①더티아웃 실전보드 예시(대형경쟁사 소홀) ②아웃츠 1~15 통합 변환표(치트시트 수요) ③4-2룰 고아웃 과대추정 오차컬럼(15아웃 룰60% vs 실제54.1%, 보정=×4−(outs−8)) ④콤보 겹침산수(플러시+양차=왜 17 아닌 15).
+- **품질: §13 적대적 서브에이전트 검산 ALL CORRECT** — C(47,2)=1081 기반 7개 아웃카운트·턴/리버 양컬럼·배당·오차표·콤보(J♠T♠ on 9♠8♣2♠=15)·더티아웃 카드 전부 조합론 독립 재검산.
+- 이미지: 히어로 slug-매칭(커서 생성 대기) + 본문 재사용 실사(reading-straight-example 8-high 스트레이트=언어중립 영어). 
+- 양방향 링크: 허브(probability "counting outs" 지점)·pot-odds("Count your outs" 지점)에서 인라인 썸네일 역링크. 첫링크=필라. 클릭강화(:::readnext 2카드).
+- 빌드 ✅ "51 blog posts + 58 intl"(intl 57→58). 커밋 603f936. **다음**: Odds 클러스터 계속(rule-of-2-and-4 or drawing-odds) or 다른 필라(Glossary straddle 2900). ⚠️ **커서 이미지 생성 필요**: /images/holdem-outs-hero.webp.
+
 ### EN Odds 클러스터 심화 — holdem-pot-odds (How to Calculate Pot Odds) 신규
 - **Odds & Math 필라 클러스터 플래그십**(예약 필라 슬러그). 토픽 오소리티: 허브(holdem-probability) 발행 후 클러스터부터 채움.
 - 타깃: pot odds·how to calculate pot odds·pot odds chart·implied odds·pot odds vs equity. H2 8개(정의 X-to-1·단계별계산·비율↔%·벳사이즈별 필요에쿼티표·드로우 클리어표·3개념 구분·4-2룰·초보실수+연속 실전핸드)+FAQ 8.
