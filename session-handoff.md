@@ -6,7 +6,7 @@
 ---
 
 ## 📅 마지막 작업일
-2026-07-03 (Claude Code 세션 — EN 강화 11~20편째: 이벤트가이드 4개 apt-incheon·wpt-australia·ept-barcelona·korea-marathon 완료)
+2026-07-03 오후 (Claude Code 세션 — EN 6필라 기획 확정 + lowfruits 키워드 6시드 수확 + 발행 로드맵 완성. **다음 세션 = 집필 시작**)
 
 ---
 
@@ -46,17 +46,35 @@
 
 > ⚠️ 포스트 작업 전 `.cursor/rules/posting.mdc`(통합 마스터) 먼저 읽기 — 이제 자동 적용됨.
 
-### ★0순위 (다음 세션 시작 작업) — EN 필라-클러스터 구조 분석 → 부족분 완성
-**사용자 지시(2026-07-03)**: 현재 영어 필라-클러스터 구조가 어떻게 짜여 있는지 먼저 **매핑**하고, **비어있는 클러스터나 없는 필라를 완성**한다.
+### ★0순위 (다음 세션 시작 작업) — EN 6필라 발행 시작 (기획·키워드수확 완료됨)
+**상태(2026-07-03 완료)**: EN 필라-클러스터 **기획 + lowfruits 키워드 수확 + 발행 로드맵 전부 확정**. 이제 **집필만 하면 됨.**
 
-**진행 방법**:
-1. `lib/posts-en/` 20개 전부의 slug·주제·내부링크를 분석해 **현재 EN 필라↔클러스터 트리를 그린다**(어느 필라 밑에 어떤 클러스터가 붙어있고, 어디가 비었는지).
-   - 참고: 11개 필라 슬러그(CLAUDE.md §8)는 KO 기준. EN은 현재 `holdem-tournament`(토너먼트 필라)·`holdem-position-play`(포지션 필라)가 명확한 필라. 나머지(hand-rankings·rules-for-beginners·betting-actions·game-order·showdown·all-in·blind-meaning·starting-hands-chart·reading-the-board·flush-vs-straight·tiebreak·split-pot·positions)가 룰/족보/포지션 클러스터로 붙음.
-2. **갭 식별**: KO엔 있는데 EN엔 없는 필라/클러스터(예: 확률 `holdem-probability`, 전략 `holdem-strategy`, 팟오즈 `holdem-pot-odds`, 블러프 `holdem-bluff-spot`, 용어 `holdem-glossary`, 홀덤펍 `holdem-pub-guide` 등). KO `lib/posts/`·`lib/posts.ts` slug 목록과 대조.
-3. **우선순위**: GSC 강점(토너먼트/펍)+최대기회(족보 클러스터) 고려. memory `gsc-28day-snapshot-2026-07` 확인.
-4. 완성 방식 = 신규 EN 포스트 발행(SERP·PAA 조사 → §13 검산 → 내부링크 양방향 → 이미지 → 속도점검). 기존 posting.mdc STEP 준수.
+**먼저 읽을 문서 3개 (순서대로)**:
+1. `docs/en-blog-pillar-cluster-map.md` — EN 6필라 구조 마스터 맵
+2. `docs/keyword-bank/00-SYNTHESIS-roadmap.md` — 데이터 기반 발행 우선순위 (여기가 실행 순서)
+3. `docs/keyword-bank/en-*.md` (6개) — 시드별 키워드+승산(LDA/weak-spot) 상세
 
-**시작 전 반드시**: CLAUDE.md → session-handoff → WORKLOG 순서로 읽고, posting.mdc 확인.
+**확정된 EN 6필라** (KO 복제 X, EN 시장 독립설계, pub-guide 제외):
+1 How to Play(`texas-holdem-rules-for-beginners`) · 2 Hand Rankings(`holdem-hand-rankings`) · 3 Odds&Math(`holdem-probability` 신규) · 4 Strategy(`holdem-strategy` 신규) · 5 Tournament(`holdem-tournament`) · 6 Glossary(`holdem-glossary` 신규). slug은 12언어 공유(hreflang)라 확정=변경금지.
+
+**목표(재확인)**: **롱테일 키워드 구글 1등**이 전부. 메인키워드 정면승부 X. 커뮤니티 전환은 설계 드라이버 아님(리텐션용). EN 완성 후 그 구조로 12언어 번역.
+
+### 🛠️ 작업 워크플로우 = "필라 단위 스프린트" (사용자가 이 방식 선호 — 새 세션에서 다시 설명 후 착수)
+**핵심: 작업을 성격별로 쪼갠다.**
+- **리서치(SERP·PAA)** = 서브에이전트 병렬 (or lowfruits 데이터 활용) — 이미 키워드뱅크로 1차 완료
+- **초안 작성** = 내가(Claude) 메인에서 **1편씩** (EN=마스터라 오류가 12언어 전파 → 병렬 금지, 품질 집중)
+- **검증(§13 핸드검산·팩트체크)** = 적대적 서브에이전트
+- **이미지** = 커서 워크플로우(프롬프트+위치는 Claude가, 생성·저장은 커서)
+
+**루프**: [A]리서치(키워드뱅크 활용) → [B]사용자 방향 게이트(각도 승인, 5분) → [C]초안 1편(경험담+§13검산+내부링크 첫링크=필라) → [D]빌드·커밋·GSC 소배치 → [E]맵§7·WORKLOG 갱신 → 다음. 발행은 2~3편씩.
+**사용자 게이트**: 방향 승인 + 포커사실 검수(언어중립). 매 글 **한국어 2~3줄 요약** 첨부.
+
+### 첫 착수 = Phase 0 (기존 글 FAQ 강화, 최고 ROI)
+`holdem-hand-rankings`에 데이터 매칭 FAQ 강화부터: `what is a flush`(5400)·`full house`(4400)·`straight`(2900) 정의 + `what beats a X` FAQ + 룰 FAQ(3 pairs·ace as 1 등). 합 ~17k 볼륨, 기존 랭크+GSC권위 레버리지. → 그다음 Phase 1(Odds 확률차트 신규 LDA11, Strategy limping LDA8, Glossary straddle/rake/fish…). 상세는 00-SYNTHESIS-roadmap.md.
+
+**⚠️ lowfruits 후속 수확 남음**(다음 라운드): `pot odds *`·`c bet *`·`poker bluff *`·`poker cash game *`(Cash Game 7필라 후보). 승산 판정 = LDA≤20 매우좋음/20~35 좋음.
+
+**시작 전 반드시**: CLAUDE.md → session-handoff → WORKLOG → posting.mdc → 위 3개 문서.
 
 ### 1순위 — 영어 포스트 SEO 강화 (20개 1차 강화 완료)
 - 대상: `lib/posts-en/` 20개. GSC상 "how to play texas holdem / rules for dummies" 클러스터가 노출 많고 순위 페이지5~8

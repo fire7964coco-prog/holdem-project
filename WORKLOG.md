@@ -5,8 +5,13 @@
 
 ## 2026-07-03
 
-### 다음 세션 예약: EN 필라-클러스터 구조 분석 → 부족분 완성 (사용자 지시)
-- session-handoff ★0순위에 기록. EN 필라↔클러스터 트리 매핑 후 빈 클러스터/없는 필라(확률·전략·팟오즈·블러프·용어·펍 등 KO엔 있고 EN엔 없는 것) 신규 발행
+### EN 6필라 기획 확정 + lowfruits 키워드 수확 + 발행 로드맵 (오후 세션)
+- **EN 6필라 독립설계 확정**(KO 복제 X, pub-guide 제외): Rules·Hand Rankings·Odds&Math(신규 holdem-probability)·Strategy(신규 holdem-strategy)·Tournament·Glossary(신규 holdem-glossary). 목표=롱테일 구글1등, EN마스터→12언어 번역. 문서: `docs/en-blog-pillar-cluster-map.md`
+- **현재 EN 20개 내부링크 트리 실측**: hand-rankings(피링크10)·rules-for-beginners(아웃허브11)가 실질 필라, 전략필라 껍데기, wpt/ept 고아링크 확인
+- **lowfruits 6시드 수확·분석**(~1,130키워드): what is a */odds of */what beats a */when to */poker tournament */can you * in poker. 승산=LDA+weak-spot. 뱅크 6개 `docs/keyword-bank/en-*.md` + 종합 로드맵 `00-SYNTHESIS-roadmap.md`
+- **크로스필라 발견**: limping590·nuts·bad beat jackpot·cash game신호·count cards
+- **낡은 기획 정리**: `docs/global-holdem/PROJECT.md`·`PILLAR-CLUSTER-ROADMAP.md` 삭제(URL스킴 안맞음). SEO-COPYWRITING-GUIDE.md는 유지
+- **다음 세션 = 집필 시작**: Phase 0(hand-rankings FAQ 강화 ~17k볼륨) → Phase 1(Odds차트·limping·glossary 플래그십). 워크플로우=필라단위 스프린트(리서치 병렬/초안 Claude 1편씩/검증 서브에이전트/이미지 커서)
 
 ### 트레일링 슬래시 전수점검 (EN 클린 / KO 65개 정정)
 - EN 20개 전수 스캔: 트슬래시 0·raw img 전부 lazy = 클린 확인
