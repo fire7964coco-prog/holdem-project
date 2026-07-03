@@ -158,6 +158,8 @@ Every seat gets a different opening range because **the number of players acting
 
 </div>
 
+![9-handed poker table showing opening ranges widening from UTG (~13%, tight red) to the Button (~45%, wide green)](/images/holdem-position-play-opening-range.webp "Opening range by position — UTG opens ~13%, the button ~45%")
+
 The practical rule: ==**each position moving toward the button, add roughly 5–8% of hands to your opening range.**== ==r:Remove the weakest suited connectors and offsuit broadways first as you move earlier.==
 
 For the complete hand-by-hand starting hand breakdown, see [poker starting hands chart](/en/blog/holdem-starting-hands-chart).
@@ -192,6 +194,8 @@ Late position is where you build your winrate. Two main levers:
 - CO steal: Raise ~2.5–3× with any reasonable hand if it's folded to you
 - BTN steal: Even wider — hands like K4s, Q7s, J6s become profitable steals
 - After a fold, your BTN open puts both blinds to a tough decision
+
+![A late-position player on the button pushing a raise forward while both blinds fold — a textbook blind steal](/images/holdem-position-play-blind-steal.webp "Stealing the blinds from the button when it folds around")
 
 **Positional c-betting:** Because you act last postflop when called, you can continuation bet a wider range from late position:
 
