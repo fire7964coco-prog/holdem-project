@@ -103,6 +103,8 @@ PokerStars designed Power Path specifically to ==stop pros from buying directly 
 
 </div>
 
+![PokerStars Power Path ladder to EPT Barcelona 2026 — Step 1 at $0.50 climbing through $1.50, $11 and $55 up to the Gold Pass worth about €10,300](/images/ept-barcelona-2026-guide-powerpath.webp "The Power Path ladder: $0.50 Step 1 all the way up to the €10,300 Gold Pass")
+
 Win Step 4 and you receive one of three Power Passes:
 
 | Pass | Value | What's Included |
@@ -258,6 +260,8 @@ Casino Barcelona is more relaxed than Monte Carlo — but there are real rules:
 ## Where to Stay for EPT Barcelona 2026 — Hotels Near Casino Barcelona
 
 ==r:August is peak tourist season in Barcelona. Book early.== Prices for proximity to the casino roughly triple compared to low season.
+
+![Port Olímpic marina in Barcelona by day — yachts moored along a palm-lined promenade with the beach and waterfront hotels near Casino Barcelona](/images/ept-barcelona-2026-guide-portolimpic.webp "Port Olímpic by day — the marina and beachfront right outside Casino Barcelona")
 
 ### Right Next Door (3 min or less)
 
