@@ -6,7 +6,7 @@
 ---
 
 ## 📅 마지막 작업일
-2026-07-03 (Claude Code 세션 — **EN Phase 0 착수: holdem-hand-rankings 정확매칭 FAQ 10개 강화 완료·배포**. 다음 = GSC 색인 재요청 → Phase 1 Odds/Glossary 신규 집필)
+2026-07-03 (Claude Code 세션 — **EN Phase 0(hand-rankings FAQ 10개) + Phase 1 Odds 허브 신규 `holdem-probability` 발행 완료·배포**. 확률 35개 적대적 재검산 통과. 다음 = GSC 색인요청 → Odds 클러스터 or Glossary 플래그십)
 
 ---
 
@@ -47,10 +47,12 @@
 > ⚠️ 포스트 작업 전 `.cursor/rules/posting.mdc`(통합 마스터) 먼저 읽기 — 이제 자동 적용됨.
 
 ### ★0순위 (다음 세션 시작 작업) — EN 6필라 발행 (Phase 0 완료, Phase 1 진행)
-**진행상태**: ✅ **Phase 0 완료(2026-07-03)** — `holdem-hand-rankings`에 정확매칭 FAQ 10개(정의형 flush/full house/straight + what-beats 5개 + 룰 3pairs/wheel) 추가·검증·배포(e06ed4c). ~17k 볼륨 흡수.
-**다음 착수 = Phase 1(신규 페이지 시작)**: ① `holdem-probability` 신규 허브("Poker Odds & Probability Chart", odds of hands 1600·hand probabilities 1300 등 **LDA11 = 신규 중 최고승산**) ② `holdem-limping`(what is limping 590·LDA8) ③ Glossary 플래그십(straddle 2900→rake 1300→fish 390). Phase 0 잔여 흡수(betting-actions·blind-meaning·showdown FAQ)는 각 필라 손질 때.
-**즉시 할 일**: GSC 색인 재요청 `/en/blog/holdem-hand-rankings`.
-로드맵 상세: `docs/keyword-bank/00-SYNTHESIS-roadmap.md` Phase 1.
+**진행상태**:
+- ✅ **Phase 0 완료** — `holdem-hand-rankings` 정확매칭 FAQ 10개 추가·배포(e06ed4c). ~17k 볼륨 흡수.
+- ✅ **Phase 1 Odds 허브 발행 완료** — `holdem-probability`("Poker Odds & Probability Chart") 종합 플래그십. H2 8개+FAQ8. 확률 35개 적대적 재검산 ALL CORRECT. 배포 bcad393. (필라3 Odds 허브 확보)
+**다음 착수 후보**: ① **Odds 클러스터 심화**(허브에 개요만 있는 것 전용글로: `holdem-pot-odds`·`holdem-outs`·`holdem-rule-of-2-and-4`·drawing-odds) → 토픽 오소리티 밀도 ② `holdem-limping`(what is limping 590·LDA8·SS1, Strategy) ③ **Glossary 플래그십**(straddle 2900→rake 1300→fish 390·LDA3). 토픽오소리티 원칙상 Odds 클러스터로 필라3을 두껍게 마무리 추천.
+**즉시 할 일**: GSC 색인 재요청 `/en/blog/holdem-probability`(+ Phase0 `/en/blog/holdem-hand-rankings`).
+로드맵 상세: `docs/keyword-bank/00-SYNTHESIS-roadmap.md` Phase 1~3.
 
 **먼저 읽을 문서 3개 (순서대로)**:
 1. `docs/en-blog-pillar-cluster-map.md` — EN 6필라 구조 마스터 맵

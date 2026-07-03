@@ -66,8 +66,9 @@ KO 11필라를 복제하지 않고 EN 검색시장 기준으로 재편. `holdem-
 - 🆕 holdem-what-beats-what (poker hand cheat sheet / what beats a full house 류 FAQ 집약)
 > GSC상 "홀덤 족보"류 노출 최다. 깊이·kicker 보강으로 순위만 올리면 큰 이득.
 
-### 필라 3 — Odds & Math · hub `holdem-probability` 🆕 ("Texas Holdem Odds & Probability")
-- 🆕 holdem-pot-odds (플래그십: how to calculate pot odds)
+### 필라 3 — Odds & Math · hub `holdem-probability` ✅ ("Poker Odds & Probability Chart")
+> **발행됨(2026-07-03)**: 종합 플래그십 허브. H2 8개(족보확률차트·스타팅핸드·플랍오즈통합표·드로우아웃츠·4-2룰·팟오즈·로열희귀도·롱샷)+FAQ8. 확률 35개 적대적 재검산 ALL CORRECT. hand-rankings·starting-hands-chart 역링크 有. 아래 클러스터는 이 허브에서 파생·심화 예정.
+- 🆕 holdem-pot-odds (플래그십: how to calculate pot odds) ← 허브에 개요 有, 전용 심화글 필요
 - 🆕 holdem-outs (poker outs chart / how to count outs)
 - 🆕 holdem-rule-of-2-and-4 (4-2 rule)
 - 🆕 holdem-implied-odds
@@ -167,7 +168,7 @@ posting.mdc STEP 준수. 롱테일 1등용 필수 체크:
 |---|---|---|---|
 | 1 Rules | ✅ | 5 / 8 | 두꺼움 |
 | 2 Hand Rankings | ✅ | 4 / 6 | 두꺼움 |
-| 3 Odds & Math | 🆕 | 0 / 6 | 미착수 |
+| 3 Odds & Math | ✅ | 1(허브) / 6 | 허브발행·클러스터 대기 |
 | 4 Strategy | 🆕 | 3 / 9 | 껍데기 |
 | 5 Tournament | ✅ | 5 / 8 | 강함(고아2) |
 | 6 Glossary | 🆕 | 0 / 7 | 미착수 |

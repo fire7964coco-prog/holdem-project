@@ -5,6 +5,16 @@
 
 ## 2026-07-03
 
+### EN Phase 1 신규 필라 발행 — holdem-probability (Poker Odds & Probability Chart)
+- **EN 6필라 Odds & Math 허브 신규 발행**(로드맵 Phase 1, LDA11=신규 중 최고승산). 종합 플래그십 1편.
+- 타깃: odds of hands(1600)·poker hand probabilities(1300)·poker odds chart(390)·odds of a straight flush(880)·royal flush odds 등. H2 8개(족보확률차트 5장vs홀덤 나란히·스타팅핸드오즈·**플랍 오즈 통합표**·드로우 아웃츠표·4-2룰·팟오즈 워크드예시·로열/스트플 희귀도·롱샷) + PAA 정확매칭 FAQ 8개.
+- 경쟁 갭 공략: 5-card/7-card 명확구분·"flopping X" 단일표(경쟁사는 분산)·매 숫자 평문해석·outs+4-2룰+팟오즈 한 페이지 통합.
+- **품질: §13 + 적대적 서브에이전트 2회 — 확률 35개 전부 조합론 독립 재검산 ALL CORRECT**(C(52,5)/C(52,7)/C(50,3)/1326). SERP·PAA 리서치 서브에이전트 선행.
+- 이미지: slug-매칭 히어로 신규 생성(칩 실사 1200×675 24KB) + 본문 재사용 실사 2개. ⚠️ blog-premium-hands-cards는 **한글 깨진 오버레이** 발견→제외(pot-odds-chips-visual은 영어 CALL만이라 사용).
+- 양방향 링크: hand-rankings("pure probability" 지점)·starting-hands-chart(suited FAQ)에서 역링크. intl-links 검사 통과.
+- 빌드 ✅ "51 blog posts + 56 intl"(intl 55→56). category=strategy. 커밋 bcad393.
+- **다음**: GSC 색인요청 `/en/blog/holdem-probability`. Odds 클러스터 계속(pot-odds·outs·4-2룰 전용글) or Glossary 플래그십(straddle 2900).
+
 ### EN Phase 0 착수 — holdem-hand-rankings 정확매칭 FAQ 10개 강화 (집필 세션)
 - **EN 6필라 집필 시작**. 로드맵 Phase 0(최고 ROI) = 기존 랭크·GSC권위 페이지에 **정확매칭 PAA FAQ만 추가**해 ~17k 볼륨 흡수(신규 페이지 X, 리스크 최소).
 - `holdem-hand-rankings`에 FAQ 10개 추가: ①정의형 what is a flush(5400)·full house(4400)·straight(2900) ②What beats a X: straight(1000)·flush(590)·full house(880)·royal flush(170·"nothing" 훅)·straight flush(140) ③룰 three pairs(70)·ace as a 1=wheel(40). 기존 FAQ와 중복 없음(Does a flush beat a straight 등과 별개 쿼리).
