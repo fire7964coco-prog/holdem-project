@@ -13,10 +13,10 @@ export const POST: Post = {
   readTime: "13 min",
   emoji: "🎲",
   image: "/images/holdem-probability-hero.webp",
-  imageAlt: "Colorful poker chip stacks on green felt representing the odds and probabilities behind every Texas Hold'em hand",
+  imageAlt: "Overhead view of an active Texas Hold'em table with five community cards, scattered chip stacks and players mid-hand",
   tags: ["poker odds", "poker probability chart", "poker hand odds", "odds of flopping a set", "rule of 2 and 4", "pot odds", "poker outs chart", "texas holdem odds"],
   content: `
-![Colorful poker chip stacks on green felt — the odds behind every Texas Hold'em hand](/images/holdem-probability-hero.webp "Every decision in Hold'em is really a probability question")
+![Overhead view of a Texas Hold'em table mid-hand — community cards and chip stacks on green felt](/images/holdem-probability-hero.webp "Every decision in Hold'em is really a probability question")
 
 The first time I set-mined a pair of fives in a live game and hit my set on the flop, the guy next to me groaned "what are the *odds*?" — and I actually knew: about ==1 in 8.5==. That one number is why I called in the first place.
 
