@@ -168,7 +168,7 @@ A. ...
 | 디렉티브 | 용도 |
 |----------|------|
 | `:::eventcta:::` | 이벤트 참여 소형 CTA 박스(클릭 시 `/?tab=event` 이벤트 탭). 체류시간용, 본문 중간 1회 권장 |
-| `:::readnext` … `:::` | 관련글 썸네일 카드 스트립(한 줄당 `href \| 제목 \| 이미지경로(선택)`, 최대 3개). **FAQ 앞/본문 중간**에 배치해 완독 전 이탈자에게도 내부링크 노출(클릭↑). 예) `/en/blog/holdem-hand-rankings \| Poker Hand Rankings \| /images/holdem-hand-rankings-hero.webp` |
+| `:::readnext[라벨]` … `:::` | 관련글 썸네일 카드 스트립(한 줄당 `href \| 제목 \| 이미지경로(선택)`, 최대 3개). **녹색 펠트 틴트 박스 + 골드 라벨**로 영역 구분(테마 자동적응). `[라벨]` 생략 시 "Read next"(KO는 `[이어서 읽기]` 등 지정). **FAQ 앞/본문 중간** 배치로 완독 전 이탈자에게도 내부링크 노출(클릭↑). 예) `:::readnext[Keep reading]` + `/en/blog/holdem-hand-rankings \| Poker Hand Rankings \| /images/holdem-hand-rankings-hero.webp` |
 | `:::faqcard[/img.webp][alt][caption]:::` | 노트 스타일 FAQ 비주얼 카드 |
 | `:::tip[텍스트]:::` | 💡 팁 콜아웃(파란 박스) |
 | `:::note[텍스트]:::` | 여백형 에디토리얼 노트(이탤릭+골드 좌측선) |
