@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "EPT Barcelona 2026 is Aug 16–29 at Casino Barcelona. Main Event buy-in: €5,300. Cheapest online path: Power Path from $0.50 → Gold Pass (€5,300 ME + 8-night hotel + €690 expenses). You need a PokerStars Live account and a valid passport. Book hotels early — August is peak season.",
   category: "초보 가이드",
   date: "2026-06-17",
-  updated: "2026-06-17",
+  updated: "2026-07-03",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🃏",
@@ -51,14 +51,14 @@ The ==**European Poker Tour (EPT)**== is the flagship live poker series run by P
 | Dates | ==**Aug 16–29, 2026**== | Aug 18–31, 2025 |
 | Venue | Casino Barcelona | Casino Barcelona |
 | Main Event buy-in | ==**€5,300**== | €5,300 |
-| 2025 entries | — | ==g:**2,045**== (3rd largest in EPT history) |
+| 2025 entries | — | ==g:**2,045**== (3rd largest in EPT Barcelona history) |
 | 2025 prize pool | — | ==g:**€9,918,250**== |
 | 2025 first prize | — | ==g:**€1,217,175**== (Thomas Eychenne, France) |
 | Events range | €825 – €100,000 | €825 – €100,000 |
 
 </div>
 
-The 2025 field of 2,045 was the ==**third-largest Main Event in EPT history**==. Expect similar or bigger numbers in 2026 — Barcelona consistently draws the largest fields on the European calendar.
+The 2025 field of 2,045 was the ==**third-largest Main Event in EPT Barcelona history**==. Expect similar or bigger numbers in 2026 — Barcelona consistently draws the largest fields on the European calendar.
 
 ---
 
@@ -402,17 +402,17 @@ A. Barcelona's Port Olímpic area is generally safe. ==r:Pickpocketing is common
 ## Related Guides
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
-  <a href="/en/blog/holdem-tournament/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/en/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Must Read</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">How Poker Tournaments Work</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Buy-ins, blinds, satellites & Day-1 checklist</div>
   </a>
-  <a href="/en/blog/holdem-tournament-vs-cash-game/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/en/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Compare</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Tournament vs Cash Game</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">8 differences that change everything</div>
   </a>
-  <a href="/en/blog/texas-holdem-rules-for-beginners/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/en/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Start Here</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Texas Hold'em Rules for Beginners</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Master the basics before your first live event</div>
