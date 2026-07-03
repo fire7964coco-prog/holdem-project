@@ -46,7 +46,19 @@
 
 > ⚠️ 포스트 작업 전 `.cursor/rules/posting.mdc`(통합 마스터) 먼저 읽기 — 이제 자동 적용됨.
 
-### 1순위 — 영어 포스트 SEO 강화 (진행 중)
+### ★0순위 (다음 세션 시작 작업) — EN 필라-클러스터 구조 분석 → 부족분 완성
+**사용자 지시(2026-07-03)**: 현재 영어 필라-클러스터 구조가 어떻게 짜여 있는지 먼저 **매핑**하고, **비어있는 클러스터나 없는 필라를 완성**한다.
+
+**진행 방법**:
+1. `lib/posts-en/` 20개 전부의 slug·주제·내부링크를 분석해 **현재 EN 필라↔클러스터 트리를 그린다**(어느 필라 밑에 어떤 클러스터가 붙어있고, 어디가 비었는지).
+   - 참고: 11개 필라 슬러그(CLAUDE.md §8)는 KO 기준. EN은 현재 `holdem-tournament`(토너먼트 필라)·`holdem-position-play`(포지션 필라)가 명확한 필라. 나머지(hand-rankings·rules-for-beginners·betting-actions·game-order·showdown·all-in·blind-meaning·starting-hands-chart·reading-the-board·flush-vs-straight·tiebreak·split-pot·positions)가 룰/족보/포지션 클러스터로 붙음.
+2. **갭 식별**: KO엔 있는데 EN엔 없는 필라/클러스터(예: 확률 `holdem-probability`, 전략 `holdem-strategy`, 팟오즈 `holdem-pot-odds`, 블러프 `holdem-bluff-spot`, 용어 `holdem-glossary`, 홀덤펍 `holdem-pub-guide` 등). KO `lib/posts/`·`lib/posts.ts` slug 목록과 대조.
+3. **우선순위**: GSC 강점(토너먼트/펍)+최대기회(족보 클러스터) 고려. memory `gsc-28day-snapshot-2026-07` 확인.
+4. 완성 방식 = 신규 EN 포스트 발행(SERP·PAA 조사 → §13 검산 → 내부링크 양방향 → 이미지 → 속도점검). 기존 posting.mdc STEP 준수.
+
+**시작 전 반드시**: CLAUDE.md → session-handoff → WORKLOG 순서로 읽고, posting.mdc 확인.
+
+### 1순위 — 영어 포스트 SEO 강화 (20개 1차 강화 완료)
 - 대상: `lib/posts-en/` 20개. GSC상 "how to play texas holdem / rules for dummies" 클러스터가 노출 많고 순위 페이지5~8
 - ⚠️ 참고: 해당 EN 룰 글 콘텐츠는 이미 우수 → 문제는 **도메인 권위**(대형 경쟁사). 콘텐츠 추가보다 EN SERP·PAA 재조사·롱테일 커버·내부링크·장기 백링크 관점 접근
 - 규칙: posting.mdc(다국어 현지화·EN 롱테일 클러스터링) + memory `gsc-28day-snapshot-2026-07` 확인 후 시작

@@ -5,6 +5,9 @@
 
 ## 2026-07-03
 
+### 다음 세션 예약: EN 필라-클러스터 구조 분석 → 부족분 완성 (사용자 지시)
+- session-handoff ★0순위에 기록. EN 필라↔클러스터 트리 매핑 후 빈 클러스터/없는 필라(확률·전략·팟오즈·블러프·용어·펍 등 KO엔 있고 EN엔 없는 것) 신규 발행
+
 ### 트레일링 슬래시 전수점검 (EN 클린 / KO 65개 정정)
 - EN 20개 전수 스캔: 트슬래시 0·raw img 전부 lazy = 클린 확인
 - **KO 51개 스캔에서 내부링크 trailing slash 65개 발견** → 9개 파일 sed 일괄 제거(301 방지). buy-in-cost 14·schedule-check 13·tax-guide 9·masters-7th 7·posts.ts 6·ggpoker-wsop 5·tournament-vs-cash 4·apt-jeju-fall 4·appt-satellite 3. + masters-7th 일정표 img lazy 1개 보강. 링크전용이라 updated 미갱신
