@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In cash games, chips are real money and blinds stay fixed. In tournaments, chips are survival equity, blinds rise, and payouts depend on where you finish.",
   category: "토너먼트",
   date: "2026-06-11",
-  updated: "2026-06-11",
+  updated: "2026-07-03",
   hideSummaryImageSlot: true,
   readTime: "16 min",
   emoji: "🏆",
@@ -243,7 +243,7 @@ Tournaments can still be great for beginners if you enjoy the competition and ca
 | Play short sessions | Cash game |
 | Study ICM and bubble pressure | Tournament |
 
-If you are brand new, first learn [how a Texas Hold'em hand works](/en/blog/holdem-game-order) and the [poker hand rankings](/en/blog/holdem-hand-rankings). Choosing a format is much easier once the basic rules are automatic.
+If you are brand new, first learn [how a Texas Hold'em hand works](/en/blog/holdem-game-order) and the [poker hand rankings](/en/blog/holdem-hand-rankings). Choosing a format is much easier once the basic rules are automatic — and if you lean toward tournaments, see [how poker tournaments work](/en/blog/holdem-tournament) for buy-ins, blind levels, and the Day-1 flow.
 
 ---
 
@@ -330,6 +330,18 @@ A. No. Re-entry lets you buy back into the tournament after busting during a cer
 
 A. A simple beginner guideline is 20-40 buy-ins for cash games and 50-100+ buy-ins for tournaments. Large-field tournaments may need even more because long no-cash stretches are normal.
 
+**Q. Do professional players play cash games or tournaments?**
+
+A. Both — but many pros specialize. Cash-game specialists value the steadier hourly win rate and flexible hours, while tournament pros chase big scores and titles despite the higher variance. Plenty of top players do both: cash games for reliable income, tournaments for upside and prestige.
+
+**Q. What is the bubble in a poker tournament?**
+
+A. The bubble is the point just before the paid places begin — for example, when 24 players get paid and 25 remain. It is where ICM pressure peaks, because busting means leaving with nothing while folding to survive can lock up a payout. Cash games have no bubble.
+
+**Q. Which is more profitable per hour, cash games or tournaments?**
+
+A. For most players, cash games give a more predictable hourly rate, while tournament earnings arrive in rare large spikes. A skilled tournament player can have a higher long-run ROI, but the swings mean the money comes unevenly rather than hour by hour.
+
 ---
 
 ## The 3 Things to Remember
@@ -359,6 +371,11 @@ Master cash fundamentals first, then add tournaments when you are ready for ==ri
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Blinds</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">What Are the Blinds in Poker?</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">SB, BB, blind steal, and option — all explained</div>
+  </a>
+  <a href="/en/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Tournaments</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">How Poker Tournaments Work</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Buy-ins, blind levels, satellites, and a Day-1 checklist</div>
   </a>
 </div>
 `.trim(),
