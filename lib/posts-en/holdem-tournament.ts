@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In a poker tournament you pay a fixed buy-in for chips, blinds increase on a timer until one player holds all chips. Top 10–15% of players cash. You can enter via direct buy-in, satellite, or online pre-registration.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-06-16",
+  updated: "2026-07-03",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🏆",
@@ -86,7 +86,7 @@ A poker tournament is a competition where everyone pays the same entry fee (the 
 
 **One-sentence summary:** In a cash game you can walk away anytime and your chips are money. In a tournament, your maximum loss is the buy-in — but you play for a much bigger prize.
 
-→ For a deeper comparison: [Poker Tournament vs Cash Game — 8 Key Differences](/en/blog/holdem-tournament-vs-cash-game/)
+→ For a deeper comparison: [Poker Tournament vs Cash Game — 8 Key Differences](/en/blog/holdem-tournament-vs-cash-game)
 
 ---
 
@@ -137,6 +137,8 @@ Notice: **you didn't lose a single chip** between Level 1 and Level 9. But your 
 ==g:Rule of thumb: below 20 big blinds, you're in push-or-fold territory. Below 10 big blinds, you must shove almost any playable hand before the blinds eat you alive.==
 
 **What are antes?** After the early levels, most tournaments add an "ante" — an extra forced bet from every player, not just the blinds. This increases the pot size and speeds up play. When antes kick in, your chips shrink even faster.
+
+New to blinds altogether? Start with [what the small blind and big blind actually are](/en/blog/holdem-blind-meaning) — it makes every "BB" number above click.
 
 ---
 
@@ -384,25 +386,43 @@ A. ITM = "In The Money." You've reached a finishing position that guarantees a p
 
 A. Technically yes — through a chain of satellite qualifiers. A $5 super-satellite awards a seat into a $55 event, which awards a seat into a $215 event, and so on up to a $1,050 or larger target. Most players who reach the deep runs of major events entered through satellite chains. The trade-off: satellite play requires specific strategy (extreme risk-aversion near the bubble) and runs through multiple tournaments.
 
+**Q. Can you join a poker tournament after it has started?**
+
+A. Yes, during the late registration window — usually the first few blind levels, often two to four hours in. You still get the full starting stack, but since blinds have risen you'll sit down with fewer big blinds than early entrants. Once late reg closes, no new entries are allowed.
+
+**Q. Can you leave a poker tournament early and keep your chips?**
+
+A. No. Unlike a cash game, tournament chips have no cash value and can't be cashed out mid-event. If you walk away, your chips stay in play and keep paying blinds and antes until they're gone. You only receive money if you finish in a paid (ITM) position.
+
 ---
 
 ## Related Guides
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
-  <a href="/en/blog/holdem-tournament-vs-cash-game/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/en/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Deep Dive</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Tournament vs Cash Game</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">8 differences that change everything</div>
   </a>
-  <a href="/en/blog/holdem-starting-hands-chart/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/en/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Strategy</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Starting Hands Chart</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Which hands to play in early levels</div>
   </a>
-  <a href="/en/blog/texas-holdem-rules-for-beginners/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/en/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Start Here</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Texas Hold'em Rules for Beginners</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Master the basics first</div>
+  </a>
+  <a href="/en/blog/holdem-blind-meaning" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Blinds</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">What Are the Blinds in Poker?</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Blind levels start here — SB, BB, and antes</div>
+  </a>
+  <a href="/en/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Positions</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Poker Table Positions Explained</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Why your seat drives every tournament decision</div>
   </a>
 </div>
 `.trim(),
