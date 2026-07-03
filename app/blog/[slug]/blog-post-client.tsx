@@ -249,7 +249,7 @@ export function renderMarkdown(content: string): string {
           ? `<img src="${img}" alt="" loading="lazy" style="width:64px;height:64px;object-fit:cover;border-radius:10px;flex-shrink:0"/>`
           : '';
         return (
-          `<a href="${href}" style="display:flex;align-items:center;gap:14px;padding:12px 14px;background:var(--card);border:1px solid var(--border);border-radius:12px;text-decoration:none;flex:1 1 260px;min-width:0;transition:border-color .2s,transform .2s;box-shadow:0 1px 3px rgba(0,0,0,0.10)" onmouseover="this.style.borderColor='var(--primary)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='none'">` +
+          `<a href="${href}" style="display:flex;align-items:center;gap:14px;padding:12px 14px;background:var(--card);border:2px solid #ffd23f;border-radius:12px;text-decoration:none;flex:1 1 260px;min-width:0;transition:box-shadow .2s,transform .2s;box-shadow:0 0 10px rgba(255,210,63,0.40)" onmouseover="this.style.boxShadow='0 0 16px rgba(255,210,63,0.70)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='0 0 10px rgba(255,210,63,0.40)';this.style.transform='none'">` +
           thumb +
           `<span style="min-width:0;display:flex;align-items:center;gap:8px">` +
           `<span style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.35">${title}</span>` +
@@ -258,7 +258,7 @@ export function renderMarkdown(content: string): string {
         );
       }).join('');
       return (
-        `<div style="margin:30px 0;padding:14px 16px 16px;background:linear-gradient(rgba(28,74,52,0.14),rgba(28,74,52,0.05)),var(--card);border:2px solid #ffd23f;box-shadow:0 0 12px rgba(255,210,63,0.45);border-radius:16px">` +
+        `<div style="margin:30px 0;padding:14px 16px 16px;background:linear-gradient(rgba(28,74,52,0.14),rgba(28,74,52,0.05)),var(--card);border:1px solid var(--border);border-radius:16px">` +
         `<div style="font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--primary);margin:2px 0 12px;padding-left:2px">${heading}</div>` +
         `<div style="display:flex;gap:12px;flex-wrap:wrap">${cards}</div>` +
         `</div>`
