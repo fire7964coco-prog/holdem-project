@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "holdem-pot-odds",
   title: "How to Calculate Pot Odds in Poker — The 10-Second Method",
   seoTitle: "Is This Call Actually Profitable? — How to Calculate Pot Odds",
-  desc: "Stop calling on hope. Here's how to calculate pot odds in poker in ten seconds — the ratio-to-percentage shortcut, a bet-size cheat sheet, and how pot odds, equity, and implied odds actually fit together.",
+  desc: "Stop calling on hope. How to calculate pot odds in ten seconds — the ratio-to-percentage shortcut, a bet-size cheat sheet, and where implied odds fit in.",
   tldr: "To calculate pot odds, divide the amount you must call by the total pot after your call. Calling $50 into a $150 pot = 50 ÷ 200 = 25% — so you need at least 25% equity to make the call profitable.",
   category: "strategy",
   date: "2026-07-03",
