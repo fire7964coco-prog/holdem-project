@@ -143,7 +143,7 @@ On the turn (1 card to come) | Multiply outs × 2 → your approximate % to hit 
 
 :::tip[The rule slightly *over*-estimates once you have more than about 9 outs. With a 15-out monster, "×4" says 60% but the real number is 54% — shade it down a few points for big draws.]:::
 
-That's the entire trick. Outs → times four on the flop → your equity. Everything else is just knowing what to do with that number.
+That's the entire trick. Outs → times four on the flop → your equity. Everything else is just knowing what to do with that number. The one skill this rule assumes you've mastered is the count itself — for combo draws, overlapping outs, and the "dirty" outs that shouldn't count, see the full guide to [counting outs in poker](/en/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp").
 
 ---
 

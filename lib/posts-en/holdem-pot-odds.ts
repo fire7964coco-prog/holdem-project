@@ -108,7 +108,7 @@ Notice the ceiling: even a massive **2×-pot overbet only asks for 40% equity**.
 
 ## Pot Odds Chart: Which Draws Beat Which Bets
 
-Now connect the price to your hand. Count your **outs** (cards that make your hand), convert them to equity, and check it against the bet. These are the draws you'll face most:
+Now connect the price to your hand. [Count your **outs**](/en/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp") (cards that make your hand), convert them to equity, and check it against the bet. These are the draws you'll face most:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
