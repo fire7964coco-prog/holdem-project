@@ -183,7 +183,7 @@ A. A solid beginner range is roughly 15–20% of starting hands. This means fold
 
 **Q. Does "suited" really matter that much?**
 
-A. Suited adds about 2–3% equity over the same offsuit hand — meaningful but not a reason to play a bad hand just because it shares a suit. A suited hand can make a flush draw, which adds flexibility postflop. But suited trash is still trash.
+A. Suited adds about 2–3% equity over the same offsuit hand — meaningful but not a reason to play a bad hand just because it shares a suit. A suited hand can make a flush draw, which adds flexibility postflop (and a flopped flush draw completes [about 35% of the time by the river](/en/blog/holdem-probability)). But suited trash is still trash.
 
 **Q. Is AK a good hand even if it misses the flop?**
 

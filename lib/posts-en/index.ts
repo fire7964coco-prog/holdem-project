@@ -1,6 +1,7 @@
 import type { Post } from "../posts";
 import { POST as holdemTournament } from "./holdem-tournament";
 import { POST as holdemHandRankings } from "./holdem-hand-rankings";
+import { POST as holdemProbability } from "./holdem-probability";
 import { POST as holdemGameOrder } from "./holdem-game-order";
 import { POST as holdemTournamentVsCashGame } from "./holdem-tournament-vs-cash-game";
 import { POST as texasHoldemRulesForBeginners } from "./texas-holdem-rules-for-beginners";
@@ -26,6 +27,7 @@ import { POST as koreaPokerMarathon2026 } from "./korea-poker-marathon-2026";
  * 슬러그는 한국어 글과 동일하게 맞춰 hreflang 상호 링크가 성립하도록 한다.
  */
 export const EN_POSTS: Post[] = [
+  holdemProbability,
   koreaPokerMarathon2026,
   aptIncheon2026Guide,
   holdemPositionPlay,
