@@ -71,7 +71,7 @@ Notice how the order never changes — the rarer a hand is to make, the higher i
 
 ## Odds of Being Dealt Each Starting Hand
 
-![Premium starting hands — pocket aces, kings, queens and ace-king suited glowing on the felt](/images/holdem-starting-hands-premium.webp "The premium starting hands and how often you're actually dealt them")
+![Pocket aces — the ace of spades and ace of hearts freshly dealt on green felt beside poker chips](/images/holdem-probability-starting-hands.webp "Pocket aces: the best starting hand, dealt just once in 221 hands")
 
 Before any flop, there are exactly **1,326 possible two-card starting hands**. Here's how often the ones people ask about show up.
 
@@ -153,7 +153,7 @@ That's the entire trick. Outs → times four on the flop → your equity. Everyt
 
 ## Pot Odds: Turning Your Odds Into a Call or Fold
 
-![A large pot of chips beside a small call — the price you're paying to chase a draw](/images/pot-odds-chips-visual.webp "Pot odds compare the price of a call to the size of the pot")
+![A player pushing a stack of chips toward the center pot on green felt — a call in motion](/images/holdem-probability-pot-odds.webp "Pot odds compare the price of a call to the size of the pot")
 
 Knowing you'll hit 35% of the time is useless until you compare it to the **price**. Pot odds are simply: *what fraction of the final pot am I paying to call?* If your chance of winning is bigger than that fraction, you call.
 
@@ -172,6 +172,8 @@ That's the moment all the numbers pay off: your **drawing odds (35%)** beat your
 ---
 
 ## Royal Flush & Straight Flush Odds (and Why They're So Rare)
+
+![A royal flush in hearts — A-K-Q-J-10 all hearts — held with ace-king on a Queen-Jack-Ten heart board](/images/holdem-probability-royal-flush.webp "A royal flush in hearts: the rarest hand in poker, about 1 in 30,940 by the river")
 
 The two rarest hands are the ones players brag about for years — with good reason.
 
