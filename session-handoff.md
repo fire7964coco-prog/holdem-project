@@ -6,7 +6,7 @@
 ---
 
 ## 📅 마지막 작업일
-2026-07-03 (Claude Code 세션 — **EN Odds 클러스터 `holdem-outs`(How to Count Outs) 발행**. 허브 probability·pot-odds 발행에 이어 필라3 클러스터 계속. §13 적대적검산 통과. 다음 = Odds 클러스터 계속(rule-of-2-and-4·drawing-odds) or GSC 색인요청 + ⚠️커서 홀덤-outs 히어로 이미지 생성)
+2026-07-03 (Claude Code 세션 — **EN Odds 클러스터 `holdem-outs`(How to Count Outs) 발행 + 본문 이미지 4개 완비**. 허브 probability·pot-odds 발행에 이어 필라3 클러스터 계속. §13 적대적검산·이미지검산 통과. 다음 = Odds 클러스터 계속(drawing-odds 권장) or GSC 색인요청)
 
 ---
 
@@ -51,9 +51,9 @@
 - ✅ **Phase 0 완료** — `holdem-hand-rankings` 정확매칭 FAQ 10개 추가·배포(e06ed4c). ~17k 볼륨 흡수.
 - ✅ **Phase 1 Odds 허브 발행** — `holdem-probability` 종합 플래그십. 확률 35개 검산. 배포 bcad393.
 - ✅ **Odds 클러스터 #1 발행** — `holdem-pot-odds`("How to Calculate Pot Odds"). 벳사이즈 치트시트·3개념구분·4-2룰·실전핸드. §13 18개 검산(턴 팟오즈 오류1 정정). 허브 양방향링크. 배포 ac3a93b.
-- ✅ **Odds 클러스터 #2 발행** — `holdem-outs`("How to Count Outs"). 아웃츠 세는법=pot-odds 상류. 드로우별 아웃츠표·아웃츠→배당 마스터표·4-2룰 오차보정·콤보 겹침산수(15 not 17)·더티아웃 실전. §13 적대적검산 ALL CORRECT. 허브·pot-odds 양방향 인라인썸네일 역링크. 배포 603f936. ⚠️ **커서 히어로 이미지 생성 필요**: `/images/holdem-outs-hero.webp`.
+- ✅ **Odds 클러스터 #2 발행** — `holdem-outs`("How to Count Outs"). 아웃츠 세는법=pot-odds 상류. 드로우별 아웃츠표·아웃츠→배당 마스터표·4-2룰 오차보정·콤보 겹침산수(15 not 17)·더티아웃 실전. §13 적대적검산 ALL CORRECT. 허브·pot-odds 양방향 인라인썸네일 역링크. 배포 603f936. ✅ **본문 이미지 4개 완비**(히어로+counting+dirty-outs 커서생성, 스트레이트 재사용). 이미지 §13검산 통과(counting=A♠K♠ 오버카드6아웃, dirty=44페어보드). 배포 26661d4.
 **다음 착수 후보(순서 계속)**: ① **Odds 클러스터 계속** — `holdem-rule-of-2-and-4`(전용 훅글)·`holdem-drawing-odds`(flush/straight draw 확률·flopping a set/flush 롱테일) → 필라3 토픽오소리티 완성 ② 그 후 다른 필라(Glossary straddle 2900 / Strategy limping 590). **토픽오소리티 원칙상 Odds 클러스터 먼저 두껍게.** ※ outs·pot-odds가 이미 4-2룰을 상세 커버 → rule-of-2-and-4 전용글은 중복주의(차별화=순수 훅/치트시트 각도), drawing-odds가 더 신선.
-**즉시 할 일**: ⚠️커서 `/images/holdem-outs-hero.webp` 생성 + GSC 색인요청 `/en/blog/holdem-outs`·`/en/blog/holdem-pot-odds`·`/en/blog/holdem-probability`·`/en/blog/holdem-hand-rankings`.
+**즉시 할 일**: GSC 색인요청 `/en/blog/holdem-outs`·`/en/blog/holdem-pot-odds`·`/en/blog/holdem-probability`·`/en/blog/holdem-hand-rankings`.
 **🧹 기존 정리 과제(발견 2026-07-03)**: EN desc>160자 **7개 기존글** 트리밍 필요(CTR 훅+키워드 유지하며) — positions 255·hand-rankings 210·tournament 205·blind-meaning 176·all-in-rules 164·reading-the-board 162·showdown-rules 162. (오늘 신규 probability·pot-odds는 정정 완료)
 **✅ EN 전체 클릭강화 적용 완료(2026-07-03)**: 22개 EN 글 전부 인라인 썸네일 링크 + FAQ앞 :::readnext 2카드. 신규글은 이 패턴 기본 포함(posting.mdc 규칙).
 **적용 중인 신규 규칙**: 모든 신규글 = 인라인 썸네일 링크(가장 연관글 1~2개, `"thumb:이미지"`) + FAQ앞 `:::readnext[라벨]` 2카드 박스. posting.mdc·memory 문서화.
