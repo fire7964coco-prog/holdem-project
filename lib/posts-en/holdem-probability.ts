@@ -16,8 +16,6 @@ export const POST: Post = {
   imageAlt: "Overhead view of an active Texas Hold'em table with five community cards, scattered chip stacks and players mid-hand",
   tags: ["poker odds", "poker probability chart", "poker hand odds", "odds of flopping a set", "rule of 2 and 4", "pot odds", "poker outs chart", "texas holdem odds"],
   content: `
-![Overhead view of a Texas Hold'em table mid-hand — community cards and chip stacks on green felt](/images/holdem-probability-hero.webp "Every decision in Hold'em is really a probability question")
-
 The first time I set-mined a pair of fives in a live game and hit my set on the flop, the guy next to me groaned "what are the *odds*?" — and I actually knew: about ==1 in 8.5==. That one number is why I called in the first place.
 
 Poker isn't a guessing game. Every call, fold, and shove is a ==probability question in disguise==, and the players who win are the ones who've turned "what are the odds?" into a reflex. This is the ==complete **poker odds and probability chart**== for Texas Hold'em — every made hand, every flop, every draw — with the ==g:one mental shortcut== that lets you do the math at the table in two seconds.
