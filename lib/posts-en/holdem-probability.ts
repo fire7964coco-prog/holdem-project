@@ -201,6 +201,11 @@ Some numbers exist mostly to explain the worst night of your poker life.
 
 ---
 
+:::readnext
+/en/blog/holdem-hand-rankings | Poker Hand Rankings, Best to Worst | /images/holdem-hand-rankings-hero.webp
+/en/blog/holdem-starting-hands-chart | Which Starting Hands to Actually Play | /images/holdem-starting-hands-chart-hero.webp
+:::
+
 ## FAQ
 
 **Q. What are the odds of getting a royal flush in Texas Hold'em?**

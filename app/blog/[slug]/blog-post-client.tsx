@@ -236,6 +236,28 @@ export function renderMarkdown(content: string): string {
       return `<div style="margin:28px 0">${items}</div>`;
     })
 
+    // ── Read Next 썸네일 카드 스트립: :::readnext\nhref | 제목 | 이미지경로(선택)\n:::
+    // 본문 중간/‌FAQ 앞에 삽입해 완독 전 이탈자에게도 관련글 노출(내부링크 클릭↑).
+    // 예) /en/blog/holdem-hand-rankings | Poker Hand Rankings | /images/holdem-hand-rankings-hero.webp
+    .replace(/^:::readnext\n([\s\S]*?)\n:::$/gm, (_, body) => {
+      const cards = body.trim().split('\n').filter((l: string) => l.trim()).slice(0, 3).map((line: string) => {
+        const [href = '', title = '', img = ''] = line.split('|').map((s: string) => s.trim());
+        if (!href || !title) return '';
+        const thumb = img
+          ? `<img src="${img}" alt="" loading="lazy" style="width:72px;height:72px;object-fit:cover;border-radius:10px;flex-shrink:0"/>`
+          : '';
+        return (
+          `<a href="${href}" style="display:flex;align-items:center;gap:14px;padding:12px 14px;background:var(--card);border:1px solid var(--border);border-radius:14px;text-decoration:none;flex:1 1 260px;min-width:0;transition:border-color .2s,transform .2s" onmouseover="this.style.borderColor='var(--primary)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='none'">` +
+          thumb +
+          `<span style="min-width:0">` +
+          `<span style="display:block;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--primary);margin-bottom:3px">Read next →</span>` +
+          `<span style="display:block;font-size:14px;font-weight:700;color:var(--foreground);line-height:1.35">${title}</span>` +
+          `</span></a>`
+        );
+      }).join('');
+      return `<div style="display:flex;gap:12px;flex-wrap:wrap;margin:30px 0">${cards}</div>`;
+    })
+
     // ── 단계 플로우: :::steps\n제목 | 설명\n:::
     // 예) 프리플랍 | 포지션 확인 후 핸드 범위 결정
     .replace(/^:::steps\n([\s\S]*?)\n:::$/gm, (_, body) => {
