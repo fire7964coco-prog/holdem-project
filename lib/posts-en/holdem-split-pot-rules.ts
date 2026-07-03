@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A pot is split when two or more players have the identical best five-card hand at showdown. Suits never break the tie, and any odd chip goes to the player nearest the dealer's left.",
   category: "초보 가이드",
   date: "2026-06-13",
-  updated: "2026-06-13",
+  updated: "2026-07-03",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🃏",
@@ -66,7 +66,7 @@ Two straights of the same top card tie, regardless of suit. With a board of 7♣
 There's no suit ranking, so two flushes with the same five ranks tie. In practice this almost always means the **board itself** is a five-card flush (e.g. K♠ J♠ 8♠ 4♠ 2♠) and both players just play the board.
 
 ### 5. Identical down to the kicker
-Pairs and two pairs are usually decided by kickers — but if the kickers match too, it's a split. Board K♦ 7♠ 4♣ 2♥ J♦ with A♠ Q♣ vs A♥ Q♦ gives both players A-K-Q-J-7 → **split**. For exactly how kickers are compared, see the [tie-breaker and kicker rules](/en/blog/holdem-tiebreak-rules).
+Pairs and two pairs are usually decided by kickers — but if the kickers match too, it's a split. Board A♦ Q♠ 9♣ 6♥ 2♠ with A♠ K♦ vs A♥ K♣ gives both players a pair of aces with the same K-Q-9 kickers — ==g:A-A-K-Q-9== → **split**. For exactly how kickers are compared, see the [tie-breaker and kicker rules](/en/blog/holdem-tiebreak-rules).
 
 ---
 
@@ -128,6 +128,18 @@ A. Yes. If three or more players all hold the identical best five-card hand, the
 **Q. How are split pots handled when someone is all-in?**
 
 A. The pot breaks into a main pot and side pots; each is awarded or chopped separately based on the best hand among the players eligible for that specific pot.
+
+**Q. Is a tournament chop the same as a split pot?**
+
+A. No — same word, two different things. A split pot at showdown is automatic: whenever hands tie, the dealer divides the chips. A tournament "chop" (or "deal") is a voluntary agreement among the remaining players to divide the prize money, usually by chip counts or ICM, and it only happens if everyone agrees. See [tournament vs cash game](/en/blog/holdem-tournament-vs-cash-game) for how tournament payouts differ.
+
+**Q. Should you call on the river if you can only split the pot?**
+
+A. Usually not. If the board plays and the best you can make is the same hand as everyone else, calling a river bet just wins back part of your own chips while risking more. Fold unless the pot is already large or there's a real chance your hole cards beat their exact holding.
+
+**Q. Does suit affect the odd chip?**
+
+A. Never the pot itself — identical hands always split regardless of suit. A few card rooms use a suit order to assign only the single leftover odd chip, but the standard rule is simpler: that chip goes to the first eligible player clockwise from the button.
 
 ---
 
