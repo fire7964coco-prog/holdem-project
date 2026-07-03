@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "APT Incheon 2026 runs Aug 7–16 at Paradise City Casino, Incheon — 10 min by free shuttle from Terminal 1. Main Event: KRW 2,500,000 (~$1,703) buy-in, $1M GTD. Qualify from $3.50 via Natural8 step satellites. Foreign nationals only (Korean citizens cannot enter). Seoul is ~1 hour away and is one of the best cities in Asia for food, culture, and nightlife.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-06-19",
+  updated: "2026-07-03",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🇰🇷",
@@ -203,11 +203,11 @@ Here's what to do with 1–3 free days:
 
 <div style="display:flex;gap:6px;margin:14px 0">
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-hongdae.webp" alt="Hongik University Station (Hongdae) subway entrance — Lines 2, Airport Express, and Gyeongui-Jungang, with rental bikes parked outside" style="width:100%;height:auto;border-radius:6px" />
+    <img src="/images/apt-incheon-2026-guide-hongdae.webp" alt="Hongik University Station (Hongdae) subway entrance — Lines 2, Airport Express, and Gyeongui-Jungang, with rental bikes parked outside" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:6px" />
     <p style="font-size:11px;color:#888;margin:4px 0 0">Hongdae Station — AREX All-Stop direct from Incheon Airport (~60 min, no transfer)</p>
   </div>
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-kbeauty.webp" alt="Olive Young store in Hongdae — Korea's biggest health and beauty chain with thousands of K-beauty and skincare products" style="width:100%;height:auto;border-radius:6px" />
+    <img src="/images/apt-incheon-2026-guide-kbeauty.webp" alt="Olive Young store in Hongdae — Korea's biggest health and beauty chain with thousands of K-beauty and skincare products" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:6px" />
     <p style="font-size:11px;color:#888;margin:4px 0 0">Olive Young — every K-beauty brand you've seen on TikTok</p>
   </div>
 </div>
@@ -216,15 +216,15 @@ Here's what to do with 1–3 free days:
 
 <div style="display:flex;gap:6px;margin:14px 0">
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-myeongdong1.webp" alt="Myeongdong Kyoja restaurant exterior — Seoul's most famous kalguksu and mandu spot since 1966, always packed with tourists and locals" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <img src="/images/apt-incheon-2026-guide-myeongdong1.webp" alt="Myeongdong Kyoja restaurant exterior — Seoul's most famous kalguksu and mandu spot since 1966, always packed with tourists and locals" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
     <p style="font-size:11px;color:#888;margin:4px 0 0">Myeongdong Kyoja — knife-cut noodles since 1966, always queuing</p>
   </div>
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-myeongdong2.webp" alt="Airport Bus stop at Myeongdong Station — direct coach service to Incheon Airport from central Seoul" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <img src="/images/apt-incheon-2026-guide-myeongdong2.webp" alt="Airport Bus stop at Myeongdong Station — direct coach service to Incheon Airport from central Seoul" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
     <p style="font-size:11px;color:#888;margin:4px 0 0">Airport bus stop right at Myeongdong Station → Incheon ~60 min</p>
   </div>
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-myeongdong3.webp" alt="Myeongdong shopping street lined with colorful K-beauty stores and pharmacies — Holika Holika visible on the right" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <img src="/images/apt-incheon-2026-guide-myeongdong3.webp" alt="Myeongdong shopping street lined with colorful K-beauty stores and pharmacies — Holika Holika visible on the right" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
     <p style="font-size:11px;color:#888;margin:4px 0 0">Myeongdong-gil — 800m of K-beauty, street food, and neon signs</p>
   </div>
 </div>
@@ -233,15 +233,15 @@ Here's what to do with 1–3 free days:
 
 <div style="display:flex;gap:6px;margin:14px 0">
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-cheonggyecheon1.webp" alt="Cheonggyecheon Stream wide view — elevated walkway and stepping stones with central Seoul skyscrapers visible behind the tree line" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <img src="/images/apt-incheon-2026-guide-cheonggyecheon1.webp" alt="Cheonggyecheon Stream wide view — elevated walkway and stepping stones with central Seoul skyscrapers visible behind the tree line" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
     <p style="font-size:11px;color:#888;margin:4px 0 0">11km stream running through central Seoul — free, 24h</p>
   </div>
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-cheonggyecheon2.webp" alt="Cheonggyecheon Stream close-up — white egret standing in the flowing water, couple sitting on rocks by the bank" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <img src="/images/apt-incheon-2026-guide-cheonggyecheon2.webp" alt="Cheonggyecheon Stream close-up — white egret standing in the flowing water, couple sitting on rocks by the bank" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
     <p style="font-size:11px;color:#888;margin:4px 0 0">Egrets nesting in the stream — in the middle of a capital city</p>
   </div>
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-cheonggyecheon3.webp" alt="Cheonggyecheon Stream walking path — weeping willow trees alongside the stream, pedestrians strolling the riverside trail" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <img src="/images/apt-incheon-2026-guide-cheonggyecheon3.webp" alt="Cheonggyecheon Stream walking path — weeping willow trees alongside the stream, pedestrians strolling the riverside trail" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
     <p style="font-size:11px;color:#888;margin:4px 0 0">Subway exits every few minutes along the path — walk as far as you like</p>
   </div>
 </div>
