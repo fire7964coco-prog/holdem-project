@@ -53,6 +53,8 @@
 - ✅ **Odds 클러스터 #1 발행** — `holdem-pot-odds`("How to Calculate Pot Odds"). 벳사이즈 치트시트·3개념구분·4-2룰·실전핸드. §13 18개 검산(턴 팟오즈 오류1 정정). 허브 양방향링크. 배포 ac3a93b.
 **다음 착수 후보(순서 계속)**: ① **Odds 클러스터 계속** — `holdem-outs`(count outs/outs chart)·`holdem-rule-of-2-and-4`·`holdem-drawing-odds`(flush/straight draw 확률) → 필라3 토픽오소리티 완성 ② 그 후 다른 필라(Glossary straddle 2900 / Strategy limping 590). **토픽오소리티 원칙상 Odds 클러스터 먼저 두껍게.**
 **즉시 할 일**: GSC 색인요청 `/en/blog/holdem-pot-odds`·`/en/blog/holdem-probability`·`/en/blog/holdem-hand-rankings`.
+**🧹 기존 정리 과제(발견 2026-07-03)**: EN desc>160자 **7개 기존글** 트리밍 필요(CTR 훅+키워드 유지하며) — positions 255·hand-rankings 210·tournament 205·blind-meaning 176·all-in-rules 164·reading-the-board 162·showdown-rules 162. (오늘 신규 probability·pot-odds는 정정 완료)
+**✅ EN 전체 클릭강화 적용 완료(2026-07-03)**: 22개 EN 글 전부 인라인 썸네일 링크 + FAQ앞 :::readnext 2카드. 신규글은 이 패턴 기본 포함(posting.mdc 규칙).
 **적용 중인 신규 규칙**: 모든 신규글 = 인라인 썸네일 링크(가장 연관글 1~2개, `"thumb:이미지"`) + FAQ앞 `:::readnext[라벨]` 2카드 박스. posting.mdc·memory 문서화.
 로드맵 상세: `docs/keyword-bank/00-SYNTHESIS-roadmap.md`.
 
