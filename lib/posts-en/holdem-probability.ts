@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "holdem-probability",
   title: "Poker Odds & Probability Chart — Every Hand's Real Odds in Hold'em",
   seoTitle: "How Often Do You Actually Hit? — Poker Odds & Probability Chart",
-  desc: "The real odds of every poker hand, flop, and draw in Texas Hold'em — plus the Rule of 2 and 4 and pot odds made simple. One complete probability chart you can screenshot.",
+  desc: "The real odds of every poker hand, flop, and draw in Texas Hold'em — plus the Rule of 2 and 4 and pot odds made simple, in one complete probability chart.",
   tldr: "By the river you'll make one pair 43.8% of the time, two pair 23.5%, a flush 3.0%, and a full house 2.6% — while a royal flush shows up just once in about 31,000 hands.",
   category: "strategy",
   date: "2026-07-03",
