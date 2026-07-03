@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Korea's top autumn marathons (Chuncheon Oct 25, JTBC Seoul Nov 1, Garmin Run Nov 15) align with perfect running weather. Paradise City Casino near Incheon Airport runs year-round cash games — foreigners only, 10 min from the terminal. One trip covers both.",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-06-19",
+  updated: "2026-07-03",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏃",
@@ -32,7 +32,7 @@ That story resonated beyond the ARMY fandom. It resonated with the overlap that 
 Korea is where both come together perfectly. ==**World-class autumn marathons. A foreigner-only casino 10 minutes from the airport. And the best city food scene in Asia in between.**==
 
 <div style="display:flex;align-items:flex-start;gap:16px;margin:20px 0">
-  <img src="/images/korea-poker-marathon-2026-marathon-record.webp" alt="2026 Goyang Half Marathon official result card — 1:51:10 chip time, Male Half division" style="width:160px;flex-shrink:0;border-radius:8px" />
+  <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-marathon-record.webp" alt="2026 Goyang Half Marathon official result card — 1:51:10 chip time, Male Half division" style="width:160px;flex-shrink:0;border-radius:8px" />
   <div style="font-size:14px;line-height:1.7;color:var(--muted-foreground)">
     <strong style="display:block;margin-bottom:6px;color:var(--foreground)">Personal record — 2026 Goyang Half Marathon</strong>
     Chip time: <strong>1:51:10</strong> · Male Half division · Bib 5448<br />
@@ -181,7 +181,7 @@ This is where the calendar gets interesting. Three poker festivals run at Korean
       <td style="padding:10px 14px;font-weight:700;white-space:nowrap">Sep 25 – Oct 7</td>
       <td style="padding:10px 14px"><strong>APT Jeju 2026</strong></td>
       <td style="padding:10px 14px">LES A Casino, Jeju</td>
-      <td style="padding:10px 14px;color:var(--muted-foreground)">Main Event $1.5M GTD · ends 18 days before Chuncheon Marathon</td>
+      <td style="padding:10px 14px;color:var(--muted-foreground)">$3.5M+ total GTD · 136 events · ends 18 days before Chuncheon Marathon</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.07);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:10px 14px;font-weight:700;white-space:nowrap">Oct 30 – Nov 8</td>
@@ -203,8 +203,8 @@ This is where the calendar gets interesting. Three poker festivals run at Korean
 
 ==**Jeju Island**== is Korea's most popular domestic resort destination — volcanic coastline, sub-tropical climate, no visa required for most nationalities. The tournament runs at ==**LES A Casino**== inside Jeju Shinhwa World.
 
-- **Main Event:** KRW 2,300,000 (~$1,600) buy-in · KRW 2.2B (~$1.5M) GTD
-- **Full schedule:** TBA — [theasianpokertour.com](https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/info)
+- **Guarantee:** ==g:$3.5M+ total GTD across 136 trophy events== (Main Event buy-in TBA)
+- **Full schedule:** Released — 136 events over 13 days · [theasianpokertour.com](https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/info)
 - Foreigners only · 19+ · valid non-Korean passport
 
 ==g:APT Jeju ends Oct 7 — Chuncheon Marathon is Oct 25. 18 days between them.== Fly Jeju → Seoul, rest and explore, then race.
@@ -252,7 +252,7 @@ While the marathons run Oct–Nov, ==**Paradise City Casino**== runs year-round.
 - Games: No-Limit Hold'em cash, other table games, slots
 - Spa and sauna on-site — relevant if you've just run 42K
 
-For the full tournament picture (APT Incheon runs August 7–16 with $2.7M GTD), see the [APT Incheon 2026 guide](/en/blog/apt-incheon-2026-guide/).
+For the full tournament picture (APT Incheon runs August 7–16 with $2.7M GTD), see the [APT Incheon 2026 guide](/en/blog/apt-incheon-2026-guide).
 
 **Full 2026 Korea poker + marathon calendar:**
 
@@ -295,7 +295,7 @@ For the full tournament picture (APT Incheon runs August 7–16 with $2.7M GTD),
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">Sep 25–Oct 7</td>
       <td style="padding:9px 12px">🃏 <strong>APT Jeju 2026</strong></td>
       <td style="padding:9px 12px">LES A Casino, Jeju</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">$1.5M Main GTD · 18 days to Chuncheon Marathon</td>
+      <td style="padding:9px 12px;color:var(--muted-foreground)">$3.5M+ GTD · 136 events · 18 days to Chuncheon</td>
     </tr>
     <tr style="background:rgba(34,197,94,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">Oct 25 (Sun)</td>
@@ -395,11 +395,11 @@ The Han River cuts through the center of Seoul, and both banks have over ==g:80 
 
 <div style="display:flex;gap:12px;margin:18px 0;flex-wrap:wrap">
   <div style="flex:1;min-width:240px">
-    <img src="/images/korea-poker-marathon-2026-hangang1.webp" alt="Han River park cycling and running path — couple on bench in foreground, cyclists and pedestrians along the riverside, Seoul skyline across the river" style="width:100%;border-radius:8px;display:block" />
+    <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-hangang1.webp" alt="Han River park cycling and running path — couple on bench in foreground, cyclists and pedestrians along the riverside, Seoul skyline across the river" style="width:100%;border-radius:8px;display:block" />
     <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">Yeouido Hangang Park — the most popular section for runners. Flat, wide, car-free, open 24 hours.</p>
   </div>
   <div style="flex:1;min-width:240px">
-    <img src="/images/korea-poker-marathon-2026-hangang2.webp" alt="Han River park tree-lined running path — jogger and cyclist visible on the riverside trail, apartment towers across the river" style="width:100%;border-radius:8px;display:block" />
+    <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-hangang2.webp" alt="Han River park tree-lined running path — jogger and cyclist visible on the riverside trail, apartment towers across the river" style="width:100%;border-radius:8px;display:block" />
     <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">The riverside path continues for kilometres in both directions — used by locals for daily runs, cyclists, and early morning walks.</p>
   </div>
 </div>
@@ -425,11 +425,11 @@ That's it. That's the experience that's been posted on Korean social media milli
 
 <div style="display:flex;gap:12px;margin:18px 0;flex-wrap:wrap">
   <div style="flex:1;min-width:200px">
-    <img src="/images/korea-poker-marathon-2026-ramen-machine.webp" alt="Han River ramen cooking machine at GS25 convenience store — automatic hot water dispenser for instant noodles in paper bowls" style="width:100%;height:280px;object-fit:cover;border-radius:8px;display:block" />
+    <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-ramen-machine.webp" alt="Han River ramen cooking machine at GS25 convenience store — automatic hot water dispenser for instant noodles in paper bowls" style="width:100%;height:280px;object-fit:cover;border-radius:8px;display:block" />
     <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">The machine at the park convenience store. Scan your barcode bowl, press Start — machine handles the rest. Machine use is free.</p>
   </div>
   <div style="flex:1;min-width:200px">
-    <img src="/images/korea-poker-marathon-2026-ramen.webp" alt="Bowl of Han River ramen — Shin Ramyun instant noodles in paper bowl with egg on top, eaten at the riverbank" style="width:100%;height:280px;object-fit:cover;border-radius:8px;display:block" />
+    <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-ramen.webp" alt="Bowl of Han River ramen — Shin Ramyun instant noodles in paper bowl with egg on top, eaten at the riverbank" style="width:100%;height:280px;object-fit:cover;border-radius:8px;display:block" />
     <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">The result. Hot Shin Ramyun with egg by the Han River. Total cost ₩4,000–5,000 (~$3). Possibly the best post-run meal in Seoul.</p>
   </div>
 </div>
@@ -501,24 +501,24 @@ The community of people who hold both a poker bankroll and a marathon training l
 
 Dates to bookmark: ==**Chuncheon Oct 25**==, ==**JTBC Seoul Nov 1**==, Garmin Run Nov 15. Paradise City open year-round.
 
-For the full poker tournament picture (APT Incheon, $2.7M GTD, August 7–16): [APT Incheon 2026 Guide](/en/blog/apt-incheon-2026-guide/). For tournament vs cash game strategy differences: [Tournament vs Cash Game](/en/blog/holdem-tournament-vs-cash-game/).
+For the full poker tournament picture (APT Incheon, $2.7M GTD, August 7–16): [APT Incheon 2026 Guide](/en/blog/apt-incheon-2026-guide). For tournament vs cash game strategy differences: [Tournament vs Cash Game](/en/blog/holdem-tournament-vs-cash-game).
 
 ---
 
 ## Related Posts
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
-  <a href="/en/blog/apt-incheon-2026-guide/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/en/blog/apt-incheon-2026-guide" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Tournament</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">APT Incheon 2026 Guide</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Aug 7–16, Paradise City Casino · $2.7M GTD</div>
   </a>
-  <a href="/en/blog/holdem-tournament/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/en/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Basics</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">How Poker Tournaments Work</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Buy-ins, blinds, satellites & first-timer checklist</div>
   </a>
-  <a href="/en/blog/wpt-australia-2026-guide/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/en/blog/wpt-australia-2026-guide" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Asia-Pacific</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">WPT Australia 2026 Guide</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">The Star Sydney — Sep 10–30</div>
