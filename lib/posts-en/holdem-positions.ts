@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Position is when you act relative to the dealer button. The Button acts last on every postflop street and can open ~40% of hands; UTG acts first and should open only ~12%. Every seat between them gets a sliding range.",
   category: "초보 가이드",
   date: "2026-06-13",
-  updated: "2026-07-02",
+  updated: "2026-07-03",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🎯",
@@ -115,7 +115,7 @@ The two most profitable seats at any poker table.
 | SB | Blind | ~35% vs folds | Best preflop range, worst postflop spot |
 | BB | Blind | Defend ~40% | Pot odds; acts last preflop |
 
-> **Live cash game note:** at a $1/$2 holdem pub game with 100BB stacks, the button is the ideal seat for three-street value — you always know if opponents are weak before deciding whether to fire.
+> **Live cash game note:** at a $1/$2 live cash game with 100BB stacks, the button is the ideal seat for three-street value — you always know if opponents are weak before deciding whether to fire.
 
 ---
 

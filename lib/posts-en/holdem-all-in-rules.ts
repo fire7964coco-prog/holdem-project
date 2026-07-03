@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Going all-in means betting every chip you have. You can only win what you matched from each opponent (the main pot). Extra bets from bigger stacks form a side pot you cannot win. An all-in for less than a full raise does NOT reopen the betting for players who already acted.",
   category: "초보 가이드",
   date: "2026-06-15",
-  updated: "2026-07-02",
+  updated: "2026-07-03",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "♠",
@@ -26,7 +26,7 @@ You're short-stacked. You shove. The player behind calls. A third player re-rais
 
 You have no idea what's happening.
 
-I've been at that table. The first time I went all-in at a live holdem pub, I didn't know whether I could still win anything, whether the other player could re-raise, or even which pile of chips was mine. Nobody explained it.
+I've been at that table. The first time I went all-in at a live cash game, I didn't know whether I could still win anything, whether the other player could re-raise, or even which pile of chips was mine. Nobody explained it.
 
 ==This guide covers every situation: main pots, side pots, re-raise eligibility, and showdown order.== No more freezing when the dealer starts counting stacks. (If the basic betting flow is still fuzzy, the [beginner's rules guide](/en/blog/texas-holdem-rules-for-beginners) covers it first.)
 
