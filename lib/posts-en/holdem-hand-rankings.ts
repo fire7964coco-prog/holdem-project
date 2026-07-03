@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Poker hand rankings from best to worst are: Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, One Pair, and High Card.",
   category: "초보 가이드",
   date: "2026-06-09",
-  updated: "2026-07-02",
+  updated: "2026-07-03",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🃏",
@@ -297,6 +297,18 @@ The takeaway: learn the standard order once and it carries you through nearly ev
 
 ## FAQ
 
+**Q. What is a flush in poker?**
+
+A. A flush is any five cards of the same suit — for example A♦ J♦ 8♦ 6♦ 2♦ — regardless of order. It ranks #5, above a straight and below a full house. When two players both hold a flush, the highest card wins; suits never break the tie.
+
+**Q. What is a full house in poker?**
+
+A. A full house (a "boat") is three of a kind plus a pair, such as Q-Q-Q-5-5. It ranks #4, beating a flush and a straight. Between two full houses, the higher three-of-a-kind decides it first — so QQQ-55 beats JJJ-99 no matter how big the pair is.
+
+**Q. What is a straight in poker?**
+
+A. A straight is five cards in consecutive rank order with mixed suits, like 7-6-5-4-3. It ranks #6. The Ace can play high (10-J-Q-K-A, "Broadway") or low (A-2-3-4-5, "the wheel"), but a straight can't wrap around the corner — Q-K-A-2-3 is not a straight.
+
 **Q. Does a flush beat a straight in poker?**
 
 A. Yes. A flush is #5 and a straight is #6, so a flush always wins — see [why a flush beats a straight](/en/blog/holdem-flush-vs-straight). It's higher because five cards of one suit are statistically harder to make than five in sequence.
@@ -304,6 +316,26 @@ A. Yes. A flush is #5 and a straight is #6, so a flush always wins — see [why 
 **Q. Does a full house beat a flush?**
 
 A. Yes. A full house (#4) beats a flush (#5) and a straight. It only loses to four of a kind, a straight flush, or a royal flush.
+
+**Q. What beats a straight in poker?**
+
+A. A flush, full house, four of a kind, straight flush, or royal flush all beat a straight — and so does a higher straight. A straight (#6) still beats three of a kind, two pair, one pair, and high card.
+
+**Q. What beats a flush in poker?**
+
+A. A full house, four of a kind, straight flush, or royal flush beats a flush. Against another flush, the higher top card wins. A flush (#5) still beats a straight and everything below it.
+
+**Q. What beats a full house in poker?**
+
+A. Only three hands beat a full house: four of a kind, a straight flush, and a royal flush. A higher full house wins too — and the three-of-a-kind is compared before the pair, so KKK-22 beats QQQ-AA.
+
+**Q. What beats a royal flush in poker?**
+
+A. Nothing. A royal flush (A-K-Q-J-10 of one suit) is the best possible hand in poker. It can't be beaten — the only "tie" is another royal flush in a different suit, which splits the pot.
+
+**Q. What beats a straight flush in poker?**
+
+A. Only a higher straight flush or a royal flush (which is simply the ace-high straight flush). A straight flush (#2) beats four of a kind and every hand below it.
 
 **Q. What is a kicker?**
 
@@ -336,6 +368,14 @@ A. Yes. A straight flush (#2) beats four of a kind (#3) — five cards in sequen
 **Q. What is the lowest (worst) hand in poker?**
 
 A. The worst possible hand is 7-5-4-3-2 in mixed suits ("seven-high"). It's the lowest high-card holding that isn't a pair, straight, or flush — the classic "you have nothing" hand.
+
+**Q. Can you have three pairs in poker?**
+
+A. No. A poker hand is always five cards, so it can contain at most two pairs. If your hole cards and the board give you three pairs across seven cards, only your best two pairs count toward the hand — the third pair's higher card can still act as a kicker, but it never becomes a "three pair" hand.
+
+**Q. Can you use an ace as a 1 in poker?**
+
+A. Yes. The Ace plays both high and low, so A-2-3-4-5 (the "wheel") is a legal straight — the lowest one possible. You can't wrap around the corner, though: K-A-2-3-4 is not a straight.
 
 ---
 
