@@ -84,7 +84,7 @@ If poker hand rankings are still new, open [Texas Hold'em hand rankings](/en/blo
 
 ## How to Play Texas Hold'em — Beginner Flow Summary
 
-This article gives you the **beginner version of the flow** so you can sit down without freezing. If you want a deeper street-by-street walkthrough with one full hand, betting order, and examples, read [Texas Hold'em order of play](/en/blog/holdem-game-order) next.
+This article gives you the **beginner version of the flow** so you can sit down without freezing. If you want a deeper street-by-street walkthrough with one full hand, betting order, and examples, read [Texas Hold'em order of play](/en/blog/holdem-game-order "thumb:/images/blog-holdem-game-flow.webp") next.
 
 | Order | Stage | What beginners should remember |
 |------:|-------|--------------------------------|
@@ -376,6 +376,11 @@ A♣4♦ looks exciting to a beginner, but weak aces often make second-best one-
 Hands are easier to play when you act later. If you are first to act, you need stronger hands because everyone else still has information advantage.
 
 ---
+
+:::readnext[Keep reading]
+/en/blog/holdem-game-order | The Order of Play | /images/blog-holdem-game-flow.webp
+/en/blog/holdem-hand-rankings | Poker Hand Rankings | /images/holdem-hand-rankings-hero.webp
+:::
 
 ## FAQ
 

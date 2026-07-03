@@ -162,6 +162,11 @@ A **blind steal** is a raise made to win the blinds when the table has folded ar
 
 ---
 
+:::readnext[Keep reading]
+/en/blog/texas-holdem-rules-for-beginners | Texas Hold'em Rules for Beginners | /images/rules-texas-holdem.webp
+/en/blog/holdem-positions | Table Positions & Seat Names | /images/holdem-positions-hero.webp
+:::
+
 ## FAQ
 
 **Q. Why do you have to pay blinds before seeing your cards?**
@@ -204,7 +209,7 @@ A. When you return you post the missed blinds to be dealt back in — the big bl
 2. The **big blind is the table's unit** — raises, stacks, and pressure are all measured in BBs.
 3. Play the blinds carefully: **raise-or-fold the small blind**, **defend the big blind with pot odds**, and **steal** from late position when it folds to you.
 
-New to the game overall? The [beginner's guide to Texas Hold'em rules](/en/blog/texas-holdem-rules-for-beginners) covers the basics, [the order of play in a hand](/en/blog/holdem-game-order) shows exactly when each blind acts, and [poker positions explained](/en/blog/holdem-positions) covers how your seat — not just the blinds — shapes every decision.
+New to the game overall? The [beginner's guide to Texas Hold'em rules](/en/blog/texas-holdem-rules-for-beginners "thumb:/images/rules-texas-holdem.webp") covers the basics, [the order of play in a hand](/en/blog/holdem-game-order) shows exactly when each blind acts, and [poker positions explained](/en/blog/holdem-positions) covers how your seat — not just the blinds — shapes every decision.
 
 ---
 

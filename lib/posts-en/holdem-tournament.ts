@@ -86,7 +86,7 @@ A poker tournament is a competition where everyone pays the same entry fee (the 
 
 **One-sentence summary:** In a cash game you can walk away anytime and your chips are money. In a tournament, your maximum loss is the buy-in — but you play for a much bigger prize.
 
-→ For a deeper comparison: [Poker Tournament vs Cash Game — 8 Key Differences](/en/blog/holdem-tournament-vs-cash-game)
+→ For a deeper comparison: [Poker Tournament vs Cash Game — 8 Key Differences](/en/blog/holdem-tournament-vs-cash-game "thumb:/images/tournament-table-action.webp")
 
 ---
 
@@ -359,6 +359,11 @@ The payout structure is always announced before the tournament starts. Ask for t
 </div>
 
 ---
+
+:::readnext[Keep reading]
+/en/blog/holdem-tournament-vs-cash-game | Tournament vs Cash Game | /images/tournament-table-action.webp
+/en/blog/apt-incheon-2026-guide | APT Incheon 2026 Guide | /images/apt-incheon-2026-guide-hero.webp
+:::
 
 ## FAQ
 

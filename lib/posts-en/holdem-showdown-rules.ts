@@ -32,7 +32,7 @@ The dealer looks back and forth. Other players at the table sigh.
 
 ## Who Has to Show Cards First at Showdown?
 
-The rule depends on how the final betting round ended (for the full street-by-street sequence that leads here, see [the order of play](/en/blog/holdem-game-order)).
+The rule depends on how the final betting round ended (for the full street-by-street sequence that leads here, see [the order of play](/en/blog/holdem-game-order "thumb:/images/blog-holdem-game-flow.webp")).
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -151,6 +151,11 @@ In many cardrooms, if you win a pot uncontested (everyone folded), you can ask t
 There's no rule against flipping your hand before it's officially your turn. ==g:If you have the nuts or a very strong hand, show immediately.== Other players appreciate it. It speeds up the game. And it's the opposite of slow rolling.
 
 ---
+
+:::readnext[Keep reading]
+/en/blog/holdem-game-order | The Order of Play | /images/blog-holdem-game-flow.webp
+/en/blog/holdem-all-in-rules | All-In Rules & Side Pots | /images/holdem-all-in-rules-hero.webp
+:::
 
 ## FAQ
 

@@ -302,6 +302,11 @@ Compared to EPT Barcelona (~€5,300 Main) or WPT Australia (~AUD $5,000 Main), 
 
 ---
 
+:::readnext[Keep reading]
+/en/blog/holdem-tournament | Texas Hold'em Tournament Guide | /images/holdem-tournament-hero.webp
+/en/blog/korea-poker-marathon-2026 | Korea Poker Marathon 2026 | /images/korea-poker-marathon-2026-hero.webp
+:::
+
 ## FAQ
 
 **Q. Is Paradise City Casino really walkable from Incheon Airport?**
@@ -334,7 +339,7 @@ A. Both work, but ==g:arriving 2–3 days early is recommended==. You recover fr
 4. **Seoul is 60 min away** and is one of Asia's best travel destinations — ==g:palaces, BBQ, nightlife, and unbeatable street food.==
 5. **Foreign nationals only** — this tournament was built for international players. Your passport is your access card.
 
-Heading to APT Incheon? The [tournament vs cash game guide](/en/blog/holdem-tournament-vs-cash-game) covers the structural differences if you're transitioning from cash. And for the poker formats you'll encounter beyond NLHE, [betting actions in poker](/en/blog/holdem-betting-actions) is a clean reference to have read before Day 1.
+Heading to APT Incheon? The [tournament vs cash game guide](/en/blog/holdem-tournament-vs-cash-game "thumb:/images/tournament-table-action.webp") covers the structural differences if you're transitioning from cash. And for the poker formats you'll encounter beyond NLHE, [betting actions in poker](/en/blog/holdem-betting-actions) is a clean reference to have read before Day 1.
 
 ---
 

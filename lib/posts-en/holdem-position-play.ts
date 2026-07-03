@@ -79,7 +79,7 @@ Before we get into strategy, let's lock in the map. Every position is measured b
 
 **6-max note:** Drop UTG, UTG+1, UTG+2, and Lojack. The six remaining seats are UTG (=HJ), Hijack, Cutoff, Button, SB, BB. Your opening ranges in 6-max are wider at every seat because fewer players act behind you.
 
-For a full seat-by-seat name breakdown and the 6-max vs 9-max range comparison, see the [poker positions guide](/en/blog/holdem-positions).
+For a full seat-by-seat name breakdown and the 6-max vs 9-max range comparison, see the [poker positions guide](/en/blog/holdem-positions "thumb:/images/holdem-positions-hero.webp").
 
 ---
 
@@ -297,6 +297,11 @@ The mechanics are identical but the **implications differ**:
 For tournament-specific strategy, see the [tournament vs cash game guide](/en/blog/holdem-tournament-vs-cash-game).
 
 ---
+
+:::readnext[Keep reading]
+/en/blog/holdem-positions | Table Positions & Seat Names | /images/holdem-positions-hero.webp
+/en/blog/holdem-starting-hands-chart | Starting Hands Chart | /images/holdem-starting-hands-chart-hero.webp
+:::
 
 ## FAQ
 

@@ -243,7 +243,7 @@ Tournaments can still be great for beginners if you enjoy the competition and ca
 | Play short sessions | Cash game |
 | Study ICM and bubble pressure | Tournament |
 
-If you are brand new, first learn [how a Texas Hold'em hand works](/en/blog/holdem-game-order) and the [poker hand rankings](/en/blog/holdem-hand-rankings). Choosing a format is much easier once the basic rules are automatic — and if you lean toward tournaments, see [how poker tournaments work](/en/blog/holdem-tournament) for buy-ins, blind levels, and the Day-1 flow.
+If you are brand new, first learn [how a Texas Hold'em hand works](/en/blog/holdem-game-order) and the [poker hand rankings](/en/blog/holdem-hand-rankings). Choosing a format is much easier once the basic rules are automatic — and if you lean toward tournaments, see [how poker tournaments work](/en/blog/holdem-tournament "thumb:/images/holdem-tournament-hero.webp") for buy-ins, blind levels, and the Day-1 flow.
 
 ---
 
@@ -303,6 +303,11 @@ If you cannot explain the structure, do not buy in yet. Ask first, then play.
 Neither format is "better." They test different parts of the same game. Many strong players use cash games to build fundamentals and tournaments for high-upside shots.
 
 ---
+
+:::readnext[Keep reading]
+/en/blog/holdem-pot-odds | How to Calculate Pot Odds | /images/holdem-pot-odds-hero.webp
+/en/blog/holdem-probability | Poker Odds & Probability Chart | /images/holdem-probability-hero.webp
+:::
 
 ## FAQ
 

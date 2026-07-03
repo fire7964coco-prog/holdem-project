@@ -33,6 +33,8 @@ I'd won my satellite seat, booked flights to Barcelona, sorted the hotel — and
 
 Don't be me. This guide covers everything — from winning your seat for under a dollar to what actually happens when you walk into Casino Barcelona on Day 1.
 
+New to live tournaments? Skim [the tournament guide](/en/blog/holdem-tournament "thumb:/images/holdem-tournament-hero.webp") first — buy-ins, blinds, and the Day-1 flow in one place.
+
 ---
 
 > **Quick answer**
@@ -378,6 +380,11 @@ Print this and check it off before you leave for the airport:
 - [ ] Basic Spanish phrases (casino staff speak English, restaurants vary)
 
 ---
+
+:::readnext[Keep reading]
+/en/blog/holdem-tournament | Texas Hold'em Tournament Guide | /images/holdem-tournament-hero.webp
+/en/blog/apt-incheon-2026-guide | APT Incheon 2026 Guide | /images/apt-incheon-2026-guide-hero.webp
+:::
 
 ## FAQ — EPT Barcelona 2026
 

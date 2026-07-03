@@ -66,7 +66,7 @@ Two straights of the same top card tie, regardless of suit. With a board of 7♣
 There's no suit ranking, so two flushes with the same five ranks tie. In practice this almost always means the **board itself** is a five-card flush (e.g. K♠ J♠ 8♠ 4♠ 2♠) and both players just play the board.
 
 ### 5. Identical down to the kicker
-Pairs and two pairs are usually decided by kickers — but if the kickers match too, it's a split. Board A♦ Q♠ 9♣ 6♥ 2♠ with A♠ K♦ vs A♥ K♣ gives both players a pair of aces with the same K-Q-9 kickers — ==g:A-A-K-Q-9== → **split**. For exactly how kickers are compared, see the [tie-breaker and kicker rules](/en/blog/holdem-tiebreak-rules).
+Pairs and two pairs are usually decided by kickers — but if the kickers match too, it's a split. Board A♦ Q♠ 9♣ 6♥ 2♠ with A♠ K♦ vs A♥ K♣ gives both players a pair of aces with the same K-Q-9 kickers — ==g:A-A-K-Q-9== → **split**. For exactly how kickers are compared, see the [tie-breaker and kicker rules](/en/blog/holdem-tiebreak-rules "thumb:/images/holdem-tiebreak-hero.webp").
 
 ---
 
@@ -102,6 +102,11 @@ In a three-way split with two odd chips, the two earliest seats clockwise each g
 When someone is all-in, the chips form a ==**main pot**== (everyone is eligible) plus one or more ==**side pots**== (only the deeper players who kept betting). Each pot is awarded — or chopped — ==**separately**==, based on the best hand among that pot's eligible players. ==g:So it's entirely possible for the main pot to be split three ways while a side pot is won outright by one of the deeper stacks.== ==r:An all-in player can only ever win or chop the pots they actually contributed to.==
 
 ---
+
+:::readnext[Keep reading]
+/en/blog/holdem-hand-rankings | Poker Hand Rankings | /images/holdem-hand-rankings-hero.webp
+/en/blog/holdem-flush-vs-straight | Does a Flush Beat a Straight? | /images/holdem-flush-vs-straight-hero.webp
+:::
 
 ## FAQ
 

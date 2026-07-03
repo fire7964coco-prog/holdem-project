@@ -252,7 +252,7 @@ While the marathons run Oct–Nov, ==**Paradise City Casino**== runs year-round.
 - Games: No-Limit Hold'em cash, other table games, slots
 - Spa and sauna on-site — relevant if you've just run 42K
 
-For the full tournament picture (APT Incheon runs August 7–16 with $2.7M GTD), see the [APT Incheon 2026 guide](/en/blog/apt-incheon-2026-guide).
+For the full tournament picture (APT Incheon runs August 7–16 with $2.7M GTD), see the [APT Incheon 2026 guide](/en/blog/apt-incheon-2026-guide "thumb:/images/apt-incheon-2026-guide-hero.webp").
 
 **Full 2026 Korea poker + marathon calendar:**
 
@@ -468,6 +468,11 @@ For the full up-to-date Korean marathon schedule (all distances, registration li
 Dates and events can change — check the official race websites and this calendar before booking flights.
 
 ---
+
+:::readnext[Keep reading]
+/en/blog/holdem-tournament | Texas Hold'em Tournament Guide | /images/holdem-tournament-hero.webp
+/en/blog/apt-incheon-2026-guide | APT Incheon 2026 Guide | /images/apt-incheon-2026-guide-hero.webp
+:::
 
 ## FAQ
 

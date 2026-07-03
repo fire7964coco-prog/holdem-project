@@ -18,7 +18,7 @@ export const POST: Post = {
   content: `
 Everyone who sits down to their first game of Texas Hold'em asks the same thing: ==r:*"Wait — whose turn is it, and when do I put money in?"*== You know you get cards. What you don't know is when to bet, when more cards come out, and how the winner is actually decided.
 
-This is the **order-of-play guide**: blinds, preflop, flop, turn, river, showdown, and who acts first at each point. If you are completely new and want the broader beginner package — rules, chips, hand rankings, first strategy, and a printable PDF — start with [Texas Hold'em rules for beginners](/en/blog/texas-holdem-rules-for-beginners). Then come back here for the detailed hand flow.
+This is the **order-of-play guide**: blinds, preflop, flop, turn, river, showdown, and who acts first at each point. If you are completely new and want the broader beginner package — rules, chips, hand rankings, first strategy, and a printable PDF — start with [Texas Hold'em rules for beginners](/en/blog/texas-holdem-rules-for-beginners "thumb:/images/rules-texas-holdem.webp"). Then come back here for the detailed hand flow.
 
 ---
 
@@ -329,6 +329,11 @@ Once the order of play clicks, it's time to actually play.
 Texas Hold'em takes thirty minutes to learn and a lifetime to master. But the basics you picked up today are more than enough to take a seat. For the history and formal rules, the [Wikipedia entry on Texas hold 'em](https://en.wikipedia.org/wiki/Texas_hold_%27em) is a solid reference.
 
 ---
+
+:::readnext[Keep reading]
+/en/blog/texas-holdem-rules-for-beginners | Texas Hold'em Rules for Beginners | /images/rules-texas-holdem.webp
+/en/blog/holdem-betting-actions | Betting Actions Explained | /images/holdem-betting-actions-hero.webp
+:::
 
 ## FAQ
 

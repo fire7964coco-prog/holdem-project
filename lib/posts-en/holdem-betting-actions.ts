@@ -61,7 +61,7 @@ You can check when:
 
 If someone bets after you check, you now face a new decision: fold, call, or raise. Checking and then raising when an opponent bets is called a ==check-raise== — it's completely legal and a powerful move when used correctly.
 
-For the full street-by-street breakdown of who acts when, see [Texas Hold'em order of play](/en/blog/holdem-game-order).
+For the full street-by-street breakdown of who acts when, see [Texas Hold'em order of play](/en/blog/holdem-game-order "thumb:/images/blog-holdem-game-flow.webp").
 
 ---
 
@@ -148,6 +148,11 @@ A player bets $5 into a $60 pot on the river. Beginner checks, sees the $5, fold
 Everyone limps around. The BB hesitates, then folds. That's a free flop thrown away. ==g:If no one raised, the BB may check to see the flop at zero extra cost== — the blind is already live. This comes up every orbit and beginners miss it for weeks.
 
 ---
+
+:::readnext[Keep reading]
+/en/blog/texas-holdem-rules-for-beginners | Texas Hold'em Rules for Beginners | /images/rules-texas-holdem.webp
+/en/blog/holdem-game-order | The Order of Play | /images/blog-holdem-game-flow.webp
+:::
 
 ## FAQ
 

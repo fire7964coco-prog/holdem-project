@@ -246,7 +246,7 @@ You hold **A♥ 3♣**. The board already has trip kings.
 
 ## Why the Order Is What It Is
 
-The ranking isn't arbitrary — it's ==pure probability==. ==g:**The harder a hand is to make, the higher it ranks.**== A flush sits above a straight because, in a 52-card deck, there are simply fewer ways to make five of one suit than five in sequence across any suits. That single principle explains the entire hierarchy — see the exact numbers in the [poker odds and probability chart](/en/blog/holdem-probability).
+The ranking isn't arbitrary — it's ==pure probability==. ==g:**The harder a hand is to make, the higher it ranks.**== A flush sits above a straight because, in a 52-card deck, there are simply fewer ways to make five of one suit than five in sequence across any suits. That single principle explains the entire hierarchy — see the exact numbers in the [poker odds and probability chart](/en/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
 It also explains the one big exception you'll meet: in **Short Deck (6+) Hold'em**, where the 2s through 5s are removed, flushes become harder than full houses — so in that format a ==r:**flush beats a full house**==. The math changed, so the order changed. More on game-by-game differences below.
 
@@ -294,6 +294,11 @@ The order is shared across most poker variants, with a few important twists.
 The takeaway: learn the standard order once and it carries you through nearly every game. Just remember Omaha's "exactly two" rule and Short Deck's flush bump.
 
 ---
+
+:::readnext[Keep reading]
+/en/blog/holdem-flush-vs-straight | Does a Flush Beat a Straight? | /images/holdem-flush-vs-straight-hero.webp
+/en/blog/holdem-tiebreak-rules | Kicker & Tie-Breaker Rules | /images/holdem-tiebreak-hero.webp
+:::
 
 ## FAQ
 

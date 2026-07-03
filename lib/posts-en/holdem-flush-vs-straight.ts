@@ -46,7 +46,7 @@ Here's the hierarchy around the two hands people confuse most. ==The flush sits 
 | 9 | One Pair | A♠ A♦ K♥ 9♣ 3♠ |
 | 10 | High Card | A♠ K♦ J♥ 7♣ 2♠ |
 
-Want the whole ladder with odds and examples? Start with the [full poker hand rankings guide](/en/blog/holdem-hand-rankings). This article zooms in on the flush-versus-straight matchup.
+Want the whole ladder with odds and examples? Start with the [full poker hand rankings guide](/en/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp"). This article zooms in on the flush-versus-straight matchup.
 
 </div>
 
@@ -148,6 +148,11 @@ If your five cards are **both** suited **and** in sequence, you don't have "a fl
 In **Short Deck (6+) Hold'em**, the 2s through 5s are removed from the deck. With fewer cards, a flush becomes *harder* to make than a full house — so in that format the ranking shifts and a ==r:**flush beats a full house**==. The principle never changes: ==the rarer hand wins==. Only the deck changed. In standard Texas Hold'em with a full 52-card deck, ==g:a flush beats a straight and loses to a full house, every time==.
 
 ---
+
+:::readnext[Keep reading]
+/en/blog/holdem-tiebreak-rules | Kicker & Tie-Breaker Rules | /images/holdem-tiebreak-hero.webp
+/en/blog/holdem-split-pot-rules | When Is a Pot Split? | /images/holdem-split-pot-hero.webp
+:::
 
 ## FAQ
 

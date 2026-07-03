@@ -119,9 +119,14 @@ If you want the matchup that confuses players most — flush versus straight —
 
 If both players' best five cards are identical in rank, nobody wins outright — the pot is ==**split**== (also called a "chop"). The classic case is the board playing: on A♣ A♦ K♠ Q♥ J♣, everyone's best five is ==g:A-A-K-Q-J, so the pot is shared==. Suits do not break the tie, and ==any odd chip goes to the player nearest the dealer's left==.
 
-The full set of situations — and the three things players wrongly think will win a tie — are covered in the [split pot rules guide](/en/blog/holdem-split-pot-rules).
+The full set of situations — and the three things players wrongly think will win a tie — are covered in the [split pot rules guide](/en/blog/holdem-split-pot-rules "thumb:/images/holdem-split-pot-hero.webp").
 
 ---
+
+:::readnext[Keep reading]
+/en/blog/holdem-hand-rankings | Poker Hand Rankings | /images/holdem-hand-rankings-hero.webp
+/en/blog/holdem-flush-vs-straight | Does a Flush Beat a Straight? | /images/holdem-flush-vs-straight-hero.webp
+:::
 
 ## FAQ
 

@@ -28,7 +28,7 @@ You have no idea what's happening.
 
 I've been at that table. The first time I went all-in at a live cash game, I didn't know whether I could still win anything, whether the other player could re-raise, or even which pile of chips was mine. Nobody explained it.
 
-==This guide covers every situation: main pots, side pots, re-raise eligibility, and showdown order.== No more freezing when the dealer starts counting stacks. (If the basic betting flow is still fuzzy, the [beginner's rules guide](/en/blog/texas-holdem-rules-for-beginners) covers it first.)
+==This guide covers every situation: main pots, side pots, re-raise eligibility, and showdown order.== No more freezing when the dealer starts counting stacks. (If the basic betting flow is still fuzzy, the [beginner's rules guide](/en/blog/texas-holdem-rules-for-beginners "thumb:/images/rules-texas-holdem.webp") covers it first.)
 
 ## What Does "All-In" Mean in Texas Hold'em?
 
@@ -221,6 +221,11 @@ You're all-in for the main pot. Two other players battle it out for the side pot
 The all-in is the most powerful move at the table. It forces opponents into all-or-nothing decisions. That power disappears when you shove randomly. Use it at the right moment — short stack pressure, value hands you want called, bluffs with real fold equity.
 
 ---
+
+:::readnext[Keep reading]
+/en/blog/texas-holdem-rules-for-beginners | Texas Hold'em Rules for Beginners | /images/rules-texas-holdem.webp
+/en/blog/holdem-showdown-rules | Showdown Rules Explained | /images/holdem-showdown-rules-hero.webp
+:::
 
 ## FAQ
 

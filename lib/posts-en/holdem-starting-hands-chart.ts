@@ -94,7 +94,7 @@ From early position, many players still act after you — so you need stronger h
 
 The rule: ==the later you act, the more hands you can open profitably==. Because the button always acts last postflop, it's the most valuable seat in poker.
 
-For a full breakdown of every seat name (UTG, HJ, CO, BTN, SB, BB), see the [poker positions guide](/en/blog/holdem-positions).
+For a full breakdown of every seat name (UTG, HJ, CO, BTN, SB, BB), see the [poker positions guide](/en/blog/holdem-positions "thumb:/images/holdem-positions-hero.webp").
 
 ---
 
@@ -166,6 +166,11 @@ For your first 20+ sessions, use a reference chart literally:
 Once your rules knowledge is solid, use the [Texas Hold'em starting hand chart tool](/hand-chart) to explore expanded ranges for each position.
 
 ---
+
+:::readnext[Keep reading]
+/en/blog/holdem-hand-rankings | Poker Hand Rankings | /images/holdem-hand-rankings-hero.webp
+/en/blog/holdem-probability | Poker Odds & Probability Chart | /images/holdem-probability-hero.webp
+:::
 
 ## FAQ
 

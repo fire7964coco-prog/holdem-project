@@ -160,7 +160,7 @@ Use this checklist every time you see all 5 community cards:
 
 **Step 4:** If none of the above — your best hand is probably high card or one/two pair using your highest cards with the highest board cards.
 
-**Step 5:** Out of all possible hands you identified, ==your best hand is the strongest one== — whichever sits highest on the [poker hand rankings](/en/blog/holdem-hand-rankings).
+**Step 5:** Out of all possible hands you identified, ==your best hand is the strongest one== — whichever sits highest on the [poker hand rankings](/en/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp").
 
 You always play exactly 5 cards. If you have a straight AND a pair — the straight wins. You don't combine them.
 
@@ -185,6 +185,11 @@ A beginner folds a strong hand thinking their opponent "must have" a flush becau
 You have a flush. There are two queens on the board. You miss that your opponent holding Q-X has three queens — a full house. Full house beats flush. ==Paired board = always check for boats before congratulating yourself.==
 
 ---
+
+:::readnext[Keep reading]
+/en/blog/holdem-tiebreak-rules | Kicker & Tie-Breaker Rules | /images/holdem-tiebreak-hero.webp
+/en/blog/holdem-split-pot-rules | When Is a Pot Split? | /images/holdem-split-pot-hero.webp
+:::
 
 ## FAQ
 

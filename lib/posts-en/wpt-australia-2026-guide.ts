@@ -32,6 +32,8 @@ WPT Australia 2026 returns to The Star Sydney for the biggest Australian festiva
 
 This guide covers everything competitors skip.
 
+First live festival? Start with [the tournament guide](/en/blog/holdem-tournament "thumb:/images/holdem-tournament-hero.webp") — buy-ins, blinds, and the Day-1 checklist before you fly.
+
 ---
 
 > **Quick Answer**
@@ -275,6 +277,11 @@ Here's what a full WPT Australia trip actually costs, based on 2025 data:
 > **Note**: Budget scenario assumes you won your Prime satellite via on-site step qualifier (~AUD $255). Standard and Full Experience scenarios include direct buy-in. Flights from East Asia/Southeast Asia typically range AUD $700–1,500 return.
 
 ---
+
+:::readnext[Keep reading]
+/en/blog/holdem-tournament | Texas Hold'em Tournament Guide | /images/holdem-tournament-hero.webp
+/en/blog/ept-barcelona-2026-guide | EPT Barcelona 2026 Guide | /images/ept-barcelona-2026-guide-hero.webp
+:::
 
 ## FAQ — WPT Australia 2026
 
