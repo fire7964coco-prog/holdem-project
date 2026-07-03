@@ -5,6 +5,13 @@
 
 ## 2026-07-03
 
+### EN Phase 0 착수 — holdem-hand-rankings 정확매칭 FAQ 10개 강화 (집필 세션)
+- **EN 6필라 집필 시작**. 로드맵 Phase 0(최고 ROI) = 기존 랭크·GSC권위 페이지에 **정확매칭 PAA FAQ만 추가**해 ~17k 볼륨 흡수(신규 페이지 X, 리스크 최소).
+- `holdem-hand-rankings`에 FAQ 10개 추가: ①정의형 what is a flush(5400)·full house(4400)·straight(2900) ②What beats a X: straight(1000)·flush(590)·full house(880)·royal flush(170·"nothing" 훅)·straight flush(140) ③룰 three pairs(70)·ace as a 1=wheel(40). 기존 FAQ와 중복 없음(Does a flush beat a straight 등과 별개 쿼리).
+- **§13 검산 + 적대적 서브에이전트 검증 = ALL CORRECT** (KKK-22>QQQ-AA 트립스 우선, wheel 최저·K-A-2-3-4 불가, 3장 same-suit≠SF 등 전부 확인). updated 2026-07-03.
+- 빌드 ✅ exit0 / 배포 ✅ (e06ed4c). 발행 현황 불변: 한국어 51 + 영어 20.
+- **다음**: GSC 색인 재요청(/en/blog/holdem-hand-rankings) → Phase 1 Odds 확률차트(holdem-probability 신규, LDA11 최고승산) or Glossary 플래그십.
+
 ### EN 6필라 기획 확정 + lowfruits 키워드 수확 + 발행 로드맵 (오후 세션)
 - **EN 6필라 독립설계 확정**(KO 복제 X, pub-guide 제외): Rules·Hand Rankings·Odds&Math(신규 holdem-probability)·Strategy(신규 holdem-strategy)·Tournament·Glossary(신규 holdem-glossary). 목표=롱테일 구글1등, EN마스터→12언어 번역. 문서: `docs/en-blog-pillar-cluster-map.md`
 - **현재 EN 20개 내부링크 트리 실측**: hand-rankings(피링크10)·rules-for-beginners(아웃허브11)가 실질 필라, 전략필라 껍데기, wpt/ept 고아링크 확인

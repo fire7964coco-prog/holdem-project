@@ -57,6 +57,7 @@ KO 11필라를 복제하지 않고 EN 검색시장 기준으로 재편. `holdem-
 > 이미 두꺼움. 신규는 최소, 기존 글 FAQ로 롱테일 흡수가 우선.
 
 ### 필라 2 — Hand Rankings · hub `holdem-hand-rankings` ✅ (GSC 최대기회)
+> **Phase 0 완료(2026-07-03)**: 허브에 정확매칭 FAQ 10개 추가(정의형 flush5400/full house4400/straight2900 + what-beats 5개 + 룰 3pairs/wheel). ~17k 볼륨 흡수. 다음 심화 = kicker·what-beats-what 개별글.
 - ✅ holdem-flush-vs-straight
 - ✅ holdem-tiebreak-rules
 - ✅ holdem-split-pot-rules (피링크 7)
