@@ -3,6 +3,12 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-03
+
+### 영어 포스트 SEO 강화 (11편째, Claude Code 세션)
+- holdem-tiebreak-rules: §13 전체 핸드 검산 통과(킥커 A♠K♦vs A♥9♣·투페어 KKQQ·풀하우스·스플릿 K-J-3 보드 A-K-Q-Q-J·보드플레이 A-A-K-Q-J 오류無). 이미지 3개(hero·best5·split) 맥락·용량·영어라벨 점검 OK. 내부링크 정밀화(starting-hand selection→holdem-starting-hands-chart 전용 글). 롱테일 FAQ 2개 추가(같은 투페어 승자 / 같은 스트레이트·플러시 촙). updated 갱신
+- 발행 현황: 한국어 51 + 영어 20 (build "51 blog posts + 55 intl")
+
 ## 2026-07-02
 
 ### 영어 포스트 SEO 강화 트랙 시작 (Claude Code 세션)
