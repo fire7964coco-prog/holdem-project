@@ -52,7 +52,10 @@
 - ✅ **Phase 1 Odds 허브 발행** — `holdem-probability` 종합 플래그십. 확률 35개 검산. 배포 bcad393.
 - ✅ **Odds 클러스터 #1 발행** — `holdem-pot-odds`("How to Calculate Pot Odds"). 벳사이즈 치트시트·3개념구분·4-2룰·실전핸드. §13 18개 검산(턴 팟오즈 오류1 정정). 허브 양방향링크. 배포 ac3a93b.
 - ✅ **Odds 클러스터 #2 발행** — `holdem-outs`("How to Count Outs"). 아웃츠 세는법=pot-odds 상류. 드로우별 아웃츠표·아웃츠→배당 마스터표·4-2룰 오차보정·콤보 겹침산수(15 not 17)·더티아웃 실전. §13 적대적검산 ALL CORRECT. 허브·pot-odds 양방향 인라인썸네일 역링크. 배포 603f936. ✅ **본문 이미지 4개 완비**(히어로+counting+dirty-outs 커서생성, 스트레이트 재사용). 이미지 §13검산 통과(counting=A♠K♠ 오버카드6아웃, dirty=44페어보드). 배포 26661d4.
-**다음 착수 후보(순서 계속)**: ① **Odds 클러스터 계속** — `holdem-rule-of-2-and-4`(전용 훅글)·`holdem-drawing-odds`(flush/straight draw 확률·flopping a set/flush 롱테일) → 필라3 토픽오소리티 완성 ② 그 후 다른 필라(Glossary straddle 2900 / Strategy limping 590). **토픽오소리티 원칙상 Odds 클러스터 먼저 두껍게.** ※ outs·pot-odds가 이미 4-2룰을 상세 커버 → rule-of-2-and-4 전용글은 중복주의(차별화=순수 훅/치트시트 각도), drawing-odds가 더 신선.
+**▶ 다음 세션 착수 = `holdem-drawing-odds` (권장 1순위)**: flush/straight draw 확률 + odds of flopping a set(11.8%)/flush/quads 롱테일 클러스터. 필라3 토픽오소리티 마무리.
+  - ⚠️ **중복주의**: outs·pot-odds가 4-2룰·아웃츠→배당을 이미 두껍게 커버함. drawing-odds는 각도를 "특정 드로우별 확률 + flopping X 롱테일"로 확실히 차별화할 것(4-2룰 재설명 금지, 상호 내부링크로 위임).
+  - `holdem-rule-of-2-and-4` 전용글은 **보류 권장**(outs/pot-odds/probability 3글과 정면 중복). 정 만들려면 "순수 훅/1페이지 치트시트" 각도로만.
+  - 그 후: 다른 필라 착수(Glossary straddle 2900 / Strategy limping 590).
 **즉시 할 일**: GSC 색인요청 `/en/blog/holdem-outs`·`/en/blog/holdem-pot-odds`·`/en/blog/holdem-probability`·`/en/blog/holdem-hand-rankings`.
 **🧹 기존 정리 과제(발견 2026-07-03)**: EN desc>160자 **7개 기존글** 트리밍 필요(CTR 훅+키워드 유지하며) — positions 255·hand-rankings 210·tournament 205·blind-meaning 176·all-in-rules 164·reading-the-board 162·showdown-rules 162. (오늘 신규 probability·pot-odds는 정정 완료)
 **✅ EN 전체 클릭강화 적용 완료(2026-07-03)**: 22개 EN 글 전부 인라인 썸네일 링크 + FAQ앞 :::readnext 2카드. 신규글은 이 패턴 기본 포함(posting.mdc 규칙).
