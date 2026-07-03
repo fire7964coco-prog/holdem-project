@@ -6,7 +6,7 @@
 ---
 
 ## 📅 마지막 작업일
-2026-07-03 (Claude Code 세션 — **EN Phase 0(hand-rankings FAQ 10개) + Phase 1 Odds 허브 신규 `holdem-probability` 발행 완료·배포**. 확률 35개 적대적 재검산 통과. 다음 = GSC 색인요청 → Odds 클러스터 or Glossary 플래그십)
+2026-07-03 (Claude Code 세션 — **EN Phase0 + Odds 허브 `holdem-probability` + 클러스터 `holdem-pot-odds` 발행. 클릭강화 UX(인라인 썸네일 링크·:::readnext 박스) 신설·규칙화**. 다음 = Odds 클러스터 계속(outs·4-2룰) or GSC 색인요청)
 
 ---
 
@@ -49,10 +49,12 @@
 ### ★0순위 (다음 세션 시작 작업) — EN 6필라 발행 (Phase 0 완료, Phase 1 진행)
 **진행상태**:
 - ✅ **Phase 0 완료** — `holdem-hand-rankings` 정확매칭 FAQ 10개 추가·배포(e06ed4c). ~17k 볼륨 흡수.
-- ✅ **Phase 1 Odds 허브 발행 완료** — `holdem-probability`("Poker Odds & Probability Chart") 종합 플래그십. H2 8개+FAQ8. 확률 35개 적대적 재검산 ALL CORRECT. 배포 bcad393. (필라3 Odds 허브 확보)
-**다음 착수 후보**: ① **Odds 클러스터 심화**(허브에 개요만 있는 것 전용글로: `holdem-pot-odds`·`holdem-outs`·`holdem-rule-of-2-and-4`·drawing-odds) → 토픽 오소리티 밀도 ② `holdem-limping`(what is limping 590·LDA8·SS1, Strategy) ③ **Glossary 플래그십**(straddle 2900→rake 1300→fish 390·LDA3). 토픽오소리티 원칙상 Odds 클러스터로 필라3을 두껍게 마무리 추천.
-**즉시 할 일**: GSC 색인 재요청 `/en/blog/holdem-probability`(+ Phase0 `/en/blog/holdem-hand-rankings`).
-로드맵 상세: `docs/keyword-bank/00-SYNTHESIS-roadmap.md` Phase 1~3.
+- ✅ **Phase 1 Odds 허브 발행** — `holdem-probability` 종합 플래그십. 확률 35개 검산. 배포 bcad393.
+- ✅ **Odds 클러스터 #1 발행** — `holdem-pot-odds`("How to Calculate Pot Odds"). 벳사이즈 치트시트·3개념구분·4-2룰·실전핸드. §13 18개 검산(턴 팟오즈 오류1 정정). 허브 양방향링크. 배포 ac3a93b.
+**다음 착수 후보(순서 계속)**: ① **Odds 클러스터 계속** — `holdem-outs`(count outs/outs chart)·`holdem-rule-of-2-and-4`·`holdem-drawing-odds`(flush/straight draw 확률) → 필라3 토픽오소리티 완성 ② 그 후 다른 필라(Glossary straddle 2900 / Strategy limping 590). **토픽오소리티 원칙상 Odds 클러스터 먼저 두껍게.**
+**즉시 할 일**: GSC 색인요청 `/en/blog/holdem-pot-odds`·`/en/blog/holdem-probability`·`/en/blog/holdem-hand-rankings`.
+**적용 중인 신규 규칙**: 모든 신규글 = 인라인 썸네일 링크(가장 연관글 1~2개, `"thumb:이미지"`) + FAQ앞 `:::readnext[라벨]` 2카드 박스. posting.mdc·memory 문서화.
+로드맵 상세: `docs/keyword-bank/00-SYNTHESIS-roadmap.md`.
 
 **먼저 읽을 문서 3개 (순서대로)**:
 1. `docs/en-blog-pillar-cluster-map.md` — EN 6필라 구조 마스터 맵

@@ -5,6 +5,14 @@
 
 ## 2026-07-03
 
+### EN Odds 클러스터 심화 — holdem-pot-odds (How to Calculate Pot Odds) 신규
+- **Odds & Math 필라 클러스터 플래그십**(예약 필라 슬러그). 토픽 오소리티: 허브(holdem-probability) 발행 후 클러스터부터 채움.
+- 타깃: pot odds·how to calculate pot odds·pot odds chart·implied odds·pot odds vs equity. H2 8개(정의 X-to-1·단계별계산·비율↔%·벳사이즈별 필요에쿼티표·드로우 클리어표·3개념 구분·4-2룰·초보실수+연속 실전핸드)+FAQ 8.
+- 경쟁 갭: 벳사이즈→필요에쿼티 치트시트 통합, pot odds/equity/implied 3개념 구분표, 스트리트별 연속 실전핸드.
+- **품질: §13+적대적 서브에이전트 18개 검산.** 리서치가 '2x팟=28.6%' 헷갈렸으나 검산=40% 정답. **워크드핸드 턴 오류 발견·정정**(팟사이즈 잼=3-to-1 오기→2-to-1/33%, 폴드결론은 동일).
+- **신규 클릭강화 규칙 첫 실전적용**: 인라인 썸네일 링크(→확률 허브) + FAQ앞 :::readnext 2카드 박스. 확률 허브 pot-odds 섹션에서 역링크.
+- 빌드 ✅ "51 blog posts + 57 intl"(intl 56→57). 커밋 ac3a93b. **다음**: Odds 클러스터 계속(outs·rule-of-2-and-4·drawing-odds) or 다음 필라.
+
 ### EN Phase 1 신규 필라 발행 — holdem-probability (Poker Odds & Probability Chart)
 - **EN 6필라 Odds & Math 허브 신규 발행**(로드맵 Phase 1, LDA11=신규 중 최고승산). 종합 플래그십 1편.
 - 타깃: odds of hands(1600)·poker hand probabilities(1300)·poker odds chart(390)·odds of a straight flush(880)·royal flush odds 등. H2 8개(족보확률차트 5장vs홀덤 나란히·스타팅핸드오즈·**플랍 오즈 통합표**·드로우 아웃츠표·4-2룰·팟오즈 워크드예시·로열/스트플 희귀도·롱샷) + PAA 정확매칭 FAQ 8개.
