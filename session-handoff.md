@@ -18,7 +18,7 @@
 - 핵심 작업: **구글 1페이지 달성**을 위한 콘텐츠 품질 향상 + 신규 포스트 발행
 
 ### 현재 발행 현황
-- **한국어 블로그: 51개** (`lib/posts.ts` LEGACY 21개 + `lib/posts/` NEW 30개)
+- **한국어 블로그: 52개** (`lib/posts.ts` LEGACY 21개 + `lib/posts/` NEW 31개) — 2026-07-04 고아포스트 holdem-raise-how-much 완성·발행
 - **영어 블로그: 20개** (`lib/posts-en/`)
 - **필라 포스트 발행 현황**: holdem-hand-rankings(P1) ✅ · holdem-probability(P?) ✅ · holdem-rules(P2) ✅
 
