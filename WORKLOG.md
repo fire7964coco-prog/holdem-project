@@ -12,7 +12,8 @@
 - **⚠️ 중복 회피**: outs/pot-odds가 커버한 4-2룰·아웃츠 카운팅 **재설명 안 함** → 내부링크 위임. 신규 커버리지 = 셋마이닝 임플라이드오즈(스택 10~15배 규칙)·백도어 러너러너(4.2%)·set by river(19.2%)·two players AA(136-to-1).
 - **품질: §13 직접검산 + 적대적 서브에이전트 = 22개 확률 ALL CORRECT**(C(50,3)=19,600 기반 전 조합론 독립 재검산). 팩트체커 지적 반영: 풀하우스 0.98%가 board-trips 포함임 명시, "flop a pair" 29→32%(at least a pair 정렬).
 - 양방향 링크: 허브(probability "flop a set" 지점)·outs(intro)에서 인라인 썸네일 역링크. 첫링크=필라. 클릭강화(:::readnext 2카드→outs·pot-odds).
-- 빌드 ✅ "51 blog posts + 59 intl"(intl 58→59). category=strategy. **다음**: 다른 필라 착수(Glossary straddle 2900 / Strategy limping 590). ⚠️ **커서 이미지 생성 필요**: /images/holdem-drawing-odds-hero.webp(셋마이닝 컨셉 — 스몰페어+칩스택+플랍).
+- 빌드 ✅ "51 blog posts + 59 intl"(intl 58→59). category=strategy. **다음**: 다른 필라 착수(Glossary straddle 2900 / Strategy limping 590).
+- ✅ **본문 이미지 2개 완비**(커서 생성, 커밋 38ea336): 히어로=포켓5 셋마이닝 적중(5♠5♦+5♣K♥8♠, 도입부 경험담 일치), 플러시=하트4장 드로우(A♥K♥+Q♥7♥2♠). §13 카드검증 통과, 1200×675·33.5/37.3KB. 재사용 실사 2개(button-dealer-board·straight-example) 포함 본문 4이미지 ~134KB(≤200KB).
 
 ## 2026-07-03
 
