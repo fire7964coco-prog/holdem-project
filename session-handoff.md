@@ -6,7 +6,7 @@
 ---
 
 ## 📅 마지막 작업일
-2026-07-04 (Claude Code 세션 — **① Odds 클러스터 #3 `holdem-drawing-odds` 발행+이미지2개 완비 ② Glossary 필라 첫 발행 `holdem-straddle`**. drawing-odds=필라3 마무리(Flop Lifecycle표+조합론, §13 22개 ALL CORRECT, 이미지 §13통과). straddle=필라6 개척(종류비교표+액션순서+-EV답변, 적대적 룰 팩트체크 통과, 2건 misleading 교정). straddle 이미지 4개 완비. **③ Glossary #2 `holdem-rake` 발행**(레이크종류비교표+실전계산+rake trap+rakeback, 적대적 팩트체크 통과, $100+$20→$9 교정). rake 이미지 3개 완비(커서, §검증 통과=드롭슬롯 히어로+징수 클로즈업+저스테이크 rake trap). 다음 = Glossary 계속(fish LDA3·cooler·slowroll) or Strategy limping)
+2026-07-04 (Claude Code 세션 — **① Odds 클러스터 #3 `holdem-drawing-odds` 발행+이미지2개 완비 ② Glossary 필라 첫 발행 `holdem-straddle`**. drawing-odds=필라3 마무리(Flop Lifecycle표+조합론, §13 22개 ALL CORRECT, 이미지 §13통과). straddle=필라6 개척(종류비교표+액션순서+-EV답변, 적대적 룰 팩트체크 통과, 2건 misleading 교정). straddle 이미지 4개 완비. **③ Glossary #2 `holdem-rake` 발행**(레이크종류비교표+실전계산+rake trap+rakeback, 적대적 팩트체크 통과, $100+$20→$9 교정). rake 이미지 3개 완비. **④ EN 모바일 최적화 감사**(Playwright 360/390px 전26개): 오버플로우 0, 유일이슈=넓은표 억지줄바꿈→모바일 골드박스 좌우패딩 20→8px 수정(표폭+24px, 공유CSS 1줄=전언어). 감사도구 scripts/mobile-audit.mjs 추가. **모바일 기반 견고 확인.** 다음 = (콘텐츠)Glossary fish·cooler / (모바일)추가 폴리시 요청 시 rangechart BB라벨 등 미세사항)
 
 ---
 

@@ -5,6 +5,12 @@
 
 ## 2026-07-04
 
+### EN 블로그 모바일 최적화 감사 + 표 폭 수정 (Playwright 실측)
+- **전 26개 EN 포스트 360/390px 실측 감사**(Playwright): 가로 오버플로우 **0/26**(치명버그 없음), 디렉티브(:::compare·:::card·:::readnext·rangechart)·TOC·FAQ·갤러리·본문이미지 전부 모바일 정상.
+- **유일 실질 이슈 = 4~5열 데이터표가 좁아 억지 줄바꿈**(잘림 아님, scrollable≈0이나 열이 세로 타워로 답답). 시행착오: "스크롤 페이드 힌트" 시도했으나 스크롤 없는 표의 내용을 오히려 가림 → 실측으로 폐기.
+- **최종 수정(공유 CSS 1줄, 전 포스트·전 언어)**: 모바일(≤639px) 골드박스 데이터표 좌우 패딩 20→8px(속성선택자+!important로 인라인 오버라이드). 표 폭 252→**276px(+24px)**, 마지막 열 완전 표시, 스크롤량 감소. 회귀검증: 오버플로우 0 유지·데스크톱 무영향. 커밋 ce1758d.
+- 재사용 감사도구 `scripts/mobile-audit.mjs` 추가(커밋 40454b4). **결론: 모바일 기반 견고, 시스템 이슈는 표 하나뿐이었고 해결.**
+
 ### EN Glossary #2 — holdem-rake (What Is Rake in Poker) 신규
 - **필라6 Glossary 2번째**. rake=1300/mo·LDA30 고볼륨 용어. 수익구조 직결(레이크가 저스테이크 승률을 결정).
 - 타깃: what is a rake·rake explained·how does rake work·rake cap·time rake·rakeback·tournament rake·online vs live rake. H2 6개(정의·징수방식비교표·실제얼마내나·rakeback·토너먼트fee·온라인vs라이브)+FAQ 8(PAA 정확매칭).
