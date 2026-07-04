@@ -211,6 +211,25 @@ export function renderMarkdown(content: string): string {
     .replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, (_m, t, u) => `<a href="${u}" target="_blank" rel="noopener noreferrer" class="brush-link" style="--hl:${LINK_HL[hlIdx++ % LINK_HL.length]}">${t} ↗</a>`)
     .replace(/\[([^\]]+)\]\((?!https?:\/\/)([^)]+)\)/g, (_m, t, u) => `<a href="${u}" class="brush-link" style="--hl:${LINK_HL[hlIdx++ % LINK_HL.length]}">${t}</a>`)
     .replace(/^---$/gm, '<hr class="border-border my-8" />')
+    // 마크다운 표를 블록 단위(헤더+구분행+본문)로 파싱 — 구분행의 열 정렬(:---: 가운데 / ---: 오른쪽 / 기본 왼쪽) 반영 + 첫 행을 헤더로 확정(한글 대소문자 휴리스틱 제거)
+    .replace(
+      /^(\|.+\|)[ \t]*\n(\|[-:\s|]+\|)[ \t]*\n((?:\|.+\|[ \t]*\n?)+)/gm,
+      (_m, headerLine: string, sepLine: string, bodyLines: string) => {
+        const splitCells = (line: string) => line.trim().replace(/^\|/, '').replace(/\|$/, '').split('|').map((s) => s.trim());
+        const aligns = splitCells(sepLine).map((s) => {
+          const l = s.startsWith(':'), r = s.endsWith(':');
+          return l && r ? 'center' : r ? 'right' : 'left';
+        });
+        const acls = (i: number) => `text-${aligns[i] || 'left'}`;
+        const th = splitCells(headerLine).map((c, i) => `<th class="px-4 py-2.5 text-sm font-bold text-foreground ${acls(i)}">${c}</th>`).join('');
+        const rows = bodyLines.trim().split('\n').map((line) => {
+          const tds = splitCells(line).map((c, i) => `<td class="px-4 py-2.5 text-sm text-muted-foreground ${acls(i)}">${c}</td>`).join('');
+          return `<tr class="border-b border-border">${tds}</tr>`;
+        }).join('');
+        return `<div class="overflow-x-auto my-6"><table class="w-full border border-border rounded-lg overflow-hidden"><tr class="border-b-2 border-border bg-muted/30">${th}</tr>${rows}</table></div>`;
+      }
+    )
+    // 폴백: 위 블록 파서가 못 잡은 잔여 표(구분행/단일행) 처리
     .replace(/^\|[-:\s|]+\|$/gm, '')
     .replace(
       /^\| (.+) \|$/gm,
