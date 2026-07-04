@@ -540,6 +540,15 @@ a.brush-link:hover { filter: brightness(0.9); }
   }
 }
 
+/* 넓은 표 모바일 UX — 골드박스 좌우 패딩 축소로 열 폭 확보(억지 줄바꿈 완화).
+   인라인 스타일이라 속성선택자 + !important 로 오버라이드. 전 데이터표·전 언어 공통. */
+@media (max-width: 639px) {
+  .blog-prose div[style*="rgba(255,248,210"] {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+}
+
 /* FAQ 카드 answer 들여쓰기 — 모바일 좁은 화면에서 48px→16px */
 @media (max-width: 639px) {
   .blog-faq-answer {
