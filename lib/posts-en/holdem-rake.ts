@@ -50,7 +50,7 @@ There isn't just one kind of rake. How the house collects its money depends on t
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Type | How it's taken | Typical amount | Where you'll see it |
-|------|------|------|------|
+|:---|:---|:---:|:---|
 | **Pot rake (scaled)** | % of each pot, up to a cap | 2.5–10%, capped $1–$6 | Most low/mid cash games, online |
 | **Time charge** | Flat fee per player, every 30 min | ~$10–$15 per hour | High-stakes live ($10/$20+) |
 | **Dead drop** | Button pays a set rake each hand | Fixed per hand | Some live rooms |
@@ -80,7 +80,7 @@ Here's the part that changed how I think about the game. The percentage sounds t
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Same player, same game | Rake paid | Result |
-|------|------|------|
+|:---|:---:|:---|
 | Room with a **$2 cap** | ~5 bb/100 | +8 bb/100 win rate stays a **winner (+3)** |
 | Room with a **$4 cap** | ~8–9 bb/100 | +8 bb/100 turns into a **loser (−1)** |
 
