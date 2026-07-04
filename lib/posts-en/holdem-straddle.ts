@@ -124,7 +124,7 @@ The honest answer, and the one the solvers agree on: **for almost everyone, no.*
 :::card
 🎯 | You commit blind | Money goes in before you see your cards, so you're playing a bloated pot with no information — the same disadvantage that makes the blinds the worst seats at the table
 📉 | It shrinks your positional edge | Doubling the blind bloats the starting pot and leaves more players still to act when you're in your best stealing seats. Counterintuitively, solvers respond by opening **fewer** hands in straddled pots — around 15–20% fewer on the button — not more
-💸 | It bloats the rake | Bigger pots mean more raked out of them, a hidden tax on every straddled hand in a raked cash game
+💸 | It bloats the rake | Bigger pots mean more [rake](/en/blog/holdem-rake) skimmed out of them, a hidden tax on every straddled hand in a raked cash game
 :::
 
 So when *is* it defensible? Only in specific spots, and never as a pure profit play:
