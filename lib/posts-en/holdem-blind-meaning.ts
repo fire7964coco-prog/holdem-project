@@ -119,7 +119,7 @@ From the middle stages of most tournaments, an **ante** is added — a small for
 
 ### One more you'll see: the straddle
 
-In many cash games a player may post a **straddle** — a voluntary extra blind (usually 2x the BB) from the seat left of the big blind, which temporarily raises the stakes for that hand.
+In many cash games a player may post a **straddle** — a voluntary extra blind (usually 2x the BB) from the seat left of the big blind, which temporarily raises the stakes for that hand. It has its own rules, types, and action order — the full breakdown is in [what a straddle is and whether you should post one](/en/blog/holdem-straddle "thumb:/images/holdem-straddle-hero.webp").
 
 ---
 
