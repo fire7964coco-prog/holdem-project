@@ -335,7 +335,7 @@ export function renderMarkdown(content: string): string {
       return `<div class="blog-scroll-x" style="margin:0"><div style="min-width:300px;border-radius:12px;overflow:hidden;border:1px solid #d8d0be">${header}${rowHtml}</div></div>`;
     })
 
-    .replace(/(<tr.*<\/tr>\n?)+/g, (m) => `<div class="overflow-x-auto my-6"><table class="w-full border border-border rounded-lg overflow-hidden">${m}</table></div>`)
+    .replace(/^(<tr.*<\/tr>\n?)+/gm, (m) => `<div class="overflow-x-auto my-6"><table class="w-full border border-border rounded-lg overflow-hidden">${m}</table></div>`)
     .replace(/^> \*\*(.+?)\*\*\n((?:^> .+\n?)+)/gm, (_, title, body) => {
       const lines = body.replace(/^> /gm, '').trim();
       return `<div class="summary-callout my-6 p-5 bg-primary/10 border border-primary/30 rounded-xl"><p class="font-bold text-primary mb-2">✦ ${title}</p><p class="text-sm text-foreground/90 leading-relaxed">${lines}</p></div>`;
