@@ -207,6 +207,11 @@ GGPoker 캐시게임(NLH, PLO, Short Deck, AoF, Rush & Cash) 테이블에서 **1
 
 ---
 
+:::readnext[이어서 읽기]
+/blog/wsop-2026-tournament-guide | WSOP 2026 완전 가이드 | /images/wsop-2026-tournament-guide-hero.webp
+/blog/appt-korea-2026-guide | APPT 코리아 2026 참가 완전 가이드 | /images/appt-korea-2026-guide-hero.webp
+:::
+
 ## 자주 묻는 질문 (FAQ)
 
 **Q. Step 4 MTT는 얼마나 자주 열리나요?**

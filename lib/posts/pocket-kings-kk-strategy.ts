@@ -193,6 +193,11 @@ KK 크랙 후 틸트 방지 루틴:
 
 ---
 
+:::readnext[이어서 읽기]
+/blog/pocket-aces-aa-strategy | 포켓에이스 AA 플레이법 | /images/pocket-aces-aa-intro-infographic.webp
+/blog/holdem-3bet-strategy | 홀덤 3벳이란? | /images/holdem-3bet-defense.webp
+:::
+
 ## 자주 묻는 질문 (FAQ)
 
 ![포켓킹 KK 자주 묻는 질문 FAQ 핵심 요약 인포그래픽](/images/kk-faq-strategy-real.webp)

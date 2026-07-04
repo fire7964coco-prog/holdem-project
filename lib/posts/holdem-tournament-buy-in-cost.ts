@@ -219,6 +219,11 @@ APT 제주 사례가 궁금하다면 [APT 제주 클래식 2026 가이드](/blog
 
 ---
 
+:::readnext[이어서 읽기]
+/blog/holdem-tournament-how-to-enter | 홀덤 대회 참가 방법 | /images/wsop-satellite-tournament.webp
+/blog/holdem-pub-first-visit-guide | 홀덤펍 처음 가는 법 | /images/holdem-pub-players-table.webp
+:::
+
 ## 자주 묻는 질문 (FAQ)
 
 ### Q1. 홀덤 대회 바이인과 참가비는 같은 말인가요?

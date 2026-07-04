@@ -171,6 +171,11 @@ C벳은 “일단 쏜다”는 **행동**, 밸류벳은 “콜 받을 **크기**
 
 ---
 
+:::readnext[이어서 읽기]
+/blog/holdem-cbet-strategy | 홀덤 C벳이란? | /images/overbet-board-texture-guide.webp
+/blog/holdem-overbet-strategy | 홀덤 오버벳 전략 | /images/overbet-hero-summary.webp
+:::
+
 ## 8. FAQ — 자주 묻는 질문
 
 ![홀덤 밸류벳 FAQ — 사이즈·얇은 밸류·체크·멀티웨이|w](/images/holdem-value-bet-faq.webp "홀덤 밸류벳 자주 묻는 질문 — 사이즈·얇은 밸류·체크")

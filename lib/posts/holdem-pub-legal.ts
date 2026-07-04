@@ -154,6 +154,11 @@ export const POST: Post = {
 
 ---
 
+:::readnext[이어서 읽기]
+/blog/holdem-pub-first-visit-guide | 홀덤펍 처음 가는 법 | /images/holdem-pub-players-table.webp
+/blog/holdem-game-order | 홀덤 게임 어떻게 진행되나요? | /images/blog-holdem-game-flow.webp
+:::
+
 ## 홀덤펍 합법·불법 FAQ — 자주 묻는 질문
 
 ![홀덤펍 합법·불법 FAQ 인포그래픽 — Q1~Q7 자주 묻는 질문 완전 정리](/images/holdem-pub-legal-faq-infographic.webp "홀덤펍 합법 여부 FAQ 인포그래픽 — 게임 행위·시드권·바이인·도박죄 Q&A")

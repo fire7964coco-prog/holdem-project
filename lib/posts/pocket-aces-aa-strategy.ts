@@ -221,6 +221,11 @@ AA로 졌을 때 멘탈이 흔들리는 건 자연스러운 반응입니다. 헤
 
 ---
 
+:::readnext[이어서 읽기]
+/blog/position-is-everything-in-holdem | 홀덤 포지션이 왜 중요한가요? | /images/rules-texas-holdem.webp
+/blog/holdem-check-raise | 홀덤 체크레이즈란 | /images/holdem-check-raise-counter.webp
+:::
+
 ## 자주 묻는 질문 (FAQ)
 
 ![포켓에이스 AA 자주 묻는 질문 FAQ 요약 — 올인·슬로우플레이·폴드·표정관리·AA vs KK·연속 패배 총정리](/images/pocket-aces-aa-faq.webp)

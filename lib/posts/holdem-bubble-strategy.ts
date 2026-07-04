@@ -196,6 +196,11 @@ export const POST: Post = {
 
 ---
 
+:::readnext[이어서 읽기]
+/blog/holdem-3bet-strategy | 홀덤 3벳이란? | /images/holdem-3bet-defense.webp
+/blog/holdem-starting-hand-range | 홀덤 스타팅 핸드 어떻게 골라야 하나요? | /images/blog-starting-hand-grid.webp
+:::
+
 ## FAQ — 자주 묻는 질문
 
 ![홀덤 버블 전략 FAQ — 자주 묻는 질문 핵심 정리 인포그래픽](/images/holdem-bubble-faq.webp "홀덤 버블 전략 자주 묻는 질문 — AA 폴드 여부·블러프·포지션·숏스택 올인 타이밍 핵심 정리")

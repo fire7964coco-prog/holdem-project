@@ -237,6 +237,11 @@ APPT Korea 기간 파라다이스시티 내 숙박은 조기 마감됩니다.
 
 ---
 
+:::readnext[이어서 읽기]
+/blog/appt-korea-2026-guide | APPT 코리아 2026 참가 완전 가이드 | /images/appt-korea-2026-guide-hero.webp
+/blog/holdem-tournament-how-to-enter | 홀덤 대회 참가 방법 | /images/wsop-satellite-tournament.webp
+:::
+
 ## APPT 위성 자주 묻는 질문 (FAQ)
 
 **Q. Power Path는 한국에서 이용 가능한가요?**

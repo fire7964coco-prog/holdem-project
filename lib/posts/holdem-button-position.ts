@@ -255,6 +255,11 @@ export const POST: Post = {
 
 ---
 
+:::readnext[이어서 읽기]
+/blog/position-is-everything-in-holdem | 홀덤 포지션이 왜 중요한가요? | /images/rules-texas-holdem.webp
+/blog/bluffing-strategy-when-and-how | 홀덤 블러핑 언제 해야 하나요? | /images/tournament-table-action.webp
+:::
+
 ## FAQ — 홀덤 버튼 포지션 자주 묻는 질문
 
 ### Q1. 홀덤 버튼 포지션이 정확히 어디인가요?

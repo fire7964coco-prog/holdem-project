@@ -193,6 +193,11 @@ ICM은 강력한 도구지만 완벽하지 않습니다. 다음 요소들을 고
 
 ---
 
+:::readnext[이어서 읽기]
+/blog/holdem-bubble-strategy | 홀덤 버블 전략 완전 분석 | /images/holdem-bubble-chips.webp
+/blog/holdem-pot-odds-calculation | 팟오즈 계산하는 법 | /images/pot-odds-formula-card.webp
+:::
+
 ## 자주 묻는 질문 (FAQ)
 
 ![토너먼트 ICM 자주 묻는 질문 FAQ 핵심 요약 인포그래픽](/images/icm-faq-summary-infographic.webp)

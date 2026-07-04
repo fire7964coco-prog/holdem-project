@@ -89,6 +89,11 @@ export const POST: Post = {
 
 ---
 
+:::readnext[이어서 읽기]
+/blog/holdem-pub-first-visit-guide | 홀덤펍 처음 가는 법 | /images/holdem-pub-players-table.webp
+/blog/holdem-rules | 텍사스 홀덤 규칙 완전 정복 | /images/holdem-rules-hero.webp
+:::
+
 ## 5. FAQ — 자주 묻는 질문
 
 **Q. 이벤트 참여에 비용이 드나요?**

@@ -201,6 +201,11 @@ A(스택 25만원) 올인, B(스택 80만원) 콜, C(스택 80만원) 콜.
 
 ---
 
+:::readnext[이어서 읽기]
+/blog/holdem-hand-rankings | 홀덤 족보 순위 10가지 | /images/holdem-hand-rankings-showdown.webp
+/blog/holdem-blind-meaning | 홀덤 블라인드 뜻 | /images/holdem-blind-meaning-hero.webp
+:::
+
 ## FAQ — 자주 묻는 질문
 
 **Q. 홀덤과 세븐 포커의 규칙 차이는 무엇인가요?**

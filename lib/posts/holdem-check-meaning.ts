@@ -148,6 +148,11 @@ export const POST: Post = {
 
 ---
 
+:::readnext[이어서 읽기]
+/blog/holdem-game-order | 홀덤 게임 어떻게 진행되나요? | /images/blog-holdem-game-flow.webp
+/blog/holdem-blind-meaning | 홀덤 블라인드 뜻 | /images/holdem-blind-meaning-hero.webp
+:::
+
 ## 7. FAQ — 홀덤 체크 자주 묻는 질문
 
 ![홀덤 체크 FAQ 핵심 요약 — 체크 vs 패스·체크 후 폴드·동시 체크·온라인 버튼·체크레이즈|w](/images/holdem-check-meaning-faq.webp "홀덤 체크 FAQ — 자주 묻는 질문 5가지 한눈에 정리")

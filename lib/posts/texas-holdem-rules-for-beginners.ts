@@ -267,6 +267,11 @@ A4o 같은 약한 에이스는 초보자가 자주 손해 보는 핸드입니다
 
 ---
 
+:::readnext[이어서 읽기]
+/blog/holdem-hand-rankings | 홀덤 족보 순위 10가지 | /images/holdem-hand-rankings-showdown.webp
+/blog/holdem-game-order | 홀덤 게임 어떻게 진행되나요? | /images/blog-holdem-game-flow.webp
+:::
+
 ## FAQ
 
 ### 홀덤은 어떻게 진행하나요?

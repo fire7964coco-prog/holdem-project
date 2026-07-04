@@ -166,6 +166,11 @@ export const POST: Post = {
 
 ---
 
+:::readnext[이어서 읽기]
+/blog/holdem-check-meaning | 홀덤 체크 뜻 | /images/holdem-check-meaning-mistakes.webp
+/blog/holdem-cbet-strategy | 홀덤 C벳이란? | /images/overbet-board-texture-guide.webp
+:::
+
 ## 7. FAQ — 자주 묻는 질문
 
 ![홀덤 체크레이즈 FAQ — 비매너·리레이즈 대응·포지션·빈도|w](/images/holdem-check-raise-faq.webp "홀덤 체크레이즈 자주 묻는 질문 — 비매너·리레이즈·포지션·빈도")

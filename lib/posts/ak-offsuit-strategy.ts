@@ -112,6 +112,11 @@ T♥-J♥-Q♥ 같은 보드에서 A♥ 히트해도 위험합니다. 콜 횟수
 
 ---
 
+:::readnext[이어서 읽기]
+/blog/holdem-3bet-strategy | 홀덤 3벳이란? | /images/holdem-3bet-defense.webp
+/blog/holdem-starting-hand-range | 홀덤 스타팅 핸드 어떻게 골라야 하나요? | /images/blog-starting-hand-grid.webp
+:::
+
 ## 자주 묻는 질문 (FAQ)
 
 ### Q1. AK 오프수트와 수티드 차이가 크나요?

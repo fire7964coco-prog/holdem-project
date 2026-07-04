@@ -325,6 +325,11 @@ $20 스텝 위성 → OnLive Day 1 → **집에서 Day 1 플레이** → ITM 생
 
 ---
 
+:::readnext[이어서 읽기]
+/blog/apt-jeju-2026-fall-guide | APT 제주 2026 가을 참가 완전 가이드 | /images/apt-jeju-2026-fall-guide-hero.webp
+/blog/appt-korea-2026-guide | APPT 코리아 2026 참가 완전 가이드 | /images/appt-korea-2026-guide-hero.webp
+:::
+
 ## FAQ
 
 **Q. 한국 국적자인데 방법이 없나요?**

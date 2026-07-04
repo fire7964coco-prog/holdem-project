@@ -260,6 +260,11 @@ UTG가 레이즈하면 "이 사람은 프리미엄 핸드다"라고 신뢰도가
 
 ---
 
+:::readnext[이어서 읽기]
+/blog/when-to-fold-preflop-holdem | 홀덤 프리플랍에서 언제 폴드해야 하나요? | /images/blog-fold-weak-hand.webp
+/blog/holdem-starting-hand-range | 홀덤 스타팅 핸드 어떻게 골라야 하나요? | /images/blog-starting-hand-grid.webp
+:::
+
 ## FAQ — 자주 묻는 질문
 
 :::faqcard[/images/holdem-range-faq-summary.webp][홀덤 레인지 FAQ 핵심 요약 카드 — 자주 묻는 질문 6가지 한 장 정복][홀덤 레인지 FAQ — 레인지 외우기·캐시vs토너·밸런싱·상대 레인지 파악법]:::

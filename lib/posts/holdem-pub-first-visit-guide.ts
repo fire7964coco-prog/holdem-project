@@ -220,6 +220,11 @@ export const POST: Post = {
 
 ---
 
+:::readnext[이어서 읽기]
+/blog/holdem-game-order | 홀덤 게임 어떻게 진행되나요? | /images/blog-holdem-game-flow.webp
+/blog/holdem-hand-rankings | 홀덤 족보 순위 10가지 | /images/holdem-hand-rankings-showdown.webp
+:::
+
 ## FAQ — 자주 묻는 질문
 
 ![홀덤펍 처음 가는 법 FAQ 인포그래픽 — Q1~Q7 자주 묻는 질문 완전 정리](/images/holdem-pub-faq-infographic.webp "홀덤펍 초보 FAQ 인포그래픽 — 자주 묻는 질문 Q1~Q7 완전 정리")

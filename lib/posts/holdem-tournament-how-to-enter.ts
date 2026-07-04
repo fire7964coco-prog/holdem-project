@@ -222,6 +222,11 @@ export const POST: Post = {
 
 ---
 
+:::readnext[이어서 읽기]
+/blog/texas-holdem-rules-for-beginners | 텍사스 홀덤 초보 규칙 | /images/rules-texas-holdem.webp
+/blog/holdem-hand-rankings | 홀덤 족보 순위 10가지 | /images/holdem-hand-rankings-showdown.webp
+:::
+
 ## 자주 묻는 질문 (FAQ)
 
 ### Q1. 홀덤 대회 참가에 자격 제한이 있나요?
