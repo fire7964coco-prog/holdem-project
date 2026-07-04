@@ -11,7 +11,8 @@
 - **차별화 시그니처 = 스트래들 종류 비교표**(UTG/Mississippi/Button/Sleeper/Re-straddle × 누가포스팅·액션시작·프리/포스트플랍 마지막·옵션). 경쟁사(PokerNews·Upswing·888) 아무도 한 표로 안 정리 = Featured Snippet 미끼. + "누가 먼저/마지막" 워크스루(포럼 점유 니치 탈취) + 정직한 -EV 답변박스(GTO Wizard "No").
 - **품질: 적대적 룰 팩트체커 검증** — 룰 전부 CORRECT. 2건 misleading 교정: ①림잇 레이즈캡="안 들어감" 단정→하우스룰 헷지(Wikipedia) ②스택압축 인과 거꾸로(낮은SPR 단독은 레인지 넓힘)→"팟배증+스틸포지션 남은플레이어+포지션잠식으로 15~20% 적게 오픈"으로 재서술.
 - 첫 내부링크=blind-meaning(Glossary 허브 미발행이라 블라인드 개념으로 연결). blind-meaning straddle섹션에서 인라인 썸네일 역링크. 클릭강화(:::readnext blind·position-play).
-- 빌드 ✅ "51 blog posts + 60 intl"(intl 59→60). category=strategy. 커밋 39b9844. **다음**: Glossary 계속(rake 1300·fish 390 LDA3·cooler 390) or Strategy limping. ⚠️ **커서 히어로 생성 필요**: /images/holdem-straddle-hero.webp(UTG 추가블라인드 포스팅 실사).
+- 빌드 ✅ "51 blog posts + 60 intl"(intl 59→60). category=strategy. 커밋 39b9844. **다음**: Glossary 계속(rake 1300·fish 390 LDA3·cooler 390) or Strategy limping.
+- ✅ **본문 이미지 4개 완비**(커서 생성, 커밋 4fead82): 히어로=UTG 스트래들 칩포스팅, 액션순서=button-dealer-board(재사용), **버튼스트래들**(DEALER버튼+칩=포지션변형, Types섹션), **부풀린팟**(큰 중앙칩더미=-EV논지, Profitable섹션). 전부 언어중립·오버레이없음·≤60KB, 총 ~129KB. 기존 라이브러리엔 straddle 맥락 실사 없어 재사용 대신 맥락 신규 생성(억지 회피).
 
 ### EN Odds 클러스터 #3 — holdem-drawing-odds (Drawing Odds / Odds of Flopping X) 신규
 - **Odds & Math 필라 클러스터 3번째 = 필라3 토픽오소리티 마무리**. 허브(probability)→pot-odds→outs에 이어 "확률 뒤의 유도 + 전략" 각도로 발행.

@@ -6,7 +6,7 @@
 ---
 
 ## 📅 마지막 작업일
-2026-07-04 (Claude Code 세션 — **① Odds 클러스터 #3 `holdem-drawing-odds` 발행+이미지2개 완비 ② Glossary 필라 첫 발행 `holdem-straddle`**. drawing-odds=필라3 마무리(Flop Lifecycle표+조합론, §13 22개 ALL CORRECT, 이미지 §13통과). straddle=필라6 개척(종류비교표+액션순서+-EV답변, 적대적 룰 팩트체크 통과, 2건 misleading 교정). straddle 히어로 이미지 완비(커서, §검증 통과=칩 포스팅 실사). 다음 = Glossary 계속(rake·fish) or Strategy limping)
+2026-07-04 (Claude Code 세션 — **① Odds 클러스터 #3 `holdem-drawing-odds` 발행+이미지2개 완비 ② Glossary 필라 첫 발행 `holdem-straddle`**. drawing-odds=필라3 마무리(Flop Lifecycle표+조합론, §13 22개 ALL CORRECT, 이미지 §13통과). straddle=필라6 개척(종류비교표+액션순서+-EV답변, 적대적 룰 팩트체크 통과, 2건 misleading 교정). straddle 본문 이미지 4개 완비(커서, §검증 통과=칩포스팅 히어로+버튼스트래들+부풀린팟, 맥락 신규). 다음 = Glossary 계속(rake·fish) or Strategy limping)
 
 ---
 
