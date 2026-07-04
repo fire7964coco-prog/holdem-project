@@ -38,7 +38,7 @@ That habit is called counting **outs**, and it's the single skill that sits unde
 
 The word "likely" is doing quiet work there. A true out has to actually *win* the hand, not just improve your cards. Pairing your ten when a flush is already on the board isn't an out — you improved, but you're still losing. Learning to count outs is really learning to count the cards that win, and to ignore the ones that only *look* helpful.
 
-Everything downstream — your equity, your [pot odds](/en/blog/holdem-pot-odds), your call-or-fold — starts from this one number. Get the out count wrong and every calculation after it is wrong too.
+Everything downstream — your equity, your [pot odds](/en/blog/holdem-pot-odds), your call-or-fold — starts from this one number. Get the out count wrong and every calculation after it is wrong too. And once you know the count, the [drawing odds](/en/blog/holdem-drawing-odds "thumb:/images/holdem-drawing-odds-hero.webp") tell you exactly how often each draw actually gets there.
 
 ---
 

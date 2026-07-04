@@ -103,7 +103,7 @@ This is the table most odds pages bury or split across a dozen articles. These a
 
 </div>
 
-The one to memorize is the top row: ==**you flop a set about 12% of the time**, or roughly 1 in 8.5==. That single number decides whether calling a raise to "set-mine" a small pair is profitable — you need the pot (and your opponent's likely stack) to pay you off more than 7.5 to 1 when you hit. That's the bridge to [pot odds](#pot-odds), below.
+The one to memorize is the top row: ==**you flop a set about 12% of the time**, or roughly 1 in 8.5==. That single number decides whether calling a raise to "set-mine" a small pair is profitable — you need the pot (and your opponent's likely stack) to pay you off more than 7.5 to 1 when you hit. That's the bridge to [pot odds](#pot-odds), below. For the full derivation of every row here — plus the set-mining stack rule and the made-vs-draw-vs-complete flush split — see the deep dive on [drawing odds and the odds of flopping each hand](/en/blog/holdem-drawing-odds "thumb:/images/holdem-drawing-odds-hero.webp").
 
 ---
 

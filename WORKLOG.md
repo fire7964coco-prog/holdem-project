@@ -3,6 +3,17 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-04
+
+### EN Odds 클러스터 #3 — holdem-drawing-odds (Drawing Odds / Odds of Flopping X) 신규
+- **Odds & Math 필라 클러스터 3번째 = 필라3 토픽오소리티 마무리**. 허브(probability)→pot-odds→outs에 이어 "확률 뒤의 유도 + 전략" 각도로 발행.
+- **차별화 시그니처 = "Flop Lifecycle 통합표"** — 경쟁사(Upswing=flopping / Pokerology=completing)와 허브(두 표 분리)가 아무도 안 잇는 갭. 한 행에 made 플랍→draw 플랍→리버 완성까지 3열로 잇고, **조합론(C(11,3)/C(50,3)=165/19,600 식)을 본문에 노출**(E-E-A-T·§13 신뢰신호).
+- 타깃: odds of flopping a set·flush·quads·straight flush·trips·full house / set mining / being dealt pocket aces·two players AA / complete flush·straight draw. H2 6개(lifecycle표·셋마이닝·플러시 3분할·스트레이트·희귀플랍·dealt) + FAQ 8(set vs trips·7-to-1 vs 1-in-8 스니펫미끼 포함).
+- **⚠️ 중복 회피**: outs/pot-odds가 커버한 4-2룰·아웃츠 카운팅 **재설명 안 함** → 내부링크 위임. 신규 커버리지 = 셋마이닝 임플라이드오즈(스택 10~15배 규칙)·백도어 러너러너(4.2%)·set by river(19.2%)·two players AA(136-to-1).
+- **품질: §13 직접검산 + 적대적 서브에이전트 = 22개 확률 ALL CORRECT**(C(50,3)=19,600 기반 전 조합론 독립 재검산). 팩트체커 지적 반영: 풀하우스 0.98%가 board-trips 포함임 명시, "flop a pair" 29→32%(at least a pair 정렬).
+- 양방향 링크: 허브(probability "flop a set" 지점)·outs(intro)에서 인라인 썸네일 역링크. 첫링크=필라. 클릭강화(:::readnext 2카드→outs·pot-odds).
+- 빌드 ✅ "51 blog posts + 59 intl"(intl 58→59). category=strategy. **다음**: 다른 필라 착수(Glossary straddle 2900 / Strategy limping 590). ⚠️ **커서 이미지 생성 필요**: /images/holdem-drawing-odds-hero.webp(셋마이닝 컨셉 — 스몰페어+칩스택+플랍).
+
 ## 2026-07-03
 
 ### EN Odds 클러스터 #2 — holdem-outs (How to Count Outs) 신규

@@ -6,7 +6,7 @@
 ---
 
 ## 📅 마지막 작업일
-2026-07-03 (Claude Code 세션 — **EN Odds 클러스터 `holdem-outs`(How to Count Outs) 발행 + 본문 이미지 4개 완비**. 허브 probability·pot-odds 발행에 이어 필라3 클러스터 계속. §13 적대적검산·이미지검산 통과. 다음 = Odds 클러스터 계속(drawing-odds 권장) or GSC 색인요청)
+2026-07-04 (Claude Code 세션 — **EN Odds 클러스터 #3 `holdem-drawing-odds`(Drawing Odds / Odds of Flopping X) 발행**. 필라3 토픽오소리티 마무리. 시그니처=Flop Lifecycle 통합표(made→draw→complete)+조합론 노출. §13 직접검산+적대적 서브에이전트 22개 확률 ALL CORRECT. 다음 = 다른 필라 착수(Glossary straddle 2900 / Strategy limping 590). ⚠️ **커서 히어로 이미지 생성 대기**: /images/holdem-drawing-odds-hero.webp)
 
 ---
 
@@ -52,11 +52,12 @@
 - ✅ **Phase 1 Odds 허브 발행** — `holdem-probability` 종합 플래그십. 확률 35개 검산. 배포 bcad393.
 - ✅ **Odds 클러스터 #1 발행** — `holdem-pot-odds`("How to Calculate Pot Odds"). 벳사이즈 치트시트·3개념구분·4-2룰·실전핸드. §13 18개 검산(턴 팟오즈 오류1 정정). 허브 양방향링크. 배포 ac3a93b.
 - ✅ **Odds 클러스터 #2 발행** — `holdem-outs`("How to Count Outs"). 아웃츠 세는법=pot-odds 상류. 드로우별 아웃츠표·아웃츠→배당 마스터표·4-2룰 오차보정·콤보 겹침산수(15 not 17)·더티아웃 실전. §13 적대적검산 ALL CORRECT. 허브·pot-odds 양방향 인라인썸네일 역링크. 배포 603f936. ✅ **본문 이미지 4개 완비**(히어로+counting+dirty-outs 커서생성, 스트레이트 재사용). 이미지 §13검산 통과(counting=A♠K♠ 오버카드6아웃, dirty=44페어보드). 배포 26661d4.
-**▶ 다음 세션 착수 = `holdem-drawing-odds` (권장 1순위)**: flush/straight draw 확률 + odds of flopping a set(11.8%)/flush/quads 롱테일 클러스터. 필라3 토픽오소리티 마무리.
-  - ⚠️ **중복주의**: outs·pot-odds가 4-2룰·아웃츠→배당을 이미 두껍게 커버함. drawing-odds는 각도를 "특정 드로우별 확률 + flopping X 롱테일"로 확실히 차별화할 것(4-2룰 재설명 금지, 상호 내부링크로 위임).
-  - `holdem-rule-of-2-and-4` 전용글은 **보류 권장**(outs/pot-odds/probability 3글과 정면 중복). 정 만들려면 "순수 훅/1페이지 치트시트" 각도로만.
-  - 그 후: 다른 필라 착수(Glossary straddle 2900 / Strategy limping 590).
-**즉시 할 일**: GSC 색인요청 `/en/blog/holdem-outs`·`/en/blog/holdem-pot-odds`·`/en/blog/holdem-probability`·`/en/blog/holdem-hand-rankings`.
+- ✅ **Odds 클러스터 #3 발행(2026-07-04)** — `holdem-drawing-odds`("Drawing Odds / Odds of Flopping X"). **필라3 토픽오소리티 마무리**. 시그니처=**Flop Lifecycle 통합표**(한 행에 made 플랍→draw 플랍→리버 완성 3열, 경쟁사·허브 모두 안 잇는 갭)+본문 조합론 노출(C(11,3)/C(50,3) 식=E-E-A-T). 셋마이닝 임플라이드오즈(10~15배)·백도어 러너러너·two players AA(136-to-1)·set by river(19.2%) 신규 커버. §13 직접검산+적대적 서브에이전트 **22개 확률 ALL CORRECT**. 4-2룰·아웃츠 재설명 금지(위임 준수). 허브·outs 양방향 인라인썸네일 역링크. 빌드 "51+59 intl". ⚠️ **커서 히어로 생성 대기**: /images/holdem-drawing-odds-hero.webp(셋마이닝 컨셉=스몰페어+칩+플랍).
+**▶ 다음 세션 착수 = 다른 필라로 이동 (Odds 필라3 4글 완성=허브+pot-odds+outs+drawing-odds)**:
+  - **Glossary 플래그십 `holdem-glossary`(신규 필라)** — straddle 2900·rake·fish·nuts·bad beat 등 용어 롱테일(LDA 3~35=승산 좋음). 키워드뱅크 `en-glossary-what-is-a.md`.
+  - or **Strategy `holdem-strategy`(신규 필라)** — limping 590(LDA8·W3=1 매우좋음) 클러스터.
+  - `holdem-rule-of-2-and-4` 전용글은 **보류 유지**(outs/pot-odds/probability/drawing-odds 4글과 정면 중복).
+**즉시 할 일**: GSC 색인요청 `/en/blog/holdem-drawing-odds`·`/en/blog/holdem-outs`·`/en/blog/holdem-pot-odds`·`/en/blog/holdem-probability`.
 **🧹 기존 정리 과제(발견 2026-07-03)**: EN desc>160자 **7개 기존글** 트리밍 필요(CTR 훅+키워드 유지하며) — positions 255·hand-rankings 210·tournament 205·blind-meaning 176·all-in-rules 164·reading-the-board 162·showdown-rules 162. (오늘 신규 probability·pot-odds는 정정 완료)
 **✅ EN 전체 클릭강화 적용 완료(2026-07-03)**: 22개 EN 글 전부 인라인 썸네일 링크 + FAQ앞 :::readnext 2카드. 신규글은 이 패턴 기본 포함(posting.mdc 규칙).
 **적용 중인 신규 규칙**: 모든 신규글 = 인라인 썸네일 링크(가장 연관글 1~2개, `"thumb:이미지"`) + FAQ앞 `:::readnext[라벨]` 2카드 박스. posting.mdc·memory 문서화.
