@@ -66,6 +66,8 @@ That "last action preflop" is what the straddler is paying for. But note the cat
 
 ## Types of Straddle (UTG, Mississippi, Button & Sleeper)
 
+![A straddle bet posted beside the dealer button, showing a button or Mississippi straddle that buys last position for the hand](/images/holdem-straddle-button.webp "A button (Mississippi) straddle posts from the button — the one straddle that buys last action postflop too")
+
 Not all straddles are the same — and the differences are all about **where the action starts and how long you keep last position.** Here's the comparison no other page lays out in one place:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
@@ -114,6 +116,8 @@ Even in cash games it's optional and house-rules dependent: some rooms allow onl
 ---
 
 ## Is Straddling Profitable? Should You Straddle?
+
+![A large bloated pot of mixed chips piled in the middle of the felt, the inflated pot a straddle creates before anyone has seen a card](/images/holdem-straddle-bloated-pot.webp "A straddle doubles the blind and bloats the pot — money committed before a single card is seen")
 
 The honest answer, and the one the solvers agree on: **for almost everyone, no.** GTO Wizard's analysis puts it bluntly — from an expected-value standpoint, straddling is a losing play. Three reasons:
 
