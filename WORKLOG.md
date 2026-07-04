@@ -5,6 +5,15 @@
 
 ## 2026-07-04
 
+### EN Glossary #2 — holdem-rake (What Is Rake in Poker) 신규
+- **필라6 Glossary 2번째**. rake=1300/mo·LDA30 고볼륨 용어. 수익구조 직결(레이크가 저스테이크 승률을 결정).
+- 타깃: what is a rake·rake explained·how does rake work·rake cap·time rake·rakeback·tournament rake·online vs live rake. H2 6개(정의·징수방식비교표·실제얼마내나·rakeback·토너먼트fee·온라인vs라이브)+FAQ 8(PAA 정확매칭).
+- **차별화 시그니처 = 레이크 종류 비교표**(Pot rake/Time charge/Dead drop/Tournament fee × 징수방식·금액·보이는곳). Wikipedia 포함 아무도 통합표 없음. + "한 세션 실제 얼마" 실전계산(라이브$1/$2 $100+/hr) + **저스테이크 rake trap**($2캡~5bb/100 vs $4캡~8-9bb/100 = +8승률→-1) + 중립 rakeback(contributed vs dealt).
+- **정확성 훅**: no-flop-no-drop="대부분(GGPoker는 프리플랍도 레이크)" 명시 = 경쟁사 누락 디테일.
+- **품질: 적대적 팩트체커 검증** — 고위험4개(GGPoker·$100+/hr·rake trap bb/100·토너fee) 전부 CORRECT·적절히 헷지. 1건 교정: $100+$20(20% 비현실)→$100+$9(9%, 마이크로10%보다 낮아 대비 유지).
+- 첫링크=tournament-vs-cash-game(레이크=캐시수익 vs 토너fee 구분). straddle "feeds the rake" 지점 역링크. 클릭강화(:::readnext straddle·tournament-vs-cash).
+- 빌드 ✅ "51 blog posts + 61 intl"(intl 60→61). category=strategy. 커밋 0bd6200. **다음**: Glossary 계속(fish 390 LDA3·cooler 390·slow roll 590) or Strategy limping. ⚠️ **커서 이미지 3개 생성 필요**(가독성용): rake-hero(딜러 레이크 드롭)·rake-drop(팟에서 칩 스윕)·rake-lowstakes(작은팟 뜯김).
+
 ### EN Glossary 필라 첫 발행 — holdem-straddle (What Is a Straddle in Poker) 신규
 - **필라6 Glossary 첫 개척**(Odds 필라3 허브+3클러스터 완료 후 새 광맥). straddle=2900/mo·LDA25·W3=2·미커버 = 로드맵 우선순위 #1(롱테일 1등 가장 빠른 필라).
 - 타깃: what is a straddle·poker straddle rules·mississippi/button/sleeper straddle·utg straddle·how much is a straddle·is straddling profitable. H2 6개(정의·액션순서워크스루·종류비교표·금액·토너먼트금지·EV) + FAQ 8(PAA 정확매칭).
