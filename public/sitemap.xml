@@ -276,7 +276,7 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- 블로그 포스트 (51편) -->
+  <!-- 블로그 포스트 (52편) -->
 
   <url>
     <loc>https://www.holdemmaster.com/blog/ak-offsuit-strategy</loc>
@@ -517,6 +517,13 @@
   <url>
     <loc>https://www.holdemmaster.com/blog/holdem-pub-legal</loc>
     <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.holdemmaster.com/blog/holdem-raise-how-much</loc>
+    <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
