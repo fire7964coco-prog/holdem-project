@@ -6,7 +6,7 @@
 ---
 
 ## 📅 마지막 작업일
-2026-07-04 (Claude Code 세션 — **EN Odds 클러스터 #3 `holdem-drawing-odds`(Drawing Odds / Odds of Flopping X) 발행 + 본문 이미지 2개 완비**. 필라3 토픽오소리티 마무리. 시그니처=Flop Lifecycle 통합표(made→draw→complete)+조합론 노출. §13 직접검산+적대적 서브에이전트 22개 확률 ALL CORRECT. 이미지 §13검산 통과(히어로=5♠5♦+5♣K♥8♠ 셋, 플러시=A♥K♥+Q♥7♥2♠ 드로우). 다음 = 다른 필라 착수(Glossary straddle 2900 / Strategy limping 590))
+2026-07-04 (Claude Code 세션 — **① Odds 클러스터 #3 `holdem-drawing-odds` 발행+이미지2개 완비 ② Glossary 필라 첫 발행 `holdem-straddle`**. drawing-odds=필라3 마무리(Flop Lifecycle표+조합론, §13 22개 ALL CORRECT, 이미지 §13통과). straddle=필라6 개척(종류비교표+액션순서+-EV답변, 적대적 룰 팩트체크 통과, 2건 misleading 교정). ⚠️ **straddle 히어로 이미지 커서 생성 대기**: /images/holdem-straddle-hero.webp. 다음 = Glossary 계속(rake·fish) or Strategy limping)
 
 ---
 

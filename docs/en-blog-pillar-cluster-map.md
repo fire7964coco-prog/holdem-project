@@ -102,6 +102,7 @@ KO 11필라를 복제하지 않고 EN 검색시장 기준으로 재편. `holdem-
 
 ### 필라 6 — Glossary / Terms · hub `holdem-glossary` 🆕 (A-Z 허브)
 개별 페이지는 **검색량 있는 용어만**(Featured Snippet 타깃), 나머지는 허브에 묶음(thin-content 방지):
+- ✅ holdem-straddle (what is a straddle 2900) — 발행 2026-07-04. 종류비교표·액션순서·-EV답변. 적대적 룰 팩트체크 통과. 첫링크=blind-meaning(허브 미발행이라 임시)
 - 🆕 holdem-bad-beat
 - 🆕 holdem-tilt
 - 🆕 holdem-nuts
@@ -171,6 +172,6 @@ posting.mdc STEP 준수. 롱테일 1등용 필수 체크:
 | 3 Odds & Math | ✅ | 3 / 5 | 허브+pot-odds+outs+drawing-odds. 남은 심화=implied-odds·equity |
 | 4 Strategy | 🆕 | 3 / 9 | 껍데기 |
 | 5 Tournament | ✅ | 5 / 8 | 강함(고아2) |
-| 6 Glossary | 🆕 | 0 / 7 | 미착수 |
+| 6 Glossary | 🆕 | 1 / 7 | straddle 발행. 허브+rake·fish·cooler 남음 |
 
 > 글 발행/수정 시 이 표와 §2 트리를 갱신할 것.
