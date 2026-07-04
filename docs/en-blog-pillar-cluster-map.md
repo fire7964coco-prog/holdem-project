@@ -69,11 +69,11 @@ KO 11필라를 복제하지 않고 EN 검색시장 기준으로 재편. `holdem-
 ### 필라 3 — Odds & Math · hub `holdem-probability` ✅ ("Poker Odds & Probability Chart")
 > **발행됨(2026-07-03)**: 종합 플래그십 허브. H2 8개(족보확률차트·스타팅핸드·플랍오즈통합표·드로우아웃츠·4-2룰·팟오즈·로열희귀도·롱샷)+FAQ8. 확률 35개 적대적 재검산 ALL CORRECT. hand-rankings·starting-hands-chart 역링크 有. 아래 클러스터는 이 허브에서 파생·심화 예정.
 - ✅ holdem-pot-odds (플래그십: how to calculate pot odds) — 발행 2026-07-03. 벳사이즈 치트시트·3개념구분·4-2룰·실전핸드. 허브 양방향링크. §13 18개 검산
-- 🆕 holdem-outs (poker outs chart / how to count outs)
-- 🆕 holdem-rule-of-2-and-4 (4-2 rule)
-- 🆕 holdem-implied-odds
+- ✅ holdem-outs (poker outs chart / how to count outs) — 발행 2026-07-03. 드로우별 아웃츠표·아웃츠→배당·콤보겹침·더티아웃. 이미지 4개. §13 적대적검산
+- ✅ holdem-drawing-odds (odds of flopping set/flush/quads + 드로우 완성확률) — 발행 2026-07-04. Flop Lifecycle 통합표(made→draw→complete)+조합론 노출·셋마이닝 임플라이드오즈. §13 적대적 22개 ALL CORRECT. 이미지 2개
+- 🆕 holdem-implied-odds (implied odds / reverse implied odds)
 - 🆕 holdem-equity (what is equity / how to calculate)
-- 🆕 holdem-drawing-odds (flush draw / straight draw 확률)
+- 🆕 holdem-rule-of-2-and-4 (4-2 rule) — **보류**(outs/pot-odds/probability/drawing-odds와 정면 중복)
 > **가장 저경쟁·고밀도 롱테일 광맥.** 계산 질문은 정답이 명확해 Featured Snippet 독점 쉬움.
 
 ### 필라 4 — Strategy & Play · hub `holdem-strategy` 🆕 ("Texas Holdem Strategy")
@@ -168,7 +168,7 @@ posting.mdc STEP 준수. 롱테일 1등용 필수 체크:
 |---|---|---|---|
 | 1 Rules | ✅ | 5 / 8 | 두꺼움 |
 | 2 Hand Rankings | ✅ | 4 / 6 | 두꺼움 |
-| 3 Odds & Math | ✅ | 2 / 6 | 허브+pot-odds 발행, 클러스터 진행중 |
+| 3 Odds & Math | ✅ | 3 / 5 | 허브+pot-odds+outs+drawing-odds. 남은 심화=implied-odds·equity |
 | 4 Strategy | 🆕 | 3 / 9 | 껍데기 |
 | 5 Tournament | ✅ | 5 / 8 | 강함(고아2) |
 | 6 Glossary | 🆕 | 0 / 7 | 미착수 |
