@@ -147,7 +147,7 @@ In a casino, the chip values are already defined. In a home game, you choose the
 For beginners, keep the numbers simple. You do not need five different chip colors. Three or four colors are enough.
 
 | Home game type | Suggested starting stack | Example blinds |
-|---------------|--------------------------|----------------|
+|:---|:---|:---:|
 | Very casual learning game | 100 chips | 1 / 2 |
 | Standard home cash game feel | 200 chips | 1 / 2 or 2 / 4 |
 | Longer tournament-style night | 1,000 to 2,000 chips | 10 / 20 |
@@ -157,7 +157,7 @@ For a first home game, this setup works well:
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Chip color | Value | Chips per player | Total value |
-|-----------|-------|------------------|-------------|
+|:---|:---:|:---:|:---:|
 | White | 1 | 20 | 20 |
 | Red | 5 | 16 | 80 |
 | Blue | 25 | 4 | 100 |
@@ -178,7 +178,7 @@ If you are learning, use play chips first. The goal is to understand the order o
 If you are playing a small home cash game, choose a buy-in that everyone is comfortable losing. A common beginner structure is:
 
 | Blind level | Beginner buy-in | Notes |
-|------------|-----------------|-------|
+|:---|:---:|:---|
 | $0.01 / $0.02 | $2 to $5 | Best for learning with real stakes |
 | $0.05 / $0.10 | $10 to $20 | Still small, but decisions feel real |
 | $0.10 / $0.25 | $25 to $50 | Better after players know the rules |

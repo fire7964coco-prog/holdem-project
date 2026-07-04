@@ -61,7 +61,7 @@ Count the five-card combinations possible from a 52-card deck and the order fall
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Hand | Combinations | Probability | Verdict |
-|------|------|------|------|
+|:---|:---:|:---:|:---|
 | Four of a Kind | 624 | 0.024% | Beats flush |
 | Full House | 3,744 | 0.144% | Beats flush |
 | **Flush** | **5,108** | **0.197%** | **Beats straight ✅** |

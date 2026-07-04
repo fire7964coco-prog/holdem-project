@@ -120,7 +120,7 @@ If you're outside Australia and want to warm up with online satellites before fl
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.25);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Event | Dates | Buy-In (AUD) | Format |
-|---|---|---|---|
+|:---|:---|:---:|:---|
 | Australian Poker Cup | Sep 10–14 | ==g:$1,150== | Multi-flight |
 | Aussie Monster Stack | Sep 13–14 | $1,250 | Deep stack |
 | Ladies Australian Championship | Sep 15–16 | ==g:$500== | Open to all |
@@ -195,7 +195,7 @@ The Star Sydney is at **80 Pyrmont Street, Pyrmont NSW 2009** — right on Darli
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.25);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | From | Method | Time | Cost (approx.) |
-|---|---|---|---|
+|:---|:---|:---:|:---|
 | Sydney Airport (T1/T2) | Airport Link train → Central → Light Rail | ~40 min | AUD $20–25 |
 | Sydney Airport | Taxi / Rideshare | ~25–35 min | AUD $50–70 |
 | Sydney CBD (George St) | Walk | ~15 min | Free |

@@ -71,7 +71,7 @@ The festival runs two parallel series: the **PokerStars Open** (accessible entry
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Event | Dates | Buy-In | Who It's For |
-|---|---|---|---|
+|:---|:---|:---:|:---|
 | PokerStars Cup | Aug 20–21 | **€825** | Best entry point for first-timers |
 | PokerStars Open Main Event | Aug 16–22 | **€1,650** | Mid-stakes grinders |
 | PokerStars Open High Roller | Aug 21–23 | **€2,700** | Bridge between Open & EPT |
@@ -97,7 +97,7 @@ PokerStars designed Power Path specifically to ==stop pros from buying directly 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Step | Format | Buy-In | Can Buy In Directly? |
-|---|---|---|---|
+|:---|:---:|:---:|:---|
 | Step 1 | $0.50 Spin & Go (or $1 On Demand SNG) | **$0.50** | ✅ Yes (or free daily ticket) |
 | Step 2 | $1.50 MTT | **$1.50** | ✅ Yes |
 | Step 3 | $11 MTT | **$11** | ✅ Yes |
@@ -110,7 +110,7 @@ PokerStars designed Power Path specifically to ==stop pros from buying directly 
 Win Step 4 and you receive one of three Power Passes:
 
 | Pass | Value | What's Included |
-|---|---|---|
+|:---|:---:|:---|
 | Bronze Pass | ~$530 | Online tournament credits |
 | Silver Pass | ~$2,300 | Mid-tier live event entries |
 | ==**Gold Pass**== | ==g:**~$10,300**== | ==g:€5,300 ME + €1,100 side event + 8 nights hotel + expenses== |
@@ -148,7 +148,7 @@ Don't want to grind four steps? PokerStars also runs **direct satellites** for E
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Item | Estimated Cost |
-|---|---|
+|:---|:---:|
 | Flights (return, from major EU city) | €150–€400 |
 | Hotel (7 nights, mid-range near casino) | €700–€1,200 |
 | PokerStars Cup buy-in | **€825** |
@@ -162,7 +162,7 @@ Don't want to grind four steps? PokerStars also runs **direct satellites** for E
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Item | Estimated Cost |
-|---|---|
+|:---|:---:|
 | Flights (return, from major EU city) | €150–€400 |
 | Hotel (10 nights, mid-range) | €1,000–€1,800 |
 | EPT Main Event buy-in | **€5,300** |
@@ -177,7 +177,7 @@ Don't want to grind four steps? PokerStars also runs **direct satellites** for E
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Item | Estimated Cost |
-|---|---|
+|:---|:---:|
 | Power Path buy-ins to reach Step 4 | **$11–$55** |
 | Gold Pass covers: ME entry + side event + 8 nights | ==g:✅ Included (~€10,300 value)== |
 | Flights (not always included) | €150–€400 |
@@ -298,7 +298,7 @@ Barcelona El Prat (BCN) is about ==12km from the casino== — roughly 25–40 mi
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Method | Duration | Cost | Notes |
-|---|---|---|---|
+|:---|:---:|:---:|:---|
 | ==g:**Taxi / Uber**== | 25–35 min | €30–€40 | ==g:Easiest with luggage== |
 | **Aerobus (A1)** | 35 min | ~€6–7 | To Plaça Catalunya, then taxi or metro to casino |
 | **Metro (L9 Sud)** | 45–55 min | ~€5–6 | L9 Sud → transfer to L4 → Ciutadella/Vila Olímpica (10-min walk to casino) |

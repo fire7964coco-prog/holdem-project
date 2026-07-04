@@ -90,7 +90,7 @@ Step 0부터 Step 4까지 순서대로 보겠습니다. 각 단계는 직접 바
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.3);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | 단계 | 포맷 | 직접 바이인 | 상금 | 특이사항 |
-|------|------|------------|------|---------|
+|:---|:---|:---:|:---|:---|
 | **Step 0** | 3인 Avatar Race | 무료 (매일 지급) | Step 1 티켓 | 결정 없음, 운만 |
 | **Step 1** | 4인 All-in or Fold SNG | $0.50 | Step 2 티켓 | 1위만 진출 |
 | **Step 2** | 6인 Spin & Gold | $2 | Step 3 티켓 (기본) / Step 4·Pass (대박) | 룰렛 방식 — 결과 랜덤 |
@@ -179,7 +179,7 @@ GGPoker 캐시게임(NLH, PLO, Short Deck, AoF, Rush & Cash) 테이블에서 **1
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.3);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | 시작점 | 비용 | 필요 단계 수 | 적합한 경우 |
-|--------|------|------------|-----------|
+|:---|:---:|:---:|:---|
 | Step 0 (무료 로그인) | $0 | 5단계 모두 | 매일 꾸준히 도전, 비용 0원 |
 | Step 1 직접 바이인 | $0.50 | 4단계 | 가장 저렴한 직접 바이인 |
 | Step 2 직접 바이인 | $2 | 3단계 | 시간 아끼고 싶을 때 |

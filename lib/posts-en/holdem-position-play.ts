@@ -64,7 +64,7 @@ Before we get into strategy, let's lock in the map. Every position is measured b
 <div style="overflow-x:auto;margin:20px 0">
 
 | Seat | Abbreviation | Acts preflop | Acts postflop | Group |
-|---|---|---|---|---|
+|:---|:---|:---:|:---|:---|
 | Under the Gun | UTG | 1st | 1st (usually) | Early |
 | UTG+1 | UTG+1 | 2nd | 2nd | Early |
 | UTG+2 | UTG+2 | 3rd | 3rd | Early |
@@ -128,7 +128,7 @@ This is determined preflop. If you're on the button and the big blind calls your
 This is the number most guides skip. GTO solvers measure **equity realization** — the percentage of your theoretical hand equity you actually capture in the pot.
 
 | Position | Equity realization | Why |
-|---|---|---|
+|:---|:---:|:---|
 | **In position (IP)** | **85–100%** | Act last → see all information → bluff and value at optimal frequency |
 | **Out of position (OOP)** | **60–85%** | Act first → bleed equity on marginal decisions across streets |
 
@@ -145,7 +145,7 @@ Every seat gets a different opening range because **the number of players acting
 <div style="overflow-x:auto;margin:20px 0">
 
 | Position | Open % (9-max) | Open % (6-max) | Rationale |
-|---|---|---|---|
+|:---|:---:|:---:|:---|
 | UTG | ~13% | ~15% | 8 players behind, OOP all hand |
 | UTG+1 | ~15% | — | 7 players behind |
 | UTG+2 | ~17% | — | 6 players behind |

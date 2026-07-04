@@ -126,7 +126,7 @@ This is what most beginner guides skip, and it's the most important mechanical c
 **Blinds start small and increase on a timer — usually every 20–40 minutes in live events.**
 
 | Level | Blinds | Antes | Your 10k stack = |
-|-------|--------|-------|-----------------|
+|:---|:---:|:---:|:---|
 | 1 | 25 / 50 | — | 200 big blinds |
 | 3 | 75 / 150 | 150 | 67 big blinds |
 | 6 | 200 / 400 | 400 | 25 big blinds |
@@ -301,7 +301,7 @@ This is what no other guide tells you. Here's a realistic Day 1 timeline for a l
 **Typical structure:** Top 10–15% of the field gets paid.
 
 | Field Size | Players Paid | Min-Cash (typical) | 1st Place (typical) |
-|------------|-------------|---------------------|----------------------|
+|:---|:---:|:---:|:---|
 | 100 | ~13 | 1.5–2x buy-in | 25–30% of prize pool |
 | 500 | ~60 | 1.5–2x buy-in | 20–25% of prize pool |
 | 2,000 | ~250 | 1.7–2.2x buy-in | 15–20% of prize pool |

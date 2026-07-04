@@ -437,7 +437,7 @@ That's it. That's the experience that's been posted on Korean social media milli
 **What it costs:**
 
 | Item | Price (KRW) | ~USD |
-|---|---|---|
+|:---|:---:|:---:|
 | Ramen + barcode bowl (at GS25/CU/7-Eleven) | ₩3,500–4,000 | ~$2.60–3.00 |
 | Raw egg | ₩500 | ~$0.40 |
 | Kimchi pack | ₩1,500 | ~$1.10 |

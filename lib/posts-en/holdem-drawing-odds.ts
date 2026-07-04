@@ -40,7 +40,7 @@ Here's the table nobody builds in one place. Most sites tell you the odds of *fl
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Holding | Flop it made | Flop the draw | Complete draw by river |
-|------|------|------|------|
+|:---|:---:|:---|:---|
 | Pocket pair → set | 11.8% (7.5-to-1) | — | set→boat 33% by river |
 | Two suited → flush | 0.84% (118-to-1) | 10.9% flush draw | 35% (9 outs) |
 | Connectors → straight | 1.3% (76-to-1) | ~10% OESD | 31.5% (8 outs) |
@@ -94,7 +94,7 @@ This is where competitors blur three completely different numbers. With two suit
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Question | Odds | The math |
-|------|------|------|
+|:---|:---:|:---|
 | Flop a **made flush** (3 of your suit) | 0.84% · 118-to-1 | C(11,3) ÷ C(50,3) = 165 ÷ 19,600 |
 | Flop a **flush draw** (2 more of your suit) | 10.9% · 8-to-1 | C(11,2)×39 ÷ C(50,3) = 2,145 ÷ 19,600 |
 | **Complete** a flopped flush draw by river | 35.0% · 1.9-to-1 | 1 − C(38,2) ÷ C(47,2) |
@@ -133,7 +133,7 @@ These are the numbers behind the best (and worst) nights of your poker life. Eac
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Flop this | Holding | Odds | The math |
-|------|------|------|------|
+|:---|:---|:---:|:---:|
 | **Quads** | A pocket pair | 0.245% · 407-to-1 | 48 ÷ 19,600 |
 | **Full house** | A pocket pair | 0.98% · 101-to-1 | 192 ÷ 19,600 |
 | **Trips** | Two unpaired cards | 1.35% · 73-to-1 | 264 ÷ 19,600 |
@@ -156,7 +156,7 @@ Before any of the above, there's the deal. With **1,326 possible two-card combin
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Dealt this | Odds | How often |
-|------|------|------|
+|:---|:---:|:---:|
 | Pocket aces (specific pair) | 220-to-1 · 0.45% | 6 ÷ 1,326 |
 | Any pocket pair | 16-to-1 · 5.9% | 78 ÷ 1,326 |
 | A-K suited | 331-to-1 · 0.3% | 4 ÷ 1,326 |

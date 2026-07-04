@@ -69,7 +69,7 @@ Memorize these and you'll recognize your out count on sight. This is the chart e
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Your draw | Outs | Why |
-|------|------|------|
+|:---|:---:|:---|
 | Flush + open-ended straight | 15 | The monster — two draws at once |
 | Flush draw | 9 | 13 of a suit − 4 you can see |
 | Open-ended straight draw | 8 | Four cards on each end |
@@ -93,7 +93,7 @@ Counting outs is only useful once you turn them into a percentage you can compar
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Outs | Turn only (1 card) | By the river (2 cards) | River odds |
-|------|------|------|------|
+|:---|:---:|:---:|:---:|
 | 2 | 4.3% | 8.4% | 11-to-1 |
 | 4 | 8.5% | 16.5% | 5-to-1 |
 | 6 | 12.8% | 24.1% | 3.1-to-1 |
@@ -126,7 +126,7 @@ There's one place the rule lies: **high out counts on the flop.** Because ×4 do
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Outs | Rule says (×4) | True by river | Off by |
-|------|------|------|------|
+|:---|:---:|:---:|:---:|
 | 8 | 32% | 31.5% | +0.5% |
 | 9 | 36% | 35.0% | +1% |
 | 12 | 48% | 45.0% | +3% |

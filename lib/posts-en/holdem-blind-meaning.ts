@@ -96,7 +96,7 @@ Stakes are written **SB/BB**. A "$1/$2" game means a $1 small blind and a $2 big
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Stakes | Small Blind | Big Blind | Typical buy-in |
-|--------|-------------|-----------|----------------|
+|:---|:---:|:---:|:---:|
 | $0.5/$1 | $0.50 | $1 | $60–$100 |
 | $1/$2 | $1 | $2 | $100–$300 |
 | $2/$5 | $2 | $5 | $200–$500 |
@@ -152,7 +152,7 @@ A **blind steal** is a raise made to win the blinds when the table has folded ar
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Position | Steal frequency | Sizing | Notes |
-|----------|----------------|--------|-------|
+|:---|:---|:---:|:---|
 | Button (BTN) | High — only SB/BB left | 2–2.5 BB | Best steal seat; always consider it |
 | Cutoff (CO) | Medium-high | 2.5 BB | One extra player behind vs BTN |
 | Small Blind | N/A to steal | — | You *are* the blind; focus on defense |

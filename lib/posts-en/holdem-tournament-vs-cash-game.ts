@@ -85,7 +85,7 @@ In a tournament, ==r:doubling your chip stack does **not** double your real-mone
 Imagine a 10-player tournament where everyone pays $100.
 
 | Finish | Prize |
-|------|------|
+|:---|:---:|
 | 1st | $500 |
 | 2nd | $300 |
 | 3rd | $200 |
@@ -169,7 +169,7 @@ For tournaments, many players use **50-100+ buy-ins**, and large-field MTTs can 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Format | Beginner bankroll guideline | Why |
-|------|------|------|
+|:---|:---:|:---|
 | Cash game | ==g:20-40 buy-ins== | Lower variance, reloads available |
 | Small sit-and-go | 40-60 buy-ins | More payout variance |
 | Large-field MTT | ==r:100+ buy-ins== | Long no-cash stretches are normal |

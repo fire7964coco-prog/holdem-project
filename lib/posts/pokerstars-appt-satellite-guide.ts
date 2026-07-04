@@ -192,7 +192,7 @@ APPT Korea 기간 파라다이스시티 내 숙박은 조기 마감됩니다.
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.25);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | 이벤트 | 날짜 | 바이인 | GTD |
-|---|---|---|---|
+|:---|:---:|:---:|:---:|
 | Paradise City Kickoff | 9/3~4 | ==**₩600K**== ($420) | ₩75M GTD |
 | Mystery Bounty | 9/4~6 | ₩900K ($630) | ₩150M GTD |
 | 20/15/10 Multi Flight Challenge | 9/6 | ₩500K ($350) | ₩50M GTD |

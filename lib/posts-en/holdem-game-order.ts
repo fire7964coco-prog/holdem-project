@@ -49,7 +49,7 @@ The **blinds** are forced bets posted before the cards are dealt. Without them, 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Blind | Position | Example |
-|------|------|------|
+|:---|:---|:---:|
 | Small Blind (SB) | First seat left of the button | 1,000 |
 | Big Blind (BB) | Second seat left of the button | 2,000 |
 
@@ -169,7 +169,7 @@ The memory trick: ==**before the flop, look left of the big blind; after the flo
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Stage | What happens | Community cards | Betting? |
-|------|------|------|------|
+|:---|:---|:---:|:---|
 | Blinds | SB and BB post forced bets | 0 | Forced |
 | Preflop | Two hole cards dealt → bet | 0 | ✅ |
 | Flop | Three community cards revealed | 3 | ✅ |

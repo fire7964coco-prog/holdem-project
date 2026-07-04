@@ -44,7 +44,7 @@ Here's the master chart. The trick most sites skip: there are ==two different nu
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Hand | 5-card odds (dealt) | Hold'em odds (by river) |
-|------|------|------|
+|:---|:---:|:---:|
 | Royal Flush | 1 in 649,740 (0.000154%) | 1 in 30,940 (0.0032%) |
 | Straight Flush | 1 in 72,193 (0.00139%) | 1 in 3,590 (0.0279%) |
 | Four of a Kind | 1 in 4,165 (0.0240%) | 1 in 595 (0.168%) |
@@ -74,7 +74,7 @@ Notice how the order never changes — the rarer a hand is to make, the higher i
 Before any flop, there are exactly **1,326 possible two-card starting hands**. Here's how often the ones people ask about show up.
 
 | Starting hand | Odds | How often |
-|------|------|------|
+|:---|:---:|:---|
 | A specific pocket pair (e.g. A-A) | 1 in 221 (0.45%) | Once every ~221 hands |
 | **Any** pocket pair | 1 in 17 (5.9%) | Roughly twice an hour live |
 | A-K suited (specific) | 1 in 332 (0.30%) | Rare |
@@ -92,7 +92,7 @@ This is the table most odds pages bury or split across a dozen articles. These a
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | You flop… | Holding | Odds | Against |
-|------|------|------|------|
+|:---|:---|:---:|:---:|
 | A set (or better) | A pocket pair | 11.8% | ~7.5 to 1 |
 | A flush | Two suited cards | 0.84% | ~118 to 1 |
 | A flush draw | Two suited cards | 10.9% | ~8 to 1 |
@@ -114,7 +114,7 @@ You have a draw on the flop. How often do you complete it? It all comes down to 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Draw | Outs | Flop → river (2 cards) | Turn → river (1 card) |
-|------|------|------|------|
+|:---|:---:|:---:|:---:|
 | Flush + open-ended (combo) | 15 | 54.1% | 32.6% |
 | Flush + gutshot | 12 | 45.0% | 26.1% |
 | Flush draw | 9 | 35.0% | 19.6% |
@@ -191,7 +191,7 @@ A common myth: "a royal flush beats everything, so it can be *tied*." Two royal 
 Some numbers exist mostly to explain the worst night of your poker life.
 
 | Long shot | Odds |
-|------|------|
+|:---|:---:|
 | Being dealt pocket aces | 1 in 221 |
 | Flopping quads with a pocket pair | 1 in 407 |
 | Flopping a straight flush (suited connectors) | ~1 in 4,900 |

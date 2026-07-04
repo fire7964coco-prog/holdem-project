@@ -31,7 +31,7 @@ Start here. This is the entire hierarchy, strongest to weakest, with the long-ru
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | # | Hand | Also called | What it is | Odds (by river) |
-|------|------|------|------|------|
+|:---|:---|:---|:---|:---:|
 | **1** | Royal Flush | "Broadway flush" | A-K-Q-J-10, one suit | 0.0032% |
 | **2** | Straight Flush | "Steel wheel" (A-5) | 5 in sequence, one suit | 0.0279% |
 | **3** | Four of a Kind | "Quads" | Four cards of one rank | 0.168% |

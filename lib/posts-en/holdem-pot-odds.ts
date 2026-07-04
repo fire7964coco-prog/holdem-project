@@ -69,7 +69,7 @@ Old-school players talk in ratios ("I'm getting 4-to-1"); modern players think i
 The conversion is one step: a ratio of **X-to-1** means you need **1 ÷ (X + 1)** as a percentage.
 
 | You're getting… | Equity you need |
-|------|------|
+|:---|:---:|
 | 1-to-1 | 50% |
 | 2-to-1 | 33% |
 | 2.5-to-1 | 28.6% |
@@ -91,7 +91,7 @@ Here's the shortcut that lives in your head at the table. Your required equity d
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Opponent bets | You're getting | Equity you need |
-|------|------|------|
+|:---|:---:|:---:|
 | ¼ pot | 5-to-1 | 16.7% |
 | ⅓ pot | 4-to-1 | 20% |
 | ½ pot | 3-to-1 | 25% |
@@ -113,7 +113,7 @@ Now connect the price to your hand. [Count your **outs**](/en/blog/holdem-outs "
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Your draw | Outs | Equity, 1 card | Equity, 2 cards |
-|------|------|------|------|
+|:---|:---:|:---:|:---:|
 | Flush + open-ender | 15 | 32.6% | 54.1% |
 | Flush draw | 9 | 19.6% | 35.0% |
 | Open-ended straight | 8 | 17.4% | 31.5% |

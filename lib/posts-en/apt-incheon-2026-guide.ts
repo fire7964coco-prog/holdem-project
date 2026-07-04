@@ -78,7 +78,7 @@ And for international visitors: ==g:most Western passport holders enter Korea vi
 <div style="overflow-x:auto;margin:20px 0">
 
 | Event | Dates | Buy-In (USD) | GTD (USD) |
-|---|---|---|---|
+|:---|:---|:---:|:---:|
 | Korea National Cup | Aug 7–8 | ~$477 | ~$136K |
 | Mystery Bounty Hunter | Aug 8–9 | ~$610 | ~$204K |
 | APT Super High Roller | Aug 8–9 | ==r:~$10,200== | ~$340K |
@@ -147,7 +147,7 @@ Paradise City isn't a standalone casino — it's an ==**integrated resort built 
 Paradise City runs its own complimentary transfer from the airport:
 
 | Option | Journey | Cost | Notes |
-|---|---|---|---|
+|:---|:---:|:---|:---|
 | ==g:**Free shuttle (from T1)**== | ==g:~10 min== | ==g:Free== | Best option — Gate 3C or 14C, every 30 min (5am–11pm) |
 | Free shuttle (from T2) | ~20 min | Free | Gate 2A, every 60 min |
 | Taxi from T1 | ~15–20 min | ~$15–20 | Metered, available 24/7 |
@@ -168,7 +168,7 @@ You can stay at the casino hotel the whole trip — play your sessions, sleep, r
 <div style="overflow-x:auto;margin:14px 0">
 
 | Route | Destination | Journey | Cost |
-|---|---|---|---|
+|:---|:---|:---:|:---:|
 | ==g:**Free shuttle → T1 → AREX Express**== | ==g:Seoul Station== | ==g:~53 min== | ==g:~₩11,000 (~$8)== |
 | Free shuttle → T1 → AREX All-Stop | Hongdae (Hongik Univ.) | ~70 min | ~₩4,750 (~$3.50) |
 | Airport Bus 6001 | Myeongdong / City Hall | ~60 min | ~₩17,000 (~$13) |
@@ -265,7 +265,7 @@ Here's what to do with 1–3 free days:
 <div style="overflow-x:auto;margin:20px 0">
 
 | Item | Budget Range |
-|---|---|
+|:---|:---:|
 | Return flights (from major Asian hubs) | $200–$600 |
 | Return flights (from USA/Europe) | $700–$1,400 |
 | Hotel near tournament (Paradise City) | $150–$350/night |

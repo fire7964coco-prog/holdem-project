@@ -91,7 +91,7 @@ The all-in player can only win what they put in multiplied by the number of call
 This is where it gets complicated — and where most beginners get lost.
 
 | Player | Stack | Goes all-in for |
-|--------|-------|----------------|
+|:---|:---:|:---:|
 | A | 100 | 100 |
 | B | 200 | 200 |
 | C | 500 | 500 |
@@ -100,7 +100,7 @@ This is where it gets complicated — and where most beginners get lost.
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Pot | Amount | Eligible players |
-|-----|--------|-----------------|
+|:---|:---:|:---|
 | Main pot | 100 × 4 = **400** | A, B, C, D |
 | Side pot 1 | 100 × 3 = **300** | B, C, D (A is capped) |
 | Side pot 2 | 300 × 2 = **600** | C, D (A and B capped) |
@@ -163,7 +163,7 @@ Combined increments: $4 + $7 = **$11** — that meets the $10 minimum raise thre
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | B's all-in | C's all-in | Combined increment | Reopens for A? |
-|---|---|---|---|
+|:---|:---:|:---|:---|
 | $14 (+$4) | $18 (+$4) | $8 — below $10 | ❌ No |
 | $14 (+$4) | $21 (+$7) | $11 — meets $10 | ✅ Yes |
 | $15 (+$5) | $25 (+$10) | $15 — meets $10 | ✅ Yes |

@@ -53,7 +53,7 @@ At a full nine-handed table, positions run clockwise from the dealer button. Pre
 ![Nine-handed poker table with chip stacks at every seat and the dealer button marked D in front of one player](/images/holdem-button-position-hero.webp "The dealer button sets every seat's position and the order of play")
 
 | Seat | Abbr | Zone | Preflop | Postflop |
-|------|------|------|---------|----------|
+|:---|:---|:---|:---:|:---:|
 | Under the Gun | **UTG** | Early | 1st (first) | 3rd |
 | Under the Gun +1 | **UTG+1** | Early | 2nd | 4th |
 | Under the Gun +2 | **UTG+2** | Early | 3rd | 5th |
@@ -107,7 +107,7 @@ The two most profitable seats at any poker table.
 **Opening range: ~40%** — any pair, most suited hands, all broadway combos, suited connectors down to 32s.
 
 | Position | Zone | Opens | Key Edge |
-|----------|------|-------|----------|
+|:---|:---|:---:|:---|
 | UTG–UTG+2 | Early | ~12% | Must be strong enough to play vs 6 players |
 | LJ–HJ | Middle | 16–20% | Widen as field shrinks |
 | CO | Late | ~28% | Only BTN has position postflop |
@@ -199,7 +199,7 @@ The same hand plays completely differently depending on your seat. Here is how t
 Here is the one-line practical guide for each position when the action folds around to you:
 
 | Seat | Open % | The default play |
-|------|--------|-----------------|
+|:---|:---:|:---|
 | UTG | ~12% | Open only premium hands; fold anything marginal without hesitation |
 | UTG+1 | ~13% | Nearly identical to UTG; a small step wider on suited connectors |
 | UTG+2 | ~15% | Start adding medium pairs and suited aces |
@@ -269,7 +269,7 @@ These BB/100 figures are approximate averages from large poker database studies 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Position | Avg BB/100 (6-max) | Relative to BB |
-|----------|-------------------|----------------|
+|:---|:---:|:---|
 | Button (BTN) | +8 to +12 | Best seat |
 | Cutoff (CO) | +4 to +6 | 2nd best |
 | Hijack (HJ) | +1 to +3 | Slightly above break-even |
