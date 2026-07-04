@@ -87,6 +87,8 @@ Two related numbers people ask about:
 
 ## Flush Odds: Made vs Draw vs Complete
 
+![Ace-king of hearts with a queen-seven of hearts flop on green felt, a flopped nine-out flush draw beside a short stack of chips](/images/holdem-drawing-odds-flush-draw.webp "Two hearts in hand, two on the flop — a flush draw, not a made flush: 10.9% to flop, 35% to complete by the river")
+
 This is where competitors blur three completely different numbers. With two suited cards in your hand, there are **three separate questions**, and they're an order of magnitude apart:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
