@@ -84,6 +84,8 @@ There's a second, quieter benefit: raising **denies equity** to the blinds. If y
 
 Here's where the dogma goes too far. Limping is *not* always wrong — the honest, modern answer is that **open-limping first-in is almost always a mistake, but several specific spots are legitimate exceptions:**
 
+![Several players have limped into the same hand, so multiple small stacks of chips sit pushed forward around the green felt in a cheap multiway pot](/images/holdem-limping-multiway.webp "Over-limping behind other players into a cheap multiway pot is where speculative hands like small pairs can actually pay off")
+
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Spot | Why limping is fine here |
