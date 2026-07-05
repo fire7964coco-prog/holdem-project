@@ -17,10 +17,11 @@
 | 3 Odds & Math | ✅ | 3/5 | implied-odds·equity (2편이면 완성) |
 | **4 Strategy** | ❌ 미발행 | 3/9 | **허브 `holdem-strategy` 발행 + 클러스터** ← 최대 공백 |
 | 5 Tournament | ✅ | 5/8 | 고아 2개(wpt·ept) 내부링크 복구, (상시)ICM·bubble·short-stack |
-| **6 Glossary** | ❌ 미발행 | **5/7** | ✅fish·cooler·bad-beat발행. **용어 계속(slowroll·nuts·tilt) + 허브 `holdem-glossary`** |
+| **6 Glossary** | ✅ 허브발행 | **허브+5** | ✅허브 holdem-glossary+fish·cooler·bad-beat·straddle·rake. **Glossary 필라 완성구조. 확장=slowroll·nuts·tilt(선택)** |
 
 ### 🏁 발행 우선순위 (롱테일 1등 속도순 — 로드맵 기반)
-1. **Glossary 계속** (최저경쟁·1등 가장 빠름): ~~`fish`(390·LDA3)✅~~ → ~~`cooler`(390)✅~~ → ~~`bad beat`(320)✅~~ → `slow roll`(590) → `nuts`·`tilt`. **5개 쌓임 → 이제 허브 `holdem-glossary`(A-Z) 발행 고려 시점.**
+1. ~~**Glossary**~~ ✅ **허브+5클러스터 완성**(fish·cooler·bad-beat·straddle·rake+허브). 확장은 선택(slow roll 590·nuts·tilt). **📌후속(선택): 개별 5글 첫링크를 허브로 역링크(맵§3.3).**
+2. **다음 필라로 이동 권장** → **Strategy**(허브 미발행=최대 공백, limping 590·LDA8부터) or **Odds 마무리**(implied-odds·equity 2편).
 2. **Strategy 착수** (허브 미발행=최대 공백): `limping`(590·**LDA8**·단독승산최상) 먼저 → 허브 `holdem-strategy` → `holdem-3bet`(1600)·c-bet(`holdem-continuation-bet`)·`holdem-when-to-fold`·`holdem-check-raise`·`holdem-bluff-spot`(KO필라slug 정합).
 3. **Odds 마무리**: `holdem-implied-odds`·`holdem-equity`. (rule-of-2-and-4는 보류=중복)
 4. **Hand Rankings 심화**: `holdem-kicker`·`holdem-what-beats-what`.

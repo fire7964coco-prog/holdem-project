@@ -35,7 +35,7 @@ KO 11필라를 복제하지 않고 EN 검색시장 기준으로 재편. `holdem-
 | 3 | Odds & Math | `holdem-probability` (신규 허브) | 계산 | **매우높음** | **낮음** | ❌ 비어있음 |
 | 4 | Strategy & Play | `holdem-strategy` (신규 허브) | 스팟판단 | **무한** | 높음 | 껍데기 △ |
 | 5 | Tournament | `holdem-tournament` | 정보+로컬 | 중 | 중 | 강함 ✅ |
-| 6 | Glossary / Terms | `holdem-glossary` (신규 허브) | 즉답 정의 | **극단적** | **최저** | ❌ 없음 |
+| 6 | Glossary / Terms | `holdem-glossary` (허브) | 즉답 정의 | **극단적** | **최저** | ✅ 허브+5클러스터 |
 
 > 롱테일 1등이 **가장 빠른 곳** = 필라 6(Glossary) + 필라 3(Odds). 경쟁 최저·질문 의도 명확·Featured Snippet 먹기 쉬움. → **여기부터 판다.**
 
@@ -100,8 +100,10 @@ KO 11필라를 복제하지 않고 EN 검색시장 기준으로 재편. `holdem-
 - 🆕 holdem-mtt-strategy
 > 이벤트가이드는 시즌성(대회 끝나면 recap 자산화). 상시 트래픽은 ICM·버블·숏스택 클러스터가 담당.
 
-### 필라 6 — Glossary / Terms · hub `holdem-glossary` 🆕 (A-Z 허브)
+### 필라 6 — Glossary / Terms · hub `holdem-glossary` ✅ (A-Z 허브)
+> **허브 발행됨(2026-07-05)**: 카테고리 우선 6분류(베팅·포지션·핸드/보드·플레이어유형·머니/게임·상황) + 상단 "가장 헷갈리는 용어" 8쌍 모듈 + 80여 용어. 경쟁사 flat A-Z와 차별화. 개별글 5개+타필라로 스포크허브 링크. 적대적 팩트체커 80개 정의 전수검증. 📌 후속: 개별 5글 첫링크를 허브로 역링크(§3.3).
 개별 페이지는 **검색량 있는 용어만**(Featured Snippet 타깃), 나머지는 허브에 묶음(thin-content 방지):
+- ✅ **holdem-glossary (허브, poker terms A-Z)** — 발행 2026-07-05
 - ✅ holdem-straddle (what is a straddle 2900) — 발행 2026-07-04. 종류비교표·액션순서·-EV답변. 적대적 룰 팩트체크 통과. 첫링크=blind-meaning(허브 미발행이라 임시). 이미지 4개(가독성)
 - ✅ holdem-rake (what is a rake 1300) — 발행 2026-07-04. 레이크종류비교표·실전계산·rake trap·rakeback·토너fee. 적대적 팩트체크 통과(GGPoker예외·bb/100헷지). 첫링크=tournament-vs-cash-game
 - ✅ holdem-fish (what is a fish 390·**LDA3 최저경쟁**) — 발행 2026-07-05. 플레이어유형 통합표(fish/shark/whale/nit/donkey/calling station/reg/grinder/LAG·TAG)·명언 정확검증("sucker" not "fish", Rounders+격언)·VPIP/PFR 자가진단표. 적대적 팩트체크 **사실오류 0건**. 첫링크=starting-hands-chart(허브 미발행 임시)
@@ -175,6 +177,6 @@ posting.mdc STEP 준수. 롱테일 1등용 필수 체크:
 | 3 Odds & Math | ✅ | 3 / 5 | 허브+pot-odds+outs+drawing-odds. 남은 심화=implied-odds·equity |
 | 4 Strategy | 🆕 | 3 / 9 | 껍데기 |
 | 5 Tournament | ✅ | 5 / 8 | 강함(고아2) |
-| 6 Glossary | 🆕 | 5 / 7 | straddle·rake·fish·cooler·bad-beat 발행. 허브+slowroll·nuts·tilt 남음 |
+| 6 Glossary | ✅ | 허브+5 | 허브 holdem-glossary 발행✅+straddle·rake·fish·cooler·bad-beat. 확장=slowroll·nuts·tilt |
 
 > 글 발행/수정 시 이 표와 §2 트리를 갱신할 것.

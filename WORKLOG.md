@@ -5,6 +5,14 @@
 
 ## 2026-07-05
 
+### EN Glossary 허브 발행 — holdem-glossary (Poker Terms A-Z Hub) 신규 ★필라 완성
+- **필라6 Glossary 허브 발행**(개별글 5개 축적 후 링크주스 집중 적기). "poker terms/glossary/texas holdem terms/slang" 타깃. **이로써 Glossary 필라 = 허브+5클러스터로 완성 구조.**
+- **차별화**: 경쟁사(PokerNews·Upswing·Wikipedia) 전부 flat A-Z 한 덩어리 → 우리는 ①**카테고리 우선 6분류**(베팅액션·포지션·핸드/보드·플레이어유형·머니/게임·상황/스탯/에티켓 — 초보는 단어가 아니라 "상황"으로 검색) + ②상단 **"가장 헷갈리는 용어" 8쌍 모듈**(check vs call·set vs trips·cooler vs bad beat·VPIP vs PFR·3-bet 카운팅·value vs bluff·pot vs implied odds·blind vs ante = Featured Snippet 미끼).
+- 80여 용어 정의 + 개별글/타필라로 촘촘한 내부링크(betting-actions·positions·position-play·game-order·tiebreak·hand-rankings·pot-odds·outs·probability·blind-meaning·all-in·showdown·split-pot·tournament-vs-cash) → **진짜 스포크허브**(개별글로 링크주스 집중).
+- **품질: 적대적 팩트체커 80개 정의 전수검증**. 고위험 개념(3-bet 카운팅=BB1/open2/reraise3·set vs trips·cooler vs bad beat·wheel=최저스트레이트·button/SB/BB 포지션·VPIP≥PFR·gutshot4/openender8아웃) 전부 CORRECT. 필수수정 1건(Big blind 행 문장 깨짐)+선택 1건(whale) 반영.
+- FAQ 8(PAA 정확매칭). :::readnext·Related 4카드·"Where to go next" 링크섹션.
+- 빌드 ✅ **"65 intl posts"**(64→65). category=strategy. seoTitle 54·desc 155자. 커밋 7a5ed5c. ⚠️ **커서 히어로 이미지 1개 필요**: `holdem-glossary-hero`(포커테이블 칩·딜러버튼·커뮤니티카드). 본문 2개는 button-dealer-board·pub-players-table 재사용. 📌**후속(선택)**: 개별 5글 첫링크를 허브로 역링크(맵§3.3 클러스터 정합).
+
 ### EN Glossary #5 — holdem-bad-beat (What Is a Bad Beat in Poker) 신규
 - **필라6 Glossary 5번째(cooler와 대칭 쌍)**. bad beat=320/mo. 적대적 서브에이전트 SERP+PAA 조사 후 착수.
 - 타깃: what is a bad beat·bad beat vs cooler·is a coinflip a bad beat·bad beat jackpot·worst bad beat·more common online·how to deal with·is it bad play. H2 8개 + FAQ 8(PAA 정확매칭).
