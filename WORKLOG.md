@@ -5,6 +5,15 @@
 
 ## 2026-07-05
 
+### EN Glossary #3 — holdem-fish (What Is a Fish in Poker) 신규
+- **필라6 Glossary 3번째**(straddle·rake에 이어). fish=390/mo·**LDA3 = 전 Glossary 최저경쟁** = 롱테일 1등 가장 빠른 타깃. 적대적 서브에이전트로 SERP Top10+PAA 전수조사 후 착수.
+- 타깃: what is a fish·poker fish meaning·how to spot a fish·fish vs shark/whale/donkey·am i the fish·how to stop being a fish·"spot the sucker" 명언. H2 8개(정의·왜물고기·8가지판별신호·플레이어유형 통합표·명언출처·자가진단·탈출법·에티켓) + FAQ 8(PAA 정확매칭).
+- **차별화 시그니처 3개**: ①**"포커 동물원" 통합 비교표**(fish/shark/whale/nit/donkey/calling station/reg/grinder/LAG·TAG를 한 표 = 경쟁사는 2~4개만 정의, Featured Snippet 미끼) ②**명언 정확검증**(경쟁사 다수가 Rounders 대사를 "fish"로 오인용 → 실제="sucker", 영화 이전 격언, 단일저자 없음, Amarillo Slim 2005판이 Buffett "million other fellows"에 크레딧 = E-E-A-T 킬러) ③**VPIP/PFR 자가진단표**(fish 40-70%/PFR<10% 시그니처).
+- **품질: 적대적 팩트체커 = 사실오류 0건**. 최고위험(명언 인용·출처)·플레이어유형 정의·VPIP수치 전부 CORRECT. "경쟁사보다 정확하게 헷지" 평가. 선택보강 2건만 반영(솔리드VPIP 15-22% 정합·Slim 2005판 명시).
+- **정확성 주의(§13 대신 용어정확성)**: whale=fish 부분집합(큰돈), nit≠fish(타이트), donkey=더 모욕적, LAG/TAG=이기는스타일. "don't tap the glass"(fish 겁주지마라) 커버.
+- 첫링크=holdem-starting-hands-chart(fish 탈출=핸드선택, Glossary 허브 미발행이라 임시). straddle·pot-odds·position-play 상호링크. 인라인 썸네일 링크(starting-hands·pot-odds)·:::readnext 2카드·Related 4카드.
+- 빌드 ✅ **"62 intl posts"**(61→62). category=strategy. 커밋 91c33bd. **다음**: Glossary 계속(cooler 390·slow roll 590·bad beat 320) or Strategy limping / 허브 holdem-glossary. ⚠️ **커서 히어로 이미지 1개 생성 필요**: `holdem-fish-hero`(느긋한 레크리에이션 플레이어가 칩 밀어넣고 샤크들이 조용히 관찰). 본문 2개는 기존 실사 재사용(pub-players-table·starting-hands-weak-ace-trap).
+
 ### KO 구버전 7글 EN체 구조 전환 + EN 완성 핸드오프
 - **구버전 인포그래픽 글 7개를 최근 EN 구조로 통일**: 7poker·value-bet-sizing·cbet-strategy·range-meaning·tiebreak-rules·split-pot-rules·hand-rankings-confusing. 각 글: `keepImagesInBody:true`(하단 요약 인포그래픽 제거)·실사 히어로 상단·불릿→`:::stripe`·`:::faqcard` **31개 전부 제거**·본문 차트 인포그래픽 제거→맥락 실사·FAQ `### Qn`/`**Q.**붙은형`→EN식 `**Q.**/A.` 정규화·인라인 썸네일 링크 추가.
 - **부수 발견**: cbet-table·range-position-table 이미지가 실제로 **블랙잭 테이블 사진**이었음 → 포커 실사(button-dealer-board)로 교체. §13 핸드 예시는 전부 보존.

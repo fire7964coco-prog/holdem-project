@@ -9,7 +9,7 @@
 
 **목표**: EN 6필라를 전부 "두꺼움" 상태로 완성 = 롱테일 구글 1등 그물 완성. EN이 마스터라 오류가 12언어로 전파되니 **1편씩 품질 집중**(병렬 초안 금지).
 
-### 📊 현재 EN 상태 (2026-07-05 기준, 발행 26편)
+### 📊 현재 EN 상태 (2026-07-05 기준, 발행 27편)
 | 필라 | 허브 | 발행/목표 | 남은 작업 |
 |---|---|---|---|
 | 1 Rules | ✅ | 5/8 | (선택) dealer-button·check-rules·limit-vs-no-limit |
@@ -17,10 +17,10 @@
 | 3 Odds & Math | ✅ | 3/5 | implied-odds·equity (2편이면 완성) |
 | **4 Strategy** | ❌ 미발행 | 3/9 | **허브 `holdem-strategy` 발행 + 클러스터** ← 최대 공백 |
 | 5 Tournament | ✅ | 5/8 | 고아 2개(wpt·ept) 내부링크 복구, (상시)ICM·bubble·short-stack |
-| **6 Glossary** | ❌ 미발행 | 2/7 | **용어 계속 + 허브 `holdem-glossary`** |
+| **6 Glossary** | ❌ 미발행 | **3/7** | ✅fish발행. **용어 계속(cooler·slowroll·bad-beat) + 허브 `holdem-glossary`** |
 
 ### 🏁 발행 우선순위 (롱테일 1등 속도순 — 로드맵 기반)
-1. **Glossary 계속** (최저경쟁·1등 가장 빠름): `fish`(390·**LDA3**) → `cooler`(390) → `slow roll`(590) → `bad beat`(320) → `nuts`·`tilt`. 몇 개 쌓이면 허브 `holdem-glossary`(A-Z) 발행.
+1. **Glossary 계속** (최저경쟁·1등 가장 빠름): ~~`fish`(390·LDA3)✅발행~~ → `cooler`(390) → `slow roll`(590) → `bad beat`(320) → `nuts`·`tilt`. 몇 개 쌓이면 허브 `holdem-glossary`(A-Z) 발행.
 2. **Strategy 착수** (허브 미발행=최대 공백): `limping`(590·**LDA8**·단독승산최상) 먼저 → 허브 `holdem-strategy` → `holdem-3bet`(1600)·c-bet(`holdem-continuation-bet`)·`holdem-when-to-fold`·`holdem-check-raise`·`holdem-bluff-spot`(KO필라slug 정합).
 3. **Odds 마무리**: `holdem-implied-odds`·`holdem-equity`. (rule-of-2-and-4는 보류=중복)
 4. **Hand Rankings 심화**: `holdem-kicker`·`holdem-what-beats-what`.
