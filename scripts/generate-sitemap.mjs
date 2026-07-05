@@ -27,10 +27,10 @@ const STATIC_ROUTES = [
   { path: "/calculator", priority: "0.95", changefreq: "monthly" },
   { path: "/quiz", priority: "0.85", changefreq: "monthly" },
   { path: "/hand-chart", priority: "0.85", changefreq: "monthly" },
-  { path: "/hands", priority: "0.85", changefreq: "monthly" },
+  // /hands · /rules/texas-holdem 은 noindex(app/.../page.tsx robots index:false) → 사이트맵에서 제외.
+  //   블로그 필라(holdem-hand-rankings 등)와 족보/룰 키워드 카니발라이제이션 방지.
   { path: "/glossary", priority: "0.8", changefreq: "monthly" },
   { path: "/rules", priority: "0.9", changefreq: "monthly" },
-  { path: "/rules/texas-holdem", priority: "0.85", changefreq: "monthly" },
   { path: "/rules/omaha", priority: "0.8", changefreq: "monthly" },
   { path: "/rules/seven-card-stud", priority: "0.8", changefreq: "monthly" },
   { path: "/strategy", priority: "0.85", changefreq: "monthly" },
