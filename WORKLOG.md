@@ -3,6 +3,14 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-05
+
+### KO 구버전 7글 EN체 구조 전환 + EN 완성 핸드오프
+- **구버전 인포그래픽 글 7개를 최근 EN 구조로 통일**: 7poker·value-bet-sizing·cbet-strategy·range-meaning·tiebreak-rules·split-pot-rules·hand-rankings-confusing. 각 글: `keepImagesInBody:true`(하단 요약 인포그래픽 제거)·실사 히어로 상단·불릿→`:::stripe`·`:::faqcard` **31개 전부 제거**·본문 차트 인포그래픽 제거→맥락 실사·FAQ `### Qn`/`**Q.**붙은형`→EN식 `**Q.**/A.` 정규화·인라인 썸네일 링크 추가.
+- **부수 발견**: cbet-table·range-position-table 이미지가 실제로 **블랙잭 테이블 사진**이었음 → 포커 실사(button-dealer-board)로 교체. §13 핸드 예시는 전부 보존.
+- Playwright로 7글 전수 렌더 검증(오류 0, 완전렌더).
+- **핸드오프 재구성**: 다음 세션 최우선 = **EN 포스팅 완성**(6필라, 우선순위=Glossary 계속·Strategy 착수). KO 수정은 후순위(틈틈이).
+
 ## 2026-07-04
 
 ### 전 글 표 정렬 통일 + KO readnext 전면 확대 (EN 기준화)

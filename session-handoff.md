@@ -5,33 +5,46 @@
 
 ---
 
-## ⭐ 다음 세션 착수 (최우선) — 기존 발행 포스트 하나씩 업데이트
+## ⭐ 다음 세션 착수 (최우선) — EN 포스팅 완성 (6필라 채우기)
 
-**작업 성격**: 신규 발행이 아니라, **이미 발행된 글을 한 편씩 최신 품질 기준으로 업데이트(검수·강화)**. 한 세션에 한 글씩 정독 업그레이드.
+**목표**: EN 6필라를 전부 "두꺼움" 상태로 완성 = 롱테일 구글 1등 그물 완성. EN이 마스터라 오류가 12언어로 전파되니 **1편씩 품질 집중**(병렬 초안 금지).
 
-### 🎯 첫 대상 = `holdem-vs-7poker-hand-rankings`
-- URL: https://www.holdemmaster.com/blog/holdem-vs-7poker-hand-rankings
-- 위치: **`lib/posts.ts` (KO LEGACY)** — 첫 번째 포스트(대략 69행~). ⚠️ posts.ts는 다중 포스트 단일 파일이니 해당 slug 세그먼트만 수정.
-- 현재 상태 브리핑:
-  - title "홀덤 족보 vs 7포커 족보 — 같아 보이지만 다른 결정적 차이 3가지", category 초보 가이드, **readTime 18분(김)**, date 2026-04-07 / updated 2026-07-02
-  - 히어로/요약 이미지 = `/images/7poker-vs-holdem-summary-card.webp` (**인포그래픽 요약카드** — 도입부 `:::faqcard`로도 사용). ⚠️ 사이트 규칙은 실사 선호 → 이미지 맥락·품질 점검 대상
-  - **핸드 예시 다수**(플러시 무늬비교·스다하클·마운틴·키커) → §13 베스트5장 검산 1순위
-  - ✅ 전역 작업은 이미 반영됨: **표 정렬·형광 골드박스·FAQ 앞 readnext는 전 글 완료**(이 글도 포함) → 새 세션은 이걸 다시 안 해도 됨
+### 📊 현재 EN 상태 (2026-07-05 기준, 발행 26편)
+| 필라 | 허브 | 발행/목표 | 남은 작업 |
+|---|---|---|---|
+| 1 Rules | ✅ | 5/8 | (선택) dealer-button·check-rules·limit-vs-no-limit |
+| 2 Hand Rankings | ✅ | 4/6 | kicker·what-beats-what |
+| 3 Odds & Math | ✅ | 3/5 | implied-odds·equity (2편이면 완성) |
+| **4 Strategy** | ❌ 미발행 | 3/9 | **허브 `holdem-strategy` 발행 + 클러스터** ← 최대 공백 |
+| 5 Tournament | ✅ | 5/8 | 고아 2개(wpt·ept) 내부링크 복구, (상시)ICM·bubble·short-stack |
+| **6 Glossary** | ❌ 미발행 | 2/7 | **용어 계속 + 허브 `holdem-glossary`** |
 
-### 📋 "업데이트" = 이 순서로 (per-post 업그레이드 프로토콜)
-> 전역으로 끝난 것(표정렬·형광박스·readnext)은 제외하고, **글 하나에 대해** 아래를 정독 점검·강화:
-1. **§13 포커 사실 검산** (최우선) — 모든 핸드 예시 베스트5장 조합·비교, 룰/수치. 7포커 차이 주장(무늬 서열·키커·마운틴=A-K-Q-J-10 등) 팩트체크. 필요시 적대적 서브에이전트.
-2. **SEO 메타 CTR** — seoTitle/desc/title이 호기심훅+키워드인지 재평가(정보형이면 훅 보강, CTR 훅은 유지).
-3. **이미지 맥락·품질** — 인포그래픽→실사 교체 검토, 한글깨짐·용량(≤60/80KB)·1200×675·alt 구체성. 긴 글이니 **가독성용 본문 이미지 배치**(억지 X, memory: 이미지=가독성). 필요시 커서 생성.
-4. **내부링크** — trailing slash 없음(`/blog/x`), 참조 slug 실존, 첫링크=필라, 양방향.
-5. **경험담(E-E-A-T)** 유지·강화, **신선도** `updated`를 작업일로 갱신.
-6. **모바일·속도** 점검(히어로 LCP·본문총합·치수), 빌드→커밋→(사용자)GSC 색인요청.
-7. WORKLOG·이 핸드오프에 "다음 업데이트 대상" 갱신.
+### 🏁 발행 우선순위 (롱테일 1등 속도순 — 로드맵 기반)
+1. **Glossary 계속** (최저경쟁·1등 가장 빠름): `fish`(390·**LDA3**) → `cooler`(390) → `slow roll`(590) → `bad beat`(320) → `nuts`·`tilt`. 몇 개 쌓이면 허브 `holdem-glossary`(A-Z) 발행.
+2. **Strategy 착수** (허브 미발행=최대 공백): `limping`(590·**LDA8**·단독승산최상) 먼저 → 허브 `holdem-strategy` → `holdem-3bet`(1600)·c-bet(`holdem-continuation-bet`)·`holdem-when-to-fold`·`holdem-check-raise`·`holdem-bluff-spot`(KO필라slug 정합).
+3. **Odds 마무리**: `holdem-implied-odds`·`holdem-equity`. (rule-of-2-and-4는 보류=중복)
+4. **Hand Rankings 심화**: `holdem-kicker`·`holdem-what-beats-what`.
+5. **Tournament**: wpt/ept 고아 복구 + `holdem-icm`·`holdem-bubble` 상시 클러스터.
+6. **Rules 보강**(선택): dealer-button 등.
 
-### 워크플로우(사용자 선호)
-리서치/검증은 적대적 서브에이전트 병렬, 초안·판단은 메인, 이미지는 커서. 매 글 **한국어 2~3줄 요약** 첨부. 방향 게이트 후 착수.
+### ✅ 신규 EN 글 필수 구조 (이번 세션에 확립된 "최신 표준" — 전부 지킬 것)
+`실사 히어로(keepImagesInBody:true, ≤60KB)` → `도입 경험담(E-E-A-T)` → `:::stripe 핵심스탯` → `H2 + 시그니처 비교표(경쟁사 없는 통합표)` → `표는 자동 정렬+형광박스(전역 CSS, 손댈 것 없음)` → `가독성용 본문 실사 2~3개` → `FAQ앞 :::readnext[Keep reading] 2카드` → `FAQ **Q.**/A.(PAA 정확매칭 6~8)` → `Related Posts 그리드`. 첫 내부링크=필라, **인라인 썸네일 링크**(`"thumb:/images/x.webp"`) 1~2개.
 
-**⚠️ 새 세션 첫 메시지에서 이 블록부터 읽고 `holdem-vs-7poker-hand-rankings` 업데이트로 바로 착수할 것.**
+### 🛠️ 워크플로우 (사용자 선호 = 필라 단위 스프린트)
+`[A]리서치(SERP·PAA 적대적 서브에이전트 or 키워드뱅크)` → `[B]사용자 방향 게이트(각도 승인)` → `[C]초안 1편(메인, §13 검산+내부링크 첫링크=필라)` → `[D]적대적 서브에이전트 §13/팩트체크` → `[E]커서 이미지(프롬프트는 Claude, 생성은 커서)` → `[F]빌드·커밋·GSC 색인` → 맵§7·WORKLOG 갱신. 매 글 **한국어 2~3줄 요약** 첨부.
+
+### 📚 먼저 읽을 문서
+`docs/en-blog-pillar-cluster-map.md`(구조 마스터·§7 진행표) → `docs/keyword-bank/00-SYNTHESIS-roadmap.md`(발행 우선순위) → `docs/keyword-bank/en-*.md`(시드별 키워드+승산). memory도 확인.
+
+**⚠️ 새 세션: 이 블록부터 읽고 → 위 우선순위 1(Glossary `fish`) 또는 2(Strategy `limping`)로 리서치[A]부터 착수. 각도 게이트에서 사용자 승인 후 초안.**
+
+---
+
+## 🔵 후순위 — KO 구버전 글 업데이트 (시간날 때 조금씩)
+
+**사용자 지시(2026-07-05)**: KO 수정은 서두르지 않고 틈틈이. EN 완성이 우선.
+- ✅ **구버전 7글 EN체 구조 전환 완료**(7poker·value-bet·cbet·range-meaning·tiebreak·split-pot·hand-rankings-confusing): keepImagesInBody·실사히어로·:::stripe·:::faqcard전부제거·FAQ정규화·인라인썸네일. 블랙잭사진 2개 교체.
+- **남은 KO 작업**(틈틈이): ① 위 7글의 §13 사실검산·SEO메타 심화 검수 ② 다른 구버전 KO글(인포그래픽 남은 것) 동일 전환 ③ readnext 썸네일 일부 범용이미지 교체.
 
 ---
 
