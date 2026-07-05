@@ -74,6 +74,8 @@ When you open-limp, you give up a surprising amount. Here's exactly what:
 
 ## Why Raising First-In Beats Limping
 
+![A visual guide showing three options — RAISE highlighted in gold with a check mark, LIMP marked in red with a warning, and FOLD in neutral grey](/images/holdem-limping-raise-or-fold.webp "The default that keeps you ahead of the field: raise or fold first-in, and treat the open-limp as the option to avoid")
+
 The whole case for raising instead of limping comes down to one asymmetry: **a raise can win the pot right now; a limp never can.** When you open-raise, you're giving yourself *two* ways to win — everyone folds preflop, or you take it later with the initiative of the aggressor. Limping leaves you only the second, harder path, and strips away the fold equity that makes preflop aggression profitable.
 
 There's a second, quieter benefit: raising **denies equity** to the blinds. If you limp, the big blind gets to see the flop cheaply with whatever random hand they were dealt, and sometimes it cracks you. A raise charges them to continue and often folds them out entirely, so their junk never gets the chance to outdraw you. That's why "raise or fold" is the default a strong player lives by — and why entering with a raise pairs so naturally with a disciplined [starting-hand range](/en/blog/holdem-starting-hands-chart).
