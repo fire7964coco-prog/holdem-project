@@ -13,7 +13,7 @@ export const POST: Post = {
   readTime: "10 min",
   emoji: "🧊",
   image: "/images/holdem-cooler-hero.webp",
-  imageAlt: "A stunned player turning over a full house at showdown only to see an opponent calmly reveal an even bigger hand across the felt",
+  imageAlt: "A stunned poker player with his hand on his head after losing a big pot, watching his opponent pull a tall stack of chips across the green felt",
   tags: ["cooler", "what is a cooler in poker", "cooler vs bad beat", "poker cooler meaning", "poker setup", "got coolered", "set over set", "cooler hand examples"],
   content: `
 I still remember the hand that taught me the word. I flopped a set of kings, got it all in on the turn, and turned my cards over already reaching for the pot — then watched my opponent flip up a set of aces. I hadn't done anything wrong. There was no bad play to regret, no draw I should have folded to. I'd been beaten from the moment the chips went in, and there was ==nothing I could have done about it==. That's a cooler, and once you understand it, you stop blaming yourself for the losses that were never yours to avoid.
