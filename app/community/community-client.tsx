@@ -451,7 +451,9 @@ export default function CommunityClient({
   // 뒤로가기로 재진입해 피드가 렌더된 뒤 복원한다.
   const feedScrollRef = useRef<HTMLDivElement>(null);
   const scrollRestoredRef = useRef(false);
+  const restoringRef = useRef(false); // 복원 중에는 저장 잠금(프로그램적 스크롤이 저장값 덮어쓰기 방지)
   const SCROLL_KEY = `feedScroll:${pageLocale ?? "ko"}`;
+  const OFFSET_KEY = `feedOffset:${pageLocale ?? "ko"}`; // 로드했던 커뮤니티 글 수(무한스크롤 깊이)
 
   // 외부 링크(블로그 CTA 등)에서 ?tab=event 로 진입 시 해당 탭 바로 열기
   useEffect(() => {
@@ -544,15 +546,22 @@ export default function CommunityClient({
       setCurrentUser(currentUserData);
       setMyLanguage(lang);
 
-      // 커뮤니티 글 fetch (초기 PAGE_SIZE개만)
+      // 커뮤니티 글 fetch — 뒤로가기 재진입 시 이전에 무한스크롤로 로드했던
+      // 만큼(savedOffset) 한 번에 불러와 스크롤 높이를 그대로 재구성한다. (최대 500개 캡)
       const adminLang = pageLocale ?? lang;
+      let savedOffset = PAGE_SIZE;
+      try {
+        savedOffset = Math.min(Math.max(PAGE_SIZE, Number(sessionStorage.getItem(OFFSET_KEY)) || PAGE_SIZE), 500);
+      } catch { /* sessionStorage 접근 불가 시 기본값 */ }
       const { data: postsRaw } = await supabase
         .from("posts")
         .select("id, type, language, title, content, image_url, like_count, comment_count, created_at, author_id, profiles(nickname, avatar_url, badge)")
         .or(`type.eq.community,and(type.eq.admin,language.eq.${adminLang})`)
         .order("created_at", { ascending: false })
-        .range(0, PAGE_SIZE - 1);
-      if ((postsRaw?.length ?? 0) < PAGE_SIZE) setHasMore(false);
+        .range(0, savedOffset - 1);
+      if ((postsRaw?.length ?? 0) < savedOffset) setHasMore(false);
+      setCommunityOffset(savedOffset);
+      try { sessionStorage.setItem(OFFSET_KEY, String(savedOffset)); } catch { /* noop */ }
 
       // 좋아요 목록
       let likedIds: string[] = [];
@@ -684,8 +693,9 @@ export default function CommunityClient({
       });
     }
     setCommunityOffset(prev => prev + PAGE_SIZE);
+    try { sessionStorage.setItem(OFFSET_KEY, String(communityOffset + PAGE_SIZE)); } catch { /* noop */ }
     setLoadingMore(false);
-  }, [hasMore, loadingMore, tab, communityOffset, myLanguage, currentUser, pageLocale]);
+  }, [hasMore, loadingMore, tab, communityOffset, myLanguage, currentUser, pageLocale, OFFSET_KEY]);
 
   // IntersectionObserver — sentinel 400px 전에 미리 로드 (딜레이 없음)
   useEffect(() => {
@@ -708,9 +718,10 @@ export default function CommunityClient({
     let raf = 0;
     const save = () => {
       raf = 0;
+      if (restoringRef.current) return; // 복원 중 프로그램적 스크롤은 저장하지 않음
       // 활성 스크롤러: 모바일=내부 div(scrollTop>0), 데스크톱=window
       const top = el && el.scrollTop > 0 ? el.scrollTop : window.scrollY;
-      try { sessionStorage.setItem(SCROLL_KEY, String(top)); } catch {}
+      try { sessionStorage.setItem(SCROLL_KEY, String(top)); } catch { /* noop */ }
     };
     const onScroll = () => { if (!raf) raf = requestAnimationFrame(save); };
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -722,28 +733,63 @@ export default function CommunityClient({
     };
   }, [tab, loading, SCROLL_KEY]);
 
-  // 스크롤 위치 복원 (피드 로드 완료 후 1회) — 콘텐츠 높이가 찰 때까지 rAF 대기
+  // 스크롤 위치 복원 (피드 로드 완료 후 1회)
+  // ① 콘텐츠 높이가 저장 위치만큼 찰 때까지 rAF 대기(무한스크롤 재구성/렌더 대기)
+  // ② 이미지 지연 로딩으로 높이가 밀리는 것을 보정하려 잠시 재적용
+  // ③ 단, 사용자가 직접 스크롤(휠/터치/키)하면 즉시 보정 중단(방해 방지)
   useEffect(() => {
     if (loading || tab !== "home" || scrollRestoredRef.current) return;
     scrollRestoredRef.current = true;
     let saved = 0;
-    try { saved = Number(sessionStorage.getItem(SCROLL_KEY) || "0"); } catch {}
+    try { saved = Number(sessionStorage.getItem(SCROLL_KEY) || "0"); } catch { /* noop */ }
     if (saved <= 0) return;
+
+    restoringRef.current = true;
+    let userTookOver = false;
+    const onUserScroll = () => { userTookOver = true; restoringRef.current = false; };
+    window.addEventListener("wheel", onUserScroll, { passive: true });
+    window.addEventListener("touchmove", onUserScroll, { passive: true });
+    window.addEventListener("keydown", onUserScroll);
+
+    const apply = () => {
+      const el = feedScrollRef.current;
+      if (el) el.scrollTop = saved;   // 모바일 내부 컨테이너
+      window.scrollTo(0, saved);       // 데스크톱 window (비활성 레이아웃엔 무해)
+    };
+
     let tries = 0;
-    const restore = () => {
+    const rafRestore = () => {
+      if (userTookOver) return;
       const el = feedScrollRef.current;
       const maxContainer = el ? el.scrollHeight - el.clientHeight : 0;
       const maxWindow = document.documentElement.scrollHeight - window.innerHeight;
-      // 콘텐츠가 저장 위치만큼 자랐거나(무한스크롤 로드 대기), 시도 한계 도달 시 복원
-      if (Math.max(maxContainer, maxWindow) >= saved || tries > 40) {
-        if (el) el.scrollTop = saved;   // 모바일 내부 컨테이너
-        window.scrollTo(0, saved);       // 데스크톱 window (비활성 레이아웃엔 무해)
+      if (Math.max(maxContainer, maxWindow) >= saved || tries > 80) {
+        apply();
         return;
       }
       tries++;
-      requestAnimationFrame(restore);
+      requestAnimationFrame(rafRestore);
     };
-    requestAnimationFrame(restore);
+    requestAnimationFrame(rafRestore);
+
+    // 이미지 지연 로딩 등으로 높이가 나중에 바뀌는 경우 몇 차례 재보정
+    const t1 = setTimeout(() => { if (!userTookOver) apply(); }, 250);
+    const t2 = setTimeout(() => { if (!userTookOver) apply(); }, 600);
+    const t3 = setTimeout(() => { if (!userTookOver) apply(); }, 1200);
+    const cleanupT = setTimeout(() => {
+      restoringRef.current = false; // 복원 종료 → 저장 재개
+      window.removeEventListener("wheel", onUserScroll);
+      window.removeEventListener("touchmove", onUserScroll);
+      window.removeEventListener("keydown", onUserScroll);
+    }, 1300);
+
+    return () => {
+      restoringRef.current = false;
+      clearTimeout(t1); clearTimeout(t2); clearTimeout(t3); clearTimeout(cleanupT);
+      window.removeEventListener("wheel", onUserScroll);
+      window.removeEventListener("touchmove", onUserScroll);
+      window.removeEventListener("keydown", onUserScroll);
+    };
   }, [loading, tab, SCROLL_KEY]);
 
   function onLike(postId: string) {
