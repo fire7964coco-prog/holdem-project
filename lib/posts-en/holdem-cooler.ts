@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "holdem-cooler",
   title: "What Is a Cooler in Poker? The Unavoidable Loss — and Why It's Not a Bad Beat",
   seoTitle: "The Hand You Couldn't Fold If You Tried — What Is a Cooler?",
-  desc: "A cooler is when your monster hand runs into a bigger one and folding was never an option. Here's how it differs from a bad beat, the classic examples, and when 'it was a cooler' is really an excuse.",
+  desc: "A cooler is when your monster hand runs into a bigger one and folding was never an option — and why it's not a bad beat, with the classic examples.",
   tldr: "A cooler is a hand where you lose a big pot with a very strong holding you could never correctly fold — like pocket kings running into aces, or a set losing to a bigger set. Unlike a bad beat, you were behind the whole way and no lucky card 'sucked out' on you: you played it right and still lost. It's poker's most honest kind of disaster.",
   category: "strategy",
   date: "2026-07-05",
