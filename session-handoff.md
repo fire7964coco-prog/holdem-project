@@ -9,6 +9,8 @@
 
 **한 일**: 사용자 제공 CSV(3개월/28일) 분석 → 최대 기회=**족보 클러스터**(합 ~570노출 r9~19 문턱). 원인=`/hands`(noindex) 사이트맵 잔존 카니발라이제이션. **수정 커밋 80b5887**: 사이트맵에서 /hands·/rules/texas-holdem 제외 + 필라 킹하이 커버 + updated 갱신 + masters-7th 내부링크. (상세 WORKLOG 2026-07-05)
 
+**📈 주간 추세 추적 시스템 구축(2026-07-05)**: 사용자가 매주 GSC 올려 성장추세 보고 싶어함 → `scripts/gsc-analyze.mjs`(CSV폴더→스냅샷) + `docs/gsc-tracking/kpi-log.md`(28일 롤링 추세, 07-05 기준선) + README. **매주 루틴**: 사용자가 "지난 28일" CSV 주면 → `node scripts/gsc-analyze.mjs "<폴더>"` → kpi-log에 열 추가 + 지난주 대비 델타 분석. (메모리 `gsc-weekly-trend-tracking`)
+
 **🎯 Top-3 진입 전략 착수(2026-07-05)**: GSC 3-Wave 전략 수립·Wave1 실행(커밋 217acd4).
 - **원칙**: 이길 수 있는 곳(롱테일+토너먼트/펍+족보) 집중 · r5~7부터 · 클러스터 권위통합.
 - **Wave1 완료**(r5~7 빠른승리): blind-meaning에 BB계산 실블록+신선도갱신, how-to-enter→blind-meaning 내부링크. tiebreak는 이미 최적(무편집).
