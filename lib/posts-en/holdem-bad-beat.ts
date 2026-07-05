@@ -13,7 +13,7 @@ export const POST: Post = {
   readTime: "11 min",
   emoji: "💔",
   image: "/images/holdem-bad-beat-hero.webp",
-  imageAlt: "A poker player clutching his head in disbelief as the river card is revealed, having lost a hand he was a huge favorite to win",
+  imageAlt: "A poker player clutching his head in anguish after losing a big pot he was a huge favorite to win, his chips stacked on the green felt",
   tags: ["bad beat", "what is a bad beat in poker", "bad beat vs cooler", "bad beat jackpot", "poker suckout", "getting your money in good", "how to deal with bad beats"],
   content: `
 The one that still stings: I had pocket aces, got it all in against a player who called with pocket fives, and watched the case five slam onto the river. I'd done everything right. My money went in as better than a 4-to-1 favorite, and I still lost the whole stack to ==the one card in the deck that could beat me==. That's a bad beat, and if you play poker long enough, it will happen to you thousands of times.
