@@ -65,7 +65,7 @@ export const POST: Post = {
 
 > 가장 흔한 착각: "대회는 잘하는 사람만 나가는 것". 아닙니다. 대부분의 오픈 대회와 홀덤펍 리그는 **레벨 제한이 없습니다.** 초보가 참가비만 내면 누구나 같은 테이블에 앉습니다.
 
-규칙 자체가 아직 흔들린다면, 대회를 신청하기 전에 [텍사스 홀덤 규칙 초보 가이드](/blog/texas-holdem-rules-for-beginners)와 [홀덤 족보 순서](/blog/holdem-hand-rankings)부터 확실히 잡아두세요. 현장에서 족보가 헷갈리면 가장 곤란합니다.
+규칙 자체가 아직 흔들린다면, 대회를 신청하기 전에 [텍사스 홀덤 규칙 초보 가이드](/blog/texas-holdem-rules-for-beginners)와 [홀덤 족보 순서](/blog/holdem-hand-rankings)부터 확실히 잡아두세요. 현장에서 족보가 헷갈리면 가장 곤란합니다. 그리고 매 판 강제로 빠지는 [홀덤 블라인드(SB·BB) 뜻과 BB 계산법](/blog/holdem-blind-meaning)까지 이해하면, 토너먼트에서 스택이 몇 BB인지 바로 감이 와서 훨씬 유리합니다.
 
 ---
 
