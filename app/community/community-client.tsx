@@ -445,6 +445,14 @@ export default function CommunityClient({
   const [loadingMore, setLoadingMore] = useState(false);
   const sentinelRef = useRef<HTMLDivElement>(null);
 
+  // ── 피드 스크롤 위치 복원 ──────────────────────────────────
+  // 모바일은 내부 overflow-y-auto div가 스크롤러(window 아님)라 브라우저 기본
+  // 스크롤 복원이 동작하지 않는다. 데스크톱은 window 스크롤. 둘 다 세션에 저장 후
+  // 뒤로가기로 재진입해 피드가 렌더된 뒤 복원한다.
+  const feedScrollRef = useRef<HTMLDivElement>(null);
+  const scrollRestoredRef = useRef(false);
+  const SCROLL_KEY = `feedScroll:${pageLocale ?? "ko"}`;
+
   // 외부 링크(블로그 CTA 등)에서 ?tab=event 로 진입 시 해당 탭 바로 열기
   useEffect(() => {
     const t = new URLSearchParams(window.location.search).get("tab");
@@ -690,6 +698,53 @@ export default function CommunityClient({
     observer.observe(sentinel);
     return () => observer.disconnect();
   }, [loadMorePosts]);
+
+  // 스크롤 위치 저장 (home 탭에서 스크롤할 때마다, rAF 스로틀)
+  // loading 의존성: 로딩 중엔 스피너만 렌더돼 feedScrollRef가 null이므로,
+  // 피드가 렌더된 뒤 재실행해 내부 컨테이너에 리스너를 붙인다.
+  useEffect(() => {
+    if (loading || tab !== "home") return;
+    const el = feedScrollRef.current;
+    let raf = 0;
+    const save = () => {
+      raf = 0;
+      // 활성 스크롤러: 모바일=내부 div(scrollTop>0), 데스크톱=window
+      const top = el && el.scrollTop > 0 ? el.scrollTop : window.scrollY;
+      try { sessionStorage.setItem(SCROLL_KEY, String(top)); } catch {}
+    };
+    const onScroll = () => { if (!raf) raf = requestAnimationFrame(save); };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    el?.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      el?.removeEventListener("scroll", onScroll);
+      if (raf) cancelAnimationFrame(raf);
+    };
+  }, [tab, loading, SCROLL_KEY]);
+
+  // 스크롤 위치 복원 (피드 로드 완료 후 1회) — 콘텐츠 높이가 찰 때까지 rAF 대기
+  useEffect(() => {
+    if (loading || tab !== "home" || scrollRestoredRef.current) return;
+    scrollRestoredRef.current = true;
+    let saved = 0;
+    try { saved = Number(sessionStorage.getItem(SCROLL_KEY) || "0"); } catch {}
+    if (saved <= 0) return;
+    let tries = 0;
+    const restore = () => {
+      const el = feedScrollRef.current;
+      const maxContainer = el ? el.scrollHeight - el.clientHeight : 0;
+      const maxWindow = document.documentElement.scrollHeight - window.innerHeight;
+      // 콘텐츠가 저장 위치만큼 자랐거나(무한스크롤 로드 대기), 시도 한계 도달 시 복원
+      if (Math.max(maxContainer, maxWindow) >= saved || tries > 40) {
+        if (el) el.scrollTop = saved;   // 모바일 내부 컨테이너
+        window.scrollTo(0, saved);       // 데스크톱 window (비활성 레이아웃엔 무해)
+        return;
+      }
+      tries++;
+      requestAnimationFrame(restore);
+    };
+    requestAnimationFrame(restore);
+  }, [loading, tab, SCROLL_KEY]);
 
   function onLike(postId: string) {
     if (!currentUser) { router.push("/login"); return; }
@@ -991,7 +1046,7 @@ export default function CommunityClient({
         </header>
 
         {/* 모바일 본문 */}
-        <div className="flex-1 overflow-y-auto pb-24">
+        <div ref={feedScrollRef} className="flex-1 overflow-y-auto pb-24">
           <TabContent />
           {/* 무한스크롤 sentinel — 400px 미리 감지해 선제 로드 */}
           {tab === "home" && (
