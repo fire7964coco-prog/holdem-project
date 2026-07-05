@@ -5,6 +5,12 @@
 
 ## 2026-07-05
 
+### GSC 점검(사용자 제공 CSV 3개월/28일) → 족보 클러스터 순위 밀기
+- **GSC 분석**(3개월: 클릭97/노출5037/CTR1.93%, 최근28일에 집중=성장중). 밥줄=**토너먼트일정+홀덤펍**(2026 홀덤대회일정 18clk r5·홀덤펍 추천 9clk CTR25.7%). **최대 기회=족보 클러스터**(홀덤 족보 순위 195노출 r9.8·포커 족보 111 r31·홀덤 핸드순위 73 r9.6·홀덤 족보 62·패순위 48·카드순위 31·킹하이 30 — 합 ~570노출이 r9~19 문턱에서 클릭0~7). EN=권위한계 재확인(texas-holdem-rules 1186노출 r55 clk1) + **신규 EN 9편 전부 미색인**(색인요청 필요).
+- **핵심 발견=카니발라이제이션**: `/hands`(noindex)가 사이트맵에 priority0.85로 남아 블로그 필라와 족보 키워드를 r14로 나눠먹음. 색인신호/노색인신호 충돌.
+- **수정**: ①generate-sitemap에서 `/hands`·`/rules/texas-holdem`(둘 다 robots index:false) **사이트맵 제외**(37 static, was 39) → 구글이 도구페이지 색인 드롭 시 필라로 권위 통합. ②필라 `holdem-hand-rankings`에 **킹하이(에이스하이/킹하이) 명시 커버**(§13 검산: A♣Q♠9♥5♦3♣=에이스하이·K♦Q♠9♥5♦3♣=킹하이 정확). ③필라 `updated`→2026-07-05(lastmod 재크롤 유도). ④masters-7th-guide(26clk 권위) → 필라 내부링크 주입.
+- 빌드 ✅ "52 blog + 66 intl + 37 static". 커밋 80b5887. **다음**: GSC 색인요청(신규 EN 9편) + /hands 재크롤 요청, 그리고 필라 순위 추적.
+
 ### EN Strategy 클러스터 개척 1번 — holdem-limping (Limping in Poker) 신규
 - **필라4 Strategy 개척 첫 글**(Glossary 필라 완성 후 다음 필라=최대공백으로 이동). limping=590/mo·LDA8·단독승산 최상. 적대적 서브에이전트 SERP+PAA 조사 후 착수.
 - 타깃: what is a limp·why is limping bad·is limping good·open vs over-limp·limp-reraise·should you open-limp·SB limp·limper vs calling station. H2 8 + FAQ 8.

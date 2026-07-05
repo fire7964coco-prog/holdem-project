@@ -5,7 +5,19 @@
 
 ---
 
-## 🔎 다음 세션 최우선 — GSC 점검 (사용자 요청 2026-07-05)
+## ✅ GSC 점검 완료 (2026-07-05) — 족보 클러스터 액션 착수함
+
+**한 일**: 사용자 제공 CSV(3개월/28일) 분석 → 최대 기회=**족보 클러스터**(합 ~570노출 r9~19 문턱). 원인=`/hands`(noindex) 사이트맵 잔존 카니발라이제이션. **수정 커밋 80b5887**: 사이트맵에서 /hands·/rules/texas-holdem 제외 + 필라 킹하이 커버 + updated 갱신 + masters-7th 내부링크. (상세 WORKLOG 2026-07-05)
+
+**▶ GSC 후속(다음에 사용자가 GSC에서 직접 할 것)**:
+1. **/hands 재크롤 요청**(URL 검사) — noindex 반영 앞당겨 족보 카니발 조기 해소.
+2. **신규 EN 9편 색인 요청**(전부 미색인): `/en/blog/holdem-fish`·`holdem-cooler`·`holdem-bad-beat`·`holdem-glossary`·`holdem-limping`·`holdem-straddle`·`holdem-rake`·`holdem-outs`·`holdem-pot-odds` (+ `holdem-drawing-odds`).
+3. **필라 순위 추적**: `홀덤 족보 순위`(r9.8)가 배포·재크롤 후 top5 진입하는지 2~3주 뒤 재확인.
+4. 여력되면: `블라인드 뜻`(r10.9)·`빅블라인드`(r8.6)·`bb 계산`(r9.3) → blind-meaning 정확매칭 보강 / ICM 도구의도(/calculator r8~17).
+
+---
+
+## 🔎 (원본 절차 보존) GSC 점검 방법 — 재점검 시 참고
 
 **사용자가 새 세션에서 GSC 점검을 원함.** 착수 방식:
 
