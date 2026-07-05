@@ -733,13 +733,12 @@ export default function CommunityClient({
     };
   }, [tab, loading, SCROLL_KEY]);
 
-  // 스크롤 위치 복원 (피드 로드 완료 후 1회)
+  // 스크롤 위치 복원 루틴 (재사용)
   // ① 콘텐츠 높이가 저장 위치만큼 찰 때까지 rAF 대기(무한스크롤 재구성/렌더 대기)
-  // ② 이미지 지연 로딩으로 높이가 밀리는 것을 보정하려 잠시 재적용
+  // ② 이미지 지연 로딩·Next 기본 스크롤 등으로 위치가 밀리는 것을 몇 차례 재보정
   // ③ 단, 사용자가 직접 스크롤(휠/터치/키)하면 즉시 보정 중단(방해 방지)
-  useEffect(() => {
-    if (loading || tab !== "home" || scrollRestoredRef.current) return;
-    scrollRestoredRef.current = true;
+  const doRestore = useCallback(() => {
+    if (tab !== "home") return;
     let saved = 0;
     try { saved = Number(sessionStorage.getItem(SCROLL_KEY) || "0"); } catch { /* noop */ }
     if (saved <= 0) return;
@@ -772,25 +771,36 @@ export default function CommunityClient({
     };
     requestAnimationFrame(rafRestore);
 
-    // 이미지 지연 로딩 등으로 높이가 나중에 바뀌는 경우 몇 차례 재보정
-    const t1 = setTimeout(() => { if (!userTookOver) apply(); }, 250);
-    const t2 = setTimeout(() => { if (!userTookOver) apply(); }, 600);
-    const t3 = setTimeout(() => { if (!userTookOver) apply(); }, 1200);
-    const cleanupT = setTimeout(() => {
+    // 이미지 지연 로딩·프레임워크 기본 스크롤로 위치가 밀리는 것을 재보정
+    const timers = [200, 450, 800, 1300].map((ms) =>
+      setTimeout(() => { if (!userTookOver) apply(); }, ms)
+    );
+    setTimeout(() => {
       restoringRef.current = false; // 복원 종료 → 저장 재개
       window.removeEventListener("wheel", onUserScroll);
       window.removeEventListener("touchmove", onUserScroll);
       window.removeEventListener("keydown", onUserScroll);
-    }, 1300);
+      timers.forEach(clearTimeout);
+    }, 1500);
+  }, [tab, SCROLL_KEY]);
 
+  // (a) 리마운트로 재로드되는 경우: 로딩 완료 후 1회 복원
+  useEffect(() => {
+    if (loading || tab !== "home" || scrollRestoredRef.current) return;
+    scrollRestoredRef.current = true;
+    doRestore();
+  }, [loading, tab, doRestore]);
+
+  // (b) 컴포넌트가 보존(리마운트 없음)되는 경우: 뒤로가기 이벤트에서 직접 복원
+  useEffect(() => {
+    const onBack = () => { doRestore(); };
+    window.addEventListener("popstate", onBack);
+    window.addEventListener("pageshow", onBack);
     return () => {
-      restoringRef.current = false;
-      clearTimeout(t1); clearTimeout(t2); clearTimeout(t3); clearTimeout(cleanupT);
-      window.removeEventListener("wheel", onUserScroll);
-      window.removeEventListener("touchmove", onUserScroll);
-      window.removeEventListener("keydown", onUserScroll);
+      window.removeEventListener("popstate", onBack);
+      window.removeEventListener("pageshow", onBack);
     };
-  }, [loading, tab, SCROLL_KEY]);
+  }, [doRestore]);
 
   function onLike(postId: string) {
     if (!currentUser) { router.push("/login"); return; }
