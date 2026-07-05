@@ -5,6 +5,14 @@
 
 ## 2026-07-05
 
+### EN Glossary #4 — holdem-cooler (What Is a Cooler in Poker) 신규
+- **필라6 Glossary 4번째**(fish에 이어 같은 세션). cooler=390/mo. 적대적 서브에이전트 SERP Top10+PAA 조사 후 착수.
+- 타깃: what is a cooler·cooler vs bad beat·poker setup·got coolered·set over set·is KK vs AA a cooler·can you avoid a cooler·is a cooler always all-in. H2 8개 + FAQ 8(PAA 정확매칭).
+- **차별화 시그니처 3개**: ①**cooler vs bad beat 나란히 비교표**(#1갭: 대부분 혼용 → cooler=뒤진채 못접음/석아웃없음, bad beat=앞선채 역전당함, "same cards opposite stories" 플립 예시) ②**"쿨러 패밀리" 통합표**(KK vs AA·셋오버셋·플러시오버플러시·풀하우스·boat vs quads·스트레이트오버스트레이트, 각각 왜 못접나) ③**"'쿨러였어'가 변명일 때"** E-E-A-T 리트머스(888식: 같은정보로 또할까? YES=쿨러 NO=미스플레이).
+- **품질: 적대적 팩트체커 + §13 핸드검산 = ALL CORRECT**. 셋오버셋(7♣7♦ vs J♠J♥, 보드 J♦7♥2♣5♠Q♦ → 7-7-7-Q-J vs J-J-J-Q-7, **정확히 1아웃=7♠** 검증)·KK vs AA ~4.5:1·AA vs 77 ~80%·bad beat 플립 전부 정확. 용어(setup·coolered·cold deck 사기유래) 정확. 발행가능 판정. 비블로킹 "95%"→"vast majority" 다듬음.
+- 첫링크=holdem-tiebreak-rules(쇼다운 승자판정). fish(Glossary 상호링크)·pot-odds·position-play·straddle 연결. 인라인썸네일(fish·pot-odds)·:::readnext 2카드·Related 4카드.
+- 빌드 ✅ **"63 intl posts"**(62→63). category=strategy. 커밋 7654d65. **다음**: Glossary 계속(bad-beat=cooler와 대칭 유력·slow roll 590·nuts) or 허브 holdem-glossary. ⚠️ **커서 이미지 2개 생성 필요**: `holdem-cooler-hero`(풀하우스 뒤집는데 상대가 더 큰 핸드 공개=coolered 순간)·`holdem-cooler-vs-badbeat`(쇼다운 두 강한핸드 공개). 본문 1개는 button-dealer-board 재사용.
+
 ### EN Glossary #3 — holdem-fish (What Is a Fish in Poker) 신규
 - **필라6 Glossary 3번째**(straddle·rake에 이어). fish=390/mo·**LDA3 = 전 Glossary 최저경쟁** = 롱테일 1등 가장 빠른 타깃. 적대적 서브에이전트로 SERP Top10+PAA 전수조사 후 착수.
 - 타깃: what is a fish·poker fish meaning·how to spot a fish·fish vs shark/whale/donkey·am i the fish·how to stop being a fish·"spot the sucker" 명언. H2 8개(정의·왜물고기·8가지판별신호·플레이어유형 통합표·명언출처·자가진단·탈출법·에티켓) + FAQ 8(PAA 정확매칭).
