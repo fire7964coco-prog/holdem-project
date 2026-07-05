@@ -721,6 +721,10 @@ export default function CommunityClient({
       if (restoringRef.current) return; // 복원 중 프로그램적 스크롤은 저장하지 않음
       // 활성 스크롤러: 모바일=내부 div(scrollTop>0), 데스크톱=window
       const top = el && el.scrollTop > 0 ? el.scrollTop : window.scrollY;
+      // 0(상단)은 저장하지 않는다: 다른 페이지로 이동할 때 프레임워크가 window를
+      // 상단으로 스크롤하며 발생하는 scroll 이벤트가 저장된 좋은 값을 0으로
+      // 덮어쓰는 것을 막는다.
+      if (top <= 0) return;
       try { sessionStorage.setItem(SCROLL_KEY, String(top)); } catch { /* noop */ }
     };
     const onScroll = () => { if (!raf) raf = requestAnimationFrame(save); };
