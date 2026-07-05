@@ -5,6 +5,15 @@
 
 ## 2026-07-05
 
+### EN Glossary #5 — holdem-bad-beat (What Is a Bad Beat in Poker) 신규
+- **필라6 Glossary 5번째(cooler와 대칭 쌍)**. bad beat=320/mo. 적대적 서브에이전트 SERP+PAA 조사 후 착수.
+- 타깃: what is a bad beat·bad beat vs cooler·is a coinflip a bad beat·bad beat jackpot·worst bad beat·more common online·how to deal with·is it bad play. H2 8개 + FAQ 8(PAA 정확매칭).
+- **차별화 시그니처 4개**: ①**bad beat vs cooler 비교표**(cooler 글의 거울쌍=상호참조 토픽오소리티, bad beat=앞선채 석아웃/cooler=뒤진채 못접음, "opponent가 improve해야 win이면 bad beat" 리트머스) ②**favorite 임계값 정량화**(~80%+AND석아웃, 코인플립 AK vs QQ는 bad beat 아님 — 대부분 회피하는 지점) ③**Bad Beat Jackpot 상세**(자격="에이스풀 이상이 쿼드에 깨짐"·both cards play·배당분배표 50/25/25·룸마다 다름 경고) ④**"bad beat은 수학적으로 좋다"** EV프레이밍(상대 -EV콜=수익원)+멘탈게임(틸트·"스토리는 지루").
+- **품질: 적대적 팩트체커 + §13 에쿼티검산**. 에쿼티 6개(AA vs 77 ~80%/4.5:1·AA vs랜덤 ~85%·오버페어 vs9아웃플드 ~65/35·러너러너 ~90%+·원아웃터 ~98%·AK vs QQ ~55/45 코인플립) 전부 CORRECT. 용어·잭팟 정확·헷지.
+- ★**§13 오류 1건 잡아 수정(팩트체커)**: 2008 WSOP 유명사례를 "flopped quad aces"로 오기→실제는 Motoyuki Mabuchi가 플랍 셋(A♥9♣Q♦)+**리버 A♦로 쿼드 완성, 그 A♦가 Justin Phillips K♦J♦를 로열플러시(10-J-Q-K-A♦)로 완성**. 인물명·카드·리버 전개 정확 반영(검증 소스). 마퀴 클레임이라 치명적일 뻔.
+- 첫링크=holdem-cooler(대칭쌍). fish·pot-odds·tiebreak 연결. 인라인썸네일(cooler·pot-odds)·:::readnext 2카드·Related 4카드.
+- 빌드 ✅ **"64 intl posts"**(63→64). category=strategy. desc 157자. 커밋 9dc1bab. **다음**: Glossary 계속(slow roll 590·nuts·tilt) or 허브 holdem-glossary. ⚠️ **커서 히어로 이미지 1개 생성 필요**: `holdem-bad-beat-hero`(리버 카드 공개에 머리 감싸쥔 플레이어=석아웃 순간). 본문 2개는 cooler-vs-badbeat·button-dealer-board 재사용.
+
 ### EN Glossary #4 — holdem-cooler (What Is a Cooler in Poker) 신규
 - **필라6 Glossary 4번째**(fish에 이어 같은 세션). cooler=390/mo. 적대적 서브에이전트 SERP Top10+PAA 조사 후 착수.
 - 타깃: what is a cooler·cooler vs bad beat·poker setup·got coolered·set over set·is KK vs AA a cooler·can you avoid a cooler·is a cooler always all-in. H2 8개 + FAQ 8(PAA 정확매칭).

@@ -106,7 +106,7 @@ KO 11필라를 복제하지 않고 EN 검색시장 기준으로 재편. `holdem-
 - ✅ holdem-rake (what is a rake 1300) — 발행 2026-07-04. 레이크종류비교표·실전계산·rake trap·rakeback·토너fee. 적대적 팩트체크 통과(GGPoker예외·bb/100헷지). 첫링크=tournament-vs-cash-game
 - ✅ holdem-fish (what is a fish 390·**LDA3 최저경쟁**) — 발행 2026-07-05. 플레이어유형 통합표(fish/shark/whale/nit/donkey/calling station/reg/grinder/LAG·TAG)·명언 정확검증("sucker" not "fish", Rounders+격언)·VPIP/PFR 자가진단표. 적대적 팩트체크 **사실오류 0건**. 첫링크=starting-hands-chart(허브 미발행 임시)
 - ✅ holdem-cooler (what is a cooler 390) — 발행 2026-07-05. cooler vs bad beat 나란히 비교표(뒤진채 못접음 vs 앞선채 역전)·쿨러패밀리표(KK vs AA·셋오버셋·플오플·풀오풀·boat vs quads)·"변명일때" E-E-A-T 리트머스. **§13 셋오버셋 검산+적대적 팩트체크 ALL CORRECT**. 첫링크=tiebreak-rules. fish 상호링크
-- 🆕 holdem-bad-beat (cooler와 대칭 — 다음 유력 후보)
+- ✅ holdem-bad-beat (what is a bad beat 320) — 발행 2026-07-05. **cooler의 거울쌍**. bad beat vs cooler 비교표·favorite 임계값(~80%+석아웃, 코인플립 제외)·Bad Beat Jackpot(배당 50/25/25)·EV프레이밍·멘탈게임. **§13 에쿼티 6개+2008 WSOP사례 검증**(팩트체커가 "flopped quad aces" 오기 잡아냄→Mabuchi 리버쿼드/Phillips 로열 정정). 첫링크=cooler 상호링크
 - 🆕 holdem-tilt
 - 🆕 holdem-nuts
 - 🆕 holdem-gutshot (gutshot vs open-ended)
@@ -175,6 +175,6 @@ posting.mdc STEP 준수. 롱테일 1등용 필수 체크:
 | 3 Odds & Math | ✅ | 3 / 5 | 허브+pot-odds+outs+drawing-odds. 남은 심화=implied-odds·equity |
 | 4 Strategy | 🆕 | 3 / 9 | 껍데기 |
 | 5 Tournament | ✅ | 5 / 8 | 강함(고아2) |
-| 6 Glossary | 🆕 | 4 / 7 | straddle·rake·fish·cooler 발행. 허브+slowroll·bad-beat·nuts 남음 |
+| 6 Glossary | 🆕 | 5 / 7 | straddle·rake·fish·cooler·bad-beat 발행. 허브+slowroll·nuts·tilt 남음 |
 
 > 글 발행/수정 시 이 표와 §2 트리를 갱신할 것.
