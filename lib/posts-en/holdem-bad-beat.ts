@@ -65,6 +65,8 @@ A quick litmus: **if your opponent needed to *improve* to win, it's a bad beat.*
 
 ## How Big a Favorite Makes It a "Real" Bad Beat?
 
+![A simple three-step visual of a bad beat — an 80 percent favorite, then a suckout on the river, then the loss](/images/holdem-bad-beat-suckout.webp "The shape of a bad beat: you're an ~80% favorite, the river delivers a suckout, and the hand you should have won is gone")
+
 Here's where casual players and serious ones part ways: **not every loss as a favorite is a bad beat.** There's an unwritten equity bar, and it matters if you want to use the term honestly.
 
 - **~80% or more, and you lose to a suckout** — a genuine bad beat. Your aces (a ~4.5-to-1 favorite over a lower pair) getting cracked is the textbook case. A **one-outer** — losing to the single remaining card in the deck — is the purest bad beat of all.

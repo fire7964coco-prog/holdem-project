@@ -35,6 +35,8 @@ Not your fault | The one loss you shouldn't tilt over
 
 ## What Is a Cooler in Poker?
 
+![A visual showing pocket kings losing to pocket aces, labeled COOLER — two premium hands colliding with no misplay](/images/holdem-cooler-collision.webp "The essence of a cooler: two huge hands collide, the second-best one can't fold, and nobody did anything wrong")
+
 **A cooler is a hand in which two very strong holdings collide, and the losing player was always behind but couldn't correctly fold.** The hand is simply too good to lay down — so the chips go in, and the second-best monster pays off the best one. Nobody misplayed it. The loss wasn't a mistake; it was the unavoidable price of holding a premium hand at the same moment someone else held a slightly bigger one.
 
 The word paints the picture: you got "cooled off" — your hot hand went cold through no fault of your own. You'll also hear it used as a verb ("I got **coolered**") and as a near-synonym, **"setup,"** because it feels like the deck was *set up* to take your whole stack. What makes a cooler different from an ordinary loss is that a good player would lose the exact same chips every time. Recognizing that is the first step to not letting these hands wreck your session — the same discipline that separates a winning player from a [fish](/en/blog/holdem-fish "thumb:/images/holdem-fish-hero.webp").

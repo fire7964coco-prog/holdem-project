@@ -54,6 +54,8 @@ If you only clear up a dozen terms, make it these — they're the ones that caus
 
 ---
 
+![A visual map of the six poker term categories in this glossary — Betting Actions, Positions, Hands, Player Types, Money, and Situations](/images/holdem-glossary-categories.webp "The six groups this glossary is organized into — browse by the situation you're in, not just alphabetically")
+
 ## Betting Actions
 
 Everything you can physically do on your turn. If you're brand new, start with the [order of betting](/en/blog/holdem-betting-actions "thumb:/images/holdem-betting-actions-hero.webp").

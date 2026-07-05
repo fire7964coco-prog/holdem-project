@@ -72,6 +72,8 @@ No single sign is proof — even good players limp occasionally or chase a big d
 
 ## The Poker Zoo: Fish vs Shark vs Whale vs Nit vs Donkey
 
+![A simple visual of the poker food chain showing four player types as poker-chip icons — FISH, SHARK, WHALE, and NIT — from weakest to strongest](/images/holdem-fish-food-chain.webp "The poker food chain at a glance: the fish feeds the sharks, the whale is the big prize, and the nit just sits tight")
+
 "Fish" is the headline, but poker slang has a whole bestiary of player types — and most glossaries only define two or three. Here's the one table that lays them all out, so you can name exactly who you're up against:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
