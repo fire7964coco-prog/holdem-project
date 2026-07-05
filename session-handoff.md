@@ -9,7 +9,14 @@
 
 **한 일**: 사용자 제공 CSV(3개월/28일) 분석 → 최대 기회=**족보 클러스터**(합 ~570노출 r9~19 문턱). 원인=`/hands`(noindex) 사이트맵 잔존 카니발라이제이션. **수정 커밋 80b5887**: 사이트맵에서 /hands·/rules/texas-holdem 제외 + 필라 킹하이 커버 + updated 갱신 + masters-7th 내부링크. (상세 WORKLOG 2026-07-05)
 
+**🎯 Top-3 진입 전략 착수(2026-07-05)**: GSC 3-Wave 전략 수립·Wave1 실행(커밋 217acd4).
+- **원칙**: 이길 수 있는 곳(롱테일+토너먼트/펍+족보) 집중 · r5~7부터 · 클러스터 권위통합.
+- **Wave1 완료**(r5~7 빠른승리): blind-meaning에 BB계산 실블록+신선도갱신, how-to-enter→blind-meaning 내부링크. tiebreak는 이미 최적(무편집).
+- **Wave2**(족보필라 최대상금 195노출): 오늘 카니발해소+내부링크로 "심기" 끝 → **2~3주 관찰 단계**(글 추가 X, `홀덤 족보 순위` r9.8→top5 진입이 성패지표).
+- **Wave3 후속(미착수)**: 빅블라인드(r8.6) 독립섹션 심화 · icm 계산기(r8.2 도구의도)=/calculator 페이지 최적화 · 홀덤펍 클러스터 방어.
+
 **▶ GSC 후속(다음에 사용자가 GSC에서 직접 할 것)**:
+0. **(신규 배포분) 재크롤 요청**: `/blog/holdem-blind-meaning`·`/blog/holdem-tournament-how-to-enter`
 1. **/hands 재크롤 요청**(URL 검사) — noindex 반영 앞당겨 족보 카니발 조기 해소.
 2. **신규 EN 9편 색인 요청**(전부 미색인): `/en/blog/holdem-fish`·`holdem-cooler`·`holdem-bad-beat`·`holdem-glossary`·`holdem-limping`·`holdem-straddle`·`holdem-rake`·`holdem-outs`·`holdem-pot-odds` (+ `holdem-drawing-odds`).
 3. **필라 순위 추적**: `홀덤 족보 순위`(r9.8)가 배포·재크롤 후 top5 진입하는지 2~3주 뒤 재확인.
