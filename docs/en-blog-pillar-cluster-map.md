@@ -80,6 +80,7 @@ KO 11필라를 복제하지 않고 EN 검색시장 기준으로 재편. `holdem-
 - ✅ holdem-position-play (기존 category:strategy — 이제 이 필라 소속 명확화)
 - ✅ holdem-starting-hands-chart (피링크 6)
 - ✅ holdem-positions (Rules와 공유 — 좌석기본은 Rules, 포지션별 플레이는 Strategy)
+- ✅ holdem-limping (limping in poker 590·LDA8) — 발행 2026-07-05. **Strategy 클러스터 개척 1번**. 나쁜이유 4가지+예외표(비독단)+open/over 구분+limp-reraise+처벌법. 셋마이닝 11.8% 검증. 적대적 팩트체커 사실오류 0. 첫링크=position-play(허브 미발행 임시)
 - 🆕 holdem-preflop-strategy (open raise / preflop ranges)
 - 🆕 holdem-3bet (3-betting when/how)
 - 🆕 holdem-continuation-bet (c-bet)
@@ -175,7 +176,7 @@ posting.mdc STEP 준수. 롱테일 1등용 필수 체크:
 | 1 Rules | ✅ | 5 / 8 | 두꺼움 |
 | 2 Hand Rankings | ✅ | 4 / 6 | 두꺼움 |
 | 3 Odds & Math | ✅ | 3 / 5 | 허브+pot-odds+outs+drawing-odds. 남은 심화=implied-odds·equity |
-| 4 Strategy | 🆕 | 3 / 9 | 껍데기 |
+| 4 Strategy | 🆕 | 4 / 9 | 껍데기(limping 개척). 허브 holdem-strategy 미발행=최대공백 |
 | 5 Tournament | ✅ | 5 / 8 | 강함(고아2) |
 | 6 Glossary | ✅ | 허브+5 | 허브 holdem-glossary 발행✅+straddle·rake·fish·cooler·bad-beat. 확장=slowroll·nuts·tilt |
 

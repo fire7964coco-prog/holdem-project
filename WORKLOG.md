@@ -5,6 +5,14 @@
 
 ## 2026-07-05
 
+### EN Strategy 클러스터 개척 1번 — holdem-limping (Limping in Poker) 신규
+- **필라4 Strategy 개척 첫 글**(Glossary 필라 완성 후 다음 필라=최대공백으로 이동). limping=590/mo·LDA8·단독승산 최상. 적대적 서브에이전트 SERP+PAA 조사 후 착수.
+- 타깃: what is a limp·why is limping bad·is limping good·open vs over-limp·limp-reraise·should you open-limp·SB limp·limper vs calling station. H2 8 + FAQ 8.
+- **차별화(경쟁사=독단 "never limp" or 단순정의뿐, 그 사이 갭)**: ①**"왜 나쁜가" 4가지 정확한 이유**(폴드에쿼티0=프리플랍 못이김·주도권상실=c-bet 못침·멀티웨이OOP·투명/처벌) ②**"언제 괜찮나" 예외표(비독단=이 글 승부처)**: SB컴플리트·스페큘러티브 오버림프(셋마이닝)·패시브라이브저스테이크·얕은BTN 2026솔버뉘앙스 ③**open-limp vs over-limp 구분**(스니펫미끼) ④**limp-reraise 트랩**+"림퍼 처벌법(iso-raise)"+limper≠calling station.
+- **품질: 적대적 팩트체커 = 발행가능·사실오류 0**. 셋마이닝 11.8%(1-in-8.5) 검증, 4가지이유·예외4개·limp-reraise(TT+/AK/AQ)·라이브vsGTO 프레이밍 전부 CORRECT. "limping 항상 나쁘다" 독단 없이 뉘앙스 유지 확인(리서치 최대 경고포인트). 선택다듬기 2건(12→11.8%·범위표기 일관) 반영.
+- 첫링크=holdem-position-play(Strategy 클러스터, 허브 미발행 임시). fish·starting-hands-chart·pot-odds·glossary 연결. 인라인썸네일·:::readnext·Related 4카드.
+- 빌드 ✅ **"66 intl posts"**(65→66). category=strategy. seoTitle 60·desc 150. 커밋 41c6f3c. **다음**: Strategy 계속(허브 holdem-strategy or 3bet 1600·c-bet·when-to-fold) or Odds 마무리(implied-odds·equity). ⚠️ **커서 히어로 1개 필요**: `holdem-limping-hero`(칩 소극적으로 밀어 BB만 콜=림프). 본문 2개는 button-dealer-board·pub-players-table 재사용.
+
 ### EN Glossary 허브 발행 — holdem-glossary (Poker Terms A-Z Hub) 신규 ★필라 완성
 - **필라6 Glossary 허브 발행**(개별글 5개 축적 후 링크주스 집중 적기). "poker terms/glossary/texas holdem terms/slang" 타깃. **이로써 Glossary 필라 = 허브+5클러스터로 완성 구조.**
 - **차별화**: 경쟁사(PokerNews·Upswing·Wikipedia) 전부 flat A-Z 한 덩어리 → 우리는 ①**카테고리 우선 6분류**(베팅액션·포지션·핸드/보드·플레이어유형·머니/게임·상황/스탯/에티켓 — 초보는 단어가 아니라 "상황"으로 검색) + ②상단 **"가장 헷갈리는 용어" 8쌍 모듈**(check vs call·set vs trips·cooler vs bad beat·VPIP vs PFR·3-bet 카운팅·value vs bluff·pot vs implied odds·blind vs ante = Featured Snippet 미끼).
