@@ -100,7 +100,7 @@ To [limp](/en/blog/holdem-limping) is to just call the big blind instead of rais
 2. **You surrender initiative.** The preflop raiser gets to keep telling a story on the flop (Decision 4). Limp, and you hand that story to someone else.
 3. **You paint a target on yourself.** Strong players raise big behind a limper to isolate them, then out-play them in position all hand. An open-limp announces "weak, passive player here."
 
-The default that fixes it is blunt: **if a hand is good enough to play, it's good enough to raise; if it isn't, fold.** The one common exception is *over*-limping — calling *behind* someone who already limped, in position, with a speculative hand like a small pair — where you're getting a cheap price into a multiway pot. That's a discount, not a strategy. Everything else? Raise or fold.
+The default that fixes it is blunt: **if a hand is good enough to play, it's good enough to raise; if it isn't, fold.** And when someone *else* has already raised, raising again — a [3-bet](/en/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp") — is how you punish wide opens and build pots with your best hands. The one common exception is *over*-limping — calling *behind* someone who already limped, in position, with a speculative hand like a small pair — where you're getting a cheap price into a multiway pot. That's a discount, not a strategy. Everything else? Raise or fold.
 
 ---
 

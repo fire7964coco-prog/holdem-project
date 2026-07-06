@@ -83,7 +83,7 @@ KO 11필라를 복제하지 않고 EN 검색시장 기준으로 재편. `holdem-
 - ✅ holdem-positions (Rules와 공유 — 좌석기본은 Rules, 포지션별 플레이는 Strategy)
 - ✅ holdem-limping (limping in poker 590·LDA8) — 발행 2026-07-05. **Strategy 클러스터 개척 1번**. 나쁜이유 4가지+예외표(비독단)+open/over 구분+limp-reraise+처벌법. 셋마이닝 11.8% 검증. 적대적 팩트체커 사실오류 0. 첫링크=position-play(허브 미발행 임시)
 - 🆕 holdem-preflop-strategy (open raise / preflop ranges)
-- 🆕 holdem-3bet (3-betting when/how)
+- ✅ holdem-3bet (3-betting when/how — 3 bet 1600) — 발행 2026-07-06. **Strategy 클러스터 #2, 대형키워드 #1 타깃**. 원스톱 통합각도(정의·왜3벳·value/light·linear vs polarized·사이징산수·squeeze·**facing a 3-bet 방어**·실수6·FAQ13)로 파편화된 경쟁사(Upswing=range만/PokerNews=얕은정의/888=squeeze만/BlackRain=defense만) 추월. 노벨자산=3-bet/flat/fold 결정표·villain fold-to-3bet 대응표(35/55/70)·light 3bet 블로커파인더. §13: pot $39·A♠Q♠ TPTK·사이징배수·블로커 AA6→3/AK16→12 전부 검증+적대적 팩트체커 PASS. 첫링크=허브. 히어로+레인지그리드 인포그래픽 [E] 커서 대기.
 - 🆕 holdem-continuation-bet (c-bet)
 - 🆕 holdem-bluff-spot (when to bluff / how to bluff — KO 필라 slug 정합)
 - 🆕 holdem-when-to-fold
@@ -177,7 +177,7 @@ posting.mdc STEP 준수. 롱테일 1등용 필수 체크:
 | 1 Rules | ✅ | 5 / 8 | 두꺼움 |
 | 2 Hand Rankings | ✅ | 4 / 6 | 두꺼움 |
 | 3 Odds & Math | ✅ | 3 / 5 | 허브+pot-odds+outs+drawing-odds. 남은 심화=implied-odds·equity |
-| 4 Strategy | ✅ | 허브+2 / 9 | 허브 holdem-strategy 발행✅(5-결정 프레임워크)+limping. 클러스터 심화=3bet·c-bet·when-to-fold·check-raise |
+| 4 Strategy | ✅ | 허브+3 / 9 | 허브✅+limping+**3bet(1600·원스톱통합)**. 클러스터 심화=c-bet·when-to-fold·check-raise·preflop |
 | 5 Tournament | ✅ | 5 / 8 | 강함(고아2) |
 | 6 Glossary | ✅ | 허브+5 | 허브 holdem-glossary 발행✅+straddle·rake·fish·cooler·bad-beat. 확장=slowroll·nuts·tilt |
 

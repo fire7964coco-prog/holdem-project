@@ -5,6 +5,15 @@
 
 ## 2026-07-06
 
+### EN Strategy 클러스터 #2 발행 `holdem-3bet` — 대형키워드(3 bet 1600) #1 타깃
+- **신규 EN 포스트: `holdem-3bet`** — "3-Betting in Poker: When to 3-Bet, How Much, and How to Face One"(16분, ~3천단어). 사용자 지정 "구글1페이지 1등" 대형 키워드.
+- **딥리서치(서브에이전트 2개 병렬)**: ①경쟁사 SWOT — 상위권이 **파편화**(Upswing=range만/PokerNews=얕은정의/SplitSuit=range/888=squeeze/BlackRain=defense)라 **한 페이지 통합본 부재**가 최대 공백. ②정확성 기준(사이징 산수·linear/polarized·블로커·스탯) 소스검증.
+- **각도=원스톱 통합**(각 경쟁사 최강점 흡수: Upswing 차트→레인지그리드, PokerNews FAQ, SplitSuit 실수섹션, 888 worked example, BlackRain 로우스테이크스). **노벨 자산 3개**: "3-Bet/Flat/Fold?" 결정표 · "villain fold-to-3bet 대응표"(35/55/70→처방) · light 3bet 블로커 파인더.
+- **정확성**: §13 워크드핸드(A♠Q♠ TPTK on Q♦8♣4♥, pot $39 검산) + 사이징 산수(3bb→IP9bb/OOP12bb/squeeze15bb) + 블로커 콤보(**AA 6→3·AK 16→12** — 리서치 오류 12→8을 직접검산으로 정정) + A5s~30%. **적대적 팩트체커 PASS**(BB 플랫 정밀화·문장깨짐 2건만 교정). c-bet식 단일수치 강요 안 함, sizing 고정배수 아님·flat IP 정당·토너 25bb잼 뉘앙스 전부 헷지.
+- **함정**: 본문(템플릿리터럴 백틱) 안에 인라인코드 백틱 → 빌드 SyntaxError. `==...==` 하이라이트로 교체(교훈: 본문에 백틱 금지). 달러도 `\\$`→`$` 정정(템플릿리터럴).
+- **역링크**: 허브 Decision3에 3bet 인라인썸네일 링크 주입(양방향). index 등록.
+- **빌드 ✅ "52 blog + 68 intl"**(EN 33편). **다음**: [E] 커서 이미지 2개(holdem-3bet-hero + holdem-3bet-range-grid 인포그래픽) → GSC 색인요청 `/en/blog/holdem-3bet`. Strategy 클러스터 계속(c-bet·when-to-fold).
+
 ### EN Strategy 필라 허브 발행 `holdem-strategy` (필라 4 최대 공백 해소)
 - **신규 EN 포스트: `holdem-strategy`** — "Texas Hold'em Strategy: The 5 Decisions Behind Every Winning Hand"(14분). 필라 4의 **허브 첫 발행**(그간 껍데기, 유일 미발행 필라 허브).
 - **각도**: SERP Top10 전수조사(서브에이전트)로 경쟁사(Upswing 10 tips·888 9 tips 등)가 전부 **연결 프레임워크 없는 팁 리스트**임을 확인 → 최대 공백 = **"5개 결정 스파인"**(포지션→핸드선택→raise/fold→c-bet→폴드). 각 결정이 클러스터로 목차링크 = 허브 역할.
