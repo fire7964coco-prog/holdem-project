@@ -5,6 +5,46 @@
 
 ---
 
+## ▶▶▶ 새 세션 START HERE (2026-07-06 밤 v4 — 어드민 구축 세션)
+
+**이 세션 = 콘텐츠가 아니라 커뮤니티/어드민 기능 작업이었음.** 작업트리 clean, 마지막 커밋 `6389245`.
+
+### ✅ 이번 세션 완료(배포됨)
+1. **글쓰기 크래시 수정**(`f74236a`) — community-client의 `FONT_SERIF/FONT_SANS` TDZ(선언이 WriteModal 아래) → 위로 이동.
+2. **어드민 v1 구축**(`e0698b8`) — `/admin` 신설. 게이트=env `ADMIN_EMAILS`(현재 `fire7964coco@gmail.com`) + service-role RLS 우회. 탭 5개: 대시보드(통계)·회원(검색·상세·뱃지)·모더레이션(글/댓글/채팅 삭제)·팝업(CRUD+ON/OFF)·이벤트(추첨 수동실행 테스트).
+   - **파일**: `lib/admin.ts`(requireAdmin/isAdminEmail), `lib/supabase/admin.ts`(기존 createAdminClient 재사용), `lib/event-draw.ts`(performDraw 크론·어드민 공유), `app/admin/{page,admin-client,actions}.tsx`, `components/site-popup.tsx`(전역 팝업 표시, layout에 마운트), `supabase/schema.sql`(popups 테이블 — **DB에 이미 실행 완료**).
+3. **★event_id 버그 해결**(`e0698b8`) — `CURRENT_EVENT_ID` 하드코딩(2026-W26 고정) 제거 → `getCurrentEventId()`(ISO 주차 자동계산)로 앱·크론 자동 동기화. 이제 회차 수동갱신 불필요. (5곳 교체: event-config/actions/community-client/event-tab/cron)
+4. **골드 버튼 라벨 안 보이던 버그**(`af2d3a8`) — btn()이 배경 transparent인데 color를 다크로 덮어써 라벨 안 보임 → primary 버튼에 `background: GOLD` 추가.
+5. **로그아웃 UX**(`4d614cd`→`6268a90`) — 서버액션 폼 → 브라우저 클라이언트 로그아웃 + `setCurrentUser(null)` 옵티미스틱. 클릭 즉시 로그인버튼으로 바뀜(새로고침 전까지 로그아웃버튼 남던 문제 해결). 로그인 링크에 active:scale 눌림감.
+6. **회원 탭 로그인 시각**(`6389245`) — 각 행에 "로그인 [시각]" + 최근 로그인순 정렬 + 24h내 로그인 🟢 표시. (`last_sign_in_at` 기준 = 이력, 실시간 접속 아님)
+
+### ⚙️ 사용자가 완료한 인프라 설정
+- **Vercel env**: `ADMIN_EMAILS` 추가 완료. `SUPABASE_SERVICE_ROLE_KEY`(값에 한글 섞여 깨져있던 것 → 새 `sb_secret_...` 키로 교체 완료)·`CRON_SECRET` 존재. → `/admin` 정상 작동 확인(회원5·글2·채팅1).
+- **Supabase**: `popups` 테이블 생성 완료. 추첨 테스트 정상(비트코인 블록해시 방식) 확인 후 테스트 회차 삭제함.
+
+### ▶ 내일(새 세션) 할 일 = 접속 IP 로그 (A안 확정)
+**목적**: 다계정 어뷰징 적발(특히 로또 이벤트 상금 사기). 사용자 예전 사이트처럼 IP 접속기록 누적.
+**A안(확정·가벼움)**:
+1. `access_logs` 테이블 신설 (`id, user_id, ip, user_agent, created_at`) + RLS(본인 insert / 어드민 service-role read). **SQL은 사용자가 실행.**
+2. **IP 기록**: 로그인 시 + 방문 요청 시 **직전 IP와 다르면** 새 줄 추가(log-on-change). 서버액션에서 `headers()`의 `x-forwarded-for` 첫 IP. 세션당 과다기록 방지 스로틀.
+3. **어드민 회원 상세**에 → 접속기록(IP·시각·기기) 누적 표시 + **★"같은 IP 쓴 다른 계정" 목록**(다계정 클러스터 적발). (선택) 대시보드 "최근 접속 유저".
+**한계 명시**: 모바일 CGNAT(남남도 같은 IP)·VPN 우회·집/회사 공유 → **자동차단 X, 사람이 보고 판단하는 "신고 센서"**로만.
+**나중(커지면)**: 폰인증으로 "참여=무료 / 상금자격=폰1개당1"을 분리(근본 Sybil 방어). 지금은 과함.
+
+### 📌 확정된 전략 결론(이번 세션 논의)
+- **커뮤=리텐션 전용(noindex 확정) / 블로그=SEO(색인)** 로 역할 분리. 커뮤 글 색인 안 함.
+- 이벤트 목적=재방문·체류·CTA로 **간접** SEO 신호(브랜드검색·직접유입·신선도). 커뮤 활동은 블로그 순위에 **직접 반영 안 됨**(별개 엔진).
+- 다계정은 커뮤 noindex라 **SEO 피해 0**, 유일한 실피해=**로또 상금**(확률형이라 45계정≈66%/100계정≈90% 당첨). → 신원확인만으론 못 막음(당첨계정=어뷰저 진짜계정). → **IP 접속로그(A안)로 클러스터 적발 + 수동 지급검토**가 현 단계 방어.
+
+### ⚠️ 어드민 관련 알아둘 것
+- `/admin`은 루트 레이아웃(SiteHeader/Footer) 안에 렌더됨(자체 풀스크린 UI라 동작엔 문제없으나 헤더 중복). 필요시 route group으로 분리 가능.
+- `signOut` 서버액션(actions.ts)은 이제 community에서 미사용(클라 로그아웃으로 대체). 삭제해도 됨.
+- 회원 "로그인 시각"은 `auth.admin.listUsers()`의 `last_sign_in_at` 기반.
+
+**콘텐츠 작업(Strategy/Odds 등)은 아래 기존 핸드오프 블록 참조 — 그쪽은 그대로 유효.**
+
+---
+
 ## ▶▶ 새 세션 START HERE (2026-07-06 심야 v3 — 전부 완료·작업트리 clean)
 
 **직전 작업(07-06) 요약**: EN Strategy 필라 **하루 5편**(허브 `holdem-strategy` + 클러스터 `holdem-3bet`·`holdem-continuation-bet`·`holdem-when-to-fold` + 07-05 limping) 완성. 전부 §13+적대적 팩트체커 PASS, **히어로·본문 이미지 전부 생성·검수·배포 완료**, 빌드 "52 blog+70 intl"(EN 35편). **작업트리 clean, 마지막 커밋 5118079.** 필라4 = 허브+5클러스터.
