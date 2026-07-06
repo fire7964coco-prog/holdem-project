@@ -5,6 +5,14 @@
 
 ## 2026-07-06
 
+### EN Strategy 클러스터 #3 발행 `holdem-continuation-bet` (c-bet) — 원스톱 통합
+- **신규 EN 포스트: `holdem-continuation-bet`** — "Continuation Bet (C-Bet): When to Fire the Flop, How Much, and When to Check"(15분). 허브 Decision4 위임처.
+- **딥리서치(서브에이전트 2개)**: ①경쟁사 SWOT — Upswing은 6+페이지로 클러스터 분산(단일페이지에 빈도%·사이징산수·표·FAQ·when-NOT 전부 없음), PokerNews 표·수치無, MyPokerCoaching 수치 흩어짐+전문용어, GTOWizard 초보난이도 → **단일 통합 페이지 부재**가 최대 공백. ②정확성(빈도 텍스처/포지션/인원 의존·사이징·range/nut advantage) 소스검증.
+- **각도=원스톱 통합 + "always c-bet 틀렸다" 교정**. 노벨 자산: **보드텍스처 결정표**(dry/wet/paired/monotone/two-tone→bet/check+사이즈) · **빈도 치트시트**(포지션×인원) · **실수7 표**. range advantage→빈도, nut advantage→사이즈 프레임.
+- **정확성**: §13 워크드핸드 2개(A♣K♦ TPTK on K♠7♦2♣=c-bet / A♥Q♥ on 7♠6♠5♦=체크·보드가 콜러 스매시) + ~2/3 미스(67.6% 검산) + 사이징 $30팟→1/3=$10·2/3=$20. **적대적 팩트체커 PASS(교정0)**. 빈도 전부 범위+근거(단일% 금지), 체크≠약함, 멀티웨이 range bet 미적용 명시.
+- **역링크**: 허브 Decision4 "c-bet"에 인라인썸네일 링크 주입(양방향), 3bet·pot-odds 상호링크. index 등록.
+- **빌드 ✅ "52 blog + 69 intl"**(EN 34편). **다음**: [E] 커서 히어로 `holdem-continuation-bet-hero.webp` → GSC 색인. Strategy 클러스터 계속(when-to-fold·check-raise).
+
 ### EN Strategy 클러스터 #2 발행 `holdem-3bet` — 대형키워드(3 bet 1600) #1 타깃
 - **신규 EN 포스트: `holdem-3bet`** — "3-Betting in Poker: When to 3-Bet, How Much, and How to Face One"(16분, ~3천단어). 사용자 지정 "구글1페이지 1등" 대형 키워드.
 - **딥리서치(서브에이전트 2개 병렬)**: ①경쟁사 SWOT — 상위권이 **파편화**(Upswing=range만/PokerNews=얕은정의/SplitSuit=range/888=squeeze/BlackRain=defense)라 **한 페이지 통합본 부재**가 최대 공백. ②정확성 기준(사이징 산수·linear/polarized·블로커·스탯) 소스검증.

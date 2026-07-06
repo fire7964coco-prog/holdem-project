@@ -106,7 +106,7 @@ The default that fixes it is blunt: **if a hand is good enough to play, it's goo
 
 ## Decision 4 — Do I Keep Betting on the Flop? (The C-Bet)
 
-You raised preflop, someone called, and now the flop is out. This is where most pots are actually won and lost — and the tool is the **continuation bet (c-bet)**: betting the flop after you were the preflop raiser, whether or not the board helped you.
+You raised preflop, someone called, and now the flop is out. This is where most pots are actually won and lost — and the tool is the [continuation bet (c-bet)](/en/blog/holdem-continuation-bet "thumb:/images/holdem-continuation-bet-hero.webp"): betting the flop after you were the preflop raiser, whether or not the board helped you.
 
 The c-bet works because *you* are the one who represented strength preflop, so the board "belongs" to you. But here's the mistake to avoid: **there is no single correct c-bet percentage.** Old advice said "bet almost every flop." Modern strategy says it depends on three things:
 
