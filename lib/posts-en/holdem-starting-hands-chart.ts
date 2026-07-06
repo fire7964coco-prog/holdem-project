@@ -28,7 +28,7 @@ You call a raise, miss the flop, call again, miss the turn. By the river you've 
 
 ==Texas Hold'em has 169 distinct starting hand types.== Most of them should be folded preflop. Learning which hands to play — and from which position at the table — is the single biggest improvement beginners make in their first month.
 
-This guide gives you the position-based starting hands chart, the top 10 hands to always raise, and the hands that look playable but consistently bleed chips.
+This guide gives you the position-based starting hands chart, the top 10 hands to always raise, and the hands that look playable but consistently bleed chips. Hand selection is the second of the [five decisions](/en/blog/holdem-strategy) behind every winning hand — the discipline that makes every later street easier.
 
 ## The 5 Groups of Texas Hold'em Starting Hands
 

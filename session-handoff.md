@@ -5,18 +5,19 @@
 
 ---
 
-## ▶▶ 새 세션 START HERE (2026-07-06)
+## ▶▶ 새 세션 START HERE (2026-07-06 후반)
 
-**직전 세션(07-05) 요약**: GSC 점검 완료 → 족보 카니발 해소·Wave1 배포·**주간 추세 추적 시스템 구축**. 전부 커밋·배포·동기화됨(작업트리 clean). GSC 액션은 사용자가 대부분 완료(아래 ✅).
+**직전 작업(07-06) 요약**: **EN Strategy 필라 허브 `holdem-strategy` 발행 완료**(5-결정 프레임워크, 14분). §13 검산+적대적 팩트체커 사실오류 0건. 역링크·index 등록·빌드 "52 blog+67 intl" ✅. **커밋·푸시 완료.** 유일 미발행 필라 허브였던 필라4 공백 해소. (그 이전 07-05: GSC 족보 카니발 해소·Wave1·주간 추세 시스템.)
 
-**🎯 이번 세션 메인 작업 = EN 포스팅 이어가기 (필라 4 Strategy 최대 공백)**
-- EN 현황: **31편 발행**. 6필라 중 **5개(Rules·Hand Rankings·Odds·Tournament·Glossary) 두꺼움/완성**, 히어로 이미지 전부 완비.
-- **유일한 큰 공백 = 필라 4 Strategy**: 허브 `holdem-strategy` **미발행** + 클러스터 부족. (있는 것: position-play·starting-hands-chart·positions·limping)
-- **착수 선택지 2개**:
-  1. **Strategy 허브 `holdem-strategy` 발행** → 이후 3bet(1600)·c-bet(`holdem-continuation-bet`)·when-to-fold·check-raise 클러스터. ← 최대 공백 메우기
-  2. or **Odds 마무리**: `holdem-implied-odds`·`holdem-equity` 2편이면 필라3 완전 완성(빠른 도장).
-- ⚠️ EN=마스터(오류 12언어 전파) → **1편씩 품질 집중**. 워크플로우=필라단위 스프린트([A]리서치→[B]사용자 각도게이트→[C]초안1편+§13검산→[D]적대적 팩트체크→[E]커서이미지→[F]빌드·커밋). 신규글 표준구조는 아래 "✅ 신규 EN 글 필수 구조" 참조.
-- **먼저 읽기**: `docs/en-blog-pillar-cluster-map.md`(§2 필라4·§4 우선순위) → `docs/keyword-bank/00-SYNTHESIS-roadmap.md` → `en-strategy-*` 키워드뱅크.
+**🟢 즉시 할 일 (07-06 발행분 마무리)**:
+1. **[E] 히어로 이미지** — `public/images/holdem-strategy-hero.webp` **미생성**(커서 워크플로). 프롬프트: 포커 결정을 고민하는 플레이어 실사, 다크+골드 온브랜드, 1200×675 ≤60KB. limping 글의 썸네일 링크도 이 이미지 참조(현재 404). 생성 후 재커밋.
+2. **GSC 색인요청** `/en/blog/holdem-strategy` (배포 반영 후).
+
+**🎯 다음 메인 작업 = Strategy 클러스터 심화 (허브 세웠으니 스포크 채우기)**
+- 우선순위: `holdem-3bet`(1600·최대볼륨) → `holdem-continuation-bet`(c-bet, 허브 Decision4 위임처) → `holdem-when-to-fold`(170·LDA14) → `holdem-check-raise`(90) → `holdem-preflop-strategy`. 전부 허브 첫링크=`holdem-strategy`.
+- **or Odds 마무리**(빠른 도장): `holdem-implied-odds`·`holdem-equity` 2편이면 필라3 완성.
+- ⚠️ EN=마스터(오류 12언어 전파) → **1편씩 품질 집중**. 워크플로우=필라단위 스프린트([A]리서치→[B]각도게이트→[C]초안1편+§13검산→[D]적대적 팩트체크→[E]커서이미지→[F]빌드·커밋). 표준구조는 아래 "✅ 신규 EN 글 필수 구조".
+- **먼저 읽기**: `docs/en-blog-pillar-cluster-map.md`(§2 필라4·§4) → `docs/keyword-bank/00-SYNTHESIS-roadmap.md` → `en-when-to.md`(결정FAQ 롱테일).
 
 **🔁 병행 상시작업 = 주간 GSC 추세**: 사용자가 "이번 주 GSC" CSV 주면 → `node scripts/gsc-analyze.mjs "<폴더>"` → `docs/gsc-tracking/kpi-log.md`에 열 추가 + 지난주 대비 델타 분석(메모리 `gsc-weekly-trend-tracking`). 07-05 배포 효과는 1~3주 뒤 반영.
 

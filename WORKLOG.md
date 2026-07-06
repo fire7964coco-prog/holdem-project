@@ -3,6 +3,16 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-06
+
+### EN Strategy 필라 허브 발행 `holdem-strategy` (필라 4 최대 공백 해소)
+- **신규 EN 포스트: `holdem-strategy`** — "Texas Hold'em Strategy: The 5 Decisions Behind Every Winning Hand"(14분). 필라 4의 **허브 첫 발행**(그간 껍데기, 유일 미발행 필라 허브).
+- **각도**: SERP Top10 전수조사(서브에이전트)로 경쟁사(Upswing 10 tips·888 9 tips 등)가 전부 **연결 프레임워크 없는 팁 리스트**임을 확인 → 최대 공백 = **"5개 결정 스파인"**(포지션→핸드선택→raise/fold→c-bet→폴드). 각 결정이 클러스터로 목차링크 = 허브 역할.
+- **콘텐츠**: :::stripe 핵심스탯 + 5-결정 섹션(각 클러스터 인라인/썸네일 링크) + **시그니처 표=초보 누수 6가지→해결**(5개가 5결정에 매핑) + 팟오즈/셋마이닝 수학 섹션 + TAG 스타일 섹션 + PAA 정확매칭 FAQ 11개(when to fold/bet vs check/bluff/3bet/raise vs call/how many hands/TAG/c-bet빈도).
+- **정확성**: §13 핸드예시 2개(A♣K♣ on 2-7-9=에이스하이 폴드·5♠5♦ on 5-K-2=셋) 직접검산 + **적대적 팩트체커 사실오류 0건**. 셋마이닝 11.8%=1/8.5 산술확인. c-bet **단일% 금지**(IP dry 60-80/OOP 40-50/멀티웨이<half, 사이즈 25-35%wide/65%+polarized) — 통설 부합. TAG=초보기준(만능 아님) 프레이밍.
+- **역링크**: position-play·starting-hands-chart 인트로에 허브(필라) 역링크 삽입, limping 첫링크(임시 position→)를 허브로 교체. index.ts 등록.
+- **빌드 ✅ "52 blog + 67 intl"**(EN 32편). **다음**: [E] 커서 히어로 이미지 `holdem-strategy-hero.webp` 생성 → GSC 색인요청 `/en/blog/holdem-strategy`. 이후 Strategy 클러스터 심화(3bet 1600·c-bet·when-to-fold).
+
 ## 2026-07-05
 
 ### GSC Top-3 전략 Wave 1 — 블라인드 클러스터 밀기 (기존글 GSC 최적화)

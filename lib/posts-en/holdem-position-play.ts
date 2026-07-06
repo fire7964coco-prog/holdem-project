@@ -31,7 +31,7 @@ I once watched a regular at my local poker club fold pocket queens from UTG. The
 
 Three orbits later he limped Q♠Q♦ on the button, trapped a UTG raiser, and stacked them. Same hand, different seat — completely different result.
 
-That's position. ==r:Not a suggestion.== A structural edge that compounds every single hand you play.
+That's position. ==r:Not a suggestion.== A structural edge that compounds every single hand you play. It's the first of the [five decisions](/en/blog/holdem-strategy) that make up a winning Texas Hold'em strategy — and the one everything else is built on.
 
 ---
 

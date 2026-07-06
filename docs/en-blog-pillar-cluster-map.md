@@ -76,8 +76,9 @@ KO 11필라를 복제하지 않고 EN 검색시장 기준으로 재편. `holdem-
 - 🆕 holdem-rule-of-2-and-4 (4-2 rule) — **보류**(outs/pot-odds/probability/drawing-odds와 정면 중복)
 > **가장 저경쟁·고밀도 롱테일 광맥.** 계산 질문은 정답이 명확해 Featured Snippet 독점 쉬움.
 
-### 필라 4 — Strategy & Play · hub `holdem-strategy` 🆕 ("Texas Holdem Strategy")
-- ✅ holdem-position-play (기존 category:strategy — 이제 이 필라 소속 명확화)
+### 필라 4 — Strategy & Play · hub `holdem-strategy` ✅ ("Texas Holdem Strategy")
+> **허브 발행됨(2026-07-06)**: "The 5 Decisions Behind Every Winning Hand" — 경쟁사 "N tips 리스트"의 최대 공백(연결 프레임워크 부재)을 침. 5-결정 스파인(포지션→핸드선택→raise/fold→c-bet→폴드)이 각 클러스터로 목차링크. 시그니처=누수 6가지→해결 표. 결정 FAQ 11개(PAA 정확매칭: when to fold/bet/bluff/3bet/raise vs call/how many hands/TAG/c-bet빈도). §13 A♣K♣폴드·55셋 검증+적대적 팩트체커 **사실오류 0건**. c-bet 단일% 금지(IP dry 60-80/OOP 40-50/멀티웨이<half). 셋마이닝 11.8%=1/8.5. 기존 클러스터(position-play·starting-hands-chart·limping) 첫링크를 허브로 역링크. 히어로 이미지 [E] 커서 대기(holdem-strategy-hero.webp).
+- ✅ holdem-position-play (기존 category:strategy — 이제 이 필라 소속 명확화, 첫링크 허브 역링크)
 - ✅ holdem-starting-hands-chart (피링크 6)
 - ✅ holdem-positions (Rules와 공유 — 좌석기본은 Rules, 포지션별 플레이는 Strategy)
 - ✅ holdem-limping (limping in poker 590·LDA8) — 발행 2026-07-05. **Strategy 클러스터 개척 1번**. 나쁜이유 4가지+예외표(비독단)+open/over 구분+limp-reraise+처벌법. 셋마이닝 11.8% 검증. 적대적 팩트체커 사실오류 0. 첫링크=position-play(허브 미발행 임시)
@@ -176,7 +177,7 @@ posting.mdc STEP 준수. 롱테일 1등용 필수 체크:
 | 1 Rules | ✅ | 5 / 8 | 두꺼움 |
 | 2 Hand Rankings | ✅ | 4 / 6 | 두꺼움 |
 | 3 Odds & Math | ✅ | 3 / 5 | 허브+pot-odds+outs+drawing-odds. 남은 심화=implied-odds·equity |
-| 4 Strategy | 🆕 | 4 / 9 | 껍데기(limping 개척). 허브 holdem-strategy 미발행=최대공백 |
+| 4 Strategy | ✅ | 허브+2 / 9 | 허브 holdem-strategy 발행✅(5-결정 프레임워크)+limping. 클러스터 심화=3bet·c-bet·when-to-fold·check-raise |
 | 5 Tournament | ✅ | 5 / 8 | 강함(고아2) |
 | 6 Glossary | ✅ | 허브+5 | 허브 holdem-glossary 발행✅+straddle·rake·fish·cooler·bad-beat. 확장=slowroll·nuts·tilt |
 
