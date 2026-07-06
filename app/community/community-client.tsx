@@ -1,11 +1,10 @@
 ﻿"use client";
 
-import { useState, useTransition, useEffect, useRef, useCallback, type CSSProperties } from "react";
-import { useFormStatus } from "react-dom";
+import { useState, useTransition, useEffect, useRef, useCallback } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
-import { signOut, createPost, toggleLike, updateNickname } from "./actions";
+import { createPost, toggleLike, updateNickname } from "./actions";
 import PostCard, {
   type FeedPost,
   Avatar,
@@ -407,24 +406,6 @@ type FilterKey = (typeof FILTER_PILLS)[number];
 
 function getTrending(posts: FeedPost[]) {
   return [...posts].sort((a, b) => b.likeCount - a.likeCount).slice(0, 4);
-}
-
-/**
- * 로그아웃 버튼 — 서버액션 폼 안에서 useFormStatus로 진행 상태를 읽어
- * 클릭 즉시 "…" + 펄스 + 비활성으로 피드백을 준다(중복 클릭 방지).
- */
-function LogoutButton({ label, className, style }: { label: string; className?: string; style?: CSSProperties }) {
-  const { pending } = useFormStatus();
-  return (
-    <button
-      type="submit"
-      disabled={pending}
-      className={`${className ?? ""} transition-transform active:scale-90 ${pending ? "animate-pulse" : ""}`}
-      style={{ ...style, opacity: pending ? 0.55 : 1, cursor: pending ? "wait" : "pointer" }}
-    >
-      {pending ? `${label}…` : label}
-    </button>
-  );
 }
 
 type EventData = {
@@ -837,6 +818,20 @@ export default function CommunityClient({
     startTransition(async () => { await toggleLike(postId); });
   }
 
+  const [signingOut, setSigningOut] = useState(false);
+  function onSignOut() {
+    if (signingOut) return;
+    setSigningOut(true);
+    // 즉시 로그아웃 상태로 UI 갱신(옵티미스틱) → 로그인 버튼이 바로 보임
+    setCurrentUser(null);
+    setTab("home");
+    const supabase = createClient();
+    supabase.auth.signOut().finally(() => {
+      setSigningOut(false);
+      router.refresh();
+    });
+  }
+
   function onSubmitPost() {
     if (!draft.trim()) return;
     const fd = new FormData();
@@ -1069,13 +1064,14 @@ export default function CommunityClient({
                 <span className="text-[11px]" style={{ color: MUTED }}>
                   {FLAG[currentUser.language] ?? "🌐"} {currentUser.nickname}
                 </span>
-                <form action={signOut}>
-                  <LogoutButton
-                    label={L.logout}
-                    className="text-[11px] font-semibold px-2.5 py-1 rounded-full"
-                    style={{ background: CARD, color: MUTED, border: `1px solid ${BORDER}` }}
-                  />
-                </form>
+                <button
+                  onClick={onSignOut}
+                  disabled={signingOut}
+                  className="text-[11px] font-semibold px-2.5 py-1 rounded-full transition-transform active:scale-90"
+                  style={{ background: CARD, color: MUTED, border: `1px solid ${BORDER}`, opacity: signingOut ? 0.55 : 1 }}
+                >
+                  {L.logout}
+                </button>
               </div>
             ) : (
               <Link
@@ -1236,13 +1232,14 @@ export default function CommunityClient({
                   >
                     {currentUser.nickname.slice(0, 2).toUpperCase()}
                   </button>
-                  <form action={signOut}>
-                    <LogoutButton
-                      label={L.logout}
-                      className="text-xs font-semibold px-3 py-1.5 rounded-full"
-                      style={{ background: CARD, color: MUTED, border: `1px solid ${BORDER}`, fontFamily: FONT_SANS }}
-                    />
-                  </form>
+                  <button
+                    onClick={onSignOut}
+                    disabled={signingOut}
+                    className="text-xs font-semibold px-3 py-1.5 rounded-full transition-transform active:scale-90"
+                    style={{ background: CARD, color: MUTED, border: `1px solid ${BORDER}`, fontFamily: FONT_SANS, opacity: signingOut ? 0.55 : 1 }}
+                  >
+                    {L.logout}
+                  </button>
                 </>
               ) : (
                 <Link
