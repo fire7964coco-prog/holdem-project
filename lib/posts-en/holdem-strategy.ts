@@ -148,7 +148,7 @@ If you strip strategy down to what actually loses money for new players, it's th
 
 | The leak | Why it bleeds chips | The fix |
 |:---|:---|:---|
-| **Playing too many hands** | Weak hands make weak hands and cost you postflop | Fold ~80% preflop (Decision 2) |
+| **Playing too many hands** | Weak starting hands flop weak made hands that cost you postflop | Fold ~80% preflop (Decision 2) |
 | **Calling too much** | A call can only win if you're already ahead — it never folds anyone out | Raise or fold; stop "calling to see" (Decision 3) |
 | **Being too passive** | Winners bet and raise for value; passivity wins tiny pots and loses big ones | Take the aggressive line when you have it |
 | **Ignoring position** | Playing junk out of position means guessing every street | Play tighter early, looser late (Decision 1) |
@@ -181,7 +181,7 @@ TAG works because it attacks the two biggest beginner leaks at once — playing 
 
 **Q. What is the best strategy for Texas Hold'em?**
 
-A. Play a tight-aggressive style built around five repeating decisions: choose hands based on your position, fold most of what you're dealt (around 80% preflop), enter pots by raising rather than limping, continuation-bet the flop when you have initiative, and fold disciplined when you're beaten. That combination beats almost every casual game without any advanced theory.
+A. Play a tight-aggressive style built around five repeating decisions: choose hands based on your position, fold most of what you're dealt (around 80% preflop), enter pots by raising rather than limping, continuation-bet the flop when you have initiative, and make disciplined folds when you're beaten. That combination beats almost every casual game without any advanced theory.
 
 **Q. What is the best poker strategy for beginners?**
 
