@@ -68,6 +68,12 @@ export default async function AdminPage() {
     email: emailMap.get(p.id)?.email ?? null,
     lastSignIn: emailMap.get(p.id)?.lastSignIn ?? null,
   }));
+  // 최근 로그인순 정렬 (로그인 이력 없는 사람은 뒤로)
+  members.sort((a: any, b: any) => {
+    const ta = a.lastSignIn ? new Date(a.lastSignIn).getTime() : 0;
+    const tb = b.lastSignIn ? new Date(b.lastSignIn).getTime() : 0;
+    return tb - ta;
+  });
 
   return (
     <AdminClient

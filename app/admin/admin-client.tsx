@@ -128,19 +128,26 @@ function Members({ members, onBadge }: { members: any[]; onBadge: (id: string, b
   const filtered = members.filter((m) =>
     !q || (m.nickname ?? "").toLowerCase().includes(q.toLowerCase()) || (m.email ?? "").toLowerCase().includes(q.toLowerCase())
   );
+  const DAY = 86400000;
+  const recentCount = members.filter((m) => m.lastSignIn && Date.now() - new Date(m.lastSignIn).getTime() < DAY).length;
+  const isRecent = (d?: string | null) => d && Date.now() - new Date(d).getTime() < DAY;
   return (
     <div>
       <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="닉네임·이메일 검색"
         style={{ width: "100%", maxWidth: 320, padding: "8px 12px", marginBottom: 12, borderRadius: 8, background: CARD, border: `1px solid ${BORDER}`, color: INK }} />
-      <div style={{ fontSize: 12, color: MUTED, marginBottom: 8 }}>{filtered.length}명</div>
+      <div style={{ fontSize: 12, color: MUTED, marginBottom: 8 }}>
+        총 {filtered.length}명 · <span style={{ color: "#3fb950" }}>🟢 최근 24시간 로그인 {recentCount}명</span> · 최근 로그인순
+      </div>
       <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
         {filtered.map((m) => (
           <div key={m.id} style={{ background: CARD, border: `1px solid ${BORDER}`, borderRadius: 10, padding: 12 }}>
             <div style={{ display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap" }}>
+              {isRecent(m.lastSignIn) && <span title="24시간 내 로그인" style={{ fontSize: 9, color: "#3fb950" }}>🟢</span>}
               <b>{m.nickname}</b>
               <span style={{ fontSize: 12, color: MUTED }}>{m.email ?? "(이메일 없음)"}</span>
               <span style={{ fontSize: 11, color: MUTED }}>{m.language}</span>
               {m.badge && <span style={{ fontSize: 11, color: GOLD }}>{BADGE_LABEL[m.badge] ?? m.badge}</span>}
+              <span style={{ fontSize: 11, color: MUTED, marginLeft: "auto" }}>로그인 {fmt(m.lastSignIn)}</span>
               <button onClick={() => setOpen(open === m.id ? null : m.id)} style={btn(GOLD)}>정보/뱃지</button>
             </div>
             {open === m.id && (
