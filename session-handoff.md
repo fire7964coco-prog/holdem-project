@@ -5,6 +5,23 @@
 
 ---
 
+## ▶▶ 새 세션 START HERE (2026-07-06)
+
+**직전 세션(07-05) 요약**: GSC 점검 완료 → 족보 카니발 해소·Wave1 배포·**주간 추세 추적 시스템 구축**. 전부 커밋·배포·동기화됨(작업트리 clean). GSC 액션은 사용자가 대부분 완료(아래 ✅).
+
+**🎯 이번 세션 메인 작업 = EN 포스팅 이어가기 (필라 4 Strategy 최대 공백)**
+- EN 현황: **31편 발행**. 6필라 중 **5개(Rules·Hand Rankings·Odds·Tournament·Glossary) 두꺼움/완성**, 히어로 이미지 전부 완비.
+- **유일한 큰 공백 = 필라 4 Strategy**: 허브 `holdem-strategy` **미발행** + 클러스터 부족. (있는 것: position-play·starting-hands-chart·positions·limping)
+- **착수 선택지 2개**:
+  1. **Strategy 허브 `holdem-strategy` 발행** → 이후 3bet(1600)·c-bet(`holdem-continuation-bet`)·when-to-fold·check-raise 클러스터. ← 최대 공백 메우기
+  2. or **Odds 마무리**: `holdem-implied-odds`·`holdem-equity` 2편이면 필라3 완전 완성(빠른 도장).
+- ⚠️ EN=마스터(오류 12언어 전파) → **1편씩 품질 집중**. 워크플로우=필라단위 스프린트([A]리서치→[B]사용자 각도게이트→[C]초안1편+§13검산→[D]적대적 팩트체크→[E]커서이미지→[F]빌드·커밋). 신규글 표준구조는 아래 "✅ 신규 EN 글 필수 구조" 참조.
+- **먼저 읽기**: `docs/en-blog-pillar-cluster-map.md`(§2 필라4·§4 우선순위) → `docs/keyword-bank/00-SYNTHESIS-roadmap.md` → `en-strategy-*` 키워드뱅크.
+
+**🔁 병행 상시작업 = 주간 GSC 추세**: 사용자가 "이번 주 GSC" CSV 주면 → `node scripts/gsc-analyze.mjs "<폴더>"` → `docs/gsc-tracking/kpi-log.md`에 열 추가 + 지난주 대비 델타 분석(메모리 `gsc-weekly-trend-tracking`). 07-05 배포 효과는 1~3주 뒤 반영.
+
+---
+
 ## ✅ GSC 점검 완료 (2026-07-05) — 족보 클러스터 액션 착수함
 
 **한 일**: 사용자 제공 CSV(3개월/28일) 분석 → 최대 기회=**족보 클러스터**(합 ~570노출 r9~19 문턱). 원인=`/hands`(noindex) 사이트맵 잔존 카니발라이제이션. **수정 커밋 80b5887**: 사이트맵에서 /hands·/rules/texas-holdem 제외 + 필라 킹하이 커버 + updated 갱신 + masters-7th 내부링크. (상세 WORKLOG 2026-07-05)
@@ -17,12 +34,12 @@
 - **Wave2**(족보필라 최대상금 195노출): 오늘 카니발해소+내부링크로 "심기" 끝 → **2~3주 관찰 단계**(글 추가 X, `홀덤 족보 순위` r9.8→top5 진입이 성패지표).
 - **Wave3 후속(미착수)**: 빅블라인드(r8.6) 독립섹션 심화 · icm 계산기(r8.2 도구의도)=/calculator 페이지 최적화 · 홀덤펍 클러스터 방어.
 
-**▶ GSC 후속(다음에 사용자가 GSC에서 직접 할 것)**:
-0. **(신규 배포분) 재크롤 요청**: `/blog/holdem-blind-meaning`·`/blog/holdem-tournament-how-to-enter`
-1. **/hands 재크롤 요청**(URL 검사) — noindex 반영 앞당겨 족보 카니발 조기 해소.
-2. **신규 EN 9편 색인 요청**(전부 미색인): `/en/blog/holdem-fish`·`holdem-cooler`·`holdem-bad-beat`·`holdem-glossary`·`holdem-limping`·`holdem-straddle`·`holdem-rake`·`holdem-outs`·`holdem-pot-odds` (+ `holdem-drawing-odds`).
-3. **필라 순위 추적**: `홀덤 족보 순위`(r9.8)가 배포·재크롤 후 top5 진입하는지 2~3주 뒤 재확인.
-4. 여력되면: `블라인드 뜻`(r10.9)·`빅블라인드`(r8.6)·`bb 계산`(r9.3) → blind-meaning 정확매칭 보강 / ICM 도구의도(/calculator r8~17).
+**▶ GSC 후속 상태 (사용자 GSC 수동 작업)**:
+- ✅ **/hands·/rules/texas-holdem 재크롤 요청 완료**(07-05) — "색인요청 거부됨"=noindex 정상 인식(의도대로).
+- ✅ **족보 필라 `/blog/holdem-hand-rankings` 재크롤 요청 완료**("색인요청됨").
+- ✅ **신규 EN 글 색인 요청 완료**(사용자: 오늘 배포분 다 함).
+- ☐ **(선택) Wave1 배포분 재크롤**: `/blog/holdem-blind-meaning`·`/blog/holdem-tournament-how-to-enter` — 안 해도 자동 크롤됨.
+- 📊 **추적(2~3주 뒤)**: `홀덤 족보 순위`(r9.8→top5?) · `/hands` 색인제외 확인 · 신규 EN 색인·노출 시작 여부. → **주간 GSC 추세 시스템으로 자동 추적**.
 
 ---
 
