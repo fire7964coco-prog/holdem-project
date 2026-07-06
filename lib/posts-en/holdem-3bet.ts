@@ -152,7 +152,7 @@ The big takeaway: **flatting is legitimate in position** — modern solvers keep
 
 ## The Squeeze Play: 3-Betting a Raiser *and* a Caller
 
-![Chips and community-card setup on green felt with several stacks pushed in, representing a multiway pot where a squeeze 3-bet can pick up dead money](/images/holdem-button-dealer-board.webp "A squeeze punishes an open-raiser and a flat-caller at once — the extra dead money makes even a light 3-bet profitable")
+![Three players' chip stacks pushed toward the middle of the green felt as one player slides a larger re-raise forward, squeezing an open-raiser and a caller](/images/holdem-3bet-squeeze.webp "A squeeze punishes an open-raiser and a flat-caller at once — the extra dead money makes even a light 3-bet profitable")
 
 A **squeeze play** is a 3-bet made after there's already been an open-raise *and* at least one caller. It's called a squeeze because you put both opponents in a vice: the original raiser now has to worry about the caller behind, and the caller — who just showed a hand not strong enough to re-raise — rarely wants to continue against your aggression.
 
@@ -166,7 +166,7 @@ Good squeeze bluffs are the same suited blocker hands (A5s and friends) that mak
 
 ## Facing a 3-Bet: Do You Call, 4-Bet, or Fold?
 
-![Players around a green-felt table reading each other after a preflop re-raise, weighing whether to call, 4-bet, or fold to a 3-bet](/images/holdem-pub-players-table.webp "The half of 3-betting nobody teaches: when someone re-raises you, most of your range should simply fold — especially against players who never bluff")
+![A poker player staring down a preflop re-raise with a hand resting on their chips, weighing whether to call, 4-bet, or fold to a 3-bet](/images/holdem-3bet-facing.webp "The half of 3-betting nobody teaches: when someone re-raises you, most of your range should simply fold — especially against players who never bluff")
 
 Here's the half of 3-betting that almost every article skips: **you'll be on the receiving end far more often than you 3-bet yourself.** When you open and get re-raised, you have three responses:
 

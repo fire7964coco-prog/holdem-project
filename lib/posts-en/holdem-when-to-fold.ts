@@ -62,7 +62,7 @@ The one hand you essentially *never* fold preflop in a cash game is pocket aces 
 
 Postflop folding is where real money is saved, and each street asks a different question.
 
-![A dealer button and community cards spread on the green felt with chip stacks behind them, the board texture that decides whether to continue or let go](/images/holdem-button-dealer-board.webp "Each street changes the question: on the flop you ask if you connected, by the river you ask only whether you can beat a value bet")
+![A full five-card board on the green felt beside a large pile of chips as a player holds two face-down cards, weighing whether to fold on a later street](/images/holdem-fold-board.webp "Each street changes the question: on the flop you ask if you connected, by the river you ask only whether you can beat a value bet")
 
 **Flop — "Did this board help me, or them?"** When you miss and face a bet on a board that fits your opponent's range, let it go. Ace-high with no draw on a coordinated board isn't worth a call "to see the turn." Fold weak draws too — a gutshot with no other equity and a bad price is a fold, not a chase.
 
@@ -122,7 +122,7 @@ The mirror image matters too, because **folding can be a leak of its own.** A *g
 
 Here's the secret the strategy charts don't tell you: **most bad calls aren't reading errors — they're emotional ones.** Three culprits do the damage.
 
-![Players sitting around a poker table weighing a big decision, the moment where discipline and ego pull in opposite directions](/images/holdem-pub-players-table.webp "The hardest folds are lost to emotion, not math — the pull to 'see it', to be right, and to not let go of chips that already feel like yours")
+![A poker player deep in thought with a hand to his chin, agonizing over whether to call or fold, chips and face-down cards in the foreground](/images/holdem-fold-psychology.webp "The hardest folds are lost to emotion, not math — the pull to 'see it', to be right, and to not let go of chips that already feel like yours")
 
 **Sunk cost — "I've already put so much in."** This is the big one. The chips you bet earlier are *no longer yours* — they belong to the pot. Every decision is independent, judged only on what happens *from here.* "I'm pot-committed because I've invested so much" is the sunk-cost fallacy in a poker chair. (Real pot-commitment exists, but it comes from the *current* price relative to a big pot — not from what you spent three streets ago.)
 

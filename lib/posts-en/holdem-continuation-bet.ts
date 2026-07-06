@@ -64,7 +64,7 @@ The concept underneath is ==range advantage==: whose overall range is stronger o
 
 ## Which Flops to C-Bet: It's All About Board Texture
 
-![A dealer button and a dry, disconnected flop on the green felt with chip stacks around it, the kind of high-card board that belongs to the preflop raiser](/images/holdem-button-dealer-board.webp "High, dry, disconnected flops like K-7-2 favor the preflop raiser — these are the classic small, high-frequency c-bet boards")
+![A dry, disconnected J-7-2 rainbow flop on the green felt with a small stack of chips bet in front, the kind of high-card board that belongs to the preflop raiser](/images/holdem-cbet-dry-board.webp "High, dry, disconnected flops like this J-7-2 favor the preflop raiser — the classic small, high-frequency c-bet boards")
 
 This is the heart of c-betting. Before you think about sizing or frequency, ask one question: **did this flop hit my range, or my opponent's?** Here's the map:
 
@@ -126,7 +126,7 @@ In **tournaments**, lean a touch smaller — often **half pot or less** — beca
 
 ## C-Betting Out of Position
 
-![Players seated around a green-felt table watching the action after a flop, the tougher spot of continuation betting without position](/images/holdem-pub-players-table.webp "Out of position you act first with no information, so you check far more and c-bet a tighter, stronger range")
+![A poker player acting first out of position, fingers on the felt beside their chips with an opponent waiting in the shadows behind](/images/holdem-cbet-oop.webp "Out of position you act first with no information, so you check far more and c-bet a tighter, stronger range")
 
 C-betting is much harder **out of position** — when you have to act first every street with no read on what your opponent will do. Two adjustments:
 
