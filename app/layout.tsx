@@ -3,6 +3,7 @@ import Script from "next/script";
 import { Noto_Sans_KR, Inter, Lora, EB_Garamond } from "next/font/google";
 import { SiteHeader, SiteFooter, HtmlLangSync, MainContent, ScrollToTopButton } from "@/components/site-chrome";
 import { BrushDefs } from "@/components/brush-defs";
+import SitePopup from "@/components/site-popup";
 import "./globals.css";
 import { SITE } from "@/lib/site";
 import { SECONDARY_LOCALES, HTML_LANG, RTL_LOCALES } from "@/lib/intl";
@@ -167,6 +168,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <MainContent>{children}</MainContent>
         <SiteFooter />
         <ScrollToTopButton />
+        <SitePopup />
 
         {/* Google Analytics — lazyOnload (메인 스레드 한가할 때 로드, TBT/렌더 차단 0) */}
         <Script

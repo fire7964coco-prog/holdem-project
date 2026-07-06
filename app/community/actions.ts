@@ -3,7 +3,7 @@
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
-import { CURRENT_EVENT_ID, EVENT_CONDITION } from "@/lib/event-config";
+import { getCurrentEventId, EVENT_CONDITION } from "@/lib/event-config";
 
 export async function signOut() {
   const supabase = await createClient();
@@ -135,7 +135,7 @@ export async function getEventData() {
       .from("event_entries")
       .select("numbers")
       .eq("user_id", user.id)
-      .eq("event_id", CURRENT_EVENT_ID)
+      .eq("event_id", getCurrentEventId())
       .maybeSingle(),
     supabase
       .from("posts")
@@ -192,7 +192,7 @@ export async function submitEventEntry(numbers: number[]) {
   // 이미 위에서 서버 측 조건 검증(isEligible)을 통과한 경우에만 여기 도달
   const { error } = await supabase.from("event_entries").insert({
     user_id: user.id,
-    event_id: CURRENT_EVENT_ID,
+    event_id: getCurrentEventId(),
     numbers: numbers.sort((a, b) => a - b),
   });
 

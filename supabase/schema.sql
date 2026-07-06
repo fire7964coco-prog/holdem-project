@@ -249,3 +249,33 @@ alter table public.event_draws enable row level security;
 -- 누구나 읽기 가능 (공개 검증), 쓰기는 서버 cron(service role)만
 drop policy if exists "draws_read" on public.event_draws;
 create policy "draws_read" on public.event_draws for select using (true);
+
+-- ============================================================
+-- 9. popups (사이트 전역 팝업/공지 배너 — 어드민 관리)
+-- ============================================================
+create table if not exists public.popups (
+  id          uuid primary key default gen_random_uuid(),
+  title       text not null,
+  body        text,                         -- 본문(선택)
+  image_url   text,                         -- 팝업 이미지(선택)
+  link_url    text,                         -- 클릭 시 이동 URL(선택)
+  link_label  text,                         -- 버튼 라벨(선택)
+  active      boolean not null default false,
+  starts_at   timestamptz,                  -- null = 즉시
+  ends_at     timestamptz,                  -- null = 무기한
+  locale      text,                         -- null = 전체 언어, 'ko'/'en'... = 특정 언어만
+  priority    int not null default 0,       -- 높을수록 우선 노출
+  created_at  timestamptz not null default now()
+);
+
+create index if not exists popups_active_idx on public.popups(active);
+
+alter table public.popups enable row level security;
+
+-- 공개 읽기: 활성 + 노출기간 내 팝업만. 쓰기/전체조회는 service role(어드민)만.
+drop policy if exists "popups_read" on public.popups;
+create policy "popups_read" on public.popups for select using (
+  active = true
+  and (starts_at is null or starts_at <= now())
+  and (ends_at is null or ends_at >= now())
+);

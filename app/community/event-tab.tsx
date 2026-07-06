@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/client";
 import { getEventData, submitEventEntry } from "./actions";
-import { EVENT_CONDITION, CURRENT_EVENT_ID, PRIZE_TABLE } from "@/lib/event-config";
+import { EVENT_CONDITION, getCurrentEventId, PRIZE_TABLE } from "@/lib/event-config";
 import { GOLD, BG, CARD, BORDER, TEXT_PRIMARY, TEXT_BODY, TEXT_SECONDARY, TEXT_MUTED, SURFACE } from "./post-card";
 
 type DrawInfo = {
@@ -347,8 +347,8 @@ export default function EventTab({
     supabase
       .from("event_draws")
       .select("block_height,block_hash,winning_numbers,explorer_url,drawn_at")
-      .eq("event_id", CURRENT_EVENT_ID)
-      .single()
+      .eq("event_id", getCurrentEventId())
+      .maybeSingle()
       .then(({ data }) => { if (data) setDrawInfo(data as DrawInfo); });
   }, []);
 

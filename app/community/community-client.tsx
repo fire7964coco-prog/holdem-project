@@ -23,7 +23,7 @@ import ChatTab from "./chat-tab";
 import { POSTS } from "@/lib/posts";
 import { postsForLocale } from "@/lib/intl-posts";
 import { isSecondaryLocale } from "@/lib/intl";
-import { CURRENT_EVENT_ID } from "@/lib/event-config";
+import { getCurrentEventId } from "@/lib/event-config";
 
 export type { FeedPost } from "./post-card";
 
@@ -625,7 +625,7 @@ export default function CommunityClient({
         setMyPosts((mine ?? []).map(toFeedPost));
 
         const [entryRes, postsForEvent] = await Promise.all([
-          supabase.from("event_entries").select("numbers").eq("user_id", user.id).eq("event_id", CURRENT_EVENT_ID).maybeSingle(),
+          supabase.from("event_entries").select("numbers").eq("user_id", user.id).eq("event_id", getCurrentEventId()).maybeSingle(),
           supabase.from("posts").select("like_count").eq("author_id", user.id).eq("type", "community"),
         ]);
         setEventData({

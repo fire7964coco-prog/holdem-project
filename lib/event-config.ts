@@ -6,8 +6,26 @@
  * 누구나 블록 탐색기에서 해시를 확인해 결과를 검증할 수 있습니다.
  */
 
-/** 현재 이벤트 ID — 매주 갱신 (ISO 주차 형식: YYYY-WNN) */
-export const CURRENT_EVENT_ID = "2026-W26";
+/**
+ * ISO 주차 ID 계산 (YYYY-WNN, UTC 기준 — 타임존 무관).
+ * 앱(참여·조회)과 크론(추첨)이 반드시 같은 함수를 써야 event_id가 일치한다.
+ */
+export function getIsoWeekId(date: Date): string {
+  const d = new Date(Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate()));
+  const dayNum = d.getUTCDay() || 7;
+  d.setUTCDate(d.getUTCDate() + 4 - dayNum);
+  const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
+  const weekNo = Math.ceil((((d.getTime() - yearStart.getTime()) / 86400000) + 1) / 7);
+  return `${d.getUTCFullYear()}-W${String(weekNo).padStart(2, "0")}`;
+}
+
+/**
+ * 현재 이벤트 ID — 실행 시점의 ISO 주차로 자동 계산.
+ * (구버전 하드코딩 상수를 제거 — 크론과 자동 동기화되어 회차가 어긋나지 않음)
+ */
+export function getCurrentEventId(): string {
+  return getIsoWeekId(new Date());
+}
 
 /** 참여 조건 */
 export const EVENT_CONDITION = {
