@@ -964,6 +964,9 @@ export default function CommunityClient({
     );
   }
 
+  const FONT_SANS = "var(--font-inter), var(--font-noto-sans-kr), sans-serif";
+  const FONT_SERIF = "var(--font-lora), Georgia, serif";
+
   // ── 글쓰기 모달 ────────────────────────────────────────────
   const WriteModal = writeOpen && (
     <div
@@ -1001,9 +1004,6 @@ export default function CommunityClient({
       </div>
     </div>
   );
-
-  const FONT_SANS = "var(--font-inter), var(--font-noto-sans-kr), sans-serif";
-  const FONT_SERIF = "var(--font-lora), Georgia, serif";
 
   if (loading) {
     return (
