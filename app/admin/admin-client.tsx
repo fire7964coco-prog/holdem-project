@@ -152,7 +152,7 @@ function Members({ members, onBadge }: { members: any[]; onBadge: (id: string, b
                   <span>뱃지:</span>
                   {BADGES.map((b) => (
                     <button key={b} onClick={() => onBadge(m.id, b)}
-                      style={{ ...btn(m.badge === b || (!m.badge && b === "") ? GOLD : BORDER), color: m.badge === b || (!m.badge && b === "") ? "#1a1508" : MUTED }}>
+                      style={{ ...btn(m.badge === b || (!m.badge && b === "") ? GOLD : BORDER), background: m.badge === b || (!m.badge && b === "") ? GOLD : "transparent", color: m.badge === b || (!m.badge && b === "") ? "#1a1508" : MUTED }}>
                       {BADGE_LABEL[b]}
                     </button>
                   ))}
@@ -173,7 +173,7 @@ function Moderation({ posts, comments, chats, onDelPost, onDelComment, onDelChat
     <div>
       <div style={{ display: "flex", gap: 6, marginBottom: 12 }}>
         {(["글", "댓글", "채팅"] as const).map((s) => (
-          <button key={s} onClick={() => setSub(s)} style={{ ...btn(sub === s ? GOLD : BORDER), color: sub === s ? "#1a1508" : MUTED }}>
+          <button key={s} onClick={() => setSub(s)} style={{ ...btn(sub === s ? GOLD : BORDER), background: sub === s ? GOLD : "transparent", color: sub === s ? "#1a1508" : MUTED }}>
             {s} {s === "글" ? `(${posts.length})` : s === "댓글" ? `(${comments.length})` : `(${chats.length})`}
           </button>
         ))}
@@ -272,7 +272,7 @@ function PopupForm({ popup, onSave, onClose }: any) {
         <input name="active" type="checkbox" defaultChecked={!!popup.active} /> 즉시 활성화(ON)
       </label>
       <div style={{ gridColumn: "1 / -1", display: "flex", gap: 8 }}>
-        <button type="submit" style={{ ...btn(GOLD), color: "#1a1508" }}>저장</button>
+        <button type="submit" style={{ ...btn(GOLD), background: GOLD, color: "#1a1508" }}>저장</button>
         <button type="button" onClick={onClose} style={btn(BORDER)}>취소</button>
       </div>
     </form>
@@ -298,7 +298,7 @@ function EventPanel({ eventId, entryCount, draws, run, pending }: any) {
           <label style={{ fontSize: 13, display: "flex", gap: 5, alignItems: "center" }}>
             <input type="checkbox" checked={force} onChange={(e) => setForce(e.target.checked)} /> force(덮어쓰기)
           </label>
-          <button disabled={pending} onClick={() => run(() => runDrawTest(target, force))} style={{ ...btn(GOLD), color: "#1a1508" }}>
+          <button disabled={pending} onClick={() => run(() => runDrawTest(target, force))} style={{ ...btn(GOLD), background: GOLD, color: "#1a1508" }}>
             지금 추첨 실행
           </button>
         </div>
