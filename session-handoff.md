@@ -5,21 +5,25 @@
 
 ---
 
-## ▶▶ 새 세션 START HERE (2026-07-06 심야 v2)
+## ▶▶ 새 세션 START HERE (2026-07-06 심야 v3 — 전부 완료·작업트리 clean)
 
-**직전 작업(07-06) 요약**: EN Strategy 필라 대량 진척 — **허브 `holdem-strategy` + 클러스터 4편(`holdem-3bet`·`holdem-continuation-bet`·`holdem-when-to-fold`) 발행**(하루). 전부 §13+적대적 팩트체커 PASS, 빌드 "52 blog+70 intl"(EN 35편), **본문 커밋·푸시 완료**. 필라4 = 허브+5클러스터로 두꺼워짐.
+**직전 작업(07-06) 요약**: EN Strategy 필라 **하루 5편**(허브 `holdem-strategy` + 클러스터 `holdem-3bet`·`holdem-continuation-bet`·`holdem-when-to-fold` + 07-05 limping) 완성. 전부 §13+적대적 팩트체커 PASS, **히어로·본문 이미지 전부 생성·검수·배포 완료**, 빌드 "52 blog+70 intl"(EN 35편). **작업트리 clean, 마지막 커밋 5118079.** 필라4 = 허브+5클러스터.
 
-**🟢 즉시 할 일 (07-06 발행분 마무리 — 이미지 대기 중)**:
-1. **[E] 커서 히어로 이미지** — `public/images/holdem-when-to-fold-hero.webp` **미생성**(현재 404). 실사: 카드를 머크로 밀어넣어 폴드하는 순간, 다크+골드, 1200×675 ≤60KB. (3bet 2개·strategy·c-bet 히어로는 이미 생성·배포됨.)
-2. **GSC 색인요청**: `/en/blog/holdem-when-to-fold` · `/en/blog/holdem-continuation-bet` · `/en/blog/holdem-3bet` · `/en/blog/holdem-strategy` (배포 반영 후).
+**🟢 즉시 할 일 (사용자 몫 — 배포 반영 후)**:
+1. **GSC 색인요청 4개**: `/en/blog/holdem-strategy` · `/en/blog/holdem-3bet` · `/en/blog/holdem-continuation-bet` · `/en/blog/holdem-when-to-fold`.
+   (이미지는 전부 완료 — 대기 중인 [E] 없음.)
 
-**🎯 다음 메인 작업 = Strategy 클러스터 계속 or Odds 마무리**
-- 우선순위: `holdem-check-raise`(90) → `holdem-preflop-strategy`. 전부 허브 첫링크=`holdem-strategy`.
-- **or Odds 마무리**(빠른 도장): `holdem-implied-odds`·`holdem-equity` 2편이면 필라3 완성.
-- **or Odds 마무리**(빠른 도장): `holdem-implied-odds`·`holdem-equity` 2편이면 필라3 완성.
-- ⚠️ EN=마스터 → **1편씩 품질 집중**. 워크플로우=필라단위 스프린트([A]리서치→[B]각도게이트→[C]초안+§13→[D]적대적 팩트체크→[E]커서이미지→[F]빌드·커밋).
-- ⚠️ **교훈(3bet서 발생)**: 본문 템플릿리터럴 안에 **인라인코드 백틱(`) 절대 금지**(빌드 SyntaxError) → `==...==` 사용. 달러도 이스케이프 말 것(`$` 그대로).
-- **먼저 읽기**: `docs/en-blog-pillar-cluster-map.md`(§2 필라4·§4) → `docs/keyword-bank/00-SYNTHESIS-roadmap.md` → `en-when-to.md`.
+**🎯 다음 메인 작업 = Strategy 마무리 or Odds 완성**
+- **Strategy 잔여**: `holdem-check-raise`(90) → `holdem-preflop-strategy`. 전부 허브 첫링크=`holdem-strategy`.
+- **or Odds 마무리**(빠른 도장): `holdem-implied-odds`·`holdem-equity` 2편이면 필라3(Odds) 완성.
+- ⚠️ EN=마스터 → **1편씩 품질 집중**. 워크플로우=필라단위 스프린트([A]리서치 서브에이전트 2개(경쟁사 SWOT + 정확성기준)→[B]각도(사용자가 "진행해"면 게이트 생략)→[C]초안+§13→[D]적대적 팩트체크→[E]커서이미지→[F]빌드·커밋).
+
+**⚠️ 이번 세션에서 확립된 교훈 (다음 세션도 반드시 지킬 것)**:
+- **본문 템플릿리터럴 안에 인라인코드 백틱(`) 절대 금지** → 빌드 SyntaxError. `==...==` 하이라이트 사용. 달러는 이스케이프 말 것(`$` 그대로).
+- **연관 클러스터 글끼리 본문 이미지 재사용 금지** — 독자가 넘나들 때 같은 사진 반복=프리미엄톤 저해. 신규글마다 문맥맞춤 실사 새로(메모리 `cluster-posts-unique-images`). 기존 라이브러리엔 블랙잭·한글워터마크·스타일화 이미지가 섞여 있어 재사용 전 반드시 Read로 육안검증.
+- 커밋 시 셸 cwd가 `public/images`에 갇히면 상대경로 어긋남 → `git -C <repo루트>` 명시가 안전.
+
+**📚 먼저 읽기**: `docs/en-blog-pillar-cluster-map.md`(§2 필라4·§7) → `docs/keyword-bank/00-SYNTHESIS-roadmap.md` → `en-when-to.md`(check-raise 롱테일).
 
 **🔁 병행 상시작업 = 주간 GSC 추세**: 사용자가 "이번 주 GSC" CSV 주면 → `node scripts/gsc-analyze.mjs "<폴더>"` → `docs/gsc-tracking/kpi-log.md`에 열 추가 + 지난주 대비 델타 분석(메모리 `gsc-weekly-trend-tracking`). 07-05 배포 효과는 1~3주 뒤 반영.
 
