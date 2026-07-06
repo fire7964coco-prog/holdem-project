@@ -86,7 +86,7 @@ KO 11필라를 복제하지 않고 EN 검색시장 기준으로 재편. `holdem-
 - ✅ holdem-3bet (3-betting when/how — 3 bet 1600) — 발행 2026-07-06. **Strategy 클러스터 #2, 대형키워드 #1 타깃**. 원스톱 통합각도(정의·왜3벳·value/light·linear vs polarized·사이징산수·squeeze·**facing a 3-bet 방어**·실수6·FAQ13)로 파편화된 경쟁사(Upswing=range만/PokerNews=얕은정의/888=squeeze만/BlackRain=defense만) 추월. 노벨자산=3-bet/flat/fold 결정표·villain fold-to-3bet 대응표(35/55/70)·light 3bet 블로커파인더. §13: pot $39·A♠Q♠ TPTK·사이징배수·블로커 AA6→3/AK16→12 전부 검증+적대적 팩트체커 PASS. 첫링크=허브. 히어로+레인지그리드 인포그래픽 [E] 커서 대기.
 - ✅ holdem-continuation-bet (c-bet) — 발행 2026-07-06. **Strategy 클러스터 #3, 허브 Decision4 위임처**. 원스톱 통합(정의+barrel래더·"always c-bet 틀렸다"·**보드텍스처 결정표**·빈도 치트시트(포지션×인원)·사이징 소형/폴라·OOP·멀티웨이·delayed·when NOT·실수7·FAQ12). 경쟁사 파편화(Upswing 6페이지분산/PokerNews 표·수치無/GTOWizard 초보난이도) 추월. range advantage→빈도, nut advantage→사이즈. §13: A♣K♦ TPTK on K♠7♦2♣(c-bet) + A♥Q♥ on 7♠6♠5♦(체크) + ~2/3 미스(67.6%) + $10/$20 검증. 적대적 팩트체커 PASS(교정0). 첫링크=허브. 히어로 [E] 커서 대기.
 - 🆕 holdem-bluff-spot (when to bluff / how to bluff — KO 필라 slug 정합)
-- 🆕 holdem-when-to-fold
+- ✅ holdem-when-to-fold — 발행 2026-07-06. **Strategy 클러스터 #4, 허브 Decision5 위임처**. 저경쟁(LDA14) #1 타깃. **핵심 차별화=기계적 규율+폴드 심리 융합**(경쟁 SERP은 "기계적(심리0)" vs "심리(헤드텀 랭크X)" 두 갈래로 쪼개짐→아무도 융합 안함). 원스톱: fold EV=0·프리플랍 75-85%·스트리트별(턴=give-up)·**팟오즈 문턱표**(½팟25%/⅔29%/팟33%/오버벳37.5% 검증)·**"못 접는 좋은패" 표**·good/bad laydown·**sunk cost/ego/fear 심리**·"Should I Fold?" 체크리스트·실수7·FAQ11. §13: A♥K♣ two pair KK99 리버 폴드 + 플러시드로 19.6%<25% 폴드. 적대적 팩트체커 PASS. 캐시우선. 첫링크=허브. 히어로 [E] 커서 대기.
 - 🆕 holdem-check-raise
 > 경쟁 높지만 롱테일 스팟 무한. head term("poker strategy") 정면승부 X, "should I fold pocket jacks preflop" 류 구체 스팟으로 파고듦.
 
@@ -177,7 +177,7 @@ posting.mdc STEP 준수. 롱테일 1등용 필수 체크:
 | 1 Rules | ✅ | 5 / 8 | 두꺼움 |
 | 2 Hand Rankings | ✅ | 4 / 6 | 두꺼움 |
 | 3 Odds & Math | ✅ | 3 / 5 | 허브+pot-odds+outs+drawing-odds. 남은 심화=implied-odds·equity |
-| 4 Strategy | ✅ | 허브+4 / 9 | 허브✅+limping+3bet+**c-bet(원스톱통합)**. 클러스터 심화=when-to-fold·check-raise·preflop |
+| 4 Strategy | ✅ | 허브+5 / 9 | 허브✅+limping+3bet+c-bet+**when-to-fold(심리융합)**. 클러스터 심화=check-raise·preflop |
 | 5 Tournament | ✅ | 5 / 8 | 강함(고아2) |
 | 6 Glossary | ✅ | 허브+5 | 허브 holdem-glossary 발행✅+straddle·rake·fish·cooler·bad-beat. 확장=slowroll·nuts·tilt |
 

@@ -5,16 +5,17 @@
 
 ---
 
-## ▶▶ 새 세션 START HERE (2026-07-06 심야)
+## ▶▶ 새 세션 START HERE (2026-07-06 심야 v2)
 
-**직전 작업(07-06) 요약**: EN Strategy 필라 대량 진척 — **허브 `holdem-strategy` + 클러스터 `holdem-3bet`·`holdem-continuation-bet` 3편 발행**(하루). 전부 §13+적대적 팩트체커 PASS, 빌드 "52 blog+69 intl"(EN 34편), **커밋·푸시 완료**. 3bet=대형키워드(1600) #1 타깃, c-bet=허브 Decision4 위임처. 원스톱 통합각도로 파편화된 경쟁사 추월.
+**직전 작업(07-06) 요약**: EN Strategy 필라 대량 진척 — **허브 `holdem-strategy` + 클러스터 4편(`holdem-3bet`·`holdem-continuation-bet`·`holdem-when-to-fold`) 발행**(하루). 전부 §13+적대적 팩트체커 PASS, 빌드 "52 blog+70 intl"(EN 35편), **본문 커밋·푸시 완료**. 필라4 = 허브+5클러스터로 두꺼워짐.
 
 **🟢 즉시 할 일 (07-06 발행분 마무리 — 이미지 대기 중)**:
-1. **[E] 커서 히어로 이미지** — `public/images/holdem-continuation-bet-hero.webp` **미생성**(현재 404). 실사: 프리플랍 레이저가 플랍에 칩 베팅, 다크+골드, 1200×675 ≤60KB. (3bet 이미지 2개·strategy 히어로는 이미 생성·배포됨.)
-2. **GSC 색인요청**: `/en/blog/holdem-continuation-bet` · `/en/blog/holdem-3bet` · `/en/blog/holdem-strategy` (배포 반영 후).
+1. **[E] 커서 히어로 이미지** — `public/images/holdem-when-to-fold-hero.webp` **미생성**(현재 404). 실사: 카드를 머크로 밀어넣어 폴드하는 순간, 다크+골드, 1200×675 ≤60KB. (3bet 2개·strategy·c-bet 히어로는 이미 생성·배포됨.)
+2. **GSC 색인요청**: `/en/blog/holdem-when-to-fold` · `/en/blog/holdem-continuation-bet` · `/en/blog/holdem-3bet` · `/en/blog/holdem-strategy` (배포 반영 후).
 
-**🎯 다음 메인 작업 = Strategy 클러스터 계속**
-- 우선순위: `holdem-when-to-fold`(170·LDA14, 허브 Decision5 위임처) → `holdem-check-raise`(90) → `holdem-preflop-strategy`. 전부 허브 첫링크=`holdem-strategy`.
+**🎯 다음 메인 작업 = Strategy 클러스터 계속 or Odds 마무리**
+- 우선순위: `holdem-check-raise`(90) → `holdem-preflop-strategy`. 전부 허브 첫링크=`holdem-strategy`.
+- **or Odds 마무리**(빠른 도장): `holdem-implied-odds`·`holdem-equity` 2편이면 필라3 완성.
 - **or Odds 마무리**(빠른 도장): `holdem-implied-odds`·`holdem-equity` 2편이면 필라3 완성.
 - ⚠️ EN=마스터 → **1편씩 품질 집중**. 워크플로우=필라단위 스프린트([A]리서치→[B]각도게이트→[C]초안+§13→[D]적대적 팩트체크→[E]커서이미지→[F]빌드·커밋).
 - ⚠️ **교훈(3bet서 발생)**: 본문 템플릿리터럴 안에 **인라인코드 백틱(`) 절대 금지**(빌드 SyntaxError) → `==...==` 사용. 달러도 이스케이프 말 것(`$` 그대로).

@@ -5,6 +5,14 @@
 
 ## 2026-07-06
 
+### EN Strategy 클러스터 #4 발행 `holdem-when-to-fold` — 기계+심리 융합
+- **신규 EN 포스트: `holdem-when-to-fold`** — "When to Fold in Poker: The Skill That Quietly Wins the Most"(16분). 허브 Decision5 위임처, 저경쟁(LDA14) #1 타깃.
+- **딥리서치 핵심 통찰**: 경쟁 SERP이 **"기계적 폴드(심리0: Upswing 500단어·888·SplitSuit)" vs "심리(헤드텀 랭크X: Natural8·Casino.org·GTOWizard)" 두 갈래로 분리** → **둘을 한 페이지에 융합한 곳이 전무**. 이게 우리 승기.
+- **각도=규율+심리 융합, 캐시우선**. 노벨 자산: **팟오즈 문턱표**(½팟25%/⅔29%/팟33%/오버벳37.5%) · **"못 접는 좋은패" 표**(탑페어 약킥·오버페어·4플러시보드 TPTK·모노톤 셋·세컨페어) · **good vs bad laydown** · **sunk cost/ego/fear 심리섹션** · "Should I Fold?" 체크리스트(:::steps) · 실수7표.
+- **정확성**: §13 워크드핸드(A♥K♣→리버 KK99 two pair, 패시브 체크레이즈에 폴드=good laydown) + 팟오즈 문턱 전부 검산 + 플러시드로 9/46=19.6%<25%→폴드/$25벳 5:1→콜. **적대적 팩트체커 PASS**(폴리시 3건만: grammar·"drawing→beaten"·체크리스트 문구). 프리플랍 75-85%(VPIP), AA 캐시 never/토너 예외, MDF 저스테이크스 오버폴드 헷지.
+- **역링크**: 허브 Decision5 앵커에 인라인썸네일 링크 주입(양방향), pot-odds·3bet·c-bet 상호링크. index 등록.
+- **빌드 ✅ "52 blog + 70 intl"**(EN 35편). **다음**: [E] 커서 히어로 `holdem-when-to-fold-hero.webp`(카드 머킹) → GSC 색인. Strategy 클러스터 계속(check-raise·preflop) or Odds 마무리.
+
 ### EN Strategy 클러스터 #3 발행 `holdem-continuation-bet` (c-bet) — 원스톱 통합
 - **신규 EN 포스트: `holdem-continuation-bet`** — "Continuation Bet (C-Bet): When to Fire the Flop, How Much, and When to Check"(15분). 허브 Decision4 위임처.
 - **딥리서치(서브에이전트 2개)**: ①경쟁사 SWOT — Upswing은 6+페이지로 클러스터 분산(단일페이지에 빈도%·사이징산수·표·FAQ·when-NOT 전부 없음), PokerNews 표·수치無, MyPokerCoaching 수치 흩어짐+전문용어, GTOWizard 초보난이도 → **단일 통합 페이지 부재**가 최대 공백. ②정확성(빈도 텍스처/포지션/인원 의존·사이징·range/nut advantage) 소스검증.

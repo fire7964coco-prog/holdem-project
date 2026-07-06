@@ -126,7 +126,7 @@ Aggression wins pots. **Discipline keeps stacks.** The decision that separates b
 
 Here's a concrete one from a hand I played. I raised ==A♣K♣== and got one caller. The flop came ==2♥ 7♦ 9♠== — a total miss. I have ace-high, no pair, no draw. I fire a c-bet (Decision 4, in position, dry board), and my opponent check-**raises** me. At that point the math is simple: I have the best possible high card and nothing else, and a check-raise on that board is almost never a bluff at low stakes. So I fold ace-high and lose the minimum. Two years earlier I'd have "just called to see" — and paid off a set of nines every time.
 
-The general rule: **when the story your opponent is telling beats the hand you actually hold, and you don't have the odds to draw out, let it go.** Folding a good-but-beaten hand feels like losing. It's actually the single most profitable habit in the game. When you *do* have a draw, the fold-or-call decision comes down to [pot odds](/en/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") — the price you're getting versus the chance you hit.
+The general rule: **[when the story your opponent is telling beats the hand you actually hold](/en/blog/holdem-when-to-fold "thumb:/images/holdem-when-to-fold-hero.webp"), and you don't have the odds to draw out, let it go.** Folding a good-but-beaten hand feels like losing. It's actually the single most profitable habit in the game. When you *do* have a draw, the fold-or-call decision comes down to [pot odds](/en/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") — the price you're getting versus the chance you hit.
 
 ---
 
