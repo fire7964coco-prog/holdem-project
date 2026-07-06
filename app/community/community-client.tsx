@@ -1,6 +1,7 @@
 ﻿"use client";
 
-import { useState, useTransition, useEffect, useRef, useCallback } from "react";
+import { useState, useTransition, useEffect, useRef, useCallback, type CSSProperties } from "react";
+import { useFormStatus } from "react-dom";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
@@ -406,6 +407,24 @@ type FilterKey = (typeof FILTER_PILLS)[number];
 
 function getTrending(posts: FeedPost[]) {
   return [...posts].sort((a, b) => b.likeCount - a.likeCount).slice(0, 4);
+}
+
+/**
+ * 로그아웃 버튼 — 서버액션 폼 안에서 useFormStatus로 진행 상태를 읽어
+ * 클릭 즉시 "…" + 펄스 + 비활성으로 피드백을 준다(중복 클릭 방지).
+ */
+function LogoutButton({ label, className, style }: { label: string; className?: string; style?: CSSProperties }) {
+  const { pending } = useFormStatus();
+  return (
+    <button
+      type="submit"
+      disabled={pending}
+      className={`${className ?? ""} transition-transform active:scale-90 ${pending ? "animate-pulse" : ""}`}
+      style={{ ...style, opacity: pending ? 0.55 : 1, cursor: pending ? "wait" : "pointer" }}
+    >
+      {pending ? `${label}…` : label}
+    </button>
+  );
 }
 
 type EventData = {
@@ -878,7 +897,7 @@ export default function CommunityClient({
                   <div className="text-3xl mb-3">👤</div>
                   <p className="text-[15px] font-medium mb-1" style={{ color: INK, fontFamily: "var(--font-lora),serif" }}>{L.loginRequired}</p>
                   <p className="text-sm mb-4" style={{ color: MUTED, fontFamily: "var(--font-inter),sans-serif" }}>{L.loginRequiredSub}</p>
-                  <Link href="/login" className="inline-block px-5 py-2.5 rounded text-sm font-semibold" style={{ background: INK, color: BG, fontFamily: "var(--font-inter),sans-serif" }}>
+                  <Link href="/login" className="inline-block px-5 py-2.5 rounded text-sm font-semibold transition-transform active:scale-95 hover:opacity-90" style={{ background: INK, color: BG, fontFamily: "var(--font-inter),sans-serif" }}>
                     {L.loginSignup}
                   </Link>
                 </div>
@@ -1051,18 +1070,17 @@ export default function CommunityClient({
                   {FLAG[currentUser.language] ?? "🌐"} {currentUser.nickname}
                 </span>
                 <form action={signOut}>
-                  <button
+                  <LogoutButton
+                    label={L.logout}
                     className="text-[11px] font-semibold px-2.5 py-1 rounded-full"
                     style={{ background: CARD, color: MUTED, border: `1px solid ${BORDER}` }}
-                  >
-                    {L.logout}
-                  </button>
+                  />
                 </form>
               </div>
             ) : (
               <Link
                 href="/login"
-                className="text-[11px] font-bold px-3 py-1 rounded-full"
+                className="text-[11px] font-bold px-3 py-1 rounded-full transition-transform active:scale-90 hover:opacity-90"
                 style={{ background: INK, color: BG }}
               >
                 {L.login}
@@ -1219,18 +1237,17 @@ export default function CommunityClient({
                     {currentUser.nickname.slice(0, 2).toUpperCase()}
                   </button>
                   <form action={signOut}>
-                    <button
+                    <LogoutButton
+                      label={L.logout}
                       className="text-xs font-semibold px-3 py-1.5 rounded-full"
                       style={{ background: CARD, color: MUTED, border: `1px solid ${BORDER}`, fontFamily: FONT_SANS }}
-                    >
-                      {L.logout}
-                    </button>
+                    />
                   </form>
                 </>
               ) : (
                 <Link
                   href="/login"
-                  className="text-sm font-semibold px-4 py-2 rounded-full"
+                  className="text-sm font-semibold px-4 py-2 rounded-full transition-transform active:scale-95 hover:opacity-90"
                   style={{ background: INK, color: BG, fontFamily: FONT_SANS }}
                 >
                   {L.loginArrow}
