@@ -5,6 +5,17 @@
 
 ## 2026-07-08
 
+### EN Hand Rankings 심화 발행 `holdem-kicker` — 필라2 5/6
+- **신규 EN 포스트: `holdem-kicker`** — "What Is a Kicker in Poker? The Side Card That Wins Pots"(10분). 족보(Hand Rankings) 필라 심화.
+- **딥리서치**: 키워드뱅크에 kicker 없음→SERP 대체(명시). 경쟁사(PokerNews·888·Wiki) 공통약점="있다/없다 표 없음·쿼드 키커 대충·카운팅 없음·도미네이션 분리". 통합 부재가 침투점.
+- **각도=정의+9족보 대조표+키커 카운팅표+승부결정(AK vs AQ)+playing the board+도미네이션+쿼드예외 원스톱**. H2 7개. (표 중심 = "이해보조 표" 규칙 예시)
+- **정확성**: 룰·핸드예시 4개 베스트5장 검산. **적대적 팩트체커 ALL CORRECT**(교정0, 명확성 1건: "Straight/Royal"→"Straight flush/Royal flush"). AK vs AQ(A-A-K-9-7>A-A-Q-9-7)·브로드웨이 스플릿·A9 dead kicker·쿼드 예외(보드공유시만).
+- **★자기잠식 방지**: tiebreak-rules와 seoTitle 훅 충돌 발견("Same pair but you lost") → kicker를 **정의/레퍼런스 각도로 차별화**(제목·desc 변경).
+- **역링크**: hand-rankings 허브·tiebreak-rules → kicker 인라인썸네일 양방향. index 등록.
+- **이미지 2개**(커서 실사): 히어로=AK vs AQ 쇼다운(**보드 A♣9♦5♠2♥7♣ = §13 예시 정확 일치**, 1차 보드 10-K-A-Q-2 오류→재생성) 51KB, dominated=A♠K♦ vs A♦9♣ 33KB. §9-1 통과.
+- **★규칙 추가**: `posting.mdc`에 "포스팅 전 키워드뱅크(`docs/keyword-bank/`) 먼저 읽기" 0순위 규칙 신설(사용자 지시).
+- **빌드 ✅ "52 blog + 73 intl"**(EN 38편). Hand Rankings 4/6→5/6. **다음**: GSC 색인 `/en/blog/holdem-kicker`. what-beats-what or 새 필라.
+
 ### EN Odds 클러스터 #5 발행 `holdem-equity` — 필라3(Odds) 완성 🎉
 - **신규 EN 포스트: `holdem-equity`** — "Poker Equity Explained — Win %, Fold Equity, and Realization"(12분). 필라3 5번째 = **완성**.
 - **딥리서치(서브에이전트 2개)**: SERP — equity가 26개 파일 251회 언급되나 **전용글 부재**(허브 스포크 갭). 경쟁사는 정의(얕음)+계산기 나열 or 하위개념 격리(fold/realization 각기 다른 URL). 통합글 부재가 침투점.

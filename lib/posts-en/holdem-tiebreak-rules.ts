@@ -18,7 +18,7 @@ export const POST: Post = {
   content: `
 You turn over a pair of aces. So does your opponent. The dealer pushes the pot to *them*. ==r:Same pair — how did you lose?==
 
-One word: ==**kicker**==. Same-hand showdowns happen far more often than beginners expect, and if you don't know how they're decided, the result feels random (and a lot of people end up arguing with the dealer). Here's every tie-breaker rule in one place.
+One word: ==**kicker**== — the side card that breaks the tie ([what a kicker is, and which hands have one](/en/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp")). Same-hand showdowns happen far more often than beginners expect, and if you don't know how they're decided, the result feels random (and a lot of people end up arguing with the dealer). Here's every tie-breaker rule in one place.
 
 ---
 

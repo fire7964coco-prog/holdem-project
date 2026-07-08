@@ -62,7 +62,7 @@ KO 11필라를 복제하지 않고 EN 검색시장 기준으로 재편. `holdem-
 - ✅ holdem-tiebreak-rules
 - ✅ holdem-split-pot-rules (피링크 7)
 - ✅ holdem-reading-the-board
-- 🆕 holdem-kicker (what is a kicker / kicker rules — 대형 롱테일)
+- ✅ holdem-kicker (what is a kicker / kicker rules) — 발행 2026-07-08. 정의+9족보 키커 대조표+카운팅표+AK vs AQ 승부+playing the board+도미네이션(A9 vs AK)+쿼드예외 원스톱. §13 4예시+적대적 팩트체커 ALL CORRECT. tiebreak와 seoTitle 충돌 회피(정의각도 차별화). 이미지 2. hand-rankings·tiebreak 양방향
 - 🆕 holdem-what-beats-what (poker hand cheat sheet / what beats a full house 류 FAQ 집약)
 > GSC상 "홀덤 족보"류 노출 최다. 깊이·kicker 보강으로 순위만 올리면 큰 이득.
 
@@ -175,7 +175,7 @@ posting.mdc STEP 준수. 롱테일 1등용 필수 체크:
 | 필라 | 허브 | 클러스터(발행/목표) | 상태 |
 |---|---|---|---|
 | 1 Rules | ✅ | 5 / 8 | 두꺼움 |
-| 2 Hand Rankings | ✅ | 4 / 6 | 두꺼움 |
+| 2 Hand Rankings | ✅ | 5 / 6 | 두꺼움. +kicker. 남은=what-beats-what |
 | 3 Odds & Math | ✅ | **5 / 5 완성** | 허브+pot-odds+outs+drawing-odds+implied-odds+equity. 필라 완결 |
 | 4 Strategy | ✅ | 허브+5 / 9 | 허브✅+limping+3bet+c-bet+**when-to-fold(심리융합)**. 클러스터 심화=check-raise·preflop |
 | 5 Tournament | ✅ | 5 / 8 | 강함(고아2) |

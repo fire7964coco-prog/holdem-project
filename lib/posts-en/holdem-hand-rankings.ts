@@ -46,7 +46,7 @@ Start here. This is the entire hierarchy, strongest to weakest, with the long-ru
 </div>
 
 > **The one rule that wins arguments**
-> One Pair and High Card together make up roughly 61% of all seven-card hands by the river. Big hands feel common because they're memorable — but most pots are decided by a pair and a kicker.
+> One Pair and High Card together make up roughly 61% of all seven-card hands by the river. Big hands feel common because they're memorable — but most pots are decided by a pair and a [kicker](/en/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp").
 
 :::quiz:::
 

@@ -33,6 +33,7 @@ alwaysApply: false
 
 **포스팅 시작 전 반드시 → 타깃 키워드로 구글 검색 → 상위 10개 경쟁 글 분석 → 우리가 더 줄 것 3가지 결정 → 초안 작성**
 
+- **★0순위: 키워드뱅크 먼저 읽기 (2026-07-08 사용자 지시)** — `docs/keyword-bank/`의 시드별 파일(`en-glossary-what-is-a`·`en-what-beats`·`en-odds-of`·`en-when-to`·`en-can-you`·`en-tournament`) + `00-SYNTHESIS-roadmap.md`를 **먼저 확인**해 타깃 키워드의 롱테일·승산(LDA/weak-spot)·발행 우선순위를 파악한다. 뱅크에 해당 시드가 없으면 라이브 SERP 리서치로 보완하되 **"뱅크에 없어 SERP로 대체함"을 명시**한다.
 - SERP Top 10 URL 열어 H2·분량·FAQ·표·실전 예시 비교
 - "우리가 더 줄 것" 3가지: 빠진 질문 / E-E-A-T 실전 경험 / 표·FAQ·내부링크
 - 영어 포스트: PAA 질문 전부 수집 + 자동완성 롱테일 6~8개 도출 → H2에 직접 배치
