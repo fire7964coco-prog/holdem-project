@@ -5,6 +5,16 @@
 
 ## 2026-07-08
 
+### EN Odds 클러스터 #5 발행 `holdem-equity` — 필라3(Odds) 완성 🎉
+- **신규 EN 포스트: `holdem-equity`** — "Poker Equity Explained — Win %, Fold Equity, and Realization"(12분). 필라3 5번째 = **완성**.
+- **딥리서치(서브에이전트 2개)**: SERP — equity가 26개 파일 251회 언급되나 **전용글 부재**(허브 스포크 갭). 경쟁사는 정의(얕음)+계산기 나열 or 하위개념 격리(fold/realization 각기 다른 URL). 통합글 부재가 침투점.
+- **각도=6개 하위개념 원스톱 통합 + answer-first**. H2 8개(정의→추정→equity vs pot odds→fold equity→realization→all-in→multiway→종합). 계산 상세는 outs/drawing-odds/pot-odds 링크 위임(중복 회피).
+- **정확성**: 프리플랍 매치업 **전수열거(160만 보드)** 검증 + fold equity EV +$52 + realization 공식. **적대적 팩트체크 2건 교정**: ①멀티웨이 AA 55→**64%**(vs랜덤 3명, 기준 통일) ②QQ vs AK 54→**57%**(오프수트 정설; 수딧만 54). 드로우·나머지 매치업 ALL CORRECT.
+- **역링크**: probability 허브·pot-odds → equity 인라인썸네일 양방향. index 등록.
+- **이미지 2개**(커서 실사): 히어로=**AK vs AQ 올인쇼다운(도미네이션 매치업 일치)** 45.9KB, 멀티웨이=6인 테이블 45.6KB. §9-1 통과.
+- **★부수 발견(별도 처리 필요)**: `lib/poker-eval.ts`의 `handScore`가 **휠 스트레이트(A-2-3-4-5)를 에이스하이로 오평가하는 버그**. 이번 글 무관, 나중 수정 대상.
+- **빌드 ✅ "52 blog + 72 intl"**(EN 37편). **필라3 Odds 완성**(허브+pot-odds+outs+drawing-odds+implied-odds+equity). **다음**: GSC 색인 `/en/blog/holdem-equity`. 새 필라 착수(Hand Rankings 심화 kicker/what-beats or Tournament 상시 ICM/bubble or Glossary 확장).
+
 ### EN Odds 클러스터 #4 발행 `holdem-implied-odds` — 필라3 사실상 완성
 - **신규 EN 포스트: `holdem-implied-odds`** — "Implied Odds in Poker — When a Bad Price Is a Good Call"(11분). 필라3(Odds) 4번째 클러스터.
 - **딥리서치(서브에이전트 2개)**: ①SERP/PAA — 상위권(Upswing·SplitSuit=공식만/888=reverse만/ThePokerBank=넓지만 얕고 fixed-limit 노후) **파편화 → IO+reverse IO+셋마이닝+드로별 기준+실수 통합글 부재 + PAA FAQ 거의 없음**이 최대 공백. ②정확성 검증(공식·확률·셋마이닝 배수).

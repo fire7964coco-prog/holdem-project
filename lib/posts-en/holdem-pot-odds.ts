@@ -137,7 +137,7 @@ Equity | Your actual chance of winning the hand right now
 Implied odds | The *extra* chips you expect to win on later streets if you hit
 :::
 
-**Pot odds vs. equity** is the core decision: call when your equity beats your pot odds. [**Implied odds**](/en/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp") are the tie-breaker for draws that just miss the price. If your flush draw needs 25% but only has 19.6% on the river card, you can still call *if* you'll extract enough extra bets when you hit to cover the difference. That's why you can profitably call a flop bet with a draw, and why deep stacks make draws more valuable.
+**Pot odds vs. [equity](/en/blog/holdem-equity "thumb:/images/holdem-equity-hero.webp")** is the core decision: call when your equity beats your pot odds. [**Implied odds**](/en/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp") are the tie-breaker for draws that just miss the price. If your flush draw needs 25% but only has 19.6% on the river card, you can still call *if* you'll extract enough extra bets when you hit to cover the difference. That's why you can profitably call a flop bet with a draw, and why deep stacks make draws more valuable.
 
 The dark mirror is **reverse implied odds** — the chips you'll *lose* when you hit but still lose the hand (your flush completes, but the board pairs and someone has a boat). Second-best draws quietly bleed money, which is why the [nut flush draw is worth so much more than a baby one](/en/blog/holdem-starting-hands-chart).
 
