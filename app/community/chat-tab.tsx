@@ -263,22 +263,24 @@ export default function ChatTab({
         </span>
       </div>
 
-      {/* 툴 배너 */}
-      <div
-        className="flex gap-2 px-3 py-2 overflow-x-auto flex-shrink-0"
-        style={{ borderBottom: `1px solid ${BORDER}`, scrollbarWidth: "none" }}
-      >
-        {["/calculator", "/quiz", "/hand-chart", "/ranking", "/glossary"].map((href, i) => (
-          <Link
-            key={href}
-            href={href}
-            className="flex items-center gap-1 px-3 py-1 rounded-full text-[11px] font-semibold flex-shrink-0 transition-opacity active:opacity-70 whitespace-nowrap"
-            style={{ background: "rgba(212,175,55,0.1)", color: GOLD, border: "1px solid rgba(212,175,55,0.2)" }}
-          >
-            {L.tools[i]}
-          </Link>
-        ))}
-      </div>
+      {/* 툴 배너 — 한국어 전용 (도구 페이지가 KO만 존재. 다국어 사용자에겐 숨김: 안 그러면 한국어 페이지로 이탈하며 로케일 깨짐) */}
+      {lang === "ko" && (
+        <div
+          className="flex gap-2 px-3 py-2 overflow-x-auto flex-shrink-0"
+          style={{ borderBottom: `1px solid ${BORDER}`, scrollbarWidth: "none" }}
+        >
+          {["/calculator", "/quiz", "/hand-chart", "/ranking", "/glossary"].map((href, i) => (
+            <Link
+              key={href}
+              href={href}
+              className="flex items-center gap-1 px-3 py-1 rounded-full text-[11px] font-semibold flex-shrink-0 transition-opacity active:opacity-70 whitespace-nowrap"
+              style={{ background: "rgba(212,175,55,0.1)", color: GOLD, border: "1px solid rgba(212,175,55,0.2)" }}
+            >
+              {L.tools[i]}
+            </Link>
+          ))}
+        </div>
+      )}
 
       {/* 메시지 목록 */}
       <div
