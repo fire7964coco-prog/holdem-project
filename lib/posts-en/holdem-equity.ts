@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "holdem-equity",
   title: "Poker Equity Explained — Win %, Fold Equity, and Realization",
   seoTitle: "Your Win % Isn't What You Keep — Poker Equity Explained",
-  desc: "Equity is your share of the pot — but you don't always keep it. How poker equity works, why 40% equity doesn't mean you win 40%, and how fold equity wins pots you're behind in.",
+  desc: "Equity is your share of the pot — but you don't always keep it. Why 40% equity isn't 40% of wins, plus fold equity, realization, and all-in equity explained.",
   tldr: "Equity is your share of the pot — the percentage of the time your hand wins if all the cards are dealt. You call when your equity beats the pot odds, but position and betting mean you rarely keep your full equity — and fold equity lets you win pots even when your hand is behind.",
   category: "strategy",
   date: "2026-07-08",
@@ -18,7 +18,7 @@ export const POST: Post = {
   content: `
 For a year I thought "equity" was just a fancy word for "how likely I am to win." Then I lost three big pots in a night where I was the favorite going in, and a better player told me the thing that reframed the whole game: ==your equity is what you're *owed*, not what you *collect*.== You can be 40% to win a hand and realize almost none of it — or be behind and still print money. Understanding the gap between those is most of what separates winning players from hopeful ones.
 
-==Equity is the single number that ties every other piece of poker math together — outs, pot odds, position, and aggression all resolve into one question: what share of this pot is really mine?== This guide covers what equity is, how to estimate it, and the three things nobody tells beginners: why you don't keep all of it, how folding opponents hands you extra, and why your big hand shrinks against a crowd.
+==Equity is the single number that ties every other piece of poker math together — outs, pot odds, position, and aggression all resolve into one question: what share of this pot is really mine?== This guide covers what equity is, how to estimate it, and the three things nobody tells beginners: why you don't keep all of it, how a folding opponent hands you extra, and why your big hand shrinks against a crowd.
 
 The raw win-percentages behind every hand come from the [poker odds and probability chart](/en/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp"); this guide is how you turn those percentages into decisions at the table.
 

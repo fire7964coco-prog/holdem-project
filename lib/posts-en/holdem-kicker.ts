@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "holdem-kicker",
   title: "What Is a Kicker in Poker — Rules, Counting & the Dominated Ace",
   seoTitle: "What Is a Kicker in Poker? The Side Card That Wins Pots",
-  desc: "A kicker is the side card that breaks ties in poker. Which hands have one and how many, why a weak ace like A9 loses to AK, and the four-of-a-kind exception most guides get wrong.",
+  desc: "A kicker is the side card that breaks ties in poker — which hands have one and how many, why A9 loses to AK, and the quads exception most guides get wrong.",
   tldr: "A kicker is the highest side card that isn't part of your main hand — it breaks ties when two players share the same rank. One pair uses 3 kickers, two pair 1, trips 2; straights, flushes, and full houses have none. It's why AK beats AQ when the board pairs an ace.",
   category: "초보 가이드",
   date: "2026-07-08",
@@ -66,7 +66,7 @@ Say you hold A-K and your opponent holds A-Q, and the board pairs an ace. You bo
 
 The logic is pure arithmetic: **combination cards + kickers always equal five.** One pair uses 2 cards, so 3 kickers fill the rest. A straight, flush, or full house already uses all five, so there's nothing left to kick with — two straights or two full houses are settled by the ranks *inside* them, not by a side card.
 
-==*Flushes are the asterisk:== technically a flush has no "kicker." When two flushes clash, you compare all five cards highest-to-lowest (an ace-high flush beats a king-high flush). People loosely call the top card a "kicker," but strictly it's a five-card high-card comparison. Full tie-break order for every hand lives in [how ties are broken in poker](/en/blog/holdem-tiebreak-rules "thumb:/images/holdem-tiebreak-rules-hero.webp").
+==*Flushes are the asterisk:== technically a flush has no "kicker." When two flushes clash, you compare all five cards highest-to-lowest (an ace-high flush beats a king-high flush). People loosely call the top card a "kicker," but strictly it's a five-card high-card comparison. Full tie-break order for every hand lives in [how ties are broken in poker](/en/blog/holdem-tiebreak-rules "thumb:/images/holdem-tiebreak-hero.webp").
 
 ---
 
@@ -144,7 +144,7 @@ The math is clear: four cards make the quad, one card is the kicker. It only mat
 
 :::readnext[Keep reading]
 /en/blog/holdem-hand-rankings | Poker Hand Rankings (Full Order) | /images/holdem-hand-rankings-hero.webp
-/en/blog/holdem-tiebreak-rules | How Ties Are Broken in Poker | /images/holdem-tiebreak-rules-hero.webp
+/en/blog/holdem-tiebreak-rules | How Ties Are Broken in Poker | /images/holdem-tiebreak-hero.webp
 :::
 
 ## FAQ

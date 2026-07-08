@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "holdem-implied-odds",
   title: "Implied Odds in Poker — When a Bad Price Is a Good Call",
   seoTitle: "The Call Pot Odds Say Is Wrong — Implied Odds Explained",
-  desc: "Your pot odds say fold, but the call still prints money. How implied odds work — the formula, set mining, reverse implied odds, and when the extra money isn't really there.",
+  desc: "Your pot odds say fold, but the call still prints. How implied odds work — the formula, set mining, reverse implied odds, and when the money isn't there.",
   tldr: "Implied odds are the extra chips you expect to win on later streets when your draw hits. They let you profitably call a draw that pot odds alone say to fold — but only if stacks are deep and your opponent will actually pay you off.",
   category: "strategy",
   date: "2026-07-08",
