@@ -155,6 +155,15 @@ export default function ChatTab({
   lang: string;
 }) {
   const L = getChatL(lang);
+  // 도구 페이지는 언어별로 존재하는 것만 노출 (KO=전체, EN=번역된 것만, 나머지=없음)
+  // → 번역 안 된 페이지로 이탈하며 로케일이 깨지는 문제 방지. 도구 영어판 추가 시 여기 확장.
+  const KO_TOOLS = ["/calculator", "/quiz", "/hand-chart", "/ranking", "/glossary"];
+  const toolLinks: { href: string; i: number }[] =
+    lang === "ko"
+      ? KO_TOOLS.map((href, i) => ({ href, i }))
+      : lang === "en"
+        ? [{ href: "/en/calculator", i: 0 }]
+        : [];
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [input, setInput] = useState("");
   const [sending, setSending] = useState(false);
@@ -263,13 +272,13 @@ export default function ChatTab({
         </span>
       </div>
 
-      {/* 툴 배너 — 한국어 전용 (도구 페이지가 KO만 존재. 다국어 사용자에겐 숨김: 안 그러면 한국어 페이지로 이탈하며 로케일 깨짐) */}
-      {lang === "ko" && (
+      {/* 툴 배너 — 언어별로 존재하는 도구만 (toolLinks). 번역 안 된 페이지로의 이탈 방지 */}
+      {toolLinks.length > 0 && (
         <div
           className="flex gap-2 px-3 py-2 overflow-x-auto flex-shrink-0"
           style={{ borderBottom: `1px solid ${BORDER}`, scrollbarWidth: "none" }}
         >
-          {["/calculator", "/quiz", "/hand-chart", "/ranking", "/glossary"].map((href, i) => (
+          {toolLinks.map(({ href, i }) => (
             <Link
               key={href}
               href={href}
