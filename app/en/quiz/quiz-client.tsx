@@ -70,7 +70,7 @@ export default function QuizEn() {
     setPhase('playing'); setQNum(1); setScore(0); setQ(makeQuestion()); setSelected(null);
   }, []);
 
-  const shareText = `Poker hand quiz: ${score}/${TOTAL} 🃏\nTest your hand-reading → holdemmaster.com/en/quiz`;
+  const shareText = `Poker hand quiz: ${score}/${TOTAL} 🃏\nTest your hand-ranking skills → holdemmaster.com/en/quiz`;
   const handleCopy = () => {
     navigator.clipboard.writeText(shareText).then(() => { setCopied(true); setTimeout(()=>setCopied(false),2000); });
   };
@@ -81,12 +81,12 @@ export default function QuizEn() {
   if (phase === 'done') {
     return (
       <>
-        <SEO title="Hand Quiz Result | HoldemMaster" description={`I scored ${score}/${TOTAL} on the poker hand quiz! Test your hand-reading skills at HoldemMaster.`} path="/en/quiz" />
+        <SEO title="Hand Quiz Result | HoldemMaster" description={`I scored ${score}/${TOTAL} on the poker hand quiz! Test your hand-ranking skills at HoldemMaster.`} path="/en/quiz" />
         <div className="min-h-screen flex items-center justify-center px-4 py-16">
           <motion.div initial={false} animate={{ opacity:1, scale:1 }} className="w-full max-w-md text-center">
             <div className="mb-6 inline-flex items-center justify-center w-20 h-20 rounded-full border-2 text-3xl"
               style={{ borderColor:grade.color, background:`${grade.color}18` }}>
-              {score>=8?'🏆':score>=6?'🔥':score>=4?'👍':'💪'}
+              {score===10?'🏆':score>=8?'🔥':score>=6?'👍':score>=4?'📚':'💪'}
             </div>
             <h1 className="font-serif text-3xl font-black text-foreground mb-1">Your result</h1>
             <p className="text-muted-foreground mb-6">{TOTAL} questions completed</p>
@@ -125,7 +125,7 @@ export default function QuizEn() {
     <>
       <SEO
         title="Poker Hand Quiz — Spot the Best Hand from 7 Cards | HoldemMaster"
-        description="Poker hand quiz! From 7 cards, pick the best 5-card hand. Test your hand-reading with 10 questions and share your score."
+        description="Poker hand quiz! From 7 cards, pick the best 5-card hand. Test your hand-ranking skills with 10 questions and share your score."
         path="/en/quiz"
       />
       <div className="min-h-screen max-w-xl mx-auto px-4 py-10">

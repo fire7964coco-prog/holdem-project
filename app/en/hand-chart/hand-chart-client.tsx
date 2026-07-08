@@ -81,7 +81,7 @@ export default function HandChartEn() {
     <>
       <SEO
         title="Poker Starting Hand Chart — Open Ranges by Position"
-        description="Interactive Texas Hold'em starting hand chart. Compare all 169 hands across UTG, HJ, CO, Button, and SB with color-coded GTO open ranges — tap a position to highlight what to play."
+        description="Interactive Texas Hold'em starting-hand chart. Compare all 169 hands across UTG, HJ, CO, Button, and SB with color-coded GTO open ranges."
         canonical="https://www.holdemmaster.com/en/hand-chart"
         keywords={["poker starting hand chart", "preflop range chart", "holdem open ranges", "UTG range", "button range", "GTO starting hands"]}
       />
@@ -103,7 +103,7 @@ export default function HandChartEn() {
               Poker Starting Hand Chart
             </h1>
             <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
-              All 169 hands color-coded by position (UTG → SB). Tap a button to highlight only the hands you can open from that seat.
+              All 169 hands color-coded by position (UTG → SB). Tap a position to highlight only the hands you can open from that seat.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 pt-2 text-sm">
               <span className="text-foreground font-bold">169<span className="text-muted-foreground font-normal ml-1">hands</span></span>
@@ -347,10 +347,10 @@ export default function HandChartEn() {
                       <td className="px-4 py-3 text-muted-foreground whitespace-nowrap">{pos.pct}</td>
                       <td className="px-4 py-3 text-muted-foreground text-xs">
                         {pos.id === 1 && "AA-77, AKs-A10s, KQs-KJs, AKo-AJo, KQo"}
-                        {pos.id === 2 && "+66-55, A9s-A8s, K10s, Q10s, J9s, 10-8s, 98s, A10o, KJo"}
-                        {pos.id === 3 && "+44, A7s-A2s, K9s, Q9s, J8s, 97s, 87s, K10o, QJo, J10o"}
-                        {pos.id === 4 && "+33-22, K8s-K4s, Q8s-Q7s, J7s, 10-7s, 76s-65s, K9o+, Q9o+"}
-                        {pos.id === 5 && "+A6o-A4o, K8o-K7o, Q8o, J7o, 97o-87o, 76o, 95s, 85s, 75s, 64s, 54s"}
+                        {pos.id === 2 && "+66-55, A9s-A8s, K10s, Q10s, J9s, 10-8s, 98s, A10o, KJo, QJo, J10o"}
+                        {pos.id === 3 && "+44, A7s-A5s, K9s, Q9s, J8s, 97s, 87s, K10o, Q10o"}
+                        {pos.id === 4 && "+33-22, K8s-K7s, Q8s, J7s, 10-7s, 65s-54s, K9o, Q9o"}
+                        {pos.id === 5 && "+A6o-A4o, K8o-K7o, Q8o, J7o, 97o, 87o, 76o, 95s, 85s, 74s, 64s"}
                       </td>
                     </tr>
                   );
@@ -380,7 +380,7 @@ export default function HandChartEn() {
               },
               {
                 title: "The value of suited",
-                desc: "A suited hand has roughly a 3–4% EV edge over the same offsuit hand. That's why you can open A8s from UTG but fold A8o.",
+                desc: "A suited hand has roughly a 3–5% equity edge over the same offsuit hand. That's why you can open A8s from the hijack but wait for the button with A8o.",
                 icon: "♠️",
               },
               {
@@ -420,7 +420,7 @@ export default function HandChartEn() {
             },
             {
               q: "What do I do if I get 3-bet?",
-              a: "Your opening range and your 3-bet-calling range are different. Generally you respond to a 3-bet with premiums like AA-JJ and AKs-AQs, plus some bluffs (nut-flush-draw hands like A5s, A4s). Fold the rest.",
+              a: "Your opening range and your 3-bet-calling range are different. Generally you respond to a 3-bet with premiums like AA-JJ and AKs-AQs, plus some bluffs — suited wheel aces like A5s and A4s that block AA/AK and can make the nut flush. Fold the rest.",
             },
           ].map((item) => (
             <details

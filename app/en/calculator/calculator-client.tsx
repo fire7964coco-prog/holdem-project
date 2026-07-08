@@ -70,13 +70,18 @@ const TIER_INFO: Record<1|2|3|4|5, Omit<HandTier,"tier"|"label"|"action"|"desc">
   5: { color:"text-red-400",    bg:"bg-red-400/10 border-red-400/40" },
 };
 
+// Full class names (literal so Tailwind generates them) for the tier progress bar.
+const TIER_BAR: Record<1|2|3|4|5, string> = {
+  1: "bg-yellow-300", 2: "bg-green-400", 3: "bg-blue-400", 4: "bg-orange-400", 5: "bg-red-400",
+};
+
 type TierEntry = [1|2|3|4|5, string, string, string];
 const HAND_TABLE: TierEntry[] = [
   [1, "AA", "The best hand. Raise in every spot", "Always raise/re-raise (3-bet)"],
   [1, "KK", "Only watch for an ace on the flop", "Always raise/re-raise"],
   [1, "QQ", "Stronger than JJ, but don't overvalue", "Always raise; careful when deep"],
   [1, "JJ", "Watch for overcards on the flop", "Raise from any position"],
-  [1, "1010", "Loses value when JJ+ shows up", "Raise mid/late, consider calling EP"],
+  [1, "1010", "Loses value when overcards flop", "Raise mid/late, consider calling EP"],
   [1, "AKs", "The best drawing hand. Build the pot", "Always raise/re-raise"],
   [1, "AKo", "Weaker than AKs but still premium", "Always raise; can call a re-raise"],
   [2, "AQs", "Strong hand; more valuable in position", "Raise from most positions"],
@@ -95,12 +100,12 @@ const HAND_TABLE: TierEntry[] = [
   [3, "109s", "Strong suited connector", "Raise/call in LP"],
   [3, "77",  "Set-mining hand, watch overcards", "Raise LP, call EP"],
   [3, "A9s", "Suited ace with flush potential", "Raise in LP"],
-  [4, "66",  "Set-mining; needs pot odds", "Call/raise LP, prefers multiway"],
+  [4, "66",  "Set-mining; needs pot odds", "Call/raise LP, best multiway"],
   [4, "55",  "Little value without a set", "Call LP, single-raised pots"],
   [4, "A8s", "Medium suited ace", "Play LP, fold EP"],
   [4, "A7s", "Medium suited ace", "Play LP only"],
   [4, "A6s", "Medium suited ace", "Play LP only"],
-  [4, "A5s", "Can beat A9s (wheel potential)", "LP only; implied odds matter"],
+  [4, "A5s", "Wheel + ace-blocker value; a favorite 3-bet bluff", "LP only; implied odds matter"],
   [4, "A4s", "Suited ace with a wheel draw", "LP only"],
   [4, "A3s", "Bottom of the suited aces", "BTN/SB only"],
   [4, "A2s", "Wheel + nut flush, but weak", "BTN only"],
@@ -110,11 +115,15 @@ const HAND_TABLE: TierEntry[] = [
   [4, "87s", "Good suited connector", "Call LP"],
   [4, "76s", "Suited connector", "Call LP on pot odds"],
   [5, "44",  "Almost no value without a set", "Call only at low pot odds"],
-  [5, "33",  "Needs to set-mine; gambly", "Multiway pots, cheap calls only"],
+  [5, "33",  "Needs to set-mine; speculative", "Multiway pots, cheap calls only"],
   [5, "22",  "Lowest pocket pair", "Multiway pots, cheap calls only"],
   [5, "K10o", "K-10 offsuit, weak", "Occasionally from BTN"],
   [5, "Q10o", "Low-connectivity offsuit", "BTN only"],
   [5, "J10o", "Decent offsuit but vulnerable", "Occasionally from BTN"],
+  [3, "Q10s", "Strong suited broadway, plays well in position", "Raise LP, call EP on pot odds"],
+  [4, "A10o", "Marginal offsuit ace, domination-prone", "LP only"],
+  [4, "65s", "Suited connector; wants multiway/implied odds", "Call LP"],
+  [4, "54s", "Low suited connector; speculative", "Call LP, cheap multiway pots"],
 ];
 
 function getHandName(c1: Card, c2: Card): string {
@@ -220,11 +229,11 @@ function CardPicker({ selected, max, onToggle, onClear, disabled = [], label }: 
 const DRAW_PRESETS = [
   { label: "Custom input", outs: 0, custom: true },
   { label: "Nut flush draw", outs: 9, desc: "4 cards of a suit → need the 5th" },
-  { label: "Open-ended straight (OESD)", outs: 8, desc: "e.g. 5-6-7-8, need a 4 or 9" },
+  { label: "Open-ended straight draw (OESD)", outs: 8, desc: "e.g. 5-6-7-8, need a 4 or 9" },
   { label: "Flush + gutshot combo", outs: 12, desc: "9 flush + 3 gutshot (overlap removed)" },
   { label: "Gutshot straight", outs: 4, desc: "e.g. 5-6-8-9, need just a 7" },
   { label: "Two overcards", outs: 6, desc: "2 high ranks not on board × 3 each" },
-  { label: "Two pair → full house", outs: 4, desc: "AA+KK → 2 aces, 2 kings left" },
+  { label: "Two pair → full house", outs: 4, desc: "e.g. A-K on an A-K-x board → 2 aces + 2 kings left" },
   { label: "One pair → trips", outs: 2, desc: "2 cards of the rank remain" },
   { label: "Flush + OESD (monster)", outs: 15, desc: "9 flush + 8 straight (2 overlap)" },
 ];
@@ -552,11 +561,11 @@ function StartingHandCalc() {
             </div>
             <div className="flex justify-between gap-1">
               {[1,2,3,4,5].map(t => (
-                <div key={t} className={`flex-1 h-2.5 rounded-full ${result.tier <= t ? Object.values(TIER_INFO)[t-1].bg.split(" ")[0].replace("/10","") : "bg-muted"}`} />
+                <div key={t} className={`flex-1 h-2.5 rounded-full ${result.tier <= t ? TIER_BAR[t as 1|2|3|4|5] : "bg-muted"}`} />
               ))}
             </div>
             <div className="flex justify-between text-[10px] text-muted-foreground mt-1">
-              <span>Premium</span><span>Strong</span><span>Fair</span><span>Weak</span><span>Fold</span>
+              <span>Premium</span><span>Strong</span><span>Playable</span><span>Marginal</span><span>Weak</span>
             </div>
           </motion.div>
         )}
@@ -569,8 +578,8 @@ function StartingHandCalc() {
             [1,"AA KK QQ JJ 10-10 AKs AKo","Always raise"],
             [2,"AQs AJs A10s KQs KJs 99 88 AQo","Raise most positions"],
             [3,"AJo KQo K10s QJs J10s 10-9s 77 A9s","Raise late position"],
-            [4,"66~55 A8s~A2s KJo QJo suited connectors","Selective in LP"],
-            [5,"44~22 weak offsuit","Usually fold"],
+            [4,"66–55 A8s–A2s KJo QJo suited connectors","Selective in LP"],
+            [5,"44–22 weak offsuit hands","Usually fold"],
           ] as [1|2|3|4|5, string, string][]).map(([t,hands,act]) => (
             <div key={t} className={`flex items-center gap-3 rounded-lg p-2.5 border ${TIER_INFO[t].bg}`}>
               <span className={`text-xs font-black w-4 ${TIER_INFO[t].color}`}>{t}</span>
@@ -834,7 +843,7 @@ function ICMCalc() {
     <div className="space-y-6">
       <div className="bg-primary/8 border border-primary/20 rounded-xl p-4 text-sm text-foreground/80 leading-relaxed">
         <strong className="text-primary">ICM (Independent Chip Model)</strong> is a way to calculate the real cash value of your tournament chips.
-        Even the chip leader's ICM value is lower than their chip share, and short stacks are lower still.
+        Even the chip leader's ICM value is lower than their chip share, while short stacks are worth more than theirs.
         Use it for call/fold decisions at the final table and on the bubble.
       </div>
 
@@ -843,7 +852,7 @@ function ICMCalc() {
           <label className="text-xs text-muted-foreground mb-2 block font-bold uppercase tracking-wider">Number of players</label>
           <div className="flex gap-1.5 flex-wrap">
             {[2,3,4,5,6,7,8,9].map(n => (
-              <button key={n} onClick={() => setNumPlayers(n)}
+              <button key={n} onClick={() => { setNumPlayers(n); setNumPrizes(p => Math.min(p, n)); }}
                 className={`w-9 h-9 rounded-lg text-sm font-bold border transition-all ${numPlayers===n ? "bg-primary text-primary-foreground border-primary" : "bg-background border-border text-muted-foreground hover:border-primary/50"}`}>
                 {n}
               </button>
@@ -1089,6 +1098,7 @@ export default function CalculatorPageEn() {
               { title:"📊 Starting hand strength", body:"Pick your two hole cards to see which of the 169 hands it is and the recommended action by position." },
               { title:"📐 SPR (Stack-to-Pot Ratio)", body:"The stack-to-pot ratio tells you how strong a hand you need. The lower the SPR, the more it favors committing with a strong hand." },
               { title:"🏆 Tournament M value", body:"Harrington's M measures the pressure on your tournament stack. Your strategy shifts completely across the green/yellow/orange/red/dead zones." },
+              { title:"📈 ICM calculator", body:"The Independent Chip Model converts tournament chips into real prize-money value — essential for correct call/fold decisions on the bubble and at the final table." },
             ].map(c => (
               <div key={c.title} className="bg-card border border-border rounded-xl p-5">
                 <h3 className="text-base font-black text-foreground mb-2">{c.title}</h3>

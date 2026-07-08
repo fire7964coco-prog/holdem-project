@@ -32,7 +32,7 @@ const TERMS: Term[] = [
   { term: "Button (BTN)", cat: "Position", desc: "The dealer position, marked by a round disc. It acts last after the flop — the most profitable seat — and moves one seat clockwise each hand." },
   { term: "Call", cat: "Action", desc: "Matching the current bet to stay in the hand. A player who calls far too often is called a 'calling station'." },
   { term: "Check", cat: "Action", desc: "Passing the action without betting — only possible when no one has bet before you in the round." },
-  { term: "Check-Raise", cat: "Action", desc: "Checking first, then raising after an opponent bets. A powerful move to trap strong hands or punish habitual bettors." },
+  { term: "Check-Raise", cat: "Action", desc: "Checking first, then raising after an opponent bets. A powerful move to trap opponents holding a strong hand, or to punish habitual bettors." },
   { term: "Continuation Bet (C-Bet)", cat: "Action", desc: "A bet on the flop by the player who raised preflop, keeping the initiative they already had. Effective because opponents often miss the flop." },
   { term: "Cooler", cat: "Slang", desc: "A hand where two very strong holdings collide and someone was always going to lose big — like a set running into a higher set. Rarely avoidable." },
   { term: "Draw", cat: "Hand", desc: "An unfinished hand that becomes strong if the right card arrives — most often a flush draw or a straight draw." },
@@ -46,7 +46,7 @@ const TERMS: Term[] = [
   { term: "Kicker", cat: "Hand", desc: "A side card that breaks a tie when two players share the same made hand. Example: on an ace pair, A-K beats A-Q because the king outkicks the queen." },
   { term: "Limp", cat: "Action", desc: "Just calling the big blind preflop instead of raising. Usually a passive, weak play that invites others in cheaply." },
   { term: "Nuts", cat: "Hand", desc: "The best possible hand given the current board. If you 'have the nuts', you cannot lose the hand as it stands." },
-  { term: "Offsuit", cat: "Hand", desc: "Two cards of different suits (e.g., A♠K♦). Slightly weaker than the suited version of the same hand because it can't make a flush." },
+  { term: "Offsuit", cat: "Hand", desc: "Two cards of different suits (e.g., A♠K♦). Slightly weaker than the suited version of the same hand because it's far less likely to make a flush." },
   { term: "Outs", cat: "Math", desc: "The cards left in the deck that improve you to the winning hand. A flush draw has 9 outs; an open-ended straight draw has 8." },
   { term: "Overpair", cat: "Hand", desc: "A pocket pair higher than every card on the board — for example, QQ on a J-7-3 flop." },
   { term: "Position", cat: "Position", desc: "Where you act in the betting order. Acting later ('in position') is a major edge because you see opponents act before you decide." },
@@ -218,7 +218,7 @@ export default function GlossaryEn() {
         ) : (
           <div className="text-center py-16 text-muted-foreground">
             <div className="text-4xl mb-3">🔍</div>
-            <p className="font-semibold">No term found for &ldquo;{query}&rdquo;.</p>
+            <p className="font-semibold">No terms found for &ldquo;{query}&rdquo;.</p>
             <p className="text-sm mt-1">Try a different keyword or category.</p>
           </div>
         )}
