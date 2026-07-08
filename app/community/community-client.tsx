@@ -461,6 +461,18 @@ export default function CommunityClient({
     if (t === "event" || t === "chat" || t === "profile") setTab(t);
   }, []);
 
+  // 탭 변경 시 URL(?tab=)에 동기화 → 도구(계산기 등)에 갔다가 뒤로가기 시 직전 탭(예: 채팅) 복원.
+  const tabSynced = useRef(false);
+  useEffect(() => {
+    if (!tabSynced.current) { tabSynced.current = true; return; } // 첫 렌더는 마운트 읽기와 충돌 방지로 skip
+    try {
+      const url = new URL(window.location.href);
+      if (tab === "home") url.searchParams.delete("tab");
+      else url.searchParams.set("tab", tab);
+      window.history.replaceState(window.history.state, "", url.toString());
+    } catch { /* noop */ }
+  }, [tab]);
+
   useEffect(() => {
     // OAuth 에러 파라미터 처리
     const params = new URLSearchParams(window.location.search);
