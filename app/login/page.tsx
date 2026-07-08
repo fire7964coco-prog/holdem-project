@@ -19,7 +19,7 @@ function LoginForm() {
   const [password, setPassword] = useState("");
   const [nickname, setNickname] = useState("");
   const [loading, setLoading] = useState(false);
-  const [socialLoading, setSocialLoading] = useState<"google" | null>(null);
+  const [socialLoading, setSocialLoading] = useState<"google" | "kakao" | null>(null);
   const [msg, setMsg] = useState<string | null>(null);
   const [err, setErr] = useState<string | null>(null);
 
@@ -145,6 +145,27 @@ function LoginForm() {
             )}
           </button>
 
+          <button
+            onClick={() => handleSocialLogin("kakao")}
+            disabled={!!socialLoading}
+            className="w-full flex items-center justify-center gap-3 py-3 rounded-xl text-sm font-semibold transition-opacity disabled:opacity-50 active:scale-[0.98]"
+            style={{ background: "#FEE500", color: "#191919" }}
+          >
+            {socialLoading === "kakao" ? (
+              <span>처리 중...</span>
+            ) : (
+              <>
+                {/* Kakao 말풍선 SVG */}
+                <svg width="18" height="18" viewBox="0 0 256 256" aria-hidden="true">
+                  <path
+                    fill="#191919"
+                    d="M128 36C70.562 36 24 72.713 24 118c0 29.28 19.466 54.97 48.748 69.477-1.593 5.494-10.237 35.34-10.581 37.681 0 0-.207 1.762.934 2.434 1.141.672 2.483.15 2.483.15 3.272-.457 37.943-24.811 43.944-29.04 6.031.849 12.226 1.298 18.472 1.298 57.438 0 104-36.712 104-82 0-45.287-46.562-82-104-82z"
+                  />
+                </svg>
+                카카오로 계속하기
+              </>
+            )}
+          </button>
         </div>
 
         {/* 구분선 */}
