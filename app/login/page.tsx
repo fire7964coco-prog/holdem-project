@@ -48,6 +48,8 @@ function LoginForm() {
       provider,
       options: {
         redirectTo: `${window.location.origin}/auth/callback`,
+        // 카카오: 이메일(account_email)은 비즈앱 전환 필요 → 닉네임만 요청해 KOE205 방지
+        scopes: provider === "kakao" ? "profile_nickname" : undefined,
         queryParams:
           provider === "google"
             ? { access_type: "offline", prompt: "consent" }
