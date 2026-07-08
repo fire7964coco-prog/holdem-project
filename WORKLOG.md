@@ -5,6 +5,17 @@
 
 ## 2026-07-08
 
+### EN 크로스필라 독립글 발행 `holdem-card-counting` — 저경쟁 롱테일
+- **신규 EN 포스트: `holdem-card-counting`** — "Can You Count Cards in Poker? Yes — But Not Like Blackjack"(10분). 특정 필라 무소속(Rules/Odds 크로스). 타깃 "can you count cards in poker" 480·**LDA18 최저경쟁**.
+- **★키워드뱅크 활용(신규 규칙 첫 적용)**: en-what-beats는 "신규X, 허브FAQ 흡수"라 스킵 → can-you 시드 "독립 후보 can you count cards 480·LDA18" 선정. 검색의도 최우선.
+- **딥리서치**: 검색자 다수가 "블랙잭 넘어온 사람"→블랙잭 프레임 깨기가 훅. 경쟁사 갭="블랙잭 왜 안되는지 얕음·아웃츠+블로커+데드카드 통합글 드묾·합법성 대조표 없음·Stud 예외 누락".
+- **각도=블랙잭식 무효+포커식 카운팅 통합 원스톱**. H2 7개(직답→왜 안됨 3이유→대조표→아웃츠/블로커/데드카드→합법성→Stud 예외→실전 3스텝). :::compare 대조표(이해보조 규칙).
+- **정확성**: **적대적 팩트체커 ALL CORRECT**(교정0). 플러시9아웃 35.0%(4-2룰 36% 근사 구분)·넛플러시 블로커 A♠ 완전제거·넛스트레이트 K-T 16→12(25%↓)·합법성("illegal" 단정 회피)·Stud 업카드 카운팅.
+- **desc 154자**(신규 desc≤160 규칙 첫 준수 — 작성부터 통과).
+- **역링크**: outs("포커의 진짜 카운팅") → card-counting 인라인썸네일. 본문은 outs·3bet·probability·pot-odds 링크. index 등록.
+- **이미지 2개**(커서 실사): 히어로=암산하는 플레이어 33KB, 블로커=A♠+보드 K♠9♠4♠(§13 정확 일치, A♠ 중복0) 49KB. §9-1 통과.
+- **빌드 ✅ "52 blog + 74 intl"**(EN 39편). **다음**: GSC 색인 `/en/blog/holdem-card-counting`.
+
 ### EN Hand Rankings 심화 발행 `holdem-kicker` — 필라2 5/6
 - **신규 EN 포스트: `holdem-kicker`** — "What Is a Kicker in Poker? The Side Card That Wins Pots"(10분). 족보(Hand Rankings) 필라 심화.
 - **딥리서치**: 키워드뱅크에 kicker 없음→SERP 대체(명시). 경쟁사(PokerNews·888·Wiki) 공통약점="있다/없다 표 없음·쿼드 키커 대충·카운팅 없음·도미네이션 분리". 통합 부재가 침투점.

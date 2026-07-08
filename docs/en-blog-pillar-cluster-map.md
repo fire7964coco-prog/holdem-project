@@ -181,4 +181,6 @@ posting.mdc STEP 준수. 롱테일 1등용 필수 체크:
 | 5 Tournament | ✅ | 5 / 8 | 강함(고아2) |
 | 6 Glossary | ✅ | 허브+5 | 허브 holdem-glossary 발행✅+straddle·rake·fish·cooler·bad-beat. 확장=slowroll·nuts·tilt |
 
+> ✚ **크로스필라 독립글**: `holdem-card-counting`("can you count cards in poker" 480·LDA18 저경쟁) — 발행 2026-07-08. 특정 필라 무소속. 블랙잭 카운팅 무효+포커식 카운팅(아웃츠·블로커·데드카드) 통합. outs(첫링크)·3bet(블로커)·probability·pot-odds 연결. 키워드뱅크 can-you 시드 "독립 후보".
+
 > 글 발행/수정 시 이 표와 §2 트리를 갱신할 것.

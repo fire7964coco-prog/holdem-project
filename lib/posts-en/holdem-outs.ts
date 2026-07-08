@@ -18,7 +18,7 @@ export const POST: Post = {
   content: `
 For my first year at the table I "played my draws" without ever counting them. A flush draw and a gutshot felt about the same — both were "cards that could come" — so I called the same on both and wondered why I kept losing. The fix wasn't a strategy course. It was a five-minute habit: ==stop, and actually count the cards that save me.==
 
-That habit is called counting **outs**, and it's the single skill that sits underneath every odds decision in poker. Before you can ask "is this call profitable?" you have to answer "how many cards win the hand for me?" This guide is the counting half — the [poker odds and probability chart](/en/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp") is the reference behind it, and [pot odds](/en/blog/holdem-pot-odds) is what you do with the number once you have it.
+That habit is called counting **outs** — [poker's real answer to "counting cards"](/en/blog/holdem-card-counting "thumb:/images/holdem-card-counting-hero.webp") — and it's the single skill that sits underneath every odds decision in poker. Before you can ask "is this call profitable?" you have to answer "how many cards win the hand for me?" This guide is the counting half — the [poker odds and probability chart](/en/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp") is the reference behind it, and [pot odds](/en/blog/holdem-pot-odds) is what you do with the number once you have it.
 
 ---
 

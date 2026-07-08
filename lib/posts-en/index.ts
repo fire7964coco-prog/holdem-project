@@ -8,6 +8,7 @@ import { POST as holdemDrawingOdds } from "./holdem-drawing-odds";
 import { POST as holdemImpliedOdds } from "./holdem-implied-odds";
 import { POST as holdemEquity } from "./holdem-equity";
 import { POST as holdemKicker } from "./holdem-kicker";
+import { POST as holdemCardCounting } from "./holdem-card-counting";
 import { POST as holdemStraddle } from "./holdem-straddle";
 import { POST as holdemRake } from "./holdem-rake";
 import { POST as holdemFish } from "./holdem-fish";
@@ -55,6 +56,7 @@ export const EN_POSTS: Post[] = [
   holdemFish,
   holdemRake,
   holdemStraddle,
+  holdemCardCounting,
   holdemEquity,
   holdemImpliedOdds,
   holdemDrawingOdds,
