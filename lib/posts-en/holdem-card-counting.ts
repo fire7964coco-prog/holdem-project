@@ -16,7 +16,7 @@ export const POST: Post = {
   imageAlt: "A poker player quietly counting outs in their head at a live table, chips and a spread board in front of them — the mental math that replaces blackjack-style counting",
   tags: ["card counting poker", "can you count cards in poker", "is counting cards illegal in poker", "card counting vs blackjack", "counting cards texas holdem", "blockers poker", "counting outs", "poker card removal"],
   content: `
-Every poker player who came from blackjack asks the same question in their first session: "can I just count cards here?" I did too — I spent a month trying to keep a running count at a Hold'em table before a dealer laughed and told me I was wasting my brain on the wrong math. He was right. Blackjack counting is useless in poker, but that doesn't mean counting is. It just means you count ==different things.==
+Every poker player who came from blackjack asks the same question in their first session: "can I just count cards here?" I did too — I spent a month trying to keep a running count at a Hold'em table before a dealer laughed and told me I was wasting my brainpower on the wrong math. He was right. Blackjack counting is useless in poker, but that doesn't mean counting is. It just means you count ==different things.==
 
 ==Yes, you "count cards" in poker — just not the deck. You count outs, blockers, and dead cards, and it's completely legal.== This guide explains exactly why the blackjack method dies at a poker table, what the poker version actually is, whether any of it is against the rules, and the one poker game where old-school counting genuinely works.
 
