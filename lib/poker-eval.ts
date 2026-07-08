@@ -86,10 +86,15 @@ function handScore(cards: Card[]): number[] {
     const v = RANK_VALUE[c.rank];
     freq[v] = (freq[v] || 0) + 1;
   }
-  return Object.entries(freq)
+  const score = Object.entries(freq)
     .map(([v, f]) => [Number(v), Number(f)] as [number, number])
     .sort(([va, fa], [vb, fb]) => fb - fa || vb - va)   // 빈도↓, 값↓
     .flatMap(([v, f]) => Array(f).fill(v));
+  // 휠 스트레이트(A-2-3-4-5): 에이스는 로우로 취급 → 5 하이. [14,5,4,3,2]는 항상 휠뿐이라 안전.
+  if (score.length === 5 && score[0] === 14 && score[1] === 5 && score[2] === 4 && score[3] === 3 && score[4] === 2) {
+    return [5, 4, 3, 2, 1];
+  }
+  return score;
 }
 
 function scoreBetter(a: number[], b: number[]): boolean {
