@@ -162,7 +162,7 @@ export default function ChatTab({
     lang === "ko"
       ? KO_TOOLS.map((href, i) => ({ href, i }))
       : lang === "en"
-        ? [{ href: "/en/calculator", i: 0 }, { href: "/en/quiz", i: 1 }, { href: "/en/hand-chart", i: 2 }]
+        ? [{ href: "/en/calculator", i: 0 }, { href: "/en/quiz", i: 1 }, { href: "/en/hand-chart", i: 2 }, { href: "/en/glossary", i: 4 }]
         : [];
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [input, setInput] = useState("");
