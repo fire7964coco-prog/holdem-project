@@ -93,6 +93,13 @@ But here's the catch almost every guide skips: **"your equity equals your pot sh
 
 **Fold equity is the extra equity you gain from the chance your opponent folds — it's why a bet can win a pot your hand alone would lose.** When you bet, you have two ways to win: your opponent folds now, or they call and you win at showdown. Checking only gives you the second one.
 
+:::compare
+Betting (aggression) | Checking or calling (passive)
+They fold now → you win the pot | No fold equity — nobody folds to a check
+They call and you hit → you win | You hit → you win
+==g:Two ways to win== | ==r:One way to win==
+:::
+
 For a ==pure bluff== with no chance to improve, the break-even is simple: you need your opponent to fold often enough to cover the risk. Betting $50 into a $100 pot, your break-even fold rate is ==B ÷ (P + B) = 50 ÷ 150 = 33%==. If they fold more than a third of the time, betting profits — even with the worst hand at the table.
 
 Now add a draw, and it gets much better. Here's the full picture as a ==g:semi-bluff==: pot is $100, you bet $50 with a flush draw, your opponent folds 40% of the time, and when they call you still have 35% equity to hit by the river.

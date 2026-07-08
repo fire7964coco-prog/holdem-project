@@ -135,6 +135,13 @@ The exact flop-a-set math and every other "odds of flopping X" number live in [d
 
 **Reverse implied odds are the chips you *lose* when you complete your hand but it's still second best.** Implied odds are the money you win when you hit; reverse implied odds are the money you bleed when you hit *and lose anyway*. Ignore them and you'll fall in love with draws that are quietly traps.
 
+:::compare
+Implied odds | Reverse implied odds
+Money you ==g:win== on later streets when you hit | Money you ==r:lose== on later streets when you hit but it's second-best
+Rewards draws to the nuts | Punishes weak, dominated draws
+Raises a draw's value | Lowers a draw's value
+:::
+
 Three classic reverse-implied spots:
 
 - **The baby flush.** You hold ==b:7♦ 6♦== and the board brings a third diamond. You make your flush — and pay off a stack to the guy holding ==b:A♦== for the nut flush. Your "winning" card cost you money.
