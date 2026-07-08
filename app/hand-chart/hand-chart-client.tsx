@@ -346,10 +346,10 @@ export default function HandChart() {
                       <td className="px-4 py-3 text-muted-foreground whitespace-nowrap">{pos.pct}</td>
                       <td className="px-4 py-3 text-muted-foreground text-xs">
                         {pos.id === 1 && "AA-77, AKs-A10s, KQs-KJs, AKo-AJo, KQo"}
-                        {pos.id === 2 && "+66-55, A9s-A8s, K10s, Q10s, J9s, 10-8s, 98s, A10o, KJo"}
-                        {pos.id === 3 && "+44, A7s-A2s, K9s, Q9s, J8s, 97s, 87s, K10o, QJo, J10o"}
-                        {pos.id === 4 && "+33-22, K8s-K4s, Q8s-Q7s, J7s, 10-7s, 76s-65s, K9o+, Q9o+"}
-                        {pos.id === 5 && "+A6o-A4o, K8o-K7o, Q8o, J7o, 97o-87o, 76o, 95s, 85s, 75s, 64s, 54s"}
+                        {pos.id === 2 && "+66-55, A9s-A8s, K10s, Q10s, J9s, 10-8s, 98s, A10o, KJo, QJo, J10o"}
+                        {pos.id === 3 && "+44, A7s-A5s, K9s, Q9s, J8s, 97s, 87s, K10o, Q10o"}
+                        {pos.id === 4 && "+33-22, K8s-K7s, Q8s, J7s, 10-7s, 65s-54s, K9o, Q9o"}
+                        {pos.id === 5 && "+A6o-A4o, K8o-K7o, Q8o, J7o, 97o, 87o, 76o, 95s, 85s, 74s, 64s"}
                       </td>
                     </tr>
                   );
@@ -379,7 +379,7 @@ export default function HandChart() {
               },
               {
                 title: "수티드의 가치",
-                desc: "수티드 핸드는 같은 숫자 오프수트 대비 약 3~4% EV 우위가 있습니다. UTG에서 A8s를 오픈해도 A8o는 폴드하는 이유입니다.",
+                desc: "수티드 핸드는 같은 숫자 오프수트 대비 약 3~5% 에퀴티 우위가 있습니다. 하이잭에서 A8s는 오픈하되 A8o는 버튼까지 기다리는 이유입니다.",
                 icon: "♠️",
               },
               {
@@ -419,7 +419,7 @@ export default function HandChart() {
             },
             {
               q: "리레이즈(3벳)가 들어오면 어떻게 하나요?",
-              a: "오픈 레인지와 3벳 콜 레인지는 다릅니다. 일반적으로 3벳에는 AA-JJ, AKs-AQs 같은 프리미엄과 일부 블러프 핸드(A5s, A4s 등 넛 플러시 드로우 겸 에퀴티 핸드)로 응답합니다. 나머지는 폴드입니다.",
+              a: "오픈 레인지와 3벳 콜 레인지는 다릅니다. 일반적으로 3벳에는 AA-JJ, AKs-AQs 같은 프리미엄과 일부 블러프(AA·AK를 블로킹하고 넛 플러시가 가능한 A5s·A4s 같은 수티드 휠 에이스)로 응답합니다. 나머지는 폴드입니다.",
             },
           ].map((item) => (
             <details

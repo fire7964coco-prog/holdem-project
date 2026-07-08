@@ -70,6 +70,11 @@ const TIER_INFO: Record<1|2|3|4|5, Omit<HandTier,"tier"|"label"|"action"|"desc">
   5: { color:"text-red-400",    bg:"bg-red-400/10 border-red-400/40" },
 };
 
+// 티어 진행바용 전체 클래스명(리터럴이라 Tailwind가 생성함).
+const TIER_BAR: Record<1|2|3|4|5, string> = {
+  1: "bg-yellow-300", 2: "bg-green-400", 3: "bg-blue-400", 4: "bg-orange-400", 5: "bg-red-400",
+};
+
 type TierEntry = [1|2|3|4|5, string, string, string];
 const HAND_TABLE: TierEntry[] = [
   [1, "AA", "최강 핸드. 모든 상황에서 레이즈", "항상 레이즈/리레이즈 (3-bet)"],
@@ -100,7 +105,7 @@ const HAND_TABLE: TierEntry[] = [
   [4, "A8s", "미디엄 스윗드 에이스", "LP 플레이, EP 폴드"],
   [4, "A7s", "미디엄 스윗드 에이스", "LP에서만 플레이"],
   [4, "A6s", "미디엄 스윗드 에이스", "LP에서만 플레이"],
-  [4, "A5s", "A5s가 A9s보다 나을 수 있음 (휠)", "LP에서만, 임플라이드 오즈 중요"],
+  [4, "A5s", "휠+에이스 블로커 가치, 3벳 블러프로 선호", "LP에서만, 임플라이드 오즈 중요"],
   [4, "A4s", "휠 드로우 있는 스윗드 에이스", "LP에서만"],
   [4, "A3s", "스윗드 에이스 최하위권", "BTN/SB에서만"],
   [4, "A2s", "휠+너트 플러시, 하지만 약함", "BTN에서만"],
@@ -115,6 +120,10 @@ const HAND_TABLE: TierEntry[] = [
   [5, "K10o", "K-10 오프수트, 약함", "BTN에서만 가끔"],
   [5, "Q10o", "연결성 낮은 오프수트", "BTN에서만"],
   [5, "J10o", "좋은 오프수트지만 취약", "BTN에서 가끔"],
+  [3, "Q10s", "강한 스윗드 브로드웨이, 포지션에서 우수", "LP 레이즈, 팟 오즈 보고 EP 콜"],
+  [4, "A10o", "마지널 오프수트 에이스, 도미네이션 주의", "LP에서만"],
+  [4, "65s", "스윗드 커넥터, 멀티웨이/임플라이드 오즈 필요", "LP 콜"],
+  [4, "54s", "낮은 스윗드 커넥터, 투기적", "LP 저가 멀티웨이 콜"],
 ];
 
 function getHandName(c1: Card, c2: Card): string {
@@ -224,7 +233,7 @@ const DRAW_PRESETS = [
   { label: "플러시 + 거트샷 콤보", outs: 12, desc: "플러시 9 + 거트샷 3 (중복 제외)" },
   { label: "거트샷 스트레이트", outs: 4, desc: "예: 5-6-8-9, 7 하나만 필요" },
   { label: "오버카드 2장", outs: 6, desc: "보드에 없는 하이카드 2종 × 3장" },
-  { label: "투페어 → 풀하우스", outs: 4, desc: "AA+KK → 남은 A 2장, K 2장" },
+  { label: "투페어 → 풀하우스", outs: 4, desc: "예: A-K 보유·보드 A-K-x → 남은 A 2장, K 2장" },
   { label: "원페어 → 트리플", outs: 2, desc: "같은 랭크 카드 2장 남음" },
   { label: "플러시 + OESD (최강)", outs: 15, desc: "9개 플러시 + 8개 스트레이트 (중복 2)" },
 ];
@@ -558,11 +567,11 @@ function StartingHandCalc() {
             </div>
             <div className="flex justify-between gap-1">
               {[1,2,3,4,5].map(t => (
-                <div key={t} className={`flex-1 h-2.5 rounded-full ${result.tier <= t ? Object.values(TIER_INFO)[t-1].bg.split(" ")[0].replace("/10","") : "bg-muted"}`} />
+                <div key={t} className={`flex-1 h-2.5 rounded-full ${result.tier <= t ? TIER_BAR[t as 1|2|3|4|5] : "bg-muted"}`} />
               ))}
             </div>
             <div className="flex justify-between text-[10px] text-muted-foreground mt-1">
-              <span>프리미엄</span><span>강함</span><span>보통</span><span>약함</span><span>폴드</span>
+              <span>프리미엄</span><span>강함</span><span>플레이가능</span><span>마지널</span><span>약함</span>
             </div>
           </motion.div>
         )}
@@ -847,7 +856,7 @@ function ICMCalc() {
     <div className="space-y-6">
       <div className="bg-primary/8 border border-primary/20 rounded-xl p-4 text-sm text-foreground/80 leading-relaxed">
         <strong className="text-primary">ICM(Independent Chip Model)</strong>이란 토너먼트 칩의 실제 상금 가치를 계산하는 방법입니다.
-        칩 리더라도 ICM 가치는 칩 비율보다 낮고, 숏스택은 더 낮습니다.
+        칩 리더라도 ICM 가치는 칩 비율보다 낮고, 반대로 숏스택은 칩 비율보다 높습니다.
         파이널 테이블·버블에서 콜/폴드 결정에 활용하세요.
       </div>
 
@@ -856,7 +865,7 @@ function ICMCalc() {
           <label className="text-xs text-muted-foreground mb-2 block font-bold uppercase tracking-wider">플레이어 수</label>
           <div className="flex gap-1.5 flex-wrap">
             {[2,3,4,5,6,7,8,9].map(n => (
-              <button key={n} onClick={() => setNumPlayers(n)}
+              <button key={n} onClick={() => { setNumPlayers(n); setNumPrizes(p => Math.min(p, n)); }}
                 className={`w-9 h-9 rounded-lg text-sm font-bold border transition-all ${numPlayers===n ? "bg-primary text-primary-foreground border-primary" : "bg-background border-border text-muted-foreground hover:border-primary/50"}`}>
                 {n}
               </button>
@@ -1102,6 +1111,7 @@ export default function CalculatorPage() {
               { title:"📊 스타팅 핸드 강도", body:"홀카드 2장을 선택하면 169가지 핸드 중 어떤 등급인지, 포지션별 추천 액션은 무엇인지 즉시 확인할 수 있습니다." },
               { title:"📐 SPR (Stack-to-Pot Ratio)", body:"스택과 팟의 비율로 현재 상황이 어느 정도의 핸드 강도가 필요한지 판단합니다. SPR이 낮을수록 강한 핸드로 올인이 유리합니다." },
               { title:"🏆 토너먼트 M값", body:"해링턴의 M값으로 토너먼트에서 내 스택 압박도를 측정합니다. 그린/옐로우/오렌지/레드/데드 존에 따라 전략이 완전히 달라집니다." },
+              { title:"📈 ICM 계산기", body:"독립 칩 모델(ICM)로 토너먼트 칩을 실제 상금 가치로 환산합니다. 버블·파이널 테이블의 콜/폴드 결정에 필수입니다." },
             ].map(c => (
               <div key={c.title} className="bg-card border border-border rounded-xl p-5">
                 <h3 className="text-base font-black text-foreground mb-2">{c.title}</h3>
