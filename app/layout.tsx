@@ -111,7 +111,10 @@ export const metadata: Metadata = {
     ],
     apple: [{ url: "/favicon-192.png", sizes: "192x192" }],
   },
-  alternates: { canonical: SITE },
+  alternates: {
+    canonical: SITE,
+    types: { "application/rss+xml": `${SITE}/rss.xml` },
+  },
   openGraph: {
     type: "website",
     locale: "ko_KR",
