@@ -1015,7 +1015,7 @@ export default function CalculatorPage() {
   return (
     <>
       <SEO
-        title="⚡ 포커 확률 계산기 — 홀덤 아웃츠·팟오즈·족보·SPR·ICM 무료 계산"
+        title="⚡ 포커 확률 계산기 — 아웃츠·팟오즈·족보·SPR·ICM 올인원 무료 도구"
         description="⚡포커 확률 계산기⚡ 홀덤 아웃츠 계산기, 팟 오즈, 핸드 족보 판별기, 스타팅 핸드 강도, SPR, 토너먼트 M값, ICM 계산기까지 — 7가지 계산기 무료 제공."
         path="/calculator"
       />

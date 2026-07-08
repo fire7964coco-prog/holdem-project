@@ -5,6 +5,17 @@
 
 ## 2026-07-08
 
+### 도구 페이지 카니발라이제이션 해소 (신규 영어 도구 발행 후속)
+- **배경**: `/en/calculator·quiz·hand-chart·glossary`(+KO 도구) 신설 후, 블로그 필라와 키워드 자기잠식 점검(Fable5→일반 서브에이전트 감사). 과거 `/hands`·`/rules/texas-holdem` noindex 선례와 동일 패턴 적용.
+- **noindex 처리(도구가 SERP 양보 → 블로그 필라가 키워드 소유, 기능·내부링크는 유지)**:
+  - `/en/hand-chart` → `holdem-starting-hands-chart` 필라와 제목 거의 동일(HIGH). page.tsx metadata에 `robots:index:false`.
+  - `/hand-chart`(KO) → `holdem-starting-hand-range`("홀덤 스타팅 핸드")와 충돌(HIGH). **bare 래퍼라 metadata export 신규 추가** + 사이트맵에서 제외(37→36).
+  - `/en/glossary` → `holdem-glossary` 필라("Texas Hold'em Glossary")와 충돌(HIGH). `robots:index:false`.
+- **제목 차별화(noindex 불필요)**: `/calculator`(KO) 제목 "…무료 계산" → "…올인원 무료 도구"로 계산기(tool) intent 강화 → `holdem-outs-calculation`·`holdem-pot-odds-calculation`("계산법")과 분리(MED).
+- **유지(LOW)**: `/glossary`(KO, 블로그 라이벌 없음=단독 소유) · `/en/calculator`(도구 vs 설명글) · `/quiz`·`/en/quiz`(퀴즈 고유 intent) · `/ranking`·`/en/ranking`(사이트순위≠족보순위).
+- **참고**: EN 도구 페이지는 애초에 사이트맵 미포함이라 robots noindex만으로 신호 충돌 없음. KO도구 page.tsx는 bare 래퍼+client `<SEO>`(robots 미지원)라 noindex는 반드시 metadata export로.
+- **다음(사용자 몫)**: GSC에서 `/hand-chart`·`/en/hand-chart`·`/en/glossary` 재크롤/색인제거 요청.
+
 ### EN 크로스필라 독립글 발행 `holdem-card-counting` — 저경쟁 롱테일
 - **신규 EN 포스트: `holdem-card-counting`** — "Can You Count Cards in Poker? Yes — But Not Like Blackjack"(10분). 특정 필라 무소속(Rules/Odds 크로스). 타깃 "can you count cards in poker" 480·**LDA18 최저경쟁**.
 - **★키워드뱅크 활용(신규 규칙 첫 적용)**: en-what-beats는 "신규X, 허브FAQ 흡수"라 스킵 → can-you 시드 "독립 후보 can you count cards 480·LDA18" 선정. 검색의도 최우선.
