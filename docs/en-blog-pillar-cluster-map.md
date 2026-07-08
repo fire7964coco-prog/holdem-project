@@ -71,7 +71,7 @@ KO 11필라를 복제하지 않고 EN 검색시장 기준으로 재편. `holdem-
 - ✅ holdem-pot-odds (플래그십: how to calculate pot odds) — 발행 2026-07-03. 벳사이즈 치트시트·3개념구분·4-2룰·실전핸드. 허브 양방향링크. §13 18개 검산
 - ✅ holdem-outs (poker outs chart / how to count outs) — 발행 2026-07-03. 드로우별 아웃츠표·아웃츠→배당·콤보겹침·더티아웃. 이미지 4개. §13 적대적검산
 - ✅ holdem-drawing-odds (odds of flopping set/flush/quads + 드로우 완성확률) — 발행 2026-07-04. Flop Lifecycle 통합표(made→draw→complete)+조합론 노출·셋마이닝 임플라이드오즈. §13 적대적 22개 ALL CORRECT. 이미지 2개
-- 🆕 holdem-implied-odds (implied odds / reverse implied odds)
+- ✅ holdem-implied-odds (implied odds / reverse implied odds) — 발행 2026-07-08. 원스톱 통합(정의→공식 x=(콜÷적중률)−팟→드로별 배수표→셋마이닝→reverse IO→all-in예외). answer-first. §13 자체검산 2건 교정(dummy end)+적대적 팩트체커 ALL CORRECT. 이미지 2(히어로 딥스택·셋마인 5♠5♦). 허브·pot-odds·drawing-odds 양방향
 - 🆕 holdem-equity (what is equity / how to calculate)
 - 🆕 holdem-rule-of-2-and-4 (4-2 rule) — **보류**(outs/pot-odds/probability/drawing-odds와 정면 중복)
 > **가장 저경쟁·고밀도 롱테일 광맥.** 계산 질문은 정답이 명확해 Featured Snippet 독점 쉬움.
@@ -176,7 +176,7 @@ posting.mdc STEP 준수. 롱테일 1등용 필수 체크:
 |---|---|---|---|
 | 1 Rules | ✅ | 5 / 8 | 두꺼움 |
 | 2 Hand Rankings | ✅ | 4 / 6 | 두꺼움 |
-| 3 Odds & Math | ✅ | 3 / 5 | 허브+pot-odds+outs+drawing-odds. 남은 심화=implied-odds·equity |
+| 3 Odds & Math | ✅ | 4 / 5 | 허브+pot-odds+outs+drawing-odds+implied-odds. 남은=equity(1편이면 완성) |
 | 4 Strategy | ✅ | 허브+5 / 9 | 허브✅+limping+3bet+c-bet+**when-to-fold(심리융합)**. 클러스터 심화=check-raise·preflop |
 | 5 Tournament | ✅ | 5 / 8 | 강함(고아2) |
 | 6 Glossary | ✅ | 허브+5 | 허브 holdem-glossary 발행✅+straddle·rake·fish·cooler·bad-beat. 확장=slowroll·nuts·tilt |

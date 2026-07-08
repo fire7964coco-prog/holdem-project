@@ -74,9 +74,11 @@ Where does 11.8% come from? Hold a pocket pair and there are two cards left in t
 
 ### When set mining actually pays
 
-Flopping a set 11.8% of the time means you **whiff 88% of the time** and fold. To profit, the 12% you hit has to pay for all the times you miss. Breakeven is 7.5-to-1 — so if you call to set-mine, you want the pot plus what you can win on later streets to be worth **at least 7.5×** your call, and in practice ==g:10-to-1 or better== to cover the times your set doesn't get paid or gets outdrawn.
+Flopping a set 11.8% of the time means you **whiff 88% of the time** and fold. To profit, the 12% you hit has to pay for all the times you miss. Breakeven is 7.5-to-1 — so if you call to set-mine, you want the pot plus what you can win on later streets to be worth **at least 7.5×** your call, and in practice ==g:15-to-1 or better== to cover the times your set doesn't get paid or gets outdrawn.
 
-:::tip[The rule of thumb: only call a raise to set-mine if the effective stacks are roughly 10-15× the price of the call. Deep stacks make small pairs gold; short stacks make them trash. The pair didn't change — the implied odds did.]:::
+:::tip[The rule of thumb: only call a raise to set-mine if the effective stacks are roughly 15-20× the price of the call. Deep stacks make small pairs gold; short stacks make them trash. The pair didn't change — the implied odds did.]:::
+
+Set mining is the purest [implied odds](/en/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp") play there is — a tiny chance to win a big pot later. The full framework — the formula, draw-by-draw stack multiples, and reverse implied odds — lives in that guide.
 
 Two related numbers people ask about:
 

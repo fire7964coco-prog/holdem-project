@@ -3,6 +3,17 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-08
+
+### EN Odds 클러스터 #4 발행 `holdem-implied-odds` — 필라3 사실상 완성
+- **신규 EN 포스트: `holdem-implied-odds`** — "Implied Odds in Poker — When a Bad Price Is a Good Call"(11분). 필라3(Odds) 4번째 클러스터.
+- **딥리서치(서브에이전트 2개)**: ①SERP/PAA — 상위권(Upswing·SplitSuit=공식만/888=reverse만/ThePokerBank=넓지만 얕고 fixed-limit 노후) **파편화 → IO+reverse IO+셋마이닝+드로별 기준+실수 통합글 부재 + PAA FAQ 거의 없음**이 최대 공백. ②정확성 검증(공식·확률·셋마이닝 배수).
+- **각도=원스톱 통합 + answer-first**(롱테일 검색자 직답 먼저). 노벨 자산: **드로별 스택 배수표**(플러시/OESD 8-10× · 셋마인 15-20× · 것샷 20×+) · **공식 x=(콜÷적중률)−팟 워크스루** · reverse IO 통합(dummy end).
+- **정확성**: §13 자체검산서 핸드예시 2건 오류 발견·수정(워크드 팟계산 엉킴 / dummy end `8♠7♠`→상대 스트레이트 불가능 오류 → `6♦5♦` 9-high vs J-10-9-8-7로 교체). 셋마이닝 11.8%/7.5:1/1-in-8.5, 플러시 9/46=19.6%, x=$105 검산. **적대적 팩트체커 ALL CORRECT**. IO공식은 보수적 교과서형 유지, 5%룰=20× vs 이론 7.5:1 구분, all-in=IO0.
+- **역링크**: pot-odds·drawing-odds·probability 허브 → implied-odds 인라인썸네일 양방향. drawing-odds 셋마이닝 배수 10-15×→15-20× 통일. index 등록.
+- **이미지 2개**(커서 실사, §13검산): 히어로=딥스택+칩미는손+하트드로우(29KB), 셋마인=`5♠5♦`+딥스택(40KB). §9-1 통과.
+- **빌드 ✅ "52 blog + 71 intl"**(EN 36편). **다음**: GSC 색인요청 `/en/blog/holdem-implied-odds`. 필라3 마지막 `equity` 1편이면 Odds 완성.
+
 ## 2026-07-06
 
 ### EN Strategy 클러스터 #4 발행 `holdem-when-to-fold` — 기계+심리 융합
