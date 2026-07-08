@@ -101,6 +101,9 @@ export const metadata: Metadata = {
   referrer: "strict-origin-when-cross-origin",
   formatDetection: { email: false, telephone: false, address: false },
   robots: { index: true, follow: true },
+  verification: {
+    other: { "naver-site-verification": "b978aa0f38cbfd49ce7e06253e0bcb6f9e2efd18" },
+  },
   icons: {
     icon: [
       { url: "/favicon.svg", type: "image/svg+xml" },
