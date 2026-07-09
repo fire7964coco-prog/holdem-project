@@ -40,7 +40,7 @@ short stack | worth MORE than their chip share
 
 It works by estimating how often each player finishes in each paying position — first, second, third, and so on — from their share of the chips, then multiplying those probabilities by the payouts. The bigger your stack, the more often you finish high; but because ==the top prize is capped, extra chips buy less and less money.==
 
-The key mental shift: in a cash game a chip is a dollar, full stop. In a tournament a chip is a *lottery ticket* on a fixed set of prizes. ICM prices that ticket. It applies to tournaments and sit-and-gos only — [never to cash games](/en/blog/holdem-tournament-vs-cash-game "thumb:/images/holdem-tournament-vs-cash-game-hero.webp"), where your chips already equal their face value.
+The key mental shift: in a cash game a chip is a dollar, full stop. In a tournament a chip is a *lottery ticket* on a fixed set of prizes. ICM prices that ticket. It applies to tournaments and sit-and-gos only — [never to cash games](/en/blog/holdem-tournament-vs-cash-game "thumb:/images/tournament-table-action.webp"), where your chips already equal their face value.
 
 ---
 
