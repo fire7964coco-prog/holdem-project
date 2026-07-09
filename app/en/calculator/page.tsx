@@ -6,7 +6,13 @@ export const metadata: Metadata = {
   title: "Poker Odds Calculator — Outs, Pot Odds, Hand Rank, SPR & ICM",
   description:
     "Free Texas Hold'em calculator: outs & draw odds, pot odds, hand evaluator, starting hand strength, SPR, tournament M value, and ICM — 7 tools in one.",
-  alternates: { canonical: `${SITE}/en/calculator` },
+  alternates: {
+    canonical: `${SITE}/en/calculator`,
+    languages: {
+      "ko-KR": `${SITE}/calculator`,
+      "en-US": `${SITE}/en/calculator`,
+    },
+  },
   openGraph: {
     title: "Poker Odds Calculator — HoldemMaster",
     description:

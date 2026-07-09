@@ -1015,8 +1015,8 @@ export default function CalculatorPage() {
   return (
     <>
       <SEO
-        title="⚡ 홀덤 확률 계산기 — 아웃츠·팟오즈·SPR·ICM 계산기 올인원 무료"
-        description="⚡포커 확률 계산기⚡ 홀덤 아웃츠 계산기, 팟 오즈, 핸드 족보 판별기, 스타팅 핸드 강도, SPR, 토너먼트 M값, ICM 계산기까지 — 7가지 계산기 무료 제공."
+        title="ICM 계산기·홀덤 확률 계산기 — 아웃츠·팟오즈·SPR·M값 무료"
+        description="칩 리더인데 왜 그 콜이 손해일까? ICM 계산기로 토너먼트 칩의 진짜 상금 가치를 즉시 확인하세요. 아웃츠·팟오즈·족보·스타팅핸드·SPR·M값까지 홀덤 계산기 7종 무료."
         path="/calculator"
       />
 
