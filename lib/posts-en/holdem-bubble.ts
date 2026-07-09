@@ -98,7 +98,7 @@ If you feel the vice tightening on the bubble, you're probably a medium stack. P
 
 ## How to Play a SHORT Stack on the Bubble
 
-**Move all-in or fold — never limp or call off — and use the fact that your bubble factor is actually lower than the medium stack's.** Because you're already likely to bust, doubling up helps you a lot, so you're freer to gamble than the trapped middle stacks. But you gamble by ==being the one who shoves==, not the one who calls:
+**Move all-in or fold — never limp or call off — and use the fact that your bubble factor is actually lower than the medium stack's.** Because you're already likely to bust, doubling up helps you a lot, so you're freer to gamble than the trapped middle stacks. But you gamble by ==being the one who shoves==, not the one who calls — the full [short-stack push/fold playbook](/en/blog/holdem-short-stack "thumb:/images/holdem-short-stack-hero.webp") covers the mechanics:
 
 - **Shove or fold.** First-in aggression keeps your [fold equity](/en/blog/holdem-when-to-fold), which is your most valuable weapon. Open-limping or flat-calling with a short stack throws that away.
 - **Wait if there are shorter stacks than you.** If two players are shorter, you can fold marginal hands and let them bust first — laddering up for free. If *you're* the shortest, you can't afford to wait; find a spot and shove before you blind out.

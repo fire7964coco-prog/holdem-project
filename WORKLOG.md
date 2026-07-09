@@ -5,6 +5,14 @@
 
 ## 2026-07-09
 
+### EN 신규 포스트 `holdem-short-stack` 발행 — Tournament 필라 완성 (ICM→버블→숏스택 3부작)
+- **배경**: ICM(이론)→버블(스팟)→**숏스택(액션)** 3부작 마무리. 사용자 자율 진행 요청. SERP 리서치(short stack strategy·push fold·M ratio). lowfruits 3시드(`short stack`=음식/폰트 노이즈·`short stack poker`=1개·`push fold`=포커有 **전부 Weak0 툴독점**) → 키워드뱅크 `en-short-stack.md`. **차트 헤드텀(push fold chart 170)은 툴독점이라 추격 안 함 → 설명글+/en/calculator 위임 각도가 정답**(데이터로 검증).
+- **내용**: 스택밴드 표(25→5bb) · **M-ratio 존**(그린20+/옐로/오렌지/레드/데드, M=bb÷1.5 매핑) · **shove vs call 구분**(첫인 넓게/콜 좁게) · push/fold 차트 한계+계산기 위임(§13상 정확 Nash 레인지 미게재) · 버블 ICM 트위스트(숏=미들보다 낮은 버블팩터) · 포지션 · 5대 실수 · FAQ 7.
+- **적대적 팩트체크 PASS(오류 0)**: M-ratio 경계·bb환산 전수 CORRECT, fold equity 감쇠·shove/call·포지션·min-raise 뉘앙스·cash vs tourney 전부 검증. fold equity 임계값 표현 통일(8-10bb 감쇠~5bb 소멸) 1건 반영.
+- **역링크**: bubble→short-stack(숏스택 섹션) 신규. short-stack→icm·bubble·tournament(첫링크)·when-to-fold·/en/calculator.
+- **이미지 2**(커서 실사 + HoldemMaster 워터마크 sharp 합성·철자검수·§13 카드 뒷면/미노출): hero 29.7KB(숏vs빅+토너클락24:37)·shove 29.7KB(올인 푸시 클로즈업). icm/bubble와 구도 차별화.
+- 빌드 ✅ **"77 intl posts"**(EN 42). **Tournament 필라 8/8**. **다음**: GSC 색인 `/en/blog/holdem-short-stack`.
+
 ### EN 신규 포스트 `holdem-bubble` 발행 — Tournament 필라 (버블 실전편, ICM 짝)
 - **배경**: `holdem-icm`(이론)의 **실전 적용편**. 사용자 lowfruits(`poker bubble` 헤드 DA92 어려움 → `bubble factor`(DA33)·`bubble boy`(DA23)·`bubble protection` 롱테일 + 필라 토픽오소리티) + SERP 리서치. → 키워드뱅크 `en-bubble.md`는 데이터 얇아 미생성(요약만).
 - **각도**: 스택별 플레이북. 시그니처=**스택×버블유형 통합 접근**. §13 핵심=**미들스택이 가장 갇힘**(숏 아님, 반직관)·**위성 버블 AA 폴드**·**버블팩터→필요에쿼티 공식 BF/(1+BF)**(1.5→60%). 3버블(머니/FT/위성)·hand-for-hand 타이브레이크.

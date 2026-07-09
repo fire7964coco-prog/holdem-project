@@ -98,7 +98,7 @@ KO 11필라를 복제하지 않고 EN 검색시장 기준으로 재편. `holdem-
 - ⚠️ ept-barcelona-2026-guide (본문 markdown 내부링크 0 = 고아 → 복구 필요)
 - ✅ holdem-icm (ICM basics / icm poker 1300) — 발행 2026-07-09. 계산기 연동 마스터. 칩≠돈·Malmuth-Harville 워크드예시(칩50%→ICM38.4%, computeICM §13 검산)·ICM vs ChipEV·ICM딜vs칩찹·한계(arXiv). 첫링크=허브. tournament·tournament-vs-cash-game 역링크. /en/calculator 상호CTA. 이미지2(워터마크). lowfruits뱅크 en-icm.md
 - ✅ holdem-bubble (how to play the bubble / bubble factor) — 발행 2026-07-09. ICM 실전 적용편. 스택별 플레이북(빅/미들=최트랩/숏)+3버블(머니/FT/위성 AA폴드)+버블팩터→에쿼티 공식 BF/(1+BF)+hand-for-hand. 적대적 팩트체커 PASS. 첫링크=icm/tournament. icm 역링크. /en/calculator CTA. 이미지2(워터마크). lowfruits poker bubble 시드
-- 🆕 holdem-short-stack (short stack strategy)
+- ✅ holdem-short-stack (short stack strategy / push fold) — 발행 2026-07-09. ICM→버블 3부작 마무리. 스택밴드표+M-ratio존+shove vs call+push/fold차트 한계(계산기 위임)+버블 ICM 트위스트+5실수. 적대적 팩트체커 PASS. 첫링크=tournament. icm/bubble 역링크. lowfruits push fold=Weak0 툴독점 확인(설명글+계산기 각도). 키워드뱅크 en-short-stack.md
 - 🆕 holdem-mtt-strategy
 > 이벤트가이드는 시즌성(대회 끝나면 recap 자산화). 상시 트래픽은 ICM·버블·숏스택 클러스터가 담당.
 
@@ -178,7 +178,7 @@ posting.mdc STEP 준수. 롱테일 1등용 필수 체크:
 | 2 Hand Rankings | ✅ | 5 / 6 | 두꺼움. +kicker. 남은=what-beats-what |
 | 3 Odds & Math | ✅ | **5 / 5 완성** | 허브+pot-odds+outs+drawing-odds+implied-odds+equity. 필라 완결 |
 | 4 Strategy | ✅ | 허브+5 / 9 | 허브✅+limping+3bet+c-bet+**when-to-fold(심리융합)**. 클러스터 심화=check-raise·preflop |
-| 5 Tournament | ✅ | 7 / 8 | +ICM+bubble(2026-07-09). 남은=short-stack·mtt. 고아2(wpt/ept) |
+| 5 Tournament | ✅ | 8 / 8 완성 | +ICM+bubble+short-stack(2026-07-09) 3부작. (선택)mtt-strategy. 고아2(wpt/ept) 링크복구 남음 |
 | 6 Glossary | ✅ | 허브+5 | 허브 holdem-glossary 발행✅+straddle·rake·fish·cooler·bad-beat. 확장=slowroll·nuts·tilt |
 
 > ✚ **크로스필라 독립글**: `holdem-card-counting`("can you count cards in poker" 480·LDA18 저경쟁) — 발행 2026-07-08. 특정 필라 무소속. 블랙잭 카운팅 무효+포커식 카운팅(아웃츠·블로커·데드카드) 통합. outs(첫링크)·3bet(블로커)·probability·pot-odds 연결. 키워드뱅크 can-you 시드 "독립 후보".

@@ -686,7 +686,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- 다국어 블로그 포스트 (76편) -->
+  <!-- 다국어 블로그 포스트 (77편) -->
 
   <url>
     <loc>https://www.holdemmaster.com/en/blog/apt-incheon-2026-guide</loc>
@@ -998,6 +998,16 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-reading-the-board" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-reading-the-board" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-reading-the-board" />
+  </url>
+
+  <url>
+    <loc>https://www.holdemmaster.com/en/blog/holdem-short-stack</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-short-stack" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-short-stack" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-short-stack" />
   </url>
 
   <url>
