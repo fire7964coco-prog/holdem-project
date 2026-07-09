@@ -5,6 +5,13 @@
 
 ## 2026-07-09
 
+### 계산기(/calculator) 시그니처 자산 보강 — SEO 기술공사 + 다크콘솔 세련화 + ICM 콘텐츠 (3커밋)
+> 목적: "ICM 계산기" GSC 1페이지 5~6위 → Top3. Fable5 기획(콘텐츠/SEO + 디자인/모바일 병렬) → 단계 실행.
+- **①색인 기술공사(`ffe84d4`)**: KO `/calculator`가 bare 래퍼라 서버 metadata 부재 → 초기 정적 HTML canonical이 **사이트 루트로 오염**·title 기본값이던 것 수정. page.tsx에 서버 metadata(canonical=/calculator·openGraph) + ko↔en 상호 hreflang + JSON-LD(WebApplication+BreadcrumbList) 서버 렌더. title 선두를 "ICM 계산기"로 재배치. EN page.tsx도 상호 hreflang.
+- **②다크 콘솔 세련화 + 모바일(`d50d42a`, KO+EN)**: 크림 사이트에 고아로 남아 대비 실패하던 계산기 다크 하드코딩 재설계 → **크림 프리미엄 히어로(골드 그라디언트 헤드라인·배지·pill) + 도구 패널만 `.calc-console` 스코프**(globals.css 신설, 테마 토큰만 다크 재정의 → 기존 클래스 무수정·데이터시각화 색 보존·muted-foreground 대비버그 해소). 모바일: 카드셀 44px·스탯 폰트 반응형·탭 페이드·ICM 6열→모바일 4열축소·±버튼 확대. **360/390px 오버플로우 0 검증**. CLAUDE.md §9-1 "사이트=다크" 옛 전제 폐기(크림 라이트 명시).
+- **③ICM 콘텐츠 심화(`af8ff9c`)**: 하단에 "ICM 계산기 사용법—버블 예시"(칩40%→ICM33.3%)·"ICM 딜 vs 칩찹"(칩찹750/450/300k vs ICM딜 617,857/485,000/397,143→숏스택+9.7만)·FAQ 8개. `app/calculator/faq.ts` 공유모듈→FAQPage JSON-LD↔가시FAQ 동기화. **모든 ICM 수치 실제 computeICM 알고리즘으로 §13 직접 검산**.
+- 전부 빌드통과(52 blog)·배포됨. **다음(사용자 몫)**: GSC `/calculator` 재크롤/색인요청(canonical 교정 반영). **3단계 미완**: 내부링크 양방향(계산기↔icm-poker-meaning·holdem-bubble-strategy 등) + EN 콘텐츠 이식(2주 관찰 후).
+
 ### 영어 도구 5종 신설 + Fable5 전수검토 + 카니발 해소 + UX/버그 수정 (대형 세션)
 - **영어 도구 5종 신설**: `/en/calculator`·`/en/quiz`·`/en/hand-chart`·`/en/glossary`(리디자인:카테고리필터+A–Z 46용어) + `/en/ranking`(글로벌톤, 배너 숨김). 채팅 툴배너가 KO 도구로 튕기던 i18n 버그 해소 → 언어별 존재 도구만 노출(chat-tab `toolLinks`). SiteHeader가 로케일 인식이라 헤더·홈링크 자동 영어.
 - **Fable5 전수검토(4에이전트, 손계산 재검증)** → 실질오류 수정: 계산기 **ICM설명 역전**(숏스택 가치=칩비율보다 높음)·**티어바 렌더버그**(Tailwind 런타임클래스→정적 `TIER_BAR` 맵)·**Q10s/A10o 오폴드**(HAND_TABLE 추가)·상금>플레이어 클램프·A5s/AA+KK/OESD/gambly/틸드/하단라벨/ICM카드 문구. 핸드차트 **예시표 7건 차트티어 정합**·**"A8s from UTG" 사실오류**→하이잭/버튼·SEO160·FAQ. 퀴즈 이모지등급·hand-reading→hand-ranking. 용어사전 Offsuit/Check-Raise. **동일버그 KO 계산기·핸드차트에도 반영**.
