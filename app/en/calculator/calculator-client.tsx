@@ -1010,7 +1010,8 @@ function PushFoldCalc() {
   }, [mask]);
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 lg:space-y-0 lg:grid lg:grid-cols-[minmax(0,1fr)_460px] lg:gap-6 lg:items-start">
+      <div className="space-y-5">
       <div className="grid md:grid-cols-2 gap-4">
         <div>
           <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">Scenario</label>
@@ -1057,8 +1058,9 @@ function PushFoldCalc() {
           <p className="text-sm text-muted-foreground mb-1.5">{stat.combos.toLocaleString()} / 1,326 combos</p>
         </div>
       </div>
+      </div>
 
-      <div>
+      <div className="space-y-3">
         <div className="grid gap-[2px]" style={{ gridTemplateColumns: "repeat(13, minmax(0, 1fr))" }}>
           {Array.from({ length: 169 }, (_, i) => {
             const r = Math.floor(i / 13), c = i % 13;
@@ -1086,7 +1088,7 @@ function PushFoldCalc() {
         </div>
       </div>
 
-      <div className="rounded-xl bg-primary/8 border border-primary/20 p-4 text-xs sm:text-sm text-foreground/80 leading-relaxed">
+      <div className="lg:col-span-2 rounded-xl bg-primary/8 border border-primary/20 p-4 text-xs sm:text-sm text-foreground/80 leading-relaxed">
         <strong className="text-primary">Nash equilibrium, heads-up (SB vs BB)</strong>: the SB is assumed to either shove or fold.
         The ante setting adds 0.125bb per player (a big-blind ante equivalent, ≈12.5%). Ranges widen as stacks get shorter — and
         below ~3-4bb the BB correctly calls <em>wider</em> than the SB shoves, because of pot odds.

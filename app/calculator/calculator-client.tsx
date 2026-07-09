@@ -1023,7 +1023,8 @@ function PushFoldCalc() {
   }, [mask]);
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 lg:space-y-0 lg:grid lg:grid-cols-[minmax(0,1fr)_460px] lg:gap-6 lg:items-start">
+      <div className="space-y-5">
       <div className="grid md:grid-cols-2 gap-4">
         <div>
           <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">시나리오</label>
@@ -1070,8 +1071,9 @@ function PushFoldCalc() {
           <p className="text-sm text-muted-foreground mb-1.5">{stat.combos.toLocaleString()} / 1,326 콤보</p>
         </div>
       </div>
+      </div>
 
-      <div>
+      <div className="space-y-3">
         <div className="grid gap-[2px]" style={{ gridTemplateColumns: "repeat(13, minmax(0, 1fr))" }}>
           {Array.from({ length: 169 }, (_, i) => {
             const r = Math.floor(i / 13), c = i % 13;
@@ -1099,7 +1101,7 @@ function PushFoldCalc() {
         </div>
       </div>
 
-      <div className="rounded-xl bg-primary/8 border border-primary/20 p-4 text-xs sm:text-sm text-foreground/80 leading-relaxed">
+      <div className="lg:col-span-2 rounded-xl bg-primary/8 border border-primary/20 p-4 text-xs sm:text-sm text-foreground/80 leading-relaxed">
         <strong className="text-primary">헤즈업(SB vs BB) 내시 균형</strong> 기준 차트입니다. SB는 올인 또는 폴드만 한다고 가정하며,
         앤티 ON은 플레이어당 0.125bb(빅블라인드 앤티 환산 ≈ 12.5%)를 반영합니다. 스택이 짧을수록 푸시·콜 범위가 넓어지고,
         3~4bb 이하에서는 팟 오즈 때문에 BB 콜 범위가 SB 푸시보다 오히려 넓어지는 게 수학적으로 정확합니다.
