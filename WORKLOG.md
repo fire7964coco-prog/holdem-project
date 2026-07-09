@@ -3,6 +3,17 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-09
+
+### 영어 도구 5종 신설 + Fable5 전수검토 + 카니발 해소 + UX/버그 수정 (대형 세션)
+- **영어 도구 5종 신설**: `/en/calculator`·`/en/quiz`·`/en/hand-chart`·`/en/glossary`(리디자인:카테고리필터+A–Z 46용어) + `/en/ranking`(글로벌톤, 배너 숨김). 채팅 툴배너가 KO 도구로 튕기던 i18n 버그 해소 → 언어별 존재 도구만 노출(chat-tab `toolLinks`). SiteHeader가 로케일 인식이라 헤더·홈링크 자동 영어.
+- **Fable5 전수검토(4에이전트, 손계산 재검증)** → 실질오류 수정: 계산기 **ICM설명 역전**(숏스택 가치=칩비율보다 높음)·**티어바 렌더버그**(Tailwind 런타임클래스→정적 `TIER_BAR` 맵)·**Q10s/A10o 오폴드**(HAND_TABLE 추가)·상금>플레이어 클램프·A5s/AA+KK/OESD/gambly/틸드/하단라벨/ICM카드 문구. 핸드차트 **예시표 7건 차트티어 정합**·**"A8s from UTG" 사실오류**→하이잭/버튼·SEO160·FAQ. 퀴즈 이모지등급·hand-reading→hand-ranking. 용어사전 Offsuit/Check-Raise. **동일버그 KO 계산기·핸드차트에도 반영**.
+- **poker-eval 휠 스트레이트 버그 수정**(`21809f3`): `handScore`가 A-2-3-4-5를 에이스하이(`[14,…]`)로 오평가 → 더 높은 스트레이트보다 위로 선택하던 버그. `[5,4,3,2,1]` remap(독립스크립트 검증: `A2345+6K`→2-3-4-5-6 선택). KO·EN 퀴즈 공용.
+- **★카니발 해소(몰아주기 전략 확립)**: `/hand-chart`(KO+EN)·`/en/glossary` **noindex**(블로그 필라가 키워드 소유). 계산기는 **색인 유지**(GSC 7일 "ICM계산기" 50노출 전부 1페이지 5~6위 = 독점쿼리, 블로그는 "계산법"이라 다른 의도). `/calculator` 제목 GSC 승리쿼리로 최적화. rule은 기존처리 확인(`/rules/texas-holdem` noindex 정상, 영어는 도구 없음). 판단규칙 → 메모리 `seo-tool-vs-blog-cannibalization`.
+- **커뮤니티 탭 URL 동기화**(`4cef9bf`): 채팅→도구→뒤로가기 시 홈피드로 리셋되던 버그 → 탭 변경 시 `?tab=` `history.replaceState` 반영 → 직전 탭 복원. (읽기 로직은 있었고 쓰기만 없었음)
+- **워터마크 규칙 변경**: `posting.mdc` — 스크립트 자동화 폐기 → **커서 이미지 프롬프트에 "HoldemMaster 우하단 워드마크" 지시 포함 + 커밋전 스펠링 검수**.
+- 전부 빌드통과·배포. **사용자 완료**: GSC `/hand-chart` 삭제요청 제출(EN 2개는 신규+noindex라 불필요).
+
 ## 2026-07-08
 
 ### 도구 페이지 카니발라이제이션 해소 (신규 영어 도구 발행 후속)
