@@ -111,9 +111,10 @@ export function evalBest7(cards: Card[]): { best: HandInfo; bestCards: Card[] } 
   for (const combo of getCombinations(cards, 5)) {
     const h = evalHand5(combo);
     const score = handScore(combo);
+    const first      = bestScore.length === 0;   // 첫 콤보는 무조건 채택(하이카드 방치 버그 방지)
     const betterType = h.rank < best.rank;
     const sameType   = h.rank === best.rank;
-    if (betterType || (sameType && scoreBetter(score, bestScore))) {
+    if (first || betterType || (sameType && scoreBetter(score, bestScore))) {
       best = h; bestCards = combo; bestScore = score;
     }
   }
