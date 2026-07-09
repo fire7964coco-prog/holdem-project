@@ -1036,28 +1036,22 @@ export default function CalculatorPageEn() {
 
       {/* Calculator Area */}
       <section className="max-w-5xl mx-auto px-4 sm:px-6 py-10">
-        {/* Tabs */}
-        <div className="relative mb-6">
-        <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-none">
+        {/* Tabs — all in one view (mobile 4+3 centered / desktop 7 columns) */}
+        <div className="flex flex-wrap justify-center gap-1.5 sm:gap-2 mb-6">
           {TABS.map(t => (
             <button
               key={t.id}
               onClick={() => setActive(t.id)}
-              className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-bold whitespace-nowrap border transition-all flex-shrink-0 ${
+              className={`flex flex-col items-center justify-center gap-1.5 w-[72px] sm:w-auto sm:flex-1 sm:basis-0 min-h-[62px] px-1 py-2 rounded-xl text-xs font-bold border transition-all ${
                 active === t.id
                   ? "bg-primary text-primary-foreground border-primary shadow-lg shadow-primary/20"
                   : "bg-card text-muted-foreground border-border hover:border-primary/50 hover:text-foreground"
               }`}
             >
               {t.icon}
-              <span>{t.label}</span>
-              <span className={`text-[10px] hidden sm:block ${active===t.id ? "text-primary-foreground/70" : "text-muted-foreground/60"}`}>
-                {t.sub}
-              </span>
+              <span className="leading-tight text-center">{t.label}</span>
             </button>
           ))}
-        </div>
-          <div className="pointer-events-none absolute right-0 top-0 bottom-2 w-10 bg-gradient-to-l from-background to-transparent sm:hidden" />
         </div>
 
         {/* Panel */}
