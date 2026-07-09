@@ -15,11 +15,12 @@
 - **②디자인 세련화+모바일**: 크림 사이트 + 도구 패널만 `.calc-console` 다크 스코프(대비버그 해소, 데이터색 보존). 모바일 360/390 오버플로우 0.
 - **③ICM 콘텐츠**: 버블 워크드 예시·ICM딜vs칩찹·FAQ 8개(FAQPage 스키마). 수치 전부 computeICM §13 검산.
 
+**★1·2·3단계 전부 완료·배포됨(마지막 `828fb95`).** 3단계 내부링크 양방향까지 끝. 남은 건 사용자 GSC 작업 + EN 콘텐츠 이식(관찰 후).
+
 ### ▶ 내일 할 일 / 관찰
 1. **GSC(사용자 몫)**: `/calculator` URL 검사 → **색인 재요청**(canonical/title 교정 반영). 2~4주 "ICM 계산기" 순위·"ICM 딜" 신규쿼리 발생 추적.
-2. **3단계 미완(다음 착수)**: **내부링크 양방향** — 계산기 하단에 "더 깊게" 링크블록(icm-poker-meaning·holdem-bubble-strategy·holdem-probability 등 실존 slug) + 해당 블로그 본문에 "직접 계산 → /calculator" CTA 역링크. 계산기는 고권위라 링크에쿼티 가치 큼.
-3. **EN 계산기 콘텐츠 이식**: KO에서 검증된 FAQ/워크드예시/FAQPage를 `/en/calculator`에 번역 이식(2주 GSC 관찰 후). 디자인/모바일은 이미 EN 미러 완료.
-4. (선택) `scripts/mobile-audit.mjs` 계산기 지원 파라미터화(현재 EN블로그 전용) — 이번엔 직접 overflow 측정으로 대체함.
+2. **EN 계산기 콘텐츠 이식(다음 착수 후보)**: KO에서 검증된 FAQ 8개/워크드예시(버블·딜vs칩찹)/FAQPage 스키마를 `/en/calculator`에 번역 이식 — **2주 GSC 관찰 후**. 디자인/모바일/서버metadata는 이미 EN 미러 완료. 공유 패턴: `app/calculator/faq.ts`처럼 `app/en/calculator/faq.ts` 만들어 page.tsx 스키마↔가시 동기화.
+3. (선택) `scripts/mobile-audit.mjs` 계산기 지원 파라미터화(현재 EN블로그 전용) — 이번엔 직접 overflow 측정으로 대체함.
 
 ---
 

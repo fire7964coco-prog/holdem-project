@@ -10,7 +10,8 @@
 - **①색인 기술공사(`ffe84d4`)**: KO `/calculator`가 bare 래퍼라 서버 metadata 부재 → 초기 정적 HTML canonical이 **사이트 루트로 오염**·title 기본값이던 것 수정. page.tsx에 서버 metadata(canonical=/calculator·openGraph) + ko↔en 상호 hreflang + JSON-LD(WebApplication+BreadcrumbList) 서버 렌더. title 선두를 "ICM 계산기"로 재배치. EN page.tsx도 상호 hreflang.
 - **②다크 콘솔 세련화 + 모바일(`d50d42a`, KO+EN)**: 크림 사이트에 고아로 남아 대비 실패하던 계산기 다크 하드코딩 재설계 → **크림 프리미엄 히어로(골드 그라디언트 헤드라인·배지·pill) + 도구 패널만 `.calc-console` 스코프**(globals.css 신설, 테마 토큰만 다크 재정의 → 기존 클래스 무수정·데이터시각화 색 보존·muted-foreground 대비버그 해소). 모바일: 카드셀 44px·스탯 폰트 반응형·탭 페이드·ICM 6열→모바일 4열축소·±버튼 확대. **360/390px 오버플로우 0 검증**. CLAUDE.md §9-1 "사이트=다크" 옛 전제 폐기(크림 라이트 명시).
 - **③ICM 콘텐츠 심화(`af8ff9c`)**: 하단에 "ICM 계산기 사용법—버블 예시"(칩40%→ICM33.3%)·"ICM 딜 vs 칩찹"(칩찹750/450/300k vs ICM딜 617,857/485,000/397,143→숏스택+9.7만)·FAQ 8개. `app/calculator/faq.ts` 공유모듈→FAQPage JSON-LD↔가시FAQ 동기화. **모든 ICM 수치 실제 computeICM 알고리즘으로 §13 직접 검산**.
-- 전부 빌드통과(52 blog)·배포됨. **다음(사용자 몫)**: GSC `/calculator` 재크롤/색인요청(canonical 교정 반영). **3단계 미완**: 내부링크 양방향(계산기↔icm-poker-meaning·holdem-bubble-strategy 등) + EN 콘텐츠 이식(2주 관찰 후).
+- **③-b 내부링크 양방향(`828fb95`, 3단계)**: 계산기 하단 "계산이 이해되면 읽을 가이드" 링크블록 6개(icm-poker-meaning·holdem-bubble-strategy·pot-odds-calculation·outs-calculation·starting-hand-range·tournament-vs-cash-game, 실존 KO slug) + 버블예시 인라인 링크. 역링크: icm-poker-meaning·holdem-bubble-strategy 본문에 /calculator CTA(기존 0개), updated 갱신.
+- 전부 빌드통과(52 blog)·배포됨. **1·2·3단계 완료.** **다음(사용자 몫)**: GSC `/calculator` 재크롤/색인요청(canonical 교정 반영). **잔여**: EN 계산기 콘텐츠(FAQ/워크드예시/FAQPage) 이식 = 2주 GSC 관찰 후(디자인/모바일은 이미 EN 미러됨).
 
 ### 영어 도구 5종 신설 + Fable5 전수검토 + 카니발 해소 + UX/버그 수정 (대형 세션)
 - **영어 도구 5종 신설**: `/en/calculator`·`/en/quiz`·`/en/hand-chart`·`/en/glossary`(리디자인:카테고리필터+A–Z 46용어) + `/en/ranking`(글로벌톤, 배너 숨김). 채팅 툴배너가 KO 도구로 튕기던 i18n 버그 해소 → 언어별 존재 도구만 노출(chat-tab `toolLinks`). SiteHeader가 로케일 인식이라 헤더·홈링크 자동 영어.
