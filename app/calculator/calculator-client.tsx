@@ -170,7 +170,7 @@ function CardPicker({ selected, max, onToggle, onClear, disabled = [], label }: 
         <div className="inline-block">
           <div className="flex mb-1 ml-7 gap-0.5">
             {[...RANKS].reverse().map(r => (
-              <div key={r} className="w-[30px] text-center text-[10px] text-muted-foreground font-bold">{r}</div>
+              <div key={r} className="w-8 sm:w-[30px] text-center text-[10px] text-muted-foreground font-bold">{r}</div>
             ))}
           </div>
           {SUITS.map((suit, si) => (
@@ -188,7 +188,7 @@ function CardPicker({ selected, max, onToggle, onClear, disabled = [], label }: 
                     onClick={() => !isDis && onToggle(c)}
                     disabled={isDis}
                     title={`${RANKS[rank]}${SUITS[si]}`}
-                    className={`w-[30px] h-[38px] rounded-md text-xs font-bold border transition-all
+                    className={`w-8 h-11 sm:w-[30px] sm:h-[38px] rounded-md text-xs font-bold border transition-all
                       ${isSel
                         ? "bg-primary border-primary text-primary-foreground shadow-md shadow-primary/30 scale-105 z-10"
                         : isDis
@@ -304,10 +304,10 @@ function OutsCalc() {
         ))}
       </div>
       <div className="rounded-2xl bg-card border border-border p-5">
-        <div className="flex items-end justify-between mb-4">
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between mb-4">
           <div>
             <p className="text-xs text-muted-foreground mb-1">{stage==="flop" ? "플랍 이후 완성 확률" : "턴 이후 완성 확률"} (정밀)</p>
-            <p className={`text-6xl font-black ${pcolor(pct)}`}>{pct}%</p>
+            <p className={`text-5xl sm:text-6xl font-black tabular-nums ${pcolor(pct)}`}>{pct}%</p>
             <p className={`text-sm font-bold mt-1 ${pcolor(pct)}`}>{plabel(pct)}</p>
           </div>
           <div className="text-right text-xs text-muted-foreground space-y-1">
@@ -368,7 +368,7 @@ function PotOddsCalc() {
       <div className="rounded-2xl bg-card border border-border p-5">
         <p className="text-xs text-muted-foreground mb-1">팟 오즈 (필요 최소 승률)</p>
         <div className="flex items-end gap-3">
-          <span className="text-5xl font-black text-primary">{potOdds}%</span>
+          <span className="text-4xl sm:text-5xl font-black tabular-nums text-primary">{potOdds}%</span>
           <span className="text-sm text-muted-foreground mb-2">이상이면 콜이 수익적</span>
         </div>
         <p className="text-xs text-muted-foreground mt-1 font-mono">
@@ -472,7 +472,7 @@ function HandEvaluatorCalc() {
             <p className="text-xs text-muted-foreground mb-2 uppercase tracking-wide">
               {cards.length}장 중 최강 족보
             </p>
-            <p className={`text-4xl font-black mb-4 ${result.color}`}>{result.name}</p>
+            <p className={`text-3xl sm:text-4xl font-black mb-4 ${result.color}`}>{result.name}</p>
             <div className="flex justify-center gap-2 mb-4">
               {HAND_RANK_LABELS.map((n, i) => (
                 <div key={i} className={`w-2 h-6 rounded-full transition-all ${i <= result.rank ? pbg(i * 11) : "bg-muted"}`} title={n} />
@@ -490,7 +490,7 @@ function HandEvaluatorCalc() {
         )}
       </div>
 
-      <div className="grid grid-cols-5 gap-1.5">
+      <div className="grid grid-cols-2 sm:grid-cols-5 gap-1.5">
         {[
           { name:"로열 플러시", color:"text-yellow-300", ex:"A♠K♠Q♠J♠T♠" },
           { name:"스트레이트 플러시", color:"text-yellow-400", ex:"9♥8♥7♥6♥5♥" },
@@ -554,7 +554,7 @@ function StartingHandCalc() {
           <motion.div initial={false} animate={{ opacity:1, y:0 }} className="w-full">
             <div className={`rounded-xl border p-5 mb-4 ${tierMeta?.bg}`}>
               <div className="flex items-center justify-between mb-3">
-                <p className={`text-4xl font-black font-mono ${tierMeta?.color}`}>{displayHandName(result.name)}</p>
+                <p className={`text-3xl sm:text-4xl font-black font-mono ${tierMeta?.color}`}>{displayHandName(result.name)}</p>
                 <div className={`text-center px-3 py-1.5 rounded-lg border ${tierMeta?.bg}`}>
                   <p className={`text-xs font-bold ${tierMeta?.color}`}>{tierNames[result.tier]}</p>
                 </div>
@@ -645,7 +645,7 @@ function SPRCalc() {
       <div className="rounded-2xl bg-card border border-border p-5">
         <p className="text-xs text-muted-foreground mb-1">SPR (Stack-to-Pot Ratio)</p>
         <div className="flex items-end gap-3">
-          <p className={`text-6xl font-black ${zone?.color || "text-foreground"}`}>{spr}</p>
+          <p className={`text-5xl sm:text-6xl font-black tabular-nums ${zone?.color || "text-foreground"}`}>{spr}</p>
           <p className="text-sm text-muted-foreground mb-2">스택 ÷ 팟</p>
         </div>
         <p className="text-xs font-mono text-muted-foreground mt-1">{stack.toLocaleString()} ÷ {pot.toLocaleString()} = {spr}</p>
@@ -747,7 +747,7 @@ function MValueCalc() {
         </div>
         <div className={`rounded-2xl border p-5 ${zone?.bg || "bg-card border-border"}`}>
           <p className="text-xs text-muted-foreground mb-1">M값 (Harrington's M)</p>
-          <p className={`text-5xl font-black ${zone?.color || "text-foreground"}`}>{M}</p>
+          <p className={`text-4xl sm:text-5xl font-black tabular-nums ${zone?.color || "text-foreground"}`}>{M}</p>
           <p className="text-xs font-mono text-muted-foreground mt-1">
             {stack.toLocaleString()} ÷ {orbit.toLocaleString()} = {M}
           </p>
@@ -896,7 +896,7 @@ function ICMCalc() {
               <div key={i} className="flex items-center gap-2">
                 <span className="text-xs font-bold text-muted-foreground w-10 flex-shrink-0 text-center">{MEDALS[i]}</span>
                 <button onClick={() => updateStack(i, stacks[i] - 1000)}
-                  className="w-7 h-7 rounded-md bg-background border border-border text-muted-foreground hover:border-primary/50 flex-shrink-0 text-xs font-bold">−</button>
+                  className="w-8 h-8 rounded-md bg-background border border-border text-muted-foreground hover:border-primary/50 flex-shrink-0 text-xs font-bold">−</button>
                 <input
                   type="number"
                   value={stacks[i] ?? 1000}
@@ -904,7 +904,7 @@ function ICMCalc() {
                   className="flex-1 min-w-0 bg-background border border-border rounded-lg px-2 py-1.5 text-sm text-foreground text-right font-mono"
                 />
                 <button onClick={() => updateStack(i, stacks[i] + 1000)}
-                  className="w-7 h-7 rounded-md bg-background border border-border text-muted-foreground hover:border-primary/50 flex-shrink-0 text-xs font-bold">+</button>
+                  className="w-8 h-8 rounded-md bg-background border border-border text-muted-foreground hover:border-primary/50 flex-shrink-0 text-xs font-bold">+</button>
               </div>
             ))}
           </div>
@@ -920,7 +920,7 @@ function ICMCalc() {
               <div key={i} className="flex items-center gap-2">
                 <span className="text-xs font-bold text-muted-foreground w-10 flex-shrink-0 text-center">{MEDALS[i]}</span>
                 <button onClick={() => updatePrize(i, prizes[i] - 50000)}
-                  className="w-7 h-7 rounded-md bg-background border border-border text-muted-foreground hover:border-primary/50 flex-shrink-0 text-xs font-bold">−</button>
+                  className="w-8 h-8 rounded-md bg-background border border-border text-muted-foreground hover:border-primary/50 flex-shrink-0 text-xs font-bold">−</button>
                 <input
                   type="number"
                   value={prizes[i] ?? 0}
@@ -928,7 +928,7 @@ function ICMCalc() {
                   className="flex-1 min-w-0 bg-background border border-border rounded-lg px-2 py-1.5 text-sm text-foreground text-right font-mono"
                 />
                 <button onClick={() => updatePrize(i, prizes[i] + 50000)}
-                  className="w-7 h-7 rounded-md bg-background border border-border text-muted-foreground hover:border-primary/50 flex-shrink-0 text-xs font-bold">+</button>
+                  className="w-8 h-8 rounded-md bg-background border border-border text-muted-foreground hover:border-primary/50 flex-shrink-0 text-xs font-bold">+</button>
               </div>
             ))}
           </div>
@@ -944,8 +944,8 @@ function ICMCalc() {
               <thead>
                 <tr className="bg-background/50 border-b border-border">
                   <th className="px-3 py-2.5 text-left text-muted-foreground font-bold">플레이어</th>
-                  <th className="px-3 py-2.5 text-right text-muted-foreground font-bold">칩스택</th>
-                  <th className="px-3 py-2.5 text-right text-muted-foreground font-bold">칩 %</th>
+                  <th className="px-3 py-2.5 text-right text-muted-foreground font-bold hidden sm:table-cell">칩스택</th>
+                  <th className="px-3 py-2.5 text-right text-muted-foreground font-bold hidden sm:table-cell">칩 %</th>
                   <th className="px-3 py-2.5 text-right text-primary font-bold">ICM 가치</th>
                   <th className="px-3 py-2.5 text-right text-muted-foreground font-bold">ICM %</th>
                   <th className="px-3 py-2.5 text-right text-muted-foreground font-bold">차이</th>
@@ -958,9 +958,9 @@ function ICMCalc() {
                   const diff = icmPct - chipPct;
                   return (
                     <tr key={i} className="border-b border-border/50 last:border-0 hover:bg-primary/5 transition-colors">
-                      <td className="px-3 py-2.5 font-bold text-foreground">{MEDALS[i]} P{i+1}</td>
-                      <td className="px-3 py-2.5 text-right font-mono text-muted-foreground">{stacks[i].toLocaleString()}</td>
-                      <td className="px-3 py-2.5 text-right font-mono text-muted-foreground">{chipPct.toFixed(1)}%</td>
+                      <td className="px-3 py-2.5 font-bold text-foreground">{MEDALS[i]} P{i+1}<span className="block sm:hidden text-[10px] font-mono font-normal text-muted-foreground mt-0.5">{stacks[i].toLocaleString()} · {chipPct.toFixed(1)}%</span></td>
+                      <td className="px-3 py-2.5 text-right font-mono text-muted-foreground hidden sm:table-cell">{stacks[i].toLocaleString()}</td>
+                      <td className="px-3 py-2.5 text-right font-mono text-muted-foreground hidden sm:table-cell">{chipPct.toFixed(1)}%</td>
                       <td className="px-3 py-2.5 text-right font-mono font-bold text-primary">{Math.round(equity).toLocaleString()}원</td>
                       <td className="px-3 py-2.5 text-right font-mono">{icmPct.toFixed(1)}%</td>
                       <td className={`px-3 py-2.5 text-right font-mono font-bold ${diff > 0.1 ? "text-green-400" : diff < -0.1 ? "text-red-400" : "text-muted-foreground"}`}>
@@ -1021,26 +1021,26 @@ export default function CalculatorPage() {
       />
 
       {/* Hero */}
-      <section className="relative bg-gradient-to-b from-[#061209] to-background pt-16 pb-12 overflow-hidden">
-        <div className="absolute inset-0 opacity-10" style={{
-          backgroundImage:`radial-gradient(circle at 30% 50%, #16a34a 0%, transparent 60%), radial-gradient(circle at 70% 50%, #ca8a04 0%, transparent 60%)`
+      <section className="relative pt-14 sm:pt-16 pb-12 overflow-hidden border-b border-border/60">
+        <div className="absolute inset-0 opacity-70 pointer-events-none" style={{
+          backgroundImage:`radial-gradient(ellipse 900px 380px at 28% -10%, hsl(43 55% 82% / 0.55) 0%, transparent 60%), radial-gradient(ellipse 700px 340px at 92% 8%, hsl(152 35% 84% / 0.4) 0%, transparent 60%)`
         }} />
         <div className="max-w-5xl mx-auto px-4 sm:px-6 relative">
           <div className="flex items-center gap-2 mb-4">
-            <span className="bg-primary/20 text-primary text-xs font-bold px-3 py-1 rounded-full border border-primary/30">무료 도구</span>
-            <span className="bg-blue-500/20 text-blue-400 text-xs font-bold px-3 py-1 rounded-full border border-blue-500/30">실시간 계산</span>
+            <span className="badge-gold">무료 도구</span>
+            <span className="badge-gold">실시간 계산</span>
           </div>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-foreground leading-tight mb-4">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-black leading-tight mb-4 tracking-tight text-foreground">
             포커 확률 계산기<br />
-            <span className="text-primary">홀덤 모든 계산 한 곳에</span>
+            <span className="text-gold-gradient">홀덤 모든 계산 한 곳에</span>
           </h1>
-          <p className="text-muted-foreground text-base sm:text-lg max-w-2xl">
+          <p className="text-muted-foreground text-base sm:text-lg max-w-2xl leading-relaxed">
             아웃츠·팟 오즈·핸드 족보 판별·스타팅 핸드 강도·SPR·토너먼트 M값·ICM —
             실전에서 필요한 계산을 즉시 확인하세요.
           </p>
-          <div className="flex flex-wrap gap-4 mt-6 text-sm">
-            {["🎯 아웃츠 계산기","💰 팟 오즈","🃏 족보 판별","📊 스타팅 핸드","📐 SPR","🏆 M값","📈 ICM 계산기"].map(f => (
-              <span key={f} className="text-muted-foreground">{f}</span>
+          <div className="flex flex-wrap gap-2 mt-6">
+            {["🎯 아웃츠","💰 팟 오즈","🃏 족보 판별","📊 스타팅 핸드","📐 SPR","🏆 M값","📈 ICM"].map(f => (
+              <span key={f} className="text-xs font-semibold text-foreground/80 bg-card border border-border rounded-full px-3 py-1.5 shadow-sm">{f}</span>
             ))}
           </div>
         </div>
@@ -1049,7 +1049,8 @@ export default function CalculatorPage() {
       {/* Calculator Area */}
       <section className="max-w-5xl mx-auto px-4 sm:px-6 py-10">
         {/* Tabs */}
-        <div className="flex gap-2 mb-6 overflow-x-auto pb-2 scrollbar-none">
+        <div className="relative mb-6">
+        <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-none">
           {TABS.map(t => (
             <button
               key={t.id}
@@ -1068,9 +1069,11 @@ export default function CalculatorPage() {
             </button>
           ))}
         </div>
+          <div className="pointer-events-none absolute right-0 top-0 bottom-2 w-10 bg-gradient-to-l from-background to-transparent sm:hidden" />
+        </div>
 
         {/* Panel */}
-        <div className="rounded-2xl border border-border bg-gradient-to-br from-[#0a1a0d] to-[#0d1f12] overflow-hidden shadow-2xl shadow-black/50">
+        <div className="calc-console rounded-2xl overflow-hidden">
           {/* Panel Header */}
           <div className="px-6 py-5 border-b border-primary/20 flex items-center gap-4">
             <div className="w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center text-primary flex-shrink-0">

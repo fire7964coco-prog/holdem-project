@@ -278,6 +278,34 @@
   transform: translateY(-2px);
 }
 
+/* ── 계산기 도구 콘솔: 크림 페이지 위 프리미엄 다크 위젯 ──────────
+   이 클래스 하위에서 테마 토큰만 다크로 재정의한다. 그러면 내부의 기존
+   text-foreground·text-muted-foreground·bg-card·border-border 등이 클래스
+   수정 없이 자동으로 다크 대비에 맞게 해석된다. 데이터-시각화 색(green/red-400
+   등 유틸 직접값)은 토큰이 아니라 그대로 유지된다(다크 위 가시성 양호). */
+.calc-console {
+  --background: 156 32% 7%;
+  --foreground: 40 30% 94%;
+  --card: 156 22% 12%;
+  --card-foreground: 40 30% 94%;
+  --primary: 43 80% 62%;
+  --primary-foreground: 156 60% 6%;
+  --secondary: 156 16% 17%;
+  --secondary-foreground: 40 30% 94%;
+  --muted: 156 14% 16%;
+  --muted-foreground: 40 14% 70%;
+  --accent: 43 80% 62%;
+  --accent-foreground: 156 60% 6%;
+  --border: 156 14% 24%;
+  background:
+    radial-gradient(120% 85% at 50% -12%, hsl(156 30% 13%) 0%, transparent 62%),
+    linear-gradient(180deg, hsl(156 30% 8%) 0%, hsl(156 34% 6%) 100%);
+  border: 1px solid hsl(43 45% 42% / 0.28);
+  box-shadow:
+    inset 0 1px 0 hsl(43 60% 62% / 0.09),
+    0 24px 56px -24px hsl(0 0% 0% / 0.65);
+}
+
 /* ── 골드 버튼 (CTA) ──────────────────────────────── */
 .btn-gold {
   position: relative;
