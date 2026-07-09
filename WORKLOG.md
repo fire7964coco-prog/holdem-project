@@ -5,6 +5,14 @@
 
 ## 2026-07-09
 
+### EN 신규 포스트 `holdem-bubble` 발행 — Tournament 필라 (버블 실전편, ICM 짝)
+- **배경**: `holdem-icm`(이론)의 **실전 적용편**. 사용자 lowfruits(`poker bubble` 헤드 DA92 어려움 → `bubble factor`(DA33)·`bubble boy`(DA23)·`bubble protection` 롱테일 + 필라 토픽오소리티) + SERP 리서치. → 키워드뱅크 `en-bubble.md`는 데이터 얇아 미생성(요약만).
+- **각도**: 스택별 플레이북. 시그니처=**스택×버블유형 통합 접근**. §13 핵심=**미들스택이 가장 갇힘**(숏 아님, 반직관)·**위성 버블 AA 폴드**·**버블팩터→필요에쿼티 공식 BF/(1+BF)**(1.5→60%). 3버블(머니/FT/위성)·hand-for-hand 타이브레이크.
+- **적대적 팩트체크 PASS**(공식 전 수치 재유도·hand-for-hand·위성·"FT버블 ICM 최극심" GTOW avg bubble factor로 확인, 교정 0).
+- **역링크**: icm→bubble("money bubble") 신규. bubble→icm(첫키링크)·tournament(필라)·when-to-fold·/en/calculator.
+- **이미지 2**(커서 실사 + HoldemMaster 워터마크 sharp 합성·철자검수·§13 보드검증: 압박 이미지 K♣·K♠ 유효): hero 48.9KB(숏vs빅+상금보드)·pressure 42.6KB(칩 푸시+폴드). ICM 이미지와 구도 차별화.
+- 빌드 ✅ **"76 intl posts"**(EN 41). **다음**: GSC 색인 `/en/blog/holdem-bubble`.
+
 ### APT 제주 2026 가을 가이드 업데이트 — 날짜 정정(웹검증) + 현장 실사 2장
 - **웹 교차검증**(공식 APT 2026 일정): 대회기간 **9/25~10/4로 확정** → 글의 "10/7" 오류 전량 정정(§14 이벤트가이드 날짜검증). as-of 6월→7월, "미발표" 프레이밍 갱신(기간은 확정·세부일정/바이인 미발표). Classic ME 환산 $1,570→**$1,600**(KRW 2.3M) 정정.
 - **사용자 현장 촬영 실사 2장 추가**(E-E-A-T): ①LES A 카지노 표지판(실제 대회장, 기본정보 섹션)·②제주 신화월드 정문(가는 법 섹션). 회전보정·16:9 크롭·HoldemMaster 워터마크 sharp 합성·≤80KB(73.7·70.0KB). updated 2026-07-09.

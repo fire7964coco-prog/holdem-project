@@ -153,7 +153,7 @@ The short stack gets ==$97 more== from an ICM deal than a chip chop, because ICM
 
 **ICM matters most near pay jumps and least when they're far away.** Lean on it in these spots:
 
-- **The money bubble** — the biggest jump of all is from $0 to a cash, so risk premiums peak.
+- **The [money bubble](/en/blog/holdem-bubble "thumb:/images/holdem-bubble-hero.webp")** — the biggest jump of all is from $0 to a cash, so risk premiums peak.
 - **The final-table bubble and every pay jump on the final table** — each ladder step is real money.
 - **Satellites** — the extreme case: every qualifying seat is worth the same, so once you have enough chips to win a seat, extra chips are worth almost *nothing* and you fold nearly everything.
 
