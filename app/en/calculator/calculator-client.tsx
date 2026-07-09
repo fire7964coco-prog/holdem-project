@@ -3,8 +3,9 @@
 import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { SEO } from "@/components/seo";
-import { Calculator, TrendingUp, Layers, Target, Trophy, BarChart3 } from "lucide-react";
+import { Calculator, TrendingUp, Layers, Target, Trophy, BarChart3, Zap } from "lucide-react";
 import { CALCULATOR_FAQ_EN } from "./faq";
+import { pfLookup, PF_STACK_MIN, PF_STACK_MAX, PF_STACK_STEP } from "@/lib/pushfold-data";
 
 // ─────────────────────────────────────────────
 // Types & Constants
@@ -981,6 +982,122 @@ function ICMCalc() {
 }
 
 // ─────────────────────────────────────────────
+// 8. Push/Fold — heads-up Nash equilibrium chart
+// Data: lib/pushfold-data.ts (computed & verified offline by scripts/gen-pushfold.mjs)
+// ─────────────────────────────────────────────
+const PF_RANKS = ["A","K","Q","J","T","9","8","7","6","5","4","3","2"];
+
+function pfLabel(r: number, c: number): string {
+  if (r === c) return PF_RANKS[r] + PF_RANKS[c];
+  return c > r ? PF_RANKS[r] + PF_RANKS[c] + "s" : PF_RANKS[c] + PF_RANKS[r] + "o";
+}
+function pfCombos(r: number, c: number): number {
+  return r === c ? 6 : c > r ? 4 : 12;
+}
+
+function PushFoldCalc() {
+  const [stack, setStack] = useState(12);
+  const [ante, setAnte] = useState(false);
+  const [view, setView] = useState<"push" | "call">("push");
+
+  const masks = useMemo(() => pfLookup(stack, ante), [stack, ante]);
+  const mask = view === "push" ? masks.push : masks.call;
+
+  const stat = useMemo(() => {
+    let combos = 0;
+    for (let r = 0; r < 13; r++) for (let c = 0; c < 13; c++) if (mask[r * 13 + c]) combos += pfCombos(r, c);
+    return { combos, pct: Math.round((combos / 1326) * 1000) / 10 };
+  }, [mask]);
+
+  return (
+    <div className="space-y-6">
+      <div className="grid md:grid-cols-2 gap-4">
+        <div>
+          <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">Scenario</label>
+          <div className="grid grid-cols-2 gap-2">
+            {([["push", "SB: shove or fold"], ["call", "BB: call a shove"]] as const).map(([v, l]) => (
+              <button key={v} onClick={() => setView(v)}
+                className={`py-3 rounded-xl text-sm font-bold border transition-all ${view === v ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
+                {l}
+              </button>
+            ))}
+          </div>
+        </div>
+        <div>
+          <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">Ante</label>
+          <div className="grid grid-cols-2 gap-2">
+            {([[false, "No ante"], [true, "BB ante ON"]] as const).map(([v, l]) => (
+              <button key={String(v)} onClick={() => setAnte(v)}
+                className={`py-3 rounded-xl text-sm font-bold border transition-all ${ante === v ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
+                {l}
+              </button>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">
+          Effective stack: <span className="text-primary text-base tabular-nums">{stack}bb</span>
+        </label>
+        <input type="range" min={PF_STACK_MIN} max={PF_STACK_MAX} step={PF_STACK_STEP} value={stack}
+          onChange={e => setStack(Number(e.target.value))} className="w-full accent-primary h-2 rounded-full" />
+        <div className="flex justify-between text-xs text-muted-foreground mt-1">
+          <span>1bb</span><span>5</span><span>10</span><span>15</span><span>20</span><span>25bb</span>
+        </div>
+      </div>
+
+      <div className="rounded-2xl bg-card border border-border p-5">
+        <p className="text-xs text-muted-foreground mb-1">
+          {view === "push" ? `Hands the SB shoves at ${stack}bb` : `Hands the BB calls a shove with at ${stack}bb`}
+          {ante ? " (with ante)" : ""}
+        </p>
+        <div className="flex items-end gap-3">
+          <p className={`text-4xl sm:text-5xl font-black tabular-nums ${view === "push" ? "text-primary" : "text-green-400"}`}>{stat.pct}%</p>
+          <p className="text-sm text-muted-foreground mb-1.5">{stat.combos.toLocaleString()} / 1,326 combos</p>
+        </div>
+      </div>
+
+      <div>
+        <div className="grid gap-[2px]" style={{ gridTemplateColumns: "repeat(13, minmax(0, 1fr))" }}>
+          {Array.from({ length: 169 }, (_, i) => {
+            const r = Math.floor(i / 13), c = i % 13;
+            const on = mask[i];
+            return (
+              <div key={i}
+                title={`${pfLabel(r, c)} — ${on ? (view === "push" ? "push" : "call") : "fold"}`}
+                className={`aspect-square flex items-center justify-center rounded-[3px] text-[8px] sm:text-[10px] font-bold tracking-tighter transition-colors ${
+                  on
+                    ? view === "push"
+                      ? "bg-primary text-primary-foreground"
+                      : "bg-green-500/90 text-green-950"
+                    : "bg-card/70 text-muted-foreground/40"
+                }`}>
+                {pfLabel(r, c)}
+              </div>
+            );
+          })}
+        </div>
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 mt-3 text-xs text-muted-foreground">
+          <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded-[3px] bg-primary inline-block" />Push (all-in)</span>
+          <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded-[3px] bg-green-500/90 inline-block" />Call</span>
+          <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded-[3px] bg-card/70 border border-border/50 inline-block" />Fold</span>
+          <span className="ml-auto text-[10px]">Diagonal = pairs · upper right = suited · lower left = offsuit</span>
+        </div>
+      </div>
+
+      <div className="rounded-xl bg-primary/8 border border-primary/20 p-4 text-xs sm:text-sm text-foreground/80 leading-relaxed">
+        <strong className="text-primary">Nash equilibrium, heads-up (SB vs BB)</strong>: the SB is assumed to either shove or fold.
+        The ante setting adds 0.125bb per player (a big-blind ante equivalent, ≈12.5%). Ranges widen as stacks get shorter — and
+        below ~3-4bb the BB correctly calls <em>wider</em> than the SB shoves, because of pot odds.
+        For short-stack fundamentals, read our{" "}
+        <a href="/en/blog/holdem-short-stack" className="text-primary font-semibold underline underline-offset-2">short stack strategy guide</a>.
+      </div>
+    </div>
+  );
+}
+
+// ─────────────────────────────────────────────
 // Tab Config
 // ─────────────────────────────────────────────
 const TABS = [
@@ -991,6 +1108,7 @@ const TABS = [
   { id:"spr",      icon:<BarChart3 className="w-4 h-4" />,   label:"SPR",        sub:"Stack/pot ratio", component:<SPRCalc /> },
   { id:"m",        icon:<Trophy className="w-4 h-4" />,      label:"Tournament M", sub:"M value",       component:<MValueCalc /> },
   { id:"icm",      icon:<BarChart3 className="w-4 h-4" />,   label:"ICM",        sub:"Prize equity",    component:<ICMCalc /> },
+  { id:"pushfold", icon:<Zap className="w-4 h-4" />,         label:"Push/Fold",  sub:"Nash chart",      component:<PushFoldCalc /> },
 ] as const;
 
 // ─────────────────────────────────────────────
@@ -1004,7 +1122,7 @@ export default function CalculatorPageEn() {
     <>
       <SEO
         title="Poker Odds Calculator — Outs, Pot Odds, Hand Rank, SPR & ICM (Free)"
-        description="Free poker calculator for Texas Hold'em: outs & draw odds, pot odds, hand evaluator, starting hand strength, SPR, tournament M value, and an ICM calculator — 7 tools in one."
+        description="Free poker calculator for Texas Hold'em: outs & draw odds, pot odds, hand evaluator, SPR, tournament M value, ICM, and a Nash push/fold chart — 8 tools in one."
         path="/en/calculator"
       />
 
@@ -1023,11 +1141,11 @@ export default function CalculatorPageEn() {
             <span className="text-gold-gradient">Every Hold'em number in one place</span>
           </h1>
           <p className="text-muted-foreground text-base sm:text-lg max-w-2xl leading-relaxed">
-            Outs · pot odds · hand evaluator · starting hand strength · SPR · tournament M value · ICM —
+            Outs · pot odds · hand evaluator · starting hand strength · SPR · tournament M value · ICM · Nash push/fold chart —
             get the math you need at the table, instantly.
           </p>
           <div className="flex flex-wrap gap-2 mt-6">
-            {["🎯 Outs","💰 Pot Odds","🃏 Hand Rank","📊 Starting Hand","📐 SPR","🏆 M Value","📈 ICM"].map(f => (
+            {["🎯 Outs","💰 Pot Odds","🃏 Hand Rank","📊 Starting Hand","📐 SPR","🏆 M Value","📈 ICM","⚡ Push/Fold"].map(f => (
               <span key={f} className="text-xs font-semibold text-foreground/80 bg-card border border-border rounded-full px-3 py-1.5 shadow-sm">{f}</span>
             ))}
           </div>
@@ -1036,7 +1154,7 @@ export default function CalculatorPageEn() {
 
       {/* Calculator Area */}
       <section className="max-w-5xl mx-auto px-4 sm:px-6 py-10">
-        {/* Tabs — all in one view (mobile 4+3 centered / desktop 7 columns) */}
+        {/* Tabs — all in one view (mobile 4+4 centered / desktop 8 columns) */}
         <div className="flex flex-wrap justify-center gap-1.5 sm:gap-2 mb-6">
           {TABS.map(t => (
             <button
@@ -1166,7 +1284,7 @@ export default function CalculatorPageEn() {
         {/* Tool guide cards */}
         <div>
           <p className="mb-3"><span className="badge-gold">Tools</span></p>
-          <h2 className="text-xl sm:text-2xl font-black text-foreground mb-6">How to use the 7 Hold'em calculators</h2>
+          <h2 className="text-xl sm:text-2xl font-black text-foreground mb-6">How to use the 8 Hold'em calculators</h2>
           <div className="grid md:grid-cols-2 gap-4">
             {[
               { icon:"🎯", title:"Outs calculator", body:"Precisely calculates the chance your draw completes on the flop or turn. See both the Rule of 4 and 2 shortcut and the exact figure at once." },
@@ -1176,6 +1294,7 @@ export default function CalculatorPageEn() {
               { icon:"📐", title:"SPR (Stack-to-Pot Ratio)", body:"The stack-to-pot ratio tells you how strong a hand you need. The lower the SPR, the more it favors committing with a strong hand." },
               { icon:"🏆", title:"Tournament M value", body:"Harrington's M measures the pressure on your tournament stack. Your strategy shifts completely across the green/yellow/orange/red/dead zones." },
               { icon:"📈", title:"ICM calculator", body:"The Independent Chip Model converts tournament chips into real prize-money value — essential for call/fold decisions and deal talks on the bubble and final table." },
+              { icon:"⚡", title:"Nash push/fold chart", body:"A 13×13 heads-up chart computed from the Nash equilibrium: which hands to open-shove and which to call with at 1–25bb. A must-have for late-stage tournaments." },
             ].map(c => (
               <div key={c.title} className="luxe-card p-5 flex gap-4">
                 <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-xl flex-shrink-0">{c.icon}</div>

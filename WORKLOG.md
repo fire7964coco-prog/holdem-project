@@ -5,6 +5,13 @@
 
 ## 2026-07-09
 
+### 계산기 "푸시/폴드" Nash 차트 탭 신설 (Fable5 빌드 → 독립검증 → 배포)
+- **계산기(KO+EN) 8번째 탭** "푸시/폴드": 헤즈업 Nash push/fold **13×13 차트**. 유효스택 1~25bb 슬라이더 + 앤티 토글 + SB푸시/BB콜 시나리오 + 콤보가중%(÷1326). 온브랜드 다크 그리드(골드=push/그린=call)·모바일 대응.
+- **정확성 = 자체계산**(레인지 베끼기 X): `scripts/gen-pushfold.mjs`(오프라인, 10워커) → 169×169 프리플랍 올인 에쿼티(MC 30만/매치업·157s·poker-eval 교차검증 0 불일치) → fictitious play Nash 솔브 → `lib/pushfold-data.ts`(비트팩 마스크, 49스택×앤티2×push/call) 임베드. 런타임 `pfLookup` 룩업만.
+- **독립검증(내가)**: UI 표시%가 공표 Nash 일치 — 10bb 58.1%(SB)/37.3%(BB), 12bb 53.5%, 15bb 46.0%, 20bb 40.6%. 단조증가·콜<푸시. 그리드 형태 육안(10bb Ax·Kx·페어 전부 push, fold=우하단 트래시). 에쿼티 AA/KK 81.84%·AKs/QQ 46.09% ±0.15pp.
+- Fable5가 **내 벤치마크 3개 오류 수정**(2bb "any two"는 틀림 — 72o 슛EV<폴드EV, 수학적으로 맞는 지적). KO는 holdem-short-stack이 EN전용이라 `/blog/holdem-bubble-strategy` 링크.
+- 빌드통과·배포. **🔴 부수발견(별도 수정 대상)**: `lib/poker-eval.ts` `evalBest7`가 순수 하이카드 7장에서 베스트5장을 `cards.slice(0,5)`로 방치(scoreBetter(x,[]) 항상 false) → 퀴즈 "최적5장" 하이라이트 오류 가능(족보 타입은 정상).
+
 ### EN 신규 포스트 `holdem-short-stack` 발행 — Tournament 필라 완성 (ICM→버블→숏스택 3부작)
 - **배경**: ICM(이론)→버블(스팟)→**숏스택(액션)** 3부작 마무리. 사용자 자율 진행 요청. SERP 리서치(short stack strategy·push fold·M ratio). lowfruits 3시드(`short stack`=음식/폰트 노이즈·`short stack poker`=1개·`push fold`=포커有 **전부 Weak0 툴독점**) → 키워드뱅크 `en-short-stack.md`. **차트 헤드텀(push fold chart 170)은 툴독점이라 추격 안 함 → 설명글+/en/calculator 위임 각도가 정답**(데이터로 검증).
 - **내용**: 스택밴드 표(25→5bb) · **M-ratio 존**(그린20+/옐로/오렌지/레드/데드, M=bb÷1.5 매핑) · **shove vs call 구분**(첫인 넓게/콜 좁게) · push/fold 차트 한계+계산기 위임(§13상 정확 Nash 레인지 미게재) · 버블 ICM 트위스트(숏=미들보다 낮은 버블팩터) · 포지션 · 5대 실수 · FAQ 7.

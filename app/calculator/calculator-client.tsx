@@ -3,8 +3,9 @@
 import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { SEO } from "@/components/seo";
-import { Calculator, TrendingUp, Layers, Target, Trophy, BarChart3 } from "lucide-react";
+import { Calculator, TrendingUp, Layers, Target, Trophy, BarChart3, Zap } from "lucide-react";
 import { CALCULATOR_FAQ } from "./faq";
+import { pfLookup, PF_STACK_MIN, PF_STACK_MAX, PF_STACK_STEP } from "@/lib/pushfold-data";
 
 // ─────────────────────────────────────────────
 // Types & Constants
@@ -994,6 +995,123 @@ function ICMCalc() {
 }
 
 // ─────────────────────────────────────────────
+// 8. Push/Fold — 헤즈업 내시 균형 차트
+// 데이터: lib/pushfold-data.ts (scripts/gen-pushfold.mjs가 오프라인 계산·검증 후 생성)
+// ─────────────────────────────────────────────
+const PF_RANKS = ["A","K","Q","J","T","9","8","7","6","5","4","3","2"];
+
+function pfLabel(r: number, c: number): string {
+  if (r === c) return PF_RANKS[r] + PF_RANKS[c];
+  return c > r ? PF_RANKS[r] + PF_RANKS[c] + "s" : PF_RANKS[c] + PF_RANKS[r] + "o";
+}
+function pfCombos(r: number, c: number): number {
+  return r === c ? 6 : c > r ? 4 : 12;
+}
+
+function PushFoldCalc() {
+  const [stack, setStack] = useState(12);
+  const [ante, setAnte] = useState(false);
+  const [view, setView] = useState<"push" | "call">("push");
+
+  const masks = useMemo(() => pfLookup(stack, ante), [stack, ante]);
+  const mask = view === "push" ? masks.push : masks.call;
+
+  const stat = useMemo(() => {
+    let combos = 0;
+    for (let r = 0; r < 13; r++) for (let c = 0; c < 13; c++) if (mask[r * 13 + c]) combos += pfCombos(r, c);
+    return { combos, pct: Math.round((combos / 1326) * 1000) / 10 };
+  }, [mask]);
+
+  return (
+    <div className="space-y-6">
+      <div className="grid md:grid-cols-2 gap-4">
+        <div>
+          <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">시나리오</label>
+          <div className="grid grid-cols-2 gap-2">
+            {([["push", "SB: 푸시 or 폴드"], ["call", "BB: 올인 콜 판단"]] as const).map(([v, l]) => (
+              <button key={v} onClick={() => setView(v)}
+                className={`py-3 rounded-xl text-sm font-bold border transition-all ${view === v ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
+                {l}
+              </button>
+            ))}
+          </div>
+        </div>
+        <div>
+          <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">앤티</label>
+          <div className="grid grid-cols-2 gap-2">
+            {([[false, "앤티 없음"], [true, "BB 앤티 ON"]] as const).map(([v, l]) => (
+              <button key={String(v)} onClick={() => setAnte(v)}
+                className={`py-3 rounded-xl text-sm font-bold border transition-all ${ante === v ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
+                {l}
+              </button>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">
+          유효 스택: <span className="text-primary text-base tabular-nums">{stack}bb</span>
+        </label>
+        <input type="range" min={PF_STACK_MIN} max={PF_STACK_MAX} step={PF_STACK_STEP} value={stack}
+          onChange={e => setStack(Number(e.target.value))} className="w-full accent-primary h-2 rounded-full" />
+        <div className="flex justify-between text-xs text-muted-foreground mt-1">
+          <span>1bb</span><span>5</span><span>10</span><span>15</span><span>20</span><span>25bb</span>
+        </div>
+      </div>
+
+      <div className="rounded-2xl bg-card border border-border p-5">
+        <p className="text-xs text-muted-foreground mb-1">
+          {view === "push" ? `SB가 ${stack}bb에서 올인하는 핸드` : `BB가 ${stack}bb 올인을 콜하는 핸드`}
+          {ante ? " (앤티 포함)" : ""}
+        </p>
+        <div className="flex items-end gap-3">
+          <p className={`text-4xl sm:text-5xl font-black tabular-nums ${view === "push" ? "text-primary" : "text-green-400"}`}>{stat.pct}%</p>
+          <p className="text-sm text-muted-foreground mb-1.5">{stat.combos.toLocaleString()} / 1,326 콤보</p>
+        </div>
+      </div>
+
+      <div>
+        <div className="grid gap-[2px]" style={{ gridTemplateColumns: "repeat(13, minmax(0, 1fr))" }}>
+          {Array.from({ length: 169 }, (_, i) => {
+            const r = Math.floor(i / 13), c = i % 13;
+            const on = mask[i];
+            return (
+              <div key={i}
+                title={`${pfLabel(r, c)} — ${on ? (view === "push" ? "푸시" : "콜") : "폴드"}`}
+                className={`aspect-square flex items-center justify-center rounded-[3px] text-[8px] sm:text-[10px] font-bold tracking-tighter transition-colors ${
+                  on
+                    ? view === "push"
+                      ? "bg-primary text-primary-foreground"
+                      : "bg-green-500/90 text-green-950"
+                    : "bg-card/70 text-muted-foreground/40"
+                }`}>
+                {pfLabel(r, c)}
+              </div>
+            );
+          })}
+        </div>
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 mt-3 text-xs text-muted-foreground">
+          <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded-[3px] bg-primary inline-block" />푸시(올인)</span>
+          <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded-[3px] bg-green-500/90 inline-block" />콜</span>
+          <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded-[3px] bg-card/70 border border-border/50 inline-block" />폴드</span>
+          <span className="ml-auto text-[10px]">대각선=페어 · 우상단=수티드 · 좌하단=오프수트</span>
+        </div>
+      </div>
+
+      <div className="rounded-xl bg-primary/8 border border-primary/20 p-4 text-xs sm:text-sm text-foreground/80 leading-relaxed">
+        <strong className="text-primary">헤즈업(SB vs BB) 내시 균형</strong> 기준 차트입니다. SB는 올인 또는 폴드만 한다고 가정하며,
+        앤티 ON은 플레이어당 0.125bb(빅블라인드 앤티 환산 ≈ 12.5%)를 반영합니다. 스택이 짧을수록 푸시·콜 범위가 넓어지고,
+        3~4bb 이하에서는 팟 오즈 때문에 BB 콜 범위가 SB 푸시보다 오히려 넓어지는 게 수학적으로 정확합니다.
+        토너먼트 후반 숏스택 판단이 더 궁금하면{" "}
+        <a href="/blog/holdem-bubble-strategy" className="text-primary font-semibold underline underline-offset-2">버블 생존 전략</a>{" "}
+        가이드를 참고하세요.
+      </div>
+    </div>
+  );
+}
+
+// ─────────────────────────────────────────────
 // Tab Config
 // ─────────────────────────────────────────────
 const TABS = [
@@ -1004,6 +1122,7 @@ const TABS = [
   { id:"spr",      icon:<BarChart3 className="w-4 h-4" />,   label:"SPR",        sub:"스택/팟 비율", component:<SPRCalc /> },
   { id:"m",        icon:<Trophy className="w-4 h-4" />,      label:"토너먼트 M", sub:"M값 계산기",   component:<MValueCalc /> },
   { id:"icm",      icon:<BarChart3 className="w-4 h-4" />,   label:"ICM",        sub:"상금 가치 계산", component:<ICMCalc /> },
+  { id:"pushfold", icon:<Zap className="w-4 h-4" />,         label:"푸시/폴드",  sub:"내시 균형 차트", component:<PushFoldCalc /> },
 ] as const;
 
 // ─────────────────────────────────────────────
@@ -1017,7 +1136,7 @@ export default function CalculatorPage() {
     <>
       <SEO
         title="ICM 계산기·홀덤 확률 계산기 — 아웃츠·팟오즈·SPR·M값 무료"
-        description="칩 리더인데 왜 그 콜이 손해일까? ICM 계산기로 토너먼트 칩의 진짜 상금 가치를 즉시 확인하세요. 아웃츠·팟오즈·족보·스타팅핸드·SPR·M값까지 홀덤 계산기 7종 무료."
+        description="칩 리더인데 왜 그 콜이 손해일까? ICM 계산기로 토너먼트 칩의 진짜 상금 가치를 즉시 확인하세요. 아웃츠·팟오즈·족보·SPR·M값·푸시폴드까지 홀덤 계산기 8종 무료."
         path="/calculator"
       />
 
@@ -1036,11 +1155,11 @@ export default function CalculatorPage() {
             <span className="text-gold-gradient">홀덤 모든 계산 한 곳에</span>
           </h1>
           <p className="text-muted-foreground text-base sm:text-lg max-w-2xl leading-relaxed">
-            아웃츠·팟 오즈·핸드 족보 판별·스타팅 핸드 강도·SPR·토너먼트 M값·ICM —
+            아웃츠·팟 오즈·핸드 족보 판별·스타팅 핸드 강도·SPR·토너먼트 M값·ICM·푸시/폴드 내시 차트 —
             실전에서 필요한 계산을 즉시 확인하세요.
           </p>
           <div className="flex flex-wrap gap-2 mt-6">
-            {["🎯 아웃츠","💰 팟 오즈","🃏 족보 판별","📊 스타팅 핸드","📐 SPR","🏆 M값","📈 ICM"].map(f => (
+            {["🎯 아웃츠","💰 팟 오즈","🃏 족보 판별","📊 스타팅 핸드","📐 SPR","🏆 M값","📈 ICM","⚡ 푸시/폴드"].map(f => (
               <span key={f} className="text-xs font-semibold text-foreground/80 bg-card border border-border rounded-full px-3 py-1.5 shadow-sm">{f}</span>
             ))}
           </div>
@@ -1049,7 +1168,7 @@ export default function CalculatorPage() {
 
       {/* Calculator Area */}
       <section className="max-w-5xl mx-auto px-4 sm:px-6 py-10">
-        {/* Tabs — 전부 한 화면에 (모바일 4+3 가운데정렬 / 데스크톱 7열) */}
+        {/* Tabs — 전부 한 화면에 (모바일 4+4 가운데정렬 / 데스크톱 8열) */}
         <div className="flex flex-wrap justify-center gap-1.5 sm:gap-2 mb-6">
           {TABS.map(t => (
             <button
@@ -1179,7 +1298,7 @@ export default function CalculatorPage() {
         {/* 사용 가이드 카드 */}
         <div>
           <p className="mb-3"><span className="badge-gold">도구 안내</span></p>
-          <h2 className="text-xl sm:text-2xl font-black text-foreground mb-6">홀덤 계산기 7종 사용 가이드</h2>
+          <h2 className="text-xl sm:text-2xl font-black text-foreground mb-6">홀덤 계산기 8종 사용 가이드</h2>
           <div className="grid md:grid-cols-2 gap-4">
             {[
               { icon:"🎯", title:"아웃츠 계산기", body:"플랍·턴에서 내 드로우가 완성될 확률을 정밀하게 계산합니다. Rule of 4 and 2 암산법과 정확한 수치를 동시에 확인하세요." },
@@ -1189,6 +1308,7 @@ export default function CalculatorPage() {
               { icon:"📐", title:"SPR (Stack-to-Pot Ratio)", body:"스택과 팟의 비율로 현재 상황에 어느 정도의 핸드 강도가 필요한지 판단합니다. SPR이 낮을수록 강한 핸드로 올인이 유리합니다." },
               { icon:"🏆", title:"토너먼트 M값", body:"해링턴의 M값으로 토너먼트에서 내 스택 압박도를 측정합니다. 그린/옐로우/오렌지/레드/데드 존에 따라 전략이 완전히 달라집니다." },
               { icon:"📈", title:"ICM 계산기", body:"독립 칩 모델(ICM)로 토너먼트 칩을 실제 상금 가치로 환산합니다. 버블·파이널 테이블의 콜/폴드 결정과 딜 협상에 필수입니다." },
+              { icon:"⚡", title:"푸시/폴드 내시 차트", body:"1~25bb 숏스택 헤즈업에서 어떤 핸드로 올인(푸시)하고 어떤 핸드로 콜해야 하는지 내시 균형으로 계산한 13×13 차트입니다. 토너먼트 후반 필수 도구입니다." },
             ].map(c => (
               <div key={c.title} className="luxe-card p-5 flex gap-4">
                 <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-xl flex-shrink-0">{c.icon}</div>
