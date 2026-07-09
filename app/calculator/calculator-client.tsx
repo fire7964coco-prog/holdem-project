@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { SEO } from "@/components/seo";
 import { Calculator, TrendingUp, Layers, Target, Trophy, BarChart3 } from "lucide-react";
+import { CALCULATOR_FAQ } from "./faq";
 
 // ─────────────────────────────────────────────
 // Types & Constants
@@ -1103,23 +1104,122 @@ export default function CalculatorPage() {
       </section>
 
       {/* SEO Content */}
-      <section className="max-w-5xl mx-auto px-4 sm:px-6 pb-16">
+      <section className="max-w-5xl mx-auto px-4 sm:px-6 pb-16 space-y-12">
+        {/* ICM 사용법 — 버블 워크드 예시 */}
         <div className="border-t border-border pt-10">
-          <h2 className="text-2xl font-black text-foreground mb-6">포커 확률 계산기 사용 가이드</h2>
-          <div className="grid md:grid-cols-2 gap-6">
+          <p className="mb-3"><span className="badge-gold">ICM 가이드</span></p>
+          <h2 className="text-xl sm:text-2xl font-black text-foreground mb-3">ICM 계산기 사용법 — 버블 예시로 3분 이해</h2>
+          <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-5 max-w-3xl">
+            4명이 남고 3명까지 입상하는 버블 상황을 가정해 봅니다. 스택이 60,000 / 40,000 / 30,000 / 20,000이고 상금이 500,000 / 300,000 / 200,000원일 때, 계산기에 그대로 입력하면 아래처럼 각자의 칩 비율과 실제 상금 가치(ICM)가 나옵니다.
+          </p>
+          <div className="overflow-x-auto rounded-xl border border-border">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="bg-card border-b border-border">
+                  <th className="px-3 py-2.5 text-left font-bold text-muted-foreground">플레이어</th>
+                  <th className="px-3 py-2.5 text-right font-bold text-muted-foreground">칩 %</th>
+                  <th className="px-3 py-2.5 text-right font-bold text-primary">ICM %</th>
+                  <th className="px-3 py-2.5 text-right font-bold text-muted-foreground">차이</th>
+                </tr>
+              </thead>
+              <tbody>
+                {([
+                  ["🥇 칩 리더", "40.0%", "33.3%", "-6.7%p", false],
+                  ["🥈 2위", "26.7%", "27.2%", "+0.6%p", true],
+                  ["🥉 3위", "20.0%", "22.9%", "+2.9%p", true],
+                  ["4위 (숏스택)", "13.3%", "16.6%", "+3.3%p", true],
+                ] as [string, string, string, string, boolean][]).map(([p, chip, icm, diff, up]) => (
+                  <tr key={p} className="border-b border-border/60 last:border-0">
+                    <td className="px-3 py-2.5 font-bold text-foreground">{p}</td>
+                    <td className="px-3 py-2.5 text-right font-mono text-muted-foreground">{chip}</td>
+                    <td className="px-3 py-2.5 text-right font-mono font-bold text-foreground">{icm}</td>
+                    <td className={`px-3 py-2.5 text-right font-mono font-bold ${up ? "text-green-600" : "text-red-500"}`}>{diff}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mt-5 max-w-3xl">
+            핵심은 <strong className="text-foreground">칩 리더의 ICM 가치(33.3%)가 칩 비율(40%)보다 6.7%p 낮다</strong>는 점입니다. 1등을 해도 1등 상금만 받기 때문에 리더가 코인플립으로 얻는 상금 가치는 생각보다 적습니다. 그래서 버블에서 칩 리더는 <strong className="text-foreground">숏스택을 압박</strong>하는 것이 정답이고, 반대로 숏스택(칩 13.3% → ICM 16.6%)은 칩보다 가치가 높아 <strong className="text-foreground">불필요한 올인 콜을 피해</strong> 생존 가치를 지켜야 합니다.
+          </p>
+        </div>
+
+        {/* ICM 딜 vs 칩찹 */}
+        <div>
+          <p className="mb-3"><span className="badge-gold">상금 분배</span></p>
+          <h2 className="text-xl sm:text-2xl font-black text-foreground mb-3">ICM 딜 vs 칩찹 — 파이널 테이블 상금 분배</h2>
+          <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-5 max-w-3xl">
+            3명이 남아 딜(deal)을 논의한다고 합시다. 스택 비율이 50% / 30% / 20%이고 남은 상금 합계가 150만원일 때, 두 가지 분배 방식은 아래처럼 크게 갈립니다.
+          </p>
+          <div className="overflow-x-auto rounded-xl border border-border">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="bg-card border-b border-border">
+                  <th className="px-3 py-2.5 text-left font-bold text-muted-foreground">플레이어</th>
+                  <th className="px-3 py-2.5 text-right font-bold text-muted-foreground">칩찹(칩 비율)</th>
+                  <th className="px-3 py-2.5 text-right font-bold text-primary">ICM 딜</th>
+                  <th className="px-3 py-2.5 text-right font-bold text-muted-foreground">차이</th>
+                </tr>
+              </thead>
+              <tbody>
+                {([
+                  ["🥇 칩 리더 (50%)", "750,000", "617,857", "-132,143", false],
+                  ["🥈 2위 (30%)", "450,000", "485,000", "+35,000", true],
+                  ["🥉 숏스택 (20%)", "300,000", "397,143", "+97,143", true],
+                ] as [string, string, string, string, boolean][]).map(([p, chop, icm, diff, up]) => (
+                  <tr key={p} className="border-b border-border/60 last:border-0">
+                    <td className="px-3 py-2.5 font-bold text-foreground">{p}</td>
+                    <td className="px-3 py-2.5 text-right font-mono text-muted-foreground">{chop}원</td>
+                    <td className="px-3 py-2.5 text-right font-mono font-bold text-foreground">{icm}원</td>
+                    <td className={`px-3 py-2.5 text-right font-mono font-bold ${up ? "text-green-600" : "text-red-500"}`}>{diff}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mt-5 max-w-3xl">
+            칩찹은 칩 비율 그대로 나눠 <strong className="text-foreground">칩 리더에게 유리</strong>하고, ICM 딜은 순위 확정 확률을 반영해 <strong className="text-foreground">숏스택에게 더 공정</strong>합니다. 위 숏스택은 칩찹이면 30만원이지만 ICM 딜이면 약 39.7만원 — <strong className="text-foreground">9.7만원을 더 받습니다</strong>. 숏스택이라면 ICM 딜을, 칩 리더라면 칩찹을 제안하는 게 이득입니다.
+          </p>
+        </div>
+
+        {/* 사용 가이드 카드 */}
+        <div>
+          <p className="mb-3"><span className="badge-gold">도구 안내</span></p>
+          <h2 className="text-xl sm:text-2xl font-black text-foreground mb-6">홀덤 계산기 7종 사용 가이드</h2>
+          <div className="grid md:grid-cols-2 gap-4">
             {[
-              { title:"🎯 아웃츠 계산기", body:"플랍·턴에서 내 드로우가 완성될 확률을 정밀하게 계산합니다. Rule of 4 and 2 암산법과 정확한 수치를 동시에 확인하세요." },
-              { title:"💰 팟 오즈 & 임플라이드 오즈", body:"콜해야 할지 폴드해야 할지 수학적으로 판단합니다. 상대 스택이 많을 때 임플라이드 오즈를 추가하면 더 정확한 결정이 가능합니다." },
-              { title:"🃏 핸드 족보 판별기", body:"카드를 직접 선택해 족보를 확인합니다. 7장까지 입력하면 최적의 5장 조합을 자동으로 찾아 최강 족보를 보여줍니다." },
-              { title:"📊 스타팅 핸드 강도", body:"홀카드 2장을 선택하면 169가지 핸드 중 어떤 등급인지, 포지션별 추천 액션은 무엇인지 즉시 확인할 수 있습니다." },
-              { title:"📐 SPR (Stack-to-Pot Ratio)", body:"스택과 팟의 비율로 현재 상황이 어느 정도의 핸드 강도가 필요한지 판단합니다. SPR이 낮을수록 강한 핸드로 올인이 유리합니다." },
-              { title:"🏆 토너먼트 M값", body:"해링턴의 M값으로 토너먼트에서 내 스택 압박도를 측정합니다. 그린/옐로우/오렌지/레드/데드 존에 따라 전략이 완전히 달라집니다." },
-              { title:"📈 ICM 계산기", body:"독립 칩 모델(ICM)로 토너먼트 칩을 실제 상금 가치로 환산합니다. 버블·파이널 테이블의 콜/폴드 결정에 필수입니다." },
+              { icon:"🎯", title:"아웃츠 계산기", body:"플랍·턴에서 내 드로우가 완성될 확률을 정밀하게 계산합니다. Rule of 4 and 2 암산법과 정확한 수치를 동시에 확인하세요." },
+              { icon:"💰", title:"팟 오즈 & 임플라이드 오즈", body:"콜해야 할지 폴드해야 할지 수학적으로 판단합니다. 상대 스택이 많을 때 임플라이드 오즈를 추가하면 더 정확한 결정이 가능합니다." },
+              { icon:"🃏", title:"핸드 족보 판별기", body:"카드를 직접 선택해 족보를 확인합니다. 7장까지 입력하면 최적의 5장 조합을 자동으로 찾아 최강 족보를 보여줍니다." },
+              { icon:"📊", title:"스타팅 핸드 강도", body:"홀카드 2장을 선택하면 169가지 핸드 중 어떤 등급인지, 포지션별 추천 액션은 무엇인지 즉시 확인할 수 있습니다." },
+              { icon:"📐", title:"SPR (Stack-to-Pot Ratio)", body:"스택과 팟의 비율로 현재 상황에 어느 정도의 핸드 강도가 필요한지 판단합니다. SPR이 낮을수록 강한 핸드로 올인이 유리합니다." },
+              { icon:"🏆", title:"토너먼트 M값", body:"해링턴의 M값으로 토너먼트에서 내 스택 압박도를 측정합니다. 그린/옐로우/오렌지/레드/데드 존에 따라 전략이 완전히 달라집니다." },
+              { icon:"📈", title:"ICM 계산기", body:"독립 칩 모델(ICM)로 토너먼트 칩을 실제 상금 가치로 환산합니다. 버블·파이널 테이블의 콜/폴드 결정과 딜 협상에 필수입니다." },
             ].map(c => (
-              <div key={c.title} className="bg-card border border-border rounded-xl p-5">
-                <h3 className="text-base font-black text-foreground mb-2">{c.title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{c.body}</p>
+              <div key={c.title} className="luxe-card p-5 flex gap-4">
+                <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-xl flex-shrink-0">{c.icon}</div>
+                <div>
+                  <h3 className="text-base font-black text-foreground mb-1.5">{c.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{c.body}</p>
+                </div>
               </div>
+            ))}
+          </div>
+        </div>
+
+        {/* FAQ */}
+        <div>
+          <p className="mb-3"><span className="badge-gold">FAQ</span></p>
+          <h2 className="text-xl sm:text-2xl font-black text-foreground mb-6">ICM 계산기·홀덤 계산기 자주 묻는 질문</h2>
+          <div className="space-y-3">
+            {CALCULATOR_FAQ.map((f, i) => (
+              <details key={i} className="luxe-card p-5 group" open={i === 0}>
+                <summary className="flex items-center justify-between cursor-pointer list-none font-bold text-foreground gap-3">
+                  <span>Q. {f.q}</span>
+                  <span className="text-primary transition-transform group-open:rotate-45 text-xl leading-none flex-shrink-0">+</span>
+                </summary>
+                <p className="text-sm text-muted-foreground leading-relaxed mt-3">{f.a}</p>
+              </details>
             ))}
           </div>
         </div>

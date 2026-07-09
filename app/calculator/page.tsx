@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { SITE } from "@/lib/site";
 import CalculatorClient from "./calculator-client";
+import { CALCULATOR_FAQ } from "./faq";
 
 export const metadata: Metadata = {
   title: "ICM 계산기·홀덤 확률 계산기 — 아웃츠·팟오즈·SPR·M값 무료",
@@ -53,6 +54,14 @@ const jsonLd = {
         { "@type": "ListItem", position: 1, name: "홈", item: SITE },
         { "@type": "ListItem", position: 2, name: "홀덤 계산기", item: `${SITE}/calculator` },
       ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: CALCULATOR_FAQ.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
     },
   ],
 };
