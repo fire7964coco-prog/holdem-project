@@ -1,5 +1,6 @@
 import type { Post } from "../posts";
 import { POST as holdemTournament } from "./holdem-tournament";
+import { POST as holdemIcm } from "./holdem-icm";
 import { POST as holdemHandRankings } from "./holdem-hand-rankings";
 import { POST as holdemProbability } from "./holdem-probability";
 import { POST as holdemPotOdds } from "./holdem-pot-odds";
@@ -69,6 +70,7 @@ export const EN_POSTS: Post[] = [
   wptAustralia2026Guide,
   eptBarcelona2026Guide,
   holdemTournament,
+  holdemIcm,
   texasHoldemRulesForBeginners,
   holdemHandRankings,
   holdemKicker,

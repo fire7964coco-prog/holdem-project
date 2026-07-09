@@ -686,7 +686,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- 다국어 블로그 포스트 (74편) -->
+  <!-- 다국어 블로그 포스트 (75편) -->
 
   <url>
     <loc>https://www.holdemmaster.com/en/blog/apt-incheon-2026-guide</loc>
@@ -881,6 +881,16 @@
   </url>
 
   <url>
+    <loc>https://www.holdemmaster.com/en/blog/holdem-icm</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-icm" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-icm" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-icm" />
+  </url>
+
+  <url>
     <loc>https://www.holdemmaster.com/en/blog/holdem-implied-odds</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>monthly</changefreq>
@@ -1042,7 +1052,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/en/blog/holdem-tournament</loc>
-    <lastmod>2026-07-03</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-tournament" />
@@ -1052,7 +1062,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/en/blog/holdem-tournament-vs-cash-game</loc>
-    <lastmod>2026-07-03</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-tournament-vs-cash-game" />

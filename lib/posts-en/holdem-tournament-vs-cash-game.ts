@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In cash games, chips are real money and blinds stay fixed. In tournaments, chips are survival equity, blinds rise, and payouts depend on where you finish.",
   category: "토너먼트",
   date: "2026-06-11",
-  updated: "2026-07-03",
+  updated: "2026-07-09",
   hideSummaryImageSlot: true,
   readTime: "16 min",
   emoji: "🏆",
@@ -40,7 +40,7 @@ This guide breaks down ==tournament poker vs cash game poker== in the way beginn
 - **Cash games:** chips equal real money, blinds stay fixed, and you can leave whenever you want.
 - **Tournaments:** you pay one entry fee, receive tournament chips, and play until you bust or win.
 - **Cash games teach fundamentals faster** because stacks are deeper and the feedback loop is shorter.
-- **Tournaments offer bigger upside** but much higher variance, longer sessions, and ICM pressure.
+- **Tournaments offer bigger upside** but much higher variance, longer sessions, and [ICM pressure](/en/blog/holdem-icm).
 - **For most beginners, cash games are the cleaner starting point.** Add tournaments once the basics feel automatic.
 
 ---

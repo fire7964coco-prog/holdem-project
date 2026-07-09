@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In a poker tournament you pay a fixed buy-in for chips, blinds increase on a timer until one player holds all chips. Top 10–15% of players cash. You can enter via direct buy-in, satellite, or online pre-registration.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-07-03",
+  updated: "2026-07-09",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🏆",
@@ -154,7 +154,7 @@ Antes are usually in by now. Stack pressure starts. Players with short stacks st
 The most stressful stage. One more elimination and everyone remaining **gets paid** (ITM = In The Money). Short stacks freeze up. Big stacks bully. Smart bubble play can add 2–3x your buy-in in equity without winning a single pot.
 
 ### Stage 4 — Final Table
-Usually 6–9 players left. Payouts increase sharply with each elimination. ICM (Independent Chip Model) governs decision-making here — chip EV and real-money EV diverge significantly.
+Usually 6–9 players left. Payouts increase sharply with each elimination. [ICM (the Independent Chip Model)](/en/blog/holdem-icm "thumb:/images/holdem-icm-hero.webp") governs decision-making here — chip EV and real-money EV diverge significantly.
 
 ---
 

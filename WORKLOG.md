@@ -5,6 +5,15 @@
 
 ## 2026-07-09
 
+### EN 신규 포스트 `holdem-icm` 발행 — Tournament 필라 (ICM 마스터 가이드)
+- **배경**: 계산기 작업 중 **EN에 ICM/버블 글 부재** 발견 → 시너지 최대 후보. 사용자 lowfruits export(`poker_icm *`) 분석: `poker icm` 1300vol·Weak2, 롱테일 `chip ev vs icm`·`when to use icm`·`icm mistakes` 등 Weak4~5 다수(minDA6 gtolab = 뚫을 만함). 키워드뱅크에 ICM 시드 없어 라이브 대체 → `docs/keyword-bank/en-icm.md` 신설.
+- **각도**: "초보→파이널테이블 딜"까지 **계산기 연동 단일 마스터**(SERP에 통합 페이지 없음). H2 9개.
+- **내용**: 칩≠돈 · **Malmuth-Harville 워크드예시**(칩50%→ICM38.4%, 착순확률까지 §13 `computeICM` 직접검산) · ICM vs ChipEV · ICM택스/리스크프리미엄/버블팩터 · **ICM딜 vs 칩찹**($750/450/300 vs $618/485/397, §13) · 언제 쓰고 무시하나(위성·헤즈업) · 정직한 한계(arXiv 2506.00180 실증연구 인용).
+- **적대적 팩트체크 ALL CORRECT**(손계산 재검증, 출처 Harville1973·Malmuth1986 확인). 반영 2건: 딜예시 상금($900/400/200) 명시로 재현가능화 + 실증연구 "a large 2025 study"로 표현 완화.
+- **역링크**: holdem-tournament(필라)·tournament-vs-cash-game 본문→holdem-icm 인라인(updated 갱신). /en/calculator 상호 CTA(계산기 ICM 내부링크 공백 메움).
+- **이미지 2개**(커서 실사 + **워터마크 sharp 합성·철자 육안검수**): hero 29.8KB(3단 내림차순 스택+상금보드=ICM 시각화), pressure 40.7KB(버블 폴드, 카드 뒷면 §13안전). 커서가 워드마크 누락 → sharp로 "HoldemMaster" 골드 저불투명 우하단 합성.
+- 빌드 ✅ **"75 intl posts"**(EN 40편). **다음**: GSC 색인 `/en/blog/holdem-icm`.
+
 ### 계산기(/calculator) 시그니처 자산 보강 — SEO 기술공사 + 다크콘솔 세련화 + ICM 콘텐츠 (3커밋)
 > 목적: "ICM 계산기" GSC 1페이지 5~6위 → Top3. Fable5 기획(콘텐츠/SEO + 디자인/모바일 병렬) → 단계 실행.
 - **①색인 기술공사(`ffe84d4`)**: KO `/calculator`가 bare 래퍼라 서버 metadata 부재 → 초기 정적 HTML canonical이 **사이트 루트로 오염**·title 기본값이던 것 수정. page.tsx에 서버 metadata(canonical=/calculator·openGraph) + ko↔en 상호 hreflang + JSON-LD(WebApplication+BreadcrumbList) 서버 렌더. title 선두를 "ICM 계산기"로 재배치. EN page.tsx도 상호 hreflang.

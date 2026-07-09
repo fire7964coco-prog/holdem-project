@@ -21,7 +21,7 @@
 1. **GSC(사용자 몫)**: `/calculator`·`/en/calculator` URL 검사 → **색인 재요청**(canonical/title/스키마 교정 반영). 2~4주 "ICM 계산기" 순위·"ICM 딜" 신규쿼리 발생 추적.
 2. **관찰 지표**: "ICM 계산기" 5~6위→top3 진입 여부, "ICM 딜"·"칩찹" 신규 노출, FAQ/워크드예시가 롱테일 흡수하는지. 효과는 재크롤 후 2~4주.
 3. (선택) `scripts/mobile-audit.mjs` 계산기 지원 파라미터화(현재 EN블로그 전용) — 이번엔 직접 overflow 측정으로 대체함.
-4. **다음 콘텐츠**: 계산기 종료 → 신규 EN 포스트(키워드뱅크) or 필라 심화로 복귀 가능.
+4. **다음 콘텐츠**: ✅ **EN `holdem-icm` 발행 완료**(Tournament 필라, 계산기 연동 마스터, 팩트체크 PASS, 이미지2+워터마크). GSC 색인 `/en/blog/holdem-icm` 필요. → 다음 후보: EN `holdem-bubble`(ICM과 짝·EN 공백)·`what-beats-what`(HandRankings 6/6 완성)·Strategy 심화. lowfruits 활용법 확립됨(사용자 export→`docs/keyword-bank/en-*.md`).
 
 ---
 
