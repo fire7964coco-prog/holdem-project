@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { SEO } from "@/components/seo";
 import { Calculator, TrendingUp, Layers, Target, Trophy, BarChart3 } from "lucide-react";
+import { CALCULATOR_FAQ_EN } from "./faq";
 
 // ─────────────────────────────────────────────
 // Types & Constants
@@ -1090,23 +1091,146 @@ export default function CalculatorPageEn() {
       </section>
 
       {/* SEO Content */}
-      <section className="max-w-5xl mx-auto px-4 sm:px-6 pb-16">
+      <section className="max-w-5xl mx-auto px-4 sm:px-6 pb-16 space-y-12">
+        {/* ICM usage — bubble worked example */}
         <div className="border-t border-border pt-10">
-          <h2 className="text-2xl font-black text-foreground mb-6">How to use the poker odds calculator</h2>
-          <div className="grid md:grid-cols-2 gap-6">
+          <p className="mb-3"><span className="badge-gold">ICM guide</span></p>
+          <h2 className="text-xl sm:text-2xl font-black text-foreground mb-3">How to use the ICM calculator — a 3-minute bubble example</h2>
+          <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-5 max-w-3xl">
+            Say four players remain and three get paid (the bubble). Stacks are 60,000 / 40,000 / 30,000 / 20,000 and the prizes are $500 / $300 / $200. Enter those into the calculator and you get each player's chip share versus their real prize value (ICM):
+          </p>
+          <div className="overflow-x-auto rounded-xl border border-border">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="bg-card border-b border-border">
+                  <th className="px-3 py-2.5 text-left font-bold text-muted-foreground">Player</th>
+                  <th className="px-3 py-2.5 text-right font-bold text-muted-foreground">Chip %</th>
+                  <th className="px-3 py-2.5 text-right font-bold text-primary">ICM %</th>
+                  <th className="px-3 py-2.5 text-right font-bold text-muted-foreground">Diff</th>
+                </tr>
+              </thead>
+              <tbody>
+                {([
+                  ["🥇 Chip leader", "40.0%", "33.3%", "-6.7pts", false],
+                  ["🥈 2nd", "26.7%", "27.2%", "+0.6pts", true],
+                  ["🥉 3rd", "20.0%", "22.9%", "+2.9pts", true],
+                  ["4th (short stack)", "13.3%", "16.6%", "+3.3pts", true],
+                ] as [string, string, string, string, boolean][]).map(([p, chip, icm, diff, up]) => (
+                  <tr key={p} className="border-b border-border/60 last:border-0">
+                    <td className="px-3 py-2.5 font-bold text-foreground">{p}</td>
+                    <td className="px-3 py-2.5 text-right font-mono text-muted-foreground">{chip}</td>
+                    <td className="px-3 py-2.5 text-right font-mono font-bold text-foreground">{icm}</td>
+                    <td className={`px-3 py-2.5 text-right font-mono font-bold ${up ? "text-green-600" : "text-red-500"}`}>{diff}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mt-5 max-w-3xl">
+            The key point: <strong className="text-foreground">the chip leader's ICM value (33.3%) is lower than their chip share (40%)</strong> by 6.7 points. Because winning only pays 1st-place money, the leader gains less prize value from a coin flip than the chip count suggests. So on the bubble the leader should <strong className="text-foreground">apply pressure to short stacks</strong>, while the short stack (13.3% chips → 16.6% ICM) is worth more than its chips and should <strong className="text-foreground">avoid unnecessary all-in calls</strong> to protect that survival value.
+          </p>
+        </div>
+
+        {/* ICM deal vs chip chop */}
+        <div>
+          <p className="mb-3"><span className="badge-gold">Prize split</span></p>
+          <h2 className="text-xl sm:text-2xl font-black text-foreground mb-3">ICM deal vs chip chop — splitting the prize pool</h2>
+          <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-5 max-w-3xl">
+            Now three players are left and discussing a deal. With stacks of 50% / 30% / 20% and $1,500 of prize money left, the two methods split very differently:
+          </p>
+          <div className="overflow-x-auto rounded-xl border border-border">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="bg-card border-b border-border">
+                  <th className="px-3 py-2.5 text-left font-bold text-muted-foreground">Player</th>
+                  <th className="px-3 py-2.5 text-right font-bold text-muted-foreground">Chip chop</th>
+                  <th className="px-3 py-2.5 text-right font-bold text-primary">ICM deal</th>
+                  <th className="px-3 py-2.5 text-right font-bold text-muted-foreground">Diff</th>
+                </tr>
+              </thead>
+              <tbody>
+                {([
+                  ["🥇 Chip leader (50%)", "$750", "$618", "-$132", false],
+                  ["🥈 2nd (30%)", "$450", "$485", "+$35", true],
+                  ["🥉 Short stack (20%)", "$300", "$397", "+$97", true],
+                ] as [string, string, string, string, boolean][]).map(([p, chop, icm, diff, up]) => (
+                  <tr key={p} className="border-b border-border/60 last:border-0">
+                    <td className="px-3 py-2.5 font-bold text-foreground">{p}</td>
+                    <td className="px-3 py-2.5 text-right font-mono text-muted-foreground">{chop}</td>
+                    <td className="px-3 py-2.5 text-right font-mono font-bold text-foreground">{icm}</td>
+                    <td className={`px-3 py-2.5 text-right font-mono font-bold ${up ? "text-green-600" : "text-red-500"}`}>{diff}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mt-5 max-w-3xl">
+            A chip chop splits by chip share and <strong className="text-foreground">favors the chip leader</strong>; an ICM deal reflects finishing probabilities and is <strong className="text-foreground">fairer to short stacks</strong>. Above, the short stack gets $300 with a chip chop but about $397 with an ICM deal — <strong className="text-foreground">$97 more</strong>. Ask for an ICM deal when you're short; propose a chip chop when you're the leader.
+          </p>
+        </div>
+
+        {/* Tool guide cards */}
+        <div>
+          <p className="mb-3"><span className="badge-gold">Tools</span></p>
+          <h2 className="text-xl sm:text-2xl font-black text-foreground mb-6">How to use the 7 Hold'em calculators</h2>
+          <div className="grid md:grid-cols-2 gap-4">
             {[
-              { title:"🎯 Outs calculator", body:"Precisely calculates the chance your draw completes on the flop or turn. See both the Rule of 4 and 2 shortcut and the exact figure at once." },
-              { title:"💰 Pot odds & implied odds", body:"Decide whether to call or fold with math. When your opponent is deep, add implied odds for a more accurate decision." },
-              { title:"🃏 Hand evaluator", body:"Pick cards to check the hand rank. Enter up to 7 cards and it finds the best 5-card combination automatically." },
-              { title:"📊 Starting hand strength", body:"Pick your two hole cards to see which of the 169 hands it is and the recommended action by position." },
-              { title:"📐 SPR (Stack-to-Pot Ratio)", body:"The stack-to-pot ratio tells you how strong a hand you need. The lower the SPR, the more it favors committing with a strong hand." },
-              { title:"🏆 Tournament M value", body:"Harrington's M measures the pressure on your tournament stack. Your strategy shifts completely across the green/yellow/orange/red/dead zones." },
-              { title:"📈 ICM calculator", body:"The Independent Chip Model converts tournament chips into real prize-money value — essential for correct call/fold decisions on the bubble and at the final table." },
+              { icon:"🎯", title:"Outs calculator", body:"Precisely calculates the chance your draw completes on the flop or turn. See both the Rule of 4 and 2 shortcut and the exact figure at once." },
+              { icon:"💰", title:"Pot odds & implied odds", body:"Decide whether to call or fold with math. When your opponent is deep, add implied odds for a more accurate decision." },
+              { icon:"🃏", title:"Hand evaluator", body:"Pick cards to check the hand rank. Enter up to 7 cards and it finds the best 5-card combination automatically." },
+              { icon:"📊", title:"Starting hand strength", body:"Pick your two hole cards to see which of the 169 hands it is and the recommended action by position." },
+              { icon:"📐", title:"SPR (Stack-to-Pot Ratio)", body:"The stack-to-pot ratio tells you how strong a hand you need. The lower the SPR, the more it favors committing with a strong hand." },
+              { icon:"🏆", title:"Tournament M value", body:"Harrington's M measures the pressure on your tournament stack. Your strategy shifts completely across the green/yellow/orange/red/dead zones." },
+              { icon:"📈", title:"ICM calculator", body:"The Independent Chip Model converts tournament chips into real prize-money value — essential for call/fold decisions and deal talks on the bubble and final table." },
             ].map(c => (
-              <div key={c.title} className="bg-card border border-border rounded-xl p-5">
-                <h3 className="text-base font-black text-foreground mb-2">{c.title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{c.body}</p>
+              <div key={c.title} className="luxe-card p-5 flex gap-4">
+                <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-xl flex-shrink-0">{c.icon}</div>
+                <div>
+                  <h3 className="text-base font-black text-foreground mb-1.5">{c.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{c.body}</p>
+                </div>
               </div>
+            ))}
+          </div>
+        </div>
+
+        {/* FAQ */}
+        <div>
+          <p className="mb-3"><span className="badge-gold">FAQ</span></p>
+          <h2 className="text-xl sm:text-2xl font-black text-foreground mb-6">ICM calculator & Hold'em calculator FAQ</h2>
+          <div className="space-y-3">
+            {CALCULATOR_FAQ_EN.map((f, i) => (
+              <details key={i} className="luxe-card p-5 group" open={i === 0}>
+                <summary className="flex items-center justify-between cursor-pointer list-none font-bold text-foreground gap-3">
+                  <span>Q. {f.q}</span>
+                  <span className="text-primary transition-transform group-open:rotate-45 text-xl leading-none flex-shrink-0">+</span>
+                </summary>
+                <p className="text-sm text-muted-foreground leading-relaxed mt-3">{f.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+
+        {/* Related guides (calculator → blog) */}
+        <div>
+          <p className="mb-3"><span className="badge-gold">Go deeper</span></p>
+          <h2 className="text-xl sm:text-2xl font-black text-foreground mb-6">Guides to read once the math clicks</h2>
+          <div className="grid sm:grid-cols-2 gap-3">
+            {[
+              { href:"/en/blog/holdem-tournament", t:"Tournament Strategy", d:"ICM, the bubble, and final-table play" },
+              { href:"/en/blog/holdem-equity", t:"Poker Equity Explained", d:"Win %, fold equity, and realization" },
+              { href:"/en/blog/holdem-pot-odds", t:"How to Calculate Pot Odds", d:"Turn call/fold spots into math" },
+              { href:"/en/blog/holdem-outs", t:"How to Count Outs", d:"Outs by draw and the 4-2 rule" },
+              { href:"/en/blog/holdem-probability", t:"Poker Odds & Probability", d:"The core numbers behind every hand" },
+              { href:"/en/blog/holdem-starting-hands-chart", t:"Starting Hands Chart", d:"Which hands to play by position" },
+            ].map(l => (
+              <a key={l.href} href={l.href} className="luxe-card p-4 flex items-center justify-between gap-3 group">
+                <div>
+                  <p className="font-bold text-foreground text-sm group-hover:text-primary transition-colors">{l.t}</p>
+                  <p className="text-xs text-muted-foreground mt-0.5">{l.d}</p>
+                </div>
+                <span className="text-primary flex-shrink-0 text-lg">→</span>
+              </a>
             ))}
           </div>
         </div>
