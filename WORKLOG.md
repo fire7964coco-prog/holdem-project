@@ -5,6 +5,13 @@
 
 ## 2026-07-09
 
+### 계산기 푸시/폴드 멀티웨이 확장 (Fable5 빌드 → 독립검증 → 배포)
+- 푸시/폴드 탭에 **테이블(헤즈업/6맥스/9맥스) + 포지션(UTG…SB) 선택** 추가 → 포지션별 **first-in 쇼브 레인지**. 헤즈업 SB/BB 차트는 그대로 유지.
+- **모델**: 순수 chip-EV first-in Nash(HU 에쿼티 근사) — 뒤 플레이어 콜레인지도 fictitious play 동시수렴, 콜 팟은 첫 콜러 HU로 해소(2+콜 무시=표준 근사). `lib/pushfold-multiway-data.ts`(`pfLookupMultiway`, 핸드별 쇼브임계 2-hex). `gen-pushfold.mjs` 확장 + 에쿼티 캐시(`.pf-equity-cache-*.bin`, .gitignore).
+- **독립검증(내가)**: **SB 9맥스 first-in ≡ HU SB-push 0 핸드 차이**(엔진 정확성 결정적 교차확인). 포지션 단조확대(9맥스 10bb: UTG 7.8 < MP 11.2 < CO 25.5 < BTN 32.4 < SB 58.1), 스택 단조. 그리드 형태 육안. 빌드 clean(아까 prerender실패=에이전트 프로세스 경쟁 탓).
+- **정직 라벨링**: "순수 칩EV·첫 콜러 헤즈업 단순화·얼리 포지션(UTG·MP)은 통설보다 타이트(소형페어 폴드)·ICM/상대성향 조정" UI에 명시.
+- 2단 레이아웃·모바일 오버플로우0 유지. KO+EN 미러.
+
 ### 계산기 "푸시/폴드" Nash 차트 탭 신설 (Fable5 빌드 → 독립검증 → 배포)
 - **계산기(KO+EN) 8번째 탭** "푸시/폴드": 헤즈업 Nash push/fold **13×13 차트**. 유효스택 1~25bb 슬라이더 + 앤티 토글 + SB푸시/BB콜 시나리오 + 콤보가중%(÷1326). 온브랜드 다크 그리드(골드=push/그린=call)·모바일 대응.
 - **정확성 = 자체계산**(레인지 베끼기 X): `scripts/gen-pushfold.mjs`(오프라인, 10워커) → 169×169 프리플랍 올인 에쿼티(MC 30만/매치업·157s·poker-eval 교차검증 0 불일치) → fictitious play Nash 솔브 → `lib/pushfold-data.ts`(비트팩 마스크, 49스택×앤티2×push/call) 임베드. 런타임 `pfLookup` 룩업만.

@@ -1,4 +1,5 @@
 public/images/.compressed
+scripts/.pf-equity-cache-*.bin
 
 node_modules
 .next

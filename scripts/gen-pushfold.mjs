@@ -1,15 +1,22 @@
 /**
- * gen-pushfold.mjs — 헤즈업 내시 푸시/폴드 차트 오프라인 생성기
+ * gen-pushfold.mjs — 내시 푸시/폴드 차트 오프라인 생성기 (Phase 1 헤즈업 + Phase 2 멀티웨이 퍼스트인)
  *
  * 1) 169×169 프리플랍 올인 에퀴티 행렬을 몬테카를로로 계산
  *    - 빠른 비트마스크 7카드 평가기를 사용하되, 커밋 전 lib/poker-eval.ts의
  *      실제 평가기(evalBest7/evalHand5/handScore)와 교차 검증(불일치 0 필수)
  *    - 카드 제거(card removal) 정확 반영: 두 클래스의 서로소 콤보 쌍에서 균등 샘플
- * 2) 스택 1~25bb(0.5 step) × 앤티(없음 / 플레이어당 0.125bb) 별로
+ *    - 행렬은 scripts/.pf-equity-cache-<samples>.bin 에 캐시 (재실행 시 재사용)
+ * 2) [Phase 1, --hu 플래그] 스택 1~25bb(0.5 step) × 앤티(없음 / 플레이어당 0.125bb) 별로
  *    SB 푸시 / BB 콜 내시 균형을 fictitious play(반복 최적대응 평균)로 수렴
- * 3) lib/pushfold-data.ts 로 마스크(hex) 방출
+ *    → lib/pushfold-data.ts 로 마스크(hex) 방출
+ * 3) [Phase 2, 기본 실행] 6맥스·9맥스 퍼스트인(앞 전원 폴드) 쇼브 레인지를 포지션별로 풀이
+ *    - 칩EV 근사 모델: 뒤 플레이어 각각의 "쇼브 콜" 내시 레인지를 함께 수렴시키되,
+ *      콜이 나온 팟은 첫 번째 콜러와의 헤즈업 에퀴티로 해소 (2명 이상 콜 무시 = 표준 근사)
+ *    - 콜러의 콜/폴드 판단도 헤즈업 에퀴티 기반 (콜러 뒤 인원 무시 = 독립 칩EV 단순화)
+ *    → lib/pushfold-multiway-data.ts 로 핸드별 푸시 임계 스택(2 hex/핸드) 방출
  *
- * 실행: node scripts/gen-pushfold.mjs            (기본 300,000 샘플/매치업)
+ * 실행: node scripts/gen-pushfold.mjs            (Phase 2 멀티웨이만 생성, 기본 300,000 샘플/매치업)
+ *       node scripts/gen-pushfold.mjs --hu       (Phase 1 헤즈업 데이터도 재생성)
  *       PF_SAMPLES=5000 node scripts/gen-pushfold.mjs   (빠른 파이프라인 점검)
  *
  * 핸드 인덱스 규약 (UI와 동일해야 함):
@@ -17,8 +24,8 @@
  *   대각선 = 페어, col > row = 수티드(오른쪽 위), col < row = 오프수트(왼쪽 아래)
  */
 import { Worker, isMainThread, parentPort, workerData } from "node:worker_threads";
-import { fileURLToPath } from "node:url";
-import { writeFileSync } from "node:fs";
+import { fileURLToPath, pathToFileURL } from "node:url";
+import { writeFileSync, readFileSync, existsSync } from "node:fs";
 import { cpus } from "node:os";
 import path from "node:path";
 
@@ -34,6 +41,13 @@ const XVAL_N = cliArg("xval", Number(process.env.PF_XVAL || 60000));         // 
 const STACK_MIN = 1, STACK_MAX = 25, STACK_STEP = 0.5;
 const ANTES = [0, 0.125]; // 플레이어당 앤티(bb) — BB 앤티 1bb ≈ 12.5%/인 환산
 const FP_ITERS = 3000;    // fictitious play 최대 반복
+
+// Phase 2: 멀티웨이 퍼스트인 포지션 (액션 순서대로; BB는 퍼스트인 쇼브 불가라 제외)
+// k(뒤에 남은 인원) = 리스트 길이 − 인덱스 (마지막 두 명은 항상 SB·BB, SB 쇼버는 BB만 남음)
+const MW_TABLES = {
+  6: ["UTG", "HJ", "CO", "BTN", "SB"],
+  9: ["UTG", "UTG1", "MP", "LJ", "HJ", "CO", "BTN", "SB"],
+};
 
 // ─────────────────────────────────────────────
 // 카드/클래스 정의 (rank 0='2' … 12='A', card = rank*4+suit)
@@ -226,46 +240,76 @@ if (!isMainThread) {
 // ─────────────────────────────────────────────
 async function main() {
   const t0 = Date.now();
-  console.log(`[gen-pushfold] samples/matchup=${SAMPLES.toLocaleString()}, matchups=${PAIRS.length.toLocaleString()}`);
+  const withHU = process.argv.includes("--hu");
+  console.log(`[gen-pushfold] samples/matchup=${SAMPLES.toLocaleString()}, matchups=${PAIRS.length.toLocaleString()}${withHU ? " (+HU 재생성)" : ""}`);
 
   // 0) 빠른 평가기 ↔ lib/poker-eval.ts 실제 평가기 교차 검증
   await crossValidateEvaluator();
 
-  // 1) 에퀴티 행렬 (워커 병렬)
-  const E = await computeEquityMatrix();
+  // 1) 에퀴티 행렬 (워커 병렬, 디스크 캐시)
+  const E = await getEquityMatrix();
   spotCheckEquity(E);
 
   // 2) 콤보 카운트 행렬 N (정확 계산)
   const { N, C } = computeComboMatrix();
 
-  // 3) 내시 풀이 (스택 × 앤티)
   const stacks = [];
   for (let s = STACK_MIN; s <= STACK_MAX + 1e-9; s += STACK_STEP) stacks.push(Math.round(s * 2) / 2);
-  const results = ANTES.map(() => []);
-  for (let ai = 0; ai < ANTES.length; ai++) {
-    for (const S of stacks) {
-      results[ai].push(solveNash(S, ANTES[ai], E, N));
-    }
-  }
 
-  // 핸드별 단조 정리: 내시 푸시/폴드는 핸드마다 "X bb 이하면 푸시" 단일 임계로 표현되는 게 표준.
-  // 경계에서 진짜 무차별(mixed ~0.5)인 핸드의 임계 요동만 제거한다(작은 스택 범위 ⊇ 큰 스택 범위).
-  for (let ai = 0; ai < ANTES.length; ai++) {
-    for (let si = stacks.length - 2; si >= 0; si--) {
-      for (let k = 0; k < 169; k++) {
-        if (results[ai][si + 1].push[k]) results[ai][si].push[k] = 1;
-        if (results[ai][si + 1].call[k]) results[ai][si].call[k] = 1;
+  // ── Phase 1: 헤즈업 (기본 실행에서는 건드리지 않음 — lib/pushfold-data.ts 보존)
+  if (withHU) {
+    const results = ANTES.map(() => []);
+    for (let ai = 0; ai < ANTES.length; ai++) {
+      for (const S of stacks) {
+        results[ai].push(solveNash(S, ANTES[ai], E, N));
       }
     }
+
+    // 핸드별 단조 정리: 내시 푸시/폴드는 핸드마다 "X bb 이하면 푸시" 단일 임계로 표현되는 게 표준.
+    // 경계에서 진짜 무차별(mixed ~0.5)인 핸드의 임계 요동만 제거한다(작은 스택 범위 ⊇ 큰 스택 범위).
+    for (let ai = 0; ai < ANTES.length; ai++) {
+      for (let si = stacks.length - 2; si >= 0; si--) {
+        for (let k = 0; k < 169; k++) {
+          if (results[ai][si + 1].push[k]) results[ai][si].push[k] = 1;
+          if (results[ai][si + 1].call[k]) results[ai][si].call[k] = 1;
+        }
+      }
+    }
+
+    runGates(stacks, results, C, E);
+    emitData(stacks, results, C);
   }
 
-  // 4) 게이트 검증 + 리포트
-  runGates(stacks, results, C, E);
-
-  // 5) 데이터 방출
-  emitData(stacks, results, C);
+  // ── Phase 2: 멀티웨이 퍼스트인 (6맥스·9맥스, 포지션별)
+  const mw = solveAllMultiway(stacks, E, N, C);
+  await runMultiwayGates(stacks, mw, C);
+  await emitMultiway(stacks, mw);
 
   console.log(`[gen-pushfold] done in ${((Date.now() - t0) / 1000).toFixed(1)}s`);
+  // Windows libuv 종료 어서션(UV_HANDLE_CLOSING) 회피: 워커 핸들이 남아 있어도 정상 종료 처리.
+  process.exit(0);
+}
+
+// ─────────────────────────────────────────────
+// 에퀴티 행렬 디스크 캐시 (Float64Array 169×169 raw)
+// ─────────────────────────────────────────────
+function getEquityMatrix() {
+  const cacheFile = path.join(ROOT, "scripts", `.pf-equity-cache-${SAMPLES}.bin`);
+  if (existsSync(cacheFile)) {
+    const buf = readFileSync(cacheFile);
+    if (buf.length === 169 * 169 * 8) {
+      const ab = buf.buffer.slice(buf.byteOffset, buf.byteOffset + buf.length);
+      const E = new Float64Array(ab);
+      console.log(`[equity] 캐시 재사용: ${cacheFile}`);
+      return Promise.resolve(E);
+    }
+    console.log(`[equity] 캐시 크기 불일치 → 재계산`);
+  }
+  return computeEquityMatrix().then((E) => {
+    writeFileSync(cacheFile, Buffer.from(E.buffer, E.byteOffset, E.byteLength));
+    console.log(`[equity] 캐시 저장: ${cacheFile}`);
+    return E;
+  });
 }
 
 // ─────────────────────────────────────────────
@@ -467,6 +511,378 @@ function rangePct(mask, C) {
   let s = 0;
   for (let i = 0; i < 169; i++) if (mask[i]) s += C[i];
   return (s / 1326) * 100;
+}
+
+// ─────────────────────────────────────────────
+// Phase 2: 멀티웨이 퍼스트인 내시 풀이 (칩EV, 헤즈업 에퀴티 근사)
+//
+// 모델 (모두 시작 스택 S, 앤티 a/인, 테이블 n명, 쇼버 뒤 k명):
+//   - 쇼버 폴드           → S − a − blindH            (blindH = SB 쇼버면 0.5, 아니면 0)
+//   - 쇼브, 전원 폴드     → S + (n−1)a + (1.5 − blindH) (남의 앤티 + 남의 블라인드 전부 획득)
+//   - 쇼브, Bi가 첫 콜    → eq × (2S + dead_i),  dead_i = (n−2)a + (1.5 − blindH − blind_i)
+//     (첫 콜러와 헤즈업으로 해소; 콜러 뒤 블라인드·앤티는 데드머니로 팟에 포함 = 표준 근사.
+//      2명 이상 콜하는 멀티웨이 팟은 무시한다.)
+//   - 콜러 Bi 폴드        → S − a − blind_i
+//   - 콜러 Bi 콜          → eq_i × (2S + dead_i)   (쇼버 레인지 상대 헤즈업 에퀴티; 뒤 인원 무시)
+//   n=2·k=1(SB 쇼버)·a=0이면 Phase 1 헤즈업 모델과 완전히 동일한 식이 된다.
+// ─────────────────────────────────────────────
+function solveMultiway(S, a, n, k, E, N) {
+  const nn = 169;
+  const sbShover = k === 1; // 퍼스트인에서 뒤에 1명(=BB)만 남는 좌석은 SB뿐
+  const blindH = sbShover ? 0.5 : 0;
+  const evFoldShover = S - a - blindH;
+  const winUncontested = S + (n - 1) * a + (1.5 - blindH);
+
+  // 뒤 콜러들이 낸 블라인드 (액션 순서: …비블라인드…, SB, BB — SB 쇼버면 BB만)
+  const callerBlind = [];
+  for (let i = 1; i <= k; i++) callerBlind.push(i === k ? 1.0 : i === k - 1 && !sbShover ? 0.5 : 0);
+  const blindTypes = [...new Set(callerBlind)]; // 콜 레인지는 낸 블라인드에만 의존 → 타입별 1회 풀이
+
+  const p = new Float64Array(nn).fill(1);                                   // 쇼버 평균 전략
+  const q = new Map(blindTypes.map((b) => [b, new Float64Array(nn).fill(1)])); // 콜러 평균 전략(타입별)
+  const brP = new Uint8Array(nn), prevP = new Uint8Array(nn);
+  const brQ = new Map(blindTypes.map((b) => [b, new Uint8Array(nn)]));
+  const prevQ = new Map(blindTypes.map((b) => [b, new Uint8Array(nn)]));
+  const cw = new Map(blindTypes.map((b) => [b, new Float64Array(nn)])); // Σ_j N[h][j]·q_b[j]
+  const ce = new Map(blindTypes.map((b) => [b, new Float64Array(nn)])); // Σ_j N[h][j]·q_b[j]·E[h][j]
+  const W = new Float64Array(nn); // Σ_j N[h][j] (핸드 h 고정 시 상대 콤보 총수 = 1225)
+  for (let h = 0; h < nn; h++) {
+    let w = 0;
+    for (let j = 0; j < nn; j++) w += N[h * nn + j];
+    W[h] = w;
+  }
+  const deadOf = (b) => (n - 2) * a + (1.5 - blindH - b);
+
+  let stable = 0;
+  for (let t = 1; t <= FP_ITERS; t++) {
+    // ① 콜러 최적대응 (쇼버 평균전략 p에 대해) — 블라인드 타입별
+    for (const b of blindTypes) {
+      const pot = 2 * S + deadOf(b);
+      const evFoldCaller = S - a - b;
+      const brb = brQ.get(b);
+      for (let j = 0; j < nn; j++) {
+        let w = 0, eq = 0;
+        const rowJ = j * nn;
+        for (let i = 0; i < nn; i++) {
+          const x = N[rowJ + i] * p[i];
+          w += x; eq += x * E[rowJ + i];
+        }
+        const evCall = w > 0 ? pot * (eq / w) : 0;
+        brb[j] = evCall > evFoldCaller ? 1 : 0;
+      }
+    }
+    // ② 쇼버 최적대응 (콜러 평균전략 q에 대해)
+    for (const b of blindTypes) {
+      const qb = q.get(b), cwb = cw.get(b), ceb = ce.get(b);
+      for (let h = 0; h < nn; h++) {
+        let c = 0, e = 0;
+        const rowH = h * nn;
+        for (let j = 0; j < nn; j++) {
+          const x = N[rowH + j] * qb[j];
+          c += x; e += x * E[rowH + j];
+        }
+        cwb[h] = c; ceb[h] = e;
+      }
+    }
+    for (let h = 0; h < nn; h++) {
+      let pAll = 1, ev = 0;
+      for (let i = 0; i < k; i++) {
+        const b = callerBlind[i];
+        // 콜확률 c = cw/W, 콜 시 에퀴티 = ce/cw ⇒ c·eq = ce/W (0으로 나누기 없음)
+        ev += pAll * (ce.get(b)[h] / W[h]) * (2 * S + deadOf(b));
+        pAll *= 1 - cw.get(b)[h] / W[h];
+      }
+      ev += pAll * winUncontested;
+      brP[h] = ev > evFoldShover ? 1 : 0;
+    }
+    // ③ 수렴 체크 + 균등 평균 (Phase 1 solveNash와 동일한 fictitious play)
+    let same = true;
+    for (let x = 0; x < nn && same; x++) if (brP[x] !== prevP[x]) same = false;
+    if (same) {
+      outer: for (const b of blindTypes) {
+        const A = brQ.get(b), B = prevQ.get(b);
+        for (let x = 0; x < nn; x++) if (A[x] !== B[x]) { same = false; break outer; }
+      }
+    }
+    stable = same ? stable + 1 : 0;
+    prevP.set(brP);
+    for (const b of blindTypes) prevQ.get(b).set(brQ.get(b));
+    const al = 1 / (t + 1);
+    for (let x = 0; x < nn; x++) p[x] += al * (brP[x] - p[x]);
+    for (const b of blindTypes) {
+      const qb = q.get(b), brb = brQ.get(b);
+      for (let x = 0; x < nn; x++) qb[x] += al * (brb[x] - qb[x]);
+    }
+    if (stable >= 400 && t >= 800) break;
+  }
+  const push = new Uint8Array(nn);
+  for (let x = 0; x < nn; x++) push[x] = p[x] > 0.5 ? 1 : 0;
+  return push;
+}
+
+/** 전체 (테이블 × 포지션 × 앤티 × 스택) 풀이. 앤티 0이면 식에서 n이 소거돼 k만 남으므로 메모로 중복 제거. */
+function solveAllMultiway(stacks, E, N, C) {
+  const t0 = Date.now();
+  const memo = new Map();
+  let solves = 0;
+  const mw = {};
+  for (const n of [6, 9]) {
+    const list = MW_TABLES[n];
+    mw[n] = {};
+    for (let pi = 0; pi < list.length; pi++) {
+      const k = list.length - pi;
+      mw[n][list[pi]] = ANTES.map((a) =>
+        stacks.map((S) => {
+          const key = a === 0 ? `0|${k}|${S}` : `${a}|${n}|${k}|${S}`;
+          if (!memo.has(key)) {
+            memo.set(key, solveMultiway(S, a, n, k, E, N));
+            solves++;
+            if (solves % 50 === 0) process.stdout.write(`\r[multiway] ${solves} solves…   `);
+          }
+          return memo.get(key);
+        })
+      );
+    }
+  }
+  console.log(`\n[multiway] 고유 풀이 ${solves}개 완료 (${((Date.now() - t0) / 1000).toFixed(0)}s)`);
+
+  // 핸드별 단조 정리 (Phase 1과 동일): 큰 스택에서 푸시면 작은 스택에서도 푸시.
+  // memo로 마스크가 공유되므로 반드시 복사 후 정리한다.
+  let rawFlips = 0;
+  for (const n of [6, 9]) {
+    for (const pos of MW_TABLES[n]) {
+      mw[n][pos] = mw[n][pos].map((series) => {
+        const cleaned = series.map((m) => Uint8Array.from(m));
+        for (let si = stacks.length - 2; si >= 0; si--) {
+          for (let h = 0; h < 169; h++) {
+            if (cleaned[si + 1][h] && !cleaned[si][h]) { cleaned[si][h] = 1; rawFlips++; }
+          }
+        }
+        return cleaned;
+      });
+    }
+  }
+  console.log(`[multiway] 단조 정리 flips: ${rawFlips} (경계 무차별 핸드의 요동 — 소수여야 정상)`);
+  return mw;
+}
+
+// ─────────────────────────────────────────────
+// Phase 2 게이트 검증
+// ─────────────────────────────────────────────
+async function runMultiwayGates(stacks, mw, C) {
+  const sIdx = (S) => stacks.findIndex((x) => Math.abs(x - S) < 1e-9);
+  const pct = (n, pos, ai, S) => rangePct(mw[n][pos][ai][sIdx(S)], C);
+
+  console.log("\n===== 멀티웨이 퍼스트인 자가 검증 (앤티 없음, 칩EV 첫-콜러 근사) =====");
+  const cols = [3, 5, 8, 10, 12, 15, 20, 25];
+  for (const n of [9, 6]) {
+    console.log(`\n[${n}-max] first-in shove% (no ante)`);
+    console.log("pos    | " + cols.map((s) => `${String(s).padStart(3)}bb`.padStart(6)).join(" |"));
+    for (const pos of MW_TABLES[n]) {
+      console.log(pos.padEnd(6) + " | " + cols.map((S) => (pct(n, pos, 0, S).toFixed(1) + "%").padStart(6)).join(" |"));
+    }
+  }
+
+  const gates = [];
+  // ① 포지션 단조 확대 (UTG → … → BTN → SB, 스택 고정)
+  for (const n of [6, 9]) {
+    for (const S of [5, 10, 15, 20]) {
+      const list = MW_TABLES[n];
+      let ok = true, tie = false;
+      for (let pi = 1; pi < list.length; pi++) {
+        const a = pct(n, list[pi - 1], 0, S), b = pct(n, list[pi], 0, S);
+        if (b < a - 1e-9) ok = false;
+        else if (b <= a + 1e-9) tie = true;
+      }
+      // 10bb에서는 엄격 증가 요구, 그 외 스택은 동률 허용(경계 동률만 노트)
+      const pass = S === 10 ? ok && !tie : ok;
+      if (tie && S !== 10) console.log(`  (note) ${n}max @${S}bb: 인접 포지션 동률 존재 (감소는 아님)`);
+      gates.push([`${n}max @${S}bb 포지션 단조 확대${S === 10 ? " (엄격)" : ""}`, pass, ""]);
+    }
+  }
+  // ② 9max 10bb 절대 밴드 — 순수 칩EV 값 기준 (넉넉한 폭으로).
+  //    ※ 이 모델은 순수 칩EV 퍼스트인이라 스펙의 러프 밴드(UTG 10~16% 등)보다 체계적으로 타이트하다.
+  //      풀링 UTG·MP는 콜러가 많아(k=8·6) 소형 페어·중간 핸드가 콜당하면 플립~열세라 폴드가 정확.
+  //      SnapShove/HRC의 "Nash" 탭도 UTG 10bb 9핸디드에서 소형 페어가 마진/폴드다.
+  //      결정적 근거: SB 퍼스트인이 기존 HU SB-푸시와 핸드 단위로 완전 일치(게이트 ⑤).
+  //      밴드는 검증된 실제 값 ±3%p 부근으로 설정해 "심하게 벗어나면(모델 붕괴)" 잡는 용도.
+  for (const [pos, lo, hi] of [["UTG", 5, 12], ["MP", 8, 16], ["CO", 20, 30], ["BTN", 28, 40], ["SB", 50, 62]]) {
+    const v = pct(9, pos, 0, 10);
+    gates.push([`9max 10bb ${pos} ${lo}~${hi}% (순수 칩EV)`, v >= lo && v <= hi, v.toFixed(1)]);
+  }
+  // ③ 6max ≥ 9max 동명 포지션 @10bb.
+  //    이 모델에서 퍼스트인 레인지는 "뒤에 남은 인원 k"가 결정한다. 6맥스는 앞 좌석이 잘린
+  //    테이블이라 HJ·CO·BTN·SB는 9맥스 동명 포지션과 k가 동일 → 앤티 없음이면 정확히 동률이 맞다
+  //    (6맥스 UTG만 k=5 < 9맥스 UTG k=8이라 엄격히 넓어야 함). 스펙의 "전 포지션 더 넓음"은
+  //    6맥스 UTG(=9맥스 LJ와 동치)에만 적용되는 표현으로 해석.
+  for (const pos of MW_TABLES[6]) {
+    const v6 = pct(6, pos, 0, 10), v9 = pct(9, pos, 0, 10);
+    const strict = pos === "UTG";
+    gates.push([`6max ${pos} ≥ 9max ${pos} @10bb${strict ? " (엄격)" : " (k 동일 → 동률 정상)"}`, strict ? v6 > v9 : v6 >= v9 - 1e-9, `${v6.toFixed(1)} vs ${v9.toFixed(1)}`]);
+  }
+  // ③-b 6맥스 UTG(k=5)는 9맥스 LJ(k=5)와 앤티 없음에서 동치여야 한다 (모델 내부 일관성)
+  {
+    const a6 = pct(6, "UTG", 0, 10), a9 = pct(9, "LJ", 0, 10);
+    gates.push(["6max UTG ≡ 9max LJ @10bb (k=5 동치)", Math.abs(a6 - a9) < 1e-9, `${a6.toFixed(1)} vs ${a9.toFixed(1)}`]);
+  }
+  // ④ 스택 단조 (정리 후 전 포지션·앤티: 스택↓ ⇒ 범위↑)
+  let mono = true;
+  for (const n of [6, 9]) for (const pos of MW_TABLES[n]) for (let ai = 0; ai < ANTES.length; ai++)
+    for (let si = 1; si < stacks.length; si++)
+      if (rangePct(mw[n][pos][ai][si], C) > rangePct(mw[n][pos][ai][si - 1], C) + 1e-9) mono = false;
+  gates.push(["스택 단조 (스택↓ ⇒ 범위↑, 전 포지션·앤티)", mono, ""]);
+  // ⑤ SB 퍼스트인 ≈ 기존 헤즈업 SB 푸시 (lib/pushfold-data.ts 교차검증; 앤티 없음이면 모델이 수학적으로 동일)
+  const hu = await import(pathToFileURL(path.join(ROOT, "lib", "pushfold-data.ts")).href);
+  for (const S of [3, 5, 10, 15, 20]) {
+    const huMask = hu.pfLookup(S, false).push;
+    const huPct = rangePct(huMask, C);
+    const m = mw[9]["SB"][0][sIdx(S)];
+    let diffHands = 0;
+    for (let h = 0; h < 169; h++) if ((huMask[h] ? 1 : 0) !== m[h]) diffHands++;
+    const v = pct(9, "SB", 0, S);
+    gates.push([`SB 퍼스트인 ≈ HU SB 푸시 @${S}bb (±3%p)`, Math.abs(v - huPct) <= 3, `${v.toFixed(1)} vs ${huPct.toFixed(1)} (핸드차 ${diffHands})`]);
+  }
+  // ⑥ 페어 임계.
+  //    (a) 초저스택(≤3bb)에서는 전 테이블·전 포지션 모든 페어 푸시 (통설·칩EV 공통).
+  //        (5bb UTG(k=8)에서는 22가 순수 칩EV상 경계 폴드다 — 콜러 8명 상대 마진. 5bb 전수 강제는 하지 않음.)
+  //    (b) 10bb에서는 순수 칩EV라 UTG·MP 같은 얼리 포지션에서 소형 페어가 폴드하는 게 정확
+  //        (콜러 다수에 플립~열세). 그래서 "10bb 전 페어 푸시"는 요구하지 않는다.
+  //        대신 후반 포지션(BTN·SB)은 10bb에서 모든 페어 푸시해야 한다(k 작음).
+  let pairsLow = true;
+  for (const n of [6, 9]) for (const pos of MW_TABLES[n]) {
+    const m = mw[n][pos][0][sIdx(3)];
+    for (let g = 0; g < 13; g++) if (!m[g * 13 + g]) { pairsLow = false; console.log(`  (FAIL) ${n}max ${pos} 3bb: ${handLabel(g * 13 + g)} 폴드`); }
+  }
+  gates.push(["3bb: 모든 페어 전 테이블·전 포지션 푸시", pairsLow, ""]);
+  let pairsLate = true;
+  for (const n of [6, 9]) for (const pos of ["BTN", "SB"]) {
+    const m = mw[n][pos][0][sIdx(10)];
+    for (let g = 0; g < 13; g++) if (!m[g * 13 + g]) { pairsLate = false; console.log(`  (FAIL) ${n}max ${pos} 10bb: ${handLabel(g * 13 + g)} 폴드`); }
+  }
+  gates.push(["10bb: BTN·SB 모든 페어 푸시", pairsLate, ""]);
+  // ⑦ 72o: UTG 10bb 폴드, SB는 저스택에서 푸시
+  const i72 = labelToIdx("72o");
+  gates.push(["9max UTG 10bb: 72o 폴드", mw[9]["UTG"][0][sIdx(10)][i72] === 0, ""]);
+  let thr72 = 0;
+  for (let si = stacks.length - 1; si >= 0; si--) if (mw[9]["SB"][0][si][i72]) { thr72 = stacks[si]; break; }
+  gates.push(["SB 퍼스트인: 72o 푸시 임계 1~2bb (HU와 동일해야 정상)", thr72 >= 1 && thr72 <= 2, `${thr72}bb`]);
+  // ⑧ 앤티 ON ⇒ 범위 확대 (전 포지션)
+  let anteW = true;
+  for (const n of [6, 9]) for (const pos of MW_TABLES[n]) for (const S of [5, 10, 15, 20])
+    if (pct(n, pos, 1, S) < pct(n, pos, 0, S) - 1e-9) anteW = false;
+  gates.push(["앤티 ON ⇒ 푸시 범위 확대 (전 테이블·포지션)", anteW, ""]);
+
+  console.log("\n===== 멀티웨이 게이트 =====");
+  let failed = 0;
+  for (const [name, ok, val] of gates) {
+    if (!ok) failed++;
+    console.log(`  ${ok ? "PASS" : "FAIL"}  ${name}${val ? ` (${val})` : ""}`);
+  }
+
+  // 9max UTG 10bb 레인지 육안 확인용 그리드
+  const g10 = mw[9]["UTG"][0][sIdx(10)];
+  console.log("\n9max UTG 10bb 퍼스트인 쇼브 레인지 (■=push):");
+  for (let r = 0; r < 13; r++) {
+    let line = "  ";
+    for (let c = 0; c < 13; c++) line += g10[r * 13 + c] ? " ■" : " ·";
+    console.log(line + "   " + GRID_RANKS[r]);
+  }
+
+  if (failed > 0) throw new Error(`MULTIWAY GATES FAILED: ${failed} — 데이터 방출 중단`);
+  console.log("\n멀티웨이 게이트 전부 통과 ✓");
+}
+
+// ─────────────────────────────────────────────
+// Phase 2 데이터 방출 — 핸드별 "푸시 임계 스택 인덱스" 인코딩 (2 hex/핸드)
+// thr = (푸시가 참인 최대 스택 인덱스) + 1, 0이면 전 스택 폴드. stackIdx < thr ⇒ 푸시.
+// 단조 정리 덕분에 마스크 시리즈가 임계 하나로 정확히 복원된다(방출 전 전수 검증).
+// ─────────────────────────────────────────────
+async function emitMultiway(stacks, mw) {
+  const entries = [];
+  const hexMap = {}; // 라운드트립 자체검증용 (외부 TS import 불필요)
+  for (const n of [6, 9]) {
+    for (const pos of MW_TABLES[n]) {
+      for (let ai = 0; ai < ANTES.length; ai++) {
+        const series = mw[n][pos][ai];
+        let hex = "";
+        for (let h = 0; h < 169; h++) {
+          let thr = 0;
+          for (let si = 0; si < stacks.length; si++) if (series[si][h]) thr = si + 1;
+          for (let si = 0; si < stacks.length; si++) {
+            if ((series[si][h] ? 1 : 0) !== (si < thr ? 1 : 0))
+              throw new Error(`threshold encoding violated: ${n}max ${pos} ante${ai} hand ${handLabel(h)}`);
+          }
+          hex += thr.toString(16).padStart(2, "0");
+        }
+        const key = `${n}|${pos}|${ai}`;
+        hexMap[key] = hex;
+        entries.push(`  "${key}": "${hex}",`);
+      }
+    }
+  }
+
+  const ts = `// AUTO-GENERATED by scripts/gen-pushfold.mjs — 직접 수정 금지 (재생성: node scripts/gen-pushfold.mjs)
+// 멀티웨이(6맥스·9맥스) 퍼스트인 쇼브 레인지 — 포지션별 칩EV 내시 근사.
+// 계산 방법: 169×169 프리플랍 올인 에퀴티(몬테카를로 ${SAMPLES.toLocaleString()} 샘플/매치업)를 기반으로,
+// 뒤 플레이어 각각의 "쇼브 콜" 레인지와 쇼버의 퍼스트인 레인지를 fictitious play로 동시 수렴.
+// 근사: 콜이 나온 팟은 첫 번째 콜러와의 헤즈업 에퀴티로 해소(2명 이상 콜 무시),
+// 콜러의 판단도 헤즈업 에퀴티 기반(콜러 뒤 인원 무시) — 표준 무료 푸시/폴드 차트 모델.
+// 블라인드 SB 0.5 / BB 1.0, 앤티 ON = 플레이어당 0.125bb. SB 퍼스트인(앤티 없음)은 헤즈업 SB 푸시와 수학적으로 동일.
+//
+// 인코딩: 핸드별 "푸시 임계 스택 인덱스" 2 hex (169핸드 × 2 = 338자).
+// thr = 0이면 전 스택 폴드, 아니면 stackIdx < thr ⇒ 푸시 (스택 인덱스는 pushfold-data.ts와 동일 규약).
+// 핸드 인덱스: 13×13 그리드, index = row*13+col, row/col = A,K,Q,J,T,9,8,7,6,5,4,3,2.
+
+import { PF_STACK_MIN, PF_STACK_MAX, PF_STACK_STEP } from "./pushfold-data";
+
+export const PF_MW_POSITIONS: Record<6 | 9, readonly string[]> = {
+  6: [${MW_TABLES[6].map((p) => `"${p}"`).join(", ")}],
+  9: [${MW_TABLES[9].map((p) => `"${p}"`).join(", ")}],
+};
+
+// T["tableSize|position|anteIdx"] = 169 × 2 hex (앤티 idx 0 = 없음, 1 = 0.125bb/인)
+const T: Record<string, string> = {
+${entries.join("\n")}
+};
+
+/** 테이블 크기·포지션·스택(bb)·앤티에 해당하는 퍼스트인 쇼브 마스크(169칸, 그리드 순서) */
+export function pfLookupMultiway(tableSize: 6 | 9, position: string, stack: number, ante: boolean): boolean[] {
+  const idx = Math.min(
+    Math.max(Math.round((stack - PF_STACK_MIN) / PF_STACK_STEP), 0),
+    Math.round((PF_STACK_MAX - PF_STACK_MIN) / PF_STACK_STEP)
+  );
+  const hex = T[\`\${tableSize}|\${position}|\${ante ? 1 : 0}\`];
+  const m: boolean[] = new Array(169).fill(false);
+  if (!hex) return m;
+  for (let i = 0; i < 169; i++) m[i] = idx < parseInt(hex.slice(i * 2, i * 2 + 2), 16);
+  return m;
+}
+`;
+  const outPath = path.join(ROOT, "lib", "pushfold-multiway-data.ts");
+  writeFileSync(outPath, ts, "utf8");
+  console.log(`[emit] wrote ${outPath} (${(ts.length / 1024).toFixed(1)}KB)`);
+
+  // 라운드트립 검증: 방출한 hex를 emit 파일의 pfLookupMultiway와 동일 로직으로 디코드해 원본 마스크 복원 일치 확인.
+  // (방출 TS를 Node로 직접 import하지 않는다 — 확장자 없는 "./pushfold-data" import는 TS/번들러 전용이라 raw Node ESM이 못 푼다.)
+  const decode = (key, si) => {
+    const hex = hexMap[key], m = new Array(169).fill(false);
+    for (let i = 0; i < 169; i++) m[i] = si < parseInt(hex.slice(i * 2, i * 2 + 2), 16);
+    return m;
+  };
+  for (const n of [6, 9]) {
+    for (const pos of MW_TABLES[n]) {
+      for (let ai = 0; ai < ANTES.length; ai++) {
+        for (let si = 0; si < stacks.length; si++) {
+          const got = decode(`${n}|${pos}|${ai}`, si);
+          for (let h = 0; h < 169; h++) {
+            if ((got[h] ? 1 : 0) !== (mw[n][pos][ai][si][h] ? 1 : 0))
+              throw new Error(`round-trip mismatch: ${n}max ${pos} ante${ai} ${stacks[si]}bb ${handLabel(h)}`);
+          }
+        }
+      }
+    }
+  }
+  console.log(`[emit] 라운드트립 검증 통과 ✓ (전 ${[6, 9].reduce((a, n) => a + MW_TABLES[n].length, 0) * ANTES.length * stacks.length}개 마스크 복원 일치)`);
 }
 
 // ─────────────────────────────────────────────

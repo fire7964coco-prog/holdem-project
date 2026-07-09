@@ -6,6 +6,7 @@ import { SEO } from "@/components/seo";
 import { Calculator, TrendingUp, Layers, Target, Trophy, BarChart3, Zap } from "lucide-react";
 import { CALCULATOR_FAQ } from "./faq";
 import { pfLookup, PF_STACK_MIN, PF_STACK_MAX, PF_STACK_STEP } from "@/lib/pushfold-data";
+import { pfLookupMultiway, PF_MW_POSITIONS } from "@/lib/pushfold-multiway-data";
 
 // ─────────────────────────────────────────────
 // Types & Constants
@@ -995,10 +996,12 @@ function ICMCalc() {
 }
 
 // ─────────────────────────────────────────────
-// 8. Push/Fold — 헤즈업 내시 균형 차트
-// 데이터: lib/pushfold-data.ts (scripts/gen-pushfold.mjs가 오프라인 계산·검증 후 생성)
+// 8. Push/Fold — 내시 균형 차트 (헤즈업 + 6맥스·9맥스 퍼스트인)
+// 데이터: lib/pushfold-data.ts, lib/pushfold-multiway-data.ts
+// (scripts/gen-pushfold.mjs가 오프라인 계산·검증 후 생성)
 // ─────────────────────────────────────────────
 const PF_RANKS = ["A","K","Q","J","T","9","8","7","6","5","4","3","2"];
+const PF_POS_LABELS: Record<string, string> = { UTG:"UTG", UTG1:"UTG+1", MP:"MP", LJ:"LJ", HJ:"HJ", CO:"CO", BTN:"BTN", SB:"SB" };
 
 function pfLabel(r: number, c: number): string {
   if (r === c) return PF_RANKS[r] + PF_RANKS[c];
@@ -1009,12 +1012,21 @@ function pfCombos(r: number, c: number): number {
 }
 
 function PushFoldCalc() {
+  const [table, setTable] = useState<"hu" | 6 | 9>("hu");
+  const [pos, setPos] = useState("BTN");
   const [stack, setStack] = useState(12);
   const [ante, setAnte] = useState(false);
   const [view, setView] = useState<"push" | "call">("push");
 
-  const masks = useMemo(() => pfLookup(stack, ante), [stack, ante]);
-  const mask = view === "push" ? masks.push : masks.call;
+  const positions = table === "hu" ? null : PF_MW_POSITIONS[table];
+  const posSafe = positions && positions.includes(pos) ? pos : "BTN";
+
+  const huMasks = useMemo(() => pfLookup(stack, ante), [stack, ante]);
+  const mask = useMemo(
+    () => (table === "hu" ? (view === "push" ? huMasks.push : huMasks.call) : pfLookupMultiway(table, posSafe, stack, ante)),
+    [table, posSafe, stack, ante, view, huMasks]
+  );
+  const isCall = table === "hu" && view === "call";
 
   const stat = useMemo(() => {
     let combos = 0;
@@ -1022,33 +1034,68 @@ function PushFoldCalc() {
     return { combos, pct: Math.round((combos / 1326) * 1000) / 10 };
   }, [mask]);
 
+  const anteButtons = (
+    <div>
+      <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">앤티</label>
+      <div className="grid grid-cols-2 gap-2">
+        {([[false, "앤티 없음"], [true, "BB 앤티 ON"]] as const).map(([v, l]) => (
+          <button key={String(v)} onClick={() => setAnte(v)}
+            className={`py-3 rounded-xl text-sm font-bold border transition-all ${ante === v ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
+            {l}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+
   return (
     <div className="space-y-6 lg:space-y-0 lg:grid lg:grid-cols-[minmax(0,1fr)_460px] lg:gap-6 lg:items-start">
       <div className="space-y-5">
-      <div className="grid md:grid-cols-2 gap-4">
-        <div>
-          <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">시나리오</label>
-          <div className="grid grid-cols-2 gap-2">
-            {([["push", "SB: 푸시 or 폴드"], ["call", "BB: 올인 콜 판단"]] as const).map(([v, l]) => (
-              <button key={v} onClick={() => setView(v)}
-                className={`py-3 rounded-xl text-sm font-bold border transition-all ${view === v ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
-                {l}
-              </button>
-            ))}
-          </div>
-        </div>
-        <div>
-          <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">앤티</label>
-          <div className="grid grid-cols-2 gap-2">
-            {([[false, "앤티 없음"], [true, "BB 앤티 ON"]] as const).map(([v, l]) => (
-              <button key={String(v)} onClick={() => setAnte(v)}
-                className={`py-3 rounded-xl text-sm font-bold border transition-all ${ante === v ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
-                {l}
-              </button>
-            ))}
-          </div>
+      <div>
+        <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">테이블</label>
+        <div className="grid grid-cols-3 gap-2">
+          {([["hu", "헤즈업"], [6, "6맥스"], [9, "9맥스"]] as const).map(([v, l]) => (
+            <button key={String(v)} onClick={() => setTable(v)}
+              className={`py-3 rounded-xl text-sm font-bold border transition-all ${table === v ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
+              {l}
+            </button>
+          ))}
         </div>
       </div>
+
+      {table === "hu" ? (
+        <div className="grid md:grid-cols-2 gap-4">
+          <div>
+            <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">시나리오</label>
+            <div className="grid grid-cols-2 gap-2">
+              {([["push", "SB: 푸시 or 폴드"], ["call", "BB: 올인 콜 판단"]] as const).map(([v, l]) => (
+                <button key={v} onClick={() => setView(v)}
+                  className={`py-3 rounded-xl text-sm font-bold border transition-all ${view === v ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
+                  {l}
+                </button>
+              ))}
+            </div>
+          </div>
+          {anteButtons}
+        </div>
+      ) : (
+        <div className="grid md:grid-cols-2 gap-4">
+          <div className="md:col-span-2">
+            <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">
+              포지션 <span className="normal-case font-semibold text-muted-foreground/70">(퍼스트인 — 앞 전원 폴드)</span>
+            </label>
+            <div className={`grid gap-2 ${table === 9 ? "grid-cols-4" : "grid-cols-5"}`}>
+              {positions!.map((p) => (
+                <button key={p} onClick={() => setPos(p)}
+                  className={`py-2.5 rounded-xl text-xs sm:text-sm font-bold border transition-all ${posSafe === p ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
+                  {PF_POS_LABELS[p]}
+                </button>
+              ))}
+            </div>
+          </div>
+          {anteButtons}
+        </div>
+      )}
 
       <div>
         <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">
@@ -1063,11 +1110,13 @@ function PushFoldCalc() {
 
       <div className="rounded-2xl bg-card border border-border p-5">
         <p className="text-xs text-muted-foreground mb-1">
-          {view === "push" ? `SB가 ${stack}bb에서 올인하는 핸드` : `BB가 ${stack}bb 올인을 콜하는 핸드`}
+          {table === "hu"
+            ? (view === "push" ? `SB가 ${stack}bb에서 올인하는 핸드` : `BB가 ${stack}bb 올인을 콜하는 핸드`)
+            : `${table}맥스 ${PF_POS_LABELS[posSafe]} 퍼스트인 — ${stack}bb에서 올인하는 핸드`}
           {ante ? " (앤티 포함)" : ""}
         </p>
         <div className="flex items-end gap-3">
-          <p className={`text-4xl sm:text-5xl font-black tabular-nums ${view === "push" ? "text-primary" : "text-green-400"}`}>{stat.pct}%</p>
+          <p className={`text-4xl sm:text-5xl font-black tabular-nums ${isCall ? "text-green-400" : "text-primary"}`}>{stat.pct}%</p>
           <p className="text-sm text-muted-foreground mb-1.5">{stat.combos.toLocaleString()} / 1,326 콤보</p>
         </div>
       </div>
@@ -1080,12 +1129,12 @@ function PushFoldCalc() {
             const on = mask[i];
             return (
               <div key={i}
-                title={`${pfLabel(r, c)} — ${on ? (view === "push" ? "푸시" : "콜") : "폴드"}`}
+                title={`${pfLabel(r, c)} — ${on ? (isCall ? "콜" : "푸시") : "폴드"}`}
                 className={`aspect-square flex items-center justify-center rounded-[3px] text-[8px] sm:text-[10px] font-bold tracking-tighter transition-colors ${
                   on
-                    ? view === "push"
-                      ? "bg-primary text-primary-foreground"
-                      : "bg-green-500/90 text-green-950"
+                    ? isCall
+                      ? "bg-green-500/90 text-green-950"
+                      : "bg-primary text-primary-foreground"
                     : "bg-card/70 text-muted-foreground/40"
                 }`}>
                 {pfLabel(r, c)}
@@ -1095,17 +1144,32 @@ function PushFoldCalc() {
         </div>
         <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 mt-3 text-xs text-muted-foreground">
           <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded-[3px] bg-primary inline-block" />푸시(올인)</span>
-          <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded-[3px] bg-green-500/90 inline-block" />콜</span>
+          {table === "hu" && (
+            <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded-[3px] bg-green-500/90 inline-block" />콜</span>
+          )}
           <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded-[3px] bg-card/70 border border-border/50 inline-block" />폴드</span>
           <span className="ml-auto text-[10px]">대각선=페어 · 우상단=수티드 · 좌하단=오프수트</span>
         </div>
       </div>
 
       <div className="lg:col-span-2 rounded-xl bg-primary/8 border border-primary/20 p-4 text-xs sm:text-sm text-foreground/80 leading-relaxed">
-        <strong className="text-primary">헤즈업(SB vs BB) 내시 균형</strong> 기준 차트입니다. SB는 올인 또는 폴드만 한다고 가정하며,
-        앤티 ON은 플레이어당 0.125bb(빅블라인드 앤티 환산 ≈ 12.5%)를 반영합니다. 스택이 짧을수록 푸시·콜 범위가 넓어지고,
-        3~4bb 이하에서는 팟 오즈 때문에 BB 콜 범위가 SB 푸시보다 오히려 넓어지는 게 수학적으로 정확합니다.
-        토너먼트 후반 숏스택 판단이 더 궁금하면{" "}
+        {table === "hu" ? (
+          <>
+            <strong className="text-primary">헤즈업(SB vs BB) 내시 균형</strong> 기준 차트입니다. SB는 올인 또는 폴드만 한다고 가정하며,
+            앤티 ON은 플레이어당 0.125bb(빅블라인드 앤티 환산 ≈ 12.5%)를 반영합니다. 스택이 짧을수록 푸시·콜 범위가 넓어지고,
+            3~4bb 이하에서는 팟 오즈 때문에 BB 콜 범위가 SB 푸시보다 오히려 넓어지는 게 수학적으로 정확합니다.
+          </>
+        ) : (
+          <>
+            <strong className="text-primary">{table}맥스 퍼스트인(앞 전원 폴드 후 첫 오픈) 올인</strong> 차트입니다.
+            올인 또는 폴드만 한다고 가정한 <strong>순수 칩EV</strong> 내시 균형이며, 뒤 플레이어들의 올인 콜 레인지도 함께 수렴시켜 계산했습니다.
+            콜이 나온 팟은 첫 번째 콜러와의 헤즈업 에퀴티로 단순화(2명 이상 콜 무시)한 표준 근사 모델입니다.
+            뒤에 남은 인원이 적을수록 — 즉 UTG에서 버튼·SB로 갈수록 — 올인 범위가 넓어지고, 스택이 짧을수록·앤티(플레이어당 0.125bb) ON일수록 더 넓어집니다.
+            순수 칩EV 기준이라 콜러가 많은 얼리 포지션(UTG·MP)의 10bb 범위는 통설보다 타이트하게 나옵니다(소형 페어가 폴드).
+            실전에서는 ICM·상대 성향에 따라 조정하세요.
+          </>
+        )}
+        {" "}토너먼트 후반 숏스택 판단이 더 궁금하면{" "}
         <a href="/blog/holdem-bubble-strategy" className="text-primary font-semibold underline underline-offset-2">버블 생존 전략</a>{" "}
         가이드를 참고하세요.
       </div>

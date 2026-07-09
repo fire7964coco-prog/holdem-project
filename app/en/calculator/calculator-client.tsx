@@ -6,6 +6,7 @@ import { SEO } from "@/components/seo";
 import { Calculator, TrendingUp, Layers, Target, Trophy, BarChart3, Zap } from "lucide-react";
 import { CALCULATOR_FAQ_EN } from "./faq";
 import { pfLookup, PF_STACK_MIN, PF_STACK_MAX, PF_STACK_STEP } from "@/lib/pushfold-data";
+import { pfLookupMultiway, PF_MW_POSITIONS } from "@/lib/pushfold-multiway-data";
 
 // ─────────────────────────────────────────────
 // Types & Constants
@@ -982,10 +983,12 @@ function ICMCalc() {
 }
 
 // ─────────────────────────────────────────────
-// 8. Push/Fold — heads-up Nash equilibrium chart
-// Data: lib/pushfold-data.ts (computed & verified offline by scripts/gen-pushfold.mjs)
+// 8. Push/Fold — Nash chart (heads-up + 6-max/9-max first-in)
+// Data: lib/pushfold-data.ts, lib/pushfold-multiway-data.ts
+// (computed & verified offline by scripts/gen-pushfold.mjs)
 // ─────────────────────────────────────────────
 const PF_RANKS = ["A","K","Q","J","T","9","8","7","6","5","4","3","2"];
+const PF_POS_LABELS: Record<string, string> = { UTG:"UTG", UTG1:"UTG+1", MP:"MP", LJ:"LJ", HJ:"HJ", CO:"CO", BTN:"BTN", SB:"SB" };
 
 function pfLabel(r: number, c: number): string {
   if (r === c) return PF_RANKS[r] + PF_RANKS[c];
@@ -996,12 +999,21 @@ function pfCombos(r: number, c: number): number {
 }
 
 function PushFoldCalc() {
+  const [table, setTable] = useState<"hu" | 6 | 9>("hu");
+  const [pos, setPos] = useState("BTN");
   const [stack, setStack] = useState(12);
   const [ante, setAnte] = useState(false);
   const [view, setView] = useState<"push" | "call">("push");
 
-  const masks = useMemo(() => pfLookup(stack, ante), [stack, ante]);
-  const mask = view === "push" ? masks.push : masks.call;
+  const positions = table === "hu" ? null : PF_MW_POSITIONS[table];
+  const posSafe = positions && positions.includes(pos) ? pos : "BTN";
+
+  const huMasks = useMemo(() => pfLookup(stack, ante), [stack, ante]);
+  const mask = useMemo(
+    () => (table === "hu" ? (view === "push" ? huMasks.push : huMasks.call) : pfLookupMultiway(table, posSafe, stack, ante)),
+    [table, posSafe, stack, ante, view, huMasks]
+  );
+  const isCall = table === "hu" && view === "call";
 
   const stat = useMemo(() => {
     let combos = 0;
@@ -1009,33 +1021,68 @@ function PushFoldCalc() {
     return { combos, pct: Math.round((combos / 1326) * 1000) / 10 };
   }, [mask]);
 
+  const anteButtons = (
+    <div>
+      <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">Ante</label>
+      <div className="grid grid-cols-2 gap-2">
+        {([[false, "No ante"], [true, "BB ante ON"]] as const).map(([v, l]) => (
+          <button key={String(v)} onClick={() => setAnte(v)}
+            className={`py-3 rounded-xl text-sm font-bold border transition-all ${ante === v ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
+            {l}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+
   return (
     <div className="space-y-6 lg:space-y-0 lg:grid lg:grid-cols-[minmax(0,1fr)_460px] lg:gap-6 lg:items-start">
       <div className="space-y-5">
-      <div className="grid md:grid-cols-2 gap-4">
-        <div>
-          <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">Scenario</label>
-          <div className="grid grid-cols-2 gap-2">
-            {([["push", "SB: shove or fold"], ["call", "BB: call a shove"]] as const).map(([v, l]) => (
-              <button key={v} onClick={() => setView(v)}
-                className={`py-3 rounded-xl text-sm font-bold border transition-all ${view === v ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
-                {l}
-              </button>
-            ))}
-          </div>
-        </div>
-        <div>
-          <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">Ante</label>
-          <div className="grid grid-cols-2 gap-2">
-            {([[false, "No ante"], [true, "BB ante ON"]] as const).map(([v, l]) => (
-              <button key={String(v)} onClick={() => setAnte(v)}
-                className={`py-3 rounded-xl text-sm font-bold border transition-all ${ante === v ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
-                {l}
-              </button>
-            ))}
-          </div>
+      <div>
+        <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">Table</label>
+        <div className="grid grid-cols-3 gap-2">
+          {([["hu", "Heads-Up"], [6, "6-max"], [9, "9-max"]] as const).map(([v, l]) => (
+            <button key={String(v)} onClick={() => setTable(v)}
+              className={`py-3 rounded-xl text-sm font-bold border transition-all ${table === v ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
+              {l}
+            </button>
+          ))}
         </div>
       </div>
+
+      {table === "hu" ? (
+        <div className="grid md:grid-cols-2 gap-4">
+          <div>
+            <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">Scenario</label>
+            <div className="grid grid-cols-2 gap-2">
+              {([["push", "SB: shove or fold"], ["call", "BB: call a shove"]] as const).map(([v, l]) => (
+                <button key={v} onClick={() => setView(v)}
+                  className={`py-3 rounded-xl text-sm font-bold border transition-all ${view === v ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
+                  {l}
+                </button>
+              ))}
+            </div>
+          </div>
+          {anteButtons}
+        </div>
+      ) : (
+        <div className="grid md:grid-cols-2 gap-4">
+          <div className="md:col-span-2">
+            <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">
+              Position <span className="normal-case font-semibold text-muted-foreground/70">(first-in — folded to you)</span>
+            </label>
+            <div className={`grid gap-2 ${table === 9 ? "grid-cols-4" : "grid-cols-5"}`}>
+              {positions!.map((p) => (
+                <button key={p} onClick={() => setPos(p)}
+                  className={`py-2.5 rounded-xl text-xs sm:text-sm font-bold border transition-all ${posSafe === p ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
+                  {PF_POS_LABELS[p]}
+                </button>
+              ))}
+            </div>
+          </div>
+          {anteButtons}
+        </div>
+      )}
 
       <div>
         <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">
@@ -1050,11 +1097,13 @@ function PushFoldCalc() {
 
       <div className="rounded-2xl bg-card border border-border p-5">
         <p className="text-xs text-muted-foreground mb-1">
-          {view === "push" ? `Hands the SB shoves at ${stack}bb` : `Hands the BB calls a shove with at ${stack}bb`}
+          {table === "hu"
+            ? (view === "push" ? `Hands the SB shoves at ${stack}bb` : `Hands the BB calls a shove with at ${stack}bb`)
+            : `First-in shove from the ${PF_POS_LABELS[posSafe]} at a ${table}-max table, ${stack}bb`}
           {ante ? " (with ante)" : ""}
         </p>
         <div className="flex items-end gap-3">
-          <p className={`text-4xl sm:text-5xl font-black tabular-nums ${view === "push" ? "text-primary" : "text-green-400"}`}>{stat.pct}%</p>
+          <p className={`text-4xl sm:text-5xl font-black tabular-nums ${isCall ? "text-green-400" : "text-primary"}`}>{stat.pct}%</p>
           <p className="text-sm text-muted-foreground mb-1.5">{stat.combos.toLocaleString()} / 1,326 combos</p>
         </div>
       </div>
@@ -1067,12 +1116,12 @@ function PushFoldCalc() {
             const on = mask[i];
             return (
               <div key={i}
-                title={`${pfLabel(r, c)} — ${on ? (view === "push" ? "push" : "call") : "fold"}`}
+                title={`${pfLabel(r, c)} — ${on ? (isCall ? "call" : "push") : "fold"}`}
                 className={`aspect-square flex items-center justify-center rounded-[3px] text-[8px] sm:text-[10px] font-bold tracking-tighter transition-colors ${
                   on
-                    ? view === "push"
-                      ? "bg-primary text-primary-foreground"
-                      : "bg-green-500/90 text-green-950"
+                    ? isCall
+                      ? "bg-green-500/90 text-green-950"
+                      : "bg-primary text-primary-foreground"
                     : "bg-card/70 text-muted-foreground/40"
                 }`}>
                 {pfLabel(r, c)}
@@ -1082,17 +1131,32 @@ function PushFoldCalc() {
         </div>
         <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 mt-3 text-xs text-muted-foreground">
           <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded-[3px] bg-primary inline-block" />Push (all-in)</span>
-          <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded-[3px] bg-green-500/90 inline-block" />Call</span>
+          {table === "hu" && (
+            <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded-[3px] bg-green-500/90 inline-block" />Call</span>
+          )}
           <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded-[3px] bg-card/70 border border-border/50 inline-block" />Fold</span>
           <span className="ml-auto text-[10px]">Diagonal = pairs · upper right = suited · lower left = offsuit</span>
         </div>
       </div>
 
       <div className="lg:col-span-2 rounded-xl bg-primary/8 border border-primary/20 p-4 text-xs sm:text-sm text-foreground/80 leading-relaxed">
-        <strong className="text-primary">Nash equilibrium, heads-up (SB vs BB)</strong>: the SB is assumed to either shove or fold.
-        The ante setting adds 0.125bb per player (a big-blind ante equivalent, ≈12.5%). Ranges widen as stacks get shorter — and
-        below ~3-4bb the BB correctly calls <em>wider</em> than the SB shoves, because of pot odds.
-        For short-stack fundamentals, read our{" "}
+        {table === "hu" ? (
+          <>
+            <strong className="text-primary">Nash equilibrium, heads-up (SB vs BB)</strong>: the SB is assumed to either shove or fold.
+            The ante setting adds 0.125bb per player (a big-blind ante equivalent, ≈12.5%). Ranges widen as stacks get shorter — and
+            below ~3-4bb the BB correctly calls <em>wider</em> than the SB shoves, because of pot odds.
+          </>
+        ) : (
+          <>
+            <strong className="text-primary">{table}-max first-in shove chart</strong>: everyone in front has folded and you either
+            shove or fold. It is a <strong>pure chip-EV</strong> Nash-style equilibrium — the calling ranges of the players behind are solved
+            simultaneously — using the standard approximation that a called pot is resolved heads-up against the first caller
+            (multi-caller pots are ignored). Ranges widen as fewer players are left behind you (UTG → BTN → SB), as stacks get
+            shorter, and with antes ON (0.125bb per player). Because it is pure chip-EV, the early-position (UTG/MP) 10bb ranges
+            come out tighter than popular rules of thumb (small pairs fold) — adjust for ICM and opponents in practice.
+          </>
+        )}
+        {" "}For short-stack fundamentals, read our{" "}
         <a href="/en/blog/holdem-short-stack" className="text-primary font-semibold underline underline-offset-2">short stack strategy guide</a>.
       </div>
     </div>
