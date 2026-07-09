@@ -1140,7 +1140,7 @@ export default function CalculatorPage() {
             </table>
           </div>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mt-5 max-w-3xl">
-            핵심은 <strong className="text-foreground">칩 리더의 ICM 가치(33.3%)가 칩 비율(40%)보다 6.7%p 낮다</strong>는 점입니다. 1등을 해도 1등 상금만 받기 때문에 리더가 코인플립으로 얻는 상금 가치는 생각보다 적습니다. 그래서 버블에서 칩 리더는 <strong className="text-foreground">숏스택을 압박</strong>하는 것이 정답이고, 반대로 숏스택(칩 13.3% → ICM 16.6%)은 칩보다 가치가 높아 <strong className="text-foreground">불필요한 올인 콜을 피해</strong> 생존 가치를 지켜야 합니다.
+            핵심은 <strong className="text-foreground">칩 리더의 ICM 가치(33.3%)가 칩 비율(40%)보다 6.7%p 낮다</strong>는 점입니다. 1등을 해도 1등 상금만 받기 때문에 리더가 코인플립으로 얻는 상금 가치는 생각보다 적습니다. 그래서 버블에서 칩 리더는 <strong className="text-foreground">숏스택을 압박</strong>하는 것이 정답이고, 반대로 숏스택(칩 13.3% → ICM 16.6%)은 칩보다 가치가 높아 <strong className="text-foreground">불필요한 올인 콜을 피해</strong> 생존 가치를 지켜야 합니다. 개념이 더 궁금하면 <a href="/blog/icm-poker-meaning" className="text-primary font-semibold underline underline-offset-2">ICM이란</a> · <a href="/blog/holdem-bubble-strategy" className="text-primary font-semibold underline underline-offset-2">버블 생존 전략</a>을 참고하세요.
           </p>
         </div>
 
@@ -1220,6 +1220,30 @@ export default function CalculatorPage() {
                 </summary>
                 <p className="text-sm text-muted-foreground leading-relaxed mt-3">{f.a}</p>
               </details>
+            ))}
+          </div>
+        </div>
+
+        {/* 관련 가이드 (계산기 → 블로그 내부링크) */}
+        <div>
+          <p className="mb-3"><span className="badge-gold">더 깊게</span></p>
+          <h2 className="text-xl sm:text-2xl font-black text-foreground mb-6">계산이 이해되면 읽을 가이드</h2>
+          <div className="grid sm:grid-cols-2 gap-3">
+            {[
+              { href:"/blog/icm-poker-meaning", t:"ICM이란? 토너먼트 칩의 진짜 가치", d:"개념부터 버블·딜까지 ICM 완전 정리" },
+              { href:"/blog/holdem-bubble-strategy", t:"버블에서 살아남는 법", d:"ICM 압박과 숏스택 생존 전략" },
+              { href:"/blog/holdem-pot-odds-calculation", t:"팟 오즈 계산법", d:"콜/폴드를 수학으로 판단하는 법" },
+              { href:"/blog/holdem-outs-calculation", t:"아웃츠 세는 법", d:"드로우별 아웃츠와 4-2 룰" },
+              { href:"/blog/holdem-starting-hand-range", t:"스타팅 핸드 레인지", d:"포지션별 어떤 핸드로 플레이할지" },
+              { href:"/blog/holdem-tournament-vs-cash-game", t:"토너먼트 vs 캐시게임", d:"M값·구조가 왜 다른지" },
+            ].map(l => (
+              <a key={l.href} href={l.href} className="luxe-card p-4 flex items-center justify-between gap-3 group">
+                <div>
+                  <p className="font-bold text-foreground text-sm group-hover:text-primary transition-colors">{l.t}</p>
+                  <p className="text-xs text-muted-foreground mt-0.5">{l.d}</p>
+                </div>
+                <span className="text-primary flex-shrink-0 text-lg">→</span>
+              </a>
             ))}
           </div>
         </div>
