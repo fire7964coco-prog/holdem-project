@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "홀덤 대회 참가는 ① 온라인 무료 대회 → ② 홀덤펍 리그 → ③ 위성(새틀라이트)으로 시트 확보 → ④ 국내 대형(KPC·APT) → ⑤ 해외(WSOP) 순으로 단계를 밟으면 됩니다. 현장은 신분증 + 회원카드 + 바이인만 있으면 등록할 수 있습니다.",
   category: "토너먼트",
   date: "2026-06-12",
-  updated: "2026-07-02",
+  updated: "2026-07-10",
   hideSummaryImageSlot: true,
   readTime: "17분",
   emoji: "🎫",
@@ -207,6 +207,21 @@ export const POST: Post = {
 | **리엔트리(Re-entry)** | 탈락 후 다시 바이인해 재참가 | 초반에 잃어도 다시 도전 가능 (횟수 제한 확인) |
 
 > 실전 경험담: 첫 대회 때 가장 당황했던 건 "딜러에게 칩으로 베팅 의사를 정확히 표현하는 법"이었습니다. 말로 "레이즈"라고 먼저 선언하고 칩을 한 번에 밀면 깔끔합니다. 칩을 찔끔찔끔 두 번 넣는 "스트링 벳"은 콜로 간주될 수 있으니 주의하세요. 그리고 카드는 딜러가 가져갈 때까지 **카드 보호(칩 하나 올려두기)** 를 하면 실수로 머킹당하는 사고를 막을 수 있습니다.
+
+---
+
+## 대회, 신청부터 상금까지 — 완전정복 로드맵
+
+참가 방법을 알았다면 그다음은 대회 특유의 판단들입니다. 아래 순서대로 보면 첫 토너먼트부터 상금·세금까지 막힘이 없습니다.
+
+:::pillarhub[홀덤 토너먼트 완전정복 로드맵]
+/blog/holdem-tournament-vs-cash-game | 토너먼트 vs 캐시게임 | 초보는 어디서 시작하나
+/blog/holdem-tournament-buy-in-cost | 바이인·참가비 | 얼마짜리부터 나가야 하나
+/blog/holdem-tournament-schedule-check | 일정 확인법 | 국내·해외 대회 어디서 보나
+/blog/holdem-bubble-strategy | 버블 전략 | 숏·미들·빅스택 대응법
+/blog/icm-poker-meaning | ICM이란 | 칩이 돈이 아닌 이유
+/blog/holdem-tournament-tax-guide | 대회 세금 | 상금 받으면 신고해야 하나
+:::
 
 ---
 

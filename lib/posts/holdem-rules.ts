@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "홀덤은 홀카드 2장 + 커뮤니티 카드 5장 중 최선의 5장으로 승부한다. 프리플랍→플랍→턴→리버 4라운드, 각 라운드에서 체크·벳·콜·레이즈·폴드 중 하나를 선택한다.",
   category: "기초 가이드",
   date: "2026-07-01",
-  updated: "2026-07-01",
+  updated: "2026-07-10",
   readTime: "18분",
   emoji: "📖",
   image: "/images/holdem-rules-hero.webp",
@@ -105,6 +105,20 @@ export const POST: Post = {
 번 카드 한 장을 버린 뒤 마지막 커뮤니티 카드 **1장** 공개(총 5장). 네 번째이자 마지막 베팅 라운드입니다. 리버 베팅이 끝나면 살아남은 플레이어들이 홀카드를 공개합니다.
 
 → [게임 진행 순서 단계별 상세 정리](/blog/holdem-game-order)
+
+---
+
+## 규칙을 실전으로 — 순서대로 익히는 로드맵
+
+한 판 흐름은 알았어도 블라인드·체크·레이즈가 실제로 어떻게 도는지는 따로 익혀야 합니다. 아래 순서대로 보면 규칙 때문에 헷갈릴 일이 없습니다.
+
+:::pillarhub[홀덤 규칙 완전정복 로드맵]
+/blog/holdem-game-order | 게임 진행 6단계 | 프리플랍부터 쇼다운까지 한 판 흐름
+/blog/holdem-blind-meaning | 블라인드 뜻 | SB·BB가 뭐고 왜 내 칩이 먼저 빠지나
+/blog/holdem-small-blind-role | 스몰블라인드 역할 | 싸다고 콜하면 제일 먼저 털리는 이유
+/blog/holdem-check-meaning | 체크 뜻 | 패스가 아니라 베팅 0원입니다
+/blog/holdem-beginner-mistakes-10 | 초보 실수 10가지 | 지금 고쳐야 할 나쁜 습관
+:::
 
 ---
 
