@@ -28,7 +28,8 @@
 | 포지션 `position-is-everything-in-holdem` | 버튼·스몰블라인드 | 🟡2 |
 
 **보강 우선순위(새 세션 실행 목록):**
-1. **🔴 최우선 — 베팅·공격 전략 허브 신설(필라 하나가 통째로 빔)**: 고아 7편(블러핑 `bluffing-strategy-when-and-how`·3벳 `holdem-3bet-strategy`·C벳 `holdem-cbet-strategy`·오버벳 `holdem-overbet-strategy`·체크레이즈 `holdem-check-raise`·밸류벳 `holdem-value-bet-sizing`·레인지 `holdem-range-meaning`)을 묶을 **신규 허브 글 "홀덤 베팅 전략 완전정복"(또는 "홀덤 전략")** 1편 작성 → `:::pillarhub`로 7편 클러스터링. 뱅크롤 `holdem-bankroll-management`도 여기 or 별도. **검색량·수익성 최고, ROI 1위.**
+1. ✅ **완료(2026-07-11) — 베팅·공격 전략 허브 신설**: 신규 KO 필라 `holdem-strategy` 발행(비어있던 전략 필라, EN만 있던 슬러그 KO 신설). `:::pillarhub`로 **고아 8편 클러스터링**(레인지·3벳·C벳·체크레이즈·밸류벳·블러핑·오버벳·**뱅크롤 포함**). §13 PASS + 적대적 팩트체크 필수 5건 교정. 클러스터 8편 역링크 완료. 빌드 53편. **⏳ 남은 것=이미지 2개(hero+decision) 커서 생성 → 빌드·커밋·푸시·GSC 색인 `/blog/holdem-strategy`. 아직 미배포.** (상세 WORKLOG 2026-07-11)
+   - ~~고아 7편을 묶을 신규 허브 글~~ → 위로 대체 완료.
 2. **🟡 얇은 허브 채우기**: 포지션(2)→`홀덤 포지션 종류`·`블라인드 스틸`(GSC 기회키워드) 신규 / 확률(3)→`드로잉 오즈`·`임플라이드 오즈` KO편 신규.
 3. **🟢 펍 허브 승격**: 현 2편(펍 첫방문·합법)→클러스터 몇 편 추가 시 7번째 허브. (펍=한국 검색 강점)
 4. **이벤트 가이드 9편**(WSOP·APT·APPT…): 로드맵 아님=일정 인덱스 성격 → 토너먼트 허브에 이벤트 섹션 링크 or `/tournaments` 페이지 활용.

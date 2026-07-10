@@ -255,7 +255,7 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- 블로그 포스트 (52편) -->
+  <!-- 블로그 포스트 (53편) -->
 
   <url>
     <loc>https://www.holdemmaster.com/blog/ak-offsuit-strategy</loc>
@@ -543,6 +543,16 @@
     <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.holdemmaster.com/blog/holdem-strategy</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-strategy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-strategy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-strategy" />
   </url>
 
   <url>

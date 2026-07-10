@@ -30,7 +30,9 @@ import { POST as holdemBankrollManagement } from "./holdem-bankroll-management";
 import { POST as holdemCommunityEventGuide } from "./holdem-community-event-guide";
 import { POST as holdemRules } from "./holdem-rules";
 import { POST as holdemRaiseHowMuch } from "./holdem-raise-how-much";
+import { POST as holdemStrategy } from "./holdem-strategy";
 export const NEW_POSTS: Post[] = [
+  holdemStrategy,
   holdemRaiseHowMuch,
   holdemRules,
   holdemBankrollManagement,
