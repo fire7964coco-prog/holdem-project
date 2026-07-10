@@ -32,7 +32,9 @@ import { POST as holdemRules } from "./holdem-rules";
 import { POST as holdemRaiseHowMuch } from "./holdem-raise-how-much";
 import { POST as holdemStrategy } from "./holdem-strategy";
 import { POST as holdemBlindSteal } from "./holdem-blind-steal";
+import { POST as holdemImpliedOdds } from "./holdem-implied-odds";
 export const NEW_POSTS: Post[] = [
+  holdemImpliedOdds,
   holdemBlindSteal,
   holdemStrategy,
   holdemRaiseHowMuch,

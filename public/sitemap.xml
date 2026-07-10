@@ -255,7 +255,7 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- 블로그 포스트 (54편) -->
+  <!-- 블로그 포스트 (55편) -->
 
   <url>
     <loc>https://www.holdemmaster.com/blog/ak-offsuit-strategy</loc>
@@ -449,6 +449,16 @@
   </url>
 
   <url>
+    <loc>https://www.holdemmaster.com/blog/holdem-implied-odds</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-implied-odds" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-implied-odds" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-implied-odds" />
+  </url>
+
+  <url>
     <loc>https://www.holdemmaster.com/blog/holdem-masters-7th-guide</loc>
     <lastmod>2026-06-14</lastmod>
     <changefreq>monthly</changefreq>
@@ -485,7 +495,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/blog/holdem-probability</loc>
-    <lastmod>2026-07-10</lastmod>
+    <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-probability" />
