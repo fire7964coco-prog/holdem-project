@@ -162,7 +162,7 @@
   }
 }
 .blog-prose li {
-  font-size: 0.93rem;
+  font-size: 0.95rem; /* 모바일 14.9px→15.2px — 본문 문단(p)과 동일 크기로 통일 (가독성) */
   line-height: 1.75;
   color: #111111;
 }

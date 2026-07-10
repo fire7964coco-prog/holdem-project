@@ -10,6 +10,7 @@ import { POSTS } from "@/lib/posts";
 import { SITE } from "@/lib/site";
 import CommunityCTA from "@/components/community-cta";
 import BlogTopBar from "@/components/blog-top-bar";
+import ReadingProgressBar from "@/components/reading-progress-bar";
 import Image from "next/image";
 import { useState, useRef, useEffect, useCallback } from "react";
 
@@ -511,9 +512,12 @@ export default function BlogPost({
    */
   summarySlot?: ReactNode;
 }) {
-  const currentIndex = POSTS.findIndex((p) => p.slug === post.slug);
-  const prevPost = currentIndex > 0 ? POSTS[currentIndex - 1] : null;
-  const nextPost = currentIndex < POSTS.length - 1 ? POSTS[currentIndex + 1] : null;
+  // 이전/다음 글: 발행일(date) 오름차순 기준. 배열 순서(LEGACY→NEW)는 시간순이 아니므로
+  // 날짜로 정렬해 "직전에 발행된 글 / 직후에 발행된 글"을 잇는다. (같은 날짜 = stable sort로 배열 순서 유지)
+  const byDate = [...POSTS].sort((a, b) => a.date.localeCompare(b.date));
+  const currentIndex = byDate.findIndex((p) => p.slug === post.slug);
+  const prevPost = currentIndex > 0 ? byDate[currentIndex - 1] : null;
+  const nextPost = currentIndex >= 0 && currentIndex < byDate.length - 1 ? byDate[currentIndex + 1] : null;
   const related = POSTS.filter((p) => p.slug !== post.slug && p.category === post.category).slice(0, 3);
 
   const [copied, setCopied] = useState(false);
@@ -550,6 +554,7 @@ export default function BlogPost({
 
   return (
     <div className="min-h-screen">
+      <ReadingProgressBar targetRef={contentRef} />
       <BlogTopBar homeHref="/" communityLabel="커뮤니티" />
       <div className="max-w-6xl mx-auto px-4 py-10">
         <div className={hasToc ? "xl:grid xl:grid-cols-[220px_1fr] xl:gap-10" : ""}>

@@ -13,6 +13,7 @@ import { postsForLocale } from "@/lib/intl-posts";
 import { renderMarkdown, extractHeadings } from "@/app/blog/[slug]/blog-post-client";
 import CommunityCTA from "@/components/community-cta";
 import BlogTopBar from "@/components/blog-top-bar";
+import ReadingProgressBar from "@/components/reading-progress-bar";
 
 function IntlTocList({ headings }: { headings: { id: string; text: string; level: number }[] }) {
   let h2Count = 0;
@@ -56,9 +57,11 @@ export default function IntlBlogPostClient({
   const posts = postsForLocale(locale);
   const base = `/${locale}/blog`;
 
-  const currentIndex = posts.findIndex((p) => p.slug === post.slug);
-  const prevPost = currentIndex > 0 ? posts[currentIndex - 1] : null;
-  const nextPost = currentIndex >= 0 && currentIndex < posts.length - 1 ? posts[currentIndex + 1] : null;
+  // 이전/다음 글: 발행일(date) 오름차순 기준 (KO 클라이언트와 동일 로직 — 로케일별 목록 내에서 계산)
+  const byDate = [...posts].sort((a, b) => a.date.localeCompare(b.date));
+  const currentIndex = byDate.findIndex((p) => p.slug === post.slug);
+  const prevPost = currentIndex > 0 ? byDate[currentIndex - 1] : null;
+  const nextPost = currentIndex >= 0 && currentIndex < byDate.length - 1 ? byDate[currentIndex + 1] : null;
   const related = posts.filter((p) => p.slug !== post.slug).slice(0, 3);
 
   const [copied, setCopied] = useState(false);
@@ -85,6 +88,7 @@ export default function IntlBlogPostClient({
 
   return (
     <div dir={dir}>
+      <ReadingProgressBar targetRef={contentRef} rtl={dir === "rtl"} />
       <BlogTopBar
         homeHref={`/${locale}`}
         homeFeedLabel={NAV_HOME_FEED[locale]}

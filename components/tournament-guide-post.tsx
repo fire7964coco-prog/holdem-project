@@ -11,6 +11,7 @@ import { POSTS } from "@/lib/posts";
 import { SITE } from "@/lib/site";
 import { useState, useRef } from "react";
 import { renderMarkdown, slugify, extractHeadings } from "./tournament-guide-utils";
+import ReadingProgressBar from "./reading-progress-bar";
 
 export default function TournamentGuidePost({
   post,
@@ -44,6 +45,7 @@ export default function TournamentGuidePost({
 
   return (
     <>
+      <ReadingProgressBar targetRef={contentRef} />
       {/* ──── Breadcrumb ──── */}
       <div className="bg-card border-b border-border">
         <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-2 text-xs text-muted-foreground">
@@ -69,12 +71,12 @@ export default function TournamentGuidePost({
           </span>
           <div className="ml-auto hidden sm:flex gap-2">
             {[
-              { label: "APT 인천", href: "/blog/apt-incheon-2026-guide/" },
-              { label: "APPT 코리아", href: "/blog/appt-korea-2026-guide/" },
+              { label: "APT 인천", href: "/blog/apt-incheon-2026-guide" },
+              { label: "APPT 코리아", href: "/blog/appt-korea-2026-guide" },
             ].map(item => (
               <Link key={item.href} href={item.href}
                 className={`text-[10px] font-bold px-2.5 py-1 rounded-full border transition-colors ${
-                  post.slug === item.href.replace(/.*\/blog\/(.*)\//, "$1")
+                  post.slug === item.href.replace(/.*\/blog\//, "")
                     ? "bg-primary text-primary-foreground border-primary"
                     : "text-muted-foreground border-border hover:border-primary/40"
                 }`}>
@@ -183,7 +185,7 @@ export default function TournamentGuidePost({
                   {nextTourPost && (
                     <div className="mt-6 pt-5 border-t border-border">
                       <p className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground mb-3">시리즈 다음 글</p>
-                      <Link href={`/blog/${nextTourPost.slug}/`}
+                      <Link href={`/blog/${nextTourPost.slug}`}
                         className="block p-3 rounded-xl border border-border hover:border-primary/40 transition-colors">
                         <span className="text-[10px] text-primary font-bold">다음 →</span>
                         <p className="text-xs font-semibold text-foreground mt-1 leading-snug line-clamp-2">{nextTourPost.title}</p>
@@ -238,7 +240,7 @@ export default function TournamentGuidePost({
 
             {/* Next in series — mobile CTA */}
             {nextTourPost && (
-              <Link href={`/blog/${nextTourPost.slug}/`}>
+              <Link href={`/blog/${nextTourPost.slug}`}>
                 <div className="mt-10 p-5 border border-primary/30 rounded-2xl hover:border-primary/60 transition-colors cursor-pointer"
                   style={{ background: "rgba(212,175,55,0.05)" }}>
                   <p className="text-xs text-primary font-bold uppercase tracking-widest mb-1">시리즈 다음 글</p>
