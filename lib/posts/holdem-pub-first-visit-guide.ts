@@ -289,5 +289,6 @@ export const POST: Post = {
 | [홀덤 블라인드 뜻](/blog/holdem-blind-meaning) | 스몰·빅블라인드 완벽 이해 |
 | [홀덤 체크 뜻](/blog/holdem-check-meaning) | 체크·콜·폴드 차이 |
 | [지역별 홀덤펍 찾기](/pub) | 강남·홍대·건대 등 내 근처 홀덤펍 검색 |
+| [홀덤펍 홍보·소개 신청](/blog/holdem-pub-promotion) | (사장님용) 매장 무료 소개 안내 |
 `.trim(),
 };

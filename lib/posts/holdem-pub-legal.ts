@@ -218,5 +218,6 @@ export const POST: Post = {
 | [홀덤 족보 완전 정복](/blog/holdem-hand-rankings) | 10가지 족보 순위 암기 |
 | [초보 실수 10가지](/blog/holdem-beginner-mistakes-10) | 첫 방문 전 꼭 읽어야 할 실수 예방법 |
 | [지역별 홀덤펍 찾기](/pub) | 강남·홍대·건대 등 내 근처 홀덤펍 검색 |
+| [홀덤펍 홍보·소개 신청](/blog/holdem-pub-promotion) | 홀덤펍 사장님을 위한 무료 소개 안내 |
 `.trim(),
 };
