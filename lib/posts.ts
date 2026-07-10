@@ -4763,7 +4763,7 @@ APT 제주 클래식은 아시아 전역에서 실력 있는 플레이어들이 
   tldr: "홀덤 족보 순위는 로열플러시 → 스트레이트플러시 → 포카드 → 풀하우스 → 플러시 → 스트레이트 → 트리플 → 투페어 → 원페어 → 하이카드 10단계다.",
   category: "초보 가이드",
   date: "2026-04-02",
-  updated: "2026-07-05",
+  updated: "2026-07-10",
   readTime: "14분",
   emoji: "🃏",
   image: '/images/holdem-hand-rankings-showdown.webp',
@@ -4804,6 +4804,20 @@ APT 제주 클래식은 아시아 전역에서 실력 있는 플레이어들이 
 ---
 
 :::quiz:::
+
+## 족보, 실전에선 이렇게 막힙니다 — 상황별 완전정복 로드맵
+
+순위를 외웠어도 실제 판에서는 "같은 족보일 때 누가 이기지?", "플러시랑 스트레이트 중 뭐가 세지?" 같은 데서 막힙니다. 아래 순서대로 하나씩 정복하면 족보 때문에 손해 볼 일은 없습니다.
+
+:::pillarhub[홀덤 족보 실전 완전정복 로드맵]
+/blog/holdem-hand-rankings-confusing | 헷갈리는 족보 TOP7 | 초보가 매번 틀리는 7가지부터 교정
+/blog/holdem-flush-vs-straight | 플러시 vs 스트레이트 | 가장 흔한 혼동, 확실히 정리
+/blog/holdem-tiebreak-rules | 족보가 같을 때 | 동점·키커로 승자 가리는 법
+/blog/holdem-split-pot-rules | 스플릿 팟 | 팟이 나뉘는 5가지 상황
+/blog/holdem-vs-7poker-hand-rankings | 홀덤 vs 7포커 족보 | 비슷해 보이는 결정적 차이 3가지
+:::
+
+---
 
 ## 카드 기본 강도 — 이것부터 외우세요
 

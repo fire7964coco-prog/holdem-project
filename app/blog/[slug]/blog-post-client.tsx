@@ -289,6 +289,35 @@ export function renderMarkdown(content: string): string {
       );
     })
 
+    // ── 필라 허브 학습 로드맵: :::pillarhub[제목(선택)]\nhref | 라벨 | 설명(선택)\n:::
+    // 필라(허브) 글이 클러스터 글들을 번호 매긴 커리큘럼(재생목록)으로 안내하는 카드.
+    // href 는 trailing slash 없는 내부 경로 그대로 사용(§14). 스타일은 globals.css .pillar-hub*
+    // 예) :::pillarhub[홀덤 족보 실전 완전정복 로드맵]\n/blog/holdem-tiebreak-rules | 족보가 같을 때 | 키커로 승자 가리는 법\n:::
+    .replace(/^:::pillarhub(?:\[([^\]]*)\])?\n([\s\S]*?)\n:::$/gm, (_, title, body) => {
+      const steps = body.trim().split('\n').filter((l: string) => l.trim()).map((line: string, i: number) => {
+        const [href = '', label = '', desc = ''] = line.split('|').map((s: string) => s.trim());
+        if (!href || !label) return '';
+        return (
+          `<a href="${href}" class="pillar-hub-step">` +
+          `<span class="pillar-hub-num" aria-hidden="true">${i + 1}</span>` +
+          `<span class="pillar-hub-body">` +
+          `<span class="pillar-hub-label">${label}</span>` +
+          (desc ? `<span class="pillar-hub-desc">${desc}</span>` : '') +
+          `</span>` +
+          `<span class="pillar-hub-arrow" aria-hidden="true">&rarr;</span>` +
+          `</a>`
+        );
+      }).join('');
+      const heading = (title || '').trim();
+      return (
+        `<div class="pillar-hub">` +
+        `<span class="pillar-hub-overline">Step by Step</span>` +
+        (heading ? `<p class="pillar-hub-title">${heading}</p>` : '') +
+        `<div class="pillar-hub-steps">${steps}</div>` +
+        `</div>`
+      );
+    })
+
     // ── 단계 플로우: :::steps\n제목 | 설명\n:::
     // 예) 프리플랍 | 포지션 확인 후 핸드 범위 결정
     .replace(/^:::steps\n([\s\S]*?)\n:::$/gm, (_, body) => {

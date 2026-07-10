@@ -612,3 +612,131 @@ a.brush-link:hover { filter: brightness(0.9); }
 .blog-scroll-x > div {
   min-width: 300px;
 }
+
+/* ── :::pillarhub — 필라 허브 학습 로드맵 카드 ──────────────
+ * 필라(허브) 글이 클러스터 글들을 번호 매긴 커리큘럼으로 안내.
+ * 크림 프리미엄 카드(luxe-card 톤) + 골드 top accent + 세로 연결선 타임라인. */
+.pillar-hub {
+  margin: 28px 0;
+  padding: 20px 18px 12px;
+  background: linear-gradient(180deg, hsl(40 45% 98%) 0%, hsl(38 38% 95%) 100%);
+  border: 1px solid #d8d0be;
+  border-top: 3px solid #d4af37;
+  border-radius: 16px;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.8),
+    0 4px 16px -6px rgba(0, 0, 0, 0.10);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+/* 커서 올리면 카드가 살짝 떠오르는 pop-out */
+.pillar-hub:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.8),
+    0 14px 28px -8px rgba(0, 0, 0, 0.18);
+}
+.pillar-hub-overline {
+  display: block;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: hsl(43 65% 40%);
+  margin-bottom: 4px;
+  padding-left: 2px;
+}
+.pillar-hub-title {
+  font-size: 17px;
+  font-weight: 900;
+  color: #1a3a2a;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  word-break: keep-all;
+  margin: 0 0 12px;
+  padding-left: 2px;
+}
+.pillar-hub-steps {
+  display: flex;
+  flex-direction: column;
+}
+.pillar-hub-step {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 10px 10px 10px 8px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 0.18s ease;
+}
+.pillar-hub-step:hover {
+  background: rgba(212, 175, 55, 0.06);
+}
+/* 스텝을 잇는 세로 연결선(타임라인) — 배지 중심(8px + 17px)에 정렬 */
+.pillar-hub-step:not(:last-child)::before {
+  content: '';
+  position: absolute;
+  left: 24px;
+  top: 44px;
+  bottom: -10px;
+  width: 2px;
+  background: linear-gradient(#d4af37, rgba(26, 58, 42, 0.18));
+}
+.pillar-hub-num {
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #d4af37, #f0d060);
+  color: #1a3a2a;
+  font-size: 15px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(212, 175, 55, 0.35);
+}
+.pillar-hub-body {
+  flex: 1;
+  min-width: 0;
+  padding-top: 1px;
+}
+.pillar-hub-label {
+  display: block;
+  font-size: 14.5px;
+  font-weight: 800;
+  color: #1a3a2a;
+  line-height: 1.45;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+.pillar-hub-desc {
+  display: block;
+  font-size: 12.5px;
+  color: hsl(30 22% 36%);
+  line-height: 1.55;
+  margin-top: 2px;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+.pillar-hub-arrow {
+  flex-shrink: 0;
+  align-self: center;
+  color: #d4af37;
+  font-weight: 900;
+  font-size: 16px;
+  opacity: 0.35;
+  transform: translateX(-4px);
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+.pillar-hub-step:hover .pillar-hub-arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+@media (max-width: 639px) {
+  .pillar-hub {
+    padding: 16px 12px 10px;
+  }
+}
