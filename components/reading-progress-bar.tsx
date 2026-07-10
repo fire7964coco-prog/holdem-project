@@ -67,7 +67,7 @@ export default function ReadingProgressBar({
   return (
     <div
       aria-hidden="true"
-      className="fixed top-0 left-0 right-0 z-[60] h-[3px] pointer-events-none"
+      className="fixed top-0 left-0 right-0 z-[60] h-[5px] pointer-events-none"
     >
       <div
         ref={barRef}
@@ -76,8 +76,8 @@ export default function ReadingProgressBar({
           transform: "scaleX(0)",
           transformOrigin: rtl ? "right" : "left",
           opacity: 0,
-          background: "linear-gradient(90deg, #b8862a 0%, #d4af37 35%, #f0d060 60%, #2f7d55 100%)",
-          boxShadow: "0 0 6px rgba(212,175,55,0.45)",
+          background: "linear-gradient(90deg,#ff0080 0%,#ff6a00 20%,#ffe600 40%,#00e676 60%,#00b8ff 80%,#c400ff 100%)",
+          boxShadow: "0 0 8px rgba(255,255,255,0.35), 0 1px 2px rgba(0,0,0,0.3)",
           willChange: "transform",
         }}
       />

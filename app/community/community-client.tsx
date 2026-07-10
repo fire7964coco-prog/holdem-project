@@ -20,6 +20,7 @@ import PostCard, {
 } from "./post-card";
 import EventTab from "./event-tab";
 import ChatTab from "./chat-tab";
+import FeedNavArrows from "@/components/feed-nav-arrows";
 import { POSTS } from "@/lib/posts";
 import { postsForLocale } from "@/lib/intl-posts";
 import { isSecondaryLocale } from "@/lib/intl";
@@ -450,6 +451,7 @@ export default function CommunityClient({
   // 스크롤 복원이 동작하지 않는다. 데스크톱은 window 스크롤. 둘 다 세션에 저장 후
   // 뒤로가기로 재진입해 피드가 렌더된 뒤 복원한다.
   const feedScrollRef = useRef<HTMLDivElement>(null);
+  const desktopHeaderRef = useRef<HTMLElement>(null); // 데스크톱 sticky 마스트헤드 (피드 화살표 오프셋 측정용)
   const scrollRestoredRef = useRef(false);
   const restoringRef = useRef(false); // 복원 중에는 저장 잠금(프로그램적 스크롤이 저장값 덮어쓰기 방지)
   const SCROLL_KEY = `feedScroll:${pageLocale ?? "ko"}`;
@@ -1189,6 +1191,7 @@ export default function CommunityClient({
 
         {/* 데스크탑 마스트헤드 헤더 */}
         <header
+          ref={desktopHeaderRef}
           className="sticky top-0 z-50"
           style={{ background: BG, borderBottom: `1px solid ${BORDER}` }}
         >
@@ -1522,6 +1525,9 @@ export default function CommunityClient({
             </div>
           </aside>
         </div>
+
+        {/* 홈피드 이전/다음 글 화살표 (유튜브 스타일, 데스크톱 홈 탭 전용) */}
+        {tab === "home" && <FeedNavArrows headerRef={desktopHeaderRef} />}
       </div>
 
       {/* 공용 글쓰기 모달 */}

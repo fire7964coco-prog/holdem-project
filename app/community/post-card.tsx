@@ -164,6 +164,7 @@ export default function PostCard({
     const CL = getCardLabel(myLanguage);
     return (
       <article
+        data-feed-card
         className="mx-3 mb-3 rounded-2xl overflow-hidden lg:hidden"
         style={{ background: CARD, border: "1px solid rgba(212,175,55,0.25)" }}
       >
@@ -236,6 +237,7 @@ export default function PostCard({
     const CL = getCardLabel(cardLang);
     return (
       <article
+        data-feed-card
         className="mx-3 lg:mx-0 mb-3 rounded-2xl overflow-hidden"
         style={{ background: CARD, border: "1px solid rgba(212,175,55,0.25)" }}
       >
@@ -282,6 +284,7 @@ export default function PostCard({
 
   return (
     <article
+      data-feed-card
       className="mx-3 lg:mx-0 mb-3 rounded-2xl overflow-hidden"
       style={{ background: CARD, border: adminBorder }}
     >

@@ -57,11 +57,11 @@ export default function IntlBlogPostClient({
   const posts = postsForLocale(locale);
   const base = `/${locale}/blog`;
 
-  // 이전/다음 글: 발행일(date) 오름차순 기준 (KO 클라이언트와 동일 로직 — 로케일별 목록 내에서 계산)
-  const byDate = [...posts].sort((a, b) => a.date.localeCompare(b.date));
-  const currentIndex = byDate.findIndex((p) => p.slug === post.slug);
-  const prevPost = currentIndex > 0 ? byDate[currentIndex - 1] : null;
-  const nextPost = currentIndex >= 0 && currentIndex < byDate.length - 1 ? byDate[currentIndex + 1] : null;
+  // 이전/다음 글: 다국어 /[locale]/blog 피드는 postsForLocale 배열 순서 그대로 노출되므로
+  // 그 순서를 따라 "이전 글 = 피드에서 바로 위 / 다음 글 = 피드에서 바로 아래"가 되게 한다.
+  const currentIndex = posts.findIndex((p) => p.slug === post.slug);
+  const prevPost = currentIndex > 0 ? posts[currentIndex - 1] : null;
+  const nextPost = currentIndex >= 0 && currentIndex < posts.length - 1 ? posts[currentIndex + 1] : null;
   const related = posts.filter((p) => p.slug !== post.slug).slice(0, 3);
 
   const [copied, setCopied] = useState(false);

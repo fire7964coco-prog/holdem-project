@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { localeFromPath, HTML_LANG, NAV_CTA, NAV_HOME_FEED, dirForLocale } from "@/lib/intl";
 import BlogTopBar from "@/components/blog-top-bar";
+import { smoothScrollWindowTo } from "@/lib/smooth-scroll";
 
 const LOCALE_FEED_ROOTS = ["/en", "/ja", "/zh", "/es", "/ar", "/pt", "/id", "/ms", "/vi", "/hi", "/de", "/tr"];
 
@@ -35,7 +36,7 @@ export function ScrollToTopButton() {
 
   return (
     <button
-      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      onClick={() => smoothScrollWindowTo(0)}
       aria-label="맨 위로 이동"
       className="fixed bottom-6 right-4 z-50 w-11 h-11 rounded-full flex items-center justify-center shadow-lg transition-all duration-200 hover:scale-110 active:scale-95"
       style={{

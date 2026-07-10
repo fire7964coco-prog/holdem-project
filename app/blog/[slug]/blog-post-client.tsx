@@ -512,12 +512,12 @@ export default function BlogPost({
    */
   summarySlot?: ReactNode;
 }) {
-  // 이전/다음 글: 발행일(date) 오름차순 기준. 배열 순서(LEGACY→NEW)는 시간순이 아니므로
-  // 날짜로 정렬해 "직전에 발행된 글 / 직후에 발행된 글"을 잇는다. (같은 날짜 = stable sort로 배열 순서 유지)
-  const byDate = [...POSTS].sort((a, b) => a.date.localeCompare(b.date));
-  const currentIndex = byDate.findIndex((p) => p.slug === post.slug);
-  const prevPost = currentIndex > 0 ? byDate[currentIndex - 1] : null;
-  const nextPost = currentIndex >= 0 && currentIndex < byDate.length - 1 ? byDate[currentIndex + 1] : null;
+  // 이전/다음 글: /blog 피드와 동일한 순서(날짜 내림차순 = 최신이 위)로 정렬해
+  // "이전 글 = 피드에서 바로 위(더 최신) / 다음 글 = 피드에서 바로 아래(더 오래됨)"가 되게 한다.
+  const feed = [...POSTS].sort((a, b) => b.date.localeCompare(a.date));
+  const currentIndex = feed.findIndex((p) => p.slug === post.slug);
+  const prevPost = currentIndex > 0 ? feed[currentIndex - 1] : null;
+  const nextPost = currentIndex >= 0 && currentIndex < feed.length - 1 ? feed[currentIndex + 1] : null;
   const related = POSTS.filter((p) => p.slug !== post.slug && p.category === post.category).slice(0, 3);
 
   const [copied, setCopied] = useState(false);
