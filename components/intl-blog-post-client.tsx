@@ -205,7 +205,18 @@ export default function IntlBlogPostClient({
                     </div>
                   </div>
                 </Link>
-              ) : <div />}
+              ) : (
+                <Link href={base}>
+                  <div className="flex items-center gap-3 p-4 bg-card border border-border rounded-xl hover:border-primary/40 transition-colors group cursor-pointer">
+                    <ChevronLeft className="w-5 h-5 text-primary flex-shrink-0" />
+                    <div>
+                      <div className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors line-clamp-2">
+                        {t.back}
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              )}
 
               {nextPost ? (
                 <Link href={`${base}/${nextPost.slug}`}>
@@ -219,7 +230,18 @@ export default function IntlBlogPostClient({
                     <ChevronRight className="w-5 h-5 text-primary flex-shrink-0" />
                   </div>
                 </Link>
-              ) : <div />}
+              ) : (
+                <Link href={base}>
+                  <div className="flex items-center gap-3 p-4 bg-card border border-border rounded-xl hover:border-primary/40 transition-colors group cursor-pointer text-right justify-end">
+                    <div>
+                      <div className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors line-clamp-2">
+                        {t.back}
+                      </div>
+                    </div>
+                    <ChevronRight className="w-5 h-5 text-primary flex-shrink-0" />
+                  </div>
+                </Link>
+              )}
             </div>
 
             {related.length > 0 && (

@@ -740,7 +740,21 @@ export default function BlogPost({
                     </div>
                   </div>
                 </Link>
-              ) : <div />}
+              ) : (
+                <Link href="/blog" className="group">
+                  <div className="flex items-center gap-4 p-5 rounded-2xl border border-border bg-card hover:border-primary/50 hover:-translate-y-0.5 transition-all cursor-pointer">
+                    <div className="w-9 h-9 rounded-full bg-card border border-border flex items-center justify-center flex-shrink-0 group-hover:border-primary/50 transition-colors">
+                      <ChevronLeft className="w-5 h-5 text-primary" />
+                    </div>
+                    <div className="min-w-0">
+                      <div className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground mb-1">← 가장 최신 글</div>
+                      <div className="text-sm font-bold text-foreground group-hover:text-primary transition-colors line-clamp-2 leading-snug">
+                        블로그 전체 글 보기
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              )}
 
               {nextPost ? (
                 <Link href={`/blog/${nextPost.slug}`} className="group">
@@ -759,7 +773,21 @@ export default function BlogPost({
                     </div>
                   </div>
                 </Link>
-              ) : <div />}
+              ) : (
+                <Link href="/blog" className="group">
+                  <div className="flex items-center justify-between gap-4 p-5 rounded-2xl border border-border bg-card hover:border-primary/50 hover:-translate-y-0.5 transition-all cursor-pointer">
+                    <div className="min-w-0">
+                      <div className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground mb-1">블로그 전체 글 →</div>
+                      <div className="text-sm font-bold text-foreground group-hover:text-primary transition-colors line-clamp-2 leading-snug">
+                        블로그 전체 글 보기
+                      </div>
+                    </div>
+                    <div className="w-9 h-9 rounded-full bg-card border border-border flex items-center justify-center flex-shrink-0 group-hover:border-primary/50 transition-colors">
+                      <ChevronRight className="w-5 h-5 text-primary" />
+                    </div>
+                  </div>
+                </Link>
+              )}
             </div>
 
             {/* Related Posts — 이미지 카드형 */}
