@@ -149,49 +149,124 @@ export default function PubRegion({ region }: { region: PubRegionType }) {
           </div>
         </section>
 
-        {/* 업체 정보 준비 중 */}
+        {/* 선별 매장 목록 (있으면) / 준비 중 플레이스홀더 */}
         <section>
           <div className="flex items-center justify-between mb-4">
             <h2 className="font-serif text-2xl font-bold text-foreground">
-              {region.name} 홀덤펍 업체 목록
+              {region.name} 선별 홀덤펍
             </h2>
             <span className="text-xs bg-amber-500/10 text-amber-400 border border-amber-500/30 rounded-full px-3 py-1 font-medium">
-              업데이트 예정
+              {region.featuredPubs?.length ? "직접 검증" : "업데이트 예정"}
             </span>
           </div>
 
-          <div className="border-2 border-dashed border-border rounded-2xl p-10 text-center">
-            <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-5">
-              <Clock className="w-8 h-8 text-primary/60" />
+          {region.featuredPubs?.length ? (
+            <>
+              <p className="text-sm text-muted-foreground leading-relaxed mb-5">
+                무분별한 나열 대신 <span className="text-foreground font-medium">직접 검증했거나 소개 신청을 받은 매장</span>만
+                선별해 소개합니다. 손님이 한곳에 모여야 게임이 잘 돌기 때문입니다.
+              </p>
+              <div className="space-y-4">
+                {region.featuredPubs.map((pub, i) => (
+                  <motion.div
+                    key={pub.name}
+                    initial={false}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: i * 0.08 }}
+                    className={`bg-card border rounded-2xl p-5 md:p-6 transition-colors ${
+                      pub.featured ? "border-primary/50 shadow-lg shadow-primary/10" : "border-border hover:border-primary/30"
+                    }`}
+                  >
+                    <div className="flex items-start justify-between gap-3 mb-2">
+                      <h3 className="font-serif text-lg font-bold text-foreground flex items-center gap-2">
+                        {pub.featured && <span className="text-xs bg-primary/15 text-primary rounded-full px-2 py-0.5 font-medium">지역 대표</span>}
+                        {pub.name}
+                      </h3>
+                      {pub.naverUrl && (
+                        <a
+                          href={pub.naverUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1 text-xs text-[#03C75A] hover:underline flex-shrink-0 mt-1"
+                        >
+                          지도 <ExternalLink className="w-3 h-3" />
+                        </a>
+                      )}
+                    </div>
+                    <p className="text-sm text-muted-foreground leading-relaxed mb-3">{pub.highlight}</p>
+                    <div className="flex flex-wrap gap-x-5 gap-y-1.5 text-xs text-muted-foreground">
+                      <span className="inline-flex items-center gap-1.5"><MapPin className="w-3.5 h-3.5 text-primary/70" /> {pub.area}</span>
+                      <span className="inline-flex items-center gap-1.5">💰 {pub.buyIn}</span>
+                      <span className="inline-flex items-center gap-1.5"><Clock className="w-3.5 h-3.5 text-primary/70" /> {pub.hours}</span>
+                    </div>
+                    {pub.tags?.length ? (
+                      <div className="flex flex-wrap gap-1.5 mt-3">
+                        {pub.tags.map(t => (
+                          <span key={t} className="text-[11px] bg-background border border-border rounded-full px-2 py-0.5 text-muted-foreground">#{t}</span>
+                        ))}
+                      </div>
+                    ) : null}
+                  </motion.div>
+                ))}
+              </div>
+              <div className="mt-5 flex flex-col sm:flex-row gap-3">
+                <a
+                  href={naverUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 inline-flex items-center justify-center gap-2 bg-[#03C75A] hover:bg-[#02b050] text-white font-semibold px-5 py-2.5 rounded-lg transition-colors text-sm"
+                >
+                  <ExternalLink className="w-3.5 h-3.5" />
+                  지도에서 더 많은 {region.name} 홀덤펍 보기
+                </a>
+                <Link
+                  href="/blog/holdem-pub-promotion"
+                  className="flex-1 inline-flex items-center justify-center gap-2 bg-primary/10 hover:bg-primary/15 text-primary border border-primary/30 font-semibold px-5 py-2.5 rounded-lg transition-colors text-sm"
+                >
+                  🍺 홀덤펍 사장님이세요? 무료 소개 신청
+                </Link>
+              </div>
+            </>
+          ) : (
+            <div className="border-2 border-dashed border-border rounded-2xl p-10 text-center">
+              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-5">
+                <Clock className="w-8 h-8 text-primary/60" />
+              </div>
+              <h3 className="font-serif text-lg font-bold text-foreground mb-2">
+                {region.name} 선별 매장 준비 중입니다
+              </h3>
+              <p className="text-sm text-muted-foreground leading-relaxed max-w-sm mx-auto mb-7">
+                무분별하게 나열하지 않습니다. 정확한 영업 정보·바이인·분위기를 직접 검증한 매장만
+                순차 등재할 예정입니다. 그 전까지는 네이버·카카오 지도에서 실시간으로 확인하세요.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                <a
+                  href={naverUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-[#03C75A] hover:bg-[#02b050] text-white font-semibold px-5 py-2.5 rounded-lg transition-colors text-sm"
+                >
+                  <ExternalLink className="w-3.5 h-3.5" />
+                  네이버 지도에서 지금 검색
+                </a>
+                <a
+                  href={kakaoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-[#FEE500] hover:bg-[#f0d800] text-[#191919] font-semibold px-5 py-2.5 rounded-lg transition-colors text-sm"
+                >
+                  <ExternalLink className="w-3.5 h-3.5" />
+                  카카오맵에서 지금 검색
+                </a>
+              </div>
+              <p className="text-xs text-muted-foreground mt-6">
+                홀덤펍 사장님이신가요?{" "}
+                <Link href="/blog/holdem-pub-promotion" className="text-primary hover:underline font-medium">
+                  {region.name} 매장 무료 소개 신청 →
+                </Link>
+              </p>
             </div>
-            <h3 className="font-serif text-lg font-bold text-foreground mb-2">
-              업체 정보 준비 중입니다
-            </h3>
-            <p className="text-sm text-muted-foreground leading-relaxed max-w-sm mx-auto mb-7">
-              정확한 영업 정보, 바이인, 후기를 직접 검증한 후 순차적으로 등재할 예정입니다.
-              그 전까지는 네이버·카카오 지도에서 실시간으로 확인하세요.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <a
-                href={naverUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-[#03C75A] hover:bg-[#02b050] text-white font-semibold px-5 py-2.5 rounded-lg transition-colors text-sm"
-              >
-                <ExternalLink className="w-3.5 h-3.5" />
-                네이버 지도에서 지금 검색
-              </a>
-              <a
-                href={kakaoUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-[#FEE500] hover:bg-[#f0d800] text-[#191919] font-semibold px-5 py-2.5 rounded-lg transition-colors text-sm"
-              >
-                <ExternalLink className="w-3.5 h-3.5" />
-                카카오맵에서 지금 검색
-              </a>
-            </div>
-          </div>
+          )}
         </section>
 
         {/* 방문 팁 */}
@@ -241,10 +316,10 @@ export default function PubRegion({ region }: { region: PubRegionType }) {
           <h2 className="font-serif text-base font-bold text-foreground mb-3 text-muted-foreground">홀덤 실력 키우기</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-1">
             {[
+              { href: "/blog/holdem-pub-guide", label: "🍺 홀덤펍 완전 가이드 — 첫방문·비용·합법성 관문" },
+              { href: "/blog/holdem-pub-first-visit-guide", label: "🚪 홀덤펍 처음 가는 법 — 입장·바이인·에티켓" },
               { href: "/calculator", label: "🧮 포커 확률 계산기 — 팟오즈·아웃츠 즉시 계산" },
-              { href: "/blog/holdem-game-order", label: "📖 홀덤 게임 순서 완전 정복" },
               { href: "/blog/position-is-everything-in-holdem", label: "📍 포지션이 전부다 — 실전 전략" },
-              { href: "/pub", label: "🗺️ 다른 지역 홀덤펍 보기" },
             ].map(item => (
               <Link key={item.href} href={item.href}>
                 <div className="text-sm text-muted-foreground hover:text-primary transition-colors py-2 px-3 rounded-lg hover:bg-card flex items-center gap-2 cursor-pointer">

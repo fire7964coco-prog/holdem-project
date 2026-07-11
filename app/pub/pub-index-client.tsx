@@ -127,6 +127,16 @@ export default function PubIndex() {
               </div>
             ))}
           </div>
+
+          <div className="mt-8 text-center">
+            <Link
+              href="/blog/holdem-pub-guide"
+              className="inline-flex items-center gap-2 bg-primary/10 hover:bg-primary/15 text-primary border border-primary/30 font-semibold px-6 py-3 rounded-xl transition-colors text-sm"
+            >
+              🍺 홀덤펍 완전 가이드 — 첫방문·비용·합법성 한눈에
+              <ChevronRight className="w-4 h-4" />
+            </Link>
+          </div>
         </div>
       </section>
 

@@ -1,3 +1,19 @@
+/**
+ * 선별 매장 카드. "지역당 한 곳 선별·집중" 원칙에 따라, 직접 검증했거나
+ * 무료 소개 신청(holdem-pub-promotion)으로 접수된 매장만 등재한다.
+ * 필드가 비어 있으면 지역 페이지는 "업데이트 예정" 플레이스홀더로 폴백한다.
+ */
+export interface FeaturedPub {
+  name: string;
+  area: string; // 세부 위치 (예: "강남역 11번 출구 도보 3분")
+  buyIn: string; // 바이인 범위 (예: "2만~5만원")
+  hours: string; // 운영시간 (예: "매일 18:00~04:00")
+  highlight: string; // 한 줄 소개 (검증 포인트/분위기)
+  naverUrl?: string; // 네이버 지도/플레이스 링크
+  tags?: string[]; // "저바이인" "24시간" "토너먼트" 등
+  featured?: boolean; // 지역 대표 1곳 강조
+}
+
 export interface PubRegion {
   slug: string;
   name: string;
@@ -13,6 +29,8 @@ export interface PubRegion {
   subway: string;
   nearby: string[];
   naverMapQuery: string;
+  /** 선별·검증된 매장 목록. 비어 있으면 플레이스홀더 표시. */
+  featuredPubs?: FeaturedPub[];
 }
 
 export const PUB_REGIONS: PubRegion[] = [
