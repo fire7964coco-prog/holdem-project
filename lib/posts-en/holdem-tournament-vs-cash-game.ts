@@ -2,38 +2,38 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "holdem-tournament-vs-cash-game",
-  title: "Poker Tournaments vs Cash Games — Which Should Beginners Play?",
-  seoTitle: "Your Chips Are Not Always Money — Tournament vs Cash Game Poker",
-  desc: "Cash game or tournament — which poker format fits you? Covers chip value, rising blinds, ICM, bankroll needs, and which format beginners should start with.",
+  title: "Cash Game vs Tournament Poker",
+  seoTitle: "Your Chips Aren't Money — Cash Game vs Tournament Poker",
+  desc: "Cash game vs tournament poker — which fits you? Chip value, rising blinds, ICM, bankroll, which is harder and more profitable, and where beginners start.",
   tldr: "In cash games, chips are real money and blinds stay fixed. In tournaments, chips are survival equity, blinds rise, and payouts depend on where you finish.",
-  category: "토너먼트",
+  category: "tournament",
   date: "2026-06-11",
-  updated: "2026-07-09",
+  updated: "2026-07-11",
   hideSummaryImageSlot: true,
   readTime: "16 min",
   emoji: "🏆",
-  image: "/images/tournament-table-action.webp",
-  imageAlt: "Texas Hold'em table comparing tournament chips and cash game chips — different formats, different chip values and strategies",
+  image: "/images/holdem-tournament-vs-cash-hero.webp",
+  imageAlt: "Side-by-side infographic comparing cash game and tournament poker — chip value, blind structure, and when you can leave",
   tags: [
-    "tournament poker vs cash game",
     "cash game vs tournament poker",
-    "poker tournaments for beginners",
-    "cash game poker strategy",
-    "tournament poker strategy",
+    "what is a cash game in poker",
+    "poker cash game rules",
+    "are cash games profitable",
+    "are cash games harder than tournaments",
+    "when to leave a cash game",
     "poker bankroll management",
     "ICM poker",
-    "cash games or tournaments",
   ],
   content: `
+I still remember racking up after my first live cash session — those chips were money I could literally walk to the cage and pocket. My first tournament ended very differently: four hours of careful play, one lost flip, and a stack of chips that turned into exactly nothing on the way out. That gap is what this whole article is about.
+
 Almost every new Hold'em player eventually asks the same question:
 
 *"Should I play ==cash games== or ==tournaments==?"*
 
 At first, they look like the same game. You still get two hole cards, five community cards, and four betting rounds from preflop to river. But strategically, they are almost two different worlds. In a cash game, your chips are money. In a tournament, your chips are your tournament life.
 
-This guide breaks down ==tournament poker vs cash game poker== in the way beginners actually need it: chip value, blind structure, time commitment, variance, bankroll, ICM, stack depth, and which format you should start with.
-
-![A Texas Hold'em table where tournament and cash game choices lead to different chip values and strategies](/images/tournament-table-action.webp "Tournament poker vs cash game poker comparison")
+This guide breaks down ==cash game vs tournament poker== the way beginners actually need it: what a cash game is and how it works, chip value, blind structure, how strategy changes, which format is harder, which is more profitable, bankroll, ICM, and which one you should start with. If tournaments themselves are still a mystery, read [how poker tournaments work — buy-ins, blind levels, and the Day-1 flow](/en/blog/holdem-tournament) first; this article compares the two formats instead of repeating that structure guide.
 
 ### The 15-second answer
 
@@ -74,6 +74,24 @@ If you understand this table, ==g:you already understand the foundation of the w
 
 ---
 
+## What Is a Cash Game in Poker? (Rules & How It Works)
+
+A ==cash game== (also called a ring game) is the original way poker is played: you sit down, exchange your own money for chips, and every chip on the table is worth exactly its face value. No schedule, no prize pool, no finishing positions — just poker, hand after hand.
+
+**How do cash games work?** You choose your own buy-in within the table's posted limits. A typical live $1/$2 game might allow anything from around $40 up to $300, and where you buy in matters: deeper stacks create more postflop play, while shorter stacks simplify decisions.
+
+**Chips are money at all times.** Win a pot and that money is yours immediately — there is no "making the money" like in a tournament. This is also why cash game decisions are judged purely on whether they make money in the long run.
+
+**Blinds are fixed.** A $1/$2 game is still $1/$2 five hours later. The two forced bets simply rotate around the table each hand. If the small blind, big blind, or the "option" still confuse you — or you want the rules for missed blinds and straddles — [what the blinds in poker actually are](/en/blog/holdem-blind-meaning) covers all of that in one place.
+
+**You can reload and leave freely.** Lose your stack and you can buy more chips on the spot (up to the table max). Need to go? Rack up your chips and cash out — no permission required.
+
+**The house charges a rake.** In most cash games the house takes a small cut from each pot (or charges time-based seat fees). It quietly shapes which stakes are beatable, so it is worth understanding [how poker rake works](/en/blog/holdem-rake) before you pick a game.
+
+:::note[This section covers the cash game essentials. We are expanding it into a full cash-game guide of its own — consider this the seed.]:::
+
+---
+
 ## Tournament Chips Are Not Money
 
 This is the most important difference in the entire article.
@@ -82,7 +100,7 @@ In a cash game, doubling your stack doubles your money. That is why cash game de
 
 In a tournament, ==r:doubling your chip stack does **not** double your real-money equity==. Payouts are based on finishing position, not on the exact number of chips you have at one moment.
 
-Imagine a 10-player tournament where everyone pays $100.
+Imagine a 10-player tournament where everyone pays $100 (ignoring the house fee for simplicity — the full $1,000 goes to the prize pool).
 
 | Finish | Prize |
 |:---|:---:|
@@ -95,7 +113,7 @@ If you go from 10% of the chips to 20% of the chips, your chance of winning mone
 
 ==r:That asymmetry is why tournament poker sometimes rewards folding hands that would be profitable calls in a cash game.==
 
-![Tournament chip stacks do not convert to prize money at a simple one-to-one rate under ICM](/images/icm-chips-not-money-real.webp "Tournament chip value and ICM in poker")
+![Infographic: cash chips convert to money instantly while tournament chips have no cash value until you reach a paid finish](/images/holdem-tournament-chips-not-money.webp "Tournament chip value and ICM in poker")
 
 ---
 
@@ -118,29 +136,88 @@ In a tournament, the blinds climb on a schedule. A stack that was 100 big blinds
 
 ---
 
-## Leaving a Cash Game vs Committing to a Tournament
+## Cash Game vs Tournament Strategy — What Actually Changes
 
-Cash games are flexible. You can sit down for 30 minutes, play for two hours, or leave when the table is bad. If you are tired, tilted, or short on time, you can protect yourself by standing up.
+If chips mean different things and blinds behave differently, strategy has to change too. Here are the shifts you will actually feel at the table.
 
-Tournaments are different. Once you register, your end time is uncertain. You play until you are eliminated, make the money, reach the final table, or win. A small local event may still take several hours. A large-field tournament can consume a full day or more.
+**Cash games are one long game; tournaments are many short ones.** In a cash game, every decision is judged on a single question: does it make money over thousands of repetitions? In a tournament, the same decision also has to answer a second question: what does it do to my chances of surviving into the payouts?
 
-| Player situation | Better fit |
-|------|------|
-| You have unpredictable free time | Cash game |
-| You want short sessions | Cash game |
-| You can focus for many hours | Tournament |
-| You like ranking, pressure, and trophies | Tournament |
-| You may need to leave suddenly | Cash game |
+**Your preflop baseline starts the same, then diverges.** A solid [starting hands chart](/en/blog/holdem-starting-hands-chart) is the foundation in both formats — but tournaments force you off that baseline as stacks get shallow, antes kick in, and pay jumps approach, while a cash game lets you play the same disciplined ranges all night.
 
-This is a practical point beginners often miss. A tournament buy-in can look smaller than a cash game buy-in, but the time cost is much larger.
+**Reloading changes how aggression works.** In a cash game, losing a stack means reaching into your pocket, so big bluffs and thin calls are "only" money. In a tournament, the same mistake is elimination, which is why good tournament players pick their spots around stack sizes and survival, not just cards.
+
+### Deep-Stack Poker vs Short-Stack Push/Fold
+
+Cash games usually reward deep-stack skill. You often play around 100 big blinds, which means flop, turn, and river decisions matter a lot. You need to understand value betting, bluffing, board texture, position, and opponent ranges.
+
+Tournaments begin deep but often become short-stacked. At 25 big blinds, 15 big blinds, or 10 big blinds, preflop decisions become much more important. Instead of planning three streets, you may be deciding whether to open, reshove, call off, or fold — the exact ranges live in [short-stack strategy: when to push or fold](/en/blog/holdem-short-stack).
+
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
+
+| Stack depth | More common in | Main skill |
+|------|------|------|
+| 100BB+ | Cash games | Postflop play and value betting |
+| 40-60BB | Mid tournaments | Open ranges and 3-bet response |
+| 15-25BB | Mid/late tournaments | Resteals and shove pressure |
+| ==r:10BB or less== | Late tournaments | ==r:Push/fold discipline== |
+
+</div>
+
+Cash game players often do well in early tournament stages because they are comfortable deep. ==g:The best players learn both.==
 
 ---
 
-## Profit Structure: Steady Win Rate vs Big Score
+## ICM: The Tournament Concept Cash Games Do Not Have
+
+The biggest strategic split between cash games and tournaments is ==ICM==.
+
+ICM stands for **Independent Chip Model**. It estimates the real-money value of your tournament stack based on stack sizes, remaining players, and the payout structure. Cash games do not need ICM because chips already equal money.
+
+Where does it bite? Mostly [on the bubble](/en/blog/holdem-bubble) and at final tables. Suppose you hold AKo on the bubble with a medium stack and another player shoves. In a cash game, if the call is profitable by pot odds and equity, you call. In a tournament, losing means finishing with $0, while winning does not double your payout equity — so a call that prints money in a cash game can be a clear fold under ICM.
+
+| Decision factor | Cash Game | Tournament |
+|------|------|------|
+| Call logic | Pot odds + equity | Pot odds + equity + ICM |
+| Losing a stack | Lose a buy-in | Elimination |
+| Value of strong hands | More stable | Changes by payout pressure |
+| Bubble pressure | None | Huge |
+
+==g:When you see a strong tournament player fold a hand that looks too good to fold, ICM is often the reason.== One paragraph cannot do the math justice — the full worked examples are in [ICM explained: why tournament chips are not money](/en/blog/holdem-icm).
+
+![Infographic showing that doubling your tournament stack grows your prize equity by less than double — the core of ICM pressure](/images/holdem-tournament-icm-bubble.webp "Tournament bubble pressure and ICM decision-making")
+
+---
+
+## Are Cash Games Harder Than Tournaments?
+
+This exact question gets asked constantly, and the honest answer is: ==they are hard in different ways==, and "harder" depends on which skills you are missing.
+
+Cash games concentrate the difficulty into **deep-stack postflop play**. You face the same stakes — and often the same regulars — day after day, with no rising blinds to force anyone into mistakes. Winning tends to require a genuine edge in hand reading, value betting, and discipline, and many players feel that grinding out that edge is the harder long-term test.
+
+Tournaments spread the difficulty across **phases**. You need deep-stack skills early, push/fold precision late, and ICM judgment on the bubble — plus the stamina to make good decisions in hour eight and the emotional resilience to survive long stretches without cashing. No single phase is as deep as cash game postflop play, but the range of situations is wider.
+
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
+
+| Difficulty type | Cash Game | Tournament |
+|------|------|------|
+| Depth of one skill | ==r:Very deep== (postflop, deep stacks) | Moderate per phase |
+| Breadth of skills | Narrower | ==r:Very broad== (deep, short, ICM) |
+| Opponent pressure | Steady, often experienced regulars | Mixed fields, changes by stage |
+| Mental challenge | Discipline over long, flat sessions | Endurance and variance swings |
+
+</div>
+
+A useful rule of thumb: ==g:cash games are usually harder to *beat*, tournaments are usually harder to *endure*==. If you struggle with postflop decisions, cash games will feel harder. If you struggle with patience, pressure, and swings, tournaments will.
+
+---
+
+## Are Cash Games More Profitable? bb/100 vs Tournament ROI
 
 Cash game results are usually measured in **bb/100** or hourly win rate. If a player wins 5 big blinds per 100 hands over a large sample, that is a steady edge. The feedback is not instant, but it is faster and cleaner than tournament results.
 
 Tournament results are usually measured by **ROI**, cash rate, final table frequency, and big scores. A winning tournament player can fail to cash 20 or 30 events in a row, then make one deep run that pays for everything.
+
+So which is more profitable? ==For most players, cash games produce a more predictable hourly rate, while tournament earnings arrive in rare large spikes.== A skilled tournament player can absolutely earn more over a year — but the money comes unevenly, and you need the bankroll and the temperament to survive the gaps between scores.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -164,7 +241,7 @@ Bankroll management matters in both formats, but tournaments usually require a d
 
 A common beginner guideline for cash games is around **20-40 buy-ins** for the stake you play. If your normal cash game buy-in is $200, that means roughly $4,000-$8,000 as a conservative poker bankroll.
 
-For tournaments, many players use **50-100+ buy-ins**, and large-field MTTs can require even more. A $50 tournament may look cheaper than a $200 cash game buy-in, but the variance can be much harsher.
+For tournaments, the standard guidance is steeper: **100+ buy-ins for large-field MTTs**, with smaller or softer formats needing somewhat less. A $50 tournament may look cheaper than a $200 cash game buy-in, but the variance can be much harsher.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -180,49 +257,26 @@ Bankroll is not just a money issue. ==It protects your decision-making.== ==r:Wh
 
 ---
 
-## ICM: The Tournament Concept Cash Games Do Not Have
+## When to Leave a Cash Game (and Why You Can't Leave a Tournament)
 
-The biggest strategic split between cash games and tournaments is ==ICM==.
+Cash games are flexible. You can sit down for 30 minutes, play for two hours, or leave when the table is bad. Tournaments are the opposite: once you register, you play until you bust, cash, or win — walk away mid-event and your chips stay at the table, paying blinds until they are gone.
 
-ICM stands for **Independent Chip Model**. It estimates the real-money value of your tournament stack based on stack sizes, remaining players, and the payout structure. Cash games do not need ICM because chips already equal money.
+So when *should* you leave a cash game? The rules say "whenever you want," but the profitable answer is more specific:
 
-ICM matters most near the bubble and at final tables.
+- **Leave when the game is no longer good.** The weakest players quit, the lineup tightened up, or the seats that made the table profitable are gone.
+- **Leave when *you* are no longer good.** Tilt, fatigue, and distraction destroy win rates faster than bad cards. If you catch yourself calling out of frustration, rack up.
+- **Do not leave just because you hit a number.** Being up or down a buy-in says nothing about whether the next hour is profitable. Quitting winners in a great game and grinding losses in a terrible one are both leaks.
+- **Leaving right after a big pot is allowed.** No rule forces you to "give action" — though etiquette-wise, a short cool-down lap is smoother than an instant hit-and-run.
 
-Suppose you are on the bubble with a medium stack and another player shoves. You hold AKo. In a cash game, if the call is profitable by pot odds and equity, you can call. In a tournament, losing the hand may mean finishing with $0, while winning does not double your payout equity.
+| Player situation | Better fit |
+|------|------|
+| You have unpredictable free time | Cash game |
+| You want short sessions | Cash game |
+| You can focus for many hours | Tournament |
+| You like ranking, pressure, and trophies | Tournament |
+| You may need to leave suddenly | Cash game |
 
-That spot is where many beginners feel confused. They think, *"AK is a premium hand. How can folding be right?"* But if 27 players remain, 24 get paid, and three shorter stacks are about to face the blinds, your medium stack may already have meaningful prize equity. Calling and losing destroys all of it. Calling and winning helps, but not enough to make every chip-EV call correct.
-
-| Decision factor | Cash Game | Tournament |
-|------|------|------|
-| Call logic | Pot odds + equity | Pot odds + equity + ICM |
-| Losing a stack | Lose a buy-in | Elimination |
-| Value of strong hands | More stable | Changes by payout pressure |
-| Bubble pressure | None | Huge |
-
-==g:When you see a strong tournament player fold a hand that looks too good to fold, ICM is often the reason.==
-
-![A tournament bubble table where ICM pressure makes an all-in call much harder than in a cash game](/images/holdem-bubble-table.webp "Tournament bubble pressure and ICM decision-making")
-
----
-
-## Deep-Stack Poker vs Short-Stack Push/Fold
-
-Cash games usually reward deep-stack skill. You often play around 100 big blinds, which means flop, turn, and river decisions matter a lot. You need to understand value betting, bluffing, board texture, position, and opponent ranges.
-
-Tournaments begin deep but often become short-stacked. At 25 big blinds, 15 big blinds, or 10 big blinds, preflop decisions become much more important. Instead of planning three streets, you may be deciding whether to open, reshove, call off, or fold.
-
-<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
-
-| Stack depth | More common in | Main skill |
-|------|------|------|
-| 100BB+ | Cash games | Postflop play and value betting |
-| 40-60BB | Early/mid tournaments | Open ranges and 3-bet response |
-| 15-25BB | Mid/late tournaments | Resteals and shove pressure |
-| ==r:10BB or less== | Late tournaments | ==r:Push/fold discipline== |
-
-</div>
-
-Cash game players often do well in early tournament stages because they are comfortable deep. ==g:The best players learn both.==
+This is a practical point beginners often miss. A tournament buy-in can look smaller than a cash game buy-in, but the time cost is much larger.
 
 ---
 
@@ -245,9 +299,7 @@ Tournaments can still be great for beginners if you enjoy the competition and ca
 
 If you are brand new, first learn [how a Texas Hold'em hand works](/en/blog/holdem-game-order) and the [poker hand rankings](/en/blog/holdem-hand-rankings). Choosing a format is much easier once the basic rules are automatic — and if you lean toward tournaments, see [how poker tournaments work](/en/blog/holdem-tournament "thumb:/images/holdem-tournament-hero.webp") for buy-ins, blind levels, and the Day-1 flow.
 
----
-
-## Beginner Decision Framework
+### Beginner Decision Framework
 
 If you still cannot choose, use this quick filter.
 
@@ -261,28 +313,6 @@ If you still cannot choose, use this quick filter.
 | You are willing to study push/fold charts and ICM spots | Tournament |
 
 My default advice for a serious beginner is simple: play low-stakes cash games for repetition, then add small tournaments for experience. Cash games reveal leaks faster. Tournaments teach pressure, patience, and emotional control. Together, they build a more complete player.
-
----
-
-## Live Poker Rooms: What Should You Ask First?
-
-Before you sit down in any live poker room or local event, ask what format is actually running. The same table, chips, and cards can create very different decisions depending on the structure.
-
-Useful questions:
-
-| Question | Why it matters |
-|------|------|
-| Is this a cash game or a tournament? | Chip value and strategy change completely |
-| What are the blinds or blind levels? | Determines stack pressure |
-| Are re-entries or add-ons allowed? | Changes total cost and risk |
-| What is the payout structure? | Affects bubble and ICM decisions |
-| How long does the event usually run? | Helps you avoid time-pressure mistakes |
-
-If you cannot explain the structure, do not buy in yet. Ask first, then play.
-
----
-
-## Quick Decision Guide
 
 ### Cash games may fit you better if:
 
@@ -304,6 +334,24 @@ Neither format is "better." They test different parts of the same game. Many str
 
 ---
 
+## Live Poker Rooms: What Should You Ask First?
+
+Before you sit down in any live poker room or local event, ask what format is actually running. The same table, chips, and cards can create very different decisions depending on the structure.
+
+Useful questions:
+
+| Question | Why it matters |
+|------|------|
+| Is this a cash game or a tournament? | Chip value and strategy change completely |
+| What are the blinds or blind levels? | Determines stack pressure |
+| Are re-entries or add-ons allowed? | Changes total cost and risk |
+| What is the payout structure? | Affects bubble and ICM decisions |
+| How long does the event usually run? | Helps you avoid time-pressure mistakes |
+
+If you cannot explain the structure, do not buy in yet. Ask first, then play.
+
+---
+
 :::readnext[Keep reading]
 /en/blog/holdem-pot-odds | How to Calculate Pot Odds | /images/holdem-pot-odds-hero.webp
 /en/blog/holdem-probability | Poker Odds & Probability Chart | /images/holdem-probability-hero.webp
@@ -313,11 +361,11 @@ Neither format is "better." They test different parts of the same game. Many str
 
 **Q. Are poker tournaments harder than cash games?**
 
-A. They are hard in different ways. Cash games demand deeper postflop skill because you often play 100BB stacks. Tournaments add rising blinds, short stacks, ICM, and bubble pressure. Beginners usually find cash games easier to study first because the structure is more stable.
+A. They are hard in different ways. Tournaments demand a broader skill set — deep stacks early, push/fold late, ICM on the bubble — plus long hours and brutal variance. Cash games concentrate the difficulty into deep-stack postflop play against steadier lineups. Most players find tournaments harder to endure and cash games harder to beat.
 
-**Q. Are tournaments more profitable than cash games?**
+**Q. Are cash games profitable for beginners?**
 
-A. Tournaments can produce bigger single scores, but they also have much higher variance. Cash games usually produce steadier results over time. The better choice depends on your skill, bankroll, volume, and tolerance for downswings.
+A. They can be, but expect tuition first. Low-stakes cash games have plenty of weak players, and a disciplined beginner with tight preflop ranges and good bankroll habits can become a small winner. Keep in mind that rake hits small-stakes games hardest, and most beginners lose during their first months while they plug leaks.
 
 **Q. Should beginners start with cash games or tournaments?**
 
@@ -327,25 +375,21 @@ A. Most beginners should start with low-stakes cash games or very small tourname
 
 A. No. ICM applies to tournaments because tournament chips do not equal cash and payouts depend on finishing position. In cash games, chips are already money, so decisions are based more directly on pot odds, equity, position, and opponent ranges.
 
-**Q. Is a re-entry tournament basically a cash game?**
-
-A. No. Re-entry lets you buy back into the tournament after busting during a certain period, but the chips still are not cash. Blinds still rise, prize money still depends on finishing position, and ICM still matters later.
-
 **Q. How many buy-ins do I need for cash games vs tournaments?**
 
-A. A simple beginner guideline is 20-40 buy-ins for cash games and 50-100+ buy-ins for tournaments. Large-field tournaments may need even more because long no-cash stretches are normal.
+A. A common guideline is 20-40 buy-ins for cash games and 100+ buy-ins for large-field tournaments, with smaller formats like sit-and-gos in between at roughly 40-60. Tournaments need the bigger cushion because long stretches without cashing are normal even for winning players.
+
+**Q. How many chips do you need for a home cash game?**
+
+A. A standard 300-chip set comfortably covers up to about 6-8 players. Give everyone the same starting stack across 3-4 denominations, with most chips in the smallest values so players can bet and make change easily. The exact count matters less than everyone agreeing what each color is worth in real money before the first hand.
 
 **Q. Do professional players play cash games or tournaments?**
 
 A. Both — but many pros specialize. Cash-game specialists value the steadier hourly win rate and flexible hours, while tournament pros chase big scores and titles despite the higher variance. Plenty of top players do both: cash games for reliable income, tournaments for upside and prestige.
 
-**Q. What is the bubble in a poker tournament?**
+**Q. Is a re-entry tournament basically a cash game?**
 
-A. The bubble is the point just before the paid places begin — for example, when 24 players get paid and 25 remain. It is where ICM pressure peaks, because busting means leaving with nothing while folding to survive can lock up a payout. Cash games have no bubble.
-
-**Q. Which is more profitable per hour, cash games or tournaments?**
-
-A. For most players, cash games give a more predictable hourly rate, while tournament earnings arrive in rare large spikes. A skilled tournament player can have a higher long-run ROI, but the swings mean the money comes unevenly rather than hour by hour.
+A. No. Re-entry lets you buy back into the tournament after busting during a certain period, but the chips still are not cash. Blinds still rise, prize money still depends on finishing position, and ICM still matters later.
 
 ---
 
@@ -362,6 +406,11 @@ Master cash fundamentals first, then add tournaments when you are ready for ==ri
 ## Related Posts
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
+  <a href="/en/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Tournaments</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">How Poker Tournaments Work</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Buy-ins, blind levels, formats, and a Day-1 checklist</div>
+  </a>
   <a href="/en/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Game Flow</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Texas Hold'em Order of Play</div>
@@ -376,11 +425,6 @@ Master cash fundamentals first, then add tournaments when you are ready for ==ri
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Blinds</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">What Are the Blinds in Poker?</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">SB, BB, blind steal, and option — all explained</div>
-  </a>
-  <a href="/en/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Tournaments</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">How Poker Tournaments Work</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Buy-ins, blind levels, satellites, and a Day-1 checklist</div>
   </a>
 </div>
 `.trim(),

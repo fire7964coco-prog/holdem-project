@@ -5,7 +5,43 @@
 
 ---
 
-## ▶▶▶ 새 세션 START HERE (2026-07-11 심야 — EN 키워드뱅크 재구축 + 감사, 다음=감글 retrofit 스프린트)
+## ▶▶▶ 새 세션 START HERE (2026-07-11 — retrofit: #1·#2·#3 배포됨 / 다음=2차 웨이브, 완전자동)
+
+> **완전 자동화 모드** 유지([[retrofit-full-automation]]). 게이트 없이 배포까지 자동, 🔴 자동해소불가·빌드실패만 멈춤. Fable5=생성/검수(초안·매핑·§13·독립QA·이미지HTML), 메인=빌드·렌더·git. **검수는 제3 에이전트로.** 카니발 쌍은 한 커밋.
+>
+> ### ✅ #3 배포 — `holdem-tournament`(A)×`holdem-tournament-vs-cash-game`(B)
+> 카니발 분리(A=구조/종류 / B=vs캐시+캐시기초). §13 A에서 **날조 WPT 예시**→실존 2024 대회 교체 등, B는 FACTS-CLEAN. 제3 QA가 **이미지 §13 대량결함** 적발→A hero 리사이즈+B 실사3개를 온브랜드 인포그래픽으로 교체. 상세=WORKLOG.
+> - **⚠️ 사이트 후속(별도 세션)**: 깨진 AI실사가 다른 글에도 잔존(tournament-table-action=betting-actions, icm-chips-not-money-real=icm, bubble-table=블랙잭). 이미지 전수 감사 필요.
+> - **사용자 몫(GSC)**: `/en/blog/holdem-tournament`·`/en/blog/holdem-tournament-vs-cash-game`.
+>
+> ### ▶▶ 다음 = 2차 웨이브 (감글 retrofit, 기존 뱅크로 커버)
+> `betting-actions`·`blind-meaning`·`flush-vs-straight`·`tiebreak`·`split-pot`·`reading-board` — 뱅크 `en-can-you`·`en-what-is-a`·`en-what-beats`. 각 글 매핑→초안→§13→독립QA→배포. **제외(보류)**: 신규클러스터(PKO/Types·Cash 7필라)·이벤트가이드 4편.
+
+## (완료된 이전 진행표) 새 세션 START HERE (2026-07-11 — retrofit 스프린트: #1·#2 배포됨 / #3 진행 중, 완전자동)
+
+> **완전 자동화 모드**(사용자 지시 "내 의견 묻지 말고 배포까지, 자리비움"): 게이트 없이 배포까지 자동, 🔴 자동해소불가·빌드실패만 멈춤. 메모리 [[retrofit-full-automation]]. 역할: 메인(Opus)=게이트없음·빌드·PDF/이미지렌더·git / Fable5 서브에이전트=초안·리서치(뱅크매핑)·§13팩트체크·독립QA·이미지HTML저작. **검수는 초안 쓴 에이전트 말고 제3 에이전트로.** 카니발 쌍은 한 커밋 배포.
+
+### ✅ #1 배포 — `holdem-starting-hands-chart` (커밋 `019de04`)
+뱅크 기반 전면 리라이트, H2 10개(good/best/chart/6-max/GTO/worst/printable PDF/quiz/FAQ8). §13 전수 CORRECT+6곳 교정. 인쇄용 PDF 신설. 상세=WORKLOG.
+### ✅ #2 배포 — `holdem-positions`(A)×`holdem-position-play`(B) (커밋 `2ec5bb8`)
+카니발 분리(A=좌석·이름 / B=in-out 전략). §13 전수+교정. 제3 QA가 **B 이미지 3개 §13 결함**(hero CO↔BTN 뒤바뀜 등) 적발→HTML→Playwright→webp 교정 재생성. 상세=WORKLOG.
+- **사용자 몫(GSC 색인)**: `/en/blog/holdem-starting-hands-chart`·`/en/blog/holdem-positions`·`/en/blog/holdem-position-play`.
+- **🟡 잔여**: #2-A 본문이미지 재사용(클러스터-고유 규칙, 비블로커).
+
+### ▶▶ #3 진행 중 — `holdem-tournament`(A 허브) + `holdem-tournament-vs-cash-game`(B)
+매핑 완료(뱅크 `en-tournament.md`·`en-cash-game.md`). 카니발: A=구조/종류(freezeout·PKO·satellite·deepstack 정의 흡수)/진행/입장, B=vs캐시 비교+캐시게임 기초. 첫링크 A=B비교·B=A허브. **B category 버그 "토너먼트"→"tournament" 교정**. ICM/bubble/short-stack/이벤트가이드/rake는 route-out(중복금지). `:::pillarhub` 렌더러에 없음—`:::readnext`+Related로 로드맵.
+
+### 📌 이후 대기
+2차 웨이브=Rules/족보 감글(betting-actions·blind-meaning·flush-vs-straight·tiebreak·split-pot·reading-board, 기존 뱅크 en-can-you·en-what-is-a·en-what-beats로 커버). **제외(보류)**: 신규 클러스터(PKO/Tournament Types·Cash Game 7필라)·이벤트가이드 4편.
+
+### 🔧 실무 메모
+- Fable5 서브에이전트는 이 세션에서 **셸 사용 불가**(denied) → 빌드·PDF렌더·git·이미지압축은 전부 메인이 실행. 생성/저작/분석만 Fable5.
+- PDF 재생성: `node scripts/render-starting-hands-pdf.mjs`(Playwright A4). `/downloads`는 PDF 다운로드 선례 확립됨(webp정책은 이미지 한정).
+- **인포그래픽 재생성 파이프라인 확립**(커서 대신): Fable5가 자립형 1200×675 HTML 저작(scripts/pos-*.html) → `node scripts/render-pos-infographics.mjs`(Playwright 스크린샷+sharp webp, 19~25KB) → Read로 육안검수(철자·§13·잘림) → public/images 교체. 온브랜드 다크 인포그래픽·좌석맵 다이어그램에 유효.
+
+---
+
+## ▶▶▶ (이전) START HERE (2026-07-11 심야 — EN 키워드뱅크 재구축 + 감사, 다음=감글 retrofit 스프린트)
 
 > **이번 세션은 코드/포스트 변경 없음.** 전량 준비작업(전략확정 + EN 감사 + lowfruits 키워드뱅크 재구축).
 > ⚠️ **작업트리 dirty**: `docs/keyword-bank/` 4파일 신규·수정(미커밋). 다음 세션에서 스프린트 결과와 함께 커밋하거나, 먼저 커밋할지 판단.

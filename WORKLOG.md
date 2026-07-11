@@ -3,6 +3,44 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-11 (retrofit 스프린트 #3 — 토너먼트 2편 리라이트·배포 + 이미지 §13 대청소)
+
+### 🏆 감글 retrofit 3번타자 — `holdem-tournament`(A 허브) × `holdem-tournament-vs-cash-game`(B) (배포됨)
+> 완전 자동 파이프라인. 매핑→초안A(Fable5)+초안B 병렬→§13팩트체크 A·B 병렬(별도)→교정(메인)→제3 독립QA→이미지 교정→빌드→배포.
+- **카니발 계약**: A=토너먼트 구조/종류(freezeout·PKO·satellite·deepstack 정의 흡수)/진행/입장/Day-1, B=vs캐시 비교+캐시게임 기초(cash rules LDA3 선점). 첫링크 A=B비교·B=A허브. ICM/bubble/short-stack/이벤트가이드/rake는 route-out. B category 버그 "토너먼트"→"tournament" 교정. `:::pillarhub` 없음→readnext+Related로 로드맵.
+- **메타**: A seoTitle 52/desc148, B 55/153. 둘 다 기존 60~63자·B 205자 위반 교정.
+- **§13 A(별도 Fable5, 웹검증 포함)**: 🔴**날조된 "실제 WPT 2025" 예시**(존재하지 않는 대회를 "Real example"로 게시=E-E-A-T 킬러) → 웹검증한 실존 2024 WPT Seminole RRPO($4,592,000·1,435엔트리·181지급·1위 $662,200)로 교체. 🔴ITM FAQ 오프바이원(176→175 탈락). 🔴PokerStars앱=WPT 오브랜드→EPT/APPT. +ante 빅블라인드앤티 설명 보강·Main Event 기간·rake 헤지·페이아웃% 정합. 블라인드표 BB환산·satellite·rake%는 CORRECT.
+- **§13 B(별도 Fable5)**: **FACTS-CLEAN**(payout $1,000·뱅크롤·ICM 오목성 논증 전부 정확). 폴리시 1건만.
+- **제3 독립 QA**: 텍스트·카니발·메타 CLEAN. **but 이미지 대량 §13 결함 적발**(기존 AI생성 실사): A hero 80KB·1200×800(CLS)→sharp 1200×675·59KB 리사이즈(내용 정상)+alt 정정("final table"→대형 필드)+낡은 카드문구. B의 실사 3개=🔴**불가능 카드(K♣ 5핏)+깨진 클록글자**, 🔴뭉개진 A/K 카드, 🔴블랙잭 테이블을 버블로 오표기 → **§13-안전 온브랜드 인포그래픽 3종으로 B-전용 교체**(HTML→Playwright, cash-vs-tournament 비교·칩≠현금·ICM비선형, 각 18~22KB, 카드/클록 없음, 육안검수 통과). B 중복 인라인 hero 제거 + E-E-A-T 경험담 추가.
+- **빌드 ✅ 57 blog + 77 intl**. 신규 이미지 4개(A리사이즈+B 3종) 전부 <60KB·1200×675.
+- **다음(사용자)**: GSC 색인 `/en/blog/holdem-tournament`·`/en/blog/holdem-tournament-vs-cash-game`.
+- **⚠️ 사이트 전반 후속(별도)**: 기존 defective 실사가 **다른 글에도 잔존** — `tournament-table-action.webp`(betting-actions 본문), `icm-chips-not-money-real.webp`(icm 글), `holdem-bubble-table.webp`(블랙잭) 등 AI생성 깨진 카드/글자 이미지 일괄 감사·교체 필요.
+
+## 2026-07-11 (retrofit 스프린트 #2 — 포지션 2편 카니발 분리 리라이트·배포)
+
+### 🪑 감글 retrofit 2번타자 — `holdem-positions`(A) × `holdem-position-play`(B) (커밋 `2ec5bb8`, 배포됨)
+> 완전 자동 파이프라인(사용자 자리비움·게이트 없음). 두 감글을 인텐트로 완전 분리해 카니발 청산. 매핑→초안(Fable5)→§13팩트체크(별도 Fable5)→교정(메인)→제3 독립QA→빌드→배포.
+- **카니발 계약(A/B 분배)**: A=좌석·이름·좌석표(seat numbers LDA1·hijack/lojack 유래·인원수별 2~10명 이름맵), 첫링크=Rules 허브 / B=in/out of position 전략(레인지 원본·수익성·why-best·limp-or-raise UTG LDA4·how to play OOP), 첫링크=holdem-strategy. 헤드 3600이 양쪽(positions vs in-position)에 인텐트 달라 안 싸움. 중복 FAQ/표 청산, A↔B 상호링크 의도 분리.
+- **메타 교정**: 둘 다 seoTitle 71~72자·B desc 255자 위반 → A 58/155/40, B 59/157/40. A category 한글"초보 가이드"로.
+- **§13(별도 Fable5 열거법)**: 양쪽 핸드예시·헤즈업(버튼=SB, 첫preflop/막postflop)·좌석순서(SB→BB→…→BTN)·레인지% 통일(UTG13/LJ17/HJ20/CO27/BTN43)·수익성(SB=구조적 최악play/BB=최대raw손실) 전수검증. 교정: B "3~8%/seat"↔자기표 모순(+7/+16), hijack "3rd in 6-max"→2nd, OOP "against everyone" 절대화 완화, **B 도입부 불가능 일화 재작성**(UTG레이즈 뒤 버튼림프=불가), A "UTG 3 seats left of button" 등.
+- **제3 독립 QA**: 텍스트·메타·링크·카니발 계약 CLEAN. **but B 이미지 3개 §13 결함 적발** → HTML→Playwright→webp로 교정 재생성: hero(CO↔BTN 좌석 뒤바뀜→온브랜드 좌석맵 다이어그램, CO가 BTN 우측, 19KB)·opening-range(숫자 45→43 모순+잘림→정확수치 20KB)·ip-vs-oop(헤더 잘림→25KB). 재생성 소스 `scripts/pos-*.html`+`render-pos-infographics.mjs`.
+- **빌드 ✅ 57 blog + 77 intl**. 3개 신규 이미지 전부 <60KB·1200×675·육안검수(좌석순서·숫자·철자·잘림) 통과.
+- **다음(사용자)**: GSC 색인 `/en/blog/holdem-positions`·`/en/blog/holdem-position-play`.
+- **🟡 잔여(비블로커)**: A 본문이미지 `holdem-button-position-hero.webp` 재사용(클러스터-고유 규칙 위반, §13은 정상) — 나중에 A 전용 이미지로 교체 권장.
+
+## 2026-07-11 (retrofit 스프린트 #1 — EN `holdem-starting-hands-chart` 뱅크 기반 리라이트·배포)
+
+### 🔤 감글 retrofit 1번타자 발행 (커밋 `019de04`, 배포됨)
+> 심야 세션이 준비한 감글 retrofit 스프린트 실행. 워크플로우 = 각도(Fable5 매핑)→게이트→초안(Fable5)→§13 팩트체크(Fable5 별도 에이전트)→독립 QA(제3 Fable5 에이전트)→빌드·PDF·배포(메인). **모든 생성·검수 작업 Fable5, 메인은 게이트·빌드·커밋만**(사용자 지시).
+- **[각도]** Fable5 매핑: 현재 감글이 헤드 3인방(`good/best starting hands` 2400×2·LDA24, `poker starting hands chart` 1300·LDA21)을 메타·H2에 못 담고 seoTitle 71자로 잘림 진단. `en-starting-hands.md` 뱅크로 재설계.
+- **[초안]** Fable5 전면 개편: seoTitle `Fold 80% of Your Hands? — Best Poker Starting Hands Chart`(57자). H2 10개 = ①10 best ranked ②what counts as *good* ③9-max chart(rangechart 상향) ④**6-max**(신규) ⑤what % ⑥**GTO vs 초보차트**(⭐`gto preflop` 70·LDA4 무주공산) ⑦worst ⑧**printable PDF** ⑨quiz ⑩FAQ8. 첫링크 `holdem-strategy` 유지. 카니발 제외: nicknames→glossary·확률→probability.
+- **[§13 팩트체크]** 별도 Fable5 에이전트 열거법(C(48,5) 전수·MC 2M): AA 85.2%·AKo/AKs vs QQ 42.8/46.2%·플러시 6.4%/0.84%/35%·셋 11.8%·169/1326·포지션 12/17/26/42%·7-2 rule **전부 CORRECT**. 결함 6곳 교정 — 🔴AJs 표(AQs+)↔UTG본문 모순 정합(AJs+), types↔dealt-hands 혼동, TT 티어 라벨, UTG ~12% 근거 문구, 6-max 블라인드 문구.
+- **[독립 QA]** 초안·팩트체크와 무관한 **제3 Fable5 에이전트** 전면검수(메타·구조·내부링크 실존/트슬래시·렌더 디렉티브·카니발·이미지alt·§13 스팟) → **DEPLOY-READY(🔴 0)**. 🟡 폴리시 2건 반영(E-E-A-T 도입부 1인칭화, limping 링크 `holdem-betting-actions`→전용 `holdem-limping`). 이미지 재압축은 KiB 통과라 보류.
+- **[PDF 에셋]** 인쇄용 차트 신설 `/downloads/poker-starting-hands-chart.pdf` — Fable5가 온브랜드 HTML 저작(크림/포레스트그린/골드, 검증 데이터 그대로) → Playwright A4 렌더(1페이지·140KB), 프리뷰 육안검수 통과. 재생성 소스 `scripts/starting-hands-chart-print.html`+`render-starting-hands-pdf.mjs` 커밋. (선례: `/downloads` 규칙 PDF 4개 기존재라 webp정책 예외 아님)
+- **빌드 ✅ 57 blog + 77 intl**. 메타 39/57/153. 참조 이미지 7개 기존 재활용(새 이미지 불필요).
+- **다음(사용자)**: GSC 색인 `/en/blog/holdem-starting-hands-chart`.
+- **▶▶ 다음 세션**: retrofit 2번타자 `holdem-positions` + `holdem-position-play`(뱅크 `en-position.md`, ⭐카니발 방지 키워드 A/B 분배가 핵심). 매핑 에이전트 각도 대기 중.
+
 ## 2026-07-11 (심야 세션 — EN 키워드뱅크 재구축 + 감사, 포스트 변경 0)
 
 ### 🔬 EN 감사 + lowfruits 키워드뱅크 재구축 (다음=감글 retrofit 스프린트 준비)

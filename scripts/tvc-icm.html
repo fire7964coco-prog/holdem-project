@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 675px; }
+  .frame {
+    position: relative;
+    width: 1200px;
+    height: 675px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #0B1F17 0%, #13291D 52%, #0B1F17 100%);
+    font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    color: #F2EEE3;
+    padding: 44px 56px;
+    display: flex;
+    flex-direction: column;
+  }
+  .frame::before {
+    content: "";
+    position: absolute;
+    left: 50%; top: 46%;
+    width: 940px; height: 560px;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(ellipse at center, rgba(46,125,70,0.14) 0%, rgba(46,125,70,0) 70%);
+    pointer-events: none;
+  }
+  .title {
+    position: relative;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 8px;
+  }
+  .title .gold { color: #C9A227; }
+  .subtitle {
+    position: relative;
+    text-align: center;
+    font-size: 19px;
+    font-weight: 500;
+    color: rgba(242,238,227,0.8);
+    margin-bottom: 24px;
+  }
+  .main {
+    position: relative;
+    flex: 1;
+    display: flex;
+    gap: 44px;
+    align-items: stretch;
+  }
+  .group {
+    flex: 1;
+    border-radius: 18px;
+    background: rgba(242,238,227,0.045);
+    border: 1px solid rgba(242,238,227,0.12);
+    padding: 22px 26px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 0;
+  }
+  .group-label {
+    font-size: 21px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    margin-bottom: 14px;
+    white-space: nowrap;
+  }
+  .group.chips .group-label { color: #E4C766; }
+  .group.equity .group-label { color: #7FC28F; }
+  .bars {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    gap: 46px;
+    padding-bottom: 6px;
+  }
+  .bar-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+  }
+  .bar {
+    width: 96px;
+    border-radius: 10px 10px 4px 4px;
+  }
+  .chips .bar {
+    background: linear-gradient(to top, #8F721B 0%, #C9A227 100%);
+    border: 1px solid rgba(240,218,154,0.5);
+  }
+  .equity .bar {
+    background: linear-gradient(to top, #1D5731 0%, #2E7D46 100%);
+    border: 1px solid rgba(127,194,143,0.5);
+  }
+  .bar.h1 { height: 96px; }
+  .bar.h2x { height: 192px; }
+  .bar.hless { height: 150px; }
+  .bar-cap {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 10px;
+    color: rgba(242,238,227,0.9);
+    white-space: nowrap;
+  }
+  .mult {
+    font-size: 26px;
+    font-weight: 900;
+    margin-bottom: 8px;
+    white-space: nowrap;
+  }
+  .chips .mult { color: #E4C766; }
+  .equity .mult { color: #E08A6F; }
+  .arrow {
+    align-self: center;
+    font-size: 40px;
+    font-weight: 900;
+    color: #C9A227;
+    padding-bottom: 60px;
+  }
+  .note {
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #F2EEE3;
+    background: rgba(201,162,39,0.10);
+    border: 1px solid rgba(201,162,39,0.4);
+    border-radius: 12px;
+    padding: 12px 22px;
+  }
+  .note .red { color: #E08A6F; }
+  .footer {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 14px;
+  }
+  .wordmark {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: #C9A227;
+    opacity: 0.9;
+  }
+  .wordmark .suit { color: #2E7D46; margin-right: 6px; }
+</style>
+</head>
+<body>
+  <div class="frame">
+    <div class="title">ICM — Chips <span class="gold">Aren't Linear Money</span></div>
+    <div class="subtitle">Double your stack, and your prize equity grows less than double</div>
+    <div class="main">
+      <div class="group chips">
+        <div class="group-label">YOUR CHIPS</div>
+        <div class="bars">
+          <div class="bar-wrap">
+            <div class="bar h1"></div>
+            <div class="bar-cap">10% of chips</div>
+          </div>
+          <div class="bar-wrap">
+            <div class="mult">2×</div>
+            <div class="bar h2x"></div>
+            <div class="bar-cap">20% of chips</div>
+          </div>
+        </div>
+      </div>
+      <div class="arrow">→</div>
+      <div class="group equity">
+        <div class="group-label">PRIZE EQUITY</div>
+        <div class="bars">
+          <div class="bar-wrap">
+            <div class="bar h1"></div>
+            <div class="bar-cap">before</div>
+          </div>
+          <div class="bar-wrap">
+            <div class="mult">&lt;2×</div>
+            <div class="bar hless"></div>
+            <div class="bar-cap">after</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="note">Why a call that <span class="red">prints in a cash game</span> can be a fold on the bubble</div>
+    <div class="footer">
+      <div class="wordmark"><span class="suit">♠</span>HoldemMaster</div>
+    </div>
+  </div>
+</body>
+</html>

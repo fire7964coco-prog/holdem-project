@@ -2,124 +2,76 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "holdem-tournament",
-  seoTitle: "Never Played a Poker Tournament? Here's Exactly How It Works",
-  title: "How Poker Tournaments Work — Buy-Ins, Blinds, Satellites & Day-1 Checklist",
-  desc: "How do poker tournaments work? This complete guide covers buy-ins, blind levels, satellite entry, formats (MTT, SNG, PKO), the bubble, payouts, and a first-timer checklist — everything before you sit down.",
-  tldr: "In a poker tournament you pay a fixed buy-in for chips, blinds increase on a timer until one player holds all chips. Top 10–15% of players cash. You can enter via direct buy-in, satellite, or online pre-registration.",
+  seoTitle: "Never Played a Poker Tournament? Here's How It Works",
+  title: "How Poker Tournaments Work — Buy-Ins, Formats & Day 1",
+  desc: "How do poker tournaments work? Buy-ins, blind structure, payout structure, freezeout vs PKO vs satellite formats, and a first-timer Day-1 checklist.",
+  tldr: "In a poker tournament you pay a fixed buy-in for chips, blinds increase on a timer until one player holds all chips. Top 10–15% of players cash. Formats include freezeout, PKO, satellite, and deepstack — enter via direct buy-in, satellite, or online pre-registration.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-07-09",
+  updated: "2026-07-11",
   keepImagesInBody: true,
-  readTime: "13 min",
+  readTime: "14 min",
   emoji: "🏆",
   image: "/images/holdem-tournament-hero.webp",
-  imageAlt: "Live poker tournament final table with tournament chips, cards in play, and players seated under bright lights",
+  imageAlt: "Crowded live poker tournament floor with the blind clock showing 12,000/24,000 as players contest a hand",
   tags: [
     "how do poker tournaments work",
-    "how to enter a poker tournament",
-    "poker tournament buy in explained",
-    "poker tournament formats",
-    "poker satellite tournament",
-    "poker tournament vs cash game",
-    "what is ITM in poker",
-    "poker tournament blinds structure",
-    "first poker tournament tips",
+    "poker tournament structure",
+    "poker tournament blind structure",
+    "poker tournament payout structure",
+    "types of poker tournaments",
+    "freezeout poker tournament",
+    "pko poker",
+    "satellite poker tournament",
+    "how to play tournament poker",
   ],
   content: `
 I walked into my first live poker tournament with $200, a vague idea of how Texas Hold'em worked, and zero clue what a "blind level" or "bubble" meant.
 
 Four hours later I was out. But I knew exactly what every term meant, why I lost, and when to come back.
 
-This guide is everything I wish someone had told me before that day — how tournaments actually work, how to enter one without looking clueless, and how to avoid the mistakes that knock most beginners out before they get a fair shot.
+This guide is everything I wish someone had told me before that day — how tournament structure actually works, which format you're entering, how to register without looking clueless, and what Day 1 feels like hour by hour.
 
 ---
+
+### At a Glance
+
+:::stripe
+10–15% | of the field typically gets paid
+20–40 min | per blind level in live events
+$100+$9 | how a typical buy-in splits — prize pool + fee
+:::
 
 ## What Is a Poker Tournament? (30-Second Answer)
 
 A poker tournament is a competition where everyone pays the same entry fee (the **buy-in**), receives the same number of starting chips, and plays until one person holds every chip in the game.
 
-**Key differences from a cash game:**
+**One-sentence summary:** In a cash game your chips are real money and you can leave anytime. In a tournament, your maximum loss is exactly the buy-in — but you're playing for a share of a much bigger prize pool.
 
-<div style="overflow-x:auto;margin:20px 0">
-<table style="width:100%;border-collapse:collapse;font-size:14px">
-<thead>
-<tr style="background:rgba(255,255,255,0.06)">
-<th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(255,255,255,0.1)">Dimension</th>
-<th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(255,255,255,0.1)">Cash Game</th>
-<th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(255,255,255,0.1)">Tournament</th>
-</tr>
-</thead>
-<tbody>
-<tr style="border-bottom:1px solid rgba(255,255,255,0.06)">
-<td style="padding:10px 14px"><strong>Chip value</strong></td>
-<td style="padding:10px 14px">= real money, 1:1</td>
-<td style="padding:10px 14px">No cash value — ranking only</td>
-</tr>
-<tr style="background:rgba(255,255,255,0.02);border-bottom:1px solid rgba(255,255,255,0.06)">
-<td style="padding:10px 14px"><strong>Blinds</strong></td>
-<td style="padding:10px 14px">Fixed forever</td>
-<td style="padding:10px 14px">Increase every 20–40 min</td>
-</tr>
-<tr style="border-bottom:1px solid rgba(255,255,255,0.06)">
-<td style="padding:10px 14px"><strong>Leave anytime?</strong></td>
-<td style="padding:10px 14px">Yes — take your chips</td>
-<td style="padding:10px 14px">No — play until bust or finish</td>
-</tr>
-<tr style="background:rgba(255,255,255,0.02);border-bottom:1px solid rgba(255,255,255,0.06)">
-<td style="padding:10px 14px"><strong>Rebuy</strong></td>
-<td style="padding:10px 14px">Anytime</td>
-<td style="padding:10px 14px">Usually not (except rebuy events)</td>
-</tr>
-<tr style="border-bottom:1px solid rgba(255,255,255,0.06)">
-<td style="padding:10px 14px"><strong>Maximum loss</strong></td>
-<td style="padding:10px 14px">Unlimited (can keep buying in)</td>
-<td style="padding:10px 14px">Exactly your buy-in</td>
-</tr>
-<tr style="background:rgba(255,255,255,0.02)">
-<td style="padding:10px 14px"><strong>Prize</strong></td>
-<td style="padding:10px 14px">Win each pot in real money</td>
-<td style="padding:10px 14px">Top ~15% share the prize pool</td>
-</tr>
-</tbody>
-</table>
-</div>
-
-**One-sentence summary:** In a cash game you can walk away anytime and your chips are money. In a tournament, your maximum loss is the buy-in — but you play for a much bigger prize.
-
-→ For a deeper comparison: [Poker Tournament vs Cash Game — 8 Key Differences](/en/blog/holdem-tournament-vs-cash-game "thumb:/images/tournament-table-action.webp")
+That single difference changes chip value, blind pressure, and strategy from the ground up. → Full breakdown: [Poker Tournament vs Cash Game — Which Should You Play?](/en/blog/holdem-tournament-vs-cash-game "thumb:/images/tournament-table-action.webp")
 
 ---
 
-## How the Buy-In Actually Works
+## Poker Tournament Structure — Buy-Ins, Fees, and Starting Stacks
 
 When you register, you pay a buy-in. That money splits two ways:
 
-<div style="background:rgba(255,248,210,0.06);border:1px solid rgba(255,240,180,0.25);border-radius:12px;padding:16px 20px;margin:20px 0">
-<div style="font-size:13px;font-weight:700;color:var(--primary);margin-bottom:10px">Real example: $109 buy-in tournament</div>
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;font-size:13px">
-<div style="padding:10px;background:rgba(255,255,255,0.04);border-radius:8px;text-align:center">
-<div style="font-size:20px;font-weight:800;color:var(--foreground)">$100</div>
-<div style="color:var(--muted-foreground);margin-top:4px">→ Prize pool</div>
-</div>
-<div style="padding:10px;background:rgba(255,255,255,0.04);border-radius:8px;text-align:center">
-<div style="font-size:20px;font-weight:800;color:var(--foreground)">$9</div>
-<div style="color:var(--muted-foreground);margin-top:4px">→ House fee (rake)</div>
-</div>
-<div style="padding:10px;background:rgba(34,197,94,0.08);border-radius:8px;text-align:center;border:1px solid rgba(34,197,94,0.2)">
-<div style="font-size:20px;font-weight:800;color:#22c55e">10,000</div>
-<div style="color:var(--muted-foreground);margin-top:4px">Starting chips</div>
-</div>
-</div>
-<div style="font-size:12px;color:var(--muted-foreground);margin-top:10px">
-Rake is typically 8–10% for live events. Written as <strong>$100+$9</strong> or <strong>$109</strong> depending on the organizer.
-</div>
-</div>
+| $109 buy-in (written as "$100+$9") | Where it goes |
+|:---|:---|
+| **$100** | → Prize pool, shared by all entrants |
+| **$9** | → House fee (rake) kept by the venue |
 
-**Your starting stack has no cash value.** That 10,000-chip stack doesn't equal $10,000 — it's just your tournament life. What matters is whether you have more chips than the other players.
+Major live events typically keep 8–10% of the buy-in as a fee (small daily tournaments often take more) — here $9 out of $109, about 8.3%. How that fee works (and why online differs from live) is covered in [how poker rake works](/en/blog/holdem-rake).
+
+In exchange, you receive a **starting stack** — commonly 10,000 to 50,000 tournament chips, usually 100–300 big blinds deep at Level 1.
+
+**Your starting stack has no cash value.** A 10,000-chip stack doesn't equal $10,000 — it's just your tournament life. All that matters is whether you have more chips than the other players when the money spots arrive.
+
+Every tournament publishes its structure in a **structure sheet**: starting stack, blind levels, level duration, ante schedule, and payouts. Ask for it at registration — it's the single most useful document in the room.
 
 ---
 
-## How Blind Levels Work (The Clock That Kills Everyone)
+## Poker Tournament Blind Structure — Levels, Antes, and the Clock
 
 This is what most beginner guides skip, and it's the most important mechanical concept in tournaments.
 
@@ -136,7 +88,9 @@ Notice: **you didn't lose a single chip** between Level 1 and Level 9. But your 
 
 ==g:Rule of thumb: below 20 big blinds, you're in push-or-fold territory. Below 10 big blinds, you must shove almost any playable hand before the blinds eat you alive.==
 
-**What are antes?** After the early levels, most tournaments add an "ante" — an extra forced bet from every player, not just the blinds. This increases the pot size and speeds up play. When antes kick in, your chips shrink even faster.
+When you get there, the exact shoving ranges live in [short-stack strategy — when to push or fold](/en/blog/holdem-short-stack).
+
+**What are antes?** After the early levels, most tournaments add an "ante" — an extra forced bet collected every hand on top of the blinds. In most modern live events this is a single "big blind ante" equal to one big blind, paid by the big-blind player on behalf of the whole table (which is why the ante column above matches the big blind). This increases the pot size and speeds up play. When antes kick in, your chips shrink even faster.
 
 New to blinds altogether? Start with [what the small blind and big blind actually are](/en/blog/holdem-blind-meaning) — it makes every "BB" number above click.
 
@@ -147,73 +101,51 @@ New to blinds altogether? Start with [what the small blind and big blind actuall
 ### Stage 1 — Early Levels (100–200 BB deep)
 You have room to play. Speculative hands, set-mining, seeing flops — all reasonable. Most beginners play too tight here. The blinds are cheap; learn the table.
 
-### Stage 2 — Middle Stages (40–80 BB)
+### Stage 2 — Middle Stages (30–60 BB)
 Antes are usually in by now. Stack pressure starts. Players with short stacks start shoving. This is where most of the field gets eliminated.
 
 ### Stage 3 — The Bubble
-The most stressful stage. One more elimination and everyone remaining **gets paid** (ITM = In The Money). Short stacks freeze up. Big stacks bully. Smart bubble play can add 2–3x your buy-in in equity without winning a single pot.
+The most stressful stage. One more elimination and everyone remaining **gets paid** (ITM = In The Money). Short stacks freeze up. Big stacks bully. Smart play here can add real equity without winning a single pot — [the bubble deserves its own guide](/en/blog/holdem-bubble).
 
 ### Stage 4 — Final Table
 Usually 6–9 players left. Payouts increase sharply with each elimination. [ICM (the Independent Chip Model)](/en/blog/holdem-icm "thumb:/images/holdem-icm-hero.webp") governs decision-making here — chip EV and real-money EV diverge significantly.
 
 ---
 
-## Tournament Formats — Which One Are You Entering?
+## Types of Poker Tournaments — Freezeout, PKO, Satellite, Deepstack & More
 
-<div style="overflow-x:auto;margin:20px 0">
-<table style="width:100%;border-collapse:collapse;font-size:13px">
-<thead>
-<tr style="background:rgba(255,255,255,0.06)">
-<th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(255,255,255,0.1)">Format</th>
-<th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(255,255,255,0.1)">How it works</th>
-<th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(255,255,255,0.1)">Best for</th>
-</tr>
-</thead>
-<tbody>
-<tr style="border-bottom:1px solid rgba(255,255,255,0.06)">
-<td style="padding:10px 14px"><strong>Freezeout</strong></td>
-<td style="padding:10px 14px">One buy-in, no rebuy. Bust = out.</td>
-<td style="padding:10px 14px">Beginners — fixed cost</td>
-</tr>
-<tr style="background:rgba(255,255,255,0.02);border-bottom:1px solid rgba(255,255,255,0.06)">
-<td style="padding:10px 14px"><strong>Rebuy / Re-entry</strong></td>
-<td style="padding:10px 14px">Pay again after busting (during early levels)</td>
-<td style="padding:10px 14px">Aggressive players with bigger bankroll</td>
-</tr>
-<tr style="border-bottom:1px solid rgba(255,255,255,0.06)">
-<td style="padding:10px 14px"><strong>Bounty / KO</strong></td>
-<td style="padding:10px 14px">Win cash for each player you eliminate</td>
-<td style="padding:10px 14px">Action players — extra income per knockout</td>
-</tr>
-<tr style="background:rgba(255,255,255,0.02);border-bottom:1px solid rgba(255,255,255,0.06)">
-<td style="padding:10px 14px"><strong>PKO (Progressive KO)</strong></td>
-<td style="padding:10px 14px">Bounty grows as you eliminate more — half on your head, half you keep</td>
-<td style="padding:10px 14px">High-variance, big-upside players</td>
-</tr>
-<tr style="border-bottom:1px solid rgba(255,255,255,0.06)">
-<td style="padding:10px 14px"><strong>Satellite</strong></td>
-<td style="padding:10px 14px">Prize = entry into a bigger tournament, not cash</td>
-<td style="padding:10px 14px">Budget players targeting major events</td>
-</tr>
-<tr style="background:rgba(255,255,255,0.02);border-bottom:1px solid rgba(255,255,255,0.06)">
-<td style="padding:10px 14px"><strong>MTT</strong></td>
-<td style="padding:10px 14px">Multi-Table Tournament — large field, many tables</td>
-<td style="padding:10px 14px">Any — the most common format</td>
-</tr>
-<tr>
-<td style="padding:10px 14px"><strong>SNG (Sit & Go)</strong></td>
-<td style="padding:10px 14px">Starts when seats fill (no set start time) — usually 6–9 players</td>
-<td style="padding:10px 14px">Quick game, no scheduling needed</td>
-</tr>
-</tbody>
-</table>
-</div>
+| Format | How it works | Best for |
+|:---|:---|:---|
+| **Freezeout** | One buy-in, no rebuy. Bust = out. | Beginners — fixed cost |
+| **Rebuy / Re-entry** | Pay again after busting (during early levels) | Aggressive players with a bigger bankroll |
+| **Bounty / KO** | Win a fixed cash bounty for each player you eliminate | Action players — extra income per knockout |
+| **PKO (Progressive KO)** | Bounties grow with each knockout — part paid to you, part added to your head | High-variance, big-upside players |
+| **Deepstack** | Bigger starting stacks (typically 100–200BB+) with slower levels | Players who want more postflop play |
+| **Satellite** | Prize = entry into a bigger tournament, not cash | Budget players targeting major events |
+| **MTT** | Multi-Table Tournament — large field across many tables | Any — the most common format |
+| **SNG (Sit & Go)** | Starts when seats fill (no set start time) — usually 6–9 players | Quick game, no scheduling needed |
 
 **For beginners:** Start with a **Freezeout MTT** — known cost, simple rules, no rebuy decisions to stress about.
 
+The three format names you'll see most often on a tournament schedule deserve a proper definition:
+
+### What Is a Freezeout Poker Tournament?
+
+A freezeout poker tournament gives every player exactly one buy-in. Lose your chips and you're eliminated — no rebuys, no re-entries. It's the original tournament format, and the best one for beginners because your total cost is fixed the moment you register.
+
+### What Is PKO Poker? (Progressive Knockout)
+
+A PKO (Progressive Knockout) is a bounty tournament where typically around half of each buy-in goes to the regular prize pool and the other half becomes a bounty on that player's head. When you knock someone out, you typically collect part of their bounty in cash immediately, and the rest is added to your own bounty — making you a bigger target as you win. The exact split varies by site and event; 50/50 is common but not universal, so check the lobby or structure sheet. (A full PKO strategy guide is coming to this cluster soon.)
+
+### What Is a Deepstack Poker Tournament?
+
+A deepstack poker tournament starts you with far more chips relative to the blinds — typically 100 big blinds or more, often 200BB+ — and usually pairs that with longer blind levels. More chips and a slower clock mean more postflop play, more room to recover from a mistake, and longer days.
+
+**What about rebuys and add-ons?** In a rebuy event you can pay again after busting during a set early window; an add-on is a one-time optional chip purchase usually offered when that window closes. After that, the event plays out like a freezeout.
+
 ---
 
-## What Is a Satellite Tournament? (The Cheapest Way Into Big Events)
+## What Is a Satellite Poker Tournament?
 
 A satellite is a smaller tournament where the prize isn't cash — it's **an entry ticket** into a larger, more expensive tournament.
 
@@ -224,7 +156,7 @@ A satellite is a smaller tournament where the prize isn't cash — it's **an ent
 
 Instead of spending $10,000, you compete in a $500 tournament against 19 other players. One person wins the $10,000 seat.
 
-**Chained satellites** go even lower. A $5 super-satellite → $55 qualifier → $215 event → $1,050 Main Event. Most WSOP Main Event players entered through a satellite chain for a fraction of the direct buy-in.
+**Chained satellites** go even lower. A $5 super-satellite → $55 qualifier → $215 event → $1,050 Main Event. Many players at major events entered through a satellite chain for a fraction of the direct buy-in.
 
 ==g:Satellite strategy is different from regular tournament play — once you have enough chips to guarantee a seat, stop taking risks. Fold even good hands to avoid busting on the bubble.==
 
@@ -242,7 +174,7 @@ Instead of spending $10,000, you compete in a $500 tournament against 19 other p
 
 ### Option B: Online Pre-Registration
 Most major live festivals let you register online in advance:
-- Set up an account on the event's platform (e.g., Bravo Poker Live for WSOP, PokerStars app for APPT/WPT)
+- Set up an account on the event's platform (e.g., Bravo Poker Live for WSOP, the PokerStars Live app for EPT/APPT events)
 - Pay the buy-in online
 - Arrive at the venue → ID verification → print seat card at a kiosk or pick up at desk
 - Skips the registration line — worth doing for large events
@@ -253,6 +185,22 @@ Most major live festivals let you register online in advance:
 - Arrive at the main event registration desk → present ticket + ID → receive seat card
 
 **Registration usually opens 1–3 hours before the tournament start.** For major festivals, register the day before online to guarantee a seat.
+
+Playing in Asia? See the [APT Incheon 2026 guide](/en/blog/apt-incheon-2026-guide) for a real festival's schedule, buy-ins, and registration flow.
+
+---
+
+## How to Play Tournament Poker — Strategy by Stage
+
+One post can't teach full tournament strategy — that's what the cluster guides are for — but here is the stage-by-stage skeleton every winning plan hangs on:
+
+**Early levels (100BB+):** Play tight, position-aware poker and see cheap flops with hands that can crack big pairs. A disciplined [starting hands chart](/en/blog/holdem-starting-hands-chart) prevents most beginner disasters. Don't bluff off your stack in the first hour — nobody folds at Level 1.
+
+**Middle stages (30–60BB):** Antes make every pot worth fighting for. Open lighter from late position, steal blinds, defend your big blind more often, and start tracking who is short-stacked at your table.
+
+**Short stack (under 20BB):** Push-or-fold takes over — the math here is essentially solved, and guessing costs real money. Learn the shove ranges in [short-stack strategy](/en/blog/holdem-short-stack).
+
+**Bubble and final table:** Survival math overtakes chip math. Payout pressure changes which hands you can play — the bubble and ICM guides linked in the stages section above cover exactly how.
 
 ---
 
@@ -296,7 +244,7 @@ This is what no other guide tells you. Here's a realistic Day 1 timeline for a l
 
 ---
 
-## Payout Structure — Who Gets Paid?
+## Poker Tournament Payout Structure — Who Gets Paid What
 
 **Typical structure:** Top 10–15% of the field gets paid.
 
@@ -304,20 +252,22 @@ This is what no other guide tells you. Here's a realistic Day 1 timeline for a l
 |:---|:---:|:---:|:---|
 | 100 | ~13 | 1.5–2x buy-in | 25–30% of prize pool |
 | 500 | ~60 | 1.5–2x buy-in | 20–25% of prize pool |
-| 2,000 | ~250 | 1.7–2.2x buy-in | 15–20% of prize pool |
+| 2,000 | ~250 | 1.7–2.2x buy-in | 13–18% of prize pool |
 | 10,000 | ~1,200 | 1.5–2x buy-in | 8–12% of prize pool |
 
-**Real example (WPT 2025, $3,500 buy-in, 1,447 entries):**
-- Prize pool: $4,630,400
-- Players paid: ~180
-- Min-cash: ~$5,250 (~1.5x buy-in)
-- 1st place: $752,500
+**Real example (WPT Seminole Rock 'N' Roll Poker Open Championship 2024, $3,500 buy-in, 1,435 entries):**
+- Prize pool: $4,592,000 ($3,200 of each buy-in goes to the pool — the rest is the fee)
+- Players paid: 181 (~12.6% of the field)
+- Min-cash: roughly 1.5x the buy-in
+- 1st place: $662,200 (~14% of the prize pool)
 
 The payout structure is always announced before the tournament starts. Ask for the **structure sheet** at registration — it lists blind levels, antes, starting stack, and payout schedule.
 
 ---
 
 ## Tournament Glossary — Terms You'll Hear on Day 1
+
+These 13 terms cover most of what you'll hear at the table. For the full A-to-Z, see the [poker glossary](/en/blog/holdem-glossary).
 
 | Term | What it means |
 |------|--------------|
@@ -362,6 +312,7 @@ The payout structure is always announced before the tournament starts. Ask for t
 
 :::readnext[Keep reading]
 /en/blog/holdem-tournament-vs-cash-game | Tournament vs Cash Game | /images/tournament-table-action.webp
+/en/blog/holdem-bubble | What Is the Bubble in Poker? | /images/holdem-bubble-hero.webp
 /en/blog/apt-incheon-2026-guide | APT Incheon 2026 Guide | /images/apt-incheon-2026-guide-hero.webp
 :::
 
@@ -369,27 +320,23 @@ The payout structure is always announced before the tournament starts. Ask for t
 
 **Q. How long does a poker tournament last?**
 
-A. Daily tournaments at local casinos typically run 4–8 hours. Major series events (WSOP Main Event, WPT Championships) run 4–6 days with multiple day bags. When you register, ask for the structure sheet — it will tell you the expected day length based on blind level duration and starting field size.
+A. Daily tournaments at local casinos typically run 4–8 hours. Major series events like WPT championships run 4–6 days with multiple day bags — and the WSOP Main Event stretches close to two weeks from its Day 1 flights to the final table. When you register, ask for the structure sheet — it will tell you the expected day length based on blind level duration and starting field size.
 
-**Q. What happens if I bust early?**
+**Q. What is the difference between PKO and bounty tournaments?**
 
-A. You're out. In a freezeout tournament, losing all your chips ends your tournament. In a rebuy or re-entry event, you can pay again and receive a fresh starting stack — but only during the late registration window. Once late reg closes, busting means you're done for the day.
+A. In a regular bounty (knockout) tournament, every player carries a fixed bounty — knock someone out and you collect the full amount, and bounties never change. In a PKO (Progressive Knockout), bounties grow: you typically collect part of the eliminated player's bounty in cash and the rest is added to the bounty on your own head. That makes chip leaders in a PKO increasingly valuable targets as the event goes on.
 
-**Q. What is the bubble in poker?**
+**Q. What are the rules on rebuys and add-ons?**
 
-A. The bubble is the stage just before the money — one more elimination and every player remaining gets paid. It's the highest-pressure phase of any tournament. Short stacks freeze up; big stacks use their chip advantage to steal blinds. Making the money (ITM) on your first tournament is a legitimate goal.
+A. In a rebuy tournament you can pay the entry fee again after busting (or sometimes when your stack falls below a threshold), but only during a set rebuy period — usually the first few blind levels. An add-on is a one-time optional chip purchase, typically offered to everyone at the end of the rebuy period regardless of stack size. Once that window closes, the event plays out as a freezeout. Exact rules vary by venue, so check the structure sheet.
 
-**Q. Can I enter a major tournament like WSOP as a beginner?**
+**Q. Is it legal to host a poker tournament at home?**
 
-A. Yes. There is no skill requirement to enter any public poker tournament — just the buy-in and valid ID. The WSOP Main Event is $10,000, but daily side events typically range from $500 to $3,000. For a first major event, consider a $500–$800 daily event to get a feel for the structure before committing to the Main Event.
+A. It depends on your jurisdiction. In many places, private social home games are legal as long as the host takes no rake, entry fee cut, or profit beyond playing — all money goes back to the players. Charging a house fee, taking a percentage of the prize pool, or advertising publicly is what typically turns a home game into illegal gambling. Laws vary widely by country and by state, so check your local regulations before hosting.
 
 **Q. What does ITM mean in poker?**
 
-A. ITM = "In The Money." You've reached a finishing position that guarantees a payout. In a 200-player tournament paying 25 spots, you're ITM when 176 players have been eliminated. Your min-cash is typically 1.5–2x your buy-in.
-
-**Q. How do satellites work — can I really enter WSOP for $5?**
-
-A. Technically yes — through a chain of satellite qualifiers. A $5 super-satellite awards a seat into a $55 event, which awards a seat into a $215 event, and so on up to a $1,050 or larger target. Most players who reach the deep runs of major events entered through satellite chains. The trade-off: satellite play requires specific strategy (extreme risk-aversion near the bubble) and runs through multiple tournaments.
+A. ITM = "In The Money." You've reached a finishing position that guarantees a payout. In a 200-player tournament paying 25 spots, you're ITM once 175 players have been eliminated and only 25 remain. Your min-cash is typically 1.5–2x your buy-in.
 
 **Q. Can you join a poker tournament after it has started?**
 
@@ -407,12 +354,17 @@ A. No. Unlike a cash game, tournament chips have no cash value and can't be cash
   <a href="/en/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Deep Dive</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Tournament vs Cash Game</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">8 differences that change everything</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Chip value, rising blinds, ICM — which format fits you</div>
   </a>
   <a href="/en/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Strategy</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Starting Hands Chart</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Which hands to play in early levels</div>
+  </a>
+  <a href="/en/blog/holdem-short-stack" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Short Stack</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Short-Stack Strategy</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Push-or-fold when the blinds close in</div>
   </a>
   <a href="/en/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Start Here</div>
