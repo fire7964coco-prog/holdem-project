@@ -34,7 +34,45 @@
 ### C. 🆕 Cash Game 신호 (7번째 필라 후보 재확인)
 - `poker cash game strategy` 210 · `cash game poker strategy` 210 (LDA24) → **Cash Game 전략 클러스터** 수요 존재. (초기엔 Strategy 안에 두기로 했으나, 별도 시드로 더 캐볼 가치)
 
-## 처리 방침
-- **신규 클러스터 1개**: "How a Poker Tournament Works"(structure·blind structure·payout·levels·rebuys·types) → A 그룹 롱테일 흡수(합 ~600 vol, LDA 4~17 = 승산 좋음)
-- **holdem-tournament 필라**에 전략·차트 섹션 강화(B 그룹)
-- 지역/도구 키워드 전부 스킵. Cash Game은 별도 시드 후보로 메모.
+---
+
+## ★ 2026-07-11 재수확 (위치 변형 — 트레일링 blind spot 보강)
+
+> 기존은 `poker tournament *`(트레일링)만 → **앞/중간 와일드카드로 재수확**.
+> `* poker tournament`(242 분석, ~80% 로컬 노이즈) + `tournament * poker`(22, 클린).
+> 원본: `___poker_tournament_1783754388.xlsx` · `tournament___poker_1783754528.xlsx`
+> **교훈**: 넓은 토픽에 앞 와일드카드(`* topic`)는 지역·업소 노이즈 폭탄 → 다음부턴 **Questions/PAA 탭 export**가 정답. 중간(`topic * poker`)은 클린.
+
+### D. 🆕 토너먼트 종류(PKO·freezeout·satellite) — 트레일링이 놓친 클러스터
+| 키워드 | Vol | LDA |
+|---|---|---|
+| what is pko poker / what is pko in poker | 140/50 | 30 |
+| what is a progressive knockout poker tournament | 70 | 30 |
+| **pko poker strategy pdf** | 10 | **12** ⭐ |
+| what is the difference between pko and bounty | - | 30 (weak4) |
+| knockout / pko tournament strategy | 10 | 24 |
+| what is a freezeout poker tournament | 140 | 23 |
+| freezeout poker tournament / how it works | 90 | 23~24 |
+| what is a satellite poker tournament / satellite | 30/70 | 25 |
+| **deepstack poker tournament** | 10 | **14** ⭐ |
+
+### E. 개최·합법성 (홈게임 의도 — 주(州)별이 더 저경쟁)
+| 키워드 | Vol | LDA |
+|---|---|---|
+| can you host poker tournament in texas / florida | - | **17** ⭐ |
+| can you host poker tournament without a license | - | **17** ⭐ |
+| how to run a poker tournament fundraiser / run a poker tournament | 10 | 17~18 |
+
+### F. Tournament vs Cash 크로스 (→ tournament-vs-cash-game 감글 retrofit)
+| 키워드 | Vol | LDA |
+|---|---|---|
+| cash game vs tournament poker | 90 | 30 |
+| tournament vs cash game poker strategy / (다수 변형) | 10~30 | 30 |
+| how to play tournament poker | 110 | 24 |
+
+## 처리 방침 (갱신)
+- **신규 클러스터 1개**: "How a Poker Tournament Works"(structure·blind structure·payout·levels·rebuys) → A 그룹 (합 ~600 vol, LDA 4~17)
+- **🆕 신규 클러스터 후보 1개**: "Poker Tournament Types" 또는 "PKO/Bounty Strategy" → D 그룹 (freezeout·satellite·PKO·deepstack — 트레일링이 놓친 광맥, what-is 정의 + 전략)
+- **holdem-tournament 필라**: 전략·차트 섹션 강화(B) + 종류 FAQ(D 정의형) 흡수
+- **holdem-tournament-vs-cash-game 감글**: F 그룹으로 retrofit (cash game vs tournament 90·LDA30)
+- 지역/도구 키워드 전부 스킵. Cash Game 전용글은 별도 `cash game *` 시드로 확정.

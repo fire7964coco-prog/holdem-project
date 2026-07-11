@@ -3,6 +3,22 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-11 (심야 세션 — EN 키워드뱅크 재구축 + 감사, 포스트 변경 0)
+
+### 🔬 EN 감사 + lowfruits 키워드뱅크 재구축 (다음=감글 retrofit 스프린트 준비)
+> **배경**: EN을 18개 언어(12→18) 전부 1티어 현지어 번역할 계획 → EN이 마스터라 키워드·사실 완벽 필요. 번역 전 EN 전면검수(Master Lock)의 첫 단계로, "감으로 쓴 글" 색출 + 근거 키워드 재수확.
+- **EN 감사(서브에이전트)**: 42개 EN 글 분류 → **17 by-feel**(2026-07-03 키워드뱅크 이전) / 19 데이터기반 / 6 SERP대체. 이벤트가이드 4편=감이나 retrofit 대상 아님(고아링크만). hand-rankings는 07-03 Phase0 FAQ로 데이터기반 전환됨.
+- **핵심 발견**: 과거 뱅크는 **트레일링(`X *`) 시드만** → **blind spot**. 실증: starting-hands 트레일링(238)이 `good starting hands` 2400 누락, tournament 트레일링이 PKO/freezeout/satellite 클러스터 누락, position 트레일링(94)이 `in position poker` 3600 누락. → **위치 변형(트레일링+중간) 필수** 규칙 확립.
+- **키워드뱅크 박제(위치변형 재수확)**:
+  - 🆕 `docs/keyword-bank/en-starting-hands.md` (`poker starting hands *` 238 + `starting hands * poker` 57) → holdem-starting-hands-chart
+  - 🆕 `docs/keyword-bank/en-position.md` (`poker position *` 94 + `position * poker` 348 + `poker positions *` 110) → holdem-positions·position-play
+  - 🔄 `docs/keyword-bank/en-tournament.md` 보강 (`* poker tournament` 242 + `tournament * poker` 22) → PKO·freezeout·satellite·vs-cash 클러스터 추가
+  - 🆕 `docs/keyword-bank/en-cash-game.md` (`poker cash game *` 177 + `cash game poker *` 115 + `cash game * poker` 205) → tournament-vs-cash-game + Cash Game 7필라 후보
+- **판정 기준**: LDA(top10 최저DA) ≤20 매우승산·20~35 좋음. 노이즈(지역·업소·칩상품·타언어)는 뱅크에 제외 명시(불어 등은 해당언어 번역 때 재활용 메모).
+- **메모리**: `keyword-harvest-wildcard-positions`(수확규칙) · `multilang-expansion-12-to-18`(확장전략) · `content-workflow-pillar-sprint`(모델 Fable5 갱신) 신규/갱신.
+- **⚠️ 미커밋**: `docs/keyword-bank/` 4파일 dirty. 다음 세션 스프린트 결과와 함께 커밋 판단.
+- **다음**: 감글 retrofit 스프린트 — ①starting-hands-chart ②positions/position-play ③tournament 허브/vs-cash. (상세: session-handoff 최상단)
+
 ## 2026-07-11 (오늘 — 펍 정보 필라 1편 발행)
 
 ### 🟢 펍 허브 완성 — 정보 필라 `holdem-pub-guide` 신설 + /pub 상호링크 + 선별 매장 틀 (보강 1순위)

@@ -5,7 +5,44 @@
 
 ---
 
-## ▶▶▶ 새 세션 START HERE (2026-07-11 밤 — 펍 허브 완성·배포됨)
+## ▶▶▶ 새 세션 START HERE (2026-07-11 심야 — EN 키워드뱅크 재구축 + 감사, 다음=감글 retrofit 스프린트)
+
+> **이번 세션은 코드/포스트 변경 없음.** 전량 준비작업(전략확정 + EN 감사 + lowfruits 키워드뱅크 재구축).
+> ⚠️ **작업트리 dirty**: `docs/keyword-bank/` 4파일 신규·수정(미커밋). 다음 세션에서 스프린트 결과와 함께 커밋하거나, 먼저 커밋할지 판단.
+
+### 🎯 큰 그림 (왜 이 작업을 하나)
+EN 블로그를 **18개 언어(현 12→18) 전부 1티어 현지어로 번역**할 계획. EN이 번역 마스터라 **키워드·사실 완벽해야** 함. 그래서 번역 전에 **① EN 전면검수(Master Lock) → ② 필라1 전언어 선행(색인 시계) → ③ 언어별 완결 클러스터** 순. (상세 메모: `multilang-expansion-12-to-18`)
+
+### ✅ 이번 세션 완료
+1. **EN 감사(audit)** — 42개 EN 글 분류: **17개 "감(by-feel)"**(2026-07-03 키워드뱅크 시스템 이전 글) / 19 데이터기반 / 6 SERP대체. 이벤트가이드 4편은 감이지만 **retrofit 대상 아님**(고아링크만).
+2. **키워드뱅크 재구축** — 과거엔 **트레일링(`X *`)만** 수확 → blind spot 발견(예: `good starting hands` 2400 누락). **위치 변형(트레일링+중간)**으로 재수확·박제:
+   - 🆕 `docs/keyword-bank/en-starting-hands.md` (238+57)
+   - 🆕 `docs/keyword-bank/en-position.md` (94+348+110)
+   - 🔄 `docs/keyword-bank/en-tournament.md` 보강 (PKO·freezeout·satellite·vs-cash 클러스터 = 트레일링이 놓친 광맥)
+   - 🆕 `docs/keyword-bank/en-cash-game.md` (177+115+205, +Cash Game 7필라 후보 근거)
+3. **메모리 갱신**: `keyword-harvest-wildcard-positions`(수확 규칙) · `multilang-expansion-12-to-18`(확장전략) · `content-workflow-pillar-sprint`(모델=Fable5로).
+
+### ▶▶ 다음 세션 할 일 — 감글 retrofit 스프린트 (1편씩 품질집중)
+각 글마다: **① `.cursor/rules/posting.mdc` + 현재 글 읽기 → ② 뱅크 기반 재설계 각도(seoTitle/H2/FAQ)를 사용자에게 게이트(한국어 2~3줄) → ③ 초안 → ④ §13 핸드검산(적대적 서브에이전트) → ⑤ 빌드 → ⑥ 이미지 커서.**
+
+**우선순위(뱅크 완비된 것부터):**
+1. **`holdem-starting-hands-chart`** ← 1번타자(감사 최우선·피링크6·뱅크 제일 두꺼움). 헤드=`best/good starting hands` 2400×2·LDA24, `poker starting hands chart` 1300·LDA21. 뱅크: `en-starting-hands.md`. (주의: nicknames·probability는 각각 Glossary·probability로 라우팅)
+2. **`holdem-positions`(좌석·이름) + `holdem-position-play`(전략)** ← 뱅크 `en-position.md`가 둘로 갈라줌. 헤드 3600×LDA22. 보석: seat numbers LDA1·hijack LDA7·why-position-matters LDA8.
+3. **`holdem-tournament`(허브) + `holdem-tournament-vs-cash-game`** ← 뱅크 `en-tournament.md`·`en-cash-game.md`. 허브에 PKO/freezeout/satellite 정의 FAQ 흡수.
+
+**신규 클러스터 후보(감사 중 발견, 나중):**
+- "Poker Tournament Types" 또는 "PKO/Bounty Strategy"(freezeout·satellite·PKO·deepstack — 트레일링이 놓쳤던 광맥)
+- Cash Game 7번째 필라(근거는 있으나 볼륨 후순위 → 보류)
+
+**2차 웨이브(신규 시드 불필요 — 기존 뱅크로 커버)**: Rules/족보 감글(betting-actions·blind-meaning·flush-vs-straight·tiebreak·split-pot·reading-board)은 기존 `en-can-you`·`en-what-is-a`·`en-what-beats`(전부 mid라 blind spot 없음)로 retrofit.
+
+### 📌 참고
+- lowfruits 수확 규칙(다음에도 적용): 트레일링+중간 두 위치 / 넓은 토픽 앞`*`은 지역노이즈→Questions·PAA 탭 / **Analyzed만 export**(AVL·Related 무시) / 판정 LDA≤20 매우승산·20~35 좋음. (메모 `keyword-harvest-wildcard-positions`)
+- xlsx 파싱: inlineStr 방식 → PowerShell `System.IO.Compression`으로 sheet1.xml 직접(A=Keyword,D=DA,E=WeakSpot,G=Volume).
+
+---
+
+## ▶▶▶ (이전) 새 세션 START HERE (2026-07-11 밤 — 펍 허브 완성·배포됨)
 
 **작업트리 clean, 전부 배포됨.** 상세는 `WORKLOG.md` 2026-07-11.
 
