@@ -2,34 +2,41 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "holdem-tiebreak-rules",
-  title: "Same Pair, Same Hand — Who Wins? Poker Kickers and Ties Explained",
-  seoTitle: "Same Pair but You Still Lost? — Poker Kicker & Tie-Breaker Rules",
-  desc: "Flopped aces and still lost? The kicker did it. Here's the 3-step tie-breaker order, kicker rules for every hand, the best-5-of-7 trap, and when pots split.",
-  tldr: "When two hands share the same rank, first compare the cards that make the hand, then the kickers from highest to lowest. If all five cards match, the pot is split — suits never break a tie.",
+  title: "How Ties Are Broken in Poker — Same Hand, Who Wins?",
+  seoTitle: "Same Hand, Same Pair — Who Wins? Poker Tie-Breaker Rules",
+  desc: "Same pair at showdown and still lost? How ties are broken in poker — who wins with the same pair or two pair, when the 5th card matters, and when pots split.",
+  tldr: "Ties are broken in a fixed order: hand rank first, then the cards that make the hand, then kickers from highest to lowest. Same pair → higher first kicker wins; identical five cards → split pot. Suits never decide a tie.",
   category: "초보 가이드",
   date: "2026-06-13",
-  updated: "2026-07-03",
+  updated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "⚖️",
   image: "/images/holdem-tiebreak-hero.webp",
   imageAlt: "Poker showdown: A♠ K♦ vs A♥ 9♣ with board A♦ Q♠ 7♥ 3♣ 2♦ — same pair of aces, kicker decides the winner",
-  tags: ["poker kicker", "poker tie breaker", "who wins same pair poker", "poker tie rules", "split pot", "best five card hand", "texas holdem ties"],
+  tags: ["poker tie breaker rules", "how are ties broken in poker", "who wins same pair poker", "two pair tie poker", "does the 5th card matter in poker", "poker kicker", "higher straight", "texas holdem ties"],
   content: `
-You turn over a pair of aces. So does your opponent. The dealer pushes the pot to *them*. ==r:Same pair — how did you lose?==
+You turn over a pair of aces. So does your opponent. The dealer counts the side cards for a second — then pushes the whole pot to *them*. ==r:Same pair. How did you lose?==
 
-One word: ==**kicker**== — the side card that breaks the tie ([what a kicker is, and which hands have one](/en/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp")). Same-hand showdowns happen far more often than beginners expect, and if you don't know how they're decided, the result feels random (and a lot of people end up arguing with the dealer). Here's every tie-breaker rule in one place.
+I have watched that exact moment stall more games than any other rule: someone half-stands, the dealer taps the felt, and the whole table waits for an explanation. Here it is. Every tie in Texas Hold'em is settled by one fixed procedure that sits one level below the [poker hand rankings](/en/blog/holdem-hand-rankings) — the rankings tell you *which hand* wins; tie-breaker rules tell you *which player* wins when both hands are the same rank.
 
----
-
-> **Quick answer**
-> When two hands are the same rank, compare the cards that *make* the hand first (the pair, the trips, and so on). If those tie, compare the leftover cards — the **kickers** — from highest to lowest. If all five cards match exactly, the pot is ==**split**==. ==r:Suits never break a tie in Texas Hold'em.==
+Most of the work is done by one card: the ==**kicker**==. The full definition — which hands have one and how many — lives in [what is a kicker in poker](/en/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp"). This guide is the *procedure*: exactly how ties are broken for the same pair, two pair, trips, straights and flushes — and the fifth card everyone forgets.
 
 ---
 
-## The 3-Step Tie-Breaker
+### Tie-breaks at a glance
 
-Every showdown in Hold'em is resolved with the same three checks, in order:
+:::stripe
+3 | Steps that settle every tie in Hold'em
+1 | Kicker slot in a two-pair hand
+0 | Ties ever broken by suit
+:::
+
+---
+
+## How Are Ties Broken in Poker? The 3-Step Order
+
+**Ties are broken in a fixed order: compare hand rank first, then the cards that make the hand, then the kickers from highest to lowest — and if all five cards still match, the pot is split.** Every showdown runs the same three checks:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -37,58 +44,41 @@ Every showdown in Hold'em is resolved with the same three checks, in order:
 |:---:|---|---|
 | **1** | Hand rank | The higher category always wins (a flush beats a straight, etc.) |
 | **2** | The cards that make the hand | Same rank? The higher pair / trips / top card wins |
-| **3** | Kickers | Still tied? Compare the leftover cards, highest first |
+| **3** | Kickers, highest first | The first difference wins the pot |
 
 </div>
 
-If step 1 settles it, you never reach step 2. If step 3 still can't separate the hands, ==g:the pot is split==. Steps 2 and 3 come up constantly, which is exactly why kickers matter so much.
+If step 1 settles it, you never reach step 2. If step 3 runs out of cards, the hands are identical and ==g:the pot is split== — how the chips are then divided (odd chips, three-way chops, side pots) is [split pot rules](/en/blog/holdem-split-pot-rules) territory. Steps 2 and 3 are where the arguments happen, so that's where we're going.
 
 ---
 
-## What Is a Kicker?
+## Who Wins if Two Players Have the Same Pair?
 
-A ==**kicker**== is a card in your best five that isn't part of the made hand but is still used to break ties. With one pair, two cards form the pair and the other three act as kickers, compared from the top down.
+**The higher first kicker wins. One pair uses three kickers, compared one at a time from the top — the first difference decides the pot.**
 
-### Kicker example — both hold a pair of aces
+Take the hand in the photo above:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:16px 20px;margin:20px 0">
 
 **Player A:** A♠ K♦  ·  **Player B:** A♥ 9♣
 **Board:** A♦ Q♠ 7♥ 3♣ 2♦
 
-| Player | Best Five | Top Kicker | Result |
-|--------|-----------|-----------|--------|
-| A | A♠ A♦ ==g:K♦== Q♠ 7♥ | ==g:K (hole card)== | **Wins** |
-| B | A♥ A♦ ==r:Q♠== 9♣ 7♥ | ==r:Q (board card — 9 doesn't play)== | Loses |
+| Player | Best Five | Kickers | Result |
+|--------|-----------|---------|--------|
+| A | A♠ A♦ ==g:K♦== Q♠ 7♥ | ==g:K==-Q-7 | **Wins** |
+| B | A♥ A♦ ==r:Q♠== 9♣ 7♥ | ==r:Q==-9-7 | Loses |
 
 </div>
 
-==g:K beats Q, so Player A wins.== Both flopped aces; the side card decided the pot. This is the single most common way beginners lose a hand they thought was a tie — so the *quality* of your second card matters as much as the pair itself, which is why [choosing strong starting hands](/en/blog/holdem-starting-hands-chart) is so important.
+Same pair of aces, so the kickers go head-to-head in order: ==g:K beats Q — fight over.== B's nine is still *in* the hand as the second kicker, but the comparison never gets that far.
 
-> **The trap:** Player B held a 9 but their kicker is the board's **Q**. ==r:You always build the best five from seven cards== — a high board card can outrank your hole card and take the kicker slot.
-
----
-
-## The Best-Five-of-Seven Trap
-
-![Board A♠ K♥ Q♣ J♦ 10♠ highlighted in gold — YOUR CARDS 9♥ 7♠ don't improve the Broadway straight already on board](/images/holdem-tiebreak-best5.webp "Best five of seven: the board already has Broadway, your hole cards fall out of the hand")
-
-Most tie confusion comes from one false belief: ==r:*"I have to use both of my hole cards."*== You don't. In Hold'em you use the **best five cards** out of your two hole cards plus the five community cards — two of them, one, or even none.
-
-Run this scan at showdown:
-
-1. **My best five** — what's the strongest five-card hand I can make from seven?
-2. **Their best five** — same rank, or higher?
-3. **The made cards** — whose pair / trips / top card is higher?
-4. **The kickers** — if still tied, compare leftovers from the top.
-
-When a strong hand is already on the board, your hole cards can get pushed *out* of your best five. In those spots, ==r:"I have an ace, so I win" is wrong== — what matters is whether the ace actually lands in your final five.
+Notice B's top kicker is the **board's** queen, not the 9 they're holding. ==r:A kicker only counts if it actually lands in your best five== — a higher board card pushes your hole card down the list. It's also why the second card you start with matters as much as the ace itself: A-K and A-9 are both "a pair of aces" here, and only one of them wins ([starting hands chart](/en/blog/holdem-starting-hands-chart)).
 
 ---
 
-## Kicker Rules for Every Hand
+## Poker Tie-Breaker Rules for Every Hand
 
-Some hands use kickers; others are settled entirely by the cards that make them. The badge shows whether a kicker comes into play.
+**Each hand rank has its own comparison order — some go to kickers, others are settled entirely by the cards that make them.** The badge shows whether a kicker comes into play:
 
 :::tiebreak
 Royal Flush|Always a tie (split pot)|-No kicker
@@ -103,80 +93,134 @@ One Pair|Pair rank → 3 kickers|+Kicker
 High Card|Compare all 5, high to low|+Kicker
 :::
 
-A few that trip people up:
+The three rows that cause the most table arguments:
 
-- **Two pair:** compare the high pair, then the low pair, then the one kicker. ==KK-QQ-A beats KK-JJ-A== because queens top jacks before the kicker is even checked.
-- **Full house:** compare the trips first, then the pair — there's no kicker. ==KKK-AA beats KKK-QQ== on the pair.
-- **Straight & flush:** a straight is decided by its top card only; a flush compares all five cards but ==r:**never** by suit==.
-
-If you want the matchup that confuses players most — flush versus straight — broken down on its own, see [does a flush beat a straight](/en/blog/holdem-flush-vs-straight).
+- **Trips use two kickers, top one first.** On a board of A♣ A♥ 7♦ 5♣ 2♠, a player with A♠ J♠ makes A-A-A-==g:J==-7 and beats A♦ 10♦'s A-A-A-==r:10==-7 — the jack outranks the ten, and the shared 7 is never even checked.
+- **Full houses have no kicker.** Trips rank first, then the pair: K-K-K-A-A beats K-K-K-Q-Q on the pair.
+- **Flushes compare all five cards — ==r:never suits==.** An ace-high flush beats a king-high flush; identical ranks split. The full matchup (and the boards that fool people) is in [does a flush beat a straight](/en/blog/holdem-flush-vs-straight).
 
 ---
 
-## When a Tie Becomes a Split Pot
+## Who Wins if Both Players Have Two Pair?
 
-![Chip pile split by a gold line — both players hold K-J-3 against board A-K-Q-Q-J, identical best five, pot is chopped](/images/holdem-tiebreak-split.webp "Split pot: identical best-five hands — chips divided equally between both players")
+**Compare the higher pair, then the lower pair, then the single kicker — in that order.** Two pair carries exactly one kicker, so after the pairs themselves there's only one card left to argue about.
 
-If both players' best five cards are identical in rank, nobody wins outright — the pot is ==**split**== (also called a "chop"). The classic case is the board playing: on A♣ A♦ K♠ Q♥ J♣, everyone's best five is ==g:A-A-K-Q-J, so the pot is shared==. Suits do not break the tie, and ==any odd chip goes to the player nearest the dealer's left==.
+On a board of **K♦ 9♣ 9♠ 5♦ 2♥**, K♠ Q♦ makes K♠ K♦ 9♣ 9♠ ==g:Q♦== and K♥ J♥ makes K♥ K♦ 9♣ 9♠ ==r:J♥==. Same kings-and-nines, so the lone kicker settles it: ==g:queen over jack.==
 
-The full set of situations — and the three things players wrongly think will win a tie — are covered in the [split pot rules guide](/en/blog/holdem-split-pot-rules "thumb:/images/holdem-split-pot-hero.webp").
+Then there's the trap that decides real money — ==r:**counterfeiting**==:
+
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:16px 20px;margin:20px 0">
+
+**You:** 5♠ 4♠  ·  **Opponent:** A♣ K♦
+**Flop:** 5♦ 4♥ K♣ — your two pair (fives and fours) leads their pair of kings
+**Turn 9♠, river 9♥** — final board 5♦ 4♥ K♣ 9♠ 9♥
+
+| Player | Best Five | Hand |
+|--------|-----------|------|
+| You | ==r:9♠ 9♥== 5♠ 5♦ K♣ | Nines and fives — your fours are gone |
+| Opponent | K♦ K♣ 9♠ 9♥ A♣ | **Kings and nines — wins** |
+
+</div>
+
+The board pairing nines handed *both* players a better second pair — your fours got ==r:counterfeited==, and the only comparison left was top pair: kings over nines. The hand that led the flop loses the pot without either player improving their own cards.
+
+---
+
+## Can You Have a Higher Straight? (Where the Wheel Ranks)
+
+**Yes — straights are ranked purely by their top card, and the ace-low wheel is the lowest straight in the game.**
+
+On a board of 4♦ 3♣ 2♠ K♦ Q♥, a player with A♠ 5♠ makes the wheel: 5-4-3-2-A. A player with 6♥ 5♥ makes 6-5-4-3-2. ==r:The ace plays *low* in a wheel==, so A-2-3-4-5 sits at the very bottom of the straight ladder — ==g:the six-high straight wins.== Two straights with the same top card are identical, and identical hands split.
+
+Two things the wheel does *not* do: the ace can't wrap around the middle (Q-K-A-2-3 is nothing), and it can't be high and low at once. Flushes follow the parallel rule — all five cards compared from the top, suits irrelevant — with the details over in [flush vs straight](/en/blog/holdem-flush-vs-straight).
+
+---
+
+## Does the 5th Card Matter in Poker?
+
+**Yes — whenever the first four cards of two hands are identical, the fifth card is the whole pot.**
+
+Board **A♥ K♣ Q♦ 4♣ 2♥**, and it's A♠ 8♠ against A♦ 7♦. Both have a pair of aces. First kicker: the board's K — tie. Second kicker: the board's Q — tie. Third kicker: ==g:8 beats 7.== The literal fifth card of the hand just decided everything above it.
+
+The same logic runs quads-on-board pots: everyone shares four cards, so the fifth is the entire showdown. And it runs high-card and flush ties, where every card down to the last one is compared. The fifth card only stops mattering when the board outranks it — which is the last piece of the puzzle.
+
+---
+
+## When Your Kicker Doesn't Play — and the Pot Splits
+
+![Infographic: the board A-K-Q-J-10 is the best five for everyone, so a 9-7 hand cannot beat it and the pot is split](/images/holdem-tiebreak-best5.webp "Best five of seven: when the board is already the best hand, your hole cards fall out of it")
+
+**If your hole cards can't crack the board's own best five, they don't play — and when that's true for everyone, the pot is split.**
+
+Take the board above: A♠ K♥ Q♣ J♦ 10♠, Broadway already complete. Your 9♥ 7♠ *does* make a straight — K-Q-J-10-9 — but it's **lower** than the ace-high straight sitting on the felt, so your best five is the board itself. So is everyone else's.
+
+The subtler version is when your hand plays but your kicker doesn't. Board A♥ K♣ Q♦ J♠ 9♥: A♠ 3♠ against A♦ 2♦. Both pair the ace, and both kicker slots fill from the board — A-A-K-Q-J for each player. The 3 and the 2 are dead weight; identical best fives, ==g:chop.==
+
+![Infographic: on an A-K-Q-J-9 board, A-3 and A-2 both play A-A-K-Q-J, so the identical hands split the pot](/images/holdem-tiebreak-split.webp "When best fives match rank for rank, the pot is divided — suits never break the tie")
+
+Spotting these runouts before the river bet is a skill of its own — that's [reading the board](/en/blog/holdem-reading-the-board). And what happens to the chips once hands tie — equal shares, the odd chip, three-way chops, all-in side pots — is all in the [split pot rules guide](/en/blog/holdem-split-pot-rules "thumb:/images/holdem-split-pot-hero.webp").
 
 ---
 
 :::readnext[Keep reading]
-/en/blog/holdem-hand-rankings | Poker Hand Rankings | /images/holdem-hand-rankings-hero.webp
-/en/blog/holdem-flush-vs-straight | Does a Flush Beat a Straight? | /images/holdem-flush-vs-straight-hero.webp
+/en/blog/holdem-kicker | What Is a Kicker in Poker? | /images/holdem-kicker-hero.webp
+/en/blog/holdem-split-pot-rules | When Is a Pot Split? | /images/holdem-split-pot-hero.webp
 :::
 
 ## FAQ
 
-**Q. Who wins if both players have the same pair?**
+**Q. How are ties broken in poker?**
 
-A. The player with the higher kicker wins; if the first kicker ties, compare the next, and so on. If all five cards match, the pot is split.
+A. In a fixed order: hand rank first, then the cards that make the hand (the higher pair, trips, or top card), then the kickers from highest to lowest. If all five cards match in rank, the pot is split — suits are never used.
 
-**Q. What is a kicker in poker?**
+**Q. Who wins if two players have the same pair?**
 
-A. A kicker is a card in your best five-card hand that isn't part of the made hand but is used to break ties between equal hands, such as two players holding the same pair.
+A. The player whose best five has the higher kicker. One pair carries three kickers, compared from the top down — the first difference wins the pot. If all three match, it's a split.
+
+**Q. Who wins if both players have two pair?**
+
+A. Compare the higher pair first, then the lower pair, then the single kicker. Aces-and-threes beats kings-and-queens, because the top pair is checked before anything else.
+
+**Q. Does the 5th card matter in poker?**
+
+A. Yes. When the first four cards of both hands are identical, the fifth card decides the whole pot — a pair's third kicker, a flush's lowest card, the side card to quads on the board. It only stops mattering when the board's cards outrank your hole card.
+
+**Q. Can you use an ace as a 1 in poker?**
+
+A. Yes, but only in the A-2-3-4-5 straight (the "wheel"), where it plays as the lowest card — which makes the wheel the lowest straight in the game. The ace can't wrap around the middle: Q-K-A-2-3 is not a straight.
+
+**Q. Can you have a higher straight than another player?**
+
+A. Yes — straights are ranked purely by their top card, so 6-5-4-3-2 beats the A-5 wheel, and Broadway (A-K-Q-J-10) beats them all. Equal top cards mean identical straights and a split pot.
 
 **Q. Do suits ever break a tie in Texas Hold'em?**
 
-A. No. There is no suit ranking in Hold'em, so if two best five-card hands are identical in rank, the pot is split regardless of suit.
+A. No. There is no suit ranking in Hold'em — if two best five-card hands match rank for rank, the pot is split regardless of suits.
 
-**Q. Does a higher kicker always win?**
+**Q. What happens if both players have the exact same hand?**
 
-A. Only if the kicker is part of your best five-card hand. If the board provides higher kickers than your hole cards, your kicker doesn't play and the hands may tie.
-
-**Q. Do straights and flushes use kickers?**
-
-A. Straights are decided by the highest card with no kicker. Flushes compare all five cards from the top, so the lower cards act like kickers — but suit is never used.
-
-**Q. Who wins if both players have the same two pair?**
-
-A. Compare the higher pair first, then the lower pair, then the single kicker. K-K-9-9 with a Q kicker beats K-K-9-9 with a J kicker. If all five cards match, the pot is split.
-
-**Q. What happens if two players have the same straight or flush?**
-
-A. A straight is ranked only by its highest card, so matching top cards mean a split. A flush compares all five cards from the top down; if every rank matches, the pot is split — suit never breaks it.
-
-**Q. Can three players split one pot?**
-
-A. Yes. If three players all have the identical best five-card hand, the pot is divided three ways, with any odd chips given to the earliest players clockwise from the dealer.
+A. The pot is split equally — a "chop." How the chips are physically divided, who gets the odd chip, and how side pots are settled is covered in the [split pot rules](/en/blog/holdem-split-pot-rules).
 
 ---
 
 ## The Takeaways
 
-1. Tie-breaking is always: ==**hand rank → made cards → kickers → split**==.
-2. A **kicker** breaks ties between equal hands; ==r:guard it== — most "same hand" losses come down to one side card.
-3. Build the ==g:**best five of seven**== — your hole cards can fall out of the hand, and suits never decide a tie.
+1. Every tie runs the same procedure: ==**hand rank → made cards → kickers → split**== — no exceptions, no suits.
+2. A kicker only counts if it ==g:makes your best five== — board cards can replace it, and a double-paired board can counterfeit your two pair entirely.
+3. Straights rank by their top card (the wheel is the lowest), flushes compare all five — and when nothing separates the hands, the pot is chopped.
 
-Lock in the order with the [complete hand rankings](/en/blog/holdem-hand-rankings), settle the famous matchup in [flush vs straight](/en/blog/holdem-flush-vs-straight), and see exactly when chips get shared in the [split pot guide](/en/blog/holdem-split-pot-rules).
+Lock in the full order with the [complete hand rankings](/en/blog/holdem-hand-rankings), get the side card itself down in [what is a kicker](/en/blog/holdem-kicker), and see exactly how tied pots get divided in the [split pot guide](/en/blog/holdem-split-pot-rules).
 
 ---
 
 ## Related Posts
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
+  <a href="/en/blog/holdem-kicker" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Kicker</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">What Is a Kicker in Poker?</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">The side card itself — which hands have one and how many</div>
+  </a>
   <a href="/en/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Hand Rankings</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Poker Hand Rankings — Best to Worst</div>
@@ -185,7 +229,7 @@ Lock in the order with the [complete hand rankings](/en/blog/holdem-hand-ranking
   <a href="/en/blog/holdem-flush-vs-straight" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Hand Matchup</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Does a Flush Beat a Straight?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Math, board spots, and tie-break rules for the #1 confusion</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Math, board spots, and tie cases for the #1 confusion</div>
   </a>
   <a href="/en/blog/holdem-split-pot-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Split Pot</div>

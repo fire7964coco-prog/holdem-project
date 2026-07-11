@@ -2,187 +2,227 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "holdem-reading-the-board",
-  title: "How to Read the Board in Texas Hold'em: Find Your Best 5-Card Hand Every Time",
-  seoTitle: "Stared at the Board and Still Confused? — How to Find Your Best 5 Cards in Hold'em",
-  desc: "Learn how to read the Hold'em board and find your best 5-card hand from 7. Covers wet vs dry boards, playing the board, flush draws, and common beginner mistakes.",
-  tldr: "You always use the best 5 cards from your 2 hole cards plus 5 community cards (7 total). You can use both hole cards, one, or even none (playing the board). Always check all 7 cards together — not just your hole cards — to spot pairs, straights, flushes, and more.",
+  title: "How to Read the Board in Hold'em: Your Best 5 Cards From 7",
+  seoTitle: "Which 5 Cards Play? — How to Read the Board in Hold'em",
+  desc: "River's out and you still can't tell what you have? Read any Hold'em board fast: your best 5 cards from 7, board straights and flushes, and playing the board.",
+  tldr: "In Texas Hold'em you always play the best 5-card hand from 7 (2 hole cards + 5 community cards) — using both hole cards, one, or none at all (playing the board). Scan all 7 cards in a fixed order: flush → straight → paired ranks → high card.",
   category: "초보 가이드",
   date: "2026-06-15",
-  updated: "2026-07-02",
+  updated: "2026-07-11",
   keepImagesInBody: true,
-  readTime: "10 min",
+  readTime: "11 min",
   emoji: "🃏",
   tags: [
-    "how to read the board in texas holdem",
-    "how to find best 5 card hand from 7 cards",
+    "how to read the board in poker",
+    "best 5 card hand from 7 cards",
     "playing the board texas holdem",
-    "wet board poker meaning",
-    "dry board poker",
+    "can you have a flush and a pair",
+    "the nuts in poker",
+    "wet board vs dry board",
+    "paired board poker",
   ],
   image: "/images/holdem-reading-the-board-hero.webp",
   imageAlt: "Texas Hold'em board reading — 5 community cards on dark felt with gold arrows showing which cards combine for best 5-card hand",
   content: `
-River hits. You stare at the board for 10 seconds. You look at your two cards. You look at the board again.
+The first time a dealer read my hand better than I did, I was tabling what I thought was ace high. "Straight," she announced, pushing me a pot I had mentally given up — my 8-6 had quietly connected with three board cards while I was busy mourning a missed flush draw.
 
-You still don't know if you have a good hand.
+==The cards speak, but only if you can read them.== Looking at 7 cards and instantly knowing your best 5 is the single most practical skill a new Hold'em player can train — and it's a method, not a talent. This guide is that method.
 
-==This moment is more common than anyone admits at the table.== Reading the board — figuring out what you actually have from 7 cards — is a skill that separates beginners who guess from players who know. This guide walks through exactly how to find your best 5 cards every time.
+---
 
-## How to Find Your Best 5-Card Hand From 7 Cards
+### The Short Answer
 
-In Texas Hold'em, you are dealt 2 hole cards. The community cards add up to 5. You always play the best possible ==5-card combination== from those 7 cards.
+:::stripe
+5 | cards you always play — never more, never fewer
+3 | ways to use your hole cards: both, one, or none
+4 | scan steps: flush → straight → paired ranks → high card
+:::
 
-The 3 combinations:
-- **Use both hole cards** — most common; your hand connects with the board
-- **Use one hole card** — your strongest card pairs with part of the board
-- **Use neither hole card (playing the board)** — the 5 community cards themselves are the best hand you can make
+> **Quick answer**
+> Your final hand is the ==best 5-card combination== you can build from your 2 hole cards plus the 5 community cards. You may use both hole cards, just one, or none at all ("playing the board"). Scan all 7 cards in a fixed order — flush, straight, paired ranks, high card — then place what you find on the ladder of [poker hand rankings](/en/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp").
 
-<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
+---
+
+## How to Make the Best 5-Card Hand From 7 Cards
+
+In Texas Hold'em you are dealt 2 hole cards, and the board eventually shows 5 community cards. Out of those 7, ==you play exactly 5 — the strongest 5 available==. There are only three ways it can go:
+
+| How many hole cards you use | What it looks like | How common |
+|------|------|------|
+| **Both** | Your two cards connect with three board cards | Most common |
+| **One** | One card pairs or completes something; the other sits out | Very common |
+| **None ("playing the board")** | The 5 community cards are already your best 5 | Rare |
+
+Three quick examples, fully worked out:
 
 | Your hole cards | Board | Best 5 cards | Hand |
 |----------------|-------|-------------|------|
-| A♠ K♥ | Q♦ J♣ T♠ 2♦ 7♣ | A K Q J T | Broadway straight (ace-high) |
-| 7♦ 2♣ | A♠ K♠ Q♠ J♠ T♠ | A K Q J T (board) | Playing the board — royal flush |
-| 9♥ 9♦ | 9♠ 2♦ J♣ 5♥ K♣ | 9♥ 9♦ 9♠ K♣ J♣ | Three nines with K-J kickers |
+| A♠ K♥ | Q♦ J♣ T♠ 2♦ 7♣ | A-K-Q-J-T | Broadway straight (both hole cards play) |
+| 9♥ 9♦ | 9♠ 2♦ J♣ 5♥ K♣ | 9-9-9-K-J | Three nines, K and J kickers |
+| 7♦ 2♣ | A♠ K♠ Q♠ J♠ T♠ | The board itself | Royal flush — playing the board |
 
-</div>
-
-==g:Always check all 7 cards before deciding your hand.== The mistake beginners make is looking at only their hole cards and missing what the board is doing.
+==g:Always read all 7 cards together before deciding what you have.== The classic beginner error is staring at the two hole cards and never noticing what the board built around them. Which side card counts when hands are close is its own topic — that's the [kicker](/en/blog/holdem-kicker), and it decides more pots than most players think.
 
 ---
 
-## What Is "Playing the Board" in Texas Hold'em?
+## How to Read the Board in 4 Steps
 
-Playing the board means ==your two hole cards add nothing — the 5 community cards are already your best 5-card hand==.
+This is the exact scan I run on every river, in this order — from the hardest hand to spot down to the easiest:
 
-Example: Board is A♠ K♠ Q♠ J♠ T♠. That's a royal flush. You hold 5♥ 3♦. Your best hand is the royal flush on the board.
+:::steps
+Check for a flush | Count suits across all 7 cards. Any suit appearing 5+ times = flush. This is the hand beginners miss most.
+Check for a straight | Line up all 7 ranks mentally and look for 5 in a row. Ace counts high or low, never both.
+Check paired ranks | Pairs, trips, full houses, quads — match ranks between your hand and the board.
+Take the highest | Whatever the strongest thing you found is, that's your hand. Add the highest remaining cards until you hold exactly 5.
+:::
 
-The catch: ==r:every active player is also playing the board==. If nobody has a card that improves on those 5 community cards, the pot is chopped equally between all remaining players.
+Walk-through: you hold A♥ 5♥ and the board reads A♦ 7♦ 4♠ T♣ 2♠.
 
-To win by playing the board outright, you need the community cards to already be the best possible 5-card hand, and no opponent to hold a card that beats it. In most cases, playing the board means a [split pot](/en/blog/holdem-split-pot-rules), not a win.
+- **Flush?** Hearts 2, diamonds 2, spades 2, clubs 1 — no.
+- **Straight?** Ranks A-T-7-5-4-2 — no five in a row (the wheel A-2-3-4-5 misses a 3).
+- **Paired ranks?** Yes — A♥ + A♦.
+- **Best 5:** A-A-T-7-5. ==One pair of aces with T-7-5 behind it — not "a pair of aces and that's it."== Those three side cards decide ties.
 
----
-
-## Wet Boards vs Dry Boards — What's the Difference?
-
-The "texture" of the board tells you how many possible strong hands can be out there.
-
-<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
-
-| Board type | Characteristics | Example | Risk level |
-|-----------|----------------|---------|------------|
-| ==Dry board== | No flush draws, no straight draws, disconnected ranks | K♠ 7♦ 2♣ | Low — fewer strong draws possible |
-| ==Wet board== | Multiple draws present — flush, straight, or both | J♥ T♥ 8♣ | High — many hands can complete |
-| ==Semi-wet== | One draw type present | A♠ Q♦ 5♠ | Medium |
-| ==Paired board== | One rank appears twice | K♣ K♦ 7♠ | Changes hand values — full house possible |
-
-</div>
-
-A **dry board** like K♠ 7♦ 2♣ rainbow (three different suits) has almost no draws. If you have top pair here, you are in strong shape.
-
-A **wet board** like J♥ T♥ 8♣ is loaded. Any heart could complete a flush. Any 9, 7, or Q could complete a straight. If you flopped two pair here, ==you need to bet big to protect against draws==.
-
-![Dry board vs wet board in Texas Hold'em — K72 rainbow (dry) vs JT8 two-tone (wet) with flush and straight draw arrows](/images/holdem-reading-dry-vs-wet-board.webp)
-
-==g:Reading the board texture is the starting point for all poker decisions.==
+:::tip[You always play exactly 5 cards — if you made a straight AND hold a pair, the straight is your hand. Poker never adds them together.]:::
 
 ---
 
-## How to Spot a Flush on the Board
+## What Does "Playing the Board" Mean in Poker?
 
-A flush requires 5 cards of the same suit. With 5 community cards visible, check:
+Playing the board means ==your hole cards add nothing — the 5 community cards are already the best 5-card hand you can make==.
 
-**Are there 3 or more cards of the same suit on the board?**
+Board: A♠ A♦ A♣ 7♥ 7♦ — a full house, aces full of sevens. You hold K♣ Q♣. Test it: keeping the full house (A-A-A-7-7) beats any 5-card combo using your king or queen (A-A-A-K-7 is only three of a kind). ==Your best hand is the board itself.==
 
-- 3 suited cards on the flop = **flush draw possible** (anyone holding 2 cards of that suit has a made flush if a 4th suit card hits)
-- 4 suited cards by the turn = **anyone with ONE card of that suit has a flush**
-- 5 suited cards on the board = the flush is on the board itself (playing the board flush — likely a split pot)
+Here's the part that matters for your stack: ==r:the board belongs to everyone still in the hand==. If nobody can improve on it, the pot is chopped — the full mechanics are in the [split pot rules](/en/blog/holdem-split-pot-rules "thumb:/images/holdem-split-pot-hero.webp"). But before you assume a chop, ask who CAN beat the board:
 
-![NOT A FLUSH — holding A♠ with only 3 spades on the board does not make a flush in Texas Hold'em](/images/holdem-reading-flush-draw-mistake.webp)
+- Anyone holding the last **A♥** has four aces.
+- Anyone holding the last two sevens (**7♠ 7♣**) has four sevens.
+- Anyone holding a pocket pair **8-8 through K-K** has a bigger full house.
 
-==r:Common beginner error: holding A♠ on a board of 2♠ 5♠ 9♥ J♥ T♠ and thinking you have a flush.== You need 5 cards of the same suit. The board has only three spades (2♠ 5♠ T♠); even with your A♠ that is just four — you have high card ace, not a flush.
-
-To have a flush you need to contribute at least 1 card to hit 5 total of one suit.
+==g:"Can the board be the best hand?" Yes — and when it is, showdown is about who improves on it, not who holds prettier cards.== On a board like A-K-Q-J-T of one suit (a royal flush), nobody can improve on it, so every remaining player splits.
 
 ---
 
 ## How to Spot a Straight on the Board
 
-A straight is 5 consecutive ranks. Check if any 5 cards from your 7 form a sequence.
+A straight is 5 consecutive ranks. The reliable method: ==list all 7 ranks from high to low and look for any 5 in a row==.
 
-A simple method: ==list all 7 cards by rank, then look for 5 in a row==.
-
-Example: You hold 8♦ 6♣. Board: 7♥ 5♠ 4♣ K♦ 2♠.
-
-Your 7 cards ranked: K, 8, 7, 6, 5, 4, 2.
-Is there 5 in a row? 8-7-6-5-4. Yes — you have an 8-high straight.
+You hold 8♦ 6♣. Board: 7♥ 5♠ 4♣ K♦ 2♠. Ranks in order: K, 8, 7, 6, 5, 4, 2. There it is — ==8-7-6-5-4, an eight-high straight== — even though your two hole cards look like junk side by side.
 
 ![8-high straight in Texas Hold'em — 7 cards spread with 8-7-6-5-4 highlighted in gold showing the made straight](/images/holdem-reading-straight-example.webp)
-
-<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Hold | Board | Straight? |
 |------|-------|-----------|
 | 8♦ 6♣ | 7♥ 5♠ 4♣ K♦ 2♠ | Yes — 8-7-6-5-4 |
 | J♠ 9♣ | T♥ 8♦ 7♠ 2♣ K♥ | Yes — J-T-9-8-7 |
-| A♥ 3♦ | 2♠ 4♣ 5♥ 9♦ K♠ | Yes — A-2-3-4-5 (wheel) |
-| K♥ Q♦ | J♠ T♣ 8♥ 3♦ 2♠ | No — K-Q-J-T-8 has a gap |
+| A♥ 3♦ | 2♠ 4♣ 5♥ 9♦ K♠ | Yes — A-2-3-4-5 (the wheel) |
+| K♥ Q♦ | J♠ T♣ 8♥ 3♦ 2♠ | No — K-Q-J-T needs a 9 or an ace |
 
-</div>
+Two ace questions that trip people up constantly:
 
-==g:Ace can be used as high (A-K-Q-J-T) or low (A-2-3-4-5, called a "wheel").== Ace-low straight (wheel) is the weakest straight — it loses to 2-3-4-5-6.
+- **Can you use an ace in a straight?** Yes, at either end: high in A-K-Q-J-T (Broadway) or low in A-2-3-4-5 (the wheel — the lowest straight there is).
+- **Can a straight wrap around?** ==r:No. K-A-2-3-4 is not a straight — it's just ace high.== Hold A♦ 2♦ on K♠ Q♥ 3♣ 4♦ 9♠ and you have no pair, no straight, nothing but A-K-Q-9-4.
+
+When two straights collide, the higher top card wins — the full ladder of who-beats-whom lives in the [tie-breaker rules](/en/blog/holdem-tiebreak-rules).
 
 ---
 
-## The Board is Paired — What Does That Mean?
+## How to Spot a Flush on the Board
 
-When two or more community cards share the same rank, ==full houses and quads become possible==.
+A flush needs 5 cards of one suit among your 7. The board tells you instantly whether one is even possible:
+
+| Suited cards on board | What it means |
+|------|------|
+| 0–2 | No flush possible for anyone |
+| 3 | Anyone holding 2 of that suit has a flush |
+| 4 | Anyone holding just 1 of that suit has a flush |
+| 5 | The board itself is a flush — one higher card of that suit in your hand improves it |
+
+![NOT A FLUSH — holding A♠ with only 3 spades on the board does not make a flush in Texas Hold'em](/images/holdem-reading-flush-draw-mistake.webp)
+
+==r:The classic misread: holding A♠ 4♦ on a board of 2♠ 5♠ 9♥ J♥ T♠ and announcing a flush.== Count it: the board has three spades (2♠ 5♠ T♠), your ace makes four. ==Four is not five.== Your actual hand is ace high — A-J-T-9-5 — and it feels terrible to learn that after you've called a river bet.
+
+The reverse trap matters just as much: on a 4-flush board you hold ZERO of that suit, but any opponent with a single card of it has you beat. And if you're weighing a made flush against a made straight, [flush beats straight, always](/en/blog/holdem-flush-vs-straight).
+
+---
+
+## What a Paired Board Changes — Trips, Boats, and Quads
+
+The moment two community cards share a rank, ==the ceiling of the hand jumps: trips, full houses, and quads are all live==.
 
 Board: K♣ K♦ 7♠ 3♥ 2♣
 
-If you hold K♥ 9♦ — you have three kings. If you hold 7♥ 7♦ — you have a full house, sevens full of kings.
+| You hold | Your best 5 | Hand |
+|------|------|------|
+| K♥ 9♦ | K-K-K-9-7 | Three kings (one hole card plays) |
+| 7♥ 7♦ | 7-7-7-K-K | Full house, sevens full of kings |
+| A♠ Q♦ | K-K-A-Q-7 | Just one pair — the board's kings — with A-Q behind |
 
-Paired boards dramatically change hand strength. ==r:Top pair is much weaker on a paired board== because opponents can hold trips, full houses, or quads.
+Notice the last row: ==even with nothing, the board's pair is part of your hand==. "Does a pair on the board count?" — yes, for everyone at once. That's why top pair shrinks on paired boards: any king in someone's hand is trips, any 7-7 is a boat, and your one pair is suddenly third-best.
 
-Also: ==if the board itself is paired (two kings), any opponent holding one king has trips.== This is why paired boards generate more action — and more coolers. When you see a paired board, re-evaluate your hand's strength against possible boats.
-
----
-
-## How to Quickly Figure Out Your Best Hand (Step-by-Step)
-
-Use this checklist every time you see all 5 community cards:
-
-**Step 1:** Do you have a flush? → Count suited cards across all 7. If any suit appears 5+ times, check if you contribute.
-
-**Step 2:** Do you have a straight? → List all 7 ranks, look for 5 consecutive.
-
-**Step 3:** Do you have pairs, trips, quads, or a full house? → Look for matching ranks across your hand and the board.
-
-**Step 4:** If none of the above — your best hand is probably high card or one/two pair using your highest cards with the highest board cards.
-
-**Step 5:** Out of all possible hands you identified, ==your best hand is the strongest one== — whichever sits highest on the [poker hand rankings](/en/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp").
-
-You always play exactly 5 cards. If you have a straight AND a pair — the straight wins. You don't combine them.
+==g:Paired board = re-read the hand from scratch before putting chips in.==
 
 ---
 
-## Board Reading Mistakes That Cost Beginners Money
+## Can You Have a Flush and a Pair at the Same Time?
 
-### Mistake 1: Missing a straight you already have
+You can HOLD both — you can never PLAY both. ==A poker hand is exactly 5 cards, so overlapping combinations don't stack; you simply play the stronger one.==
 
-You're tunnel-visioned on your pair. Meanwhile, you've quietly made a straight with the board. ==Always check for straights even when you already have a pair.==
+- You hold A♠ K♠ on Q♠ 7♠ 2♠ K♦ 3♣. You've made a pair of kings AND five spades. Your hand is the ==nut flush, A♠ K♠ Q♠ 7♠ 2♠== — the pair of kings simply never comes up.
+- You hold 8♥ 8♦ on 7♣ 6♦ 5♠ 4♥ K♦. Pair of eights AND 8-7-6-5-4. Your hand is the ==eight-high straight== — announce that, not "a pair with a straight."
 
-### Mistake 2: Thinking four suited cards on the board means you have a flush
+Same logic answers "can you have three pairs?" — you might hold three paired ranks across 7 cards, but only the best two fit into 5 cards (covered in the [hand rankings guide](/en/blog/holdem-hand-rankings)).
 
-If the board shows 4 spades, you only need ONE spade in your hand to have a flush. But ==if you have zero spades, you don't have a flush== — and any opponent with even one spade beats you with a spade-high flush.
+---
 
-### Mistake 3: Forgetting that board cards are shared
+## What Is the Best Possible Hand? Reading the Nuts
 
-A beginner folds a strong hand thinking their opponent "must have" a flush because of three clubs on the board. But ==everyone sees the same board==. Those clubs help your opponent only if they hold clubs in their hand.
+Strong players run one more scan: not "what do I have?" but ==**"what is the best hand ANYONE could have on this board?"**== That hand is called the nuts (more table slang like this in the [poker glossary](/en/blog/holdem-glossary)).
 
-### Mistake 4: Not checking for a full house on a paired board
+Board: Q♣ 9♥ 6♣ 5♦ 2♠
 
-You have a flush. There are two queens on the board. You miss that your opponent holding Q-X has three queens — a full house. Full house beats flush. ==Paired board = always check for boats before congratulating yourself.==
+1. **Flush possible?** Only two clubs — no. Nobody on earth has a flush here.
+2. **Board paired?** No — so no full houses or quads exist either.
+3. **Best straight?** The board's 9-6-5 plus 8-7 in the hole makes 9-8-7-6-5. Nothing higher connects.
+
+So the nuts is ==8-7 — a nine-high straight==, and even pocket queens (top set) loses to it. Running this 3-question check on every river tells you whether your "strong" hand is actually the ceiling or just furniture.
+
+---
+
+## Wet Board vs Dry Board: Reading the Texture
+
+Once you can read your own hand, the same scan tells you how dangerous the board is for everyone — what players call texture.
+
+:::compare
+Dry board — K♠ 7♦ 2♣ | Wet board — J♥ T♥ 8♣
+Three suits, no touching ranks | Two hearts + connected ranks
+No flush or straight draw exists | Flush draws and straight draws everywhere
+Top pair is a genuinely strong hand | Top pair is fragile — many rivers beat it
+:::
+
+![Dry board vs wet board in Texas Hold'em — K72 rainbow (dry) vs JT8 two-tone (wet) with flush and straight draw arrows](/images/holdem-reading-dry-vs-wet-board.webp)
+
+On J♥ T♥ 8♣, any heart, any 9, any 7, and any Q changes who's winning. On K♠ 7♦ 2♣, almost nothing does. ==Same pair, completely different pressure== — that's why the scan-order habit (flush → straight → pairs) doubles as your danger radar.
+
+---
+
+## Board Reading Mistakes That Cost Real Money
+
+### Mistake 1 — Missing a straight you already made
+
+Tunnel vision on your pair or busted draw. My 8-6 story at the top of this page is exactly this — ==check for straights even when you think you know what you have==. The dealer will catch it at showdown; your stack prefers YOU catch it before folding.
+
+### Mistake 2 — Counting four suited cards as a flush
+
+Four spades among your 7 is ace high, not a flush. And the mirror image: board 9♠ 6♠ 3♠ Q♠ J♦ with A♥ K♥ in hand gives you A-K-Q-J-9 — high card only — while ==any opponent holding a single spade has a flush==.
+
+### Mistake 3 — Forgetting the board is shared
+
+Beginners fold to "he must have a club" on a three-club board — but those clubs help an opponent only if his HOLE cards are clubs. Everyone rents the same board; ==only hole cards make anyone's hand different from yours==.
+
+### Mistake 4 — Ignoring the boat on a paired board
+
+You river a flush, the board shows two queens, and you never ask the question. Any Q-x has trips; any pocket pair matching the board has a full house — and ==full house beats flush==. Paired board + big bet = check for boats before you celebrate.
 
 ---
 
@@ -193,29 +233,47 @@ You have a flush. There are two queens on the board. You miss that your opponent
 
 ## FAQ
 
-**Q. How do you find the best 5-card hand from 7 cards in Texas Hold'em?**
+**Q. How do you figure out your best 5-card hand from 7 cards?**
 
-A. You check all possible combinations of 5 cards from your 2 hole cards and 5 community cards. You can use both hole cards, just one, or none at all. You then compare all combinations and play the single strongest 5-card hand — typically the one containing the highest hand ranking (flush over straight, full house over flush, etc.).
+A. Scan all 7 cards (2 hole + 5 board) in a fixed order: flush first (any suit 5+ times), then straight (5 ranks in a row), then paired ranks (pairs, trips, full houses, quads). Take the strongest thing you find and fill up to exactly 5 cards with your highest remaining cards. You may use both hole cards, one, or none.
 
-**Q. What does "playing the board" mean in poker?**
+**Q. What does "playing the board" mean in Texas Hold'em?**
 
-A. Playing the board means your two hole cards don't improve on the 5 community cards. The board's 5 cards alone form the best hand available to you. For example, if the board is A-K-Q-J-T all spades (royal flush), every player still in the hand is playing the board. In most cases this results in a split pot since all players share the same best hand.
+A. It means the 5 community cards are already your best possible 5-card hand — neither hole card improves on them. Since the board is shared, every player can claim that same hand, so playing the board usually leads to a split pot unless an opponent's hole cards improve on the board.
 
-**Q. What is a wet board in poker?**
+**Q. Can the board be the best hand for everyone?**
 
-A. A wet board has multiple drawing possibilities — flush draws, straight draws, or both — making it dangerous to hold one-pair hands. Example: J♥ T♥ 8♣ is very wet. Any 9 makes a straight, any heart can make a flush. A dry board (K♠ 7♦ 2♣) has no realistic draws, making top pair much more secure.
+A. Yes. If the board itself is the best 5-card hand and no player's hole cards improve it — say the board shows a royal flush — all remaining players split the pot equally. But check first: on a board full house like A-A-A-7-7, a player holding the last ace (quad aces), the last two sevens (quad sevens), or a big pocket pair (bigger boat) beats the board.
 
-**Q. How do I know if the board has a flush?**
+**Q. Can you have a flush and a pair at the same time?**
 
-A. Count how many cards of each suit are on the board. If 3 suited cards appear on the flop, anyone holding 2 of that suit has a flush draw. If 4 suited cards appear, anyone holding even one card of that suit already has a flush. If all 5 community cards are the same suit, the board itself is a flush.
+A. You can make both from your 7 cards, but a poker hand is exactly 5 cards — so you play only the stronger one. Since a flush outranks a pair, the flush is your hand and the pair is ignored. The same rule applies to a straight plus a pair: announce the straight.
 
-**Q. Does a pair on the board affect my hand?**
+**Q. Can you use an ace in a straight?**
 
-A. Yes, significantly. A paired board (e.g., two kings in the community cards) means full houses and three-of-a-kind are possible for players holding the matching rank. Any opponent with one king has trips. This weakens one-pair hands dramatically and is why paired boards create bigger pots and more difficult decisions.
+A. Yes, at either end — high in A-K-Q-J-T (Broadway, the best straight) or low in A-2-3-4-5 (the wheel, the lowest straight). It cannot sit in the middle of a sequence.
 
-**Q. Can an ace be used as a low card in a straight?**
+**Q. Can a straight wrap around in poker?**
 
-A. Yes. Ace can be high (A-K-Q-J-T, Broadway) or low (A-2-3-4-5, "the wheel"). The wheel is the lowest possible straight. Ace cannot be used in the middle of a straight — 2-3-4-5-A-K-Q is not a valid straight.
+A. No. Sequences like K-A-2-3-4 or Q-K-A-2-3 are not straights in Texas Hold'em — the ace only connects downward from 5 or upward from ten. A "wrap-around" holding is just high card unless it makes something else.
+
+**Q. How do you know if a flush is possible on the board?**
+
+A. Count suits on the board. With 0–2 of one suit, no flush exists for anyone. With 3, a player needs two of that suit in hand; with 4, just one; with all 5, the board itself is a flush and only a higher card of that suit improves it.
+
+**Q. Does a pair on the board count as part of your hand?**
+
+A. Yes — community cards belong to every player's hand. A pair on the board counts toward your best 5 even if your hole cards miss completely. It also means opponents can hold trips or full houses, so re-evaluate one-pair hands on any paired board.
+
+---
+
+## The Takeaways
+
+1. **Exactly 5 from 7** — both hole cards, one, or none. Overlapping hands never stack; play the strongest.
+2. **Scan in order** — flush → straight → paired ranks → high card. The hands you miss are the ones the scan exists for.
+3. **Read it for everyone** — the board is shared, so the same scan reveals the nuts, the danger, and whether your hand is the ceiling or the floor.
+
+If you're still learning the game flow itself, start with the [beginner's guide to Texas Hold'em rules](/en/blog/texas-holdem-rules-for-beginners), then lock in the ladder with the [full hand rankings](/en/blog/holdem-hand-rankings).
 
 ---
 
@@ -232,10 +290,10 @@ A. Yes. Ace can be high (A-K-Q-J-T, Broadway) or low (A-2-3-4-5, "the wheel"). T
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Kicker and Tie-Breaker Rules</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Same hand rank — who actually wins?</div>
   </a>
-  <a href="/en/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Starting Hands</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Starting Hands Chart for Beginners</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Which 2 cards are worth playing?</div>
+  <a href="/en/blog/holdem-split-pot-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Split Pot</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">When Is a Pot Split?</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Chops, the odd chip, and when the board plays</div>
   </a>
 </div>
 `.trim(),

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Does a Flush Beat a Straight?</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #0B1F17; }
+  .stage {
+    width: 1200px;
+    height: 675px;
+    overflow: hidden;
+    position: relative;
+    padding: 44px;
+    background: linear-gradient(135deg, #0B1F17 0%, #13291D 100%);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .glow {
+    position: absolute;
+    left: 50%; top: 42%;
+    width: 900px; height: 520px;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(ellipse at center, rgba(46,125,70,0.28) 0%, rgba(46,125,70,0.0) 65%);
+    pointer-events: none;
+  }
+  .title {
+    position: relative;
+    color: #F2EEE3;
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  }
+  .title .q { color: #C9A227; }
+  .hands {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    gap: 64px;
+  }
+  .hand { display: flex; flex-direction: column; align-items: center; gap: 14px; }
+  .hand-label {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 4px;
+  }
+  .label-gold { color: #C9A227; }
+  .label-cream { color: #F2EEE3; opacity: 0.9; }
+  .cards { display: flex; gap: 8px; }
+  .card {
+    width: 92px; height: 132px;
+    background: #FBF8EF;
+    border-radius: 9px;
+    position: relative;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.45), inset 0 0 0 1px rgba(0,0,0,0.08);
+  }
+  .card.win { box-shadow: 0 0 0 2px rgba(201,162,39,0.55), 0 5px 14px rgba(0,0,0,0.45); }
+  .corner {
+    position: absolute;
+    top: 7px; left: 9px;
+    font-weight: 800;
+    font-size: 21px;
+    line-height: 1;
+    text-align: center;
+  }
+  .corner .s { display: block; font-size: 15px; margin-top: 1px; }
+  .pip {
+    position: absolute;
+    left: 50%; top: 53%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    line-height: 1;
+  }
+  .black { color: #1a1a1a; }
+  .red { color: #c0392b; }
+  .verdict {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+  }
+  .badge {
+    background: linear-gradient(180deg, #D8B546 0%, #C9A227 100%);
+    color: #0B1F17;
+    font-size: 26px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    padding: 12px 34px;
+    border-radius: 40px;
+    box-shadow: 0 4px 14px rgba(201,162,39,0.35);
+    white-space: nowrap;
+  }
+  .beats-line {
+    color: #F2EEE3;
+    opacity: 0.85;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    white-space: nowrap;
+  }
+  .beats-line .g { color: #C9A227; }
+  .caption {
+    position: relative;
+    color: #F2EEE3;
+    opacity: 0.8;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.3px;
+  }
+  .wordmark {
+    position: absolute;
+    right: 44px; bottom: 44px;
+    color: #C9A227;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="glow"></div>
+
+  <div class="title">Does a Flush Beat a <span class="q">Straight?</span></div>
+
+  <div class="hands">
+    <div class="hand">
+      <div class="hand-label label-gold">FLUSH</div>
+      <div class="cards">
+        <div class="card win"><div class="corner black">A<span class="s">&#9824;</span></div><div class="pip black">&#9824;</div></div>
+        <div class="card win"><div class="corner black">J<span class="s">&#9824;</span></div><div class="pip black">&#9824;</div></div>
+        <div class="card win"><div class="corner black">9<span class="s">&#9824;</span></div><div class="pip black">&#9824;</div></div>
+        <div class="card win"><div class="corner black">6<span class="s">&#9824;</span></div><div class="pip black">&#9824;</div></div>
+        <div class="card win"><div class="corner black">2<span class="s">&#9824;</span></div><div class="pip black">&#9824;</div></div>
+      </div>
+    </div>
+    <div class="hand">
+      <div class="hand-label label-cream">STRAIGHT</div>
+      <div class="cards">
+        <div class="card"><div class="corner black">9<span class="s">&#9827;</span></div><div class="pip black">&#9827;</div></div>
+        <div class="card"><div class="corner red">8<span class="s">&#9829;</span></div><div class="pip red">&#9829;</div></div>
+        <div class="card"><div class="corner red">7<span class="s">&#9830;</span></div><div class="pip red">&#9830;</div></div>
+        <div class="card"><div class="corner black">6<span class="s">&#9827;</span></div><div class="pip black">&#9827;</div></div>
+        <div class="card"><div class="corner black">5<span class="s">&#9824;</span></div><div class="pip black">&#9824;</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="verdict">
+    <div class="badge">FLUSH WINS</div>
+    <div class="beats-line"><span class="g">&#9824; Flush</span> &rarr; beats &rarr; Straight</div>
+  </div>
+
+  <div class="caption">A flush is rarer than a straight &mdash; so it always wins.</div>
+
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

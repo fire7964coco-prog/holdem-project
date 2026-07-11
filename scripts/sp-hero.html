@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>When the Board Plays, the Pot Splits</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #0B1F17; }
+  .stage {
+    width: 1200px;
+    height: 675px;
+    overflow: hidden;
+    position: relative;
+    padding: 44px;
+    background: linear-gradient(135deg, #0B1F17 0%, #13291D 100%);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .glow {
+    position: absolute;
+    left: 50%; top: 40%;
+    width: 940px; height: 540px;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(ellipse at center, rgba(46,125,70,0.28) 0%, rgba(46,125,70,0.0) 65%);
+    pointer-events: none;
+  }
+  .title {
+    position: relative;
+    color: #F2EEE3;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  }
+  .title .g { color: #C9A227; }
+  .board-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .group-label {
+    color: #C9A227;
+    font-size: 19px;
+    font-weight: 800;
+    letter-spacing: 4px;
+  }
+  .cards { display: flex; gap: 12px; }
+  .card {
+    width: 100px; height: 144px;
+    background: #FBF8EF;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 0 0 2px rgba(201,162,39,0.45), 0 6px 14px rgba(0,0,0,0.45);
+  }
+  .corner {
+    position: absolute;
+    top: 8px; left: 10px;
+    font-weight: 800;
+    font-size: 23px;
+    line-height: 1;
+    text-align: center;
+  }
+  .corner .s { display: block; font-size: 16px; margin-top: 1px; }
+  .pip {
+    position: absolute;
+    left: 50%; top: 53%;
+    transform: translate(-50%, -50%);
+    font-size: 56px;
+    line-height: 1;
+  }
+  .black { color: #1a1a1a; }
+  .red { color: #c0392b; }
+  .players {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 56px;
+  }
+  .player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background: rgba(0,0,0,0.22);
+    border: 1px solid rgba(242,238,227,0.14);
+    border-radius: 14px;
+    padding: 14px 22px 16px;
+  }
+  .player-label {
+    color: #F2EEE3;
+    opacity: 0.85;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+  }
+  .cards-sm { display: flex; gap: 8px; }
+  .card-sm {
+    width: 72px; height: 102px;
+    background: #FBF8EF;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.45), inset 0 0 0 1px rgba(0,0,0,0.08);
+  }
+  .corner-sm {
+    position: absolute;
+    top: 5px; left: 7px;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 1;
+    text-align: center;
+  }
+  .corner-sm .s { display: block; font-size: 12px; margin-top: 1px; }
+  .pip-sm {
+    position: absolute;
+    left: 50%; top: 54%;
+    transform: translate(-50%, -50%);
+    font-size: 38px;
+    line-height: 1;
+  }
+  .badge {
+    background: linear-gradient(180deg, #D8B546 0%, #C9A227 100%);
+    color: #0B1F17;
+    font-size: 27px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    padding: 14px 36px;
+    border-radius: 44px;
+    box-shadow: 0 4px 16px rgba(201,162,39,0.4);
+    white-space: nowrap;
+  }
+  .caption {
+    position: relative;
+    color: #F2EEE3;
+    opacity: 0.8;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.3px;
+  }
+  .wordmark {
+    position: absolute;
+    right: 44px; bottom: 44px;
+    color: #C9A227;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="glow"></div>
+
+  <div class="title">When the Board Plays, the Pot <span class="g">Splits</span></div>
+
+  <div class="board-wrap">
+    <div class="group-label">THE BOARD</div>
+    <div class="cards">
+      <div class="card"><div class="corner black">8<span class="s">&#9824;</span></div><div class="pip black">&#9824;</div></div>
+      <div class="card"><div class="corner red">8<span class="s">&#9829;</span></div><div class="pip red">&#9829;</div></div>
+      <div class="card"><div class="corner red">8<span class="s">&#9830;</span></div><div class="pip red">&#9830;</div></div>
+      <div class="card"><div class="corner black">A<span class="s">&#9827;</span></div><div class="pip black">&#9827;</div></div>
+      <div class="card"><div class="corner black">K<span class="s">&#9824;</span></div><div class="pip black">&#9824;</div></div>
+    </div>
+  </div>
+
+  <div class="players">
+    <div class="player">
+      <div class="player-label">PLAYER 1</div>
+      <div class="cards-sm">
+        <div class="card-sm"><div class="corner-sm black">J<span class="s">&#9824;</span></div><div class="pip-sm black">&#9824;</div></div>
+        <div class="card-sm"><div class="corner-sm red">10<span class="s">&#9829;</span></div><div class="pip-sm red">&#9829;</div></div>
+      </div>
+    </div>
+    <div class="badge">SPLIT POT</div>
+    <div class="player">
+      <div class="player-label">PLAYER 2</div>
+      <div class="cards-sm">
+        <div class="card-sm"><div class="corner-sm black">5<span class="s">&#9827;</span></div><div class="pip-sm black">&#9827;</div></div>
+        <div class="card-sm"><div class="corner-sm red">2<span class="s">&#9830;</span></div><div class="pip-sm red">&#9830;</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="caption">Both play the board&rsquo;s 8-8-8-A-K &mdash; the hole cards don&rsquo;t help.</div>
+
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

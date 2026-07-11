@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Which 5 Cards Play?</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #0B1F17; }
+  .stage {
+    width: 1200px;
+    height: 675px;
+    overflow: hidden;
+    position: relative;
+    padding: 44px;
+    background: linear-gradient(135deg, #0B1F17 0%, #13291D 100%);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .glow {
+    position: absolute;
+    left: 50%; top: 42%;
+    width: 940px; height: 540px;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(ellipse at center, rgba(46,125,70,0.28) 0%, rgba(46,125,70,0.0) 65%);
+    pointer-events: none;
+  }
+  .title {
+    position: relative;
+    color: #F2EEE3;
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  }
+  .title .g { color: #C9A227; }
+  .table-row {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    gap: 52px;
+  }
+  .group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .group-label {
+    font-size: 19px;
+    font-weight: 800;
+    letter-spacing: 4px;
+  }
+  .label-gold { color: #C9A227; }
+  .label-cream { color: #F2EEE3; opacity: 0.85; }
+  .cards { display: flex; gap: 10px; }
+  .card {
+    width: 100px; height: 144px;
+    background: #FBF8EF;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.45), inset 0 0 0 1px rgba(0,0,0,0.08);
+  }
+  .card.hot {
+    box-shadow: 0 0 0 3px #C9A227, 0 0 22px rgba(201,162,39,0.55), 0 6px 14px rgba(0,0,0,0.45);
+  }
+  .card.dim {
+    opacity: 0.35;
+    filter: grayscale(85%);
+  }
+  .corner {
+    position: absolute;
+    top: 8px; left: 10px;
+    font-weight: 800;
+    font-size: 23px;
+    line-height: 1;
+    text-align: center;
+  }
+  .corner .s { display: block; font-size: 16px; margin-top: 1px; }
+  .pip {
+    position: absolute;
+    left: 50%; top: 53%;
+    transform: translate(-50%, -50%);
+    font-size: 56px;
+    line-height: 1;
+  }
+  .black { color: #1a1a1a; }
+  .red { color: #c0392b; }
+  .badge {
+    position: relative;
+    background: linear-gradient(180deg, #D8B546 0%, #C9A227 100%);
+    color: #0B1F17;
+    font-size: 26px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    padding: 13px 36px;
+    border-radius: 44px;
+    box-shadow: 0 4px 16px rgba(201,162,39,0.4);
+    white-space: nowrap;
+  }
+  .caption {
+    position: relative;
+    color: #F2EEE3;
+    opacity: 0.8;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.3px;
+  }
+  .caption .red-c { color: #e0705a; }
+  .wordmark {
+    position: absolute;
+    right: 44px; bottom: 44px;
+    color: #C9A227;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="glow"></div>
+
+  <div class="title">Which <span class="g">5 Cards</span> Play?</div>
+
+  <div class="table-row">
+    <div class="group">
+      <div class="group-label label-gold">YOUR HAND</div>
+      <div class="cards">
+        <div class="card hot"><div class="corner red">A<span class="s">&#9829;</span></div><div class="pip red">&#9829;</div></div>
+        <div class="card hot"><div class="corner red">Q<span class="s">&#9829;</span></div><div class="pip red">&#9829;</div></div>
+      </div>
+    </div>
+    <div class="group">
+      <div class="group-label label-cream">THE BOARD</div>
+      <div class="cards">
+        <div class="card hot"><div class="corner red">K<span class="s">&#9829;</span></div><div class="pip red">&#9829;</div></div>
+        <div class="card hot"><div class="corner red">J<span class="s">&#9829;</span></div><div class="pip red">&#9829;</div></div>
+        <div class="card hot"><div class="corner black">9<span class="s">&#9827;</span></div><div class="pip black">&#9827;</div></div>
+        <div class="card dim"><div class="corner red">4<span class="s">&#9830;</span></div><div class="pip red">&#9830;</div></div>
+        <div class="card dim"><div class="corner black">2<span class="s">&#9824;</span></div><div class="pip black">&#9824;</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="badge">BEST 5 = A-K-Q-J-9</div>
+
+  <div class="caption">Your <span class="red-c">A&#9829; Q&#9829;</span> play &mdash; the board&rsquo;s 4 and 2 drop out.</div>
+
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

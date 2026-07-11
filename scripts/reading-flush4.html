@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #0B1F17; }
+  .frame {
+    position: relative;
+    width: 1200px;
+    height: 675px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #0B1F17 0%, #13291D 100%);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 44px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  /* subtle felt vignette */
+  .frame::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 38%, rgba(46,125,70,0.18) 0%, rgba(0,0,0,0) 62%);
+    pointer-events: none;
+  }
+  .header { text-align: center; position: relative; }
+  .title {
+    font-size: 46px;
+    font-weight: 800;
+    color: #F2EEE3;
+    letter-spacing: 0.5px;
+  }
+  .title .not { color: #B4462E; }
+  .title .four { color: #C9A227; }
+  .subtitle {
+    margin-top: 10px;
+    font-size: 21px;
+    font-weight: 500;
+    color: rgba(242,238,227,0.82);
+    letter-spacing: 0.3px;
+  }
+  .subtitle strong { color: #C9A227; font-weight: 700; }
+
+  .table-row {
+    display: flex;
+    align-items: flex-end;
+    gap: 46px;
+    position: relative;
+  }
+  .group { display: flex; flex-direction: column; align-items: center; }
+  .group-label {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #C9A227;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+  }
+  .cards { display: flex; gap: 14px; }
+
+  .divider {
+    width: 2px;
+    height: 150px;
+    background: linear-gradient(to bottom, rgba(201,162,39,0) 0%, rgba(201,162,39,0.45) 50%, rgba(201,162,39,0) 100%);
+    align-self: flex-end;
+    margin-bottom: 12px;
+  }
+
+  .card {
+    position: relative;
+    width: 100px;
+    height: 144px;
+    background: linear-gradient(160deg, #FDFBF4 0%, #F2EEE3 100%);
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.25);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.45);
+  }
+  .card .corner {
+    position: absolute;
+    top: 8px;
+    left: 9px;
+    line-height: 1.02;
+    text-align: center;
+    font-weight: 800;
+  }
+  .card .corner .rank { font-size: 26px; display: block; }
+  .card .corner .suit-s { font-size: 20px; display: block; }
+  .card .pip {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -46%);
+    font-size: 58px;
+    line-height: 1;
+  }
+  .black { color: #1a1a1a; }
+  .red { color: #c0392b; }
+
+  .spade-hit {
+    border: 3px solid #C9A227;
+    box-shadow: 0 0 0 2px rgba(201,162,39,0.35), 0 0 22px rgba(201,162,39,0.55), 0 6px 14px rgba(0,0,0,0.45);
+  }
+  .spade-hit::after {
+    content: "♠";
+    position: absolute;
+    top: -13px;
+    right: -11px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: #C9A227;
+    color: #0B1F17;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 26px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: linear-gradient(160deg, rgba(201,162,39,0.16) 0%, rgba(201,162,39,0.08) 100%);
+    border: 2px solid #C9A227;
+    border-radius: 999px;
+    padding: 12px 34px;
+    box-shadow: 0 0 20px rgba(201,162,39,0.25);
+  }
+  .badge .b-suit { font-size: 26px; color: #C9A227; }
+  .badge .b-text {
+    font-size: 24px;
+    font-weight: 800;
+    color: #C9A227;
+    letter-spacing: 1.5px;
+  }
+  .badge .b-text .dim { color: rgba(242,238,227,0.75); font-weight: 600; letter-spacing: 0.5px; }
+
+  .caption {
+    font-size: 20px;
+    color: #F2EEE3;
+    letter-spacing: 0.3px;
+    text-align: center;
+  }
+  .caption strong { color: #C9A227; font-weight: 700; }
+
+  .wordmark {
+    position: absolute;
+    right: 44px;
+    bottom: 44px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #C9A227;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+</style>
+</head>
+<body>
+<div class="frame">
+
+  <div class="header">
+    <div class="title"><span class="four">4 Spades</span> Is <span class="not">NOT</span> a Flush</div>
+    <div class="subtitle">A flush needs <strong>5 cards</strong> of one suit.</div>
+  </div>
+
+  <div class="table-row">
+    <div class="group">
+      <div class="group-label">Your Hand</div>
+      <div class="cards">
+        <div class="card spade-hit">
+          <div class="corner black"><span class="rank">A</span><span class="suit-s">&#9824;</span></div>
+          <div class="pip black">&#9824;</div>
+        </div>
+        <div class="card">
+          <div class="corner red"><span class="rank">4</span><span class="suit-s">&#9830;</span></div>
+          <div class="pip red">&#9830;</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="group">
+      <div class="group-label">The Board</div>
+      <div class="cards">
+        <div class="card spade-hit">
+          <div class="corner black"><span class="rank">2</span><span class="suit-s">&#9824;</span></div>
+          <div class="pip black">&#9824;</div>
+        </div>
+        <div class="card spade-hit">
+          <div class="corner black"><span class="rank">5</span><span class="suit-s">&#9824;</span></div>
+          <div class="pip black">&#9824;</div>
+        </div>
+        <div class="card">
+          <div class="corner red"><span class="rank">9</span><span class="suit-s">&#9829;</span></div>
+          <div class="pip red">&#9829;</div>
+        </div>
+        <div class="card">
+          <div class="corner red"><span class="rank">J</span><span class="suit-s">&#9829;</span></div>
+          <div class="pip red">&#9829;</div>
+        </div>
+        <div class="card spade-hit">
+          <div class="corner black"><span class="rank">10</span><span class="suit-s">&#9824;</span></div>
+          <div class="pip black">&#9824;</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="badge">
+      <span class="b-suit">&#9824;</span>
+      <span class="b-text">SPADES: 4 <span class="dim">of 5 needed</span></span>
+    </div>
+    <div class="caption">You have <strong>four spades</strong> — one short. Your hand is just <strong>ace-high</strong>.</div>
+  </div>
+
+  <div class="wordmark">&#9824;HoldemMaster</div>
+
+</div>
+</body>
+</html>
