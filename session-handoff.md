@@ -5,17 +5,18 @@
 
 ---
 
-## ▶▶▶ 새 세션 START HERE (2026-07-11 — retrofit: #1·#2·#3 배포됨 / 다음=2차 웨이브, 완전자동)
+## ▶▶▶ 새 세션 START HERE (2026-07-11 — retrofit 스프린트 11편 전량 배포 완료 / 모드=수동 1편씩 복귀)
 
-> **완전 자동화 모드** 유지([[retrofit-full-automation]]). 게이트 없이 배포까지 자동, 🔴 자동해소불가·빌드실패만 멈춤. Fable5=생성/검수(초안·매핑·§13·독립QA·이미지HTML), 메인=빌드·렌더·git. **검수는 제3 에이전트로.** 카니발 쌍은 한 커밋.
->
-> ### ✅ #3 배포 — `holdem-tournament`(A)×`holdem-tournament-vs-cash-game`(B)
-> 카니발 분리(A=구조/종류 / B=vs캐시+캐시기초). §13 A에서 **날조 WPT 예시**→실존 2024 대회 교체 등, B는 FACTS-CLEAN. 제3 QA가 **이미지 §13 대량결함** 적발→A hero 리사이즈+B 실사3개를 온브랜드 인포그래픽으로 교체. 상세=WORKLOG.
-> - **⚠️ 사이트 후속(별도 세션)**: 깨진 AI실사가 다른 글에도 잔존(tournament-table-action=betting-actions, icm-chips-not-money-real=icm, bubble-table=블랙잭). 이미지 전수 감사 필요.
-> - **사용자 몫(GSC)**: `/en/blog/holdem-tournament`·`/en/blog/holdem-tournament-vs-cash-game`.
->
-> ### ▶▶ 다음 = 2차 웨이브 (감글 retrofit, 기존 뱅크로 커버)
-> `betting-actions`·`blind-meaning`·`flush-vs-straight`·`tiebreak`·`split-pot`·`reading-board` — 뱅크 `en-can-you`·`en-what-is-a`·`en-what-beats`. 각 글 매핑→초안→§13→독립QA→배포. **제외(보류)**: 신규클러스터(PKO/Types·Cash 7필라)·이벤트가이드 4편.
+> **⚠️ 모드 전환(사용자 지시 2026-07-11)**: 완전자동 종료 → **다시 수동으로 하나씩**(게이트 복귀). [[retrofit-full-automation]]는 이 스프린트 한정이었음(메모리에 "종료" 표기). 다음 글부터는 각도 게이트→사용자 승인→진행. 워크플로우 자체(Fable5 초안·§13·제3자 QA·인포그래픽 파이프라인)는 유지, **게이트만 부활**.
+
+### ✅ retrofit 스프린트 전량 배포 (11편, 커밋 019de04→ba737c0)
+감글 retrofit: **#1** starting-hands-chart(PDF차트) · **#2** positions×position-play · **#3** tournament×tournament-vs-cash-game · **2차웨이브** blind-meaning·betting-actions·flush-vs-straight·tiebreak-rules·split-pot-rules·reading-the-board. 전부 뱅크 재타깃+카니발 분리+§13 전수검증(40+ 핸드예시 brute-force)+제3자 QA. 상세=WORKLOG 2026-07-11.
+- **사용자 몫(GSC 색인 — 11개 URL)**: `/en/blog/` + holdem-starting-hands-chart·holdem-positions·holdem-position-play·holdem-tournament·holdem-tournament-vs-cash-game·holdem-blind-meaning·holdem-betting-actions·holdem-flush-vs-straight·holdem-tiebreak-rules·holdem-split-pot-rules·holdem-reading-the-board.
+
+### ▶▶ 다음 최우선 = 🖼️ 사이트 전수 이미지 §13 감사 (이번 스프린트 핵심 발견)
+레거시 **AI생성 실사에 불가능 카드·깨진 클록글자·오카운트가 광범위**. 확인된 것만: `rules-texas-holdem`(뒤섞인 카드, 다수글 히어로/썸네일)·`tournament-table-action`(K♣5핏+"TOUNG LEVEL", betting-actions 등)·`icm-chips-not-money-real`(뭉개진 A/K)·`holdem-bubble-table`(블랙잭). **전 이미지 Read 개봉→결함목록→HTML인포그래픽/실사 교체.** 파이프라인 확립됨(`scripts/*-hero.html`+render-*.mjs, 카드렌더 CSS). 이건 수동/자동 사용자와 상의.
+### 이후 대기(보류)
+신규클러스터(PKO/Tournament Types·Cash Game 7필라)·이벤트가이드 4편 retrofit·KO 구버전 업데이트.
 
 ## (완료된 이전 진행표) 새 세션 START HERE (2026-07-11 — retrofit 스프린트: #1·#2 배포됨 / #3 진행 중, 완전자동)
 

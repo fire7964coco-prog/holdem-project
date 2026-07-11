@@ -3,6 +3,23 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-11 (retrofit 2차 웨이브 — 규칙·족보 감글 6편 리라이트·배포 + 이미지 §13 대교체)
+
+### 📚 감글 retrofit 2차 웨이브 6편 (커밋 `2cfd8da`·`ba737c0`, 배포됨)
+> 완전자동. batch1(규칙 2편) + batch2(족보/쇼다운 4편). 각: 진단+리라이트(Fable5)→§13 팩트체크(별도)→교정(메인)→독립QA→이미지수정→배포.
+- **batch1** — `holdem-blind-meaning`(정의형 뱅크: what is a blind 880/big blind 720/small blind, 전부 LDA8; 스틸전략→position-play 위임) + `holdem-betting-actions`(5액션+min-raise; 프리플랍 리레이즈 "증분룰" §13오류 교정). 둘 다 §13 FACTS-CLEAN. 이미지: betting-actions hero 배경 "7♦"=6핏(불가능)+1200×800 → "5 Betting Actions" 인포그래픽, 본문 min-raise 깨진이미지 → min-raise 룰 인포그래픽($6+$6=$12·$6+$4=$10).
+- **batch2** — `holdem-flush-vs-straight`(flush/straight 매치업) + `holdem-tiebreak-rules`(킥커/타이) + `holdem-split-pot-rules`(can you tie LDA25) + `holdem-reading-the-board`(보드읽기/베스트5). 4편 카니발 분리(첫링크=필라, 전체랭킹 위임, 풀메시 상호링크, 태그 disjoint). **§13 40+ 핸드예시 전수 brute-force 검증** 전부 통과/교정(reading에 쿼드세븐 7♠7♣ 누락 교정).
+- **★이미지 §13 대교체(핵심 발견)**: 제3 독립QA가 16개 이미지 개봉→레거시 AI실사에 **§13 카드결함 만연** 적발. 교체(HTML→Playwright 인포그래픽, 카드유효·중복없음·철자·잘림 육안검수):
+  - flush-vs-straight hero: **9♠ 양핸드 중복**(한덱 불가능) → 스트레이트 9♣로 재생성 + alt/본문표 정합
+  - tiebreak best5(5번째=Q오류)·split(홀카드 4장·6장) → 카드 인포그래픽 2종
+  - split-pot hero: 우측 홀카드 **3장**(불가능, 다수글 썸네일 재사용) → board-plays 인포그래픽; 재사용 showdown 이미지 제거
+  - reading hero: **"BEST 5"가 보드 지목**(글 핵심 반대, 실제 베스트5=홀카드 플레이) → 홀카드플레이 인포그래픽; 1200×800→675
+  - reading flush-draw: **"3 spades" 오카운트**(실제 4) → "4 of 5" 인포그래픽
+  - betting-actions hero 재생성(위)
+- **빌드 ✅ 57 blog + 77 intl**. 신규 이미지 ~10개 전부 §13-정확·<60KB·1200×675.
+- **다음(사용자 GSC 색인)**: `/en/blog/holdem-blind-meaning`·`-betting-actions`·`-flush-vs-straight`·`-tiebreak-rules`·`-split-pot-rules`·`-reading-the-board`.
+- **⚠️⚠️ 사이트 전수 후속(중요)**: 레거시 AI생성 실사에 **불가능 카드·깨진 클록글자·오카운트가 광범위**하게 존재(rules-texas-holdem, tournament-table-action, icm-chips-not-money-real, holdem-bubble-table 등, 다수 글의 히어로/썸네일). **전체 이미지 §13 감사 + 인포그래픽/실사 교체 스프린트 별도 필요.**
+
 ## 2026-07-11 (retrofit 스프린트 #3 — 토너먼트 2편 리라이트·배포 + 이미지 §13 대청소)
 
 ### 🏆 감글 retrofit 3번타자 — `holdem-tournament`(A 허브) × `holdem-tournament-vs-cash-game`(B) (배포됨)
