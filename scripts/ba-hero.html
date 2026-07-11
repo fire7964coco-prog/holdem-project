@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>The 5 Betting Actions — Hero</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body { background: #000; }
+
+  .frame {
+    position: relative;
+    width: 1200px;
+    height: 675px;
+    overflow: hidden;
+    padding: 44px 46px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:
+      radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.28), rgba(46,125,70,0) 65%),
+      radial-gradient(ellipse 700px 420px at 50% 115%, rgba(46,125,70,0.16), rgba(46,125,70,0) 60%),
+      linear-gradient(160deg, #0B1F17 0%, #13291D 100%);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #F2EEE3;
+  }
+
+  /* faint felt texture ring, decorative only */
+  .frame::before {
+    content: "";
+    position: absolute;
+    left: 50%; top: 50%;
+    width: 1400px; height: 1400px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 2px solid rgba(201,162,39,0.06);
+    box-shadow: 0 0 0 60px rgba(201,162,39,0.03), 0 0 0 140px rgba(46,125,70,0.04);
+    pointer-events: none;
+  }
+
+  .kicker {
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 6px;
+    color: #C9A227;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+
+  h1 {
+    font-size: 58px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    color: #F2EEE3;
+    text-align: center;
+    line-height: 1.08;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.45);
+  }
+  h1 .gold { color: #C9A227; }
+
+  .subtitle {
+    margin-top: 14px;
+    font-size: 22px;
+    font-weight: 400;
+    color: rgba(242,238,227,0.82);
+    text-align: center;
+    letter-spacing: 0.3px;
+  }
+
+  .divider {
+    margin-top: 22px;
+    width: 320px;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(201,162,39,0) 0%, rgba(201,162,39,0.85) 50%, rgba(201,162,39,0) 100%);
+  }
+
+  .row {
+    margin-top: 34px;
+    width: 1108px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .col {
+    width: 192px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .chip {
+    position: relative;
+    width: 192px;
+    height: 192px;
+    border-radius: 50%;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.5), 0 2px 6px rgba(0,0,0,0.4), inset 0 -6px 14px rgba(0,0,0,0.35), inset 0 6px 10px rgba(255,255,255,0.10);
+  }
+
+  /* dashed edge stripes */
+  .chip::before {
+    content: "";
+    position: absolute;
+    inset: 7px;
+    border-radius: 50%;
+    border: 6px dashed rgba(242,238,227,0.85);
+  }
+
+  /* inner face ring */
+  .chip .inner {
+    position: absolute;
+    inset: 26px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(242,238,227,0.35);
+    box-shadow: inset 0 3px 8px rgba(0,0,0,0.25);
+  }
+
+  .word {
+    font-size: 27px;
+    font-weight: 800;
+    letter-spacing: 2px;
+  }
+
+  /* GREEN chip */
+  .chip.green { background: radial-gradient(circle at 34% 28%, #3B9A57 0%, #2E7D46 55%, #1F5A32 100%); }
+  .chip.green .word { color: #F2EEE3; text-shadow: 0 1px 3px rgba(0,0,0,0.45); }
+
+  /* GOLD chip */
+  .chip.gold { background: radial-gradient(circle at 34% 28%, #E0BC4A 0%, #C9A227 55%, #96781B 100%); }
+  .chip.gold::before { border-color: rgba(20,32,22,0.75); }
+  .chip.gold .inner { border-color: rgba(20,32,22,0.4); }
+  .chip.gold .word { color: #0B1F17; text-shadow: 0 1px 2px rgba(255,255,255,0.25); }
+
+  /* RED chip — FOLD stands apart */
+  .chip.red { background: radial-gradient(circle at 34% 28%, #C95B41 0%, #B4462E 55%, #7E2F1E 100%); }
+  .chip.red .word { color: #F2EEE3; text-shadow: 0 1px 3px rgba(0,0,0,0.5); }
+
+  .cap {
+    margin-top: 15px;
+    font-size: 19px;
+    font-weight: 500;
+    color: rgba(242,238,227,0.78);
+    text-align: center;
+    line-height: 1.3;
+    max-width: 190px;
+    letter-spacing: 0.2px;
+  }
+  .cap.red-cap { color: rgba(230,168,150,0.95); }
+
+  .wordmark {
+    position: absolute;
+    right: 46px;
+    bottom: 18px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #C9A227;
+    opacity: 0.9;
+  }
+</style>
+</head>
+<body>
+  <div class="frame">
+    <div class="kicker">Texas Hold&#8217;em</div>
+    <h1>The <span class="gold">5</span> Betting Actions</h1>
+    <div class="subtitle">Every decision on your turn comes down to one of these.</div>
+    <div class="divider"></div>
+
+    <div class="row">
+      <div class="col">
+        <div class="chip green"><div class="inner"><span class="word">CHECK</span></div></div>
+        <div class="cap">pass, no bet</div>
+      </div>
+      <div class="col">
+        <div class="chip gold"><div class="inner"><span class="word">BET</span></div></div>
+        <div class="cap">put chips in first</div>
+      </div>
+      <div class="col">
+        <div class="chip green"><div class="inner"><span class="word">CALL</span></div></div>
+        <div class="cap">match the bet</div>
+      </div>
+      <div class="col">
+        <div class="chip gold"><div class="inner"><span class="word">RAISE</span></div></div>
+        <div class="cap">increase the bet</div>
+      </div>
+      <div class="col">
+        <div class="chip red"><div class="inner"><span class="word">FOLD</span></div></div>
+        <div class="cap red-cap">give up the hand</div>
+      </div>
+    </div>
+
+    <div class="wordmark">&#9824;HoldemMaster</div>
+  </div>
+</body>
+</html>

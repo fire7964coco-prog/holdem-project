@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Min-Raise Rule</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 675px; background: #0B1F17; }
+  .frame {
+    width: 1200px; height: 675px; overflow: hidden; position: relative;
+    padding: 44px 48px;
+    background: linear-gradient(150deg, #0B1F17 0%, #13291D 100%);
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #F2EEE3;
+    display: flex; flex-direction: column; justify-content: space-between;
+  }
+  /* subtle felt-glow accents */
+  .glow {
+    position: absolute; border-radius: 50%; pointer-events: none;
+    background: radial-gradient(circle, rgba(46,125,70,0.18) 0%, rgba(46,125,70,0) 70%);
+  }
+  .header { position: relative; }
+  .title { font-size: 40px; font-weight: 800; letter-spacing: -0.5px; color: #F2EEE3; }
+  .title .gold { color: #C9A227; }
+  .subtitle { margin-top: 8px; font-size: 18px; font-weight: 500; color: rgba(242,238,227,0.72); }
+  .rule-bar { width: 74px; height: 4px; border-radius: 2px; background: #C9A227; margin-top: 12px; }
+
+  .card {
+    position: relative;
+    display: flex; align-items: center; gap: 26px;
+    background: rgba(255,255,255,0.045);
+    border: 1px solid rgba(201,162,39,0.32);
+    border-radius: 16px;
+    padding: 20px 30px;
+    height: 176px;
+  }
+  .card-label { width: 218px; flex-shrink: 0; }
+  .pill {
+    display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: 1.6px;
+    color: #C9A227; border: 1px solid rgba(201,162,39,0.55); border-radius: 999px;
+    padding: 4px 12px; margin-bottom: 10px;
+  }
+  .card-title { font-size: 23px; font-weight: 800; color: #F2EEE3; line-height: 1.2; }
+  .card-sub { margin-top: 7px; font-size: 13.5px; line-height: 1.4; color: rgba(242,238,227,0.62); }
+
+  .flow { display: flex; align-items: center; gap: 18px; flex: 1; justify-content: center; }
+  .step { display: flex; flex-direction: column; align-items: center; width: 168px; }
+  .chip {
+    width: 88px; height: 88px; border-radius: 50%; position: relative;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 25px; font-weight: 800;
+    box-shadow: 0 7px 16px rgba(0,0,0,0.45), inset 0 2px 3px rgba(255,255,255,0.18);
+  }
+  .chip::after {
+    content: ""; position: absolute; inset: 8px; border-radius: 50%;
+    border: 2.5px dashed rgba(242,238,227,0.55);
+  }
+  .chip-green { background: #2E7D46; color: #F2EEE3; }
+  .chip-gold  { background: #C9A227; color: #0B1F17; }
+  .chip-gold::after { border-color: rgba(11,31,23,0.45); }
+  .chip-result {
+    width: 96px; height: 96px; font-size: 27px;
+    background: #2E7D46; color: #F2EEE3;
+    outline: 3px solid #C9A227; outline-offset: 3px;
+  }
+  .caption { margin-top: 10px; font-size: 13px; font-weight: 600; line-height: 1.3; text-align: center; color: rgba(242,238,227,0.78); }
+  .caption.gold-cap { color: #C9A227; }
+  .op { font-size: 36px; font-weight: 800; color: #C9A227; padding-bottom: 34px; }
+
+  .footer { display: flex; align-items: flex-end; justify-content: space-between; }
+  .note { font-size: 15px; font-weight: 600; color: rgba(242,238,227,0.66); }
+  .note .accent { color: #B4462E; font-weight: 800; }
+  .wordmark { font-size: 15px; font-weight: 800; letter-spacing: 0.4px; color: #C9A227; }
+</style>
+</head>
+<body>
+  <div class="frame">
+    <div class="glow" style="width:520px;height:520px;top:-220px;right:-160px;"></div>
+    <div class="glow" style="width:460px;height:460px;bottom:-200px;left:-140px;"></div>
+
+    <div class="header">
+      <div class="title">The <span class="gold">Min-Raise</span> Rule</div>
+      <div class="subtitle">A raise must be at least the size of the last bet or raise</div>
+      <div class="rule-bar"></div>
+    </div>
+
+    <!-- Example 1 -->
+    <div class="card">
+      <div class="card-label">
+        <span class="pill">EXAMPLE 1</span>
+        <div class="card-title">On the flop</div>
+        <div class="card-sub">Someone bets $6</div>
+      </div>
+      <div class="flow">
+        <div class="step">
+          <div class="chip chip-green">$6</div>
+          <div class="caption">someone bets</div>
+        </div>
+        <div class="op">+</div>
+        <div class="step">
+          <div class="chip chip-gold">$6</div>
+          <div class="caption gold-cap">the increment<br>= the last bet</div>
+        </div>
+        <div class="op">=</div>
+        <div class="step">
+          <div class="chip chip-result">$12</div>
+          <div class="caption">minimum raise</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Example 2 -->
+    <div class="card">
+      <div class="card-label">
+        <span class="pill">EXAMPLE 2</span>
+        <div class="card-title">Preflop &middot; $1/$2</div>
+        <div class="card-sub">Raise to $6 &mdash; a $4 increment over the $2 big blind</div>
+      </div>
+      <div class="flow">
+        <div class="step">
+          <div class="chip chip-green">$6</div>
+          <div class="caption">raise to</div>
+        </div>
+        <div class="op">+</div>
+        <div class="step">
+          <div class="chip chip-gold">$4</div>
+          <div class="caption gold-cap">the increment<br>= the last raise</div>
+        </div>
+        <div class="op">=</div>
+        <div class="step">
+          <div class="chip chip-result">$10</div>
+          <div class="caption">minimum re-raise</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="note">In No-Limit there&rsquo;s <span class="accent">no cap</span> &mdash; but every raise must clear this minimum.</div>
+      <div class="wordmark">&spades;HoldemMaster</div>
+    </div>
+  </div>
+</body>
+</html>
