@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "처음 홀덤펍: 신분증·참가비·칩 수령·닉네임·착석 5단계. 바이인 2~5만원대가 흔하고, 현금 환전 매장은 피하세요.",
   category: "초보 가이드",
   date: "2026-04-13",
-  updated: "2026-07-12",
+  updated: "2026-07-11",
   readTime: "12분",
   emoji: "🍺",
   image: "/images/holdem-pub-players-table.webp",

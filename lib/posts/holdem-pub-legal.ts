@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "한국 홀덤펍은 게임물관리위원회 기준 사행성 게임으로 분류 → 영리 베팅은 불법. 합법 운영은 참가비-순수 토너먼트 형태에 한한다.",
   category: "초보 가이드",
   date: "2026-04-14",
-  updated: "2026-07-12",
+  updated: "2026-07-11",
   readTime: "11분",
   emoji: "⚖️",
   image: "/images/holdem-pub-legal-card-table.webp",
