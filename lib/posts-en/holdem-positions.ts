@@ -2,53 +2,46 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "holdem-positions",
-  title: "Poker Table Positions Explained: UTG to Button, 6-Max and 9-Max",
-  seoTitle: "Same Hand, Folded from UTG, Raised on Button — Poker Positions Explained",
-  desc: "You raised JJ from UTG and got stacked; two hands later you raised JJ from the button and took the pot. Here's every poker position name, the 6-max vs 9-max seat map, opening ranges, and what to do from each seat — so position is never a blind spot again.",
-  tldr: "Position is when you act relative to the dealer button. The Button acts last on every postflop street and can open ~40% of hands; UTG acts first and should open only ~12%. Every seat between them gets a sliding range.",
+  title: "Poker Positions: Every Seat Name & Chart",
+  seoTitle: "Your Seat Changes Names Every Hand — Poker Positions Chart",
+  desc: "The names move with the button, not the chairs. Every poker position name — UTG, hijack, cutoff, button — plus seat numbers, 6-max map, and who acts first.",
+  tldr: "Poker positions are seat names measured from the dealer button — UTG, lojack, hijack, cutoff, button, and the blinds — and they move one seat clockwise every hand. Preflop, UTG acts first and the big blind last; postflop, the small blind acts first and the button last. Physical seat numbers never move; positions do.",
   category: "초보 가이드",
   date: "2026-06-13",
-  updated: "2026-07-03",
+  updated: "2026-07-11",
   keepImagesInBody: true,
-  readTime: "14 min",
+  readTime: "12 min",
   emoji: "🎯",
   image: "/images/holdem-positions-hero.webp",
   imageAlt: "Top-down view of a professional poker table showing 9 player positions with chip stacks and a gold dealer button",
   tags: [
-    "poker positions explained",
-    "UTG poker",
-    "button position poker",
-    "hijack cutoff poker",
-    "6 max positions",
-    "early middle late position poker",
-    "what does UTG mean in poker",
-    "poker seat names",
+    "poker positions",
+    "poker position names",
+    "poker seat numbers",
+    "poker positions chart",
+    "hijack lojack poker",
+    "position poker table",
+    "who acts first poker",
   ],
   content: `
 My first live cash game, I was seated in what I'd later learn was UTG. I looked down at J♥ J♠ and raised. The hijack called. The cutoff called. The button called. The big blind 3-bet. I had no idea what to do — I called and bled chips across three streets.
 
 Two orbits later I was on the button with the same J♥ J♠. I raised. Everyone folded. I won $14 without ever seeing a flop.
 
-Same hand. Completely different result. The only thing that changed was my seat.
+Same hand. Completely different result. The only thing that changed was my seat — and that night I realized I didn't actually know what the seats were *called*, let alone what they meant. If you're still learning how a full hand flows from deal to showdown, start with the [Texas Hold'em rules guide](/en/blog/texas-holdem-rules-for-beginners); this article is the seat map that guide assumes you know.
 
 ---
 
 > **Quick answer**
-> Your **position** is where you sit relative to the dealer button — it determines **when you act** on every street. The Button (BTN) acts last on every postflop street: maximum information, maximum profit. Under the Gun (UTG) acts first: minimum information, minimum leeway. Every seat between them gets a sliding range from tight to wide.
+> Poker positions are the ==named seats measured from the dealer button== — UTG, lojack, hijack, cutoff, button, small blind, big blind — and they ==move one seat clockwise every hand== as the button moves. Preflop, UTG acts first and the big blind acts last. Postflop, the small blind acts first and the button acts last.
 
 ---
 
-## What Position Actually Means in Poker
+## What Are the Positions at a Poker Table? (Full Seat Map)
 
-"Position" isn't about your physical chair — it's about ==the order in which you commit chips relative to everyone else==. Act early and you're guessing into the dark. Act last and you've watched every opponent move before spending a single chip. The later you act, the more information you hold, and in poker, ==information is money==.
+A position is not a chair — it's a **name for where you sit relative to the dealer button**, and it determines ==when you act on every street==. Because the button moves one seat clockwise after every hand, every player at the table wears a different name every single hand.
 
-One number puts it in perspective: the Button earns approximately ==g:**8 big blinds per 100 hands more** than UTG==, purely from acting last — before any edge from card selection is added.
-
----
-
-## The 9-Max Seat Map
-
-At a full nine-handed table, positions run clockwise from the dealer button. Preflop the action starts with UTG (left of the big blind). Postflop it restarts with the small blind. For the exact sequence of betting actions across all four streets, see [the order of play in a hand](/en/blog/holdem-game-order).
+Here is the full 9-max positions chart — every seat name, its abbreviation, its zone, and exactly when it acts before and after the flop:
 
 ![Nine-handed poker table with chip stacks at every seat and the dealer button marked D in front of one player](/images/holdem-button-position-hero.webp "The dealer button sets every seat's position and the order of play")
 
@@ -64,235 +57,183 @@ At a full nine-handed table, positions run clockwise from the dealer button. Pre
 | Small Blind | **SB** | Blind | 8th | **1st** |
 | Big Blind | **BB** | Blind | 9th (last) | 2nd |
 
-> **Live table note:** the button is a physical disc that moves one seat clockwise each hand. "UTG" is whoever sits two left of the button at that moment — not a fixed chair.
+Notice the flip: ==the blinds act last preflop but first postflop==, while the button acts last on every postflop street. That ordering — not the cards — is what makes some seats structurally better than others.
+
+> **Live table note:** the button is a physical disc that moves one seat clockwise each hand. "UTG" is whoever sits three seats left of the button at that moment — not a fixed chair.
 
 ---
 
-## The 3 Zones — and the Blinds
+## Poker Position Names & Abbreviations: UTG, LJ, HJ, CO, BTN, SB, BB
 
-### Early Position: UTG, UTG+1, UTG+2
+Every position name you'll hear at a table or read in a strategy article, decoded:
 
-The three seats directly left of the big blind. You act **first preflop** — before anyone has shown strength or weakness — and you'll be out of position on most postflop streets.
+| Abbr | Full name | Group | What it refers to |
+|:---|:---|:---|:---|
+| **UTG** | Under the Gun | Early (EP) | First to act preflop, directly left of the big blind |
+| **UTG+1 / UTG+2** | Under the Gun plus one / two | Early (EP) | The next seats clockwise from UTG |
+| **LJ** | Lojack | Middle (MP) | Three seats to the right of the button |
+| **HJ** | Hijack | Middle (MP) | Two seats to the right of the button |
+| **CO** | Cutoff | Late (LP) | One seat to the right of the button |
+| **BTN** | Button (Dealer) | Late (LP) | The seat with the dealer disc — last to act postflop |
+| **SB** | Small Blind | Blinds | First seat left of the button; posts the small forced bet |
+| **BB** | Big Blind | Blinds | Second seat left of the button; posts the full forced bet |
 
-The implication is mechanical: ==r:**play tight**==. When you open-raise from UTG and get four callers, those players all have position on you for three streets. Hands that look playable anywhere else become ==r:a slow chip leak== here.
+You'll also see the broader zone labels: ==**EP** (early position)== covers the UTG seats, ==**MP** (middle position)== covers lojack and hijack, and ==**LP** (late position)== covers the cutoff and button. Older books lump lojack and hijack into "MP1/MP2" — same seats, different labels.
 
-**Opening range: ~12%** — premium pairs (JJ+), strong suited aces (AKs–AJs), offsuit broadway (AKo, AQo), suited broadways (KQs). That's roughly the top one in eight hands. For a full breakdown of which hands rank above which, see [Texas Hold'em hand rankings](/en/blog/holdem-hand-rankings).
-
-> **The UTG mistake:** raising K♥ 9♥ because it looks nice. In late position it's profitable; from UTG you face six players who can all dominate it before the flop even arrives. The hand has to be *good enough to play out of position against multiple opponents*.
-
----
-
-### Middle Position: Lojack (LJ) and Hijack (HJ)
-
-Two to three seats to the right of the button. More of the field has already folded, so you face fewer opponents and have better postflop position than UTG. You can afford to widen.
-
-**Lojack opening range: ~16%** — add medium pairs (77–88), suited connectors (T9s, 98s), broadway hands (AJo, KQo).
-
-**Hijack opening range: ~20%** — add weaker suited aces (A5s–A2s), more suited connectors (76s, 65s), offsuit broadway (KJo, QJo).
-
-The hijack is sometimes called the "seat where position theft begins" — you're late enough to steal when the early seats fold, but early enough that you still need the field to cooperate.
+Knowing the names is step one. What to actually *do* from each of them — ranges, steals, in-position versus out-of-position play — is a strategy question, and it lives in the [position strategy guide](/en/blog/holdem-position-play).
 
 ---
 
-### Late Position: Cutoff (CO) and Button (BTN)
+## Poker Seat Numbers vs Positions — Seat 1 Is Not a Position
 
-The two most profitable seats at any poker table.
+This trips up almost every first-time live player: when the floor calls **"Table 12, Seat 5"**, that number has ==nothing to do with poker positions==.
 
-**Cutoff (CO)** sits one seat right of the button — "cutting off" the dealer's positional advantage. Only one player (the button) has postflop position on you. You can play wide and attack every time the field folds to you.
+In most card rooms, physical seats are numbered from the dealer's immediate left — ==Seat 1 is conventionally the first chair to the dealer's left==, counting clockwise around to Seat 9 or 10 at the dealer's right. Those numbers are bolted to the chairs. Staff use them for logistics: seating new players, delivering chips, calling time.
 
-**Opening range: ~28%** — small pairs (22–44), suited connectors down to 54s, weak suited aces, most offsuit broadway.
+Positions are the opposite — they ==rotate one seat clockwise every single hand== with the button. Seat 5 might be the button this hand, the cutoff the next, and the hijack the hand after that.
 
-**Button (BTN)** is the money seat. You act **last on every postflop street** — flop, turn, and river — every single hand. You always see what everyone does before deciding anything.
+:::compare
+Seat numbers (physical) | Positions (poker)
+Fixed to the chair — Seat 1 is usually the dealer's immediate left | Move with the dealer button every hand
+Used by staff: "Seat 5, chips coming" | Used by strategy: "the cutoff opens"
+Never change during a session | Change every single hand, one seat clockwise
+Tell you WHERE you sit | Tell you WHEN you act
+:::
 
-**Opening range: ~40%** — any pair, most suited hands, all broadway combos, suited connectors down to 32s.
-
-| Position | Zone | Opens | Key Edge |
-|:---|:---|:---:|:---|
-| UTG–UTG+2 | Early | ~12% | Must be strong enough to play vs 6 players |
-| LJ–HJ | Middle | 16–20% | Widen as field shrinks |
-| CO | Late | ~28% | Only BTN has position postflop |
-| BTN | Late | ~40% | Acts last every postflop street |
-| SB | Blind | ~35% vs folds | Best preflop range, worst postflop spot |
-| BB | Blind | Defend ~40% | Pot odds; acts last preflop |
-
-> **Live cash game note:** at a $1/$2 live cash game with 100BB stacks, the button is the ideal seat for three-street value — you always know if opponents are weak before deciding whether to fire.
+So "what is Seat 1 in poker?" has a boring answer — it's a chair — and that's exactly the point. ==A seat number is an address; a position is a job==, and the job gets reassigned every hand.
 
 ---
 
-### The Blinds: Special Category
+## What Is UTG in Poker?
 
-The blinds are forced bets in specific seats — for the full mechanics, see the [small blind and big blind guide](/en/blog/holdem-blind-meaning). Their postflop position is the trickiest in the game.
+**UTG stands for "Under the Gun"** — the seat immediately to the left of the big blind, and the ==first player to act preflop==. The name evokes the pressure of the spot: you must commit chips before seeing what a single opponent does, as if acting at gunpoint.
 
-**Small blind** acts late preflop (second-to-last) but **first postflop** — the worst structural spot at the table. The correct default is raise-or-fold; flat-calling from the SB and playing out of position for three streets is a steady chip leak.
+In a full 9-handed game there are actually three "under the gun" seats — **UTG, UTG+1, and UTG+2** — counted clockwise from the big blind. Only the first one acts truly blind; the +1 and +2 seats at least see one or two decisions first.
 
-**Big blind** acts last preflop and second postflop. It gets a discount to call raises (one full bet already committed), which is why "big blind defense" — calling wider based on pot odds — is a real strategic concept with its own math.
-
----
-
-## 6-Max vs 9-Max: Same Seats, Fewer Chairs
-
-At a six-handed (6-max) table, three early seats simply don't exist. The seat map collapses:
-
-| 9-Max | 6-Max | Note |
-|-------|-------|------|
-| UTG | UTG | First to act — still early, but facing only 5 players |
-| UTG+1 | — | Doesn't exist |
-| UTG+2 | — | Doesn't exist |
-| Lojack | — | Doesn't exist in most formats |
-| Hijack | HJ | Becomes the second seat |
-| Cutoff | CO | Third seat — already late |
-| Button | BTN | Still last postflop |
-| SB | SB | Same role |
-| BB | BB | Same role |
-
-The strategic consequence: **6-max UTG plays like 9-max Hijack**. You face only five opponents instead of eight, so even UTG can open ~18–20% of hands — far wider than 9-max UTG's ~12%. If you switch between live 9-max and online 6-max, recalibrate your ranges before the session.
+That's the definition. *How to play* UTG — why it demands the tightest range at the table, and why raise-or-fold is the standard line there — is covered in the [position strategy guide](/en/blog/holdem-position-play).
 
 ---
 
-## Why the Button Is the Best Position in Poker
+## The Hijack and Lojack — and Why They're Called That
 
-![Dealer button and K♦ 7♠ 2♥ board on a poker table — the button fires a bluff after three checks](/images/holdem-button-dealer-board.webp)
+**The hijack (HJ)** is the seat two to the right of the button. **The lojack (LJ)** is one further, three to the right of the button. Together they make up middle position in a modern 9-max game.
 
-Every strategic advantage in poker reduces to information. The button has more of it than any other seat, and here's a concrete moment where it shows:
+The names have no documented official origin — poker slang rarely does — but the commonly told story goes like this:
 
-**Board: K♦ 7♠ 2♥** — a dry flop that hits very few hands.
+- **Hijack:** the cutoff and button are the classic blind-stealing seats. When the player one seat earlier raises first, they ==**"hijack" the steal**== the late seats were waiting to make — so the seat itself picked up the name.
+- **Lojack:** came later, as a ==playful riff on "hijack"== — the seat one step "lower" in the pecking order. Most tellings also hear an echo of the LoJack anti-theft brand: a hijack, one notch down.
 
-You're **on the button** holding A♦ 9♦ — a complete miss. The small blind checks. The big blind checks. The UTG player who called preflop checks too.
-
-Three checks. You now know: nobody connected with this board. ==g:A bet wins the pot far more often than it loses.== You fire. They fold.
-
-Now flip it: **you're UTG with the same A♦ 9♦.** You act before everyone. You check. The button bets into you. Now you're calling with air against a player who just watched you check weakness. ==r:You fold — the button wins without having a better hand.==
-
-This plays out dozens of times per session. Over a year, ==the gap between BTN and UTG is worth thousands of chips in a live game==, entirely from acting last.
+Treat both as table lore rather than etymology. What's not lore: the hijack and lojack are real, standard names you'll see in every modern range chart and training site, which is why they're worth knowing cold.
 
 ---
 
-## Starting Hand Quick Reference: Open or Fold?
+## The Cutoff and the Button (Dealer Position)
 
-The same hand plays completely differently depending on your seat. Here is how ten representative hands change across positions when the action folds to you:
+**The cutoff (CO)** is the seat ==one to the right of the button== — the last position before the dealer. Two origin stories circulate: one says the seat "cuts off" the button's chance to steal the blinds by raising first; an older one says that in self-dealt home games, the player to the dealer's right ==cut the deck== after the shuffle. Either way, the name stuck, and the cutoff is universally counted as late position.
 
-<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
+**The button (BTN)** — also called the **dealer position** — is the seat marked by the physical dealer disc. In casino games a professional dealer handles the cards, so the button simply marks ==who *would* be dealing==, which is what anchors the betting order: the button acts ==last on every postflop street==, and everything else at the table is named by its distance from that disc.
 
-| Hand | UTG | LJ | HJ | CO | BTN | SB |
-|------|-----|----|----|-----|-----|-----|
-| A♠ A♥ | ✅ Raise | ✅ Raise | ✅ Raise | ✅ Raise | ✅ Raise | ✅ Raise |
-| K♠ Q♠ | ✅ Raise | ✅ Raise | ✅ Raise | ✅ Raise | ✅ Raise | ✅ Raise |
-| J♥ J♦ | ✅ Raise | ✅ Raise | ✅ Raise | ✅ Raise | ✅ Raise | ✅ Raise |
-| A♣ J♣ | ✅ Raise | ✅ Raise | ✅ Raise | ✅ Raise | ✅ Raise | ✅ Raise |
-| T♠ 9♠ | ❌ Fold | ⚠️ Borderline | ✅ Raise | ✅ Raise | ✅ Raise | ✅ Raise |
-| 7♦ 7♣ | ❌ Fold | ✅ Raise | ✅ Raise | ✅ Raise | ✅ Raise | ✅ Raise |
-| A♥ 5♥ | ❌ Fold | ❌ Fold | ⚠️ Borderline | ✅ Raise | ✅ Raise | ✅ Raise |
-| K♠ 9♦ | ❌ Fold | ❌ Fold | ❌ Fold | ⚠️ Borderline | ✅ Raise | ✅ Raise |
-| 6♣ 5♣ | ❌ Fold | ❌ Fold | ❌ Fold | ✅ Raise | ✅ Raise | ⚠️ Borderline |
-| J♦ 7♦ | ❌ Fold | ❌ Fold | ❌ Fold | ❌ Fold | ✅ Raise | ❌ Fold |
-
-> **Key takeaway:** T9s folds from UTG but raises from CO. K9o never opens from early-middle position but is a standard button open. The hand didn't get better — your seat did.
-
-</div>
+That guaranteed last action is why the button is considered the most profitable seat in poker — the full argument, with the numbers behind it, is in the [position strategy guide](/en/blog/holdem-position-play).
 
 ---
 
-:::rangechart:::
+## The Blinds: SB and BB Seats
 
-## What to Actually Do from Each Seat
+The two seats left of the button are positions *and* forced bets at the same time:
 
-Here is the one-line practical guide for each position when the action folds around to you:
+- **Small blind (SB):** the first seat to the button's left. Posts a forced bet — usually half the big blind — before cards are dealt.
+- **Big blind (BB):** the next seat clockwise. Posts the full forced bet that sets the price of entering the hand.
 
-| Seat | Open % | The default play |
-|:---|:---:|:---|
-| UTG | ~12% | Open only premium hands; fold anything marginal without hesitation |
-| UTG+1 | ~13% | Nearly identical to UTG; a small step wider on suited connectors |
-| UTG+2 | ~15% | Start adding medium pairs and suited aces |
-| Lojack | ~16% | Solid open range; 3-bet bluff if UTG has opened very tight |
-| Hijack | ~20% | Steal when early seats fold; attack limpers aggressively |
-| Cutoff | ~28% | Raise wide when it folds to you; pressure the blinds every time |
-| Button | ~40% | When it folds to you, raise ~40% of hands; **never limp the button** |
-| Small Blind | ~35% | Raise-or-fold; do not call — you act first on every postflop street |
-| Big Blind | Defend ~40% | Defend wider using pot odds; 3-bet bluff against late-position steals |
+As positions, they're defined by the flip in the acting order: the blinds act ==last preflop== (they've already paid, so everyone else must respond to their bets first) but ==first postflop==, ahead of the entire table, on flop, turn, and river alike.
+
+Why the blinds exist, how much they cost per orbit, and how to defend them is its own topic — the [small blind and big blind guide](/en/blog/holdem-blind-meaning) covers the forced-bet mechanics and math in full.
 
 ---
 
-## Position Locks In Before the Flop — and Never Changes
+## Who Acts First in Poker — Preflop vs Postflop (Do the Blinds Go First?)
 
-> **The rule beginners miss**
-> Postflop position is set at the start of the hand and never changes. Button acts last on flop, turn, and river — no matter who 3-bet preflop. Small blind always acts first postflop, every single street. The positional edge you gain preflop compounds across all three remaining streets.
+The single most-asked question about positions, answered in one table:
 
-When you call a raise from the button, you carry that advantage across the entire hand. When you call from the big blind, you're out of position for all three streets. ==That gap compounds — and it's why the same hand, called from different seats, produces completely different results.==
+| Street | First to act | Last to act |
+|:---|:---|:---|
+| **Preflop** | **UTG** — first seat left of the big blind | **Big blind** — may check or raise |
+| **Flop / Turn / River** | **Small blind** — or the first still-active seat to the button's left | **Button** — or the closest active seat before it |
+
+So — **do the blinds go first?** ==Preflop, no. Postflop, yes.== Before the flop the blinds have already put money in, so the action starts with UTG and comes back around to them last — the big blind acts last of everyone. After the flop the order resets clockwise from the button: the small blind speaks first, the big blind second, and the button always last.
+
+And between the two blinds: ==the small blind acts before the big blind on every street==, preflop and postflop alike — with one exception, heads-up, covered below.
+
+One neighbor question worth a line: at **showdown**, the default is that the last player who bet or raised shows first (if the river checks through, the first active seat left of the button shows) — the full etiquette is in the [showdown rules guide](/en/blog/holdem-showdown-rules). For the complete street-by-street sequence of a hand, see [the order of play](/en/blog/holdem-game-order).
+
+---
+
+## Poker Positions by Player Count: Heads-Up to 10-Handed (6-Max vs Full Ring)
+
+The position names don't change with table size — ==they peel off from early position first== as players are removed. The button, blinds, cutoff, and hijack survive the longest; the UTG seats exist only when the table is full. Here's the map from 2 players to 10, listed in preflop acting order:
+
+| Players | Preflop acting order (first → last) |
+|:---:|:---|
+| **2 (heads-up)** | BTN (posts the small blind) → BB |
+| **3** | BTN → SB → BB |
+| **4** | CO (the "UTG" seat here) → BTN → SB → BB |
+| **5** | HJ (the "UTG" seat here) → CO → BTN → SB → BB |
+| **6 (6-max)** | UTG (also called LJ) → HJ → CO → BTN → SB → BB |
+| **9 (full ring)** | UTG → UTG+1 → UTG+2 → LJ → HJ → CO → BTN → SB → BB |
+| **10** | UTG → UTG+1 → UTG+2 → UTG+3 → LJ → HJ → CO → BTN → SB → BB |
+
+**Heads-up is the one that breaks everyone's intuition.** With only two players, ==the button posts the small blind== — the same seat is BTN and SB at once. That means the button acts ==**first** preflop== (the big blind acts last, as always) but still acts ==**last** on every postflop street==, while the big blind acts first postflop. Every other table size follows the normal pattern; heads-up alone fuses the best seat with a blind.
+
+**6-max vs full ring** is purely subtraction: the three extra seats (UTG+1, UTG+2, and one middle seat) don't exist, so 6-max runs UTG → HJ → CO → BTN → SB → BB. The practical consequence is that ==every 6-max seat plays "later" than its full-ring namesake== — 6-max UTG faces five opponents, not eight — which is why ranges widen across the board in short-handed games. The seat-by-seat numbers live in the [position strategy guide](/en/blog/holdem-position-play), and the exact hands that fill each range are mapped in the [starting hands chart](/en/blog/holdem-starting-hands-chart).
+
+> **Naming caveat:** some sites and rooms label the first 6-max seat "LJ" or "MP" instead of UTG, and 10-handed middle seats sometimes appear as "MP1/MP2". Labels vary; the acting order never does.
 
 ---
 
 :::readnext[Keep reading]
-/en/blog/holdem-position-play | How Position Changes Everything | /images/holdem-position-play-hero.webp
-/en/blog/holdem-starting-hands-chart | Starting Hands Chart | /images/holdem-starting-hands-chart-hero.webp
+/en/blog/holdem-position-play | Position Strategy: In vs Out of Position | /images/holdem-position-play-hero.webp
+/en/blog/holdem-starting-hands-chart | Starting Hands Chart by Position | /images/holdem-starting-hands-chart-hero.webp
 :::
 
 ## FAQ
 
-**Q. What does UTG mean in poker?**
+**Q. What does UTG stand for in poker?**
 
-A. UTG stands for "Under the Gun" — the player immediately left of the big blind who is forced to act first preflop with no information about any other player's hand. It is the most difficult seat at the table and requires the tightest opening range (~12% of hands). The name comes from the pressure of acting without any data: you're "under the gun."
+A. UTG stands for "Under the Gun" — the seat immediately left of the big blind, and the first player to act preflop. The name evokes the pressure of committing chips before seeing any opponent's decision. In full-ring games the next two seats are called UTG+1 and UTG+2.
 
-**Q. Why is the button the best position in poker?**
+**Q. What is the hijack in poker?**
 
-A. The button acts last on every postflop street (flop, turn, and river), seeing every opponent's action before committing chips. This information advantage is worth roughly 8 big blinds per 100 hands compared to UTG, and allows an opening range of ~40% versus UTG's ~12%. No other seat has this guarantee of acting last across all three streets.
-
-**Q. What is the difference between the hijack and the cutoff?**
-
-A. The hijack is two seats right of the button; the cutoff is one seat right. Both are late positions, but the cutoff is stronger because only the button has position on you postflop. From the hijack you still have both the cutoff and button behind you, so it plays slightly tighter (~20% vs ~28% opening range).
+A. The hijack (HJ) is the seat two to the right of the dealer button, just before the cutoff. It's the later of the two middle-position seats in a 9-max game and the second seat to act preflop in 6-max. The commonly told story behind the name: a raise from this seat "hijacks" the blind steal that the cutoff and button were positioned to make.
 
 **Q. What is the lojack in poker?**
 
-A. The lojack is three seats to the right of the button — the first true middle position in a 9-max game. In 6-max, it effectively doesn't exist; the seat map skips from UTG straight to hijack. It's named in contrast to the "hijack" to its left: the hi-jack "hi-jacks" the dealer's advantage; the lo-jack is one step lower in the pecking order.
+A. The lojack (LJ) is the seat three to the right of the button — the earlier of the two middle-position seats in 9-max. In 6-max it's the first seat to act, where it's usually just called UTG. The name is generally told as a playful riff on "hijack" (one seat lower), often linked to the LoJack anti-theft brand — table lore rather than documented etymology.
+
+**Q. Who goes first, the small blind or the big blind?**
+
+A. The small blind acts before the big blind on every street. Preflop, both blinds act last (the big blind last of all, with the option to check or raise); postflop, the small blind is the first seat to act at the table. The one exception is heads-up, where the button posts the small blind and the big blind acts first postflop.
 
 **Q. How many positions are there in 6-max poker?**
 
-A. Six: UTG, Hijack, Cutoff, Button, Small Blind, and Big Blind. The UTG+1, UTG+2, and Lojack from 9-max are removed because there simply aren't enough seats. The result is that 6-max UTG opens ~18–20% of hands — much wider than 9-max UTG's ~12% — because you only face five opponents instead of eight.
+A. Six: UTG (also called lojack), hijack, cutoff, button, small blind, and big blind. Compared with a 9-max table, the UTG+1, UTG+2, and one middle seat simply don't exist — the names are removed from early position first, so every remaining seat plays "later" than its full-ring namesake.
 
-**Q. Can you play the same starting hands from every position?**
+**Q. Do poker positions change every hand?**
 
-A. No — this is one of the most common beginner leaks. The same hand that's profitable from the button can be a net loser from UTG, because position determines how many players can have stronger hands behind you *and* whether you'll have the information edge postflop. Playing a fixed range from every seat bleeds chips steadily.
+A. Yes. The dealer button moves one seat clockwise after every hand, and since all positions are named by their distance from the button, every player's position shifts by one seat each hand. Over a full orbit you'll hold every position at the table exactly once.
 
-**Q. What does "playing in position" mean in poker?**
+**Q. What is Seat 1 in poker?**
 
-A. Being "in position" means you act *after* your opponent on the current street, so you see their action before committing chips. "Out of position" means acting before them. Being in position for all postflop streets — by calling from the button rather than the blinds, for example — is a structural edge that persists across the entire hand.
-
-**Q. Does position change during a hand?**
-
-A. No. Postflop position is fixed at the beginning of the hand and never changes. Whoever is in the blinds acts first on every postflop street, and whoever is closest to the button acts last — regardless of who bet, raised, or 3-bet preflop. This is why calling in position preflop is always preferable to calling out of position, even with the same hand.
-
----
-
-## Position Profitability at a Glance
-
-These BB/100 figures are approximate averages from large poker database studies — individual results vary, but the **ranking is consistent** across all player pools:
-
-<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
-
-| Position | Avg BB/100 (6-max) | Relative to BB |
-|:---|:---:|:---|
-| Button (BTN) | +8 to +12 | Best seat |
-| Cutoff (CO) | +4 to +6 | 2nd best |
-| Hijack (HJ) | +1 to +3 | Slightly above break-even |
-| UTG (6-max) | -1 to +1 | Near break-even |
-| Big Blind (BB) | -4 to -6 | Forced bet disadvantage |
-| Small Blind (SB) | -8 to -12 | Worst seat |
-
-> **Why is SB worse than BB?** Both post forced bets, but the SB acts *first postflop* every single street. The BB at least acts last preflop and second postflop — better than acting first in every spot. The SB has no structural edge anywhere.
-
-</div>
+A. Seat 1 is a physical chair, not a position — in most card rooms it's the first seat to the dealer's immediate left, with numbers running clockwise to Seat 9 or 10. Staff use seat numbers for seating and logistics. Poker positions (UTG, button, blinds) rotate independently every hand, so Seat 1 can be any position.
 
 ---
 
 ## The Takeaways
 
-1. **Position = when you act.** Later is always better because you see more before spending chips — the button earns ~8 BB/100 more than UTG for this reason alone.
-2. **Ranges slide with position:** BTN ~40%, CO ~28%, HJ ~20%, LJ ~16%, UTG ~12%. Use the same hand in the wrong seat and it's a loser.
-3. **6-max compresses the map** — UTG in 6-max plays like a middle seat in 9-max. Adjust your ranges when the format changes.
-4. **Postflop position is locked in for the whole hand** — the positional edge you gain preflop by calling in position compounds across flop, turn, and river.
+1. **Positions are names, not chairs.** Every seat is named by its distance from the dealer button, and every name moves one seat clockwise each hand.
+2. **The chart in one line:** UTG → UTG+1 → UTG+2 → LJ → HJ → CO → BTN → SB → BB. Preflop starts at UTG and ends at the big blind; postflop starts at the small blind and ends at the button.
+3. **Seat numbers ≠ positions.** Seat 1 is conventionally the dealer's immediate left and never moves; positions rotate every hand. One is an address, the other is a job.
+4. **Table size subtracts from the front.** 6-max drops the early seats; heads-up fuses the button with the small blind — first to act preflop, last to act postflop.
 
-New to the game? The [beginner's guide to Texas Hold'em rules](/en/blog/texas-holdem-rules-for-beginners) covers how a hand works from start to finish, and [the order of play](/en/blog/holdem-game-order) shows exactly when each seat acts across all four streets. For the forced bets posted by the two seats left of the button, the [small blind and big blind guide](/en/blog/holdem-blind-meaning) explains why they exist and how to play them well.
-
-Ready to turn position knowledge into profit? The [poker position strategy pillar guide](/en/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp") goes deeper into IP vs OOP equity realization, c-bet frequencies by seat, and how position changes your bluffing game postflop.
+Once the names are second nature, the real edge comes from what you do with them — [how to play each position](/en/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp"), from opening ranges to in-position versus out-of-position play, is the next read. From there, the [starting hands chart](/en/blog/holdem-starting-hands-chart) maps exact hands to exact seats, and the [hand rankings guide](/en/blog/holdem-hand-rankings) settles what actually wins at showdown.
 
 ---
 
@@ -304,6 +245,11 @@ Ready to turn position knowledge into profit? The [poker position strategy pilla
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Texas Hold'em Rules for Beginners</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">How a full hand works from deal to showdown</div>
   </a>
+  <a href="/en/blog/holdem-position-play" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Position Strategy</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">In vs Out of Position Strategy</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Opening ranges and what to do from every seat</div>
+  </a>
   <a href="/en/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Order of Play</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Order of Play in Texas Hold'em</div>
@@ -313,11 +259,6 @@ Ready to turn position knowledge into profit? The [poker position strategy pilla
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Blinds</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Small Blind & Big Blind Explained</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Why they exist and how to play them correctly</div>
-  </a>
-  <a href="/en/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Hand Rankings</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Texas Hold'em Hand Rankings</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Royal flush down to high card — all 10 ranks</div>
   </a>
 </div>
 `.trim(),

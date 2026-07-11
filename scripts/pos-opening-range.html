@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Opening Range by Position — 9-Max</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 675px; }
+  body {
+    font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: #0B1F17;
+  }
+  .frame {
+    position: relative;
+    width: 1200px;
+    height: 675px;
+    overflow: hidden;
+    background: linear-gradient(155deg, #13291D 0%, #0B1F17 60%, #081711 100%);
+    padding: 48px 48px 44px 48px;
+    display: flex;
+    flex-direction: column;
+  }
+  .title {
+    color: #F2EEE3;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+    margin-bottom: 6px;
+  }
+  .title .accent { color: #C9A227; }
+  .subtitle {
+    color: rgba(242, 238, 227, 0.55);
+    font-size: 14px;
+    margin-bottom: 22px;
+  }
+  .chart {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    height: 40px;
+  }
+  .label {
+    width: 130px;
+    flex: 0 0 130px;
+    text-align: right;
+    padding-right: 16px;
+    color: #F2EEE3;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+  }
+  .bar {
+    height: 24px;
+    border-radius: 4px 12px 12px 4px;
+    background-image: linear-gradient(90deg, #B4462E 0%, #C9A227 52%, #2E7D46 100%);
+    background-size: 800px 100%;
+    background-repeat: no-repeat;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.12);
+  }
+  .pct {
+    margin-left: 12px;
+    color: #F2EEE3;
+    font-size: 17px;
+    font-weight: 800;
+    white-space: nowrap;
+  }
+  .tag {
+    margin-left: 10px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(201, 162, 39, 0.7);
+    color: #C9A227;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+  }
+  .note {
+    color: #C9A227;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+  }
+  .caption {
+    margin-top: 18px;
+    color: rgba(242, 238, 227, 0.6);
+    font-size: 14px;
+    font-style: italic;
+  }
+  .wordmark {
+    position: absolute;
+    right: 48px; bottom: 40px;
+    color: #C9A227;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+  }
+</style>
+</head>
+<body>
+  <div class="frame">
+    <div class="title">Opening Range by Position <span class="accent">&mdash; 9-Max</span></div>
+    <div class="subtitle">% of starting hands you should raise first-in (RFI)</div>
+
+    <div class="chart">
+      <!-- scale: 43% = 800px → 18.6px per 1% -->
+      <div class="row">
+        <div class="label">UTG</div>
+        <div class="bar" style="width: 242px;"></div>
+        <div class="pct">13%</div>
+      </div>
+      <div class="row">
+        <div class="label">UTG+1</div>
+        <div class="bar" style="width: 260px;"></div>
+        <div class="pct">14%</div>
+      </div>
+      <div class="row">
+        <div class="label">UTG+2</div>
+        <div class="bar" style="width: 298px;"></div>
+        <div class="pct">16%</div>
+      </div>
+      <div class="row">
+        <div class="label">Lojack</div>
+        <div class="bar" style="width: 316px;"></div>
+        <div class="pct">17%</div>
+      </div>
+      <div class="row">
+        <div class="label">Hijack</div>
+        <div class="bar" style="width: 372px;"></div>
+        <div class="pct">20%</div>
+      </div>
+      <div class="row">
+        <div class="label">Cutoff</div>
+        <div class="bar" style="width: 502px;"></div>
+        <div class="pct">27%</div>
+      </div>
+      <div class="row">
+        <div class="label">Button</div>
+        <div class="bar" style="width: 800px;"></div>
+        <div class="pct">43%</div>
+      </div>
+      <div class="row">
+        <div class="label">Small Blind</div>
+        <div class="bar" style="width: 744px;"></div>
+        <div class="pct">40%</div>
+        <div class="tag">raise-or-fold</div>
+      </div>
+      <div class="row">
+        <div class="label">Big Blind</div>
+        <div class="note">defends wide &mdash; closes the action preflop</div>
+      </div>
+    </div>
+
+    <div class="caption">Approximate RFI sizes &mdash; the later you act, the wider you open.</div>
+    <div class="wordmark">HoldemMaster</div>
+  </div>
+</body>
+</html>

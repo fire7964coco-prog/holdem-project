@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Poker Positions — 9-Max Table</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 675px; }
+  body {
+    font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: #0B1F17;
+  }
+  .frame {
+    position: relative;
+    width: 1200px;
+    height: 675px;
+    overflow: hidden;
+    background: radial-gradient(ellipse 900px 560px at 50% 42%, #13291D 0%, #0B1F17 70%, #081711 100%);
+  }
+  /* ---- Table rail + felt ---- */
+  .rail {
+    position: absolute;
+    left: 50%; top: 50%;
+    width: 744px; height: 364px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: linear-gradient(160deg, #7a6420 0%, #C9A227 30%, #8a7020 60%, #5d4c17 100%);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.55);
+  }
+  .felt {
+    position: absolute;
+    left: 50%; top: 50%;
+    width: 720px; height: 340px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: radial-gradient(ellipse 420px 220px at 50% 45%, #2E7D46 0%, #1F5A33 55%, #164125 100%);
+    box-shadow: inset 0 0 60px rgba(0,0,0,0.45);
+  }
+  .felt-line {
+    position: absolute;
+    left: 50%; top: 50%;
+    width: 580px; height: 232px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 2px solid rgba(242, 238, 227, 0.16);
+  }
+  .watermark {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgba(242, 238, 227, 0.14);
+    line-height: 1.05;
+    user-select: none;
+  }
+  .watermark .spade { font-size: 64px; }
+  .watermark .nine  { font-size: 30px; font-weight: 800; letter-spacing: 6px; }
+  /* ---- Seat badges ---- */
+  .seat {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    white-space: nowrap;
+  }
+  .pill {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 999px;
+    background: rgba(11, 31, 23, 0.92);
+    border: 1.5px solid rgba(242, 238, 227, 0.55);
+    color: #F2EEE3;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    line-height: 1.15;
+  }
+  .pill .sub {
+    display: block;
+    font-size: 11px;
+    font-weight: 500;
+    color: rgba(242, 238, 227, 0.65);
+    letter-spacing: 0.3px;
+  }
+  .seat.power .pill {
+    border: 2px solid #C9A227;
+    color: #C9A227;
+    background: rgba(11, 31, 23, 0.96);
+    box-shadow: 0 0 18px rgba(201, 162, 39, 0.45), 0 0 4px rgba(201, 162, 39, 0.6);
+  }
+  .dealer-disc {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    width: 58px; height: 22px;
+    border-radius: 999px;
+    background: linear-gradient(180deg, #E4C24A 0%, #C9A227 55%, #9d7e1d 100%);
+    color: #0B1F17;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  }
+  /* ---- Chrome ---- */
+  .title {
+    position: absolute;
+    left: 44px; top: 40px;
+    color: #F2EEE3;
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+  }
+  .title .accent { color: #C9A227; }
+  .wordmark {
+    position: absolute;
+    right: 44px; bottom: 40px;
+    color: #C9A227;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+  }
+</style>
+</head>
+<body>
+  <div class="frame">
+    <div class="rail"></div>
+    <div class="felt"></div>
+    <div class="felt-line"></div>
+    <div class="watermark">
+      <div class="spade">&#9824;</div>
+      <div class="nine">9-MAX</div>
+    </div>
+
+    <div class="title">Poker Positions <span class="accent">&mdash; 9-Max Table</span></div>
+
+    <!-- Verified clockwise seat order: BTN → SB → BB → UTG → UTG+1 → UTG+2 → LJ → HJ → CO -->
+    <div class="seat power" style="left: 50%; top: 86%;">
+      <span class="pill">Button</span><br>
+      <span class="dealer-disc">DEALER</span>
+    </div>
+    <div class="seat" style="left: 27%; top: 80%;">
+      <span class="pill">Small Blind</span>
+    </div>
+    <div class="seat" style="left: 12%; top: 56%;">
+      <span class="pill">Big Blind</span>
+    </div>
+    <div class="seat" style="left: 15%; top: 31%;">
+      <span class="pill">UTG<span class="sub">Under the Gun</span></span>
+    </div>
+    <div class="seat" style="left: 33%; top: 15%;">
+      <span class="pill">UTG+1</span>
+    </div>
+    <div class="seat" style="left: 55%; top: 13%;">
+      <span class="pill">UTG+2</span>
+    </div>
+    <div class="seat" style="left: 76%; top: 21%;">
+      <span class="pill">Lojack</span>
+    </div>
+    <div class="seat" style="left: 88%; top: 46%;">
+      <span class="pill">Hijack</span>
+    </div>
+    <div class="seat power" style="left: 79%; top: 77%;">
+      <span class="pill">Cutoff</span>
+    </div>
+
+    <div class="wordmark">HoldemMaster</div>
+  </div>
+</body>
+</html>

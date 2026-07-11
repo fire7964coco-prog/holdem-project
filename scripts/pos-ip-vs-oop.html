@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>In Position vs Out of Position</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 675px; }
+  body {
+    font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: #0B1F17;
+  }
+  .frame {
+    position: relative;
+    width: 1200px;
+    height: 675px;
+    overflow: hidden;
+    background: linear-gradient(155deg, #13291D 0%, #0B1F17 60%, #081711 100%);
+    padding: 56px 56px 48px 56px;
+    display: flex;
+    flex-direction: column;
+  }
+  .columns {
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+  }
+  .col {
+    flex: 1;
+    padding: 28px 34px;
+    border-radius: 14px;
+    background: rgba(242, 238, 227, 0.035);
+  }
+  .col.ip  { border: 1.5px solid rgba(46, 125, 70, 0.65); margin-right: 22px; }
+  .col.oop { border: 1.5px solid rgba(180, 70, 46, 0.65); margin-left: 22px; }
+  .header {
+    font-size: 27px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 14px;
+  }
+  .col.ip  .header { color: #4FA96A; }
+  .col.oop .header { color: #CE6A50; }
+  .equity {
+    color: #F2EEE3;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.35;
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+    border-bottom: 1px solid rgba(242, 238, 227, 0.15);
+  }
+  .equity .big { font-size: 34px; font-weight: 800; }
+  .col.ip  .equity .big { color: #4FA96A; }
+  .col.oop .equity .big { color: #CE6A50; }
+  ul { list-style: none; }
+  li {
+    color: #F2EEE3;
+    font-size: 19px;
+    line-height: 1.4;
+    margin-bottom: 16px;
+    padding-left: 30px;
+    position: relative;
+  }
+  li::before {
+    position: absolute;
+    left: 0;
+    font-weight: 800;
+  }
+  .col.ip  li::before { content: "\2713"; color: #4FA96A; } /* check */
+  .col.oop li::before { content: "\2715"; color: #CE6A50; } /* cross */
+  .vs {
+    align-self: center;
+    position: absolute;
+    left: 50%; top: 44%;
+    transform: translate(-50%, -50%);
+    width: 58px; height: 58px;
+    border-radius: 50%;
+    background: #0B1F17;
+    border: 2px solid #C9A227;
+    color: #C9A227;
+    font-size: 18px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 16px rgba(201, 162, 39, 0.4);
+  }
+  .takeaway {
+    margin-top: 26px;
+    text-align: center;
+    color: #C9A227;
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 0.4px;
+  }
+  .wordmark {
+    position: absolute;
+    right: 48px; bottom: 42px;
+    color: #C9A227;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+  }
+</style>
+</head>
+<body>
+  <div class="frame">
+    <div class="columns">
+      <div class="col ip">
+        <div class="header">IN POSITION (IP)</div>
+        <div class="equity">Realizes <span class="big">~85&ndash;100%</span> of its equity</div>
+        <ul>
+          <li>Acts last every street</li>
+          <li>Sees opponents act first</li>
+          <li>Controls the pot size</li>
+          <li>Can take free cards</li>
+        </ul>
+      </div>
+      <div class="col oop">
+        <div class="header">OUT OF POSITION (OOP)</div>
+        <div class="equity">Realizes <span class="big">~60&ndash;85%</span> of its equity</div>
+        <ul>
+          <li>Acts first every street</li>
+          <li>Commits chips blind</li>
+          <li>Can&rsquo;t take free cards</li>
+          <li>Pot runs away</li>
+        </ul>
+      </div>
+    </div>
+    <div class="vs">VS</div>
+    <div class="takeaway">Same cards, opposite results &mdash; the seat does it.</div>
+    <div class="wordmark">HoldemMaster</div>
+  </div>
+</body>
+</html>
