@@ -3,6 +3,20 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-13 (hi 힌디어 Rules 필라 6편 번역·배포 — 11개 언어 완결)
+
+### 🌐 hi(힌디어) Rules 필라 6/6 번역 (파일럿10, 인도 페르소나)
+> Fable5 한도 소진 → **전 과정 Opus로 수행**(번역 서브에이전트 6개 병렬 = model:opus, 적대적 QA 2배치 = Opus). 파이프라인=`docs/translation-spec.md` §0.5 그대로.
+- **① 웹리서치 → 브리프**: `docs/translation-terms-hi.md` 신규. 핵심결정 = **데바나가리 산문 + 라틴 영어 포커용어 인라인**(기존 hi hand-rankings/game-order 하우스 스타일 유지), **숫자 서양식 그대로(변환 없음)** — 인도 콤마체계는 lakh(10만) 경계에서만 서양식과 달라 §13 값(1,326·169·2.5·35% 등 전부 10만 미만)은 동일 → en·zh·ar·ms 계열. 라틴 숫자(0-9)·`$` 보존(₹ 금지). 문체 आप체.
+- **② 번역 6편**(Opus 병렬): 신규5 `texas-holdem-rules-for-beginners`·`holdem-betting-actions`·`holdem-blind-meaning`·`holdem-all-in-rules`·`holdem-showdown-rules` + **재번역1 `holdem-game-order`**(옛 마스터·category 한국어"초보 가이드" stale → EN 최신·`category:"rules"`로 교체). 전부 masterUpdated 기록.
+- **③ 조립**: `lib/posts-hi/index.ts` Rules 6/6 그룹핑 + 기타(hand-rankings·tournament-vs-cash). (동시편집 레이스 → 메인이 깨끗이 재작성.)
+- **④ 기계검사**: `check-intl-links` 하드페일 통과(125편·12언어), `npm run build` ✅ 247페이지·sitemap 57 blog + 125 intl, 숫자오염 grep 0(유럽식·데바나가리 숫자 없음, 영어식 1,326/169/1,300 보존), `check:stale` Rules 6편 최신(플래그된 hi 2건=hand-rankings·tournament-vs-cash=스코프 밖 기존 stale).
+- **⑤ 적대적 QA 2배치(Opus)**: §13 베스트5·팟 산수 전수 손계산 → **전부 EN 마스터와 카드 한 장도 안 틀림**(game-order A♠K♥ two pair vs 9♦9♣ trips→B승·pot 198k, all-in side pot 4인 1,300, showdown Q-J-T-9-8 straight flush, blind 2.7:1/27%). 🔴 치명결함 0.
+- **⑥ 교정 5건**(전부 안전개선): game-order readTime "16 मिनट"→"16 min"(Rules 6 통일)·어색MT "घर का पेशेवर dealer"→"टेबल पर कोई तय dealer", betting-actions showdown 내부링크 강화(허용 슬러그), blind-meaning "poker positions explained" 라틴산문 2곳 다듬기. 재빌드·링크체크 재통과.
+- **결과**: **Rules 필라 = 11개 언어 완결**(en 마스터 + ja·es·pt·de·zh·ar·id·ms·vi·**hi**). 남은 = **tr(터키어) 1개**.
+- **다음(사용자 GSC)**: hi 6 URL 색인 — `/hi/blog/texas-holdem-rules-for-beginners`·`-holdem-game-order`·`-holdem-betting-actions`·`-holdem-blind-meaning`·`-holdem-all-in-rules`·`-holdem-showdown-rules`.
+- **백로그**: hi hand-rankings·tournament-vs-cash-game 재번역(stale·category 한국어 레거시) / all-in 캡 근사·game-order 프리플랍 체크 절대표현(마스터 공통).
+
 ## 2026-07-12 (KO 이미지 전수교체 — 코드렌더 인포그래픽 85개 §13 교체·배포)
 
 ### 🖼️ KO 이미지 §13 결함 코드렌더 전수교체 (85개)

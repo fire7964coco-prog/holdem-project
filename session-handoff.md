@@ -5,7 +5,28 @@
 
 ---
 
-## ▶▶▶ 새 세션 START HERE (2026-07-13 — Rules 필라 다국어 10개 언어 완결 / 다음=hi 신규세션 → tr)
+## ▶▶▶ 새 세션 START HERE (2026-07-13 밤 — hi 힌디어 Rules 필라 완결 / 다음=tr 터키어 = **마지막 언어**)
+
+> **모드**: 다국어 Rules 필라 확장 마무리. Fable5 한도 소진 상태 → 이번 hi는 **전 과정 Opus로 수행**(번역 서브에이전트 model:opus 6개 병렬 + 적대적 QA Opus 2배치). 절차·함정은 `docs/translation-spec.md` §0.5(파이프라인)+⚑(언어별) — 작업 전 읽을 것.
+
+### ✅ 오늘(07-13 밤) 완료 — hi Rules 필라 6/6 번역 배포 (파일럿10)
+브리프(`docs/translation-terms-hi.md` 신규)→Opus 6병렬 번역→조립→빌드/링크(하드)→적대적 QA 2배치(Opus)→교정5→배포. **§13 전수 재검산 0오류**(카드 한 장도 안 틀림). 커밋=이번 세션.
+- **핵심결정(hi)**: 데바나가리 산문 + **라틴 영어 포커용어 인라인**(기존 hi 하우스 스타일). 숫자=**영어식 그대로 변환없음**(en·zh·ar·ms 계열; 인도 콤마체계는 lakh 경계에서만 달라 §13 값 전부 동일), 라틴 숫자·`$` 보존. category 한국어"초보 가이드"→"rules"(game-order 재번역분).
+- **Rules 필라 = 11개 언어 완결**: en(마스터)+ja·es·pt·de·zh·ar·id·ms·vi·**hi**. **남은 = tr 1개(마지막).**
+- **사용자 몫(GSC 색인 6 URL)**: `/hi/blog/` + texas-holdem-rules-for-beginners·holdem-game-order·holdem-betting-actions·holdem-blind-meaning·holdem-all-in-rules·holdem-showdown-rules.
+
+### ▶▶ 다음 = 🌐 tr(터키어) — Rules 필라 = **다국어 확장 마지막 언어**
+- **tr 착수**: `docs/translation-spec.md` §0.5 파이프라인 그대로(Fable5 리셋됐으면 서브에이전트, 아니면 hi처럼 Opus 직접). 먼저 터키어 웹리서치 → `docs/translation-terms-tr.md` 브리프. **숫자표기 = 터키식(천단위 `.`·소수점 `,` = 유럽식) 확인 필수**(§13 값 변환). 터키어 포커 용어(족보·액션)·문체(sen/siz) 웹리서치.
+- **tr 현재 보유 확인 필요**(`ls lib/posts-tr/`): 기존 3편(hand-rankings·game-order·tournament-vs-cash) 있으면 hi와 동일하게 신규5+game-order 재번역.
+- **tr masterUpdated**: texas 2026-07-12·game-order 2026-07-02·betting 2026-07-11·blind 2026-07-11·all-in 2026-07-12·showdown 2026-07-12. updated=착수일.
+- **백로그**: hi/tr hand-rankings·tournament-vs-cash 재번역(stale·category 레거시)·all-in 캡 근사·game-order 프리플랍 체크 절대표현(마스터 공통)·category 한국어 레거시(전 언어 기존글, 비렌더)·pt 코퍼스/street 통일.
+
+### (이미지 트랙 — 후속) 실사 11개 Nano Banana + GSC
+아래 07-12 블록 참조(사용자 몫). 콘텐츠 트랙(다국어)과 별개.
+
+---
+
+## ▶▶▶ (이전) START HERE (2026-07-13 — Rules 필라 다국어 10개 언어 완결 / 다음=hi 신규세션 → tr)
 
 > **모드**: 다국어 Rules 필라 확장. **Fable5 사용량 한도 소진** → 지금부터 **Opus로 번역·QA 직접 수행**(vi에서 검증). 절차·현지화 함정은 `docs/translation-spec.md` §0.5(파이프라인) + ⚑(언어별 하이라이트)에 전부 기록됨 — **작업 전 그 파일 읽을 것**.
 
