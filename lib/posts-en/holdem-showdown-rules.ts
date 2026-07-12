@@ -3,15 +3,15 @@ import type { Post } from "../posts";
 export const POST: Post = {
   slug: "holdem-showdown-rules",
   title: "Texas Hold'em Showdown Rules: Who Shows First, Mucking, and Slow Rolling",
-  seoTitle: "Who Flips First? — Texas Hold'em Showdown Rules, Muck & Slow Roll",
-  desc: "Who shows cards first at showdown? Can you muck without showing? Hold'em showdown rules — last aggressor, cards speak, slow roll, and all-in situations explained.",
+  seoTitle: "Who Flips First? Texas Hold'em Showdown Rules & Mucking",
+  desc: "Who shows cards first at showdown? Can you muck without showing? Hold'em showdown rules — last aggressor, cards speak, slow roll, and all-in rules explained.",
   tldr: "At showdown, the last player to bet or raise shows first. If the river was checked through, the first active player left of the button shows first. You can muck without showing if you lose, but opponents can request to see a called hand.",
   category: "초보 가이드",
   date: "2026-06-15",
-  updated: "2026-07-02",
+  updated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 min",
-  emoji: "🂠",
+  emoji: "🃏",
   tags: [
     "texas holdem showdown rules",
     "who shows cards first poker",
@@ -40,7 +40,7 @@ The rule depends on how the final betting round ended (for the full street-by-st
 |--------------------|-----------------|
 | Someone bet or raised on the river | ==The last player to bet or raise== shows first |
 | Everyone checked the river | First active player left of the dealer button shows first |
-| All-in on earlier street (no river betting) | All-in player shows first (or all hands shown simultaneously) |
+| All-in on earlier street (no river betting) | All hands tabled face-up before/during the runout |
 
 </div>
 
@@ -58,7 +58,7 @@ Once the last aggressor shows their hand, the other players can either:
 - **Show their hand** if they think they win
 - **Muck face-down** if they see they've lost — no need to reveal your cards
 
-==r:But there's one important exception:== if you called a bet on the river, your opponent paid full price to see your hand. They — or any player at the table — can request the dealer to turn up a mucked hand that was called. This is called the **"show one, show all"** principle in many cardrooms.
+==r:But there's one important exception:== if your river bet was called, the caller paid full price to see your hand. Any player dealt into the hand can ask the dealer to turn up a mucked hand that was involved in a called showdown — the **"I want to see that hand"** rule in most cardrooms. (Don't confuse it with "show one, show all," which means that if you voluntarily show your cards to one player, everyone at the table gets to see them.)
 
 Practical rule: ==if you bluffed and got called, muck quickly. If you value-bet and got called, flip your cards.==
 
@@ -68,7 +68,7 @@ Practical rule: ==if you bluffed and got called, muck quickly. If you value-bet 
 
 If nobody bet on the river (everyone checked), the showdown starts from the **first active player left of the dealer button** and proceeds clockwise.
 
-Example: Button, small blind, and big blind see the river. Button checks, SB checks, BB checks. Showdown starts from SB (first active player left of the button). SB can show or muck. Then BB. Then button last.
+Example: Button, small blind, and big blind see the river. SB checks, BB checks, Button checks. Showdown starts from the SB (first active player left of the button). SB can show or muck. Then BB. Then the button last.
 
 ==g:In this case, the button shows last== — which is actually an advantage. The button can see whether anyone beats them before deciding whether to flip.
 
@@ -83,12 +83,12 @@ When a player goes all-in and there's no more betting possible, all remaining ca
 | All-in scenario | Showdown rule |
 |----------------|---------------|
 | Player goes all-in, others call, no more betting possible | All hands shown face-up before or during runout |
-| All-in on the river (betting finalized before all-in) | Last aggressor rule applies for side pot players |
+| All-in bet on the river gets called | Normal showdown — the all-in bettor is the last aggressor and shows first |
 | Multiple all-ins creating multiple side pots | Each pot resolved separately; all involved hands shown |
 
 </div>
 
-One nuance: if there is a **side pot** (other players still have chips and keep betting), the side pot players continue betting and their showdown follows the last-aggressor rule. The all-in player's hand is shown, but side pot resolution goes last-aggressor first.
+One nuance: if there is a **side pot** (other players still have chips and keep betting), the side pot is awarded first — the last aggressor among those live bettors shows first — and then the main pot, where the all-in player's hand is shown.
 
 For how side pots are built and paid when players are all-in, see [all-in rules and side pots](/en/blog/holdem-all-in-rules); for chopped pots, see [split pot and chop rules](/en/blog/holdem-split-pot-rules).
 
@@ -118,7 +118,7 @@ You have the nuts. The opponent shows a strong hand. You pause, pretend to think
 
 ==r:Slow rolling is the fastest way to create enemies at a poker table.== It's interpreted as deliberately rubbing in a win. The unwritten rule: if you have the best possible hand, flip it immediately. There is no strategic benefit to slow rolling. The only outcome is tension.
 
-Contrast this with **tanking** — legitimately taking time to make a difficult decision. That's accepted, even respected. Slow rolling a made nuts is different.
+Contrast this with **tanking** — legitimately taking time to make a difficult decision. That's accepted, even respected. Slow rolling the nuts is different.
 
 ---
 
@@ -142,9 +142,9 @@ You bet the river. Someone calls you. You freeze and wait for them to show. That
 
 You're pretty sure you lost. You slide your cards face-down toward the muck. Dealer pulls them in. Turns out you had the winner. Hand is dead — pot gone. ==Never muck until you're certain.== Let the dealer read both hands.
 
-### Mistake 3: Demanding to see every mucked hand
+### Mistake 3: Demanding to see every called hand
 
-In many cardrooms, if you win a pot uncontested (everyone folded), you can ask to see one opponent's mucked hand — but this is considered rude if done repeatedly. It's a rule, not an etiquette invitation. Use it sparingly.
+In most cardrooms you can ask the dealer to expose a mucked hand — but only a hand that was called and reached showdown. Folded hands are dead and can never be retrieved. The request rule exists to guard against collusion, not to satisfy curiosity, and abusing it is considered rude. Use it sparingly.
 
 ### Mistake 4: Not knowing you can show early
 

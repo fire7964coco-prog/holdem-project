@@ -2,13 +2,13 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "holdem-all-in-rules",
-  title: "Texas Hold'em All-In Rules: Side Pots, Reraises & Showdown",
-  seoTitle: "Went All-In and Still Confused? — Texas Hold'em All-In Rules & Side Pots",
-  desc: "Shoved all your chips and not sure what you can even win? Texas Hold'em all-in rules — table stakes, side pots, re-raise eligibility, and showdown order, explained.",
+  title: "Texas Hold'em All-In Rules: Side Pots, Re-Raises & Showdown",
+  seoTitle: "Went All-In and Confused? — Hold'em All-In Rules & Side Pots",
+  desc: "Shoved all your chips and not sure what you can win? Texas Hold'em all-in rules — table stakes, side pots, re-raise eligibility, and showdown order.",
   tldr: "Going all-in means betting every chip you have. You can only win what you matched from each opponent (the main pot). Extra bets from bigger stacks form a side pot you cannot win. An all-in for less than a full raise does NOT reopen the betting for players who already acted.",
   category: "초보 가이드",
   date: "2026-06-15",
-  updated: "2026-07-03",
+  updated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "♠",
@@ -60,7 +60,7 @@ Two valid ways:
 
 **2. Push all chips forward** — Slide your entire stack toward the center in one clean motion. Pushing chips forward in pieces can look like a string bet, so move everything at once.
 
-![Texas Hold'em all-in declaration — dealer separates main pot and side pot chips on green felt after player goes all-in](/images/holdem-all-in-declare.webp)
+![Texas Hold'em all-in showdown — a K♠ 10♣ 7♦ 4♥ 2♣ board with chips separated into a labeled main pot and side pot](/images/holdem-all-in-declare.webp)
 
 ==r:Never push a single chip forward without saying anything — the dealer counts it as just that chip's value, not your full stack.== Always declare "all-in" out loud, or move your entire stack at once.
 
@@ -108,7 +108,7 @@ This is where it gets complicated — and where most beginners get lost.
 
 </div>
 
-The rule: ==each side pot is built by taking the next-smallest stack's contribution × the number of players who match it.== Work from smallest stack to largest.
+The rule: ==each side pot is built by taking the difference up to the next-smallest stack × the number of players who match it.== Work from smallest stack to largest.
 
 ---
 
@@ -122,7 +122,7 @@ The rule: ==each side pot is built by taking the next-smallest stack's contribut
 
 **Example:**
 
-Blinds $1/$2. Pot is 4-way.
+Blinds $1/$2. Four players see the flop.
 
 1. Player A bets $10.
 2. Player B raises to $25.
@@ -148,9 +148,9 @@ Why does this exist? It protects players from being forced into larger raises by
 
 This is the version that trips up even regulars. Multiple short all-ins can **add up** to a full raise — and if their combined increments reach the threshold, betting reopens for players who already acted.
 
-This is TDA Rule 47 (the official tournament directors rule), and most card rooms follow it.
+This is the official TDA "re-opening the bet" rule, and most card rooms follow it.
 
-**Example (Blinds $1/$2):**
+**Example (Blinds $1/$2, on the flop):**
 
 1. Player A bets $10.
 2. Player B goes all-in for **$14** (+$4 increment — not a full raise alone)
@@ -170,7 +170,7 @@ Combined increments: $4 + $7 = **$11** — that meets the $10 minimum raise thre
 
 </div>
 
-The minimum raise threshold is always the *last full valid raise* — not any cumulative total.
+The minimum raise threshold is always the *last full valid bet or raise* — not any cumulative total.
 
 ### Quick Decision Guide — Does This All-In Reopen Betting?
 
@@ -251,7 +251,7 @@ A. Table stakes means you can only wager chips that were in front of you when th
 
 **Q. If two players go all-in for different amounts, who shows first?**
 
-A. The last all-in bet is treated as the last aggressive action. Standard showdown rules apply: the last player to make an all-in or aggressive move shows first. If it was a called all-in with no further action, the caller can muck if they lose after seeing the all-in player's hand.
+A. The last all-in bet is treated as the last aggressive action. Standard showdown rules apply: the last player to make an all-in or aggressive move shows first. In cash games, if it was a called all-in with no further action, the caller can muck if they lose after seeing the all-in player's hand (in tournaments all involved hands stay face-up).
 
 **Q. Are all-in rules different in tournaments vs. cash games?**
 
