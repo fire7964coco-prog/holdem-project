@@ -6,7 +6,7 @@ export const POST: Post = {
   seoTitle: "Chips sind nicht immer Geld — Turnier vs Cash Game",
   desc: "Cash Games und Turniere sehen wie dasselbe Texas Hold'em aus, doch Chipwert, Blinds, Bankroll, Varianz und ICM sind völlig anders. Der Vergleich für Anfänger.",
   tldr: "Im Cash Game entsprechen Chips echtem Geld und die Blinds bleiben meist gleich. Im Turnier sind Chips dein Turnierleben, die Blinds steigen und Auszahlungen hängen von deiner Platzierung ab.",
-  category: "토너먼트",
+  category: "tournament",
   date: "2026-06-11",
   updated: "2026-06-11",
   hideSummaryImageSlot: true,

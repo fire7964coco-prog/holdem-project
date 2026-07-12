@@ -2,195 +2,231 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "holdem-game-order",
-  title: "Texas Hold'em Regeln: so läuft eine Hand von Blind bis Showdown",
-  seoTitle: "Wann musst du setzen? — Texas Hold'em Ablauf einfach erklärt",
-  desc: "Du willst Texas Hold'em lernen, aber weißt am Tisch nicht, wann du setzen, callen oder folden sollst? Hier bekommst du den kompletten Ablauf einer Hand: Blinds, Preflop, Flop, Turn, River und Showdown, erklärt an einer echten Beispielhand.",
-  tldr: "Eine Texas-Hold'em-Hand läuft so ab: Blinds setzen → 2 Hole Cards bekommen → Preflop → Flop (3 Karten) → Turn (1 Karte) → River (1 Karte) → Showdown. Insgesamt gibt es 4 Setzrunden.",
-  category: "초보 가이드",
+  title: "Texas Hold'em Spielablauf: Die Reihenfolge einer Hand — von den Blinds bis zum Showdown",
+  seoTitle: "Wann bist du dran? — Texas Hold'em Ablauf & Reihenfolge",
+  desc: "Nie sicher, wann du beim Hold'em dran bist? Der komplette Ablauf einer Hand — Preflop, Flop, Turn, River, Showdown — Schritt für Schritt mit Beispielhand.",
+  tldr: "Eine Texas-Hold'em-Hand läuft so ab: Blinds setzen → zwei Hole Cards erhalten → Preflop → Flop (3 Karten) → Turn (1 Karte) → River (1 Karte) → Showdown — mit insgesamt vier Setzrunden.",
+  category: "rules",
   date: "2026-06-10",
-  updated: "2026-06-10",
+  updated: "2026-07-12",
+  masterUpdated: "2026-07-02",
   keepImagesInBody: true,
   readTime: "16 Min.",
   emoji: "🎬",
-  tags: ["texas holdem regeln", "texas holdem ablauf", "poker lernen", "poker regeln einfach erklärt", "preflop flop turn river", "poker setzrunden", "wann setzen poker", "poker anfänger"],
+  image: "/images/blog-holdem-game-flow.webp",
+  imageAlt: "Texas Hold'em Spielablauf als Diagramm — Blinds, Preflop, Flop, Turn, River und Showdown, alle sechs Phasen",
+  tags: ["texas holdem ablauf", "texas holdem reihenfolge", "poker spielablauf", "preflop flop turn river", "poker setzrunden", "wer ist zuerst dran poker", "ablauf einer pokerhand", "poker showdown"],
   content: `
-Fast jeder, der zum ersten Mal Texas Hold'em spielt, hat denselben Moment: *"Warte mal ... wer ist jetzt dran, und wann muss ich Chips in die Mitte legen?"* Du weißt, dass Karten ausgeteilt werden. Aber wann du setzt, wann die nächste Karte kommt und wie am Ende der Sieger bestimmt wird, wirkt am Anfang wie ein Chaos.
+Jeder, der sich zum ersten Mal an einen Texas-Hold'em-Tisch setzt, fragt sich dasselbe: ==r:*„Moment — wer ist eigentlich dran, und wann lege ich Geld in die Mitte?“*== Dass du Karten bekommst, weißt du. Was du nicht weißt: wann gesetzt wird, wann neue Karten kommen und wie der Gewinner am Ende wirklich bestimmt wird.
 
-Genau dieses Chaos räumen wir hier auf. Du bekommst den Ablauf einer kompletten Hand in sechs klaren Phasen, eine Beispielhand mit echten Karten und Potgrößen, alle sieben Setz-Aktionen, die zehn Pokerhände und fünf typische Anfängerfehler, die still und leise Chips kosten. Einmal lesen, und du kannst dich heute an den Tisch setzen.
+Das hier ist der **Leitfaden zum Spielablauf**: Blinds, Preflop, Flop, Turn, River, Showdown — und wer an welcher Stelle zuerst handelt. Wenn du komplett neu bist und das ganze Anfängerpaket willst — Regeln, Chips, Pokerhände, erste Strategie und ein PDF zum Ausdrucken — starte mit den [Texas Hold'em Regeln für Anfänger](/de/blog/texas-holdem-rules-for-beginners "thumb:/images/rules-texas-holdem.webp"). Danach kommst du hierher zurück für den detaillierten Ablauf einer Hand.
 
 ---
 
 ### Eine Hand in 15 Sekunden
 
-Blinds setzen (Pflichteinsätze) → jeder Spieler bekommt 2 **Hole Cards** → **Preflop**-Setzrunde → 3 Karten als **Flop** aufdecken → setzen → **Turn** aufdecken → setzen → letzte Karte, den **River**, aufdecken → setzen → verbleibende Spieler zeigen ihre Karten im **Showdown** → die beste Fünf-Karten-Hand gewinnt.
+Blinds setzen (Pflichteinsätze) → jeder Spieler erhält zwei **Hole Cards** → **Preflop**-Setzrunde → drei **Flop**-Karten werden aufgedeckt → setzen → die **Turn**-Karte kommt dazu → setzen → die letzte **River**-Karte wird aufgedeckt → setzen → die verbliebenen Spieler gehen in den Showdown → die beste Fünf-Karten-Hand gewinnt.
 
-![Texas-Hold'em-Ablauf — von den Blinds bis zum Showdown](/images/blog-holdem-game-flow.webp "Die sechs Phasen einer Texas-Hold'em-Hand, von den Blinds bis zum Showdown")
+![Texas Hold'em Reihenfolge — Blinds, Preflop, Flop, Turn, River, Showdown](/images/blog-holdem-game-flow.webp "Die sechs Phasen einer Texas-Hold'em-Hand, von den Blinds bis zum Showdown")
 
 ---
 
 ## Was ist Texas Hold'em?
 
-Texas Hold'em ist die meistgespielte Pokervariante der Welt. Vom WSOP Main Event bis zur Runde mit Freunden: Wenn jemand "Poker" sagt, meint er fast immer Hold'em.
+Texas Hold'em ist die meistgespielte Pokervariante der Welt. Vom WSOP Main Event bis zur lockeren Homegame-Runde: Wenn jemand „Poker“ sagt, ist fast immer Hold'em gemeint.
 
-Die Grundregel ist simpel: Du bildest die **beste Hand aus fünf Karten**, indem du deine **2 Hole Cards** mit den **5 Gemeinschaftskarten** auf dem Board kombinierst. Glück entscheidet, welche Karten du bekommst. Aber der Ablauf der Hand und die Entscheidungen in jeder Setzrunde entscheiden, ob du Chips gewinnst oder verbrennst.
+Die Grundregel ist simpel: Du bildest deine **beste Fünf-Karten-Hand** aus deinen **zwei verdeckten Hole Cards plus fünf gemeinsamen Gemeinschaftskarten**. Das Glück teilt die Karten aus — aber den Spielablauf zu verstehen und in jeder Phase die richtige Entscheidung zu treffen, das trennt Gewinner vom Rest.
 
 ---
 
 ## Vor dem Austeilen: Button und Blinds
 
-Bevor eine einzige Karte ausgeteilt wird, steuern zwei Dinge den Tisch: der **Dealer-Button** und die **Blinds**.
+Bevor auch nur eine Karte kommt, richten zwei Dinge den Tisch ein: der **Dealer-Button** und die **Blinds**.
 
-Der **Button** (meist mit "D" markiert) zeigt die Dealerposition dieser Hand. Auch wenn ein echter Dealer die Karten gibt, bestimmt der Button die Reihenfolge der Aktionen. Nach jeder Hand wandert er im Uhrzeigersinn einen Platz weiter.
+Der **Dealer-Button (kurz „Button“, markiert mit D)** ist eine runde Scheibe, die anzeigt, wer in dieser Hand „am Geben“ ist. Auch wenn ein Croupier die Karten austeilt: Der Button bestimmt die Setzreihenfolge — und er wandert nach jeder Hand einen Platz im Uhrzeigersinn weiter.
 
-Die **Blinds** sind Pflichteinsätze vor dem Austeilen. Ohne Blinds könnten alle kostenlos checken und folden. Die Blinds bringen Chips in den Pot und geben allen einen Grund, um die Hand zu kämpfen.
+Die **Blinds** sind Pflichteinsätze, die vor dem Austeilen gesetzt werden. Ohne sie könnte jeder einfach kostenlos checken und folden; ==g:die Blinds legen Geld in die Mitte und geben allen einen Grund, um den Pot zu kämpfen==. (Noch neu für dich? Hier steht genau, [wie Small Blind und Big Blind funktionieren](/de/blog/holdem-blind-meaning).)
+
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Blind | Position | Beispiel |
-|------|------|------|
-| Small Blind (SB) | direkt links vom Button | 1.000 |
-| Big Blind (BB) | zwei Plätze links vom Button | 2.000 |
+|:---|:---|:---:|
+| Small Blind (SB) | Erster Platz links vom Button | 1.000 |
+| Big Blind (BB) | Zweiter Platz links vom Button | 2.000 |
 
-Blinds sind nicht nur Eintrittsgeld. Sie sind der Startpunkt für Position, Druck und Strategie.
+</div>
+
+Die Blinds sind nicht nur eine Eintrittsgebühr — ==sie sind der Ausgangspunkt von Position und Strategie==.
 
 ---
 
-## Phase 1 — Preflop: die erste Entscheidung setzt die Richtung
+## Phase 1 — Preflop: Die erste Entscheidung gibt den Ton an
 
-Nachdem die Blinds gesetzt sind, gibt der Dealer jedem Spieler 2 verdeckte **Hole Cards**. Nur du siehst sie. Jetzt beginnt die **Preflop**-Setzrunde.
+Sobald die Blinds stehen, erhält jeder Spieler zwei verdeckte **Hole Cards**. Nur du kannst sie sehen — und die **Preflop**-Setzrunde beginnt.
 
-Die Aktion startet links vom Big Blind und läuft im Uhrzeigersinn. Wenn du dran bist, hast du diese Optionen:
+Die Action startet links vom Big Blind und läuft im Uhrzeigersinn. Wenn du dran bist, wählst du eine dieser Optionen:
 
-- **Folden** — die Hand aufgeben und die Karten weglegen. Du verlierst nichts weiter, kannst aber den Pot nicht mehr gewinnen.
-- **Callen** — den aktuellen Einsatz bezahlen (preflop meist den Big Blind).
-- **Raisen** — mehr setzen als der aktuelle Einsatz, um Druck aufzubauen.
-- **3-betten** — über ein Raise noch einmal erhöhen. Meist ein Signal für eine starke Hand.
+- **Fold** — du gibst die Hand auf und schiebst deine Karten weg. Du verlierst nichts mehr, gewinnst aber auch nichts.
+- **Call** — du gehst den aktuellen Einsatz mit (preflop ist das der Big Blind).
+- **Raise** — du erhöhst über den Big Blind und setzt die Gegner unter Druck.
+- **3-Bet** — ein Raise über den Raise eines anderen. Ein klares Signal für eine starke Hand.
 
-Der teuerste Anfängerfehler ist der Satz: "Ich will nur den Flop sehen." Gute Spieler folden preflop sehr viele Hände und spielen oft nur etwa **15 % bis 25 %** aller Starthände.
+==r:Die meisten Anfänger spielen fast jede Hand, „nur um mal den Flop zu sehen“. Das ist die teuerste Angewohnheit im ganzen Poker.== ==g:**Gute Spieler folden preflop die meisten ihrer Hände und spielen nur etwa 15–25 % davon.**==
 
 ### Solide Starthände für Anfänger
 
-- **Premium:** A♠A♥ (Pocket Aces), K♠K♥, Q♠Q♥, J♠J♥
-- **Stark:** A♠K♥ ("Big Slick"), A♠Q♥, A♠J♥, 10♠10♥
-- **Situationsabhängig:** 9♠9♥, 8♠8♥, K♠Q♥, K♠J♥
+- **Premium:** A♠A♥ (Pocket-Asse), K♠K♥, Q♠Q♥, J♠J♥
+- **Stark:** A♠K♥ („Big Slick“), A♠Q♥, A♠J♥, 10♠10♥
+- **Situativ:** 9♠9♥, 8♠8♥, K♠Q♥, K♠J♥
+
+Welche davon du tatsächlich openen kannst, hängt von deinem Sitzplatz ab — je näher am Button, desto mehr Hände kommen infrage.
 
 ---
 
-## Phase 2 — Flop: drei Gemeinschaftskarten
+## Phase 2 — Der Flop: Drei Gemeinschaftskarten
 
-Wenn die Preflop-Setzrunde beendet ist, deckt der Dealer 3 **Gemeinschaftskarten** in der Tischmitte auf. Das ist der **Flop**.
+Wenn die Preflop-Setzrunde endet, deckt der Dealer drei **Gemeinschaftskarten** in der Tischmitte auf. Das ist der **Flop**.
 
-Jetzt kannst du zum ersten Mal eine echte Fünf-Karten-Hand lesen: deine zwei Hole Cards plus die drei Karten auf dem Board. Achte gleichzeitig auf zwei Dinge:
+Jetzt kannst du zum ersten Mal eine echte Fünf-Karten-Hand lesen: deine zwei Hole Cards plus die drei Karten auf dem Board. Achte dabei auf zwei Dinge gleichzeitig:
 
-- **Was du jetzt hast** — ein Paar, zwei Paare, oder noch gar nichts.
-- **Was noch werden kann** — ein **Draw** zu Flush oder Straße, der sich auf Turn oder River vervollständigen kann.
+- **Was du jetzt hast** — ein Paar, zwei Paare oder noch gar nichts.
+- **Was du noch machen kannst** — ein Flush- oder Straßen-**Draw**, der auf den späteren Karten noch ankommen kann.
 
-![Flop, Turn, River — Reihenfolge der Gemeinschaftskarten](/images/blog-holdem-card-stages.webp "Am Flop kommen drei Karten, am Turn eine, am River eine")
+![Infografik der drei Streets im Texas Hold'em — Flop K♥ 7♦ 2♣, Turn 9♠, River Q♥](/images/blog-holdem-card-stages.webp "Die Streets: drei Karten am Flop, dann je eine am Turn und am River")
 
-Ab dem Flop gibt es eine neue Option: **checken**. Wenn noch niemand gesetzt hat, kannst du ohne Einsatz weiterschieben. Setzt danach ein Gegner, musst du callen, raisen oder folden.
-
----
-
-## Phase 3 — Turn: das Bild wird klarer
-
-Nach der Flop-Setzrunde kommt eine weitere Gemeinschaftskarte dazu: der **Turn**. Jetzt liegen vier Karten auf dem Board.
-
-Der Turn ist strategisch eine sehr wichtige Street:
-
-- Ist dein Straight- oder Flush-Draw angekommen?
-- Was verraten die Aktionen deines Gegners preflop und am Flop über seine Range?
-- Ist diese Hand stark genug, um sie bis zum River weiterzuspielen?
-
-Wenn du am Turn passiv checkst und am River plötzlich groß setzt, wirkt deine Geschichte oft unglaubwürdig. **Mit starken Händen solltest du am Turn den Pot aufbauen**, solange Gegner noch bereit sind zu callen.
+Der Flop schaltet außerdem eine neue Option frei: den **Check**. Solange noch niemand gesetzt hat, kannst du checken und die Action weitergeben, ohne Chips zu investieren. Setzt aber ein Gegner nach deinem Check, musst du callen, raisen oder folden.
 
 ---
 
-## Phase 4 — River: die letzte Karte, die letzte Entscheidung
+## Phase 3 — Der Turn: Das Bild wird schärfer
 
-Nach der Turn-Setzrunde wird die fünfte und letzte Gemeinschaftskarte aufgedeckt: der **River**. Das Board ist komplett. Es kommen keine neuen Karten mehr.
+Nach der Setzrunde am Flop wird eine weitere Gemeinschaftskarte aufgedeckt — der **Turn**. Jetzt liegen vier Karten auf dem Board.
 
-Typische Anfängerfehler am River:
+Der Turn ist eine strategisch besonders wichtige Street:
 
-- **Mit schwacher Hand bis zum Ende callen** — die Falle "Ich bin schon so weit gekommen".
-- **Mit starker Hand passiv checken** — du gibst dem Gegner einen kostenlosen Showdown.
-- **Plötzlich bluffen** — wenn du vorher passiv warst, erzählt ein großer River-Bet keine glaubwürdige Geschichte.
+- Ist dein Straßen- oder Flush-Draw angekommen?
+- Was verraten die Preflop- und Flop-Aktionen deines Gegners über seine Range?
+- Ist diese Hand es wert, bis zum River mitgenommen zu werden?
 
-Am River schließt du die ganze Hand ab. Kombiniere die Stärke deiner Hand, das Setzverhalten des Gegners und das komplette Board, bevor du die letzte Entscheidung triffst.
+==r:Wer am Turn passiv checkt und dann am River plötzlich eine große Bet abfeuert, wird von aufmerksamen Gegnern als schwach gelesen.== ==g:**Mit einer starken Hand: Setz am Turn und bau den Pot auf**==, solange dein Gegner noch bereit ist zu callen.
 
 ---
 
-## Phase 5 — Showdown: die beste Fünf-Karten-Hand gewinnt
+## Phase 4 — Der River: Letzte Karte, letzte Entscheidung
 
-Sind nach der River-Setzrunde noch mindestens zwei Spieler in der Hand, kommt es zum **Showdown**.
+Nach der Setzrunde am Turn wird die fünfte und letzte Gemeinschaftskarte aufgedeckt — der **River**. Alle fünf Gemeinschaftskarten liegen jetzt offen, und es kommt keine neue Information mehr.
 
-![Poker-Showdown — Spieler zeigen ihre Karten und der Pot wird vergeben](/images/blog-holdem-showdown.webp "Im Showdown zeigen die verbleibenden Spieler ihre Karten, die beste Fünf-Karten-Hand gewinnt")
+Die Klassiker unter den River-Fehlern:
+
+- **Mit einer schwachen Hand bis zum bitteren Ende callen** — die „Jetzt bin ich schon so weit gekommen“-Falle.
+- **Eine starke Hand passiv checken** — damit schenkst du deinem Gegner einen kostenlosen Showdown.
+- **Ein plötzlicher River-Bluff aus dem Nichts** — wer auf allen früheren Streets passiv war, erzählt mit einer großen River-Bet selten eine glaubwürdige Geschichte.
+
+Am River wird die ganze Hand abgerechnet. Wäge deine Handstärke, das Setzmuster deines Gegners und das komplette Board ab — dann triff deine letzte Entscheidung.
+
+---
+
+## Phase 5 — Showdown: Die besten fünf Karten gewinnen
+
+Sind nach der Setzrunde am River noch zwei oder mehr Spieler dabei, geht die Hand in den **Showdown**.
+
+![Poker-Showdown-Infografik — auf dem Board 10♣ 7♥ J♦ 4♠ 9♣ schlagen die Pocket-Asse A♥ A♦ die Pocket-Könige K♥ K♣](/images/blog-holdem-showdown.webp "Im Showdown decken die verbliebenen Spieler ihre Karten auf — hier gewinnt das höhere Paar, Asse über Könige")
 
 Die Showdown-Regeln:
 
-- Jeder Spieler bildet die **beste Fünf-Karten-Hand** aus 2 Hole Cards und 5 Gemeinschaftskarten.
-- Du musst nicht beide Hole Cards benutzen. Eine reicht, oder sogar keine, wenn das Board selbst deine beste Hand ist.
-- Zuerst zeigt der Spieler, der die letzte aggressive Aktion gemacht hat (Bet oder Raise). Wenn am River nur gecheckt wurde, zeigt der erste aktive Spieler links vom Button.
-- Wer verliert, darf seine Karten verdeckt wegwerfen (**mucken**).
-- Bei gleich starker Hand wird der Pot geteilt (**Split Pot** oder **Chop**).
+- Jeder Spieler bildet seine **beste Fünf-Karten-Hand** aus seinen zwei Hole Cards und den fünf Gemeinschaftskarten.
+- Du musst nicht beide Hole Cards benutzen — du kannst auch nur eine spielen oder sogar nur das Board (keine eigene Karte), wenn das deine besten fünf sind.
+- Der Spieler mit der letzten aggressiven Aktion (Bet oder Raise) zeigt zuerst; wurde am River nur gecheckt, zeigt zuerst der **erste aktive Spieler** links vom Button.
+- Ein unterlegener Spieler darf einfach **mucken** (folden, ohne zu zeigen).
+- Bei exakt gleichen Händen wird der Pot **geteilt** („Split Pot“) — zu gleichen Teilen.
+
+Wer zuerst zeigen muss, wann du mucken darfst und was es mit der Etikette rund ums Slow-Rolling auf sich hat, steht ausführlich in den [Showdown-Regeln](/de/blog/holdem-showdown-rules).
+
+---
+
+## Wer handelt zuerst auf jeder Street?
+
+„Wer ist dran?“ hat vor und nach dem Flop eine unterschiedliche Antwort — und genau dieser Wechsel ist der Motor hinter jeder Positionsstrategie.
+
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
+
+| Street | Handelt zuerst | Handelt zuletzt |
+|------|------|------|
+| Preflop | Spieler links vom Big Blind („UTG“) | Big Blind |
+| Flop | Small Blind (bzw. erster aktiver Spieler links vom Button) | Button |
+| Turn | Wie am Flop | Button |
+| River | Wie am Flop | Button |
+
+</div>
+
+Die Eselsbrücke: ==**Vor dem Flop schaust du links vom Big Blind — nach dem Flop links vom Button.**== Der Button handelt auf jeder Postflop-Street als Letzter, und genau deshalb ist er der profitabelste Platz am Tisch — von UTG bis zum Button entscheidet die Position mit, welche Hände du überhaupt spielen solltest.
+
+==g:**Heads-up (2 Spieler) ist die Ausnahme:**== Der Button zahlt den *Small* Blind und handelt preflop **zuerst** — auf Flop, Turn und River aber **zuletzt**. Genau diese Reihenfolge gilt auch in der kompletten Beispielhand weiter unten.
 
 ---
 
 ## Der komplette Ablauf auf einen Blick
 
-| Phase | Was passiert | Gemeinschaftskarten | Setzen? |
-|------|------|------|------|
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
+
+| Phase | Was passiert | Gemeinschaftskarten | Setzrunde? |
+|:---|:---|:---:|:---|
 | Blinds | SB und BB setzen Pflichteinsätze | 0 | Pflicht |
-| Preflop | 2 Hole Cards werden ausgeteilt → Setzrunde | 0 | ✅ |
-| Flop | 3 Gemeinschaftskarten werden aufgedeckt | 3 | ✅ |
-| Turn | 1 weitere Gemeinschaftskarte | 4 | ✅ |
-| River | letzte Gemeinschaftskarte | 5 | ✅ |
-| Showdown | beste 5 Karten vergleichen → Sieger | 5 | — |
+| Preflop | Zwei Hole Cards werden ausgeteilt → setzen | 0 | ✅ |
+| Flop | Drei Gemeinschaftskarten werden aufgedeckt | 3 | ✅ |
+| Turn | Eine weitere Gemeinschaftskarte | 4 | ✅ |
+| River | Letzte Gemeinschaftskarte | 5 | ✅ |
+| Showdown | Beste fünf Karten im Vergleich → Gewinner | 5 | — |
 
-### ⚡ Jede Street in einem Satz
+</div>
 
-- **Preflop** = Start (Entscheidung nur mit deinen zwei Karten)
-- **Flop** = Veränderung (drei Karten öffnen neue Möglichkeiten)
-- **Turn** = Entscheidung (letzte echte Chance, den River zu planen)
-- **River** = Abschluss (alle Karten sind da, letzte Setzrunde)
-- **Showdown** = Ergebnis (die beste Fünf-Karten-Hand nimmt den Pot)
+### ⚡ Ein Merksatz pro Street
+
+- **Preflop** = Start (du entscheidest allein anhand deiner zwei Karten)
+- **Flop** = Wendepunkt (drei Karten öffnen die Möglichkeiten)
+- **Turn** = Entscheidung (deine letzte echte Chance, den River zu planen)
+- **River** = Abschluss (alle Karten liegen, letzte Bet)
+- **Showdown** = Ergebnis (die besten fünf Karten holen den Pot)
 
 ---
 
-## Eine komplette Beispielhand Schritt für Schritt
+## Eine komplette Hand, Schritt für Schritt
 
-![Komplette Texas-Hold'em-Beispielhand — von Preflop bis Showdown](/images/holdem-game-example-fullhand.webp "Eine komplette Hand über alle Streets bis zum Showdown verfolgen")
+![Eine komplette Texas-Hold'em-Beispielhand — von Preflop bis zum Showdown](/images/holdem-game-example-fullhand.webp "Eine ganze Hand über alle Streets bis zum Showdown verfolgt")
 
-Theorie klingt trocken. Spielen wir deshalb eine Heads-up-Hand (eins gegen eins) mit echten Karten und echten Potgrößen durch.
+Über Streets zu lesen bleibt abstrakt. Also spielen wir eine einzelne Heads-up-Hand von der ersten bis zur letzten Karte durch — mit echten Karten und echten Chipbeträgen.
 
-**Situation:** Heads-up. Blinds SB 1.000 / BB 2.000.
+**Setup:** Heads-up. Blinds SB 1.000 / BB 2.000.
 
 - **Spieler A (du):** A♠ K♥ (Ass-König offsuit)
-- **Spieler B (Gegner):** 9♦ 9♣ (Pocket Nines)
+- **Spieler B (Gegner):** 9♦ 9♣ (Pocket-Neunen)
 
 ### Preflop
 
-A raist mit Big Slick auf **6.000**. B callt mit Pocket Nines.
+A raist mit Big Slick auf **6.000**. B callt mit den Pocket-Neunen.
 **Pot: 12.000**
 
 ### Flop: K♦ 9♠ 3♥
 
-- **A:** Top Pair mit bestem Kicker (König-Paar). Das sieht stark aus.
-- **B:** drei Neunen, also ein **Set**. Schon jetzt eine Monsterhand.
+- **A:** Top Pair mit Top Kicker (ein Paar Könige). Sieht stark aus.
+- **B:** drei Neunen — ein **Set**. Schon jetzt ein Monster.
 
 B checkt, A setzt **8.000**, B callt.
 **Pot: 28.000**
 
 ### Turn: 2♣
 
-- **A:** unverändert, immer noch König-Paar.
-- **B:** weiterhin Set, keine Verbesserung nötig.
+- **A:** keine Veränderung, weiterhin Top Pair.
+- **B:** weiterhin ein Set — muss sich nicht mehr verbessern.
 
 B checkt, A setzt **15.000** (etwa halber Pot), B callt.
 **Pot: 58.000**
 
 ### River: A♥
 
-- **A:** Das Ass paart sich. Jetzt hat A **zwei Paare (Asse und Könige)** und setzt selbstbewusst **30.000**.
-- **B:** Das Set schlägt zwei Paare immer noch klar. B raist auf **70.000**.
-- **A:** überzeugt, dass zwei Paare gut genug sind, und callt.
+- **A:** das Ass paart sich — jetzt **zwei Paare, Asse und Könige**. Fühlt sich großartig an, setzt **30.000**.
+- **B:** das Set schlägt zwei Paare nach wie vor. Raist auf **70.000**.
+- **A:** überzeugt, dass zwei Paare vorne liegen — callt.
 
 **Pot: 198.000**
 
@@ -199,130 +235,162 @@ B checkt, A setzt **15.000** (etwa halber Pot), B callt.
 - A: A♠ K♥ + A♥ K♦ 9♠ → **zwei Paare (Asse und Könige)**
 - B: 9♦ 9♣ + 9♠ K♦ A♥ → **Drilling (Neunen)**
 
-**Sieger: B** — ein Drilling schlägt zwei Paare.
+**Gewinner: B** — ein Drilling schlägt zwei Paare.
 
-Die Lektion: Der River fühlt sich für A wie eine Traumkarte an, weil aus Top Pair plötzlich zwei Paare werden. Aber B hatte seit dem Flop ein Set. **Lies nicht nur, wie sich deine eigene Hand verbessert. Lies das ganze Board.**
+Die Lektion: ==r:Als der River die Hand von A zu zwei Paaren verbesserte, *fühlte* sie sich wie der Gewinner an — aber B hatte seit dem Flop die ganze Zeit ein Set.== ==g:**Das ganze Board zu lesen — nicht nur die eigene Verbesserung — ist der Kern von Hold'em.**==
 
 ---
 
-## Die 7 Setz-Aktionen erklärt
+## Die 7 Setzaktionen, komplett erklärt
 
-![Poker-Setzaktionen — checken, callen, folden, setzen, raisen, 3-betten, all-in](/images/holdem-betting-options-guide.webp "Alle Setz-Aktionen, die du in Texas Hold'em verwenden kannst")
+![Die Setzaktionen im Poker — Check, Call, Fold, Bet, Raise, Re-Raise, All-in](/images/holdem-betting-options-guide.webp "Jede Setzaktion, die dir im Texas Hold'em zur Verfügung steht")
 
-Das sind alle Aktionen am Tisch, die Anfänger am häufigsten durcheinanderbringen.
+Hier ist jede Aktion, die dir am Tisch zur Verfügung steht — der Teil, den Anfänger am häufigsten durcheinanderbringen.
 
-| Aktion | Bedeutung | Wann möglich |
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
+
+| Aktion | Was sie bewirkt | Wann verfügbar |
 |------|------|------|
-| Folden | Hand aufgeben, Karten weglegen | jederzeit |
-| Checken | ohne Einsatz weiterschieben | nur wenn vor dir niemand gesetzt hat |
-| Callen | den aktuellen Einsatz bezahlen | wenn vor dir gesetzt wurde |
-| Setzen (Bet) | als Erster in der Runde Chips setzen | wenn noch niemand gesetzt hat |
-| Raisen | den aktuellen Einsatz erhöhen | wenn vor dir gesetzt wurde |
-| 3-betten / Re-raisen | über ein Raise erneut erhöhen | wenn vor dir geraist wurde |
-| All-in | alle Chips setzen | jederzeit |
+| Fold | Hand aufgeben, Karten wegschieben | Jederzeit |
+| Check | Action weitergeben, ohne zu setzen | Nur wenn keine Bet vor dir liegt |
+| Call | Den aktuellen Einsatz mitgehen | Wenn eine Bet vor dir liegt |
+| Bet | Den ersten Einsatz einer Runde machen | Wenn noch niemand gesetzt hat |
+| Raise | Über den aktuellen Einsatz erhöhen | Wenn eine Bet vor dir liegt |
+| Re-Raise (3-Bet) | Über einen Raise erhöhen | Wenn ein Raise vor dir liegt |
+| All-in | Alle eigenen Chips setzen | Jederzeit |
 
-**Wichtig:** Preflop kannst du nicht einfach checken, weil der Big Blind bereits ein aktiver Einsatz ist. Checken ist erst ab dem Flop möglich.
+</div>
+
+==r:**Wichtig:** Preflop kannst du nicht checken==, denn der Big Blind zählt bereits als aktive Bet. ==Checken ist erst ab dem Flop möglich.==
+
+Einen tieferen Entscheidungs-Guide dazu, wann welcher Zug der richtige ist — inklusive Check-Call-Raise-Fold-Entscheidungstabelle — findest du unter [Setzaktionen im Poker erklärt](/de/blog/holdem-betting-actions).
 
 ---
 
 ## Die 10 Pokerhände, die du kennen musst
 
-Um im Showdown zu gewinnen, musst du sofort wissen, welche Hand welche schlägt. Das ist die **Reihenfolge der Pokerhände**.
+Um im Showdown zu gewinnen, musst du sofort wissen, welche Hand welche schlägt. Das ist die **Rangfolge der Pokerhände**.
+
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Rang | Hand | Beispiel | Häufigkeit |
 |------|------|------|------|
-| 1 | Royal Flush | A♠ K♠ Q♠ J♠ 10♠ | extrem selten |
-| 2 | Straight Flush | 5♥ 6♥ 7♥ 8♥ 9♥ | sehr selten |
-| 3 | Vierling | A♠ A♥ A♦ A♣ K♠ | selten |
-| 4 | Full House | K♠ K♥ K♦ A♠ A♥ | gelegentlich |
-| 5 | Flush | A♠ K♠ 8♠ 5♠ 2♠ | gelegentlich |
-| 6 | Straße | 5♥ 6♠ 7♦ 8♣ 9♥ | manchmal |
-| 7 | Drilling | Q♠ Q♥ Q♦ 5♠ 7♥ | manchmal |
-| 8 | Zwei Paare | J♠ J♥ 8♦ 8♣ A♠ | häufig |
-| 9 | Paar | K♠ K♥ 7♦ 4♣ 2♠ | sehr häufig |
-| 10 | High Card | A♠ Q♥ 8♦ 5♣ 2♠ | sehr häufig |
+| 1 | Royal Flush | A♠ K♠ Q♠ J♠ 10♠ | Extrem selten |
+| 2 | Straight Flush | 5♥ 6♥ 7♥ 8♥ 9♥ | Sehr selten |
+| 3 | Vierling | A♠ A♥ A♦ A♣ K♠ | Selten |
+| 4 | Full House | K♠ K♥ K♦ A♠ A♥ | Eher selten |
+| 5 | Flush | A♠ K♠ 8♠ 5♠ 2♠ | Eher selten |
+| 6 | Straße | 5♥ 6♠ 7♦ 8♣ 9♥ | Gelegentlich |
+| 7 | Drilling | Q♠ Q♥ Q♦ 5♠ 7♥ | Gelegentlich |
+| 8 | Zwei Paare | J♠ J♥ 8♦ 8♣ A♠ | Häufig |
+| 9 | Paar | K♠ K♥ 7♦ 4♣ 2♠ | Sehr häufig |
+| 10 | High Card | A♠ Q♥ 8♦ 5♣ 2♠ | Sehr häufig |
 
-Wenn du auch Kicker, Splits und knappe Showdown-Situationen sicher lesen willst, schau dir die komplette Anleitung zur [Reihenfolge der Pokerhände](/de/blog/holdem-hand-rankings) an.
+</div>
+
+Du willst die komplette Aufschlüsselung — inklusive der Frage, wie Kicker und Gleichstände den Gewinner bestimmen? Hier ist der vollständige Guide zur [Pokerhände-Reihenfolge](/de/blog/holdem-hand-rankings).
 
 ---
 
-## 5 Anfängerfehler, die du unbedingt vermeiden solltest
+## 5 Fehler, die jeder Anfänger vermeiden muss
 
-Du kannst den Ablauf auswendig können und trotzdem Chips verlieren, wenn du diese Fehler machst.
+Du kannst den Spielablauf auswendig können und trotzdem Chips verbluten, wenn du diese Fehler machst.
 
 ### 1. Fast jede Hand spielen
 
-"Ich will nur den Flop sehen" kostet langfristig Geld. Gute Spieler spielen nur einen kleinen Teil ihrer Starthände und folden den Rest ohne Drama. Wenn du preflop mit beliebigen zwei Karten callst, bezahlst du dafür, schlechte Entscheidungen später teuer zu machen.
+„Ich schau mir nur mal den Flop an“ ist auf lange Sicht ein Verlustgeschäft. Starke Spieler spielen nur 15–25 % ihrer Hände und folden den Rest ohne Zögern. Wer preflop mit beliebigen zwei Karten callt, zahlt fürs Verlieren.
 
-### 2. Position ignorieren
+### 2. Die Position ignorieren
 
-Je näher du am Button bist, desto besser. Wer später handelt, sieht zuerst, was die anderen tun. Spiele in früher Position tighter und in später Position aggressiver.
+Je näher du am Button sitzt, desto besser — wer als Letzter handelt, sieht erst, was alle anderen tun, bevor er entscheiden muss. Spiel in früher Position tight und in später Position aggressiver. Der Klassiker: Dieselbe Hand, die UTG ein klarer Fold ist, kann am Button ein Standard-Open sein.
 
-### 3. Draws blind hinterherlaufen
+### 3. Draws blind hinterherjagen
 
-Ein Flush- oder Straight-Draw ist kein automatischer Call. Du musst **Pot Odds** beachten: Wie teuer ist der Call im Vergleich zum Pot? Wenn der Pot 100.000 groß ist und du 50.000 callen musst, muss dein Draw mindestens etwa 33 % der Zeit ankommen, damit der Call Sinn ergibt.
+Ein Flush- oder Straßen-Draw ist kein automatischer Call. Du musst die **Pot Odds** abwägen — den Preis des Calls gegen die Größe des Pots. Liegen 100.000 im Pot und du musst 50.000 callen, muss dein Draw mindestens rund 33 % der Zeit ankommen, damit sich der Call lohnt.
 
-### 4. Am River plötzlich mit schwacher Hand bluffen
+### 4. Aus dem Nichts den River bluffen
 
-Wenn du die ganze Hand passiv warst und am River plötzlich groß setzt, merkt ein aufmerksamer Gegner das sofort. Ein Bluff braucht eine glaubwürdige Geschichte über mehrere Streets.
+Wer die ganze Hand über passiv gecheckt hat und dann am River plötzlich groß setzt, wird sofort durchschaut. Ein Bluff braucht eine konsistente Geschichte — von der ersten Street an.
 
 ### 5. Die eigene Hand im Showdown falsch lesen
 
-Der Klassiker: "Ich habe zwei Paare!" — und in Wirklichkeit ist es nur ein Paar. Übe, aus 2 Hole Cards und 5 Boardkarten die **besten fünf Karten** zu finden, bis es automatisch geht.
+Der klassische Anfängerfehler: „Ich hab zwei Paare!“ — dabei ist es nur ein Paar. Übe, aus deinen zwei Hole Cards und den fünf Boardkarten die **besten fünf Karten** herauszupicken, bis es automatisch läuft.
 
 ---
 
-## So fängst du heute an zu spielen
+## So startest du noch heute
 
-Wenn du den Ablauf verstanden hast, geht es ans Üben.
+Sobald der Spielablauf sitzt, wird es Zeit, wirklich zu spielen.
 
-- **Mit Play Money starten** — viele Apps und Pokerräume bieten kostenlose Tische. Nutze sie, um die Reihenfolge in echten Händen zu sehen.
-- **Diesen Artikel zwei- bis dreimal lesen** — der Ablauf muss automatisch sitzen, damit du am Tisch nicht einfrierst.
-- **Eine Hand-Ranking-Notiz machen** — schreibe die 10 Hände auf und lege sie sichtbar neben dich.
-- **Mit den kleinsten Einsätzen starten** — je billiger deine Fehler, desto schneller lernst du.
+- **Übe mit Spielgeld** — die meisten Poker-Apps und -Seiten bieten kostenlose Tische. Setz diesen Guide in einem echten Spielfluss um.
+- **Lies diesen Artikel zwei-, dreimal** — die Reihenfolge muss in Fleisch und Blut übergehen, damit du am Tisch nie wieder einfrierst.
+- **Bau dir einen Pokerhände-Spickzettel** — schreib die zehn Hände auf einen Zettel und leg ihn dorthin, wo du ihn siehst.
+- **Starte an den kleinsten Limits** — je billiger deine Fehler, desto schneller lernst du.
 
-Texas Hold'em lernst du in 30 Minuten, aber du feilst ein Leben lang daran. Für den Anfang reicht diese Grundlage völlig, um dich an einen Tisch zu setzen. Für die formale Regeldefinition und den Hintergrund ist auch der [Wikipedia-Artikel zu Texas Hold'em](https://de.wikipedia.org/wiki/Texas_Holdem) eine gute Referenz.
-
----
-
-## Häufige Fragen (FAQ)
-
-**F. Wie ist der genaue Ablauf einer Texas-Hold'em-Hand?**
-
-Blinds setzen → 2 Hole Cards bekommen → Preflop-Setzrunde → Flop (3 Karten) und Setzrunde → Turn (1 Karte) und Setzrunde → River (letzte Karte) und Setzrunde → Showdown (beste 5 Karten vergleichen).
-
-**F. Was ist der Unterschied zwischen Preflop und Flop?**
-
-Preflop ist die Phase, bevor Gemeinschaftskarten auf dem Tisch liegen. Du entscheidest nur mit deinen zwei Hole Cards. Der Flop beginnt, nachdem drei Gemeinschaftskarten aufgedeckt wurden. Dann liest du deine aktuelle Hand und mögliche Draws.
-
-**F. Was ist der Unterschied zwischen Check und Call?**
-
-Checken heißt, ohne Einsatz weiterzugeben, und geht nur, wenn vor dir niemand gesetzt hat. Callen heißt, den Einsatz eines Gegners zu bezahlen. Wenn bereits gesetzt wurde, kannst du nicht checken: Du musst callen, raisen oder folden.
-
-**F. Muss ich im Showdown beide Hole Cards benutzen?**
-
-Nein. Du bildest die beste Fünf-Karten-Hand aus beliebigen 5 der 7 verfügbaren Karten. Du kannst beide Hole Cards, nur eine oder gar keine benutzen, wenn das Board die beste Hand bildet.
-
-**F. Was sind Pot Odds?**
-
-Pot Odds vergleichen den Pot mit dem Betrag, den du callen musst. Wenn der Pot 100.000 groß ist und dein Gegner 20.000 setzt, riskierst du 20.000, um einen Pot von 120.000 zu gewinnen (6:1). Ist deine Gewinnchance besser als diese Quote, ist ein Call profitabel.
-
-**F. Wann sollte ich all-in gehen?**
-
-All-in bedeutet, alle Chips zu setzen. Nutze es mit sehr starken Händen (den Nuts) oder als Bluff, um Gegner zum Folden zu bringen. Nach einem All-in kannst du nicht weiter setzen, hast aber Anspruch auf den Pot-Anteil, den du abgedeckt hast.
-
-**F. Wie viele Setzrunden gibt es?**
-
-Vier: Preflop, Flop, Turn und River. Die Blinds sind Pflichteinsätze vor der Hand, der Showdown selbst hat keine Setzrunde mehr.
+Texas Hold'em lernst du in dreißig Minuten — und meisterst es ein Leben lang. Aber die Grundlagen von heute reichen völlig, um Platz zu nehmen. Für Geschichte und formale Regeln ist der [Wikipedia-Artikel zu Texas Hold'em](https://de.wikipedia.org/wiki/Texas_Hold%E2%80%99em) eine solide Referenz.
 
 ---
 
-## 3 Dinge, die du dir merken solltest
+:::readnext[Weiterlesen]
+/de/blog/texas-holdem-rules-for-beginners | Texas Hold'em Regeln für Anfänger | /images/rules-texas-holdem.webp
+/de/blog/holdem-betting-actions | Setzaktionen im Poker erklärt | /images/holdem-betting-actions-hero.webp
+:::
 
-1. **Der Ablauf:** Blinds → Preflop → Flop (3) → Turn (1) → River (1) → Showdown, mit vier Setzrunden.
-2. **Das Lesen:** Prüfe auf jeder Street, was du jetzt hast, was noch ankommen kann und was das Board für den Gegner bedeutet.
-3. **Die Disziplin:** Folde viele Hände preflop, respektiere Position und setze groß nur dann, wenn deine Geschichte Sinn ergibt.
+## FAQ
 
-Lerne den Ablauf, übe an kostenlosen Tischen, und du wirst nicht mehr einfrieren, wenn du dran bist. Du bist bereit für deine erste richtige Hand.
+**Q. Wie lautet die genaue Reihenfolge im Texas Hold'em?**
+
+Blinds setzen → zwei Hole Cards erhalten → Preflop-Setzrunde → Flop aufdecken (3 Karten) und setzen → Turn (1 Karte) und setzen → River (letzte Karte) und setzen → Showdown (die besten fünf Karten werden verglichen).
+
+**Q. Was ist der Unterschied zwischen Preflop und Flop?**
+
+Preflop ist die Phase, bevor Gemeinschaftskarten liegen — du entscheidest allein anhand deiner zwei Hole Cards. Der Flop ist die Phase nach dem Aufdecken der ersten drei Gemeinschaftskarten, in der du sowohl deine aktuelle Hand als auch dein Draw-Potenzial liest.
+
+**Q. Was ist der Unterschied zwischen Check und Call?**
+
+Ein Check gibt die Action ohne Einsatz weiter und ist nur möglich, wenn keine Bet vor dir liegt. Ein Call geht den Einsatz eines Gegners mit. Sobald jemand gesetzt hat, kannst du nicht mehr checken — du musst callen, raisen oder folden.
+
+**Q. Muss ich im Showdown beide Hole Cards benutzen?**
+
+Nein. Du bildest die beste Fünf-Karten-Hand aus einer beliebigen Kombination deiner zwei Hole Cards und der fünf Gemeinschaftskarten — auch mit nur einer eigenen Karte oder ganz ohne („das Board spielen“).
+
+**Q. Was sind Pot Odds?**
+
+Pot Odds sind das Verhältnis zwischen aktueller Potgröße und dem Betrag, den du callen musst. Liegen 100.000 im Pot und ein Gegner setzt 20.000, riskierst du 20.000, um einen Pot von 120.000 zu gewinnen (6:1). Ist deine Gewinnwahrscheinlichkeit besser als diese Quote, ist der Call profitabel.
+
+**Q. Wann sollte ich All-in gehen?**
+
+All-in bedeutet, jeden Chip zu setzen, den du hast. Nutze es mit einer sehr starken Hand (den Nuts) oder als Bluff, um Gegner zum Folden zu bringen. Nach dem All-in kannst du nicht mehr setzen, bleibst aber für den Teil des Pots spielberechtigt, den du gedeckt hast. Bei ungleichen Stacks entstehen dadurch Side Pots — siehe [All-in-Regeln und Side Pots](/de/blog/holdem-all-in-rules).
+
+**Q. Wie viele Setzrunden hat eine Hand?**
+
+Vier: Preflop, Flop, Turn und River. Die Blinds sind Pflichteinsätze, und im Showdown wird nicht mehr gesetzt.
+
+---
+
+## Die 3 Dinge zum Mitnehmen
+
+1. ==**Die Reihenfolge:**== Blinds → Preflop → Flop (3) → Turn (1) → River (1) → Showdown — mit ==vier Setzrunden==.
+2. ==**Das Lesen:**== Beurteile auf jeder Street, was du jetzt hast und was du noch machen kannst — und schau auf das ganze Board, nicht nur auf deine eigene Hand.
+3. ==g:**Die Disziplin:**== Folde preflop die meisten Hände, respektiere die Position und setz nur groß, wenn deine Geschichte Sinn ergibt.
+
+Lern die Abfolge in- und auswendig, übe sie in kostenlosen Spielen — und du wirst nie wieder einfrieren, weil du nicht weißt, wer dran ist. Du bist bereit, Platz zu nehmen.
+
+---
+
+## Verwandte Artikel
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
+  <a href="/de/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Anfänger-Guide</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Texas Hold'em Regeln für Anfänger</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Alle Regeln, Chips, Pokerhände + PDF zum Ausdrucken</div>
+  </a>
+  <a href="/de/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Pokerhände</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Pokerhände-Reihenfolge — von der besten zur schlechtesten</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Alle 10 Hände mit Wahrscheinlichkeiten, Beispielen und Board-Aufgaben</div>
+  </a>
+</div>
 `.trim(),
 };

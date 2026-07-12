@@ -6,7 +6,7 @@ export const POST: Post = {
   seoTitle: "Geglaubt zu gewinnen und den Pot verloren? — Pokerhände",
   desc: "Du hast einen Flush getroffen und trotzdem den Pot verloren? Fast immer steckt eine einzige übersehene Regel dahinter. Hier sind alle 10 Pokerhände von der besten zur schlechtesten, die echten Wahrscheinlichkeiten und wie Kicker und Splits den Sieger bestimmen.",
   tldr: "Die Reihenfolge der Pokerhände von der besten zur schlechtesten lautet: Royal Flush, Straight Flush, Vierling, Full House, Flush, Straße, Drilling, Zwei Paare, Paar und High Card.",
-  category: "초보 가이드",
+  category: "hand-rankings",
   date: "2026-06-09",
   updated: "2026-06-09",
   keepImagesInBody: true,
@@ -16,9 +16,9 @@ export const POST: Post = {
   content: `
 Du bist heads-up am River. Dein Flush ist da, du bist dir sicher, dass er der beste ist — und dann schiebt der Dealer den Pot auf die andere Seite. Das Board war gepaart, dein Gegner hatte ein Full House, und du hast es überhaupt nicht kommen sehen.
 
-Fast jeder „Ich dachte, ich gewinne"-Moment läuft auf dasselbe hinaus: die **Reihenfolge der Pokerhände** nicht schnell genug zu lesen. Die Reihenfolge lernt man in fünf Minuten. Schwierig ist es, sie live zu lesen, unter Druck, an einem gepaarten oder verbundenen Board — und genau das erklärt kaum jemand richtig.
+Fast jeder „Ich dachte, ich gewinne“-Moment läuft auf dasselbe hinaus: die **Reihenfolge der Pokerhände** nicht schnell genug zu lesen. Die Reihenfolge lernt man in fünf Minuten. Schwierig ist es, sie live zu lesen, unter Druck, an einem gepaarten oder verbundenen Board — und genau das erklärt kaum jemand richtig.
 
-Dieser Leitfaden löst beides. Du bekommst die komplette Reihenfolge mit den echten Wahrscheinlichkeiten, alle Split-Regeln, drei echte Board-Aufgaben zum Üben von „finde deine besten fünf Karten" und eine 1-Sekunden-Routine, um jedes Board zu lesen.
+Dieser Leitfaden löst beides. Du bekommst die komplette Reihenfolge mit den echten Wahrscheinlichkeiten, alle Split-Regeln, drei echte Board-Aufgaben zum Üben von „finde deine besten fünf Karten“ und eine 1-Sekunden-Routine, um jedes Board zu lesen.
 
 ---
 
@@ -28,16 +28,16 @@ Fang hier an. Das ist die gesamte Reihenfolge, von der stärksten zur schwächst
 
 | # | Hand | Auch genannt | Was es ist | Wahrscheinlichkeit (bis River) |
 |------|------|------|------|------|
-| **1** | Royal Flush | „Royal" | A-K-Q-J-10 in einer Farbe | 0,0032 % |
-| **2** | Straight Flush | „Steel Wheel" (A-5) | 5 in Folge, eine Farbe | 0,0279 % |
-| **3** | Vierling | „Four of a Kind" | Vier Karten gleichen Werts | 0,168 % |
-| **4** | Full House | „Full" | Drilling + Paar | 2,60 % |
+| **1** | Royal Flush | „Royal“ | A-K-Q-J-10 in einer Farbe | 0,0032 % |
+| **2** | Straight Flush | „Steel Wheel“ (A-5) | 5 in Folge, eine Farbe | 0,0279 % |
+| **3** | Vierling | „Four of a Kind“ | Vier Karten gleichen Werts | 0,168 % |
+| **4** | Full House | „Full“ | Drilling + Paar | 2,60 % |
 | **5** | Flush | — | 5 Karten einer Farbe | 3,03 % |
-| **6** | Straße | „Straight" | 5 in Folge, gemischte Farben | 4,62 % |
-| **7** | Drilling | „Set" / „Trips" | Drei Karten gleichen Werts | 4,83 % |
+| **6** | Straße | „Straight“ | 5 in Folge, gemischte Farben | 4,62 % |
+| **7** | Drilling | „Set“ / „Trips“ | Drei Karten gleichen Werts | 4,83 % |
 | **8** | Zwei Paare | — | Zwei verschiedene Paare | 23,5 % |
 | **9** | Paar | — | Zwei Karten gleichen Werts | 43,8 % |
-| **10** | High Card | „Nichts" | Keine Kombination | 17,4 % |
+| **10** | High Card | „Nichts“ | Keine Kombination | 17,4 % |
 
 > **Die Regel, die Diskussionen beendet**
 > Paar und High Card machen zusammen rund 61 % aller Sieben-Karten-Hände bis zum River aus. Große Hände wirken häufig, weil man sie sich merkt — aber die meisten Pots werden mit einem Paar und einem Kicker entschieden.
@@ -54,7 +54,7 @@ Vor den Händen brauchst du die Kartenstärke. Nur zwei Dinge.
 
 **A > K > Q > J > 10 > 9 > 8 > 7 > 6 > 5 > 4 > 3 > 2**
 
-Das Ass ist die stärkste Karte und die einzige, die die Regel bricht: Es spielt hoch (A-K-Q-J-10) und niedrig (A-2-3-4-5, das „Wheel"). Aber es kann nicht durch die Mitte herumlaufen: Q-K-A-2-3 ist **keine** Straße.
+Das Ass ist die stärkste Karte und die einzige, die die Regel bricht: Es spielt hoch (A-K-Q-J-10) und niedrig (A-2-3-4-5, das „Wheel“). Aber es kann nicht durch die Mitte herumlaufen: Q-K-A-2-3 ist **keine** Straße.
 
 ### Farben haben keinen Wert
 
@@ -78,7 +78,7 @@ Sie kann weder geschlagen noch gesplittet werden (zwei Royal Flushes sind nur in
 
 **9♥ 8♥ 7♥ 6♥ 5♥** — fünf Karten in Folge, alle einer Farbe.
 
-Nur ein höherer Straight Flush oder ein Royal Flush schlägt ihn. Die niedrigste Version, A-2-3-4-5 in einer Farbe, heißt „Steel Wheel". Treffen zwei Straight Flushes aufeinander, gewinnt der mit der höheren Karte.
+Nur ein höherer Straight Flush oder ein Royal Flush schlägt ihn. Die niedrigste Version, A-2-3-4-5 in einer Farbe, heißt „Steel Wheel“. Treffen zwei Straight Flushes aufeinander, gewinnt der mit der höheren Karte.
 
 ### #3 — Vierling
 
@@ -96,8 +96,8 @@ Zwischen zwei Vierlingen gewinnt der höhere Wert. Liegen alle vier *auf dem Boa
 
 Vergleiche **zuerst den Drilling**: QQQ55 schlägt JJJ99, weil Damen über Buben stehen, egal wie groß das Paar ist. Das Paar wird nur verglichen, wenn der Drilling gleich ist.
 
-> **Der häufigste „Cooler"**
-> Sobald sich das Board paart, suche nach einem Full House, bevor du dich auf einen Flush oder eine Straße festlegst. „Mein Nut-Flush hat gegen ein Full House verloren" ist der häufigste Bad Beat im Hold'em.
+> **Der häufigste „Cooler“**
+> Sobald sich das Board paart, suche nach einem Full House, bevor du dich auf einen Flush oder eine Straße festlegst. „Mein Nut-Flush hat gegen ein Full House verloren“ ist der häufigste Bad Beat im Hold'em.
 
 ### #5 — Flush
 
@@ -113,7 +113,7 @@ Zwei Flushes werden Karte für Karte von oben verglichen: A-J-8-6-2 schlägt A-J
 
 **7♠ 6♥ 5♣ 4♦ 3♠** — fünf Karten in Folge, gemischte Farben.
 
-- **Die höchste:** A-K-Q-J-10 („Broadway") ist die höchste Straße.
+- **Die höchste:** A-K-Q-J-10 („Broadway“) ist die höchste Straße.
 - **Das Wheel:** A-2-3-4-5 ist die niedrigste (das Ass spielt niedrig).
 - **Verboten:** Sie kann nicht herumlaufen — K-A-2-3-4 ist keine Straße.
 
@@ -146,7 +146,7 @@ Vergleich in dieser Reihenfolge: **höheres Paar → niedrigeres Paar → Kicker
 
 **K♠ K♦ 9♥ 6♣ 2♠** — zwei Karten gleichen Werts.
 
-Die häufigste fertige Hand im Hold'em. Zwei gleiche Paare entscheiden sich über die Kicker: **Wert des Paars → Kicker 1 → Kicker 2 → Kicker 3**, von hoch nach niedrig. Hier passieren die meisten „dieselbe Hand"-Niederlagen: achte auf deinen Kicker.
+Die häufigste fertige Hand im Hold'em. Zwei gleiche Paare entscheiden sich über die Kicker: **Wert des Paars → Kicker 1 → Kicker 2 → Kicker 3**, von hoch nach niedrig. Hier passieren die meisten „dieselbe Hand“-Niederlagen: achte auf deinen Kicker.
 
 ### #10 — High Card
 
@@ -198,7 +198,7 @@ Die Reihenfolge zu kennen ist nicht dasselbe wie sie schnell zu lesen. Hier sind
 
 Du hältst **Q♥ Q♦**. Was ist deine beste Hand?
 
-→ Das Board zeigt bereits zwei Paare (A-A und K-K). Deine zwei Damen plus die Q♠ auf dem Board ergeben einen **Drilling Damen**, und zusammen mit den Assen auf dem Board hast du ein **Full House — QQQ + AA**. Das sind deine besten fünf. Anfänger hängen an „Ist AAKK + Q nicht nur zwei Paare?" — nein. Sobald du einen Drilling hast, nimmst du das Full House. **Full House schlägt zwei Paare.**
+→ Das Board zeigt bereits zwei Paare (A-A und K-K). Deine zwei Damen plus die Q♠ auf dem Board ergeben einen **Drilling Damen**, und zusammen mit den Assen auf dem Board hast du ein **Full House — QQQ + AA**. Das sind deine besten fünf. Anfänger hängen an „Ist AAKK + Q nicht nur zwei Paare?“ — nein. Sobald du einen Drilling hast, nimmst du das Full House. **Full House schlägt zwei Paare.**
 
 ### Aufgabe 2 — Der Flush, der eigentlich besser ist
 
@@ -206,7 +206,7 @@ Du hältst **Q♥ Q♦**. Was ist deine beste Hand?
 
 Du hältst **K♥ 2♣**. Das Board hat vier Herz.
 
-→ Deine K♥ ist die fünfte Herz, also denkst du „Flush". Aber sieh dir die Folge an: **K♥ 10♥ 9♥ 8♥ 7♥** sind fünf Herz *in Folge* — ein **Straight Flush mit König**, Hand #2. Prüfe immer, ob deine Flush-Karten auch verbunden sind, bevor du annimmst, es sei nur ein Flush.
+→ Deine K♥ ist die fünfte Herz, also denkst du „Flush“. Aber sieh dir die Folge an: **K♥ 10♥ 9♥ 8♥ 7♥** sind fünf Herz *in Folge* — ein **Straight Flush mit König**, Hand #2. Prüfe immer, ob deine Flush-Karten auch verbunden sind, bevor du annimmst, es sei nur ein Flush.
 
 ### Aufgabe 3 — Wenn geteilt werden muss
 
@@ -277,7 +277,7 @@ Die Reihenfolge ist in fast allen Poker-Varianten gleich, mit einigen wichtigen 
 | **Seven-Card Stud** | Standard | Keine Gemeinschaftskarten |
 | **Short Deck (6+)** | Angepasst | Flush schlägt Full House; manchmal zählt A-6-7-8-9 als Straße |
 
-Fazit: Lerne die Standard-Reihenfolge einmal und sie passt in fast jedem Spiel. Merke dir nur die „genau zwei"-Regel bei Omaha und die Aufwertung des Flushs im Short Deck.
+Fazit: Lerne die Standard-Reihenfolge einmal und sie passt in fast jedem Spiel. Merke dir nur die „genau zwei“-Regel bei Omaha und die Aufwertung des Flushs im Short Deck.
 
 ---
 
@@ -323,6 +323,6 @@ A. Ja. Der Drilling ist #7 und zwei Paare sind #8, also gewinnt der Drilling. Zw
 2. **Die Falle:** Der Flush (#5) schlägt die Straße (#6) — und jedes gepaarte Board kann ein Full House verstecken, das beide schlägt.
 3. **Die Realität:** Die meisten Pots werden mit Paar oder High Card gewonnen, also ist dein Kicker mehr wert, als du denkst.
 
-Lerne die Reihenfolge an einem Nachmittag, übe die verwirrenden Duelle und führe an jedem Board den Scan „Farben → Straßen → Paare" durch. Tu das, und du schiebst nie wieder den Pot auf die falsche Seite.
+Lerne die Reihenfolge an einem Nachmittag, übe die verwirrenden Duelle und führe an jedem Board den Scan „Farben → Straßen → Paare“ durch. Tu das, und du schiebst nie wieder den Pot auf die falsche Seite.
 `.trim(),
 };
