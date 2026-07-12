@@ -12,8 +12,11 @@
 ### ✅ 오늘(07-12) 완료 2 — KO 이미지 §13 코드렌더 85개 교체·배포
 `defects.md`의 KO 결함(EN 23개 제외) 전량을 §13-안전 HTML 코드렌더로 재생성·배치. Fable5 10에이전트 병렬 저작 + 메인 렌더/전수 육안검수/배치. **85개 전부 통과**(카드 유효·중복랭크0·한글철자·<60KB). **404 8개도 신규생성**(bluffing-* 4·holdem-position-* 4, posts.ts 본문). 빌드 ✅ 199 pages·에러0. 파이프라인=`scripts/gen-*.html`+`_GEN_SPEC.md`+`render-gen-batch.mjs`(인자필터). 상세=WORKLOG 2026-07-12.
 
-### ▶▶ 다음 = 🎨 실사 15개 Nano Banana (사용자 몫) + GSC
-`docs/image-audit/photo-prompts-nano-banana.md`에 **코드렌더 불가 실사 15개** 영어 프롬프트 정리(§13·워터마크 반영). apt-incheon처럼 Nano Banana 생성 → `public/images/`에 파일명 그대로 배치 → 빌드·커밋. 목록: apt-jeju 8 · pub-legal-card-table · pub-legal-casino-floor · beginner-mistakes-korea-pub · bubble-faq/summary/table · wsop-2026-tournament-hero · 3bet-sizing. 이후 콘텐츠 트랙 복귀(감글 retrofit·다국어 확장, 아래 이전 블록).
+### ▶▶ 다음 = 🎨 실사 11개 Nano Banana (사용자 몫, 나머지) + GSC
+`docs/image-audit/photo-prompts-nano-banana.md`에 **코드렌더 불가 실사** 영어 프롬프트 정리(§13·워터마크 반영). apt-incheon처럼 Nano Banana 생성 → `public/images/`에 파일명 그대로 배치 → 사용자가 파일 경로 주면 메인이 webp 1200×675 변환·§13검수·커밋.
+- **✅ 4개 완료(07-12, 커밋 f114c67)**: apt-jeju-foodcourt · apt-jeju-classic-2026-guide-hero · apt-jeju-2026-fall-guide-hero · apt-jeju-cu-store(사용자 촬영 GS25). 변환=`sharp .rotate().resize(1200,675,cover)` + 품질 자동(≤60~80KB).
+- **⏳ 남은 11개**: apt-jeju-classic-2026-hero · apt-jeju-main-event-winner · apt-jeju-nau-cafe · apt-jeju-satellite-strategy · pub-legal-card-table · pub-legal-casino-floor · beginner-mistakes-korea-pub · bubble-faq/summary/table · wsop-2026-tournament-guide-hero · 3bet-sizing. (여러 장 한번에 뽑으면 Gemini가 헤매므로 시간날 때 조금씩 — 사용자 방침.)
+- 이후 콘텐츠 트랙 복귀(감글 retrofit·다국어 확장, 아래 이전 블록).
 
 ---
 
