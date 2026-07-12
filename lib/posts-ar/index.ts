@@ -1,6 +1,11 @@
 import type { Post } from "../posts";
-import { POST as holdemHandRankings } from "./holdem-hand-rankings";
+import { POST as texasHoldemRulesForBeginners } from "./texas-holdem-rules-for-beginners";
 import { POST as holdemGameOrder } from "./holdem-game-order";
+import { POST as holdemBettingActions } from "./holdem-betting-actions";
+import { POST as holdemBlindMeaning } from "./holdem-blind-meaning";
+import { POST as holdemAllInRules } from "./holdem-all-in-rules";
+import { POST as holdemShowdownRules } from "./holdem-showdown-rules";
+import { POST as holdemHandRankings } from "./holdem-hand-rankings";
 import { POST as holdemTournamentVsCashGame } from "./holdem-tournament-vs-cash-game";
 
 /**
@@ -8,7 +13,18 @@ import { POST as holdemTournamentVsCashGame } from "./holdem-tournament-vs-cash-
  * 기계 번역이 아닌 아랍어권 포커 커뮤니티 용어에 맞게 현지화한 글만 등록한다.
  * 슬러그는 다른 언어 글과 동일하게 맞춰 hreflang 상호 링크가 성립하도록 한다.
  */
-export const AR_POSTS: Post[] = [holdemHandRankings, holdemGameOrder, holdemTournamentVsCashGame];
+export const AR_POSTS: Post[] = [
+  // Rules 필라 (6/6)
+  texasHoldemRulesForBeginners,
+  holdemGameOrder,
+  holdemBettingActions,
+  holdemBlindMeaning,
+  holdemAllInRules,
+  holdemShowdownRules,
+  // 기타
+  holdemHandRankings,
+  holdemTournamentVsCashGame,
+];
 
 export function getArPost(slug: string): Post | undefined {
   return AR_POSTS.find((p) => p.slug === slug);
