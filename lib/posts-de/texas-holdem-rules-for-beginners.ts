@@ -279,7 +279,7 @@ Gute Starthände für Anfänger:
 | 🟦 **Spielbar — Position entscheidet** | 88, 77, ATs, AJo, KJs, QJs, JTs | Bevorzugt späte Position (CO, BTN) |
 | ⬜ **Standardmäßig folden** | Als Anfänger alles andere | Vor allem aus früher Position |
 
-**Einfache Merkregel:** Starte mit Paaren ab TT aufwärts plus AK und AQ. Das sind grob die besten 8 % aller Hände. Erweitere langsam, wenn du Erfahrung sammelst.
+**Einfache Merkregel:** Starte mit Paaren ab TT aufwärts plus AK und AQ. Das sind grob die besten 5 % aller Hände. Erweitere langsam, wenn du Erfahrung sammelst.
 
 </div>
 

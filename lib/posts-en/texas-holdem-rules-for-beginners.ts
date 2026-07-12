@@ -278,7 +278,7 @@ Good beginner starting hands include:
 | 🟦 **Playable — position matters** | 88, 77, ATs, AJo, KJs, QJs, JTs | Prefer late position (CO, BTN) |
 | ⬜ **Fold by default** | Everything else as a beginner | Especially from early position |
 
-**Easy memory rule:** Start with pairs TT and above, plus AK and AQ. That is roughly the top 8% of hands. Widen slowly as you gain experience.
+**Easy memory rule:** Start with pairs TT and above, plus AK and AQ. That is roughly the top 5% of hands. Widen slowly as you gain experience.
 
 </div>
 

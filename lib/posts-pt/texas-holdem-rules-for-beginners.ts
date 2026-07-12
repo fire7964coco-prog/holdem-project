@@ -279,7 +279,7 @@ Boas mãos iniciais para começar:
 | 🟦 **Jogáveis — a posição decide** | 88, 77, ATs, AJo, KJs, QJs, JTs | Prefira posição final (CO, BTN) |
 | ⬜ **Fold por padrão** | Todo o resto, enquanto iniciante | Principalmente em posição inicial |
 
-**Regra fácil de memorizar:** comece com os pares de TT para cima, mais AK e AQ. Isso é mais ou menos o top 8% das mãos. Vá abrindo o range devagar, conforme ganhar experiência.
+**Regra fácil de memorizar:** comece com os pares de TT para cima, mais AK e AQ. Isso é mais ou menos o top 5% das mãos. Vá abrindo o range devagar, conforme ganhar experiência.
 
 </div>
 

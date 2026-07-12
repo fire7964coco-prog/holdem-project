@@ -279,7 +279,7 @@ Buenas manos iniciales para un principiante:
 | 🟦 **Jugables — la posición importa** | 88, 77, ATs, AJo, KJs, QJs, JTs | Mejor en posición tardía (CO, BTN) |
 | ⬜ **Retírate por defecto** | Todo lo demás, siendo principiante | Sobre todo desde posición temprana |
 
-**Regla fácil de recordar:** empieza con las parejas de TT hacia arriba, más AK y AQ. Eso es aproximadamente el 8% superior de las manos. Amplía poco a poco según ganes experiencia.
+**Regla fácil de recordar:** empieza con las parejas de TT hacia arriba, más AK y AQ. Eso es aproximadamente el 5% superior de las manos. Amplía poco a poco según ganes experiencia.
 
 </div>
 
