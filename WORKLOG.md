@@ -3,6 +3,16 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-13 (pl 폴란드어 신규 로케일 + Rules 필라 6편 — 18개 확장 16/18)
+
+### 🌐 pl(폴란드어) 신규 로케일 + Rules 필라 6/6 (파일럿15)
+> 18개 확장 4번타자(부재중 자율). 신규 로케일 배선 + Opus 6병렬 + 적대적 QA 2배치.
+- **인프라**: `lib/intl.ts` +pl 7개 맵(폴란드어 UI) · `intl-posts.ts` PL_POSTS · `posts-pl/index.ts` · translate route. 빌드 TS 에러 0.
+- **브리프**: `docs/translation-terms-pl.md`. ⚠️**치명 함정**: **Poker=Straight Flush**(Poker królewski=Royal Flush)·**Kareta=포카드**·**Kolor=flush**(색/무늬 다의어)·**Strit=straight**·**홀덤 Full>Kolor**. 숫자=폴란드식(천단위 공백·소수점 쉼표), ty체, 특수문자 ą/ć/ę/ł/ń/ó/ś/ź/ż.
+- **적대적 QA 2배치(Opus)**: §13 전수 손계산 0오류(pot 198 000·side pot 1 300·Poker=straight flush Q-J-T-9-8·2,7 do 1/27%). **함정 4종 전수 안전**(Poker=straight flush·Kareta·Kolor·Full>Kolor). 🔴 3건(game-order FAQ 마커·blind desc)+메인이 선제발견한 **FAQ 스키마 이슈**(game-order가 `**P.`+답변마커 없음 → 파서 정규식 `**Q. ...**`+`A.`에 맞게 7문항 교정: P.→Q.·A. 접두 추가·Q. 공백). texas는 `###` 헤딩 FAQ=마스터(EN/es/de) 공통 포맷이라 정상.
+- **결과**: 16번째 로케일 pl. **18개 확장 16/18**(남은 2=th·fa). 다음=th.
+- **사용자 GSC**: `/pl/blog/` 6 URL.
+
 ## 2026-07-13 (it 이탈리아어 신규 로케일 + Rules 필라 6편 — 18개 확장 15/18)
 
 ### 🌐 it(이탈리아어) 신규 로케일 + Rules 필라 6/6 (파일럿14)
