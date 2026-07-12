@@ -86,7 +86,15 @@ export default function IntlBlogPostClient({
   const hasToc = headings.length >= 2;
   // 클러스터 미니맵 (현재 EN 프로토타입만). 클러스터 소속 글에만 노출.
   const showMinimap = locale === "en" && clusterForSlug(post.slug) !== null;
-  const hasRail = hasToc || showMinimap;
+  // 3단 배치: 목차(좌) · 본문(중앙) · 학습맵(우). 있는 것만 컬럼 생성.
+  const gridClass =
+    hasToc && showMinimap
+      ? "xl:grid xl:grid-cols-[210px_1fr_250px] xl:gap-8"
+      : hasToc
+        ? "xl:grid xl:grid-cols-[220px_1fr] xl:gap-10"
+        : showMinimap
+          ? "xl:grid xl:grid-cols-[1fr_250px] xl:gap-10"
+          : "";
   const bodyHtml = `<p class="text-muted-foreground text-base leading-relaxed mb-4">${renderMarkdown(
     post.content.replace(/^:::quiz:::$/m, ""),
   )}</p>`;
@@ -100,22 +108,19 @@ export default function IntlBlogPostClient({
         communityLabel={NAV_CTA[locale]}
       />
       <div className="max-w-6xl mx-auto px-4 py-10">
-        <div className={hasRail ? "xl:grid xl:grid-cols-[1fr_240px] xl:gap-10" : ""}>
-          {hasRail && (
-            <aside className="hidden xl:block xl:order-2">
-              <div className="sticky top-16 space-y-4 max-h-[calc(100vh-5rem)] overflow-y-auto overscroll-contain pe-1">
-                {hasToc && (
-                  <nav className="bg-card border border-border rounded-2xl p-5" aria-label={t.contents}>
-                    <p className="text-xs font-bold uppercase tracking-widest text-primary mb-4">{t.contents}</p>
-                    <IntlTocList headings={headings} />
-                  </nav>
-                )}
-                {showMinimap && <ClusterMinimap slug={post.slug} />}
+        <div className={gridClass}>
+          {hasToc && (
+            <aside className="hidden xl:block">
+              <div className="sticky top-16 max-h-[calc(100vh-5rem)] overflow-y-auto overscroll-contain pe-1">
+                <nav className="bg-card border border-border rounded-2xl p-5" aria-label={t.contents}>
+                  <p className="text-xs font-bold uppercase tracking-widest text-primary mb-4">{t.contents}</p>
+                  <IntlTocList headings={headings} />
+                </nav>
               </div>
             </aside>
           )}
 
-          <div className="min-w-0 xl:order-1">
+          <div className="min-w-0">
             <header className="mb-10">
               <div className="flex flex-wrap items-center gap-2 mb-4">
                 <span className="text-xs font-bold px-3 py-1 rounded-full bg-primary/15 text-primary border border-primary/25">
@@ -326,6 +331,14 @@ export default function IntlBlogPostClient({
               </Link>
             </div>
           </div>
+
+          {showMinimap && (
+            <aside className="hidden xl:block">
+              <div className="sticky top-16 max-h-[calc(100vh-5rem)] overflow-y-auto overscroll-contain pe-1">
+                <ClusterMinimap slug={post.slug} />
+              </div>
+            </aside>
+          )}
         </div>
       </div>
     </div>
