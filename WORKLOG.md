@@ -3,6 +3,19 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-13 (fr 프랑스어 신규 로케일 추가 + Rules 필라 6편 번역·배포 — ★18개 언어 확장 착수, 13번째 로케일)
+
+### 🌐 fr(프랑스어) 신규 로케일 + Rules 필라 6/6 (파일럿12 = 18개 확장 1번타자)
+> 12개 언어 Rules 완결 후 **18개까지 확장** 착수(사용자 지시, 추천순 fr→ru→it→pl→th→fa). fr은 **완전 신규 로케일**(기존 hi/tr는 로케일 존재+3편 보유였으나 fr은 0) → **인프라 배선부터**. 전 과정 Opus(번역 6병렬 + 적대적 QA 2배치). "번역=현지 맥락 재구성" 마인드셋 적용.
+- **① 인프라 배선(신규 로케일)**: `lib/intl.ts` SECONDARY_LOCALES+fr + 6개 맵(OG_LOCALE fr_FR·HTML_LANG fr·POST_LABELS·CHROME·NAV_HOME_FEED·NAV_CTA 프랑스어 UI 전량) · `lib/intl-posts.ts` FR_POSTS 등록 · `lib/posts-fr/index.ts` 신규(getFrPost/hasFrPost) · community translate route LANG_NAME fr. 라우트는 SECONDARY_LOCALES 기반 자동생성 → fr 배열 추가만으로 `/fr/...` 전체 생성. **빌드 TS 에러 0**(모든 Record<SecondaryLocale> 키 충족).
+- **② 브리프**: `docs/translation-terms-fr.md` 신규. 핵심 = **프랑스어 고유 족보명**(Quinte Flush Royale·Quinte Flush·Carré·Full·**Couleur**=flush·**Quinte**=straight·Brelan·Double Paire·Paire·Carte Haute), **숫자=프랑스식**(★천단위 **공백** 1,326→`1 326`·198,000→`198 000` — de·es의 마침표와 다름! · 소수점 쉼표 2.5→2,5 · **% 앞 공백** 35→`35 %`), tu체, 악상 정확. ⚠️Couleur=flush/무늬 다의어·tapis=all-in/stack 다의어.
+- **③ 번역 6편**(신규6, 기존 fr 글 0): 허용 슬러그=Rules 6개뿐이라 그 외 링크 전부 평문화. blind-meaning은 카지노 예시만 유로(1 €/2 €) 현지화(§13 값은 $ 유지).
+- **④ 기계검사**: 프랑스식 숫자 grep(영어식/독일식 잔류 0·공백천단위 확인) · `check-intl-links` **13개 언어 통과**(136편) · build ✅ · stale fr Rules6 최신.
+- **⑤ 적대적 QA 2배치(Opus)**: §13 베스트5·팟 산수 전수 손계산 → **전부 EN 마스터와 카드 일치**(game-order 198 000·all-in side pot 1 300·showdown quinte flush Q-J-T-9-8·blind 2,7:1/27 %). 프랑스식 숫자·악상 전부 정확.
+- **⑥ 교정 6건**(안전): texas 오역 "tu ligues"→"tu formes", game-order/blind/showdown desc≤160 축약, showdown elision "du all-in"→"de l'all-in" 2곳. 재빌드·링크체크 재통과.
+- **★결과**: **13번째 로케일 fr 신규 개설 + Rules 필라 완결**. 18개 확장 진행: **13/18** (남은 5=ru·it·pl·th·fa). 다음=ru(러시아어, 키릴 문자).
+- **다음(사용자 GSC)**: fr 6 URL 색인 — `/fr/blog/` + texas-holdem-rules-for-beginners·holdem-game-order·holdem-betting-actions·holdem-blind-meaning·holdem-all-in-rules·holdem-showdown-rules.
+
 ## 2026-07-13 (tr 터키어 Rules 필라 6편 번역·배포 — ★다국어 Rules 필라 12개 언어 완결)
 
 ### 🌐 tr(터키어) Rules 필라 6/6 번역 (파일럿11 = 마지막 언어)

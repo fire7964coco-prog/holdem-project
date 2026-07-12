@@ -12,6 +12,7 @@ import { VI_POSTS } from "./posts-vi";
 import { HI_POSTS } from "./posts-hi";
 import { DE_POSTS } from "./posts-de";
 import { TR_POSTS } from "./posts-tr";
+import { FR_POSTS } from "./posts-fr";
 
 /** 보조 언어별 포스트 목록 */
 export const POSTS_BY_LOCALE: Record<SecondaryLocale, Post[]> = {
@@ -27,6 +28,7 @@ export const POSTS_BY_LOCALE: Record<SecondaryLocale, Post[]> = {
   hi: HI_POSTS,
   de: DE_POSTS,
   tr: TR_POSTS,
+  fr: FR_POSTS,
 };
 
 export function getPostByLocale(locale: SecondaryLocale, slug: string): Post | undefined {

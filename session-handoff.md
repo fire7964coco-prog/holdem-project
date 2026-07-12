@@ -5,7 +5,35 @@
 
 ---
 
-## ▶▶▶ 새 세션 START HERE (2026-07-13 심야 — ★tr 완결 = 다국어 Rules 필라 **12개 언어 완결** / 확장 트랙 종료)
+## ▶▶▶ 새 세션 START HERE (2026-07-13 심야2 — ★fr 신규 로케일 개설 = 18개 확장 착수 13/18 / 다음=ru)
+
+> **모드**: 다국어 **18개 확장**(12개 Rules 완결 후 사용자 지시). 추천순 **fr→ru→it→pl→th→fa**. fr 완료 = **13/18**. hi·tr·fr 모두 Fable5 한도 소진 → 전 과정 Opus(번역 서브에이전트 model:opus 6병렬 + 적대적 QA Opus 2배치). 절차=`docs/translation-spec.md` §0.5 + "★★ 이 작업의 본질"(번역=현지 맥락 재구성).
+
+### ✅ 오늘(07-13 심야2) 완료 — fr 신규 로케일 + Rules 필라 6/6 (파일럿12)
+fr은 **완전 신규 로케일**(기존 글 0)이라 **인프라 배선부터** 수행 후 6편 번역. 커밋=이번 세션.
+- **★신규 로케일 배선 절차(다음 신규 언어 ru·it·pl·th·fa에 그대로 반복)**:
+  1. `lib/intl.ts`: `SECONDARY_LOCALES`에 코드 추가 + **6개 맵 전부 채우기**(OG_LOCALE·HTML_LANG·POST_LABELS·CHROME·NAV_HOME_FEED·NAV_CTA) — 하나라도 빠지면 TS 빌드 실패.
+  2. `lib/posts-<lang>/index.ts` 신규(get<Lang>Post/has<Lang>Post/<LANG>_POSTS).
+  3. `lib/intl-posts.ts`: import + POSTS_BY_LOCALE 등록.
+  4. (선택) `app/api/community/translate/route.ts` LANG_NAME.
+  5. RTL 언어(fa·ar류)면 `lib/intl.ts` RTL_LOCALES에 추가 + globals.css `[dir=rtl]` 이미 있음(ar 재활용).
+  6. 라우트(`app/[locale]/...`)는 SECONDARY_LOCALES 자동생성이라 별도 작업 불필요.
+- **핵심(fr)**: 프랑스어 고유 족보명(Couleur=flush·Quinte=straight·Carré·Full·Brelan), 숫자=**프랑스식 천단위 공백**(1 326·198 000 — ★de·es 마침표와 다름!)·소수점 쉼표·% 앞 공백. tu체. §13 전수 0오류.
+- **18개 확장 진행 = 13/18** (완료: en+ja·es·pt·de·zh·ar·id·ms·vi·hi·tr·**fr**). **남은 5 = ru·it·pl·th·fa.**
+- **사용자 몫(GSC 색인 6 URL)**: `/fr/blog/` + texas-holdem-rules-for-beginners·holdem-game-order·holdem-betting-actions·holdem-blind-meaning·holdem-all-in-rules·holdem-showdown-rules.
+
+### ▶▶ 다음 = 🌐 ru(러시아어) — 18개 확장 2번타자
+- ru도 **신규 로케일**(lib/posts-ru 없음) → 위 배선 절차 반복. **키릴 문자** → QA에 스크립트/철자 검수 추가. 숫자표기=러시아식(천단위 공백·소수점 쉼표=프랑스와 유사, 웹리서치 확인). 러시아 포커 용어(족보·액션)·문체 웹리서치.
+- 파이프라인 동일: 브리프(`docs/translation-terms-ru.md`) → Opus 6병렬 번역(허용 슬러그=Rules 6개뿐) → 조립 → 빌드/링크(하드) → 적대적 QA 2배치 → 교정 → 배포.
+- **ru masterUpdated**: texas 2026-07-12·game-order 2026-07-02·betting 2026-07-11·blind 2026-07-11·all-in 2026-07-12·showdown 2026-07-12. updated=착수일.
+- **백로그**: 전 언어 hand-rankings·tournament-vs-cash-game 재번역(stale·category 레거시)·all-in 캡 근사·game-order 프리플랍 체크 절대표현(마스터 공통).
+
+### (이미지 트랙 — 후속) 실사 11개 Nano Banana + GSC
+아래 07-12 블록 참조(사용자 몫).
+
+---
+
+## ▶▶▶ (이전) START HERE (2026-07-13 심야 — ★tr 완결 = 다국어 Rules 필라 **12개 언어 완결** / 확장 트랙 종료)
 
 > **모드**: 다국어 Rules 필라 확장 **트랙 종료**. hi·tr 모두 Fable5 한도 소진 상태에서 **전 과정 Opus로 수행**(번역 서브에이전트 model:opus 6병렬 + 적대적 QA Opus 2배치)로 완결. 절차=`docs/translation-spec.md` §0.5. ★**"번역=현지 맥락 재구성 포스팅" 마인드셋 명문화됨**(spec "★★ 이 작업의 본질" + 메모리 [[translation-is-contextual-reposting]]) — 앞으로 모든 번역·현지화 작업에 적용.
 
