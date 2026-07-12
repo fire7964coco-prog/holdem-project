@@ -100,10 +100,10 @@ export default function IntlBlogPostClient({
         communityLabel={NAV_CTA[locale]}
       />
       <div className="max-w-6xl mx-auto px-4 py-10">
-        <div className={hasRail ? "xl:grid xl:grid-cols-[220px_1fr] xl:gap-10" : ""}>
+        <div className={hasRail ? "xl:grid xl:grid-cols-[1fr_240px] xl:gap-10" : ""}>
           {hasRail && (
-            <aside className="hidden xl:block">
-              <div className="sticky top-16 space-y-4">
+            <aside className="hidden xl:block xl:order-2">
+              <div className="sticky top-16 space-y-4 max-h-[calc(100vh-5rem)] overflow-y-auto overscroll-contain pe-1">
                 {hasToc && (
                   <nav className="bg-card border border-border rounded-2xl p-5" aria-label={t.contents}>
                     <p className="text-xs font-bold uppercase tracking-widest text-primary mb-4">{t.contents}</p>
@@ -115,7 +115,7 @@ export default function IntlBlogPostClient({
             </aside>
           )}
 
-          <div className="min-w-0">
+          <div className="min-w-0 xl:order-1">
             <header className="mb-10">
               <div className="flex flex-wrap items-center gap-2 mb-4">
                 <span className="text-xs font-bold px-3 py-1 rounded-full bg-primary/15 text-primary border border-primary/25">

@@ -49,7 +49,7 @@ function Trail({ pillar, slug, isCurrentPillar }: { pillar: PillarCluster; slug:
             {/* 마커 + 경로선 */}
             <div className="flex flex-col items-center flex-shrink-0 w-4">
               {isCurrent ? (
-                <MapPin className="w-4 h-4 fill-primary text-primary drop-shadow-[0_0_6px_rgba(201,162,39,0.75)]" aria-hidden="true" />
+                <MapPin className="w-4 h-4 fill-[#2563eb] text-[#2563eb] drop-shadow-[0_0_7px_rgba(37,99,235,0.8)]" aria-hidden="true" />
               ) : s.hub ? (
                 <span className="mt-1 block w-3 h-3 rounded-full bg-primary ring-[3px] ring-card" />
               ) : s.state === "past" ? (
@@ -66,9 +66,9 @@ function Trail({ pillar, slug, isCurrentPillar }: { pillar: PillarCluster; slug:
             {/* 라벨 */}
             <div className={`min-w-0 ${isLast ? "pb-0.5" : "pb-2"}`}>
               {isCurrent ? (
-                <div className="-mt-0.5 rounded-lg bg-primary/12 border border-primary/40 px-2 py-1 shadow-[0_0_18px_-5px_rgba(201,162,39,0.6)]">
+                <div className="-mt-0.5 rounded-lg bg-[#2563eb]/10 border border-[#2563eb]/45 px-2 py-1 shadow-[0_0_18px_-4px_rgba(37,99,235,0.55)]">
                   <div className="text-[13px] font-bold text-foreground leading-snug">{s.label}</div>
-                  <div className="text-[9px] font-semibold text-primary uppercase tracking-wider mt-0.5">You are here</div>
+                  <div className="text-[9px] font-semibold text-[#2563eb] uppercase tracking-wider mt-0.5">You are here</div>
                 </div>
               ) : (
                 <Link href={`/en/blog/${s.slug}`} className="group inline-block leading-snug">
@@ -105,7 +105,7 @@ export default function ClusterMinimap({ slug, bare = false }: { slug: string; b
             <Map className="w-3 h-3" aria-hidden="true" /> Learning Map
           </span>
         )}
-        <span className="ml-auto text-[10px] font-semibold text-primary/90 bg-primary/10 border border-primary/25 rounded-full px-2 py-0.5">
+        <span className="ml-auto text-[10px] font-semibold text-[#2563eb] bg-[#2563eb]/10 border border-[#2563eb]/30 rounded-full px-2 py-0.5">
           {pos}
         </span>
       </div>
