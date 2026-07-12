@@ -5,9 +5,20 @@
 
 ---
 
-## ▶▶▶ 새 세션 START HERE (2026-07-11 — retrofit 스프린트 11편 전량 배포 완료 / 모드=수동 1편씩 복귀)
+## ▶▶▶ 새 세션 START HERE (2026-07-12 — EN 이미지 교체 배포됨 / 다음=KO 이미지 전수교체)
 
-> **⚠️ 모드 전환(사용자 지시 2026-07-11)**: 완전자동 종료 → **다시 수동으로 하나씩**(게이트 복귀). [[retrofit-full-automation]]는 이 스프린트 한정이었음(메모리에 "종료" 표기). 다음 글부터는 각도 게이트→사용자 승인→진행. 워크플로우 자체(Fable5 초안·§13·제3자 QA·인포그래픽 파이프라인)는 유지, **게이트만 부활**.
+> **모드**: 이미지 교체작업은 사용자가 **자동(Fable5)** 재지시(2026-07-12, [[retrofit-full-automation]] 참고 — 작업별 on/off). KO 이미지 교체도 자동으로 이어가면 됨.
+
+### ✅ 오늘(07-12) 완료 — EN 이미지 §13 결함 교체 배포 (커밋 a7d58ce)
+전 사이트 이미지 전수감사(Fable5 18배치, `docs/image-audit/defects.md`, 결함~117/310) → **EN 사용 결함 24개 중 23개를 코드렌더 인포그래픽으로 교체**(§13 육안검수·alt 30개 정정). 상세=WORKLOG 2026-07-12.
+- **⚠️ EN 미해결 1**: `apt-incheon-2026-guide-hero`(여행 실사) 코드렌더 불가 → 실사/AI포토 필요.
+
+### ▶▶ 다음 = 🖼️ KO 이미지 전수교체 (내일 예정, 자동)
+`defects.md`의 **KO 결함 대다수**: 텍스트 인포그래픽(깨진 한글·CS노트유입·"No entry!"·"[cite]"·중복블록) — `flush-vs-straight-c*`·`beginner-mistakes-*`·`pub-*-infographic`·`pot-odds-*`·`holdem-3bet-*`·`check-raise-*`·`small-blind-*`·`kk-*`·`pocket-aces-*`·`overbet-*`·`rules-*` 등 + **깨진 404 8개**(lib/posts.ts 레거시: bluffing-*·holdem-position-*). 코드렌더 파이프라인(`scripts/gen-*.html`+`render-gen-batch.mjs`) + 한글 텍스트는 HTML이라 정확. 404는 생성 or 참조제거.
+
+### ✅ (완료) retrofit 스프린트 11편 배포 (커밋 019de04→ba737c0)
+감글 retrofit: #1 starting-hands-chart(PDF) · #2 positions×position-play · #3 tournament×vs-cash · 2차웨이브 blind-meaning·betting-actions·flush-vs-straight·tiebreak-rules·split-pot-rules·reading-the-board. 상세=WORKLOG 2026-07-11.
+- **사용자 몫(GSC 색인 11 URL)**: `/en/blog/`+ starting-hands-chart·positions·position-play·tournament·tournament-vs-cash-game·blind-meaning·betting-actions·flush-vs-straight·tiebreak-rules·split-pot-rules·reading-the-board.
 
 ### ✅ retrofit 스프린트 전량 배포 (11편, 커밋 019de04→ba737c0)
 감글 retrofit: **#1** starting-hands-chart(PDF차트) · **#2** positions×position-play · **#3** tournament×tournament-vs-cash-game · **2차웨이브** blind-meaning·betting-actions·flush-vs-straight·tiebreak-rules·split-pot-rules·reading-the-board. 전부 뱅크 재타깃+카니발 분리+§13 전수검증(40+ 핸드예시 brute-force)+제3자 QA. 상세=WORKLOG 2026-07-11.

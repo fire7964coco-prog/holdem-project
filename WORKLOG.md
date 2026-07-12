@@ -3,6 +3,21 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-12 (EN 이미지 전수감사 + 결함 23개 코드렌더 교체·배포)
+
+### 🖼️ 이미지 전수 §13 감사 (전 사이트) + EN 결함 교체
+> 사용자 지시: 이미지가 18개 언어 공용이라 품질 중요. Fable5로 전수검사→결함+커서 프롬프트→오늘 EN만 교체(KO는 내일).
+- **전수 감사(Fable5 18배치)**: 참조 이미지 **310개**(실존302+깨진404 8개) 전량 개봉 검사 → **결함 ~117개(~37%)**. 결과=`docs/image-audit/defects.md`(파일별 문제+영어 재생성 프롬프트). 커밋 `bc1f98e`.
+  - 결함 유형: 앞면 카드(불가능핏·중복·코너오류)·한글 텍스트 인포그래픽(깨진한글·CS노트유입·"No entry!"·"[cite]"·중복블록·오타)·블랙잭 오표기·여행 간판 깨짐·잘림/흰여백.
+  - 깨끗: 진짜 사진/스크린샷·뒷면카드 실사·HTML렌더 인포그래픽.
+- **EN 교차대조**: 결함 117개 중 **24개가 EN 글 사용**(~28 EN글). 공유 이미지 소수가 대부분 유발(button-dealer-board 7글·outs-hero 6글·rules-texas-holdem 5글·tournament-table-action 5글·pub-players-table 4글).
+- **코드렌더 교체 23개**(HTML→Playwright→webp, Fable5 저작 5세트 + 메인 렌더/육안검수): 카드=코너랭크+단일수트글리프 방식이라 **핏카운트 오류 원천 불가**. 전부 §13 육안검수 통과(카드유효·수학정확·철자·잘림0)·<60KB·1200×675. 커밋 `a7d58ce`.
+  - 목록: showdown-rules-hero·cards-speak·who-shows-first·blog-holdem-showdown·hand-rankings-board-read·outs-hero·outs-dirty-outs·equity-multiway·card-counting-blocker·card-counting-hero·cooler-vs-badbeat·button-dealer-board·bubble-pressure·probability-royal-flush·tournament-table-action·rules-texas-holdem·blog-holdem-card-stages·rules-step2-preflop·rules-step3-flop·ept-barcelona-powerpath·probability-pot-odds·pub-players-table·tiebreak-best5(캡션 §13 교정).
+- **alt/SEO 30개 정정**(§13-정확, 낡은 주장 교정: €10,300→€5,300, board-read "flush draw" 제거, cooler 알트 등).
+- **재생성 소스**: `scripts/gen-*.html`+`render-gen-batch.mjs`(18언어 현지화 재렌더 가능).
+- **⚠️ 미해결 1**: `apt-incheon-2026-guide-hero`(여행 실사, 오이벤트 브랜딩+경복궁뷰) — 코드렌더 불가, **실사/AI포토 필요**. 4글에서 사용(1글 히어로+3글 썸네일).
+- **▶ 다음(내일)**: KO 이미지 전수교체(defects.md에 KO 결함 대다수 = 텍스트 인포그래픽·flush-vs-straight-c*·beginner-mistakes·pub-*-infographic·pot-odds 계열·깨진404 8개). 코드렌더 파이프라인 그대로 적용.
+
 ## 2026-07-11 (retrofit 2차 웨이브 — 규칙·족보 감글 6편 리라이트·배포 + 이미지 §13 대교체)
 
 ### 📚 감글 retrofit 2차 웨이브 6편 (커밋 `2cfd8da`·`ba737c0`, 배포됨)
