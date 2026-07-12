@@ -3,7 +3,7 @@
  * 한국어는 루트(/)에 그대로 두고, 추가 언어만 /{locale}/... 로 발행한다.
  * 새 언어 추가 = 아래 SECONDARY_LOCALES + CHROME 에 항목만 추가.
  */
-export const SECONDARY_LOCALES = ["en", "ja", "es", "zh", "ar", "pt", "id", "ms", "vi", "hi", "de", "tr", "fr", "ru"] as const;
+export const SECONDARY_LOCALES = ["en", "ja", "es", "zh", "ar", "pt", "id", "ms", "vi", "hi", "de", "tr", "fr", "ru", "it"] as const;
 export type SecondaryLocale = (typeof SECONDARY_LOCALES)[number];
 
 export function isSecondaryLocale(value: string): value is SecondaryLocale {
@@ -39,6 +39,7 @@ export const OG_LOCALE: Record<SecondaryLocale, string> = {
   tr: "tr_TR",
   fr: "fr_FR",
   ru: "ru_RU",
+  it: "it_IT",
 };
 
 /** <html lang> 및 hreflang 코드 (zh는 간체 = zh-Hans, pt는 브라질 = pt-BR) */
@@ -57,6 +58,7 @@ export const HTML_LANG: Record<SecondaryLocale, string> = {
   tr: "tr",
   fr: "fr",
   ru: "ru",
+  it: "it",
 };
 
 interface ChromeStrings {
@@ -345,6 +347,24 @@ export const POST_LABELS: Record<SecondaryLocale, PostLabels> = {
     blogIntro:
       "Практичные гайды: не только какая рука сильнее, но и почему — и как использовать это за столом.",
   },
+  it: {
+    contents: "Indice",
+    quickAnswer: "Risposta rapida",
+    category: "Guida per principianti",
+    readSuffix: "di lettura",
+    published: "Pubblicato",
+    updated: "Aggiornato",
+    prev: "Precedente",
+    next: "Successivo",
+    related: "Articoli correlati",
+    share: "Condividi questo articolo",
+    copy: "Copia link",
+    copied: "Copiato!",
+    back: "Torna a tutti gli articoli",
+    blogTitle: "Blog di strategia Texas Hold'em",
+    blogIntro:
+      "Guide pratiche che spiegano non solo quale mano batte quale, ma perché — e come usarlo al tavolo.",
+  },
 };
 
 export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
@@ -544,6 +564,20 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     disclaimer:
       "Этот сайт носит исключительно информационный характер и не пропагандирует азартные игры на реальные деньги. Только для лиц старше 18 лет.",
   },
+  it: {
+    skip: "Vai al contenuto",
+    brand: "HoldemMaster",
+    blogLabel: "Blog",
+    menuOpen: "Apri menu",
+    menuClose: "Chiudi menu",
+    koLabel: "한국어",
+    tagline:
+      "Strategia Texas Hold'em chiara e pratica. Guide che spiegano non solo quale mano vince, ma perché.",
+    contentHeading: "Contenuti",
+    languageHeading: "Lingua",
+    disclaimer:
+      "Questo sito è solo a scopo informativo e non promuove il gioco d'azzardo con denaro reale. Solo per maggiori di 18 anni.",
+  },
 };
 
 /** 블로그 탑바 — 홈 피드 버튼 (한국어 기본값: 홈피드) */
@@ -562,6 +596,7 @@ export const NAV_HOME_FEED: Record<SecondaryLocale, string> = {
   tr: "Ana Sayfa",
   fr: "Accueil",
   ru: "Главная",
+  it: "Home",
 };
 
 /** 블로그 탑바 — 커뮤니티 CTA 버튼 */
@@ -580,4 +615,5 @@ export const NAV_CTA: Record<SecondaryLocale, string> = {
   hi: "समुदाय →",
   fr: "Communauté →",
   ru: "Сообщество →",
+  it: "Community →",
 };

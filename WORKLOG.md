@@ -3,6 +3,16 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-13 (it 이탈리아어 신규 로케일 + Rules 필라 6편 — 18개 확장 15/18)
+
+### 🌐 it(이탈리아어) 신규 로케일 + Rules 필라 6/6 (파일럿14)
+> 18개 확장 3번타자(부재중 자율). 신규 로케일 배선 + Opus 6병렬 + 적대적 QA 2배치.
+- **인프라**: `lib/intl.ts` +it 7개 맵(이탈리아어 UI) · `intl-posts.ts` IT_POSTS · `posts-it/index.ts` · translate route. 빌드 TS 에러 0.
+- **브리프**: `docs/translation-terms-it.md`. ⚠️**치명 함정**: **Poker=포카드(quads)**·**Colore=flush**(무늬 seme와 다의어)·**Scala=straight**·**홀덤 Full>Colore**(이탈리아 변형 "Colore batte Full"과 반대! §13급). 숫자=유럽식(천단위 마침표·소수점 쉼표), tu체.
+- **적대적 QA 2배치(Opus)**: §13 전수 손계산(rules 3예시·game-order full hand·족보표 7개·showdown alt) 0오류. **함정 4종 전수 안전 확인**(Poker=quads·Colore=flush·Full>Colore·Scala=straight). pot 198.000·side pot 1.300·Scala a Colore Q-J-T-9-8 확인. 🔴 3건(texas/showdown desc≤160·blind 주술일치 "ci sia"→"ci siano").
+- **결과**: 15번째 로케일 it. **18개 확장 15/18**(남은 3=pl·th·fa). 다음=pl.
+- **사용자 GSC**: `/it/blog/` 6 URL.
+
 ## 2026-07-13 (ru 러시아어 신규 로케일 + Rules 필라 6편 — 18개 확장 14/18)
 
 ### 🌐 ru(러시아어) 신규 로케일 + Rules 필라 6/6 (파일럿13)
