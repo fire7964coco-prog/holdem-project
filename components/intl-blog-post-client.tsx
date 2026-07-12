@@ -3,7 +3,7 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Clock, Tag, ChevronLeft, ChevronRight, ChevronDown, Share2, Link2 } from "lucide-react";
+import { Clock, Tag, ChevronLeft, ChevronRight, ChevronDown, Share2, Link2, Map } from "lucide-react";
 import { FaXTwitter, FaFacebookF } from "react-icons/fa6";
 import { useState, useRef, useEffect } from "react";
 import type { Post } from "@/lib/posts";
@@ -11,6 +11,8 @@ import { SITE } from "@/lib/site";
 import { POST_LABELS, NAV_CTA, NAV_HOME_FEED, dirForLocale, type SecondaryLocale } from "@/lib/intl";
 import { postsForLocale } from "@/lib/intl-posts";
 import { renderMarkdown, extractHeadings } from "@/app/blog/[slug]/blog-post-client";
+import { clusterForSlug } from "@/lib/pillar-clusters";
+import ClusterMinimap from "@/components/cluster-minimap";
 import CommunityCTA from "@/components/community-cta";
 import BlogTopBar from "@/components/blog-top-bar";
 import ReadingProgressBar from "@/components/reading-progress-bar";
@@ -82,6 +84,9 @@ export default function IntlBlogPostClient({
 
   const headings = extractHeadings(post.content);
   const hasToc = headings.length >= 2;
+  // 클러스터 미니맵 (현재 EN 프로토타입만). 클러스터 소속 글에만 노출.
+  const showMinimap = locale === "en" && clusterForSlug(post.slug) !== null;
+  const hasRail = hasToc || showMinimap;
   const bodyHtml = `<p class="text-muted-foreground text-base leading-relaxed mb-4">${renderMarkdown(
     post.content.replace(/^:::quiz:::$/m, ""),
   )}</p>`;
@@ -95,14 +100,17 @@ export default function IntlBlogPostClient({
         communityLabel={NAV_CTA[locale]}
       />
       <div className="max-w-6xl mx-auto px-4 py-10">
-        <div className={hasToc ? "xl:grid xl:grid-cols-[220px_1fr] xl:gap-10" : ""}>
-          {hasToc && (
+        <div className={hasRail ? "xl:grid xl:grid-cols-[220px_1fr] xl:gap-10" : ""}>
+          {hasRail && (
             <aside className="hidden xl:block">
-              <div className="sticky top-16">
-                <nav className="bg-card border border-border rounded-2xl p-5" aria-label={t.contents}>
-                  <p className="text-xs font-bold uppercase tracking-widest text-primary mb-4">{t.contents}</p>
-                  <IntlTocList headings={headings} />
-                </nav>
+              <div className="sticky top-16 space-y-4">
+                {hasToc && (
+                  <nav className="bg-card border border-border rounded-2xl p-5" aria-label={t.contents}>
+                    <p className="text-xs font-bold uppercase tracking-widest text-primary mb-4">{t.contents}</p>
+                    <IntlTocList headings={headings} />
+                  </nav>
+                )}
+                {showMinimap && <ClusterMinimap slug={post.slug} />}
               </div>
             </aside>
           )}
@@ -185,6 +193,20 @@ export default function IntlBlogPostClient({
                 <nav className="px-6 pb-6 pt-2 border-t border-border/60" aria-label={t.contents}>
                   <IntlTocList headings={headings} />
                 </nav>
+              </details>
+            )}
+
+            {showMinimap && (
+              <details className="xl:hidden group bg-card border border-border rounded-2xl mb-6" open>
+                <summary className="flex items-center justify-between gap-3 px-6 py-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden rounded-2xl hover:bg-card/70 transition-colors">
+                  <span className="flex items-center gap-2.5 text-xs font-bold uppercase tracking-widest text-primary">
+                    <Map className="w-4 h-4" aria-hidden="true" /> Cluster Map
+                  </span>
+                  <ChevronDown className="w-5 h-5 text-primary transition-transform duration-200 group-open:rotate-180" aria-hidden="true" />
+                </summary>
+                <div className="px-6 pb-6 pt-2 border-t border-border/60">
+                  <ClusterMinimap slug={post.slug} bare />
+                </div>
               </details>
             )}
 
