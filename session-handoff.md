@@ -5,7 +5,29 @@
 
 ---
 
-## ▶▶▶ 새 세션 START HERE (2026-07-13 밤 — hi 힌디어 Rules 필라 완결 / 다음=tr 터키어 = **마지막 언어**)
+## ▶▶▶ 새 세션 START HERE (2026-07-13 심야 — ★tr 완결 = 다국어 Rules 필라 **12개 언어 완결** / 확장 트랙 종료)
+
+> **모드**: 다국어 Rules 필라 확장 **트랙 종료**. hi·tr 모두 Fable5 한도 소진 상태에서 **전 과정 Opus로 수행**(번역 서브에이전트 model:opus 6병렬 + 적대적 QA Opus 2배치)로 완결. 절차=`docs/translation-spec.md` §0.5. ★**"번역=현지 맥락 재구성 포스팅" 마인드셋 명문화됨**(spec "★★ 이 작업의 본질" + 메모리 [[translation-is-contextual-reposting]]) — 앞으로 모든 번역·현지화 작업에 적용.
+
+### ✅ 오늘(07-13 심야) 완료 — tr Rules 필라 6/6 번역 배포 (파일럿11 = 마지막 언어)
+브리프(`docs/translation-terms-tr.md` 신규)→Opus 6병렬 번역→조립→빌드/링크(하드, 초기실패 3건 교정)→적대적 QA 2배치(Opus)→교정6→배포. **§13 전수 재검산 0오류**. 커밋=이번 세션.
+- **핵심(tr)**: 터키어 고유 족보명(Floş·Kent·Kare·Full·Üçlü·İki Çift·Çift), 숫자=**유럽식 변환**(1,326→1.326·198,000→198.000·2.5→2,5), sen체, 특수문자 ı/İ/ş/ğ/ç/ö/ü. game-order category "초보 가이드"→"rules".
+- **★다국어 Rules 필라 = 12개 언어 완결**: en(마스터)+ja·es·pt·de·zh·ar·id·ms·vi·hi·**tr**. **더 이상 남은 언어 없음.**
+- **사용자 몫(GSC 색인 6 URL)**: `/tr/blog/` + texas-holdem-rules-for-beginners·holdem-game-order·holdem-betting-actions·holdem-blind-meaning·holdem-all-in-rules·holdem-showdown-rules.
+
+### ▶▶ 다음 트랙 후보 (다국어 Rules 확장 종료 → 사용자와 방향 상의)
+1. **다국어 2번째 필라 확장** — Rules가 12개 언어 완결됐으니 다음 필라(예: Hand Rankings 클러스터 or Tournament)를 동일 파이프라인으로 언어 확장. (메모리 [[multilang-expansion-12-to-18]]: EN 마스터 완결→필라별 전언어 선행)
+2. **전 언어 stale 2편 재번역** — hand-rankings·tournament-vs-cash-game이 **전 12언어에서 stale**(EN 마스터가 6/9·6/11 갱신됨, 번역본은 6/9·6/11 옛버전) + category 한국어 레거시 + tr hand-rankings "head-up" 오타. `check:stale`로 확인. 묶어서 재번역 스프린트 가능.
+3. **이미지 트랙** — 실사 11개 Nano Banana(사용자 몫, 아래 07-12 블록) + GSC 추세.
+4. **EN 마스터 심화/신규 클러스터** — retrofit 잔여·신규 필라(PKO·Cash Game 등).
+- **백로그(마스터 공통)**: all-in 캡 공식 근사·game-order 프리플랍 체크 절대표현·pt 코퍼스/street 통일.
+
+### (이미지 트랙 — 후속) 실사 11개 Nano Banana + GSC
+아래 07-12 블록 참조(사용자 몫). 콘텐츠 트랙과 별개.
+
+---
+
+## ▶▶▶ (이전) START HERE (2026-07-13 밤 — hi 힌디어 Rules 필라 완결 / 다음=tr 터키어 = **마지막 언어**)
 
 > **모드**: 다국어 Rules 필라 확장 마무리. Fable5 한도 소진 상태 → 이번 hi는 **전 과정 Opus로 수행**(번역 서브에이전트 model:opus 6개 병렬 + 적대적 QA Opus 2배치). 절차·함정은 `docs/translation-spec.md` §0.5(파이프라인)+⚑(언어별) — 작업 전 읽을 것.
 

@@ -3,6 +3,20 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-13 (tr 터키어 Rules 필라 6편 번역·배포 — ★다국어 Rules 필라 12개 언어 완결)
+
+### 🌐 tr(터키어) Rules 필라 6/6 번역 (파일럿11 = 마지막 언어)
+> hi에 이어 **전 과정 Opus 수행**(번역 서브에이전트 6병렬 model:opus + 적대적 QA Opus 2배치). 파이프라인=`docs/translation-spec.md` §0.5. **이번부터 "번역=현지 맥락 재구성 포스팅" 마인드셋 명문화**(사용자 지시, spec "★★ 이 작업의 본질" + 메모리 [[translation-is-contextual-reposting]]).
+- **① 브리프**: `docs/translation-terms-tr.md` 신규. 핵심 = **터키어 고유 족보명**(Royal Floş·Sıralı Floş·Kare·Full·Floş·Kent(straight)·Üçlü·İki Çift·Çift·Yüksek Kart) + 액션 영어/터키어 혼용, **숫자=유럽식**(천단위 `.`·소수점 `,` → §13 값 변환: 1,326→1.326·198,000→198.000·2.5→2,5·0.84%→0,84%), sen체, 특수문자 ı/İ/ş/ğ/ç/ö/ü.
+- **② 번역 6편**: 신규5 + game-order 재번역(category 한국어"초보 가이드"→"rules").
+- **③ 조립**: `index.ts` Rules 6/6 그룹핑(동시편집 레이스 → 메인 재작성).
+- **④ 기계검사**: 숫자표기 grep(영어식 §13 잔류 0·CSS rgba 오탐 식별) → `check-intl-links` **초기 실패 3건 발견**(betting→holdem-strategy 2·blind→holdem-pot-odds 1, 비허용 슬러그가 허용링크와 같은 줄에 섞여 line-grep이 놓친 것 = 하드체크가 잡음) → 링크 마크업 제거·앵커 유지로 교정(corrupted "strateji filesinde"→"stratejisinde"도 수정). 재검사 통과(130편)·build ✅ 247p·sitemap 57 blog + 130 intl·stale Rules6 최신.
+- **⑤ 적대적 QA 2배치(Opus)**: §13 베스트5·팟 산수 전수 손계산 → **전부 EN 마스터와 일치**(game-order A♠K♥ two pair vs 9♦9♣ üçlü→B승·pot 198.000, all-in side pot 4인 1.300, showdown Q-J-T-9-8 straight flush, blind 2,7:1/27%). 유럽식 숫자 변환·특수문자 철자 완벽.
+- **⑥ 교정 6건**(안전개선): game-order "Head-up"→"Heads-up" 3곳 정규화, betting 깨진MT "ödürücü"→"ürkütücü"·문장 다듬기·readnext 비허용 holdem-strategy → holdem-game-order 카드로 교체. 재빌드·링크체크 재통과.
+- **★결과**: **다국어 Rules 필라 = 12개 언어 완결** — en(마스터) + ja·es·pt·de·zh·ar·id·ms·vi·hi·**tr**. **Rules 필라 다국어 확장 트랙 종료.**
+- **다음(사용자 GSC)**: tr 6 URL 색인 — `/tr/blog/` + texas-holdem-rules-for-beginners·holdem-game-order·holdem-betting-actions·holdem-blind-meaning·holdem-all-in-rules·holdem-showdown-rules.
+- **백로그**: 전 언어 hand-rankings·tournament-vs-cash-game 재번역(stale·category 레거시·hand-rankings tr에 "head-up" 오타 잔존)·all-in 캡 근사·game-order 프리플랍 체크 절대표현(마스터 공통).
+
 ## 2026-07-13 (hi 힌디어 Rules 필라 6편 번역·배포 — 11개 언어 완결)
 
 ### 🌐 hi(힌디어) Rules 필라 6/6 번역 (파일럿10, 인도 페르소나)
