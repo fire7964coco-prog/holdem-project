@@ -67,5 +67,37 @@ if (violations.length > 0) {
   process.exit(1);
 }
 
+// ── 2차: 올바른 언어경로지만 그 언어에 대상 슬러그가 없는 링크(= 해당 언어에서 404) ──
+// 완결 클러스터 통째 번역을 안 하고 쪼개 번역하면, 아직 번역 안 된 형제글로 링크가 걸려
+// 해당 언어 페이지가 404가 된다. 빌드를 막지는 않고(점진 번역 허용) 경고로 표면화한다.
+const slugSetByLocale = {};
+for (const l of SECONDARY_LOCALES) slugSetByLocale[l] = new Set(POSTS_BY_LOCALE[l].map((p) => p.slug));
+
+const missingTargets = [];
+for (const locale of SECONDARY_LOCALES) {
+  for (const post of POSTS_BY_LOCALE[locale]) {
+    for (const m of post.content.matchAll(LINK_RE)) {
+      // 슬러그는 공백(마크다운 title "..." 앞)·#앵커·?쿼리·) 전까지만.
+      const bm = m[1].match(/^\/(?:([a-z]{2})\/)?blog\/([^#?)\s]+)/);
+      if (!bm) continue;
+      const linkLocale = bm[1];
+      const targetSlug = bm[2].replace(/\/+$/, "");
+      // 같은 언어로 향하는 링크만 대상 실존 검사(타언어 누수는 위 1차에서 이미 차단)
+      if (linkLocale === locale && !slugSetByLocale[locale].has(targetSlug)) {
+        missingTargets.push({ locale, slug: post.slug, href: m[1], targetSlug });
+      }
+    }
+  }
+}
+
+if (missingTargets.length > 0) {
+  console.error(`\n✖ 번역본 내부링크 대상 미존재 — ${missingTargets.length}건 (해당 언어에서 404)\n`);
+  for (const v of missingTargets) {
+    console.error(`  [${v.locale}] ${v.slug} → ${v.href}  (대상 "${v.targetSlug}" 미번역)`);
+  }
+  console.error(`\n→ 대상 글을 해당 언어로 번역하거나 번역 전까지 링크를 빼세요. (완결 클러스터 통째 번역 권장)\n`);
+  process.exit(1);
+}
+
 const total = SECONDARY_LOCALES.reduce((n, l) => n + POSTS_BY_LOCALE[l].length, 0);
-console.log(`✓ 다국어 내부 링크 검사 통과 (${total}편, ${SECONDARY_LOCALES.length}개 언어)`);
+console.log(`✓ 다국어 내부 링크 검사 통과 (${total}편, ${SECONDARY_LOCALES.length}개 언어) — 언어경로+대상실존 확인`);
