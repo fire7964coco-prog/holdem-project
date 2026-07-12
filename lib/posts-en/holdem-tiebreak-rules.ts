@@ -6,7 +6,7 @@ export const POST: Post = {
   seoTitle: "Same Hand, Same Pair — Who Wins? Poker Tie-Breaker Rules",
   desc: "Same pair at showdown and still lost? How ties are broken in poker — who wins with the same pair or two pair, when the 5th card matters, and when pots split.",
   tldr: "Ties are broken in a fixed order: hand rank first, then the cards that make the hand, then kickers from highest to lowest. Same pair → higher first kicker wins; identical five cards → split pot. Suits never decide a tie.",
-  category: "초보 가이드",
+  category: "hand-rankings",
   date: "2026-06-13",
   updated: "2026-07-11",
   keepImagesInBody: true,

@@ -6,7 +6,7 @@ export const POST: Post = {
   seoTitle: "Which 5 Cards Play? — How to Read the Board in Hold'em",
   desc: "River's out and you still can't tell what you have? Read any Hold'em board fast: your best 5 cards from 7, board straights and flushes, and playing the board.",
   tldr: "In Texas Hold'em you always play the best 5-card hand from 7 (2 hole cards + 5 community cards) — using both hole cards, one, or none at all (playing the board). Scan all 7 cards in a fixed order: flush → straight → paired ranks → high card.",
-  category: "초보 가이드",
+  category: "hand-rankings",
   date: "2026-06-15",
   updated: "2026-07-11",
   keepImagesInBody: true,

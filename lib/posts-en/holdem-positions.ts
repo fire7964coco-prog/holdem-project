@@ -6,7 +6,7 @@ export const POST: Post = {
   seoTitle: "Your Seat Changes Names Every Hand — Poker Positions Chart",
   desc: "The names move with the button, not the chairs. Every poker position name — UTG, hijack, cutoff, button — plus seat numbers, 6-max map, and who acts first.",
   tldr: "Poker positions are seat names measured from the dealer button — UTG, lojack, hijack, cutoff, button, and the blinds — and they move one seat clockwise every hand. Preflop, UTG acts first and the big blind last; postflop, the small blind acts first and the button last. Physical seat numbers never move; positions do.",
-  category: "초보 가이드",
+  category: "strategy",
   date: "2026-06-13",
   updated: "2026-07-11",
   keepImagesInBody: true,

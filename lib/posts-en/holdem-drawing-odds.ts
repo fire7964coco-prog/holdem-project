@@ -6,7 +6,7 @@ export const POST: Post = {
   seoTitle: "What Are the Odds You Actually Flop It? — Poker Drawing Odds",
   desc: "The real odds of flopping a set, a flush, quads and every draw in Hold'em — with the actual combinatorics and the set-mining math the top pages leave out.",
   tldr: "You flop a set with a pocket pair 11.8% of the time (7.5-to-1 against), flop a flush with two suited cards just 0.84%, and complete a flopped flush draw by the river 35% of the time. Every number below is derived from the deck, not guessed.",
-  category: "strategy",
+  category: "odds",
   date: "2026-07-04",
   updated: "2026-07-04",
   keepImagesInBody: true,

@@ -6,7 +6,7 @@ export const POST: Post = {
   seoTitle: "Went All-In and Confused? — Hold'em All-In Rules & Side Pots",
   desc: "Shoved all your chips and not sure what you can win? Texas Hold'em all-in rules — table stakes, side pots, re-raise eligibility, and showdown order.",
   tldr: "Going all-in means betting every chip you have. You can only win what you matched from each opponent (the main pot). Extra bets from bigger stacks form a side pot you cannot win. An all-in for less than a full raise does NOT reopen the betting for players who already acted.",
-  category: "초보 가이드",
+  category: "rules",
   date: "2026-06-15",
   updated: "2026-07-12",
   keepImagesInBody: true,

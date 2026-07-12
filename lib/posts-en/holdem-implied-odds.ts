@@ -6,7 +6,7 @@ export const POST: Post = {
   seoTitle: "The Call Pot Odds Say Is Wrong — Implied Odds Explained",
   desc: "Your pot odds say fold, but the call still prints. How implied odds work — the formula, set mining, reverse implied odds, and when the money isn't there.",
   tldr: "Implied odds are the extra chips you expect to win on later streets when your draw hits. They let you profitably call a draw that pot odds alone say to fold — but only if stacks are deep and your opponent will actually pay you off.",
-  category: "strategy",
+  category: "odds",
   date: "2026-07-08",
   updated: "2026-07-08",
   keepImagesInBody: true,

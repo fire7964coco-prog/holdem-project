@@ -6,7 +6,7 @@ export const POST: Post = {
   seoTitle: "Is This Call Actually Profitable? — How to Calculate Pot Odds",
   desc: "Stop calling on hope. How to calculate pot odds in ten seconds — the ratio-to-percentage shortcut, a bet-size cheat sheet, and where implied odds fit in.",
   tldr: "To calculate pot odds, divide the amount you must call by the total pot after your call. Calling $50 into a $150 pot = 50 ÷ 200 = 25% — so you need at least 25% equity to make the call profitable.",
-  category: "strategy",
+  category: "odds",
   date: "2026-07-03",
   updated: "2026-07-03",
   keepImagesInBody: true,

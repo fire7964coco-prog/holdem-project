@@ -6,7 +6,7 @@ export const POST: Post = {
   seoTitle: "Fold 80% of Your Hands? — Best Poker Starting Hands Chart",
   desc: "Most hole cards lose money. The best and good starting hands in poker, the full chart by position and 6-max, plus GTO vs beginner charts — in 10 minutes.",
   tldr: "Of the 169 starting hand types, only a small top slice — about 15–20% of the hands you're dealt — is profitable for a beginner. Big pairs (AA–TT) and AK raise from any seat; the later you act, the wider you open — from ~12% under the gun to ~42% on the button (wider again in 6-max). Start with a simplified chart, add GTO preflop charts once raise-or-fold is automatic.",
-  category: "초보 가이드",
+  category: "strategy",
   date: "2026-06-14",
   updated: "2026-07-11",
   keepImagesInBody: true,

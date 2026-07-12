@@ -6,7 +6,7 @@ export const POST: Post = {
   seoTitle: "Check, Call or Fold? — Poker Betting Actions & Raise Rules",
   desc: "Action's on you and your mind goes blank? Learn what a check, call, raise and fold mean in poker, the min-raise rule, and how many times you can re-raise.",
   tldr: "Texas Hold'em has 5 betting actions: check (pass for free), bet (open the round), call (match a bet), raise (increase it — the minimum raise equals the previous bet or raise), and fold. You can only check when no one has bet yet on that street.",
-  category: "초보 가이드",
+  category: "rules",
   date: "2026-06-14",
   updated: "2026-07-11",
   keepImagesInBody: true,

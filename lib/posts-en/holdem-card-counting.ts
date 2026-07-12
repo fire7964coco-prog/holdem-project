@@ -6,7 +6,7 @@ export const POST: Post = {
   seoTitle: "Can You Count Cards in Poker? Yes — But Not Like Blackjack",
   desc: "Blackjack-style card counting is dead in poker — but poker has its own. Why it doesn't transfer, whether it's legal, and how outs and blockers replace it.",
   tldr: "Not the way you do in blackjack — the deck reshuffles every hand and too few cards are exposed, so tracking high and low cards gives you no edge. But poker has its own legal counting: counting outs, using blockers, and tracking dead cards to read what your opponent can't have.",
-  category: "strategy",
+  category: "odds",
   date: "2026-07-08",
   updated: "2026-07-08",
   keepImagesInBody: true,

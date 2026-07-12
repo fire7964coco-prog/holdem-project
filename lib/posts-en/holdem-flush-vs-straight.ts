@@ -6,7 +6,7 @@ export const POST: Post = {
   seoTitle: "Does a Flush Beat a Straight? Yes — and What Beats a Flush",
   desc: "Slid a straight forward — and a flush took the pot? A flush always beats a straight. Here's the math, what beats a flush, and 3 boards that fool players.",
   tldr: "A flush (five cards of one suit, ~0.197%) always beats a straight (five in sequence, ~0.392%) in Texas Hold'em — because a flush is about twice as hard to make.",
-  category: "초보 가이드",
+  category: "hand-rankings",
   date: "2026-06-13",
   updated: "2026-07-11",
   keepImagesInBody: true,

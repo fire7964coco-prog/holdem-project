@@ -6,7 +6,7 @@ export const POST: Post = {
   seoTitle: "The Fee Quietly Eating Your Winnings — What Is Poker Rake?",
   desc: "Rake is the fee the house takes from every cash-game pot. Here's how pot rake, time charges, and tournament fees work, how much you actually pay per session, and what rakeback gives back.",
   tldr: "Rake is the small cut the cardroom takes from each pot to host the game — usually 2.5–10% up to a cap of a few dollars. Most rooms take nothing if everyone folds before the flop ('no flop, no drop'). It hits low-stakes and short-handed players hardest, and rakeback returns a slice of it to regulars.",
-  category: "strategy",
+  category: "glossary",
   date: "2026-07-04",
   updated: "2026-07-04",
   keepImagesInBody: true,

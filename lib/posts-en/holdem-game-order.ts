@@ -6,7 +6,7 @@ export const POST: Post = {
   seoTitle: "Lost on When to Bet? — Texas Hold'em Order of Play Explained",
   desc: "Freeze on 'whose turn is it?' at Hold'em? Here's the full order of play — preflop, flop, turn, river, showdown — with a real hand walked through step by step.",
   tldr: "A hand of Texas Hold'em runs: post blinds → deal two hole cards → preflop → flop (3 cards) → turn (1 card) → river (1 card) → showdown, with four betting rounds in total.",
-  category: "초보 가이드",
+  category: "rules",
   date: "2026-06-10",
   updated: "2026-07-02",
   keepImagesInBody: true,

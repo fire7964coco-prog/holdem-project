@@ -126,8 +126,7 @@ KO 11필라를 복제하지 않고 EN 검색시장 기준으로 재편. `holdem-
 
 신규 발행 前, 기존 자산 정합성부터 잡는다 (링크주스·색인 효율↑).
 
-1. **category 통일** — 현재 tournament/초보 가이드/토너먼트(한글)/strategy 혼재. 6필라 기준 표준 셋으로 재지정 제안: `rules` / `hand-rankings` / `odds` / `strategy` / `tournament` / `glossary`.
-   - ⚠️ 실행 전 category 소비처(렌더러·필터·i18n) 확인 필요 → 실제 재지정은 별도 스텝.
+1. **category 통일** — ✅ **완료(2026-07-12)**. EN 42편을 6필라 표준셋 `rules`/`hand-rankings`/`odds`/`strategy`/`tournament`/`glossary`로 재지정(30편 변경, 한글 "초보 가이드" 전멸). 소비처 확인 완료: /en/blog는 `t.category` 로케일 라벨 사용(post.category 미표시), 관련글은 인덱스순, 유일 표시처=tournament-guide 레이아웃(wpt 1편)·RSS(KO만) → 안전. **📌 남음**: 번역본(ja/es/…)·KO는 아직 미표준화(번역본은 저작 시 캐논 적용, KO는 블로그 필터 탭 소비처라 별도 판단).
 2. **wpt/ept 고아 복구** — 각 글 본문에 markdown 내부링크 3개+ 추가 (holdem-tournament 필라 + tournament-vs-cash + 관련 이벤트가이드).
 3. **필라 링크 규칙 적용** — 모든 클러스터의 **첫 내부링크 = 소속 필라**. Strategy/Odds 신규 허브 발행 시 기존 클러스터(position-play·starting-hands-chart)에서 역링크.
 4. **positions 이중소속 정리** — `holdem-positions`(좌석 기본)=Rules 첫링크, `holdem-position-play`(포지션별 플레이)=Strategy 첫링크.

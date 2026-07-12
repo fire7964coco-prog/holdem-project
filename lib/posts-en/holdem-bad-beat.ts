@@ -6,7 +6,7 @@ export const POST: Post = {
   seoTitle: "You Were 80% to Win — and Lost. What Is a Bad Beat?",
   desc: "A bad beat is losing as a big favorite when your opponent gets lucky. How it differs from a cooler, the bad beat jackpot, and why it's secretly good for you.",
   tldr: "A bad beat is when you get your money in as a heavy favorite — usually 80% or more — and lose because your opponent hits a lucky card to 'suck out' on you. Unlike a cooler, you were ahead the whole way; the deck just betrayed you at the end. It stings, but bad beats are actually a sign you're playing in a profitable game.",
-  category: "strategy",
+  category: "glossary",
   date: "2026-07-05",
   updated: "2026-07-05",
   keepImagesInBody: true,

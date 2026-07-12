@@ -6,7 +6,7 @@ export const POST: Post = {
   seoTitle: "How to Play Texas Hold'em for Beginners — Rules, Chips & Cheat Sheet",
   desc: "Never played before? How to play Texas Hold'em step by step — blinds, chip setup, hand rankings, and a printable cheat sheet even dummies can follow.",
   tldr: "Texas Hold'em gives each player 2 hole cards, uses 5 community cards, and the best 5-card poker hand wins after four betting rounds.",
-  category: "초보 가이드",
+  category: "rules",
   date: "2026-06-11",
   updated: "2026-07-02",
   keepImagesInBody: true,

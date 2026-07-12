@@ -6,7 +6,7 @@ export const POST: Post = {
   seoTitle: "Chips In Before Cards? — Small Blind vs Big Blind in Poker",
   desc: "Two players pay before a card is dealt — why? What the small blind and big blind are, who posts them, SB vs BB amounts, the big blind ante, and heads-up rules.",
   tldr: "Blinds are forced bets posted before cards are dealt. The small blind sits left of the dealer button and the big blind to their left; the big blind — usually double the small blind — is the table's betting unit.",
-  category: "초보 가이드",
+  category: "rules",
   date: "2026-06-13",
   updated: "2026-07-11",
   keepImagesInBody: true,

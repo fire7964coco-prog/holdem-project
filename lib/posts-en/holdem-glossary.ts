@@ -6,7 +6,7 @@ export const POST: Post = {
   seoTitle: "From the Nuts to the Fish — The Texas Hold'em Glossary",
   desc: "Every poker term you'll hear at the table, explained simply and grouped by situation: betting, positions, hands, slang, and the terms people always mix up.",
   tldr: "This is a plain-English glossary of the poker terms that actually come up in a Texas Hold'em game, grouped by how you'll meet them — betting actions, positions, hands and board, player types, money, and table situations. Start with the 'most confused' terms below (check vs call, set vs trips, cooler vs bad beat), then browse by category. Terms with a deeper guide link straight to it.",
-  category: "strategy",
+  category: "glossary",
   date: "2026-07-05",
   updated: "2026-07-05",
   keepImagesInBody: true,

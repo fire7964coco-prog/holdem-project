@@ -6,7 +6,7 @@ export const POST: Post = {
   seoTitle: "Your Chips Aren't Worth Face Value — ICM in Poker",
   desc: "In a tournament your chips aren't cash — winning only pays first. ICM (the Independent Chip Model) turns your stack into real prize money. Here's how it works.",
   tldr: "ICM (Independent Chip Model) converts your tournament chip stack into its real prize-money value, using the payouts and everyone's stacks. Because you only win one first prize, doubling your chips never doubles your money — so the chip leader's stack is worth less than its chip share, and short stacks are worth more. That gap is why you fold hands on the bubble that would be easy calls in a cash game.",
-  category: "strategy",
+  category: "tournament",
   date: "2026-07-09",
   updated: "2026-07-09",
   keepImagesInBody: true,

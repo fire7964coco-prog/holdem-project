@@ -6,7 +6,7 @@ export const POST: Post = {
   seoTitle: "Your Win % Isn't What You Keep — Poker Equity Explained",
   desc: "Equity is your share of the pot — but you don't always keep it. Why 40% equity isn't 40% of wins, plus fold equity, realization, and all-in equity explained.",
   tldr: "Equity is your share of the pot — the percentage of the time your hand wins if all the cards are dealt. You call when your equity beats the pot odds, but position and betting mean you rarely keep your full equity — and fold equity lets you win pots even when your hand is behind.",
-  category: "strategy",
+  category: "odds",
   date: "2026-07-08",
   updated: "2026-07-08",
   keepImagesInBody: true,

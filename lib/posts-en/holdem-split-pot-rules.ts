@@ -6,7 +6,7 @@ export const POST: Post = {
   seoTitle: "Won the Hand but Got Half? — Poker Split Pot & Chop Rules",
   desc: "Can you tie in poker? Yes — here's exactly when pots split: identical five-card hands, the board playing for everyone, the odd chip rule, and side-pot chops.",
   tldr: "Yes — poker hands can tie. A pot is split (a chop) when two or more players show down the identical best five-card hand. Suits never break the tie, and any leftover odd chip goes to the first tied player left of the dealer button.",
-  category: "초보 가이드",
+  category: "hand-rankings",
   date: "2026-06-13",
   updated: "2026-07-11",
   keepImagesInBody: true,

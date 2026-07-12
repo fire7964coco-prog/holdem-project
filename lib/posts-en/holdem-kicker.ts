@@ -6,7 +6,7 @@ export const POST: Post = {
   seoTitle: "What Is a Kicker in Poker? The Side Card That Wins Pots",
   desc: "A kicker is the side card that breaks ties in poker — which hands have one and how many, why A9 loses to AK, and the quads exception most guides get wrong.",
   tldr: "A kicker is the highest side card that isn't part of your main hand — it breaks ties when two players share the same rank. One pair uses 3 kickers, two pair 1, trips 2; straights, flushes, and full houses have none. It's why AK beats AQ when the board pairs an ace.",
-  category: "초보 가이드",
+  category: "hand-rankings",
   date: "2026-07-08",
   updated: "2026-07-08",
   keepImagesInBody: true,

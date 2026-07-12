@@ -6,7 +6,7 @@ export const POST: Post = {
   seoTitle: "If You Can't Spot the Fish, It's You — What Is a Poker Fish?",
   desc: "A fish is the weak player the whole table profits from. How to spot one, the shark/whale/nit/donkey slang decoded, and how to make sure the fish isn't you.",
   tldr: "A 'fish' is poker slang for a weak, losing player the stronger players ('sharks') make their money from. Fish play too many hands, call too much, and can't fold — and the famous line warns that if you can't spot the fish at your table, you're it. It's the single most important read in the game: find the fish, or become one.",
-  category: "strategy",
+  category: "glossary",
   date: "2026-07-05",
   updated: "2026-07-05",
   keepImagesInBody: true,

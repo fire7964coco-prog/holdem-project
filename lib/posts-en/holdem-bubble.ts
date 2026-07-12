@@ -6,7 +6,7 @@ export const POST: Post = {
   seoTitle: "How to Play the Bubble in Poker (Stack by Stack)",
   desc: "On the bubble, survival beats chips — so the right play flips. How to play a big, medium, or short stack, plus bubble factor, satellites, and hand-for-hand.",
   tldr: "The bubble is the spot right before the money, where one more elimination pays everyone else. Because busting means winning nothing, survival is worth more than the chips you'd gain — so calling ranges tighten hard while shoving stays wide. Big stacks attack, medium stacks are the most trapped (not short stacks), and on a satellite bubble you fold everything, even aces, once your seat is locked.",
-  category: "strategy",
+  category: "tournament",
   date: "2026-07-09",
   updated: "2026-07-09",
   keepImagesInBody: true,
