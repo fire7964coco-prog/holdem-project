@@ -740,3 +740,104 @@ a.brush-link:hover { filter: brightness(0.9); }
     padding: 16px 12px 10px;
   }
 }
+
+/* ── RTL(아랍어) 블로그 본문 미러링 오버라이드 ──
+   [dir="rtl"] 조상은 다국어 클라이언트(components/intl-blog-post-client.tsx의 <div dir={dir}>)에서
+   아랍어일 때만 생긴다. 한국어 본사이트·LTR 11개 언어에는 이 선택자가 절대 매칭되지 않는다.
+   renderMarkdown의 인라인 style을 이겨야 하므로 !important 필수. */
+
+/* 1. H3 제목 골드 액센트 바: 좌측 → 우측 */
+[dir="rtl"] .blog-prose h3 {
+  border-left: 0 !important;
+  border-right: 3px solid rgba(212, 175, 55, 0.6) !important;
+  border-radius: 8px 0 0 8px !important;
+}
+
+/* 2. 표 셀 기본 좌측 정렬 → 우측 (명시적 center/right 정렬 컬럼은 text-left가 아니므로 보존됨) */
+[dir="rtl"] .blog-prose .text-left {
+  text-align: right !important;
+}
+
+/* 3. 인용구: 좌측 테두리·패딩 → 우측 */
+[dir="rtl"] .blog-prose blockquote {
+  padding-left: 0 !important;
+  padding-right: 1rem !important;
+  border-left: 0 !important;
+  border-right-width: 4px !important;
+}
+
+/* 4. → 결과 콜아웃 스트라이프: 좌측 → 우측 */
+[dir="rtl"] .blog-prose .blog-callout {
+  border-left: 0 !important;
+  border-right: 3px solid rgba(196, 154, 24, 0.7) !important;
+  border-radius: 10px 0 0 10px !important;
+}
+
+/* 5-a. 인라인 썸네일 링크 이미지: 텍스트와의 간격을 좌측으로 */
+[dir="rtl"] .blog-prose .brush-link img {
+  margin-right: 0 !important;
+  margin-left: 5px !important;
+}
+
+/* 5-b. :::stripe 스탯 칸 구분선: RTL 흐름(우→좌)에 맞춰 좌측 구분선으로 */
+[dir="rtl"] .blog-prose .blog-stripe-cell {
+  border-right: 0 !important;
+}
+[dir="rtl"] .blog-prose .blog-stripe-cell:not(:last-child) {
+  border-left: 1px solid #d8d0be !important;
+}
+
+/* 5-c. :::compare 헤더 코너 라운딩: 그리드가 좌우 반전되므로 코너도 교차 */
+[dir="rtl"] .blog-prose .blog-compare-hl {
+  border-radius: 0 10px 0 0 !important;
+}
+[dir="rtl"] .blog-prose .blog-compare-hr {
+  border-radius: 10px 0 0 0 !important;
+}
+
+/* 5-d. :::readnext 헤딩 미세 들여쓰기: 좌 → 우 */
+[dir="rtl"] .blog-prose .blog-readnext-label {
+  padding-left: 0 !important;
+  padding-right: 2px !important;
+}
+
+/* 추가 발견 — :::note 에디토리얼 노트 골드 좌측선: 좌 → 우 */
+[dir="rtl"] .blog-prose .blog-note {
+  border-left: 0 !important;
+  border-right: 3px solid hsl(43 65% 44%) !important;
+}
+
+/* 추가 발견 — FAQ 답변 들여쓰기(Q 아이콘 아래 48px): 좌 → 우 */
+[dir="rtl"] .blog-prose .blog-faq-answer {
+  padding: 12px 48px 12px 16px !important;
+}
+
+/* 6. FAQ 답변 모바일 — 위 RTL 규칙(우 48px)이 기존 LTR 모바일 축소(~601행 padding-left)를
+   특이도로 이겨버리므로, RTL 전용 모바일 축소를 별도 선언(반드시 위 규칙보다 뒤). */
+@media (max-width: 639px) {
+  [dir="rtl"] .blog-prose .blog-faq-answer {
+    padding-right: 16px !important;
+  }
+}
+
+/* 7. 아랍어 자간 제거 — 아랍어는 연결 문자라 letter-spacing이 글자 연결을 끊어 가독성 훼손
+   (W3C alreq 권고). 번역 텍스트가 들어가는 트래킹 라벨류만 0으로. */
+[dir="rtl"] .blog-prose .blog-readnext-label,
+[dir="rtl"] .blog-prose .blog-kicker,
+[dir="rtl"] .blog-prose .blog-faqcard-caption {
+  letter-spacing: 0 !important;
+}
+
+/* 8. "다음/계속" 화살표 글리프 — RTL 진행 방향(좌측)으로 반전.
+   scaleX(-1)로 &rarr;/→가 왼쪽을 가리키게 하고, pillar-hub 호버 슬라이드도 방향 반전. */
+[dir="rtl"] .blog-prose .pillar-hub-arrow {
+  transform: translateX(4px) scaleX(-1);
+}
+[dir="rtl"] .blog-prose .pillar-hub-step:hover .pillar-hub-arrow {
+  transform: translateX(0) scaleX(-1);
+}
+[dir="rtl"] .blog-prose .blog-readnext-arrow,
+[dir="rtl"] .blog-prose .blog-callout-arrow {
+  display: inline-block;
+  transform: scaleX(-1);
+}

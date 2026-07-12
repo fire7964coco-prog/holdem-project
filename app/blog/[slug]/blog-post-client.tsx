@@ -141,7 +141,7 @@ export function renderMarkdown(content: string): string {
           const [value = '', label = ''] = line.split('|').map((s: string) => s.trim());
           const border = i === rows.length - 1 ? '' : 'border-right:1px solid #d8d0be';
           return (
-            `<div style="flex:1;min-width:84px;padding:18px 8px;text-align:center;${border}">` +
+            `<div class="blog-stripe-cell" style="flex:1;min-width:84px;padding:18px 8px;text-align:center;${border}">` +
             `<div style="font-size:27px;font-weight:900;color:hsl(43 65% 40%);line-height:1">${value}</div>` +
             `<div style="font-size:11.5px;color:hsl(30 22% 36%);margin-top:8px;line-height:1.4">${label}</div>` +
             `</div>`
@@ -277,13 +277,13 @@ export function renderMarkdown(content: string): string {
           thumb +
           `<span style="min-width:0;display:flex;align-items:center;gap:8px">` +
           `<span style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.35">${title}</span>` +
-          `<span style="color:var(--primary);font-weight:800;flex-shrink:0">&rarr;</span>` +
+          `<span class="blog-readnext-arrow" style="color:var(--primary);font-weight:800;flex-shrink:0">&rarr;</span>` +
           `</span></a>`
         );
       }).join('');
       return (
         `<div style="margin:30px 0;padding:14px 16px 16px;background:linear-gradient(rgba(28,74,52,0.14),rgba(28,74,52,0.05)),var(--card);border:1px solid var(--border);border-radius:16px">` +
-        `<div style="font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--primary);margin:2px 0 12px;padding-left:2px">${heading}</div>` +
+        `<div class="blog-readnext-label" style="font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--primary);margin:2px 0 12px;padding-left:2px">${heading}</div>` +
         `<div style="display:flex;gap:12px;flex-wrap:wrap">${cards}</div>` +
         `</div>`
       );
@@ -348,8 +348,8 @@ export function renderMarkdown(content: string): string {
       const [leftH = '', rightH = ''] = headerLine.split('|').map((s: string) => s.trim());
       const header = (
         `<div style="display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-bottom:6px">` +
-        `<div style="padding:10px 14px;background:linear-gradient(135deg,#d4af37,#f0d060);border-radius:10px 0 0 0;font-weight:900;font-size:13px;color:#0d1c14;text-align:center">${leftH}</div>` +
-        `<div style="padding:10px 14px;background:#e2dccf;border-radius:0 10px 0 0;font-weight:900;font-size:13px;color:#42372a;text-align:center">${rightH}</div>` +
+        `<div class="blog-compare-hl" style="padding:10px 14px;background:linear-gradient(135deg,#d4af37,#f0d060);border-radius:10px 0 0 0;font-weight:900;font-size:13px;color:#0d1c14;text-align:center">${leftH}</div>` +
+        `<div class="blog-compare-hr" style="padding:10px 14px;background:#e2dccf;border-radius:0 10px 0 0;font-weight:900;font-size:13px;color:#42372a;text-align:center">${rightH}</div>` +
         `</div>`
       );
       const rowHtml = rows.map((line: string, i: number) => {
@@ -428,7 +428,7 @@ export function renderMarkdown(content: string): string {
           const isTop = rank <= 3;
           const rankColor = rank === 1 ? '#b8820a' : rank <= 3 ? '#c49a18' : '#6b5040';
           const bg = isTop ? 'rgba(212,175,55,0.10)' : 'rgba(0,0,0,0.02)';
-          return `<div style="display:flex;align-items:center;gap:6px;padding:4px 8px;border-radius:6px;background:${bg};margin-bottom:3px"><div style="font-size:11px;font-weight:800;color:${rankColor};width:16px;text-align:right;flex-shrink:0">${rank}</div><div style="font-size:10px;font-weight:600;color:var(--foreground);width:84px;flex-shrink:0;line-height:1.2">${kr}</div><div style="display:flex;gap:2px;flex-wrap:nowrap">${cardHtml}</div></div>`;
+          return `<div style="display:flex;align-items:center;gap:6px;padding:4px 8px;border-radius:6px;background:${bg};margin-bottom:3px"><div style="font-size:11px;font-weight:800;color:${rankColor};width:16px;text-align:right;flex-shrink:0">${rank}</div><div style="font-size:10px;font-weight:600;color:var(--foreground);width:84px;flex-shrink:0;line-height:1.2">${kr}</div><div style="display:flex;gap:2px;flex-wrap:nowrap;direction:ltr">${cardHtml}</div></div>`;
         };
         const left  = ranks.slice(0, 5).map(makeRow).join('');
         const right = ranks.slice(5).map(makeRow).join('');
@@ -478,8 +478,8 @@ export function renderMarkdown(content: string): string {
     .replace(/^> (.+)$/gm, '<blockquote class="my-4 pl-4 border-l-4 border-primary/40 text-muted-foreground italic text-sm">$1</blockquote>')
     // → result blocks (after bold so inner bold is already processed)
     .replace(/^→ (.+)$/gm, (_, text) =>
-      `<div style="display:flex;gap:10px;align-items:flex-start;margin:10px 0;padding:14px 16px;background:rgba(212,175,55,0.10);border-left:3px solid rgba(196,154,24,0.7);border-radius:0 10px 10px 0">` +
-      `<span style="color:#d4af37;font-weight:900;font-size:17px;flex-shrink:0;line-height:1.5">→</span>` +
+      `<div class="blog-callout" style="display:flex;gap:10px;align-items:flex-start;margin:10px 0;padding:14px 16px;background:rgba(212,175,55,0.10);border-left:3px solid rgba(196,154,24,0.7);border-radius:0 10px 10px 0">` +
+      `<span class="blog-callout-arrow" style="color:#d4af37;font-weight:900;font-size:17px;flex-shrink:0;line-height:1.5">→</span>` +
       `<div style="font-size:14px;line-height:1.7;color:var(--foreground)">${text}</div></div>`)
     // :::faqcard[/path/img.webp][alt][caption]::: — notebook-style FAQ visual card
     // LCP 후보(보통 글 첫머리)면 eager+fetchpriority=high, 아니면 lazy
@@ -489,13 +489,13 @@ export function renderMarkdown(content: string): string {
         `<div style="background:#faf6ed;border-radius:16px;overflow:hidden">` +
         `<img src="${src}" alt="${alt}" loading="${a.loading}" fetchpriority="${a.fetchpriority}" decoding="async" width="1124" height="613" style="width:100%;height:auto;display:block" />` +
         `<div style="padding:10px 18px;border-top:1px solid rgba(196,154,24,0.25);text-align:center">` +
-        `<p style="font-size:14px;color:#b8820a;margin:0;letter-spacing:0.4px;font-weight:700">${caption}</p>` +
+        `<p class="blog-faqcard-caption" style="font-size:14px;color:#b8820a;margin:0;letter-spacing:0.4px;font-weight:700">${caption}</p>` +
         `</div></div></div>`;
     })
     // ── 매거진 컴포넌트: :::kicker[text]::: ── H2 바로 위 아이브로우(소제목 라벨).
     // 아래 음수 margin 으로 다음 ## 제목에 바짝 붙인다(제목은 TOC 유지를 위해 ##로 둠).
     .replace(/^:::kicker\[([^\]]+)\]:::$/gm, (_, text) =>
-      `<div style="font-size:11px;font-weight:800;letter-spacing:0.16em;text-transform:uppercase;color:hsl(43 65% 40%);margin:2.6rem 0 -1.9rem">${text}</div>`)
+      `<div class="blog-kicker" style="font-size:11px;font-weight:800;letter-spacing:0.16em;text-transform:uppercase;color:hsl(43 65% 40%);margin:2.6rem 0 -1.9rem">${text}</div>`)
     // ── 매거진 컴포넌트: :::pull[text]::: ── 풀쿼트(큰 인용). <br> 줄바꿈 허용.
     .replace(/^:::pull\[([^\]]+)\]:::$/gm, (_, text) =>
       `<figure style="margin:34px 0;text-align:center">` +
@@ -504,7 +504,7 @@ export function renderMarkdown(content: string): string {
       `</figure>`)
     // ── 매거진 컴포넌트: :::note[text]::: ── 여백형 에디토리얼 노트(이탤릭 + 골드 좌측선)
     .replace(/^:::note\[([^\]]+)\]:::$/gm, (_, text) =>
-      `<div style="margin:26px 0;padding:16px 20px;border-left:3px solid hsl(43 65% 44%);font-size:15px;color:hsl(30 22% 36%);font-style:italic;line-height:1.7">${text}</div>`)
+      `<div class="blog-note" style="margin:26px 0;padding:16px 20px;border-left:3px solid hsl(43 65% 44%);font-size:15px;color:hsl(30 22% 36%);font-style:italic;line-height:1.7">${text}</div>`)
     // :::tip[text]::: single-line tip callout
     .replace(/^:::tip\[([^\]]+)\]:::$/gm, (_, text) =>
       `<div style="display:flex;gap:10px;align-items:center;margin:14px 0;padding:12px 16px;background:rgba(59,130,246,0.07);border-radius:10px;border:1px solid rgba(59,130,246,0.2);font-size:13px;color:var(--foreground)">` +
