@@ -18,7 +18,7 @@ const ICONS: Record<string, typeof BookOpen> = {
   glossary: Book,
 };
 
-type Stop = { slug: string; label: string; hub?: boolean; state: "past" | "current" | "future" | "neutral" };
+type Stop = { slug: string; label: string; hub?: boolean; group?: string; state: "past" | "current" | "future" | "neutral" };
 
 function stopsFor(pillar: PillarCluster, slug: string, isCurrentPillar: boolean): Stop[] {
   const currentIdx = pillar.nodes.findIndex((n) => n.slug === slug);
@@ -30,7 +30,7 @@ function stopsFor(pillar: PillarCluster, slug: string, isCurrentPillar: boolean)
     if (!isCurrentPillar) state = "neutral";
     else if (hubCurrent) state = "future";
     else state = i < currentIdx ? "past" : i === currentIdx ? "current" : "future";
-    stops.push({ slug: n.slug, label: n.label, state });
+    stops.push({ slug: n.slug, label: n.label, group: n.group, state });
   });
   return stops;
 }
@@ -44,6 +44,7 @@ function Trail({ pillar, slug, isCurrentPillar }: { pillar: PillarCluster; slug:
         const isLast = i === stops.length - 1;
         const isCurrent = s.state === "current";
         const traveled = currentStopIdx >= 0 && i < currentStopIdx;
+        const groupStart = s.group && s.group !== stops[i - 1]?.group;
         return (
           <li key={s.slug} className="flex gap-2.5">
             {/* 마커 + 경로선 */}
@@ -65,6 +66,9 @@ function Trail({ pillar, slug, isCurrentPillar }: { pillar: PillarCluster; slug:
             </div>
             {/* 라벨 */}
             <div className={`min-w-0 ${isLast ? "pb-0.5" : "pb-2"}`}>
+              {groupStart && (
+                <div className="text-[9px] font-bold uppercase tracking-[0.15em] text-primary/55 mb-1">{s.group}</div>
+              )}
               {isCurrent ? (
                 <div className="-mt-0.5 rounded-lg bg-[#2563eb]/10 border border-[#2563eb]/45 px-2 py-1 shadow-[0_0_18px_-4px_rgba(37,99,235,0.55)]">
                   <div className="text-[13px] font-bold text-foreground leading-snug">{s.label}</div>

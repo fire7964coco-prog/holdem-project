@@ -6,7 +6,7 @@ export const POST: Post = {
   title: "EPT Barcelona 2026 — Complete Player Guide: Schedule, Buy-Ins & How to Qualify",
   desc: "EPT Barcelona 2026 — Aug 16–29, Casino Barcelona. $0.50 Power Path to the €5,300 Main. Schedule, buy-ins, hotels, and first-timer tips inside.",
   tldr: "EPT Barcelona 2026 is Aug 16–29 at Casino Barcelona. Main Event buy-in: €5,300. Cheapest online path: Power Path from $0.50 → Gold Pass (€5,300 ME + 8-night hotel + €690 expenses). You need a PokerStars Live account and a valid passport. Book hotels early — August is peak season.",
-  category: "초보 가이드",
+  category: "tournament",
   date: "2026-06-17",
   updated: "2026-07-03",
   keepImagesInBody: true,

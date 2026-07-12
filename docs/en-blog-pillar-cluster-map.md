@@ -92,10 +92,11 @@ KO 11필라를 복제하지 않고 EN 검색시장 기준으로 재편. `holdem-
 
 ### 필라 5 — Tournament · hub `holdem-tournament` ✅
 - ✅ holdem-tournament-vs-cash-game (피링크 7)
-- ✅ apt-incheon-2026-guide
-- ✅ korea-poker-marathon-2026
-- ⚠️ wpt-australia-2026-guide (본문 markdown 내부링크 0 = 고아 → 복구 필요)
-- ⚠️ ept-barcelona-2026-guide (본문 markdown 내부링크 0 = 고아 → 복구 필요)
+- **📅 Live Events 하위클러스터** (2026-07-12 묶음): category 전부 `tournament` 통일 + 미니맵에 "Live Events" 서브그룹 표시 + holdem-tournament 허브·상호 readnext/Related 메시. 시즌성이라 번역 제외/보류.
+  - ✅ apt-incheon-2026-guide
+  - ✅ korea-poker-marathon-2026
+  - ✅ wpt-australia-2026-guide (category 초보가이드→tournament 교정 · 허브 첫링크 有)
+  - ✅ ept-barcelona-2026-guide (category 초보가이드→tournament 교정 · 허브 첫링크 有)
 - ✅ holdem-icm (ICM basics / icm poker 1300) — 발행 2026-07-09. 계산기 연동 마스터. 칩≠돈·Malmuth-Harville 워크드예시(칩50%→ICM38.4%, computeICM §13 검산)·ICM vs ChipEV·ICM딜vs칩찹·한계(arXiv). 첫링크=허브. tournament·tournament-vs-cash-game 역링크. /en/calculator 상호CTA. 이미지2(워터마크). lowfruits뱅크 en-icm.md
 - ✅ holdem-bubble (how to play the bubble / bubble factor) — 발행 2026-07-09. ICM 실전 적용편. 스택별 플레이북(빅/미들=최트랩/숏)+3버블(머니/FT/위성 AA폴드)+버블팩터→에쿼티 공식 BF/(1+BF)+hand-for-hand. 적대적 팩트체커 PASS. 첫링크=icm/tournament. icm 역링크. /en/calculator CTA. 이미지2(워터마크). lowfruits poker bubble 시드
 - ✅ holdem-short-stack (short stack strategy / push fold) — 발행 2026-07-09. ICM→버블 3부작 마무리. 스택밴드표+M-ratio존+shove vs call+push/fold차트 한계(계산기 위임)+버블 ICM 트위스트+5실수. 적대적 팩트체커 PASS. 첫링크=tournament. icm/bubble 역링크. lowfruits push fold=Weak0 툴독점 확인(설명글+계산기 각도). 키워드뱅크 en-short-stack.md

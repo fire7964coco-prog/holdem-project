@@ -6,6 +6,7 @@
 export type ClusterNode = {
   slug: string;
   label: string; // 미니맵에 표시할 짧은 라벨
+  group?: string; // 같은 필라 내 하위그룹 라벨(예: "Live Events"). 그룹 시작 노드에 표시.
 };
 
 export type PillarCluster = {
@@ -75,10 +76,10 @@ export const EN_CLUSTERS: PillarCluster[] = [
       { slug: "holdem-icm", label: "ICM Basics" },
       { slug: "holdem-bubble", label: "Bubble Play" },
       { slug: "holdem-short-stack", label: "Short Stack" },
-      { slug: "apt-incheon-2026-guide", label: "APT Incheon 2026" },
-      { slug: "korea-poker-marathon-2026", label: "Korea Marathon 2026" },
-      { slug: "wpt-australia-2026-guide", label: "WPT Australia 2026" },
-      { slug: "ept-barcelona-2026-guide", label: "EPT Barcelona 2026" },
+      { slug: "apt-incheon-2026-guide", label: "APT Incheon 2026", group: "Live Events" },
+      { slug: "korea-poker-marathon-2026", label: "Korea Marathon 2026", group: "Live Events" },
+      { slug: "wpt-australia-2026-guide", label: "WPT Australia 2026", group: "Live Events" },
+      { slug: "ept-barcelona-2026-guide", label: "EPT Barcelona 2026", group: "Live Events" },
     ],
   },
   {
