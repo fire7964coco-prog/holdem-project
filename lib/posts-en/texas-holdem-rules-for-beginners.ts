@@ -13,7 +13,7 @@ export const POST: Post = {
   readTime: "14 min",
   emoji: "♠️",
   image: "/images/rules-texas-holdem.webp",
-  imageAlt: "Texas Hold'em table layout for beginners — blinds posted, hole cards dealt, community cards in the center",
+  imageAlt: "Texas Hold'em basics infographic — hole cards A♣ K♦ beside a fan of five community cards A♠ K♥ Q♦ J♣ 10♠",
   tags: [
     "texas holdem rules for beginners",
     "how to play texas holdem for beginners",
@@ -97,7 +97,7 @@ This article gives you the **beginner version of the flow** so you can sit down 
 
 For your first session, the key idea is simple: ==**every time a new street appears, another betting round happens.**==
 
-![Texas Hold'em preflop step with blinds posted and two hole cards dealt](/images/rules-step2-preflop.webp "How to play Texas Hold'em step by step — preflop action after blinds")
+![Top-down infographic of a Texas Hold'em table before the flop — each player holds two hidden cards and the board is still empty](/images/rules-step2-preflop.webp "How to play Texas Hold'em step by step — preflop action after blinds")
 
 For the detailed version, continue with [Texas Hold'em order of play from blinds to showdown](/en/blog/holdem-game-order).
 
@@ -224,7 +224,7 @@ Here is the beginner-friendly dealing sequence:
 
 The burn card is the top card placed face down before the flop, turn, and river. It helps protect the deck and is standard in live poker.
 
-![Texas Hold'em flop, turn, and river sequence for beginner players](/images/rules-step3-flop.webp "How to deal Texas Hold'em — flop appears after the preflop betting round")
+![Top-down infographic of a Texas Hold'em table as the flop A♠ K♦ 8♥ is dealt face-up in the center](/images/rules-step3-flop.webp "How to deal Texas Hold'em — flop appears after the preflop betting round")
 
 In a casual home game, the most important thing is consistency. Announce the street, keep the board clear, and do not rush action while someone is deciding.
 

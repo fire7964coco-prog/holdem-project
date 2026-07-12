@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Texas Hold'em — Hero</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #0B1F17; }
+  .stage {
+    position: relative;
+    width: 1200px;
+    height: 675px;
+    overflow: hidden;
+    padding: 44px;
+    background:
+      radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+      linear-gradient(160deg, #0B1F17 0%, #13291D 100%);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .glow {
+    position: absolute;
+    left: 50%; top: 46%;
+    width: 940px; height: 540px;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(ellipse at center, rgba(46,125,70,0.24) 0%, rgba(46,125,70,0) 65%);
+    pointer-events: none;
+  }
+  .head { position: relative; text-align: center; }
+  .kicker {
+    color: #C9A227;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  h1 {
+    color: #F2EEE3;
+    font-size: 54px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    line-height: 1.05;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.45);
+  }
+  h1 .gold { color: #C9A227; }
+
+  .board { position: relative; display: flex; flex-direction: column; align-items: center; }
+  .label {
+    color: #C9A227;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.28em;
+    text-align: center;
+    margin-bottom: 4px;
+  }
+  .fan {
+    position: relative;
+    width: 640px;
+    height: 218px;
+  }
+  .fan .card { position: absolute; left: 50%; top: 26px; transform-origin: 50% 190%; }
+  .fan .c1 { transform: translateX(-50%) rotate(-24deg); }
+  .fan .c2 { transform: translateX(-50%) rotate(-12deg); }
+  .fan .c3 { transform: translateX(-50%) rotate(0deg); }
+  .fan .c4 { transform: translateX(-50%) rotate(12deg); }
+  .fan .c5 { transform: translateX(-50%) rotate(24deg); }
+
+  .card {
+    position: relative;
+    width: 100px;
+    height: 144px;
+    background: linear-gradient(175deg, #FDFBF4 0%, #F2EEE3 100%);
+    border-radius: 10px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.45), 0 1px 3px rgba(0,0,0,0.3);
+  }
+  .card .corner {
+    position: absolute;
+    top: 7px;
+    left: 9px;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1.0;
+    text-align: center;
+  }
+  .card .corner .csuit { display: block; font-size: 18px; line-height: 1.0; margin-top: 1px; }
+  .card .big {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-42%, -44%);
+    font-size: 62px;
+    line-height: 1;
+  }
+  .card.sm { width: 72px; height: 104px; border-radius: 8px; }
+  .card.sm .corner { top: 5px; left: 7px; font-size: 19px; }
+  .card.sm .corner .csuit { font-size: 14px; }
+  .card.sm .big { font-size: 42px; }
+  .black { color: #1a1a1a; }
+  .red { color: #c0392b; }
+
+  .hand-block {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+  }
+  .hand-label { color: #F2EEE3; font-size: 21px; font-weight: 700; }
+  .hand-cards { display: flex; gap: 10px; }
+
+  .caption {
+    position: relative;
+    color: #F2EEE3;
+    opacity: 0.88;
+    font-size: 21px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.3px;
+  }
+  .caption b { color: #C9A227; font-weight: 800; }
+  .wordmark {
+    position: absolute;
+    right: 44px; bottom: 44px;
+    color: #C9A227;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="glow"></div>
+
+  <div class="head">
+    <div class="kicker">How to Play</div>
+    <h1>Texas <span class="gold">Hold&#8217;em</span></h1>
+  </div>
+
+  <div class="board">
+    <div class="label">COMMUNITY CARDS</div>
+    <div class="fan">
+      <div class="card c1"><div class="corner black">A<span class="csuit">&#9824;</span></div><div class="big black">&#9824;</div></div>
+      <div class="card c2"><div class="corner red">K<span class="csuit">&#9829;</span></div><div class="big red">&#9829;</div></div>
+      <div class="card c3"><div class="corner red">Q<span class="csuit">&#9830;</span></div><div class="big red">&#9830;</div></div>
+      <div class="card c4"><div class="corner black">J<span class="csuit">&#9827;</span></div><div class="big black">&#9827;</div></div>
+      <div class="card c5"><div class="corner black">10<span class="csuit">&#9824;</span></div><div class="big black">&#9824;</div></div>
+    </div>
+  </div>
+
+  <div class="hand-block">
+    <div class="hand-label">Your hand:</div>
+    <div class="hand-cards">
+      <div class="card sm"><div class="corner black">A<span class="csuit">&#9827;</span></div><div class="big black">&#9827;</div></div>
+      <div class="card sm"><div class="corner red">K<span class="csuit">&#9830;</span></div><div class="big red">&#9830;</div></div>
+    </div>
+  </div>
+
+  <div class="caption"><b>2 hole cards + 5 community</b> = your best 5.</div>
+
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

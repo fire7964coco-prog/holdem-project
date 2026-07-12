@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Texas Hold'em at the Pub</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #0B1F17; }
+  .stage {
+    width: 1200px;
+    height: 675px;
+    overflow: hidden;
+    position: relative;
+    padding: 44px;
+    background: linear-gradient(135deg, #0B1F17 0%, #13291D 100%);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .glow {
+    position: absolute;
+    left: 50%; top: 55%;
+    width: 1000px; height: 560px;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(ellipse at center, rgba(46,125,70,0.30) 0%, rgba(46,125,70,0.0) 65%);
+    pointer-events: none;
+  }
+  .title {
+    position: absolute;
+    left: 0; right: 0; top: 48px;
+    text-align: center;
+    color: #F2EEE3;
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: 0.6px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  }
+  .title .g { color: #C9A227; }
+
+  /* ---------- top-down table ---------- */
+  .table {
+    position: absolute;
+    left: 150px; top: 122px;
+    width: 900px; height: 496px;
+  }
+  .rail {
+    position: absolute;
+    inset: 0;
+    border-radius: 248px;
+    background: linear-gradient(160deg, #1C3A29 0%, #0B1F17 70%);
+    border: 3px solid rgba(201,162,39,0.65);
+    box-shadow: 0 14px 40px rgba(0,0,0,0.55), inset 0 0 22px rgba(0,0,0,0.6);
+  }
+  .felt {
+    position: absolute;
+    inset: 26px;
+    border-radius: 222px;
+    background: radial-gradient(ellipse at 50% 46%, #1E6B3C 0%, #14532D 55%, #0E3B20 100%);
+    box-shadow: inset 0 0 46px rgba(0,0,0,0.5), inset 0 0 0 2px rgba(201,162,39,0.25);
+  }
+  .betting-line {
+    position: absolute;
+    inset: 74px;
+    border-radius: 176px;
+    border: 2px solid rgba(201,162,39,0.38);
+  }
+
+  /* ---------- community board ---------- */
+  .board {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -56%);
+    display: flex;
+    gap: 11px;
+  }
+  .card {
+    width: 76px; height: 108px;
+    background: #FBF8EF;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.45), inset 0 0 0 1px rgba(0,0,0,0.08);
+  }
+  .corner {
+    position: absolute;
+    top: 6px; left: 8px;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1;
+    text-align: center;
+  }
+  .corner .s { display: block; font-size: 13px; margin-top: 1px; }
+  .pip {
+    position: absolute;
+    left: 50%; top: 54%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    line-height: 1;
+  }
+  .black { color: #1a1a1a; }
+  .red { color: #c0392b; }
+
+  /* ---------- face-down card backs at seats ---------- */
+  .seat {
+    position: absolute;
+    width: 96px; height: 64px;
+  }
+  .back {
+    position: absolute;
+    width: 44px; height: 62px;
+    border-radius: 6px;
+    background:
+      repeating-linear-gradient(45deg, rgba(201,162,39,0.16) 0 4px, rgba(201,162,39,0) 4px 9px),
+      linear-gradient(150deg, #163A26 0%, #0D2418 100%);
+    box-shadow: inset 0 0 0 2px rgba(201,162,39,0.45), 0 3px 7px rgba(0,0,0,0.5);
+  }
+  .back.b1 { left: 8px;  transform: rotate(-7deg); }
+  .back.b2 { left: 40px; transform: rotate(6deg); }
+  .seat-top-left     { left: 186px; top: 44px; }
+  .seat-top-right    { right: 186px; top: 44px; }
+  .seat-bottom-left  { left: 156px; bottom: 40px; }
+  .seat-bottom-right { right: 156px; bottom: 40px; }
+
+  /* ---------- chips (top-down clusters) ---------- */
+  .chip {
+    position: absolute;
+    width: 46px; height: 46px;
+    border-radius: 50%;
+    border: 5px dashed rgba(255,255,255,0.85);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.45), inset 0 0 0 4px rgba(255,255,255,0.28);
+  }
+  .chip.red   { background: #B03A2E; }
+  .chip.green { background: #1E7A45; }
+  .chip.dark  { background: #22252A; }
+  .chips-left  { position: absolute; left: 168px; top: 205px; width: 100px; height: 90px; }
+  .chips-right { position: absolute; right: 168px; top: 200px; width: 100px; height: 90px; }
+  .chips-pot   { position: absolute; left: 50%; top: 322px; transform: translateX(-50%); width: 130px; height: 60px; }
+  .c1 { left: 0;    top: 0; }
+  .c2 { left: 34px; top: 22px; }
+  .c3 { left: 6px;  top: 40px; }
+  .p1 { left: 0;    top: 6px; }
+  .p2 { left: 42px; top: 0; }
+  .p3 { left: 84px; top: 8px; }
+
+  /* ---------- dealer button ---------- */
+  .dealer {
+    position: absolute;
+    right: 262px; bottom: 116px;
+    width: 58px; height: 58px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #D8B546 0%, #C9A227 100%);
+    color: #0B1F17;
+    font-size: 9px;
+    font-weight: 900;
+    letter-spacing: 1.4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 10px rgba(201,162,39,0.45), inset 0 0 0 2px rgba(11,31,23,0.35);
+  }
+
+  .wordmark {
+    position: absolute;
+    right: 44px; bottom: 44px;
+    color: #C9A227;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="glow"></div>
+
+  <div class="title">Texas Hold&rsquo;em <span class="g">at the Pub</span></div>
+
+  <div class="table">
+    <div class="rail"></div>
+    <div class="felt"></div>
+    <div class="betting-line"></div>
+
+    <!-- community board: K♦ 7♣ 2♠ 9♥ 3♦ -->
+    <div class="board">
+      <div class="card"><div class="corner red">K<span class="s">&#9830;</span></div><div class="pip red">&#9830;</div></div>
+      <div class="card"><div class="corner black">7<span class="s">&#9827;</span></div><div class="pip black">&#9827;</div></div>
+      <div class="card"><div class="corner black">2<span class="s">&#9824;</span></div><div class="pip black">&#9824;</div></div>
+      <div class="card"><div class="corner red">9<span class="s">&#9829;</span></div><div class="pip red">&#9829;</div></div>
+      <div class="card"><div class="corner red">3<span class="s">&#9830;</span></div><div class="pip red">&#9830;</div></div>
+    </div>
+
+    <!-- face-down hole cards at four seats -->
+    <div class="seat seat-top-left"><div class="back b1"></div><div class="back b2"></div></div>
+    <div class="seat seat-top-right"><div class="back b1"></div><div class="back b2"></div></div>
+    <div class="seat seat-bottom-left"><div class="back b1"></div><div class="back b2"></div></div>
+    <div class="seat seat-bottom-right"><div class="back b1"></div><div class="back b2"></div></div>
+
+    <!-- chip clusters -->
+    <div class="chips-left">
+      <div class="chip red c1"></div>
+      <div class="chip red c2"></div>
+      <div class="chip dark c3"></div>
+    </div>
+    <div class="chips-right">
+      <div class="chip green c1"></div>
+      <div class="chip green c2"></div>
+      <div class="chip red c3"></div>
+    </div>
+    <div class="chips-pot">
+      <div class="chip dark p1"></div>
+      <div class="chip red p2"></div>
+      <div class="chip green p3"></div>
+    </div>
+
+    <div class="dealer">DEALER</div>
+  </div>
+
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

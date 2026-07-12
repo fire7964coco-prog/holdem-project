@@ -55,7 +55,7 @@ Read across a row and you see the whole lifecycle of a hand. Two suited cards al
 
 ## Odds of Flopping a Set (and the Set-Mining Math)
 
-![A dealer button sits on green felt beside a freshly dealt flop and two face-down hole cards, the moment a set-mining call is decided](/images/holdem-button-dealer-board.webp "The flop decides a set-mining call: hit your two-outer 11.8% of the time, or fold and wait for the next pair")
+![Infographic of a gold dealer button and two face-down hole cards on a K♦ 7♣ 2♠ flop — the moment a set-mining call is decided](/images/holdem-button-dealer-board.webp "The flop decides a set-mining call: hit your two-outer 11.8% of the time, or fold and wait for the next pair")
 
 **You flop a set (or better) with a pocket pair 11.8% of the time — about 1 in 8.5, or 7.5-to-1 against.** This is the most important drawing number in the game, because it's the entire basis for *set mining*: calling a raise with a small pair purely to flop three of a kind.
 

@@ -115,7 +115,7 @@ For the full seating map, see the [table positions guide](/en/blog/holdem-positi
 
 ## Hands & the Board
 
-![A dealer button and community cards spread across the green felt with chip stacks, showing the flop, turn, and river of a Texas Hold'em board](/images/holdem-button-dealer-board.webp "The board and your hole cards combine into your best five-card hand — most poker vocabulary describes exactly how")
+![Infographic of a gold dealer button and two face-down hole cards with a K♦ 7♣ 2♠ flop on green felt](/images/holdem-button-dealer-board.webp "The board and your hole cards combine into your best five-card hand — most poker vocabulary describes exactly how")
 
 The cards themselves, and what you make with them. New to the flow of streets? Start with the [order of play](/en/blog/holdem-game-order).
 
@@ -154,7 +154,7 @@ Still learning what beats what? The [hand rankings guide](/en/blog/holdem-hand-r
 
 ## Player Types & Slang
 
-![A group of players around a poker table sizing each other up, illustrating the different player types the slang describes](/images/holdem-pub-players-table.webp "Every table is a mix of types — learning the slang tells you who to target and who to avoid")
+![Top-down infographic of a Texas Hold'em pub table with a K♦ 7♣ 2♠ 9♥ 3♦ board, chips, and a dealer button](/images/holdem-pub-players-table.webp "Every table is a mix of types — learning the slang tells you who to target and who to avoid")
 
 The zoo of nicknames for the people across the felt. The full breakdown lives in the [fish guide](/en/blog/holdem-fish).
 

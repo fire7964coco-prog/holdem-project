@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PokerStars Power Path</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #0B1F17; }
+  .stage {
+    position: relative;
+    width: 1200px;
+    height: 675px;
+    overflow: hidden;
+    padding: 44px;
+    background:
+      radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.24), rgba(46,125,70,0) 65%),
+      linear-gradient(160deg, #0B1F17 0%, #13291D 100%);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .head { text-align: center; margin-top: 6px; }
+  .kicker {
+    color: #C9A227;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  h1 {
+    color: #F2EEE3;
+    font-size: 44px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    line-height: 1.05;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.45);
+  }
+  h1 .gold { color: #C9A227; }
+  .subtitle {
+    margin-top: 8px;
+    color: rgba(242,238,227,0.82);
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+  }
+
+  .path {
+    position: relative;
+    width: 996px;
+    height: 366px;
+    display: flex;
+    align-items: flex-end;
+    gap: 24px;
+  }
+  .step {
+    width: 150px;
+    background: linear-gradient(180deg, #D8B546 0%, #C9A227 60%, #A8871F 100%);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.45), inset 0 2px 0 rgba(255,255,255,0.25);
+    display: flex;
+    justify-content: center;
+    padding-top: 16px;
+  }
+  .step .lbl {
+    color: #0B1F17;
+    font-size: 23px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+  }
+  .h1s { height: 110px; }
+  .h2s { height: 160px; }
+  .h3s { height: 210px; }
+  .h4s { height: 260px; }
+
+  .arrow {
+    position: absolute;
+    left: 75px;
+    top: 230px;
+    width: 585px;
+    height: 5px;
+    background: linear-gradient(90deg, rgba(201,162,39,0.25) 0%, #C9A227 100%);
+    border-radius: 3px;
+    transform: rotate(-14.8deg);
+    transform-origin: left center;
+  }
+  .arrow::after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: -9px;
+    width: 0; height: 0;
+    border-top: 11px solid transparent;
+    border-bottom: 11px solid transparent;
+    border-left: 22px solid #C9A227;
+  }
+
+  .trophy-block {
+    width: 300px;
+    height: 330px;
+    background: linear-gradient(165deg, #13291D 0%, #0e241a 100%);
+    border: 3px solid #C9A227;
+    border-radius: 16px;
+    box-shadow: 0 0 34px rgba(201,162,39,0.28), 0 10px 26px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 20px;
+    text-align: center;
+  }
+  .trophy { position: relative; width: 60px; z-index: 0; }
+  .cup {
+    position: relative;
+    width: 60px; height: 42px;
+    margin: 0 auto;
+    background: radial-gradient(circle at 34% 26%, #E0BC4A 0%, #C9A227 60%, #96781B 100%);
+    border-radius: 6px 6px 30px 30px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.45);
+  }
+  .cup::before, .cup::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    width: 18px; height: 20px;
+    border: 5px solid #C9A227;
+    border-radius: 50%;
+    z-index: -1;
+  }
+  .cup::before { left: -15px; }
+  .cup::after { right: -15px; }
+  .stem { width: 12px; height: 12px; margin: 0 auto; background: #C9A227; }
+  .tbase { width: 44px; height: 9px; margin: 0 auto; background: #C9A227; border-radius: 3px; }
+
+  .gp {
+    color: #C9A227;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 2px;
+  }
+  .gp-divider {
+    width: 150px;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(201,162,39,0) 0%, rgba(201,162,39,0.8) 50%, rgba(201,162,39,0) 100%);
+  }
+  .gp-detail {
+    color: #F2EEE3;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.45;
+  }
+  .gp-detail b { color: #C9A227; }
+
+  .caption {
+    color: #F2EEE3;
+    opacity: 0.88;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.3px;
+  }
+  .caption b { color: #C9A227; font-weight: 800; }
+
+  .wordmark {
+    position: absolute;
+    right: 44px; bottom: 44px;
+    color: #C9A227;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+</style>
+</head>
+<body>
+<div class="stage">
+
+  <div class="head">
+    <div class="kicker">EPT Barcelona 2026</div>
+    <h1>PokerStars <span class="gold">Power Path</span></h1>
+    <div class="subtitle">Four steps from $0.50 to the Main Event</div>
+  </div>
+
+  <div class="path">
+    <div class="step h1s"><div class="lbl">1 &mdash; $0.50</div></div>
+    <div class="step h2s"><div class="lbl">2 &mdash; $1.50</div></div>
+    <div class="step h3s"><div class="lbl">3 &mdash; $11</div></div>
+    <div class="step h4s"><div class="lbl">4 &mdash; $55</div></div>
+
+    <div class="trophy-block">
+      <div class="trophy">
+        <div class="cup"></div>
+        <div class="stem"></div>
+        <div class="tbase"></div>
+      </div>
+      <div class="gp">GOLD PASS</div>
+      <div class="gp-divider"></div>
+      <div class="gp-detail"><b>&#8364;5,300 Main Event</b><br>+ hotel</div>
+    </div>
+
+    <div class="arrow"></div>
+  </div>
+
+  <div class="caption">Win a step &#8594; climb to the next. The <b>Gold Pass</b> is the top.</div>
+
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Step 3 — The Flop</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #0B1F17; }
+  .stage {
+    position: relative;
+    width: 1200px;
+    height: 675px;
+    overflow: hidden;
+    padding: 44px;
+    background:
+      radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.22), rgba(46,125,70,0) 65%),
+      linear-gradient(160deg, #0B1F17 0%, #13291D 100%);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  h1 {
+    color: #F2EEE3;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.45);
+  }
+  h1 .gold { color: #C9A227; }
+
+  .table { position: relative; width: 880px; height: 470px; }
+  .rail {
+    position: absolute;
+    left: 55px; top: 40px;
+    width: 770px; height: 390px;
+    border-radius: 50%;
+    background: #0e241a;
+    box-shadow: 0 0 0 3px rgba(201,162,39,0.55), 0 14px 34px rgba(0,0,0,0.55);
+  }
+  .felt {
+    position: absolute;
+    left: 70px; top: 52px;
+    width: 740px; height: 366px;
+    border-radius: 50%;
+    background: radial-gradient(ellipse at 50% 40%, #35915A 0%, #2E7D46 48%, #1F5A32 100%);
+    box-shadow: inset 0 8px 30px rgba(0,0,0,0.35);
+  }
+  .felt::after {
+    content: "";
+    position: absolute;
+    inset: 26px;
+    border-radius: 50%;
+    border: 2px solid rgba(201,162,39,0.35);
+  }
+
+  .seat {
+    position: absolute;
+    width: 70px; height: 66px;
+    transform: translate(-50%, -50%);
+  }
+  .avatar {
+    position: absolute;
+    left: 50%; bottom: 0;
+    transform: translateX(-50%);
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    background: #13291D;
+    border: 2px solid rgba(201,162,39,0.75);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  }
+  .backs {
+    position: absolute;
+    left: 50%; top: 0;
+    transform: translateX(-50%);
+    width: 48px; height: 40px;
+  }
+  .back {
+    position: absolute;
+    top: 0;
+    width: 26px; height: 36px;
+    border-radius: 4px;
+    background: linear-gradient(150deg, #B4462E 0%, #7E2F1E 100%);
+    border: 2px solid #F2EEE3;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.45);
+  }
+  .back::after {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    border-radius: 2px;
+    border: 1px solid rgba(242,238,227,0.55);
+  }
+  .back.b1 { left: 0; transform: rotate(-7deg); }
+  .back.b2 { left: 19px; transform: rotate(7deg); }
+
+  .s1 { left: 440px; top: 45px; }
+  .s2 { left: 709px; top: 101px; }
+  .s3 { left: 820px; top: 235px; }
+  .s4 { left: 709px; top: 369px; }
+  .s5 { left: 440px; top: 425px; }
+  .s6 { left: 171px; top: 369px; }
+  .s7 { left: 60px;  top: 235px; }
+  .s8 { left: 171px; top: 101px; }
+
+  .center {
+    position: absolute;
+    left: 440px; top: 228px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .flop-row { display: flex; gap: 12px; }
+  .card {
+    position: relative;
+    width: 72px;
+    height: 104px;
+    background: linear-gradient(175deg, #FDFBF4 0%, #F2EEE3 100%);
+    border-radius: 8px;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.45), 0 1px 3px rgba(0,0,0,0.3);
+  }
+  .card .corner {
+    position: absolute;
+    top: 5px;
+    left: 7px;
+    font-size: 19px;
+    font-weight: 800;
+    line-height: 1.0;
+    text-align: center;
+  }
+  .card .corner .csuit { display: block; font-size: 14px; line-height: 1.0; margin-top: 1px; }
+  .card .big {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-42%, -44%);
+    font-size: 42px;
+    line-height: 1;
+  }
+  .black { color: #1a1a1a; }
+  .red { color: #c0392b; }
+
+  .pot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+  .chipset { position: relative; width: 102px; height: 32px; }
+  .pchip {
+    position: absolute;
+    top: 0;
+    width: 30px; height: 30px;
+    border-radius: 50%;
+    border: 3px dashed rgba(242,238,227,0.85);
+    box-shadow: 0 3px 7px rgba(0,0,0,0.45);
+  }
+  .pchip.gold  { background: radial-gradient(circle at 34% 28%, #E0BC4A 0%, #C9A227 60%, #96781B 100%); border-color: rgba(20,32,22,0.7); }
+  .pchip.green { background: radial-gradient(circle at 34% 28%, #3B9A57 0%, #2E7D46 60%, #1F5A32 100%); }
+  .pchip.redc  { background: radial-gradient(circle at 34% 28%, #C95B41 0%, #B4462E 60%, #7E2F1E 100%); }
+  .pchip.p1 { left: 0; }
+  .pchip.p2 { left: 24px; }
+  .pchip.p3 { left: 48px; }
+  .pchip.p4 { left: 72px; }
+  .pot-label {
+    color: #F2EEE3;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    opacity: 0.92;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+  }
+
+  .caption {
+    color: #F2EEE3;
+    opacity: 0.88;
+    font-size: 21px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.3px;
+  }
+  .caption b { color: #C9A227; font-weight: 800; }
+
+  .wordmark {
+    position: absolute;
+    right: 44px; bottom: 44px;
+    color: #C9A227;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+</style>
+</head>
+<body>
+<div class="stage">
+
+  <h1>Step 3 &mdash; <span class="gold">The Flop</span></h1>
+
+  <div class="table">
+    <div class="rail"></div>
+    <div class="felt"></div>
+
+    <div class="seat s1"><div class="avatar"></div><div class="backs"><div class="back b1"></div><div class="back b2"></div></div></div>
+    <div class="seat s2"><div class="avatar"></div><div class="backs"><div class="back b1"></div><div class="back b2"></div></div></div>
+    <div class="seat s3"><div class="avatar"></div><div class="backs"><div class="back b1"></div><div class="back b2"></div></div></div>
+    <div class="seat s4"><div class="avatar"></div><div class="backs"><div class="back b1"></div><div class="back b2"></div></div></div>
+    <div class="seat s5"><div class="avatar"></div><div class="backs"><div class="back b1"></div><div class="back b2"></div></div></div>
+    <div class="seat s6"><div class="avatar"></div><div class="backs"><div class="back b1"></div><div class="back b2"></div></div></div>
+    <div class="seat s7"><div class="avatar"></div><div class="backs"><div class="back b1"></div><div class="back b2"></div></div></div>
+    <div class="seat s8"><div class="avatar"></div><div class="backs"><div class="back b1"></div><div class="back b2"></div></div></div>
+
+    <div class="center">
+      <div class="flop-row">
+        <div class="card"><div class="corner black">A<span class="csuit">&#9824;</span></div><div class="big black">&#9824;</div></div>
+        <div class="card"><div class="corner red">K<span class="csuit">&#9830;</span></div><div class="big red">&#9830;</div></div>
+        <div class="card"><div class="corner red">8<span class="csuit">&#9829;</span></div><div class="big red">&#9829;</div></div>
+      </div>
+      <div class="pot">
+        <div class="chipset">
+          <div class="pchip green p1"></div>
+          <div class="pchip gold p2"></div>
+          <div class="pchip redc p3"></div>
+          <div class="pchip green p4"></div>
+        </div>
+        <div class="pot-label">POT</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="caption">The first <b>three community cards</b> are dealt face-up.</div>
+
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

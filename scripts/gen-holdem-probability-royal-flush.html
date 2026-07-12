@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Royal Flush</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #0B1F17; }
+  .stage {
+    width: 1200px;
+    height: 675px;
+    overflow: hidden;
+    position: relative;
+    padding: 44px;
+    background: linear-gradient(135deg, #0B1F17 0%, #13291D 100%);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .glow {
+    position: absolute;
+    left: 50%; top: 42%;
+    width: 940px; height: 540px;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(ellipse at center, rgba(201,162,39,0.22) 0%, rgba(46,125,70,0.14) 40%, rgba(46,125,70,0.0) 68%);
+    pointer-events: none;
+  }
+  .title {
+    position: relative;
+    color: #F2EEE3;
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  }
+  .title .g { color: #C9A227; }
+  .hand-block {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .group-label {
+    color: #C9A227;
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: 4px;
+  }
+  .cards-sm { display: flex; gap: 10px; }
+  .card-sm {
+    width: 78px; height: 110px;
+    background: #FBF8EF;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 0 0 2px rgba(201,162,39,0.6), 0 4px 12px rgba(0,0,0,0.45);
+  }
+  .corner-sm {
+    position: absolute;
+    top: 6px; left: 8px;
+    font-weight: 800;
+    font-size: 19px;
+    line-height: 1;
+    text-align: center;
+  }
+  .corner-sm .s { display: block; font-size: 13px; margin-top: 1px; }
+  .pip-sm {
+    position: absolute;
+    left: 50%; top: 54%;
+    transform: translate(-50%, -50%);
+    font-size: 42px;
+    line-height: 1;
+  }
+  .board-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .cards { display: flex; gap: 14px; }
+  .card {
+    width: 100px; height: 144px;
+    background: #FBF8EF;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.45), inset 0 0 0 1px rgba(0,0,0,0.08);
+  }
+  .card.royal { box-shadow: 0 0 0 3px rgba(201,162,39,0.65), 0 6px 16px rgba(0,0,0,0.45); }
+  .card.dim { opacity: 0.5; }
+  .corner {
+    position: absolute;
+    top: 8px; left: 10px;
+    font-weight: 800;
+    font-size: 23px;
+    line-height: 1;
+    text-align: center;
+  }
+  .corner .s { display: block; font-size: 16px; margin-top: 1px; }
+  .pip {
+    position: absolute;
+    left: 50%; top: 53%;
+    transform: translate(-50%, -50%);
+    font-size: 56px;
+    line-height: 1;
+  }
+  .black { color: #1a1a1a; }
+  .red { color: #c0392b; }
+  .badge {
+    position: relative;
+    background: linear-gradient(180deg, #D8B546 0%, #C9A227 100%);
+    color: #0B1F17;
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    padding: 13px 38px;
+    border-radius: 44px;
+    box-shadow: 0 4px 16px rgba(201,162,39,0.4);
+    white-space: nowrap;
+  }
+  .wordmark {
+    position: absolute;
+    right: 44px; bottom: 44px;
+    color: #C9A227;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="glow"></div>
+
+  <div class="title">Royal <span class="g">Flush</span></div>
+
+  <div class="hand-block">
+    <div class="group-label">YOUR HAND</div>
+    <div class="cards-sm">
+      <div class="card-sm"><div class="corner-sm red">A<span class="s">&#9829;</span></div><div class="pip-sm red">&#9829;</div></div>
+      <div class="card-sm"><div class="corner-sm red">K<span class="s">&#9829;</span></div><div class="pip-sm red">&#9829;</div></div>
+    </div>
+  </div>
+
+  <div class="board-wrap">
+    <div class="group-label">THE BOARD</div>
+    <div class="cards">
+      <div class="card royal"><div class="corner red">10<span class="s">&#9829;</span></div><div class="pip red">&#9829;</div></div>
+      <div class="card royal"><div class="corner red">J<span class="s">&#9829;</span></div><div class="pip red">&#9829;</div></div>
+      <div class="card royal"><div class="corner red">Q<span class="s">&#9829;</span></div><div class="pip red">&#9829;</div></div>
+      <div class="card dim"><div class="corner black">2<span class="s">&#9827;</span></div><div class="pip black">&#9827;</div></div>
+      <div class="card dim"><div class="corner black">8<span class="s">&#9824;</span></div><div class="pip black">&#9824;</div></div>
+    </div>
+  </div>
+
+  <div class="badge">10-J-Q-K-A of hearts = ROYAL FLUSH</div>
+
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

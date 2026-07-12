@@ -68,7 +68,7 @@ Keep this distinction in mind, because the stack-by-stack advice that follows sh
 
 ---
 
-![A big chip stack looming over a short stack on the money bubble, other players folding, a payout ladder glowing behind them](/images/holdem-bubble-pressure.webp "On the bubble the big stack attacks and the medium stacks fold — survival is worth more than the chips in the middle")
+![ICM pressure infographic — a towering big chip stack looms over a short stack on the money bubble](/images/holdem-bubble-pressure.webp "On the bubble ICM pressure lets the big stack attack — survival is worth more than the chips in the middle")
 
 ## How to Play a BIG Stack on the Bubble
 

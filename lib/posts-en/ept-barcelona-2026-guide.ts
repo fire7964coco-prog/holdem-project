@@ -105,7 +105,7 @@ PokerStars designed Power Path specifically to ==stop pros from buying directly 
 
 </div>
 
-![PokerStars Power Path ladder to EPT Barcelona 2026 — Step 1 at $0.50 climbing through $1.50, $11 and $55 up to the Gold Pass worth about €10,300](/images/ept-barcelona-2026-guide-powerpath.webp "The Power Path ladder: $0.50 Step 1 all the way up to the €10,300 Gold Pass")
+![PokerStars Power Path ladder to EPT Barcelona 2026 — steps at $0.50, $1.50, $11 and $55 climbing to the Gold Pass with a €5,300 Main Event seat plus hotel](/images/ept-barcelona-2026-guide-powerpath.webp "The Power Path ladder: from a $0.50 step up to the Gold Pass covering the €5,300 Main Event and hotel")
 
 Win Step 4 and you receive one of three Power Passes:
 

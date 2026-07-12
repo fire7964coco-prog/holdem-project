@@ -43,7 +43,7 @@ The mechanism is always a **suckout**: a card on the turn or river that turns a 
 
 ## Bad Beat vs Cooler: The Difference That Matters
 
-![Two players at showdown, one revealing pocket aces beside community cards that have handed the other player a winning straight](/images/holdem-cooler-vs-badbeat.webp "A textbook bad beat: aces get the money in ahead and lose when the board completes an opponent's draw")
+![Infographic of pocket aces A♠ A♦ against pocket kings K♥ K♦ on a K♠ 7♦ 2♣ 8♥ 3♠ board — the flopped set of kings cracks the aces](/images/holdem-cooler-vs-badbeat.webp "Aces get the money in ahead and still lose — the king on the flop hands the pot to the set")
 
 People use "bad beat" and "cooler" interchangeably, but they're opposites — and knowing which one just happened tells you whether to be annoyed at the deck or impressed by it. The whole difference is **who was ahead when the money went in, and whether a suckout occurred:**
 
@@ -79,7 +79,7 @@ The rule of thumb: a bad beat requires **both** a big edge (a heavy favorite) **
 
 ## Classic Bad Beat Examples (With the Odds)
 
-![A poker table with the dealer button, chips, and community cards spread on the felt, set for the kind of favorite-vs-underdog clash that ends in a suckout](/images/holdem-button-dealer-board.webp "In every bad beat the math was on your side — the underdog just caught the card they needed")
+![Infographic of a gold dealer button and two face-down hole cards behind a K♦ 7♣ 2♠ flop — the button acts last after the flop](/images/holdem-button-dealer-board.webp "In every bad beat the math was on your side — the underdog just caught the card they needed")
 
 Every bad beat has the same shape: you're the favorite, the underdog needs help, and the help arrives. The most common versions, with approximate preflop/flop equities:
 

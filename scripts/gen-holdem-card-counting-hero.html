@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Count Your Outs</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #0B1F17; }
+  #frame {
+    position: relative;
+    width: 1200px;
+    height: 675px;
+    overflow: hidden;
+    background: linear-gradient(160deg, #0B1F17 0%, #13291D 55%, #0B1F17 100%);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 44px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .glow {
+    position: absolute;
+    left: 50%; top: 46%;
+    width: 940px; height: 520px;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(ellipse at center, rgba(46,125,70,0.26) 0%, rgba(46,125,70,0.0) 65%);
+    pointer-events: none;
+  }
+  .title {
+    position: relative;
+    color: #F2EEE3;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  }
+  .title .gold { color: #C9A227; }
+  .label {
+    color: #C9A227;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.28em;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  .row {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 70px;
+  }
+  .group { display: flex; flex-direction: column; align-items: center; }
+  .cards { display: flex; gap: 14px; justify-content: center; }
+  .card {
+    position: relative;
+    width: 100px;
+    height: 144px;
+    background: linear-gradient(175deg, #FDFBF4 0%, #F2EEE3 100%);
+    border-radius: 10px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.45), 0 1px 3px rgba(0,0,0,0.3);
+  }
+  .card.draw { box-shadow: 0 0 0 3px rgba(201,162,39,0.6), 0 6px 16px rgba(0,0,0,0.5); }
+  .card .corner {
+    position: absolute;
+    top: 7px;
+    left: 9px;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1.0;
+    text-align: center;
+  }
+  .card .corner .csuit {
+    display: block;
+    font-size: 18px;
+    line-height: 1.0;
+    margin-top: 1px;
+  }
+  .card .big {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-42%, -44%);
+    font-size: 62px;
+    line-height: 1;
+  }
+  .black { color: #1a1a1a; }
+  .red { color: #c0392b; }
+  .badge {
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(175deg, #D9B33A 0%, #C9A227 100%);
+    color: #0B1F17;
+    font-size: 26px;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    padding: 14px 44px;
+    border-radius: 999px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+    white-space: nowrap;
+  }
+  .caption {
+    position: relative;
+    color: #F2EEE3;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    opacity: 0.92;
+    white-space: nowrap;
+  }
+  .caption b { color: #C9A227; font-weight: 800; }
+  .wordmark {
+    position: absolute;
+    right: 44px;
+    bottom: 44px;
+    color: #C9A227;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    opacity: 0.9;
+  }
+</style>
+</head>
+<body>
+<div id="frame">
+  <div class="glow"></div>
+
+  <div class="title">Count Your <span class="gold">Outs</span></div>
+
+  <div class="row">
+    <div class="group">
+      <div class="label">YOUR HAND</div>
+      <div class="cards">
+        <div class="card draw"><div class="corner black">9<span class="csuit">&#9824;</span></div><div class="big black">&#9824;</div></div>
+        <div class="card draw"><div class="corner black">8<span class="csuit">&#9824;</span></div><div class="big black">&#9824;</div></div>
+      </div>
+    </div>
+    <div class="group">
+      <div class="label">THE FLOP</div>
+      <div class="cards">
+        <div class="card draw"><div class="corner black">Q<span class="csuit">&#9824;</span></div><div class="big black">&#9824;</div></div>
+        <div class="card draw"><div class="corner black">7<span class="csuit">&#9824;</span></div><div class="big black">&#9824;</div></div>
+        <div class="card"><div class="corner red">2<span class="csuit">&#9829;</span></div><div class="big red">&#9829;</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="badge">FLUSH DRAW &mdash; 9 OUTS</div>
+
+  <div class="caption">13 spades &minus; 4 you can see = <b>9 spades</b> left in the deck.</div>
+
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

@@ -61,7 +61,7 @@ This distinction matters because most of the "limping is terrible" advice is rea
 
 ## Why Limping Is Usually a Mistake (4 Reasons)
 
-![A dealer button and community cards on the green felt with chip stacks around the table, the kind of multiway pot that limping tends to create](/images/holdem-button-dealer-board.webp "Open-limping invites a bloated multiway pot where you have no initiative — often out of position")
+![Infographic of a gold dealer button and two face-down hole cards facing a K♦ 7♣ 2♠ flop — the button acts last after the flop](/images/holdem-button-dealer-board.webp "Open-limping invites a bloated multiway pot where you have no initiative — often out of position")
 
 When you open-limp, you give up a surprising amount. Here's exactly what:
 
@@ -113,7 +113,7 @@ The catch is that it's become **transparent.** Because almost nobody limps *inte
 
 ## Is Limping a "Fish" Tell? How Good Players Punish It
 
-![A group of players around a poker table watching the action, ready to raise and isolate a player who has limped in](/images/holdem-pub-players-table.webp "Strong players treat an open-limp as a target — they raise to isolate the limper and play a pot in position against a capped range")
+![Top-down infographic of a pub-style Hold'em table with a full K♦ 7♣ 2♠ 9♥ 3♦ board, chips, and the dealer button](/images/holdem-pub-players-table.webp "Strong players treat an open-limp as a target — they raise to isolate the limper and play a pot in position against a capped range")
 
 Yes — in most games, an open-limp is a flashing sign that says *"weak, passive player here."* And the reason it's such a costly habit is that skilled players don't just note it, they **attack** it:
 

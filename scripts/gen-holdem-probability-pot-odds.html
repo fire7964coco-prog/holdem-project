@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pot Odds</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #0B1F17; }
+  .stage {
+    position: relative;
+    width: 1200px;
+    height: 675px;
+    overflow: hidden;
+    padding: 44px;
+    background:
+      radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+      linear-gradient(160deg, #0B1F17 0%, #13291D 100%);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .head { text-align: center; }
+  .kicker {
+    color: #C9A227;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  h1 {
+    color: #F2EEE3;
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.45);
+  }
+  h1 .gold { color: #C9A227; }
+
+  .chips-row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 90px;
+  }
+  .chip-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+  .chip {
+    position: relative;
+    border-radius: 50%;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.5), 0 2px 6px rgba(0,0,0,0.4), inset 0 -6px 14px rgba(0,0,0,0.35), inset 0 6px 10px rgba(255,255,255,0.10);
+  }
+  .chip::before {
+    content: "";
+    position: absolute;
+    inset: 8px;
+    border-radius: 50%;
+    border: 6px dashed rgba(242,238,227,0.85);
+  }
+  .chip .inner {
+    position: absolute;
+    inset: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(242,238,227,0.35);
+    box-shadow: inset 0 3px 8px rgba(0,0,0,0.25);
+  }
+  .chip .word { font-weight: 800; letter-spacing: 2px; }
+
+  .chip.pot {
+    width: 216px; height: 216px;
+    background: radial-gradient(circle at 34% 28%, #3B9A57 0%, #2E7D46 55%, #1F5A32 100%);
+  }
+  .chip.pot .word { color: #F2EEE3; font-size: 34px; text-shadow: 0 1px 3px rgba(0,0,0,0.45); }
+
+  .chip.call {
+    width: 144px; height: 144px;
+    background: radial-gradient(circle at 34% 28%, #E0BC4A 0%, #C9A227 55%, #96781B 100%);
+  }
+  .chip.call::before { inset: 6px; border-color: rgba(20,32,22,0.75); border-width: 5px; }
+  .chip.call .inner { inset: 22px; border-color: rgba(20,32,22,0.4); }
+  .chip.call .word { color: #0B1F17; font-size: 24px; text-shadow: 0 1px 2px rgba(255,255,255,0.25); }
+
+  .amount {
+    font-size: 34px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #F2EEE3;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  }
+  .amount.gold { color: #C9A227; }
+
+  .formula {
+    background: rgba(0,0,0,0.28);
+    border: 2px solid rgba(201,162,39,0.55);
+    border-radius: 16px;
+    padding: 22px 46px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+  }
+  .f1 {
+    color: #F2EEE3;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+  }
+  .f2 {
+    margin-top: 8px;
+    color: rgba(242,238,227,0.9);
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+  }
+  .f2 .pct { color: #C9A227; font-weight: 900; font-size: 32px; }
+
+  .caption {
+    color: #F2EEE3;
+    opacity: 0.88;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.3px;
+  }
+  .caption b { color: #C9A227; font-weight: 800; }
+
+  .wordmark {
+    position: absolute;
+    right: 44px; bottom: 44px;
+    color: #C9A227;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+</style>
+</head>
+<body>
+<div class="stage">
+
+  <div class="head">
+    <div class="kicker">Hold&#8217;em Probability</div>
+    <h1>Pot <span class="gold">Odds</span></h1>
+  </div>
+
+  <div class="chips-row">
+    <div class="chip-col">
+      <div class="chip pot"><div class="inner"><span class="word">POT</span></div></div>
+      <div class="amount">$100</div>
+    </div>
+    <div class="chip-col">
+      <div class="chip call"><div class="inner"><span class="word">CALL</span></div></div>
+      <div class="amount gold">$25</div>
+    </div>
+  </div>
+
+  <div class="formula">
+    <div class="f1">Pot odds = call &#247; (pot + call)</div>
+    <div class="f2">= 25 &#247; 125 = <span class="pct">20%</span></div>
+  </div>
+
+  <div class="caption">Win more than <b>20%</b> of the time and the call is profitable.</div>
+
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

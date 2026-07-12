@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>The Bubble</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #0B1F17; }
+  .stage {
+    width: 1200px;
+    height: 675px;
+    overflow: hidden;
+    position: relative;
+    padding: 44px;
+    background: linear-gradient(135deg, #0B1F17 0%, #13291D 100%);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .glow {
+    position: absolute;
+    left: 50%; top: 45%;
+    width: 940px; height: 540px;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(ellipse at center, rgba(46,125,70,0.28) 0%, rgba(46,125,70,0.0) 65%);
+    pointer-events: none;
+  }
+  .title {
+    position: relative;
+    color: #F2EEE3;
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  }
+  .title .g { color: #C9A227; }
+  .arena {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    gap: 70px;
+  }
+  .side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+  .stacks {
+    display: flex;
+    align-items: flex-end;
+    gap: 14px;
+  }
+  .stack { position: relative; width: 104px; }
+  .stack.h12 { height: 208px; }
+  .stack.h10 { height: 180px; }
+  .stack.h8  { height: 152px; }
+  .stack.h4  { height: 96px; }
+  .chip {
+    position: absolute;
+    left: 0;
+    width: 104px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  .chip::after {
+    content: "";
+    position: absolute;
+    inset: 5px 22px;
+    border-radius: 50%;
+    border: 2px dashed rgba(255,255,255,0.45);
+  }
+  .chip.gold {
+    background: linear-gradient(180deg, #E0C258 0%, #C9A227 100%);
+    box-shadow: 0 5px 0 #8F711B, 0 8px 8px rgba(0,0,0,0.35);
+  }
+  .chip.green {
+    background: linear-gradient(180deg, #3B9457 0%, #2E7D46 100%);
+    box-shadow: 0 5px 0 #1E5330, 0 8px 8px rgba(0,0,0,0.35);
+  }
+  .chip.red {
+    background: linear-gradient(180deg, #C05A42 0%, #B4462E 100%);
+    box-shadow: 0 5px 0 #7C2F1F, 0 8px 8px rgba(0,0,0,0.35);
+  }
+  .chip.red::after { border-color: rgba(255,255,255,0.4); }
+  .side-label {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 3px;
+  }
+  .label-gold { color: #C9A227; }
+  .label-red { color: #B4462E; }
+  .badge {
+    align-self: center;
+    background: linear-gradient(180deg, #D8B546 0%, #C9A227 100%);
+    color: #0B1F17;
+    font-size: 26px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    padding: 13px 36px;
+    border-radius: 44px;
+    box-shadow: 0 4px 16px rgba(201,162,39,0.4);
+    white-space: nowrap;
+    margin-bottom: 90px;
+  }
+  .caption {
+    position: relative;
+    color: #F2EEE3;
+    opacity: 0.88;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.3px;
+  }
+  .caption .g { color: #C9A227; font-weight: 800; }
+  .wordmark {
+    position: absolute;
+    right: 44px; bottom: 44px;
+    color: #C9A227;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="glow"></div>
+
+  <div class="title">The <span class="g">Bubble</span></div>
+
+  <div class="arena">
+    <div class="side">
+      <div class="stacks">
+        <div class="stack h12">
+          <div class="chip gold" style="bottom:0px;z-index:1"></div>
+          <div class="chip gold" style="bottom:16px;z-index:2"></div>
+          <div class="chip gold" style="bottom:32px;z-index:3"></div>
+          <div class="chip gold" style="bottom:48px;z-index:4"></div>
+          <div class="chip gold" style="bottom:64px;z-index:5"></div>
+          <div class="chip gold" style="bottom:80px;z-index:6"></div>
+          <div class="chip gold" style="bottom:96px;z-index:7"></div>
+          <div class="chip gold" style="bottom:112px;z-index:8"></div>
+          <div class="chip gold" style="bottom:128px;z-index:9"></div>
+          <div class="chip gold" style="bottom:144px;z-index:10"></div>
+          <div class="chip gold" style="bottom:160px;z-index:11"></div>
+          <div class="chip gold" style="bottom:176px;z-index:12"></div>
+        </div>
+        <div class="stack h10">
+          <div class="chip green" style="bottom:0px;z-index:1"></div>
+          <div class="chip green" style="bottom:16px;z-index:2"></div>
+          <div class="chip green" style="bottom:32px;z-index:3"></div>
+          <div class="chip green" style="bottom:48px;z-index:4"></div>
+          <div class="chip green" style="bottom:64px;z-index:5"></div>
+          <div class="chip green" style="bottom:80px;z-index:6"></div>
+          <div class="chip green" style="bottom:96px;z-index:7"></div>
+          <div class="chip green" style="bottom:112px;z-index:8"></div>
+          <div class="chip green" style="bottom:128px;z-index:9"></div>
+          <div class="chip green" style="bottom:144px;z-index:10"></div>
+        </div>
+        <div class="stack h8">
+          <div class="chip gold" style="bottom:0px;z-index:1"></div>
+          <div class="chip gold" style="bottom:16px;z-index:2"></div>
+          <div class="chip gold" style="bottom:32px;z-index:3"></div>
+          <div class="chip gold" style="bottom:48px;z-index:4"></div>
+          <div class="chip gold" style="bottom:64px;z-index:5"></div>
+          <div class="chip gold" style="bottom:80px;z-index:6"></div>
+          <div class="chip gold" style="bottom:96px;z-index:7"></div>
+          <div class="chip gold" style="bottom:112px;z-index:8"></div>
+        </div>
+      </div>
+      <div class="side-label label-gold">BIG STACK</div>
+    </div>
+
+    <div class="badge">ICM PRESSURE</div>
+
+    <div class="side">
+      <div class="stacks">
+        <div class="stack h4">
+          <div class="chip red" style="bottom:0px;z-index:1"></div>
+          <div class="chip red" style="bottom:16px;z-index:2"></div>
+          <div class="chip red" style="bottom:32px;z-index:3"></div>
+          <div class="chip red" style="bottom:48px;z-index:4"></div>
+        </div>
+      </div>
+      <div class="side-label label-red">SHORT STACK</div>
+    </div>
+  </div>
+
+  <div class="caption">Near the money, <span class="g">survival</span> is worth more than chips.</div>
+
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

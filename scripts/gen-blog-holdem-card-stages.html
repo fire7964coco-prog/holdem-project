@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>The Streets — Flop, Turn, River</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #0B1F17; }
+  .stage {
+    position: relative;
+    width: 1200px;
+    height: 675px;
+    overflow: hidden;
+    padding: 44px;
+    background:
+      radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+      linear-gradient(160deg, #0B1F17 0%, #13291D 100%);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .head { text-align: center; }
+  .kicker {
+    color: #C9A227;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  h1 {
+    color: #F2EEE3;
+    font-size: 46px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.45);
+  }
+  h1 .gold { color: #C9A227; }
+
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 26px;
+  }
+  .zone {
+    border: 2px solid rgba(201,162,39,0.55);
+    border-radius: 18px;
+    background: rgba(0,0,0,0.22);
+    padding: 18px 24px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+  }
+  .zone-label {
+    color: #C9A227;
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: 0.3em;
+  }
+  .zone-cards { display: flex; gap: 12px; }
+  .arrow {
+    color: #C9A227;
+    font-size: 44px;
+    font-weight: 800;
+    line-height: 1;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  }
+
+  .card {
+    position: relative;
+    width: 100px;
+    height: 144px;
+    background: linear-gradient(175deg, #FDFBF4 0%, #F2EEE3 100%);
+    border-radius: 10px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.45), 0 1px 3px rgba(0,0,0,0.3);
+  }
+  .card .corner {
+    position: absolute;
+    top: 7px;
+    left: 9px;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1.0;
+    text-align: center;
+  }
+  .card .corner .csuit { display: block; font-size: 18px; line-height: 1.0; margin-top: 1px; }
+  .card .big {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-42%, -44%);
+    font-size: 62px;
+    line-height: 1;
+  }
+  .black { color: #1a1a1a; }
+  .red { color: #c0392b; }
+
+  .counts {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #F2EEE3;
+    opacity: 0.9;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+  }
+  .counts .g { color: #C9A227; font-weight: 800; }
+
+  .wordmark {
+    position: absolute;
+    right: 44px; bottom: 44px;
+    color: #C9A227;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+</style>
+</head>
+<body>
+<div class="stage">
+
+  <div class="head">
+    <div class="kicker">Texas Hold&#8217;em</div>
+    <h1>The <span class="gold">Streets</span></h1>
+  </div>
+
+  <div class="row">
+    <div class="zone">
+      <div class="zone-label">FLOP</div>
+      <div class="zone-cards">
+        <div class="card"><div class="corner red">K<span class="csuit">&#9829;</span></div><div class="big red">&#9829;</div></div>
+        <div class="card"><div class="corner red">7<span class="csuit">&#9830;</span></div><div class="big red">&#9830;</div></div>
+        <div class="card"><div class="corner black">2<span class="csuit">&#9827;</span></div><div class="big black">&#9827;</div></div>
+      </div>
+    </div>
+
+    <div class="arrow">&#8594;</div>
+
+    <div class="zone">
+      <div class="zone-label">TURN</div>
+      <div class="zone-cards">
+        <div class="card"><div class="corner black">9<span class="csuit">&#9824;</span></div><div class="big black">&#9824;</div></div>
+      </div>
+    </div>
+
+    <div class="arrow">&#8594;</div>
+
+    <div class="zone">
+      <div class="zone-label">RIVER</div>
+      <div class="zone-cards">
+        <div class="card"><div class="corner red">Q<span class="csuit">&#9829;</span></div><div class="big red">&#9829;</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="counts"><span class="g">3 cards</span> &#8594; <span class="g">+1</span> &#8594; <span class="g">+1</span> &mdash; five community cards in all</div>
+
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

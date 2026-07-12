@@ -91,7 +91,7 @@ Now you can read a real five-card hand: your two hole cards plus the three on th
 - **What you have now** — a pair, two pair, or nothing yet.
 - **What you can still make** — a flush or straight **draw** that could complete on later streets.
 
-![Flop, turn, and river — how the community cards come out](/images/blog-holdem-card-stages.webp "The flop reveals three cards, the turn one, and the river one")
+![Infographic of the three streets in Texas Hold'em — a K♥ 7♦ 2♣ flop, the 9♠ turn, and the Q♥ river](/images/blog-holdem-card-stages.webp "The streets: three cards on the flop, then one on the turn and one on the river")
 
 The flop also unlocks a new option: the **check**. If no one has bet yet, you can check to pass the action without putting in chips. But if an opponent bets after you check, you'll have to call, raise, or fold.
 
@@ -129,7 +129,7 @@ The river is where you settle the whole hand. Weigh your hand strength, your opp
 
 If two or more players are still in after the river betting, the hand goes to **showdown**.
 
-![Poker showdown — players reveal their hands to decide the pot](/images/blog-holdem-showdown.webp "At showdown, surviving players reveal their cards and the best five-card hand wins")
+![Poker showdown infographic — on a 10♣ 7♥ J♦ 4♠ 9♣ board, pocket aces A♥ A♦ beat pocket kings K♥ K♣](/images/blog-holdem-showdown.webp "At showdown the surviving players reveal their cards — here the higher pair, aces over kings, takes the pot")
 
 Showdown rules:
 

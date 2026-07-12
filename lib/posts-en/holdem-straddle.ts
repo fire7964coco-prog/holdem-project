@@ -48,7 +48,7 @@ A straddle isn't a raise in the normal sense — it's a blind that resets the pr
 
 ## How a Straddle Works: Who Acts First and Last
 
-![An under-the-gun player slides an extra straddle bet forward before the deal, with the dealer button and blinds visible on the felt](/images/holdem-button-dealer-board.webp "A live UTG straddle turns the seat left of the big blind into a third blind — the straddler now acts last before the flop")
+![Infographic of a gold dealer button and two face-down hole cards behind a K♦ 7♣ 2♠ flop, where the button acts last postflop](/images/holdem-button-dealer-board.webp "A live UTG straddle turns the seat left of the big blind into a third blind — the straddler now acts last before the flop")
 
 This is the part definition pages skip, and it's where new players get lost. A straddle **rearranges the preflop action order.** Walk through a standard $1/$2 game where UTG straddles to $4:
 

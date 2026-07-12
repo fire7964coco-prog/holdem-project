@@ -45,7 +45,7 @@ The word paints the picture: you got "cooled off" — your hot hand went cold th
 
 ## Cooler vs Bad Beat: The Difference Everyone Gets Wrong
 
-![Two players at showdown with the community cards and a stack of chips between them, the moment two strong hands are revealed](/images/holdem-cooler-vs-badbeat.webp "The tell is timing: in a cooler you were behind when the money went in; in a bad beat you were ahead and got outdrawn")
+![Infographic of A♠ A♦ versus K♥ K♦ on a K♠ 7♦ 2♣ 8♥ 3♠ runout — a flopped set of kings beats the aces](/images/holdem-cooler-vs-badbeat.webp "The textbook cooler: aces against kings, neither hand can fold, and the flopped set decides who pays")
 
 This is the distinction that makes or breaks your understanding of the term — and almost every casual player blurs it. Both feel terrible, but they are opposites:
 
@@ -72,7 +72,7 @@ Here's the same players showing both, so it clicks. **Bad beat:** you hold A♠A
 
 ## Classic Cooler Examples (The Whole Family)
 
-![A poker table with the dealer button, community cards, and chips laid out, ready for the kind of premium-vs-premium clash that produces a cooler](/images/holdem-button-dealer-board.webp "Coolers happen when both players hold hands far too strong to fold — the money goes in and the second-best monster pays off")
+![Infographic of a gold dealer button, two face-down hole cards, and a K♦ 7♣ 2♠ flop on green felt](/images/holdem-button-dealer-board.webp "Coolers happen when both players hold hands far too strong to fold — the money goes in and the second-best monster pays off")
 
 Coolers come in a recognizable family. In every one, *both* hands are strong enough that folding would be a losing play over the long run — which is exactly why they're unavoidable:
 

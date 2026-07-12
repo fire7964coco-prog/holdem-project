@@ -148,7 +148,7 @@ All-in is the one spot in poker where the pie is sliced exactly as the math says
 
 **Your equity drops fast in multiway pots, because the same 100% pie now gets split among more hands.** Pocket aces are around 85% heads-up, but against three opponents that slides to ==r:~64%==, and against four to ~56% — still the best hand, but no longer the crush it feels like. Three-way, equity *averages* 33% by definition, because three players divide one pot.
 
-![A crowded poker table with four players still in the hand, cards and chips in front of each — the moment a premium hand's equity gets split several ways](/images/holdem-equity-multiway.webp "The more players still in the pot, the smaller everyone's slice — even pocket aces")
+![Infographic of a Q♣ 9♥ 5♦ 3♠ J♦ board showing how each extra player in the pot cuts every hand's equity](/images/holdem-equity-multiway.webp "The more players still in the pot, the smaller everyone's slice — even pocket aces")
 
 Two things get worse multiway, not just your raw share:
 

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tournament Action</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #0B1F17; }
+  .stage {
+    width: 1200px;
+    height: 675px;
+    overflow: hidden;
+    position: relative;
+    padding: 44px;
+    background: linear-gradient(135deg, #0B1F17 0%, #13291D 100%);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .glow {
+    position: absolute;
+    left: 50%; top: 45%;
+    width: 940px; height: 540px;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(ellipse at center, rgba(46,125,70,0.28) 0%, rgba(46,125,70,0.0) 65%);
+    pointer-events: none;
+  }
+  .title {
+    position: relative;
+    color: #F2EEE3;
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  }
+  .title .g { color: #C9A227; }
+  .arena {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    gap: 64px;
+  }
+  .hand-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .group-label {
+    color: #C9A227;
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: 4px;
+  }
+  .cards { display: flex; gap: 12px; }
+  .card {
+    width: 100px; height: 144px;
+    background: #FBF8EF;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 0 0 2px rgba(201,162,39,0.5), 0 6px 14px rgba(0,0,0,0.45);
+  }
+  .corner {
+    position: absolute;
+    top: 8px; left: 10px;
+    font-weight: 800;
+    font-size: 23px;
+    line-height: 1;
+    text-align: center;
+  }
+  .corner .s { display: block; font-size: 16px; margin-top: 1px; }
+  .pip {
+    position: absolute;
+    left: 50%; top: 53%;
+    transform: translate(-50%, -50%);
+    font-size: 56px;
+    line-height: 1;
+  }
+  .black { color: #1a1a1a; }
+  .red { color: #c0392b; }
+  .stacks {
+    display: flex;
+    align-items: flex-end;
+    gap: 14px;
+  }
+  .stack { position: relative; width: 104px; }
+  .stack.h11 { height: 192px; }
+  .stack.h9  { height: 160px; }
+  .stack.h7  { height: 128px; }
+  .chip {
+    position: absolute;
+    left: 0;
+    width: 104px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  .chip::after {
+    content: "";
+    position: absolute;
+    inset: 5px 22px;
+    border-radius: 50%;
+    border: 2px dashed rgba(255,255,255,0.45);
+  }
+  .chip.gold {
+    background: linear-gradient(180deg, #E0C258 0%, #C9A227 100%);
+    box-shadow: 0 5px 0 #8F711B, 0 8px 8px rgba(0,0,0,0.35);
+  }
+  .chip.green {
+    background: linear-gradient(180deg, #3B9457 0%, #2E7D46 100%);
+    box-shadow: 0 5px 0 #1E5330, 0 8px 8px rgba(0,0,0,0.35);
+  }
+  .chip.red {
+    background: linear-gradient(180deg, #C05A42 0%, #B4462E 100%);
+    box-shadow: 0 5px 0 #7C2F1F, 0 8px 8px rgba(0,0,0,0.35);
+  }
+  .screen {
+    width: 300px;
+    height: 150px;
+    border-radius: 14px;
+    background: linear-gradient(170deg, #101613 0%, #050907 100%);
+    border: 2px solid rgba(201,162,39,0.5);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5), inset 0 0 24px rgba(0,0,0,0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .screen-label {
+    color: #C9A227;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 6px;
+  }
+  .screen-value {
+    color: #F2EEE3;
+    font-size: 44px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-shadow: 0 0 12px rgba(242,238,227,0.25);
+  }
+  .caption {
+    position: relative;
+    color: #F2EEE3;
+    opacity: 0.88;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.3px;
+  }
+  .caption .g { color: #C9A227; font-weight: 800; }
+  .wordmark {
+    position: absolute;
+    right: 44px; bottom: 44px;
+    color: #C9A227;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="glow"></div>
+
+  <div class="title">Tournament <span class="g">Action</span></div>
+
+  <div class="arena">
+    <div class="hand-block">
+      <div class="group-label">YOUR HAND</div>
+      <div class="cards">
+        <div class="card"><div class="corner black">K<span class="s">&#9827;</span></div><div class="pip black">&#9827;</div></div>
+        <div class="card"><div class="corner red">K<span class="s">&#9830;</span></div><div class="pip red">&#9830;</div></div>
+      </div>
+    </div>
+
+    <div class="stacks">
+      <div class="stack h11">
+        <div class="chip gold" style="bottom:0px;z-index:1"></div>
+        <div class="chip gold" style="bottom:16px;z-index:2"></div>
+        <div class="chip gold" style="bottom:32px;z-index:3"></div>
+        <div class="chip gold" style="bottom:48px;z-index:4"></div>
+        <div class="chip gold" style="bottom:64px;z-index:5"></div>
+        <div class="chip gold" style="bottom:80px;z-index:6"></div>
+        <div class="chip gold" style="bottom:96px;z-index:7"></div>
+        <div class="chip gold" style="bottom:112px;z-index:8"></div>
+        <div class="chip gold" style="bottom:128px;z-index:9"></div>
+        <div class="chip gold" style="bottom:144px;z-index:10"></div>
+        <div class="chip gold" style="bottom:160px;z-index:11"></div>
+      </div>
+      <div class="stack h9">
+        <div class="chip green" style="bottom:0px;z-index:1"></div>
+        <div class="chip green" style="bottom:16px;z-index:2"></div>
+        <div class="chip green" style="bottom:32px;z-index:3"></div>
+        <div class="chip green" style="bottom:48px;z-index:4"></div>
+        <div class="chip green" style="bottom:64px;z-index:5"></div>
+        <div class="chip green" style="bottom:80px;z-index:6"></div>
+        <div class="chip green" style="bottom:96px;z-index:7"></div>
+        <div class="chip green" style="bottom:112px;z-index:8"></div>
+        <div class="chip green" style="bottom:128px;z-index:9"></div>
+      </div>
+      <div class="stack h7">
+        <div class="chip red" style="bottom:0px;z-index:1"></div>
+        <div class="chip red" style="bottom:16px;z-index:2"></div>
+        <div class="chip red" style="bottom:32px;z-index:3"></div>
+        <div class="chip red" style="bottom:48px;z-index:4"></div>
+        <div class="chip red" style="bottom:64px;z-index:5"></div>
+        <div class="chip red" style="bottom:80px;z-index:6"></div>
+        <div class="chip red" style="bottom:96px;z-index:7"></div>
+      </div>
+    </div>
+
+    <div class="screen">
+      <div class="screen-label">BLINDS</div>
+      <div class="screen-value">75 / 150</div>
+    </div>
+  </div>
+
+  <div class="caption">Blinds climb every level &mdash; <span class="g">chips</span> get more expensive to wait with.</div>
+
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

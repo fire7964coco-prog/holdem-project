@@ -43,7 +43,7 @@ The word isn't about how *nice* someone is or how much they enjoy the game — p
 
 ## Why Are Bad Players Called "Fish"?
 
-![A poker table of players studying each other, with one relaxed recreational player standing out from the sharper regulars around him](/images/holdem-pub-players-table.webp "Every table has a food chain: sharks quietly identify the fish and build their profit around them")
+![Top-down infographic of a pub poker table with a K♦ 7♣ 2♠ 9♥ 3♦ board, chip stacks, and the dealer button](/images/holdem-pub-players-table.webp "Every table has a food chain: sharks quietly identify the fish and build their profit around them")
 
 The metaphor comes straight from the ocean food chain. **Sharks eat fish.** A skilled, aggressive winning player circles the table looking for the weak, passive player they can profit from — and that player is the fish. The image is so baked into poker culture that a dozen related terms grew out of it (whale, minnow, guppy), all describing degrees of the same thing.
 

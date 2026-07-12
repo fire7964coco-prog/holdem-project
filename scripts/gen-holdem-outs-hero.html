@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<title>Counting Your Outs</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html, body { background: #0B1F17; }
@@ -12,18 +13,28 @@
     overflow: hidden;
     background: linear-gradient(160deg, #0B1F17 0%, #13291D 55%, #0B1F17 100%);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    padding: 44px 44px 44px 44px;
+    padding: 44px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
   }
+  .glow {
+    position: absolute;
+    left: 50%; top: 46%;
+    width: 940px; height: 520px;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(ellipse at center, rgba(46,125,70,0.26) 0%, rgba(46,125,70,0.0) 65%);
+    pointer-events: none;
+  }
   .title {
+    position: relative;
     color: #F2EEE3;
-    font-size: 34px;
+    font-size: 38px;
     font-weight: 800;
     letter-spacing: 0.02em;
     text-align: center;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
   }
   .title .gold { color: #C9A227; }
   .label {
@@ -74,9 +85,11 @@
   .card.sm .corner { top: 5px; left: 6px; font-size: 18px; }
   .card.sm .corner .csuit { font-size: 13px; }
   .card.sm .big { font-size: 40px; }
+  .card.out { box-shadow: 0 0 0 2px rgba(201,162,39,0.6), 0 6px 14px rgba(0,0,0,0.45); }
   .black { color: #1a1a1a; }
   .red { color: #c0392b; }
   .hand-block {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,29 +99,26 @@
     color: #F2EEE3;
     font-size: 20px;
     font-weight: 700;
+    letter-spacing: 0.08em;
   }
   .hand-cards { display: flex; gap: 10px; }
-  .caption {
-    color: #F2EEE3;
-    font-size: 20px;
-    font-weight: 500;
-    text-align: center;
-    opacity: 0.92;
+  .board-wrap { position: relative; }
+  .outs-block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
   }
-  .caption b { color: #C9A227; font-weight: 800; }
-  .caption .lose { color: #B4462E; font-weight: 800; }
-  .badge {
-    display: inline-block;
-    background: linear-gradient(175deg, #D9B33A 0%, #C9A227 100%);
-    color: #0B1F17;
+  .gold-note {
+    color: #C9A227;
     font-size: 24px;
-    font-weight: 900;
-    letter-spacing: 0.06em;
-    padding: 14px 40px;
-    border-radius: 999px;
-    box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    text-align: center;
+    white-space: nowrap;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.45);
   }
-  .badge .arrow { color: #2E7D46; padding: 0 6px; }
   .wordmark {
     position: absolute;
     right: 44px;
@@ -123,31 +133,38 @@
 </head>
 <body>
 <div id="frame">
+  <div class="glow"></div>
 
-  <div class="title">The Board Plays — <span class="gold">Everyone Chops</span></div>
-
-  <div>
-    <div class="label">THE BOARD</div>
-    <div class="board-row">
-      <div class="card"><div class="corner black">A<span class="csuit">&#9824;</span></div><div class="big black">&#9824;</div></div>
-      <div class="card"><div class="corner red">K<span class="csuit">&#9829;</span></div><div class="big red">&#9829;</div></div>
-      <div class="card"><div class="corner black">Q<span class="csuit">&#9827;</span></div><div class="big black">&#9827;</div></div>
-      <div class="card"><div class="corner red">J<span class="csuit">&#9830;</span></div><div class="big red">&#9830;</div></div>
-      <div class="card"><div class="corner black">10<span class="csuit">&#9824;</span></div><div class="big black">&#9824;</div></div>
-    </div>
-  </div>
+  <div class="title">Counting Your <span class="gold">Outs</span></div>
 
   <div class="hand-block">
-    <div class="hand-label">Your hand:</div>
+    <div class="hand-label">YOUR HAND</div>
     <div class="hand-cards">
-      <div class="card sm"><div class="corner red">9<span class="csuit">&#9829;</span></div><div class="big red">&#9829;</div></div>
-      <div class="card sm"><div class="corner black">7<span class="csuit">&#9824;</span></div><div class="big black">&#9824;</div></div>
+      <div class="card sm"><div class="corner red">A<span class="csuit">&#9829;</span></div><div class="big red">&#9829;</div></div>
+      <div class="card sm"><div class="corner red">K<span class="csuit">&#9829;</span></div><div class="big red">&#9829;</div></div>
     </div>
   </div>
 
-  <div class="caption">Your 9 only makes <span class="lose">K-Q-J-10-9</span> — the board's <b>A-K-Q-J-10</b> is your best five.</div>
+  <div class="board-wrap">
+    <div class="label">THE BOARD</div>
+    <div class="board-row">
+      <div class="card"><div class="corner black">Q<span class="csuit">&#9824;</span></div><div class="big black">&#9824;</div></div>
+      <div class="card"><div class="corner red">J<span class="csuit">&#9830;</span></div><div class="big red">&#9830;</div></div>
+      <div class="card"><div class="corner red">9<span class="csuit">&#9829;</span></div><div class="big red">&#9829;</div></div>
+      <div class="card"><div class="corner black">4<span class="csuit">&#9827;</span></div><div class="big black">&#9827;</div></div>
+      <div class="card"><div class="corner black">2<span class="csuit">&#9824;</span></div><div class="big black">&#9824;</div></div>
+    </div>
+  </div>
 
-  <div class="badge">THE BOARD PLAYS <span class="arrow">&#8594;</span> SPLIT POT</div>
+  <div class="outs-block">
+    <div class="gold-note">Any 10 = the nuts (straight)</div>
+    <div class="hand-cards">
+      <div class="card sm out"><div class="corner black">10<span class="csuit">&#9824;</span></div><div class="big black">&#9824;</div></div>
+      <div class="card sm out"><div class="corner red">10<span class="csuit">&#9829;</span></div><div class="big red">&#9829;</div></div>
+      <div class="card sm out"><div class="corner red">10<span class="csuit">&#9830;</span></div><div class="big red">&#9830;</div></div>
+      <div class="card sm out"><div class="corner black">10<span class="csuit">&#9827;</span></div><div class="big black">&#9827;</div></div>
+    </div>
+  </div>
 
   <div class="wordmark">&#9824;HoldemMaster</div>
 </div>

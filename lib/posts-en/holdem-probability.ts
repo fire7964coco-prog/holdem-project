@@ -151,7 +151,7 @@ That's the entire trick. Outs → times four on the flop → your [equity](/en/b
 
 ## Pot Odds: Turning Your Odds Into a Call or Fold
 
-![A player pushing a stack of chips toward the center pot on green felt — a call in motion](/images/holdem-probability-pot-odds.webp "Pot odds compare the price of a call to the size of the pot")
+![Pot odds infographic — a $100 pot and a $25 call, so 25 ÷ 125 means you need 20% equity](/images/holdem-probability-pot-odds.webp "A $25 call into a $100 pot: 25 ÷ 125 = 20% equity needed to break even")
 
 Knowing you'll hit 35% of the time is useless until you compare it to the **price**. Pot odds are simply: *what fraction of the final pot am I paying to call?* If your chance of winning is bigger than that fraction, you call.
 
@@ -171,7 +171,7 @@ That's the moment all the numbers pay off: your **drawing odds (35%)** beat your
 
 ## Royal Flush & Straight Flush Odds (and Why They're So Rare)
 
-![A royal flush in hearts — A-K-Q-J-10 all hearts — held with ace-king on a Queen-Jack-Ten heart board](/images/holdem-probability-royal-flush.webp "A royal flush in hearts: the rarest hand in poker, about 1 in 30,940 by the river")
+![Infographic of a royal flush in hearts — A♥ K♥ in hand completing A-K-Q-J-10 of hearts on a 10♥ J♥ Q♥ board](/images/holdem-probability-royal-flush.webp "A royal flush in hearts: the rarest hand in poker, about 1 in 30,940 by the river")
 
 The two rarest hands are the ones players brag about for years — with good reason.
 

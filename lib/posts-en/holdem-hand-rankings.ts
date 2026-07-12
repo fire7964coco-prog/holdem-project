@@ -254,7 +254,7 @@ It also explains the one big exception you'll meet: in **Short Deck (6+) Hold'em
 
 ## The 1-Second Hand-Reading Routine
 
-![Paired board with flush draw — Q-9-9-7-6 showing multiple possible hands](/images/holdem-hand-rankings-board-read.webp "How to read a poker board fast — suits, straights, pairs in order")
+![Infographic of a paired 9♥ Q♥ 9♠ 8♣ 7♠ community board — reading the pairs and possible straights to find your best five cards](/images/holdem-hand-rankings-board-read.webp "How to read a poker board fast — suits, straights, pairs in order")
 
 Under a time bank, run this scan in order every time the board is complete:
 

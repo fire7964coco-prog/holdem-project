@@ -13,7 +13,7 @@ export const POST: Post = {
   readTime: "11 min",
   emoji: "🎯",
   image: "/images/holdem-outs-hero.webp",
-  imageAlt: "A player mentally tallying the cards that complete a draw as the board sits on green felt",
+  imageAlt: "Infographic of counting outs — A♥ K♥ against a Q♠ J♦ 9♥ 4♣ 2♠ board where any ten completes the nut straight",
   tags: ["outs", "how to count outs in poker", "poker outs chart", "flush draw outs", "straight draw outs", "outs to odds", "dirty outs", "rule of 4 and 2"],
   content: `
 For my first year at the table I "played my draws" without ever counting them. A flush draw and a gutshot felt about the same — both were "cards that could come" — so I called the same on both and wondered why I kept losing. The fix wasn't a strategy course. It was a five-minute habit: ==stop, and actually count the cards that save me.==
@@ -154,7 +154,7 @@ Same logic on a **flush + gutshot**: 9 flush outs + 4 gutshot cards, but one of 
 
 ## Dirty Outs: The Cards That Only Look Like Wins
 
-![A coordinated flush-heavy board with a paired card and chips pushed forward, the kind of spot where a completing card can still lose](/images/holdem-outs-dirty-outs.webp "A tempting board where hitting your flush can still pay off a full house — the classic dirty out")
+![Infographic of a paired 10♠ 8♥ 4♠ 4♣ 6♦ board separating clean outs from dirty outs](/images/holdem-outs-dirty-outs.webp "On a paired board some of your outs are dirty — hitting the flush can still pay off a full house")
 
 This is the section most guides skip, and it's the one that actually saves money. A **dirty out** (or "tainted" out) is a card that completes your hand but can still lose — so counting it at full value overstates your equity. Winning players count raw outs, then *discount* the dirty ones before reaching for the Rule of 4 and 2.
 

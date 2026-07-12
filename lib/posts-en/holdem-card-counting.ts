@@ -13,7 +13,7 @@ export const POST: Post = {
   readTime: "10 min",
   emoji: "🧮",
   image: "/images/holdem-card-counting-hero.webp",
-  imageAlt: "A poker player quietly counting outs in their head at a live table, chips and a spread board in front of them — the mental math that replaces blackjack-style counting",
+  imageAlt: "Infographic of a 9♠ 8♠ flush draw on a Q♠ 7♠ 2♥ flop with nine outs — the counting that actually works in poker",
   tags: ["card counting poker", "can you count cards in poker", "is counting cards illegal in poker", "card counting vs blackjack", "counting cards texas holdem", "blockers poker", "counting outs", "poker card removal"],
   content: `
 Every poker player who came from blackjack asks the same question in their first session: "can I just count cards here?" I did too — I spent a month trying to keep a running count at a Hold'em table before a dealer laughed and told me I was wasting my brainpower on the wrong math. He was right. Blackjack counting is useless in poker, but that doesn't mean counting is. It just means you count ==different things.==
@@ -87,7 +87,7 @@ A 9-out flush draw hits by the river about ==g:35%== of the time (9 × 4 = 36% a
 
 A ==blocker== is a card in your hand that reduces the combinations your opponent can hold. If the board shows three spades and you hold the ==b:A♠==, your opponent ==r:cannot have the nut flush== — you're holding the one card that makes it. That makes your bluffs far more credible, because the scariest hand they'd call with is impossible.
 
-![A player holding the ace of spades while three spades sit on the board — the ace blocks any opponent from holding the nut flush](/images/holdem-card-counting-blocker.webp "Holding the A♠ on a three-spade board means no opponent can have the nut flush — that's card removal at work")
+![Infographic of A♠ J♦ on an all-spade K♠ 9♠ 4♠ flop — holding the ace of spades blocks the nut flush](/images/holdem-card-counting-blocker.webp "Holding the A♠ on a three-spade board means no opponent can have the nut flush — that's card removal at work")
 
 Blockers also work partially. On a ==b:Q-J-9== board, the nut straight is K-T. There are normally 16 ways to hold K-T (4 kings × 4 tens); if you hold one king or one ten yourself, you knock that down to ==12 combinations==, so the nut straight is 25% less likely in their range. This is the core of modern bluff selection — more in the [guide to 3-betting and blockers](/en/blog/holdem-3bet).
 

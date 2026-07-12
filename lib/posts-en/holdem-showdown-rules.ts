@@ -20,7 +20,7 @@ export const POST: Post = {
     "all in showdown rules",
   ],
   image: "/images/holdem-showdown-rules-hero.webp",
-  imageAlt: "Texas Hold'em showdown — dealer points to winning hand as losing player begins to muck, community cards face-up on green felt",
+  imageAlt: "Texas Hold'em showdown infographic — on a 4♥ 7♣ Q♦ K♠ 2♥ board, A♠ K♥ wins with a pair of kings and ace kicker",
   content: `
 You called the river bet. Now both of you are staring at each other, waiting for the other to flip first.
 
@@ -44,7 +44,7 @@ The rule depends on how the final betting round ended (for the full street-by-st
 
 </div>
 
-![Texas Hold'em showdown — golden arrow pointing to the last aggressor who must show cards first](/images/holdem-showdown-who-shows-first.webp)
+![Infographic of showdown order in Texas Hold'em — who shows first on a J♥ 9♠ 4♦ 2♠ K♥ board](/images/holdem-showdown-who-shows-first.webp)
 
 ==g:The key phrase is "last aggressor."== If you bet the river and got called, you show first — not the caller. The caller gets to see your hand before deciding whether to show or muck theirs.
 
@@ -96,7 +96,7 @@ For how side pots are built and paid when players are all-in, see [all-in rules 
 
 ## What Is the "Cards Speak" Rule?
 
-![Cards Speak rule in poker — player says "I have a pair" but the board shows a stronger hand wins](/images/holdem-showdown-cards-speak.webp)
+![Cards speak rule infographic — an 8♠ 9♣ 10♥ J♦ Q♠ board makes a queen-high straight, and at showdown the cards speak for themselves](/images/holdem-showdown-cards-speak.webp)
 
 "Cards speak" means ==the best hand wins regardless of what players say==.
 

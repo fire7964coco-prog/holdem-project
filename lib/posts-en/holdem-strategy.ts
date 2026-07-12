@@ -90,7 +90,7 @@ The [starting hands chart](/en/blog/holdem-starting-hands-chart) turns this into
 
 ## Decision 3 — Raise or Fold. Never Just Limp.
 
-![A dealer button and community cards on green felt surrounded by chip stacks, the kind of multiway pot that open-limping tends to create](/images/holdem-button-dealer-board.webp "Open-limping invites a bloated multiway pot with no initiative — raise to win it now, or fold and wait for a better spot")
+![Infographic of a gold dealer button, two face-down hole cards, and a K♦ 7♣ 2♠ flop — the button acts last postflop](/images/holdem-button-dealer-board.webp "Open-limping invites a bloated multiway pot with no initiative — raise to win it now, or fold and wait for a better spot")
 
 Once you've decided a hand is worth playing, there's a second decision most beginners get wrong: *how* to enter the pot. The answer, almost always, is **raise — don't limp.**
 
@@ -120,7 +120,7 @@ On sizing, a small **25–35% of the pot** bet works when you're betting a wide 
 
 ## Decision 5 — When Do I Fold? (The Decision That Saves the Most Money)
 
-![Players around a poker table watching the action unfold, the moment where discipline — folding a hand that's beaten — quietly saves a stack](/images/holdem-pub-players-table.webp "The most profitable move in poker is the one nobody notices — folding a beaten hand before it costs you a stack")
+![Top-down infographic of a Hold'em table with a complete K♦ 7♣ 2♠ 9♥ 3♦ board, chip stacks, and the dealer button](/images/holdem-pub-players-table.webp "The most profitable move in poker is the one nobody notices — folding a beaten hand before it costs you a stack")
 
 Aggression wins pots. **Discipline keeps stacks.** The decision that separates break-even players from winners isn't a hero call or a slick bluff — it's the boring, repeated act of folding when you're beaten.
 
