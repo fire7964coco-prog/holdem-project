@@ -1,8 +1,12 @@
 import type { Post } from "../posts";
-import { POST as holdemHandRankings } from "./holdem-hand-rankings";
-import { POST as holdemGameOrder } from "./holdem-game-order";
-import { POST as holdemTournamentVsCashGame } from "./holdem-tournament-vs-cash-game";
 import { POST as texasHoldemRulesForBeginners } from "./texas-holdem-rules-for-beginners";
+import { POST as holdemGameOrder } from "./holdem-game-order";
+import { POST as holdemBettingActions } from "./holdem-betting-actions";
+import { POST as holdemBlindMeaning } from "./holdem-blind-meaning";
+import { POST as holdemAllInRules } from "./holdem-all-in-rules";
+import { POST as holdemShowdownRules } from "./holdem-showdown-rules";
+import { POST as holdemHandRankings } from "./holdem-hand-rankings";
+import { POST as holdemTournamentVsCashGame } from "./holdem-tournament-vs-cash-game";
 
 /**
  * 일본어(ja) 블로그 포스트.
@@ -10,9 +14,15 @@ import { POST as texasHoldemRulesForBeginners } from "./texas-holdem-rules-for-b
  * 슬러그는 한국어/영어 글과 동일하게 맞춰 hreflang 상호 링크가 성립하도록 한다.
  */
 export const JA_POSTS: Post[] = [
+  // Rules 필라 (6/6)
   texasHoldemRulesForBeginners,
-  holdemHandRankings,
   holdemGameOrder,
+  holdemBettingActions,
+  holdemBlindMeaning,
+  holdemAllInRules,
+  holdemShowdownRules,
+  // 기타
+  holdemHandRankings,
   holdemTournamentVsCashGame,
 ];
 
