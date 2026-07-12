@@ -3,7 +3,7 @@
  * 한국어는 루트(/)에 그대로 두고, 추가 언어만 /{locale}/... 로 발행한다.
  * 새 언어 추가 = 아래 SECONDARY_LOCALES + CHROME 에 항목만 추가.
  */
-export const SECONDARY_LOCALES = ["en", "ja", "es", "zh", "ar", "pt", "id", "ms", "vi", "hi", "de", "tr", "fr"] as const;
+export const SECONDARY_LOCALES = ["en", "ja", "es", "zh", "ar", "pt", "id", "ms", "vi", "hi", "de", "tr", "fr", "ru"] as const;
 export type SecondaryLocale = (typeof SECONDARY_LOCALES)[number];
 
 export function isSecondaryLocale(value: string): value is SecondaryLocale {
@@ -38,6 +38,7 @@ export const OG_LOCALE: Record<SecondaryLocale, string> = {
   de: "de_DE",
   tr: "tr_TR",
   fr: "fr_FR",
+  ru: "ru_RU",
 };
 
 /** <html lang> 및 hreflang 코드 (zh는 간체 = zh-Hans, pt는 브라질 = pt-BR) */
@@ -55,6 +56,7 @@ export const HTML_LANG: Record<SecondaryLocale, string> = {
   de: "de",
   tr: "tr",
   fr: "fr",
+  ru: "ru",
 };
 
 interface ChromeStrings {
@@ -325,6 +327,24 @@ export const POST_LABELS: Record<SecondaryLocale, PostLabels> = {
     blogIntro:
       "Des guides pratiques qui expliquent non seulement quelle main bat quelle autre, mais pourquoi — et comment t'en servir à la table.",
   },
+  ru: {
+    contents: "Содержание",
+    quickAnswer: "Коротко",
+    category: "Гид для новичков",
+    readSuffix: "чтения",
+    published: "Опубликовано",
+    updated: "Обновлено",
+    prev: "Назад",
+    next: "Далее",
+    related: "Похожие статьи",
+    share: "Поделиться статьёй",
+    copy: "Скопировать ссылку",
+    copied: "Скопировано!",
+    back: "Ко всем статьям",
+    blogTitle: "Блог о стратегии Техасского Холдема",
+    blogIntro:
+      "Практичные гайды: не только какая рука сильнее, но и почему — и как использовать это за столом.",
+  },
 };
 
 export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
@@ -510,6 +530,20 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     disclaimer:
       "Ce site est fourni à titre informatif uniquement et ne fait pas la promotion des jeux d'argent réels. Réservé aux 18 ans et plus.",
   },
+  ru: {
+    skip: "Перейти к содержанию",
+    brand: "HoldemMaster",
+    blogLabel: "Блог",
+    menuOpen: "Открыть меню",
+    menuClose: "Закрыть меню",
+    koLabel: "한국어",
+    tagline:
+      "Понятная и практичная стратегия Техасского Холдема. Гайды о том, какая рука выигрывает и почему.",
+    contentHeading: "Разделы",
+    languageHeading: "Язык",
+    disclaimer:
+      "Этот сайт носит исключительно информационный характер и не пропагандирует азартные игры на реальные деньги. Только для лиц старше 18 лет.",
+  },
 };
 
 /** 블로그 탑바 — 홈 피드 버튼 (한국어 기본값: 홈피드) */
@@ -527,6 +561,7 @@ export const NAV_HOME_FEED: Record<SecondaryLocale, string> = {
   de: "Start-Feed",
   tr: "Ana Sayfa",
   fr: "Accueil",
+  ru: "Главная",
 };
 
 /** 블로그 탑바 — 커뮤니티 CTA 버튼 */
@@ -544,4 +579,5 @@ export const NAV_CTA: Record<SecondaryLocale, string> = {
   pt: "Comunidade →",
   hi: "समुदाय →",
   fr: "Communauté →",
+  ru: "Сообщество →",
 };
