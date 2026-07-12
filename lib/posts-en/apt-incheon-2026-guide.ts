@@ -13,7 +13,7 @@ export const POST: Post = {
   readTime: "16 min",
   emoji: "🇰🇷",
   image: "/images/apt-incheon-2026-guide-hero.webp",
-  imageAlt: "APT Incheon 2026 at Paradise City Casino — poker tables set up with Seoul skyline and traditional Korean gate visible in background",
+  imageAlt: "APT Incheon 2026 at Paradise City — a premium poker tournament room at night with green-felt tables, chip stacks, and the Incheon harbor skyline through floor-to-ceiling windows",
   tags: [
     "APT Incheon 2026",
     "Korea poker tournament 2026",
