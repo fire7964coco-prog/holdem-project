@@ -402,7 +402,7 @@ For learning, start with play chips. For tiny real-money home games, use a buy-i
 
 ### Is there a small straight in Texas Hold'em?
 
-Yes. A-2-3-4-5 is a valid straight and is often called the wheel. It is the lowest possible straight. A cannot wrap around with K-Q-J-10-9.
+Yes. A-2-3-4-5 is a valid straight and is often called the wheel. It is the lowest possible straight. The ace can't wrap around: J-Q-K-A-2 is not a straight. The ace plays either as the highest card (A-K-Q-J-10) or the lowest (A-2-3-4-5), never in the middle.
 
 ### How many possible starting hands are in Texas Hold'em?
 

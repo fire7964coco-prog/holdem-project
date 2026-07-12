@@ -2,327 +2,395 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "holdem-game-order",
-  title: "Como jogar pôquer Texas Hold'em: uma mão completa, do blind ao showdown",
-  seoTitle: "Travou na hora de apostar? — Como se joga uma mão de pôquer",
-  desc: "Começou no pôquer e trava quando chega a sua vez de agir? Acontece com todo mundo. Aqui está a ordem de uma mão de Texas Hold'em — blinds, pré-flop, flop, turn, river e showdown — explicada com uma mão real para você sentar e jogar hoje mesmo.",
-  tldr: "Uma mão de Texas Hold'em segue esta ordem: postar os blinds → distribuir 2 cartas → pré-flop → flop (3 cartas) → turn (1 carta) → river (1 carta) → showdown, com 4 rodadas de apostas no total.",
-  category: "초보 가이드",
+  title: "Como jogar Texas Hold'em: a ordem do jogo, dos blinds ao showdown",
+  seoTitle: "Não sabe quando é sua vez? — Ordem do jogo no Texas Hold'em",
+  desc: "Trava sem saber de quem é a vez no poker? A ordem completa da mão de Texas Hold'em — pré-flop, flop, turn, river e showdown — com exemplo real passo a passo.",
+  tldr: "Uma mão de Texas Hold'em segue esta ordem: postar os blinds → receber duas cartas fechadas → pré-flop → flop (3 cartas) → turn (1 carta) → river (1 carta) → showdown, com quatro rodadas de apostas no total.",
+  category: "rules",
   date: "2026-06-10",
-  updated: "2026-06-10",
+  updated: "2026-07-12",
+  masterUpdated: "2026-07-02",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎬",
-  tags: ["como jogar poker", "como jogar texas holdem", "regras do poker texas holdem", "poker para iniciantes", "ordem das jogadas poker", "pre-flop flop turn river", "quando apostar no poker", "como funciona uma mao de poker"],
+  image: "/images/blog-holdem-game-flow.webp",
+  imageAlt: "Diagrama da ordem do jogo no Texas Hold'em — as seis etapas: blinds, pré-flop, flop, turn, river e showdown",
+  tags: ["como jogar texas holdem", "regras do texas holdem", "ordem do poker", "pre-flop flop turn river", "rodadas de apostas no poker", "quem age primeiro no poker", "como funciona uma mao de poker", "showdown poker"],
   content: `
-Quem senta pela primeira vez para jogar Texas Hold'em pensa a mesma coisa: *"Peraí… de quem é a vez, e quando eu coloco ficha?"*. Você sabe que recebe cartas. O que você não sabe é quando apostar, quando saem mais cartas e como, no fim, se decide quem ganha.
+Todo mundo que senta pela primeira vez numa mesa de Texas Hold'em faz a mesma pergunta: ==r:*"Peraí — de quem é a vez, e quando eu coloco fichas no meio?"*== Você sabe que recebe cartas. O que você não sabe é quando apostar, quando saem mais cartas e como o vencedor é decidido de verdade.
 
-Aqui está tudo resolvido. A ordem completa da mão em seis fases claras, uma mão inteira jogada carta por carta, as sete ações de aposta, as dez mãos do pôquer e os cinco erros que esvaziam as fichas dos iniciantes sem que eles percebam. Leia uma vez e você senta para jogar hoje.
+Este é o **guia da ordem do jogo**: blinds, pré-flop, flop, turn, river, showdown e quem age primeiro em cada momento. Se você é totalmente iniciante e quer o pacote completo — regras, fichas, ranking de mãos, primeira estratégia e um PDF para imprimir — comece pelas [regras do Texas Hold'em para iniciantes](/pt/blog/texas-holdem-rules-for-beginners "thumb:/images/rules-texas-holdem.webp"). Depois volte aqui para o fluxo detalhado da mão.
 
 ---
 
 ### Uma mão em 15 segundos
 
-Postam-se os blinds (apostas obrigatórias) → cada jogador recebe 2 **cartas** fechadas → rodada de **pré-flop** → abrem-se 3 cartas no **flop** → aposta → vem a carta do **turn** → aposta → abre-se a última carta, o **river** → aposta → quem sobrou mostra as cartas no **showdown** → a melhor mão de cinco cartas vence.
+Postar os blinds (apostas obrigatórias) → distribuir duas **cartas fechadas** para cada jogador → apostas do **pré-flop** → revelar as três cartas do **flop** → apostar → adicionar a carta do **turn** → apostar → revelar a última carta, o **river** → apostar → os jogadores que sobraram vão ao showdown → a melhor mão de cinco cartas leva o pote.
 
-![Ordem das jogadas no Texas Hold'em — do blind ao showdown](/images/blog-holdem-game-flow.webp "As seis fases de uma mão de Texas Hold'em, do blind ao showdown")
+![Ordem do jogo no Texas Hold'em — blinds, pré-flop, flop, turn, river, showdown](/images/blog-holdem-game-flow.webp "As seis etapas de uma mão de Texas Hold'em, dos blinds ao showdown")
 
 ---
 
 ## O que é Texas Hold'em?
 
-O Texas Hold'em é o pôquer mais jogado do mundo. Da Série Mundial de Pôquer (WSOP) à mesa entre amigos, quando alguém fala "pôquer", quase sempre é Hold'em.
+O Texas Hold'em é a modalidade de poker mais jogada do mundo. Do Main Event da WSOP ao joguinho entre amigos, quando alguém diz "poker", quase sempre está falando de Hold'em.
 
-A regra central é simples: você forma a **melhor mão de cinco cartas** combinando suas **2 cartas fechadas com as 5 cartas comunitárias** da mesa. A sorte distribui as cartas, mas entender a ordem da mão — e decidir certo em cada fase — é o que separa quem ganha do resto.
+A regra central é simples: você forma sua **melhor mão de cinco cartas** combinando suas **duas cartas fechadas com as cinco cartas comunitárias**. A sorte distribui as cartas, mas entender a ordem do jogo — e tomar a decisão certa em cada etapa — é o que separa quem ganha de todo o resto.
 
 ---
 
-## Antes de distribuir: o botão e os blinds
+## Antes das cartas: o botão e os blinds
 
-Antes de sair uma única carta, duas coisas organizam a mesa: o **botão do dealer** e os **blinds**.
+Antes de qualquer carta sair, duas coisas organizam a mesa: o **botão do dealer** e os **blinds**.
 
-O **botão (a "D")** é uma ficha redonda que marca quem "distribui" naquela mão. Mesmo com um dealer profissional, a ordem das apostas é definida pelo botão, que anda um lugar no sentido horário a cada mão.
+O **botão do dealer (o "button", marcado com D)** é um disco redondo que indica quem "dá as cartas" naquela mão. Mesmo com um dealer profissional na mesa, é o botão que define a ordem das apostas, e ele avança uma cadeira no sentido horário a cada mão.
 
-Os **blinds** são apostas obrigatórias feitas antes de distribuir. Sem eles, todo mundo poderia dar mesa e desistir de graça; os blinds colocam fichas no centro e dão um motivo para disputar.
+Os **blinds** são apostas obrigatórias postadas antes de as cartas serem distribuídas. Sem eles, todo mundo poderia dar check e foldar de graça; ==g:os blinds colocam fichas no meio e dão aos jogadores um motivo para brigar pelo pote==. (Primeira vez ouvindo falar? Veja exatamente [como funcionam o small blind e o big blind](/pt/blog/holdem-blind-meaning).)
+
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Blind | Posição | Exemplo |
-|------|------|------|
-| Small Blind (SB) | Primeiro lugar à esquerda do botão | 1.000 |
-| Big Blind (BB) | Segundo lugar à esquerda do botão | 2.000 |
+|:---|:---|:---:|
+| Small Blind (SB) | Primeira cadeira à esquerda do botão | 1.000 |
+| Big Blind (BB) | Segunda cadeira à esquerda do botão | 2.000 |
 
-Os blinds não são uma simples taxa de entrada: são o ponto de partida da posição e da estratégia.
+</div>
+
+Os blinds não são só uma taxa de entrada — ==eles são o ponto de partida da posição e da estratégia==.
 
 ---
 
-## Fase 1 — Pré-flop: a primeira decisão define a mão
+## Etapa 1 — Pré-flop: a primeira decisão dá o tom
 
-Postados os blinds, o dealer dá a cada jogador 2 **cartas fechadas**. Só você as vê, e é aqui que começa a rodada de **pré-flop**.
+Com os blinds postados, o dealer entrega a cada jogador duas **cartas fechadas**, viradas para baixo. Só você pode vê-las, e começam as apostas do **pré-flop**.
 
 A ação começa à esquerda do big blind e segue no sentido horário. Na sua vez, você escolhe uma destas opções:
 
-- **Desistir (fold)** — abandona a mão e joga as cartas fora. Não perde mais nada, mas também não ganha.
-- **Pagar (call)** — coloca o mesmo valor da aposta atual (no pré-flop, o big blind).
-- **Aumentar (raise)** — aposta mais que o big blind para pressionar.
-- **Re-aumentar (3-bet)** — um aumento por cima do aumento de outro. Sinal de mão forte.
+- **Fold** — desistir da mão e descartar as cartas. Você não perde mais nada, mas também não ganha nada.
+- **Call (pagar)** — igualar a aposta atual (no pré-flop, o big blind).
+- **Raise (aumentar)** — apostar mais que o big blind para pressionar os adversários.
+- **3-bet** — um aumento por cima do aumento de alguém. Sinal de mão forte.
 
-A maioria dos iniciantes joga quase toda mão "só pra ver o flop". Esse é o hábito mais caro do pôquer. **Bons jogadores desistem na maioria das mãos no pré-flop e jogam só cerca de 15% a 25% delas.**
+==r:A maioria dos iniciantes joga quase todas as mãos "só para ver um flop". Esse é o hábito mais caro do poker.== ==g:**Bons jogadores foldam a maior parte das mãos no pré-flop e jogam só uns 15% a 25% delas.**==
 
-### Boas mãos iniciais para quem está começando
+### Mãos iniciais sólidas para iniciantes
 
 - **Premium:** A♠A♥ (par de ases), K♠K♥, Q♠Q♥, J♠J♥
 - **Fortes:** A♠K♥ ("Big Slick"), A♠Q♥, A♠J♥, 10♠10♥
-- **Depende da situação:** 9♠9♥, 8♠8♥, K♠Q♥, K♠J♥
+- **Situacionais:** 9♠9♥, 8♠8♥, K♠Q♥, K♠J♥
+
+Quais dessas você pode realmente abrir depende da sua cadeira — a tabela completa das 169 mãos iniciais, separada por posição, mostra isso em detalhe.
 
 ---
 
-## Fase 2 — O flop: três cartas comunitárias
+## Etapa 2 — O flop: três cartas comunitárias
 
-Quando a rodada de pré-flop termina, o dealer abre 3 **cartas comunitárias** no centro. Isso é o **flop**.
+Quando as apostas do pré-flop terminam, o dealer revela três **cartas comunitárias** no meio da mesa. Esse é o **flop**.
 
-Agora você lê uma mão real de cinco cartas: suas duas cartas mais as três da mesa. Olhe duas coisas ao mesmo tempo:
+Agora você já consegue ler uma mão real de cinco cartas: suas duas cartas fechadas mais as três da mesa. Olhe para duas coisas ao mesmo tempo:
 
-- **O que você tem agora** — um par, dois pares ou ainda nada.
-- **O que ainda pode fechar** — um **projeto** de flush ou de sequência que complete nas próximas cartas.
+- **O que você tem agora** — um par, dois pares, ou nada ainda.
+- **O que você ainda pode fechar** — um **draw** de flush ou sequência que pode completar nas próximas streets.
 
-![Flop, turn e river — como saem as cartas comunitárias](/images/blog-holdem-card-stages.webp "O flop abre três cartas, o turn uma e o river uma")
+![Infográfico das três streets do Texas Hold'em — flop K♥ 7♦ 2♣, turn 9♠, river Q♥](/images/blog-holdem-card-stages.webp "As streets: três cartas no flop, depois uma no turn e uma no river")
 
-A partir do flop surge uma nova opção: dar **mesa (check)**. Se ninguém apostou, você passa a vez sem colocar fichas. Mas se um adversário apostar depois que você der mesa, vai ter que pagar, aumentar ou desistir.
+O flop também libera uma opção nova: o **check**. Se ninguém apostou ainda, você pode dar check e passar a ação sem colocar fichas. Mas se um adversário apostar depois do seu check, você terá que pagar, aumentar ou foldar.
 
 ---
 
-## Fase 3 — O turn: o quadro fica mais claro
+## Etapa 3 — O turn: a imagem fica mais nítida
 
-Depois da rodada do flop, vem mais uma carta comunitária: o **turn**. Agora são quatro cartas na mesa.
+Depois da rodada de apostas do flop, mais uma carta comunitária é distribuída — o **turn**. Agora há quatro cartas na mesa.
 
-O turn é uma street muito importante na estratégia:
+O turn é uma street estrategicamente pesada:
 
-- Seu projeto de sequência ou flush fechou?
+- Seu draw de sequência ou flush completou?
 - O que as ações do adversário no pré-flop e no flop dizem sobre o range dele?
-- "Vale a pena levar essa mão até o river?" — quase a decisão final.
+- Vale a pena levar esta mão até o river?
 
-Se você dá mesa de forma passiva no turn e do nada manda uma aposta grande no river, adversários atentos sentem a fraqueza. **Com mão forte, aposte no turn para aumentar o pote** enquanto o adversário ainda paga.
-
----
-
-## Fase 4 — O river: a última carta, a última decisão
-
-Quando acaba a rodada do turn, abre-se a quinta e última carta comunitária: o **river**. As cinco cartas da mesa estão na mesa e não vem mais nenhuma informação nova.
-
-Erros clássicos no river:
-
-- **Pagar até o fim com mão fraca** — a armadilha do "já cheguei até aqui".
-- **Dar mesa com mão forte de forma passiva** — você dá um showdown de graça ao adversário.
-- **Blefar do nada no river** — se você foi passivo em todas as streets anteriores, uma aposta grande aqui não conta uma história crível.
-
-O river é onde você fecha a mão inteira. Junte a força da sua mão, o padrão de apostas do adversário e a mesa completa, e tome a decisão final.
+==r:Se você dá check passivo no turn e de repente solta uma aposta grande no river, adversários atentos leem fraqueza.== ==g:**Com uma mão forte, aposte no turn para inflar o pote**== enquanto o adversário ainda está disposto a pagar.
 
 ---
 
-## Fase 5 — Showdown: a melhor mão de cinco cartas vence
+## Etapa 4 — O river: a última carta, a última decisão
 
-Se, depois da rodada do river, sobram dois ou mais jogadores, a mão vai para o **showdown**.
+Depois da rodada de apostas do turn, a quinta e última carta comunitária é revelada — o **river**. As cinco cartas comunitárias estão na mesa, e não há mais informação nova por vir.
 
-![Showdown de pôquer — os jogadores mostram as cartas para decidir o pote](/images/blog-holdem-showdown.webp "No showdown, quem sobrou mostra as cartas e a melhor mão de cinco vence")
+Erros clássicos de river:
+
+- **Pagar até o fim com uma mão fraca** — a armadilha do "já que cheguei até aqui…".
+- **Dar check passivo com uma mão forte** — entregar ao adversário um showdown de graça.
+- **Tentar um blefe repentino no river** — se você foi passivo em todas as streets anteriores, uma aposta grande no river raramente conta uma história crível.
+
+O river é onde a mão inteira se resolve. Pese a força da sua mão, o padrão de apostas do adversário e a mesa completa, e então tome a decisão final.
+
+---
+
+## Etapa 5 — Showdown: a melhor mão de cinco cartas vence
+
+Se dois ou mais jogadores continuam na mão depois das apostas do river, a mão vai ao **showdown**.
+
+![Infográfico de showdown no poker — no board 10♣ 7♥ J♦ 4♠ 9♣, o par de ases A♥ A♦ vence o par de reis K♥ K♣](/images/blog-holdem-showdown.webp "No showdown os jogadores que sobraram mostram as cartas — aqui o par mais alto, ases contra reis, leva o pote")
 
 Regras do showdown:
 
-- Cada jogador forma a **melhor mão de cinco cartas** com suas duas cartas e as cinco comunitárias.
-- Não precisa usar as duas cartas fechadas — pode usar uma, ou nenhuma (jogar a mesa), se essa for a sua melhor mão.
-- Mostra primeiro quem fez a última ação agressiva (aposta ou aumento); se o river foi só mesa, mostra primeiro o jogador à esquerda do botão.
-- Quem perde pode jogar as cartas fora sem mostrar (**muck**).
-- Mãos iguais **dividem o pote** por igual.
+- Cada jogador forma sua **melhor mão de cinco cartas** com as duas cartas fechadas e as cinco comunitárias.
+- Você não é obrigado a usar as duas cartas da mão — pode usar uma só, ou até jogar só com a mesa (zero), se essa for sua melhor combinação.
+- Quem fez a última ação agressiva (aposta ou aumento) mostra primeiro; no river com checks, mostra primeiro o **primeiro jogador ativo** à esquerda do botão.
+- Quem perdeu pode simplesmente dar **muck** (foldar sem mostrar).
+- Mãos idênticas **dividem o pote** ("chop") em partes iguais.
+
+Quem é obrigado a mostrar primeiro, quando você pode dar muck e a etiqueta em torno do slow roll estão explicados por completo nas [regras do showdown](/pt/blog/holdem-showdown-rules).
 
 ---
 
-## A ordem completa num relance
+## Quem age primeiro em cada street?
 
-| Fase | O que acontece | Cartas comunitárias | Aposta? |
-|------|------|------|------|
-| Blinds | SB e BB postam apostas obrigatórias | 0 | Obrigatória |
-| Pré-flop | 2 cartas distribuídas → apostas | 0 | ✅ |
-| Flop | 3 cartas comunitárias abertas | 3 | ✅ |
+"De quem é a vez?" tem uma resposta antes do flop e outra depois — e é exatamente essa mudança que move toda a estratégia de posição.
+
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
+
+| Street | Age primeiro | Age por último |
+|------|------|------|
+| Pré-flop | Jogador à esquerda do big blind ("UTG") | Big blind |
+| Flop | Small blind (ou o primeiro jogador vivo à esquerda do botão) | Botão |
+| Turn | Igual ao flop | Botão |
+| River | Igual ao flop | Botão |
+
+</div>
+
+O truque para memorizar: ==**antes do flop, olhe à esquerda do big blind; depois do flop, olhe à esquerda do botão.**== O botão age por último em todas as streets do pós-flop — e é exatamente por isso que é a cadeira mais lucrativa da mesa.
+
+==g:**Heads-up (2 jogadores) é a exceção:**== o botão posta o *small* blind e age **primeiro** no pré-flop, mas **por último** no flop, no turn e no river. É essa a ordem usada na mão completa que vamos acompanhar logo abaixo.
+
+---
+
+## A ordem inteira num relance
+
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
+
+| Etapa | O que acontece | Cartas comunitárias | Apostas? |
+|:---|:---|:---:|:---|
+| Blinds | SB e BB postam as apostas obrigatórias | 0 | Obrigatórias |
+| Pré-flop | Duas cartas fechadas distribuídas → apostas | 0 | ✅ |
+| Flop | Três cartas comunitárias reveladas | 3 | ✅ |
 | Turn | Mais uma carta comunitária | 4 | ✅ |
 | River | Última carta comunitária | 5 | ✅ |
-| Showdown | Comparam-se as melhores 5 cartas → vencedor | 5 | — |
+| Showdown | Melhores cinco cartas comparadas → vencedor | 5 | — |
 
-### ⚡ Cada street em uma frase
+</div>
 
-- **Pré-flop** = início (decide só com suas duas cartas)
-- **Flop** = mudança (três cartas abrem as possibilidades)
+### ⚡ Um gancho de memória para cada street
+
+- **Pré-flop** = largada (decida só com suas duas cartas)
+- **Flop** = virada (três cartas abrem as possibilidades)
 - **Turn** = decisão (sua última chance real de planejar o river)
 - **River** = conclusão (todas as cartas na mesa, aposta final)
-- **Showdown** = resultado (a melhor mão de cinco leva)
+- **Showdown** = resultado (as melhores cinco cartas levam)
 
 ---
 
 ## Acompanhe uma mão completa, passo a passo
 
-![Exemplo de uma mão completa de Texas Hold'em — do pré-flop ao showdown](/images/holdem-game-example-fullhand.webp "Seguindo uma mão inteira por todas as streets até o showdown")
+![Exemplo de mão completa de Texas Hold'em — do pré-flop ao showdown](/images/holdem-game-example-fullhand.webp "Acompanhando uma mão inteira por todas as streets até o showdown")
 
-Ler na teoria é abstrato. Vamos jogar uma mão mano a mano (heads-up) da primeira carta à última, com cartas e fichas reais.
+Ler sobre streets é abstrato. Vamos rodar uma mão de heads-up da primeira carta até a última, com cartas e fichas de verdade.
 
-**Cenário:** mano a mano. Blinds SB 1.000 / BB 2.000.
+**Cenário:** heads-up. Blinds SB 1.000 / BB 2.000.
 
-- **Jogador A (você):** A♠ K♥ (ás-rei de naipes diferentes)
+- **Jogador A (você):** A♠ K♥ (ás-rei offsuit)
 - **Jogador B (adversário):** 9♦ 9♣ (par de noves)
 
 ### Pré-flop
 
-A aumenta para **6.000** com Big Slick. B paga com o par de noves.
+A aumenta para **6.000** com o Big Slick. B paga com o par de noves.
 **Pote: 12.000**
 
 ### Flop: K♦ 9♠ 3♥
 
 - **A:** par máximo com o melhor kicker (par de reis). Parece forte.
-- **B:** trinca de noves, um **set**. Já é uma mão monstro.
+- **B:** três noves — um **set**. Já é um monstro.
 
-B dá mesa, A aposta **8.000**, B paga.
+B dá check, A aposta **8.000**, B paga.
 **Pote: 28.000**
 
 ### Turn: 2♣
 
-- **A:** sem mudança, segue com par de reis.
+- **A:** nada muda, segue com o par máximo.
 - **B:** segue com o set, não precisa melhorar.
 
-B dá mesa, A aposta **15.000** (cerca de meio pote), B paga.
+B dá check, A aposta **15.000** (cerca de metade do pote), B paga.
 **Pote: 58.000**
 
 ### River: A♥
 
-- **A:** o ás pareia — agora são **dois pares (ases e reis)**. Se empolga e aposta **30.000**.
+- **A:** o ás pareia — agora tem **dois pares, ases e reis**. Confiante, aposta **30.000**.
 - **B:** o set continua esmagando os dois pares. Aumenta para **70.000**.
-- **A:** convencido de que os dois pares estão bons, paga.
+- **A:** convencido de que os dois pares são bons, paga.
 
 **Pote: 198.000**
 
 ### Showdown
 
 - A: A♠ K♥ + A♥ K♦ 9♠ → **dois pares (ases e reis)**
-- B: 9♦ 9♣ + 9♠ K♦ A♥ → **trinca de noves**
+- B: 9♦ 9♣ + 9♠ K♦ A♥ → **trinca (noves)**
 
 **Vencedor: B** — a trinca ganha dos dois pares.
 
-A lição: quando o river deu dois pares ao A, *pareceu* a mão vencedora, mas o B tinha um set desde o flop. **Ler a mesa inteira, e não só a sua própria melhora, é o coração do Hold'em.**
+A lição: ==r:quando o river deu dois pares para A, a mão *pareceu* vencedora — mas B tinha o set desde o flop, o tempo todo.== ==g:**Ler a mesa inteira, e não só a própria melhora, é o coração do Hold'em.**==
 
 ---
 
-## As 7 ações de aposta, explicadas
+## As 7 ações de aposta, explicadas de vez
 
-![As ações de aposta do pôquer — mesa, pagar, desistir, apostar, aumentar, re-aumentar, all-in](/images/holdem-betting-options-guide.webp "Todas as ações de aposta que você pode fazer no Texas Hold'em")
+![As ações de aposta do poker — check, call, fold, bet, raise, re-raise, all-in](/images/holdem-betting-options-guide.webp "Todas as ações de aposta disponíveis no Texas Hold'em")
 
-Aqui estão todas as ações da mesa, a parte que mais confunde os iniciantes.
+Aqui está tudo o que você pode fazer na mesa — a parte que os iniciantes mais confundem.
 
-| Ação | O que faz | Quando dá para usar |
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
+
+| Ação | O que faz | Quando está disponível |
 |------|------|------|
-| Desistir (fold) | Abandona a mão e joga as cartas fora | Sempre |
-| Mesa (check) | Passa a vez sem apostar | Só quando não há aposta na sua frente |
-| Pagar (call) | Cobre o valor da aposta atual | Quando há uma aposta na sua frente |
-| Apostar (bet) | É o primeiro a apostar na rodada | Quando ninguém apostou ainda |
-| Aumentar (raise) | Aposta mais que a aposta atual | Quando há uma aposta na sua frente |
-| Re-aumentar (3-bet) | Aumenta por cima de um aumento | Quando há um aumento na sua frente |
-| All-in | Coloca todas as fichas | Sempre |
+| Fold | Desiste da mão e descarta as cartas | A qualquer momento |
+| Check | Passa a ação sem apostar | Só quando não há aposta para você |
+| Call | Iguala a aposta atual | Quando há uma aposta para você |
+| Bet | Faz a primeira aposta da rodada | Quando ninguém apostou ainda |
+| Raise | Aumenta por cima da aposta atual | Quando há uma aposta para você |
+| Re-raise (3-bet) | Aumenta por cima de um aumento | Quando há um aumento para você |
+| All-in | Empurra todas as suas fichas | A qualquer momento |
 
-**Importante:** no pré-flop não dá para dar mesa, porque o big blind já é uma aposta ativa. Mesa só é possível a partir do flop.
+</div>
+
+==r:**Importante:** não dá para dar check no pré-flop==, porque o big blind já é uma aposta viva. ==O check só passa a existir do flop em diante.==
+
+Para um guia de decisão mais profundo sobre quando usar cada jogada — com uma tabela de decisão check-call-raise-fold — veja as [ações de aposta explicadas](/pt/blog/holdem-betting-actions).
 
 ---
 
-## As 10 mãos do pôquer que você precisa saber
+## As 10 mãos de poker que você precisa saber
 
-Para ganhar no showdown, você precisa saber na hora qual mão ganha de qual. Isso é o **ranking de mãos**.
+Para vencer no showdown, você precisa saber na hora qual mão ganha de qual. Esta é a ordem do **ranking de mãos**.
 
-| Ranking | Mão | Exemplo | Frequência |
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
+
+| # | Mão | Exemplo | Frequência |
 |------|------|------|------|
-| 1 | Royal Flush | A♠ K♠ Q♠ J♠ 10♠ | Raríssima |
+| 1 | Royal Flush | A♠ K♠ Q♠ J♠ 10♠ | Extremamente rara |
 | 2 | Straight Flush | 5♥ 6♥ 7♥ 8♥ 9♥ | Muito rara |
 | 3 | Quadra | A♠ A♥ A♦ A♣ K♠ | Rara |
-| 4 | Full House | K♠ K♥ K♦ A♠ A♥ | Pouco comum |
-| 5 | Flush | A♠ K♠ 8♠ 5♠ 2♠ | Pouco comum |
-| 6 | Sequência | 5♥ 6♠ 7♦ 8♣ 9♥ | Às vezes |
-| 7 | Trinca | Q♠ Q♥ Q♦ 5♠ 7♥ | Às vezes |
-| 8 | Dois Pares | J♠ J♥ 8♦ 8♣ A♠ | Frequente |
-| 9 | Par | K♠ K♥ 7♦ 4♣ 2♠ | Muito frequente |
-| 10 | Carta Alta | A♠ Q♥ 8♦ 5♣ 2♠ | Muito frequente |
+| 4 | Full House | K♠ K♥ K♦ A♠ A♥ | Incomum |
+| 5 | Flush | A♠ K♠ 8♠ 5♠ 2♠ | Incomum |
+| 6 | Sequência | 5♥ 6♠ 7♦ 8♣ 9♥ | Ocasional |
+| 7 | Trinca | Q♠ Q♥ Q♦ 5♠ 7♥ | Ocasional |
+| 8 | Dois Pares | J♠ J♥ 8♦ 8♣ A♠ | Comum |
+| 9 | Par | K♠ K♥ 7♦ 4♣ 2♠ | Muito comum |
+| 10 | Carta Alta | A♠ Q♥ 8♦ 5♣ 2♠ | Muito comum |
 
-Quer o detalhamento completo, incluindo como o kicker e os empates decidem o vencedor? Veja o guia completo de [ranking de mãos de pôquer](/pt/blog/holdem-hand-rankings).
+</div>
+
+Quer o detalhamento completo — incluindo como kickers e empates decidem o vencedor? Veja o guia completo do [ranking de mãos de poker](/pt/blog/holdem-hand-rankings).
 
 ---
 
 ## 5 erros que todo iniciante precisa evitar
 
-Dá para saber a ordem de cor e mesmo assim perder fichas com estes erros.
+Você pode decorar a ordem do jogo e ainda assim sangrar fichas se cometer estes erros.
 
-### 1. Jogar quase toda mão
+### 1. Jogar quase todas as mãos
 
-"Vamos só ver o flop" é prejuízo garantido no longo prazo. Bons jogadores jogam só 15% a 25% das mãos e desistem do resto sem pensar duas vezes. Se você paga no pré-flop com duas cartas quaisquer, está pagando para perder.
+"Vou só ver um flop" é prejuízo garantido no longo prazo. Jogadores fortes jogam só 15% a 25% das mãos e foldam o resto sem hesitar. Se você está pagando o pré-flop com quaisquer duas cartas, está pagando para perder.
 
 ### 2. Ignorar a posição
 
-Quanto mais perto do botão, melhor: agir por último deixa você ver o que os outros fazem antes de decidir. Jogue fechado em posição inicial e mais agressivo em posição final.
+Quanto mais perto do botão, melhor — agir por último deixa você ver o que todos fazem antes de decidir. Jogue fechado nas posições iniciais e com mais agressividade nas posições finais.
 
-### 3. Correr atrás de projeto sem pensar
+### 3. Perseguir draws às cegas
 
-Ter um projeto de flush ou sequência não obriga a pagar. É preciso calcular as **pot odds** — o preço do call frente ao tamanho do pote. Se o pote é de 100.000 e você tem que pagar 50.000, seu projeto precisa fechar pelo menos uns 33% das vezes para valer a pena.
+Um draw de flush ou sequência não é um call automático. Você precisa pesar as **pot odds** — o preço do call contra o tamanho do pote. Se o pote tem 100.000 e você precisa pagar 50.000, seu draw tem que completar pelo menos uns 33% das vezes para valer a pena.
 
-### 4. Blefar no river com mão fraca, do nada
+### 4. Blefar o river do nada com uma mão fraca
 
-Se você deu mesa passivamente a mão toda e de repente empurra no river, o adversário percebe na hora. Um blefe precisa de uma história coerente desde a primeira street.
+Se você deu check passivo o caminho inteiro e de repente shova o river, o adversário enxerga na hora. Um blefe precisa de uma história consistente desde a primeira street.
 
-### 5. Ler errado a sua mão no showdown
+### 5. Ler errado a própria mão no showdown
 
-Um erro clássico de iniciante: achar "tenho dois pares!" quando na verdade tem só um. Treine escolher as **melhores cinco cartas** entre suas duas cartas e as cinco da mesa até virar automático.
-
----
-
-## Como começar a jogar hoje mesmo
-
-Quando a ordem da mão fica clara, é hora de jogar de verdade.
-
-- **Treine com dinheiro fictício** — quase todo app e sala têm mesas grátis. Coloque este artigo em prática numa mão real.
-- **Releia este artigo duas ou três vezes** — a sequência precisa sair no automático para você não travar na mesa.
-- **Faça uma cola com as mãos** — escreva as dez mãos num papel e deixe à vista.
-- **Comece nos limites mais baixos** — quanto mais baratos os erros, mais rápido você aprende.
-
-O Texas Hold'em se aprende em trinta minutos e se domina numa vida inteira. Mas o básico de hoje já basta para você sentar à mesa. Se quiser a história e as regras formais, o [verbete da Wikipédia sobre Texas hold'em](https://pt.wikipedia.org/wiki/Texas_hold%27em) é uma boa referência.
+Erro clássico de iniciante: achar "tenho dois pares!" quando na verdade tem um par só. Treine escolher as **melhores cinco cartas** entre suas duas fechadas e as cinco da mesa até virar automático.
 
 ---
 
-## Perguntas frequentes (FAQ)
+## Como começar a jogar hoje
 
-**P. Qual é a ordem exata de uma mão de Texas Hold'em?**
+Quando a ordem do jogo faz clique, é hora de jogar de verdade.
 
-Blinds obrigatórios → distribuição de 2 cartas → rodada de pré-flop → flop (3 cartas) e aposta → turn (1 carta) e aposta → river (última carta) e aposta → showdown (comparam-se as melhores 5 cartas).
+- **Treine com fichas fictícias (play money)** — a maioria dos aplicativos e sites de poker tem mesas grátis. Coloque este guia em prática num fluxo real.
+- **Releia este artigo duas ou três vezes** — a sequência tem que virar segunda natureza para você nunca travar na mesa.
+- **Faça uma cola do ranking de mãos** — escreva as dez mãos num papel e deixe onde vai ver.
+- **Comece nos stakes mais baixos** — quanto mais baratos os seus erros, mais rápido você aprende.
 
-**P. Qual a diferença entre o pré-flop e o flop?**
+Texas Hold'em se aprende em trinta minutos e se domina numa vida inteira. Mas o básico que você pegou hoje já é mais que suficiente para sentar à mesa. Para a história e as regras formais, o [artigo da Wikipédia sobre Texas hold 'em](https://pt.wikipedia.org/wiki/Texas_hold_%27em) é uma boa referência.
 
-O pré-flop é antes de qualquer carta comunitária: você decide só com suas duas cartas. O flop é depois de abrir 3 cartas comunitárias, quando você lê tanto a sua mão atual quanto o que ainda pode fechar.
+---
 
-**P. Qual a diferença entre dar mesa e pagar?**
+:::readnext[Continue lendo]
+/pt/blog/texas-holdem-rules-for-beginners | Regras do Texas Hold'em para iniciantes | /images/rules-texas-holdem.webp
+/pt/blog/holdem-betting-actions | Ações de aposta explicadas | /images/holdem-betting-actions-hero.webp
+:::
 
-Dar mesa (check) é passar a vez sem apostar, e só dá quando não há aposta na sua frente. Pagar (call) é cobrir a aposta do adversário. Se há uma aposta, não dá para dar mesa: você paga, aumenta ou desiste.
+## Perguntas frequentes
 
-**P. Preciso usar minhas duas cartas no showdown?**
+**Q. Qual é a ordem exata do jogo no Texas Hold'em?**
 
-Não. Você forma a melhor mão de cinco cartas com qualquer combinação das suas duas cartas e das cinco comunitárias, podendo usar só uma ou nenhuma ("jogar a mesa").
+Postar os blinds → distribuir duas cartas fechadas → apostas do pré-flop → revelar o flop (3 cartas) e apostar → turn (1 carta) e apostar → river (última carta) e apostar → showdown (comparam-se as melhores cinco cartas).
 
-**P. O que são pot odds?**
+**Q. Qual é a diferença entre pré-flop e flop?**
 
-Pot odds são a relação entre o tamanho do pote e o valor que você precisa pagar. Se o pote é de 100.000 e o adversário aposta 20.000, você arrisca 20.000 para ganhar um pote de 120.000 (6:1). Se a sua chance de ganhar é melhor que essas odds, pagar é lucrativo.
+O pré-flop é antes de qualquer carta comunitária sair — você decide só com suas duas cartas fechadas. O flop é depois de reveladas três cartas comunitárias, quando você lê tanto a mão que já tem quanto o potencial de draw.
 
-**P. Quando se vai de all-in?**
+**Q. Qual é a diferença entre dar check e pagar (call)?**
 
-Ir all-in é apostar todas as suas fichas. Use com uma mão muito forte (os nuts) ou como blefe para o adversário desistir. Depois do all-in você não aposta mais, mas continua concorrendo à parte do pote que cobriu.
+O check passa a ação sem apostar e só é possível quando não há aposta na sua frente. O call iguala a aposta de um adversário. Se alguém apostou, não dá para dar check — você tem que pagar, aumentar ou foldar.
 
-**P. Quantas rodadas de aposta existem em uma mão?**
+**Q. Sou obrigado a usar as duas cartas da minha mão no showdown?**
 
-Quatro: pré-flop, flop, turn e river. Os blinds são apostas obrigatórias e o showdown não tem aposta.
+Não. Você forma a melhor mão de cinco cartas com qualquer combinação das suas duas cartas fechadas e das cinco comunitárias — inclusive usando só uma, ou nenhuma ("jogar com a mesa").
+
+**Q. O que são pot odds?**
+
+Pot odds são a relação entre o tamanho atual do pote e o valor que você precisa pagar. Se o pote tem 100.000 e um adversário aposta 20.000, você arrisca 20.000 para ganhar um pote de 120.000 (6 para 1). Se sua chance de vencer é melhor que essas odds, pagar é lucrativo.
+
+**Q. Quando devo ir de all-in?**
+
+All-in significa apostar todas as suas fichas. Use com uma mão muito forte (os nuts) ou como blefe para fazer os adversários foldarem. Depois do all-in você não pode mais apostar, mas continua concorrendo à parte do pote que igualou. Quando os stacks são diferentes, isso cria potes paralelos — veja as [regras do all-in e o pote paralelo](/pt/blog/holdem-all-in-rules).
+
+**Q. Quantas rodadas de apostas há em uma mão?**
+
+Quatro: pré-flop, flop, turn e river. Os blinds são apostas obrigatórias, e no showdown não há apostas.
 
 ---
 
 ## As 3 coisas para lembrar
 
-1. **A ordem:** blinds → pré-flop → flop (3) → turn (1) → river (1) → showdown, com quatro rodadas de apostas.
-2. **A leitura:** em cada street, avalie tanto o que você tem agora quanto o que pode fechar, e olhe a mesa inteira, não só a sua mão.
-3. **A disciplina:** desista da maioria das mãos no pré-flop, respeite a posição e só aposte forte quando a sua história fizer sentido.
+1. ==**A ordem:**== blinds → pré-flop → flop (3) → turn (1) → river (1) → showdown, com ==quatro rodadas de apostas==.
+2. ==**A leitura:**== em cada street, avalie o que você já tem e o que ainda pode fechar — e olhe a mesa inteira, não só a sua mão.
+3. ==g:**A disciplina:**== folde a maioria das mãos no pré-flop, respeite a posição e só aposte grande quando a sua história fizer sentido.
 
-Decore a sequência, treine em mesas grátis e você nunca mais vai travar se perguntando de quem é a vez. Está pronto para sentar e jogar.
+Decore a sequência, treine em mesas grátis e você nunca mais vai travar sem saber de quem é a vez. Já pode sentar à mesa.
+
+---
+
+## Artigos relacionados
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
+  <a href="/pt/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Guia para iniciantes</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Regras do Texas Hold'em para iniciantes</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Regras completas, fichas, ranking de mãos + PDF para imprimir</div>
+  </a>
+  <a href="/pt/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Ranking de mãos</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Ranking de mãos de poker — da melhor à pior</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">As 10 mãos com probabilidades, exemplos e problemas de mesa</div>
+  </a>
+</div>
 `.trim(),
 };

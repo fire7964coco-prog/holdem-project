@@ -6,7 +6,7 @@ export const POST: Post = {
   seoTitle: "Suas fichas nem sempre são dinheiro — Torneio ou cash game?",
   desc: "Cash game e torneio parecem o mesmo Texas Hold'em, mas valor das fichas, blinds, bankroll, variância e pressão de ICM mudam tudo. Compare antes de escolher.",
   tldr: "No cash game, as fichas representam dinheiro real e os blinds costumam ficar fixos. No torneio, as fichas são sua vida no evento, os blinds sobem e o pagamento depende da colocação final.",
-  category: "토너먼트",
+  category: "tournament",
   date: "2026-06-11",
   updated: "2026-06-11",
   hideSummaryImageSlot: true,
