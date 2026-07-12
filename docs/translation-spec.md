@@ -30,6 +30,13 @@
 - 마크다운 표, `==하이라이트==`/`==g:==`/`==r:==`, HTML `<div>`/Related 카드, 이미지 마크다운(이미지 파일은 공용 — 경로 그대로, **alt만 번역**), `:::readnext`, FAQ `**Q.**/A.` 패턴(스키마), tldr, layout 필드 — 전부 원문 구조 유지하고 **값만 번역**.
 - 이미지 alt에 든 카드 표기(A♠ 등)는 그대로.
 
+## 스테일(뒤처짐) 방지
+- EN 마스터가 갱신되면 기존 번역이 조용히 옛 버전으로 남는다(스테일). `npm run check:stale`로 감지:
+  같은 슬러그에서 EN `updated` > 번역본 `updated` 이면 "재번역/검토 필요"로 리포트(빌드 차단 아님).
+- **정밀도 관례(권장)**: 번역 저작 시 `masterUpdated: "<그 시점 EN updated 날짜>"`를 Post에 기록하면,
+  번역본 자체 수정으로 updated가 바뀌어도 마스터 대비 정확 비교가 된다(스테일 체커가 masterUpdated 우선 사용).
+  신규/재번역 시 이 필드를 EN 원문의 updated 값으로 넣을 것.
+
 ## 출력 + 보고
 - 파일: `lib/posts-<lang>/<slug>.ts` (Write). `import type { Post } from "../posts";` + `export const POST: Post = {...}`.
 - 저작 후 **현지화 노트**를 5~10줄로 보고:

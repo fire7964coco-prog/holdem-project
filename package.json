@@ -6,6 +6,7 @@
     "dev": "next dev",
     "generate:sitemap": "node scripts/generate-sitemap.mjs",
     "check:intl-links": "node scripts/check-intl-links.mjs",
+    "check:stale": "node scripts/check-translation-staleness.mjs",
     "prebuild": "npm run check:intl-links && npm run generate:sitemap",
     "build": "next build",
     "start": "next start",
