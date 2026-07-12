@@ -14,6 +14,37 @@
    → 언어별 **용어·표기 브리프**로 정리해 서브에이전트 프롬프트에 포함(문서화: `docs/translation-terms-<lang>.md` 선택).
 > 이 준비가 "기계번역 티" 방지의 핵심. ja=가타카나 관습, es=천단위 점·소수점 콤마처럼 언어마다 함정이 다르다.
 
+## 0.5 파일럿 파이프라인 (Rules 필라 언어 확장 — 검증된 전체 흐름, 9개 언어 반복)
+> ja·es·pt·de·zh·ar·id·ms·vi 파일럿에서 확립된 end-to-end 절차. 언어별로 그대로 반복한다.
+1. **웹리서치 → 브리프**: 대상 언어로 검색해 현지 포커 용어·문법·표기·문체 파악 → `docs/translation-terms-<lang>.md` 작성(§0).
+2. **번역(글당 1 서브에이전트 병렬)**: Fable5에 「현지 네이티브 번역가 + 수십 년 홀덤 전문가」 페르소나 부여. 구조 레퍼런스는 **`lib/posts-es/<slug>.ts`**(필드 순서·export 형태만; 텍스트 복사 금지). ⚠️ **다른 현지어 파일(특히 id↔ms)을 베끼지 말 것** — 언어별로 새로 저작.
+   - Rules 필라 6편 = 신규 4(betting/blind/all-in/showdown) + **재번역 2(texas·game-order)** — 기존 2편은 옛 마스터·category 한국어값이라 stale → 반드시 재번역.
+   - masterUpdated = 각 EN 마스터의 `updated` 값(texas 2026-07-12·game-order 2026-07-02·betting 2026-07-11·blind 2026-07-11·all-in 2026-07-12·showdown 2026-07-12).
+3. **조립**: 메인이 `index.ts`에 Rules 6편을 먼저 그룹핑(주석 `// Rules 필라 (6/6)`) + 기타. `category: "rules"`, `readTime` 현지 단위 통일.
+4. **기계검사**: `npm run build`(→sitemap) + `node scripts/check-intl-links.mjs`(하드페일) + `npm run check:stale`(Rules 6편 빠졌나) + **숫자표기 오염 grep**(변환 언어면 영어식 `1,326`/`2.5` 잔류 0, 영어식 언어면 반대).
+5. **적대적 QA 2배치**: 각 배치 3편, 회의적 현지 편집장 페르소나. §13 **베스트5 재검산**·숫자표기·용어 일관성·잔류(영/스페인/한국어)·링크(/lang/blog+화이트리스트)·메타(desc≤160) 전수 → 🔴(필수)/🟡(제안) 리포트.
+6. **교정**: 메인이 `.mjs`(readFileSync→split/join→writeFileSync) 스크립트로 일괄 적용 → 재빌드. 임시 스크립트 삭제.
+7. **커밋+push**(파일럿N) + 보고서(배포현황·§13·현지화 하이라이트·백로그).
+> **Fable5 한도 소진 시**: 메인(Opus)이 번역·QA를 직접 수행 가능(vi 파일럿 사례). 최소 자가검수 = §13 재검산 + 숫자표기 + 링크(빌드) + check 오역/성조/부호. hi·tr 등 잔여도 동일.
+
+## ⚑ 언어별 현지화 하이라이트 (누적 — 매 언어 반복 함정·결정)
+> ★**숫자표기가 최대 반복 함정**. 언어별로 정반대다:
+> - **영어식**(천단위 `,` · 소수점 `.` → §13 값 그대로): **en · zh · ar · ms**
+> - **유럽/인니식**(천단위 `.` · 소수점 `,` → 1,326→**1.326**, 2.5→**2,5** 변환): **es · pt · de · id · vi**
+> - ja: 전각 `％`, 숫자 관습.
+
+| 언어 | 문체 | 숫자 | 족보·용어 핵심 | 함정/메모 |
+|------|------|------|----------------|-----------|
+| ja | です/ます | 전각 ％ | 가타카나 관습 | — |
+| es | tú | 유럽식 `.`/`,` | — | `$2.000` 등 변환 |
+| pt-BR | você | 유럽식 | call→pagar·raise→aumentar·side pot→pote paralelo, gíria "shovar" | 코퍼스 poker/pôquer·street/rua 통일 백로그 |
+| de | du | 유럽식(`8 %` 공백) | Denglisch 동사(callen/raisen/folden), 족보 독일어(Drilling/Straße/Vierling), Blinds/All-in 영어 명사 | 독일식 닫는 인용부호 „…" |
+| zh | 你체 | **영어식** | 족보 중국어(顺子/葫芦/四条/踢脚牌), all-in/set 영어 혼용 | 全角 破折号 `——`, category 한국어 레거시 |
+| ar | أنت·**RTL** | **영어식**(서양숫자, ٠-٩ 금지) | 음차 우세(فلاش/ستريت/فول هاوس), 족보 아랍어 등가 | 카드=라틴 유지, `النهر`(river) 표준, **RTL CSS 미러링 완료**(globals.css `[dir=rtl]`) |
+| id | kamu | 유럽식 | 영어 차용 우세(fold/call/raise/족보), cek·bertaruh·kartu bersama | "jalan"≠street(→street), cardroom |
+| ms | anda | **영어식**(≠id!) | kad(≠kartu)·wang(≠uang)·pusingan(≠ronde)·pengedar | ★**id 복사 금지**(어휘·숫자 정반대) |
+| vi | bạn | 유럽식 | **고유 족보명**: Sảnh(straight)·Thùng(flush)·Cù Lũ(full house)·Tứ Quý(quads)·Xám(trips)·Hai Đôi | check는 "check" 유지("kiểm tra"=액션오역), 성조부호 정확, theo/tố/bỏ bài |
+
 ## 저작 방식
 - 대상 EN 원문(`lib/posts-en/<slug>.ts`)을 읽고, **같은 필드 구조**로 `lib/posts-<lang>/<slug>.ts`를 저작(`export const POST: Post = {...}`).
 - 기존 같은 언어 글 1편을 열어 **톤·용어 관습**을 참고할 것(있으면).

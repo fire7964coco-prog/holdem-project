@@ -5,7 +5,29 @@
 
 ---
 
-## ▶▶▶ 새 세션 START HERE (2026-07-12 밤 — KO 이미지 코드렌더 85개 교체·배포됨 / 다음=실사 15개 Nano Banana + GSC)
+## ▶▶▶ 새 세션 START HERE (2026-07-13 — Rules 필라 다국어 10개 언어 완결 / 다음=hi 신규세션 → tr)
+
+> **모드**: 다국어 Rules 필라 확장. **Fable5 사용량 한도 소진** → 지금부터 **Opus로 번역·QA 직접 수행**(vi에서 검증). 절차·현지화 함정은 `docs/translation-spec.md` §0.5(파이프라인) + ⚑(언어별 하이라이트)에 전부 기록됨 — **작업 전 그 파일 읽을 것**.
+
+### ✅ 오늘(07-13) 완료 — Rules 필라 5개 언어 추가 배포 (zh·ar·id·ms·vi)
+EN 마스터 기준 Rules 필라 6편(신규4+재번역 texas·game-order)을 언어별로: 웹리서치 브리프 → Fable5 페르소나 병렬번역 → 조립 → 빌드/링크(하드) → 적대적 QA 2배치 → 교정 → 배포. **§13 전수 재검산 0오류**.
+- **zh**(`bed5db2`) · **ar**(`8e71fee`, RTL) · **id**(`72d6ef2`) · **ms**(`ac820de`) · **vi**(`058325a`).
+- **부수 성과**: ar QA가 **EN 마스터 §13 산수오류** 역발견("상위 8%"→실제 4.7%=**상위 5%**) → 마스터+es/pt/zh/ja/de 동시교정(`ee9e7af`). **ar RTL 구조결함 수정**(`fc24a88`, `[dir=rtl]` 미러링, globals.css+renderMarkdown 훅클래스, LTR 무영향).
+- **vi 특이**: Fable5 한도로 game-order는 **메인(Opus) 직접 번역** + 적대적 QA도 **메인 Opus 자가검수**(§13 6편 통과, 0🔴).
+
+### ▶▶ 다음 = 🌐 hi(힌디어) — **새 세션에서** (Fable5 리셋 후) → 이후 tr(터키어)
+- **현재 Rules 필라 = 10개 언어 완결**: en(마스터)+ja·es·pt·de·zh·ar·id·vi + ms. **남은 = hi·tr 2개.**
+- **hi 착수**: `docs/translation-spec.md` §0.5 파이프라인 그대로. 데바나가리 문자 → QA에 스크립트/철자 검수 추가. 숫자표기는 인도 관습 웹리서치로 확인. 각 언어 3편만 보유(hand-rankings·game-order·tournament-vs-cash) → 신규5+game-order 재번역.
+- **hi masterUpdated 값**: texas 2026-07-12·game-order 2026-07-02·betting 2026-07-11·blind 2026-07-11·all-in 2026-07-12·showdown 2026-07-12. updated는 착수일.
+- **번역/QA 주체**: Fable5 리셋됐으면 서브에이전트, 아니면 메인 Opus 직접.
+- **백로그**: all-in 캡 공식 근사(마스터 공통)·game-order 프리플랍 체크 절대표현(마스터 공통)·category 한국어 레거시(전 언어, 비렌더)·pt 코퍼스/street 통일.
+
+### (이미지 트랙 — 후속) 실사 11개 Nano Banana + GSC
+아래 07-12 블록 참조(사용자 몫). 콘텐츠 트랙(다국어)과 별개.
+
+---
+
+## ▶▶▶ (이전) START HERE (2026-07-12 밤 — KO 이미지 코드렌더 85개 교체·배포됨 / 다음=실사 15개 Nano Banana + GSC)
 
 > **모드**: 이미지 교체작업 자동(Fable5). 코드렌더 트랙 종료 → 남은 건 **실사(사용자 Nano Banana)** + 사용자 GSC.
 
