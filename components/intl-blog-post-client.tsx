@@ -200,7 +200,7 @@ export default function IntlBlogPostClient({
               <details className="xl:hidden group bg-card border border-border rounded-2xl mb-6" open>
                 <summary className="flex items-center justify-between gap-3 px-6 py-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden rounded-2xl hover:bg-card/70 transition-colors">
                   <span className="flex items-center gap-2.5 text-xs font-bold uppercase tracking-widest text-primary">
-                    <Map className="w-4 h-4" aria-hidden="true" /> Cluster Map
+                    <Map className="w-4 h-4" aria-hidden="true" /> Learning Map
                   </span>
                   <ChevronDown className="w-5 h-5 text-primary transition-transform duration-200 group-open:rotate-180" aria-hidden="true" />
                 </summary>
