@@ -13,19 +13,19 @@
 
 ## A. 제주 APT 여행/베뉴 (8)
 
-### apt-jeju-2026-fall-guide-hero.webp  (히어로)
+### ✅ apt-jeju-2026-fall-guide-hero.webp  (히어로) — 완료 2026-07-12 (Nano Banana)
 Two-panel 1200×675: top aerial photo of Jeju Shinhwa World resort + sea; bottom bustling tournament floor (many tables, players, dealers, clock screen). All signage generic/blank (plain red/black banners, no letters). Realistic, warm light, no warped faces/legible lettering. 우하단 골드 "HoldemMaster" 워터마크.
 
-### apt-jeju-classic-2026-guide-hero.webp  (히어로)
+### ✅ apt-jeju-classic-2026-guide-hero.webp  (히어로) — 완료 2026-07-12 (Nano Banana)
 Luxury tournament hero: dark navy felt gold "APT" logo, gold spade trophy, chips, Jeju seaside + Hallasan at dusk bg. Exactly five cards spade royal 10♠ J♠ Q♠ K♠ A♠ each once, clean indices. No extra/duplicate cards, no text other than "APT". 우하단 골드 "HoldemMaster" 워터마크.
 
 ### apt-jeju-classic-2026-hero.webp
 Realistic wide packed tournament ballroom: dozens of green-felt tables, players, chandeliers/stage beams, background screens as soft bokeh glows. Every felt plain green no logo text, signage blank/blurred. Documentary style. No melted faces/lettering.
 
-### apt-jeju-cu-store.webp
+### ✅ apt-jeju-cu-store.webp — 완료 2026-07-12 (사용자 직접촬영 GS25)
 Realistic Korean convenience store entrance: glass doors, bright shelves, purple-green fascia; sign unreadable-at-angle or replaced by shapes (no letters). Daylight travel-blog. No invented brand words/misspelled logos.
 
-### apt-jeju-foodcourt.webp
+### ✅ apt-jeju-foodcourt.webp — 완료 2026-07-12 (Nano Banana)
 Realistic bright Korean food court: wood slat ceiling, communal tables, food stalls with dish photos, diners. All signboards plain panels or food photos only (no letters, or distant/blurred). Warm light. No misspelled food names/pseudo-Korean.
 
 ### apt-jeju-main-event-winner.webp
@@ -75,5 +75,6 @@ Photoreal hands cutting a precise chip raise, green felt, 3 neat gold/black chip
 
 ---
 
-> 총 15개. 배치 완료되면 `docs/image-audit/defects.md`의 해당 DEFECT 줄에 ✅ 표시하고 WORKLOG 갱신 요망.
+> 총 15개 중 **4개 완료(2026-07-12)**: apt-jeju-foodcourt · apt-jeju-classic-2026-guide-hero · apt-jeju-2026-fall-guide-hero · apt-jeju-cu-store. **남은 11개**: apt-jeju-classic-2026-hero · apt-jeju-main-event-winner · apt-jeju-nau-cafe · apt-jeju-satellite-strategy · pub-legal-card-table · pub-legal-casino-floor · beginner-mistakes-korea-pub · bubble-faq/summary/table · wsop-2026-tournament-guide-hero · 3bet-sizing.
+> 배치 완료되면 `docs/image-audit/defects.md`의 해당 DEFECT 줄에 ✅ 표시하고 WORKLOG 갱신 요망.
 > (apt-incheon-2026-guide-hero는 2026-07-12 커밋 0c31d96에서 이미 Nano Banana로 교체 완료 — 목록 제외.)
