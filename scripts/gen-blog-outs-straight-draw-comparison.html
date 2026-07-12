@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden; padding:44px;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  display:flex; flex-direction:column; align-items:center;
+}
+.kicker { color:#C9A227; font-size:15px; font-weight:700; letter-spacing:.28em; text-align:center; margin-bottom:8px; }
+h1 { color:#F2EEE3; font-size:42px; font-weight:800; text-align:center; text-shadow:0 2px 12px rgba(0,0,0,.45); margin-bottom:34px; }
+h1 .gold { color:#C9A227; }
+.wordmark { position:absolute; right:44px; bottom:26px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.04em; opacity:.9; }
+
+.compare { display:flex; align-items:stretch; justify-content:center; width:100%; }
+.side { flex:1; display:flex; flex-direction:column; align-items:center; }
+.divider { width:3px; background:linear-gradient(180deg, rgba(201,162,39,0) 0%, #C9A227 20%, #C9A227 80%, rgba(201,162,39,0) 100%); margin:0 30px; border-radius:2px; }
+
+.side-title { color:#F2EEE3; font-size:27px; font-weight:800; margin-bottom:26px; }
+.side-title .gold { color:#C9A227; }
+
+.fan { display:flex; align-items:flex-end; padding:0 6px 8px; }
+.fan .card { margin-left:-18px; transform-origin:50% 118%; }
+.fan .card:nth-child(1) { margin-left:0; transform:rotate(-12deg); }
+.fan .card:nth-child(2) { transform:rotate(-4deg); }
+.fan .card:nth-child(3) { transform:rotate(4deg); }
+.fan .card:nth-child(4) { transform:rotate(12deg); }
+
+.outs { display:flex; align-items:center; gap:12px; margin-top:26px; }
+.arrow { color:#C9A227; font-size:30px; font-weight:900; line-height:1; }
+.outs-badge { background:#C9A227; color:#0B1F17; font-size:23px; font-weight:900; border-radius:999px; padding:9px 26px; letter-spacing:.02em; }
+.caption { margin-top:14px; color:#F2EEE3; opacity:.85; font-size:18px; font-weight:600; }
+
+/* 카드 (§13 안전: 코너 랭크 + 단일 수트 글리프) */
+.card { position:relative; width:96px; height:138px; background:linear-gradient(175deg,#FDFBF4 0%,#F2EEE3 100%); border-radius:10px; box-shadow:0 6px 14px rgba(0,0,0,.45),0 1px 3px rgba(0,0,0,.3); }
+.card .corner { position:absolute; top:7px; left:9px; font-size:25px; font-weight:800; line-height:1; text-align:center; }
+.card .corner .csuit { display:block; font-size:17px; line-height:1; margin-top:1px; }
+.card .big { position:absolute; top:50%; left:50%; transform:translate(-42%,-44%); font-size:60px; line-height:1; }
+.black { color:#1a1a1a; } .red { color:#c0392b; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="kicker">스트레이트 드로우 비교</div>
+  <h1>OESD vs <span class="gold">Gutshot</span></h1>
+
+  <div class="compare">
+    <div class="side">
+      <div class="side-title">OESD <span class="gold">— 8 outs</span></div>
+      <div class="fan">
+        <div class="card"><div class="corner black">5<span class="csuit">&#9827;</span></div><div class="big black">&#9827;</div></div>
+        <div class="card"><div class="corner red">6<span class="csuit">&#9830;</span></div><div class="big red">&#9830;</div></div>
+        <div class="card"><div class="corner red">7<span class="csuit">&#9829;</span></div><div class="big red">&#9829;</div></div>
+        <div class="card"><div class="corner black">8<span class="csuit">&#9824;</span></div><div class="big black">&#9824;</div></div>
+      </div>
+      <div class="outs"><span class="arrow">&#8594;</span><span class="outs-badge">8 outs</span></div>
+      <div class="caption">4 또는 9가 오면 완성</div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="side">
+      <div class="side-title">Gutshot <span class="gold">— 4 outs</span></div>
+      <div class="fan">
+        <div class="card"><div class="corner black">5<span class="csuit">&#9824;</span></div><div class="big black">&#9824;</div></div>
+        <div class="card"><div class="corner red">6<span class="csuit">&#9829;</span></div><div class="big red">&#9829;</div></div>
+        <div class="card"><div class="corner red">8<span class="csuit">&#9830;</span></div><div class="big red">&#9830;</div></div>
+        <div class="card"><div class="corner black">9<span class="csuit">&#9827;</span></div><div class="big black">&#9827;</div></div>
+      </div>
+      <div class="outs"><span class="arrow">&#8594;</span><span class="outs-badge">4 outs</span></div>
+      <div class="caption">7만 오면 완성</div>
+    </div>
+  </div>
+
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

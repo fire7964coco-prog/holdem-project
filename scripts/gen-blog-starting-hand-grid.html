@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden; padding:30px 44px 34px;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  display:flex; flex-direction:column; align-items:center;
+}
+h1 { color:#C9A227; font-size:38px; font-weight:800; text-align:center; text-shadow:0 2px 12px rgba(0,0,0,.45); margin-bottom:16px; }
+.wordmark { position:absolute; right:44px; bottom:20px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.04em; opacity:.9; }
+
+.chart-wrap { display:flex; align-items:center; gap:44px; }
+
+.grid { display:grid; grid-template-columns:repeat(14, 37px); grid-auto-rows:37px; gap:2px; }
+.ax { display:flex; align-items:center; justify-content:center; color:#C9A227; font-size:16px; font-weight:800; }
+.c { display:flex; align-items:center; justify-content:center; font-size:12.5px; font-weight:700; border-radius:4px; letter-spacing:.01em; }
+.r { background:#B03A2E; color:#FDFBF4; }
+.y { background:#D4AC2B; color:#0B1F17; }
+.g { background:#37423A; color:#A9B5A6; }
+
+.legend { display:flex; flex-direction:column; gap:18px; background:rgba(0,0,0,.28); border:2px solid rgba(201,162,39,.55); border-radius:16px; padding:26px 28px; }
+.li { display:flex; align-items:center; gap:14px; }
+.sw { width:30px; height:30px; border-radius:6px; flex:none; }
+.sw.r { background:#B03A2E; } .sw.y { background:#D4AC2B; } .sw.g { background:#37423A; }
+.lt { color:#F2EEE3; font-size:20px; font-weight:700; white-space:nowrap; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <h1>스타팅 핸드 차트</h1>
+
+  <div class="chart-wrap">
+    <div class="grid">
+      <div class="ax"></div><div class="ax">A</div><div class="ax">K</div><div class="ax">Q</div><div class="ax">J</div><div class="ax">T</div><div class="ax">9</div><div class="ax">8</div><div class="ax">7</div><div class="ax">6</div><div class="ax">5</div><div class="ax">4</div><div class="ax">3</div><div class="ax">2</div>
+      <div class="ax">A</div><div class="c r">AA</div><div class="c r">AKs</div><div class="c r">AQs</div><div class="c r">AJs</div><div class="c y">ATs</div><div class="c y">A9s</div><div class="c y">A8s</div><div class="c y">A7s</div><div class="c y">A6s</div><div class="c y">A5s</div><div class="c y">A4s</div><div class="c y">A3s</div><div class="c y">A2s</div>
+      <div class="ax">K</div><div class="c r">AKo</div><div class="c r">KK</div><div class="c r">KQs</div><div class="c y">KJs</div><div class="c y">KTs</div><div class="c g">K9s</div><div class="c g">K8s</div><div class="c g">K7s</div><div class="c g">K6s</div><div class="c g">K5s</div><div class="c g">K4s</div><div class="c g">K3s</div><div class="c g">K2s</div>
+      <div class="ax">Q</div><div class="c r">AQo</div><div class="c y">KQo</div><div class="c r">QQ</div><div class="c y">QJs</div><div class="c y">QTs</div><div class="c g">Q9s</div><div class="c g">Q8s</div><div class="c g">Q7s</div><div class="c g">Q6s</div><div class="c g">Q5s</div><div class="c g">Q4s</div><div class="c g">Q3s</div><div class="c g">Q2s</div>
+      <div class="ax">J</div><div class="c y">AJo</div><div class="c g">KJo</div><div class="c g">QJo</div><div class="c r">JJ</div><div class="c y">JTs</div><div class="c g">J9s</div><div class="c g">J8s</div><div class="c g">J7s</div><div class="c g">J6s</div><div class="c g">J5s</div><div class="c g">J4s</div><div class="c g">J3s</div><div class="c g">J2s</div>
+      <div class="ax">T</div><div class="c g">ATo</div><div class="c g">KTo</div><div class="c g">QTo</div><div class="c g">JTo</div><div class="c r">TT</div><div class="c y">T9s</div><div class="c g">T8s</div><div class="c g">T7s</div><div class="c g">T6s</div><div class="c g">T5s</div><div class="c g">T4s</div><div class="c g">T3s</div><div class="c g">T2s</div>
+      <div class="ax">9</div><div class="c g">A9o</div><div class="c g">K9o</div><div class="c g">Q9o</div><div class="c g">J9o</div><div class="c g">T9o</div><div class="c r">99</div><div class="c y">98s</div><div class="c g">97s</div><div class="c g">96s</div><div class="c g">95s</div><div class="c g">94s</div><div class="c g">93s</div><div class="c g">92s</div>
+      <div class="ax">8</div><div class="c g">A8o</div><div class="c g">K8o</div><div class="c g">Q8o</div><div class="c g">J8o</div><div class="c g">T8o</div><div class="c g">98o</div><div class="c y">88</div><div class="c y">87s</div><div class="c g">86s</div><div class="c g">85s</div><div class="c g">84s</div><div class="c g">83s</div><div class="c g">82s</div>
+      <div class="ax">7</div><div class="c g">A7o</div><div class="c g">K7o</div><div class="c g">Q7o</div><div class="c g">J7o</div><div class="c g">T7o</div><div class="c g">97o</div><div class="c g">87o</div><div class="c y">77</div><div class="c y">76s</div><div class="c g">75s</div><div class="c g">74s</div><div class="c g">73s</div><div class="c g">72s</div>
+      <div class="ax">6</div><div class="c g">A6o</div><div class="c g">K6o</div><div class="c g">Q6o</div><div class="c g">J6o</div><div class="c g">T6o</div><div class="c g">96o</div><div class="c g">86o</div><div class="c g">76o</div><div class="c y">66</div><div class="c y">65s</div><div class="c g">64s</div><div class="c g">63s</div><div class="c g">62s</div>
+      <div class="ax">5</div><div class="c g">A5o</div><div class="c g">K5o</div><div class="c g">Q5o</div><div class="c g">J5o</div><div class="c g">T5o</div><div class="c g">95o</div><div class="c g">85o</div><div class="c g">75o</div><div class="c g">65o</div><div class="c y">55</div><div class="c g">54s</div><div class="c g">53s</div><div class="c g">52s</div>
+      <div class="ax">4</div><div class="c g">A4o</div><div class="c g">K4o</div><div class="c g">Q4o</div><div class="c g">J4o</div><div class="c g">T4o</div><div class="c g">94o</div><div class="c g">84o</div><div class="c g">74o</div><div class="c g">64o</div><div class="c g">54o</div><div class="c y">44</div><div class="c g">43s</div><div class="c g">42s</div>
+      <div class="ax">3</div><div class="c g">A3o</div><div class="c g">K3o</div><div class="c g">Q3o</div><div class="c g">J3o</div><div class="c g">T3o</div><div class="c g">93o</div><div class="c g">83o</div><div class="c g">73o</div><div class="c g">63o</div><div class="c g">53o</div><div class="c g">43o</div><div class="c y">33</div><div class="c g">32s</div>
+      <div class="ax">2</div><div class="c g">A2o</div><div class="c g">K2o</div><div class="c g">Q2o</div><div class="c g">J2o</div><div class="c g">T2o</div><div class="c g">92o</div><div class="c g">82o</div><div class="c g">72o</div><div class="c g">62o</div><div class="c g">52o</div><div class="c g">42o</div><div class="c g">32o</div><div class="c y">22</div>
+    </div>
+
+    <div class="legend">
+      <div class="li"><div class="sw r"></div><div class="lt">레이즈</div></div>
+      <div class="li"><div class="sw y"></div><div class="lt">상황에 따라</div></div>
+      <div class="li"><div class="sw g"></div><div class="lt">폴드</div></div>
+    </div>
+  </div>
+
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

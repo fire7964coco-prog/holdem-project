@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden; padding:44px 44px 40px;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  display:flex; flex-direction:column; align-items:center;
+}
+h1 { color:#F2EEE3; font-size:40px; font-weight:800; text-align:center; text-shadow:0 2px 12px rgba(0,0,0,.45); margin-bottom:20px; }
+h1 .gold { color:#C9A227; }
+.wordmark { position:absolute; right:44px; bottom:40px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.04em; opacity:.9; }
+
+.list { width:900px; display:flex; flex-direction:column; gap:12px; }
+.rowi { display:flex; align-items:center; gap:20px; background:rgba(0,0,0,.28); border:2px solid rgba(201,162,39,.42); border-radius:14px; padding:12px 26px; }
+.num { flex:none; width:44px; height:44px; border-radius:50%; background:#C9A227; color:#0B1F17; font-weight:900; font-size:24px; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 10px rgba(0,0,0,.4); }
+.t { color:#F2EEE3; font-size:24px; font-weight:800; white-space:nowrap; }
+.s { color:rgba(242,238,227,.62); font-size:17px; font-weight:600; margin-left:auto; white-space:nowrap; }
+</style></head>
+<body>
+<div class="stage">
+  <h1>포지션 실수 <span class="gold">TOP 5</span></h1>
+  <div class="list">
+    <div class="rowi"><div class="num">1</div><div class="t">동일 레인지 적용</div><div class="s">모든 자리에서 같은 핸드로 참전</div></div>
+    <div class="rowi"><div class="num">2</div><div class="t">SB 콜 남용</div><div class="s">가장 불리한 자리에서 헐값 콜</div></div>
+    <div class="rowi"><div class="num">3</div><div class="t">IP 블러핑 포기</div><div class="s">유리한 자리의 무기를 방치</div></div>
+    <div class="rowi"><div class="num">4</div><div class="t">OOP 무리한 베팅</div><div class="s">불리한 자리에서 팟만 키운다</div></div>
+    <div class="rowi"><div class="num">5</div><div class="t">BTN 타이트 플레이</div><div class="s">최고의 자리를 낭비한다</div></div>
+  </div>
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body></html>

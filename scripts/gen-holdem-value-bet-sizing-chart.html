@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden; padding:44px;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  display:flex; flex-direction:column; align-items:center;
+}
+.kicker { color:#C9A227; font-size:15px; font-weight:700; letter-spacing:.28em; text-transform:uppercase; text-align:center; margin-bottom:8px; }
+h1 { color:#F2EEE3; font-size:42px; font-weight:800; text-align:center; text-shadow:0 2px 12px rgba(0,0,0,.45); }
+h1 .gold { color:#C9A227; }
+.wordmark { position:absolute; right:44px; bottom:44px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.04em; opacity:.9; }
+
+.chart { width:1000px; margin-top:44px; }
+.crow { display:flex; align-items:center; margin-bottom:38px; }
+.street { flex:0 0 140px; color:#C9A227; font-size:26px; font-weight:900; letter-spacing:.1em; }
+.track { position:relative; flex:1; height:52px; background:rgba(0,0,0,.35); border:1px solid rgba(201,162,39,.35); border-radius:26px; }
+.tick { position:absolute; top:0; bottom:0; width:1px; background:rgba(242,238,227,.14); }
+.seg { position:absolute; top:6px; bottom:6px; border-radius:20px; background:linear-gradient(180deg,#d8b23c,#b8912a); box-shadow:0 3px 10px rgba(0,0,0,.4); display:flex; align-items:center; justify-content:center; }
+.seg span { color:#0B1F17; font-size:19px; font-weight:900; letter-spacing:.02em; white-space:nowrap; }
+
+.axis { display:flex; margin-top:2px; }
+.axis .pad { flex:0 0 140px; }
+.axis .scale { position:relative; flex:1; height:24px; }
+.axis .scale b { position:absolute; transform:translateX(-50%); color:rgba(242,238,227,.65); font-size:15px; font-weight:700; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="kicker">Sizing Guide</div>
+  <h1>VALUE BET SIZING <span class="gold">&mdash; % OF POT</span></h1>
+  <div class="chart">
+    <div class="crow">
+      <div class="street">FLOP</div>
+      <div class="track">
+        <div class="tick" style="left:25%"></div><div class="tick" style="left:50%"></div><div class="tick" style="left:75%"></div>
+        <div class="seg" style="left:50%; width:20%"><span>50&ndash;70%</span></div>
+      </div>
+    </div>
+    <div class="crow">
+      <div class="street">TURN</div>
+      <div class="track">
+        <div class="tick" style="left:25%"></div><div class="tick" style="left:50%"></div><div class="tick" style="left:75%"></div>
+        <div class="seg" style="left:60%; width:15%"><span>60&ndash;75%</span></div>
+      </div>
+    </div>
+    <div class="crow">
+      <div class="street">RIVER</div>
+      <div class="track">
+        <div class="tick" style="left:25%"></div><div class="tick" style="left:50%"></div><div class="tick" style="left:75%"></div>
+        <div class="seg" style="left:50%; width:50%"><span>50&ndash;100%</span></div>
+      </div>
+    </div>
+    <div class="axis">
+      <div class="pad"></div>
+      <div class="scale">
+        <b style="left:0%">0%</b><b style="left:25%">25%</b><b style="left:50%">50%</b><b style="left:75%">75%</b><b style="left:100%">100%</b>
+      </div>
+    </div>
+  </div>
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

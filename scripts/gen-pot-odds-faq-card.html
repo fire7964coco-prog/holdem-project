@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#F5F0E4; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden; padding:34px 48px 30px;
+  background:
+    radial-gradient(ellipse 900px 460px at 50% -12%, rgba(201,162,39,.14), rgba(201,162,39,0) 60%),
+    #F5F0E4;
+  color:#26311f;
+  font-family:"Segoe UI","Malgun Gothic","Apple SD Gothic Neo",-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
+  display:flex; flex-direction:column;
+}
+.kicker { color:#A8841C; font-size:13px; font-weight:800; letter-spacing:.3em; text-align:center; }
+h1 { color:#1F3D2B; font-size:38px; font-weight:800; text-align:center; margin:2px 0 8px; }
+h1 .gold { color:#A8841C; }
+.rule { width:130px; height:4px; background:#C9A227; border-radius:2px; margin:0 auto 18px; }
+.grid { display:grid; grid-template-columns:1fr 1fr; grid-template-rows:1fr 1fr 1fr; gap:14px 20px; flex:1; }
+.qa {
+  background:#FBF8EF; border:2px solid rgba(201,162,39,.6); border-radius:12px;
+  padding:12px 16px; box-shadow:0 3px 10px rgba(31,61,43,.07);
+  display:flex; gap:12px; align-items:flex-start;
+}
+.qbadge {
+  flex:0 0 auto; width:40px; height:40px; border-radius:50%; background:#C9A227; color:#1F3D2B;
+  font-size:17px; font-weight:900; display:flex; align-items:center; justify-content:center;
+  box-shadow:0 2px 6px rgba(31,61,43,.2); margin-top:2px;
+}
+.qa .txt { flex:1; }
+.qa h2 { color:#1F3D2B; font-size:17.5px; font-weight:800; margin-bottom:4px; line-height:1.3; }
+.qa p { font-size:15.5px; line-height:1.45; color:#37452f; }
+.qa p b { color:#A8841C; }
+.wordmark { position:absolute; right:44px; bottom:10px; color:#A8841C; font-size:15px; font-weight:800; letter-spacing:.04em; opacity:.95; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="kicker">FAQ</div>
+  <h1>팟오즈 <span class="gold">&amp;</span> 임플라이드 오즈</h1>
+  <div class="rule"></div>
+
+  <div class="grid">
+    <div class="qa">
+      <div class="qbadge">Q1</div>
+      <div class="txt">
+        <h2>팟오즈와 임플라이드 오즈, 뭐가 다른가?</h2>
+        <p>팟오즈는 <b>지금 팟</b> 기준, 임플라이드는 <b>앞으로 딸 수 있는 칩</b>까지 포함한 기대치.</p>
+      </div>
+    </div>
+    <div class="qa">
+      <div class="qbadge">Q2</div>
+      <div class="txt">
+        <h2>빠른 계산법이 있나?</h2>
+        <p>상대가 1/2 팟 벳 &rarr; <b>25%</b>, 팟 벳 &rarr; <b>33%</b>. 콜 &divide; (팟+콜) 공식과 같은 값.</p>
+      </div>
+    </div>
+    <div class="qa">
+      <div class="qbadge">Q3</div>
+      <div class="txt">
+        <h2>올인 상황에서는?</h2>
+        <p>플랍 올인은 아웃츠 <b>&times;4</b>, 턴 올인은 <b>&times;2</b>로 승률을 어림해 팟오즈와 비교.</p>
+      </div>
+    </div>
+    <div class="qa">
+      <div class="qbadge">Q4</div>
+      <div class="txt">
+        <h2>팟오즈가 불리해도 콜이 되는 경우?</h2>
+        <p>맞으면 상대 스택까지 딸 수 있는 <b>임플라이드 오즈</b>가 충분히 클 때만 가능.</p>
+      </div>
+    </div>
+    <div class="qa">
+      <div class="qbadge">Q5</div>
+      <div class="txt">
+        <h2>세트 마이닝은 왜 임플라이드 영역인가?</h2>
+        <p>포켓페어가 플랍에서 세트 될 확률은 약 <b>11.8%</b> &mdash; 팟오즈만으론 거의 항상 부족.</p>
+      </div>
+    </div>
+    <div class="qa">
+      <div class="qbadge">Q6</div>
+      <div class="txt">
+        <h2>팟오즈를 무시하면 어떻게 되나?</h2>
+        <p>한 판은 몰라도 <b>-EV 콜이 누적</b>되어 장기적으로 반드시 손실로 돌아온다.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

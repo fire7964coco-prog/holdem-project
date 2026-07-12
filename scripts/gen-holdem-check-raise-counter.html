@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden; padding:44px;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  display:flex; flex-direction:column; align-items:center;
+}
+.kicker { color:#C9A227; font-size:15px; font-weight:700; letter-spacing:.28em; text-transform:uppercase; text-align:center; margin-bottom:8px; }
+h1 { color:#F2EEE3; font-size:40px; font-weight:800; text-align:center; text-shadow:0 2px 12px rgba(0,0,0,.45); margin-bottom:28px; }
+h1 .gold { color:#C9A227; }
+.steps { display:flex; align-items:center; gap:14px; margin-bottom:34px; }
+.step {
+  width:320px; height:190px;
+  background:rgba(0,0,0,.28); border:2px solid rgba(201,162,39,.55); border-radius:16px;
+  display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px;
+  padding:16px;
+}
+.badge {
+  background:#C9A227; color:#0B1F17; font-weight:900; font-size:19px; letter-spacing:.1em;
+  padding:5px 18px; border-radius:20px; box-shadow:0 3px 8px rgba(0,0,0,.4);
+}
+.main { color:#F2EEE3; font-size:29px; font-weight:800; text-align:center; }
+.sub { color:#C9A227; font-size:19px; font-weight:700; text-align:center; }
+.arrow { color:#C9A227; font-size:40px; font-weight:900; }
+.fanrow { display:flex; align-items:center; gap:26px; }
+.fanlabel { color:#C9A227; font-size:22px; font-weight:800; }
+.fan { position:relative; width:230px; height:130px; }
+.card { position:absolute; width:82px; height:118px; background:linear-gradient(175deg,#FDFBF4 0%,#F2EEE3 100%); border-radius:9px; box-shadow:0 6px 14px rgba(0,0,0,.45),0 1px 3px rgba(0,0,0,.3); }
+.card .corner { position:absolute; top:6px; left:8px; font-size:22px; font-weight:800; line-height:1; text-align:center; }
+.card .corner .csuit { display:block; font-size:15px; line-height:1; margin-top:1px; }
+.card .big { position:absolute; top:50%; left:50%; transform:translate(-42%,-44%); font-size:50px; line-height:1; }
+.black { color:#1a1a1a; } .red { color:#c0392b; }
+.f1 { left:18px; top:10px; transform:rotate(-12deg); }
+.f2 { left:76px; top:2px; }
+.f3 { left:134px; top:10px; transform:rotate(12deg); }
+.wordmark { position:absolute; right:44px; bottom:44px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.04em; opacity:.9; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="kicker">Check-Raise Defense</div>
+  <h1>체크레이즈 당했을 때 <span class="gold">&#8212; 대응 3단계</span></h1>
+  <div class="steps">
+    <div class="step">
+      <div class="badge">STEP 1</div>
+      <div class="main">상대 범위 축소</div>
+      <div class="sub">체크레이즈 = 강한 범위</div>
+    </div>
+    <div class="arrow">&#8594;</div>
+    <div class="step">
+      <div class="badge">STEP 2</div>
+      <div class="main">내 핸드 위치 확인</div>
+      <div class="sub">밸류? 드로? 블러프캐처?</div>
+    </div>
+    <div class="arrow">&#8594;</div>
+    <div class="step">
+      <div class="badge">STEP 3</div>
+      <div class="main">콜 / 폴드 결정</div>
+      <div class="sub">팟오즈 기준</div>
+    </div>
+  </div>
+  <div class="fanrow">
+    <div class="fanlabel">상대 밸류 예시 &#8212; 세트</div>
+    <div class="fan">
+      <div class="card f1"><div class="corner black">8<span class="csuit">&#9824;</span></div><div class="big black">&#9824;</div></div>
+      <div class="card f2"><div class="corner red">8<span class="csuit">&#9829;</span></div><div class="big red">&#9829;</div></div>
+      <div class="card f3"><div class="corner red">8<span class="csuit">&#9830;</span></div><div class="big red">&#9830;</div></div>
+    </div>
+  </div>
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

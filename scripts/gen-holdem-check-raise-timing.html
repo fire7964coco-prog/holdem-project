@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden; padding:44px;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  display:flex; flex-direction:column; align-items:center;
+}
+.kicker { color:#C9A227; font-size:15px; font-weight:700; letter-spacing:.28em; text-transform:uppercase; text-align:center; margin-bottom:8px; }
+h1 { color:#F2EEE3; font-size:42px; font-weight:800; text-align:center; text-shadow:0 2px 12px rgba(0,0,0,.45); margin-bottom:28px; }
+h1 .gold { color:#C9A227; }
+.panels { display:flex; gap:26px; }
+.panel {
+  width:346px; height:400px;
+  background:rgba(0,0,0,.28); border:2px solid rgba(201,162,39,.55); border-radius:16px;
+  display:flex; flex-direction:column; align-items:center; padding:24px 18px 22px;
+}
+.badge {
+  background:#C9A227; color:#0B1F17; font-weight:900; font-size:20px; letter-spacing:.06em;
+  padding:5px 20px; border-radius:20px; box-shadow:0 3px 8px rgba(0,0,0,.4); margin-bottom:16px;
+}
+.main { color:#F2EEE3; font-size:29px; font-weight:800; text-align:center; margin-bottom:6px; }
+.icon { flex:1; display:flex; align-items:center; justify-content:center; width:100%; }
+/* 조건1: 예시 플랍 */
+.flop { position:relative; width:270px; height:130px; }
+.card { position:absolute; width:82px; height:118px; background:linear-gradient(175deg,#FDFBF4 0%,#F2EEE3 100%); border-radius:9px; box-shadow:0 6px 14px rgba(0,0,0,.45),0 1px 3px rgba(0,0,0,.3); }
+.card .corner { position:absolute; top:6px; left:8px; font-size:22px; font-weight:800; line-height:1; text-align:center; }
+.card .corner .csuit { display:block; font-size:15px; line-height:1; margin-top:1px; }
+.card .big { position:absolute; top:50%; left:50%; transform:translate(-42%,-44%); font-size:50px; line-height:1; }
+.black { color:#1a1a1a; } .red { color:#c0392b; }
+.k1 { left:0; top:8px; } .k2 { left:94px; top:8px; } .k3 { left:188px; top:8px; }
+.cap { color:#C9A227; font-size:19px; font-weight:700; text-align:center; }
+/* 조건2: C벳 빈도 게이지 */
+.gauge { width:250px; }
+.gpct { color:#C9A227; font-size:50px; font-weight:900; text-align:center; margin-bottom:12px; }
+.gbar { width:100%; height:26px; border-radius:13px; background:rgba(242,238,227,.16); border:2px solid rgba(201,162,39,.55); overflow:hidden; }
+.gfill { width:78%; height:100%; background:linear-gradient(90deg,#96781e,#C9A227,#e6c456); }
+/* 조건3: 칩 + 배수 */
+.raise { display:flex; flex-direction:column; align-items:center; }
+.mult { color:#C9A227; font-size:54px; font-weight:900; margin-bottom:14px; }
+.stack { display:flex; flex-direction:column-reverse; align-items:center; }
+.chip {
+  width:78px; height:16px; border-radius:8px; margin-top:-5px;
+  background:linear-gradient(180deg,#e0bb4a,#96781e); border:2px solid #F2EEE3;
+  box-shadow:0 2px 4px rgba(0,0,0,.4);
+}
+.chip.dark { background:linear-gradient(180deg,#3d5c48,#1d3527); }
+.wordmark { position:absolute; right:44px; bottom:44px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.04em; opacity:.9; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="kicker">Check-Raise Timing</div>
+  <h1>체크레이즈 타이밍 <span class="gold">&#8212; 3가지 조건</span></h1>
+  <div class="panels">
+    <div class="panel">
+      <div class="badge">조건 1</div>
+      <div class="main">보드가 내게 유리</div>
+      <div class="icon">
+        <div class="flop">
+          <div class="card k1"><div class="corner red">9<span class="csuit">&#9829;</span></div><div class="big red">&#9829;</div></div>
+          <div class="card k2"><div class="corner black">8<span class="csuit">&#9824;</span></div><div class="big black">&#9824;</div></div>
+          <div class="card k3"><div class="corner red">5<span class="csuit">&#9830;</span></div><div class="big red">&#9830;</div></div>
+        </div>
+      </div>
+      <div class="cap">예시 플랍</div>
+    </div>
+    <div class="panel">
+      <div class="badge">조건 2</div>
+      <div class="main">상대 C벳 잦음</div>
+      <div class="icon">
+        <div class="gauge">
+          <div class="gpct">C벳 &#8593;</div>
+          <div class="gbar"><div class="gfill"></div></div>
+        </div>
+      </div>
+      <div class="cap">C벳 빈도 높은 상대</div>
+    </div>
+    <div class="panel">
+      <div class="badge">조건 3</div>
+      <div class="main">레이즈 사이즈</div>
+      <div class="icon">
+        <div class="raise">
+          <div class="mult">2.5~3.5x</div>
+          <div class="stack">
+            <div class="chip"></div><div class="chip dark"></div><div class="chip"></div>
+            <div class="chip dark"></div><div class="chip"></div><div class="chip dark"></div>
+          </div>
+        </div>
+      </div>
+      <div class="cap">상대 벳 기준</div>
+    </div>
+  </div>
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#F5F0E4; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden; padding:40px 44px;
+  background:linear-gradient(165deg,#F7F2E7 0%,#F0EAD9 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Malgun Gothic","Apple SD Gothic Neo",Roboto,sans-serif;
+  display:flex; flex-direction:column; align-items:center;
+}
+.kicker { color:#2E7D46; font-size:15px; font-weight:800; letter-spacing:.24em; text-align:center; margin-bottom:6px; }
+h1 { color:#26311f; font-size:40px; font-weight:800; text-align:center; }
+h1 .gold { color:#A5821C; }
+.wordmark { position:absolute; right:44px; bottom:20px; color:#A5821C; font-size:15px; font-weight:800; letter-spacing:.04em; }
+
+.grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; width:1112px; margin-top:20px; }
+.quad { position:relative; height:242px; background:#FDFBF4; border:2px solid rgba(165,130,28,.55); border-radius:16px; box-shadow:0 4px 12px rgba(60,50,20,.12); padding:18px 22px; display:flex; flex-direction:column; }
+.qhead { display:flex; align-items:center; gap:12px; margin-bottom:10px; }
+.badge { width:38px; height:38px; border-radius:50%; background:#C9A227; color:#26311f; font-size:20px; font-weight:900; display:flex; align-items:center; justify-content:center; }
+.qtitle { color:#26311f; font-size:23px; font-weight:800; }
+.qbody { flex:1; display:flex; align-items:center; justify-content:center; gap:10px; }
+.caption { color:#8a1a26; font-size:17px; font-weight:700; text-align:center; }
+
+.card { position:relative; width:62px; height:90px; background:linear-gradient(175deg,#FFFFFF 0%,#F4EFE2 100%); border:1px solid rgba(60,50,20,.25); border-radius:7px; box-shadow:0 3px 8px rgba(60,50,20,.2); }
+.card .corner { position:absolute; top:5px; left:6px; font-size:16px; font-weight:800; line-height:1; text-align:center; }
+.card .corner .csuit { display:block; font-size:11px; line-height:1; margin-top:1px; }
+.card .big { position:absolute; top:50%; left:50%; transform:translate(-42%,-44%); font-size:36px; line-height:1; }
+.black { color:#1a1a1a; } .red { color:#c0392b; }
+
+.bubble { position:relative; background:#FFFFFF; border:2px solid #2E7D46; border-radius:16px; padding:14px 22px; color:#26311f; font-size:22px; font-weight:800; }
+.bubble:after { content:""; position:absolute; bottom:-12px; left:36px; width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #2E7D46; }
+.chipdot { width:34px; height:34px; border-radius:50%; background:#2E7D46; border:4px dashed rgba(255,255,255,.85); box-shadow:0 2px 6px rgba(60,50,20,.25); }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="kicker">POSITION GUIDE</div>
+  <h1>스몰블라인드(SB) <span class="gold">실수 4가지</span></h1>
+  <div class="grid">
+    <div class="quad">
+      <div class="qhead"><div class="badge">1</div><div class="qtitle">아무 핸드나 콜</div></div>
+      <div class="qbody">
+        <div class="card"><div class="corner black">7<span class="csuit">&#9824;</span></div><div class="big black">&#9824;</div></div>
+        <div class="card"><div class="corner black">3<span class="csuit">&#9824;</span></div><div class="big black">&#9824;</div></div>
+      </div>
+      <div class="caption">&ldquo;반값이니까&rdquo; 콜 &mdash; 손실만 쌓인다</div>
+    </div>
+    <div class="quad">
+      <div class="qhead"><div class="badge">2</div><div class="qtitle">약한 에이스 과신</div></div>
+      <div class="qbody">
+        <div class="card"><div class="corner black">A<span class="csuit">&#9824;</span></div><div class="big black">&#9824;</div></div>
+        <div class="card"><div class="corner red">4<span class="csuit">&#9830;</span></div><div class="big red">&#9830;</div></div>
+      </div>
+      <div class="caption">키커가 약해 역전패 당하기 쉽다</div>
+    </div>
+    <div class="quad">
+      <div class="qhead"><div class="badge">3</div><div class="qtitle">BB 체크 기대</div></div>
+      <div class="qbody">
+        <div class="bubble">&ldquo;체크하겠지?&rdquo;</div>
+        <div class="chipdot"></div>
+      </div>
+      <div class="caption">BB는 생각보다 자주 레이즈한다</div>
+    </div>
+    <div class="quad">
+      <div class="qhead"><div class="badge">4</div><div class="qtitle">플랍 자동 체크</div></div>
+      <div class="qbody">
+        <div class="card"><div class="corner black">K<span class="csuit">&#9824;</span></div><div class="big black">&#9824;</div></div>
+        <div class="card"><div class="corner red">9<span class="csuit">&#9830;</span></div><div class="big red">&#9830;</div></div>
+        <div class="card"><div class="corner black">4<span class="csuit">&#9827;</span></div><div class="big black">&#9827;</div></div>
+      </div>
+      <div class="caption">매번 체크하면 상대에게 읽힌다</div>
+    </div>
+  </div>
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

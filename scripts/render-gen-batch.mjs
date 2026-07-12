@@ -5,8 +5,12 @@ import { resolve } from 'path';
 import { statSync, readdirSync } from 'fs';
 import { writeFile } from 'fs/promises';
 
-// render every scripts/gen-*.html (and tb-best5.html) to a preview webp for review
-const files = readdirSync('scripts').filter(f => (f.startsWith('gen-') || f === 'tb-best5.html') && f.endsWith('.html'));
+// render scripts/gen-*.html (and tb-best5.html) to a preview webp for review.
+// optional CLI args = substring filters: `node render-gen-batch.mjs flush ak-offsuit` renders only matching files.
+const filters = process.argv.slice(2);
+const files = readdirSync('scripts')
+  .filter(f => (f.startsWith('gen-') || f === 'tb-best5.html') && f.endsWith('.html'))
+  .filter(f => filters.length === 0 || filters.some(s => f.includes(s)));
 const browser = await chromium.launch();
 for (const f of files) {
   const base = f.replace(/^gen-/, '').replace(/\.html$/, '');

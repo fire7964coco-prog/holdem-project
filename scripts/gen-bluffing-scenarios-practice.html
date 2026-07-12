@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden; padding:44px;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  display:flex; flex-direction:column; align-items:center;
+}
+h1 { color:#F2EEE3; font-size:42px; font-weight:800; text-align:center; text-shadow:0 2px 12px rgba(0,0,0,.45); }
+h1 .gold { color:#C9A227; }
+.wordmark { position:absolute; right:44px; bottom:44px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.04em; opacity:.9; }
+
+.panels { display:flex; gap:24px; margin-top:30px; width:100%; flex:1; }
+.panel { flex:1; background:rgba(0,0,0,.28); border:2px solid rgba(201,162,39,.55); border-radius:16px; padding:22px 16px 20px; display:flex; flex-direction:column; align-items:center; gap:15px; }
+.badge { width:46px; height:46px; border-radius:50%; background:#C9A227; color:#0B1F17; font-weight:900; font-size:26px; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 10px rgba(0,0,0,.4); }
+.pt { color:#F2EEE3; font-size:25px; font-weight:800; text-align:center; }
+.viz { height:118px; display:flex; align-items:center; justify-content:center; gap:10px; }
+
+.card { position:relative; width:76px; height:110px; background:linear-gradient(175deg,#FDFBF4 0%,#F2EEE3 100%); border-radius:9px; box-shadow:0 6px 14px rgba(0,0,0,.45); }
+.card .corner { position:absolute; top:6px; left:7px; font-size:21px; font-weight:800; line-height:1; text-align:center; }
+.card .corner .csuit { display:block; font-size:14px; line-height:1; margin-top:1px; }
+.card .big { position:absolute; top:50%; left:50%; transform:translate(-42%,-44%); font-size:48px; line-height:1; }
+.card.back { background:repeating-linear-gradient(45deg,#7a1420 0 10px,#5c0f18 10px 20px); border:3px solid #F2EEE3; }
+.black { color:#1a1a1a; } .red { color:#c0392b; }
+
+.tag { display:flex; align-items:center; gap:9px; border-radius:999px; padding:9px 20px; font-size:18px; font-weight:800; }
+.tag.ok { border:2px solid #4c9a58; color:#7CC98A; background:rgba(76,154,88,.14); }
+.tag.no { border:2px solid #c0392b; color:#e06552; background:rgba(192,57,43,.12); }
+.sub { color:rgba(242,238,227,.72); font-size:16px; font-weight:600; text-align:center; line-height:1.5; }
+</style></head>
+<body>
+<div class="stage">
+  <h1>블러핑 <span class="gold">실전 시나리오</span> 3가지</h1>
+  <div class="panels">
+    <div class="panel">
+      <div class="badge">1</div>
+      <div class="pt">세미 블러핑 성공</div>
+      <div class="viz">
+        <div class="card"><div class="corner red">K<span class="csuit">&#9830;</span></div><div class="big red">&#9830;</div></div>
+        <div class="card"><div class="corner red">Q<span class="csuit">&#9830;</span></div><div class="big red">&#9830;</div></div>
+      </div>
+      <div class="tag ok"><span>&#10003;</span><span>드로우 + 베팅</span></div>
+      <div class="sub">맞아도 이기고<br>폴드시켜도 이긴다</div>
+    </div>
+    <div class="panel">
+      <div class="badge">2</div>
+      <div class="pt">퓨어 블러핑 성공</div>
+      <div class="viz">
+        <div class="card back"></div>
+        <div class="card back"></div>
+      </div>
+      <div class="tag ok"><span>&#10003;</span><span>드라이보드 + 스토리</span></div>
+      <div class="sub">일관된 베팅 라인으로<br>강한 핸드를 연기한다</div>
+    </div>
+    <div class="panel">
+      <div class="badge">3</div>
+      <div class="pt">블러핑 금지</div>
+      <div class="viz">
+        <div class="card back"></div>
+        <div class="card back"></div>
+      </div>
+      <div class="tag no"><span>&#10005;</span><span>콜링 스테이션</span></div>
+      <div class="sub">폴드하지 않는 상대에겐<br>밸류 베팅만</div>
+    </div>
+  </div>
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body></html>

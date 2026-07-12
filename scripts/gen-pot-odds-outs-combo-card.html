@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden; padding:44px 60px 40px;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:"Segoe UI","Malgun Gothic","Apple SD Gothic Neo",-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
+  display:flex; flex-direction:column;
+}
+.kicker { color:#C9A227; font-size:15px; font-weight:700; letter-spacing:.28em; text-transform:uppercase; text-align:center; margin-bottom:8px; }
+h1 { color:#F2EEE3; font-size:44px; font-weight:800; text-align:center; text-shadow:0 2px 12px rgba(0,0,0,.45); margin-bottom:24px; }
+h1 .gold { color:#C9A227; }
+.tablebox {
+  flex:1; background:rgba(0,0,0,.28); border:2px solid rgba(201,162,39,.55); border-radius:16px;
+  padding:8px 28px 14px; display:flex; flex-direction:column;
+}
+table { width:100%; border-collapse:collapse; flex:1; }
+th {
+  color:#C9A227; font-size:19px; font-weight:800; letter-spacing:.06em;
+  padding:14px 10px; border-bottom:2px solid rgba(201,162,39,.55); text-align:left;
+}
+th.c, td.c { text-align:center; }
+td {
+  color:#F2EEE3; font-size:21px; font-weight:700;
+  padding:13px 10px; border-bottom:1px solid rgba(201,162,39,.28);
+}
+tr:last-child td { border-bottom:none; }
+td.outs { color:#C9A227; font-weight:900; font-size:24px; }
+td.pct { font-weight:800; }
+.barcell { width:330px; }
+.bar { height:16px; border-radius:8px; background:rgba(242,238,227,.12); overflow:hidden; }
+.bar i { display:block; height:100%; background:linear-gradient(90deg,#C9A227,#E0BC45); border-radius:8px; }
+.foot {
+  margin-top:16px; text-align:center; color:#F2EEE3; font-size:20px; font-weight:700;
+}
+.foot .gold { color:#C9A227; font-weight:800; }
+.wordmark { position:absolute; right:44px; bottom:20px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.04em; opacity:.9; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="kicker">Pot Odds &times; Outs</div>
+  <h1>팟오즈 <span class="gold">+</span> 아웃츠</h1>
+
+  <div class="tablebox">
+    <table>
+      <tr><th>드로</th><th class="c">아웃츠</th><th class="c">승률(플랍&rarr;리버)</th><th class="barcell"></th></tr>
+      <tr>
+        <td>플러시 드로</td><td class="c outs">9</td><td class="c pct">&asymp;36%</td>
+        <td class="barcell"><div class="bar"><i style="width:72%"></i></div></td>
+      </tr>
+      <tr>
+        <td>OESD</td><td class="c outs">8</td><td class="c pct">&asymp;32%</td>
+        <td class="barcell"><div class="bar"><i style="width:64%"></i></div></td>
+      </tr>
+      <tr>
+        <td>오버카드 2장</td><td class="c outs">6</td><td class="c pct">&asymp;24%</td>
+        <td class="barcell"><div class="bar"><i style="width:48%"></i></div></td>
+      </tr>
+      <tr>
+        <td>거트샷</td><td class="c outs">4</td><td class="c pct">&asymp;16%</td>
+        <td class="barcell"><div class="bar"><i style="width:32%"></i></div></td>
+      </tr>
+      <tr>
+        <td>세트(포켓페어)</td><td class="c outs">2</td><td class="c pct">&asymp;8%</td>
+        <td class="barcell"><div class="bar"><i style="width:16%"></i></div></td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="foot">플랍&rarr;리버 <span class="gold">&times;4</span> &middot; 턴&rarr;리버 <span class="gold">&times;2</span> &middot; 승률 &gt; 팟오즈% &rarr; <span class="gold">콜</span></div>
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

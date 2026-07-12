@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#F5F0E4; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden; padding:34px 48px 30px;
+  background:
+    radial-gradient(ellipse 900px 460px at 50% -12%, rgba(201,162,39,.14), rgba(201,162,39,0) 60%),
+    #F5F0E4;
+  color:#26311f;
+  font-family:"Segoe UI","Malgun Gothic","Apple SD Gothic Neo",-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
+  display:flex; flex-direction:column;
+}
+.kicker { color:#A8841C; font-size:13px; font-weight:800; letter-spacing:.3em; text-align:center; }
+h1 { color:#1F3D2B; font-size:40px; font-weight:800; text-align:center; margin:2px 0 8px; }
+h1 .gold { color:#A8841C; }
+.rule { width:130px; height:4px; background:#C9A227; border-radius:2px; margin:0 auto 18px; }
+.cols { display:flex; gap:20px; flex:1; }
+.col {
+  flex:1; background:#FBF8EF; border:2px solid rgba(201,162,39,.7); border-radius:14px;
+  padding:16px 16px 14px; box-shadow:0 4px 12px rgba(31,61,43,.08);
+  display:flex; flex-direction:column; align-items:center;
+}
+.col h2 {
+  color:#1F3D2B; font-size:22px; font-weight:800; margin-bottom:12px; text-align:center;
+}
+.col h2 .n { color:#A8841C; }
+.crow { display:flex; align-items:center; gap:6px; margin-bottom:7px; }
+.clabel { width:40px; font-size:13px; font-weight:800; color:#1F3D2B; }
+.card {
+  position:relative; width:46px; height:66px;
+  background:linear-gradient(175deg,#FFFEF9 0%,#F7F3E6 100%);
+  border:1px solid rgba(31,61,43,.28); border-radius:6px;
+  box-shadow:0 3px 6px rgba(31,61,43,.18);
+}
+.card .corner { position:absolute; top:4px; left:5px; font-size:12px; font-weight:800; line-height:1; text-align:center; }
+.card .corner .csuit { display:block; font-size:9px; line-height:1; margin-top:1px; }
+.card .big { position:absolute; top:54%; left:54%; transform:translate(-46%,-46%); font-size:24px; line-height:1; }
+.card.back { background:repeating-linear-gradient(45deg,#7a1420 0 8px,#5c0f18 8px 16px); border:2px solid #C9A227; }
+.black { color:#1a1a1a; } .red { color:#c0392b; }
+.nums { width:100%; margin-top:8px; display:flex; flex-direction:column; gap:5px; }
+.numline { font-size:15.5px; font-weight:700; color:#37452f; text-align:center; line-height:1.4; }
+.numline b { color:#1F3D2B; }
+.numline .gold { color:#A8841C; font-weight:800; }
+.verdict {
+  margin-top:auto; border-radius:999px; padding:8px 30px; font-size:21px; font-weight:800;
+  color:#fff; box-shadow:0 3px 8px rgba(31,61,43,.25);
+}
+.call { background:#2E7D46; }
+.fold { background:#B03A2E; }
+.wordmark { position:absolute; right:44px; bottom:10px; color:#A8841C; font-size:15px; font-weight:800; letter-spacing:.04em; opacity:.95; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="kicker">REAL PLAY</div>
+  <h1>실전 3가지 <span class="gold">팟오즈 결정</span></h1>
+  <div class="rule"></div>
+
+  <div class="cols">
+    <div class="col">
+      <h2><span class="n">1.</span> 플러시 드로</h2>
+      <div class="crow">
+        <span class="clabel">보드</span>
+        <div class="card"><div class="corner black">A<span class="csuit">&#9824;</span></div><div class="big black">&#9824;</div></div>
+        <div class="card"><div class="corner black">7<span class="csuit">&#9824;</span></div><div class="big black">&#9824;</div></div>
+        <div class="card"><div class="corner red">2<span class="csuit">&#9829;</span></div><div class="big red">&#9829;</div></div>
+      </div>
+      <div class="crow">
+        <span class="clabel">핸드</span>
+        <div class="card"><div class="corner black">K<span class="csuit">&#9824;</span></div><div class="big black">&#9824;</div></div>
+        <div class="card"><div class="corner black">J<span class="csuit">&#9824;</span></div><div class="big black">&#9824;</div></div>
+      </div>
+      <div class="nums">
+        <div class="numline">팟 <b>20,000</b> &middot; 벳 <b>10,000</b></div>
+        <div class="numline">팟오즈 10,000 &divide; 40,000 = <span class="gold">25%</span></div>
+        <div class="numline">승률 9아웃 &times;4 <span class="gold">&asymp;36%</span></div>
+        <div class="numline"><b>36% &gt; 25%</b></div>
+      </div>
+      <div class="verdict call">콜</div>
+    </div>
+
+    <div class="col">
+      <h2><span class="n">2.</span> 거트샷</h2>
+      <div class="crow">
+        <span class="clabel">보드</span>
+        <div class="card"><div class="corner red">Q<span class="csuit">&#9829;</span></div><div class="big red">&#9829;</div></div>
+        <div class="card"><div class="corner red">9<span class="csuit">&#9830;</span></div><div class="big red">&#9830;</div></div>
+        <div class="card"><div class="corner black">3<span class="csuit">&#9824;</span></div><div class="big black">&#9824;</div></div>
+      </div>
+      <div class="crow">
+        <span class="clabel">핸드</span>
+        <div class="card"><div class="corner black">J<span class="csuit">&#9827;</span></div><div class="big black">&#9827;</div></div>
+        <div class="card"><div class="corner black">8<span class="csuit">&#9827;</span></div><div class="big black">&#9827;</div></div>
+      </div>
+      <div class="nums">
+        <div class="numline">팟 <b>15,000</b> &middot; 벳 <b>15,000</b></div>
+        <div class="numline">팟오즈 15,000 &divide; 45,000 <span class="gold">&asymp;33%</span></div>
+        <div class="numline">승률 4아웃 &times;4 <span class="gold">&asymp;16%</span></div>
+        <div class="numline"><b>16% &lt; 33%</b></div>
+      </div>
+      <div class="verdict fold">폴드</div>
+    </div>
+
+    <div class="col">
+      <h2><span class="n">3.</span> 오버벳 1.5x</h2>
+      <div class="crow">
+        <span class="clabel">핸드</span>
+        <div class="card back"></div>
+        <div class="card back"></div>
+      </div>
+      <div class="crow" style="height:66px; align-items:center;">
+        <span class="clabel"></span>
+        <span style="font-size:15px; font-weight:700; color:#37452f;">상대가 팟의 1.5배 벳</span>
+      </div>
+      <div class="nums">
+        <div class="numline">팟 <b>10,000</b> &middot; 벳 <b>15,000</b></div>
+        <div class="numline">팟오즈 15,000 &divide; 40,000 = <span class="gold">37.5%</span></div>
+        <div class="numline">웬만한 드로 승률로는 부족</div>
+        <div class="numline"><b>드로는 대부분 폴드</b></div>
+      </div>
+      <div class="verdict fold">폴드</div>
+    </div>
+  </div>
+
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

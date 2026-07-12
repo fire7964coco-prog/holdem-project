@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden; padding:44px;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  display:flex; flex-direction:column; align-items:center; justify-content:flex-start;
+}
+.kicker { color:#C9A227; font-size:15px; font-weight:700; letter-spacing:.28em; text-transform:uppercase; text-align:center; margin-bottom:8px; }
+h1 { color:#F2EEE3; font-size:46px; font-weight:800; text-align:center; text-shadow:0 2px 12px rgba(0,0,0,.45); }
+.wordmark { position:absolute; right:44px; bottom:44px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.04em; opacity:.9; }
+
+.card { position:relative; width:96px; height:138px; background:linear-gradient(175deg,#FDFBF4 0%,#F2EEE3 100%); border-radius:10px; box-shadow:0 6px 14px rgba(0,0,0,.45),0 1px 3px rgba(0,0,0,.3); }
+.card .corner { position:absolute; top:7px; left:9px; font-size:25px; font-weight:800; line-height:1; text-align:center; }
+.card .corner .csuit { display:block; font-size:17px; line-height:1; margin-top:1px; }
+.card .big { position:absolute; top:50%; left:50%; transform:translate(-42%,-44%); font-size:60px; line-height:1; }
+.card.back { background:repeating-linear-gradient(45deg,#7a1420 0 10px,#5c0f18 10px 20px); border:3px solid #F2EEE3; }
+.black { color:#1a1a1a; } .red { color:#c0392b; }
+
+.cols { display:flex; gap:26px; margin-top:26px; }
+.panel {
+  width:530px; height:400px; border-radius:16px; padding:24px;
+  background:rgba(0,0,0,.28); border:2px solid rgba(201,162,39,.55);
+  display:flex; flex-direction:column; align-items:center; position:relative;
+}
+.panel-title { font-size:22px; font-weight:800; letter-spacing:.03em; padding:7px 22px; border-radius:999px; }
+.t-gold { color:#0B1F17; background:#C9A227; }
+.t-red  { color:#F2EEE3; background:rgba(192,57,43,.25); border:2px solid #c0392b; }
+
+.hand { display:flex; gap:14px; margin-top:34px; }
+.hand .card:first-child { transform:rotate(-7deg); }
+.hand .card:last-child { transform:rotate(7deg); }
+
+.eye-note { margin-top:38px; color:#F2EEE3; font-size:19px; font-weight:700; opacity:.85; }
+
+.bubble {
+  margin-top:26px; width:440px; border-radius:22px; padding:22px 20px;
+  background:rgba(255,255,255,.07); border:2px dashed rgba(201,162,39,.65);
+  display:flex; align-items:center; justify-content:center; gap:16px;
+}
+.tile {
+  min-width:88px; height:70px; border-radius:12px; padding:0 14px;
+  background:rgba(0,0,0,.35); border:2px solid #C9A227;
+  color:#F2EEE3; font-size:27px; font-weight:900; letter-spacing:.03em;
+  display:flex; align-items:center; justify-content:center;
+}
+.card.small { width:70px; height:100px; }
+.xmark {
+  position:absolute; top:16px; right:16px; width:44px; height:44px; border-radius:50%;
+  background:#c0392b; color:#F2EEE3; font-size:26px; font-weight:900;
+  display:flex; align-items:center; justify-content:center; box-shadow:0 4px 10px rgba(0,0,0,.45);
+}
+.range-note { margin-top:26px; color:#F2EEE3; font-size:19px; font-weight:700; opacity:.85; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="kicker">홀덤 초보 실수</div>
+  <h1>상대의 핸드 범위 무시</h1>
+
+  <div class="cols">
+    <div class="panel">
+      <div class="panel-title t-gold">내 카드만 봄</div>
+      <div class="hand">
+        <div class="card"><div class="corner red">K<span class="csuit">&#9830;</span></div><div class="big red">&#9830;</div></div>
+        <div class="card"><div class="corner red">Q<span class="csuit">&#9830;</span></div><div class="big red">&#9830;</div></div>
+      </div>
+      <div class="eye-note">"내 핸드 예쁘니까 무조건 콜"</div>
+    </div>
+
+    <div class="panel">
+      <div class="xmark">&#10005;</div>
+      <div class="panel-title t-red">상대 범위 무시</div>
+      <div class="bubble">
+        <div class="card back small"></div>
+        <div class="tile">AK</div>
+        <div class="tile">JJ</div>
+        <div class="tile">T9s</div>
+      </div>
+      <div class="range-note">상대가 뭘 들었을지 생각 안 함</div>
+    </div>
+  </div>
+
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#F5F0E4; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden; padding:38px 44px 38px 74px;
+  background:
+    radial-gradient(ellipse 800px 400px at 50% -10%, rgba(201,162,39,0.10), rgba(201,162,39,0) 60%),
+    linear-gradient(165deg,#F7F2E7 0%,#F1EBDC 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color:#26311f;
+}
+/* 스프링 노트 바인딩 */
+.spiral { position:absolute; left:20px; top:0; bottom:0; width:24px; display:flex; flex-direction:column; justify-content:space-evenly; }
+.spiral span { display:block; width:20px; height:20px; border-radius:50%; border:3px solid #B7AE97; background:#F5F0E4; box-shadow:inset 0 2px 3px rgba(0,0,0,.18); }
+.head { display:flex; align-items:flex-start; justify-content:space-between; margin-bottom:22px; }
+.kicker { color:#C9A227; font-size:14px; font-weight:800; letter-spacing:.26em; text-transform:uppercase; margin-bottom:6px; }
+h1 { color:#26311f; font-size:42px; font-weight:800; line-height:1.1; }
+h1 .gold { color:#C9A227; }
+.rule { width:120px; height:5px; background:#C9A227; border-radius:3px; margin-top:12px; }
+/* 작은 A♠ A♥ 낙서 카드 */
+.doodle { display:flex; gap:8px; margin-right:56px; }
+.dcard { position:relative; width:58px; height:82px; background:#FDFBF4; border:2px solid #26311f; border-radius:7px; box-shadow:2px 3px 0 rgba(38,49,31,.25); }
+.dcard.tilt-l { transform:rotate(-7deg); }
+.dcard.tilt-r { transform:rotate(6deg); }
+.dcard .corner { position:absolute; top:4px; left:6px; font-size:15px; font-weight:800; line-height:1; text-align:center; }
+.dcard .corner .csuit { display:block; font-size:11px; line-height:1; margin-top:1px; }
+.dcard .big { position:absolute; top:50%; left:50%; transform:translate(-44%,-46%); font-size:32px; line-height:1; }
+.black { color:#1a1a1a; } .red { color:#c0392b; }
+/* FAQ 그리드 */
+.grid { display:grid; grid-template-columns:1fr 1fr; gap:16px 20px; }
+.faq { display:flex; gap:14px; align-items:flex-start; background:#FDFBF4; border:2px solid rgba(201,162,39,.6); border-radius:14px; padding:16px 18px; min-height:118px; }
+.qb { flex:0 0 auto; width:44px; height:44px; border-radius:50%; background:#C9A227; color:#F5F0E4; font-size:17px; font-weight:900; display:flex; align-items:center; justify-content:center; box-shadow:0 2px 5px rgba(38,49,31,.25); }
+.q { font-size:19px; font-weight:800; color:#26311f; line-height:1.25; margin-bottom:7px; }
+.a { font-size:16px; font-weight:600; color:#4a5a3f; line-height:1.35; }
+.a .em { color:#8a6d13; font-weight:800; }
+.wordmark { position:absolute; right:44px; bottom:26px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.04em; opacity:.95; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="spiral"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+  <div class="head">
+    <div>
+      <div class="kicker">Holdem Note</div>
+      <h1>포켓 에이스(<span class="gold">AA</span>) FAQ</h1>
+      <div class="rule"></div>
+    </div>
+    <div class="doodle">
+      <div class="dcard tilt-l"><div class="corner black">A<span class="csuit">&#9824;</span></div><div class="big black">&#9824;</div></div>
+      <div class="dcard tilt-r"><div class="corner red">A<span class="csuit">&#9829;</span></div><div class="big red">&#9829;</div></div>
+    </div>
+  </div>
+  <div class="grid">
+    <div class="faq">
+      <div class="qb">Q1</div>
+      <div>
+        <div class="q">프리플랍 AA, 올인 기준은?</div>
+        <div class="a"><span class="em">100BB 이하</span> 스택이면 프리플랍 올인 환영</div>
+      </div>
+    </div>
+    <div class="faq">
+      <div class="qb">Q2</div>
+      <div>
+        <div class="q">AA 슬로우플레이 괜찮을까?</div>
+        <div class="a"><span class="em">드라이 보드 한정</span> — 웻보드에선 금지</div>
+      </div>
+    </div>
+    <div class="faq">
+      <div class="qb">Q3</div>
+      <div>
+        <div class="q">AA를 프리플랍에 폴드하는 경우는?</div>
+        <div class="a">사실상 없음 — <span class="em">최강 시작 핸드</span></div>
+      </div>
+    </div>
+    <div class="faq">
+      <div class="qb">Q4</div>
+      <div>
+        <div class="q">AA 잡으면 티가 날까?</div>
+        <div class="a">베팅 템포·자세를 <span class="em">평소와 똑같이</span></div>
+      </div>
+    </div>
+    <div class="faq">
+      <div class="qb">Q5</div>
+      <div>
+        <div class="q">AA vs KK 승률은?</div>
+        <div class="a">AA <span class="em">약 82%</span> vs KK 약 18%</div>
+      </div>
+    </div>
+    <div class="faq">
+      <div class="qb">Q6</div>
+      <div>
+        <div class="q">AA는 장기적으로 이득일까?</div>
+        <div class="a">기대값(EV) 최고 — <span class="em">한 판 결과와는 별개</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

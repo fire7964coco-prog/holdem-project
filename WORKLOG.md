@@ -3,6 +3,17 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-12 (KO 이미지 전수교체 — 코드렌더 인포그래픽 85개 §13 교체·배포)
+
+### 🖼️ KO 이미지 §13 결함 코드렌더 전수교체 (85개)
+> EN 교체(어제) 후속. `defects.md`의 KO 결함(EN 스프린트 23개 제외)을 전부 §13-안전 HTML 코드렌더로 재생성. 자동 모드(Fable5 저작 10에이전트 병렬 + 메인 렌더/육안검수/배치). 파이프라인 = `scripts/gen-<타깃>.html`(자립형 1200×675, 카드=코너랭크+단일글리프 CSS) → `render-gen-batch.mjs`(인자 필터 추가) → `_prev-*.webp` → Read 육안검수 → `public/images/`.
+- **공유 스펙 확립**: `scripts/_GEN_SPEC.md`(팔레트·카드CSS·크림노트·§13 체크리스트) — 10개 서브에이전트가 동일 규격으로 저작.
+- **교체 85개**(전부 §13 육안검수 통과 = 카드 유효·중복 무늬랭크 0·한글 철자·잘림 0·<60KB·1200×675):
+  - flush-vs-straight 5(intro·c3·c4·c7·c8, CS노트오염 폐기) · ak-offsuit 4(확률 AKvsAA 7%·EP2.5표) · pot-odds 8(콜÷(팟+콜) 전예시 산수검산) · beginner-mistakes 12(오타 MISTIAKE/10Doker·한자·좌석중복 교정) · 3bet+check-raise 8("No entry!"·[cite]·## 폐기) · pocket-aces 4+kk 2+icm 2(중복블록·한자·cEV 교정) · overbet 5+small-blind 2+value-bet 1("blluffs"→bluffs) · pub 6(No entry!·이모지 폐기, 법적기준 정확) · rules/카드 12(쇼다운 AA>KK·스터드·아웃츠·티어·rule-of-4·족보2위·레인지13×13·6/9맥스 좌석) · blog-misc(faq·tiebreak-hero 8♠→8♥교정·premium핸드·flush-draw35%) · wsop 3(2025히어로·2026새틀·플라이트) · **404 8개 신규생성**(bluffing-* 4·holdem-position-* 4 = posts.ts 본문 인포그래픽 부재분).
+- **빌드 ✅** Compiled successfully, 199 static pages, sitemap 57 blog + 77 intl, 에러 0. 404 8개 해소.
+- **⚠️ 남은 실사 15개**(코드렌더 불가 = 여행/펠트/photoreal) → `docs/image-audit/photo-prompts-nano-banana.md`에 §13·워터마크 반영 영어 프롬프트 목록화. 사용자 Nano Banana로 생성 필요: apt-jeju 8·pub-legal-card-table/casino-floor·beginner-mistakes-korea-pub·bubble-faq/summary/table·wsop-2026-tournament-hero·3bet-sizing.
+- **재생성 소스**: `scripts/gen-*.html` 커밋(18언어 현지화 재렌더 가능) + `scripts/_GEN_SPEC.md`.
+
 ## 2026-07-12 (EN 이미지 전수감사 + 결함 23개 코드렌더 교체·배포)
 
 ### 🖼️ 이미지 전수 §13 감사 (전 사이트) + EN 결함 교체

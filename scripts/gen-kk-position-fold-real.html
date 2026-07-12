@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden; padding:44px;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  display:flex; flex-direction:column; align-items:center;
+}
+.kicker { color:#C9A227; font-size:15px; font-weight:700; letter-spacing:.28em; text-transform:uppercase; text-align:center; margin-bottom:8px; }
+h1 { color:#F2EEE3; font-size:44px; font-weight:800; text-align:center; text-shadow:0 2px 12px rgba(0,0,0,.45); margin-bottom:30px; }
+h1 .gold { color:#C9A227; }
+.table-area { display:flex; align-items:flex-start; justify-content:center; gap:90px; }
+.zone { display:flex; flex-direction:column; align-items:center; }
+.zlabel { color:#C9A227; font-size:17px; font-weight:800; letter-spacing:.14em; margin-bottom:16px; text-transform:uppercase; }
+.cards { display:flex; }
+.card { position:relative; width:118px; height:170px; background:linear-gradient(175deg,#FDFBF4 0%,#F2EEE3 100%); border-radius:12px; box-shadow:0 6px 14px rgba(0,0,0,.45),0 1px 3px rgba(0,0,0,.3); }
+.card .corner { position:absolute; top:9px; left:11px; font-size:30px; font-weight:800; line-height:1; text-align:center; }
+.card .corner .csuit { display:block; font-size:20px; line-height:1; margin-top:2px; }
+.card .big { position:absolute; top:50%; left:50%; transform:translate(-42%,-44%); font-size:74px; line-height:1; }
+.black { color:#1a1a1a; } .red { color:#c0392b; }
+/* 홀카드 2장 겹침 */
+.hole .card:first-child { transform:rotate(-7deg); z-index:1; }
+.hole .card:last-child { transform:rotate(7deg); margin-left:-42px; }
+/* 플랍 3장 */
+.flop { gap:16px; }
+.flop .card.danger { box-shadow:0 0 0 3px #b03a2e, 0 6px 18px rgba(176,58,46,.5); }
+.dtag { margin-top:12px; color:#e07b6e; font-size:15px; font-weight:800; letter-spacing:.08em; }
+/* 폴드 고려 라벨 */
+.verdict { margin-top:36px; display:flex; align-items:center; gap:14px; background:rgba(0,0,0,.28); border:2px solid rgba(201,162,39,.55); border-radius:16px; padding:16px 34px; }
+.vdot { width:16px; height:16px; border-radius:50%; background:#b03a2e; box-shadow:0 0 12px rgba(176,58,46,.8); }
+.vtext { color:#F2EEE3; font-size:26px; font-weight:800; letter-spacing:.02em; }
+.vtext .gold { color:#C9A227; }
+.wordmark { position:absolute; right:44px; bottom:44px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.04em; opacity:.9; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="kicker">Pocket Kings</div>
+  <h1>A 하이 보드의 <span class="gold">KK</span></h1>
+  <div class="table-area">
+    <div class="zone">
+      <div class="zlabel">내 핸드</div>
+      <div class="cards hole">
+        <div class="card"><div class="corner black">K<span class="csuit">&#9824;</span></div><div class="big black">&#9824;</div></div>
+        <div class="card"><div class="corner red">K<span class="csuit">&#9829;</span></div><div class="big red">&#9829;</div></div>
+      </div>
+    </div>
+    <div class="zone">
+      <div class="zlabel">플랍</div>
+      <div class="cards flop">
+        <div class="card danger"><div class="corner red">A<span class="csuit">&#9830;</span></div><div class="big red">&#9830;</div></div>
+        <div class="card"><div class="corner black">9<span class="csuit">&#9827;</span></div><div class="big black">&#9827;</div></div>
+        <div class="card"><div class="corner black">4<span class="csuit">&#9824;</span></div><div class="big black">&#9824;</div></div>
+      </div>
+      <div class="dtag">A = KK 최대의 적</div>
+    </div>
+  </div>
+  <div class="verdict">
+    <div class="vdot"></div>
+    <div class="vtext">강한 저항엔 <span class="gold">KK 폴드 고려</span></div>
+  </div>
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

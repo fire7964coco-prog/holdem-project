@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden; padding:44px;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  display:flex; flex-direction:column; align-items:center;
+}
+h1 { color:#F2EEE3; font-size:42px; font-weight:800; text-align:center; text-shadow:0 2px 12px rgba(0,0,0,.45); }
+h1 .gold { color:#C9A227; }
+.wordmark { position:absolute; right:44px; bottom:44px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.04em; opacity:.9; }
+
+.duel { display:flex; align-items:flex-end; gap:20px; margin-top:34px; flex:1; }
+.side { width:440px; display:flex; flex-direction:column; align-items:center; gap:16px; }
+.fan { position:relative; width:340px; height:190px; }
+.fan .card { position:absolute; left:50%; bottom:0; margin-left:-37px; transform-origin:50% 135%; }
+.card { width:74px; height:106px; border-radius:9px; box-shadow:0 6px 14px rgba(0,0,0,.5); background:repeating-linear-gradient(45deg,#7a1420 0 10px,#5c0f18 10px 20px); border:3px solid #F2EEE3; }
+.lab { font-size:25px; font-weight:900; }
+.lab.wide { color:#C9A227; }
+.lab.tight { color:rgba(242,238,227,.85); }
+.sub { color:rgba(242,238,227,.7); font-size:18px; font-weight:600; }
+.vs { color:#C9A227; font-size:34px; font-weight:900; padding-bottom:120px; }
+
+.banner { background:#C9A227; color:#0B1F17; font-weight:900; font-size:23px; padding:13px 36px; border-radius:12px; margin-top:6px; margin-bottom:8px; box-shadow:0 6px 16px rgba(0,0,0,.4); white-space:nowrap; }
+</style></head>
+<body>
+<div class="stage">
+  <h1>포지션 전략 <span class="gold">핵심</span></h1>
+  <div class="duel">
+    <div class="side">
+      <div class="fan">
+        <div class="card" style="transform:rotate(-42deg)"></div>
+        <div class="card" style="transform:rotate(-28deg)"></div>
+        <div class="card" style="transform:rotate(-14deg)"></div>
+        <div class="card" style="transform:rotate(0deg)"></div>
+        <div class="card" style="transform:rotate(14deg)"></div>
+        <div class="card" style="transform:rotate(28deg)"></div>
+        <div class="card" style="transform:rotate(42deg)"></div>
+      </div>
+      <div class="lab wide">BTN — 넓은 레인지</div>
+      <div class="sub">블라인드 스틸 적극</div>
+    </div>
+    <div class="vs">VS</div>
+    <div class="side">
+      <div class="fan">
+        <div class="card" style="transform:rotate(-11deg)"></div>
+        <div class="card" style="transform:rotate(0deg)"></div>
+        <div class="card" style="transform:rotate(11deg)"></div>
+      </div>
+      <div class="lab tight">UTG — 좁은 레인지</div>
+      <div class="sub">프리미엄 핸드만</div>
+    </div>
+  </div>
+  <div class="banner">블라인드 스틸 + 레인지 밸런스 = EV 극대화</div>
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body></html>

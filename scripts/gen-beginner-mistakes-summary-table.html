@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden; padding:36px 60px 40px;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  display:flex; flex-direction:column; align-items:center; justify-content:flex-start;
+}
+h1 { color:#F2EEE3; font-size:36px; font-weight:800; text-align:center; text-shadow:0 2px 12px rgba(0,0,0,.45); }
+h1 .gold { color:#C9A227; }
+.wordmark { position:absolute; right:44px; bottom:12px; color:#C9A227; font-size:14px; font-weight:800; letter-spacing:.04em; opacity:.9; }
+
+table { width:100%; margin-top:18px; border-collapse:collapse; }
+th {
+  background:#C9A227; color:#0B1F17; font-size:19px; font-weight:900; letter-spacing:.04em;
+  padding:10px 14px; text-align:left;
+}
+th.num, td.num { width:56px; text-align:center; padding-left:8px; padding-right:8px; }
+th:first-child { border-radius:10px 0 0 0; } th:last-child { border-radius:0 10px 0 0; }
+td {
+  color:#F2EEE3; font-size:17.5px; font-weight:600; padding:8.5px 14px;
+  border-bottom:1px solid rgba(201,162,39,.28);
+}
+tr:nth-child(odd)  td { background:rgba(0,0,0,.34); }
+tr:nth-child(even) td { background:rgba(0,0,0,.18); }
+td.mis { font-weight:800; color:#F2EEE3; }
+td.fix { color:#e8d9a0; }
+.nbadge {
+  display:inline-flex; width:30px; height:30px; border-radius:50%;
+  background:#C9A227; color:#0B1F17; font-size:16px; font-weight:900;
+  align-items:center; justify-content:center;
+}
+</style>
+</head>
+<body>
+<div class="stage">
+  <h1><span class="gold">10</span> Poker Beginner Mistakes</h1>
+
+  <table>
+    <tr>
+      <th class="num">No</th><th>실수</th><th>증상</th><th>교정법</th>
+    </tr>
+    <tr><td class="num"><span class="nbadge">1</span></td><td class="mis">너무 많은 핸드</td><td>승률 낮은 콜 남발</td><td class="fix">스타팅 타이트하게</td></tr>
+    <tr><td class="num"><span class="nbadge">2</span></td><td class="mis">포지션 무시</td><td>앞자리 루즈 플레이</td><td class="fix">뒷자리 위주 공격</td></tr>
+    <tr><td class="num"><span class="nbadge">3</span></td><td class="mis">과도한 블러핑</td><td>매번 블러프</td><td class="fix">빈도 조절</td></tr>
+    <tr><td class="num"><span class="nbadge">4</span></td><td class="mis">팟 오즈 무시</td><td>확률 계산 생략</td><td class="fix">오즈 비교 습관</td></tr>
+    <tr><td class="num"><span class="nbadge">5</span></td><td class="mis">콜링 스테이션</td><td>폴드를 못 함</td><td class="fix">약하면 폴드</td></tr>
+    <tr><td class="num"><span class="nbadge">6</span></td><td class="mis">틸트</td><td>감정적 베팅</td><td class="fix">휴식과 멘탈 관리</td></tr>
+    <tr><td class="num"><span class="nbadge">7</span></td><td class="mis">상대 범위 무시</td><td>내 카드만 봄</td><td class="fix">범위 추론 연습</td></tr>
+    <tr><td class="num"><span class="nbadge">8</span></td><td class="mis">핸드 노출</td><td>홀카드 보여주기</td><td class="fix">정보 차단</td></tr>
+    <tr><td class="num"><span class="nbadge">9</span></td><td class="mis">벳 사이즈 실수</td><td>스택 무시 베팅</td><td class="fix">팟 기준 사이징</td></tr>
+    <tr><td class="num"><span class="nbadge">10</span></td><td class="mis">복기 안 함</td><td>같은 실수 반복</td><td class="fix">핸드 기록과 복기</td></tr>
+  </table>
+
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

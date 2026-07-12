@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden; padding:44px;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  display:flex; flex-direction:column; align-items:center; justify-content:space-between;
+}
+.kicker { color:#C9A227; font-size:15px; font-weight:700; letter-spacing:.28em; text-align:center; margin-bottom:8px; }
+h1 { color:#F2EEE3; font-size:44px; font-weight:800; text-align:center; text-shadow:0 2px 12px rgba(0,0,0,.45); }
+h1 .gold { color:#C9A227; }
+.sub { color:#C9A227; font-size:15px; font-weight:700; text-align:center; margin-top:8px; }
+.fan { display:flex; align-items:flex-end; margin-top:6px; }
+.card {
+  position:relative; width:130px; height:187px;
+  background:linear-gradient(175deg,#FDFBF4 0%,#F2EEE3 100%); border-radius:12px;
+  box-shadow:0 0 30px rgba(201,162,39,.35), 0 10px 20px rgba(0,0,0,.5);
+  margin-left:-18px;
+}
+.card:first-child { margin-left:0; }
+.card .corner { position:absolute; top:9px; left:12px; font-size:33px; font-weight:800; line-height:1; text-align:center; }
+.card .corner .csuit { display:block; font-size:22px; line-height:1; margin-top:2px; }
+.card .big { position:absolute; top:50%; left:50%; transform:translate(-42%,-44%); font-size:82px; line-height:1; }
+.red { color:#c0392b; }
+.r1 { transform:rotate(-12deg) translateY(24px); }
+.r2 { transform:rotate(-6deg) translateY(7px); }
+.r3 { transform:rotate(0deg); }
+.r4 { transform:rotate(6deg) translateY(7px); }
+.r5 { transform:rotate(12deg) translateY(24px); }
+.caption { color:#F2EEE3; font-size:15px; font-weight:700; opacity:.9; }
+.caption .gold { color:#C9A227; }
+.wordmark { position:absolute; right:44px; bottom:44px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.04em; opacity:.9; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div>
+    <div class="kicker">포커 족보 2위</div>
+    <h1><span class="gold">스트레이트 플러시</span></h1>
+    <div class="sub">같은 무늬로 숫자가 이어지는 5장</div>
+  </div>
+
+  <div class="fan">
+    <div class="card r1"><div class="corner red">9<span class="csuit">&#9829;</span></div><div class="big red">&#9829;</div></div>
+    <div class="card r2"><div class="corner red">8<span class="csuit">&#9829;</span></div><div class="big red">&#9829;</div></div>
+    <div class="card r3"><div class="corner red">7<span class="csuit">&#9829;</span></div><div class="big red">&#9829;</div></div>
+    <div class="card r4"><div class="corner red">6<span class="csuit">&#9829;</span></div><div class="big red">&#9829;</div></div>
+    <div class="card r5"><div class="corner red">5<span class="csuit">&#9829;</span></div><div class="big red">&#9829;</div></div>
+  </div>
+
+  <div class="caption">하트 <span class="gold">9-8-7-6-5</span> &#8212; 9 하이 스트레이트 플러시</div>
+
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

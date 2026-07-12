@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#F5F0E4; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden; padding:38px 48px 44px;
+  background:
+    radial-gradient(ellipse 800px 420px at 50% -12%, rgba(201,162,39,0.14), rgba(201,162,39,0) 65%),
+    linear-gradient(165deg,#F7F2E7 0%,#F1EBDB 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Malgun Gothic",Roboto,Helvetica,Arial,sans-serif;
+  display:flex; flex-direction:column;
+}
+.top { display:flex; align-items:center; justify-content:center; gap:22px; }
+.minicards { display:flex; gap:8px; }
+.card { position:relative; width:58px; height:84px; background:linear-gradient(175deg,#FDFBF4 0%,#F2EEE3 100%);
+  border:1px solid #d9d0b8; border-radius:7px; box-shadow:0 4px 10px rgba(60,50,20,.22); }
+.card .corner { position:absolute; top:5px; left:6px; font-size:16px; font-weight:800; line-height:1; text-align:center; }
+.card .corner .csuit { display:block; font-size:11px; line-height:1; margin-top:1px; }
+.card .big { position:absolute; top:50%; left:50%; transform:translate(-42%,-44%); font-size:36px; line-height:1; }
+.black { color:#1a1a1a; } .red { color:#c0392b; }
+h1 { color:#26311f; font-size:40px; font-weight:800; text-align:center; }
+h1 .gold { color:#A8861B; }
+.rule { width:520px; height:3px; margin:12px auto 0; border-radius:2px;
+  background:linear-gradient(90deg,rgba(201,162,39,0) 0%,#C9A227 50%,rgba(201,162,39,0) 100%); }
+.body { flex:1; display:flex; gap:36px; margin-top:18px; align-items:stretch; }
+/* left: open-size table */
+.tablebox { width:340px; background:#FBF8EF; border:2px solid rgba(201,162,39,.55); border-radius:16px;
+  padding:20px 24px; box-shadow:0 8px 20px rgba(60,50,20,.12); display:flex; flex-direction:column; }
+.tabletitle { color:#2E7D46; font-size:19px; font-weight:800; text-align:center; margin-bottom:12px; }
+table { width:100%; border-collapse:collapse; }
+th { color:#A8861B; font-size:17px; font-weight:800; padding:8px 4px; border-bottom:2px solid rgba(201,162,39,.6); }
+td { color:#26311f; font-size:20px; font-weight:700; text-align:center; padding:9px 4px; border-bottom:1px solid rgba(201,162,39,.28); }
+tr:last-child td { border-bottom:none; }
+td.pos { color:#54604a; font-weight:800; }
+/* right: branch flow */
+.flow { flex:1; display:flex; flex-direction:column; gap:16px; justify-content:center; }
+.branch { display:flex; align-items:center; gap:14px; }
+.cond { width:210px; background:#2E7D46; color:#F5F0E4; font-size:19px; font-weight:800;
+  border-radius:12px; padding:16px 12px; text-align:center; box-shadow:0 5px 12px rgba(40,70,45,.25); }
+.arrow { color:#A8861B; font-size:28px; font-weight:900; }
+.act { flex:1; background:#FBF8EF; border:2px solid rgba(201,162,39,.5); border-radius:12px;
+  padding:14px 16px; color:#26311f; font-size:21px; font-weight:800; text-align:center;
+  box-shadow:0 5px 12px rgba(60,50,20,.10); }
+.act .gold { color:#A8861B; }
+/* bottom equity strip */
+.strip { margin-top:16px; display:flex; justify-content:center; gap:20px; }
+.chip { background:#26311f; color:#F5F0E4; border-radius:999px; padding:11px 26px; font-size:19px; font-weight:800; }
+.chip .num { color:#C9A227; }
+.wordmark { position:absolute; right:44px; bottom:20px; color:#A8861B; font-size:15px; font-weight:800; letter-spacing:.04em; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="top">
+    <div class="minicards">
+      <div class="card"><div class="corner black">A<span class="csuit">&#9824;</span></div><div class="big black">&#9824;</div></div>
+      <div class="card"><div class="corner red">K<span class="csuit">&#9829;</span></div><div class="big red">&#9829;</div></div>
+    </div>
+    <h1>2. AK 프리플랍 <span class="gold">— 무조건 3벳</span></h1>
+  </div>
+  <div class="rule"></div>
+  <div class="body">
+    <div class="tablebox">
+      <div class="tabletitle">포지션별 오픈 사이즈 (BB)</div>
+      <table>
+        <tr><th>포지션</th><th>사이즈</th></tr>
+        <tr><td class="pos">EP</td><td>2.5</td></tr>
+        <tr><td class="pos">MP</td><td>2.5</td></tr>
+        <tr><td class="pos">CO</td><td>3.0</td></tr>
+        <tr><td class="pos">BTN</td><td>2.5</td></tr>
+        <tr><td class="pos">SB</td><td>3.5</td></tr>
+      </table>
+    </div>
+    <div class="flow">
+      <div class="branch">
+        <div class="cond">앞에 오픈 없음</div>
+        <div class="arrow">&#8594;</div>
+        <div class="act"><span class="gold">2.5~3BB</span> 오픈 레이즈</div>
+      </div>
+      <div class="branch">
+        <div class="cond">앞에 리레이즈</div>
+        <div class="arrow">&#8594;</div>
+        <div class="act">3벳 <span class="gold">2.5~3배</span></div>
+      </div>
+      <div class="branch">
+        <div class="cond">4벳이 돌아오면</div>
+        <div class="arrow">&#8594;</div>
+        <div class="act">대응 or <span class="gold">폴드</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="strip">
+    <div class="chip">AK vs KK <span class="num">약 30%</span></div>
+    <div class="chip">AK vs AA <span class="num">약 7%</span></div>
+  </div>
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

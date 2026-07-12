@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden; padding:44px;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.wordmark { position:absolute; right:44px; bottom:44px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.04em; opacity:.9; z-index:6; }
+
+.lft { position:absolute; left:80px; top:96px; }
+.kick { color:#C9A227; font-size:17px; font-weight:800; letter-spacing:.3em; text-transform:uppercase; margin-bottom:14px; }
+.big1 { font-size:136px; font-weight:900; line-height:.95; letter-spacing:.02em;
+  background:linear-gradient(180deg,#F0D46A 0%,#C9A227 55%,#8f7119 100%);
+  -webkit-background-clip:text; background-clip:text; color:transparent;
+  text-shadow:0 6px 24px rgba(0,0,0,.0); }
+.big2 { color:#F2EEE3; font-size:96px; font-weight:900; line-height:1.02; letter-spacing:.06em; text-shadow:0 3px 16px rgba(0,0,0,.5); }
+
+.card { position:absolute; width:126px; height:180px; background:linear-gradient(175deg,#FDFBF4 0%,#F2EEE3 100%); border-radius:12px; box-shadow:0 10px 24px rgba(0,0,0,.55),0 2px 5px rgba(0,0,0,.3); }
+.card .corner { position:absolute; top:9px; left:11px; font-size:33px; font-weight:800; line-height:1; text-align:center; }
+.card .corner .csuit { display:block; font-size:22px; line-height:1; margin-top:2px; }
+.card .big { position:absolute; top:50%; left:50%; transform:translate(-42%,-44%); font-size:82px; line-height:1; }
+.black { color:#1a1a1a; } .red { color:#c0392b; }
+.aceS { left:96px; bottom:88px; transform:rotate(-10deg); z-index:2; }
+.aceH { left:206px; bottom:92px; transform:rotate(9deg); z-index:3; }
+
+.chips { position:absolute; left:392px; bottom:96px; }
+.chiprow { display:flex; flex-direction:column-reverse; align-items:center; gap:3px; }
+.chip { width:74px; height:15px; border-radius:8px; background:linear-gradient(180deg,#2c2c2c,#0e0e0e); border:2px solid #C9A227; }
+.chip.g { background:linear-gradient(180deg,#E0BE45,#A87F16); border-color:#F2EEE3; }
+.chiptop { width:74px; height:74px; border-radius:50%; background:radial-gradient(circle at 50% 42%,#3a3a3a 0 52%,#1a1a1a 53%); border:6px dashed #C9A227; margin-bottom:6px; box-shadow:0 4px 10px rgba(0,0,0,.5); }
+
+.brc { position:absolute; right:118px; top:140px; width:300px; height:340px; }
+.ring { position:absolute; left:50%; top:70px; transform:translateX(-50%); width:250px; height:250px; border-radius:50%;
+  background:conic-gradient(#E8C84E 0deg,#A87F16 90deg,#E8C84E 180deg,#A87F16 270deg,#E8C84E 360deg);
+  box-shadow:0 0 44px rgba(201,162,39,.45),0 14px 28px rgba(0,0,0,.5); }
+.hole { position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:158px; height:158px; border-radius:50%; background:#102418; box-shadow:inset 0 6px 16px rgba(0,0,0,.6); }
+.plate { position:absolute; left:50%; top:34px; transform:translateX(-50%); width:132px; height:66px; border-radius:14px;
+  background:linear-gradient(180deg,#F0D46A,#A87F16); border:3px solid #F2EEE3; display:flex; align-items:center; justify-content:center; z-index:4;
+  box-shadow:0 6px 16px rgba(0,0,0,.5); }
+.plate .sp { color:#0B1F17; font-size:38px; line-height:1; }
+.ped { position:absolute; left:50%; bottom:-6px; transform:translateX(-50%); width:230px; height:26px; border-radius:50%; background:rgba(0,0,0,.45); filter:blur(2px); }
+</style></head>
+<body>
+<div class="stage">
+  <div class="lft">
+    <div class="kick">World Series of Poker</div>
+    <div class="big1">WSOP</div>
+    <div class="big2">2025</div>
+  </div>
+
+  <div class="card aceS"><div class="corner black">A<span class="csuit">&#9824;</span></div><div class="big black">&#9824;</div></div>
+  <div class="card aceH"><div class="corner red">A<span class="csuit">&#9829;</span></div><div class="big red">&#9829;</div></div>
+
+  <div class="chips">
+    <div class="chiptop"></div>
+    <div class="chiprow">
+      <div class="chip"></div><div class="chip g"></div><div class="chip"></div><div class="chip g"></div><div class="chip"></div><div class="chip g"></div><div class="chip"></div>
+    </div>
+  </div>
+
+  <div class="brc">
+    <div class="ring"><div class="hole"></div></div>
+    <div class="plate"><div class="sp">&#9824;</div></div>
+    <div class="ped"></div>
+  </div>
+
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body></html>

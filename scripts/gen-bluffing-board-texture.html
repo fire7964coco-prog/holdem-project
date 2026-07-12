@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden; padding:44px;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  display:flex; flex-direction:column; align-items:center;
+}
+h1 { color:#F2EEE3; font-size:42px; font-weight:800; text-align:center; text-shadow:0 2px 12px rgba(0,0,0,.45); }
+h1 .gold { color:#C9A227; }
+.wordmark { position:absolute; right:44px; bottom:44px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.04em; opacity:.9; }
+
+.cols { display:flex; gap:30px; margin-top:32px; width:100%; flex:1; }
+.col { flex:1; background:rgba(0,0,0,.28); border:2px solid rgba(201,162,39,.55); border-radius:16px; padding:26px 20px 24px; display:flex; flex-direction:column; align-items:center; gap:18px; }
+.ch { color:#C9A227; font-size:29px; font-weight:800; }
+.row { display:flex; gap:12px; }
+
+.card { position:relative; width:86px; height:124px; background:linear-gradient(175deg,#FDFBF4 0%,#F2EEE3 100%); border-radius:10px; box-shadow:0 6px 14px rgba(0,0,0,.45),0 1px 3px rgba(0,0,0,.3); }
+.card .corner { position:absolute; top:7px; left:8px; font-size:23px; font-weight:800; line-height:1; text-align:center; }
+.card .corner .csuit { display:block; font-size:16px; line-height:1; margin-top:1px; }
+.card .big { position:absolute; top:50%; left:50%; transform:translate(-42%,-44%); font-size:54px; line-height:1; }
+.black { color:#1a1a1a; } .red { color:#c0392b; }
+
+.pill { display:flex; align-items:center; gap:10px; border-radius:999px; padding:11px 30px; font-size:24px; font-weight:900; }
+.pill.ok { border:3px solid #4c9a58; color:#7CC98A; background:rgba(76,154,88,.14); }
+.pill.no { border:3px solid #c0392b; color:#e06552; background:rgba(192,57,43,.12); }
+.sub { color:rgba(242,238,227,.72); font-size:18px; font-weight:600; }
+</style></head>
+<body>
+<div class="stage">
+  <h1><span class="gold">보드 텍스처</span>별 블러핑</h1>
+  <div class="cols">
+    <div class="col">
+      <div class="ch">드라이보드</div>
+      <div class="row">
+        <div class="card"><div class="corner red">A<span class="csuit">&#9830;</span></div><div class="big red">&#9830;</div></div>
+        <div class="card"><div class="corner black">7<span class="csuit">&#9824;</span></div><div class="big black">&#9824;</div></div>
+        <div class="card"><div class="corner red">2<span class="csuit">&#9829;</span></div><div class="big red">&#9829;</div></div>
+      </div>
+      <div class="pill ok"><span>&#10003;</span><span>적극적으로</span></div>
+      <div class="sub">드로우 없음 = 폴드시키기 쉽다</div>
+    </div>
+    <div class="col">
+      <div class="ch">웻보드</div>
+      <div class="row">
+        <div class="card"><div class="corner black">9<span class="csuit">&#9827;</span></div><div class="big black">&#9827;</div></div>
+        <div class="card"><div class="corner black">8<span class="csuit">&#9827;</span></div><div class="big black">&#9827;</div></div>
+        <div class="card"><div class="corner black">7<span class="csuit">&#9827;</span></div><div class="big black">&#9827;</div></div>
+      </div>
+      <div class="pill no"><span>&#10005;</span><span>자제</span></div>
+      <div class="sub">드로우 가득 = 콜 받기 쉽다</div>
+    </div>
+  </div>
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body></html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden; padding:36px 44px 40px;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  display:flex; flex-direction:column; align-items:center; justify-content:space-between;
+}
+h1 { color:#F2EEE3; font-size:34px; font-weight:800; text-align:center; text-shadow:0 2px 12px rgba(0,0,0,.45); }
+h1 .gold { color:#C9A227; }
+.sub { color:#C9A227; font-size:14px; font-weight:700; text-align:center; margin-top:6px; }
+.boardwrap { display:flex; flex-direction:column; align-items:center; gap:10px; }
+.blabel { color:#C9A227; font-size:14px; font-weight:800; letter-spacing:.18em; }
+.row { display:flex; gap:16px; }
+.card { position:relative; width:88px; height:127px; background:linear-gradient(175deg,#FDFBF4 0%,#F2EEE3 100%); border-radius:9px; box-shadow:0 6px 14px rgba(0,0,0,.45),0 1px 3px rgba(0,0,0,.3); }
+.card .corner { position:absolute; top:6px; left:8px; font-size:23px; font-weight:800; line-height:1; text-align:center; }
+.card .corner .csuit { display:block; font-size:16px; line-height:1; margin-top:1px; }
+.card .big { position:absolute; top:50%; left:50%; transform:translate(-42%,-44%); font-size:54px; line-height:1; }
+.black { color:#1a1a1a; } .red { color:#c0392b; }
+.players { display:flex; gap:56px; align-items:flex-start; }
+.panel {
+  position:relative; background:rgba(0,0,0,.28); border:2px solid rgba(201,162,39,.4); border-radius:16px;
+  padding:20px 26px 16px; display:flex; flex-direction:column; align-items:center; gap:12px;
+}
+.panel.win { border-color:#C9A227; box-shadow:0 0 30px rgba(201,162,39,.35); }
+.panel .cards { display:flex; gap:12px; }
+.panel .hand { color:#F2EEE3; font-size:16px; font-weight:800; }
+.panel .hand .gold { color:#C9A227; }
+.badge {
+  position:absolute; top:-16px; left:50%; transform:translateX(-50%);
+  background:#C9A227; color:#0B1F17; font-size:14px; font-weight:900;
+  padding:5px 18px; border-radius:999px; box-shadow:0 4px 10px rgba(0,0,0,.4);
+}
+.wordmark { position:absolute; right:44px; bottom:40px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.04em; opacity:.9; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div>
+    <h1>쇼다운 &#8212; <span class="gold">베스트 5장</span>으로 승부</h1>
+    <div class="sub">두 플레이어 모두 원 페어, 페어의 랭크가 높은 쪽이 이긴다</div>
+  </div>
+
+  <div class="boardwrap">
+    <div class="blabel">보드</div>
+    <div class="row">
+      <div class="card"><div class="corner black">10<span class="csuit">&#9827;</span></div><div class="big black">&#9827;</div></div>
+      <div class="card"><div class="corner red">7<span class="csuit">&#9829;</span></div><div class="big red">&#9829;</div></div>
+      <div class="card"><div class="corner red">J<span class="csuit">&#9830;</span></div><div class="big red">&#9830;</div></div>
+      <div class="card"><div class="corner black">4<span class="csuit">&#9824;</span></div><div class="big black">&#9824;</div></div>
+      <div class="card"><div class="corner black">9<span class="csuit">&#9827;</span></div><div class="big black">&#9827;</div></div>
+    </div>
+  </div>
+
+  <div class="players">
+    <div class="panel">
+      <div class="cards">
+        <div class="card"><div class="corner red">K<span class="csuit">&#9829;</span></div><div class="big red">&#9829;</div></div>
+        <div class="card"><div class="corner black">K<span class="csuit">&#9827;</span></div><div class="big black">&#9827;</div></div>
+      </div>
+      <div class="hand">킹 원 페어</div>
+    </div>
+    <div class="panel win">
+      <div class="badge">승자</div>
+      <div class="cards">
+        <div class="card"><div class="corner red">A<span class="csuit">&#9829;</span></div><div class="big red">&#9829;</div></div>
+        <div class="card"><div class="corner red">A<span class="csuit">&#9830;</span></div><div class="big red">&#9830;</div></div>
+      </div>
+      <div class="hand"><span class="gold">에이스 원 페어</span></div>
+    </div>
+  </div>
+
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

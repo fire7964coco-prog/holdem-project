@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden; padding:44px;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  display:flex; flex-direction:column; align-items:center;
+}
+.kicker { color:#C9A227; font-size:15px; font-weight:700; letter-spacing:.22em; text-align:center; margin-bottom:8px; }
+h1 { color:#F2EEE3; font-size:44px; font-weight:800; text-align:center; text-shadow:0 2px 12px rgba(0,0,0,.45); }
+h1 .gold { color:#C9A227; }
+.wordmark { position:absolute; right:44px; bottom:44px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.04em; opacity:.9; }
+
+.grid { display:grid; grid-template-columns:1fr 1fr; gap:24px 28px; margin-top:30px; width:1090px; }
+.qcard {
+  padding:24px 30px;
+  background:rgba(0,0,0,.28); border:2px solid rgba(201,162,39,.55); border-radius:16px;
+}
+.qrow { display:flex; align-items:center; gap:16px; margin-bottom:14px; }
+.qbadge { width:52px; height:52px; border-radius:50%; background:#C9A227; color:#0B1F17;
+  font-weight:900; font-size:26px; display:flex; align-items:center; justify-content:center; flex:none;
+  box-shadow:0 3px 8px rgba(0,0,0,.4); }
+.qtext { color:#F2EEE3; font-size:27px; font-weight:800; line-height:1.25; letter-spacing:-.01em; }
+.ans { color:#C9A227; font-size:29px; font-weight:900; padding-left:68px; letter-spacing:-.01em; }
+
+/* 카드 뒷면 모티프 */
+.card { position:relative; width:66px; height:95px; border-radius:8px;
+  box-shadow:0 6px 14px rgba(0,0,0,.45),0 1px 3px rgba(0,0,0,.3); }
+.card.back { background:repeating-linear-gradient(45deg,#7a1420 0 10px,#5c0f18 10px 20px); border:3px solid #F2EEE3; }
+.deco-cards { position:absolute; left:46px; bottom:34px; display:flex; }
+.deco-cards .card:first-child { transform:rotate(-10deg); }
+.deco-cards .card:last-child { transform:rotate(8deg); margin-left:-26px; margin-top:8px; }
+
+/* 칩 모티프 */
+.chip { position:relative; width:50px; height:50px; border-radius:50%;
+  background:repeating-conic-gradient(#F2EEE3 0deg 20deg, #C9A227 20deg 60deg);
+  box-shadow:0 3px 8px rgba(0,0,0,.45); }
+.chip::after { content:""; position:absolute; inset:10px; border-radius:50%;
+  background:#1d3a29; border:2px dashed rgba(242,238,227,.75); }
+.deco-chips { position:absolute; right:52px; top:48px; display:flex; gap:8px; }
+.deco-chips .chip:last-child { width:38px; height:38px; margin-top:12px; }
+.deco-chips .chip:last-child::after { inset:8px; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="kicker">법적 기준 문답</div>
+  <h1>홀덤펍 <span class="gold">합법 · 불법</span> FAQ</h1>
+
+  <div class="grid">
+    <div class="qcard">
+      <div class="qrow">
+        <div class="qbadge">Q1</div>
+        <div class="qtext">게임 자체가 불법?</div>
+      </div>
+      <div class="ans">환전 없으면 합법</div>
+    </div>
+    <div class="qcard">
+      <div class="qrow">
+        <div class="qbadge">Q2</div>
+        <div class="qtext">시드권은 왜 불법?</div>
+      </div>
+      <div class="ans">현금 환전과 동일 취급</div>
+    </div>
+    <div class="qcard">
+      <div class="qrow">
+        <div class="qbadge">Q3</div>
+        <div class="qtext">바이인은 도박 참가금?</div>
+      </div>
+      <div class="ans">아니요, 게임 이용료</div>
+    </div>
+    <div class="qcard">
+      <div class="qrow">
+        <div class="qbadge">Q4</div>
+        <div class="qtext">온라인 사설 홀덤은?</div>
+      </div>
+      <div class="ans">대부분 불법, 도박죄 적용</div>
+    </div>
+  </div>
+
+  <div class="deco-cards">
+    <div class="card back"></div>
+    <div class="card back"></div>
+  </div>
+  <div class="deco-chips">
+    <div class="chip"></div>
+    <div class="chip"></div>
+  </div>
+
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

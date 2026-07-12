@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden; padding:40px 44px;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  display:flex; flex-direction:column; align-items:center;
+}
+.kicker { color:#C9A227; font-size:15px; font-weight:700; letter-spacing:.28em; text-transform:uppercase; text-align:center; margin-bottom:8px; }
+h1 { color:#F2EEE3; font-size:42px; font-weight:800; text-align:center; text-shadow:0 2px 12px rgba(0,0,0,.45); margin-bottom:24px; }
+h1 .gold { color:#C9A227; }
+/* 카드 스트립: KK + A-7-2 플랍 */
+.strip { display:flex; align-items:center; gap:36px; margin-bottom:24px; }
+.pair, .flop { display:flex; }
+.pair .card:first-child { transform:rotate(-6deg); z-index:1; }
+.pair .card:last-child { transform:rotate(6deg); margin-left:-26px; }
+.flop { gap:10px; }
+.vs { color:#C9A227; font-size:22px; font-weight:900; letter-spacing:.1em; }
+.card { position:relative; width:72px; height:104px; background:linear-gradient(175deg,#FDFBF4 0%,#F2EEE3 100%); border-radius:8px; box-shadow:0 5px 12px rgba(0,0,0,.45),0 1px 3px rgba(0,0,0,.3); }
+.card .corner { position:absolute; top:5px; left:7px; font-size:19px; font-weight:800; line-height:1; text-align:center; }
+.card .corner .csuit { display:block; font-size:13px; line-height:1; margin-top:1px; }
+.card .big { position:absolute; top:50%; left:50%; transform:translate(-42%,-44%); font-size:44px; line-height:1; }
+.black { color:#1a1a1a; } .red { color:#c0392b; }
+/* 3개 섹션 */
+.grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:20px; width:100%; }
+.sec { background:rgba(0,0,0,.28); border:2px solid rgba(201,162,39,.55); border-radius:16px; padding:20px 20px 18px; }
+.nb { width:44px; height:44px; border-radius:50%; background:#C9A227; color:#0B1F17; font-size:21px; font-weight:900; display:flex; align-items:center; justify-content:center; margin-bottom:12px; }
+.st { color:#F2EEE3; font-size:21px; font-weight:800; line-height:1.25; margin-bottom:12px; }
+.li { display:flex; gap:9px; align-items:flex-start; color:#cfd8c8; font-size:16px; font-weight:600; line-height:1.4; margin-bottom:8px; }
+.li .b { color:#C9A227; font-weight:900; line-height:1.3; }
+.li .em { color:#C9A227; font-weight:800; }
+.li .no { color:#e07b6e; font-weight:800; }
+.wordmark { position:absolute; right:44px; bottom:20px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.04em; opacity:.9; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="kicker">Pocket Kings</div>
+  <h1>포켓 킹(<span class="gold">KK</span>) 활용법 핵심 요약</h1>
+  <div class="strip">
+    <div class="pair">
+      <div class="card"><div class="corner black">K<span class="csuit">&#9824;</span></div><div class="big black">&#9824;</div></div>
+      <div class="card"><div class="corner red">K<span class="csuit">&#9829;</span></div><div class="big red">&#9829;</div></div>
+    </div>
+    <div class="vs">FLOP</div>
+    <div class="flop">
+      <div class="card"><div class="corner red">A<span class="csuit">&#9830;</span></div><div class="big red">&#9830;</div></div>
+      <div class="card"><div class="corner black">7<span class="csuit">&#9827;</span></div><div class="big black">&#9827;</div></div>
+      <div class="card"><div class="corner red">2<span class="csuit">&#9829;</span></div><div class="big red">&#9829;</div></div>
+    </div>
+  </div>
+  <div class="grid">
+    <div class="sec">
+      <div class="nb">1</div>
+      <div class="st">프리플랍 위력</div>
+      <div class="li"><span class="b">&#8226;</span><span><span class="em">3벳·4벳</span>으로 가치를 극대화</span></div>
+      <div class="li"><span class="b">&#8226;</span><span>림프·콜은 KK의 낭비</span></div>
+    </div>
+    <div class="sec">
+      <div class="nb">2</div>
+      <div class="st">A 깔린 플랍</div>
+      <div class="li"><span class="b">&#8226;</span><span><span class="em">C벳</span>으로 상대 반응 확인</span></div>
+      <div class="li"><span class="b">&#8226;</span><span>무조건 <span class="no">체크폴드는 금지</span></span></div>
+    </div>
+    <div class="sec">
+      <div class="nb">3</div>
+      <div class="st">프리플랍 KK 폴드는 극히 드묾</div>
+      <div class="li"><span class="b">&#8226;</span><span><span class="em">딥스택 5벳</span> 맞섰을 때 정도</span></div>
+      <div class="li"><span class="b">&#8226;</span><span>토너먼트 <span class="em">버블</span> 같은 극단 상황뿐</span></div>
+    </div>
+  </div>
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

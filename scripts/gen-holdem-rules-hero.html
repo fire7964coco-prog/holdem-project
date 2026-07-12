@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.hdr { position:absolute; top:22px; left:0; width:100%; text-align:center; }
+.hdr h1 { color:#F2EEE3; font-size:27px; font-weight:800; text-shadow:0 2px 12px rgba(0,0,0,.45); }
+.hdr .sub { color:#C9A227; font-size:14px; font-weight:700; margin-top:5px; }
+.table {
+  position:absolute; left:240px; top:212px; width:720px; height:316px;
+  border-radius:50%;
+  background:radial-gradient(ellipse at 50% 40%, #1d4630 0%, #163a27 60%, #10301f 100%);
+  border:10px solid #3a2a16;
+  box-shadow:0 14px 40px rgba(0,0,0,.55), inset 0 0 60px rgba(0,0,0,.35);
+}
+.arrows { position:absolute; left:0; top:0; pointer-events:none; }
+.board { position:absolute; left:431px; top:300px; display:flex; gap:12px; }
+.slot {
+  width:58px; height:80px; border-radius:7px;
+  border:2px dashed rgba(201,162,39,.7); background:rgba(0,0,0,.22);
+}
+.blabels { position:absolute; top:386px; left:431px; width:338px; display:flex; color:#C9A227; font-size:12px; font-weight:700; }
+.blabels .flop { width:198px; text-align:center; }
+.blabels .turn { width:70px; text-align:center; }
+.blabels .river { width:70px; text-align:center; }
+.pot { position:absolute; left:0; top:418px; width:1200px; display:flex; justify-content:center; align-items:center; gap:8px; }
+.chip { width:30px; height:30px; border-radius:50%; border:4px dashed #F2EEE3; box-shadow:0 3px 6px rgba(0,0,0,.5); }
+.chip.g { background:#C9A227; } .chip.r { background:#a33327; } .chip.b { background:#1f3d63; }
+.pot .plabel { color:#F2EEE3; font-size:14px; font-weight:800; margin-left:6px; }
+.seat {
+  position:absolute; width:92px; height:92px; border-radius:50%;
+  background:linear-gradient(170deg,#0e2419,#0a1b12);
+  border:3px solid rgba(201,162,39,.75);
+  box-shadow:0 6px 16px rgba(0,0,0,.5);
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+}
+.seat .abbr { color:#F2EEE3; font-size:20px; font-weight:800; line-height:1.1; }
+.seat .name { color:#C9A227; font-size:11px; font-weight:700; margin-top:3px; }
+.seat.btn { border-color:#C9A227; background:linear-gradient(170deg,#16301f,#0e2315); box-shadow:0 0 22px rgba(201,162,39,.45), 0 6px 16px rgba(0,0,0,.5); }
+.dbtn {
+  position:absolute; left:639px; top:577px; width:34px; height:34px; border-radius:50%;
+  background:linear-gradient(175deg,#FDFBF4,#E8E2D0); color:#1a1a1a;
+  font-size:18px; font-weight:900; display:flex; align-items:center; justify-content:center;
+  box-shadow:0 3px 8px rgba(0,0,0,.55);
+}
+.legend { position:absolute; left:44px; bottom:40px; color:#F2EEE3; font-size:13px; font-weight:600; opacity:.85; }
+.legend .gold { color:#C9A227; font-weight:800; }
+.wordmark { position:absolute; right:44px; bottom:40px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.04em; opacity:.9; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="hdr">
+    <h1>홀덤 6맥스 테이블 포지션</h1>
+    <div class="sub">프리플랍 액션은 UTG부터 시계방향으로 BB까지</div>
+  </div>
+
+  <div class="table"></div>
+
+  <svg class="arrows" width="1200" height="675" viewBox="0 0 1200 675">
+    <defs>
+      <marker id="ah" markerWidth="10" markerHeight="10" refX="7" refY="5" orient="auto">
+        <path d="M0,0 L10,5 L0,10 z" fill="#C9A227"/>
+      </marker>
+    </defs>
+    <path d="M 685 235 A 330 140 0 1 1 281 334" fill="none" stroke="#C9A227" stroke-width="4"
+      stroke-dasharray="14 12" marker-end="url(#ah)" opacity="0.9"/>
+  </svg>
+
+  <div class="board">
+    <div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div>
+  </div>
+  <div class="blabels"><div class="flop">플랍</div><div class="turn">턴</div><div class="river">리버</div></div>
+
+  <div class="pot">
+    <div class="chip g"></div><div class="chip r"></div><div class="chip b"></div>
+    <div class="plabel">팟</div>
+  </div>
+
+  <div class="seat btn" style="left:554px; top:514px;"><div class="abbr">BTN</div><div class="name">버튼</div></div>
+  <div class="seat" style="left:190px; top:419px;"><div class="abbr">SB</div><div class="name">스몰블라인드</div></div>
+  <div class="seat" style="left:190px; top:229px;"><div class="abbr">BB</div><div class="name">빅블라인드</div></div>
+  <div class="seat" style="left:554px; top:134px;"><div class="abbr">UTG</div><div class="name">언더더건</div></div>
+  <div class="seat" style="left:918px; top:229px;"><div class="abbr">HJ</div><div class="name">하이잭</div></div>
+  <div class="seat" style="left:918px; top:419px;"><div class="abbr">CO</div><div class="name">컷오프</div></div>
+
+  <div class="dbtn">D</div>
+
+  <div class="legend"><span class="gold">골드 점선</span> = 프리플랍 액션 순서 (UTG &#8594; BB)</div>
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

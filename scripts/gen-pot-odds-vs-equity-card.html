@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden; padding:44px 60px 40px;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:"Segoe UI","Malgun Gothic","Apple SD Gothic Neo",-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
+  display:flex; flex-direction:column; align-items:center;
+}
+.kicker { color:#C9A227; font-size:15px; font-weight:700; letter-spacing:.28em; text-transform:uppercase; text-align:center; margin-bottom:8px; }
+h1 { color:#F2EEE3; font-size:46px; font-weight:800; text-align:center; text-shadow:0 2px 12px rgba(0,0,0,.45); margin-bottom:26px; }
+h1 .gold { color:#C9A227; }
+.duel { display:flex; align-items:center; gap:40px; flex:1; }
+.side {
+  width:340px; background:rgba(0,0,0,.28); border:2px solid rgba(201,162,39,.55); border-radius:16px;
+  padding:24px 24px 22px; display:flex; flex-direction:column; align-items:center;
+}
+.side h2 { color:#C9A227; font-size:21px; font-weight:800; letter-spacing:.14em; margin-bottom:16px; }
+.gaugewrap { height:190px; display:flex; align-items:flex-end; justify-content:center; }
+.gauge {
+  width:86px; height:190px; border-radius:12px; background:rgba(242,238,227,.12);
+  border:1px solid rgba(201,162,39,.4); position:relative; overflow:hidden;
+}
+.gauge i {
+  position:absolute; left:0; right:0; bottom:0; height:33%;
+  background:linear-gradient(180deg,#E0BC45,#C9A227); border-radius:0 0 11px 11px;
+}
+.pie {
+  width:190px; height:190px; border-radius:50%;
+  background:conic-gradient(#2E7D46 0 36%, rgba(242,238,227,.12) 36% 100%);
+  border:2px solid rgba(201,162,39,.4);
+  position:relative;
+}
+.pie::after {
+  content:""; position:absolute; inset:52px; border-radius:50%;
+  background:#13291D; border:1px solid rgba(201,162,39,.35);
+}
+.bignum { margin-top:16px; font-size:52px; font-weight:900; line-height:1; }
+.pot .bignum { color:#C9A227; }
+.eq .bignum { color:#5CB878; }
+.sub { margin-top:6px; color:#F2EEE3; font-size:17px; font-weight:700; letter-spacing:.08em; opacity:.85; }
+.mid { display:flex; flex-direction:column; align-items:center; gap:14px; }
+.vs { color:#F2EEE3; font-size:26px; font-weight:900; letter-spacing:.1em; opacity:.9; }
+.comp { color:#F2EEE3; font-size:24px; font-weight:800; }
+.comp .g { color:#5CB878; } .comp .y { color:#C9A227; }
+.arrow { color:#5CB878; font-size:44px; font-weight:900; line-height:1; }
+.callpill {
+  background:#2E7D46; color:#fff; border-radius:999px; padding:12px 44px;
+  font-size:30px; font-weight:900; letter-spacing:.12em;
+  box-shadow:0 6px 16px rgba(0,0,0,.4);
+}
+.wordmark { position:absolute; right:44px; bottom:20px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.04em; opacity:.9; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="kicker">Call or Fold</div>
+  <h1>Pot Odds <span class="gold">vs</span> Equity</h1>
+
+  <div class="duel">
+    <div class="side pot">
+      <h2>POT ODDS</h2>
+      <div class="gaugewrap"><div class="gauge"><i></i></div></div>
+      <div class="bignum">33%</div>
+      <div class="sub">필요 승률</div>
+    </div>
+
+    <div class="mid">
+      <div class="vs">VS</div>
+      <div class="comp"><span class="g">36%</span> &gt; <span class="y">33%</span></div>
+      <div class="arrow">&darr;</div>
+      <div class="callpill">CALL</div>
+    </div>
+
+    <div class="side eq">
+      <h2>EQUITY</h2>
+      <div class="gaugewrap"><div class="pie"></div></div>
+      <div class="bignum">36%</div>
+      <div class="sub">내 승률</div>
+    </div>
+  </div>
+
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

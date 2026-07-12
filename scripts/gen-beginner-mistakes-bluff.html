@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden; padding:44px;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  display:flex; flex-direction:column; align-items:center; justify-content:flex-start;
+}
+.kicker { color:#C9A227; font-size:15px; font-weight:700; letter-spacing:.28em; text-transform:uppercase; text-align:center; margin-bottom:8px; }
+h1 { color:#F2EEE3; font-size:46px; font-weight:800; text-align:center; text-shadow:0 2px 12px rgba(0,0,0,.45); }
+.wordmark { position:absolute; right:44px; bottom:44px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.04em; opacity:.9; }
+
+.card { position:relative; width:96px; height:138px; background:linear-gradient(175deg,#FDFBF4 0%,#F2EEE3 100%); border-radius:10px; box-shadow:0 6px 14px rgba(0,0,0,.45),0 1px 3px rgba(0,0,0,.3); }
+.card .corner { position:absolute; top:7px; left:9px; font-size:25px; font-weight:800; line-height:1; text-align:center; }
+.card .corner .csuit { display:block; font-size:17px; line-height:1; margin-top:1px; }
+.card .big { position:absolute; top:50%; left:50%; transform:translate(-42%,-44%); font-size:60px; line-height:1; }
+.black { color:#1a1a1a; } .red { color:#c0392b; }
+
+.cols { display:flex; gap:26px; margin-top:26px; }
+.panel {
+  width:530px; height:400px; border-radius:16px; padding:24px;
+  background:rgba(0,0,0,.28); border:2px solid rgba(201,162,39,.55);
+  display:flex; flex-direction:column; align-items:center;
+}
+.panel-title { color:#C9A227; font-size:21px; font-weight:800; letter-spacing:.04em; }
+
+.hand { display:flex; gap:14px; margin-top:14px; }
+.hand .card:first-child { transform:rotate(-7deg); }
+.hand .card:last-child { transform:rotate(7deg); }
+
+.chips { display:flex; align-items:flex-end; gap:10px; margin-top:18px; position:relative; }
+.chip {
+  width:46px; height:46px; border-radius:50%;
+  border:4px dashed #F2EEE3; box-shadow:0 4px 8px rgba(0,0,0,.45);
+}
+.stack { display:flex; flex-direction:column; gap:-1px; }
+.stack .chip { margin-top:-30px; }
+.stack .chip:first-child { margin-top:0; }
+.chip.c-red { background:#c0392b; } .chip.c-gold { background:#C9A227; } .chip.c-green { background:#2E7D46; }
+.push { color:#C9A227; font-size:30px; font-weight:900; align-self:center; margin-left:6px; letter-spacing:-2px; }
+
+.hand-note {
+  margin-top:16px; background:rgba(192,57,43,.18); border:2px solid #c0392b; border-radius:999px;
+  color:#F2EEE3; font-size:20px; font-weight:800; padding:9px 24px;
+}
+
+.chart { flex:1; display:flex; align-items:flex-end; gap:34px; }
+.bar-wrap { display:flex; flex-direction:column; align-items:center; }
+.bar-box { position:relative; width:110px; height:168px; border-radius:10px; background:rgba(255,255,255,.08); border:2px solid rgba(201,162,39,.4); overflow:hidden; display:flex; align-items:flex-end; }
+.bar-fill { width:100%; border-radius:8px 8px 0 0; }
+.fill-red { height:100%; background:linear-gradient(180deg,#e05a48,#c0392b); }
+.bar-pct { color:#F2EEE3; font-size:24px; font-weight:900; margin-top:10px; }
+.bar-name { color:#F2EEE3; font-size:17px; font-weight:700; margin-top:4px; opacity:.85; }
+
+.caption {
+  margin-top:16px; background:rgba(201,162,39,.14); border:2px solid rgba(201,162,39,.6); border-radius:999px;
+  color:#F2EEE3; font-size:19px; font-weight:800; padding:9px 22px;
+}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="kicker">홀덤 초보 실수</div>
+  <h1>과도한 블러핑</h1>
+
+  <div class="cols">
+    <div class="panel">
+      <div class="panel-title">최약 핸드로 올인</div>
+      <div class="hand">
+        <div class="card"><div class="corner red">7<span class="csuit">&#9829;</span></div><div class="big red">&#9829;</div></div>
+        <div class="card"><div class="corner black">2<span class="csuit">&#9824;</span></div><div class="big black">&#9824;</div></div>
+      </div>
+      <div class="chips">
+        <div class="stack">
+          <div class="chip c-red"></div>
+          <div class="chip c-red"></div>
+        </div>
+        <div class="stack">
+          <div class="chip c-gold"></div>
+          <div class="chip c-gold"></div>
+          <div class="chip c-gold"></div>
+        </div>
+        <div class="stack">
+          <div class="chip c-green"></div>
+        </div>
+        <div class="push">&#8594;</div>
+      </div>
+      <div class="hand-note">7-2로 또 블러프</div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-title">블러핑 빈도 100%</div>
+      <div class="chart">
+        <div class="bar-wrap">
+          <div class="bar-box"><div class="bar-fill fill-red"></div></div>
+          <div class="bar-pct">100%</div>
+          <div class="bar-name">블러핑 빈도</div>
+        </div>
+      </div>
+      <div class="caption">매번 블러프 = 바로 읽힌다</div>
+    </div>
+  </div>
+
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

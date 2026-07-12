@@ -5,7 +5,19 @@
 
 ---
 
-## ▶▶▶ 새 세션 START HERE (2026-07-12 — EN 이미지 교체 배포됨 / 다음=KO 이미지 전수교체)
+## ▶▶▶ 새 세션 START HERE (2026-07-12 밤 — KO 이미지 코드렌더 85개 교체·배포됨 / 다음=실사 15개 Nano Banana + GSC)
+
+> **모드**: 이미지 교체작업 자동(Fable5). 코드렌더 트랙 종료 → 남은 건 **실사(사용자 Nano Banana)** + 사용자 GSC.
+
+### ✅ 오늘(07-12) 완료 2 — KO 이미지 §13 코드렌더 85개 교체·배포
+`defects.md`의 KO 결함(EN 23개 제외) 전량을 §13-안전 HTML 코드렌더로 재생성·배치. Fable5 10에이전트 병렬 저작 + 메인 렌더/전수 육안검수/배치. **85개 전부 통과**(카드 유효·중복랭크0·한글철자·<60KB). **404 8개도 신규생성**(bluffing-* 4·holdem-position-* 4, posts.ts 본문). 빌드 ✅ 199 pages·에러0. 파이프라인=`scripts/gen-*.html`+`_GEN_SPEC.md`+`render-gen-batch.mjs`(인자필터). 상세=WORKLOG 2026-07-12.
+
+### ▶▶ 다음 = 🎨 실사 15개 Nano Banana (사용자 몫) + GSC
+`docs/image-audit/photo-prompts-nano-banana.md`에 **코드렌더 불가 실사 15개** 영어 프롬프트 정리(§13·워터마크 반영). apt-incheon처럼 Nano Banana 생성 → `public/images/`에 파일명 그대로 배치 → 빌드·커밋. 목록: apt-jeju 8 · pub-legal-card-table · pub-legal-casino-floor · beginner-mistakes-korea-pub · bubble-faq/summary/table · wsop-2026-tournament-hero · 3bet-sizing. 이후 콘텐츠 트랙 복귀(감글 retrofit·다국어 확장, 아래 이전 블록).
+
+---
+
+## ▶▶▶ (이전) START HERE (2026-07-12 — EN 이미지 교체 배포됨 / 다음=KO 이미지 전수교체)
 
 > **모드**: 이미지 교체작업은 사용자가 **자동(Fable5)** 재지시(2026-07-12, [[retrofit-full-automation]] 참고 — 작업별 on/off). KO 이미지 교체도 자동으로 이어가면 됨.
 

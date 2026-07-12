@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden; padding:36px 44px 44px;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+/* emotion gauge top center */
+.gaugewrap { position:absolute; left:50%; top:36px; transform:translateX(-50%); width:260px; text-align:center; z-index:6; }
+.gauge {
+  position:relative; width:220px; height:110px; margin:0 auto; overflow:hidden;
+}
+.gauge .arc {
+  position:absolute; left:0; top:0; width:220px; height:220px; border-radius:50%;
+  background:conic-gradient(from 270deg, #2e7d46 0deg 60deg, #C9A227 60deg 120deg, #c0392b 120deg 180deg, rgba(0,0,0,0) 180deg 360deg);
+}
+.gauge .hole { position:absolute; left:38px; top:38px; width:144px; height:144px; border-radius:50%; background:#10251B; }
+.needle {
+  position:absolute; left:50%; bottom:0; width:8px; height:92px; margin-left:-4px;
+  background:#F2EEE3; border-radius:4px 4px 0 0; transform-origin:50% 100%;
+  transform:rotate(64deg); box-shadow:0 0 8px rgba(0,0,0,.5); z-index:2;
+}
+.pivot { position:absolute; left:50%; bottom:-12px; width:26px; height:26px; margin-left:-13px; border-radius:50%; background:#C9A227; z-index:3; }
+.title { margin-top:16px; color:#F2EEE3; font-size:40px; font-weight:900; text-shadow:0 2px 12px rgba(0,0,0,.5); white-space:nowrap; }
+.title .gold { color:#c0392b; }
+/* panels */
+.panel {
+  position:absolute; top:222px; bottom:44px; width:508px; border-radius:18px;
+  border:2px solid rgba(201,162,39,.55); overflow:hidden;
+}
+.panel.calm { left:44px;  background:radial-gradient(ellipse at 50% 100%, #1d5c38 0%, #14432a 60%, #0f3521 100%); }
+.panel.mad  { right:44px; background:radial-gradient(ellipse at 50% 100%, #5c1d1d 0%, #431414 60%, #351010 100%); }
+/* felt strip bottom of each panel */
+.feltline { position:absolute; left:0; right:0; bottom:0; height:96px; background:linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,.35)); }
+/* calm player */
+.figure { position:absolute; left:50%; transform:translateX(-50%); }
+.calmfig { bottom:96px; width:220px; height:230px; }
+.c-body { position:absolute; left:50%; bottom:0; transform:translateX(-50%); width:190px; height:120px; border-radius:70px 70px 0 0; background:#2f4a3a; box-shadow:0 6px 16px rgba(0,0,0,.4); }
+.c-head { position:absolute; left:50%; bottom:104px; transform:translateX(-50%); width:100px; height:100px; border-radius:50%; background:#F5F0E4; box-shadow:0 5px 12px rgba(0,0,0,.4); }
+.c-hair { position:absolute; left:50%; bottom:160px; transform:translateX(-50%); width:106px; height:52px; border-radius:53px 53px 0 0; background:#3d2c1c; }
+.c-eye { position:absolute; bottom:150px; width:20px; height:5px; border-radius:3px; background:#1a1a1a; }
+.c-eye.l { left:74px; } .c-eye.r { left:126px; }
+.c-mouth { position:absolute; left:50%; bottom:124px; transform:translateX(-50%); width:30px; height:12px; border:4px solid #1a1a1a; border-top:none; border-radius:0 0 14px 14px; }
+/* calm neat chip stacks */
+.stacks { position:absolute; bottom:34px; display:flex; gap:14px; align-items:flex-end; }
+.stacks.left { left:60px; }
+.stk { display:flex; flex-direction:column-reverse; }
+.ch { width:56px; height:16px; border-radius:8px; border:2px solid rgba(0,0,0,.3); margin-top:-4px; }
+.ch.g { background:#2e7d46; } .ch.gd { background:#C9A227; } .ch.cr { background:#F2EEE3; }
+/* tilted player */
+.madfig { bottom:96px; width:240px; height:240px; }
+.m-body { position:absolute; left:50%; bottom:0; transform:translateX(-50%) rotate(-4deg); width:190px; height:118px; border-radius:70px 70px 0 0; background:#6e2318; box-shadow:0 6px 16px rgba(0,0,0,.4); }
+.m-head { position:absolute; left:50%; bottom:102px; transform:translateX(-50%) rotate(7deg); width:104px; height:104px; border-radius:50%; background:#d24537; box-shadow:0 5px 14px rgba(0,0,0,.5); }
+.m-brow { position:absolute; width:26px; height:7px; border-radius:4px; background:#1a1a1a; }
+.m-brow.l { left:80px; bottom:162px; transform:rotate(24deg); }
+.m-brow.r { left:134px; bottom:162px; transform:rotate(-24deg); }
+.m-eye { position:absolute; bottom:146px; width:12px; height:12px; border-radius:50%; background:#1a1a1a; }
+.m-eye.l { left:88px; } .m-eye.r { left:140px; }
+.m-mouth { position:absolute; left:50%; bottom:114px; transform:translateX(-50%) rotate(7deg); width:40px; height:18px; border:5px solid #1a1a1a; border-bottom:none; border-radius:20px 20px 0 0; }
+/* steam puffs */
+.steam { position:absolute; border-radius:50%; background:rgba(242,238,227,.85); box-shadow:0 0 14px rgba(242,238,227,.4); }
+.st1 { width:26px; height:26px; left:64px; top:66px; }
+.st2 { width:18px; height:18px; left:96px; top:44px; }
+.st3 { width:26px; height:26px; right:78px; top:60px; }
+.st4 { width:16px; height:16px; right:56px; top:38px; }
+/* flying chips */
+.fly { position:absolute; width:44px; height:44px; border-radius:50%; border:5px dashed #F2EEE3; }
+.fly.f1 { left:44px; top:150px; background:#c0392b; transform:rotate(20deg); }
+.fly.f2 { right:52px; top:130px; background:#C9A227; transform:rotate(-28deg); }
+.fly.f3 { left:96px; top:250px; background:#2e7d46; transform:rotate(45deg); }
+.fly.f4 { right:110px; top:236px; background:#c0392b; transform:rotate(-12deg); }
+/* motion streaks */
+.zip { position:absolute; height:5px; border-radius:3px; background:rgba(242,238,227,.5); }
+.z1 { width:56px; left:96px; top:170px; transform:rotate(-18deg); }
+.z2 { width:44px; right:104px; top:150px; transform:rotate(14deg); }
+.z3 { width:48px; right:160px; top:258px; transform:rotate(-8deg); }
+/* messy chip pile (tilted side) */
+.pile { position:absolute; bottom:30px; left:52px; }
+.pch { position:absolute; width:56px; height:16px; border-radius:8px; border:2px solid rgba(0,0,0,.3); }
+.p1 { background:#c0392b; left:0; bottom:0; transform:rotate(-10deg); }
+.p2 { background:#F2EEE3; left:40px; bottom:4px; transform:rotate(14deg); }
+.p3 { background:#C9A227; left:14px; bottom:16px; transform:rotate(-22deg); }
+.p4 { background:#2e7d46; left:60px; bottom:24px; transform:rotate(6deg); }
+.wordmark { position:absolute; right:44px; bottom:44px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.04em; opacity:.9; z-index:7; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="gaugewrap">
+    <div class="gauge">
+      <div class="arc"></div>
+      <div class="hole"></div>
+      <div class="needle"></div>
+      <div class="pivot"></div>
+    </div>
+    <div class="title"><span class="gold">틸트</span> (Tilt)</div>
+  </div>
+
+  <div class="panel calm">
+    <div class="feltline"></div>
+    <div class="figure calmfig">
+      <div class="c-body"></div>
+      <div class="c-head"></div>
+      <div class="c-hair"></div>
+      <div class="c-eye l"></div><div class="c-eye r"></div>
+      <div class="c-mouth"></div>
+    </div>
+    <div class="stacks left">
+      <div class="stk"><div class="ch g"></div><div class="ch g"></div><div class="ch g"></div><div class="ch g"></div></div>
+      <div class="stk"><div class="ch gd"></div><div class="ch gd"></div><div class="ch gd"></div></div>
+      <div class="stk"><div class="ch cr"></div><div class="ch cr"></div><div class="ch cr"></div><div class="ch cr"></div><div class="ch cr"></div></div>
+    </div>
+  </div>
+
+  <div class="panel mad">
+    <div class="feltline"></div>
+    <div class="steam st1"></div><div class="steam st2"></div><div class="steam st3"></div><div class="steam st4"></div>
+    <div class="fly f1"></div><div class="fly f2"></div><div class="fly f3"></div><div class="fly f4"></div>
+    <div class="zip z1"></div><div class="zip z2"></div><div class="zip z3"></div>
+    <div class="figure madfig">
+      <div class="m-body"></div>
+      <div class="m-head"></div>
+      <div class="m-brow l"></div><div class="m-brow r"></div>
+      <div class="m-eye l"></div><div class="m-eye r"></div>
+      <div class="m-mouth"></div>
+    </div>
+    <div class="pile">
+      <div class="pch p1"></div><div class="pch p2"></div><div class="pch p3"></div><div class="pch p4"></div>
+    </div>
+  </div>
+
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

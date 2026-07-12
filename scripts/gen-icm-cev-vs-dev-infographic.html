@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden; padding:44px;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  display:flex; flex-direction:column; align-items:center;
+}
+.kicker { color:#C9A227; font-size:15px; font-weight:700; letter-spacing:.28em; text-transform:uppercase; text-align:center; margin-bottom:8px; }
+h1 { color:#F2EEE3; font-size:52px; font-weight:800; text-align:center; text-shadow:0 2px 12px rgba(0,0,0,.45); margin-bottom:30px; }
+h1 .c { color:#C9A227; }
+.cols { display:grid; grid-template-columns:1fr 84px 1fr; align-items:stretch; width:100%; max-width:1020px; }
+.panel { background:rgba(0,0,0,.28); border:2px solid rgba(201,162,39,.55); border-radius:18px; padding:30px 26px 26px; display:flex; flex-direction:column; align-items:center; }
+.ptitle { font-size:40px; font-weight:900; margin-bottom:22px; letter-spacing:.02em; }
+.panel.left .ptitle { color:#F2EEE3; }
+.panel.right .ptitle { color:#C9A227; }
+.plabel { color:#cfd8c8; font-size:22px; font-weight:700; margin-top:20px; text-align:center; }
+.vs { display:flex; align-items:center; justify-content:center; color:#C9A227; font-size:24px; font-weight:900; letter-spacing:.1em; }
+/* 칩 아이콘 */
+.chip { position:relative; width:130px; height:130px; border-radius:50%; background:#1e3a2a; border:9px dashed #C9A227; box-shadow:0 8px 18px rgba(0,0,0,.5), inset 0 0 0 8px #16281d; display:flex; align-items:center; justify-content:center; }
+.chip .inner { width:74px; height:74px; border-radius:50%; border:3px solid rgba(201,162,39,.8); }
+/* 돈가방 아이콘 */
+.bag { position:relative; width:130px; height:130px; display:flex; align-items:flex-end; justify-content:center; }
+.bag .body { width:112px; height:96px; background:linear-gradient(170deg,#C9A227 0%,#a8871e 100%); border-radius:46% 46% 44% 44%; box-shadow:0 8px 18px rgba(0,0,0,.5); display:flex; align-items:center; justify-content:center; }
+.bag .tie { position:absolute; top:14px; left:50%; transform:translateX(-50%); width:34px; height:16px; background:#8a6d13; border-radius:6px; }
+.bag .neck { position:absolute; top:0; left:50%; transform:translateX(-50%); width:22px; height:18px; background:linear-gradient(#a8871e,#8a6d13); border-radius:4px 4px 0 0; }
+.bag .sym { color:#0B1F17; font-size:52px; font-weight:900; line-height:1; }
+/* 푸터 */
+.footer { margin-top:32px; background:rgba(201,162,39,.14); border:2px solid rgba(201,162,39,.65); border-radius:14px; padding:14px 36px; color:#F2EEE3; font-size:25px; font-weight:800; }
+.footer .c { color:#C9A227; }
+.wordmark { position:absolute; right:44px; bottom:24px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.04em; opacity:.9; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="kicker">ICM Basics</div>
+  <h1><span class="c">cEV</span> vs <span class="c">$EV</span></h1>
+  <div class="cols">
+    <div class="panel left">
+      <div class="ptitle">cEV</div>
+      <div class="chip"><div class="inner"></div></div>
+      <div class="plabel">Chip value</div>
+    </div>
+    <div class="vs">VS</div>
+    <div class="panel right">
+      <div class="ptitle">$EV</div>
+      <div class="bag">
+        <div class="neck"></div>
+        <div class="tie"></div>
+        <div class="body"><div class="sym">$</div></div>
+      </div>
+      <div class="plabel">Prize money value</div>
+    </div>
+  </div>
+  <div class="footer">On the bubble: play by <span class="c">$EV</span></div>
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

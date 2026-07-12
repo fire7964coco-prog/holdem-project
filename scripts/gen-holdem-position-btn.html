@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden; padding:44px;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+h1 { color:#F2EEE3; font-size:42px; font-weight:800; text-align:center; text-shadow:0 2px 12px rgba(0,0,0,.45); }
+h1 .gold { color:#C9A227; }
+.wordmark { position:absolute; right:44px; bottom:44px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.04em; opacity:.9; z-index:6; }
+
+.tablewrap { position:absolute; left:50%; top:132px; transform:translateX(-50%); width:780px; height:392px; }
+.felt { position:absolute; left:70px; top:44px; width:640px; height:304px; border-radius:50%;
+  background:radial-gradient(ellipse at 50% 40%, #1E4D33 0%, #143726 70%, #0f2b1e 100%);
+  border:12px solid #2c1d12; box-shadow:0 0 0 4px #C9A227, 0 16px 36px rgba(0,0,0,.55), inset 0 0 60px rgba(0,0,0,.35); }
+.seat { position:absolute; background:rgba(0,0,0,.5); border:2px solid rgba(201,162,39,.5); color:#F2EEE3; font-weight:800; font-size:20px; padding:9px 24px; border-radius:999px; box-shadow:0 4px 10px rgba(0,0,0,.4); }
+.seat.hot { background:#C9A227; color:#0B1F17; border-color:#F2EEE3; font-size:23px; padding:11px 28px; box-shadow:0 0 26px rgba(201,162,39,.65); }
+.utg { left:148px; top:0; }
+.mp  { right:148px; top:0; }
+.co  { right:-16px; top:158px; }
+.btn { right:136px; bottom:0; }
+.sb  { left:148px; bottom:6px; }
+.bb  { left:-16px; top:158px; }
+.dbtn { position:absolute; right:196px; bottom:74px; width:34px; height:34px; border-radius:50%; background:#F2EEE3; color:#1a1a1a; font-weight:900; font-size:18px; display:flex; align-items:center; justify-content:center; border:3px solid #C9A227; z-index:4; }
+.lastact { position:absolute; left:50%; top:172px; transform:translateX(-50%); color:#C9A227; font-size:23px; font-weight:900; text-align:center; letter-spacing:.02em; }
+.arr { position:absolute; right:236px; bottom:112px; color:#C9A227; font-size:40px; font-weight:900; transform:rotate(52deg); }
+
+.banner { position:absolute; left:50%; bottom:46px; transform:translateX(-50%); background:#C9A227; color:#0B1F17; font-weight:900; font-size:23px; padding:12px 36px; border-radius:12px; box-shadow:0 6px 16px rgba(0,0,0,.4); white-space:nowrap; }
+</style></head>
+<body>
+<div class="stage">
+  <h1>버튼 포지션 <span class="gold">(BTN)</span></h1>
+  <div class="tablewrap">
+    <div class="felt"></div>
+    <div class="lastact">마지막 행동</div>
+    <div class="arr">&#8600;</div>
+    <div class="seat utg">UTG</div>
+    <div class="seat mp">MP</div>
+    <div class="seat co">CO</div>
+    <div class="seat hot btn">BTN</div>
+    <div class="seat sb">SB</div>
+    <div class="seat bb">BB</div>
+    <div class="dbtn">D</div>
+  </div>
+  <div class="banner">포스트플랍 항상 마지막 = 최고 자리</div>
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body></html>

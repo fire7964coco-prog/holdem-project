@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#F5F0E4; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden; padding:38px 44px 38px 74px;
+  background:
+    radial-gradient(ellipse 800px 400px at 50% -10%, rgba(201,162,39,0.10), rgba(201,162,39,0) 60%),
+    linear-gradient(165deg,#F7F2E7 0%,#F1EBDC 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color:#26311f;
+}
+.spiral { position:absolute; left:20px; top:0; bottom:0; width:24px; display:flex; flex-direction:column; justify-content:space-evenly; }
+.spiral span { display:block; width:20px; height:20px; border-radius:50%; border:3px solid #B7AE97; background:#F5F0E4; box-shadow:inset 0 2px 3px rgba(0,0,0,.18); }
+.kicker { color:#C9A227; font-size:14px; font-weight:800; letter-spacing:.26em; text-transform:uppercase; margin-bottom:6px; }
+h1 { color:#26311f; font-size:42px; font-weight:800; line-height:1.1; margin-bottom:8px; }
+h1 .gold { color:#C9A227; }
+.rule { width:120px; height:5px; background:#C9A227; border-radius:3px; margin-bottom:24px; }
+.cols { display:grid; grid-template-columns:480px 1fr; gap:28px; align-items:start; }
+/* 좌: 승률 표 */
+.panel { background:#FDFBF4; border:2px solid rgba(201,162,39,.6); border-radius:16px; padding:20px 22px; }
+.ptitle { font-size:21px; font-weight:800; color:#26311f; margin-bottom:14px; }
+table { width:100%; border-collapse:collapse; }
+th { background:#C9A227; color:#F5F0E4; font-size:17px; font-weight:800; padding:10px 12px; text-align:center; }
+th:first-child { border-radius:10px 0 0 0; text-align:left; }
+th:last-child { border-radius:0 10px 0 0; }
+td { font-size:19px; font-weight:700; color:#26311f; padding:12px; border-bottom:2px solid rgba(201,162,39,.28); text-align:center; }
+td:first-child { text-align:left; }
+tr:last-child td { border-bottom:none; }
+td.pct { font-weight:900; color:#2E7D46; }
+tr.drop td.pct { color:#b03a2e; }
+/* 우: 단일 전략 섹션 */
+.strat { background:#FDFBF4; border:2px solid rgba(46,125,70,.5); border-radius:16px; padding:22px 24px; }
+.stitle { display:flex; align-items:center; gap:12px; margin-bottom:16px; }
+.sb { width:42px; height:42px; border-radius:50%; background:#2E7D46; color:#F5F0E4; font-size:20px; font-weight:900; display:flex; align-items:center; justify-content:center; }
+.stitle span { font-size:22px; font-weight:800; }
+.step { display:flex; gap:12px; align-items:flex-start; margin-bottom:14px; }
+.step .tag { flex:0 0 auto; background:#C9A227; color:#F5F0E4; font-size:14px; font-weight:900; padding:5px 12px; border-radius:20px; margin-top:2px; }
+.step .tx { font-size:18px; font-weight:700; color:#3b4a32; line-height:1.4; }
+.step .tx .em { color:#8a6d13; font-weight:800; }
+.arrow { text-align:center; color:#C9A227; font-size:26px; font-weight:900; margin:2px 0 14px; line-height:1; }
+.note { margin-top:6px; background:rgba(46,125,70,.1); border-left:5px solid #2E7D46; border-radius:0 10px 10px 0; padding:12px 16px; font-size:16px; font-weight:700; color:#2E5A38; }
+.wordmark { position:absolute; right:44px; bottom:26px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.04em; opacity:.95; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="spiral"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+  <div class="kicker">Holdem Note</div>
+  <h1>멀티웨이 팟 <span class="gold">AA</span> 전략</h1>
+  <div class="rule"></div>
+  <div class="cols">
+    <div class="panel">
+      <div class="ptitle">상대 수에 따른 AA 승률</div>
+      <table>
+        <tr><th>상대 수</th><th>AA 승률</th></tr>
+        <tr><td>헤즈업 (1:1)</td><td class="pct">약 85%</td></tr>
+        <tr><td>3인 팟</td><td class="pct">약 73%</td></tr>
+        <tr class="drop"><td>4인 팟</td><td class="pct">약 64%</td></tr>
+        <tr class="drop"><td>5인 팟</td><td class="pct">약 56%</td></tr>
+      </table>
+    </div>
+    <div class="strat">
+      <div class="stitle"><div class="sb">&#9733;</div><span>핵심 전략</span></div>
+      <div class="step">
+        <div class="tag">프리플랍</div>
+        <div class="tx">큰 레이즈로 <span class="em">헤즈업 고립</span> — 상대를 한 명으로 줄인다</div>
+      </div>
+      <div class="arrow">&#8595;</div>
+      <div class="step">
+        <div class="tag">포스트플랍</div>
+        <div class="tx">고립에 성공했다면 <span class="em">큰 베팅</span>으로 가치를 뽑는다</div>
+      </div>
+      <div class="note">상대가 많아질수록 승률이 떨어지므로, 고립이 곧 수익이다</div>
+    </div>
+  </div>
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

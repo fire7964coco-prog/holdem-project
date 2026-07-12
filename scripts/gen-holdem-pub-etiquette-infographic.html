@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden; padding:44px;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  display:flex; flex-direction:column; align-items:center;
+}
+.kicker { color:#C9A227; font-size:15px; font-weight:700; letter-spacing:.22em; text-align:center; margin-bottom:8px; }
+h1 { color:#F2EEE3; font-size:44px; font-weight:800; text-align:center; text-shadow:0 2px 12px rgba(0,0,0,.45); }
+h1 .gold { color:#C9A227; }
+.wordmark { position:absolute; right:44px; bottom:44px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.04em; opacity:.9; }
+
+.grid { display:grid; grid-template-columns:1fr 1fr; gap:16px 30px; margin-top:28px; width:1080px; }
+.item {
+  display:flex; align-items:center; gap:18px; padding:16px 22px;
+  background:rgba(0,0,0,.28); border:2px solid rgba(201,162,39,.55); border-radius:16px;
+}
+.badge { width:52px; height:52px; border-radius:50%; background:#C9A227; color:#0B1F17;
+  font-weight:900; font-size:28px; display:flex; align-items:center; justify-content:center; flex:none;
+  box-shadow:0 3px 8px rgba(0,0,0,.4); }
+.label { color:#F2EEE3; font-size:27px; font-weight:800; flex:1; letter-spacing:-.01em; }
+
+/* 플랫 아이콘 (CSS 도형) */
+.ic { position:relative; width:44px; height:44px; flex:none; }
+/* 시계 */
+.ic-clock .face { position:absolute; inset:2px; border:3px solid #C9A227; border-radius:50%; }
+.ic-clock .h1 { position:absolute; left:20px; top:12px; width:3px; height:11px; background:#C9A227; }
+.ic-clock .h2 { position:absolute; left:21px; top:20px; width:11px; height:3px; background:#C9A227; }
+/* 카드 */
+.ic-card .c { position:absolute; left:10px; top:2px; width:26px; height:38px;
+  border:3px solid #C9A227; border-radius:5px; }
+.ic-card .dot { position:absolute; left:20px; top:17px; width:6px; height:6px; border-radius:50%; background:#C9A227; }
+/* 말풍선 */
+.ic-bubble .b { position:absolute; left:3px; top:6px; width:38px; height:26px;
+  border:3px solid #C9A227; border-radius:9px; }
+.ic-bubble .t { position:absolute; left:12px; top:31px; width:0; height:0;
+  border-left:6px solid transparent; border-right:6px solid transparent; border-top:8px solid #C9A227; }
+/* 금지 */
+.ic-ban .o { position:absolute; inset:3px; border:3px solid #C9A227; border-radius:50%; }
+.ic-ban .s { position:absolute; left:20px; top:5px; width:3px; height:33px; background:#C9A227; transform:rotate(45deg); }
+/* 모래시계 */
+.ic-hour .up { position:absolute; left:9px; top:4px; width:0; height:0;
+  border-left:13px solid transparent; border-right:13px solid transparent; border-top:17px solid #C9A227; }
+.ic-hour .dn { position:absolute; left:9px; bottom:4px; width:0; height:0;
+  border-left:13px solid transparent; border-right:13px solid transparent; border-bottom:17px solid #C9A227; }
+/* 무표정 얼굴 */
+.ic-face .o { position:absolute; inset:2px; border:3px solid #C9A227; border-radius:50%; }
+.ic-face .e1 { position:absolute; left:13px; top:15px; width:5px; height:5px; border-radius:50%; background:#C9A227; }
+.ic-face .e2 { position:absolute; right:13px; top:15px; width:5px; height:5px; border-radius:50%; background:#C9A227; }
+.ic-face .m { position:absolute; left:14px; bottom:12px; width:16px; height:3px; background:#C9A227; }
+/* 음료 컵 */
+.ic-cup .c { position:absolute; left:10px; top:6px; width:24px; height:32px;
+  border:3px solid #C9A227; border-top-width:4px; border-radius:0 0 8px 8px; }
+.ic-cup .s { position:absolute; left:20px; top:0; width:3px; height:9px; background:#C9A227; transform:rotate(18deg); }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="kicker">테이블 매너</div>
+  <h1>홀덤펍 에티켓 <span class="gold">7가지</span></h1>
+
+  <div class="grid">
+    <div class="item">
+      <div class="badge">1</div>
+      <div class="ic ic-clock"><div class="face"></div><div class="h1"></div><div class="h2"></div></div>
+      <div class="label">내 차례에만 액션</div>
+    </div>
+    <div class="item">
+      <div class="badge">5</div>
+      <div class="ic ic-hour"><div class="up"></div><div class="dn"></div></div>
+      <div class="label">탱킹(지연) 자제</div>
+    </div>
+    <div class="item">
+      <div class="badge">2</div>
+      <div class="ic ic-card"><div class="c"></div><div class="dot"></div></div>
+      <div class="label">카드는 나만 보기</div>
+    </div>
+    <div class="item">
+      <div class="badge">6</div>
+      <div class="ic ic-face"><div class="o"></div><div class="e1"></div><div class="e2"></div><div class="m"></div></div>
+      <div class="label">감정 표현 자제</div>
+    </div>
+    <div class="item">
+      <div class="badge">3</div>
+      <div class="ic ic-bubble"><div class="b"></div><div class="t"></div></div>
+      <div class="label">베팅 금액 먼저 선언</div>
+    </div>
+    <div class="item">
+      <div class="badge">7</div>
+      <div class="ic ic-cup"><div class="c"></div><div class="s"></div></div>
+      <div class="label">음료는 매장에서 구매</div>
+    </div>
+    <div class="item">
+      <div class="badge">4</div>
+      <div class="ic ic-ban"><div class="o"></div><div class="s"></div></div>
+      <div class="label">폴드 후 힌트 금지</div>
+    </div>
+  </div>
+
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

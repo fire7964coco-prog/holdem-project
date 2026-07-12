@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden;
+  background:
+    radial-gradient(ellipse 1000px 620px at 50% 34%, rgba(46,125,70,0.5), rgba(46,125,70,0) 72%),
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(201,162,39,0.10), rgba(201,162,39,0) 60%),
+    linear-gradient(160deg,#0B1F17 0%,#123023 55%,#0B1F17 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+/* 펠트 비네트 */
+.stage::after { content:""; position:absolute; inset:0; box-shadow:inset 0 0 180px rgba(0,0,0,.65); pointer-events:none; }
+/* 에이스 4장 부채 */
+.fan { position:absolute; left:50%; top:56%; width:0; height:0; }
+.card {
+  position:absolute; left:-93px; top:-134px; width:186px; height:268px;
+  background:linear-gradient(175deg,#FDFBF4 0%,#F0EADA 100%); border-radius:14px;
+  box-shadow:0 14px 30px rgba(0,0,0,.55), 0 3px 8px rgba(0,0,0,.35);
+  transform-origin:50% 118%;
+}
+.card.c1 { transform:rotate(-27deg); }
+.card.c2 { transform:rotate(-9deg); }
+.card.c3 { transform:rotate(9deg); }
+.card.c4 { transform:rotate(27deg); }
+.card .corner { position:absolute; top:12px; left:14px; font-size:44px; font-weight:800; line-height:1; text-align:center; }
+.card .corner .csuit { display:block; font-size:30px; line-height:1; margin-top:3px; }
+.card .big { position:absolute; top:50%; left:50%; transform:translate(-42%,-44%); font-size:118px; line-height:1; }
+.black { color:#1a1a1a; } .red { color:#c0392b; }
+/* 다크 칩 스택 (골드 트림) */
+.stack { position:absolute; bottom:52px; }
+.stack.s1 { left:120px; }
+.stack.s2 { left:236px; bottom:44px; }
+.stack.s3 { right:150px; }
+.stack.s4 { right:262px; bottom:40px; }
+.chip { position:relative; width:104px; height:30px; margin-top:-16px; border-radius:50%; background:radial-gradient(ellipse at 50% 38%, #23372a 0%, #16241c 70%); border:3px solid rgba(201,162,39,.75); box-shadow:0 5px 8px rgba(0,0,0,.5); }
+.chip::after { content:""; position:absolute; inset:5px 14px; border-radius:50%; border:2px dashed rgba(201,162,39,.5); }
+.stack .chip:nth-child(odd) { border-color:rgba(201,162,39,.55); }
+/* 상단 골드 스포트 */
+.glow { position:absolute; left:50%; top:0; transform:translateX(-50%); width:640px; height:260px; background:radial-gradient(ellipse at 50% 0%, rgba(201,162,39,.20), rgba(201,162,39,0) 70%); pointer-events:none; }
+.wordmark { position:absolute; right:44px; bottom:36px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.04em; opacity:.9; z-index:5; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="glow"></div>
+  <div class="stack s2"><div class="chip"></div><div class="chip"></div><div class="chip"></div><div class="chip"></div><div class="chip"></div></div>
+  <div class="stack s1"><div class="chip"></div><div class="chip"></div><div class="chip"></div><div class="chip"></div><div class="chip"></div><div class="chip"></div><div class="chip"></div></div>
+  <div class="stack s4"><div class="chip"></div><div class="chip"></div><div class="chip"></div><div class="chip"></div></div>
+  <div class="stack s3"><div class="chip"></div><div class="chip"></div><div class="chip"></div><div class="chip"></div><div class="chip"></div><div class="chip"></div></div>
+  <div class="fan">
+    <div class="card c1"><div class="corner black">A<span class="csuit">&#9824;</span></div><div class="big black">&#9824;</div></div>
+    <div class="card c2"><div class="corner black">A<span class="csuit">&#9827;</span></div><div class="big black">&#9827;</div></div>
+    <div class="card c3"><div class="corner red">A<span class="csuit">&#9830;</span></div><div class="big red">&#9830;</div></div>
+    <div class="card c4"><div class="corner red">A<span class="csuit">&#9829;</span></div><div class="big red">&#9829;</div></div>
+  </div>
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

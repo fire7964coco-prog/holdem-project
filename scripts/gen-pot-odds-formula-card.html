@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#F5F0E4; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden; padding:38px 48px 34px;
+  background:
+    radial-gradient(ellipse 900px 460px at 50% -12%, rgba(201,162,39,.14), rgba(201,162,39,0) 60%),
+    #F5F0E4;
+  color:#26311f;
+  font-family:"Segoe UI","Malgun Gothic","Apple SD Gothic Neo",-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
+  display:flex; flex-direction:column;
+}
+.kicker { color:#A8841C; font-size:14px; font-weight:800; letter-spacing:.3em; text-align:center; }
+h1 { color:#1F3D2B; font-size:42px; font-weight:800; text-align:center; margin:4px 0 10px; }
+h1 .gold { color:#A8841C; }
+.rule { width:130px; height:4px; background:#C9A227; border-radius:2px; margin:0 auto 22px; }
+.main { display:flex; gap:26px; flex:1; }
+.panel {
+  background:#FBF8EF; border:2px solid rgba(201,162,39,.7); border-radius:16px;
+  padding:24px 26px; box-shadow:0 4px 12px rgba(31,61,43,.08);
+}
+.left { flex:1.08; display:flex; flex-direction:column; }
+.right { flex:1; display:flex; flex-direction:column; }
+.tag {
+  display:inline-block; align-self:flex-start; background:#1F3D2B; color:#F2EEE3;
+  font-size:14px; font-weight:800; letter-spacing:.12em; border-radius:999px; padding:5px 16px; margin-bottom:12px;
+}
+.def { font-size:19px; line-height:1.55; color:#37452f; }
+.def b { color:#1F3D2B; }
+.formula {
+  margin:16px 0 14px; background:linear-gradient(160deg,#1F3D2B,#16301F); color:#F2EEE3;
+  border-radius:12px; padding:18px 16px; text-align:center;
+  font-size:25px; font-weight:800; letter-spacing:.01em;
+  box-shadow:0 4px 10px rgba(31,61,43,.25);
+}
+.formula .gold { color:#C9A227; }
+.ex {
+  background:rgba(201,162,39,.13); border-left:5px solid #C9A227; border-radius:8px;
+  padding:12px 16px; font-size:18px; font-weight:700; color:#26311f;
+}
+.ex .res { color:#A8841C; font-weight:800; }
+table { width:100%; border-collapse:collapse; margin-top:4px; }
+th {
+  background:#C9A227; color:#1F3D2B; font-size:17px; font-weight:800;
+  padding:12px 8px; text-align:center;
+}
+th:first-child { border-radius:10px 0 0 0; } th:last-child { border-radius:0 10px 0 0; }
+td {
+  font-size:20px; font-weight:700; color:#26311f; text-align:center;
+  padding:16px 8px; border-bottom:1px solid rgba(201,162,39,.45);
+}
+td.pct { color:#A8841C; font-weight:800; font-size:22px; }
+tr:last-child td { border-bottom:none; }
+.note { margin-top:auto; font-size:14px; color:#6b7261; text-align:center; }
+.bottom {
+  margin-top:22px; background:linear-gradient(160deg,#1F3D2B,#16301F); border-radius:14px;
+  padding:16px; text-align:center; color:#F2EEE3; font-size:26px; font-weight:800;
+  box-shadow:0 4px 12px rgba(31,61,43,.3);
+}
+.bottom .gold { color:#C9A227; }
+.wordmark { position:absolute; right:44px; bottom:12px; color:#A8841C; font-size:15px; font-weight:800; letter-spacing:.04em; opacity:.95; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="kicker">POT ODDS</div>
+  <h1>팟오즈란? <span class="gold">정의와 공식</span></h1>
+  <div class="rule"></div>
+
+  <div class="main">
+    <div class="panel left">
+      <span class="tag">정의</span>
+      <div class="def">지금 <b>콜해야 하는 금액</b>이 전체 팟<b>(팟+콜)</b>에서 차지하는 비율. 이 콜이 남는 장사인지 알려주는 기준이다.</div>
+      <div class="formula">팟오즈% = <span class="gold">콜 &divide; (팟 + 콜) &times; 100</span></div>
+      <div class="ex">예) 팟 10,000 &middot; 콜 5,000 &rarr; 5,000 &divide; 15,000 &times; 100 <span class="res">&asymp; 33%</span></div>
+    </div>
+
+    <div class="panel right">
+      <span class="tag">빠른 참조표</span>
+      <table>
+        <tr><th>콜 금액</th><th>현재 팟</th><th>팟오즈%</th></tr>
+        <tr><td>5,000</td><td>10,000</td><td class="pct">33%</td></tr>
+        <tr><td>3,000</td><td>9,000</td><td class="pct">25%</td></tr>
+        <tr><td>10,000</td><td>10,000</td><td class="pct">50%</td></tr>
+      </table>
+      <div class="note">현재 팟 = 상대 벳까지 포함, 내 콜 전 기준</div>
+    </div>
+  </div>
+
+  <div class="bottom">승률 <span class="gold">&gt;</span> 팟오즈% <span class="gold">&rarr; 콜</span></div>
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

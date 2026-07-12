@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#F5F0E4; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden; padding:38px 48px 34px;
+  background:
+    radial-gradient(ellipse 900px 460px at 50% -12%, rgba(201,162,39,.14), rgba(201,162,39,0) 60%),
+    #F5F0E4;
+  color:#26311f;
+  font-family:"Segoe UI","Malgun Gothic","Apple SD Gothic Neo",-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
+  display:flex; flex-direction:column;
+}
+.kicker { color:#A8841C; font-size:14px; font-weight:800; letter-spacing:.3em; text-align:center; }
+h1 { color:#1F3D2B; font-size:44px; font-weight:800; text-align:center; margin:4px 0 10px; }
+h1 .gold { color:#A8841C; }
+.rule { width:130px; height:4px; background:#C9A227; border-radius:2px; margin:0 auto 26px; }
+.steps { display:flex; align-items:stretch; gap:0; flex:1; }
+.step {
+  flex:1; background:#FBF8EF; border:2px solid rgba(201,162,39,.7); border-radius:16px;
+  padding:26px 22px; text-align:center; box-shadow:0 4px 12px rgba(31,61,43,.08);
+  display:flex; flex-direction:column; align-items:center;
+}
+.arrow {
+  align-self:center; width:52px; text-align:center;
+  color:#C9A227; font-size:40px; font-weight:800; line-height:1;
+}
+.num {
+  width:58px; height:58px; border-radius:50%; background:#C9A227; color:#1F3D2B;
+  font-size:30px; font-weight:900; display:flex; align-items:center; justify-content:center;
+  box-shadow:0 3px 8px rgba(31,61,43,.25); margin-bottom:16px;
+}
+.step h2 { color:#1F3D2B; font-size:26px; font-weight:800; margin-bottom:12px; }
+.step p { font-size:18px; line-height:1.5; color:#37452f; }
+.step .val {
+  margin-top:auto; background:rgba(201,162,39,.13); border-radius:8px; padding:10px 14px;
+  font-size:19px; font-weight:800; color:#A8841C;
+}
+.step .formula {
+  margin-top:6px; background:linear-gradient(160deg,#1F3D2B,#16301F); color:#F2EEE3;
+  border-radius:10px; padding:12px 10px; font-size:18px; font-weight:800; width:100%;
+}
+.step .formula .gold { color:#C9A227; }
+.bottom {
+  margin-top:24px; background:linear-gradient(160deg,#1F3D2B,#16301F); border-radius:14px;
+  padding:16px; text-align:center; color:#F2EEE3; font-size:24px; font-weight:800;
+  box-shadow:0 4px 12px rgba(31,61,43,.3);
+}
+.bottom .gold { color:#C9A227; }
+.wordmark { position:absolute; right:44px; bottom:12px; color:#A8841C; font-size:15px; font-weight:800; letter-spacing:.04em; opacity:.95; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="kicker">POT ODDS</div>
+  <h1>팟 오즈 계산 <span class="gold">3단계</span></h1>
+  <div class="rule"></div>
+
+  <div class="steps">
+    <div class="step">
+      <div class="num">1</div>
+      <h2>팟 크기 확인</h2>
+      <p>상대 벳까지 포함해<br>테이블 위 팟이 얼마인지 본다</p>
+      <div class="val">팟 = 9,000</div>
+    </div>
+    <div class="arrow">&rarr;</div>
+    <div class="step">
+      <div class="num">2</div>
+      <h2>콜 금액 확인</h2>
+      <p>내가 지금 내야 하는<br>콜 금액을 확인한다</p>
+      <div class="val">콜 = 3,000</div>
+    </div>
+    <div class="arrow">&rarr;</div>
+    <div class="step">
+      <div class="num">3</div>
+      <h2>공식에 대입</h2>
+      <p>콜을 (팟+콜)로 나눠<br>백분율로 만든다</p>
+      <div class="formula">팟오즈% = <span class="gold">콜 &divide; (팟+콜) &times; 100</span></div>
+    </div>
+  </div>
+
+  <div class="bottom">예시&nbsp; 팟 9,000 &middot; 콜 3,000 &rarr; 3,000 &divide; 12,000 &times; 100 = <span class="gold">25%</span></div>
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

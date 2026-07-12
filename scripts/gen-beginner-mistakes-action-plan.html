@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden; padding:44px;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  display:flex; flex-direction:column; align-items:center; justify-content:flex-start;
+}
+.kicker { color:#F2EEE3; font-size:17px; font-weight:700; letter-spacing:.30em; text-transform:uppercase; text-align:center; margin-top:10px; }
+h1 { color:#C9A227; font-size:50px; font-weight:800; text-align:center; letter-spacing:.02em; text-shadow:0 2px 12px rgba(0,0,0,.45); margin-top:10px; }
+.wordmark { position:absolute; right:44px; bottom:44px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.04em; opacity:.9; }
+
+.steps { display:flex; align-items:center; gap:18px; margin-top:56px; }
+.step {
+  width:300px; height:330px; border-radius:16px; padding:24px 18px 20px;
+  background:rgba(0,0,0,.28); border:2px solid rgba(201,162,39,.55);
+  display:flex; flex-direction:column; align-items:center;
+}
+.badge {
+  background:#C9A227; color:#0B1F17; font-weight:900; font-size:16px; letter-spacing:.14em;
+  padding:7px 18px; border-radius:999px;
+}
+.icon-zone { flex:1; display:flex; align-items:center; justify-content:center; width:100%; }
+.step-label { color:#F2EEE3; font-size:23px; font-weight:800; letter-spacing:.06em; text-align:center; }
+
+.arrow { width:0; height:0; border-top:24px solid transparent; border-bottom:24px solid transparent; border-left:30px solid #C9A227; filter:drop-shadow(0 2px 4px rgba(0,0,0,.4)); }
+
+/* icon 1 : fan of face-down cards */
+.fan { position:relative; width:150px; height:110px; }
+.mini-card {
+  position:absolute; width:58px; height:82px; border-radius:7px; bottom:0; left:46px;
+  background:repeating-linear-gradient(45deg,#7a1420 0 8px,#5c0f18 8px 16px);
+  border:3px solid #F2EEE3; box-shadow:0 5px 10px rgba(0,0,0,.45); transform-origin:50% 95%;
+}
+.mini-card.l { transform:rotate(-18deg) translateX(-12px); }
+.mini-card.r { transform:rotate(18deg) translateX(12px); }
+
+/* icon 2 : mini oval table with dealer dot */
+.mini-table {
+  position:relative; width:160px; height:88px; border-radius:50%;
+  background:radial-gradient(ellipse at 50% 35%, #2E7D46, #1d5c3a 75%);
+  border:5px solid #C9A227; box-shadow:0 6px 14px rgba(0,0,0,.45);
+}
+.dealer-dot {
+  position:absolute; right:14px; bottom:6px; width:24px; height:24px; border-radius:50%;
+  background:#F2EEE3; color:#0B1F17; font-size:14px; font-weight:900;
+  display:flex; align-items:center; justify-content:center;
+}
+
+/* icon 3 : calm emotion gauge, needle in green zone */
+.gauge { position:relative; width:130px; height:65px; overflow:hidden; }
+.gauge .arc {
+  position:absolute; inset:0; border-radius:130px 130px 0 0;
+  background:conic-gradient(from 270deg at 50% 100%, #2E7D46 0deg 60deg, #C9A227 60deg 120deg, #c0392b 120deg 180deg, transparent 180deg 360deg);
+}
+.gauge .hole { position:absolute; left:50%; bottom:-32px; transform:translateX(-50%); width:64px; height:64px; border-radius:50%; background:#12271c; }
+.gauge .needle {
+  position:absolute; left:50%; bottom:0; width:5px; height:52px; margin-left:-2.5px;
+  background:#F2EEE3; border-radius:3px; transform-origin:50% 100%; transform:rotate(-58deg);
+  box-shadow:0 0 6px rgba(0,0,0,.5);
+}
+.gauge .pivot { position:absolute; left:50%; bottom:-8px; transform:translateX(-50%); width:18px; height:18px; border-radius:50%; background:#F2EEE3; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="kicker">Texas Hold'em Beginner</div>
+  <h1>MISTAKE CORRECTION ROADMAP</h1>
+
+  <div class="steps">
+    <div class="step">
+      <div class="badge">STEP 1</div>
+      <div class="icon-zone">
+        <div class="fan">
+          <div class="mini-card l"></div>
+          <div class="mini-card r"></div>
+          <div class="mini-card"></div>
+        </div>
+      </div>
+      <div class="step-label">TIGHT SELECTION</div>
+    </div>
+
+    <div class="arrow"></div>
+
+    <div class="step">
+      <div class="badge">STEP 2</div>
+      <div class="icon-zone">
+        <div class="mini-table"><div class="dealer-dot">D</div></div>
+      </div>
+      <div class="step-label">POSITION AWARENESS</div>
+    </div>
+
+    <div class="arrow"></div>
+
+    <div class="step">
+      <div class="badge">STEP 3</div>
+      <div class="icon-zone">
+        <div class="gauge">
+          <div class="arc"></div>
+          <div class="hole"></div>
+          <div class="needle"></div>
+          <div class="pivot"></div>
+        </div>
+      </div>
+      <div class="step-label">EMOTIONAL CONTROL</div>
+    </div>
+  </div>
+
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

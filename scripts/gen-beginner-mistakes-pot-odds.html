@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden; padding:44px;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  display:flex; flex-direction:column; align-items:center; justify-content:flex-start;
+}
+.kicker { color:#C9A227; font-size:15px; font-weight:700; letter-spacing:.28em; text-transform:uppercase; text-align:center; margin-bottom:8px; }
+h1 { color:#F2EEE3; font-size:46px; font-weight:800; text-align:center; text-shadow:0 2px 12px rgba(0,0,0,.45); }
+.wordmark { position:absolute; right:44px; bottom:44px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.04em; opacity:.9; }
+
+.card { position:relative; width:96px; height:138px; background:linear-gradient(175deg,#FDFBF4 0%,#F2EEE3 100%); border-radius:10px; box-shadow:0 6px 14px rgba(0,0,0,.45),0 1px 3px rgba(0,0,0,.3); }
+.card .corner { position:absolute; top:7px; left:9px; font-size:25px; font-weight:800; line-height:1; text-align:center; }
+.card .corner .csuit { display:block; font-size:17px; line-height:1; margin-top:1px; }
+.card .big { position:absolute; top:50%; left:50%; transform:translate(-42%,-44%); font-size:60px; line-height:1; }
+.black { color:#1a1a1a; } .red { color:#c0392b; }
+
+.cols { display:flex; gap:26px; margin-top:26px; }
+.panel {
+  width:530px; height:400px; border-radius:16px; padding:24px;
+  background:rgba(0,0,0,.28); border:2px solid rgba(201,162,39,.55);
+  display:flex; flex-direction:column; align-items:center;
+}
+.panel-title { color:#C9A227; font-size:21px; font-weight:800; letter-spacing:.04em; }
+
+.hand-row { display:flex; align-items:center; gap:30px; margin-top:24px; }
+.hand { display:flex; gap:12px; }
+.hand .card:first-child { transform:rotate(-7deg); }
+.hand .card:last-child { transform:rotate(7deg); }
+
+.donut { position:relative; width:150px; height:150px; border-radius:50%;
+  background:conic-gradient(#c0392b 0 19%, rgba(255,255,255,.12) 19% 100%); }
+.donut .hole { position:absolute; inset:26px; border-radius:50%; background:#122619;
+  display:flex; flex-direction:column; align-items:center; justify-content:center; }
+.donut .pct { color:#F2EEE3; font-size:30px; font-weight:900; }
+.donut .lbl { color:#C9A227; font-size:15px; font-weight:800; margin-top:2px; }
+
+.verdict {
+  margin-top:28px; background:rgba(192,57,43,.2); border:2px solid #c0392b; border-radius:999px;
+  color:#F2EEE3; font-size:22px; font-weight:900; padding:10px 30px;
+}
+
+.bars { width:100%; margin-top:36px; display:flex; flex-direction:column; gap:30px; }
+.brow { display:flex; align-items:center; gap:14px; }
+.bname { width:120px; color:#F2EEE3; font-size:18px; font-weight:800; text-align:right; }
+.btrack { flex:1; height:46px; border-radius:10px; background:rgba(255,255,255,.08); border:2px solid rgba(201,162,39,.35); overflow:hidden; }
+.bfill { height:100%; border-radius:8px 0 0 8px; display:flex; align-items:center; justify-content:flex-end; padding-right:12px; color:#F2EEE3; font-size:20px; font-weight:900; }
+.f-red  { width:48%; background:linear-gradient(90deg,#a52f22,#c0392b); }
+.f-gold { width:78%; background:linear-gradient(90deg,#a3831c,#C9A227); color:#0B1F17; }
+
+.caption {
+  margin-top:40px; background:rgba(201,162,39,.14); border:2px solid rgba(201,162,39,.6); border-radius:999px;
+  color:#F2EEE3; font-size:21px; font-weight:800; padding:10px 26px;
+}
+.caption .redt { color:#e2695a; } .caption .goldt { color:#C9A227; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="kicker">홀덤 초보 실수</div>
+  <h1>팟 오즈 무시</h1>
+
+  <div class="cols">
+    <div class="panel">
+      <div class="panel-title">내 에퀴티 19%</div>
+      <div class="hand-row">
+        <div class="hand">
+          <div class="card"><div class="corner red">A<span class="csuit">&#9829;</span></div><div class="big red">&#9829;</div></div>
+          <div class="card"><div class="corner black">A<span class="csuit">&#9824;</span></div><div class="big black">&#9824;</div></div>
+        </div>
+        <div class="donut">
+          <div class="hole">
+            <div class="pct">19%</div>
+            <div class="lbl">에퀴티</div>
+          </div>
+        </div>
+      </div>
+      <div class="verdict">콜 불가</div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-title">필요 승률 31%</div>
+      <div class="bars">
+        <div class="brow">
+          <div class="bname">내 에퀴티</div>
+          <div class="btrack"><div class="bfill f-red">19%</div></div>
+        </div>
+        <div class="brow">
+          <div class="bname">필요 승률</div>
+          <div class="btrack"><div class="bfill f-gold">31%</div></div>
+        </div>
+      </div>
+      <div class="caption"><span class="redt">19%</span> &lt; <span class="goldt">31%</span> &#8594; 폴드가 정답</div>
+    </div>
+  </div>
+
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

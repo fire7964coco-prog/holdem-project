@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden; padding:44px;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  display:flex; flex-direction:column; align-items:center;
+}
+.kicker { color:#C9A227; font-size:15px; font-weight:700; letter-spacing:.22em; text-align:center; margin-bottom:8px; }
+h1 { color:#F2EEE3; font-size:46px; font-weight:800; text-align:center; text-shadow:0 2px 12px rgba(0,0,0,.45); }
+h1 .gold { color:#C9A227; }
+.wordmark { position:absolute; right:44px; bottom:44px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.04em; opacity:.9; }
+
+.flow { display:flex; align-items:center; gap:10px; margin-top:56px; }
+.step {
+  width:186px; padding:26px 12px 30px;
+  background:rgba(0,0,0,.28); border:2px solid rgba(201,162,39,.55); border-radius:16px;
+  display:flex; flex-direction:column; align-items:center; gap:18px;
+}
+.num { width:58px; height:58px; border-radius:50%; background:#C9A227; color:#0B1F17;
+  font-weight:900; font-size:30px; display:flex; align-items:center; justify-content:center;
+  box-shadow:0 3px 8px rgba(0,0,0,.4); }
+.slabel { color:#F2EEE3; font-size:25px; font-weight:800; text-align:center; line-height:1.25; letter-spacing:-.01em; }
+.arrow { width:0; height:0; flex:none;
+  border-top:14px solid transparent; border-bottom:14px solid transparent; border-left:18px solid #C9A227; }
+
+/* 플랫 아이콘 (CSS 도형) */
+.ic { position:relative; width:52px; height:52px; }
+/* 지폐 */
+.ic-bill .r { position:absolute; left:2px; top:11px; width:48px; height:30px; border:3px solid #C9A227; border-radius:5px; }
+.ic-bill .o { position:absolute; left:19px; top:19px; width:14px; height:14px; border:3px solid #C9A227; border-radius:50%; }
+/* 포커 칩 */
+.ic-chip .c { position:absolute; inset:2px; border-radius:50%;
+  background:repeating-conic-gradient(#F2EEE3 0deg 20deg, #C9A227 20deg 60deg);
+  box-shadow:0 3px 8px rgba(0,0,0,.45); }
+.ic-chip .i { position:absolute; inset:11px; border-radius:50%; background:#1d3a29;
+  border:2px dashed rgba(242,238,227,.75); }
+/* 이름표 */
+.ic-tag .r { position:absolute; left:4px; top:9px; width:44px; height:34px; border:3px solid #C9A227; border-radius:6px; }
+.ic-tag .l1 { position:absolute; left:13px; top:21px; width:26px; height:4px; background:#C9A227; }
+.ic-tag .l2 { position:absolute; left:13px; top:30px; width:16px; height:4px; background:#C9A227; }
+/* 의자 */
+.ic-chair .back { position:absolute; left:12px; top:3px; width:4px; height:26px; background:#C9A227; border-radius:2px; }
+.ic-chair .seat { position:absolute; left:12px; top:27px; width:26px; height:5px; background:#C9A227; border-radius:2px; }
+.ic-chair .leg1 { position:absolute; left:14px; top:32px; width:4px; height:16px; background:#C9A227; }
+.ic-chair .leg2 { position:absolute; left:33px; top:32px; width:4px; height:16px; background:#C9A227; }
+/* 시작(플레이) */
+.ic-play .o { position:absolute; inset:2px; border:3px solid #C9A227; border-radius:50%; }
+.ic-play .t { position:absolute; left:20px; top:16px; width:0; height:0;
+  border-top:10px solid transparent; border-bottom:10px solid transparent; border-left:16px solid #C9A227; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="kicker">입장부터 착석까지</div>
+  <h1>첫 홀덤펍 방문 절차 <span class="gold">5단계</span></h1>
+
+  <div class="flow">
+    <div class="step">
+      <div class="num">1</div>
+      <div class="ic ic-bill"><div class="r"></div><div class="o"></div></div>
+      <div class="slabel">입장료 납부</div>
+    </div>
+    <div class="arrow"></div>
+    <div class="step">
+      <div class="num">2</div>
+      <div class="ic ic-chip"><div class="c"></div><div class="i"></div></div>
+      <div class="slabel">칩 수령</div>
+    </div>
+    <div class="arrow"></div>
+    <div class="step">
+      <div class="num">3</div>
+      <div class="ic ic-tag"><div class="r"></div><div class="l1"></div><div class="l2"></div></div>
+      <div class="slabel">닉네임 설정</div>
+    </div>
+    <div class="arrow"></div>
+    <div class="step">
+      <div class="num">4</div>
+      <div class="ic ic-chair"><div class="back"></div><div class="seat"></div><div class="leg1"></div><div class="leg2"></div></div>
+      <div class="slabel">착석</div>
+    </div>
+    <div class="arrow"></div>
+    <div class="step">
+      <div class="num">5</div>
+      <div class="ic ic-play"><div class="o"></div><div class="t"></div></div>
+      <div class="slabel">게임 시작</div>
+    </div>
+  </div>
+
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

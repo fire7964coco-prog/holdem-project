@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden; padding:44px;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  display:flex; flex-direction:column; align-items:center;
+}
+.kicker { color:#C9A227; font-size:15px; font-weight:700; letter-spacing:.28em; text-transform:uppercase; text-align:center; margin-bottom:8px; }
+h1 { color:#F2EEE3; font-size:48px; font-weight:900; text-align:center; letter-spacing:.04em; text-shadow:0 2px 12px rgba(0,0,0,.45); }
+h1 .gold { color:#C9A227; }
+.wordmark { position:absolute; right:44px; bottom:44px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.04em; opacity:.9; }
+
+.timeline { display:flex; align-items:center; gap:12px; margin-top:52px; }
+.arrow { width:214px; height:106px; background:linear-gradient(160deg,#E0BE45,#A87F16); clip-path:polygon(0 0,86% 0,100% 50%,86% 100%,0 100%,14% 50%); display:flex; flex-direction:column; align-items:center; justify-content:center; box-shadow:0 6px 14px rgba(0,0,0,.4); }
+.arrow.first { clip-path:polygon(0 0,86% 0,100% 50%,86% 100%,0 100%); }
+.arrow .d { color:#0B1F17; font-size:29px; font-weight:900; letter-spacing:.03em; }
+.arrow .dt { color:#0B1F17; font-size:17px; font-weight:800; margin-top:4px; }
+.trophy { width:130px; margin-left:8px; }
+.cup { width:92px; height:68px; margin:0 auto; background:linear-gradient(180deg,#E8C84E,#A87F16); border-radius:0 0 46px 46px; position:relative; box-shadow:0 0 30px rgba(201,162,39,.4); }
+.cup:before,.cup:after { content:""; position:absolute; top:6px; width:26px; height:34px; border:7px solid #C9A227; border-radius:50%; }
+.cup:before { left:-26px; border-right:none; }
+.cup:after { right:-26px; border-left:none; }
+.stem { width:14px; height:22px; background:#A87F16; margin:0 auto; }
+.tbase { width:70px; height:13px; background:linear-gradient(180deg,#E8C84E,#A87F16); margin:0 auto; border-radius:3px; }
+
+.stackrow { display:flex; gap:12px; margin-top:44px; }
+.cell { width:214px; display:flex; justify-content:center; align-items:flex-end; }
+.chipstack { display:flex; flex-direction:column-reverse; align-items:center; gap:3px; }
+.chip { width:66px; height:13px; border-radius:7px; background:linear-gradient(180deg,#2c2c2c,#101010); border:2px solid #C9A227; }
+.chip.g { background:linear-gradient(180deg,#E0BE45,#A87F16); border-color:#F2EEE3; }
+</style></head>
+<body>
+<div class="stage">
+  <div class="kicker">Flights Schedule</div>
+  <h1>WSOP <span class="gold">2026</span> MAIN EVENT</h1>
+  <div class="timeline">
+    <div class="arrow first"><div class="d">DAY 1A</div><div class="dt">(JULY 2)</div></div>
+    <div class="arrow"><div class="d">DAY 1B</div><div class="dt">(JULY 3)</div></div>
+    <div class="arrow"><div class="d">DAY 1C</div><div class="dt">(JULY 4)</div></div>
+    <div class="arrow"><div class="d">DAY 1D</div><div class="dt">(JULY 5)</div></div>
+    <div class="trophy"><div class="cup"></div><div class="stem"></div><div class="tbase"></div></div>
+  </div>
+  <div class="stackrow">
+    <div class="cell"><div class="chipstack"><div class="chip"></div><div class="chip g"></div><div class="chip"></div><div class="chip g"></div></div></div>
+    <div class="cell"><div class="chipstack"><div class="chip g"></div><div class="chip"></div><div class="chip g"></div><div class="chip"></div><div class="chip g"></div><div class="chip"></div></div></div>
+    <div class="cell"><div class="chipstack"><div class="chip"></div><div class="chip g"></div><div class="chip"></div><div class="chip g"></div><div class="chip"></div><div class="chip g"></div><div class="chip"></div><div class="chip g"></div></div></div>
+    <div class="cell"><div class="chipstack"><div class="chip g"></div><div class="chip"></div><div class="chip g"></div><div class="chip"></div><div class="chip g"></div><div class="chip"></div><div class="chip g"></div><div class="chip"></div><div class="chip g"></div><div class="chip"></div></div></div>
+  </div>
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body></html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden; padding:44px;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  display:flex; flex-direction:column; align-items:center;
+}
+.kicker { color:#C9A227; font-size:15px; font-weight:700; letter-spacing:.28em; text-transform:uppercase; text-align:center; margin-bottom:8px; }
+h1 { color:#F2EEE3; font-size:44px; font-weight:800; text-align:center; text-shadow:0 2px 12px rgba(0,0,0,.45); margin-bottom:28px; }
+h1 .gold { color:#C9A227; }
+.panels { display:flex; gap:28px; }
+.panel {
+  position:relative; width:340px; height:400px;
+  background:rgba(0,0,0,.28); border:2px solid rgba(201,162,39,.55); border-radius:16px;
+  display:flex; flex-direction:column; align-items:center; padding-top:26px;
+}
+.num {
+  width:58px; height:58px; border-radius:50%; background:#C9A227; color:#0B1F17;
+  font-weight:900; font-size:32px; display:flex; align-items:center; justify-content:center;
+  box-shadow:0 4px 10px rgba(0,0,0,.4); margin-bottom:18px;
+}
+.icon { flex:1; display:flex; align-items:center; justify-content:center; width:100%; }
+.label { color:#C9A227; font-size:26px; font-weight:800; letter-spacing:.08em; margin-bottom:26px; }
+/* panel 1: single gold chip (top view) */
+.chiptop {
+  width:130px; height:130px; border-radius:50%;
+  background:radial-gradient(circle at 50% 42%, #ecc95d 0 30%, #C9A227 30% 100%);
+  border:9px dashed #F2EEE3; box-shadow:0 8px 18px rgba(0,0,0,.5);
+}
+/* side-view chip stacks */
+.stackwrap { display:flex; align-items:flex-end; gap:38px; }
+.stack { display:flex; flex-direction:column-reverse; align-items:center; }
+.chip {
+  width:78px; height:16px; border-radius:8px; margin-top:-5px;
+  background:linear-gradient(180deg,#e0bb4a,#96781e); border:2px solid #F2EEE3;
+  box-shadow:0 2px 4px rgba(0,0,0,.35);
+}
+.chip.dark { background:linear-gradient(180deg,#3d5c48,#1d3527); }
+.tag {
+  background:#C9A227; color:#0B1F17; font-weight:900; font-size:22px;
+  padding:4px 14px; border-radius:10px; margin-bottom:12px;
+}
+.vs { color:#F2EEE3; font-weight:900; font-size:20px; opacity:.8; align-self:center; margin-bottom:30px; }
+/* panel 3: mini top-down table */
+.mini { position:relative; width:250px; height:170px; }
+.felt {
+  position:absolute; inset:0; border-radius:50%;
+  background:radial-gradient(ellipse at 50% 40%, #1d5c37, #123B24 70%);
+  border:7px solid #C9A227; box-shadow:0 8px 18px rgba(0,0,0,.5);
+}
+.seat {
+  position:absolute; width:56px; height:34px; border-radius:17px;
+  background:#0B1F17; border:2px solid rgba(201,162,39,.7);
+  color:#F2EEE3; font-size:15px; font-weight:800;
+  display:flex; align-items:center; justify-content:center;
+}
+.seat.red { background:#7a1420; border-color:#c0392b; color:#F2EEE3; }
+/* small face-down cards */
+.back {
+  position:absolute; width:26px; height:38px; border-radius:4px;
+  background:repeating-linear-gradient(45deg,#7a1420 0 5px,#5c0f18 5px 10px);
+  border:2px solid #F2EEE3; box-shadow:0 2px 5px rgba(0,0,0,.4);
+}
+.wordmark { position:absolute; right:44px; bottom:44px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.04em; opacity:.9; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="kicker">Preflop Leaks</div>
+  <h1>3 common <span class="gold">3-bet mistakes</span></h1>
+  <div class="panels">
+    <div class="panel">
+      <div class="num">1</div>
+      <div class="icon"><div class="chiptop"></div></div>
+      <div class="label">VALUE-ONLY</div>
+    </div>
+    <div class="panel">
+      <div class="num">2</div>
+      <div class="icon">
+        <div class="stackwrap">
+          <div class="stack">
+            <div class="chip"></div><div class="chip"></div>
+            <div class="tag" style="margin-bottom:10px;">x2.5</div>
+          </div>
+          <div class="vs">vs</div>
+          <div class="stack">
+            <div class="chip dark"></div><div class="chip"></div><div class="chip dark"></div><div class="chip"></div>
+            <div class="chip dark"></div><div class="chip"></div><div class="chip dark"></div><div class="chip"></div>
+          </div>
+        </div>
+      </div>
+      <div class="label">SIZING</div>
+    </div>
+    <div class="panel">
+      <div class="num">3</div>
+      <div class="icon">
+        <div class="mini">
+          <div class="felt"></div>
+          <div class="seat red" style="left:8px; top:64px;">OOP</div>
+          <div class="seat" style="right:8px; top:64px;">BTN</div>
+          <div class="seat" style="left:97px; bottom:-6px;">SB</div>
+          <div class="back" style="left:88px; top:58px; transform:rotate(-8deg);"></div>
+          <div class="back" style="left:112px; top:60px; transform:rotate(7deg);"></div>
+        </div>
+      </div>
+      <div class="label">OOP</div>
+    </div>
+  </div>
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

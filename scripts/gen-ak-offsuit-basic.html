@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#F5F0E4; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden; padding:40px 48px 44px;
+  background:
+    radial-gradient(ellipse 800px 420px at 50% -12%, rgba(201,162,39,0.14), rgba(201,162,39,0) 65%),
+    linear-gradient(165deg,#F7F2E7 0%,#F1EBDB 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Malgun Gothic",Roboto,Helvetica,Arial,sans-serif;
+  display:flex; flex-direction:column;
+}
+.kicker { color:#2E7D46; font-size:14px; font-weight:800; letter-spacing:.3em; text-transform:uppercase; text-align:center; }
+h1 { color:#26311f; font-size:42px; font-weight:800; text-align:center; margin-top:6px; }
+h1 .gold { color:#A8861B; }
+.rule { width:520px; height:3px; margin:14px auto 0; border-radius:2px;
+  background:linear-gradient(90deg,rgba(201,162,39,0) 0%,#C9A227 50%,rgba(201,162,39,0) 100%); }
+.body { flex:1; display:flex; align-items:center; gap:40px; margin-top:10px; }
+/* left: hand panel */
+.hand { width:300px; display:flex; flex-direction:column; align-items:center; gap:18px;
+  background:#FBF8EF; border:2px solid rgba(201,162,39,.55); border-radius:18px; padding:30px 20px 26px;
+  box-shadow:0 8px 20px rgba(60,50,20,.12); }
+.cards { display:flex; gap:16px; }
+.card { position:relative; width:96px; height:138px; background:linear-gradient(175deg,#FDFBF4 0%,#F2EEE3 100%);
+  border:1px solid #d9d0b8; border-radius:10px; box-shadow:0 6px 14px rgba(60,50,20,.22),0 1px 3px rgba(60,50,20,.15); }
+.card .corner { position:absolute; top:7px; left:9px; font-size:25px; font-weight:800; line-height:1; text-align:center; }
+.card .corner .csuit { display:block; font-size:17px; line-height:1; margin-top:1px; }
+.card .big { position:absolute; top:50%; left:50%; transform:translate(-42%,-44%); font-size:60px; line-height:1; }
+.black { color:#1a1a1a; } .red { color:#c0392b; }
+.handlabel { color:#26311f; font-size:22px; font-weight:800; }
+.handsub { color:#2E7D46; font-size:16px; font-weight:700; margin-top:-10px; }
+/* right: stat grid */
+.stats { flex:1; display:grid; grid-template-columns:1fr 1fr; grid-auto-rows:118px; gap:18px; }
+.stat { background:#FBF8EF; border:2px solid rgba(201,162,39,.45); border-radius:14px;
+  display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px;
+  box-shadow:0 5px 14px rgba(60,50,20,.10); }
+.stat .name { color:#54604a; font-size:18px; font-weight:700; }
+.stat .val { font-size:34px; font-weight:900; color:#26311f; }
+.stat .val.gold { color:#A8861B; }
+.stat .val.green { color:#2E7D46; }
+.stat .val.red { color:#c0392b; }
+.wordmark { position:absolute; right:44px; bottom:22px; color:#A8861B; font-size:15px; font-weight:800; letter-spacing:.04em; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="kicker">AK Offsuit</div>
+  <h1>1. AK 오프수트란? <span class="gold">— 확률과 기본 이해</span></h1>
+  <div class="rule"></div>
+  <div class="body">
+    <div class="hand">
+      <div class="cards">
+        <div class="card"><div class="corner black">A<span class="csuit">&#9824;</span></div><div class="big black">&#9824;</div></div>
+        <div class="card"><div class="corner red">K<span class="csuit">&#9829;</span></div><div class="big red">&#9829;</div></div>
+      </div>
+      <div class="handlabel">AK 오프수트</div>
+      <div class="handsub">무늬가 다른 A + K</div>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="name">딜 확률</div><div class="val gold">약 1.2% (82:1)</div></div>
+      <div class="stat"><div class="name">헤즈업 승률</div><div class="val green">약 65%</div></div>
+      <div class="stat"><div class="name">vs AA</div><div class="val red">약 7%</div></div>
+      <div class="stat"><div class="name">vs KK</div><div class="val red">약 30%</div></div>
+      <div class="stat"><div class="name">vs QQ</div><div class="val">약 43%</div></div>
+      <div class="stat"><div class="name">플랍 탑페어 이상</div><div class="val green">약 32%</div></div>
+    </div>
+  </div>
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

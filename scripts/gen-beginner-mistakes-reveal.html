@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden;
+  background:
+    radial-gradient(ellipse 700px 360px at 50% 6%, rgba(201,162,39,0.16), rgba(201,162,39,0) 62%),
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+/* hanging pub lamp */
+.lampcord { position:absolute; left:599px; top:0; width:4px; height:52px; background:#1a1a1a; }
+.lamp { position:absolute; left:556px; top:50px; width:90px; height:44px; border-radius:45px 45px 6px 6px; background:linear-gradient(180deg,#C9A227,#a4841c); box-shadow:0 22px 60px rgba(201,162,39,.35); }
+.lamp::after { content:""; position:absolute; left:50%; bottom:-12px; transform:translateX(-50%); width:26px; height:26px; border-radius:50%; background:#F2EEE3; box-shadow:0 0 34px 14px rgba(242,238,227,.5); }
+/* table felt */
+.felt {
+  position:absolute; left:70px; right:70px; top:250px; height:560px;
+  background:radial-gradient(ellipse at 50% 24%, #237049 0%, #1a5636 46%, #123f26 78%, #0e3220 100%);
+  border-radius:50%/46%;
+  box-shadow:inset 0 16px 44px rgba(0,0,0,.45), 0 -8px 26px rgba(0,0,0,.4);
+  border:12px solid #3a2a1a;
+}
+/* face-down board on felt */
+.board { position:absolute; left:50%; top:330px; transform:translateX(-50%); display:flex; gap:16px; }
+.bk {
+  width:74px; height:106px; border-radius:8px;
+  background:repeating-linear-gradient(45deg,#7a1420 0 9px,#5c0f18 9px 18px);
+  border:3px solid #F2EEE3; box-shadow:0 6px 14px rgba(0,0,0,.5);
+}
+/* generic flat person */
+.person { position:absolute; }
+.p-head { position:relative; width:88px; height:88px; border-radius:50%; background:#F5F0E4; box-shadow:0 5px 12px rgba(0,0,0,.4); z-index:2; }
+.p-hair { position:absolute; left:-4px; top:-7px; width:96px; height:48px; border-radius:48px 48px 0 0; }
+.p-body { position:relative; margin-top:-14px; width:150px; height:120px; border-radius:52px 52px 0 0; box-shadow:0 6px 14px rgba(0,0,0,.4); }
+.p-head { margin-left:31px; }
+.eye { position:absolute; top:42px; width:10px; height:10px; border-radius:50%; background:#1a1a1a; }
+/* observer 1 (left, glancing right) */
+.ob1 { left:150px; top:118px; }
+.ob1 .p-hair { background:#4a3222; }
+.ob1 .p-body { background:#42563a; }
+.ob1 .eye.l { left:34px; top:44px; } .ob1 .eye.r { left:62px; top:44px; }
+.ob1 .eye { width:13px; height:9px; border-radius:5px; }
+/* observer 2 (right, glancing left + notepad) */
+.ob2 { right:150px; top:118px; }
+.ob2 .p-hair { background:#1a1a1a; }
+.ob2 .p-body { background:#5a3a2e; }
+.ob2 .eye.l { left:24px; top:44px; } .ob2 .eye.r { left:52px; top:44px; }
+.ob2 .eye { width:13px; height:9px; border-radius:5px; }
+.pad { position:absolute; left:-58px; top:118px; width:74px; height:92px; background:#F5F0E4; border-radius:7px; box-shadow:0 5px 12px rgba(0,0,0,.45); transform:rotate(-9deg); z-index:3; padding:12px 10px 0; }
+.pad .top { position:absolute; left:0; right:0; top:0; height:14px; background:#C9A227; border-radius:7px 7px 0 0; }
+.pad .ln { height:5px; border-radius:3px; background:#9aa08c; margin:9px 0 0; }
+.pad .ln.s { width:60%; }
+.pencil { position:absolute; left:6px; top:96px; width:52px; height:9px; border-radius:5px; background:#C9A227; transform:rotate(-32deg); }
+.pencil::after { content:""; position:absolute; right:-9px; top:0; border-top:4.5px solid transparent; border-bottom:4.5px solid transparent; border-left:10px solid #1a1a1a; }
+/* observer 3 (top center, leaning) */
+.ob3 { left:512px; top:96px; }
+.ob3 .p-hair { background:#6b4a1e; }
+.ob3 .p-body { background:#31465c; }
+.ob3 .eye.l { left:26px; top:46px; } .ob3 .eye.r { left:56px; top:46px; }
+.ob3 .eye { width:12px; height:9px; border-radius:5px; }
+/* beginner (bottom center, from behind, arms up showing cards) */
+.beg { position:absolute; left:50%; bottom:-34px; transform:translateX(-50%); width:300px; height:250px; }
+.beg .bd { position:absolute; left:50%; bottom:0; transform:translateX(-50%); width:250px; height:160px; border-radius:90px 90px 0 0; background:#7d2b20; box-shadow:0 -6px 20px rgba(0,0,0,.5); }
+.beg .hd { position:absolute; left:50%; bottom:128px; transform:translateX(-50%); width:112px; height:112px; border-radius:50%; background:#e7dcc3; box-shadow:0 4px 12px rgba(0,0,0,.4); }
+.beg .hr { position:absolute; left:50%; bottom:186px; transform:translateX(-50%); width:118px; height:60px; border-radius:59px 59px 12px 12px; background:#2b1c10; }
+/* revealed hole cards K♦ K♠ */
+.card { position:absolute; width:96px; height:138px; background:linear-gradient(175deg,#FDFBF4 0%,#F2EEE3 100%); border-radius:10px; box-shadow:0 8px 18px rgba(0,0,0,.55),0 1px 3px rgba(0,0,0,.3); z-index:4; }
+.card .corner { position:absolute; top:7px; left:9px; font-size:25px; font-weight:800; line-height:1; text-align:center; }
+.card .corner .csuit { display:block; font-size:17px; line-height:1; margin-top:1px; }
+.card .big { position:absolute; top:50%; left:50%; transform:translate(-42%,-44%); font-size:60px; line-height:1; }
+.black { color:#1a1a1a; } .red { color:#c0392b; }
+.kd { left:392px; bottom:186px; transform:rotate(-16deg); }
+.ks { left:706px; bottom:186px; transform:rotate(16deg); }
+/* beginner hands on cards */
+.hand { position:absolute; width:44px; height:44px; border-radius:50%; background:#e7dcc3; box-shadow:0 4px 10px rgba(0,0,0,.4); z-index:5; }
+.h1 { left:436px; bottom:172px; } .h2 { left:722px; bottom:172px; }
+.wordmark { position:absolute; right:44px; bottom:44px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.04em; opacity:.9; z-index:6; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="lampcord"></div>
+  <div class="lamp"></div>
+
+  <div class="person ob1">
+    <div class="p-hair"></div>
+    <div class="p-head"><div class="eye l"></div><div class="eye r"></div></div>
+    <div class="p-body"></div>
+  </div>
+
+  <div class="person ob3">
+    <div class="p-hair"></div>
+    <div class="p-head"><div class="eye l"></div><div class="eye r"></div></div>
+    <div class="p-body"></div>
+  </div>
+
+  <div class="person ob2">
+    <div class="p-hair"></div>
+    <div class="p-head"><div class="eye l"></div><div class="eye r"></div></div>
+    <div class="p-body"></div>
+    <div class="pad"><div class="top"></div><div class="ln"></div><div class="ln s"></div><div class="ln"></div></div>
+    <div class="pencil"></div>
+  </div>
+
+  <div class="felt"></div>
+  <div class="board"><div class="bk"></div><div class="bk"></div><div class="bk"></div></div>
+
+  <div class="beg">
+    <div class="bd"></div>
+    <div class="hr"></div>
+    <div class="hd"></div>
+  </div>
+
+  <div class="card kd"><div class="corner red">K<span class="csuit">&#9830;</span></div><div class="big red">&#9830;</div></div>
+  <div class="card ks"><div class="corner black">K<span class="csuit">&#9824;</span></div><div class="big black">&#9824;</div></div>
+  <div class="hand h1"></div><div class="hand h2"></div>
+
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

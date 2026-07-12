@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.kicker { position:absolute; top:34px; width:100%; color:#C9A227; font-size:15px; font-weight:700; letter-spacing:.28em; text-transform:uppercase; text-align:center; }
+h1 { position:absolute; top:58px; width:100%; color:#F2EEE3; font-size:44px; font-weight:800; text-align:center; text-shadow:0 2px 12px rgba(0,0,0,.45); }
+.wordmark { position:absolute; right:44px; bottom:30px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.04em; opacity:.9; }
+
+.table {
+  position:absolute; left:270px; top:255px; width:660px; height:270px; border-radius:50%;
+  background:radial-gradient(ellipse at 50% 35%, #2E7D46, #1d5c3a 78%);
+  border:10px solid #C9A227; box-shadow:0 14px 34px rgba(0,0,0,.5), inset 0 0 40px rgba(0,0,0,.3);
+}
+
+.seat {
+  position:absolute; transform:translate(-50%,-50%);
+  background:rgba(0,0,0,.5); border:3px solid rgba(201,162,39,.75); border-radius:999px;
+  color:#F2EEE3; font-size:21px; font-weight:900; letter-spacing:.05em;
+  padding:9px 20px; text-align:center; box-shadow:0 5px 12px rgba(0,0,0,.45);
+}
+.seat small { display:block; font-size:13px; font-weight:700; color:#C9A227; letter-spacing:.08em; }
+.seat.bad  { border-color:#c0392b; }
+.seat.good { border-color:#2E7D46; }
+
+.s-utg { left:429px; top:232px; }
+.s-mp  { left:771px; top:232px; }
+.s-hj  { left:985px; top:351px; }
+.s-co  { left:909px; top:499px; }
+.s-btn { left:600px; top:565px; }
+.s-sb  { left:291px; top:499px; }
+.s-bb  { left:215px; top:351px; }
+
+.mark {
+  position:absolute; transform:translate(-50%,-50%); width:40px; height:40px; border-radius:50%;
+  color:#F2EEE3; font-size:24px; font-weight:900; display:flex; align-items:center; justify-content:center;
+  box-shadow:0 4px 10px rgba(0,0,0,.5); z-index:3;
+}
+.mark.x { background:#c0392b; left:487px; top:212px; }
+.mark.v { background:#2E7D46; left:668px; top:548px; }
+
+.dbtn {
+  position:absolute; left:585px; top:508px; width:30px; height:30px; border-radius:50%;
+  background:#F2EEE3; color:#0B1F17; font-size:16px; font-weight:900;
+  display:flex; align-items:center; justify-content:center; box-shadow:0 3px 8px rgba(0,0,0,.5);
+}
+
+.raise-note {
+  position:absolute; left:429px; top:178px; transform:translateX(-50%);
+  color:#F2EEE3; background:rgba(192,57,43,.28); border:2px solid #c0392b; border-radius:999px;
+  font-size:17px; font-weight:800; padding:5px 16px; white-space:nowrap;
+}
+
+.chips { position:absolute; left:470px; top:283px; display:flex; gap:6px; }
+.chip { width:26px; height:26px; border-radius:50%; border:3px dashed #F2EEE3; background:#c0392b; box-shadow:0 3px 6px rgba(0,0,0,.45); }
+.chip.g { background:#C9A227; }
+
+.arrow { position:absolute; left:296px; top:348px; width:104px; height:6px; background:#C9A227; border-radius:3px; box-shadow:0 2px 5px rgba(0,0,0,.4); }
+.arrow::before { content:""; position:absolute; left:-18px; top:-8px; border:11px solid transparent; border-right:18px solid #C9A227; }
+
+.legend { position:absolute; bottom:26px; width:100%; text-align:center; color:#F2EEE3; font-size:19px; font-weight:700; }
+.legend .bad-t { color:#e2695a; } .legend .good-t { color:#5fbe82; } .legend .sep { color:#C9A227; margin:0 16px; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="kicker">홀덤 초보 실수</div>
+  <h1>포지션 무시</h1>
+
+  <div class="table"></div>
+
+  <div class="seat bad s-utg">UTG</div>
+  <div class="seat s-mp">MP</div>
+  <div class="seat s-hj">HJ</div>
+  <div class="seat s-co">CO</div>
+  <div class="seat good s-btn">BTN<small>DEALER</small></div>
+  <div class="seat s-sb">SB</div>
+  <div class="seat s-bb">BB</div>
+
+  <div class="mark x">&#10005;</div>
+  <div class="mark v">&#10003;</div>
+  <div class="dbtn">D</div>
+
+  <div class="raise-note">루즈 레이즈</div>
+  <div class="chips"><div class="chip"></div><div class="chip g"></div><div class="chip"></div></div>
+
+  <div class="arrow"></div>
+
+  <div class="legend">
+    <span class="bad-t">&#10005; 앞자리 루즈 레이즈 = 위험</span>
+    <span class="sep">&#183;</span>
+    <span class="good-t">&#10003; 뒷자리 = 가장 유리</span>
+  </div>
+
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

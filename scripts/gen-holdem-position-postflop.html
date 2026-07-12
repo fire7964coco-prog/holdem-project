@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden; padding:44px;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  display:flex; flex-direction:column; align-items:center;
+}
+h1 { color:#F2EEE3; font-size:42px; font-weight:800; text-align:center; text-shadow:0 2px 12px rgba(0,0,0,.45); }
+h1 .gold { color:#C9A227; }
+.wordmark { position:absolute; right:44px; bottom:44px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.04em; opacity:.9; }
+
+.ipline { margin-top:14px; background:rgba(201,162,39,.14); border:2px solid #C9A227; color:#C9A227; border-radius:999px; padding:9px 28px; font-size:21px; font-weight:900; }
+
+.panels { display:flex; gap:26px; margin-top:28px; width:100%; flex:1; }
+.panel { flex:1; background:rgba(0,0,0,.28); border:2px solid rgba(201,162,39,.55); border-radius:16px; padding:26px 18px 22px; display:flex; flex-direction:column; align-items:center; gap:16px; }
+.icon { height:96px; display:flex; align-items:center; justify-content:center; }
+.pt { color:#C9A227; font-size:26px; font-weight:800; }
+.sub { color:rgba(242,238,227,.75); font-size:18px; font-weight:600; text-align:center; line-height:1.5; }
+
+.eye { position:relative; width:96px; height:52px; border:5px solid #C9A227; border-radius:50%; }
+.pupil { position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:26px; height:26px; border-radius:50%; background:#C9A227; }
+
+.ring { width:82px; height:82px; border-radius:50%; border:5px solid #C9A227; display:flex; align-items:center; justify-content:center; color:#C9A227; font-size:42px; font-weight:900; }
+.ring.sp { font-size:46px; font-weight:400; }
+</style></head>
+<body>
+<div class="stage">
+  <h1><span class="gold">포스트플랍</span> 포지션 전략</h1>
+  <div class="ipline">IP(인 포지션) = 항상 마지막 행동</div>
+  <div class="panels">
+    <div class="panel">
+      <div class="icon"><div class="eye"><div class="pupil"></div></div></div>
+      <div class="pt">정보 우위</div>
+      <div class="sub">상대 액션을 전부<br>보고 나서 결정한다</div>
+    </div>
+    <div class="panel">
+      <div class="icon"><div class="ring">&#10003;</div></div>
+      <div class="pt">체크백</div>
+      <div class="sub">공짜 카드를 받으며<br>팟 컨트롤까지</div>
+    </div>
+    <div class="panel">
+      <div class="icon"><div class="ring sp">&#9824;</div></div>
+      <div class="pt">블러핑 기회</div>
+      <div class="sub">상대가 약점을 보이면<br>바로 압박 베팅</div>
+    </div>
+  </div>
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body></html>

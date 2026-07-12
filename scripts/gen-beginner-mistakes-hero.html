@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden; padding:40px 44px 44px;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.grid {
+  display:grid; grid-template-columns:repeat(5,1fr); grid-template-rows:repeat(2,1fr);
+  gap:18px; width:100%; height:100%;
+}
+.tile {
+  position:relative; background:rgba(0,0,0,.28); border:2px solid rgba(201,162,39,.55);
+  border-radius:16px; display:flex; align-items:center; justify-content:center;
+}
+.num {
+  position:absolute; top:12px; left:12px; width:44px; height:44px; border-radius:50%;
+  background:#C9A227; color:#0B1F17; font-weight:900; font-size:24px;
+  display:flex; align-items:center; justify-content:center;
+  box-shadow:0 3px 8px rgba(0,0,0,.4);
+}
+/* 1 card fan (backs) */
+.fan { position:relative; width:120px; height:110px; }
+.fan .mini {
+  position:absolute; bottom:0; left:50%; width:56px; height:80px; border-radius:7px;
+  background:repeating-linear-gradient(45deg,#7a1420 0 8px,#5c0f18 8px 16px);
+  border:2.5px solid #F2EEE3; box-shadow:0 4px 10px rgba(0,0,0,.45);
+  transform-origin:50% 100%;
+}
+.fan .mini.f1 { transform:translateX(-50%) rotate(-22deg); }
+.fan .mini.f2 { transform:translateX(-50%) rotate(0deg); }
+.fan .mini.f3 { transform:translateX(-50%) rotate(22deg); }
+/* 2 chip */
+.chip {
+  width:96px; height:96px; border-radius:50%;
+  background:
+    radial-gradient(circle at 50% 50%, #a23b2e 0 30px, rgba(0,0,0,0) 30px),
+    repeating-conic-gradient(#F2EEE3 0deg 18deg, #a23b2e 18deg 36deg);
+  border:4px solid #7d2b20; box-shadow:0 5px 12px rgba(0,0,0,.45);
+  position:relative;
+}
+.chip::after {
+  content:""; position:absolute; inset:22px; border-radius:50%;
+  border:3px dashed #F2EEE3; opacity:.85;
+}
+/* 3 question glyph */
+.q { color:#C9A227; font-size:96px; font-weight:900; line-height:1; text-shadow:0 3px 10px rgba(0,0,0,.5); }
+/* 4 tilt face */
+.face { position:relative; width:96px; height:96px; border-radius:50%; background:#c0392b; box-shadow:0 5px 12px rgba(0,0,0,.45); }
+.face .brow { position:absolute; top:30px; width:24px; height:6px; border-radius:3px; background:#F2EEE3; }
+.face .brow.l { left:16px; transform:rotate(22deg); }
+.face .brow.r { right:16px; transform:rotate(-22deg); }
+.face .eye { position:absolute; top:42px; width:11px; height:11px; border-radius:50%; background:#F2EEE3; }
+.face .eye.l { left:24px; } .face .eye.r { right:24px; }
+.face .mouth { position:absolute; bottom:16px; left:50%; transform:translateX(-50%); width:38px; height:18px; border:5px solid #F2EEE3; border-bottom:none; border-radius:19px 19px 0 0; }
+/* 5 notepad */
+.pad { position:relative; width:84px; height:104px; background:#F5F0E4; border-radius:8px; box-shadow:0 5px 12px rgba(0,0,0,.45); overflow:hidden; }
+.pad .top { height:18px; background:#C9A227; }
+.pad .ln { height:5px; background:#9aa08c; border-radius:3px; margin:11px 12px 0; }
+.pad .ln.s { width:44px; }
+/* 6 chip stack */
+.stack { position:relative; width:100px; height:100px; }
+.stack .disc { position:absolute; left:50%; transform:translateX(-50%); width:88px; height:26px; border-radius:13px; border:3px solid rgba(0,0,0,.3); }
+.stack .d1 { bottom:0; background:#1e3a5f; }
+.stack .d2 { bottom:24px; background:#a23b2e; }
+.stack .d3 { bottom:48px; background:#C9A227; }
+/* 7 eye */
+.peek { position:relative; width:110px; height:66px; background:#F2EEE3; border-radius:55px/33px; box-shadow:0 5px 12px rgba(0,0,0,.45); overflow:hidden; }
+.peek .pupil { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:34px; height:34px; border-radius:50%; background:#173325; border:6px solid #C9A227; }
+/* 8 down chart */
+.bars { display:flex; align-items:flex-end; gap:12px; height:100px; }
+.bars .b { width:26px; border-radius:5px 5px 0 0; }
+.bars .b1 { height:96px; background:#C9A227; }
+.bars .b2 { height:64px; background:#F2EEE3; }
+.bars .b3 { height:34px; background:#c0392b; }
+/* 9 clock */
+.clock { position:relative; width:96px; height:96px; border-radius:50%; background:#F5F0E4; border:6px solid #C9A227; box-shadow:0 5px 12px rgba(0,0,0,.45); }
+.clock .h { position:absolute; left:50%; bottom:50%; transform-origin:50% 100%; background:#173325; border-radius:3px; }
+.clock .hh { width:7px; height:24px; transform:translateX(-50%) rotate(-40deg); }
+.clock .mh { width:5px; height:34px; transform:translateX(-50%) rotate(105deg); }
+.clock .dot { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:10px; height:10px; border-radius:50%; background:#c0392b; }
+/* 10 target */
+.target { position:relative; width:96px; height:96px; border-radius:50%; background:#F2EEE3; box-shadow:0 5px 12px rgba(0,0,0,.45); }
+.target::before { content:""; position:absolute; inset:16px; border-radius:50%; background:#c0392b; }
+.target::after { content:""; position:absolute; inset:32px; border-radius:50%; background:#F2EEE3; border:1px solid rgba(0,0,0,.15); }
+.target .core { position:absolute; inset:40px; border-radius:50%; background:#C9A227; z-index:2; }
+.wordmark { position:absolute; right:44px; bottom:44px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.04em; opacity:.9; z-index:5; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="grid">
+    <div class="tile"><div class="num">1</div>
+      <div class="fan"><div class="mini f1"></div><div class="mini f3"></div><div class="mini f2"></div></div>
+    </div>
+    <div class="tile"><div class="num">2</div><div class="chip"></div></div>
+    <div class="tile"><div class="num">3</div><div class="q">?</div></div>
+    <div class="tile"><div class="num">4</div>
+      <div class="face"><div class="brow l"></div><div class="brow r"></div><div class="eye l"></div><div class="eye r"></div><div class="mouth"></div></div>
+    </div>
+    <div class="tile"><div class="num">5</div>
+      <div class="pad"><div class="top"></div><div class="ln"></div><div class="ln"></div><div class="ln s"></div></div>
+    </div>
+    <div class="tile"><div class="num">6</div>
+      <div class="stack"><div class="disc d1"></div><div class="disc d2"></div><div class="disc d3"></div></div>
+    </div>
+    <div class="tile"><div class="num">7</div>
+      <div class="peek"><div class="pupil"></div></div>
+    </div>
+    <div class="tile"><div class="num">8</div>
+      <div class="bars"><div class="b b1"></div><div class="b b2"></div><div class="b b3"></div></div>
+    </div>
+    <div class="tile"><div class="num">9</div>
+      <div class="clock"><div class="h hh"></div><div class="h mh"></div><div class="dot"></div></div>
+    </div>
+    <div class="tile"><div class="num">10</div>
+      <div class="target"><div class="core"></div></div>
+    </div>
+  </div>
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

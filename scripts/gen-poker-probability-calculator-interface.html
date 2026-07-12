@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden; padding:38px 44px 40px;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(53,227,220,0.14), rgba(53,227,220,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  display:flex; flex-direction:column; align-items:center;
+}
+.hdrbar {
+  padding:12px 44px; border-radius:12px;
+  background:rgba(0,0,0,.35); border:2px solid rgba(53,227,220,.6);
+  box-shadow:0 0 26px rgba(53,227,220,.25);
+}
+.hdrbar h1 {
+  color:#35E3DC; font-size:32px; font-weight:800; letter-spacing:.14em; text-align:center;
+  text-shadow:0 0 16px rgba(53,227,220,.65);
+}
+.mid { display:flex; align-items:center; gap:56px; margin-top:38px; }
+.gauge { position:relative; width:190px; height:190px; border-radius:50%; }
+.gauge.cyan { background:conic-gradient(#35E3DC 0 31%, rgba(255,255,255,.08) 31% 100%); box-shadow:0 0 26px rgba(53,227,220,.3); }
+.gauge.gold { background:conic-gradient(#C9A227 0 69%, rgba(255,255,255,.08) 69% 100%); box-shadow:0 0 26px rgba(201,162,39,.35); }
+.gauge .hole {
+  position:absolute; inset:20px; border-radius:50%; background:#0E241A;
+  display:flex; align-items:center; justify-content:center;
+}
+.gauge .hole .val { font-size:40px; font-weight:900; }
+.gauge.cyan .val { color:#35E3DC; text-shadow:0 0 12px rgba(53,227,220,.6); }
+.gauge.gold .val { color:#C9A227; text-shadow:0 0 12px rgba(201,162,39,.55); }
+.chart {
+  display:flex; align-items:flex-end; gap:22px; height:200px;
+  padding:0 26px 14px; border-bottom:2px solid rgba(53,227,220,.45);
+}
+.bar { position:relative; width:44px; border-radius:6px 6px 0 0; }
+.bar.c { background:linear-gradient(180deg,#35E3DC,#1a8f8a); box-shadow:0 0 14px rgba(53,227,220,.35); }
+.bar.g { background:linear-gradient(180deg,#C9A227,#7d661a); box-shadow:0 0 14px rgba(201,162,39,.35); }
+.bar .num { position:absolute; top:-26px; left:0; width:100%; text-align:center; color:#F2EEE3; font-size:15px; font-weight:800; }
+.deco { position:absolute; bottom:44px; left:0; width:1200px; padding:0 64px; display:flex; justify-content:space-between; align-items:flex-end; pointer-events:none; }
+.cards { display:flex; gap:14px; }
+.card.back {
+  width:74px; height:106px; border-radius:9px;
+  background:repeating-linear-gradient(45deg,#7a1420 0 10px,#5c0f18 10px 20px);
+  border:3px solid #F2EEE3; box-shadow:0 6px 14px rgba(0,0,0,.45);
+}
+.card.back.tilt { transform:rotate(9deg); }
+.dice { display:flex; gap:16px; margin-right:150px; }
+.die {
+  position:relative; width:56px; height:56px; border-radius:12px;
+  background:linear-gradient(175deg,#FDFBF4,#E8E2D0);
+  box-shadow:0 6px 14px rgba(0,0,0,.5);
+}
+.die.tilt { transform:rotate(-11deg); }
+.pip { position:absolute; width:10px; height:10px; border-radius:50%; background:#1a1a1a; }
+.wordmark { position:absolute; right:44px; bottom:40px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.04em; opacity:.9; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="hdrbar"><h1>PROBABILITY CALCULATOR</h1></div>
+
+  <div class="mid">
+    <div class="gauge cyan"><div class="hole"><div class="val">31%</div></div></div>
+    <div class="chart">
+      <div class="bar c" style="height:48px;"><div class="num">17</div></div>
+      <div class="bar c" style="height:88px;"><div class="num">31</div></div>
+      <div class="bar g" style="height:148px;"><div class="num">52</div></div>
+      <div class="bar g" style="height:196px;"><div class="num">69</div></div>
+    </div>
+    <div class="gauge gold"><div class="hole"><div class="val">69%</div></div></div>
+  </div>
+
+  <div class="deco">
+    <div class="cards">
+      <div class="card back"></div>
+      <div class="card back tilt"></div>
+    </div>
+    <div class="dice">
+      <div class="die">
+        <div class="pip" style="left:9px;top:9px;"></div>
+        <div class="pip" style="right:9px;top:9px;"></div>
+        <div class="pip" style="left:23px;top:23px;"></div>
+        <div class="pip" style="left:9px;bottom:9px;"></div>
+        <div class="pip" style="right:9px;bottom:9px;"></div>
+      </div>
+      <div class="die tilt">
+        <div class="pip" style="left:9px;top:9px;"></div>
+        <div class="pip" style="left:23px;top:23px;"></div>
+        <div class="pip" style="right:9px;bottom:9px;"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>
