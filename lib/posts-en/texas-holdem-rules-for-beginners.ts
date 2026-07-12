@@ -238,7 +238,7 @@ Position means **when you act in each betting round**. Acting later means you ha
 |------|------|----------------------|-----------|
 | Early position | UTG (Under the Gun) | 1st | Most players still to act — play tightest |
 | Middle | MP / HJ | 4th–5th | Moderate range, still cautious |
-| One left of BTN | CO (Cutoff) | 6th | Second-best seat — widen range |
+| One right of BTN | CO (Cutoff) | 6th | Second-best seat — widen range |
 | Last post-flop | BTN (Button) | 7th pre; **last** post | **Best seat** — acts last every postflop street |
 | Left of dealer | SB (Small Blind) | 8th pre, 1st post | Worst seat — acts first every postflop street |
 | Two left of dealer | BB (Big Blind) | Last pre (9th), 2nd post | Has option to raise preflop; out of position postflop |
