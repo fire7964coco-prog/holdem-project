@@ -16,6 +16,12 @@ export interface Post {
   */
  updated?: string;
  /**
+  * (번역본 전용) 저작 시점의 EN 마스터 updated 값 (YYYY-MM-DD).
+  * scripts/check-translation-staleness.mjs 가 updated 대신 이 값을 우선 사용해
+  * 번역본 자체 수정과 무관하게 마스터 대비 스테일 여부를 정확히 판별한다.
+  */
+ masterUpdated?: string;
+ /**
   * 한 줄 정답 (Featured Snippet 용 40~90자).
   * 본문 최상단에 강조 박스로 노출 — 검색 의도에 가장 빠른 답을 제공해
   * Google "발췌 텍스트" 후보가 되도록 한다.

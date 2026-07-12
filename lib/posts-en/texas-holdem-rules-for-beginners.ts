@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em gives each player 2 hole cards, uses 5 community cards, and the best 5-card poker hand wins after four betting rounds.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-07-02",
+  updated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
