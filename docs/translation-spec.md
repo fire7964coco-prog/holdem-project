@@ -1,7 +1,13 @@
-# 블로그 번역 스펙 (EN 마스터 → 현지어)
+# 블로그 번역 스펙 (EN 마스터 → 현지어) — ★단일 워크플로우 기준서
 
 > EN이 마스터. 각 언어는 hreflang(slug 공유)로만 연결되는 **독립 현지 콘텐츠**.
 > 목표: 해당 언어 네이티브가 실제 쓰는 자연스러운 문장 + 현지 SERP 롱테일. 기계번역 티 = 금지(구글 스팸정책 대상).
+
+> **📍 현재 상태 (2026-07-13)**: **Rules 필라 = 24개 언어 완결.**
+> en(마스터) + ja·es·pt·de·zh·ar·id·ms·vi·hi·tr + fr·ru·it·pl·th·fa·sw·bn·ro·fil·uk·he.
+> **모델(현행) = 번역·QA 전부 Opus** (번역 6병렬 + 적대적 QA 2배치).
+> **다음 트랙 후보**: ① 2번째 필라(예: Hand Rankings) 24언어 확대 ② 추가 언어(ta·ur·nl 등) ③ 구 12언어 stale 재번역(hand-rankings·tournament-vs-cash-game) ④ 신규 17언어를 다른 클러스터로 확대.
+> **읽는 순서**: 이 문서(파이프라인) → `docs/translation-terms-<lang>.md`(대상 언어 브리프) → `session-handoff.md`(직전 상태).
 
 ## ★★ 이 작업의 본질 (최우선 마인드셋 — 2026-07-13 사용자 명시)
 > **이건 "번역"이 아니라 "현지 맥락에 맞춰 재구성한 포스팅"이다.** 누가 EN을 더 100% 충실하게 옮기느냐가 목표가 **아니다**.
@@ -22,24 +28,44 @@
    → 언어별 **용어·표기 브리프**로 정리해 서브에이전트 프롬프트에 포함(문서화: `docs/translation-terms-<lang>.md` 선택).
 > 이 준비가 "기계번역 티" 방지의 핵심. ja=가타카나 관습, es=천단위 점·소수점 콤마처럼 언어마다 함정이 다르다.
 
-## 0.5 파일럿 파이프라인 (Rules 필라 언어 확장 — 검증된 전체 흐름, 9개 언어 반복)
-> ja·es·pt·de·zh·ar·id·ms·vi 파일럿에서 확립된 end-to-end 절차. 언어별로 그대로 반복한다.
-1. **웹리서치 → 브리프**: 대상 언어로 검색해 현지 포커 용어·문법·표기·문체 파악 → `docs/translation-terms-<lang>.md` 작성(§0).
-2. **번역(글당 1 서브에이전트 병렬)**: Fable5에 「현지 네이티브 번역가 + 수십 년 홀덤 전문가」 페르소나 부여. 구조 레퍼런스는 **`lib/posts-es/<slug>.ts`**(필드 순서·export 형태만; 텍스트 복사 금지). ⚠️ **다른 현지어 파일(특히 id↔ms)을 베끼지 말 것** — 언어별로 새로 저작.
-   - Rules 필라 6편 = 신규 4(betting/blind/all-in/showdown) + **재번역 2(texas·game-order)** — 기존 2편은 옛 마스터·category 한국어값이라 stale → 반드시 재번역.
-   - masterUpdated = 각 EN 마스터의 `updated` 값(texas 2026-07-12·game-order 2026-07-02·betting 2026-07-11·blind 2026-07-11·all-in 2026-07-12·showdown 2026-07-12).
-3. **조립**: 메인이 `index.ts`에 Rules 6편을 먼저 그룹핑(주석 `// Rules 필라 (6/6)`) + 기타. `category: "rules"`, `readTime` 현지 단위 통일.
-4. **기계검사**: `npm run build`(→sitemap) + `node scripts/check-intl-links.mjs`(하드페일) + `npm run check:stale`(Rules 6편 빠졌나) + **숫자표기 오염 grep**(변환 언어면 영어식 `1,326`/`2.5` 잔류 0, 영어식 언어면 반대).
-5. **적대적 QA 2배치**: 각 배치 3편, 회의적 현지 편집장 페르소나. §13 **베스트5 재검산**·숫자표기·용어 일관성·잔류(영/스페인/한국어)·링크(/lang/blog+화이트리스트)·메타(desc≤160) 전수 → 🔴(필수)/🟡(제안) 리포트.
-6. **교정**: 메인이 `.mjs`(readFileSync→split/join→writeFileSync) 스크립트로 일괄 적용 → 재빌드. 임시 스크립트 삭제.
-7. **커밋+push**(파일럿N) + 보고서(배포현황·§13·현지화 하이라이트·백로그).
-> **Fable5 한도 소진 시**: 메인(Opus)이 번역·QA를 직접 수행 가능(vi 파일럿 사례). 최소 자가검수 = §13 재검산 + 숫자표기 + 링크(빌드) + check 오역/성조/부호. hi·tr 등 잔여도 동일.
+## 0.5 ★표준 파이프라인 (24개 언어로 검증된 end-to-end — 신규 언어/필라 모두 이 절차)
+> ja·es·pt·de·zh·ar·id·ms·vi·hi·tr·fr·ru·it·pl·th·fa·sw·bn·ro·fil·uk·he 24개 언어에서 반복·확립. **언어별로 그대로 반복.**
+> **모델(현행)**: 번역·QA 전부 **Opus**. 번역 = 글당 1 서브에이전트 **6병렬**, QA = **적대적 2배치**. (Fable5는 대체용; 한도 소진 시 메인 Opus가 직접 수행 — vi 사례.)
+
+**신규 언어면 먼저 ⓪ 배선(아래 "신규 로케일 배선 체크리스트"). 기존 언어에 새 글만 추가면 ⓪ 생략.**
+
+1. **웹리서치 → 브리프**: 대상 언어로 실제 검색해 현지 포커 용어·문법·표기·문체 파악 → `docs/translation-terms-<lang>.md` 작성(§0). 이미 있으면 재사용.
+2. **번역(글당 1 서브에이전트, 6병렬, Opus)**: 「현지 네이티브 번역가 + 수십 년 홀덤 전문가」 페르소나 + §6 마인드셋(재구성 포스팅) + 브리프 첨부. 구조 레퍼런스는 **`lib/posts-es/<slug>.ts`**(필드 순서·export 형태만; **텍스트 복사 금지**). RTL 언어(ar·fa·he)는 **`lib/posts-ar/`를 구조 레퍼런스로**(텍스트 복사 금지). ⚠️ **다른 현지어 파일(특히 id↔ms, ru↔uk)을 베끼지 말 것** — 언어별 새 저작.
+   - Rules 필라 6편 = 신규 4(betting/blind/all-in/showdown) + **재번역 2(texas·game-order)**(옛 마스터·category 한국어값 stale → 재번역).
+   - `masterUpdated` = 각 EN 마스터의 `updated` 값 기록(스테일 정밀비교용, §스테일).
+3. **조립**: 메인이 `lib/posts-<lang>/index.ts`에 필라 글 먼저 그룹핑(주석 `// Rules 필라 (6/6)`) + 기타. `category` 표준 필라값, `readTime` 현지 단위 통일.
+4. **기계검사(하드게이트)**:
+   - `npm run build` → **빌드 성공 + 페이지 수 증가 확인**(신규 로케일당 +8: home+blogindex+6글). 라우트 파일 없으면 데이터가 맞아도 **URL 404**(2026-07-13 실사고).
+   - `node scripts/check-intl-links.mjs`(내부링크 하드페일) + `npm run check:stale`(필라 글 누락).
+   - **숫자표기 grep**: 유럽식 언어면 영어식 `1,326`/`2.5` 잔류 0 / 영어식 언어면 반대. **비라틴 숫자**(fa 페르시아·bn 벵골·hi 데바나가리) 잔류 0 → 있으면 **라틴 일괄변환(.mjs)**.
+   - FAQ 마커 `**Q. …?**`+`A.`(리터럴) 유지 확인(스키마).
+5. **적대적 QA 2배치(Opus, 각 3편)**: 회의적 현지 편집장 페르소나. §13 **베스트5 재검산**·숫자표기·용어 일관성·**타언어 잔재**(영/스/한국어, ru↔uk·ar↔he 오염)·링크(/lang/blog+화이트리스트)·메타(desc≤160)·(RTL이면 우→좌 렌더) 전수 → 🔴(필수)/🟡(제안) 리포트.
+6. **교정**: 메인이 `.mjs`(readFileSync→replace/split·join→writeFileSync, ⚠️Windows 파일락) 일괄 적용 → 재빌드. 임시 스크립트 삭제.
+7. **커밋+push**(파일럿N) + 보고서(배포현황·§13·현지화 하이라이트·백로그). **사용자 몫=GSC 색인**(신규 언어×글수 URL 목록 제공, RTL은 렌더 육안확인 권장).
+
+## ⓪ 신규 로케일 배선 체크리스트 (재사용·검증됨 — 빠지면 404)
+> ⚠️**라우팅은 `app/[locale]` 동적세그가 아니라 로케일별 물리 폴더**(`app/<locale>/`). 데이터·sitemap·check-intl-links만으론 부족 — **라우트 파일이 없으면 URL 404**.
+① `lib/intl.ts`: `SECONDARY_LOCALES`에 코드 + **6개 맵 전부**(OG_LOCALE·HTML_LANG·POST_LABELS·CHROME·NAV_HOME_FEED·NAV_CTA — TS가 누락 강제). **RTL이면 `RTL_LOCALES`에도 추가**(현재 `["ar","fa","he"]`).
+② `lib/posts-<lang>/index.ts` (글 배열).
+③ `lib/intl-posts.ts`: `POSTS_BY_LOCALE`에 로케일 추가.
+④ community translate route: `LANG_NAME`에 언어명 추가.
+⑤ **★라우트 3파일 생성**(`app/tr/`가 템플릿): `app/<lang>/page.tsx`(CommunityClient) · `app/<lang>/blog/page.tsx`(IntlBlogIndex) · `app/<lang>/blog/[slug]/page.tsx`(`generateStaticParams`=`postsForLocale("<lang>")` + IntlBlogArticle).
+⑥ RTL 언어는 `globals.css` `[dir=rtl]`(ar/fa/he 공용) 재활용 — 신규 CSS 불필요, 렌더 육안확인만.
+> 검증 = `npm run build` 페이지 수 증가(로케일당 +8).
 
 ## ⚑ 언어별 현지화 하이라이트 (누적 — 매 언어 반복 함정·결정)
-> ★**숫자표기가 최대 반복 함정**. 언어별로 정반대다:
-> - **영어식**(천단위 `,` · 소수점 `.` → §13 값 그대로): **en · zh · ar · ms**
-> - **유럽/인니식**(천단위 `.` · 소수점 `,` → 1,326→**1.326**, 2.5→**2,5** 변환): **es · pt · de · id · vi**
+> ★**숫자표기가 최대 반복 함정**. 언어군별로 정반대다. 상세 용어·문체는 각 `docs/translation-terms-<lang>.md`(21개 브리프) 참조.
+> - **영어식**(천단위 `,` · 소수점 `.` → §13 값 그대로): **en · zh · ar · ms · th · hi · bn · fil · he · sw · fa**
+>   ↳ **비라틴 숫자 주의**: fa(페르시아 ۰-۹)·bn(벵골 ০-৯)·hi(데바나가리 ०-९)는 기계번역이 원어 숫자를 섞음 → **전부 라틴으로 일괄변환(.mjs)**. ar도 서양숫자(٠-٩ 금지).
+> - **유럽식**(천단위 `.` · 소수점 `,` → 1,326→**1.326**, 2.5→**2,5** 변환): **es · pt · de · id · vi · it · ru · pl · uk · ro**
+> - **프랑스식**(천단위 **공백**(NBSP) · 소수점 `,`): **fr**
 > - ja: 전각 `％`, 숫자 관습.
+> - **RTL 언어**: **ar · fa · he** (`RTL_LOCALES`, `globals.css [dir=rtl]` 공용). 카드·숫자는 RTL 안에서 LTR 임베드 유지.
 
 | 언어 | 문체 | 숫자 | 족보·용어 핵심 | 함정/메모 |
 |------|------|------|----------------|-----------|
@@ -48,10 +74,24 @@
 | pt-BR | você | 유럽식 | call→pagar·raise→aumentar·side pot→pote paralelo, gíria "shovar" | 코퍼스 poker/pôquer·street/rua 통일 백로그 |
 | de | du | 유럽식(`8 %` 공백) | Denglisch 동사(callen/raisen/folden), 족보 독일어(Drilling/Straße/Vierling), Blinds/All-in 영어 명사 | 독일식 닫는 인용부호 „…" |
 | zh | 你체 | **영어식** | 족보 중국어(顺子/葫芦/四条/踢脚牌), all-in/set 영어 혼용 | 全角 破折号 `——`, category 한국어 레거시 |
-| ar | أنت·**RTL** | **영어식**(서양숫자, ٠-٩ 금지) | 음차 우세(فلاش/ستريت/فول هاوس), 족보 아랍어 등가 | 카드=라틴 유지, `النهر`(river) 표준, **RTL CSS 미러링 완료**(globals.css `[dir=rtl]`) |
+| ar | أنت·**RTL** | **영어식**(서양숫자, ٠-٩ 금지) | 음차 우세(فلاش/ستريت/فول هاوس), 족보 아랍어 등가 | 카드=라틴 유지, `النهر`(river) 표준, **RTL CSS 미러링 완료** |
 | id | kamu | 유럽식 | 영어 차용 우세(fold/call/raise/족보), cek·bertaruh·kartu bersama | "jalan"≠street(→street), cardroom |
 | ms | anda | **영어식**(≠id!) | kad(≠kartu)·wang(≠uang)·pusingan(≠ronde)·pengedar | ★**id 복사 금지**(어휘·숫자 정반대) |
-| vi | bạn | 유럽식 | **고유 족보명**: Sảnh(straight)·Thùng(flush)·Cù Lũ(full house)·Tứ Quý(quads)·Xám(trips)·Hai Đôi | check는 "check" 유지("kiểm tra"=액션오역), 성조부호 정확, theo/tố/bỏ bài |
+| vi | bạn | 유럽식 | **고유 족보명**: Sảnh·Thùng·Cù Lũ·Tứ Quý·Xám·Hai Đôi | check 유지("kiểm tra"=오역), 성조 정확, theo/tố/bỏ bài |
+| hi | आप | 영어식(**데바나가리 숫자→라틴**) | 데바나가리 산문 + 포커용어 영어 우세 | 힌디식 로마자 혼용, 숫자변환 필수 |
+| tr | sen/siz | 유럽식 | 터키어 산문 + 포커용어 영어 | 터키 접미사 표기 |
+| fr | tu | **프랑스식(공백 천단위)** | 족보 프랑스어(couleur=flush·quinte=straight·brelan·carré) | ★couleur=flush(색깔 아님), NBSP 천단위 |
+| ru | ты | 유럽식 | 키릴, 음차+러시아어 혼용 | ★**uk와 별개**, 러시아어 잔재 오염 주의(рероллы→ререйзы) |
+| it | tu | 유럽식 | 이탈리아어 산문 + 포커용어 영어 | — |
+| pl | ty | 유럽식 | 폴란드어(라틴), 음차 우세 | 폴란드 격변화 표기 |
+| th | คุณ | **영어식** | 태국 문자 산문 + 포커용어 영어/음차 | 성조·띄어쓰기 없음 주의 |
+| fa | تو·**RTL** | 영어식(**페르시아 숫자→라틴**) | 이란 포커 씬, 음차 우세 | ★RTL, 숫자변환 필수 |
+| sw | wewe | **영어식** | ★포커용어 **영어 그대로**(스와힐리 차용 우세) | 억지 스와힐리화 금지 |
+| bn | তুমি | 영어식(**벵골 숫자→라틴**) | 벵골어 산문 + 포커용어 영어 | 숫자변환 필수 |
+| ro | tu | 유럽식(`.`천단위) | ★**Culoare=flush·Chintă=straight·Careu=포카드**, 홀덤 **Full House>Culoare** | 족보 순서 함정 |
+| fil | ikaw | **영어식** | ★**Taglish**(필리핀어 산문+포커용어 영어), 마닐라 허브 | 영어우세 |
+| uk | ти | 유럽식(공백 천단위) | ★**순수 우크라 철자**(і/ї/є/ґ·아포스트로프) | ★**ru 복사 금지**, 러시아어 잔재 오염 주의 |
+| he | אתה·**RTL** | 영어식(히브리 숫자 안 씀) | 음차+고유(רויאל פלאש·רביעייה·פול האוס·פלאש·רצף), 홀덤 פול האוס>פלאש | ★RTL, 아랍어 잔재 주의(שרח→הסבר) |
 
 ## 저작 방식
 - 대상 EN 원문(`lib/posts-en/<slug>.ts`)을 읽고, **같은 필드 구조**로 `lib/posts-<lang>/<slug>.ts`를 저작(`export const POST: Post = {...}`).
