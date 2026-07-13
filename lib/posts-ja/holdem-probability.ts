@@ -204,6 +204,7 @@ export const POST: Post = {
 
 :::readnext[あわせて読みたい]
 /ja/blog/holdem-hand-rankings | ポーカーの役の強さ — 上から下まで | /images/holdem-hand-rankings-hero.webp
+/ja/blog/holdem-starting-hands-chart | 実際に打つべきスターティングハンドはどれか | /images/holdem-starting-hands-chart-hero.webp
 :::
 
 ## よくある質問

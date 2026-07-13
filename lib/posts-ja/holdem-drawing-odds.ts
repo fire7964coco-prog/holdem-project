@@ -171,6 +171,11 @@ export const POST: Post = {
 
 ---
 
+:::readnext[あわせて読みたい]
+/ja/blog/holdem-outs | ポーカーのアウツの数え方 | /images/holdem-outs-hero.webp
+/ja/blog/holdem-pot-odds | ポットオッズの計算方法 | /images/holdem-pot-odds-hero.webp
+:::
+
 ## FAQ
 
 **Q. セットをフロップで引く確率は?**
