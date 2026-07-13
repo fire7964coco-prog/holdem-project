@@ -124,8 +124,8 @@ export default function ClusterMinimap({
     <>
       <div className="flex items-center justify-between mb-2.5">
         {!bare && (
-          <span className="minimap-label inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-primary/25 via-primary/12 to-primary/5 border border-primary/45 px-2.5 py-1 text-[11px] font-extrabold uppercase tracking-[0.14em] text-primary">
-            <Map className="w-3.5 h-3.5" aria-hidden="true" /> {labels.learningMap}
+          <span className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-[0.2em] text-primary/80">
+            <Map className="w-3 h-3" aria-hidden="true" /> {labels.learningMap}
           </span>
         )}
         <span className="ml-auto text-[10px] font-semibold text-[#2563eb] bg-[#2563eb]/10 border border-[#2563eb]/30 rounded-full px-2 py-0.5">
@@ -173,10 +173,7 @@ export default function ClusterMinimap({
 
   if (bare) return inner;
   return (
-    <nav
-      aria-label="Learning roadmap"
-      className="relative bg-gradient-to-b from-primary/[0.07] to-card border border-primary/30 rounded-2xl p-5 shadow-[0_3px_22px_-8px_rgba(212,175,55,0.35)]"
-    >
+    <nav aria-label="Learning roadmap" className="bg-card border border-border rounded-2xl p-5">
       {inner}
     </nav>
   );

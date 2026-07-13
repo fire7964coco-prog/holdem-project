@@ -3,7 +3,7 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Clock, Tag, ChevronLeft, ChevronRight, ChevronDown, Share2, Link2, Map, List } from "lucide-react";
+import { Clock, Tag, ChevronLeft, ChevronRight, ChevronDown, Share2, Link2, Map } from "lucide-react";
 import { FaXTwitter, FaFacebookF } from "react-icons/fa6";
 import { useState, useRef, useEffect } from "react";
 import type { Post } from "@/lib/posts";
@@ -114,10 +114,8 @@ export default function IntlBlogPostClient({
           {hasToc && (
             <aside className="hidden xl:block">
               <div className="sticky top-16 max-h-[calc(100vh-5rem)] overflow-y-auto overscroll-contain pe-1">
-                <nav className="bg-card border border-primary/20 rounded-2xl p-5" aria-label={t.contents}>
-                  <p className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 border border-primary/25 px-2.5 py-1 text-[11px] font-extrabold uppercase tracking-widest text-primary mb-4">
-                    <List className="w-3.5 h-3.5" aria-hidden="true" /> {t.contents}
-                  </p>
+                <nav className="bg-card border border-border rounded-2xl p-5" aria-label={t.contents}>
+                  <p className="text-xs font-bold uppercase tracking-widest text-primary mb-4">{t.contents}</p>
                   <IntlTocList headings={headings} />
                 </nav>
               </div>

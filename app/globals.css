@@ -231,20 +231,6 @@
   font-family: var(--font-inter), "Hiragino Sans", "Hiragino Kaku Gothic ProN",
     "Yu Gothic UI", "Yu Gothic", "YuGothic", Meiryo, var(--font-noto-sans-kr), sans-serif;
 }
-
-/* ── 러닝맵 라벨 시선 유도 (transform만 = GPU, 리플로우/페인트 0, 속도 영향 없음) ── */
-@keyframes minimapLabelPulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.045); }
-}
-.minimap-label {
-  transform-origin: left center;
-  animation: minimapLabelPulse 2.6s ease-in-out infinite;
-  will-change: transform;
-}
-@media (prefers-reduced-motion: reduce) {
-  .minimap-label { animation: none; }
-}
 /* 드롭캡 리드 문단 (:::lead) */
 .lead-para {
   font-family: var(--font-inter), var(--font-noto-sans-kr), var(--font-sans);
