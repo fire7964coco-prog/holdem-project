@@ -3,6 +3,13 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-13 (ja 러닝 로드맵 미니맵 이식)
+
+### 🗺️ ja 블로그에 클러스터 미니맵(학습 지도) 노출 (커밋 `176fae7`)
+- `lib/pillar-clusters.ts` **`JA_CLUSTERS` 신설**: 구조·슬러그 EN 100% 동일(ja 41편 1:1 완역), 라벨만 일본어. 6필라 41슬러그.
+- `components/intl-blog-post-client.tsx`: 미니맵 게이트 `locale==="en"` → **en·ja**로 확장. `localeClusters`(en=EN·ja=JA·기타=null)+`hrefBase={base}` 전달. 기타 부분번역 로케일은 null→미노출(404방지). UI라벨 EN 유지(KO 선례). EN 무영향(동일값 전달).
+- 검증: build·intl-links 통과(235편). ja HTML에 일본어 필라라벨·You are here·/ja/blog 링크·/en 누수 0(hreflang alternate만 정상).
+
 ## 2026-07-13 (ja 최종 내부링크 복원 패스 — ja 완전 마감)
 
 ### ✅ ja 링크복원 42개 (커밋 `f98091f`)

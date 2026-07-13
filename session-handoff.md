@@ -19,6 +19,7 @@
 - 1차: 22개 파일 42개 스트립 링크 복원. 2차: ★**개수·구조 재검증**(사용자 지적 "구조는 EN과 똑같이, 비슷한 밀도 아님") → 7개 파일 10개 인스턴스(Related/readnext 카드·thumb·본문 중복) 추가 정합.
 - **개수부족 0/0 = ja 내부링크가 EN과 대상·개수·구조·thumb까지 1:1**. §13 무변조 전수검증. **ja 완전 마감.**
 - ★교훈: 링크복원은 **존재여부(Set) 아니라 개수(count)로 검증**. 메모리 [[translation-link-structure-equals-en]].
+- ✅ **ja 러닝 로드맵(미니맵) 이식** (`176fae7`): `JA_CLUSTERS`(구조=EN·라벨 일본어) 신설 + `intl-blog-post-client` 게이트 en·ja 확장(hrefBase 로케일대응). 다음 언어 완성 시 동일 패턴(=`<LANG>_CLUSTERS` 추가 + 게이트에 로케일 추가)으로 미니맵 노출 가능.
 
 ### ▶▶ 다음 = **es(스페인어) 언어 완성** (구 12언어 2번째)
 - ⚠️ es도 완성 후 **링크복원 패스는 개수기준 검증**(EN vs es `/blog/` 링크 count 대조, Related/readnext 카드·thumb 포함)으로 EN 구조 1:1 맞출 것.
