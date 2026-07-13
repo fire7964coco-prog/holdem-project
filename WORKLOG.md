@@ -3,6 +3,19 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-13 (ja 언어완성 트랙 착수 — Hand Rankings 필라 6편) ★번역 축 전환
+
+### 🌐 번역 축 전환: "필라×전언어" → "언어×전필라" (사용자 지시)
+> 지금까지 = Rules 필라를 24언어로 가로 확장(완결). 지금부터 = **한 언어를 세로로 완성 → 다음 언어**. 구 12언어부터, 언어당 EN 41편 전체(라이브이벤트 포함). 필라 단위로 자동 진행 + **필라 끝날 때마다 보고 후 다음 필라 승인**. ★**번역 착수 전 반드시 현지어 웹검색·현지 포커사이트에서 실제 용어·문맥 분석**(사용자 명시, 메모리 translation-local-research-first).
+
+### ✅ ja Hand Rankings 필라 6/6 (언어완성 스프린트 1번째 웨이브, 커밋 `b918bc1`)
+- **현지 리서치→브리프 신규**: `docs/translation-terms-ja.md`(ja는 브리프 관례 이전 언어라 없었음). poker101·ABEMA·casino-dealer.jp·zero-poker·mpj-portal 등 분석 → チョップ/端数チップ/キッカー/ナッツ/ボードテクスチャ, フラッシュ(#5)>ストレート(#6) 등 확정.
+- **6편**: hub holdem-hand-rankings **재번역**(stale EN 2026-07-03>ja 2026-06-09 해소) + 신규 5(flush-vs-straight·kicker·tiebreak-rules·split-pot-rules·reading-the-board). Opus 6병렬.
+- **적대적 QA 2배치(Opus)**: §13 **26개 핸드예시 전수 자력검산 0오류**(5,108/10,200·사이드팟 300/400·카운터핏·휠·보드완성 스플릿 등). 🔴/🟡 교정 3건: kicker 도미네이트 서술 정확화(9는 A-A-Q-9-7에 포함), tiebreak 링크스트립 잔재 "(スターティングハンド)" 정리, reading-board 카드표기 T→10 일괄 통일(1·2편은 이미 10).
+- **하드게이트**: build 통과·intl-links 통과(207편/24언어, 대상실존 확인)·화이트리스트(13) 준수(probability/icm/glossary/starting-hands-chart 스트립).
+- **ja 총 13편**(Rules 6 + Hand Rankings 6 + tournament-vs-cash-game 1). ⚠️ja 잔여 stale = holdem-tournament-vs-cash-game(Tournament 웨이브 대상).
+- **사용자 몫(GSC 색인 6 URL)**: `/ja/blog/` + holdem-hand-rankings·holdem-flush-vs-straight·holdem-kicker·holdem-tiebreak-rules·holdem-split-pot-rules·holdem-reading-the-board.
+
 ## 2026-07-13 밤 (KO 블로그 러닝맵 미니맵 이식)
 
 ### 🗺️ 한국어 블로그에 EN 러닝맵(학습지도) 미니맵 추가

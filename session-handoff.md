@@ -5,7 +5,27 @@
 
 ---
 
-## ▶▶▶ 새 세션 START HERE (2026-07-13 밤 — ★KO 러닝맵 미니맵 완료 / 다음 세션 = 번역작업)
+## ▶▶▶ 새 세션 START HERE (2026-07-13 — ★번역 축 전환 / ja 언어완성 진행 중 1/5필라: Hand Rankings 완료 / 다음=ja Odds & Math)
+
+> **★번역 축 전환**(사용자 지시): "필라×전언어"(Rules 24언어 완결) → **"언어×전필라"**(한 언어 세로 완성 → 다음). **구 12언어부터**(ja→es→pt→de→zh→ar→id→ms→vi→hi→tr), 언어당 EN 41편 전체(라이브이벤트 4편 포함). **필라 단위 자동 진행 + 필라 끝날 때마다 보고 후 다음 필라 승인**. ★**착수 전 필수: 현지어 웹검색·현지 포커사이트에서 실제 용어·문맥 분석**(메모리 [[translation-local-research-first]]). 읽는 순서: `docs/translation-spec.md` → `docs/translation-terms-ja.md` → 이 파일.
+
+### ✅ 이번 세션: ja Hand Rankings 필라 6/6 완료·배포 (커밋 `b918bc1`)
+- 브리프 `docs/translation-terms-ja.md` 신규(ja는 브리프 없던 언어). hub 재번역(stale 해소)+신규 5편. Opus 6병렬 + 적대적 QA 2배치(§13 26예시 0오류). T→10 통일 등 교정 3건. 하드게이트 전통과.
+- **ja 총 13편** = Rules 6 + Hand Rankings 6 + tournament-vs-cash-game 1.
+- 사용자 GSC: `/ja/blog/` 6 URL(hand-rankings·flush-vs-straight·kicker·tiebreak-rules·split-pot-rules·reading-the-board).
+
+### ▶▶ 다음 = ja **Odds & Math 필라**(웨이브 2, 사용자 승인 후)
+- 슬러그 6: holdem-probability(hub) + holdem-pot-odds·holdem-outs(EN은 holdem-card-counting일 수 있음, 확인)·holdem-drawing-odds·holdem-implied-odds·holdem-equity. **전부 ja 신규**.
+- 절차: ①확률·오즈 용어 현지 웹리서치(팟오즈/아웃츠/에퀴티 일본어 표현)→브리프 보강 ②Opus 6병렬 번역 ③하드게이트 ④적대적 QA 2배치 ⑤교정 ⑥커밋 ⑦보고.
+- ⚠️화이트리스트 확대: Odds 6편 추가되면 flush-vs-straight 등이 걸었던 holdem-probability 링크를 **복원 가능**(언어 완성 시 최종 링크복원 패스에서 일괄). 지금은 스트립 유지.
+- masterUpdated = 각 EN `updated` 값 기록. updated=착수일.
+
+### 📌 ja 남은 필라 (Hand Rankings 완료 후 4개)
+Odds & Math(6) → Strategy(8) → Tournament(9, 라이브이벤트 4 포함·tournament-vs-cash는 stale 재번역) → Glossary(6). 완성 시 **최종 링크복원 패스**(전 필라 존재→EN급 내부링크).
+
+---
+
+## ▶▶▶ (이전) START HERE (2026-07-13 밤 — ★KO 러닝맵 미니맵 완료 / 다음 세션 = 번역작업)
 
 > **다음 세션 = 번역작업**(사용자 지시). ★**먼저 `docs/translation-spec.md` 읽을 것** — 24개 언어로 검증된 표준 파이프라인(모델=Opus, ⓪배선 체크리스트, 언어별 숫자표기·함정표)을 단일 기준서로 정리해둠. 그다음 대상 언어 브리프 `docs/translation-terms-<lang>.md`. 어느 필라/언어인지 사용자와 확정 후 진행.
 
