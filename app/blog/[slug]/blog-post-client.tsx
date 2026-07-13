@@ -17,7 +17,7 @@ import Image from "next/image";
 import { useState, useRef, useEffect, useCallback } from "react";
 
 /** 한국어 미니맵 UI 라벨 */
-const KO_MINIMAP_LABELS = { learningMap: "Learning Map", overview: "개요", youAreHere: "현재 위치", hub: "허브" };
+const KO_MINIMAP_LABELS = { learningMap: "Learning Map", overview: "Overview", youAreHere: "You are here", hub: "Hub" };
 
 const PokerOddsCalculator = dynamic(
   () => import("@/components/poker-odds-calculator").then((m) => m.PokerOddsCalculator),
