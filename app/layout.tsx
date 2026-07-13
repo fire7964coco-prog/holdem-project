@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
-import { Noto_Sans_KR, Inter, Lora, EB_Garamond } from "next/font/google";
+import { Noto_Sans_KR, Inter, Lora, EB_Garamond, Playfair_Display } from "next/font/google";
 import { SiteHeader, SiteFooter, HtmlLangSync, MainContent, ScrollToTopButton } from "@/components/site-chrome";
 import { BrushDefs } from "@/components/brush-defs";
 import SitePopup from "@/components/site-popup";
@@ -78,6 +78,18 @@ const ebGaramond = EB_Garamond({
   variable: "--font-eb-garamond",
 });
 
+/**
+ * Playfair Display — 고대비 디스플레이 세리프 (마스트헤드 로고용).
+ * 라틴 전용·700/800만·preload 안 함(로고 소량 글자라 비용 미미).
+ */
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["700", "800"],
+  display: "swap",
+  preload: false,
+  variable: "--font-playfair",
+});
+
 export const viewport: Viewport = {
   themeColor: "#0a1f10",
   colorScheme: "dark",
@@ -136,7 +148,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="ko" dir="ltr" suppressHydrationWarning className={`${notoSansKr.variable} ${inter.variable} ${lora.variable} ${ebGaramond.variable}`}>
+    <html lang="ko" dir="ltr" suppressHydrationWarning className={`${notoSansKr.variable} ${inter.variable} ${lora.variable} ${ebGaramond.variable} ${playfair.variable}`}>
       <head>
         {/* 보조 언어 경로에서 lang/dir을 페인트 직전 보정 (RTL 깜빡임·언어 신호) */}
         <script dangerouslySetInnerHTML={{ __html: LANG_BOOTSTRAP }} />
