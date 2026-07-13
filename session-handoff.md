@@ -5,7 +5,28 @@
 
 ---
 
-## ▶▶▶ 새 세션 START HERE (2026-07-13 — ★다국어 Rules 필라 20개 언어 / bn 완료·톱5 진행중 1/5)
+## ▶▶▶ 새 세션 START HERE (2026-07-13 — ★다국어 Rules 필라 21개 언어 / 톱5 진행중 2/5: bn·ro 완료)
+
+> **모드**: 다국어 확장 자율진행. 톱추천 **bn(✅)→ro(✅)→fil→uk→he** 순차. 전 과정 Opus(번역 6병렬 + 적대적 QA 2배치). **he는 RTL**(ar/fa 인프라). 배선 절차는 아래·ru 블록 참조.
+
+### ✅ ro(루마니아어) 완료 (파일럿20, 21번째 로케일)
+치명함정 안전: Culoare=flush·Chintă=straight·Careu=포카드·홀덤 Full House>Culoare. 유럽식 숫자(마침표 천단위). §13 0오류. **21개 언어.** GSC: `/ro/blog/` 6 URL.
+
+### ▶▶ 다음 = fil→uk→he (톱5 잔여 3개)
+- **fil**(필리핀어/타갈로그): 영어식 숫자·라틴·영어 차용 매우 우세(스와힐리처럼 포커용어 영어 유지 방향). OG=fil_PH. 필리핀=마닐라 포커 허브.
+- **uk**(우크라이나어): 키릴·숫자표기 웹리서치(러시아 GOST 유사 공백 가능)·ru와 별개 어휘.
+- **he**(히브리어): ★**RTL** → `lib/intl.ts` RTL_LOCALES에 "he" 추가(현재 `["ar","fa"]`) + globals.css `[dir=rtl]` 재활용. 히브리 문자·숫자 라틴·우→좌.
+- **★he(톱5 마지막) 완료 후 = 24개 언어 → 요약 보고서**(사용자 지시).
+
+### 📌 Rules 필라 = 21개 언어
+en(마스터) + ja·es·pt·de·zh·ar·id·ms·vi·hi·tr + fr·ru·it·pl·th·fa·sw·bn·**ro**.
+
+### 📌 신규 로케일 배선 절차(재사용)
+① `intl.ts` SECONDARY_LOCALES+코드 + 6개 맵 전부(TS 강제). RTL이면 RTL_LOCALES+코드. ② posts-<lang>/index.ts. ③ intl-posts.ts. ④ translate route. ⑤ FAQ 마커 `**Q. ...?**`+`A.`(리터럴). ⑥ 비라틴 숫자는 라틴 일괄변환(.mjs). ⑦ QA 흔한 결함=desc>160·readnext/본문 파이프·마크다운 링크(비허용 슬러그, check-intl-links가 본문 마크다운은 잡음)·기계번역 깨진단어.
+
+---
+
+## ▶▶▶ (이전) START HERE (2026-07-13 — ★다국어 Rules 필라 20개 언어 / bn 완료·톱5 진행중 1/5)
 
 > **모드**: 다국어 확장 자율진행. sw(19번째) 후 사용자 톱추천 **bn(✅)→ro→fil→uk→he** 순차 진행 중. 전 과정 Opus(번역 6병렬 + 적대적 QA 2배치). 신규 로케일 배선 절차는 아래·ru 블록 참조. **he는 RTL**(ar/fa 인프라).
 

@@ -3,7 +3,7 @@
  * 한국어는 루트(/)에 그대로 두고, 추가 언어만 /{locale}/... 로 발행한다.
  * 새 언어 추가 = 아래 SECONDARY_LOCALES + CHROME 에 항목만 추가.
  */
-export const SECONDARY_LOCALES = ["en", "ja", "es", "zh", "ar", "pt", "id", "ms", "vi", "hi", "de", "tr", "fr", "ru", "it", "pl", "th", "fa", "sw", "bn"] as const;
+export const SECONDARY_LOCALES = ["en", "ja", "es", "zh", "ar", "pt", "id", "ms", "vi", "hi", "de", "tr", "fr", "ru", "it", "pl", "th", "fa", "sw", "bn", "ro"] as const;
 export type SecondaryLocale = (typeof SECONDARY_LOCALES)[number];
 
 export function isSecondaryLocale(value: string): value is SecondaryLocale {
@@ -45,6 +45,7 @@ export const OG_LOCALE: Record<SecondaryLocale, string> = {
   fa: "fa_IR",
   sw: "sw_KE",
   bn: "bn_BD",
+  ro: "ro_RO",
 };
 
 /** <html lang> 및 hreflang 코드 (zh는 간체 = zh-Hans, pt는 브라질 = pt-BR) */
@@ -69,6 +70,7 @@ export const HTML_LANG: Record<SecondaryLocale, string> = {
   fa: "fa",
   sw: "sw",
   bn: "bn",
+  ro: "ro",
 };
 
 interface ChromeStrings {
@@ -465,6 +467,24 @@ export const POST_LABELS: Record<SecondaryLocale, PostLabels> = {
     blogIntro:
       "ব্যবহারিক গাইড যা শুধু কোন হাত জেতে তা নয়, কেন জেতে — এবং টেবিলে কীভাবে কাজে লাগাবেন তা ব্যাখ্যা করে।",
   },
+  ro: {
+    contents: "Cuprins",
+    quickAnswer: "Răspuns rapid",
+    category: "Ghid pentru începători",
+    readSuffix: "de citit",
+    published: "Publicat",
+    updated: "Actualizat",
+    prev: "Anterior",
+    next: "Următor",
+    related: "Articole conexe",
+    share: "Distribuie acest articol",
+    copy: "Copiază linkul",
+    copied: "Copiat!",
+    back: "Înapoi la toate articolele",
+    blogTitle: "Blog de strategie Texas Hold'em",
+    blogIntro:
+      "Ghiduri practice care explică nu doar ce mână bate ce, ci și de ce — și cum să folosești asta la masă.",
+  },
 };
 
 export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
@@ -748,6 +768,20 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     disclaimer:
       "এই সাইটটি শুধুমাত্র তথ্যের উদ্দেশ্যে এবং প্রকৃত অর্থের জুয়া প্রচার করে না। শুধুমাত্র 18 বছর বা তার বেশি বয়সীদের জন্য।",
   },
+  ro: {
+    skip: "Sari la conținut",
+    brand: "HoldemMaster",
+    blogLabel: "Blog",
+    menuOpen: "Deschide meniul",
+    menuClose: "Închide meniul",
+    koLabel: "한국어",
+    tagline:
+      "Strategie Texas Hold'em clară și practică. Ghiduri care explică nu doar ce mână câștigă, ci și de ce.",
+    contentHeading: "Conținut",
+    languageHeading: "Limbă",
+    disclaimer:
+      "Acest site are doar scop informativ și nu promovează jocurile de noroc pe bani reali. Doar pentru persoanele de peste 18 ani.",
+  },
 };
 
 /** 블로그 탑바 — 홈 피드 버튼 (한국어 기본값: 홈피드) */
@@ -772,6 +806,7 @@ export const NAV_HOME_FEED: Record<SecondaryLocale, string> = {
   fa: "خانه",
   sw: "Mwanzo",
   bn: "হোম",
+  ro: "Acasă",
 };
 
 /** 블로그 탑바 — 커뮤니티 CTA 버튼 */
@@ -796,4 +831,5 @@ export const NAV_CTA: Record<SecondaryLocale, string> = {
   fa: "انجمن ←",
   sw: "Jamii →",
   bn: "কমিউনিটি →",
+  ro: "Comunitate →",
 };

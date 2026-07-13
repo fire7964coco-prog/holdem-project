@@ -20,6 +20,7 @@ import { TH_POSTS } from "./posts-th";
 import { FA_POSTS } from "./posts-fa";
 import { SW_POSTS } from "./posts-sw";
 import { BN_POSTS } from "./posts-bn";
+import { RO_POSTS } from "./posts-ro";
 
 /** 보조 언어별 포스트 목록 */
 export const POSTS_BY_LOCALE: Record<SecondaryLocale, Post[]> = {
@@ -43,6 +44,7 @@ export const POSTS_BY_LOCALE: Record<SecondaryLocale, Post[]> = {
   fa: FA_POSTS,
   sw: SW_POSTS,
   bn: BN_POSTS,
+  ro: RO_POSTS,
 };
 
 export function getPostByLocale(locale: SecondaryLocale, slug: string): Post | undefined {

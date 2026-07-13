@@ -3,6 +3,16 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-13 (ro 루마니아어 신규 로케일 + Rules 필라 6편 — 21번째 로케일)
+
+### 🌐 ro(루마니아어) 신규 로케일 + Rules 필라 6/6 (파일럿20)
+> 톱추천 5개 2번타자. 루마니아 규제 포커시장. 신규 로케일 배선 + Opus 6병렬 + 적대적 QA 2배치.
+- **인프라**: `lib/intl.ts` +ro 7개 맵(루마니아 UI) · `intl-posts.ts` RO_POSTS · `posts-ro/index.ts` · translate route.
+- **브리프**: `docs/translation-terms-ro.md`. ⚠️**치명 함정**: **Culoare=flush**(색/무늬 다의어)·**Chintă=straight**·**Careu=포카드**·**홀덤 Full House>Culoare**. 숫자=유럽식(천단위 마침표·소수점 쉼표, it/es/de 계열), tu체, 특수문자 ă/â/î/ș/ț.
+- **적대적 QA 2배치(Opus)**: §13 전수 손계산 0오류(pot 198.000·side pot 1.300·Chintă de Culoare Q-J-T-9-8·2,7:1/27%). 함정 4종 안전. 🔴 1건(showdown 깨진단어 "bui-uri"→"blind-uri") + 링크 하드체크 초기 blind→holdem-tournament 2건 교정.
+- **결과**: 21번째 로케일 ro. Rules 필라 = **21개 언어**.
+- **사용자 GSC**: `/ro/blog/` 6 URL.
+
 ## 2026-07-13 (bn 벵골어 신규 로케일 + Rules 필라 6편 — 20번째 로케일)
 
 ### 🌐 bn(벵골어) 신규 로케일 + Rules 필라 6/6 (파일럿19)
