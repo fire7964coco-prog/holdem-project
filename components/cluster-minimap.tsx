@@ -45,12 +45,6 @@ function stopsFor(pillar: PillarCluster, slug: string, isCurrentPillar: boolean,
 function Trail({ pillar, slug, isCurrentPillar, hrefBase, labels }: { pillar: PillarCluster; slug: string; isCurrentPillar: boolean; hrefBase: string; labels: MinimapLabels }) {
   const stops = stopsFor(pillar, slug, isCurrentPillar, labels.overview);
   const currentStopIdx = stops.findIndex((s) => s.state === "current");
-  // "그다음 읽으면 좋을 글" = 현재 노드 바로 다음 stop. 다음이 없으면(현재가 마지막) 필라 허브(0번).
-  let nextReadIdx = -1;
-  if (isCurrentPillar && currentStopIdx >= 0) {
-    nextReadIdx = currentStopIdx < stops.length - 1 ? currentStopIdx + 1 : 0;
-    if (nextReadIdx === currentStopIdx) nextReadIdx = -1;
-  }
   return (
     <ol className="relative ps-1">
       {stops.map((s, i) => {
@@ -91,18 +85,11 @@ function Trail({ pillar, slug, isCurrentPillar, hrefBase, labels }: { pillar: Pi
                 <Link href={`${hrefBase}/${s.slug}`} className="group inline-block leading-snug">
                   <span
                     className={`text-[13px] transition-colors ${
-                      i === nextReadIdx
-                        ? "font-bold text-primary"
-                        : s.hub
-                          ? "font-semibold text-foreground/90 group-hover:text-primary"
-                          : "text-muted-foreground group-hover:text-primary"
+                      s.hub ? "font-semibold text-foreground/90 group-hover:text-primary" : "text-muted-foreground group-hover:text-primary"
                     }`}
                   >
                     {s.label}
                   </span>
-                  {i === nextReadIdx && (
-                    <span className="minimap-next-emoji" aria-hidden="true"> 👉</span>
-                  )}
                 </Link>
               )}
             </div>
@@ -137,7 +124,7 @@ export default function ClusterMinimap({
     <>
       <div className="flex items-center justify-between mb-2.5">
         {!bare && (
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-primary/25 via-primary/12 to-primary/5 border border-primary/45 px-2.5 py-1 text-[11px] font-extrabold uppercase tracking-[0.14em] text-primary">
+          <span className="minimap-label inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-primary/25 via-primary/12 to-primary/5 border border-primary/45 px-2.5 py-1 text-[11px] font-extrabold uppercase tracking-[0.14em] text-primary">
             <Map className="w-3.5 h-3.5" aria-hidden="true" /> {labels.learningMap}
           </span>
         )}
