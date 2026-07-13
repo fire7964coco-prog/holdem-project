@@ -42,16 +42,10 @@ export default function BlogTopBar({
         {homeFeedLabel}
       </Link>
 
-      {/* 가운데: 로고 (Playfair Display 세리프 마스트헤드) */}
+      {/* 가운데: 로고 */}
       <span
-        className="text-lg select-none"
-        style={{
-          color: GOLD,
-          opacity: 0.8,
-          fontFamily: "var(--font-playfair), Georgia, serif",
-          fontWeight: 800,
-          letterSpacing: "0.04em",
-        }}
+        className="text-base font-black tracking-widest select-none"
+        style={{ color: GOLD, opacity: 0.7 }}
       >
         ♠ HM
       </span>
