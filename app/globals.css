@@ -232,18 +232,18 @@
     "Yu Gothic UI", "Yu Gothic", "YuGothic", Meiryo, var(--font-noto-sans-kr), sans-serif;
 }
 
-/* ── 러닝맵 라벨 시선 유도 (transform만 = GPU, 리플로우/페인트 0, 속도 영향 없음) ── */
-@keyframes minimapLabelPulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.045); }
+/* ── 러닝맵 "그다음 읽을 글" 이모지 깜빡임 (2초 주기 페이드; opacity만 = GPU 합성, 속도 영향 0) ── */
+@keyframes minimapNextBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
-.minimap-label {
-  transform-origin: left center;
-  animation: minimapLabelPulse 2.6s ease-in-out infinite;
-  will-change: transform;
+.minimap-next-emoji {
+  display: inline-block;
+  animation: minimapNextBlink 2s ease-in-out infinite;
+  will-change: opacity;
 }
 @media (prefers-reduced-motion: reduce) {
-  .minimap-label { animation: none; }
+  .minimap-next-emoji { animation: none; }
 }
 /* 드롭캡 리드 문단 (:::lead) */
 .lead-para {
