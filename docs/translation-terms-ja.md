@@ -68,8 +68,19 @@
 - **必要勝率**(= 100% ÷ ポットオッズ) / ブレイクイーブン.
 - ★숫자·비율·확률은 §13 불변. `%`는 반각, 오즈 비율(예 `3:1`, `2.5:1`)은 EN 그대로. 큰 팟 금액은 영어식 콤마.
 
+## 戦略 (Strategy) 用語 — Wave 3 (현지 웹리서치: ABEMA·mpj-portal·pokeracademy·zero-poker·raq-hiphop 등)
+- **ポジション**(position). アクション順 = UTG(最不利) → MP/HJ → CO → **BTN**(ボタン/ディーラーボタン, 最有利) → SB → BB(時計回り). アーリー/ミドル/レイトポジション.
+- **UTG**(アンダーザガン)·**CO**(カットオフ)·**BTN**(ボタン)·**HJ**(ハイジャック)·MP·SB·BB — 略称は英語慣용 그대로.
+- **タイト**(신중히 좁힘)/**ルース**(넓고 적극적). 철칙「位置が悪いほどハンドを絞り、良いほど広げる」.
+- **スターティングハンド**/**ハンドレンジ**(レンジ) — 참가할 핸드 범위. ハンドレンジ表.
+- **リンプ**(リンプイン; 오픈레이즈 가능한 상황에서 BB에 콜만)/リンパー. **オープンレイズ**(オープン)/アイソレート.
+- **3ベット**(스리벳; 오픈에 대한 재레이즈)/**3ベットライト**(레인지 확대)/4ベット/コールドコール.
+- **Cベット / コンティニュエーションベット / CB**(프리플랍 마지막 레이저=アグレッサー가 플랍서 계속 베팅)/**アグレッサー**/ディレイCベット. 標準サイズ 33% 등 EN 값 유지.
+- **フォールド判断**/降りどき/フォールドエクイティ. バリュー/バリューベット/ブラフ/セミブラフ/エクイティ実現.
+- 문체·숫자: 기존과 동일(です/ます, 영어식 숫자, 반각%, `$`·`BB` 유지). 스택·사이즈는 BB(ビッグブラインド) 단위 표기 그대로.
+
 ## 내부링크 (하드 규칙)
 - 전부 `/ja/blog/슬러그` 형식.
-- **ja 화이트리스트(존재하는 글만 링크, Wave 2 반영 = 19개)**: texas-holdem-rules-for-beginners · holdem-game-order · holdem-betting-actions · holdem-blind-meaning · holdem-all-in-rules · holdem-showdown-rules · holdem-hand-rankings · holdem-tournament-vs-cash-game · holdem-flush-vs-straight · holdem-kicker · holdem-tiebreak-rules · holdem-split-pot-rules · holdem-reading-the-board · **holdem-probability · holdem-pot-odds · holdem-outs · holdem-drawing-odds · holdem-implied-odds · holdem-equity**.
-- 화이트리스트 밖 슬러그(holdem-strategy·holdem-positions·holdem-3bet 등 전략/토너먼트/용어집 글 — 아직 미번역): 본문 링크는 **링크 마크업+thumb만 제거, 앵커 텍스트는 남김**. `:::readnext`/Related 카드는 그 항목 **통째 삭제**.
-- ※ holdem-probability는 이제 화이트리스트 내 → Wave 1에서 스트립했던 링크는 언어 완성 시 최종 복원 패스에서 처리(지금 웨이브에선 신규 6편만 정상 링크).
+- **ja 화이트리스트(존재하는 글만 링크, Wave 3 반영 = 27개)**: texas-holdem-rules-for-beginners · holdem-game-order · holdem-betting-actions · holdem-blind-meaning · holdem-all-in-rules · holdem-showdown-rules · holdem-hand-rankings · holdem-tournament-vs-cash-game · holdem-flush-vs-straight · holdem-kicker · holdem-tiebreak-rules · holdem-split-pot-rules · holdem-reading-the-board · holdem-probability · holdem-pot-odds · holdem-outs · holdem-drawing-odds · holdem-implied-odds · holdem-equity · **holdem-strategy · holdem-positions · holdem-position-play · holdem-starting-hands-chart · holdem-limping · holdem-3bet · holdem-continuation-bet · holdem-when-to-fold**.
+- 화이트리스트 밖 슬러그(holdem-tournament·holdem-icm·holdem-bubble·holdem-short-stack·holdem-glossary·holdem-straddle·holdem-rake 등 토너먼트/용어집 글, 라이브이벤트 4편 — 아직 미번역): 본문 링크는 **링크 마크업+thumb만 제거, 앵커 텍스트는 남김**. `:::readnext`/Related 카드는 그 항목 **통째 삭제**.
+- ※ holdem-probability·holdem-strategy·holdem-positions·starting-hands-chart 등이 화이트리스트에 편입됨 → 이전 웨이브에서 스트립했던 링크들은 **언어 완성 시 최종 복원 패스**에서 일괄 처리(지금 웨이브에선 신규 8편만 정상 링크).
