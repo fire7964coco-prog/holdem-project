@@ -3,44 +3,51 @@ import type { Post } from "../posts";
 export const POST: Post = {
   slug: "holdem-hand-rankings",
   title: "Jerarquía de manos de póker en Texas Hold'em — de la mejor a la peor, con probabilidades",
-  seoTitle: "¿Creías que ganabas y perdiste? — Manos de póker y desempates",
-  desc: "¿Ligaste color y aun así perdiste el bote? Casi siempre es una sola regla que se pasa por alto. Aquí tienes las 10 manos de póker de la mejor a la peor, las probabilidades reales de cada una y cómo deciden el kicker y los empates.",
+  seoTitle: "¿Creías que ganabas y perdiste el bote? — Manos y desempates",
+  desc: "¿Ligaste color y aun así perdiste el bote? Casi siempre falla una sola regla. Aquí tienes las 10 manos de mejor a peor, con probabilidades y desempates.",
   tldr: "La jerarquía de manos de póker, de la mejor a la peor, es: Escalera Real, Escalera de Color, Póker, Full, Color, Escalera, Trío, Doble Pareja, Pareja y Carta Alta.",
-  category: "초보 가이드",
+  category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-06-09",
+  updated: "2026-07-13",
+  masterUpdated: "2026-07-03",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🃏",
+  image: "/images/holdem-hand-rankings-hero.webp",
+  imageAlt: "Escalera Real — 10 J Q K A de picas sobre una mesa de póker con torres de fichas y botón de dealer",
   tags: ["manos de poker", "jerarquia de manos de poker", "manos de texas holdem", "que mano gana en poker", "kicker poker", "empate poker", "mejores manos de poker", "orden de manos poker"],
   content: `
-Estás mano a mano en el river. Ligaste tu color, estás seguro de que es bueno… y entonces el dealer empuja el bote hacia el otro lado. La mesa estaba emparejada, tu rival tenía full, y nunca lo viste venir.
+Estás mano a mano en el river. Ligaste tu color, estás seguro de que es bueno… y entonces ==r:el dealer empuja el bote hacia el otro lado==. La mesa estaba emparejada, tu rival tenía full, y nunca lo viste venir.
 
-Casi todos los momentos de "creía que ganaba" se reducen a lo mismo: no leer la **jerarquía de manos de póker** con suficiente rapidez. El orden se aprende en cinco minutos. Lo difícil es leerlo en vivo, bajo presión, con una mesa emparejada o conectada — y eso casi nadie lo explica bien.
+Casi todos los momentos de "creía que ganaba" se reducen a lo mismo: ==no leer la **jerarquía de manos de póker** con suficiente rapidez==. El orden en sí se aprende en cinco minutos. Leerlo en vivo, bajo presión, con una mesa emparejada o conectada — ==eso es lo que casi nadie te explica bien==.
 
-Esta guía resuelve las dos cosas. Tendrás el orden completo con las probabilidades reales, todas las reglas de desempate, tres problemas de mesa reales para practicar "encuentra tus mejores cinco cartas", y una rutina de 1 segundo para leer cualquier mesa.
+Esta guía resuelve las dos cosas. Tendrás el orden completo con las probabilidades reales, todas las reglas de desempate, tres problemas de mesa reales para practicar "encuentra tus mejores cinco", y una rutina de 1 segundo para leer cualquier mesa en directo.
 
 ---
 
-## Jerarquía de manos de póker: el orden completo
+## Jerarquía de manos de póker: el orden completo de un vistazo
 
-Empieza aquí. Esta es toda la jerarquía, de la más fuerte a la más débil, con la probabilidad aproximada de ligar cada mano para el river en Texas Hold'em.
+Empieza aquí. Esta es toda la jerarquía, de la más fuerte a la más débil, con la probabilidad a largo plazo de ligar cada mano para el river en Texas Hold'em.
+
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | # | Mano | También llamada | Qué es | Probabilidad (al river) |
-|------|------|------|------|------|
-| **1** | Escalera Real | "Royal" | A-K-Q-J-10 del mismo palo | 0.0032% |
-| **2** | Escalera de Color | "Steel wheel" (A-5) | 5 en secuencia, mismo palo | 0.0279% |
-| **3** | Póker | "Cuádruple" | Cuatro cartas del mismo valor | 0.168% |
+|:---|:---|:---|:---|:---:|
+| **1** | Escalera Real | "Broadway" | A-K-Q-J-10, un solo palo | 0.0032% |
+| **2** | Escalera de Color | "Steel wheel" (A-5) | 5 en secuencia, un solo palo | 0.0279% |
+| **3** | Póker | "Cuádruple" (quads) | Cuatro cartas del mismo valor | 0.168% |
 | **4** | Full | "Full house" | Trío + pareja | 2.60% |
-| **5** | Color | "Flush" | 5 cartas del mismo palo | 3.03% |
-| **6** | Escalera | "Straight" | 5 en secuencia, palos mezclados | 4.62% |
-| **7** | Trío | "Set" / "Trips" | Tres cartas del mismo valor | 4.83% |
+| **5** | Color | — | 5 cartas cualesquiera de un palo | 3.03% |
+| **6** | Escalera | — | 5 en secuencia, palos mezclados | 4.62% |
+| **7** | Trío | "Trips" / "Set" | Tres cartas del mismo valor | 4.83% |
 | **8** | Doble Pareja | — | Dos parejas distintas | 23.5% |
 | **9** | Pareja | — | Dos cartas del mismo valor | 43.8% |
 | **10** | Carta Alta | "Sin nada" | Ninguna combinación | 17.4% |
 
+</div>
+
 > **La regla que gana discusiones**
-> La Pareja y la Carta Alta juntas suman alrededor del 61% de todas las manos de siete cartas al river. Las manos grandes parecen comunes porque se recuerdan, pero la mayoría de los botes se deciden con una pareja y un kicker.
+> La Pareja y la Carta Alta juntas suman alrededor del 61% de todas las manos de siete cartas al river. Las manos grandes parecen comunes porque se recuerdan, pero la mayoría de los botes se deciden con una pareja y un [kicker](/es/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp").
 
 :::quiz:::
 
@@ -54,7 +61,7 @@ Antes de las manos, necesitas la fuerza de las cartas. Solo dos cosas.
 
 **A > K > Q > J > 10 > 9 > 8 > 7 > 6 > 5 > 4 > 3 > 2**
 
-El As es la carta más fuerte y también la única que rompe las reglas: juega alto (A-K-Q-J-10) y bajo (A-2-3-4-5, "la rueda"). No puede dar la vuelta por el medio: Q-K-A-2-3 **no** es escalera.
+El As es la carta más fuerte y también la única que rompe las reglas: juega alto (A-K-Q-J-10) *y* bajo (A-2-3-4-5, "la rueda"). No puede dar la vuelta por el medio: Q-K-A-2-3 **no** es escalera.
 
 ### Los palos no tienen valor
 
@@ -66,11 +73,11 @@ En el Texas Hold'em estándar, **ningún palo gana a otro**. Las picas no ganan 
 
 ### #1 — Escalera Real
 
-:::hand[A♠,K♠,Q♠,J♠,10♠] Escalera Real — A-K-Q-J-10 de picas:::
+:::hand[A♠,K♠,Q♠,J♠,10♠] Escalera Real — A-K-Q-J-10, todas de picas:::
 
 **A♠ K♠ Q♠ J♠ 10♠** — la escalera de color más alta y la mejor mano del póker.
 
-No se puede ganar ni empatar (dos escaleras reales solo pueden darse en palos distintos, lo que significa empate). Aparece más o menos una vez cada 31.000 manos, así que muchos jugadores pasan años sin ligarla. Cuando lo hagas, tu único trabajo es meter cuantas fichas puedas.
+No se puede ganar ni empatar (dos escaleras reales solo pueden darse en palos distintos, lo que significa empate). Aparece más o menos una vez cada 31,000 manos, así que muchos jugadores pasan años sin ligarla. Cuando lo hagas, tu único trabajo es meter cuantas fichas puedas.
 
 ### #2 — Escalera de Color
 
@@ -78,7 +85,7 @@ No se puede ganar ni empatar (dos escaleras reales solo pueden darse en palos di
 
 **9♥ 8♥ 7♥ 6♥ 5♥** — cinco cartas seguidas, todas del mismo palo.
 
-Solo la supera una escalera de color más alta o una escalera real. La versión más baja, A-2-3-4-5 del mismo palo, se llama "steel wheel". Si chocan dos escaleras de color, gana la de carta más alta.
+Solo la supera una escalera de color más alta o una escalera real. La versión más baja, A-2-3-4-5 del mismo palo, se llama **"steel wheel"**. Si chocan dos escaleras de color, gana la de carta más alta.
 
 ### #3 — Póker (cuádruple)
 
@@ -86,9 +93,9 @@ Solo la supera una escalera de color más alta o una escalera real. La versión 
 
 **8♣ 8♦ 8♥ 8♠ K♥** — las cuatro cartas de un mismo valor.
 
-Entre dos pókers, gana el de valor más alto. Si las cuatro están *en la mesa*, decide el **kicker** más alto — y el As manda.
+Entre dos pókers, gana el de valor más alto. Si las cuatro están *en la mesa* (compartidas por todos), decide el **kicker** más alto — y ahí el As manda.
 
-### #4 — Full
+### #4 — Full (full house)
 
 :::hand[Q♠,Q♥,Q♦,5♣,5♠] Full — tres reinas + dos cincos:::
 
@@ -103,7 +110,7 @@ Compara **primero el trío**: QQQ55 gana a JJJ99 porque las reinas superan a las
 
 :::hand[A♦,J♦,8♦,6♦,2♦] Color — cinco diamantes:::
 
-**A♦ J♦ 8♦ 6♦ 2♦** — cinco cartas del mismo palo, sin importar la secuencia.
+**A♦ J♦ 8♦ 6♦ 2♦** — cinco cartas cualesquiera del mismo palo, sin importar la secuencia.
 
 Dos colores se comparan carta por carta desde la más alta: A-J-8-6-2 gana a A-J-8-5-2 porque el 6 supera al 5. Cuatro cartas de un palo **no** son color: necesitas cinco.
 
@@ -119,7 +126,7 @@ Dos colores se comparan carta por carta desde la más alta: A-J-8-6-2 gana a A-J
 
 Entre dos escaleras gana la de carta más alta.
 
-### #7 — Trío (set / trips)
+### #7 — Trío (trips / set)
 
 :::hand[J♣,J♠,J♥,A♦,4♠] Trío — tres jotas + kickers:::
 
@@ -127,7 +134,7 @@ Entre dos escaleras gana la de carta más alta.
 
 Hay dos formas de ligarlo, y la diferencia importa:
 
-- **Set:** una pareja servida más una carta de la mesa (p. ej. tienes J♣ J♠ y la mesa trae J♥). Disimulado y peligroso.
+- **Set:** una pareja servida más una carta de la mesa que empareja (p. ej. tienes J♣ J♠ y la mesa trae J♥). Disimulado y peligroso.
 - **Trips:** una pareja en la mesa más una carta tuya. Más fácil de leer para el rival y de compartir.
 
 El set saca más fichas porque nadie lo ve venir.
@@ -164,9 +171,9 @@ En el showdown gana la carta más alta, luego la siguiente, y así con las cinco
 
 Esta es la parte que decide botes reales — y la que muchas tablas se saltan. Cuando dos jugadores tienen el **mismo tipo de mano**, sigue este orden exacto:
 
-1. **Compara el tipo de mano.** Un color siempre gana a una escalera, un full siempre gana a un color, etc.
-2. **Compara las cartas que forman la mano.** Una pareja de ases gana a una de reyes; un color con As gana a uno con J.
-3. **Compara los kickers.** Si la mano hecha empata, las cartas restantes deciden, una a una desde arriba.
+1. **Compara el tipo de mano.** Un color siempre gana a una escalera, un full siempre gana a un color, y así sucesivamente.
+2. **Compara las cartas que forman la mano.** Una pareja de ases gana a una de reyes; un color con reina alta gana a uno con jota alta.
+3. **Compara los kickers.** Si la mano hecha empata, las cartas sobrantes deciden, una a una desde arriba.
 4. **¿Sigue idéntico? Se divide el bote.** Los palos nunca rompen el empate.
 
 La insignia de la derecha indica si el **kicker se usa para decidir la mano**.
@@ -184,11 +191,13 @@ Pareja|Valor de la pareja → 3 kickers|+Con kicker
 Carta Alta|Las 5, de mayor a menor|+Con kicker
 :::
 
-Un **kicker** es simplemente una carta que no forma parte de tu mano hecha pero que rompe empates. Con A-A-K contra A-A-Q, ambos tienen pareja de ases — gana el kicker K. Por eso los buenos jugadores cuidan tanto la *calidad* de sus cartas altas, no solo si emparejaron.
+Un **kicker** es simplemente una carta que no forma parte de tu mano hecha pero que aún así rompe empates. Con A-A-K contra A-A-Q, ambos tienen pareja de ases — gana el kicker K. Por eso los buenos jugadores cuidan tanto la *calidad* de sus cartas altas, no solo si emparejaron. Para tener la regla de desempate de cada mano en un mismo sitio, mira la [guía del kicker y los desempates](/es/blog/holdem-tiebreak-rules); cuando las mejores cinco cartas coinciden exactamente, el bote se [divide](/es/blog/holdem-split-pot-rules).
 
 ---
 
 ## Lee la mesa: 3 problemas reales
+
+![Mesa K-K-K-A-4 sobre el tapete — ¿ves el full antes que el dealer?](/images/holdem-hand-rankings-board-puzzle.webp "Problema de lectura de mesa — encuentra tus mejores cinco cartas")
 
 Saber el orden no es lo mismo que leerlo rápido. Aquí van tres situaciones reales. Tapa la respuesta, busca tus mejores cinco cartas de las siete y comprueba.
 
@@ -204,9 +213,9 @@ Tienes **Q♥ Q♦**. ¿Cuál es tu mejor mano?
 
 :::hand[7♥,8♥,9♥,10♥,J♠] Mesa (5 cartas):::
 
-Tienes **K♥ 2♣**. La mesa tiene cuatro corazones.
+Tienes **6♥ 2♣**. La mesa tiene cuatro corazones.
 
-→ Tu K♥ es el quinto corazón, así que piensas "color". Pero mira la secuencia: **K♥ 10♥ 9♥ 8♥ 7♥** son cinco corazones *seguidos* — una **escalera de color con K**, la mano #2. Comprueba siempre si tus cartas de color también están conectadas antes de dar por hecho que es solo color.
+→ Tu 6♥ es el quinto corazón, así que piensas "color". Pero mira la secuencia: **10♥ 9♥ 8♥ 7♥ 6♥** son cinco corazones *seguidos* — una **escalera de color con 10 alto**, la mano #2. (Cambia ese 6♥ por un K♥ y los corazones quedan 7-8-9-10-K — ya no conectan, así que baja a un simple color con K alto.) Comprueba siempre si tus cartas de color también están *conectadas* antes de dar por hecho que es solo color.
 
 ### Problema 3 — Cuando hay que compartir
 
@@ -220,6 +229,8 @@ Tienes **A♥ 3♣**. La mesa ya trae trío de reyes.
 
 ## Respuestas rápidas a los duelos que todos discuten
 
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
+
 | Duelo | Gana | Por qué |
 |------|------|------|
 | Color vs Escalera | **Color** | #5 gana a #6 |
@@ -230,27 +241,31 @@ Tienes **A♥ 3♣**. La mesa ya trae trío de reyes.
 | Misma pareja, kicker K vs J | **Kicker K** | El kicker más alto gana |
 | Póker vs Full | **Póker** | #3 gana a #4 |
 
+</div>
+
 ---
 
 ## Por qué el orden es así
 
-La jerarquía no es arbitraria: es pura probabilidad. **Cuanto más difícil es ligar una mano, más alto está.** En una baraja de 52 cartas simplemente hay menos formas de hacer cinco del mismo palo que cinco en secuencia de cualquier palo — por eso el color está por encima de la escalera. Ese único principio explica toda la jerarquía.
+La jerarquía no es arbitraria: es ==pura probabilidad==. ==g:**Cuanto más difícil es ligar una mano, más alto está.**== El color está por encima de la escalera porque, en una baraja de 52 cartas, simplemente hay menos formas de hacer cinco del mismo palo que cinco en secuencia de cualquier palo. Ese único principio explica toda la jerarquía — puedes ver los números exactos en la tabla de probabilidades del póker.
 
-También explica la gran excepción que verás: en el **Short Deck (6+) Hold'em**, donde se quitan los doses a los cincos, los colores se vuelven más difíciles que los fulls — así que en ese formato un **color gana a un full**. Cambió la matemática, cambió el orden. Más sobre las diferencias por modalidad abajo.
+También explica la gran excepción que verás: en el **Short Deck (6+) Hold'em**, donde se quitan los doses a los cincos, los colores se vuelven más difíciles que los fulls — así que en ese formato un ==r:**color gana a un full**==. Cambió la matemática, cambió el orden. Más sobre las diferencias por modalidad abajo.
 
 ---
 
 ## La rutina de 1 segundo para leer la mesa
 
-Con el reloj en contra, repasa esto en orden cada vez que la mesa esté completa:
+![Infografía de una mesa comunitaria emparejada 9♥ Q♥ 9♠ 8♣ 7♠ — leyendo parejas y posibles escaleras para hallar tus mejores cinco cartas](/images/holdem-hand-rankings-board-read.webp "Cómo leer una mesa de póker rápido — palos, escaleras y parejas en orden")
 
-**1. Primero los palos** — ¿hay tres o más cartas del mismo palo en la mesa? Si sí, el color es posible. Mira tu palo.
+Con el reloj en contra, repasa este escaneo en orden cada vez que la mesa esté completa:
 
-**2. Luego la conexión** — ¿hay cartas cercanas en valor (como 8-9-10)? Si sí, la escalera está viva.
+**1. Primero los palos** — ¿hay tres o más cartas del mismo palo en la mesa? Si sí, ==el color es posible==. Mira tu palo.
 
-**3. Por último las parejas** — ¿está emparejada la mesa? Si sí, hay fulls y pókers en juego, y tu color o escalera puede estar en peligro.
+**2. Luego la conexión** — ¿hay cartas cercanas en valor (como 8-9-10)? Si sí, ==la escalera está viva==.
 
-Los jugadores entrenados leen la mesa en este orden — primero el peligro (color/escalera en la mesa), luego si la mesa está emparejada (lo que amenaza todo). Crea el hábito y dejarás de pagar a la ligera en el river.
+**3. Por último las parejas** — ¿está emparejada la mesa? ==r:Si sí, hay fulls y pókers en juego, y tu color o escalera puede estar en peligro.==
+
+Los jugadores entrenados leen la mesa en este orden exacto — primero el peligro (color/escalera en la mesa), luego si la mesa está emparejada (lo que amenaza todo). Crea el hábito y dejarás de pagar a la ligera en el river.
 
 ---
 
@@ -260,7 +275,7 @@ Los jugadores entrenados leen la mesa en este orden — primero el peligro (colo
 |------|------|------|
 | **1** | Aprende tres grupos: Premium (#1-3), Medio (#4-6), Común (#7-10) | 1 día |
 | **2** | Practica solo los duelos confusos: color vs escalera, full vs color | 3 días |
-| **3** | Mira streams de póker y canta el ganador antes que el dealer | 1-2 semanas |
+| **3** | Mira streams de póker y canta el ganador antes de que el dealer lo anuncie | 1-2 semanas |
 
 Agrupar primero evita que el orden parezca diez cosas al azar. Los duelos confusos del paso 2 causan el 90% de los errores de principiante, así que insiste en ellos.
 
@@ -272,32 +287,69 @@ El orden es común a casi todas las variantes de póker, con algunos giros impor
 
 | Juego | Jerarquía | Diferencia clave |
 |------|------|------|
-| **Texas Hold'em** | Estándar (esta guía) | Usa 0-2 de tus cartas |
+| **Texas Hold'em** | Estándar (esta guía) | Usa 0-2 de tus cartas propias |
 | **Omaha** | Estándar | Debes usar *exactamente* 2 de tus 4 cartas |
 | **Seven-Card Stud** | Estándar | Sin cartas comunitarias |
-| **Short Deck (6+)** | Modificada | El color gana al full; a veces A-6-7-8-9 cuenta como escalera |
+| **Short Deck (6+)** | Modificada | El color gana al full; a menudo A-6-7-8-9 cuenta como escalera |
 
 La conclusión: aprende el orden estándar una vez y te servirá en casi todos los juegos. Solo recuerda la regla de "exactamente dos" del Omaha y el ascenso del color en Short Deck.
 
 ---
 
+:::readnext[Sigue leyendo]
+/es/blog/holdem-flush-vs-straight | ¿El color gana a la escalera? | /images/holdem-flush-vs-straight-hero.webp
+/es/blog/holdem-tiebreak-rules | Reglas de kicker y desempates | /images/holdem-tiebreak-hero.webp
+:::
+
 ## Preguntas frecuentes
+
+**Q. ¿Qué es un color en el póker?**
+
+A. Un color son cinco cartas cualesquiera del mismo palo — por ejemplo A♦ J♦ 8♦ 6♦ 2♦ — sin importar el orden. Es la #5, por encima de la escalera y por debajo del full. Cuando dos jugadores tienen color, gana la carta más alta; los palos nunca rompen el empate.
+
+**Q. ¿Qué es un full en el póker?**
+
+A. Un full (un "boat") es un trío más una pareja, como Q-Q-Q-5-5. Es la #4 y gana al color y a la escalera. Entre dos fulls, decide primero el trío más alto — así que QQQ-55 gana a JJJ-99 sin importar el tamaño de la pareja.
+
+**Q. ¿Qué es una escalera en el póker?**
+
+A. Una escalera son cinco cartas en valor consecutivo con palos mezclados, como 7-6-5-4-3. Es la #6. El As puede jugar alto (10-J-Q-K-A, "Broadway") o bajo (A-2-3-4-5, "la rueda"), pero una escalera no puede dar la vuelta por la esquina — Q-K-A-2-3 no es escalera.
 
 **Q. ¿El color gana a la escalera en el póker?**
 
-A. Sí. El color es la #5 y la escalera la #6, así que el color siempre gana. Está más arriba porque cinco cartas del mismo palo son más difíciles de ligar que cinco en secuencia.
+A. Sí. El color es la #5 y la escalera la #6, así que el color siempre gana — mira [por qué el color gana a la escalera](/es/blog/holdem-flush-vs-straight). Está más arriba porque cinco cartas del mismo palo son estadísticamente más difíciles de ligar que cinco en secuencia.
 
 **Q. ¿El full gana al color?**
 
 A. Sí. El full (#4) gana al color (#5) y a la escalera. Solo pierde contra el póker, la escalera de color y la escalera real.
 
+**Q. ¿Qué gana a una escalera en el póker?**
+
+A. El color, el full, el póker, la escalera de color y la escalera real ganan a una escalera — y también una escalera más alta. La escalera (#6) aún gana al trío, la doble pareja, la pareja y la carta alta.
+
+**Q. ¿Qué gana a un color en el póker?**
+
+A. El full, el póker, la escalera de color y la escalera real ganan a un color. Contra otro color, gana la carta más alta. El color (#5) aún gana a la escalera y a todo lo que está por debajo.
+
+**Q. ¿Qué gana a un full en el póker?**
+
+A. Solo tres manos ganan a un full: el póker, la escalera de color y la escalera real. Un full más alto también gana — y el trío se compara antes que la pareja, así que KKK-22 gana a QQQ-AA.
+
+**Q. ¿Qué gana a una escalera real?**
+
+A. Nada. La escalera real (A-K-Q-J-10 del mismo palo) es la mejor mano posible del póker. No se puede ganar — el único "empate" es otra escalera real en un palo distinto, que divide el bote.
+
+**Q. ¿Qué gana a una escalera de color?**
+
+A. Solo una escalera de color más alta o una escalera real (que no es más que la escalera de color con As alto). La escalera de color (#2) gana al póker y a todas las manos por debajo.
+
 **Q. ¿Qué es un kicker?**
 
-A. Es una carta que no forma parte de tu mano hecha pero rompe empates. Con dos parejas iguales, gana la carta lateral (kicker) más alta. El mejor kicker posible es el As.
+A. Un kicker es una carta que no forma parte de tu mano hecha pero rompe empates. Con dos parejas iguales, gana la carta lateral (kicker) más alta. El mejor kicker posible es el As.
 
 **Q. ¿Pueden dos jugadores tener la misma mano?**
 
-A. Sí. Si las mejores cinco cartas de ambos son idénticas en valor, el bote se divide. Los palos nunca rompen el empate en Texas Hold'em.
+A. Sí. Si las mejores cinco cartas de ambos son idénticas en valor, el bote se divide ("chopeado"). Los palos nunca rompen el empate en Texas Hold'em.
 
 **Q. ¿Hay que usar las dos cartas propias?**
 
@@ -307,13 +359,29 @@ A. En Hold'em, no — formas tus mejores cinco con cualquier combinación de tus
 
 A. Ambos son trío. Un *set* es una pareja servida más una carta de la mesa (bien disimulado); los *trips* son una pareja en la mesa más una carta tuya (más fácil de leer). El set gana más fichas.
 
-**Q. ¿Cuál es la mejor mano del póker?**
+**Q. ¿Cuál es la mano más alta del póker?**
 
-A. La Escalera Real (A-K-Q-J-10 del mismo palo). No se puede ganar y solo empata con otra escalera real, lo que da un bote dividido.
+A. La Escalera Real (A-K-Q-J-10 del mismo palo). Es imbatible y solo puede empatar con otra escalera real, lo que da un bote dividido.
 
 **Q. ¿El trío es mejor que la doble pareja?**
 
 A. Sí. El trío es la #7 y la doble pareja la #8, así que gana el trío. La doble pareja solo gana a la pareja y a la carta alta.
+
+**Q. ¿La escalera de color gana al póker?**
+
+A. Sí. La escalera de color (#2) gana al póker (#3) — cinco cartas en secuencia de un mismo palo superan al cuádruple. Lo único por encima de una escalera de color es la escalera real, que no es más que su versión con As alto.
+
+**Q. ¿Cuál es la mano más baja (peor) del póker?**
+
+A. La peor mano posible es 7-5-4-3-2 en palos mezclados ("siete alto"). Es la carta alta más baja que no forma pareja, escalera ni color — la clásica mano de "no tienes nada".
+
+**Q. ¿Se pueden tener tres parejas en el póker?**
+
+A. No. Una mano de póker siempre son cinco cartas, así que puede contener como máximo dos parejas. Si tus cartas y la mesa te dan tres parejas entre las siete, solo cuentan tus dos mejores parejas — la carta más alta de la tercera pareja aún puede actuar como kicker, pero nunca se convierte en una mano de "tres parejas".
+
+**Q. ¿Se puede usar el As como un 1 en el póker?**
+
+A. Sí. El As juega alto y bajo, así que A-2-3-4-5 ("la rueda") es una escalera legal — la más baja posible. Eso sí, no se puede dar la vuelta por la esquina: K-A-2-3-4 no es escalera.
 
 ---
 
@@ -323,6 +391,40 @@ A. Sí. El trío es la #7 y la doble pareja la #8, así que gana el trío. La do
 2. **La trampa:** el color (#5) gana a la escalera (#6) — y cualquier mesa emparejada puede esconder un full que gana a ambos.
 3. **La realidad:** la mayoría de los botes se ganan con pareja o carta alta, así que tu kicker vale más de lo que crees.
 
-Aprende el orden en una tarde, practica los duelos confusos y repasa "palos → escaleras → parejas" en cada mesa. Hazlo y nunca volverás a empujar el bote hacia el lado equivocado.
+Aprende el orden en una tarde, practica los duelos confusos y repasa el escaneo "palos → escaleras → parejas" en cada mesa. Hazlo y nunca volverás a empujar el bote hacia el lado equivocado.
+
+Una vez que dominas la jerarquía, el siguiente paso natural es saber con qué manos entrar — mira la tabla de manos iniciales de Texas Hold'em por posición para ver exactamente qué cartas jugar desde cada asiento.
+
+---
+
+## Posts relacionados
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
+  <a href="/es/blog/holdem-flush-vs-straight" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Duelo de manos</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">¿El color gana a la escalera?</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">La matemática, los errores de lectura y cada regla de empate</div>
+  </a>
+  <a href="/es/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Desempate</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Reglas de kicker y desempates</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Misma pareja — ¿quién gana? Kicker y bote dividido</div>
+  </a>
+  <a href="/es/blog/holdem-split-pot-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Bote dividido</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">¿Cuándo se divide el bote?</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Reglas del chop y las 5 situaciones de empate</div>
+  </a>
+  <a href="/es/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Guía para principiantes</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Reglas del Texas Hold'em para principiantes</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Todas las reglas, del reparto al showdown</div>
+  </a>
+  <a href="/es/blog/holdem-reading-the-board" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Lectura de mesa</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Cómo leer la mesa en Hold'em</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Halla tus mejores 5 cartas de 7 — mesa húmeda vs seca</div>
+  </a>
+</div>
 `.trim(),
 };
