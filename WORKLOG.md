@@ -3,6 +3,18 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-13 (es Hand Rankings 필라 6편 — es 언어완성 착수·품질 최우선)
+
+### ✅ es Hand Rankings 필라 6/6 (커밋 `99db688`)
+> ★번역 방침 전환(사용자 지시, 메모리 translation-quality-first-from-es): es부터는 EN 기준 동일 구조·이미지·내용, **번역 품질(네이티브)이 최우선**. §13은 EN 그대로 이관(재계산·유럽식 변환 안 함), **사실검증·계산착오 재검증 안 함**. 적대적 QA = "네이티브 편집장".
+- **현지 리서치**: PokerStars LATAM·888poker.es·holdem.es·PokerNews ES → 브리프 `docs/translation-terms-es.md` 신규. ★false-friend: **Color=flush·Escalera=straight·Póker=포카드·Escalera de Color=straight flush**. 문체 tú(tuteo). ★숫자=**EN 형식 그대로**(배포된 es가 EN형식, spec의 유럽식과 다름 — 일관성·무변환 우선).
+- **6편**: hand-rankings(hub, stale 재번역+category 레거시 정정) + flush-vs-straight·kicker·tiebreak-rules·split-pot-rules·reading-the-board. Opus 6병렬(품질 최우선).
+- **적대적 QA 2배치(네이티브 편집장)**: 자연스러움·용어·기계번역 티 중심. 🔴 교정: desc 3편 축약(≤160)·tiebreak 영어앵커 잔재·reading 깨진문장+T→10·hand-rankings 31.000→31,000(EN복원)·counterfeited 중복·alias 정리. `==b:` 파랑하이라이트는 renderMarkdown 정식 지원(비이슈).
+- hub 재번역이 기존 es의 임의 카드변경(K♥→EN 6♥)을 EN 기준 복원(부수 성과).
+- **하드게이트**: build·intl-links 통과(240편/24언어). 화이트리스트 13 준수.
+- **es 누적 13편**(Rules 6 + HR 6 + tournament-vs-cash 1).
+- **사용자 몫(GSC 색인 6 URL)**: `/es/blog/` + hand-rankings·flush-vs-straight·kicker·tiebreak-rules·split-pot-rules·reading-the-board.
+
 ## 2026-07-13 (ja 러닝 로드맵 미니맵 이식)
 
 ### 🗺️ ja 블로그에 클러스터 미니맵(학습 지도) 노출 (커밋 `176fae7`)

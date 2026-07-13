@@ -5,7 +5,22 @@
 
 ---
 
-## ▶▶▶ 새 세션 START HERE (2026-07-13 — ★★ja 완전 마감(EN 41편 + 링크복원 완료) / 다음=es 언어 완성 착수)
+## ▶▶▶ 새 세션 START HERE (2026-07-13 — ★es 언어완성 진행 중 1/5필라: Hand Rankings 완료 / 다음=es Odds & Math)
+
+> **★es부터 번역 방침 전환**(사용자 지시, 메모리 [[translation-quality-first-from-es]]): EN 마스터·ja가 이미 §13 검증 완료 → es부터는 **번역 품질(네이티브)이 최우선**, **사실검증·§13 계산착오 재검증 안 함**. §13 값은 EN 그대로 이관(형식·카드 불변, es는 EN 숫자형식 유지=무변환). 적대적 QA = "회의적 네이티브 편집장"(자연스러움·현지 용어 false-friend·기계번역 티·메타·링크 중심). 나머지 파이프라인(필라 웨이브·하드게이트·링크복원 개수검증)은 ja와 동일.
+>
+> ✅ **es Hand Rankings 6/6 완료**(`99db688`): 브리프 `docs/translation-terms-es.md` 신규(Color=flush·Póker=포카드 트랩, tú 문체). es 누적 13편(Rules 6+HR 6+tvc 1). GSC: `/es/blog/` HR 6 URL.
+
+### ▶▶ 다음 = es **Odds & Math 필라**(웨이브 2)
+- 슬러그 6: holdem-probability(hub) + pot-odds·outs·drawing-odds·implied-odds·equity. **전부 es 신규**.
+- 절차: ①확률·오즈 스페인어 용어 현지 리서치(probabilidad·pot odds/bote·outs·equity/equidad)→브리프 보강 ②Opus 6병렬(품질 최우선, §13 EN 그대로) ③하드게이트 ④QA 2배치(네이티브 편집장, 계산 재검증 X) ⑤교정 ⑥커밋 ⑦보고. 화이트리스트 13→19.
+
+### 📌 es 남은 필라 & 마무리
+Odds(6) → Strategy(8) → Tournament(9, 라이브이벤트 4·tvc는 이미 있음) → Glossary(6). 완성 시 **최종 링크복원 패스(개수검증)** + **러닝 로드맵**(`ES_CLUSTERS` 추가 + intl-blog-post-client 게이트에 es 추가). ja가 템플릿.
+
+---
+
+## ▶▶▶ (이전) START HERE (2026-07-13 — ★★ja 완전 마감(EN 41편 + 링크복원 완료))
 
 > **★번역 축 전환**(사용자 지시): "필라×전언어"(Rules 24언어 완결) → **"언어×전필라"**(한 언어 세로 완성 → 다음). **구 12언어부터**(ja→es→pt→de→zh→ar→id→ms→vi→hi→tr), 언어당 EN 41편 전체(라이브이벤트 4편 포함). **필라 단위 자동 진행 + 필라 끝날 때마다 보고 후 다음 필라/단계 승인**. ★**착수 전 필수: 현지어 웹검색·현지 포커사이트에서 실제 용어·문맥 분석**(메모리 [[translation-local-research-first]]). 읽는 순서: `docs/translation-spec.md` → `docs/translation-terms-<lang>.md` → 이 파일.
 
