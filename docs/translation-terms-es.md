@@ -42,10 +42,20 @@
 - Conservar todas las directivas `:::hand` `:::stripe` `:::compare` `:::tip` `:::readnext` `:::tiebreak` `==g:==`/`==r:==` tablas, tarjetas Related `<div>`, patrón FAQ `**Q. …?**`+`A.`. Cartas (A♠) tal cual; solo traducir alt de imagen; rutas de imagen iguales (compartidas).
 - category = valor estándar del pilar (arreglar legados en coreano como "초보 가이드" → "hand-rankings" al re-traducir el hub stale).
 
+## Probabilidad / Odds (Odds & Math) — Wave 2 (investigación local: PokerStars Learn LATAM·888poker.es·GGPoker ES·hablandodepoker·pokerstrategy ES)
+- **outs** (se usa "outs" tal cual) — cartas que completan tu proyecto. **out muerta / outs sucias** (dead/dirty outs).
+- **regla del 2 y 4** (rule of 2 and 4) — flop ×4, turn ×2.
+- **pot odds** (se usa "pot odds"; también "probabilidades del bote") — recompensa : coste. **probabilidad de mejora necesaria** (required equity).
+- **equity** (se usa "equity"; a veces "equidad") — **equity bruta** (raw equity). **fold equity** (equity de fold).
+- **implied odds / odds implícitas / probabilidades implícitas** — bote actual + fichas futuras esperadas. **reverse implied odds**.
+- **proyecto** = draw. **proyecto de color** (flush draw) · **proyecto de escalera** (straight draw) · **proyecto abierto/de dos puntas** (open-ended, 8 outs) · **proyecto interior/gutshot** (gutshot, 4 outs) · **backdoor / puerta trasera**.
+- set / trío, sobrepar, over-cards / sobrecartas, EV / valor esperado, coin flip, "set mining" (buscar trío). bote / apuesta / igualar(=call).
+- Números y cartas §13: **igual que EN, sin recalcular ni reformatear** (formato EN: punto decimal, coma de millares; % medio). Cartas A♠ tal cual.
+
 ## Enlaces internos (regla dura)
 - Todos `/es/blog/slug`.
-- **Whitelist es (solo enlazar a posts que existen) — Wave HR = 13**: texas-holdem-rules-for-beginners · holdem-game-order · holdem-betting-actions · holdem-blind-meaning · holdem-all-in-rules · holdem-showdown-rules · holdem-hand-rankings · holdem-tournament-vs-cash-game · **holdem-flush-vs-straight · holdem-kicker · holdem-tiebreak-rules · holdem-split-pot-rules · holdem-reading-the-board**.
-- Slugs fuera de whitelist (holdem-probability·holdem-strategy·holdem-positions·starting-hands-chart·etc. aún no traducidos): quitar solo el marcado de enlace + `thumb:`, dejar el texto ancla. Tarjetas `:::readnext`/Related con ese slug: borrar ese ítem. (Se restaurará todo en el pase final de enlaces al completar es, criterio de conteo = EN.)
+- **Whitelist es (solo enlazar a posts que existen) — Wave 2 (Odds) = 19**: texas-holdem-rules-for-beginners · holdem-game-order · holdem-betting-actions · holdem-blind-meaning · holdem-all-in-rules · holdem-showdown-rules · holdem-hand-rankings · holdem-tournament-vs-cash-game · holdem-flush-vs-straight · holdem-kicker · holdem-tiebreak-rules · holdem-split-pot-rules · holdem-reading-the-board · **holdem-probability · holdem-pot-odds · holdem-outs · holdem-drawing-odds · holdem-implied-odds · holdem-equity**.
+- Slugs fuera de whitelist (holdem-strategy·holdem-positions·starting-hands-chart·holdem-card-counting·etc. aún no traducidos): quitar solo el marcado de enlace + `thumb:`, dejar el texto ancla. Tarjetas `:::readnext`/Related con ese slug: borrar ese ítem. (Se restaurará todo en el pase final de enlaces al completar es, **criterio = corpus real EN de `lib/posts-en/` (42), no una lista curada** — lección del incidente ja.)
 
 ## QA = editor nativo escéptico (NO calculista)
 - Revisar: naturalidad (cero olor a traducción automática), términos locales de póker correctos (Color/Escalera/Póker no confundidos), coherencia de estilo (tú), residuos de otros idiomas (inglés/coreano/portugués), meta (desc ≤ 160), seoTitle con ángulo SERP local, enlaces (locale/whitelist), formato de números (grep: igual que EN). **NO recalcular manos, probabilidades ni verificar fechas/hechos** (ya validado en EN + ja).
