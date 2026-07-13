@@ -3,7 +3,7 @@
  * 한국어는 루트(/)에 그대로 두고, 추가 언어만 /{locale}/... 로 발행한다.
  * 새 언어 추가 = 아래 SECONDARY_LOCALES + CHROME 에 항목만 추가.
  */
-export const SECONDARY_LOCALES = ["en", "ja", "es", "zh", "ar", "pt", "id", "ms", "vi", "hi", "de", "tr", "fr", "ru", "it", "pl", "th", "fa", "sw", "bn", "ro"] as const;
+export const SECONDARY_LOCALES = ["en", "ja", "es", "zh", "ar", "pt", "id", "ms", "vi", "hi", "de", "tr", "fr", "ru", "it", "pl", "th", "fa", "sw", "bn", "ro", "fil"] as const;
 export type SecondaryLocale = (typeof SECONDARY_LOCALES)[number];
 
 export function isSecondaryLocale(value: string): value is SecondaryLocale {
@@ -46,6 +46,7 @@ export const OG_LOCALE: Record<SecondaryLocale, string> = {
   sw: "sw_KE",
   bn: "bn_BD",
   ro: "ro_RO",
+  fil: "fil_PH",
 };
 
 /** <html lang> 및 hreflang 코드 (zh는 간체 = zh-Hans, pt는 브라질 = pt-BR) */
@@ -71,6 +72,7 @@ export const HTML_LANG: Record<SecondaryLocale, string> = {
   sw: "sw",
   bn: "bn",
   ro: "ro",
+  fil: "fil",
 };
 
 interface ChromeStrings {
@@ -485,6 +487,24 @@ export const POST_LABELS: Record<SecondaryLocale, PostLabels> = {
     blogIntro:
       "Ghiduri practice care explică nu doar ce mână bate ce, ci și de ce — și cum să folosești asta la masă.",
   },
+  fil: {
+    contents: "Nilalaman",
+    quickAnswer: "Mabilis na Sagot",
+    category: "Gabay para sa Baguhan",
+    readSuffix: "pagbasa",
+    published: "Nailathala",
+    updated: "Na-update",
+    prev: "Nakaraan",
+    next: "Susunod",
+    related: "Kaugnay na Artikulo",
+    share: "Ibahagi ang artikulong ito",
+    copy: "Kopyahin ang link",
+    copied: "Nakopya na!",
+    back: "Bumalik sa lahat ng artikulo",
+    blogTitle: "Texas Hold'em Strategy Blog",
+    blogIntro:
+      "Mga praktikal na gabay na nagpapaliwanag hindi lang kung anong hand ang nananalo, kundi kung bakit — at paano ito gamitin sa mesa.",
+  },
 };
 
 export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
@@ -782,6 +802,20 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     disclaimer:
       "Acest site are doar scop informativ și nu promovează jocurile de noroc pe bani reali. Doar pentru persoanele de peste 18 ani.",
   },
+  fil: {
+    skip: "Lumaktaw sa nilalaman",
+    brand: "HoldemMaster",
+    blogLabel: "Blog",
+    menuOpen: "Buksan ang menu",
+    menuClose: "Isara ang menu",
+    koLabel: "한국어",
+    tagline:
+      "Malinaw at praktikal na Texas Hold'em strategy. Mga gabay na nagpapaliwanag hindi lang kung anong hand ang nananalo, kundi kung bakit.",
+    contentHeading: "Nilalaman",
+    languageHeading: "Wika",
+    disclaimer:
+      "Ang site na ito ay para sa layuning pang-impormasyon lamang at hindi nagtataguyod ng sugal na tunay na pera. Para lamang sa 18 taong gulang pataas.",
+  },
 };
 
 /** 블로그 탑바 — 홈 피드 버튼 (한국어 기본값: 홈피드) */
@@ -807,6 +841,7 @@ export const NAV_HOME_FEED: Record<SecondaryLocale, string> = {
   sw: "Mwanzo",
   bn: "হোম",
   ro: "Acasă",
+  fil: "Home",
 };
 
 /** 블로그 탑바 — 커뮤니티 CTA 버튼 */
@@ -832,4 +867,5 @@ export const NAV_CTA: Record<SecondaryLocale, string> = {
   sw: "Jamii →",
   bn: "কমিউনিটি →",
   ro: "Comunitate →",
+  fil: "Komunidad →",
 };

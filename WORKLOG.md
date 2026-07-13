@@ -3,6 +3,16 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-13 (fil 필리핀어 신규 로케일 + Rules 필라 6편 — 22번째 로케일)
+
+### 🌐 fil(필리핀어/타갈로그) 신규 로케일 + Rules 필라 6/6 (파일럿21)
+> 톱추천 5개 3번타자. 필리핀(마닐라 포커 허브). 신규 로케일 배선 + Opus 6병렬 + 적대적 QA 2배치.
+- **인프라**: `lib/intl.ts` +fil 7개 맵(필리핀 UI, OG=fil_PH) · `intl-posts.ts` FIL_POSTS · `posts-fil/index.ts` · translate route.
+- **브리프**: `docs/translation-terms-fil.md`. ★**필리핀 포커 씬 영어 우세** → **Taglish**(필리핀어 산문 + 포커 전문용어 영어 유지, 스와힐리 방식). 억지 타갈로그 신조어 금지. **숫자=영어식 미국식**(변환X), Full House>Flush. ikaw체.
+- **적대적 QA 2배치(Opus)**: §13 전수 손계산 0오류(pot 198,000·side pot 1,300·straight flush Q-J-T-9-8·2.7:1/27%). 🔴 2건(blind desc≤160·all-in 오타 Nacacap→Naka-cap) + 🟡 3건(대명사·헤딩 일관성·표현). 스와힐리 잔재 0.
+- **결과**: 22번째 로케일 fil. Rules 필라 = **22개 언어**.
+- **사용자 GSC**: `/fil/blog/` 6 URL.
+
 ## 2026-07-13 (ro 루마니아어 신규 로케일 + Rules 필라 6편 — 21번째 로케일)
 
 ### 🌐 ro(루마니아어) 신규 로케일 + Rules 필라 6/6 (파일럿20)
