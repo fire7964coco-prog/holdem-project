@@ -57,7 +57,19 @@
 - `:::hand[...]` `:::stripe` `:::compare` `:::tip[...]` `:::readnext` `:::tiebreak` `==g:==` `==r:==` `==...==` 표·이미지·Related `<div>` 카드·FAQ `**Q. …?**`+`A.` 패턴 전부 구조 유지. 카드 표기(A♠)는 그대로, alt만 번역.
 - 이미지 경로 그대로(공용), **alt만 번역**.
 
+## 確率・オッズ (Odds & Math) 用語 — Wave 2 (현지 웹리서치: mpj-portal·ABEMA·poker101·zero-poker·pokeracademy 등)
+- **ポットオッズ** (pot odds) — 「コールに必要な額に対して、勝ったときに返ってくるポットの倍率」. 比率表記 `2:1`·`4対1` 등 EN 원문 비율 그대로(§13).
+- **アウツ**(outs, 複数) / アウト(単数) — 「役を完成させるために必要な残りのカード枚数」.
+- **2倍4倍の法則**(rule of 2 and 4) — 「アウツ×2(1枚)·×4(2枚)でおおよその完成率」. 例: フラッシュドロー9アウツ → ターン約18%.
+- **ドロー**/フラッシュドロー/ストレートドロー/**ガットショット**(inside straight draw, 4アウツ)/**オープンエンド**(両面, 8アウツ)/**バックドア**.
+- **エクイティ**(equity) — 「その時点でポットを獲得する確率」. ポットエクイティ.
+- **インプライドオッズ**(implied odds) — 「今は見えない、次以降のベットで見込める上乗せまで含めたオッズ」. リバース・インプライドオッズ도.
+- **期待値 / EV**(expected value) — EV 표기 유지.
+- **必要勝率**(= 100% ÷ ポットオッズ) / ブレイクイーブン.
+- ★숫자·비율·확률은 §13 불변. `%`는 반각, 오즈 비율(예 `3:1`, `2.5:1`)은 EN 그대로. 큰 팟 금액은 영어식 콤마.
+
 ## 내부링크 (하드 규칙)
 - 전부 `/ja/blog/슬러그` 형식.
-- **ja 화이트리스트(존재하는 글만 링크)**: texas-holdem-rules-for-beginners · holdem-game-order · holdem-betting-actions · holdem-blind-meaning · holdem-all-in-rules · holdem-showdown-rules · holdem-hand-rankings · holdem-tournament-vs-cash-game · holdem-flush-vs-straight · holdem-kicker · holdem-tiebreak-rules · holdem-split-pot-rules · holdem-reading-the-board.
-- 화이트리스트 밖 슬러그(holdem-probability·holdem-strategy·holdem-positions·holdem-3bet 등 아직 미번역): 본문 링크는 **링크 마크업+thumb만 제거, 앵커 텍스트는 남김**. `:::readnext`/Related 카드는 그 항목 **통째 삭제**.
+- **ja 화이트리스트(존재하는 글만 링크, Wave 2 반영 = 19개)**: texas-holdem-rules-for-beginners · holdem-game-order · holdem-betting-actions · holdem-blind-meaning · holdem-all-in-rules · holdem-showdown-rules · holdem-hand-rankings · holdem-tournament-vs-cash-game · holdem-flush-vs-straight · holdem-kicker · holdem-tiebreak-rules · holdem-split-pot-rules · holdem-reading-the-board · **holdem-probability · holdem-pot-odds · holdem-outs · holdem-drawing-odds · holdem-implied-odds · holdem-equity**.
+- 화이트리스트 밖 슬러그(holdem-strategy·holdem-positions·holdem-3bet 등 전략/토너먼트/용어집 글 — 아직 미번역): 본문 링크는 **링크 마크업+thumb만 제거, 앵커 텍스트는 남김**. `:::readnext`/Related 카드는 그 항목 **통째 삭제**.
+- ※ holdem-probability는 이제 화이트리스트 내 → Wave 1에서 스트립했던 링크는 언어 완성 시 최종 복원 패스에서 처리(지금 웨이브에선 신규 6편만 정상 링크).
