@@ -3,7 +3,7 @@
  * 한국어는 루트(/)에 그대로 두고, 추가 언어만 /{locale}/... 로 발행한다.
  * 새 언어 추가 = 아래 SECONDARY_LOCALES + CHROME 에 항목만 추가.
  */
-export const SECONDARY_LOCALES = ["en", "ja", "es", "zh", "ar", "pt", "id", "ms", "vi", "hi", "de", "tr", "fr", "ru", "it", "pl", "th", "fa", "sw"] as const;
+export const SECONDARY_LOCALES = ["en", "ja", "es", "zh", "ar", "pt", "id", "ms", "vi", "hi", "de", "tr", "fr", "ru", "it", "pl", "th", "fa", "sw", "bn"] as const;
 export type SecondaryLocale = (typeof SECONDARY_LOCALES)[number];
 
 export function isSecondaryLocale(value: string): value is SecondaryLocale {
@@ -44,6 +44,7 @@ export const OG_LOCALE: Record<SecondaryLocale, string> = {
   th: "th_TH",
   fa: "fa_IR",
   sw: "sw_KE",
+  bn: "bn_BD",
 };
 
 /** <html lang> 및 hreflang 코드 (zh는 간체 = zh-Hans, pt는 브라질 = pt-BR) */
@@ -67,6 +68,7 @@ export const HTML_LANG: Record<SecondaryLocale, string> = {
   th: "th",
   fa: "fa",
   sw: "sw",
+  bn: "bn",
 };
 
 interface ChromeStrings {
@@ -445,6 +447,24 @@ export const POST_LABELS: Record<SecondaryLocale, PostLabels> = {
     blogIntro:
       "Miongozo ya vitendo inayoeleza si tu mkono gani unashinda, bali kwa nini — na jinsi ya kuutumia mezani.",
   },
+  bn: {
+    contents: "সূচিপত্র",
+    quickAnswer: "দ্রুত উত্তর",
+    category: "নতুনদের গাইড",
+    readSuffix: "পড়া",
+    published: "প্রকাশিত",
+    updated: "আপডেট",
+    prev: "আগের",
+    next: "পরের",
+    related: "সম্পর্কিত নিবন্ধ",
+    share: "এই নিবন্ধটি শেয়ার করুন",
+    copy: "লিঙ্ক কপি করুন",
+    copied: "কপি হয়েছে!",
+    back: "সব নিবন্ধে ফিরুন",
+    blogTitle: "টেক্সাস হোল্ডেম কৌশল ব্লগ",
+    blogIntro:
+      "ব্যবহারিক গাইড যা শুধু কোন হাত জেতে তা নয়, কেন জেতে — এবং টেবিলে কীভাবে কাজে লাগাবেন তা ব্যাখ্যা করে।",
+  },
 };
 
 export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
@@ -714,6 +734,20 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     disclaimer:
       "Tovuti hii ni kwa madhumuni ya taarifa pekee na haihamasishi kamari ya pesa halisi. Kwa wenye umri wa miaka 18 na zaidi pekee.",
   },
+  bn: {
+    skip: "মূল বিষয়বস্তুতে যান",
+    brand: "HoldemMaster",
+    blogLabel: "ব্লগ",
+    menuOpen: "মেনু খুলুন",
+    menuClose: "মেনু বন্ধ করুন",
+    koLabel: "한국어",
+    tagline:
+      "স্পষ্ট ও ব্যবহারিক টেক্সাস হোল্ডেম কৌশল। যেসব গাইড শুধু কোন হাত জেতে তা নয়, কেন জেতে তাও ব্যাখ্যা করে।",
+    contentHeading: "বিষয়বস্তু",
+    languageHeading: "ভাষা",
+    disclaimer:
+      "এই সাইটটি শুধুমাত্র তথ্যের উদ্দেশ্যে এবং প্রকৃত অর্থের জুয়া প্রচার করে না। শুধুমাত্র 18 বছর বা তার বেশি বয়সীদের জন্য।",
+  },
 };
 
 /** 블로그 탑바 — 홈 피드 버튼 (한국어 기본값: 홈피드) */
@@ -737,6 +771,7 @@ export const NAV_HOME_FEED: Record<SecondaryLocale, string> = {
   th: "หน้าแรก",
   fa: "خانه",
   sw: "Mwanzo",
+  bn: "হোম",
 };
 
 /** 블로그 탑바 — 커뮤니티 CTA 버튼 */
@@ -760,4 +795,5 @@ export const NAV_CTA: Record<SecondaryLocale, string> = {
   th: "ชุมชน →",
   fa: "انجمن ←",
   sw: "Jamii →",
+  bn: "কমিউনিটি →",
 };
