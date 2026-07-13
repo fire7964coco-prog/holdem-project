@@ -3,6 +3,22 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-13 (ja Glossary 필라 6편 — ★ja 언어완성 5/5 전량 완결)
+
+### ✅✅ ja Glossary 필라 6/6 = ja 41편 전량 완결 (커밋 `b2dd736`)
+> ja 언어 완성 스프린트 마지막(5번째) 웨이브. 이것으로 **ja가 EN 마스터 전량 41편 번역 완결**.
+- **현지 리서치**: zero-poker·pkerclub·WPT JAPAN·casino-dealer → 브리프에 용어집·속어 섹션(ストラドル·レーキ·フィッシュ=カモ·クーラー·バッドビート). 화이트리스트 41=EN 전량.
+- **6편**: glossary(hub)·straddle·rake·fish·cooler·bad-beat. Opus 6병렬.
+- **적대적 QA 2배치(Opus)**: **6편 전부 CLEAN**(🔴 0). §13 손검산 EN 일치(스트래들 BB×2·레이크율/bb100·세트오버세트 777 vs JJJ·AA 80%·마부치 2008 WSOP 원아우터 로열·배드빗잭팟 분배).
+- **교정**: shove 통일(glossary シャブ→シューブ), export default 잉여 제거(fish·cooler), index.ts 6편 등록.
+- **하드게이트**: build 통과·intl-links 통과(235편/24언어).
+- **★ja 누적 41편** = Rules 6 + HR 6 + Odds 6 + Strategy 8 + Tournament 9 + Glossary 6 = **EN 마스터 전량**.
+- **사용자 몫(GSC 색인 6 URL)**: `/ja/blog/` + glossary·straddle·rake·fish·cooler·bad-beat.
+
+### ▶▶ ja 완결 후 다음
+1. **ja 최종 링크복원 패스**: 이전 웨이브(HR·Odds·Strategy·Tournament)에서 스트립했던 내부링크를 EN급으로 복원(이제 전 41편 존재). 
+2. 그다음 **다음 언어 = es**(구 12언어 중 2번째). ja가 구 12언어 중 1번째 완결.
+
 ## 2026-07-13 (ja Tournament 필라 9편 — 언어완성 웨이브 4)
 
 ### ✅ ja Tournament 필라 9/9 (커밋 `754a957`)
