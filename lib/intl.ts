@@ -3,7 +3,7 @@
  * 한국어는 루트(/)에 그대로 두고, 추가 언어만 /{locale}/... 로 발행한다.
  * 새 언어 추가 = 아래 SECONDARY_LOCALES + CHROME 에 항목만 추가.
  */
-export const SECONDARY_LOCALES = ["en", "ja", "es", "zh", "ar", "pt", "id", "ms", "vi", "hi", "de", "tr", "fr", "ru", "it", "pl"] as const;
+export const SECONDARY_LOCALES = ["en", "ja", "es", "zh", "ar", "pt", "id", "ms", "vi", "hi", "de", "tr", "fr", "ru", "it", "pl", "th"] as const;
 export type SecondaryLocale = (typeof SECONDARY_LOCALES)[number];
 
 export function isSecondaryLocale(value: string): value is SecondaryLocale {
@@ -41,6 +41,7 @@ export const OG_LOCALE: Record<SecondaryLocale, string> = {
   ru: "ru_RU",
   it: "it_IT",
   pl: "pl_PL",
+  th: "th_TH",
 };
 
 /** <html lang> 및 hreflang 코드 (zh는 간체 = zh-Hans, pt는 브라질 = pt-BR) */
@@ -61,6 +62,7 @@ export const HTML_LANG: Record<SecondaryLocale, string> = {
   ru: "ru",
   it: "it",
   pl: "pl",
+  th: "th",
 };
 
 interface ChromeStrings {
@@ -385,6 +387,24 @@ export const POST_LABELS: Record<SecondaryLocale, PostLabels> = {
     blogIntro:
       "Praktyczne poradniki, które tłumaczą nie tylko co bije co, ale dlaczego — i jak to wykorzystać przy stole.",
   },
+  th: {
+    contents: "สารบัญ",
+    quickAnswer: "คำตอบด่วน",
+    category: "คู่มือมือใหม่",
+    readSuffix: "ในการอ่าน",
+    published: "เผยแพร่",
+    updated: "อัปเดต",
+    prev: "ก่อนหน้า",
+    next: "ถัดไป",
+    related: "บทความที่เกี่ยวข้อง",
+    share: "แชร์บทความนี้",
+    copy: "คัดลอกลิงก์",
+    copied: "คัดลอกแล้ว!",
+    back: "กลับไปที่บทความทั้งหมด",
+    blogTitle: "บล็อกกลยุทธ์ Texas Hold'em",
+    blogIntro:
+      "คู่มือใช้งานจริงที่อธิบายไม่ใช่แค่ว่าไพ่ไหนชนะไพ่ไหน แต่ทำไม และใช้มันที่โต๊ะยังไง",
+  },
 };
 
 export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
@@ -612,6 +632,20 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     disclaimer:
       "Ta strona ma charakter wyłącznie informacyjny i nie promuje hazardu na prawdziwe pieniądze. Tylko dla osób powyżej 18 lat.",
   },
+  th: {
+    skip: "ข้ามไปที่เนื้อหา",
+    brand: "HoldemMaster",
+    blogLabel: "บล็อก",
+    menuOpen: "เปิดเมนู",
+    menuClose: "ปิดเมนู",
+    koLabel: "한국어",
+    tagline:
+      "กลยุทธ์ Texas Hold'em ที่ชัดเจนและใช้ได้จริง คู่มือที่อธิบายไม่ใช่แค่ว่าไพ่ไหนชนะ แต่ทำไม",
+    contentHeading: "เนื้อหา",
+    languageHeading: "ภาษา",
+    disclaimer:
+      "เว็บไซต์นี้มีวัตถุประสงค์เพื่อให้ข้อมูลเท่านั้น และไม่ส่งเสริมการพนันด้วยเงินจริง สำหรับผู้ที่มีอายุ 18 ปีขึ้นไปเท่านั้น",
+  },
 };
 
 /** 블로그 탑바 — 홈 피드 버튼 (한국어 기본값: 홈피드) */
@@ -632,6 +666,7 @@ export const NAV_HOME_FEED: Record<SecondaryLocale, string> = {
   ru: "Главная",
   it: "Home",
   pl: "Główna",
+  th: "หน้าแรก",
 };
 
 /** 블로그 탑바 — 커뮤니티 CTA 버튼 */
@@ -652,4 +687,5 @@ export const NAV_CTA: Record<SecondaryLocale, string> = {
   ru: "Сообщество →",
   it: "Community →",
   pl: "Społeczność →",
+  th: "ชุมชน →",
 };
