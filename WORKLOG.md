@@ -3,6 +3,18 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-13 (ja Strategy 필라 8편 — 언어완성 웨이브 3)
+
+### ✅ ja Strategy 필라 8/8 (커밋 `449b1aa`)
+> ja 언어 완성 스프린트 3번째 웨이브(전략 필라). 전부 ja 신규 8편.
+- **현지 리서치**: ABEMA·mpj-portal·pokeracademy·zero-poker·raq-hiphop → 브리프에 전략 용어 섹션(ポジション·タイト/ルース·ハンドレンジ·リンプ·3ベット·Cベット·アグレッサー). 화이트리스트 27개로 확장.
+- **8편**: strategy(hub)·positions·position-play·starting-hands-chart·limping·3bet·continuation-bet·when-to-fold. Opus 8병렬.
+- **적대적 QA 3배치(Opus)**: **8편 전부 CLEAN**(🔴 0). §13 전수 자력 재계산 EN 일치 — 9max 좌석/액션순·포지션별 레인지%·실현에쿼티(IP 85-100%)·3벳 BB사이징(IP 9bb/OOP 12bb·프리플랍 팟 $39)·C벳 ⅓$10/⅔$20·블로커콤보 3/12·레인지표 169종/1,326콤보·팟오즈 폴드임계.
+- **교정**: strategy seoTitle 문자열 내 ASCII 따옴표 파싱에러(빌드 실패) → 전각「」 수정, export default 잉여 5건 제거. ★교훈: `npm run build`를 grep에 파이프하면 pipe 마지막 명령의 exit code가 잡혀 빌드 실패가 가려짐 → **build는 파일로 캡처해 EXIT 확인**.
+- **하드게이트**: build 통과·intl-links 통과(221편/24언어).
+- **ja 누적 27편**(Rules 6 + Hand Rankings 6 + Odds 6 + Strategy 8 + tournament-vs-cash 1).
+- **사용자 몫(GSC 색인 8 URL)**: `/ja/blog/` + strategy·positions·position-play·starting-hands-chart·limping·3bet·continuation-bet·when-to-fold.
+
 ## 2026-07-13 (ja Odds & Math 필라 6편 — 언어완성 웨이브 2)
 
 ### ✅ ja Odds & Math 필라 6/6 (커밋 `e08063f`)
