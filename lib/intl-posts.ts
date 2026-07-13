@@ -17,6 +17,7 @@ import { RU_POSTS } from "./posts-ru";
 import { IT_POSTS } from "./posts-it";
 import { PL_POSTS } from "./posts-pl";
 import { TH_POSTS } from "./posts-th";
+import { FA_POSTS } from "./posts-fa";
 
 /** 보조 언어별 포스트 목록 */
 export const POSTS_BY_LOCALE: Record<SecondaryLocale, Post[]> = {
@@ -37,6 +38,7 @@ export const POSTS_BY_LOCALE: Record<SecondaryLocale, Post[]> = {
   it: IT_POSTS,
   pl: PL_POSTS,
   th: TH_POSTS,
+  fa: FA_POSTS,
 };
 
 export function getPostByLocale(locale: SecondaryLocale, slug: string): Post | undefined {

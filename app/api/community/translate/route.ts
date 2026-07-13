@@ -10,7 +10,7 @@ const LANG_NAME: Record<string, string> = {
   ko: "Korean", en: "English", ja: "Japanese", zh: "Simplified Chinese",
   es: "Spanish", de: "German", pt: "Portuguese (Brazil)", ar: "Arabic",
   tr: "Turkish", vi: "Vietnamese", id: "Indonesian", ms: "Malay", hi: "Hindi",
-  fr: "French", ru: "Russian", it: "Italian", pl: "Polish", th: "Thai",
+  fr: "French", ru: "Russian", it: "Italian", pl: "Polish", th: "Thai", fa: "Persian",
 };
 
 const SYSTEM_PROMPT = `You are a professional poker community translator.

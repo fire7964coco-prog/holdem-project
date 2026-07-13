@@ -5,7 +5,28 @@
 
 ---
 
-## ▶▶▶ 새 세션 START HERE (2026-07-13 — ★18개 확장 자율진행 중 17/18: th 완료 / 다음=fa 마지막·RTL)
+## ▶▶▶ 새 세션 START HERE (2026-07-13 — ★★다국어 18개 확장 완료 18/18 / 트랙 종료)
+
+> **모드**: 다국어 **18개 확장 트랙 종료**(부재중 자율진행 완료). fr→ru→it→pl→th→fa 6개 신규 로케일 전부 개설·Rules 필라 6편 배포 완료. 전 과정 Opus(번역 6병렬 + 적대적 QA 2배치).
+
+### ✅✅ 18개 확장 완료 (파일럿12~17, 이번 자율세션)
+Rules 필라 = **18개 언어 전량**: en(마스터) + ja·es·pt·de·zh·ar·id·ms·vi·hi·tr + **fr·ru·it·pl·th·fa**(신규 6). 각 신규 로케일 = 인프라 배선(intl.ts 7맵+RTL은 fa) + 6편 번역 + §13 전수 0오류 + QA 2배치.
+- **사용자 몫(GSC 색인)**: 신규 6개 언어 × Rules 6편 = 36 URL. `/fr/` `/ru/` `/it/` `/pl/` `/th/` `/fa/` blog/ + (texas-holdem-rules-for-beginners·holdem-game-order·holdem-betting-actions·holdem-blind-meaning·holdem-all-in-rules·holdem-showdown-rules).
+- ⚠️ **fa는 RTL** — 배포 후 `/fa/blog/*` 페이지 우→좌 렌더·카드(A♠) LTR 임베드 육안확인 권장(ar 인프라 재활용).
+
+### ▶▶ 다음 트랙 후보 (사용자와 상의)
+1. **다국어 2번째 필라 확장** — Rules가 18언어 완결됐으니 다음 필라(Hand Rankings 클러스터 등)를 동일 파이프라인으로 18언어 확장.
+2. **전 언어 stale 재번역** — hand-rankings·tournament-vs-cash-game이 **구 12언어에서 stale**(EN 마스터 갱신됨)·category 한국어 레거시. `check:stale`로 확인, 묶어서 재번역.
+3. **신규 로케일 hand-rankings/tournament** — fr·ru·it·pl·th·fa는 현재 Rules 6편만 → 다른 클러스터로 확대.
+4. **이미지 트랙**(실사 Nano Banana)·GSC 추세.
+- **백로그(마스터 공통)**: all-in 캡 근사·game-order 프리플랍 체크 절대표현·pt 코퍼스/street 통일.
+
+### 📌 신규 로케일 배선 절차(재사용 — 향후 언어 추가 시)
+① `lib/intl.ts`: `SECONDARY_LOCALES`+코드 + 6개 맵(OG_LOCALE·HTML_LANG·POST_LABELS·CHROME·NAV_HOME_FEED·NAV_CTA) 전부 채우기(TS 빌드가 강제). RTL이면 `RTL_LOCALES`+코드. ② `lib/posts-<lang>/index.ts` 신규. ③ `lib/intl-posts.ts` import+등록. ④ (선택) translate route LANG_NAME. ⑤ FAQ 마커 = 파서 정규식 `**Q. ...?**`+`A. ...`(리터럴 Q./A.) 준수(texas는 `###` 헤딩=마스터 예외). ⑥ 숫자표기 계열 웹리서치(영어식 en·zh·ar·ms·th / 유럽식 es·pt·de·id·vi·it·ru·pl·fr(공백) / fa=영어식 라틴).
+
+---
+
+## ▶▶▶ (이전) START HERE (2026-07-13 — ★18개 확장 자율진행 중 17/18: th 완료 / 다음=fa 마지막·RTL)
 
 > **모드**: 다국어 **18개 확장** 자율진행(부재중) 막바지. 순서 fr(✅)→ru(✅)→it(✅)→pl(✅)→th(✅)→**fa(마지막)**. 전 과정 Opus. 신규 로케일 배선 절차는 아래 ru 블록 참조.
 

@@ -3,7 +3,7 @@
  * 한국어는 루트(/)에 그대로 두고, 추가 언어만 /{locale}/... 로 발행한다.
  * 새 언어 추가 = 아래 SECONDARY_LOCALES + CHROME 에 항목만 추가.
  */
-export const SECONDARY_LOCALES = ["en", "ja", "es", "zh", "ar", "pt", "id", "ms", "vi", "hi", "de", "tr", "fr", "ru", "it", "pl", "th"] as const;
+export const SECONDARY_LOCALES = ["en", "ja", "es", "zh", "ar", "pt", "id", "ms", "vi", "hi", "de", "tr", "fr", "ru", "it", "pl", "th", "fa"] as const;
 export type SecondaryLocale = (typeof SECONDARY_LOCALES)[number];
 
 export function isSecondaryLocale(value: string): value is SecondaryLocale {
@@ -11,7 +11,7 @@ export function isSecondaryLocale(value: string): value is SecondaryLocale {
 }
 
 /** RTL(오른쪽→왼쪽) 언어. 아랍어 등. */
-export const RTL_LOCALES: readonly SecondaryLocale[] = ["ar"];
+export const RTL_LOCALES: readonly SecondaryLocale[] = ["ar", "fa"];
 
 export function dirForLocale(locale: SecondaryLocale | null): "rtl" | "ltr" {
   return locale && RTL_LOCALES.includes(locale) ? "rtl" : "ltr";
@@ -42,6 +42,7 @@ export const OG_LOCALE: Record<SecondaryLocale, string> = {
   it: "it_IT",
   pl: "pl_PL",
   th: "th_TH",
+  fa: "fa_IR",
 };
 
 /** <html lang> 및 hreflang 코드 (zh는 간체 = zh-Hans, pt는 브라질 = pt-BR) */
@@ -63,6 +64,7 @@ export const HTML_LANG: Record<SecondaryLocale, string> = {
   it: "it",
   pl: "pl",
   th: "th",
+  fa: "fa",
 };
 
 interface ChromeStrings {
@@ -405,6 +407,24 @@ export const POST_LABELS: Record<SecondaryLocale, PostLabels> = {
     blogIntro:
       "คู่มือใช้งานจริงที่อธิบายไม่ใช่แค่ว่าไพ่ไหนชนะไพ่ไหน แต่ทำไม และใช้มันที่โต๊ะยังไง",
   },
+  fa: {
+    contents: "فهرست",
+    quickAnswer: "پاسخ کوتاه",
+    category: "راهنمای مبتدیان",
+    readSuffix: "مطالعه",
+    published: "منتشر شده",
+    updated: "به‌روزرسانی",
+    prev: "قبلی",
+    next: "بعدی",
+    related: "مقالات مرتبط",
+    share: "اشتراک‌گذاری این مقاله",
+    copy: "کپی لینک",
+    copied: "کپی شد!",
+    back: "بازگشت به همه مقالات",
+    blogTitle: "وبلاگ استراتژی تگزاس هولدم",
+    blogIntro:
+      "راهنماهای کاربردی که توضیح می‌دهند نه فقط کدام دست برنده است، بلکه چرا — و چطور سر میز از آن استفاده کنید.",
+  },
 };
 
 export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
@@ -646,6 +666,20 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     disclaimer:
       "เว็บไซต์นี้มีวัตถุประสงค์เพื่อให้ข้อมูลเท่านั้น และไม่ส่งเสริมการพนันด้วยเงินจริง สำหรับผู้ที่มีอายุ 18 ปีขึ้นไปเท่านั้น",
   },
+  fa: {
+    skip: "پرش به محتوا",
+    brand: "HoldemMaster",
+    blogLabel: "وبلاگ",
+    menuOpen: "باز کردن منو",
+    menuClose: "بستن منو",
+    koLabel: "한국어",
+    tagline:
+      "استراتژی تگزاس هولدم روشن و کاربردی. راهنماهایی که توضیح می‌دهند نه فقط کدام دست برنده است، بلکه چرا.",
+    contentHeading: "محتوا",
+    languageHeading: "زبان",
+    disclaimer:
+      "این سایت صرفاً جنبه اطلاع‌رسانی دارد و قمار با پول واقعی را ترویج نمی‌کند. فقط برای افراد بالای 18 سال.",
+  },
 };
 
 /** 블로그 탑바 — 홈 피드 버튼 (한국어 기본값: 홈피드) */
@@ -667,6 +701,7 @@ export const NAV_HOME_FEED: Record<SecondaryLocale, string> = {
   it: "Home",
   pl: "Główna",
   th: "หน้าแรก",
+  fa: "خانه",
 };
 
 /** 블로그 탑바 — 커뮤니티 CTA 버튼 */
@@ -688,4 +723,5 @@ export const NAV_CTA: Record<SecondaryLocale, string> = {
   it: "Community →",
   pl: "Społeczność →",
   th: "ชุมชน →",
+  fa: "انجمن ←",
 };
