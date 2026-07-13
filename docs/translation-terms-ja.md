@@ -89,8 +89,15 @@
 - **ライブイベント 4편(APT인천·코리아마라톤·WPT호주·EPT바르셀로나)**: ★**§14 사실 정확성** — 대회명·날짜·바이인·프라이즈·운영사·장소 등 **EN 마스터 값 그대로**(임의 변경·창작 금지). 통화·숫자 EN 표기 유지. 지역명·고유명사는 일본어 관용 표기(예: バルセロナ·インチョン/仁川·オーストラリア).
 - 문체·숫자: 기존과 동일(です/ます, 영어식 숫자, 반각%, `$`·현지통화 EN대로).
 
+## 用語集・スラング (Glossary) 用語 — Wave 5 (ja 마지막 필라. 현지 웹리서치: zero-poker·pkerclub·WPT JAPAN·casino-dealer 등)
+- **ストラドル**(straddle) — BB 왼쪽 옆이 카드 배분 전 BB 2배 블라인드를 내고 액션을 마지막으로 가져오는 옵션. **ミシシッピストラドル**(임의 포지션 스트래들)도.
+- **レーキ**(rake) — 하우스(운영)가 걷는 手数料/자릿세. **レーキバック**(리베이트)·キャップ(상한).
+- **フィッシュ**(fish) — 미숙한/약한 플레이어. 일본어 관용 **「カモ」** 병용. 대의어 **シャーク**(サメ).
+- **クーラー**(cooler) — 양쪽 다 강해 피할 수 없는 패배 상황. **ジャストクーラー**(위로 표현).
+- **バッドビート**(bad beat) — 강한 핸드가 낮은 확률로 역전당하는 이불킥급 敗北. **バッドビートジャックポット**(특정 강패 패배 시 보너스)도.
+- 문체·숫자: 기존과 동일(です/ます, 영어식 숫자, 반각%, `$`·`BB` 유지). 속어라도 억지 신조어 금지—일본 포커 씬 실제 통용 카타카나.
+
 ## 내부링크 (하드 규칙)
 - 전부 `/ja/blog/슬러그` 형식.
-- **ja 화이트리스트(존재하는 글만 링크, Wave 4 반영 = 35개)**: texas-holdem-rules-for-beginners · holdem-game-order · holdem-betting-actions · holdem-blind-meaning · holdem-all-in-rules · holdem-showdown-rules · holdem-hand-rankings · holdem-tournament-vs-cash-game · holdem-flush-vs-straight · holdem-kicker · holdem-tiebreak-rules · holdem-split-pot-rules · holdem-reading-the-board · holdem-probability · holdem-pot-odds · holdem-outs · holdem-drawing-odds · holdem-implied-odds · holdem-equity · holdem-strategy · holdem-positions · holdem-position-play · holdem-starting-hands-chart · holdem-limping · holdem-3bet · holdem-continuation-bet · holdem-when-to-fold · **holdem-tournament · holdem-icm · holdem-bubble · holdem-short-stack · apt-incheon-2026-guide · korea-poker-marathon-2026 · wpt-australia-2026-guide · ept-barcelona-2026-guide**.
-- 화이트리스트 밖 슬러그(holdem-glossary·holdem-straddle·holdem-rake·holdem-fish·holdem-cooler·holdem-bad-beat 등 용어집 글 — 아직 미번역): 본문 링크는 **링크 마크업+thumb만 제거, 앵커 텍스트는 남김**. `:::readnext`/Related 카드는 그 항목 **통째 삭제**.
-- ※ holdem-probability·holdem-strategy·holdem-positions·starting-hands-chart 등이 화이트리스트에 편입됨 → 이전 웨이브에서 스트립했던 링크들은 **언어 완성 시 최종 복원 패스**에서 일괄 처리(지금 웨이브에선 신규 8편만 정상 링크).
+- **ja 화이트리스트(존재하는 글만 링크, Wave 5 반영 = 41개 = EN 전량)**: texas-holdem-rules-for-beginners · holdem-game-order · holdem-betting-actions · holdem-blind-meaning · holdem-all-in-rules · holdem-showdown-rules · holdem-hand-rankings · holdem-tournament-vs-cash-game · holdem-flush-vs-straight · holdem-kicker · holdem-tiebreak-rules · holdem-split-pot-rules · holdem-reading-the-board · holdem-probability · holdem-pot-odds · holdem-outs · holdem-drawing-odds · holdem-implied-odds · holdem-equity · holdem-strategy · holdem-positions · holdem-position-play · holdem-starting-hands-chart · holdem-limping · holdem-3bet · holdem-continuation-bet · holdem-when-to-fold · holdem-tournament · holdem-icm · holdem-bubble · holdem-short-stack · apt-incheon-2026-guide · korea-poker-marathon-2026 · wpt-australia-2026-guide · ept-barcelona-2026-guide · **holdem-glossary · holdem-straddle · holdem-rake · holdem-fish · holdem-cooler · holdem-bad-beat**.
+- ★Glossary 완료 시 **화이트리스트 = EN 41편 전량** → 이 웨이브에선 신규 6편만 정상 링크. **이전 웨이브에서 스트립했던 링크들은 별도 "최종 링크복원 패스"에서 일괄 복원**(전 필라 존재).
