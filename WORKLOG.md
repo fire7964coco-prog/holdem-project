@@ -3,6 +3,17 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-13 밤 (KO 블로그 러닝맵 미니맵 이식)
+
+### 🗺️ 한국어 블로그에 EN 러닝맵(학습지도) 미니맵 추가
+> EN 우측 사이드바 러닝맵을 KO 블로그에 이식. 커밋 `96b8bb4`→`8318771`, 빌드 348페이지 정상.
+- **`lib/pillar-clusters.ts`**: `KO_CLUSTERS` 8필라(규칙·족보·확률·스타팅·포지션·전략·토너먼트·펍) 신설. 46 slug 전수 실존검증 **0누락**. `clusterForSlug(slug, clusters=EN_CLUSTERS)` 시그니처 확장.
+- **`components/cluster-minimap.tsx`**: 파라미터화(clusters/hrefBase/labels, EN 기본값 보존 → EN 무영향).
+- **`app/blog/[slug]/blog-post-client.tsx`**: 데스크탑 우측 sticky aside + 모바일 접이식 details, 클러스터 글만 게이팅. 라벨 전부 영문(Learning Map/You are here/Overview/Hub).
+- 스몰블라인드 역할 중복 제거(포지션 필라에만).
+- 🐛 빌드 실패(`Cannot access before initialization`) 원인=순환import 아니라 함수 내 `hasToc`를 `gridClass`보다 늦게 선언한 TDZ. 선언순서 수정.
+- 포스트 총수 변동 없음(UI 컴포넌트 작업).
+
 ## 2026-07-13 (he 히브리어 신규 로케일 + Rules 필라 6편 — ★24번째 로케일·RTL·톱5 완료)
 
 ### 🌐 he(히브리어) 신규 로케일 + Rules 필라 6/6 (파일럿23 = 톱5 마지막·RTL)

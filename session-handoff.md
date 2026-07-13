@@ -5,7 +5,21 @@
 
 ---
 
-## ▶▶▶ 새 세션 START HERE (2026-07-13 — ★★다국어 Rules 필라 24개 언어 완결 / 톱5 확장 완료)
+## ▶▶▶ 새 세션 START HERE (2026-07-13 밤 — ★KO 러닝맵 미니맵 완료 / 다음 세션 = 번역작업)
+
+> **다음 세션 = 번역작업**(사용자 지시). 후보·절차는 바로 아래 "24개 언어 완결" 블록 + `ru 배선` 블록 참조. 어느 필라/언어인지 사용자와 확정 후 진행.
+
+### ✅ 이번 세션 완료: KO 블로그 러닝맵(미니맵) 이식·배포
+EN 우측 사이드바 러닝맵을 한국어 블로그에 이식 완료. 커밋 `96b8bb4`→`8318771` 배포됨, 빌드 348페이지 정상.
+- **`lib/pillar-clusters.ts`**: `KO_CLUSTERS` 8필라 신설(규칙·족보·확률·스타팅·포지션·전략·토너먼트·펍). 46 slug **전수 실존검증 0누락**. `clusterForSlug(slug, clusters=EN_CLUSTERS)`로 시그니처 확장(EN 기본, KO는 인자 전달). ⚠️EN(6필라)과 구조 다름: KO는 펍·포지션·스타팅 별도 / glossary 없음.
+- **`components/cluster-minimap.tsx`**: 파라미터화(`clusters`/`hrefBase`/`labels` props, EN 기본값 보존) → EN(intl) 사용처 무영향.
+- **`app/blog/[slug]/blog-post-client.tsx`**: 데스크탑 우측 sticky aside + 모바일 접이식 `<details>`. `clusterForSlug`로 게이팅(클러스터 글만 노출, 비클러스터 0). 라벨 **전부 영문**(Learning Map / You are here / Overview / Hub); 필라명·글 라벨은 한글 유지.
+- 스몰블라인드 역할 **중복 제거**(포지션 필라에만).
+- ⚠️**교훈**: `Cannot access 'X' before initialization` = 순환import 아님. 함수 내 `const gridClass`가 `hasToc`를 **선언 전 참조**한 TDZ였음(선언순서 수정으로 해결). 유사 에러 시 선언순서 먼저 의심.
+
+---
+
+## ▶▶▶ (이전) START HERE (2026-07-13 — ★★다국어 Rules 필라 24개 언어 완결 / 톱5 확장 완료)
 
 > **모드**: 다국어 확장 트랙 대성황. 18개 완결 → sw(아프리카) → 톱5(bn·ro·fil·uk·he) 전부 완료 = **Rules 필라 24개 언어**. 전 과정 Opus(번역 6병렬 + 적대적 QA 2배치).
 
