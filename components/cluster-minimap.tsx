@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BookOpen, Crown, Percent, Target, Trophy, Book, Map, MapPin, ChevronDown } from "lucide-react";
+import { BookOpen, Crown, Percent, Target, Trophy, Book, Map, MapPin, ChevronDown, Store, Layers, Navigation } from "lucide-react";
 import { EN_CLUSTERS, clusterForSlug, type PillarCluster } from "@/lib/pillar-clusters";
 
 /**
@@ -7,6 +7,7 @@ import { EN_CLUSTERS, clusterForSlug, type PillarCluster } from "@/lib/pillar-cl
  * 전 필라를 접힌 아코디언으로 보여주고, 현재 글이 속한 필라만 자동 펼쳐
  * 트레일(경로선)로 "너 여기" 핀 표시. 아코디언은 native <details> = JS 0, SSG 정적.
  * bare=true 면 카드 테두리 없이 내부만(모바일 <details> 임베드용).
+ * clusters/hrefBase/labels 로 로케일 대응 (기본 EN, KO 등은 인자로 전달).
  */
 
 const ICONS: Record<string, typeof BookOpen> = {
@@ -16,15 +17,21 @@ const ICONS: Record<string, typeof BookOpen> = {
   strategy: Target,
   tournament: Trophy,
   glossary: Book,
+  pub: Store,
+  starting: Layers,
+  position: Navigation,
 };
+
+type MinimapLabels = { learningMap: string; overview: string; youAreHere: string; hub: string };
+const EN_LABELS: MinimapLabels = { learningMap: "Learning Map", overview: "Overview", youAreHere: "You are here", hub: "Hub" };
 
 type Stop = { slug: string; label: string; hub?: boolean; group?: string; state: "past" | "current" | "future" | "neutral" };
 
-function stopsFor(pillar: PillarCluster, slug: string, isCurrentPillar: boolean): Stop[] {
+function stopsFor(pillar: PillarCluster, slug: string, isCurrentPillar: boolean, overviewLabel: string): Stop[] {
   const currentIdx = pillar.nodes.findIndex((n) => n.slug === slug);
   const hubCurrent = slug === pillar.pillarSlug;
   const hubState: Stop["state"] = !isCurrentPillar ? "neutral" : hubCurrent ? "current" : "past";
-  const stops: Stop[] = [{ slug: pillar.pillarSlug, label: "Overview", hub: true, state: hubState }];
+  const stops: Stop[] = [{ slug: pillar.pillarSlug, label: overviewLabel, hub: true, state: hubState }];
   pillar.nodes.forEach((n, i) => {
     let state: Stop["state"];
     if (!isCurrentPillar) state = "neutral";
@@ -35,8 +42,8 @@ function stopsFor(pillar: PillarCluster, slug: string, isCurrentPillar: boolean)
   return stops;
 }
 
-function Trail({ pillar, slug, isCurrentPillar }: { pillar: PillarCluster; slug: string; isCurrentPillar: boolean }) {
-  const stops = stopsFor(pillar, slug, isCurrentPillar);
+function Trail({ pillar, slug, isCurrentPillar, hrefBase, labels }: { pillar: PillarCluster; slug: string; isCurrentPillar: boolean; hrefBase: string; labels: MinimapLabels }) {
+  const stops = stopsFor(pillar, slug, isCurrentPillar, labels.overview);
   const currentStopIdx = stops.findIndex((s) => s.state === "current");
   return (
     <ol className="relative ps-1">
@@ -72,10 +79,10 @@ function Trail({ pillar, slug, isCurrentPillar }: { pillar: PillarCluster; slug:
               {isCurrent ? (
                 <div className="-mt-0.5 rounded-lg bg-[#2563eb]/10 border border-[#2563eb]/45 px-2 py-1 shadow-[0_0_18px_-4px_rgba(37,99,235,0.55)]">
                   <div className="text-[13px] font-bold text-foreground leading-snug">{s.label}</div>
-                  <div className="text-[9px] font-semibold text-[#2563eb] uppercase tracking-wider mt-0.5">You are here</div>
+                  <div className="text-[9px] font-semibold text-[#2563eb] uppercase tracking-wider mt-0.5">{labels.youAreHere}</div>
                 </div>
               ) : (
-                <Link href={`/en/blog/${s.slug}`} className="group inline-block leading-snug">
+                <Link href={`${hrefBase}/${s.slug}`} className="group inline-block leading-snug">
                   <span
                     className={`text-[13px] transition-colors ${
                       s.hub ? "font-semibold text-foreground/90 group-hover:text-primary" : "text-muted-foreground group-hover:text-primary"
@@ -93,20 +100,32 @@ function Trail({ pillar, slug, isCurrentPillar }: { pillar: PillarCluster; slug:
   );
 }
 
-export default function ClusterMinimap({ slug, bare = false }: { slug: string; bare?: boolean }) {
-  const cluster = clusterForSlug(slug);
+export default function ClusterMinimap({
+  slug,
+  bare = false,
+  clusters = EN_CLUSTERS,
+  hrefBase = "/en/blog",
+  labels = EN_LABELS,
+}: {
+  slug: string;
+  bare?: boolean;
+  clusters?: PillarCluster[];
+  hrefBase?: string;
+  labels?: MinimapLabels;
+}) {
+  const cluster = clusterForSlug(slug, clusters);
   if (!cluster) return null;
 
   const currentIdx = cluster.nodes.findIndex((n) => n.slug === slug);
   const isHubCurrent = slug === cluster.pillarSlug;
-  const pos = isHubCurrent ? "Hub" : `${currentIdx + 1} / ${cluster.nodes.length}`;
+  const pos = isHubCurrent ? labels.hub : `${currentIdx + 1} / ${cluster.nodes.length}`;
 
   const inner = (
     <>
       <div className="flex items-center justify-between mb-2.5">
         {!bare && (
           <span className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-[0.2em] text-primary/80">
-            <Map className="w-3 h-3" aria-hidden="true" /> Learning Map
+            <Map className="w-3 h-3" aria-hidden="true" /> {labels.learningMap}
           </span>
         )}
         <span className="ml-auto text-[10px] font-semibold text-[#2563eb] bg-[#2563eb]/10 border border-[#2563eb]/30 rounded-full px-2 py-0.5">
@@ -115,7 +134,7 @@ export default function ClusterMinimap({ slug, bare = false }: { slug: string; b
       </div>
 
       <div>
-        {EN_CLUSTERS.map((pillar) => {
+        {clusters.map((pillar) => {
           const Icon = ICONS[pillar.id] ?? Book;
           const isCurrentPillar = pillar.id === cluster.id;
           return (
@@ -143,7 +162,7 @@ export default function ClusterMinimap({ slug, bare = false }: { slug: string; b
                 />
               </summary>
               <div className="pb-2 ps-1">
-                <Trail pillar={pillar} slug={slug} isCurrentPillar={isCurrentPillar} />
+                <Trail pillar={pillar} slug={slug} isCurrentPillar={isCurrentPillar} hrefBase={hrefBase} labels={labels} />
               </div>
             </details>
           );

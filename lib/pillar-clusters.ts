@@ -96,9 +96,109 @@ export const EN_CLUSTERS: PillarCluster[] = [
   },
 ];
 
-/** 이 slug가 속한 필라를 반환 (허브이거나 노드이면 매치). 없으면 null. */
-export function clusterForSlug(slug: string): PillarCluster | null {
-  for (const c of EN_CLUSTERS) {
+// 한국어 필라-클러스터 로드맵 (KO 8필라, 실존 슬러그만 — 라이브 :::pillarhub에서 추출·전수 검증).
+// EN(6필라)과 구조가 다름: KO는 펍·포지션·스타팅핸드 필라가 별도이고 glossary 필라 없음.
+export const KO_CLUSTERS: PillarCluster[] = [
+  {
+    id: "rules",
+    pillarSlug: "holdem-rules",
+    pillarLabel: "규칙",
+    nodes: [
+      { slug: "holdem-game-order", label: "게임 진행 6단계" },
+      { slug: "holdem-blind-meaning", label: "블라인드 뜻" },
+      { slug: "holdem-small-blind-role", label: "스몰블라인드 역할" },
+      { slug: "holdem-check-meaning", label: "체크 뜻" },
+      { slug: "holdem-beginner-mistakes-10", label: "초보 실수 10가지" },
+    ],
+  },
+  {
+    id: "rankings",
+    pillarSlug: "holdem-hand-rankings",
+    pillarLabel: "족보",
+    nodes: [
+      { slug: "holdem-hand-rankings-confusing", label: "헷갈리는 족보 TOP7" },
+      { slug: "holdem-flush-vs-straight", label: "플러시 vs 스트레이트" },
+      { slug: "holdem-tiebreak-rules", label: "족보가 같을 때" },
+      { slug: "holdem-split-pot-rules", label: "스플릿 팟" },
+      { slug: "holdem-vs-7poker-hand-rankings", label: "홀덤 vs 7포커 족보" },
+    ],
+  },
+  {
+    id: "odds",
+    pillarSlug: "holdem-probability",
+    pillarLabel: "확률·수학",
+    nodes: [
+      { slug: "holdem-outs-calculation", label: "아웃츠 계산법" },
+      { slug: "holdem-pot-odds-calculation", label: "팟오즈 계산" },
+      { slug: "holdem-implied-odds", label: "임플라이드 오즈" },
+      { slug: "holdem-odds-calculator", label: "확률 빠른 계산" },
+    ],
+  },
+  {
+    id: "starting",
+    pillarSlug: "holdem-starting-hand-range",
+    pillarLabel: "스타팅 핸드",
+    nodes: [
+      { slug: "when-to-fold-preflop-holdem", label: "언제 폴드하나" },
+      { slug: "holdem-raise-how-much", label: "레이즈 얼마나" },
+      { slug: "ak-offsuit-strategy", label: "AK 오프수트" },
+      { slug: "pocket-aces-aa-strategy", label: "포켓 AA" },
+      { slug: "pocket-kings-kk-strategy", label: "포켓 KK" },
+    ],
+  },
+  {
+    id: "position",
+    pillarSlug: "position-is-everything-in-holdem",
+    pillarLabel: "포지션",
+    nodes: [
+      { slug: "holdem-button-position", label: "버튼 포지션" },
+      { slug: "holdem-small-blind-role", label: "스몰블라인드 역할" },
+      { slug: "holdem-blind-steal", label: "블라인드 스틸" },
+    ],
+  },
+  {
+    id: "strategy",
+    pillarSlug: "holdem-strategy",
+    pillarLabel: "전략",
+    nodes: [
+      { slug: "holdem-range-meaning", label: "레인지란" },
+      { slug: "holdem-3bet-strategy", label: "3벳 전략" },
+      { slug: "holdem-cbet-strategy", label: "C벳 전략" },
+      { slug: "holdem-check-raise", label: "체크레이즈" },
+      { slug: "holdem-value-bet-sizing", label: "밸류벳 사이즈" },
+      { slug: "bluffing-strategy-when-and-how", label: "블러핑" },
+      { slug: "holdem-overbet-strategy", label: "오버벳" },
+      { slug: "holdem-bankroll-management", label: "뱅크롤 관리" },
+    ],
+  },
+  {
+    id: "tournament",
+    pillarSlug: "holdem-tournament-how-to-enter",
+    pillarLabel: "토너먼트",
+    nodes: [
+      { slug: "holdem-tournament-vs-cash-game", label: "토너먼트 vs 캐시게임" },
+      { slug: "holdem-tournament-buy-in-cost", label: "바이인·참가비" },
+      { slug: "holdem-tournament-schedule-check", label: "일정 확인법" },
+      { slug: "holdem-bubble-strategy", label: "버블 전략" },
+      { slug: "icm-poker-meaning", label: "ICM이란" },
+      { slug: "holdem-tournament-tax-guide", label: "대회 세금" },
+    ],
+  },
+  {
+    id: "pub",
+    pillarSlug: "holdem-pub-guide",
+    pillarLabel: "홀덤펍",
+    nodes: [
+      { slug: "holdem-pub-first-visit-guide", label: "처음 가는 법" },
+      { slug: "holdem-pub-legal", label: "합법인가요?" },
+      { slug: "holdem-pub-promotion", label: "(사장님) 무료 소개" },
+    ],
+  },
+];
+
+/** 이 slug가 속한 필라를 반환 (허브이거나 노드이면 매치). 없으면 null. 기본 EN, clusters 인자로 KO 등 전달. */
+export function clusterForSlug(slug: string, clusters: PillarCluster[] = EN_CLUSTERS): PillarCluster | null {
+  for (const c of clusters) {
     if (c.pillarSlug === slug || c.nodes.some((n) => n.slug === slug)) return c;
   }
   return null;

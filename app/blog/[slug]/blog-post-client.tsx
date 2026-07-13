@@ -3,7 +3,7 @@
 import type { ReactNode } from "react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
-import { Clock, Tag, ChevronLeft, ChevronRight, ChevronDown, Share2, Link2 } from "lucide-react";
+import { Clock, Tag, ChevronLeft, ChevronRight, ChevronDown, Share2, Link2, Map } from "lucide-react";
 import { FaXTwitter, FaFacebookF } from "react-icons/fa6";
 import type { Post } from "@/lib/posts";
 import { POSTS } from "@/lib/posts";
@@ -11,8 +11,13 @@ import { SITE } from "@/lib/site";
 import CommunityCTA from "@/components/community-cta";
 import BlogTopBar from "@/components/blog-top-bar";
 import ReadingProgressBar from "@/components/reading-progress-bar";
+import ClusterMinimap from "@/components/cluster-minimap";
+import { KO_CLUSTERS, clusterForSlug } from "@/lib/pillar-clusters";
 import Image from "next/image";
 import { useState, useRef, useEffect, useCallback } from "react";
+
+/** 한국어 미니맵 UI 라벨 */
+const KO_MINIMAP_LABELS = { learningMap: "학습 지도", overview: "개요", youAreHere: "현재 위치", hub: "허브" };
 
 const PokerOddsCalculator = dynamic(
   () => import("@/components/poker-odds-calculator").then((m) => m.PokerOddsCalculator),
@@ -580,13 +585,22 @@ export default function BlogPost({
 
   const headings = extractHeadings(post.content);
   const hasToc = headings.length >= 2;
+  const showMinimap = clusterForSlug(post.slug, KO_CLUSTERS) !== null;
+  const gridClass =
+    hasToc && showMinimap
+      ? "xl:grid xl:grid-cols-[200px_1fr_240px] xl:gap-8"
+      : hasToc
+        ? "xl:grid xl:grid-cols-[220px_1fr] xl:gap-10"
+        : showMinimap
+          ? "xl:grid xl:grid-cols-[1fr_240px] xl:gap-8"
+          : "";
 
   return (
     <div className="min-h-screen">
       <ReadingProgressBar targetRef={contentRef} />
       <BlogTopBar homeHref="/" communityLabel="커뮤니티" />
       <div className="max-w-6xl mx-auto px-4 py-10">
-        <div className={hasToc ? "xl:grid xl:grid-cols-[220px_1fr] xl:gap-10" : ""}>
+        <div className={gridClass}>
 
           {/* 데스크탑 사이드바 TOC — xl 이상에서만 표시 */}
           {hasToc && (
@@ -679,6 +693,21 @@ export default function BlogPost({
                 <nav className="px-6 pb-6 pt-2 border-t border-border/60" aria-label="목차">
                   <TocList headings={headings} />
                 </nav>
+              </details>
+            )}
+
+            {/* 모바일 학습 지도(미니맵) — xl 미만 (데스크탑은 우측 사이드바) */}
+            {showMinimap && (
+              <details className="xl:hidden group bg-card border border-border rounded-2xl mb-6">
+                <summary className="flex items-center justify-between gap-3 px-6 py-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden rounded-2xl hover:bg-card/70 transition-colors">
+                  <span className="flex items-center gap-2.5 text-xs font-bold uppercase tracking-widest text-primary">
+                    <Map className="w-4 h-4" aria-hidden="true" /> 학습 지도
+                  </span>
+                  <ChevronDown className="w-5 h-5 text-primary transition-transform duration-200 group-open:rotate-180" aria-hidden="true" />
+                </summary>
+                <div className="px-6 pb-6 pt-2 border-t border-border/60">
+                  <ClusterMinimap slug={post.slug} clusters={KO_CLUSTERS} hrefBase="/blog" labels={KO_MINIMAP_LABELS} bare />
+                </div>
               </details>
             )}
 
@@ -943,6 +972,15 @@ export default function BlogPost({
               </Link>
             </div>
           </div>{/* end main content column */}
+
+          {/* 데스크탑 우측 학습 지도(미니맵) — xl 이상 */}
+          {showMinimap && (
+            <aside className="hidden xl:block">
+              <div className="sticky top-16 max-h-[calc(100vh-5rem)] overflow-y-auto overscroll-contain pe-1">
+                <ClusterMinimap slug={post.slug} clusters={KO_CLUSTERS} hrefBase="/blog" labels={KO_MINIMAP_LABELS} />
+              </div>
+            </aside>
+          )}
         </div>
       </div>
 
