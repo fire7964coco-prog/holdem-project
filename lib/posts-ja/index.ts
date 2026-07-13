@@ -17,6 +17,7 @@ import { POST as holdemOuts } from "./holdem-outs";
 import { POST as holdemDrawingOdds } from "./holdem-drawing-odds";
 import { POST as holdemImpliedOdds } from "./holdem-implied-odds";
 import { POST as holdemEquity } from "./holdem-equity";
+import { POST as holdemCardCounting } from "./holdem-card-counting";
 import { POST as holdemStrategy } from "./holdem-strategy";
 import { POST as holdemPositions } from "./holdem-positions";
 import { POST as holdemPositionPlay } from "./holdem-position-play";
@@ -68,6 +69,7 @@ export const JA_POSTS: Post[] = [
   holdemDrawingOdds,
   holdemImpliedOdds,
   holdemEquity,
+  holdemCardCounting,
   // Strategy 필라 (8/8)
   holdemStrategy,
   holdemPositions,

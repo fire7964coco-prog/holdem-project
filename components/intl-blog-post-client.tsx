@@ -102,7 +102,7 @@ export default function IntlBlogPostClient({
   )}</p>`;
 
   return (
-    <div dir={dir}>
+    <div dir={dir} lang={locale}>
       <ReadingProgressBar targetRef={contentRef} rtl={dir === "rtl"} />
       <BlogTopBar
         homeHref={`/${locale}`}

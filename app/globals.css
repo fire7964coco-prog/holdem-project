@@ -209,6 +209,28 @@
 .blog-prose strong, .blog-prose b {
   font-weight: 700;
 }
+
+/* ── CJK(띄어쓰기 없는 언어) 본문 보정 ──
+ * word-break:keep-all 은 한국어(띄어쓰기 O)용. 일본어/중국어는 단어 경계가 없어
+ * keep-all 이면 긴 문장이 줄바꿈되지 않고 컨테이너 밖으로 삐져나온다 → normal 로. */
+[lang="ja"] .blog-prose,
+[lang="ja"] .blog-prose :is(p, li, h2, h3, td, th, div, span, strong, a, mark),
+[lang="zh"] .blog-prose,
+[lang="zh"] .blog-prose :is(p, li, h2, h3, td, th, div, span, strong, a, mark) {
+  word-break: normal;
+  overflow-wrap: anywhere;
+  line-break: strict;
+}
+/* 일본어 본문 폰트: latin 서브셋만 로드돼 JP 글립이 시스템 폴백(Windows=MS PGothic)으로
+ * 작게 보이는 문제 → 양질의 JP 시스템 폰트를 명시(웹폰트 추가 없이 크기·굵기 정상화). */
+[lang="ja"] .blog-prose,
+[lang="ja"] .blog-prose p,
+[lang="ja"] .blog-prose li,
+[lang="ja"] .blog-prose h2,
+[lang="ja"] .blog-prose h3 {
+  font-family: var(--font-inter), "Hiragino Sans", "Hiragino Kaku Gothic ProN",
+    "Yu Gothic UI", "Yu Gothic", "YuGothic", Meiryo, var(--font-noto-sans-kr), sans-serif;
+}
 /* 드롭캡 리드 문단 (:::lead) */
 .lead-para {
   font-family: var(--font-inter), var(--font-noto-sans-kr), var(--font-sans);
