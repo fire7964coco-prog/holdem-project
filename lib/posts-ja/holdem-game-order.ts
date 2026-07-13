@@ -87,7 +87,7 @@ export const POST: Post = {
 - **強い：** A♠K♥（「ビッグスリック」）、A♠Q♥、A♠J♥、10♠10♥
 - **状況次第：** 9♠9♥、8♠8♥、K♠Q♥、K♠J♥
 
-このうちどれで実際に参加できるかは席（ポジション）によって変わります。ポジション別に169ハンドを整理したスターティングハンド一覧表は、それだけで1本の記事になるテーマです。
+このうちどれで実際に参加できるかは席（ポジション）によって変わります。ポジション別に169ハンドを整理した [スターティングハンド一覧表](/ja/blog/holdem-starting-hands-chart) も参考にしてください。
 
 ---
 
@@ -167,7 +167,7 @@ export const POST: Post = {
 
 </div>
 
-覚え方はこうです。==**フロップの前はビッグブラインドの左を見る。フロップの後はボタンの左を見る。**==　ボタンはフロップ以降のすべてのストリートで最後にアクションできます。ボタンが最も稼げる席と言われるのは、まさにこのため — ポーカーのポジション（UTGからボタンまで）というテーマの核心です。
+覚え方はこうです。==**フロップの前はビッグブラインドの左を見る。フロップの後はボタンの左を見る。**==　ボタンはフロップ以降のすべてのストリートで最後にアクションできます。ボタンが最も稼げる席と言われるのは、まさにこのため — 詳しくは [ポーカーのポジション：UTGからボタンまで](/ja/blog/holdem-positions) をどうぞ。
 
 ==g:**ヘッズアップ（2人対戦）は例外です：**== ボタンが *スモール* ブラインドを払い、プリフロップでは **最初に**、フロップ・ターン・リバーでは **最後に** アクションします。この後のフルハンド実例は、この順番で進行します。
 
@@ -310,7 +310,7 @@ Bがチェック、Aが **15,000**（約ハーフポット）ベット、Bがコ
 
 ### 2. ポジションを無視する
 
-ボタンに近いほど有利です — 最後にアクションできれば、全員の出方を見てから決められます。アーリーポジションではタイトに、レイトポジションではよりアグレッシブに。席ごとの地図とオープンレンジは、ポーカーのポジション解説として独立して学ぶ価値のあるテーマです。
+ボタンに近いほど有利です — 最後にアクションできれば、全員の出方を見てから決められます。アーリーポジションではタイトに、レイトポジションではよりアグレッシブに。席ごとの地図とオープンレンジは、[ポーカーのポジション解説：UTGからボタンまで](/ja/blog/holdem-positions) で詳しく扱っています。
 
 ### 3. ドローを盲目的に追いかける
 
@@ -398,6 +398,11 @@ Bがチェック、Aが **15,000**（約ハーフポット）ベット、Bがコ
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">役の強さ</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ポーカーの役の強さ — 最強から最弱まで</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">全10種類の役を確率・実例・ボードクイズつきで</div>
+  </a>
+  <a href="/ja/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">ポジション</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ポーカーのポジション：UTGからボタンまで</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">席の地図、オープンレンジ、ポジションが勝つ理由</div>
   </a>
 </div>
 `.trim(),
