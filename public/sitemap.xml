@@ -362,6 +362,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/apt-incheon-2026-guide" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/apt-incheon-2026-guide" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/apt-incheon-2026-guide" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/apt-incheon-2026-guide" />
   </url>
 
@@ -873,7 +874,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- 다국어 블로그 포스트 (221편) -->
+  <!-- 다국어 블로그 포스트 (229편) -->
 
   <url>
     <loc>https://www.holdemmaster.com/en/blog/apt-incheon-2026-guide</loc>
@@ -882,6 +883,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/apt-incheon-2026-guide" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/apt-incheon-2026-guide" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/apt-incheon-2026-guide" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/apt-incheon-2026-guide" />
   </url>
 
@@ -892,6 +894,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/ept-barcelona-2026-guide" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/ept-barcelona-2026-guide" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/ept-barcelona-2026-guide" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/ept-barcelona-2026-guide" />
   </url>
 
@@ -1022,6 +1025,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-bubble" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-bubble" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-bubble" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-bubble" />
   </url>
 
@@ -1170,6 +1174,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-icm" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-icm" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-icm" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-icm" />
   </url>
 
@@ -1289,6 +1294,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-short-stack" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-short-stack" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-short-stack" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-short-stack" />
   </url>
 
@@ -1386,6 +1392,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-tournament" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-tournament" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-tournament" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-tournament" />
   </url>
 
@@ -1428,6 +1435,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/korea-poker-marathon-2026" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/korea-poker-marathon-2026" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/korea-poker-marathon-2026" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/korea-poker-marathon-2026" />
   </url>
 
@@ -1471,7 +1479,30 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/wpt-australia-2026-guide" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/wpt-australia-2026-guide" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/wpt-australia-2026-guide" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/wpt-australia-2026-guide" />
+  </url>
+
+  <url>
+    <loc>https://www.holdemmaster.com/ja/blog/apt-incheon-2026-guide</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/apt-incheon-2026-guide" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/apt-incheon-2026-guide" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/apt-incheon-2026-guide" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/apt-incheon-2026-guide" />
+  </url>
+
+  <url>
+    <loc>https://www.holdemmaster.com/ja/blog/ept-barcelona-2026-guide</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/ept-barcelona-2026-guide" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/ept-barcelona-2026-guide" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/ept-barcelona-2026-guide" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/ept-barcelona-2026-guide" />
   </url>
 
   <url>
@@ -1585,6 +1616,17 @@
   </url>
 
   <url>
+    <loc>https://www.holdemmaster.com/ja/blog/holdem-bubble</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-bubble" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-bubble" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-bubble" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-bubble" />
+  </url>
+
+  <url>
     <loc>https://www.holdemmaster.com/ja/blog/holdem-continuation-bet</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
@@ -1680,6 +1722,17 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-hand-rankings" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/holdem-hand-rankings" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-hand-rankings" />
+  </url>
+
+  <url>
+    <loc>https://www.holdemmaster.com/ja/blog/holdem-icm</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-icm" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-icm" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-icm" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-icm" />
   </url>
 
   <url>
@@ -1782,6 +1835,17 @@
   </url>
 
   <url>
+    <loc>https://www.holdemmaster.com/ja/blog/holdem-short-stack</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-short-stack" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-short-stack" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-short-stack" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-short-stack" />
+  </url>
+
+  <url>
     <loc>https://www.holdemmaster.com/ja/blog/holdem-showdown-rules</loc>
     <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
@@ -1859,8 +1923,19 @@
   </url>
 
   <url>
+    <loc>https://www.holdemmaster.com/ja/blog/holdem-tournament</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-tournament" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-tournament" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-tournament" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-tournament" />
+  </url>
+
+  <url>
     <loc>https://www.holdemmaster.com/ja/blog/holdem-tournament-vs-cash-game</loc>
-    <lastmod>2026-06-11</lastmod>
+    <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-tournament-vs-cash-game" />
@@ -1888,6 +1963,17 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-when-to-fold" />
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-when-to-fold" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-when-to-fold" />
+  </url>
+
+  <url>
+    <loc>https://www.holdemmaster.com/ja/blog/korea-poker-marathon-2026</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/korea-poker-marathon-2026" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/korea-poker-marathon-2026" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/korea-poker-marathon-2026" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/korea-poker-marathon-2026" />
   </url>
 
   <url>
@@ -1921,6 +2007,17 @@
     <xhtml:link rel="alternate" hreflang="uk" href="https://www.holdemmaster.com/uk/blog/texas-holdem-rules-for-beginners" />
     <xhtml:link rel="alternate" hreflang="he" href="https://www.holdemmaster.com/he/blog/texas-holdem-rules-for-beginners" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/texas-holdem-rules-for-beginners" />
+  </url>
+
+  <url>
+    <loc>https://www.holdemmaster.com/ja/blog/wpt-australia-2026-guide</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/wpt-australia-2026-guide" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/wpt-australia-2026-guide" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/wpt-australia-2026-guide" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/wpt-australia-2026-guide" />
   </url>
 
   <url>
