@@ -5,7 +5,7 @@
 
 ---
 
-## ▶▶▶ 새 세션 START HERE (2026-07-13 — ★★ja 언어완성 5/5 전량 완결(EN 41편) / 다음=ja 최종 링크복원 패스 → es)
+## ▶▶▶ 새 세션 START HERE (2026-07-13 — ★★ja 완전 마감(EN 41편 + 링크복원 완료) / 다음=es 언어 완성 착수)
 
 > **★번역 축 전환**(사용자 지시): "필라×전언어"(Rules 24언어 완결) → **"언어×전필라"**(한 언어 세로 완성 → 다음). **구 12언어부터**(ja→es→pt→de→zh→ar→id→ms→vi→hi→tr), 언어당 EN 41편 전체(라이브이벤트 4편 포함). **필라 단위 자동 진행 + 필라 끝날 때마다 보고 후 다음 필라/단계 승인**. ★**착수 전 필수: 현지어 웹검색·현지 포커사이트에서 실제 용어·문맥 분석**(메모리 [[translation-local-research-first]]). 읽는 순서: `docs/translation-spec.md` → `docs/translation-terms-<lang>.md` → 이 파일.
 
@@ -15,13 +15,10 @@
 - **ja 41편** = Rules 6 + HR 6 + Odds 6 + Strategy 8 + Tournament 9 + Glossary 6. 화이트리스트 41=EN 전량.
 - 브리프 `docs/translation-terms-ja.md`에 5개 필라 용어 섹션 전부 정리됨(다음 언어 참고용 템플릿).
 
-### ▶▶ 다음 = ① ja **최종 링크복원 패스** (사용자 승인 후)
-- ★목적: 이전 웨이브(HR·Odds·Strategy·Tournament·Glossary 초기)에서 **미번역이라 스트립했던 내부링크를 EN급으로 복원**. 이제 전 41편 존재 → 거의 모든 EN 내부링크가 ja에서 유효.
-- 스트립 이력(대표): flush-vs-straight→probability, hub류→starting-hands-chart·position-play·glossary·rake·icm, tournament→rake·glossary 등. 본문 링크 마크업 제거+앵커만 남긴 것/`:::readnext`·Related 카드 삭제한 것 재추가.
-- **방법 제안**: 각 ja 파일을 대응 EN 마스터와 대조 → EN에 있는 내부링크 중 ja에서 평문화/삭제된 것을 `/ja/blog/`로 복원(전 41편 화이트리스트라 전부 유효). 서브에이전트 병렬(필라별) + 메인 검수 가능. 빌드·intl-links·QA 재검증.
-- (선택) 이미지·GSC·stale 재점검.
+### ✅ ja 최종 링크복원 패스 완료 (커밋 `f98091f`)
+- 22개 파일 42개 스트립 링크 EN급 복원(§13 무변조 검증). ja = EN급 내부링크 밀도 완성. **ja 완전 마감.**
 
-### ▶▶ 다음 = ② **es(스페인어) 언어 완성** (구 12언어 2번째)
+### ▶▶ 다음 = **es(스페인어) 언어 완성** (구 12언어 2번째)
 - es는 기존 8편 보유(Rules 6 + hand-rankings + tournament-vs-cash-game, 후자 2편 stale 가능). ja와 동일 파이프라인(필라별 웨이브: HR→Odds→Strategy→Tournament→Glossary).
 - ★es 숫자표기=**유럽식**(천단위 `.`·소수점 `,` → 1,326→1.326, 2.5→2,5). 브리프 `docs/translation-terms-es.md`는 없음(ja처럼 신규 작성). 구조 레퍼런스=posts-es 자체.
 - 라이브이벤트 4편: EPT바르셀로나는 es 시장 밀접(스페인) → §14 사실 유지하되 현지 친화.
