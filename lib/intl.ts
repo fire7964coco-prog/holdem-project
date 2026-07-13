@@ -3,7 +3,7 @@
  * 한국어는 루트(/)에 그대로 두고, 추가 언어만 /{locale}/... 로 발행한다.
  * 새 언어 추가 = 아래 SECONDARY_LOCALES + CHROME 에 항목만 추가.
  */
-export const SECONDARY_LOCALES = ["en", "ja", "es", "zh", "ar", "pt", "id", "ms", "vi", "hi", "de", "tr", "fr", "ru", "it", "pl", "th", "fa", "sw", "bn", "ro", "fil", "uk"] as const;
+export const SECONDARY_LOCALES = ["en", "ja", "es", "zh", "ar", "pt", "id", "ms", "vi", "hi", "de", "tr", "fr", "ru", "it", "pl", "th", "fa", "sw", "bn", "ro", "fil", "uk", "he"] as const;
 export type SecondaryLocale = (typeof SECONDARY_LOCALES)[number];
 
 export function isSecondaryLocale(value: string): value is SecondaryLocale {
@@ -11,7 +11,7 @@ export function isSecondaryLocale(value: string): value is SecondaryLocale {
 }
 
 /** RTL(오른쪽→왼쪽) 언어. 아랍어 등. */
-export const RTL_LOCALES: readonly SecondaryLocale[] = ["ar", "fa"];
+export const RTL_LOCALES: readonly SecondaryLocale[] = ["ar", "fa", "he"];
 
 export function dirForLocale(locale: SecondaryLocale | null): "rtl" | "ltr" {
   return locale && RTL_LOCALES.includes(locale) ? "rtl" : "ltr";
@@ -48,6 +48,7 @@ export const OG_LOCALE: Record<SecondaryLocale, string> = {
   ro: "ro_RO",
   fil: "fil_PH",
   uk: "uk_UA",
+  he: "he_IL",
 };
 
 /** <html lang> 및 hreflang 코드 (zh는 간체 = zh-Hans, pt는 브라질 = pt-BR) */
@@ -75,6 +76,7 @@ export const HTML_LANG: Record<SecondaryLocale, string> = {
   ro: "ro",
   fil: "fil",
   uk: "uk",
+  he: "he",
 };
 
 interface ChromeStrings {
@@ -525,6 +527,24 @@ export const POST_LABELS: Record<SecondaryLocale, PostLabels> = {
     blogIntro:
       "Практичні гайди: не лише яка рука сильніша, а й чому — і як це використати за столом.",
   },
+  he: {
+    contents: "תוכן עניינים",
+    quickAnswer: "תשובה מהירה",
+    category: "מדריך למתחילים",
+    readSuffix: "קריאה",
+    published: "פורסם",
+    updated: "עודכן",
+    prev: "הקודם",
+    next: "הבא",
+    related: "מאמרים קשורים",
+    share: "שתף מאמר זה",
+    copy: "העתק קישור",
+    copied: "הועתק!",
+    back: "חזרה לכל המאמרים",
+    blogTitle: "בלוג אסטרטגיית טקסס הולדם",
+    blogIntro:
+      "מדריכים מעשיים שמסבירים לא רק איזו יד מנצחת, אלא גם למה — ואיך להשתמש בזה בשולחן.",
+  },
 };
 
 export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
@@ -850,6 +870,20 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     disclaimer:
       "Цей сайт має суто інформаційний характер і не пропагує азартні ігри на реальні гроші. Лише для осіб старше 18 років.",
   },
+  he: {
+    skip: "דלג לתוכן",
+    brand: "HoldemMaster",
+    blogLabel: "בלוג",
+    menuOpen: "פתח תפריט",
+    menuClose: "סגור תפריט",
+    koLabel: "한국어",
+    tagline:
+      "אסטרטגיית טקסס הולדם ברורה ומעשית. מדריכים שמסבירים לא רק איזו יד מנצחת, אלא גם למה.",
+    contentHeading: "תוכן",
+    languageHeading: "שפה",
+    disclaimer:
+      "אתר זה נועד למטרות מידע בלבד ואינו מקדם הימורים בכסף אמיתי. למבוגרים מגיל 18 ומעלה בלבד.",
+  },
 };
 
 /** 블로그 탑바 — 홈 피드 버튼 (한국어 기본값: 홈피드) */
@@ -877,6 +911,7 @@ export const NAV_HOME_FEED: Record<SecondaryLocale, string> = {
   ro: "Acasă",
   fil: "Home",
   uk: "Головна",
+  he: "בית",
 };
 
 /** 블로그 탑바 — 커뮤니티 CTA 버튼 */
@@ -904,4 +939,5 @@ export const NAV_CTA: Record<SecondaryLocale, string> = {
   ro: "Comunitate →",
   fil: "Komunidad →",
   uk: "Спільнота →",
+  he: "קהילה ←",
 };

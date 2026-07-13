@@ -5,7 +5,29 @@
 
 ---
 
-## ▶▶▶ 새 세션 START HERE (2026-07-13 — ★다국어 Rules 필라 23개 언어 / 톱5 진행중 4/5: bn·ro·fil·uk 완료 / 다음=he 마지막·RTL)
+## ▶▶▶ 새 세션 START HERE (2026-07-13 — ★★다국어 Rules 필라 24개 언어 완결 / 톱5 확장 완료)
+
+> **모드**: 다국어 확장 트랙 대성황. 18개 완결 → sw(아프리카) → 톱5(bn·ro·fil·uk·he) 전부 완료 = **Rules 필라 24개 언어**. 전 과정 Opus(번역 6병렬 + 적대적 QA 2배치).
+
+### ✅✅ 톱5 확장 완료 (파일럿19~23, 이번 자율세션 후반)
+sw(19번째) 후 사용자 톱추천 5개: **bn(20)·ro(21)·fil(22)·uk(23)·he(24)** 전부 개설·Rules 6편 배포. 각 §13 0오류. **he는 RTL**(ar/fa 인프라 재활용, RTL_LOCALES에 he 추가).
+- **사용자 몫(GSC 색인)**: 톱5 신규 5언어 × Rules 6편 = 30 URL. `/bn/` `/ro/` `/fil/` `/uk/` `/he/` blog/ + (texas-holdem-rules-for-beginners·holdem-game-order·holdem-betting-actions·holdem-blind-meaning·holdem-all-in-rules·holdem-showdown-rules). ⚠️**he·fa·ar는 RTL** 렌더 육안확인 권장.
+
+### 📊 Rules 필라 = 24개 언어 (완결)
+en(마스터) + ja·es·pt·de·zh·ar·id·ms·vi·hi·tr(기존 12) + fr·ru·it·pl·th·fa(18개 확장) + sw(아프리카) + **bn·ro·fil·uk·he**(톱5).
+
+### ▶▶ 다음 트랙 후보 (사용자와 상의)
+1. **추가 언어** — 원하면 계속 확대(톱5 다음 후보: ta 타밀·he 완료·ur 우르두·nl·sv·cs 등). 배선 절차 아래.
+2. **다국어 2번째 필라 확장** — Rules 24언어 완결 → 다음 필라(Hand Rankings 등)를 동일 파이프라인으로.
+3. **전 언어 stale 재번역** — hand-rankings·tournament-vs-cash-game이 구 12언어에서 stale·category 레거시.
+4. **신규 17언어(fr~he)를 다른 클러스터로 확대** · 이미지·GSC.
+
+### 📌 신규 로케일 배선 절차(재사용, 검증됨)
+① `intl.ts` SECONDARY_LOCALES+코드 + 6개 맵 전부(TS 강제). RTL이면 `RTL_LOCALES`+코드(ar·fa·he 선례). ② posts-<lang>/index.ts. ③ intl-posts.ts. ④ translate route. ⑤ FAQ 마커 `**Q. ...?**`+`A.`(리터럴). ⑥ 비라틴 숫자(벵골/페르시아/데바나가리)는 라틴 일괄변환(.mjs). ⑦ RTL 언어는 ar 파일을 구조 레퍼런스로(텍스트 복사 금지). ⑧ QA 흔한 결함=desc>160·readnext/HTML카드 링크(비허용 슬러그, ar 레퍼런스 답습 주의)·기계번역 깨진단어/타언어 잔재.
+
+---
+
+## ▶▶▶ (이전) START HERE (2026-07-13 — ★다국어 Rules 필라 23개 언어 / 톱5 진행중 4/5: bn·ro·fil·uk 완료 / 다음=he 마지막·RTL)
 
 > **모드**: 다국어 확장 자율진행. 톱추천 **bn(✅)→ro(✅)→fil(✅)→uk(✅)→he(마지막·RTL)**. 전 과정 Opus(번역 6병렬 + 적대적 QA 2배치). 배선 절차는 아래·ru 블록.
 
