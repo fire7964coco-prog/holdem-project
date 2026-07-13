@@ -3,6 +3,18 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-13 (ja Tournament 필라 9편 — 언어완성 웨이브 4)
+
+### ✅ ja Tournament 필라 9/9 (커밋 `754a957`)
+> ja 언어 완성 스프린트 4번째 웨이브(토너먼트 필라). 신규 8 + 재번역 1.
+- **현지 리서치**: GGPoker·poker-hack·mpj-portal·zero-poker·日本カジノスクール → 브리프에 토너먼트 용어 섹션(MTT·ICM 独立チップモデル·バブル·ショートスタック·バイイン·プライズプール·レイトレジ·アンティ). 화이트리스트 35개로 확장.
+- **9편**: tournament(hub)·tournament-vs-cash-game(**stale 재번역**)·icm·bubble·short-stack + **라이브이벤트 4**(apt-incheon-2026-guide·korea-poker-marathon-2026·wpt-australia-2026-guide·ept-barcelona-2026-guide). Opus 9병렬.
+- **적대적 QA 3배치(Opus)** — 라이브이벤트는 §14 사실 대조. §13 손검산 EN 일치(ICM $38.39·딜 $618/$485/$397·버블팩터 57~67%·M≈BB÷1.5·WPT Seminole $3,200×1,435=$4,592,000). §14 라이브 EN 1:1 무결(APT인천 8/7~16·GTD 40억, WPT호주 AUD$3M·계좌, EPT €825~€100,000·2025 €9.9M).
+- **QA 교정 🔴 1 + 🟡 2**: tournament 용어집 도입문「13語」인데 표 12행 → ストラクチャーシート 행 복원(13). shove 음차 통일(bubble ショブ·hub ショーブ → **シューブ 74건**). ept readnext「APTインチョン」→「APT仁川」. ※wpt의 새틀라이트 $255/$180 = **EN 마스터 자체 모순**(ja 충실 계승, EN 백로그).
+- **하드게이트**: build 통과·intl-links 통과(229편/24언어). ★교훈 재확인: build는 파일 캡처로 EXIT 확인.
+- **ja 누적 35편**(Rules 6 + HR 6 + Odds 6 + Strategy 8 + Tournament 9).
+- **사용자 몫(GSC 색인 9 URL)**: `/ja/blog/` + tournament·tournament-vs-cash-game·icm·bubble·short-stack·apt-incheon-2026-guide·korea-poker-marathon-2026·wpt-australia-2026-guide·ept-barcelona-2026-guide.
+
 ## 2026-07-13 (ja Strategy 필라 8편 — 언어완성 웨이브 3)
 
 ### ✅ ja Strategy 필라 8/8 (커밋 `449b1aa`)

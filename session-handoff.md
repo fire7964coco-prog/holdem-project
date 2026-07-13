@@ -5,26 +5,29 @@
 
 ---
 
-## ▶▶▶ 새 세션 START HERE (2026-07-13 — ★번역 축 전환 / ja 언어완성 진행 중 3/5필라: HR·Odds·Strategy 완료 / 다음=ja Tournament)
+## ▶▶▶ 새 세션 START HERE (2026-07-13 — ★번역 축 전환 / ja 언어완성 진행 중 4/5필라: HR·Odds·Strategy·Tournament 완료 / 다음=ja Glossary=마지막)
 
 > **★번역 축 전환**(사용자 지시): "필라×전언어"(Rules 24언어 완결) → **"언어×전필라"**(한 언어 세로 완성 → 다음). **구 12언어부터**(ja→es→pt→de→zh→ar→id→ms→vi→hi→tr), 언어당 EN 41편 전체(라이브이벤트 4편 포함). **필라 단위 자동 진행 + 필라 끝날 때마다 보고 후 다음 필라 승인**. ★**착수 전 필수: 현지어 웹검색·현지 포커사이트에서 실제 용어·문맥 분석**(메모리 [[translation-local-research-first]]). 읽는 순서: `docs/translation-spec.md` → `docs/translation-terms-ja.md` → 이 파일.
 
-### ✅ 완료 웨이브 (ja)
-- **웨이브1 Hand Rankings 6/6** (`b918bc1`): hub 재번역+신규 5. §13 26예시 0오류.
-- **웨이브2 Odds & Math 6/6** (`e08063f`): probability(hub) 등 전부 신규. QA 2배치 전부 CLEAN. 화이트리스트 19.
-- **웨이브3 Strategy 8/8** (`449b1aa`): strategy(hub)·positions·position-play·starting-hands-chart·limping·3bet·continuation-bet·when-to-fold 전부 신규. QA 3배치 전부 CLEAN(§13 좌석순·레인지·BB사이징·블로커콤보 EN 일치). 화이트리스트 27로 확장.
-- **ja 누적 27편** = Rules 6 + HR 6 + Odds 6 + Strategy 8 + tournament-vs-cash-game 1.
-- 사용자 GSC 최근 8 URL: `/ja/blog/` + strategy·positions·position-play·starting-hands-chart·limping·3bet·continuation-bet·when-to-fold.
-- ⚠️**교훈**: `npm run build`를 grep에 파이프하면 pipe 끝 명령 exit이 잡혀 빌드 실패가 가려짐 → **build는 파일 캡처 후 EXIT 확인**. 메타 문자열(seoTitle 등) ASCII `"..."` 안에 생 ASCII 따옴표 넣으면 파싱에러 → 전각「」 사용.
+### ✅ 완료 웨이브 (ja) — 4/5 필라
+- **웨이브1 Hand Rankings 6/6** (`b918bc1`) · **웨이브2 Odds & Math 6/6** (`e08063f`) · **웨이브3 Strategy 8/8** (`449b1aa`) · **웨이브4 Tournament 9/9** (`754a957`, 신규8+재번역1, 라이브이벤트4 §14 사실 EN 1:1).
+- 각 웨이브 적대적 QA 다배치 전부 통과(§13/§14 EN 일치). 화이트리스트 35로 확장.
+- **ja 누적 35편** = Rules 6 + HR 6 + Odds 6 + Strategy 8 + Tournament 9.
+- 사용자 GSC 최근 9 URL: `/ja/blog/` + tournament·tournament-vs-cash-game·icm·bubble·short-stack·apt-incheon-2026-guide·korea-poker-marathon-2026·wpt-australia-2026-guide·ept-barcelona-2026-guide.
+- ⚠️**교훈**: build는 grep 파이프 금지(exit 가려짐)→**파일 캡처 후 EXIT 확인**. 메타 문자열 ASCII `"..."` 안 생 ASCII 따옴표=파싱에러→전각「」.
 
-### ▶▶ 다음 = ja **Tournament 필라**(웨이브 4, 사용자 승인 후)
-- 슬러그 9: holdem-tournament(hub) + holdem-tournament-vs-cash-game(**stale 재번역**, 기존 ja 있음)·holdem-icm·holdem-bubble·holdem-short-stack + **라이브이벤트 4**(apt-incheon-2026-guide·korea-poker-marathon-2026·wpt-australia-2026-guide·ept-barcelona-2026-guide). tournament-vs-cash 외 8편 신규.
-- 절차 동일: ①토너먼트 용어 현지 웹리서치(ICM·バブル·ショートスタック·MTT 일본어 표현 + 라이브이벤트는 대회명·바이인·일정 사실 검증)→브리프 보강 ②Opus 9병렬 ③하드게이트 ④적대적 QA 3배치 ⑤교정 ⑥커밋 ⑦보고.
-- ⚠️라이브이벤트 4편은 날짜·운영사·바이인 등 **사실 정확성**(CLAUDE.md §14) 주의. tournament-vs-cash는 stale(EN 2026-07-11 > ja 2026-06-11) 재번역.
-- masterUpdated = 각 EN `updated` 값. updated=착수일.
+### ▶▶ 다음 = ja **Glossary 필라**(웨이브 5 = ja **마지막 필라**, 사용자 승인 후)
+- 슬러그 6: holdem-glossary(hub) + holdem-straddle·holdem-rake·holdem-fish·holdem-cooler·holdem-bad-beat. **전부 ja 신규**.
+- 절차 동일: ①용어집/속어 현지 웹리서치(ストラドル·レーキ·フィッシュ·クーラー·バッドビート 일본어 표현)→브리프 보강 ②Opus 6병렬 ③하드게이트(파일캡처) ④적대적 QA 2배치 ⑤교정 ⑥커밋 ⑦보고.
+- 화이트리스트 35→41로 확장(glossary 6편 편입).
 
-### 📌 ja 남은 필라 (HR·Odds·Strategy 완료 후 2개)
-Tournament(9, 라이브이벤트 4 포함·tournament-vs-cash stale 재번역) → Glossary(6). 완성 시 **최종 링크복원 패스**(전 필라 존재→이전 웨이브 스트립 링크 EN급 복원).
+### ★★ Glossary 완료 후 = ja 41편 전량 완성 → **최종 링크복원 패스**(사용자 지시 필요)
+- 전 필라 존재 → 이전 웨이브(HR·Odds·Strategy·Tournament)에서 **스트립했던 내부링크를 EN급으로 복원**. 대상: probability·strategy·positions·starting-hands-chart·glossary·rake·icm 등 이제 전부 존재.
+- 방법: EN 마스터의 내부링크 구조 기준으로 ja 41편 재점검, `/ja/blog/` 링크 복원 + readnext/Related 카드 재추가. 빌드·intl-links 재검증.
+- **그다음 = 다음 언어**(es → pt → de …). ja 완성 = 구 12언어 중 1번째.
+
+### 📌 백로그(EN 마스터 — ja 아님)
+- **wpt-australia-2026-guide**: 새틀라이트 Step1 금액 EN 원문 모순(본문 "$255 total/Step1 $255" ↔ FAQ "Step1 ~$180"). ja는 충실 계승. EN 마스터 측 정합화 필요(고치면 전 언어 追随).
 
 ---
 
