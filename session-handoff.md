@@ -15,10 +15,13 @@
 - **ja 41편** = Rules 6 + HR 6 + Odds 6 + Strategy 8 + Tournament 9 + Glossary 6. 화이트리스트 41=EN 전량.
 - 브리프 `docs/translation-terms-ja.md`에 5개 필라 용어 섹션 전부 정리됨(다음 언어 참고용 템플릿).
 
-### ✅ ja 최종 링크복원 패스 완료 (커밋 `f98091f`)
-- 22개 파일 42개 스트립 링크 EN급 복원(§13 무변조 검증). ja = EN급 내부링크 밀도 완성. **ja 완전 마감.**
+### ✅ ja 최종 링크복원 + EN 구조 완전정합 완료 (커밋 `f98091f`→`77b7a37`)
+- 1차: 22개 파일 42개 스트립 링크 복원. 2차: ★**개수·구조 재검증**(사용자 지적 "구조는 EN과 똑같이, 비슷한 밀도 아님") → 7개 파일 10개 인스턴스(Related/readnext 카드·thumb·본문 중복) 추가 정합.
+- **개수부족 0/0 = ja 내부링크가 EN과 대상·개수·구조·thumb까지 1:1**. §13 무변조 전수검증. **ja 완전 마감.**
+- ★교훈: 링크복원은 **존재여부(Set) 아니라 개수(count)로 검증**. 메모리 [[translation-link-structure-equals-en]].
 
 ### ▶▶ 다음 = **es(스페인어) 언어 완성** (구 12언어 2번째)
+- ⚠️ es도 완성 후 **링크복원 패스는 개수기준 검증**(EN vs es `/blog/` 링크 count 대조, Related/readnext 카드·thumb 포함)으로 EN 구조 1:1 맞출 것.
 - es는 기존 8편 보유(Rules 6 + hand-rankings + tournament-vs-cash-game, 후자 2편 stale 가능). ja와 동일 파이프라인(필라별 웨이브: HR→Odds→Strategy→Tournament→Glossary).
 - ★es 숫자표기=**유럽식**(천단위 `.`·소수점 `,` → 1,326→1.326, 2.5→2,5). 브리프 `docs/translation-terms-es.md`는 없음(ja처럼 신규 작성). 구조 레퍼런스=posts-es 자체.
 - 라이브이벤트 4편: EPT바르셀로나는 es 시장 밀접(스페인) → §14 사실 유지하되 현지 친화.
