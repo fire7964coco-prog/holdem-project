@@ -3,6 +3,16 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-13 (sw 스와힐리어 신규 로케일 + Rules 필라 6편 — 19번째 로케일·동아프리카)
+
+### 🌐 sw(스와힐리어) 신규 로케일 + Rules 필라 6/6 (파일럿18)
+> 18개 완결 후 사용자 지시로 **아프리카 스와힐리어 추가**(동아프리카 케냐·탄자니아·우간다·콩고 등 2억+ 화자). 신규 로케일 배선 + Opus 6병렬 + 적대적 QA 2배치.
+- **인프라**: `lib/intl.ts` +sw 7개 맵(스와힐리 UI, OG=sw_KE) · `intl-posts.ts` SW_POSTS · `posts-sw/index.ts` · translate route. 빌드 TS 에러 0.
+- **브리프**: `docs/translation-terms-sw.md`. ★**스와힐리엔 확립된 포커 어휘 없음** → **포커 전문용어(족보·액션·구조)는 영어 유지 + 스와힐리 산문 설명**(동아프리카 SportPesa 등 베팅 씬 관습, 억지 신조어 금지). 핵심명사만 스와힐리(karata·mkono·dila·meza·chipsi·dau). **숫자=영어식 그대로**(변환X = en·zh·ar·ms·th 계열). wewe/u-체. Full House>Flush.
+- **적대적 QA 2배치(Opus)**: §13 전수 손계산 0오류(pot 198,000·side pot 1,300·Straight Flush Q-J-T-9-8·2.7:1/27%). 🔴 4건 교정(texas desc·texas readnext 깨진링크 holdem-hand-rankings→showdown·blind desc·showdown 오타 hausindi→haushindi) + 🟡 3건(game-order 동사접합 Uki-check·all-in desc 표현).
+- **결과**: 19번째 로케일 sw. Rules 필라 = **19개 언어**(en 마스터 + ja·es·pt·de·zh·ar·id·ms·vi·hi·tr·fr·ru·it·pl·th·fa·**sw**).
+- **사용자 GSC**: `/sw/blog/` 6 URL.
+
 ## 2026-07-13 (fa 페르시아어 신규 로케일 + Rules 필라 6편 — ★★18개 확장 18/18 완료·RTL)
 
 ### 🌐 fa(페르시아어) 신규 로케일 + Rules 필라 6/6 (파일럿17 = 마지막·18번째 로케일)

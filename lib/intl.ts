@@ -3,7 +3,7 @@
  * 한국어는 루트(/)에 그대로 두고, 추가 언어만 /{locale}/... 로 발행한다.
  * 새 언어 추가 = 아래 SECONDARY_LOCALES + CHROME 에 항목만 추가.
  */
-export const SECONDARY_LOCALES = ["en", "ja", "es", "zh", "ar", "pt", "id", "ms", "vi", "hi", "de", "tr", "fr", "ru", "it", "pl", "th", "fa"] as const;
+export const SECONDARY_LOCALES = ["en", "ja", "es", "zh", "ar", "pt", "id", "ms", "vi", "hi", "de", "tr", "fr", "ru", "it", "pl", "th", "fa", "sw"] as const;
 export type SecondaryLocale = (typeof SECONDARY_LOCALES)[number];
 
 export function isSecondaryLocale(value: string): value is SecondaryLocale {
@@ -43,6 +43,7 @@ export const OG_LOCALE: Record<SecondaryLocale, string> = {
   pl: "pl_PL",
   th: "th_TH",
   fa: "fa_IR",
+  sw: "sw_KE",
 };
 
 /** <html lang> 및 hreflang 코드 (zh는 간체 = zh-Hans, pt는 브라질 = pt-BR) */
@@ -65,6 +66,7 @@ export const HTML_LANG: Record<SecondaryLocale, string> = {
   pl: "pl",
   th: "th",
   fa: "fa",
+  sw: "sw",
 };
 
 interface ChromeStrings {
@@ -425,6 +427,24 @@ export const POST_LABELS: Record<SecondaryLocale, PostLabels> = {
     blogIntro:
       "راهنماهای کاربردی که توضیح می‌دهند نه فقط کدام دست برنده است، بلکه چرا — و چطور سر میز از آن استفاده کنید.",
   },
+  sw: {
+    contents: "Yaliyomo",
+    quickAnswer: "Jibu la Haraka",
+    category: "Mwongozo wa Wanaoanza",
+    readSuffix: "kusoma",
+    published: "Ilichapishwa",
+    updated: "Ilisasishwa",
+    prev: "Iliyotangulia",
+    next: "Inayofuata",
+    related: "Makala Zinazohusiana",
+    share: "Shiriki makala hii",
+    copy: "Nakili kiungo",
+    copied: "Imenakiliwa!",
+    back: "Rudi kwa makala zote",
+    blogTitle: "Blogu ya Mkakati wa Texas Hold'em",
+    blogIntro:
+      "Miongozo ya vitendo inayoeleza si tu mkono gani unashinda, bali kwa nini — na jinsi ya kuutumia mezani.",
+  },
 };
 
 export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
@@ -680,6 +700,20 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     disclaimer:
       "این سایت صرفاً جنبه اطلاع‌رسانی دارد و قمار با پول واقعی را ترویج نمی‌کند. فقط برای افراد بالای 18 سال.",
   },
+  sw: {
+    skip: "Rukia hadi maudhui",
+    brand: "HoldemMaster",
+    blogLabel: "Blogu",
+    menuOpen: "Fungua menyu",
+    menuClose: "Funga menyu",
+    koLabel: "한국어",
+    tagline:
+      "Mkakati wa Texas Hold'em ulio wazi na wa vitendo. Miongozo inayoeleza si tu mkono gani unashinda, bali kwa nini.",
+    contentHeading: "Maudhui",
+    languageHeading: "Lugha",
+    disclaimer:
+      "Tovuti hii ni kwa madhumuni ya taarifa pekee na haihamasishi kamari ya pesa halisi. Kwa wenye umri wa miaka 18 na zaidi pekee.",
+  },
 };
 
 /** 블로그 탑바 — 홈 피드 버튼 (한국어 기본값: 홈피드) */
@@ -702,6 +736,7 @@ export const NAV_HOME_FEED: Record<SecondaryLocale, string> = {
   pl: "Główna",
   th: "หน้าแรก",
   fa: "خانه",
+  sw: "Mwanzo",
 };
 
 /** 블로그 탑바 — 커뮤니티 CTA 버튼 */
@@ -724,4 +759,5 @@ export const NAV_CTA: Record<SecondaryLocale, string> = {
   pl: "Społeczność →",
   th: "ชุมชน →",
   fa: "انجمن ←",
+  sw: "Jamii →",
 };

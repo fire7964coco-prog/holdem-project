@@ -5,7 +5,29 @@
 
 ---
 
-## ▶▶▶ 새 세션 START HERE (2026-07-13 — ★★다국어 18개 확장 완료 18/18 / 트랙 종료)
+## ▶▶▶ 새 세션 START HERE (2026-07-13 — ★다국어 Rules 필라 19개 언어 완결 / sw 추가)
+
+> **모드**: 다국어 확장. 18개 완결 후 사용자 지시로 **sw(스와힐리어, 동아프리카) 추가 완료 = 19개 언어**. 전 과정 Opus(번역 6병렬 + 적대적 QA 2배치). 신규 로케일 배선 절차는 아래 블록·ru 블록 참조.
+
+### ✅ sw(스와힐리어) 완료 (파일럿18, 19번째 로케일)
+★핵심: 스와힐리엔 확립된 포커 어휘 없음 → **포커 전문용어 영어 유지 + 스와힐리 산문**(동아프리카 관습). 숫자 영어식(변환X). wewe체. §13 0오류. GSC: `/sw/blog/` 6 URL.
+
+### 📊 Rules 필라 = 19개 언어 완결
+en(마스터) + ja·es·pt·de·zh·ar·id·ms·vi·hi·tr + fr·ru·it·pl·th·fa + **sw**.
+
+### ▶▶ 다음 트랙 후보 (사용자와 상의)
+1. **추가 언어** — 원하면 계속 확대(예: 다른 아프리카어·유럽어). 배선 절차 아래 참조.
+2. **다국어 2번째 필라 확장** — Rules가 19언어 완결 → 다음 필라(Hand Rankings 등)를 동일 파이프라인으로.
+3. **전 언어 stale 재번역** — hand-rankings·tournament-vs-cash-game이 구 12언어에서 stale·category 레거시.
+4. **신규 13언어(fr~sw)를 다른 클러스터로 확대** · 이미지·GSC.
+- **백로그(마스터 공통)**: all-in 캡 근사·game-order 프리플랍 체크 절대표현·pt 코퍼스/street 통일.
+
+### 📌 신규 로케일 배선 절차(재사용)
+① `lib/intl.ts`: `SECONDARY_LOCALES`+코드 + 6개 맵(OG_LOCALE·HTML_LANG·POST_LABELS·CHROME·NAV_HOME_FEED·NAV_CTA) 전부 채우기(TS 빌드 강제). RTL이면 `RTL_LOCALES`+코드(fa·ar 선례). ② `lib/posts-<lang>/index.ts` 신규. ③ `lib/intl-posts.ts` import+등록. ④ (선택) translate route LANG_NAME. ⑤ FAQ 마커 = 파서 정규식 `**Q. ...?**`+`A. ...`(리터럴 Q./A.) 준수(texas는 `###` 헤딩=마스터 예외). ⑥ 숫자표기 계열 웹리서치. ⑦ 페르시아 숫자류는 라틴 변환(fa 선례). ⑧ QA에서 흔한 결함=desc>160·readnext 파이프링크(check-intl-links 미검출)·기계번역 동사접합.
+
+---
+
+## ▶▶▶ (이전) START HERE (2026-07-13 — ★★다국어 18개 확장 완료 18/18 / 트랙 종료)
 
 > **모드**: 다국어 **18개 확장 트랙 종료**(부재중 자율진행 완료). fr→ru→it→pl→th→fa 6개 신규 로케일 전부 개설·Rules 필라 6편 배포 완료. 전 과정 Opus(번역 6병렬 + 적대적 QA 2배치).
 
