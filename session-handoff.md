@@ -5,23 +5,24 @@
 
 ---
 
-## ▶▶▶ 새 세션 START HERE (2026-07-13 — ★번역 축 전환 / ja 언어완성 진행 중 1/5필라: Hand Rankings 완료 / 다음=ja Odds & Math)
+## ▶▶▶ 새 세션 START HERE (2026-07-13 — ★번역 축 전환 / ja 언어완성 진행 중 2/5필라: Hand Rankings·Odds 완료 / 다음=ja Strategy)
 
 > **★번역 축 전환**(사용자 지시): "필라×전언어"(Rules 24언어 완결) → **"언어×전필라"**(한 언어 세로 완성 → 다음). **구 12언어부터**(ja→es→pt→de→zh→ar→id→ms→vi→hi→tr), 언어당 EN 41편 전체(라이브이벤트 4편 포함). **필라 단위 자동 진행 + 필라 끝날 때마다 보고 후 다음 필라 승인**. ★**착수 전 필수: 현지어 웹검색·현지 포커사이트에서 실제 용어·문맥 분석**(메모리 [[translation-local-research-first]]). 읽는 순서: `docs/translation-spec.md` → `docs/translation-terms-ja.md` → 이 파일.
 
-### ✅ 이번 세션: ja Hand Rankings 필라 6/6 완료·배포 (커밋 `b918bc1`)
-- 브리프 `docs/translation-terms-ja.md` 신규(ja는 브리프 없던 언어). hub 재번역(stale 해소)+신규 5편. Opus 6병렬 + 적대적 QA 2배치(§13 26예시 0오류). T→10 통일 등 교정 3건. 하드게이트 전통과.
-- **ja 총 13편** = Rules 6 + Hand Rankings 6 + tournament-vs-cash-game 1.
-- 사용자 GSC: `/ja/blog/` 6 URL(hand-rankings·flush-vs-straight·kicker·tiebreak-rules·split-pot-rules·reading-the-board).
+### ✅ 완료 웨이브 (ja)
+- **웨이브1 Hand Rankings 6/6** (커밋 `b918bc1`): hub 재번역+신규 5. §13 26예시 0오류.
+- **웨이브2 Odds & Math 6/6** (커밋 `e08063f`): probability(hub)·pot-odds·outs·drawing-odds·implied-odds·equity 전부 신규. QA 2배치 **전부 CLEAN**(§13 조합·에쿼티·EV Node 재계산 EN 일치). 화이트리스트 19개로 확장.
+- **ja 누적 19편** = Rules 6 + Hand Rankings 6 + Odds 6 + tournament-vs-cash-game 1.
+- 사용자 GSC 최근 6 URL: `/ja/blog/` + probability·pot-odds·outs·drawing-odds·implied-odds·equity.
 
-### ▶▶ 다음 = ja **Odds & Math 필라**(웨이브 2, 사용자 승인 후)
-- 슬러그 6: holdem-probability(hub) + holdem-pot-odds·holdem-outs(EN은 holdem-card-counting일 수 있음, 확인)·holdem-drawing-odds·holdem-implied-odds·holdem-equity. **전부 ja 신규**.
-- 절차: ①확률·오즈 용어 현지 웹리서치(팟오즈/아웃츠/에퀴티 일본어 표현)→브리프 보강 ②Opus 6병렬 번역 ③하드게이트 ④적대적 QA 2배치 ⑤교정 ⑥커밋 ⑦보고.
-- ⚠️화이트리스트 확대: Odds 6편 추가되면 flush-vs-straight 등이 걸었던 holdem-probability 링크를 **복원 가능**(언어 완성 시 최종 링크복원 패스에서 일괄). 지금은 스트립 유지.
-- masterUpdated = 각 EN `updated` 값 기록. updated=착수일.
+### ▶▶ 다음 = ja **Strategy 필라**(웨이브 3, 사용자 승인 후)
+- 슬러그 8: holdem-strategy(hub) + holdem-positions·holdem-position-play·holdem-starting-hands-chart·holdem-limping·holdem-3bet·holdem-continuation-bet·holdem-when-to-fold. **전부 ja 신규**.
+- 절차 동일: ①전략 용어 현지 웹리서치(포지션/3벳/C벳/스타팅핸드/리밍/폴드 일본어 표현)→브리프 보강 ②Opus **8병렬** 번역 ③하드게이트 ④적대적 QA(8편이라 3배치 고려) ⑤교정 ⑥커밋 ⑦보고.
+- ⚠️화이트리스트 확대(19→27): starting-hands-chart·positions·position-play 등이 추가되면 이전 웨이브에서 스트립한 링크 다수가 복원 대상(최종 링크복원 패스). 지금은 스트립 유지.
+- masterUpdated = 각 EN `updated` 값. updated=착수일.
 
-### 📌 ja 남은 필라 (Hand Rankings 완료 후 4개)
-Odds & Math(6) → Strategy(8) → Tournament(9, 라이브이벤트 4 포함·tournament-vs-cash는 stale 재번역) → Glossary(6). 완성 시 **최종 링크복원 패스**(전 필라 존재→EN급 내부링크).
+### 📌 ja 남은 필라 (Hand Rankings·Odds 완료 후 3개)
+Strategy(8) → Tournament(9, 라이브이벤트 4 포함·tournament-vs-cash는 stale 재번역) → Glossary(6). 완성 시 **최종 링크복원 패스**(전 필라 존재→EN급 내부링크 복원).
 
 ---
 

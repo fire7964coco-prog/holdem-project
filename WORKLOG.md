@@ -3,6 +3,17 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-13 (ja Odds & Math 필라 6편 — 언어완성 웨이브 2)
+
+### ✅ ja Odds & Math 필라 6/6 (커밋 `e08063f`)
+> ja 언어 완성 스프린트 2번째 웨이브(수학 필라). 전부 ja 신규 6편.
+- **현지 리서치**: mpj-portal·ABEMA·poker101·zero-poker·pokeracademy → 브리프에 확률·오즈 용어 섹션 추가(ポットオッズ·アウツ·エクイティ·インプライドオッズ·2倍4倍の法則·EV). 화이트리스트 19개로 확장.
+- **6편**: holdem-probability(hub)·pot-odds·outs·drawing-odds·implied-odds·equity. Opus 6병렬.
+- **적대적 QA 2배치(Opus)**: **6편 전부 CLEAN**(🔴 0). §13 전수 자력 재계산(일부 Node C(n,k)) EN 완전일치 — 팟오즈 비율표·드로우 완성률·조합·프리플랍 에쿼티(AA/KK 82/18·QQ/AK 57/43)·세미블러프 EV(+$52)·인플라이드(x≈$105)·세트 11.8%. 🟡 교정 2건: drawing-odds starting-hands-chart 링크 스트립, outs 카드표기 T→10.
+- **하드게이트**: build 통과·intl-links 통과(213편/24언어).
+- **ja 누적 19편**(Rules 6 + Hand Rankings 6 + Odds 6 + tournament-vs-cash 1).
+- **사용자 몫(GSC 색인 6 URL)**: `/ja/blog/` + holdem-probability·holdem-pot-odds·holdem-outs·holdem-drawing-odds·holdem-implied-odds·holdem-equity.
+
 ## 2026-07-13 (ja 언어완성 트랙 착수 — Hand Rankings 필라 6편) ★번역 축 전환
 
 ### 🌐 번역 축 전환: "필라×전언어" → "언어×전필라" (사용자 지시)
