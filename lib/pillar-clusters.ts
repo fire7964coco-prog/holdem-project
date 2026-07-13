@@ -106,7 +106,6 @@ export const KO_CLUSTERS: PillarCluster[] = [
     nodes: [
       { slug: "holdem-game-order", label: "게임 진행 6단계" },
       { slug: "holdem-blind-meaning", label: "블라인드 뜻" },
-      { slug: "holdem-small-blind-role", label: "스몰블라인드 역할" },
       { slug: "holdem-check-meaning", label: "체크 뜻" },
       { slug: "holdem-beginner-mistakes-10", label: "초보 실수 10가지" },
     ],
