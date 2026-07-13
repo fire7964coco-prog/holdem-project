@@ -16,7 +16,13 @@
 - 절차: ①확률·오즈 스페인어 용어 현지 리서치(probabilidad·pot odds/bote·outs·equity/equidad)→브리프 보강 ②Opus 6병렬(품질 최우선, §13 EN 그대로) ③하드게이트 ④QA 2배치(네이티브 편집장, 계산 재검증 X) ⑤교정 ⑥커밋 ⑦보고. 화이트리스트 13→19.
 
 ### 📌 es 남은 필라 & 마무리
-Odds(6) → Strategy(8) → Tournament(9, 라이브이벤트 4·tvc는 이미 있음) → Glossary(6). 완성 시 **최종 링크복원 패스(개수검증)** + **러닝 로드맵**(`ES_CLUSTERS` 추가 + intl-blog-post-client 게이트에 es 추가). ja가 템플릿.
+Odds(6) → Strategy(8) → Tournament(9, 라이브이벤트 4·tvc는 이미 있음) → Glossary(6) → **holdem-card-counting(EN 42번째글, 클러스터 밖·Odds인접)**. 완성 시 **최종 EN 정합 패스** + **러닝 로드맵**(`ES_CLUSTERS` 추가 + intl-blog-post-client 게이트에 es 추가). ja가 템플릿.
+
+### ★★★ ja EN-완전일치 사고 & 수정 (2026-07-13, 사용자 발견) — es도 반드시 준수
+- **사고**: 사용자가 ja outs 페이지에 EN엔 있는 "counting cards" 링크가 없음을 발견. 원인 = **`holdem-card-counting`(EN 실재 발행글, 클러스터 41목록엔 없음)이 ja 미번역**. 내 진단이 41목록 기준이라 사각지대. → ja 번역+정합해 **EN 42편 완전일치** 달성(`5bb94bc`).
+- **수정된 방법론(메모리 [[translation-link-structure-equals-en]])**: ①검증 universe = **`lib/posts-en/` 실제 전체(42편)**, 클러스터 목록 금지. ②대조 = 링크뿐 아니라 **하이라이트색(g/r/b)·thumb·이미지·모든 :::디렉티브·Related카드·FAQ 수**까지 EN 1:1. 번역이 재구성이라도 구조·색칠은 EN 고정.
+- **레이아웃**: ja/zh는 `word-break:keep-all`로 오버플로 → `[lang]` 스코프 normal 보정 완료(globals.css). ja JP 폰트스택 명시. (es는 라틴이라 word-break 무관.)
+- **es 함의**: es도 지금 13/42 → card-counting 포함 EN 42편 전부 필요. es 완성 시 위 방법론으로 EN 정합 검증 필수.
 
 ---
 
