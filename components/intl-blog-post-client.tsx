@@ -11,7 +11,7 @@ import { SITE } from "@/lib/site";
 import { POST_LABELS, NAV_CTA, NAV_HOME_FEED, dirForLocale, type SecondaryLocale } from "@/lib/intl";
 import { postsForLocale } from "@/lib/intl-posts";
 import { renderMarkdown, extractHeadings } from "@/app/blog/[slug]/blog-post-client";
-import { clusterForSlug } from "@/lib/pillar-clusters";
+import { clusterForSlug, EN_CLUSTERS, JA_CLUSTERS, type PillarCluster } from "@/lib/pillar-clusters";
 import ClusterMinimap from "@/components/cluster-minimap";
 import CommunityCTA from "@/components/community-cta";
 import BlogTopBar from "@/components/blog-top-bar";
@@ -84,8 +84,10 @@ export default function IntlBlogPostClient({
 
   const headings = extractHeadings(post.content);
   const hasToc = headings.length >= 2;
-  // 클러스터 미니맵 (현재 EN 프로토타입만). 클러스터 소속 글에만 노출.
-  const showMinimap = locale === "en" && clusterForSlug(post.slug) !== null;
+  // 클러스터 미니맵: 전 필라를 완역한 로케일만(en·ja). 라벨은 로케일별 클러스터, UI라벨은 EN 유지.
+  const localeClusters: PillarCluster[] | null =
+    locale === "en" ? EN_CLUSTERS : locale === "ja" ? JA_CLUSTERS : null;
+  const showMinimap = localeClusters !== null && clusterForSlug(post.slug, localeClusters) !== null;
   // 3단 배치: 목차(좌) · 본문(중앙) · 학습맵(우). 있는 것만 컬럼 생성.
   const gridClass =
     hasToc && showMinimap
@@ -210,7 +212,7 @@ export default function IntlBlogPostClient({
                   <ChevronDown className="w-5 h-5 text-primary transition-transform duration-200 group-open:rotate-180" aria-hidden="true" />
                 </summary>
                 <div className="px-6 pb-6 pt-2 border-t border-border/60">
-                  <ClusterMinimap slug={post.slug} bare />
+                  <ClusterMinimap slug={post.slug} bare clusters={localeClusters!} hrefBase={base} />
                 </div>
               </details>
             )}
@@ -335,7 +337,7 @@ export default function IntlBlogPostClient({
           {showMinimap && (
             <aside className="hidden xl:block">
               <div className="sticky top-16 max-h-[calc(100vh-5rem)] overflow-y-auto overscroll-contain pe-1">
-                <ClusterMinimap slug={post.slug} />
+                <ClusterMinimap slug={post.slug} clusters={localeClusters!} hrefBase={base} />
               </div>
             </aside>
           )}
