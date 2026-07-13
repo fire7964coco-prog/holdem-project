@@ -23,7 +23,8 @@ en(마스터) + ja·es·pt·de·zh·ar·id·ms·vi·hi·tr(기존 12) + fr·ru·
 4. **신규 17언어(fr~he)를 다른 클러스터로 확대** · 이미지·GSC.
 
 ### 📌 신규 로케일 배선 절차(재사용, 검증됨)
-① `intl.ts` SECONDARY_LOCALES+코드 + 6개 맵 전부(TS 강제). RTL이면 `RTL_LOCALES`+코드(ar·fa·he 선례). ② posts-<lang>/index.ts. ③ intl-posts.ts. ④ translate route. ⑤ FAQ 마커 `**Q. ...?**`+`A.`(리터럴). ⑥ 비라틴 숫자(벵골/페르시아/데바나가리)는 라틴 일괄변환(.mjs). ⑦ RTL 언어는 ar 파일을 구조 레퍼런스로(텍스트 복사 금지). ⑧ QA 흔한 결함=desc>160·readnext/HTML카드 링크(비허용 슬러그, ar 레퍼런스 답습 주의)·기계번역 깨진단어/타언어 잔재.
+⚠️**라우팅은 `app/[locale]` 동적세그가 아니라 로케일별 물리 폴더**(`app/<locale>/`). 데이터·sitemap·check-intl-links만으론 부족 — **라우트 파일 없으면 URL 404**(2026-07-13 발견: 신규 12로케일 404 원인).
+① `intl.ts` SECONDARY_LOCALES+코드 + 6개 맵 전부(TS 강제). RTL이면 `RTL_LOCALES`+코드(ar·fa·he 선례). ② posts-<lang>/index.ts. ③ intl-posts.ts. ④ translate route. ⑤ **★라우트 3파일 생성**: `app/<lang>/page.tsx`(CommunityClient pageLocale)·`app/<lang>/blog/page.tsx`(IntlBlogIndex)·`app/<lang>/blog/[slug]/page.tsx`(generateStaticParams=postsForLocale+IntlBlogArticle). tr 폴더가 템플릿. **빌드 페이지 수 증가(로케일당 +8: home+blogindex+6글)로 확인**. ⑥ FAQ 마커 `**Q. ...?**`+`A.`(리터럴). ⑦ 비라틴 숫자(벵골/페르시아/데바나가리)는 라틴 일괄변환(.mjs). ⑧ RTL 언어는 ar 파일을 구조 레퍼런스로(텍스트 복사 금지). ⑨ QA 흔한 결함=desc>160·readnext/HTML카드 링크(비허용 슬러그, ar 레퍼런스 답습 주의)·기계번역 깨진단어/타언어 잔재.
 
 ---
 
