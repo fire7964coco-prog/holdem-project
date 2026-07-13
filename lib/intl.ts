@@ -3,7 +3,7 @@
  * 한국어는 루트(/)에 그대로 두고, 추가 언어만 /{locale}/... 로 발행한다.
  * 새 언어 추가 = 아래 SECONDARY_LOCALES + CHROME 에 항목만 추가.
  */
-export const SECONDARY_LOCALES = ["en", "ja", "es", "zh", "ar", "pt", "id", "ms", "vi", "hi", "de", "tr", "fr", "ru", "it", "pl", "th", "fa", "sw", "bn", "ro", "fil"] as const;
+export const SECONDARY_LOCALES = ["en", "ja", "es", "zh", "ar", "pt", "id", "ms", "vi", "hi", "de", "tr", "fr", "ru", "it", "pl", "th", "fa", "sw", "bn", "ro", "fil", "uk"] as const;
 export type SecondaryLocale = (typeof SECONDARY_LOCALES)[number];
 
 export function isSecondaryLocale(value: string): value is SecondaryLocale {
@@ -47,6 +47,7 @@ export const OG_LOCALE: Record<SecondaryLocale, string> = {
   bn: "bn_BD",
   ro: "ro_RO",
   fil: "fil_PH",
+  uk: "uk_UA",
 };
 
 /** <html lang> 및 hreflang 코드 (zh는 간체 = zh-Hans, pt는 브라질 = pt-BR) */
@@ -73,6 +74,7 @@ export const HTML_LANG: Record<SecondaryLocale, string> = {
   bn: "bn",
   ro: "ro",
   fil: "fil",
+  uk: "uk",
 };
 
 interface ChromeStrings {
@@ -505,6 +507,24 @@ export const POST_LABELS: Record<SecondaryLocale, PostLabels> = {
     blogIntro:
       "Mga praktikal na gabay na nagpapaliwanag hindi lang kung anong hand ang nananalo, kundi kung bakit — at paano ito gamitin sa mesa.",
   },
+  uk: {
+    contents: "Зміст",
+    quickAnswer: "Коротка відповідь",
+    category: "Посібник для початківців",
+    readSuffix: "читання",
+    published: "Опубліковано",
+    updated: "Оновлено",
+    prev: "Назад",
+    next: "Далі",
+    related: "Схожі статті",
+    share: "Поділитися статтею",
+    copy: "Скопіювати посилання",
+    copied: "Скопійовано!",
+    back: "До всіх статей",
+    blogTitle: "Блог про стратегію Техаського Холдему",
+    blogIntro:
+      "Практичні гайди: не лише яка рука сильніша, а й чому — і як це використати за столом.",
+  },
 };
 
 export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
@@ -816,6 +836,20 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     disclaimer:
       "Ang site na ito ay para sa layuning pang-impormasyon lamang at hindi nagtataguyod ng sugal na tunay na pera. Para lamang sa 18 taong gulang pataas.",
   },
+  uk: {
+    skip: "Перейти до вмісту",
+    brand: "HoldemMaster",
+    blogLabel: "Блог",
+    menuOpen: "Відкрити меню",
+    menuClose: "Закрити меню",
+    koLabel: "한국어",
+    tagline:
+      "Зрозуміла та практична стратегія Техаського Холдему. Гайди про те, яка рука виграє і чому.",
+    contentHeading: "Розділи",
+    languageHeading: "Мова",
+    disclaimer:
+      "Цей сайт має суто інформаційний характер і не пропагує азартні ігри на реальні гроші. Лише для осіб старше 18 років.",
+  },
 };
 
 /** 블로그 탑바 — 홈 피드 버튼 (한국어 기본값: 홈피드) */
@@ -842,6 +876,7 @@ export const NAV_HOME_FEED: Record<SecondaryLocale, string> = {
   bn: "হোম",
   ro: "Acasă",
   fil: "Home",
+  uk: "Головна",
 };
 
 /** 블로그 탑바 — 커뮤니티 CTA 버튼 */
@@ -868,4 +903,5 @@ export const NAV_CTA: Record<SecondaryLocale, string> = {
   bn: "কমিউনিটি →",
   ro: "Comunitate →",
   fil: "Komunidad →",
+  uk: "Спільнота →",
 };

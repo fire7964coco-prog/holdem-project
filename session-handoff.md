@@ -5,7 +5,26 @@
 
 ---
 
-## ▶▶▶ 새 세션 START HERE (2026-07-13 — ★다국어 Rules 필라 22개 언어 / 톱5 진행중 3/5: bn·ro·fil 완료)
+## ▶▶▶ 새 세션 START HERE (2026-07-13 — ★다국어 Rules 필라 23개 언어 / 톱5 진행중 4/5: bn·ro·fil·uk 완료 / 다음=he 마지막·RTL)
+
+> **모드**: 다국어 확장 자율진행. 톱추천 **bn(✅)→ro(✅)→fil(✅)→uk(✅)→he(마지막·RTL)**. 전 과정 Opus(번역 6병렬 + 적대적 QA 2배치). 배선 절차는 아래·ru 블록.
+
+### ✅ uk(우크라이나어) 완료 (파일럿22, 23번째 로케일)
+러시아어와 별개(순수 우크라 철자 і/ї/є/ґ·아포스트로프). 우크라식 숫자(공백 천단위). ти체. §13 0오류. **23개 언어.** GSC: `/uk/blog/` 6 URL.
+
+### ▶▶ 다음 = he(히브리어) — **톱5 마지막·RTL**
+- ★**RTL 처리 필수**: `lib/intl.ts` `RTL_LOCALES`에 "he" 추가(현재 `["ar","fa"]` → `["ar","fa","he"]`). globals.css `[dir=rtl]`(ar/fa) 재활용. 빌드 후 `/he/blog/*` RTL 렌더 육안확인 권장.
+- 웹리서치 → `docs/translation-terms-he.md`: 히브리어 포커 용어(음차 우세 예상)·숫자 라틴(히브리 숫자 안 씀)·문체. 이스라엘 포커 씬.
+- 배선(7맵+RTL_LOCALES+posts-he/index.ts+intl-posts.ts+translate route) → Opus 6병렬(허용 슬러그=Rules 6개뿐) → 검사(FAQ 마커·RTL·라틴숫자) → QA 2배치 → 교정 → 커밋.
+- **he masterUpdated**: texas 2026-07-12·game-order 2026-07-02·betting/blind 2026-07-11·all-in/showdown 2026-07-12.
+- **★he 완료 후 = 24개 언어 → 요약 보고서**(사용자 지시, 톱5 완료).
+
+### 📌 Rules 필라 = 23개 언어
+en(마스터) + ja·es·pt·de·zh·ar·id·ms·vi·hi·tr + fr·ru·it·pl·th·fa·sw·bn·ro·fil·**uk**.
+
+---
+
+## ▶▶▶ (이전) START HERE (2026-07-13 — ★다국어 Rules 필라 22개 언어 / 톱5 진행중 3/5: bn·ro·fil 완료)
 
 > **모드**: 다국어 확장 자율진행. 톱추천 **bn(✅)→ro(✅)→fil(✅)→uk→he** 순차. 전 과정 Opus(번역 6병렬 + 적대적 QA 2배치). **he는 RTL**(ar/fa 인프라). 배선 절차는 아래·ru 블록.
 
