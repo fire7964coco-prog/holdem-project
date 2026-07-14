@@ -105,7 +105,7 @@ Aquí es donde la cosa se complica — y donde se pierde la mayoría de los prin
 | Bote principal | 100 × 4 = **400** | A, B, C, D |
 | Side pot 1 | 100 × 3 = **300** | B, C, D (A está capado) |
 | Side pot 2 | 300 × 2 = **600** | C, D (A y B capados) |
-| **Total** | **1.300** | — |
+| **Total** | **1,300** | — |
 
 </div>
 

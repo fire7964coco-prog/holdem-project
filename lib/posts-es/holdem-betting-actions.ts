@@ -133,7 +133,7 @@ Dos reglas del póker en vivo que vienen con la subida:
 1. **Anuncia "subo" antes de mover las fichas.** ¿Dices "pago" y luego empujas más fichas? Ese extra es un ==string bet== y en la mayoría de las salas el crupier lo dictaminará como un call.
 2. **Un solo movimiento.** Si no anuncias, tus fichas deben entrar en un único movimiento hacia delante.
 
-*Cuánto* deberías subir (aperturas de 2,5x, 3-bets de 3x, tamaños según la textura de la mesa) es estrategia, no reglas — eso vive en el [pilar de estrategia de Texas Hold'em](/es/blog/holdem-strategy).
+*Cuánto* deberías subir (aperturas de 2.5x, 3-bets de 3x, tamaños según la textura de la mesa) es estrategia, no reglas — eso vive en el [pilar de estrategia de Texas Hold'em](/es/blog/holdem-strategy).
 
 ---
 

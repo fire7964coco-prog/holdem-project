@@ -151,7 +151,7 @@ Para principiantes, mantén los números simples. No necesitas cinco colores de 
 |:---|:---|:---:|
 | Partida muy casual para aprender | 100 fichas | 1 / 2 |
 | Sensación de cash game estándar en casa | 200 fichas | 1 / 2 o 2 / 4 |
-| Noche larga estilo torneo | 1.000 a 2.000 fichas | 10 / 20 |
+| Noche larga estilo torneo | 1,000 a 2,000 fichas | 10 / 20 |
 
 Para una primera partida en casa, este reparto funciona bien:
 
@@ -180,7 +180,7 @@ Si juegas un pequeño cash game en casa, elige un buy-in que todos puedan permit
 
 | Nivel de ciegas | Buy-in para principiantes | Notas |
 |:---|:---:|:---|
-| $0,01 / $0,02 | $2 a $5 | Lo mejor para aprender con algo en juego |
+| $0.01 / $0.02 | $2 a $5 | Lo mejor para aprender con algo en juego |
 | $0.05 / $0.10 | $10 a $20 | Sigue siendo poco, pero las decisiones ya pesan |
 | $0.10 / $0.25 | $25 a $50 | Mejor cuando los jugadores ya dominan las reglas |
 
@@ -339,16 +339,16 @@ Jerarquía básica de manos, de la más fuerte a la más débil (con la frecuenc
 
 | Puesto | Mano | Frecuencia aproximada |
 |-----:|------|-----------------------|
-| 1 | Escalera real | 0,003% — puedes pasar años sin ver una |
-| 2 | Escalera de color | 0,03% — extremadamente rara |
-| 3 | Póker | 0,17% — rara; apuéstala fuerte |
-| 4 | Full | 2,6% — fuerte y lo bastante común como para contar con él |
-| 5 | Color | 3,0% — ganador sólido en la mayoría de mesas |
-| 6 | Escalera | 4,6% — vulnerable a colores y fulls |
-| 7 | Trío | 4,8% — buena mano, pero la mesa importa |
-| 8 | Doble pareja | 23,5% — la mano "fuerte" más común |
-| 9 | Pareja | 43,8% — la mano más frecuente en el showdown |
-| 10 | Carta alta | 17,4% — la mano más débil en el showdown; gana sobre todo con faroles |
+| 1 | Escalera real | 0.003% — puedes pasar años sin ver una |
+| 2 | Escalera de color | 0.03% — extremadamente rara |
+| 3 | Póker | 0.17% — rara; apuéstala fuerte |
+| 4 | Full | 2.6% — fuerte y lo bastante común como para contar con él |
+| 5 | Color | 3.0% — ganador sólido en la mayoría de mesas |
+| 6 | Escalera | 4.6% — vulnerable a colores y fulls |
+| 7 | Trío | 4.8% — buena mano, pero la mesa importa |
+| 8 | Doble pareja | 23.5% — la mano "fuerte" más común |
+| 9 | Pareja | 43.8% — la mano más frecuente en el showdown |
+| 10 | Carta alta | 17.4% — la mano más débil en el showdown; gana sobre todo con faroles |
 
 Si dos jugadores tienen el mismo tipo de mano, se comparan las cartas más altas relevantes — son las [reglas del kicker y los desempates](/es/blog/holdem-tiebreak-rules). Si las mejores cinco cartas son exactamente iguales, el bote se [divide](/es/blog/holdem-split-pot-rules).
 
@@ -399,7 +399,7 @@ Para una partida casera de principiantes, da a cada jugador unas 200 fichas de v
 
 ### ¿Con cuánto dinero se empieza en el Texas Hold'em?
 
-Para aprender, empieza con fichas sin valor. Para pequeñas partidas caseras con dinero real, usa un buy-in que todos puedan perder sin problema, como $2 a $5 con ciegas de $0,01/$0,02.
+Para aprender, empieza con fichas sin valor. Para pequeñas partidas caseras con dinero real, usa un buy-in que todos puedan perder sin problema, como $2 a $5 con ciegas de $0.01/$0.02.
 
 ### ¿Existe una escalera baja en el Texas Hold'em?
 
@@ -407,7 +407,7 @@ Sí. A-2-3-4-5 es una escalera válida y suele llamarse la rueda ("the wheel"). 
 
 ### ¿Cuántas manos iniciales posibles hay en el Texas Hold'em?
 
-Hay 1.326 combinaciones exactas de dos cartas, pero los jugadores suelen agruparlas en 169 tipos de manos iniciales, como AA, AK del mismo palo (suited) o 76 de palos distintos (offsuit).
+Hay 1,326 combinaciones exactas de dos cartas, pero los jugadores suelen agruparlas en 169 tipos de manos iniciales, como AA, AK del mismo palo (suited) o 76 de palos distintos (offsuit).
 
 ### ¿Cuál es la versión más simple de las reglas del Texas Hold'em?
 

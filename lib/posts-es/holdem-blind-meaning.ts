@@ -99,10 +99,10 @@ Los niveles se escriben **SB/BB**. Una partida "$1/$2" significa ciega pequeña 
 
 | Nivel | Ciega pequeña | Ciega grande | Buy-in habitual |
 |:---|:---:|:---:|:---:|
-| $0,5/$1 | $0,50 | $1 | $60–$100 |
+| $0.5/$1 | $0.50 | $1 | $60–$100 |
 | $1/$2 | $1 | $2 | $100–$300 |
 | $2/$5 | $2 | $5 | $200–$500 |
-| $5/$10 | $5 | $10 | $500–$2.000 |
+| $5/$10 | $5 | $10 | $500–$2,000 |
 | 25/50 (torneo) | 25 fichas | 50 fichas | Nivel de ciegas 1 |
 | 100/200 (torneo) | 100 fichas | 200 fichas | Nivel intermedio |
 
@@ -140,7 +140,7 @@ Al sentarte en una mesa de cash en vivo normalmente no juegas gratis: o **pones 
 ![Pila de fichas cayendo hacia el bote en una mesa de póker — un robo de ciegas desde el botón](/images/holdem-blind-steal.webp)
 
 - **Ciega pequeña: sin complicarte.** Penúltima preflop pero **primera en hablar** tras el flop; el enfoque limpio para empezar es **subir o tirar**, no pagar. Entrar de limp y que te ataquen fuera de posición es una fuga constante de fichas.
-- **Ciega grande: defiende con las odds.** Ya has puesto una apuesta completa, así que puedes pagar subidas de forma rentable con más manos que desde cualquier otro asiento. Ante un open a 2,5 BB (con la ciega pequeña retirándose), pagas 1,5 BB por un bote de 4 BB — unas 2,7 a 1, es decir, con aproximadamente un 27% de equity el call ya sale a cuenta. Esa cuenta son las [pot odds](/es/blog/holdem-pot-odds), y por eso existe la "defensa de la ciega grande".
+- **Ciega grande: defiende con las odds.** Ya has puesto una apuesta completa, así que puedes pagar subidas de forma rentable con más manos que desde cualquier otro asiento. Ante un open a 2.5 BB (con la ciega pequeña retirándose), pagas 1.5 BB por un bote de 4 BB — unas 2.7 a 1, es decir, con aproximadamente un 27% de equity el call ya sale a cuenta. Esa cuenta son las [pot odds](/es/blog/holdem-pot-odds), y por eso existe la "defensa de la ciega grande".
 - **Posición tardía: el robo.** Cuando todos se retiran hasta el botón o el cutoff, una subida que solo busca llevarse las dos ciegas es un **robo de ciegas** — y contraatacar con una resubida es un **resteal**. Los tamaños de robo, los rangos por asiento y cuánto defender son temas de estrategia, tratados a fondo en [la guía de jugar en posición vs fuera de posición](/es/blog/holdem-position-play).
 
 ---

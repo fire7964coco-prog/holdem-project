@@ -51,8 +51,8 @@ Las **ciegas** son apuestas obligatorias que se ponen antes de repartir. Sin ell
 
 | Ciega | Posición | Ejemplo |
 |:---|:---|:---:|
-| Ciega pequeña (SB) | Primer asiento a la izquierda del botón | 1.000 |
-| Ciega grande (BB) | Segundo asiento a la izquierda del botón | 2.000 |
+| Ciega pequeña (SB) | Primer asiento a la izquierda del botón | 1,000 |
+| Ciega grande (BB) | Segundo asiento a la izquierda del botón | 2,000 |
 
 </div>
 
@@ -196,39 +196,39 @@ El truco para recordarlo: ==**antes del flop, mira a la izquierda de la ciega gr
 
 Leer sobre calles es abstracto. Vamos a jugar una sola mano heads-up de la primera carta a la última, con cartas y cantidades de fichas reales.
 
-**Situación:** Heads-up (mano a mano). Ciegas: SB 1.000 / BB 2.000.
+**Situación:** Heads-up (mano a mano). Ciegas: SB 1,000 / BB 2,000.
 
 - **Jugador A (tú):** A♠ K♥ (as-rey de palos distintos)
 - **Jugador B (rival):** 9♦ 9♣ (pareja de nueves de mano)
 
 ### Preflop
 
-A sube a **6.000** con su Big Slick. B paga con los nueves.
-**Bote: 12.000**
+A sube a **6,000** con su Big Slick. B paga con los nueves.
+**Bote: 12,000**
 
 ### Flop: K♦ 9♠ 3♥
 
 - **A:** pareja máxima con el mejor kicker (pareja de reyes). Pinta fuerte.
 - **B:** tres nueves — un **set**. Un monstruo desde ya.
 
-B pasa, A apuesta **8.000**, B paga.
-**Bote: 28.000**
+B pasa, A apuesta **8,000**, B paga.
+**Bote: 28,000**
 
 ### Turn: 2♣
 
 - **A:** sin cambios, sigue con la pareja máxima.
 - **B:** sigue con el set, no necesita mejorar.
 
-B pasa, A apuesta **15.000** (medio bote aproximadamente), B paga.
-**Bote: 58.000**
+B pasa, A apuesta **15,000** (medio bote aproximadamente), B paga.
+**Bote: 58,000**
 
 ### River: A♥
 
-- **A:** el as se empareja — ahora tiene **doble pareja, ases y reyes**. Encantado de la vida, apuesta **30.000**.
-- **B:** el set sigue aplastando a la doble pareja. Sube a **70.000**.
+- **A:** el as se empareja — ahora tiene **doble pareja, ases y reyes**. Encantado de la vida, apuesta **30,000**.
+- **B:** el set sigue aplastando a la doble pareja. Sube a **70,000**.
 - **A:** convencido de que su doble pareja es buena, paga.
 
-**Bote: 198.000**
+**Bote: 198,000**
 
 ### Showdown
 
@@ -306,7 +306,7 @@ Cuanto más cerca estés del botón, mejor — hablar el último te deja ver lo 
 
 ### 3. Perseguir proyectos a ciegas
 
-Un proyecto de color o de escalera no significa pagar en automático. Tienes que pesar las **pot odds** — el precio de pagar frente al tamaño del bote. Si el bote es de 100.000 y tienes que pagar 50.000, tu proyecto necesita completarse al menos un 33% de las veces para que compense.
+Un proyecto de color o de escalera no significa pagar en automático. Tienes que pesar las **pot odds** — el precio de pagar frente al tamaño del bote. Si el bote es de 100,000 y tienes que pagar 50,000, tu proyecto necesita completarse al menos un 33% de las veces para que compense.
 
 ### 4. Tirarte un farol en el river con una mano floja de la nada
 
@@ -356,7 +356,7 @@ A. No. Formas la mejor mano de cinco cartas con cualquier combinación de tus do
 
 **Q. ¿Qué son las pot odds?**
 
-A. Las pot odds son la relación entre el tamaño actual del bote y lo que te cuesta pagar. Si el bote es de 100.000 y un rival apuesta 20.000, arriesgas 20.000 para ganar un bote de 120.000 (6:1). Si tu probabilidad de ganar es mejor que esas odds, pagar es rentable.
+A. Las pot odds son la relación entre el tamaño actual del bote y lo que te cuesta pagar. Si el bote es de 100,000 y un rival apuesta 20,000, arriesgas 20,000 para ganar un bote de 120,000 (6:1). Si tu probabilidad de ganar es mejor que esas odds, pagar es rentable.
 
 **Q. ¿Cuándo debería ir all-in?**
 
