@@ -4,11 +4,11 @@ export const POST: Post = {
   slug: "holdem-betting-actions",
   title: "Poker-Aktionen im Texas Hold'em: Check, Call, Raise, Fold",
   seoTitle: "Checken, callen oder folden? — Poker-Aktionen & Raise-Regeln",
-  desc: "Du bist dran und dein Kopf ist leer? Was Check, Call, Raise und Fold beim Poker bedeuten, die Min-Raise-Regel und wie oft du erhöhen darfst — klar erklärt.",
+  desc: "Du bist dran und dein Kopf ist leer? Was Check, Call, Raise und Fold beim Poker bedeuten, die Min-Raise-Regel und wie oft du re-raisen darfst.",
   tldr: "Texas Hold'em kennt 5 Setz-Aktionen: Check (kostenlos schieben), Bet (die Runde eröffnen), Call (einen Einsatz mitgehen), Raise (erhöhen — der Mindest-Raise entspricht dem vorherigen Bet oder Raise) und Fold. Checken darfst du nur, solange auf der Street noch niemand gesetzt hat.",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-07-12",
+  updated: "2026-07-14",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 Min.",
@@ -105,7 +105,7 @@ Folden heißt, dass du deine Karten aufgibst und aus der Hand aussteigst. Du zah
 
 Ja — du darfst jederzeit folden, wenn du an der Reihe bist, sogar bevor du irgendetwas gesetzt hast, und sogar dann, wenn Checken kostenlos wäre. Aber Achtung, genau da lauert die Falle: **Zu folden, wenn du gratis checken könntest, heißt eine Hand ohne Grund wegzuwerfen.** Wenn niemand gesetzt hat, check einfach.
 
-Eine Regel der Live-Etikette: Folde nicht ==außer der Reihe==. Warte, bis die Action bei dir ankommt — wer zu früh foldet, gibt den noch überlegenden Spielern Informationen, und die meisten Cardrooms verwarnen oder bestrafen das. Zu wissen, *wann* der Fold der richtige Spielzug ist, ist eine eigene Fähigkeit — das ist ein Thema für sich.
+Eine Regel der Live-Etikette: Folde nicht ==außer der Reihe==. Warte, bis die Action bei dir ankommt — wer zu früh foldet, gibt den noch überlegenden Spielern Informationen, und die meisten Cardrooms verwarnen oder bestrafen das. Zu wissen, *wann* der Fold der richtige Spielzug ist, ist eine eigene Fähigkeit für sich.
 
 ---
 
@@ -164,9 +164,9 @@ Die komplette Mechanik — Side-Pot-Rechnung, wer zuerst zeigt, Table Stakes —
 
 Dieser Guide erklärt, was jede Aktion *ist* und wann sie *erlaubt* ist. Welche du wählst — wann du setzt, wann ein Call profitabel ist, wann eine gute Hand gefoldet werden muss — ist ein anderer Skill-Tree:
 
+- Das Gerüst für jede Entscheidung: die 5 Entscheidungen der Setzstrategie
 - Zuerst die rohe Stärke deiner Hand einschätzen: [Pokerhände-Reihenfolge](/de/blog/holdem-hand-rankings)
-- Das Gerüst für jede Entscheidung: Setzstrategie und Sizing, Street für Street
-- Warum dein Sitzplatz alles verändert: Positionen am Pokertisch
+- Warum dein Sitzplatz alles verändert: Positionen am Pokertisch erklärt
 
 Eine Faustregel, die Anfängern bis dahin echtes Geld spart: ==Wenn eine Hand nicht stark genug für einen Raise ist, schlägt Folden meistens Callen.==
 
@@ -234,7 +234,7 @@ A. Limpen heißt, Preflop nur den Big Blind zu callen, statt zu raisen, um in de
 
 ---
 
-## Verwandte Artikel
+## Ähnliche Beiträge
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/de/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">

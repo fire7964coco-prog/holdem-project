@@ -3,23 +3,23 @@ import type { Post } from "../posts";
 export const POST: Post = {
   slug: "holdem-blind-meaning",
   title: "Was sind Blinds beim Poker? Small Blind vs. Big Blind einfach erklärt",
-  seoTitle: "Chips zahlen vor den Karten? — Was sind Blinds beim Poker",
-  desc: "Zwei Spieler zahlen, bevor eine Karte kommt — warum? Small Blind und Big Blind einfach erklärt: wer setzt sie, SB vs. BB, Big Blind Ante, Heads-up-Regeln.",
+  seoTitle: "Was bedeutet Blind beim Poker? — Small Blind vs. Big Blind",
+  desc: "Zwei Spieler zahlen, bevor eine Karte kommt — warum? Small Blind und Big Blind erklärt: wer setzt sie, SB vs. BB, Big Blind Ante und die Heads-up-Regeln.",
   tldr: "Blinds sind Zwangseinsätze, die vor dem Austeilen der Karten gesetzt werden. Der Small Blind sitzt direkt links vom Dealer-Button, der Big Blind links daneben; der Big Blind — meist das Doppelte des Small Blinds — ist die Setzeinheit des Tischs.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-07-12",
+  updated: "2026-07-14",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 Min.",
   emoji: "💰",
   image: "/images/holdem-blind-meaning-hero.webp",
   imageAlt: "Small-Blind- und Big-Blind-Chipstapel mit Beschriftung neben einem goldenen Dealer-Button auf einem Pokertisch",
-  tags: ["was sind blinds poker", "big blind bedeutung", "small blind bedeutung", "small blind vs big blind", "big blind ante", "poker blinds regeln", "texas holdem blinds"],
+  tags: ["was bedeutet blind poker", "big blind bedeutung", "small blind bedeutung", "small blind vs big blind", "big blind ante", "poker blinds regeln", "texas holdem blinds"],
   content: `
 Meine allererste Live-Pokerhand: Der Dealer tippte auf den Filz vor mir, bevor ich auch nur eine Karte gesehen hatte — „Small Blind, bitte.“ Ich erstarrte. Zahlen? *Wofür denn?* Zwölf Jahre und tausende Stunden später sehe ich fast in jeder Session jemanden Neues in genau diesem Moment erstarren.
 
-Blinds sind ==der Motor, der Poker am Laufen hält== — das erste Stück der [Texas-Hold'em-Regeln](/de/blog/texas-holdem-rules-for-beginners), das dich tatsächlich Chips kostet. Sobald du sie verstanden hast, ergibt das ganze Zahlen-Vokabular des Spiels („2-BB-Raise“, „20-BB-Stack“) plötzlich Sinn. Hier steht alles, was du brauchst — in einem kurzen Durchgang.
+Blinds sind ==der Motor, der Poker am Laufen hält== — das erste Stück der [Texas-Hold'em-Regeln](/de/blog/texas-holdem-rules-for-beginners), das dich tatsächlich Chips kostet. Sobald du sie verstanden hast, ergibt das ganze Zahlen-Vokabular des Spiels („2-BB-Raise“, „20-BB-Stack“) plötzlich Sinn. Hier steht alles in einem kurzen Durchgang.
 
 ---
 
@@ -87,7 +87,7 @@ Beide Blinds werden **vor dem Austeilen** gesetzt, und der Dealer-Button wandert
 | Reihenfolge preflop | Handelt als Vorletzter | Handelt als **Letzter** (die „Option“) |
 | Reihenfolge postflop | Handelt als **Erster** (ein Nachteil) | Handelt als Zweiter |
 
-> **Hinweis:** Vor dem Flop beginnt die Action beim Spieler links vom Big Blind, und der BB handelt zuletzt — er sieht die Entscheidungen aller anderen zuerst. Ab dem Flop wird die Reihenfolge zurückgesetzt, und die Blinds sind früh dran. Die Abfolge Street für Street findest du im Guide zum [Spielablauf im Texas Hold'em](/de/blog/holdem-game-order); die Namen aller Sitze rund um den Button sind ein eigenes Thema (Positionen am Pokertisch).
+> **Hinweis:** Vor dem Flop beginnt die Action beim Spieler links vom Big Blind, und der BB handelt zuletzt — er sieht die Entscheidungen aller anderen zuerst. Ab dem Flop wird die Reihenfolge zurückgesetzt, und die Blinds sind früh dran. Die Abfolge Street für Street findest du im Guide zum [Spielablauf im Texas Hold'em](/de/blog/holdem-game-order); die Namen aller Sitze rund um den Button sind ein eigenes Thema — die Positionen am Pokertisch.
 
 ---
 
@@ -140,14 +140,13 @@ Setzt du dich an ein Live-Cash-Game, spielst du in der Regel nicht gratis mit: E
 ![Chipstapel fällt Richtung Pot auf einem Pokertisch — ein Blind-Steal-Push vom Button](/images/holdem-blind-steal.webp)
 
 - **Small Blind: Halt es simpel.** Preflop Vorletzter, aber nach dem Flop **als Erster dran** — der saubere Anfängeransatz lautet **raisen oder folden**, nicht callen. Zu limpen und dann out of position angespielt zu werden, ist ein stetiges Chip-Leck.
-- **Big Blind: Verteidige mit den Odds.** Du hast bereits einen vollen Einsatz gebracht, deshalb kannst du Raises profitabel weiter callen als jeder andere Sitz. Gegen einen Open-Raise auf 2,5 BB (der Small Blind foldet) callst du 1,5 BB in einen 4-BB-Pot — etwa 2,7 zu 1. Heißt: Rund 27 % Equity reichen, damit der Call break-even ist. Diese Mathematik nennt sich Pot Odds — und sie ist der Grund, warum es „Big Blind Defense“ überhaupt gibt.
+- **Big Blind: Verteidige mit den Odds.** Du hast bereits einen vollen Einsatz gebracht, deshalb kannst du Raises profitabel weiter callen als jeder andere Sitz. Gegen einen Open-Raise auf 2,5 BB (der Small Blind foldet) callst du 1,5 BB in einen 4-BB-Pot — etwa 2,7:1. Heißt: Rund 27% Equity reichen, damit der Call break-even ist. Diese Mathematik nennt sich Pot Odds — und sie ist der Grund, warum es „Big Blind Defense“ überhaupt gibt.
 - **Late Position: der Steal.** Folden alle bis zum Button oder Cutoff, ist ein Raise, der nur die beiden Blinds abgreifen soll, ein **Blind Steal** — und der Re-Raise dagegen ein **Re-Steal**. Steal-Größen, Ranges je Sitz und wie weit du verteidigen solltest, sind Strategie-Themen rund um das Spiel in und out of Position.
 
 ---
 
 :::readnext[Weiterlesen]
 /de/blog/texas-holdem-rules-for-beginners | Texas Hold'em Regeln für Anfänger | /images/rules-texas-holdem.webp
-/de/blog/holdem-hand-rankings | Pokerhände-Reihenfolge im Texas Hold'em | /images/holdem-hand-rankings-hero.webp
 :::
 
 ## FAQ
@@ -192,11 +191,11 @@ A. Nicht ganz — „die Blinds“ meint Small Blind und Big Blind zusammen, wä
 2. Der **Big Blind ist die Einheit des Tischs** — Raises, Stacks und Turnierdruck werden alle in BB gemessen.
 3. Spiel die Blinds mit Bedacht: **Raise-or-Fold im Small Blind**, **Big Blind mit Pot Odds verteidigen** — und lerne Steals aus später Position, wenn alle zu dir folden.
 
-Ganz neu im Spiel? Der [Anfänger-Guide zu den Texas-Hold'em-Regeln](/de/blog/texas-holdem-rules-for-beginners "thumb:/images/rules-texas-holdem.webp") deckt die Basics ab, und der [Spielablauf einer Hand](/de/blog/holdem-game-order) zeigt genau, wann welcher Blind handelt — wie dein Sitz (nicht nur die Blinds) jede Entscheidung prägt, ist das Thema Positionen am Pokertisch.
+Ganz neu im Spiel? Der [Anfänger-Guide zu den Texas-Hold'em-Regeln](/de/blog/texas-holdem-rules-for-beginners "thumb:/images/rules-texas-holdem.webp") deckt die Basics ab, und der [Spielablauf einer Hand](/de/blog/holdem-game-order) zeigt genau, wann welcher Blind handelt — wie dein Sitz (nicht nur die Blinds) jede Entscheidung prägt, sind die Positionen am Pokertisch ein eigenes Thema.
 
 ---
 
-## Verwandte Artikel
+## Ähnliche Beiträge
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/de/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">

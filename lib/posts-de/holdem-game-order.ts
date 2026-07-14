@@ -2,13 +2,13 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "holdem-game-order",
-  title: "Texas Hold'em Spielablauf: Die Reihenfolge einer Hand — von den Blinds bis zum Showdown",
-  seoTitle: "Wann bist du dran? — Texas Hold'em Ablauf & Reihenfolge",
-  desc: "Nie sicher, wann du beim Hold'em dran bist? Der komplette Ablauf einer Hand — Preflop, Flop, Turn, River, Showdown — Schritt für Schritt mit Beispielhand.",
+  title: "Texas Hold'em spielen: Der Ablauf einer Hand — von den Blinds bis zum Showdown",
+  seoTitle: "Wann bist du dran? — Texas Hold'em Ablauf erklärt",
+  desc: "Beim Hold'em nie sicher, wer dran ist? Der komplette Ablauf — Preflop, Flop, Turn, River, Showdown — mit einer echten Hand Schritt für Schritt durchgespielt.",
   tldr: "Eine Texas-Hold'em-Hand läuft so ab: Blinds setzen → zwei Hole Cards erhalten → Preflop → Flop (3 Karten) → Turn (1 Karte) → River (1 Karte) → Showdown — mit insgesamt vier Setzrunden.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-07-12",
+  updated: "2026-07-14",
   masterUpdated: "2026-07-02",
   keepImagesInBody: true,
   readTime: "16 Min.",
@@ -62,7 +62,7 @@ Die Blinds sind nicht nur eine Eintrittsgebühr — ==sie sind der Ausgangspunkt
 
 ## Phase 1 — Preflop: Die erste Entscheidung gibt den Ton an
 
-Sobald die Blinds stehen, erhält jeder Spieler zwei verdeckte **Hole Cards**. Nur du kannst sie sehen — und die **Preflop**-Setzrunde beginnt.
+Sobald die Blinds stehen, gibt der Dealer jedem Spieler zwei verdeckte **Hole Cards**. Nur du kannst sie sehen — und die **Preflop**-Setzrunde beginnt.
 
 Die Action startet links vom Big Blind und läuft im Uhrzeigersinn. Wenn du dran bist, wählst du eine dieser Optionen:
 
@@ -71,7 +71,7 @@ Die Action startet links vom Big Blind und läuft im Uhrzeigersinn. Wenn du dran
 - **Raise** — du erhöhst über den Big Blind und setzt die Gegner unter Druck.
 - **3-Bet** — ein Raise über den Raise eines anderen. Ein klares Signal für eine starke Hand.
 
-==r:Die meisten Anfänger spielen fast jede Hand, „nur um mal den Flop zu sehen“. Das ist die teuerste Angewohnheit im ganzen Poker.== ==g:**Gute Spieler folden preflop die meisten ihrer Hände und spielen nur etwa 15–25 % davon.**==
+==r:Die meisten Anfänger spielen fast jede Hand, „nur um mal den Flop zu sehen“. Das ist die teuerste Angewohnheit im ganzen Poker.== ==g:**Gute Spieler folden preflop die meisten ihrer Hände und spielen nur etwa 15–25% davon.**==
 
 ### Solide Starthände für Anfänger
 
@@ -135,10 +135,10 @@ Sind nach der Setzrunde am River noch zwei oder mehr Spieler dabei, geht die Han
 Die Showdown-Regeln:
 
 - Jeder Spieler bildet seine **beste Fünf-Karten-Hand** aus seinen zwei Hole Cards und den fünf Gemeinschaftskarten.
-- Du musst nicht beide Hole Cards benutzen — du kannst auch nur eine spielen oder sogar nur das Board (keine eigene Karte), wenn das deine besten fünf sind.
-- Der Spieler mit der letzten aggressiven Aktion (Bet oder Raise) zeigt zuerst; wurde am River nur gecheckt, zeigt zuerst der **erste aktive Spieler** links vom Button.
+- Du musst nicht beide Hole Cards benutzen — du kannst auch nur eine spielen oder sogar nur das Board (null Karten), wenn das deine besten fünf sind.
+- Der Spieler mit der letzten aggressiven Aktion (Bet oder Raise) zeigt zuerst; wurde am River nur durchgecheckt, zeigt zuerst der erste aktive Spieler links vom Button.
 - Ein unterlegener Spieler darf einfach **mucken** (folden, ohne zu zeigen).
-- Bei exakt gleichen Händen wird der Pot **geteilt** („Split Pot“) — zu gleichen Teilen.
+- Bei gleichwertigen Händen wird der Pot **geteilt** („Chop“) — zu gleichen Teilen.
 
 Wer zuerst zeigen muss, wann du mucken darfst und was es mit der Etikette rund ums Slow-Rolling auf sich hat, steht ausführlich in den [Showdown-Regeln](/de/blog/holdem-showdown-rules).
 
@@ -146,7 +146,7 @@ Wer zuerst zeigen muss, wann du mucken darfst und was es mit der Etikette rund u
 
 ## Wer handelt zuerst auf jeder Street?
 
-„Wer ist dran?“ hat vor und nach dem Flop eine unterschiedliche Antwort — und genau dieser Wechsel ist der Motor hinter jeder Positionsstrategie.
+„Wer ist dran?“ hat vor und nach dem Flop eine unterschiedliche Antwort — und genau dieser eine Wechsel ist der Motor hinter jeder Positionsstrategie.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -159,7 +159,7 @@ Wer zuerst zeigen muss, wann du mucken darfst und was es mit der Etikette rund u
 
 </div>
 
-Die Eselsbrücke: ==**Vor dem Flop schaust du links vom Big Blind — nach dem Flop links vom Button.**== Der Button handelt auf jeder Postflop-Street als Letzter, und genau deshalb ist er der profitabelste Platz am Tisch — von UTG bis zum Button entscheidet die Position mit, welche Hände du überhaupt spielen solltest.
+Die Eselsbrücke: ==**Vor dem Flop schaust du links vom Big Blind — nach dem Flop links vom Button.**== Der Button handelt auf jeder Postflop-Street als Letzter, und genau deshalb ist er der profitabelste Platz am Tisch.
 
 ==g:**Heads-up (2 Spieler) ist die Ausnahme:**== Der Button zahlt den *Small* Blind und handelt preflop **zuerst** — auf Flop, Turn und River aber **zuletzt**. Genau diese Reihenfolge gilt auch in der kompletten Beispielhand weiter unten.
 
@@ -299,7 +299,7 @@ Du kannst den Spielablauf auswendig können und trotzdem Chips verbluten, wenn d
 
 ### 1. Fast jede Hand spielen
 
-„Ich schau mir nur mal den Flop an“ ist auf lange Sicht ein Verlustgeschäft. Starke Spieler spielen nur 15–25 % ihrer Hände und folden den Rest ohne Zögern. Wer preflop mit beliebigen zwei Karten callt, zahlt fürs Verlieren.
+„Ich schau mir nur mal den Flop an“ ist auf lange Sicht ein Verlustgeschäft. Starke Spieler spielen nur 15–25% ihrer Hände und folden den Rest ohne Zögern. Wer preflop mit beliebigen zwei Karten callt, zahlt fürs Verlieren.
 
 ### 2. Die Position ignorieren
 
@@ -307,7 +307,7 @@ Je näher du am Button sitzt, desto besser — wer als Letzter handelt, sieht er
 
 ### 3. Draws blind hinterherjagen
 
-Ein Flush- oder Straßen-Draw ist kein automatischer Call. Du musst die **Pot Odds** abwägen — den Preis des Calls gegen die Größe des Pots. Liegen 100.000 im Pot und du musst 50.000 callen, muss dein Draw mindestens rund 33 % der Zeit ankommen, damit sich der Call lohnt.
+Ein Flush- oder Straßen-Draw ist kein automatischer Call. Du musst die **Pot Odds** abwägen — den Preis des Calls gegen die Größe des Pots. Liegen 100.000 im Pot und du musst 50.000 callen, muss dein Draw mindestens rund 33% der Zeit ankommen, damit sich der Call lohnt.
 
 ### 4. Aus dem Nichts den River bluffen
 
@@ -379,7 +379,7 @@ Lern die Abfolge in- und auswendig, übe sie in kostenlosen Spielen — und du w
 
 ---
 
-## Verwandte Artikel
+## Ähnliche Beiträge
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/de/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">

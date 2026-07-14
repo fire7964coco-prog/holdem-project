@@ -3,7 +3,7 @@ import type { Post } from "../posts";
 export const POST: Post = {
   slug: "texas-holdem-rules-for-beginners",
   title: "Texas Hold'em Regeln für Anfänger — Ablauf, Chips, Pokerhände und deine erste Strategie",
-  seoTitle: "Texas Hold'em Regeln für Anfänger — Schritt für Schritt",
+  seoTitle: "Texas Hold'em Regeln für Anfänger — einfach erklärt",
   desc: "Nie gespielt? So funktioniert Texas Hold'em Schritt für Schritt — Blinds, Chip-Verteilung, Pokerhände und ein Spickzettel für deinen ersten Pokerabend.",
   tldr: "Beim Texas Hold'em bekommt jeder Spieler 2 Hole Cards, dazu kommen 5 Gemeinschaftskarten — nach vier Setzrunden gewinnt die beste Fünf-Karten-Hand.",
   category: "rules",
@@ -279,7 +279,7 @@ Gute Starthände für Anfänger:
 | 🟦 **Spielbar — Position entscheidet** | 88, 77, ATs, AJo, KJs, QJs, JTs | Bevorzugt späte Position (CO, BTN) |
 | ⬜ **Standardmäßig folden** | Als Anfänger alles andere | Vor allem aus früher Position |
 
-**Einfache Merkregel:** Starte mit Paaren ab TT aufwärts plus AK und AQ. Das sind grob die besten 5 % aller Hände. Erweitere langsam, wenn du Erfahrung sammelst.
+**Einfache Merkregel:** Starte mit Paaren ab TT aufwärts plus AK und AQ. Das sind grob die besten 5% aller Hände. Erweitere langsam, wenn du Erfahrung sammelst.
 
 </div>
 
@@ -295,7 +295,7 @@ Du musst kein Mathegenie sein. Du musst dir vor jedem Call nur eine Frage stelle
 
 Stell dir vor, im Pot liegen **$100** und dein Gegner setzt **$20**. Um in der Hand zu bleiben, musst du $20 callen. Der Pot würde damit auf $120 wachsen.
 
-Deine Pot Odds sind **$120 zu $20**, also **6 zu 1**. Das heißt: Du musst mindestens **1 von 7 Malen** gewinnen (rund 14 %), damit sich dieser Call lohnt.
+Deine Pot Odds sind **$120 zu $20**, also **6:1**. Das heißt: Du musst mindestens **1 von 7 Malen** gewinnen (rund 14%), damit sich dieser Call lohnt.
 
 ### Die 2-und-4-Regel — Wahrscheinlichkeiten im Kopf
 
@@ -305,8 +305,8 @@ Wenn du eine Draw-Hand hast (z. B. vier Karten zum Flush), zähle deine **Outs**
 
 | Situation | Formel | Beispiel (9 Flush-Outs) |
 |-----------|---------|------------------------|
-| Am **Flop** (2 Karten kommen noch) | Outs × 4 | 9 × 4 = **~36 % Chance** |
-| Am **Turn** (1 Karte kommt noch) | Outs × 2 | 9 × 2 = **~18 % Chance** |
+| Am **Flop** (2 Karten kommen noch) | Outs × 4 | 9 × 4 = **~36% Chance** |
+| Am **Turn** (1 Karte kommt noch) | Outs × 2 | 9 × 2 = **~18% Chance** |
 
 </div>
 
@@ -339,16 +339,16 @@ Die Handreihenfolge von der stärksten zur schwächsten (mit der Häufigkeit, mi
 
 | Rang | Hand | Ungefähre Häufigkeit |
 |-----:|------|-----------------------|
-| 1 | Royal Flush | 0,003 % — kann Jahre auf sich warten lassen |
-| 2 | Straight Flush | 0,03 % — extrem selten |
-| 3 | Vierling | 0,17 % — selten; setz ihn hart |
-| 4 | Full House | 2,6 % — stark und häufig genug, um damit zu rechnen |
-| 5 | Flush | 3,0 % — auf den meisten Boards ein solider Gewinner |
-| 6 | Straße | 4,6 % — anfällig gegen Flushes/Full Houses |
-| 7 | Drilling | 4,8 % — gute Hand, aber das Board zählt |
-| 8 | Zwei Paare | 23,5 % — die häufigste „starke“ Hand |
-| 9 | Paar | 43,8 % — die häufigste Hand beim Showdown |
-| 10 | High Card | 17,4 % — schwächste Hand beim Showdown; gewinnt vor allem per Bluff |
+| 1 | Royal Flush | 0,003% — kann Jahre auf sich warten lassen |
+| 2 | Straight Flush | 0,03% — extrem selten |
+| 3 | Vierling | 0,17% — selten; setz ihn hart |
+| 4 | Full House | 2,6% — stark und häufig genug, um damit zu rechnen |
+| 5 | Flush | 3,0% — auf den meisten Boards ein solider Gewinner |
+| 6 | Straße | 4,6% — anfällig gegen Flushes/Full Houses |
+| 7 | Drilling | 4,8% — gute Hand, aber das Board zählt |
+| 8 | Zwei Paare | 23,5% — die häufigste „starke“ Hand |
+| 9 | Paar | 43,8% — die häufigste Hand beim Showdown |
+| 10 | High Card | 17,4% — schwächste Hand beim Showdown; gewinnt vor allem per Bluff |
 
 Haben zwei Spieler denselben Handtyp, vergleicht ihr die höchsten relevanten Karten — das regeln Kicker und Tiebreaker. Sind die besten fünf Karten exakt gleich, wird der Pot geteilt (Split Pot).
 

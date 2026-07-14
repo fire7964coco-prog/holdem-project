@@ -3,9 +3,9 @@ import type { Post } from "../posts";
 export const POST: Post = {
   slug: "holdem-showdown-rules",
   title: "Showdown-Regeln beim Texas Hold'em: Wer zeigt zuerst, Mucken und Slow Rolling",
-  seoTitle: "Wer zeigt zuerst die Karten? — Showdown-Regeln beim Poker",
-  desc: "Wer muss beim Showdown zuerst die Karten zeigen? Darf man ungezeigt mucken? Alle Regeln: letzter Aggressor, „die Karten sprechen“, Slow Roll und All-in.",
-  tldr: "Beim Showdown zeigt zuerst, wer als Letzter gesetzt oder erhöht hat. Wurde der River durchgecheckt, beginnt der erste aktive Spieler links vom Button. Verlierst du, darfst du ungezeigt mucken — aber die Gegner können verlangen, eine gecallte Hand zu sehen.",
+  seoTitle: "Wer dreht zuerst um? Showdown-Regeln & Mucken beim Hold'em",
+  desc: "Wer zeigt beim Showdown zuerst die Karten? Darf man ungezeigt mucken? Showdown-Regeln beim Hold'em — letzter Aggressor, Cards Speak, Slow Roll und All-in.",
+  tldr: "Beim Showdown zeigt zuerst, wer als Letzter gesetzt oder erhöht hat. Wurde der River durchgecheckt, zeigt der erste aktive Spieler links vom Button zuerst. Verlierst du, darfst du ungezeigt mucken — aber die Gegner können verlangen, eine gecallte Hand zu sehen.",
   category: "rules",
   date: "2026-06-15",
   updated: "2026-07-12",
@@ -103,7 +103,7 @@ Wie Side Pots entstehen und ausbezahlt werden, wenn Spieler All-in sind, liest d
 
 Verliest sich ein Spieler und sagt „Ich habe ein Paar“, obwohl er in Wirklichkeit eine Straße hält — dann gewinnt die Straße. Der Dealer liest die Karten und vergibt den Pot an die beste gezeigte Hand.
 
-Das gilt in beide Richtungen. Wenn du glaubst, verloren zu haben, und ungezeigt muckst, obwohl deine Hand gewonnen hätte — ==r:ist der Pot weg==. Deine Hand ist tot, sobald sie den Muck berührt. Lass den Dealer immer deine Hand lesen, bevor du muckst, wenn du nicht zu 100 % sicher bist, dass du verloren hast.
+Das gilt in beide Richtungen. Wenn du glaubst, verloren zu haben, und ungezeigt muckst, obwohl deine Hand gewonnen hätte — ==r:ist der Pot weg==. Deine Hand ist tot, sobald sie den Muck berührt. Lass den Dealer immer deine Hand lesen, bevor du muckst, wenn du nicht zu 100% sicher bist, dass du verloren hast.
 
 Echte Situation: Du hältst J♥ 10♥ auf einem Board mit Q♥ 9♥ 8♥ 2♣ 5♦. Du hast einen Straight Flush bis zur Dame (Q-J-10-9-8 in Herz). Dein Gegner zeigt K♣ Q♦ (ein Paar Damen). Du gewinnst haushoch. Mucke nicht, nur weil du seine Dame siehst.
 
@@ -190,7 +190,7 @@ A. Nein. Folden alle anderen vor dem Showdown, gewinnst du den Pot sofort und mu
 
 ---
 
-## Verwandte Artikel
+## Ähnliche Beiträge
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/de/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">

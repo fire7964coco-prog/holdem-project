@@ -3,9 +3,9 @@ import type { Post } from "../posts";
 export const POST: Post = {
   slug: "holdem-all-in-rules",
   title: "Texas Hold'em All-in-Regeln: Side Pots, Re-Raises & Showdown",
-  seoTitle: "Alles reingeschoben? — All-in-Regeln & Side Pots",
-  desc: "Alle Chips in der Mitte — und was kannst du jetzt gewinnen? Texas Hold'em All-in-Regeln: Table Stakes, Side Pots, Re-Raise-Recht und Showdown-Reihenfolge.",
-  tldr: "All-in gehen heißt, jeden Chip zu setzen, den du vor dir hast. Du kannst von jedem Gegner nur so viel gewinnen, wie du selbst eingezahlt hast (den Main Pot). Alles, was größere Stacks darüber hinaus setzen, bildet einen Side Pot, den du nicht gewinnen kannst. Ein All-in unterhalb einer vollen Erhöhung öffnet die Setzrunde für Spieler, die bereits gehandelt haben, NICHT neu.",
+  seoTitle: "All-in gegangen und verwirrt? — All-in-Regeln & Side Pots",
+  desc: "Alle Chips reingeschoben und unsicher, was du gewinnen kannst? Texas Hold'em All-in-Regeln: Table Stakes, Side Pots, Re-Raise-Recht und Showdown-Reihenfolge.",
+  tldr: "All-in gehen heißt, jeden Chip zu setzen, den du hast. Du kannst von jedem Gegner nur so viel gewinnen, wie du selbst gematcht hast (den Main Pot). Zusätzliche Einsätze größerer Stacks bilden einen Side Pot, den du nicht gewinnen kannst. Ein All-in unterhalb einer vollen Erhöhung öffnet die Setzrunde für Spieler, die bereits gehandelt haben, NICHT neu.",
   category: "rules",
   date: "2026-06-15",
   updated: "2026-07-12",
@@ -14,11 +14,11 @@ export const POST: Post = {
   readTime: "10 Min.",
   emoji: "♠",
   tags: [
+    "texas holdem all in regeln",
     "poker all in regeln",
-    "texas holdem all in",
     "side pot poker erklärt",
-    "all in poker wer gewinnt was",
-    "poker all in showdown",
+    "öffnet all in die setzrunde neu poker",
+    "poker all in showdown regeln",
   ],
   image: "/images/holdem-all-in-rules-hero.webp",
   imageAlt: "Texas Hold'em All-in — Spieler schiebt alle Chips in die Mitte, während der Dealer Main Pot und Side Pot auf grünem Filz trennt",
@@ -29,7 +29,7 @@ Und du hast keine Ahnung, was da gerade passiert.
 
 Ich saß selbst schon an diesem Tisch. Bei meinem ersten All-in in einem Live-Cash-Game wusste ich weder, ob ich überhaupt noch etwas gewinnen konnte, noch ob der andere Spieler re-raisen durfte — nicht einmal, welcher Chipstapel eigentlich meiner war. Erklärt hat es mir niemand.
 
-==Dieser Guide deckt jede Situation ab: Main Pots, Side Pots, Re-Raise-Recht und Showdown-Reihenfolge.== Nie wieder einfrieren, wenn der Dealer anfängt, Stacks zu zählen. (Falls der grundlegende Setzablauf noch wackelig ist, findest du ihn im [Regel-Guide für Einsteiger](/de/blog/texas-holdem-rules-for-beginners "thumb:/images/rules-texas-holdem.webp").)
+==Dieser Guide deckt jede Situation ab: Main Pots, Side Pots, Re-Raise-Recht und Showdown-Reihenfolge.== Nie wieder einfrieren, wenn der Dealer anfängt, Stacks zu zählen. (Falls der grundlegende Setzablauf noch wackelig ist, findest du ihn zuerst im [Regel-Guide für Einsteiger](/de/blog/texas-holdem-rules-for-beginners "thumb:/images/rules-texas-holdem.webp").)
 
 ## Was bedeutet „All-in“ beim Texas Hold'em?
 
@@ -130,7 +130,7 @@ Blinds $1/$2. Vier Spieler sehen den Flop.
 
 Was passiert mit Spieler A und mit Spieler C, der noch nicht gehandelt hat?
 
-- Spieler A hat bereits gehandelt ($10 gesetzt) und steht jetzt vor einer unvollständigen Erhöhung. Weil Bs All-in von $14 **weniger als eine volle Erhöhung** ist, wird die Setzrunde für Spieler A NICHT neu geöffnet. ==A kann nur callen oder folden — re-raisen ist nicht erlaubt.==
+- Spieler A hat bereits gehandelt ($10 gesetzt) und steht jetzt nur vor einer unvollständigen Erhöhung. Weil Bs All-in von $14 **weniger als eine volle Erhöhung** ist, wird die Setzrunde für Spieler A NICHT neu geöffnet. ==A kann nur callen oder folden — re-raisen ist nicht erlaubt.==
 - Spieler C hat noch nicht gehandelt — **Spieler C darf ganz normal erhöhen**.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
@@ -259,7 +259,7 @@ A. Die Kernregeln sind identisch, aber es gibt zwei praktische Unterschiede. Ers
 
 ---
 
-## Verwandte Artikel
+## Ähnliche Beiträge
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/de/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
