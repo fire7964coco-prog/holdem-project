@@ -33,6 +33,13 @@ import { POST as aptIncheon2026Guide } from "./apt-incheon-2026-guide";
 import { POST as koreaPokerMarathon2026 } from "./korea-poker-marathon-2026";
 import { POST as wptAustralia2026Guide } from "./wpt-australia-2026-guide";
 import { POST as eptBarcelona2026Guide } from "./ept-barcelona-2026-guide";
+import { POST as holdemGlossary } from "./holdem-glossary";
+import { POST as holdemStraddle } from "./holdem-straddle";
+import { POST as holdemRake } from "./holdem-rake";
+import { POST as holdemFish } from "./holdem-fish";
+import { POST as holdemCooler } from "./holdem-cooler";
+import { POST as holdemBadBeat } from "./holdem-bad-beat";
+import { POST as holdemCardCounting } from "./holdem-card-counting";
 import { POST as holdemTournamentVsCashGame } from "./holdem-tournament-vs-cash-game";
 
 /**
@@ -80,6 +87,15 @@ export const DE_POSTS: Post[] = [
   koreaPokerMarathon2026,
   wptAustralia2026Guide,
   eptBarcelona2026Guide,
+  // Glossary 필라 (6/6)
+  holdemGlossary,
+  holdemStraddle,
+  holdemRake,
+  holdemFish,
+  holdemCooler,
+  holdemBadBeat,
+  // 단독
+  holdemCardCounting,
   // 기타
   holdemTournamentVsCashGame,
 ];
