@@ -26,6 +26,14 @@ import { POST as holdem3bet } from "./holdem-3bet";
 import { POST as holdemContinuationBet } from "./holdem-continuation-bet";
 import { POST as holdemWhenToFold } from "./holdem-when-to-fold";
 import { POST as holdemTournamentVsCashGame } from "./holdem-tournament-vs-cash-game";
+import { POST as holdemTournament } from "./holdem-tournament";
+import { POST as holdemIcm } from "./holdem-icm";
+import { POST as holdemBubble } from "./holdem-bubble";
+import { POST as holdemShortStack } from "./holdem-short-stack";
+import { POST as aptIncheon2026Guide } from "./apt-incheon-2026-guide";
+import { POST as koreaPokerMarathon2026 } from "./korea-poker-marathon-2026";
+import { POST as wptAustralia2026Guide } from "./wpt-australia-2026-guide";
+import { POST as eptBarcelona2026Guide } from "./ept-barcelona-2026-guide";
 
 /**
  * 스페인어(es) 블로그 포스트.
@@ -63,8 +71,16 @@ export const ES_POSTS: Post[] = [
   holdem3bet,
   holdemContinuationBet,
   holdemWhenToFold,
-  // 기타
+  // Tournament 필라 (9/9, tvc 포함)
   holdemTournamentVsCashGame,
+  holdemTournament,
+  holdemIcm,
+  holdemBubble,
+  holdemShortStack,
+  aptIncheon2026Guide,
+  koreaPokerMarathon2026,
+  wptAustralia2026Guide,
+  eptBarcelona2026Guide,
 ];
 
 export function getEsPost(slug: string): Post | undefined {
