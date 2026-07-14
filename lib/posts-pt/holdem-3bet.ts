@@ -192,7 +192,7 @@ A MDF assume um adversário *balanceado*. Em stakes baixos e jogos live, os joga
 
 ## Uma mão real de 3-bet, do início ao fim
 
-Chega de teoria — aqui está uma mão completa com os números, para você ver o fluxo inteiro (checado por §13). Cash $1/$2, 100bb de profundidade.
+Chega de teoria — aqui está uma mão completa com os números, para você ver o fluxo inteiro. Cash $1/$2, 100bb de profundidade.
 
 - **Pré-flop:** Um cutoff loose dá open para ==$6== (3bb). Estou no button com ==A♠Q♠==. Este é um claro **3-bet de valor** contra um open aberto de posição tardia, e estou in position, então faço ==$18== (3x). Os blinds foldam; o cutoff paga. O pote é $39.
 - **Flop:** ==Q♦ 8♣ 4♥.== Eu flopo **top pair, top kicker** — meu A♠Q♠ faz um par de damas com o melhor kicker possível (o ás). Melhores cinco cartas: Q♠ Q♦ A♠ 8♣ 4♥ = um par (damas) com o kicker de ás. Contra o range dele de damas piores, oitos e floats, estou muito à frente.

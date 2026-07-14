@@ -152,7 +152,7 @@ Nada disso leva trinta segundos de verdade quando vira hábito — mas desaceler
 
 ## Uma laydown de verdade, passo a passo
 
-Aqui está um fold do qual me orgulho, detalhado pra você conferir você mesmo (§13-verificado). Cash de $1/$2, 100bb de profundidade.
+Aqui está um fold do qual me orgulho, detalhado pra você conferir você mesmo. Cash de $1/$2, 100bb de profundidade.
 
 - **Minha mão:** ==A♥K♣.== Eu aumento, o big blind — um jogador tight e passivo — paga.
 - **Flop:** ==K♦ 9♠ 4♥.== Tenho top pair, top kicker. Aposto, ele paga. Padrão.

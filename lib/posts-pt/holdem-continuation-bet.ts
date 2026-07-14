@@ -170,7 +170,7 @@ A mudança de mentalidade que te torna vencedor: **dar check não é render-se.*
 
 ## Uma mão de c-bet real, do início ao fim
 
-Duas situações da mesma sessão mostram os dois lados da decisão (checado por §13).
+Duas situações da mesma sessão mostram os dois lados da decisão.
 
 **Situação 1 — uma c-bet de manual.** Eu dou raise com ==A♣K♦== e o big blind paga. Flop: ==K♠ 7♦ 2♣.== É um board alto, dry e desconectado que pertence ao meu range — e eu flopei **top pair, top kicker**: meu K♦ pareia o K♠, com o ás como o melhor kicker possível (melhores cinco = K♦ K♠ A♣ 7♦ 2♣). Aposto **um terço do pote** como range bet: cobra de todas as mãos que ele errou e mantém reis piores e pares dentro. C-bet fácil e lucrativa.
 

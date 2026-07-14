@@ -152,7 +152,7 @@ None of this takes thirty real seconds once it's a habit — but slowing down fo
 
 ## A Real Laydown, Hand by Hand
 
-Here's a fold I'm proud of, spelled out so you can check it yourself (§13-verified). $1/$2 cash, 100bb deep.
+Here's a fold I'm proud of, spelled out so you can check it yourself. $1/$2 cash, 100bb deep.
 
 - **My hand:** ==A♥K♣.== I raise, the big blind — a tight, passive player — calls.
 - **Flop:** ==K♦ 9♠ 4♥.== I've got top pair, top kicker. I bet, he calls. Standard.

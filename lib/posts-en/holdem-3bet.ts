@@ -192,7 +192,7 @@ MDF assumes a *balanced* opponent. At low stakes and in live games, players badl
 
 ## A Real 3-Bet Hand, Start to Finish
 
-Enough theory — here's a full hand with the numbers, so you can see the whole flow (§13-checked). $1/$2 cash, 100bb deep.
+Enough theory — here's a full hand with the numbers, so you can see the whole flow. $1/$2 cash, 100bb deep.
 
 - **Preflop:** A loose cutoff opens to ==$6== (3bb). I'm on the button with ==A♠Q♠==. This is a clear **value 3-bet** against a wide late-position open, and I'm in position, so I make it ==$18== (3x). The blinds fold; the cutoff calls. Pot is $39.
 - **Flop:** ==Q♦ 8♣ 4♥.== I flop **top pair, top kicker** — my A♠Q♠ makes a pair of queens with the best possible kicker (the ace). Best five cards: Q♠ Q♦ A♠ 8♣ 4♥ = one pair (queens) with the ace kicker. Against his range of worse queens, eights, and floats, I'm way ahead.

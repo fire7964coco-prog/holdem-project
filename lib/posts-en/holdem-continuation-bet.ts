@@ -170,7 +170,7 @@ The mindset shift that makes you a winner: **checking is not surrender.** Good p
 
 ## A Real C-Bet Hand, Start to Finish
 
-Two spots from the same session show both sides of the decision (§13-checked).
+Two spots from the same session show both sides of the decision.
 
 **Spot 1 — a textbook c-bet.** I raise ==A♣K♦== and the big blind calls. Flop: ==K♠ 7♦ 2♣.== That's a high, dry, disconnected board that belongs to my range — and I've flopped **top pair, top kicker**: my K♦ pairs the K♠, with the ace as the best possible kicker (best five = K♦ K♠ A♣ 7♦ 2♣). I bet **one-third pot** as a range bet: it charges all his missed hands and keeps worse kings and pairs in. Easy, profitable c-bet.
 
