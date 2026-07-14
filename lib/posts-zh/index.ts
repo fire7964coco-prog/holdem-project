@@ -11,6 +11,12 @@ import { POST as holdemKicker } from "./holdem-kicker";
 import { POST as holdemTiebreakRules } from "./holdem-tiebreak-rules";
 import { POST as holdemSplitPotRules } from "./holdem-split-pot-rules";
 import { POST as holdemReadingTheBoard } from "./holdem-reading-the-board";
+import { POST as holdemProbability } from "./holdem-probability";
+import { POST as holdemPotOdds } from "./holdem-pot-odds";
+import { POST as holdemOuts } from "./holdem-outs";
+import { POST as holdemDrawingOdds } from "./holdem-drawing-odds";
+import { POST as holdemImpliedOdds } from "./holdem-implied-odds";
+import { POST as holdemEquity } from "./holdem-equity";
 import { POST as holdemTournamentVsCashGame } from "./holdem-tournament-vs-cash-game";
 
 /**
@@ -33,6 +39,13 @@ export const ZH_POSTS: Post[] = [
   holdemTiebreakRules,
   holdemSplitPotRules,
   holdemReadingTheBoard,
+  // Odds & Math 필라 (6/6)
+  holdemProbability,
+  holdemPotOdds,
+  holdemOuts,
+  holdemDrawingOdds,
+  holdemImpliedOdds,
+  holdemEquity,
   // 기타
   holdemTournamentVsCashGame,
 ];
