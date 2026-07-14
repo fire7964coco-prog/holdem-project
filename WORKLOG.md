@@ -3,6 +3,27 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-14 (★★★de(독일어) 언어 완전 완성 — 42/42편 + EN 링크정합 + DE_CLUSTERS + EN §13 태그 누출 제거)
+
+> 사용자 "de도 진행하자, 각자역할 프롬프트 넣고 자동진행" → de를 8/42(stale)에서 시작해 **하드닝 EN 기준 전 42편 재/신규 번역**. 리서치→브리프→필라별 Opus 번역→구조패리티→네이티브 DE QA→커밋 연속 완주 후 최종 링크복원+DE_CLUSTERS. **de = 24개 언어 중 5번째 전체 완역**(ja·es·pt·de + ko).
+
+### ✅ de 리서치·브리프
+- 독일어 포커 용어 웹리서치(pokerfirma·pokerolymp·pokerstrategy.de 등) → `docs/translation-terms-de.md` 전면 갱신. **핵심**: 독일 포커는 앵글리시즘 강함 — 액션/구조/수학어 영어유지+대문자+성(der Flop/die Blinds/das Board/der Pot), **족보만 독일어**(Straße/Drilling/Vierling/Zwei Paare/Paar; Flush/Full House/Royal/Straight Flush 영어), Denglisch 동사(callen/raisen/folden/floppen/shoven), du체, 유럽식 숫자(마침표 천단위·콤마 소수점·X:1·% 공백없이), $ EN 유지.
+
+### ✅ de 7필라 재/신규 번역 (커밋 `d4c3e32`·`18721af`·`3463258`·`9fbf5d8`·`d767114`·`7a32957`)
+- **Rules 6**(재번역)·**HandRankings 6**(hub 재+5신규)·**Odds 6**·**Strategy 8**·**Tournament 9**(tvc 재+8신규)·**Glossary 6+card-counting**. stale 8편(구 번역)은 하드닝 EN으로 전면 교체 — game-order 프리플랍 체크·all-in re-opening·hand-rankings K♥ straight flush 오류 등 §13 교정.
+- 각 필라: Opus 병렬번역 → count 패리티(H2/FAQ/링크 EN 1:1, universe=`lib/posts-en/` 42편) → 네이티브 DE QA(성/대문자·du·족보·false-friend·FAQ Q./A.·유럽식 숫자, 계산 재검증X) → 교정.
+- QA 실교정 예: 성 오류(das Ass/der Ass-Kicker/die Infografik), FAQ 마커 `**Q.**질문`→`**Q. 질문**`(스키마), soft-hyphen(U+00AD) 제거, "Straße"↔streets 오독(→"Streets"), 메타 따옴표 이스케이프, desc 전편 ≤160, 통화 유럽식($5.000/€9.918.250/$2,7M/₩11.000).
+
+### ✅ ★EN 마스터 §13 태그 누출 제거 (커밋 `9fbf5d8`)
+- **발견**: 3bet/continuation-bet/when-to-fold의 EN 본문에 `(§13-checked)`/`(§13-verified)` 내부검수 태그가 published된 채 누출 → **전 언어(en/de/es/ja/pt)로 전파**돼 있었음. 전 언어에서 일괄 제거.
+
+### ✅ 최종 EN-패리티 링크 복원 (커밋 `1f9c233`)
+- de 초기 필라 스트립 링크 63건 → 필라별 에이전트 4개(24파일)로 복원. 스크립트 검증 **결손 0 / 초과 0**(전 슬러그 EN 개수 1:1).
+
+### ✅ DE_CLUSTERS 러닝맵 (같은 커밋 예정)
+- `DE_CLUSTERS` 추가(EN 6필라 구조·슬러그 동일, 라벨 독일어). intl-blog-post-client 게이트 en·ja·es·pt→**+de**. 하드게이트 통과(338 intl posts/24언어).
+
 ## 2026-07-14 (★★pt(pt-BR) 언어 완전 완성 — 42/42편 + EN 링크정합 + PT_CLUSTERS 러닝맵)
 
 > 사용자 부재중 자동 진행("en이랑 대조하며 자동진행, 다끝나면 보고서"). pt를 13/42에서 시작해 Odds→Strategy→Tournament→Glossary→card-counting를 리서치→Opus 병렬번역→구조패리티→빌드→네이티브 BR QA→커밋으로 연속 완주 후, 최종 EN 링크정합 패스 + PT_CLUSTERS까지. **pt = 24개 언어 중 4번째 전체 완역**(ja·es·pt + ko).

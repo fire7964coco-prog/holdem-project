@@ -5,7 +5,19 @@
 
 ---
 
-## ▶▶▶ 새 세션 START HERE (2026-07-14 — ★★★pt(pt-BR) 완전 완성(42/42) + EN 링크정합 + PT_CLUSTERS / 다음 = de)
+## ▶▶▶ 새 세션 START HERE (2026-07-14 — ★★★de(독일어) 완전 완성(42/42) + EN 링크정합 + DE_CLUSTERS / 다음 = zh)
+
+> ✅✅✅ **de 42/42편 완성** — EN 마스터와 완전 동일 구조. Rules 6·HR 6·Odds 6·Strategy 8·Tournament 9·Glossary 6·card-counting 1. 커밋 `d4c3e32`·`18721af`·`3463258`·`9fbf5d8`(§13태그제거)·`d767114`·`7a32957`·`1f9c233`(링크복원)+DE_CLUSTERS. 하드게이트 통과(**338 intl posts/24언어**). **de 잔여 부채 없음**(링크 결손 0/초과 0). 상세 WORKLOG 2026-07-14 최상단.
+> - 브리프 `docs/translation-terms-de.md`(du·유럽식 숫자·독일식 족보 Straße/Drilling/Vierling·앵글리시즘+성). **de = 5번째 완역**(ja·es·pt·de).
+> - de 특유 교훈: ①액션/구조/수학어 영어유지+**대문자+성**(der Flop/das Board), 족보만 독일어 ②FAQ 마커 `**Q. 질문전체**`(볼드 안, 스키마) ③메타 필드(title/desc/tldr)에 **독일식 „…" 또는 직선따옴표 넣을 때 이스케이프**(안 하면 빌드 깨짐) ④calculator/hand-chart/quiz = canonical `/calculator` 등 ⑤통화 유럽식(마침표 천단위·$2,7M 콤마) ⑥soft-hyphen(U+00AD) 혼입 주의.
+> - ★★**EN 마스터 §13 태그 누출 발견·제거**: 3bet/cbet/when-to-fold에 `(§13-checked)` 등이 전 언어로 전파돼 있던 것을 en/de/es/ja/pt 일괄 제거. **다음 언어 번역 전 EN에 §13 잔재 재확인 권장.**
+
+### ▶▶ 다음 = zh(중국어) 언어 완성 — de/pt/es와 동일 파이프라인
+- 구12언어 순서: ja✅ → es✅ → pt✅ → de✅ → **zh** → ar → id → ms → vi → hi → tr.
+- 절차: ①현지어 웹 리서치 선행([[translation-local-research-first]]: 중국 포커사이트 실제용어) → `docs/translation-terms-zh.md` 브리프(★중국어 숫자: 아라비아 유지, 만/억 단위 관습·간체) ②Opus 병렬번역(EN 1:1·§13 그대로) ③count 구조패리티 ④네이티브 ZH 적대적 QA(계산 재검증X) ⑤교정 ⑥필라별 커밋 ⑦42편 완성 후 최종 EN 링크복원 + `ZH_CLUSTERS`.
+- `lib/posts-zh/` 현황부터 확인(기존 부분번역 stale 재검수 포함). 화이트리스트는 진행에 따라 확장(전체 42).
+
+## ▶▶▶ (이전) START HERE (2026-07-14 — ★★★pt(pt-BR) 완전 완성(42/42) + EN 링크정합 + PT_CLUSTERS / 다음 = de)
 
 > ✅✅✅ **pt 42/42편 완성** — EN 마스터와 완전 동일 구조. Rules 6·HR 6·Odds 6·Strategy 8·Tournament 9·Glossary 6·card-counting 1. 커밋 `8e61e33`(Odds)·`040b2ce`(Strategy)·`6e4b49c`(Tournament)·`572d941`(Glossary+cc)·`79013a7`(EN링크복원+PT_CLUSTERS). 하드게이트 전부 통과(**304 intl posts/24언어**). 상세는 WORKLOG 2026-07-14 최상단.
 > - 브리프 `docs/translation-terms-pt.md`(você·**유럽식 숫자표기** 천단위 마침표/소수점 콤마·pokernobrasil 글로스). **pt 잔여 부채 없음**(링크 결손 0/초과 0).
