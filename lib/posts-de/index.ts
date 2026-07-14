@@ -25,6 +25,14 @@ import { POST as holdemLimping } from "./holdem-limping";
 import { POST as holdem3bet } from "./holdem-3bet";
 import { POST as holdemContinuationBet } from "./holdem-continuation-bet";
 import { POST as holdemWhenToFold } from "./holdem-when-to-fold";
+import { POST as holdemTournament } from "./holdem-tournament";
+import { POST as holdemIcm } from "./holdem-icm";
+import { POST as holdemBubble } from "./holdem-bubble";
+import { POST as holdemShortStack } from "./holdem-short-stack";
+import { POST as aptIncheon2026Guide } from "./apt-incheon-2026-guide";
+import { POST as koreaPokerMarathon2026 } from "./korea-poker-marathon-2026";
+import { POST as wptAustralia2026Guide } from "./wpt-australia-2026-guide";
+import { POST as eptBarcelona2026Guide } from "./ept-barcelona-2026-guide";
 import { POST as holdemTournamentVsCashGame } from "./holdem-tournament-vs-cash-game";
 
 /**
@@ -63,6 +71,15 @@ export const DE_POSTS: Post[] = [
   holdem3bet,
   holdemContinuationBet,
   holdemWhenToFold,
+  // Tournament 필라 (8/8) — tvc는 아래 기존 항목
+  holdemTournament,
+  holdemIcm,
+  holdemBubble,
+  holdemShortStack,
+  aptIncheon2026Guide,
+  koreaPokerMarathon2026,
+  wptAustralia2026Guide,
+  eptBarcelona2026Guide,
   // 기타
   holdemTournamentVsCashGame,
 ];
