@@ -246,7 +246,7 @@ A 是最大的牌，也是唯一一张打破规则的牌：它既能当大（A-K
 
 ## 为什么排名是这样的
 
-这套排名不是随便定的——==纯粹是概率==。==g:**越难做成的牌，排名越高。**== 在一副52张牌里，凑成五张同花色的方式，本来就比凑成任意花色五张连续的方式更少——所以同花排在顺子之上。这一条原理，就解释了整个牌型层级——精确数字见扑克赔率与概率一览表。
+这套排名不是随便定的——==纯粹是概率==。==g:**越难做成的牌，排名越高。**== 在一副52张牌里，凑成五张同花色的方式，本来就比凑成任意花色五张连续的方式更少——所以同花排在顺子之上。这一条原理，就解释了整个牌型层级——精确数字见[扑克赔率与概率一览表](/zh/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp")。
 
 它也解释了你会遇到的那个大例外：在**短牌（6+）德州扑克**里，2 到 5 被抽掉，同花变得比葫芦更难——所以那种玩法里==r:**同花赢葫芦**==。数学变了，排名就变了。各玩法差异见下文。
 
@@ -392,7 +392,7 @@ A. 能。A 既能当大也能当小，所以 A-2-3-4-5（"最小顺"）是合法
 
 花一个下午记住排名，反复练易混对决，每次都跑一遍"花色 → 顺子 → 对子"的扫描。做到这些，你就再也不会把底池推错方向了。
 
-知道了牌型之后，自然的下一步是搞清该用哪些牌起手——用按位置划分的德州扑克起手牌一览表看清每个座位到底该玩哪些底牌。
+知道了牌型之后，自然的下一步是搞清该用哪些牌起手——用[按位置划分的德州扑克起手牌一览表](/zh/blog/holdem-starting-hands-chart)看清每个座位到底该玩哪些底牌。
 
 ---
 
@@ -418,6 +418,11 @@ A. 能。A 既能当大也能当小，所以 A-2-3-4-5（"最小顺"）是合法
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">新手指南</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">德州扑克新手规则</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">从发牌到摊牌的完整规则</div>
+  </a>
+  <a href="/zh/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">起手牌</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">按位置排的起手牌图表</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">从 UTG 到按钮位该玩哪些底牌</div>
   </a>
   <a href="/zh/blog/holdem-reading-the-board" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">读牌</div>

@@ -87,7 +87,7 @@ export const POST: Post = {
 | 翻牌前顺序 | 倒数第二个行动 | **最后**行动（拥有"选择权"） |
 | 翻牌后顺序 | **第一个**行动（这是劣势） | 第二个行动 |
 
-> **注意：**翻牌前，行动从大盲注左边的玩家开始，大盲注最后行动——他能先看到其他所有人的决定。从翻牌圈开始顺序重置，盲注位要提早行动。逐条街的完整流程在[德州扑克的行动顺序](/zh/blog/holdem-game-order)里画得清清楚楚，按钮周围每个座位的名称则在扑克位置详解里有完整介绍。
+> **注意：**翻牌前，行动从大盲注左边的玩家开始，大盲注最后行动——他能先看到其他所有人的决定。从翻牌圈开始顺序重置，盲注位要提早行动。逐条街的完整流程在[德州扑克的行动顺序](/zh/blog/holdem-game-order)里画得清清楚楚，按钮周围每个座位的名称则在[扑克位置详解](/zh/blog/holdem-positions)里有完整介绍。
 
 ---
 
@@ -111,15 +111,15 @@ export const POST: Post = {
 </div>
 
 - **现金局：**盲注==g:**固定不变**==。你坐进 $1/$2 的桌子，直到你离开它都是 $1/$2。（想深入比较两种形式，看[锦标赛 vs 现金局](/zh/blog/holdem-tournament-vs-cash-game)。）
-- **锦标赛：**盲注==r:**按时间不断上涨**==（例如 25/50 → 50/100 → 100/200），越到深夜压力越大。盲注级别、升盲时钟和结构表在锦标赛运作指南里有完整讲解。
+- **锦标赛：**盲注==r:**按时间不断上涨**==（例如 25/50 → 50/100 → 100/200），越到深夜压力越大。盲注级别、升盲时钟和结构表在[锦标赛运作指南](/zh/blog/holdem-tournament)里有完整讲解。
 
 ---
 
 ## 大盲前注是什么？（顺带说说 straddle）
 
-大多数锦标赛从前中期开始会加入**前注（ante）**——在盲注之外，每手牌额外收取的一小笔强制注，用来做大底池、奖励主动进攻。如今最流行的形式是**大盲前注（big blind ante）**：不用每个人都往里丢筹码，==由大盲注一个人替全桌交一份前注——通常等于一个大盲注==，让游戏又快又干净。前注何时启用、怎么收，属于锦标赛盲注结构的一部分。
+大多数锦标赛从前中期开始会加入**前注（ante）**——在盲注之外，每手牌额外收取的一小笔强制注，用来做大底池、奖励主动进攻。如今最流行的形式是**大盲前注（big blind ante）**：不用每个人都往里丢筹码，==由大盲注一个人替全桌交一份前注——通常等于一个大盲注==，让游戏又快又干净。前注何时启用、怎么收，属于[锦标赛盲注结构](/zh/blog/holdem-tournament)的一部分。
 
-现金局里你还会见到强制注的另一个亲戚：**straddle**——一份*自愿*追加的额外盲注（通常是 2x BB），由大盲注左边的座位下出，让那一手牌的级别临时翻倍。它有自己的规则、类型和行动顺序——完整拆解可以去看关于 straddle 是什么、该不该下的专题文章。
+现金局里你还会见到强制注的另一个亲戚：**straddle**——一份*自愿*追加的额外盲注（通常是 2x BB），由大盲注左边的座位下出，让那一手牌的级别临时翻倍。它有自己的规则、类型和行动顺序——完整拆解可以去看[关于 straddle 是什么、该不该下](/zh/blog/holdem-straddle "thumb:/images/holdem-straddle-hero.webp")的专题文章。
 
 ---
 
@@ -140,13 +140,14 @@ export const POST: Post = {
 ![扑克桌上一叠筹码推向底池——按钮位发起的偷盲](/images/holdem-blind-steal.webp)
 
 - **小盲注：别把事情搞复杂。**翻牌前倒数第二个行动，翻牌后却要**第一个**行动，对新手最干净的打法是**要么加注、要么弃牌**，不要平跟。平跟进池再被人在位置外反打，是稳定的筹码漏洞。
-- **大盲注：按赔率防守。**你已经交了一整份注，所以你可以比任何其他位置更宽地有利润跟注。面对 2.5 BB 的开局加注（小盲注弃牌），你只需再跟 1.5 BB 去赢 4 BB 的底池——约 2.7:1，也就是说大约 27% 的胜率就能让这个跟注打平。这套算术就是底池赔率，"大盲防守"这个概念正是由此而来。
-- **后位：偷盲。**当所有人弃牌轮到按钮位或关煞位时，一次只为了拿下两份盲注的加注就是**偷盲**——而用再加注反击回去则是**反偷盲**。偷盲尺寸、各位置的范围、防守该有多宽，这些都是策略话题，在有位置 vs 无位置的策略指南里有深入讲解。
+- **大盲注：按赔率防守。**你已经交了一整份注，所以你可以比任何其他位置更宽地有利润跟注。面对 2.5 BB 的开局加注（小盲注弃牌），你只需再跟 1.5 BB 去赢 4 BB 的底池——约 2.7:1，也就是说大约 27% 的胜率就能让这个跟注打平。这套算术就是[底池赔率](/zh/blog/holdem-pot-odds)，"大盲防守"这个概念正是由此而来。
+- **后位：偷盲。**当所有人弃牌轮到按钮位或关煞位时，一次只为了拿下两份盲注的加注就是**偷盲**——而用再加注反击回去则是**反偷盲**。偷盲尺寸、各位置的范围、防守该有多宽，这些都是策略话题，在[有位置 vs 无位置的策略指南](/zh/blog/holdem-position-play)里有深入讲解。
 
 ---
 
 :::readnext[继续阅读]
 /zh/blog/texas-holdem-rules-for-beginners | 德州扑克新手规则入门 | /images/rules-texas-holdem.webp
+/zh/blog/holdem-position-play | 有位置 vs 无位置的策略 | /images/holdem-position-play-hero.webp
 :::
 
 ## 常见问题
@@ -191,17 +192,27 @@ A. 不完全是——"盲注"指小盲注和大盲注两者的合称，而大盲
 2. **大盲注是牌桌的计量单位**——加注、筹码量、锦标赛压力全都用 BB 来衡量。
 3. 谨慎打好盲注位：**小盲位要么加注要么弃牌**，**大盲位按底池赔率防守**，并研究后位无人入池时的偷盲打法。
 
-刚开始接触德州扑克？[德州扑克新手规则指南](/zh/blog/texas-holdem-rules-for-beginners "thumb:/images/rules-texas-holdem.webp")覆盖全部基础，[一手牌的行动顺序](/zh/blog/holdem-game-order)精确展示每个盲注位何时行动，而扑克位置详解会告诉你——决定每个决策的不只是盲注，还有你的座位。
+刚开始接触德州扑克？[德州扑克新手规则指南](/zh/blog/texas-holdem-rules-for-beginners "thumb:/images/rules-texas-holdem.webp")覆盖全部基础，[一手牌的行动顺序](/zh/blog/holdem-game-order)精确展示每个盲注位何时行动，而[扑克位置详解](/zh/blog/holdem-positions)会告诉你——决定每个决策的不只是盲注，还有你的座位。
 
 ---
 
 ## 相关文章
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
+  <a href="/zh/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">位置</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">扑克牌桌位置详解</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">从 UTG 到按钮、6 人桌 vs 9 人桌、开局范围</div>
+  </a>
   <a href="/zh/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">行动顺序</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">德州扑克的行动顺序</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">翻牌前 → 翻牌 → 转牌 → 河牌的完整行动流程</div>
+  </a>
+  <a href="/zh/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">锦标赛</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">扑克锦标赛是怎么运作的</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">盲注级别、前注、奖金结构与赛制</div>
   </a>
 </div>
 `.trim(),

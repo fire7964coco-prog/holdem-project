@@ -3,6 +3,24 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-15 (★★★zh(중국어 간체) 언어 완전 완성 — 42/42편 + EN 링크정합(결손 0) + ZH_CLUSTERS)
+
+> 사용자 "중국어는 뜻글자라 어렵다 → 리서치 5편으로, 현지어 학습후 자동진행" + "영어가 기준, 어색하면 영어유지, 착수 전 현지 사이트/기사 3편+ 학습" → zh를 27/42(Rules·HR·Odds·Strategy 일부)에서 시작해 **Strategy→Tournament→Glossary→card-counting**를 Opus 병렬번역→구조패리티→빌드→네이티브 ZH QA→커밋으로 연속 완주 후, 최종 EN 링크복원(81→0) + tvc 완전 재번역 + ZH_CLUSTERS. **zh = 24개 언어 중 6번째 전체 완역**(ja·es·pt·de·zh + ko).
+
+### ✅ zh 리서치·브리프
+- 중국 포커사이트·위키·지식플랫폼 10편 리서치(维基·传奇扑克·dpskill·gtopuke·中扑网·摩十客·知乎 등) → `docs/translation-terms-zh.md`. **핵심**: 严格 간체(关/边/筹/顺/条/对/两), 「你」체, 족보 중국어(皇家同花顺/同花顺/四条/葫芦/同花/顺子/三条/两对/一对/高牌), **set=暗三条·trips=明三条**, 액션 중국어(跟注/加注/过牌/弃牌/下注), **영어유지**(all in/3bet/4bet/c-bet/GTO/ICM/range/set/trips/cooler/bad beat/squeeze/bubble), false-friend(河牌≠河流·公共牌≠木板·过牌≠检查·顺子≠直). **★숫자=영어식**(마침표 소수점·콤마 천단위·3:1·大数는 万/亿, $ 유지, % 붙여쓰기) — de/es/pt 유럽식과 정반대.
+
+### ✅ zh 4필라 번역 (커밋 `f8b88b3`·`ac27d3b`·`a14c806`)
+- **Strategy 8**(strategy·positions·position-play·starting-hands-chart·limping·3bet·continuation-bet·when-to-fold)·**Tournament 8**(tournament·icm·bubble·short-stack + 대회가이드 4: apt-incheon·korea-marathon·wpt-australia·ept-barcelona)·**Glossary 6**(glossary 용어 105개·straddle·rake·fish·cooler·bad-beat)·**card-counting 1**.
+- 각 필라: Opus 병렬번역 → count 패리티(H2/FAQ/링크 EN 1:1) → 네이티브 ZH 적대적 QA(계산 재검증X, §13 逐字 대조) → 교정. QA 전 필라 무🔴(cooler set-over-set·bad-beat quad-aces·ICM payout·bubble factor·M값·抽水% 전부 EN 逐字 검증).
+- zh 특유 교훈: ①**metadata(title/desc/tldr) 안쪽 인용부호는 전각「」** — ASCII `"` 넣으면 TS 문자열 조기종료 ParseError(limping title·3bet tldr 실제 발생) ②FAQ 문제 전량 중국어화 필수(tiebreak/pot-odds에서 영어질문 잔재 반복 → 프롬프트 경고 강화) ③**calculator=canonical `/calculator`**(zh 로케일 라우트 없음 → `/zh/calculator`는 404, icm·short-stack 교정) ④"10" 유지("T" 금지) ⑤简体 엄수.
+
+### ✅ 최종 EN-패리티 링크 복원 (이 커밋)
+- 초기 필라(미번역 시점) 스트립 링크 **81건/22파일** → 필라별 에이전트 5개로 복원. tvc(초기 축약 번역본)는 원문 단락 자체 부재로 5건 미복원 → **tvc 전체 EN 1:1 재번역**(H2 15·FAQ 8·링크 11 slug 전부 동수)로 해소. 스크립트 검증 **결손 0**(전 슬러그 EN 개수 1:1).
+
+### ✅ ZH_CLUSTERS 러닝맵 (이 커밋)
+- `ZH_CLUSTERS` 추가(EN 6필라 구조·슬러그 동일, 라벨 중국어). intl-blog-post-client 게이트 en·ja·es·pt·de→**+zh**. 하드게이트 통과(**372 intl posts/24언어**).
+
 ## 2026-07-14 (★★★de(독일어) 언어 완전 완성 — 42/42편 + EN 링크정합 + DE_CLUSTERS + EN §13 태그 누출 제거)
 
 > 사용자 "de도 진행하자, 각자역할 프롬프트 넣고 자동진행" → de를 8/42(stale)에서 시작해 **하드닝 EN 기준 전 42편 재/신규 번역**. 리서치→브리프→필라별 Opus 번역→구조패리티→네이티브 DE QA→커밋 연속 완주 후 최종 링크복원+DE_CLUSTERS. **de = 24개 언어 중 5번째 전체 완역**(ja·es·pt·de + ko).

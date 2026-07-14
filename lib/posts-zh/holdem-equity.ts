@@ -130,7 +130,7 @@ EV = $40 + (0.60 × [$52.50 − $32.50]) = $40 + $12 = ==g:+$52==
 📚 | 筹码深度与技术 | 筹码越深、对手越硬，边缘胜率就越难兑现
 :::
 
-这是大多数新手指南漏掉的、最重要的一个概念，也是为什么同一手牌因位置不同打法天差地别。原始胜率是天花板；兑现，才是你带回家的东西。
+这是大多数新手指南漏掉的、最重要的一个概念，也是为什么[同一手牌因位置不同打法天差地别](/zh/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp")。原始胜率是天花板；兑现，才是你带回家的东西。
 
 ---
 
@@ -242,6 +242,11 @@ A. 因为同一个 100% 的底池现在要在更多手牌之间分——口袋 A
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">赔率与数学</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">隐含赔率详解</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">为什么胜率不是你最终的底池份额</div>
+  </a>
+  <a href="/zh/blog/holdem-position-play" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">策略</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">位置如何改变一切</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">为什么兑现率的生死全系于位置</div>
   </a>
 </div>
 `.trim(),

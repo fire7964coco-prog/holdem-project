@@ -5,7 +5,19 @@
 
 ---
 
-## ▶▶▶ 새 세션 START HERE (2026-07-14 — ★★★de(독일어) 완전 완성(42/42) + EN 링크정합 + DE_CLUSTERS / 다음 = zh)
+## ▶▶▶ 새 세션 START HERE (2026-07-15 — ★★★zh(중국어 간체) 완전 완성(42/42) + EN 링크정합(결손 0) + ZH_CLUSTERS / 다음 = ar)
+
+> ✅✅✅ **zh 42/42편 완성** — EN 마스터와 완전 동일 구조. Rules 6·HR 6·Odds 6·Strategy 8·Tournament 9(tvc 재번역 포함)·Glossary 6·card-counting 1. 커밋 `f8b88b3`(Strategy)·`ac27d3b`(Tournament)·`a14c806`(Glossary+cc)+최종(링크복원 81→0·tvc 재번역·ZH_CLUSTERS). 하드게이트 통과(**372 intl posts/24언어**). **zh 잔여 부채 없음**(링크 결손 0). 상세 WORKLOG 2026-07-15 최상단.
+> - 브리프 `docs/translation-terms-zh.md`(严格简体·「你」체·족보중국어·set=暗三条/trips=明三条·영어유지 목록·false-friend). **zh = 6번째 완역**(ja·es·pt·de·zh).
+> - ★★zh 특유 교훈: ①**metadata(title/desc/tldr) 안쪽 인용부호는 반드시 전각「」** — ASCII `"` 넣으면 TS 문자열 조기종료 ParseError(limping·3bet 실발생) ②**숫자=영어식**(마침표 소수점·콤마 천단위·3:1·万/亿·$ 유지·% 붙여쓰기) — de/es/pt 유럽식과 정반대 ③FAQ 문제 전량 중국어화 필수(영어질문 잔재 반복→프롬프트 경고) ④**calculator=canonical `/calculator`**(zh 로케일 라우트 없음→`/zh/calculator`는 404) ⑤"10" 유지("T" 금지) ⑥tvc 등 초기 stale 번역은 축약본일 수 있음 → 링크복원 시 결손 남으면 전체 재번역이 정답.
+
+### ▶▶ 다음 = ar(아랍어) 언어 완성 — zh/de/pt와 동일 파이프라인
+- 구12언어 순서: ja✅ → es✅ → pt✅ → de✅ → zh✅ → **ar** → id → ms → vi → hi → tr.
+- 절차: ①현지어 웹 리서치 선행([[translation-local-research-first]]: 아랍어 포커사이트 실제용어, 최소 3편+) → `docs/translation-terms-ar.md` 브리프(★RTL 방향·아랍어 숫자표기·포커 용어 영어유지 관습 조사) ②Opus 병렬번역(EN 1:1·§13 그대로·품질 최우선) ③count 구조패리티(universe=`lib/posts-en/` 42편) ④네이티브 AR 적대적 QA(계산 재검증X) ⑤교정 ⑥필라별 커밋 ⑦42편 완성 후 최종 EN 링크복원 + `AR_CLUSTERS`.
+- `lib/posts-ar/` 현황부터 확인(기존 부분번역 stale 재검수 포함). 화이트리스트는 진행에 따라 확장(전체 42).
+- ★아랍어 RTL — 카드/숫자/방향 표현·마크다운 렌더 주의. 메타 필드 인용부호 이스케이프(zh 교훈 동일).
+
+## ▶▶▶ (이전) START HERE (2026-07-14 — ★★★de(독일어) 완전 완성(42/42) + EN 링크정합 + DE_CLUSTERS / 다음 = zh)
 
 > ✅✅✅ **de 42/42편 완성** — EN 마스터와 완전 동일 구조. Rules 6·HR 6·Odds 6·Strategy 8·Tournament 9·Glossary 6·card-counting 1. 커밋 `d4c3e32`·`18721af`·`3463258`·`9fbf5d8`(§13태그제거)·`d767114`·`7a32957`·`1f9c233`(링크복원)+DE_CLUSTERS. 하드게이트 통과(**338 intl posts/24언어**). **de 잔여 부채 없음**(링크 결손 0/초과 0). 상세 WORKLOG 2026-07-14 최상단.
 > - 브리프 `docs/translation-terms-de.md`(du·유럽식 숫자·독일식 족보 Straße/Drilling/Vierling·앵글리시즘+성). **de = 5번째 완역**(ja·es·pt·de).

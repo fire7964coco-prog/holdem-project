@@ -520,6 +520,86 @@ export const DE_CLUSTERS: PillarCluster[] = [
   },
 ];
 
+export const ZH_CLUSTERS: PillarCluster[] = [
+  {
+    id: "rules",
+    pillarSlug: "texas-holdem-rules-for-beginners",
+    pillarLabel: "规则",
+    nodes: [
+      { slug: "holdem-game-order", label: "牌局顺序" },
+      { slug: "holdem-betting-actions", label: "下注动作" },
+      { slug: "holdem-blind-meaning", label: "盲注" },
+      { slug: "holdem-all-in-rules", label: "All-in 规则" },
+      { slug: "holdem-showdown-rules", label: "摊牌" },
+    ],
+  },
+  {
+    id: "rankings",
+    pillarSlug: "holdem-hand-rankings",
+    pillarLabel: "牌型大小",
+    nodes: [
+      { slug: "holdem-flush-vs-straight", label: "同花 vs 顺子" },
+      { slug: "holdem-kicker", label: "踢脚牌" },
+      { slug: "holdem-tiebreak-rules", label: "平局判定" },
+      { slug: "holdem-split-pot-rules", label: "分池" },
+      { slug: "holdem-reading-the-board", label: "读牌面" },
+    ],
+  },
+  {
+    id: "odds",
+    pillarSlug: "holdem-probability",
+    pillarLabel: "赔率与数学",
+    nodes: [
+      { slug: "holdem-pot-odds", label: "底池赔率" },
+      { slug: "holdem-outs", label: "数 outs" },
+      { slug: "holdem-drawing-odds", label: "听牌赔率" },
+      { slug: "holdem-implied-odds", label: "隐含赔率" },
+      { slug: "holdem-equity", label: "胜率 equity" },
+    ],
+  },
+  {
+    id: "strategy",
+    pillarSlug: "holdem-strategy",
+    pillarLabel: "策略",
+    nodes: [
+      { slug: "holdem-positions", label: "位置" },
+      { slug: "holdem-position-play", label: "位置打法" },
+      { slug: "holdem-starting-hands-chart", label: "起手牌表" },
+      { slug: "holdem-limping", label: "平跟 limp" },
+      { slug: "holdem-3bet", label: "3bet" },
+      { slug: "holdem-continuation-bet", label: "c-bet" },
+      { slug: "holdem-when-to-fold", label: "何时弃牌" },
+    ],
+  },
+  {
+    id: "tournament",
+    pillarSlug: "holdem-tournament",
+    pillarLabel: "锦标赛",
+    nodes: [
+      { slug: "holdem-tournament-vs-cash-game", label: "锦标赛 vs 现金局" },
+      { slug: "holdem-icm", label: "ICM 基础" },
+      { slug: "holdem-bubble", label: "bubble 打法" },
+      { slug: "holdem-short-stack", label: "短码" },
+      { slug: "apt-incheon-2026-guide", label: "APT Incheon 2026", group: "Live Events" },
+      { slug: "korea-poker-marathon-2026", label: "Korea Marathon 2026", group: "Live Events" },
+      { slug: "wpt-australia-2026-guide", label: "WPT Australia 2026", group: "Live Events" },
+      { slug: "ept-barcelona-2026-guide", label: "EPT Barcelona 2026", group: "Live Events" },
+    ],
+  },
+  {
+    id: "glossary",
+    pillarSlug: "holdem-glossary",
+    pillarLabel: "术语表",
+    nodes: [
+      { slug: "holdem-straddle", label: "Straddle" },
+      { slug: "holdem-rake", label: "抽水 rake" },
+      { slug: "holdem-fish", label: "鱼 fish" },
+      { slug: "holdem-cooler", label: "Cooler" },
+      { slug: "holdem-bad-beat", label: "Bad Beat" },
+    ],
+  },
+];
+
 /** 이 slug가 속한 필라를 반환 (허브이거나 노드이면 매치). 없으면 null. 기본 EN, clusters 인자로 KO 등 전달. */
 export function clusterForSlug(slug: string, clusters: PillarCluster[] = EN_CLUSTERS): PillarCluster | null {
   for (const c of clusters) {
