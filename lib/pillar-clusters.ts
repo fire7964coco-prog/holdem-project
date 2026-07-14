@@ -277,6 +277,87 @@ export const JA_CLUSTERS: PillarCluster[] = [
   },
 ];
 
+// 스페인어 필라-클러스터 로드맵 (EN 6필라와 구조·슬러그 동일, 라벨만 현지화. es 42편 전부 실존).
+export const ES_CLUSTERS: PillarCluster[] = [
+  {
+    id: "rules",
+    pillarSlug: "texas-holdem-rules-for-beginners",
+    pillarLabel: "Reglas",
+    nodes: [
+      { slug: "holdem-game-order", label: "Orden de juego" },
+      { slug: "holdem-betting-actions", label: "Acciones de apuesta" },
+      { slug: "holdem-blind-meaning", label: "Ciegas" },
+      { slug: "holdem-all-in-rules", label: "Reglas del all-in" },
+      { slug: "holdem-showdown-rules", label: "Showdown" },
+    ],
+  },
+  {
+    id: "rankings",
+    pillarSlug: "holdem-hand-rankings",
+    pillarLabel: "Jerarquía de manos",
+    nodes: [
+      { slug: "holdem-flush-vs-straight", label: "Color vs escalera" },
+      { slug: "holdem-kicker", label: "El kicker" },
+      { slug: "holdem-tiebreak-rules", label: "Desempates" },
+      { slug: "holdem-split-pot-rules", label: "Bote dividido" },
+      { slug: "holdem-reading-the-board", label: "Leer la mesa" },
+    ],
+  },
+  {
+    id: "odds",
+    pillarSlug: "holdem-probability",
+    pillarLabel: "Odds y matemática",
+    nodes: [
+      { slug: "holdem-pot-odds", label: "Pot odds" },
+      { slug: "holdem-outs", label: "Contar outs" },
+      { slug: "holdem-drawing-odds", label: "Odds de proyecto" },
+      { slug: "holdem-implied-odds", label: "Odds implícitas" },
+      { slug: "holdem-equity", label: "Equity" },
+    ],
+  },
+  {
+    id: "strategy",
+    pillarSlug: "holdem-strategy",
+    pillarLabel: "Estrategia",
+    nodes: [
+      { slug: "holdem-positions", label: "Posiciones" },
+      { slug: "holdem-position-play", label: "Juego posicional" },
+      { slug: "holdem-starting-hands-chart", label: "Manos iniciales" },
+      { slug: "holdem-limping", label: "Limping" },
+      { slug: "holdem-3bet", label: "3-bet" },
+      { slug: "holdem-continuation-bet", label: "C-bet" },
+      { slug: "holdem-when-to-fold", label: "Cuándo foldear" },
+    ],
+  },
+  {
+    id: "tournament",
+    pillarSlug: "holdem-tournament",
+    pillarLabel: "Torneos",
+    nodes: [
+      { slug: "holdem-tournament-vs-cash-game", label: "MTT vs cash" },
+      { slug: "holdem-icm", label: "ICM básico" },
+      { slug: "holdem-bubble", label: "La burbuja" },
+      { slug: "holdem-short-stack", label: "Stack corto" },
+      { slug: "apt-incheon-2026-guide", label: "APT Incheon 2026", group: "Eventos en vivo" },
+      { slug: "korea-poker-marathon-2026", label: "Korea Marathon 2026", group: "Eventos en vivo" },
+      { slug: "wpt-australia-2026-guide", label: "WPT Australia 2026", group: "Eventos en vivo" },
+      { slug: "ept-barcelona-2026-guide", label: "EPT Barcelona 2026", group: "Eventos en vivo" },
+    ],
+  },
+  {
+    id: "glossary",
+    pillarSlug: "holdem-glossary",
+    pillarLabel: "Glosario",
+    nodes: [
+      { slug: "holdem-straddle", label: "Straddle" },
+      { slug: "holdem-rake", label: "Rake" },
+      { slug: "holdem-fish", label: "Fish" },
+      { slug: "holdem-cooler", label: "Cooler" },
+      { slug: "holdem-bad-beat", label: "Bad beat" },
+    ],
+  },
+];
+
 /** 이 slug가 속한 필라를 반환 (허브이거나 노드이면 매치). 없으면 null. 기본 EN, clusters 인자로 KO 등 전달. */
 export function clusterForSlug(slug: string, clusters: PillarCluster[] = EN_CLUSTERS): PillarCluster | null {
   for (const c of clusters) {
