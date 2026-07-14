@@ -71,7 +71,7 @@ Unas cuantas reglas rigen cómo se recorta realmente el rake por bote:
 
 ![Un bote modesto de fichas sobre el fieltro con un par de dólares ya apartados como rake, mostrando lo que cuesta silenciosamente una sola mano](/images/holdem-rake-lowstakes.webp "En los límites bajos el tope apenas se mueve conforme crecen los botes, así que los botes pequeños son los más rakeados en proporción")
 
-Aquí viene la parte que cambió mi forma de ver el juego. El porcentaje suena minúsculo — 5%, con tope de unos pocos pavos — pero lo pagas en casi cada bote que ganas, durante horas.
+Aquí viene la parte que cambió mi forma de ver el juego. El porcentaje suena minúsculo — 5%, con tope de unos pocos dólares — pero lo pagas en casi cada bote que ganas, durante horas.
 
 **Una partida en vivo $1/$2.** Con un rake del 10% topado en $5 y unas 30 manos repartidas por hora, la mayoría de botes disputados llegan o rozan el tope. Una sola mesa concurrida puede pagar **$100+ por hora** a la ranura entre todos los jugadores. Ese dinero sale directo de las ganancias colectivas — es la razón por la que una mesa llena de jugadores más o menos parejos sangra fichas poco a poco hacia la casa.
 
@@ -92,7 +92,7 @@ Misma habilidad, misma ventaja sobre la mesa — y el rake por sí solo es la di
 
 ## ¿Qué es el rakeback?
 
-Como la casa se beneficia del volumen que generas, la mayoría de salas te devuelve una parte para que sigas jugando. **El rakeback es un porcentaje del rake que pagas personalmente, devuelto a ti** — normalmente a través de puntos, cashback o un programa de fidelidad, pagado semanal o mensualmente. Un acuerdo de rakeback del 30% significa simplemente que recuperas 30 céntimos de cada dólar que rakeas.
+Como la casa se beneficia del volumen que generas, la mayoría de salas te devuelve una parte para que sigas jugando. **El rakeback es un porcentaje del rake que pagas personalmente, devuelto a ti** — normalmente a través de puntos, cashback o un programa de fidelidad, pagado semanal o mensualmente. Un acuerdo de rakeback del 30% significa simplemente que recuperas 30 centavos de cada dólar que rakeas.
 
 Hay dos formas de calcularlo:
 

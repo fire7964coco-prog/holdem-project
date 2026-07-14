@@ -115,7 +115,7 @@ El **cutoff** es el segundo mejor por una razón: solo el botón actúa detrás 
 
 La distinción importa: la **ciega grande pierde más fichas brutas por cada 100 manos** simplemente porque está obligada a poner una ciega completa en cada órbita — ninguna estrategia hace gratis una apuesta obligada. Pero la **ciega pequeña es el peor asiento para jugar de verdad**, porque actúas primero en cada calle del postflop sin un descuento compensatorio que valga la pena. Las cifras exactas de bb/100 varían según el nivel y el pool de jugadores, así que trata cualquier número concreto como un resultado típico de base de datos, no como una ley — el *ranking*, en cambio, es notablemente consistente.
 
-> **Consejo para partida en vivo:** En una partida en vivo de 1/2, los jugadores limpean el botón con regularidad porque «no tengo una gran mano». Eso es dejar sin usar el terreno más valioso del póker. En el botón, open-raise o fold — la prima posicional es demasiado valiosa para malgastarla limpeando.
+> **Consejo para partida en vivo:** En una partida en vivo de 1/2, los jugadores limpean en el botón con regularidad porque «no tengo una gran mano». Eso es dejar sin usar el terreno más valioso del póker. En el botón, open-raise o fold — la prima posicional es demasiado valiosa para malgastarla limpeando.
 
 ---
 

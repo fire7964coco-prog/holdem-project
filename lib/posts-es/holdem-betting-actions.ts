@@ -62,7 +62,7 @@ La regla más importante que se les escapa a los principiantes: ==r:no puedes pa
 
 ## ¿Qué es un check (pasar) en el póker?
 
-Pasar significa: ==g:"paso palabra — no apuesto, pero sigo en la mano".==
+Pasar significa: ==g:"paso — no apuesto, pero sigo en la mano".==
 
 No cuesta nada. En el póker en vivo se señala golpeando la mesa con los nudillos o diciendo "paso" (o "check"). La acción pasa al jugador de tu izquierda. Si todos pasan, se reparte la siguiente carta comunitaria — o, en el river, se va directamente al showdown.
 

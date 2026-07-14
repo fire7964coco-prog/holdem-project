@@ -16,7 +16,7 @@ export const POST: Post = {
   imageAlt: "Un jugador en UTG poniendo una apuesta ciega extra de dos fichas delante de la ciega grande antes de que se repartan las cartas",
   tags: ["straddle", "qué es un straddle en poker", "reglas del straddle poker", "mississippi straddle", "button straddle", "sleeper straddle", "straddle es rentable", "straddle utg"],
   content: `
-La primera vez que alguien puso un straddle en mi mesa de $1/$2, no tenía ni idea de por qué el tío en UTG soltó $4 antes de que salieran las cartas — ni de por qué el repartidor de repente empezó la acción dos asientos más allá. Durante un mes lo llamé "la apuesta del rico" hasta que aprendí lo que hace de verdad: un straddle ==dobla la apuesta y le compra a un jugador la última palabra==, todo antes de que nadie haya mirado una sola carta.
+La primera vez que alguien puso un straddle en mi mesa de $1/$2, no tenía ni idea de por qué el jugador en UTG soltó $4 antes de que salieran las cartas — ni de por qué el repartidor de repente empezó la acción dos asientos más allá. Durante un mes lo llamé "la apuesta del rico" hasta que aprendí lo que hace de verdad: un straddle ==dobla la apuesta y le compra a un jugador la última palabra==, todo antes de que nadie haya mirado una sola carta.
 
 Si has visto una partida en vivo donde aparece una ciega extra de la nada, este es el término que buscas. Abajo tienes exactamente qué es un **straddle**, cada tipo con el que te vas a encontrar, quién actúa primero cuando se pone uno, y la respuesta honesta a la única pregunta que importa: ==g:¿deberías ponerlo de verdad?==
 
@@ -90,7 +90,7 @@ No todos los straddles son iguales — y las diferencias tienen que ver con **d�
 - **Sleeper straddle** — una ciega desde un asiento que no es UTG y que se queda "dormida": está **inactiva a menos que la acción foldee hasta llegar a ella**, y en la mayoría de salas **no** compra posición ni la opción de subir. Rara, y casi nunca se ve online.
 - **Re-straddle (doble straddle)** — un jugador a la izquierda puede straddlear *por encima* de un straddle, por un mínimo del doble del anterior ($4 → $8 → $16). Si está permitido, y desde qué asientos, es pura regla de la casa.
 
-⚠️ Cada uno de estos **depende de las reglas de la casa.** Ante la duda, pregunta al piso antes de soltar fichas — la mecánica cambia de verdad de una sala a otra.
+⚠️ Cada uno de estos **depende de las reglas de la casa.** Ante la duda, pregunta al floor antes de soltar fichas — la mecánica cambia de verdad de una sala a otra.
 
 ---
 

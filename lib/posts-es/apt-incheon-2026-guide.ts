@@ -3,7 +3,7 @@ import type { Post } from "../posts";
 export const POST: Post = {
   slug: "apt-incheon-2026-guide",
   title: "APT Incheon 2026 — festival de póker + guía de viaje a Corea",
-  seoTitle: "¿Volar a Corea por el póker? APT Incheon 2026 en Paradise City + Seúl en 3 días",
+  seoTitle: "¿Volar a Corea por el póker? APT Incheon 2026 + Seúl",
   desc: "APT Incheon 2026 — 7–16 ago, Paradise City Casino junto al aeropuerto de Incheon. $2.7M GTD, Main Event ~$1,700. Clasifica desde $3.50 en Natural8 + Seúl.",
   tldr: "El APT Incheon 2026 se juega del 7 al 16 de agosto en el Paradise City Casino, Incheon — a 10 min en lanzadera gratuita desde la Terminal 1. Main Event: entrada de KRW 2,500,000 (~$1,703), $1M GTD. Clasifica desde $3.50 con los satélites por pasos de Natural8. Solo para extranjeros (los ciudadanos coreanos no pueden entrar). Seúl está a ~1 hora y es una de las mejores ciudades de Asia para comer, cultura y vida nocturna.",
   category: "tournament",

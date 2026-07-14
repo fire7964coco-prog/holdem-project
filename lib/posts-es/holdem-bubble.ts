@@ -16,7 +16,7 @@ export const POST: Post = {
   imageAlt: "Un stack corto de fichas y una torre de un stack grande enfrentados en una mesa de torneo en la burbuja, con una escalera de premios de fondo — el momento en que sobrevivir vale más que las fichas",
   tags: ["burbuja poker", "como jugar la burbuja", "estrategia burbuja poker", "bubble factor", "burbuja stack corto", "burbuja premios", "burbuja satelite", "hand for hand poker"],
   content: `
-Lo más disciplinado que he jugado en mi vida fue a tres jugadores de premios en un torneo de un viernes, con todo el mundo foldeando como si las cartas quemaran. Tenía un stack medio y open-foldeé as-jota (AJ) dos veces — manos que subiría siempre en un cash game. Dos órbitas después el stack corto busteó, entré limpeando en el min-cash… y acabé 14.º con un pago apenas por encima de mi buy-in. ==Me "sobreviví" a mí mismo hasta quedar fuera de cualquier dinero de verdad.== Eso es la burbuja en una anécdota: si la juegas con demasiado miedo te llevas cacahuetes; si la juegas bien, es donde los torneos se ganan de verdad.
+Lo más disciplinado que he jugado en mi vida fue a tres jugadores de premios en un torneo de un viernes, con todo el mundo foldeando como si las cartas quemaran. Tenía un stack medio y open-foldeé as-jota (AJ) dos veces — manos que subiría siempre en un cash game. Dos órbitas después el stack corto busteó, entré limpeando en el min-cash… y acabé 14.º con un pago apenas por encima de mi buy-in. ==Me "sobreviví" a mí mismo hasta quedar fuera de cualquier dinero de verdad.== Eso es la burbuja en una anécdota: si la juegas con demasiado miedo te llevas migajas; si la juegas bien, es donde los torneos se ganan de verdad.
 
 ==En la burbuja, una eliminación más deja cobrar a todos los demás — así que, durante unas pocas manos críticas, seguir vivo vale más que las fichas que podrías ganar.== Ese único hecho pone el póker normal patas arriba, y casi todo el mundo se equivoca de las dos mismas maneras: los stacks grandes no atacan lo suficiente, y los stacks medios pagan demasiado. Esta guía es el manual stack a stack — qué hacer con un stack grande, medio o corto, en las tres burbujas distintas que te encontrarás.
 
@@ -173,7 +173,7 @@ A. Significa que al torneo le falta una o unas pocas eliminaciones para premios.
 
 **Q. ¿Quién es el bubble boy en póker?**
 
-A. El bubble boy es el jugador que bustea en el último puesto sin premio — un sitio por debajo de premios — y no gana nada. Es el peor final de un torneo: todas las horas, ni un euro de pago. Algunos eventos dan al bubble boy un pequeño premio de consolación, pero tradicionalmente es cero.
+A. El bubble boy es el jugador que bustea en el último puesto sin premio — un sitio por debajo de premios — y no gana nada. Es el peor final de un torneo: todas las horas, ni un dólar de pago. Algunos eventos dan al bubble boy un pequeño premio de consolación, pero tradicionalmente es cero.
 
 **Q. ¿Qué es una stone bubble frente a una soft bubble?**
 

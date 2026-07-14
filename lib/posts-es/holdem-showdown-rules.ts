@@ -23,7 +23,7 @@ export const POST: Post = {
   image: "/images/holdem-showdown-rules-hero.webp",
   imageAlt: "Infografía del showdown en Texas Hold'em — en una mesa 4♥ 7♣ Q♦ K♠ 2♥, A♠ K♥ gana con pareja de reyes y kicker de as",
   content: `
-Pagas la apuesta del river. Y ahí os quedáis los dos, mirándoos fijamente, cada uno esperando a que sea el otro quien enseñe primero.
+Pagas la apuesta del river. Y ahí se quedan los dos, mirándose fijamente, cada uno esperando a que sea el otro quien enseñe primero.
 
 Nadie se mueve.
 

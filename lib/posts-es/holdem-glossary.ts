@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Glosario de Texas Hold'em: todos los términos que oirás en la mesa",
   seoTitle: "De los nuts al fish — el glosario de Texas Hold'em",
   desc: "Todos los términos de póker que oirás en la mesa, explicados fácil y agrupados por situación: apuestas, posiciones, manos, jerga y los más confusos.",
-  tldr: "Este es un glosario en cristiano de los términos de póker que de verdad salen en una partida de Texas Hold'em, agrupados según cómo te los vas a encontrar: acciones de apuesta, posiciones, manos y mesa, tipos de jugador, dinero y situaciones de mesa. Empieza por los términos que más se confunden (pasar vs igualar, trío/set vs trips, cooler vs bad beat) y luego navega por categoría. Los términos con una guía más completa enlazan directamente a ella.",
+  tldr: "Este es un glosario en lenguaje llano de los términos de póker que de verdad salen en una partida de Texas Hold'em, agrupados según cómo te los vas a encontrar: acciones de apuesta, posiciones, manos y mesa, tipos de jugador, dinero y situaciones de mesa. Empieza por los términos que más se confunden (pasar vs igualar, trío/set vs trips, cooler vs bad beat) y luego navega por categoría. Los términos con una guía más completa enlazan directamente a ella.",
   category: "glossary",
   date: "2026-07-05",
   updated: "2026-07-05",
@@ -18,7 +18,7 @@ export const POST: Post = {
   content: `
 La primera vez que me senté en una partida en vivo, la mesa bien podría haber estado hablando otro idioma. Uno estaba "under the gun", otro "resubió (3-bet) al cutoff", el repartidor preguntó si quería "run it twice", y cuando perdí con reyes me dijeron que "ni siquiera era un bad beat, solo un [cooler](/es/blog/holdem-cooler "thumb:/images/holdem-cooler-hero.webp")". Asentí como si lo entendiera. No entendía nada.
 
-El póker tiene su propio vocabulario, y dominarlo hace dos cosas: evita que parezcas un [fish (pez)](/es/blog/holdem-fish "thumb:/images/holdem-fish-hero.webp") y te deja seguir de verdad la estrategia que te hace ganar dinero. Este glosario reúne los términos que salen de verdad en una mesa de Texas Hold'em, agrupados por ==g:cómo te los vas a encontrar de verdad==, no amontonados en un tocho gigante de la A a la Z. Empieza por los términos que más se confunden y luego navega por la categoría que necesites. Donde un término tiene guía completa, encontrarás un enlace directo.
+El póker tiene su propio vocabulario, y dominarlo hace dos cosas: evita que parezcas un [fish (pez)](/es/blog/holdem-fish "thumb:/images/holdem-fish-hero.webp") y te deja seguir de verdad la estrategia que te hace ganar dinero. Este glosario reúne los términos que salen de verdad en una mesa de Texas Hold'em, agrupados por ==g:cómo te los vas a encontrar de verdad==, no amontonados en un listado interminable de la A a la Z. Empieza por los términos que más se confunden y luego navega por la categoría que necesites. Donde un término tiene guía completa, encontrarás un enlace directo.
 
 ---
 
@@ -26,7 +26,7 @@ El póker tiene su propio vocabulario, y dominarlo hace dos cosas: evita que par
 
 :::stripe
 6 | Categorías, agrupadas por cómo te las encuentras
-80+ | Términos explicados en cristiano
+80+ | Términos explicados en lenguaje llano
 12 | Parejas de "los que más se confunden", aclaradas primero
 → | Guías más completas enlazadas desde términos clave
 :::
@@ -170,7 +170,7 @@ El zoo de apodos para la gente al otro lado del tapete. El desglose completo est
 | **Calling station** | Un jugador pasivo que iguala demasiado y rara vez se retira o sube. |
 | **Reg** | Un "regular" — un jugador habitual, normalmente competente en un límite. |
 | **Grinder** | Un jugador que gana mediante volumen constante y disciplina. |
-| **LAG / TAG** | Loose-aggressive / tight-aggressive (flojo-agresivo / cerrado-agresivo) — dos estilos agresivos ganadores. |
+| **LAG / TAG** | Loose-aggressive / tight-aggressive (suelto-agresivo / cerrado-agresivo) — dos estilos agresivos ganadores. |
 | **Maniac** | Un jugador hiperagresivo que sube y farolea sin control. |
 | **Mark** | El jugador flojo al que la mesa intenta quitarle el dinero. |
 
@@ -220,14 +220,14 @@ Las palabras para lo que está pasando — y cómo comportarse mientras pasa.
 | **Showdown** | Enseñar las manos tras la última apuesta para decidir el ganador ([reglas del showdown](/es/blog/holdem-showdown-rules)). |
 | **Muck** | Descartar una mano boca abajo. |
 | **Chop / Bote dividido (split pot)** | Repartir el bote cuando las manos empatan ([botes divididos](/es/blog/holdem-split-pot-rules)). |
-| **Slow roll** | Retrasar a propósito enseñar una mano ganadora para chulearse — una falta grave de etiqueta. |
+| **Slow roll** | Retrasar a propósito enseñar una mano ganadora para presumir — una falta grave de etiqueta. |
 | **Tilt** | Juego malo movido por las emociones, normalmente tras una derrota. |
 | **Tell** | Una pista física o de comportamiento que filtra información sobre una mano. |
 | **Pot odds** | La proporción entre el bote y el coste de igualar — [cómo calcularlas](/es/blog/holdem-pot-odds). |
 | **Odds implícitas** | Pot odds ajustadas por las fichas que esperas ganar en calles posteriores. |
 | **Equity** | Tu porcentaje del bote ahora mismo ([guía de probabilidad](/es/blog/holdem-probability)). |
 | **EV (valor esperado)** | El resultado medio a largo plazo de una decisión; +EV gana con el tiempo. |
-| **VPIP** | Con qué frecuencia un jugador mete dinero voluntariamente preflop — la estadística de flojo/cerrado. |
+| **VPIP** | Con qué frecuencia un jugador mete dinero voluntariamente preflop — la estadística de suelto/cerrado. |
 | **PFR** | Con qué frecuencia un jugador sube preflop — la estadística de agresión (nunca mayor que el VPIP). |
 | **GTO** | Game Theory Optimal — una estrategia equilibrada e inexplotable de los solvers. |
 | **Rango (range)** | El conjunto completo de manos que un jugador podría tener en un spot; los pros piensan en rangos, no en manos sueltas. |

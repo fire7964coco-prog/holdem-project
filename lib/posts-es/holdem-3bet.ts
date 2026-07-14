@@ -124,7 +124,7 @@ La mayoría de las guías te sueltan "3x en posición, 4x fuera de posición" y 
 Las cuentas están a la vista a propósito porque es donde los principiantes se filtran: **3 × 3bb = 9bb** en posición, **4 × 3bb = 12bb** fuera de posición. Dos reglas que anulan los multiplicadores:
 
 - **Nunca hagas un 3-bet pequeño fuera de posición.** Un 3-bet OOP pequeño le da a tu rival un gran precio para igualar y superarte con la posición — justo lo que estás intentando evitar. Usa el 4x+ completo.
-- **El sizing no es una ley.** Baja *el tamaño* contra jugadores que foldean de más (estás faroleando más barato) y súbelo *y* ve puro valor contra estaciones de pago que nunca foldean. El rake y la profundidad de stack también lo mueven.
+- **El sizing no es una ley.** Baja *el tamaño* contra jugadores que foldean de más (estás faroleando más barato) y súbelo *y* ve puro valor contra calling stations que nunca foldean. El rake y la profundidad de stack también lo mueven.
 
 En torneos con stacks cortos, todo el cálculo cambia: con más o menos **10–25 ciegas grandes**, muchas manos se convierten en un **3-bet all-in (un "shove")** en lugar de una resubida pequeña, porque no hay margen para subir y foldear. Deja de min-3-betear y empieza a jamear a medida que te quedas corto.
 
@@ -180,7 +180,7 @@ Aquí tienes la mitad del 3-bet que casi todos los artículos se saltan: **estar
 
 | Stat de fold-to-3-bet del villano | Qué te dice | Tu ajuste |
 |:---:|:---|:---|
-| **~35% (raramente foldea)** | Una estación de pago — sus 3-bets y calls van cargados de valor | 3-betéalo **solo por valor**, deja de farolear y apuesta por valor sin descanso |
+| **~35% (raramente foldea)** | Una calling station — sus 3-bets y calls van cargados de valor | 3-betéalo **solo por valor**, deja de farolear y apuesta por valor sin descanso |
 | **~55% (balanceado)** | Un regular que piensa | Juega cerca del GTO — mezcla valor y faroles con bloqueadores |
 | **~70%+ (foldea demasiado)** | Un nit explotable | 3-betéalo **light mucho más a menudo** — te regala el bote |
 

@@ -84,7 +84,7 @@ Ninguna señal por sí sola es prueba — hasta los buenos jugadores limpean de 
 | **Shark (tiburón)** | Jugador fuerte y ganador | Tight-agresivo, adaptable | Evítalo — busca mesas más blandas |
 | **Ballena (whale)** | Un fish *rico* que pierde **a lo grande** | Muy suelto, altos límites, le da igual | Igual que un fish, mayor recompensa |
 | **Nit (roca)** | Extremadamente tight, aversión al riesgo | Solo manos premium, nunca farolea | Foldea a sus subidas; róbale las ciegas |
-| **Donk (donkey)** | Fish que hace jugadas especialmente *malas* | Ilógico, spew-y (regala fichas) | Igual que un fish — deja que se cuelgue solo |
+| **Donk (donkey)** | Fish que hace jugadas especialmente *malas* | Ilógico, descontrolado (spew) | Igual que un fish — deja que se cuelgue solo |
 | **Calling station** | Igualador pasivo compulsivo | Iguala cualquier cosa, nunca sube/foldea | Apuesta a valor sin fin, nunca farolees |
 | **Reg / regular** | Un "habitual" de un límite | Varía — no siempre es ganador | Léelo caso por caso |
 | **Grinder** | Pro/semipro de alto volumen | Sólido, constante, baja varianza | Evítalo; busca al recreativo |

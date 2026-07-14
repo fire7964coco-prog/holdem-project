@@ -55,7 +55,7 @@ En un cash game, si entras con $200, tus fichas representan $200. Si lo subes ha
 
 En un torneo, puedes pagar un buy-in de $100 y recibir 20,000 fichas. ==r:Esas fichas no valen $20,000==, y no puedes cambiarlas por dinero a mitad del evento. Solo importan porque te ayudan a sobrevivir, aplicar presión y terminar más arriba en la estructura de premios.
 
-Así se siente en la mesa. En un cash game de $1/$2, pagar una apuesta de $60 en river con una pareja significa arriesgar $60 ahora mismo. Si el call es malo, todavía puedes levantarte, recargar o jugar otro día. En un torneo de $50 cerca de premios, pagar un all-in de 18 ciegas grandes puede terminar todo tu evento. Las cartas pueden parecer parecidas, pero el coste de equivocarte no es el mismo.
+Así se siente en la mesa. En un cash game de $1/$2, pagar una apuesta de $60 en river con una pareja significa arriesgar $60 ahora mismo. Si el call es malo, todavía puedes levantarte, recargar o jugar otro día. En un torneo de $50 cerca de premios, pagar un all-in de 18 ciegas grandes puede acabar con todo tu torneo. Las cartas pueden parecer parecidas, pero el coste de equivocarte no es el mismo.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -265,7 +265,7 @@ Entonces, ¿cuándo *deberías* dejar un cash game? Las reglas dicen "cuando qui
 
 - **Vete cuando la mesa deje de ser buena.** Los jugadores más flojos se marchan, la alineación se ha vuelto tight o han desaparecido los asientos que hacían la mesa rentable.
 - **Vete cuando *tú* dejes de estar bien.** El tilt, el cansancio y la distracción destruyen los win rates más rápido que las malas cartas. Si te pillas pagando por frustración, recoge las fichas.
-- **No te vayas solo porque llegaste a una cifra.** Ir arriba o abajo un buy-in no dice nada sobre si la próxima hora será rentable. Dejar la mesa ganando en una gran partida y seguir grindeando pérdidas en una malísima son ambos leaks.
+- **No te vayas solo porque llegaste a una cifra.** Ir arriba o abajo un buy-in no dice nada sobre si la próxima hora será rentable. Dejar la mesa ganando en una gran partida y seguir grindeando pérdidas en una malísima ambos son leaks.
 - **Irte justo después de un bote grande está permitido.** Ninguna regla te obliga a "dar acción" — aunque, por etiqueta, una vuelta corta de enfriamiento queda mejor que un "hit-and-run" instantáneo (levantarte justo tras ganar el bote).
 
 | Situación del jugador | Mejor ajuste |

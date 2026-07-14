@@ -41,7 +41,7 @@ Dónde encaja el kicker en el panorama general de la [jerarquía de manos de pó
 
 La idea clave: un kicker ==nunca gana a una mano de valor superior.== Una pareja de reyes con un dos de kicker sigue aplastando a una pareja de dieces con un as de kicker — primero el valor, el kicker solo como desempate. Los kickers únicamente cuentan cuando los ==r:valores son idénticos==: pareja contra la misma pareja, trío contra el mismo trío.
 
-Digamos que tienes A-K y tu rival A-Q, y la mesa empareja un as. Ambos tenéis "pareja de ases" — mismo valor. Ahora deciden las cartas laterales, y tu rey supera a su reina. Nadie hizo una mano mejor; el kicker simplemente hizo su trabajo callado.
+Digamos que tienes A-K y tu rival A-Q, y la mesa empareja un as. Ambos tienen "pareja de ases" — mismo valor. Ahora deciden las cartas laterales, y tu rey supera a su reina. Nadie hizo una mano mejor; el kicker simplemente hizo su trabajo callado.
 
 ---
 

@@ -45,7 +45,7 @@ Un matiz preciso, porque importa: foldear *no es gratis.* Las fichas que ya est�
 
 ## Cuándo foldear antes del flop
 
-La mayor fuga del póker es jugar demasiadas manos, así que el mayor arreglo de un golpe es foldear la mayoría. **Un jugador sólido tight-agresivo foldea aproximadamente entre el 75 y el 85% de sus manos preflop** — más cerca del 75–80% en mesas de 6-max, y del 80–86% en full-ring. Si eso te parece extremo, recuerda: las manos que conservas son de media más fuertes que las de tus rivales, y de ahí viene tu ventaja.
+La mayor fuga del póker es jugar demasiadas manos, así que el mayor arreglo de un golpe es foldear la mayoría. **Un jugador sólido tight-aggressive foldea aproximadamente entre el 75 y el 85% de sus manos preflop** — más cerca del 75–80% en mesas de 6-max, y del 80–86% en full-ring. Si eso te parece extremo, recuerda: las manos que conservas son de media más fuertes que las de tus rivales, y de ahí viene tu ventaja.
 
 Foldea preflop cuando:
 
@@ -196,7 +196,7 @@ A. Foldea siempre que igualar o subir pierda dinero a la larga: cuando tu mano e
 
 **Q. ¿Con qué frecuencia deberías foldear preflop?**
 
-A. Un jugador sólido tight-agresivo foldea aproximadamente entre el 75 y el 85% de sus manos antes del flop — más cerca del 75–80% en 6-max y del 80–86% en full-ring. Jugar menos manos y más fuertes es el mayor arreglo de un golpe para casi todos los jugadores perdedores. Si entras en mucho más de una quinta parte de tus manos, casi seguro estás jugando demasiadas.
+A. Un jugador sólido tight-aggressive foldea aproximadamente entre el 75 y el 85% de sus manos antes del flop — más cerca del 75–80% en 6-max y del 80–86% en full-ring. Jugar menos manos y más fuertes es el mayor arreglo de un golpe para casi todos los jugadores perdedores. Si entras en mucho más de una quinta parte de tus manos, casi seguro estás jugando demasiadas.
 
 **Q. ¿Cuándo deberías foldear una buena mano?**
 

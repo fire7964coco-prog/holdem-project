@@ -111,7 +111,7 @@ La línea que nunca hay que cruzar es la trampa física o de información — ca
 
 ## El único juego de póker donde el conteo tradicional funciona: Seven Card Stud
 
-**En Seven Card Stud, buena parte de las cartas de cada jugador se reparten boca arriba — así que de verdad puedes contar la baraja a la vieja usanza.** Si necesitas una carta concreta para completar tu mano, puedes mirar alrededor de la mesa y contar literalmente cuántas de tus outs ya están a la vista en las cartas descubiertas de los rivales. Cada una que detectas es un out muerto.
+**En Seven Card Stud, buena parte de las cartas de cada jugador se reparten boca arriba — así que de verdad puedes contar la baraja a la vieja usanza.** Si necesitas una carta concreta para completar tu mano, puedes mirar alrededor de la mesa y contar literalmente cuántas de tus outs ya están a la vista en las cartas descubiertas de los rivales. Cada una que detectas es una out muerta.
 
 El Hold'em solo expone las cinco cartas comunitarias compartidas, así que esto se limita a la mesa. Pero el Stud premia justo el tipo de rastreo de cartas en el que los contadores de blackjack son buenos — es lo más cerca que el póker llega a la versión de película.
 

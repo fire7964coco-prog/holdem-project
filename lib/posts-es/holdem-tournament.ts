@@ -30,7 +30,7 @@ Entré a mi primer torneo de póker en vivo con $200, una idea vaga de cómo fun
 
 Cuatro horas después estaba fuera. Pero sabía exactamente qué quería decir cada término, por qué perdí y cuándo volver.
 
-Esta guía es todo lo que ojalá me hubieran contado antes de aquel día — cómo funciona de verdad la estructura de un torneo, en qué formato estás entrando, cómo registrarte sin parecer un pardillo y cómo se vive el Día 1 hora a hora.
+Esta guía es todo lo que ojalá me hubieran contado antes de aquel día — cómo funciona de verdad la estructura de un torneo, en qué formato estás entrando, cómo registrarte sin parecer un novato y cómo se vive el Día 1 hora a hora.
 
 ---
 
@@ -237,7 +237,7 @@ Esto es lo que ninguna otra guía te cuenta. Aquí tienes una cronología realis
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0">
 <div style="color:#22c55e;font-weight:700">9-11pm</div>
-<div style="color:var(--foreground)">ITM — estalla la burbuja del dinero. Los que quedan embolsan fichas o juegan a una mesa final esta misma noche.</div>
+<div style="color:var(--foreground)">ITM — estalla la burbuja de premios. Los que quedan embolsan fichas o juegan a una mesa final esta misma noche.</div>
 </div>
 </div>
 </div>
@@ -246,7 +246,7 @@ Esto es lo que ninguna otra guía te cuenta. Aquí tienes una cronología realis
 
 ## Estructura de premios de un torneo — quién cobra qué
 
-**Estructura típica:** el 10-15% de arriba del campo cobra.
+**Estructura típica:** el 10-15% superior del campo cobra.
 
 | Tamaño del campo | Jugadores pagados | Min-cash (típico) | 1.er puesto (típico) |
 |:---|:---:|:---:|:---|
@@ -296,7 +296,7 @@ Estos 13 términos cubren casi todo lo que oirás en la mesa. Para la A a la Z c
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span><strong>Buy-in + 20% extra</strong> en efectivo — algunos locales no aceptan tarjeta</span></div>
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span><strong>Tarjeta de fidelización del casino</strong> si la piden (p. ej., Caesars Rewards para la WSOP)</span></div>
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span><strong>Email de confirmación del registro</strong> si te preinscribiste online</span></div>
-<div style="display:flex;align-items:center;gap:10px;padding:7px 0"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span>Ropa cómoda — los torneos duran 6-12 horas. Lleva una chaqueta (las salas de cartas son frías).</span></div>
+<div style="display:flex;align-items:center;gap:10px;padding:7px 0"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span>Ropa cómoda — los torneos duran 6-12 horas. Lleva una chaqueta (las salas de póker son frías).</span></div>
 </div>
 
 <div style="font-size:13px;font-weight:700;color:var(--primary);margin:16px 0 10px">En la sede</div>
@@ -304,7 +304,7 @@ Estos 13 términos cubren casi todo lo que oirás en la mesa. Para la A a la Z c
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span>Llega 30-45 min antes del inicio. Las colas de registro pueden ser largas.</span></div>
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span>Cuenta tus fichas iniciales antes de jugar tu primera mano. Avisa al repartidor de inmediato si vas corto.</span></div>
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span>Pide la hoja de estructura — sabe cuándo entran los antes y cuándo es la pausa para cenar.</span></div>
-<div style="display:flex;align-items:center;gap:10px;padding:7px 0"><span style="width:18px;height:18px;border-radius:4px;background:rgba(255,150,0,0.12);border:1.5px solid rgba(255,150,0,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#ff9600">!</span><span><strong>Nada de móviles en la mesa mientras se juega una mano</strong> — la mayoría de salas de cartas lo penalizan.</span></div>
+<div style="display:flex;align-items:center;gap:10px;padding:7px 0"><span style="width:18px;height:18px;border-radius:4px;background:rgba(255,150,0,0.12);border:1.5px solid rgba(255,150,0,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#ff9600">!</span><span><strong>Nada de móviles en la mesa mientras se juega una mano</strong> — la mayoría de salas de póker lo penalizan.</span></div>
 </div>
 </div>
 

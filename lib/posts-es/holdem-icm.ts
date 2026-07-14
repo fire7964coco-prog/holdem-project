@@ -48,7 +48,7 @@ El cambio mental clave: en un cash game una ficha es un dólar, punto. En un tor
 
 **Porque el dinero de los premios está "cargado arriba" y queda bloqueado por debajo de ti.** Digamos que tres premios pagan $50 / $30 / $20. En el momento en que entras en premios, tienes garantizados al menos $20 — así que las fichas que protegen esos $20 son valiosísimas, mientras que las fichas que van a por el primer puesto persiguen un premio que solo puedes ganar una vez.
 
-Eso hace que la curva de fichas-a-dinero ==se doble==: las primeras fichas (supervivencia) valen mucho, las últimas fichas (ir a por la victoria) valen menos. Un jugador con la mitad de las fichas no posee la mitad de la bolsa de premios — posee bastante menos, porque no puede terminar mejor que primero pero *sí* puede bustear.
+Eso hace que la curva fichas-dinero ==se doble==: las primeras fichas (supervivencia) valen mucho, las últimas fichas (ir a por la victoria) valen menos. Un jugador con la mitad de las fichas no posee la mitad de la bolsa de premios — posee bastante menos, porque no puede terminar mejor que primero pero *sí* puede bustear.
 
 Dale la vuelta y el stack corto es el ganador de esta matemática. Ya tiene un derecho real sobre los saltos de premio que quedan por debajo, así que ==cada una de sus fichas vale más que su valor nominal==. Esta única asimetría — el stack grande sobrevalorado en fichas, el stack corto infravalorado — impulsa cada decisión de ICM que tomarás en tu vida.
 

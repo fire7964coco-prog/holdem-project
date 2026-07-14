@@ -2,7 +2,7 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "ept-barcelona-2026-guide",
-  seoTitle: "¿No llegas al EPT Barcelona? El camino de $0.50 al Main Event de €5,300",
+  seoTitle: "¿No te da para el EPT Barcelona? De $0.50 al Main de €5,300",
   title: "EPT Barcelona 2026 — Guía completa del jugador: calendario, buy-ins y cómo clasificar",
   desc: "EPT Barcelona 2026 — 16–29 ago, Casino Barcelona. Del Power Path de $0.50 al Main de €5,300. Calendario, buy-ins, hoteles y consejos para novatos.",
   tldr: "El EPT Barcelona 2026 es del 16 al 29 de agosto en Casino Barcelona. Buy-in del Main Event: €5,300. La vía online más barata: Power Path desde $0.50 → Gold Pass (Main de €5,300 + 8 noches de hotel + €690 de gastos). Necesitas una cuenta de PokerStars Live y un pasaporte en regla. Reserva hotel cuanto antes: agosto es plena temporada alta.",

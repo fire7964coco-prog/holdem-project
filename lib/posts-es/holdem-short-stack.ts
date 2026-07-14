@@ -148,7 +148,7 @@ La matemática real detrás de "cuánto más bajo es mi factor de burbuja" vive 
 4. **Fundirte hasta nada.** Esperar ases hasta tener tres ciegas grandes tira a la basura la fold equity que hace rentable el shove. Actúa mientras tu all-in todavía asuste a la gente (por lo general, antes de bajar de ~8–10bb).
 5. **Ignorar la posición.** Ir de jam solo con premiums desde el botón, o de shove demasiado amplio desde UTG, ambos pierden fichas. Amplía en posición tardía, cierra en temprana.
 
-Evita estos cinco y ya le ganarás a la mayoría del field, que trata un short stack como uno profundo justo hasta que bustea.
+Evita estos cinco y ya le ganarás a la mayoría del campo, que trata un short stack como uno profundo justo hasta que bustea.
 
 ---
 

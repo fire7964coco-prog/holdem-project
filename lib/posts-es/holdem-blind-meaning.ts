@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Pilas de fichas de la ciega pequeña y la ciega grande con etiquetas junto a un botón de dealer dorado en una mesa de póker",
   tags: ["que son las ciegas en el poker", "ciega pequeña y ciega grande", "big blind poker", "small blind poker", "ciegas texas holdem", "ante ciega grande", "defender la ciega grande"],
   content: `
-En la primera mano de póker en vivo que jugué en mi vida, el dealer dio un toque en el fieltro delante de mí antes de que hubiera visto una sola carta: "Ciega pequeña, por favor." Me quedé helado — ¿pagar? ¿Pagar *por qué*? Doce años y miles de horas después, sigo viendo a algún novato quedarse helado en ese mismo momento casi todas las sesiones.
+En la primera mano de póker en vivo que jugué en mi vida, el dealer dio un toque en el tapete delante de mí antes de que hubiera visto una sola carta: "Ciega pequeña, por favor." Me quedé helado — ¿pagar? ¿Pagar *por qué*? Doce años y miles de horas después, sigo viendo a algún novato quedarse helado en ese mismo momento casi todas las sesiones.
 
 Las ciegas son ==el motor que mantiene vivo el póker== — la primera pieza de las [reglas del Texas Hold'em](/es/blog/texas-holdem-rules-for-beginners) que de verdad te cuesta fichas. En cuanto las entiendes, toda la jerga numérica del juego ("subida a 2BB", "stack de 20BB") cobra sentido de golpe. Aquí lo tienes todo en una lectura rápida.
 
@@ -78,7 +78,7 @@ En cuanto entiendes la ciega grande, toda la jerga numérica del juego — tama�
 
 ## Reglas de la ciega pequeña y la ciega grande: quién las pone y cuándo
 
-Las dos ciegas se ponen **antes del reparto**, y el botón del dealer avanza un asiento en el sentido de las agujas del reloj tras cada mano — así que los asientos de las ciegas rotan con él y ==todos pagan ambas ciegas una vez por vuelta==. Aquí no se libra nadie.
+Las dos ciegas se ponen **antes del reparto**, y el botón del dealer avanza un asiento en el sentido de las agujas del reloj tras cada mano — así que los asientos de las ciegas rotan con él y ==todos pagan ambas ciegas una vez por órbita==. Aquí no se libra nadie.
 
 | | Ciega pequeña | Ciega grande |
 |------|-------------|-------------|

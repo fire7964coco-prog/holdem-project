@@ -92,7 +92,7 @@ Paso a paso: tienes A♥ 5♥ y la mesa muestra A♦ 7♦ 4♠ 10♣ 2♠.
 
 Jugar con la mesa significa que ==tus cartas propias no aportan nada — las 5 cartas comunitarias ya son la mejor mano de 5 cartas que puedes formar==.
 
-Mesa: A♠ A♦ A♣ 7♥ 7♦ — un full, ases llenos de sietes. Tú tienes K♣ Q♣. Compruébalo: quedarte con el full (A-A-A-7-7) supera cualquier combinación de 5 cartas que use tu rey o tu reina (A-A-A-K-7 es solo trío). ==Tu mejor mano es la propia mesa.==
+Mesa: A♠ A♦ A♣ 7♥ 7♦ — un full, full de ases con sietes. Tú tienes K♣ Q♣. Compruébalo: quedarte con el full (A-A-A-7-7) supera cualquier combinación de 5 cartas que use tu rey o tu reina (A-A-A-K-7 es solo trío). ==Tu mejor mano es la propia mesa.==
 
 Y aquí viene lo que importa para tu stack: ==r:la mesa pertenece a todos los que siguen en la mano==. Si nadie puede mejorarla, el bote se reparte — la mecánica completa está en las [reglas del bote dividido](/es/blog/holdem-split-pot-rules "thumb:/images/holdem-split-pot-hero.webp"). Pero antes de dar por hecho un reparto, pregunta quién SÍ puede ganarle a la mesa:
 
@@ -156,7 +156,7 @@ Mesa: K♣ K♦ 7♠ 3♥ 2♣
 | Tienes | Tus mejores 5 | Mano |
 |------|------|------|
 | K♥ 9♦ | K-K-K-9-7 | Trío de reyes (juega una carta propia) |
-| 7♥ 7♦ | 7-7-7-K-K | Full, sietes llenos de reyes |
+| 7♥ 7♦ | 7-7-7-K-K | Full, full de sietes con reyes |
 | A♠ Q♦ | K-K-A-Q-7 | Solo pareja — los reyes de la mesa — con A-Q detrás |
 
 Fíjate en la última fila: ==incluso sin nada, la pareja de la mesa forma parte de tu mano==. "¿Cuenta una pareja en la mesa?" — sí, para todos a la vez. Por eso la pareja alta pierde valor en mesas emparejadas: cualquier rey en la mano de alguien es trío, cualquier 7-7 es full, y tu pareja de repente es la tercera mejor.

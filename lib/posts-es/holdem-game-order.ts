@@ -306,7 +306,7 @@ Cuanto más cerca estés del botón, mejor — hablar el último te deja ver lo 
 
 ### 3. Perseguir proyectos a ciegas
 
-Un proyecto de color o de escalera no significa pagar en automático. Tienes que pesar las **pot odds** — el precio de pagar frente al tamaño del bote. Si el bote es de 100,000 y tienes que pagar 50,000, tu proyecto necesita completarse al menos un 33% de las veces para que compense.
+Un proyecto de color o de escalera no significa pagar en automático. Tienes que sopesar las **pot odds** — el precio de pagar frente al tamaño del bote. Si el bote es de 100,000 y tienes que pagar 50,000, tu proyecto necesita completarse al menos un 33% de las veces para que compense.
 
 ### 4. Tirarte un farol en el river con una mano floja de la nada
 

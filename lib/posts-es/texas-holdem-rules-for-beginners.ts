@@ -3,7 +3,7 @@ import type { Post } from "../posts";
 export const POST: Post = {
   slug: "texas-holdem-rules-for-beginners",
   title: "Cómo jugar al Texas Hold'em para principiantes — reglas, fichas, manos y primera estrategia",
-  seoTitle: "Cómo jugar al Texas Hold'em — reglas, fichas y chuleta imprimible",
+  seoTitle: "Cómo jugar al Texas Hold'em — reglas, fichas y chuleta",
   desc: "¿Primera partida? Cómo jugar al Texas Hold'em paso a paso: ciegas, reparto de fichas, jerarquía de manos y una chuleta imprimible para aprender desde cero.",
   tldr: "En el Texas Hold'em cada jugador recibe 2 cartas propias, se usan 5 cartas comunitarias y, tras cuatro rondas de apuestas, gana la mejor mano de póker de 5 cartas.",
   category: "rules",
@@ -30,7 +30,7 @@ Si has buscado ==reglas del Texas Hold'em para principiantes==, lo que necesitas
 
 Necesitas saber qué son las ciegas, cuándo te toca hablar, cómo funcionan las cinco cartas comunitarias, qué mano gana y cuántas fichas repartir a cada uno cuando juegas en casa.
 
-Esta guía explica ==cómo jugar al Texas Hold'em para principiantes== en cristiano, con el orden exacto de juego, el reparto de fichas para empezar, cómo repartir las cartas y una chuleta imprimible para tener al lado de la mesa.
+Esta guía explica ==cómo jugar al Texas Hold'em para principiantes== en lenguaje llano, con el orden exacto de juego, el reparto de fichas para empezar, cómo repartir las cartas y una chuleta imprimible para tener al lado de la mesa.
 
 ### Cómo se juega al Texas Hold'em en 30 segundos
 
@@ -116,7 +116,7 @@ El Texas Hold'em funciona con entre **2 y 10 jugadores** en una mesa. No necesit
 
 Para una primera partida en casa, **de 4 a 6 jugadores** es el punto ideal — suficiente acción para aprender y pocos jugadores para que las manos vayan rápido.
 
-==g:Cuando solo quedan dos jugadores (o empezáis dos), se llama heads-up.== Las reglas son las mismas con un giro: ==el botón pone la ciega pequeña y habla primero antes del flop, pero la ciega grande habla primero en el flop, el turn y el river.== Esa inversión mantiene la partida justa cuando, de otro modo, un jugador siempre hablaría el último.
+==g:Cuando solo quedan dos jugadores (o si empiezan dos), se llama heads-up.== Las reglas son las mismas con un giro: ==el botón pone la ciega pequeña y habla primero antes del flop, pero la ciega grande habla primero en el flop, el turn y el river.== Esa inversión mantiene la partida justa cuando, de otro modo, un jugador siempre hablaría el último.
 
 El número de jugadores también cambia tu estrategia — cuantos más rivales, más probable que alguien lleve una mano fuerte, así que retiras las manos más flojas. Si estás decidiendo entre una partida casual y un formato competitivo, mira [cash game vs torneo](/es/blog/holdem-tournament-vs-cash-game).
 
@@ -221,7 +221,7 @@ Esta es la secuencia de reparto fácil para principiantes:
 7. Quema una carta y reparte el flop.
 8. Quema una carta y reparte el turn.
 9. Quema una carta y reparte el river.
-10. En el showdown, comparad las mejores manos de cinco cartas.
+10. En el showdown, se comparan las mejores manos de cinco cartas.
 
 La carta quemada es la carta superior que se deja boca abajo antes del flop, el turn y el river. Ayuda a proteger el mazo y es estándar en el póker en vivo.
 
