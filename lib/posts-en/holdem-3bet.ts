@@ -174,7 +174,7 @@ Here's the half of 3-betting that almost every article skips: **you'll be on the
 - **Call** — with hands that flop well and have the equity or position to continue: pocket pairs looking to set-mine, suited broadways, and strong hands that don't want to bloat the pot into a 4-bet war.
 - **Fold** — everything else. Most of your opening range should simply give up to a 3-bet; that's normal, not weakness.
 
-How much should you continue? The theoretical baseline is **Minimum Defense Frequency (MDF)** — the share of your range you must continue so the 3-bettor can't profit by bluffing any two cards. It's ==pot ÷ (pot + bet)==, which against typical 3-bet sizes lands somewhere around **half your range** in a vacuum. But here's the exploit that wins money at real tables:
+How much should you continue? The theoretical baseline is **Minimum Defense Frequency (MDF)** — the share of your range you must continue so the 3-bettor can't profit by bluffing any two cards. It's ==pot ÷ (pot + bet)== — where *pot* is what's in the middle before the 3-bet and *bet* is the 3-bet's size — which against typical 3-bet sizes lands around **a third of your range** in a vacuum (a 3x 3-bet: 4.5bb pot ÷ (4.5bb + 9bb) ≈ 33%). But here's the exploit that wins money at real tables:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

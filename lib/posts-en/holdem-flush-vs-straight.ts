@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Does a Flush Beat a Straight? The Math and the Misreads",
   seoTitle: "Does a Flush Beat a Straight? Yes — and What Beats a Flush",
   desc: "Slid a straight forward — and a flush took the pot? A flush always beats a straight. Here's the math, what beats a flush, and 3 boards that fool players.",
-  tldr: "A flush (five cards of one suit, ~0.197%) always beats a straight (five in sequence, ~0.392%) in Texas Hold'em — because a flush is about twice as hard to make.",
+  tldr: "A flush (five cards of one suit — ~0.197% of five-card deals) always beats a straight (five in sequence, ~0.392%) in Texas Hold'em — because a flush is about twice as hard to make.",
   category: "hand-rankings",
   date: "2026-06-13",
   updated: "2026-07-11",
@@ -203,7 +203,7 @@ A. Yes. Two flushes are compared card by card from the top down, so an ace-high 
 
 **Q. Does the suit of a flush matter?**
 
-A. No. Texas Hold'em has no suit ranking, so a spade flush and a heart flush of the same five ranks are equal — identical flushes split the pot. Only the card ranks decide the winner.
+A. No. Texas Hold'em has no suit ranking. Suits only matter for *making* a flush, never for comparing hands — when two flushes clash (always the same suit in Hold'em, since they share board cards), only the ranks decide, and identical ranks split the pot.
 
 **Q. Can a flush and a straight ever tie or split the pot?**
 

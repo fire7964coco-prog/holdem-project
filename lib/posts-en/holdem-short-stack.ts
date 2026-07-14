@@ -76,7 +76,7 @@ The catch is that fold equity ==decays as your stack shrinks==. At 12–15 big b
 |:--|:--:|:--:|:--|
 | 🟢 Green | 20+ | ~30bb+ | Full arsenal, play normal poker |
 | 🟡 Yellow | 10–20 | ~15–30bb | Tighten up, start looking for shoves |
-| 🟠 Orange | 5–10 | ~8–15bb | Push/fold; first-in aggression, steal blinds |
+| 🟠 Orange | 6–10 | ~9–15bb | Push/fold; first-in aggression, steal blinds |
 | 🔴 Red | 1–5 | ~1.5–8bb | Shove-or-fold any reasonable hand |
 | ⚫ Dead | under 1 | under ~1.5bb | Shove any two cards, next playable spot |
 
@@ -177,7 +177,7 @@ A. As a beginner default, no — min-raise-then-fold is a classic leak. As an ad
 
 **Q. What is the M-ratio in poker?**
 
-A. The M-ratio is your stack divided by the cost of one orbit (small blind + big blind + antes) — how many rounds you can survive folding. Harrington's zones are Green (20+), Yellow (10–20), Orange (5–10), Red (1–5), and Dead (under 1). The lower your M, the more you must take shove-or-fold spots. With no antes, M is roughly your big blinds ÷ 1.5.
+A. The M-ratio is your stack divided by the cost of one orbit (small blind + big blind + antes) — how many rounds you can survive folding. Harrington's zones are Green (20+), Yellow (10–20), Orange (6–10), Red (1–5), and Dead (under 1). The lower your M, the more you must take shove-or-fold spots. With no antes, M is roughly your big blinds ÷ 1.5.
 
 **Q. What is fold equity and why does it shrink?**
 

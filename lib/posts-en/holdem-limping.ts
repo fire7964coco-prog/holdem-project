@@ -66,7 +66,7 @@ This distinction matters because most of the "limping is terrible" advice is rea
 When you open-limp, you give up a surprising amount. Here's exactly what:
 
 1. **You can't win the pot preflop.** This is the big one. When you *raise* first-in, everyone can fold and you scoop the blinds uncontested — free money, a meaningful chunk of the time. When you limp, that number is **zero**. You've guaranteed you have to make a hand or win it later; you've thrown away the cleanest way to win.
-2. **You surrender initiative.** The preflop raiser is the "aggressor" — they get to fire a [continuation bet](/en/blog/holdem-glossary) on the flop and represent a strong hand, often taking the pot with nothing. Limp, and you've handed that story to someone else. You're now reacting instead of leading.
+2. **You surrender initiative.** The preflop raiser is the "aggressor" — they get to fire a [continuation bet](/en/blog/holdem-continuation-bet) on the flop and represent a strong hand, often taking the pot with nothing. Limp, and you've handed that story to someone else. You're now reacting instead of leading.
 3. **You build a bloated, multiway pot — often out of position.** Limping invites more callers and lets the big blind in cheaply. The more players see the flop, the less your hand is worth, and if you limped from early position you'll be acting *first* on every street with no initiative. That's the worst seat in the house.
 4. **You make yourself readable — and exploitable.** Habitual limpers show up with a capped, transparent range. Good players attack it relentlessly (more on that below), so you end up in tricky spots out of position over and over. As the old saying goes, chronic limpers "win small pots and lose big ones."
 

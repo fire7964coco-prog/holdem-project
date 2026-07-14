@@ -135,7 +135,7 @@ Don't want to grind four steps? PokerStars also runs **direct satellites** for E
 - Find them under **Events → Live Events → EPT Barcelona** in the PokerStars lobby
 - Available in the run-up to the festival — ==frequency increases from late July==
 
-> **The math:** A €109 direct satellite typically sends 1 in every 10–15 players to the Main Event. If you're a winning player, this route can make sense. ==r:For casual players, Power Path gives more shots per dollar.==
+> **The math:** A €109 direct satellite typically sends about 1 in 50 players to the Main Event (a €530 satellite runs closer to 1 in 10). If you're a winning player, this route can make sense. ==r:For casual players, Power Path gives more shots per dollar.==
 
 ---
 
@@ -168,7 +168,7 @@ Don't want to grind four steps? PokerStars also runs **direct satellites** for E
 | EPT Main Event buy-in | **€5,300** |
 | Daily food & transport (10 days) | €500–€800 |
 | Side events (optional) | €825–€3,250 |
-| ==**Total trip estimate**== | ==**€7,750–€11,550**== |
+| ==**Total trip estimate**== | ==**€7,775–€11,550**== |
 
 </div>
 

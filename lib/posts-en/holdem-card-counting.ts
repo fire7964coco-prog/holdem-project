@@ -89,7 +89,7 @@ A ==blocker== is a card in your hand that reduces the combinations your opponent
 
 ![Infographic of A♠ J♦ on an all-spade K♠ 9♠ 4♠ flop — holding the ace of spades blocks the nut flush](/images/holdem-card-counting-blocker.webp "Holding the A♠ on a three-spade board means no opponent can have the nut flush — that's card removal at work")
 
-Blockers also work partially. On a ==b:Q-J-9== board, the nut straight is K-T. There are normally 16 ways to hold K-T (4 kings × 4 tens); if you hold one king or one ten yourself, you knock that down to ==12 combinations==, so the nut straight is 25% less likely in their range. This is the core of modern bluff selection — more in the [guide to 3-betting and blockers](/en/blog/holdem-3bet).
+Blockers also work partially. On a ==b:Q-J-9== board, the nut straight is K-10. There are normally 16 ways to hold K-10 (4 kings × 4 tens); if you hold one king or one ten yourself, you knock that down to ==12 combinations==, so the nut straight is 25% less likely in their range. This is the core of modern bluff selection — more in the [guide to 3-betting and blockers](/en/blog/holdem-3bet).
 
 ### Card removal & dead cards
 

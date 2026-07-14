@@ -104,7 +104,7 @@ The case isn't complicated. It's about timing and location.
 
 **Getting there from Seoul:** ITX-Cheongchun express train from Yongsan Station → Chuncheon, ~80–90 min, ~₩8,800. Or subway 경의중앙선 to Cheongnyangni, then Chuncheon line (~100 min total, cheaper). Affordable, scenic, no car required.
 
-**The Chuncheon → Paradise City route:** After the race, express train back to Seoul (~70 min) → AREX from Seoul Station or Hongdae → Paradise City shuttle from T1. Total: ~3 hours. Entirely doable on post-race Sunday evening.
+**The Chuncheon → Paradise City route:** After the race, express train back to Seoul (~80 min) → AREX from Seoul Station or Hongdae → Paradise City shuttle from T1. Total: ~3 hours. Entirely doable on post-race Sunday evening.
 
 ---
 
@@ -366,7 +366,7 @@ The cleanest double-dip: APT Incheon (Aug 7–16) → rest in Seoul → Chuncheo
 | Sep 25–Oct 7 | ==g:APT Jeju 2026 tournaments== · explore Jeju between sessions |
 | Oct 8–9 | Fly Jeju → Seoul · check into Seoul or Paradise City hotel |
 | Oct 10–24 | Seoul time — Gyeongbokgung, Hongdae, Myeongdong, cash games |
-| ==**Oct 25**== | ==**Chuncheon Marathon**== (ITX from Seoul, 70 min) |
+| ==**Oct 25**== | ==**Chuncheon Marathon**== (ITX from Seoul, ~80 min) |
 | Oct 26–31 | Recovery · Seoul or Paradise City cash games |
 | Nov 1 | Optional: ==**JTBC Seoul Marathon**== (back-to-back week) |
 | Nov 2 | Fly out from Incheon Airport |
@@ -482,7 +482,7 @@ A. No. The Chuncheon and JTBC marathons have English registration tracks specifi
 
 **Q. Can I run both Chuncheon (Oct 25) and JTBC Seoul (Nov 1) in the same trip?**
 
-A. Yes — they're one week apart. Chuncheon is 90 min from Seoul by train. Run Chuncheon Sunday, recover Monday–Saturday, run JTBC the following Sunday. Many Korean runners do back-to-back weeks like this. Budget extra recovery time; the Chuncheon course has hills.
+A. Yes — they're one week apart. Chuncheon is about 80 min from Seoul by train. Run Chuncheon Sunday, recover Monday–Saturday, run JTBC the following Sunday. Many Korean runners do back-to-back weeks like this. Budget extra recovery time; the Chuncheon course has hills.
 
 **Q. Is Paradise City Casino open if I arrive on a Sunday after a marathon?**
 

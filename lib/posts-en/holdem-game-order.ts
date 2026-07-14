@@ -223,8 +223,9 @@ B checks, A bets **15,000** (about half pot), B calls.
 
 ### River: A♥
 
+- **B:** checks.
 - **A:** the ace pairs up — now **two pair, aces and kings**. Feeling great, bets **30,000**.
-- **B:** the set still crushes two pair. Raises to **70,000**.
+- **B:** the set still crushes two pair. Check-raises to **70,000**.
 - **A:** convinced two pair is good, calls.
 
 **Pot: 198,000**
@@ -260,7 +261,7 @@ Here is every action available at the table — the part beginners mix up most.
 
 </div>
 
-==r:**Important:** you cannot check preflop==, because the big blind is already a live bet. ==Checking only becomes possible from the flop onward.==
+==r:**Important:** preflop you can't check — with one exception.== The big blind is already a live bet, so everyone else must call, raise, or fold. ==The big blind alone may check if no one has raised; for everyone else, checking begins on the flop.==
 
 For a deeper decision guide on when to use each move — with a check-call-raise-fold decision table — see [betting actions explained](/en/blog/holdem-betting-actions).
 

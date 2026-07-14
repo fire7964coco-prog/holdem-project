@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Poker Starting Hands Chart & Best Hands",
   seoTitle: "Fold 80% of Your Hands? — Best Poker Starting Hands Chart",
   desc: "Most hole cards lose money. The best and good starting hands in poker, the full chart by position and 6-max, plus GTO vs beginner charts — in 10 minutes.",
-  tldr: "Of the 169 starting hand types, only a small top slice — about 15–20% of the hands you're dealt — is profitable for a beginner. Big pairs (AA–TT) and AK raise from any seat; the later you act, the wider you open — from ~12% under the gun to ~42% on the button (wider again in 6-max). Start with a simplified chart, add GTO preflop charts once raise-or-fold is automatic.",
+  tldr: "Of the 169 starting hand types, only a small top slice — about 15–20% of the hands you're dealt — is profitable for a beginner. Big pairs (AA–TT) and AK raise from any seat; the later you act, the wider you open — from ~13% under the gun to ~43% on the button (wider again in 6-max). Start with a simplified chart, add GTO preflop charts once raise-or-fold is automatic.",
   category: "strategy",
   date: "2026-06-14",
   updated: "2026-07-11",
@@ -37,7 +37,7 @@ This page is the one-stop version: the 10 best starting hands, what makes a hand
 :::stripe
 169 | Distinct starting hand types (1,326 exact combos)
 ~80% | Hands a beginner should fold preflop
-~12% → ~42% | Opening range from UTG out to the button (9-max)
+~13% → ~43% | Opening range from UTG out to the button (9-max)
 ~85% | How often AA beats one random hand
 :::
 
@@ -95,10 +95,10 @@ Here is the poker starting hands chart for a standard 9-max table:
 
 | Position | Open range | Key hands to play |
 |----------|-----------|-------------------|
-| UTG (Early) | Top ~12% | TT+, AJs+, AKo, KQs |
+| UTG (Early) | Top ~13% | TT+, AJs+, AKo, KQs |
 | MP (Middle) | Top ~17% | Add 88, 99, ATs, KJs, QJs, JTs |
-| CO (Cutoff) | Top ~26% | Add 55–77, A9s+, KTs+, suited connectors (T9s, 98s) |
-| BTN (Button) | Top ~42% | Add 22–44, A2s+, suited broadways, weaker offsuit hands |
+| CO (Cutoff) | Top ~27% | Add 55–77, A9s+, KTs+, suited connectors (T9s, 98s) |
+| BTN (Button) | Top ~43% | Add 22–44, A2s+, suited broadways, weaker offsuit hands |
 
 The rule: ==the later you act, the more hands you can open profitably==. Because the button always acts last postflop, it's the most valuable seat in poker.
 
@@ -106,13 +106,13 @@ Explore the full color-coded grid — every one of the 169 hands by position:
 
 :::rangechart:::
 
-Want it as a standalone tool with expanded ranges per seat? Use the [Texas Hold'em starting hand chart tool](/hand-chart). For a breakdown of every seat name (UTG, HJ, CO, BTN, SB, BB), see the [poker positions guide](/en/blog/holdem-positions "thumb:/images/holdem-positions-hero.webp").
+Want it as a standalone tool with expanded ranges per seat? Use the [Texas Hold'em starting hand chart tool](/en/hand-chart). For a breakdown of every seat name (UTG, HJ, CO, BTN, SB, BB), see the [poker positions guide](/en/blog/holdem-positions "thumb:/images/holdem-positions-hero.webp").
 
 ### Early position (UTG): the tightest range
 
-UTG is the hardest seat to play. ==r:Six or more players still act behind you.== Any hand you open here needs to hold up against strong ranges.
+UTG is the hardest seat to play. ==r:Eight players still act behind you.== Any hand you open here needs to hold up against strong ranges.
 
-The core of the UTG range (a full ~12% range adds a few more suited hands as you improve):
+The core of the UTG range (a full ~13% range widens to mid pairs like 77–99, more suited broadways, and a few offsuit hands like AQo/AJo as you improve):
 
 - Pocket pairs: **TT, JJ, QQ, KK, AA**
 - Premium suited: **AKs, AQs, AJs, KQs**
@@ -139,12 +139,12 @@ Key rule: ==these speculative hands need position to be profitable==. If a UTG p
 
 ## 6-Max Starting Hands: How the Chart Changes
 
-Most online cash games are 6-max, and the chart shifts in one direction: ==wider==. Remove the three tightest seats from a 9-max table and every remaining position effectively "moves up." The first player to act in 6-max is opening into five opponents, not eight — so ==g:UTG in 6-max plays roughly like MP in 9-max== (~15–17% instead of ~12%).
+Most online cash games are 6-max, and the chart shifts in one direction: ==wider==. Remove the three tightest seats from a 9-max table and every remaining position effectively "moves up." The first player to act in 6-max is opening into five opponents, not eight — so ==g:UTG in 6-max plays roughly like MP in 9-max== (~15–17% instead of ~13%).
 
 :::compare
 9-Max (Full Ring) | 6-Max
 9 seats — three early positions before MP | 6 seats — UTG here is really the lojack
-First seat opens ~12% of hands | First seat opens ~15–17% of hands
+First seat opens ~13% of hands | First seat opens ~15–17% of hands
 Blinds come around once every 9 hands — folding is cheap | Blinds come around 1.5x faster — folding everything bleeds chips
 AJo, KQo = fold from first seat | AJo, KQo = standard opens from first seat
 Speculative hands mostly CO/BTN only | Speculative hands playable a seat earlier
@@ -156,7 +156,7 @@ The mistake to avoid is playing a 9-max chart in a 6-max game: you'll fold hands
 
 ## What Percentage of Starting Hands Should You Play?
 
-Across a full session, ==a solid beginner target is playing roughly 15–20% of the hands you're dealt== — which means folding 80–85% preflop. That's not one flat number, it's the *average* of the position-based chart above: ~12% from UTG, ~17% from MP, ~26% from the cutoff, ~42% from the button.
+Across a full session, ==a solid beginner target is playing roughly 15–20% of the hands you're dealt== — which means folding 80–85% preflop. That's not one flat number, it's the *average* of the position-based chart above: ~13% from UTG, ~17% from MP, ~27% from the cutoff, ~43% from the button.
 
 :::stat[15–20%] of dealt hands — a healthy beginner range at 9-max:::
 
@@ -231,7 +231,7 @@ Three chart spots. Decide before you peek at the answers:
 → ==r:Fold.== AJo doesn't make the UTG cut — it's dominated too often by the hands that call a UTG open. AJ*s* opens; AJo waits for a later seat.
 
 **2. Button, everyone folds to you, 7♠ 6♠.** Raise or fold?
-→ ==g:Raise.== Suited connectors are squarely inside the ~42% button range — this is exactly the seat they're profitable from.
+→ ==g:Raise.== Suited connectors are squarely inside the ~43% button range — this is exactly the seat they're profitable from.
 
 **3. 6-max, the cutoff raises, you're on the button with A♦ 4♣.** Call, raise, or fold?
 → ==r:Fold.== A weak offsuit ace against a raise is the intro hand all over again — dominated when it hits, worthless when it misses.
@@ -279,7 +279,7 @@ A. Suited adds about 2–3% equity over the same offsuit hand — meaningful, bu
 
 **Q. Should I always fold small pocket pairs like 22 or 33?**
 
-A. Not always — position decides. From the cutoff or button, small pairs are worth playing to "set mine": you flop a set or better about 12% of the time (roughly 1 in 8). From early position they're hard to play profitably and are usually folds.
+A. Not always — position decides. From the cutoff or button, small pairs are worth playing to "set mine": you flop a set or better about 11.8% of the time (roughly 1 in 8.5). From early position they're hard to play profitably and are usually folds.
 
 ---
 

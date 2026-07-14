@@ -45,7 +45,7 @@ The word paints the picture: you got "cooled off" — your hot hand went cold th
 
 ## Cooler vs Bad Beat: The Difference Everyone Gets Wrong
 
-![Infographic of A♠ A♦ versus K♥ K♦ on a K♠ 7♦ 2♣ 8♥ 3♠ runout — a flopped set of kings beats the aces](/images/holdem-cooler-vs-badbeat.webp "The textbook cooler: aces against kings, neither hand can fold, and the flopped set decides who pays")
+![Infographic of A♠ A♦ versus K♥ K♦ on a K♠ 7♦ 2♣ 8♥ 3♠ runout — the same collision seen from both sides](/images/holdem-cooler-vs-badbeat.webp "One collision, two labels: preflop, kings against aces is the textbook cooler for the kings — and when the king spikes, the very same hand becomes a bad beat for the aces")
 
 This is the distinction that makes or breaks your understanding of the term — and almost every casual player blurs it. Both feel terrible, but they are opposites:
 
@@ -66,7 +66,7 @@ The cleanest way to keep them straight:
 
 </div>
 
-Here's the same players showing both, so it clicks. **Bad beat:** you hold A♠A♥, get it all in preflop against 7♣7♦, and a **7** hits the board — your aces were a ~4.5‑to‑1 favorite (about 80%) and got outdrawn. **Cooler:** flip it around — you hold the **7♣7♦**, flop a set of sevens, and stack off against a set drawn from a bigger pair. You were the underdog the whole way and simply couldn't fold a flopped set. Same cards, opposite stories. Knowing which one just happened tells you whether to [review your play](/en/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") or just shrug it off.
+Here's the same players showing both, so it clicks. **Bad beat:** you hold A♠A♥, get it all in preflop against 7♣7♦, and a **7** hits the board — your aces were a ~4‑to‑1 favorite (about 80%) and got outdrawn. **Cooler:** flip it around — you hold the **7♣7♦**, flop a set of sevens, and stack off against a set drawn from a bigger pair. You were the underdog the whole way and simply couldn't fold a flopped set. Same cards, opposite stories. Knowing which one just happened tells you whether to [review your play](/en/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") or just shrug it off.
 
 ---
 

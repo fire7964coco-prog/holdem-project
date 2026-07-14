@@ -213,7 +213,7 @@ A. There's no single fixed number — it depends on how many opponents hold pock
 
 ## The 3 Things to Remember
 
-1. **Flop a set: 11.8% (7.5-to-1).** The number that decides every set-mining call — only call deep enough to be paid 10× or more when you hit.
+1. **Flop a set: 11.8% (7.5-to-1).** The number that decides every set-mining call — only call deep enough to be paid 15× or more when you hit.
 2. **Made vs draw vs complete are different numbers.** Two suited cards flop a made flush 0.84%, a flush draw 10.9%, and complete that draw 35%. Never quote the wrong one.
 3. **A big draw is about one in three by the river.** Flush draw 35%, open-ender 31.5% — and roughly one in six on a single street.
 

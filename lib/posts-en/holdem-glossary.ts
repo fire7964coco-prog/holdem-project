@@ -27,7 +27,7 @@ Poker has its own vocabulary, and knowing it does two things: it stops you looki
 :::stripe
 6 | Categories, grouped by how you meet them
 80+ | Terms defined in plain English
-12 | "Most confused" pairs, sorted out first
+8 | "Most confused" pairs, sorted out first
 → | Deeper guides linked from key terms
 :::
 
@@ -141,7 +141,7 @@ The cards themselves, and what you make with them. New to the flow of streets? S
 | **Backdoor** | A draw needing **two** running cards (turn *and* river). |
 | **Overcard** | A card higher than the board. |
 | **Suited connectors** | Two consecutive same-suit cards (e.g. 8♥9♥). |
-| **Broadway** | The T-J-Q-K-A straight, the highest straight. |
+| **Broadway** | The 10-J-Q-K-A straight, the highest straight. |
 | **The wheel** | The A-2-3-4-5 straight, the **lowest** straight (ace plays low). |
 | **Cooler** | A big hand that loses to a bigger one with no misplay — [full guide](/en/blog/holdem-cooler). |
 | **Bad beat** | Losing as a big favorite to a lucky draw — [full guide](/en/blog/holdem-bad-beat). |

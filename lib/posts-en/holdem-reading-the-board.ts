@@ -57,9 +57,9 @@ Three quick examples, fully worked out:
 
 | Your hole cards | Board | Best 5 cards | Hand |
 |----------------|-------|-------------|------|
-| A♠ K♥ | Q♦ J♣ T♠ 2♦ 7♣ | A-K-Q-J-T | Broadway straight (both hole cards play) |
+| A♠ K♥ | Q♦ J♣ 10♠ 2♦ 7♣ | A-K-Q-J-10 | Broadway straight (both hole cards play) |
 | 9♥ 9♦ | 9♠ 2♦ J♣ 5♥ K♣ | 9-9-9-K-J | Three nines, K and J kickers |
-| 7♦ 2♣ | A♠ K♠ Q♠ J♠ T♠ | The board itself | Royal flush — playing the board |
+| 7♦ 2♣ | A♠ K♠ Q♠ J♠ 10♠ | The board itself | Royal flush — playing the board |
 
 ==g:Always read all 7 cards together before deciding what you have.== The classic beginner error is staring at the two hole cards and never noticing what the board built around them. Which side card counts when hands are close is its own topic — that's the [kicker](/en/blog/holdem-kicker), and it decides more pots than most players think.
 
@@ -76,7 +76,7 @@ Check paired ranks | Pairs, trips, full houses, quads — match ranks between yo
 Take the highest | Whatever the strongest thing you found is, that's your hand. Add the highest remaining cards until you hold exactly 5.
 :::
 
-Walk-through: you hold A♥ 5♥ and the board reads A♦ 7♦ 4♠ T♣ 2♠.
+Walk-through: you hold A♥ 5♥ and the board reads A♦ 7♦ 4♠ 10♣ 2♠.
 
 - **Flush?** Hearts 2, diamonds 2, spades 2, clubs 1 — no.
 - **Straight?** Ranks A-T-7-5-4-2 — no five in a row (the wheel A-2-3-4-5 misses a 3).
@@ -99,7 +99,7 @@ Here's the part that matters for your stack: ==r:the board belongs to everyone s
 - Anyone holding the last two sevens (**7♠ 7♣**) has four sevens.
 - Anyone holding a pocket pair **8-8 through K-K** has a bigger full house.
 
-==g:"Can the board be the best hand?" Yes — and when it is, showdown is about who improves on it, not who holds prettier cards.== On a board like A-K-Q-J-T of one suit (a royal flush), nobody can improve on it, so every remaining player splits.
+==g:"Can the board be the best hand?" Yes — and when it is, showdown is about who improves on it, not who holds prettier cards.== On a board like A-K-Q-J-10 of one suit (a royal flush), nobody can improve on it, so every remaining player splits.
 
 ---
 
@@ -114,13 +114,13 @@ You hold 8♦ 6♣. Board: 7♥ 5♠ 4♣ K♦ 2♠. Ranks in order: K, 8, 7, 6,
 | Hold | Board | Straight? |
 |------|-------|-----------|
 | 8♦ 6♣ | 7♥ 5♠ 4♣ K♦ 2♠ | Yes — 8-7-6-5-4 |
-| J♠ 9♣ | T♥ 8♦ 7♠ 2♣ K♥ | Yes — J-T-9-8-7 |
+| J♠ 9♣ | 10♥ 8♦ 7♠ 2♣ K♥ | Yes — J-10-9-8-7 |
 | A♥ 3♦ | 2♠ 4♣ 5♥ 9♦ K♠ | Yes — A-2-3-4-5 (the wheel) |
-| K♥ Q♦ | J♠ T♣ 8♥ 3♦ 2♠ | No — K-Q-J-T needs a 9 or an ace |
+| K♥ Q♦ | J♠ 10♣ 8♥ 3♦ 2♠ | No — K-Q-J-10 needs a 9 or an ace |
 
 Two ace questions that trip people up constantly:
 
-- **Can you use an ace in a straight?** Yes, at either end: high in A-K-Q-J-T (Broadway) or low in A-2-3-4-5 (the wheel — the lowest straight there is).
+- **Can you use an ace in a straight?** Yes, at either end: high in A-K-Q-J-10 (Broadway) or low in A-2-3-4-5 (the wheel — the lowest straight there is).
 - **Can a straight wrap around?** ==r:No. K-A-2-3-4 is not a straight — it's just ace high.== Hold A♦ 2♦ on K♠ Q♥ 3♣ 4♦ 9♠ and you have no pair, no straight, nothing but A-K-Q-9-4.
 
 When two straights collide, the higher top card wins — the full ladder of who-beats-whom lives in the [tie-breaker rules](/en/blog/holdem-tiebreak-rules).
@@ -140,7 +140,7 @@ A flush needs 5 cards of one suit among your 7. The board tells you instantly wh
 
 ![NOT A FLUSH — holding A♠ with only 3 spades on the board does not make a flush in Texas Hold'em](/images/holdem-reading-flush-draw-mistake.webp)
 
-==r:The classic misread: holding A♠ 4♦ on a board of 2♠ 5♠ 9♥ J♥ T♠ and announcing a flush.== Count it: the board has three spades (2♠ 5♠ T♠), your ace makes four. ==Four is not five.== Your actual hand is ace high — A-J-T-9-5 — and it feels terrible to learn that after you've called a river bet.
+==r:The classic misread: holding A♠ 4♦ on a board of 2♠ 5♠ 9♥ J♥ 10♠ and announcing a flush.== Count it: the board has three spades (2♠ 5♠ 10♠), your ace makes four. ==Four is not five.== Your actual hand is ace high — A-J-10-9-5 — and it feels terrible to learn that after you've called a river bet.
 
 The reverse trap matters just as much: on a 4-flush board you hold ZERO of that suit, but any opponent with a single card of it has you beat. And if you're weighing a made flush against a made straight, [flush beats straight, always](/en/blog/holdem-flush-vs-straight).
 
@@ -194,7 +194,7 @@ So the nuts is ==8-7 — a nine-high straight==, and even pocket queens (top set
 Once you can read your own hand, the same scan tells you how dangerous the board is for everyone — what players call texture.
 
 :::compare
-Dry board — K♠ 7♦ 2♣ | Wet board — J♥ T♥ 8♣
+Dry board — K♠ 7♦ 2♣ | Wet board — J♥ 10♥ 8♣
 Three suits, no touching ranks | Two hearts + connected ranks
 No flush or straight draw exists | Flush draws and straight draws everywhere
 Top pair is a genuinely strong hand | Top pair is fragile — many rivers beat it
@@ -202,7 +202,7 @@ Top pair is a genuinely strong hand | Top pair is fragile — many rivers beat i
 
 ![Dry board vs wet board in Texas Hold'em — K72 rainbow (dry) vs JT8 two-tone (wet) with flush and straight draw arrows](/images/holdem-reading-dry-vs-wet-board.webp)
 
-On J♥ T♥ 8♣, any heart, any 9, any 7, and any Q changes who's winning. On K♠ 7♦ 2♣, almost nothing does. ==Same pair, completely different pressure== — that's why the scan-order habit (flush → straight → pairs) doubles as your danger radar.
+On J♥ 10♥ 8♣, any heart, any 9, any 7, and any Q changes who's winning. On K♠ 7♦ 2♣, almost nothing does. ==Same pair, completely different pressure== — that's why the scan-order habit (flush → straight → pairs) doubles as your danger radar.
 
 ---
 
@@ -251,7 +251,7 @@ A. You can make both from your 7 cards, but a poker hand is exactly 5 cards — 
 
 **Q. Can you use an ace in a straight?**
 
-A. Yes, at either end — high in A-K-Q-J-T (Broadway, the best straight) or low in A-2-3-4-5 (the wheel, the lowest straight). It cannot sit in the middle of a sequence.
+A. Yes, at either end — high in A-K-Q-J-10 (Broadway, the best straight) or low in A-2-3-4-5 (the wheel, the lowest straight). It cannot sit in the middle of a sequence.
 
 **Q. Can a straight wrap around in poker?**
 

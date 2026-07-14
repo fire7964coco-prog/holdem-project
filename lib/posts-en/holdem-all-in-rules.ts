@@ -125,13 +125,12 @@ The rule: ==each side pot is built by taking the difference up to the next-small
 Blinds $1/$2. Four players see the flop.
 
 1. Player A bets $10.
-2. Player B raises to $25.
-3. Player C goes all-in for **$30** (only $5 more than B's raise of $25 — not a full raise increment).
+2. Player B goes all-in for **$14** (only $4 more than A's $10 bet — not a full raise, which would need at least $20).
 
-What happens to Player A and Player D?
+What happens to Player A, and to Player C who hasn't acted yet?
 
-- Player A already acted (bet $10). Because C's all-in of $30 is **less than a full raise** (which would require at least $40 = $25 + $15 minimum), the action does NOT reopen for Player A. ==A can only call or fold — they cannot re-raise.==
-- Player D has not yet acted — **Player D can still raise normally**.
+- Player A already acted (bet $10) and now faces only an incomplete raise. Because B's all-in of $14 is **less than a full raise**, the action does NOT reopen for Player A. ==A can only call or fold — they cannot re-raise.==
+- Player C has not yet acted — **Player C can still raise normally**.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -251,7 +250,7 @@ A. Table stakes means you can only wager chips that were in front of you when th
 
 **Q. If two players go all-in for different amounts, who shows first?**
 
-A. The last all-in bet is treated as the last aggressive action. Standard showdown rules apply: the last player to make an all-in or aggressive move shows first. In cash games, if it was a called all-in with no further action, the caller can muck if they lose after seeing the all-in player's hand (in tournaments all involved hands stay face-up).
+A. The last all-in that was a bet or raise is the last aggressive action and shows first. An all-in that merely calls for less is not aggressive — the original bettor still shows first. In cash games, if it was a called all-in with no further action, the caller can muck if they lose after seeing the all-in player's hand (in tournaments all involved hands stay face-up).
 
 **Q. Are all-in rules different in tournaments vs. cash games?**
 

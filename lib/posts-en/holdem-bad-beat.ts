@@ -16,7 +16,7 @@ export const POST: Post = {
   imageAlt: "A poker player clutching his head in anguish after losing a big pot he was a huge favorite to win, his chips stacked on the green felt",
   tags: ["bad beat", "what is a bad beat in poker", "bad beat vs cooler", "bad beat jackpot", "poker suckout", "getting your money in good", "how to deal with bad beats"],
   content: `
-The one that still stings: I had pocket aces, got it all in against a player who called with pocket fives, and watched the case five slam onto the river. I'd done everything right. My money went in as better than a 4-to-1 favorite, and I still lost the whole stack to ==the one card in the deck that could beat me==. That's a bad beat, and if you play poker long enough, it will happen to you thousands of times.
+The one that still stings: I had pocket aces, got it all in against a player who called with pocket fives, and watched one of the last two fives slam onto the river. I'd done everything right. My money went in as better than a 4-to-1 favorite, and I still lost the whole stack to ==one of the two cards in the deck that could beat me==. That's a bad beat, and if you play poker long enough, it will happen to you thousands of times.
 
 A **bad beat** is when you get your chips in as a heavy statistical favorite and lose anyway, because your opponent catches a lucky card to ==g:suck out== on you. The key word is *favorite* — you were winning when the money went in, and only an improbable card flipped the result. Below is exactly what counts as a bad beat, how it differs from a [cooler](/en/blog/holdem-cooler "thumb:/images/holdem-cooler-hero.webp"), what a "bad beat jackpot" pays, and the counterintuitive truth every winning player eventually learns: bad beats are *good* for you.
 
@@ -69,7 +69,7 @@ A quick litmus: **if your opponent needed to *improve* to win, it's a bad beat.*
 
 Here's where casual players and serious ones part ways: **not every loss as a favorite is a bad beat.** There's an unwritten equity bar, and it matters if you want to use the term honestly.
 
-- **~80% or more, and you lose to a suckout** — a genuine bad beat. Your aces (a ~4.5-to-1 favorite over a lower pair) getting cracked is the textbook case. A **one-outer** — losing to the single remaining card in the deck — is the purest bad beat of all.
+- **~80% or more, and you lose to a suckout** — a genuine bad beat. Your aces (a ~4-to-1 favorite over a lower pair) getting cracked is the textbook case. A **one-outer** — losing to the single remaining card in the deck — is the purest bad beat of all.
 - **60–70% favorite losing** — unpleasant, but really just variance. You were only a modest favorite; the other outcome was always going to happen fairly often.
 - **A coinflip is never a bad beat.** Losing A‑K to Q‑Q, or a pair to two overcards, is roughly 50/50 — calling that a bad beat is like calling a lost coin toss a robbery. If it was close to even money, you didn't get *beaten*, you just lost a flip.
 
@@ -87,15 +87,15 @@ Every bad beat has the same shape: you're the favorite, the underdog needs help,
 
 | The beat | You had | You were | How it happens |
 |:---|:---|:---:|:---|
-| **Aces cracked by a set** | AA vs a lower pair (e.g. 7‑7) | ~80% (4.5:1) | Their pair flops or rivers a set |
+| **Aces cracked by a set** | AA vs a lower pair (e.g. 7‑7) | ~80% (4:1) | Their pair flops or rivers a set |
 | **Aces vs a random hand** | AA all-in preflop | ~85% | Any two cards run you down |
-| **Overpair vs a flush draw** | Top set / overpair on the flop | ~65% (2:1) | Their 9-out flush draw fills on the river |
+| **Overpair vs a flush draw** | Overpair on the flop | ~65% (2:1) | Their 9-out flush draw fills on the river |
 | **Runner-runner** | A made hand ahead on the flop | ~90%+ | Two perfect cards (turn *and* river) complete a draw |
 | **The one-outer** | A near-locked hand | ~98%+ | The single card left in the deck beats you |
 
 </div>
 
-The most iconic is **aces cracked by a set.** You get pocket aces all in preflop against pocket sevens — you're roughly an 80% favorite, a 4.5-to-1 lock in your favor. But there are two more sevens in the deck, and if one hits the board, their three-of-a-kind beats your pair. Four times out of five you scoop it; the fifth time, you've got a bad beat story nobody wants to hear. The math was never wrong — you just landed on the wrong side of it, which is exactly why a single hand tells you [nothing about whether you played well](/en/blog/holdem-cooler).
+The most iconic is **aces cracked by a set.** You get pocket aces all in preflop against pocket sevens — you're roughly an 80% favorite, a 4-to-1 lock in your favor. But there are two more sevens in the deck, and if one hits the board, their three-of-a-kind beats your pair. Four times out of five you scoop it; the fifth time, you've got a bad beat story nobody wants to hear. The math was never wrong — you just landed on the wrong side of it, which is exactly why a single hand tells you [nothing about whether you played well](/en/blog/holdem-cooler).
 
 ---
 
@@ -125,9 +125,9 @@ One important caveat: **every casino and poker site sets its own qualifier and s
 
 ## The Most Famous Bad Beat in Poker
 
-If you want to feel better about your own beats, remember that the worst ones happen on the biggest stages. The most legendary occurred at the **2008 World Series of Poker Main Event**, where **Motoyuki Mabuchi** turned his pocket aces into **four of a kind — quad aces**, a hand beaten by only one holding in all of poker — and *still lost*. He'd flopped a set of aces and was a near-lock going to the river; then the **case ace (A♦)** fell, completing his quads and, on the very same card, handing **Justin Phillips** (holding K♦ J♦) a **royal flush** — the 10‑J‑Q‑K‑A of diamonds. One card made Mabuchi's hand nearly unbeatable and the opponent's hand the single thing that beats it.
+If you want to feel better about your own beats, remember that the worst ones happen on the biggest stages. The most legendary occurred at the **2008 World Series of Poker Main Event**, where **Motoyuki Mabuchi** turned his pocket aces into **four of a kind — quad aces**, a hand beaten by only one holding in all of poker — and *still lost*. He got it in against **Justin Phillips** (holding K♦ J♦), and the river **A♦** completed his quads while, on the very same card, handing Phillips a **royal flush** — the 10‑J‑Q‑K‑A of diamonds. The one card that made four aces was the one card that could beat them.
 
-That's the ceiling of bad-beat pain: not an 80% favorite going down, but *four aces* — a hand you could play a lifetime without ever losing — run down by a true one-outer. It's worth keeping in your back pocket the next time your aces get cracked: however badly the deck treated you, someone once lost with quad aces.
+That's the ceiling of bad-beat pain: not an 80% favorite going down, but *four aces* — a hand you could play a lifetime without ever losing — beaten by the only holding that outranks it. It's worth keeping in your back pocket the next time your aces get cracked: however badly the deck treated you, someone once lost with quad aces.
 
 ---
 
@@ -178,7 +178,7 @@ A. A bad beat jackpot is a progressive prize some cardrooms pay when an exceptio
 
 **Q. What is the worst bad beat in poker history?**
 
-A. The most famous is from the 2008 WSOP Main Event: Motoyuki Mabuchi made quad aces — a hand beaten by only a royal flush — and still lost. He flopped a set of aces, then the case ace on the river completed his four of a kind and, on the same card, gave Justin Phillips a royal flush in diamonds. Being a near-lock on the turn and getting run down by the one card that beats quad aces is about as bad as a bad beat gets.
+A. The most famous is from the 2008 WSOP Main Event: Motoyuki Mabuchi made quad aces — a hand beaten by only a royal flush — and still lost. He flopped a set of aces, then the case ace on the river completed his four of a kind and, on the same card, gave Justin Phillips a royal flush in diamonds. Making four aces — the second-strongest hand in poker — and losing to the only hand that beats it is about as bad as a bad beat gets.
 
 **Q. Are bad beats more common online?**
 

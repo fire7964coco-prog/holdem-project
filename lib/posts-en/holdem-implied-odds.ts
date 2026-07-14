@@ -27,7 +27,7 @@ The raw odds behind every draw come from the [poker odds and probability chart](
 ### Implied odds at a glance
 
 :::stripe
-call ÷ hit% − pot | The implied odds formula
+call ÷ hit% − (pot + call) | The implied odds formula
 7.5-to-1 | True odds of flopping a set
 0 | Your implied odds when villain is all-in
 :::
@@ -62,7 +62,7 @@ The practical rule: **start with pot odds.** If your equity already beats the pr
 
 ## How to Calculate Implied Odds
 
-**To calculate implied odds, figure out how much extra you need to win when you hit, using: extra needed = (your call ÷ your hit chance) − the current pot.** If you can realistically win that much more on later streets, the call is profitable.
+**To calculate implied odds, figure out how much extra you need to win when you hit, using: extra needed = (your call ÷ your hit chance) − (the current pot + your call).** If you can realistically win that much more on later streets, the call is profitable.
 
 Written cleanly, with ==g:x== as the extra money you must win when you complete:
 
@@ -73,7 +73,7 @@ Subtract the pot that's already there | What's left is the extra you must win la
 Judge if it's realistic | Deep stacks + a payoff-happy opponent = yes. Short stacks or a scary board = no
 :::
 
-The formula in one line: ==b:x = (call ÷ hit%) − current pot.== If the extra money you'd realistically extract on later streets is *bigger* than x, calling is profitable even when the immediate pot odds say fold.
+The formula in one line: ==b:x = (call ÷ hit%) − (current pot + call).== If the extra money you'd realistically extract on later streets is *bigger* than x, calling is profitable even when the immediate pot odds say fold.
 
 ---
 
@@ -84,9 +84,9 @@ Let's run the numbers so the formula stops being abstract.
 You hold ==b:A♥ K♥== on a ==Q♥ 7♥ 2♣ 3♠== board — the nut flush draw, 9 outs, with one card to come. The pot is $100 and your opponent bets $50 on the turn, so there's ==$150 in the middle== and it's $50 to you.
 
 - **Pot odds first:** you're getting 150-to-50, or 3-to-1, so you need **25%** equity. Your flush hits on the river just ==r:19.6%== of the time (9 outs ÷ 46 unseen cards). 19.6% is less than 25%, so the immediate price says ==r:fold.==
-- **Now the implied odds:** x = (call ÷ hit%) − pot = (50 ÷ 0.196) − 150 = 255 − 150 = ==g:about $105.== That's the extra you must win on the river when your flush lands.
+- **Now the implied odds:** x = (call ÷ hit%) − (pot + call) = (50 ÷ 0.196) − (150 + 50) = 255 − 200 = ==g:about $55.== That's the extra you must win on the river when your flush lands.
 
-So the question isn't "should I call $50?" It's "**when a heart hits, can I win at least $105 more?**" Against a deep opponent who'll pay off a river bet with top pair or a set, that's easy — you call. Against someone with $60 left behind, or on a board where a fourth heart kills their action, you can't — so you fold.
+So the question isn't "should I call $50?" It's "**when a heart hits, can I win at least $55 more?**" Against a deep opponent who'll pay off a river bet with top pair or a set, that's easy — you call. Against someone with $40 left behind, or on a board where a fourth heart kills their action, you can't — so you fold.
 
 :::note
 Same $50 call, opposite decisions — and the cards never changed. What changed is how much money is left to win. That's implied odds in one sentence.
@@ -145,7 +145,7 @@ Raises a draw's value | Lowers a draw's value
 Three classic reverse-implied spots:
 
 - **The baby flush.** You hold ==b:7♦ 6♦== and the board brings a third diamond. You make your flush — and pay off a stack to the guy holding ==b:A♦== for the nut flush. Your "winning" card cost you money.
-- **The dummy end of a straight.** You hold ==b:6♦ 5♦== on ==b:9♥ 8♣ 2♠==, and a 7 on the turn makes your 5-6-7-8-9. But it's the *low* end — anyone holding J-T now has 7-8-9-10-==g:J==, a higher straight, and the very card you needed pays them off.
+- **The dummy end of a straight.** You hold ==b:6♦ 5♦== on ==b:9♥ 8♣ 2♠==, and a 7 on the turn makes your 5-6-7-8-9. But it's the *low* end — anyone holding J-10 now has 7-8-9-10-==g:J==, a higher straight, and the very card you needed pays them off.
 - **The dominated top pair.** You pair your king with a weak kicker and keep calling — straight into someone's A-K.
 
 The lesson: a draw to the ==g:nuts== is worth far more than the same draw to a second-best hand, even though they have identical outs. When your draw isn't to the nuts, shade your implied odds *down* — some of your "outs" are actually paying off your opponent.
@@ -183,7 +183,7 @@ A. Implied odds are the extra chips you expect to win on later streets if your d
 
 **Q. How do you calculate implied odds?**
 
-A. Use: extra needed = (your call ÷ your hit chance) − the current pot. Calling $50 with a flush draw that hits 19.6% of the time means 50 ÷ 0.196 = $255, minus the $150 pot = about $105. If you can realistically win $105 more when you hit, the call is profitable. Note it's always an estimate, since future betting isn't guaranteed.
+A. Use: extra needed = (your call ÷ your hit chance) − the current pot. Calling $50 with a flush draw that hits 19.6% of the time means 50 ÷ 0.196 = $255, minus the $200 already in play (the $150 pot plus your $50 call) = about $55. If you can realistically win $55 more when you hit, the call is profitable. Note it's always an estimate, since future betting isn't guaranteed.
 
 **Q. What is the difference between pot odds and implied odds?**
 
@@ -217,7 +217,7 @@ A. Implied odds are all about the money left to win, and deep stacks mean more o
 
 ## The 3 Things to Remember
 
-1. **The formula:** extra needed = (call ÷ hit%) − current pot. If you can realistically win more than that later, the call is good even when pot odds say fold.
+1. **The formula:** extra needed = (call ÷ hit%) − (current pot + call). If you can realistically win more than that later, the call is good even when pot odds say fold.
 2. **The reality check:** implied odds are an estimate that lives on deep stacks and a paying opponent. Against an all-in or a short stack, they're zero — fall back on pot odds.
 3. **The dark mirror:** reverse implied odds punish non-nut draws. A draw to the nuts is worth far more than the same draw to second best.
 

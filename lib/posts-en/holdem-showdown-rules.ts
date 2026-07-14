@@ -104,7 +104,7 @@ If a player misreads their hand and says "I have a pair," but they actually have
 
 This works both ways. If you think you lost and muck without showing, but your hand would have been the winner — ==r:the pot is gone==. Your hand is dead once it touches the muck. Always let the dealer read your hand before mucking if you're not 100% sure you lost.
 
-Real situation: you hold J♥ T♥ on a board of Q♥ 9♥ 8♥ 2♣ 5♦. You have a queen-high straight flush (Q-J-T-9-8 of hearts). Opponent shows K♣ Q♦ (one pair of queens). You win by a mile. Don't muck just because you see their queen.
+Real situation: you hold J♥ 10♥ on a board of Q♥ 9♥ 8♥ 2♣ 5♦. You have a queen-high straight flush (Q-J-10-9-8 of hearts). Opponent shows K♣ Q♦ (one pair of queens). You win by a mile. Don't muck just because you see their queen.
 
 ---
 

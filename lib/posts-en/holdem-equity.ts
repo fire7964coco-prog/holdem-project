@@ -29,7 +29,7 @@ The raw win-percentages behind every hand come from the [poker odds and probabil
 :::stripe
 pot × win% | What your hand is worth right now
 raw × realization% | What you actually collect
-B ÷ (P + B) | The fold % a pure bluff needs
+bet ÷ (pot + bet) | The fold % a pure bluff needs
 :::
 
 ---
@@ -70,7 +70,7 @@ That's the whole reason equity matters: it turns "am I ahead?" into "how much of
 | AA vs KK | 82% / 18% | Overpair dominates |
 | QQ vs AK | ~57% / ~43% | Pair edges the "race" |
 | 22 vs AK | ~52% / ~48% | The true coin flip |
-| AK vs AQ | ~70% / ~25% | Domination (rest chops) |
+| AK vs AQ | ~73% / ~23% | Domination (rest chops) |
 | 88 vs A7 | ~70% / ~30% | Pair vs one overcard |
 
 </div>
@@ -100,7 +100,7 @@ They call and you hit → you win | You hit → you win
 ==g:Two ways to win== | ==r:One way to win==
 :::
 
-For a ==pure bluff== with no chance to improve, the break-even is simple: you need your opponent to fold often enough to cover the risk. Betting $50 into a $100 pot, your break-even fold rate is ==B ÷ (P + B) = 50 ÷ 150 = 33%==. If they fold more than a third of the time, betting profits — even with the worst hand at the table.
+For a ==pure bluff== with no chance to improve, the break-even is simple: you need your opponent to fold often enough to cover the risk. Betting $50 into a $100 pot, your break-even fold rate is ==bet ÷ (pot + bet) = 50 ÷ 150 = 33%==. If they fold more than a third of the time, betting profits — even with the worst hand at the table.
 
 Now add a draw, and it gets much better. Here's the full picture as a ==g:semi-bluff==: pot is $100, you bet $50 with a flush draw, your opponent folds 40% of the time, and when they call you still have 35% equity to hit by the river.
 

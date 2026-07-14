@@ -222,7 +222,7 @@ You hold **6♥ 2♣**. The board has four hearts.
 
 You hold **A♥ 3♣**. The board already has trip kings.
 
-→ Your A♥ pairs with the board's A♠, giving you **KKK + AA, a full house**. But if your opponent also holds an Ace, they have the *same* full house and you split. If they have no Ace and only a smaller pair, your boat wins. The lesson: when the board does most of the work, your hand is often only as good as one extra card.
+→ Your A♥ pairs with the board's A♠, giving you **KKK + AA, a full house**. But if your opponent also holds a single Ace, they have the *same* full house and you split (only the exact pocket A-A makes a bigger boat, aces full). If they have no Ace and only a smaller pair, your boat wins. The lesson: when the board does most of the work, your hand is often only as good as one extra card.
 
 ---
 
@@ -360,7 +360,7 @@ A. Both are three of a kind. A *set* is a pocket pair plus one board card (well 
 
 **Q. What is the highest hand in poker?**
 
-A. The Royal Flush (A-K-Q-J-10 of one suit). It's unbeatable and can only ever tie with another royal flush, which results in a split pot.
+A. The Royal Flush (A-K-Q-J-10 of one suit). It's unbeatable — the only tie is a royal flush sitting entirely on the board, which everyone shares for a split pot.
 
 **Q. Is three of a kind better than two pair?**
 
@@ -376,7 +376,7 @@ A. The worst possible hand is 7-5-4-3-2 in mixed suits ("seven-high"). It's the 
 
 **Q. Can you have three pairs in poker?**
 
-A. No. A poker hand is always five cards, so it can contain at most two pairs. If your hole cards and the board give you three pairs across seven cards, only your best two pairs count toward the hand — the third pair's higher card can still act as a kicker, but it never becomes a "three pair" hand.
+A. No. A poker hand is always five cards, so it can contain at most two pairs. If your hole cards and the board give you three pairs across seven cards, only your best two pairs count toward the hand — one card of the third pair can still fill the kicker slot if it's your highest leftover card, but it never becomes a "three pair" hand.
 
 **Q. Can you use an ace as a 1 in poker?**
 

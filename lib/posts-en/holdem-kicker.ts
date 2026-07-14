@@ -16,7 +16,7 @@ export const POST: Post = {
   imageAlt: "Two players turning over A-K and A-Q at showdown with an ace on the board — the king kicker deciding who wins the pot",
   tags: ["poker kicker", "what is a kicker in poker", "kicker rules", "does a flush have a kicker", "playing the board", "dominated ace", "kicker card", "does four of a kind have a kicker"],
   content: `
-The hand that finally taught me what a kicker is cost me a full buy-in. I had ==b:A♦ 9♣==, the board paired my ace, and I shoved thinking top pair was gold. He flipped ==b:A♠ K♦== — same pair of aces, but his king outranked my nine, and the pot slid his way. I hadn't lost to a better *hand*; I'd lost to a better ==side card.== That side card is the kicker, and it decides more pots than any beginner realizes.
+The hand that finally taught me what a kicker is cost me a full buy-in. I had ==b:A♠ 9♣==, the board paired my ace, and I shoved thinking top pair was gold. He flipped ==b:A♥ K♦== — same pair of aces, but his king outranked my nine, and the pot slid his way. I hadn't lost to a better *hand*; I'd lost to a better ==side card.== That side card is the kicker, and it decides more pots than any beginner realizes.
 
 ==A kicker is the tiebreaker built into poker itself — when two players hold the same rank, the highest leftover card wins.== Most guides give you a one-line definition and an AK-vs-AQ example. This one gives you the full picture: exactly which hands have a kicker (and how many), the one exception everyone gets wrong, and why "playing the board" means your kicker suddenly doesn't matter at all.
 
@@ -100,9 +100,7 @@ The board is ==b:A♣ 9♦ 5♠ 2♥ 7♣==. You hold ==b:A♠ K♠==, your oppo
 
 Same pair, so compare kickers top-down: your ==g:K beats their Q.== You win, A-A-K-9-7 over A-A-Q-9-7. The 9 and 7 never even come into play — the first kicker settled it.
 
-:::note
-Notice both hands share the 9 and 7 from the board. Kickers can come from the board too: if the highest side card is a community card, it fills the hand for *both* players and the next card decides. Your hole card is only a kicker if it beats what's already on the board.
-:::
+:::note[Notice both hands share the 9 and 7 from the board. Kickers can come from the board too: if the highest side card is a community card, it fills the hand for *both* players and the next card decides. Your hole card is only a kicker if it beats what's already on the board.]:::
 
 ---
 
@@ -130,7 +128,7 @@ Back to my buy-in. Board ==b:A♦ 7♣ 2♥ Q♠ 4♦==, no straight or flush ou
 - **A9:** A♠ 9♣ → pair of aces, best five ==A♠ A♦ Q♠ 9♣ 7♣==.
 - **AK:** A♥ K♦ → pair of aces, best five ==g:A♥ A♦ K♦ Q♠ 7♣==.
 
-Same pair again, and K outkicks the 9. Worse, my 9 was pushed down to second kicker by the board's queen, and the comparison was settled at the first kicker (K vs Q) — so for all it mattered, my "kicker" was ==r:dead== before the hand began. That's domination: when you hit your ace, you're often just paying off a bigger ace. It's the whole reason the [starting hands chart](/en/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") treats A9 offsuit so much more cautiously than AK — the kicker is the difference between a premium hand and a trap.
+Same pair again — and my 9 never even got a vote. It was pushed down to second kicker by the board's queen, and the comparison was settled at the first kicker: his K over the board's Q — so for all it mattered, my "kicker" was ==r:dead== before the hand began. That's domination: when you hit your ace, you're often just paying off a bigger ace. It's the whole reason the [starting hands chart](/en/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") treats A9 offsuit so much more cautiously than AK — the kicker is the difference between a premium hand and a trap.
 
 ---
 

@@ -117,7 +117,7 @@ You can't carry that table to the table, so use the shortcut every player relies
 - **On the flop (two cards to come):** outs ×4 ≈ your % to hit by the river.
 - **On the turn (one card to come):** outs ×2 ≈ your % to hit on the river.
 
-A flush draw is 9 outs. On the flop: 9 × 4 = **36%** (true value 35.0% — dead on). On the turn: 9 × 2 = **18%** (true 19.1% — close enough to act).
+A flush draw is 9 outs. On the flop: 9 × 4 = **36%** (true value 35.0% — dead on). On the turn: 9 × 2 = **18%** (true 19.6% — close enough to act).
 
 :::tip[The ×4 shortcut quietly assumes you'll see *both* cards with no more betting — only true when you're already all-in. If there's a bet in front of you, use the ×2 (one-card) number for the street you're actually on.]:::
 
