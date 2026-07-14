@@ -6,7 +6,7 @@ export const POST: Post = {
   seoTitle: "जीत समझे थे पर पॉट हार गए? — पोकर हैंड रैंकिंग",
   desc: "Flush बना लिया फिर भी पॉट हार गए? लगभग हमेशा इसकी वजह एक छूटा हुआ नियम होता है। यहाँ हैं सबसे मज़बूत से सबसे कमज़ोर तक सभी 10 पोकर हैंड, हर एक की असली संभावना, और kicker तथा टाई कैसे विजेता तय करते हैं।",
   tldr: "सबसे मज़बूत से सबसे कमज़ोर तक पोकर हैंड रैंकिंग है: Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, Pair, और High Card।",
-  category: "초보 가이드",
+  category: "hand-rankings",
   date: "2026-06-09",
   updated: "2026-06-09",
   keepImagesInBody: true,

@@ -6,7 +6,7 @@ export const POST: Post = {
   seoTitle: "Mengira menang tapi kalah pot? — Peringkat tangan poker",
   desc: "Sudah dapat flush tapi tetap kalah pot? Hampir selalu karena satu aturan yang terlewat. Inilah 10 tangan poker dari terkuat ke terlemah, peluang nyata tiap tangan, dan bagaimana kicker serta seri menentukan pemenang.",
   tldr: "Peringkat tangan poker dari terkuat ke terlemah adalah: Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, Pair, dan High Card.",
-  category: "초보 가이드",
+  category: "hand-rankings",
   date: "2026-06-09",
   updated: "2026-06-09",
   keepImagesInBody: true,

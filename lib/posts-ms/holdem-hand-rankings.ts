@@ -6,7 +6,7 @@ export const POST: Post = {
   seoTitle: "Ingat menang tetapi kalah pot? — Susunan tangan poker",
   desc: "Dah dapat flush tetapi masih kalah pot? Hampir selalu kerana satu peraturan yang terlepas pandang. Inilah 10 tangan poker daripada terkuat ke terlemah, kebarangkalian sebenar setiap satu, dan cara kicker serta seri menentukan pemenang.",
   tldr: "Susunan tangan poker daripada terkuat ke terlemah ialah: Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, Pair, dan High Card.",
-  category: "초보 가이드",
+  category: "hand-rankings",
   date: "2026-06-09",
   updated: "2026-06-09",
   keepImagesInBody: true,

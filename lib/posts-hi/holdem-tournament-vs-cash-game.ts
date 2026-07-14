@@ -6,7 +6,7 @@ export const POST: Post = {
   seoTitle: "आपकी chips हमेशा पैसा नहीं होतीं — Tournament या cash game?",
   desc: "Cash game और tournament दोनों Texas Hold'em जैसे दिखते हैं, लेकिन chip value, blinds, bankroll, variance और ICM pressure बिल्कुल अलग होते हैं। शुरुआती के लिए साफ़ तुलना।",
   tldr: "Cash game में chips असली पैसे जैसी होती हैं और blinds आमतौर पर fixed रहते हैं। Tournament में chips आपकी tournament life हैं, blinds बढ़ते हैं और payout आपकी final position पर निर्भर करता है।",
-  category: "토너먼트",
+  category: "tournament",
   date: "2026-06-11",
   updated: "2026-06-11",
   hideSummaryImageSlot: true,

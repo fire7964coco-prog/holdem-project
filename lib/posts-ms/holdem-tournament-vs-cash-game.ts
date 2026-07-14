@@ -6,7 +6,7 @@ export const POST: Post = {
   seoTitle: "Cip bukan selalu duit — Tournament atau cash game?",
   desc: "Cash game dan tournament nampak macam Texas Hold'em yang sama, tetapi nilai cip, blind, bankroll, variance dan tekanan ICM sangat berbeza. Ini perbandingan ringkas untuk pemula.",
   tldr: "Dalam cash game, cip hampir sama dengan duit sebenar dan blind biasanya kekal. Dalam tournament, cip ialah nyawa kejohanan, blind meningkat, dan bayaran bergantung pada kedudukan akhir.",
-  category: "토너먼트",
+  category: "tournament",
   date: "2026-06-11",
   updated: "2026-06-11",
   hideSummaryImageSlot: true,

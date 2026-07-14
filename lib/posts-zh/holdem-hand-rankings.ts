@@ -6,7 +6,7 @@ export const POST: Post = {
   seoTitle: "以为赢了却输了底池？德州扑克牌型与比牌全解",
   desc: "做成同花却还是输了底池？几乎都是漏看了一条规则。这里整理了10种德州扑克牌型，从大到小排列，附每种牌的真实概率，以及踢脚牌和平局到底怎么定胜负。",
   tldr: "德州扑克牌型从大到小依次为：皇家同花顺、同花顺、四条、葫芦、同花、顺子、三条、两对、一对、高牌。",
-  category: "초보 가이드",
+  category: "hand-rankings",
   date: "2026-06-09",
   updated: "2026-06-09",
   keepImagesInBody: true,

@@ -6,7 +6,7 @@ export const POST: Post = {
   seoTitle: "Chip tidak selalu berarti uang — turnamen vs cash game",
   desc: "Cash game dan turnamen terlihat seperti Texas Hold'em yang sama, tetapi nilai chip, blind, bankroll, varians, dan ICM sangat berbeda. Ini perbandingan untuk pemula.",
   tldr: "Di cash game, chip mewakili uang nyata dan blind biasanya tetap. Di turnamen, chip adalah nyawa turnamen, blind naik, dan hadiah bergantung pada posisi akhir.",
-  category: "토너먼트",
+  category: "tournament",
   date: "2026-06-11",
   updated: "2026-06-11",
   hideSummaryImageSlot: true,

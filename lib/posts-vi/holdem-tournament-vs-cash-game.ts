@@ -6,7 +6,7 @@ export const POST: Post = {
   seoTitle: "Chip không phải lúc nào cũng là tiền — Tournament hay Cash Game?",
   desc: "Cash Game và Tournament đều là Texas Hold'em, nhưng giá trị chip, blind, bankroll, variance và áp lực ICM rất khác nhau. Đây là so sánh dễ hiểu cho người mới.",
   tldr: "Trong Cash Game, chip gần như là tiền thật và blind thường cố định. Trong Tournament, chip là mạng sống giải đấu, blind tăng dần và tiền thưởng phụ thuộc vào thứ hạng bạn kết thúc.",
-  category: "토너먼트",
+  category: "tournament",
   date: "2026-06-11",
   updated: "2026-06-11",
   hideSummaryImageSlot: true,

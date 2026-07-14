@@ -6,7 +6,7 @@ export const POST: Post = {
   seoTitle: "筹码不一定等于现金 — 锦标赛和现金局的真正区别",
   desc: "同样是德州扑克，现金局和锦标赛在筹码价值、盲注结构、ICM、资金管理和波动上完全不同。这篇用新手能看懂的方式讲清该怎么选。",
   tldr: "现金局里筹码接近真实现金，盲注通常固定，可以随时离桌；锦标赛里筹码是生存资源，盲注会不断上涨，名次、钱圈和ICM会改变每个决策。",
-  category: "토너먼트",
+  category: "tournament",
   date: "2026-06-11",
   updated: "2026-06-11",
   hideSummaryImageSlot: true,

@@ -224,8 +224,9 @@ B check der, A **15.000 bahis** yapar (yaklaşık yarım pot), B görür.
 
 ### River: A♥
 
+- **B:** check der.
 - **A:** As eşlenir — artık **iki çift, As ve Papaz**. Kendine fazla güvenip **30.000 bahis** yapar.
-- **B:** set, iki çifti hâlâ açık ara eziyor. **70.000'e yükseltir**.
+- **B:** set, iki çifti hâlâ açık ara eziyor. **Check-raise ile 70.000'e yükseltir**.
 - **A:** iki çiftinin yeterince iyi olduğuna inanıp görür.
 
 **Pot: 198.000**
@@ -261,7 +262,7 @@ Ders: ==r:river A'nın elini iki çift yaptığında bu kazanan bir el *gibi his
 
 </div>
 
-==r:**Önemli:** Preflop'ta check diyemezsin==, çünkü big blind zaten aktif bir bahistir. ==Check ancak flop'tan itibaren mümkün olur.==
+==r:**Önemli:** Preflop'ta check diyemezsin — tek bir istisna dışında.== Big blind zaten aktif bir bahis olduğu için diğer herkes call, raise ya da fold demek zorundadır. ==Yalnızca big blind, kimse yükseltmediyse check diyebilir; diğer herkes için check flop'tan itibaren başlar.==
 
 Her hamleyi ne zaman kullanacağına dair daha derin bir karar rehberi — check-call-raise-fold karar tablosuyla — için [bahis hamleleri açıklaması](/tr/blog/holdem-betting-actions) yazısına bak.
 

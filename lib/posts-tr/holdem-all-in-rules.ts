@@ -126,13 +126,12 @@ Kural şu: ==her yan pot, bir sonraki en küçük stack'e kadarki farkı × onu 
 Blind'lar $1/$2. Dört oyuncu flop'u görüyor.
 
 1. A Oyuncusu $10 bahis yapıyor.
-2. B Oyuncusu $25'e yükseltiyor.
-3. C Oyuncusu **$30** all-in gidiyor (B'nin $25'lik yükseltmesinden sadece $5 fazla — tam bir yükseltme artışına ulaşmıyor).
+2. B Oyuncusu **$14** all-in gidiyor (A'nın $10'luk bahsinden sadece $4 fazla — tam bir yükseltme değil; tam yükseltme en az $20 olurdu).
 
-A Oyuncusu ve D Oyuncusuna ne olur?
+A Oyuncusuna ve henüz aksiyon almamış C Oyuncusuna ne olur?
 
-- A Oyuncusu zaten aksiyon aldı ($10 bahis yaptı). C'nin $30'luk all-in'i **tam bir yükseltmeden az** olduğu için (bu en az $40 = $25 + $15 minimum yükseltme gerektirirdi), aksiyon A Oyuncusu için yeniden açılmaz. ==A sadece görebilir veya pas geçebilir — yeniden yükseltemez.==
-- D Oyuncusu henüz aksiyon almadı — **D Oyuncusu normal şekilde yükseltebilir.**
+- A Oyuncusu zaten aksiyon aldı ($10 bahis yaptı) ve şimdi eksik bir yükseltmeyle karşılaşıyor. B'nin $14'lük all-in'i **tam bir yükseltmeden az** olduğu için aksiyon A Oyuncusu için yeniden açılmaz. ==A sadece görebilir veya pas geçebilir — yeniden yükseltemez.==
+- C Oyuncusu henüz aksiyon almadı — **C Oyuncusu normal şekilde yükseltebilir.**
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -257,7 +256,7 @@ A. Table stakes, sadece el başladığında önünde duran çiplerle bahis yapab
 
 **Q. İki oyuncu farklı miktarlarda all-in giderse önce kim gösterir?**
 
-A. Son all-in bahsi, son agresif aksiyon olarak sayılır. Standart showdown kuralları geçerlidir: son all-in ya da agresif hamleyi yapan oyuncu önce gösterir. Cash oyunlarında, başka aksiyon olmadan görülen bir all-in ise, gören oyuncu all-in oyuncunun elini gördükten sonra kaybederse kartlarını atabilir (turnuvalarda karışan tüm eller yüzü açık kalır).
+A. Bahis ya da yükseltme olan son all-in, son agresif aksiyondur ve önce gösterir. Sadece görmek için (daha az miktara) gidilen bir all-in agresif değildir — bu durumda ilk bahsi yapan oyuncu yine önce gösterir. Cash oyunlarında, başka aksiyon olmadan görülen bir all-in ise, gören oyuncu all-in oyuncunun elini gördükten sonra kaybederse kartlarını atabilir (turnuvalarda karışan tüm eller yüzü açık kalır).
 
 **Q. All-in kuralları turnuvalarda ve cash oyunlarında farklı mı?**
 

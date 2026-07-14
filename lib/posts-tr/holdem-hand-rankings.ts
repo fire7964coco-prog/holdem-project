@@ -6,7 +6,7 @@ export const POST: Post = {
   seoTitle: "Kazandın sandın ama potu mu kaybettin? — Poker elleri",
   desc: "Flush yaptın ama yine de potu mu kaybettin? Neredeyse her zaman gözden kaçan tek bir kural yüzündendir. İşte en güçlüden en zayıfa 10 poker eli, her birinin gerçek olasılığı ve kicker ile beraberliklerin kazananı nasıl belirlediği.",
   tldr: "Poker el sıralaması en güçlüden en zayıfa şöyledir: Royal Flush, Straight Flush, Four of a Kind (Kare), Full House, Flush, Straight (Kent), Three of a Kind (Üçlü), Two Pair (İki Çift), Pair (Çift) ve High Card (Yüksek Kart).",
-  category: "초보 가이드",
+  category: "hand-rankings",
   date: "2026-06-09",
   updated: "2026-06-09",
   keepImagesInBody: true,
@@ -214,7 +214,7 @@ Elinde **K♥ 2♣** var. Board'da dört kupa var.
 
 Elinde **A♥ 3♣** var. Board'da zaten papaz üçlüsü var.
 
-→ A♥ board'daki A♠ ile eşleşir ve sana **full house, KKK + AA** verir. Ama rakipte de As varsa, *aynı* full house onda da var ve pot bölünür. As'ı yoksa ve sadece daha küçük bir çift varsa, full house'un kazanır. Ders: board işin neredeyse tamamını yaptığında, elin çoğu zaman sadece bir ekstra kart değerindedir.
+→ A♥ board'daki A♠ ile eşleşir ve sana **full house, KKK + AA** verir. Ama rakipte de tek bir As varsa, *aynı* full house onda da var ve pot bölünür (yalnızca tam olarak As çifti — pocket A-A — daha büyük bir full house, yani "aces full" yapar). As'ı yoksa ve sadece daha küçük bir çift varsa, full house'un kazanır. Ders: board işin neredeyse tamamını yaptığında, elin çoğu zaman sadece bir ekstra kart değerindedir.
 
 ---
 
