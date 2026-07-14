@@ -174,7 +174,7 @@ Aquí tienes la mitad del 3-bet que casi todos los artículos se saltan: **estar
 - **Igualar** — con manos que ligan bien y tienen la equity o la posición para continuar: parejas servidas buscando trío, broadways del mismo palo y manos fuertes que no quieren inflar el bote hacia una guerra de 4-bets.
 - **Fold** — todo lo demás. La mayor parte de tu rango de apertura simplemente debería rendirse a un 3-bet; eso es normal, no debilidad.
 
-¿Cuánto deberías continuar? La base teórica es la **Frecuencia Mínima de Defensa (MDF)** — la parte de tu rango que debes continuar para que el que 3-betea no pueda ganar dinero faroleando con dos cartas cualquiera. Es ==bote ÷ (bote + apuesta)==, que contra tamaños típicos de 3-bet aterriza en torno a **la mitad de tu rango** en el vacío. Pero aquí tienes el exploit que gana dinero en las mesas reales:
+¿Cuánto deberías continuar? La base teórica es la **Frecuencia Mínima de Defensa (MDF)** — la parte de tu rango que debes continuar para que el que 3-betea no pueda ganar dinero faroleando con dos cartas cualquiera. Es ==bote ÷ (bote + apuesta)== — donde *bote* es lo que hay en el medio antes del 3-bet y *apuesta* es el tamaño del 3-bet —, que contra tamaños típicos de 3-bet aterriza en torno a **un tercio de tu rango** en el vacío (con un 3-bet de 3x: 4.5bb de bote ÷ (4.5bb + 9bb) ≈ 33%). Pero aquí tienes el exploit que gana dinero en las mesas reales:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

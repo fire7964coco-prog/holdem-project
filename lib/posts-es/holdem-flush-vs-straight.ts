@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "¿El color gana a la escalera? La matemática y los errores de lectura",
   seoTitle: "¿El color gana a la escalera? Sí — y qué le gana al color",
   desc: "¿Empujaste tu escalera y el color se llevó el bote? El color siempre gana a la escalera. Aquí tienes la matemática, qué le gana al color y 3 mesas que engañan.",
-  tldr: "Un color (cinco cartas del mismo palo, ~0.197%) siempre gana a una escalera (cinco en secuencia, ~0.392%) en el Texas Hold'em — porque el color es casi el doble de difícil de ligar.",
+  tldr: "Un color (cinco cartas del mismo palo, ~0.197% de repartos de 5 cartas) siempre gana a una escalera (cinco en secuencia, ~0.392%) en el Texas Hold'em — porque el color es casi el doble de difícil de ligar.",
   category: "hand-rankings",
   date: "2026-06-13",
   updated: "2026-07-13",
@@ -204,7 +204,7 @@ A. Sí. Dos colores se comparan carta por carta de arriba abajo, así que un col
 
 **Q. ¿Importa el palo de un color?**
 
-A. No. El Texas Hold'em no tiene jerarquía de palos, así que un color de picas y uno de corazones con los mismos cinco valores son iguales — colores idénticos dividen el bote. Solo los valores de las cartas deciden al ganador.
+A. No. El Texas Hold'em no tiene jerarquía de palos. Los palos solo importan para *ligar* un color, nunca para comparar manos — cuando chocan dos colores (siempre del mismo palo en Hold'em, porque comparten las cartas de la mesa), solo deciden los valores, y valores idénticos dividen el bote.
 
 **Q. ¿Un color y una escalera pueden empatar o dividir el bote?**
 

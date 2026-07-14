@@ -76,7 +76,7 @@ La trampa es que la fold equity ==decae a medida que tu stack encoge==. Con 12�
 |:--|:--:|:--:|:--|
 | 🟢 Verde | 20+ | ~30bb+ | Arsenal completo, juega póker normal |
 | 🟡 Amarilla | 10–20 | ~15–30bb | Cierra el rango, empieza a buscar shoves |
-| 🟠 Naranja | 5–10 | ~8–15bb | Push/fold; agresión siendo primero, roba ciegas |
+| 🟠 Naranja | 6–10 | ~9–15bb | Push/fold; agresión siendo primero, roba ciegas |
 | 🔴 Roja | 1–5 | ~1.5–8bb | Shove o foldear cualquier mano razonable |
 | ⚫ Muerta | menos de 1 | menos de ~1.5bb | Shove con dos cartas cualesquiera, en el próximo spot jugable |
 
@@ -177,7 +177,7 @@ A. Como default de principiante, no — el min-raise para luego foldear es un le
 
 **Q. ¿Qué es la M en póker?**
 
-A. La M es tu stack dividido por el coste de una órbita (ciega pequeña + ciega grande + antes) — cuántas rondas puedes sobrevivir foldeando. Las zonas de Harrington son Verde (20+), Amarilla (10–20), Naranja (5–10), Roja (1–5) y Muerta (menos de 1). Cuanto más baja tu M, más tienes que tomar spots de shove o foldear. Sin antes, la M es más o menos tus ciegas grandes ÷ 1.5.
+A. La M es tu stack dividido por el coste de una órbita (ciega pequeña + ciega grande + antes) — cuántas rondas puedes sobrevivir foldeando. Las zonas de Harrington son Verde (20+), Amarilla (10–20), Naranja (6–10), Roja (1–5) y Muerta (menos de 1). Cuanto más baja tu M, más tienes que tomar spots de shove o foldear. Sin antes, la M es más o menos tus ciegas grandes ÷ 1.5.
 
 **Q. ¿Qué es la fold equity y por qué encoge?**
 

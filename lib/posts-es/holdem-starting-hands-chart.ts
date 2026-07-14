@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Tabla de manos iniciales de póker y las mejores manos",
   seoTitle: "¿Foldear el 80% de tus manos? — Tabla de manos iniciales",
   desc: "La mayoría de tus cartas pierden dinero. Las mejores manos iniciales, la tabla completa por posición y en 6-max, y GTO vs principiante.",
-  tldr: "De los 169 tipos de mano inicial, solo una pequeña franja superior — cerca del 15–20% de las manos que te reparten — es rentable para un principiante. Los pares grandes (AA–TT) y AK suben desde cualquier asiento; cuanto más tarde actúas, más abres tu rango — desde ~12% en UTG hasta ~42% en el botón (más amplio aún en 6-max). Empieza con una tabla simplificada y añade las tablas GTO de preflop cuando el subir-o-foldear ya te salga automático.",
+  tldr: "De los 169 tipos de mano inicial, solo una pequeña franja superior — cerca del 15–20% de las manos que te reparten — es rentable para un principiante. Los pares grandes (AA–TT) y AK suben desde cualquier asiento; cuanto más tarde actúas, más abres tu rango — desde ~13% en UTG hasta ~43% en el botón (más amplio aún en 6-max). Empieza con una tabla simplificada y añade las tablas GTO de preflop cuando el subir-o-foldear ya te salga automático.",
   category: "strategy",
   date: "2026-06-14",
   updated: "2026-07-11",
@@ -37,7 +37,7 @@ Esta página es la versión todo-en-uno: las 10 mejores manos iniciales, qué ha
 :::stripe
 169 | Tipos distintos de mano inicial (1,326 combinaciones exactas)
 ~80% | Manos que un principiante debería foldear en preflop
-~12% → ~42% | Rango de apertura desde UTG hasta el botón (9-max)
+~13% → ~43% | Rango de apertura desde UTG hasta el botón (9-max)
 ~85% | Con qué frecuencia AA gana a una mano aleatoria
 :::
 
@@ -95,10 +95,10 @@ Aquí tienes la tabla de manos iniciales de póker para una mesa estándar de 9-
 
 | Posición | Rango de apertura | Manos clave que jugar |
 |----------|-----------|-------------------|
-| UTG (Temprana) | Top ~12% | TT+, AJs+, AKo, KQs |
+| UTG (Temprana) | Top ~13% | TT+, AJs+, AKo, KQs |
 | MP (Media) | Top ~17% | Añade 88, 99, ATs, KJs, QJs, JTs |
-| CO (Cutoff) | Top ~26% | Añade 55–77, A9s+, KTs+, conectores del mismo palo (T9s, 98s) |
-| BTN (Button) | Top ~42% | Añade 22–44, A2s+, broadways del mismo palo, manos más flojas de distinto palo |
+| CO (Cutoff) | Top ~27% | Añade 55–77, A9s+, KTs+, conectores del mismo palo (T9s, 98s) |
+| BTN (Button) | Top ~43% | Añade 22–44, A2s+, broadways del mismo palo, manos más flojas de distinto palo |
 
 La regla: ==cuanto más tarde actúas, más manos puedes abrir de forma rentable==. Como el botón siempre actúa último postflop, es el asiento más valioso del póker.
 
@@ -110,9 +110,9 @@ Explora la cuadrícula completa con código de colores — cada una de las 169 m
 
 ### Posición temprana (UTG): el rango más cerrado
 
-UTG es el asiento más difícil de jugar. ==r:Seis o más jugadores aún actúan detrás de ti.== Cualquier mano que abras aquí tiene que aguantar contra rangos fuertes.
+UTG es el asiento más difícil de jugar. ==r:Ocho jugadores aún actúan detrás de ti.== Cualquier mano que abras aquí tiene que aguantar contra rangos fuertes.
 
-El núcleo del rango de UTG (un rango completo de ~12% añade unas cuantas manos más del mismo palo a medida que mejoras):
+El núcleo del rango de UTG (un rango completo de ~13% se ensancha con parejas medias (77–99), más suited broadways y algunas offsuit como AQo/AJo a medida que mejoras):
 
 - Pares servidos: **TT, JJ, QQ, KK, AA**
 - Premium del mismo palo: **AKs, AQs, AJs, KQs**
@@ -139,12 +139,12 @@ Regla clave: ==estas manos especulativas necesitan posición para ser rentables=
 
 ## Manos iniciales en 6-max: cómo cambia la tabla
 
-La mayoría de las cash games online son 6-max, y la tabla se desplaza en una dirección: ==más amplia==. Quita los tres asientos más cerrados de una mesa de 9-max y cada posición restante "sube" un puesto en la práctica. El primer jugador en actuar en 6-max abre contra cinco rivales, no ocho — así que ==g:UTG en 6-max se juega más o menos como MP en 9-max== (~15–17% en vez de ~12%).
+La mayoría de las cash games online son 6-max, y la tabla se desplaza en una dirección: ==más amplia==. Quita los tres asientos más cerrados de una mesa de 9-max y cada posición restante "sube" un puesto en la práctica. El primer jugador en actuar en 6-max abre contra cinco rivales, no ocho — así que ==g:UTG en 6-max se juega más o menos como MP en 9-max== (~15–17% en vez de ~13%).
 
 :::compare
 9-Max (mesa completa) | 6-Max
 9 asientos — tres posiciones tempranas antes de MP | 6 asientos — el UTG de aquí es en realidad el lojack
-El primer asiento abre ~12% de las manos | El primer asiento abre ~15–17% de las manos
+El primer asiento abre ~13% de las manos | El primer asiento abre ~15–17% de las manos
 Las ciegas te llegan una vez cada 9 manos — foldear sale barato | Las ciegas te llegan 1.5x más rápido — foldear todo te sangra fichas
 AJo, KQo = fold desde el primer asiento | AJo, KQo = aperturas estándar desde el primer asiento
 Manos especulativas casi solo en CO/BTN | Manos especulativas jugables un asiento antes
@@ -156,7 +156,7 @@ El error que hay que evitar es jugar una tabla de 9-max en una partida de 6-max:
 
 ## ¿Qué porcentaje de manos iniciales deberías jugar?
 
-A lo largo de una sesión completa, ==un buen objetivo para un principiante es jugar más o menos el 15–20% de las manos que te reparten== — lo que significa foldear el 80–85% en preflop. Eso no es un número plano, es el *promedio* de la tabla por posición de arriba: ~12% desde UTG, ~17% desde MP, ~26% desde el cutoff, ~42% desde el botón.
+A lo largo de una sesión completa, ==un buen objetivo para un principiante es jugar más o menos el 15–20% de las manos que te reparten== — lo que significa foldear el 80–85% en preflop. Eso no es un número plano, es el *promedio* de la tabla por posición de arriba: ~13% desde UTG, ~17% desde MP, ~27% desde el cutoff, ~43% desde el botón.
 
 :::stat[15–20%] de las manos repartidas — un rango sano de principiante en 9-max:::
 
@@ -231,7 +231,7 @@ Tres situaciones de tabla. Decide antes de espiar las respuestas:
 → ==r:Fold.== AJo no entra en el rango de apertura de UTG — queda dominada demasiado a menudo por las manos que igualan una apertura de UTG. AJ*s* abre; AJo espera a un asiento posterior.
 
 **2. Botón, todos foldean hasta ti, 7♠ 6♠.** ¿Subir o foldear?
-→ ==g:Sube.== Los conectores del mismo palo están de lleno dentro del rango del ~42% del botón — este es exactamente el asiento desde el que son rentables.
+→ ==g:Sube.== Los conectores del mismo palo están de lleno dentro del rango del ~43% del botón — este es exactamente el asiento desde el que son rentables.
 
 **3. 6-max, el cutoff sube, estás en el botón con A♦ 4♣.** ¿Igualar, subir o foldear?
 → ==r:Fold.== Un as débil de distinto palo frente a una subida es la mano de la intro otra vez — dominado cuando liga, inútil cuando falla.
@@ -279,7 +279,7 @@ A. Ser del mismo palo añade en torno a un 2–3% de equity sobre la misma mano 
 
 **Q. ¿Debería foldear siempre los pares servidos bajos como 22 o 33?**
 
-A. No siempre — decide la posición. Desde el cutoff o el botón, los pares bajos vale la pena jugarlos para "buscar trío": ligas un trío o mejor cerca del 12% de las veces (más o menos 1 de cada 8). Desde posición temprana son difíciles de jugar de forma rentable y suelen ser fold.
+A. No siempre — decide la posición. Desde el cutoff o el botón, los pares bajos vale la pena jugarlos para "buscar trío": ligas un trío o mejor cerca del 11.8% de las veces (más o menos 1 de cada 8.5). Desde posición temprana son difíciles de jugar de forma rentable y suelen ser fold.
 
 ---
 

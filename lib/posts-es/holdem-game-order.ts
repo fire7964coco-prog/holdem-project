@@ -224,8 +224,9 @@ B pasa, A apuesta **15,000** (medio bote aproximadamente), B paga.
 
 ### River: A♥
 
+- **B:** pasa.
 - **A:** el as se empareja — ahora tiene **doble pareja, ases y reyes**. Encantado de la vida, apuesta **30,000**.
-- **B:** el set sigue aplastando a la doble pareja. Sube a **70,000**.
+- **B:** el set sigue aplastando a la doble pareja. **Hace check-raise a 70,000**.
 - **A:** convencido de que su doble pareja es buena, paga.
 
 **Bote: 198,000**
@@ -261,7 +262,7 @@ Aquí tienes todas las acciones disponibles en la mesa — la parte que más con
 
 </div>
 
-==r:**Importante:** en el preflop no puedes pasar==, porque la ciega grande ya es una apuesta viva. ==Pasar solo es posible a partir del flop.==
+==r:**Importante:** en el preflop no puedes pasar — con una excepción.== La ciega grande ya es una apuesta viva, así que todos los demás tienen que pagar, subir o retirarse. ==Solo la ciega grande puede pasar si nadie ha subido; para el resto, pasar empieza en el flop.==
 
 Para una guía de decisión más profunda sobre cuándo usar cada movimiento — con una tabla de decisión check-call-raise-fold — mira las [acciones de apuesta explicadas](/es/blog/holdem-betting-actions).
 

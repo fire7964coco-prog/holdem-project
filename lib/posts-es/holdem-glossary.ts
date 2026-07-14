@@ -27,7 +27,7 @@ El póker tiene su propio vocabulario, y dominarlo hace dos cosas: evita que par
 :::stripe
 6 | Categorías, agrupadas por cómo te las encuentras
 80+ | Términos explicados en lenguaje llano
-12 | Parejas de "los que más se confunden", aclaradas primero
+8 | Parejas de "los que más se confunden", aclaradas primero
 → | Guías más completas enlazadas desde términos clave
 :::
 

@@ -28,7 +28,7 @@ Las odds crudas detrás de cada proyecto salen de la [tabla de odds y probabilid
 ### Odds implícitas de un vistazo
 
 :::stripe
-call ÷ % de ligar − bote | La fórmula de las odds implícitas
+call ÷ % de ligar − (bote + call) | La fórmula de las odds implícitas
 7.5 a 1 | Odds reales de ligar un set en el flop
 0 | Tus odds implícitas cuando el rival está all-in
 :::
@@ -63,7 +63,7 @@ La regla práctica: **empieza por las pot odds.** Si tu equity ya supera el prec
 
 ## Cómo calcular las odds implícitas
 
-**Para calcular las odds implícitas, averigua cuánto extra necesitas ganar cuando ligues, usando: extra necesario = (tu call ÷ tu probabilidad de ligar) − el bote actual.** Si de forma realista puedes ganar eso de más en las calles siguientes, el call es rentable.
+**Para calcular las odds implícitas, averigua cuánto extra necesitas ganar cuando ligues, usando: extra necesario = (tu call ÷ tu probabilidad de ligar) − (el bote actual + tu call).** Si de forma realista puedes ganar eso de más en las calles siguientes, el call es rentable.
 
 Escrito limpio, con ==g:x== como el dinero extra que debes ganar cuando completas:
 
@@ -74,7 +74,7 @@ Resta el bote que ya está ahí | Lo que queda es el extra que debes ganar despu
 Juzga si es realista | Stacks profundos + un rival que paga a gusto = sí. Stacks cortos o una mesa peligrosa = no
 :::
 
-La fórmula en una línea: ==b:x = (call ÷ % de ligar) − bote actual.== Si el dinero extra que de forma realista sacarías en las calles siguientes es *mayor* que x, pagar es rentable incluso cuando las pot odds inmediatas dicen fold.
+La fórmula en una línea: ==b:x = (call ÷ % de ligar) − (bote actual + call).== Si el dinero extra que de forma realista sacarías en las calles siguientes es *mayor* que x, pagar es rentable incluso cuando las pot odds inmediatas dicen fold.
 
 ---
 
@@ -85,9 +85,9 @@ Corramos los números para que la fórmula deje de ser abstracta.
 Tienes ==b:A♥ K♥== en una mesa ==Q♥ 7♥ 2♣ 3♠== — el proyecto de color al nut, 9 outs, con una carta por venir. El bote es de $100 y tu rival apuesta $50 en el turn, así que hay ==$150 en el centro== y te toca poner $50.
 
 - **Primero las pot odds:** te dan 150 a 50, o 3 a 1, así que necesitas **25%** de equity. Tu color liga en el river solo el ==r:19.6%== de las veces (9 outs ÷ 46 cartas desconocidas). 19.6% es menos que 25%, así que el precio inmediato dice ==r:fold.==
-- **Ahora las odds implícitas:** x = (call ÷ % de ligar) − bote = (50 ÷ 0.196) − 150 = 255 − 150 = ==g:unos $105.== Ese es el extra que debes ganar en el river cuando tu color caiga.
+- **Ahora las odds implícitas:** x = (call ÷ % de ligar) − (bote + call) = (50 ÷ 0.196) − (150 + 50) = 255 − 200 = ==g:unos $55.== Ese es el extra que debes ganar en el river cuando tu color caiga.
 
-Así que la pregunta no es "¿debería pagar $50?". Es "**cuando caiga un corazón, ¿puedo ganar al menos $105 más?**". Contra un rival profundo que pagará una apuesta en el river con top pair o un set, es fácil — pagas. Contra alguien con $60 detrás, o en una mesa donde un cuarto corazón le mata la acción, no puedes — así que foldeas.
+Así que la pregunta no es "¿debería pagar $50?". Es "**cuando caiga un corazón, ¿puedo ganar al menos $55 más?**". Contra un rival profundo que pagará una apuesta en el river con top pair o un set, es fácil — pagas. Contra alguien con $40 detrás, o en una mesa donde un cuarto corazón le mata la acción, no puedes — así que foldeas.
 
 :::note
 El mismo call de $50, decisiones opuestas — y las cartas nunca cambiaron. Lo que cambió es cuánto dinero queda por ganar. Eso son las odds implícitas en una frase.
@@ -184,7 +184,7 @@ A. Las odds implícitas son las fichas extra que esperas ganar en las calles sig
 
 **Q. ¿Cómo se calculan las odds implícitas?**
 
-A. Usa: extra necesario = (tu call ÷ tu probabilidad de ligar) − el bote actual. Pagar $50 con un proyecto de color que liga el 19.6% de las veces significa 50 ÷ 0.196 = $255, menos el bote de $150 = unos $105. Si de forma realista puedes ganar $105 más cuando ligues, el call es rentable. Ten en cuenta que siempre es una estimación, ya que las apuestas futuras no están garantizadas.
+A. Usa: extra necesario = (tu call ÷ tu probabilidad de ligar) − (el bote actual + tu call). Pagar $50 con un proyecto de color que liga el 19.6% de las veces significa 50 ÷ 0.196 = $255, menos los $200 ya en juego (el bote de $150 más tu call de $50) = unos $55. Si de forma realista puedes ganar $55 más cuando ligues, el call es rentable. Ten en cuenta que siempre es una estimación, ya que las apuestas futuras no están garantizadas.
 
 **Q. ¿Cuál es la diferencia entre pot odds y odds implícitas?**
 
@@ -218,7 +218,7 @@ A. Las odds implícitas van todas del dinero que queda por ganar, y los stacks p
 
 ## Las 3 cosas que debes recordar
 
-1. **La fórmula:** extra necesario = (call ÷ % de ligar) − bote actual. Si de forma realista puedes ganar más que eso después, el call es bueno incluso cuando las pot odds dicen fold.
+1. **La fórmula:** extra necesario = (call ÷ % de ligar) − (bote actual + call). Si de forma realista puedes ganar más que eso después, el call es bueno incluso cuando las pot odds dicen fold.
 2. **El chequeo de realidad:** las odds implícitas son una estimación que vive de stacks profundos y un rival que paga. Contra un all-in o un stack corto, son cero — vuelve a las pot odds.
 3. **El espejo oscuro:** las reverse implied odds castigan los proyectos que no son al nut. Un proyecto al nut vale mucho más que el mismo proyecto a una mano segunda mejor.
 

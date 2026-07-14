@@ -126,13 +126,12 @@ La regla: ==cada side pot se construye tomando la diferencia hasta el siguiente 
 Ciegas $1/$2. Cuatro jugadores ven el flop.
 
 1. El Jugador A apuesta $10.
-2. El Jugador B sube a $25.
-3. El Jugador C va all-in por **$30** (solo $5 más que la subida de B a $25 — no llega al incremento de una subida completa).
+2. El Jugador B va all-in por **$14** (solo $4 más que la apuesta de A de $10 — no es una subida completa, que exigiría al menos $20).
 
-¿Qué pasa con el Jugador A y el Jugador D?
+¿Qué pasa con el Jugador A y con el Jugador C, que aún no ha actuado?
 
-- El Jugador A ya actuó (apostó $10). Como el all-in de C por $30 es **menos que una subida completa** (que exigiría al menos $40 = $25 + $15 de subida mínima), la acción NO se reabre para el Jugador A. ==A solo puede pagar o retirarse — no puede resubir.==
-- El Jugador D todavía no ha actuado — **D sí puede subir con normalidad**.
+- El Jugador A ya actuó (apostó $10) y ahora se enfrenta solo a una subida incompleta. Como el all-in de B por $14 es **menos que una subida completa**, la acción NO se reabre para el Jugador A. ==A solo puede pagar o retirarse — no puede resubir.==
+- El Jugador C todavía no ha actuado — **el Jugador C sí puede subir con normalidad**.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -257,7 +256,7 @@ A. Table stakes significa que solo puedes apostar las fichas que tenías delante
 
 **Q. Si dos jugadores van all-in por cantidades distintas, ¿quién enseña primero?**
 
-A. El último all-in cuenta como la última acción agresiva. Aplican las reglas normales del showdown: enseña primero el último que hizo un all-in o un movimiento agresivo. En cash, si fue un all-in pagado sin más acción, quien pagó puede tirar sus cartas si pierde tras ver la mano del jugador all-in (en torneos todas las manos implicadas quedan boca arriba).
+A. El último all-in que fue una **apuesta o subida** es la última acción agresiva y enseña primero. Un all-in que solo **iguala** (por menos) no es agresivo — el apostador original enseña primero. En cash, si fue un all-in pagado sin más acción, quien pagó puede tirar sus cartas si pierde tras ver la mano del jugador all-in (en torneos todas las manos implicadas quedan boca arriba).
 
 **Q. ¿Las reglas del all-in cambian entre torneos y cash?**
 

@@ -223,7 +223,7 @@ Tienes **6♥ 2♣**. La mesa tiene cuatro corazones.
 
 Tienes **A♥ 3♣**. La mesa ya trae trío de reyes.
 
-→ Tu A♥ empareja con el A♠ de la mesa y te da un **full, KKK + AA**. Pero si tu rival también tiene un As, tiene el *mismo* full y se divide. Si no tiene As y solo una pareja menor, tu full gana. La lección: cuando la mesa hace casi todo el trabajo, tu mano a menudo vale solo una carta extra.
+→ Tu A♥ empareja con el A♠ de la mesa y te da un **full, KKK + AA**. Pero si tu rival también tiene un As, tiene el *mismo* full y se divide (solo la pareja exacta A-A de mano hace un full mayor, ases sobre reyes). Si no tiene As y solo una pareja menor, tu full gana. La lección: cuando la mesa hace casi todo el trabajo, tu mano a menudo vale solo una carta extra.
 
 ---
 
@@ -361,7 +361,7 @@ A. Ambos son trío. Un *set* es una pareja servida más una carta de la mesa (bi
 
 **Q. ¿Cuál es la mano más alta del póker?**
 
-A. La Escalera Real (A-K-Q-J-10 del mismo palo). Es imbatible y solo puede empatar con otra escalera real, lo que da un bote dividido.
+A. La Escalera Real (A-K-Q-J-10 del mismo palo). Es imbatible — el único empate es una escalera real que está entera en la mesa y todos comparten, lo que da un bote dividido.
 
 **Q. ¿El trío es mejor que la doble pareja?**
 
@@ -377,7 +377,7 @@ A. La peor mano posible es 7-5-4-3-2 en palos mezclados ("siete alto"). Es la ca
 
 **Q. ¿Se pueden tener tres parejas en el póker?**
 
-A. No. Una mano de póker siempre son cinco cartas, así que puede contener como máximo dos parejas. Si tus cartas y la mesa te dan tres parejas entre las siete, solo cuentan tus dos mejores parejas — la carta más alta de la tercera pareja aún puede actuar como kicker, pero nunca se convierte en una mano de "tres parejas".
+A. No. Una mano de póker siempre son cinco cartas, así que puede contener como máximo dos parejas. Si tus cartas y la mesa te dan tres parejas entre las siete, solo cuentan tus dos mejores parejas — una carta de la tercera pareja puede ocupar el kicker si es tu carta suelta más alta, pero nunca se convierte en una mano de "tres parejas".
 
 **Q. ¿Se puede usar el As como un 1 en el póker?**
 

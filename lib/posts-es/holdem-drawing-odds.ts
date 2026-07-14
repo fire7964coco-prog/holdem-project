@@ -214,7 +214,7 @@ A. No hay un número único fijo — depende de cuántos rivales tengan parejas 
 
 ## Las 3 cosas que debes recordar
 
-1. **Ligar un set: 11.8% (7.5 a 1).** El número que decide cada call de set mining — solo paga con stacks lo bastante profundos para cobrar 10× o más cuando aciertes.
+1. **Ligar un set: 11.8% (7.5 a 1).** El número que decide cada call de set mining — solo paga con stacks lo bastante profundos para cobrar 15× o más cuando aciertes.
 2. **Hecho vs proyecto vs completado son números distintos.** Dos cartas del mismo palo ligan un color hecho un 0.84%, un proyecto de color un 10.9%, y completan ese proyecto un 35%. Nunca cites el equivocado.
 3. **Un proyecto grande es más o menos uno de cada tres al river.** Proyecto de color 35%, abierto 31.5% — y más o menos uno de cada seis en una sola calle.
 

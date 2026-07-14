@@ -118,7 +118,7 @@ No puedes llevar esa tabla a la mesa, así que usa el atajo en el que confía to
 - **En el flop (dos cartas por venir):** outs ×4 ≈ tu % de ligar para el river.
 - **En el turn (una carta por venir):** outs ×2 ≈ tu % de ligar en el river.
 
-Un proyecto de color son 9 outs. En el flop: 9 × 4 = **36%** (valor real 35.0% — clavado). En el turn: 9 × 2 = **18%** (real 19.1% — bastante cerca para actuar).
+Un proyecto de color son 9 outs. En el flop: 9 × 4 = **36%** (valor real 35.0% — clavado). En el turn: 9 × 2 = **18%** (real 19.6% — bastante cerca para actuar).
 
 :::tip[El atajo ×4 asume en silencio que verás *ambas* cartas sin más apuestas — solo cierto cuando ya estás all-in. Si hay una apuesta delante de ti, usa el número ×2 (una carta) para la calle en la que realmente estás.]:::
 

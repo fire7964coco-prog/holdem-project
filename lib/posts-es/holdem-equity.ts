@@ -71,7 +71,7 @@ Esa es toda la razón por la que el equity importa: convierte "¿voy por delante
 | AA vs KK | 82% / 18% | La sobrepar domina |
 | QQ vs AK | ~57% / ~43% | La pareja gana la "carrera" |
 | 22 vs AK | ~52% / ~48% | El verdadero coin flip |
-| AK vs AQ | ~70% / ~25% | Dominación (el resto divide) |
+| AK vs AQ | ~73% / ~23% | Dominación (el resto divide) |
 | 88 vs A7 | ~70% / ~30% | Pareja vs una sobrecarta |
 
 </div>

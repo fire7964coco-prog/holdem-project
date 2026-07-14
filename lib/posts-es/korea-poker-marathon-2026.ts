@@ -104,7 +104,7 @@ El argumento no es complicado. Es cuestión de fechas y ubicación.
 
 **Cómo llegar desde Seúl:** tren exprés ITX-Cheongchun desde la estación de Yongsan → Chuncheon, ~80–90 min, ~₩8,800. O la línea Gyeongui-Jungang (경의중앙선) hasta Cheongnyangni y luego la línea de Chuncheon (~100 min en total, más barato). Asequible, escénico y sin coche.
 
-**La ruta Chuncheon → Paradise City:** tras la carrera, tren exprés de vuelta a Seúl (~70 min) → AREX desde la estación de Seúl u Hongdae → lanzadera de Paradise City desde la T1. Total: ~3 horas. Perfectamente factible el domingo por la tarde tras la carrera.
+**La ruta Chuncheon → Paradise City:** tras la carrera, tren exprés de vuelta a Seúl (~80 min) → AREX desde la estación de Seúl u Hongdae → lanzadera de Paradise City desde la T1. Total: ~3 horas. Perfectamente factible el domingo por la tarde tras la carrera.
 
 ---
 
@@ -366,7 +366,7 @@ El doblete más limpio: APT Incheon (7–16 ago) → descanso en Seúl → Marat
 | 25 sep–7 oct | ==g:Torneos del APT Jeju 2026== · explora Jeju entre sesiones |
 | 8–9 oct | Vuelo Jeju → Seúl · check-in en hotel de Seúl o Paradise City |
 | 10–24 oct | Tiempo en Seúl — Gyeongbokgung, Hongdae, Myeongdong, cash games |
-| ==**25 oct**== | ==**Maratón de Chuncheon**== (ITX desde Seúl, 70 min) |
+| ==**25 oct**== | ==**Maratón de Chuncheon**== (ITX desde Seúl, ~80 min) |
 | 26–31 oct | Recuperación · cash games en Seúl o Paradise City |
 | 1 nov | Opcional: ==**JTBC Seoul Marathon**== (semana consecutiva) |
 | 2 nov | Vuelo de vuelta desde el aeropuerto de Incheon |
@@ -482,7 +482,7 @@ A. No. Los maratones de Chuncheon y JTBC tienen vías de inscripción en inglés
 
 **Q. ¿Puedo correr Chuncheon (25 oct) y JTBC Seúl (1 nov) en el mismo viaje?**
 
-A. Sí — están a una semana de distancia. Chuncheon está a 90 min de Seúl en tren. Corres Chuncheon el domingo, te recuperas de lunes a sábado y corres el JTBC el domingo siguiente. Muchos corredores coreanos hacen semanas consecutivas así. Presupuesta tiempo extra de recuperación; el recorrido de Chuncheon tiene cuestas.
+A. Sí — están a una semana de distancia. Chuncheon está a unos 80 min de Seúl en tren. Corres Chuncheon el domingo, te recuperas de lunes a sábado y corres el JTBC el domingo siguiente. Muchos corredores coreanos hacen semanas consecutivas así. Presupuesta tiempo extra de recuperación; el recorrido de Chuncheon tiene cuestas.
 
 **Q. ¿El casino Paradise City abre si llego un domingo después de un maratón?**
 

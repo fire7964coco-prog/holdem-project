@@ -45,7 +45,7 @@ La palabra pinta la escena: te "enfriaron" — tu mano caliente se quedó fría 
 
 ## Cooler vs bad beat: la diferencia que todo el mundo confunde
 
-![Infografía de A♠ A♦ contra K♥ K♦ en un board K♠ 7♦ 2♣ 8♥ 3♠ — un trío de reyes ligado en el flop bate a los ases](/images/holdem-cooler-vs-badbeat.webp "El cooler de manual: ases contra reyes, ninguna mano puede foldear, y el trío ligado en el flop decide quién paga")
+![Infografía de A♠ A♦ contra K♥ K♦ en un board K♠ 7♦ 2♣ 8♥ 3♠ — la misma colisión vista desde ambos lados](/images/holdem-cooler-vs-badbeat.webp "Una colisión, dos etiquetas: preflop, reyes contra ases es el cooler de manual para los reyes — y cuando cae el rey, la misma jugada es un bad beat para los ases")
 
 Esta es la distinción que hace o rompe tu comprensión del término — y casi todo jugador casual la difumina. Ambos sientan fatal, pero son opuestos:
 
@@ -66,7 +66,7 @@ La forma más limpia de no confundirlos:
 
 </div>
 
-Aquí están los mismos jugadores enseñando ambos casos, para que te encaje. **Bad beat:** tienes A♠A♥, metes todas las fichas preflop contra 7♣7♦, y sale un **7** en la mesa — tus ases eran un favorito de ~4.5 a 1 (cerca del 80%) y te superaron. **Cooler:** dale la vuelta — tienes tú el **7♣7♦**, ligas un trío de sietes y te vas de stack contra un trío salido de una pareja mayor. Ibas de underdog todo el rato y sencillamente no podías foldear un trío ligado en el flop. Mismas cartas, historias opuestas. Saber cuál de los dos acaba de pasar te dice si toca [revisar tu jugada](/es/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") o simplemente encogerte de hombros.
+Aquí están los mismos jugadores enseñando ambos casos, para que te encaje. **Bad beat:** tienes A♠A♥, metes todas las fichas preflop contra 7♣7♦, y sale un **7** en la mesa — tus ases eran un favorito de ~4 a 1 (cerca del 80%) y te superaron. **Cooler:** dale la vuelta — tienes tú el **7♣7♦**, ligas un trío de sietes y te vas de stack contra un trío salido de una pareja mayor. Ibas de underdog todo el rato y sencillamente no podías foldear un trío ligado en el flop. Mismas cartas, historias opuestas. Saber cuál de los dos acaba de pasar te dice si toca [revisar tu jugada](/es/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") o simplemente encogerte de hombros.
 
 ---
 

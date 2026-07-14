@@ -334,7 +334,7 @@ A. Ambos funcionan, pero ==g:se recomienda llegar 2–3 días antes==. Te recupe
 ## Las conclusiones
 
 1. **El APT Incheon 2026** se juega del ==**7 al 16 de agosto**== en el Paradise City Casino — a 10 min del Aeropuerto de Incheon en lanzadera gratuita, $2.7M GTD.
-2. **Main Event** entrada: ==**~$1,703**== con ==g:$1M garantizado==. 3 veces más barato que el WPT o el EPT.
+2. **Main Event** entrada: ==**~$1,703**== con ==g:$1M garantizado==. Alrededor de un tercio del Main del EPT Barcelona y la mitad del buy-in del Championship del WPT Australia.
 3. **Clasifica desde $3.50** con los satélites por pasos de Natural8. El formato OnLive te deja arrancar el Día 1 desde casa.
 4. **Seúl está a 60 min** y es uno de los mejores destinos de viaje de Asia — ==g:palacios, BBQ, vida nocturna y comida callejera imbatible.==
 5. **Solo para extranjeros** — este torneo se construyó para los jugadores internacionales. Tu pasaporte es tu tarjeta de acceso.

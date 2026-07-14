@@ -105,7 +105,7 @@ Si un jugador lee mal su mano y dice "tengo pareja", pero en realidad tiene esca
 
 Y funciona en los dos sentidos. Si crees que has perdido y tiras sin enseñar, pero tu mano era la ganadora — ==r:el bote se ha ido==. Tu mano está muerta en cuanto toca el muck. Si no estás seguro al 100% de haber perdido, deja siempre que el dealer lea tu mano antes de tirarla.
 
-Situación real: llevas J♥ T♥ en una mesa Q♥ 9♥ 8♥ 2♣ 5♦. Tienes escalera de color a la reina (Q-J-T-9-8 de corazones). El rival enseña K♣ Q♦ (una pareja de reinas). Ganas de calle. No tires tus cartas solo porque le veas la reina.
+Situación real: llevas J♥ 10♥ en una mesa Q♥ 9♥ 8♥ 2♣ 5♦. Tienes escalera de color a la reina (Q-J-10-9-8 de corazones). El rival enseña K♣ Q♦ (una pareja de reinas). Ganas de calle. No tires tus cartas solo porque le veas la reina.
 
 ---
 

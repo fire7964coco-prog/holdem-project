@@ -135,7 +135,7 @@ Gana el Paso 4 y recibirás uno de estos tres Power Passes:
 - Los encuentras en **Events → Live Events → EPT Barcelona** en el lobby de PokerStars
 - Disponibles en la recta previa al festival — ==la frecuencia aumenta a partir de finales de julio==
 
-> **Las cuentas:** un satélite directo de €109 suele dar 1 asiento al Main Event por cada 10–15 jugadores. Si eres un jugador ganador, esta ruta puede tener sentido. ==r:Para el jugador casual, el Power Path ofrece más tiros por dólar.==
+> **Las cuentas:** un satélite directo de €109 suele dar aproximadamente 1 asiento al Main Event por cada 50 jugadores (un satélite de €530 se acerca a 1 de cada 10). Si eres un jugador ganador, esta ruta puede tener sentido. ==r:Para el jugador casual, el Power Path ofrece más tiros por dólar.==
 
 ---
 
@@ -168,7 +168,7 @@ Gana el Paso 4 y recibirás uno de estos tres Power Passes:
 | Buy-in del EPT Main Event | **€5,300** |
 | Comida y transporte diario (10 días) | €500–€800 |
 | Side events (opcional) | €825–€3,250 |
-| ==**Estimación total del viaje**== | ==**€7,750–€11,550**== |
+| ==**Estimación total del viaje**== | ==**€7,775–€11,550**== |
 
 </div>
 

@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Dos jugadores mostrando A-K y A-Q en el showdown con un as en la mesa — el kicker del rey decide quién se lleva el bote",
   tags: ["kicker poker", "kicker en poker que es", "reglas del kicker", "el color tiene kicker", "jugar la mesa", "as dominado", "carta de desempate", "perder por kicker"],
   content: `
-La mano que por fin me enseñó qué es un kicker me costó un buy-in entero. Tenía ==b:A♦ 9♣==, la mesa emparejó mi as y me fui all-in convencido de que la pareja máxima era oro. Él dio la vuelta a ==b:A♠ K♦== — la misma pareja de ases, pero su rey superaba a mi nueve, y el bote se deslizó hacia su lado. No había perdido contra una *mano* mejor; había perdido contra una ==carta lateral== mejor. Esa carta lateral es el kicker, y decide más botes de los que ningún principiante imagina.
+La mano que por fin me enseñó qué es un kicker me costó un buy-in entero. Tenía ==b:A♠ 9♣==, la mesa emparejó mi as y me fui all-in convencido de que la pareja máxima era oro. Él dio la vuelta a ==b:A♥ K♦== — la misma pareja de ases, pero su rey superaba a mi nueve, y el bote se deslizó hacia su lado. No había perdido contra una *mano* mejor; había perdido contra una ==carta lateral== mejor. Esa carta lateral es el kicker, y decide más botes de los que ningún principiante imagina.
 
 ==El kicker es el desempate integrado en el propio póker — cuando dos jugadores tienen el mismo valor, gana la carta sobrante más alta.== Casi todas las guías te dan una definición de una línea y el ejemplo de AK contra AQ. Esta te da el cuadro completo: exactamente qué manos tienen kicker (y cuántos), la única excepción que todos confunden y por qué "jugar la mesa" significa que de repente tu kicker no importa nada.
 
@@ -101,9 +101,7 @@ La mesa es ==b:A♣ 9♦ 5♠ 2♥ 7♣==. Tú tienes ==b:A♠ K♠==, tu rival 
 
 Misma pareja, así que compara kickers de arriba abajo: tu ==g:K gana a su Q.== Ganas, A-A-K-9-7 contra A-A-Q-9-7. El 9 y el 7 ni siquiera entran en juego — el primer kicker lo zanjó.
 
-:::note
-Fíjate en que ambas manos comparten el 9 y el 7 de la mesa. Los kickers también pueden venir de la mesa: si la carta lateral más alta es una carta comunitaria, llena la mano de *ambos* jugadores y decide la siguiente carta. Tu carta propia solo es kicker si supera lo que ya hay en la mesa.
-:::
+:::note[Fíjate en que ambas manos comparten el 9 y el 7 de la mesa. Los kickers también pueden venir de la mesa: si la carta lateral más alta es una carta comunitaria, llena la mano de *ambos* jugadores y decide la siguiente carta. Tu carta propia solo es kicker si supera lo que ya hay en la mesa.]:::
 
 ---
 
@@ -131,7 +129,7 @@ Volvamos a mi buy-in. Mesa ==b:A♦ 7♣ 2♥ Q♠ 4♦==, sin escalera ni color
 - **A9:** A♠ 9♣ → pareja de ases, mejores cinco ==A♠ A♦ Q♠ 9♣ 7♣==.
 - **AK:** A♥ K♦ → pareja de ases, mejores cinco ==g:A♥ A♦ K♦ Q♠ 7♣==.
 
-Misma pareja otra vez, y la K supera al 9. Peor aún, mi 9 quedó relegado a segundo kicker por la reina de la mesa, y la comparación se zanjó ya en el primer kicker (K contra Q) — así que, para lo que importaba, mi "kicker" estaba ==r:muerto== antes de empezar la mano. Eso es la dominación: cuando ligas tu as, muchas veces solo estás pagando un as mayor. Es la razón entera por la que la [tabla de manos iniciales](/es/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") trata a A9 offsuit con mucha más cautela que AK — el kicker es la diferencia entre una mano premium y una trampa.
+Misma pareja otra vez — y mi 9 ni siquiera llegó a votar. Quedó relegado a segundo kicker por la reina de la mesa, y la comparación se zanjó en el primer kicker: su K sobre la Q de la mesa — así que, para lo que importaba, mi "kicker" estaba ==r:muerto== antes de empezar la mano. Eso es la dominación: cuando ligas tu as, muchas veces solo estás pagando un as mayor. Es la razón entera por la que la [tabla de manos iniciales](/es/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") trata a A9 offsuit con mucha más cautela que AK — el kicker es la diferencia entre una mano premium y una trampa.
 
 ---
 
