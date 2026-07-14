@@ -5,7 +5,14 @@
 
 ---
 
-## ▶▶▶ 새 세션 START HERE (2026-07-14 — ★★es 언어 완전 완성(42/42) / 다음 = pt(포르투갈어))
+## ▶▶▶ 새 세션 START HERE (2026-07-14 — ★★★EN 마스터 경화 완료 + en/es/ja 정합 / 다음 = pt)
+
+> ✅✅✅ **EN 마스터 Fable5 정밀검수·경화 완료 후 es·ja 전파** — 커밋 `ceac592`(EN 교정)·`fd1e928`(불가능 이미지 2건: outs 히어로·split-pot)·`ac14f1d`(es/ja 전파). **핵심 교훈**: "여러 번 검수 ≠ 검증 완료". Fable5가 핸드 7장 검산·수학 재계산·크로스문서 대조로 EN 마스터 자체의 잠재 오류 ~18 🔴를 처음 잡음(핸드 수학·ICM·사이드팟은 전편 CLEAN, 결함은 룰적용·수치모순·공식·표기·이미지). 대표: **implied-odds 공식 오류**(−pot→−(pot+call)), all-in 재개방 예시 자체 오류, game-order 프리플랍 체크, 3bet MDF, starting-hands 12/26/42→13/27/43, bad-beat Mabuchi, cooler 이미지 캡션.
+> - **방법론 확립(다음 언어 필수)**: **번역 착수 전 EN을 Fable5 정밀검수 프롬프트로 필라별 경화**(핸드 7장 열거·수학 재계산·크로스문서 대조·불가능/모순/표기·죽은링크). 프롬프트 원형은 이 세션 대화 참조(ROLE=엘리트 홀덤+팩트체커, 적대적, 증명될 때까지 틀렸다고 간주).
+> - ⚠️ **미해결(외부 사실확인 필요, 함부로 수정 금지)**: apt **K-ETA "무료"**→₩10,000 수수료 가능(k-eta.go.kr) · wpt **Prime=Champions Cup** 자격(WPT.com) · wpt **NSW 현금한도** 2026 인하 가능성 · 송금정보(SWIFT/BSB) · 일부 이벤트 팩트·ICM "2025 study" 무출처.
+> - ⚠️ **이미지 재사용**(오류 아님): holdem-reading-straight-example.webp 등 클러스터 중복 → 글별 고유화 권장(커서).
+
+## ▶▶▶ (이전) START HERE (2026-07-14 — ★★es 언어 완전 완성(42/42) / 다음 = pt(포르투갈어))
 
 > ✅✅ **es 42/42편 완성** — EN 마스터와 완전 동일 구조. Rules 6·HR 6·Odds 6·Strategy 8·Tournament 9·Glossary 6·card-counting 1. 커밋 `05de6f2`(Odds)·`3d1c038`(Strategy)·`c7678e5`(Tournament)·`1ef03d4`(Glossary+cc)·`68bb94f`(EN정합 링크복원)·`8db2366`(ES_CLUSTERS 러닝맵). 하드게이트 전부 통과(270 intl posts/24언어). 상세는 WORKLOG 2026-07-14.
 > - 브리프 `docs/translation-terms-es.md`에 Wave 2~5(Odds·Strategy·Tournament·Glossary) 용어·화이트리스트(42) 누적. 다음 언어도 이 문서 형식 참고.
