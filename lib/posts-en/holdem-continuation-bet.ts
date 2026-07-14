@@ -76,7 +76,7 @@ This is the heart of c-betting. Before you think about sizing or frequency, ask 
 | **Low, connected** | 7‑6‑5, 9‑8‑6 | **Caller** | **Check more**; bet big & selective when you do | Hits their suited connectors and small pairs |
 | **Paired low** | 8‑8‑3, 5‑5‑2 | **You (slightly)** | Bet **often & small** | Neither has trips much; your overcards/overpairs lead |
 | **Monotone** | K♠9♠4♠ | Mixed — caution | Bet **less, smaller** | A made flush caps both ranges; go cheap |
-| **Two-tone & wet** | Q♥J♥7 | Caller-leaning | **Polarize:** big with value/draws, check air | Tons of draws — charge them or get out |
+| **Two-tone & wet** | Q♥J♥7♣ | Caller-leaning | **Polarize:** big with value/draws, check air | Tons of draws — charge them or get out |
 
 </div>
 

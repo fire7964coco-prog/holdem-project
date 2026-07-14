@@ -113,7 +113,7 @@ Win Step 4 and you receive one of three Power Passes:
 |:---|:---:|:---|
 | Bronze Pass | ~$530 | Online tournament credits |
 | Silver Pass | ~$2,300 | Mid-tier live event entries |
-| ==**Gold Pass**== | ==g:**~$10,300**== | ==g:€5,300 ME + €1,100 side event + 8 nights hotel + expenses== |
+| ==**Gold Pass**== | ==g:**~€10,300**== | ==g:€5,300 ME + €1,100 side event + 8 nights hotel + expenses== |
 
 ==g:The **Gold Pass** is the one you want.== PokerStars aims for at least 25% of the Main Event field to be satellite qualifiers — so the seats are real.
 

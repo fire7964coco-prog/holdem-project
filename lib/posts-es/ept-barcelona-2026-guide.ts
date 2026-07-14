@@ -113,7 +113,7 @@ Gana el Paso 4 y recibirás uno de estos tres Power Passes:
 |:---|:---:|:---|
 | Bronze Pass | ~$530 | Créditos para torneos online |
 | Silver Pass | ~$2,300 | Entradas a eventos en vivo de gama media |
-| ==**Gold Pass**== | ==g:**~$10,300**== | ==g:Main de €5,300 + side event de €1,100 + 8 noches de hotel + gastos== |
+| ==**Gold Pass**== | ==g:**~€10,300**== | ==g:Main de €5,300 + side event de €1,100 + 8 noches de hotel + gastos== |
 
 ==g:El **Gold Pass** es el que quieres.== PokerStars aspira a que al menos el 25% del field del Main Event sean clasificados por satélite — así que los asientos son de verdad.
 

@@ -130,7 +130,7 @@ Back to my buy-in. Board ==b:A♦ 7♣ 2♥ Q♠ 4♦==, no straight or flush ou
 - **A9:** A♠ 9♣ → pair of aces, best five ==A♠ A♦ Q♠ 9♣ 7♣==.
 - **AK:** A♥ K♦ → pair of aces, best five ==g:A♥ A♦ K♦ Q♠ 7♣==.
 
-Same pair again, and K outkicks the 9. Worse, my 9 didn't even make the cut — the board's queen outranked it, so my "kicker" was ==r:dead== before the hand began. That's domination: when you hit your ace, you're often just paying off a bigger ace. It's the whole reason the [starting hands chart](/en/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") treats A9 offsuit so much more cautiously than AK — the kicker is the difference between a premium hand and a trap.
+Same pair again, and K outkicks the 9. Worse, my 9 was pushed down to second kicker by the board's queen, and the comparison was settled at the first kicker (K vs Q) — so for all it mattered, my "kicker" was ==r:dead== before the hand began. That's domination: when you hit your ace, you're often just paying off a bigger ace. It's the whole reason the [starting hands chart](/en/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") treats A9 offsuit so much more cautiously than AK — the kicker is the difference between a premium hand and a trap.
 
 ---
 

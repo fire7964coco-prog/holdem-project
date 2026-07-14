@@ -70,7 +70,7 @@ No Texas Hold'em padrão, **nenhum naipe ganha de outro**. Espadas não ganham d
 
 **A♠ K♠ Q♠ J♠ 10♠** — o straight flush mais alto e a melhor mão do pôquer.
 
-Não pode ser batido nem empatado (dois royal flushes só acontecem em naipes diferentes, o que significa pote dividido). Aparece mais ou menos uma vez a cada 31.000 mãos, então muitos jogadores passam anos sem fechá-lo. Quando fechar, seu único trabalho é colocar o máximo de fichas possível.
+Não pode ser batido; o único empate possível é um royal flush que está inteiro na mesa e pertence a todos — aí o pote é dividido. Aparece mais ou menos uma vez a cada 31.000 mãos, então muitos jogadores passam anos sem fechá-lo. Quando fechar, seu único trabalho é colocar o máximo de fichas possível.
 
 ### #2 — Straight Flush
 
@@ -309,7 +309,7 @@ A. Os dois são trinca. Um *set* é um par na mão mais uma carta da mesa (bem d
 
 **Q. Qual é a melhor mão do pôquer?**
 
-A. O Royal Flush (A-K-Q-J-10 do mesmo naipe). Não pode ser batido e só empata com outro royal flush, o que dá pote dividido.
+A. O Royal Flush (A-K-Q-J-10 do mesmo naipe). Não pode ser batido — o único "empate" é um royal flush que está inteiro na mesa e pertence a todos, o que divide o pote.
 
 **Q. A trinca é melhor que dois pares?**
 

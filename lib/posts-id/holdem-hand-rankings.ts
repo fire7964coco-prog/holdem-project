@@ -70,7 +70,7 @@ Di Texas Hold'em standar, **tidak ada jenis yang mengalahkan jenis lain**. Sekop
 
 **A♠ K♠ Q♠ J♠ 10♠** — straight flush tertinggi dan tangan terbaik di poker.
 
-Tak bisa dikalahkan maupun diseri (dua royal flush hanya mungkin di jenis berbeda, artinya pot dibagi). Muncul kira-kira sekali tiap 31.000 tangan, jadi banyak pemain bertahun-tahun tak pernah mendapatkannya. Saat dapat, satu-satunya tugas Anda adalah memasukkan chip sebanyak mungkin.
+Tak bisa dikalahkan; satu-satunya seri yang mungkin adalah royal flush yang seluruhnya ada di meja untuk dipakai bersama semua pemain, sehingga pot dibagi. Muncul kira-kira sekali tiap 31.000 tangan, jadi banyak pemain bertahun-tahun tak pernah mendapatkannya. Saat dapat, satu-satunya tugas Anda adalah memasukkan chip sebanyak mungkin.
 
 ### #2 — Straight Flush
 
@@ -309,7 +309,7 @@ A. Keduanya three of a kind. *Set* adalah sepasang di tangan plus satu kartu mej
 
 **Q. Apa tangan terbaik di poker?**
 
-A. Royal Flush (A-K-Q-J-10 satu jenis). Tak bisa dikalahkan dan hanya seri dengan royal flush lain, yang berarti pot dibagi.
+A. Royal Flush (A-K-Q-J-10 satu jenis). Tak bisa dikalahkan — satu-satunya "seri" adalah royal flush yang seluruhnya ada di meja untuk dipakai bersama semua pemain, sehingga pot dibagi.
 
 **Q. Apakah three of a kind lebih baik dari two pair?**
 

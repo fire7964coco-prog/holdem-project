@@ -70,7 +70,7 @@ Im Standard-Texas-Hold'em **schlägt keine Farbe eine andere**. Pik schlägt nic
 
 **A♠ K♠ Q♠ J♠ 10♠** — der höchste Straight Flush und die beste Hand im Poker.
 
-Sie kann weder geschlagen noch gesplittet werden (zwei Royal Flushes sind nur in verschiedenen Farben möglich, was einen geteilten Pot bedeutet). Sie kommt etwa einmal alle 31.000 Hände vor, daher treffen viele Spieler sie jahrelang nicht. Wenn du sie hast, ist deine einzige Aufgabe, so viele Chips wie möglich hineinzubekommen.
+Sie kann nicht geschlagen werden; der einzige mögliche Gleichstand ist ein Royal Flush, der komplett auf dem Board liegt und allen gemeinsam gehört — dann wird der Pot geteilt. Sie kommt etwa einmal alle 31.000 Hände vor, daher treffen viele Spieler sie jahrelang nicht. Wenn du sie hast, ist deine einzige Aufgabe, so viele Chips wie möglich hineinzubekommen.
 
 ### #2 — Straight Flush
 
@@ -309,7 +309,7 @@ A. Beides sind Drillinge. Ein *Set* ist ein Paar auf der Hand plus eine Board-Ka
 
 **Q. Was ist die beste Hand im Poker?**
 
-A. Der Royal Flush (A-K-Q-J-10 in einer Farbe). Er kann nicht geschlagen werden und teilt sich nur mit einem anderen Royal Flush, was einen geteilten Pot ergibt.
+A. Der Royal Flush (A-K-Q-J-10 in einer Farbe). Er kann nicht geschlagen werden — der einzige „Gleichstand“ ist ein Royal Flush, der komplett auf dem Board liegt und allen gemeinsam gehört, wodurch der Pot geteilt wird.
 
 **Q. Ist ein Drilling besser als zwei Paare?**
 

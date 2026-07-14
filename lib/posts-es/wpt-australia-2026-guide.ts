@@ -295,7 +295,7 @@ A. Puedes registrarte previamente online en thestarclub.com.au/sign-up para ahor
 
 **Q. ¿Cuál es la forma más barata de entrar en el WPT Australia Championship?**
 
-A. La vía del satélite presencial en dos pasos te da una oportunidad por ==g:unos AUD $255==. El Step 1 (~AUD $180) da acceso al Step 2 (~AUD $1,075), donde 1 de cada 8 jugadores gana un asiento al Championship. Los buy-ins exactos de los satélites de 2026 se confirmarán en [starpoker.com.au](https://www.starpoker.com.au) más cerca del festival.
+A. La vía del satélite presencial en dos pasos te da una oportunidad por ==g:unos AUD $255==. El Step 1 (~AUD $255) da acceso al Step 2 (~AUD $1,075), donde 1 de cada 8 jugadores gana un asiento al Championship. Los buy-ins exactos de los satélites de 2026 se confirmarán en [starpoker.com.au](https://www.starpoker.com.au) más cerca del festival.
 
 **Q. ¿Se tributan las ganancias de póker en Australia?**
 

@@ -76,7 +76,7 @@ Este es el corazón del cbeteo. Antes de pensar en el tamaño o la frecuencia, h
 | **Bajo, conectado** | 7‑6‑5, 9‑8‑6 | **Quien pagó** | **Pasa más**; apuesta grande y selectivo cuando lo hagas | Liga sus conectores del mismo palo y parejas pequeñas |
 | **Emparejado bajo** | 8‑8‑3, 5‑5‑2 | **Tú (ligeramente)** | Apuesta **a menudo y pequeño** | Ninguno tiene trío casi nunca; tus sobrecartas/sobrepares mandan |
 | **Monótono** | K♠9♠4♠ | Mixto — cuidado | Apuesta **menos, más pequeño** | Un color hecho tapa ambos rangos; ve barato |
-| **Two-tone y húmedo** | Q♥J♥7 | Inclinado a quien pagó | **Polariza:** grande con valor/proyectos, pasa con aire | Un montón de proyectos — cóbraselos o sal de la mano |
+| **Two-tone y húmedo** | Q♥J♥7♣ | Inclinado a quien pagó | **Polariza:** grande con valor/proyectos, pasa con aire | Un montón de proyectos — cóbraselos o sal de la mano |
 
 </div>
 

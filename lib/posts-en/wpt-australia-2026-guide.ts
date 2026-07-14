@@ -295,7 +295,7 @@ A. You can pre-register online at thestarclub.com.au/sign-up to save time, but =
 
 **Q. What's the cheapest way to get into the WPT Australia Championship?**
 
-A. The on-site two-step satellite route gives you a shot for ==g:around AUD $255==. Step 1 (~AUD $180) feeds into Step 2 (~AUD $1,075), where 1-in-8 players win a Championship seat. Exact satellite buy-ins for 2026 will be confirmed on [starpoker.com.au](https://www.starpoker.com.au) closer to the festival.
+A. The on-site two-step satellite route gives you a shot for ==g:around AUD $255==. Step 1 (~AUD $255) feeds into Step 2 (~AUD $1,075), where 1-in-8 players win a Championship seat. Exact satellite buy-ins for 2026 will be confirmed on [starpoker.com.au](https://www.starpoker.com.au) closer to the festival.
 
 **Q. Is poker winnings taxed in Australia?**
 

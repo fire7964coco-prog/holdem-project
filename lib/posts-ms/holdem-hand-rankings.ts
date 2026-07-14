@@ -70,7 +70,7 @@ Dalam Texas Hold'em standard, **tiada jenis kad mengatasi jenis lain**. Spade ti
 
 **A♠ K♠ Q♠ J♠ 10♠** — straight flush tertinggi dan tangan terbaik dalam poker.
 
-Tidak boleh dikalahkan mahupun diseri (dua royal flush hanya mungkin dalam jenis berbeza, yang bermaksud pot dibahagi). Ia muncul lebih kurang sekali setiap 31,000 tangan, jadi ramai pemain bertahun-tahun tidak pernah membentuknya. Apabila anda dapat, satu-satunya tugas anda ialah memasukkan sebanyak mungkin cip.
+Tidak boleh dikalahkan; satu-satunya seri yang mungkin ialah royal flush yang keseluruhannya berada di atas meja untuk dikongsi semua pemain, lalu pot dibahagi. Ia muncul lebih kurang sekali setiap 31,000 tangan, jadi ramai pemain bertahun-tahun tidak pernah membentuknya. Apabila anda dapat, satu-satunya tugas anda ialah memasukkan sebanyak mungkin cip.
 
 ### #2 — Straight Flush
 
@@ -309,7 +309,7 @@ A. Kedua-duanya three of a kind. *Set* ialah sepasang di tangan ditambah satu ka
 
 **Q. Apakah tangan terbaik dalam poker?**
 
-A. Royal Flush (A-K-Q-J-10 sejenis). Ia tidak boleh dikalahkan dan hanya seri dengan royal flush lain, yang bermaksud pot dibahagi.
+A. Royal Flush (A-K-Q-J-10 sejenis). Ia tidak boleh dikalahkan — satu-satunya "seri" ialah royal flush yang keseluruhannya berada di atas meja untuk dikongsi semua pemain, lalu pot dibahagi.
 
 **Q. Adakah three of a kind lebih baik daripada two pair?**
 

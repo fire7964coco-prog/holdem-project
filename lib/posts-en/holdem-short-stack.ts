@@ -169,7 +169,7 @@ A. Push/fold is short-stack strategy where, when you're first into the pot, your
 
 **Q. Should you ever limp with a short stack?**
 
-A. Almost never when you're first in. Open-limping surrenders fold equity and builds a pot you can't navigate postflop. Short-stacked, the standard play is raise-or-fold, and with 15 big blinds or fewer that raise is usually an all-in. (Limping behind other limpers with a tiny stack in the big blind is a rare exception.)
+A. Almost never when you're first in. Open-limping surrenders fold equity and builds a pot you can't navigate postflop. Short-stacked, the standard play is raise-or-fold, and with 15 big blinds or fewer that raise is usually an all-in. (Completing from the small blind behind other limpers with a tiny stack is a rare exception.)
 
 **Q. Is min-raising ever right when short-stacked?**
 

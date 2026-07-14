@@ -70,7 +70,7 @@ Standart Texas Hold'em'de **hiçbir tür diğerini yenmez**. Maça kupayı yenme
 
 **A♠ K♠ Q♠ J♠ 10♠** — en yüksek straight flush ve pokerin en iyi eli.
 
-Yenilemez de berabere kalınamaz da (iki royal flush yalnızca farklı türlerde olabilir, bu da pot bölünmesi demektir). Yaklaşık her 31.000 elde bir gelir, bu yüzden birçok oyuncu yıllarca onu yapamaz. Yaptığında tek işin mümkün olduğunca çok çip koymaktır.
+Yenilemez; mümkün olan tek beraberlik, tamamen board'da yatan ve herkesin paylaştığı bir royal flush'tır, bu da potu böler. Yaklaşık her 31.000 elde bir gelir, bu yüzden birçok oyuncu yıllarca onu yapamaz. Yaptığında tek işin mümkün olduğunca çok çip koymaktır.
 
 ### #2 — Straight Flush
 
@@ -309,7 +309,7 @@ A. İkisi de üçlü. *Set*, elindeki bir çift artı bir board kartıdır (iyi 
 
 **Q. Pokerin en iyi eli hangisi?**
 
-A. Royal Flush (aynı türden A-K-Q-J-10). Yenilemez ve yalnızca başka bir royal flush ile berabere kalır, bu da pot bölünmesi demektir.
+A. Royal Flush (aynı türden A-K-Q-J-10). Yenilemez — tek "beraberlik", tamamen board'da yatan ve herkesin paylaştığı bir royal flush'tır, bu da potu böler.
 
 **Q. Üçlü iki çiftten iyi mi?**
 
