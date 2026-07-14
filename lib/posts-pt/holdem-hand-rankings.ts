@@ -214,7 +214,7 @@ Você tem **K♥ 2♣**. A mesa tem quatro copas.
 
 Você tem **A♥ 3♣**. A mesa já traz trinca de reis.
 
-→ Seu A♥ pareia com o A♠ da mesa e te dá um **full house, KKK + AA**. Mas se seu adversário também tem um Ás, ele tem o *mesmo* full house e divide-se. Se ele não tem Ás e só um par menor, seu full house ganha. A lição: quando a mesa faz quase todo o trabalho, sua mão muitas vezes vale só uma carta extra.
+→ Seu A♥ pareia com o A♠ da mesa e te dá um **full house, KKK + AA**. Mas se seu adversário também tem um único Ás, ele tem o *mesmo* full house e divide-se (só o par exato de Áses na mão faz um full maior, Áses cheios de Reis). Se ele não tem Ás e só um par menor, seu full house ganha. A lição: quando a mesa faz quase todo o trabalho, sua mão muitas vezes vale só uma carta extra.
 
 ---
 

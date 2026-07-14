@@ -6,6 +6,11 @@ import { POST as holdemBlindMeaning } from "./holdem-blind-meaning";
 import { POST as holdemAllInRules } from "./holdem-all-in-rules";
 import { POST as holdemShowdownRules } from "./holdem-showdown-rules";
 import { POST as holdemHandRankings } from "./holdem-hand-rankings";
+import { POST as holdemFlushVsStraight } from "./holdem-flush-vs-straight";
+import { POST as holdemKicker } from "./holdem-kicker";
+import { POST as holdemTiebreakRules } from "./holdem-tiebreak-rules";
+import { POST as holdemSplitPotRules } from "./holdem-split-pot-rules";
+import { POST as holdemReadingTheBoard } from "./holdem-reading-the-board";
 import { POST as holdemTournamentVsCashGame } from "./holdem-tournament-vs-cash-game";
 
 /**
@@ -21,8 +26,14 @@ export const PT_POSTS: Post[] = [
   holdemBlindMeaning,
   holdemAllInRules,
   holdemShowdownRules,
-  // 기타
+  // Hand Rankings 필라 (6/6)
   holdemHandRankings,
+  holdemFlushVsStraight,
+  holdemKicker,
+  holdemTiebreakRules,
+  holdemSplitPotRules,
+  holdemReadingTheBoard,
+  // 기타
   holdemTournamentVsCashGame,
 ];
 
