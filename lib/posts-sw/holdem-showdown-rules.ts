@@ -105,7 +105,7 @@ Kama mchezaji anasoma mkono wake vibaya na kusema "nina pair," lakini kwa kweli 
 
 Hii inafanya kazi pande zote mbili. Kama unadhani umeshindwa ukapiga muck bila kuonyesha, lakini mkono wako ungekuwa mshindi — ==r:pot imekwenda==. Mkono wako umekufa mara tu unapogusa muck. Kama huna uhakika wa asilimia 100 kwamba umeshindwa, muache dila daima asome mkono wako kabla ya ku-muck.
 
-Hali halisi: unashikilia J♥ T♥ kwenye bodi ya Q♥ 9♥ 8♥ 2♣ 5♦. Una straight flush ya queen-high (Q-J-T-9-8 za hearts). Mpinzani anaonyesha K♣ Q♦ (pair moja ya queens). Unashinda kwa mbali kabisa. Usi-muck tu kwa sababu umeona queen yake.
+Hali halisi: unashikilia J♥ 10♥ kwenye bodi ya Q♥ 9♥ 8♥ 2♣ 5♦. Una straight flush ya queen-high (Q-J-10-9-8 za hearts). Mpinzani anaonyesha K♣ Q♦ (pair moja ya queens). Unashinda kwa mbali kabisa. Usi-muck tu kwa sababu umeona queen yake.
 
 ---
 

@@ -224,8 +224,9 @@ B cek, A bertaruh **15.000** (sekitar setengah pot), B call.
 
 ### River: A♥
 
+- **B:** cek.
 - **A:** kartu As-nya berpasangan — sekarang **two pair, As dan King**. Merasa di atas angin, bertaruh **30.000**.
-- **B:** set tetap menggilas two pair. Raise ke **70.000**.
+- **B:** set tetap menggilas two pair. Check-raise ke **70.000**.
 - **A:** yakin two pair-nya menang, call.
 
 **Pot: 198.000**
@@ -261,7 +262,7 @@ Ini semua aksi yang tersedia di meja — bagian yang paling sering bikin pemula 
 
 </div>
 
-==r:**Penting:** kamu tidak bisa cek di preflop==, karena big blind sudah menjadi taruhan hidup. ==Cek baru mungkin dilakukan mulai dari flop.==
+==r:**Penting:** di preflop kamu tidak bisa cek — dengan satu pengecualian.== Big blind sudah menjadi taruhan hidup, jadi semua orang selain dia harus call, raise, atau fold. ==Hanya big blind sendiri yang boleh cek kalau tidak ada yang raise; bagi semua pemain lain, cek baru dimulai di flop.==
 
 Untuk panduan keputusan yang lebih dalam soal kapan memakai tiap langkah — lengkap dengan tabel keputusan cek-call-raise-fold — lihat [penjelasan aksi taruhan](/id/blog/holdem-betting-actions).
 

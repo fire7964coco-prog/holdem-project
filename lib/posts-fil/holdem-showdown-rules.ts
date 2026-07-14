@@ -105,7 +105,7 @@ Kung mali ang pagbasa ng player sa hand niya at sinabing "may pair ako," pero st
 
 Dalawang-panig ito. Kung akala mong talo ka at nag-muck ka nang hindi nagpapakita, pero ang hand mo pala ang panalo — ==r:wala na ang pot==. Patay na ang hand mo sa sandaling sumagi ito sa muck. Kung hindi ka 100% sigurado na talo ka, palaging hayaang basahin muna ng dealer ang hand mo bago mag-muck.
 
-Real na sitwasyon: hawak mo ang J♥ T♥ sa board na Q♥ 9♥ 8♥ 2♣ 5♦. May queen-high straight flush ka (Q-J-T-9-8 of hearts). Nagpakita ang kalaban ng K♣ Q♦ (one pair of queens). Panalo ka nang malayo. Huwag kang mag-muck dahil lang nakita mo ang queen niya.
+Real na sitwasyon: hawak mo ang J♥ 10♥ sa board na Q♥ 9♥ 8♥ 2♣ 5♦. May queen-high straight flush ka (Q-J-10-9-8 of hearts). Nagpakita ang kalaban ng K♣ Q♦ (one pair of queens). Panalo ka nang malayo. Huwag kang mag-muck dahil lang nakita mo ang queen niya.
 
 ---
 

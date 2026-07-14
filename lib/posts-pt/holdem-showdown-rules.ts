@@ -105,7 +105,7 @@ Se um jogador lê errado a própria mão e anuncia "tenho um par", mas na verdad
 
 Isso vale para os dois lados. Se você acha que perdeu e dá muck sem mostrar, mas a sua mão era a vencedora — ==r:o pote já era==. Sua mão está morta no momento em que encosta no muck. Se não tiver 100% de certeza de que perdeu, sempre deixe o dealer ler a sua mão antes de descartar.
 
-Situação real: você tem J♥ T♥ em uma mesa Q♥ 9♥ 8♥ 2♣ 5♦. Você tem um straight flush até a dama (Q-J-T-9-8 de copas). O adversário mostra K♣ Q♦ (um par de damas). Você ganha de lavada. Não dê muck só porque viu a dama dele.
+Situação real: você tem J♥ 10♥ em uma mesa Q♥ 9♥ 8♥ 2♣ 5♦. Você tem um straight flush até a dama (Q-J-10-9-8 de copas). O adversário mostra K♣ Q♦ (um par de damas). Você ganha de lavada. Não dê muck só porque viu a dama dele.
 
 ---
 

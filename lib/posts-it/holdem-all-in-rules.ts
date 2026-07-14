@@ -126,13 +126,12 @@ La regola: ==ogni side pot si costruisce prendendo la differenza fino allo stack
 Bui $1/$2. Quattro giocatori vedono il flop.
 
 1. Il Giocatore A punta $10.
-2. Il Giocatore B rilancia a $25.
-3. Il Giocatore C va all-in per **$30** (solo $5 in più del rilancio di B a $25 — non raggiunge l'incremento di un rilancio completo).
+2. Il Giocatore B va all-in per **$14** (solo $4 in più della puntata di A da $10 — non è un rilancio completo, che richiederebbe almeno $20).
 
-Cosa succede al Giocatore A e al Giocatore D?
+Cosa succede al Giocatore A e al Giocatore C, che non ha ancora agito?
 
-- Il Giocatore A ha già agito (ha puntato $10). Dato che l'all-in di C da $30 è **inferiore a un rilancio completo** (che richiederebbe almeno $40 = $25 + $15 di rilancio minimo), l'azione NON si riapre per il Giocatore A. ==A può solo chiamare o passare — non può rilanciare.==
-- Il Giocatore D non ha ancora agito — **D può invece rilanciare normalmente**.
+- Il Giocatore A ha già agito (ha puntato $10) e ora si trova di fronte solo a un rilancio incompleto. Dato che l'all-in di B da $14 è **inferiore a un rilancio completo**, l'azione NON si riapre per il Giocatore A. ==A può solo chiamare o passare — non può rilanciare.==
+- Il Giocatore C non ha ancora agito — **il Giocatore C può invece rilanciare normalmente**.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -257,7 +256,7 @@ A. Table stakes significa che puoi puntare solo le fiches che avevi davanti all'
 
 **Q. Se due giocatori vanno all-in per importi diversi, chi mostra per primo?**
 
-A. L'ultimo all-in conta come l'ultima azione aggressiva. Valgono le regole normali dello showdown: mostra per primo l'ultimo che ha fatto un all-in o una mossa aggressiva. Nei cash game, se è stato un all-in chiamato senza ulteriore azione, chi ha chiamato può gettare le carte se perde dopo aver visto la mano del giocatore all-in (nei tornei tutte le mani coinvolte restano scoperte).
+A. L'ultimo all-in che è stato una puntata o un rilancio conta come l'ultima azione aggressiva e mostra per primo. Un all-in che si limita a chiamare per meno non è aggressivo — mostra comunque per primo chi aveva puntato inizialmente. Nei cash game, se è stato un all-in chiamato senza ulteriore azione, chi ha chiamato può gettare le carte se perde dopo aver visto la mano del giocatore all-in (nei tornei tutte le mani coinvolte restano scoperte).
 
 **Q. Le regole dell'all-in cambiano tra tornei e cash game?**
 

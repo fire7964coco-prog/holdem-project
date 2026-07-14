@@ -105,7 +105,7 @@ Dacă un jucător își citește greșit mâna și zice „am o pereche", dar î
 
 Și e valabil în ambele sensuri. Dacă crezi că ai pierdut și faci muck fără să arăți, dar mâna ta era cea câștigătoare — ==r:potul e pierdut==. Mâna ta e moartă în momentul în care atinge muck-ul. Dacă nu ești sigur 100% că ai pierdut, lasă întotdeauna dealerul să-ți citească mâna înainte să o dai la muck.
 
-Situație reală: ai J♥ T♥ pe un board Q♥ 9♥ 8♥ 2♣ 5♦. Ai o chintă de culoare la damă (Q-J-T-9-8 de cupă). Adversarul arată K♣ Q♦ (o pereche de dame). Câștigi la mare distanță. Nu da cărțile la muck doar pentru că îi vezi dama.
+Situație reală: ai J♥ 10♥ pe un board Q♥ 9♥ 8♥ 2♣ 5♦. Ai o chintă de culoare la damă (Q-J-10-9-8 de cupă). Adversarul arată K♣ Q♦ (o pereche de dame). Câștigi la mare distanță. Nu da cărțile la muck doar pentru că îi vezi dama.
 
 ---
 

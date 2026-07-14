@@ -214,7 +214,7 @@ Du hältst **K♥ 2♣**. Das Board hat vier Herz.
 
 Du hältst **A♥ 3♣**. Das Board bringt bereits einen Drilling Könige.
 
-→ Deine A♥ paart sich mit der A♠ auf dem Board und gibt dir ein **Full House, KKK + AA**. Hat dein Gegner aber auch ein Ass, hat er dasselbe Full House und es wird geteilt. Hat er kein Ass, sondern nur ein kleineres Paar, gewinnt dein Full House. Die Lektion: Wenn das Board fast die ganze Arbeit macht, ist deine Hand oft nur eine zusätzliche Karte wert.
+→ Deine A♥ paart sich mit der A♠ auf dem Board und gibt dir ein **Full House, KKK + AA**. Hält dein Gegner aber ebenfalls ein einzelnes Ass, hat er dasselbe Full House und es wird geteilt (nur ein exaktes Pocket-Paar A-A macht ein größeres Full House, Asse voll). Hat er kein Ass, sondern nur ein kleineres Paar, gewinnt dein Full House. Die Lektion: Wenn das Board fast die ganze Arbeit macht, ist deine Hand oft nur eine zusätzliche Karte wert.
 
 ---
 

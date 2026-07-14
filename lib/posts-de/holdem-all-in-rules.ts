@@ -126,13 +126,12 @@ Die Regel: ==Jeder Side Pot entsteht aus der Differenz bis zum nächstkleineren 
 Blinds $1/$2. Vier Spieler sehen den Flop.
 
 1. Spieler A setzt $10.
-2. Spieler B erhöht auf $25.
-3. Spieler C geht für **$30** All-in (nur $5 mehr als Bs Erhöhung auf $25 — kein voller Erhöhungsschritt).
+2. Spieler B geht für **$14** All-in (nur $4 mehr als As Einsatz von $10 — keine volle Erhöhung, dafür wären mindestens $20 nötig).
 
-Was passiert mit Spieler A und Spieler D?
+Was passiert mit Spieler A und mit Spieler C, der noch nicht gehandelt hat?
 
-- Spieler A hat bereits gehandelt ($10 gesetzt). Weil Cs All-in von $30 **weniger als eine volle Erhöhung** ist (dafür wären mindestens $40 = $25 + $15 nötig), wird die Setzrunde für Spieler A NICHT neu geöffnet. ==A kann nur callen oder folden — re-raisen ist nicht erlaubt.==
-- Spieler D hat noch nicht gehandelt — **Spieler D darf ganz normal erhöhen**.
+- Spieler A hat bereits gehandelt ($10 gesetzt) und steht jetzt vor einer unvollständigen Erhöhung. Weil Bs All-in von $14 **weniger als eine volle Erhöhung** ist, wird die Setzrunde für Spieler A NICHT neu geöffnet. ==A kann nur callen oder folden — re-raisen ist nicht erlaubt.==
+- Spieler C hat noch nicht gehandelt — **Spieler C darf ganz normal erhöhen**.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -252,7 +251,7 @@ A. Table Stakes bedeutet: Du darfst nur Chips setzen, die zu Beginn der Hand vor
 
 **Q. Wenn zwei Spieler für unterschiedliche Beträge All-in gehen — wer zeigt zuerst?**
 
-A. Das letzte All-in gilt als letzte aggressive Aktion. Es gelten die üblichen Showdown-Regeln: Der Spieler mit dem letzten All-in bzw. der letzten aggressiven Aktion zeigt zuerst. In Cash Games darf der Caller bei einem gecallten All-in ohne weitere Action mucken, wenn er nach dem Aufdecken der All-in-Hand verloren hat (in Turnieren bleiben alle beteiligten Hände offen).
+A. Das letzte All-in, das eine Bet oder ein Raise war, gilt als letzte aggressive Aktion und zeigt zuerst. Ein All-in, das für weniger nur callt, ist nicht aggressiv — dann zeigt der ursprüngliche Setzer zuerst. In Cash Games darf der Caller bei einem gecallten All-in ohne weitere Action mucken, wenn er nach dem Aufdecken der All-in-Hand verloren hat (in Turnieren bleiben alle beteiligten Hände offen).
 
 **Q. Unterscheiden sich die All-in-Regeln zwischen Turnier und Cash Game?**
 

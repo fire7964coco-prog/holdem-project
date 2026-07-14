@@ -224,8 +224,9 @@ B checkt, A setzt **15.000** (etwa halber Pot), B callt.
 
 ### River: A♥
 
+- **B:** checkt.
 - **A:** das Ass paart sich — jetzt **zwei Paare, Asse und Könige**. Fühlt sich großartig an, setzt **30.000**.
-- **B:** das Set schlägt zwei Paare nach wie vor. Raist auf **70.000**.
+- **B:** das Set schlägt zwei Paare nach wie vor. Check-raist auf **70.000**.
 - **A:** überzeugt, dass zwei Paare vorne liegen — callt.
 
 **Pot: 198.000**
@@ -261,7 +262,7 @@ Hier ist jede Aktion, die dir am Tisch zur Verfügung steht — der Teil, den An
 
 </div>
 
-==r:**Wichtig:** Preflop kannst du nicht checken==, denn der Big Blind zählt bereits als aktive Bet. ==Checken ist erst ab dem Flop möglich.==
+==r:**Wichtig:** Preflop kannst du nicht checken — mit einer Ausnahme.== Der Big Blind zählt bereits als aktive Bet, also müssen alle anderen callen, raisen oder folden. ==Nur der Big Blind selbst darf checken, wenn niemand erhöht hat; für alle anderen beginnt das Checken erst am Flop.==
 
 Einen tieferen Entscheidungs-Guide dazu, wann welcher Zug der richtige ist — inklusive Check-Call-Raise-Fold-Entscheidungstabelle — findest du unter [Setzaktionen im Poker erklärt](/de/blog/holdem-betting-actions).
 

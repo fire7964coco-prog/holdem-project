@@ -224,8 +224,9 @@ B checke, A mise **15 000** (environ un demi-pot), B suit.
 
 ### River : A♥
 
+- **B :** checke.
 - **A :** l'as se pare — il a maintenant **double paire, as et rois**. Aux anges, il mise **30 000**.
-- **B :** le brelan écrase toujours la double paire. Il relance à **70 000**.
+- **B :** le brelan écrase toujours la double paire. Il fait un check-raise à **70 000**.
 - **A :** convaincu que sa double paire est bonne, il suit.
 
 **Pot : 198 000**
@@ -261,7 +262,7 @@ Voici toutes les actions disponibles à la table — la partie que les débutant
 
 </div>
 
-==r:**Important :** au préflop, tu ne peux pas checker==, parce que la grosse blinde est déjà une mise vivante. ==Checker ne devient possible qu'à partir du flop.==
+==r:**Important :** au préflop, tu ne peux pas checker — à une exception près.== La grosse blinde est déjà une mise vivante, donc tout le monde doit suivre, relancer ou se coucher. ==Seule la grosse blinde peut checker si personne n'a relancé ; pour tous les autres, le check ne devient possible qu'à partir du flop.==
 
 Pour un guide de décision plus poussé sur le moment d'utiliser chaque coup — avec un tableau de décision suivre-relancer-checker-coucher — regarde les [actions d'enchères expliquées](/fr/blog/holdem-betting-actions).
 

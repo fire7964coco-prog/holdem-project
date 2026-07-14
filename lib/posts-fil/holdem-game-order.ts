@@ -224,8 +224,9 @@ Nag-check si B, nag-bet si A ng **15,000** (halos kalahati ng pot), nag-call si 
 
 ### River: A♥
 
+- **B:** nag-check.
 - **A:** nag-pair ang ace — ngayon **two pair, aces at kings**. Ang saya-saya, nag-bet ng **30,000**.
-- **B:** dinudurog pa rin ng set ang two pair. Nag-raise hanggang **70,000**.
+- **B:** dinudurog pa rin ng set ang two pair. Nag-check-raise hanggang **70,000**.
 - **A:** kumbinsido na maganda ang two pair, nag-call.
 
 **Pot: 198,000**
@@ -261,7 +262,7 @@ Narito ang bawat action na available sa mesa — ang parteng pinaka-pinagkakamal
 
 </div>
 
-==r:**Mahalaga:** hindi ka pwedeng mag-check preflop==, dahil ang big blind ay live bet na. ==Ang pag-check ay nagiging posible lang simula sa flop pataas.==
+==r:**Mahalaga:** hindi ka pwedeng mag-check preflop — may isang exception.== Ang big blind ay live bet na, kaya lahat ng iba ay kailangang mag-call, mag-raise, o mag-fold. ==Ang big blind lang ang pwedeng mag-check kung walang nag-raise; para sa lahat ng iba, ang pag-check ay nagsisimula sa flop.==
 
 Para sa mas malalim na gabay sa desisyon kung kailan gamitin ang bawat galaw — may check-call-raise-fold decision table — tingnan ang [betting actions explained](/fil/blog/holdem-betting-actions).
 

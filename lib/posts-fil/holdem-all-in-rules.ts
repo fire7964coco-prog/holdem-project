@@ -119,20 +119,19 @@ Ang patakaran: ==bawat side pot ay binubuo sa pamamagitan ng pagkuha ng differen
 
 **Ang patakaran:** Kung ang isang player ay nag-all-in ng **kulang sa [full raise](/fil/blog/holdem-betting-actions)**, ang all-in na iyon ay HINDI nagbubukas ulit ng betting para sa mga player na nakakilos na sa round na iyon.
 
-![Re-raise rule pagkatapos ng all-in sa poker — nag-all-in si Player C ng kulang sa full raise, puwede lang mag-call o mag-fold si Player A](/images/holdem-all-in-reraise-rule.webp)
+![Re-raise rule pagkatapos ng all-in sa poker — nag-all-in si Player B ng kulang sa full raise, puwede lang mag-call o mag-fold si Player A](/images/holdem-all-in-reraise-rule.webp)
 
 **Halimbawa:**
 
 Blinds $1/$2. Apat na player ang nakakita ng flop.
 
 1. Nag-bet si Player A ng $10.
-2. Nag-raise si Player B hanggang $25.
-3. Nag-all-in si Player C ng **$30** ($5 lang na mas mataas sa raise ni B na $25 — hindi umaabot sa full raise increment).
+2. Nag-all-in si Player B ng **$14** ($4 lang na mas mataas sa bet ni A na $10 — hindi full raise, na mangangailangan ng at least $20).
 
-Ano ang mangyayari kina Player A at Player D?
+Ano ang mangyayari kay Player A, at kay Player C na hindi pa nakakilos?
 
-- Nakakilos na si Player A (nag-bet ng $10). Dahil ang all-in ni C na $30 ay **kulang sa full raise** (na mangangailangan ng at least $40 = $25 + $15 na minimum), ang aksyon ay HINDI nabubuksan ulit para kay Player A. ==Puwede lang mag-call o mag-fold si A — hindi siya puwedeng mag-re-raise.==
-- Hindi pa nakakilos si Player D — **puwede pa ring mag-raise nang normal si Player D**.
+- Nakakilos na si Player A (nag-bet ng $10) at ngayon may kaharap na incomplete raise lang. Dahil ang all-in ni B na $14 ay **kulang sa full raise**, ang aksyon ay HINDI nabubuksan ulit para kay Player A. ==Puwede lang mag-call o mag-fold si A — hindi siya puwedeng mag-re-raise.==
+- Hindi pa nakakilos si Player C — **puwede pa ring mag-raise nang normal si Player C**.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -252,7 +251,7 @@ A. Ang table stakes ay ibig sabihin ang kaya mo lang itaya ay ang chips na nasa 
 
 **Q. Kung dalawang player ang nag-all-in sa magkaibang halaga, sino ang mauuna magpakita?**
 
-A. Ang huling all-in bet ay itinuturing bilang huling aggressive action. Standard showdown rules ang gumagana: ang huling player na gumawa ng all-in o aggressive move ang unang magpapakita. Sa cash game, kung ito ay called all-in na walang karagdagang aksyon, puwedeng mag-muck ang nag-call kung matalo siya pagkatapos makita ang hand ng all-in player (sa tournament nananatiling nakaharap ang lahat ng sangkot na hand).
+A. Ang huling all-in na isang bet o raise ang huling aggressive action at siyang unang magpapakita. Ang all-in na basta lang nag-call ng mas mababang halaga ay hindi aggressive — ang orihinal na nag-bet pa rin ang unang magpapakita. Sa cash game, kung ito ay called all-in na walang karagdagang aksyon, puwedeng mag-muck ang nag-call kung matalo siya pagkatapos makita ang hand ng all-in player (sa tournament nananatiling nakaharap ang lahat ng sangkot na hand).
 
 **Q. Iba ba ang all-in rules sa tournament kumpara sa cash game?**
 

@@ -105,7 +105,7 @@ Jeśli gracz źle odczyta swój układ i powie „mam parę", a naprawdę ma str
 
 To działa w obie strony. Jeśli myślisz, że przegrałeś, i zrzucasz bez pokazywania, a twój układ był wygrywający — ==r:pula przepadła==. Twój układ jest martwy w momencie, gdy dotknie muck. Jeśli nie jesteś w 100% pewien, że przegrałeś, zawsze pozwól rozdającemu odczytać twój układ, zanim go zrzucisz.
 
-Realna sytuacja: trzymasz J♥ T♥ na stole Q♥ 9♥ 8♥ 2♣ 5♦. Masz Pokera (straight flush) do damy — Q-J-T-9-8 w kierach. Rywal pokazuje K♣ Q♦ (para dam). Wygrywasz na spacer. Nie zrzucaj kart tylko dlatego, że widzisz u niego damę.
+Realna sytuacja: trzymasz J♥ 10♥ na stole Q♥ 9♥ 8♥ 2♣ 5♦. Masz Pokera (straight flush) do damy — Q-J-10-9-8 w kierach. Rywal pokazuje K♣ Q♦ (para dam). Wygrywasz na spacer. Nie zrzucaj kart tylko dlatego, że widzisz u niego damę.
 
 ---
 

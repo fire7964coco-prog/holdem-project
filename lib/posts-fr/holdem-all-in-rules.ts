@@ -126,13 +126,12 @@ La règle : ==chaque side pot se construit en prenant la différence jusqu'au ta
 Blindes $1/$2. Quatre joueurs voient le flop.
 
 1. Le Joueur A mise $10.
-2. Le Joueur B relance à $25.
-3. Le Joueur C fait tapis pour **$30** (seulement $5 de plus que la relance de B à $25 — pas assez pour l'incrément d'une relance complète).
+2. Le Joueur B fait tapis pour **$14** (seulement $4 de plus que la mise de A à $10 — pas une relance complète, qui exigerait au moins $20).
 
-Que se passe-t-il pour le Joueur A et le Joueur D ?
+Que se passe-t-il pour le Joueur A, et pour le Joueur C qui n'a pas encore parlé ?
 
-- Le Joueur A a déjà parlé (il a misé $10). Comme le tapis de C à $30 est **inférieur à une relance complète** (qui exigerait au moins $40 = $25 + $15 de relance minimale), l'action NE se rouvre PAS pour le Joueur A. ==A ne peut que suivre ou se coucher — il ne peut pas relancer.==
-- Le Joueur D n'a pas encore parlé — **D, lui, peut relancer normalement**.
+- Le Joueur A a déjà parlé (il a misé $10) et fait maintenant face à une relance incomplète. Comme le tapis de B à $14 est **inférieur à une relance complète**, l'action NE se rouvre PAS pour le Joueur A. ==A ne peut que suivre ou se coucher — il ne peut pas relancer.==
+- Le Joueur C n'a pas encore parlé — **C, lui, peut relancer normalement**.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -257,7 +256,7 @@ R. Le table stakes signifie que tu ne peux miser que les jetons que tu avais dev
 
 **Q. Si deux joueurs font tapis pour des montants différents, qui montre en premier ?**
 
-R. Le dernier tapis compte comme la dernière action agressive. Les règles normales de l'abattage s'appliquent : le dernier à avoir fait tapis ou un geste agressif montre en premier. En cash, si c'était un tapis suivi sans autre action, celui qui a suivi peut jeter ses cartes s'il perd après avoir vu la main du joueur à tapis (en tournoi, toutes les mains impliquées restent face visible).
+R. Le dernier tapis qui était une mise ou une relance constitue la dernière action agressive et montre en premier. Un tapis qui ne fait que suivre pour moins n'est pas agressif — c'est alors le miseur initial qui montre en premier. En cash, si c'était un tapis suivi sans autre action, celui qui a suivi peut jeter ses cartes s'il perd après avoir vu la main du joueur à tapis (en tournoi, toutes les mains impliquées restent face visible).
 
 **Q. Les règles du tapis sont-elles différentes en tournoi et en cash ?**
 

@@ -224,8 +224,9 @@ B ana-check, A ana-bet **15,000** (karibu nusu pot), B ana-call.
 
 ### River: A♥
 
+- **B:** ana-check.
 - **A:** ace ina-pair — sasa **two pair, aces na kings**. Anajisikia vizuri sana, ana-bet **30,000**.
-- **B:** set bado inaponda two pair. Ana-raise hadi **70,000**.
+- **B:** set bado inaponda two pair. Ana-check-raise hadi **70,000**.
 - **A:** akiamini two pair ni nzuri, ana-call.
 
 **Pot: 198,000**
@@ -261,7 +262,7 @@ Hapa kuna kila kitendo kinachopatikana mezani — sehemu wanaoanza huchanganya z
 
 </div>
 
-==r:**Muhimu:** huwezi ku-check preflop==, kwa sababu big blind tayari ni dau hai. ==Ku-check kunawezekana tu kuanzia flop kwenda mbele.==
+==r:**Muhimu:** preflop huwezi ku-check — isipokuwa kwa kizuizi kimoja.== Big blind tayari ni dau hai, hivyo kila mtu mwingine lazima a-call, a-raise, au a-fold. ==Big blind peke yake anaweza ku-check kama hakuna aliye-raise; kwa wengine wote, ku-check kunaanza kwenye flop.==
 
 Kwa mwongozo wa kina zaidi wa uamuzi kuhusu lini wa kutumia kila mchezo — na jedwali la uamuzi la check-call-raise-fold — ona [vitendo vya kuweka dau vimeelezwa](/sw/blog/holdem-betting-actions).
 

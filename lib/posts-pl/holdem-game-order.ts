@@ -224,8 +224,9 @@ B czeka, A stawia **15 000** (mniej więcej pół puli), B sprawdza.
 
 ### River: A♥
 
+- **B:** czeka.
 - **A:** as łączy się w parę — teraz masz **dwie pary, asy i króle**. W siódmym niebie, stawia **30 000**.
-- **B:** set wciąż miażdży dwie pary. Przebija do **70 000**.
+- **B:** set wciąż miażdży dwie pary. Przebija po czeku (check-raise) do **70 000**.
 - **A:** przekonany, że dwie pary są dobre, sprawdza.
 
 **Pula: 198 000**
@@ -261,7 +262,7 @@ Oto wszystkie akcje dostępne przy stole — część, którą początkujący my
 
 </div>
 
-==r:**Ważne:** na preflopie nie możesz czekać==, bo duży blind to już żywy zakład. ==Czekać można dopiero od flopa w górę.==
+==r:**Ważne:** na preflopie nie możesz czekać — z jednym wyjątkiem.== Duży blind to już żywy zakład, więc wszyscy pozostali muszą sprawdzić, przebić albo spasować. ==Sam duży blind może czekać, jeśli nikt nie przebił; dla całej reszty czekanie zaczyna się dopiero od flopa.==
 
 Głębszy przewodnik po tym, kiedy używać którego zagrania — z tabelą decyzji czek-sprawdzenie-przebicie-pas — znajdziesz w [akcjach w licytacji wyjaśnionych](/pl/blog/holdem-betting-actions).
 

@@ -224,8 +224,9 @@ B dá check, A aposta **15.000** (cerca de metade do pote), B paga.
 
 ### River: A♥
 
+- **B:** dá check.
 - **A:** o ás pareia — agora tem **dois pares, ases e reis**. Confiante, aposta **30.000**.
-- **B:** o set continua esmagando os dois pares. Aumenta para **70.000**.
+- **B:** o set continua esmagando os dois pares. Dá check-raise para **70.000**.
 - **A:** convencido de que os dois pares são bons, paga.
 
 **Pote: 198.000**
@@ -261,7 +262,7 @@ Aqui está tudo o que você pode fazer na mesa — a parte que os iniciantes mai
 
 </div>
 
-==r:**Importante:** não dá para dar check no pré-flop==, porque o big blind já é uma aposta viva. ==O check só passa a existir do flop em diante.==
+==r:**Importante:** no pré-flop não dá para dar check — com uma exceção.== O big blind já é uma aposta viva, então todos os outros precisam pagar, aumentar ou foldar. ==Só o big blind pode dar check, se ninguém tiver aumentado; para todos os demais, o check só passa a existir do flop em diante.==
 
 Para um guia de decisão mais profundo sobre quando usar cada jogada — com uma tabela de decisão check-call-raise-fold — veja as [ações de aposta explicadas](/pt/blog/holdem-betting-actions).
 

@@ -126,13 +126,12 @@ Aturannya: ==setiap side pot dibentuk dengan mengambil selisih sampai stack terk
 Blinds $1/$2. Empat pemain melihat flop.
 
 1. Pemain A bet $10.
-2. Pemain B raise ke $25.
-3. Pemain C all-in sebesar **$30** (hanya $5 lebih besar dari raise B sebesar $25 — belum mencapai increment satu raise penuh).
+2. Pemain B all-in sebesar **$14** (hanya $4 lebih besar dari bet A sebesar $10 — bukan raise penuh, yang butuh minimal $20).
 
-Apa yang terjadi pada Pemain A dan Pemain D?
+Apa yang terjadi pada Pemain A, dan pada Pemain C yang belum beraksi?
 
-- Pemain A sudah beraksi (bet $10). Karena all-in C sebesar $30 **kurang dari satu raise penuh** (yang butuh minimal $40 = $25 + $15 raise minimum), aksi TIDAK terbuka kembali untuk Pemain A. ==A hanya bisa call atau fold — dia tidak boleh re-raise.==
-- Pemain D belum beraksi — **Pemain D tetap boleh raise seperti biasa**.
+- Pemain A sudah beraksi (bet $10) dan sekarang cuma menghadapi raise yang tidak lengkap. Karena all-in B sebesar $14 **kurang dari satu raise penuh**, aksi TIDAK terbuka kembali untuk Pemain A. ==A hanya bisa call atau fold — dia tidak boleh re-raise.==
+- Pemain C belum beraksi — **Pemain C tetap boleh raise seperti biasa**.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -257,7 +256,7 @@ A. Table stakes artinya kamu hanya boleh mempertaruhkan chip yang ada di depanmu
 
 **Q. Kalau dua pemain all-in dengan jumlah berbeda, siapa yang membuka kartu duluan?**
 
-A. All-in terakhir dihitung sebagai aksi agresif terakhir. Aturan showdown standar berlaku: pemain terakhir yang all-in atau melakukan aksi agresif membuka duluan. Di cash game, kalau itu all-in yang di-call tanpa aksi lanjutan, pemain yang call boleh muck kalau kalah setelah melihat kartu si pemain all-in (di turnamen semua kartu yang terlibat tetap terbuka).
+A. All-in terakhir yang berupa **bet atau raise** adalah aksi agresif terakhir dan membuka kartu duluan. All-in yang cuma **call** untuk jumlah lebih kecil bukan aksi agresif — si penaruh awal-lah yang tetap membuka duluan. Di cash game, kalau itu all-in yang di-call tanpa aksi lanjutan, pemain yang call boleh muck kalau kalah setelah melihat kartu si pemain all-in (di turnamen semua kartu yang terlibat tetap terbuka).
 
 **Q. Apakah aturan all-in berbeda antara turnamen dan cash game?**
 

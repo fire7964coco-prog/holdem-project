@@ -224,8 +224,9 @@ B bussa, A punta **15.000** (circa metà piatto), B chiama.
 
 ### River: A♥
 
+- **B:** fa check.
 - **A:** l'asso si appaia — ora ha **doppia coppia, assi e re**. Contentissimo, punta **30.000**.
-- **B:** il tris continua a schiacciare la doppia coppia. Rilancia a **70.000**.
+- **B:** il tris continua a schiacciare la doppia coppia. Fa check-raise a **70.000**.
 - **A:** convinto che la sua doppia coppia sia buona, chiama.
 
 **Piatto: 198.000**
@@ -261,7 +262,7 @@ Ecco tutte le azioni disponibili al tavolo — la parte che confonde di più i p
 
 </div>
 
-==r:**Importante:** nel preflop non puoi fare check==, perché il grande buio è già una puntata viva. ==Il check diventa possibile solo a partire dal flop.==
+==r:**Importante:** nel preflop non puoi fare check — con un'eccezione.== Il grande buio è già una puntata viva, quindi tutti gli altri devono chiamare, rilanciare o passare. ==Solo il grande buio può fare check, se nessuno ha rilanciato; per tutti gli altri il check diventa possibile a partire dal flop.==
 
 Per una guida decisionale più approfondita su quando usare ogni mossa — con una tabella di decisione check-call-raise-fold — guarda le [azioni di puntata spiegate](/it/blog/holdem-betting-actions).
 

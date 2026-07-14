@@ -224,8 +224,9 @@ B check করল, A **15,000** (প্রায় অর্ধেক pot) bet 
 
 ### River: A♥
 
+- **B:** check করল।
 - **A:** ace জুড়ে গেল — এখন **two pair, aces আর kings**। দুর্দান্ত অনুভব করে **30,000** bet করল।
-- **B:** set এখনও two pair-কে গুঁড়িয়ে দিচ্ছে। **70,000** পর্যন্ত raise করল।
+- **B:** set এখনও two pair-কে গুঁড়িয়ে দিচ্ছে। **70,000** পর্যন্ত check-raise করল।
 - **A:** নিশ্চিত যে two pair ভালো, তাই call করল।
 
 **Pot: 198,000**
@@ -261,7 +262,7 @@ B check করল, A **15,000** (প্রায় অর্ধেক pot) bet 
 
 </div>
 
-==r:**খেয়াল করুন:** preflop-এ আপনি check করতে পারেন না==, কারণ big blind ইতিমধ্যেই একটা active বাজি। ==Check শুধু flop থেকে সম্ভব হয়।==
+==r:**খেয়াল করুন:** preflop-এ আপনি check করতে পারেন না — একটা ব্যতিক্রম ছাড়া।== big blind ইতিমধ্যেই একটা active বাজি, তাই বাকি সবাইকে call, raise বা fold করতেই হবে। ==কেউ raise না করলে কেবল big blind-ই check করতে পারে; বাকি সবার জন্য check শুরু হয় flop থেকে।==
 
 কোন চাল কখন ব্যবহার করবেন তার গভীর গাইডের জন্য — check-call-raise-fold decision টেবিল সহ — দেখুন [betting অ্যাকশন ব্যাখ্যা](/bn/blog/holdem-betting-actions)।
 

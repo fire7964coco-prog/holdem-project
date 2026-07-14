@@ -105,7 +105,7 @@ Si un joueur lit mal sa main et annonce « j'ai une paire » alors qu'il a en fa
 
 Et ça marche dans les deux sens. Si tu crois avoir perdu et que tu jettes sans montrer, alors que ta main était gagnante — ==r:le pot est perdu==. Ta main est morte dès qu'elle touche le muck. Si tu n'es pas sûr à 100 % d'avoir perdu, laisse toujours le donneur lire ta main avant de la jeter.
 
-Situation réelle : tu as J♥ T♥ sur un tableau Q♥ 9♥ 8♥ 2♣ 5♦. Tu tiens une quinte flush à la dame (Q-J-T-9-8 à cœur). L'adversaire montre K♣ Q♦ (une paire de dames). Tu gagnes haut la main. Ne jette surtout pas juste parce que tu vois sa dame.
+Situation réelle : tu as J♥ 10♥ sur un tableau Q♥ 9♥ 8♥ 2♣ 5♦. Tu tiens une quinte flush à la dame (Q-J-10-9-8 à cœur). L'adversaire montre K♣ Q♦ (une paire de dames). Tu gagnes haut la main. Ne jette surtout pas juste parce que tu vois sa dame.
 
 ---
 

@@ -214,7 +214,7 @@ Bạn cầm **K♥ 2♣**. Bàn có bốn lá cơ.
 
 Bạn cầm **A♥ 3♣**. Bàn đã có sẵn Sám Cô K.
 
-→ A♥ của bạn ghép với A♠ trên bàn và cho bạn **Cù Lũ, KKK + AA**. Nhưng nếu đối thủ cũng có Át, họ có *cùng* Cù Lũ và chia pot. Nếu họ không có Át mà chỉ một đôi nhỏ hơn, Cù Lũ của bạn thắng. Bài học: khi bàn làm gần hết việc, tay của bạn thường chỉ hơn được một lá.
+→ A♥ của bạn ghép với A♠ trên bàn và cho bạn **Cù Lũ, KKK + AA**. Nhưng nếu đối thủ cũng cầm một con Át đơn lẻ, họ có *cùng* Cù Lũ và chia pot (chỉ đúng đôi Át trên tay, A-A, mới tạo được Cù Lũ lớn hơn — KKK + AA với Sám Cô là Át). Nếu họ không có Át mà chỉ một đôi nhỏ hơn, Cù Lũ của bạn thắng. Bài học: khi bàn làm gần hết việc, tay của bạn thường chỉ hơn được một lá.
 
 ---
 

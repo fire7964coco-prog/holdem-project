@@ -105,7 +105,7 @@ Se un giocatore legge male la propria mano e dice "ho coppia", ma in realtà ha 
 
 E vale in entrambi i sensi. Se pensi di aver perso e passi senza mostrare, ma la tua mano era quella vincente — ==r:il piatto è perso==. La tua mano è morta nel momento in cui tocca il muck. Se non sei sicuro al 100% di aver perso, lascia sempre che il dealer legga la tua mano prima di passarla.
 
-Situazione reale: hai J♥ T♥ su un board Q♥ 9♥ 8♥ 2♣ 5♦. Hai una scala a colore alla donna (Q-J-T-9-8 di cuori). L'avversario mostra K♣ Q♦ (una coppia di donne). Vinci a mani basse. Non passare le carte solo perché gli vedi la donna.
+Situazione reale: hai J♥ 10♥ su un board Q♥ 9♥ 8♥ 2♣ 5♦. Hai una scala a colore alla donna (Q-J-10-9-8 di cuori). L'avversario mostra K♣ Q♦ (una coppia di donne). Vinci a mani basse. Non passare le carte solo perché gli vedi la donna.
 
 ---
 

@@ -224,8 +224,9 @@ B check, A cược **15.000** (khoảng nửa pot), B theo.
 
 ### River: A♥
 
+- **B:** check.
 - **A:** con Át ghép đôi — giờ là **Hai Đôi, Át và Già**. Sướng rơn, cược **30.000**.
-- **B:** Xám vẫn đè Hai Đôi. Tố lên **70.000**.
+- **B:** Xám vẫn đè Hai Đôi. Check-tố lên **70.000**.
 - **A:** tin chắc Hai Đôi là đủ, theo.
 
 **Pot: 198.000**
@@ -261,7 +262,7 @@ Bài học: ==r:khi river ghép bài của A thành Hai Đôi, nó *có cảm gi
 
 </div>
 
-==r:**Quan trọng:** bạn không thể check ở preflop==, vì mù lớn đã là một cú cược đang sống. ==Check chỉ khả dụng từ flop trở đi.==
+==r:**Quan trọng:** ở preflop bạn không thể check — trừ một ngoại lệ.== Mù lớn đã là một cú cược đang sống, nên tất cả những người còn lại phải theo, tố, hoặc bỏ bài. ==Chỉ riêng mù lớn được phép check nếu chưa ai tố; với mọi người khác, check chỉ bắt đầu từ flop.==
 
 Để có hướng dẫn quyết định sâu hơn về khi nào dùng mỗi nước — kèm bảng quyết định check-theo-tố-bỏ — xem [các nước cược giải thích](/vi/blog/holdem-betting-actions).
 

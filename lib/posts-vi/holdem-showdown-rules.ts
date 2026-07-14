@@ -105,7 +105,7 @@ Nếu một người đọc nhầm bài của mình và hô "tôi có một đô
 
 Luật này có hai mặt. Nếu bạn tưởng mình thua và muck không lật, nhưng tay bài của bạn lẽ ra thắng — ==r:pot coi như mất==. Bài của bạn chết ngay khi chạm vào muck. Nếu chưa chắc chắn 100% mình thua, hãy luôn để Dealer đọc bài của bạn trước khi muck.
 
-Tình huống thật: bạn cầm J♥ T♥ trên board Q♥ 9♥ 8♥ 2♣ 5♦. Bạn có Thùng Phá Sảnh (straight flush) đỉnh Q — Q-J-T-9-8 đồng chất cơ. Đối thủ lật K♣ Q♦ (một đôi Q). Bạn thắng tuyệt đối. Đừng muck chỉ vì thấy họ có con Q.
+Tình huống thật: bạn cầm J♥ 10♥ trên board Q♥ 9♥ 8♥ 2♣ 5♦. Bạn có Thùng Phá Sảnh (straight flush) đỉnh Q — Q-J-10-9-8 đồng chất cơ. Đối thủ lật K♣ Q♦ (một đôi Q). Bạn thắng tuyệt đối. Đừng muck chỉ vì thấy họ có con Q.
 
 ---
 

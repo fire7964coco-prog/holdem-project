@@ -105,7 +105,7 @@ Jika seorang pemain tersilap baca tangannya dan berkata "saya ada pair," tetapi 
 
 Ini berfungsi dua hala. Jika anda fikir anda kalah dan muck tanpa menunjukkan kad, tetapi tangan anda sebenarnya pemenang — ==r:pot itu hilang begitu sahaja==. Tangan anda terus mati sebaik sahaja menyentuh muck. Jika anda tidak 100% pasti anda kalah, biarkan pengedar membaca tangan anda dahulu sebelum muck.
 
-Situasi sebenar: anda pegang J♥ T♥ pada board Q♥ 9♥ 8♥ 2♣ 5♦. Anda ada straight flush tertinggi Queen (Q-J-T-9-8 hati). Lawan menunjukkan K♣ Q♦ (sepasang Queen). Anda menang besar. Jangan muck hanya kerana anda nampak Queen dia.
+Situasi sebenar: anda pegang J♥ 10♥ pada board Q♥ 9♥ 8♥ 2♣ 5♦. Anda ada straight flush tertinggi Queen (Q-J-10-9-8 hati). Lawan menunjukkan K♣ Q♦ (sepasang Queen). Anda menang besar. Jangan muck hanya kerana anda nampak Queen dia.
 
 ---
 

@@ -105,7 +105,7 @@ Verliest sich ein Spieler und sagt „Ich habe ein Paar“, obwohl er in Wirklic
 
 Das gilt in beide Richtungen. Wenn du glaubst, verloren zu haben, und ungezeigt muckst, obwohl deine Hand gewonnen hätte — ==r:ist der Pot weg==. Deine Hand ist tot, sobald sie den Muck berührt. Lass den Dealer immer deine Hand lesen, bevor du muckst, wenn du nicht zu 100 % sicher bist, dass du verloren hast.
 
-Echte Situation: Du hältst J♥ T♥ auf einem Board mit Q♥ 9♥ 8♥ 2♣ 5♦. Du hast einen Straight Flush bis zur Dame (Q-J-T-9-8 in Herz). Dein Gegner zeigt K♣ Q♦ (ein Paar Damen). Du gewinnst haushoch. Mucke nicht, nur weil du seine Dame siehst.
+Echte Situation: Du hältst J♥ 10♥ auf einem Board mit Q♥ 9♥ 8♥ 2♣ 5♦. Du hast einen Straight Flush bis zur Dame (Q-J-10-9-8 in Herz). Dein Gegner zeigt K♣ Q♦ (ein Paar Damen). Du gewinnst haushoch. Mucke nicht, nur weil du seine Dame siehst.
 
 ---
 

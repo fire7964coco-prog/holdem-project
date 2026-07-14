@@ -126,13 +126,12 @@ Regula: ==fiecare side pot se construiește luând diferența până la următor
 Blind-uri $1/$2. Patru jucători văd flopul.
 
 1. Jucătorul A pariază $10.
-2. Jucătorul B mărește la $25.
-3. Jucătorul C dă all-in pentru **$30** (doar $5 în plus față de mărirea lui B de $25 — nu atinge incrementul unei măriri complete).
+2. Jucătorul B dă all-in pentru **$14** (doar $4 în plus față de pariul de $10 al lui A — nu e o mărire completă, care ar cere cel puțin $20).
 
-Ce se întâmplă cu Jucătorul A și Jucătorul D?
+Ce se întâmplă cu Jucătorul A și cu Jucătorul C, care încă n-a acționat?
 
-- Jucătorul A a acționat deja (a pariat $10). Cum all-in-ul lui C de $30 este **mai mic decât o mărire completă** (care ar cere cel puțin $40 = $25 + $15 mărirea minimă), acțiunea NU se redeschide pentru Jucătorul A. ==A poate doar să plătească sau să renunțe — nu poate re-mări.==
-- Jucătorul D nu a acționat încă — **D poate mări normal**.
+- Jucătorul A a acționat deja (a pariat $10) și acum se confruntă doar cu o mărire incompletă. Cum all-in-ul lui B de $14 este **mai mic decât o mărire completă**, acțiunea NU se redeschide pentru Jucătorul A. ==A poate doar să plătească sau să renunțe — nu poate re-mări.==
+- Jucătorul C nu a acționat încă — **Jucătorul C poate mări normal**.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -257,7 +256,7 @@ A. Table stakes înseamnă că poți paria doar jetoanele pe care le aveai în f
 
 **Q. Dacă doi jucători dau all-in pentru sume diferite, cine arată primul?**
 
-A. Ultimul all-in contează ca ultima acțiune agresivă. Se aplică regulile normale de showdown: arată primul ultimul care a făcut un all-in sau o mișcare agresivă. La cash game, dacă a fost un all-in plătit fără acțiune ulterioară, cel care a plătit poate arunca cărțile dacă pierde după ce a văzut mâna jucătorului all-in (în turnee toate mâinile implicate rămân cu fața în sus).
+A. Ultimul all-in care a fost un pariu sau o mărire contează ca ultima acțiune agresivă și arată primul. Un all-in care doar plătește (call) pentru mai puțin nu este agresiv — atunci arată primul cel care a pariat inițial. La cash game, dacă a fost un all-in plătit fără acțiune ulterioară, cel care a plătit poate arunca cărțile dacă pierde după ce a văzut mâna jucătorului all-in (în turnee toate mâinile implicate rămân cu fața în sus).
 
 **Q. Regulile all-in diferă între turnee și cash game?**
 

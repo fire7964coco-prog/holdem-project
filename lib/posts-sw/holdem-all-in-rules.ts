@@ -126,13 +126,12 @@ Sheria: ==kila side pot hujengwa kwa kuchukua tofauti hadi stack ndogo inayofuat
 Blinds $1/$2. Wachezaji wanne wanaona flop.
 
 1. Mchezaji A anaweka dau la $10.
-2. Mchezaji B ana-raise hadi $25.
-3. Mchezaji C anaenda all-in kwa **$30** (ni $5 tu zaidi ya raise ya B ya $25 — haifiki kiwango cha raise kamili).
+2. Mchezaji B anaenda all-in kwa **$14** (ni $4 tu zaidi ya dau la A la $10 — si raise kamili, ambayo ingehitaji angalau $20).
 
-Kinatokea nini kwa Mchezaji A na Mchezaji D?
+Kinatokea nini kwa Mchezaji A, na kwa Mchezaji C ambaye bado hajacheza?
 
-- Mchezaji A tayari amecheza (aliweka dau la $10). Kwa sababu all-in ya C ya $30 ni **chini ya raise kamili** (ambayo ingehitaji angalau $40 = $25 + $15 ya raise ya chini), kitendo HAKIfunguki tena kwa Mchezaji A. ==A anaweza ku-call au ku-fold tu — hawezi ku-re-raise.==
-- Mchezaji D bado hajacheza — **Mchezaji D bado anaweza ku-raise kama kawaida**.
+- Mchezaji A tayari amecheza (aliweka dau la $10) na sasa anakabiliana na raise pungufu tu. Kwa sababu all-in ya B ya $14 ni **chini ya raise kamili**, kitendo HAKIfunguki tena kwa Mchezaji A. ==A anaweza ku-call au ku-fold tu — hawezi ku-re-raise.==
+- Mchezaji C bado hajacheza — **Mchezaji C bado anaweza ku-raise kama kawaida**.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -252,7 +251,7 @@ A. Table stakes maana yake unaweza kuweka dau tu la chipsi zilizokuwa mbele yako
 
 **Q. Kama wachezaji wawili wanaenda all-in kwa viasi tofauti, nani anaonyesha kwanza?**
 
-A. All-in ya mwisho inahesabiwa kama kitendo cha ukali cha mwisho. Sheria za kawaida za showdown zinatumika: mchezaji wa mwisho kufanya all-in au mchukuo wa ukali anaonyesha kwanza. Kwenye cash, kama ilikuwa all-in iliyo-call-iwa bila kitendo zaidi, aliye-call anaweza kutupa karata zake kama akipoteza baada ya kuona mkono wa mchezaji wa all-in (kwenye tournament mikono yote iliyohusika inabaki uso juu).
+A. All-in ya mwisho iliyokuwa bet au raise ndiyo kitendo cha ukali cha mwisho, na inaonyesha kwanza. All-in inayo-call tu kwa kiasi kidogo si ya ukali — mwenye kuweka dau wa awali bado ndiye anayeonyesha kwanza. Kwenye cash, kama ilikuwa all-in iliyo-call-iwa bila kitendo zaidi, aliye-call anaweza kutupa karata zake kama akipoteza baada ya kuona mkono wa mchezaji wa all-in (kwenye tournament mikono yote iliyohusika inabaki uso juu).
 
 **Q. Je, sheria za all-in ni tofauti kwenye tournament dhidi ya michezo ya cash?**
 

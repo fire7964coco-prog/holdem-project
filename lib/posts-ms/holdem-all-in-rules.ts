@@ -126,13 +126,12 @@ Peraturannya: ==setiap side pot dibina dengan mengambil beza sehingga stack terk
 Blind $1/$2. Empat pemain melihat flop.
 
 1. Pemain A bertaruh $10.
-2. Pemain B raise ke $25.
-3. Pemain C all-in sebanyak **$30** (hanya $5 lebih daripada raise B sebanyak $25 — tidak cukup satu inkremen raise penuh).
+2. Pemain B all-in sebanyak **$14** (hanya $4 lebih daripada bet A sebanyak $10 — bukan satu raise penuh, yang memerlukan sekurang-kurangnya $20).
 
-Apa yang berlaku kepada Pemain A dan Pemain D?
+Apa yang berlaku kepada Pemain A, dan kepada Pemain C yang belum bertindak lagi?
 
-- Pemain A sudah bertindak (bertaruh $10). Oleh sebab all-in C sebanyak $30 adalah **kurang daripada satu raise penuh** (yang memerlukan sekurang-kurangnya $40 = $25 + $15 raise minimum), tindakan TIDAK dibuka semula untuk Pemain A. ==A hanya boleh call atau fold — dia tidak boleh re-raise.==
-- Pemain D belum bertindak lagi — **Pemain D masih boleh raise seperti biasa**.
+- Pemain A sudah bertindak (bertaruh $10) dan kini hanya berdepan dengan raise yang tak lengkap. Oleh sebab all-in B sebanyak $14 adalah **kurang daripada satu raise penuh**, tindakan TIDAK dibuka semula untuk Pemain A. ==A hanya boleh call atau fold — dia tidak boleh re-raise.==
+- Pemain C belum bertindak lagi — **Pemain C masih boleh raise seperti biasa**.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -257,7 +256,7 @@ A. Table stakes bermaksud anda hanya boleh mempertaruhkan cip yang ada di hadapa
 
 **Q. Kalau dua pemain all-in dengan jumlah berbeza, siapa tunjuk dahulu?**
 
-A. All-in terakhir dikira sebagai tindakan agresif terakhir. Peraturan showdown biasa digunakan: pemain terakhir yang membuat all-in atau tindakan agresif menunjukkan dahulu. Dalam cash game, jika ia all-in yang di-call tanpa tindakan lanjut, pemain yang call boleh membuang kad jika kalah selepas melihat hand pemain all-in (dalam tournament semua hand yang terlibat kekal terbuka).
+A. All-in terakhir yang merupakan bet atau raise dikira sebagai tindakan agresif terakhir dan menunjukkan kad dahulu. All-in yang sekadar call dengan jumlah lebih kecil bukan tindakan agresif — pemain yang membuat bet asal tetap menunjukkan dahulu. Dalam cash game, jika ia all-in yang di-call tanpa tindakan lanjut, pemain yang call boleh membuang kad jika kalah selepas melihat hand pemain all-in (dalam tournament semua hand yang terlibat kekal terbuka).
 
 **Q. Adakah peraturan all-in berbeza antara tournament dan cash game?**
 

@@ -105,7 +105,7 @@ Kalau seorang pemain salah membaca kartunya dan bilang "saya punya pair", padaha
 
 Ini berlaku dua arah. Kalau kamu merasa kalah lalu muck tanpa membuka kartu, padahal kartumu sebenarnya pemenangnya — ==r:pot itu hilang==. Kartumu mati begitu menyentuh tumpukan muck. Kalau kamu tidak 100% yakin kalah, selalu biarkan dealer membaca kartumu sebelum muck.
 
-Situasi nyata: kamu pegang J♥ T♥ di board Q♥ 9♥ 8♥ 2♣ 5♦. Kamu punya straight flush tertinggi Queen (Q-J-T-9-8 hati). Lawan membuka K♣ Q♦ (satu pair Queen). Kamu menang telak. Jangan muck cuma karena melihat Queen-nya.
+Situasi nyata: kamu pegang J♥ 10♥ di board Q♥ 9♥ 8♥ 2♣ 5♦. Kamu punya straight flush tertinggi Queen (Q-J-10-9-8 hati). Lawan membuka K♣ Q♦ (satu pair Queen). Kamu menang telak. Jangan muck cuma karena melihat Queen-nya.
 
 ---
 

@@ -214,7 +214,7 @@ Anda pegang **K♥ 2♣**. Meja punya empat hati.
 
 Anda pegang **A♥ 3♣**. Meja sudah membawa three of a kind K.
 
-→ A♥ Anda berpasangan dengan A♠ di meja dan memberi **full house, KKK + AA**. Tapi kalau lawan juga punya As, ia punya full house yang *sama* dan pot dibagi. Kalau ia tak punya As dan hanya pasangan lebih kecil, full house Anda menang. Pelajarannya: saat meja yang mengerjakan hampir semuanya, tangan Anda sering hanya bernilai satu kartu ekstra.
+→ A♥ Anda berpasangan dengan A♠ di meja dan memberi **full house, KKK + AA**. Tapi kalau lawan juga punya satu As, ia punya full house yang *sama* dan pot dibagi (hanya pocket A-A persis yang membentuk full house lebih besar, yaitu aces full). Kalau ia tak punya As dan hanya pasangan lebih kecil, full house Anda menang. Pelajarannya: saat meja yang mengerjakan hampir semuanya, tangan Anda sering hanya bernilai satu kartu ekstra.
 
 ---
 

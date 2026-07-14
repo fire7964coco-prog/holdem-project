@@ -126,13 +126,12 @@ A regra: ==cada pote paralelo é montado pegando a diferença até o próximo st
 Blinds de $1/$2. Quatro jogadores veem o flop.
 
 1. O Jogador A aposta $10.
-2. O Jogador B aumenta para $25.
-3. O Jogador C vai de all-in por **$30** (só $5 a mais que o aumento de $25 de B — não é um incremento de aumento completo).
+2. O Jogador B vai de all-in por **$14** (só $4 a mais que a aposta de $10 de A — não é um aumento completo, que exigiria no mínimo $20).
 
-O que acontece com os Jogadores A e D?
+O que acontece com o Jogador A e com o Jogador C, que ainda não agiu?
 
-- O Jogador A já agiu (apostou $10). Como o all-in de $30 de C é **menor que um aumento completo** (que exigiria no mínimo $40 = $25 + $15), a ação NÃO reabre para o Jogador A. ==A só pode pagar ou foldar — não pode aumentar de novo.==
-- O Jogador D ainda não agiu — **D continua podendo aumentar normalmente**.
+- O Jogador A já agiu (apostou $10) e agora enfrenta apenas um aumento incompleto. Como o all-in de $14 de B é **menor que um aumento completo**, a ação NÃO reabre para o Jogador A. ==A só pode pagar ou foldar — não pode aumentar de novo.==
+- O Jogador C ainda não agiu — **C continua podendo aumentar normalmente**.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -252,7 +251,7 @@ A. Table stakes significa que você só pode apostar as fichas que estavam na su
 
 **Q. Se dois jogadores vão de all-in por valores diferentes, quem mostra primeiro?**
 
-A. O último all-in é tratado como a última ação agressiva. Valem as regras normais de showdown: quem fez o último all-in ou movimento agressivo mostra primeiro. Em cash games, se foi um all-in pago sem mais ação, quem pagou pode dar muck se perder depois de ver a mão do jogador de all-in (em torneios, todas as mãos envolvidas ficam abertas).
+A. O último all-in que foi uma aposta ou aumento é a última ação agressiva e mostra primeiro. Um all-in que apenas paga (call) por menos não é agressivo — nesse caso quem apostou originalmente mostra primeiro. Em cash games, se foi um all-in pago sem mais ação, quem pagou pode dar muck se perder depois de ver a mão do jogador de all-in (em torneios, todas as mãos envolvidas ficam abertas).
 
 **Q. As regras de all-in mudam entre torneio e cash game?**
 
