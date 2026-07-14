@@ -3,6 +3,25 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-14 (★★pt(pt-BR) 언어 완전 완성 — 42/42편 + EN 링크정합 + PT_CLUSTERS 러닝맵)
+
+> 사용자 부재중 자동 진행("en이랑 대조하며 자동진행, 다끝나면 보고서"). pt를 13/42에서 시작해 Odds→Strategy→Tournament→Glossary→card-counting를 리서치→Opus 병렬번역→구조패리티→빌드→네이티브 BR QA→커밋으로 연속 완주 후, 최종 EN 링크정합 패스 + PT_CLUSTERS까지. **pt = 24개 언어 중 4번째 전체 완역**(ja·es·pt + ko).
+
+### ✅ pt 4필라 + card-counting 신규 (커밋 `8e61e33`·`040b2ce`·`6e4b49c`·`572d941`)
+- **Odds 6** (`8e61e33`): probability·pot-odds·outs·drawing-odds·implied-odds·equity. você체·**유럽식 숫자표기**(천단위 마침표/소수점 콤마, es와 동일 함정). QA: §13 마커 노출(drawing-odds "§13"→ EN/JA 마스터까지 제거)·outs 성별 남성형 통일·flopar 철자.
+- **Strategy 8** (`040b2ce`): strategy(hub)·positions·position-play·starting-hands-chart·limping·3bet·continuation-bet·when-to-fold. QA: tldr 오타 "foda"→"folda"·3bet false-friend "escada"(=straight)→"escada de apostas"·capável→capado·카드라벨 Strategy→Estratégia·hand-chart/PDF/quiz canonical 링크 복원.
+- **Tournament 8** (`6e4b49c`): tournament(hub)·icm·bubble·short-stack + 라이브이벤트 apt-incheon·korea-marathon·wpt-australia·ept-barcelona. **통화 유럽식 통일**($·₩·€ 천단위 마침표, apt €5.300·icm 38,4%/$38,39)·calculator canonical `/calculator`(/pt/calculator 라우트 부재)·short-stack bolha→bubble 클러스터 통일·icm 계산기 카드 EN parity 복원.
+- **Glossary 6 + card-counting** (`572d941`): glossary(hub)·straddle·rake·fish·cooler·bad-beat + card-counting(42번째). **glossary FAQ 마커 P./R.→Q./A. 교정**(FAQPage 스키마 추출 정규식 `**Q.**…A.` 대응, 안 하면 리치결과 0). QA: bad-beat "drawing dead"/"drawn out" 자연화.
+- 각 필라: 브리프 `docs/translation-terms-pt.md`(você·유럽식 숫자·pokernobrasil 등 현지 글로스) → Opus 병렬번역(EN 1:1·§13 그대로) → count 구조패리티 → 네이티브 BR 적대적 QA(계산 재검증 X) → 교정. desc 전편 ≤160.
+
+### ✅ 최종 EN-패리티 링크 복원 패스 (커밋 `79013a7`)
+- **문제**: Rules·HR·Odds 등 초기 필라는 대상 미존재 시 번역돼 당시 없던 글로의 링크를 strip → 42편 완성 후 진단 결과 **24편에서 56 슬러그-결손**(universe=`lib/posts-en/` 42편).
+- **복원**: 필라별 에이전트 4개(24파일) — 누락 인라인 링크를 EN 위치의 pt 앵커에 재마크(thumb EN동일), 삭제된 Related 그리드/readnext 카드 EN서 번역추가. 특히 **hand-rankings(그리드 통째)·tournament-vs-cash-game(대량 유실)** 복구. 프로즈·§13 불변.
+- **검증**: 스크립트로 **링크 결손 0 / 초과 0**(전 슬러그 EN 개수 1:1).
+
+### ✅ PT_CLUSTERS 러닝맵 활성화 (같은 커밋)
+- `PT_CLUSTERS` 추가(EN 6필라 구조·슬러그 동일, 라벨 pt-BR). intl-blog-post-client 게이트 en·ja·es→**+pt**. pt 42편 전편 학습맵 노출. 하드게이트 통과(304 intl posts/24언어).
+
 ## 2026-07-14 (★es 언어 완전 완성 — 42/42편 + EN 정합 + 러닝맵)
 
 > 사용자 부재중 자동 진행 지시("es 번역 완성까지 자동으로 돌려, 끝나면 보고서"). Odds→Strategy→Tournament→Glossary→card-counting 4필라+1편을 리서치→번역→구조패리티→빌드→네이티브QA→커밋으로 연속 완주 후, 최종 EN 정합 패스 + ES_CLUSTERS까지.

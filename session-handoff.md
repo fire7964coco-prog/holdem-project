@@ -5,7 +5,19 @@
 
 ---
 
-## ▶▶▶ 새 세션 START HERE (2026-07-14 — ★★★EN 마스터 경화 완료 + en/es/ja 정합 / 다음 = pt)
+## ▶▶▶ 새 세션 START HERE (2026-07-14 — ★★★pt(pt-BR) 완전 완성(42/42) + EN 링크정합 + PT_CLUSTERS / 다음 = de)
+
+> ✅✅✅ **pt 42/42편 완성** — EN 마스터와 완전 동일 구조. Rules 6·HR 6·Odds 6·Strategy 8·Tournament 9·Glossary 6·card-counting 1. 커밋 `8e61e33`(Odds)·`040b2ce`(Strategy)·`6e4b49c`(Tournament)·`572d941`(Glossary+cc)·`79013a7`(EN링크복원+PT_CLUSTERS). 하드게이트 전부 통과(**304 intl posts/24언어**). 상세는 WORKLOG 2026-07-14 최상단.
+> - 브리프 `docs/translation-terms-pt.md`(você·**유럽식 숫자표기** 천단위 마침표/소수점 콤마·pokernobrasil 글로스). **pt 잔여 부채 없음**(링크 결손 0/초과 0).
+> - pt 특유 교훈: ①$·₩·€ 천단위는 pt-BR에서 콤마=소수점이라 **반드시 마침표**(오독 방지) ②FAQ 마커는 **`**Q.**…A.`** 유지 필수(page.tsx 스키마 정규식이 P./R.는 못 잡음→FAQPage 0) ③calculator/hand-chart/quiz는 **로케일 중립 canonical**(`/calculator` 등, `/pt/…` 라우트 없음).
+
+### ▶▶ 다음 = de(독일어) 언어 완성 — pt/es와 동일 파이프라인
+- 구12언어 순서: ja✅ → es✅ → pt✅ → **de** → zh → ar → id → ms → vi → hi → tr.
+- 절차: ①현지어 웹 리서치 선행([[translation-local-research-first]]: de 포커사이트 실제용어, pokerfirma/pokerolymp 등) → `docs/translation-terms-de.md` 브리프(★독일어 숫자도 유럽식 마침표/콤마) ②Opus 병렬번역(EN 1:1·§13 그대로·품질 최우선) ③count 구조패리티(universe=`lib/posts-en/` 42편) ④네이티브 DE 적대적 QA(계산 재검증 X) ⑤교정 ⑥필라별 커밋 ⑦42편 완성 후 최종 EN 링크정합 패스 + `DE_CLUSTERS` 러닝맵.
+- `lib/posts-de/` 현황부터 확인(기존 부분번역 stale 재검수 포함). 화이트리스트는 진행에 따라 확장(전체 42 슬러그).
+- ★독일어 명사 대문자·합성어 주의. 포커 전문어는 영어 유지(de 커뮤니티 관습).
+
+## ▶▶▶ (이전) START HERE (2026-07-14 — ★★★EN 마스터 경화 완료 + en/es/ja 정합 / 다음 = pt)
 
 > ✅✅✅ **EN 마스터 Fable5 정밀검수·경화 완료 후 es·ja 전파** — 커밋 `ceac592`(EN 교정)·`fd1e928`(불가능 이미지 2건: outs 히어로·split-pot)·`ac14f1d`(es/ja 전파). **핵심 교훈**: "여러 번 검수 ≠ 검증 완료". Fable5가 핸드 7장 검산·수학 재계산·크로스문서 대조로 EN 마스터 자체의 잠재 오류 ~18 🔴를 처음 잡음(핸드 수학·ICM·사이드팟은 전편 CLEAN, 결함은 룰적용·수치모순·공식·표기·이미지). 대표: **implied-odds 공식 오류**(−pot→−(pot+call)), all-in 재개방 예시 자체 오류, game-order 프리플랍 체크, 3bet MDF, starting-hands 12/26/42→13/27/43, bad-beat Mabuchi, cooler 이미지 캡션.
 > - **방법론 확립(다음 언어 필수)**: **번역 착수 전 EN을 Fable5 정밀검수 프롬프트로 필라별 경화**(핸드 7장 열거·수학 재계산·크로스문서 대조·불가능/모순/표기·죽은링크). 프롬프트 원형은 이 세션 대화 참조(ROLE=엘리트 홀덤+팩트체커, 적대적, 증명될 때까지 틀렸다고 간주).
