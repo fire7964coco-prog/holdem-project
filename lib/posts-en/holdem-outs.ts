@@ -13,7 +13,7 @@ export const POST: Post = {
   readTime: "11 min",
   emoji: "🎯",
   image: "/images/holdem-outs-hero.webp",
-  imageAlt: "Infographic of counting outs — A♥ K♥ against a Q♠ J♦ 9♥ 4♣ 2♠ board where any ten completes the nut straight",
+  imageAlt: "Infographic of counting outs — A♥ K♥ against a Q♠ J♦ 9♥ flop where any ten completes the nut straight",
   tags: ["outs", "how to count outs in poker", "poker outs chart", "flush draw outs", "straight draw outs", "outs to odds", "dirty outs", "rule of 4 and 2"],
   content: `
 For my first year at the table I "played my draws" without ever counting them. A flush draw and a gutshot felt about the same — both were "cards that could come" — so I called the same on both and wondered why I kept losing. The fix wasn't a strategy course. It was a five-minute habit: ==stop, and actually count the cards that save me.==

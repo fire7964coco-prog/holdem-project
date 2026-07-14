@@ -14,7 +14,7 @@ export const POST: Post = {
   readTime: "11 min",
   emoji: "🎯",
   image: "/images/holdem-outs-hero.webp",
-  imageAlt: "Infografía de conteo de outs — A♥ K♥ contra una mesa Q♠ J♦ 9♥ 4♣ 2♠ donde cualquier diez completa la escalera máxima",
+  imageAlt: "Infografía de conteo de outs — A♥ K♥ contra un flop Q♠ J♦ 9♥ donde cualquier diez completa la escalera máxima",
   tags: ["outs poker", "outs poker que son", "como contar outs", "tabla de outs poker", "outs proyecto de color", "outs proyecto de escalera", "regla del 2 y 4", "outs muertas"],
   content: `
 Durante mi primer año en las mesas "jugaba mis proyectos" sin contarlos nunca. Un proyecto de color y un gutshot me parecían más o menos lo mismo — ambos eran "cartas que podían salir" — así que igualaba lo mismo en los dos y me preguntaba por qué seguía perdiendo. El arreglo no fue un curso de estrategia. Fue un hábito de cinco minutos: ==para y cuenta de verdad las cartas que me salvan.==
