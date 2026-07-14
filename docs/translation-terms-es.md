@@ -79,10 +79,22 @@
   - **EPT Barcelona** = evento EN ESPAÑA (alta relevancia lector es): tono "cita ineludible del verano europeo", guiño a **"la Armada"** (jugadores españoles/latinos). Sede **Casino Barcelona**.
 - §13 (fechas, buy-ins, garantizados, cifras): **igual que EN, sin recalcular ni reformatear** (formato EN).
 
+## Glosario / Jerga (Glossary) — Wave 5 (investigación local: 888poker.es·GipsyTeam ES·EducaPoker·PokerStrategy ES·Upswing ES·CasinoBarcelona·Pokerlogia)
+> **Patrón nativo = anglicismo crudo primero + glosa española entre paréntesis** ("el **rake** (la comisión de la sala)…"). El jugador teclea el anglicismo (SEO) — mantenlo en title/H2/slug, alterna con glosa en el cuerpo.
+- **straddle**: crudo (★nunca palabra única). "poner/hacer un straddle" · straddle UTG · Mississippi straddle · glosa "apuesta ciega voluntaria = doble de la BB, y da la última acción preflop".
+- **rake**: crudo (glosa **comisión**; ★NO "rastrillo") · **rakeback** (crudo; glosa "devolución de comisión") · **tope de rake / cap** · rake por tiempo. Verbos: "el rake se lleva X", "pagar/generar rake".
+- **fish**: **fish / pez** conviven al 50% (★usa AMBOS — "pez" muy nativo/buscado) · whale→**ballena** · shark→**tiburón** · **nit** (alias roca) · **reg/regular** · **donk** (★donk jugador ≠ donk bet) · **recreativo/rec**. Expresión: "ser el pez de la mesa", "si no ves al pez, el pez eres tú". (★"primo"=España coloquial, evitar en tono neutro.)
+- **cooler**: crudo (★NO "refrigerador") · **set over set / trío contra trío** · color sobre color · glosa "situación (casi) inevitable, mano monstruo pierde ante otra mayor **sin error de nadie**". Expresión: "te comiste un cooler". ★★Distinguir de bad beat (cooler = ambos con monstruo, inevitable; bad beat = eras favorito claro y te caza carta improbable) — enlace cruzado.
+- **bad beat**: crudo (glosa "mala derrota/golpe de mala suerte"; ★NO "mala pega") · **bad beat jackpot** · **sufrir/llevarse un bad beat** · **river** crudo (★NO "río" en contexto técnico) · lleva al **tilt** (verbo "tiltearse", "entrar en tilt").
+- **bluff → farol** (excepción viva ES: verbo farolear). set/trío · par/pareja · color(=flush) · escalera(=straight) · full · póker(=quads).
+- Traducir lo que tiene término vivo: ballena · tiburón · pez · farol · trío contra trío · retirarse/tirar(fold) · igualar/pagar(call) · pasar(check) · subir(raise). NO traducir jerga cruda: straddle·rake·rakeback·fish·cooler·bad beat·tilt·nit·reg·donk·grinder.
+- §13: manos de ejemplo (cooler set-sobre-set, bad beat) copiadas LITERAL del EN, sin reinventar.
+
 ## Enlaces internos (regla dura)
 - Todos `/es/blog/slug`.
-- **Whitelist es (solo enlazar a posts que existen) — Wave 4 (Tournament) = 35**: texas-holdem-rules-for-beginners · holdem-game-order · holdem-betting-actions · holdem-blind-meaning · holdem-all-in-rules · holdem-showdown-rules · holdem-hand-rankings · holdem-tournament-vs-cash-game · holdem-flush-vs-straight · holdem-kicker · holdem-tiebreak-rules · holdem-split-pot-rules · holdem-reading-the-board · holdem-probability · holdem-pot-odds · holdem-outs · holdem-drawing-odds · holdem-implied-odds · holdem-equity · holdem-strategy · holdem-positions · holdem-position-play · holdem-starting-hands-chart · holdem-limping · holdem-3bet · holdem-continuation-bet · holdem-when-to-fold · **holdem-tournament · holdem-icm · holdem-bubble · holdem-short-stack · apt-incheon-2026-guide · korea-poker-marathon-2026 · wpt-australia-2026-guide · ept-barcelona-2026-guide**.
-- ⚠️ Aún FUERA de whitelist (quitar solo marcado+thumb, dejar texto ancla; borrar ítem readnext/Related): **holdem-glossary** (starting-hands-chart, limping, tournament) · **holdem-fish** (limping) · **holdem-rake** (tournament). Se restaura en el pase final.
+- **Whitelist es (solo enlazar a posts que existen) — Wave 5 (Glossary) = 41**: [Waves 1-4, 35 slugs] + **holdem-glossary · holdem-straddle · holdem-rake · holdem-fish · holdem-cooler · holdem-bad-beat**. (42.º y último = holdem-card-counting, tras traducirlo.)
+- Glossary (Wave 5): NINGÚN strip — los 6 posts enlazan solo dentro de whitelist(41).
+- ⚠️ Strips PENDIENTES de restaurar en el pase final (ya existen los targets): starting-hands-chart→glossary · limping→fish+glossary · tournament→glossary+rake. Universo = lib/posts-en (42).
 - Slugs fuera de whitelist (holdem-strategy·holdem-positions·starting-hands-chart·holdem-card-counting·etc. aún no traducidos): quitar solo el marcado de enlace + `thumb:`, dejar el texto ancla. Tarjetas `:::readnext`/Related con ese slug: borrar ese ítem. (Se restaurará todo en el pase final de enlaces al completar es, **criterio = corpus real EN de `lib/posts-en/` (42), no una lista curada** — lección del incidente ja.)
 
 ## QA = editor nativo escéptico (NO calculista)
