@@ -145,7 +145,7 @@ Estás casi seguro de que has perdido. Deslizas tus cartas boca abajo hacia el m
 
 ### Error 3: exigir ver todas las manos pagadas
 
-En la mayoría de los casinos puedes pedirle al dealer que exponga una mano tirada al muck — pero solo una mano que fue pagada y llegó al showdown. Las manos foldeadas están muertas y no se pueden recuperar jamás. Esta regla existe para proteger contra el el chip dumping (regalar fichas a un cómplice) y la colusión, no para satisfacer la curiosidad, y abusar de ella se considera de mala educación. Úsala con cuentagotas.
+En la mayoría de los casinos puedes pedirle al dealer que exponga una mano tirada al muck — pero solo una mano que fue pagada y llegó al showdown. Las manos foldeadas están muertas y no se pueden recuperar jamás. Esta regla existe para proteger contra el chip dumping (regalar fichas a un cómplice) y la colusión, no para satisfacer la curiosidad, y abusar de ella se considera de mala educación. Úsala con cuentagotas.
 
 ### Error 4: no saber que puedes enseñar antes de tu turno
 

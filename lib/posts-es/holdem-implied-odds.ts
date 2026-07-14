@@ -29,7 +29,7 @@ Las odds crudas detrás de cada proyecto salen de la [tabla de odds y probabilid
 
 :::stripe
 call ÷ % de ligar − bote | La fórmula de las odds implícitas
-7.5-a-1 | Odds reales de ligar un set en el flop
+7.5 a 1 | Odds reales de ligar un set en el flop
 0 | Tus odds implícitas cuando el rival está all-in
 :::
 
@@ -84,7 +84,7 @@ Corramos los números para que la fórmula deje de ser abstracta.
 
 Tienes ==b:A♥ K♥== en una mesa ==Q♥ 7♥ 2♣ 3♠== — el proyecto de color al nut, 9 outs, con una carta por venir. El bote es de $100 y tu rival apuesta $50 en el turn, así que hay ==$150 en el centro== y te toca poner $50.
 
-- **Primero las pot odds:** te dan 150-a-50, o 3-a-1, así que necesitas **25%** de equity. Tu color liga en el river solo el ==r:19.6%== de las veces (9 outs ÷ 46 cartas desconocidas). 19.6% es menos que 25%, así que el precio inmediato dice ==r:fold.==
+- **Primero las pot odds:** te dan 150 a 50, o 3 a 1, así que necesitas **25%** de equity. Tu color liga en el river solo el ==r:19.6%== de las veces (9 outs ÷ 46 cartas desconocidas). 19.6% es menos que 25%, así que el precio inmediato dice ==r:fold.==
 - **Ahora las odds implícitas:** x = (call ÷ % de ligar) − bote = (50 ÷ 0.196) − 150 = 255 − 150 = ==g:unos $105.== Ese es el extra que debes ganar en el river cuando tu color caiga.
 
 Así que la pregunta no es "¿debería pagar $50?". Es "**cuando caiga un corazón, ¿puedo ganar al menos $105 más?**". Contra un rival profundo que pagará una apuesta en el river con top pair o un set, es fácil — pagas. Contra alguien con $60 detrás, o en una mesa donde un cuarto corazón le mata la acción, no puedes — así que foldeas.
@@ -116,7 +116,7 @@ Dos fuerzas fijan el número. **Frecuencia:** un gutshot liga la mitad de veces 
 
 ## Set mining: parejas servidas pequeñas y odds implícitas
 
-**Ligas un set (o mejor) con una pareja servida solo el 11.8% de las veces — unos 7.5-a-1 en contra, o 1 de cada 8.5 — así que el set mining solo es rentable cuando el stack detrás cubre todas las veces que fallas.** Esta es la jugada de odds implícitas más pura del póker: pagas un raise con una pareja pequeña por una sola razón — ligar trío en el flop y llevarte el stack de alguien.
+**Ligas un set (o mejor) con una pareja servida solo el 11.8% de las veces — unos 7.5 a 1 en contra, o 1 de cada 8.5 — así que el set mining solo es rentable cuando el stack detrás cubre todas las veces que fallas.** Esta es la jugada de odds implícitas más pura del póker: pagas un raise con una pareja pequeña por una sola razón — ligar trío en el flop y llevarte el stack de alguien.
 
 ![Una pareja servida pequeña de cincos junto a un stack profundo de fichas sobre el tapete verde — el montaje para un call de set mining que solo compensa cuando los stacks son profundos](/images/holdem-implied-odds-setmine.webp "Las parejas pequeñas son oro con stacks profundos detrás — pagar poco ahora para ganar mucho cuando ligas un set")
 
@@ -124,9 +124,9 @@ Como fallas ==r:siete de cada ocho veces==, la matemática es brutal a menos que
 
 Aquí va el desglose honesto que la mayoría de los artículos se salta:
 
-- **El break-even puro es 7.5-a-1.** En una fantasía donde ganas el *stack entero* de tu rival cada vez que ligas un set, solo necesitarías unos 7.5× detrás.
+- **El break-even puro es 7.5 a 1.** En una fantasía donde ganas el *stack entero* de tu rival cada vez que ligas un set, solo necesitarías unos 7.5× detrás.
 - **La vida real exige 15–20×.** No siempre te llevarás el stack completo, a veces ligarás un set y *aun así perderás* (set sobre set, o completan una mano mayor), y la posición importa. El colchón extra cubre esas fugas.
-- Así que ==b:7.5-a-1 es el suelo teórico; 15–20× es la regla práctica.== No los confundas — usar el 7.5 como tu guía en la mesa real es una fuga lenta.
+- Así que ==b:7.5 a 1 es el suelo teórico; 15–20× es la regla práctica.== No los confundas — usar el 7.5 como tu guía en la mesa real es una fuga lenta.
 
 La matemática exacta de ligar set en el flop y todos los demás números de "odds de ligar X" están en [drawing odds](/es/blog/holdem-drawing-odds "thumb:/images/holdem-drawing-odds-hero.webp"); la conclusión aquí es que las parejas pequeñas son oro cuando los stacks son profundos y basura cuando son cortos — la pareja no cambió, cambiaron las odds implícitas.
 
@@ -204,7 +204,7 @@ A. No. Cuando tu rival está all-in no hay más rondas de apuestas, así que no 
 
 **Q. ¿Cómo funcionan las odds implícitas en el set mining?**
 
-A. Ligas un set con una pareja servida solo el 11.8% de las veces (unos 7.5-a-1 en contra), así que necesitas un pago grande las veces que ligas. El break-even teórico es de unos 7.5× tu call en stacks, pero la guía práctica es 15–20× — el colchón extra cubre las veces que fallas, no obtienes acción o pierdes con un set.
+A. Ligas un set con una pareja servida solo el 11.8% de las veces (unos 7.5 a 1 en contra), así que necesitas un pago grande las veces que ligas. El break-even teórico es de unos 7.5× tu call en stacks, pero la guía práctica es 15–20× — el colchón extra cubre las veces que fallas, no obtienes acción o pierdes con un set.
 
 **Q. ¿Tienes odds implícitas con un proyecto de color?**
 

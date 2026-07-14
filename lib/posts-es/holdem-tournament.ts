@@ -233,7 +233,7 @@ Esto es lo que ninguna otra guía te cuenta. Aquí tienes una cronología realis
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
 <div style="color:var(--primary);font-weight:700">6-9pm</div>
-<div style="color:var(--foreground)">Se acerca la burbuja. Empieza el juego mano a mano. La presión llega al máximo. Un busteo = todos cobran.</div>
+<div style="color:var(--foreground)">Se acerca la burbuja. Empieza el juego mano por mano (hand-for-hand). La presión llega al máximo. Un busteo = todos cobran.</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0">
 <div style="color:#22c55e;font-weight:700">9-11pm</div>
@@ -273,7 +273,7 @@ Estos 13 términos cubren casi todo lo que oirás en la mesa. Para la A a la Z c
 |------|--------------|
 | **ITM** | In The Money — has llegado a un puesto que cobra |
 | **Burbuja** | La fase justo antes del ITM — a una eliminación de que todos cobren |
-| **Mano a mano (hand-for-hand)** | Todas las mesas juegan una mano a la vez durante la burbuja para evitar el juego lento |
+| **Mano por mano (hand-for-hand)** | Todas las mesas juegan una mano a la vez durante la burbuja para evitar el juego lento |
 | **Hoja de estructura** | El documento oficial que lista niveles de ciegas, antes y premios |
 | **Chip leader** | El jugador con más fichas |
 | **Short stack** | Un jugador con muy pocas fichas en relación con las ciegas |

@@ -77,7 +77,7 @@ En el Texas Hold'em estándar, **ningún palo gana a otro**. Las picas no ganan 
 
 **A♠ K♠ Q♠ J♠ 10♠** — la escalera de color más alta y la mejor mano del póker.
 
-No se puede ganar ni empatar (dos escaleras reales solo pueden darse en palos distintos, lo que significa empate). Aparece más o menos una vez cada 31,000 manos, así que muchos jugadores pasan años sin ligarla. Cuando lo hagas, tu único trabajo es meter cuantas fichas puedas.
+No se puede superar; el único empate posible es una escalera real que esté entera en la mesa y la compartan todos, lo que divide el bote. Aparece más o menos una vez cada 31,000 manos, así que muchos jugadores pasan años sin ligarla. Cuando lo hagas, tu único trabajo es meter cuantas fichas puedas.
 
 ### #2 — Escalera de Color
 
@@ -337,7 +337,7 @@ A. Solo tres manos ganan a un full: el póker, la escalera de color y la escaler
 
 **Q. ¿Qué gana a una escalera real?**
 
-A. Nada. La escalera real (A-K-Q-J-10 del mismo palo) es la mejor mano posible del póker. No se puede ganar — el único "empate" es otra escalera real en un palo distinto, que divide el bote.
+A. Nada. La escalera real (A-K-Q-J-10 del mismo palo) es la mejor mano posible del póker. No se puede superar — el único "empate" es una escalera real que esté entera en la mesa y la compartan todos, que divide el bote.
 
 **Q. ¿Qué gana a una escalera de color?**
 

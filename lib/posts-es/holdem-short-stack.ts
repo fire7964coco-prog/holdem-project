@@ -120,7 +120,7 @@ Una frase para recordar: ==sé el que va de shove, no el que iguala.== La agresi
 
 - **Asumen condiciones específicas.** Los rangos Nash estándar ignoran los antes y el ICM; añade antes y tus shoves se amplían, añade [presión de burbuja/ICM](/es/blog/holdem-bubble) y tus calls se cierran mucho.
 - **Son un modelo heads-up / solo ciegas.** Los spots reales tienen varios jugadores por actuar, reads y saltos de premio que una tabla no puede ver.
-- **La conclusión fiable es la forma**, no la mano exacta: shove más amplio en posición tardía, iguala más cerrado de lo que vas de shove, y ve de jam más a medida que tu stack baja. Para el número real en un spot de ICM o burbuja de verdad, mete tus stacks y premios en la [calculadora de ICM](/es/calculator) en vez de fiarte de un rango impreso.
+- **La conclusión fiable es la forma**, no la mano exacta: shove más amplio en posición tardía, iguala más cerrado de lo que vas de shove, y ve de jam más a medida que tu stack baja. Para el número real en un spot de ICM o burbuja de verdad, mete tus stacks y premios en la [calculadora de ICM](/en/calculator) en vez de fiarte de un rango impreso.
 
 *(Un matiz para los curiosos: con 10–15 ciegas grandes, los jugadores fuertes a veces mezclan un min-raise pequeño con manos premium para inducir shoves de manos dominadas. Puede rendir más que el jam puro — pero es un añadido avanzado. El push/fold es el marco fiable; domínalo primero.)*
 
@@ -133,10 +133,10 @@ Una frase para recordar: ==sé el que va de shove, no el que iguala.== La agresi
 Lo que eso significa en la práctica:
 
 - **Sigue yendo de shove siendo primero** para robar a los stacks medios que están foldeando todo para sobrevivir — son los objetivos perfectos.
-- **Puedes esperar si otros van más cortos.** Si dos jugadores tienen menos fichas que tú en la burbuja del dinero, puedes foldear spots marginales y dejar que bustean primero, escalando premios gratis — pero solo si de verdad tienes fichas con las que esperar, no si eres el más corto.
+- **Puedes esperar si otros van más cortos.** Si dos jugadores tienen menos fichas que tú en la burbuja del dinero, puedes foldear spots marginales y dejar que busteen primero, escalando premios gratis — pero solo si de verdad tienes fichas con las que esperar, no si eres el más corto.
 - **No conviertas el ICM en una excusa para foldear todo.** Fundirte hasta no tener fold equity para "colarte en el min-cash" cambia el torneo por su premio más pequeño. Respeta el salto de premio, y luego vuelve a acumular.
 
-La matemática real detrás de "cuánto más bajo es mi factor de burbuja" vive en la [guía de ICM](/es/blog/holdem-icm) — pasa tu spot exacto por la [calculadora](/es/calculator) cuando importe.
+La matemática real detrás de "cuánto más bajo es mi factor de burbuja" vive en la [guía de ICM](/es/blog/holdem-icm) — pasa tu spot exacto por la [calculadora](/en/calculator) cuando importe.
 
 ---
 
@@ -169,7 +169,7 @@ A. El push/fold es la estrategia de short stack donde, cuando eres el primero en
 
 **Q. ¿Deberías limpear alguna vez con un short stack?**
 
-A. Casi nunca cuando eres el primero en entrar. El open-limp entrega la fold equity y construye un bote que no puedes navegar postflop. Corto de fichas, la jugada estándar es subir o foldear, y con 15 ciegas grandes o menos esa subida suele ser un all-in. (Limpear detrás de otros limpers con un stack diminuto en la ciega grande es una excepción rara.)
+A. Casi nunca cuando eres el primero en entrar. El open-limp entrega la fold equity y construye un bote que no puedes navegar postflop. Corto de fichas, la jugada estándar es subir o foldear, y con 15 ciegas grandes o menos esa subida suele ser un all-in. (Completar desde la ciega pequeña detrás de otros limpers con un stack diminuto es una excepción rara.)
 
 **Q. ¿El min-raise es correcto alguna vez cuando vas corto de fichas?**
 
@@ -217,7 +217,7 @@ El juego de short stack es donde la matemática de torneos se vuelve memoria mus
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Cuándo foldear en póker</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Por qué igualar el all-in corto es un leak</div>
   </a>
-  <a href="/es/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/en/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Herramienta gratis</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Calculadora de ICM</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Calcula tu spot real de shove/call</div>

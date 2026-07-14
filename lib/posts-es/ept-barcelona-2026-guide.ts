@@ -377,7 +377,7 @@ Imprime esto y ve marcándolo antes de salir hacia el aeropuerto:
 **Práctico**
 - [ ] Euros en efectivo + tarjeta (hay cajeros cerca del Port Olímpic)
 - [ ] Protector solar (los días de recuperación en la playa son reales)
-- [ ] Frases básicas en español (el personal del casino habla inglés; en los restaurantes, depende)
+- [ ] Tarjeta sin comisiones por pago/retirada en el extranjero (clave si vienes de LATAM)
 
 ---
 

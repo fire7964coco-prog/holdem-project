@@ -66,7 +66,7 @@ La forma más limpia de no confundirlos:
 
 </div>
 
-Aquí están los mismos jugadores enseñando ambos casos, para que te encaje. **Bad beat:** tienes A♠A♥, metes todas las fichas preflop contra 7♣7♦, y sale un **7** en la mesa — tus ases eran un favorito de ~4,5‑a‑1 (cerca del 80%) y te superaron. **Cooler:** dale la vuelta — tienes tú el **7♣7♦**, ligas un trío de sietes y te vas de stack contra un trío salido de una pareja mayor. Ibas de underdog todo el rato y sencillamente no podías foldear un trío ligado en el flop. Mismas cartas, historias opuestas. Saber cuál de los dos acaba de pasar te dice si toca [revisar tu jugada](/es/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") o simplemente encogerte de hombros.
+Aquí están los mismos jugadores enseñando ambos casos, para que te encaje. **Bad beat:** tienes A♠A♥, metes todas las fichas preflop contra 7♣7♦, y sale un **7** en la mesa — tus ases eran un favorito de ~4.5 a 1 (cerca del 80%) y te superaron. **Cooler:** dale la vuelta — tienes tú el **7♣7♦**, ligas un trío de sietes y te vas de stack contra un trío salido de una pareja mayor. Ibas de underdog todo el rato y sencillamente no podías foldear un trío ligado en el flop. Mismas cartas, historias opuestas. Saber cuál de los dos acaba de pasar te dice si toca [revisar tu jugada](/es/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") o simplemente encogerte de hombros.
 
 ---
 
@@ -80,7 +80,7 @@ Los coolers vienen en una familia reconocible. En todos ellos, *ambas* manos son
 
 | Cooler | El choque | Por qué no puedes foldear |
 |:---|:---|:---|
-| **Reyes vs ases** | KK all-in preflop contra AA | KK es un underdog de ~4,5:1 ante AA, pero jamás vas a foldear reyes preflop |
+| **Reyes vs ases** | KK all-in preflop contra AA | KK es un underdog de ~4.5:1 ante AA, pero jamás vas a foldear reyes preflop |
 | **Set over set (trío contra trío)** | Tu trío ligado en el flop vs un trío mayor ligado en el flop | Un trío ligado en el flop casi nunca se foldea; el trío menor va casi muerto |
 | **Color sobre color** | Tu color a rey vs un color a as | Un color a rey parece enorme — rara vez le pones el color al as clavado |
 | **Full sobre full** | Tu full vs un full mayor | Un full es un monstruo; tirarlo es casi imposible |
@@ -163,7 +163,7 @@ A. Sí — "setup" es un sinónimo informal de cooler. Recalca la sensación de 
 
 **Q. ¿Una pareja de reyes contra una de ases es un cooler?**
 
-A. Sí — es el cooler más clásico de todos. Los reyes son más o menos un underdog de 4,5‑a‑1 ante los ases preflop, pero ningún jugador razonable foldea una pareja de reyes antes del flop. Así que el dinero entra, vas por detrás todo el rato, y pierdes una mano de la que nunca podrías haberte escapado.
+A. Sí — es el cooler más clásico de todos. Los reyes son más o menos un underdog de 4.5 a 1 ante los ases preflop, pero ningún jugador razonable foldea una pareja de reyes antes del flop. Así que el dinero entra, vas por detrás todo el rato, y pierdes una mano de la que nunca podrías haberte escapado.
 
 **Q. ¿Qué significa "comerse un cooler"?**
 
@@ -185,7 +185,7 @@ A. Confirma que fue de verdad inevitable, y luego suéltalo — no hay ninguna l
 2. **Es lo contrario de un bad beat.** Un bad beat es ir por delante y que te superen con un proyecto; un cooler es ir por detrás y no tener nunca opción. Saber cuál te tocó te dice si hay algo que corregir.
 3. **Sé honesto sobre la diferencia entre un cooler y un error.** Si volverías a hacer la jugada con la misma información, encógete de hombros. Si no lo harías, no fue un cooler — fue un leak disfrazado.
 
-Los mejores jugadores pierden exactamente tantos coolers como todos los demás; simplemente no dejan que hagan ningún daño extra. Anótalo como varianza, protege tus siguientes decisiones del tilt, y vuelve a superar en la [mesa](/es/blog/holdem-fish). La baraja enfría a todo el mundo tarde o temprano — ganar es lo que haces en todas las manos que no son coolers.
+Los mejores jugadores pierden exactamente tantos coolers como todos los demás; simplemente no dejan que hagan ningún daño extra. Anótalo como varianza, protege tus siguientes decisiones del tilt, y vuelve a jugar mejor que la [mesa](/es/blog/holdem-fish). La baraja enfría a todo el mundo tarde o temprano — ganar es lo que haces en todas las manos que no son coolers.
 
 ---
 

@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Probabilidad de proyecto en el póker — cuánto ligas en el flop y hasta el river",
   seoTitle: "¿Qué probabilidad tienes de ligar el proyecto? — Póker",
   desc: "La probabilidad real de ligar un set, un color, un póker y cada proyecto en Hold'em, con las combinaciones exactas y la matemática del set mining.",
-  tldr: "Ligas un set con una pareja servida el 11.8% de las veces (7.5-a-1 en contra), ligas un color con dos cartas del mismo palo apenas un 0.84%, y completas un proyecto de color del flop al river el 35% de las veces. Cada número de abajo sale de la baraja, no se adivina.",
+  tldr: "Ligas un set con una pareja servida el 11.8% de las veces (7.5 a 1 en contra), ligas un color con dos cartas del mismo palo apenas un 0.84%, y completas un proyecto de color del flop al river el 35% de las veces. Cada número de abajo sale de la baraja, no se adivina.",
   category: "odds",
   date: "2026-07-04",
   updated: "2026-07-13",
@@ -29,7 +29,7 @@ Eso es en realidad la probabilidad de proyecto: no es suerte, sino la ==matemát
 11.8% | Ligar un set con una pareja servida
 0.84% | Ligar un color hecho con dos cartas del mismo palo
 35% | Completar un proyecto de color del flop al river
-407-a-1 | Ligar un póker con una pareja servida
+407 a 1 | Ligar un póker con una pareja servida
 :::
 
 ---
@@ -42,11 +42,11 @@ Esta es la tabla que nadie construye en un solo sitio. La mayoría de las webs t
 
 | Con lo que juegas | Ligarlo hecho | Ligar el proyecto | Completar el proyecto al river |
 |:---|:---:|:---|:---|
-| Pareja servida → set | 11.8% (7.5-a-1) | — | set→full 33% al river |
-| Dos del mismo palo → color | 0.84% (118-a-1) | 10.9% proyecto de color | 35% (9 outs) |
-| Conectoras → escalera | 1.3% (76-a-1) | ~10% proyecto abierto | 31.5% (8 outs) |
+| Pareja servida → set | 11.8% (7.5 a 1) | — | set→full 33% al river |
+| Dos del mismo palo → color | 0.84% (118 a 1) | 10.9% proyecto de color | 35% (9 outs) |
+| Conectoras → escalera | 1.3% (76 a 1) | ~10% proyecto abierto | 31.5% (8 outs) |
 | Dos sin emparejar → pareja | ~32% | — | — |
-| Pareja servida → póker | 0.245% (407-a-1) | — | — |
+| Pareja servida → póker | 0.245% (407 a 1) | — | — |
 
 </div>
 
@@ -58,7 +58,7 @@ Lee una fila de izquierda a derecha y ves el ciclo de vida completo de una mano.
 
 ![Infografía de un botón de dealer dorado y dos cartas boca abajo sobre un flop K♦ 7♣ 2♠ — el momento en que se decide un call de set mining](/images/holdem-button-dealer-board.webp "El flop decide un call de set mining: liga tu proyecto de dos outs el 11.8% de las veces, o pasa y espera la siguiente pareja")
 
-**Ligas un set (o mejor) con una pareja servida el 11.8% de las veces — más o menos 1 de cada 8.5, o 7.5-a-1 en contra.** Este es el número de proyecto más importante del juego, porque es toda la base del *set mining*: pagar una subida con una pareja pequeña solo para ligar trío en el flop.
+**Ligas un set (o mejor) con una pareja servida el 11.8% de las veces — más o menos 1 de cada 8.5, o 7.5 a 1 en contra.** Este es el número de proyecto más importante del juego, porque es toda la base del *set mining*: pagar una subida con una pareja pequeña solo para ligar trío en el flop.
 
 ¿De dónde sale el 11.8%? Con una pareja servida quedan dos cartas en la baraja que te emparejan. El flop son tres cartas sacadas de las 50 que no ves. La forma limpia de contarlo es al revés — la probabilidad de que **falles** las tres:
 
@@ -75,7 +75,7 @@ Lee una fila de izquierda a derecha y ves el ciclo de vida completo de una mano.
 
 ### Cuándo el set mining sale a cuenta de verdad
 
-Ligar un set el 11.8% de las veces significa que **fallas el 88% de las veces** y pasas. Para ganar, el 12% que aciertas tiene que pagar todas las veces que fallas. El punto de equilibrio es 7.5-a-1 — así que si pagas para hacer set mining, quieres que el bote más lo que puedas ganar en calles posteriores valga **al menos 7.5×** tu call, y en la práctica ==g:15-a-1 o mejor== para cubrir las veces en que tu set no cobra o lo superan.
+Ligar un set el 11.8% de las veces significa que **fallas el 88% de las veces** y pasas. Para ganar, el 12% que aciertas tiene que pagar todas las veces que fallas. El punto de equilibrio es 7.5 a 1 — así que si pagas para hacer set mining, quieres que el bote más lo que puedas ganar en calles posteriores valga **al menos 7.5×** tu call, y en la práctica ==g:15 a 1 o mejor== para cubrir las veces en que tu set no cobra o lo superan.
 
 :::tip[La regla práctica: solo paga una subida para hacer set mining si los stacks efectivos son más o menos 15-20× el precio del call. Los stacks profundos convierten las parejas pequeñas en oro; los stacks cortos las convierten en basura. La pareja no cambió — cambiaron las odds implícitas.]:::
 
@@ -98,9 +98,9 @@ Aquí es donde la competencia mezcla tres números completamente distintos. Con 
 
 | Pregunta | Odds | La matemática |
 |:---|:---:|:---|
-| Ligar un **color hecho** (3 de tu palo) | 0.84% · 118-a-1 | C(11,3) ÷ C(50,3) = 165 ÷ 19,600 |
-| Ligar un **proyecto de color** (2 más de tu palo) | 10.9% · 8-a-1 | C(11,2)×39 ÷ C(50,3) = 2,145 ÷ 19,600 |
-| **Completar** un proyecto de color al river | 35.0% · 1.9-a-1 | 1 − C(38,2) ÷ C(47,2) |
+| Ligar un **color hecho** (3 de tu palo) | 0.84% · 118 a 1 | C(11,3) ÷ C(50,3) = 165 ÷ 19,600 |
+| Ligar un **proyecto de color** (2 más de tu palo) | 10.9% · 8 a 1 | C(11,2)×39 ÷ C(50,3) = 2,145 ÷ 19,600 |
+| **Completar** un proyecto de color al river | 35.0% · 1.9 a 1 | 1 − C(38,2) ÷ C(47,2) |
 
 </div>
 
@@ -120,7 +120,7 @@ Un color por **puerta trasera** (backdoor, runner-runner) — ligas solo *una* c
 
 ![Una escalera al ocho tendida en secuencia sobre el tapete verde, la mano terminada a la que persigue un proyecto abierto](/images/holdem-reading-straight-example.webp "Un proyecto de escalera abierto se llena por cualquiera de los dos extremos — ocho outs, 31.5% de completarlo al river")
 
-Las conectoras como 8♠7♠ tienen su propio ciclo de vida. **Ligarás una escalera hecha solo el 1.3%** de las veces (76-a-1) — más raro de lo que asume la mayoría. Mucho más a menudo ligas un **proyecto**:
+Las conectoras como 8♠7♠ tienen su propio ciclo de vida. **Ligarás una escalera hecha solo el 1.3%** de las veces (76 a 1) — más raro de lo que asume la mayoría. Mucho más a menudo ligas un **proyecto**:
 
 - **Proyecto de escalera abierto (de dos puntas):** ~10% de los flops con conectoras. Ocho outs, se completa el **31.5%** al river — 1 − C(39,2)/C(47,2) — o un 17% con una sola carta.
 - **Proyecto interior (gutshot):** cuatro outs, se completa el **16.5%** al river, 8.5% con una carta. La mitad de la equity de un abierto, y por eso las mismas conectoras se juegan tan distinto según el flop.
@@ -137,10 +137,10 @@ Estos son los números detrás de las mejores (y peores) noches de tu vida en el
 
 | Ligar esto | Con lo que juegas | Odds | La matemática |
 |:---|:---|:---:|:---:|
-| **Póker** | Una pareja servida | 0.245% · 407-a-1 | 48 ÷ 19,600 |
-| **Full** | Una pareja servida | 0.98% · 101-a-1 | 192 ÷ 19,600 |
-| **Trips** | Dos cartas sin emparejar | 1.35% · 73-a-1 | 264 ÷ 19,600 |
-| **Escalera de color** | Conectoras del mismo palo | 0.02% · ~4,900-a-1 | 4 ÷ 19,600 |
+| **Póker** | Una pareja servida | 0.245% · 407 a 1 | 48 ÷ 19,600 |
+| **Full** | Una pareja servida | 0.98% · 101 a 1 | 192 ÷ 19,600 |
+| **Trips** | Dos cartas sin emparejar | 1.35% · 73 a 1 | 264 ÷ 19,600 |
+| **Escalera de color** | Conectoras del mismo palo | 0.02% · ~4,900 a 1 | 4 ÷ 19,600 |
 
 </div>
 
@@ -160,10 +160,10 @@ Antes de todo lo anterior, está el reparto. Con **1,326 combinaciones posibles 
 
 | Recibir esto | Odds | Con qué frecuencia |
 |:---|:---:|:---:|
-| Ases servidos (pareja concreta) | 220-a-1 · 0.45% | 6 ÷ 1,326 |
-| Cualquier pareja servida | 16-a-1 · 5.9% | 78 ÷ 1,326 |
-| A-K del mismo palo | 331-a-1 · 0.3% | 4 ÷ 1,326 |
-| Dos cartas del mismo palo | 3.25-a-1 · 23.5% | casi 1 de cada 4 manos |
+| Ases servidos (pareja concreta) | 220 a 1 · 0.45% | 6 ÷ 1,326 |
+| Cualquier pareja servida | 16 a 1 · 5.9% | 78 ÷ 1,326 |
+| A-K del mismo palo | 331 a 1 · 0.3% | 4 ÷ 1,326 |
+| Dos cartas del mismo palo | 3.25 a 1 · 23.5% | casi 1 de cada 4 manos |
 
 </div>
 
@@ -180,11 +180,11 @@ La que sorprende a la gente: si **tú** tienes ases en una mesa de 10 jugadores,
 
 **Q. ¿Qué probabilidad hay de ligar un set?**
 
-A. Alrededor del 11.8%, o 1 de cada 8.5, cuando tienes una pareja servida — se suele citar como "7.5-a-1 en contra". Sale de 1 − C(48,3)/C(50,3): de los 19,600 flops posibles, 17,296 fallan tu pareja. Ese número es toda la base para saber si hacer set mining con una pareja pequeña es rentable.
+A. Alrededor del 11.8%, o 1 de cada 8.5, cuando tienes una pareja servida — se suele citar como "7.5 a 1 en contra". Sale de 1 − C(48,3)/C(50,3): de los 19,600 flops posibles, 17,296 fallan tu pareja. Ese número es toda la base para saber si hacer set mining con una pareja pequeña es rentable.
 
-**Q. ¿Por qué se dice 7.5-a-1 pero también 1 de cada 8?**
+**Q. ¿Por qué se dice 7.5 a 1 pero también 1 de cada 8?**
 
-A. Son las mismas odds dichas de dos formas. "7.5-a-1 en contra" cuenta fallos frente a aciertos (7.5 fallos por cada acierto), lo que da 1 acierto por cada 8.5 intentos — es decir, más o menos 1 de cada 8.5, o el 11.8%. "Odds en contra" y "1 de cada N" describen siempre la misma probabilidad; no las sumes.
+A. Son las mismas odds dichas de dos formas. "7.5 a 1 en contra" cuenta fallos frente a aciertos (7.5 fallos por cada acierto), lo que da 1 acierto por cada 8.5 intentos — es decir, más o menos 1 de cada 8.5, o el 11.8%. "Odds en contra" y "1 de cada N" describen siempre la misma probabilidad; no las sumes.
 
 **Q. ¿Cuál es la diferencia entre un set y trips?**
 
@@ -192,7 +192,7 @@ A. Un set es una pareja servida más una carta que la empareja en la mesa — lo
 
 **Q. ¿Qué probabilidad hay de ligar un color?**
 
-A. Apenas un 0.84% (más o menos 118-a-1) con dos cartas del mismo palo — eso es C(11,3)/C(50,3). No lo confundas con ligar un *proyecto* de color, que es un 10.9%, ni con *completar* ese proyecto al river, que es un 35%. Dos cartas del mismo palo ligan un proyecto trece veces más a menudo que un color hecho.
+A. Apenas un 0.84% (más o menos 118 a 1) con dos cartas del mismo palo — eso es C(11,3)/C(50,3). No lo confundas con ligar un *proyecto* de color, que es un 10.9%, ni con *completar* ese proyecto al river, que es un 35%. Dos cartas del mismo palo ligan un proyecto trece veces más a menudo que un color hecho.
 
 **Q. Si ligo un proyecto de color, ¿qué probabilidad tengo de completarlo?**
 
@@ -200,11 +200,11 @@ A. Alrededor del 35% al river con nueve outs (1 − C(38,2)/C(47,2)) — un poco
 
 **Q. ¿Qué probabilidad hay de ligar un póker?**
 
-A. 0.245%, o 407-a-1, con una pareja servida — hay exactamente 48 flops (tus dos últimas cartas iguales más cualquier tercera carta, C(48,1)) de los 19,600. Ligar una escalera de color es aún más raro, alrededor de 1 de cada 4,900.
+A. 0.245%, o 407 a 1, con una pareja servida — hay exactamente 48 flops (tus dos últimas cartas iguales más cualquier tercera carta, C(48,1)) de los 19,600. Ligar una escalera de color es aún más raro, alrededor de 1 de cada 4,900.
 
 **Q. ¿Qué probabilidad hay de recibir ases servidos?**
 
-A. 220-a-1 (0.45%) para los ases en concreto — 6 de las 1,326 combinaciones iniciales. Cualquier pareja servida es mucho más común, a 16-a-1 (5.9%). Y si tienes ases en una mesa llena, que otro jugador también los tenga es de más o menos 1 de cada 136.
+A. 220 a 1 (0.45%) para los ases en concreto — 6 de las 1,326 combinaciones iniciales. Cualquier pareja servida es mucho más común, a 16 a 1 (5.9%). Y si tienes ases en una mesa llena, que otro jugador también los tenga es de más o menos 1 de cada 136.
 
 **Q. ¿Qué probabilidad hay de set contra set?**
 
@@ -214,7 +214,7 @@ A. No hay un número único fijo — depende de cuántos rivales tengan parejas 
 
 ## Las 3 cosas que debes recordar
 
-1. **Ligar un set: 11.8% (7.5-a-1).** El número que decide cada call de set mining — solo paga con stacks lo bastante profundos para cobrar 10× o más cuando aciertes.
+1. **Ligar un set: 11.8% (7.5 a 1).** El número que decide cada call de set mining — solo paga con stacks lo bastante profundos para cobrar 10× o más cuando aciertes.
 2. **Hecho vs proyecto vs completado son números distintos.** Dos cartas del mismo palo ligan un color hecho un 0.84%, un proyecto de color un 10.9%, y completan ese proyecto un 35%. Nunca cites el equivocado.
 3. **Un proyecto grande es más o menos uno de cada tres al river.** Proyecto de color 35%, abierto 31.5% — y más o menos uno de cada seis en una sola calle.
 

@@ -66,7 +66,7 @@ Llega débil al showdown | Da la vuelta a manos que nunca deberían haber llegad
 Juega emocionalmente | Se tiltea tras un bad beat, persigue pérdidas, juega con miedo cuando va perdiendo
 :::
 
-Ninguna señal por sí sola es prueba — hasta los buenos jugadores limpean de vez en cuando o persiguen un proyecto grande. Pero cuando ves tres o cuatro de estas en el mismo jugador, has encontrado al pez. La lectura individual más fiable es **pasividad más igualar suelto**: un jugador que iguala demasiadas manos pero casi nunca sube es el pez clásico, y el rival más fácil de batir porque puedes apostarle a valor sin descanso y sin miedo a un farol-resubida. Saber qué manos iniciales vale siquiera la pena jugar es lo primero que os separa a ti de él — la [tabla de manos iniciales](/es/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") es donde nace esa diferencia.
+Ninguna señal por sí sola es prueba — hasta los buenos jugadores limpean de vez en cuando o persiguen un proyecto grande. Pero cuando ves tres o cuatro de estas en el mismo jugador, has encontrado al pez. La lectura individual más fiable es **pasividad más igualar suelto**: un jugador que iguala demasiadas manos pero casi nunca sube es el pez clásico, y el rival más fácil de batir porque puedes apostarle a valor sin descanso y sin miedo a un farol-resubida. Saber qué manos iniciales vale siquiera la pena jugar es lo primero que te separa de él — la [tabla de manos iniciales](/es/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") es donde nace esa diferencia.
 
 ---
 

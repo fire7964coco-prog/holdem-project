@@ -98,7 +98,7 @@ A lo largo de miles de manos, esa fuga se acumula hasta ser la mayor diferencia 
 
 **La mejor posición en el póker es el botón.** Es el único asiento que tiene garantizado hablar ==**último en cada calle del postflop**== — flop, turn y river, sin importar quién subió en el preflop. Esa garantía es la razón por la que el botón puede abrir de forma rentable ~43% de las manos mientras que UTG solo llega a ~13%: la posición, no la fuerza de las cartas, financia la diferencia.
 
-Aquí tienes la ventaja del botón en una mano concreta. Abres A♦9♦ en el botón, la ciega grande iguala, y el flop viene **K♦7♠2♥** — una mesa seca que no le pega a casi nadie. La ciega grande pasa. Has fallado por completo, pero ese check acaba de decirte que él probablemente también. ==g:Una apuesta aquí gana muchas más veces de las que pierde==, y cuando foldea, ace-high se lleva el bote sin showdown. Ahora invierte los asientos: OOP con la misma A♦9♦, pasas, él apuesta, y estás foldeando la mejor mano una parte nada despreciable de las veces. Las mismas cartas; el asiento hizo todo el trabajo.
+Aquí tienes la ventaja del botón en una mano concreta. Abres A♦9♦ en el botón, la ciega grande iguala, y el flop viene **K♦7♠2♥** — una mesa seca que no le pega a casi nadie. La ciega grande pasa. Has fallado por completo, pero ese check acaba de decirte que él probablemente también. ==g:Una apuesta aquí gana muchas más veces de las que pierde==, y cuando foldea, el as alto se lleva el bote sin showdown. Ahora invierte los asientos: OOP con la misma A♦9♦, pasas, él apuesta, y estás foldeando la mejor mano una parte nada despreciable de las veces. Las mismas cartas; el asiento hizo todo el trabajo.
 
 El **cutoff** es el segundo mejor por una razón: solo el botón actúa detrás de ti, y cuando el botón foldea — cosa que pasa a menudo — heredas la última acción para el resto de la mano.
 
@@ -139,7 +139,7 @@ Jugar bien UTG va sobre todo de contención:
 
 El open-limp falla por tres motivos desde UTG:
 
-1. **Invita a toda la mesa** con unas pot odds perfectas, así que ligas contra cuatro manos aleatorias estando OOP.
+1. **Invita a toda la mesa** con unas pot odds perfectas, así que ves el flop contra cuatro manos aleatorias estando OOP.
 2. **Encasilla tu rango percibido** — los jugadores observadores atacan a los que limpean sin piedad, y te enfrentarás a subidas contra las que no puedes continuar cómodamente.
 3. **No gana nada en el preflop.** Una subida puede llevarse las ciegas directamente; un limp nunca lo hace.
 

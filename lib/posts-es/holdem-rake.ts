@@ -16,7 +16,7 @@ export const POST: Post = {
   imageAlt: "Un repartidor retirando un pequeño montón de fichas del bote central hacia la ranura del rake en una mesa de fieltro verde",
   tags: ["rake", "qué es el rake en poker", "rake poker explicado", "rakeback", "tope de rake poker", "rake por tiempo", "rake torneos", "cómo funciona el rake en poker"],
   content: `
-Me hicieron falta un mes deprimente de sesiones "en tablas" para descubrir a dónde iba realmente mi dinero. No estaba perdiendo contra los otros jugadores — les estaba ganando, por poco. Estaba perdiendo contra la ==tajada que la sala se lleva de cada bote que gano.== Esa comisión silenciosa se llama **rake**, y hasta que no lo entiendes, puedes ser un jugador ganador sobre el papel y un perdedor en la caja.
+Me hizo falta un mes deprimente de sesiones "en tablas" para descubrir a dónde iba realmente mi dinero. No estaba perdiendo contra los otros jugadores — les estaba ganando, por poco. Estaba perdiendo contra la ==tajada que la sala se lleva de cada bote que gano.== Esa comisión silenciosa se llama **rake**, y hasta que no lo entiendes, puedes ser un jugador ganador sobre el papel y un perdedor en la caja.
 
 El rake es la forma en que una sala gana dinero en un juego donde no juega ni una sola mano. Aquí tienes exactamente qué es, todas las formas en que se cobra, las cuentas honestas sobre ==g:cuánto pagas de verdad por sesión==, y cómo el rakeback recupera una parte. Es la comisión que decide si batir el póker de límites bajos es siquiera posible.
 

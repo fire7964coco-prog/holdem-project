@@ -117,7 +117,7 @@ La mayoría de las guías te sueltan "3x en posición, 4x fuera de posición" y 
 | **En posición** (hablas último) | ~3x la apertura | **9bb** ($18) | La posición te deja ganar con un tamaño menor, así que arriesgas menos. |
 | **Fuera de posición** (hablas primero) | ~4–4.5x | **12–13.5bb** ($24–27) | Un tamaño mayor les cobra más por ver un flop y evita que tu desventaja posicional viaje barata. |
 | **Squeeze** (apertura + un pagador) | Tamaño OOP **+ ~1x por pagador** | **~14–15bb** ($30) | Dinero muerto extra y un jugador más al que echar. |
-| **Aislar a un limper** | 3bb **+ 1bb por limper** (suma 1 vivo más) | ~4–5bb | Castiga el limp, desanima los overcalls, y aun así te pagan amplio. |
+| **Aislar a un limper** | 3bb **+ 1bb por limper** (en vivo, suma 1bb extra) | ~4–5bb | Castiga el limp, desanima los overcalls, y aun así te pagan amplio. |
 
 </div>
 

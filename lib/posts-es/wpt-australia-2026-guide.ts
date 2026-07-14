@@ -93,7 +93,7 @@ Es la pregunta que hace todo debutante. Aquí va el desglose honesto:
 
 ==r:WPT Global, la principal plataforma online de satélites para los eventos WPT a nivel mundial, está **restringida en Australia**.== Los residentes australianos no pueden usar WPT Global para clasificar. Esto también pilla por sorpresa a los jugadores internacionales — si viajas desde un país habilitado para WPT Global, no encontrarás satélites específicos del WPT Australia en la plataforma.
 
-**Tus opciones de satélite están presenciales en The Star Sydney.**
+**Tus satélites se juegan en vivo, en The Star Sydney.**
 
 ### Vías de satélite presencial (según la estructura de 2024/2025)
 

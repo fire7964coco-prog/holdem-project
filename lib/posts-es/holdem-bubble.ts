@@ -16,7 +16,7 @@ export const POST: Post = {
   imageAlt: "Un stack corto de fichas y una torre de un stack grande enfrentados en una mesa de torneo en la burbuja, con una escalera de premios de fondo — el momento en que sobrevivir vale más que las fichas",
   tags: ["burbuja poker", "como jugar la burbuja", "estrategia burbuja poker", "bubble factor", "burbuja stack corto", "burbuja premios", "burbuja satelite", "hand for hand poker"],
   content: `
-Lo más disciplinado que he jugado en mi vida fue a tres jugadores de premios en un torneo de un viernes, con todo el mundo foldeando como si las cartas quemaran. Tenía un stack medio y open-foldeé ace-jack dos veces — manos que subiría siempre en un cash game. Dos órbitas después el stack corto busteó, entré limpeando en el min-cash… y acabé 14.º con un pago apenas por encima de mi buy-in. ==Me "sobreviví" a mí mismo hasta quedar fuera de cualquier dinero de verdad.== Eso es la burbuja en una anécdota: si la juegas con demasiado miedo te llevas cacahuetes; si la juegas bien, es donde los torneos se ganan de verdad.
+Lo más disciplinado que he jugado en mi vida fue a tres jugadores de premios en un torneo de un viernes, con todo el mundo foldeando como si las cartas quemaran. Tenía un stack medio y open-foldeé as-jota (AJ) dos veces — manos que subiría siempre en un cash game. Dos órbitas después el stack corto busteó, entré limpeando en el min-cash… y acabé 14.º con un pago apenas por encima de mi buy-in. ==Me "sobreviví" a mí mismo hasta quedar fuera de cualquier dinero de verdad.== Eso es la burbuja en una anécdota: si la juegas con demasiado miedo te llevas cacahuetes; si la juegas bien, es donde los torneos se ganan de verdad.
 
 ==En la burbuja, una eliminación más deja cobrar a todos los demás — así que, durante unas pocas manos críticas, seguir vivo vale más que las fichas que podrías ganar.== Ese único hecho pone el póker normal patas arriba, y casi todo el mundo se equivoca de las dos mismas maneras: los stacks grandes no atacan lo suficiente, y los stacks medios pagan demasiado. Esta guía es el manual stack a stack — qué hacer con un stack grande, medio o corto, en las tres burbujas distintas que te encontrarás.
 
@@ -52,7 +52,7 @@ La burbuja importa porque los premios de torneo son ==top-heavy== (cargados arri
 
 **Porque las fichas de torneo no son dinero — solo ganas un primer premio, así que las fichas que protegen un cobro garantizado valen más que las fichas que van a por más.** Esto es el Independent Chip Model (ICM), y cerca de un salto de premios significa que ==el riesgo de bustear pesa más que la recompensa de ganar un coin flip==. Un call que es break-even en fichas puede ser una jugada perdedora en dólares reales.
 
-No necesitas hacer las cuentas en vivo — para eso está nuestra [calculadora de ICM](/es/calculator), y el desglose completo vive en la [guía de ICM](/es/blog/holdem-icm). Lo que importa en la mesa es la consecuencia: ==los calls se cierran muchísimo, pero los shoves siguen amplios==, porque ganar sin llegar al showdown (fold equity) vale más que nunca cuando todos los demás juegan con miedo. Recuerda una frase: **cierra tus calls antes de cerrar tus shoves.**
+No necesitas hacer las cuentas en vivo — para eso está nuestra [calculadora de ICM](/en/calculator), y el desglose completo vive en la [guía de ICM](/es/blog/holdem-icm). Lo que importa en la mesa es la consecuencia: ==los calls se cierran muchísimo, pero los shoves siguen amplios==, porque ganar sin llegar al showdown (fold equity) vale más que nunca cuando todos los demás juegan con miedo. Recuerda una frase: **cierra tus calls antes de cerrar tus shoves.**
 
 ---
 
@@ -126,7 +126,7 @@ Aquí va la parte útil: la equity que necesitas para quedar break-even en un ca
 
 </div>
 
-Así que un coin flip con chip-EV que tomarías al 50% se convierte en un ==fold claro== cuando tu bubble factor es 1.5 y solo tienes 50% — ahora necesitas 60%. Los bubble factors suelen alcanzar su pico en torno a ==1.5–1.7== en las burbujas de premios y de mesa final, y luego bajan una vez que estás en premios. Mete tus propios stacks y premios en la [calculadora de ICM](/es/calculator) para ver tu número real en un spot.
+Así que un coin flip con chip-EV que tomarías al 50% se convierte en un ==fold claro== cuando tu bubble factor es 1.5 y solo tienes 50% — ahora necesitas 60%. Los bubble factors suelen alcanzar su pico en torno a ==1.5–1.7== en las burbujas de premios y de mesa final, y luego bajan una vez que estás en premios. Mete tus propios stacks y premios en la [calculadora de ICM](/en/calculator) para ver tu número real en un spot.
 
 ---
 
@@ -225,7 +225,7 @@ El motor detrás de todo esto es el [ICM](/es/blog/holdem-icm); la disciplina de
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Cuándo foldear en póker</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">La disciplina que exige la burbuja</div>
   </a>
-  <a href="/es/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/en/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Herramienta gratis</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Calculadora de ICM</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Encuentra tu número real de bubble factor</div>

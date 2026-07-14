@@ -403,7 +403,7 @@ Para aprender, empieza con fichas sin valor. Para pequeñas partidas caseras con
 
 ### ¿Existe una escalera baja en el Texas Hold'em?
 
-Sí. A-2-3-4-5 es una escalera válida y suele llamarse la rueda ("the wheel"). Es la escalera más baja posible. El As no puede dar la vuelta con K-Q-J-10-9.
+Sí. A-2-3-4-5 es una escalera válida y suele llamarse la rueda ("the wheel"). Es la escalera más baja posible. El As no puede hacer de puente: J-Q-K-A-2 no es escalera. El As juega como la carta más alta (A-K-Q-J-10) o la más baja (A-2-3-4-5), nunca en medio.
 
 ### ¿Cuántas manos iniciales posibles hay en el Texas Hold'em?
 

@@ -131,7 +131,7 @@ Volvamos a mi buy-in. Mesa ==b:A♦ 7♣ 2♥ Q♠ 4♦==, sin escalera ni color
 - **A9:** A♠ 9♣ → pareja de ases, mejores cinco ==A♠ A♦ Q♠ 9♣ 7♣==.
 - **AK:** A♥ K♦ → pareja de ases, mejores cinco ==g:A♥ A♦ K♦ Q♠ 7♣==.
 
-Misma pareja otra vez, y la K supera al 9. Peor aún, mi 9 ni siquiera entró en las cinco — la reina de la mesa lo superaba, así que mi "kicker" estaba ==r:muerto== antes de empezar la mano. Eso es la dominación: cuando ligas tu as, muchas veces solo estás pagando un as mayor. Es la razón entera por la que la [tabla de manos iniciales](/es/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") trata a A9 offsuit con mucha más cautela que AK — el kicker es la diferencia entre una mano premium y una trampa.
+Misma pareja otra vez, y la K supera al 9. Peor aún, mi 9 quedó relegado a segundo kicker por la reina de la mesa, y la comparación se zanjó ya en el primer kicker (K contra Q) — así que, para lo que importaba, mi "kicker" estaba ==r:muerto== antes de empezar la mano. Eso es la dominación: cuando ligas tu as, muchas veces solo estás pagando un as mayor. Es la razón entera por la que la [tabla de manos iniciales](/es/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") trata a A9 offsuit con mucha más cautela que AK — el kicker es la diferencia entre una mano premium y una trampa.
 
 ---
 

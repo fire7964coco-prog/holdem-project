@@ -90,7 +90,7 @@ Ahora multiplica cada fila por los pagos y obtienes el valor en dólares de cada
 
 </div>
 
-Ahí lo tienes en números: el líder tiene ==la mitad de las fichas pero solo el 38.4% del dinero==, mientras que el 20% de fichas del stack corto vale el 28.9%. No hace falta calcular esto a mano en la mesa — la [calculadora de ICM](/es/calculator) lo hace al instante — pero ver la maquinaria una vez es lo que hace que la estrategia se te quede.
+Ahí lo tienes en números: el líder tiene ==la mitad de las fichas pero solo el 38.4% del dinero==, mientras que el 20% de fichas del stack corto vale el 28.9%. No hace falta calcular esto a mano en la mesa — la [calculadora de ICM](/en/calculator) lo hace al instante — pero ver la maquinaria una vez es lo que hace que la estrategia se te quede.
 
 ---
 
@@ -145,7 +145,7 @@ Digamos que tres jugadores con el 50% / 30% / 20% de las fichas se reparten una 
 
 </div>
 
-El stack corto obtiene ==$97 más== con un acuerdo por ICM que con un chip chop, porque el ICM le acredita los saltos de premio que ya se ha ganado. Así que la regla es fácil: ==si vas corto, pide un acuerdo por ICM; si eres el líder en fichas, propón un chip chop.== En la práctica el líder en fichas suele negociar un poco *por encima* de su número de ICM (y los stacks cortos aceptan un poco por debajo) a cambio de la certeza de asegurar dinero — eso está bien, siempre que conozcas tu cifra de ICM primero. Pasa tus propios stacks y pagos por la [calculadora de acuerdos por ICM](/es/calculator) antes de aceptar nada.
+El stack corto obtiene ==$97 más== con un acuerdo por ICM que con un chip chop, porque el ICM le acredita los saltos de premio que ya se ha ganado. Así que la regla es fácil: ==si vas corto, pide un acuerdo por ICM; si eres el líder en fichas, propón un chip chop.== En la práctica el líder en fichas suele negociar un poco *por encima* de su número de ICM (y los stacks cortos aceptan un poco por debajo) a cambio de la certeza de asegurar dinero — eso está bien, siempre que conozcas tu cifra de ICM primero. Pasa tus propios stacks y pagos por la [calculadora de acuerdos por ICM](/en/calculator) antes de aceptar nada.
 
 ---
 
@@ -220,7 +220,7 @@ A. La matemática de probabilidad de puestos se suele atribuir a David Harville 
 
 1. **Las fichas no son dinero.** Solo ganas un primer premio, así que el líder en fichas vale menos que su porcentaje de fichas y el stack corto vale más. Ese único desfase es todo el ICM.
 2. **En la fase final, cambia de chip EV a $EV.** Cerca de los saltos de premio, un call necesita equity extra (un risk premium) para ser rentable. El stack medio foldea manos que un cash game pagaría de inmediato.
-3. **Conoce tu número antes de pactar.** Los stacks cortos quieren un acuerdo por ICM, los stacks grandes quieren un chip chop — pasa la [calculadora](/es/calculator) primero.
+3. **Conoce tu número antes de pactar.** Los stacks cortos quieren un acuerdo por ICM, los stacks grandes quieren un chip chop — pasa la [calculadora](/en/calculator) primero.
 
 Desde aquí, mira cómo encaja la presión del ICM en la [estrategia de torneos](/es/blog/holdem-tournament) más amplia, o vuelve a la base con la [equity en póker](/es/blog/holdem-equity) y las [pot odds](/es/blog/holdem-pot-odds).
 
@@ -244,7 +244,7 @@ Desde aquí, mira cómo encaja la presión del ICM en la [estrategia de torneos]
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">La equity en póker, explicada</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">El chip EV es equity en fichas</div>
   </a>
-  <a href="/es/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/en/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Herramienta gratis</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Calculadora de ICM</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Calcula tus propios stacks y acuerdos</div>
