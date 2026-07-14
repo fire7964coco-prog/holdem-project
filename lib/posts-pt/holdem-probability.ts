@@ -81,7 +81,7 @@ Antes de qualquer flop, existem exatamente **1.326 mãos iniciais de duas cartas
 | A-K (do mesmo naipe *ou* de naipes diferentes) | 1 em 83 (1,2%) | — |
 | Quaisquer duas cartas do mesmo naipe | 1 em 4,3 (23,5%) | Quase a cada quarta mão |
 
-Então, da próxima vez que alguém disser "eu nunca pego ases", está mais ou menos certo — você vai receber um par *específico* como os ases só cerca de ==uma vez a cada 221 mãos==. Mas **qualquer** par na mão chega a cada 17 mãos, e é por isso que set mining é uma estratégia de verdade, não fantasia. Quais pares e mãos do mesmo naipe valem a pena jogar de cada posição fica coberto na tabela de mãos iniciais por posição.
+Então, da próxima vez que alguém disser "eu nunca pego ases", está mais ou menos certo — você vai receber um par *específico* como os ases só cerca de ==uma vez a cada 221 mãos==. Mas **qualquer** par na mão chega a cada 17 mãos, e é por isso que set mining é uma estratégia de verdade, não fantasia. Quais pares e mãos do mesmo naipe valem a pena jogar de cada posição fica coberto na [tabela de mãos iniciais por posição](/pt/blog/holdem-starting-hands-chart).
 
 ---
 
@@ -203,6 +203,7 @@ Alguns números existem principalmente para explicar a pior noite da sua vida no
 
 :::readnext[Continue lendo]
 /pt/blog/holdem-hand-rankings | Ranking de mãos de pôquer, do melhor ao pior | /images/holdem-hand-rankings-hero.webp
+/pt/blog/holdem-starting-hands-chart | Quais mãos iniciais realmente jogar | /images/holdem-starting-hands-chart-hero.webp
 :::
 
 ## FAQ
@@ -247,7 +248,7 @@ A. Não há um número fixo único — depende de quantos adversários seguram p
 2. **Projeto de flush até o river: 35%.** Nove outs, regra do 4 → 9 × 4 = 36%.
 3. **Pot odds ganham do feeling.** Se sua chance de acertar for maior que o preço do call, você paga — toda vez.
 
-O pôquer recompensa os jogadores que tornaram isso automático. Aprenda a tabela, treine a regra do 2 e 4, e comece a perguntar "quais são as odds?" *antes* de agir, em vez de depois. Em seguida, ponha a matemática para trabalhar aprendendo quais mãos iniciais jogar de cada posição, ou revise [por que um flush ganha de uma sequência](/pt/blog/holdem-flush-vs-straight) para sempre saber o quanto seus outs valem.
+O pôquer recompensa os jogadores que tornaram isso automático. Aprenda a tabela, treine a regra do 2 e 4, e comece a perguntar "quais são as odds?" *antes* de agir, em vez de depois. Em seguida, ponha a matemática para trabalhar aprendendo [quais mãos iniciais jogar de cada posição](/pt/blog/holdem-starting-hands-chart), ou revise [por que um flush ganha de uma sequência](/pt/blog/holdem-flush-vs-straight) para sempre saber o quanto seus outs valem.
 
 ---
 
@@ -259,6 +260,11 @@ O pôquer recompensa os jogadores que tornaram isso automático. Aprenda a tabel
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Ranking de mãos de pôquer, do melhor ao pior</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">A ordem que essas odds criam — cada mão no ranking</div>
   </a>
+  <a href="/pt/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Mãos Iniciais</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Tabela de mãos iniciais por posição</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Quais dessas 1.326 mãos realmente jogar</div>
+  </a>
   <a href="/pt/blog/holdem-flush-vs-straight" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Confronto de Mãos</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Um flush ganha de uma sequência?</div>
@@ -268,6 +274,11 @@ O pôquer recompensa os jogadores que tornaram isso automático. Aprenda a tabel
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Leitura de Mesa</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Como ler a mesa no Hold'em</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Conte seus outs enxergando cada projeto</div>
+  </a>
+  <a href="/pt/blog/holdem-position-play" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Estratégia</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Como a posição muda tudo</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Quando as odds justificam um call — e quando a posição justifica</div>
   </a>
 </div>
 `.trim(),

@@ -105,7 +105,7 @@ Foldar significa entregar suas cartas e desistir da mão. Você não paga nada n
 
 Sim — você pode foldar a qualquer momento em que a ação estiver com você, mesmo antes de apostar qualquer coisa, e até quando dar check seria de graça. Mas repare na armadilha dessa última parte: **foldar quando você poderia dar check de graça é jogar uma mão fora sem motivo nenhum**. Se ninguém apostou, apenas dê check.
 
-Uma regra de etiqueta do jogo ao vivo: não folde ==fora da sua vez==. Espere a ação chegar até você — foldar antes entrega informação aos jogadores que ainda estão decidindo, e a maioria dos clubes avisa ou penaliza. Saber *quando* foldar é a jogada certa é uma habilidade à parte — é o tema de quando foldar no poker.
+Uma regra de etiqueta do jogo ao vivo: não folde ==fora da sua vez==. Espere a ação chegar até você — foldar antes entrega informação aos jogadores que ainda estão decidindo, e a maioria dos clubes avisa ou penaliza. Saber *quando* foldar é a jogada certa é uma habilidade à parte — é o tema de [quando foldar no poker](/pt/blog/holdem-when-to-fold).
 
 ---
 
@@ -133,7 +133,7 @@ Duas regras do poker ao vivo que vêm junto com o raise:
 1. **Anuncie "raise" antes de mover as fichas.** Disse "call" e depois empurrou mais? Esse extra é um ==string bet==, e o dealer da maioria dos clubes vai considerar apenas um call.
 2. **Um movimento só.** Se você não anunciar, suas fichas precisam entrar em um único movimento para a frente.
 
-*Quanto* você deve aumentar (opens de 2,5x, 3-bets de 3x, sizing pela textura do board) é estratégia, não regra — isso mora no pilar de estratégia do Texas Hold'em.
+*Quanto* você deve aumentar (opens de 2,5x, 3-bets de 3x, sizing pela textura do board) é estratégia, não regra — isso mora no [pilar de estratégia do Texas Hold'em](/pt/blog/holdem-strategy).
 
 ---
 
@@ -156,7 +156,7 @@ All-in significa apostar ==todas as fichas que você ainda tem==. Dá para fazer
 
 Se o seu all-in for *menor* que a aposta atual, você não está foldado: você simplesmente disputa um ==pote principal== limitado à sua contribuição, enquanto as fichas extras dos stacks maiores formam um ==pote paralelo== que você não pode ganhar. E um all-in *menor que um min-raise completo* em geral não reabre a ação de raise para quem já agiu — uma regra sutil que surpreende até os regulares.
 
-A mecânica completa — a conta do pote paralelo, quem mostra primeiro, table stakes — está em [regras de all-in e potes paralelos](/pt/blog/holdem-all-in-rules), e o que acontece quando mãos em all-in empatam é assunto das regras de pote dividido.
+A mecânica completa — a conta do pote paralelo, quem mostra primeiro, table stakes — está em [regras de all-in e potes paralelos](/pt/blog/holdem-all-in-rules), e o que acontece quando mãos em all-in empatam é assunto das [regras de pote dividido e chop](/pt/blog/holdem-split-pot-rules).
 
 ---
 
@@ -164,9 +164,9 @@ A mecânica completa — a conta do pote paralelo, quem mostra primeiro, table s
 
 Este guia cobre o que cada ação *é* e quando ela é *legal*. Qual delas escolher — quando apostar, quando um call é lucrativo, quando uma mão boa precisa ser foldada — é outra árvore de habilidades:
 
-- O framework de cada decisão: estratégia de Texas Hold'em — as 5 decisões
+- O framework de cada decisão: [estratégia de Texas Hold'em — as 5 decisões](/pt/blog/holdem-strategy)
 - Avaliar primeiro a força bruta da sua mão: [ranking de mãos de poker](/pt/blog/holdem-hand-rankings)
-- Por que a sua cadeira muda tudo: posições no poker explicadas
+- Por que a sua cadeira muda tudo: [posições no poker explicadas](/pt/blog/holdem-positions)
 
 Uma regra de bolso que economiza dinheiro de verdade para o iniciante até lá: ==se a mão não é forte o bastante para aumentar, foldar geralmente é melhor que pagar.==
 
@@ -196,6 +196,7 @@ Diante de uma aposta de $10, um jogador joga em silêncio uma única ficha de $1
 
 :::readnext[Continue lendo]
 /pt/blog/holdem-all-in-rules | Regras de all-in e potes paralelos | /images/holdem-all-in-rules-hero.webp
+/pt/blog/holdem-strategy | Estratégia de Texas Hold'em: as 5 decisões | /images/holdem-strategy-hero.webp
 :::
 
 ## Perguntas frequentes
@@ -230,7 +231,7 @@ A. É colocar fichas em vários movimentos, ou dizer "call" e depois acrescentar
 
 **Q. O que significa dar limp no poker?**
 
-A. Dar limp é entrar no pote no pré-flop apenas pagando o big blind em vez de aumentar. É permitido, mas costuma ser jogo fraco — vale entender por que o limp custa dinheiro e quando ele de fato faz sentido.
+A. Dar limp é entrar no pote no pré-flop apenas pagando o big blind em vez de aumentar. É permitido, mas costuma ser jogo fraco — veja [por que o limp custa dinheiro](/pt/blog/holdem-limping) e quando ele de fato faz sentido.
 
 ---
 

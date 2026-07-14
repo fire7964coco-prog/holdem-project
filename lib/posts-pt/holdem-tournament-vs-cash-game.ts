@@ -29,7 +29,7 @@ Quase todo jogador novo de Hold'em chega à mesma dúvida:
 
 Por fora, parece o mesmo jogo. Você recebe duas cartas fechadas, vê cinco cartas comunitárias e passa por quatro rodadas de aposta do pré-flop ao river. Mas, estrategicamente, são quase dois mundos diferentes. No cash game, suas fichas são dinheiro. No torneio, suas fichas são sua vida no evento.
 
-Este guia compara ==torneio de poker vs cash game== do jeito que um iniciante precisa: valor das fichas, estrutura de blinds, tempo, variância, bankroll, ICM, profundidade de stack e qual formato escolher primeiro.
+Este guia compara ==torneio de poker vs cash game== do jeito que um iniciante precisa: valor das fichas, estrutura de blinds, tempo, variância, bankroll, ICM, profundidade de stack e qual formato escolher primeiro. Se os torneios em si ainda são um mistério, leia primeiro [como funcionam os torneios de pôquer — buy-ins, níveis de blind e o fluxo do Day 1](/pt/blog/holdem-tournament); este artigo compara os dois formatos em vez de repetir aquele guia de estrutura.
 
 ![Mesa de Texas Hold'em mostrando como torneio e cash game mudam o valor das fichas e a estratégia](/images/tournament-table-action.webp "Comparação entre torneio de poker e cash game")
 
@@ -38,7 +38,7 @@ Este guia compara ==torneio de poker vs cash game== do jeito que um iniciante pr
 - **Cash game:** fichas valem dinheiro real, os blinds ficam fixos e você pode sair quando quiser.
 - **Torneio:** você paga um buy-in, recebe fichas de torneio e joga até ser eliminado ou vencer.
 - **Cash game ensina fundamentos mais rápido** porque os stacks são mais profundos e os erros aparecem com mais clareza.
-- **Torneios oferecem upside maior**, mas têm mais variância, sessões longas e pressão de ICM.
+- **Torneios oferecem upside maior**, mas têm mais variância, sessões longas e [pressão de ICM](/pt/blog/holdem-icm).
 - **Para a maioria dos iniciantes, cash game é o começo mais limpo.** Adicione torneios pequenos quando o básico estiver automático.
 
 ---
@@ -49,7 +49,7 @@ A forma mais simples de dizer é:
 
 **Cash game é tomar decisões lucrativas com dinheiro real na mesa. Torneio é sobreviver tempo suficiente para entrar na premiação e subir colocações.**
 
-No cash game, se você entra com $200, suas fichas representam $200. Se sobe para $450, pode levantar com $450. Se cai para $120, é isso que restou. Cada ficha tem valor monetário direto.
+No cash game, se você entra com $200, suas fichas representam $200. Se sobe para $450, pode levantar com $450. Se cai para $120, é isso que restou. Cada ficha tem valor monetário direto. A casa tira um pequeno corte de cada pote, então vale entender [como funciona o rake no pôquer](/pt/blog/holdem-rake) antes de escolher um jogo.
 
 No torneio, você pode pagar $100 de buy-in e receber 20.000 fichas. Elas não valem $20.000, e você não pode trocá-las por dinheiro no meio do evento. Elas importam porque ajudam você a sobreviver, pressionar adversários e subir na estrutura de premiação.
 
@@ -91,7 +91,7 @@ Se você passa de 10% para 20% das fichas, sua chance de ganhar dinheiro melhora
 
 ## Blinds fixos ou blinds crescentes?
 
-Em um cash game $1/$2, os blinds continuam $1/$2. Uma hora depois, igual. Três horas depois, igual. Você pode esperar spots melhores, recarregar se precisar e continuar jogando deep stack.
+Em um cash game $1/$2, os blinds continuam $1/$2. Uma hora depois, igual. Três horas depois, igual. Você pode esperar spots melhores, recarregar se precisar e continuar jogando deep stack. Se o small blind, o big blind ou a "option" ainda te confundem, [o que são de verdade os blinds no pôquer](/pt/blog/holdem-blind-meaning) cobre tudo isso num lugar só.
 
 No torneio, os blinds sobem por níveis. Um stack de 100BB no início pode virar 25BB mais tarde sem você perder uma mão. Depois pode virar 12BB. Chega uma hora em que esperar também custa caro.
 
@@ -164,7 +164,7 @@ A maior divisão estratégica entre cash game e torneio é o ==ICM==.
 
 ICM significa **Independent Chip Model**. Ele estima o valor em dinheiro real do seu stack de torneio com base nos stacks, nos jogadores restantes e na estrutura de premiação. Cash game não precisa de ICM porque as fichas já são dinheiro.
 
-ICM pesa mais na bolha e na mesa final. Imagine que você está na bolha com stack médio. Um jogador dá all-in e você tem AKo. No cash game, se pot odds e equity forem boas, você pode pagar. No torneio, perder a mão pode significar sair com $0, enquanto ganhar não dobra sua payout equity.
+ICM pesa mais [na bolha](/pt/blog/holdem-bubble) e na mesa final. Imagine que você está na bolha com stack médio. Um jogador dá all-in e você tem AKo. No cash game, se pot odds e equity forem boas, você pode pagar. No torneio, perder a mão pode significar sair com $0, enquanto ganhar não dobra sua payout equity — então um call que dá lucro no cash game pode ser um fold claro sob ICM. Um parágrafo não faz justiça à matemática — os exemplos completos estão em [ICM explicado: por que fichas de torneio não são dinheiro](/pt/blog/holdem-icm).
 
 | Fator de decisão | Cash game | Torneio |
 |------|------|------|
@@ -181,7 +181,7 @@ ICM pesa mais na bolha e na mesa final. Imagine que você está na bolha com sta
 
 Cash game costuma recompensar habilidade deep-stack. Você joga muito em torno de 100BB, então decisões no flop, turn e river importam bastante. É preciso entender value bet, blefe, textura do board, posição e ranges.
 
-Torneios começam deep, mas frequentemente viram poker de short stack. Com 25BB, 15BB ou 10BB, decisões pré-flop ficam muito mais importantes. Em vez de planejar três streets, você escolhe entre abrir, reshove, pagar all-in ou desistir.
+Torneios começam deep, mas frequentemente viram poker de short stack. Uma [tabela de starting hands](/pt/blog/holdem-starting-hands-chart) disciplinada é a base nos dois formatos — mas o torneio te tira dela conforme os stacks encurtam e os payjumps se aproximam. Com 25BB, 15BB ou 10BB, decisões pré-flop ficam muito mais importantes. Em vez de planejar três streets, você escolhe entre abrir, reshove, pagar all-in ou desistir — os ranges exatos estão em [estratégia de short stack: quando dar push ou fold](/pt/blog/holdem-short-stack).
 
 | Profundidade | Mais comum em | Skill principal |
 |------|------|------|
@@ -209,7 +209,7 @@ Torneios também são ótimos se você gosta de competição e aguenta variânci
 | Fazer sessões curtas | Cash game |
 | Estudar ICM e bolha | Torneio |
 
-Se você é totalmente novo, aprenda primeiro [como uma mão de Texas Hold'em funciona](/pt/blog/holdem-game-order) e [a ordem das mãos de poker](/pt/blog/holdem-hand-rankings). Escolher formato fica muito mais fácil quando as regras básicas são automáticas.
+Se você é totalmente novo, aprenda primeiro [como uma mão de Texas Hold'em funciona](/pt/blog/holdem-game-order) e [a ordem das mãos de poker](/pt/blog/holdem-hand-rankings). Escolher formato fica muito mais fácil quando as regras básicas são automáticas — e se você tende aos torneios, veja [como funcionam os torneios de pôquer](/pt/blog/holdem-tournament "thumb:/images/holdem-tournament-hero.webp") para buy-ins, níveis de blind e o fluxo do Day 1.
 
 ---
 
@@ -228,6 +228,11 @@ Antes de sentar em um clube ou evento local, pergunte qual formato está rodando
 Se você não consegue explicar a estrutura, não dê buy-in ainda. Pergunte primeiro, jogue depois.
 
 ---
+
+:::readnext[Continue lendo]
+/pt/blog/holdem-pot-odds | Como calcular pot odds | /images/holdem-pot-odds-hero.webp
+/pt/blog/holdem-probability | Tabela de odds e probabilidade do pôquer | /images/holdem-probability-hero.webp
+:::
 
 ## FAQ
 
@@ -264,5 +269,32 @@ A. Regra simples: 20-40 buy-ins para cash game e 50-100+ buy-ins para torneios. 
 3. **Bankroll e tempo importam.** Se você não aguenta sessões longas ou downswings longos, cash game costuma ser o melhor começo.
 
 Domine os fundamentos de cash primeiro, depois adicione torneios quando estiver pronto para blinds crescentes, pressão de ICM e a montanha-russa emocional de um deep run.
+
+---
+
+## Posts relacionados
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
+  <a href="/pt/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Torneios</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Como funcionam os torneios de pôquer</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Buy-ins, níveis de blind, formatos e um checklist de Day 1</div>
+  </a>
+  <a href="/pt/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Fluxo do Jogo</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Ordem de jogo no Texas Hold'em</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Do pré-flop ao showdown — o fluxo completo da mão, passo a passo</div>
+  </a>
+  <a href="/pt/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Ranking de Mãos</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Ranking de mãos do pôquer — da melhor à pior</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">As 10 mãos com odds, exemplos e quebra-cabeças de board</div>
+  </a>
+  <a href="/pt/blog/holdem-blind-meaning" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Blinds</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">O que são os blinds no pôquer?</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">SB, BB, roubo de blind e option — tudo explicado</div>
+  </a>
+</div>
 `.trim(),
 };

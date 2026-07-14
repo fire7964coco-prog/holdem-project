@@ -182,7 +182,7 @@ A. O pote se quebra em um pote principal e potes paralelos; cada um é entregue 
 
 **Q. Um chop de torneio é a mesma coisa que um pote dividido?**
 
-A. Não — mesma palavra, duas coisas diferentes. Um pote dividido no showdown é automático: quando as mãos empatam, o dealer reparte as fichas. Um "chop" de torneio é um acordo voluntário entre os jogadores restantes para repartir a premiação, geralmente por contagem de fichas ou ICM, e só acontece se todos concordarem. Veja [torneio vs cash game](/pt/blog/holdem-tournament-vs-cash-game) para saber como os pagamentos de torneio diferem.
+A. Não — mesma palavra, duas coisas diferentes. Um pote dividido no showdown é automático: quando as mãos empatam, o dealer reparte as fichas. Um "chop" de torneio é um acordo voluntário entre os jogadores restantes para repartir a premiação, geralmente por contagem de fichas ou [ICM](/pt/blog/holdem-icm), e só acontece se todos concordarem. Veja [torneio vs cash game](/pt/blog/holdem-tournament-vs-cash-game) para saber como os pagamentos de torneio diferem.
 
 ---
 

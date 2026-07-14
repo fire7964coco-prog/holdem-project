@@ -87,7 +87,7 @@ Os dois blinds são pagos **antes da distribuição das cartas**, e o botão do 
 | Ordem pré-flop | Age em penúltimo | Age **por último** (a "option") |
 | Ordem pós-flop | Age **primeiro** (uma desvantagem) | Age em segundo |
 
-> **Atenção:** antes do flop, a ação começa no jogador à esquerda do big blind e o BB age por último — ele vê a decisão de todo mundo antes. Do flop em diante a ordem zera e os blinds agem cedo. A sequência street por street está mapeada em [a ordem de jogo no Texas Hold'em](/pt/blog/holdem-game-order), e os nomes de cada assento ao redor do botão são assunto de guia de posições no pôquer.
+> **Atenção:** antes do flop, a ação começa no jogador à esquerda do big blind e o BB age por último — ele vê a decisão de todo mundo antes. Do flop em diante a ordem zera e os blinds agem cedo. A sequência street por street está mapeada em [a ordem de jogo no Texas Hold'em](/pt/blog/holdem-game-order), e os nomes de cada assento ao redor do botão são assunto de [posições no pôquer explicadas](/pt/blog/holdem-positions).
 
 ---
 
@@ -111,15 +111,15 @@ Os stakes se escrevem **SB/BB**. Uma mesa "$1/$2" significa small blind de $1 e 
 </div>
 
 - **Cash game:** os blinds ficam ==g:**fixos**==. Sente em uma mesa $1/$2 e ela é $1/$2 até você sair. (Para uma comparação mais profunda, veja [torneios vs cash games](/pt/blog/holdem-tournament-vs-cash-game).)
-- **Torneio:** os blinds ==r:**sobem** no relógio== (ex.: 25/50 → 50/100 → 100/200), então a pressão cresce conforme a noite avança. Níveis de blinds, o clock e as folhas de estrutura são assunto de como funcionam os torneios de pôquer.
+- **Torneio:** os blinds ==r:**sobem** no relógio== (ex.: 25/50 → 50/100 → 100/200), então a pressão cresce conforme a noite avança. Níveis de blinds, o clock e as folhas de estrutura são assunto de [como funcionam os torneios de pôquer](/pt/blog/holdem-tournament).
 
 ---
 
 ## O que é o big blind ante? (E o straddle)
 
-A partir dos estágios iniciais ou intermediários da maioria dos torneios, entra o **ante** — uma pequena aposta obrigatória extra, cobrada em toda mão além dos blinds, que engorda o pote e recompensa a agressão. A versão moderna mais comum é o **big blind ante**: em vez de todo mundo jogar fichas, ==o big blind paga um ante — normalmente igual a um big blind — pela mesa inteira==, o que mantém o jogo rápido e organizado. Quando e como os antes entram faz parte da estrutura de blinds do torneio.
+A partir dos estágios iniciais ou intermediários da maioria dos torneios, entra o **ante** — uma pequena aposta obrigatória extra, cobrada em toda mão além dos blinds, que engorda o pote e recompensa a agressão. A versão moderna mais comum é o **big blind ante**: em vez de todo mundo jogar fichas, ==o big blind paga um ante — normalmente igual a um big blind — pela mesa inteira==, o que mantém o jogo rápido e organizado. Quando e como os antes entram faz parte da [estrutura de blinds do torneio](/pt/blog/holdem-tournament).
 
-Mais um primo das apostas obrigatórias que você vai ver em cash games: o **straddle** — um blind extra *voluntário* (normalmente 2x o BB), pago pelo assento à esquerda do big blind, que aumenta temporariamente os stakes daquela mão. Ele tem regras, tipos e ordem de ação próprios — o detalhamento completo fica para o guia sobre o que é um straddle e se vale a pena pagar um.
+Mais um primo das apostas obrigatórias que você vai ver em cash games: o **straddle** — um blind extra *voluntário* (normalmente 2x o BB), pago pelo assento à esquerda do big blind, que aumenta temporariamente os stakes daquela mão. Ele tem regras, tipos e ordem de ação próprios — o detalhamento completo fica em [o que é um straddle e se vale a pena pagar um](/pt/blog/holdem-straddle "thumb:/images/holdem-straddle-hero.webp").
 
 ---
 
@@ -140,8 +140,8 @@ Ao sentar em um cash game ao vivo, normalmente você não joga de graça: ou **p
 ![Pilha de fichas caindo em direção ao pote em uma mesa de pôquer — um push de roubo de blinds a partir do botão](/images/holdem-blind-steal.webp)
 
 - **Small blind: simplifique.** Penúltimo no pré-flop mas **primeiro a agir** depois do flop — a linha limpa para iniciante é **aumentar ou foldar**, não pagar. Dar limp e levar pressão fora de posição é um vazamento constante de fichas.
-- **Big blind: defenda com as odds.** Você já pôs uma aposta completa, então pode pagar aumentos com um range mais largo do que qualquer outro assento — com lucro. Contra um open de 2,5 BB (com o small blind foldando), você paga 1,5 BB para um pote de 4 BB — cerca de 2,7 para 1, ou seja, aproximadamente 27% de equity já empata o call. Essa matemática são as pot odds, e é por isso que existe a "defesa de big blind".
-- **Posição final: o roubo.** Quando todo mundo folda até o botão ou o cutoff, um aumento cujo objetivo é levar só os dois blinds é um **roubo de blinds (blind steal)** — e re-aumentar de volta é um **re-steal**. Tamanhos de steal, ranges por assento e quão largo defender são tópicos de estratégia, cobertos a fundo em guias de jogo em posição vs fora de posição.
+- **Big blind: defenda com as odds.** Você já pôs uma aposta completa, então pode pagar aumentos com um range mais largo do que qualquer outro assento — com lucro. Contra um open de 2,5 BB (com o small blind foldando), você paga 1,5 BB para um pote de 4 BB — cerca de 2,7 para 1, ou seja, aproximadamente 27% de equity já empata o call. Essa matemática são as [pot odds](/pt/blog/holdem-pot-odds), e é por isso que existe a "defesa de big blind".
+- **Posição final: o roubo.** Quando todo mundo folda até o botão ou o cutoff, um aumento cujo objetivo é levar só os dois blinds é um **roubo de blinds (blind steal)** — e re-aumentar de volta é um **re-steal**. Tamanhos de steal, ranges por assento e quão largo defender são tópicos de estratégia, cobertos a fundo no [guia de jogo em posição vs fora de posição](/pt/blog/holdem-position-play).
 
 ---
 
@@ -192,27 +192,27 @@ A. Não exatamente — "os blinds" se refere ao small blind e ao big blind junto
 2. O **big blind é a unidade da mesa** — raises, stacks e a pressão do torneio são todos medidos em BBs.
 3. Jogue os blinds com cuidado: **aumente ou folde no small blind**, **defenda o big blind com as pot odds** e estude os roubos de posição final quando todos foldarem até você.
 
-Novo no jogo como um todo? O [guia de regras do Texas Hold'em para iniciantes](/pt/blog/texas-holdem-rules-for-beginners "thumb:/images/rules-texas-holdem.webp") cobre a base, e [a ordem de jogo em uma mão](/pt/blog/holdem-game-order) mostra exatamente quando cada blind age — e vale lembrar que o seu assento na mesa, não só os blinds, molda cada decisão.
+Novo no jogo como um todo? O [guia de regras do Texas Hold'em para iniciantes](/pt/blog/texas-holdem-rules-for-beginners "thumb:/images/rules-texas-holdem.webp") cobre a base, [a ordem de jogo em uma mão](/pt/blog/holdem-game-order) mostra exatamente quando cada blind age, e [posições no pôquer explicadas](/pt/blog/holdem-positions) cobre como o seu assento na mesa — não só os blinds — molda cada decisão.
 
 ---
 
 ## Posts relacionados
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
+  <a href="/pt/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Posições</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Posições no pôquer explicadas</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Do UTG ao botão, 6-max vs 9-max, ranges de abertura</div>
+  </a>
   <a href="/pt/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Ordem de jogo</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">A ordem de jogo no Texas Hold'em</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Sequência de ação: pré-flop → flop → turn → river</div>
   </a>
-  <a href="/pt/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Ações de aposta</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Check, bet, call, raise e fold</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Todas as ações de aposta do Hold'em, explicadas</div>
-  </a>
-  <a href="/pt/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Formatos</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Torneio vs cash game</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Blinds fixos vs crescentes, buy-ins e estratégia</div>
+  <a href="/pt/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Torneios</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Como funcionam os torneios de pôquer</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Níveis de blinds, antes, premiações e formatos</div>
   </a>
 </div>
 `.trim(),

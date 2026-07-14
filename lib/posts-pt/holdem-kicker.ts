@@ -128,7 +128,7 @@ De volta ao meu buy-in. Mesa ==b:A♦ 7♣ 2♥ Q♠ 4♦==, sem sequência nem 
 - **A9:** A♠ 9♣ → par de ases, melhores cinco ==A♠ A♦ Q♠ 9♣ 7♣==.
 - **AK:** A♥ K♦ → par de ases, melhores cinco ==g:A♥ A♦ K♦ Q♠ 7♣==.
 
-Mesmo par de novo — e meu 9 nem teve direito a voto. Ele foi empurrado para segundo kicker pela dama da mesa, e a comparação se resolveu no primeiro kicker: o K dele contra a Q da mesa — então, para todos os efeitos, meu "kicker" estava ==r:morto== antes de a mão começar. Isso é dominação: quando você acerta seu ás, muitas vezes está só pagando um ás maior. É a razão inteira de o tabela de mãos iniciais tratar A9 offsuit com muito mais cautela do que AK — o kicker é a diferença entre uma mão premium e uma armadilha.
+Mesmo par de novo — e meu 9 nem teve direito a voto. Ele foi empurrado para segundo kicker pela dama da mesa, e a comparação se resolveu no primeiro kicker: o K dele contra a Q da mesa — então, para todos os efeitos, meu "kicker" estava ==r:morto== antes de a mão começar. Isso é dominação: quando você acerta seu ás, muitas vezes está só pagando um ás maior. É a razão inteira de a [tabela de mãos iniciais](/pt/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") tratar A9 offsuit com muito mais cautela do que AK — o kicker é a diferença entre uma mão premium e uma armadilha.
 
 ---
 
@@ -207,6 +207,11 @@ Acerte o kicker e uma categoria inteira de mãos "como foi que eu perdi essa?" d
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Ranking de Mãos</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Como os Empates São Desfeitos</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Ordem completa de desempate de cada mão</div>
+  </a>
+  <a href="/pt/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Mãos Iniciais</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Tabela de Mãos Iniciais</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Por que ases de kicker fraco são foldados</div>
   </a>
   <a href="/pt/blog/holdem-reading-the-board" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Leitura da Mesa</div>

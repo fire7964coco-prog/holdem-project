@@ -69,7 +69,7 @@ Em seguida, o dealer revela cinco cartas compartilhadas no centro da mesa:
 
 </div>
 
-==r:Você **não** é obrigado a usar as duas cartas da sua mão.== Dá para usar duas, uma, ou até nenhuma, se a própria mesa formar a melhor mão — uma habilidade chamada ler a mesa.
+==r:Você **não** é obrigado a usar as duas cartas da sua mão.== Dá para usar duas, uma, ou até nenhuma, se a própria mesa formar a melhor mão — uma habilidade chamada [ler a mesa](/pt/blog/holdem-reading-the-board).
 
 Por exemplo:
 
@@ -79,7 +79,7 @@ Por exemplo:
 | 8♠ 8♦ | K♣ 8♥ 4♠ 4♦ J♣ | Full house de oitos com quatros |
 | 2♣ 3♦ | A♠ K♠ Q♠ J♠ 10♠ | Royal flush na mesa |
 
-Se o ranking de mãos ainda é novidade, abra o [ranking de mãos do Texas Hold'em](/pt/blog/holdem-hand-rankings) antes de jogar. Saber se um flush ganha de uma sequência é mais importante do que decorar estratégia avançada.
+Se o ranking de mãos ainda é novidade, abra o [ranking de mãos do Texas Hold'em](/pt/blog/holdem-hand-rankings) antes de jogar. Saber [se um flush ganha de uma sequência](/pt/blog/holdem-flush-vs-straight) é mais importante do que decorar estratégia avançada.
 
 ---
 
@@ -137,7 +137,7 @@ O truque fácil para memorizar:
 
 ==**Antes do flop, olhe à esquerda do big blind. Depois do flop, olhe à esquerda do botão.**==
 
-É por isso que ==g:o botão é uma posição tão poderosa==. ==O botão geralmente age por último no flop, no turn e no river==, o que significa ver o que todos os outros fazem antes de decidir. Um guia completo de cada assento — do UTG ao botão, 6-max vs 9-max e o range de abertura de cada posição — fica no guia de posições do pôquer.
+É por isso que ==g:o botão é uma posição tão poderosa==. ==O botão geralmente age por último no flop, no turn e no river==, o que significa ver o que todos os outros fazem antes de decidir. Um guia completo de cada assento — do UTG ao botão, 6-max vs 9-max e o range de abertura de cada posição — fica no [guia de posições do pôquer](/pt/blog/holdem-positions).
 
 ---
 
@@ -244,7 +244,7 @@ Posição significa **quando você age em cada rodada de apostas**. Agir mais ta
 | Esquerda do dealer | SB (Small Blind) | 8º pré, 1º pós | Pior assento — age primeiro em toda street pós-flop |
 | Dois à esquerda do dealer | BB (Big Blind) | Último pré (9º), 2º pós | Tem a opção de aumentar no pré-flop; fora de posição no pós-flop |
 
-==g:O botão é o assento mais lucrativo da mesa.== Você age por último no flop, no turn e no river — ou seja, todo jogador mostra a força da mão antes de você decidir.
+==g:O botão é o assento mais lucrativo da mesa.== Você age por último no flop, no turn e no river — ou seja, todo jogador mostra a força da mão antes de você decidir. Para um guia completo de posições, veja [posições no pôquer: do UTG ao botão](/pt/blog/holdem-positions).
 
 ---
 
@@ -283,7 +283,7 @@ Boas mãos iniciais para começar:
 
 </div>
 
-Para a tabela completa de 169 mãos organizada por posição (do UTG ao botão), veja a tabela de mãos iniciais por posição. E antes de usar as mãos iniciais direito, você precisa conhecer suas [ações de aposta — check, pagar, aumentar, foldar](/pt/blog/holdem-betting-actions).
+Para a tabela completa de 169 mãos organizada por posição (do UTG ao botão), veja a [tabela de mãos iniciais por posição](/pt/blog/holdem-starting-hands-chart). E antes de usar as mãos iniciais direito, você precisa conhecer suas [ações de aposta — check, pagar, aumentar, foldar](/pt/blog/holdem-betting-actions).
 
 ---
 
@@ -350,7 +350,7 @@ Ranking básico de mãos, da mais forte à mais fraca (com a frequência aproxim
 | 9 | Par | 43,8% — a mão mais frequente no showdown |
 | 10 | Carta alta | 17,4% — a mão mais fraca no showdown; ganha principalmente no blefe |
 
-Se dois jogadores têm o mesmo tipo de mão, comparam-se as cartas relevantes mais altas — são as regras de kicker e desempate. Se as melhores cinco cartas forem exatamente iguais, o pote é dividido.
+Se dois jogadores têm o mesmo tipo de mão, comparam-se as cartas relevantes mais altas — são as [regras de kicker e desempate](/pt/blog/holdem-tiebreak-rules). Se as melhores cinco cartas forem exatamente iguais, o pote é [dividido](/pt/blog/holdem-split-pot-rules).
 
 ---
 
@@ -457,6 +457,11 @@ Como próximo passo, revise o [ranking de mãos do Texas Hold'em](/pt/blog/holde
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Ranking de mãos</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Mãos de pôquer — da melhor à pior</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">As 10 mãos com probabilidades, exemplos e problemas de mesa</div>
+  </a>
+  <a href="/pt/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Posições</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Posições no pôquer: do UTG ao botão</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Por que o botão vence — mapa de assentos e ranges de abertura</div>
   </a>
   <a href="/pt/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Apostas</div>

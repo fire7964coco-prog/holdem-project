@@ -109,7 +109,7 @@ O mesmo call de $50, decisões opostas — e as cartas nunca mudaram. O que mudo
 
 </div>
 
-Duas forças definem o número. **Frequência:** um gutshot acerta metade das vezes de um flush draw, então precisa que o pagamento seja mais ou menos duas vezes maior para empatar. **Disfarce:** um set escondido recebe muito mais que um four-flush óbvio, porque o adversário não consegue te colocar nele — que é por que os sets toleram sua baixa taxa de acerto. O nut flush draw vale muito mais que um baby flush draw pelo mesmo motivo: ele recebe *e* não perde quando acerta.
+Duas forças definem o número. **Frequência:** um gutshot acerta metade das vezes de um flush draw, então precisa que o pagamento seja mais ou menos duas vezes maior para empatar. **Disfarce:** um set escondido recebe muito mais que um four-flush óbvio, porque o adversário não consegue te colocar nele — que é por que os sets toleram sua baixa taxa de acerto. O [nut flush draw vale muito mais que um baby flush draw](/pt/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") pelo mesmo motivo: ele recebe *e* não perde quando acerta.
 
 ---
 
@@ -242,6 +242,11 @@ Acerte isso e você para de torrar fichas em calls esperançosos enquanto ainda 
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Odds & Matemática</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Odds de projetos e de flopar X</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Com que frequência um set, flush ou sequência realmente cai</div>
+  </a>
+  <a href="/pt/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Mãos Iniciais</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Tabela de mãos iniciais por posição</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Com quais mãos especulativas vale a pena projetar</div>
   </a>
 </div>
 `.trim(),

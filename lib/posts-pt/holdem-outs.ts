@@ -18,7 +18,7 @@ export const POST: Post = {
   content: `
 No meu primeiro ano na mesa eu "jogava meus projetos" sem nunca contá-los. Um projeto de flush e um gutshot pareciam a mesma coisa — ambos eram "cartas que podiam vir" — então eu pagava igual nos dois e me perguntava por que continuava perdendo. O conserto não foi um curso de estratégia. Foi um hábito de cinco minutos: ==parar e de fato contar as cartas que me salvam.==
 
-Esse hábito se chama contar **outs** — a verdadeira resposta do pôquer para "contar cartas" — e é a única habilidade que está por baixo de toda decisão de odds no pôquer. Antes de perguntar "esse call é lucrativo?" você tem que responder "quantas cartas ganham a mão para mim?" Este guia é a metade da contagem — a [tabela de odds e probabilidade do pôquer](/pt/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp") é a referência por trás dela, e [pot odds](/pt/blog/holdem-pot-odds) é o que você faz com o número depois de tê-lo.
+Esse hábito se chama contar **outs** — [a verdadeira resposta do pôquer para "contar cartas"](/pt/blog/holdem-card-counting "thumb:/images/holdem-card-counting-hero.webp") — e é a única habilidade que está por baixo de toda decisão de odds no pôquer. Antes de perguntar "esse call é lucrativo?" você tem que responder "quantas cartas ganham a mão para mim?" Este guia é a metade da contagem — a [tabela de odds e probabilidade do pôquer](/pt/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp") é a referência por trás dela, e [pot odds](/pt/blog/holdem-pot-odds) é o que você faz com o número depois de tê-lo.
 
 ---
 
@@ -238,6 +238,11 @@ Acerte a contagem e o resto da matemática do pôquer se encaixa. Leve sua conta
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Leitura de Mesa</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Como ler a mesa</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Enxergue todo projeto e conte outs limpos</div>
+  </a>
+  <a href="/pt/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Mãos Iniciais</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Tabela de mãos iniciais por posição</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Entre em potes com mãos que valem a pena projetar</div>
   </a>
 </div>
 `.trim(),

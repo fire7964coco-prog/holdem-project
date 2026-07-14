@@ -37,7 +37,7 @@ Over-limp / SB | Os spots em que é ok de verdade
 
 **Limpar é entrar no pote no pré-flop pagando o valor exato do big blind — sem aumento.** Você coloca o mínimo para ver um flop. E o mais importante: limpar só se aplica quando *ninguém aumentou ainda*. Se alguém já aumentou e você iguala, isso é um **call** (pagar), não um limp. A palavra descreve especificamente pegar o caminho passivo e mais barato para dentro de um pote não aumentado.
 
-Vale separar dois termos que as pessoas confundem. Um **limper** é quem entra em potes não aumentados pagando o big blind. Uma **calling station** é um jogador que paga apostas demais no pós-flop, no flop, no turn e no river. Muitas vezes descrevem o mesmo jogador loose-passivo, mas são hábitos diferentes — um é sobre como você *entra* nos potes, o outro sobre como você *continua* neles. Este glossário de termos de pôquer resolve o resto do vocabulário se alguma coisa te confundir.
+Vale separar dois termos que as pessoas confundem. Um **limper** é quem entra em potes não aumentados pagando o big blind. Uma **calling station** é um jogador que paga apostas demais no pós-flop, no flop, no turn e no river. Muitas vezes descrevem o mesmo jogador loose-passivo, mas são hábitos diferentes — um é sobre como você *entra* nos potes, o outro sobre como você *continua* neles. Este glossário de [termos de pôquer](/pt/blog/holdem-glossary) resolve o resto do vocabulário se alguma coisa te confundir.
 
 ---
 
@@ -121,7 +121,7 @@ Sim — na maioria dos jogos, um open-limp é uma placa piscando que diz *"jogad
 - **Value fino e c-bets sem trégua.** Contra um range de limp limitado (poucas ou nenhuma mão premium, já que você geralmente aumentaria essas), bons jogadores apostam mais streets por value mais fino e blefam mais à vontade, confiantes de que você não pode ter os nuts.
 - **Abuso de posição.** Como limpers costumam ser loose e passivos, jogadores agressivos simplesmente os superam depois do flop, apostando para tirá-los de mãos marginais e extraindo value quando eles conectam.
 
-O conserto é refrescantemente simples: **aumente ou folde como padrão, e reserve o limp para os spots específicos acima.** No momento em que você para de open-limpar, você para de ser o alvo mais fácil da mesa — o que, aliás, é a primeira coisa que te separa do peixe.
+O conserto é refrescantemente simples: **aumente ou folde como padrão, e reserve o limp para os spots específicos acima.** No momento em que você para de open-limpar, você para de ser o alvo mais fácil da mesa — o que, aliás, é a primeira coisa que te separa do [peixe](/pt/blog/holdem-fish "thumb:/images/holdem-fish-hero.webp").
 
 ---
 
@@ -196,6 +196,16 @@ Consertar o seu limp é um dos upgrades mais rápidos do pôquer — não custa 
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Estratégia</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Tabela de mãos iniciais</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">O que vale a pena aumentar em primeiro lugar</div>
+  </a>
+  <a href="/pt/blog/holdem-fish" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Glossário</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">O que é um peixe?</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Os hábitos passivos que marcam um jogador fraco</div>
+  </a>
+  <a href="/pt/blog/holdem-glossary" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Glossário</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Termos de pôquer de A a Z</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Cada pedaço do vocabulário da mesa, explicado</div>
   </a>
 </div>
 `.trim(),

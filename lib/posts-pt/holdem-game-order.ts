@@ -79,7 +79,7 @@ A ação começa à esquerda do big blind e segue no sentido horário. Na sua ve
 - **Fortes:** A♠K♥ ("Big Slick"), A♠Q♥, A♠J♥, 10♠10♥
 - **Situacionais:** 9♠9♥, 8♠8♥, K♠Q♥, K♠J♥
 
-Quais dessas você pode realmente abrir depende da sua cadeira — a tabela completa das 169 mãos iniciais, separada por posição, mostra isso em detalhe.
+Quais dessas você pode realmente abrir depende da sua cadeira — a [tabela completa das 169 mãos iniciais, separada por posição](/pt/blog/holdem-starting-hands-chart), mostra isso em detalhe.
 
 ---
 
@@ -159,7 +159,7 @@ Quem é obrigado a mostrar primeiro, quando você pode dar muck e a etiqueta em 
 
 </div>
 
-O truque para memorizar: ==**antes do flop, olhe à esquerda do big blind; depois do flop, olhe à esquerda do botão.**== O botão age por último em todas as streets do pós-flop — e é exatamente por isso que é a cadeira mais lucrativa da mesa.
+O truque para memorizar: ==**antes do flop, olhe à esquerda do big blind; depois do flop, olhe à esquerda do botão.**== O botão age por último em todas as streets do pós-flop — e é exatamente por isso que é a cadeira mais lucrativa da mesa; veja [posições no pôquer: do UTG ao botão](/pt/blog/holdem-positions).
 
 ==g:**Heads-up (2 jogadores) é a exceção:**== o botão posta o *small* blind e age **primeiro** no pré-flop, mas **por último** no flop, no turn e no river. É essa a ordem usada na mão completa que vamos acompanhar logo abaixo.
 
@@ -303,7 +303,7 @@ Você pode decorar a ordem do jogo e ainda assim sangrar fichas se cometer estes
 
 ### 2. Ignorar a posição
 
-Quanto mais perto do botão, melhor — agir por último deixa você ver o que todos fazem antes de decidir. Jogue fechado nas posições iniciais e com mais agressividade nas posições finais.
+Quanto mais perto do botão, melhor — agir por último deixa você ver o que todos fazem antes de decidir. Jogue fechado nas posições iniciais e com mais agressividade nas posições finais. Para o mapa completo de assentos e os ranges de abertura por posição, veja [posições no pôquer explicadas: do UTG ao botão](/pt/blog/holdem-positions).
 
 ### 3. Perseguir draws às cegas
 
@@ -391,6 +391,11 @@ Decore a sequência, treine em mesas grátis e você nunca mais vai travar sem s
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Ranking de mãos</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Ranking de mãos de poker — da melhor à pior</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">As 10 mãos com probabilidades, exemplos e problemas de mesa</div>
+  </a>
+  <a href="/pt/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Posições</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Posições no pôquer: do UTG ao botão</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Mapa de assentos, ranges de abertura e por que a posição vence</div>
   </a>
 </div>
 `.trim(),

@@ -139,7 +139,7 @@ Implied odds | As fichas *extras* que você espera ganhar nas ruas seguintes se 
 
 **Pot odds vs. [equity](/pt/blog/holdem-equity "thumb:/images/holdem-equity-hero.webp")** é a decisão central: pague quando a sua equity supera as suas pot odds. As [**implied odds**](/pt/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp") são o desempate para projetos que erram o preço por pouco. Se o seu flush draw precisa de 25% mas tem só 19,6% na carta do river, você ainda pode pagar *se* for extrair apostas extras suficientes quando fechar para cobrir a diferença. É por isso que dá para pagar uma aposta no flop com um projeto de forma lucrativa, e por que stacks profundos deixam os projetos mais valiosos.
 
-O espelho sombrio são as **reverse implied odds** — as fichas que você vai *perder* quando fechar mas ainda assim perder a mão (seu flush completa, mas a mesa pareia e alguém tem um boat). Projetos ao segundo melhor sangram dinheiro em silêncio, e é por isso que o nut flush draw vale muito mais do que um baixinho.
+O espelho sombrio são as **reverse implied odds** — as fichas que você vai *perder* quando fechar mas ainda assim perder a mão (seu flush completa, mas a mesa pareia e alguém tem um boat). Projetos ao segundo melhor sangram dinheiro em silêncio, e é por isso que o [nut flush draw vale muito mais do que um baixinho](/pt/blog/holdem-starting-hands-chart).
 
 ---
 
@@ -181,6 +181,7 @@ O turn é o 3♠ — um brick. O pote é $200 e o vilão dá all-in de $200 — 
 
 :::readnext[Continue lendo]
 /pt/blog/holdem-probability | Tabela de odds e probabilidade do pôquer | /images/holdem-probability-hero.webp
+/pt/blog/holdem-starting-hands-chart | Quais mãos iniciais realmente jogar | /images/holdem-starting-hands-chart-hero.webp
 :::
 
 ## FAQ
@@ -225,7 +226,7 @@ A. Exatamente as suas pot odds em porcentagem: call ÷ pote final. Contra uma ap
 2. **A comparação:** pague quando a sua equity (outs × 4 ou × 2) supera as suas pot odds. Essa é a decisão inteira.
 3. **O desempate:** as implied odds salvam projetos que erram o preço por pouco — mas só quando os stacks são profundos e o seu projeto é ao nut.
 
-Faça isso algumas centenas de vezes e deixa de ser matemática e vira instinto. Você vai foldar os calls sem esperança, fazer os lucrativos, e parar de pagar o imposto da "esperança". Daqui, afie os números crus por trás de cada projeto na [tabela de odds e probabilidade do pôquer](/pt/blog/holdem-probability), ou garanta que está entrando em potes com mãos que valem a pena projetar usando a tabela de starting hands por posição.
+Faça isso algumas centenas de vezes e deixa de ser matemática e vira instinto. Você vai foldar os calls sem esperança, fazer os lucrativos, e parar de pagar o imposto da "esperança". Daqui, afie os números crus por trás de cada projeto na [tabela de odds e probabilidade do pôquer](/pt/blog/holdem-probability), ou garanta que está entrando em potes com mãos que valem a pena projetar usando a [tabela de starting hands por posição](/pt/blog/holdem-starting-hands-chart).
 
 ---
 
@@ -236,6 +237,11 @@ Faça isso algumas centenas de vezes e deixa de ser matemática e vira instinto.
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Odds & Matemática</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Tabela de odds e probabilidade do pôquer</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Cada mão, flop e projeto — os números por trás do preço</div>
+  </a>
+  <a href="/pt/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Mãos Iniciais</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Tabela de mãos iniciais por posição</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Entre em potes com mãos que valem a pena projetar</div>
   </a>
   <a href="/pt/blog/holdem-reading-the-board" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Leitura de Mesa</div>

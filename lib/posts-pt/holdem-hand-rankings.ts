@@ -40,7 +40,7 @@ Comece por aqui. Este é o ranking inteiro, da mais forte à mais fraca, com a p
 | **10** | Carta Alta | "Sem nada" | Nenhuma combinação | 17,4% |
 
 > **A regra que encerra discussões**
-> Par e Carta Alta juntos somam cerca de 61% de todas as mãos de sete cartas até o river. As mãos grandes parecem comuns porque ficam na memória — mas a maioria dos potes é decidida por um par e um kicker.
+> Par e Carta Alta juntos somam cerca de 61% de todas as mãos de sete cartas até o river. As mãos grandes parecem comuns porque ficam na memória — mas a maioria dos potes é decidida por um par e um [kicker](/pt/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp").
 
 :::quiz:::
 
@@ -184,7 +184,7 @@ Par|Valor do par → 3 kickers|+Com kicker
 Carta Alta|As 5, da maior à menor|+Com kicker
 :::
 
-Um **kicker** é simplesmente uma carta que não faz parte da sua mão feita, mas que desempata. Com A-A-K contra A-A-Q, ambos têm par de ases — ganha o kicker K. Por isso os bons jogadores se importam tanto com a *qualidade* das cartas altas, não só em parear.
+Um **kicker** é simplesmente uma carta que não faz parte da sua mão feita, mas que desempata. Com A-A-K contra A-A-Q, ambos têm par de ases — ganha o kicker K. Por isso os bons jogadores se importam tanto com a *qualidade* das cartas altas, não só em parear. A regra de desempate de cada mão num só lugar está no [guia de kicker e desempate](/pt/blog/holdem-tiebreak-rules); quando as melhores cinco cartas coincidem exatamente, o pote é [dividido](/pt/blog/holdem-split-pot-rules).
 
 ---
 
@@ -234,7 +234,7 @@ Você tem **A♥ 3♣**. A mesa já traz trinca de reis.
 
 ## Por que a ordem é essa
 
-O ranking não é arbitrário: é pura probabilidade. **Quanto mais difícil de fechar uma mão, mais alto ela está.** Em um baralho de 52 cartas, simplesmente há menos formas de fazer cinco do mesmo naipe do que cinco em sequência de qualquer naipe — por isso o flush fica acima da sequência. Esse único princípio explica todo o ranking.
+O ranking não é arbitrário: é pura probabilidade. **Quanto mais difícil de fechar uma mão, mais alto ela está.** Em um baralho de 52 cartas, simplesmente há menos formas de fazer cinco do mesmo naipe do que cinco em sequência de qualquer naipe — por isso o flush fica acima da sequência. Esse único princípio explica todo o ranking — veja os números exatos no [gráfico de odds e probabilidade do pôquer](/pt/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
 Ele também explica a grande exceção que você vai encontrar: no **Short Deck (6+) Hold'em**, onde se tiram os dois aos cincos, os flushes ficam mais difíceis que os full houses — então, nesse formato, um **flush ganha de um full house**. A matemática mudou, a ordem mudou. Mais sobre as diferenças por modalidade abaixo.
 
@@ -281,11 +281,16 @@ A conclusão: aprenda a ordem padrão uma vez e ela serve em quase todos os jogo
 
 ---
 
+:::readnext[Continue lendo]
+/pt/blog/holdem-flush-vs-straight | O flush ganha da sequência? | /images/holdem-flush-vs-straight-hero.webp
+/pt/blog/holdem-tiebreak-rules | Regras de kicker e desempate | /images/holdem-tiebreak-hero.webp
+:::
+
 ## Perguntas frequentes
 
 **Q. O flush ganha da sequência no pôquer?**
 
-A. Sim. O flush é a #5 e a sequência a #6, então o flush sempre ganha. Ele fica acima porque cinco cartas do mesmo naipe são mais difíceis de fechar do que cinco em sequência.
+A. Sim. O flush é a #5 e a sequência a #6, então o flush sempre ganha — veja [por que o flush ganha da sequência](/pt/blog/holdem-flush-vs-straight). Ele fica acima porque cinco cartas do mesmo naipe são mais difíceis de fechar do que cinco em sequência.
 
 **Q. O full house ganha do flush?**
 
@@ -324,5 +329,44 @@ A. Sim. A trinca é a #7 e os dois pares a #8, então a trinca ganha. Dois pares
 3. **A realidade:** a maioria dos potes é ganha com par ou carta alta, então seu kicker vale mais do que você imagina.
 
 Aprenda a ordem em uma tarde, treine os duelos confusos e repasse "naipes → sequências → pares" em cada mesa. Faça isso e nunca mais empurre o pote para o lado errado.
+
+Depois de saber o ranking, o próximo passo natural é saber com quais mãos começar — use a [tabela de mãos iniciais do Texas Hold'em por posição](/pt/blog/holdem-starting-hands-chart) para ver exatamente quais cartas jogar de cada assento.
+
+---
+
+## Posts relacionados
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
+  <a href="/pt/blog/holdem-flush-vs-straight" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Duelo de Mãos</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">O flush ganha da sequência?</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">A matemática, as leituras erradas e todas as regras de empate</div>
+  </a>
+  <a href="/pt/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Desempate</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Regras de kicker e desempate</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Mesmo par — quem ganha? Regras de kicker e pote dividido</div>
+  </a>
+  <a href="/pt/blog/holdem-split-pot-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Pote Dividido</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Quando o pote é dividido?</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Regras de chop e as 5 situações de empate explicadas</div>
+  </a>
+  <a href="/pt/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Guia Iniciante</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Regras do Texas Hold'em para iniciantes</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Regras completas do deal ao showdown</div>
+  </a>
+  <a href="/pt/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Mãos Iniciais</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Tabela de mãos iniciais por posição</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Quais cartas jogar do UTG ao button</div>
+  </a>
+  <a href="/pt/blog/holdem-reading-the-board" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Leitura da Mesa</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Como ler a mesa no Hold'em</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Ache suas melhores 5 cartas entre 7 — mesa molhada vs seca</div>
+  </a>
+</div>
 `.trim(),
 };

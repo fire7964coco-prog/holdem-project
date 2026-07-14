@@ -61,7 +61,7 @@ Quando você se registra, paga um buy-in. Esse dinheiro se divide em dois:
 | **$100** | → Prize pool, dividido entre todos os inscritos |
 | **$9** | → Taxa da casa (rake) que fica com o local |
 
-Grandes eventos ao vivo costumam ficar com 8–10% do buy-in como taxa (torneios diários pequenos muitas vezes pegam mais) — aqui $9 de $109, cerca de 8,3%. Como essa taxa funciona (e por que o online é diferente do ao vivo) é o tema de como funciona o rake no pôquer.
+Grandes eventos ao vivo costumam ficar com 8–10% do buy-in como taxa (torneios diários pequenos muitas vezes pegam mais) — aqui $9 de $109, cerca de 8,3%. Como essa taxa funciona (e por que o online é diferente do ao vivo) é o tema de [como funciona o rake no pôquer](/pt/blog/holdem-rake).
 
 Em troca, você recebe um **stack inicial** — normalmente de 10.000 a 50.000 fichas de torneio, em geral com 100–300 big blinds de profundidade no Nível 1.
 
@@ -267,7 +267,7 @@ A estrutura de payout é sempre anunciada antes de o torneio começar. Peça a *
 
 ## Glossário de torneio — termos que você vai ouvir no Day 1
 
-Estes 13 termos cobrem a maior parte do que você vai ouvir na mesa. Pra ver o A a Z completo, veja o glossário de pôquer.
+Estes 13 termos cobrem a maior parte do que você vai ouvir na mesa. Pra ver o A a Z completo, veja o [glossário de pôquer](/pt/blog/holdem-glossary).
 
 | Termo | O que significa |
 |------|--------------|

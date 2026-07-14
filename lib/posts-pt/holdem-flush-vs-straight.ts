@@ -65,7 +65,7 @@ Conte as 2.598.960 mãos possíveis de cinco cartas de um baralho de 52 e a orde
 | **Sequência** | **10.200** | **0,392%** | **Perde para o flush ❌** |
 | Trinca | 54.912 | 2,11% | Perde para a sequência |
 
-Uma sequência tem mais ou menos ==r:o **dobro** de formas de se montar do que um flush==, então aparece duas vezes mais — o que a torna a mão mais fraca. A mesma regra de frequência explica a escada inteira; os números exatos de cada mão estão no gráfico de odds e probabilidade do pôquer.
+Uma sequência tem mais ou menos ==r:o **dobro** de formas de se montar do que um flush==, então aparece duas vezes mais — o que a torna a mão mais fraca. A mesma regra de frequência explica a escada inteira; os números exatos de cada mão estão no [gráfico de odds e probabilidade do pôquer](/pt/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
 ### Por que isso parece invertido
 

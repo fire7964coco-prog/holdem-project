@@ -72,7 +72,7 @@ Pegue a mão da foto acima:
 
 Mesmo par de ases, então os kickers vão de cabeça a cabeça em ordem: ==g:K ganha de Q — briga encerrada.== O nove do B ainda está *na* mão como segundo kicker, mas a comparação nunca chega tão longe.
 
-Repare que o kicker de topo do B é a dama da **mesa**, não o 9 que ele tem. ==r:Um kicker só conta se realmente entrar nas suas melhores cinco== — uma carta mais alta na mesa empurra sua carta da mão para baixo na lista. É também por isso que a segunda carta com que você começa importa tanto quanto o próprio ás: A-K e A-9 são ambos "um par de ases" aqui, e só um deles ganha (tabela de mãos iniciais).
+Repare que o kicker de topo do B é a dama da **mesa**, não o 9 que ele tem. ==r:Um kicker só conta se realmente entrar nas suas melhores cinco== — uma carta mais alta na mesa empurra sua carta da mão para baixo na lista. É também por isso que a segunda carta com que você começa importa tanto quanto o próprio ás: A-K e A-9 são ambos "um par de ases" aqui, e só um deles ganha ([tabela de mãos iniciais](/pt/blog/holdem-starting-hands-chart)).
 
 ---
 

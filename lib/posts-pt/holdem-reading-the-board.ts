@@ -177,7 +177,7 @@ A mesma lógica responde "dá para ter três pares?" — você pode ter três va
 
 ## Qual é a melhor mão possível? Lendo os nuts
 
-Jogadores fortes fazem mais uma varredura: não "o que eu tenho?" mas ==**"qual é a melhor mão que QUALQUER UM poderia ter nesta mesa?"**== Essa mão é chamada de os nuts (mais gírias de mesa como essa no glossário de pôquer).
+Jogadores fortes fazem mais uma varredura: não "o que eu tenho?" mas ==**"qual é a melhor mão que QUALQUER UM poderia ter nesta mesa?"**== Essa mão é chamada de os nuts (mais gírias de mesa como essa no [glossário de pôquer](/pt/blog/holdem-glossary)).
 
 Mesa: Q♣ 9♥ 6♣ 5♦ 2♠
 

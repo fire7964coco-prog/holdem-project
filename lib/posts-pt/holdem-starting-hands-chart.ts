@@ -64,7 +64,7 @@ Estas são as melhores mãos iniciais do pôquer — as que você deveria quase 
 
 ==g:Com as mãos 1–5 (os pocket pairs), sempre aumente e muitas vezes re-aumente no preflop pra crescer o pote.== Com AK e AQ, o objetivo é chegar heads-up onde suas cartas grandes têm equity máxima. Um número que vale decorar: AK é praticamente um ==cara ou coroa contra todo pocket pair menor== (o clássico "race") e algo em torno de 43–46% contra QQ — perto o suficiente pra que aumentar e re-aumentar com AK continue certo.
 
-Pocket rockets, cowboys, big slick — se as gírias da mesa são novas pra você, o glossário do pôquer cobre cada apelido de mão. E se você está enferrujado no que ganha do quê quando a mesa aparece, revise primeiro o [ranking de mãos do pôquer](/pt/blog/holdem-hand-rankings).
+Pocket rockets, cowboys, big slick — se as gírias da mesa são novas pra você, o [glossário do pôquer](/pt/blog/holdem-glossary) cobre cada apelido de mão. E se você está enferrujado no que ganha do quê quando a mesa aparece, revise primeiro o [ranking de mãos do pôquer](/pt/blog/holdem-hand-rankings).
 
 ---
 
