@@ -79,7 +79,7 @@ Die Action startet links vom Big Blind und läuft im Uhrzeigersinn. Wenn du dran
 - **Stark:** A♠K♥ („Big Slick“), A♠Q♥, A♠J♥, 10♠10♥
 - **Situativ:** 9♠9♥, 8♠8♥, K♠Q♥, K♠J♥
 
-Welche davon du tatsächlich openen kannst, hängt von deinem Sitzplatz ab — je näher am Button, desto mehr Hände kommen infrage.
+Welche davon du tatsächlich openen kannst, hängt von deinem Sitzplatz ab. Die komplette 169-Hände-Tabelle, aufgeschlüsselt nach Position, findest du in der [Texas-Hold'em-Starthände-Tabelle](/de/blog/holdem-starting-hands-chart).
 
 ---
 
@@ -159,7 +159,7 @@ Wer zuerst zeigen muss, wann du mucken darfst und was es mit der Etikette rund u
 
 </div>
 
-Die Eselsbrücke: ==**Vor dem Flop schaust du links vom Big Blind — nach dem Flop links vom Button.**== Der Button handelt auf jeder Postflop-Street als Letzter, und genau deshalb ist er der profitabelste Platz am Tisch.
+Die Eselsbrücke: ==**Vor dem Flop schaust du links vom Big Blind — nach dem Flop links vom Button.**== Der Button handelt auf jeder Postflop-Street als Letzter, und genau deshalb ist er der profitabelste Platz am Tisch — siehe [Pokerpositionen: von UTG bis Button](/de/blog/holdem-positions).
 
 ==g:**Heads-up (2 Spieler) ist die Ausnahme:**== Der Button zahlt den *Small* Blind und handelt preflop **zuerst** — auf Flop, Turn und River aber **zuletzt**. Genau diese Reihenfolge gilt auch in der kompletten Beispielhand weiter unten.
 
@@ -303,7 +303,7 @@ Du kannst den Spielablauf auswendig können und trotzdem Chips verbluten, wenn d
 
 ### 2. Die Position ignorieren
 
-Je näher du am Button sitzt, desto besser — wer als Letzter handelt, sieht erst, was alle anderen tun, bevor er entscheiden muss. Spiel in früher Position tight und in später Position aggressiver. Der Klassiker: Dieselbe Hand, die UTG ein klarer Fold ist, kann am Button ein Standard-Open sein.
+Je näher du am Button sitzt, desto besser — wer als Letzter handelt, sieht erst, was alle anderen tun, bevor er entscheiden muss. Spiel in früher Position tight und in später Position aggressiver. Die komplette Sitzkarte und die Opening-Ranges je Position findest du unter [Pokerpositionen erklärt: von UTG bis Button](/de/blog/holdem-positions).
 
 ### 3. Draws blind hinterherjagen
 
@@ -391,6 +391,11 @@ Lern die Abfolge in- und auswendig, übe sie in kostenlosen Spielen — und du w
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Pokerhände</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Pokerhände-Reihenfolge — von der besten zur schlechtesten</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Alle 10 Hände mit Wahrscheinlichkeiten, Beispielen und Board-Aufgaben</div>
+  </a>
+  <a href="/de/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Positionen</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Pokerpositionen: von UTG bis Button</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Sitzkarte, Opening-Ranges und warum Position gewinnt</div>
   </a>
 </div>
 `.trim(),

@@ -130,7 +130,7 @@ Was deine Realization hoch oder runter bewegt:
 📚 | Stacktiefe & Skill | Tiefere Stacks und stärkere Gegner machen marginale Equity schwerer zu realisieren
 :::
 
-Das ist die einzelne wichtigste Idee, die die meisten Anfänger-Guides weglassen, und sie ist der Grund, warum dieselbe Hand sich je nach Position völlig anders spielt. Die rohe Equity ist die Decke; die Realization ist, was du nach Hause trägst.
+Das ist die einzelne wichtigste Idee, die die meisten Anfänger-Guides weglassen, und sie ist der Grund, warum [sich dieselbe Hand je nach Position völlig anders spielt](/de/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp"). Die rohe Equity ist die Decke; die Realization ist, was du nach Hause trägst.
 
 ---
 
@@ -242,6 +242,11 @@ Meistere das und der Rest der Poker-Mathematik rastet ein. Von hier aus verwandl
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Odds & Mathe</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Implied Odds erklärt</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Warum die Equity nicht dein finaler Pot-Anteil ist</div>
+  </a>
+  <a href="/de/blog/holdem-position-play" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Strategie</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Wie die Position alles verändert</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Warum Realization mit der Position steht und fällt</div>
   </a>
 </div>
 `.trim(),

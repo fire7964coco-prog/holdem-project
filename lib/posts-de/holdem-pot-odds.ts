@@ -139,7 +139,7 @@ Implied Odds | Die *zusätzlichen* Chips, die du auf späteren Streets zu gewinn
 
 **Pot Odds vs. [Equity](/de/blog/holdem-equity "thumb:/images/holdem-equity-hero.webp")** ist die Kernentscheidung: calle, wenn deine Equity deine Pot Odds schlägt. [**Implied Odds**](/de/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp") sind der Tie-Breaker für Draws, die den Preis knapp verfehlen. Wenn dein Flushdraw 25% braucht, aber auf der River-Karte nur 19,6% hat, kannst du trotzdem callen, *wenn* du beim Treffen genug zusätzliche Bets herausholst, um die Differenz zu decken. Deshalb kannst du eine Flop-Bet mit einem Draw profitabel callen, und deshalb machen tiefe Stacks Draws wertvoller.
 
-Der dunkle Spiegel sind die **Reverse Implied Odds** — die Chips, die du *verlierst*, wenn du triffst, aber die Hand trotzdem verlierst (dein Flush kommt an, aber das Board pairt und jemand hat ein Full House). Second-Best-Draws bluten leise Geld, weshalb der Nut-Flushdraw so viel mehr wert ist als ein kleiner.
+Der dunkle Spiegel sind die **Reverse Implied Odds** — die Chips, die du *verlierst*, wenn du triffst, aber die Hand trotzdem verlierst (dein Flush kommt an, aber das Board pairt und jemand hat ein Full House). Second-Best-Draws bluten leise Geld, weshalb der [Nut-Flushdraw so viel mehr wert ist als ein kleiner](/de/blog/holdem-starting-hands-chart).
 
 ---
 
@@ -181,6 +181,7 @@ Der Turn ist die 3♠ — ein Brick. Der Pot ist $200 und Villain jammt $200 —
 
 :::readnext[Weiterlesen]
 /de/blog/holdem-probability | Tabelle für Poker-Odds und Wahrscheinlichkeiten | /images/holdem-probability-hero.webp
+/de/blog/holdem-starting-hands-chart | Welche Starthände du wirklich spielen solltest | /images/holdem-starting-hands-chart-hero.webp
 :::
 
 ## FAQ
@@ -225,7 +226,7 @@ A. Genau deine Pot Odds als Prozentwert: Call ÷ finaler Pot. Gegen eine Half-Po
 2. **Der Vergleich:** calle, wenn deine Equity (Outs × 4 oder × 2) deine Pot Odds schlägt. Das ist die gesamte Entscheidung.
 3. **Der Tie-Breaker:** Implied Odds retten Draws, die den Preis knapp verfehlen — aber nur, wenn die Stacks tief sind und dein Draw zu den Nuts geht.
 
-Mach das ein paar hundert Mal und es hört auf, Mathematik zu sein, und wird zum Instinkt. Du foldest die aussichtslosen Calls, machst die profitablen und hörst auf, die „Hoffnungs“-Steuer zu zahlen. Von hier aus schärfe die rohen Zahlen hinter jedem Draw in der [Tabelle für Poker-Odds und Wahrscheinlichkeiten](/de/blog/holdem-probability).
+Mach das ein paar hundert Mal und es hört auf, Mathematik zu sein, und wird zum Instinkt. Du foldest die aussichtslosen Calls, machst die profitablen und hörst auf, die „Hoffnungs“-Steuer zu zahlen. Von hier aus schärfe die rohen Zahlen hinter jedem Draw in der [Tabelle für Poker-Odds und Wahrscheinlichkeiten](/de/blog/holdem-probability), oder stelle sicher, dass du Pots mit Händen betrittst, auf die zu ziehen sich lohnt — mit der [Starthände-Tabelle nach Position](/de/blog/holdem-starting-hands-chart).
 
 ---
 
@@ -236,6 +237,11 @@ Mach das ein paar hundert Mal und es hört auf, Mathematik zu sein, und wird zum
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Odds & Mathematik</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Tabelle für Poker-Odds und Wahrscheinlichkeiten</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Jede Hand, jeder Flop, jeder Draw — die Zahlen hinter dem Preis</div>
+  </a>
+  <a href="/de/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Starthände</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Starthand-Tabelle nach Position</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Steig in Pots mit Händen ein, die sich zum Drawen lohnen</div>
   </a>
   <a href="/de/blog/holdem-reading-the-board" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Board lesen</div>

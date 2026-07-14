@@ -64,7 +64,7 @@ Das sind die besten Starthände im Poker — die, die du fast immer preflop rais
 
 ==g:Mit den Händen 1–5 (den Pocket Pairs) raist du immer und re-raist oft preflop, um den Pot aufzubauen.== Mit AK und AQ ist das Ziel, heads-up zu kommen, wo deine großen Karten maximale Equity haben. Eine Zahl, die sich zu merken lohnt: AK ist ungefähr ein ==Coinflip gegen jedes kleinere Pocket Pair== (das klassische "Race") und rund 43–46% gegen QQ — nah genug, dass Raisen und Re-Raisen mit AK korrekt bleibt.
 
-Pocket Rockets, Cowboys, Big Slick — falls dir der Tisch-Slang neu ist, das Poker-Glossar deckt jeden Hand-Spitznamen ab. Und falls du unsicher bist, was was schlägt, sobald das Board kommt, schau dir zuerst die [Poker-Reihenfolge der Hände](/de/blog/holdem-hand-rankings) an.
+Pocket Rockets, Cowboys, Big Slick — falls dir der Tisch-Slang neu ist, das [Poker-Glossar](/de/blog/holdem-glossary) deckt jeden Hand-Spitznamen ab. Und falls du unsicher bist, was was schlägt, sobald das Board kommt, schau dir zuerst die [Poker-Reihenfolge der Hände](/de/blog/holdem-hand-rankings) an.
 
 ---
 

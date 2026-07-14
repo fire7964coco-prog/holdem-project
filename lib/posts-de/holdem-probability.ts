@@ -81,7 +81,7 @@ Vor jedem Flop gibt es genau **1.326 mögliche Zwei-Karten-Starthände**. So oft
 | A-K (suited *oder* offsuit) | 1 zu 83 (1,2%) | — |
 | Beliebige zwei suited Karten | 1 zu 4,3 (23,5%) | Fast jede vierte Hand |
 
-Wenn also das nächste Mal jemand sagt „Ich kriege nie Asse“, hat er grob recht — ein *bestimmtes* Paar wie Asse bekommst du nur etwa ==einmal alle 221 Hände==. Aber **irgendein** Pocket-Paar kommt alle 17 Hände, weshalb Set-Mining eine echte Strategie ist und keine Fantasie. Welche Paare und suited Hände sich von jedem Sitz aus zu spielen lohnen, ist eine Frage der Starthand-Wahl je Position.
+Wenn also das nächste Mal jemand sagt „Ich kriege nie Asse“, hat er grob recht — ein *bestimmtes* Paar wie Asse bekommst du nur etwa ==einmal alle 221 Hände==. Aber **irgendein** Pocket-Paar kommt alle 17 Hände, weshalb Set-Mining eine echte Strategie ist und keine Fantasie. Welche Paare und suited Hände sich von jedem Sitz aus zu spielen lohnen, deckt die [Starthand-Tabelle nach Position](/de/blog/holdem-starting-hands-chart) ab.
 
 ---
 
@@ -247,7 +247,7 @@ A. Es gibt keine einzelne feste Zahl — es hängt davon ab, wie viele Gegner Po
 2. **Flushdraw bis zum River: 35%.** Neun Outs, Regel der 4 → 9 × 4 = 36%.
 3. **Pot Odds schlagen das Bauchgefühl.** Ist deine Trefferchance größer als der Preis des Calls, callst du — jedes Mal.
 
-Poker belohnt die Spieler, die das automatisiert haben. Lerne die Tabelle, drille die Regel der 2 und 4 und fang an, „Wie stehen die Odds?“ *vor* deiner Aktion zu fragen statt danach. Als Nächstes bring die Mathematik zur Anwendung, oder frisch auf, [warum ein Flush eine Straße schlägt](/de/blog/holdem-flush-vs-straight), damit du immer weißt, was deine Outs wert sind.
+Poker belohnt die Spieler, die das automatisiert haben. Lerne die Tabelle, drille die Regel der 2 und 4 und fang an, „Wie stehen die Odds?“ *vor* deiner Aktion zu fragen statt danach. Als Nächstes bring die Mathematik zur Anwendung, indem du lernst, [welche Starthände du aus jeder Position spielst](/de/blog/holdem-starting-hands-chart), oder frisch auf, [warum ein Flush eine Straße schlägt](/de/blog/holdem-flush-vs-straight), damit du immer weißt, was deine Outs wert sind.
 
 ---
 
@@ -259,6 +259,11 @@ Poker belohnt die Spieler, die das automatisiert haben. Lerne die Tabelle, drill
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Pokerhände-Reihenfolge, von der besten zur schlechtesten</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Die Reihenfolge, die diese Odds erzeugen — jede Hand gerankt</div>
   </a>
+  <a href="/de/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Starthände</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Starthand-Tabelle nach Position</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Welche dieser 1.326 Hände du wirklich spielst</div>
+  </a>
   <a href="/de/blog/holdem-flush-vs-straight" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Hand-Duell</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Schlägt ein Flush eine Straße?</div>
@@ -268,6 +273,11 @@ Poker belohnt die Spieler, die das automatisiert haben. Lerne die Tabelle, drill
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Board-Lesen</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Wie man das Board im Hold'em liest</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Zähle deine Outs, indem du jeden Draw siehst</div>
+  </a>
+  <a href="/de/blog/holdem-position-play" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Strategie</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Wie die Position alles verändert</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Wann die Odds einen Call rechtfertigen — und wann die Position</div>
   </a>
 </div>
 `.trim(),

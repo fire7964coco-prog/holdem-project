@@ -87,7 +87,7 @@ Beide Blinds werden **vor dem Austeilen** gesetzt, und der Dealer-Button wandert
 | Reihenfolge preflop | Handelt als Vorletzter | Handelt als **Letzter** (die „Option“) |
 | Reihenfolge postflop | Handelt als **Erster** (ein Nachteil) | Handelt als Zweiter |
 
-> **Hinweis:** Vor dem Flop beginnt die Action beim Spieler links vom Big Blind, und der BB handelt zuletzt — er sieht die Entscheidungen aller anderen zuerst. Ab dem Flop wird die Reihenfolge zurückgesetzt, und die Blinds sind früh dran. Die Abfolge Street für Street findest du im Guide zum [Spielablauf im Texas Hold'em](/de/blog/holdem-game-order); die Namen aller Sitze rund um den Button sind ein eigenes Thema — die Positionen am Pokertisch.
+> **Hinweis:** Vor dem Flop beginnt die Action beim Spieler links vom Big Blind, und der BB handelt zuletzt — er sieht die Entscheidungen aller anderen zuerst. Ab dem Flop wird die Reihenfolge zurückgesetzt, und die Blinds sind früh dran. Die Abfolge Street für Street findest du im Guide zum [Spielablauf im Texas Hold'em](/de/blog/holdem-game-order); die Namen aller Sitze rund um den Button sind ein eigenes Thema — [die Positionen am Pokertisch erklärt](/de/blog/holdem-positions).
 
 ---
 
@@ -111,15 +111,15 @@ Stakes werden als **SB/BB** geschrieben. Ein „$1/$2“-Game bedeutet: $1 Small
 </div>
 
 - **Cash Game:** Die Blinds bleiben ==g:**fix**==. Setzt du dich an ein $1/$2-Game, bleibt es $1/$2, bis du gehst. (Den ausführlichen Vergleich findest du unter [Turnier vs. Cash Game](/de/blog/holdem-tournament-vs-cash-game).)
-- **Turnier:** Die Blinds ==r:**steigen** nach Zeitplan== (z. B. 25/50 → 50/100 → 100/200) — der Druck wächst also im Lauf des Abends. Blind-Level, Uhr und Struktur-Sheets gehören zum Thema Turnierpoker.
+- **Turnier:** Die Blinds ==r:**steigen** nach Zeitplan== (z. B. 25/50 → 50/100 → 100/200) — der Druck wächst also im Lauf des Abends. Blind-Level, Uhr und Struktur-Sheets gehören zum Thema [wie Pokerturniere funktionieren](/de/blog/holdem-tournament).
 
 ---
 
 ## Was ist eine Big Blind Ante? (Und der Straddle)
 
-Ab der frühen oder mittleren Phase der meisten Turniere kommt eine **Ante** dazu — ein kleiner zusätzlicher Zwangseinsatz, der in jeder Hand zusätzlich zu den Blinds eingesammelt wird. Sie füttert den Pot und belohnt Aggression. Die moderne Standardvariante ist die **Big Blind Ante**: Statt dass jeder Spieler Chips hineinwirft, ==setzt der Big Blind eine Ante — üblicherweise in Höhe eines Big Blinds — für den ganzen Tisch==. Das hält das Spiel schnell und sauber. Wann und wie Antes einsetzen, regelt die Blind-Struktur des jeweiligen Turniers.
+Ab der frühen oder mittleren Phase der meisten Turniere kommt eine **Ante** dazu — ein kleiner zusätzlicher Zwangseinsatz, der in jeder Hand zusätzlich zu den Blinds eingesammelt wird. Sie füttert den Pot und belohnt Aggression. Die moderne Standardvariante ist die **Big Blind Ante**: Statt dass jeder Spieler Chips hineinwirft, ==setzt der Big Blind eine Ante — üblicherweise in Höhe eines Big Blinds — für den ganzen Tisch==. Das hält das Spiel schnell und sauber. Wann und wie Antes einsetzen, regelt [die Blind-Struktur des Turniers](/de/blog/holdem-tournament).
 
-Einen weiteren Verwandten der Zwangseinsätze siehst du in Cash Games: den **Straddle** — ein *freiwilliger* zusätzlicher Blind (meist das Doppelte des BB), gesetzt vom Sitz links vom Big Blind, der die Stakes für diese eine Hand vorübergehend anhebt. Er hat eigene Regeln, Varianten und eine eigene Action-Reihenfolge — was genau ein Straddle ist und ob du einen setzen solltest, ist ein Thema für sich.
+Einen weiteren Verwandten der Zwangseinsätze siehst du in Cash Games: den **Straddle** — ein *freiwilliger* zusätzlicher Blind (meist das Doppelte des BB), gesetzt vom Sitz links vom Big Blind, der die Stakes für diese eine Hand vorübergehend anhebt. Er hat eigene Regeln, Varianten und eine eigene Action-Reihenfolge — die komplette Aufschlüsselung findest du unter [was ein Straddle ist und ob du einen setzen solltest](/de/blog/holdem-straddle "thumb:/images/holdem-straddle-hero.webp").
 
 ---
 
@@ -140,13 +140,14 @@ Setzt du dich an ein Live-Cash-Game, spielst du in der Regel nicht gratis mit: E
 ![Chipstapel fällt Richtung Pot auf einem Pokertisch — ein Blind-Steal-Push vom Button](/images/holdem-blind-steal.webp)
 
 - **Small Blind: Halt es simpel.** Preflop Vorletzter, aber nach dem Flop **als Erster dran** — der saubere Anfängeransatz lautet **raisen oder folden**, nicht callen. Zu limpen und dann out of position angespielt zu werden, ist ein stetiges Chip-Leck.
-- **Big Blind: Verteidige mit den Odds.** Du hast bereits einen vollen Einsatz gebracht, deshalb kannst du Raises profitabel weiter callen als jeder andere Sitz. Gegen einen Open-Raise auf 2,5 BB (der Small Blind foldet) callst du 1,5 BB in einen 4-BB-Pot — etwa 2,7:1. Heißt: Rund 27% Equity reichen, damit der Call break-even ist. Diese Mathematik nennt sich Pot Odds — und sie ist der Grund, warum es „Big Blind Defense“ überhaupt gibt.
-- **Late Position: der Steal.** Folden alle bis zum Button oder Cutoff, ist ein Raise, der nur die beiden Blinds abgreifen soll, ein **Blind Steal** — und der Re-Raise dagegen ein **Re-Steal**. Steal-Größen, Ranges je Sitz und wie weit du verteidigen solltest, sind Strategie-Themen rund um das Spiel in und out of Position.
+- **Big Blind: Verteidige mit den Odds.** Du hast bereits einen vollen Einsatz gebracht, deshalb kannst du Raises profitabel weiter callen als jeder andere Sitz. Gegen einen Open-Raise auf 2,5 BB (der Small Blind foldet) callst du 1,5 BB in einen 4-BB-Pot — etwa 2,7:1. Heißt: Rund 27% Equity reichen, damit der Call break-even ist. Diese Mathematik nennt sich [Pot Odds](/de/blog/holdem-pot-odds) — und sie ist der Grund, warum es „Big Blind Defense“ überhaupt gibt.
+- **Late Position: der Steal.** Folden alle bis zum Button oder Cutoff, ist ein Raise, der nur die beiden Blinds abgreifen soll, ein **Blind Steal** — und der Re-Raise dagegen ein **Re-Steal**. Steal-Größen, Ranges je Sitz und wie weit du verteidigen solltest, sind Strategie-Themen und werden ausführlich im [Strategie-Guide zu In Position vs. Out of Position](/de/blog/holdem-position-play) behandelt.
 
 ---
 
 :::readnext[Weiterlesen]
 /de/blog/texas-holdem-rules-for-beginners | Texas Hold'em Regeln für Anfänger | /images/rules-texas-holdem.webp
+/de/blog/holdem-position-play | Strategie: In Position vs. Out of Position | /images/holdem-position-play-hero.webp
 :::
 
 ## FAQ
@@ -191,27 +192,27 @@ A. Nicht ganz — „die Blinds“ meint Small Blind und Big Blind zusammen, wä
 2. Der **Big Blind ist die Einheit des Tischs** — Raises, Stacks und Turnierdruck werden alle in BB gemessen.
 3. Spiel die Blinds mit Bedacht: **Raise-or-Fold im Small Blind**, **Big Blind mit Pot Odds verteidigen** — und lerne Steals aus später Position, wenn alle zu dir folden.
 
-Ganz neu im Spiel? Der [Anfänger-Guide zu den Texas-Hold'em-Regeln](/de/blog/texas-holdem-rules-for-beginners "thumb:/images/rules-texas-holdem.webp") deckt die Basics ab, und der [Spielablauf einer Hand](/de/blog/holdem-game-order) zeigt genau, wann welcher Blind handelt — wie dein Sitz (nicht nur die Blinds) jede Entscheidung prägt, sind die Positionen am Pokertisch ein eigenes Thema.
+Ganz neu im Spiel? Der [Anfänger-Guide zu den Texas-Hold'em-Regeln](/de/blog/texas-holdem-rules-for-beginners "thumb:/images/rules-texas-holdem.webp") deckt die Basics ab, der [Spielablauf einer Hand](/de/blog/holdem-game-order) zeigt genau, wann welcher Blind handelt, und die [Positionen am Pokertisch erklärt](/de/blog/holdem-positions) zeigen, wie dein Sitz — nicht nur die Blinds — jede Entscheidung prägt.
 
 ---
 
 ## Ähnliche Beiträge
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
-  <a href="/de/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Aktionen</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Check, Bet, Call, Raise, Fold erklärt</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Alle Setz-Aktionen und wann du sie einsetzt</div>
+  <a href="/de/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Positionen</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Positionen am Pokertisch erklärt</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Von UTG bis Button, 6-max vs. 9-max, Opening-Ranges</div>
   </a>
   <a href="/de/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Spielablauf</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Spielablauf im Texas Hold'em</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Preflop → Flop → Turn → River — die Action-Reihenfolge</div>
   </a>
-  <a href="/de/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Formate</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Turnier vs. Cash Game</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Blinds, Stack-Tiefe und Strategie im Vergleich</div>
+  <a href="/de/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Turniere</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Wie Pokerturniere funktionieren</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Blind-Level, Antes, Auszahlungen und Formate</div>
   </a>
 </div>
 `.trim(),

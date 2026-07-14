@@ -105,7 +105,7 @@ Folden heißt, dass du deine Karten aufgibst und aus der Hand aussteigst. Du zah
 
 Ja — du darfst jederzeit folden, wenn du an der Reihe bist, sogar bevor du irgendetwas gesetzt hast, und sogar dann, wenn Checken kostenlos wäre. Aber Achtung, genau da lauert die Falle: **Zu folden, wenn du gratis checken könntest, heißt eine Hand ohne Grund wegzuwerfen.** Wenn niemand gesetzt hat, check einfach.
 
-Eine Regel der Live-Etikette: Folde nicht ==außer der Reihe==. Warte, bis die Action bei dir ankommt — wer zu früh foldet, gibt den noch überlegenden Spielern Informationen, und die meisten Cardrooms verwarnen oder bestrafen das. Zu wissen, *wann* der Fold der richtige Spielzug ist, ist eine eigene Fähigkeit für sich.
+Eine Regel der Live-Etikette: Folde nicht ==außer der Reihe==. Warte, bis die Action bei dir ankommt — wer zu früh foldet, gibt den noch überlegenden Spielern Informationen, und die meisten Cardrooms verwarnen oder bestrafen das. Zu wissen, *wann* der Fold der richtige Spielzug ist, ist eine eigene Fähigkeit für sich — das behandelt [wann du beim Poker folden solltest](/de/blog/holdem-when-to-fold).
 
 ---
 
@@ -133,7 +133,7 @@ Zwei Live-Poker-Regeln, die zum Raisen dazugehören:
 1. **Sag „Raise“, bevor du Chips bewegst.** Erst „Call“ sagen und dann mehr nachschieben? Das Extra ist ein ==String Bet==, und die Dealer in den meisten Cardrooms werten es als Call.
 2. **Eine Bewegung.** Wenn du nichts ansagst, müssen deine Chips in einer einzigen Vorwärtsbewegung in den Pot.
 
-Wie *viel* du raisen solltest (2,5x-Opens, 3x bei 3-Bets, Sizing nach Board-Textur), ist Strategie, keine Regelkunde — das gehört in die Strategie-Guides.
+Wie *viel* du raisen solltest (2,5x-Opens, 3x bei 3-Bets, Sizing nach Board-Textur), ist Strategie, keine Regelkunde — das gehört in die [Strategie-Säule zum Texas Hold'em](/de/blog/holdem-strategy).
 
 ---
 
@@ -156,7 +156,7 @@ All-in heißt, ==jeden Chip zu setzen, den du noch hast==. Du kannst es jederzei
 
 Ist dein All-in *kleiner* als der aktuelle Einsatz, bist du nicht raus: Du spielst einfach um einen ==Hauptpot==, gedeckelt auf deinen Beitrag, während die überschüssigen Chips der größeren Stacks einen ==Side Pot== bilden, den du nicht gewinnen kannst. Und ein All-in, das *kleiner als ein voller Min-Raise* ist, eröffnet das Raisen für Spieler, die bereits gehandelt haben, in der Regel nicht neu — eine subtile Regel, die selbst Regulars überrascht.
 
-Die komplette Mechanik — Side-Pot-Rechnung, wer zuerst zeigt, Table Stakes — steht in den [All-in-Regeln und Side Pots](/de/blog/holdem-all-in-rules), und was bei gleich starken All-in-Händen passiert, regeln die Split-Pot- und Chop-Regeln.
+Die komplette Mechanik — Side-Pot-Rechnung, wer zuerst zeigt, Table Stakes — steht in den [All-in-Regeln und Side Pots](/de/blog/holdem-all-in-rules), und was bei gleich starken All-in-Händen passiert, regeln die [Split-Pot- und Chop-Regeln](/de/blog/holdem-split-pot-rules).
 
 ---
 
@@ -164,9 +164,9 @@ Die komplette Mechanik — Side-Pot-Rechnung, wer zuerst zeigt, Table Stakes —
 
 Dieser Guide erklärt, was jede Aktion *ist* und wann sie *erlaubt* ist. Welche du wählst — wann du setzt, wann ein Call profitabel ist, wann eine gute Hand gefoldet werden muss — ist ein anderer Skill-Tree:
 
-- Das Gerüst für jede Entscheidung: die 5 Entscheidungen der Setzstrategie
+- Das Gerüst für jede Entscheidung: [Texas-Hold'em-Strategie — die 5 Entscheidungen](/de/blog/holdem-strategy)
 - Zuerst die rohe Stärke deiner Hand einschätzen: [Pokerhände-Reihenfolge](/de/blog/holdem-hand-rankings)
-- Warum dein Sitzplatz alles verändert: Positionen am Pokertisch erklärt
+- Warum dein Sitzplatz alles verändert: [Positionen am Pokertisch erklärt](/de/blog/holdem-positions)
 
 Eine Faustregel, die Anfängern bis dahin echtes Geld spart: ==Wenn eine Hand nicht stark genug für einen Raise ist, schlägt Folden meistens Callen.==
 
@@ -196,6 +196,7 @@ Ein Spieler steht vor einem $10-Bet und wirft wortlos einen einzelnen $100-Chip 
 
 :::readnext[Weiterlesen]
 /de/blog/holdem-all-in-rules | All-in-Regeln & Side Pots | /images/holdem-all-in-rules-hero.webp
+/de/blog/holdem-strategy | Texas-Hold'em-Strategie: Die 5 Entscheidungen | /images/holdem-strategy-hero.webp
 :::
 
 ## FAQ
@@ -230,7 +231,7 @@ A. Chips in mehreren Bewegungen nachzuschieben oder „Call“ zu sagen und dann
 
 **Q. Was bedeutet Limpen beim Poker?**
 
-A. Limpen heißt, Preflop nur den Big Blind zu callen, statt zu raisen, um in den Pot einzusteigen. Es ist legal, aber meistens schwaches Spiel — die meisten Coaches raten Anfängern zur simplen Regel: raisen oder folden.
+A. Limpen heißt, Preflop nur den Big Blind zu callen, statt zu raisen, um in den Pot einzusteigen. Es ist legal, aber meistens schwaches Spiel — siehe [warum Limpen dich Geld kostet](/de/blog/holdem-limping), wann es tatsächlich in Ordnung ist.
 
 ---
 

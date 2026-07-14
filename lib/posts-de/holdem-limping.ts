@@ -37,7 +37,7 @@ Over-Limp / SB | Die Situationen, in denen es wirklich okay ist
 
 **Limpen heißt, präflop in den Pot einzusteigen, indem du exakt den Betrag des Big Blinds callst — kein Raise.** Du setzt das Minimum, um einen Flop zu sehen. Entscheidend: Limpen gilt nur, wenn *noch niemand geraist hat*. Hat jemand bereits geraist und du gehst mit, ist das ein **Call**, kein Limp. Das Wort beschreibt speziell den passiven, billigsten Weg in einen ungeraisten Pot.
 
-Es lohnt sich, zwei Begriffe zu trennen, die oft vermischt werden. Ein **Limper** ist jemand, der in ungeraiste Pots einsteigt, indem er den Big Blind callt. Eine **Calling Station** ist ein Spieler, der postflop zu viele *Bets* callt — auf dem Flop, Turn und River. Oft beschreiben sie denselben loose-passiven Spieler, aber es sind unterschiedliche Angewohnheiten: die eine geht darum, wie du in Pots *einsteigst*, die andere darum, wie du in ihnen *weitermachst*.
+Es lohnt sich, zwei Begriffe zu trennen, die oft vermischt werden. Ein **Limper** ist jemand, der in ungeraiste Pots einsteigt, indem er den Big Blind callt. Eine **Calling Station** ist ein Spieler, der postflop zu viele *Bets* callt — auf dem Flop, Turn und River. Oft beschreiben sie denselben loose-passiven Spieler, aber es sind unterschiedliche Angewohnheiten: die eine geht darum, wie du in Pots *einsteigst*, die andere darum, wie du in ihnen *weitermachst*. Dieses Glossar der [Poker-Begriffe](/de/blog/holdem-glossary) sortiert den Rest des Vokabulars, falls dich etwas davon aus dem Konzept bringt.
 
 ---
 
@@ -121,7 +121,7 @@ Ja — in den meisten Spielen ist ein Open-Limp ein blinkendes Schild, das sagt:
 - **Thin Value und unerbittliche C-Bets.** Gegen eine gedeckelte Limp-Range (wenige oder keine Premium-Hände, da du die meist raisen würdest) betten gute Spieler mehr Straßen für dünneren Value und bluffen freier, sicher, dass du nicht die Nuts haben kannst.
 - **Positions-Missbrauch.** Weil Limper meist loose und passiv sind, überspielen aggressive Spieler sie einfach nach dem Flop, betten sie von marginalen Händen weg und holen Value raus, wenn sie treffen.
 
-Die Lösung ist erfrischend einfach: **Raisen oder folden als Standard, und Limpen den konkreten Situationen oben vorbehalten.** In dem Moment, in dem du aufhörst zu open-limpen, hörst du auf, das leichteste Ziel des Tisches zu sein.
+Die Lösung ist erfrischend einfach: **Raisen oder folden als Standard, und Limpen den konkreten Situationen oben vorbehalten.** In dem Moment, in dem du aufhörst zu open-limpen, hörst du auf, das leichteste Ziel des Tisches zu sein — was, wie es der Zufall will, das Erste ist, das dich vom [Fish](/de/blog/holdem-fish "thumb:/images/holdem-fish-hero.webp") unterscheidet.
 
 ---
 
@@ -196,6 +196,16 @@ Dein Limpen zu beheben ist eines der schnellsten Upgrades im Poker — es kostet
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Strategie</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Starthand-Chart</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Was überhaupt ein Raise wert ist</div>
+  </a>
+  <a href="/de/blog/holdem-fish" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Glossar</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Was ist ein Fish?</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Die passiven Angewohnheiten, die einen schwachen Spieler kennzeichnen</div>
+  </a>
+  <a href="/de/blog/holdem-glossary" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Glossar</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Poker-Begriffe A-Z</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Jedes bisschen Tisch-Vokabular, erklärt</div>
   </a>
 </div>
 `.trim(),

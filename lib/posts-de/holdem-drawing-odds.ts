@@ -166,7 +166,7 @@ Vor all dem oben gibt es das Austeilen. Mit **1.326 möglichen Zwei-Karten-Kombi
 
 </div>
 
-Die Zahl, die Leute überrascht: wenn **du** an einem 10-Hand-Tisch Aces hältst, liegt die Chance, dass ein *zweiter* Spieler ebenfalls Aces hat, bei etwa **1 zu 136** (neun Gegner, jeder 1 ÷ C(50,2) = 1/1.225). Selten, aber es ist genau der Aces-gegen-Aces-Cooler, der einen Stack leert und der "gezinkten" Software angelastet wird. Es ist einfach das Deck. Welche dieser 1.326 Hände sich von jedem Platz aus zu spielen lohnen, siehst du in der Starthand-Tabelle nach Position.
+Die Zahl, die Leute überrascht: wenn **du** an einem 10-Hand-Tisch Aces hältst, liegt die Chance, dass ein *zweiter* Spieler ebenfalls Aces hat, bei etwa **1 zu 136** (neun Gegner, jeder 1 ÷ C(50,2) = 1/1.225). Selten, aber es ist genau der Aces-gegen-Aces-Cooler, der einen Stack leert und der "gezinkten" Software angelastet wird. Es ist einfach das Deck. Welche dieser 1.326 Hände sich von jedem Platz aus zu spielen lohnen, siehst du in der [Starthand-Tabelle nach Position](/de/blog/holdem-starting-hands-chart).
 
 ---
 
@@ -238,6 +238,11 @@ Jede Zahl hier kommt direkt aus dem Deck, nicht aus dem Bauchgefühl. Nimm sie m
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Odds &amp; Mathe</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Wie man Pot Odds berechnet</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Stimmt der Preis für deinen Draw?</div>
+  </a>
+  <a href="/de/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Starthände</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Starthand-Tabelle nach Position</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Mit welchen Paaren und suited Händen du drawst</div>
   </a>
 </div>
 `.trim(),

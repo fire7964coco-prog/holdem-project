@@ -69,7 +69,7 @@ Anschließend deckt der Dealer fünf gemeinsame Karten in der Tischmitte auf:
 
 </div>
 
-==r:Du musst **nicht** beide Hole Cards verwenden.== Du kannst zwei, eine oder sogar null Hole Cards nutzen, wenn das Board selbst die beste Hand bildet — eine Fähigkeit, die man Board-Lesen nennt.
+==r:Du musst **nicht** beide Hole Cards verwenden.== Du kannst zwei, eine oder sogar null Hole Cards nutzen, wenn das Board selbst die beste Hand bildet — eine Fähigkeit, die man [Board-Lesen](/de/blog/holdem-reading-the-board) nennt.
 
 Zum Beispiel:
 
@@ -79,7 +79,7 @@ Zum Beispiel:
 | 8♠ 8♦ | K♣ 8♥ 4♠ 4♦ J♣ | Full House, Achten über Vieren |
 | 2♣ 3♦ | A♠ K♠ Q♠ J♠ 10♠ | Royal Flush auf dem Board |
 
-Wenn die Pokerhände für dich noch neu sind, öffne zuerst die [Pokerhände-Reihenfolge im Texas Hold'em](/de/blog/holdem-hand-rankings), bevor du spielst. Zu wissen, ob ein Flush eine Straße schlägt, ist wichtiger als jede fortgeschrittene Strategie auswendig zu lernen.
+Wenn die Pokerhände für dich noch neu sind, öffne zuerst die [Pokerhände-Reihenfolge im Texas Hold'em](/de/blog/holdem-hand-rankings), bevor du spielst. Zu wissen, [ob ein Flush eine Straße schlägt](/de/blog/holdem-flush-vs-straight), ist wichtiger als jede fortgeschrittene Strategie auswendig zu lernen.
 
 ---
 
@@ -137,7 +137,7 @@ Die einfache Eselsbrücke:
 
 ==**Vor dem Flop schaust du links vom Big Blind. Nach dem Flop schaust du links vom Button.**==
 
-Genau deshalb ist ==g:der Button eine so starke Position==. ==Der Button agiert auf Flop, Turn und River meist zuletzt== — er sieht also zuerst, was alle anderen tun. Eine komplette Übersicht aller Sitzplätze — von UTG bis zum Button, 6-max vs 9-max und welche Opening-Range jeder Platz erlaubt — findest du weiter unten im Positions-Abschnitt.
+Genau deshalb ist ==g:der Button eine so starke Position==. ==Der Button agiert auf Flop, Turn und River meist zuletzt== — er sieht also zuerst, was alle anderen tun. Eine komplette Übersicht aller Sitzplätze — von UTG bis zum Button, 6-max vs 9-max und welche Opening-Range jeder Platz erlaubt — findest du im [Guide zu den Pokerpositionen](/de/blog/holdem-positions).
 
 ---
 
@@ -244,7 +244,7 @@ Position bedeutet: **wann du in jeder Setzrunde an der Reihe bist**. Wer später
 | Links vom Dealer | SB (Small Blind) | 8. pre, 1. post | Schlechtester Platz — agiert auf jeder Postflop-Street zuerst |
 | Zwei links vom Dealer | BB (Big Blind) | Zuletzt pre (9.), 2. post | Darf preflop noch raisen; postflop out of position |
 
-==g:Der Button ist der profitabelste Platz am Tisch.== Du agierst auf Flop, Turn und River zuletzt — jeder Spieler zeigt dir also seine Handstärke, bevor du entscheiden musst.
+==g:Der Button ist der profitabelste Platz am Tisch.== Du agierst auf Flop, Turn und River zuletzt — jeder Spieler zeigt dir also seine Handstärke, bevor du entscheiden musst. Einen kompletten Positions-Guide findest du unter [Pokerpositionen: von UTG bis Button](/de/blog/holdem-positions).
 
 ---
 
@@ -283,7 +283,7 @@ Gute Starthände für Anfänger:
 
 </div>
 
-Ein vollständiges Chart mit allen 169 Starthänden nach Position (von UTG bis zum Button) gibt es als eigenes Starthand-Chart. Und bevor du Starthände richtig einsetzen kannst, musst du deine [Setzoptionen — Check, Call, Raise, Fold](/de/blog/holdem-betting-actions) kennen.
+Ein vollständiges Chart mit allen 169 Starthänden nach Position (von UTG bis zum Button) findest du in der [Texas-Hold'em-Starthände-Tabelle nach Position](/de/blog/holdem-starting-hands-chart). Und bevor du Starthände richtig einsetzen kannst, musst du deine [Setzoptionen — Check, Call, Raise, Fold](/de/blog/holdem-betting-actions) kennen.
 
 ---
 
@@ -350,7 +350,7 @@ Die Handreihenfolge von der stärksten zur schwächsten (mit der Häufigkeit, mi
 | 9 | Paar | 43,8% — die häufigste Hand beim Showdown |
 | 10 | High Card | 17,4% — schwächste Hand beim Showdown; gewinnt vor allem per Bluff |
 
-Haben zwei Spieler denselben Handtyp, vergleicht ihr die höchsten relevanten Karten — das regeln Kicker und Tiebreaker. Sind die besten fünf Karten exakt gleich, wird der Pot geteilt (Split Pot).
+Haben zwei Spieler denselben Handtyp, vergleicht ihr die höchsten relevanten Karten — das regeln die [Kicker- und Tiebreaker-Regeln](/de/blog/holdem-tiebreak-rules). Sind die besten fünf Karten exakt gleich, wird der Pot [geteilt](/de/blog/holdem-split-pot-rules).
 
 ---
 
@@ -457,6 +457,11 @@ Als nächsten Schritt wiederhole die [Pokerhände-Reihenfolge im Texas Hold'em](
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Pokerhände</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Pokerhände-Reihenfolge — von der besten zur schlechtesten</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Alle 10 Hände mit Wahrscheinlichkeiten, Beispielen und Board-Aufgaben</div>
+  </a>
+  <a href="/de/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Positionen</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Pokerpositionen: von UTG bis Button</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Warum der Button gewinnt — Sitzkarte und Opening-Ranges</div>
   </a>
   <a href="/de/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Setzen</div>

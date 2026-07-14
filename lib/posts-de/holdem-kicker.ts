@@ -128,7 +128,7 @@ Zurück zu meinem Buy-in. Board ==b:A♦ 7♣ 2♥ Q♠ 4♦==, keine Straße od
 - **A9:** A♠ 9♣ → Paar Asse, beste fünf ==A♠ A♦ Q♠ 9♣ 7♣==.
 - **AK:** A♥ K♦ → Paar Asse, beste fünf ==g:A♥ A♦ K♦ Q♠ 7♣==.
 
-Wieder dasselbe Paar — und meine 9 bekam nicht einmal eine Stimme. Sie wurde durch die Dame des Boards zum zweiten Kicker heruntergedrückt, und der Vergleich wurde beim ersten Kicker entschieden: sein K über die Q des Boards — sodass mein „Kicker" für alles, was zählte, ==r:tot== war, bevor die Hand überhaupt begann. Das ist Dominanz: Wenn du dein Ass triffst, zahlst du oft nur ein größeres Ass aus. Genau deshalb behandelt die Starthände-Tabelle A9 offsuit so viel vorsichtiger als AK — der Kicker ist der Unterschied zwischen einer Premium-Hand und einer Falle.
+Wieder dasselbe Paar — und meine 9 bekam nicht einmal eine Stimme. Sie wurde durch die Dame des Boards zum zweiten Kicker heruntergedrückt, und der Vergleich wurde beim ersten Kicker entschieden: sein K über die Q des Boards — sodass mein „Kicker" für alles, was zählte, ==r:tot== war, bevor die Hand überhaupt begann. Das ist Dominanz: Wenn du dein Ass triffst, zahlst du oft nur ein größeres Ass aus. Genau deshalb behandelt die [Starthände-Tabelle](/de/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") A9 offsuit so viel vorsichtiger als AK — der Kicker ist der Unterschied zwischen einer Premium-Hand und einer Falle.
 
 ---
 
@@ -207,6 +207,11 @@ Hast du den Kicker richtig verstanden, hört eine ganze Kategorie von „Wie hab
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Hand-Rankings</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Wie Gleichstände gebrochen werden</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Komplette Tiebreaker-Reihenfolge für jede Hand</div>
+  </a>
+  <a href="/de/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Starthände</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Starthände-Tabelle</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Warum Asse mit schwachem Kicker gefoldet werden</div>
   </a>
   <a href="/de/blog/holdem-reading-the-board" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Board lesen</div>

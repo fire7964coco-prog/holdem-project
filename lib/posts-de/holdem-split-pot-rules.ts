@@ -182,7 +182,7 @@ A. Der Pot bricht in einen Hauptpot und Nebenpots auf; jeder wird separat vergeb
 
 **Q. Ist ein Turnier-Chop dasselbe wie ein Split Pot?**
 
-A. Nein — dasselbe Wort, zwei verschiedene Dinge. Ein Split Pot im Showdown ist automatisch: Wenn Hände unentschieden sind, teilt der Dealer die Chips. Ein Turnier-"Chop" ist ein freiwilliger Deal unter den verbliebenen Spielern, um den Preispool aufzuteilen, meist nach Chip Counts oder ICM, und er passiert nur, wenn alle zustimmen. Siehe [Turnier vs. Cashgame](/de/blog/holdem-tournament-vs-cash-game), wie sich Turnier-Auszahlungen unterscheiden.
+A. Nein — dasselbe Wort, zwei verschiedene Dinge. Ein Split Pot im Showdown ist automatisch: Wenn Hände unentschieden sind, teilt der Dealer die Chips. Ein Turnier-"Chop" ist ein freiwilliger Deal unter den verbliebenen Spielern, um den Preispool aufzuteilen, meist nach Chip Counts oder [ICM](/de/blog/holdem-icm), und er passiert nur, wenn alle zustimmen. Siehe [Turnier vs. Cashgame](/de/blog/holdem-tournament-vs-cash-game), wie sich Turnier-Auszahlungen unterscheiden.
 
 ---
 

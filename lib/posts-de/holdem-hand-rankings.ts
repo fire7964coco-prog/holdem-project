@@ -246,7 +246,7 @@ Du hältst **A♥ 3♣**. Das Board bringt bereits einen Drilling Könige.
 
 ## Warum die Reihenfolge so ist, wie sie ist
 
-Die Rangfolge ist nicht willkürlich — sie ist ==reine Wahrscheinlichkeit==. ==g:**Je schwerer eine Hand zu treffen ist, desto höher steht sie.**== Ein Flush steht über einer Straße, weil es in einem Deck mit 52 Karten schlicht weniger Wege gibt, fünf Karten einer Farbe zu bilden, als fünf in Folge in beliebigen Farben. Dieses eine Prinzip erklärt die gesamte Rangfolge.
+Die Rangfolge ist nicht willkürlich — sie ist ==reine Wahrscheinlichkeit==. ==g:**Je schwerer eine Hand zu treffen ist, desto höher steht sie.**== Ein Flush steht über einer Straße, weil es in einem Deck mit 52 Karten schlicht weniger Wege gibt, fünf Karten einer Farbe zu bilden, als fünf in Folge in beliebigen Farben. Dieses eine Prinzip erklärt die gesamte Rangfolge — sieh dir die genauen Zahlen im [Poker-Odds- und Wahrscheinlichkeits-Chart](/de/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp") an.
 
 Es erklärt auch die große Ausnahme, der du begegnen wirst: Im **Short Deck (6+) Hold'em**, wo die 2en bis 5en entfernt werden, werden Flushes schwerer als Full Houses — also schlägt dort ein ==r:**Flush ein Full House**==. Die Mathematik hat sich geändert, also hat sich die Reihenfolge geändert. Mehr zu den Unterschieden je Variante unten.
 
@@ -392,7 +392,7 @@ A. Ja. Das Ass spielt hoch und niedrig, also ist A-2-3-4-5 (das „Wheel“) ein
 
 Lerne die Reihenfolge an einem Nachmittag, übe die verwirrenden Duelle und führe an jedem Board den Scan „Farben → Straßen → Paare“ durch. Tu das, und du schiebst nie wieder den Pot auf die falsche Seite.
 
-Wenn du die Rangfolge kennst, ist der nächste natürliche Schritt zu wissen, mit welchen Händen du überhaupt einsteigst.
+Wenn du die Rangfolge kennst, ist der nächste natürliche Schritt zu wissen, mit welchen Händen du überhaupt einsteigst — nutze den [Texas-Hold'em-Starthände-Chart nach Position](/de/blog/holdem-starting-hands-chart), um genau zu sehen, welche Hole Cards du von jeder Position spielst.
 
 ---
 
@@ -418,6 +418,11 @@ Wenn du die Rangfolge kennst, ist der nächste natürliche Schritt zu wissen, mi
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Anfänger-Guide</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Texas-Hold'em-Regeln für Anfänger</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Alle Regeln vom Austeilen bis zum Showdown</div>
+  </a>
+  <a href="/de/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Starthände</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Starthände-Tabelle nach Position</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Welche Hole Cards du von UTG bis Button spielst</div>
   </a>
   <a href="/de/blog/holdem-reading-the-board" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Board-Lesen</div>

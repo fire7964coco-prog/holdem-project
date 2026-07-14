@@ -86,7 +86,7 @@ Ein ==Cash Game== (auch Ring Game genannt) ist die ursprüngliche Art, Poker zu 
 
 **Du kannst frei nachladen und aufstehen.** Verlierst du deinen Stack, kannst du sofort mehr Chips kaufen (bis zum Tischmaximum). Musst du gehen? Sammle deine Chips ein und cashe aus — keine Erlaubnis nötig.
 
-**Das Haus nimmt einen Rake.** In den meisten Cash Games nimmt das Haus einen kleinen Anteil aus jedem Pot (oder erhebt zeitbasierte Sitzgebühren). Das prägt still, welche Limits schlagbar sind.
+**Das Haus nimmt einen Rake.** In den meisten Cash Games nimmt das Haus einen kleinen Anteil aus jedem Pot (oder erhebt zeitbasierte Sitzgebühren). Das prägt still, welche Limits schlagbar sind, weshalb es sich lohnt zu verstehen, [wie das Poker-Rake funktioniert](/de/blog/holdem-rake), bevor du ein Game wählst.
 
 :::note[Dieser Abschnitt deckt die Cash-Game-Grundlagen ab. Wir bauen ihn zu einem eigenen vollständigen Cash-Game-Guide aus — betrachte das als den Ansatz.]:::
 

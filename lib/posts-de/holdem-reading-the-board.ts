@@ -177,7 +177,7 @@ Dieselbe Logik beantwortet „kann man drei Paare haben?“ — du hältst viell
 
 ## Was ist die bestmögliche Hand? Die Nuts lesen
 
-Starke Spieler laufen noch einen Scan: nicht „was habe ich?“, sondern ==**„was ist die beste Hand, die IRGENDJEMAND an diesem Board haben könnte?“**== Diese Hand heißt die Nuts (mehr solcher Tischsprache im Poker-Glossar).
+Starke Spieler laufen noch einen Scan: nicht „was habe ich?“, sondern ==**„was ist die beste Hand, die IRGENDJEMAND an diesem Board haben könnte?“**== Diese Hand heißt die Nuts (mehr solcher Tischsprache im [Poker-Glossar](/de/blog/holdem-glossary)).
 
 Board: Q♣ 9♥ 6♣ 5♦ 2♠
 

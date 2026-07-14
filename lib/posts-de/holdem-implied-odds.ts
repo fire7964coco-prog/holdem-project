@@ -109,7 +109,7 @@ Derselbe $50-Call, gegensätzliche Entscheidungen — und die Karten haben sich 
 
 </div>
 
-Zwei Kräfte bestimmen die Zahl. **Häufigkeit:** Ein Gutshot trifft halb so oft wie ein Flushdraw, er braucht also einen etwa doppelt so großen Payoff, um break-even zu sein. **Tarnung:** Ein verstecktes Set wird weit mehr ausgezahlt als ein offensichtlicher Four-Flush, weil dein Gegner dich nicht darauf setzen kann — deshalb tolerieren Sets ihre niedrige Trefferquote. Der Nut-Flushdraw ist aus demselben Grund weit mehr wert als ein kleiner: Er wird ausgezahlt *und* er verliert nicht, wenn er trifft.
+Zwei Kräfte bestimmen die Zahl. **Häufigkeit:** Ein Gutshot trifft halb so oft wie ein Flushdraw, er braucht also einen etwa doppelt so großen Payoff, um break-even zu sein. **Tarnung:** Ein verstecktes Set wird weit mehr ausgezahlt als ein offensichtlicher Four-Flush, weil dein Gegner dich nicht darauf setzen kann — deshalb tolerieren Sets ihre niedrige Trefferquote. Der [Nut-Flushdraw ist aus demselben Grund weit mehr wert als ein kleiner](/de/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp"): Er wird ausgezahlt *und* er verliert nicht, wenn er trifft.
 
 ---
 
@@ -242,6 +242,11 @@ Mach das richtig, und du hörst auf, Chips für hoffnungsvolle Calls zu verbrenn
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Odds & Mathematik</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Drawing Odds & Odds, X zu floppen</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Wie oft ein Set, Flush oder eine Straße tatsächlich ankommt</div>
+  </a>
+  <a href="/de/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Starthände</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Starthand-Tabelle nach Position</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Welche spekulativen Hände sich zum Drawen lohnen</div>
   </a>
 </div>
 `.trim(),

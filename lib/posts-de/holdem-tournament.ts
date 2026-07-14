@@ -61,7 +61,7 @@ Wenn du dich registrierst, zahlst du ein Buy-in. Dieses Geld teilt sich auf zwei
 | **$100** | → Prize Pool, geteilt unter allen Teilnehmern |
 | **$9** | → Hausgebühr (Rake), behält der Veranstaltungsort |
 
-Große Live-Events behalten in der Regel 8–10% des Buy-ins als Fee (kleine Daily-Turniere nehmen oft mehr) — hier $9 von $109, also rund 8,3%. Wie diese Fee funktioniert (und warum Online sich von Live unterscheidet), gehört zum Thema, wie das Poker-Rake funktioniert.
+Große Live-Events behalten in der Regel 8–10% des Buy-ins als Fee (kleine Daily-Turniere nehmen oft mehr) — hier $9 von $109, also rund 8,3%. Wie diese Fee funktioniert (und warum Online sich von Live unterscheidet), gehört zum Thema, [wie das Poker-Rake funktioniert](/de/blog/holdem-rake).
 
 Im Gegenzug erhältst du einen **Startstack** — üblicherweise 10.000 bis 50.000 Turnierchips, meist 100–300 Big Blinds tief auf Level 1.
 
@@ -267,7 +267,7 @@ Die Payout-Struktur wird immer vor dem Turnierstart bekanntgegeben. Frag am Regi
 
 ## Turnier-Glossar — Begriffe, die du an Tag 1 hörst
 
-Diese 13 Begriffe decken das meiste ab, was du am Tisch hörst. Für das vollständige A bis Z siehe das Poker-Glossar.
+Diese 13 Begriffe decken das meiste ab, was du am Tisch hörst. Für das vollständige A bis Z siehe das [Poker-Glossar](/de/blog/holdem-glossary).
 
 | Begriff | Was er bedeutet |
 |------|--------------|

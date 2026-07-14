@@ -18,7 +18,7 @@ export const POST: Post = {
   content: `
 In meinem ersten Jahr am Tisch habe ich "meine Draws gespielt", ohne sie je zu zählen. Ein Flushdraw und ein Gutshot fühlten sich ungefähr gleich an — beides waren "Karten, die kommen könnten" — also callte ich bei beiden gleich und wunderte mich, warum ich ständig verlor. Die Lösung war kein Strategie-Kurs. Es war eine Fünf-Minuten-Gewohnheit: ==stoppen und tatsächlich die Karten zählen, die mich retten.==
 
-Diese Gewohnheit heißt **Outs** zählen — Pokers echte Antwort auf "Kartenzählen" — und es ist die eine Fähigkeit, die unter jeder Odds-Entscheidung im Poker liegt. Bevor du fragen kannst "ist dieser Call profitabel?", musst du beantworten "wie viele Karten gewinnen mir die Hand?" Dieser Guide ist die Zähl-Hälfte — die [Poker-Odds-und-Wahrscheinlichkeitstabelle](/de/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp") ist die Referenz dahinter, und [Pot Odds](/de/blog/holdem-pot-odds) ist das, was du mit der Zahl machst, sobald du sie hast.
+Diese Gewohnheit heißt **Outs** zählen — [Pokers echte Antwort auf "Kartenzählen"](/de/blog/holdem-card-counting "thumb:/images/holdem-card-counting-hero.webp") — und es ist die eine Fähigkeit, die unter jeder Odds-Entscheidung im Poker liegt. Bevor du fragen kannst "ist dieser Call profitabel?", musst du beantworten "wie viele Karten gewinnen mir die Hand?" Dieser Guide ist die Zähl-Hälfte — die [Poker-Odds-und-Wahrscheinlichkeitstabelle](/de/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp") ist die Referenz dahinter, und [Pot Odds](/de/blog/holdem-pot-odds) ist das, was du mit der Zahl machst, sobald du sie hast.
 
 ---
 
@@ -238,6 +238,11 @@ Triff die Zahl und der Rest der Poker-Mathematik fügt sich zusammen. Nimm deine
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Board lesen</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Das Board lesen</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Erkenne jeden Draw, damit du saubere Outs zählst</div>
+  </a>
+  <a href="/de/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Starthände</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Starthand-Tabelle nach Position</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Steig in Pots mit Händen ein, die sich zum Drawen lohnen</div>
   </a>
 </div>
 `.trim(),

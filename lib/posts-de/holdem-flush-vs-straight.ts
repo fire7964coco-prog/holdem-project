@@ -65,7 +65,7 @@ Zähl die 2.598.960 möglichen Fünf-Karten-Hände aus einem 52-Karten-Deck, und
 | **Straße** | **10.200** | **0,392%** | **Verliert gegen Flush ❌** |
 | Drilling | 54.912 | 2,11% | Verliert gegen Straße |
 
-Eine Straße hat rund ==r:**doppelt** so viele Wege zustande zu kommen wie ein Flush==, also taucht sie doppelt so oft auf — was sie zur schwächeren Hand macht. Dieselbe Häufigkeitsregel erklärt die gesamte Leiter; die genauen Zahlen für jede Hand stehen in der Poker-Odds-und-Wahrscheinlichkeitstabelle.
+Eine Straße hat rund ==r:**doppelt** so viele Wege zustande zu kommen wie ein Flush==, also taucht sie doppelt so oft auf — was sie zur schwächeren Hand macht. Dieselbe Häufigkeitsregel erklärt die gesamte Leiter; die genauen Zahlen für jede Hand stehen im [Poker-Odds- und Wahrscheinlichkeits-Chart](/de/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
 ### Warum sich das falsch anfühlt
 
