@@ -3,6 +3,33 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-14 (★es 언어 완전 완성 — 42/42편 + EN 정합 + 러닝맵)
+
+> 사용자 부재중 자동 진행 지시("es 번역 완성까지 자동으로 돌려, 끝나면 보고서"). Odds→Strategy→Tournament→Glossary→card-counting 4필라+1편을 리서치→번역→구조패리티→빌드→네이티브QA→커밋으로 연속 완주 후, 최종 EN 정합 패스 + ES_CLUSTERS까지.
+
+### ✅ es 4필라 + card-counting 신규 번역 (커밋 `05de6f2`·`3d1c038`·`c7678e5`·`1ef03d4`)
+- **Odds & Math 6** (`05de6f2`): probability·pot-odds·outs·drawing-odds·implied-odds·equity. 리서치 Wave 2.
+- **Strategy 8** (`3d1c038`): strategy(hub)·positions·position-play·starting-hands-chart·limping·3bet·continuation-bet·when-to-fold. 리서치 Wave 3 — spanglish 기술어(UTG/CO/BTN·3-bet·c-bet·squeeze 영어유지 + foldear/limpear/farolear 동사화), false-friend 가드 cutoff≠corte·limp≠cojear·squeeze≠apretón.
+- **Tournament 8** (`c7678e5`): tournament(hub)·icm·bubble·short-stack + 라이브이벤트 apt-incheon·korea-marathon·wpt-australia·ept-barcelona. 리서치 Wave 4 — ICM/GTD/ITM/BB 시글라, ITM="en premios"(≠"en el dinero"), ★"brazalete"=WSOP 전용(WPT/EPT=título/trofeo), "la M de Harrington".
+- **Glossary 6 + card-counting** (`1ef03d4`): glossary(hub)·straddle·rake·fish·cooler·bad-beat + card-counting(42번째). 리서치 Wave 5 — 앵글리시즘 크루도+글로스, fish=pez 공존, ★NO rastrillo/refrigerador/mala pega/río.
+- 각 필라: 현지어 웹 리서치 선행(메모리 [[translation-local-research-first]]) → Opus 병렬 번역(EN 1:1 구조·§13 그대로) → count 기반 구조 패리티 진단 → 네이티브 에디터 적대적 QA(리서치 컨텍스트+현지 페르소나, 계산 재검증 X) → 교정.
+- QA 실교정 예: 이미지 alt/title 영어잔재(limping)·본문 §13 마커 노출 3곳·카드라벨 영어 7파일 통일(Estrategia/Glosario/Torneos…)·"field"→"campo"·한글잔재 경의중앙선·calco 다수·desc 전편 ≤160.
+
+### ✅ 최종 EN-패리티 링크 복원 패스 (커밋 `68bb94f`)
+- **문제**: Rules·HR·Odds 필라는 초기(전략/토너먼트/글로서리 미존재 시) 번역돼 당시 없던 글로의 내부링크를 다수 strip → 42편 전체 존재 후 **22편에서 링크 누락/오링크** 발견(진단 universe=`lib/posts-en/` 42편, 메모리 [[translation-link-structure-equals-en]]).
+- **복원**: 파일별 에이전트 22개 — 누락 내부링크를 EN 위치의 스페인어 앵커에 재마크(썸네일 EN동일), 누락 Related/readnext 카드 EN서 번역추가, 오링크 재지정(blind-meaning·probability). 프로즈·§13 불변, 링크 마크업만.
+- **검증**: 42편 전편 **링크·Related·썸네일 카운트 EN 1:1 완전일치**.
+- ⚠️ tvc(tournament-vs-cash-game)는 초기 번역이 EN 일부 섹션을 생략 → 링크는 정합했으나 **본문 완성도는 추후 전면 재번역 권장**.
+
+### ✅ 러닝 로드맵 미니맵 es 활성화 (커밋 `8db2366`)
+- `ES_CLUSTERS` 추가(EN 6필라 구조·슬러그 동일, 라벨 스페인어). intl-blog-post-client 게이트 en·ja→**en·ja·es**. es 42편 전편 학습맵 노출.
+
+### 📊 결과
+- **es = 42/42편 완성** (Rules 6·HR 6·Odds 6·Strategy 8·Tournament 9·Glossary 6·card-counting 1). EN 마스터와 완전 동일 구조.
+- 하드게이트 전부 통과: build EXIT=0, check:intl-links OK, **270 intl posts**(24언어).
+- **다음 언어 = pt(포르투갈어)** — 동일 파이프라인(구12언어 순서 ja→es→**pt**→de→zh…).
+- **사용자 몫**: GSC에 es 신규 URL 색인 요청(`/es/blog/` Odds6·Strategy8·Tournament8·Glossary6·card-counting) + Vercel 배포 확인.
+
 ## 2026-07-13 (es Hand Rankings 필라 6편 — es 언어완성 착수·품질 최우선)
 
 ### ✅ es Hand Rankings 필라 6/6 (커밋 `99db688`)

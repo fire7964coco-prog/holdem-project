@@ -5,24 +5,27 @@
 
 ---
 
-## ▶▶▶ 새 세션 START HERE (2026-07-13 — ★es 언어완성 진행 중 1/5필라: Hand Rankings 완료 / 다음=es Odds & Math)
+## ▶▶▶ 새 세션 START HERE (2026-07-14 — ★★es 언어 완전 완성(42/42) / 다음 = pt(포르투갈어))
 
-> **★es부터 번역 방침 전환**(사용자 지시, 메모리 [[translation-quality-first-from-es]]): EN 마스터·ja가 이미 §13 검증 완료 → es부터는 **번역 품질(네이티브)이 최우선**, **사실검증·§13 계산착오 재검증 안 함**. §13 값은 EN 그대로 이관(형식·카드 불변, es는 EN 숫자형식 유지=무변환). 적대적 QA = "회의적 네이티브 편집장"(자연스러움·현지 용어 false-friend·기계번역 티·메타·링크 중심). 나머지 파이프라인(필라 웨이브·하드게이트·링크복원 개수검증)은 ja와 동일.
->
-> ✅ **es Hand Rankings 6/6 완료**(`99db688`): 브리프 `docs/translation-terms-es.md` 신규(Color=flush·Póker=포카드 트랩, tú 문체). es 누적 13편(Rules 6+HR 6+tvc 1). GSC: `/es/blog/` HR 6 URL.
+> ✅✅ **es 42/42편 완성** — EN 마스터와 완전 동일 구조. Rules 6·HR 6·Odds 6·Strategy 8·Tournament 9·Glossary 6·card-counting 1. 커밋 `05de6f2`(Odds)·`3d1c038`(Strategy)·`c7678e5`(Tournament)·`1ef03d4`(Glossary+cc)·`68bb94f`(EN정합 링크복원)·`8db2366`(ES_CLUSTERS 러닝맵). 하드게이트 전부 통과(270 intl posts/24언어). 상세는 WORKLOG 2026-07-14.
+> - 브리프 `docs/translation-terms-es.md`에 Wave 2~5(Odds·Strategy·Tournament·Glossary) 용어·화이트리스트(42) 누적. 다음 언어도 이 문서 형식 참고.
+> - ⚠️ **tvc(tournament-vs-cash-game)만 본문 미완**: 초기 번역이 EN 일부 섹션을 생략. 링크는 EN 정합했으나 프로즈 완성도 낮음 → **전면 재번역 권장**(es 유일 잔여 부채).
 
-### ▶▶ 다음 = es **Odds & Math 필라**(웨이브 2)
-- 슬러그 6: holdem-probability(hub) + pot-odds·outs·drawing-odds·implied-odds·equity. **전부 es 신규**.
-- 절차: ①확률·오즈 스페인어 용어 현지 리서치(probabilidad·pot odds/bote·outs·equity/equidad)→브리프 보강 ②Opus 6병렬(품질 최우선, §13 EN 그대로) ③하드게이트 ④QA 2배치(네이티브 편집장, 계산 재검증 X) ⑤교정 ⑥커밋 ⑦보고. 화이트리스트 13→19.
+### ▶▶ 다음 = pt(포르투갈어) 언어 완성 — es와 동일 파이프라인
+- 구12언어 순서: ja✅ → es✅ → **pt** → de → zh → ar → id → ms → vi → hi → tr.
+- 절차(필라 단위, es와 동일): ①현지어 웹 리서치 선행([[translation-local-research-first]]: pt-BR/pt-PT 포커사이트 실제용어) → `docs/translation-terms-pt.md` 브리프 ②Opus 병렬 번역(EN 1:1 구조·§13 EN 그대로·품질 최우선 [[translation-quality-first-from-es]]) ③count 기반 구조 패리티 진단(universe=`lib/posts-en/` 42편, [[translation-link-structure-equals-en]]) ④네이티브 에디터 적대적 QA(리서치+현지 페르소나, 계산 재검증 X) ⑤교정 ⑥필라별 커밋·보고 ⑦42편 완성 후 최종 EN 링크정합 패스 + `PT_CLUSTERS` 러닝맵.
+- pt는 `lib/posts-pt/` 현황부터 확인(기존 부분번역 있으면 stale 재검수 포함). 화이트리스트는 번역 진행에 따라 확장.
+- ★필라 경계마다 보고 후 다음 진행(사용자 규칙). "자동으로 돌려" 지시 시 필라 연속 완주.
 
-### 📌 es 남은 필라 & 마무리
-Odds(6) → Strategy(8) → Tournament(9, 라이브이벤트 4·tvc는 이미 있음) → Glossary(6) → **holdem-card-counting(EN 42번째글, 클러스터 밖·Odds인접)**. 완성 시 **최종 EN 정합 패스** + **러닝 로드맵**(`ES_CLUSTERS` 추가 + intl-blog-post-client 게이트에 es 추가). ja가 템플릿.
+### ★★★ EN-완전일치 방법론 (ja/es에서 확립 — 전 언어 준수)
+- 검증 universe = **`lib/posts-en/` 실제 전체(42편)**, 큐레이팅한 클러스터 목록 금지(ja 사고 원인).
+- 대조 = 링크뿐 아니라 **하이라이트색(g/r/b)·thumb·이미지·모든 :::디렉티브·Related/readnext카드·FAQ 수**까지 EN 1:1. **개수(count) 검증**(존재여부 아님). 번역이 재구성이라도 구조·색칠은 EN 고정.
+- ★교훈(es): 이른 필라를 먼저 번역하면 당시 없던 글로의 링크를 strip하게 됨 → 반드시 **전 언어 42편 완성 후 최종 링크정합 패스**로 복원. es에서 22편 복원 필요했음.
+- 레이아웃: CJK(ja/zh)는 `word-break` 보정 필요(globals.css `[lang]` 스코프). 라틴(es/pt/de…)은 무관.
 
-### ★★★ ja EN-완전일치 사고 & 수정 (2026-07-13, 사용자 발견) — es도 반드시 준수
-- **사고**: 사용자가 ja outs 페이지에 EN엔 있는 "counting cards" 링크가 없음을 발견. 원인 = **`holdem-card-counting`(EN 실재 발행글, 클러스터 41목록엔 없음)이 ja 미번역**. 내 진단이 41목록 기준이라 사각지대. → ja 번역+정합해 **EN 42편 완전일치** 달성(`5bb94bc`).
-- **수정된 방법론(메모리 [[translation-link-structure-equals-en]])**: ①검증 universe = **`lib/posts-en/` 실제 전체(42편)**, 클러스터 목록 금지. ②대조 = 링크뿐 아니라 **하이라이트색(g/r/b)·thumb·이미지·모든 :::디렉티브·Related카드·FAQ 수**까지 EN 1:1. 번역이 재구성이라도 구조·색칠은 EN 고정.
-- **레이아웃**: ja/zh는 `word-break:keep-all`로 오버플로 → `[lang]` 스코프 normal 보정 완료(globals.css). ja JP 폰트스택 명시. (es는 라틴이라 word-break 무관.)
-- **es 함의**: es도 지금 13/42 → card-counting 포함 EN 42편 전부 필요. es 완성 시 위 방법론으로 EN 정합 검증 필수.
+### 📌 es 마무리 잔여(사용자/추후)
+- GSC 색인 요청: `/es/blog/` 신규 URL(Odds 6·Strategy 8·Tournament 8·Glossary 6·card-counting) + Vercel 배포 확인.
+- tvc 본문 전면 재번역(위 ⚠️).
 
 ---
 
