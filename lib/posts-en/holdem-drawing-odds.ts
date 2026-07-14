@@ -143,7 +143,7 @@ These are the numbers behind the best (and worst) nights of your poker life. Eac
 
 </div>
 
-One §13-grade distinction the top pages routinely botch: a **set** is a pocket pair plus one matching board card (11.8%), while **trips** is one *unpaired* hole card that the board pairs twice (1.35%). Same three-of-a-kind on paper, wildly different odds and playability — a set is disguised, trips are obvious. Don't let anyone tell you they're the same shape.
+One crucial distinction the top pages routinely botch: a **set** is a pocket pair plus one matching board card (11.8%), while **trips** is one *unpaired* hole card that the board pairs twice (1.35%). Same three-of-a-kind on paper, wildly different odds and playability — a set is disguised, trips are obvious. Don't let anyone tell you they're the same shape.
 
 The straight flush number is the one to frame: with suited connectors there are exactly **four** flops that make it (one run in your suit), so 4 ÷ 19,600 ≈ 1 in 4,900. That's why flopped straight flushes are stories people tell for a decade.
 
