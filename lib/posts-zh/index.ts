@@ -18,6 +18,14 @@ import { POST as holdemDrawingOdds } from "./holdem-drawing-odds";
 import { POST as holdemImpliedOdds } from "./holdem-implied-odds";
 import { POST as holdemEquity } from "./holdem-equity";
 import { POST as holdemTournamentVsCashGame } from "./holdem-tournament-vs-cash-game";
+import { POST as holdemStrategy } from "./holdem-strategy";
+import { POST as holdemPositions } from "./holdem-positions";
+import { POST as holdemPositionPlay } from "./holdem-position-play";
+import { POST as holdemStartingHandsChart } from "./holdem-starting-hands-chart";
+import { POST as holdemLimping } from "./holdem-limping";
+import { POST as holdem3bet } from "./holdem-3bet";
+import { POST as holdemContinuationBet } from "./holdem-continuation-bet";
+import { POST as holdemWhenToFold } from "./holdem-when-to-fold";
 
 /**
  * 중국어 간체(zh) 블로그 포스트.
@@ -46,6 +54,15 @@ export const ZH_POSTS: Post[] = [
   holdemDrawingOdds,
   holdemImpliedOdds,
   holdemEquity,
+  // Strategy 필라 (8/8)
+  holdemStrategy,
+  holdemPositions,
+  holdemPositionPlay,
+  holdemStartingHandsChart,
+  holdemLimping,
+  holdem3bet,
+  holdemContinuationBet,
+  holdemWhenToFold,
   // 기타
   holdemTournamentVsCashGame,
 ];
