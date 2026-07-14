@@ -9,7 +9,7 @@
 
 > ✅✅ **es 42/42편 완성** — EN 마스터와 완전 동일 구조. Rules 6·HR 6·Odds 6·Strategy 8·Tournament 9·Glossary 6·card-counting 1. 커밋 `05de6f2`(Odds)·`3d1c038`(Strategy)·`c7678e5`(Tournament)·`1ef03d4`(Glossary+cc)·`68bb94f`(EN정합 링크복원)·`8db2366`(ES_CLUSTERS 러닝맵). 하드게이트 전부 통과(270 intl posts/24언어). 상세는 WORKLOG 2026-07-14.
 > - 브리프 `docs/translation-terms-es.md`에 Wave 2~5(Odds·Strategy·Tournament·Glossary) 용어·화이트리스트(42) 누적. 다음 언어도 이 문서 형식 참고.
-> - ⚠️ **tvc(tournament-vs-cash-game)만 본문 미완**: 초기 번역이 EN 일부 섹션을 생략. 링크는 EN 정합했으나 프로즈 완성도 낮음 → **전면 재번역 권장**(es 유일 잔여 부채).
+> - ✅ **tvc(tournament-vs-cash-game) 전면 재번역 완료**(`1181a8d`): 초기 번역이 EN 섹션 생략(359줄)·category 코리안버그·오이미지 → EN 431줄 완전 재작성(FAQ 6→8, 누락섹션 복원, category 정정, 이미지 EN정합). **es 잔여 부채 없음.**
 
 ### ▶▶ 다음 = pt(포르투갈어) 언어 완성 — es와 동일 파이프라인
 - 구12언어 순서: ja✅ → es✅ → **pt** → de → zh → ar → id → ms → vi → hi → tr.
