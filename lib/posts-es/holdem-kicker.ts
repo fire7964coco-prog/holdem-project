@@ -131,7 +131,7 @@ Volvamos a mi buy-in. Mesa ==b:A♦ 7♣ 2♥ Q♠ 4♦==, sin escalera ni color
 - **A9:** A♠ 9♣ → pareja de ases, mejores cinco ==A♠ A♦ Q♠ 9♣ 7♣==.
 - **AK:** A♥ K♦ → pareja de ases, mejores cinco ==g:A♥ A♦ K♦ Q♠ 7♣==.
 
-Misma pareja otra vez, y la K supera al 9. Peor aún, mi 9 ni siquiera entró en las cinco — la reina de la mesa lo superaba, así que mi "kicker" estaba ==r:muerto== antes de empezar la mano. Eso es la dominación: cuando ligas tu as, muchas veces solo estás pagando un as mayor. Es la razón entera por la que se juega A9 offsuit con mucha más cautela que AK — el kicker es la diferencia entre una mano premium y una trampa.
+Misma pareja otra vez, y la K supera al 9. Peor aún, mi 9 ni siquiera entró en las cinco — la reina de la mesa lo superaba, así que mi "kicker" estaba ==r:muerto== antes de empezar la mano. Eso es la dominación: cuando ligas tu as, muchas veces solo estás pagando un as mayor. Es la razón entera por la que la [tabla de manos iniciales](/es/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") trata a A9 offsuit con mucha más cautela que AK — el kicker es la diferencia entre una mano premium y una trampa.
 
 ---
 
@@ -210,6 +210,11 @@ Acierta con el kicker y toda una categoría de manos de "¿cómo perdí eso?" de
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Jerarquía de manos</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Cómo se rompen los empates</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Orden completo de desempate para cada mano</div>
+  </a>
+  <a href="/es/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Manos iniciales</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Tabla de manos iniciales</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Por qué se retiran los ases con kicker débil</div>
   </a>
   <a href="/es/blog/holdem-reading-the-board" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Leer la mesa</div>

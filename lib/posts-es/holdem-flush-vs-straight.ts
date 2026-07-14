@@ -66,7 +66,7 @@ Cuenta las 2,598,960 manos posibles de cinco cartas de una baraja de 52 y el ord
 | **Escalera** | **10,200** | **0.392%** | **Pierde contra el color ❌** |
 | Trío | 54,912 | 2.11% | Pierde contra la escalera |
 
-Una escalera tiene aproximadamente ==r:**el doble** de formas de armarse que un color==, así que aparece el doble de veces — lo que la convierte en la mano más débil. La misma regla de frecuencia explica toda la escalera; los números exactos de cada mano están en la tabla de probabilidades y odds del póker.
+Una escalera tiene aproximadamente ==r:**el doble** de formas de armarse que un color==, así que aparece el doble de veces — lo que la convierte en la mano más débil. La misma regla de frecuencia explica toda la escalera; los números exactos de cada mano están en la [tabla de probabilidades y odds del póker](/es/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
 ### Por qué esto parece al revés
 

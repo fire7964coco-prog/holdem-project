@@ -91,7 +91,7 @@ Cuando un jugador va all-in y ya no hay más apuestas posibles, lo habitual es r
 
 Un matiz: si hay un **side pot** (otros jugadores aún tienen fichas y siguen apostando), el side pot se adjudica primero — el último agresor entre esos jugadores con fichas enseña primero — y después el bote principal, donde se enseña la mano del jugador que fue all-in.
 
-Para ver cómo se forman y se pagan los side pots cuando hay jugadores all-in, mira [las reglas del all-in y los side pots](/es/blog/holdem-all-in-rules); para los botes divididos, están las reglas del split pot.
+Para ver cómo se forman y se pagan los side pots cuando hay jugadores all-in, mira [las reglas del all-in y los side pots](/es/blog/holdem-all-in-rules); para los botes divididos, mira [las reglas del split pot y el reparto del bote](/es/blog/holdem-split-pot-rules).
 
 ---
 
@@ -197,6 +197,16 @@ A. No. Si todos los demás se tiran antes del showdown, ganas el bote inmediatam
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Pilar</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Reglas del Texas Hold'em para principiantes</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Las reglas completas — de las ciegas al showdown</div>
+  </a>
+  <a href="/es/blog/holdem-split-pot-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Split Pot</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Reglas del split pot y del side pot</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Cuándo se reparte el bote y cómo funcionan los side pots</div>
+  </a>
+  <a href="/es/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Desempate</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Reglas del kicker y del desempate</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Misma mano — ¿quién gana en el showdown?</div>
   </a>
 </div>
 `.trim(),

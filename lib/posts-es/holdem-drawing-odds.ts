@@ -167,7 +167,7 @@ Antes de todo lo anterior, está el reparto. Con **1,326 combinaciones posibles 
 
 </div>
 
-La que sorprende a la gente: si **tú** tienes ases en una mesa de 10 jugadores, la probabilidad de que un *segundo* jugador también tenga ases es de más o menos **1 de cada 136** (nueve rivales, cada uno 1 ÷ C(50,2) = 1/1,225). Raro, pero es exactamente el cooler ases-contra-ases que vacía un stack y se le echa la culpa al software "trucado". Es solo la baraja. Para saber cuáles de esas 1,326 manos vale la pena jugar desde cada asiento, mira la tabla de manos iniciales por posición.
+La que sorprende a la gente: si **tú** tienes ases en una mesa de 10 jugadores, la probabilidad de que un *segundo* jugador también tenga ases es de más o menos **1 de cada 136** (nueve rivales, cada uno 1 ÷ C(50,2) = 1/1,225). Raro, pero es exactamente el cooler ases-contra-ases que vacía un stack y se le echa la culpa al software "trucado". Es solo la baraja. Para saber cuáles de esas 1,326 manos vale la pena jugar desde cada asiento, mira la [tabla de manos iniciales por posición](/es/blog/holdem-starting-hands-chart).
 
 ---
 
@@ -239,6 +239,11 @@ Cada cifra de aquí sale directamente de la baraja, no de una corazonada. Lleva 
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Odds y matemática</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Cómo calcular las pot odds</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">¿Es correcto el precio para tu proyecto?</div>
+  </a>
+  <a href="/es/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Manos iniciales</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Tabla de manos iniciales por posición</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Con qué parejas y manos del mismo palo proyectar</div>
   </a>
 </div>
 `.trim(),

@@ -64,7 +64,7 @@ Estas son las mejores manos iniciales del póker — las que casi siempre deber�
 
 ==g:Con las manos 1–5 (los pares servidos), sube siempre y a menudo resube en preflop para agrandar el bote.== Con AK y AQ, el objetivo es llegar mano a mano, donde tus cartas altas tienen la máxima equity. Un número que vale la pena memorizar: AK es más o menos un ==coin flip contra cualquier par servido menor== (la clásica "carrera") y ronda el 43–46% frente a QQ — lo bastante cerca como para que subir y resubir con AK siga siendo correcto.
 
-Pocket rockets, cowboys, big slick — si la jerga de la mesa te suena nueva, el glosario de póker cubre todos los apodos de manos. Y si no tienes claro qué gana a qué cuando cae la mesa, repasa antes las [jerarquías de manos de póker](/es/blog/holdem-hand-rankings).
+Pocket rockets, cowboys, big slick — si la jerga de la mesa te suena nueva, el [glosario de póker](/es/blog/holdem-glossary) cubre todos los apodos de manos. Y si no tienes claro qué gana a qué cuando cae la mesa, repasa antes las [jerarquías de manos de póker](/es/blog/holdem-hand-rankings).
 
 ---
 

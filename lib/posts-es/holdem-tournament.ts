@@ -61,7 +61,7 @@ Cuando te registras, pagas un buy-in. Ese dinero se reparte en dos partes:
 | **$100** | → Bolsa de premios, repartida entre todos los inscritos |
 | **$9** | → Comisión de la casa (rake) que se queda el local |
 
-Los grandes eventos en vivo suelen quedarse con un 8-10% del buy-in como comisión (los torneos diarios pequeños a menudo cobran más) — aquí $9 de $109, alrededor del 8.3%. Cómo funciona esa comisión (y por qué online difiere del vivo) lo cubre nuestra guía de cómo funciona el rake en póker.
+Los grandes eventos en vivo suelen quedarse con un 8-10% del buy-in como comisión (los torneos diarios pequeños a menudo cobran más) — aquí $9 de $109, alrededor del 8.3%. Cómo funciona esa comisión (y por qué online difiere del vivo) lo cubre nuestra guía de [cómo funciona el rake en póker](/es/blog/holdem-rake).
 
 A cambio, recibes un **stack inicial** — habitualmente de 10,000 a 50,000 fichas de torneo, normalmente entre 100 y 300 ciegas grandes de profundidad en el Nivel 1.
 
@@ -267,7 +267,7 @@ La estructura de premios siempre se anuncia antes de que empiece el torneo. Pide
 
 ## Glosario de torneo — términos que oirás en el Día 1
 
-Estos 13 términos cubren casi todo lo que oirás en la mesa. Para la A a la Z completa, consulta el glosario de póker.
+Estos 13 términos cubren casi todo lo que oirás en la mesa. Para la A a la Z completa, consulta el [glosario de póker](/es/blog/holdem-glossary).
 
 | Término | Qué significa |
 |------|--------------|

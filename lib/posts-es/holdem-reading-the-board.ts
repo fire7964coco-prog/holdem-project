@@ -178,7 +178,7 @@ La misma lógica responde a "¿se pueden tener tres parejas?" — puedes tener t
 
 ## ¿Cuál es la mejor mano posible? Leer las nuts
 
-Los buenos jugadores hacen un repaso más: no "¿qué tengo yo?" sino ==**"¿cuál es la mejor mano que CUALQUIERA podría tener en esta mesa?"**== A esa mano se le llama las nuts.
+Los buenos jugadores hacen un repaso más: no "¿qué tengo yo?" sino ==**"¿cuál es la mejor mano que CUALQUIERA podría tener en esta mesa?"**== A esa mano se le llama las nuts (más jerga de mesa como esta en el [glosario de póker](/es/blog/holdem-glossary)).
 
 Mesa: Q♣ 9♥ 6♣ 5♦ 2♠
 

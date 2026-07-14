@@ -79,7 +79,7 @@ La acción arranca a la izquierda de la ciega grande y avanza en el sentido de l
 - **Fuertes:** A♠K♥ ("Big Slick"), A♠Q♥, A♠J♥, 10♠10♥
 - **Según la situación:** 9♠9♥, 8♠8♥, K♠Q♥, K♠J♥
 
-Cuáles de estas puedes abrir de verdad depende de tu asiento. Para ir más allá, busca la tabla completa de las 169 manos iniciales del Texas Hold'em desglosada por posición.
+Cuáles de estas puedes abrir de verdad depende de tu asiento. Para la tabla completa de las 169 manos desglosada por posición, mira la [tabla de manos iniciales del Texas Hold'em](/es/blog/holdem-starting-hands-chart).
 
 ---
 
@@ -159,7 +159,7 @@ Quién tiene que enseñar primero, cuándo puedes tirar sin enseñar y la etique
 
 </div>
 
-El truco para recordarlo: ==**antes del flop, mira a la izquierda de la ciega grande; después del flop, mira a la izquierda del botón.**== El botón habla el último en todas las calles postflop, y precisamente por eso es el asiento más rentable de la mesa — las posiciones en el póker, de UTG al botón, dan para una guía entera.
+El truco para recordarlo: ==**antes del flop, mira a la izquierda de la ciega grande; después del flop, mira a la izquierda del botón.**== El botón habla el último en todas las calles postflop, y precisamente por eso es el asiento más rentable de la mesa — mira las [posiciones en el póker: de UTG al botón](/es/blog/holdem-positions).
 
 ==g:**El heads-up (2 jugadores) es la excepción:**== el botón pone la ciega *pequeña* y habla **primero** en el preflop, pero **último** en el flop, el turn y el river. Ese es el orden que se usa en la mano completa de ejemplo de más abajo.
 
@@ -302,7 +302,7 @@ Puedes saberte el orden de juego de memoria y aun así ir sangrando fichas si ca
 
 ### 2. Ignorar la posición
 
-Cuanto más cerca estés del botón, mejor — hablar el último te deja ver lo que hacen todos los demás antes de decidir. Juega tight (cerrado) en posiciones tempranas y más agresivo en posiciones tardías, y estudia el mapa de asientos y los rangos de apertura de cada posición, de UTG al botón.
+Cuanto más cerca estés del botón, mejor — hablar el último te deja ver lo que hacen todos los demás antes de decidir. Juega tight (cerrado) en posiciones tempranas y más agresivo en posiciones tardías. Para el mapa de asientos completo y los rangos de apertura por posición, mira las [posiciones en el póker explicadas: de UTG al botón](/es/blog/holdem-positions).
 
 ### 3. Perseguir proyectos a ciegas
 
@@ -390,6 +390,11 @@ Apréndete la secuencia de memoria, machácala en partidas gratis y no volverás
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Jerarquía de manos</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Manos de póker — de la mejor a la peor</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Las 10 manos con probabilidades, ejemplos y problemas de mesa</div>
+  </a>
+  <a href="/es/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Posiciones</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Posiciones en el póker: de UTG al botón</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Mapa de asientos, rangos de apertura y por qué la posición gana</div>
   </a>
 </div>
 `.trim(),

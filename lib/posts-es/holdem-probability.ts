@@ -82,7 +82,7 @@ Antes de cualquier flop, hay exactamente **1,326 manos iniciales posibles de dos
 | A-K (mismo palo *o* distinto) | 1 en 83 (1.2%) | — |
 | Dos cartas cualesquiera del mismo palo | 1 en 4.3 (23.5%) | Casi una de cada cuatro manos |
 
-Así que la próxima vez que alguien diga "nunca me llegan ases", tiene más o menos razón — recibirás una pareja *concreta* como los ases solo alrededor de ==una vez cada 221 manos==. Pero **cualquier** pareja llega cada 17 manos, y por eso el set mining es una estrategia real, no una fantasía. Qué parejas y manos del mismo palo merece la pena jugar desde cada asiento se cubre en la tabla de manos iniciales por posición.
+Así que la próxima vez que alguien diga "nunca me llegan ases", tiene más o menos razón — recibirás una pareja *concreta* como los ases solo alrededor de ==una vez cada 221 manos==. Pero **cualquier** pareja llega cada 17 manos, y por eso el set mining es una estrategia real, no una fantasía. Qué parejas y manos del mismo palo merece la pena jugar desde cada asiento se cubre en la [tabla de manos iniciales por posición](/es/blog/holdem-starting-hands-chart).
 
 ---
 
@@ -204,7 +204,7 @@ Algunos números existen sobre todo para explicar la peor noche de tu vida como 
 
 :::readnext[Sigue leyendo]
 /es/blog/holdem-hand-rankings | Jerarquía de manos de póker, de la mejor a la peor | /images/holdem-hand-rankings-hero.webp
-/es/blog/holdem-reading-the-board | Cómo leer la mesa en Hold'em | /images/holdem-reading-the-board-hero.webp
+/es/blog/holdem-starting-hands-chart | Qué manos iniciales jugar de verdad | /images/holdem-starting-hands-chart-hero.webp
 :::
 
 ## Preguntas frecuentes
@@ -249,7 +249,7 @@ A. No hay un número fijo único — depende de cuántos rivales tengan parejas 
 2. **Proyecto de color para el river: 35%.** Nueve outs, regla del 4 → 9 × 4 = 36%.
 3. **Las pot odds ganan a la corazonada.** Si tu probabilidad de ligar es mayor que el precio del call, pagas — siempre.
 
-El póker premia a los jugadores que han hecho esto automático. Aprende la tabla, ejercita la regla del 2 y 4 y empieza a preguntarte "¿qué probabilidad hay?" *antes* de actuar en lugar de después. A continuación, pon la matemática a trabajar aprendiendo qué manos iniciales jugar desde cada posición, o repasa [por qué el color gana a la escalera](/es/blog/holdem-flush-vs-straight) para que siempre sepas cuánto valen tus outs.
+El póker premia a los jugadores que han hecho esto automático. Aprende la tabla, ejercita la regla del 2 y 4 y empieza a preguntarte "¿qué probabilidad hay?" *antes* de actuar en lugar de después. A continuación, pon la matemática a trabajar aprendiendo [qué manos iniciales jugar desde cada posición](/es/blog/holdem-starting-hands-chart), o repasa [por qué el color gana a la escalera](/es/blog/holdem-flush-vs-straight) para que siempre sepas cuánto valen tus outs.
 
 ---
 
@@ -261,6 +261,11 @@ El póker premia a los jugadores que han hecho esto automático. Aprende la tabl
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Jerarquía de manos de póker, de la mejor a la peor</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">El orden que crean estas odds — cada mano clasificada</div>
   </a>
+  <a href="/es/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Manos iniciales</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Tabla de manos iniciales por posición</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Cuáles de esas 1,326 manos jugar de verdad</div>
+  </a>
   <a href="/es/blog/holdem-flush-vs-straight" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Duelo de manos</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">¿El color gana a la escalera?</div>
@@ -270,6 +275,11 @@ El póker premia a los jugadores que han hecho esto automático. Aprende la tabl
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Lectura de mesa</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Cómo leer la mesa en Hold'em</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Cuenta tus outs viendo cada proyecto</div>
+  </a>
+  <a href="/es/blog/holdem-position-play" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Estrategia</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Cómo la posición lo cambia todo</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Cuándo las odds justifican un call — y cuándo lo hace la posición</div>
   </a>
 </div>
 `.trim(),

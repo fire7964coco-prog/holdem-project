@@ -183,7 +183,7 @@ A. El bote se separa en un bote principal y botes laterales; cada uno se adjudic
 
 **Q. ¿Un chop de torneo es lo mismo que un bote dividido?**
 
-A. No — misma palabra, dos cosas distintas. Un bote dividido en el showdown es automático: cuando las manos empatan, el dealer reparte las fichas. Un "chop" de torneo es un acuerdo voluntario entre los jugadores restantes para repartirse la bolsa de premios, normalmente por número de fichas o por ICM, y solo ocurre si todos están de acuerdo. Consulta [torneo vs cash game](/es/blog/holdem-tournament-vs-cash-game) para ver cómo difieren los pagos en torneo.
+A. No — misma palabra, dos cosas distintas. Un bote dividido en el showdown es automático: cuando las manos empatan, el dealer reparte las fichas. Un "chop" de torneo es un acuerdo voluntario entre los jugadores restantes para repartirse la bolsa de premios, normalmente por número de fichas o por [ICM](/es/blog/holdem-icm), y solo ocurre si todos están de acuerdo. Consulta [torneo vs cash game](/es/blog/holdem-tournament-vs-cash-game) para ver cómo difieren los pagos en torneo.
 
 ---
 

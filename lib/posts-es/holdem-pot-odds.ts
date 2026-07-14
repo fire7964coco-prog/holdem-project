@@ -140,7 +140,7 @@ Odds implícitas | Las fichas *extra* que esperas ganar en calles posteriores si
 
 **Pot odds vs. [equity](/es/blog/holdem-equity "thumb:/images/holdem-equity-hero.webp")** es la decisión central: paga cuando tu equity supera a tus pot odds. Las [**odds implícitas**](/es/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp") son el desempate para los proyectos que se quedan justo por debajo del precio. Si tu proyecto de color necesita un 25% pero solo tiene un 19.6% en la carta del river, aún puedes pagar *si* vas a sacar suficientes apuestas extra al ligar como para cubrir la diferencia. Por eso puedes pagar de forma rentable una apuesta en el flop con un proyecto, y por eso los stacks profundos hacen que los proyectos valgan más.
 
-La otra cara son las **reverse implied odds** — las fichas que *perderás* cuando ligues pero aun así pierdas la mano (completas tu color, pero la mesa se empareja y alguien tiene full). Los proyectos que quedan en segundo lugar sangran dinero en silencio, y por eso el proyecto al color nut vale mucho más que uno a un color pequeño.
+La otra cara son las **reverse implied odds** — las fichas que *perderás* cuando ligues pero aun así pierdas la mano (completas tu color, pero la mesa se empareja y alguien tiene full). Los proyectos que quedan en segundo lugar sangran dinero en silencio, y por eso el [proyecto al color nut vale mucho más que uno a un color pequeño](/es/blog/holdem-starting-hands-chart).
 
 ---
 
@@ -182,6 +182,7 @@ El turn es el 3♠ — un ladrillo. El bote es de $200 y el villano empuja $200 
 
 :::readnext[Sigue leyendo]
 /es/blog/holdem-probability | Tabla de odds y probabilidades del póker | /images/holdem-probability-hero.webp
+/es/blog/holdem-starting-hands-chart | Qué manos iniciales jugar de verdad | /images/holdem-starting-hands-chart-hero.webp
 :::
 
 ## Preguntas frecuentes
@@ -226,7 +227,7 @@ A. Exactamente tus pot odds en porcentaje: call ÷ bote final. Frente a una apue
 2. **La comparación:** paga cuando tu equity (outs × 4 o × 2) supere a tus pot odds. Esa es toda la decisión.
 3. **El desempate:** las odds implícitas rescatan proyectos que se quedan justo por debajo del precio — pero solo cuando los stacks son profundos y tu proyecto es al nut.
 
-Hazlo unos cientos de veces y dejará de ser matemática para volverse instinto. Tirarás los calls sin remedio, harás los rentables y dejarás de pagar el impuesto de la "esperanza". Desde aquí, afina los números en bruto detrás de cada proyecto en la [tabla de odds y probabilidades del póker](/es/blog/holdem-probability).
+Hazlo unos cientos de veces y dejará de ser matemática para volverse instinto. Tirarás los calls sin remedio, harás los rentables y dejarás de pagar el impuesto de la "esperanza". Desde aquí, afina los números en bruto detrás de cada proyecto en la [tabla de odds y probabilidades del póker](/es/blog/holdem-probability), o asegúrate de entrar en los botes con manos que merezca la pena proyectar usando la [tabla de manos iniciales por posición](/es/blog/holdem-starting-hands-chart).
 
 ---
 
@@ -237,6 +238,11 @@ Hazlo unos cientos de veces y dejará de ser matemática para volverse instinto.
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Odds & Matemática</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Tabla de odds y probabilidades del póker</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Cada mano, flop y proyecto — los números detrás del precio</div>
+  </a>
+  <a href="/es/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Manos iniciales</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Tabla de manos iniciales por posición</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Entra en los botes con manos que merezca la pena proyectar</div>
   </a>
   <a href="/es/blog/holdem-reading-the-board" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Lectura de mesa</div>

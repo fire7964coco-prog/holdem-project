@@ -29,7 +29,7 @@ Casi todo jugador que empieza en Hold'em acaba haciéndose la misma pregunta:
 
 Al principio parecen el mismo juego. Sigues recibiendo dos cartas privadas, cinco comunitarias y cuatro rondas de apuestas desde preflop hasta river. Pero a nivel estratégico son dos mundos muy distintos. En una partida cash, tus fichas son dinero. En un torneo, tus fichas son tu vida en el evento.
 
-Esta guía compara ==torneos vs cash games en póker== como lo necesita un principiante: valor de las fichas, estructura de ciegas, tiempo, varianza, bankroll, ICM, profundidad de stack y qué formato deberías probar primero.
+Esta guía compara ==torneos vs cash games en póker== como lo necesita un principiante: valor de las fichas, estructura de ciegas, tiempo, varianza, bankroll, ICM, profundidad de stack y qué formato deberías probar primero. Si los torneos en sí todavía son un misterio, lee primero [cómo funcionan los torneos de póker — buy-ins, niveles de ciegas y el flujo del Día 1](/es/blog/holdem-tournament); este artículo compara los dos formatos en lugar de repetir esa guía de estructura.
 
 ![Mesa de Texas Hold'em donde torneos y cash games llevan a valores de fichas y estrategias distintas](/images/tournament-table-action.webp "Comparación entre torneos y cash games en póker")
 
@@ -38,7 +38,7 @@ Esta guía compara ==torneos vs cash games en póker== como lo necesita un princ
 - **Cash games:** las fichas equivalen a dinero real, las ciegas son fijas y puedes irte cuando quieras.
 - **Torneos:** pagas un buy-in, recibes fichas de torneo y juegas hasta quedar eliminado o ganar.
 - **Los cash games enseñan fundamentos más rápido** porque los stacks suelen ser más profundos y el feedback es más claro.
-- **Los torneos ofrecen mayor potencial de premio**, pero también mucha más varianza, sesiones largas y presión de ICM.
+- **Los torneos ofrecen mayor potencial de premio**, pero también mucha más varianza, sesiones largas y [presión de ICM](/es/blog/holdem-icm).
 - **Para la mayoría de principiantes, el cash game es el punto de partida más limpio.** Añade torneos cuando las bases ya salgan solas.
 
 ---
@@ -49,7 +49,7 @@ La forma más simple de decirlo es esta:
 
 **Un cash game trata de tomar decisiones rentables con dinero en la mesa. Un torneo trata de sobrevivir lo suficiente para cobrar y escalar premios.**
 
-En una partida cash, si entras con $200, tus fichas representan $200. Si subes a $450, puedes levantarte con $450. Si bajas a $120, eso es lo que te queda. Cada ficha tiene un valor directo en dinero.
+En una partida cash, si entras con $200, tus fichas representan $200. Si subes a $450, puedes levantarte con $450. Si bajas a $120, eso es lo que te queda. Cada ficha tiene un valor directo en dinero. La casa se lleva una pequeña parte de cada bote (o cobra por tiempo), así que conviene entender [cómo funciona el rake en el póker](/es/blog/holdem-rake) antes de elegir mesa.
 
 En un torneo, puedes pagar un buy-in de $100 y recibir 20.000 fichas. Esas fichas no valen $20.000 y no puedes cambiarlas por dinero a mitad del evento. Sirven para sobrevivir, presionar rivales y acercarte a mejores puestos de premio.
 
@@ -97,7 +97,7 @@ Esa asimetría explica por qué en torneos a veces conviene foldear manos que se
 
 Los cash games y los torneos también se sienten distintos porque las ciegas funcionan de otra manera.
 
-En un cash game $1/$2, las ciegas siguen siendo $1/$2 una hora después. Tres horas después, también. Puedes esperar mejores spots, recargar si hace falta y seguir jugando con stack profundo.
+En un cash game $1/$2, las ciegas siguen siendo $1/$2 una hora después. Tres horas después, también. Si la ciega pequeña, la ciega grande o la "opción" todavía te confunden, [qué son realmente las ciegas en el póker](/es/blog/holdem-blind-meaning) lo explica todo en un solo sitio. Puedes esperar mejores spots, recargar si hace falta y seguir jugando con stack profundo.
 
 En un torneo, las ciegas suben por niveles. Un stack que era de 100BB al inicio puede convertirse en 25BB sin haber perdido una mano. Luego puede bajar a 12BB. Llega un punto en el que esperar también cuesta caro.
 
@@ -172,7 +172,7 @@ La mayor división estratégica entre cash games y torneos es el ==ICM==.
 
 ICM significa **Independent Chip Model**. Estima el valor real en premios de tu stack de torneo según stacks, jugadores restantes y estructura de pagos. En cash games no hace falta ICM porque las fichas ya equivalen a dinero.
 
-El ICM pesa sobre todo cerca de la burbuja y en mesas finales.
+El ICM pesa sobre todo [cerca de la burbuja](/es/blog/holdem-bubble) y en mesas finales.
 
 Supón que estás en burbuja con stack medio y otro jugador va all-in. Tú tienes AKo. En cash, si el call es rentable por pot odds y equity, puedes pagar. En un torneo, perder la mano puede dejarte con $0, mientras que ganar no duplica tu equity de premio.
 
@@ -185,7 +185,7 @@ Ahí muchos principiantes se confunden. Piensan: *"AK es una mano premium. ¿Có
 | Valor de manos fuertes | Más estable | Cambia por presión de premios |
 | Presión de burbuja | No existe | Enorme |
 
-Cuando ves a un jugador fuerte de torneos foldear una mano que parece demasiado buena, muchas veces la razón es ICM.
+Cuando ves a un jugador fuerte de torneos foldear una mano que parece demasiado buena, muchas veces la razón es ICM. Un párrafo no le hace justicia a las matemáticas — los ejemplos completos y desarrollados están en [ICM explicado: por qué las fichas de torneo no son dinero](/es/blog/holdem-icm).
 
 ![Mesa en burbuja de torneo donde la presión ICM hace mucho más difícil pagar un all-in que en cash](/images/holdem-bubble-table.webp "Burbuja de torneo y decisiones ICM")
 
@@ -195,7 +195,9 @@ Cuando ves a un jugador fuerte de torneos foldear una mano que parece demasiado 
 
 Los cash games suelen premiar la habilidad deep stack. A menudo juegas con 100BB, así que las decisiones de flop, turn y river importan mucho. Necesitas entender value bets, faroles, textura de board, posición y rangos rivales.
 
-Los torneos empiezan profundos, pero suelen convertirse en juego de stack corto. Con 25BB, 15BB o 10BB, las decisiones preflop pesan mucho más. En vez de planear tres calles, decides si abrir, resubir all-in, pagar o foldear.
+Un buen [gráfico de manos iniciales](/es/blog/holdem-starting-hands-chart) es la base en ambos formatos, pero los torneos te sacan de ese punto de partida a medida que los stacks se acortan.
+
+Los torneos empiezan profundos, pero suelen convertirse en juego de stack corto. Con 25BB, 15BB o 10BB, las decisiones preflop pesan mucho más. En vez de planear tres calles, decides si abrir, resubir all-in, pagar o foldear. Los rangos exactos están en [estrategia de stack corto: cuándo hacer push o fold](/es/blog/holdem-short-stack).
 
 | Profundidad de stack | Más común en | Habilidad principal |
 |------|------|------|
@@ -225,7 +227,7 @@ Los torneos también pueden ser buenos si disfrutas la competencia y toleras la 
 | Jugar sesiones cortas | Cash game |
 | Estudiar ICM y presión de burbuja | Torneo |
 
-Si eres totalmente nuevo, aprende primero [cómo se juega una mano de Texas Hold'em](/es/blog/holdem-game-order) y [el ranking de manos de póker](/es/blog/holdem-hand-rankings). Elegir formato es mucho más fácil cuando las reglas básicas ya son automáticas.
+Si eres totalmente nuevo, aprende primero [cómo se juega una mano de Texas Hold'em](/es/blog/holdem-game-order) y [el ranking de manos de póker](/es/blog/holdem-hand-rankings). Elegir formato es mucho más fácil cuando las reglas básicas ya son automáticas — y si te inclinas por los torneos, mira [cómo funcionan los torneos de póker](/es/blog/holdem-tournament "thumb:/images/holdem-tournament-hero.webp") para buy-ins, niveles de ciegas y el flujo del Día 1.
 
 ---
 
@@ -286,6 +288,11 @@ Ningún formato es "mejor". Evalúan partes distintas del mismo juego. Muchos ju
 
 ---
 
+:::readnext[Sigue leyendo]
+/es/blog/holdem-pot-odds | Cómo calcular las pot odds | /images/holdem-pot-odds-hero.webp
+/es/blog/holdem-probability | Tabla de odds y probabilidades de póker | /images/holdem-probability-hero.webp
+:::
+
 ## FAQ
 
 **Q. ¿Los torneos de póker son más difíciles que los cash games?**
@@ -321,5 +328,32 @@ A. Como guía simple, 20-40 buy-ins para cash games y 50-100+ buy-ins para torne
 3. **Bankroll y tiempo importan.** Si no soportas sesiones largas o downswings largos, cash suele ser el mejor punto de partida.
 
 Domina primero los fundamentos de cash y añade torneos cuando estés listo para ciegas crecientes, presión ICM y el swing emocional de buscar una deep run.
+
+---
+
+## Posts relacionados
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
+  <a href="/es/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Torneos</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Cómo funcionan los torneos de póker</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Buy-ins, niveles de ciegas, formatos y checklist del Día 1</div>
+  </a>
+  <a href="/es/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Fundamentos de torneo</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Orden de juego en Texas Hold'em</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">De preflop al showdown — el flujo completo de la mano paso a paso</div>
+  </a>
+  <a href="/es/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Ranking de manos</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Ranking de manos de póker — de mejor a peor</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Las 10 manos con odds, ejemplos y puzles de board</div>
+  </a>
+  <a href="/es/blog/holdem-blind-meaning" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Ciegas</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">¿Qué son las ciegas en el póker?</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">SB, BB, robo de ciegas y la opción — todo explicado</div>
+  </a>
+</div>
 `.trim(),
 };

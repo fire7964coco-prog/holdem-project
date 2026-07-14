@@ -37,7 +37,7 @@ Over-limp / SB | Los casos donde sí está bien
 
 **Limpear es entrar en el bote preflop igualando exactamente el importe de la ciega grande — sin subir.** Estás poniendo el mínimo para ver un flop. Y algo clave: limpear solo aplica cuando *nadie ha subido todavía*: si alguien ya ha subido y tú lo igualas, eso es un **call** (pagar), no un limp. La palabra describe específicamente el camino pasivo y más barato para entrar en un bote sin subir.
 
-Conviene separar dos términos que la gente confunde. Un **limper** es quien entra en botes sin subir igualando la ciega grande. Una **calling station** es un jugador que paga demasiadas *apuestas* postflop, en el flop, el turn y el river. A menudo describen al mismo jugador loose-passive, pero son hábitos distintos — uno va de cómo *entras* en los botes, el otro de cómo *continúas* en ellos. Este glosario de términos de póker aclara el resto del vocabulario si algo te descoloca.
+Conviene separar dos términos que la gente confunde. Un **limper** es quien entra en botes sin subir igualando la ciega grande. Una **calling station** es un jugador que paga demasiadas *apuestas* postflop, en el flop, el turn y el river. A menudo describen al mismo jugador loose-passive, pero son hábitos distintos — uno va de cómo *entras* en los botes, el otro de cómo *continúas* en ellos. Este [glosario de términos de póker](/es/blog/holdem-glossary) aclara el resto del vocabulario si algo te descoloca.
 
 ---
 
@@ -66,7 +66,7 @@ Esta distinción importa porque casi todo el consejo de "limpear es terrible" va
 Cuando haces open-limp, renuncias a una cantidad sorprendente de cosas. Esto es exactamente lo que cedes:
 
 1. **No puedes ganar el bote preflop.** Esta es la grande. Cuando *subes* siendo el primero en entrar, todos pueden foldear y te llevas las ciegas sin oposición — dinero gratis, una buena parte de las veces. Cuando limpeas, ese número es **cero**. Te has garantizado que tienes que ligar una mano o ganarla más tarde; has tirado la forma más limpia de ganar.
-2. **Cedes la iniciativa.** El que sube preflop es el "agresor" — es quien lanza una apuesta de continuación en el flop y representa una mano fuerte, a menudo llevándose el bote sin nada. Limpea, y le has entregado esa historia a otro. Ahora reaccionas en lugar de liderar.
+2. **Cedes la iniciativa.** El que sube preflop es el "agresor" — es quien lanza una [apuesta de continuación](/es/blog/holdem-glossary) en el flop y representa una mano fuerte, a menudo llevándose el bote sin nada. Limpea, y le has entregado esa historia a otro. Ahora reaccionas en lugar de liderar.
 3. **Construyes un bote hinchado y multiway — a menudo fuera de posición.** Limpear invita a más pagadores y deja entrar barata a la ciega grande. Cuantos más jugadores vean el flop, menos vale tu mano, y si limpeaste desde posición temprana estarás actuando *primero* en cada calle sin iniciativa. Ese es el peor asiento de la mesa.
 4. **Te vuelves legible — y explotable.** Los limpers habituales aparecen con un rango limitado y transparente. Los buenos jugadores lo atacan sin descanso (más sobre esto abajo), así que acabas en spots complicados fuera de posición una y otra vez. Como dice el viejo refrán, los limpers crónicos "ganan botes pequeños y pierden los grandes".
 
@@ -121,7 +121,7 @@ Sí — en la mayoría de las partidas, un open-limp es un cartel luminoso que d
 - **Value fino y c-bets sin descanso.** Contra un rango de limp limitado (pocas o ninguna mano premium, ya que esas normalmente las subirías), los buenos jugadores apuestan más calles buscando value más fino y farolean con más libertad, confiados en que no puedes tener las nuts.
 - **Abuso de la posición.** Como los limpers suelen ser loose y pasivos, los jugadores agresivos simplemente los superan después del flop, sacándolos de sus manos marginales a base de apuestas y extrayendo value cuando conectan.
 
-El arreglo es refrescantemente simple: **subir o foldear como estándar, y reservar el limpear para los casos concretos de arriba.** En el momento en que dejas de hacer open-limp, dejas de ser el objetivo más fácil de la mesa — lo cual, casualmente, es lo primero que te separa del fish.
+El arreglo es refrescantemente simple: **subir o foldear como estándar, y reservar el limpear para los casos concretos de arriba.** En el momento en que dejas de hacer open-limp, dejas de ser el objetivo más fácil de la mesa — lo cual, casualmente, es lo primero que te separa del [fish](/es/blog/holdem-fish "thumb:/images/holdem-fish-hero.webp").
 
 ---
 
@@ -196,6 +196,16 @@ Arreglar tu forma de limpear es una de las mejoras más rápidas del póker — 
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Estrategia</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Tabla de manos iniciales</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Qué merece la pena subir en primer lugar</div>
+  </a>
+  <a href="/es/blog/holdem-fish" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Glosario</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">¿Qué es un fish?</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Los hábitos pasivos que delatan a un jugador débil</div>
+  </a>
+  <a href="/es/blog/holdem-glossary" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Glosario</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Términos de póker de la A a la Z</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Todo el vocabulario de la mesa, explicado</div>
   </a>
 </div>
 `.trim(),

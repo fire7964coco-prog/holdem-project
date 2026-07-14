@@ -87,7 +87,7 @@ Las dos ciegas se ponen **antes del reparto**, y el botón del dealer avanza un 
 | Orden preflop | Habla penúltima | Habla **la última** (la "opción") |
 | Orden postflop | Habla **primera** (una desventaja) | Habla segunda |
 
-> **Ojo:** antes del flop, la acción empieza en el jugador a la izquierda de la ciega grande y la BB habla la última — ve la decisión de todos los demás antes de actuar. Del flop en adelante el orden se reinicia y las ciegas hablan pronto. La secuencia calle a calle está desglosada en [el orden de juego en Texas Hold'em](/es/blog/holdem-game-order), y el nombre de cada asiento alrededor del botón se explica en la guía de posiciones del póker.
+> **Ojo:** antes del flop, la acción empieza en el jugador a la izquierda de la ciega grande y la BB habla la última — ve la decisión de todos los demás antes de actuar. Del flop en adelante el orden se reinicia y las ciegas hablan pronto. La secuencia calle a calle está desglosada en [el orden de juego en Texas Hold'em](/es/blog/holdem-game-order), y el nombre de cada asiento alrededor del botón se explica en [las posiciones del póker explicadas](/es/blog/holdem-positions).
 
 ---
 
@@ -111,15 +111,15 @@ Los niveles se escriben **SB/BB**. Una partida "$1/$2" significa ciega pequeña 
 </div>
 
 - **Cash game:** las ciegas se quedan ==g:**fijas**==. Te sientas en una $1/$2 y será $1/$2 hasta que te levantes. (Para una comparación a fondo, mira [torneos vs cash games](/es/blog/holdem-tournament-vs-cash-game).)
-- **Torneo:** las ciegas ==r:**suben** con un reloj== (p. ej. 25/50 → 50/100 → 100/200), así que la presión crece según avanza la noche. Los niveles de ciegas, el reloj y las hojas de estructura se explican en la guía de cómo funcionan los torneos de póker.
+- **Torneo:** las ciegas ==r:**suben** con un reloj== (p. ej. 25/50 → 50/100 → 100/200), así que la presión crece según avanza la noche. Los niveles de ciegas, el reloj y las hojas de estructura se explican en [cómo funcionan los torneos de póker](/es/blog/holdem-tournament).
 
 ---
 
 ## Qué es el ante de ciega grande (y el straddle)
 
-Desde las fases tempranas o medias de la mayoría de torneos se añade un **ante** — una pequeña apuesta obligatoria extra que se recauda en cada mano además de las ciegas, que engorda el bote y premia la agresividad. La versión moderna más extendida es el **big blind ante**: en lugar de que cada jugador eche fichas, ==la ciega grande pone un solo ante — normalmente igual a una ciega grande — por toda la mesa==, lo que mantiene el juego rápido y limpio. Cuándo y cómo entran los antes forma parte de la estructura de ciegas del torneo.
+Desde las fases tempranas o medias de la mayoría de torneos se añade un **ante** — una pequeña apuesta obligatoria extra que se recauda en cada mano además de las ciegas, que engorda el bote y premia la agresividad. La versión moderna más extendida es el **big blind ante**: en lugar de que cada jugador eche fichas, ==la ciega grande pone un solo ante — normalmente igual a una ciega grande — por toda la mesa==, lo que mantiene el juego rápido y limpio. Cuándo y cómo entran los antes forma parte de [la estructura de ciegas del torneo](/es/blog/holdem-tournament).
 
-Hay otra prima de las apuestas obligatorias que verás en cash: el **straddle** — una ciega extra *voluntaria* (normalmente 2x la BB) que se pone desde el asiento a la izquierda de la ciega grande y que sube temporalmente los niveles de esa mano. Tiene sus propias reglas, variantes y orden de acción — el desglose completo está en la guía sobre qué es un straddle y si te conviene ponerlo.
+Hay otra prima de las apuestas obligatorias que verás en cash: el **straddle** — una ciega extra *voluntaria* (normalmente 2x la BB) que se pone desde el asiento a la izquierda de la ciega grande y que sube temporalmente los niveles de esa mano. Tiene sus propias reglas, variantes y orden de acción — el desglose completo está en [qué es un straddle y si te conviene ponerlo](/es/blog/holdem-straddle "thumb:/images/holdem-straddle-hero.webp").
 
 ---
 
@@ -140,14 +140,14 @@ Al sentarte en una mesa de cash en vivo normalmente no juegas gratis: o **pones 
 ![Pila de fichas cayendo hacia el bote en una mesa de póker — un robo de ciegas desde el botón](/images/holdem-blind-steal.webp)
 
 - **Ciega pequeña: sin complicarte.** Penúltima preflop pero **primera en hablar** tras el flop; el enfoque limpio para empezar es **subir o tirar**, no pagar. Entrar de limp y que te ataquen fuera de posición es una fuga constante de fichas.
-- **Ciega grande: defiende con las odds.** Ya has puesto una apuesta completa, así que puedes pagar subidas de forma rentable con más manos que desde cualquier otro asiento. Ante un open a 2,5 BB (con la ciega pequeña retirándose), pagas 1,5 BB por un bote de 4 BB — unas 2,7 a 1, es decir, con aproximadamente un 27% de equity el call ya sale a cuenta. Esa cuenta son las pot odds, y por eso existe la "defensa de la ciega grande".
-- **Posición tardía: el robo.** Cuando todos se retiran hasta el botón o el cutoff, una subida que solo busca llevarse las dos ciegas es un **robo de ciegas** — y contraatacar con una resubida es un **resteal**. Los tamaños de robo, los rangos por asiento y cuánto defender son temas de estrategia, tratados a fondo en la guía de jugar en posición vs fuera de posición.
+- **Ciega grande: defiende con las odds.** Ya has puesto una apuesta completa, así que puedes pagar subidas de forma rentable con más manos que desde cualquier otro asiento. Ante un open a 2,5 BB (con la ciega pequeña retirándose), pagas 1,5 BB por un bote de 4 BB — unas 2,7 a 1, es decir, con aproximadamente un 27% de equity el call ya sale a cuenta. Esa cuenta son las [pot odds](/es/blog/holdem-pot-odds), y por eso existe la "defensa de la ciega grande".
+- **Posición tardía: el robo.** Cuando todos se retiran hasta el botón o el cutoff, una subida que solo busca llevarse las dos ciegas es un **robo de ciegas** — y contraatacar con una resubida es un **resteal**. Los tamaños de robo, los rangos por asiento y cuánto defender son temas de estrategia, tratados a fondo en [la guía de jugar en posición vs fuera de posición](/es/blog/holdem-position-play).
 
 ---
 
 :::readnext[Sigue leyendo]
 /es/blog/texas-holdem-rules-for-beginners | Reglas del Texas Hold'em para principiantes | /images/rules-texas-holdem.webp
-/es/blog/holdem-betting-actions | Check, bet, call, raise y fold — las acciones de apuesta | /images/holdem-betting-actions-hero.webp
+/es/blog/holdem-position-play | Estrategia: en posición vs fuera de posición | /images/holdem-position-play-hero.webp
 :::
 
 ## Preguntas frecuentes
@@ -192,27 +192,27 @@ A. No exactamente — "las ciegas" se refiere a la pequeña y la grande juntas, 
 2. La **ciega grande es la unidad de la mesa** — subidas, stacks y presión de torneo se miden en BBs.
 3. Juega las ciegas con cabeza: **sube o tírate desde la ciega pequeña**, **defiende la ciega grande con las pot odds** y estudia los robos desde posición tardía cuando todos se retiran hasta ti.
 
-¿Estás empezando de cero? La [guía de reglas del Texas Hold'em para principiantes](/es/blog/texas-holdem-rules-for-beginners "thumb:/images/rules-texas-holdem.webp") cubre la base, [el orden de juego de una mano](/es/blog/holdem-game-order) muestra exactamente cuándo actúa cada ciega, y la guía de posiciones del póker explica cómo tu asiento — no solo las ciegas — condiciona cada decisión.
+¿Estás empezando de cero? La [guía de reglas del Texas Hold'em para principiantes](/es/blog/texas-holdem-rules-for-beginners "thumb:/images/rules-texas-holdem.webp") cubre la base, [el orden de juego de una mano](/es/blog/holdem-game-order) muestra exactamente cuándo actúa cada ciega, y [las posiciones del póker explicadas](/es/blog/holdem-positions) muestran cómo tu asiento — no solo las ciegas — condiciona cada decisión.
 
 ---
 
 ## Artículos relacionados
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
-  <a href="/es/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Acciones</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Check, bet, call, raise y fold, explicados</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Las cinco acciones de apuesta y cuándo usar cada una</div>
+  <a href="/es/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Posiciones</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Las posiciones de la mesa de póker explicadas</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">De UTG al botón, 6-max vs 9-max y rangos de apertura</div>
   </a>
   <a href="/es/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Orden de juego</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">El orden de juego en Texas Hold'em</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">La secuencia de acción: preflop → flop → turn → river</div>
   </a>
-  <a href="/es/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Formatos</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Torneos vs cash games</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Ciegas fijas o crecientes, buy-ins y qué formato te conviene</div>
+  <a href="/es/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Torneos</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Cómo funcionan los torneos de póker</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Niveles de ciegas, antes, premios y formatos</div>
   </a>
 </div>
 `.trim(),

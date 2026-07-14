@@ -69,7 +69,7 @@ A continuación, el dealer descubre cinco cartas compartidas en el centro de la 
 
 </div>
 
-==r:**No** estás obligado a usar tus dos cartas propias.== Puedes usar dos, una o incluso cero si la propia mesa forma la mejor mano — una habilidad que se llama leer la mesa.
+==r:**No** estás obligado a usar tus dos cartas propias.== Puedes usar dos, una o incluso cero si la propia mesa forma la mejor mano — una habilidad que se llama [leer la mesa](/es/blog/holdem-reading-the-board).
 
 Por ejemplo:
 
@@ -79,7 +79,7 @@ Por ejemplo:
 | 8♠ 8♦ | K♣ 8♥ 4♠ 4♦ J♣ | Full de ochos y cuatros |
 | 2♣ 3♦ | A♠ K♠ Q♠ J♠ 10♠ | Escalera real en la mesa |
 
-Si la jerarquía de manos todavía te suena nueva, abre la [jerarquía de manos del Texas Hold'em](/es/blog/holdem-hand-rankings) antes de jugar. Saber si el color gana a la escalera es más importante que memorizar estrategia avanzada.
+Si la jerarquía de manos todavía te suena nueva, abre la [jerarquía de manos del Texas Hold'em](/es/blog/holdem-hand-rankings) antes de jugar. Saber [si el color gana a la escalera](/es/blog/holdem-flush-vs-straight) es más importante que memorizar estrategia avanzada.
 
 ---
 
@@ -137,7 +137,7 @@ El truco fácil para recordarlo:
 
 ==**Antes del flop, mira a la izquierda de la ciega grande. Después del flop, mira a la izquierda del botón.**==
 
-Por eso ==g:el botón es una posición tan poderosa==. ==El botón normalmente habla el último en el flop, el turn y el river==, lo que significa que ve lo que hacen todos los demás antes de decidir. Para el desglose completo de cada asiento — de UTG al botón, 6-max vs 9-max y qué rango de apertura permite cada sitio — consulta la guía de posiciones de póker.
+Por eso ==g:el botón es una posición tan poderosa==. ==El botón normalmente habla el último en el flop, el turn y el river==, lo que significa que ve lo que hacen todos los demás antes de decidir. Para el desglose completo de cada asiento — de UTG al botón, 6-max vs 9-max y qué rango de apertura permite cada sitio — consulta la [guía de posiciones de póker](/es/blog/holdem-positions).
 
 ---
 
@@ -244,7 +244,7 @@ La posición es **cuándo actúas en cada ronda de apuestas**. Actuar más tarde
 | Izquierda del dealer | SB (Ciega pequeña) | 8.º pre, 1.º post | El peor asiento — habla primero en cada calle postflop |
 | Dos a la izquierda del dealer | BB (Ciega grande) | Último pre (9.º), 2.º post | Tiene opción de subir preflop; fuera de posición postflop |
 
-==g:El botón es el asiento más rentable de la mesa.== Hablas el último en el flop, el turn y el river — es decir, cada jugador te enseña la fuerza de su mano antes de que tú decidas. Para una guía completa de posiciones, consulta la guía de posiciones de póker, de UTG al botón.
+==g:El botón es el asiento más rentable de la mesa.== Hablas el último en el flop, el turn y el river — es decir, cada jugador te enseña la fuerza de su mano antes de que tú decidas. Para una guía completa de posiciones, consulta la [guía de posiciones de póker, de UTG al botón](/es/blog/holdem-positions).
 
 ---
 
@@ -283,7 +283,7 @@ Buenas manos iniciales para un principiante:
 
 </div>
 
-Para el chart completo de 169 manos organizado por posición (de UTG al botón), mira el chart de manos iniciales del Texas Hold'em por posición. Y antes de poder usar bien las manos iniciales, necesitas dominar tus [acciones de apuesta — pasar, igualar, subir, retirarse](/es/blog/holdem-betting-actions).
+Para el chart completo de 169 manos organizado por posición (de UTG al botón), mira el [chart de manos iniciales del Texas Hold'em por posición](/es/blog/holdem-starting-hands-chart). Y antes de poder usar bien las manos iniciales, necesitas dominar tus [acciones de apuesta — pasar, igualar, subir, retirarse](/es/blog/holdem-betting-actions).
 
 ---
 
@@ -350,7 +350,7 @@ Jerarquía básica de manos, de la más fuerte a la más débil (con la frecuenc
 | 9 | Pareja | 43,8% — la mano más frecuente en el showdown |
 | 10 | Carta alta | 17,4% — la mano más débil en el showdown; gana sobre todo con faroles |
 
-Si dos jugadores tienen el mismo tipo de mano, se comparan las cartas más altas relevantes — son las reglas del kicker y los desempates. Si las mejores cinco cartas son exactamente iguales, el bote se divide.
+Si dos jugadores tienen el mismo tipo de mano, se comparan las cartas más altas relevantes — son las [reglas del kicker y los desempates](/es/blog/holdem-tiebreak-rules). Si las mejores cinco cartas son exactamente iguales, el bote se [divide](/es/blog/holdem-split-pot-rules).
 
 ---
 
@@ -457,6 +457,11 @@ Como siguiente paso, repasa la [jerarquía de manos del Texas Hold'em](/es/blog/
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Jerarquía de manos</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Manos de póker — de la mejor a la peor</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Las 10 manos con probabilidades, ejemplos y problemas de mesa</div>
+  </a>
+  <a href="/es/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Posiciones</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Posiciones en el póker: de UTG al botón</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Por qué el botón gana — mapa de asientos y rangos de apertura</div>
   </a>
   <a href="/es/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Apuestas</div>

@@ -110,7 +110,7 @@ El mismo call de $50, decisiones opuestas — y las cartas nunca cambiaron. Lo q
 
 </div>
 
-Dos fuerzas fijan el número. **Frecuencia:** un gutshot liga la mitad de veces que un proyecto de color, así que necesita que el pago sea más o menos el doble de grande para quedar en tablas. **Disfraz:** un set escondido cobra mucho más que un color obvio de cuatro cartas, porque tu rival no puede ponerte en él — que es la razón por la que los sets toleran su baja probabilidad de ligar. El proyecto de color al nut vale mucho más que uno bajo por el mismo motivo: cobra *y* no pierde cuando liga.
+Dos fuerzas fijan el número. **Frecuencia:** un gutshot liga la mitad de veces que un proyecto de color, así que necesita que el pago sea más o menos el doble de grande para quedar en tablas. **Disfraz:** un set escondido cobra mucho más que un color obvio de cuatro cartas, porque tu rival no puede ponerte en él — que es la razón por la que los sets toleran su baja probabilidad de ligar. El [proyecto de color al nut vale mucho más que uno bajo](/es/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") por el mismo motivo: cobra *y* no pierde cuando liga.
 
 ---
 
@@ -243,6 +243,11 @@ Domina esto y dejarás de quemar fichas en calls esperanzados mientras aún hace
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Odds y matemática</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Drawing odds y odds de ligar X</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Con qué frecuencia liga de verdad un set, color o escalera</div>
+  </a>
+  <a href="/es/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Manos iniciales</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Tabla de manos iniciales por posición</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Con qué manos especulativas vale la pena entrar al proyecto</div>
   </a>
 </div>
 `.trim(),

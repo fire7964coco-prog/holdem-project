@@ -247,7 +247,7 @@ Tienes **A♥ 3♣**. La mesa ya trae trío de reyes.
 
 ## Por qué el orden es así
 
-La jerarquía no es arbitraria: es ==pura probabilidad==. ==g:**Cuanto más difícil es ligar una mano, más alto está.**== El color está por encima de la escalera porque, en una baraja de 52 cartas, simplemente hay menos formas de hacer cinco del mismo palo que cinco en secuencia de cualquier palo. Ese único principio explica toda la jerarquía — puedes ver los números exactos en la tabla de probabilidades del póker.
+La jerarquía no es arbitraria: es ==pura probabilidad==. ==g:**Cuanto más difícil es ligar una mano, más alto está.**== El color está por encima de la escalera porque, en una baraja de 52 cartas, simplemente hay menos formas de hacer cinco del mismo palo que cinco en secuencia de cualquier palo. Ese único principio explica toda la jerarquía — puedes ver los números exactos en la [tabla de probabilidades y odds del póker](/es/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
 También explica la gran excepción que verás: en el **Short Deck (6+) Hold'em**, donde se quitan los doses a los cincos, los colores se vuelven más difíciles que los fulls — así que en ese formato un ==r:**color gana a un full**==. Cambió la matemática, cambió el orden. Más sobre las diferencias por modalidad abajo.
 
@@ -393,7 +393,7 @@ A. Sí. El As juega alto y bajo, así que A-2-3-4-5 ("la rueda") es una escalera
 
 Aprende el orden en una tarde, practica los duelos confusos y repasa el escaneo "palos → escaleras → parejas" en cada mesa. Hazlo y nunca volverás a empujar el bote hacia el lado equivocado.
 
-Una vez que dominas la jerarquía, el siguiente paso natural es saber con qué manos entrar — mira la tabla de manos iniciales de Texas Hold'em por posición para ver exactamente qué cartas jugar desde cada asiento.
+Una vez que dominas la jerarquía, el siguiente paso natural es saber con qué manos entrar — mira la [tabla de manos iniciales de Texas Hold'em por posición](/es/blog/holdem-starting-hands-chart) para ver exactamente qué cartas jugar desde cada asiento.
 
 ---
 
@@ -419,6 +419,11 @@ Una vez que dominas la jerarquía, el siguiente paso natural es saber con qué m
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Guía para principiantes</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Reglas del Texas Hold'em para principiantes</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Todas las reglas, del reparto al showdown</div>
+  </a>
+  <a href="/es/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Manos iniciales</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Tabla de manos iniciales por posición</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Qué cartas jugar desde UTG hasta el botón</div>
   </a>
   <a href="/es/blog/holdem-reading-the-board" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Lectura de mesa</div>

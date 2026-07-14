@@ -273,6 +273,11 @@ A. El núcleo es el mismo, con dos diferencias prácticas. Primera: en torneos, 
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Reglas del Texas Hold'em para principiantes</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Todas las reglas, de las ciegas al showdown</div>
   </a>
+  <a href="/es/blog/holdem-split-pot-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Bote dividido</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Reglas del bote dividido y del reparto</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Cuándo se reparte el bote y por qué</div>
+  </a>
   <a href="/es/blog/holdem-showdown-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Showdown</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Reglas del showdown</div>

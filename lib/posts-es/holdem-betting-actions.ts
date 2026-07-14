@@ -105,7 +105,7 @@ Retirarse (foldear) significa tirar tus cartas y abandonar la mano. No pagas nad
 
 Sí — puedes retirarte en cualquier momento en que la acción sea tuya, incluso antes de apostar nada y hasta cuando pasar sería gratis. Pero ojo con la trampa de esa última parte: **tirarte cuando podrías pasar gratis es regalar una mano sin motivo**. Si nadie ha apostado, simplemente pasa.
 
-Una regla de etiqueta en vivo: no te tires ==fuera de turno==. Espera a que la acción llegue a ti — tirarte antes de tiempo da información a los jugadores que aún están decidiendo, y en la mayoría de las salas te caerá un aviso o una sanción. Saber *cuándo* retirarse es la jugada correcta es una habilidad en sí misma — eso se trata en la guía de cuándo foldear en el póker.
+Una regla de etiqueta en vivo: no te tires ==fuera de turno==. Espera a que la acción llegue a ti — tirarte antes de tiempo da información a los jugadores que aún están decidiendo, y en la mayoría de las salas te caerá un aviso o una sanción. Saber *cuándo* retirarse es la jugada correcta es una habilidad en sí misma — eso se trata en [cuándo foldear en el póker](/es/blog/holdem-when-to-fold).
 
 ---
 
@@ -133,7 +133,7 @@ Dos reglas del póker en vivo que vienen con la subida:
 1. **Anuncia "subo" antes de mover las fichas.** ¿Dices "pago" y luego empujas más fichas? Ese extra es un ==string bet== y en la mayoría de las salas el crupier lo dictaminará como un call.
 2. **Un solo movimiento.** Si no anuncias, tus fichas deben entrar en un único movimiento hacia delante.
 
-*Cuánto* deberías subir (aperturas de 2,5x, 3-bets de 3x, tamaños según la textura de la mesa) es estrategia, no reglas — eso vive en el pilar de estrategia de Texas Hold'em.
+*Cuánto* deberías subir (aperturas de 2,5x, 3-bets de 3x, tamaños según la textura de la mesa) es estrategia, no reglas — eso vive en el [pilar de estrategia de Texas Hold'em](/es/blog/holdem-strategy).
 
 ---
 
@@ -156,7 +156,7 @@ Ir all-in significa apostar ==todas las fichas que te quedan==. Puedes hacerlo e
 
 Si tu all-in es *menor* que la apuesta vigente, no estás fuera: simplemente compites por un ==bote principal== limitado a tu aportación, mientras que las fichas extra de los stacks más grandes forman un ==bote secundario (side pot)== que tú no puedes ganar. Y un all-in que sea *menor que un min-raise completo* generalmente no reabre la acción para los jugadores que ya actuaron — una regla sutil que sorprende hasta a los habituales.
 
-La mecánica completa — las cuentas del side pot, quién enseña primero, el table stakes — está en [reglas del all-in y side pots](/es/blog/holdem-all-in-rules), y lo que pasa cuando las manos en all-in empatan lo cubren las reglas del bote dividido.
+La mecánica completa — las cuentas del side pot, quién enseña primero, el table stakes — está en [reglas del all-in y side pots](/es/blog/holdem-all-in-rules), y lo que pasa cuando las manos en all-in empatan lo cubren las [reglas del bote dividido](/es/blog/holdem-split-pot-rules).
 
 ---
 
@@ -165,8 +165,8 @@ La mecánica completa — las cuentas del side pot, quién enseña primero, el t
 Esta guía cubre qué *es* cada acción y cuándo es *legal*. Cuál elegir — cuándo apostar, cuándo un call es rentable, cuándo hay que tirar una buena mano — es otro árbol de habilidades:
 
 - Juzgar primero la fuerza bruta de tu mano: [jerarquía de manos de póker](/es/blog/holdem-hand-rankings)
-- El marco para cada decisión: la estrategia de Texas Hold'em y sus 5 decisiones
-- Por qué tu asiento lo cambia todo: las posiciones en el póker
+- El marco para cada decisión: [la estrategia de Texas Hold'em y sus 5 decisiones](/es/blog/holdem-strategy)
+- Por qué tu asiento lo cambia todo: [las posiciones en el póker](/es/blog/holdem-positions)
 
 Una regla de oro que ahorra dinero de verdad a los principiantes mientras tanto: ==si una mano no es lo bastante fuerte para subir, retirarse suele ser mejor que pagar.==
 
@@ -196,6 +196,7 @@ Ante una apuesta de $10, un jugador lanza en silencio una sola ficha de $100 esp
 
 :::readnext[Sigue leyendo]
 /es/blog/holdem-all-in-rules | Reglas del all-in y side pots | /images/holdem-all-in-rules-hero.webp
+/es/blog/holdem-strategy | Estrategia de Texas Hold'em: las 5 decisiones | /images/holdem-strategy-hero.webp
 :::
 
 ## Preguntas frecuentes
@@ -230,7 +231,7 @@ A. Meter fichas en varios movimientos, o decir "pago" y luego añadir una subida
 
 **Q. ¿Qué significa limpear en el póker?**
 
-A. Limpear (limp) es entrar al bote en el preflop solo igualando la ciega grande en lugar de subir. Es legal, pero casi siempre es un juego débil — hay situaciones concretas en las que sí tiene sentido, pero son la excepción.
+A. Limpear (limp) es entrar al bote en el preflop solo igualando la ciega grande en lugar de subir. Es legal, pero casi siempre es un juego débil — mira [por qué limpear te cuesta dinero](/es/blog/holdem-limping) para saber cuándo sí es aceptable.
 
 ---
 
