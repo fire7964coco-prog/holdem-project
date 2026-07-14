@@ -3,19 +3,19 @@ import type { Post } from "../posts";
 export const POST: Post = {
   slug: "holdem-blind-meaning",
   title: "德州扑克盲注是什么？小盲注和大盲注，一次讲清楚",
-  seoTitle: "还没看牌就得先交筹码？— 德州扑克小盲注与大盲注",
-  desc: "还没发牌，就有两个人先把筹码放进底池——为什么？小盲注和大盲注是什么、由谁下、金额怎么定，还有大盲前注和单挑规则，一篇全说清。",
+  seoTitle: "还没看牌就得先交筹码？— 小盲注与大盲注是什么",
+  desc: "还没发牌，就有两个人先把筹码交进底池——为什么？小盲注和大盲注是什么、由谁下、SB 与 BB 金额、大盲前注、单挑规则，一篇全说清。",
   tldr: "盲注是发牌前必须下的强制注。小盲注坐在庄家按钮左边第一个位置，大盲注在小盲注左边；大盲注通常是小盲注的两倍，也是整张牌桌的下注计量单位。",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-07-12",
+  updated: "2026-07-14",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 分钟",
   emoji: "💰",
   image: "/images/holdem-blind-meaning-hero.webp",
   imageAlt: "扑克桌上金色庄家按钮旁标着小盲注和大盲注的两叠筹码",
-  tags: ["德州扑克盲注是什么", "大盲注是什么", "小盲注是什么", "大盲注和小盲注的区别", "盲注规则", "大盲前注", "德州扑克规则"],
+  tags: ["德州扑克盲注是什么", "大盲注是什么", "小盲注是什么", "大盲注和小盲注的区别", "盲注规则", "大盲前注", "德州扑克盲注"],
   content: `
 我这辈子打的第一手线下扑克，一张牌都还没看到，荷官就敲了敲我面前的桌布："请下小盲注。"我当场愣住了——交钱？交*什么*钱？十二年、几千个小时过去了，几乎每场牌局我还是能看到有新手在同一个瞬间愣在那里。
 
@@ -31,7 +31,7 @@ export const POST: Post = {
 ### 核心数字
 
 :::stripe
-2 | 每一手牌都有两份强制注
+2 | 每一手牌都要下两份强制注
 1/2 | 小盲注通常是大盲注的一半
 1 BB | 大盲注 = 牌桌的下注计量单位
 :::
@@ -56,7 +56,7 @@ export const POST: Post = {
 
 ## 大盲注是什么？
 
-**大盲注（BB）**是**一份完整的基础注**，由紧挨着**小盲注左边**的玩家下。在 $1/$2 的牌局里，大盲注就是 $2。如果翻牌前没有人加注，大盲注还享有一项特权——可以选择[过牌](/zh/blog/holdem-betting-actions)、免费看翻牌，这就是所谓的**"option"（选择权）**。
+**大盲注（BB）**是**一份完整的基础注**，由紧挨着**小盲注左边**的玩家下。在 $1/$2 的牌局里，大盲注就是 $2。如果翻牌前没有人加注，大盲注还享有一项特权——可以[过牌](/zh/blog/holdem-betting-actions)、免费看翻牌，这就是所谓的**"option"（选择权）**。
 
 很多人会单独去搜"大盲注"，是有原因的：它不只是一个座位，更是==整个游戏的**度量衡**==。
 
@@ -115,7 +115,7 @@ export const POST: Post = {
 
 ---
 
-## 大盲前注是什么？（顺带说说 Straddle）
+## 大盲前注是什么？（顺带说说 straddle）
 
 大多数锦标赛从前中期开始会加入**前注（ante）**——在盲注之外，每手牌额外收取的一小笔强制注，用来做大底池、奖励主动进攻。如今最流行的形式是**大盲前注（big blind ante）**：不用每个人都往里丢筹码，==由大盲注一个人替全桌交一份前注——通常等于一个大盲注==，让游戏又快又干净。前注何时启用、怎么收，属于锦标赛盲注结构的一部分。
 
@@ -123,7 +123,7 @@ export const POST: Post = {
 
 ---
 
-## 单挑（Heads-Up）时盲注由谁来下？
+## 单挑（heads-up）时盲注由谁来下？
 
 当桌上只剩两名玩家（或者本身就是单挑赛）时，惯常的规则==r:会反过来==。**庄家按钮下小盲注**，并在翻牌前==**第一个**==行动；另一名玩家下大盲注，翻牌前==**最后**==行动——之后的每条街则改为第一个行动。这是按钮位唯一要交盲注的场合，几乎每个人第一次遇到都会中招。
 
@@ -147,7 +147,6 @@ export const POST: Post = {
 
 :::readnext[继续阅读]
 /zh/blog/texas-holdem-rules-for-beginners | 德州扑克新手规则入门 | /images/rules-texas-holdem.webp
-/zh/blog/holdem-betting-actions | 过牌、下注、跟注、加注、弃牌——下注动作详解 | /images/holdem-betting-actions-hero.webp
 :::
 
 ## 常见问题
@@ -199,20 +198,10 @@ A. 不完全是——"盲注"指小盲注和大盲注两者的合称，而大盲
 ## 相关文章
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
-  <a href="/zh/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">下注动作</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">过牌、下注、跟注、加注、弃牌详解</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">五种下注动作，以及各自该在什么时候用</div>
-  </a>
   <a href="/zh/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">行动顺序</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">德州扑克的行动顺序</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">翻牌前 → 翻牌 → 转牌 → 河牌的完整行动流程</div>
-  </a>
-  <a href="/zh/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">游戏形式</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">锦标赛 vs 现金局</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">盲注固定还是上涨、买入方式，以及哪种形式适合你</div>
   </a>
 </div>
 `.trim(),
