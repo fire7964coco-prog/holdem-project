@@ -179,10 +179,30 @@ export default function Page({ params }: { params: { slug: string } }) {
       }
     : null;
 
+  // 순위/목록형 글이면 ItemList JSON-LD (족보 순위 등) — AI 오버뷰·발췌(GEO) 인용 최적화
+  const itemListSchema = post.itemList
+    ? {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        name: post.itemList.name,
+        itemListOrder: `https://schema.org/ItemListOrder${
+          post.itemList.order === "Ascending" ? "Ascending" : "Descending"
+        }`,
+        numberOfItems: post.itemList.items.length,
+        itemListElement: post.itemList.items.map((it, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          name: it.name,
+          ...(it.description ? { description: it.description } : {}),
+        })),
+      }
+    : null;
+
   const graph = [
     articleSchema,
     breadcrumbSchema,
     ...(eventSchema ? [eventSchema] : []),
+    ...(itemListSchema ? [itemListSchema] : []),
     ...(faqSchema ? [faqSchema] : []),
   ];
 

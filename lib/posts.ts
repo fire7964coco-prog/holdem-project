@@ -68,6 +68,15 @@ export interface Post {
    organizerName?: string;
    organizerUrl?: string;
  };
+ /**
+  * 순위/목록형 콘텐츠(예: 족보 순위)에 지정하면 ItemList 구조화 데이터(JSON-LD)를 생성.
+  * AI 오버뷰·발췌(GEO)에 "순서 있는 목록"을 정확히 인용시키기 위함. 강→약 기본(내림차순).
+  */
+ itemList?: {
+   name: string;
+   order?: "Ascending" | "Descending";
+   items: { name: string; description?: string }[];
+ };
 }
 
 const LEGACY_POSTS: Post[] = [
@@ -4795,12 +4804,27 @@ APT 제주 클래식은 아시아 전역에서 실력 있는 플레이어들이 
   tldr: "홀덤 족보 순위는 로열플러시 → 스트레이트플러시 → 포카드 → 풀하우스 → 플러시 → 스트레이트 → 트리플 → 투페어 → 원페어 → 하이카드 10단계다.",
   category: "초보 가이드",
   date: "2026-04-02",
-  updated: "2026-07-10",
+  updated: "2026-07-15",
   readTime: "14분",
   emoji: "🃏",
   image: '/images/holdem-hand-rankings-showdown.webp',
   imageAlt: '포커 테이블 위 커뮤니티 카드 다섯 장과 양쪽 플레이어의 홀카드가 공개된 쇼다운 장면',
   tags: ["홀덤족보", "홀덤 족보 순위", "포커 족보", "홀덤 패 순위", "포커 핸드 순위", "홀덤 핸드 랭킹", "로열플러시", "풀하우스", "포커 족보 순서", "홀덤 족보 종류"],
+  itemList: {
+    name: "홀덤 족보 순위 (텍사스 홀덤, 강→약 10단계)",
+    items: [
+      { name: "로열 플러시", description: "A K Q J 10 동일 무늬 · Royal Flush · 0.000154%" },
+      { name: "스트레이트 플러시", description: "연속 5장 동일 무늬 · Straight Flush · 0.00139%" },
+      { name: "포카드", description: "같은 숫자 4장 · Four of a Kind · 0.024%" },
+      { name: "풀하우스", description: "트리플 + 원페어 · Full House · 0.144%" },
+      { name: "플러시", description: "같은 무늬 5장 · Flush · 0.197%" },
+      { name: "스트레이트", description: "연속 숫자 5장 · Straight · 0.392%" },
+      { name: "트리플", description: "같은 숫자 3장 · Three of a Kind · 2.11%" },
+      { name: "투페어", description: "다른 페어 2쌍 · Two Pair · 4.75%" },
+      { name: "원페어", description: "같은 숫자 2장 · One Pair · 42.3%" },
+      { name: "하이카드", description: "조합 없음 · High Card · 50.1%" },
+    ],
+  },
   content: `
 ## 홀덤족보 순위 — 지금 바로 확인하세요
 
