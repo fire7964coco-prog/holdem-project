@@ -5,17 +5,33 @@
 
 ---
 
-## ▶▶▶ 새 세션 START HERE (2026-07-15 — ★★★zh(중국어 간체) 완전 완성(42/42) + EN 링크정합(결손 0) + ZH_CLUSTERS / 다음 = ar)
+## ▶▶▶ 새 세션 START HERE (2026-07-15 — ★★★id(인도네시아어) 완전 완성(42/42) + 문체 Anda 통일 + ID_CLUSTERS / 다음 = ar)
+
+> ✅✅✅ **id 42/42편 완성** — EN 마스터와 완전 동일 구조. Rules 6(재번역)·HR 6·Odds 6·Strategy 8·Tournament 9(tvc 재번역)·Glossary 6·cc 1. 커밋 `ddedd47`(HR)·`527f24c`(Odds)·`bfa7642`(Strategy)·`ee90ff2`(Tournament)·`63c3f67`(Glossary+cc)·`e936046`(링크복원134→0+tvc·Rules 6 재번역)+ID_CLUSTERS. 하드게이트 통과(**406 intl posts/24언어**). **id 잔여 부채 없음**(결손 0, 문체 Anda 통일). 상세 WORKLOG 2026-07-15 최상단.
+> - 브리프 `docs/translation-terms-id.md`(**Anda 격식체**·유럽식 숫자·영어 앵글리시즘). **id = 7번째 완역**(ja·es·pt·de·zh·id).
+> - ★★id 특유 교훈: ①**문체 "Anda"**(kamu 아님 — 옛 브리프 kamu는 폐기, 6월 stale Rules 6편이 kamu여서 재번역함) ②**유럽식 숫자**(콤마 소수점·마침표 천단위) — zh와 정반대, de/pt와 동일 ③**비율**: "1 in X"→"1 dari X", "X-to-1"→"X:1"(banding/ke-1 금지) ④desc ≤160 ⑤**병렬 배치 내 slug 레이스**: 마지막 필라 프롬프트에 "파일 존재 확인 금지·전 링크 유지" 넣으면 예방됨, 아니면 최종 EN-parity 복원에서 일괄 처리 ⑥stale 파일은 §13 드리프트+문체 리스크 → 하드닝 EN 재번역이 정답(de/zh/id 공통).
+
+### ▶▶ 다음 = ar(아랍어) — 사용자가 "내일 직접 착수" 지시
+- 구12언어 순서: ja✅ → es✅ → pt✅ → de✅ → zh✅ → id✅ → **ar** → ms → vi → hi → tr.
+- ⚠️⚠️ **ar 착수 시 반드시 `docs/translation-terms-ar.md` 브리프부터 만들고 시작**(사용자 명시 요청). 조사할 것: RTL 방향 처리·아랍어 숫자표기(아랍-인도 숫자 vs 서양 숫자)·포커 용어 영어유지 관습·문체(공식/구어)·현지 포커 커뮤니티.
+- ★★**리서치 규칙(전 언어 공통, 2026-07-15 사용자 지시)**: 착수 전 **홀덤 관련 구글 top10 중 실제 포스팅 5편 검색·분석·정독**([[translation-local-research-first]]).
+- ar 절차: ①아랍어 웹 리서치(5편) → 브리프 ②Opus 병렬번역(EN 1:1·§13 그대로) ③count 구조패리티 ④네이티브 AR 적대적 QA ⑤교정 ⑥필라별 커밋 ⑦42편 완성 후 최종 EN 링크복원 + `AR_CLUSTERS`.
+- `lib/posts-ar/` 현황부터 확인(기존 부분번역 stale 재검수 — id처럼 문체/§13 드리프트 가능). 화이트리스트는 진행에 따라 확장(전체 42).
+- ★아랍어 RTL — 카드/숫자/방향 표현·마크다운 렌더·메타 인용부호 이스케이프 주의.
+
+## ▶▶▶ (이전) START HERE (2026-07-15 — ★★★zh(중국어 간체) 완전 완성(42/42) + EN 링크정합(결손 0) + ZH_CLUSTERS / 다음 = id/ar)
 
 > ✅✅✅ **zh 42/42편 완성** — EN 마스터와 완전 동일 구조. Rules 6·HR 6·Odds 6·Strategy 8·Tournament 9(tvc 재번역 포함)·Glossary 6·card-counting 1. 커밋 `f8b88b3`(Strategy)·`ac27d3b`(Tournament)·`a14c806`(Glossary+cc)+최종(링크복원 81→0·tvc 재번역·ZH_CLUSTERS). 하드게이트 통과(**372 intl posts/24언어**). **zh 잔여 부채 없음**(링크 결손 0). 상세 WORKLOG 2026-07-15 최상단.
 > - 브리프 `docs/translation-terms-zh.md`(严格简体·「你」체·족보중국어·set=暗三条/trips=明三条·영어유지 목록·false-friend). **zh = 6번째 완역**(ja·es·pt·de·zh).
 > - ★★zh 특유 교훈: ①**metadata(title/desc/tldr) 안쪽 인용부호는 반드시 전각「」** — ASCII `"` 넣으면 TS 문자열 조기종료 ParseError(limping·3bet 실발생) ②**숫자=영어식**(마침표 소수점·콤마 천단위·3:1·万/亿·$ 유지·% 붙여쓰기) — de/es/pt 유럽식과 정반대 ③FAQ 문제 전량 중국어화 필수(영어질문 잔재 반복→프롬프트 경고) ④**calculator=canonical `/calculator`**(zh 로케일 라우트 없음→`/zh/calculator`는 404) ⑤"10" 유지("T" 금지) ⑥tvc 등 초기 stale 번역은 축약본일 수 있음 → 링크복원 시 결손 남으면 전체 재번역이 정답.
 
-### ▶▶ 다음 = ar(아랍어) 언어 완성 — zh/de/pt와 동일 파이프라인
-- 구12언어 순서: ja✅ → es✅ → pt✅ → de✅ → zh✅ → **ar** → id → ms → vi → hi → tr.
-- 절차: ①현지어 웹 리서치 선행([[translation-local-research-first]]: 아랍어 포커사이트 실제용어, 최소 3편+) → `docs/translation-terms-ar.md` 브리프(★RTL 방향·아랍어 숫자표기·포커 용어 영어유지 관습 조사) ②Opus 병렬번역(EN 1:1·§13 그대로·품질 최우선) ③count 구조패리티(universe=`lib/posts-en/` 42편) ④네이티브 AR 적대적 QA(계산 재검증X) ⑤교정 ⑥필라별 커밋 ⑦42편 완성 후 최종 EN 링크복원 + `AR_CLUSTERS`.
-- `lib/posts-ar/` 현황부터 확인(기존 부분번역 stale 재검수 포함). 화이트리스트는 진행에 따라 확장(전체 42).
-- ★아랍어 RTL — 카드/숫자/방향 표현·마크다운 렌더 주의. 메타 필드 인용부호 이스케이프(zh 교훈 동일).
+### ▶▶ 지금 진행중 = id(인도네시아어) — 사용자 부재중 자동진행 지시(2026-07-15)
+- 구12언어 순서: ja✅ → es✅ → pt✅ → de✅ → zh✅ → **id(진행중)** → ms → vi → hi → tr → 그다음 ar.
+- ⚠️ **ar은 사용자가 "내일 직접 착수" 지시로 뒤로 미룸** — id 먼저. **ar 착수 시 반드시 `docs/translation-terms-ar.md` 브리프부터 만들고 시작**(사용자 메모 요청, RTL·아랍어 숫자·포커용어 영어유지 관습 조사).
+- ★★**리서치 규칙 갱신(전 언어 공통, 2026-07-15 사용자 지시)**: 착수 전 **홀덤 관련 구글 top10 중 실제 포스팅 5편 검색·분석·정독** 후 진행([[translation-local-research-first]]).
+- id 절차: ①인니어 웹 리서치(5편) → `docs/translation-terms-id.md` 브리프 ②Opus 병렬번역(EN 1:1·§13 그대로) ③count 구조패리티 ④네이티브 ID 적대적 QA ⑤교정 ⑥필라별 커밋 ⑦42편 완성 후 최종 EN 링크복원 + `ID_CLUSTERS`.
+- `lib/posts-id/` 현황: **stale 8편**(Rules 6 + hand-rankings + tvc) — 하드닝 EN 기준 재검수/재번역 포함. 화이트리스트는 진행에 따라 확장(전체 42).
+- id 참고: 라틴 문자·영어식/유럽혼용 숫자 가능 → 리서치로 확정. 인니 포커 커뮤니티는 영어 용어 차용 많음(gocap/all in 등) — 현지 관습 조사 후 결정. 메타 필드 인용부호 이스케이프(zh 교훈).
 
 ## ▶▶▶ (이전) START HERE (2026-07-14 — ★★★de(독일어) 완전 완성(42/42) + EN 링크정합 + DE_CLUSTERS / 다음 = zh)
 

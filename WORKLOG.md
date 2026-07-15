@@ -3,6 +3,25 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-15 (★★★id(인도네시아어) 언어 완전 완성 — 42/42편 + EN 링크정합(결손 0) + 문체 Anda 통일 + ID_CLUSTERS)
+
+> 사용자 "ar은 내일 직접, 지금은 id 자동진행. 앞으로 리서치는 구글 top10 중 5편." → id를 stale 8편(Rules 6+hand-rankings+tvc)에서 시작해 HandRankings→Odds→Strategy→Tournament→Glossary→cc 신규 34편을 Opus 병렬번역→구조패리티→빌드→네이티브 ID QA→커밋으로 완주 후, 최종 EN 링크복원(134→0) + tvc 재번역 + stale Rules 6편 재번역(문체 통일) + ID_CLUSTERS. **id = 24개 언어 중 7번째 전체 완역**(ja·es·pt·de·zh·id + ko).
+
+### ✅ id 리서치·브리프
+- 인니 포커사이트 구글 top10 중 5편 리서치(GGPoker ID·id.wikipedia·prabowomurti 글로스·dinkopumkm 전략글) → `docs/translation-terms-id.md`. **핵심**: ★**격식체 "Anda"**(GGPoker·기존 코퍼스 표준, 옛 브리프의 kamu 폐기), 족보·액션·전략어 **영어 유지**(인니 강한 앵글리시즘: Royal Flush/call/raise/fold/all-in/pot odds/set/trips 등), ★**유럽식 숫자**(콤마 소수점·마침표 천단위: 0,197%·2.598.960·$1.500) — zh(영어식)와 정반대, de/pt와 동일. 통화기호 원본 유지($/₩/AUD/€, 환산 금지).
+
+### ✅ id 5필라 신규 번역 (커밋 `ddedd47`·`527f24c`·`bfa7642`·`ee90ff2`·`63c3f67`)
+- **HandRankings 5**·**Odds 6**·**Strategy 8**·**Tournament 8**(대회가이드 4 포함)·**Glossary 6+cc 1**. 각 필라: Opus 병렬 → count 패리티 → 네이티브 ID 적대적 QA(계산 재검증X, §13 逐字) → 교정. 전 필라 무🔴.
+- id 특유 교훈: ①**비율 표기 정규화 필수** — EN "1 in X"→"1 dari X"(확률), EN "X-to-1"→"X:1"(오즈). 초기 에이전트가 "banding"/"-ke-1"/"-lawan-1" 혼용 → 스크립트+QA로 콜론 통일. sed "1 banding "→"1 dari " 시 끝자리 1 숫자("101 banding 1") 오염 주의 ②desc ≤160(라틴 문자) 강제 ③**병렬 배치 내 slug 레이스** — 에이전트가 형제 파일 미존재로 오판·스트립(3bet·bubble·short-stack·대회가이드) → 마지막 배치엔 "파일 존재 확인 금지, 전 링크 유지" 명시로 예방, 나머진 최종 복원에서 처리 ④calculator=canonical `/calculator`(zh 교훈).
+
+### ✅ 최종 EN-패리티 링크 복원 + 재번역 (커밋 `e936046`)
+- 링크 결손 **134건/28파일 → 0**(초기 필라 스트립 + Tournament 레이스 스트립). 7개 에이전트 병렬 복원(행내+Related/readnext 카드 EN 1:1).
+- **tvc 완전 재번역**(축약 초기본 → H2 15·FAQ 8 EN 1:1).
+- ★**stale Rules 6편 재번역**(all-in/betting-actions/blind-meaning/game-order/showdown/rules-for-beginners): 6월 구번역이 **"kamu"(비격식)** 사용 → 하드닝 EN 기준 **"Anda" 재번역**으로 전 42편 문체 통일 + §13 드리프트 교정(hand-rankings Puzzle 2 "K♥ 10♥ 9♥ 8♥ 7♥ 스트레이트플러시" 비연속 오류 → EN대로 교정, 비율 "2,7 banding 1"→"2,7:1"). 네이티브 QA 무🔴(side pot·pot 진행·牌例 재계산 통과).
+
+### ✅ ID_CLUSTERS 러닝맵 (같은 커밋 예정)
+- `ID_CLUSTERS` 추가(EN 6필라 구조·슬러그 동일, 라벨 인니어). intl-blog-post-client 게이트 en·ja·es·pt·de·zh→**+id**. 하드게이트 통과(**406 intl posts/24언어**).
+
 ## 2026-07-15 (★★★zh(중국어 간체) 언어 완전 완성 — 42/42편 + EN 링크정합(결손 0) + ZH_CLUSTERS)
 
 > 사용자 "중국어는 뜻글자라 어렵다 → 리서치 5편으로, 현지어 학습후 자동진행" + "영어가 기준, 어색하면 영어유지, 착수 전 현지 사이트/기사 3편+ 학습" → zh를 27/42(Rules·HR·Odds·Strategy 일부)에서 시작해 **Strategy→Tournament→Glossary→card-counting**를 Opus 병렬번역→구조패리티→빌드→네이티브 ZH QA→커밋으로 연속 완주 후, 최종 EN 링크복원(81→0) + tvc 완전 재번역 + ZH_CLUSTERS. **zh = 24개 언어 중 6번째 전체 완역**(ja·es·pt·de·zh + ko).

@@ -600,6 +600,86 @@ export const ZH_CLUSTERS: PillarCluster[] = [
   },
 ];
 
+export const ID_CLUSTERS: PillarCluster[] = [
+  {
+    id: "rules",
+    pillarSlug: "texas-holdem-rules-for-beginners",
+    pillarLabel: "Aturan",
+    nodes: [
+      { slug: "holdem-game-order", label: "Alur Main" },
+      { slug: "holdem-betting-actions", label: "Aksi Taruhan" },
+      { slug: "holdem-blind-meaning", label: "Blind" },
+      { slug: "holdem-all-in-rules", label: "Aturan All-In" },
+      { slug: "holdem-showdown-rules", label: "Showdown" },
+    ],
+  },
+  {
+    id: "rankings",
+    pillarSlug: "holdem-hand-rankings",
+    pillarLabel: "Peringkat Tangan",
+    nodes: [
+      { slug: "holdem-flush-vs-straight", label: "Flush vs Straight" },
+      { slug: "holdem-kicker", label: "Kicker" },
+      { slug: "holdem-tiebreak-rules", label: "Pemecah Seri" },
+      { slug: "holdem-split-pot-rules", label: "Split Pot" },
+      { slug: "holdem-reading-the-board", label: "Baca Board" },
+    ],
+  },
+  {
+    id: "odds",
+    pillarSlug: "holdem-probability",
+    pillarLabel: "Peluang & Matematika",
+    nodes: [
+      { slug: "holdem-pot-odds", label: "Pot Odds" },
+      { slug: "holdem-outs", label: "Hitung Outs" },
+      { slug: "holdem-drawing-odds", label: "Peluang Draw" },
+      { slug: "holdem-implied-odds", label: "Implied Odds" },
+      { slug: "holdem-equity", label: "Equity" },
+    ],
+  },
+  {
+    id: "strategy",
+    pillarSlug: "holdem-strategy",
+    pillarLabel: "Strategi",
+    nodes: [
+      { slug: "holdem-positions", label: "Posisi" },
+      { slug: "holdem-position-play", label: "Main Posisi" },
+      { slug: "holdem-starting-hands-chart", label: "Starting Hands" },
+      { slug: "holdem-limping", label: "Limp" },
+      { slug: "holdem-3bet", label: "3-Bet" },
+      { slug: "holdem-continuation-bet", label: "C-Bet" },
+      { slug: "holdem-when-to-fold", label: "Kapan Fold" },
+    ],
+  },
+  {
+    id: "tournament",
+    pillarSlug: "holdem-tournament",
+    pillarLabel: "Turnamen",
+    nodes: [
+      { slug: "holdem-tournament-vs-cash-game", label: "MTT vs Cash" },
+      { slug: "holdem-icm", label: "Dasar ICM" },
+      { slug: "holdem-bubble", label: "Main Bubble" },
+      { slug: "holdem-short-stack", label: "Short Stack" },
+      { slug: "apt-incheon-2026-guide", label: "APT Incheon 2026", group: "Live Events" },
+      { slug: "korea-poker-marathon-2026", label: "Korea Marathon 2026", group: "Live Events" },
+      { slug: "wpt-australia-2026-guide", label: "WPT Australia 2026", group: "Live Events" },
+      { slug: "ept-barcelona-2026-guide", label: "EPT Barcelona 2026", group: "Live Events" },
+    ],
+  },
+  {
+    id: "glossary",
+    pillarSlug: "holdem-glossary",
+    pillarLabel: "Glosarium",
+    nodes: [
+      { slug: "holdem-straddle", label: "Straddle" },
+      { slug: "holdem-rake", label: "Rake" },
+      { slug: "holdem-fish", label: "Fish" },
+      { slug: "holdem-cooler", label: "Cooler" },
+      { slug: "holdem-bad-beat", label: "Bad Beat" },
+    ],
+  },
+];
+
 /** 이 slug가 속한 필라를 반환 (허브이거나 노드이면 매치). 없으면 null. 기본 EN, clusters 인자로 KO 등 전달. */
 export function clusterForSlug(slug: string, clusters: PillarCluster[] = EN_CLUSTERS): PillarCluster | null {
   for (const c of clusters) {

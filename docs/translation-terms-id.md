@@ -15,8 +15,19 @@
 - **화폐**: $ 그대로(§13 보존).
 - 문장부호: 표준 라틴(. , ? !).
 
-## 문체
-- **kamu**체(informal, 친근한 블로그 톤 — 사이트 전 언어 informal 관습 你/du/tú/você/أنت와 일치). Anda(격식)는 지양하되 문맥상 자연스러우면 혼용 가능. 자연스러운 구어체 인니어(딱딱한 직역 금지).
+## 문체 (⚠️ 2026-07-15 교정 — 실제 코퍼스 기준)
+- **"Anda"체(격식, 대문자 A) 고정.** ← 기존 stale id 8편 전부 Anda, GGPoker ID도 Anda, 인니 포커 교육/SEO 콘텐츠 표준. **"kamu/lo/gue" 금지**(옛 브리프의 kamu 권장은 실제로 적용된 적 없음 → 폐기, 코퍼스 일관성 위해 Anda로 통일).
+- 어조: 따뜻하되 권위 있는 교육형. 개인 경험담(E-E-A-T)도 Anda로 프로페셔널하게. 딱딱한 직역 금지, 자연스러운 인니어.
+
+## 추가 규칙 (2026-07-15 리서치 보강)
+- **§13 언어불변**: 숫자·牌·확률·$·BB·날짜·고유명사(PokerStars/WPT/EPT/선수명) EN 그대로. "10"은 10("T" 금지). 재계산 금지. 숫자는 구분자만 인니식(위 §표기)으로 스왑, 값 불변.
+- **구조 EN 1:1**: H2/H3·지시블록·`==g:/r:/b:==`·표·이미지·Related/readnext 카드·FAQ 개수 전부 EN과 동일(개수 검증).
+- **FAQ 스키마**: `**Q. <인니어 질문 전체>**` + 빈 줄 + `A. <답>`. 질문은 인니어 전체 문장(용어 영어는 정상). 개수 EN 동일. (일부 파일은 EN이 `### 질문` H3형 → EN 그 파일 형식 따를 것.)
+- **내부링크**: 화이트리스트(번역 완료 slug)만 `[teks](/id/blog/slug)` `/id/` 접두사·thumb 유지. 미번역 slug는 링크 벗기고 앵커텍스트만(Related/readnext 카드면 카드째 삭제) → 최종 42편 완성 후 EN-parity로 복원.
+- **도구 라우트 로케일 중립**: `/calculator`·`/hand-chart`·`/quiz`·`/downloads/*.pdf`는 `/id/` 안 붙임(id 라우트 없음 → 404 방지. zh 교훈).
+- **metadata 인용부호**: title/seoTitle/desc/tldr(큰따옴표 TS 필드) 안쪽 인용부호는 이스케이프 `\"` 또는 회피(빌드 ParseError 방지).
+- **기존 stale 8편**(Rules 6 + hand-rankings hub + tvc, 2026-06-09 = 경화 前 EN 가능성): 하드닝 EN 기준 §13·구조 재검증. tvc는 축약본일 수 있음(de/zh 선례) → 필요시 전체 재번역. 새 slug 링크 미포함 → 최종 링크복원에서 보강.
+- **id = 24개 언어 중 7번째 완역 목표**(ja·es·pt·de·zh + ko, 그다음 id). 파이프라인 동일: 필라별 Opus 병렬번역 → count 패리티 → 네이티브 ID 적대적 QA(계산 재검증X) → 교정 → 커밋.
 
 ## SERP
 - 검색어: "cara bermain poker Texas Hold'em", "aturan poker pemula", "apa itu blind poker", "urutan kartu poker" 등. seoTitle/desc는 인니 검색자 실제 표현으로.
