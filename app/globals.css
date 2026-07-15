@@ -425,6 +425,13 @@
   pointer-events: none;
   will-change: opacity;
 }
+/* 계산기 CTA 펄스는 reduced-motion에서도 유지 (의도된 CTA 시선유도 · opacity라 부작용 최소) */
+@media (prefers-reduced-motion: reduce) {
+  .calc-pulse::after {
+    animation-duration: 2s !important;
+    animation-iteration-count: infinite !important;
+  }
+}
 
 /* ── 배지 (NEW · HOT · TIP 등) ──────────────────── */
 .badge-gold {
