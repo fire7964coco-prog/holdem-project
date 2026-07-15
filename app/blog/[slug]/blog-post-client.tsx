@@ -12,6 +12,7 @@ import CommunityCTA from "@/components/community-cta";
 import BlogTopBar from "@/components/blog-top-bar";
 import ReadingProgressBar from "@/components/reading-progress-bar";
 import ClusterMinimap from "@/components/cluster-minimap";
+import RankingTable from "@/components/ranking-table";
 import { KO_CLUSTERS, clusterForSlug } from "@/lib/pillar-clusters";
 import Image from "next/image";
 import { useState, useRef, useEffect, useCallback } from "react";
@@ -673,6 +674,15 @@ export default function BlogPost({
                   {post.tldr}
                 </p>
               </aside>
+            )}
+
+            {/* 순위/목록형 글(족보 순위 등) — 최상단 예쁜 순위표 (발췌·AI 인용 최적화) */}
+            {post.itemList && (
+              <RankingTable
+                name={post.itemList.name}
+                items={post.itemList.items}
+                order={post.itemList.order}
+              />
             )}
 
             {/* 모바일 인라인 TOC — xl 미만에서만 표시 (데스크탑은 사이드바) */}
