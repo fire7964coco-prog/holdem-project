@@ -91,7 +91,7 @@ export default function IntlBlogPostClient({
   // 3단 배치: 목차(좌) · 본문(중앙) · 학습맵(우). 있는 것만 컬럼 생성.
   const gridClass =
     hasToc && showMinimap
-      ? "xl:grid xl:grid-cols-[210px_1fr_250px] xl:gap-8"
+      ? "xl:grid xl:grid-cols-[200px_1fr_240px] xl:gap-6"
       : hasToc
         ? "xl:grid xl:grid-cols-[220px_1fr] xl:gap-10"
         : showMinimap
@@ -109,7 +109,7 @@ export default function IntlBlogPostClient({
         homeFeedLabel={NAV_HOME_FEED[locale]}
         communityLabel={NAV_CTA[locale]}
       />
-      <div className="max-w-6xl mx-auto px-4 py-10">
+      <div className="max-w-7xl mx-auto px-4 py-10">
         <div className={gridClass}>
           {hasToc && (
             <aside className="hidden xl:block">
