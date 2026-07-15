@@ -3,17 +3,34 @@
 > 목적: **성장 추세(trajectory)** 를 매주 기록해 "제대로 올라가고 있나"를 확인.
 > 최종 목표: 타깃 쿼리 **구글 1페이지 top3 안착**.
 
-## 매주 루틴 (사용자 → Claude)
+## 매주 루틴 (API 자동 — 권장)
 
-1. **사용자**: GSC → 성능 → 기간 **"지난 28일"** 선택 → 우상단 **내보내기 → CSV 다운로드** → zip을 어디든 저장.
-   - (선택) 더 빠른 신호를 원하면 **"지난 7일"** 도 함께. 28일 = 추세선(안정), 7일 = 조기 신호(민감).
-2. **사용자**: Claude에게 "이번 주 GSC" 하면서 zip 경로(또는 압축 푼 폴더)를 알려줌.
-3. **Claude**: 압축 풀고 →
+> 2026-07-15부터 Search Console API 연동. **수동 CSV 내보내기 불필요.**
+
+1. **사용자**: Claude에게 **"이번 주 GSC"** 라고만 함.
+2. **Claude**:
    ```
-   node scripts/gsc-analyze.mjs "<압축푼폴더>"
+   npm run gsc          # 최근 28일 (추세선)
+   npm run gsc:both     # 28일 + 7일(조기신호) 둘 다
    ```
-   → 총계 + 타깃 쿼리 순위/노출/클릭 출력.
-4. **Claude**: `kpi-log.md`에 **새 열(주차) 추가** → **지난주 대비 델타**를 계산해 "무엇이 올랐고/내렸고, 왜"를 분석 + 다음 액션 제안.
+   → API가 검색어/페이지 데이터를 받아 `docs/gsc-tracking/data/<날짜>-28d/`에 CSV 저장 후, 곧바로 `gsc-analyze.mjs` 실행 → 총계 + 타깃 쿼리 순위/노출/클릭 출력.
+3. **Claude**: `kpi-log.md`에 **새 열(주차) 추가** → **지난주 대비 델타** 분석 + 다음 액션 제안.
+
+### 최초 1회 설정 (서비스계정)
+`.env.local`에 아래를 넣고, Google Cloud에서 서비스계정 키를 발급받아 GSC 속성에 읽기 권한 부여:
+```
+GSC_SITE_URL=sc-domain:holdemmaster.com        # 도메인 속성 (또는 https://holdemmaster.com/)
+GSC_SA_KEY_PATH=C:/Users/하봄/.secrets/gsc-key.json   # 서비스계정 JSON 경로 (repo 밖)
+# GSC_LAG_DAYS=3  (선택, 기본 3 — GSC 데이터 확정 지연 보정)
+```
+상세 절차는 `scripts/gsc-fetch.mjs` 상단 주석 참조. 키 파일은 절대 커밋 금지(`.gitignore`에 패턴 등록됨).
+
+## 매주 루틴 (수동 CSV — API 미설정 시 폴백)
+
+1. **사용자**: GSC → 성능 → 기간 **"지난 28일"** → **내보내기 → CSV** → zip 저장.
+2. **사용자**: "이번 주 GSC" + zip/폴더 경로.
+3. **Claude**: `node scripts/gsc-analyze.mjs "<압축푼폴더>"` → 스냅샷.
+4. **Claude**: `kpi-log.md` 갱신·분석.
 
 ## 추적 창(window) 원칙
 - **주 지표 = 28일 롤링**. 매주 뽑으면 겹침이 크지만(27/28일 공유) 그래서 **성장 곡선이 매끄럽게** 보임 = "성장 중인가" 질문에 최적.

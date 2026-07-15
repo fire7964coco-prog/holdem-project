@@ -12,6 +12,9 @@
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
+    "gsc": "node scripts/gsc-fetch.mjs",
+    "gsc:both": "node scripts/gsc-fetch.mjs --both",
+    "gsc:analyze": "node scripts/gsc-analyze.mjs",
     "compress:images": "node scripts/compress-images.mjs --apply",
     "compress:images:preview": "node scripts/compress-images.mjs",
     "generate:beginner-pdf": "node scripts/generate-beginner-pdf.mjs"
@@ -37,6 +40,7 @@
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "critters": "^0.0.23",
+    "googleapis": "^173.0.0",
     "playwright": "^1.60.0",
     "tailwindcss": "^4.0.0",
     "typescript": "^5.6.3"

@@ -8,3 +8,8 @@ build
 .env
 .env*.local
 *.log
+
+# GSC 서비스계정 키·원시 데이터 (커밋 금지)
+*gsc*key*.json
+*service-account*.json
+docs/gsc-tracking/data/
