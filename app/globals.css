@@ -140,6 +140,7 @@
   line-height: 1.85;
   letter-spacing: -0.01em;
   word-break: keep-all;
+  overflow-wrap: break-word;
   color: #111111;
 }
 @media (min-width: 640px) {
@@ -152,6 +153,7 @@
   font-size: 0.95rem;
   line-height: 1.85;
   margin-bottom: 1.2em;
+  text-wrap: pretty;
   color: #111111;
 }
 @media (min-width: 640px) {
@@ -164,6 +166,7 @@
 .blog-prose li {
   font-size: 0.95rem; /* 모바일 14.9px→15.2px — 본문 문단(p)과 동일 크기로 통일 (가독성) */
   line-height: 1.75;
+  text-wrap: pretty;
   color: #111111;
 }
 @media (min-width: 640px) {
@@ -180,6 +183,7 @@
   letter-spacing: -0.03em;
   word-break: keep-all;
   overflow-wrap: break-word;
+  text-wrap: balance;
   line-height: 1.4;
   scroll-margin-top: 68px;
 }
@@ -197,6 +201,7 @@
   letter-spacing: -0.02em;
   word-break: keep-all;
   overflow-wrap: break-word;
+  text-wrap: balance;
   line-height: 1.45;
   scroll-margin-top: 68px;
 }
