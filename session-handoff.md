@@ -5,7 +5,25 @@
 
 ---
 
-## ▶▶▶ 새 세션 START HERE (2026-07-15 — ★★★id(인도네시아어) 완전 완성(42/42) + 문체 Anda 통일 + ID_CLUSTERS / 다음 = ar)
+## ▶▶▶ 새 세션 START HERE (2026-07-15 — GSC/GA 데이터 체계 구축 + 족보 GEO/UI 강화 / ★다음 세션 = 바이럴 마케팅(유튜브·틱톡) 논의)
+
+> ★★**다음 세션 주제 = 바이럴 마케팅 논의**(사용자 명시): 유튜브·틱톡 등 숏폼/영상 바이럴로 holdemmaster.com 유입·브랜드 키우기. 지금까지는 SEO(검색) 중심이었고, 이제 소셜/영상 채널 전략을 논의하고 싶어함. (GA에 이미 "AI Assistant" 채널·"홀덤사이트" 브랜드쿼리 부상 = 브랜드 형성 초기 신호 → 바이럴로 가속 여지.) **이 세션 시작 시 SEO 작업이 아니라 바이럴 마케팅 전략 논의부터.**
+
+> ✅ **이번 세션 = 데이터 인프라 + 족보 GEO/UI**(상세 WORKLOG 2026-07-15 최상단). 요약:
+> - **데이터 도구 5종**(서비스계정 1개 재사용): `npm run gsc`(검색어)·`gsc:both`(28+7)·`gsc:lang`(언어분해)·`gsc:inspect`(색인상태)·`ga`(GA4 행동)·`psi`(CWV). 매주 루틴 = **`gsc:both` + `gsc:lang`**(ko/en 분리). 설정은 `.env.local`(gitignore), 원시데이터 `docs/gsc-tracking/data/`(gitignore), 큐레이션 `docs/gsc-tracking/kpi-log.md`.
+> - ★**성과 판정은 ko 기준**(총계는 /en 저순위 노출로 희석 = 착시, 메모리 [[gsc-site-totals-diluted-by-translations]]). 한국어 r12~15·CTR 4.5~5% 안정. 토너/펍 필라 승자(국내참가 r1.4).
+
+### ▶▶ 미결 SEO 작업 (바이럴 논의 후 or 병행)
+- **족보 카니발 승계 진행중**: `/hands`=noindex 재크롤 트리거됨(색인요청 거부=noindex 감지). **`npm run gsc:inspect https://www.holdemmaster.com/hands`로 coverage가 "Excluded by noindex"로 바뀌는지 주간 확인** → 바뀌면 블로그(holdem-hand-rankings)가 족보 순위 승계. 그 전에 블로그 강화 남은 카드: ①제목 CTR 훅(r10 문턱) ②클러스터 역링크(flush-vs-straight·tiebreak→족보 허브).
+- **GEO 확장**: ItemList/RankingTable을 다른 순위글(starting-hands)·/en 족보(영어권 AI 오버뷰 payoff 큼)에 확대. `Post.itemList?` 필드에 값만 채우면 자동.
+- **GA 전환 이벤트 미설정**(keyEvents=0) — 커뮤니티 가입 등 추적하려면 GA4에서 키이벤트 지정 필요.
+- 계산기 CTA 유입효과는 `npm run ga`로 `/calculator` 세션 추적해 검증.
+
+### ▶▶ 번역 트랙 (별개, 계속 대기): 다음 = ar(아랍어)
+- 구12언어: ja✅ es✅ pt✅ de✅ zh✅ id✅ → **ar** → ms vi hi tr.
+- ⚠️ **ar 착수 시 반드시 `docs/translation-terms-ar.md` 브리프부터**(RTL·아랍어 숫자·포커용어 영어유지 조사). 리서치 규칙: 홀덤 구글 top10 중 5편 정독([[translation-local-research-first]]).
+
+## ▶▶▶ (이전) START HERE (2026-07-15 — ★★★id(인도네시아어) 완전 완성(42/42) + 문체 Anda 통일 + ID_CLUSTERS / 다음 = ar)
 
 > ✅✅✅ **id 42/42편 완성** — EN 마스터와 완전 동일 구조. Rules 6(재번역)·HR 6·Odds 6·Strategy 8·Tournament 9(tvc 재번역)·Glossary 6·cc 1. 커밋 `ddedd47`(HR)·`527f24c`(Odds)·`bfa7642`(Strategy)·`ee90ff2`(Tournament)·`63c3f67`(Glossary+cc)·`e936046`(링크복원134→0+tvc·Rules 6 재번역)+ID_CLUSTERS. 하드게이트 통과(**406 intl posts/24언어**). **id 잔여 부채 없음**(결손 0, 문체 Anda 통일). 상세 WORKLOG 2026-07-15 최상단.
 > - 브리프 `docs/translation-terms-id.md`(**Anda 격식체**·유럽식 숫자·영어 앵글리시즘). **id = 7번째 완역**(ja·es·pt·de·zh·id).

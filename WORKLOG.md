@@ -3,6 +3,31 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-15 (★★★GSC/GA API 연동 + 정밀분석 + 족보 GEO/UI 강화 — 데이터 기반 운영 체계 구축)
+
+> 사용자 "GSC 연동하고싶어" → 수동 CSV 종료하고 **API 자동화 + 언어별 분석 + 색인상태 실측 + GA 행동분석 + CWV**까지 데이터 인프라 구축. 이어 그 데이터로 **족보 카니발 승계 진단 + GEO(AI 오버뷰 최적화) 첫 스텝**. 커밋 `e101d96`~`998008a`(17개).
+
+### ✅ 데이터 도구 5종 신설 (전부 서비스계정 1개 재사용, `.env.local`)
+- `scripts/gsc-fetch.mjs` (`npm run gsc`·`gsc:both`) — Search Console API로 28/7일 검색어·페이지 CSV 자동수집→gsc-analyze 실행. `--fresh`(dataState=all·지연0, 최근/24h 근접)·`--days`·`--lag` 옵션. **도메인 속성** `sc-domain:holdemmaster.com`.
+- `scripts/gsc-lang.mjs` (`npm run gsc:lang`) — 페이지 URL의 /en//ja/ 등으로 **언어별 노출·순위·CTR 분해**.
+- `scripts/gsc-inspect.mjs` (`npm run gsc:inspect`) — **URL Inspection API**로 구글 실제 색인상태(coverage/robots/indexing/lastCrawl/canonical).
+- `scripts/ga-fetch.mjs` (`npm run ga`) — **GA4 Data API**(속성 529721248) 채널·다이렉트 이탈진단(기기/랜딩/신규재방문).
+- `scripts/psi-check.mjs` (`npm run psi`) — PageSpeed Insights **CWV**(모바일 실유저 CrUX + 랩). 키없으면 429 → `PSI_API_KEY` 옵션.
+- 설정: `.env.local`에 `GSC_SITE_URL`·`GSC_SA_KEY_PATH`(C:/Users/하봄/Downloads/jsonkey/holdemmaster-569b657188a0.json)·`GA_PROPERTY_ID=529721248`. 키·`docs/gsc-tracking/data/` gitignore.
+
+### ✅ 정밀분석 핵심 발견 (Fable5 + 도구, `docs/gsc-tracking/kpi-log.md`)
+- ★**총계 지표는 착시**: 사이트 총계 평균순위·CTR은 **저순위 번역본(/en/ r40~70) 노출이 희석**(en 노출비중 28d 35%→7d 48%). **한국어는 r12~15·CTR 4.5~5%로 안정.** → 성과는 **ko/en 분리, ko 기준**으로 봐야. 메모리 [[gsc-site-totals-diluted-by-translations]].
+- **필라 분화**: 토너/펍=승자(국내 대회참가 r4.4→**1.4**, 2026 대회일정 r2.4~3.0 — 07-05 배포효과 반영), 족보=정체+이행기난기류, 블라인드=표본소멸(악화 아님), ICM=완만개선. EN=정상 색인진입(클릭0 정상), 노출은 사실상 /en만.
+- ★**족보 카니발 이행기(최우선 리스크)**: `/hands`(도구)가 여전히 족보 지배(fresh r11.9)·블로그는 r18~35로 밀림. **원인 실측**: `/hands`는 코드·라이브 모두 **noindex인데 구글이 06-10 이후 미크롤**→noindex 미반영. 사이트맵 제외가 재크롤을 늦춘 역설. → **색인요청(URL검사)로 재크롤 트리거 = 거부(noindex 감지)됨 = de-index 시작.** gsc-inspect로 "Excluded by noindex" 전환 모니터링.
+- **GA "다이렉트 금방 이탈" 진단**: 모바일 신규 다이렉트(참여 15%·35초·이탈85%)=**SNS/메신저 인앱브라우저 가짜 다이렉트**. 데스크톱·재방문 다이렉트는 7~15분 우량. **구글 순위 무해**(GA는 랭킹요소 아님·구글 안 거침). keyEvents=0(전환 이벤트 미설정).
+- **CWV**: 실유저(CrUX) 데이터 **부족**(트래픽 문턱 아래) → 속도가 **현재 순위요소 아님**. 랩 성능 57~64/LCP6.6s는 가혹한 랩 스트레스테스트. **속도 최적화는 지금 저ROI** — 콘텐츠·권위·색인이 진짜 지렛대.
+
+### ✅ 족보 GEO/UI 강화 (승계 첫 스텝, 커밋 `ae4f422`~`998008a`)
+- **ItemList 구조화데이터(JSON-LD)**: `Post.itemList?` 필드 신설(재사용) + `page.tsx` graph 조건부 스키마 + holdem-hand-rankings 10족보 채움(§13 확률 일치), updated 신선도 갱신. **AI 오버뷰·발췌(GEO) 인용 최적화** — GEO≈좋은SEO+추출가능성이라 별도 워크스트림 아닌 콘텐츠 강화에 통합.
+- **`RankingTable` 컴포넌트**: itemList 데이터로 **티어색상 랭크뱃지 순위카드**를 본문 최상단 렌더(/hands 기본표보다 예쁨). 본문 중복 마크다운표 제거. 글자 가시성 진한 검정(#141414/#333)으로 통일.
+- **`CalcCtaButton`**: 강점 도구(확률 계산기) 유도 — 데스크톱 우측 사이드바 러닝맵 위 + **모바일 전 글**. 파란 테두리 + **글로우/배경플래시 펄스**(calc-glow, box-shadow, reduced-motion 예외). 교훈: 윈도우 애니메이션끔 설정+CSS CDN캐시로 "안 보임" 착시 — curl로 라이브 검증(모바일 확인됨).
+- **가독성**: 데스크톱 본문폭 확대(max-w-6xl→7xl, 본문 616→780px). 타이포 자동정리 `text-wrap: pretty/balance`+overflow-wrap(KO 전편+다국어).
+
 ## 2026-07-15 (★★★id(인도네시아어) 언어 완전 완성 — 42/42편 + EN 링크정합(결손 0) + 문체 Anda 통일 + ID_CLUSTERS)
 
 > 사용자 "ar은 내일 직접, 지금은 id 자동진행. 앞으로 리서치는 구글 top10 중 5편." → id를 stale 8편(Rules 6+hand-rankings+tvc)에서 시작해 HandRankings→Odds→Strategy→Tournament→Glossary→cc 신규 34편을 Opus 병렬번역→구조패리티→빌드→네이티브 ID QA→커밋으로 완주 후, 최종 EN 링크복원(134→0) + tvc 재번역 + stale Rules 6편 재번역(문체 통일) + ID_CLUSTERS. **id = 24개 언어 중 7번째 전체 완역**(ja·es·pt·de·zh·id + ko).
