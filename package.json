@@ -18,6 +18,7 @@
     "gsc:lang": "node scripts/gsc-lang.mjs",
     "gsc:inspect": "node scripts/gsc-inspect.mjs",
     "ga": "node scripts/ga-fetch.mjs",
+    "psi": "node scripts/psi-check.mjs",
     "compress:images": "node scripts/compress-images.mjs --apply",
     "compress:images:preview": "node scripts/compress-images.mjs",
     "generate:beginner-pdf": "node scripts/generate-beginner-pdf.mjs"
