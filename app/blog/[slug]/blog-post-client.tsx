@@ -13,6 +13,7 @@ import BlogTopBar from "@/components/blog-top-bar";
 import ReadingProgressBar from "@/components/reading-progress-bar";
 import ClusterMinimap from "@/components/cluster-minimap";
 import RankingTable from "@/components/ranking-table";
+import CalcCtaButton from "@/components/calc-cta-button";
 import { KO_CLUSTERS, clusterForSlug } from "@/lib/pillar-clusters";
 import Image from "next/image";
 import { useState, useRef, useEffect, useCallback } from "react";
@@ -987,6 +988,7 @@ export default function BlogPost({
           {showMinimap && (
             <aside className="hidden xl:block">
               <div className="sticky top-16 max-h-[calc(100vh-5rem)] overflow-y-auto overscroll-contain pe-1">
+                <CalcCtaButton />
                 <ClusterMinimap slug={post.slug} clusters={KO_CLUSTERS} hrefBase="/blog" labels={KO_MINIMAP_LABELS} />
               </div>
             </aside>
