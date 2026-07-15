@@ -18,7 +18,7 @@ export default function CalcCtaButton({
   return (
     <Link
       href={href}
-      className="group mb-4 flex items-center gap-2.5 rounded-xl border border-primary/40 bg-gradient-to-br from-primary/15 to-card px-3 py-3 no-underline shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary/70 hover:shadow-md"
+      className="calc-pulse group mb-4 flex items-center gap-2.5 rounded-xl border-2 border-[#2563eb]/50 bg-gradient-to-br from-primary/15 to-card px-3 py-3 no-underline shadow-[0_0_16px_-6px_rgba(37,99,235,0.45)] transition-all hover:-translate-y-0.5 hover:border-[#2563eb] hover:shadow-[0_0_20px_-4px_rgba(37,99,235,0.6)]"
     >
       <span className="grid h-9 w-9 flex-shrink-0 place-items-center rounded-lg bg-primary/20 text-primary">
         <Calculator className="h-[18px] w-[18px]" aria-hidden="true" />

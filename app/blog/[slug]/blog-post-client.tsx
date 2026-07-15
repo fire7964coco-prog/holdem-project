@@ -707,6 +707,11 @@ export default function BlogPost({
               </details>
             )}
 
+            {/* 모바일 계산기 CTA — xl 미만 (데스크탑은 우측 사이드바) */}
+            <div className="xl:hidden">
+              <CalcCtaButton />
+            </div>
+
             {/* 모바일 학습 지도(미니맵) — xl 미만 (데스크탑은 우측 사이드바) */}
             {showMinimap && (
               <details className="xl:hidden group bg-card border border-border rounded-2xl mb-6">
