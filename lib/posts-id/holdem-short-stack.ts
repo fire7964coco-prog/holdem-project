@@ -18,7 +18,7 @@ export const POST: Post = {
   content: `
 Paling cepat saya pernah beralih dari "masih hidup" ke "keluar" adalah malam saat saya terus min-raise stack 12 big blind, fold ke re-raise setiap kali, dan bocor satu setengah blind tiap orbit sampai saya terlalu pendek untuk menakuti siapa pun. Ketika akhirnya saya shove, saya punya empat big blind dan di-call oleh dua pemain. ==Saya tidak sedang sial — saya memainkan short stack seolah itu stack dalam.== Begitu stack Anda mengecil, seluruh permainan berubah, dan pemain yang tahu aturan barunya menguasai meja.
 
-==Short stack punya satu tugas: masuk all-in lebih dulu, jaga fold equity Anda, dan pilih momen yang tepat sebelum blind mengambilnya lebih dulu.== Inilah poker push/fold, dan ia adalah edge paling mudah dipelajari di turnamen — seperangkat aturan bersih yang bisa Anda terapkan begitu stack Anda turun. Panduan ini adalah bab aksi dari trilogi matematika turnamen: ICM adalah teorinya, bubble adalah spot-nya, dan permainan short stack adalah gerakan yang benar-benar Anda lakukan di turnamen.
+==Short stack punya satu tugas: masuk all-in lebih dulu, jaga fold equity Anda, dan pilih momen yang tepat sebelum blind mengambilnya lebih dulu.== Inilah poker push/fold, dan ia adalah edge paling mudah dipelajari di turnamen — seperangkat aturan bersih yang bisa Anda terapkan begitu stack Anda turun. Panduan ini adalah bab aksi dari trilogi matematika turnamen: [ICM](/id/blog/holdem-icm "thumb:/images/holdem-icm-hero.webp") adalah teorinya, [bubble](/id/blog/holdem-bubble "thumb:/images/holdem-bubble-hero.webp") adalah spot-nya, dan permainan short stack adalah gerakan yang benar-benar Anda lakukan di [turnamen](/id/blog/holdem-tournament "thumb:/images/holdem-tournament-hero.webp").
 
 ---
 
@@ -118,7 +118,7 @@ Satu kalimat untuk diingat: ==jadilah yang shove, bukan yang call.== Agresi firs
 
 Pakai untuk membangun intuisi, bukan sebagai hukum alam:
 
-- **Ia mengasumsikan kondisi spesifik.** Chart Nash standar mengabaikan ante dan ICM; tambahkan ante dan shove Anda jadi lebih lebar, tambahkan tekanan bubble/ICM dan call Anda jadi jauh lebih ketat.
+- **Ia mengasumsikan kondisi spesifik.** Chart Nash standar mengabaikan ante dan ICM; tambahkan ante dan shove Anda jadi lebih lebar, tambahkan [tekanan bubble/ICM](/id/blog/holdem-bubble) dan call Anda jadi jauh lebih ketat.
 - **Ia adalah model heads-up / hanya-blind.** Spot nyata punya banyak pemain tersisa untuk bertindak, read, dan lonjakan bayaran yang tak bisa dilihat sebuah chart.
 - **Kesimpulan yang andal adalah bentuknya**, bukan tangan persisnya: shove lebih lebar di posisi akhir, call lebih ketat daripada Anda shove, dan jam lebih banyak saat stack Anda turun. Untuk angka sebenarnya di spot ICM atau bubble nyata, masukkan stack dan payout Anda ke [kalkulator ICM](/calculator) daripada memercayai range yang tercetak.
 
@@ -128,13 +128,15 @@ Pakai untuk membangun intuisi, bukan sebagai hukum alam:
 
 ## Short Stack di Bubble: Twist ICM
 
-**Inilah bagian yang berlawanan intuisi: di bubble, short stack yang jelas sering punya bubble factor lebih rendah daripada medium stack — jadi Anda bisa berjudi lebih banyak, tapi hanya dengan shove, bukan dengan call.** Semua orang berasumsi short stack paling tertekan. Menurut matematikanya, bukan: Anda memang sudah kemungkinan besar bangkrut, dan double up membantu Anda luar biasa, jadi risk premium Anda lebih rendah daripada medium stack yang terjebak.
+**Inilah bagian yang berlawanan intuisi: di bubble, short stack yang jelas sering punya bubble factor lebih rendah daripada medium stack — jadi Anda bisa berjudi lebih banyak, tapi hanya dengan shove, bukan dengan call.** Semua orang berasumsi short stack paling tertekan. Menurut matematikanya, bukan: Anda memang sudah kemungkinan besar bangkrut, dan double up membantu Anda luar biasa, jadi risk premium Anda lebih rendah daripada medium stack yang terjebak ([panduan bubble](/id/blog/holdem-bubble) menguraikan kenapa medium stack adalah tahanan sesungguhnya).
 
 Apa artinya dalam praktik:
 
 - **Terus shove first-in** untuk mencuri dari medium stack yang fold semuanya demi bertahan — mereka target sempurna.
 - **Anda bisa menunggu jika yang lain lebih pendek.** Jika dua pemain punya chip lebih sedikit dari Anda di money bubble, Anda bisa fold spot marginal dan biarkan mereka bangkrut lebih dulu, naik tangga secara gratis — tapi hanya jika Anda benar-benar punya chip untuk menunggu, bukan jika Anda yang paling pendek.
 - **Jangan jadikan ICM alasan untuk fold semuanya.** Fold turun sampai tak ada fold equity untuk "menyelinap ke min-cash" menukar turnamen dengan hadiah terkecilnya. Hormati lonjakan bayaran, lalu kembali menumpuk chip.
+
+Matematika sebenarnya di balik "seberapa lebih rendah bubble factor saya" ada di [panduan ICM](/id/blog/holdem-icm) — jalankan spot persis Anda melalui [kalkulator](/calculator) saat itu penting.
 
 ---
 
@@ -149,6 +151,11 @@ Apa artinya dalam praktik:
 Hindari lima ini dan Anda sudah akan mengalahkan sebagian besar peserta, yang memperlakukan short stack seperti stack dalam sampai persis ketika mereka bangkrut.
 
 ---
+
+:::readnext[Lanjut membaca]
+/id/blog/holdem-bubble | Cara Bermain di Bubble | /images/holdem-bubble-hero.webp
+/id/blog/holdem-icm | ICM Dijelaskan — Kenapa Chip Bukan Uang | /images/holdem-icm-hero.webp
+:::
 
 ## FAQ
 
@@ -188,13 +195,23 @@ A. Ya. Di cash game Anda bisa rebuy atau top up ke stack penuh kapan saja, dan b
 2. **Call lebih ketat daripada Anda shove.** Dua range berbeda — shove first-in lebar (Anda juga menang saat mereka fold); call ketat (Anda hanya menang di showdown).
 3. **Bertindak sebelum fold equity Anda mati.** Jangan blind down sampai habis menunggu tangan bagus. Lebarkan shove Anda di posisi akhir, ketatkan di posisi awal, dan masukkan chip selagi all-in Anda masih menakuti orang.
 
-Permainan short stack adalah tempat matematika turnamen menjadi memori otot — pasangkan dengan strategi ICM dan bubble untuk tahu bukan sekadar *bagaimana* shove, tapi *kapan* ia paling penting.
+Permainan short stack adalah tempat matematika turnamen menjadi memori otot — pasangkan dengan [ICM](/id/blog/holdem-icm) dan [strategi bubble](/id/blog/holdem-bubble) untuk tahu bukan sekadar *bagaimana* shove, tapi *kapan* ia paling penting.
 
 ---
 
 ## Postingan Terkait
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
+  <a href="/id/blog/holdem-bubble" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Turnamen</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Cara Bermain di Bubble</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Di mana shove short-stack Anda paling penting</div>
+  </a>
+  <a href="/id/blog/holdem-icm" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Turnamen</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ICM Dijelaskan</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Kenapa bertahan bisa mengalahkan chip</div>
+  </a>
   <a href="/id/blog/holdem-when-to-fold" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Strategi</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Kapan Harus Fold di Poker</div>

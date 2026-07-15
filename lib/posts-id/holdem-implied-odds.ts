@@ -109,7 +109,7 @@ Call $50 yang sama, keputusan berlawanan — dan kartunya tak pernah berubah. Ya
 
 </div>
 
-Dua kekuatan menentukan angkanya. **Frekuensi:** gutshot jadi setengah sesering flush draw, jadi ia butuh payoff yang kira-kira dua kali lebih besar agar impas. **Penyamaran:** set yang tersembunyi dibayar jauh lebih banyak daripada four-flush yang jelas, karena lawan tak bisa menebak Anda memegangnya — itulah kenapa set mentoleransi hit rate rendahnya. Nut flush draw bernilai jauh lebih besar daripada baby flush draw karena alasan yang sama: ia dibayar *dan* ia tak kalah saat jadi.
+Dua kekuatan menentukan angkanya. **Frekuensi:** gutshot jadi setengah sesering flush draw, jadi ia butuh payoff yang kira-kira dua kali lebih besar agar impas. **Penyamaran:** set yang tersembunyi dibayar jauh lebih banyak daripada four-flush yang jelas, karena lawan tak bisa menebak Anda memegangnya — itulah kenapa set mentoleransi hit rate rendahnya. [Nut flush draw bernilai jauh lebih besar daripada baby flush draw](/id/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") karena alasan yang sama: ia dibayar *dan* ia tak kalah saat jadi.
 
 ---
 
@@ -242,6 +242,11 @@ Kuasai ini dan Anda berhenti membakar chip pada call penuh harapan sambil tetap 
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Odds & Matematika</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Drawing Odds & Peluang Mem-flop X</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Seberapa sering set, flush, atau straight benar-benar mendarat</div>
+  </a>
+  <a href="/id/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Tangan Awal</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Bagan Tangan Awal per Posisi</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Tangan spekulatif mana yang layak di-draw</div>
   </a>
 </div>
 `.trim(),

@@ -29,11 +29,11 @@ export const POST: Post = {
   content: `
 Saya nyaris melewatkan EPT pertama saya karena sebuah formulir yang belum pernah saya dengar.
 
-Saya sudah memenangkan kursi satelit, memesan tiket pesawat ke Barcelona, mengurus hotel — lalu seseorang di meja pendaftaran casino memberi tahu saya bahwa saya harus melengkapi ==**deklarasi Source of Funds (Sumber Dana)**== sebelum bisa menyerahkan satu euro pun. Saya sama sekali tidak tahu itu apa. Pria di belakang saya dalam antrean, seorang reguler, hanya tertawa dan berkata: ==r:"Harusnya kamu urus itu online beberapa minggu lalu."==
+Saya sudah memenangkan kursi satelit, memesan tiket pesawat ke Barcelona, mengurus hotel — lalu seseorang di meja pendaftaran casino memberi tahu saya bahwa saya harus melengkapi ==**deklarasi Source of Funds (Sumber Dana)**== sebelum bisa menyerahkan satu euro pun. Saya sama sekali tidak tahu itu apa. Pria di belakang saya dalam antrean, seorang reguler, hanya tertawa dan berkata: ==r:"Harusnya Anda urus itu online beberapa minggu lalu."==
 
 Jangan seperti saya. Panduan ini membahas semuanya — dari memenangkan kursi Anda dengan kurang dari satu dolar sampai apa yang sebenarnya terjadi saat Anda melangkah masuk ke Casino Barcelona di Day 1.
 
-Baru di turnamen live? Baca sekilas [panduan turnamen](/id/blog/holdem-tournament-vs-cash-game "thumb:/images/tournament-table-action.webp") dulu — buy-in, blind, dan alur Day 1 dalam satu tempat.
+Baru di turnamen live? Baca sekilas [panduan turnamen](/id/blog/holdem-tournament "thumb:/images/holdem-tournament-hero.webp") dulu — buy-in, blind, dan alur Day 1 dalam satu tempat.
 
 ---
 
@@ -382,7 +382,8 @@ Cetak ini dan centang sebelum Anda berangkat ke bandara:
 ---
 
 :::readnext[Lanjut membaca]
-/id/blog/holdem-tournament-vs-cash-game | Turnamen vs Cash Game Poker | /images/tournament-table-action.webp
+/id/blog/holdem-tournament | Panduan Turnamen Texas Hold'em | /images/holdem-tournament-hero.webp
+/id/blog/apt-incheon-2026-guide | Panduan APT Incheon 2026 | /images/apt-incheon-2026-guide-hero.webp
 :::
 
 ## FAQ — EPT Barcelona 2026
@@ -412,6 +413,11 @@ A. Kawasan Port Olímpic Barcelona umumnya aman. ==r:Pencopetan lazim di area pa
 ## Panduan Terkait
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
+  <a href="/id/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Wajib Baca</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Cara Kerja Turnamen Poker</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Buy-in, blind, satelit & checklist Day 1</div>
+  </a>
   <a href="/id/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Bandingkan</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Turnamen vs Cash Game</div>

@@ -65,7 +65,7 @@ Hitung 2.598.960 kemungkinan tangan lima-kartu dari satu deck 52 kartu, dan urut
 | **Straight** | **10.200** | **0,392%** | **Kalah dari flush ❌** |
 | Three of a Kind | 54.912 | 2,11% | Kalah dari straight |
 
-Straight punya kira-kira ==r:**dua kali** lebih banyak cara terbentuk dibanding flush==, jadi ia muncul dua kali lebih sering — dan itulah yang membuatnya jadi tangan lebih lemah. Aturan frekuensi yang sama menjelaskan seluruh tangganya; angka pasti untuk tiap tangan ada di grafik peluang dan probabilitas poker.
+Straight punya kira-kira ==r:**dua kali** lebih banyak cara terbentuk dibanding flush==, jadi ia muncul dua kali lebih sering — dan itulah yang membuatnya jadi tangan lebih lemah. Aturan frekuensi yang sama menjelaskan seluruh tangganya; angka pasti untuk tiap tangan ada di [grafik peluang dan probabilitas poker](/id/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
 ### Kenapa ini terasa terbalik
 

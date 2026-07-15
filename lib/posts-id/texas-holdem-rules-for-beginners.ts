@@ -4,12 +4,11 @@ export const POST: Post = {
   slug: "texas-holdem-rules-for-beginners",
   title: "Cara Bermain Texas Hold'em untuk Pemula — Aturan, Chip, Peringkat Kartu, dan Strategi Pertama",
   seoTitle: "Cara Main Texas Hold'em — Aturan, Chip & Cheat Sheet Pemula",
-  desc: "Belum pernah main? Pelajari cara main Texas Hold'em langkah demi langkah — blind, pembagian chip, peringkat kartu, plus cheat sheet siap cetak buat pemula.",
+  desc: "Belum pernah main? Pelajari cara main Texas Hold'em langkah demi langkah — blind, pembagian chip, peringkat kartu, plus cheat sheet siap cetak untuk pemula.",
   tldr: "Di Texas Hold'em, setiap pemain menerima 2 hole cards, ada 5 kartu bersama di tengah meja, dan tangan poker 5 kartu terbaik menang setelah empat ronde taruhan.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-07-13",
-  masterUpdated: "2026-07-12",
+  updated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 menit",
   emoji: "♠️",
@@ -26,11 +25,11 @@ export const POST: Post = {
     "no limit texas holdem",
   ],
   content: `
-Kalau kamu mencari ==aturan Texas Hold'em untuk pemula==, yang kamu butuhkan sekarang mungkin bukan buku peraturan kasino.
+Kalau Anda mencari ==aturan Texas Hold'em untuk pemula==, yang Anda butuhkan sekarang mungkin bukan buku peraturan kasino.
 
-Yang kamu butuhkan: apa itu blind, kapan giliranmu bertindak, bagaimana lima kartu bersama bekerja, tangan mana yang menang, dan berapa chip yang dibagikan ke tiap orang saat main di rumah.
+Yang Anda butuhkan: apa itu blind, kapan giliran Anda bertindak, bagaimana lima kartu bersama bekerja, tangan mana yang menang, dan berapa chip yang dibagikan ke tiap orang saat main di rumah.
 
-Panduan ini menjelaskan ==cara bermain Texas Hold'em untuk pemula== dengan bahasa sehari-hari — lengkap dengan urutan main yang tepat, pembagian chip untuk pemula, dasar membagikan kartu, dan cheat sheet siap cetak yang bisa kamu taruh di samping meja.
+Panduan ini menjelaskan ==cara bermain Texas Hold'em untuk pemula== dengan bahasa sehari-hari — lengkap dengan urutan main yang tepat, pembagian chip untuk pemula, dasar membagikan kartu, dan cheat sheet siap cetak yang bisa Anda taruh di samping meja.
 
 ### Cara main Texas Hold'em dalam 30 detik
 
@@ -43,17 +42,17 @@ Panduan ini menjelaskan ==cara bermain Texas Hold'em untuk pemula== dengan bahas
 7. Pemain yang tersisa membandingkan tangan — **tangan 5 kartu terbaik menang**
 
 Fakta kunci:
-- Kamu boleh memakai kedua hole cards, satu saja, atau bahkan tidak sama sekali — mana pun yang membentuk tangan terbaik
+- Anda boleh memakai kedua hole cards, satu saja, atau bahkan tidak sama sekali — mana pun yang membentuk tangan terbaik
 - Tombol dealer berputar setiap tangan, jadi blind dan urutan aksi bergeser tiap ronde
-- Kamu menang tanpa showdown kalau semua pemain lain fold kapan pun
+- Anda menang tanpa showdown kalau semua pemain lain fold kapan pun
 
 ---
 
 ## Aturan Dasar Texas Hold'em
 
-Aturan dasar Texas Hold'em itu sederhana begitu kamu melihat mejanya secara berurutan.
+Aturan dasar Texas Hold'em itu sederhana begitu Anda melihat mejanya secara berurutan.
 
-Setiap tangan dimulai dengan tombol dealer. Dua pemain di kiri tombol memasang taruhan wajib yang disebut **small blind** dan **big blind** — kalau ini terasa membingungkan, baca [apa itu blind dan cara kerja small blind dan big blind](/id/blog/holdem-blind-meaning). Setelah itu, setiap pemain menerima dua kartu tertutup. Inilah hole cards kamu.
+Setiap tangan dimulai dengan tombol dealer. Dua pemain di kiri tombol memasang taruhan wajib yang disebut **small blind** dan **big blind** — kalau ini terasa membingungkan, baca [apa itu blind dan cara kerja small blind dan big blind](/id/blog/holdem-blind-meaning). Setelah itu, setiap pemain menerima dua kartu tertutup. Inilah hole cards Anda.
 
 Berikutnya, dealer membuka lima kartu bersama di tengah meja:
 
@@ -69,34 +68,34 @@ Berikutnya, dealer membuka lima kartu bersama di tengah meja:
 
 </div>
 
-==r:Kamu **tidak** wajib memakai kedua hole cards.== Kamu bisa memakai dua, satu, atau bahkan nol hole cards kalau board sendiri sudah membentuk tangan terbaik — keahlian yang disebut membaca board.
+==r:Anda **tidak** wajib memakai kedua hole cards.== Anda bisa memakai dua, satu, atau bahkan nol hole cards kalau board sendiri sudah membentuk tangan terbaik — keahlian yang disebut [membaca board](/id/blog/holdem-reading-the-board).
 
 Contohnya:
 
-| Kartu kamu | Board | Tangan terbaik kamu |
+| Kartu Anda | Board | Tangan terbaik Anda |
 |-----------|-------|----------------|
 | A♠ K♠ | A♦ 7♣ 7♥ 2♠ 9♣ | Two Pair, As dan tujuh |
 | 8♠ 8♦ | K♣ 8♥ 4♠ 4♦ J♣ | Full House, tiga 8 plus dua 4 |
 | 2♣ 3♦ | A♠ K♠ Q♠ J♠ 10♠ | Royal Flush di board |
 
-Kalau peringkat kartu poker masih terasa asing, buka dulu [peringkat kartu Texas Hold'em](/id/blog/holdem-hand-rankings) sebelum main. Tahu apakah Flush mengalahkan Straight jauh lebih penting daripada menghafal strategi tingkat lanjut.
+Kalau peringkat kartu poker masih terasa asing, buka dulu [peringkat kartu Texas Hold'em](/id/blog/holdem-hand-rankings) sebelum main. Tahu [apakah Flush mengalahkan Straight](/id/blog/holdem-flush-vs-straight) jauh lebih penting daripada menghafal strategi tingkat lanjut.
 
 ---
 
 ## Cara Main Texas Hold'em — Ringkasan Alur untuk Pemula
 
-Artikel ini memberimu **versi pemula dari alur permainan** supaya kamu bisa duduk di meja tanpa panik. Kalau kamu mau panduan lebih dalam street demi street dengan satu tangan lengkap, urutan taruhan, dan contoh, lanjutkan ke [urutan main Texas Hold'em](/id/blog/holdem-game-order "thumb:/images/blog-holdem-game-flow.webp").
+Artikel ini memberi Anda **versi pemula dari alur permainan** supaya Anda bisa duduk di meja tanpa panik. Kalau Anda mau panduan lebih dalam street demi street dengan satu tangan lengkap, urutan taruhan, dan contoh, lanjutkan ke [urutan main Texas Hold'em](/id/blog/holdem-game-order "thumb:/images/blog-holdem-game-flow.webp").
 
 | Urutan | Tahap | Yang perlu diingat pemula |
 |------:|-------|--------------------------------|
 | 1 | Tombol dealer | Menentukan blind dan urutan aksi |
 | 2 | Small blind / big blind | Taruhan wajib sebelum kartu dibagikan |
-| 3 | Dua hole cards | Kartu pribadi yang hanya kamu lihat |
+| 3 | Dua hole cards | Kartu pribadi yang hanya Anda lihat |
 | 4 | Preflop | Aksi dimulai dari kiri big blind |
 | 5 | Flop, turn, river | Kartu bersama keluar 3, lalu 1, lalu 1 |
 | 6 | Showdown | Pemain tersisa membandingkan tangan 5 kartu terbaik |
 
-Untuk sesi pertamamu, ide kuncinya sederhana: ==**setiap kali street baru muncul, ada satu ronde taruhan lagi.**==
+Untuk sesi pertama Anda, ide kuncinya sederhana: ==**setiap kali street baru muncul, ada satu ronde taruhan lagi.**==
 
 ![Infografis tampak atas meja Texas Hold'em sebelum flop — tiap pemain memegang dua kartu tertutup dan board masih kosong](/images/rules-step2-preflop.webp "Cara main Texas Hold'em langkah demi langkah — aksi preflop setelah blind dipasang")
 
@@ -106,7 +105,7 @@ Untuk versi detailnya, lanjutkan dengan [urutan main Texas Hold'em dari blind sa
 
 ## Berapa Pemain yang Bisa Main Texas Hold'em?
 
-Texas Hold'em bisa dimainkan **2 sampai 10 pemain** di satu meja. Kamu tidak perlu meja penuh untuk mulai — cukup minimal dua orang.
+Texas Hold'em bisa dimainkan **2 sampai 10 pemain** di satu meja. Anda tidak perlu meja penuh untuk mulai — cukup minimal dua orang.
 
 | Pemain | Sebutannya | Catatan untuk pemula |
 |--------:|------------------|----------------|
@@ -116,9 +115,9 @@ Texas Hold'em bisa dimainkan **2 sampai 10 pemain** di satu meja. Kamu tidak per
 
 Untuk home game pertama, **4 sampai 6 pemain** adalah titik ideal — cukup ramai untuk belajar, tapi cukup sedikit sehingga tiap tangan berjalan cepat.
 
-==g:Ketika hanya tersisa dua pemain (atau kamu mulai berdua), itu disebut heads-up.== Aturannya sama dengan satu pengecualian: ==Button memasang small blind dan bertindak duluan sebelum flop, tetapi big blind bertindak duluan di flop, turn, dan river.== Pembalikan ini menjaga permainan tetap adil karena kalau tidak, satu pemain akan selalu bertindak terakhir.
+==g:Ketika hanya tersisa dua pemain (atau Anda mulai berdua), itu disebut heads-up.== Aturannya sama dengan satu pengecualian: ==Button memasang small blind dan bertindak duluan sebelum flop, tetapi big blind bertindak duluan di flop, turn, dan river.== Pembalikan ini menjaga permainan tetap adil karena kalau tidak, satu pemain akan selalu bertindak terakhir.
 
-Jumlah pemain juga mengubah strategimu — makin banyak lawan, makin besar kemungkinan seseorang memegang tangan kuat, jadi kamu fold lebih banyak tangan lemah. Kalau kamu sedang menimbang antara permainan santai dan format kompetitif, lihat [cash game vs turnamen](/id/blog/holdem-tournament-vs-cash-game).
+Jumlah pemain juga mengubah strategi Anda — makin banyak lawan, makin besar kemungkinan seseorang memegang tangan kuat, jadi Anda fold lebih banyak tangan lemah. Kalau Anda sedang menimbang antara permainan santai dan format kompetitif, lihat [cash game vs turnamen](/id/blog/holdem-tournament-vs-cash-game).
 
 ---
 
@@ -137,15 +136,15 @@ Trik mengingatnya gampang:
 
 ==**Sebelum flop, lihat ke kiri big blind. Setelah flop, lihat ke kiri Button.**==
 
-Itulah kenapa ==g:Button adalah posisi yang begitu kuat==. ==Button biasanya bertindak terakhir di flop, turn, dan river==, artinya dia melihat dulu apa yang dilakukan semua pemain lain. Untuk pembahasan lengkap setiap kursi — dari UTG sampai Button, 6-max vs 9-max, dan range pembukaan tiap posisi — lihat panduan posisi poker.
+Itulah kenapa ==g:Button adalah posisi yang begitu kuat==. ==Button biasanya bertindak terakhir di flop, turn, dan river==, artinya dia melihat dulu apa yang dilakukan semua pemain lain. Untuk pembahasan lengkap setiap kursi — dari UTG sampai Button, 6-max vs 9-max, dan range pembukaan tiap posisi — lihat [panduan posisi poker](/id/blog/holdem-positions).
 
 ---
 
 ## Chip Apa yang Dipakai untuk Mulai Main Texas Hold'em?
 
-Di kasino, nilai chip sudah ditentukan. Di home game, pembagian chip kamu tentukan sendiri.
+Di kasino, nilai chip sudah ditentukan. Di home game, pembagian chip Anda tentukan sendiri.
 
-Untuk pemula, buat angkanya sederhana. Kamu tidak butuh lima warna chip berbeda. Tiga atau empat warna sudah cukup.
+Untuk pemula, buat angkanya sederhana. Anda tidak butuh lima warna chip berbeda. Tiga atau empat warna sudah cukup.
 
 | Tipe home game | Stack awal yang disarankan | Contoh blind |
 |:---|:---|:---:|
@@ -172,11 +171,11 @@ Dengan 200 chip dan blind 1/2, ==g:setiap pemain mulai dengan 100 big blind==. I
 
 ## Berapa Uang yang Dipakai untuk Mulai Main Texas Hold'em?
 
-Jawabannya tergantung apakah kamu main dengan uang sungguhan atau baru latihan.
+Jawabannya tergantung apakah Anda main dengan uang sungguhan atau baru latihan.
 
 Kalau masih belajar, pakai chip mainan dulu. Tujuannya memahami urutan permainan, bukan menciptakan tekanan.
 
-Kalau kamu main cash game kecil di rumah, pilih buy-in yang semua orang rela kehilangannya. Struktur umum untuk pemula:
+Kalau Anda main cash game kecil di rumah, pilih buy-in yang semua orang rela kehilangannya. Struktur umum untuk pemula:
 
 | Level blind | Buy-in pemula | Catatan |
 |:---|:---:|:---|
@@ -186,29 +185,29 @@ Kalau kamu main cash game kecil di rumah, pilih buy-in yang semua orang rela keh
 
 ==r:Jangan mulai dengan taruhan yang bikin orang gugup.== Pemula yang gugup tidak belajar lebih cepat. Mereka cuma terlalu sering fold, call karena emosi, atau berdebat soal aturan.
 
-Perlu dicatat, buy-in **turnamen** bekerja berbeda dari cash game: kamu membayar satu biaya masuk tetap, mendapat stack chip yang tidak bisa diuangkan, dan main sampai satu pemain memegang semua chip. Kalau belum yakin mau format yang mana, baca dulu [cash game vs turnamen](/id/blog/holdem-tournament-vs-cash-game).
+Perlu dicatat, buy-in **turnamen** bekerja berbeda dari cash game: Anda membayar satu biaya masuk tetap, mendapat stack chip yang tidak bisa diuangkan, dan main sampai satu pemain memegang semua chip. Kalau belum yakin mau format yang mana, baca dulu [cash game vs turnamen](/id/blog/holdem-tournament-vs-cash-game).
 
-Untuk latihan online, pakai meja gratis sampai kamu bisa menjelaskan urutan aksi tanpa berpikir. Setelah itu naik level pelan-pelan.
+Untuk latihan online, pakai meja gratis sampai Anda bisa menjelaskan urutan aksi tanpa berpikir. Setelah itu naik level pelan-pelan.
 
 ---
 
-## No-Limit, Limit, atau Pot-Limit? Texas Hold'em Mana yang Kamu Mainkan?
+## No-Limit, Limit, atau Pot-Limit? Texas Hold'em Mana yang Anda Mainkan?
 
-Ketika orang bilang "Texas Hold'em", hampir selalu maksudnya **No-Limit Hold'em (NLHE)** — format yang dipakai di Main Event WSOP dan hampir semua home game. Pembagian kartu, blind, dan peringkat kartu identik di ketiga format. Satu-satunya yang berbeda adalah **berapa banyak kamu boleh bertaruh.**
+Ketika orang bilang "Texas Hold'em", hampir selalu maksudnya **No-Limit Hold'em (NLHE)** — format yang dipakai di Main Event WSOP dan hampir semua home game. Pembagian kartu, blind, dan peringkat kartu identik di ketiga format. Satu-satunya yang berbeda adalah **berapa banyak Anda boleh bertaruh.**
 
-| Format | Berapa yang boleh ditaruhkan? | Di mana kamu menemukannya |
+| Format | Berapa yang boleh ditaruhkan? | Di mana Anda menemukannya |
 |--------|-----------------------|---------------------|
-| **No-Limit (NLHE)** | Berapa pun sampai seluruh chipmu ("all-in") | Permainan default — home game, mayoritas kasino, WSOP |
+| **No-Limit (NLHE)** | Berapa pun sampai seluruh chip Anda ("all-in") | Permainan default — home game, mayoritas kasino, WSOP |
 | **Fixed-Limit** | Hanya kelipatan tetap (small bet tetap, lalu dobel di turn/river) | Meja kasino lama; ayunan chip lebih kecil |
 | **Pot-Limit** | Maksimal sebesar pot saat itu | Jarang untuk Hold'em; standar untuk Omaha (PLO) |
 
-Untuk pemula, ==g:anggap kamu main No-Limit kecuali ada yang bilang sebaliknya.== No-Limit paling mudah *dipahami* (bertaruh berapa pun kamu mau) tapi paling kejam kalau *dimainkan* dengan buruk, karena satu call yang salah bisa menghabiskan seluruh stack. Persis karena itu bagian pot odds di bawah dan [aksi taruhan — cek, call, raise, fold](/id/blog/holdem-betting-actions) sangat penting.
+Untuk pemula, ==g:anggap Anda main No-Limit kecuali ada yang bilang sebaliknya.== No-Limit paling mudah *dipahami* (bertaruh berapa pun Anda mau) tapi paling kejam kalau *dimainkan* dengan buruk, karena satu call yang salah bisa menghabiskan seluruh stack. Persis karena itu bagian pot odds di bawah dan [aksi taruhan — cek, call, raise, fold](/id/blog/holdem-betting-actions) sangat penting.
 
 ---
 
 ## Cara Membagikan Kartu Texas Hold'em
 
-Kamu tidak harus membagikan kartu serapi dealer kasino, tapi urutannya harus bersih.
+Anda tidak harus membagikan kartu serapi dealer kasino, tapi urutannya harus bersih.
 
 Ini urutan membagikan kartu yang ramah pemula:
 
@@ -231,9 +230,9 @@ Di home game santai, yang paling penting adalah konsistensi. Umumkan setiap stre
 
 ---
 
-## Posisi di Texas Hold'em — Kenapa Tempat Dudukmu Mengubah Segalanya
+## Posisi di Texas Hold'em — Kenapa Tempat Duduk Anda Mengubah Segalanya
 
-Posisi berarti **kapan kamu bertindak di setiap ronde taruhan**. Bertindak belakangan berarti kamu sudah melihat apa yang dilakukan pemain lain — dan informasi itu jauh lebih berharga dari yang disadari kebanyakan pemula.
+Posisi berarti **kapan Anda bertindak di setiap ronde taruhan**. Bertindak belakangan berarti Anda sudah melihat apa yang dilakukan pemain lain — dan informasi itu jauh lebih berharga dari yang disadari kebanyakan pemula.
 
 | Kursi | Nama | Urutan preflop (9-max) | Poin kunci |
 |------|------|----------------------|-----------|
@@ -244,15 +243,15 @@ Posisi berarti **kapan kamu bertindak di setiap ronde taruhan**. Bertindak belak
 | Kiri dealer | SB (Small Blind) | Ke-8 pre, ke-1 post | Kursi terburuk — bertindak duluan di setiap street postflop |
 | Dua di kiri dealer | BB (Big Blind) | Terakhir pre (ke-9), ke-2 post | Punya opsi raise preflop; out of position postflop |
 
-==g:Button adalah kursi paling menguntungkan di meja.== Kamu bertindak terakhir di flop, turn, dan river — artinya setiap pemain memperlihatkan kekuatan tangannya sebelum kamu memutuskan.
+==g:Button adalah kursi paling menguntungkan di meja.== Anda bertindak terakhir di flop, turn, dan river — artinya setiap pemain memperlihatkan kekuatan tangannya sebelum Anda memutuskan. Untuk panduan posisi lengkap, lihat [posisi poker: UTG sampai Button](/id/blog/holdem-positions).
 
 ---
 
 ## Strategi Texas Hold'em untuk Pemula
 
-Begitu aturannya masuk akal, strategi pertamamu harus membosankan dan solid.
+Begitu aturannya masuk akal, strategi pertama Anda harus membosankan dan solid.
 
-==r:Kebanyakan pemula kehilangan chip karena main terlalu banyak tangan, mengejar draw lemah, atau call cuma karena penasaran.== Tujuan pertamamu bukan menggertak semua orang. ==g:Tujuan pertamamu adalah berhenti menyumbang chip.==
+==r:Kebanyakan pemula kehilangan chip karena main terlalu banyak tangan, mengejar draw lemah, atau call cuma karena penasaran.== Tujuan pertama Anda bukan menggertak semua orang. ==g:Tujuan pertama Anda adalah berhenti menyumbang chip.==
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -260,7 +259,7 @@ Begitu aturannya masuk akal, strategi pertamamu harus membosankan dan solid.
 |--------------|--------------|
 | Mainkan lebih sedikit tangan lemah | Kartu awal yang buruk menciptakan keputusan sulit |
 | Raise dengan tangan kuat | Tangan kuat harus membangun pot lebih besar |
-| Lebih sering fold dari posisi awal | Terlalu banyak pemain bertindak setelahmu |
+| Lebih sering fold dari posisi awal | Terlalu banyak pemain bertindak setelah Anda |
 | Hormati taruhan besar di river | Pemula jarang menggertak di banyak spot river |
 | Jangan kejar setiap draw | Draw butuh harga yang tepat untuk dilanjutkan |
 
@@ -283,23 +282,23 @@ Kartu awal yang bagus untuk pemula:
 
 </div>
 
-Untuk chart lengkap 169 tangan yang tersusun per posisi (UTG sampai Button), lihat chart kartu awal Texas Hold'em per posisi. Dan sebelum bisa memakai kartu awal dengan benar, kamu harus paham [aksi taruhan — cek, call, raise, fold](/id/blog/holdem-betting-actions).
+Untuk chart lengkap 169 tangan yang tersusun per posisi (UTG sampai Button), lihat [chart kartu awal Texas Hold'em per posisi](/id/blog/holdem-starting-hands-chart). Dan sebelum bisa memakai kartu awal dengan benar, Anda harus paham [aksi taruhan — cek, call, raise, fold](/id/blog/holdem-betting-actions).
 
 ---
 
 ## Pot Odds — Satu Konsep Matematika yang Menyelamatkan Uang Pemula
 
-Kamu tidak perlu jago matematika. Kamu cuma perlu satu pertanyaan sebelum call sebuah taruhan: **apakah harga yang kubayar sepadan dengan peluangku untuk menang?**
+Anda tidak perlu jago matematika. Anda cuma perlu satu pertanyaan sebelum call sebuah taruhan: **apakah harga yang saya bayar sepadan dengan peluang saya untuk menang?**
 
 ### Cara kerja pot odds (satu contoh)
 
-Bayangkan pot berisi **$100** dan lawanmu bertaruh **$20**. Untuk tetap di tangan itu, kamu harus call $20. Total pot menjadi $120.
+Bayangkan pot berisi **$100** dan lawan Anda bertaruh **$20**. Untuk tetap di tangan itu, Anda harus call $20. Total pot menjadi $120.
 
-Pot odds kamu adalah **$120 banding $20**, alias **6 banding 1**. Artinya kamu perlu menang setidaknya **1 dari 7 kali** (sekitar 14%) supaya call ini menguntungkan.
+Pot odds Anda adalah **$120 banding $20**, alias **6:1**. Artinya Anda perlu menang setidaknya **1 dari 7 kali** (sekitar 14%) supaya call ini menguntungkan.
 
 ### Aturan 2 dan 4 — jalan pintas probabilitas instan
 
-Saat kamu memegang drawing hand (misalnya empat kartu menuju Flush), hitung **outs** kamu — kartu-kartu yang melengkapi tanganmu.
+Saat Anda memegang drawing hand (misalnya empat kartu menuju Flush), hitung **outs** Anda — kartu-kartu yang melengkapi tangan Anda.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -310,15 +309,15 @@ Saat kamu memegang drawing hand (misalnya empat kartu menuju Flush), hitung **ou
 
 </div>
 
-Kalau persentase peluang menangmu **lebih tinggi** dari persentase yang dituntut pot odds, call itu menguntungkan. Kalau lebih rendah, fold.
+Kalau persentase peluang menang Anda **lebih tinggi** dari persentase yang dituntut pot odds, call itu menguntungkan. Kalau lebih rendah, fold.
 
-==r:Ini konsep matematika paling penting untuk pemula. Kuasai, dan kamu otomatis terhindar dari separuh kesalahan mahal yang dibuat pemain baru.==
+==r:Ini konsep matematika paling penting untuk pemula. Kuasai, dan Anda otomatis terhindar dari separuh kesalahan mahal yang dibuat pemain baru.==
 
 ---
 
 ## Cheat Sheet Aturan Texas Hold'em Siap Cetak
 
-Ini versi ringkas untuk ditaruh di samping meja. Kamu bisa menyalinnya ke catatan, mencetak halaman ini, atau memakai PDF bersama (berbahasa Inggris) sebelum home game.
+Ini versi ringkas untuk ditaruh di samping meja. Anda bisa menyalinnya ke catatan, mencetak halaman ini, atau memakai PDF bersama (berbahasa Inggris) sebelum home game.
 
 [Unduh PDF Aturan Texas Hold'em untuk Pemula](/downloads/texas-holdem-rules-for-beginners.pdf)
 
@@ -350,15 +349,15 @@ Peringkat kartu dasar dari terkuat ke terlemah (dengan seberapa sering tiap tang
 | 9 | One Pair | 43,8% — tangan paling sering muncul di showdown |
 | 10 | High Card | 17,4% — tangan terlemah di showdown; menang terutama lewat gertakan |
 
-Kalau dua pemain punya tipe tangan yang sama, bandingkan kartu tertinggi yang relevan — itulah aturan kicker dan tie-breaker. Kalau lima kartu terbaiknya persis sama, pot dibagi rata (split).
+Kalau dua pemain punya tipe tangan yang sama, bandingkan kartu tertinggi yang relevan — lihat [aturan kicker dan tie-breaker](/id/blog/holdem-tiebreak-rules). Kalau lima kartu terbaiknya persis sama, pot [dibagi rata (split)](/id/blog/holdem-split-pot-rules).
 
 ---
 
 ## Kesalahan Umum Pemula
 
-### Kesalahan 1: Mengira kamu wajib memakai kedua hole cards
+### Kesalahan 1: Mengira Anda wajib memakai kedua hole cards
 
-Kamu boleh memakai keduanya, satu, atau tidak sama sekali. Tangan lima kartu terbaik yang menang.
+Anda boleh memakai keduanya, satu, atau tidak sama sekali. Tangan lima kartu terbaik yang menang.
 
 ### Kesalahan 2: Lupa urutan aksi berubah
 
@@ -374,7 +373,7 @@ A♣4♦ terlihat menggoda bagi pemula, tapi As lemah sering berakhir jadi One P
 
 ### Kesalahan 5: Mengabaikan posisi
 
-Tangan lebih mudah dimainkan kalau kamu bertindak belakangan. Kalau kamu yang pertama bertindak, kamu butuh tangan lebih kuat karena semua pemain lain masih punya keunggulan informasi.
+Tangan lebih mudah dimainkan kalau Anda bertindak belakangan. Kalau Anda yang pertama bertindak, Anda butuh tangan lebih kuat karena semua pemain lain masih punya keunggulan informasi.
 
 ---
 
@@ -411,7 +410,7 @@ Ada 1.326 kombinasi dua kartu yang persis, tapi pemain biasanya mengelompokkanny
 
 ### Apa aturan Texas Hold'em versi paling sederhana untuk pemula total?
 
-Versi paling sederhana: setiap pemain mendapat 2 kartu pribadi. Lima kartu bersama dibuka dalam tiga tahap (3, lalu 1, lalu 1). Kamu bertaruh setelah tiap tahap. Tangan 5 kartu terbaik dari kombinasi apa pun antara kartumu dan kartu bersama yang menang. Kalau semua pemain lain fold, kamu menang — apa pun kartumu.
+Versi paling sederhana: setiap pemain mendapat 2 kartu pribadi. Lima kartu bersama dibuka dalam tiga tahap (3, lalu 1, lalu 1). Anda bertaruh setelah tiap tahap. Tangan 5 kartu terbaik dari kombinasi apa pun antara kartu Anda dan kartu bersama yang menang. Kalau semua pemain lain fold, Anda menang — apa pun kartu Anda.
 
 ### Aturan Texas Hold'em untuk pemula total — apa arti blind?
 
@@ -427,7 +426,7 @@ Minimal 2 pemain dan maksimal 10. Dengan tepat dua pemain, permainan disebut hea
 
 ### Apa arti no-limit di Texas Hold'em?
 
-No-Limit berarti kamu bisa bertaruh berapa pun sampai seluruh chipmu di ronde taruhan mana pun — itulah gerakan "all-in". Ini format default dan paling populer, termasuk di Main Event WSOP. Limit Hold'em membatasi tiap taruhan ke ukuran tetap, dan Pot-Limit membatasi taruhanmu ke ukuran pot saat itu.
+No-Limit berarti Anda bisa bertaruh berapa pun sampai seluruh chip Anda di ronde taruhan mana pun — itulah gerakan "all-in". Ini format default dan paling populer, termasuk di Main Event WSOP. Limit Hold'em membatasi tiap taruhan ke ukuran tetap, dan Pot-Limit membatasi taruhan Anda ke ukuran pot saat itu.
 
 ### Berapa lama satu tangan Texas Hold'em berlangsung?
 
@@ -437,11 +436,11 @@ Satu tangan biasanya memakan waktu sekitar 10 sampai 60 detik, meskipun pot besa
 
 ## Kesimpulan Akhir
 
-Texas Hold'em lebih mudah dipelajari kalau kamu memisahkan aturan dari strategi.
+Texas Hold'em lebih mudah dipelajari kalau Anda memisahkan aturan dari strategi.
 
 Pertama, ==pelajari alurnya==: blind, dua hole cards, lima kartu bersama, empat ronde taruhan, dan tangan lima kartu terbaik. ==g:Setelah itu pelajari posisi, kartu awal, dan keputusan pot dasar.==
 
-Sebagai langkah berikutnya, ulas [peringkat kartu Texas Hold'em](/id/blog/holdem-hand-rankings), berlatih dengan [chart kartu awal](/hand-chart), dan pakai [kalkulator odds poker](/calculator) saat kamu ingin memahami kenapa sebuah call menguntungkan atau tidak.
+Sebagai langkah berikutnya, ulas [peringkat kartu Texas Hold'em](/id/blog/holdem-hand-rankings), berlatih dengan [chart kartu awal](/hand-chart), dan pakai [kalkulator odds poker](/calculator) saat Anda ingin memahami kenapa sebuah call menguntungkan atau tidak.
 
 ---
 
@@ -457,6 +456,11 @@ Sebagai langkah berikutnya, ulas [peringkat kartu Texas Hold'em](/id/blog/holdem
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Peringkat Kartu</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Peringkat Kartu Poker — Terbaik sampai Terburuk</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Semua 10 tangan dengan peluang, contoh, dan teka-teki board</div>
+  </a>
+  <a href="/id/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Posisi</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Posisi Poker: UTG sampai Button</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Kenapa button menang — peta kursi dan opening range</div>
   </a>
   <a href="/id/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Taruhan</div>

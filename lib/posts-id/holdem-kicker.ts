@@ -128,7 +128,7 @@ Kembali ke buy-in saya. Meja ==b:A♦ 7♣ 2♥ Q♠ 4♦==, tak ada straight at
 - **A9:** A♠ 9♣ → sepasang ace, lima terbaik ==A♠ A♦ Q♠ 9♣ 7♣==.
 - **AK:** A♥ K♦ → sepasang ace, lima terbaik ==g:A♥ A♦ K♦ Q♠ 7♣==.
 
-Pair yang sama lagi — dan 9 saya bahkan tak dapat suara. Ia terdorong ke kicker kedua oleh queen di meja, dan perbandingan diputuskan di kicker pertama: K-nya atas Q di meja — jadi sejauh yang berpengaruh, "kicker" saya sudah ==r:mati== sebelum tangan dimulai. Itulah dominasi: saat Anda nyambung dengan ace Anda, sering kali Anda cuma membayari ace yang lebih besar. Inilah seluruh alasan kenapa chart starting hands memperlakukan A9 offsuit jauh lebih hati-hati daripada AK — kicker adalah beda antara tangan premium dan jebakan.
+Pair yang sama lagi — dan 9 saya bahkan tak dapat suara. Ia terdorong ke kicker kedua oleh queen di meja, dan perbandingan diputuskan di kicker pertama: K-nya atas Q di meja — jadi sejauh yang berpengaruh, "kicker" saya sudah ==r:mati== sebelum tangan dimulai. Itulah dominasi: saat Anda nyambung dengan ace Anda, sering kali Anda cuma membayari ace yang lebih besar. Inilah seluruh alasan kenapa [chart starting hands](/id/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") memperlakukan A9 offsuit jauh lebih hati-hati daripada AK — kicker adalah beda antara tangan premium dan jebakan.
 
 ---
 
@@ -207,6 +207,11 @@ Pahami kicker dengan benar dan seluruh kategori tangan "kok saya bisa kalah?" be
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Peringkat Tangan</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Bagaimana Seri Dipecah</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Urutan pemecah seri lengkap untuk tiap tangan</div>
+  </a>
+  <a href="/id/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Tangan Awal</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Bagan Tangan Awal</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Kenapa ace ber-kicker lemah di-fold</div>
   </a>
   <a href="/id/blog/holdem-reading-the-board" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Membaca Meja</div>

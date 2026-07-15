@@ -72,7 +72,7 @@ Ambil tangan di foto atas:
 
 Sepasang As yang sama, jadi kicker bertarung berurutan: ==g:K mengalahkan Q — selesai.== Angka 9 milik B masih *ada* di tangan sebagai kicker kedua, tapi perbandingan tak pernah sejauh itu.
 
-Perhatikan kicker teratas B adalah Q **milik meja**, bukan angka 9 yang ia pegang. ==r:Sebuah kicker hanya dihitung jika benar-benar masuk ke lima kartu terbaik Anda== — kartu meja yang lebih tinggi menggeser kartu tertutup Anda ke bawah daftar. Itu juga alasan kartu kedua yang Anda mulai sama pentingnya dengan As itu sendiri: A-K dan A-9 sama-sama "sepasang As" di sini, dan hanya satu yang menang.
+Perhatikan kicker teratas B adalah Q **milik meja**, bukan angka 9 yang ia pegang. ==r:Sebuah kicker hanya dihitung jika benar-benar masuk ke lima kartu terbaik Anda== — kartu meja yang lebih tinggi menggeser kartu tertutup Anda ke bawah daftar. Itu juga alasan kartu kedua yang Anda mulai sama pentingnya dengan As itu sendiri: A-K dan A-9 sama-sama "sepasang As" di sini, dan hanya satu yang menang ([chart starting hands](/id/blog/holdem-starting-hands-chart)).
 
 ---
 

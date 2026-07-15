@@ -20,7 +20,7 @@ Permainan paling disiplin yang pernah saya mainkan adalah tiga pemain dari uang 
 
 ==Di bubble, satu bust-out lagi membayar semua orang lainnya — jadi untuk beberapa tangan penting, tetap hidup lebih berharga daripada chip yang bisa Anda menangkan.== Fakta tunggal itu membalik poker normal, dan hampir semua orang salah dengan dua cara yang sama: big stack tidak cukup menyerang, dan medium stack call terlalu banyak. Panduan ini adalah playbook stack demi stack — apa yang harus dilakukan dengan big, medium, atau short stack, di tiga bubble berbeda yang akan Anda hadapi.
 
-Jika Anda ingin matematika di balik *mengapa* chip berhenti setara dengan uang di sini, itu adalah ICM — panduan ini adalah tempat teori itu berubah menjadi fold dan shove di meja turnamen.
+Jika Anda ingin matematika di balik *mengapa* chip berhenti setara dengan uang di sini, itu adalah [ICM](/id/blog/holdem-icm "thumb:/images/holdem-icm-hero.webp") — panduan ini adalah tempat teori itu berubah menjadi fold dan shove di meja [turnamen](/id/blog/holdem-tournament "thumb:/images/holdem-tournament-hero.webp").
 
 ---
 
@@ -52,7 +52,7 @@ Bubble penting karena pembayaran turnamen bersifat ==top-heavy==. Lonjakan dari 
 
 **Karena chip turnamen bukan uang — Anda hanya menang satu hadiah pertama, jadi chip yang melindungi cash yang dijamin lebih berharga daripada chip yang meraih lebih banyak.** Ini adalah Independent Chip Model, dan di dekat pay jump ini berarti ==risiko bust mengalahkan imbalan memenangkan sebuah coin flip==. Sebuah call yang break-even dalam chip bisa menjadi permainan yang merugi dalam dolar sungguhan.
 
-Anda tidak perlu menjalankan matematika secara langsung — itulah gunanya [kalkulator ICM](/calculator) kami. Yang penting di meja adalah konsekuensinya: ==call menjadi jauh lebih ketat, tapi shove tetap lebar==, karena menang tanpa showdown (fold equity) lebih berharga dari sebelumnya ketika semua orang bermain takut. Ingat satu baris: **ketatkan call Anda sebelum Anda mengetatkan shove Anda.**
+Anda tidak perlu menjalankan matematika secara langsung — itulah gunanya [kalkulator ICM](/calculator) kami, dan rincian lengkapnya ada di [panduan ICM](/id/blog/holdem-icm). Yang penting di meja adalah konsekuensinya: ==call menjadi jauh lebih ketat, tapi shove tetap lebar==, karena menang tanpa showdown (fold equity) lebih berharga dari sebelumnya ketika semua orang bermain takut. Ingat satu baris: **ketatkan call Anda sebelum Anda mengetatkan shove Anda.**
 
 ---
 
@@ -98,9 +98,9 @@ Jika Anda merasa penjepit mengetat di bubble, Anda mungkin medium stack. Mainkan
 
 ## Cara Memainkan SHORT Stack di Bubble
 
-**All-in atau fold — jangan pernah limp atau call off — dan manfaatkan fakta bahwa bubble factor Anda sebenarnya lebih rendah daripada medium stack.** Karena Anda sudah cenderung bust, menggandakan sangat membantu Anda, jadi Anda lebih bebas berjudi daripada middle stack yang terjebak. Tapi Anda berjudi dengan ==menjadi orang yang shove==, bukan orang yang call:
+**All-in atau fold — jangan pernah limp atau call off — dan manfaatkan fakta bahwa bubble factor Anda sebenarnya lebih rendah daripada medium stack.** Karena Anda sudah cenderung bust, menggandakan sangat membantu Anda, jadi Anda lebih bebas berjudi daripada middle stack yang terjebak. Tapi Anda berjudi dengan ==menjadi orang yang shove==, bukan orang yang call — [playbook push/fold short-stack](/id/blog/holdem-short-stack "thumb:/images/holdem-short-stack-hero.webp") lengkap mencakup mekanikanya:
 
-- **Shove atau fold.** Agresi first-in menjaga fold equity Anda, senjata paling berharga Anda. Open-limp atau flat-call dengan short stack membuangnya.
+- **Shove atau fold.** Agresi first-in menjaga [fold equity](/id/blog/holdem-when-to-fold) Anda, senjata paling berharga Anda. Open-limp atau flat-call dengan short stack membuangnya.
 - **Tunggu jika ada stack lebih pendek dari Anda.** Jika dua pemain lebih pendek, Anda bisa fold tangan marjinal dan biarkan mereka bust dulu — naik ladder secara gratis. Jika *Anda* yang terpendek, Anda tidak mampu menunggu; cari spot dan shove sebelum Anda blind out.
 - **Jangan mengetat sampai lenyap.** Fold sampai dua big blind "untuk bertahan" adalah cara Anda tetap menjadi bubble boy juga. Pilih shoving range yang masuk akal dan komit.
 
@@ -161,6 +161,7 @@ Pemain yang memenangkan turnamen memperlakukan bubble sebagai ==peluang untuk me
 ---
 
 :::readnext[Lanjut membaca]
+/id/blog/holdem-icm | ICM Dijelaskan — Kenapa Chip Bukan Uang | /images/holdem-icm-hero.webp
 /id/blog/holdem-when-to-fold | Kapan Harus Fold di Poker | /images/holdem-when-to-fold-hero.webp
 :::
 
@@ -202,13 +203,23 @@ A. Karena di satelit setiap kursi membayar sama, jadi begitu stack Anda aman di 
 2. **Medium stack adalah jebakannya, bukan short stack.** Big stack menyerang para medium; medium bermain kecil; short stack shove duluan dan pakai fold equity.
 3. **Kenali tipe bubble Anda.** Money, final-table, dan bubble satelit memberi imbalan permainan berbeda — dan di satelit, stack yang aman fold semuanya, bahkan aces.
 
-Mesin di balik semuanya adalah ICM; disiplin di balik fold adalah [tahu kapan harus melepas](/id/blog/holdem-when-to-fold).
+Mesin di balik semuanya adalah [ICM](/id/blog/holdem-icm); disiplin di balik fold adalah [tahu kapan harus melepas](/id/blog/holdem-when-to-fold).
 
 ---
 
 ## Postingan Terkait
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
+  <a href="/id/blog/holdem-icm" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Turnamen</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ICM Dijelaskan</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Matematika di balik kenapa bubble penting</div>
+  </a>
+  <a href="/id/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Turnamen</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Strategi Turnamen</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Pilar tempat bubble bernaung</div>
+  </a>
   <a href="/id/blog/holdem-when-to-fold" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Strategi</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Kapan Harus Fold di Poker</div>

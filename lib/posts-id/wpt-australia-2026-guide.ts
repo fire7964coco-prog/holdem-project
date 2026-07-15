@@ -32,7 +32,7 @@ WPT Australia 2026 kembali ke The Star Sydney untuk festival Australia terbesar 
 
 Panduan ini membahas semua yang dilewatkan oleh kompetitor.
 
-Festival live pertama Anda? Mulai dengan panduan turnamen — buy-in, blind, dan checklist Day 1 sebelum Anda terbang.
+Festival live pertama Anda? Mulai dengan [panduan turnamen](/id/blog/holdem-tournament "thumb:/images/holdem-tournament-hero.webp") — buy-in, blind, dan checklist Day 1 sebelum Anda terbang.
 
 ---
 
@@ -279,7 +279,8 @@ Berikut biaya perjalanan WPT Australia lengkap yang sebenarnya, berdasarkan data
 ---
 
 :::readnext[Baca selanjutnya]
-/id/blog/holdem-tournament-vs-cash-game | Turnamen vs Cash Game | /images/holdem-tournament-hero.webp
+/id/blog/holdem-tournament | Panduan Turnamen Texas Hold'em | /images/holdem-tournament-hero.webp
+/id/blog/ept-barcelona-2026-guide | Panduan EPT Barcelona 2026 | /images/ept-barcelona-2026-guide-hero.webp
 :::
 
 ## FAQ — WPT Australia 2026
@@ -313,6 +314,16 @@ A. Bisa. Ruang poker The Star menjalankan cash game setiap hari ==g:pukul 10 pag
 ## Panduan Terkait
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
+  <a href="/id/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Wajib Baca</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Cara Kerja Turnamen Poker</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Buy-in, blind, satelit & checklist Day 1</div>
+  </a>
+  <a href="/id/blog/ept-barcelona-2026-guide" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Bandingkan</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Panduan EPT Barcelona 2026</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Festival poker musim panas terbesar di Eropa</div>
+  </a>
   <a href="/id/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Mulai di Sini</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Turnamen vs Cash Game</div>

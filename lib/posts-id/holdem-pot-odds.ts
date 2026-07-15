@@ -139,7 +139,7 @@ Implied odds | Chip *tambahan* yang Anda harapkan menang di street berikutnya ji
 
 **Pot odds vs. [equity](/id/blog/holdem-equity "thumb:/images/holdem-equity-hero.webp")** adalah keputusan inti: call saat equity Anda mengalahkan pot odds Anda. [**Implied odds**](/id/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp") adalah penentu untuk draw yang meleset tipis dari harganya. Jika flush draw Anda butuh 25% tapi hanya punya 19,6% di kartu river, Anda tetap bisa call *jika* Anda akan menarik cukup taruhan tambahan saat jadi untuk menutup selisihnya. Itulah kenapa Anda bisa call taruhan flop secara profit dengan sebuah draw, dan kenapa stack dalam membuat draw lebih berharga.
 
-Cermin gelapnya adalah **reverse implied odds** — chip yang akan Anda *kehilangan* saat draw Anda jadi tapi tetap kalah di tangan itu (flush Anda lengkap, tapi meja berpasangan dan seseorang punya full house). Draw peringkat kedua diam-diam menguras uang, itulah kenapa nut flush draw jauh lebih berharga daripada draw kecil.
+Cermin gelapnya adalah **reverse implied odds** — chip yang akan Anda *kehilangan* saat draw Anda jadi tapi tetap kalah di tangan itu (flush Anda lengkap, tapi meja berpasangan dan seseorang punya full house). Draw peringkat kedua diam-diam menguras uang, itulah kenapa [nut flush draw jauh lebih berharga daripada draw kecil](/id/blog/holdem-starting-hands-chart).
 
 ---
 
@@ -181,6 +181,7 @@ Turn adalah 3♠ — kartu mati. Pot-nya $200 dan villain jam $200 — taruhan s
 
 :::readnext[Lanjut membaca]
 /id/blog/holdem-probability | Tabel Peluang & Probabilitas Poker | /images/holdem-probability-hero.webp
+/id/blog/holdem-starting-hands-chart | Tangan Awal Mana yang Benar-benar Dimainkan | /images/holdem-starting-hands-chart-hero.webp
 :::
 
 ## FAQ
@@ -225,7 +226,7 @@ A. Tepat pot odds Anda sebagai persentase: call ÷ pot akhir. Melawan taruhan se
 2. **Perbandingannya:** call saat equity Anda (outs × 4 atau × 2) mengalahkan pot odds Anda. Itulah seluruh keputusannya.
 3. **Penentunya:** implied odds menyelamatkan draw yang meleset tipis dari harganya — tapi hanya saat stack dalam dan draw Anda menuju nut.
 
-Lakukan ini beberapa ratus kali dan ia berhenti menjadi matematika dan menjadi insting. Anda akan fold call tanpa harapan, membuat yang profit, dan berhenti membayar pajak "harapan." Dari sini, pertajam angka mentah di balik setiap draw di [tabel peluang dan probabilitas poker](/id/blog/holdem-probability).
+Lakukan ini beberapa ratus kali dan ia berhenti menjadi matematika dan menjadi insting. Anda akan fold call tanpa harapan, membuat yang profit, dan berhenti membayar pajak "harapan." Dari sini, pertajam angka mentah di balik setiap draw di [tabel peluang dan probabilitas poker](/id/blog/holdem-probability), atau pastikan Anda masuk pot dengan tangan yang layak di-draw memakai [bagan tangan awal per posisi](/id/blog/holdem-starting-hands-chart).
 
 ---
 
@@ -236,6 +237,11 @@ Lakukan ini beberapa ratus kali dan ia berhenti menjadi matematika dan menjadi i
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Peluang & Matematika</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Tabel Peluang & Probabilitas Poker</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Setiap tangan, flop, dan draw — angka di balik harga</div>
+  </a>
+  <a href="/id/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Tangan Awal</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Bagan Tangan Awal per Posisi</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Masuk pot dengan tangan yang layak di-draw</div>
   </a>
   <a href="/id/blog/holdem-reading-the-board" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Membaca Meja</div>

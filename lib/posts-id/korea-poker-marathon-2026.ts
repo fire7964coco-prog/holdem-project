@@ -252,6 +252,8 @@ Sementara maraton berlangsung Okt–Nov, ==**Paradise City Casino**== beroperasi
 - Permainan: cash game No-Limit Hold'em, permainan meja lain, slot
 - Spa dan sauna di lokasi — relevan jika Anda baru saja berlari 42K
 
+Untuk gambaran turnamen lengkap (APT Incheon berlangsung 7–16 Agustus dengan GTD $2,7 juta), lihat [panduan APT Incheon 2026](/id/blog/apt-incheon-2026-guide "thumb:/images/apt-incheon-2026-guide-hero.webp").
+
 **Kalender poker + maraton Korea 2026 lengkap:**
 
 <div style="overflow-x:auto;margin:20px 0">
@@ -467,6 +469,11 @@ Tanggal dan acara bisa berubah — periksa situs web resmi lomba dan kalender in
 
 ---
 
+:::readnext[Lanjut membaca]
+/id/blog/holdem-tournament | Panduan Turnamen Texas Hold'em | /images/holdem-tournament-hero.webp
+/id/blog/apt-incheon-2026-guide | Panduan APT Incheon 2026 | /images/apt-incheon-2026-guide-hero.webp
+:::
+
 ## FAQ
 
 **Q. Apakah saya perlu berbahasa Korea untuk mengikuti maraton Korea?**
@@ -499,17 +506,27 @@ Komunitas orang-orang yang memegang baik bankroll poker maupun catatan latihan m
 
 Tanggal untuk dicatat: ==**Chuncheon 25 Okt**==, ==**JTBC Seoul 1 Nov**==, Garmin Run 15 Nov. Paradise City buka sepanjang tahun.
 
-Untuk perbedaan strategi turnamen vs cash game: [Turnamen vs Cash Game](/id/blog/holdem-tournament-vs-cash-game).
+Untuk gambaran turnamen poker lengkap (APT Incheon, GTD $2,7 juta, 7–16 Agustus): [Panduan APT Incheon 2026](/id/blog/apt-incheon-2026-guide). Untuk perbedaan strategi turnamen vs cash game: [Turnamen vs Cash Game](/id/blog/holdem-tournament-vs-cash-game).
 
 ---
 
 ## Artikel Terkait
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
-  <a href="/id/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/id/blog/apt-incheon-2026-guide" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Turnamen</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Turnamen vs Cash Game Poker</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Nilai chip, blind, bankroll, dan ICM untuk pemula</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Panduan APT Incheon 2026</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">7–16 Agu, Paradise City Casino · GTD $2,7 juta</div>
+  </a>
+  <a href="/id/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Dasar</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Cara Kerja Turnamen Poker</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Buy-in, blind, satelit & checklist pemula</div>
+  </a>
+  <a href="/id/blog/wpt-australia-2026-guide" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Asia-Pasifik</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Panduan WPT Australia 2026</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">The Star Sydney — 10–30 Sep</div>
   </a>
 </div>
 `.trim(),

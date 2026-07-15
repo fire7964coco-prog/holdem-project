@@ -81,7 +81,7 @@ Sebelum flop apa pun, ada tepat **1.326 kemungkinan tangan awal dua-kartu**. Ini
 | A-K (suited *atau* offsuit) | 1 dari 83 (1,2%) | — |
 | Dua kartu suited apa pun | 1 dari 4,3 (23,5%) | Hampir tiap tangan keempat |
 
-Jadi lain kali seseorang berkata "saya tak pernah dapat aces," mereka kira-kira benar — Anda akan dibagikan pasangan *spesifik* seperti aces hanya sekitar ==sekali tiap 221 tangan==. Tapi **sembarang** pocket pair datang tiap 17 tangan, itulah kenapa set-mining adalah strategi nyata, bukan khayalan. Pasangan dan tangan suited mana yang layak dimainkan dari tiap kursi dibahas di bagan tangan awal per posisi.
+Jadi lain kali seseorang berkata "saya tak pernah dapat aces," mereka kira-kira benar — Anda akan dibagikan pasangan *spesifik* seperti aces hanya sekitar ==sekali tiap 221 tangan==. Tapi **sembarang** pocket pair datang tiap 17 tangan, itulah kenapa set-mining adalah strategi nyata, bukan khayalan. Pasangan dan tangan suited mana yang layak dimainkan dari tiap kursi dibahas di [bagan tangan awal per posisi](/id/blog/holdem-starting-hands-chart).
 
 ---
 
@@ -203,7 +203,7 @@ Beberapa angka ada terutama untuk menjelaskan malam terburuk hidup poker Anda.
 
 :::readnext[Terus baca]
 /id/blog/holdem-hand-rankings | Peringkat Tangan Poker, Terbaik ke Terburuk | /images/holdem-hand-rankings-hero.webp
-/id/blog/holdem-reading-the-board | Cara Membaca Board di Hold'em | /images/holdem-reading-the-board-hero.webp
+/id/blog/holdem-starting-hands-chart | Tangan Awal Mana yang Benar-benar Dimainkan | /images/holdem-starting-hands-chart-hero.webp
 :::
 
 ## FAQ
@@ -248,7 +248,7 @@ A. Tak ada angka tunggal yang tetap — bergantung berapa lawan memegang pocket 
 2. **Flush draw hingga river: 35%.** Sembilan outs, Aturan 4 → 9 × 4 = 36%.
 3. **Pot odds mengalahkan firasat.** Jika peluang Anda hit lebih besar dari harga call, Anda call — setiap kali.
 
-Poker memberi imbalan pada pemain yang telah menjadikan ini otomatis. Pelajari bagannya, latih Aturan 2 dan 4, dan mulai bertanya "berapa odds-nya?" *sebelum* Anda bertindak alih-alih sesudahnya. Selanjutnya, terapkan matematika ini dengan mempelajari tangan awal mana yang dimainkan dari tiap posisi, atau perbarui pemahaman [kenapa flush mengalahkan straight](/id/blog/holdem-flush-vs-straight) agar Anda selalu tahu nilai outs Anda.
+Poker memberi imbalan pada pemain yang telah menjadikan ini otomatis. Pelajari bagannya, latih Aturan 2 dan 4, dan mulai bertanya "berapa odds-nya?" *sebelum* Anda bertindak alih-alih sesudahnya. Selanjutnya, terapkan matematika ini dengan mempelajari [tangan awal mana yang dimainkan dari tiap posisi](/id/blog/holdem-starting-hands-chart), atau perbarui pemahaman [kenapa flush mengalahkan straight](/id/blog/holdem-flush-vs-straight) agar Anda selalu tahu nilai outs Anda.
 
 ---
 
@@ -260,6 +260,11 @@ Poker memberi imbalan pada pemain yang telah menjadikan ini otomatis. Pelajari b
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Peringkat Tangan Poker, Terbaik ke Terburuk</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Urutan yang diciptakan odds ini — tiap tangan diperingkat</div>
   </a>
+  <a href="/id/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Tangan Awal</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Bagan Tangan Awal per Posisi</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Mana dari 1.326 tangan itu yang benar-benar dimainkan</div>
+  </a>
   <a href="/id/blog/holdem-flush-vs-straight" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Duel Tangan</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Apakah Flush Mengalahkan Straight?</div>
@@ -269,6 +274,11 @@ Poker memberi imbalan pada pemain yang telah menjadikan ini otomatis. Pelajari b
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Membaca Board</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Cara Membaca Board di Hold'em</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Hitung outs Anda dengan melihat tiap draw</div>
+  </a>
+  <a href="/id/blog/holdem-position-play" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Strategi</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Bagaimana Posisi Mengubah Segalanya</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Kapan odds membenarkan call — dan kapan posisi yang membenarkannya</div>
   </a>
 </div>
 `.trim(),

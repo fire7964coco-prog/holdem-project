@@ -177,7 +177,7 @@ Logika yang sama menjawab "bisakah punya three pair?" — Anda mungkin memegang 
 
 ## Apa tangan terbaik yang mungkin? Membaca the nuts
 
-Pemain kuat menjalankan satu pindaian lagi: bukan "saya punya apa?" tapi ==**"apa tangan terbaik yang BISA dimiliki SIAPA PUN di board ini?"**== Tangan itu disebut the nuts.
+Pemain kuat menjalankan satu pindaian lagi: bukan "saya punya apa?" tapi ==**"apa tangan terbaik yang BISA dimiliki SIAPA PUN di board ini?"**== Tangan itu disebut the nuts (istilah meja lain seperti ini ada di [glosarium poker](/id/blog/holdem-glossary)).
 
 Board: Q♣ 9♥ 6♣ 5♦ 2♠
 

@@ -302,6 +302,11 @@ Dibanding EPT Barcelona (Main ~€5.300) atau WPT Australia (Main ~AUD $5.000), 
 
 ---
 
+:::readnext[Lanjut membaca]
+/id/blog/holdem-tournament | Panduan Turnamen Texas Hold'em | /images/holdem-tournament-hero.webp
+/id/blog/korea-poker-marathon-2026 | Panduan Korea Poker Marathon 2026 | /images/korea-poker-marathon-2026-hero.webp
+:::
+
 ## FAQ
 
 **Q. Apakah Paradise City Casino benar-benar bisa dijangkau berjalan kaki dari Bandara Incheon?**
@@ -341,15 +346,25 @@ Menuju APT Incheon? [Panduan turnamen vs cash game](/id/blog/holdem-tournament-v
 ## Postingan Terkait
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
+  <a href="/id/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Dasar Turnamen</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Cara Kerja Turnamen Poker</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Buy-in, blind, satelit & checklist pemula</div>
+  </a>
   <a href="/id/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Strategi</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Turnamen vs Cash Game</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Bagaimana strategi berubah saat ICM berlaku</div>
   </a>
-  <a href="/id/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Dasar</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Aksi Taruhan dalam Poker</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Check, bet, call, raise, dan fold sebelum Day 1</div>
+  <a href="/id/blog/wpt-australia-2026-guide" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Asia-Pasifik</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Panduan WPT Australia 2026</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">The Star Sydney — 10–30 Sep, Championship AUD $5.000</div>
+  </a>
+  <a href="/id/blog/ept-barcelona-2026-guide" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Eropa</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Panduan EPT Barcelona 2026</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Casino Barcelona — 16–29 Agu, Main Event €5.300</div>
   </a>
 </div>
 `.trim(),

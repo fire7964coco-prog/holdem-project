@@ -64,7 +64,7 @@ Inilah starting hand terbaik di poker — tangan yang hampir selalu harus Anda r
 
 ==g:Dengan tangan 1–5 (pocket pair), selalu raise dan sering re-raise preflop untuk membangun pot.== Dengan AK dan AQ, tujuannya adalah masuk heads-up di mana kartu besar Anda punya equity maksimal. Satu angka yang layak dihafal: AK kira-kira ==coin flip melawan setiap pocket pair yang lebih kecil== (klasik "race") dan sekitar 43–46% melawan QQ — cukup dekat sehingga raise dan re-raise dengan AK tetap benar.
 
-Pocket rockets, cowboys, big slick — jika slang meja ini baru bagi Anda, glosarium poker mencakup setiap julukan tangan. Dan jika Anda masih samar soal apa mengalahkan apa saat board keluar, tinjau dulu [peringkat tangan poker](/id/blog/holdem-hand-rankings).
+Pocket rockets, cowboys, big slick — jika slang meja ini baru bagi Anda, [glosarium poker](/id/blog/holdem-glossary) mencakup setiap julukan tangan. Dan jika Anda masih samar soal apa mengalahkan apa saat board keluar, tinjau dulu [peringkat tangan poker](/id/blog/holdem-hand-rankings).
 
 ---
 

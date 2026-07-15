@@ -61,7 +61,7 @@ Saat Anda mendaftar, Anda membayar buy-in. Uang itu terbagi dua arah:
 | **$100** | → Prize pool, dibagi ke semua peserta |
 | **$9** | → Fee rumah (rake) yang disimpan venue |
 
-Event live besar biasanya menyimpan 8–10% dari buy-in sebagai fee (turnamen harian kecil sering mengambil lebih banyak) — di sini $9 dari $109, sekitar 8,3%. Cara kerja fee itu adalah bagian yang disimpan venue dari setiap buy-in.
+Event live besar biasanya menyimpan 8–10% dari buy-in sebagai fee (turnamen harian kecil sering mengambil lebih banyak) — di sini $9 dari $109, sekitar 8,3%. Cara kerja fee itu (dan kenapa online berbeda dari live) dibahas di [cara kerja rake poker](/id/blog/holdem-rake).
 
 Sebagai gantinya, Anda menerima **starting stack** — umumnya 10.000 sampai 50.000 chip turnamen, biasanya sedalam 100–300 big blind di Level 1.
 
@@ -267,7 +267,7 @@ Payout structure selalu diumumkan sebelum turnamen mulai. Mintalah **structure s
 
 ## Glosarium Turnamen — Istilah yang Akan Anda Dengar di Day 1
 
-13 istilah ini mencakup sebagian besar yang akan Anda dengar di meja. Untuk daftar lengkap A sampai Z, lihat glosarium poker.
+13 istilah ini mencakup sebagian besar yang akan Anda dengar di meja. Untuk daftar lengkap A sampai Z, lihat [glosarium poker](/id/blog/holdem-glossary).
 
 | Istilah | Artinya |
 |------|--------------|

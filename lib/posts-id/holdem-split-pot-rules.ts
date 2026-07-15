@@ -182,7 +182,7 @@ A. Pot pecah menjadi main pot dan side pot; masing-masing diberikan atau di-chop
 
 **Q. Apakah chop turnamen sama dengan split pot?**
 
-A. Tidak — kata sama, dua hal berbeda. Split pot saat showdown itu otomatis: ketika tangan seri, dealer membagi chip. "Chop" turnamen adalah kesepakatan sukarela di antara pemain tersisa untuk membagi prize pool, biasanya berdasarkan jumlah chip atau ICM, dan hanya terjadi jika semua setuju. Lihat [turnamen vs cash game](/id/blog/holdem-tournament-vs-cash-game) untuk perbedaan pembayaran turnamen.
+A. Tidak — kata sama, dua hal berbeda. Split pot saat showdown itu otomatis: ketika tangan seri, dealer membagi chip. "Chop" turnamen adalah kesepakatan sukarela di antara pemain tersisa untuk membagi prize pool, biasanya berdasarkan jumlah chip atau [ICM](/id/blog/holdem-icm), dan hanya terjadi jika semua setuju. Lihat [turnamen vs cash game](/id/blog/holdem-tournament-vs-cash-game) untuk perbedaan pembayaran turnamen.
 
 ---
 

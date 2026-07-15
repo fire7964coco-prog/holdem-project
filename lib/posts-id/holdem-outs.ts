@@ -18,7 +18,7 @@ export const POST: Post = {
   content: `
 Di tahun pertama saya di meja, saya "memainkan draw" tanpa pernah benar-benar menghitungnya. Flush draw dan gutshot terasa mirip saja — keduanya "kartu yang mungkin datang" — jadi saya call sama saja pada keduanya dan bingung kenapa terus kalah. Solusinya bukan kursus strategi. Solusinya adalah kebiasaan lima menit: ==berhenti, dan benar-benar hitung kartu yang menyelamatkan saya.==
 
-Kebiasaan itu disebut menghitung **outs** — jawaban nyata poker untuk "menghitung kartu" — dan itulah satu-satunya keterampilan yang mendasari setiap keputusan odds di poker. Sebelum Anda bisa bertanya "apakah call ini menguntungkan?", Anda harus menjawab "berapa kartu yang memenangkan tangan untuk saya?" Panduan ini adalah bagian menghitungnya — [chart odds dan probabilitas poker](/id/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp") adalah referensi di baliknya, dan [pot odds](/id/blog/holdem-pot-odds) adalah apa yang Anda lakukan dengan angka itu setelah Anda memilikinya.
+Kebiasaan itu disebut menghitung **outs** — [jawaban nyata poker untuk "menghitung kartu"](/id/blog/holdem-card-counting "thumb:/images/holdem-card-counting-hero.webp") — dan itulah satu-satunya keterampilan yang mendasari setiap keputusan odds di poker. Sebelum Anda bisa bertanya "apakah call ini menguntungkan?", Anda harus menjawab "berapa kartu yang memenangkan tangan untuk saya?" Panduan ini adalah bagian menghitungnya — [chart odds dan probabilitas poker](/id/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp") adalah referensi di baliknya, dan [pot odds](/id/blog/holdem-pot-odds) adalah apa yang Anda lakukan dengan angka itu setelah Anda memilikinya.
 
 ---
 
@@ -238,6 +238,11 @@ Kuasai hitungannya dan sisa matematika poker jatuh pada tempatnya. Bawa jumlah o
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Membaca Meja</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Cara Membaca Meja</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Kenali setiap draw agar Anda menghitung outs bersih</div>
+  </a>
+  <a href="/id/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Tangan Awal</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Bagan Tangan Awal per Posisi</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Masuk pot dengan tangan yang layak di-draw</div>
   </a>
 </div>
 `.trim(),

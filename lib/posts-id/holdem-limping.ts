@@ -37,7 +37,7 @@ Over-limp / SB | Spot di mana ia justru wajar
 
 **Limp berarti masuk ke pot preflop dengan call sebesar big blind — tanpa raise.** Anda memasukkan jumlah minimum untuk melihat flop. Yang penting, limping hanya berlaku saat *belum ada yang raise*: jika seseorang sudah raise dan Anda menyamai jumlahnya, itu **call**, bukan limp. Kata ini secara khusus menggambarkan pengambilan jalur pasif dan termurah ke pot yang belum di-raise.
 
-Perlu dipisahkan dua istilah yang sering dicampuradukkan. Seorang **limper** adalah orang yang masuk ke pot yang belum di-raise dengan call big blind. Sebuah **calling station** adalah pemain yang terlalu banyak call *taruhan* postflop, di flop, turn, dan river. Keduanya sering menggambarkan pemain loose-passive yang sama, tapi keduanya kebiasaan yang berbeda — satu soal bagaimana Anda *masuk* pot, satu lagi soal bagaimana Anda *melanjutkan* di dalamnya. Glosarium istilah poker menuntaskan sisa kosakatanya jika ada yang membingungkan Anda.
+Perlu dipisahkan dua istilah yang sering dicampuradukkan. Seorang **limper** adalah orang yang masuk ke pot yang belum di-raise dengan call big blind. Sebuah **calling station** adalah pemain yang terlalu banyak call *taruhan* postflop, di flop, turn, dan river. Keduanya sering menggambarkan pemain loose-passive yang sama, tapi keduanya kebiasaan yang berbeda — satu soal bagaimana Anda *masuk* pot, satu lagi soal bagaimana Anda *melanjutkan* di dalamnya. Glosarium [istilah poker](/id/blog/holdem-glossary) ini menuntaskan sisa kosakatanya jika ada yang membingungkan Anda.
 
 ---
 
@@ -121,7 +121,7 @@ Ya — di sebagian besar permainan, sebuah open-limp adalah tanda menyala yang b
 - **Value tipis dan c-bet tanpa henti.** Melawan range limping yang terbatas (sedikit atau tanpa tangan premium, karena Anda biasanya me-raise-nya), pemain bagus bertaruh lebih banyak street untuk value yang lebih tipis dan menggertak lebih bebas, yakin Anda tak mungkin punya the nuts.
 - **Pemanfaatan posisi.** Karena limper biasanya loose dan pasif, pemain agresif cukup mengungguli mereka setelah flop, membuat mereka fold tangan marginal dan mengeruk value saat mereka nyambung.
 
-Perbaikannya menyegarkan karena sederhana: **raise atau fold sebagai default Anda, dan simpan limping untuk spot-spot spesifik di atas.** Begitu Anda berhenti open-limping, Anda berhenti menjadi target termudah di meja — yang, kebetulan, adalah hal pertama yang memisahkan Anda dari para fish.
+Perbaikannya menyegarkan karena sederhana: **raise atau fold sebagai default Anda, dan simpan limping untuk spot-spot spesifik di atas.** Begitu Anda berhenti open-limping, Anda berhenti menjadi target termudah di meja — yang, kebetulan, adalah hal pertama yang memisahkan Anda dari [para fish](/id/blog/holdem-fish "thumb:/images/holdem-fish-hero.webp").
 
 ---
 
@@ -196,6 +196,16 @@ Memperbaiki limping Anda adalah salah satu peningkatan tercepat di poker — tak
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Strategi</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Chart Starting Hand</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Apa yang layak di-raise sejak awal</div>
+  </a>
+  <a href="/id/blog/holdem-fish" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Glosarium</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Apa Itu Fish?</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Kebiasaan pasif yang menandai pemain lemah</div>
+  </a>
+  <a href="/id/blog/holdem-glossary" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Glosarium</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Istilah Poker A-Z</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Setiap kosakata meja, dijelaskan</div>
   </a>
 </div>
 `.trim(),

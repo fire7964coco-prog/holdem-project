@@ -130,7 +130,7 @@ Yang menggerakkan realisasi Anda naik atau turun:
 📚 | Kedalaman stack & skill | Stack lebih dalam dan lawan lebih tangguh membuat equity marjinal lebih sulit direalisasi
 :::
 
-Ini adalah ide terpenting yang sebagian besar panduan pemula tinggalkan, dan inilah kenapa tangan yang sama bermain sangat berbeda menurut posisi. Equity mentah adalah plafonnya; realisasi adalah yang Anda bawa pulang.
+Ini adalah ide terpenting yang sebagian besar panduan pemula tinggalkan, dan inilah kenapa [tangan yang sama bermain sangat berbeda menurut posisi](/id/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp"). Equity mentah adalah plafonnya; realisasi adalah yang Anda bawa pulang.
 
 ---
 
@@ -242,6 +242,11 @@ Kuasai ini dan sisa matematika poker jatuh pada tempatnya. Dari sini, ubah equit
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Odds & Matematika</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Implied Odds Dijelaskan</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Kenapa equity bukan bagian pot final Anda</div>
+  </a>
+  <a href="/id/blog/holdem-position-play" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Strategi</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Bagaimana Posisi Mengubah Segalanya</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Kenapa realisasi hidup dan mati pada posisi</div>
   </a>
 </div>
 `.trim(),
