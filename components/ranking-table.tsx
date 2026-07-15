@@ -21,7 +21,7 @@ export default function RankingTable({
       className="mb-8 rounded-2xl border border-primary/30 bg-gradient-to-b from-primary/[0.07] to-card overflow-hidden shadow-[0_10px_40px_rgba(0,0,0,0.06)]"
     >
       <div className="flex items-center justify-between gap-2 px-4 sm:px-5 py-3 border-b border-primary/20 bg-primary/[0.06]">
-        <h2 className="m-0 text-sm sm:text-base font-extrabold text-foreground tracking-tight">{name}</h2>
+        <h2 className="m-0 text-sm sm:text-base font-extrabold text-[#141414] tracking-tight">{name}</h2>
         <span className="flex-shrink-0 text-[10px] font-bold uppercase tracking-widest text-primary/80">
           {order === "Ascending" ? "약 → 강" : "강 → 약"}
         </span>
@@ -49,11 +49,11 @@ export default function RankingTable({
               </span>
               <span className="min-w-0 flex-1">
                 <span className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
-                  <b className="text-[15px] font-bold text-foreground sm:text-base">{it.name}</b>
-                  {eng && <span className="text-xs text-muted-foreground/80">{eng}</span>}
+                  <b className="text-[15px] font-bold text-[#141414] sm:text-base">{it.name}</b>
+                  {eng && <span className="text-xs text-[#5b5b5b]">{eng}</span>}
                 </span>
                 {compo && (
-                  <span className="mt-0.5 block text-xs text-muted-foreground sm:text-[13px]">{compo}</span>
+                  <span className="mt-0.5 block text-xs text-[#333333] sm:text-[13px]">{compo}</span>
                 )}
               </span>
               {prob && (
