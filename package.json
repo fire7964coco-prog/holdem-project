@@ -15,6 +15,7 @@
     "gsc": "node scripts/gsc-fetch.mjs",
     "gsc:both": "node scripts/gsc-fetch.mjs --both",
     "gsc:analyze": "node scripts/gsc-analyze.mjs",
+    "gsc:lang": "node scripts/gsc-lang.mjs",
     "compress:images": "node scripts/compress-images.mjs --apply",
     "compress:images:preview": "node scripts/compress-images.mjs",
     "generate:beginner-pdf": "node scripts/generate-beginner-pdf.mjs"
