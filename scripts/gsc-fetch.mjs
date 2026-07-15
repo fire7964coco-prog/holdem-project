@@ -60,6 +60,12 @@ const daysArg = (() => {
 })();
 const windows = both ? [28, 7] : [daysArg || 28];
 
+// --fresh: 최신 데이터(지연보정 0 + dataState=all). GSC "24시간/최근" 추세용.
+const fresh = args.includes('--fresh');
+const stateIdx = args.indexOf('--state');
+const DATA_STATE = stateIdx >= 0 && args[stateIdx + 1] ? args[stateIdx + 1] : (fresh ? 'all' : 'final');
+const lagIdx = args.indexOf('--lag');
+
 // ── 설정 검증 ──
 const SITE = process.env.GSC_SITE_URL;
 if (!SITE) {
@@ -68,7 +74,8 @@ if (!SITE) {
   console.error('      또는 GSC_SITE_URL=https://holdemmaster.com/');
   process.exit(1);
 }
-const LAG = parseInt(process.env.GSC_LAG_DAYS || '3', 10);
+const LAG = lagIdx >= 0 && args[lagIdx + 1] ? parseInt(args[lagIdx + 1], 10)
+  : (fresh ? 0 : parseInt(process.env.GSC_LAG_DAYS || '3', 10));
 
 function getAuth() {
   const scopes = ['https://www.googleapis.com/auth/webmasters.readonly'];
@@ -102,7 +109,7 @@ async function fetchDim(sc, dimension, startDate, endDate) {
   for (;;) {
     const res = await sc.searchanalytics.query({
       siteUrl: SITE,
-      requestBody: { startDate, endDate, dimensions: [dimension], rowLimit: ROW_LIMIT, startRow },
+      requestBody: { startDate, endDate, dimensions: [dimension], rowLimit: ROW_LIMIT, startRow, dataState: DATA_STATE },
     });
     const batch = res.data.rows || [];
     rows.push(...batch);
@@ -133,7 +140,7 @@ async function run() {
   for (const N of windows) {
     const endDate = ymd(daysAgo(LAG));
     const startDate = ymd(daysAgo(LAG + N - 1)); // N일 구간(양끝 포함)
-    console.log(`\n▶ ${SITE}  ·  ${startDate} ~ ${endDate}  (${N}일)`);
+    console.log(`\n▶ ${SITE}  ·  ${startDate} ~ ${endDate}  (${N}일, 지연${LAG}일, ${DATA_STATE})`);
 
     let queries, pages;
     try {
@@ -151,7 +158,8 @@ async function run() {
       process.exit(1);
     }
 
-    const outDir = join(ROOT, 'docs', 'gsc-tracking', 'data', `${endDate}-${N}d`);
+    const tag = fresh ? `${N}d-fresh` : `${N}d`;
+    const outDir = join(ROOT, 'docs', 'gsc-tracking', 'data', `${endDate}-${tag}`);
     mkdirSync(outDir, { recursive: true });
     writeFileSync(join(outDir, 'queries.csv'), toCsv('인기 검색어', queries), 'utf8');
     writeFileSync(join(outDir, 'pages.csv'), toCsv('인기 페이지', pages), 'utf8');

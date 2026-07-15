@@ -10,9 +10,12 @@
 1. **사용자**: Claude에게 **"이번 주 GSC"** 라고만 함.
 2. **Claude**:
    ```
-   npm run gsc          # 최근 28일 (추세선)
-   npm run gsc:both     # 28일 + 7일(조기신호) 둘 다
+   npm run gsc                              # 최근 28일 (추세선)
+   npm run gsc:both                         # 28일 + 7일(조기신호)
+   node scripts/gsc-fetch.mjs --days 7      # 7일만
+   node scripts/gsc-fetch.mjs --days 3 --fresh   # 최근 fresh 3일(지연0·dataState=all) — "지금 구글이 뭘 노출하나"
    ```
+   > ⚠️ `--fresh`(지연0)는 최신이지만 **부분·미확정** 데이터. 오늘(당일)은 대개 0건 → `--days 2~3`으로 실제 데이터 있는 최신 구간을 봄. GSC UI의 "24시간"은 별도 hourly 리포트라 날짜기반 API로는 리터럴 24h가 비어 나옴.
    → API가 검색어/페이지 데이터를 받아 `docs/gsc-tracking/data/<날짜>-28d/`에 CSV 저장 후, 곧바로 `gsc-analyze.mjs` 실행 → 총계 + 타깃 쿼리 순위/노출/클릭 출력.
 3. **Claude**: `kpi-log.md`에 **새 열(주차) 추가** → **지난주 대비 델타** 분석 + 다음 액션 제안.
 
