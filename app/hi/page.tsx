@@ -1,6 +1,6 @@
 ﻿import type { Metadata } from "next";
 import { SITE } from "@/lib/site";
-import CommunityClient from "@/app/community/community-client";
+import CommunityClient from "@/app/community/community-home";
 
 export const metadata: Metadata = {
   title: "HoldemMaster समुदाय — पोकर खिलाड़ियों के लिए लाइव फीड",

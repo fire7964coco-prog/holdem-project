@@ -1,6 +1,6 @@
 ﻿import type { Metadata } from "next";
 import { SITE } from "@/lib/site";
-import CommunityClient from "@/app/community/community-client";
+import CommunityClient from "@/app/community/community-home";
 
 export const metadata: Metadata = {
   title: "Komuniti HoldemMaster — Feed Langsung untuk Pemain Poker",

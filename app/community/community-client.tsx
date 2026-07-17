@@ -21,8 +21,7 @@ import PostCard, {
 import EventTab from "./event-tab";
 import ChatTab from "./chat-tab";
 import FeedNavArrows from "@/components/feed-nav-arrows";
-import { POSTS } from "@/lib/posts";
-import { postsForLocale } from "@/lib/intl-posts";
+import type { Post } from "@/lib/posts";
 import { isSecondaryLocale } from "@/lib/intl";
 import { getCurrentEventId } from "@/lib/event-config";
 
@@ -417,9 +416,12 @@ type EventData = {
 
 export default function CommunityClient({
   pageLocale,
+  blogPosts,
 }: {
   /** locale 전용 피드 페이지에서 전달 — UI 언어를 강제 지정 */
   pageLocale?: string;
+  /** 블로그 티저용 메타데이터(본문 content 제외). 서버(community-home)에서 전달 — 클라이언트가 전체 본문을 번들하지 않게. */
+  blogPosts: Omit<Post, "content">[];
 }) {
   const router = useRouter();
 
@@ -502,7 +504,7 @@ export default function CommunityClient({
 
     // 정적 블로그 티저 (동기 계산)
     const blogTeasers: FeedPost[] = pageLocale && isSecondaryLocale(pageLocale)
-      ? postsForLocale(pageLocale).map((p) => ({
+      ? blogPosts.map((p) => ({
           id: `blog:${p.slug}`,
           type: "admin" as const,
           language: pageLocale,
@@ -521,7 +523,7 @@ export default function CommunityClient({
           category: p.category,
           readTime: p.readTime,
         }))
-      : POSTS.map((p) => ({
+      : blogPosts.map((p) => ({
           id: `blog:${p.slug}`,
           type: "admin" as const,
           language: "ko",

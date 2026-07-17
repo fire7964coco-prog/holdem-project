@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { SITE } from "@/lib/site";
-import CommunityClient from "./community/community-client";
+import CommunityClient from "./community/community-home";
 
 export const metadata: Metadata = {
   title: "홀덤마스터 커뮤니티 — 전 세계 포커 플레이어의 피드",
