@@ -9,7 +9,6 @@ import { useState, useRef, useEffect } from "react";
 import type { Post } from "@/lib/posts";
 import { SITE } from "@/lib/site";
 import { POST_LABELS, NAV_CTA, NAV_HOME_FEED, dirForLocale, type SecondaryLocale } from "@/lib/intl";
-import { postsForLocale } from "@/lib/intl-posts";
 import { renderMarkdown, extractHeadings } from "@/app/blog/[slug]/blog-post-client";
 import { clusterForSlug, EN_CLUSTERS, JA_CLUSTERS, ES_CLUSTERS, PT_CLUSTERS, DE_CLUSTERS, ZH_CLUSTERS, ID_CLUSTERS, type PillarCluster } from "@/lib/pillar-clusters";
 import ClusterMinimap from "@/components/cluster-minimap";
@@ -49,14 +48,17 @@ export default function IntlBlogPostClient({
   post,
   locale,
   summarySlot,
+  allPosts,
 }: {
   post: Post;
   locale: SecondaryLocale;
   summarySlot?: ReactNode;
+  /** 관련글·이전/다음 계산용 메타(본문 content 제외). 서버에서 전달 — 클라이언트가 전 로케일 본문을 번들하지 않게. */
+  allPosts: Omit<Post, "content">[];
 }) {
   const t = POST_LABELS[locale];
   const dir = dirForLocale(locale);
-  const posts = postsForLocale(locale);
+  const posts = allPosts;
   const base = `/${locale}/blog`;
 
   // 이전/다음 글: 다국어 /[locale]/blog 피드는 postsForLocale 배열 순서 그대로 노출되므로

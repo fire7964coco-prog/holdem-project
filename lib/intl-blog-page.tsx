@@ -4,7 +4,7 @@ import { getBlogLcpInfo } from "@/lib/blog-lcp";
 import { getPost } from "@/lib/posts";
 import { SITE } from "@/lib/site";
 import { CHROME, OG_LOCALE, HTML_LANG, type SecondaryLocale } from "@/lib/intl";
-import { getPostByLocale, secondaryLocalesForSlug } from "@/lib/intl-posts";
+import { getPostByLocale, secondaryLocalesForSlug, postsForLocale } from "@/lib/intl-posts";
 import IntlBlogPostClient from "@/components/intl-blog-post-client";
 
 /** 해당 슬러그의 모든 언어 대체 링크 (ko + 번역된 보조 언어 + x-default) */
@@ -113,13 +113,16 @@ export function IntlBlogArticle({ locale, slug }: { locale: SecondaryLocale; slu
 
   const graph = [articleSchema, breadcrumbSchema, ...(faqSchema ? [faqSchema] : [])];
 
+  // 관련글·이전/다음 계산용 메타(본문 content 제외) — 클라이언트가 전 로케일 본문을 번들하지 않도록 서버에서 전달.
+  const allPostsMeta = postsForLocale(locale).map(({ content, ...meta }) => meta);
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@graph": graph }) }}
       />
-      <IntlBlogPostClient post={post} locale={locale} />
+      <IntlBlogPostClient post={post} locale={locale} allPosts={allPostsMeta} />
     </>
   );
 }
