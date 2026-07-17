@@ -3,6 +3,33 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-17 (★★★페이지 속도 구조 대개편 — 사이트 전 라우트 3MB 번들 탈출 + LCP 착시 제거 + AI시대 포스팅 규칙)
+
+> 발단: 제미나이가 pub-guide 모바일 53점(LCP 8s)을 "히어로 lazy·사이드바 DOM·이벤트배너·폰트" 4개로 진단. **실측(PSI API 연동)으로 전부 오진/기해결 확인**하고 진짜 원인 2개(무한 애니메이션·전체 POSTS 본문 클라이언트 번들)를 잡음. 트래픽이 CrUX 임계 넘기 전 선제 구조정비(사용자 판단). 커밋 `9d682ba`~`bfe4010`.
+
+### ✅ 데이터 도구: PSI API 키 연동
+- `.env.local`에 `PSI_API_KEY`(구글 클라우드, PageSpeed Insights API 활성화). `npm run psi <url>`로 랩+CrUX 실측. ⚠️ `scripts/psi-check.mjs`는 dotenv 미로딩 → 인라인 `PSI_API_KEY=... node ...` 또는 셸 export 필요(개선 여지).
+- robots.txt 점검: `User-agent:* Allow:/` = AI봇(GPTBot·OAI-SearchBot·ClaudeBot·PerplexityBot) 전부 허용 = 인용 원천봉쇄 아님. 손댈 것 없음.
+
+### ✅ 진짜 원인 ① 무한 CSS 애니메이션 → Lighthouse LCP 폭증(착시) (커밋 `9d682ba`)
+- `globals.css` `calc-glow`(계산기 CTA)·`summary-border-pulse`(요약박스)가 **infinite** → 페이지 '안정' 판정 불가 → **LCP 21.3s(8s~21s 요동), 실제 LCP≈1.2s·네트워크 2.5s 완료·SpeedIndex 4.9s**. 무한→유한(calc: 로딩10초후 5초마다 4회 / summary: 3회). reduced-motion도 유한. → LCP **21.3s→3.9s**, 성능 58→64.
+- ★교훈: 네트워크 빠름+SpeedIndex 좋음+LCP만 폭증+큰 변동 = **무한 애니메이션 지문**. 실유저 피해 없는 랩 착시(CrUX 없음)지만 지표 오염 제거.
+
+### ✅ 진짜 원인 ② 전체 POSTS 본문이 클라이언트 JS에 번들(사이트 전역) — Phase 1·2·3
+- 최대 청크 **9.5MB(gz 2.6MB)** 안에 `texas-holdem` 584회 = 42편 전체 마크다운 본문. 원인: 클라이언트 컴포넌트들이 관련글·이전/다음·티저 계산용으로 **전체 POSTS/postsForLocale를 import**(`.filter/.map`이라 content 트리셰이킹 안 됨).
+- **해결 패턴(공통)**: 서버 컴포넌트에서 `POSTS.map(({content, ...m})=>m)`로 **content 제외 메타만 props 전달** → 클라이언트가 본문을 번들 안 함. 메타는 RSC 페이로드(42편≈8KB).
+- **Phase 1**(`b68d036`) KO 블로그: `blog/[slug]/page.tsx`→`blog-post-client`·`tournament-guide-post`에 `allPosts` prop. **3.02MB→129kB**.
+- **Phase 2**(`abcf97a`) 다국어 24개: 공용서버 `lib/intl-blog-page.tsx`→`intl-blog-post-client`에 `allPosts`. 24로케일 페이지 무수정(IntlBlogArticle 경유). **2.72MB→135kB**.
+- **Phase 3**(`bfe4010`) 홈 25개: 서버래퍼 `app/community/community-home.tsx` 신설 → `community-client`에 `blogPosts` prop. 홈 라우트 25개는 import 경로만 `community-client`→`community-home` 교체(default export라 로컬명 유지). **3.08MB→199kB**.
+- **결과**: 사이트 전 라우트(블로그25+홈25) 3MB 번들 탈출. 일반 페이지 성능 **53~58 → 83~86**(KO 족보 83·EN 족보 86). 메인스레드 ~2.4s로 전 글 동일(pub-guide 64는 **PSI 런 편차**였음 — 실측상 족보글과 비용 판박이, 특별히 느린 게 아님).
+
+### 📌 남은 저ROI 선택지(CrUX 데이터 쌓인 뒤 타깃)
+- 전 페이지 공통 베이스라인: Style&Layout ~900ms + JS파싱/실행 ~1.2s(하이드레이션). renderMarkdown 서버화·content-visibility 등은 딥리팩터.
+- framer-motion은 계산기/퀴즈 라우트 한정(블로그·홈 무관).
+
+### ✅ (곁다리) AI 인용 구조(GEO) 포스팅 규칙 (커밋 `93ca2d8`)
+- 2026-07-16 Fable5 4각 리서치 반영 → `.cursor/rules/posting.mdc` "🤖 AI 인용 구조(GEO)" 신설: 질문형 H2+직후 40~75단어 직답 / 표>리스트>산문 / 숫자+연도+출처(인용률+30~40%) / 1문단 1아이디어. 검수 체크리스트에 GEO 항목 추가. 상세 메모리 [[ai-era-posting-geo-strategy]].
+
 ## 2026-07-15 (★★★GSC/GA API 연동 + 정밀분석 + 족보 GEO/UI 강화 — 데이터 기반 운영 체계 구축)
 
 > 사용자 "GSC 연동하고싶어" → 수동 CSV 종료하고 **API 자동화 + 언어별 분석 + 색인상태 실측 + GA 행동분석 + CWV**까지 데이터 인프라 구축. 이어 그 데이터로 **족보 카니발 승계 진단 + GEO(AI 오버뷰 최적화) 첫 스텝**. 커밋 `e101d96`~`998008a`(17개).
