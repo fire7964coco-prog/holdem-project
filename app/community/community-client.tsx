@@ -1,6 +1,6 @@
 ﻿"use client";
 
-import { useState, useTransition, useEffect, useRef, useCallback } from "react";
+import { useState, useTransition, useEffect, useRef, useCallback, useMemo } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
@@ -414,6 +414,90 @@ type EventData = {
   myLikeCount: number;
 } | null;
 
+// ── 정적 피드 구성 (SSR/첫 페인트용 — 모듈 레벨 순수 데이터/함수) ──────────
+// 한국어 페이지용 정적 티저 카드 (페이지 로드 즉시 노출)
+// GSC 클릭 순 (2026-06-26 기준): tournaments 25 > pub 7 > strategy > rules > calculator > ranking > hand-chart > quiz > glossary > holdem-practice
+const KO_PAGE_TEASERS: FeedPost[] = [
+  { id: "page:tournaments", type: "admin", language: "ko", title: "2026 홀덤 대회 일정", content: "WSOP 진행 중 · APT 인천(8/7)·APPT 코리아(9/3) 예정. 국내외 대회 일정 한눈에.", imageUrl: null, likeCount: 0, commentCount: 0, createdAt: "2026-01-10T00:00:00Z", authorNickname: "HoldemMaster", authorAvatar: null, authorBadge: null, liked: false, pageHref: "/tournaments", pageIcon: "🏆" },
+  { id: "page:pub", type: "admin", language: "ko", title: "내 근처 홀덤펍 찾기", content: "서울·경기 홀덤펍 위치, 바이인, 블라인드 구조 한 번에 비교.", imageUrl: null, likeCount: 0, commentCount: 0, createdAt: "2026-01-09T00:00:00Z", authorNickname: "HoldemMaster", authorAvatar: null, authorBadge: null, liked: false, pageHref: "/pub", pageIcon: "🍺" },
+  { id: "page:strategy", type: "admin", language: "ko", title: "홀덤 전략 가이드", content: "포지션·핸드 선택·3-bet·버블 전략까지. 실전에서 바로 쓰는 전략 모음.", imageUrl: null, likeCount: 0, commentCount: 0, createdAt: "2026-01-08T00:00:00Z", authorNickname: "HoldemMaster", authorAvatar: null, authorBadge: null, liked: false, pageHref: "/strategy", pageIcon: "⚡" },
+  { id: "page:rules", type: "admin", language: "ko", title: "홀덤 규칙 완전 정리", content: "딜링부터 쇼다운까지 — 텍사스 홀덤 기본 규칙을 순서대로 정리했습니다.", imageUrl: null, likeCount: 0, commentCount: 0, createdAt: "2026-01-07T00:00:00Z", authorNickname: "HoldemMaster", authorAvatar: null, authorBadge: null, liked: false, pageHref: "/rules", pageIcon: "📋" },
+  { id: "page:calculator", type: "admin", language: "ko", title: "팟오즈 & 에퀴티 계산기", content: "내 핸드의 에퀴티와 팟오즈를 실시간으로 계산해보세요.", imageUrl: null, likeCount: 0, commentCount: 0, createdAt: "2026-01-06T00:00:00Z", authorNickname: "HoldemMaster", authorAvatar: null, authorBadge: null, liked: false, pageHref: "/calculator", pageIcon: "🧮" },
+  { id: "page:ranking", type: "admin", language: "ko", title: "홀덤 족보 완전 정리", content: "로열플러시부터 하이카드까지 — 10가지 핸드 랭킹을 한눈에 확인하세요.", imageUrl: null, likeCount: 0, commentCount: 0, createdAt: "2026-01-05T00:00:00Z", authorNickname: "HoldemMaster", authorAvatar: null, authorBadge: null, liked: false, pageHref: "/ranking", pageIcon: "🃏" },
+  { id: "page:hand-chart", type: "admin", language: "ko", title: "스타팅 핸드 차트", content: "포지션별 오픈/콜/3-bet 핸드 범위를 차트로 확인하세요.", imageUrl: null, likeCount: 0, commentCount: 0, createdAt: "2026-01-04T00:00:00Z", authorNickname: "HoldemMaster", authorAvatar: null, authorBadge: null, liked: false, pageHref: "/hand-chart", pageIcon: "📊" },
+  { id: "page:quiz", type: "admin", language: "ko", title: "홀덤 실력 테스트 퀴즈", content: "10문제로 내 홀덤 수준을 확인해보세요. 결과 공유도 가능!", imageUrl: null, likeCount: 0, commentCount: 0, createdAt: "2026-01-03T00:00:00Z", authorNickname: "HoldemMaster", authorAvatar: null, authorBadge: null, liked: false, pageHref: "/quiz", pageIcon: "🎯" },
+  { id: "page:glossary", type: "admin", language: "ko", title: "홀덤 용어 사전", content: "올인, 블러프, ICM, 팟오즈… 헷갈리는 용어를 한 번에 정리.", imageUrl: null, likeCount: 0, commentCount: 0, createdAt: "2026-01-02T00:00:00Z", authorNickname: "HoldemMaster", authorAvatar: null, authorBadge: null, liked: false, pageHref: "/glossary", pageIcon: "📖" },
+  { id: "page:holdem-practice", type: "admin", language: "ko", title: "홀덤 연습장 🎮", content: "실제 핸드 상황을 시뮬레이션하며 폴드·콜·레이즈 판단력을 키워보세요.", imageUrl: null, likeCount: 0, commentCount: 0, createdAt: "2026-01-01T00:00:00Z", authorNickname: "HoldemMaster", authorAvatar: null, authorBadge: null, liked: false, pageHref: "/holdem-practice", pageIcon: "🎮" },
+];
+
+// GSC 클릭 기준 상위 고정 (2026-06-26) — 이 순서대로 피드 최상단에 고정
+const PINNED_IDS = [
+  "page:tournaments",
+  "blog:holdem-masters-7th-guide",
+  "blog:apt-incheon-2026-guide",
+  "blog:holdem-tiebreak-rules",
+  "blog:appt-korea-2026-guide",
+  "blog:pocket-kings-kk-strategy",
+];
+
+/** 고정글 우선 + 최신순 정렬 (초기 정적 렌더와 Supabase 로드 후가 동일한 규칙을 쓰도록 공유) */
+function sortFeed(list: FeedPost[]): FeedPost[] {
+  return [...list].sort((a, b) => {
+    const ai = PINNED_IDS.indexOf(a.id);
+    const bi = PINNED_IDS.indexOf(b.id);
+    if (ai !== -1 && bi === -1) return -1;
+    if (ai === -1 && bi !== -1) return 1;
+    if (ai !== -1 && bi !== -1) return ai - bi;
+    return new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime();
+  });
+}
+
+/** 정적 블로그 티저 + (ko 한정) 페이지 티저 — props만으로 동기 계산 가능 → SSR/첫 페인트부터 렌더 */
+function buildStaticTeasers(
+  pageLocale: string | undefined,
+  blogPosts: Omit<Post, "content">[]
+): FeedPost[] {
+  const blogTeasers: FeedPost[] = pageLocale && isSecondaryLocale(pageLocale)
+    ? blogPosts.map((p) => ({
+        id: `blog:${p.slug}`,
+        type: "admin" as const,
+        language: pageLocale,
+        title: p.title,
+        content: p.tldr || p.desc,
+        imageUrl: p.image ?? null,
+        likeCount: 0,
+        commentCount: 0,
+        createdAt: new Date(p.updated || p.date).toISOString(),
+        authorNickname: "HoldemMaster",
+        authorAvatar: null,
+        authorBadge: null,
+        liked: false,
+        blogSlug: p.slug,
+        blogLocale: pageLocale,
+        category: p.category,
+        readTime: p.readTime,
+      }))
+    : blogPosts.map((p) => ({
+        id: `blog:${p.slug}`,
+        type: "admin" as const,
+        language: "ko",
+        title: p.title,
+        content: p.tldr || p.desc,
+        imageUrl: p.image ?? null,
+        likeCount: 0,
+        commentCount: 0,
+        createdAt: new Date(p.updated || p.date).toISOString(),
+        authorNickname: "HoldemMaster",
+        authorAvatar: null,
+        authorBadge: null,
+        liked: false,
+        blogSlug: p.slug,
+        category: p.category,
+        readTime: p.readTime,
+      }));
+  return [...blogTeasers, ...(pageLocale ? [] : KO_PAGE_TEASERS)];
+}
+
 export default function CommunityClient({
   pageLocale,
   blogPosts,
@@ -425,12 +509,21 @@ export default function CommunityClient({
 }) {
   const router = useRouter();
 
+  // 정적 티저(블로그 + ko 페이지) — props만으로 동기 계산되므로 SSR/첫 페인트부터 렌더 가능.
+  // 이걸 posts 초기값으로 시딩해 LCP 콘텐츠가 처음부터 존재하게 하고(Supabase 대기 X),
+  // 로딩→피드 스왑으로 인한 대규모 레이아웃 시프트(CLS)를 제거한다.
+  const staticTeasers = useMemo(
+    () => buildStaticTeasers(pageLocale, blogPosts),
+    [pageLocale, blogPosts]
+  );
+
+  // loading = "Supabase 커뮤니티 글 로딩 중" (정적 티저는 이미 렌더된 상태)
   const [loading, setLoading] = useState(true);
   const [currentUser, setCurrentUser] = useState<CurrentUser | null>(null);
   const [myLanguage, setMyLanguage] = useState(pageLocale ?? "ko");
   const [tab, setTab] = useState<"home" | "chat" | "event" | "profile">("home");
   const [feedFilter, setFeedFilter] = useState<FilterKey>("All");
-  const [posts, setPosts] = useState<FeedPost[]>([]);
+  const [posts, setPosts] = useState<FeedPost[]>(() => sortFeed(staticTeasers));
   const [writeOpen, setWriteOpen] = useState(false);
   const [draft, setDraft] = useState("");
   const [isPending, startTransition] = useTransition();
@@ -486,61 +579,6 @@ export default function CommunityClient({
     }
 
     const supabase = createClient();
-
-    // 한국어 페이지용 정적 티저 카드 (페이지 로드 즉시 노출)
-    // GSC 클릭 순 (2026-06-26 기준): tournaments 25 > pub 7 > strategy > rules > calculator > ranking > hand-chart > quiz > glossary > holdem-practice
-    const PAGE_TEASERS: FeedPost[] = !pageLocale ? [
-      { id: "page:tournaments", type: "admin", language: "ko", title: "2026 홀덤 대회 일정", content: "WSOP 진행 중 · APT 인천(8/7)·APPT 코리아(9/3) 예정. 국내외 대회 일정 한눈에.", imageUrl: null, likeCount: 0, commentCount: 0, createdAt: "2026-01-10T00:00:00Z", authorNickname: "HoldemMaster", authorAvatar: null, authorBadge: null, liked: false, pageHref: "/tournaments", pageIcon: "🏆" },
-      { id: "page:pub", type: "admin", language: "ko", title: "내 근처 홀덤펍 찾기", content: "서울·경기 홀덤펍 위치, 바이인, 블라인드 구조 한 번에 비교.", imageUrl: null, likeCount: 0, commentCount: 0, createdAt: "2026-01-09T00:00:00Z", authorNickname: "HoldemMaster", authorAvatar: null, authorBadge: null, liked: false, pageHref: "/pub", pageIcon: "🍺" },
-      { id: "page:strategy", type: "admin", language: "ko", title: "홀덤 전략 가이드", content: "포지션·핸드 선택·3-bet·버블 전략까지. 실전에서 바로 쓰는 전략 모음.", imageUrl: null, likeCount: 0, commentCount: 0, createdAt: "2026-01-08T00:00:00Z", authorNickname: "HoldemMaster", authorAvatar: null, authorBadge: null, liked: false, pageHref: "/strategy", pageIcon: "⚡" },
-      { id: "page:rules", type: "admin", language: "ko", title: "홀덤 규칙 완전 정리", content: "딜링부터 쇼다운까지 — 텍사스 홀덤 기본 규칙을 순서대로 정리했습니다.", imageUrl: null, likeCount: 0, commentCount: 0, createdAt: "2026-01-07T00:00:00Z", authorNickname: "HoldemMaster", authorAvatar: null, authorBadge: null, liked: false, pageHref: "/rules", pageIcon: "📋" },
-      { id: "page:calculator", type: "admin", language: "ko", title: "팟오즈 & 에퀴티 계산기", content: "내 핸드의 에퀴티와 팟오즈를 실시간으로 계산해보세요.", imageUrl: null, likeCount: 0, commentCount: 0, createdAt: "2026-01-06T00:00:00Z", authorNickname: "HoldemMaster", authorAvatar: null, authorBadge: null, liked: false, pageHref: "/calculator", pageIcon: "🧮" },
-      { id: "page:ranking", type: "admin", language: "ko", title: "홀덤 족보 완전 정리", content: "로열플러시부터 하이카드까지 — 10가지 핸드 랭킹을 한눈에 확인하세요.", imageUrl: null, likeCount: 0, commentCount: 0, createdAt: "2026-01-05T00:00:00Z", authorNickname: "HoldemMaster", authorAvatar: null, authorBadge: null, liked: false, pageHref: "/ranking", pageIcon: "🃏" },
-      { id: "page:hand-chart", type: "admin", language: "ko", title: "스타팅 핸드 차트", content: "포지션별 오픈/콜/3-bet 핸드 범위를 차트로 확인하세요.", imageUrl: null, likeCount: 0, commentCount: 0, createdAt: "2026-01-04T00:00:00Z", authorNickname: "HoldemMaster", authorAvatar: null, authorBadge: null, liked: false, pageHref: "/hand-chart", pageIcon: "📊" },
-      { id: "page:quiz", type: "admin", language: "ko", title: "홀덤 실력 테스트 퀴즈", content: "10문제로 내 홀덤 수준을 확인해보세요. 결과 공유도 가능!", imageUrl: null, likeCount: 0, commentCount: 0, createdAt: "2026-01-03T00:00:00Z", authorNickname: "HoldemMaster", authorAvatar: null, authorBadge: null, liked: false, pageHref: "/quiz", pageIcon: "🎯" },
-      { id: "page:glossary", type: "admin", language: "ko", title: "홀덤 용어 사전", content: "올인, 블러프, ICM, 팟오즈… 헷갈리는 용어를 한 번에 정리.", imageUrl: null, likeCount: 0, commentCount: 0, createdAt: "2026-01-02T00:00:00Z", authorNickname: "HoldemMaster", authorAvatar: null, authorBadge: null, liked: false, pageHref: "/glossary", pageIcon: "📖" },
-      { id: "page:holdem-practice", type: "admin", language: "ko", title: "홀덤 연습장 🎮", content: "실제 핸드 상황을 시뮬레이션하며 폴드·콜·레이즈 판단력을 키워보세요.", imageUrl: null, likeCount: 0, commentCount: 0, createdAt: "2026-01-01T00:00:00Z", authorNickname: "HoldemMaster", authorAvatar: null, authorBadge: null, liked: false, pageHref: "/holdem-practice", pageIcon: "🎮" },
-    ] : [];
-
-    // 정적 블로그 티저 (동기 계산)
-    const blogTeasers: FeedPost[] = pageLocale && isSecondaryLocale(pageLocale)
-      ? blogPosts.map((p) => ({
-          id: `blog:${p.slug}`,
-          type: "admin" as const,
-          language: pageLocale,
-          title: p.title,
-          content: p.tldr || p.desc,
-          imageUrl: p.image ?? null,
-          likeCount: 0,
-          commentCount: 0,
-          createdAt: new Date(p.updated || p.date).toISOString(),
-          authorNickname: "HoldemMaster",
-          authorAvatar: null,
-          authorBadge: null,
-          liked: false,
-          blogSlug: p.slug,
-          blogLocale: pageLocale,
-          category: p.category,
-          readTime: p.readTime,
-        }))
-      : blogPosts.map((p) => ({
-          id: `blog:${p.slug}`,
-          type: "admin" as const,
-          language: "ko",
-          title: p.title,
-          content: p.tldr || p.desc,
-          imageUrl: p.image ?? null,
-          likeCount: 0,
-          commentCount: 0,
-          createdAt: new Date(p.updated || p.date).toISOString(),
-          authorNickname: "HoldemMaster",
-          authorAvatar: null,
-          authorBadge: null,
-          liked: false,
-          blogSlug: p.slug,
-          category: p.category,
-          readTime: p.readTime,
-        }));
 
     async function load() {
       // 인증 + 프로필
@@ -608,27 +646,9 @@ export default function CommunityClient({
 
       const communityPosts: FeedPost[] = (postsRaw ?? []).map(toFeedPost);
 
-      // GSC 클릭 기준 상위 고정 (2026-06-26) — 이 순서대로 피드 최상단에 고정
-      const PINNED_IDS = [
-        "page:tournaments",
-        "blog:holdem-masters-7th-guide",
-        "blog:apt-incheon-2026-guide",
-        "blog:holdem-tiebreak-rules",
-        "blog:appt-korea-2026-guide",
-        "blog:pocket-kings-kk-strategy",
-      ];
-
-      const allPosts = [...communityPosts, ...blogTeasers, ...PAGE_TEASERS].sort(
-        (a, b) => {
-          const ai = PINNED_IDS.indexOf(a.id);
-          const bi = PINNED_IDS.indexOf(b.id);
-          if (ai !== -1 && bi === -1) return -1;
-          if (ai === -1 && bi !== -1) return 1;
-          if (ai !== -1 && bi !== -1) return ai - bi;
-          return new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime();
-        }
-      );
-      setPosts(allPosts);
+      // 초기 정적 렌더와 동일한 규칙(sortFeed)으로 병합 — 고정 상단 6개는 그대로 유지되어
+      // 뷰포트 상단이 밀리지 않고, 커뮤니티 글은 그 아래(대부분 폴드 밑)에 끼어든다.
+      setPosts(sortFeed([...communityPosts, ...staticTeasers]));
       setLoading(false);
 
       // 내 글 + 이벤트 데이터 (로그인 시)
@@ -667,7 +687,8 @@ export default function CommunityClient({
 
   // ── 추가 로드 (무한스크롤) ──────────────────────────────────
   const loadMorePosts = useCallback(async () => {
-    if (!hasMore || loadingMore || tab !== "home") return;
+    // loading 가드: 초기 렌더부터 sentinel이 존재하므로, 초기 Supabase 로드와의 경합 방지
+    if (loading || !hasMore || loadingMore || tab !== "home") return;
     setLoadingMore(true);
     const supabase = createClient();
     const adminLang = pageLocale ?? myLanguage;
@@ -711,7 +732,7 @@ export default function CommunityClient({
     setCommunityOffset(prev => prev + PAGE_SIZE);
     try { sessionStorage.setItem(OFFSET_KEY, String(communityOffset + PAGE_SIZE)); } catch { /* noop */ }
     setLoadingMore(false);
-  }, [hasMore, loadingMore, tab, communityOffset, myLanguage, currentUser, pageLocale, OFFSET_KEY]);
+  }, [loading, hasMore, loadingMore, tab, communityOffset, myLanguage, currentUser, pageLocale, OFFSET_KEY]);
 
   // IntersectionObserver — sentinel 400px 전에 미리 로드 (딜레이 없음)
   useEffect(() => {
@@ -876,9 +897,14 @@ export default function CommunityClient({
         {/* 피드 */}
         {tab === "home" && (
           filteredPosts.length === 0
-            ? <EmptyState icon="🃏" title={L.emptyFeedTitle} sub={L.emptyFeedSub} />
-            : filteredPosts.map((p) => (
-                <PostCard key={p.id} post={p} myLanguage={myLanguage} myUserId={currentUser?.id} onLike={onLike} />
+            ? (loading
+                // 로딩 중(예: Community 필터인데 아직 커뮤니티 글 미도착)엔 빈 화면 대신
+                // 카드 높이에 맞춘 정적 스켈레톤으로 공간 예약 → 도착 시 시프트 최소화
+                ? <>{[0, 1, 2].map((i) => <SkeletonCard key={i} />)}</>
+                : <EmptyState icon="🃏" title={L.emptyFeedTitle} sub={L.emptyFeedSub} />)
+            : filteredPosts.map((p, i) => (
+                // 첫 3장만 eager(LCP 후보) — 나머지 수십 장의 티저 이미지는 lazy로 대역폭 양보
+                <PostCard key={p.id} post={p} myLanguage={myLanguage} myUserId={currentUser?.id} onLike={onLike} imgPriority={i < 3} />
               ))
         )}
 
@@ -1035,26 +1061,9 @@ export default function CommunityClient({
     </div>
   );
 
-  if (loading) {
-    return (
-      <div style={{ background: BG, minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center" }}>
-        <div style={{ textAlign: "center" }}>
-          <div
-            style={{
-              width: 36, height: 36, borderRadius: "50%",
-              border: `2.5px solid rgba(32,49,42,0.12)`,
-              borderTopColor: INK,
-              animation: "spin 0.8s linear infinite",
-              margin: "0 auto 12px",
-            }}
-          />
-          <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
-          <p style={{ color: MUTED, fontSize: 13, fontFamily: FONT_SANS }}>Loading…</p>
-        </div>
-      </div>
-    );
-  }
-
+  // 주의: 과거엔 loading 동안 전체 화면 스피너만 렌더 → 데이터 도착 시 페이지 전체가
+  // 한 번에 교체되며 CLS 0.5+, LCP 7s+ 발생. 이제 정적 티저를 posts 초기값으로 시딩해
+  // 셸+피드를 SSR/첫 페인트부터 렌더하고, Supabase 글은 아래쪽에 병합만 한다.
   return (
     <div style={{ background: BG, fontFamily: FONT_SANS }}>
 
@@ -1556,11 +1565,33 @@ function LocalDrawTime({ fontFamily, muted }: { fontFamily: string; muted: strin
     });
     setLocalStr(fmt);
   }, []);
-  if (!localStr) return null;
+  // 항상 한 줄을 예약(minHeight) — 마운트 후 텍스트가 삽입되며 아래 버튼을 밀지 않게(CLS 방지)
   return (
-    <p className="text-[10px] mt-1" style={{ color: muted, fontFamily, opacity: 0.75 }}>
-      📍 현지 시간: {localStr}
+    <p className="text-[10px] mt-1" style={{ color: muted, fontFamily, opacity: 0.75, minHeight: 15 }}>
+      {localStr ? `📍 현지 시간: ${localStr}` : " "}
     </p>
+  );
+}
+
+/** 피드 카드와 유사한 높이의 정적 스켈레톤 — 공간 예약용(CLS 방지). 무한 애니메이션 없음. */
+function SkeletonCard() {
+  return (
+    <div
+      aria-hidden
+      className="mx-3 lg:mx-0 mb-3 rounded-2xl p-4"
+      style={{ background: CARD, border: `1px solid ${BORDER}` }}
+    >
+      <div className="flex items-center gap-2.5 mb-3">
+        <div className="w-9 h-9 rounded-full flex-shrink-0" style={{ background: BORDER }} />
+        <div className="flex-1 min-w-0">
+          <div className="h-3 w-24 rounded mb-1.5" style={{ background: BORDER }} />
+          <div className="h-2.5 w-16 rounded" style={{ background: BORDER, opacity: 0.7 }} />
+        </div>
+      </div>
+      <div className="h-3.5 w-3/4 rounded mb-2" style={{ background: BORDER }} />
+      <div className="h-3 w-full rounded mb-1.5" style={{ background: BORDER, opacity: 0.7 }} />
+      <div className="h-3 w-2/3 rounded" style={{ background: BORDER, opacity: 0.7 }} />
+    </div>
   );
 }
 

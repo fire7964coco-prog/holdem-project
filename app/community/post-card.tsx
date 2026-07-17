@@ -123,6 +123,8 @@ export function Avatar({
       <img
         src={post.authorAvatar}
         alt={post.authorNickname}
+        width={size}
+        height={size}
         className="rounded-full object-cover flex-shrink-0"
         style={{ width: size, height: size }}
       />
@@ -146,12 +148,15 @@ export default function PostCard({
   myUserId,
   onLike,
   clickable = true,
+  imgPriority = true,
 }: {
   post: FeedPost;
   myLanguage: string;
   myUserId?: string;
   onLike: (id: string) => void;
   clickable?: boolean;
+  /** false면 본문 이미지를 lazy 로드 (피드에서 폴드 아래 카드용). 기본 true = 기존 동작 유지. */
+  imgPriority?: boolean;
 }) {
   const isMyPost = !!myUserId && !!post.authorId && myUserId === post.authorId;
   const isBlogTeaser = !!post.blogSlug;
@@ -270,7 +275,22 @@ export default function PostCard({
             </p>
           </div>
           {post.imageUrl && (
-            <img src={post.imageUrl} alt="" className="w-full object-cover" style={{ maxHeight: 340 }} />
+            /* 고정 aspect-ratio 컨테이너 — 이미지 로드 전에 높이가 확정되어 CLS 0.
+               블로그 히어로는 원본이 1200×675(16:9)라 크롭 없음. */
+            <div
+              className="w-full overflow-hidden"
+              style={{ aspectRatio: "16 / 9", maxHeight: 340, background: "rgba(212,175,55,0.06)" }}
+            >
+              <img
+                src={post.imageUrl}
+                alt=""
+                width={1200}
+                height={675}
+                loading={imgPriority ? "eager" : "lazy"}
+                decoding="async"
+                className="w-full h-full object-cover"
+              />
+            </div>
           )}
         </Link>
         <div className="px-4 lg:px-5 py-3" style={{ borderTop: `1px solid ${DIVIDER}` }}>
@@ -338,7 +358,24 @@ export default function PostCard({
           )}
         </div>
         {post.imageUrl && (
-          <img src={post.imageUrl} alt="" className="w-full object-cover" style={{ maxHeight: 340 }} />
+          clickable ? (
+            /* 피드: 고정 aspect-ratio 컨테이너로 로드 전 공간 예약(CLS 0) */
+            <div
+              className="w-full overflow-hidden"
+              style={{ aspectRatio: "16 / 9", maxHeight: 340, background: SURFACE }}
+            >
+              <img
+                src={post.imageUrl}
+                alt=""
+                loading={imgPriority ? "eager" : "lazy"}
+                decoding="async"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          ) : (
+            /* 글 상세(clickable=false): 원본 비율 유지 — 기존 동작 그대로 */
+            <img src={post.imageUrl} alt="" decoding="async" className="w-full object-cover" style={{ maxHeight: 340 }} />
+          )
         )}
       </Link>
 
