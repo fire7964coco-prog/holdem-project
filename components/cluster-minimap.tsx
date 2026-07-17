@@ -7,6 +7,8 @@ import { EN_CLUSTERS, clusterForSlug, type PillarCluster } from "@/lib/pillar-cl
  * 전 필라를 접힌 아코디언으로 보여주고, 현재 글이 속한 필라만 자동 펼쳐
  * 트레일(경로선)로 "너 여기" 핀 표시. 아코디언은 native <details> = JS 0, SSG 정적.
  * bare=true 면 카드 테두리 없이 내부만(모바일 <details> 임베드용).
+ * currentOnly=true 면 전 필라 아코디언 없이 "현재 글이 속한 필라 하나의 트레일"만
+ * 렌더(모바일 sticky 바용). 기본 false → 데스크톱/기존 전체맵 동작 불변.
  * clusters/hrefBase/labels 로 로케일 대응 (기본 EN, KO 등은 인자로 전달).
  */
 
@@ -53,7 +55,7 @@ function Trail({ pillar, slug, isCurrentPillar, hrefBase, labels }: { pillar: Pi
         const traveled = currentStopIdx >= 0 && i < currentStopIdx;
         const groupStart = s.group && s.group !== stops[i - 1]?.group;
         return (
-          <li key={s.slug} className="flex gap-2.5">
+          <li key={s.slug} data-current-stop={isCurrent ? "" : undefined} className="flex gap-2.5">
             {/* 마커 + 경로선 */}
             <div className="flex flex-col items-center flex-shrink-0 w-4">
               {isCurrent ? (
@@ -106,12 +108,14 @@ export default function ClusterMinimap({
   clusters = EN_CLUSTERS,
   hrefBase = "/en/blog",
   labels = EN_LABELS,
+  currentOnly = false,
 }: {
   slug: string;
   bare?: boolean;
   clusters?: PillarCluster[];
   hrefBase?: string;
   labels?: MinimapLabels;
+  currentOnly?: boolean;
 }) {
   const cluster = clusterForSlug(slug, clusters);
   if (!cluster) return null;
@@ -119,6 +123,25 @@ export default function ClusterMinimap({
   const currentIdx = cluster.nodes.findIndex((n) => n.slug === slug);
   const isHubCurrent = slug === cluster.pillarSlug;
   const pos = isHubCurrent ? labels.hub : `${currentIdx + 1} / ${cluster.nodes.length}`;
+
+  // 현재 필라 트레일만 (모바일 sticky 바용) — 전 필라 아코디언 없이 슬림하게
+  if (currentOnly) {
+    const Icon = ICONS[cluster.id] ?? Book;
+    return (
+      <div>
+        <div className="flex items-center gap-2 mb-1.5">
+          <Icon className="w-3.5 h-3.5 flex-shrink-0 text-primary" aria-hidden="true" />
+          <span className="min-w-0 flex-1 truncate text-xs font-extrabold leading-tight text-foreground">
+            {cluster.pillarLabel}
+          </span>
+          <span className="flex-shrink-0 text-[10px] font-semibold text-[#2563eb] bg-[#2563eb]/10 border border-[#2563eb]/30 rounded-full px-2 py-0.5">
+            {pos}
+          </span>
+        </div>
+        <Trail pillar={cluster} slug={slug} isCurrentPillar={true} hrefBase={hrefBase} labels={labels} />
+      </div>
+    );
+  }
 
   const inner = (
     <>
