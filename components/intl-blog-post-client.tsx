@@ -3,9 +3,9 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Clock, Tag, ChevronLeft, ChevronRight, ChevronDown, Share2, Link2, Map } from "lucide-react";
+import { Clock, Tag, ChevronLeft, ChevronRight, ChevronDown, Share2, Link2, Map, BookOpen } from "lucide-react";
 import { FaXTwitter, FaFacebookF } from "react-icons/fa6";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import type { Post } from "@/lib/posts";
 import { SITE } from "@/lib/site";
 import { POST_LABELS, NAV_CTA, NAV_HOME_FEED, dirForLocale, type SecondaryLocale } from "@/lib/intl";
@@ -15,8 +15,30 @@ import ClusterMinimap from "@/components/cluster-minimap";
 import CommunityCTA from "@/components/community-cta";
 import BlogTopBar from "@/components/blog-top-bar";
 import ReadingProgressBar from "@/components/reading-progress-bar";
+import CalcCtaButton from "@/components/calc-cta-button";
 
-function IntlTocList({ headings }: { headings: { id: string; text: string; level: number }[] }) {
+/**
+ * 계산기 CTA 로케일별 라벨 — 클러스터 완역 로케일(en·ja·es·pt·de·zh·id)만.
+ * 각 언어 포커 커뮤니티에서 실제로 쓰는 표현(equity/outs/pot odds는 대부분 영어 차용) 기준.
+ */
+const CALC_CTA_LABELS: Partial<Record<SecondaryLocale, { title: string; subtitle: string }>> = {
+  en: { title: "Poker Odds Calculator", subtitle: "Win %, outs & pot odds instantly" },
+  ja: { title: "ポーカー勝率計算機", subtitle: "勝率・アウツ・ポットオッズを即計算" },
+  es: { title: "Calculadora de probabilidades", subtitle: "Equity, outs y pot odds al instante" },
+  pt: { title: "Calculadora de probabilidades", subtitle: "Equity, outs e pot odds na hora" },
+  de: { title: "Poker-Odds-Rechner", subtitle: "Equity, Outs & Pot Odds sofort" },
+  zh: { title: "德州扑克概率计算器", subtitle: "胜率、补牌、底池赔率即时计算" },
+  id: { title: "Kalkulator Odds Poker", subtitle: "Equity, outs & pot odds instan" },
+};
+
+function IntlTocList({
+  headings,
+  onNavigate,
+}: {
+  headings: { id: string; text: string; level: number }[];
+  /** 모바일 sticky 바용: 지정 시 기본 scrollIntoView 대신 호출 (오프셋 보정 + 패널 닫기) */
+  onNavigate?: (id: string) => void;
+}) {
   let h2Count = 0;
   return (
     <ol className="space-y-1.5">
@@ -32,7 +54,8 @@ function IntlTocList({ headings }: { headings: { id: string; text: string; level
               className="hover:text-primary transition-colors leading-snug text-muted-foreground text-sm"
               onClick={(e) => {
                 e.preventDefault();
-                document.getElementById(h.id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+                if (onNavigate) onNavigate(h.id);
+                else document.getElementById(h.id)?.scrollIntoView({ behavior: "smooth", block: "start" });
               }}
             >
               {h.text}
@@ -70,11 +93,33 @@ export default function IntlBlogPostClient({
 
   const [copied, setCopied] = useState(false);
   const contentRef = useRef<HTMLDivElement>(null);
+  const stickyToolsRef = useRef<HTMLDivElement>(null); // 모바일 sticky 도구 바
+  const tocDetailsRef = useRef<HTMLDetailsElement>(null); // 모바일 목차 <details>
+  const trailBoxRef = useRef<HTMLDivElement>(null); // 모바일 트레일 스크롤 박스
   const pageUrl = `${SITE}${base}/${post.slug}`;
 
-  // ?? ??? ?? ? ??? ?? ??
+  // 피드 등에서 진입 시 스크롤 상단 고정
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "instant" });
+  }, []);
+
+  /** 모바일 목차 링크: sticky 바(도구 바 + 상단 헤더 56px) 높이만큼 보정해 스크롤 + 오버레이 패널 닫기 */
+  const handleTocNavigate = useCallback((id: string) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    tocDetailsRef.current?.removeAttribute("open");
+    const barH = stickyToolsRef.current?.getBoundingClientRect().height ?? 0;
+    const top = el.getBoundingClientRect().top + window.scrollY - barH - 56 - 12;
+    window.scrollTo({ top: Math.max(top, 0), behavior: "smooth" });
+  }, []);
+
+  // 모바일 트레일 스크롤 박스: 첫 렌더 때 "You are here" 스톱이 보이게 박스 내부만 스크롤 (페이지 스크롤 X)
+  useEffect(() => {
+    const box = trailBoxRef.current;
+    const cur = box?.querySelector<HTMLElement>("[data-current-stop]");
+    if (box && cur) {
+      box.scrollTop = Math.max(0, cur.offsetTop - box.clientHeight / 2 + cur.clientHeight / 2);
+    }
   }, []);
 
   function copyLink() {
@@ -191,32 +236,83 @@ export default function IntlBlogPostClient({
               </aside>
             )}
 
-            {hasToc && (
-              <details className="xl:hidden group bg-card border border-border rounded-2xl mb-6">
-                <summary className="flex items-center justify-between gap-3 px-6 py-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden rounded-2xl hover:bg-card/70 transition-colors">
-                  <span className="flex items-center gap-2.5 text-xs font-bold uppercase tracking-widest text-primary">
-                    ?? {t.contents} <span className="text-muted-foreground/60 font-normal normal-case tracking-normal">({headings.length})</span>
-                  </span>
-                  <ChevronDown className="w-5 h-5 text-primary transition-transform duration-200 group-open:rotate-180" aria-hidden="true" />
-                </summary>
-                <nav className="px-6 pb-6 pt-2 border-t border-border/60" aria-label={t.contents}>
-                  <IntlTocList headings={headings} />
-                </nav>
-              </details>
-            )}
+            {/* ── 모바일 슬림 sticky 도구 바 — xl 미만 (데스크탑은 사이드바, 절대 불변) ──
+                행1 계산기 CTA(클러스터 완역 로케일만) / 행2 목차 토글(오버레이 패널)
+                / 행3 학습맵(기본 접힘 → 현재 필라 트레일 + 전체맵 중첩 토글).
+                sticky(in-flow)라 CLS 없음. 목차 패널은 absolute 오버레이 → 본문 안 밀림.
+                top-14 = BlogTopBar(56px) 바로 아래, z-40 = 상단바(z-50)보다 아래. -mx-4/inset-x-0은 좌우 대칭이라 RTL 안전 */}
+            {(localeClusters !== null || hasToc || showMinimap) && (
+              <div
+                ref={stickyToolsRef}
+                className="xl:hidden sticky top-14 z-40 -mx-4 mb-6 px-4 pt-2 pb-2 bg-background/95 backdrop-blur-sm border-b border-border/70 shadow-[0_8px_18px_-14px_rgba(0,0,0,0.3)]"
+              >
+                {/* 행1 — 계산기 CTA (슬림: mb·py 축소, .calc-pulse 유지) — 로케일 현지 라벨 */}
+                {localeClusters !== null && CALC_CTA_LABELS[locale] && (
+                  <div className="[&>a]:mb-0 [&>a]:py-2">
+                    <CalcCtaButton
+                      href="/calculator"
+                      title={CALC_CTA_LABELS[locale]!.title}
+                      subtitle={CALC_CTA_LABELS[locale]!.subtitle}
+                    />
+                  </div>
+                )}
 
-            {showMinimap && (
-              <details className="xl:hidden group bg-card border border-border rounded-2xl mb-6" open>
-                <summary className="flex items-center justify-between gap-3 px-6 py-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden rounded-2xl hover:bg-card/70 transition-colors">
-                  <span className="flex items-center gap-2.5 text-xs font-bold uppercase tracking-widest text-primary">
-                    <Map className="w-4 h-4" aria-hidden="true" /> Learning Map
-                  </span>
-                  <ChevronDown className="w-5 h-5 text-primary transition-transform duration-200 group-open:rotate-180" aria-hidden="true" />
-                </summary>
-                <div className="px-6 pb-6 pt-2 border-t border-border/60">
-                  <ClusterMinimap slug={post.slug} bare clusters={localeClusters!} hrefBase={base} />
-                </div>
-              </details>
+                {/* 행2 — 목차 토글: 펼침 패널은 오버레이 + max-h 자체 스크롤 (본문을 통째로 덮지 않음) */}
+                {hasToc && (
+                  <details ref={tocDetailsRef} className="group/toc relative mt-1.5">
+                    <summary
+                      className="flex items-center justify-between gap-3 px-3 py-2 cursor-pointer list-none [&::-webkit-details-marker]:hidden rounded-xl bg-card border border-border hover:bg-card/70 transition-colors"
+                      aria-label={t.contents}
+                    >
+                      <span className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest text-primary">
+                        <BookOpen className="w-3.5 h-3.5" aria-hidden="true" /> {t.contents}{" "}
+                        <span className="text-muted-foreground/60 font-normal normal-case tracking-normal">({headings.length})</span>
+                      </span>
+                      <ChevronDown
+                        className="w-4 h-4 text-primary transition-transform duration-200 group-open/toc:rotate-180"
+                        aria-hidden="true"
+                      />
+                    </summary>
+                    <nav
+                      className="absolute inset-x-0 top-full z-10 mt-1.5 max-h-[50vh] overflow-y-auto overscroll-contain rounded-xl bg-card border border-border shadow-xl p-4"
+                      aria-label={t.contents}
+                    >
+                      <IntlTocList headings={headings} onNavigate={handleTocNavigate} />
+                    </nav>
+                  </details>
+                )}
+
+                {/* 행3 — 학습맵(기본 접힘, 탭하면 현재 필라 트레일 + 전체맵 토글). UI 라벨은 EN 기조 유지 */}
+                {showMinimap && (
+                  <details className="group/map mt-1.5 rounded-xl bg-card border border-border">
+                    <summary className="flex items-center justify-between gap-3 px-3 py-2 cursor-pointer list-none [&::-webkit-details-marker]:hidden rounded-xl hover:bg-card/70 transition-colors">
+                      <span className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest text-primary">
+                        <Map className="w-3.5 h-3.5" aria-hidden="true" /> Learning Map
+                      </span>
+                      <ChevronDown
+                        className="w-4 h-4 text-primary transition-transform duration-200 group-open/map:rotate-180"
+                        aria-hidden="true"
+                      />
+                    </summary>
+                    <div
+                      ref={trailBoxRef}
+                      className="relative max-h-32 overflow-y-auto overscroll-contain border-t border-border/60 px-3 pt-1.5 pb-2.5"
+                    >
+                      <ClusterMinimap slug={post.slug} clusters={localeClusters!} hrefBase={base} bare currentOnly />
+                    </div>
+                    {/* 전체 학습맵 보기 — 탭하면 전체 필라 지도 펼침(자체 스크롤, 본문 안 밀림) */}
+                    <details className="group/fullmap border-t border-border/60">
+                      <summary className="flex items-center justify-between gap-2 px-3 py-2 cursor-pointer list-none [&::-webkit-details-marker]:hidden text-[10px] font-semibold uppercase tracking-wider text-muted-foreground/80 hover:text-primary transition-colors">
+                        <span className="flex items-center gap-1.5"><Map className="w-3.5 h-3.5" aria-hidden="true" /> Full learning map</span>
+                        <ChevronDown className="w-3.5 h-3.5 transition-transform duration-200 group-open/fullmap:rotate-180" aria-hidden="true" />
+                      </summary>
+                      <div className="max-h-[55vh] overflow-y-auto overscroll-contain border-t border-border/60 px-3 pt-1.5 pb-2.5">
+                        <ClusterMinimap slug={post.slug} clusters={localeClusters!} hrefBase={base} bare />
+                      </div>
+                    </details>
+                  </details>
+                )}
+              </div>
             )}
 
             <article ref={contentRef} className="prose-holdem blog-prose bg-card border border-border rounded-2xl p-4 sm:p-6 md:p-10">
