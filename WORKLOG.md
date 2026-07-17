@@ -3,6 +3,20 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-17 (★모바일 블로그 슬림 sticky 도구바 — 계산기 고정노출 + 목차/학습맵 토글, KO+다국어 7로케일)
+
+> 위 속도작업 후 이어서 진행. 사용자: "모바일에서 러닝맵·계산기가 스크롤하면 사라져 10초 뒤 계산기 깜빡임을 못 봄 → 상단 고정하자". 커밋 `e7f7c25`(KO 슬림바)·`f3292fd`(학습맵 접힘)·`8f7efa5`(다국어 이식). Fable5 구현 + Opus 리뷰/토글추가.
+
+### ✅ 모바일 슬림 sticky 도구바 (KO: `app/blog/[slug]/blog-post-client.tsx`)
+- 기존: 목차·계산기·학습맵이 본문 흐름에 인라인 → 스크롤하면 사라짐. 신규: **하나의 슬림 sticky 바**(`sticky top-14 z-40`, BlogTopBar 56px 아래)로 통합. 스크롤 내내 상단 고정.
+- 행1 **계산기 CTA 항상 노출**(calc-pulse 깜빡임을 이제 스크롤 중에도 봄) / 행2 **목차 토글**(접힘, 펼침=absolute 오버레이+max-h 스크롤 → 본문 안 밀림, CLS 0) / 행3 **학습맵 토글**(접힘 기본).
+- **`ClusterMinimap`에 `currentOnly` prop 추가**(기본 false=데스크톱·기존 전체맵 불변): 전 필라 아코디언 대신 **현재 글이 속한 필라 트레일만**(📍you are here + 형제글) 렌더. 학습맵 안에 "전체 학습맵 보기" 중첩 토글로 기존 전체 지도 접근(점진적 공개).
+- ★UX 반복조정: 트레일 기본 펼침(open)이 모바일 자리 과다 → 사용자 요청으로 `open` 제거(접힘 기본)로 슬림화. 목차 링크 클릭 시 `handleTocNavigate`가 sticky 바 높이 오프셋 보정 스크롤(제목이 바에 안 가리게). 데스크톱 사이드바(`hidden xl:block`) 완전 불변.
+
+### ✅ 다국어 이식 (`components/intl-blog-post-client.tsx`, 완역 7로케일 en·ja·es·pt·de·zh·id)
+- 공용 컴포넌트 1개 수정으로 24로케일 반영. 계산기 CTA는 **클러스터 있는 7로케일만**(`CALC_CTA_LABELS` 현지 라벨: en "Poker Odds Calculator"·ja "ポーカー勝率計算機"·id "Kalkulator Odds Poker" 등, `/calculator` canonical). 목차=`t.contents` 현지 라벨(깨진 mojibake 이모지 "??"→lucide `BookOpen` 아이콘 교체). 학습맵 접힘+currentOnly+"Full learning map". 미완역 로케일은 목차만.
+- RTL(ar/he/fa) 논리속성(`-mx-4`/`inset-x-0`)으로 안전. 데스크톱 불변. 빌드 성공(552p, intl 블로그 136kB=+1kB 계산기 몫, KO 130kB 무변).
+
 ## 2026-07-17 (★★★페이지 속도 구조 대개편 — 사이트 전 라우트 3MB 번들 탈출 + LCP 착시 제거 + AI시대 포스팅 규칙)
 
 > 발단: 제미나이가 pub-guide 모바일 53점(LCP 8s)을 "히어로 lazy·사이드바 DOM·이벤트배너·폰트" 4개로 진단. **실측(PSI API 연동)으로 전부 오진/기해결 확인**하고 진짜 원인 2개(무한 애니메이션·전체 POSTS 본문 클라이언트 번들)를 잡음. 트래픽이 CrUX 임계 넘기 전 선제 구조정비(사용자 판단). 커밋 `9d682ba`~`bfe4010`.
