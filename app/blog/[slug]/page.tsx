@@ -263,6 +263,10 @@ export default function Page({ params }: { params: { slug: string } }) {
       />
     ) : null;
 
+  // 관련글·이전/다음 계산용 메타(본문 content 제외) — 클라이언트가 전체 POSTS(본문 ~9.5MB)를
+  // 번들하지 않도록 서버에서 메타데이터만 뽑아 props로 전달. content 없이 slug/제목/이미지 등만.
+  const allPostsMeta = POSTS.map(({ content, ...meta }) => meta);
+
   return (
     <>
       {heroPreload}
@@ -273,9 +277,9 @@ export default function Page({ params }: { params: { slug: string } }) {
         }}
       />
       {post.layout === "tournament-guide" ? (
-        <TournamentGuidePost post={{ ...post, content: contentForClient }} summarySlot={summarySlot} />
+        <TournamentGuidePost post={{ ...post, content: contentForClient }} summarySlot={summarySlot} allPosts={allPostsMeta} />
       ) : (
-        <BlogPostClient post={{ ...post, content: contentForClient }} summarySlot={summarySlot} />
+        <BlogPostClient post={{ ...post, content: contentForClient }} summarySlot={summarySlot} allPosts={allPostsMeta} />
       )}
     </>
   );

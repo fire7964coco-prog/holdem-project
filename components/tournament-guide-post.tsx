@@ -7,7 +7,8 @@ import CardThumb from "./card-thumb";
 import { ChevronLeft, ChevronRight, ChevronDown, Share2, Link2, MapPin, Calendar, DollarSign, AlertTriangle, BookOpen } from "lucide-react";
 import { FaXTwitter, FaFacebookF } from "react-icons/fa6";
 import type { Post } from "@/lib/posts";
-import { POSTS } from "@/lib/posts";
+
+type PostMeta = Omit<Post, "content">;
 import { SITE } from "@/lib/site";
 import { useState, useRef } from "react";
 import { renderMarkdown, slugify, extractHeadings } from "./tournament-guide-utils";
@@ -16,12 +17,15 @@ import ReadingProgressBar from "./reading-progress-bar";
 export default function TournamentGuidePost({
   post,
   summarySlot,
+  allPosts,
 }: {
   post: Post;
   summarySlot?: ReactNode;
+  /** 관련글·이전/다음 계산용 메타데이터(본문 content 제외). 서버에서 전달. */
+  allPosts: PostMeta[];
 }) {
-  const currentIndex = POSTS.findIndex((p) => p.slug === post.slug);
-  const related = POSTS.filter(
+  const currentIndex = allPosts.findIndex((p) => p.slug === post.slug);
+  const related = allPosts.filter(
     (p) => p.slug !== post.slug && p.category === post.category
   ).slice(0, 3);
 
@@ -40,7 +44,7 @@ export default function TournamentGuidePost({
   const hasToc = headings.length >= 2;
 
   // Next tournament guide post (same series)
-  const tourSeriesPosts = POSTS.filter(p => p.layout === "tournament-guide" && p.slug !== post.slug);
+  const tourSeriesPosts = allPosts.filter(p => p.layout === "tournament-guide" && p.slug !== post.slug);
   const nextTourPost = tourSeriesPosts[0] ?? null;
 
   return (

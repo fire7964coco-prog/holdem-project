@@ -6,7 +6,8 @@ import Link from "next/link";
 import { Clock, Tag, ChevronLeft, ChevronRight, ChevronDown, Share2, Link2, Map } from "lucide-react";
 import { FaXTwitter, FaFacebookF } from "react-icons/fa6";
 import type { Post } from "@/lib/posts";
-import { POSTS } from "@/lib/posts";
+
+type PostMeta = Omit<Post, "content">;
 import { SITE } from "@/lib/site";
 import CommunityCTA from "@/components/community-cta";
 import BlogTopBar from "@/components/blog-top-bar";
@@ -540,6 +541,7 @@ export function renderMarkdown(content: string): string {
 export default function BlogPost({
   post,
   summarySlot,
+  allPosts,
 }: {
   post: Post;
   /**
@@ -547,14 +549,16 @@ export default function BlogPost({
    * LCP를 제목 텍스트로 옮기기 위해 본문에서는 빠지고, 페이지 맨 하단(관련 글 다음)에 lazy 로드.
    */
   summarySlot?: ReactNode;
+  /** 관련글·이전/다음 계산용 메타데이터(본문 content 제외). 서버에서 전달 — 클라이언트가 전체 본문을 번들하지 않게. */
+  allPosts: PostMeta[];
 }) {
   // 이전/다음 글: /blog 피드와 동일한 순서(날짜 내림차순 = 최신이 위)로 정렬해
   // "이전 글 = 피드에서 바로 위(더 최신) / 다음 글 = 피드에서 바로 아래(더 오래됨)"가 되게 한다.
-  const feed = [...POSTS].sort((a, b) => b.date.localeCompare(a.date));
+  const feed = [...allPosts].sort((a, b) => b.date.localeCompare(a.date));
   const currentIndex = feed.findIndex((p) => p.slug === post.slug);
   const prevPost = currentIndex > 0 ? feed[currentIndex - 1] : null;
   const nextPost = currentIndex >= 0 && currentIndex < feed.length - 1 ? feed[currentIndex + 1] : null;
-  const related = POSTS.filter((p) => p.slug !== post.slug && p.category === post.category).slice(0, 3);
+  const related = allPosts.filter((p) => p.slug !== post.slug && p.category === post.category).slice(0, 3);
 
   const [copied, setCopied] = useState(false);
   const [showStickyNext, setShowStickyNext] = useState(false);
