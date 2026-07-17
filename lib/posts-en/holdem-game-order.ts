@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A hand of Texas Hold'em runs: post blinds → deal two hole cards → preflop → flop (3 cards) → turn (1 card) → river (1 card) → showdown, with four betting rounds in total.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-07-02",
+  updated: "2026-07-17",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎬",
@@ -294,11 +294,11 @@ Want the full breakdown — including how kickers and ties decide a winner? See 
 
 ## 5 Mistakes Every Beginner Must Avoid
 
-You can memorize the order of play and still bleed chips if you make these.
+You can memorize the order of play and still bleed chips if you make these. I've watched each one cost a beginner the pot in real time — usually more than once in a single session.
 
 ### 1. Playing almost every hand
 
-"Let's just see a flop" is a long-term loser. Strong players play only 15–25% of hands and fold the rest without hesitation. If you're calling preflop with any two cards, you're paying to lose.
+"Let's just see a flop" is a long-term loser — it's the single most common leak I see at a new player's first table. Strong players play only 15–25% of hands and fold the rest without hesitation. If you're calling preflop with any two cards, you're paying to lose.
 
 ### 2. Ignoring position
 
@@ -314,7 +314,7 @@ If you checked passively the whole way and then shove the river, opponents see t
 
 ### 5. Misreading your hand at showdown
 
-A classic beginner error: thinking "I've got two pair!" when you actually have one pair. Practice picking the **best five cards** out of your two hole cards and the five board cards until it's automatic.
+A classic beginner error: thinking "I've got two pair!" when you actually have one pair. I've had players proudly turn over what they were sure was a straight, only to find the cards weren't connected — the table goes quiet, and the pot slides the other way. Practice picking the **best five cards** out of your two hole cards and the five board cards until it's automatic.
 
 ---
 

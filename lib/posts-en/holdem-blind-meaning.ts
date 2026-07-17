@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Blinds are forced bets posted before cards are dealt. The small blind sits left of the dealer button and the big blind to their left; the big blind — usually double the small blind — is the table's betting unit.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-07-11",
+  updated: "2026-07-17",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "💰",
@@ -138,7 +138,9 @@ Sit down at a live cash game and you usually can't play for free: you either **p
 
 ![Chip stack falling toward the pot on a poker table — a blind steal push from the button](/images/holdem-blind-steal.webp)
 
-- **Small blind: keep it simple.** Second-to-last preflop but **first to act** after the flop, the clean beginner approach is **raise or fold**, not call. Limping and getting played back at out of position is a steady chip leak.
+The blinds are where I watch beginners quietly bleed the most chips — not in one big pot, but a little every orbit. Two habits fix most of it:
+
+- **Small blind: keep it simple.** Second-to-last preflop but **first to act** after the flop, the clean beginner approach is **raise or fold**, not call. Limping and getting played back at out of position is a steady chip leak — the small blind is the seat I see new players lose from most over a full session.
 - **Big blind: defend with the odds.** You've already posted one full bet, so you can profitably call raises wider than any other seat. Facing a 2.5 BB open (with the small blind folding), you call 1.5 BB into a 4 BB pot — about 2.7-to-1, meaning roughly 27% equity breaks even on the call. That math is [pot odds](/en/blog/holdem-pot-odds), and it's why "big blind defense" exists.
 - **Late position: the steal.** When everyone folds to the button or cutoff, a raise aimed at winning just the two blinds is a **blind steal** — and re-raising back is a **re-steal**. Steal sizes, ranges by seat, and how wide to defend are strategy topics, covered in depth in the [in position vs out of position strategy guide](/en/blog/holdem-position-play).
 

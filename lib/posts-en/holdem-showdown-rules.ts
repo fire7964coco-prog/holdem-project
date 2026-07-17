@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "At showdown, the last player to bet or raise shows first. If the river was checked through, the first active player left of the button shows first. You can muck without showing if you lose, but opponents can request to see a called hand.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-07-12",
+  updated: "2026-07-17",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -134,9 +134,11 @@ This is one reason poker is interesting. The best hand doesn't always win — th
 
 ## Showdown Etiquette — What Beginners Get Wrong
 
+Nothing sours a table faster than a showdown handled wrong. Most of it isn't the rules — it's habits nobody taught the new player. Here are the four I end up correcting most often.
+
 ### Mistake 1: Waiting for the caller to show first
 
-You bet the river. Someone calls you. You freeze and wait for them to show. That's backwards. ==You show first — you were the last aggressor.== Waiting looks like slow rolling even when it isn't.
+You bet the river. Someone calls you. You freeze and wait for them to show. That's backwards. ==You show first — you were the last aggressor.== Waiting looks like slow rolling even when it isn't — I've watched a friendly game go cold for a full orbit because one player kept letting the caller sweat before turning over the winner.
 
 ### Mistake 2: Mucking before the dealer reads the hand
 

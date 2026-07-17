@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Going all-in means betting every chip you have. You can only win what you matched from each opponent (the main pot). Extra bets from bigger stacks form a side pot you cannot win. An all-in for less than a full raise does NOT reopen the betting for players who already acted.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-07-12",
+  updated: "2026-07-17",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "♠",
@@ -204,6 +204,8 @@ When all betting is complete and a player is all-in, here is what happens at sho
 
 ## What Happens If You Go All-In Wrong? — 5 Mistakes to Avoid
 
+After enough all-in pots, you learn the chaos almost always comes from five specific misunderstandings — not the math, but who is eligible for which pot.
+
 ### Mistake 1: Thinking the all-in player can win the side pot
 They cannot. Once the all-in player is capped, any additional chips bet by larger stacks belong to a pot the all-in player has no claim to.
 
@@ -214,7 +216,7 @@ A partial all-in from Player C does not give Player A a second chance to re-rais
 Table stakes. What's on the table is all you can bet. If you're all-in for $80 and the pot is $400, you can only win $80 from each caller.
 
 ### Mistake 4: Mucking your hand too quickly
-You're all-in for the main pot. Two other players battle it out for the side pot. Don't muck — your hand is still live for the main pot. ==Always wait for the dealer to resolve every pot before touching your cards.==
+You're all-in for the main pot. Two other players battle it out for the side pot. I once watched a short stack toss his cards the moment he lost the side-pot showdown — forgetting the main pot was still his to win. Those chips were gone the instant the cards hit the muck. Don't muck — your hand is still live for the main pot. ==Always wait for the dealer to resolve every pot before touching your cards.==
 
 ### Mistake 5: Going all-in out of frustration
 The all-in is the most powerful move at the table. It forces opponents into all-or-nothing decisions. That power disappears when you shove randomly. Use it at the right moment — short stack pressure, value hands you want called, bluffs with real fold equity.
