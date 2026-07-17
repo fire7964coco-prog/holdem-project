@@ -5,7 +5,27 @@
 
 ---
 
-## ▶▶▶ 새 세션 START HERE (2026-07-17 — ★★★페이지 속도 구조 대개편 완료 / 다음 = 마케팅 플랜 논의 or 번역 ar)
+## ▶▶▶ 새 세션 START HERE (2026-07-18 — ★★★EN 마스터 전수 경화 = 경험담(E-E-A-T) 주입 / 포스팅 하나씩 정독·수정)
+
+> ★★★**다음 세션 주제 = EN 마스터 전수검사 후 경화**(사용자 확정, "포스팅 하나하나를 제대로"). **A안**: EN 6필라 전부 경험담 경화 → 그 다음에야 번역(JA부터). 번역 속도보다 **디테일 우선**(사용자 방침, "나 목숨걸었어"). 규칙은 오늘 갱신한 `.cursor/rules/posting.mdc` §E-E-A-T "★EN 마스터 경험담 경화" 참조.
+
+### ▶▶ 무엇을 / 왜
+- **왜**: 오늘 EN Rules 클러스터 검수 중 발견 — EN은 **구조·GEO·§13·롱테일 H2가 이미 최상**인데 **1인칭 경험담(E-E-A-T)이 사실상 0**(KO는 있음). 2026 리서치상 **원본 1인칭 경험 = 상위10% 최대 차별자**(자체경험 +22% / AI재작성 -71%). EN은 24언어 마스터라 **EN에 경험을 심으면 24배 전파**. 신생 4개월 사이트 생존 = 경쟁글보다 실제로 더 나은 콘텐츠.
+- **무엇**: EN 각 글에 **1인칭 실무자 경험담 주입**. ★규칙(오늘 확립): ①**구조·§13·핸드예시·롱테일 H2는 절대 안 건드림**(이미 최상) ②경험담은 **mistakes/실전/etiquette 섹션**이 자연스러운 자리 ③**중간 톤**(편당 2~4스푼) ④**없는 사실 지어내지 말 것**(가짜 이름·날짜 X, 12년 경력 페르소나와 일치하는 진짜 실무자 관찰만) ⑤seoTitle 길이(EN ≤60자)·`updated` 갱신 ⑥편마다 빌드·커밋.
+
+### ✅ 오늘 완료 = EN Rules 필라 클러스터 6편 (1/6 필라)
+- `texas-holdem-rules-for-beginners`(허브, 경험담 4곳+제목 68→61자) · `holdem-game-order`(3곳) · `holdem-all-in-rules`(2곳) · `holdem-showdown-rules`(2곳) · `holdem-blind-meaning`(2곳). ⭐`holdem-betting-actions`는 **이미 강한 경험담 보유**("weekly live game...every orbit")→무변경. 커밋 `9a9ff05` 등, 배포됨.
+
+### ▶▶ 남은 EN 5필라 (내일부터 하나씩)
+EN_CLUSTERS 순서: rules✅ → **rankings**(족보: holdem-hand-rankings + flush-vs-straight·kicker·tiebreak·split-pot·reading-the-board) → **odds**(holdem-probability + pot-odds·outs·drawing-odds·implied-odds·equity) → **strategy**(holdem-strategy + …) → **tournament** → **glossary**. 각 필라 = 허브 1 + 클러스터 5편. 필라별로 정독→경험담→빌드→커밋, 필라 끝날 때 보고.
+- 각 글 착수 = 먼저 mistakes/실전 섹션 유무 grep(경험담 자리) + 기존 1인칭 신호 확인(`betting-actions`처럼 이미 있으면 스킵).
+
+### ▶▶ EN 경화 완료 후 = 번역(JA부터), 단 현지 롱테일 실검색
+- **JA부터 하나씩** → 반응 오는 언어로 확장(gsc:lang). 신생이라 EN 외 로케일은 발행 며칠뿐 = **아직 데이터 없음**(EN만 구글이 노출 시도 중).
+- ★번역 시 **현지 실검색 롱테일을 H2에 **(영어=질문형이지만 **JA=명사구/「とは」, 나라별 검색스타일 다름** → 툴로 확인). 국가별 실볼륨 = Ahrefs/Semrush **국가별 DB** 필요(사용자 구독 여부 미정). 메모리 [[translation-local-research-first]]·[[en-master-experience-hardening]].
+- "검색어→H2 자동이동"은 **구글 scroll-to-text-fragment**(자동, 우리 GEO 구조가 조건) — 코딩 아님. 헤딩 id·모바일 scroll-margin 보정은 오늘 완료.
+
+## ▶▶▶ (이전) START HERE (2026-07-17 — ★★★페이지 속도 구조 대개편 완료 / 다음 = 마케팅 플랜 논의 or 번역 ar)
 
 > ✅✅✅ **오늘 = 속도 최적화 대성공**(상세 WORKLOG 2026-07-17 최상단). 제미나이 진단(히어로lazy·DOM·배너·폰트 4개)은 **PSI 실측으로 전부 오진/기해결 확인**하고, 진짜 원인 3개를 잡음:
 > - ① **무한 CSS 애니메이션**(calc-glow·summary-border-pulse) → Lighthouse LCP 착시 21s → 유한화로 제거.

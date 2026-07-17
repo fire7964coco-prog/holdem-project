@@ -48,6 +48,20 @@ alwaysApply: false
 - 단순 정보 나열식 글 작성 엄격 금지 (구글 E-E-A-T 위반 = SEO 역효과)
 - **이 원칙 없이 새 포스팅 작성 절대 금지**
 
+### ★ EN 마스터 경험담 경화 (2026-07-17 확립 — 번역 전 필수)
+
+> **왜**: EN은 24개 언어의 번역 마스터다. EN이 "구조·GEO·§13·롱테일 H2는 완벽한데 **1인칭 경험담이 0**"이면(= 잘 만든 AI 설명서), 그 결핍이 24배로 전파된다. 2026 리서치: **원본 1인칭 경험 = 상위10% 최대 차별자**(자체경험 +22% / AI재작성 -71%). 신생 사이트가 AI설명서 홍수를 이기는 진짜 무기 = 경험 레이어.
+
+**EN 글은 번역하기 전에 경험담을 전수 점검·주입한다.** 주입 규칙:
+1. **구조·§13·핸드예시·롱테일 H2·표는 절대 건드리지 마라** (이미 최상이면 그대로). 채우는 건 **경험담 하나뿐**.
+2. **자연스러운 자리** = `Common Mistakes`·`Beginner Mistakes`·`Etiquette`·실전(How to play from…) 섹션. 없으면 도입부 권위 선언 1줄 + 실전 섹션.
+3. **중간 톤** — 편당 2~4스푼. 도배 금지(억지 경험담은 오히려 독).
+4. **없는 사실 지어내지 말 것** — 가짜 이름·날짜·수치 X. 사이트 페르소나(WSOP·GTO·12년)와 일치하는 **진짜 실무자 관찰**만("The first home game I dealt…", "I've watched more players lose chips with a weak ace…").
+5. 손댄 글은 `seoTitle` 길이(EN ≤60자) 점검 + `updated` 오늘 날짜 갱신 + 빌드·커밋.
+6. **이미 경험담이 강한 글은 스킵**(예: betting-actions "weekly live game…every orbit"). 착수 전 1인칭 신호 grep으로 확인.
+
+> 순서: **EN 6필라(rules·rankings·odds·strategy·tournament·glossary) 전부 경화 → 그 다음 번역**. 번역 시엔 EN 경험담을 **현지 시장 맥락으로 재저작**([[translation-is-contextual-reposting]]), 현지 실검색 롱테일을 H2에 배치(영어=질문형, JA=명사구/「とは」 등 나라별 상이).
+
 ---
 
 ## 🎯 SEO 카피 = "호기심 훅 + 핵심 키워드" 하이브리드

@@ -3,6 +3,23 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-17 (★★★EN 마스터 경화 착수 — Rules 필라 클러스터 6편 경험담(E-E-A-T) 주입 + H2 착지 보정)
+
+> 사용자 "번역 빨리보다 디테일. EN이 마스터니 전수검사 후 하나하나 제대로." → 최고포스팅 기준 웹조사 후 EN Rules 필라 클러스터 정독. **발견: EN은 구조·GEO·§13·롱테일 H2가 이미 최상인데 1인칭 경험담이 사실상 0**(KO는 있음). 2026 리서치상 원본경험이 상위10% 최대 차별자(+22%/AI재작성-71%). EN=24언어 마스터라 경화가 24배 전파 → **A안 확정**: EN 6필라 전부 경화 후 번역. 커밋 `9a9ff05`·`4ba0a92` 등, 배포됨.
+
+### ✅ 최고 포스팅 기준 조사 (WebSearch)
+- 원본 1인칭 경험 = 최대 차별자 / "이기려는 페이지보다 실제로 더 나아야" / 신생=롱테일(KD<30)·키워드를 title·H1·H2·본문 배치·완결답변 / 저경쟁 롱테일 2~8주(신생 더). GEO(답변우선·표·숫자+출처)는 오늘 아침 리서치와 일치.
+
+### ✅ EN Rules 필라 클러스터 6편 경험담 주입 (1/6 필라)
+- `texas-holdem-rules-for-beginners`(허브): 경험담 4곳(도입부 권위선언·Common Mistakes 리드인·Mistake2 버튼혼란 장면·Mistake4 약한에이스 관찰) + seoTitle 68→61자(",Chips" 제거).
+- `holdem-game-order`: 3곳(5 Mistakes 리드인·Mistake1 leak·Mistake5 쇼다운 오독 장면). `holdem-all-in-rules`: 2곳(5 Mistakes 리드인·Mistake4 muck 장면). `holdem-showdown-rules`: 2곳(에티켓 리드인·Mistake1 슬로롤 장면). `holdem-blind-meaning`: 2곳(블라인드 실전 리드인·SB 관찰).
+- ⭐`holdem-betting-actions`: **이미 강한 경험담**("I play a weekly low-stakes live game...every single orbit")→무변경.
+- ★방법론(확립): **구조·§13·핸드예시·롱테일 H2 절대 불변**(이미 최상). 경험담만 mistakes/실전 섹션에 중간 톤(편당 2~4). **없는 사실 X**(가짜 이름·날짜 없이 12년경력 페르소나 일치 실무자 관찰). updated 전편 갱신. 규칙은 `posting.mdc` §E-E-A-T에 명문화.
+
+### ✅ 모바일 H2 착지 보정 (커밋 `4ba0a92`)
+- 새 모바일 고정바가 #해시·공유링크·구글 scroll-to-text-fragment로 H2 진입 시 제목을 가림 → `.blog-h2 scroll-margin-top` 모바일(<xl)만 68→150px. 데스크톱(사이드바) 68px 유지. 목차 클릭은 기존 JS 처리.
+- 참고: "검색어→H2 자동이동"은 구글 자동 기능(scroll-to-text-fragment), 우리 GEO 구조(질문형 H2+직답)가 조건. 우리 코드로 검색어 읽어 스크롤은 불가(구글이 검색어 미전달).
+
 ## 2026-07-17 (★모바일 블로그 슬림 sticky 도구바 — 계산기 고정노출 + 목차/학습맵 토글, KO+다국어 7로케일)
 
 > 위 속도작업 후 이어서 진행. 사용자: "모바일에서 러닝맵·계산기가 스크롤하면 사라져 10초 뒤 계산기 깜빡임을 못 봄 → 상단 고정하자". 커밋 `e7f7c25`(KO 슬림바)·`f3292fd`(학습맵 접힘)·`8f7efa5`(다국어 이식). Fable5 구현 + Opus 리뷰/토글추가.
