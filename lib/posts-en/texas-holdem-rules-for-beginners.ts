@@ -3,12 +3,12 @@ import type { Post } from "../posts";
 export const POST: Post = {
   slug: "texas-holdem-rules-for-beginners",
   title: "How to Play Texas Hold'em for Beginners — Rules, Chips, Hands, and First Strategy",
-  seoTitle: "How to Play Texas Hold'em for Beginners — Rules, Chips & Cheat Sheet",
+  seoTitle: "How to Play Texas Hold'em for Beginners — Rules & Cheat Sheet",
   desc: "Never played before? How to play Texas Hold'em step by step — blinds, chip setup, hand rankings, and a printable cheat sheet even dummies can follow.",
   tldr: "Texas Hold'em gives each player 2 hole cards, uses 5 community cards, and the best 5-card poker hand wins after four betting rounds.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-07-12",
+  updated: "2026-07-17",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -30,6 +30,8 @@ If you searched for ==Texas Hold'em rules for beginners==, you probably do not n
 You need to know what the blinds are, when it is your turn, how the five community cards work, which hand wins, and how many chips to give everyone when playing at home.
 
 This guide explains ==how to play Texas Hold'em for beginners== in plain English, with the exact order of play, beginner chip setup, dealing basics, and a printable cheat sheet you can keep beside the table.
+
+Everything below comes from actually running the game — kitchen tables, home games, and card rooms — not just the rulebook, so I'll point out the exact spots where new players trip up in real life.
 
 ### How to play Texas Hold'em in 30 seconds
 
@@ -355,13 +357,15 @@ If two players have the same type of hand, compare the highest relevant cards �
 
 ## Common Beginner Mistakes
 
+After years of hosting home games, I see the same five mistakes at almost every beginner table — and none of them are about strategy. They come from not yet trusting the rules.
+
 ### Mistake 1: Thinking you must use both hole cards
 
 You can use both, one, or none of your hole cards. The best five-card hand wins.
 
 ### Mistake 2: Forgetting that action order changes
 
-Preflop starts left of the big blind. After the flop, action starts left of the button.
+Preflop starts left of the big blind. After the flop, action starts left of the button. The first home game I dealt, two players kept acting out of turn on every flop — we set a physical dealer button on the table, and the confusion disappeared within one orbit.
 
 ### Mistake 3: Calling because "it might come"
 
@@ -369,7 +373,7 @@ Draws need the right price. If the pot is small and the bet is huge, chasing a w
 
 ### Mistake 4: Playing any ace
 
-A♣4♦ looks exciting to a beginner, but weak aces often make second-best one-pair hands. Big aces like AK and AQ are much stronger.
+A♣4♦ looks exciting to a beginner — I've watched more new players lose chips with a weak ace than with almost any other hand — but weak aces often make second-best one-pair hands. Big aces like AK and AQ are much stronger.
 
 ### Mistake 5: Ignoring position
 
