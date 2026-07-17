@@ -23,6 +23,11 @@
 - **Phase 3**(`bfe4010`) 홈 25개: 서버래퍼 `app/community/community-home.tsx` 신설 → `community-client`에 `blogPosts` prop. 홈 라우트 25개는 import 경로만 `community-client`→`community-home` 교체(default export라 로컬명 유지). **3.08MB→199kB**.
 - **결과**: 사이트 전 라우트(블로그25+홈25) 3MB 번들 탈출. 일반 페이지 성능 **53~58 → 83~86**(KO 족보 83·EN 족보 86). 메인스레드 ~2.4s로 전 글 동일(pub-guide 64는 **PSI 런 편차**였음 — 실측상 족보글과 비용 판박이, 특별히 느린 게 아님).
 
+### ✅ 진짜 원인 ③ 홈 CLS 폭증(비동기 피드) — Fable5 구현·Opus 리뷰 (커밋 `9b2c5fa`)
+- 번들 제거 후 홈 실측: FCP 1.4s·TBT 낮음(개선됨)이나 **CLS 0.55~0.62(치명)·LCP 7~8.7s** = 별개 문제. 원인: `community-client`가 `if(loading) return <스피너>`로 전체 페이지를 막고, Supabase 순차왕복(auth→profile→posts→likes) 후 페이지 통째 교체 + 피드 이미지 치수 미지정.
+- 수정: ①전체 스피너 게이트 삭제 → `posts` 초기값을 `sortFeed(정적 티저)`로 시딩 → **SSG HTML에 피드 프리렌더**(LCP 콘텐츠 첫 페인트부터). Supabase 글은 동일 `sortFeed`로 병합(정렬·`PINNED_IDS`는 기존과 1:1 = 제품 회귀 없음, 상단 고정 6개 불변·유저글은 폴드 아래 → 뷰포트 시프트 0). ②`post-card` 피드 이미지 `aspect-ratio:16/9`+width/height 고정 컨테이너(글 상세는 원본비율 유지, `imgPriority` 기본 true라 타 사용처 무회귀). ③첫 3카드 eager·나머지 lazy, 빈 필터 정적 스켈레톤(무한 애니 금지).
+- **결과**: 홈 **CLS 0.55→0, LCP 8.7s→2.3s, 성능 41→89(KO)·53→97(EN)**. 빌드 552p·홈 200kB(번들 회귀 없음). ★교훈: 동적 피드 CLS = 전체 로딩게이트+이미지 치수 미지정. props로 온 데이터는 초기 state 시딩으로 SSR화해 LCP·CLS 동시 해결. [[perf-lessons-lcp-and-bundle]].
+
 ### 📌 남은 저ROI 선택지(CrUX 데이터 쌓인 뒤 타깃)
 - 전 페이지 공통 베이스라인: Style&Layout ~900ms + JS파싱/실행 ~1.2s(하이드레이션). renderMarkdown 서버화·content-visibility 등은 딥리팩터.
 - framer-motion은 계산기/퀴즈 라우트 한정(블로그·홈 무관).
