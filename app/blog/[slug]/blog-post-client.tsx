@@ -758,9 +758,9 @@ export default function BlogPost({
                 </details>
               )}
 
-              {/* 행3 — 현재 필라 트레일만 (기본 살짝 펼침, 길면 박스 내부 스크롤) */}
+              {/* 행3 — 학습맵(기본 접힘, 탭하면 현재 필라 트레일 + 전체맵 토글) */}
               {showMinimap && (
-                <details open className="group/map mt-1.5 rounded-xl bg-card border border-border">
+                <details className="group/map mt-1.5 rounded-xl bg-card border border-border">
                   <summary className="flex items-center justify-between gap-3 px-3 py-2 cursor-pointer list-none [&::-webkit-details-marker]:hidden rounded-xl hover:bg-card/70 transition-colors">
                     <span className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest text-primary">
                       <Map className="w-3.5 h-3.5" aria-hidden="true" /> Learning Map
