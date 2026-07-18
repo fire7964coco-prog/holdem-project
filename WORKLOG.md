@@ -3,6 +3,19 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-18 (★★★EN 경화 스코프 확장 = AI시대 GEO 재정비 규칙화 + 족보 필라 착수(허브 hand-rankings))
+
+> 사용자: "EN 구조는 잘 짜였고, AI시대에 맞춰 전략 수정. 이왕 전수조사하는 김에 경험담뿐 아니라 롱테일 질문형 H2로 재정비." → ①AI시대 상위노출(GEO) 리서치 → ②경화 규칙을 "경험담+GEO 4종"으로 확장·문서화 → ③족보 허브 실제 적용. 배포됨.
+
+### ✅ AI시대 GEO 리서치 + 규칙 문서화
+- WebSearch 6각 리서치: **랭킹→인용 전환** / Query fan-out(서브질문 커버 시 인용 +161%) / 인용 62%가 top-10 밖(신생 유리) / **1인칭 경험 = 직접 클릭 드라이버**(AI Overview 인용 96%가 E-E-A-T 신호, 구글 2026-05 포럼 1인칭 별도 영역) / 프린스턴 통계·인용·출처 +25~28% / 패시지 130~170단어 자기완결 Q-A-E.
+- `.cursor/rules/posting.mdc` §E-E-A-T를 "★EN 마스터 경화 = 경험담 + AI시대 GEO 재정비" 4종(경험담 추출가능형·H2 키워드뱅크 롱테일 질문화·Q-A-E 단락·표+숫자+출처)으로 개정 + §GEO "🆕 2026-07-18 최신 실증 데이터" 신설. session-handoff·메모리 [[en-master-experience-hardening]] 동기화. **불변: §13·slug/URL·이미지·구조.**
+
+### ✅ 족보 허브 `holdem-hand-rankings` 재정비 (rankings 필라 1/6)
+- 키워드뱅크(`en-what-beats`·`en-glossary-what-is-a`·`en-odds-of`) 매핑 = 허브 ~17,000 볼륨 커버. **H2 7개 질문형 전환**(What Are the Poker Hand Rankings… / What Beats What in Poker? / Why Does a Flush Beat a Straight? / How Do Kickers and Ties Work? / How Do You Memorize Poker Hands Fast? 등) + 각 40~75단어 직답 리드.
+- **경험담 4스푼**(도입 권위·쿨러 12년 관찰·Puzzle1 초보 오독 실장면·보드리딩 루틴, 1인칭 추출가능형). 확률표 출처 한 줄 + "3.03% vs 4.62%" 인라인 수치. `updated` 갱신. 구조·§13·FAQ 20문항·이미지 불변. 빌드 552p 정상.
+- ⚠️ **남은 족보 4편 키워드뱅크 얇음**: kicker·reading-the-board(뱅크 無), tiebreak·split-pot(얇음) → 착수 시 `lowfruits.io` 시드검색 필요(사용자 몫).
+
 ## 2026-07-17 (★★★EN 마스터 경화 착수 — Rules 필라 클러스터 6편 경험담(E-E-A-T) 주입 + H2 착지 보정)
 
 > 사용자 "번역 빨리보다 디테일. EN이 마스터니 전수검사 후 하나하나 제대로." → 최고포스팅 기준 웹조사 후 EN Rules 필라 클러스터 정독. **발견: EN은 구조·GEO·§13·롱테일 H2가 이미 최상인데 1인칭 경험담이 사실상 0**(KO는 있음). 2026 리서치상 원본경험이 상위10% 최대 차별자(+22%/AI재작성-71%). EN=24언어 마스터라 경화가 24배 전파 → **A안 확정**: EN 6필라 전부 경화 후 번역. 커밋 `9a9ff05`·`4ba0a92` 등, 배포됨.

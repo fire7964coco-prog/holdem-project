@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Poker hand rankings from best to worst are: Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, One Pair, and High Card.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-07-03",
+  updated: "2026-07-18",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🃏",
@@ -20,13 +20,13 @@ You're heads-up on the river. You made your flush, you're sure it's good — and
 
 Almost every "I thought I won" moment comes down to one thing: ==not reading the **poker hand rankings** fast enough==. The order itself takes five minutes to learn. Reading it live, under pressure, with a paired or coordinated board — ==that's the part nobody explains well==.
 
-This guide fixes both. You'll get the full ranking order with the real odds, every tiebreaker rule, three live board puzzles so you can practice "find your best five," and a 1-second routine for reading any board at the table.
+I've spent more nights than I can count watching that exact "I thought I won" face across a table, and it almost always traces back to one missed detail on the board. This guide fixes both problems. You'll get the full ranking order with the real odds, every tiebreaker rule, three live board puzzles so you can practice "find your best five," and a 1-second routine for reading any board at the table.
 
 ---
 
-## Poker Hand Rankings: The Full Order at a Glance
+## What Are the Poker Hand Rankings, Best to Worst?
 
-Start here. This is the entire hierarchy, strongest to weakest, with the long-run odds of being dealt each hand by the river in Texas Hold'em.
+From best to worst, the ten Texas Hold'em hands rank: Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, One Pair, and High Card. The core rule is simple — the rarer a hand is to make, the higher it ranks. Below is the entire hierarchy with the long-run odds of holding each by the river.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -44,6 +44,8 @@ Start here. This is the entire hierarchy, strongest to weakest, with the long-ru
 | **10** | High Card | "No pair" | No combination at all | 17.4% |
 
 </div>
+
+*These are the standard seven-card hand frequencies for a full 52-card deck — the same probabilities every poker solver and training site uses.*
 
 > **The one rule that wins arguments**
 > One Pair and High Card together make up roughly 61% of all seven-card hands by the river. Big hands feel common because they're memorable — but most pots are decided by a pair and a [kicker](/en/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp").
@@ -68,7 +70,9 @@ In standard Texas Hold'em, **no suit is stronger than another**. Spades do not b
 
 ---
 
-## The 10 Poker Hands Explained
+## What Are the 10 Poker Hands? (Each One Explained)
+
+Here is every hand from strongest to weakest, with an example and the one rule that decides each matchup. The five that cause the most confusion — full house, flush, straight, and the two kinds of three-of-a-kind — get the extra attention.
 
 ### #1 — Royal Flush
 
@@ -103,7 +107,7 @@ Between two quads, the higher four-of-a-kind wins. If the quads are *on the boar
 Compare the **three-of-a-kind first**: QQQ55 beats JJJ99 because queens top jacks, no matter how big the pair is. Only if the trips tie do you compare the pairs.
 
 > **The most common cooler**
-> Any time the board pairs, check for a full house before you commit with a flush or straight. "My nut flush lost to a boat" is the single most frequent beat in Hold'em.
+> In twelve years around the felt, "my nut flush lost to a boat" is the single most frequent beat I hear players groan about. Any time the board pairs, check for a full house *before* you commit with a flush or a straight.
 
 ### #5 — Flush
 
@@ -164,11 +168,11 @@ At showdown, the highest card wins, then the next, and so on down all five. If a
 
 ---
 
-## How Kickers and Ties Actually Work
+## How Do Kickers and Ties Work in Poker?
 
 ![Poker showdown — comparing two players' best five-card hands](/images/holdem-hand-rankings-showdown.webp "At showdown, the best five-card hand takes the pot")
 
-This is the part that decides real pots — and the part most charts skip. When two players have the **same hand type**, work through this exact order:
+When two players hold the same hand type, the winner is decided by comparing the cards inside the hand first, and then a **kicker** — a side card that isn't part of the made hand — breaks the tie when everything else matches. This is the part that decides real pots, and the part most charts skip. Work through this exact order:
 
 1. **Compare the hand rank.** A flush always beats a straight, full house always beats a flush, and so on.
 2. **Compare the cards that make the hand.** A pair of aces beats a pair of kings; a queen-high flush beats a jack-high flush.
@@ -206,7 +210,7 @@ Knowing the order isn't the same as reading it fast. Here are three real spots. 
 
 You hold **Q♥ Q♦**. What's your best hand?
 
-→ The board already shows two pair (A-A and K-K). Your two queens plus the board's Q♠ make **trip queens**, and combined with the board's aces you have a **full house — QQQ + AA**. That's your best five. Beginners freeze on "isn't AAKK + Q just two pair?" — no. Once you have trips, you take the full house. **Full house beats two pair.**
+→ The board already shows two pair (A-A and K-K). Your two queens plus the board's Q♠ make **trip queens**, and combined with the board's aces you have a **full house — QQQ + AA**. That's your best five. The first home game I ever dealt, I watched two different players muck this exact hand thinking "AAKK + Q is just two pair" — it isn't. Once you have trips, you take the full house. **Full house beats two pair.**
 
 ### Puzzle 2 — The flush that's actually better
 
@@ -226,7 +230,9 @@ You hold **A♥ 3♣**. The board already has trip kings.
 
 ---
 
-## Quick Answers to the Matchups People Argue About
+## What Beats What in Poker? The Matchups People Argue About
+
+The short answers to the arguments that break out at every table: a flush beats a straight, a full house beats a flush, four of a kind beats a full house, and the wheel (A-2-3-4-5) is the *lowest* straight, never the highest. Here are the matchups people get wrong most often.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -244,9 +250,9 @@ You hold **A♥ 3♣**. The board already has trip kings.
 
 ---
 
-## Why the Order Is What It Is
+## Why Does a Flush Beat a Straight?
 
-The ranking isn't arbitrary — it's ==pure probability==. ==g:**The harder a hand is to make, the higher it ranks.**== A flush sits above a straight because, in a 52-card deck, there are simply fewer ways to make five of one suit than five in sequence across any suits. That single principle explains the entire hierarchy — see the exact numbers in the [poker odds and probability chart](/en/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
+A flush beats a straight because it is simply harder to make: in a 52-card deck there are fewer ways to draw five cards of one suit (3.03% of seven-card hands by the river) than five in sequence across any suits (4.62%). The ranking isn't arbitrary — it's ==pure probability==. ==g:**The harder a hand is to make, the higher it ranks.**== That single principle explains the entire hierarchy — see the exact numbers in the [poker odds and probability chart](/en/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
 It also explains the one big exception you'll meet: in **Short Deck (6+) Hold'em**, where the 2s through 5s are removed, flushes become harder than full houses — so in that format a ==r:**flush beats a full house**==. The math changed, so the order changed. More on game-by-game differences below.
 
@@ -264,11 +270,13 @@ Under a time bank, run this scan in order every time the board is complete:
 
 **3. Pairs last** — is the board paired? ==r:If yes, full houses and quads are on the table, and your flush or straight may be in danger.==
 
-Trained players read the board in this exact order — danger first (flush/straight on the board), then whether the board is paired (which threatens everything). Build the habit and you'll stop making rushed river calls.
+I still run this exact scan — suits, then straights, then pairs — on every single board, no matter how many hours I've been sitting there. Danger first (flush/straight on the board), then whether the board is paired (which threatens everything). Build the habit and you'll stop making rushed river calls.
 
 ---
 
-## Memorize It in 3 Steps
+## How Do You Memorize Poker Hands Fast?
+
+The fastest way to memorize poker hands is to stop treating them as ten random items: learn them in three groups (Premium, Middle, Common), drill only the confusing pairs, then call the winner on poker streams before the dealer announces it. Here's the three-step plan.
 
 | Step | What to do | Time |
 |------|------|------|
@@ -280,9 +288,9 @@ Grouping first stops the order from feeling like ten random items. The confusing
 
 ---
 
-## Hand Rankings by Game Type
+## Are Poker Hand Rankings the Same in Every Game?
 
-The order is shared across most poker variants, with a few important twists.
+Mostly yes — the same ten-hand order carries across Texas Hold'em, Omaha, and Seven-Card Stud. The main exceptions are Short Deck (6+), where a flush beats a full house, and Omaha's rule that you must use exactly two of your hole cards. Here's how the common variants compare.
 
 | Game | Hand rankings | Key difference |
 |------|------|------|
