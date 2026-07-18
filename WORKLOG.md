@@ -39,7 +39,11 @@ hand-rankings·flush-vs-straight·kicker·reading-the-board·tiebreak·split-pot
 ### ✅ odds 필라 착수 — 허브 `holdem-probability` (odds 1/6)
 - lowfruits 3시드(`what are the odds of *`·`how often *`·`odds of flopping *`, 각 1900/1350/315행) + WebSearch PAA 조합. 허브는 이미 마스터 확률표·강한 도입 경험담 완비라 §13 수치·표·경험담 불변.
 - **winnable FAQ 7개 신설**: most common winning hand · odds of four of a kind/quad aces · how rare is flush/straight/full house · odds of having the nuts(LowDA11) · how often does best hand win(LowDA23) · how often do you hit the flop · odds of flopping a royal flush(90vol, 1 in 19,600). H2 질문화 3개(being dealt/flopping each hand/how rare is royal). Rule of 2&4에 "4-2 rule" 별칭.
-- ⚠️ **남은 odds 5편**(각각 리서치→작성): pot-odds·outs·drawing-odds·implied-odds·equity. 각 전용 시드(`pot odds *`·`poker outs *`·`drawing odds *`·`implied odds *`·`poker equity *`).
+### ✅ odds `holdem-pot-odds` 재정비 (odds 2/6)
+- lowfruits `pot odds`(2888행)·`how to calculate pot odds` + WebSearch PAA. ★"odds"가 스포츠베팅/경마에 오염 심함 → 노이즈 중 **고볼륨 스포츠베팅 배당 키워드는 버리지 않고 `docs/keyword-bank/_saved-sports-betting-odds.md`로 별도 저장**(사용자 지시, `what do the odds mean in betting` 1600vol 등, 미래 버티컬용).
+- 이미 강한 경험담(hope 세금·실전핸드)·§13·표 불변. **winnable FAQ 3개 신설 + 1개 문구정확화**: How much of the pot should you bet?(벳사이징) · Should your equity be higher or lower than pot odds? · How do you calculate the pot size? / "good pot odds ratio"→"What are good pot odds in poker?".
+- 🎁 equity글용(`how to calculate equity`·`fold equity` 140)·outs글용(`what are outs` 140) 킵.
+- ⚠️ **남은 odds 4편**: outs·drawing-odds·implied-odds·equity. 각 전용 시드.
 
 ## 2026-07-17 (★★★EN 마스터 경화 착수 — Rules 필라 클러스터 6편 경험담(E-E-A-T) 주입 + H2 착지 보정)
 

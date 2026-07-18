@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "To calculate pot odds, divide the amount you must call by the total pot after your call. Calling $50 into a $150 pot = 50 ÷ 200 = 25% — so you need at least 25% equity to make the call profitable.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-07-03",
+  updated: "2026-07-18",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🧮",
@@ -194,7 +194,11 @@ A. Divide the amount you must call by the total pot *after* your call. Calling $
 
 A. Yes. The required-equity formula uses the *final* pot, which includes your own call. Calling $50 into a $150 pot means a $200 final pot, so 50 ÷ 200 = 25%. Leaving your call out is the most common beginner error.
 
-**Q. What is a good pot odds ratio?**
+**Q. How do you calculate the pot size in poker?**
+
+A. The pot is every chip already in the middle plus any bets made on the current street. Before working out pot odds, add the starting pot and your opponent's bet — then include your own call in the *final* pot. Example: a $100 pot, a $50 bet, and your $50 call make a $200 final pot.
+
+**Q. What are good pot odds in poker?**
 
 A. The higher the better — you'd love to be "getting 5-to-1" (needing just 16.7%). But "good" is relative to your hand: getting 2-to-1 (needing 33%) is great with a flush draw and terrible with a gutshot. Always compare the price to your equity.
 
@@ -210,6 +214,10 @@ A. Pot odds only count the chips in the pot right now. Implied odds add the *ext
 
 A. A pot-sized bet lays you 2-to-1, so you need 33% equity to call. A half-pot bet lays 3-to-1 (25% needed); a 2×-pot overbet lays 1.5-to-1 (40% needed). Bigger bets demand more equity, but even a huge overbet only asks for 40%.
 
+**Q. How much of the pot should you bet?**
+
+A. Bet sizing is the flip side of pot odds — your bet sets the price your opponent gets. A half-pot bet lays them 3-to-1 (they need 25%), a pot-sized bet lays 2-to-1 (they need 33%), and an overbet demands even more. Bet bigger on draw-heavy boards to deny drawing hands a profitable call; size down when you want a weaker hand to call for value. Common sizings run from ⅓ pot up to a full pot depending on the board and your goal.
+
 **Q. What is the Rule of 4 and 2?**
 
 A. A shortcut to turn outs into equity: multiply outs by 4 on the flop (two cards to come) or by 2 on the turn (one card to come). Nine flush outs ≈ 36% on the flop, 18% on the turn. Use ×4 only when you'll see both cards without more betting.
@@ -217,6 +225,10 @@ A. A shortcut to turn outs into equity: multiply outs by 4 on the flop (two card
 **Q. How much equity do I need to call a bet?**
 
 A. Exactly your pot odds as a percentage: call ÷ final pot. Against a half-pot bet you need 25%; against a pot-sized bet, 33%. Count your outs, convert with the Rule of 4 and 2, and call when your equity clears the bar.
+
+**Q. Should your equity be higher or lower than your pot odds?**
+
+A. Higher. Your pot odds give the equity you *need* to call (call ÷ final pot); your equity is how often you'll actually win. You call when your equity is *higher* than that required number and fold when it's lower. If a half-pot bet needs 25% and your flush draw has 35%, then 35% > 25% → a profitable call.
 
 ---
 
