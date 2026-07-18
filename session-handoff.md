@@ -5,7 +5,7 @@
 
 ---
 
-## ▶▶▶ 새 세션 START HERE (2026-07-18 — ★★★EN 마스터 전수 경화 = 경험담 주입 + AI시대 GEO 재정비(H2 롱테일 질문화) / 포스팅 하나씩 정독·수정)
+## ▶▶▶ 새 세션 START HERE (2026-07-18 — ★★★EN 마스터 경화 = 경험담 + AI시대 GEO(H2 롱테일 질문화) / ✅rules·rankings·odds 3필라(18편) 완료 → 다음=strategy)
 
 > ★★★**다음 세션 주제 = EN 마스터 전수검사 후 경화**(사용자 확정, "포스팅 하나하나를 제대로"). **A안**: EN 6필라 전부 정비 → 그 다음에야 번역(JA부터). 번역 속도보다 **디테일 우선**("나 목숨걸었어"). 규칙은 오늘 갱신한 `.cursor/rules/posting.mdc` §E-E-A-T "★EN 마스터 경화 = 경험담 + AI시대 GEO 재정비" + §GEO "🆕 2026-07-18 최신 실증 데이터" 참조.
 
@@ -15,12 +15,21 @@
 - **불변(절대 안 건드림)**: §13 핸드예시·검증된 사실·**slug/URL**·이미지·핵심 구조. **바꾸는 건 H2 문구 + 그 섹션 본문 + 경험담**뿐(slug 불변이라 SEO 리스크 0).
 - **규칙**: seoTitle(EN ≤60자)·`updated` 갱신·편마다 빌드·커밋. 착수 전 각 글 1인칭 신호 grep(이미 강하면 경험담 스킵) + **키워드뱅크 먼저 읽기**.
 
-### ✅ 오늘 완료 = EN Rules 필라 클러스터 6편 (1/6 필라)
-- `texas-holdem-rules-for-beginners`(허브, 경험담 4곳+제목 68→61자) · `holdem-game-order`(3곳) · `holdem-all-in-rules`(2곳) · `holdem-showdown-rules`(2곳) · `holdem-blind-meaning`(2곳). ⭐`holdem-betting-actions`는 **이미 강한 경험담 보유**("weekly live game...every orbit")→무변경. 커밋 `9a9ff05` 등, 배포됨.
+### ✅ 완료 = EN 3필라 18편 경화 (rules 6 + rankings 6 + odds 6)
+- **rules 6**(07-17): texas-holdem-rules-for-beginners 허브 등 경험담 주입(`betting-actions`는 이미 강함→무변경).
+- **rankings 6**(07-18): hand-rankings·flush-vs-straight·kicker·reading-the-board·tiebreak·split-pot. H2 질문화 + winnable FAQ 대량 흡수.
+- **odds 6**(07-18): probability·pot-odds·outs·drawing-odds·implied-odds·equity. winnable FAQ 흡수(EV·gutshot·quad aces 등).
+- 전편 **§13 핸드예시·검수된 계산·slug·이미지·구조 불변**(사용자 "계산 건들지 마, 검수 여러 번 함"). 경험담 이미 강한 글은 스킵.
 
-### ▶▶ 남은 EN 5필라 (내일부터 하나씩)
-EN_CLUSTERS 순서: rules✅ → **rankings**(족보: holdem-hand-rankings + flush-vs-straight·kicker·tiebreak·split-pot·reading-the-board) → **odds**(holdem-probability + pot-odds·outs·drawing-odds·implied-odds·equity) → **strategy**(holdem-strategy + …) → **tournament** → **glossary**. 각 필라 = 허브 1 + 클러스터 5편. 필라별로 정독→경험담→빌드→커밋, 필라 끝날 때 보고.
-- 각 글 착수 = ①**해당 필라 키워드뱅크 파일 먼저 읽어 H2 롱테일 질문 후보·경쟁강도 확정**(족보=`en-what-beats.md` 등) ②mistakes/실전 섹션 유무 grep(경험담 자리) + 기존 1인칭 신호 확인(`betting-actions`처럼 이미 있으면 경험담 스킵) ③H2 질문화 + Q-A-E 재정비 + 경험담 주입 + 표/숫자.
+### ★★ 이번에 확립한 워크플로우 (다음 필라도 이대로 — 반드시 준수)
+1. **키워드 = lowfruits 협업**: 사용자가 시드별 export → 내가 PowerShell로 xlsx 파싱(Python無, 메모리 [[lowfruits-xlsx-parse-workflow]]) → winnable 추출(WS3≥1/LowDA≤30)+노이즈필터 → **내 WebSearch PAA와 교차(필수)** → 억지 없이 진짜 저경쟁 롱테일만 FAQ/H2. ★**PAA는 Questions 탭에 이미 "question"으로 포함**됨(All은 PAA 미포함, 별도 PAA탭 단독export는 미분석 노이즈).
+2. ★**시드는 poker 앵커 필수**(reading the board=체스·drawing odds=사냥·runner runner=영화·outs=야구·equity=금융·implied odds=스포츠베팅에 오염).
+3. **배포=자동**(단 글별 리서치 완료+사용자 "작성하자" 후. 리서치 중간 배포 금지 [[en-hardening-autodeploy-cadence]]). 편집→빌드→커밋→푸시→결과보고.
+4. **틈새 포착**(사용자 방침 "틈새시장 잘 봐라"): 저경쟁 오프토픽/도구 기회는 버리지 말고 `docs/keyword-bank/_niche-opportunities.md`·`_saved-sports-betting-odds.md`에 저장.
+
+### ▶▶ 다음 = strategy 필라 (4/6)
+`holdem-strategy`(허브) + 3bet·continuation-bet·when-to-fold·limping·position-play 등. 위 워크플로우대로. 사용자 lowfruits 시드(poker 앵커): `poker 3bet *`·`c-bet/continuation bet *`·`when to fold *`·`what is limping *`·`poker position *`. 그 다음 **tournament → glossary**. (rules 필라는 07-17에 경험담만 했으니, 원하면 나중에 H2질문화+winnable FAQ 재패스 여지 있음.)
+- ★★**미결 틈새(강력 추천)**: **포커 레인지 차트/빌더** `poker ranges chart` 1000vol·`poker range builder` **LDA3** = 발견된 최대 기회. 별도 기획 논의 대기(`_niche-opportunities.md` 1순위). ICM `what is icm` 320vol LDA6 → 기존 `holdem-icm` 강화 몫.
 
 ### ▶▶ EN 경화 완료 후 = 번역(JA부터), 단 현지 롱테일 실검색
 - **JA부터 하나씩** → 반응 오는 언어로 확장(gsc:lang). 신생이라 EN 외 로케일은 발행 며칠뿐 = **아직 데이터 없음**(EN만 구글이 노출 시도 중).
