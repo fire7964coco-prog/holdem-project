@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Equity is your share of the pot — the percentage of the time your hand wins if all the cards are dealt. You call when your equity beats the pot odds, but position and betting mean you rarely keep your full equity — and fold equity lets you win pots even when your hand is behind.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-07-08",
+  updated: "2026-07-18",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🥧",
@@ -197,6 +197,10 @@ A. Equity is your chance of winning (what you have); pot odds are the equity you
 
 A. It's neither good nor bad on its own — 50% is a coin flip. Whether it's a call depends on the price: against a half-pot bet you only need 25%, so 50% is a big call; but risking your whole stack as a 50/50 underdog to nothing is a gamble, not an edge. Equity is only meaningful next to the pot odds.
 
+**Q. What does 20% equity mean?**
+
+A. It means your hand wins about 20% of the time if the hand is played to showdown — so in a $100 pot your share is worth roughly $20 in the long run. Whether 20% is a call depends on the price: against a quarter-pot bet you need about 17%, so 20% is fine; against a half-pot bet (25% needed) it's a fold. Any equity figure only means something next to the pot odds.
+
 **Q. How much fold equity do I need to bluff profitably?**
 
 A. For a pure bluff, you need your opponent to fold at least bet ÷ (pot + bet) of the time. Betting $50 into $100 means 50 ÷ 150 = 33%. If you also have a draw (a semi-bluff), you need them to fold even less often, because you can still win when called. That's why semi-bluffing draws is so profitable.
@@ -212,6 +216,14 @@ A. All-in equity is simply your raw win-percentage when no more betting can happ
 **Q. Why does my equity drop in multiway pots?**
 
 A. Because the same 100% pot is now split among more hands — pocket aces at ~85% heads-up fall to ~64% against three players and ~56% against four. Multiway also cuts your fold equity (everyone has to fold, not just one player) and your realization (more players means more ways to get outdrawn), so both your raw share and what you keep of it shrink.
+
+**Q. What is EV (expected value) in poker?**
+
+A. Expected value is the average amount a decision wins or loses over the long run. A play that nets more than zero on average is +EV (profitable); less than zero is −EV (losing); zero is break-even. Winning poker is simply choosing +EV actions and folding −EV ones — every bet, call, and fold has an EV, even when you can't see the exact number.
+
+**Q. What's the difference between equity and EV?**
+
+A. Equity is your chance of winning the pot (a percentage); EV is whether *acting* on that equity actually makes money (an amount, in chips). You can hold high equity and still make a −EV call if the price is wrong, or low equity and a +EV bluff if your opponent folds often enough. Equity tells you where you stand; EV tells you whether the decision profits.
 
 ---
 

@@ -1,0 +1,28 @@
+# 🎯 틈새시장 기회 (EN 경화 리서치 중 발견 — 2026-07-18)
+
+> 사용자 방침: "틈새시장을 잘 봐야 함." lowfruits 리서치 중 발견한 **저경쟁 고기회** 콘텐츠·도구 아이디어. 지금 글에 억지로 안 넣고, 여기 모아 나중에 실행.
+> 지표: LDA=상위10 최저DA(낮을수록 승산), vol=월검색.
+
+## ★★★ 1순위 — 포커 레인지 차트 + 레인지 빌더 도구 (LDA 3~9, 최대 기회)
+발견: `what is equity`·`poker equity` 리서치(2026-07-18).
+- `poker ranges chart` **1000vol**(LDA8) · `poker chart preflop` 260(LDA8) · `poker hand range chart` 110(LDA8) · `poker equity chart` 90(LDA9) · **`poker range builder` 30(LDA3!)** · `what is range in poker` 70 · `poker ranges for beginners`
+- **아이디어**: ①"포커 레인지 완전 가이드" 허브글(range 정의·읽는법·포지션별) ②**인터랙티브 레인지 빌더/차트 도구**(13×13 그리드, LDA3 = 거의 무경쟁, AI 비대체 자산) ③기존 `holdem-starting-hands-chart`에 "poker range chart" 각도 흡수.
+- **포커 정중앙 주제 = 스포츠베팅과 달리 즉시 실행 가능.** 강력 추천.
+
+## ★★ 2순위 — 인터랙티브 트레이너/퀴즈 도구 (LDA 1~16)
+- `poker outs trainer/practice/quiz`(LDA1~15) · `poker equity quiz/training`(LDA16) · `poker trainer` 1000vol · `poker practice simulator` 110
+- **아이디어**: outs 카운팅·equity 추정 **인터랙티브 트레이너/퀴즈**. 사이트에 `:::quiz:::` 인프라 있음. AI가 못 가로채는 도구.
+
+## ★ 3순위 — EV(기댓값) 서브토픽 (LDA 24~30)
+- `what is +ev in poker` 140vol · `what does ev stand for` · `how to calculate ev`(WS3=3) · `poker equity vs ev`·`is ev the same as equity`(WS3=3, 혼동 클러스터)
+- **아이디어**: equity 글에 EV 섹션/FAQ 흡수 or 별도 "EV/기댓값" 글. equity와 얽힌 저경쟁.
+
+## ★ 4순위 — 포커 룰·숫자 규칙 모음 (LDA 8~34, 반복 등장)
+- `4-2 rule`·`7-2 rule`·`15-25-35 rule`·`80-20 rule`·`5-10 rule`·`72 rule`·`golden rule of poker` (여러 파일서 반복)
+- **아이디어**: "포커 숫자 규칙·단축법 총정리" 글(각 rule 정의). 개별 볼륨 작으나 클러스터로 묶으면.
+
+## ★ 별도 버티컬 — 스포츠베팅 배당/확률 (→ `_saved-sports-betting-odds.md`)
+- 배당 뜻(1600vol)·경마 배당·implied probability 변환기(LDA8~15). **포커와 다른 버티컬** = 전략 판단 후.
+
+## 📌 칩 분배(홈게임 셋업)
+- `how many poker chips do you start with` 880vol · `how to divide poker chips` — split-pot 리서치서 발견. 셋업 주제 별도 글 후보.

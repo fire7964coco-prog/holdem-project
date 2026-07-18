@@ -53,7 +53,12 @@ hand-rankings·flush-vs-straight·kicker·reading-the-board·tiebreak·split-pot
 ### ✅ odds `holdem-implied-odds` 재정비 (odds 5/6)
 - lowfruits 3시드(`implied odds`·`what are implied odds`·`reverse implied odds`) + WebSearch. ★이미 최상급(reverse implied odds가 이미 전용 H2+FAQ)이라 winnable FAQ **1개만**: "When should you use implied odds?"(긍정 프레이밍, 글엔 when NOT to rely만 있었음). 억지 중복 배제. 경험담(6♠5♠ 200bb)·§13 formula 불변.
 - 🎯 **틈새 저장**(사용자 "틈새시장 잘 봐라"): implied probability(배당→확률) 변환기 = LDA8~15 초저경쟁(`+200 implied probability`·`what is the implied probability of` 50·`what do odds of 200 mean` 320) → `_saved-sports-betting-odds.md §F`에 **도구 기회로 기록**(스포츠베팅 버티컬, 나중용). 기존 poker 계산기와 별개.
-- ⚠️ **남은 odds 1편**: equity (마지막!).
+### ✅ odds `holdem-equity` 재정비 (odds 6/6 = ★필라 완주)
+- lowfruits 4시드(`poker equity`·`what is equity`·`fold equity`·`ev in poker`) + WebSearch. 이미 최상급(fold equity·realization·all-in·multiway 완비)이라 진짜 gap = **EV**(글이 EV를 쓰나 정의 안 함). **winnable FAQ 3개**: What does 20% equity mean?(LDA6)·What is EV?(140vol)·Equity vs EV?(WS3=3). 경험담·§13·구조 불변.
+- 🎯🎯 **최대 틈새 발견**: **포커 레인지 차트/빌더**(`poker ranges chart` 1000vol·`poker range builder` LDA3!) — 지금까지 최대 기회. `docs/keyword-bank/_niche-opportunities.md` 신설(레인지1순위·트레이너·EV·룰모음·스포츠베팅·칩분배). ICM(`what is icm` 320vol LDA6)→기존 holdem-icm 강화 몫.
+
+### 🏁🏁 odds 필라 6/6 완주 = ★★ EN 2개 필라(rankings 6 + odds 6 = 12편) AI시대 경화 완료
+probability·pot-odds·outs·drawing-odds·implied-odds·equity 전부 winnable FAQ 흡수(H2질문화·경험담 유지·§13 불변). ★lowfruits 협업 워크플로우 완전 정착(다시드 export→PowerShell 파싱→WebSearch PAA 교차→억지배제 winnable만). ★틈새시장 포착 체계화(`_niche-opportunities.md`·`_saved-sports-betting-odds.md`). **다음 필라 = strategy**(holdem-strategy + 3bet·cbet·when-to-fold·limping·position 등).
 
 ## 2026-07-17 (★★★EN 마스터 경화 착수 — Rules 필라 클러스터 6편 경험담(E-E-A-T) 주입 + H2 착지 보정)
 
