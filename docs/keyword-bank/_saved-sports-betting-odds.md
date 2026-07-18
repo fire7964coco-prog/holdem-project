@@ -49,5 +49,10 @@
 ## E. 팔레이(parlay)
 - `what are the odds of a 20-leg parlay hitting` · `has anyone ever won a 20/25-leg parlay` · `what are the chances of hitting a 25-leg parlay` (LDA 33~89) — 재미/훅 각도.
 
+## F. 🔧 도구 기회 — "배당 → 확률 변환기" (implied probability, 2026-07-18 implied-odds 리서치서 발견)
+초저경쟁(LDA 8~15) + 볼륨: `what is the implied probability of` 50 · `+200 implied probability`·`what is +200 implied probability`·`implied probability of 110/120/4-1 odds`·`how to convert odds to implied probability` 11 · `what do odds of 200 mean in betting` 320.
+- **아이디어**: 유저가 배당(+200, -110, 4/1) 입력 → 확률(%)·페이아웃 출력하는 **인터랙티브 변환기** + 설명글. AI가 못 가로채는 비대체 도구. A(배당 뜻)와 시너지.
+- ⚠️ 스포츠베팅 버티컬 → 포커 사이트 주제 일관성 vs 신규 트래픽 전략 판단 후. **지금 만들지 말고 킵.**
+
 ---
-**요약**: A(배당 뜻, 1600vol×3)와 B(경마 배당)가 승산·볼륨 최상. 스포츠베팅 오즈 설명 허브 + "what does X to 1 odds mean" 개별/표 페이지가 미래 후보. 포커 사이트와 별개 버티컬로 판단 필요(도메인 주제 일관성 vs 신규 트래픽).
+**요약**: A(배당 뜻, 1600vol×3)와 B(경마 배당)가 승산·볼륨 최상. 스포츠베팅 오즈 설명 허브 + "what does X to 1 odds mean" 개별/표 페이지 + **F(배당→확률 변환기 도구)**가 미래 후보. 포커 사이트와 별개 버티컬로 판단 필요(도메인 주제 일관성 vs 신규 트래픽).

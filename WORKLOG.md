@@ -50,7 +50,10 @@ hand-rankings·flush-vs-straight·kicker·reading-the-board·tiebreak·split-pot
 ### ✅ odds `holdem-drawing-odds` 재정비 (odds 4/6)
 - lowfruits 4시드(`odds of hitting`·`flush draw odds`·`straight draw odds`·`runner runner`) + WebSearch. ★교훈: **`drawing odds`=사냥 태그추첨(utah/idaho 1300vol)**, `runner runner`=영화(팀버레이크) → poker 앵커 필수. 실검색어는 `odds of hitting a *`.
 - 이미 극도로 촘촘(flop lifecycle·set-mining 수학·조합론)이라 **winnable FAQ 3개만**: What is a flush draw?(110vol) · What is a straight draw + gutshot odds?(110vol, 본문엔 있으나 FAQ 없던 것) · flush 4 vs 3 on flop(50vol, 백도어). 도입 경험담·§13 조합론표 불변.
-- ⚠️ **남은 odds 2편**: implied-odds·equity.
+### ✅ odds `holdem-implied-odds` 재정비 (odds 5/6)
+- lowfruits 3시드(`implied odds`·`what are implied odds`·`reverse implied odds`) + WebSearch. ★이미 최상급(reverse implied odds가 이미 전용 H2+FAQ)이라 winnable FAQ **1개만**: "When should you use implied odds?"(긍정 프레이밍, 글엔 when NOT to rely만 있었음). 억지 중복 배제. 경험담(6♠5♠ 200bb)·§13 formula 불변.
+- 🎯 **틈새 저장**(사용자 "틈새시장 잘 봐라"): implied probability(배당→확률) 변환기 = LDA8~15 초저경쟁(`+200 implied probability`·`what is the implied probability of` 50·`what do odds of 200 mean` 320) → `_saved-sports-betting-odds.md §F`에 **도구 기회로 기록**(스포츠베팅 버티컬, 나중용). 기존 poker 계산기와 별개.
+- ⚠️ **남은 odds 1편**: equity (마지막!).
 
 ## 2026-07-17 (★★★EN 마스터 경화 착수 — Rules 필라 클러스터 6편 경험담(E-E-A-T) 주입 + H2 착지 보정)
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Implied odds are the extra chips you expect to win on later streets when your draw hits. They let you profitably call a draw that pot odds alone say to fold — but only if stacks are deep and your opponent will actually pay you off.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-07-08",
+  updated: "2026-07-18",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💰",
@@ -188,6 +188,10 @@ A. Use: extra needed = (your call ÷ your hit chance) − the current pot. Calli
 **Q. What is the difference between pot odds and implied odds?**
 
 A. Pot odds count only the money in the pot right now and can be calculated exactly. Implied odds add the money you expect to win on later streets, which is an estimate. Pot odds tell you if a call pays for itself today; implied odds tell you if it pays off across the whole hand.
+
+**Q. When should you use implied odds?**
+
+A. Start with pot odds. If your equity already beats the immediate price, just call — no implied odds needed. Reach for implied odds only when your draw *just misses* that price and the stacks behind are deep enough that hitting wins you a lot more — ideally a strong, disguised, or nut draw against an opponent who'll pay off. If the draw misses the price by a mile, or your opponent is all-in or short-stacked, implied odds can't rescue the call.
 
 **Q. What are reverse implied odds?**
 
