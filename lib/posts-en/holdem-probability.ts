@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "By the river you'll make one pair 43.8% of the time, two pair 23.5%, a flush 3.0%, and a full house 2.6% — while a royal flush shows up just once in about 31,000 hands.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-07-03",
+  updated: "2026-07-18",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🎲",
@@ -67,7 +67,7 @@ Notice how the order never changes — the rarer a hand is to make, the higher i
 
 ---
 
-## Odds of Being Dealt Each Starting Hand
+## What Are the Odds of Being Dealt Each Starting Hand?
 
 ![Pocket aces — the ace of spades and ace of hearts freshly dealt on green felt beside poker chips](/images/holdem-probability-starting-hands.webp "Pocket aces: the best starting hand, dealt just once in 221 hands")
 
@@ -85,7 +85,7 @@ So the next time someone says "I never get aces," they're roughly right — you'
 
 ---
 
-## Odds of Flopping Each Hand
+## What Are the Odds of Flopping Each Hand?
 
 This is the table most odds pages bury or split across a dozen articles. These are the odds of the flop *making* your hand, given the hole cards in the left column.
 
@@ -169,7 +169,7 @@ That's the moment all the numbers pay off: your **drawing odds (35%)** beat your
 
 ---
 
-## Royal Flush & Straight Flush Odds (and Why They're So Rare)
+## How Rare Is a Royal Flush? (And a Straight Flush)
 
 ![Infographic of a royal flush in hearts — A♥ K♥ in hand completing A-K-Q-J-10 of hearts on a 10♥ J♥ Q♥ board](/images/holdem-probability-royal-flush.webp "A royal flush in hearts: the rarest hand in poker, about 1 in 30,940 by the river")
 
@@ -216,6 +216,14 @@ A. About 1 in 30,940 by the river when you play out a Hold'em hand (using your b
 
 A. Roughly 1 in 72,193 as a five-card hand, or about 1 in 3,590 by the river in Hold'em. It's the second-rarest hand, beaten only by the royal flush.
 
+**Q. What are the odds of four of a kind (or quad aces)?**
+
+A. Four of a kind comes together about 1 in 595 times by the river in Hold'em (0.168%), or 1 in 4,165 as a dealt five-card hand. Any *specific* quads such as quad aces are much longer odds — you need to either hold that pocket pair and catch both remaining cards or have all four land on the board.
+
+**Q. How rare is a flush, a straight, or a full house?**
+
+A. By the river in Hold'em you'll make a flush about 3.0% of the time (1 in 33), a straight 4.6% (1 in 22), and a full house 2.6% (1 in 39). So a full house is actually rarer than a flush, which is rarer than a straight — exactly the order the hand rankings put them in.
+
 **Q. What are the odds of hitting a flush by the river?**
 
 A. If you flop a flush draw (nine outs), you'll complete it about 35% of the time by the river — better than one in three. On a single card (turn to river), it drops to roughly 19.6%.
@@ -224,13 +232,17 @@ A. If you flop a flush draw (nine outs), you'll complete it about 35% of the tim
 
 A. About 11.8%, or roughly 1 in 8.5, when you hold a pocket pair. That "7.5 to 1 against" figure is the basis for deciding whether set-mining a small pair is profitable.
 
+**Q. What are the odds of flopping a royal flush?**
+
+A. Vanishingly small. Even when you already hold two of its five cards suited — say A♥ K♥ — the flop brings the exact Q♥ J♥ 10♥ only about once in 19,600 flops. From a random starting hand it's far rarer still, which is why almost every royal flush that gets made is completed on the turn or river, not the flop.
+
 **Q. What are the odds of being dealt pocket aces?**
 
 A. 1 in 221 (0.45%) for aces specifically. Any pocket pair, though, comes around far more often — about 1 in 17 hands (5.9%).
 
 **Q. What is the Rule of 2 and 4 in poker?**
 
-A. A shortcut for draw odds: multiply your outs by 4 on the flop (two cards to come) or by 2 on the turn (one card to come) to estimate your percentage chance of hitting. It's accurate to within a point or two up to about nine outs.
+A. A shortcut for draw odds — also called the "4-2 rule": multiply your outs by 4 on the flop (two cards to come) or by 2 on the turn (one card to come) to estimate your percentage chance of hitting. It's accurate to within a point or two up to about nine outs.
 
 **Q. How do you calculate pot odds?**
 
@@ -239,6 +251,22 @@ A. Divide the amount you must call by the total pot after your call. Calling $50
 **Q. What are the odds of set over set?**
 
 A. There's no single fixed number — it depends on how many opponents hold pocket pairs — but it's rare. You flop a set only 11.8% of the time to begin with, so two players both flopping sets on the same board is the classic "cooler" that costs stacks.
+
+**Q. What's the most common winning hand in poker?**
+
+A. One pair, followed by two pair. Because every player shares the five community cards, most Texas Hold'em pots are decided by a single pair and its kicker — flushes, straights, and full houses win far less often than beginners expect. The full frequency of each result is in the chart above.
+
+**Q. How often does the best hand win in poker?**
+
+A. Less often than you'd think before the river. Even pocket aces — the best starting hand — win only about 85% of the time heads-up, and much less against a full table. By the river the best five cards win by definition; the upsets happen earlier, when a made hand gets outdrawn by a live draw.
+
+**Q. How often do you hit the flop in poker?**
+
+A. With two unpaired hole cards you'll pair at least one of them on the flop about 32% of the time — so you completely miss roughly two flops out of three. That's why position and aggression matter so much: most flops miss everyone, and the player willing to bet often takes the pot down.
+
+**Q. What are the odds of having the nuts?**
+
+A. There's no single number — the nuts (the best possible hand on a given board) changes with every board. On a dry, unpaired board the nuts might be top set; on a coordinated board it could be a straight or flush. The skill isn't memorizing an odds figure, it's reading which hand *is* the nuts and judging how likely an opponent holds it.
 
 ---
 

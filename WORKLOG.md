@@ -34,7 +34,12 @@
 - ⛔ 억지 배제: 칩분배 `how many poker chips do you start with`(880vol)는 셋업 주제라 미포함 → **별도 미래 포스트 후보**(홈게임 셋업/칩 분배). `odd chip` 시드는 간식칩 노이즈였음.
 
 ### 🏁 족보(rankings) 필라 6/6 완주 요약
-hand-rankings·flush-vs-straight·kicker·reading-the-board·tiebreak·split-pot 전부 AI시대 GEO 재정비(H2 질문화·Q-A-E·경험담·winnable FAQ 흡수). ★워크플로우 정립: 사용자 lowfruits 다시드 export → 내 PowerShell 파싱(winnable 추출·노이즈필터) + WebSearch PAA 교차 → 억지삽입 배제하고 진짜 저경쟁 롱테일만 FAQ/H2로. 배포 자동(단 글별 리서치 완료 후). **다음 필라 = odds**(holdem-probability + pot-odds·outs·drawing-odds·implied-odds·equity).
+hand-rankings·flush-vs-straight·kicker·reading-the-board·tiebreak·split-pot 전부 AI시대 GEO 재정비(H2 질문화·Q-A-E·경험담·winnable FAQ 흡수). ★워크플로우 정립: 사용자 lowfruits 다시드 export → 내 PowerShell 파싱(winnable 추출·노이즈필터) + WebSearch PAA 교차 → 억지삽입 배제하고 진짜 저경쟁 롱테일만 FAQ/H2로. 배포 자동(단 글별 리서치 완료 후).
+
+### ✅ odds 필라 착수 — 허브 `holdem-probability` (odds 1/6)
+- lowfruits 3시드(`what are the odds of *`·`how often *`·`odds of flopping *`, 각 1900/1350/315행) + WebSearch PAA 조합. 허브는 이미 마스터 확률표·강한 도입 경험담 완비라 §13 수치·표·경험담 불변.
+- **winnable FAQ 7개 신설**: most common winning hand · odds of four of a kind/quad aces · how rare is flush/straight/full house · odds of having the nuts(LowDA11) · how often does best hand win(LowDA23) · how often do you hit the flop · odds of flopping a royal flush(90vol, 1 in 19,600). H2 질문화 3개(being dealt/flopping each hand/how rare is royal). Rule of 2&4에 "4-2 rule" 별칭.
+- ⚠️ **남은 odds 5편**(각각 리서치→작성): pot-odds·outs·drawing-odds·implied-odds·equity. 각 전용 시드(`pot odds *`·`poker outs *`·`drawing odds *`·`implied odds *`·`poker equity *`).
 
 ## 2026-07-17 (★★★EN 마스터 경화 착수 — Rules 필라 클러스터 6편 경험담(E-E-A-T) 주입 + H2 착지 보정)
 
