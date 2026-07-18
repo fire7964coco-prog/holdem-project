@@ -43,7 +43,11 @@ hand-rankings·flush-vs-straight·kicker·reading-the-board·tiebreak·split-pot
 - lowfruits `pot odds`(2888행)·`how to calculate pot odds` + WebSearch PAA. ★"odds"가 스포츠베팅/경마에 오염 심함 → 노이즈 중 **고볼륨 스포츠베팅 배당 키워드는 버리지 않고 `docs/keyword-bank/_saved-sports-betting-odds.md`로 별도 저장**(사용자 지시, `what do the odds mean in betting` 1600vol 등, 미래 버티컬용).
 - 이미 강한 경험담(hope 세금·실전핸드)·§13·표 불변. **winnable FAQ 3개 신설 + 1개 문구정확화**: How much of the pot should you bet?(벳사이징) · Should your equity be higher or lower than pot odds? · How do you calculate the pot size? / "good pot odds ratio"→"What are good pot odds in poker?".
 - 🎁 equity글용(`how to calculate equity`·`fold equity` 140)·outs글용(`what are outs` 140) 킵.
-- ⚠️ **남은 odds 4편**: outs·drawing-odds·implied-odds·equity. 각 전용 시드.
+### ✅ odds `holdem-outs` 재정비 (odds 3/6)
+- lowfruits `poker outs`·`how to count outs` + WebSearch. ★"outs"는 야구(inning/pitching)·DFS(프리즈픽스 pitching outs) 오염 심함 → poker 앵커 필수. 이미 매우 촘촘(아웃츠차트·outs-to-odds표·콤보·dirty outs·FAQ8)이라 **winnable FAQ 1개만 신설**: "What does 9 outs mean in poker?"(숫자→% 프레이밍). 억지 중복 배제. 도입 경험담·§13표·구조 불변.
+- ★★**PAA 탭 진상규명**(사용자 지적으로): lowfruits "All"은 PAA 미포함(=Suggestions+Questions+Related)이나, **PAA-출처 질문은 이미 "question"으로 분류돼 Questions/All에 포함**됨(UI 태그만 PAA 표시). PAA 탭 단독export는 미분석 노이즈 위주라 실익 적음. → **Questions(분석본)만 확실히 받으면 PAA 질문 대부분 커버**. 워크플로우 메모리 갱신.
+- 🔧 **outs 트레이너 도구 기회**(별도 기획): `poker outs trainer/practice/quiz` LowDA1~15 + `poker trainer`(1000vol)·`poker practice simulator`(110) = AI 비대체 인터랙티브 자산. `:::quiz:::` 인프라 있음.
+- ⚠️ **남은 odds 3편**: drawing-odds·implied-odds·equity.
 
 ## 2026-07-17 (★★★EN 마스터 경화 착수 — Rules 필라 클러스터 6편 경험담(E-E-A-T) 주입 + H2 착지 보정)
 
