@@ -3,7 +3,7 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
-## 2026-07-18 (★★★EN 경화 스코프 확장 = AI시대 GEO 재정비 규칙화 + 족보 필라 착수(허브 hand-rankings))
+## 2026-07-18 (★★★EN 경화 스코프 확장 = AI시대 GEO 재정비 규칙화 + 족보 필라 2/6: hand-rankings·flush-vs-straight)
 
 > 사용자: "EN 구조는 잘 짜였고, AI시대에 맞춰 전략 수정. 이왕 전수조사하는 김에 경험담뿐 아니라 롱테일 질문형 H2로 재정비." → ①AI시대 상위노출(GEO) 리서치 → ②경화 규칙을 "경험담+GEO 4종"으로 확장·문서화 → ③족보 허브 실제 적용. 배포됨.
 
@@ -14,7 +14,9 @@
 ### ✅ 족보 허브 `holdem-hand-rankings` 재정비 (rankings 필라 1/6)
 - 키워드뱅크(`en-what-beats`·`en-glossary-what-is-a`·`en-odds-of`) 매핑 = 허브 ~17,000 볼륨 커버. **H2 7개 질문형 전환**(What Are the Poker Hand Rankings… / What Beats What in Poker? / Why Does a Flush Beat a Straight? / How Do Kickers and Ties Work? / How Do You Memorize Poker Hands Fast? 등) + 각 40~75단어 직답 리드.
 - **경험담 4스푼**(도입 권위·쿨러 12년 관찰·Puzzle1 초보 오독 실장면·보드리딩 루틴, 1인칭 추출가능형). 확률표 출처 한 줄 + "3.03% vs 4.62%" 인라인 수치. `updated` 갱신. 구조·§13·FAQ 20문항·이미지 불변. 빌드 552p 정상.
-- ⚠️ **남은 족보 4편 키워드뱅크 얇음**: kicker·reading-the-board(뱅크 無), tiebreak·split-pot(얇음) → 착수 시 `lowfruits.io` 시드검색 필요(사용자 몫).
+### ✅ 족보 `holdem-flush-vs-straight` 재정비 (rankings 2/6)
+- 이미 90% 최적화 상태(강한 도입 경험담·질문형 H2 5개·검수된 확률표)라 최소 수정: H2 "The One Real Exception: Short Deck" → **"Are Poker Hands Ranked Differently in Short Deck?"** + 직답 리드 / flush-vs-full-house 쿨러에 경험담 1스푼 / `updated` 갱신. **확률표(5,108/10,200/0.197%/0.392%)·핸드예시·§13 불변**(사용자 "계산 건들지 마, 검수 여러 번 함").
+- ⚠️ **남은 족보 4편 키워드뱅크 얇음**: kicker·reading-the-board(뱅크 無), tiebreak·split-pot(얇음) → 착수 시 `lowfruits.io` 시드검색 or 라이브 PAA 보완 필요.
 
 ## 2026-07-17 (★★★EN 마스터 경화 착수 — Rules 필라 클러스터 6편 경험담(E-E-A-T) 주입 + H2 착지 보정)
 

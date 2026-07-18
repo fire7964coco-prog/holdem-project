@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A flush (five cards of one suit — ~0.197% of five-card deals) always beats a straight (five in sequence, ~0.392%) in Texas Hold'em — because a flush is about twice as hard to make.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-07-11",
+  updated: "2026-07-18",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "⚡",
@@ -114,7 +114,7 @@ Royal flush (#1) | One pair & high card (#9–#10)
 A higher flush | Any lower flush
 :::
 
-The matchup people argue about most after flush vs straight is **flush vs full house** — and the boat wins. The danger sign is a **paired board**. Watch this one:
+The matchup people argue about most after flush vs straight is **flush vs full house** — and the boat wins. I've paid off more paired-board boats holding a pretty nut flush than I'd like to admit, so the danger sign I watch for now is simple: a **paired board**. Watch this one:
 
 :::hand[K♠,9♠,9♥,4♠,2♦] Board (5 cards):::
 
@@ -164,9 +164,9 @@ If your straight uses some cards and your flush uses others, you don't add them 
 
 ---
 
-## The One Real Exception: Short Deck
+## Are Poker Hands Ranked Differently in Short Deck?
 
-In **Short Deck (6+) Hold'em**, the 2s through 5s are removed from the deck. With fewer cards, a flush becomes *harder* to make than a full house — so in that format the ranking shifts and a ==r:**flush beats a full house**==. The principle never changes: ==the rarer hand wins==. Only the deck changed. In standard Texas Hold'em with a full 52-card deck, ==g:a flush beats a straight and loses to a full house, every time==.
+Yes — Short Deck (6+) Hold'em is the one common format that reorders these hands. In **Short Deck (6+) Hold'em**, the 2s through 5s are removed from the deck. With fewer cards, a flush becomes *harder* to make than a full house — so in that format the ranking shifts and a ==r:**flush beats a full house**==. The principle never changes: ==the rarer hand wins==. Only the deck changed. In standard Texas Hold'em with a full 52-card deck, ==g:a flush beats a straight and loses to a full house, every time==.
 
 ---
 
