@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "You flop a set with a pocket pair 11.8% of the time (7.5-to-1 against), flop a flush with two suited cards just 0.84%, and complete a flopped flush draw by the river 35% of the time. Every number below is derived from the deck, not guessed.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-07-04",
+  updated: "2026-07-18",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🎲",
@@ -189,6 +189,10 @@ A. They're the same odds stated two ways. "7.5-to-1 against" counts misses versu
 
 A. A set is a pocket pair plus one matching card on the board — you flop it 11.8% of the time and it's well hidden. Trips is one unpaired hole card that the board pairs (two matching board cards) — only 1.35% on the flop, and far more obvious to opponents. Same three-of-a-kind rank, very different odds and value.
 
+**Q. What is a flush draw?**
+
+A. A flush draw is when you hold four cards toward a flush and need one more of that suit — for example A♥ K♥ on a 9♥ 5♥ 2♠ flop, where any of the nine remaining hearts completes it. A flopped flush draw has nine outs and gets there about 35% of the time by the river, or roughly 19% on a single card.
+
 **Q. What are the odds of flopping a flush?**
 
 A. Just 0.84% (about 118-to-1) with two suited cards — that's C(11,3)/C(50,3). Don't confuse it with flopping a flush *draw*, which is 10.9%, or *completing* that draw by the river, which is 35%. Two suited cards flop a draw thirteen times more often than a made flush.
@@ -196,6 +200,14 @@ A. Just 0.84% (about 118-to-1) with two suited cards — that's C(11,3)/C(50,3).
 **Q. If I flop a flush draw, what are the odds I complete it?**
 
 A. About 35% by the river with nine outs (1 − C(38,2)/C(47,2)) — a little better than one in three. On a single card it's roughly 19%: 9/47 flop-to-turn, 9/46 turn-to-river. Use the one-card number whenever there's still betting to come.
+
+**Q. What are the odds of hitting a flush with four cards to it versus three?**
+
+A. With four to a flush after the flop — a real flush draw with nine outs — you'll complete it about 35% of the time by the river. With only three to a flush you need *both* the turn and river to be your suit (a backdoor, or runner-runner, flush), which comes in just ~4.2%. That's why four-to-a-flush is a draw worth playing and three is barely a tiebreaker.
+
+**Q. What is a straight draw, and what are the odds of hitting it?**
+
+A. A straight draw is four cards toward a straight. An open-ended straight draw (like 8-7 on a 9-6-2 board, needing a 5 or a 10) has eight outs and completes about 31.5% of the time by the river. A gutshot (inside) draw has only four outs — one rank fills the gap — so it hits about 16.5%, roughly half as often.
 
 **Q. What are the odds of flopping quads?**
 

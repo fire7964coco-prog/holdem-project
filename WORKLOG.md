@@ -47,7 +47,10 @@ hand-rankings·flush-vs-straight·kicker·reading-the-board·tiebreak·split-pot
 - lowfruits `poker outs`·`how to count outs` + WebSearch. ★"outs"는 야구(inning/pitching)·DFS(프리즈픽스 pitching outs) 오염 심함 → poker 앵커 필수. 이미 매우 촘촘(아웃츠차트·outs-to-odds표·콤보·dirty outs·FAQ8)이라 **winnable FAQ 1개만 신설**: "What does 9 outs mean in poker?"(숫자→% 프레이밍). 억지 중복 배제. 도입 경험담·§13표·구조 불변.
 - ★★**PAA 탭 진상규명**(사용자 지적으로): lowfruits "All"은 PAA 미포함(=Suggestions+Questions+Related)이나, **PAA-출처 질문은 이미 "question"으로 분류돼 Questions/All에 포함**됨(UI 태그만 PAA 표시). PAA 탭 단독export는 미분석 노이즈 위주라 실익 적음. → **Questions(분석본)만 확실히 받으면 PAA 질문 대부분 커버**. 워크플로우 메모리 갱신.
 - 🔧 **outs 트레이너 도구 기회**(별도 기획): `poker outs trainer/practice/quiz` LowDA1~15 + `poker trainer`(1000vol)·`poker practice simulator`(110) = AI 비대체 인터랙티브 자산. `:::quiz:::` 인프라 있음.
-- ⚠️ **남은 odds 3편**: drawing-odds·implied-odds·equity.
+### ✅ odds `holdem-drawing-odds` 재정비 (odds 4/6)
+- lowfruits 4시드(`odds of hitting`·`flush draw odds`·`straight draw odds`·`runner runner`) + WebSearch. ★교훈: **`drawing odds`=사냥 태그추첨(utah/idaho 1300vol)**, `runner runner`=영화(팀버레이크) → poker 앵커 필수. 실검색어는 `odds of hitting a *`.
+- 이미 극도로 촘촘(flop lifecycle·set-mining 수학·조합론)이라 **winnable FAQ 3개만**: What is a flush draw?(110vol) · What is a straight draw + gutshot odds?(110vol, 본문엔 있으나 FAQ 없던 것) · flush 4 vs 3 on flop(50vol, 백도어). 도입 경험담·§13 조합론표 불변.
+- ⚠️ **남은 odds 2편**: implied-odds·equity.
 
 ## 2026-07-17 (★★★EN 마스터 경화 착수 — Rules 필라 클러스터 6편 경험담(E-E-A-T) 주입 + H2 착지 보정)
 
