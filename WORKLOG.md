@@ -3,7 +3,7 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
-## 2026-07-18 (★★★EN 경화 스코프 확장 = AI시대 GEO 재정비 규칙화 + 족보 필라 4/6: hand-rankings·flush-vs-straight·kicker·reading-the-board)
+## 2026-07-18 (★★★EN 경화 스코프 확장 = AI시대 GEO 재정비 규칙화 + 족보 필라 5/6: hand-rankings·flush-vs-straight·kicker·reading-the-board·tiebreak)
 
 > 사용자: "EN 구조는 잘 짜였고, AI시대에 맞춰 전략 수정. 이왕 전수조사하는 김에 경험담뿐 아니라 롱테일 질문형 H2로 재정비." → ①AI시대 상위노출(GEO) 리서치 → ②경화 규칙을 "경험담+GEO 4종"으로 확장·문서화 → ③족보 허브 실제 적용. 배포됨.
 
@@ -24,7 +24,11 @@
 ### ✅ 족보 `holdem-reading-the-board` 재정비 (rankings 4/6)
 - ★교훈: "reading the board" 시드는 **체스에 점령됨**(553행 중 포커 10개) → **poker 앵커 필수**. `* the board in poker`(609행/winnable 65) + `playing the board *`로 재수확. 주제가 "reading the board"→**"playing the board" + "who wins when X is on the board" + board texture**로 피벗(실검색어).
 - lowfruits + WebSearch(PAA) 조합. **winnable FAQ 3개 신설**: "Do you have to use both of your hole cards?"(20vol,WS3=3)·"If there is a flush on the board, who wins?"(30vol,LowDA12)·"If there is a straight on the board, who wins?"(40vol,WS3=3). H2 1개 질문화("What Happens When the Board Pairs?"). 강한 도입 경험담·§13·구조 불변.
-- ⚠️ **남은 족보 2편**: tiebreak-rules·split-pot-rules → kicker/board 리서치에서 나온 cross-pillar 금맥(`what happens if two people have one pair`·`who wins if two flushes`·`can you tie` 등) 상당수 이미 확보, 보완 시드만.
+### ✅ 족보 `holdem-tiebreak-rules` 재정비 (rankings 5/6)
+- ★사용자 방침 "목숨걸었다, 조금이라도 이득이면 무조건"([[max-detail-never-skip]]) → 포화 판단 없이 풀 리서치. lowfruits `who wins if * in poker`(1,674행/463분석/winnable 306) + WebSearch PAA 조합.
+- ★사용자 꼼꼼 리서치 8시드 협업(who-wins-if 1674 + tie-breaker 60 + tie-in-poker 2636 + what-happens-two-players 1536 + do-you-split 2094 + how-to-break-tie 4229 등) + 매 파일 내 WebSearch PAA 교차. **winnable FAQ 7개 신설**: same three-of-a-kind·straight(최대클러스터 50/30/20vol)·flush(70vol)·full house·straight flush + "Do suits matter in poker?"(170vol) + "Is a tie possible in poker?". 전부 §13 규칙 정확(K-K-K-2-2>Q-Q-Q-A-A, 9-9-9-A-K>9-9-9-A-Q 등). 억지삽입 배제(중복은 안 넣음). 강한 도입 경험담·핸드예시·구조 불변.
+- 🎁 **split-pot-rules(다음 글) 금맥 대량 확보**: `who gets the extra chip in a split pot`(odd chip) · 칩 분배 클러스터 `how many poker chips do you start with`(880vol)·`how to divide poker chips`(70)·`how many poker chips for 4 players`(320) · `do two straights split the pot`·`do you split if you both have a flush`.
+- ⚠️ **남은 족보 1편**: split-pot-rules(위 금맥으로 착수 가능).
 
 ## 2026-07-17 (★★★EN 마스터 경화 착수 — Rules 필라 클러스터 6편 경험담(E-E-A-T) 주입 + H2 착지 보정)
 

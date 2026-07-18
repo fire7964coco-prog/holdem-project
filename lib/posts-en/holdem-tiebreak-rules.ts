@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ties are broken in a fixed order: hand rank first, then the cards that make the hand, then kickers from highest to lowest. Same pair → higher first kicker wins; identical five cards → split pot. Suits never decide a tie.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-07-11",
+  updated: "2026-07-18",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "⚖️",
@@ -181,6 +181,10 @@ A. The player whose best five has the higher kicker. One pair carries three kick
 
 A. Compare the higher pair first, then the lower pair, then the single kicker. Aces-and-threes beats kings-and-queens, because the top pair is checked before anything else.
 
+**Q. Who wins if two players have the same three of a kind?**
+
+A. Three of a kind carries two kickers, compared highest first — so if both players make the same trips, the higher side card wins. With trip nines, 9-9-9-A-K beats 9-9-9-A-Q because the second kicker (king) tops the queen. Matching trips and both kickers means a split. (A set from a pocket pair almost never ties, since only one player can hold that exact pair.)
+
 **Q. Does the 5th card matter in poker?**
 
 A. Yes. When the first four cards of both hands are identical, the fifth card decides the whole pot — a pair's third kicker, a flush's lowest card, the side card to quads on the board. It only stops mattering when the board's cards outrank your hole card.
@@ -193,6 +197,26 @@ A. Yes, but only in the A-2-3-4-5 straight (the "wheel"), where it plays as the 
 
 A. Yes — straights are ranked purely by their top card, so 6-5-4-3-2 beats the A-5 wheel, and Broadway (A-K-Q-J-10) beats them all. Equal top cards mean identical straights and a split pot.
 
+**Q. Who wins if two players have the same straight?**
+
+A. The straight with the higher top card wins — Q-J-10-9-8 beats J-10-9-8-7, because a straight is ranked only by its highest card and has no kicker. If both straights have the same top card they are identical, so the pot is split. This happens most often when the straight sits mostly on the board and both players fill the same end.
+
+**Q. Who wins if two players both have a flush?**
+
+A. Compare the flushes card by card from the top down: an ace-high flush beats a king-high flush, and if the top cards match you move to the next card, and so on through all five. Suits never break the tie, so if all five ranks are identical the pot is split. (In Hold'em two flushes are always the same suit, since players share the board.)
+
+**Q. Who wins if two players have the same full house?**
+
+A. Compare the three-of-a-kind first — the higher trips win, so K-K-K-2-2 beats Q-Q-Q-A-A even though the aces look bigger. Only if the trips are identical do you compare the pair. A full house has no kicker, so matching trips and pair means a split pot.
+
+**Q. What happens if two players both have a straight flush?**
+
+A. The higher straight flush wins, decided by its top card — a queen-high straight flush beats a nine-high one. A royal flush is simply the ace-high straight flush, so it beats every other straight flush. Identical top cards mean an identical hand and a split pot.
+
+**Q. Do suits matter in poker?**
+
+A. Only for making a flush — never for ranking hands or breaking ties. Suits let you build a flush (five cards of one suit), but no suit outranks another, so a spade flush doesn't beat a heart flush, and two otherwise-identical hands always split. Winners are decided by rank and kicker alone.
+
 **Q. Do suits ever break a tie in Texas Hold'em?**
 
 A. No. There is no suit ranking in Hold'em — if two best five-card hands match rank for rank, the pot is split regardless of suits.
@@ -200,6 +224,10 @@ A. No. There is no suit ranking in Hold'em — if two best five-card hands match
 **Q. What happens if both players have the exact same hand?**
 
 A. The pot is split equally — a "chop." How the chips are physically divided, who gets the odd chip, and how side pots are settled is covered in the [split pot rules](/en/blog/holdem-split-pot-rules).
+
+**Q. Is a tie (split pot) possible in poker?**
+
+A. Yes, but it's uncommon. A true tie happens only when two or more players' best five cards match in rank exactly — most often when the board itself is the best hand ("playing the board"), or a shared straight or flush that no one's hole cards can improve. Then the pot is split equally. Kickers exist precisely to break most would-be ties before they ever become a split.
 
 ---
 
