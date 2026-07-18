@@ -3,7 +3,7 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
-## 2026-07-18 (★★★EN 경화 스코프 확장 = AI시대 GEO 재정비 규칙화 + 족보 필라 3/6: hand-rankings·flush-vs-straight·kicker)
+## 2026-07-18 (★★★EN 경화 스코프 확장 = AI시대 GEO 재정비 규칙화 + 족보 필라 4/6: hand-rankings·flush-vs-straight·kicker·reading-the-board)
 
 > 사용자: "EN 구조는 잘 짜였고, AI시대에 맞춰 전략 수정. 이왕 전수조사하는 김에 경험담뿐 아니라 롱테일 질문형 H2로 재정비." → ①AI시대 상위노출(GEO) 리서치 → ②경화 규칙을 "경험담+GEO 4종"으로 확장·문서화 → ③족보 허브 실제 적용. 배포됨.
 
@@ -21,7 +21,10 @@
 - 이미 강한 경험담(버바인 A9 vs AK)·§13 불변. **weak-spot FAQ 4개 신설**: "Does the kicker matter with three of a kind?"(WS3=3)·"Do two pairs have a kicker?"(LowDA12)·"Does the kicker have to be in your hand?"(board-as-kicker)·"What is an ace kicker (or king kicker)?"(ace/king kicker). H2 1개 질문화(Dominated Ace→"Why Does A9 Lose to AK?"). updated 갱신.
 - ★lowfruits 워크플로우 정립: **Questions 탭 → SERP Extr.(분석) → Top3/#Weak → Export(Analysed only)**. 파싱 스크립트 재사용 가능(PowerShell). 
 - 🎁 **cross-pillar 금맥 킵**(다음 글용): tiebreak-rules=`what happens if two people have one pair`·`how do two pairs work`·`who wins if two flushes`(전부 LowDA12·WS3=3) / 허브=`does 4 of a kind beat full house`·`is 2 pairs better than 3 of a kind`·`why is 2 7 worst hand`(30vol)·`how rare are four aces`.
-- ⚠️ **남은 족보 3편**: reading-the-board(뱅크·리서치 全無 → 새 시드 필수) · tiebreak·split-pot(위 cross-pillar 금맥 상당수 커버, 보완만).
+### ✅ 족보 `holdem-reading-the-board` 재정비 (rankings 4/6)
+- ★교훈: "reading the board" 시드는 **체스에 점령됨**(553행 중 포커 10개) → **poker 앵커 필수**. `* the board in poker`(609행/winnable 65) + `playing the board *`로 재수확. 주제가 "reading the board"→**"playing the board" + "who wins when X is on the board" + board texture**로 피벗(실검색어).
+- lowfruits + WebSearch(PAA) 조합. **winnable FAQ 3개 신설**: "Do you have to use both of your hole cards?"(20vol,WS3=3)·"If there is a flush on the board, who wins?"(30vol,LowDA12)·"If there is a straight on the board, who wins?"(40vol,WS3=3). H2 1개 질문화("What Happens When the Board Pairs?"). 강한 도입 경험담·§13·구조 불변.
+- ⚠️ **남은 족보 2편**: tiebreak-rules·split-pot-rules → kicker/board 리서치에서 나온 cross-pillar 금맥(`what happens if two people have one pair`·`who wins if two flushes`·`can you tie` 등) 상당수 이미 확보, 보완 시드만.
 
 ## 2026-07-17 (★★★EN 마스터 경화 착수 — Rules 필라 클러스터 6편 경험담(E-E-A-T) 주입 + H2 착지 보정)
 

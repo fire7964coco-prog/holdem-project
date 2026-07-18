@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In Texas Hold'em you always play the best 5-card hand from 7 (2 hole cards + 5 community cards) — using both hole cards, one, or none at all (playing the board). Scan all 7 cards in a fixed order: flush → straight → paired ranks → high card.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-07-11",
+  updated: "2026-07-18",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🃏",
@@ -146,7 +146,7 @@ The reverse trap matters just as much: on a 4-flush board you hold ZERO of that 
 
 ---
 
-## What a Paired Board Changes — Trips, Boats, and Quads
+## What Happens When the Board Pairs? Trips, Boats, and Quads
 
 The moment two community cards share a rank, ==the ceiling of the hand jumps: trips, full houses, and quads are all live==.
 
@@ -237,6 +237,10 @@ You river a flush, the board shows two queens, and you never ask the question. A
 
 A. Scan all 7 cards (2 hole + 5 board) in a fixed order: flush first (any suit 5+ times), then straight (5 ranks in a row), then paired ranks (pairs, trips, full houses, quads). Take the strongest thing you find and fill up to exactly 5 cards with your highest remaining cards. You may use both hole cards, one, or none.
 
+**Q. Do you have to use both of your hole cards in Texas Hold'em?**
+
+A. No. You make the best five-card hand from any combination of your two hole cards and the five community cards — both, just one, or none at all. Using none is called "playing the board." (Omaha is the opposite: there you must use exactly two of your four hole cards.)
+
 **Q. What does "playing the board" mean in Texas Hold'em?**
 
 A. It means the 5 community cards are already your best possible 5-card hand — neither hole card improves on them. Since the board is shared, every player can claim that same hand, so playing the board usually leads to a split pot unless an opponent's hole cards improve on the board.
@@ -260,6 +264,14 @@ A. No. Sequences like K-A-2-3-4 or Q-K-A-2-3 are not straights in Texas Hold'em 
 **Q. How do you know if a flush is possible on the board?**
 
 A. Count suits on the board. With 0–2 of one suit, no flush exists for anyone. With 3, a player needs two of that suit in hand; with 4, just one; with all 5, the board itself is a flush and only a higher card of that suit improves it.
+
+**Q. If there is a flush on the board, who wins?**
+
+A. When the five community cards make a flush, every remaining player shares it, so the winner is whoever holds the highest card of that suit in their hand. If no one holds a higher card of that suit, the pot is split. (With only three or four suited cards on the board, only players holding the missing suited cards actually have a flush.)
+
+**Q. If there is a straight on the board, who wins?**
+
+A. When the five community cards already form a straight, everyone has at least that straight — so whoever extends it to a higher straight with a hole card wins. On a 5-6-7-8-9 board, a player holding a 10 makes 6-7-8-9-10 and beats the board. If no one can go higher, the pot is split.
 
 **Q. Does a pair on the board count as part of your hand?**
 
