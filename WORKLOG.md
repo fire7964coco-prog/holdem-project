@@ -3,7 +3,7 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
-## 2026-07-18 (★★★EN 경화 스코프 확장 = AI시대 GEO 재정비 규칙화 + 족보 필라 5/6: hand-rankings·flush-vs-straight·kicker·reading-the-board·tiebreak)
+## 2026-07-18 (★★★EN 경화 스코프 확장 = AI시대 GEO 재정비 규칙화 + ★족보(rankings) 필라 6/6 완주★)
 
 > 사용자: "EN 구조는 잘 짜였고, AI시대에 맞춰 전략 수정. 이왕 전수조사하는 김에 경험담뿐 아니라 롱테일 질문형 H2로 재정비." → ①AI시대 상위노출(GEO) 리서치 → ②경화 규칙을 "경험담+GEO 4종"으로 확장·문서화 → ③족보 허브 실제 적용. 배포됨.
 
@@ -28,7 +28,13 @@
 - ★사용자 방침 "목숨걸었다, 조금이라도 이득이면 무조건"([[max-detail-never-skip]]) → 포화 판단 없이 풀 리서치. lowfruits `who wins if * in poker`(1,674행/463분석/winnable 306) + WebSearch PAA 조합.
 - ★사용자 꼼꼼 리서치 8시드 협업(who-wins-if 1674 + tie-breaker 60 + tie-in-poker 2636 + what-happens-two-players 1536 + do-you-split 2094 + how-to-break-tie 4229 등) + 매 파일 내 WebSearch PAA 교차. **winnable FAQ 7개 신설**: same three-of-a-kind·straight(최대클러스터 50/30/20vol)·flush(70vol)·full house·straight flush + "Do suits matter in poker?"(170vol) + "Is a tie possible in poker?". 전부 §13 규칙 정확(K-K-K-2-2>Q-Q-Q-A-A, 9-9-9-A-K>9-9-9-A-Q 등). 억지삽입 배제(중복은 안 넣음). 강한 도입 경험담·핸드예시·구조 불변.
 - 🎁 **split-pot-rules(다음 글) 금맥 대량 확보**: `who gets the extra chip in a split pot`(odd chip) · 칩 분배 클러스터 `how many poker chips do you start with`(880vol)·`how to divide poker chips`(70)·`how many poker chips for 4 players`(320) · `do two straights split the pot`·`do you split if you both have a flush`.
-- ⚠️ **남은 족보 1편**: split-pot-rules(위 금맥으로 착수 가능).
+### ✅ 족보 `holdem-split-pot-rules` 재정비 (rankings 6/6 = ★필라 완주)
+- 사용자 초집중 리서치(split the pot·how is the pot split·odd chip·* split pot·side pot 등 5시드+, "리서치 다 끝나고 한 번에 작성" 방침) + WebSearch PAA 조합. 여러 파일이 3클러스터로 수렴 확인.
+- **winnable FAQ 5개 신설**: How is the pot split? · Do you split on a full house/straight/two pair?(핸드별) · How do you calculate a side pot?(LowDA5) · Who is eligible for a side pot?(LowDA19) · Can you win both main & side pot? 강한 도입 경험담(8-8-8-A-K chop)·§13·구조 불변.
+- ⛔ 억지 배제: 칩분배 `how many poker chips do you start with`(880vol)는 셋업 주제라 미포함 → **별도 미래 포스트 후보**(홈게임 셋업/칩 분배). `odd chip` 시드는 간식칩 노이즈였음.
+
+### 🏁 족보(rankings) 필라 6/6 완주 요약
+hand-rankings·flush-vs-straight·kicker·reading-the-board·tiebreak·split-pot 전부 AI시대 GEO 재정비(H2 질문화·Q-A-E·경험담·winnable FAQ 흡수). ★워크플로우 정립: 사용자 lowfruits 다시드 export → 내 PowerShell 파싱(winnable 추출·노이즈필터) + WebSearch PAA 교차 → 억지삽입 배제하고 진짜 저경쟁 롱테일만 FAQ/H2로. 배포 자동(단 글별 리서치 완료 후). **다음 필라 = odds**(holdem-probability + pot-odds·outs·drawing-odds·implied-odds·equity).
 
 ## 2026-07-17 (★★★EN 마스터 경화 착수 — Rules 필라 클러스터 6편 경험담(E-E-A-T) 주입 + H2 착지 보정)
 

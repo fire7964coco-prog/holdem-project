@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Yes — poker hands can tie. A pot is split (a chop) when two or more players show down the identical best five-card hand. Suits never break the tie, and any leftover odd chip goes to the first tied player left of the dealer button.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-07-11",
+  updated: "2026-07-18",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🃏",
@@ -156,9 +156,17 @@ Not in Texas Hold'em. You may have heard of "split-pot games" like Omaha Hi-Lo o
 
 A. A pot is split when two or more players have the identical best five-card hand at showdown; the chips are divided equally among them.
 
+**Q. How is the pot split in poker?**
+
+A. The dealer divides the chips equally among the tied players. If the pot can't divide evenly, the leftover odd chip goes to the first tied player left of the dealer button. Suits never affect the split, and when a player is all-in each main and side pot is divided separately.
+
 **Q. Do you split the pot if both players have the same hand?**
 
 A. Only if the full best five ties — same pair with the same kickers, or the same straight, flush, or full house. If any kicker differs, the higher kicker wins the whole pot instead of splitting.
+
+**Q. Do you split the pot on a full house, a straight, or two pair?**
+
+A. Only when both hands are completely identical. Two full houses split just when the three-of-a-kind *and* the pair match — usually when the full house sits on the board. Two straights split only with the same top card, and two two-pair hands split only when both pairs and the kicker match. In every other case the higher hand wins the whole pot.
 
 **Q. What does "chopped pot" mean in poker?**
 
@@ -179,6 +187,18 @@ A. Yes. If three or more players all hold the identical best five-card hand, the
 **Q. How are split pots handled when someone is all-in?**
 
 A. The pot breaks into a main pot and side pots; each is awarded or chopped separately based on the best hand among the players eligible for that specific pot.
+
+**Q. How do you calculate a side pot?**
+
+A. Each player can only win from an opponent as much as they themselves put in. If A is all-in for 100 and B and C each bet 300, the main pot is 100 × 3 = 300 (all three eligible) and the side pot is 200 × 2 = 400 (B and C only). Each pot then goes to the best hand among the players eligible for it.
+
+**Q. Who is eligible for a side pot?**
+
+A. Only the players who put chips into that specific side pot — the ones who kept betting after another player was all-in. An all-in player is eligible only for the main pot (plus any earlier side pots they contributed to), never for a side pot built with chips they couldn't match. Each pot is awarded to the best hand among its own eligible players.
+
+**Q. Can you win both the main pot and a side pot?**
+
+A. Yes. A deeper-stacked player with the best hand can win the main pot and every side pot they are eligible for — scooping the whole thing. An all-in short stack, by contrast, can only win the main pot (and any earlier side pot they contributed to); they can never collect chips they didn't match, no matter how strong their hand.
 
 **Q. Is a tournament chop the same as a split pot?**
 
