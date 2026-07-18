@@ -3,7 +3,7 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
-## 2026-07-18 (★★★EN 경화 스코프 확장 = AI시대 GEO 재정비 규칙화 + 족보 필라 2/6: hand-rankings·flush-vs-straight)
+## 2026-07-18 (★★★EN 경화 스코프 확장 = AI시대 GEO 재정비 규칙화 + 족보 필라 3/6: hand-rankings·flush-vs-straight·kicker)
 
 > 사용자: "EN 구조는 잘 짜였고, AI시대에 맞춰 전략 수정. 이왕 전수조사하는 김에 경험담뿐 아니라 롱테일 질문형 H2로 재정비." → ①AI시대 상위노출(GEO) 리서치 → ②경화 규칙을 "경험담+GEO 4종"으로 확장·문서화 → ③족보 허브 실제 적용. 배포됨.
 
@@ -16,7 +16,12 @@
 - **경험담 4스푼**(도입 권위·쿨러 12년 관찰·Puzzle1 초보 오독 실장면·보드리딩 루틴, 1인칭 추출가능형). 확률표 출처 한 줄 + "3.03% vs 4.62%" 인라인 수치. `updated` 갱신. 구조·§13·FAQ 20문항·이미지 불변. 빌드 552p 정상.
 ### ✅ 족보 `holdem-flush-vs-straight` 재정비 (rankings 2/6)
 - 이미 90% 최적화 상태(강한 도입 경험담·질문형 H2 5개·검수된 확률표)라 최소 수정: H2 "The One Real Exception: Short Deck" → **"Are Poker Hands Ranked Differently in Short Deck?"** + 직답 리드 / flush-vs-full-house 쿨러에 경험담 1스푼 / `updated` 갱신. **확률표(5,108/10,200/0.197%/0.392%)·핸드예시·§13 불변**(사용자 "계산 건들지 마, 검수 여러 번 함").
-- ⚠️ **남은 족보 4편 키워드뱅크 얇음**: kicker·reading-the-board(뱅크 無), tiebreak·split-pot(얇음) → 착수 시 `lowfruits.io` 시드검색 or 라이브 PAA 보완 필요.
+### ✅ 족보 `holdem-kicker` 재정비 (rankings 3/6) — ★키워드 리서치 협업 첫 사례
+- 사용자가 lowfruits에서 kicker 시드 4파일(트레일링·리딩 와일드카드) 직접 뽑아줌 → 제가 xlsx 파싱(Python無→PowerShell Expand-Archive+정규식)해서 노이즈(mtg·football·journalism·외국어) 필터 + 저경쟁(WS3≥1/LowDA≤30) winnable 추출 + WebSearch PAA 조합. **kicker 키워드 포화 확인**(신규는 대부분 cross-pillar).
+- 이미 강한 경험담(버바인 A9 vs AK)·§13 불변. **weak-spot FAQ 4개 신설**: "Does the kicker matter with three of a kind?"(WS3=3)·"Do two pairs have a kicker?"(LowDA12)·"Does the kicker have to be in your hand?"(board-as-kicker)·"What is an ace kicker (or king kicker)?"(ace/king kicker). H2 1개 질문화(Dominated Ace→"Why Does A9 Lose to AK?"). updated 갱신.
+- ★lowfruits 워크플로우 정립: **Questions 탭 → SERP Extr.(분석) → Top3/#Weak → Export(Analysed only)**. 파싱 스크립트 재사용 가능(PowerShell). 
+- 🎁 **cross-pillar 금맥 킵**(다음 글용): tiebreak-rules=`what happens if two people have one pair`·`how do two pairs work`·`who wins if two flushes`(전부 LowDA12·WS3=3) / 허브=`does 4 of a kind beat full house`·`is 2 pairs better than 3 of a kind`·`why is 2 7 worst hand`(30vol)·`how rare are four aces`.
+- ⚠️ **남은 족보 3편**: reading-the-board(뱅크·리서치 全無 → 새 시드 필수) · tiebreak·split-pot(위 cross-pillar 금맥 상당수 커버, 보완만).
 
 ## 2026-07-17 (★★★EN 마스터 경화 착수 — Rules 필라 클러스터 6편 경험담(E-E-A-T) 주입 + H2 착지 보정)
 

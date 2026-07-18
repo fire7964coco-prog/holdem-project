@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A kicker is the highest side card that isn't part of your main hand — it breaks ties when two players share the same rank. One pair uses 3 kickers, two pair 1, trips 2; straights, flushes, and full houses have none. It's why AK beats AQ when the board pairs an ace.",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-07-08",
+  updated: "2026-07-18",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -117,7 +117,7 @@ Neither of you can go higher than an ace, so you both "play the board" and ==g:c
 
 ---
 
-## The Dominated Ace: Why A9 Loses to AK
+## Why Does A9 Lose to AK? (The Dominated Ace)
 
 **A hand is "dominated" when it shares a card with a stronger hand and will lose the kicker battle nearly every time it connects — the classic trap is a weak ace like A9 against AK.** This is where kickers stop being trivia and start costing money.
 
@@ -167,6 +167,18 @@ A. No. A full house is three of a kind plus a pair — all five cards. Ties are 
 
 A. Yes, four of a kind has a one-card kicker, but it rarely matters in Hold'em. It only decides a hand when two players tie on the exact same quads — which requires all four cards to be on the board — and then the highest fifth card wins.
 
+**Q. Does the kicker matter with three of a kind?**
+
+A. Yes. Three of a kind uses two kickers, so when two players make the same trips the next two highest cards break the tie — K-K-K-A-2 beats K-K-K-Q-J because the ace outkicks the queen. (A true *set* made from a pocket pair rarely ties, since only one player can hold that exact pair.)
+
+**Q. Do two pairs have a kicker?**
+
+A. Yes — two pair uses one kicker. If you hold K-Q and your opponent holds J-Q on a Q-7-7 board, you both have queens and sevens, but your king kicker beats their jack. The kicker only comes into play when both players hold the identical two pair.
+
+**Q. Does the kicker have to be in your hand?**
+
+A. No. A kicker can be a community card. Poker always makes the best five cards out of seven, so if a board card outranks your hole card, that board card becomes the shared kicker and the next card decides. Your hole card only plays as a kicker when it's higher than the board cards it would replace.
+
 **Q. How many kickers are in a poker hand?**
 
 A. It depends on the hand: one pair uses three kickers, three of a kind uses two, and two pair and four of a kind each use one. Straights, flushes, full houses, and straight flushes have no kickers because they already fill all five cards.
@@ -174,6 +186,10 @@ A. It depends on the hand: one pair uses three kickers, three of a kind uses two
 **Q. What is a good kicker in poker?**
 
 A. A high one — an ace or king kicker is strong, while a low kicker like a nine leaves you "dominated." This is why AK and AQ are far better than A9 or A5: when everyone pairs their ace, the biggest kicker wins the pot.
+
+**Q. What is an ace kicker (or a king kicker)?**
+
+A. An ace kicker means your highest side card is an ace — the strongest kicker there is, so "top pair, ace kicker" wins almost every same-pair showdown. A king kicker is the next best. It's exactly why A-K and A-Q beat a weak ace like A-9: when the board pairs everyone's ace, the biggest kicker takes the pot.
 
 **Q. What does "playing the board" mean?**
 
