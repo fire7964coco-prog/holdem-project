@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A hand of Texas Hold'em runs: post blinds → deal two hole cards → preflop → flop (3 cards) → turn (1 card) → river (1 card) → showdown, with four betting rounds in total.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-07-17",
+  updated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎬",
@@ -99,7 +99,7 @@ The flop also unlocks a new option: the **check**. If no one has bet yet, you ca
 
 ## Stage 3 — The Turn: The Picture Sharpens
 
-After the flop betting round, one more community card is dealt — the **turn**. There are now four cards on the board.
+After the flop betting round, one more community card is dealt — the **turn** (also called *fourth street*). There are now four cards on the board.
 
 The turn is a strategically heavy street:
 
@@ -113,7 +113,7 @@ The turn is a strategically heavy street:
 
 ## Stage 4 — The River: The Last Card, the Last Decision
 
-After the turn betting round, the fifth and final community card is revealed — the **river**. All five community cards are now out, and there is no new information left to come.
+After the turn betting round, the fifth and final community card is revealed — the **river** (also called *fifth street*). All five community cards are now out, and there is no new information left to come.
 
 Classic river mistakes:
 
@@ -365,6 +365,10 @@ All-in means betting every chip you have. Use it with a very strong hand (the nu
 **Q. How many betting rounds are there in a hand?**
 
 Four: preflop, flop, turn, and river. The blinds are forced bets, and the showdown has no betting.
+
+**Q. Why does the dealer burn a card, and how many are burned?**
+
+Before dealing the flop, the turn, and the river, the dealer discards the top card of the deck face-down — the "burn card." That's three burn cards in a hand, one before each community-card street. Burning protects the game: if the top card were marked or accidentally exposed, a player could gain information about what's coming, so it's removed from play first.
 
 ---
 
