@@ -18,7 +18,14 @@
 - lowfruits 3시드(`when to fold`·`should you fold`·`when to fold in poker`) + WebSearch. ★교훈: **"fold" 시드=세탁·종이접기·텐트·출생증명서 접기 노이즈 90%+** → poker 앵커 필수(엄격 필터로 340 살림). 이미 극도로 촘촘(FAQ11·심리·pot-odds표)이라 gap = **"폴드하면 돈 잃나" 기본질문**. **winnable FAQ 1개**: Do you lose money when you fold?(50vol+ 클러스터). 경험담·§13·구조 불변.
 ### ✅ strategy `holdem-limping` 재정비 (strategy 5/6)
 - lowfruits 2시드(`what is limping`·`limp poker`, limp=의료·밴드 오염 → poker 앵커) + WebSearch. 이미 촘촘(FAQ8)이라 winnable FAQ 1개: What is a player who limps a lot called?(fish/donk 슬랭, 글이 fish-tell 다루니 on-topic). 경험담·구조 불변.
-- ⚠️ **남은 strategy 1편**: position-play(마지막! 리서치 완료 대기 — 액션순서·BTN/SB약어·why position matters·홈게임 인원 니치).
+### ✅ strategy `holdem-position-play` 재정비 (strategy 6/6 = ★필라 완주)
+- lowfruits 2시드(`poker position`·`* position poker`) + WebSearch. 이미 극도 촘촘(FAQ8·방대)이라 gap = **액션 순서**(90vol 클러스터, 지나가듯만). **winnable FAQ 2개**: Who acts first — SB or BB?(preflop vs postflop)·Is the small blind an early position? 경험담·§13·구조 불변. BTN/SB 약어는 링크된 holdem-positions 담당→중복 배제.
+
+### 🏁🏁🏁 strategy 필라 6/6 완주 = ★★★ EN 4개 필라(rules·rankings·odds·strategy = 24편) AI시대 경화 완료
+- strategy 6편: holdem-strategy·3bet·continuation-bet·when-to-fold·limping·position-play. cluster 5편은 각 1~2시드 딥서치(좁은주제 원칙대로). 대부분 이미 최상급이라 진짜 gap만 흡수(4bet·value bet·fold기본·약체슬랭·액션순서), 억지 배제.
+- ★교훈: 전략 seed 오염 심함 — fold=세탁/종이접기, limp=의료/밴드, position=직업/요가 → **poker 앵커 필수**.
+- 🎯 틈새 추가 적립: **홈게임/포커나이트**(인원수·칩세트·친구·온라인, 여러 필라서 반복 = 확정적 최우선급)·skill vs luck·GTO·에티켓·레인지차트/빌더(LDA3). `_niche-opportunities.md`.
+- ⚠️ **남은 EN 2필라**: tournament(holdem-tournament + bubble·icm·short-stack·bad-beat·cooler·fish·rake·straddle 등)·glossary(holdem-glossary + 개별 용어). ICM(320vol LDA6)·straddle(2900)·rake(1300) 등 tournament/glossary 리서치서 큰 볼륨 대기.
 
 ## 2026-07-18 (★★★EN 경화 스코프 확장 = AI시대 GEO 재정비 규칙화 + ★족보(rankings) 필라 6/6 완주★)
 

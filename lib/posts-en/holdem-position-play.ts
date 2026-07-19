@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Being in position means you act last — you see every opponent's decision before spending a chip. Solver and database studies suggest in-position players realize roughly 85–100% of their equity, while out-of-position players capture only about 60–85%. That's why UTG opens ~13% of hands and the button ~43% — and why position rewrites every c-bet, bluff, and pot-control decision postflop.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-07-11",
+  updated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎯",
@@ -252,6 +252,10 @@ For the mechanics of the blinds themselves — why they exist and how the forced
 
 A. Out of position (OOP) means you must act before your opponent on the postflop streets — flop, turn, and river. You commit chips without knowing what they'll do, can't take free cards, and struggle to control the pot size. The blinds are OOP against every other seat (between the two, the small blind acts first — so the big blind actually has position on the small blind); the button is never OOP against anyone.
 
+**Q. Who acts first — the small blind or the big blind?**
+
+A. It depends on the street. *Preflop*, the small blind acts before the big blind, and the big blind acts last — they "close" the action. *Postflop* (flop, turn, and river), the small blind is first to act and the big blind acts right after, so once the cards are out the small blind always acts before the big blind. The button always acts last postflop, which is exactly why it's the most profitable seat.
+
 **Q. Why does position matter so much in poker?**
 
 A. Because acting last converts the same cards into more money. Solver and database studies suggest in-position players realize roughly 85–100% of their theoretical equity while out-of-position players capture only about 60–85% — the in-position player sees every opponent decision before making their own, so they value-bet, bluff, and fold at better moments with identical holdings.
@@ -263,6 +267,10 @@ A. The button. It's the only seat guaranteed to act last on every postflop stree
 **Q. What is the weakest position in poker?**
 
 A. Two answers, depending on the question. The small blind is the structurally worst seat to play a hand from — first to act on every postflop street. The big blind loses the most raw chips per 100 hands, simply because it posts a full forced blind every orbit; even perfect play only reduces that loss. Among non-blind seats, UTG is weakest: first preflop, tightest range, usually OOP after the flop.
+
+**Q. Is the small blind an early position?**
+
+A. No — the small blind is a blind, not an "early position" seat. Early-position players (UTG and the seats beside it) open tight because the whole table acts behind them, but they still act *after* the blinds preflop. The small blind is actually the worst seat to play from: it posts half a blind and then acts first on every postflop street. Don't treat it like early position — the modern default from the small blind is to 3-bet or fold.
 
 **Q. Is it better to limp or raise from UTG?**
 
