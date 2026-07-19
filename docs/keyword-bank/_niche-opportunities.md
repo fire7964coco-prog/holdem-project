@@ -47,6 +47,10 @@
 - `what is the most legit/trustworthy/honest online poker site`·`is free online poker actually free`·`which online poker site is best 2026`·`is there online poker for real money`
 - **아이디어**: "믿을만한 온라인 포커사이트" 리뷰/비교글. ⚠️ 어필리에이트/리뷰 모델 + 규제·신뢰 민감 → 사이트 방향(커뮤니티 vs 어필리에이트) 판단 후.
 
+## ★★ "7-2가 왜 최악의 핸드" + 7-2 게임 (2026-07-19 bad-beat 리서치, LDA8~40)
+- `why is 7-2 the worst hand in poker` **140vol**(LDA40) · `why is 2 7 the worst`(30) · `why is 72 the worst`(20) · `seven deuce worst hand`(10) · ★`what is the 7-2 rule in poker`(**LDA8!**) · `is a 2 and 7 bad in poker`
+- **아이디어**: "왜 7-2오프수트가 최악의 스타팅핸드인가 + 7-2 게임(프롭벳)" 각도. bad-beat 아님 → **starting-hands-chart에 흡수** or 신규 짧은 글. 7-2 게임(7-2로 이기면 보너스 받는 홈게임 룰)은 LDA8 = 거의 무경쟁. 200 agg 볼륨.
+
 ## ★ 포커 에티켓 / 암묵의 룰 (LDA 9~25)
 - `is it rude to leave a poker table after winning`(LDA9)·`unwritten rules of poker`·`what not to do in poker`·`what is frowned upon in poker`
 - `unwritten rules of poker` · `what not to do in poker`(+vegas/beginners) · `what is frowned upon in poker` · `poker etiquette`
