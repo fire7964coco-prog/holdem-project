@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A short stack (roughly under 15–20 big blinds) can't play normal postflop poker, so it switches to push/fold: move all-in first-in to keep your fold equity, and never open-limp or min-raise-then-fold. Shove wider from late position, keep your calling range tighter than your shoving range, and don't blind down to nothing 'waiting for a hand' — your fold equity is the weapon, and it disappears below about 8 big blinds.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-07-09",
+  updated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "📉",
@@ -166,6 +166,14 @@ A. Broadly, under about 20–25 big blinds is "short," and push/fold play takes 
 **Q. What is push/fold strategy?**
 
 A. Push/fold is short-stack strategy where, when you're first into the pot, your only options are to move all-in or fold — no limping, no small raises. Shoving keeps your fold equity (opponents fold and you win the blinds) and avoids getting outplayed after the flop with a stack too small to maneuver.
+
+**Q. What does "all-in or fold" mean in poker?**
+
+A. "All-in or fold" is the same idea as push/fold: when you're short-stacked and first into the pot, your only two options are to move all-in or fold — no limping or small raises. It's also the name of a fast online format (GGPoker's All-in or Fold) where every preflop decision is literally shove or fold. Either way the short-stack logic holds: keep your fold equity by shoving, and never bleed chips on a raise you can't defend.
+
+**Q. How do you respond to an all-in shove?**
+
+A. Fold far more than you'd shove — your calling range is much tighter than your shoving range. Once you call an all-in your fold equity is gone, so your hand has to genuinely beat the shover's range, not just look playable. Calling off with a weak ace or a small pair "because it's probably a coin flip" is a classic leak, since a flip to bust is a losing deal in a tournament. Call only when your hand clearly beats what they're jamming.
 
 **Q. Should you ever limp with a short stack?**
 

@@ -17,7 +17,14 @@
 ### ✅ tournament `holdem-icm` 재정비 (tournament 4/6)
 - lowfruits 2시드(icm poker·what is icm) + WebSearch. 이미 완벽(FAQ7·Malmuth-Harville검산·chip ev/chip chop/accuracy 2025 study)이라 winnable FAQ 1개: What are the most common ICM mistakes?(LDA6, 내용 흩어져 있으나 FAQ 無). 경험담·§13·구조 불변.
 - 🎯 니치 추가: **포커 트레이닝/코스/책 추천**(best poker training sites 140vol LDA16)·트레이너 도구(quiz/solver) → `_niche-opportunities.md`.
-- ⚠️ **남은 tournament 클러스터 1편**: short-stack(마지막).
+### ✅ tournament `holdem-short-stack` 재정비 (tournament 6/6 = ★필라 완주)
+- lowfruits 4시드(short stack poker·push fold·push or fold·short stack strategy, ★push=운동·short stack=팬케이크 노이즈→poker 엄격) + WebSearch. 이미 완벽(FAQ7·M-ratio·push/fold chart)이라 winnable FAQ 2개: What does "all-in or fold" mean?(LDA3, GGPoker AoF)·How do you respond to an all-in shove?(LDA33). fold-general 대량은 when-to-fold가 이미 커버(cross-pillar). 경험담·§13·구조 불변.
+
+### 🏁🏁🏁 tournament 필라 6/6 완주 = ★★★ EN 5개 필라(rules·rankings·odds·strategy·tournament = 30편) AI시대 경화 완료
+- tournament 6편: holdem-tournament·tvc·bubble·icm·short-stack + (hub). 이미 방대·완벽한 글들이라 진짜 gap만 흡수(경제구조·세금·bubble factor·icm mistakes·all-in or fold 등), 억지 배제.
+- 🎁🎁 **대회 일정/지역 의도 대발견**(KO GSC 1등=홀덤대회일정 → EN vegas 9900·asia LDA6) → 별도 "이벤트/일정 필라" 결정(고아 3편 wpt/ept/korea-marathon 입양 + 일정허브), EN 경화 후 별도세션. [[tournament-schedule-local-intent-keep]].
+- 🎯 니치 축적: 홈게임(최우선 확정)·온라인사이트리뷰·포커트레이닝코스·실력vs운·GTO·레인지차트/빌더(LDA3). `_niche-opportunities.md`.
+- ⚠️ **남은 EN 1필라**: glossary(holdem-glossary + 개별 용어 bad-beat·cooler·fish·rake·straddle·nuts 등). straddle 2900·rake 1300 등 대볼륨 대기.
 
 ## 2026-07-19 (strategy 필라 착수 — 허브 holdem-strategy 경화 + 저볼륨 롱테일 전략 확립)
 
