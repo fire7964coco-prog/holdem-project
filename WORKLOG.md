@@ -3,6 +3,15 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-19 (tournament 필라 착수 — 허브 holdem-tournament 경화 + ★대회 일정/지역 의도 발견)
+
+> ★★사용자 인사이트: **KO GSC 1등 = 홀덤대회·홀덤대회일정.** tournament 지역/일정 키워드 버리지 말 것 → `poker tournament las vegas` **9900vol LDA6**·`schedule` 480 LDA3·**아시아**(korea/asia 2026 LDA6, 사이트 직결) 발견·저장(`_saved-tournament-schedule-events.md` + 메모리 [[tournament-schedule-local-intent-keep]]). 라이브이벤트 가이드 확장 대상.
+
+### ✅ tournament 허브 `holdem-tournament` 재정비 (tournament 1/6)
+- lowfruits 6시드(poker tournament·how do/does work·rules·strategy·beginners·texas holdem tournament) + WebSearch. 이미 방대·완벽(FAQ7·Day1타임라인·payout표·glossary)이라 winnable FAQ 2개: **How do poker tournaments make money?**(경제구조 LDA1~22)·**Are tournaments more luck or skill?**(LDA26). 경험담·§13·구조 불변.
+- 🎯 **홈게임 = 압도적 1위 니치 재확인**(칩세트 300/500 LDA1·880vol 반복)·온라인사이트 리뷰(신규)·일정/지역(위). `_niche-opportunities.md` 갱신.
+- ⚠️ **남은 tournament 클러스터**: tournament-vs-cash-game·bubble·icm·short-stack (각 1~2시드 딥). ICM 320vol LDA6 대기.
+
 ## 2026-07-19 (strategy 필라 착수 — 허브 holdem-strategy 경화 + 저볼륨 롱테일 전략 확립)
 
 > 사용자 논의 확립: **저볼륨(10/월) 롱테일도 winnable이면 버리지 말 것**(집합가치·승산>볼륨), 단 얇은 글 100개가 아니라 **리치글에 FAQ/H2로 흡수**(thin-content 회피). 메모리 [[low-volume-longtail-aggregation]]. + 시드 전략: **허브=넓게(포화까지)·cluster=1~2시드 깊이**(문구가 다르면 딥서치로 커버 안 됨).

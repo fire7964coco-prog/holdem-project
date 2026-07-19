@@ -32,8 +32,16 @@
 - `is poker gambling` **1300vol**(LDA23) · `is poker a skill or luck`·`is poker mostly luck or skill`·`is poker an iq game`·`do poker players have high iq`(LDA21)
 - **아이디어**: "Is poker skill or luck?" 완결글(실력요소·변수·장기 우위·연구). 고볼륨 저경쟁. strategy 허브 FAQ로도 흡수 가능(양쪽).
 
-## ★★ 홈게임 / 포커나이트 (2026-07-19 대폭 확장)
-- `how to win at poker night with friends`·`how to make poker night better at home`·`ideal number of people for a poker night`·`how to win home poker games`·`play poker with friends online`(LDA9~24) — "poker night" 서브테마. 위 홈게임 세팅과 합쳐 **홈게임/포커나이트 허브** 후보(칩·셋업·친구·온라인·인원수).
+## ★★★ 홈게임 / 포커나이트 = 확정적 최우선 니치 (2026-07-19, 전 필라서 반복·볼륨폭발)
+- 세팅: `how many poker chips do you start with` **880vol** · `for 2/4/5 players`(70/320/40) · `are 300 chips enough`
+- ★칩세트 구매: `should i get a 300 or 500 piece poker set`(**LDA1!**)·`how many people is a 300 piece set good for`·`what size poker set for 8 players` — 제품/구매 가이드 각도
+- 포커나이트/친구: `how to win at poker night with friends`·`make poker night better at home`·`ideal number of people for a poker night`·`play poker with friends (online/free)`(110vol)·`host online poker with friends`
+- 구조/시간: `best structure for a home poker game`·`how long does poker last at home`·`how to run a poker tournament fundraiser`
+- → **"홈 포커 게임/나이트 완전 가이드"**(칩 수·세트 크기·구조·타이머·인원·친구·자선). rules·odds·strategy·tournament **모든 필라서 반복** = 사실상 별도 글 1순위 확정.
+
+## ★ 온라인 포커 사이트 리뷰/추천 (2026-07-19 tournament 리서치, LDA31~37)
+- `what is the most legit/trustworthy/honest online poker site`·`is free online poker actually free`·`which online poker site is best 2026`·`is there online poker for real money`
+- **아이디어**: "믿을만한 온라인 포커사이트" 리뷰/비교글. ⚠️ 어필리에이트/리뷰 모델 + 규제·신뢰 민감 → 사이트 방향(커뮤니티 vs 어필리에이트) 판단 후.
 
 ## ★ 포커 에티켓 / 암묵의 룰 (LDA 9~25)
 - `is it rude to leave a poker table after winning`(LDA9)·`unwritten rules of poker`·`what not to do in poker`·`what is frowned upon in poker`

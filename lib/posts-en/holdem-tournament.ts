@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In a poker tournament you pay a fixed buy-in for chips, blinds increase on a timer until one player holds all chips. Top 10–15% of players cash. Formats include freezeout, PKO, satellite, and deepstack — enter via direct buy-in, satellite, or online pre-registration.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-07-11",
+  updated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏆",
@@ -330,6 +330,10 @@ A. In a regular bounty (knockout) tournament, every player carries a fixed bount
 
 A. In a rebuy tournament you can pay the entry fee again after busting (or sometimes when your stack falls below a threshold), but only during a set rebuy period — usually the first few blind levels. An add-on is a one-time optional chip purchase, typically offered to everyone at the end of the rebuy period regardless of stack size. Once that window closes, the event plays out as a freezeout. Exact rules vary by venue, so check the structure sheet.
 
+**Q. How do poker tournaments make money?**
+
+A. The venue takes a fee on top of each buy-in — the "+$9" part of a "$100+$9" entry. That fee (usually about 8–10% at big live events, more at small dailies) is the house's revenue; the "$100" part goes entirely into the prize pool players compete for. So a tournament room profits from the volume of entries and their fees, not from the prize money itself, which is just recycled among the players.
+
 **Q. Is it legal to host a poker tournament at home?**
 
 A. It depends on your jurisdiction. In many places, private social home games are legal as long as the host takes no rake, entry fee cut, or profit beyond playing — all money goes back to the players. Charging a house fee, taking a percentage of the prize pool, or advertising publicly is what typically turns a home game into illegal gambling. Laws vary widely by country and by state, so check your local regulations before hosting.
@@ -345,6 +349,10 @@ A. Yes, during the late registration window — usually the first few blind leve
 **Q. Can you leave a poker tournament early and keep your chips?**
 
 A. No. Unlike a cash game, tournament chips have no cash value and can't be cashed out mid-event. If you walk away, your chips stay in play and keep paying blinds and antes until they're gone. You only receive money if you finish in a paid (ITM) position.
+
+**Q. Are poker tournaments more luck or skill?**
+
+A. Both — but skill decides who wins over the long run. A single tournament carries huge variance: you can play flawlessly and still bust when your aces get cracked, which is why even elite pros go long stretches without a big cash. Across hundreds of events, though, the better players reach final tables far more often than chance allows. Poker is a skill game wrapped in short-term luck — and tournaments simply have more of that luck packed in than cash games.
 
 ---
 
