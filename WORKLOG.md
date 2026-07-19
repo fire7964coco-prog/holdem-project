@@ -10,7 +10,9 @@
 ### ✅ strategy 허브 `holdem-strategy` 재정비 (strategy 1/6)
 - lowfruits 7시드(texas holdem strategy·how to win at poker·poker strategy·how to get better·poker tips 등) + WebSearch. 이미 최상급(5결정 프레임·FAQ 11)이라 진짜 새 winnable **FAQ 3개**: **Is poker a game of skill or luck?**(`is poker gambling` 1300vol)·**What is GTO poker?**(GTO 클러스터 LDA11~24, 허브에 없던 것)·**How do you get better at poker?**(LDA16). 경험담·§13·구조 불변.
 - 🎯 **틈새 대량 적립**(`_niche-opportunities.md`): ★홈게임/포커나이트(how to play without chips 320vol·with friends 110·chips 880)·★"포커=실력vs운" 독립글(is poker gambling 1300vol)·에티켓(unwritten rules)·GTO advanced 글·ROI.
-- ⚠️ **남은 strategy 5편**(각 1~2시드 딥): 3bet·continuation-bet·when-to-fold·limping·position-play.
+### ✅ strategy `holdem-3bet` 재정비 (strategy 2/6)
+- lowfruits 2시드(`3bet`·`* 3bet in poker`) + WebSearch. 이미 극도로 촘촘(FAQ 13!)이라 3bet 자체는 완벽 → 진짜 gap = **4-bet 세부**(사다리 언급만). **winnable FAQ 2개**: What hands should you 4-bet with & how much?(hands·sizing·%)·When should you 5-bet? 경험담·§13 사이징·구조 불변.
+- ⚠️ **남은 strategy 4편**: continuation-bet(c-bet, 리서치 완료 대기)·when-to-fold·limping·position-play.
 
 ## 2026-07-18 (★★★EN 경화 스코프 확장 = AI시대 GEO 재정비 규칙화 + ★족보(rankings) 필라 6/6 완주★)
 

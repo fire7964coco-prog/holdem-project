@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A 3-bet is the first re-raise before the flop — called a 3-bet because the big blind is the first bet, the open-raise the second, and your re-raise the third. Value-3-bet a tight core (QQ+, AK) plus a few suited blocker bluffs like A5s, size it around 3x the open in position and 4x out of position, and keep your overall 3-bet frequency near 6–10%. When you're the one facing a 3-bet, 4-bet your premiums, call the hands that play well, and fold the rest — folding more than 'balanced' against low-stakes players who never bluff.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-07-06",
+  updated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "♦️",
@@ -239,6 +239,14 @@ A. Because the name counts bets in the sequence, not raises. The big blind is a 
 **Q. What is the difference between a 3-bet and a 4-bet?**
 
 A. A 3-bet is the first re-raise (over an open-raise); a 4-bet is the next re-raise, made over a 3-bet. So the ladder goes: open-raise (2nd bet) → 3-bet (3rd bet) → 4-bet (4th bet) → 5-bet (usually all-in). A 4-bet represents a very strong, polarized range.
+
+**Q. What hands should you 4-bet with, and how much?**
+
+A. 4-bet a polarized range: premiums for value (usually AA–KK, plus AK) and a few blocker bluffs like A5s that block your opponent's aces and kings. Size a 4-bet to roughly 2.2–2.5x the 3-bet in position and a touch larger out of position — smaller than most beginners expect, because the pot is already big. As a frequency, solid players 4-bet only a few percent of hands; widen your value 4-bets against opponents who 3-bet too often.
+
+**Q. When should you 5-bet in poker?**
+
+A. A 5-bet is the re-raise over a 4-bet, and at around 100 big blinds it's almost always all-in. 5-bet for value with the very top of your range (AA, KK, often AK) and, against aggressive players who 4-bet light, add the occasional ace-blocker bluff. Against most low-stakes opponents a 5-bet screams "aces or kings," so if a passive player 5-bets, fold everything but your absolute premiums.
 
 **Q. What hands should you 3-bet?**
 
