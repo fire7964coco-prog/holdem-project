@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Rake is the small cut the cardroom takes from each pot to host the game — usually 2.5–10% up to a cap of a few dollars. Most rooms take nothing if everyone folds before the flop ('no flop, no drop'). It hits low-stakes and short-handed players hardest, and rakeback returns a slice of it to regulars.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-07-04",
+  updated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🏦",
@@ -18,7 +18,7 @@ export const POST: Post = {
   content: `
 It took me a depressing month of "break-even" sessions to figure out where my money was actually going. I wasn't losing to the other players — I was beating them, slightly. I was losing to the ==house's cut on every pot I won.== That quiet fee is called the **rake**, and until you understand it, you can be a winning player on paper and a losing one at the cashier.
 
-Rake is how a cardroom makes money on a game where it doesn't play a single hand. Below is exactly what it is, every way it's collected, the honest math on ==g:how much you actually pay a session==, and how rakeback claws some of it back. It's the fee that decides whether beating small-stakes poker is even possible.
+Rake is how a cardroom makes money on a game where it doesn't play a single hand. Below is exactly what it is, every way it's collected, the honest math on ==g:how much you actually pay a session==, and how rakeback claws some of it back. It's the fee that decides whether beating small-stakes poker is even possible — and one of the most expensive terms in the [poker glossary](/en/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp") to misunderstand.
 
 ---
 
@@ -143,6 +143,10 @@ A. Rake is the fee a cardroom takes from a cash game for hosting it — normally
 
 A. In most cash games it's a percentage of the pot, dropped before the winner is paid, up to a cap of a few dollars. The percentage and cap vary by room and stakes, and the cap often shrinks when fewer players are dealt in. At higher stakes, rooms may charge a flat time fee per player instead.
 
+**Q. Who pays the rake in poker?**
+
+A. Rake is pulled straight from the pot, so on paper the player who wins the hand pays it — the winning stack comes back smaller by the rake amount. In practice, everyone who put chips into that pot contributed to it, so the whole table shares the cost over a session. In tournaments there's no ambiguity: every entrant pays an equal fee baked into the buy-in, whether they win or bust first.
+
 **Q. Do you pay rake if everyone folds before the flop?**
 
 A. Usually not. Most rooms follow "no flop, no drop" — if the hand ends preflop, no rake is taken. It isn't universal, though: a few sites (notably GGPoker) rake some preflop pots, so it's worth confirming your room's rule.
@@ -154,6 +158,14 @@ A. Commonly 10% of the pot capped at around $5. Most contested pots reach the ca
 **Q. What is rakeback?**
 
 A. Rakeback returns a percentage of the rake you personally pay — often 20–40% — through points, cashback, or a loyalty program. It effectively lowers your true rake. For casual players it's a small perk; for high-volume regulars it can be the difference between a losing and a winning year.
+
+**Q. How can you pay less rake in poker?**
+
+A. You can't escape rake entirely in a raked game, but you can shrink it. Get the best rakeback deal you can, choose rooms with player-friendly caps, and move up in stakes where a fixed cap is a smaller share of each pot. Playing fewer, bigger pots rather than a flood of small capped ones, avoiding very short-handed tables where the cap barely drops, and preferring high-stakes time-charge games all lower your effective rake. Home games with no rake at all are the cheapest poker there is.
+
+**Q. Is taking a rake illegal? Why is taking a rake in poker illegal?**
+
+A. Taking a rake is perfectly legal for a licensed cardroom, casino, or regulated online site — charging a fee to host the game is their entire business model. What's illegal in most U.S. states (and many other places) is a *private* or home-game host taking a rake for personal profit: skimming a cut turns a friendly game into running an unlicensed gambling business, which is what actually crosses the line — not the poker itself. It's why legal home games split costs but never rake the pot, and it's the exact issue behind the film *Molly's Game*, where the host began taking a percentage and lost the protection an amateur game would have had.
 
 **Q. Do poker tournaments have rake?**
 
