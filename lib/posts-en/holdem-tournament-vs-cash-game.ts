@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In cash games, chips are real money and blinds stay fixed. In tournaments, chips are survival equity, blinds rise, and payouts depend on where you finish.",
   category: "tournament",
   date: "2026-06-11",
-  updated: "2026-07-11",
+  updated: "2026-07-19",
   hideSummaryImageSlot: true,
   readTime: "16 min",
   emoji: "🏆",
@@ -379,6 +379,10 @@ A. No. ICM applies to tournaments because tournament chips do not equal cash and
 
 A. A common guideline is 20-40 buy-ins for cash games and 100+ buy-ins for large-field tournaments, with smaller formats like sit-and-gos in between at roughly 40-60. Tournaments need the bigger cushion because long stretches without cashing are normal even for winning players.
 
+**Q. How many big blinds should you start with in a cash game vs a tournament?**
+
+A. In a cash game, buy in for the table maximum — usually around 100 big blinds ($200 at $1/$2) — because deep stacks reward postflop skill and let you win a full stack when you're ahead. A tournament picks your depth for you: you typically start around 100-300 big blinds, but rising blinds shrink that to 20, then 10, then push/fold territory. Short version: buy in deep for cash, and in a tournament watch your big-blind count fall and adjust as it does.
+
 **Q. How many chips do you need for a home cash game?**
 
 A. A standard 300-chip set comfortably covers up to about 6-8 players. Give everyone the same starting stack across 3-4 denominations, with most chips in the smallest values so players can bet and make change easily. The exact count matters less than everyone agreeing what each color is worth in real money before the first hand.
@@ -390,6 +394,10 @@ A. Both — but many pros specialize. Cash-game specialists value the steadier h
 **Q. Is a re-entry tournament basically a cash game?**
 
 A. No. Re-entry lets you buy back into the tournament after busting during a certain period, but the chips still are not cash. Blinds still rise, prize money still depends on finishing position, and ICM still matters later.
+
+**Q. Do you get taxed on poker tournament winnings?**
+
+A. In most countries, yes — poker winnings count as taxable income, and large live tournament cashes are often reported (and sometimes withheld) right at the casino; in the US, for example, a big score generates tax paperwork on the spot. A few jurisdictions treat recreational gambling wins as tax-free. Rules vary widely by country and even by state, so treat this as general information and check your local tax law — or a professional — before a major cash.
 
 ---
 
