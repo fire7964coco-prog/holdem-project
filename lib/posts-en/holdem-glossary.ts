@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "This is a plain-English glossary of the poker terms that actually come up in a Texas Hold'em game, grouped by how you'll meet them — betting actions, positions, hands and board, player types, money, and table situations. Start with the 'most confused' terms below (check vs call, set vs trips, cooler vs bad beat), then browse by category. Terms with a deeper guide link straight to it.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-07-05",
+  updated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "📖",
@@ -26,7 +26,7 @@ Poker has its own vocabulary, and knowing it does two things: it stops you looki
 
 :::stripe
 6 | Categories, grouped by how you meet them
-80+ | Terms defined in plain English
+90+ | Terms defined in plain English
 8 | "Most confused" pairs, sorted out first
 → | Deeper guides linked from key terms
 :::
@@ -134,11 +134,14 @@ The cards themselves, and what you make with them. New to the flow of streets? S
 | **Set** | Three of a kind using a **pocket pair** + one board card (well disguised). |
 | **Trips** | Three of a kind using **one hole card** + a pair on the board (weaker kicker control). |
 | **Two pair** | Two different pairs. |
+| **Boat / Full boat** | Slang for a **full house** — three of a kind plus a pair (it "fills up"). |
+| **Quads** | Slang for **four of a kind**. |
 | **Made hand** | A complete hand now, as opposed to a draw. |
 | **Draw** | A hand that needs to improve — e.g. a **flush draw** (4 to a flush) or straight draw. |
 | **Gutshot** | An inside straight draw needing one middle rank (4 [outs](/en/blog/holdem-outs)). |
 | **Open-ender** | An open-ended straight draw, completed at either end (8 outs). |
 | **Backdoor** | A draw needing **two** running cards (turn *and* river). |
+| **Runner-runner** | Hitting a hand with **both** the turn and river — a backdoor draw that got there (e.g. "runner-runner flush"). |
 | **Overcard** | A card higher than the board. |
 | **Suited connectors** | Two consecutive same-suit cards (e.g. 8♥9♥). |
 | **Broadway** | The 10-J-Q-K-A straight, the highest straight. |
@@ -197,8 +200,12 @@ Chips, stakes, and the two formats. The big fork is [cash game vs tournament](/e
 | **Rakeback** | A rebate returning part of the rake you've paid. |
 | **Straddle** | An optional blind (usually 2× BB) buying last preflop action — [full guide](/en/blog/holdem-straddle). |
 | **Cash game** | Real-value chips, join or leave anytime, fixed blinds. |
+| **No-limit (NLH) / Limit** | No-limit lets you bet anything up to your whole stack; limit caps each bet at a fixed size. Hold'em is almost always no-limit. |
+| **PLO** | Pot-Limit Omaha — a popular variant where you get four hole cards and must use exactly two (not the same game, but you'll hear it named). |
 | **Tournament** | Fixed buy-in, rising blinds, play until you bust or win. |
 | **Freezeout** | A tournament with no rebuys — out means out. |
+| **GTD (guaranteed)** | A tournament's promised minimum prize pool, paid even if entries fall short. |
+| **Hand-for-hand** | Near the money bubble, every table plays one hand at a time so no one can stall into the cash. |
 | **Bounty (knockout)** | A tournament paying a prize for each player you eliminate. |
 | **Sit & Go (SNG)** | A small tournament that starts as soon as it fills. |
 | **MTT** | A multi-table tournament that merges tables as players bust. |
@@ -234,6 +241,9 @@ The words for what's happening — and how to behave while it does.
 | **Cold deck** | An unlucky deal producing a cooler (originally a cheat's pre-stacked deck). |
 | **"Don't tap the glass"** | Don't criticize weak players — you'll scare away the ones you profit from. |
 | **Run it twice** | All-in players deal the remaining board twice, each for half the pot, to cut variance. |
+| **Heads-up** | Playing one-on-one — either a two-player game or the final two of a tournament. |
+| **RFI (raise first in)** | Being the first player to enter the pot with a raise (an open-raise). |
+| **Splash the pot** | Throwing chips messily into the pot instead of stacking them in front of you — discouraged, since the amount can't be verified. |
 
 </div>
 
