@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "The bubble is the spot right before the money, where one more elimination pays everyone else. Because busting means winning nothing, survival is worth more than the chips you'd gain — so calling ranges tighten hard while shoving stays wide. Big stacks attack, medium stacks are the most trapped (not short stacks), and on a satellite bubble you fold everything, even aces, once your seat is locked.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-07-09",
+  updated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🫧",
@@ -179,6 +179,10 @@ A. The bubble boy is the player who busts in the last unpaid position — one sp
 
 A. A stone (or hard) bubble is when a single elimination puts every remaining player into the money at the same time. A soft bubble is looser — a stretch of a few eliminations near the money rather than one exact spot. The stone bubble creates the most extreme pressure because one bust-out pays everyone left.
 
+**Q. What does it mean to "pay the bubble" or burst the bubble?**
+
+A. "The bubble" is the last spot before the money, so the player who busts there — the bubble boy — wins nothing while everyone still in gets paid; that's what people mean by paying the bubble. "Bursting the bubble" is that final elimination: the instant it happens, every remaining player is in the money and the intense survival pressure eases. Some events give the bubble boy a small consolation, but traditionally the bubble pays zero.
+
 **Q. Should you fold on the bubble?**
 
 A. You should fold *calls* much more than usual, but not everything — and you should keep shoving and stealing. Survival is worth more than chips near the pay jump, so calling off and busting is the costly mistake. Tighten your calling range hard while keeping your first-in aggression wide.
@@ -186,6 +190,10 @@ A. You should fold *calls* much more than usual, but not everything — and you 
 **Q. Do short stacks feel the most bubble pressure?**
 
 A. No — that's the common misconception. By bubble factor, the medium stack is the most constrained: enough prize equity to lose, not short enough to justify gambling. Short stacks actually have a lower bubble factor because busting is already likely and doubling up helps a lot, so they can gamble more freely (by shoving, not calling).
+
+**Q. What is the bubble factor in poker?**
+
+A. Bubble factor measures how much more losing a pot costs you than winning the same pot helps, in real-money (ICM) terms. A bubble factor of 1.0 means chips equal money; 1.5 means busting hurts 1.5× as much as winning helps. It converts straight into the equity you need to call: bubble factor ÷ (1 + bubble factor). At a 1.5 bubble factor you need 60% to call, not 50% — which is exactly why a chip-EV coin flip becomes a fold on the bubble.
 
 **Q. What is hand-for-hand play?**
 
