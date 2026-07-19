@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A cooler is a hand where you lose a big pot with a very strong holding you could never correctly fold — like pocket kings running into aces, or a set losing to a bigger set. Unlike a bad beat, you were behind the whole way and no lucky card 'sucked out' on you: you played it right and still lost. It's poker's most honest kind of disaster.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-07-05",
+  updated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🧊",
@@ -18,7 +18,7 @@ export const POST: Post = {
   content: `
 I still remember the hand that taught me the word. I flopped a set of kings, got it all in on the turn, and turned my cards over already reaching for the pot — then watched my opponent flip up a set of aces. I hadn't done anything wrong. There was no bad play to regret, no draw I should have folded to. I'd been beaten from the moment the chips went in, and there was ==nothing I could have done about it==. That's a cooler, and once you understand it, you stop blaming yourself for the losses that were never yours to avoid.
 
-A **cooler** is a hand where you make a very strong holding, lose a big pot, and ==g:folding was never a real option== — the other hand was simply bigger. Below is exactly what it means, the crucial difference between a cooler and a **bad beat** (most people mix them up), the classic cooler match-ups, and the honest part nobody likes: when *"it was just a cooler"* is really a polite excuse for a mistake.
+A **cooler** is a hand where you make a very strong holding, lose a big pot, and ==g:folding was never a real option== — the other hand was simply bigger. Below is exactly what it means, the crucial difference between a cooler and a **bad beat** (most people mix them up), the classic cooler match-ups, and the honest part nobody likes: when *"it was just a cooler"* is really a polite excuse for a mistake. It's one of the most-misused terms in the whole [poker glossary](/en/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp"), so let's pin down exactly what counts.
 
 ---
 
@@ -165,6 +165,10 @@ A. Yes — "setup" is an informal synonym for a cooler. It emphasizes the feelin
 
 A. Yes — it's the most classic cooler of all. Kings are roughly a 4.5-to-1 underdog to aces preflop, but no reasonable player folds pocket kings before the flop. So the money goes in, you're behind the whole way, and you lose a hand you could never have gotten away from.
 
+**Q. How often does set over set happen?**
+
+A. Rarely — which is exactly why it stings. When two players each hold a pocket pair and both see the flop, they will *both* flop a set only about 1% of the time (roughly 1 in 96). Flopping a set at all happens about 11.8% of the time — around 1 in 8.5 — when you hold a pocket pair, so having a second player flop a bigger one on the very same board is the kind of cooler people remember for years.
+
 **Q. What does it mean to get "coolered"?**
 
 A. To be coolered is to lose a big pot on the wrong end of a cooler — you had a hand too strong to fold and ran into a bigger one. Used correctly, "I got coolered" is actually an admission that you played the hand right and simply lost to the deck, not to your own mistake.
@@ -176,6 +180,10 @@ A. No. Coolers commonly go all-in, especially in tournaments, but the all-in isn
 **Q. How do you deal with a cooler?**
 
 A. Confirm it was genuinely unavoidable, then release it — there's no lesson to study. Watch hard for tilt, since the real cost is usually the hands you play badly afterward trying to win it back. Lean on a bankroll built to absorb variance, and step away for a few minutes if it rattled you.
+
+**Q. What is a cooler in a casino? Is it the same as in poker?**
+
+A. Not quite — the word has an older gambling meaning. In casino lore a "cooler" is a person, or an unlucky presence, believed to cool off a hot table — famously dramatized in the 2003 film *The Cooler*, where a casino employs an unlucky man to end players' winning streaks. Historically it also meant a "cold deck," a pre-arranged deck secretly swapped in to rig a hand. In modern poker, though, a cooler almost always means the unavoidable premium-vs-premium clash above — bad luck, not a jinx or a cheat.
 
 ---
 
