@@ -241,7 +241,7 @@ The lesson: ==r:when the river paired A's hand to two pair, it *felt* like the w
 
 ---
 
-## The 7 Betting Actions, Fully Explained
+## The 7 Moves You Can Make, Fully Explained
 
 ![The poker betting actions — check, call, fold, bet, raise, re-raise, all-in](/images/holdem-betting-options-guide.webp "Every betting action you can take in Texas Hold'em")
 

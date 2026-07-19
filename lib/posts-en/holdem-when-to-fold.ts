@@ -45,7 +45,7 @@ One precise caveat, because it matters: folding is *not free.* The chips already
 
 ## When to Fold Before the Flop
 
-The biggest leak in poker is playing too many hands, so the biggest single fix is folding most of them. **A solid tight-aggressive player folds roughly 75–85% of their hands preflop** — closer to 75–80% in 6-max games, and 80–86% in full-ring. If that sounds extreme, remember: the hands you keep are stronger on average than your opponents', which is where your edge comes from.
+The biggest leak in poker is playing too many hands, so the biggest single fix is folding most of them. **A solid tight-aggressive player folds roughly 75–85% of their hands preflop** — closer to 75–80% in 6-max games, and 80–85% in full-ring. If that sounds extreme, remember: the hands you keep are stronger on average than your opponents', which is where your edge comes from.
 
 Fold preflop when:
 
@@ -200,7 +200,7 @@ A. You only lose the chips you already put in the pot — folding costs you noth
 
 **Q. How often should you fold preflop?**
 
-A. A solid tight-aggressive player folds roughly 75–85% of their hands before the flop — nearer 75–80% in 6-max games and 80–86% in full-ring. Playing fewer, stronger hands is the single biggest fix for most losing players. If you're entering far more than a fifth of your hands, you're almost certainly playing too many.
+A. A solid tight-aggressive player folds roughly 75–85% of their hands before the flop — nearer 75–80% in 6-max games and 80–85% in full-ring. Playing fewer, stronger hands is the single biggest fix for most losing players. If you're entering far more than a fifth of your hands, you're almost certainly playing too many.
 
 **Q. When should you fold a good hand?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em gives each player 2 hole cards, uses 5 community cards, and the best 5-card poker hand wins after four betting rounds.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-07-17",
+  updated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -349,7 +349,7 @@ Basic hand ranking from strongest to weakest (with how often you make each hand 
 | 7 | Three of a kind | 4.8% — good hand, but board matters |
 | 8 | Two pair | 23.5% — most common "strong" hand |
 | 9 | One pair | 43.8% — the most frequent hand at showdown |
-| 10 | High card | 17.4% — weakest hand at showdown; wins mainly through bluffing |
+| 10 | High card | 17.4% — weakest hand at showdown; usually wins only when everyone else missed too |
 
 If two players have the same type of hand, compare the highest relevant cards — see the [kicker and tie-breaker rules](/en/blog/holdem-tiebreak-rules). If the best five cards are exactly the same, the pot is [split](/en/blog/holdem-split-pot-rules).
 
@@ -444,7 +444,7 @@ Texas Hold'em is easier to learn when you separate rules from strategy.
 
 First, ==learn the flow==: blinds, two hole cards, five community cards, four betting rounds, and best five-card hand. ==g:Then learn position, starting hands, and basic pot decisions.==
 
-For your next step, review [Texas Hold'em hand rankings](/en/blog/holdem-hand-rankings), practice with the [starting hand chart](/hand-chart), and use the [poker odds calculator](/calculator) when you want to understand why a call is profitable or not.
+For your next step, review [Texas Hold'em hand rankings](/en/blog/holdem-hand-rankings), practice with the [starting hand chart](/en/hand-chart), and use the [poker odds calculator](/en/calculator) when you want to understand why a call is profitable or not.
 
 ---
 

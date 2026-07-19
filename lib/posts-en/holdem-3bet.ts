@@ -82,7 +82,7 @@ A winning 3-bet range has **two distinct parts**, and understanding the split is
 
 </div>
 
-Here's the blocker logic in one sentence: **holding an ace makes it mathematically less likely your opponent holds aces or ace-king**, so A5s is a far better bluff than, say, A9o — which blocks the same premiums but plays terribly when called and just makes weak pairs. Backup equity matters because your opponent won't fold every time; you want a bluff that can still win the pot. That's why A5s ≈ 30% equity against a QQ+/AK calling range, while offsuit junk sits well below it. This is the same [starting-hand](/en/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") discipline as always — just applied to re-raising.
+Here's the blocker logic in one sentence: **holding an ace makes it mathematically less likely your opponent holds aces or ace-king**, so A5s is a far better bluff than, say, A9o — which blocks the same premiums but plays terribly when called and just makes weak pairs. Backup equity matters because your opponent won't fold every time; you want a bluff that can still win the pot. That's why A5s ≈ 28% equity against a QQ+/AK calling range, while offsuit junk sits well below it. This is the same [starting-hand](/en/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") discipline as always — just applied to re-raising.
 
 ---
 

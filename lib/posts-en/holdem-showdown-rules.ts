@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "At showdown, the last player to bet or raise shows first. If the river was checked through, the first active player left of the button shows first. You can muck without showing if you lose, but opponents can request to see a called hand.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-07-17",
+  updated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -167,7 +167,7 @@ A. The last player to make an aggressive action (bet or raise) on the final bett
 
 **Q. Do you have to show your cards if you get called at showdown?**
 
-A. Yes — if you were the last bettor or raiser on the river, you must show first when called. If you called someone else's bet, you can muck face-down after seeing their hand if you've lost. However, any player at the table can request the dealer to reveal a called hand that was mucked, in most cardrooms.
+A. Yes — if you were the last bettor or raiser on the river, you must show first when called. If you called someone else's bet, you can muck face-down after seeing their hand if you've lost. However, any player who was dealt into the hand can request the dealer to reveal a called hand that was mucked, in most cardrooms.
 
 **Q. Can you muck at showdown without showing?**
 

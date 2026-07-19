@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In Texas Hold'em you always play the best 5-card hand from 7 (2 hole cards + 5 community cards) — using both hole cards, one, or none at all (playing the board). Scan all 7 cards in a fixed order: flush → straight → paired ranks → high card.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-07-18",
+  updated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🃏",
@@ -136,7 +136,7 @@ A flush needs 5 cards of one suit among your 7. The board tells you instantly wh
 | 0–2 | No flush possible for anyone |
 | 3 | Anyone holding 2 of that suit has a flush |
 | 4 | Anyone holding just 1 of that suit has a flush |
-| 5 | The board itself is a flush — one higher card of that suit in your hand improves it |
+| 5 | The board itself is a flush — a card of that suit higher than the board's lowest one improves it |
 
 ![NOT A FLUSH — holding A♠ with only 3 spades on the board does not make a flush in Texas Hold'em](/images/holdem-reading-flush-draw-mistake.webp)
 

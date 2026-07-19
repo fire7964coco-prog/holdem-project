@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A flush (five cards of one suit — ~0.197% of five-card deals) always beats a straight (five in sequence, ~0.392%) in Texas Hold'em — because a flush is about twice as hard to make.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-07-18",
+  updated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "⚡",
@@ -133,7 +133,7 @@ Yes, one flush can absolutely be higher than another. **Suits are irrelevant** �
 | A | A♠ J♠ 9♠ 6♠ 2♠ | **Wins** |
 | B | K♥ Q♥ 10♥ 8♥ 3♥ | Loses |
 
-Player A's ace tops Player B's king on the very first card, so A wins. A spade flush does **not** beat a heart flush — only the ranks matter.
+Player A's ace tops Player B's king on the very first card, so A wins. A spade flush does **not** beat a heart flush — only the ranks matter. (In a real Hold'em hand two flushes are always the *same* suit, since both are built from the shared board — this abstract example just drives home that ranks, never suits, decide a flush.)
 
 Straights are even simpler: compare the **highest card** only — there's no kicker.
 
