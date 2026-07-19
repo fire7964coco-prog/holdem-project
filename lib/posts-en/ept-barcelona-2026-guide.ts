@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "EPT Barcelona 2026 is Aug 16–29 at Casino Barcelona. Main Event buy-in: €5,300. Cheapest online path: Power Path from $0.50 → Gold Pass (€5,300 ME + 8-night hotel + €690 expenses). You need a PokerStars Live account and a valid passport. Book hotels early — August is peak season.",
   category: "tournament",
   date: "2026-06-17",
-  updated: "2026-07-03",
+  updated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🃏",
@@ -113,7 +113,7 @@ Win Step 4 and you receive one of three Power Passes:
 |:---|:---:|:---|
 | Bronze Pass | ~$530 | Online tournament credits |
 | Silver Pass | ~$2,300 | Mid-tier live event entries |
-| ==**Gold Pass**== | ==g:**~€10,300**== | ==g:€5,300 ME + €1,100 side event + 8 nights hotel + expenses== |
+| ==**Gold Pass**== | ==g:**~$10,300**== | ==g:€5,300 ME + €1,100 side event + 8 nights hotel + expenses== |
 
 ==g:The **Gold Pass** is the one you want.== PokerStars aims for at least 25% of the Main Event field to be satellite qualifiers — so the seats are real.
 
@@ -179,7 +179,7 @@ Don't want to grind four steps? PokerStars also runs **direct satellites** for E
 | Item | Estimated Cost |
 |:---|:---:|
 | Power Path buy-ins to reach Step 4 | **$11–$55** |
-| Gold Pass covers: ME entry + side event + 8 nights | ==g:✅ Included (~€10,300 value)== |
+| Gold Pass covers: ME entry + side event + 8 nights | ==g:✅ Included (~$10,300 value)== |
 | Flights (not always included) | €150–€400 |
 | Food & extra days | €400–€600 |
 | ==**Total out-of-pocket**== | ==g:**~€550–€1,000**== |

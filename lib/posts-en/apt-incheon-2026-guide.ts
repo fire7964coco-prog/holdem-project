@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "APT Incheon 2026 runs Aug 7–16 at Paradise City Casino, Incheon — 10 min by free shuttle from Terminal 1. Main Event: KRW 2,500,000 (~$1,703) buy-in, $1M GTD. Qualify from $3.50 via Natural8 step satellites. Foreign nationals only (Korean citizens cannot enter). Seoul is ~1 hour away and is one of the best cities in Asia for food, culture, and nightlife.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-07-03",
+  updated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🇰🇷",
@@ -48,7 +48,7 @@ Before the poker: South Korea has quietly become one of the best countries to vi
 - **K-culture:** Gyeongbokgung Palace, Bukchon Hanok Village, and Hongdae's live music scene are legitimately world-class cultural experiences.
 - **Cost:** Compared to Tokyo, Hong Kong, or Sydney, Seoul is remarkably affordable — a full Korean BBQ dinner with drinks runs under $20 per person.
 
-And for international visitors: ==g:most Western passport holders enter Korea visa-free or via a free K-ETA (electronic travel authorization) that takes minutes to apply for online.==
+And for international visitors: ==g:most Western passport holders (USA, Canada, UK, Australia, NZ, Japan and 16 more) are temporarily K-ETA-exempt through Dec 31, 2026 — you board with just your passport and submit the free digital e-Arrival Card before landing.==
 
 ---
 
@@ -104,8 +104,8 @@ Natural8 is APT's official online partner and runs the ==**Journey to APT Incheo
 
 | Route | Seats GTD | How It Works |
 |---|---|---|
-| **Mega Satellite → Live Day 1** | 52 seats | Win online → play the full live Main Event from Day 1 |
-| **OnLive Day 1** | 22 seats | Play Day 1 online → if you bag chips, continue live from Day 3 |
+| **Mega Satellite → Live Day 1** | 45 seats (7 incl. $500 credits) | Win online → play the full live Main Event from Day 1 |
+| **OnLive Day 1** | 12 seats | Play Day 1 online → if you bag chips, continue live from Day 3 |
 
 </div>
 
@@ -149,7 +149,7 @@ Paradise City runs its own complimentary transfer from the airport:
 | Option | Journey | Cost | Notes |
 |:---|:---:|:---|:---|
 | ==g:**Free shuttle (from T1)**== | ==g:~10 min== | ==g:Free== | Best option — Gate 3C or 14C, every 30 min (5am–11pm) |
-| Free shuttle (from T2) | ~20 min | Free | Gate 2A, every 60 min |
+| Free shuttle (from T2) | ~20 min | Free | Gate 4A, hourly |
 | Taxi from T1 | ~15–20 min | ~$15–20 | Metered, available 24/7 |
 | AREX to Unseo Station → taxi | ~20 min total | ~$8 | Useful if train schedule aligns |
 
@@ -288,11 +288,11 @@ Compared to EPT Barcelona (~€5,300 Main) or WPT Australia (~AUD $5,000 Main), 
 
 | Nationality | Visa required? | How to enter |
 |---|---|---|
-| USA, Canada, UK, Australia, NZ, most EU | **No visa** | K-ETA (free, online, takes 5 min) |
+| USA, Canada, UK, Australia, NZ, most EU | **No visa** | K-ETA-exempt through Dec 31, 2026 (submit free e-Arrival Card); non-exempt countries: K-ETA ₩10,000 at k-eta.go.kr |
 | Japan, Singapore, Hong Kong, Taiwan | **No visa** | K-ETA |
 | Most other countries | Check [mofa.go.kr](https://www.mofa.go.kr) | May need tourist visa |
 
-==r:Apply for K-ETA before you book flights.== It's usually instant but check 2 weeks in advance at [k-eta.go.kr](https://www.k-eta.go.kr).
+==r:Check your K-ETA status before booking.== 22 countries (US, UK, EU, Australia, Japan and more) are exempt through Dec 31, 2026 and just submit the free e-Arrival Card before landing; everyone else applies at [k-eta.go.kr](https://www.k-eta.go.kr) (₩10,000, usually instant — allow 2 weeks to be safe).
 
 **Casino entry (Paradise City):**
 - Valid non-Korean passport required
@@ -311,7 +311,7 @@ Compared to EPT Barcelona (~€5,300 Main) or WPT Australia (~AUD $5,000 Main), 
 
 **Q. Is Paradise City Casino really walkable from Incheon Airport?**
 
-A. Very close. Paradise City runs a free shuttle from Terminal 1 (Gates 3C & 14C) every 30 minutes — the ride takes about 10 minutes. Terminal 2 has its own shuttle every 60 minutes from Gate 2A. The resort is an airport-adjacent integrated complex specifically designed for international arrivals.
+A. Very close. Paradise City runs a free shuttle from Terminal 1 (Gates 3C & 14C) every 30 minutes — the ride takes about 10 minutes. Terminal 2 has its own hourly shuttle from Gate 4A. The resort is an airport-adjacent integrated complex specifically designed for international arrivals.
 
 **Q. Can I play the APT Incheon Main Event if I've never played a live tournament?**
 

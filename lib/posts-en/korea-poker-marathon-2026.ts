@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Korea's top autumn marathons (Chuncheon Oct 25, JTBC Seoul Nov 1, Garmin Run Nov 15) align with perfect running weather. Paradise City Casino near Incheon Airport runs year-round cash games — foreigners only, 10 min from the terminal. One trip covers both.",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-07-03",
+  updated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏃",
@@ -25,7 +25,7 @@ export const POST: Post = {
     "Seoul marathon foreign runners",
   ],
   content: `
-On May 17, 2026, BTS's Suga woke up at 6am in his Palo Alto hotel, ran San Francisco's 12K Bay to Breakers race in 1:04:43 — then performed to 50,000 fans at Stanford Stadium that evening. RM later revealed the context: ==g:Suga runs 10K every day.== He heard about the race and simply entered.
+On May 17, 2026, BTS's Suga woke up at 6am, ran San Francisco's 12K Bay to Breakers race in 1:04:43 — then performed to a sold-out Stanford Stadium that evening. RM later revealed the context: ==g:Suga runs 10K every day.== He heard about the race and simply entered.
 
 That story resonated beyond the ARMY fandom. It resonated with the overlap that already exists: people who play cards and people who run. The two communities share more than anyone documents — the discipline, the variance tolerance, the obsessive optimization.
 
@@ -66,10 +66,10 @@ The case isn't complicated. It's about timing and location.
 | Race | Date | Distance | Location | Foreign Registration | Status |
 |---|---|---|---|---|---|
 | Dong-A Seoul International Marathon | Mar 2026 | Full, 10K | Seoul | [dongamarathon.com](https://www.dongamarathon.com) | Done for 2026 |
-| ==**YTN Seoul Tour Marathon**== | ==**Sep 6**== | Half, 10K | Seoul Plaza | [run.ytn.co.kr](http://run.ytn.co.kr) | Closed Jul 15 |
-| ==g:**Chuncheon Marathon**== | ==g:**Oct 25**== | ==g:Full, 10K== | ==g:Chuncheon== | ==g:[chuncheonmarathon.com](https://www.chuncheonmarathon.com)== | ==g:Open now== |
+| ==**YTN Seoul Tour Marathon**== | ==**Sep 6**== | Half, 11K | Seoul Plaza | [run.ytn.co.kr](http://run.ytn.co.kr) | Closed Jul 10 |
+| ==g:**Chuncheon Marathon**== | ==g:**Oct 25**== | ==g:Full, 10K== | ==g:Chuncheon== | ==g:[chuncheonmarathon.com](https://www.chuncheonmarathon.com)== | ==g:Reg. closed (sold out)== |
 | ==**JTBC Seoul Marathon**== | ==**Nov 1**== | Full, 10K | Seoul (Sangam) | [worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon) | Open (closes Sep 4) |
-| Garmin Run Korea | Nov 15 | Half, 10K | Goyang | [runable.me](http://runable.me/product/18977?comp=18962) | Open Jul 1–3 |
+| Garmin Run Korea | Nov 15 | Half, 10K | Goyang | [runable.me](http://runable.me/product/18977?comp=18962) | Closed (reg. was Jul 1–3) |
 
 </div>
 
@@ -190,7 +190,7 @@ This is where the calendar gets interesting. Three poker festivals run at Korean
       <td style="padding:10px 14px"><span style="background:rgba(239,68,68,0.15);color:#f87171;padding:2px 7px;border-radius:4px;font-size:12px;font-weight:600">⚡ JTBC Marathon Nov 1 = Day 3 of this tournament</span></td>
     </tr>
     <tr style="background:rgba(212,175,55,0.07);border-bottom:1px solid rgba(255,255,255,0.06)">
-      <td style="padding:10px 14px;font-weight:700;white-space:nowrap">Dec 4 – Dec 13</td>
+      <td style="padding:10px 14px;font-weight:700;white-space:nowrap">Dec 2026 (TBC)</td>
       <td style="padding:10px 14px"><strong>AJPC Samurai Circuit<br/><span style="font-size:12px;color:var(--muted-foreground)">Incheon 2026 III</span></strong></td>
       <td style="padding:10px 14px">Paradise City, Incheon</td>
       <td style="padding:10px 14px;color:var(--muted-foreground)">Year-end option · schedule TBA</td>
@@ -226,7 +226,7 @@ For a player already in Korea for the tournament: race morning is a 7am alarm, 4
 
 ---
 
-### AJPC Samurai Circuit Incheon III (Dec 4–13)
+### AJPC Samurai Circuit Incheon III (December 2026 — dates TBC)
 
 The ==**AJPC Samurai Circuit**== closes out the Korean poker calendar with a December run at Paradise City. For players who miss the October–November window, this is the year-end option.
 
@@ -322,7 +322,7 @@ For the full tournament picture (APT Incheon runs August 7–16 with $2.7M GTD),
       <td style="padding:9px 12px;color:var(--muted-foreground)">Half · 10K · 8:00am · Reg. Jul 1–3</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
-      <td style="padding:9px 12px;font-weight:700;white-space:nowrap">Dec 4–13</td>
+      <td style="padding:9px 12px;font-weight:700;white-space:nowrap">Dec (TBC)</td>
       <td style="padding:9px 12px">🃏 AJPC Samurai Circuit III</td>
       <td style="padding:9px 12px">Paradise City, Incheon</td>
       <td style="padding:9px 12px;color:var(--muted-foreground)">Schedule TBA</td>

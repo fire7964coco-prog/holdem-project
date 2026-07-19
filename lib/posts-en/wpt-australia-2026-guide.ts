@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "WPT Australia 2026: Sep 10–30, The Star Sydney. Two flagships: AUD $1,500 WPT Prime (Sep 17–22) and AUD $5,000 WPT Championship (Sep 24–30). On-site satellites from AUD ~$255. Winner gets extra $10,400 WPT World Championship seat. Must be 18+, Star Club member, and smart-casual dress enforced.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-07-03",
+  updated: "2026-07-19",
   readTime: "14 min",
   emoji: "🦘",
   layout: "tournament-guide",
@@ -61,7 +61,7 @@ This year's festival returns to ==**The Star Sydney**== and introduces a **dual-
 
 </div>
 
-**Why 2026 is bigger**: The dual-championship format means two separate bites at the WPT Champions Cup. International players with a $1,500-level bankroll now have a realistic path to the trophy without committing $5,000.
+**Why 2026 is bigger**: The dual-championship format puts two livestreamed championship titles in one festival — the WPT Prime Perpetual Trophy at AUD $1,500 and the Mike Sexton Champions Cup at AUD $5,000. International players with a $1,500-level bankroll now have a realistic path to a WPT title without committing $5,000.
 
 ---
 
@@ -78,12 +78,12 @@ This is the question every first-timer asks. Here's the honest breakdown:
 | Field Size (est.) | 500–800 entries | 400–600 entries |
 | Structure | Deep-stack, multi-flight | Deep-stack, 3 flights |
 | Final Table | ==g:Globally livestreamed== | ==g:Globally livestreamed== |
-| WPT Champions Cup | ✅ Yes | ✅ Yes + WC Seat |
+| Title on the line | WPT Prime Perpetual Trophy | Mike Sexton Champions Cup + WC Seat |
 | Best For | First-timers, mid-bankroll grinders | Experienced tournament regulars |
 
 </div>
 
-**Recommendation**: If this is your first WPT event, ==g:start with the Prime at AUD $1,500==. You'll experience the full WPT atmosphere — livestreamed final table, deep structure, WPT Champions Cup — at roughly a third of the Championship buy-in. Many players enter both.
+**Recommendation**: If this is your first WPT event, ==g:start with the Prime at AUD $1,500==. You'll experience the full WPT atmosphere — livestreamed final table, deep structure, a shot at the Prime Perpetual Trophy — at roughly a third of the Championship buy-in. Many players enter both.
 
 ---
 
@@ -148,7 +148,7 @@ If you're outside Australia and want to warm up with online satellites before fl
 |:---:|---|---|---|---|---|
 | **2025** | Alan Pham | AUD $5,500 | 600 | ==g:AUD $3,000,000== | AUD $558,211 |
 | **2024** | James Obst | AUD $8,000 | 396 | AUD $2,930,400 | AUD $585,359 |
-| **2023** | Richard Lee | AUD $5,500 | — | — | ==**AUD $854,890**== |
+| **2023** | Richard Lee | AUD $8,000 | 600 | AUD $4,500,000 | ==**AUD $854,890**== |
 
 </div>
 
@@ -213,7 +213,7 @@ This section is what ==r:every competitor's guide skips== — and it's what trip
 
 ### NSW Law: Daily Cash Gaming Limit of AUD $5,000
 
-Under the **NSW Casino Control Act**, there is a **AUD $5,000 daily cash limit** for gaming play. All tournament entries (including satellites) must be purchased using gaming chips — not credit cards or cash at the table.
+Under **NSW casino cash-handling reforms**, there is a **AUD $5,000 daily cash limit** for gaming play (this cap holds through Sep 2026 and is set to drop to AUD $1,000/day from Aug 2027). Play is **carded** — you play through your Star Club card — and all tournament entries (including satellites) must be purchased using gaming chips, not credit cards or cash at the table.
 
 ### Wire Transfer to The Star Sydney — Before You Arrive
 
@@ -221,11 +221,9 @@ For buy-ins above AUD $5,000 (or to avoid daily withdrawal logistics), ==g:the s
 
 <div style="background:rgba(0,0,0,0.25);border:1px solid rgba(255,255,255,0.10);border-radius:10px;padding:16px 22px;margin:16px 0;font-size:13px;line-height:2">
 <strong>The Star Sydney — Wire Transfer Details</strong><br/>
-Bank: National Australia Bank (NAB)<br/>
-Swift Code: <strong>NATAAU3303M</strong><br/>
-Beneficiary: The Star Entertainment Group<br/>
-Address: 80 Pyrmont St, Pyrmont NSW 2009, Australia<br/>
-BSB: <strong>082-001</strong> &nbsp;|&nbsp; Account: <strong>579383265</strong>
+⚠️ The Star issues remittance details individually per guest — <strong>do not wire to any account number found online.</strong><br/>
+Email Star Poker or the Star Sydney cage (via starpoker.com.au or the Guest Service Desk) to request current telegraphic-transfer details <strong>issued in your name</strong> before you fly.<br/>
+Expect: a NAB account, <strong>personal bank accounts only</strong> (no Wise/Revolut/third-party), your full name + passport number in the payment reference, and 1–3 business days to clear.
 </div>
 
 ==r:Important restrictions:==
@@ -274,7 +272,7 @@ Here's what a full WPT Australia trip actually costs, based on 2025 data:
 
 </div>
 
-> **Note**: Budget scenario assumes you won your Prime satellite via on-site step qualifier (~AUD $255). Standard and Full Experience scenarios include direct buy-in. Flights from East Asia/Southeast Asia typically range AUD $700–1,500 return.
+> **Note**: Budget scenario assumes you won a Championship seat via the on-site step qualifier (~AUD $255 total if you win through both steps). Standard and Full Experience scenarios include direct buy-in. Flights from East Asia/Southeast Asia typically range AUD $700–1,500 return.
 
 ---
 
