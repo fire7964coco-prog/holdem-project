@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A straddle is an optional blind bet — usually twice the big blind — posted before the cards are dealt. It buys the straddler the last action and the option to raise preflop, doubling the stakes. In almost every case it's a -EV play, allowed only in cash games under house rules.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-07-04",
+  updated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "💰",
@@ -18,7 +18,7 @@ export const POST: Post = {
   content: `
 The first time someone straddled at my $1/$2 table, I had no idea why the guy under the gun tossed out $4 before the cards came — and why the dealer suddenly started the action two seats further along. I called it "the rich-guy bet" for about a month before I learned what it actually does: a straddle ==doubles the stakes and buys one player the last word==, all before anyone has looked at a card.
 
-If you've seen a live game where an extra blind appears out of nowhere, this is the term you're looking for. Below is exactly what a **straddle** is, every type you'll run into, who acts first when one is posted, and the honest answer to the only question that matters: ==g:should you actually do it?==
+If you've seen a live game where an extra blind appears out of nowhere, this is the term you're looking for. It's one of the most misunderstood entries in the whole [poker glossary](/en/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp"), so let's get it exactly right. Below is exactly what a **straddle** is, every type you'll run into, who acts first when one is posted, and the honest answer to the only question that matters: ==g:should you actually do it?==
 
 ---
 
@@ -155,6 +155,10 @@ A. The standard straddle is 2× the big blind — $4 in a $1/$2 game. Some no-li
 **Q. Who acts first after a straddle?**
 
 A. The player immediately to the left of the straddler acts first, because a live straddle works like a new big blind. Action then goes around the table, the small and big blinds act in turn, and the straddler acts last preflop — with the option to check or raise if no one raised before them.
+
+**Q. Who can straddle in poker? Can anyone straddle?**
+
+A. It depends on the type. For a standard straddle, only the player under the gun — the seat immediately left of the big blind — can post it. A Mississippi straddle, where the house allows it, lets any player straddle from any position, most often the button or cutoff. Either way you can only straddle *before* the cards are dealt (or before you look at them), and whether a given seat may straddle at all is entirely house-rules dependent — some rooms allow only UTG, some permit any seat, and many online games and tournaments ban it outright.
 
 **Q. Is a straddle considered a raise?**
 
