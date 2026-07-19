@@ -24,5 +24,18 @@
 ## ★ 별도 버티컬 — 스포츠베팅 배당/확률 (→ `_saved-sports-betting-odds.md`)
 - 배당 뜻(1600vol)·경마 배당·implied probability 변환기(LDA8~15). **포커와 다른 버티컬** = 전략 판단 후.
 
-## 📌 칩 분배(홈게임 셋업)
-- `how many poker chips do you start with` 880vol · `how to divide poker chips` — split-pot 리서치서 발견. 셋업 주제 별도 글 후보.
+## ★★ 홈게임 세팅 가이드 (2026-07-19 strategy 허브 리서치서 확장 — 볼륨 큼)
+- `how to play poker without chips` **320vol**(LDA24) · `how to play poker with friends` 110vol(LDA11) · `how many poker chips do you start with` **880vol** · `how to divide poker chips` 70 · `how to split poker chips for $X`
+- **아이디어**: "집에서 포커 하는 법 — 칩 세팅·칩 없이·친구랑" 홈게임 완전 가이드. 셋업/분배/대체물. 포커 정중앙 + 고볼륨. 신규 글 후보.
+
+## ★★ "포커 = 실력 vs 운/도박?" 독립글 (2026-07-19, 고볼륨)
+- `is poker gambling` **1300vol**(LDA23) · `is poker a skill or luck`·`is poker mostly luck or skill`·`is poker an iq game`·`do poker players have high iq`(LDA21)
+- **아이디어**: "Is poker skill or luck?" 완결글(실력요소·변수·장기 우위·연구). 고볼륨 저경쟁. strategy 허브 FAQ로도 흡수 가능(양쪽).
+
+## ★★ 홈게임 / 포커나이트 (2026-07-19 대폭 확장)
+- `how to win at poker night with friends`·`how to make poker night better at home`·`ideal number of people for a poker night`·`how to win home poker games`·`play poker with friends online`(LDA9~24) — "poker night" 서브테마. 위 홈게임 세팅과 합쳐 **홈게임/포커나이트 허브** 후보(칩·셋업·친구·온라인·인원수).
+
+## ★ 포커 에티켓 / 암묵의 룰 (LDA 9~25)
+- `is it rude to leave a poker table after winning`(LDA9)·`unwritten rules of poker`·`what not to do in poker`·`what is frowned upon in poker`
+- `unwritten rules of poker` · `what not to do in poker`(+vegas/beginners) · `what is frowned upon in poker` · `poker etiquette`
+- **아이디어**: "포커 에티켓·매너·암묵의 룰" 글. 신생 저경쟁. showdown-rules와 연계 or 신규.

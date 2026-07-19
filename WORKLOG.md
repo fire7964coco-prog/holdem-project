@@ -3,6 +3,15 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-19 (strategy 필라 착수 — 허브 holdem-strategy 경화 + 저볼륨 롱테일 전략 확립)
+
+> 사용자 논의 확립: **저볼륨(10/월) 롱테일도 winnable이면 버리지 말 것**(집합가치·승산>볼륨), 단 얇은 글 100개가 아니라 **리치글에 FAQ/H2로 흡수**(thin-content 회피). 메모리 [[low-volume-longtail-aggregation]]. + 시드 전략: **허브=넓게(포화까지)·cluster=1~2시드 깊이**(문구가 다르면 딥서치로 커버 안 됨).
+
+### ✅ strategy 허브 `holdem-strategy` 재정비 (strategy 1/6)
+- lowfruits 7시드(texas holdem strategy·how to win at poker·poker strategy·how to get better·poker tips 등) + WebSearch. 이미 최상급(5결정 프레임·FAQ 11)이라 진짜 새 winnable **FAQ 3개**: **Is poker a game of skill or luck?**(`is poker gambling` 1300vol)·**What is GTO poker?**(GTO 클러스터 LDA11~24, 허브에 없던 것)·**How do you get better at poker?**(LDA16). 경험담·§13·구조 불변.
+- 🎯 **틈새 대량 적립**(`_niche-opportunities.md`): ★홈게임/포커나이트(how to play without chips 320vol·with friends 110·chips 880)·★"포커=실력vs운" 독립글(is poker gambling 1300vol)·에티켓(unwritten rules)·GTO advanced 글·ROI.
+- ⚠️ **남은 strategy 5편**(각 1~2시드 딥): 3bet·continuation-bet·when-to-fold·limping·position-play.
+
 ## 2026-07-18 (★★★EN 경화 스코프 확장 = AI시대 GEO 재정비 규칙화 + ★족보(rankings) 필라 6/6 완주★)
 
 > 사용자: "EN 구조는 잘 짜였고, AI시대에 맞춰 전략 수정. 이왕 전수조사하는 김에 경험담뿐 아니라 롱테일 질문형 H2로 재정비." → ①AI시대 상위노출(GEO) 리서치 → ②경화 규칙을 "경험담+GEO 4종"으로 확장·문서화 → ③족보 허브 실제 적용. 배포됨.

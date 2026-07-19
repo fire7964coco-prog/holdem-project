@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Every winning Texas Hold'em decision reduces to five repeatable questions: where am I sitting (position), is this hand worth playing, do I raise or fold (never limp), do I keep betting on the flop, and when do I let go? A tight-aggressive player who answers those five well folds ~80% of hands preflop, plays them aggressively when they do, and beats almost every casual game — no memorized tip list required.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-07-06",
+  updated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -222,6 +222,18 @@ A. Tight-aggressive describes playing a narrow range of strong hands (tight) but
 **Q. How often should you continuation bet (c-bet)?**
 
 A. There's no single number — it depends on position, board, and how many opponents you face. In position against one player on a dry board you might c-bet 60–80% of the time; out of position or into two-plus opponents it drops toward 40–50% or lower. Bet more on boards that miss your opponent's range, less on wet boards that connect with it, and size small (25–35% pot) when betting wide, larger (65%+) when polarized.
+
+**Q. Is poker a game of skill or luck?**
+
+A. Both — but skill wins over time. Any single hand carries a big luck element, which is why a beginner can stack a pro in one session. Across thousands of hands, though, the better decision-maker's edge dominates and variance evens out — which is exactly why the same players keep cashing. Poker is a game of skill played with a deck of luck.
+
+**Q. What is GTO poker?**
+
+A. GTO (Game Theory Optimal) is a mathematically balanced strategy that can't be exploited — you mix bluffs and value bets in ratios that leave opponents no profitable counter. It's the theoretical ideal that solvers compute, but at low stakes you make more money playing *exploitative* poker: deviating from GTO to punish specific leaks (players who over-fold or call too much). Start with tight-aggressive, learn to exploit, and treat GTO as the reference point — not the day-one goal.
+
+**Q. How do you get better at poker?**
+
+A. Study away from the table and tighten up at it. The fastest gains for most players: fold more hands preflop (the ~80% rule), raise or fold instead of limping, and review your biggest losing hands afterward to find the leak. Add one concept at a time — position, then pot odds, then c-betting — rather than everything at once. Volume plus honest review beats any single "tip."
 
 ---
 
