@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Folding is the most underrated skill in poker — a fold's worst outcome is zero, while a losing call bleeds chips every time. A solid player folds around 75–85% of hands before the flop, releases missed hands and weak draws that don't meet their pot odds after it, and — hardest of all — lays down strong-but-beaten hands when a passive opponent's line screams value. Most players don't call too much because they can't read hands; they call because the chips already in the pot feel like theirs. They aren't.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-07-06",
+  updated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🛡️",
@@ -193,6 +193,10 @@ Notice both poles are here: fold *more* against the value-heavy players who neve
 **Q. When should you fold in poker?**
 
 A. Fold whenever calling or raising loses money in the long run: when your hand is too weak preflop, when you miss the flop and face aggression on a board that fits your opponent's range, when a draw doesn't meet its pot odds, and when a value-heavy line beats the hand you hold. A fold's worst outcome is zero, so folding a losing spot always beats calling it.
+
+**Q. Do you lose money when you fold in poker?**
+
+A. You only lose the chips you already put in the pot — folding costs you nothing more. Any bets you made earlier are gone the moment you make them (they belong to the pot), and folding just stops you from putting in *another* chip. So a fold isn't "losing" the way a called-down loss is: from that point forward its worst outcome is zero, which always beats a call you're going to lose. You can't win the pot by folding, but you save every chip you'd have paid to lose.
 
 **Q. How often should you fold preflop?**
 
