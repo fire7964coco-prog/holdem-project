@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "ICM (Independent Chip Model) converts your tournament chip stack into its real prize-money value, using the payouts and everyone's stacks. Because you only win one first prize, doubling your chips never doubles your money — so the chip leader's stack is worth less than its chip share, and short stacks are worth more. That gap is why you fold hands on the bubble that would be easy calls in a cash game.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-07-09",
+  updated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🏆",
@@ -209,6 +209,10 @@ A. No. In a cash game every chip already equals its face value in dollars and yo
 **Q. When should I ignore ICM?**
 
 A. Early and middle stages, deep-stacked play with small blinds, and heads-up for the title — all spots where pay jumps are far away or only two prizes remain. In those cases you play chip EV and focus on accumulating chips.
+
+**Q. What are the most common ICM mistakes?**
+
+A. Three big ones. First, *over*-applying ICM — folding your way down "to ladder up" when the pay jumps are still far away, instead of accumulating chips. Second, calling too wide as a medium stack near the bubble, exactly where your risk premium is highest and busting costs locked-in money. Third, agreeing to a chip chop when you're the short stack (or an ICM deal when you're the leader) without running the numbers first. ICM is a late-game tool: using it too early, or ignoring it at the final table, both leak money.
 
 **Q. Who invented ICM?**
 

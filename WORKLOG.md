@@ -14,7 +14,10 @@
 - lowfruits 2시드(tournament vs cash·cash vs tournament) + WebSearch. 이미 방대·완벽(FAQ9)이라 winnable FAQ 2개: How many big blinds to start with (cash vs tournament)?(70/90vol LDA9)·Do you get taxed on poker winnings?(LDA23, 관할 캐비엇). 경험담·§13·구조 불변.
 ### ✅ tournament `holdem-bubble` 재정비 (tournament 3/6)
 - lowfruits 2시드(poker bubble·what is the bubble, ★bubble=tea/bath/게임 노이즈 88%→엄격필터 88 winnable) + WebSearch. 이미 방대(FAQ7·bubble factor표)라 winnable FAQ 2개: What is the bubble factor?(LDA6, H2엔 있으나 FAQ 無)·What does paying/bursting the bubble mean?(WS3=3). 경험담·§13·구조 불변.
-- ⚠️ **남은 tournament 클러스터 2편**: icm(320vol LDA6!)·short-stack.
+### ✅ tournament `holdem-icm` 재정비 (tournament 4/6)
+- lowfruits 2시드(icm poker·what is icm) + WebSearch. 이미 완벽(FAQ7·Malmuth-Harville검산·chip ev/chip chop/accuracy 2025 study)이라 winnable FAQ 1개: What are the most common ICM mistakes?(LDA6, 내용 흩어져 있으나 FAQ 無). 경험담·§13·구조 불변.
+- 🎯 니치 추가: **포커 트레이닝/코스/책 추천**(best poker training sites 140vol LDA16)·트레이너 도구(quiz/solver) → `_niche-opportunities.md`.
+- ⚠️ **남은 tournament 클러스터 1편**: short-stack(마지막).
 
 ## 2026-07-19 (strategy 필라 착수 — 허브 holdem-strategy 경화 + 저볼륨 롱테일 전략 확립)
 

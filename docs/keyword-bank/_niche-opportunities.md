@@ -39,6 +39,10 @@
 - 구조/시간: `best structure for a home poker game`·`how long does poker last at home`·`how to run a poker tournament fundraiser`
 - → **"홈 포커 게임/나이트 완전 가이드"**(칩 수·세트 크기·구조·타이머·인원·친구·자선). rules·odds·strategy·tournament **모든 필라서 반복** = 사실상 별도 글 1순위 확정.
 
+## ★ 포커 트레이닝/코스/책 추천 (2026-07-19 ICM 리서치, LDA5~16)
+- `best poker training sites`(**140vol**)·`best free poker trainer`·`best gto poker course`·`best poker book to read`·`cheap poker courses`·`what is the best free way to learn poker`·`icm poker quiz/trainer/solver`(LDA6~18)
+- **아이디어**: "최고의 포커 트레이닝 사이트/코스/책" 리뷰·비교글(어필리에이트 가능) + **인터랙티브 트레이너 도구**(outs/equity/icm 퀴즈·솔버) → [[2순위 트레이너 도구]]와 합류. 저경쟁.
+
 ## ★ 온라인 포커 사이트 리뷰/추천 (2026-07-19 tournament 리서치, LDA31~37)
 - `what is the most legit/trustworthy/honest online poker site`·`is free online poker actually free`·`which online poker site is best 2026`·`is there online poker for real money`
 - **아이디어**: "믿을만한 온라인 포커사이트" 리뷰/비교글. ⚠️ 어필리에이트/리뷰 모델 + 규제·신뢰 민감 → 사이트 방향(커뮤니티 vs 어필리에이트) 판단 후.
