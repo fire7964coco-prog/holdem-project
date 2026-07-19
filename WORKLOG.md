@@ -12,7 +12,9 @@
 - 🎯 **틈새 대량 적립**(`_niche-opportunities.md`): ★홈게임/포커나이트(how to play without chips 320vol·with friends 110·chips 880)·★"포커=실력vs운" 독립글(is poker gambling 1300vol)·에티켓(unwritten rules)·GTO advanced 글·ROI.
 ### ✅ strategy `holdem-3bet` 재정비 (strategy 2/6)
 - lowfruits 2시드(`3bet`·`* 3bet in poker`) + WebSearch. 이미 극도로 촘촘(FAQ 13!)이라 3bet 자체는 완벽 → 진짜 gap = **4-bet 세부**(사다리 언급만). **winnable FAQ 2개**: What hands should you 4-bet with & how much?(hands·sizing·%)·When should you 5-bet? 경험담·§13 사이징·구조 불변.
-- ⚠️ **남은 strategy 4편**: continuation-bet(c-bet, 리서치 완료 대기)·when-to-fold·limping·position-play.
+### ✅ strategy `holdem-continuation-bet` 재정비 (strategy 3/6)
+- lowfruits 2시드(`c-bet`·`continuation bet`) + WebSearch. 이미 극도로 촘촘(FAQ 12·7-mistakes표)이라 c-bet 완벽 → gap = **value bet 정의**(글이 용어만 쓰고 정의 없음). **winnable FAQ 1개**: What is a value bet?(LDA15). "common c-bet mistakes"는 기존 H2가 정확매칭이라 중복 배제. value 클러스터는 니치 킵. 경험담·§13·구조 불변.
+- ⚠️ **남은 strategy 3편**: when-to-fold·limping·position-play.
 
 ## 2026-07-18 (★★★EN 경화 스코프 확장 = AI시대 GEO 재정비 규칙화 + ★족보(rankings) 필라 6/6 완주★)
 

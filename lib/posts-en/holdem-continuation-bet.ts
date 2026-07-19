@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A continuation bet (c-bet) is a bet on the flop by the player who raised preflop. The modern rule isn't 'c-bet every flop' — it's to bet the flops that favor your range (high, dry boards like K-7-2) small and often, and check the ones that favor your opponent (low, connected boards like 7-6-5). Size small — about one-third pot — on dry boards, big — two-thirds or more — on wet ones, c-bet less out of position, and much less multiway.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-07-06",
+  updated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "15 min",
   emoji: "🔥",
@@ -246,6 +246,10 @@ A. Don't c-bet when the board smashed your opponent's range (low connected board
 **Q. Is a c-bet a bluff?**
 
 A. Sometimes yes, sometimes no — that's the point. Many c-bets are semi-bluffs or pure bluffs with hands that missed, betting because your opponent probably missed too. Others are value bets with strong hands. A balanced c-betting strategy mixes both on the same boards, so opponents can't tell whether your flop bet means strength or air.
+
+**Q. What is a value bet in poker?**
+
+A. A value bet is a bet made with a strong hand hoping to get *called* by a worse one — the opposite of a bluff, which hopes to make a better hand fold. Most of your c-bets on boards you connected with are value bets: you bet top pair or a set to charge worse pairs and draws. The skill is sizing it so weaker hands still call — bet an amount your opponent can talk themselves into paying.
 
 **Q. What is a good c-bet percentage on a poker HUD?**
 
