@@ -86,7 +86,7 @@ This is what most beginner guides skip, and it's the most important mechanical c
 
 Notice: **you didn't lose a single chip** between Level 1 and Level 9. But your stack went from 200BB to 10BB because the blinds rose. This is how tournaments force action and eventually eliminate players.
 
-==g:Rule of thumb: below 20 big blinds, you're in push-or-fold territory. Below 10 big blinds, you must shove almost any playable hand before the blinds eat you alive.==
+==g:Rule of thumb: below 20 big blinds you're edging into push-or-fold territory, and by 15 it's your main mode. Below 10 big blinds, you must shove almost any playable hand before the blinds eat you alive.==
 
 When you get there, the exact shoving ranges live in [short-stack strategy — when to push or fold](/en/blog/holdem-short-stack).
 

@@ -186,7 +186,7 @@ Royal Flush|Always a tie (split pot)|-No kicker
 Straight Flush|Highest card only|-No kicker
 Four of a Kind|Quad rank → 5th card|+Kicker
 Full House|Trips rank → pair rank|-No kicker
-Flush|Compare all 5, high to low|+Kicker
+Flush|Compare all 5, high to low|-No kicker
 Straight|Highest card only|-No kicker
 Three of a Kind|Trips rank → 2 kickers|+Kicker
 Two Pair|High pair → low pair → kicker|+Kicker

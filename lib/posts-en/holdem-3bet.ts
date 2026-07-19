@@ -282,7 +282,7 @@ A. You have three options: 4-bet your premiums (QQ+, AK) plus the occasional blo
 
 **Q. What is a good fold-to-3-bet percentage?**
 
-A. Around 55% is a reasonable, roughly balanced baseline — you continue with the top of your range and let the rest go. Folding much more than that makes you exploitable by light 3-bets; folding far less means you're calling or 4-betting too wide. Adjust to the opponent: fold more against players who never bluff-3-bet.
+A. Around 55% is a reasonable, roughly balanced baseline — you continue with the top of your range and let the rest go. (That's wider than the pure-math MDF, which against a big 3-bet would have you defend only about a third; because real 3-bet ranges carry bluffs, you fold a little less than that vacuum number.) Folding much more than 55% makes you exploitable by light 3-bets; folding far less means you're calling or 4-betting too wide. Adjust to the opponent: fold more against players who never bluff-3-bet.
 
 **Q. Should you 3-bet or 4-bet all-in with a short stack in a tournament?**
 

@@ -75,8 +75,8 @@ Action starts to the left of the big blind and moves clockwise. On your turn you
 ### Solid starting hands for beginners
 
 - **Premium:** A♠A♥ (pocket aces), K♠K♥, Q♠Q♥, J♠J♥
-- **Strong:** A♠K♥ ("Big Slick"), A♠Q♥, A♠J♥, 10♠10♥
-- **Situational:** 9♠9♥, 8♠8♥, K♠Q♥, K♠J♥
+- **Strong:** A♠K♥ ("Big Slick"), A♠Q♥, 10♠10♥, 9♠9♥
+- **Situational:** A♠J♥, 8♠8♥, K♠Q♥, K♠J♥
 
 Which of these you can actually open depends on your seat. For the full 169-hand chart broken down by position, see the [Texas Hold'em starting hands chart](/en/blog/holdem-starting-hands-chart).
 

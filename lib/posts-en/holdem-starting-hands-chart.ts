@@ -112,7 +112,7 @@ Want it as a standalone tool with expanded ranges per seat? Use the [Texas Hold'
 
 UTG is the hardest seat to play. ==r:Eight players still act behind you.== Any hand you open here needs to hold up against strong ranges.
 
-The core of the UTG range (a full ~13% range widens to mid pairs like 77–99, more suited broadways, and a few offsuit hands like AQo/AJo as you improve):
+The core of the UTG range (a full ~13% range widens to mid pairs like 77–99, more suited broadways, and a few offsuit hands like AQo as you improve):
 
 - Pocket pairs: **TT, JJ, QQ, KK, AA**
 - Premium suited: **AKs, AQs, AJs, KQs**

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ties are broken in a fixed order: hand rank first, then the cards that make the hand, then kickers from highest to lowest. Same pair → higher first kicker wins; identical five cards → split pot. Suits never decide a tie.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-07-18",
+  updated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "⚖️",
@@ -85,7 +85,7 @@ Royal Flush|Always a tie (split pot)|-No kicker
 Straight Flush|Highest card only|-No kicker
 Four of a Kind|Quad rank → 5th card|+Kicker
 Full House|Trips rank → pair rank|-No kicker
-Flush|Compare all 5, high to low|+Kicker
+Flush|Compare all 5, high to low|-No kicker
 Straight|Highest card only|-No kicker
 Three of a Kind|Trips rank → 2 kickers|+Kicker
 Two Pair|High pair → low pair → kicker|+Kicker

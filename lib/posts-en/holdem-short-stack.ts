@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "How to Play a Short Stack in Poker — Push/Fold Strategy by Stack Depth",
   seoTitle: "How to Play a Short Stack in Poker (Push/Fold)",
   desc: "Short-stacked in a tournament? Learn push/fold by stack depth — when to jam at 15, 10, and 5 big blinds, the M-ratio zones, and the ICM twist on the bubble.",
-  tldr: "A short stack (roughly under 15–20 big blinds) can't play normal postflop poker, so it switches to push/fold: move all-in first-in to keep your fold equity, and never open-limp or min-raise-then-fold. Shove wider from late position, keep your calling range tighter than your shoving range, and don't blind down to nothing 'waiting for a hand' — your fold equity is the weapon, and it disappears below about 8 big blinds.",
+  tldr: "A short stack (roughly under 15–20 big blinds) can't play normal postflop poker, so it switches to push/fold: move all-in first-in to keep your fold equity, and never open-limp or min-raise-then-fold. Shove wider from late position, keep your calling range tighter than your shoving range, and don't blind down to nothing 'waiting for a hand' — your fold equity is the weapon, and it fades hard below about 8 big blinds.",
   category: "tournament",
   date: "2026-07-09",
   updated: "2026-07-19",

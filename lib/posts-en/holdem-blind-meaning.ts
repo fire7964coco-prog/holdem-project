@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Blinds are forced bets posted before cards are dealt. The small blind sits left of the dealer button and the big blind to their left; the big blind — usually double the small blind — is the table's betting unit.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-07-17",
+  updated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "💰",
@@ -96,7 +96,7 @@ Stakes are written **SB/BB**. A "$1/$2" game means a $1 small blind and a $2 big
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Stakes | Small Blind | Big Blind | Typical buy-in |
+| Stakes | Small Blind | Big Blind | Typical buy-in / level |
 |:---|:---:|:---:|:---:|
 | $0.5/$1 | $0.50 | $1 | $60–$100 |
 | $1/$2 | $1 | $2 | $100–$300 |

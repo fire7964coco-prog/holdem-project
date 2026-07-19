@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Not the way you do in blackjack — the deck reshuffles every hand and too few cards are exposed, so tracking high and low cards gives you no edge. But poker has its own legal counting: counting outs, using blockers, and tracking dead cards to read what your opponent can't have.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-07-08",
+  updated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🧮",
@@ -101,7 +101,7 @@ Every card you can see removes possibilities. If one of your straight outs is al
 
 **No — counting outs, calculating odds, and using blockers is 100% legal in poker, because it's nothing but mental math.** No rule anywhere forbids thinking. It's the definition of skill.
 
-Here's the part people confuse: card counting isn't illegal in *blackjack* either — it's not a crime, just mental arithmetic. But a casino is a private business and can bar or refuse a suspected counter, because a counter costs *the house* money. Poker flips that completely: you're playing ==other players==, and the house only takes the rake no matter who wins. Nobody has any reason to stop you from counting your outs — so the whole "getting kicked out" problem simply doesn't exist here.
+Here's the part people confuse: card counting isn't illegal in *blackjack* either — it's not a crime, just mental arithmetic. But in most jurisdictions a casino is a private business that can bar or refuse a suspected counter, because a counter costs *the house* money. Poker flips that completely: you're playing ==other players==, and the house only takes the rake no matter who wins. Nobody has any reason to stop you from counting your outs — so the whole "getting kicked out" problem simply doesn't exist here.
 
 :::note
 The line to never cross is physical or informational cheating — marked cards, collusion, sharing hole-card info, or real-time solver software online. That's not "counting," it's fraud. Doing math in your head is always fair game.

@@ -125,7 +125,7 @@ The distinction matters: the **big blind loses the most raw chips per 100 hands*
 
 Playing UTG well is mostly about restraint:
 
-- **Open roughly the top ~13% of hands** — the core is strong pairs (88+), AK/AQ, and the best suited broadways (AJs, KQs), rounded out by medium pairs and the top suited aces. For the exact hand-by-hand grid, use the [starting hands chart](/en/blog/holdem-starting-hands-chart).
+- **Open roughly the top ~13% of hands** — the core is strong pairs (TT+), AK/AQ, and the best suited broadways (AJs, KQs), rounded out by the medium pairs and top suited aces you add as you loosen. For the exact hand-by-hand grid, use the [starting hands chart](/en/blog/holdem-starting-hands-chart).
 - **Fold the pretty-but-dominated stuff.** KJo and QJo look playable and quietly bleed chips from UTG — when they hit, someone behind often hits bigger.
 - **Expect to play the hand OOP.** Whoever calls your UTG open probably has position on you for three streets, so your range needs to be strong enough to stand that tax.
 

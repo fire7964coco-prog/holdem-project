@@ -79,7 +79,7 @@ How much is "most"? A solid [tight-aggressive](/en/blog/holdem-starting-hands-ch
 
 Which hands make the cut depends on your position (Decision 1 feeding Decision 2), but a starter rule of thumb:
 
-- **Always raise:** big pairs (A‑A, K‑K, Q‑Q, J‑J), and A‑K.
+- **Always raise:** big pairs (A‑A down to T‑T), and A‑K.
 - **Usually raise:** medium pairs, A‑Q, and strong suited broadways (K‑Q, A‑J suited) — more freely the later your seat.
 - **Speculative, position-dependent:** small pocket pairs and suited connectors, which want cheap multiway pots (more on the math below).
 - **Fold:** almost everything else, especially offsuit junk like J‑4, Q‑7, K‑3.
