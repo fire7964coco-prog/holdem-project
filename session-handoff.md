@@ -5,7 +5,20 @@
 
 ---
 
-## ▶▶▶ 새 세션 START HERE (2026-07-18 — ★★★EN 마스터 경화 = 경험담 + AI시대 GEO(H2 롱테일 질문화) / ✅rules·rankings·odds 3필라(18편) 완료 → 다음=strategy)
+## ▶▶▶ 새 세션 START HERE (2026-07-19 — ★★★EN 마스터 42편 완결 + Fable5 최종검수 락 완료 → 다음 = 번역(JA부터))
+
+> ✅✅✅ **EN 마스터 완결.** 6필라(rules·rankings·odds·strategy·tournament·glossary) 전편 AI시대 경화(경험담+GEO winnable FAQ+H2질문화) + glossary 클러스터 역링크 루프 완결 + 독립글(positions·starting-hands-chart·card-counting) 확인. 그 후 **Fable5 8병렬 검수관 최종 정밀검수**(적대적 §13·수학 재계산·크로스문서·팩트체크) → **4배치 수정 배포**(`ec11984`·`992982d`·`3db7238`·`910f6f9`). 상세 WORKLOG 2026-07-19 최상단.
+>
+> - **검수 결과**: 콘텐츠 6필라 42편 §13 핸드·수학 실오류 **0건**(치명은 문구/공식/족보표현 6건, 전부 수정). 이벤트 4편은 **WebSearch 딥서치**로 팩트 재확인(은행계좌 안전화·K-ETA 면제+₩10,000·Champions Cup 자격·춘천 등록상태 등). 검증불가는 공식출처 안내로 처리.
+> - **미결(외부확인 잔여)**: apt Natural8 스텝금액($3.50→$20 미반영, 시트수만 수정)·JTBC 참가규모·이벤트 2026 세부일정(공식 브로슈어 확정 시)·이벤트 클러스터 고아상태(별도 Events 필라 `_saved-tournament-schedule-events.md`).
+>
+> ### ▶▶ 다음 = 번역 트랙 (JA부터, 언어×전필라)
+> - **읽는 순서**: `docs/translation-spec.md` → `docs/translation-terms-ja.md` → 이 파일. 파이프라인은 아래 2026-07-13 ja 완성 블록 참조.
+> - ★**착수 전 현지 실검색 롱테일 리서치 필수**([[translation-local-research-first]]·[[translation-is-contextual-reposting]]). EN=마스터, 번역=현지 맥락 재저작(§13만 불변).
+> - ⚠️ **구 번역(ja 등)은 stale** — 이번 경화·검수 완료본(경험담·winnable FAQ·§13수정) 미반영 → 재번역/재검수 대상. 모델분담 [[translation-model-roles-workflow]].
+> - 대안 트랙: 별도 Events/일정 필라(홀덤대회일정 KO 1등, [[tournament-schedule-local-intent-keep]]) · 홈게임 가이드 등 니치(`_niche-opportunities.md`).
+
+## ▶▶▶ (이전) START HERE (2026-07-18 — ★★★EN 마스터 경화 = 경험담 + AI시대 GEO(H2 롱테일 질문화) / ✅rules·rankings·odds 3필라(18편) 완료 → 다음=strategy)
 
 > ★★★**다음 세션 주제 = EN 마스터 전수검사 후 경화**(사용자 확정, "포스팅 하나하나를 제대로"). **A안**: EN 6필라 전부 정비 → 그 다음에야 번역(JA부터). 번역 속도보다 **디테일 우선**("나 목숨걸었어"). 규칙은 오늘 갱신한 `.cursor/rules/posting.mdc` §E-E-A-T "★EN 마스터 경화 = 경험담 + AI시대 GEO 재정비" + §GEO "🆕 2026-07-18 최신 실증 데이터" 참조.
 

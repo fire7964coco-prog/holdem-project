@@ -3,6 +3,24 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-19 (★★★ Fable5 최종 정밀검수 — EN 마스터 42편 락 완료 → 번역 준비 완료)
+
+> EN 전편(6필라+독립+이벤트) 완결 후, 번역 착수 전 **Fable5 8개 병렬 검수관**으로 적대적 최종검수(7장→베스트5 열거·수학 전량 재계산·크로스문서·죽은링크·팩트체크). 이후 4배치로 수정 배포.
+
+### 검수 결과 (8검수관): 🔴치명 6 · 🟡경미 41 · 🟠외부확인 20
+- **콘텐츠 6필라 42편: §13 핸드 실오류·수학 실오류 0건.** 치명은 전부 문구/공식/족보표현(계산 자체는 견고). 21+ 핸드예시·ICM·확률 전량 재계산 통과.
+- 치명 콘텐츠 3: implied-odds FAQ 공식(−pot→−(pot+call))·bad-beat 쿼드에이스("only royal"→"only a straight flush")·starting-hands "15-20%=평균"(실제25%).
+- 치명 이벤트 3: wpt 은행계좌(오송금 위험)·wpt Champions Cup 자격오류·korea 춘천 "Open now" 만료.
+
+### 수정 4배치 (전부 빌드통과·배포)
+- **배치1 `ec11984`**: 치명3 + 정확성8(outs 19.1%·쿼드1/408·all-in팟계산·straddle 1좌석·Puzzle3 쿼드킹·bubble hand-for-hand·icm이유).
+- **배치2 `992982d`**: 정확성/일관성8(flush캐비엇·reading-board·high-card·/en/링크·A5s28%·when-to-fold·game-order 7moves·showdown일치).
+- **배치3 `3db7238`**: 크로스문서 하모나이징11(kicker배지·UTG코어·push/fold문턱·티어정렬·MDF절·always-raise TT+ 등).
+- **배치4 `910f6f9`**: 이벤트4편 — **2개 WebSearch 딥서치 검수관**이 전항목 출처확인 후 수정. wpt 은행정보 안전화·Champions Cup·2023행·NSW / korea 춘천상태·AJPC TBC·Suga·YTN / apt K-ETA(면제+₩10,000)·셔틀 / ept 통화. 검증불가(은행계좌)는 공식출처 안내로 안전화.
+
+### 결론
+**EN 마스터 42편 = 검증 완료·번역 준비 완료.** 핸드오프 교훈 "여러 번 검수 ≠ 완벽"이 또 확인(치명 6건)됐으나, 이번엔 검증된 계산 자체는 무결. 다음 = 번역(JA부터, [[translation-local-research-first]]).
+
 ## 2026-07-19 (tournament 필라 착수 — 허브 holdem-tournament 경화 + ★대회 일정/지역 의도 발견)
 
 > ★★사용자 인사이트: **KO GSC 1등 = 홀덤대회·홀덤대회일정.** tournament 지역/일정 키워드 버리지 말 것 → `poker tournament las vegas` **9900vol LDA6**·`schedule` 480 LDA3·**아시아**(korea/asia 2026 LDA6, 사이트 직결) 발견·저장(`_saved-tournament-schedule-events.md` + 메모리 [[tournament-schedule-local-intent-keep]]). 라이브이벤트 가이드 확장 대상.
