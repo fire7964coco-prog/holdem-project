@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "By the river you'll make one pair 43.8% of the time, two pair 23.5%, a flush 3.0%, and a full house 2.6% — while a royal flush shows up just once in about 31,000 hands.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-07-18",
+  updated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🎲",
@@ -193,7 +193,7 @@ Some numbers exist mostly to explain the worst night of your poker life.
 | Long shot | Odds |
 |:---|:---:|
 | Being dealt pocket aces | 1 in 221 |
-| Flopping quads with a pocket pair | 1 in 407 |
+| Flopping quads with a pocket pair | 1 in 408 |
 | Flopping a straight flush (suited connectors) | ~1 in 4,900 |
 | Making a royal flush by the river | 1 in 30,940 |
 

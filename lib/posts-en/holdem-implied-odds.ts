@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Implied odds are the extra chips you expect to win on later streets when your draw hits. They let you profitably call a draw that pot odds alone say to fold — but only if stacks are deep and your opponent will actually pay you off.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-07-18",
+  updated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💰",
@@ -183,7 +183,7 @@ A. Implied odds are the extra chips you expect to win on later streets if your d
 
 **Q. How do you calculate implied odds?**
 
-A. Use: extra needed = (your call ÷ your hit chance) − the current pot. Calling $50 with a flush draw that hits 19.6% of the time means 50 ÷ 0.196 = $255, minus the $200 already in play (the $150 pot plus your $50 call) = about $55. If you can realistically win $55 more when you hit, the call is profitable. Note it's always an estimate, since future betting isn't guaranteed.
+A. Use: extra needed = (your call ÷ your hit chance) − (the current pot + your call). Calling $50 with a flush draw that hits 19.6% of the time means 50 ÷ 0.196 = $255, minus the $200 already in play (the $150 pot plus your $50 call) = about $55. If you can realistically win $55 more when you hit, the call is profitable. Note it's always an estimate, since future betting isn't guaranteed.
 
 **Q. What is the difference between pot odds and implied odds?**
 

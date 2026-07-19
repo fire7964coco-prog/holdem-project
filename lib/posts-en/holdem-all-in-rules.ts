@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Going all-in means betting every chip you have. You can only win what you matched from each opponent (the main pot). Extra bets from bigger stacks form a side pot you cannot win. An all-in for less than a full raise does NOT reopen the betting for players who already acted.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-07-17",
+  updated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "♠",
@@ -68,7 +68,7 @@ Two valid ways:
 
 ## How Do Side Pots Work in Poker? (Why the All-In Player Gets Capped)
 
-The all-in player can only win what they put in multiplied by the number of callers. Any chips bet beyond that form a **side pot** that belongs exclusively to the players who funded it.
+The all-in player can only win their own bet plus a matching amount from each other player still in the pot. Any chips bet beyond that form a **side pot** that belongs exclusively to the players who funded it.
 
 ![Texas Hold'em all-in side pot — dealer separating chips into main pot and side pot as Player A is capped](/images/holdem-all-in-side-pot.webp)
 
@@ -216,7 +216,7 @@ A partial all-in from Player C does not give Player A a second chance to re-rais
 Table stakes. What's on the table is all you can bet. If you're all-in for $80 and the pot is $400, you can only win $80 from each caller.
 
 ### Mistake 4: Mucking your hand too quickly
-You're all-in for the main pot. Two other players battle it out for the side pot. I once watched a short stack toss his cards the moment he lost the side-pot showdown — forgetting the main pot was still his to win. Those chips were gone the instant the cards hit the muck. Don't muck — your hand is still live for the main pot. ==Always wait for the dealer to resolve every pot before touching your cards.==
+You're all-in for the main pot. Two other players battle it out for the side pot. I once watched a short stack toss his cards the moment the side-pot showdown went against him — forgetting he wasn't even in that pot, and the main pot was still his to win. Those chips were gone the instant the cards hit the muck. Don't muck — your hand is still live for the main pot. ==Always wait for the dealer to resolve every pot before touching your cards.==
 
 ### Mistake 5: Going all-in out of frustration
 The all-in is the most powerful move at the table. It forces opponents into all-or-nothing decisions. That power disappears when you shove randomly. Use it at the right moment — short stack pressure, value hands you want called, bluffs with real fold equity.

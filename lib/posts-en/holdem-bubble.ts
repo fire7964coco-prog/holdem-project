@@ -134,7 +134,7 @@ So a chip-EV coin flip you'd take at 50% becomes a ==clear fold== when your bubb
 
 **When the money is close, tournaments switch to "hand-for-hand" — every table plays exactly one hand at the same time, then waits — specifically to stop players from stalling into the money.** Without it, players at slow tables could fold hand after hand while faster tables burned through the bubble. Hand-for-hand levels the field:
 
-- **How it works:** the tournament director pauses the clock; all tables deal one hand, and no table starts the next until every table has finished. If two players bust on the same hand-for-hand, the one with fewer chips at the start of the hand usually takes the lower (bubble) finish.
+- **How it works:** the tournament director pauses the clock; all tables deal one hand, and no table starts the next until every table has finished. If two players bust on the same hand-for-hand at the same table, the one who started the hand with fewer chips takes the lower (bubble) finish; if they bust at different tables, they are ranked as a tie and split the two payouts involved.
 - **Stalling:** taking the full time bank on every decision to see fewer hands (and fold into the money). Big stacks have no reason to stall — they want more hands to attack. Short and medium stacks sometimes stall to survive, ==but excessive stalling can earn a clock call or a penalty==, so tank within reason.
 - **Exploit it:** because everyone else slows down, a big stack that keeps applying pressure during hand-for-hand racks up blinds and antes almost uncontested.
 

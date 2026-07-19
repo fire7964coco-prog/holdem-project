@@ -16,7 +16,7 @@ export const POST: Post = {
   imageAlt: "An under-the-gun player posting an extra blind bet of two chips in front of the big blind before the cards are dealt",
   tags: ["straddle", "what is a straddle in poker", "poker straddle rules", "mississippi straddle", "button straddle", "sleeper straddle", "is straddling profitable", "utg straddle"],
   content: `
-The first time someone straddled at my $1/$2 table, I had no idea why the guy under the gun tossed out $4 before the cards came — and why the dealer suddenly started the action two seats further along. I called it "the rich-guy bet" for about a month before I learned what it actually does: a straddle ==doubles the stakes and buys one player the last word==, all before anyone has looked at a card.
+The first time someone straddled at my $1/$2 table, I had no idea why the guy under the gun tossed out $4 before the cards came — and why the dealer suddenly started the action one seat further along. I called it "the rich-guy bet" for about a month before I learned what it actually does: a straddle ==doubles the stakes and buys one player the last word==, all before anyone has looked at a card.
 
 If you've seen a live game where an extra blind appears out of nowhere, this is the term you're looking for. It's one of the most misunderstood entries in the whole [poker glossary](/en/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp"), so let's get it exactly right. Below is exactly what a **straddle** is, every type you'll run into, who acts first when one is posted, and the honest answer to the only question that matters: ==g:should you actually do it?==
 

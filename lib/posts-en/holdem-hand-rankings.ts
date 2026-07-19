@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Poker hand rankings from best to worst are: Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, One Pair, and High Card.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-07-18",
+  updated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🃏",
@@ -226,7 +226,7 @@ You hold **6♥ 2♣**. The board has four hearts.
 
 You hold **A♥ 3♣**. The board already has trip kings.
 
-→ Your A♥ pairs with the board's A♠, giving you **KKK + AA, a full house**. But if your opponent also holds a single Ace, they have the *same* full house and you split (only the exact pocket A-A makes a bigger boat, aces full). If they have no Ace and only a smaller pair, your boat wins. The lesson: when the board does most of the work, your hand is often only as good as one extra card.
+→ Your A♥ pairs with the board's A♠, giving you **KKK + AA, a full house**. But if your opponent also holds a single Ace — and not the case king — they have the *same* full house and you split. Two holdings still beat you: pocket A-A makes a bigger boat (aces full), and an ace alongside the last king makes quad kings. If they have no Ace and only a smaller pair, your boat wins. The lesson: when the board does most of the work, your hand is often only as good as one extra card.
 
 ---
 

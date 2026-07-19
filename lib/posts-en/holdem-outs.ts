@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "An out is any card left in the deck that improves your hand to a likely winner. Count them, then convert: multiply outs by 4 on the flop or by 2 on the turn to get your rough % to hit. A flush draw is 9 outs ≈ 36% by the river.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-07-18",
+  updated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🎯",
@@ -183,7 +183,7 @@ A. Outs are the cards remaining in the deck that improve your hand into a likely
 
 **Q. What does 9 outs mean in poker?**
 
-A. It means nine cards left in the deck can complete your hand — most often a flush draw (13 of a suit minus the 4 you can see). Nine outs works out to about 35% to hit by the river from the flop, or 19.6% on the single turn card. The rule holds for any count: more outs means a higher chance to hit, and multiplying your outs by 4 on the flop (or 2 on the turn) gives a quick percentage.
+A. It means nine cards left in the deck can complete your hand — most often a flush draw (13 of a suit minus the 4 you can see). Nine outs works out to about 35% to hit by the river from the flop, or 19.1% on the single turn card. The rule holds for any count: more outs means a higher chance to hit, and multiplying your outs by 4 on the flop (or 2 on the turn) gives a quick percentage.
 
 **Q. How do you count outs in poker?**
 

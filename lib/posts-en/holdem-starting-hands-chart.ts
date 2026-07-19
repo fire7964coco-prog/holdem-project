@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Of the 169 starting hand types, only a small top slice — about 15–20% of the hands you're dealt — is profitable for a beginner. Big pairs (AA–TT) and AK raise from any seat; the later you act, the wider you open — from ~13% under the gun to ~43% on the button (wider again in 6-max). Start with a simplified chart, add GTO preflop charts once raise-or-fold is automatic.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-07-11",
+  updated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🂡",
@@ -156,7 +156,7 @@ The mistake to avoid is playing a 9-max chart in a 6-max game: you'll fold hands
 
 ## What Percentage of Starting Hands Should You Play?
 
-Across a full session, ==a solid beginner target is playing roughly 15–20% of the hands you're dealt== — which means folding 80–85% preflop. That's not one flat number, it's the *average* of the position-based chart above: ~13% from UTG, ~17% from MP, ~27% from the cutoff, ~43% from the button.
+Across a full session, ==a solid beginner target is playing roughly 15–20% of the hands you're dealt== — which means folding 80–85% preflop. That's not one flat number: the per-seat figures above — ~13% from UTG, ~17% from MP, ~27% from the cutoff, ~43% from the button — are how wide you *open an unopened pot*. Your session average lands lower than the raw mean of those, because you're often facing a raise (where you continue with far fewer hands) and you spend many orbits stuck in early seats and the blinds.
 
 :::stat[15–20%] of dealt hands — a healthy beginner range at 9-max:::
 

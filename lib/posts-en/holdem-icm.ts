@@ -172,7 +172,7 @@ A common leak is over-applying ICM: folding your way down to a short stack "to l
 **ICM is the best simple model we have, but it's an approximation — it assumes every player is equally skilled and ignores almost everything except stack sizes.** Be honest about what it leaves out:
 
 - **Skill.** ICM treats a world champion and a first-timer with equal stacks as equal. A better player's chips are worth more than the model says.
-- **Position.** A 3-big-blind stack on the button (about to see cheap flops) is worth more than the same stack in the big blind (about to be forced in). ICM can't see the seats.
+- **Position.** A 3-big-blind stack on the button (which pays the blinds last, buying a few more free hands before it's forced in) is worth more than the same stack in the big blind (forced all-in next hand). ICM can't see the seats.
 - **Blinds and future play.** ICM freezes the tournament at this instant; it ignores rising blinds, antes, and how the next few orbits will actually play out.
 
 There's even empirical backing for its blind spot: a large 2025 study that back-tested ICM against real tournament results found it tends to ==underestimate big stacks and overestimate short stacks==, in part because a skilled chip leader can leverage ICM pressure to win *more* than the raw model predicts. Advanced solvers add a "future game" correction for exactly this reason. None of that makes ICM wrong — it makes it a strong first approximation you adjust for skill and position, not a law of physics.

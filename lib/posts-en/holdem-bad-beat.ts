@@ -125,9 +125,9 @@ One important caveat: **every casino and poker site sets its own qualifier and s
 
 ## The Most Famous Bad Beat in Poker
 
-If you want to feel better about your own beats, remember that the worst ones happen on the biggest stages. The most legendary occurred at the **2008 World Series of Poker Main Event**, where **Motoyuki Mabuchi** turned his pocket aces into **four of a kind — quad aces**, a hand beaten by only one holding in all of poker — and *still lost*. He got it in against **Justin Phillips** (holding K♦ J♦), and the river **A♦** completed his quads while, on the very same card, handing Phillips a **royal flush** — the 10‑J‑Q‑K‑A of diamonds. The one card that made four aces was the one card that could beat them.
+If you want to feel better about your own beats, remember that the worst ones happen on the biggest stages. The most legendary occurred at the **2008 World Series of Poker Main Event**, where **Motoyuki Mabuchi** turned his pocket aces into **four of a kind — quad aces**, a hand only a straight flush can beat — and *still lost*. He got it in against **Justin Phillips** (holding K♦ J♦), and the river **A♦** completed his quads while, on the very same card, handing Phillips a **royal flush** — the 10‑J‑Q‑K‑A of diamonds. The one card that made four aces was the one card that could beat them.
 
-That's the ceiling of bad-beat pain: not an 80% favorite going down, but *four aces* — a hand you could play a lifetime without ever losing — beaten by the only holding that outranks it. It's worth keeping in your back pocket the next time your aces get cracked: however badly the deck treated you, someone once lost with quad aces.
+That's the ceiling of bad-beat pain: not an 80% favorite going down, but *four aces* — a hand you could play a lifetime without ever losing — beaten by a straight flush, the one category of hand that outranks four of a kind. It's worth keeping in your back pocket the next time your aces get cracked: however badly the deck treated you, someone once lost with quad aces.
 
 ---
 
@@ -178,7 +178,7 @@ A. A bad beat jackpot is a progressive prize some cardrooms pay when an exceptio
 
 **Q. What is the worst bad beat in poker history?**
 
-A. The most famous is from the 2008 WSOP Main Event: Motoyuki Mabuchi made quad aces — a hand beaten by only a royal flush — and still lost. He flopped a set of aces, then the case ace on the river completed his four of a kind and, on the same card, gave Justin Phillips a royal flush in diamonds. Making four aces — the second-strongest hand in poker — and losing to the only hand that beats it is about as bad as a bad beat gets.
+A. The most famous is from the 2008 WSOP Main Event: Motoyuki Mabuchi made quad aces — a hand only a straight flush can beat — and still lost. He flopped a set of aces, then the case ace on the river completed his four of a kind and, on the same card, gave Justin Phillips a royal flush in diamonds. Making the best four of a kind possible and running into a straight flush — the one category of hand that outranks it — is about as bad as a bad beat gets.
 
 **Q. Are bad beats more common online?**
 
