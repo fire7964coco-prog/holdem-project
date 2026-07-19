@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A 'fish' is poker slang for a weak, losing player the stronger players ('sharks') make their money from. Fish play too many hands, call too much, and can't fold — and the famous line warns that if you can't spot the fish at your table, you're it. It's the single most important read in the game: find the fish, or become one.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-07-05",
+  updated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🐟",
@@ -18,7 +18,7 @@ export const POST: Post = {
   content: `
 The first time someone at a casino table quietly called me a fish, I didn't even know I'd been insulted. I thought I was playing fine — I was seeing lots of flops, calling to "keep them honest," chasing every draw because ==you never know==. Six months and a lot of lost buy-ins later I understood: I *was* the fish. Everyone at the table had known it before I sat down.
 
-A **fish** is poker slang for a weak, losing player — the one the stronger players quietly make their money from. It's the most important label in the game, because every profitable session starts with the same question: *who's the fish here?* Below is exactly what the word means, ==g:how to spot a fish== in the first orbit, the whole zoo of player-type slang (shark, whale, nit, donkey), the truth behind the famous "spot the sucker" line — and an honest self-check so the fish is never you.
+A **fish** is poker slang for a weak, losing player — the one the stronger players quietly make their money from. It's the most important label in the game, because every profitable session starts with the same question: *who's the fish here?* Below is exactly what the word means, ==g:how to spot a fish== in the first orbit, the whole zoo of player-type slang (shark, whale, nit, donkey), the truth behind the famous "spot the sucker" line — and an honest self-check so the fish is never you. It's the first word most players learn in poker's wider [table vocabulary](/en/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp"), and here's everything behind it.
 
 ---
 
