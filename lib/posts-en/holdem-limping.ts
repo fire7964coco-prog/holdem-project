@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Limping is entering a pot preflop by just calling the big blind instead of raising or folding. Open-limping (being first in) is almost always a mistake — you can't win the pot preflop, you give up initiative, and good players punish you. But limping isn't always wrong: completing the small blind, over-limping speculative hands behind other limpers, and some live and short-stack spots are legitimate exceptions.",
   category: "strategy",
   date: "2026-07-05",
-  updated: "2026-07-05",
+  updated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🚶",
@@ -171,6 +171,10 @@ A. Often, yes — completing the small blind is one of the most defensible limps
 **Q. What is the difference between a limper and a calling station?**
 
 A. A limper enters unraised pots by just calling the big blind before the flop — it's about how they *enter* pots. A calling station calls too many bets after the flop, on the turn and river — it's about how they *continue*. The same loose-passive player often does both, but the terms describe different habits and shouldn't be used interchangeably.
+
+**Q. What is a player who limps a lot called?**
+
+A. Usually a "fish" — the general term for a weak, losing player — or, more specifically, a "calling station" (calls far too much) or a "donk" (plays badly). Habitual open-limping is one of the clearest tells of an inexperienced player, which is exactly why stronger players target limpers with isolation raises. If you'd rather not wear the label, default to raise-or-fold.
 
 ---
 
