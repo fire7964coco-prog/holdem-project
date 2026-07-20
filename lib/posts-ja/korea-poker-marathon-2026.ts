@@ -69,7 +69,7 @@ export const POST: Post = {
 | 東亜(トンア)ソウル国際マラソン | 2026年3月 | フル, 10K | ソウル | [dongamarathon.com](https://www.dongamarathon.com) | 2026は終了 |
 | ==**YTNソウルツアーマラソン**== | ==**9/6**== | ハーフ, 10K | ソウル広場 | [run.ytn.co.kr](http://run.ytn.co.kr) | 受付終了 |
 | ==g:**春川(チュンチョン)マラソン**== | ==g:**10/25**== | ==g:フル, 10K== | ==g:春川== | ==g:[chuncheonmarathon.com](https://www.chuncheonmarathon.com)== | ==r:受付終了(定員)== |
-| ==**JTBCソウルマラソン**== | ==**11/1**== | フル, 10K | ソウル(上岩/サンアム) | [worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon) | 受付中(9/4締切) |
+| ==**JTBCソウルマラソン**== | ==**11/1**== | フル, 10K | ソウル(上岩/サンアム) | [worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon) | 外国人枠受付(早期完売・要確認) |
 | ガーミンラン韓国 | 11/15 | ハーフ, 10K | 高陽(コヤン) | [runable.me](http://runable.me/product/18977?comp=18962) | 受付終了(7/1〜3) |
 
 </div>
@@ -123,9 +123,9 @@ export const POST: Post = {
 - 受取時にパスポート必須(代理受取不可)
 
 **エントリー方法(外国人):**
-韓国外に居住する外国人ランナーは、==**[worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon)**==からのみ申込みます。受付は==r:2026年9月4日==に締め切られます。韓国のパスポート保持者はこのルートからは対象外です。
+韓国外に居住する外国人ランナーは、==**[worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon)**==からのみ申込みます。==r:枠に限りがあり例年早く埋まります==ので、最新の受付状況は公式ページで確認を(なお==2026年9月4日==はキャンセル・返金の期限であって、受付締切ではありません)。韓国のパスポート保持者はこのルートからは対象外です。
 
-==g:JTBCの受付は2026年6月中旬時点でまだ開いています——今すぐ動くべきはこれ。==
+==g:JTBCの外国人枠は数に限りがあります——埋まる前に早めの申込を。==
 
 **レース後 → ポーカーへ:** JTBCのコースはソウル中心部でフィニッシュ。ソウル駅(または弘大)から各駅停車のAREX → ターミナル1からパラダイスシティのシャトル。合計約1時間。多くのランナーは正午前にゴールするので、午後のキャッシュゲームのセッションも現実的です。
 
