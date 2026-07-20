@@ -13,11 +13,12 @@
 > - **작업 성격**: strategy 전편 pre-hardening(07-05~07-11)이나 **본문·§13·H2 이미 양질**. 실작업 = **07-18/19 경화 EN에 추가된 winnable FAQ 번역삽입 + §13 감사대조 + dates**. FAQ 추가: strategy +3(運か実力·GTOウィザード·上達), position-play +2, limping +1, 3bet +2(4벳/5벳), continuation-bet +1(バリューベット), when-to-fold +1. positions·starting-hands-chart는 이미 완전 패리티(무변경 or masterUpdated만).
 > - **§13 전수 재검산 = 실오류 0건**. strategy 핸드예시(A♣K♣·A♠Q♠ TPTK·A♥K♣ 투페어)·수치(80% fold·11.8% set·c-bet 60-80%·3bet 3x/4x·MDF·팟오즈 25/33%) 전부 EN 일치.
 >
-> ### ▶▶ 진행중 = rules 필라 (JA) 1/6 완료 → 다음 = game-order·betting-actions·blind-meaning·all-in-rules·showdown-rules
-- ✅ **rules 허브(texas-holdem-rules-for-beginners) 완료** `a0bad4f`: 구글SERP 경쟁분석(Wikipedia·mpj·ABEMA 지배) + ラッコ(ポーカールール 60500vol·チップなし 320vol/diff37) → **신규 H2「チップがなくても遊べる?」**(대용품·점수기록·앱) + FAQ. EN/JA FAQ 20=20·H2 16=16 기존 패리티, §13 0오류. ★rules 허브는 masterUpdated 필드 없었음→07-19 신설.
-- 남은 rules 5편: game-order·betting-actions(EN 07-11)·blind-meaning·all-in-rules·showdown-rules. 그다음 tournament 9 / glossary 6.
+> ### ▶▶ ✅ rules 필라 6/6 완료 (JA 21/42) → 적대적 검수 진행중 → 다음 = tournament 9 / glossary 6
+- ✅ **rules 6편 완료**: 허브(チップなし신규H2 `a0bad4f`)·showdown(順番 210vol 헤딩강화 `dbb2f33`)·betting(チェックジェスチャー FAQ `dbb2f33`)·all-in(オールイン足りない FAQ `dbb2f33`)·game-order(gap없음 스킵)·blind(タイマー=툴, gap없음 스킵). 전편 §13 0오류, EN 패리티 확인.
+- ★**작업종료 적대적 검수 실행중**(사용자 지시 [[ja-adversarial-native-review]]): 일본 현지 홀덤전문가 페르소나 서브에이전트가 rules 6편 + 이번세션 신규 JA오리지널(必勝法·フォールドばかり·ハンドレンジ覚え方·チップなし·足りない FAQ·ジェスチャー FAQ) 정밀검수 중. **결과 나오면 🔴🟠 결함 수정→재빌드→커밋 필요.**
+- masterUpdated 신설: rules 대부분 07-19(betting=07-11). game-order·blind은 콘텐츠 무변경이라 masterUpdated 미추가(추후 여유 시).
 
-### ▶▶ (참고) 필라 택1 순서 = rules(진행중) → tournament 9 → glossary 6
+### ▶▶ 다음 = tournament 9 / glossary 6 (rules 완료 후)
 > - **rules 6**: texas-holdem-rules-for-beginners(허브)·holdem-game-order·holdem-betting-actions·holdem-blind-meaning·holdem-all-in-rules·holdem-showdown-rules. (rules는 07-17에 EN 경험담만, 원하면 H2질문화+FAQ 재패스 여지 — masterUpdated 확인.)
 > - **tournament 9**: holdem-tournament·holdem-icm·holdem-bubble·holdem-short-stack·tournament-vs-cash-game + 라이브이벤트 4편(apt-incheon·korea-poker-marathon·wpt-australia·ept-barcelona). ⚠️이벤트 4편은 §14 사실(날짜·바이인·운영사) EN 값 그대로.
 > - **glossary 6**: holdem-glossary·holdem-straddle·holdem-rake·holdem-fish·holdem-cooler·holdem-bad-beat.
