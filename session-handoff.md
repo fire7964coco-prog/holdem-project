@@ -16,9 +16,10 @@
 > - **★작업량 예측**: `masterUpdated` 날짜로 판단. **pre-07-03 번역**(hand-rankings류)=에디토리얼 H2 전면 재설계(큼). **07-11 이후 번역**(flush-vs-straight류)=검색형 H2 대부분 보유, 감사동기화+미세보강만(작음). 착수 전 각 JA 파일 masterUpdated 확인.
 > - **winnability 패턴**: 헤드(役一覧류)=미디어(ABEMA·Wikipedia·mpj) 지배=경쟁. 롱테일 질문(同じ役/どっち強い/役なし)=知恵袋/note 약점=우리 몫.
 >
-> ### ▶▶ 다음 = rankings 클러스터 남은 4편 → 그다음 전 필라
-> - 남은 rankings: **kicker · tiebreak-rules · split-pot-rules · reading-the-board**(각 ラッコ 시드: `ポーカー キッカー`·`ポーカー 引き分け/チョップ`·`ポーカー スプリット`·`ポーカー ボード 読み方`).
-> - 그다음 필라 순서 자유(odds·rules·strategy·tournament·glossary). 전 42편 = EN 마스터 유니버스.
+> ### ▶▶ 진행현황: JA 6/42 (★rankings 클러스터 6/6 완주) → 다음 = odds 클러스터
+> - ✅ **rankings 6/6 배포**: hand-rankings(`99ebed0`·전면)·flush-vs-straight(`ca16b71`)·kicker(`1ac10c2`)·tiebreak(`0bccfe0`)·split-pot+reading-board(`936ce0e`). **교훈 실증**: hand-rankings(07-03)만 전면작업, 나머지 07-11 번역은 H2 이미 검색형이라 §13 감사동기화+dates만(일부는 무변경 검토완료).
+> - **다음 = odds 클러스터 6편**: probability·pot-odds·outs·drawing-odds·implied-odds·equity. ラッ코 시드: `ポーカー 確率`·`ポーカー ポットオッズ`·`ポーカー アウツ`·`ポーカー オッズ`·`インプライドオッズ`·`ポーカー エクイティ`. ⚠️ odds는 §13 수치 최다 → EN 감사수정(implied-odds FAQ 공식 −(pot+call)·outs 19.1% 등) 동기화 주의.
+> - 그다음 필라: rules·strategy·tournament·glossary. 전 42편 = EN 마스터 유니버스. 착수 전 각 파일 masterUpdated 확인(pre-07-03=큼, 07-11+=작음).
 > - ⚠️ §13(카드·확률·계산) 불변. 이미지·slug·`/ja/blog/` 링크 구조 EN 1:1 유지(count 패리티 [[translation-link-structure-equals-en]]).
 
 ## ▶▶▶ (이전) START HERE (2026-07-19 — ★★★EN 마스터 42편 완결 + Fable5 최종검수 락 완료 → 다음 = 번역(JA부터))
