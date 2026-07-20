@@ -13,7 +13,7 @@
 > - **★이번 세션 신규 winnable FAQ**(데이터 뒷받침): straddle「ストラドルされたら対策」(경쟁사 다수 커버) · rake「レーキとアンティの違い」(question 2회) · cc「カウンティングの映画」(question「映画は?」). 나머지 니치 토픽(cooler·fish·bad-beat)은 억지 없이 스킵.
 > - **★공통 결함 패턴**: 07-04~08 번역본은 EN 07-19 경화 이전이라 **도입부 glossary 링크(+thumb)가 누락**돼 있었음(rake·fish·cooler·bad-beat 4편 복원). **다음 언어 재경화 시에도 이 링크 누락 전수 점검 필수.**
 > - ✅ **적대적 네이티브 검수**([[ja-adversarial-native-review]], 2병렬): §13 수치 전수 손계산=실오류 0(셋오버셋 11.76%·1.04%, KK vs AA 4.52:1, 9아웃 34.97%, 블로커 16→12, 馬渕 WSOP2008 史実 일치). **🔴1건=bad-beat "クアッドエース=2番目に強い手"**(포카드는 3번째 카테고리 = 사실오류, EN 원문은 `only a straight flush can beat`로 정확) → JA 의역 오류였음, EN 정합으로 정정. 🟠 표기통일(コールドデッキ)·スピュー·文体통일.
-> - ⚠️ **다른 언어 소급 점검거리(저순위)**: "quad aces=2번째 강한 手" 의역 오류를 es/pt/de/zh/id도 했을 가능성 → bad-beat 번역본 grep 점검 권장.
+> - ✅ **다른 언어 quad aces 오역 전수 점검·수정 완료** `7ad2ee5`: es/pt/de/zh/id **5개 언어 전부** bad-beat FAQ에서 "quad aces=2番目/segunda/第二强/zweitstärkste" 동일 의역 확인 → EN 정합(straight flush 카테고리)으로 정정. 부수로 FAQ m1 "royal flush만 이김"→"straight flush"도 정밀화. 본문 ceiling은 정확이라 무변경. EN 원문은 정확. **→ 교훈: EN 자체는 맞아도 번역본이 공통 의역 오류를 낼 수 있음, 다른 언어 재경화 시 §13 표현도 대조 필수.**
 >
 > ### ▶▶ 다음 세션 후보
 > - **(A) 다른 구언어 재경화**: es·pt·de·zh·id도 EN 07-19 경화 **미반영 stale**(도입부 링크 누락·경화 winnable FAQ 미반영·§13 quad-aces 의역 가능성). JA와 동일 방법론으로 ES부터. 단 ラッコ는 JA 전용 → es/pt 등은 현지 서제스트툴/WebSearch로.
