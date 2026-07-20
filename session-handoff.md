@@ -13,7 +13,7 @@
 > - ★**라이브이벤트 §14 교훈**: JA masterUpdated 07-03 구버전이라 EN 07-19 Fable5 검수본과 **stale 다수**였음(K-ETA 오안내·송금 계좌공개·시트수·2023데이터·AJPC 날짜). **번역 착수 전 EN `updated` vs JA `masterUpdated` 비교** → 07-19 이후면 §14 전수 대조. 시간민감 status(마감·매진)는 웹검색 실검증.
 > - ★**EN 마스터 결함→전 언어 소급 패턴**: 번역 중 EN 자체 오류 발견 시 **전 언어 일괄 정합** 필요. 이번 AJPC 12월날짜(`3ce3891`)·송금 계좌공개(`e756a2e`) 완료.
 > - ✅ **적대적 네이티브 검수 통과**([[ja-adversarial-native-review]], 2병렬 Agent): §13 계산(버블팩터·M値/CSI 전수검산)·§14 사실 실오류 0. 🔴1·🟠6 반영완료.
-> - ⚠️ **미결(전 언어 소급 후보)**: **JTBC "closes Sep 4" 접수마감 표기가 EN·es·pt·de·id·zh에 남음**(9/4=취소·환불기한, JTBC=추첨/조기완판 → 오도). JA만 `467dc79`서 안전화. 나머지 6개 언어 동일 수정 필요(korea-poker-marathon-2026.ts 표 status + "closes Sep 4" 본문). 저순위: T2 게이트 2A/4A·YTN 9/6 공식 재확인.
+> - ✅ **JTBC 접수기한 오도 전 언어 정합 완료**(ja `467dc79` + en·es·pt·de·id·zh `03334bc`): "closes Sep 4"=취소·환불기한(접수마감 아님)·추첨/조기완판 → "早期完売·公式확인" 헤지로 통일. 저순위 잔여(다음 세션 여유 시): T2 게이트 2A/4A 공식 재확인·YTN 9/6 공식 재확인.
 
 ## ▶▶▶ (이전) START HERE (2026-07-20 밤 — ★★★JA 20/42: strategy 필라 8/8 완주 → 다음 = rules 6 or tournament 9 or glossary 6)
 
