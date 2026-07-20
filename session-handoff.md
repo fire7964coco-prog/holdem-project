@@ -5,7 +5,17 @@
 
 ---
 
-## ▶▶▶ 새 세션 START HERE (2026-07-20 밤 — ★★★JA 20/42: strategy 필라 8/8 완주 → 다음 = rules 6 or tournament 9 or glossary 6)
+## ▶▶▶ 새 세션 START HERE (2026-07-20 심야 — ★★★JA tournament 9/9 완주 → JA 35/42, 다음 = glossary 6 (+card-counting))
+
+> ✅ **tournament 필라 9/9 완주.** rankings 6 + odds 6 + strategy 8 + rules 6 + **tournament 9** = **JA 35/42**. 남은 = **glossary 6**(holdem-glossary·straddle·rake·fish·cooler·bad-beat) + 독립글 card-counting 1.
+> - 이번 세션 tournament 7편(허브·icm는 이전): bubble `29ad2eb`·`71668e3` / short-stack `6071cdf` / tvc `0a336e2` / apt-incheon `0dce185` / korea-marathon `8f5b087` / wpt-australia `1936f7a` / ept-barcelona `ead25eb`. 검수반영 `467dc79`.
+> - ★★**워크플로우 확정(사용자 지시)**: **글마다 착수 전 웹검색 4개 + ラッコ**로 SERP 분석 후 작성. "서치 4개=웹검색"(경쟁 상위글 분석), ラッ코=별개 키워드 발굴. **ラッ코는 리치 토픽에 집중**(저볼륨 토픽은 headline만, suggest/question 스킵 가능 — bubble에서 실증). glossary는 용어별 볼륨 편차 크니 토픽마다 판단.
+> - ★**라이브이벤트 §14 교훈**: JA masterUpdated 07-03 구버전이라 EN 07-19 Fable5 검수본과 **stale 다수**였음(K-ETA 오안내·송금 계좌공개·시트수·2023데이터·AJPC 날짜). **번역 착수 전 EN `updated` vs JA `masterUpdated` 비교** → 07-19 이후면 §14 전수 대조. 시간민감 status(마감·매진)는 웹검색 실검증.
+> - ★**EN 마스터 결함→전 언어 소급 패턴**: 번역 중 EN 자체 오류 발견 시 **전 언어 일괄 정합** 필요. 이번 AJPC 12월날짜(`3ce3891`)·송금 계좌공개(`e756a2e`) 완료.
+> - ✅ **적대적 네이티브 검수 통과**([[ja-adversarial-native-review]], 2병렬 Agent): §13 계산(버블팩터·M値/CSI 전수검산)·§14 사실 실오류 0. 🔴1·🟠6 반영완료.
+> - ⚠️ **미결(전 언어 소급 후보)**: **JTBC "closes Sep 4" 접수마감 표기가 EN·es·pt·de·id·zh에 남음**(9/4=취소·환불기한, JTBC=추첨/조기완판 → 오도). JA만 `467dc79`서 안전화. 나머지 6개 언어 동일 수정 필요(korea-poker-marathon-2026.ts 표 status + "closes Sep 4" 본문). 저순위: T2 게이트 2A/4A·YTN 9/6 공식 재확인.
+
+## ▶▶▶ (이전) START HERE (2026-07-20 밤 — ★★★JA 20/42: strategy 필라 8/8 완주 → 다음 = rules 6 or tournament 9 or glossary 6)
 
 > ✅ **JA odds 6/6 + strategy 8/8 완주.** rankings 6 + odds 6 + strategy 8 = **JA 20/42**. 남은 22편 = rules 6 + tournament 9 + glossary 6.
 > - **strategy 8편**(strategy 허브·positions·position-play·starting-hands-chart·limping·3bet·continuation-bet·when-to-fold): 커밋 `6b9db25`·`03f321d`·`112699e`·`dcfd91b`·`c60fc0b`·`a229ace`·`2552452`·`3fc016c`.

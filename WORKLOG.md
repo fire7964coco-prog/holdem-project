@@ -3,6 +3,15 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-20 심야 (★★★ JA tournament 필라 9/9 완주 → JA 35/42, 적대적 검수 통과)
+
+> tournament 남은 7편 완료(bubble·short-stack·tvc + 라이브이벤트 4편). 글마다 웹검색 4개 + ラッコ로 SERP 분석 후 작성(사용자 지시). 라이브이벤트는 §14 사실을 EN 07-19 검수본에 동기화가 핵심.
+- **strategy/odds성 3편**: bubble `29ad2eb`(バブルライン·バースト FAQ·hand-for-hand tie·インマネ) · short-stack `6071cdf`(**CSI=M値** gap·오르폴/シューブ FAQ) · tvc `0a336e2`(何BB·**세금 一時所得** FAQ·リングゲーム).
+- **라이브이벤트 4편**(§14 EN 동기화): apt-incheon `0dce185`(**K-ETA 오안내 수정**=일본 2026-12-31 면제+e-Arrival·시트45/12·게이트4A·세금FAQ) · korea-marathon `8f5b087`(춘천 매진·AJPC 12월 TBC) · wpt-australia `1936f7a`(**송금 안전화**·2023데이터 $8,000/600/$4.5M·트로피명·NSW2027) · ept-barcelona `ead25eb`(日本人 참가·비자ETIAS·세금 winnable FAQ).
+- **전 언어 소급 정합**: korea-marathon AJPC 12월 확정날짜→TBC(en·es·pt·de·id·zh `3ce3891`) · wpt-australia 송금 안전화+2023데이터(5개 언어 `e756a2e`). EN 마스터 결함(AJPC 날짜·송금 계좌공개)까지 소급.
+- **적대적 네이티브 검수**(2병렬, [[ja-adversarial-native-review]]): §13 계산(버블팩터·M値/CSI 전수검산)·§14 사실(웹 재확인) **실오류 0**. 🔴1건=JTBC "9/4締切"가 취소기한 오도(EN 소급분)→안전화, 🟠 정밀도 6건 반영 `467dc79`.
+- 발행 총계 불변(57 blog + 406 intl). **다음=glossary 6(+card-counting)**.
+
 ## 2026-07-20 밤 (★★ JA strategy 필라 8/8 완주 — 구글 상위3편 분석 + FAQ 경화동기화)
 
 > JA 20/42(rankings 6 + odds 6 + strategy 8). ★사용자 지시=글마다 구글검색 상위 3편 분석·참조하며 작성. strategy 전편 pre-hardening이나 본문·§13·H2 이미 양질 → 작업=경화 EN winnable FAQ 번역삽입 + §13 감사대조 + H2 검색형 강화(SERP 정답지 반영) + dates.
