@@ -148,7 +148,7 @@ Kalau Anda di luar Australia dan ingin pemanasan dengan satelit online sebelum t
 |:---:|---|---|---|---|---|
 | **2025** | Alan Pham | AUD $5.500 | 600 | ==g:AUD $3.000.000== | AUD $558.211 |
 | **2024** | James Obst | AUD $8.000 | 396 | AUD $2.930.400 | AUD $585.359 |
-| **2023** | Richard Lee | AUD $5.500 | — | — | ==**AUD $854.890**== |
+| **2023** | Richard Lee | AUD $8.000 | 600 | AUD $4.500.000 | ==**AUD $854.890**== |
 
 </div>
 
@@ -220,12 +220,10 @@ Berdasarkan **NSW Casino Control Act**, ada **batas tunai harian AUD $5.000** un
 Untuk buy-in di atas AUD $5.000 (atau untuk menghindari logistik penarikan harian), ==g:metode paling sederhana adalah transfer bank sebelum Anda terbang==.
 
 <div style="background:rgba(0,0,0,0.25);border:1px solid rgba(255,255,255,0.10);border-radius:10px;padding:16px 22px;margin:16px 0;font-size:13px;line-height:2">
-<strong>The Star Sydney — Detail Transfer Bank</strong><br/>
-Bank: National Australia Bank (NAB)<br/>
-Swift Code: <strong>NATAAU3303M</strong><br/>
-Penerima: The Star Entertainment Group<br/>
-Alamat: 80 Pyrmont St, Pyrmont NSW 2009, Australia<br/>
-BSB: <strong>082-001</strong> &nbsp;|&nbsp; Rekening: <strong>579383265</strong>
+<strong>The Star Sydney — Tentang Transfer Bank</strong><br/>
+⚠️ The Star menerbitkan detail transfer <strong>secara individual per tamu</strong> — <strong>jangan transfer ke nomor rekening mana pun yang ditemukan online.</strong><br/>
+Sebelum terbang, hubungi Star Poker atau kasir (cage) The Star Sydney (via starpoker.com.au atau Guest Service Desk) untuk meminta detail transfer terkini yang <strong>diterbitkan atas nama Anda</strong>.<br/>
+Perkiraan: rekening NAB, <strong>hanya rekening bank pribadi</strong> (bukan Wise/Revolut/pihak ketiga), nama lengkap + nomor paspor Anda di berita transfer, dan 1–3 hari kerja untuk masuk.
 </div>
 
 ==r:Batasan penting:==

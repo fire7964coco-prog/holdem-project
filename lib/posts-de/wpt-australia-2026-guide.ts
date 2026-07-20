@@ -148,7 +148,7 @@ Wenn du außerhalb Australiens bist und dich vor dem Abflug mit Online-Satellite
 |:---:|---|---|---|---|---|
 | **2025** | Alan Pham | AUD $5.500 | 600 | ==g:AUD $3.000.000== | AUD $558.211 |
 | **2024** | James Obst | AUD $8.000 | 396 | AUD $2.930.400 | AUD $585.359 |
-| **2023** | Richard Lee | AUD $5.500 | — | — | ==**AUD $854.890**== |
+| **2023** | Richard Lee | AUD $8.000 | 600 | AUD $4.500.000 | ==**AUD $854.890**== |
 
 </div>
 
@@ -220,12 +220,10 @@ Nach dem **NSW Casino Control Act** gilt ein **tägliches Bargeld-Limit von AUD 
 Für Buy-ins über AUD $5.000 (oder um dir die täglichen Abhebe-Logistiken zu sparen) ist ==g:die einfachste Methode ein Bank-Wire-Transfer, bevor du fliegst==.
 
 <div style="background:rgba(0,0,0,0.25);border:1px solid rgba(255,255,255,0.10);border-radius:10px;padding:16px 22px;margin:16px 0;font-size:13px;line-height:2">
-<strong>The Star Sydney — Wire-Transfer-Daten</strong><br/>
-Bank: National Australia Bank (NAB)<br/>
-Swift Code: <strong>NATAAU3303M</strong><br/>
-Beneficiary: The Star Entertainment Group<br/>
-Adresse: 80 Pyrmont St, Pyrmont NSW 2009, Australia<br/>
-BSB: <strong>082-001</strong> &nbsp;|&nbsp; Account: <strong>579383265</strong>
+<strong>The Star Sydney — Zur Banküberweisung</strong><br/>
+⚠️ The Star gibt die Überweisungsdaten <strong>individuell pro Gast</strong> heraus — <strong>überweise nicht an eine online gefundene Kontonummer.</strong><br/>
+Kontaktiere vor dem Flug Star Poker oder die Kasse (Cage) von The Star Sydney (über starpoker.com.au oder den Guest Service Desk) und fordere die aktuellen, <strong>auf deinen Namen ausgestellten</strong> Überweisungsdaten an.<br/>
+Zu erwarten: NAB-Konto, <strong>nur persönliche Bankkonten</strong> (kein Wise/Revolut/Dritte), dein vollständiger Name + Passnummer im Verwendungszweck, 1–3 Werktage bis zur Gutschrift.
 </div>
 
 ==r:Wichtige Einschränkungen:==
