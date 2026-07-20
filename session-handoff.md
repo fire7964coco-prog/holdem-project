@@ -5,7 +5,20 @@
 
 ---
 
-## ▶▶▶ 새 세션 START HERE (2026-07-20 — ★★★JA 번역 경화 진행중 2/42 + ラッコ MCP 연결완료 → 다음 = rankings 클러스터 이어서)
+## ▶▶▶ 새 세션 START HERE (2026-07-20 밤 — ★★★JA 12/42: odds 클러스터 6/6 완주 → 다음 = strategy 필라)
+
+> ✅ **JA odds 클러스터 완주**(probability·pot-odds·outs·drawing-odds·implied-odds·equity). rankings 6/6 + odds 6/6 = **JA 12/42**.
+> - **이번 세션 실증**: odds 6편 전부 07-03~07-08 pre-hardening 번역이었으나 **본문·§13·H2는 이미 양질**(H2가 ラッコ headline 정답지와 이미 일치: poker101·ABEMA·mpj — `とは`·`計算方法`·`早見表`·`2倍4倍の法則`). **실제 작업 = 경화 EN에 추가된 winnable FAQ 동기화 + §13 감사대조 + dates**. FAQ 추가: pot-odds +3, outs +1, drawing-odds +3, implied-odds +1, equity +3.
+> - **§13 전수 재검산 결과 = 실오류 0건**. 핸드오프가 우려한 감사포인트 전부 이미 동기화 확인: implied-odds 공식 `−(pot+call)` ✓, outs 표 9아웃 turn 19.1%(9/47) ✓, drawing-odds 407対1(odds-against=1 in 408) ✓, probability 완료(전 세션). 커밋: `8ec7c42`(pot-odds)·`9bac076`(outs)·`c5fdfab`(drawing-odds)·`b998f46`(implied-odds)·`4b4a496`(equity).
+> - ★교훈 재확인: **07-03/07-08 odds 번역은 이미 검색형 H2 보유** → H2 재설계 불필요, FAQ 패리티+감사동기화+dates만(가벼움). 07-18 경화가 EN에 FAQ만 대량 추가했으므로 **JA는 그 신규 FAQ를 번역해 넣는 게 핵심 작업**.
+>
+> ### ▶▶ 다음 = strategy 필라 (JA) — 8편
+> - **holdem-strategy**(허브) + holdem-positions · holdem-position-play · holdem-starting-hands-chart · holdem-limping · holdem-3bet · holdem-continuation-bet · holdem-when-to-fold. (착수 전 각 JA 파일 masterUpdated 확인 — pre-07-03=H2 재설계 큼, 07-11+=가벼움.)
+> - **워크플로우**(odds에서 검증): ①각 JA 파일 열어 EN 마스터와 대조 ②FAQ 개수 패리티(EN 경화 추가분 번역 삽입) ③§13 감사대조(3벳 사이즈 BB·MDF 등 수치) ④H2 이미 검색형이면 무변경(ラッコ headline로 확인만) ⑤dates 갱신 ⑥빌드→커밋→푸시(글별 자동배포). ラッ코 시드: `ポーカー 3ベット`·`ポーカー ポジション`·`リンプイン`·`コンティニュエーションベット`·`ポーカー 降りどき`.
+> - 그다음 필라: rules·tournament·glossary. 전 42편 = EN 마스터 유니버스.
+> - ⚠️ §13(카드·확률·계산) 불변. 이미지·slug·`/ja/blog/` 링크 구조 EN 1:1 유지(count 패리티 [[translation-link-structure-equals-en]]).
+
+## ▶▶▶ (이전) START HERE (2026-07-20 — ★★★JA 번역 경화 진행중 2/42 + ラッコ MCP 연결완료 → 다음 = rankings 클러스터 이어서)
 
 > ✅ **JA 번역 경화 방법론 확립·검증 완료.** EN 마스터(42편)는 완결·Fable5 검수 락. 이제 **JA부터 언어별 경화** 중. 파일럿 2편 배포: `holdem-hand-rankings`(`99ebed0`)·`holdem-flush-vs-straight`(`ca16b71`).
 >

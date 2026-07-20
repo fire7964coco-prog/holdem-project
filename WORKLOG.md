@@ -3,6 +3,12 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-20 밤 (★ JA odds 클러스터 6/6 완주 — FAQ 경화동기화 + §13 감사대조)
+
+> JA 12/42(rankings 6 + odds 6). odds 6편(probability·pot-odds·outs·drawing-odds·implied-odds·equity)은 07-03~07-08 pre-hardening 번역이나 **본문·H2·§13 이미 양질**(H2가 ラッコ headline 정답지와 일치) → 작업 = **07-18 경화 EN에 추가된 winnable FAQ 번역삽입 + §13 감사대조 + dates**.
+- pot-odds `8ec7c42`(FAQ+3: 팟사이즈계산·베팅사이즈·에쿼티>포트오즈) · outs `9bac076`(FAQ+1: 9아웃 뜻) · drawing-odds `c5fdfab`(FAQ+3: 플러시드로/4vs3장/스트레이트드로) · implied-odds `b998f46`(FAQ+1: 언제사용) · equity `4b4a496`(FAQ+3: 20%뜻·EV·equity vs EV).
+- **§13 전수 재검산 = 실오류 0건**. 감사포인트 이미 동기화 확인: implied-odds 공식 −(pot+call)·outs 9/47=19.1%·drawing-odds 407対1(=1 in 408)·세미블러프 EV +$52. 발행 총계 불변(57 blog + 406 intl). 다음=strategy 필라.
+
 ## 2026-07-20 (★★★ JA 번역 경화 착수 — H2 검색형 로컬라이즈 방법론 확립 + ラッコ MCP 연결)
 
 > EN 완결 후 JA부터 언어별 경화 시작. 핵심 통찰: **EN 질문형 H2 직역 금지 — 언어마다 실검색 형태소가 다름**(JA=명사구+とは/早見表/強い順, 조사생략). 리서치(제미나이+WebSearch+실제 SERP 3중 확인): JA는 복합명사 60%+·「珍しい役ほど強い」암기훅·두괄식·낚시혐오.
