@@ -190,7 +190,7 @@ Di sinilah kalendernya jadi menarik. Tiga festival poker berlangsung di venue-ve
       <td style="padding:10px 14px"><span style="background:rgba(239,68,68,0.15);color:#f87171;padding:2px 7px;border-radius:4px;font-size:12px;font-weight:600">⚡ JTBC Marathon 1 Nov = Day 3 turnamen ini</span></td>
     </tr>
     <tr style="background:rgba(212,175,55,0.07);border-bottom:1px solid rgba(255,255,255,0.06)">
-      <td style="padding:10px 14px;font-weight:700;white-space:nowrap">4 Des – 13 Des</td>
+      <td style="padding:10px 14px;font-weight:700;white-space:nowrap">Des 2026 (TBD)</td>
       <td style="padding:10px 14px"><strong>AJPC Samurai Circuit<br/><span style="font-size:12px;color:var(--muted-foreground)">Incheon 2026 III</span></strong></td>
       <td style="padding:10px 14px">Paradise City, Incheon</td>
       <td style="padding:10px 14px;color:var(--muted-foreground)">Opsi akhir tahun · jadwal TBA</td>
@@ -226,11 +226,11 @@ Bagi pemain yang sudah berada di Korea untuk turnamen: pagi lomba adalah alarm p
 
 ---
 
-### AJPC Samurai Circuit Incheon III (4–13 Des)
+### AJPC Samurai Circuit Incheon III (Desember 2026 — tanggal belum dikonfirmasi)
 
 ==**AJPC Samurai Circuit**== menutup kalender poker Korea dengan penyelenggaraan di bulan Desember di Paradise City. Bagi pemain yang melewatkan jendela Oktober–November, inilah opsi akhir tahun.
 
-- **Tanggal:** 4–13 Desember 2026
+- **Tanggal:** Desember 2026 (tanggal belum dikonfirmasi — menunggu jadwal resmi)
 - **Venue:** Paradise City Casino, Incheon
 - **Info:** [pokercalendar.asia](https://pokercalendar.asia/en/pokertournaments/ajpc-samurai-circuit-incheon-2026-iii/)
 - Jadwal dan buy-in TBA
@@ -322,7 +322,7 @@ Untuk gambaran turnamen lengkap (APT Incheon berlangsung 7–16 Agustus dengan G
       <td style="padding:9px 12px;color:var(--muted-foreground)">Half · 10K · 8:00 pagi · Reg. 1–3 Jul</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
-      <td style="padding:9px 12px;font-weight:700;white-space:nowrap">4–13 Des</td>
+      <td style="padding:9px 12px;font-weight:700;white-space:nowrap">Des (TBD)</td>
       <td style="padding:9px 12px">🃏 AJPC Samurai Circuit III</td>
       <td style="padding:9px 12px">Paradise City, Incheon</td>
       <td style="padding:9px 12px;color:var(--muted-foreground)">Jadwal TBA</td>

@@ -190,7 +190,7 @@ Aquí es donde el calendario se pone interesante. Tres festivales de póker se c
       <td style="padding:10px 14px"><span style="background:rgba(239,68,68,0.15);color:#f87171;padding:2px 7px;border-radius:4px;font-size:12px;font-weight:600">⚡ Maratón JTBC 1 nov = Día 3 de este torneo</span></td>
     </tr>
     <tr style="background:rgba(212,175,55,0.07);border-bottom:1px solid rgba(255,255,255,0.06)">
-      <td style="padding:10px 14px;font-weight:700;white-space:nowrap">4 dic – 13 dic</td>
+      <td style="padding:10px 14px;font-weight:700;white-space:nowrap">Dic 2026 (por confirmar)</td>
       <td style="padding:10px 14px"><strong>AJPC Samurai Circuit<br/><span style="font-size:12px;color:var(--muted-foreground)">Incheon 2026 III</span></strong></td>
       <td style="padding:10px 14px">Paradise City, Incheon</td>
       <td style="padding:10px 14px;color:var(--muted-foreground)">Opción de fin de año · calendario por confirmar</td>
@@ -226,11 +226,11 @@ Para un jugador que ya está en Corea por el torneo: mañana de carrera con desp
 
 ---
 
-### AJPC Samurai Circuit Incheon III (4–13 dic)
+### AJPC Samurai Circuit Incheon III (diciembre de 2026 — fechas por confirmar)
 
 El ==**AJPC Samurai Circuit**== cierra el calendario coreano de póker con una edición en diciembre en Paradise City. Para los jugadores que se pierdan la ventana de octubre–noviembre, esta es la opción de fin de año.
 
-- **Fechas:** 4–13 de diciembre de 2026
+- **Fechas:** diciembre de 2026 (fechas por confirmar — a la espera del calendario oficial)
 - **Sede:** Casino Paradise City, Incheon
 - **Info:** [pokercalendar.asia](https://pokercalendar.asia/en/pokertournaments/ajpc-samurai-circuit-incheon-2026-iii/)
 - Calendario y buy-ins por confirmar
@@ -322,7 +322,7 @@ Para el panorama completo de torneos (el APT Incheon se disputa del 7 al 16 de a
       <td style="padding:9px 12px;color:var(--muted-foreground)">Medio · 10K · 8:00 · Reg. 1–3 jul</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
-      <td style="padding:9px 12px;font-weight:700;white-space:nowrap">4–13 dic</td>
+      <td style="padding:9px 12px;font-weight:700;white-space:nowrap">Dic (por confirmar)</td>
       <td style="padding:9px 12px">🃏 AJPC Samurai Circuit III</td>
       <td style="padding:9px 12px">Paradise City, Incheon</td>
       <td style="padding:9px 12px;color:var(--muted-foreground)">Calendario por confirmar</td>

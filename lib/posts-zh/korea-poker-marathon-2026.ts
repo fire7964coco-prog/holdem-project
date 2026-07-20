@@ -190,7 +190,7 @@ export const POST: Post = {
       <td style="padding:10px 14px"><span style="background:rgba(239,68,68,0.15);color:#f87171;padding:2px 7px;border-radius:4px;font-size:12px;font-weight:600">⚡ JTBC 马拉松 11 月 1 日 = 这场赛事的 Day 3</span></td>
     </tr>
     <tr style="background:rgba(212,175,55,0.07);border-bottom:1px solid rgba(255,255,255,0.06)">
-      <td style="padding:10px 14px;font-weight:700;white-space:nowrap">12 月 4 日 – 12 月 13 日</td>
+      <td style="padding:10px 14px;font-weight:700;white-space:nowrap">2026 年 12 月（待定）</td>
       <td style="padding:10px 14px"><strong>AJPC Samurai Circuit<br/><span style="font-size:12px;color:var(--muted-foreground)">Incheon 2026 III</span></strong></td>
       <td style="padding:10px 14px">Paradise City, Incheon</td>
       <td style="padding:10px 14px;color:var(--muted-foreground)">年末之选 · 赛程待定</td>
@@ -226,11 +226,11 @@ export const POST: Post = {
 
 ---
 
-### AJPC Samurai Circuit Incheon III（12 月 4–13 日）
+### AJPC Samurai Circuit Incheon III（2026 年 12 月 · 日期待定）
 
 ==**AJPC Samurai Circuit**== 以 12 月在 Paradise City 的一轮，为韩国扑克赛程收尾。对错过 10–11 月窗口的牌手，这是年末之选。
 
-- **日期：** 2026 年 12 月 4–13 日
+- **日期：** 2026 年 12 月（日期待定 · 等待官方赛程）
 - **场馆：** Paradise City Casino, Incheon
 - **信息：** [pokercalendar.asia](https://pokercalendar.asia/en/pokertournaments/ajpc-samurai-circuit-incheon-2026-iii/)
 - 赛程和买入待定
@@ -322,7 +322,7 @@ export const POST: Post = {
       <td style="padding:9px 12px;color:var(--muted-foreground)">半程 · 10K · 8:00 · 7 月 1–3 日报名</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
-      <td style="padding:9px 12px;font-weight:700;white-space:nowrap">12 月 4–13 日</td>
+      <td style="padding:9px 12px;font-weight:700;white-space:nowrap">12 月（待定）</td>
       <td style="padding:9px 12px">🃏 AJPC Samurai Circuit III</td>
       <td style="padding:9px 12px">Paradise City, Incheon</td>
       <td style="padding:9px 12px;color:var(--muted-foreground)">赛程待定</td>

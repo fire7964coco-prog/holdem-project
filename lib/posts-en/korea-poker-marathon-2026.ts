@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Korea's top autumn marathons (Chuncheon Oct 25, JTBC Seoul Nov 1, Garmin Run Nov 15) align with perfect running weather. Paradise City Casino near Incheon Airport runs year-round cash games — foreigners only, 10 min from the terminal. One trip covers both.",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-07-19",
+  updated: "2026-07-20",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏃",
@@ -230,7 +230,7 @@ For a player already in Korea for the tournament: race morning is a 7am alarm, 4
 
 The ==**AJPC Samurai Circuit**== closes out the Korean poker calendar with a December run at Paradise City. For players who miss the October–November window, this is the year-end option.
 
-- **Dates:** December 4–13, 2026
+- **Dates:** December 2026 (dates TBC — awaiting the official schedule)
 - **Venue:** Paradise City Casino, Incheon
 - **Info:** [pokercalendar.asia](https://pokercalendar.asia/en/pokertournaments/ajpc-samurai-circuit-incheon-2026-iii/)
 - Schedule and buy-ins TBA

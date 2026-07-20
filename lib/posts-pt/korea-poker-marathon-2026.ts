@@ -190,7 +190,7 @@ Nota: o calor do verão coreano atinge o pico em agosto. Setembro ainda é quent
       <td style="padding:10px 14px"><span style="background:rgba(239,68,68,0.15);color:#f87171;padding:2px 7px;border-radius:4px;font-size:12px;font-weight:600">⚡ Maratona JTBC 1 nov = Dia 3 deste torneio</span></td>
     </tr>
     <tr style="background:rgba(212,175,55,0.07);border-bottom:1px solid rgba(255,255,255,0.06)">
-      <td style="padding:10px 14px;font-weight:700;white-space:nowrap">4 dez – 13 dez</td>
+      <td style="padding:10px 14px;font-weight:700;white-space:nowrap">Dez 2026 (a confirmar)</td>
       <td style="padding:10px 14px"><strong>AJPC Samurai Circuit<br/><span style="font-size:12px;color:var(--muted-foreground)">Incheon 2026 III</span></strong></td>
       <td style="padding:10px 14px">Paradise City, Incheon</td>
       <td style="padding:10px 14px;color:var(--muted-foreground)">Opção de fim de ano · programação TBA</td>
@@ -226,11 +226,11 @@ Para um jogador já na Coreia pelo torneio: manhã de prova é despertador às 7
 
 ---
 
-### AJPC Samurai Circuit Incheon III (4–13 dez)
+### AJPC Samurai Circuit Incheon III (dezembro de 2026 — datas a confirmar)
 
 O ==**AJPC Samurai Circuit**== fecha o calendário de pôquer coreano com uma etapa em dezembro no Paradise City. Para os jogadores que perdem a janela de outubro–novembro, essa é a opção de fim de ano.
 
-- **Datas:** 4–13 de dezembro de 2026
+- **Datas:** dezembro de 2026 (datas a confirmar — aguardando o calendário oficial)
 - **Sede:** Paradise City Casino, Incheon
 - **Info:** [pokercalendar.asia](https://pokercalendar.asia/en/pokertournaments/ajpc-samurai-circuit-incheon-2026-iii/)
 - Programação e buy-ins TBA
@@ -322,7 +322,7 @@ Para o panorama completo dos torneios (o APT Incheon rola de 7 a 16 de agosto co
       <td style="padding:9px 12px;color:var(--muted-foreground)">Meia · 10K · 8h · Insc. 1–3 jul</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
-      <td style="padding:9px 12px;font-weight:700;white-space:nowrap">4–13 dez</td>
+      <td style="padding:9px 12px;font-weight:700;white-space:nowrap">Dez (a confirmar)</td>
       <td style="padding:9px 12px">🃏 AJPC Samurai Circuit III</td>
       <td style="padding:9px 12px">Paradise City, Incheon</td>
       <td style="padding:9px 12px;color:var(--muted-foreground)">Programação TBA</td>
