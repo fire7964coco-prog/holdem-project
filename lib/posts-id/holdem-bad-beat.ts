@@ -178,7 +178,7 @@ A. Bad beat jackpot adalah hadiah progresif yang dibayar sebagian cardroom saat 
 
 **Q. Apa bad beat terburuk dalam sejarah poker?**
 
-A. Yang paling terkenal berasal dari 2008 WSOP Main Event: Motoyuki Mabuchi membuat quad aces — tangan yang hanya bisa dikalahkan royal flush — dan tetap kalah. Ia flop set aces, lalu case ace di river melengkapi four of a kind-nya dan, di kartu yang sama, memberi Justin Phillips royal flush diamond. Membuat four aces — tangan terkuat kedua di poker — dan kalah ke satu-satunya tangan yang mengalahkannya kira-kira seburuk yang bisa dicapai sebuah bad beat.
+A. Yang paling terkenal berasal dari 2008 WSOP Main Event: Motoyuki Mabuchi membuat quad aces — tangan yang hanya bisa dikalahkan straight flush — dan tetap kalah. Ia flop set aces, lalu case ace di river melengkapi four of a kind-nya dan, di kartu yang sama, memberi Justin Phillips royal flush diamond. Membuat four of a kind terbaik yang mungkin dan bertemu straight flush — satu-satunya kategori tangan yang mengunggulinya — kira-kira seburuk yang bisa dicapai sebuah bad beat.
 
 **Q. Apakah bad beat lebih sering terjadi online?**
 

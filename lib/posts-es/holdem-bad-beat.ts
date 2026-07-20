@@ -178,7 +178,7 @@ A. Un bad beat jackpot es un premio progresivo que algunas salas pagan cuando un
 
 **Q. ¿Cuál es el peor bad beat de la historia del póker?**
 
-A. El más famoso es del Main Event de las WSOP 2008: Motoyuki Mabuchi hizo póker de ases — una mano batida solo por una escalera real — y aun así perdió. Metió las fichas contra Justin Phillips, y el A♦ del river completó su póker de ases y, con esa misma carta, le dio a Phillips una escalera real de diamantes. Hacer póker de ases — la segunda mano más fuerte del póker — y perder contra la única mano que lo bate es más o menos lo peor que un bad beat puede llegar a ser.
+A. El más famoso es del Main Event de las WSOP 2008: Motoyuki Mabuchi hizo póker de ases — una mano que solo una escalera de color puede batir — y aun así perdió. Metió las fichas contra Justin Phillips, y el A♦ del river completó su póker de ases y, con esa misma carta, le dio a Phillips una escalera real de diamantes. Hacer el mejor póker posible y toparse con una escalera de color — la única categoría de mano que lo supera — es más o menos lo peor que un bad beat puede llegar a ser.
 
 **Q. ¿Los bad beats son más frecuentes online?**
 

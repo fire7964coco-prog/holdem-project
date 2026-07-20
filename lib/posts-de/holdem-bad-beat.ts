@@ -178,7 +178,7 @@ A. Ein Bad Beat Jackpot ist ein progressiver Preis, den manche Cardrooms zahlen,
 
 **Q. Was ist der schlimmste Bad Beat der Pokergeschichte?**
 
-A. Der berühmteste stammt vom Main Event der WSOP 2008: Motoyuki Mabuchi machte einen Vierling Asse — eine Hand, die nur von einem Royal Flush geschlagen wird — und verlor trotzdem. Er floppte ein Set Asse, dann vervollständigte das letzte Ass auf dem River seinen Vierling und gab, auf derselben Karte, Justin Phillips einen Royal Flush in Karo. Einen Vierling Asse zu machen — die zweitstärkste Hand im Poker — und an das einzige Blatt zu verlieren, das sie schlägt, ist ungefähr so schlimm, wie ein Bad Beat nur werden kann.
+A. Der berühmteste stammt vom Main Event der WSOP 2008: Motoyuki Mabuchi machte einen Vierling Asse — eine Hand, die nur von einem Straight Flush geschlagen wird — und verlor trotzdem. Er floppte ein Set Asse, dann vervollständigte das letzte Ass auf dem River seinen Vierling und gab, auf derselben Karte, Justin Phillips einen Royal Flush in Karo. Den bestmöglichen Vierling zu machen und auf einen Straight Flush zu treffen — die einzige Handkategorie, die darüber steht — ist ungefähr so schlimm, wie ein Bad Beat nur werden kann.
 
 **Q. Sind Bad Beats online häufiger?**
 

@@ -178,7 +178,7 @@ A. Um bad beat jackpot é um prêmio progressivo que algumas salas pagam quando 
 
 **Q. Qual é o pior bad beat da história do pôquer?**
 
-A. O mais famoso é do Main Event da WSOP de 2008: Motoyuki Mabuchi fez quadra de ases — uma mão batida apenas por um royal flush — e mesmo assim perdeu. Ele flopou uma trinca de ases, então o ase restante no river completou a quadra dele e, na mesma carta, deu a Justin Phillips um royal flush de ouros. Fazer quatro ases — a segunda mão mais forte do pôquer — e perder pra única mão que a bate é mais ou menos o pior que um bad beat consegue ser.
+A. O mais famoso é do Main Event da WSOP de 2008: Motoyuki Mabuchi fez quadra de ases — uma mão que só um straight flush bate — e mesmo assim perdeu. Ele flopou uma trinca de ases, então o ase restante no river completou a quadra dele e, na mesma carta, deu a Justin Phillips um royal flush de ouros. Fazer a melhor quadra possível e esbarrar num straight flush — a única categoria de mão que a supera — é mais ou menos o pior que um bad beat consegue ser.
 
 **Q. Os bad beats são mais comuns online?**
 
