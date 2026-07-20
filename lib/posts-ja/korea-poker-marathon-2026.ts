@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "韓国の秋の主要マラソン(春川10/25、JTBCソウル11/1、ガーミンラン11/15)は、走るのに最高の気候と重なります。仁川空港すぐそばのパラダイスシティ・カジノは通年でキャッシュゲームを開催(外国人専用・ターミナルから10分)。一度の旅で両方を味わえます。",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-07-13",
-  masterUpdated: "2026-07-03",
+  updated: "2026-07-20",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "14分",
   emoji: "🏃",
@@ -67,10 +67,10 @@ export const POST: Post = {
 | レース | 日程 | 距離 | 場所 | 外国人エントリー | ステータス |
 |---|---|---|---|---|---|
 | 東亜(トンア)ソウル国際マラソン | 2026年3月 | フル, 10K | ソウル | [dongamarathon.com](https://www.dongamarathon.com) | 2026は終了 |
-| ==**YTNソウルツアーマラソン**== | ==**9/6**== | ハーフ, 10K | ソウル広場 | [run.ytn.co.kr](http://run.ytn.co.kr) | 7/15締切 |
-| ==g:**春川(チュンチョン)マラソン**== | ==g:**10/25**== | ==g:フル, 10K== | ==g:春川== | ==g:[chuncheonmarathon.com](https://www.chuncheonmarathon.com)== | ==g:受付中== |
+| ==**YTNソウルツアーマラソン**== | ==**9/6**== | ハーフ, 10K | ソウル広場 | [run.ytn.co.kr](http://run.ytn.co.kr) | 受付終了 |
+| ==g:**春川(チュンチョン)マラソン**== | ==g:**10/25**== | ==g:フル, 10K== | ==g:春川== | ==g:[chuncheonmarathon.com](https://www.chuncheonmarathon.com)== | ==r:受付終了(定員)== |
 | ==**JTBCソウルマラソン**== | ==**11/1**== | フル, 10K | ソウル(上岩/サンアム) | [worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon) | 受付中(9/4締切) |
-| ガーミンラン韓国 | 11/15 | ハーフ, 10K | 高陽(コヤン) | [runable.me](http://runable.me/product/18977?comp=18962) | 7/1〜3受付 |
+| ガーミンラン韓国 | 11/15 | ハーフ, 10K | 高陽(コヤン) | [runable.me](http://runable.me/product/18977?comp=18962) | 受付終了(7/1〜3) |
 
 </div>
 
@@ -191,7 +191,7 @@ export const POST: Post = {
       <td style="padding:10px 14px"><span style="background:rgba(239,68,68,0.15);color:#f87171;padding:2px 7px;border-radius:4px;font-size:12px;font-weight:600">⚡ JTBCマラソン11/1 = この大会のDay 3</span></td>
     </tr>
     <tr style="background:rgba(212,175,55,0.07);border-bottom:1px solid rgba(255,255,255,0.06)">
-      <td style="padding:10px 14px;font-weight:700;white-space:nowrap">12/4 – 12/13</td>
+      <td style="padding:10px 14px;font-weight:700;white-space:nowrap">12月 2026(未定)</td>
       <td style="padding:10px 14px"><strong>AJPC サムライサーキット<br/><span style="font-size:12px;color:var(--muted-foreground)">仁川 2026 III</span></strong></td>
       <td style="padding:10px 14px">パラダイスシティ、仁川</td>
       <td style="padding:10px 14px;color:var(--muted-foreground)">年末の選択肢 · スケジュール未定(TBA)</td>
@@ -227,11 +227,11 @@ export const POST: Post = {
 
 ---
 
-### AJPC サムライサーキット 仁川 III(12/4〜13)
+### AJPC サムライサーキット 仁川 III(2026年12月・日程未定)
 
-==**AJPC サムライサーキット**==が、12月のパラダイスシティ開催で韓国のポーカーカレンダーを締めくくります。10〜11月の窓を逃したプレイヤーには、これが年末の選択肢です。
+==**AJPC サムライサーキット**==が、12月のパラダイスシティ開催で韓国のポーカーカレンダーを締めくくる見込みです。10〜11月の窓を逃したプレイヤーには、これが年末の選択肢です。
 
-- **日程:** 2026年12月4日〜13日
+- **日程:** 2026年12月(日程未定 · 公式発表待ち)
 - **会場:** パラダイスシティ・カジノ、仁川
 - **情報:** [pokercalendar.asia](https://pokercalendar.asia/en/pokertournaments/ajpc-samurai-circuit-incheon-2026-iii/)
 - スケジュールとバイインは未定(TBA)
@@ -323,7 +323,7 @@ export const POST: Post = {
       <td style="padding:9px 12px;color:var(--muted-foreground)">ハーフ · 10K · 8:00 · 受付7/1〜3</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
-      <td style="padding:9px 12px;font-weight:700;white-space:nowrap">12/4–13</td>
+      <td style="padding:9px 12px;font-weight:700;white-space:nowrap">12月(未定)</td>
       <td style="padding:9px 12px">🃏 AJPC サムライサーキット III</td>
       <td style="padding:9px 12px">パラダイスシティ、仁川</td>
       <td style="padding:9px 12px;color:var(--muted-foreground)">スケジュール未定(TBA)</td>
