@@ -68,7 +68,7 @@ El argumento no es complicado. Es cuestión de fechas y ubicación.
 | Maratón Internacional Dong-A de Seúl | Mar 2026 | Completo, 10K | Seúl | [dongamarathon.com](https://www.dongamarathon.com) | Finalizado en 2026 |
 | ==**YTN Seoul Tour Marathon**== | ==**6 sep**== | Medio, 10K | Seoul Plaza | [run.ytn.co.kr](http://run.ytn.co.kr) | Cerrado el 15 jul |
 | ==g:**Maratón de Chuncheon**== | ==g:**25 oct**== | ==g:Completo, 10K== | ==g:Chuncheon== | ==g:[chuncheonmarathon.com](https://www.chuncheonmarathon.com)== | ==g:Abierto ya== |
-| ==**JTBC Seoul Marathon**== | ==**1 nov**== | Completo, 10K | Seúl (Sangam) | [worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon) | Abierto (cierra 4 sep) |
+| ==**JTBC Seoul Marathon**== | ==**1 nov**== | Completo, 10K | Seúl (Sangam) | [worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon) | Cupo extranjeros (se llena pronto) |
 | Garmin Run Korea | 15 nov | Medio, 10K | Goyang | [runable.me](http://runable.me/product/18977?comp=18962) | Abierto 1–3 jul |
 
 </div>
@@ -122,9 +122,9 @@ El ==**JTBC Seoul Marathon**== es la carrera urbana estrella de Corea — de 25,
 - Pasaporte obligatorio en la recogida (sin recogida por terceros)
 
 **Cómo inscribirse (extranjeros):**
-Los corredores extranjeros residentes fuera de Corea se inscriben exclusivamente a través de ==**[worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon)**==. La inscripción cierra el ==r:4 de septiembre de 2026==. Los titulares de pasaporte coreano no pueden inscribirse por esta vía.
+Los corredores extranjeros residentes fuera de Corea se inscriben exclusivamente a través de ==**[worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon)**==. ==r:Las plazas son limitadas y se agotan pronto==, así que consulta la página oficial para ver la disponibilidad actual — ten en cuenta que el 4 de septiembre de 2026 es la fecha límite de cancelación/reembolso, no el cierre de inscripción. Los titulares de pasaporte coreano no pueden inscribirse por esta vía.
 
-==g:La inscripción del JTBC sigue abierta a mediados de junio de 2026 — este es el que hay que mover ya.==
+==g:El cupo de extranjeros del JTBC es limitado — inscríbete pronto antes de que se agote.==
 
 **Tras la carrera → póker:** el recorrido del JTBC termina en el centro de Seúl. Desde la estación de Seúl (u Hongdae), coge el AREX con todas las paradas → lanzadera de Paradise City desde la T1. ~1 hora en total. La mayoría de corredores termina bastante antes del mediodía — una sesión de cash game por la tarde es realista.
 

@@ -68,7 +68,7 @@ Alasannya tidak rumit. Ini soal waktu dan lokasi.
 | Dong-A Seoul International Marathon | Mar 2026 | Full, 10K | Seoul | [dongamarathon.com](https://www.dongamarathon.com) | Selesai untuk 2026 |
 | ==**YTN Seoul Tour Marathon**== | ==**6 Sep**== | Half, 10K | Seoul Plaza | [run.ytn.co.kr](http://run.ytn.co.kr) | Tutup 15 Jul |
 | ==g:**Chuncheon Marathon**== | ==g:**25 Okt**== | ==g:Full, 10K== | ==g:Chuncheon== | ==g:[chuncheonmarathon.com](https://www.chuncheonmarathon.com)== | ==g:Dibuka sekarang== |
-| ==**JTBC Seoul Marathon**== | ==**1 Nov**== | Full, 10K | Seoul (Sangam) | [worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon) | Dibuka (tutup 4 Sep) |
+| ==**JTBC Seoul Marathon**== | ==**1 Nov**== | Full, 10K | Seoul (Sangam) | [worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon) | Kuota asing (cepat penuh) |
 | Garmin Run Korea | 15 Nov | Half, 10K | Goyang | [runable.me](http://runable.me/product/18977?comp=18962) | Dibuka 1–3 Jul |
 
 </div>
@@ -122,9 +122,9 @@ Alasannya tidak rumit. Ini soal waktu dan lokasi.
 - Paspor diperlukan saat pengambilan (tidak boleh diwakilkan)
 
 **Cara registrasi (warga asing):**
-Pelari asing yang tinggal di luar Korea mendaftar khusus melalui ==**[worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon)**==. Registrasi ditutup ==r:4 September 2026==. Pemegang paspor Korea tidak memenuhi syarat melalui kanal ini.
+Pelari asing yang tinggal di luar Korea mendaftar khusus melalui ==**[worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon)**==. ==r:Kuota terbatas dan cepat penuh==, jadi cek halaman resmi untuk ketersediaan terkini — 4 September 2026 adalah batas pembatalan/refund, bukan penutupan pendaftaran. Pemegang paspor Korea tidak memenuhi syarat melalui kanal ini.
 
-==g:Registrasi JTBC masih dibuka per pertengahan Juni 2026 — inilah yang harus segera Anda ambil sekarang.==
+==g:Kuota asing JTBC terbatas — daftar lebih awal sebelum penuh.==
 
 **Setelah lomba → poker:** Lintasan JTBC berakhir di pusat Seoul. Dari Stasiun Seoul (atau Hongdae), naik AREX All-Stop → antar-jemput Paradise City dari T1. ~1 jam total. Sebagian besar pelari finis jauh sebelum tengah hari — sesi cash game sore hari sangat realistis.
 

@@ -68,7 +68,7 @@ The case isn't complicated. It's about timing and location.
 | Dong-A Seoul International Marathon | Mar 2026 | Full, 10K | Seoul | [dongamarathon.com](https://www.dongamarathon.com) | Done for 2026 |
 | ==**YTN Seoul Tour Marathon**== | ==**Sep 6**== | Half, 11K | Seoul Plaza | [run.ytn.co.kr](http://run.ytn.co.kr) | Closed Jul 10 |
 | ==g:**Chuncheon Marathon**== | ==g:**Oct 25**== | ==g:Full, 10K== | ==g:Chuncheon== | ==g:[chuncheonmarathon.com](https://www.chuncheonmarathon.com)== | ==g:Reg. closed (sold out)== |
-| ==**JTBC Seoul Marathon**== | ==**Nov 1**== | Full, 10K | Seoul (Sangam) | [worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon) | Open (closes Sep 4) |
+| ==**JTBC Seoul Marathon**== | ==**Nov 1**== | Full, 10K | Seoul (Sangam) | [worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon) | Foreign entry (fills early — check) |
 | Garmin Run Korea | Nov 15 | Half, 10K | Goyang | [runable.me](http://runable.me/product/18977?comp=18962) | Closed (reg. was Jul 1–3) |
 
 </div>
@@ -122,9 +122,9 @@ The ==**JTBC Seoul Marathon**== is Korea's premier urban race — 25,000–50,00
 - Passport required at pickup (no proxy collection)
 
 **How to register (foreigners):**
-Foreign runners residing outside Korea register exclusively through ==**[worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon)**==. Registration closes ==r:September 4, 2026==. Korean passport holders are ineligible via this channel.
+Foreign runners residing outside Korea register exclusively through ==**[worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon)**==. ==r:Spots are limited and fill early==, so check the official page for current availability — note that September 4, 2026 is the cancellation/refund deadline, not the registration close. Korean passport holders are ineligible via this channel.
 
-==g:JTBC registration is still open as of mid-June 2026 — this is the one to move on now.==
+==g:JTBC's foreign quota is limited — apply early before it fills.==
 
 **After the race → poker:** The JTBC course ends in central Seoul. From Seoul Station (or Hongdae), board the AREX All-Stop → Paradise City shuttle from T1. ~1 hour total. Most runners finish well before noon — afternoon cash game session is realistic.
 

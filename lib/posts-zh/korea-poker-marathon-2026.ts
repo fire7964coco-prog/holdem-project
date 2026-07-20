@@ -68,7 +68,7 @@ export const POST: Post = {
 | Dong-A 首尔国际马拉松 | 2026 年 3 月 | 全程、10K | 首尔 | [dongamarathon.com](https://www.dongamarathon.com) | 2026 已结束 |
 | ==**YTN 首尔 Tour Marathon**== | ==**9 月 6 日**== | 半程、10K | Seoul Plaza | [run.ytn.co.kr](http://run.ytn.co.kr) | 7 月 15 日截止 |
 | ==g:**春川马拉松**== | ==g:**10 月 25 日**== | ==g:全程、10K== | ==g:春川== | ==g:[chuncheonmarathon.com](https://www.chuncheonmarathon.com)== | ==g:报名中== |
-| ==**JTBC 首尔马拉松**== | ==**11 月 1 日**== | 全程、10K | 首尔（上岩） | [worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon) | 报名中（9 月 4 日截止） |
+| ==**JTBC 首尔马拉松**== | ==**11 月 1 日**== | 全程、10K | 首尔（上岩） | [worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon) | 外国人名额（早满·请确认） |
 | Garmin Run Korea | 11 月 15 日 | 半程、10K | 高阳 | [runable.me](http://runable.me/product/18977?comp=18962) | 7 月 1–3 日报名 |
 
 </div>
@@ -122,9 +122,9 @@ export const POST: Post = {
 - 领包时需出示护照（不能代领）
 
 **怎么报名（外国人）：**
-居住在韩国境外的外国跑者，只能通过 ==**[worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon)**== 报名。报名 ==r:2026 年 9 月 4 日截止==。持韩国护照者无法通过这个渠道报名。
+居住在韩国境外的外国跑者，只能通过 ==**[worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon)**== 报名。==r:名额有限且常常很早满员==，请以官方页面的最新状态为准——2026 年 9 月 4 日是取消/退款截止日，并非报名截止日。持韩国护照者无法通过这个渠道报名。
 
-==g:截至 2026 年 6 月中，JTBC 报名仍然开放——这是现在该抓紧的一个。==
+==g:JTBC 的外国人名额有限——请趁早报名，以免满员。==
 
 **赛后 → 打牌：** JTBC 赛道终点在首尔市中心。从首尔站（或弘大）搭 AREX 普通车（All-Stop）→ 从 1 号航站楼坐 Paradise City 摆渡车。总共约 1 小时。多数跑者中午前就完赛了——下午打一场现金局是现实的。
 

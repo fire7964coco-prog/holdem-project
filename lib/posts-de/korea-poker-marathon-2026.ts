@@ -68,7 +68,7 @@ Der Fall ist nicht kompliziert. Es geht um Timing und Lage.
 | Dong-A Seoul International Marathon | März 2026 | Full, 10K | Seoul | [dongamarathon.com](https://www.dongamarathon.com) | 2026 vorbei |
 | ==**YTN Seoul Tour Marathon**== | ==**6. Sep**== | Half, 10K | Seoul Plaza | [run.ytn.co.kr](http://run.ytn.co.kr) | Geschlossen 15. Jul |
 | ==g:**Chuncheon Marathon**== | ==g:**25. Okt**== | ==g:Full, 10K== | ==g:Chuncheon== | ==g:[chuncheonmarathon.com](https://www.chuncheonmarathon.com)== | ==g:Jetzt offen== |
-| ==**JTBC Seoul Marathon**== | ==**1. Nov**== | Full, 10K | Seoul (Sangam) | [worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon) | Offen (schließt 4. Sep) |
+| ==**JTBC Seoul Marathon**== | ==**1. Nov**== | Full, 10K | Seoul (Sangam) | [worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon) | Ausländer-Kontingent (früh voll) |
 | Garmin Run Korea | 15. Nov | Half, 10K | Goyang | [runable.me](http://runable.me/product/18977?comp=18962) | Offen 1.–3. Jul |
 
 </div>
@@ -122,9 +122,9 @@ Der ==**JTBC Seoul Marathon**== ist Koreas führendes Stadtrennen — 25.000–5
 - Reisepass bei der Abholung erforderlich (keine Abholung durch Dritte)
 
 **So meldest du dich an (Ausländer):**
-Ausländische Läufer mit Wohnsitz außerhalb Koreas melden sich ausschließlich über ==**[worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon)**== an. Die Anmeldung schließt am ==r:4. September 2026==. Inhaber eines koreanischen Passes sind über diesen Kanal nicht teilnahmeberechtigt.
+Ausländische Läufer mit Wohnsitz außerhalb Koreas melden sich ausschließlich über ==**[worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon)**== an. ==r:Die Plätze sind begrenzt und früh ausgebucht== — prüfe die offizielle Seite für die aktuelle Verfügbarkeit; der 4. September 2026 ist die Stornierungs-/Rückerstattungsfrist, nicht der Anmeldeschluss. Inhaber eines koreanischen Passes sind über diesen Kanal nicht teilnahmeberechtigt.
 
-==g:Die JTBC-Anmeldung ist Mitte Juni 2026 noch offen — bei diesem Rennen solltest du jetzt handeln.==
+==g:Das Ausländer-Kontingent der JTBC ist begrenzt — melde dich früh an, bevor es ausgebucht ist.==
 
 **Nach dem Rennen → Poker:** Der JTBC-Kurs endet im Zentrum von Seoul. Vom Bahnhof Seoul (oder Hongdae) den AREX All-Stop nehmen → Paradise-City-Shuttle ab T1. ~1 Stunde insgesamt. Die meisten Läufer kommen deutlich vor Mittag ins Ziel — eine Cash-Game-Session am Nachmittag ist realistisch.
 
