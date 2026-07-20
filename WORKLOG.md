@@ -3,6 +3,12 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-20 밤 (★★ JA strategy 필라 8/8 완주 — 구글 상위3편 분석 + FAQ 경화동기화)
+
+> JA 20/42(rankings 6 + odds 6 + strategy 8). ★사용자 지시=글마다 구글검색 상위 3편 분석·참조하며 작성. strategy 전편 pre-hardening이나 본문·§13·H2 이미 양질 → 작업=경화 EN winnable FAQ 번역삽입 + §13 감사대조 + H2 검색형 강화(SERP 정답지 반영) + dates.
+- 커밋: strategy허브 `6b9db25`(FAQ+3 運か実力/GTOウィザード/上達, H2 勝てない人の特徴) · positions `03f321d`(H2 正式名称一覧) · position-play `112699e`(FAQ+2) · starting-hands-chart `dcfd91b`(패리티검증) · limping `c60fc0b`(FAQ+1) · 3bet `a229ace`(FAQ+2 4벳/5벳) · continuation-bet `2552452`(FAQ+1) · when-to-fold `3fc016c`(FAQ+1).
+- §13 전수 재검산 0오류. 발행 총계 불변(57 blog + 406 intl). 다음=rules/tournament/glossary.
+
 ## 2026-07-20 밤 (★ JA odds 클러스터 6/6 완주 — FAQ 경화동기화 + §13 감사대조)
 
 > JA 12/42(rankings 6 + odds 6). odds 6편(probability·pot-odds·outs·drawing-odds·implied-odds·equity)은 07-03~07-08 pre-hardening 번역이나 **본문·H2·§13 이미 양질**(H2가 ラッコ headline 정답지와 일치) → 작업 = **07-18 경화 EN에 추가된 winnable FAQ 번역삽입 + §13 감사대조 + dates**.

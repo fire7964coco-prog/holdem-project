@@ -5,18 +5,20 @@
 
 ---
 
-## ▶▶▶ 새 세션 START HERE (2026-07-20 밤 — ★★★JA 12/42: odds 클러스터 6/6 완주 → 다음 = strategy 필라)
+## ▶▶▶ 새 세션 START HERE (2026-07-20 밤 — ★★★JA 20/42: strategy 필라 8/8 완주 → 다음 = rules 6 or tournament 9 or glossary 6)
 
-> ✅ **JA odds 클러스터 완주**(probability·pot-odds·outs·drawing-odds·implied-odds·equity). rankings 6/6 + odds 6/6 = **JA 12/42**.
-> - **이번 세션 실증**: odds 6편 전부 07-03~07-08 pre-hardening 번역이었으나 **본문·§13·H2는 이미 양질**(H2가 ラッコ headline 정답지와 이미 일치: poker101·ABEMA·mpj — `とは`·`計算方法`·`早見表`·`2倍4倍の法則`). **실제 작업 = 경화 EN에 추가된 winnable FAQ 동기화 + §13 감사대조 + dates**. FAQ 추가: pot-odds +3, outs +1, drawing-odds +3, implied-odds +1, equity +3.
-> - **§13 전수 재검산 결과 = 실오류 0건**. 핸드오프가 우려한 감사포인트 전부 이미 동기화 확인: implied-odds 공식 `−(pot+call)` ✓, outs 표 9아웃 turn 19.1%(9/47) ✓, drawing-odds 407対1(odds-against=1 in 408) ✓, probability 완료(전 세션). 커밋: `8ec7c42`(pot-odds)·`9bac076`(outs)·`c5fdfab`(drawing-odds)·`b998f46`(implied-odds)·`4b4a496`(equity).
-> - ★교훈 재확인: **07-03/07-08 odds 번역은 이미 검색형 H2 보유** → H2 재설계 불필요, FAQ 패리티+감사동기화+dates만(가벼움). 07-18 경화가 EN에 FAQ만 대량 추가했으므로 **JA는 그 신규 FAQ를 번역해 넣는 게 핵심 작업**.
+> ✅ **JA odds 6/6 + strategy 8/8 완주.** rankings 6 + odds 6 + strategy 8 = **JA 20/42**. 남은 22편 = rules 6 + tournament 9 + glossary 6.
+> - **strategy 8편**(strategy 허브·positions·position-play·starting-hands-chart·limping·3bet·continuation-bet·when-to-fold): 커밋 `6b9db25`·`03f321d`·`112699e`·`dcfd91b`·`c60fc0b`·`a229ace`·`2552452`·`3fc016c`.
+> - ★★**사용자 지시(2026-07-20) = 글마다 착수 전 구글검색으로 상위 3편 분석·참조하며 작성**([[translation-local-research-first]] 강화). 이번 세션 전부 준수: 각 글 WebSearch(일본 SERP) + ラッコ headline(경쟁 見出し 정답지)로 상위 3편 분석 → H2가 이미 검색형이면 확인만, winnable 앵글이 명확하면 H2 강화(예: strategy "6つの漏れ"→"勝てない人の6つの特徴", positions "名前と略称"→"正式名称一覧").
+> - **작업 성격**: strategy 전편 pre-hardening(07-05~07-11)이나 **본문·§13·H2 이미 양질**. 실작업 = **07-18/19 경화 EN에 추가된 winnable FAQ 번역삽입 + §13 감사대조 + dates**. FAQ 추가: strategy +3(運か実力·GTOウィザード·上達), position-play +2, limping +1, 3bet +2(4벳/5벳), continuation-bet +1(バリューベット), when-to-fold +1. positions·starting-hands-chart는 이미 완전 패리티(무변경 or masterUpdated만).
+> - **§13 전수 재검산 = 실오류 0건**. strategy 핸드예시(A♣K♣·A♠Q♠ TPTK·A♥K♣ 투페어)·수치(80% fold·11.8% set·c-bet 60-80%·3bet 3x/4x·MDF·팟오즈 25/33%) 전부 EN 일치.
 >
-> ### ▶▶ 다음 = strategy 필라 (JA) — 8편
-> - **holdem-strategy**(허브) + holdem-positions · holdem-position-play · holdem-starting-hands-chart · holdem-limping · holdem-3bet · holdem-continuation-bet · holdem-when-to-fold. (착수 전 각 JA 파일 masterUpdated 확인 — pre-07-03=H2 재설계 큼, 07-11+=가벼움.)
-> - **워크플로우**(odds에서 검증): ①각 JA 파일 열어 EN 마스터와 대조 ②FAQ 개수 패리티(EN 경화 추가분 번역 삽입) ③§13 감사대조(3벳 사이즈 BB·MDF 등 수치) ④H2 이미 검색형이면 무변경(ラッコ headline로 확인만) ⑤dates 갱신 ⑥빌드→커밋→푸시(글별 자동배포). ラッ코 시드: `ポーカー 3ベット`·`ポーカー ポジション`·`リンプイン`·`コンティニュエーションベット`·`ポーカー 降りどき`.
-> - 그다음 필라: rules·tournament·glossary. 전 42편 = EN 마스터 유니버스.
-> - ⚠️ §13(카드·확률·계산) 불변. 이미지·slug·`/ja/blog/` 링크 구조 EN 1:1 유지(count 패리티 [[translation-link-structure-equals-en]]).
+> ### ▶▶ 다음 = rules 6 / tournament 9 / glossary 6 (JA) 중 택1
+> - **rules 6**: texas-holdem-rules-for-beginners(허브)·holdem-game-order·holdem-betting-actions·holdem-blind-meaning·holdem-all-in-rules·holdem-showdown-rules. (rules는 07-17에 EN 경험담만, 원하면 H2질문화+FAQ 재패스 여지 — masterUpdated 확인.)
+> - **tournament 9**: holdem-tournament·holdem-icm·holdem-bubble·holdem-short-stack·tournament-vs-cash-game + 라이브이벤트 4편(apt-incheon·korea-poker-marathon·wpt-australia·ept-barcelona). ⚠️이벤트 4편은 §14 사실(날짜·바이인·운영사) EN 값 그대로.
+> - **glossary 6**: holdem-glossary·holdem-straddle·holdem-rake·holdem-fish·holdem-cooler·holdem-bad-beat.
+> - **워크플로우**(검증됨): ①구글 WebSearch(일본 SERP 상위 3편)+ラッコ headline 분석 ②각 JA vs EN 마스터 대조 ③FAQ 개수 패리티(EN 경화 추가분 번역삽입) ④§13 감사대조 ⑤H2 검색형 확인/강화 ⑥dates 갱신 ⑦빌드→커밋→푸시(글별 자동배포).
+> - ⚠️ §13(카드·확률·계산) 불변. 이미지·slug·`/ja/blog/` 링크 구조 EN 1:1(count 패리티 [[translation-link-structure-equals-en]]). ★착수 전 각 파일 masterUpdated로 경화여부 확인(07-19=경화됨→FAQ 동기화 필요, 그외=대부분 이미 패리티).
 
 ## ▶▶▶ (이전) START HERE (2026-07-20 — ★★★JA 번역 경화 진행중 2/42 + ラッコ MCP 연결완료 → 다음 = rankings 클러스터 이어서)
 
