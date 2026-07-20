@@ -15,7 +15,7 @@
 >
 > ### ▶▶ ✅ rules 필라 6/6 완료 (JA 21/42) → 적대적 검수 진행중 → 다음 = tournament 9 / glossary 6
 - ✅ **rules 6편 완료**: 허브(チップなし신규H2 `a0bad4f`)·showdown(順番 210vol 헤딩강화 `dbb2f33`)·betting(チェックジェスチャー FAQ `dbb2f33`)·all-in(オールイン足りない FAQ `dbb2f33`)·game-order(gap없음 스킵)·blind(タイマー=툴, gap없음 스킵). 전편 §13 0오류, EN 패리티 확인.
-- ★**작업종료 적대적 검수 실행중**(사용자 지시 [[ja-adversarial-native-review]]): 일본 현지 홀덤전문가 페르소나 서브에이전트가 rules 6편 + 이번세션 신규 JA오리지널(必勝法·フォールドばかり·ハンドレンジ覚え方·チップなし·足りない FAQ·ジェスチャー FAQ) 정밀검수 중. **결과 나오면 🔴🟠 결함 수정→재빌드→커밋 필요.**
+- ✅ **작업종료 적대적 검수 완료**(사용자 지시 [[ja-adversarial-native-review]]): 일본 현지 홀덤전문가 페르소나 검수 결과 **🔴 치명 0건**(§13·사이드팟 4인검산·올인반환·팟오즈·핸드예시 전부 재검산 합격, 일본어 자연스러움·용어·합법주석 문제없음). **🟠 2건 수정 배포 `374c122`**: betting 체크 "2回叩く"→회수규정 없음, texas 최소스트레이트 문구 명확화. **신규 JA오리지널 콘텐츠 사실성 검증 통과.**
 - masterUpdated 신설: rules 대부분 07-19(betting=07-11). game-order·blind은 콘텐츠 무변경이라 masterUpdated 미추가(추후 여유 시).
 
 ### ▶▶ 다음 = tournament 9 / glossary 6 (rules 완료 후)
