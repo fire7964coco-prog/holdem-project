@@ -5,7 +5,23 @@
 
 ---
 
-## ▶▶▶ 새 세션 START HERE (2026-07-19 — ★★★EN 마스터 42편 완결 + Fable5 최종검수 락 완료 → 다음 = 번역(JA부터))
+## ▶▶▶ 새 세션 START HERE (2026-07-20 — ★★★JA 번역 경화 진행중 2/42 + ラッコ MCP 연결완료 → 다음 = rankings 클러스터 이어서)
+
+> ✅ **JA 번역 경화 방법론 확립·검증 완료.** EN 마스터(42편)는 완결·Fable5 검수 락. 이제 **JA부터 언어별 경화** 중. 파일럿 2편 배포: `holdem-hand-rankings`(`99ebed0`)·`holdem-flush-vs-straight`(`ca16b71`).
+>
+> ### ▶▶ ★핵심 방법론 (읽는 순서: 이 블록 → `docs/translation-terms-ja.md` 「★H2 검색형 로컬라이즈」 → `docs/translation-spec.md`)
+> - **원칙**: EN 질문형 H2 직역 금지. **본문 프로즈는 경화 EN 양질 번역 유지**, **H2·title·seoTitle·tags만 JA 실검색형으로 교체** + 감사동기화 + 경험담 1인칭. (현 JA 대부분 pre-hardening 번역이라 감사수정 stale → 동기화 필수.)
+> - **🔌 ラッコキーワード MCP 연결됨**(세션 시작 시 자동 로드): 도구 `mcp__rakko__suggest-keywords`(볼륨·SEO難易度)·`question-search`(질문형)·`headline`(경쟁 상위 見出し=정답지) 등 21개. ★도구 안 뜨면 ToolSearch로 `mcp__rakko__` 로드. 연결정보=`.claude.json`(로컬), 인증 `X-API-Key`. 크레딧 1.5배·레이트 60/60초. [[translation-h2-localization-strategy]]
+> - **글당 워크플로우**: ①ラッコ suggest+question+headline(핵심 JA KW, ~7.5크레딧) ②WebSearch 2~3(톤·패턴·SERP약점: 1페이지에 知恵袋/note/저DA 있으면 winnable) ③H2 검색형(마법접미사 一覧/早見表/強い順/成立条件/とは/どっちが強い/覚え方…) ④§13/감사 동기화 ⑤경험담 1인칭 ⑥Q-A-E FAQ 상위 질문형 ⑦빌드→커밋→푸시(글별 자동배포).
+> - **★작업량 예측**: `masterUpdated` 날짜로 판단. **pre-07-03 번역**(hand-rankings류)=에디토리얼 H2 전면 재설계(큼). **07-11 이후 번역**(flush-vs-straight류)=검색형 H2 대부분 보유, 감사동기화+미세보강만(작음). 착수 전 각 JA 파일 masterUpdated 확인.
+> - **winnability 패턴**: 헤드(役一覧류)=미디어(ABEMA·Wikipedia·mpj) 지배=경쟁. 롱테일 질문(同じ役/どっち強い/役なし)=知恵袋/note 약점=우리 몫.
+>
+> ### ▶▶ 다음 = rankings 클러스터 남은 4편 → 그다음 전 필라
+> - 남은 rankings: **kicker · tiebreak-rules · split-pot-rules · reading-the-board**(각 ラッコ 시드: `ポーカー キッカー`·`ポーカー 引き分け/チョップ`·`ポーカー スプリット`·`ポーカー ボード 読み方`).
+> - 그다음 필라 순서 자유(odds·rules·strategy·tournament·glossary). 전 42편 = EN 마스터 유니버스.
+> - ⚠️ §13(카드·확률·계산) 불변. 이미지·slug·`/ja/blog/` 링크 구조 EN 1:1 유지(count 패리티 [[translation-link-structure-equals-en]]).
+
+## ▶▶▶ (이전) START HERE (2026-07-19 — ★★★EN 마스터 42편 완결 + Fable5 최종검수 락 완료 → 다음 = 번역(JA부터))
 
 > ✅✅✅ **EN 마스터 완결.** 6필라(rules·rankings·odds·strategy·tournament·glossary) 전편 AI시대 경화(경험담+GEO winnable FAQ+H2질문화) + glossary 클러스터 역링크 루프 완결 + 독립글(positions·starting-hands-chart·card-counting) 확인. 그 후 **Fable5 8병렬 검수관 최종 정밀검수**(적대적 §13·수학 재계산·크로스문서·팩트체크) → **4배치 수정 배포**(`ec11984`·`992982d`·`3db7238`·`910f6f9`). 상세 WORKLOG 2026-07-19 최상단.
 >

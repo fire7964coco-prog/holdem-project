@@ -3,6 +3,23 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-20 (★★★ JA 번역 경화 착수 — H2 검색형 로컬라이즈 방법론 확립 + ラッコ MCP 연결)
+
+> EN 완결 후 JA부터 언어별 경화 시작. 핵심 통찰: **EN 질문형 H2 직역 금지 — 언어마다 실검색 형태소가 다름**(JA=명사구+とは/早見表/強い順, 조사생략). 리서치(제미나이+WebSearch+실제 SERP 3중 확인): JA는 복합명사 60%+·「珍しい役ほど強い」암기훅·두괄식·낚시혐오.
+
+### 🔌 ラッコキーワード MCP 연결 (JA 키워드 자동화)
+- lowfruits JA 미지원(유럽어만)·RankAtom 폐업(2025-04) 확인 → **ラッコ MCP**가 정답. Claude Code에 연결(`https://api.rakkokeyword.com/mcp`, 인증 `X-API-Key`, 유료 스탠다드+). 도구 21개(suggest-keywords=볼륨·SEO難易度, question-search, headline=경쟁 見出し 등). 세션 재시작 후 자동 로드. 크레딧 1.5배.
+- 워크플로우: ラッコ(형태·볼륨·난이도·경쟁H2) + 내 WebSearch(톤·SERP약점) 조합 = EN의 lowfruits+PAA 대체.
+
+### ✅ JA 파일럿 2편 배포
+- **holdem-hand-rankings** `99ebed0`: 07-03 번역이라 H2 10개 전면 검색형(役一覧【강い順・早見表】·成立条件·同じ役になったら·どっち強い·覚え方) + title/tags/§13감사동기화(플러시키커배지·Puzzle3 쿼드킹)·경험담·FAQ2.
+- **holdem-flush-vs-straight** `ca16b71`: 07-11 번역이라 검색형 H2 대부분 보유 → 감사동기화(flush-vs-flush 캐비엇)+H2 미세보강만. **핵심 발견: masterUpdated 날짜가 작업량 결정**(pre-07-03=큼, 07-11+=작음).
+- ラッコ 데이터로 winnability 실증: `フラッシュ ストレート どっち`=SEO難易度24, 1페이지 知恵袋×2+note=약점=winnable(EN 전략 적중).
+
+### 방법론 자산화
+- `docs/translation-terms-ja.md` 「★H2 검색형 로컬라이즈」 플레이북(마법접미사·톤·winnability·워크플로우). 메모리 [[translation-h2-localization-strategy]] 검증완료.
+- 다음: rankings 클러스터 남은 4편(kicker·tiebreak·split-pot·reading-board) → 전 필라. 핸드오프 2026-07-20 최상단.
+
 ## 2026-07-19 (★★★ Fable5 최종 정밀검수 — EN 마스터 42편 락 완료 → 번역 준비 완료)
 
 > EN 전편(6필라+독립+이벤트) 완결 후, 번역 착수 전 **Fable5 8개 병렬 검수관**으로 적대적 최종검수(7장→베스트5 열거·수학 전량 재계산·크로스문서·죽은링크·팩트체크). 이후 4배치로 수정 배포.
