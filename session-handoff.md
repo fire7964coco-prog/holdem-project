@@ -18,7 +18,13 @@
 - ✅ **작업종료 적대적 검수 완료**(사용자 지시 [[ja-adversarial-native-review]]): 일본 현지 홀덤전문가 페르소나 검수 결과 **🔴 치명 0건**(§13·사이드팟 4인검산·올인반환·팟오즈·핸드예시 전부 재검산 합격, 일본어 자연스러움·용어·합법주석 문제없음). **🟠 2건 수정 배포 `374c122`**: betting 체크 "2回叩く"→회수규정 없음, texas 최소스트레이트 문구 명확화. **신규 JA오리지널 콘텐츠 사실성 검증 통과.**
 - masterUpdated 신설: rules 대부분 07-19(betting=07-11). game-order·blind은 콘텐츠 무변경이라 masterUpdated 미추가(추후 여유 시).
 
-### ▶▶ 다음 = tournament 9 / glossary 6 (rules 완료 후)
+### ▶▶ 진행중 = tournament 필라 (JA) 2/9 → 다음 = bubble·short-stack·tvc + 라이브이벤트 4편
+- ✅ **tournament 허브** `c58634b`(FAQ+2: 収益·運と実力) · **icm** `b1e2dcc`(FAQ+1: よくあるミス). 둘 다 H2 경쟁 초과커버라 신규H2 불필요, FAQ 동기화+dates.
+- ★표기 확인됨: ICM/MTT/SNG/GTO=라틴, M値=한자, スチール/リスチール=카타카나([[ja-term-notation-search-match]]).
+- 남은 tournament: **holdem-bubble·holdem-short-stack·holdem-tournament-vs-cash-game** (전략) + **라이브이벤트 4편**(apt-incheon·korea-poker-marathon·wpt-australia·ept-barcelona) ⚠️§14 사실(날짜·바이인·운영사) EN 값 그대로, 지역/이벤트 키워드(パラダイスシティ 140·韓国2026 50 등 ラッコ 확인)로 winnable 여지.
+- ★short-stack 착수 시: `M値`/`CSI`(pokerdou·poker-picks 랭크)·`プッシュフォールド` 표기·gap 확인(허브에서 킵한 토픽).
+- 그다음 glossary 6.
+- ★**tournament 클러스터 종료 시 적대적 네이티브 검수**([[ja-adversarial-native-review]]) 필수(특히 라이브이벤트 §14 사실).
 > - **rules 6**: texas-holdem-rules-for-beginners(허브)·holdem-game-order·holdem-betting-actions·holdem-blind-meaning·holdem-all-in-rules·holdem-showdown-rules. (rules는 07-17에 EN 경험담만, 원하면 H2질문화+FAQ 재패스 여지 — masterUpdated 확인.)
 > - **tournament 9**: holdem-tournament·holdem-icm·holdem-bubble·holdem-short-stack·tournament-vs-cash-game + 라이브이벤트 4편(apt-incheon·korea-poker-marathon·wpt-australia·ept-barcelona). ⚠️이벤트 4편은 §14 사실(날짜·바이인·운영사) EN 값 그대로.
 > - **glossary 6**: holdem-glossary·holdem-straddle·holdem-rake·holdem-fish·holdem-cooler·holdem-bad-beat.
