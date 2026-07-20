@@ -5,7 +5,23 @@
 
 ---
 
-## ▶▶▶ 새 세션 START HERE (2026-07-20 심야 — ★★★JA tournament 9/9 완주 → JA 35/42, 다음 = glossary 6 (+card-counting))
+## ▶▶▶ 새 세션 START HERE (2026-07-20 심야 — ★★★★JA glossary 6/6 + card-counting 완주 → **JA 42/42 = EN 마스터 전체 완결**, 다음 = 다른 언어 재경화 or 마케팅)
+
+> ✅✅✅ **JA 완결.** rankings 6 + odds 6 + strategy 8 + rules 6 + tournament 9 + **glossary 6 + card-counting 1** = **JA 42/42 = EN 마스터 유니버스 전체**. 잔여 부채 없음.
+> - **이번 세션 glossary 7편**: glossary `97cd7e2` · straddle `2c9204a` · rake `fce2a55` · fish `17e6fe6` · cooler `936adfa` · bad-beat `2ca9874` · card-counting `9743817`. 검수반영 `22100f3`.
+> - **워크플로우(사용자 확정, 이번 세션 전편 준수)**: EN 경화본을 뼈대로 → ①ラッコ(suggest·question·headline) + 일본 SERP 웹검색으로 winnable 롱테일 발굴 ②EN 07-19 경화 누락분 §14 동기화(FAQ·용어·**도입부 링크**) ③**데이터 뒷받침되는 진짜 gap만 신규 FAQ**(억지 금지) ④§13 감사대조 ⑤dates→빌드→커밋→푸시(글마다 자동배포).
+> - **★이번 세션 신규 winnable FAQ**(데이터 뒷받침): straddle「ストラドルされたら対策」(경쟁사 다수 커버) · rake「レーキとアンティの違い」(question 2회) · cc「カウンティングの映画」(question「映画は?」). 나머지 니치 토픽(cooler·fish·bad-beat)은 억지 없이 스킵.
+> - **★공통 결함 패턴**: 07-04~08 번역본은 EN 07-19 경화 이전이라 **도입부 glossary 링크(+thumb)가 누락**돼 있었음(rake·fish·cooler·bad-beat 4편 복원). **다음 언어 재경화 시에도 이 링크 누락 전수 점검 필수.**
+> - ✅ **적대적 네이티브 검수**([[ja-adversarial-native-review]], 2병렬): §13 수치 전수 손계산=실오류 0(셋오버셋 11.76%·1.04%, KK vs AA 4.52:1, 9아웃 34.97%, 블로커 16→12, 馬渕 WSOP2008 史実 일치). **🔴1건=bad-beat "クアッドエース=2番目に強い手"**(포카드는 3번째 카테고리 = 사실오류, EN 원문은 `only a straight flush can beat`로 정확) → JA 의역 오류였음, EN 정합으로 정정. 🟠 표기통일(コールドデッキ)·スピュー·文体통일.
+> - ⚠️ **다른 언어 소급 점검거리(저순위)**: "quad aces=2번째 강한 手" 의역 오류를 es/pt/de/zh/id도 했을 가능성 → bad-beat 번역본 grep 점검 권장.
+>
+> ### ▶▶ 다음 세션 후보
+> - **(A) 다른 구언어 재경화**: es·pt·de·zh·id도 EN 07-19 경화 **미반영 stale**(도입부 링크 누락·경화 winnable FAQ 미반영·§13 quad-aces 의역 가능성). JA와 동일 방법론으로 ES부터. 단 ラッコ는 JA 전용 → es/pt 등은 현지 서제스트툴/WebSearch로.
+> - **(B) 마케팅 플랜 논의**(2026-07-16 예정분, 유튜브 프레임 제외 백지에서) — 아래 블록.
+> - **(C) KO 본진 강화**(GSC 성과=ko 기준, 족보 카니발 승계·GEO 확장).
+> - 사용자에게 다음 방향 확인 후 착수.
+
+## ▶▶▶ (이전) START HERE (2026-07-20 심야 — ★★★JA tournament 9/9 완주 → JA 35/42, 다음 = glossary 6 (+card-counting))
 
 > ✅ **tournament 필라 9/9 완주.** rankings 6 + odds 6 + strategy 8 + rules 6 + **tournament 9** = **JA 35/42**. 남은 = **glossary 6**(holdem-glossary·straddle·rake·fish·cooler·bad-beat) + 독립글 card-counting 1.
 > - 이번 세션 tournament 7편(허브·icm는 이전): bubble `29ad2eb`·`71668e3` / short-stack `6071cdf` / tvc `0a336e2` / apt-incheon `0dce185` / korea-marathon `8f5b087` / wpt-australia `1936f7a` / ept-barcelona `ead25eb`. 검수반영 `467dc79`.

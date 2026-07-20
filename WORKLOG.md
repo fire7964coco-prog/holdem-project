@@ -3,6 +3,14 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-20 심야 (★★★★ JA glossary 6/6 + card-counting 완주 → **JA 42/42 = EN 마스터 전체 완결**, 적대적 검수 통과)
+
+> glossary 6(holdem-glossary·straddle·rake·fish·cooler·bad-beat) + 독립글 card-counting 완료로 **JA가 EN 마스터 42편 전체를 완주**. 글마다 ラッコ+일본 SERP 분석 후, EN 07-19 경화 누락분 §14 동기화 + 데이터 뒷받침 winnable FAQ만 추가.
+- 커밋: glossary `97cd7e2`(누락 용어 9개+카운트 90+) · straddle `2c9204a`(誰がストラドル FAQ+ストラドルされたら winnable) · rake `fce2a55`(FAQ 3동기화+レーキvsアンティ winnable+링크복원) · fish `17e6fe6`(링크복원) · cooler `936adfa`(셋오버셋頻度+カジノThe Cooler FAQ+링크복원) · bad-beat `2ca9874`(링크복원) · card-counting `9743817`(映画 winnable FAQ).
+- **공통 결함 발견·수정**: 07-04~08 번역본 4편(rake·fish·cooler·bad-beat) 도입부 **glossary 링크(+thumb)가 EN 07-19 경화 때 추가됐는데 누락** → 전부 복원(링크 패리티).
+- **적대적 네이티브 검수**(2병렬, [[ja-adversarial-native-review]]): §13 수치 전수 손계산 검증(셋오버셋 11.76%·1.04%, KK vs AA 4.52:1, 9아웃 34.97%, 블로커 16→12, 馬渕 WSOP2008 史実)=실오류 0. **🔴1건=bad-beat "クアッドエース=2番目に強い手" 오류**(포카드는 3번째 카테고리, EN은 정확) → EN 정합 "ストレートフラッシュにしか負けない手"로 정정 `22100f3`. 🟠 표기통일(コールドデッキ·スピュー)·文体통일 동반.
+- 발행 총계 불변(57 blog + 406 intl). **JA 완결. 다음 후보=다른 언어 재경화(es/pt/de/zh/id도 EN 07-19 경화 미반영 stale) or ES부터 동일 방법론**.
+
 ## 2026-07-20 심야 (★★★ JA tournament 필라 9/9 완주 → JA 35/42, 적대적 검수 통과)
 
 > tournament 남은 7편 완료(bubble·short-stack·tvc + 라이브이벤트 4편). 글마다 웹검색 4개 + ラッコ로 SERP 분석 후 작성(사용자 지시). 라이브이벤트는 §14 사실을 EN 07-19 검수본에 동기화가 핵심.
