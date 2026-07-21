@@ -27,7 +27,7 @@ const CHAT_LABELS = {
     loginBtn: "로그인 →",
     empty: "아직 메시지가 없습니다. 첫 채팅을 남겨보세요!",
     live: "LIVE",
-    tools: ["🧮 Calculator", "🎯 Quiz", "📊 Hand Chart", "🃏 Rankings", "📖 Glossary"],
+    tools: ["🧮 Calculator", "🎯 Quiz", "📊 Hand Chart", "📈 Win Rate", "📖 Glossary"],
   },
   en: {
     placeholder: "Type a message...",
@@ -36,7 +36,7 @@ const CHAT_LABELS = {
     loginBtn: "Log in →",
     empty: "No messages yet. Be the first to chat!",
     live: "LIVE",
-    tools: ["🧮 Calculator", "🎯 Quiz", "📊 Hand Chart", "🃏 Rankings", "📖 Glossary"],
+    tools: ["🧮 Calculator", "🎯 Quiz", "📊 Hand Chart", "📈 Win Rate", "📖 Glossary"],
   },
   ja: {
     placeholder: "メッセージを入力...",
@@ -45,7 +45,7 @@ const CHAT_LABELS = {
     loginBtn: "ログイン →",
     empty: "まだメッセージはありません。最初のチャットを送ってみよう！",
     live: "LIVE",
-    tools: ["🧮 Calculator", "🎯 Quiz", "📊 Hand Chart", "🃏 Rankings", "📖 Glossary"],
+    tools: ["🧮 Calculator", "🎯 Quiz", "📊 Hand Chart", "📈 Win Rate", "📖 Glossary"],
   },
   zh: {
     placeholder: "输入聊天消息...",
@@ -54,7 +54,7 @@ const CHAT_LABELS = {
     loginBtn: "登录 →",
     empty: "还没有消息，来发第一条吧！",
     live: "LIVE",
-    tools: ["🧮 Calculator", "🎯 Quiz", "📊 Hand Chart", "🃏 Rankings", "📖 Glossary"],
+    tools: ["🧮 Calculator", "🎯 Quiz", "📊 Hand Chart", "📈 Win Rate", "📖 Glossary"],
   },
   es: {
     placeholder: "Escribe un mensaje...",
@@ -63,7 +63,7 @@ const CHAT_LABELS = {
     loginBtn: "Iniciar sesión →",
     empty: "Aún no hay mensajes. ¡Sé el primero!",
     live: "LIVE",
-    tools: ["🧮 Calculator", "🎯 Quiz", "📊 Hand Chart", "🃏 Rankings", "📖 Glossary"],
+    tools: ["🧮 Calculator", "🎯 Quiz", "📊 Hand Chart", "📈 Win Rate", "📖 Glossary"],
   },
   de: {
     placeholder: "Nachricht eingeben...",
@@ -72,7 +72,7 @@ const CHAT_LABELS = {
     loginBtn: "Anmelden →",
     empty: "Noch keine Nachrichten. Schreibe die erste!",
     live: "LIVE",
-    tools: ["🧮 Calculator", "🎯 Quiz", "📊 Hand Chart", "🃏 Rankings", "📖 Glossary"],
+    tools: ["🧮 Calculator", "🎯 Quiz", "📊 Hand Chart", "📈 Win Rate", "📖 Glossary"],
   },
   pt: {
     placeholder: "Digite uma mensagem...",
@@ -81,7 +81,7 @@ const CHAT_LABELS = {
     loginBtn: "Entrar →",
     empty: "Sem mensagens ainda. Seja o primeiro!",
     live: "LIVE",
-    tools: ["🧮 Calculator", "🎯 Quiz", "📊 Hand Chart", "🃏 Rankings", "📖 Glossary"],
+    tools: ["🧮 Calculator", "🎯 Quiz", "📊 Hand Chart", "📈 Win Rate", "📖 Glossary"],
   },
   id: {
     placeholder: "Tulis pesan...",
@@ -90,7 +90,7 @@ const CHAT_LABELS = {
     loginBtn: "Masuk →",
     empty: "Belum ada pesan. Jadilah yang pertama!",
     live: "LIVE",
-    tools: ["🧮 Calculator", "🎯 Quiz", "📊 Hand Chart", "🃏 Rankings", "📖 Glossary"],
+    tools: ["🧮 Calculator", "🎯 Quiz", "📊 Hand Chart", "📈 Win Rate", "📖 Glossary"],
   },
   ms: {
     placeholder: "Tulis mesej...",
@@ -99,7 +99,7 @@ const CHAT_LABELS = {
     loginBtn: "Log masuk →",
     empty: "Tiada mesej lagi. Jadilah yang pertama!",
     live: "LIVE",
-    tools: ["🧮 Calculator", "🎯 Quiz", "📊 Hand Chart", "🃏 Rankings", "📖 Glossary"],
+    tools: ["🧮 Calculator", "🎯 Quiz", "📊 Hand Chart", "📈 Win Rate", "📖 Glossary"],
   },
   vi: {
     placeholder: "Nhập tin nhắn...",
@@ -108,7 +108,7 @@ const CHAT_LABELS = {
     loginBtn: "Đăng nhập →",
     empty: "Chưa có tin nhắn. Hãy là người đầu tiên!",
     live: "LIVE",
-    tools: ["🧮 Calculator", "🎯 Quiz", "📊 Hand Chart", "🃏 Rankings", "📖 Glossary"],
+    tools: ["🧮 Calculator", "🎯 Quiz", "📊 Hand Chart", "📈 Win Rate", "📖 Glossary"],
   },
   tr: {
     placeholder: "Mesaj yaz...",
@@ -117,7 +117,7 @@ const CHAT_LABELS = {
     loginBtn: "Giriş yap →",
     empty: "Henüz mesaj yok. İlk mesajı sen gönder!",
     live: "LIVE",
-    tools: ["🧮 Calculator", "🎯 Quiz", "📊 Hand Chart", "🃏 Rankings", "📖 Glossary"],
+    tools: ["🧮 Calculator", "🎯 Quiz", "📊 Hand Chart", "📈 Win Rate", "📖 Glossary"],
   },
   hi: {
     placeholder: "संदेश लिखें...",
@@ -126,7 +126,7 @@ const CHAT_LABELS = {
     loginBtn: "लॉगिन →",
     empty: "अभी कोई संदेश नहीं। पहला संदेश भेजें!",
     live: "LIVE",
-    tools: ["🧮 Calculator", "🎯 Quiz", "📊 Hand Chart", "🃏 Rankings", "📖 Glossary"],
+    tools: ["🧮 Calculator", "🎯 Quiz", "📊 Hand Chart", "📈 Win Rate", "📖 Glossary"],
   },
   ar: {
     placeholder: "اكتب رسالة...",
@@ -135,7 +135,7 @@ const CHAT_LABELS = {
     loginBtn: "تسجيل الدخول →",
     empty: "لا رسائل بعد. كن أول من يتحدث!",
     live: "LIVE",
-    tools: ["🧮 Calculator", "🎯 Quiz", "📊 Hand Chart", "🃏 Rankings", "📖 Glossary"],
+    tools: ["🧮 Calculator", "🎯 Quiz", "📊 Hand Chart", "📈 Win Rate", "📖 Glossary"],
   },
 } as const;
 
@@ -157,7 +157,7 @@ export default function ChatTab({
   const L = getChatL(lang);
   // 도구 페이지는 언어별로 존재하는 것만 노출 (KO=전체, EN=번역된 것만, 나머지=없음)
   // → 번역 안 된 페이지로 이탈하며 로케일이 깨지는 문제 방지. 도구 영어판 추가 시 여기 확장.
-  const KO_TOOLS = ["/calculator", "/quiz", "/hand-chart", "/ranking", "/glossary"];
+  const KO_TOOLS = ["/calculator", "/quiz", "/hand-chart", "/win-rate-quiz", "/glossary"];
   const toolLinks: { href: string; i: number }[] =
     lang === "ko"
       ? KO_TOOLS.map((href, i) => ({ href, i }))
