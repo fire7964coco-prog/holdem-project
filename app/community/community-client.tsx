@@ -37,6 +37,7 @@ const HUB_PAGES = [
   { href: "/ranking",         icon: "🃏", label: "족보 정리" },
   { href: "/hand-chart",      icon: "📊", label: "핸드 차트" },
   { href: "/quiz",            icon: "🎯", label: "실력 테스트" },
+  { href: "/win-rate-quiz",   icon: "📈", label: "승률 시뮬레이터" },
   { href: "/glossary",        icon: "📖", label: "용어 사전" },
   { href: "/holdem-practice", icon: "🎮", label: "홀덤 연습장" },
 ] as const;
@@ -418,6 +419,7 @@ type EventData = {
 // 한국어 페이지용 정적 티저 카드 (페이지 로드 즉시 노출)
 // GSC 클릭 순 (2026-06-26 기준): tournaments 25 > pub 7 > strategy > rules > calculator > ranking > hand-chart > quiz > glossary > holdem-practice
 const KO_PAGE_TEASERS: FeedPost[] = [
+  { id: "page:win-rate-quiz", type: "admin", language: "ko", title: "홀덤 승률 시뮬레이터 📈", content: "두세 명의 핸드를 랜덤으로 돌려, 카드가 열릴 때마다 각자 승률이 어떻게 바뀌는지 눈으로 확인하세요. 2~4인 지원.", imageUrl: null, likeCount: 0, commentCount: 0, createdAt: "2026-01-11T00:00:00Z", authorNickname: "HoldemMaster", authorAvatar: null, authorBadge: null, liked: false, pageHref: "/win-rate-quiz", pageIcon: "📈" },
   { id: "page:tournaments", type: "admin", language: "ko", title: "2026 홀덤 대회 일정", content: "WSOP 진행 중 · APT 인천(8/7)·APPT 코리아(9/3) 예정. 국내외 대회 일정 한눈에.", imageUrl: null, likeCount: 0, commentCount: 0, createdAt: "2026-01-10T00:00:00Z", authorNickname: "HoldemMaster", authorAvatar: null, authorBadge: null, liked: false, pageHref: "/tournaments", pageIcon: "🏆" },
   { id: "page:pub", type: "admin", language: "ko", title: "내 근처 홀덤펍 찾기", content: "서울·경기 홀덤펍 위치, 바이인, 블라인드 구조 한 번에 비교.", imageUrl: null, likeCount: 0, commentCount: 0, createdAt: "2026-01-09T00:00:00Z", authorNickname: "HoldemMaster", authorAvatar: null, authorBadge: null, liked: false, pageHref: "/pub", pageIcon: "🍺" },
   { id: "page:strategy", type: "admin", language: "ko", title: "홀덤 전략 가이드", content: "포지션·핸드 선택·3-bet·버블 전략까지. 실전에서 바로 쓰는 전략 모음.", imageUrl: null, likeCount: 0, commentCount: 0, createdAt: "2026-01-08T00:00:00Z", authorNickname: "HoldemMaster", authorAvatar: null, authorBadge: null, liked: false, pageHref: "/strategy", pageIcon: "⚡" },
