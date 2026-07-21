@@ -21,7 +21,13 @@ const NAV_LINKS = [
   { href: "/holdem-practice", label: "🎮 연습장" },
   { href: "/pub", label: "홀덤펍" },
   { href: "/tournaments", label: "대회" },
-  { href: "/quiz", label: "🃏 퀴즈" },
+  {
+    label: "🃏 퀴즈",
+    children: [
+      { href: "/win-rate-quiz", label: "승률 퀴즈 — 누가 이기나" },
+      { href: "/quiz", label: "족보 퀴즈" },
+    ],
+  },
   { href: "/blog", label: "블로그" },
   { href: "/about", label: "팀 소개" },
 ] as const;
@@ -272,7 +278,8 @@ export function Header() {
               { href: "/holdem-practice", label: "🎮 홀덤 연습장" },
               { href: "/pub", label: "지역별 홀덤펍" },
               { href: "/tournaments", label: "홀덤 대회" },
-              { href: "/quiz", label: "족보 퀴즈" },
+              { href: "/win-rate-quiz", label: "🎯 승률 퀴즈" },
+              { href: "/quiz", label: "🃏 족보 퀴즈" },
               { href: "/blog", label: "전략 블로그" },
               { href: "/about", label: "팀 소개" },
             ].map((link) => {

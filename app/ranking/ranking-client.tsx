@@ -336,7 +336,7 @@ export default function Ranking() {
           {/* 서브: 퀴즈 · 차트 · 펍 */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {[
-              { href: "/quiz", icon: HelpCircle, title: "홀덤 실력 퀴즈", desc: "족보 · 확률 감각 테스트" },
+              { href: "/win-rate-quiz", icon: HelpCircle, title: "승률 퀴즈 🎯", desc: "지금 누가 이기고 있나 맞히기" },
               { href: "/hand-chart", icon: LayoutGrid, title: "스타팅 핸드 차트", desc: "어떤 패로 들어갈지 한눈에" },
               { href: "/pub", icon: MapPin, title: "내 주변 홀덤펍 찾기", desc: "오프라인에서 합법적으로 플레이" },
             ].map(({ href, icon: Icon, title, desc }) => (
