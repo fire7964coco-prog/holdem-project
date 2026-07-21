@@ -100,6 +100,8 @@ export default function Quiz() {
             <p className="text-xs text-muted-foreground mt-6">
               족보를 더 공부하고 싶다면{' '}
               <a href="/blog/holdem-hand-rankings" className="text-primary underline">홀덤 족보 완전 정복 →</a>
+              <br />다음 도전:{' '}
+              <a href="/win-rate-quiz" className="text-primary underline">승률 퀴즈 — 누가 이기고 있을까? →</a>
             </p>
           </motion.div>
         </div>

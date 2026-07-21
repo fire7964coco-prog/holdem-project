@@ -26,6 +26,7 @@ const STATIC_ROUTES = [
   { path: "/about", priority: "0.7", changefreq: "monthly" },
   { path: "/calculator", priority: "0.95", changefreq: "monthly" },
   { path: "/quiz", priority: "0.85", changefreq: "monthly" },
+  { path: "/win-rate-quiz", priority: "0.8", changefreq: "monthly" },
   // /hands · /rules/texas-holdem · /hand-chart 은 noindex(app/.../page.tsx robots index:false) → 사이트맵에서 제외.
   //   블로그 필라(holdem-hand-rankings · holdem-starting-hand-range 등)와 키워드 카니발라이제이션 방지.
   { path: "/glossary", priority: "0.8", changefreq: "monthly" },
