@@ -1,135 +1,149 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Star, CheckCircle, Shield, Clock, ChevronRight, Award } from "lucide-react";
+import { CheckCircle, ChevronRight, Shield, AlertTriangle, Scale, BookOpen, BookText, Info, Calculator, LayoutGrid, HelpCircle, ExternalLink } from "lucide-react";
 import { SEO } from "@/components/seo";
 
+// Public information (official URL, license jurisdiction, founding, notable facts) about
+// widely known online poker sites. This is a factual summary — not a ranking or endorsement.
+// Legality and availability must be verified by the reader. (As of 2026-07)
 const SITES = [
   {
-    rank: 1,
     name: "GGPoker",
     logo: "GG",
     logoColor: "from-blue-600 to-blue-800",
-    rating: 4.9,
-    badge: "EDITOR'S CHOICE",
-    badgeColor: "bg-yellow-500",
-    license: "Isle of Man",
+    tag: "World's largest traffic",
+    url: "https://ggpoker.com",
+    license: "Isle of Man, etc.",
     founded: "2014",
-    bonus: "100% first-deposit bonus up to $600",
-    minDeposit: "$10",
-    withdrawal: "Within 24 hours",
-    pros: ["World's largest traffic", "Bad Beat Jackpot", "Rush & Cash fast-fold", "Huge tournament schedule", "Slick mobile app"],
-    cons: ["Tough games for beginners", "VPN needed in some regions"],
-    tags: ["Beginner-friendly", "Mobile app", "Big tournaments"],
-    review: "GGPoker currently boasts the highest traffic of any online poker site in the world. It holds an exclusive online partnership with the WSOP and runs WSOP events online every year. With a wide range of game formats and stake levels, there's action at every hour.",
-    href: "#",
+    features: ["WSOP online partner", "Rush & Cash fast-fold", "Slick mobile app"],
+    note: "Operated by GG International Limited under an Isle of Man license (among others). Currently the highest-traffic online poker network in the world and the WSOP's online bracelet partner.",
   },
   {
-    rank: 2,
     name: "PokerStars",
     logo: "PS",
     logoColor: "from-red-600 to-red-800",
-    rating: 4.7,
-    badge: "MOST POPULAR",
-    badgeColor: "bg-red-600",
-    license: "Isle of Man, Malta",
+    tag: "Longest-running · biggest history",
+    url: "https://www.pokerstars.com",
+    license: "Malta (MGA), others",
     founded: "2001",
-    bonus: "10 free Spin & Go tickets + StarsCoin",
-    minDeposit: "$20",
-    withdrawal: "1–3 days",
-    pros: ["Longest track record & trust", "WCOOP & SCOOP major series", "Best-in-class software", "Widest game variety", "Poker tracker support"],
-    cons: ["High-level competition", "Complex bonus clearing"],
-    tags: ["Industry leader", "Tournament powerhouse", "Rock-solid software"],
-    review: "Since launching in 2001, PokerStars has stayed at or near the top of the industry for over 20 years. It runs multi-million-dollar tournament series like WCOOP and SCOOP every year, and its stable software and deep game variety still make it a favorite for players worldwide.",
-    href: "#",
+    features: ["WCOOP & SCOOP major series", "Owned by Flutter", "Rock-solid software"],
+    note: "Founded in 2001 and now part of Flutter Entertainment. It surrendered its Isle of Man license in 2025 and operates under Malta (MGA) and other jurisdictions. Runs multi-million-dollar series like WCOOP and SCOOP every year.",
   },
   {
-    rank: 3,
     name: "888poker",
     logo: "888",
     logoColor: "from-orange-500 to-orange-700",
-    rating: 4.5,
-    badge: "BEST BONUS",
-    badgeColor: "bg-green-600",
-    license: "Gibraltar, Malta",
+    tag: "Listed operator · beginner-friendly",
+    url: "https://www.888poker.com",
+    license: "Malta (MGA), UK (UKGC)",
     founded: "2002",
-    bonus: "$88 no-deposit + 100% up to $400",
-    minDeposit: "$10",
-    withdrawal: "1–5 days",
-    pros: ["Top no-deposit bonus", "Separate beginner tables", "Fast withdrawals", "888poker LIVE events", "Mobile optimized"],
-    cons: ["Less traffic than GGPoker", "Limited high stakes"],
-    tags: ["No-deposit bonus", "Beginner-friendly", "Fast withdrawals"],
-    review: "888poker is famous for handing out $88 free just for signing up. It runs separate tables for beginners and processes withdrawals quickly, which keeps its trust rating high. Its annual 888poker LIVE series also connects online play to offline tournaments.",
-    href: "#",
+    features: ["Run by Evoke plc (ex-888 Holdings)", "Separate beginner tables", "888poker LIVE events"],
+    note: "Founded in 2002 and run by the publicly listed Evoke plc (formerly 888 Holdings), headquartered in Gibraltar. Holds respected MGA and UK licenses and is known for running separate tables for beginners.",
   },
   {
-    rank: 4,
     name: "IDNPoker",
     logo: "IDN",
     logoColor: "from-purple-600 to-purple-800",
-    rating: 4.3,
-    badge: "ASIA #1",
-    badgeColor: "bg-blue-600",
+    tag: "Asia's largest network",
+    url: "https://www.idnpoker.com",
     license: "PAGCOR (Philippines)",
     founded: "2010",
-    bonus: "Up to 0.5% weekly cashback + referral bonus",
-    minDeposit: "$10",
-    withdrawal: "Instant–24 hours",
-    pros: ["Asia's #1 traffic", "Local & crypto payments", "Mobile-only app", "Low rake", "Softer fields"],
-    cons: ["Few Western regulars", "Limited game variety"],
-    tags: ["Asia's largest", "Recreational-heavy", "Mobile app"],
-    review: "IDNPoker is the largest online poker network in Asia, used mainly by players across East and Southeast Asia. Its biggest draws are soft, recreational-heavy fields and flexible local payment options — a comfortable place to build a bankroll away from the toughest Western regulars.",
-    href: "#",
+    features: ["HQ in Makati, Philippines", "BMM fairness audit · RNG certified", "Skin/agent-based access"],
+    note: "Asia's largest network, headquartered in Makati, Philippines, with a PAGCOR license and BMM fairness audits. It isn't a single site but a network accessed through 200+ skins (agents) — safety varies a lot depending on which skin/agent you use, so extra caution is needed.",
   },
   {
-    rank: 5,
     name: "WPT Global",
     logo: "WPT",
     logoColor: "from-emerald-600 to-emerald-800",
-    rating: 4.1,
-    badge: "TOURNAMENT KING",
-    badgeColor: "bg-purple-600",
-    license: "Kahnawake (Canada)",
-    founded: "2021",
-    bonus: "Free WPT Online Series tickets",
-    minDeposit: "$20",
-    withdrawal: "2–5 days",
-    pros: ["World Poker Tour tie-in", "Big GTD tournaments", "Pro content", "Growing fast", "Streaming integration"],
-    cons: ["Still in its growth stage", "Less traffic than the top sites"],
-    tags: ["WPT official", "Live tie-in", "Pro events"],
-    review: "WPT Global is the official online partner of the World Poker Tour. Through online satellites tied to WPT live events, it offers a real shot at a seat in an actual WPT tournament. It's a fast-growing site with a bright future.",
-    href: "#",
+    tag: "WPT official · fast-growing",
+    url: "https://www.wptglobal.com",
+    license: "Costa Rica / Curaçao",
+    founded: "2022",
+    features: ["Official World Poker Tour online", "Live satellite tournaments", "130+ countries"],
+    note: "The official online platform of the World Poker Tour, launched in April 2022. It runs under Costa Rica/Curaçao licensing and serves 130+ countries, with online satellites that feed into live WPT events. A fast-growing, newer platform.",
   },
 ];
 
-function StarRating({ rating }: { rating: number }) {
-  return (
-    <div className="flex items-center gap-0.5">
-      {[1, 2, 3, 4, 5].map(i => (
-        <Star key={i} className={`w-4 h-4 ${i <= Math.floor(rating) ? "fill-yellow-400 text-yellow-400" : "text-gray-600"}`} />
-      ))}
-      <span className="ml-1.5 font-bold text-yellow-400 text-sm">{rating}/5</span>
-    </div>
-  );
-}
+const CRITERIA = [
+  {
+    icon: Shield,
+    title: "License & regulator",
+    body: "Look for a license from a credible regulator (Malta MGA, UK UKGC, Isle of Man). Costa Rica/Curaçao licensing is comparatively light-touch, and unclear company or license details are a warning sign.",
+  },
+  {
+    icon: CheckCircle,
+    title: "Fairness & security",
+    body: "Check for RNG fairness audits (BMM, eCOGRA), SSL encryption, and account security such as 2FA. No audit or security information at all is a red flag.",
+  },
+  {
+    icon: Scale,
+    title: "Fund segregation & payouts",
+    body: "Confirm that player funds are held separately from operating funds, and check real withdrawal reports and processing speed. Frequent payout delays or refusals are a reason to walk away.",
+  },
+  {
+    icon: Info,
+    title: "Reputation & track record",
+    body: "Look for a long, transparent operating history and a clear company address and support channel. Be wary of anonymous operations, sites reachable only via messaging apps, or unsolicited 'agent' pitches.",
+  },
+];
+
+const RED_FLAGS = [
+  "No or unverifiable license / company information",
+  "Unrealistic ads like “100% guaranteed” or “guaranteed profit”",
+  "Repeated reports of delayed or refused withdrawals (scam signal)",
+  "No official site or app — runs only via Telegram / messaging apps",
+  "Aggressive signup/deposit pressure or shady “agent” recruitment",
+  "Unlicensed underground sites — using or promoting them carries legal risk",
+];
 
 export default function RankingEn() {
   const jsonLd = [
     {
       "@type": "ItemList",
-      "name": "2026 Best Online Poker Sites Ranking",
-      "description": "HoldemMaster's independently tested ranking of the best online Texas Hold'em sites for 2026",
+      "name": "Widely known online poker sites (informational)",
+      "description": "A factual summary of widely known online Texas Hold'em sites by founding, license jurisdiction, and notable features (for information only, not a ranking or endorsement)",
       "itemListElement": SITES.map((s, i) => ({
         "@type": "ListItem",
         "position": i + 1,
         "name": s.name,
+        "url": s.url,
       })),
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I choose a safe online poker site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Look for a license from a credible regulator (Malta MGA, UK UKGC, Isle of Man), RNG fairness audits, segregated player funds, real withdrawal reports, and a long, transparent track record. Avoid sites with unclear company information, unrealistic bonuses, or that operate only through messaging apps.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Is online poker legal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends entirely on where you live. Online poker is licensed and regulated in some jurisdictions and restricted or prohibited in others, so you must check your local laws. You must also be of legal age (18+/21+ depending on jurisdiction).",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "How can I avoid scam poker sites?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The main warning signs are missing or unverifiable licensing, repeated reports of delayed or refused withdrawals, guarantees of profit, aggressive deposit pressure, and operations that have no official site and run only through messaging apps.",
+          },
+        },
+      ],
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.holdemmaster.com/en/" },
-        { "@type": "ListItem", "position": 2, "name": "Top 5 Online Poker Sites", "item": "https://www.holdemmaster.com/en/ranking" },
+        { "@type": "ListItem", "position": 2, "name": "Online Poker Sites Guide", "item": "https://www.holdemmaster.com/en/ranking" },
       ],
     },
   ];
@@ -137,9 +151,9 @@ export default function RankingEn() {
   return (
     <>
       <SEO
-        title="Best Online Poker Sites 2026 — Top 5 Tested & Ranked"
-        description="Not sure which poker site to trust? Our Top 5 online poker sites for 2026, tested end-to-end from signup to withdrawal. Licensing, security, traffic, and bonuses compared."
-        keywords="best online poker sites, online poker site rankings, GGPoker review, PokerStars review, 888poker bonus, online poker comparison, IDNPoker, poker bonus"
+        title="Best Online Poker Sites — How to Choose Safely [2026]"
+        description="Before you pick an online poker site, check the safety and legality criteria and scam warning signs. Plus a factual comparison of major poker sites by license, size, and features."
+        keywords="best online poker sites, safe online poker, how to choose a poker site, online poker comparison, GGPoker, PokerStars, 888poker, IDNPoker, WPT Global, avoid poker scams"
         canonical="https://www.holdemmaster.com/en/ranking"
         schema={jsonLd}
       />
@@ -148,23 +162,22 @@ export default function RankingEn() {
       <section className="py-16 bg-gradient-to-b from-card to-background border-b border-border">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/40 bg-primary/10 text-primary text-sm font-bold mb-6">
-            <Award className="w-4 h-4" /> Last updated: 2026
+            <Shield className="w-4 h-4" /> Safety & legality first
           </div>
           <h1 className="text-4xl md:text-5xl font-serif font-black text-foreground mb-4">
             Online Poker Sites<br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-primary">Top 5 Ranking</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-primary">How to Choose Safely</span>
           </h1>
           <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Not sure how to find a <strong className="text-foreground">safe poker site</strong>? Start here.
-            This is our ranking of <strong className="text-foreground">online poker sites</strong> the HoldemMaster team
-            tested end-to-end — signup, deposit, play, and withdrawal.
-            We weighed licensing, security, traffic, and bonuses.
+            Looking for an <strong className="text-foreground">online poker site</strong>? Start with the major sites below,
+            then use our <strong className="text-foreground">safety criteria and scam warning signs</strong> to tell the good from the bad.
+            Where you play matters as much as <strong className="text-foreground">how you spot a safe site</strong>.
           </p>
           <div className="flex flex-wrap justify-center gap-4 mt-8 text-sm">
             {[
-              { icon: Shield, text: "Independently tested" },
-              { icon: CheckCircle, text: "License verified" },
-              { icon: Clock, text: "Updated monthly" },
+              { icon: Info, text: "Major site info" },
+              { icon: Shield, text: "Safety checklist" },
+              { icon: AlertTriangle, text: "Scam warning signs" },
             ].map(({ icon: Icon, text }) => (
               <div key={text} className="flex items-center gap-1.5 text-muted-foreground">
                 <Icon className="w-4 h-4 text-primary" /> {text}
@@ -174,118 +187,212 @@ export default function RankingEn() {
         </div>
       </section>
 
-      {/* Rankings */}
-      <section className="py-12 bg-background">
-        <div className="max-w-4xl mx-auto px-4 flex flex-col gap-8">
-          {SITES.map((site, idx) => (
-            <motion.div
-              key={site.rank}
-              initial={false}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.45, delay: idx * 0.08 }}
-              className="bg-card border border-border rounded-2xl overflow-hidden hover:border-primary/40 transition-colors"
-            >
-              {/* Top bar */}
-              <div className={`flex items-center gap-4 p-5 border-b border-border bg-background/40`}>
-                <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${site.logoColor} flex items-center justify-center text-white font-black text-lg flex-shrink-0`}>
-                  {site.logo}
+      {/* Major sites */}
+      <section className="py-14 bg-background">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mb-3 text-center">
+            Major online poker sites, at a glance
+          </h2>
+          <p className="text-muted-foreground text-sm text-center mb-6 max-w-2xl mx-auto">
+            A factual summary of <strong className="text-foreground">publicly known details (founding, license jurisdiction, features)</strong> for widely
+            known sites. This is not a ranking or endorsement — check the <strong className="text-foreground">safety criteria</strong> below and verify the <strong className="text-foreground">laws where you live</strong> yourself.
+          </p>
+          <div className="flex flex-col gap-6">
+            {SITES.map((site, idx) => (
+              <motion.div
+                key={site.name}
+                initial={false}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: idx * 0.06 }}
+                className="bg-card border border-border rounded-2xl overflow-hidden"
+              >
+                <div className="flex items-center gap-4 p-5 border-b border-border bg-background/40">
+                  <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${site.logoColor} flex items-center justify-center text-white font-black text-lg flex-shrink-0`}>
+                    {site.logo}
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-xl font-bold text-foreground">{site.name}</h3>
+                    <span className="text-xs text-primary font-semibold">{site.tag}</span>
+                  </div>
+                  <a
+                    href={site.url}
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    className="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 rounded-lg border border-border text-foreground hover:border-primary/50 hover:text-primary transition-colors text-sm font-bold whitespace-nowrap"
+                  >
+                    Official site <ExternalLink className="w-3.5 h-3.5" />
+                  </a>
                 </div>
-                <div className="flex-1 min-w-0">
-                  <div className="flex flex-wrap items-center gap-2 mb-1">
-                    <span className={`text-xs font-bold px-2 py-0.5 rounded text-white ${site.badgeColor}`}>
-                      #{idx + 1} · {site.badge}
-                    </span>
-                    {site.tags.slice(0, 2).map(t => (
-                      <span key={t} className="text-xs px-2 py-0.5 rounded bg-background border border-border text-muted-foreground">{t}</span>
+                <div className="p-5 grid grid-cols-1 md:grid-cols-3 gap-5">
+                  <div className="md:col-span-2">
+                    <p className="text-sm text-muted-foreground leading-relaxed mb-4">{site.note}</p>
+                    <div className="text-xs text-muted-foreground mb-2 font-semibold uppercase tracking-wider">Notable features</div>
+                    {site.features.map(f => (
+                      <div key={f} className="flex items-center gap-1.5 text-xs text-foreground mb-1">
+                        <CheckCircle className="w-3.5 h-3.5 text-green-400 flex-shrink-0" /> {f}
+                      </div>
                     ))}
                   </div>
-                  <h2 className="text-xl font-bold text-foreground">{site.name}</h2>
-                  <StarRating rating={site.rating} />
-                </div>
-                <div className="hidden md:flex flex-col items-end gap-2">
-                  <a href={site.href} className="px-6 py-2.5 rounded-lg bg-primary text-primary-foreground font-bold text-sm hover:brightness-110 transition-all whitespace-nowrap shadow-[0_0_12px_rgba(212,175,55,0.25)]">
-                    Read review
-                  </a>
-                  <a href={site.href} className="text-xs text-muted-foreground hover:text-primary transition-colors">Official site →</a>
-                </div>
-              </div>
-
-              {/* Body */}
-              <div className="p-5 grid grid-cols-1 md:grid-cols-3 gap-5">
-                {/* Info */}
-                <div className="md:col-span-2">
-                  <p className="text-sm text-muted-foreground leading-relaxed mb-4">{site.review}</p>
-                  <div className="grid grid-cols-2 gap-3">
+                  <div className="bg-background rounded-xl p-4 flex flex-col gap-3 border border-border">
                     <div>
-                      <div className="text-xs text-muted-foreground mb-2 font-semibold uppercase tracking-wider">Pros</div>
-                      {site.pros.map(p => (
-                        <div key={p} className="flex items-center gap-1.5 text-xs text-foreground mb-1">
-                          <CheckCircle className="w-3.5 h-3.5 text-green-400 flex-shrink-0" /> {p}
-                        </div>
-                      ))}
+                      <div className="text-muted-foreground text-xs">License</div>
+                      <div className="font-bold text-foreground text-sm">{site.license}</div>
                     </div>
-                    <div>
-                      <div className="text-xs text-muted-foreground mb-2 font-semibold uppercase tracking-wider">Cons</div>
-                      {site.cons.map(c => (
-                        <div key={c} className="flex items-center gap-1.5 text-xs text-muted-foreground mb-1">
-                          <span className="w-3.5 h-3.5 flex-shrink-0 text-center text-red-400">✕</span> {c}
-                        </div>
-                      ))}
+                    <div className="border-t border-border pt-3">
+                      <div className="text-muted-foreground text-xs">Founded</div>
+                      <div className="font-bold text-foreground text-sm">{site.founded}</div>
                     </div>
+                    <a
+                      href={site.url}
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      className="sm:hidden inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-lg border border-border text-foreground hover:border-primary/50 hover:text-primary transition-colors text-sm font-bold mt-1"
+                    >
+                      Official site <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
                   </div>
                 </div>
-
-                {/* Side stats */}
-                <div className="bg-background rounded-xl p-4 flex flex-col gap-3 border border-border">
-                  <div>
-                    <div className="text-xs text-muted-foreground mb-0.5">🎁 Bonus</div>
-                    <div className="text-sm font-bold text-primary">{site.bonus}</div>
-                  </div>
-                  <div className="border-t border-border pt-3 grid grid-cols-2 gap-2 text-xs">
-                    <div>
-                      <div className="text-muted-foreground">Min deposit</div>
-                      <div className="font-bold text-foreground">{site.minDeposit}</div>
-                    </div>
-                    <div>
-                      <div className="text-muted-foreground">Withdrawal</div>
-                      <div className="font-bold text-foreground">{site.withdrawal}</div>
-                    </div>
-                    <div>
-                      <div className="text-muted-foreground">License</div>
-                      <div className="font-bold text-foreground">{site.license}</div>
-                    </div>
-                    <div>
-                      <div className="text-muted-foreground">Founded</div>
-                      <div className="font-bold text-foreground">{site.founded}</div>
-                    </div>
-                  </div>
-                  <a href={site.href} className="w-full text-center px-4 py-2.5 rounded-lg bg-primary text-primary-foreground font-bold text-sm hover:brightness-110 transition-all mt-1 md:hidden">
-                    Read review
-                  </a>
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-
-        {/* Disclaimer */}
-        <div className="max-w-4xl mx-auto px-4 mt-10 p-5 bg-card border border-border rounded-xl text-xs text-muted-foreground leading-relaxed">
-          <strong className="text-foreground">⚠️ Important notice:</strong> This ranking is provided for informational purposes only. Online poker may be restricted by the laws of your country of residence — always check your local legal requirements. You must be of legal age to play (18+/21+ depending on jurisdiction). This site provides poker information and educational content and does not promote real-money gambling.
+              </motion.div>
+            ))}
+          </div>
+          <p className="text-xs text-muted-foreground/80 text-center mt-6">
+            ※ External links point to each site's official domain. HoldemMaster has no affiliate or sponsorship relationship with them. Access and legality vary by region.
+          </p>
         </div>
       </section>
 
-      {/* CTA */}
+      {/* Criteria */}
+      <section className="py-14 bg-card border-y border-border">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mb-3 text-center">
+            4 criteria for choosing a safe poker site
+          </h2>
+          <p className="text-muted-foreground text-sm text-center mb-10 max-w-2xl mx-auto">
+            If even one of these can't be confirmed, be careful — no matter how flashy the advertising is.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            {CRITERIA.map(({ icon: Icon, title, body }) => (
+              <div key={title} className="bg-background border border-border rounded-2xl p-6 hover:border-primary/40 transition-colors">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <Icon className="w-5 h-5 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-bold text-foreground">{title}</h3>
+                </div>
+                <p className="text-sm text-muted-foreground leading-relaxed">{body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Red flags */}
+      <section className="py-12 bg-background">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="flex items-center gap-3 mb-5">
+            <AlertTriangle className="w-6 h-6 text-red-400 flex-shrink-0" />
+            <h2 className="text-2xl font-serif font-bold text-foreground">Warning signs of a scam site</h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {RED_FLAGS.map(flag => (
+              <div key={flag} className="flex items-start gap-2.5 bg-card border border-border rounded-xl p-4">
+                <span className="text-red-400 font-bold flex-shrink-0 mt-0.5">✕</span>
+                <span className="text-sm text-foreground leading-relaxed">{flag}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Free tools */}
+      <section className="py-12 bg-card border-y border-border">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="text-center mb-8">
+            <div className="inline-flex items-center gap-2 text-primary font-bold text-sm mb-2">
+              <Calculator className="w-4 h-4" /> Free — no signup, no deposit
+            </div>
+            <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground">
+              Before you pick a site — sharpen your game for free
+            </h2>
+            <p className="text-muted-foreground text-sm mt-2 max-w-2xl mx-auto">
+              All free, with no real-money value. Building skill first is the surest investment on any site.
+            </p>
+          </div>
+
+          {/* Main: calculator */}
+          <a href="/en/calculator" className="group block bg-gradient-to-br from-primary/15 to-background border border-primary/40 rounded-2xl p-6 mb-4 hover:border-primary transition-colors">
+            <div className="flex items-center gap-4">
+              <div className="w-14 h-14 rounded-xl bg-primary/20 flex items-center justify-center flex-shrink-0">
+                <Calculator className="w-7 h-7 text-primary" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <div className="text-lg font-bold text-foreground mb-0.5">Free Poker Odds Calculator — Calculate now ▶</div>
+                <div className="text-sm text-muted-foreground">Instantly compute your equity and pot odds. See exactly when a call or fold is +EV, by the numbers.</div>
+              </div>
+              <ChevronRight className="w-5 h-5 text-primary flex-shrink-0 group-hover:translate-x-0.5 transition-transform" />
+            </div>
+          </a>
+
+          {/* Sub: quiz · chart · glossary */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            {[
+              { href: "/en/quiz", icon: HelpCircle, title: "Poker Quiz", desc: "Test your hand-reading & odds sense" },
+              { href: "/en/hand-chart", icon: LayoutGrid, title: "Starting Hand Chart", desc: "See which hands to play at a glance" },
+              { href: "/en/glossary", icon: BookText, title: "Poker Glossary", desc: "Every term, clearly explained" },
+            ].map(({ href, icon: Icon, title, desc }) => (
+              <a key={href} href={href} className="group bg-background border border-border rounded-xl p-4 hover:border-primary/40 transition-colors">
+                <Icon className="w-5 h-5 text-primary mb-2" />
+                <div className="font-bold text-foreground text-sm mb-0.5">{title}</div>
+                <div className="text-xs text-muted-foreground">{desc}</div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Legal & responsible gaming */}
+      <section className="py-10 bg-background">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="p-5 bg-card border border-border rounded-xl text-xs text-muted-foreground leading-relaxed">
+            <strong className="text-foreground">⚠️ Legal & responsible gaming:</strong> This page is for information and education only, and does not rank or endorse any operator.
+            Online poker is regulated differently around the world and <strong className="text-foreground">may be restricted where you live — always check your local laws.</strong>
+            You must be of legal age (18+/21+ depending on jurisdiction). Gamble responsibly; if gambling stops being fun,
+            seek help — for example <strong className="text-foreground">BeGambleAware.org</strong> or a support service in your country.
+          </div>
+        </div>
+      </section>
+
+      {/* Learn first */}
       <section className="py-16 bg-card border-t border-border text-center">
-        <div className="max-w-2xl mx-auto px-4">
-          <h2 className="text-2xl font-serif font-bold text-foreground mb-3">Before you start playing</h2>
-          <p className="text-muted-foreground text-sm mb-6">Learn the basic rules and strategy before you pick a site.</p>
-          <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <a href="/en/blog/texas-holdem-rules-for-beginners" className="px-6 py-3 rounded-lg bg-primary text-primary-foreground font-bold text-sm hover:brightness-110 transition-all flex items-center justify-center gap-2">
-              Learn the basic rules <ChevronRight className="w-4 h-4" />
-            </a>
-            <a href="/en/blog/holdem-strategy" className="px-6 py-3 rounded-lg border border-border text-foreground hover:bg-muted transition-all font-bold text-sm flex items-center justify-center gap-2">
-              See the strategy guide <ChevronRight className="w-4 h-4" />
+        <div className="max-w-3xl mx-auto px-4">
+          <div className="inline-flex items-center gap-2 text-primary font-bold text-sm mb-3">
+            <BookOpen className="w-4 h-4" /> Before you pick a site
+          </div>
+          <h2 className="text-2xl font-serif font-bold text-foreground mb-3">Building skill first is the surest investment</h2>
+          <p className="text-muted-foreground text-sm mb-8 max-w-xl mx-auto">
+            On any site, you won't last long without the rules, strategy, and bankroll basics.
+            Get a solid foundation with HoldemMaster's free guides.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-left">
+            {[
+              { href: "/en/blog/texas-holdem-rules-for-beginners", title: "Texas Hold'em Rules", desc: "From card dealing to betting — start here" },
+              { href: "/en/blog/holdem-hand-rankings", title: "Poker Hand Rankings", desc: "What beats what, in order" },
+              { href: "/en/blog/holdem-strategy", title: "Strategy Roadmap", desc: "Preflop to bankroll, step by step" },
+              { href: "/en/blog/holdem-pot-odds", title: "Pot Odds", desc: "When a call is +EV, by the numbers" },
+            ].map(link => (
+              <a key={link.href} href={link.href} className="group bg-background border border-border rounded-xl p-4 hover:border-primary/40 transition-colors flex items-center justify-between gap-3">
+                <div>
+                  <div className="font-bold text-foreground text-sm mb-0.5">{link.title}</div>
+                  <div className="text-xs text-muted-foreground">{link.desc}</div>
+                </div>
+                <ChevronRight className="w-4 h-4 text-primary flex-shrink-0 group-hover:translate-x-0.5 transition-transform" />
+              </a>
+            ))}
+          </div>
+          <div className="mt-8">
+            <a href="/en/blog" className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-bold text-sm hover:brightness-110 transition-all">
+              Browse all free guides <ChevronRight className="w-4 h-4" />
             </a>
           </div>
         </div>
