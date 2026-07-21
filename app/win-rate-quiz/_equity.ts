@@ -337,3 +337,60 @@ export function winnersAt(hands: Card[][], board: Card[]): number[] {
   sc.forEach((s, i) => { if (s === best) w.push(i); });
   return w;
 }
+
+// ── 현재 족보/드로우 라벨 ──────────────────────────────────────────────────────
+
+function combosIdx(n: number, k: number): number[][] {
+  const res: number[][] = [];
+  const rec = (start: number, combo: number[]) => {
+    if (combo.length === k) { res.push([...combo]); return; }
+    for (let i = start; i < n; i++) { combo.push(i); rec(i + 1, combo); combo.pop(); }
+  };
+  rec(0, []);
+  return res;
+}
+
+/** 5~7장 중 베스트 5장의 족보 카테고리(0=하이카드 ~ 8=스티플). 5장 미만이면 -1 */
+function bestCategoryIdx(cs: NCard[]): number {
+  if (cs.length < 5) return -1;
+  let best = -1;
+  for (const idx of combosIdx(cs.length, 5)) {
+    const s = score5(idx.map((i) => cs[i]));
+    if (s > best) best = s;
+  }
+  return Math.floor(best / 15 ** 5);
+}
+
+/**
+ * 현재까지 공개된 보드 기준 "현재 족보 + 드로우" 라벨. (§13: 메이드=정확 판정, 드로우=4장 판정)
+ * 프리플랍(board 0장)은 빈 문자열. 리버(5장)는 확정 족보만.
+ */
+export function describeHand(hole: Card[], board: Card[], drawingDead: boolean): string {
+  const cs = [...hole.map(toNum), ...board.map(toNum)];
+  const revealed = board.length;
+  if (revealed < 3) return ""; // 프리플랍: 라벨 없음
+  const catIdx = bestCategoryIdx(cs);
+  const made = catIdx >= 0 ? CATNAME[catIdx] : "하이카드";
+  if (revealed >= 5) return made; // 리버: 확정 족보
+  if (drawingDead) return "드로잉 데드";
+
+  const draws: string[] = [];
+  // 플러시 드로우: 한 무늬 정확히 4장 (아직 플러시 미완성)
+  if (catIdx < 5) {
+    const suitCount = [0, 0, 0, 0];
+    for (const c of cs) suitCount[c[1]]++;
+    if (suitCount.some((x) => x === 4)) draws.push("플러시 드로우");
+  }
+  // 스트레이트 드로우: 5칸 창에 4랭크 존재 (스트레이트 미만일 때만, 휠 포함)
+  if (catIdx < 4) {
+    const present = new Set(cs.map((c) => c[0]));
+    if (present.has(14)) present.add(1);
+    for (let lo = 1; lo <= 10; lo++) {
+      let cnt = 0;
+      for (let k = 0; k < 5; k++) if (present.has(lo + k)) cnt++;
+      if (cnt === 4) { draws.push("스트레이트 드로우"); break; }
+    }
+  }
+  if (draws.length) return `${made} · ${draws.join(" · ")}`;
+  return made;
+}

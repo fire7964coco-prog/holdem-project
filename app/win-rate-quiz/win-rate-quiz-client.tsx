@@ -3,7 +3,7 @@
 import { useState, useMemo, useEffect, useCallback } from "react";
 import { motion } from "framer-motion";
 import { SEO } from "@/components/seo";
-import { dealHands, equities, winnersAt, handCategory, type Card as QuizCard } from "./_equity";
+import { dealHands, equities, winnersAt, handCategory, describeHand, type Card as QuizCard } from "./_equity";
 
 const STREET_LABEL = ["프리플랍", "플랍", "턴", "리버"];
 const GOLD = "#d4af37";
@@ -75,8 +75,8 @@ function PlayingCard({ card, hidden, small }: { card?: QuizCard; hidden?: boolea
 }
 
 // ── 좌석 (플레이어) ──
-function PlayerSeat({ idx, cards, eqPct, isWinner, showEq, small }: {
-  idx: number; cards: QuizCard[]; eqPct: number; isWinner: boolean; showEq: boolean; small?: boolean;
+function PlayerSeat({ idx, cards, eqPct, isWinner, showEq, small, label }: {
+  idx: number; cards: QuizCard[]; eqPct: number; isWinner: boolean; showEq: boolean; small?: boolean; label?: string;
 }) {
   const color = playerColor(idx);
   return (
@@ -95,6 +95,12 @@ function PlayerSeat({ idx, cards, eqPct, isWinner, showEq, small }: {
       <div className="h-4 flex items-center">
         {showEq && <span className="text-[13px] font-black tabular-nums" style={{ color }}>{Math.round(eqPct)}%</span>}
       </div>
+      {label && (
+        <div className="text-[8.5px] font-semibold leading-tight text-center px-0.5"
+          style={{ color: label === "드로잉 데드" ? "#f87171" : "rgba(255,255,255,0.72)", maxWidth: small ? 82 : 108 }}>
+          {label}
+        </div>
+      )}
     </div>
   );
 }
@@ -121,6 +127,8 @@ export default function WinRateQuizClient() {
 
   const boardShown = street === 0 ? 0 : street === 1 ? 3 : street === 2 ? 4 : 5;
   const isRiver = street === 3;
+  const labelFor = (i: number) =>
+    sim ? describeHand(sim.hands[i], sim.board.slice(0, boardShown), (street === 1 || street === 2) && streetEq[i] === 0) : "";
 
   const nextStreet = useCallback(() => setStreet((s) => Math.min(s + 1, 3)), []);
   const newHand = useCallback(() => { setStreet(0); setSim(null); }, []);
@@ -177,7 +185,7 @@ export default function WinRateQuizClient() {
               <div className="flex justify-center flex-wrap gap-x-4 gap-y-2 mb-2">
                 {villains.map((i) => (
                   <PlayerSeat key={i} idx={i} cards={sim.hands[i]} eqPct={streetEq[i]}
-                    isWinner={isRiver && sim.winners.includes(i)} showEq small />
+                    isWinner={isRiver && sim.winners.includes(i)} showEq small label={labelFor(i)} />
                 ))}
               </div>
 
@@ -194,7 +202,7 @@ export default function WinRateQuizClient() {
               {/* 나 (하단) */}
               <div className="flex justify-center mt-2">
                 <PlayerSeat idx={0} cards={sim.hands[0]} eqPct={streetEq[0]}
-                  isWinner={isRiver && sim.winners.includes(0)} showEq />
+                  isWinner={isRiver && sim.winners.includes(0)} showEq label={labelFor(0)} />
               </div>
             </div>
 
