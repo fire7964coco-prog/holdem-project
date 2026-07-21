@@ -177,30 +177,34 @@ export default function WinRateQuizClient() {
           </div>
         ) : (
           <>
-            {/* ── 포커 테이블 ── */}
-            <div className="relative rounded-[2rem] px-3 pt-4 pb-4 mb-4"
-              style={{ background: FELT, border: `3px solid ${GOLD}`, boxShadow: "inset 0 2px 30px rgba(0,0,0,0.45), 0 14px 40px rgba(0,0,0,0.35)" }}>
-
-              {/* 상대들 (상단) */}
-              <div className="flex justify-center flex-wrap gap-x-4 gap-y-2 mb-2">
-                {villains.map((i) => (
-                  <PlayerSeat key={i} idx={i} cards={sim.hands[i]} eqPct={streetEq[i]}
-                    isWinner={isRiver && sim.winners.includes(i)} showEq small label={labelFor(i)} />
-                ))}
-              </div>
-
-              {/* 보드 (중앙) */}
-              <div className="rounded-2xl py-3 px-2 my-1" style={{ background: "rgba(0,0,0,0.18)", border: "1px solid rgba(255,255,255,0.06)" }}>
-                <div className="text-center text-[9px] font-bold uppercase tracking-[0.2em] text-white/45 mb-2">
-                  {STREET_LABEL[street]}
+            {/* ── 오벌 레이스트랙 테이블 ── */}
+            <div className="mb-4 mx-auto" style={{
+              maxWidth: 400, padding: 9, borderRadius: "47% / 41%",
+              background: "linear-gradient(160deg,#6b4a29 0%,#4a3319 55%,#37260f 100%)",
+              boxShadow: "0 16px 44px rgba(0,0,0,0.42)",
+            }}>
+              <div className="relative flex flex-col items-center justify-between" style={{
+                minHeight: 412, borderRadius: "46% / 40%", background: FELT,
+                border: `2px solid ${GOLD}66`, boxShadow: "inset 0 3px 44px rgba(0,0,0,0.5)",
+                padding: "22px 8px",
+              }}>
+                {/* 상대 (상단 아치) */}
+                <div className="flex justify-around items-start w-full px-1">
+                  {villains.map((i) => (
+                    <PlayerSeat key={i} idx={i} cards={sim.hands[i]} eqPct={streetEq[i]}
+                      isWinner={isRiver && sim.winners.includes(i)} showEq small label={labelFor(i)} />
+                  ))}
                 </div>
-                <div className="flex gap-1.5 justify-center">
-                  {sim.board.map((c, i) => <PlayingCard key={i} card={c} hidden={i >= boardShown} />)}
-                </div>
-              </div>
 
-              {/* 나 (하단) */}
-              <div className="flex justify-center mt-2">
+                {/* 커뮤니티 (정중앙) */}
+                <div className="flex flex-col items-center gap-1.5">
+                  <div className="text-[9px] font-bold uppercase tracking-[0.25em] text-white/45">{STREET_LABEL[street]}</div>
+                  <div className="flex gap-1.5 justify-center">
+                    {sim.board.map((c, i) => <PlayingCard key={i} card={c} hidden={i >= boardShown} />)}
+                  </div>
+                </div>
+
+                {/* 나 (하단 아치) */}
                 <PlayerSeat idx={0} cards={sim.hands[0]} eqPct={streetEq[0]}
                   isWinner={isRiver && sim.winners.includes(0)} showEq label={labelFor(0)} />
               </div>
