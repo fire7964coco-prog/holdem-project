@@ -73,7 +73,7 @@ export function Footer() {
                 { href: "/calculator", label: "확률 계산기" },
                 { href: "/pub", label: "지역별 홀덤펍" },
                 { href: "/blog", label: "전략 블로그" },
-                { href: "/win-rate-quiz", label: "승률 퀴즈" },
+                { href: "/win-rate-quiz", label: "승률 시뮬레이터" },
                 { href: "/quiz", label: "족보 퀴즈" },
                 { href: "/tournaments", label: "홀덤 대회" },
               ].map((link) => (

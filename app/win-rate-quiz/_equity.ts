@@ -253,3 +253,87 @@ export function showdown(hero: Card[], villain: Card[], board: Card[]): "hero" |
   if (hs < vs) return "villain";
   return "tie";
 }
+
+// ── 멀티웨이 (2~N명) ──────────────────────────────────────────────────────────
+
+/** N명 딜: hands[p]=홀카드 2장, board 5장 */
+export function dealHands(numPlayers: number): { hands: [Card, Card][]; board: Card[] } {
+  const deck: NCard[] = [];
+  for (let r = 2; r <= 14; r++) for (let s = 0; s < 4; s++) deck.push([r, s]);
+  for (let i = deck.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [deck[i], deck[j]] = [deck[j], deck[i]];
+  }
+  const d = deck.map(toDisplay);
+  const hands: [Card, Card][] = [];
+  let k = 0;
+  for (let p = 0; p < numPlayers; p++) { hands.push([d[k], d[k + 1]]); k += 2; }
+  return { hands, board: [d[k], d[k + 1], d[k + 2], d[k + 3], d[k + 4]] };
+}
+
+/**
+ * N명 각자의 승률 % (무승부는 승자 수로 균등 분할). 합계 ≈ 100.
+ * board 0장=몬테카를로 / 3·4장=완전 열거(정확) / 5장=직접 비교.
+ */
+export function equities(hands: Card[][], board: Card[]): number[] {
+  const P = hands.length;
+  const nums = hands.map((h) => h.map(toNum));
+  const b = board.map(toNum);
+  const used = new Set<number>();
+  for (const h of nums) for (const c of h) used.add(c[0] * 4 + c[1]);
+  for (const c of b) used.add(c[0] * 4 + c[1]);
+  const rest: NCard[] = [];
+  for (let r = 2; r <= 14; r++) for (let s = 0; s < 4; s++) if (!used.has(r * 4 + s)) rest.push([r, s]);
+
+  const eq = new Array(P).fill(0);
+  let total = 0;
+  const sc = new Array<number>(P);
+
+  const settle = (score: (cs: NCard[]) => number, full: NCard[], hbufs: NCard[][], useBuf: boolean) => {
+    let best = -1;
+    for (let p = 0; p < P; p++) {
+      const s = useBuf
+        ? (() => { const hb = hbufs[p]; hb[2] = full[0]; hb[3] = full[1]; hb[4] = full[2]; hb[5] = full[3]; hb[6] = full[4]; return score(hb); })()
+        : score([...nums[p], ...full]);
+      sc[p] = s;
+      if (s > best) best = s;
+    }
+    let w = 0;
+    for (let p = 0; p < P; p++) if (sc[p] === best) w++;
+    const share = 1 / w;
+    for (let p = 0; p < P; p++) if (sc[p] === best) eq[p] += share;
+    total++;
+  };
+
+  if (b.length === 5) {
+    settle(best7, b, [], false);
+  } else if (b.length === 4) {
+    for (const c of rest) settle(best7, [b[0], b[1], b[2], b[3], c], [], false);
+  } else if (b.length === 3) {
+    for (let i = 0; i < rest.length; i++)
+      for (let j = i + 1; j < rest.length; j++) settle(best7, [b[0], b[1], b[2], rest[i], rest[j]], [], false);
+  } else {
+    // 프리플랍: 몬테카를로 (best7fast + 버퍼 재사용)
+    const pool = [...rest];
+    const hbufs: NCard[][] = nums.map((h) => [h[0], h[1], pool[0], pool[1], pool[2], pool[3], pool[4]]);
+    const full: NCard[] = [pool[0], pool[1], pool[2], pool[3], pool[4]];
+    for (let k = 0; k < MC_SAMPLES; k++) {
+      for (let i = 0; i < 5; i++) {
+        const j = i + Math.floor(Math.random() * (pool.length - i));
+        const t = pool[i]; pool[i] = pool[j]; pool[j] = t;
+        full[i] = pool[i];
+      }
+      settle(best7fast, full, hbufs, true);
+    }
+  }
+  return eq.map((e) => (e / total) * 100);
+}
+
+/** 풀 보드 기준 승자 인덱스들 (동점이면 여럿) */
+export function winnersAt(hands: Card[][], board: Card[]): number[] {
+  const sc = hands.map((h) => best7([...h.map(toNum), ...board.map(toNum)]));
+  const best = Math.max(...sc);
+  const w: number[] = [];
+  sc.forEach((s, i) => { if (s === best) w.push(i); });
+  return w;
+}
