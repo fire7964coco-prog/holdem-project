@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "APT 인천 2026은 8/7~16 인천 파라다이스 시티에서 열립니다. 메인이벤트 바이인 250만원, Natural8에서 $3.50 위성으로 시트 도전 가능. 단, 파라다이스 시티는 외국인 전용 카지노 — 한국 국적자는 입장 불가.",
   category: "토너먼트",
   date: "2026-06-16",
-  updated: "2026-07-02",
+  updated: "2026-07-22",
   readTime: "13분",
   emoji: "🎯",
   layout: "tournament-guide",
