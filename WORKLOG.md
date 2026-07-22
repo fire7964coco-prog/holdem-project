@@ -3,6 +3,14 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-22 (번체(zh-hant) #5 포지션 배포 — holdem-position-play)
+
+> 번체 트랙 필라 #5(位置). 리서치 `docs/translation-terms-zh-hant.md`(포지션 용어는 §7-C 起手牌 축과 겹침).
+- **리서치**: rakko `headline`(德州撲克位置 상위 10) — Natural8 `位置與其重要性`(각 위치 玩법)·monsterstack `位置怎麼看?各位置優劣勢`·taiwanrounders 術語大全(IP/OOP·位置術語). 용어 확정(有利位置IP/不利位置OOP·關煞位·低/高劫持位LJ/HJ·偷盲·反偷·過牌加注·領打·擠壓·抓詐牌).
+- **`holdem-position-play`**(16분 최장): EN 마스터 재저작. 짧은훅/명사형 H2(位置怎麼打?·為什麼重要?). 내부링크=starting-hands-chart+probability+hand-rankings+rules(zh-hant 4편 존재로 EN parity 근접).
+- **적대적 대만 네이티브 검수**: **§13 전 수치·牌例 통과**(K♥Q♥ 2핸드 頂對·8♥7♥ 9補 동화聽·A♦9♦ 건조보드·실현율 85-100/60-85·개牌범위 13→43 遞增·c-bet 65-75/40-50/30-45·SB結構最差 vs BB bb/100·偷盲2.2-2.5x·SB 3-bet 4x·6max 17%·<15BB push/fold). 🟠 數據庫→資料庫(6곳)·對映→對應(대만 현지어). 繁簡·죽은링크 0.
+- 발행: 57 blog + **411 intl**(zh-hant 5편). 다음=#6 `holdem-pot-odds`.
+
 ## 2026-07-22 (번체(zh-hant) #4 스타팅핸드 배포 — holdem-starting-hands-chart)
 
 > 번체 트랙 필라 #4(起手牌). 리서치 축적 `docs/translation-terms-zh-hant.md §7-C`.

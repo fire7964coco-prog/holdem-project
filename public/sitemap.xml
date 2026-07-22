@@ -926,7 +926,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- 다국어 블로그 포스트 (410편) -->
+  <!-- 다국어 블로그 포스트 (411편) -->
 
   <url>
     <loc>https://www.holdemmaster.com/en/blog/apt-incheon-2026-guide</loc>
@@ -1380,6 +1380,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-position-play" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-position-play" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-position-play" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-position-play" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-position-play" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-position-play" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-position-play" />
@@ -2168,6 +2169,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-position-play" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-position-play" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-position-play" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-position-play" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-position-play" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-position-play" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-position-play" />
@@ -2956,6 +2958,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-position-play" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-position-play" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-position-play" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-position-play" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-position-play" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-position-play" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-position-play" />
@@ -3744,6 +3747,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-position-play" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-position-play" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-position-play" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-position-play" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-position-play" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-position-play" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-position-play" />
@@ -4100,6 +4104,23 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-hand-rankings" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/holdem-hand-rankings" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-hand-rankings" />
+  </url>
+
+  <url>
+    <loc>https://www.holdemmaster.com/zh-hant/blog/holdem-position-play</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-position-play" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-position-play" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-position-play" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-position-play" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-position-play" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-position-play" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-position-play" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-position-play" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-position-play" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-position-play" />
   </url>
 
   <url>
@@ -4864,6 +4885,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-position-play" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-position-play" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-position-play" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-position-play" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-position-play" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-position-play" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-position-play" />
@@ -5652,6 +5674,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-position-play" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-position-play" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-position-play" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-position-play" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-position-play" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-position-play" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-position-play" />
@@ -7166,6 +7189,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-position-play" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-position-play" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-position-play" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-position-play" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-position-play" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-position-play" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-position-play" />
