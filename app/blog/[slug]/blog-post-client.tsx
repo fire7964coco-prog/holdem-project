@@ -542,10 +542,10 @@ export function renderMarkdown(content: string): string {
       `</a>`)
     // :::youtube[영상ID][시작초?]::: — lite-facade 유튜브 임베드 (썸네일 클릭 시에만 iframe 로드 → CWV 보호). 자체 채널 영상만 사용.
     .replace(/^:::youtube\[([A-Za-z0-9_-]{11})\](?:\[(\d+)\])?:::$/gm, (_m, id, start) => {
-      const s = start ? `&start=${start}` : ''
-      const embed = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0${s}`
+      const s = start ? `?start=${start}&autoplay=1` : `?autoplay=1`
+      const embed = `https://www.youtube-nocookie.com/embed/${id}${s}`
       const thumb = `https://i.ytimg.com/vi/${id}/hqdefault.jpg`
-      return `<div style="position:relative;aspect-ratio:16/9;margin:24px 0;border-radius:14px;overflow:hidden;cursor:pointer;background:#000;box-shadow:0 6px 22px rgba(0,0,0,0.25)" onclick="this.outerHTML='&lt;iframe style=&quot;position:absolute;inset:0;width:100%;height:100%;border:0&quot; src=&quot;${embed}&quot; allow=&quot;autoplay;encrypted-media;picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;'">` +
+      return `<div style="position:relative;aspect-ratio:16/9;margin:24px 0;border-radius:14px;overflow:hidden;cursor:pointer;background:#000;box-shadow:0 6px 22px rgba(0,0,0,0.25)" onclick="this.innerHTML='&lt;iframe style=&quot;position:absolute;inset:0;width:100%;height:100%;border:0&quot; src=&quot;${embed}&quot; allow=&quot;autoplay;encrypted-media;picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;';this.style.cursor='default'">` +
         `<img src="${thumb}" loading="lazy" alt="유튜브 영상 미리보기 — 클릭하면 재생됩니다" style="width:100%;height:100%;object-fit:cover">` +
         `<div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.18)">` +
         `<div style="width:72px;height:50px;background:#f00;border-radius:13px;opacity:0.92;display:flex;align-items:center;justify-content:center">` +
