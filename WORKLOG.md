@@ -3,6 +3,14 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-22 (번체(zh-hant) #4 스타팅핸드 배포 — holdem-starting-hands-chart)
+
+> 번체 트랙 필라 #4(起手牌). 리서치 축적 `docs/translation-terms-zh-hant.md §7-C`.
+- **리서치**: rakko `headline`(德州撲克起手牌 상위 10) — Natural8 `10組最強起手牌`(EN 10베스트와 구조 일치)·sixpoker `起手牌勝率全攻略/迷思5선`·fishpoker `入池범위`·pokerfans(對子/連張/同花牌/跳位牌). 용어 확정(口袋對·同花/不同花·投機牌·跛入limp·GTO翻前圖·劫機位·堅果).
+- **`holdem-starting-hands-chart`**: EN 마스터 재저작. :::rangechart:::·:::quiz::: 디렉티브 유지. 내부링크=hand-rankings+probability+**rules**(3편 존재로 EN parity 근접) + 도구 /hand-chart·/quiz(캐노니컬, zh-hant 로케일 라우트 없음).
+- **적대적 대만 네이티브 검수**: **§13 전 수치 통과**(169=13+78+78/1326·AA 85%·AK 五五開·위치범위 13/17/27/43·6max 15-17·set 11.8%·同花 6.5%/0.8%·suited +2-3%·7-2 규칙·측验 3결론). 🟠 HJ→MP 표 정합·10대 랭킹 면책문구 추가. ⚠️검수관 "1比8.5→1比7.5" 지적은 배당/확률형 혼동(11.8%=1 in 8.5 확률형 정확, 확률글과 동일 표기) → 유지.
+- 발행: 57 blog + **410 intl**(zh-hant 4편). 다음=#5 `holdem-position-play`.
+
 ## 2026-07-22 (번체(zh-hant) #3 확률 배포 — holdem-probability)
 
 > 번체 트랙 필라 #3(機率). 리서치 축적 `docs/translation-terms-zh-hant.md §7-B`.

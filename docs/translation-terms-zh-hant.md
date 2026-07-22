@@ -123,4 +123,36 @@
 
 **롱테일(rakko):** `德州撲克機率表` · `德州撲克勝率` · `起手牌勝率` · `底池賠率` · `四二法則`. ⚠️`德州撲克機率` suggest 거의 0(機率表/勝率이 실검색 본류).
 
-### 7-C. (다음 필라 착수 시 이 아래 계속 축적)
+### 7-C. 起手牌 필라 (`holdem-starting-hands-chart`, 2026-07-22 리서치)
+> rakko `headline`(德州撲克起手牌 상위 10). 상위=Natural8 `10組最強的德州撲克起手牌`(EN 10베스트와 구조 일치)·sixpoker `起手牌勝率全攻略`(迷思 5선)·fishpoker `起手牌強度/入池범위`·pokerfans(位置·對子·連續牌·同花牌·跳位牌).
+
+**스타팅핸드 용어 (대만 실측):**
+| 개념 | 번체 표기 |
+|---|---|
+| starting hands | `起手牌` |
+| pocket pair | `口袋對（子）`／`口袋A`(=AA) |
+| suited / offsuit | `同花`／`不同花`(★Natural8=不同花, AKs=A-K 同花, AKo=A-K 不同花) |
+| connectors | `連續牌／連張` (suited connectors=`同花連張`) |
+| gappers | `跳位牌` |
+| range | `起手牌範圍` |
+| enter pot / play | `入池` |
+| hand strength | `牌力／起手牌強度` |
+| broadway | `百老匯` |
+| nuts | `堅果` |
+| solver | `解算器（solver）`(PioSOLVER·GTO Wizard 라틴) |
+| GTO preflop chart | `GTO 翻牌前圖表／翻前圖` |
+| limp | `跛入（limp）／平跟` |
+| rake | `抽水` |
+| muck | `蓋牌堆` |
+| race(코인플립) | `競速／擲硬幣五五開` |
+| short deck | `短牌` |
+| myths | `迷思` |
+| lojack | `劫機位` |
+| 位置 약어 | UTG=槍口位, EP=早期位, MP=中期位, CO=關煞位, BTN=莊家按鈕位, SB=小盲位, BB=大盲位 |
+
+**H2 골격 (명사형 — Natural8/sixpoker 실측):**
+`哪些是最佳起手牌？`(짧은 훅) · `德州撲克10大最強起手牌排名` · `什麼算好的起手牌？` · `按位置劃分的起手牌表` · `6人桌起手牌` · `該打起手牌的百分之幾？` · `GTO翻前圖 vs 新手圖` · `最差的起手牌` · `常見問題 FAQ`. sixpoker `破解5個常見迷思`도 winnable 앵글.
+- EN 10베스트 순서(口袋A→口袋K→…→A-J同花) = Natural8와 정확 일치 → 안전.
+- 캐노니컬 도구: `/hand-chart`(起手牌 툴)·`/quiz`(10문 퀴즈)·`/calculator`. zh-hant 로케일 라우트 없음 → 캐노니컬 사용(checker는 /blog/만 검사).
+
+### 7-D. (다음 필라 착수 시 이 아래 계속 축적)

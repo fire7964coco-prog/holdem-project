@@ -63,7 +63,7 @@
 1. [x] ✅ `holdem-hand-rankings` — 牌型大小. 현지 3편 정독+rakko / 대만 네이티브 적대검수(🔴1 §13 練習3 "A로 四條K" 오류 수정 + 連套 용어보강) / 배포. ⚠️형제글 링크는 클러스터 완성 후 복원.
 2. [x] ✅ `texas-holdem-rules-for-beginners` — 德州撲克規則. EN 재저작+대만 실측구조(명사형 H2·中英병기·질문 FAQ격리) / **신규 winnable 섹션 `德州撲克在台灣合法嗎？撲克室與錦標賽`**(monsterstack 상위 앵글) + `梭哈≠德州撲克` FAQ / 링크는 hand-rankings만(형제글 클러스터 후 복원) / 적대적 대만 네이티브 검수: §13 전항 통과, 🟠2 수정(합법성 과대표현 완화·확률표 오독방지) + 🟢 정밀화(梭哈=沙蟹/Stud·讀牌面). 배포.
 3. [x] ✅ `holdem-probability` — 機率. EN 재저작+대만 실측(機率表·勝率·四二法則·底池賠率·暗三條/Set·補牌/Outs·聽牌 用어, 명사형 H2·질문 FAQ격리·中英병기). 신규 FAQ `為什麼勝率高還是輸`(변이수 개념). 링크=hand-rankings+rules(둘 다 존재). 적대적 대만 네이티브 검수: **§13 전 수치 검증 통과**(주표10·起手5·翻牌7·聽牌7×2·四二 2례·팟오즈·냉문4·皇家湊法·新FAQ). 🟢 檯面 반영. 팟오즈 이미지 alt는 공용에셋($25/$100) 정확성 유지. 배포.
-4. [ ] ⬜ `holdem-starting-hands-chart` — 起手牌
+4. [x] ✅ `holdem-starting-hands-chart` — 起手牌. EN 재저작+대만 실측(起手牌·口袋對·同花/不同花·投機牌·跛入limp·GTO翻前圖·劫機位·堅果 용어, 명사형 H2·질문 FAQ격리). 링크=hand-rankings+probability+rules(3편 존재)+/hand-chart·/quiz 도구. :::rangechart:::·:::quiz::: 디렉티브 유지. 적대적 대만 네이티브 검수: §13 전 수치 통과(169=13+78+78·AA85%·AK五五開·위치범위·set11.8%·同花6.5%·7-2). 🟠 HJ→MP 정합·랭킹 면책문구 추가. "1比8.5"는 확률형(=11.8%) 유지(검수관 배당형 착오). 배포.
 5. [ ] ⬜ `holdem-position-play` — 位置
 6. [ ] ⬜ `holdem-pot-odds` — 底池賠率
 7. [ ] ⬜ `holdem-glossary` — 術語(TW 高수요)

@@ -926,7 +926,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- 다국어 블로그 포스트 (409편) -->
+  <!-- 다국어 블로그 포스트 (410편) -->
 
   <url>
     <loc>https://www.holdemmaster.com/en/blog/apt-incheon-2026-guide</loc>
@@ -1542,6 +1542,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-starting-hands-chart" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-starting-hands-chart" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-starting-hands-chart" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-starting-hands-chart" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-starting-hands-chart" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-starting-hands-chart" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-starting-hands-chart" />
@@ -2329,6 +2330,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-starting-hands-chart" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-starting-hands-chart" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-starting-hands-chart" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-starting-hands-chart" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-starting-hands-chart" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-starting-hands-chart" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-starting-hands-chart" />
@@ -3116,6 +3118,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-starting-hands-chart" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-starting-hands-chart" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-starting-hands-chart" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-starting-hands-chart" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-starting-hands-chart" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-starting-hands-chart" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-starting-hands-chart" />
@@ -3903,6 +3906,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-starting-hands-chart" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-starting-hands-chart" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-starting-hands-chart" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-starting-hands-chart" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-starting-hands-chart" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-starting-hands-chart" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-starting-hands-chart" />
@@ -4113,6 +4117,23 @@
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-probability" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-probability" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-probability" />
+  </url>
+
+  <url>
+    <loc>https://www.holdemmaster.com/zh-hant/blog/holdem-starting-hands-chart</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-starting-hands-chart" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-starting-hands-chart" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-starting-hands-chart" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-starting-hands-chart" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-starting-hands-chart" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-starting-hands-chart" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-starting-hands-chart" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-starting-hands-chart" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-starting-hands-chart" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-starting-hands-chart" />
   </url>
 
   <url>
@@ -5005,6 +5026,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-starting-hands-chart" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-starting-hands-chart" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-starting-hands-chart" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-starting-hands-chart" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-starting-hands-chart" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-starting-hands-chart" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-starting-hands-chart" />
@@ -5792,6 +5814,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-starting-hands-chart" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-starting-hands-chart" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-starting-hands-chart" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-starting-hands-chart" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-starting-hands-chart" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-starting-hands-chart" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-starting-hands-chart" />
@@ -7305,6 +7328,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-starting-hands-chart" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-starting-hands-chart" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-starting-hands-chart" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-starting-hands-chart" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-starting-hands-chart" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-starting-hands-chart" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-starting-hands-chart" />
