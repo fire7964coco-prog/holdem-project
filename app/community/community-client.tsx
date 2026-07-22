@@ -405,8 +405,17 @@ function getL(lang: string) {
 const FILTER_PILLS = ["All", "Strategy", "Community"] as const;
 type FilterKey = (typeof FILTER_PILLS)[number];
 
+// 이번 주 인기글 최상단 고정 슬러그 (블로그/가이드 큐레이션용)
+const TRENDING_PIN_SLUG = "bluffing-strategy-when-and-how";
+
 function getTrending(posts: FeedPost[]) {
-  return [...posts].sort((a, b) => b.likeCount - a.likeCount).slice(0, 4);
+  // 커뮤니티 채팅/피드 글은 인기글에서 제외 — 블로그·가이드 콘텐츠만 노출
+  const pool = posts.filter((p) => p.type !== "community");
+  const pinned = pool.find((p) => p.blogSlug === TRENDING_PIN_SLUG);
+  const rest = pool
+    .filter((p) => p.blogSlug !== TRENDING_PIN_SLUG)
+    .sort((a, b) => b.likeCount - a.likeCount);
+  return [pinned, ...rest].filter(Boolean).slice(0, 4) as FeedPost[];
 }
 
 type EventData = {
