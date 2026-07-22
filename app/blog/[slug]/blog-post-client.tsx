@@ -540,6 +540,17 @@ export function renderMarkdown(content: string): string {
       `</span>` +
       `<span style="flex-shrink:0;display:inline-flex;align-items:center;gap:5px;padding:9px 16px;border-radius:9px;background:linear-gradient(135deg,hsl(43 68% 50%),hsl(43 65% 42%));color:hsl(40 45% 97%);font-size:13px;font-weight:800;white-space:nowrap;box-shadow:0 2px 8px hsl(43 60% 40% / 0.35)">이벤트 참여하기 →</span>` +
       `</a>`)
+    // :::youtube[영상ID][시작초?]::: — lite-facade 유튜브 임베드 (썸네일 클릭 시에만 iframe 로드 → CWV 보호). 자체 채널 영상만 사용.
+    .replace(/^:::youtube\[([A-Za-z0-9_-]{11})\](?:\[(\d+)\])?:::$/gm, (_m, id, start) => {
+      const s = start ? `&start=${start}` : ''
+      const embed = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0${s}`
+      const thumb = `https://i.ytimg.com/vi/${id}/hqdefault.jpg`
+      return `<div style="position:relative;aspect-ratio:16/9;margin:24px 0;border-radius:14px;overflow:hidden;cursor:pointer;background:#000;box-shadow:0 6px 22px rgba(0,0,0,0.25)" onclick="this.outerHTML='&lt;iframe style=&quot;position:absolute;inset:0;width:100%;height:100%;border:0&quot; src=&quot;${embed}&quot; allow=&quot;autoplay;encrypted-media;picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;'">` +
+        `<img src="${thumb}" loading="lazy" alt="유튜브 영상 미리보기 — 클릭하면 재생됩니다" style="width:100%;height:100%;object-fit:cover">` +
+        `<div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.18)">` +
+        `<div style="width:72px;height:50px;background:#f00;border-radius:13px;opacity:0.92;display:flex;align-items:center;justify-content:center">` +
+        `<div style="width:0;height:0;border-left:22px solid #fff;border-top:13px solid transparent;border-bottom:13px solid transparent;margin-left:5px"></div></div></div></div>`
+    })
     .replace(/^- (.+)$/gm, '<li class="flex gap-2 text-muted-foreground text-sm leading-relaxed mb-1"><span class="text-primary mt-1 flex-shrink-0">•</span><span>$1</span></li>')
     .replace(/(<li.*<\/li>\n?)+/g, (m) => `<ul class="my-4 space-y-1">${m}</ul>`)
     .replace(/\n\n/g, '</p><p class="text-muted-foreground text-base leading-relaxed mb-4">')
