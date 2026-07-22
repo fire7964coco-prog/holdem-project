@@ -155,4 +155,34 @@
 - EN 10베스트 순서(口袋A→口袋K→…→A-J同花) = Natural8와 정확 일치 → 안전.
 - 캐노니컬 도구: `/hand-chart`(起手牌 툴)·`/quiz`(10문 퀴즈)·`/calculator`. zh-hant 로케일 라우트 없음 → 캐노니컬 사용(checker는 /blog/만 검사).
 
-### 7-D. (다음 필라 착수 시 이 아래 계속 축적)
+### 7-D. 底池賠率 필라 (`holdem-pot-odds`, 2026-07-22 리서치 — rakko headline + WebSearch)
+> 상위=sixpoker(機率解析)·monsterstack(如何計算底池賠率?)·Natural8·happypoker(三步法)·andypoker·vocus·fishpoker·pokertaiwan. 상위 평균 ~6,000자. **WebSearch로 실제 설명 문구 겹침 확인**(사용자 지시).
+
+**팟오즈 용어 (대만 실측 — 겹침 확인):**
+| 개념 | 번체 표기 |
+|---|---|
+| pot odds | `底池賠率（Pot Odds）` (賠率比 변형도) |
+| implied odds | `隱含賠率（Implied Odds）` (Natural8=隱藏賠率 변형) |
+| reverse implied odds | `反向隱含賠率` |
+| outs | `補牌（Outs）／補牌數` |
+| tainted/dirty outs | `反補牌／髒補牌／被污染的補牌` (Natural8 `反補牌和擋牌`) |
+| blocker | `擋牌／阻擋牌` |
+| equity | `勝率（Equity）` |
+| effective stack | `有效籌碼` |
+| overbet | `超池下注` / half·pot = `半池／滿池下注` |
+| rule of 4 and 2 | `四二法則`(★TW 표준) |
+| streets | `翻牌圈／轉牌圈／河牌圈`(★TW는 圈 붙임 — 팟오즈 글 다수) |
+| call/fold | `跟注／蓋牌(棄牌)` |
+| bluff-catch | `抓詐(唬)` |
+| EV | `期望值（EV）` (happypoker `最+EV`) |
+
+**대만 실제 설명 문구(겹침 — 그대로 활용):**
+- 비율형: `底池賠率 =（底池總額 ÷ 跟注需要的金額）：1`, `這比例是 3 比 1`(monsterstack).
+- 3步법(happypoker): ①計算最終底池 ②跟注金額 ÷ 最終底池 ③轉換成百分比%.
+- 四二법칙: `翻牌圈 勝率 ≈ Outs × 4；轉牌圈 勝率 ≈ Outs × 2`.
+- 결정: `勝率（Equity）＞ 底池賠率 → 跟注；＜ → 蓋牌`(vocus).
+
+**H2 골격 (명사형/짧은훅 — 실측):** `底池賠率是什麼？` · `如何計算底池賠率？(3步)` · `底池賠率範例／計算範例` · `比率 vs 百分比` · `何謂隱含賠率？` · `何謂有效籌碼？` · `什麼是補牌數？` · `四二法則` · `反補牌和擋牌` · `有獲利／不獲利的底池賠率範例` · `常見問題 FAQ`.
+- 상위 다수 娛樂城/제휴稿(andypoker·happypoker·娛樂城) → §13 정확 수치·깔끔한 표로 차별화.
+
+### 7-E. (다음 필라 착수 시 이 아래 계속 축적)

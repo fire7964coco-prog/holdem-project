@@ -3,6 +3,14 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-22 (번체(zh-hant) #6 팟오즈 배포 — holdem-pot-odds)
+
+> 번체 트랙 필라 #6(底池賠率). 리서치 `docs/translation-terms-zh-hant.md §7-D`. ★사용자 지시로 **WebSearch로 대만 실제 설명 문구 겹침 반영**.
+- **리서치**: rakko `headline`(德州撲克底池賠率 상위 10) + **WebSearch** — sixpoker·monsterstack(如何計算底池賠率?)·Natural8·happypoker(3步法)·andypoker·vocus·pokertaiwan. 겹침 표현 그대로 활용: `底池賠率=(底池總額÷跟注金額):1`·`這比例是 3 比 1`(monsterstack)·`翻牌圈/轉牌圈`·`反補牌/擋牌`(Natural8)·`抓詐`·四二法則.
+- **`holdem-pot-odds`**: EN 마스터 재저작. 명사형/짧은훅 H2. 내부링크=probability+starting-hands-chart+position-play+hand-rankings(zh-hant 5편 존재로 EN parity 근접).
+- **적대적 대만 네이티브 검수**: **§13 전 수치 통과, 수학 오류 0**(비율↔%표 1÷(X+1)·下注尺寸 ¼~2x·聽牌 15/9/8/6/4補·四二 9×4=36/×2=18·실전핸드 A♥K♥ 堅果同花聽 3比1→蓋). 🟠 실전핸드 $100(下注前)/$150(贏) 프레이밍 명시화(EN 이중프레이밍 유지). 繁簡·죽은링크 0.
+- 발행: 57 blog + **412 intl**(zh-hant 6편). 다음=#7 `holdem-glossary`.
+
 ## 2026-07-22 (번체(zh-hant) #5 포지션 배포 — holdem-position-play)
 
 > 번체 트랙 필라 #5(位置). 리서치 `docs/translation-terms-zh-hant.md`(포지션 용어는 §7-C 起手牌 축과 겹침).

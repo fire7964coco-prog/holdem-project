@@ -19,8 +19,8 @@
 > - **문서**: `docs/zh-hant-plan.md`(플랜+트래커) · `docs/translation-terms-zh-hant.md`(용어브리프) · `docs/zh-hant-search-behavior-report.md`(검색행태 리서치).
 >
 > ### ⏭️ 다음 (번체, 순서대로) — `docs/zh-hant-plan.md §5 트래커` 기준
-> **✅ #2~#5 배포 완료**(2026-07-22). #2 rules(§13통과+🟠2). #3 probability(§13 전수치 통과). #4 starting-hands-chart(§13 통과, 🟠 HJ→MP·랭킹면책). #5 `holdem-position-play`(§13 전수치·牌例 통과, 🟠 數據庫→資料庫·對映→對應). → **다음 = #6 `holdem-pot-odds`(底池賠率)** → #7 `holdem-glossary` → #8 `holdem-strategy` → #9 `holdem-tournament` → 이후 클러스터.
-> ★zh-hant 존재 글 5편(hand-rankings·rules·probability·starting-hands-chart·position-play) → 신규 글 내부링크 점점 EN parity에 근접. 형제 없는 것만 텍스트.
+> **✅ #2~#6 배포 완료**(2026-07-22). #2 rules · #3 probability · #4 starting-hands-chart · #5 position-play · #6 `holdem-pot-odds`(§13 전수치 통과·수학오류0, 🟠 $100/$150 프레이밍 명시화). 전부 적대적 대만 네이티브 검수 통과. → **다음 = #7 `holdem-glossary`(術語)** → #8 `holdem-strategy` → #9 `holdem-tournament` → 이후 클러스터.
+> ★zh-hant 존재 글 6편(hand-rankings·rules·probability·starting-hands-chart·position-play·pot-odds). 신규 글 내부링크 EN parity 근접. ★리서치 워크플로우=rakko headline + **WebSearch(현지 실제 문구 겹침 반영)** → `docs/translation-terms-zh-hant.md §7`에 축적.
 > ★내부링크: zh-hant 존재 글이 늘수록(현재 hand-rankings·rules·probability 3편) 신규 글에서 링크 가능. 형제글 없는 것은 텍스트, 클러스터 후 복원.
 > ★현지 리서치는 매 편 `docs/translation-terms-zh-hant.md §7`에 축적(rakko headline+SERP 용어·H1/H2 패턴 — 신규 포스팅 재사용). 娛樂城 상위글 얇음=§13 정확성 차별화 기회.
 >
