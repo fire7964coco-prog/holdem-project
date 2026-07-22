@@ -70,6 +70,8 @@
 8. [ ] ⬜ `holdem-strategy` — 策略 로드맵
 9. [ ] ⬜ `holdem-tournament` — 錦標賽
 
+> ★2026-07-22 소급 보강(EN parity): #3~#6에 경쟁강도 기반 대만 winnable 롱테일 FAQ 흡수 — probability(起手牌對戰勝率)·starting-hands(同花聽牌壓身家?/任何兩張抽?)·position(CO/HJ/LJ·各位置優劣)·pot-odds(有效籌碼/反補牌/抓詐). rakko 중문 질문DB 희소 → 경쟁사 FAQ 실측 gap 추출. §13 검수 통과. **다음 신규(#8~)는 착수 시 rakko suggest 경쟁강도 스캔+경쟁사 FAQ 실측 → winnable을 FAQ/H2에 배치(EN 방식).**
+
 ### 클러스터 (필라 후, 이어서)
 - [ ] ⬜ `holdem-betting-actions` / `holdem-blind-meaning` / `holdem-all-in-rules` / `holdem-showdown-rules` / `holdem-tiebreak-rules` / `holdem-kicker` / `holdem-split-pot-rules` (룰 클러스터)
 - [ ] ⬜ `holdem-outs` / `holdem-drawing-odds` / `holdem-equity` / `holdem-implied-odds` / `holdem-reading-the-board` / `holdem-flush-vs-straight` (확률 클러스터)

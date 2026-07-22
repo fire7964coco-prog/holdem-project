@@ -3,6 +3,16 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-22 (번체(zh-hant) #3~#6 소급 winnable FAQ 보강 — EN parity 강화)
+
+> 사용자 지시: EN 경화 전수 정독(WORKLOG 07-17~19·메모리·42편 인벤토리) 후, EN이 매 글 3~7개 흡수한 방식대로 **기배포 #3~#6에 경쟁강도 기반 대만 winnable 롱테일 FAQ 소급 흡수**. ⚠️rakko 중문 질문DB 희소(question-search 0) → 경쟁사 FAQ 실측(taiwanrounders/Natural8/sixpoker/monsterstack)에서 대만 실검색 gap 추출.
+- **#3 probability**: +`起手牌對戰勝率(AA vs KK)` (§13 검증본: AA 85%·AA vs KK 82.6%/KK 17.4%/4.7:1·AK vs 小對 五五開·AK vs QQ 43-46%, 사이트 win-rate-quiz 값 정합).
+- **#4 starting-hands**: +`同花聽牌可以壓身家?`(35% 낙후)·+`任何兩張都能抽?`(약체 장기손실·蓋80%) — sixpoker 破解迷思 winnable.
+- **#5 position**: +`CO/HJ/LJ 是什麼?`(영문주도)·+`各位置優劣勢 한줄` — monsterstack 各位置優劣勢 winnable.
+- **#6 pot-odds**: +`有效籌碼`(sixpoker)·+`反補牌/髒補牌`(Natural8)·+`用底池賠率抓詐 Hero call`(monsterstack) — 셋 다 경쟁사 FAQ 실측 gap.
+- **적대적 대만 네이티브 검수(4편 신규 FAQ만)**: **§13 전 수치 통과·🔴🟠 0**(AA/KK/AK 대전·同花聽 35%·四二·底池賠率 25/33% 전부 검산). 🟢 AA vs KK 세 수치 정합화 반영.
+- 발행 총계 불변(57 blog + 413 intl, FAQ 흡수라 편수 불변). 다음=#8 `holdem-strategy`.
+
 ## 2026-07-22 (번체(zh-hant) #7 술어 배포 — holdem-glossary)
 
 > 번체 트랙 필라 #7(術語). ★사용자 지시로 **WebSearch 4곳 + rakko 경쟁강도** 분석 후 작성(정확도 우선). 용어은행 `docs/translation-terms-zh-hant.md §7-E`.
