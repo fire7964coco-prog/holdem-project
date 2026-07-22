@@ -3,6 +3,14 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-22 (번체(zh-hant) #8 전략 로드맵 배포 — holdem-strategy)
+
+> 번체 트랙 필라 #8(策略). 정립 워크플로우(rakko headline+경쟁강도 스캔 + 경쟁사 FAQ 실측 + WebSearch → winnable을 FAQ에 정면 배치). 리서치 `docs/translation-terms-zh-hant.md §7-F`.
+- **리서치**: rakko headline(德州撲克策略 상위 8) — 대만 검색 본류=**技巧 리스티클**(sixpoker `14大技巧`·happypoker `10招技巧`) + monsterstack `剝削 전용글`(4玩家類型 緊弱/鬆弱/緊兇/鬆兇). 娛樂城/제휴 얇은稿 → EN 5-decisions 깊이로 차별화.
+- **`holdem-strategy`**: EN 5-decisions 골격 재저작(決策형 H2·질문 FAQ격리). **대만 winnable 흡수 FAQ**: `什麼是剝削(Exploitative)?`(monsterstack)·`資金控管怎麼做?`(sixpoker)·`靠運氣還是實力?`·`GTO是什麼?`·`怎麼變強?`·`緊兇TAG?`. 用語 緊兇/鬆兇/緊弱/鬆弱·剝削·資金控管·半詐唬·快打·防守大盲·主動權(SERP 실측). 링크=position-play+starting-hands-chart+pot-odds+probability+glossary(zh-hant 5편).
+- **적대적 대만 네이티브 검수**: **§13 전항 통과·🔴🟠 0**(暗三條 11.8%/1비8.5·底池賠率 4비1=20%·A♣K♣ 2♥7♦9♠ 완전미스→蓋·5♠5♦ 5♣K♠2♦ set·c-bet 60-80/40-50·資金 20-40/100+ 買入). 🟢 tldr 문장 다듬음. 繁簡·죽은링크 0.
+- 발행: 57 blog + **414 intl**(zh-hant 8편). 다음=#9 `holdem-tournament`(마지막 필라).
+
 ## 2026-07-22 (번체(zh-hant) #3~#6 소급 winnable FAQ 보강 — EN parity 강화)
 
 > 사용자 지시: EN 경화 전수 정독(WORKLOG 07-17~19·메모리·42편 인벤토리) 후, EN이 매 글 3~7개 흡수한 방식대로 **기배포 #3~#6에 경쟁강도 기반 대만 winnable 롱테일 FAQ 소급 흡수**. ⚠️rakko 중문 질문DB 희소(question-search 0) → 경쟁사 FAQ 실측(taiwanrounders/Natural8/sixpoker/monsterstack)에서 대만 실검색 gap 추출.

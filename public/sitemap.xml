@@ -751,6 +751,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-strategy" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-strategy" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-strategy" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-strategy" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-strategy" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-strategy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-strategy" />
@@ -926,7 +927,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- 다국어 블로그 포스트 (413편) -->
+  <!-- 다국어 블로그 포스트 (414편) -->
 
   <url>
     <loc>https://www.holdemmaster.com/en/blog/apt-incheon-2026-guide</loc>
@@ -1578,6 +1579,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-strategy" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-strategy" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-strategy" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-strategy" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-strategy" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-strategy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-strategy" />
@@ -2369,6 +2371,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-strategy" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-strategy" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-strategy" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-strategy" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-strategy" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-strategy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-strategy" />
@@ -3160,6 +3163,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-strategy" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-strategy" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-strategy" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-strategy" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-strategy" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-strategy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-strategy" />
@@ -3951,6 +3955,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-strategy" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-strategy" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-strategy" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-strategy" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-strategy" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-strategy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-strategy" />
@@ -4197,6 +4202,23 @@
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-starting-hands-chart" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-starting-hands-chart" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-starting-hands-chart" />
+  </url>
+
+  <url>
+    <loc>https://www.holdemmaster.com/zh-hant/blog/holdem-strategy</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-strategy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-strategy" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-strategy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-strategy" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-strategy" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-strategy" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-strategy" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-strategy" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-strategy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-strategy" />
   </url>
 
   <url>
@@ -5125,6 +5147,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-strategy" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-strategy" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-strategy" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-strategy" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-strategy" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-strategy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-strategy" />
@@ -5916,6 +5939,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-strategy" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-strategy" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-strategy" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-strategy" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-strategy" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-strategy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-strategy" />
@@ -7433,6 +7457,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-strategy" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-strategy" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-strategy" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-strategy" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-strategy" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-strategy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-strategy" />

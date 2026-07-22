@@ -201,4 +201,27 @@
 - **1bb 是什麼**·**UTG 是什麼**: taiwanrounders FAQ 상위 질문.
 - cooler/bad beat/tilt/slow roll는 라틴 유지(중문 병기).
 
-### 7-F. (다음 필라 착수 시 이 아래 계속 축적)
+### 7-F. 策略 필라 (`holdem-strategy`, 2026-07-22 — rakko + WebSearch)
+> 상위=sixpoker `14大技巧`(11,922자)·happypoker `10招技巧`·monsterstack `剝削 전용글`(4玩家類型)·Wikipedia 撲克策略. 대만은 **技巧(tips) 리스티클** 검색 지배. 娛樂城/제휴 얇은稿 → §13 5-decisions 깊이로 차별화.
+
+**策略 용어 (대만 실측 — SERP 확인):**
+| 개념 | 번체 |
+|---|---|
+| strategy/tips | `策略／技巧`(★TW 검색 본류=技巧) |
+| tight-aggressive TAG | `緊兇（TAG）` |
+| loose-aggressive LAG | `鬆兇（LAG）` |
+| tight-passive/loose-passive | `緊弱／鬆弱`(monsterstack 4類型) |
+| exploitative | `剝削`(monsterstack 전용글=winnable) |
+| bankroll management | `資金控管`(sixpoker 技巧14) |
+| game selection | `選牌局／選桌`(sixpoker 技巧12·happypoker 技巧10) |
+| semi-bluff | `半詐唬` |
+| fast play | `快打（強牌造大底池）` |
+| BB defense | `防守大盲` |
+| initiative | `主動權` |
+| set-mining | `摸暗三條（set-mine）` |
+| tilt | `上頭` |
+| 5 decisions | `5 個決策／決策骨架` |
+
+**★winnable 신규 FAQ 후보(경쟁사 실측 gap):** `什麼是剝削(Exploitative)?`(monsterstack)·`資金控管怎麼做?`(sixpoker)·`德州撲克靠運氣還是實力?`(실력vs運 大검색)·`GTO 是什麼?`·`怎麼變強/提升勝率?`·`緊兇(TAG)是什麼?`. **H2**: 명사형/決策형(位置·起手牌·加注或蓋牌·持續下注·何時放手) + 技巧/漏洞 표.
+
+### 7-G. (다음 필라 착수 시 이 아래 계속 축적)
