@@ -19,7 +19,8 @@
 > - **문서**: `docs/zh-hant-plan.md`(플랜+트래커) · `docs/translation-terms-zh-hant.md`(용어브리프) · `docs/zh-hant-search-behavior-report.md`(검색행태 리서치).
 >
 > ### ⏭️ 다음 (번체, 순서대로) — `docs/zh-hant-plan.md §5 트래커` 기준
-> **✅ #2 `texas-holdem-rules-for-beginners`(규칙) 배포 완료**(2026-07-22, 적대적 대만검수 §13 전항통과 + 🟠2 수정: 합법성 과대표현 완화·확률표 오독방지). → **다음 = #3 `holdem-probability`(機率)** → #4 `holdem-starting-hands-chart` → #5 `holdem-position-play` → #6 `holdem-pot-odds` → #7 `holdem-glossary` → #8 `holdem-strategy` → #9 `holdem-tournament` → 이후 클러스터.
+> **✅ #2 규칙 + #3 확률 배포 완료**(2026-07-22). #2 `texas-holdem-rules-for-beginners`(적대검수 §13통과+🟠2수정). #3 `holdem-probability`(적대검수 **§13 전 수치 검증통과**, 🟢 檯面). → **다음 = #4 `holdem-starting-hands-chart`(起手牌)** → #5 `holdem-position-play` → #6 `holdem-pot-odds` → #7 `holdem-glossary` → #8 `holdem-strategy` → #9 `holdem-tournament` → 이후 클러스터.
+> ★내부링크: zh-hant 존재 글이 늘수록(현재 hand-rankings·rules·probability 3편) 신규 글에서 링크 가능. 형제글 없는 것은 텍스트, 클러스터 후 복원.
 > ★현지 리서치는 매 편 `docs/translation-terms-zh-hant.md §7`에 축적(rakko headline+SERP 용어·H1/H2 패턴 — 신규 포스팅 재사용). 娛樂城 상위글 얇음=§13 정확성 차별화 기회.
 >
 > ### 📋 편당 워크플로우 (필수·건너뛰기 금지)

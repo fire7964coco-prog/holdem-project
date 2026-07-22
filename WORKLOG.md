@@ -3,6 +3,14 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-22 (번체(zh-hant) #3 확률 배포 — holdem-probability)
+
+> 번체 트랙 필라 #3(機率). 리서치 축적 `docs/translation-terms-zh-hant.md §7-B`.
+- **리서치**: rakko `headline`(德州撲克機率 상위 10) — 지배 상위=taiwanrounders 機率表(勝率圖解·四二法則·EV 공식)·sixpoker·pokertaiwan. 용어 확정(機率/勝率/補牌Outs/四二法則/暗三條Set/聽牌/底池賠率/隱含賠率/期望值EV).
+- **`holdem-probability`**: EN 마스터 재저작 → 대만 실측(명사형 H2·질문 FAQ격리·中英병기). 신규 FAQ `為什麼勝率高還是輸`(변이수). 내부링크=hand-rankings+**rules**(#2 배포로 이제 링크 가능, thumb 포함) → EN parity 근접.
+- **적대적 대만 네이티브 검수**: **§13 전 수치 검증 통과**(주표10열·起手牌5·翻牌7·聽牌표7×2·四二법칙 2례 9/15補·팟오즈 50/200=25%·냉문4·皇家4湊法/高牌1,302,540·新FAQ 70%≈10회3패). 🟢 檯呢→檯面 반영. 🟠 팟오즈 이미지 alt는 공용에셋($25/$100→20%, 본문 $50→25%는 별개 예시)이라 alt 정확성 유지(전 언어 동일).
+- 발행: 57 blog + **409 intl**(zh-hant 3편). 다음=#4 `holdem-starting-hands-chart`.
+
 ## 2026-07-22 (번체(zh-hant) #2 규칙 배포 — texas-holdem-rules-for-beginners)
 
 > 번체 트랙 필라 #2. 플랜 `docs/zh-hant-plan.md §5` 순서대로. 현지 리서치는 `docs/translation-terms-zh-hant.md §7-A`에 축적(재사용).

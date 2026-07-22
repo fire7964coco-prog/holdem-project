@@ -91,4 +91,36 @@
 
 **롱테일(rakko suggest, 德州撲克規則 축):** `德州撲克規則 大小`(10) · `~大小盲` · `~教學` · `~英文` · `~觀念` · `~check` · `賭場德州撲克規則` · `apt德州撲克規則`. ⚠️`德州撲克怎麼玩`=suggest 0건(키워드로는 약함, 玩法/規則이 본류).
 
-### 7-B. (다음 필라 착수 시 이 아래 계속 축적)
+### 7-B. 機率/확률 필라 (`holdem-probability`, 2026-07-22 리서치)
+> rakko `headline`(德州撲克機率 상위 10). 지배 상위=**taiwanrounders 機率表**(6,500자)·sixpoker(11,000자)·pokertaiwan. 상위 평균 ~7,000자.
+
+**확률·수학 용어 (중(英) 병기 표준 — 대만 실측):**
+| 개념 | 번체 표기 |
+|---|---|
+| Probability | `機率`(★台=機率, 간체=概率) |
+| Win rate | `勝率` |
+| Rule of 2 and 4 | `四二法則`／`二四法則`(둘 다 쓰임; Rule of 4 and 2로도) |
+| Outs | `補牌數`／`Outs`／`助勝牌` |
+| 成牌 확률 | `成牌機率` |
+| Pot Odds | `底池賠率（Pot Odds）` |
+| Implied Odds | `隱含賠率（Implied Odds）` |
+| Effective Stack | `有效籌碼（Effective Stack）` |
+| EV | `期望值（EV）` |
+| Fold Equity | `棄牌權益（Fold Equity）` |
+| Equity | `勝率`／`權益（Equity）` |
+| flop a set | `翻牌中 Set（中暗三條）` |
+| set over set | `Set Over Set`(라틴 유지) |
+| 스타팅핸드 승률 | `起手牌勝率` |
+| draw(드로) | `聽牌`／`等牌`／`聽`; flush draw=`同花聽牌` |
+| overcards | `高張／高牌張` |
+| gutshot | `內順聽牌／單張聽` |
+| open-ended | `兩頭順聽／雙頭聽` |
+
+**H2 골격 (명사형 — taiwanrounders/sixpoker 실측):**
+`常用成牌機率表（Outs vs. 勝率）` · `起手牌勝率對決圖解（Pre-flop All-in Odds）` · `四二法則（Rule of 2 and 4）心算` · `底池賠率（Pot Odds）與跟注決策` · `隱含賠率與有效籌碼` · `期望值（EV）` · `常見問題 FAQ`.
+- ★대만 확률글은 **표(機率表)·勝率圖解·심산 공식** 위주 = EN 마스터 표 구조와 정합. 롱폼 원스톱이 이김.
+- 상위 다수 娛樂城/제휴 계산기稿(sixpoker·pokertaiwan Natural8 CTA 도배) → **§13 정확 수치 + 깔끔한 표**로 차별화.
+
+**롱테일(rakko):** `德州撲克機率表` · `德州撲克勝率` · `起手牌勝率` · `底池賠率` · `四二法則`. ⚠️`德州撲克機率` suggest 거의 0(機率表/勝率이 실검색 본류).
+
+### 7-C. (다음 필라 착수 시 이 아래 계속 축적)
