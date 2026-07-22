@@ -73,7 +73,7 @@
 > ★2026-07-22 소급 보강(EN parity): #3~#6에 경쟁강도 기반 대만 winnable 롱테일 FAQ 흡수 — probability(起手牌對戰勝率)·starting-hands(同花聽牌壓身家?/任何兩張抽?)·position(CO/HJ/LJ·各位置優劣)·pot-odds(有效籌碼/反補牌/抓詐). rakko 중문 질문DB 희소 → 경쟁사 FAQ 실측 gap 추출. §13 검수 통과. **다음 신규(#8~)는 착수 시 rakko suggest 경쟁강도 스캔+경쟁사 FAQ 실측 → winnable을 FAQ/H2에 배치(EN 방식).**
 
 ### 클러스터 (필라 후, 이어서)
-- [ ] ⬜ `holdem-betting-actions` / `holdem-blind-meaning` / `holdem-all-in-rules` / `holdem-showdown-rules` / `holdem-tiebreak-rules` / `holdem-kicker` / `holdem-split-pot-rules` (룰 클러스터)
+- [x] ✅ **룰 클러스터 7편 완주** (2026-07-22, ★병렬 오케스트레이션 첫 적용): `holdem-betting-actions`(下注動作·min-raise정확) / `holdem-blind-meaning`(盲注≠花色) / `holdem-all-in-rules`(邊池산수·反悔) / `holdem-showdown-rules`(亮牌禮儀·Slow Roll) / `holdem-tiebreak-rules`(底牌無效·疊牌) / `holdem-kicker`(牌型別 踢腳 대조표) / `holdem-split-pot-rules`(奇數籌碼給誰·合意Chop). 워크플로: Phase1 리서치(내가 중앙, taiwanrounders `three_basic_poker_rules` 정답지) → Phase2 병렬 작가7+적대적QA7(작가+검수 짝) → Phase3 링크복원+명사형H2+梭제거. **§13 7편 전부 통과(치명0)**. 형제글 상호링크+필라 역링크(hand-rankings→kicker/split, rules→blind/kicker/split) 복원. 배포.
 - [ ] ⬜ `holdem-outs` / `holdem-drawing-odds` / `holdem-equity` / `holdem-implied-odds` / `holdem-reading-the-board` / `holdem-flush-vs-straight` (확률 클러스터)
 - [ ] ⬜ `holdem-3bet` / `holdem-continuation-bet` / `holdem-limping` / `holdem-when-to-fold` / `holdem-game-order` (전략 클러스터)
 - [ ] ⬜ `holdem-tournament-vs-cash-game` / `holdem-bubble` / `holdem-icm` / `holdem-short-stack` (토너먼트 클러스터)

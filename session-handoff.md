@@ -20,7 +20,9 @@
 >
 > ### ⏭️ 다음 (번체, 순서대로) — `docs/zh-hant-plan.md §5 트래커` 기준
 > **✅✅✅ 번체 9개 필라 전부 완주**(2026-07-22). #1 hand-rankings · #2 rules · #3 probability · #4 starting-hands-chart · #5 position-play · #6 pot-odds · #7 glossary · #8 strategy · #9 `holdem-tournament`(錦標賽). #3~#6 소급 winnable FAQ 보강 완료. **전부 적대적 대만 네이티브 검수 §13 통과.**
-> ### ⏭️ 다음 = **클러스터** (`docs/zh-hant-plan.md §5 클러스터` 목록: 룰/확률/전략/토너먼트/용어·문화 클러스터). 클러스터 쌓이면서 **형제글 내부링크 복원 패스**로 EN parity 완성(현재 필라 9편은 서로 링크됨, cluster 글은 아직 텍스트).
+> ### ✅ 룰 클러스터 7편 완주(2026-07-22, 병렬 오케스트레이션) — betting-actions·blind-meaning·all-in-rules·showdown-rules·tiebreak-rules·kicker·split-pot-rules. §13 7편 전부 통과. zh-hant 현재 **16편**(필라9+룰7). 상호링크+필라 역링크 복원.
+> ### ⏭️ 다음 = **다음 클러스터군** (`docs/zh-hant-plan.md §5`: 확률 클러스터[outs·drawing-odds·equity·implied-odds·reading-the-board·flush-vs-straight] / 전략[3bet·continuation-bet·limping·when-to-fold·game-order] / 토너먼트[tvc·bubble·icm·short-stack] / 용어·문화[bad-beat·cooler·fish·rake·straddle·card-counting]). **한 클러스터군 완주→다음** 방식.
+> ### 🤖 병렬 오케스트레이션 워크플로(확립·재사용): Phase1 리서치=내가 중앙(rakko headline+경쟁강도 + 리서치에이전트 경쟁사FAQ → 편별 브리프) → Phase2 병렬(작가에이전트+적대적 대만네이티브QA에이전트 짝, 편당 §13 전예 재검산) → Phase3 나=index등록·빌드·**링크복원**(형제글 존재분 상호+필라 역링크)·QA수정 일괄·커밋. ★§13 안전망은 병렬에서도 완벽 작동 실증(7/7 통과).
 > ### ★워크플로우(확립): rakko headline+`suggest-keywords`(경쟁강도 seoDifficulty) + **WebSearch 여러 곳**(현지 실제 용어·문구·경쟁사 FAQ 실측) → winnable을 FAQ/H2에 정면 배치, 니어제로는 본문 흡수 → `docs/translation-terms-zh-hant.md §7`에 용어은행 축적 → 재저작(§13 불변·명사형 H2·질문 FAQ격리·中英병기) → 적대적 대만 네이티브 검수 → 빌드·커밋·자동배포.
 > ### 🟢 백로그(전 언어 공통): Day1 타임라인/체크리스트 등 EN 마스터 인라인 카드가 **다크테마 스타일**(rgba(255,255,255,.06) 등) → 현 크림/그린 라이트 테마에서 테두리 흐림. 크로스랭귀지 일괄 수정 태스크 후보(콘텐츠 아닌 스타일).
 > ★zh-hant 존재 글 7편(hand-rankings·rules·probability·starting-hands-chart·position-play·pot-odds·glossary). 신규 글 내부링크 EN parity 근접.

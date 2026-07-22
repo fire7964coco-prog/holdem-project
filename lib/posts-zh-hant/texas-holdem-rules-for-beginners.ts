@@ -55,7 +55,7 @@ export const POST: Post = {
 
 只要照順序把牌桌看一遍，德州撲克的基本規則其實很單純。
 
-每手牌都從莊家按鈕位（Dealer Button）開始。按鈕左邊的兩名玩家要下強制注，分別叫**小盲注**（Small Blind）和**大盲注**（Big Blind）。接著每位玩家發兩張面朝下的牌，這就是你的**底牌**（Hole Cards）。
+每手牌都從莊家按鈕位（Dealer Button）開始。按鈕左邊的兩名玩家要下強制注，分別叫**小盲注**（Small Blind）和**大盲注**（Big Blind）——如果好奇為什麼還沒發牌就要下注，看[盲注是什麼、小盲大盲怎麼運作](/zh-hant/blog/holdem-blind-meaning)。接著每位玩家發兩張面朝下的牌，這就是你的**底牌**（Hole Cards）。
 
 之後，荷官會在桌子中央翻開五張大家共用的**公牌**（Community Cards）：
 
@@ -358,7 +358,7 @@ export const POST: Post = {
 | 9 | 一對 | 43.8%——攤牌時出現最多的牌型 |
 | 10 | 高牌 | 17.4%——攤牌時最弱的牌型；通常只有大家都沒中時才贏 |
 
-如果兩名玩家牌型相同，就比各自牌型裡最關鍵的高牌——這就是**踢腳牌**與平手判定。如果雙方最強的五張牌完全一樣，就**平分底池**（Chop）。完整的比法，看這篇[德州撲克牌型大小排名](/zh-hant/blog/holdem-hand-rankings)。
+如果兩名玩家牌型相同，就比各自牌型裡最關鍵的高牌——這就是[踢腳牌](/zh-hant/blog/holdem-kicker)與平手判定。如果雙方最強的五張牌完全一樣，就[平分底池](/zh-hant/blog/holdem-split-pot-rules)（Chop）。完整的比法，看這篇[德州撲克牌型大小排名](/zh-hant/blog/holdem-hand-rankings)。
 
 ---
 
