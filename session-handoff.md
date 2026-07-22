@@ -5,7 +5,43 @@
 
 ---
 
-## ▶▶▶ 새 세션 START HERE (2026-07-22 — ★신규 도구/UX + 대회 포스팅 최신성 감사)
+## ▶▶▶ 새 세션 START HERE (2026-07-22 밤 — ★★ 번체(zh-hant·대만) 트랙 신설 + 족보 1편 배포. 다음 = 규칙부터 순서대로)
+
+> ### 🚀 이 작업만 이어가려면 (한 줄)
+> **`docs/zh-hant-plan.md` 읽고 번체 트랙 다음 순서(`texas-holdem-rules-for-beginners`)부터 이어서 진행해.** (플랜·진행트래커·워크플로우·용어·구조규칙 전부 그 문서에 있음)
+>
+> ### 배경 (왜 번체인가)
+> 중국어 SEO 리서치(6에이전트 병렬) 결론: **구글에서 중국어권 = 번체·대만/홍콩**(본토는 구글 차단, 도달 불가). 현재 `/zh/`는 **100% 간체**라 구글 미도달 시장을 최적화 중 → **번체 신규 트랙 `/zh-hant/`를 병행 구축**(간체 zh는 그대로 둠). 사용자 확정: 파일럿 없이 **필라 순서대로 쭉 진행**. 상세 = 메모리 [[chinese-seo-traditional-taiwan-first]].
+>
+> ### ✅ 이번 세션 완료 (번체)
+> - **인프라**: `zh-hant` 로케일 신설 — `lib/intl.ts`(SECONDARY_LOCALES + OG/HTML_LANG/POST_LABELS/CHROME/NAV 6맵) · `lib/posts-zh-hant/` · `lib/intl-posts.ts` · `app/zh-hant/**`(3라우트) · `globals.css` CJK 줄바꿈(`[lang="zh-hant"]`). hreflang=**zh-Hant**, og=zh_TW. `scripts/check-intl-links.mjs` 정규식 하이픈 로케일 지원.
+> - **족보 1편 배포** `e9dcf26`: `/zh-hant/blog/holdem-hand-rankings`. EN 마스터 재저작 + 대만 실측구조. **적대적 대만 네이티브 검수로 §13 오류 1건 잡아 수정**(練習3 "A→四條K" 오류).
+> - **문서**: `docs/zh-hant-plan.md`(플랜+트래커) · `docs/translation-terms-zh-hant.md`(용어브리프) · `docs/zh-hant-search-behavior-report.md`(검색행태 리서치).
+>
+> ### ⏭️ 다음 (번체, 순서대로) — `docs/zh-hant-plan.md §5 트래커` 기준
+> #2 `texas-holdem-rules-for-beginners`(규칙) → #3 `holdem-probability` → #4 `holdem-starting-hands-chart` → #5 `holdem-position-play` → #6 `holdem-pot-odds` → #7 `holdem-glossary` → #8 `holdem-strategy` → #9 `holdem-tournament` → 이후 클러스터.
+>
+> ### 📋 편당 워크플로우 (필수·건너뛰기 금지)
+> 1. **현지 구글글 3편 정독**(WebFetch) + **rakko**(`headline`=상위 H2골격, `suggest-keywords`, `co-occurrence`) + **WebSearch** SERP/경쟁 실측 → 용어·구조 분석 (`docs/translation-terms-zh-hant.md`에 축적)
+> 2. **소스 = EN 마스터**(`lib/posts-en/<slug>.ts`) 재저작(직역 X)
+> 3. **대만 실측 구조**: 【태그】+시간약속(5分鐘/一次看) 제목 · **명사형 토픽 H2** · **질문은 `常見問題 FAQ` 블록에만**(영어식 질문형 H2 금지) · 中(英)병기 · 족보=번호리스트 · 롱폼. §13 핸드계산 **불변**(EN 복사·재계산X, 단 용어가 의미 깨는지 확인)
+> 4. **적대적 대만 네이티브 검수**(Agent, "대만 현지 포커 전문가" 페르소나) → 🔴 수정
+> 5. 빌드→커밋→푸시(글별 자동배포)→트래커+WORKLOG 갱신. **필라 끝날 때마다 보고.**
+>
+> ### ⚠️ 함정/주의
+> - **zh-hant 내부 블로그 링크는 반드시 `/zh-hant/blog/<슬러그>` + 대상 실존**(check-intl-links가 이제 검증). 첫 글은 형제글이 없어 **내부 블로그 링크 0개** — 클러스터 쌓이면 **링크 복원 패스**로 EN parity 맞출 것([[translation-link-structure-equals-en]]).
+> - 이미지는 18언어 공용(같은 경로, alt만 번체). 카드표기 **10**(T 금지)·무늬기호.
+> - 모델분담 [[translation-model-roles-workflow]]: 번역·QA=Opus(재계산X), §13검증은 EN 1회.
+>
+> ### 🎬 별건 대기 (놓치지 말 것)
+> **레인지 영상 임베드** — ID `BdHjSUDoBow`, **2026-07-23 16:00 KST 예약공개**(그 전 비공개). 공개 후 `/blog/holdem-range-meaning` "실전 사례" 섹션 상단에 리드문+`:::youtube[BdHjSUDoBow]:::` 삽입(KO만+VideoObject). 메모리 [[range-video-embed-pending]].
+>
+> ### 그 외 이번 세션 완료(배포됨)
+> - 블러핑 글 `d9b3276`: 붓터치 하이라이트 남발(7문장) 정리 + 인라인 썸네일 링크 2개(규칙 누락 지적 반영).
+> - 홈 "이번 주 인기글" `66d956e`: 블러핑 글 1번 고정 + 커뮤니티 채팅글 제외(`getTrending` type≠community + TRENDING_PIN_SLUG).
+> - 레인지 글 `c4430dc`: "실전 사례 — 안토니우스 vs 무스타포프 바텀페어 히어로콜" 섹션 신설(영상팀 리서치 `Downloads/유튜브/포스팅_강화자료.md` Hand B) + 블러핑↔레인지 상호링크.
+
+## ▶▶▶ (이전) START HERE (2026-07-22 — ★신규 도구/UX + 대회 포스팅 최신성 감사)
 
 > **오늘 한 일(2026-07-22)**:
 > 1. **`/ranking`·`/en/ranking` 정직 리팩터** — 거짓 "직접 검증"·죽은링크·가짜별점 제거 + 정확 정보(웹검증)·실제 공식링크(nofollow)·안전기준·먹튀경고·책임게임(1336)·FAQ스키마. EN은 글로벌 프레이밍(BeGambleAware)·한국전용자산 제외. (관련 [[seo-tool-vs-blog-cannibalization]])
