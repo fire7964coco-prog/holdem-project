@@ -5,7 +5,21 @@
 
 ---
 
-## ▶▶▶ 새 세션 START HERE (2026-07-20 심야 — ★★★★JA glossary 6/6 + card-counting 완주 → **JA 42/42 = EN 마스터 전체 완결**, 다음 = 다른 언어 재경화 or 마케팅)
+## ▶▶▶ 새 세션 START HERE (2026-07-22 — ★신규 도구/UX + 대회 포스팅 최신성 감사)
+
+> **오늘 한 일(2026-07-22)**:
+> 1. **`/ranking`·`/en/ranking` 정직 리팩터** — 거짓 "직접 검증"·죽은링크·가짜별점 제거 + 정확 정보(웹검증)·실제 공식링크(nofollow)·안전기준·먹튀경고·책임게임(1336)·FAQ스키마. EN은 글로벌 프레이밍(BeGambleAware)·한국전용자산 제외. (관련 [[seo-tool-vs-blog-cannibalization]])
+> 2. **승률 시뮬레이터 신설 `/win-rate-quiz`** — 2~4인 멀티웨이, 카드 공개마다 각자 실제 승률(플랍/턴/리버 완전열거·프리플랍 MC 100k), 오벌 포커테이블 UI, 현재 족보/드로우 라벨. §13 독립검증(score5fast≡score5 259만조합 전수·AA vs KK 82.6%·멀티웨이 스플릿). 노출: 나브 🃏퀴즈 드롭다운·푸터·홈 사이드바/피드·채팅칩·/ranking. 사이트맵 등록.
+>    - 엔진: `app/win-rate-quiz/_equity.ts`. 다음 진화 후보(논의됨): 핸드 vs **레인지** / 팟오즈 콜폴드 결정(벤치마크 Equilab·ThinkGTO·pokeroddsiq).
+> 3. **커스텀 스킬 3개**(`.claude/skills/`: review-post·translate-pillar·new-post) + **Playwright 브라우저 MCP**(`.mcp.json`) 신설 — ★재시작 후 활성화(승인 프롬프트). 미커밋.
+> 4. **대회 포스팅 최신성 감사**(부재중 자율): WSOP·APT 인천·APPT·APT 제주 4편 웹현행화 + 적대적 팩트체크 에이전트 2회. **적대적 검수가 실오류 2건 방지**(APT제주 종료일 10/7·WSOP ME파이널 8/3~5 진행중). WORKLOG 2026-07-22 상세.
+>
+> ### ▶▶ 다음 세션 후보
+> - **(A) 승률 시뮬레이터 다음 기능**: 핸드 vs 레인지 / 팟오즈 결정 모드(사용자 관심).
+> - **(B) 대회 포스팅 잔여**: how-to글(schedule-check·buy-in·tax·how-to-enter) + EN 이벤트가이드(korea-marathon·wpt-australia·ept-barcelona) 동기화. APPT ME바이인(180만)·GTD·APT제주 ME는 공식 미발표 → 발표 시 재확인.
+> - **(C) 다른 구언어 재경화**(es·pt·de·zh·id) · **(D) 마케팅**(유튜브 임베드 `docs/video-embed-playbook.md`).
+
+## ▶▶▶ (이전) START HERE (2026-07-20 심야 — ★★★★JA glossary 6/6 + card-counting 완주 → **JA 42/42 = EN 마스터 전체 완결**, 다음 = 다른 언어 재경화 or 마케팅)
 
 > ✅✅✅ **JA 완결.** rankings 6 + odds 6 + strategy 8 + rules 6 + tournament 9 + **glossary 6 + card-counting 1** = **JA 42/42 = EN 마스터 유니버스 전체**. 잔여 부채 없음.
 > - **이번 세션 glossary 7편**: glossary `97cd7e2` · straddle `2c9204a` · rake `fce2a55` · fish `17e6fe6` · cooler `936adfa` · bad-beat `2ca9874` · card-counting `9743817`. 검수반영 `22100f3`.
