@@ -4,6 +4,7 @@ import { EN_POSTS } from "./posts-en";
 import { JA_POSTS } from "./posts-ja";
 import { ES_POSTS } from "./posts-es";
 import { ZH_POSTS } from "./posts-zh";
+import { ZH_HANT_POSTS } from "./posts-zh-hant";
 import { AR_POSTS } from "./posts-ar";
 import { PT_POSTS } from "./posts-pt";
 import { ID_POSTS } from "./posts-id";
@@ -31,6 +32,7 @@ export const POSTS_BY_LOCALE: Record<SecondaryLocale, Post[]> = {
   ja: JA_POSTS,
   es: ES_POSTS,
   zh: ZH_POSTS,
+  "zh-hant": ZH_HANT_POSTS,
   ar: AR_POSTS,
   pt: PT_POSTS,
   id: ID_POSTS,

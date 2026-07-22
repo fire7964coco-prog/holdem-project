@@ -3,6 +3,14 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-22 (★ 번체(zh-hant) 트랙 신설 + 족보 1편 배포 — 대만 타깃)
+
+> 중국어 SEO 리서치(6에이전트) 결론: 구글 중국어권=번체/대만(본토는 구글차단). 현 /zh/는 100% 간체 → 번체 신규 트랙 병행. 플랜=`docs/zh-hant-plan.md`, 용어브리프=`docs/translation-terms-zh-hant.md`.
+- **인프라**: `zh-hant` 로케일 신설(intl.ts 6맵 + intl-posts + `app/zh-hant/**` 라우트 + CJK 줄바꿈 CSS). hreflang=zh-Hant, og=zh_TW. check-intl-links.mjs 정규식 하이픈 로케일 지원(`[a-z]{2}(?:-[a-z]+)?`)으로 수정.
+- **족보 `holdem-hand-rankings`**: EN 마스터 재저작 → 대만 실측 구조(명사형 H2·질문은 FAQ 블록·中(英)병기·번호리스트·【태그】제목). 현지 3편 정독(taiwanrounders/sixpoker/yangbear)+rakko 리서치 선행.
+- **적대적 대만 네이티브 검수**: ★🔴 §13 오류 1건 포착·수정 — 練習3 "A配上最後那張K就是四條K"(공牌 K 3장뿐→A는 四條 불가) → "對手握有第四張K…就是四條K"로 정정. + 連套(set) 台灣용어 보강·時間銀行→평이화·三對 FAQ 정리.
+- 발행: 57 blog + **408 intl**(zh-hant 1편). 다음=규칙(texas-holdem-rules-for-beginners) 순서대로. 형제글 링크 복원 패스는 클러스터 완성 후.
+
 ## 2026-07-22 (레인지 글 실전 사례 보강 — 안토니우스 vs 무스타포프 히어로콜 + 블러핑↔레인지 상호링크)
 
 > 영상팀 리서치(`Downloads/유튜브/포스팅_강화자료.md`·`영상임베드_요청.md`, 프레임 단위 검증) 기반 보강.

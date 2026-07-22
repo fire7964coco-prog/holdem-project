@@ -3,7 +3,7 @@
  * 한국어는 루트(/)에 그대로 두고, 추가 언어만 /{locale}/... 로 발행한다.
  * 새 언어 추가 = 아래 SECONDARY_LOCALES + CHROME 에 항목만 추가.
  */
-export const SECONDARY_LOCALES = ["en", "ja", "es", "zh", "ar", "pt", "id", "ms", "vi", "hi", "de", "tr", "fr", "ru", "it", "pl", "th", "fa", "sw", "bn", "ro", "fil", "uk", "he"] as const;
+export const SECONDARY_LOCALES = ["en", "ja", "es", "zh", "zh-hant", "ar", "pt", "id", "ms", "vi", "hi", "de", "tr", "fr", "ru", "it", "pl", "th", "fa", "sw", "bn", "ro", "fil", "uk", "he"] as const;
 export type SecondaryLocale = (typeof SECONDARY_LOCALES)[number];
 
 export function isSecondaryLocale(value: string): value is SecondaryLocale {
@@ -29,6 +29,7 @@ export const OG_LOCALE: Record<SecondaryLocale, string> = {
   ja: "ja_JP",
   es: "es_ES",
   zh: "zh_CN",
+  "zh-hant": "zh_TW",
   ar: "ar_AR",
   pt: "pt_BR",
   id: "id_ID",
@@ -57,6 +58,7 @@ export const HTML_LANG: Record<SecondaryLocale, string> = {
   ja: "ja",
   es: "es",
   zh: "zh-Hans",
+  "zh-hant": "zh-Hant",
   ar: "ar",
   pt: "pt-BR",
   id: "id",
@@ -184,6 +186,24 @@ export const POST_LABELS: Record<SecondaryLocale, PostLabels> = {
     blogTitle: "德州扑克策略博客",
     blogIntro:
       "实用攻略：不只讲什么牌赢什么牌，更讲清原因，以及在牌桌上怎么用。",
+  },
+  "zh-hant": {
+    contents: "目錄",
+    quickAnswer: "一句話答案",
+    category: "新手指南",
+    readSuffix: "閱讀",
+    published: "發布",
+    updated: "更新",
+    prev: "上一篇",
+    next: "下一篇",
+    related: "相關文章",
+    share: "分享這篇文章",
+    copy: "複製連結",
+    copied: "已複製！",
+    back: "返回全部文章",
+    blogTitle: "德州撲克策略部落格",
+    blogIntro:
+      "實用攻略：不只講什麼牌贏什麼牌，更講清楚原因，以及在牌桌上怎麼用。",
   },
   ar: {
     contents: "المحتويات",
@@ -604,6 +624,20 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     disclaimer:
       "本网站仅供信息参考，不鼓励任何真实赌博。仅限18岁以上人士。",
   },
+  "zh-hant": {
+    skip: "跳到內文",
+    brand: "HoldemMaster",
+    blogLabel: "部落格",
+    menuOpen: "開啟選單",
+    menuClose: "關閉選單",
+    koLabel: "한국어",
+    tagline:
+      "清晰實用的德州撲克策略。不只告訴你什麼牌贏什麼牌，更講清楚背後的原因。",
+    contentHeading: "內容",
+    languageHeading: "語言",
+    disclaimer:
+      "本網站僅供資訊參考，不鼓勵任何真實賭博。僅限18歲以上人士。",
+  },
   ar: {
     skip: "تخطَّ إلى المحتوى",
     brand: "HoldemMaster",
@@ -892,6 +926,7 @@ export const NAV_HOME_FEED: Record<SecondaryLocale, string> = {
   ja: "ホームフィード",
   es: "Feed Inicio",
   zh: "首页动态",
+  "zh-hant": "首頁動態",
   ar: "الصفحة الرئيسية",
   pt: "Feed Início",
   id: "Feed Beranda",
@@ -919,6 +954,7 @@ export const NAV_CTA: Record<SecondaryLocale, string> = {
   en: "Community →",
   ja: "コミュニティ →",
   zh: "社区 →",
+  "zh-hant": "社群 →",
   es: "Comunidad →",
   de: "Community →",
   ar: "المجتمع →",

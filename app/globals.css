@@ -221,7 +221,9 @@
 [lang="ja"] .blog-prose,
 [lang="ja"] .blog-prose :is(p, li, h2, h3, td, th, div, span, strong, a, mark),
 [lang="zh"] .blog-prose,
-[lang="zh"] .blog-prose :is(p, li, h2, h3, td, th, div, span, strong, a, mark) {
+[lang="zh"] .blog-prose :is(p, li, h2, h3, td, th, div, span, strong, a, mark),
+[lang="zh-hant"] .blog-prose,
+[lang="zh-hant"] .blog-prose :is(p, li, h2, h3, td, th, div, span, strong, a, mark) {
   word-break: normal;
   overflow-wrap: anywhere;
   line-break: strict;

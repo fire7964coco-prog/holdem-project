@@ -32,7 +32,7 @@ for (const locale of SECONDARY_LOCALES) {
       const href = m[1];
 
       // 블로그 링크만 검사 대상. (/calculator 등 공용 유틸 페이지는 통과)
-      const blogMatch = href.match(/^\/(?:([a-z]{2})\/)?blog\/(.+)$/);
+      const blogMatch = href.match(/^\/(?:([a-z]{2}(?:-[a-z]+)?)\/)?blog\/(.+)$/);
       if (!blogMatch) continue;
 
       const linkLocale = blogMatch[1]; // undefined면 언어 코드 없는 /blog/...
@@ -78,7 +78,7 @@ for (const locale of SECONDARY_LOCALES) {
   for (const post of POSTS_BY_LOCALE[locale]) {
     for (const m of post.content.matchAll(LINK_RE)) {
       // 슬러그는 공백(마크다운 title "..." 앞)·#앵커·?쿼리·) 전까지만.
-      const bm = m[1].match(/^\/(?:([a-z]{2})\/)?blog\/([^#?)\s]+)/);
+      const bm = m[1].match(/^\/(?:([a-z]{2}(?:-[a-z]+)?)\/)?blog\/([^#?)\s]+)/);
       if (!bm) continue;
       const linkLocale = bm[1];
       const targetSlug = bm[2].replace(/\/+$/, "");
