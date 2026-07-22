@@ -3,6 +3,14 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-22 (번체(zh-hant) #2 규칙 배포 — texas-holdem-rules-for-beginners)
+
+> 번체 트랙 필라 #2. 플랜 `docs/zh-hant-plan.md §5` 순서대로. 현지 리서치는 `docs/translation-terms-zh-hant.md §7-A`에 축적(재사용).
+- **리서치**: rakko `headline`(德州撲克規則 상위 12) 실측 — 상위 H1 공식·H2 골격·中(英)병기 용어 확정(taiwanrounders·Natural8·fishpoker888·monsterstack·Wikipedia). 娛樂城 상위 다수=얇은稿 → §13·롱폼 차별화 기회.
+- **`texas-holdem-rules-for-beginners`**: EN 마스터 재저작 → 대만 실측(명사형/짧은훅 H2·질문 `常見問題 FAQ` 격리·中(英)병기·翻牌前(Pre-Flop)/翻牌/轉牌/河牌·底牌/公牌·大盲小盲·過牌/跟注/加注/蓋牌/全下). **신규 winnable 섹션 `德州撲克在台灣合法嗎？撲克室與錦標賽`**(monsterstack 상위 앵글, 합법성 신중 표현) + FAQ `梭哈≠德州撲克`(沙蟹/Stud) 오개념 정정.
+- **적대적 대만 네이티브 검수**: §13 전항 통과(투페어 A/7·葫蘆88844·보드 로열플러시·팟오즈 6:1/14%·2·4법칙·1326/169·100BB·기率표·단挑 대調·輪子). 🟠2 수정 — ①합법성 "多次認定偏競技" 과대표현→"실무 견해 불일치·개별 賭博 인정 사례도 있음" 균형화 ②확률표 오독방지 "機率越高＝越常見＝牌型越弱" 문구 추가. 🟢 정밀화(梭哈=港式沙蟹/Seven-Card Stud·讀牌면·打錯).
+- 링크는 hand-rankings만(형제 클러스터 배포 후 EN parity 복원). 발행: 57 blog + **408 intl**(zh-hant 2편). 다음=#3 `holdem-probability`.
+
 ## 2026-07-22 (★ 번체(zh-hant) 트랙 신설 + 족보 1편 배포 — 대만 타깃)
 
 > 중국어 SEO 리서치(6에이전트) 결론: 구글 중국어권=번체/대만(본토는 구글차단). 현 /zh/는 100% 간체 → 번체 신규 트랙 병행. 플랜=`docs/zh-hant-plan.md`, 용어브리프=`docs/translation-terms-zh-hant.md`.

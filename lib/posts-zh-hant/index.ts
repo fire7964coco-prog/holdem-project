@@ -1,5 +1,6 @@
 import type { Post } from "../posts";
 import { POST as holdemHandRankings } from "./holdem-hand-rankings";
+import { POST as texasHoldemRulesForBeginners } from "./texas-holdem-rules-for-beginners";
 
 /**
  * 중국어 번체(zh-hant · 대만/홍콩) 블로그 포스트.
@@ -10,7 +11,9 @@ import { POST as holdemHandRankings } from "./holdem-hand-rankings";
 export const ZH_HANT_POSTS: Post[] = [
   // Hand Rankings 필라
   holdemHandRankings,
-  // 다음: texas-holdem-rules-for-beginners → holdem-probability → ...
+  // Rules 필라
+  texasHoldemRulesForBeginners,
+  // 다음: holdem-probability → holdem-starting-hands-chart → ...
 ];
 
 const ZH_HANT_SLUGS = new Set(ZH_HANT_POSTS.map((p) => p.slug));

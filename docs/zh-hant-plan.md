@@ -61,7 +61,7 @@
 
 ### 필라 (대만 검색수요 우선순위)
 1. [x] ✅ `holdem-hand-rankings` — 牌型大小. 현지 3편 정독+rakko / 대만 네이티브 적대검수(🔴1 §13 練習3 "A로 四條K" 오류 수정 + 連套 용어보강) / 배포. ⚠️형제글 링크는 클러스터 완성 후 복원.
-2. [ ] ⬜ `texas-holdem-rules-for-beginners` — 德州撲克規則
+2. [x] ✅ `texas-holdem-rules-for-beginners` — 德州撲克規則. EN 재저작+대만 실측구조(명사형 H2·中英병기·질문 FAQ격리) / **신규 winnable 섹션 `德州撲克在台灣合法嗎？撲克室與錦標賽`**(monsterstack 상위 앵글) + `梭哈≠德州撲克` FAQ / 링크는 hand-rankings만(형제글 클러스터 후 복원) / 적대적 대만 네이티브 검수: §13 전항 통과, 🟠2 수정(합법성 과대표현 완화·확률표 오독방지) + 🟢 정밀화(梭哈=沙蟹/Stud·讀牌面). 배포.
 3. [ ] ⬜ `holdem-probability` — 機率
 4. [ ] ⬜ `holdem-starting-hands-chart` — 起手牌
 5. [ ] ⬜ `holdem-position-play` — 位置
