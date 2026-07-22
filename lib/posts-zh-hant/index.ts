@@ -5,6 +5,7 @@ import { POST as holdemProbability } from "./holdem-probability";
 import { POST as holdemStartingHandsChart } from "./holdem-starting-hands-chart";
 import { POST as holdemPositionPlay } from "./holdem-position-play";
 import { POST as holdemPotOdds } from "./holdem-pot-odds";
+import { POST as holdemGlossary } from "./holdem-glossary";
 
 /**
  * 중국어 번체(zh-hant · 대만/홍콩) 블로그 포스트.
@@ -25,7 +26,9 @@ export const ZH_HANT_POSTS: Post[] = [
   holdemPositionPlay,
   // Odds/팟오즈 필라
   holdemPotOdds,
-  // 다음: holdem-glossary → holdem-strategy → holdem-tournament → 클러스터
+  // Glossary/술어 필라
+  holdemGlossary,
+  // 다음: holdem-strategy → holdem-tournament → 클러스터
 ];
 
 const ZH_HANT_SLUGS = new Set(ZH_HANT_POSTS.map((p) => p.slug));

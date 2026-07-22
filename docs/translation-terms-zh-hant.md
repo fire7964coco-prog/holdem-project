@@ -185,4 +185,20 @@
 **H2 골격 (명사형/짧은훅 — 실측):** `底池賠率是什麼？` · `如何計算底池賠率？(3步)` · `底池賠率範例／計算範例` · `比率 vs 百分比` · `何謂隱含賠率？` · `何謂有效籌碼？` · `什麼是補牌數？` · `四二法則` · `反補牌和擋牌` · `有獲利／不獲利的底池賠率範例` · `常見問題 FAQ`.
 - 상위 다수 娛樂城/제휴稿(andypoker·happypoker·娛樂城) → §13 정확 수치·깔끔한 표로 차별화.
 
-### 7-E. (다음 필라 착수 시 이 아래 계속 축적)
+### 7-E. 術語(용어집) 필라 (`holdem-glossary`, 2026-07-22 — rakko + WebSearch 4곳)
+> 경쟁강도: `德州撲克術語` **seoDifficulty 19(낮음·winnable)**·volume 20. 롱테일 `~英文`10·`~limp`10·`~donk`0·`~jam`0. 상위=taiwanrounders `術語大全`(48견출·中英對照 지배)·pokertaiwan·pokerdomain·pokerfans·winpokercouple·撲克大叔·紅龍. **전부 中英문對照 카테고리형**(位置/翻牌階段/下注/牌型강도/玩家類型/錦標賽/數據籌碼/其他).
+
+**★대만 권위 용어은행 (WebSearch 4곳 검증 — 신규 포스팅 재사용 핵심):**
+- **玩家類型**: 魚(Fish)·鯊魚(Shark)·鯨魚(Whale)·跟注機器/跟注站(Calling Station)·常客(Reg)·磨石/穩定盈利型(Grinder)·岩石/石頭(Nit)·驢子(Donkey)·瘋子/狂人(Maniac)·LAG/TAG(라틴, 鬆凶/緊凶)·肥羊/目標(Mark).
+- **牌型·보드**: 暗三條(Set)·明三條(Trips)·堅果/最大牌(Nuts)·踢腳牌(Kicker)·葫蘆(Full House)·四條/鐵支(Quads)·卡順/買中洞(Gutshot)·兩頭順/活端順(Open-ended)·後門/送尾(Backdoor)·送尾(Runner-runner)·輪子(Wheel)·百老匯(Broadway)·超牌/高張(Overcard)·同花連張(Suited connectors)·口袋對(Pocket pair)·超對(Overpair)·頂對(Top pair)·成牌(Made hand)·聽牌(Draw).
+- **베팅**: 過牌(Check)·下注(Bet)·跟注(Call)·加注(Raise)·蓋牌(Fold)·全下(All-in)·跛入(Limp)·開池加注(Open)·3-bet/4-bet(라틴)·持續下注(C-bet)·領打(Donk bet)·價值下注(Value bet)·詐唬/半詐唬(Bluff/Semi-bluff)·過牌加注(Check-raise)·最小加注(Min-raise)·全下(Jam/Shove)·秒跟(Snap call)·英雄跟注/抓詐(Hero call).
+- **상황·스탯·에티켓**: 攤牌(Showdown)·蓋牌(Muck)·分池/平分底池(Chop)·搓牌/slow roll(라틴, 故意慢秀)·上頭/傾斜(Tilt)·破綻(Tell)·期望值EV·入池率/自願入池率(VPIP)·翻前加注率(PFR)·激進係數(AF, TW 추가)·GTO(라틴, 納許均衡)·範圍(Range)·冷牌組(Cold deck)·分兩次發(Run it twice)·單挑(Heads-up)·搶先加注(RFI)·潑池(Splash the pot).
+- **돈·게임**: 盲注(Blinds)·底注(Ante)·底池(Pot)·邊池(Side pot)·籌碼量(Stack)·資金/本金(Bankroll)·買入(Buy-in)·抽水(Rake)·抽水返還(Rakeback)·盲抓/抓頭(Straddle)·現金桌(Cash game)·無限注NLH/限注Limit·PLO·錦標賽(Tournament)·無重買/freezeout·保證獎池GTD·手手制(Hand-for-hand)·賞金/擊殺(Bounty)·SNG/MTT/ICM(라틴, 獨立籌碼模型).
+- **혼동쌍(EN 8쌍)**: 過牌 vs 跟注·盲注 vs 底注·暗三條 vs 明三條·冷牌(Cooler) vs 爆冷(Bad Beat)·價值下注 vs 詐唬·底池賠率 vs 隱含賠率·VPIP vs PFR·3-bet 계산(盲注=1st bet).
+
+**★대만 특화 winnable(EN에 없음 — 신규 추가 후보):**
+- **水上/水下**: 局抽(session rake) 모델에서 이겨서 플러스=水上(승리분 10% 抽水), 져서 마이너스=水下(무抽水). taiwanrounders FAQ 포착 → FAQ/용어에 편입.
+- **1bb 是什麼**·**UTG 是什麼**: taiwanrounders FAQ 상위 질문.
+- cooler/bad beat/tilt/slow roll는 라틴 유지(중문 병기).
+
+### 7-F. (다음 필라 착수 시 이 아래 계속 축적)

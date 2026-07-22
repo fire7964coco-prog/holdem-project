@@ -3,6 +3,14 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-22 (번체(zh-hant) #7 술어 배포 — holdem-glossary)
+
+> 번체 트랙 필라 #7(術語). ★사용자 지시로 **WebSearch 4곳 + rakko 경쟁강도** 분석 후 작성(정확도 우선). 용어은행 `docs/translation-terms-zh-hant.md §7-E`.
+- **리서치**: rakko headline(德州撲克術語 상위 8, taiwanrounders 術語大全 48견출 지배) + `suggest-keywords` 경쟁강도(seoDifficulty **19 낮음/winnable**, vol 20; 롱테일 ~英文/limp/donk/jam) + **WebSearch 4곳**으로 대만 권위 용어 표기 전수 검증(pokertaiwan·pokerdomain·winpokercouple·撲克大叔·紅龍·threads).
+- **`holdem-glossary`**: EN 마스터 재저작, 6카테고리 中英 병기 용어표(90+). WebSearch 검증 용어: 魚/鯊魚/鯨魚·跟注機器·石頭Nit·暗三條/明三條·堅果/踢腳牌·卡順/兩頭順·後門/送尾·盲抓Straddle·跛入Limp·入池率VPIP·翻前加注率PFR·激進係數AF·獨立籌碼模型ICM. **★대만 특화 winnable `水上/水下`(局抽 승패 용어) 신규 편입 + FAQ**(EN에 없음). 링크=zh-hant 존재 6편 전부.
+- **적대적 대만 네이티브 검수**: **§13 전 정의 통과**(暗三條/明三條 做법·卡順4補·兩頭順8補·輪子/百老匯·堅果·3-bet 계산·VPIP≥PFR). **水上/水下 정의 정확 확인**(가장 도지). 🔴 CO 정정(`關煞位`은 대만 실사용 아님→영문 `CO（Cutoff／切位）` 주도)·🟠 Nit(石頭 주도)·현금vs錦標 앵커 미스매치 텍스트화. 繁簡·죽은링크 0. ★교훈: **CO/HJ/LJ는 영문 표제어 주도**(다음 strategy/tournament 편에 적용).
+- 발행: 57 blog + **413 intl**(zh-hant 7편). 다음=#8 `holdem-strategy`.
+
 ## 2026-07-22 (번체(zh-hant) #6 팟오즈 배포 — holdem-pot-odds)
 
 > 번체 트랙 필라 #6(底池賠率). 리서치 `docs/translation-terms-zh-hant.md §7-D`. ★사용자 지시로 **WebSearch로 대만 실제 설명 문구 겹침 반영**.

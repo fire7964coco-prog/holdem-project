@@ -66,7 +66,7 @@
 4. [x] ✅ `holdem-starting-hands-chart` — 起手牌. EN 재저작+대만 실측(起手牌·口袋對·同花/不同花·投機牌·跛入limp·GTO翻前圖·劫機位·堅果 용어, 명사형 H2·질문 FAQ격리). 링크=hand-rankings+probability+rules(3편 존재)+/hand-chart·/quiz 도구. :::rangechart:::·:::quiz::: 디렉티브 유지. 적대적 대만 네이티브 검수: §13 전 수치 통과(169=13+78+78·AA85%·AK五五開·위치범위·set11.8%·同花6.5%·7-2). 🟠 HJ→MP 정합·랭킹 면책문구 추가. "1比8.5"는 확률형(=11.8%) 유지(검수관 배당형 착오). 배포.
 5. [x] ✅ `holdem-position-play` — 位置. EN 재저작+대만 실측(有利位置IP/不利位置OOP·勝率實現·偷盲·反偷·過牌加注·領打·擠壓·阻擋牌·抓詐牌·關煞位·低/高劫持位 용어, 짧은훅/명사형 H2·질문 FAQ격리). 링크=starting-hands-chart+probability+hand-rankings+rules(4편 존재). 적대적 대만 네이티브 검수: **§13 전 수치·牌例 통과**(K♥Q♥ 2핸드·8♥7♥ 9補·A♦9♦ 건조보드·실현율·개牌범위 遞增·c-bet빈도·SB/BB 구분·偷盲2.2-2.5x·SB 4x). 🟠 數據庫→資料庫·對映→對應(대만 현지어). 배포.
 6. [x] ✅ `holdem-pot-odds` — 底池賠率. EN 재저작+대만 실측(rakko headline + **WebSearch 실제 문구 겹침 반영**: 比率 3 比 1·翻牌圈/轉牌圈·反補牌/髒補牌·抓詐·四二法則·隱含賠率/反向隱含賠率·有效籌碼 용어). 명사형/짧은훅 H2·질문 FAQ격리. 링크=probability+starting-hands-chart+position-play+hand-rankings(4편). 적대적 대만 네이티브 검수: **§13 전 수치 통과**(비율표·下注尺寸표·聽牌표·四二·실전핸드 A♥K♥). 🟠 실전핸드 $100/$150 프레이밍 명시화. 배포.
-7. [ ] ⬜ `holdem-glossary` — 術語(TW 高수요)
+7. [x] ✅ `holdem-glossary` — 術語. ★사용자 지시로 **WebSearch 4곳 + rakko 경쟁강도**(seoDifficulty 19 winnable) 분석 후 작성. 대만 권위 용어 中英 병기(魚/鯊魚/鯨魚·暗三條/明三條·堅果/踢腳牌·卡順/兩頭順·跟注機器·盲抓·跛入·입池率VPIP·獨立籌碼模型ICM). **대만 특화 winnable `水上/水下`(局抽 승패) 신규 편입 + FAQ**. 용어은행 `§7-E` 축적. 링크=존재 6편 전부. 적대적 대만 네이티브 검수: **§13 전 정의 통과·水上水下 정확 확인**. 🔴 CO(關煞位→영문주도 `CO/切位`)·🟠 Nit(石頭주도)·현금vs錦標 앵커 정정. ★교훈: CO/HJ/LJ는 영문 표제어 주도(대만 실사용). 배포.
 8. [ ] ⬜ `holdem-strategy` — 策略 로드맵
 9. [ ] ⬜ `holdem-tournament` — 錦標賽
 
