@@ -224,4 +224,27 @@
 
 **★winnable 신규 FAQ 후보(경쟁사 실측 gap):** `什麼是剝削(Exploitative)?`(monsterstack)·`資金控管怎麼做?`(sixpoker)·`德州撲克靠運氣還是實力?`(실력vs運 大검색)·`GTO 是什麼?`·`怎麼變強/提升勝率?`·`緊兇(TAG)是什麼?`. **H2**: 명사형/決策형(位置·起手牌·加注或蓋牌·持續下注·何時放手) + 技巧/漏洞 표.
 
-### 7-G. (다음 필라 착수 시 이 아래 계속 축적)
+### 7-G. 錦標賽 필라 (`holdem-tournament`, 2026-07-22 — rakko)
+> 상위=allengoaround `賽事類型/流程`·taiwanrounders `台灣去哪打/北中南撲克協會`(CTP·Ace8·6Bet 場館導覽)·twreporter `大學생 열풍`·Wikipedia WSOP. **★대만 SERP는 EN과 다름**: ①合法性(suggest `錦標賽 合法`) ②去哪打/撲克協會 가 대만 특화 winnable.
+
+**錦標賽 용어 (대만):**
+| 개념 | 번체 |
+|---|---|
+| tournament/buy-in | `錦標賽／買入` |
+| blind structure/increase | `盲注結構／升盲` |
+| ante | `底注` |
+| starting stack | `起始籌碼` |
+| structure sheet | `結構表` |
+| bubble / ITM | `泡泡圈／錢圈（ITM）` |
+| final table | `決賽桌` |
+| short stack / push-fold | `短籌碼／全下(push-fold)` |
+| late reg/rebuy/add-on | `晚報名／重買／加購` |
+| satellite/bounty/PKO | `衛星賽／賞金賽(KO)／PKO` |
+| GTD/freezeout | `保證獎池(GTD)／無重買(freezeout)` |
+| hand-for-hand/min-cash/ICM | `手手制／最小獎金／獨立籌碼模型(ICM)` |
+| poker association/room | `撲克協會／撲克室`(台灣 합법 錦標賽 장소) |
+
+**★대만 winnable FAQ(경쟁사 실측 gap):** `德州撲克錦標賽在台灣合法嗎?`(합법 top suggest, #2 rules와 정합)·`台灣哪裡可以打德州撲克錦標賽?`(去哪打, taiwanrounders — ★특정 클럽명/요금 창작금지, 立案 撲克協會/撲克室 일반화). + EN FAQ(how money·luck/skill·ITM·late reg·PKO vs bounty).
+- ⚠️ 場館 가이드(CTP/Ace8 등 구체 클럽·요금·주소)는 시간민감·검증불가 → **일반화(台北台中高雄 立案 撲克協會)**, 구체명 미기재.
+
+### 7-H. (다음 필라 착수 시 이 아래 계속 축적)

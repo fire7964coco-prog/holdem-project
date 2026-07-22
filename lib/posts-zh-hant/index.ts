@@ -7,6 +7,7 @@ import { POST as holdemPositionPlay } from "./holdem-position-play";
 import { POST as holdemPotOdds } from "./holdem-pot-odds";
 import { POST as holdemGlossary } from "./holdem-glossary";
 import { POST as holdemStrategy } from "./holdem-strategy";
+import { POST as holdemTournament } from "./holdem-tournament";
 
 /**
  * 중국어 번체(zh-hant · 대만/홍콩) 블로그 포스트.
@@ -31,7 +32,9 @@ export const ZH_HANT_POSTS: Post[] = [
   holdemGlossary,
   // Strategy/전략 로드맵 필라
   holdemStrategy,
-  // 다음: holdem-tournament → 클러스터
+  // Tournament/토너먼트 필라
+  holdemTournament,
+  // ★필라 9/9 완주. 다음: 클러스터(rules/odds/strategy/tournament/glossary 클러스터)
 ];
 
 const ZH_HANT_SLUGS = new Set(ZH_HANT_POSTS.map((p) => p.slug));

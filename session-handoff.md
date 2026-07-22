@@ -19,7 +19,10 @@
 > - **문서**: `docs/zh-hant-plan.md`(플랜+트래커) · `docs/translation-terms-zh-hant.md`(용어브리프) · `docs/zh-hant-search-behavior-report.md`(검색행태 리서치).
 >
 > ### ⏭️ 다음 (번체, 순서대로) — `docs/zh-hant-plan.md §5 트래커` 기준
-> **✅ #2~#8 배포 완료**(2026-07-22). #2 rules · #3 probability · #4 starting-hands-chart · #5 position-play · #6 pot-odds · #7 glossary(水上/水下) · #8 `holdem-strategy`(EN 5-decisions 골격 + 대만 剝削/資金控管/技巧 winnable 흡수, §13 통과). #3~#6은 소급 winnable FAQ 보강 완료. 전부 적대적 대만 네이티브 검수 통과. → **다음 = #9 `holdem-tournament`(錦標賽, 마지막 필라)** → 이후 클러스터.
+> **✅✅✅ 번체 9개 필라 전부 완주**(2026-07-22). #1 hand-rankings · #2 rules · #3 probability · #4 starting-hands-chart · #5 position-play · #6 pot-odds · #7 glossary · #8 strategy · #9 `holdem-tournament`(錦標賽). #3~#6 소급 winnable FAQ 보강 완료. **전부 적대적 대만 네이티브 검수 §13 통과.**
+> ### ⏭️ 다음 = **클러스터** (`docs/zh-hant-plan.md §5 클러스터` 목록: 룰/확률/전략/토너먼트/용어·문화 클러스터). 클러스터 쌓이면서 **형제글 내부링크 복원 패스**로 EN parity 완성(현재 필라 9편은 서로 링크됨, cluster 글은 아직 텍스트).
+> ### ★워크플로우(확립): rakko headline+`suggest-keywords`(경쟁강도 seoDifficulty) + **WebSearch 여러 곳**(현지 실제 용어·문구·경쟁사 FAQ 실측) → winnable을 FAQ/H2에 정면 배치, 니어제로는 본문 흡수 → `docs/translation-terms-zh-hant.md §7`에 용어은행 축적 → 재저작(§13 불변·명사형 H2·질문 FAQ격리·中英병기) → 적대적 대만 네이티브 검수 → 빌드·커밋·자동배포.
+> ### 🟢 백로그(전 언어 공통): Day1 타임라인/체크리스트 등 EN 마스터 인라인 카드가 **다크테마 스타일**(rgba(255,255,255,.06) 등) → 현 크림/그린 라이트 테마에서 테두리 흐림. 크로스랭귀지 일괄 수정 태스크 후보(콘텐츠 아닌 스타일).
 > ★zh-hant 존재 글 7편(hand-rankings·rules·probability·starting-hands-chart·position-play·pot-odds·glossary). 신규 글 내부링크 EN parity 근접.
 > ★★리서치 워크플로우(사용자 확정): rakko headline + `suggest-keywords`(**경쟁강도 seoDifficulty 체크**) + **WebSearch 여러 곳(현지 실제 용어·문구 겹침 반영)** → `docs/translation-terms-zh-hant.md §7`에 용어은행 축적(재사용). ★CO/HJ/LJ는 **영문 표제어 주도**(關煞位=대만 실사용 아님, 글로서리 검수 교훈).
 > ★내부링크: zh-hant 존재 글이 늘수록(현재 hand-rankings·rules·probability 3편) 신규 글에서 링크 가능. 형제글 없는 것은 텍스트, 클러스터 후 복원.
