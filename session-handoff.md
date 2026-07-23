@@ -5,7 +5,40 @@
 
 ---
 
-## ▶▶▶ 새 세션 START HERE (2026-07-24 밤 — ★★★ 간체(zh) 42/42 경화 완결 + 용어 신마 현지화까지 완료)
+## ▶▶▶▶ 새 세션 START HERE (다음 작업 = ★★★ **es(스페인어) 42편 재경화** — 키워드는 lowfruits)
+
+> 읽는 순서: `CLAUDE.md` → 이 블록 → `.cursor/rules/posting.mdc` → (참고) 바로 아래 "간체 42/42 완결" 블록의 병렬 오케스트레이션 워크플로·§8 리서치 축적(방법론 그대로 재사용).
+
+### 🚀 한 줄
+**`lib/posts-es/*.ts`(스페인어 42편, card-counting 포함=zh 유니버스와 동수 풀패리티)를 현재 EN 마스터 기준으로 재경화한다.** 방법론은 방금 끝낸 간체(zh)·JA와 **동일**(클러스터 단위 순차 / 병렬 작가+적대적 스페인 네이티브 QA / tldr 2~3줄 / §13은 EN값 그대로 이식·재계산 금지). ★**단 하나 다른 점 = 키워드 리서치**: rakko는 JA·간체 전용이라 **es는 [[lowfruits-xlsx-parse-workflow]]로** 롱테일 난이도·경쟁을 판단한다(사용자 확정 2026-07-24).
+
+### 🔑 lowfruits 워크플로 (★es 핵심 차이점)
+- **사용자가 lowfruits xlsx export를 제공**(SERP Extractor 돌린 뒤 **Analysed only** export). 나는 파싱만.
+- Python 無 환경 → **PowerShell `Expand-Archive` + 정규식**으로 xlsx 파싱([[lowfruits-xlsx-parse-workflow]]에 컬럼인덱스·winnable 판정[LDA/weak-spot]·노이즈필터 상세).
+- 시드 = poker 앵커. **위치변형 필수**([[keyword-harvest-wildcard-positions]]: 트레일링만=blind spot, 넓은토픽 앞*=지역노이즈→Questions/PAA로).
+- ★**매 글 WebSearch PAA도 필수 조합**(lowfruits 단독 아님). 저볼륨도 winnable이면 버리지 말고([[low-volume-longtail-aggregation]]) 리치글 FAQ/H2로 흡수.
+- 세션 시작 시 **사용자에게 lowfruits export부터 요청**(어느 시드로 뽑을지 합의).
+
+### 📍 es 현재 상태 (경화 전)
+- **es = 42/42 풀 패리티**(`lib/posts-es/<slug>.ts`, 라우트 `/es/blog/<slug>`). 신규 번역 아님, **재경화**.
+- ★**stale**: 대부분 `updated` 07-04~08 = EN 2026-07-19 경화 이전 → [[rehardening-stale-link-drift]]. `masterUpdated` 필드 없음 → **§14 EN 전수 대조**로 누락분 색출이 1단계(간체서 이 대조가 §13오차·도입부 glossary 링크 누락·FAQ 누락을 다수 잡음 → es도 동일 예상).
+- ★**§13 quad aces**: es bad-beat는 **이미 2026-07-20 `7ad2ee5`에서 "segunda más fuerte" 의역 정정 완료**. 그래도 QA가 재확인(다른 §13 표현·set over set도 대조).
+- **경화 정의(간체와 동일)**: ①EN 07-19 추가분 소급 이식(도입부 링크+thumb·FAQ·GEO H2·표·§13 수정) ②1인칭 경험담 현지 재저작(스페인/중남미 맥락, 없는사실 창작 금지) ③GEO(현지 실검색 H2·Q-A-E·tldr 2~3줄) ④§13 불변.
+
+### 🌐 es 현지화 원칙
+- 직역 아님 = [[translation-is-contextual-reposting]]. **스페인 vs 라틴아메리카** 검색 관습 차이 의식(어휘·표현). 용어(posting.mdc §다국어 표): cash games·torneos·buy-in·**burbuja**(bubble). 전문어 과번역 금지(ICM·bubble·bankroll·short stack 영어 유지).
+- es 용어은행 = `docs/translation-terms-es.md` 있으면 확인·확장, 없으면 신설(zh의 §8처럼 클러스터별 winnable·용어·出处 축적). 스페인어 QA는 적대적 **스페인/중남미 네이티브** 페르소나.
+
+### 🤖 워크플로 (zh/JA서 실증 — 그대로)
+- Phase1 리서치=나 중앙: **lowfruits(사용자 export) + 편별 WebSearch 경쟁사 SERP/PAA** → 편별 브리프(winnable 롱테일·es 용어·EN 대비 누락분). Phase2 병렬 작가(EN 마스터+브리프)+적대적 스페인 네이티브 QA 짝. Phase3 나=빌드(check-intl-links)·QA수정·링크복원(es 슬러그)·커밋·푸시.
+- **클러스터 순서**(zh와 동일): 규칙6 → 족보6 → 확률6 → 전략8 → 토너먼트9(라이브이벤트4 §14=EN verbatim) → 용어6. 클러스터마다 자동배포·보고([[en-hardening-autodeploy-cadence]]).
+- ★간체서 얻은 EN 대비 공통 누락 패턴 참고(es도 유사할 것): 도입부 glossary 링크(straddle·fish·bad-beat)·rake FAQ 5·cooler FAQ 3·glossary Money표+6용어·확률 FAQ 19·전략 §13 3건(88+→TT+·A5s28%·80-85%). **단 es 실제 누락은 §14 대조로 재확인**(언어마다 다를 수 있음).
+
+### ⚠️ 커밋/빌드는 직렬. 작가엔 "index·빌드·git 금지" 명시. §13은 EN에서 그대로(적대적 QA가 편마다 베스트5장+산수 재검산).
+
+---
+
+## ▶▶▶ (완료) 간체(zh) 42/42 경화 완결 + 용어 신마 현지화까지 완료 (2026-07-24)
 
 > 읽는 순서: `CLAUDE.md` → 이 블록 → `.cursor/rules/posting.mdc` → `docs/translation-terms-zh.md`(§8-1~8-6 클러스터 리서치 축적).
 
