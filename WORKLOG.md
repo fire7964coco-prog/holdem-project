@@ -3,6 +3,15 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-23 (★★ 번체(zh-hant) 토너먼트 클러스터 4편 배포 — 병렬 오케스트레이션 4차, ICM 계산 최고난도)
+
+> 전략 클러스터에 이어 **토너먼트 클러스터**. ICM 재귀확률·M値·버블팩터가 전 프로젝트 최고 난도 §13 → QA에 Malmuth–Harville 재귀 전수 재검산 지정. 리서치 `docs/translation-terms-zh-hant.md §7-G`·플랜 §5.
+- **4편**: `holdem-tournament-vs-cash-game`(籌碼無真實現金價值·생존vs累積EV·離場/重買 대조·ICM/跳獎點 only tournament) · `holdem-bubble`(泡沫因子=BF/(1+BF) 표 50/57/60/63/67%·大碼施壓vs短碼求生·中碼딜레마·衛星 fold AA) · `holdem-icm`(★籌碼≠現金·Malmuth-Harville P(2nd)=33.9/37.5/28.6·ICM$ 38.39/32.75/28.86·ICM稅11.6pp·決賽桌交易 618/485/397·籌碼平分vs ICM) · `holdem-short-stack`(push-fold·M值=stack÷(SB+BB+ante) 分區·shove범위·棄牌價值·中碼陷阱·偷盲).
+- **워크플로**: Phase1 리서치=나 중앙(rakko headline ICM/泡泡圈 + suggest 錦標賽 seoDiff13 winnable + 리서치에이전트2 경쟁사FAQ) → Phase2 병렬 작가4 + 적대적 대만 네이티브 QA4(ICM 재귀·버블팩터·M値·push-fold 전수 재검산) → Phase3 나=index등록·빌드·링크복원(tvc 7·허브 3·형제 3)·재빌드·커밋.
+- **적대적 QA: §13 4편 전부 全數通過·🔴 0**. ★icm 재귀를 QA가 독립 재검산: P(2nd) 중碼=0.5×0.6+0.2×0.375=37.5%·領先 $=0.5×50+0.339×30+0.161×20=$38.39·삼자합 $100·交易 618+485+397=$1500·A-10 표기. bubble 泡沫因子 1.5/2.5=60%·1.7/2.7=63% 逐格. short-stack M=10≈15bb. tvc 상금 500+300+200=1000·$100→20,000籌碼(≠$20,000). **경쟁사 자산값 미사용, 계산 최고난도에서도 병렬 §13 완벽.**
+- **링크복원(EN parity)**: tvc가 실존 형제글을 엉뚱한 기존글로 우회한 것 7건 정정(盲注到什麼→blind-meaning·起手牌表→starting-hands·短籌碼→short-stack·ICM→icm·泡沫期→bubble·一手牌→game-order) + tournament 허브→4편 전부(現金桌 專篇→tvc·短籌碼→short-stack·泡泡圈→bubble·ICM→icm) + 형제(icm 開池3-bet→3bet·錢圈泡沫→bubble·bubble ICM→icm).
+- 발행: 57 blog + **437 intl**(zh-hant 31편 = 필라9+룰7+확률6+전략5+토너먼트4). 다음=마지막 용어·문화 클러스터(bad-beat·cooler·fish·rake·straddle·card-counting).
+
 ## 2026-07-23 (★★ 번체(zh-hant) 전략 클러스터 5편 배포 — 병렬 오케스트레이션 3차)
 
 > 확률 클러스터에 이어 **전략 클러스터** 동일 병렬 오케스트레이션. 사이징·빈도 위주 §13 중간 난이도. 리서치 `docs/translation-terms-zh-hant.md`·플랜 `docs/zh-hant-plan.md §5`.

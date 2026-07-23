@@ -818,6 +818,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-tournament-vs-cash-game" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://www.holdemmaster.com/ar/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-tournament-vs-cash-game" />
@@ -933,7 +934,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- 다국어 블로그 포스트 (433편) -->
+  <!-- 다국어 블로그 포스트 (437편) -->
 
   <url>
     <loc>https://www.holdemmaster.com/en/blog/apt-incheon-2026-guide</loc>
@@ -1112,6 +1113,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-bubble" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-bubble" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-bubble" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-bubble" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-bubble" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-bubble" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-bubble" />
@@ -1317,6 +1319,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-icm" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-icm" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-icm" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-icm" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-icm" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-icm" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-icm" />
@@ -1501,6 +1504,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-short-stack" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-short-stack" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-short-stack" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-short-stack" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-short-stack" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-short-stack" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-short-stack" />
@@ -1652,6 +1656,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-tournament-vs-cash-game" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://www.holdemmaster.com/ar/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-tournament-vs-cash-game" />
@@ -1923,6 +1928,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-bubble" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-bubble" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-bubble" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-bubble" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-bubble" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-bubble" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-bubble" />
@@ -2128,6 +2134,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-icm" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-icm" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-icm" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-icm" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-icm" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-icm" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-icm" />
@@ -2312,6 +2319,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-short-stack" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-short-stack" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-short-stack" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-short-stack" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-short-stack" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-short-stack" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-short-stack" />
@@ -2463,6 +2471,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-tournament-vs-cash-game" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://www.holdemmaster.com/ar/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-tournament-vs-cash-game" />
@@ -2734,6 +2743,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-bubble" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-bubble" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-bubble" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-bubble" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-bubble" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-bubble" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-bubble" />
@@ -2939,6 +2949,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-icm" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-icm" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-icm" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-icm" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-icm" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-icm" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-icm" />
@@ -3123,6 +3134,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-short-stack" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-short-stack" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-short-stack" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-short-stack" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-short-stack" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-short-stack" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-short-stack" />
@@ -3274,6 +3286,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-tournament-vs-cash-game" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://www.holdemmaster.com/ar/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-tournament-vs-cash-game" />
@@ -3545,6 +3558,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-bubble" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-bubble" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-bubble" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-bubble" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-bubble" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-bubble" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-bubble" />
@@ -3750,6 +3764,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-icm" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-icm" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-icm" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-icm" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-icm" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-icm" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-icm" />
@@ -3934,6 +3949,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-short-stack" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-short-stack" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-short-stack" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-short-stack" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-short-stack" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-short-stack" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-short-stack" />
@@ -4085,6 +4101,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-tournament-vs-cash-game" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://www.holdemmaster.com/ar/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-tournament-vs-cash-game" />
@@ -4299,6 +4316,23 @@
   </url>
 
   <url>
+    <loc>https://www.holdemmaster.com/zh-hant/blog/holdem-bubble</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-bubble" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-bubble" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-bubble" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-bubble" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-bubble" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-bubble" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-bubble" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-bubble" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-bubble" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-bubble" />
+  </url>
+
+  <url>
     <loc>https://www.holdemmaster.com/zh-hant/blog/holdem-continuation-bet</loc>
     <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>
@@ -4440,6 +4474,23 @@
   </url>
 
   <url>
+    <loc>https://www.holdemmaster.com/zh-hant/blog/holdem-icm</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-icm" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-icm" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-icm" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-icm" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-icm" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-icm" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-icm" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-icm" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-icm" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-icm" />
+  </url>
+
+  <url>
     <loc>https://www.holdemmaster.com/zh-hant/blog/holdem-implied-odds</loc>
     <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>
@@ -4576,6 +4627,23 @@
   </url>
 
   <url>
+    <loc>https://www.holdemmaster.com/zh-hant/blog/holdem-short-stack</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-short-stack" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-short-stack" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-short-stack" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-short-stack" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-short-stack" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-short-stack" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-short-stack" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-short-stack" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-short-stack" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-short-stack" />
+  </url>
+
+  <url>
     <loc>https://www.holdemmaster.com/zh-hant/blog/holdem-showdown-rules</loc>
     <lastmod>2026-07-22</lastmod>
     <changefreq>monthly</changefreq>
@@ -4692,6 +4760,28 @@
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-tournament" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-tournament" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-tournament" />
+  </url>
+
+  <url>
+    <loc>https://www.holdemmaster.com/zh-hant/blog/holdem-tournament-vs-cash-game</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-tournament-vs-cash-game" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-tournament-vs-cash-game" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-tournament-vs-cash-game" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-tournament-vs-cash-game" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-tournament-vs-cash-game" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-tournament-vs-cash-game" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.holdemmaster.com/ar/blog/holdem-tournament-vs-cash-game" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-tournament-vs-cash-game" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-tournament-vs-cash-game" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/holdem-tournament-vs-cash-game" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://www.holdemmaster.com/vi/blog/holdem-tournament-vs-cash-game" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/holdem-tournament-vs-cash-game" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-tournament-vs-cash-game" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/holdem-tournament-vs-cash-game" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-tournament-vs-cash-game" />
   </url>
 
   <url>
@@ -4947,6 +5037,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-tournament-vs-cash-game" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://www.holdemmaster.com/ar/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-tournament-vs-cash-game" />
@@ -5169,6 +5260,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-bubble" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-bubble" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-bubble" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-bubble" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-bubble" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-bubble" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-bubble" />
@@ -5374,6 +5466,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-icm" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-icm" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-icm" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-icm" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-icm" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-icm" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-icm" />
@@ -5558,6 +5651,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-short-stack" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-short-stack" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-short-stack" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-short-stack" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-short-stack" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-short-stack" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-short-stack" />
@@ -5709,6 +5803,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-tournament-vs-cash-game" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://www.holdemmaster.com/ar/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-tournament-vs-cash-game" />
@@ -5980,6 +6075,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-bubble" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-bubble" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-bubble" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-bubble" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-bubble" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-bubble" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-bubble" />
@@ -6185,6 +6281,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-icm" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-icm" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-icm" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-icm" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-icm" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-icm" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-icm" />
@@ -6369,6 +6466,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-short-stack" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-short-stack" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-short-stack" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-short-stack" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-short-stack" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-short-stack" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-short-stack" />
@@ -6520,6 +6618,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-tournament-vs-cash-game" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://www.holdemmaster.com/ar/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-tournament-vs-cash-game" />
@@ -6816,6 +6915,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-tournament-vs-cash-game" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://www.holdemmaster.com/ar/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-tournament-vs-cash-game" />
@@ -7063,6 +7163,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-tournament-vs-cash-game" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://www.holdemmaster.com/ar/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-tournament-vs-cash-game" />
@@ -7310,6 +7411,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-tournament-vs-cash-game" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://www.holdemmaster.com/ar/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-tournament-vs-cash-game" />
@@ -7532,6 +7634,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-bubble" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-bubble" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-bubble" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-bubble" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-bubble" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-bubble" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-bubble" />
@@ -7737,6 +7840,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-icm" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-icm" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-icm" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-icm" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-icm" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-icm" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-icm" />
@@ -7921,6 +8025,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-short-stack" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-short-stack" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-short-stack" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-short-stack" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-short-stack" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-short-stack" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-short-stack" />
@@ -8072,6 +8177,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-tournament-vs-cash-game" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://www.holdemmaster.com/ar/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-tournament-vs-cash-game" />
@@ -8368,6 +8474,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/holdem-tournament-vs-cash-game" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://www.holdemmaster.com/ar/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/holdem-tournament-vs-cash-game" />

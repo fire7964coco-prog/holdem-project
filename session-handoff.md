@@ -5,7 +5,7 @@
 
 ---
 
-## ▶▶▶ 새 세션 START HERE (2026-07-23 — ★★★ 번체(zh-hant) 확률+전략 클러스터 완주(27/42). 다음 = 토너먼트/용어 클러스터군 중 택1)
+## ▶▶▶ 새 세션 START HERE (2026-07-23 — ★★★ 번체(zh-hant) 확률+전략+토너먼트 클러스터 완주(31/42). 다음 = 마지막 용어·문화 클러스터)
 
 > 읽는 순서: `CLAUDE.md` → 이 블록 → `docs/zh-hant-plan.md`(플랜·트래커) → `docs/translation-terms-zh-hant.md §7`(용어은행). 포스트 작업 전 `.cursor/rules/posting.mdc`도.
 
@@ -13,9 +13,9 @@
 **`docs/zh-hant-plan.md §5` 클러스터 목록에서 다음 클러스터군 하나를 골라, 아래 "병렬 오케스트레이션 워크플로" 그대로 돌려라.** 한 클러스터군 완주 → 보고 → 다음 (EN 경화 방식).
 
 ### 📍 현재 상태 (2026-07-23)
-- **번체 = 27/42편.** 필라 9/9 + **룰 7/7** + **확률 6/6**(outs·drawing-odds·equity·implied-odds·reading-the-board·flush-vs-straight) + **전략 5/5**(3bet·continuation-bet·limping·when-to-fold·game-order, 2026-07-23 배치). 전부 배포·적대적 대만 네이티브 §13 通過(치명0).
-- 발행 총계: 57 blog + **433 intl**. 상호링크 + 필라 역링크(pot-odds/probability/hand-rankings→확률 · strategy/rules→전략) 복원됨.
-- **남은 = 클러스터 2군**(`§5`): 토너먼트[tvc·bubble·icm·short-stack] / 용어·문화[bad-beat·cooler·fish·rake·straddle·card-counting]. + 신규 winnable 후보(梭哈 vs 德州撲克·台灣合法 독립글).
+- **번체 = 31/42편.** 필라 9/9 + **룰 7/7** + **확률 6/6** + **전략 5/5** + **토너먼트 4/4**(tvc·bubble·icm·short-stack, 2026-07-23 배치). 전부 배포·적대적 대만 네이티브 §13 通過(치명0).
+- 발행 총계: 57 blog + **437 intl**. 상호링크 + 필라 역링크(pot-odds/probability/hand-rankings→확률 · strategy/rules→전략 · tournament 허브→토너먼트 4편) 복원됨.
+- **남은 = 마지막 클러스터 1군**(`§5`): 용어·문화[bad-beat·cooler·fish·rake·straddle·card-counting] 6편. + 신규 winnable 후보(梭哈 vs 德州撲克·台灣合法 독립글) + pub(撲克室 앵글 별도판단). ★용어 클러스터는 §7-E 용어은행이 이미 대부분 커버 → 리서치 부담 최소, 카니발 주의(glossary 필라와 중복 회피).
 - ★교훈: 중문 롱테일 suggest=0(정량 null 반복 확인) → 부모 headline+**리서치 에이전트 경쟁사 FAQ 정성분석**이 winnable 주신호. 계산/사이징 무거운 클러스터도 편당 적대적 QA(수치·街라벨·비교예시·사이징 전수 재검산)로 §13 병렬 안전망 완벽 실증(확률6+전략5 = 11편 연속 치명0). ★대만稿 극薄 토픽(limping·when-to-fold)일수록 §13 정확성+통합 깊이로 winnable 큼.
 - ★링크: 형제글이 배치로 다 생기므로 작가엔 "미존재로 간주, 링크 금지" 지시 → Phase3에서 앵커 정정+상호링크+필라역링크로 복원(이번: 全下→all-in·基本下注動作→betting-actions·strategy [3-bet]가 glossary→holdem-3bet). ★잔여 소소: 3bet의 CO 표기 `關煞位（cutoff）`는 glossary 교훈상 `切位（CO）` 영문주도 권장(다음 편집 시 정리, 현행도 허용).
 
