@@ -5,7 +5,31 @@
 
 ---
 
-## ▶▶▶ 새 세션 START HERE (2026-07-24 — ★★★ 다음 작업 = 기존 **간체(zh) 번역본 42편 경화**)
+## ▶▶▶ 새 세션 START HERE (2026-07-24 밤 — ★★★ 간체(zh) 42/42 경화 완결 + 용어 현지(신마) 변이 재점검 중)
+
+> 읽는 순서: `CLAUDE.md` → 이 블록 → `.cursor/rules/posting.mdc` → `docs/translation-terms-zh.md`(§8-1~8-6 클러스터 리서치 축적).
+
+### 🚀 한 줄
+**간체 42편 6클러스터 순차 경화 100% 완결·배포**(규칙6·족보6·확률6·전략8·토너먼트9·용어6). EN 마스터 유니버스 전 언어 3번째 풀 경화(JA·zh-hant 이어). ▶ **미완 1건**: 사용자 지시(2026-07-24 밤)로 **용어6의 현지(신마/홍콩) 실사용 변이 재점검** 진행 중 — 조사 결과 나오면 대륙표준↔신마변이 차이나는 용어를 posts에 반영(주로 지방注 추가/주词 확인).
+
+### 📍 현재 상태 (완결)
+- **간체 42/42 배포**: 규칙6 `12c960a`·족보6 `d1d4194`·확률6 `89c85f9`·전략8 `6f7eeab`·토너먼트9 `0dfd810`·용어6 `983f74e`. 적대적 간체 네이티브 QA 전 클러스터 §13/§14 0红(레드라인 bad-beat quad aces·cooler set over set 회피). 배포본 §13 오류 0(QA가 8건 사전 차단).
+- **리서치 축적**: `docs/translation-terms-zh.md §8-1~8-6`(클러스터별 winnable·术语·出处 — 향후 신규 간체 포스팅 재사용).
+- **신규 지침**: tldr 2~3줄 자기완결 직답 단락([[tldr-two-to-three-lines]], 확률6부터 적용).
+- **★rakko 간체**: 부모 키워드 데이터 有(seoDiff 대개 null)·디테일 롱테일 정량 null → WebSearch 경쟁사 FAQ 정성분석이 주신호.
+
+### ⚠️ 용어 현지 변이 재점검 (진행 중 — 이어받을 것)
+- **왜**: zh 구글 도달 독자 = **신마 화교**([[chinese-seo-traditional-taiwan-first]]는 번체가 중문 본진이나 간체는 신마 타깃). 용어은행 §0은 "대륙 우선"이라, 용어 클러스터(glossary·straddle·rake·fish·cooler·bad-beat)에서 신마/홍콩 실사용이 대륙과 다르면 반영 필요.
+- **조사 중**: 신마/港 현지 포커용어 변이(straddle=抓? / rake=水钱/commission? / fish=水鱼? / cooler·bad beat 粤语 변체 등). 결과 나오면 차이 큰 용어에 지방注 추가 or 주词 확인 후 재커밋.
+
+### ▶▶ 다음 방향 후보 (용어 재점검 마친 후)
+- **(A) 타 언어 재경화**: es·pt·de·id (EN 07-19 stale·도입부 링크 누락·quad-aces 의역 가능성). JA/zh/zh-hant 방법론 재사용. ※rakko는 JA·간체만 → es/pt는 현지 서제스트/WebSearch.
+- **(B) KO 본진 강화**(GSC 성과=ko 기준·족보 카니발·GEO).
+- **(C) EN 마스터 검토 항목**(전 언어 소급): all-in 누적加注표 $15/$25행·ept Gold Pass $/€·WPT 36場vs표12場.
+
+---
+
+## ▶▶▶ (이전) START HERE (2026-07-24 — ★★★ 다음 작업 = 기존 **간체(zh) 번역본 42편 경화**)
 
 > 읽는 순서: `CLAUDE.md` → 이 블록 → `.cursor/rules/posting.mdc` → (참고) 아래 "(이전)" 번체 블록의 병렬 워크플로·철칙. 용어은행은 번체용(`docs/translation-terms-zh-hant.md`)이라 **간체는 기존 zh 글의 정착 표기 + 간체 표준**을 따를 것.
 

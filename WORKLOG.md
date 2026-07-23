@@ -3,6 +3,22 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-24 (★★★ 간체(zh) 용어 클러스터 6편 경화 → 42/42 완결 = EN 유니버스 전 언어 3번째)
+
+> 토너먼트9에 이어 마지막 용어6. `983f74e`. **이로써 간체 42편 전체 경화 완료** = JA·zh-hant 이어 EN 마스터 유니버스 3번째 풀 경화 언어.
+- **6편**: `holdem-glossary`(필라·Money표 4행+Situations 3[Heads-up·RFI·Splash]+牌型 3[Boat·Quads·Runner-runner]+易混配对표·stripe 80+→90+) · `holdem-straddle`(도입부 glossary 링크 복원+被抓后 범위 100→50BB+FAQ Who can straddle 8/8) · `holdem-rake`(FAQ3[who pays·pay less·**illegal Molly's Game**]+底池5%≠利润5%) · `holdem-fish`(도입부 링크 복원+**VPIP/PFR 判鱼 阈值표**+分型剥削) · `holdem-cooler`(FAQ2[set over set 확률·casino The Cooler]+互链 복원) · `holdem-bad-beat`(도입부 링크 복원+**BBJ 触发条件**).
+- **적대적 QA 3병렬: 6편 §13 全数통과 0红**. ★레드라인 2편 독립 재산 통과: **bad-beat quad aces**="只有同花顺能击败四条A"(第二强 오역 없음·Mabuchi/Phillips 摆牌 정확) / **cooler set over set** 7-7-7-QJ vs J-J-J-Q-7, 유일 out=4번째 7(升四条, 0 outs 아님·葫芦 아님). **es/pt/de/id가 틀렸던 함정 둘 다 회피.**
+- **★QA 적발 EN 07-19 파리티 갭 보완**: glossary 6용어(작가 Money 4행만·QA가 Situations/牌型 6 추가 적발)·straddle FAQ 1. [[rehardening-stale-link-drift]] 도입부 glossary 링크 3편 복원(straddle·fish·bad-beat).
+- **리서치 축적**: `docs/translation-terms-zh.md §8-6`. 발행 총계 불변: 57 blog + 448 intl.
+
+### ★ 2026-07-24 세션 총괄: 간체 42편 6클러스터 순차 경화 완료
+- **커밋**: 규칙6 `12c960a` · 족보6 `d1d4194` · 확률6 `89c85f9` · 전략8 `6f7eeab` · 토너먼트9 `0dfd810` · 용어6 `983f74e` (+ docs 커밋 6).
+- **방식**: EN 마스터 뼈대 + 편당 구글SERP3+rakko 리서치(파일 축적 §8-1~8-6) → 병렬 작가 + 적대적 간체 네이티브 QA → 빌드·링크복원·커밋. 클러스터마다 자동배포.
+- **rakko 간체 실측**: 부모 키워드는 데이터 有(seoDiff 대개 null), 디테일 롱테일은 정량 null → WebSearch 경쟁사 FAQ 정성분석이 주신호.
+- **★적대적 QA가 사전 차단한 §13/§14 오류 8건**: 족보 신규FAQ 顺子>同花 / 전략 position-play 88+→TT+·3bet A5s 30→28%·when-to-fold 80-86→80-85% / 토너 short-stack 고아A행·apt 게이트 2A→4A / (작가 자가교정: 所罗门 3n+8·implied 반向예시). 배포본 §13 오류 0.
+- **신규 지침 반영**: tldr(한줄정리) 2~3줄 자기완결 직답 단락([[tldr-two-to-three-lines]], 확률6부터).
+- **★EN 마스터 검토 후보(전 언어 소급)**: all-in 누적加注표 $15/$25행·ept Gold Pass $/€ 통화기호·WPT 36場 vs 표12場.
+
 ## 2026-07-24 (★ 간체(zh) 토너먼트 클러스터 9편 경화 — 42편 경화 5번째, 라이브이벤트 §14 동기화)
 
 > 전략8에 이어 토너먼트9(마지막 전). `0dfd810`. §13 계산은 9편 EN 완전 일치 → 전략5=FAQ+winnable, 이벤트4=§14 사실 EN verbatim 동기화.
