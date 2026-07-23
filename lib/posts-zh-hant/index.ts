@@ -41,6 +41,12 @@ import { POST as holdemFish } from "./holdem-fish";
 import { POST as holdemRake } from "./holdem-rake";
 import { POST as holdemStraddle } from "./holdem-straddle";
 import { POST as holdemCardCounting } from "./holdem-card-counting";
+// Positions(별개글) + 라이브이벤트 가이드 (EN 마스터 parity 42/42)
+import { POST as holdemPositions } from "./holdem-positions";
+import { POST as aptIncheon2026Guide } from "./apt-incheon-2026-guide";
+import { POST as koreaPokerMarathon2026 } from "./korea-poker-marathon-2026";
+import { POST as wptAustralia2026Guide } from "./wpt-australia-2026-guide";
+import { POST as eptBarcelona2026Guide } from "./ept-barcelona-2026-guide";
 
 /**
  * 중국어 번체(zh-hant · 대만/홍콩) 블로그 포스트.
@@ -100,6 +106,12 @@ export const ZH_HANT_POSTS: Post[] = [
   holdemRake,
   holdemStraddle,
   holdemCardCounting,
+  // ── Positions(별개글) + 라이브이벤트 4 (2026-07-23, EN parity 42/42) ──
+  holdemPositions,
+  aptIncheon2026Guide,
+  koreaPokerMarathon2026,
+  wptAustralia2026Guide,
+  eptBarcelona2026Guide,
 ];
 
 const ZH_HANT_SLUGS = new Set(ZH_HANT_POSTS.map((p) => p.slug));

@@ -3,6 +3,16 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-23 (★★★★ 번체(zh-hant) positions + 라이브이벤트 4편 배포 — EN 마스터 유니버스 42/42 완결)
+
+> 사용자 확인: EN 경화본 뼈대 동일 + H2만 현지 롱테일 검색형 + 저경쟁 gap 신규 H2. pub은 EN에 없음(KO 전용 필라)→제외 확정. 라이브이벤트=세계대회(지역색 아님)→동일 작업. 남은 5편(positions + 이벤트 4)으로 42/42 마감.
+- **5편**: `holdem-positions`(各 위치 명칭/순서 심화, position-play=打法과 별개글·카니발 회피·CO=切位 영문주도) · `apt-incheon-2026-guide`(APT 仁川 8/7-16·Paradise City·ME KRW2.5M/$1M GTD·총$2.7M·Natural8 $3.50·僅外國人) · `korea-poker-marathon-2026`(마라톤 4개[춘천10/25·JTBC11/1·Garmin11/15·YTN9/6]+포커 이벤트[APT仁川·APT濟州136場·GOP·AJPC] 결합) · `wpt-australia-2026-guide`(WPT 澳洲 雪梨 The Star 9/10-30·Prime AUD$1,500/Championship $5,000·2025 Alan Pham) · `ept-barcelona-2026-guide`(EPT 巴塞隆納 8/16-29·€5,300·Casino Barcelona·2025 2,045명/€9.9M·Power Path $0.50).
+- **워크플로**: Phase1 리서치=나 중앙(rakko headline APT仁川/位置名稱/WPT澳洲/EPT + EN 마스터 파일 인벤토리로 pub 부재·이벤트 4 확인) → Phase2 병렬 작가5(이벤트=EN §14 사실 verbatim, rakko/경쟁사 숫자 금지, 현지화=언어+대만 검색어 H2) + 적대적 QA5(§14 사실 EN 전수 대조·骨架 parity·현지화) → Phase3 나=index등록·빌드·이벤트 상호링크·재빌드·커밋.
+- **적대적 QA: §14 이벤트 4편 사실 全數通過·번역 🔴 0** + positions 골격/위치 全數通過. 모든 날짜·바이인·GTD·場館·2025 결과 EN 母稿 일치, TBA hedge 보존, 官網/rakko 2026 숫자 미혼입 확인. ⚠️QA가 EN 母稿 자체 결함 1건 지적(WPT "36場 vs 표 12場" — 完全賽程 총계 vs 重點 표로 보임, EN 원본 문제라 zh-hant는 충실 이식, EN 검토 항목).
+- **링크복원**: korea L256 앵커(APT 仁川 지남)→apt-incheon-2026-guide(이제 존재, mismatch 정정) + 이벤트 상호링크(apt-incheon→ept+wpt·wpt→ept·ept→apt-incheon) + ramen 오역(辛拉麵金→金拉麵) 정정.
+- 발행: 57 blog + **448 intl**(zh-hant **42/42** = 필라9+룰7+확률6+전략5+토너먼트4+용어6+positions1+라이브이벤트4). **★★ EN 마스터 유니버스 전체 완결 — 번체 트랙 100% 패리티.** (pub은 KO 전용이라 EN 유니버스 외)
+- 다음=타 언어 재경화(es·pt·de·zh·id, EN 07-19 stale) or KO 본진 강화 or 신규 대만 winnable(梭哈 vs 德州撲克·台灣合法).
+
 ## 2026-07-23 (★★★ 번체(zh-hant) 용어·문화 클러스터 6편 배포 — 마지막 클러스터, 클러스터 트랙 완결·37/42)
 
 > 5개 클러스터군의 마지막. §13은 가벼우나 **glossary 필라와 카니발**(각 편=단일 용어 심화 vs glossary A-Z)이 관건 → 작가에 차별화 지시 + glossary 역링크. 리서치 `docs/translation-terms-zh-hant.md §7-E`.

@@ -78,8 +78,11 @@
 - [x] ✅ **전략 클러스터 5편 완주** (2026-07-23, 병렬 오케스트레이션 3차): `holdem-3bet`(價值/邊緣3bet·사이징표·擠壓·面對3bet 결정트리·MDF33%·블로커) / `holdem-continuation-bet`(尺寸→牌面 대응표·延後c-bet·乾濕 빈도·子彈/手榴彈/火箭炮 俚語만) / `holdem-limping`(跛入 -EV·隔離加注·limp-reraise 陷阱) / `holdem-when-to-fold`(頂對 결정트리·沉沒成本·過度蓋牌vs跟注 MDF·聽牌賠率不足就蓋) / `holdem-game-order`(翻前UTG先/翻후SB先·大盲option·燒牌3장·Home Game 爭議 대만경험담). 워크플로: Phase1 rakko headline+suggest(3bet=null)+리서치에이전트3 → Phase2 병렬 작가5+적대적QA5(사이징·빈도·핸드예시 재검산) → Phase3 앵커정정(全下→all-in·基本下注動作→betting-actions·strategy [3-bet]→3bet)+상호링크+필라역링크(strategy 결정표→limping/cbet/when-to-fold·rules→game-order). **§13 5편 全數通過(치명0)**. winnable=isolate·limp-reraise·頂對결정·沉沒成本·翻前vs翻후 換人先. 배포.
 - [x] ✅ **토너먼트 클러스터 4편 완주** (2026-07-23, 병렬 오케스트레이션 4차·ICM 최고난도): `holdem-tournament-vs-cash-game`(籌碼無真實現金價值·생존vs累積EV·ICM only tournament) / `holdem-bubble`(泡沫因子=BF/(1+BF) 50/57/60/63/67%·大碼施壓vs短碼求生·衛星 fold AA) / `holdem-icm`(★Malmuth-Harville P(2nd) 33.9/37.5/28.6·ICM$ 38.39/32.75/28.86·ICM稅11.6·交易618/485/397) / `holdem-short-stack`(push-fold·M值=stack÷(SB+BB+ante)分區·shove범위·中碼陷阱). §13 4편 全數通過(치명0, icm 재귀 QA 독립 재검산). 링크복원: tvc 7(실존 형제글 우회 정정)+tournament 허브→4편+형제(icm→3bet/bubble·bubble→icm). winnable=籌碼≠現金·泡沫因子·M値算法·shove범위표·中碼陷阱. 배포.
 - [x] ✅ **용어·문화 클러스터 6편 완주** (2026-07-23, 마지막·클러스터 트랙 완결): `holdem-bad-beat`(爆冷 정의·爆冷 vs 冷牌組·2008 WSOP Mabuchi 四條A vs 방큐皇家) / `holdem-cooler`(冷牌組=蓋不掉·又稱冤家牌·set over set) / `holdem-fish`(VPIP/PFR 판魚표·剝削·選桌) / `holdem-rake`(底池2.5-10%·封頂·返水·NL50함정·台灣5% 민간표시) / `holdem-straddle`(★三種盲抓 藍海·범위조정·-EV) / `holdem-card-counting`(★能算牌嗎+21점 차별·진짜算牌=outs+四二+組合·電影迷思). §13 6편 全數通過(★레드라인 四條는 同花順에만=Mabuchi 실증·set over set 三J勝三7·堅果順 16→12). glossary 카니발 차별화(각 편 심화+glossary 역링크). 링크: bad-beat↔cooler 상호·straddle→rake·glossary 용어셀→5편 역링크. 배포. **★5개 클러스터군 전부 완주.**
-- ※ 신규 winnable 후보: `梭哈 vs 德州撲克 差別`, `德州撲克 台灣 合法嗎`(익지경기 판결) — rakko/SERP 확인 후 편입.
-- ※ pub(`holdem-pub-guide`)은 KO 특화 → 번체는 撲克室 앵글로 재구성할지 별도 판단.
+- [x] ✅ **positions + 라이브이벤트 4편 완주** (2026-07-23 → **42/42 EN 유니버스 완결**): `holdem-positions`(位置 명칭/순서, position-play=打法과 별개·CO=切位 영문주도) + `apt-incheon-2026-guide`/`korea-poker-marathon-2026`/`wpt-australia-2026-guide`/`ept-barcelona-2026-guide`(라이브이벤트=세계대회, §14 사실 EN verbatim, 현지화=언어+대만 검색어 H2). §14 4편 사실 全數通過(EN 전수 대조·TBA hedge 보존·官網 2026 숫자 미혼입). 이벤트 상호링크 복원(apt↔korea·apt→ept+wpt·wpt→ept·ept→apt). 배포.
+
+> ★**pub 확정**: `holdem-pub-guide`는 **EN 마스터에 없음(KO 전용 필라)** → EN 유니버스 외, zh-hant 대상 아님(제외).
+> ⚠️ **EN 마스터 검토 항목**(전 언어 소급): `wpt-australia-2026-guide` "36場" vs 표 12場 불일치(EN 원본 애매, 수정 시 전 언어 동기화).
+- ※ 신규 winnable 후보(선택): `梭哈 vs 德州撲克 差別`, `德州撲克 台灣 合法嗎`(익지경기 판결) — rakko/SERP 확인 후 편입.
 
 ## 6. 참조
 - 리서치 원본: 2026-07-22 6에이전트(지형/도구/검색행태/포커니치/기술SEO/유통GEO) — 요지는 [[chinese-seo-traditional-taiwan-first]].
