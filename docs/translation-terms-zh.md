@@ -358,3 +358,42 @@
 - **决策链 내러티브가 클러스터 접착제**: probability(2-4로 胜率)→pot-odds(胜率 vs 赔率)→equity(胜率↔필요胜率)→implied(부족분 후속街 보충). 상호 내링크로 "胜率→赔率→跟不跟" 폐루프(간체 경쟁사 공백).
 - **术语**: 概率(非機率)·胜率/赢率·赔率(非賠率)·底池赔率·隐含赔率/反向隐含赔率·补牌/outs·脏补牌·二四法则(=四二法则)·所罗门法则·后门/runner-runner·权益/equity(英夹)·弃牌率/fold equity·权益实现 EqR·有效筹码·期望值 EV·翻牌/转牌/河牌.
 - 出处: zhihu p/567967774(12표)·p/41498337(2-4)·p/34182435(隐含)·p/51808351(EV vs Equity)·p/88578287(听牌)·p/659726530(后门4.2)·p/489073344(所罗门)·中扑网 dzpknews p/27158·36557·41594·dpskill chuji/124·dpgod teach/58·moshike a/2694·pokerqz(equity)·andypoker(fold equity).
+
+## 8-4. 전략 클러스터 (2026-07-24 리서치)
+
+**rakko 간체**: 起手牌/位置 question-search=0. WebSearch 주신호. 공통: 간체 전략 SERP = **知乎 长文(깊으나 散·표없음·FAQ없음) + 教学站 农场(얕음·割裂) + 번체 溢出**. 최강 winnable = **量化(BB값·胜率·频率)+决策树/速查표+§13验算+1인칭 경험담**(전 경쟁사 공백).
+
+**★공통 경화 처방(누락분 대조 — 완전 편별)**: 본문·H2·표·경험담·링크·thumb·readnext는 **8편 전부 EN 풀패리티**. 진짜 갭:
+- **★§13 오차 3건 필수 교정**: ①position-play UTG 코어 `88+`→**`TT+`**(EN 07-19 상향) ②3bet A5s equity `30%`→**`28%`**(vs QQ+/AK 콜레인지) ③when-to-fold 풀링 폴드율 `80–86%`→**`80–85%`**(2곳 오타).
+- **FAQ 누락 7문**: strategy 4(raise vs call·skill or luck·GTO·get better)·3bet 2(4bet 사이징·5bet)·c-bet 1(value bet).
+- **본문 개정 1건**: starting-hands "무엇%" 섹션 EN 07-19 정교화("session 평균은 raw mean보다 낮다: 加注 직면·early seat·blinds 다수") 미반영.
+- **날짜**: 7편 stale(07-05~06→07-19), positions만 07-11 동기(패리티). masterUpdated 신설.
+- **tldr**: 8편 이미 2~3문장 충실 → 자기완결 직답 단락인지 확인·부족하면 강화.
+
+### holdem-strategy (필라)
+- **winnable**: ①**赢不了钱的 6个致命漏洞 자검清单**(翻前玩太多·顶对不放·从不弃·单调诈唬·无视位置·资金错配·최강) ②一局 完整 决策 演示(§13) ③VPIP/PFR 25-30% 落地 ④紧凶→剥削 桥梁 ⑤繁简 净화. **FAQ 이식 4문**.
+### holdem-positions ★EN 07-11 풀패리티(경미)
+- **winnable**: ①**9인 vs 6인 桌 座位顺序 대조**(位置名/缩写/翻前행동序/翻后행동序 병렬·정보그래픽 가능) ②翻前≠翻后 순서(SB/BB 翻前最后·翻后最先) ③术语 正名(**HJ=劫持位**[劫机位 아님]·**CO 영문주도**) ④6-max 位置 ⑤"几号位" 口语. 카니발 방화벽: 名称/顺序만, 打法은 position-play 내링크.
+- **작업**: 07-11 패리티 → 날짜·winnable 소량만, 深작업 금지.
+### holdem-position-play
+- **★§13 교정**: UTG 코어 `88+`→`TT+`.
+- **winnable**: ①**IP vs OOP 同一手牌 两种打法 병렬 决策표**(최강·positions엔 없음) ②按位置 起手范围+打법(BTN 偷盲·大盲 防守 구체 牌例) ③**OOP 弥补**(收紧·控池·check-raise·"先跟再推" 함정 회피) ④실전 경험담 ⑤C-Bet×位置 연동. 카니발: 位置명은 一句+내링크.
+### holdem-starting-hands-chart
+- **★본문 개정**: "무엇%" 섹션 EN 07-19 정교화 반영.
+- **winnable**: ①**起手牌 怎么背 三层 速记法+口诀**(최강) ②胜率排名+位置范围+记忆法 三合一 ③6인 vs 9인 대조 ④每位置 一行 人话范围 ⑤统一口径(AA 对随机 85% vs 满桌 30.87% 구분·명시).
+### holdem-limping ★풀패리티(경미)
+- **winnable**: ①limp 왜 -EV **量化**(AA 对1人85% vs 对5人49%) ②何时可 limp 3情况(over-limp 소对/同花连张·SB补盲·浅筹娱乐) ③limp vs raise 决策树 ④隔离加注 isolate 尺寸+范围 ⑤limp-3bet 陷阱 응대. **작업: 날짜 위주**(본문 완전).
+### holdem-3bet ★손볼 것 최다
+- **★§13 교정**: A5s equity `30%`→`28%`. **FAQ 이식 2문**(4bet 사이징·5bet).
+- **winnable**: ①**3bet 尺寸표 IP3x/OOP4x**(BB값 open 2.5→IP~7.5/OOP~10·§13验算) ②面对3bet 决策树(弃/跟/4bet·MDF 4.5÷13.5=33%·弃牌率≤66.6%) ③价值 vs 诈唬 选牌清单(价值 QQ+/AK·诈唬 A5s·KTs·同花连张) ④squeeze 尺寸(每多跟注+1BB) ⑤诈唬 同花 阻断牌 逻辑(블로커 AA6→3·AK16→12).
+### holdem-continuation-bet
+- **FAQ 이식 1문**(value bet 정의).
+- **winnable**: ①c-bet 尺寸→牌面(干湿) 대응(干=1/3小·湿=2/3大) ②何时 check(연후 c-bet·延后) ③干湿牌面 빈도 ④2/3 미스·1/3·2/3 사이징(EN값).
+### holdem-when-to-fold ★풀패리티(경미)
+- **★§13 교정**: `80–86%`→`80–85%`(2곳).
+- **winnable**: ①沉没成本 谬误 ②过度弃 vs 过度跟(MDF) ③顶对 决定트리 ④聽牌 賠率不足就弃. **작업: §13 오타+날짜 위주**(본문 완전).
+
+### 전략 클러스터 교훈
+- **8편 이미 EN 풀패리티** → 작업 = §13 오차 3건 교정 + FAQ 7문 이식 + SERP winnable + 날짜 + tldr 확인. 신규 §13 사이징/胜率 예시는 EN값 이식(자작 금지).
+- positions↔position-play 카니발 방화벽(名称/顺序 vs 打法, 상호 내링크). CO=영문주도, HJ=劫持位.
+- 출처: zhihu p/545873553·87002964·579490599·509231149·1948442072·661866191·41768753·352739425·649260218·87176701 / dpskill jinjie/809·chuji/17/93/289 / legendpoker/dpgod/moshike 教学站 / pokernews.com.tw(limp 번체 표준) / 奶牛关 2187726(isolate).
