@@ -635,7 +635,7 @@ export default function BlogPost({
   const showMinimap = clusterForSlug(post.slug, KO_CLUSTERS) !== null;
   const gridClass =
     hasToc && showMinimap
-      ? "xl:grid xl:grid-cols-[190px_1fr_230px] xl:gap-6"
+      ? "xl:grid xl:grid-cols-[180px_1fr_210px] xl:gap-5"
       : hasToc
         ? "xl:grid xl:grid-cols-[220px_1fr] xl:gap-10"
         : showMinimap
@@ -646,7 +646,7 @@ export default function BlogPost({
     <div className="min-h-screen">
       <ReadingProgressBar targetRef={contentRef} />
       <BlogTopBar homeHref="/" communityLabel="커뮤니티" />
-      <div className="max-w-7xl mx-auto px-4 py-10">
+      <div className="max-w-[1440px] mx-auto px-4 py-10">
         <div className={gridClass}>
 
           {/* 데스크탑 사이드바 TOC — xl 이상에서만 표시 */}
