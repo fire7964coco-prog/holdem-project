@@ -323,3 +323,38 @@
 - **7장 频率 数字**이 전 클러스터 최대 winnable(전 경쟁사 공백). ★단 频率·outs·타이브레이크 수치는 **EN 마스터 §13 값 그대로 이식·재계산 금지**(SERP 3.03/4.79는 방향 참고만).
 - 최고 系统문이 **번체 台湾站**(pokertaiwan) → 직역 시 繁体 유입 위험(機率/籌碼/乾燥/濕潤) 필히 전사.
 - 出处: legendpoker 3861/1783·dpskill chuji 51/165/191/199/771/107·moshike a/1647/1622/823·zhihu question/372769644·question/398119504·维基 撲克牌型·pokertaiwan(chop·nuts)·andypoker(chop·dry board)·同城游 tcy365(读牌面)·dzpknews/28653(翻牌类型).
+
+## 8-3. 확률 클러스터 (2026-07-24 리서치)
+
+**rakko 간체**: 부모 `德州扑克 概率` = 概率计算(vol10)·概率表만. 底池赔率/胜率 question-search=0. 디테일 정량 null → WebSearch 주신호. 공통: 간체 확률 SERP는 **표 堆砌(知乎)·프로그래머向(CSDN)·SEO팜 얕은 例(娱乐城)·번체 溢出(taiwanrounders)** = **3개 계산표(误差·换算·分街)가 비대체 winnable 자산**. ★모든 수치는 **EN 마스터 §13 값 그대로 이식·재계산 금지**(SERP값은 방향 참고).
+
+**★공통 경화 처방(누락분 대조)**: 본문·H2·표·경험담·링크·thumb·readnext·§13 계산은 **6편 전부 EN 풀패리티**. 진짜 갭 = ①`updated` stale(07-03~08, masterUpdated 필드 없음→신설) ②EN 07-18/19 경화가 추가한 **FAQ 19문 미이식**(현지 검색형태소로 재저작) ③implied-odds FAQ 공식 "−当前底池"→**"−(当前底池+跟注)"** 정정 ④**tldr 6편 전부 1줄→2~3줄 자기완결 직답 단락**([[tldr-two-to-three-lines]]) ⑤equity 곡선따옴표 통일.
+
+### holdem-probability (필라)
+- **누락 FAQ 이식 5문**: flop royal flush 확률·最常见 winning hand·best hand win %·hit the flop·the nuts.
+- **winnable**: ①**2-4법칙 误差 범위표**(估算 vs 정확: 9outs ×4=36% vs 34.97%[2街]·×2=18% vs 19.15%[1街]·최강) ②概率/胜率/赔率 3词 구분표 ③169 起手牌胜率=**9-way all-in 假设** 실토+HU 대조 ④심산 원리 每out≈2%/街.
+
+### holdem-pot-odds
+- **누락 FAQ 이식 4문**: 底池 총액 계산법·下注量 얼마·所需胜率 얼마·equity가 赔率보다 높/낮.
+- **winnable**: ①**outs→2-4→胜率→底池赔率→비교→跟/弃 五步 완전 실례**(최강·probability와 双向 내링크) ②**比率↔百分比 换算표**(2:1→33/3:1→25/4:1→20/5:1→17%) ③分母 之坑(跟注价 vs 底池총액) ④下注尺도→所需胜率 速查표(半池/满池).
+
+### holdem-outs
+- **누락 FAQ 이식 1문**: "9 outs 무슨 뜻"(~35% by river/19.1% turn).
+- **winnable**: ①**脏补牌 discount(打折补牌)**(97 vs QJT 来K로 대두가 대牌·최강) ②反向 outs ③2-4 误差 修正(所罗门: ×4 후 **−(outs−8)** = 3n+8. 15outs→53%≈真値54.1%. ★"4n−(8−n)=5n−8"은 오류였음, EN 마스터 값 3n+8 사용) ④手把手 7장 检算 演示.
+
+### holdem-drawing-odds
+- **누락 FAQ 이식 4문**: flush draw 정의·flop flush draw 完成 확률·4장 vs 3장(后门)·straight draw 정의.
+- **winnable**: ①**翻牌→河牌(2街) vs 转牌→河牌(1街) 分街 대조표**(35% vs 19.6% 幻觉 점파·최강) ②后门 runner-runner 4.2%/4.4%/2.6%/1.4% 整合 ③组合听牌 15outs+半诈唬 ④"35%는 前提 有: 转牌 被下注→1街만".
+
+### holdem-implied-odds
+- **누락 FAQ 이식 2문**: when to use implied·flush draw implied. **+공식 정정**: FAQ "−当前底池"→"−(当前底池+跟注)".
+- **winnable**: ①连锁 数字 실례(4:1 부족→成花후 河牌 X筹码 榨→값어치) ②반向隐含赔率(97 vs QJT 来K, 二流牌 套牢) ③**有效筹码 门槛**(浅筹码 20BB→隐含赔率≈0·新手 최다 실수) ④隐含 被 识破 折价 ⑤隐含 vs 底池 병렬 决策표.
+
+### holdem-equity
+- **누락 FAQ 이식 3문**: "20% equity 무슨 뜻"·"EV 무엇"·"equity vs EV 차이"(★EV 2문 GEO 가치 큼). +곡선따옴표 통일.
+- **winnable**: ①**总权益 = 摊牌胜率 + fold equity**(半诈唬 왜 盈利·최강, fold equity 独立문서와 분가된 걸 主线에 통합) ②权益实现 EqR 心算 판단표(位置·无위치 弱听牌 打折) ③胜率 vs equity(平局 포함 Equity%=胜率+0.5×平局率) 구분 ④4-2 失真上限(outs>14) ⑤equity↔pot odds 决策闭环.
+
+### 확률 클러스터 교훈
+- **决策链 내러티브가 클러스터 접착제**: probability(2-4로 胜率)→pot-odds(胜率 vs 赔率)→equity(胜率↔필요胜率)→implied(부족분 후속街 보충). 상호 내링크로 "胜率→赔率→跟不跟" 폐루프(간체 경쟁사 공백).
+- **术语**: 概率(非機率)·胜率/赢率·赔率(非賠率)·底池赔率·隐含赔率/反向隐含赔率·补牌/outs·脏补牌·二四法则(=四二法则)·所罗门法则·后门/runner-runner·权益/equity(英夹)·弃牌率/fold equity·权益实现 EqR·有效筹码·期望值 EV·翻牌/转牌/河牌.
+- 出处: zhihu p/567967774(12표)·p/41498337(2-4)·p/34182435(隐含)·p/51808351(EV vs Equity)·p/88578287(听牌)·p/659726530(后门4.2)·p/489073344(所罗门)·中扑网 dzpknews p/27158·36557·41594·dpskill chuji/124·dpgod teach/58·moshike a/2694·pokerqz(equity)·andypoker(fold equity).
