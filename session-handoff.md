@@ -35,8 +35,8 @@
 - 자동배포 케이던스([[en-hardening-autodeploy-cadence]]): 클러스터군 끝날 때마다 보고.
 
 ### 📋 간체 42편 클러스터 (ZH_CLUSTERS와 동일 구성 = 경화 순서 후보)
-- 규칙7: texas-holdem-rules-for-beginners(필라)·game-order·betting-actions·blind-meaning·all-in-rules·showdown-rules
-- 족보6: holdem-hand-rankings(필라)·flush-vs-straight·kicker·tiebreak-rules·split-pot-rules·reading-the-board
+- ✅ **규칙7 완료(2026-07-24 `12c960a`)**: texas-holdem-rules-for-beginners(필라)·game-order·betting-actions·blind-meaning·all-in-rules·showdown-rules — 경험담12+winnable FAQ18+신규边池산례. 적대적 QA §13 6편 0红. betting은 EN 07-11 풀패리티라 무변경. ★EN 검토항목: all-in 누적加注표 $15/$25행(EN L168 동일, 전언어 소급 후보). 리서치=`docs/translation-terms-zh.md §8-1`.
+- ▶ **다음 = 족보6**: holdem-hand-rankings(필라)·flush-vs-straight·kicker·tiebreak-rules·split-pot-rules·reading-the-board
 - 확률6: holdem-probability(필라)·pot-odds·outs·drawing-odds·implied-odds·equity
 - 전략8: holdem-strategy(필라)·positions·position-play·starting-hands-chart·limping·3bet·continuation-bet·when-to-fold
 - 토너먼트8: holdem-tournament(필라)·tournament-vs-cash-game·icm·bubble·short-stack·apt-incheon·korea-poker-marathon·wpt-australia·ept-barcelona

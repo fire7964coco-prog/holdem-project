@@ -3,6 +3,18 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-24 (★ 간체(zh) 규칙 클러스터 6편 경화 — 42편 경화 트랙 착수, 병렬 오케스트레이션)
+
+> 간체 42편 경화 시작(EN식 순차: 한 필라클러스터 완결→다음). EN 07-19 마스터 뼈대 + 편당 구글SERP3+rakko 리서치 + 간체 winnable 주입. `12c960a`.
+> ★rakko 간체 실측: 부모 키워드는 데이터 有(searchVolume, seoDiff 대개 null), 디테일 롱테일은 정량 null → WebSearch 경쟁사 FAQ 정성분석이 주신호. question-search(德州扑克)는 유효 골든리스트 반환.
+- **6편**: `texas-holdem-rules-for-beginners`(경험담3+FAQ3: 7选5·인원수·违法) · `holdem-game-order`(FAQ5: 换人로직·发牌vs下注·단挑·弃牌스킵·烧牌3장+경험담3) · `holdem-blind-meaning`(FAQ4: 왜盲注 死钱인과사슬·花色무관·ante비교표·小盲半注+경험담2) · `holdem-all-in-rules`(FAQ3+신규 三层边池 산례 A500/B1500/C4000→主池1500/边池2000/退2500+경험담2) · `holdem-showdown-rules`(FAQ3: 死牌·只亮一张·牌说话+경험담2+앵커통일) · `holdem-betting-actions`(EN 07-11 풀패리티=무변경, 날짜 위조 안 함).
+- **워크플로**: Phase1 리서치=나 중앙(rakko+구글SERP 리서치에이전트3 경쟁사FAQ+EN-zh 누락분 대조에이전트1) → Phase2 병렬 작가6 + 적대적 간체 네이티브 QA3(2편씩) → Phase3 나=수정·빌드·커밋.
+- **적대적 QA: §13 6편 全数通过·0红**(로열플러시 公共牌 平分 逐张·단挑 走位 B三条9 vs A두페어AAKK·팟체인 12k→28k→58k→198k·번카드3장·同花顺 Q高·三层边池 산술 독립 재검산 3500=3500·min-raise 增量 4곳). 繁简 혼입 0.
+- **🟠 수정**: CO 영문주도(关煞位 단독→CO(关煞位))·all-in "出局"→"封顶 只争主池"·showdown 只亮一张 실池 표현 완화. **non-issue**: rules FAQ `###`형식·game-order 3bet·rules CO는 EN 마스터 패리티라 유지.
+- **★EN 마스터 검토 항목**(전 언어 소급 후보): all-in 누적加注표 `$15(+5)/$25(+10)` 행 — C 단步 +$10이 이미 완전加注라 「累加」표에 부적절(결론은 정확). EN 원본 L168 동일 → EN에서 고치면 전 언어 동기화.
+- **리서치 축적**: `docs/translation-terms-zh.md §8-1`(규칙 클러스터 winnable·术语·出处 — 향후 신규 포스팅 재사용).
+- 발행 총계 불변: 57 blog + 448 intl(간체는 기존 42편 경화, 신규 아님). 다음=족보6 클러스터(hand-rankings·flush-vs-straight·kicker·tiebreak·split-pot·reading-board).
+
 ## 2026-07-23 (밤 — 잡무·품질 정비 6커밋: 영상문구·계산기색인·KO폭/타이포·번체 러닝맵/라벨)
 
 > 번체 42/42 완결 후 품질 정비 세션. 다음 세션 예정 = **간체(zh) 42편 경화**(session-handoff 최상단 참조).
