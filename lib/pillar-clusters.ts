@@ -600,6 +600,87 @@ export const ZH_CLUSTERS: PillarCluster[] = [
   },
 ];
 
+// 번체(대만·홍콩) — 슬러그는 전 언어 공유, 라벨만 번체 현지화. Live Events 그룹 라벨은 EN 유지.
+export const ZH_HANT_CLUSTERS: PillarCluster[] = [
+  {
+    id: "rules",
+    pillarSlug: "texas-holdem-rules-for-beginners",
+    pillarLabel: "規則",
+    nodes: [
+      { slug: "holdem-game-order", label: "牌局順序" },
+      { slug: "holdem-betting-actions", label: "下注動作" },
+      { slug: "holdem-blind-meaning", label: "盲注" },
+      { slug: "holdem-all-in-rules", label: "All-in 規則" },
+      { slug: "holdem-showdown-rules", label: "攤牌" },
+    ],
+  },
+  {
+    id: "rankings",
+    pillarSlug: "holdem-hand-rankings",
+    pillarLabel: "牌型大小",
+    nodes: [
+      { slug: "holdem-flush-vs-straight", label: "同花 vs 順子" },
+      { slug: "holdem-kicker", label: "踢腳牌" },
+      { slug: "holdem-tiebreak-rules", label: "平手判定" },
+      { slug: "holdem-split-pot-rules", label: "分池" },
+      { slug: "holdem-reading-the-board", label: "讀牌面" },
+    ],
+  },
+  {
+    id: "odds",
+    pillarSlug: "holdem-probability",
+    pillarLabel: "賠率與數學",
+    nodes: [
+      { slug: "holdem-pot-odds", label: "底池賠率" },
+      { slug: "holdem-outs", label: "數 outs" },
+      { slug: "holdem-drawing-odds", label: "聽牌賠率" },
+      { slug: "holdem-implied-odds", label: "隱含賠率" },
+      { slug: "holdem-equity", label: "勝率 equity" },
+    ],
+  },
+  {
+    id: "strategy",
+    pillarSlug: "holdem-strategy",
+    pillarLabel: "策略",
+    nodes: [
+      { slug: "holdem-positions", label: "位置" },
+      { slug: "holdem-position-play", label: "位置打法" },
+      { slug: "holdem-starting-hands-chart", label: "起手牌表" },
+      { slug: "holdem-limping", label: "跛入 limp" },
+      { slug: "holdem-3bet", label: "3bet" },
+      { slug: "holdem-continuation-bet", label: "c-bet" },
+      { slug: "holdem-when-to-fold", label: "何時棄牌" },
+    ],
+  },
+  {
+    id: "tournament",
+    pillarSlug: "holdem-tournament",
+    pillarLabel: "錦標賽",
+    nodes: [
+      { slug: "holdem-tournament-vs-cash-game", label: "錦標賽 vs 現金局" },
+      { slug: "holdem-icm", label: "ICM 基礎" },
+      { slug: "holdem-bubble", label: "bubble 打法" },
+      { slug: "holdem-short-stack", label: "短碼" },
+      { slug: "apt-incheon-2026-guide", label: "APT Incheon 2026", group: "Live Events" },
+      { slug: "korea-poker-marathon-2026", label: "Korea Marathon 2026", group: "Live Events" },
+      { slug: "wpt-australia-2026-guide", label: "WPT Australia 2026", group: "Live Events" },
+      { slug: "ept-barcelona-2026-guide", label: "EPT Barcelona 2026", group: "Live Events" },
+    ],
+  },
+  {
+    id: "glossary",
+    pillarSlug: "holdem-glossary",
+    pillarLabel: "術語表",
+    nodes: [
+      { slug: "holdem-straddle", label: "Straddle" },
+      { slug: "holdem-rake", label: "抽水 rake" },
+      { slug: "holdem-fish", label: "魚 fish" },
+      { slug: "holdem-cooler", label: "Cooler" },
+      { slug: "holdem-bad-beat", label: "Bad Beat" },
+    ],
+  },
+];
+
 export const ID_CLUSTERS: PillarCluster[] = [
   {
     id: "rules",

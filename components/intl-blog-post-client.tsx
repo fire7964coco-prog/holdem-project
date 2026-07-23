@@ -10,7 +10,7 @@ import type { Post } from "@/lib/posts";
 import { SITE } from "@/lib/site";
 import { POST_LABELS, NAV_CTA, NAV_HOME_FEED, dirForLocale, type SecondaryLocale } from "@/lib/intl";
 import { renderMarkdown, extractHeadings } from "@/app/blog/[slug]/blog-post-client";
-import { clusterForSlug, EN_CLUSTERS, JA_CLUSTERS, ES_CLUSTERS, PT_CLUSTERS, DE_CLUSTERS, ZH_CLUSTERS, ID_CLUSTERS, type PillarCluster } from "@/lib/pillar-clusters";
+import { clusterForSlug, EN_CLUSTERS, JA_CLUSTERS, ES_CLUSTERS, PT_CLUSTERS, DE_CLUSTERS, ZH_CLUSTERS, ZH_HANT_CLUSTERS, ID_CLUSTERS, type PillarCluster } from "@/lib/pillar-clusters";
 import ClusterMinimap from "@/components/cluster-minimap";
 import CommunityCTA from "@/components/community-cta";
 import BlogTopBar from "@/components/blog-top-bar";
@@ -131,9 +131,9 @@ export default function IntlBlogPostClient({
 
   const headings = extractHeadings(post.content);
   const hasToc = headings.length >= 2;
-  // 클러스터 미니맵: 전 필라를 완역한 로케일만(en·ja·es·pt·de·zh·id). 라벨은 로케일별 클러스터, UI라벨은 EN 유지.
+  // 클러스터 미니맵: 전 필라를 완역한 로케일만(en·ja·es·pt·de·zh·zh-hant·id). 라벨은 로케일별 클러스터, UI라벨은 EN 유지.
   const localeClusters: PillarCluster[] | null =
-    locale === "en" ? EN_CLUSTERS : locale === "ja" ? JA_CLUSTERS : locale === "es" ? ES_CLUSTERS : locale === "pt" ? PT_CLUSTERS : locale === "de" ? DE_CLUSTERS : locale === "zh" ? ZH_CLUSTERS : locale === "id" ? ID_CLUSTERS : null;
+    locale === "en" ? EN_CLUSTERS : locale === "ja" ? JA_CLUSTERS : locale === "es" ? ES_CLUSTERS : locale === "pt" ? PT_CLUSTERS : locale === "de" ? DE_CLUSTERS : locale === "zh" ? ZH_CLUSTERS : locale === "zh-hant" ? ZH_HANT_CLUSTERS : locale === "id" ? ID_CLUSTERS : null;
   const showMinimap = localeClusters !== null && clusterForSlug(post.slug, localeClusters) !== null;
   // 3단 배치: 목차(좌) · 본문(중앙) · 학습맵(우). 있는 것만 컬럼 생성.
   const gridClass =
