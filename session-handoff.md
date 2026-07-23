@@ -36,8 +36,8 @@
 
 ### 📋 간체 42편 클러스터 (ZH_CLUSTERS와 동일 구성 = 경화 순서 후보)
 - ✅ **규칙7 완료(2026-07-24 `12c960a`)**: texas-holdem-rules-for-beginners(필라)·game-order·betting-actions·blind-meaning·all-in-rules·showdown-rules — 경험담12+winnable FAQ18+신규边池산례. 적대적 QA §13 6편 0红. betting은 EN 07-11 풀패리티라 무변경. ★EN 검토항목: all-in 누적加注표 $15/$25행(EN L168 동일, 전언어 소급 후보). 리서치=`docs/translation-terms-zh.md §8-1`.
-- ▶ **다음 = 족보6**: holdem-hand-rankings(필라)·flush-vs-straight·kicker·tiebreak-rules·split-pot-rules·reading-the-board
-- 확률6: holdem-probability(필라)·pot-odds·outs·drawing-odds·implied-odds·equity
+- ✅ **족보6 완료(2026-07-24 `d1d4194`)**: hand-rankings(필라)·flush-vs-straight·kicker·tiebreak-rules·split-pot-rules·reading-the-board — 경험담 복원+winnable(有效踢脚표·打公牌·counterfeit·Split vs Side 대비표·坚果会变). 적대적 QA §13 6편 0红(신규 예시 14+개 독립 7选5 재검산). ★§13 오류 1건 사전차단(신규FAQ 顺子>同花 뒤집힘→교정). 리서치=§8-2.
+- ▶ **다음 = 확률6**: holdem-probability(필라)·pot-odds·outs·drawing-odds·implied-odds·equity (계산 최다 — QA에 확률·팟오즈·아웃츠 산수 전수 재검산 강하게)
 - 전략8: holdem-strategy(필라)·positions·position-play·starting-hands-chart·limping·3bet·continuation-bet·when-to-fold
 - 토너먼트8: holdem-tournament(필라)·tournament-vs-cash-game·icm·bubble·short-stack·apt-incheon·korea-poker-marathon·wpt-australia·ept-barcelona
 - 용어6: holdem-glossary(필라)·straddle·rake·fish·cooler·bad-beat

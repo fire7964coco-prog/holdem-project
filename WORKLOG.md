@@ -3,6 +3,16 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-24 (★ 간체(zh) 족보 클러스터 6편 경화 — 42편 경화 2번째, §13 최다 클러스터)
+
+> 규칙 클러스터에 이어 족보6(§13 최다=족보비교·타이브레이크·스플릿·읽기). `d1d4194`.
+- **6편**: `holdem-hand-rankings`(필라·경험담4 복원+표각주+winnable FAQ2[稀有度·短牌]) · `holdem-flush-vs-straight`(FAQ3[听牌胜率·短牌·同花顺 구분]+"顺子가 더 어려운데 왜 작나" 破解·频率 5108/10200 EN값) · `holdem-kicker`(A-K vs A-Q 逐张·**有效踢脚 수량표**[一对3/两对1/三条2/四条1]·公牌顶掉 平分+FAQ4 복원) · `holdem-tiebreak-rules`(**打公牌 play-the-board**·**counterfeit** 双标注·零头筹码+FAQ7 복원) · `holdem-split-pot-rules`(**Split vs Side pot 대비표**·假平分 陷阱·零头 분배) · `holdem-reading-the-board`(读牌 3步 流程·危险牌면 분류·坚果会变).
+- **워크플로**: Phase1 리서치=나 중앙(rakko+구글SERP 리서치에이전트3+누락분 대조1) → Phase2 병렬 작가6(EN-zh 자가대조로 누락 경험담·링크·FAQ 복원 + SERP winnable) → Phase3 적대적 간체 네이티브 QA3.
+- **★§13 오류 1건 사전 차단**: hand-rankings 신규 FAQ가 "顺子>同花"로 뒤집힘(표준=同花>顺子) → 커밋 전 내가 교정(标准=葫芦>同花>顺子 명시). 작가 자체 검증에서도 reading 작가가 "红桃 转牌 同花超越顺子" 성립불가를 간파해 정확한 형태(board 成对→四条/葫芦가 straight 초월)로 재설계.
+- **적대적 QA 3병렬: 6편 §13 全数通过 0红**. 신규 핸드예시 14+개 독립 7选5 재검산(kicker 6·tiebreak 8) + reading 20여 예시 전수 재계산 = 전부 결론 일치. 검증 핵심: 公牌顶掉 平分(2/3 best-5 밖)·counterfeit 真平分(양쪽 KK99A)·打公牌 C의 10 연장 독승·假平分 Q>J 독승·零头 $340/$330/$330·坚果会变 四条9/葫芦·频率 EN 逐格 일치·번체 0.
+- **🟠 1건 반영**: hand-rankings 읽기3 "四条K로도 葫芦 이길 수 있음" 지선 보강(EN L229 패리티). 나머지 🟠는 정밀 verbosity(무해)라 스킵.
+- **리서치 축적**: `docs/translation-terms-zh.md §8-2`(족보 winnable·术语[打公牌/counterfeit/有效踢脚표]·出处). 발행 총계 불변: 57 blog + 448 intl. 다음=확률6(probability·pot-odds·outs·drawing·implied·equity).
+
 ## 2026-07-24 (★ 간체(zh) 규칙 클러스터 6편 경화 — 42편 경화 트랙 착수, 병렬 오케스트레이션)
 
 > 간체 42편 경화 시작(EN식 순차: 한 필라클러스터 완결→다음). EN 07-19 마스터 뼈대 + 편당 구글SERP3+rakko 리서치 + 간체 winnable 주입. `12c960a`.
