@@ -5,7 +5,7 @@
 
 ---
 
-## ▶▶▶ 새 세션 START HERE (2026-07-23 — ★★★ 번체(zh-hant) 클러스터 병렬 오케스트레이션. 다음 = 다음 클러스터군)
+## ▶▶▶ 새 세션 START HERE (2026-07-23 — ★★★ 번체(zh-hant) 확률 클러스터 6편 완주(22/42). 다음 = 전략/토너먼트/용어 클러스터군 중 택1)
 
 > 읽는 순서: `CLAUDE.md` → 이 블록 → `docs/zh-hant-plan.md`(플랜·트래커) → `docs/translation-terms-zh-hant.md §7`(용어은행). 포스트 작업 전 `.cursor/rules/posting.mdc`도.
 
@@ -13,9 +13,10 @@
 **`docs/zh-hant-plan.md §5` 클러스터 목록에서 다음 클러스터군 하나를 골라, 아래 "병렬 오케스트레이션 워크플로" 그대로 돌려라.** 한 클러스터군 완주 → 보고 → 다음 (EN 경화 방식).
 
 ### 📍 현재 상태 (2026-07-23)
-- **번체 = 16/42편.** 필라 9/9 완주(hand-rankings·rules·probability·starting-hands-chart·position-play·pot-odds·glossary·strategy·tournament) + **룰 클러스터 7/7**(betting-actions·blind-meaning·all-in-rules·showdown-rules·tiebreak-rules·kicker·split-pot-rules). 전부 배포·적대적 검수 §13 통과.
-- 발행 총계: 57 blog + **422 intl**. 16편 상호링크 + 필라 역링크 복원됨.
-- **남은 = 클러스터 4군**(`§5`): 확률[outs·drawing-odds·equity·implied-odds·reading-the-board·flush-vs-straight] / 전략[3bet·continuation-bet·limping·when-to-fold·game-order] / 토너먼트[tvc·bubble·icm·short-stack] / 용어·문화[bad-beat·cooler·fish·rake·straddle·card-counting]. + 신규 winnable 후보(梭哈 vs 德州撲克·台灣合法 독립글).
+- **번체 = 22/42편.** 필라 9/9 + **룰 클러스터 7/7** + **확률 클러스터 6/6**(outs·drawing-odds·equity·implied-odds·reading-the-board·flush-vs-straight, 2026-07-23 배치). 전부 배포·적대적 대만 네이티브 §13 通過(치명0).
+- 발행 총계: 57 blog + **428 intl**. 상호링크 + 필라 역링크(pot-odds/probability/hand-rankings→확률 클러스터) 복원됨.
+- **남은 = 클러스터 3군**(`§5`): 전략[3bet·continuation-bet·limping·when-to-fold·game-order] / 토너먼트[tvc·bubble·icm·short-stack] / 용어·문화[bad-beat·cooler·fish·rake·straddle·card-counting]. + 신규 winnable 후보(梭哈 vs 德州撲克·台灣合法 독립글).
+- ★확률 클러스터 교훈: 중문 롱테일 suggest=0(정량 null 재확인) → 부모 headline+**리서치 에이전트 경쟁사 FAQ 정성분석**이 winnable 주신호. 계산 최다여도 편당 적대적 QA(街 라벨·분모·비교예시 전수 재검산)로 §13 병렬 안전망 완벽. winnable=髒補牌折扣·反向補牌·runner-runner·複合去重·근사vs정확 오차표·堅果반추·play-the-board 평분(경쟁사 공백).
 
 ### 🤖 병렬 오케스트레이션 워크플로 (사용자 확정 구조 — 룰 클러스터서 실증됨)
 > 원칙: **한 클러스터군씩** 처리(전체 팬아웃 X). 작가 에이전트 1 + 적대적 대만 네이티브 QA 에이전트 1을 **짝**으로, 전체 오케스트=너.

@@ -74,7 +74,7 @@
 
 ### 클러스터 (필라 후, 이어서)
 - [x] ✅ **룰 클러스터 7편 완주** (2026-07-22, ★병렬 오케스트레이션 첫 적용): `holdem-betting-actions`(下注動作·min-raise정확) / `holdem-blind-meaning`(盲注≠花色) / `holdem-all-in-rules`(邊池산수·反悔) / `holdem-showdown-rules`(亮牌禮儀·Slow Roll) / `holdem-tiebreak-rules`(底牌無效·疊牌) / `holdem-kicker`(牌型別 踢腳 대조표) / `holdem-split-pot-rules`(奇數籌碼給誰·合意Chop). 워크플로: Phase1 리서치(내가 중앙, taiwanrounders `three_basic_poker_rules` 정답지) → Phase2 병렬 작가7+적대적QA7(작가+검수 짝) → Phase3 링크복원+명사형H2+梭제거. **§13 7편 전부 통과(치명0)**. 형제글 상호링크+필라 역링크(hand-rankings→kicker/split, rules→blind/kicker/split) 복원. 배포.
-- [ ] ⬜ `holdem-outs` / `holdem-drawing-odds` / `holdem-equity` / `holdem-implied-odds` / `holdem-reading-the-board` / `holdem-flush-vs-straight` (확률 클러스터)
+- [x] ✅ **확률 클러스터 6편 완주** (2026-07-23, 병렬 오케스트레이션 2차·계산 최다): `holdem-outs`(髒補牌折扣·打折補牌·복합 去重) / `holdem-drawing-odds`(街별 分母 9/47·9/46·後門4.2%) / `holdem-equity`(棄牌權益 공식·반詐唬EV+$52·兌現率·멀티웨이) / `holdem-implied-odds`(反向·有效籌碼封頂·摸暗三條 11.8%) / `holdem-reading-the-board`(堅果반추·打公牌평분·危險牌面 checklist) / `holdem-flush-vs-straight`(同花>順子 頻率5108/10200·A不繞環·花色不比大小). 워크플로: Phase1 rakko headline+suggest(聽牌=0 재확인)+리서치에이전트3(경쟁사FAQ) → Phase2 병렬 작가6+적대적QA6(§13 街라벨·분모·비교예시 전수 재검산) → Phase3 앵커정정+상호링크+필라역링크(pot-odds/probability/hand-rankings→클러스터). **§13 6편 全數通過(치명0)**. winnable=髒補牌折扣·反向補牌·runner-runner·複合去重·오차표·堅果반추·play-the-board. 배포.
 - [ ] ⬜ `holdem-3bet` / `holdem-continuation-bet` / `holdem-limping` / `holdem-when-to-fold` / `holdem-game-order` (전략 클러스터)
 - [ ] ⬜ `holdem-tournament-vs-cash-game` / `holdem-bubble` / `holdem-icm` / `holdem-short-stack` (토너먼트 클러스터)
 - [ ] ⬜ `holdem-bad-beat` / `holdem-cooler` / `holdem-fish` / `holdem-rake` / `holdem-straddle` / `holdem-card-counting` (용어/문화 클러스터)

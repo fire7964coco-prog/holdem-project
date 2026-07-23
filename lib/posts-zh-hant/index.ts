@@ -16,6 +16,13 @@ import { POST as holdemShowdownRules } from "./holdem-showdown-rules";
 import { POST as holdemTiebreakRules } from "./holdem-tiebreak-rules";
 import { POST as holdemKicker } from "./holdem-kicker";
 import { POST as holdemSplitPotRules } from "./holdem-split-pot-rules";
+// Odds/확률 클러스터
+import { POST as holdemOuts } from "./holdem-outs";
+import { POST as holdemDrawingOdds } from "./holdem-drawing-odds";
+import { POST as holdemEquity } from "./holdem-equity";
+import { POST as holdemImpliedOdds } from "./holdem-implied-odds";
+import { POST as holdemReadingTheBoard } from "./holdem-reading-the-board";
+import { POST as holdemFlushVsStraight } from "./holdem-flush-vs-straight";
 
 /**
  * 중국어 번체(zh-hant · 대만/홍콩) 블로그 포스트.
@@ -50,7 +57,14 @@ export const ZH_HANT_POSTS: Post[] = [
   holdemTiebreakRules,
   holdemKicker,
   holdemSplitPotRules,
-  // 다음: odds/strategy/tournament/glossary 클러스터
+  // ── Odds/확률 클러스터 (2026-07-23 배치) ──
+  holdemOuts,
+  holdemDrawingOdds,
+  holdemEquity,
+  holdemImpliedOdds,
+  holdemReadingTheBoard,
+  holdemFlushVsStraight,
+  // 다음: strategy/tournament/glossary 클러스터
 ];
 
 const ZH_HANT_SLUGS = new Set(ZH_HANT_POSTS.map((p) => p.slug));
