@@ -5,7 +5,51 @@
 
 ---
 
-## ▶▶▶ 새 세션 START HERE (2026-07-22 밤 — ★★ 번체(zh-hant·대만) 트랙 신설 + 족보 1편 배포. 다음 = 규칙부터 순서대로)
+## ▶▶▶ 새 세션 START HERE (2026-07-23 — ★★★ 번체(zh-hant) 클러스터 병렬 오케스트레이션. 다음 = 다음 클러스터군)
+
+> 읽는 순서: `CLAUDE.md` → 이 블록 → `docs/zh-hant-plan.md`(플랜·트래커) → `docs/translation-terms-zh-hant.md §7`(용어은행). 포스트 작업 전 `.cursor/rules/posting.mdc`도.
+
+### 🚀 한 줄
+**`docs/zh-hant-plan.md §5` 클러스터 목록에서 다음 클러스터군 하나를 골라, 아래 "병렬 오케스트레이션 워크플로" 그대로 돌려라.** 한 클러스터군 완주 → 보고 → 다음 (EN 경화 방식).
+
+### 📍 현재 상태 (2026-07-23)
+- **번체 = 16/42편.** 필라 9/9 완주(hand-rankings·rules·probability·starting-hands-chart·position-play·pot-odds·glossary·strategy·tournament) + **룰 클러스터 7/7**(betting-actions·blind-meaning·all-in-rules·showdown-rules·tiebreak-rules·kicker·split-pot-rules). 전부 배포·적대적 검수 §13 통과.
+- 발행 총계: 57 blog + **422 intl**. 16편 상호링크 + 필라 역링크 복원됨.
+- **남은 = 클러스터 4군**(`§5`): 확률[outs·drawing-odds·equity·implied-odds·reading-the-board·flush-vs-straight] / 전략[3bet·continuation-bet·limping·when-to-fold·game-order] / 토너먼트[tvc·bubble·icm·short-stack] / 용어·문화[bad-beat·cooler·fish·rake·straddle·card-counting]. + 신규 winnable 후보(梭哈 vs 德州撲克·台灣合法 독립글).
+
+### 🤖 병렬 오케스트레이션 워크플로 (사용자 확정 구조 — 룰 클러스터서 실증됨)
+> 원칙: **한 클러스터군씩** 처리(전체 팬아웃 X). 작가 에이전트 1 + 적대적 대만 네이티브 QA 에이전트 1을 **짝**으로, 전체 오케스트=너.
+- **Phase 1 — 리서치 (네가 중앙, 위임 X):** 그 클러스터군의 부모 키워드로 rakko `headline`(상위 H2 골격·경쟁사) + `suggest-keywords`(**부모 키워드 seoDifficulty 1회 확인** — winnable 확증용) + **리서치 서브에이전트로 WebSearch 경쟁사 FAQ 수집** → 편별 브리프(winnable FAQ 3~5개·대만 용어·존재하는 링크 대상). ★winnable 발굴은 네 판단이라 위임 금지.
+- **Phase 2 — 병렬 (작가+QA 짝):** 편마다 작가 에이전트(general-purpose) 팬아웃 = EN 마스터(`lib/posts-en/<slug>.ts`)+용어은행(§7)+스타일레퍼런스(기존 zh-hant 글)+브리프+스펙으로 `lib/posts-zh-hant/<slug>.ts` 작성. 전원 완료 후 편마다 **적대적 대만 네이티브 QA 에이전트** 팬아웃(§13 전 예 재검산+용어+繁簡+링크+명사형H2).
+- **Phase 3 — 통합 (네가):** ①7편 `lib/posts-zh-hant/index.ts` 등록 ②`npm run build`(422→회복 확인) ③QA 지적 일괄 수정 ④**링크 복원**(형제 클러스터가 이제 다 존재 → 상호링크 + 필라 역링크. 억지 X, EN parity) ⑤빌드 ⑥커밋·푸시 ⑦플랜 트래커·WORKLOG 갱신.
+- **커밋/빌드는 직렬**(git·build 레이스 회피). 작가 프롬프트에 "index.ts·빌드·git 건드리지 마" 명시.
+
+### ⛓️ 철칙 (절대 불변 — 어기면 치명)
+1. **§13 = EN 마스터에서 그대로 이식, 재계산 금지.** 핸드예시·카드·확률·籌碼 산수 한 개도 바꾸지 말 것. 카드 `10`(T 금지)·무늬기호 ♠♥♦♣. 용어 오역이 족보/규칙 의미를 깨는지만 확인. **적대적 QA가 편마다 베스트5장+산수 전수 재검산**(이 안전망 덕에 병렬 7/7 통과).
+2. **직역 아님 = 대만 현지 재저작.** H2는 **명사형**(영어식 질문형 H2 금지), 질문은 `## 常見問題 FAQ` 블록에만(`**Q. …？**`/`A.`). 中(英) 병기. 경험담은 대만 맥락(撲克室/現場局/家局), **없는 사실 창작 금지**.
+3. **내부링크 = 존재하는 zh-hant 슬러그에만** `/zh-hant/blog/<slug>`(trailing slash 없음). 미존재는 텍스트, 클러스터 쌓이면 복원. `npm run build`의 check-intl-links가 미존재 링크 시 빌드 실패시킴.
+4. **용어 = `docs/translation-terms-zh-hant.md §7` 용어은행 준수**(재사용·일관성). 이미지=18언어 공용(경로 동일·alt만 번체).
+5. **자동배포 케이던스**([[en-hardening-autodeploy-cadence]]): 리서치 끝나면 작업→빌드→커밋→푸시 자동, 결과만 보고. 클러스터군 끝날 때마다 보고.
+
+### 🔑 용어/표기 교훈 (QA서 실제로 잡힌 것 — 반복 금지)
+- **CO/HJ/LJ는 영문 표제어 주도**(關煞位=대만 실사용 아님, glossary 검수 교훈). UTG/SB/BB는 한자 병기 OK.
+- **數據庫→資料庫**(database), **對映→對應**, **弃→蓋/棄**, **概率→機率**, **筹码→籌碼**. 全下 표기에서 **「梭」 쓰지 말 것**(梭哈=Show Hand/Stud 혼동).
+- 대만 특화 winnable(경쟁 공백)을 살려라: 水上/水下·台灣合法嗎·撲克協會·亮牌禮儀·奇數籌碼給誰·底牌無效 등 — 娛樂城 상위稿가 얇은 지점.
+
+### 🔍 키워드 방법론 (2026-07-23 실측 확정)
+- 중문 **디테일 롱테일은 rakko 정량 데이터가 거의 null**(예: 踢腳牌·平手·分池·攤牌 = seoDiff/vol null). suggest-keywords로 winnable 판정 불가한 영역.
+- 그래서 **① 부모 키워드만 suggest로 seoDifficulty 1회**(winnable 확증: 德州撲克規則34·術語19·大小盲17 = 저경쟁 = 니치 진입가능) **② 디테일 winnable은 경쟁사 SERP/FAQ 정성 분석이 주신호**(리서치 에이전트). 정량 null이라고 winnable 없는 게 아님.
+
+### 🎬 별건 — ★오늘(2026-07-23) 마감 임박
+**레인지 영상 임베드**: ID `BdHjSUDoBow`, **2026-07-23 16:00 KST 예약공개**(오늘!). 공개 확인 후 `/blog/holdem-range-meaning` "실전 사례" 섹션 상단에 리드문+`:::youtube[BdHjSUDoBow]:::` 삽입(KO만 + VideoObject 스키마). 메모리 [[range-video-embed-pending]]. → 세션 시작 시 공개 여부부터 확인.
+
+### 🟢 백로그
+- 전 언어 공통: Day1 타임라인/체크리스트 등 EN 마스터 인라인 카드가 다크테마 스타일(rgba(255,255,255,.06)) → 현 크림/그린 라이트 테마서 테두리 흐림. 크로스랭귀지 일괄 수정 후보(스타일, 콘텐츠 아님).
+- 소급: #3~#6은 winnable FAQ 보강 완료. 다른 필라도 여유 시 경쟁사 FAQ 재점검 가능.
+
+---
+
+## ▶▶▶ (이전) START HERE (2026-07-22 밤 — ★★ 번체(zh-hant·대만) 트랙 신설 + 족보 1편 배포. 다음 = 규칙부터 순서대로)
 
 > ### 🚀 이 작업만 이어가려면 (한 줄)
 > **`docs/zh-hant-plan.md` 읽고 번체 트랙 다음 순서(`texas-holdem-rules-for-beginners`)부터 이어서 진행해.** (플랜·진행트래커·워크플로우·용어·구조규칙 전부 그 문서에 있음)
