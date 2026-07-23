@@ -420,3 +420,24 @@
 - **short-stack**: M值 5존(Green20+/Yellow10-20/Orange6-10/Red1-5/Dead<1·M≈bb÷1.5)·push-fold 범위·shove 응대·偷盲.
 - **术语**: 锦标赛/MTT·现金局/cash·买入 buy-in·升盲·赔付/奖金分配·卫星赛·重买/增购·独立筹码模型ICM·筹码价值·决赛桌交易/deal(平分/筹码占比chip chop/ICM分法)·泡沫期/钱圈·泡沫系数·吃泡·M值·短筹码 push-fold. ⚠️简体=筹码/概率/锦标赛/决赛/奖金(非籌碼/機率/錦標賽/決賽/獎金).
 - 출처: legendpoker 3674/2984·moshike 2700/3754/998/1255/1910/1271·poker588 4105/5611/2995/3282/10913·dzpknews 23122/32740·dpskill jinjie/387/304·zhihu p/35613583/131318644/27964283.
+
+## 8-6. 용어 클러스터 (2026-07-24 리서치·마지막 클러스터로 42/42 완결)
+
+**rakko 간체**: 术语=0·抽水=澳门/赌场. 공통: 간체 용어 SERP = **평铺 词典(知乎)·软文·词条·繁体 越界**. 최강 winnable = **量化표+실전 牌例 锚定+中立 视角+新马 语境**(경쟁사 집단 결핍).
+
+**★공통 경화 처방(누락분 대조 — 완전 편별)**:
+- **★§13 안전 확인**: bad-beat quad aces 오역 **없음**(zh "只有同花顺能击败四条A" 정확), cooler set over set(7♣7♦ vs J♠J♥ → 三J胜三7) EN 정합. es/pt/de/id의 "四条A=두번째 강한손" 오역이 zh엔 **부재** → §13 무변경(재계산 금지).
+- **★도입부 glossary 링크(+thumb) 누락 3편**([[rehardening-stale-link-drift]] 재현): **straddle·fish·bad-beat**의 EN 07-19 도입부 마지막 문장(`[poker glossary](/zh/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp")` 인라인 링크)이 옛 번역본에 통째로 누락 → 복원 필수.
+- **FAQ/용어 누락**: rake 5문(who pays·pay less·**illegal[Molly's Game]**·tournaments have rake·win-rate)·cooler 3문(KK vs AA cooler·**set over set 확률 ~1%/1:96**·casino cooler[The Cooler 2003])·glossary Money표 4행(No-limit/Limit·PLO·GTD·Hand-for-hand).
+- **날짜**: 6편 stale(07-04/05), masterUpdated 신설. tldr 이미 2~3줄.
+- **★카니발 회피**: glossary=A-Z 速查(단일용어는 一句+내링크) / straddle·rake·fish·cooler·bad-beat=단점 深挖 + glossary 역링크. glossary는 단일용어 전략 미전개, 단일용어문은 术语 速查 미제공.
+
+### 편별 winnable (§13은 EN값 이식)
+- **glossary(필라)**: **新手 최다 혼동 术语 配对**(Check/Call·Bet/Raise·Set/Trips·Cutoff/Button·Fold/Muck·최강)·实战 牌例 锚定(底池100 跟20=5:1·16.7%)·绰号 速查(AA=口袋火箭)·场景 聚类(现金局 vs 锦标赛 黑话)·Money표 4행 이식.
+- **straddle**: **三种 straddle 대비표**(UTG/密西西比/**沉睡 Sleeper**·최강 공백)·被 straddle 后 起手范围 调整(有效筹码 100→50BB·小对子/투기牌 掉价)·数学 SPR·术语(抓/盲抓/强抓). 카니발: 단점 深挖.
+- **rake**: **NL 抽水 吃掉利润 量化表**(NL5/10/25·최강)·"底池5%≠盈利5%" 반직관(60底 抽6=底10%인데 盈利 20% 잠식)·手抽 vs 局抽 vs 台费·澳门 vs 线上 vs 私局 横评·返水 실拿·**台湾/일부 线上 5% 不封顶 陷阱**·no flop no drop. **FAQ 5문 이식.**
+- **fish**: **判鱼 阈值表**(VPIP 40+/PFR<15/gap>25=跟注站·VPIP 40-70/PFR높고乱=疯鱼·최강)·鱼 分型×剥削(跟注站→薄价值 重注 不诈唬·疯鱼→收紧+坚果陷阱)·选桌 5信号·"我自己是不是鱼" 자검. VPIP/PFR EN값(40-70/15-22).
+- **cooler**: **纯 cooler vs 伪 cooler 판정 框架**(打法 漏洞 자기위안?·최강)·set over set 检算(输方 ~4 outs 河前 8-9%로 葫芦/四条 반超·**0 outs 아님**)·cooler vs bad beat 边界표. **FAQ 3문 이식.** §13: AA vs KK 80/20·set over set ~1% EN값 이식.
+- **bad-beat**: **Bad Beat Jackpot 完整 中文 지남**(触发·摊牌·两张底牌·현금局·奖金분배·简体 蓝海·최강)·方差=长期必然 数学化(0.8^5 반면≈0.03%)·"其实是你给了赔率". **★§13 quad aces 불변**(四条=3번째 카테고리·只有同花顺 이김·"第二强" 금지). 2008 WSOP Mabuchi K♦J♦ river A♦ 로열=EN값.
+- **术语**: 术语/黑话·straddle/加码盲注/抓·密西西比/沉睡 straddle·抽水rake/返水rakeback/封顶cap/台费·鱼fish/跟注站/疯鱼/VPIP入池率/PFR·冤家牌cooler/暗三条撞暗三条 set over set·爆冷bad beat/爆冷大奖jackpot/方差variance/上头tilt. ⚠️简体=筹码/概率/四条/机率→概率(非籌碼/機率/四條).
+- 출처: zhihu p/629274421·517868198·128598924·32943517·554104222·622509818·42114 / moshike a/1646/803/1252/159·dpskill jinjie/33·chuji/687/712·legendpoker/2938/3311/3556 / pukefanshui·pokerprochina/2100(澳门 rake)·PokerListings/Wizard of Odds(BBJ 英文) / taiwanrounders(强抓 번체) / 中扑网 dzpknews/23871/42114.
