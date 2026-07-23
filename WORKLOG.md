@@ -3,6 +3,16 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-24 (★ 간체(zh) 토너먼트 클러스터 9편 경화 — 42편 경화 5번째, 라이브이벤트 §14 동기화)
+
+> 전략8에 이어 토너먼트9(마지막 전). `0dfd810`. §13 계산은 9편 EN 완전 일치 → 전략5=FAQ+winnable, 이벤트4=§14 사실 EN verbatim 동기화.
+- **전략 5편**: `holdem-tournament`(필라·FAQ2[赚钱·운vs실력]+升盲 winnable) · `holdem-tournament-vs-cash-game`(FAQ2[开局BB·상금과세]+生存 EV vs 累积 EV 원리) · `holdem-icm`(FAQ1[흔한실수3]+AJ 阈值 EN 48-50%) · `holdem-bubble`(FAQ3[吃泡·폴드·**泡沫系数**]+大码 vs 短码) · `holdem-short-stack`(FAQ2[all-in or fold·shove응대]+反偷盲).
+- **라이브이벤트 4편(§14 사실=EN verbatim)**: `apt-incheon`(위성 좌석 **52→45**[+$500credits]·**22→12**·K-ETA 22국면제/e-Arrival 3곳) · `korea-marathon`(춘천 报名中→**报名截止售罄**+YTN/Garmin status) · `wpt-australia`(NSW상한 2027$1,000·carded·트로피 2종 **Prime Perpetual/Mike Sexton Champions Cup**) · `ept-barcelona`(날짜+巴塞罗那 검수, 사실 완전일치).
+- **적대적 QA 4병렬: 9편 §13/§14 全数통과 0红**. ICM 재귀 자릿수 독립 재산(P2nd 33.9/37.5/28.6·ICM$ 38.39/32.75/28.86=$100·deal 618/485/397·$617.86→$618)·버블팩터(bf/(1+bf) 50/57/60/63/67%)·M値 5존·WPT Seminole $4,592,000 + 이벤트 사실 EN 逐格 대조.
+- **🔴 2건 커밋 전 QA 적발·교정**: ①short-stack L191 고아 `A.`(反偷盲 FAQ 추가 시 M-ratio Q행 삭제됨)→Q행 복원 ②apt-incheon T2 셔틀 게이트 zh 2A→EN **4A**(2곳, §14 사실). 번체 0.
+- **★EN 마스터 검토 후보**: ept Gold Pass `$10,300`(EN) vs `€10,300`(zh) 통화기호 — EN 자체 내부 불일치(zh는 € 일관), EN 수정 시 전 언어 동기화.
+- **리서치 축적**: `docs/translation-terms-zh.md §8-5`. 발행 총계 불변: 57 blog + 448 intl. **다음=마지막 용어6**(glossary·straddle·rake·fish·cooler·bad-beat)로 42/42 완결.
+
 ## 2026-07-24 (★ 간체(zh) 전략 클러스터 8편 경화 — 42편 경화 4번째, 최다 8편)
 
 > 확률6에 이어 전략8(최다). `6f7eeab`. 8편 모두 EN 풀패리티였던 상태 → 작업 = §13 오차 교정 + FAQ 이식 + winnable + tldr.

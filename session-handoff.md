@@ -39,9 +39,10 @@
 - ✅ **족보6 완료(2026-07-24 `d1d4194`)**: hand-rankings(필라)·flush-vs-straight·kicker·tiebreak-rules·split-pot-rules·reading-the-board — 경험담 복원+winnable(有效踢脚표·打公牌·counterfeit·Split vs Side 대비표·坚果会变). 적대적 QA §13 6편 0红(신규 예시 14+개 독립 7选5 재검산). ★§13 오류 1건 사전차단(신규FAQ 顺子>同花 뒤집힘→교정). 리서치=§8-2.
 - ✅ **확률6 완료(2026-07-24 `89c85f9`)**: probability(필라)·pot-odds·outs·drawing-odds·implied-odds·equity — FAQ19문 이식+winnable(换算표·误差표·分街표·五步실례·总权益+fold equity)+**tldr 2~3줄 강화**+implied 공식 정정. 적대적 QA §13 6편 0红(fold equity +$52·換算표 전수 손계산). ★신규 지침 [[tldr-two-to-three-lines]] 적용 시작. 리서치=§8-3.
 - ✅ **전략8 완료(2026-07-24 `6f7eeab`)**: strategy(필라)·positions·position-play·starting-hands-chart·limping·3bet·continuation-bet·when-to-fold — §13 오차3 교정(88+→TT+·A5s30→28%·80-86→80-85%)+FAQ7 이식+winnable(6漏洞·三层速记·IP vs OOP·面对3bet MDF·沉没成본)+tldr. 적대적 QA §13 8편 0红. 劫机位→劫持位·CO 영문주도. 리서치=§8-4.
-- ▶ **다음 = 토너먼트8(마지막 전 클러스터)**: holdem-tournament(필라)·tournament-vs-cash-game·icm·bubble·short-stack·apt-incheon·korea-poker-marathon·wpt-australia·ept-barcelona
-  - ★라이브이벤트4(apt/korea/wpt/ept)는 **§14 사실=EN 母稿 verbatim**(rakko/官網 숫자 갱신 금지·TBA hedge 보존). ICM 재귀·M値·버블팩터=§13 최고난도 → QA에 Malmuth-Harville 재귀 전수 재검산 지정. ⚠️EN 마스터 결함(WPT "36場 vs 표 12場") 그대로 이식.
-- 용어6: holdem-glossary(필라)·straddle·rake·fish·cooler·bad-beat
+- ✅ **토너먼트9 완료(2026-07-24 `0dfd810`)**: tournament(필라)·tvc·icm·bubble·short-stack + 라이브이벤트4(apt-incheon·korea-marathon·wpt-australia·ept-barcelona) — 전략5=FAQ13+winnable, 이벤트4=§14 사실 EN verbatim 동기화. 적대적 QA §13/§14 9편 0红(ICM 재귀 자릿수 재산·이벤트 逐格 대조). 🔴 2건 교정(short-stack Q행·apt 게이트 4A). ★EN 검토: ept Gold Pass $/€ 불일치. 리서치=§8-5.
+- ▶ **다음 = 용어6(마지막 클러스터, 완결)**: holdem-glossary(필라)·straddle·rake·fish·cooler·bad-beat
+  - ★glossary는 각 편=단일 용어 심화 vs glossary A-Z → **카니발 회피**(작가에 차별화 지시 + glossary 역링크). bad-beat §13 레드라인: 四条=3번째 카테고리(only straight flush beats·quad aces 오역 주의). §13 가볍지만 [[rehardening-stale-link-drift]] 도입부 링크 누락 전수 점검.
+  - **이 클러스터 완료 시 간체 42/42 완결 = EN 마스터 유니버스 전 언어 3번째(JA·zh-hant 이어).**
 - ★라이브이벤트4(apt/korea/wpt/ept)는 §14 사실=EN 母稿 verbatim(rakko/官網 숫자 갱신 금지).
 
 ---
