@@ -622,7 +622,7 @@ export const ZH_HANT_CLUSTERS: PillarCluster[] = [
       { slug: "holdem-flush-vs-straight", label: "同花 vs 順子" },
       { slug: "holdem-kicker", label: "踢腳牌" },
       { slug: "holdem-tiebreak-rules", label: "平手判定" },
-      { slug: "holdem-split-pot-rules", label: "分池" },
+      { slug: "holdem-split-pot-rules", label: "平分底池" },
       { slug: "holdem-reading-the-board", label: "讀牌面" },
     ],
   },
@@ -632,7 +632,7 @@ export const ZH_HANT_CLUSTERS: PillarCluster[] = [
     pillarLabel: "賠率與數學",
     nodes: [
       { slug: "holdem-pot-odds", label: "底池賠率" },
-      { slug: "holdem-outs", label: "數 outs" },
+      { slug: "holdem-outs", label: "補牌" },
       { slug: "holdem-drawing-odds", label: "聽牌賠率" },
       { slug: "holdem-implied-odds", label: "隱含賠率" },
       { slug: "holdem-equity", label: "勝率 equity" },
@@ -649,7 +649,7 @@ export const ZH_HANT_CLUSTERS: PillarCluster[] = [
       { slug: "holdem-limping", label: "跛入 limp" },
       { slug: "holdem-3bet", label: "3bet" },
       { slug: "holdem-continuation-bet", label: "c-bet" },
-      { slug: "holdem-when-to-fold", label: "何時棄牌" },
+      { slug: "holdem-when-to-fold", label: "何時蓋牌" },
     ],
   },
   {
@@ -657,9 +657,9 @@ export const ZH_HANT_CLUSTERS: PillarCluster[] = [
     pillarSlug: "holdem-tournament",
     pillarLabel: "錦標賽",
     nodes: [
-      { slug: "holdem-tournament-vs-cash-game", label: "錦標賽 vs 現金局" },
+      { slug: "holdem-tournament-vs-cash-game", label: "錦標賽 vs 現金桌" },
       { slug: "holdem-icm", label: "ICM 基礎" },
-      { slug: "holdem-bubble", label: "bubble 打法" },
+      { slug: "holdem-bubble", label: "泡泡期" },
       { slug: "holdem-short-stack", label: "短碼" },
       { slug: "apt-incheon-2026-guide", label: "APT Incheon 2026", group: "Live Events" },
       { slug: "korea-poker-marathon-2026", label: "Korea Marathon 2026", group: "Live Events" },
