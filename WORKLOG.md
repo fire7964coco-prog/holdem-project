@@ -3,6 +3,15 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-23 (★★ 번체(zh-hant) 전략 클러스터 5편 배포 — 병렬 오케스트레이션 3차)
+
+> 확률 클러스터에 이어 **전략 클러스터** 동일 병렬 오케스트레이션. 사이징·빈도 위주 §13 중간 난이도. 리서치 `docs/translation-terms-zh-hant.md`·플랜 `docs/zh-hant-plan.md §5`.
+- **5편**: `holdem-3bet`(價值vs邊緣3bet·사이징표 IP3x/OOP4-4.5x·擠壓·面對3bet 결정트리·MDF4.5/13.5=33%·블로커 AA6→3/AK16→12) · `holdem-continuation-bet`(持續下注·尺寸→牌面 대응표·延後c-bet·何時check·乾濕牌面 빈도·子彈/手榴彈/火箭炮는 俚語로만) · `holdem-limping`(跛入 -EV·隔離加注isolate·limp-reraise 陷阱·跛入 허용 3情境) · `holdem-when-to-fold`(蓋牌=省錢·頂對 결정트리·沉沒成本謬誤·過度蓋牌vs過度跟注 MDF·聽牌賠率不足就蓋) · `holdem-game-order`(行動順序·翻前UTG先/翻후SB先·大盲option·燒牌3장·Home Game 爭議 대만 오리지널 경험담).
+- **워크플로**: Phase1 리서치=나 중앙(rakko headline 3bet/持續下注/跛入/什麼時候蓋牌 + suggest 3bet=vol10 seoDiff null 재확인 + 리서치에이전트3 경쟁사FAQ) → Phase2 병렬 작가5 + 적대적 대만 네이티브 QA5(사이징·c-bet빈도·핸드예시·isolate·頂對결정·行動順序 재검산) → Phase3 나=index등록·빌드·앵커정정·상호링크+필라역링크.
+- **적대적 QA: §13 5편 전부 全數通過·🔴 0**(3bet 3×3bb=9/4×3bb=12/MDF33%/AA6→3/AK16→12/A♠Q♠ on Q♦8♣4♥·c-bet 55-70%/$30→$10·$20·A♣K♦ 頂對頂踢腳·limping set11.8%/isolate 사이징 母稿미제공→미창작 준수·when-to-fold 門檻표25/29/33/37.5%/A♥K♣ 兩對→蓋·game-order 全牌例 A♠K♥ vs 9♦9♣=三條9 勝 兩對). 경쟁사 자산값 미사용. **사이징 무거운 클러스터도 병렬 §13 완벽.**
+- **링크복원(EN parity)**: 앵커 정정 3(game-order 全下→all-in-rules·c-bet 基本下注動作→betting-actions·strategy L104 [3-bet]→holdem-3bet, 이전엔 glossary였음) + 형제 상호링크(3bet↔continuation-bet·limping→3bet·c-bet→3bet·when-to-fold→3bet) + 필라 역링크(strategy 결정표→limping/continuation-bet·결정5→when-to-fold · rules-for-beginners 誰先行動→game-order). winnable=isolate·limp-reraise·頂對결정트리·沉沒成본·翻前vs翻후 換人先·大盲option·燒牌 = 경쟁사(대만稿 극薄) 공백 흡수.
+- 발행: 57 blog + **433 intl**(zh-hant 27편 = 필라9+룰7+확률6+전략5). 다음=토너먼트 or 용어 클러스터.
+
 ## 2026-07-23 (★★ 번체(zh-hant) 확률 클러스터 6편 배포 — 병렬 오케스트레이션 2차, 계산 최다 클러스터)
 
 > 룰 클러스터에 이어 **확률 클러스터**(§13 수치 최다)를 동일 병렬 오케스트레이션으로. 사용자 확정: 순수 병렬 유지 + 계산 무거운 클러스터는 QA 강화. 리서치 `docs/translation-terms-zh-hant.md`(축적)·플랜 `docs/zh-hant-plan.md §5`.
