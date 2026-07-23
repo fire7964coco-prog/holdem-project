@@ -5,7 +5,59 @@
 
 ---
 
-## ▶▶▶ 새 세션 START HERE (2026-07-23 — ★★★★ 번체(zh-hant) 42/42 = EN 마스터 유니버스 전체 완결. 다음 = 타 언어 재경화 or KO 본진 or 신규 대만 winnable)
+## ▶▶▶ 새 세션 START HERE (2026-07-24 — ★★★ 다음 작업 = 기존 **간체(zh) 번역본 42편 경화**)
+
+> 읽는 순서: `CLAUDE.md` → 이 블록 → `.cursor/rules/posting.mdc` → (참고) 아래 "(이전)" 번체 블록의 병렬 워크플로·철칙. 용어은행은 번체용(`docs/translation-terms-zh-hant.md`)이라 **간체는 기존 zh 글의 정착 표기 + 간체 표준**을 따를 것.
+
+### 🚀 한 줄
+**`lib/posts-zh/*.ts`(간체 42편)를 현재 EN 마스터 기준으로 재경화한다.** 이 번역본들은 `updated` 07-03/07-06 = **EN 2026-07-19 경화(경험담+GEO+도입부링크+FAQ+§13수정) 이전**이라 stale. EN이 그동안 추가한 걸 소급 이식 + 간체 현지 경험담·GEO 주입. 클러스터군 단위로, 번체(zh-hant) 때 쓴 **병렬 오케스트레이션 워크플로 그대로**.
+
+### 📍 현재 상태 (2026-07-24 시작 시점)
+- **간체(zh) = 42/42편 이미 존재**(EN·번체와 동수 풀 패리티). 파일 = `lib/posts-zh/<slug>.ts`, 라우트 `/zh/blog/<slug>`. 미니맵=`ZH_CLUSTERS`로 **이미 활성**(추가작업 불필요).
+- ★그러나 **경화 이전 상태(stale)**: `updated` 대부분 07-03~07-06 → EN 마스터가 07-19에 넣은 **1인칭 경험담·GEO(H2 롱테일 질문화·Q-A-E·표)·도입부 내부링크·FAQ·§13 수정**이 이 간체본엔 **미반영**. → [[rehardening-stale-link-drift]] 시나리오(es·pt·de·zh·id 반복 예상 중 zh 차례).
+- zh 글엔 `masterUpdated` 필드 없음 → EN `updated`와 직접 비교 불가 → **§14 전수 대조**(EN 마스터 vs 간체본 문단·FAQ·링크·§13 예시)로 누락분 색출이 1단계.
+
+### 🎯 "경화"의 정의 (이 작업에서 할 것)
+1. **누락분 소급 이식** — 현재 EN 마스터(`lib/posts-en/<slug>.ts`)에 있는데 간체본에 없는 것: 도입부 내부링크, FAQ 항목, GEO용 롱테일 H2, 표, §13 수정분. (구조·뼈대는 EN과 동일해야 함.)
+2. **1인칭 경험담 주입** — 간체 현지 맥락(대륙/싱가포르/말레이 화교 撲克室·线上). ==없는 사실 창작 금지==, 중간 톤.
+3. **GEO** — H2를 간체 실검색 형태로(질문형 H2 지양, 명사형 + FAQ 블록에 질문), Q-A-E 골격, 인용가능 패시지.
+4. **§13 불변** — 핸드예시·카드·확률·칩 산수는 **EN 마스터에서 그대로**, 재계산 금지. 적대적 간체 네이티브 QA가 편마다 베스트5장+산수 전수 재검산.
+
+### ⚠️ 간체 특유 주의 (번체와 다름!)
+- **표기: 간체 표준.** 번체 교훈을 그대로 복사하지 말 것 — 번체 `機率`↔간체 `概率`, 번체 `籌碼`↔간체 `筹码`, 번체 `資料庫`↔간체 `数据库`. 기존 zh 글의 정착 표기를 스타일 레퍼런스로 우선.
+- **키워드/검색시장 차이**: Google 중문 SEO는 번체(대만·홍콩) 우선([[chinese-seo-traditional-taiwan-first]]). 간체는 대륙(구글 미사용)이 아니라 **싱가포르·말레이시아 등 해외 화교** 타깃. rakko는 JA 전용 → **간체 winnable은 WebSearch 경쟁사 FAQ 정성분석**이 주신호. (정량 데이터 기대 말 것.)
+- ★**전략 판단 필요**: 간체 경화의 ROI를 사용자와 먼저 합의하면 좋음(번체가 중문 SEO 본진인데 간체에 얼마나 투자할지). 사용자가 하기로 결정했으니 진행하되, 방향은 확인.
+
+### 🤖 워크플로 (번체서 실증된 병렬 오케스트레이션 재사용)
+- **Phase 1 리서치(네가 중앙)**: 클러스터군 부모 키워드로 경쟁사 SERP/FAQ 정성분석(리서치 서브에이전트 WebSearch) → 편별 브리프(winnable FAQ·간체 용어·EN 대비 누락분 목록).
+- **Phase 2 병렬(작가+QA 짝)**: 편마다 작가 에이전트 = EN 마스터+기존 간체본(스타일 레퍼런스)+브리프로 `lib/posts-zh/<slug>.ts` **경화 편집**. 완료 후 편마다 **적대적 간체 네이티브 QA**(§13 재검산+간체 표기+GEO H2+누락분 이식 확인).
+- **Phase 3 통합(네가)**: 빌드(check-intl-links 통과)→QA수정→링크복원(간체 슬러그만)→빌드→커밋·푸시→WORKLOG 갱신. **커밋/빌드 직렬**, 작가엔 "index·빌드·git 금지".
+- 자동배포 케이던스([[en-hardening-autodeploy-cadence]]): 클러스터군 끝날 때마다 보고.
+
+### 📋 간체 42편 클러스터 (ZH_CLUSTERS와 동일 구성 = 경화 순서 후보)
+- 규칙7: texas-holdem-rules-for-beginners(필라)·game-order·betting-actions·blind-meaning·all-in-rules·showdown-rules
+- 족보6: holdem-hand-rankings(필라)·flush-vs-straight·kicker·tiebreak-rules·split-pot-rules·reading-the-board
+- 확률6: holdem-probability(필라)·pot-odds·outs·drawing-odds·implied-odds·equity
+- 전략8: holdem-strategy(필라)·positions·position-play·starting-hands-chart·limping·3bet·continuation-bet·when-to-fold
+- 토너먼트8: holdem-tournament(필라)·tournament-vs-cash-game·icm·bubble·short-stack·apt-incheon·korea-poker-marathon·wpt-australia·ept-barcelona
+- 용어6: holdem-glossary(필라)·straddle·rake·fish·cooler·bad-beat
+- ★라이브이벤트4(apt/korea/wpt/ept)는 §14 사실=EN 母稿 verbatim(rakko/官網 숫자 갱신 금지).
+
+---
+
+### ✅ 직전 세션(2026-07-23) 완료 — 잡무·품질 정비 (커밋 순)
+1. **레인지 영상 문구**(`540988b`): 자막 시청 후 `/blog/holdem-range-meaning` "먼저 보세요" 리드문을 영상 실내용(패턴 소거)·롱테일 키워드에 맞게 재작성. ★채널명 언급 금지(채널명 변경 예정).
+2. **계산기 색인 보강**(`8ac8d23`): `/calculator` 기본탭(outs)만 초기렌더 → 탭 뒤 갇힌 SPR존·M값존·아웃츠 데이터를 하단 정적표 3개로 노출(구글 색인). FAQ 2건 추가. §13 검증(ec()과 1:1).
+3. **KO 블로그 본문 폭 확대**(`37788c9`): `max-w-7xl→1440px`, 3열 사이드바 `190/230 gap6→180/210 gap5`. 본문 780→978px(중국어판 수준).
+4. **KO 타이포 다듬기**(`1523408`): `.blog-prose`에 line-break:strict·hanging-punctuation·optimizeLegibility·리스트 margin. (자간·word-break·text-wrap은 이미 최적이라 유지.)
+5. **번체 러닝맵 활성화**(`3f14e9e`): `ZH_HANT_CLUSTERS` 신설(6필라41슬러그, 번체 라벨)+intl-blog-post-client에 zh-hant 분기. 41슬러그 전부 실존 확인.
+6. **번체 라벨 교정**(`e684eb7`): 포스트 실제용어와 5건 일치 — 何時棄牌→蓋牌, 現金局→現金桌, 數outs→補牌, bubble打法→泡泡期, 分池→平分底池. (39/41은 정상.)
+
+> 참고: `.claude/`·`.mcp.json`·docs 일부·supabase/schema.sql은 이번 세션 전부터 있던 미스테이지 변경 — 건드리지 않음(무관 커밋 금지).
+
+---
+
+## ▶▶▶ (이전) START HERE (2026-07-23 — ★★★★ 번체(zh-hant) 42/42 = EN 마스터 유니버스 전체 완결. 다음 = 타 언어 재경화 or KO 본진 or 신규 대만 winnable)
 
 > 읽는 순서: `CLAUDE.md` → 이 블록 → `docs/zh-hant-plan.md`(플랜·트래커) → `docs/translation-terms-zh-hant.md §7`(용어은행). 포스트 작업 전 `.cursor/rules/posting.mdc`도.
 

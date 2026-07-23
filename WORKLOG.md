@@ -3,6 +3,17 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-23 (밤 — 잡무·품질 정비 6커밋: 영상문구·계산기색인·KO폭/타이포·번체 러닝맵/라벨)
+
+> 번체 42/42 완결 후 품질 정비 세션. 다음 세션 예정 = **간체(zh) 42편 경화**(session-handoff 최상단 참조).
+- **레인지 영상 문구**(`540988b`): 자막 시청 후 `/blog/holdem-range-meaning` "먼저 보세요" 리드문을 영상 실내용(안토니우스 패턴 소거)·롱테일 키워드에 맞게 재작성. 채널명 언급 금지(채널명 변경 예정).
+- **계산기 색인 보강**(`8ac8d23`): `/calculator` 기본탭(outs)만 초기 프리렌더 → SPR존·M값존·아웃츠 데이터가 탭 뒤에 갇혀 구글 미색인이던 것을 하단 정적표 3개 + FAQ 2건으로 노출. 수치는 `ec()` 함수·표준확률표와 1:1(§13 검증). 프리렌더 HTML 포함 확인.
+- **KO 블로그 본문 폭 확대**(`37788c9`): `max-w-7xl(1280)→max-w-[1440px]`, 3열 `[190/1fr/230]gap6→[180/1fr/210]gap5`. 본문 780→978px(중국어판 ≈988px 수준). `.blog-prose` max-width 없어 컨테이너만 넓혀 반영.
+- **KO 타이포 다듬기**(`1523408`): `.blog-prose` line-break:strict + hanging-punctuation + text-rendering:optimizeLegibility + font-kerning + 리스트 margin. (자간 -0.01em·word-break:keep-all·text-wrap pretty/balance는 이미 최적이라 유지. 전역 antialiased/kern 중복 배제.)
+- **번체 러닝맵 활성화**(`3f14e9e`): `ZH_HANT_CLUSTERS` 신설(6필라·41슬러그·번체 라벨) + `intl-blog-post-client`에 zh-hant 분기·import. 미니맵 41슬러그 전부 ZH_HANT_POSTS 실존 확인(깨진링크0). 그간 zh-hant만 미니맵 로케일 분기에서 누락돼 있었음.
+- **번체 라벨 교정**(`e684eb7`): 포스트 실제용어 대조로 5건 일치 — 何時棄牌→蓋牌·現金局→現金桌·數outs→補牌·bubble打法→泡泡期·分池→平分底池. 39/41은 정상(踢腳牌·平手·勝率Equity·跛入 등 대만 통용 확인).
+- 발행 총계 불변: 57 blog + 448 intl.
+
 ## 2026-07-23 (★★★★ 번체(zh-hant) positions + 라이브이벤트 4편 배포 — EN 마스터 유니버스 42/42 완결)
 
 > 사용자 확인: EN 경화본 뼈대 동일 + H2만 현지 롱테일 검색형 + 저경쟁 gap 신규 H2. pub은 EN에 없음(KO 전용 필라)→제외 확정. 라이브이벤트=세계대회(지역색 아님)→동일 작업. 남은 5편(positions + 이벤트 4)으로 42/42 마감.
