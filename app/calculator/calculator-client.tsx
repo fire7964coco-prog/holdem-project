@@ -1387,6 +1387,120 @@ export default function CalculatorPage() {
           </div>
         </div>
 
+        {/* 빠른 참조표 — 아웃츠·SPR·M값 (인터랙티브 도구 데이터의 정적 요약, 색인용) */}
+        <div>
+          <p className="mb-3"><span className="badge-gold">빠른 참조</span></p>
+          <h2 className="text-xl sm:text-2xl font-black text-foreground mb-3">아웃츠별 완성 확률표 — Rule of 4 · 2</h2>
+          <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-5 max-w-3xl">
+            드로우 완성 확률은 <strong className="text-foreground">아웃츠</strong>(내 패를 완성시키는 남은 카드) 수로 정해집니다. 플랍에서 리버까지 두 장을 볼 때는 <strong className="text-foreground">아웃츠 × 4</strong>, 턴에서 한 장만 볼 때는 <strong className="text-foreground">아웃츠 × 2</strong>가 빠른 암산값이고, 아래는 정확한 계산값입니다.
+          </p>
+          <div className="overflow-x-auto rounded-xl border border-border">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="bg-card border-b border-border">
+                  <th className="px-3 py-2.5 text-left font-bold text-muted-foreground">드로우 예시</th>
+                  <th className="px-3 py-2.5 text-right font-bold text-muted-foreground">아웃츠</th>
+                  <th className="px-3 py-2.5 text-right font-bold text-primary">플랍→리버 (2장)</th>
+                  <th className="px-3 py-2.5 text-right font-bold text-muted-foreground">턴→리버 (1장)</th>
+                </tr>
+              </thead>
+              <tbody>
+                {([
+                  ["원페어 → 트리플", "2", "8.4%", "4.3%"],
+                  ["거트샷 스트레이트", "4", "16.5%", "8.7%"],
+                  ["오버카드 2장", "6", "24.1%", "13.0%"],
+                  ["양방 스트레이트 (OESD)", "8", "31.5%", "17.4%"],
+                  ["플러시 드로우", "9", "35.0%", "19.6%"],
+                  ["플러시 + 거트샷", "12", "45.0%", "26.1%"],
+                  ["플러시 + 양방 (최강)", "15", "54.1%", "32.6%"],
+                ] as [string, string, string, string][]).map(([d, o, f, t]) => (
+                  <tr key={d} className="border-b border-border/60 last:border-0">
+                    <td className="px-3 py-2.5 font-bold text-foreground">{d}</td>
+                    <td className="px-3 py-2.5 text-right font-mono text-muted-foreground">{o}</td>
+                    <td className="px-3 py-2.5 text-right font-mono font-bold text-foreground">{f}</td>
+                    <td className="px-3 py-2.5 text-right font-mono text-muted-foreground">{t}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mt-5 max-w-3xl">
+            다른 아웃츠 수와 정밀값은 위 <strong className="text-foreground">아웃츠 계산기</strong>에서 바로 확인할 수 있고, 아웃츠 세는 법은 <a href="/blog/holdem-outs-calculation" className="text-primary font-semibold underline underline-offset-2">아웃츠 세는 법</a>에서 자세히 다룹니다.
+          </p>
+        </div>
+
+        {/* SPR 구간 기준표 */}
+        <div>
+          <p className="mb-3"><span className="badge-gold">빠른 참조</span></p>
+          <h2 className="text-xl sm:text-2xl font-black text-foreground mb-3">SPR(스택-팟 비율) 구간별 전략</h2>
+          <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-5 max-w-3xl">
+            SPR은 <strong className="text-foreground">유효 스택 ÷ 현재 팟</strong>입니다. 값이 낮을수록 이미 팟에 커밋된 상태라 탑페어급으로도 올인이 정당화되고, 높을수록 셋·너트급 핸드가 필요합니다.
+          </p>
+          <div className="overflow-x-auto rounded-xl border border-border">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="bg-card border-b border-border">
+                  <th className="px-3 py-2.5 text-left font-bold text-muted-foreground">SPR 구간</th>
+                  <th className="px-3 py-2.5 text-left font-bold text-primary">성격</th>
+                  <th className="px-3 py-2.5 text-left font-bold text-muted-foreground">필요 핸드 강도 · 액션</th>
+                </tr>
+              </thead>
+              <tbody>
+                {([
+                  ["< 4", "커밋 구간", "TPTK(탑페어 탑키커) 이상이면 올인 고려 — 폴드가 오히려 손해일 수 있음"],
+                  ["4–8", "유연 구간", "투페어 이상으로 밸류 베팅, 스택 보호가 중요"],
+                  ["8–15", "딥스택 시작", "셋 이상은 강하게, 드로우는 임플라이드 오즈 상승"],
+                  ["> 15", "딥스택", "너트급으로만 큰 팟 — 약한 메이드는 블러핑에 취약"],
+                ] as [string, string, string][]).map(([r, c, a]) => (
+                  <tr key={r} className="border-b border-border/60 last:border-0">
+                    <td className="px-3 py-2.5 font-mono font-bold text-foreground whitespace-nowrap">{r}</td>
+                    <td className="px-3 py-2.5 font-bold text-foreground whitespace-nowrap">{c}</td>
+                    <td className="px-3 py-2.5 text-muted-foreground">{a}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        {/* M값 존 기준표 */}
+        <div>
+          <p className="mb-3"><span className="badge-gold">빠른 참조</span></p>
+          <h2 className="text-xl sm:text-2xl font-black text-foreground mb-3">토너먼트 M값 존(Harrington's M) 기준표</h2>
+          <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-5 max-w-3xl">
+            M값은 <strong className="text-foreground">내 스택 ÷ 한 바퀴(오빗) 비용(SB+BB+앤티 합)</strong>으로, 블라인드를 몇 바퀴 버틸 수 있는지를 나타냅니다. 해링턴의 5개 존에 따라 전략이 완전히 달라집니다.
+          </p>
+          <div className="overflow-x-auto rounded-xl border border-border">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="bg-card border-b border-border">
+                  <th className="px-3 py-2.5 text-left font-bold text-muted-foreground">존</th>
+                  <th className="px-3 py-2.5 text-right font-bold text-primary">M값</th>
+                  <th className="px-3 py-2.5 text-left font-bold text-muted-foreground">전략</th>
+                </tr>
+              </thead>
+              <tbody>
+                {([
+                  ["💀 데드 존", "< 1", "즉시 올인 — 핸드 선택 여유 없음"],
+                  ["🔴 레드 존", "1–5", "푸시/폴드, 빠른 더블업 필요"],
+                  ["🟠 오렌지 존", "6–9", "레인지를 좁혀 강한 핸드 위주 선제 올인"],
+                  ["🟡 옐로우 존", "10–19", "어그레시브하게 칩 확보"],
+                  ["🟢 그린 존", "20+", "자유로운 전략 — 포지션·블러프 활용"],
+                ] as [string, string, string][]).map(([z, m, s]) => (
+                  <tr key={z} className="border-b border-border/60 last:border-0">
+                    <td className="px-3 py-2.5 font-bold text-foreground whitespace-nowrap">{z}</td>
+                    <td className="px-3 py-2.5 text-right font-mono font-bold text-foreground whitespace-nowrap">{m}</td>
+                    <td className="px-3 py-2.5 text-muted-foreground">{s}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mt-5 max-w-3xl">
+            M값·스택 압박 개념이 더 궁금하면 <a href="/blog/holdem-tournament-vs-cash-game" className="text-primary font-semibold underline underline-offset-2">토너먼트 vs 캐시게임</a>을 참고하세요.
+          </p>
+        </div>
+
         {/* FAQ */}
         <div>
           <p className="mb-3"><span className="badge-gold">FAQ</span></p>
