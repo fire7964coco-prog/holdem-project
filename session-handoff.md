@@ -38,8 +38,9 @@
 - ✅ **규칙7 완료(2026-07-24 `12c960a`)**: texas-holdem-rules-for-beginners(필라)·game-order·betting-actions·blind-meaning·all-in-rules·showdown-rules — 경험담12+winnable FAQ18+신규边池산례. 적대적 QA §13 6편 0红. betting은 EN 07-11 풀패리티라 무변경. ★EN 검토항목: all-in 누적加注표 $15/$25행(EN L168 동일, 전언어 소급 후보). 리서치=`docs/translation-terms-zh.md §8-1`.
 - ✅ **족보6 완료(2026-07-24 `d1d4194`)**: hand-rankings(필라)·flush-vs-straight·kicker·tiebreak-rules·split-pot-rules·reading-the-board — 경험담 복원+winnable(有效踢脚표·打公牌·counterfeit·Split vs Side 대비표·坚果会变). 적대적 QA §13 6편 0红(신규 예시 14+개 독립 7选5 재검산). ★§13 오류 1건 사전차단(신규FAQ 顺子>同花 뒤집힘→교정). 리서치=§8-2.
 - ✅ **확률6 완료(2026-07-24 `89c85f9`)**: probability(필라)·pot-odds·outs·drawing-odds·implied-odds·equity — FAQ19문 이식+winnable(换算표·误差표·分街표·五步실례·总权益+fold equity)+**tldr 2~3줄 강화**+implied 공식 정정. 적대적 QA §13 6편 0红(fold equity +$52·換算표 전수 손계산). ★신규 지침 [[tldr-two-to-three-lines]] 적용 시작. 리서치=§8-3.
-- ▶ **다음 = 전략8**: holdem-strategy(필라)·positions·position-play·starting-hands-chart·limping·3bet·continuation-bet·when-to-fold (★8편으로 최다·positions는 EN 07-11이라 패리티 근접 여부 확인. tldr 2~3줄 계속 적용)
-- 토너먼트8: holdem-tournament(필라)·tournament-vs-cash-game·icm·bubble·short-stack·apt-incheon·korea-poker-marathon·wpt-australia·ept-barcelona
+- ✅ **전략8 완료(2026-07-24 `6f7eeab`)**: strategy(필라)·positions·position-play·starting-hands-chart·limping·3bet·continuation-bet·when-to-fold — §13 오차3 교정(88+→TT+·A5s30→28%·80-86→80-85%)+FAQ7 이식+winnable(6漏洞·三层速记·IP vs OOP·面对3bet MDF·沉没成본)+tldr. 적대적 QA §13 8편 0红. 劫机位→劫持位·CO 영문주도. 리서치=§8-4.
+- ▶ **다음 = 토너먼트8(마지막 전 클러스터)**: holdem-tournament(필라)·tournament-vs-cash-game·icm·bubble·short-stack·apt-incheon·korea-poker-marathon·wpt-australia·ept-barcelona
+  - ★라이브이벤트4(apt/korea/wpt/ept)는 **§14 사실=EN 母稿 verbatim**(rakko/官網 숫자 갱신 금지·TBA hedge 보존). ICM 재귀·M値·버블팩터=§13 최고난도 → QA에 Malmuth-Harville 재귀 전수 재검산 지정. ⚠️EN 마스터 결함(WPT "36場 vs 표 12場") 그대로 이식.
 - 용어6: holdem-glossary(필라)·straddle·rake·fish·cooler·bad-beat
 - ★라이브이벤트4(apt/korea/wpt/ept)는 §14 사실=EN 母稿 verbatim(rakko/官網 숫자 갱신 금지).
 

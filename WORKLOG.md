@@ -3,6 +3,15 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-24 (★ 간체(zh) 전략 클러스터 8편 경화 — 42편 경화 4번째, 최다 8편)
+
+> 확률6에 이어 전략8(최다). `6f7eeab`. 8편 모두 EN 풀패리티였던 상태 → 작업 = §13 오차 교정 + FAQ 이식 + winnable + tldr.
+- **8편**: `holdem-strategy`(필라·FAQ4[raise vs call·技术or运气·GTO·怎么变强]+6致命漏洞 자검清单) · `holdem-positions`(**劫机位→劫持位 17곳**·CO 영문주도·几号位 FAQ, EN 07-11 패리티) · `holdem-position-play`(★§13 **UTG 코어 88+→TT+**·IP vs OOP 대조표·OOP 弥补 3框架) · `holdem-starting-hands-chart`(본문개정[입池率=raw mean보다 낮음]·**三层速记法+口诀**·AA 统一口径 85% vs 30.87%) · `holdem-limping`(AA 多人池 量화 85→49%·풀패리티) · `holdem-3bet`(★§13 **A5s 30→28%**·FAQ2[4bet/5bet]·面对3bet MDF 66.6%) · `holdem-continuation-bet`(value bet FAQ·尺寸→干湿查表·언제 check) · `holdem-when-to-fold`(★§13 **80-86→80-85%** 2곳·MDF 弃牌上限 速查[半池33/满池50/2/3池40]·沉没成本).
+- **★§13 오차 3건 필수 교정**(누락분 대조가 색출): position-play 88+→TT+·3bet A5s 30→28%·when-to-fold 80-86→80-85%. 전부 반영·QA 확인.
+- **적대적 QA 4병렬: 8편 §13 全数通过 0红**. sizing 3×3=9/4×3=12bb·blocker AA6→3/AK16→12·MDF 4.5÷13.5=33%·弃牌 66.6%·AA 9-way 30.87%·MDF 弃牌上限표·TPTK 전수 독립 손계산. 번체 0.
+- **🟠 수정 2건**: strategy raise-vs-call FAQ 중복(작가 실수·EN엔 1개)→삭제 / position-play "就三条"→"三件事"(5점 나열 count 불일치). 나머지 🟠는 EN 상속·KST 날짜(07-24=현지 정상)·中英혼배(EN도 영문)라 스킵.
+- **리서치 축적**: `docs/translation-terms-zh.md §8-4`. 발행 총계 불변: 57 blog + 448 intl. **다음=마지막 용어6**(glossary·straddle·rake·fish·cooler·bad-beat).
+
 ## 2026-07-24 (★ 간체(zh) 확률 클러스터 6편 경화 — 42편 경화 3번째, 계산 최다 + tldr 2~3줄 신규 지침)
 
 > 족보6에 이어 확률6(계산 최다). `89c85f9`. ★사용자 신규 지침: **tldr(한줄정리)를 2~3줄 자기완결 직답 단락으로**(구글 AI답변式·GEO, [[tldr-two-to-three-lines]]) — 확률6부터 적용.
