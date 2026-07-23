@@ -15,6 +15,14 @@ export const POST: Post = {
   image: "/images/holdem-range-hand-notation.webp",
   imageAlt: "어두운 포커 테이블에서 잭·퀸·킹·에이스 스페이드 카드를 펼쳐 든 손을 흑백으로 담은 장면",
   tags: ["핸드 레인지", "레인지 차트", "포지션별 레인지", "레인지 리딩", "폴라라이즈드 레인지", "GTO 레인지", "익스플로잇 전략"],
+  video: {
+    name: "홀덤 뭉카 잡는 법 | 프로는 상대의 눈에서 무엇을 보나 (레인지 읽기)",
+    description: "안토니우스가 바텀페어로 상대의 리버 올인을 받아낸 레인지 읽기 실전 해설. 스트리트마다 상대 레인지에서 강한 패를 하나씩 지워 나가는 3단계 소거를 실제 하이스테이크 핸드로 보여준다.",
+    thumbnailUrl: "https://i.ytimg.com/vi/BdHjSUDoBow/hqdefault.jpg",
+    uploadDate: "2026-07-23",
+    embedUrl: "https://www.youtube.com/embed/BdHjSUDoBow",
+    contentUrl: "https://www.youtube.com/watch?v=BdHjSUDoBow",
+  },
   content: `
 ![어두운 포커 테이블에서 J·Q·K·A 스페이드 카드를 펼쳐 든 손을 흑백으로 담은 장면](/images/holdem-range-hand-notation.webp "레인지 = 상대가 들 수 있는 패의 '범위' — 한 장이 아니라 묶음으로 생각한다")
 
@@ -176,6 +184,10 @@ UTG가 레이즈하면 "이 사람은 프리미엄 핸드다"라고 신뢰도가
 ## 실전 사례 — 바텀페어로 올인을 받아낸 안토니우스
 
 위 3단계가 이론이 아니라는 걸 세계 최고 수준의 한 핸드로 확인해보자. **2022 트리톤 슈퍼 하이롤러($25K NLH, 북키프로스)**, 131명 중 3~4명만 남은 파이널 상황에서 나온 핸드다.
+
+==아래 핸드를 홀덤마스터 채널 영상으로 먼저 보면== 스트리트별 3단계 레인지 소거가 훨씬 선명하게 들어온다.
+
+:::youtube[BdHjSUDoBow]:::
 
 | 구분 | 내용 |
 |------|------|

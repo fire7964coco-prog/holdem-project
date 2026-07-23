@@ -77,6 +77,15 @@ export interface Post {
    order?: "Ascending" | "Descending";
    items: { name: string; description?: string }[];
  };
+ video?: {
+   name: string;
+   description: string;
+   thumbnailUrl: string;
+   uploadDate: string;
+   embedUrl: string;
+   contentUrl?: string;
+   duration?: string;
+ };
 }
 
 const LEGACY_POSTS: Post[] = [

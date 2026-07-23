@@ -198,11 +198,32 @@ export default function Page({ params }: { params: { slug: string } }) {
       }
     : null;
 
+  // 자체 채널(@holdemmasterTV) 영상 임베드 시 VideoObject (소유자이므로 적합)
+  const videoSchema = post.video
+    ? {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        name: post.video.name,
+        description: post.video.description,
+        thumbnailUrl: post.video.thumbnailUrl,
+        uploadDate: post.video.uploadDate,
+        embedUrl: post.video.embedUrl,
+        ...(post.video.contentUrl ? { contentUrl: post.video.contentUrl } : {}),
+        ...(post.video.duration ? { duration: post.video.duration } : {}),
+        publisher: {
+          "@type": "Organization",
+          name: "홀덤마스터",
+          logo: { "@type": "ImageObject", url: `${SITE}/favicon.svg` },
+        },
+      }
+    : null;
+
   const graph = [
     articleSchema,
     breadcrumbSchema,
     ...(eventSchema ? [eventSchema] : []),
     ...(itemListSchema ? [itemListSchema] : []),
+    ...(videoSchema ? [videoSchema] : []),
     ...(faqSchema ? [faqSchema] : []),
   ];
 
