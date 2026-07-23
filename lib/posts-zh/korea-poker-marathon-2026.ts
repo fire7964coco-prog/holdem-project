@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "韩国最好的秋季马拉松（春川 10 月 25 日、JTBC 首尔 11 月 1 日、Garmin Run 11 月 15 日）正好赶上完美的跑步天气。仁川机场旁的 Paradise City Casino 全年开放现金局——只对外国人开放，离航站楼 10 分钟。一趟行程两样都能拿下。",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-07-03",
+  updated: "2026-07-24",
+  masterUpdated: "2026-07-20",
   keepImagesInBody: true,
   readTime: "14 分钟",
   emoji: "🏃",
@@ -66,10 +67,10 @@ export const POST: Post = {
 | 赛事 | 日期 | 距离 | 地点 | 外国人报名 | 状态 |
 |---|---|---|---|---|---|
 | Dong-A 首尔国际马拉松 | 2026 年 3 月 | 全程、10K | 首尔 | [dongamarathon.com](https://www.dongamarathon.com) | 2026 已结束 |
-| ==**YTN 首尔 Tour Marathon**== | ==**9 月 6 日**== | 半程、10K | Seoul Plaza | [run.ytn.co.kr](http://run.ytn.co.kr) | 7 月 15 日截止 |
-| ==g:**春川马拉松**== | ==g:**10 月 25 日**== | ==g:全程、10K== | ==g:春川== | ==g:[chuncheonmarathon.com](https://www.chuncheonmarathon.com)== | ==g:报名中== |
+| ==**YTN 首尔 Tour Marathon**== | ==**9 月 6 日**== | 半程、10K | Seoul Plaza | [run.ytn.co.kr](http://run.ytn.co.kr) | 7 月 10 日截止 |
+| ==g:**春川马拉松**== | ==g:**10 月 25 日**== | ==g:全程、10K== | ==g:春川== | ==g:[chuncheonmarathon.com](https://www.chuncheonmarathon.com)== | ==g:报名截止（售罄）== |
 | ==**JTBC 首尔马拉松**== | ==**11 月 1 日**== | 全程、10K | 首尔（上岩） | [worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon) | 外国人名额（早满·请确认） |
-| Garmin Run Korea | 11 月 15 日 | 半程、10K | 高阳 | [runable.me](http://runable.me/product/18977?comp=18962) | 7 月 1–3 日报名 |
+| Garmin Run Korea | 11 月 15 日 | 半程、10K | 高阳 | [runable.me](http://runable.me/product/18977?comp=18962) | 已截止（报名为 7 月 1–3 日） |
 
 </div>
 

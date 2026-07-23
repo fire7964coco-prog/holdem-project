@@ -397,3 +397,26 @@
 - **8편 이미 EN 풀패리티** → 작업 = §13 오차 3건 교정 + FAQ 7문 이식 + SERP winnable + 날짜 + tldr 확인. 신규 §13 사이징/胜率 예시는 EN값 이식(자작 금지).
 - positions↔position-play 카니발 방화벽(名称/顺序 vs 打法, 상호 내링크). CO=영문주도, HJ=劫持位.
 - 출처: zhihu p/545873553·87002964·579490599·509231149·1948442072·661866191·41768753·352739425·649260218·87176701 / dpskill jinjie/809·chuji/17/93/289 / legendpoker/dpgod/moshike 教学站 / pokernews.com.tw(limp 번체 표준) / 奶牛关 2187726(isolate).
+
+## 8-5. 토너먼트 클러스터 (2026-07-24 리서치)
+
+**rakko 간체**: 锦标赛 suggest = 技巧·新手·策略·时间·**奖金分配**·规则·攻略·**台北/台湾**. 공통: 간체 토너 SERP = 概念 맞으나 **数字 缺·一律 ICMizer 甩**(计算 회피). 최강 winnable = **可复现 数字 演算 + 速查표**(EN 마스터가 이미 보유 → 이식). 라이브이벤트: 번체站(monsterstack·taiwanrounders)이 현장정보 최강이나 繁体 → 简体 재작이 blue ocean.
+
+**★공통 경화 처방(누락분 대조 — 완전 편별)**: 도입부 링크·H2·표·§13 계산은 **9편 전부 EN 풀패리티**(icm/bubble/short-stack/tournament/tvc §13 재검산 불요=완전 일치). 진짜 갭:
+- **★§14 이벤트 사실 stale 3건(EN이 정답, verbatim 동기화)**:
+  - **apt-incheon**: Natural8 표 Mega Satellite `52个席位→45 seats(含7个 $500 credits)`·OnLive Day1 `22个→12 seats` / K-ETA `免签或K-ETA(在线5分)`→EN 경화 `2026-12-31까지 K-ETA 면제 + 무료 e-Arrival Card·22国 면제`.
+  - **korea-marathon**: 춘천마라톤 status 표+하이라이트 `报名中`→`报名截止(售罄 sold out)`.
+  - **wpt-australia**: NSW 현금상한 `NSW Casino Control Act·AUD$5,000`→EN `NSW 現金處理改革·$5,000(2026-09까지)·2027-08부터 $1,000/日 예정·Star Club 카드로 carded` / 트로피 두 칸 `WPT Champions Cup`→EN 구분 `Prime=WPT Prime Perpetual Trophy / Championship=Mike Sexton Champions Cup+WC Seat`.
+  - ept-barcelona: **완전 일치**(날짜만 stale). ★라이브이벤트 §14는 **EN 母稿 verbatim, rakko/官網 숫자 갱신 금지**.
+- **FAQ 누락 13문**: tournament 3(ITM 뜻·조기이탈 칩·운vs실력)·tvc 2(홈캐시 칩수·상금 과세)·icm 2(언제 무시·흔한 실수3)·bubble 3(pay/burst bubble·버블 폴드·**泡沫系数 뭐**)·short-stack 3(all-in or fold·shove 응대·숏일때 min-raise).
+- **날짜**: 9편 stale(07-03/09/11), masterUpdated 신설. tldr 이미 2~3줄.
+- **주의**: `/calculator`(로케일 없음)는 전 로케일 공용 계산기 라우트 → 정상(수정 금지).
+
+### 전략 5편 winnable (§13은 EN값 이식)
+- **tournament(필라)**: 升盲结构표·赔付표 읽기(前10-15% 进钱圈·非线性)·买入拆分($100+15)·완整 时间线·重买/卫星 EV. (WPT Seminole $4,592,000·181명 §13 EN 일치)
+- **tvc**: 生存 EV vs 累积 EV 원리(최강)·CEV vs MEV·方差+bankroll 量化(MTT 100+ vs cash 30)·决策清单·机会成本.
+- **icm**: 4인 决赛桌 手把手(EN: P2nd 33.9/37.5/28.6·ICM$ 38.39/32.75/28.86·ICM稅 11.6pp·交易 618/485/397)·筹码≠现金 量化·三种 deal 병렬·ICM 弃牌 阈值.
+- **bubble**: 泡沫系数 速查표(EN: bf/(1+bf) 50/57/60/63/67%)·大码施压 vs 短码求生·中码 딜레마·偷盲 数学·ICM 桥接.
+- **short-stack**: M值 5존(Green20+/Yellow10-20/Orange6-10/Red1-5/Dead<1·M≈bb÷1.5)·push-fold 범위·shove 응대·偷盲.
+- **术语**: 锦标赛/MTT·现金局/cash·买入 buy-in·升盲·赔付/奖金分配·卫星赛·重买/增购·独立筹码模型ICM·筹码价值·决赛桌交易/deal(平分/筹码占比chip chop/ICM分法)·泡沫期/钱圈·泡沫系数·吃泡·M值·短筹码 push-fold. ⚠️简体=筹码/概率/锦标赛/决赛/奖金(非籌碼/機率/錦標賽/決賽/獎金).
+- 출처: legendpoker 3674/2984·moshike 2700/3754/998/1255/1910/1271·poker588 4105/5611/2995/3282/10913·dzpknews 23122/32740·dpskill jinjie/387/304·zhihu p/35613583/131318644/27964283.
