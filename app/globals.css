@@ -139,8 +139,12 @@
   font-size: 0.95rem;
   line-height: 1.85;
   letter-spacing: -0.01em;
-  word-break: keep-all;
+  word-break: keep-all;            /* 한국어 어절 단위 줄바꿈 (단어 중간에서 안 끊김) */
   overflow-wrap: break-word;
+  line-break: strict;             /* 여는·닫는 괄호/문장부호가 줄 끝·시작에 어색하게 걸리지 않게 */
+  hanging-punctuation: first allow-end; /* 여는 따옴표를 왼쪽 여백으로 걸어 첫 글자 세로선 정렬 (지원 브라우저) */
+  text-rendering: optimizeLegibility;   /* 커닝·합자 적용 — 한글+숫자·영문 혼용 자간 정돈 */
+  font-kerning: normal;
   color: #111111;
 }
 @media (min-width: 640px) {
@@ -166,6 +170,7 @@
 .blog-prose li {
   font-size: 0.95rem; /* 모바일 14.9px→15.2px — 본문 문단(p)과 동일 크기로 통일 (가독성) */
   line-height: 1.75;
+  margin-bottom: 0.35em; /* 항목 간 호흡 — 줄바꿈된 리스트가 답답하지 않게 */
   text-wrap: pretty;
   color: #111111;
 }
@@ -173,6 +178,7 @@
   .blog-prose li {
     font-size: 1.02rem;
     line-height: 1.8;
+    margin-bottom: 0.45em;
   }
 }
 .blog-prose h2 {
