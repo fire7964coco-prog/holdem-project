@@ -3,6 +3,15 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-23 (★★★ 번체(zh-hant) 용어·문화 클러스터 6편 배포 — 마지막 클러스터, 클러스터 트랙 완결·37/42)
+
+> 5개 클러스터군의 마지막. §13은 가벼우나 **glossary 필라와 카니발**(각 편=단일 용어 심화 vs glossary A-Z)이 관건 → 작가에 차별화 지시 + glossary 역링크. 리서치 `docs/translation-terms-zh-hant.md §7-E`.
+- **6편**: `holdem-bad-beat`(爆冷 정의=대폭領先+반超 필수·爆冷 vs 冷牌組 대조표·variance=長期필연·**2008 WSOP Mabuchi 四條A vs 方塊皇家同花順**·Jackpot) · `holdem-cooler`(冷牌組=蓋不掉·又稱冤家牌·경전 cooler 리스트·純vs偽 cooler·set over set 7♣7♦ vs J♠J♥) · `holdem-fish`(VPIP/PFR 판魚표 40-70/15-22·剝削 站魚vs凶魚·選桌 "找不到魚你就是魚") · `holdem-rake`(底池 2.5-10%·封頂·返水·NL50 함정표·★台灣 5% 不封頂 민간표시) · `holdem-straddle`(★三種盲抓 按鈕位/密西西비/沉睡=藍海·被盲抓後 범위조정·-EV) · `holdem-card-counting`(★能算牌嗎+21점 차별 대조표·진짜算牌=outs+四二+賠率+組合+讀範圍·電影迷思·blocker 16→12).
+- **워크플로**: Phase1 리서치=나 중앙(rakko headline 爆冷/抽水/算牌/盲抓 + suggest 抽水=null + 리서치에이전트3 경쟁사FAQ) → Phase2 병렬 작가6 + 적대적 대만 네이티브 QA6(§13 四條족보·cooler 리스트·VPIP/PFR·rake 수치·四二/169조합 + glossary 카니발 차별화) → Phase3 나=index등록·빌드·앵커정정·형제·glossary 역링크.
+- **적대적 QA: §13 6편 전부 全數通過·🔴 0**(★레드라인 四條는 同花順에만 짐=Mabuchi 핸드로 실증·set over set 三J勝三7·AA vs 77 4:1·VPIP/PFR·NL50 cap$2승/cap$4패·堅果順 16→12=25%·9×4=36%/35.0%). card-counting 앵커 1건(機率表→drawing-odds 불일치) Phase3 정정. **글로서리 카니발 회피(각 편 심화문+glossary 역링크) 확인.**
+- **링크복원(EN parity)**: 앵커정정(card-counting 機率表 앵커·cooler 位置→position-play) + 형제(bad-beat↔cooler 대조표 상호·straddle→rake) + **glossary 필라 역링크 5**(용어 셀 Cooler→cooler·Bad Beat→bad-beat·魚→fish·抽水→rake·盲抓→straddle).
+- 발행: 57 blog + **443 intl**(zh-hant 37편 = 필라9+룰7+확률6+전략5+토너먼트4+용어6). **★5개 클러스터군 전부 완주 = EN 마스터 유니버스 클러스터 트랙 완결.** 다음=pub(撲克室 앵글 별도판단) or 신규 winnable(梭哈 vs 德州撲克·台灣合法 독립글) or 타 언어.
+
 ## 2026-07-23 (★★ 번체(zh-hant) 토너먼트 클러스터 4편 배포 — 병렬 오케스트레이션 4차, ICM 계산 최고난도)
 
 > 전략 클러스터에 이어 **토너먼트 클러스터**. ICM 재귀확률·M値·버블팩터가 전 프로젝트 최고 난도 §13 → QA에 Malmuth–Harville 재귀 전수 재검산 지정. 리서치 `docs/translation-terms-zh-hant.md §7-G`·플랜 §5.

@@ -34,6 +34,13 @@ import { POST as holdemTournamentVsCashGame } from "./holdem-tournament-vs-cash-
 import { POST as holdemBubble } from "./holdem-bubble";
 import { POST as holdemIcm } from "./holdem-icm";
 import { POST as holdemShortStack } from "./holdem-short-stack";
+// Glossary/용어·문화 클러스터
+import { POST as holdemBadBeat } from "./holdem-bad-beat";
+import { POST as holdemCooler } from "./holdem-cooler";
+import { POST as holdemFish } from "./holdem-fish";
+import { POST as holdemRake } from "./holdem-rake";
+import { POST as holdemStraddle } from "./holdem-straddle";
+import { POST as holdemCardCounting } from "./holdem-card-counting";
 
 /**
  * 중국어 번체(zh-hant · 대만/홍콩) 블로그 포스트.
@@ -86,7 +93,13 @@ export const ZH_HANT_POSTS: Post[] = [
   holdemBubble,
   holdemIcm,
   holdemShortStack,
-  // 다음: glossary/용어 클러스터
+  // ── Glossary/용어·문화 클러스터 (2026-07-23 배치, 마지막) ──
+  holdemBadBeat,
+  holdemCooler,
+  holdemFish,
+  holdemRake,
+  holdemStraddle,
+  holdemCardCounting,
 ];
 
 const ZH_HANT_SLUGS = new Set(ZH_HANT_POSTS.map((p) => p.slug));
