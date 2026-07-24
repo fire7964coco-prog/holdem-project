@@ -5,7 +5,27 @@
 
 ---
 
-## ▶▶▶▶ 새 세션 START HERE (★★★ **es 42/42 완결(6/6)** — EN 유니버스 4번째 풀 경화 언어 / 다음 방향 후보 아래)
+## ▶▶▶▶ 새 세션 START HERE (다음 작업 = ★**LATAM 보충 패스 — 멕시코부터**. es 42/42 Spain 베이스는 완결)
+
+> 읽는 순서: `CLAUDE.md` → 이 블록 → `docs/es-hardening-workflow.md`(지역편차 그라디언트) → `docs/es-brief-*.md`(6클러스터 Spain 브리프, LATAM 신규분과 대조용).
+
+### 🚀 한 줄 (사용자 확정 2026-07-24 밤)
+**es는 42편 전부 Country=Spain으로만 뽑았음 → 계획했던 지역편차 그라디언트(ES+MX 전클러스터 필수, 슬랭은 +AR/CO)의 MX/AR/CO 층을 안 뺐음.** 내일 **Country=Mexico로 2차 패스**를 돌려 Spain에 없던 **LATAM 신규 winnable만 추출→해당 편에 FAQ 추가→QA→재배포**.
+
+### 📋 LATAM 보충 워크플로
+1. **사용자**: lowfruits Country=**Mexico**, Language=Spanish로 **같은 시드** 재export(각 클러스터). 파일명에 `_MX` 권장. (그 다음 슬랭 클러스터는 Argentina·Colombia도.)
+2. **나**: MX xlsx 파싱 → **Spain 브리프(`docs/es-brief-*.md`)와 대조해 신규 키워드만** 추출(중복 제거). LATAM 특화 winnable·지역 슬랭 색출.
+3. **작가**: 해당 es 편에 LATAM 롱테일 FAQ/H2 **추가**(기존 구조 유지, 억지 X). §13 불변.
+4. **QA**: 적대적 스페인/중남미 네이티브(멕시코·아르헨 관점) → 빌드·커밋·재배포.
+- ★**범위(사용자와 합의)**: 추천=슬랭 우선(용어6·전략8=LATAM 차이 최대). 확률6은 LATAM≈스페인이라 스킵 가능. 순서는 슬랭→나머지.
+- ★**LATAM 특화 신호 주의**: **flor**(=중남미 flush, es 족보6서 이미 발견)·**dompe**(홈게임)·지역 운영사·멕시코/아르헨 어휘. Spain 데이터엔 약했던 것들.
+- ★멕시코=스페인어권 최대 시장. Core 듀오(ES+MX)가 그라디언트 최소기준이었음.
+
+### ✅ (완료) es 42/42 Spain 베이스 — 아래 "(완료) es 42/42 완결" 블록 참조. 6클러스터 전부 배포됨.
+
+---
+
+## ▶▶▶ (완료) es 42/42 완결 (Spain 베이스) — EN 유니버스 4번째 풀 경화 언어
 
 > 읽는 순서: `CLAUDE.md` → 이 블록 → (참고) `docs/es-hardening-workflow.md`·`docs/es-brief-*.md`(6클러스터 브리프)·`docs/keyword-bank/es-local-tournaments.md`.
 
