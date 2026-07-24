@@ -3,6 +3,16 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-24 (★ es(스페인어) 족보6 클러스터 6편 경화 — es 재경화 2/6, EN FAQ 대량 포팅)
+
+> 규칙6에 이어 족보6. `ba373dc`. ★규칙6과 달리 족보6 ES는 EN 07-18/19 FAQ가 다수 누락(stale)이라 **EN FAQ 대량 포팅**이 주작업.
+- **6편**: `holdem-hand-rankings`(필라·경험담3+GEO H2+FAQ4[peor mano 7-2·quintilla·comodines·escalera real]·22→26) · `holdem-flush-vs-straight`(winnable5[color vs escalera·probabilidad 10,200 vs 5,108·escalera de color vs full·full gana color]) · `holdem-kicker`(EN FAQ **4포팅** 9→13+winnable3[top kicker·problema del kicker·kicker en trío/dos pares]) · `holdem-tiebreak-rules`(EN FAQ **7포팅** 8→15+desempatar doble par/color/full·palo 무관) · `holdem-split-pot-rules`(EN FAQ **5포팅** 8→17+qué es split·side-pot all-in·ficha impar·딜링노이즈 제외) · `holdem-reading-the-board`(EN FAQ **3포팅** 8→14+cuántas comunitarias usar·play the board·nuts).
+- **리서치**: 족보6 신규 lowfruits 9파일(manos de poker 794·kicker·desempate×2·empate·split·cartas comunitarias) + 규칙6 color/escalera/full 이월 종합 → `docs/es-brief-rankings.md`. 시드 교체 실전: bote dividido→empate/split·jugar la mesa→cartas comunitarias. ★노이즈 함정: split=planning/scrum poker(애자일)·ante=스웨이드세탁.
+- **워크플로**: Phase1 나 중앙(lowfruits 파싱 node + 편별 판정 "충분/2회차") → Phase2 병렬 작가6 → Phase3 적대적 스페인 QA 3(2편씩)+빌드+커밋.
+- **적대적 QA 3병렬: §13 독립 재산**. kicker·tiebreak·split·reading·flush-vs-straight 0红(frequency 5,108/10,200·side-pot 300/400·counterfeit·play-the-board·9-9-9-A-K>9-9-9-A-Q·팔로 무관 전수 검산). **🔴 1건 커밋 전 교정**: 필라 Puzzle 3(board KKK-A-2, 手 A♥3♣) ES가 "quad kings 지는 경우+case king 예외" 누락하고 "As 있으면 스플릿"으로 오기 → EN 논리 복원(A+K♣=四条K).
+- **🟠 정규화**: kicker·split-pot masterUpdated 07-19→**07-18**(EN 마스터 실제 날짜). reading readTime 12(ES 더 김, EN 11) 유지.
+- 발행 총계 불변 57 blog+448 intl. **다음=확률6**(probability·pot-odds·outs·drawing·implied·equity, §13 계산 최다).
+
 ## 2026-07-24 (★ es(스페인어) 규칙6 클러스터 6편 경화 — es 42편 재경화 트랙 착수 1/6)
 
 > es 재경화 시작. rakko 대신 **lowfruits**(스페인 SERP) 키워드 리서치. `2570bae`.
