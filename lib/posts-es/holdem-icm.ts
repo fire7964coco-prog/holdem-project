@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "El ICM (Independent Chip Model, Modelo de Fichas Independiente) convierte tu stack de fichas de torneo en su valor real en premios, usando los pagos y los stacks de todos. Como solo se gana un primer premio, doblar tus fichas nunca dobla tu dinero — así que el stack del líder vale menos que su porcentaje de fichas, y los stacks cortos valen más. Ese desfase es la razón por la que foldeas en la burbuja manos que serían calls fáciles en un cash game.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-07-09",
+  updated: "2026-07-24",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🏆",
@@ -209,6 +210,14 @@ A. No. En un cash game cada ficha ya equivale a su valor nominal en dólares y p
 **Q. ¿Cuándo debería ignorar el ICM?**
 
 A. En fases tempranas y medias, en juego deep stack con ciegas pequeñas, y mano a mano por el título — todos spots donde los saltos de premio quedan lejos o solo quedan dos premios. En esos casos juegas chip EV y te centras en acumular fichas.
+
+**Q. ¿Cuáles son los errores de ICM más comunes?**
+
+A. Tres grandes. Primero, *sobre*aplicar el ICM — foldear hasta quedarte corto "para escalar" cuando los saltos de premio aún están lejos, en vez de acumular fichas. Segundo, pagar demasiado ancho como stack medio cerca de la burbuja, justo donde tu risk premium es más alto y bustear te cuesta premio bloqueado. Tercero, aceptar un chip chop cuando vas corto (o un acuerdo por ICM cuando eres el líder) sin pasar los números primero. El ICM es una herramienta de fase final: usarlo demasiado pronto, o ignorarlo en la mesa final, filtra dinero en ambos casos.
+
+**Q. ¿Qué significa ITM (in the money / en premios)?**
+
+A. ITM significa "in the money", es decir, has entrado en premios: has sobrevivido hasta la posición pagada más baja y tienes cobrar garantizado. La burbuja es la última posición justo antes de entrar en premios (el bubble boy se va con las manos vacías). El ICM adquiere todo su peso precisamente en la burbuja, porque el salto de $0 a cobrar es el más grande de todos.
 
 **Q. ¿Quién inventó el ICM?**
 

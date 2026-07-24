@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "Un short stack (más o menos por debajo de 15–20 ciegas grandes) no puede jugar póker postflop normal, así que cambia al push/fold: vas all-in siendo el primero en entrar para conservar tu fold equity, y nunca haces open-limp ni min-raise para luego foldear. Vas de shove más amplio desde posición tardía, mantienes tu rango de igualar más cerrado que tu rango de shove, y no te dejas fundir hasta nada 'esperando una mano': tu fold equity es el arma, y desaparece por debajo de unas 8 ciegas grandes.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-07-09",
+  updated: "2026-07-24",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "📉",
@@ -167,6 +168,14 @@ A. A grandes rasgos, por debajo de unas 20–25 ciegas grandes es "corto", y el 
 
 A. El push/fold es la estrategia de short stack donde, cuando eres el primero en entrar al bote, tus únicas opciones son ir all-in o foldear — nada de limpear, nada de subidas pequeñas. El shove conserva tu fold equity (los rivales foldean y ganas las ciegas) y evita que te superen después del flop con un stack demasiado pequeño para maniobrar.
 
+**Q. ¿Qué significa "all-in o fold" en póker?**
+
+A. "All-in o fold" es la misma idea que el push/fold: cuando vas corto de fichas y eres el primero en entrar al bote, tus únicas dos opciones son ir all-in o foldear — nada de limpear ni subidas pequeñas. También es el nombre de un formato online rápido (el All-in or Fold de GGPoker) donde cada decisión preflop es literalmente shove o foldear. En cualquier caso se mantiene la lógica del short stack: conserva tu fold equity yendo de shove, y nunca sangres fichas en una subida que no puedas defender.
+
+**Q. ¿Cómo respondes a un shove all-in?**
+
+A. Foldea mucho más de lo que irías de shove — tu rango de igualar es mucho más cerrado que tu rango de shove. En cuanto igualas un all-in tu fold equity desaparece, así que tu mano tiene que ganarle de verdad al rango del que va de shove, no solo parecer jugable. Igualar el all-in con un as débil o una pareja pequeña "porque probablemente sea un coin flip" es un leak clásico, ya que un flip para bustear es un trato perdedor en un torneo. Iguala solo cuando tu mano le gane claramente a lo que están metiendo de shove.
+
 **Q. ¿Deberías limpear alguna vez con un short stack?**
 
 A. Casi nunca cuando eres el primero en entrar. El open-limp entrega la fold equity y construye un bote que no puedes navegar postflop. Corto de fichas, la jugada estándar es subir o foldear, y con 15 ciegas grandes o menos esa subida suele ser un all-in. (Completar desde la ciega pequeña detrás de otros limpers con un stack diminuto es una excepción rara.)
@@ -178,6 +187,10 @@ A. Como default de principiante, no — el min-raise para luego foldear es un le
 **Q. ¿Qué es la M en póker?**
 
 A. La M es tu stack dividido por el coste de una órbita (ciega pequeña + ciega grande + antes) — cuántas rondas puedes sobrevivir foldeando. Las zonas de Harrington son Verde (20+), Amarilla (10–20), Naranja (6–10), Roja (1–5) y Muerta (menos de 1). Cuanto más baja tu M, más tienes que tomar spots de shove o foldear. Sin antes, la M es más o menos tus ciegas grandes ÷ 1.5.
+
+**Q. ¿Qué es el equilibrio de Nash / los rangos Nash?**
+
+A. El equilibrio de Nash es la solución matemática al juego de shove-o-foldear: los rangos Nash son las manos exactas con las que ir de shove (y con las que igualar) a una profundidad de stack dada de forma que ningún jugador pueda mejorar cambiando su estrategia. Las tablas push/fold que ves impresas salen de esos rangos Nash. La trampa: se calculan para un modelo heads-up y solo ciegas, sin antes ni ICM, así que son una base — con antes tus shoves se amplían, y con presión de burbuja/ICM tus calls se cierran mucho. Usa la forma (shove más amplio en posición tardía, iguala más cerrado de lo que vas de shove), no la mano exacta como dogma.
 
 **Q. ¿Qué es la fold equity y por qué encoge?**
 

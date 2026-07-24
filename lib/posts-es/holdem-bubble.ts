@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "La burbuja es el punto justo antes de premios, donde una eliminación más deja cobrar a todos los demás. Como bustear significa no ganar nada, sobrevivir vale más que las fichas que ganarías: los rangos de call se cierran a lo bestia mientras los shoves siguen amplios. Los stacks grandes atacan, los stacks medios son los más atrapados (no los cortos), y en una burbuja de satélite foldeas todo, incluso ases, una vez que tu asiento está asegurado.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-07-09",
+  updated: "2026-07-24",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🫧",
@@ -134,7 +135,7 @@ Así que un coin flip con chip-EV que tomarías al 50% se convierte en un ==fold
 
 **Cuando el dinero está cerca, los torneos pasan a "hand-for-hand" — todas las mesas juegan exactamente una mano a la vez y luego esperan — precisamente para impedir que los jugadores hagan stalling hasta colarse en premios.** Sin ello, los jugadores de mesas lentas podrían foldear mano tras mano mientras las mesas más rápidas queman la burbuja. El hand-for-hand nivela el terreno:
 
-- **Cómo funciona:** el director del torneo pausa el reloj; todas las mesas reparten una mano, y ninguna empieza la siguiente hasta que todas han terminado. Si dos jugadores bustean en la misma mano de hand-for-hand, el que tenía menos fichas al inicio de la mano suele llevarse el puesto más bajo (el de bubble boy).
+- **Cómo funciona:** el director del torneo pausa el reloj; todas las mesas reparten una mano, y ninguna empieza la siguiente hasta que todas han terminado. Si dos jugadores bustean en la misma mano de hand-for-hand en la misma mesa, el que tenía menos fichas al inicio de la mano se lleva el puesto más bajo (el de la burbuja); si bustean en mesas distintas, quedan clasificados como empate y reparten los dos premios implicados.
 - **Stalling:** consumir todo el banco de tiempo en cada decisión para ver menos manos (y foldear hasta premios). Los stacks grandes no tienen razón para hacer stalling — quieren más manos para atacar. Los stacks cortos y medios a veces hacen stalling para sobrevivir, ==pero un stalling excesivo puede ganarte que te pidan el reloj (clock call) o una penalización==, así que tanquea con cabeza.
 - **Explótalo:** como todos los demás bajan el ritmo, un stack grande que sigue aplicando presión durante el hand-for-hand acumula ciegas y antes casi sin oposición.
 
@@ -167,6 +168,10 @@ Los jugadores que ganan torneos tratan la burbuja como una ==oportunidad para ac
 
 ## FAQ
 
+**Q. ¿Qué es la burbuja en un torneo de póker?**
+
+A. La burbuja es el punto justo antes de premios: el momento en que una eliminación más mete en zona pagada a todos los que siguen vivos. Si un torneo paga los primeros 27, la burbuja se alcanza con 28 jugadores: el siguiente en caer se va con nada, y el resto tiene cobro garantizado. Es la ventana corta e intensa en la que sobrevivir pesa más que acumular fichas.
+
 **Q. ¿Qué significa "estar en la burbuja" en póker?**
 
 A. Significa que al torneo le falta una o unas pocas eliminaciones para premios. Si pagan los primeros 27 puestos, la burbuja está a 28 jugadores vivos — el siguiente en caer no gana nada, y todos los demás tienen cobro garantizado. El juego se cierra de forma drástica porque, por un momento, sobrevivir vale más que las fichas.
@@ -179,6 +184,10 @@ A. El bubble boy es el jugador que bustea en el último puesto sin premio — un
 
 A. Una stone bubble (o burbuja dura) es cuando una sola eliminación mete a todos los jugadores restantes en premios al mismo tiempo. Una soft bubble es más laxa — un tramo de unas pocas eliminaciones cerca de premios en lugar de un punto exacto. La stone bubble crea la presión más extrema porque una eliminación hace cobrar a todos los que quedan.
 
+**Q. ¿Qué significa estallar/reventar la burbuja?**
+
+A. "La burbuja" es el último puesto antes de premios, así que el jugador que bustea ahí — el bubble boy — no gana nada mientras todos los que siguen vivos cobran; eso es a lo que se refiere la gente con "pagar la burbuja". "Estallar (o reventar) la burbuja" es esa eliminación final: en el instante en que ocurre, todos los jugadores restantes están en premios y la intensa presión por sobrevivir se afloja. Algunos eventos dan al bubble boy un pequeño premio de consolación, pero tradicionalmente la burbuja paga cero.
+
 **Q. ¿Deberías foldear en la burbuja?**
 
 A. Deberías foldear *calls* mucho más de lo normal, pero no todo — y deberías seguir haciendo shove y robando. Sobrevivir vale más que las fichas cerca del salto de premios, así que pagar y bustear es el error caro. Cierra tu rango de call a lo bestia mientras mantienes amplia tu agresión de first-in.
@@ -186,6 +195,10 @@ A. Deberías foldear *calls* mucho más de lo normal, pero no todo — y deberí
 **Q. ¿Los stacks cortos sienten la mayor presión de burbuja?**
 
 A. No — ese es el error común. Por bubble factor, el stack medio es el más constreñido: suficiente equity de premio que perder, no lo bastante corto como para justificar jugársela. Los stacks cortos en realidad tienen un bubble factor más bajo porque bustear ya es probable y doblar el stack ayuda mucho, así que pueden jugársela con más libertad (haciendo shove, no pagando).
+
+**Q. ¿Qué es el bubble factor en póker?**
+
+A. El bubble factor mide cuánto más te cuesta perder un bote de lo que te ayuda ganar el mismo bote, en términos de dinero real (ICM). Un bubble factor de 1.0 significa que las fichas equivalen a dinero; 1.5 significa que bustear duele 1.5× más de lo que ayuda ganar. Se traduce directamente en la equity que necesitas para pagar: bubble factor ÷ (1 + bubble factor). Con un bubble factor de 1.5 necesitas un 60% para pagar, no un 50% — que es exactamente por qué un coin flip con chip-EV se convierte en un fold en la burbuja.
 
 **Q. ¿Qué es el juego hand-for-hand?**
 

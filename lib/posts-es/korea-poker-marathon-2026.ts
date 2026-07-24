@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "Los grandes maratones de otoño de Corea (Chuncheon 25 oct, JTBC Seúl 1 nov, Garmin Run 15 nov) coinciden con el clima ideal para correr. El casino Paradise City, junto al aeropuerto de Incheon, ofrece cash games todo el año — solo extranjeros, a 10 min de la terminal. Un viaje cubre ambas cosas.",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-07-03",
+  updated: "2026-07-24",
+  masterUpdated: "2026-07-20",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏃",
@@ -25,7 +26,7 @@ export const POST: Post = {
     "maratón Seúl corredores extranjeros",
   ],
   content: `
-El 17 de mayo de 2026, Suga de BTS se despertó a las 6 de la mañana en su hotel de Palo Alto, corrió los 12K de la carrera Bay to Breakers de San Francisco en 1:04:43 — y esa misma noche actuó ante 50,000 fans en el Stanford Stadium. RM reveló después el contexto: ==g:Suga corre 10K todos los días.== Se enteró de la carrera y simplemente se inscribió.
+El 17 de mayo de 2026, Suga de BTS se despertó a las 6 de la mañana, corrió los 12K de la carrera Bay to Breakers de San Francisco en 1:04:43 — y esa misma noche actuó ante un Stanford Stadium con las entradas agotadas. RM reveló después el contexto: ==g:Suga corre 10K todos los días.== Se enteró de la carrera y simplemente se inscribió.
 
 Esa historia caló más allá del fandom ARMY. Caló en un solapamiento que ya existe: la gente que juega a las cartas y la gente que corre. Las dos comunidades comparten más de lo que nadie documenta — la disciplina, la tolerancia a la varianza, la optimización obsesiva.
 
@@ -66,10 +67,10 @@ El argumento no es complicado. Es cuestión de fechas y ubicación.
 | Carrera | Fecha | Distancia | Ubicación | Registro extranjeros | Estado |
 |---|---|---|---|---|---|
 | Maratón Internacional Dong-A de Seúl | Mar 2026 | Completo, 10K | Seúl | [dongamarathon.com](https://www.dongamarathon.com) | Finalizado en 2026 |
-| ==**YTN Seoul Tour Marathon**== | ==**6 sep**== | Medio, 10K | Seoul Plaza | [run.ytn.co.kr](http://run.ytn.co.kr) | Cerrado el 15 jul |
-| ==g:**Maratón de Chuncheon**== | ==g:**25 oct**== | ==g:Completo, 10K== | ==g:Chuncheon== | ==g:[chuncheonmarathon.com](https://www.chuncheonmarathon.com)== | ==g:Abierto ya== |
-| ==**JTBC Seoul Marathon**== | ==**1 nov**== | Completo, 10K | Seúl (Sangam) | [worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon) | Cupo extranjeros (se llena pronto) |
-| Garmin Run Korea | 15 nov | Medio, 10K | Goyang | [runable.me](http://runable.me/product/18977?comp=18962) | Abierto 1–3 jul |
+| ==**YTN Seoul Tour Marathon**== | ==**6 sep**== | Medio, 10K | Seoul Plaza | [run.ytn.co.kr](http://run.ytn.co.kr) | Cerrado el 10 jul |
+| ==g:**Maratón de Chuncheon**== | ==g:**25 oct**== | ==g:Completo, 10K== | ==g:Chuncheon== | ==g:[chuncheonmarathon.com](https://www.chuncheonmarathon.com)== | ==g:Inscripción cerrada (agotado)== |
+| ==**JTBC Seoul Marathon**== | ==**1 nov**== | Completo, 10K | Seúl (Sangam) | [worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon) | Cupo extranjeros (se llena pronto — consulta) |
+| Garmin Run Korea | 15 nov | Medio, 10K | Goyang | [runable.me](http://runable.me/product/18977?comp=18962) | Cerrado (reg. fue 1–3 jul) |
 
 </div>
 

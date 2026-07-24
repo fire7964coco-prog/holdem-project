@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "En los cash games las fichas son dinero real y las ciegas se mantienen fijas. En los torneos las fichas son equity de supervivencia, las ciegas suben y los premios dependen de en qué puesto termines.",
   category: "tournament",
   date: "2026-06-11",
-  updated: "2026-07-14",
+  updated: "2026-07-24",
+  masterUpdated: "2026-07-19",
   hideSummaryImageSlot: true,
   readTime: "16 min",
   emoji: "🏆",
@@ -379,6 +380,10 @@ A. No. El ICM se aplica a los torneos porque las fichas de torneo no equivalen a
 
 A. Una guía común es 20-40 buy-ins para cash games y 100+ buy-ins para torneos de campo grande, con los formatos más pequeños como los sit-and-gos en un punto intermedio, en torno a 40-60. Los torneos necesitan el colchón más grande porque las largas rachas sin cobrar son normales incluso para jugadores ganadores.
 
+**Q. ¿Con cuántas ciegas grandes se empieza en un cash game vs un torneo?**
+
+A. En un cash game entras por el máximo de la mesa — normalmente en torno a 100 ciegas grandes ($200 en un $1/$2) — porque los stacks profundos recompensan la habilidad postflop y te dejan ganar un stack completo cuando vas por delante. En un torneo la profundidad te la elige el propio evento: sueles empezar en torno a 100-300 ciegas grandes, pero las ciegas que suben lo reducen a 20, luego a 10 y luego a terreno de push/fold. En corto: en cash entras profundo, y en torneo vigila cómo baja tu cuenta de ciegas grandes y ajusta a medida que lo hace.
+
 **Q. ¿Cuántas fichas hacen falta para un cash game en casa?**
 
 A. Un set estándar de 300 fichas cubre cómodamente hasta unos 6-8 jugadores. Dale a todos el mismo stack inicial repartido en 3-4 denominaciones, con la mayoría de las fichas en los valores más pequeños para que se pueda apostar y dar cambio con facilidad. El número exacto importa menos que el hecho de que todos acuerden cuánto vale cada color en dinero real antes de la primera mano.
@@ -390,6 +395,22 @@ A. Ambos — pero muchos pros se especializan. Los especialistas en cash game va
 **Q. ¿Un torneo con re-entry es básicamente un cash game?**
 
 A. No. El re-entry te permite volver a entrar en el torneo tras bustear durante un periodo concreto, pero las fichas siguen sin ser dinero. Las ciegas siguen subiendo, el dinero de los premios sigue dependiendo del puesto final y el ICM sigue importando más adelante.
+
+**Q. ¿Se pagan impuestos por las ganancias de un torneo de póker?**
+
+A. En la mayoría de países, sí — las ganancias del póker cuentan como ingreso gravable, y los grandes premios de torneos en vivo a menudo se declaran (y a veces se retienen) allí mismo en el casino; en EE. UU., por ejemplo, un premio grande genera papeleo fiscal en el acto. Unas pocas jurisdicciones tratan las ganancias del juego recreativo como exentas de impuestos. Las normas varían mucho de un país a otro e incluso dentro de un mismo país, así que toma esto como información general y consulta tu legislación fiscal local — o a un profesional — antes de un cobro importante.
+
+**Q. ¿Cuál es la diferencia entre el cash game y los torneos?**
+
+A. En un cash game las fichas son dinero real, las ciegas se mantienen fijas y te levantas cuando quieras. En un torneo pagas una entrada, recibes fichas de torneo que no puedes cambiar por dinero a mitad del evento, las ciegas suben y solo cobras según el puesto en el que termines. En resumen: el cash premia decisiones rentables jugada a jugada; el torneo premia sobrevivir y escalar en la estructura de premios.
+
+**Q. ¿Qué es mejor, el cash o los torneos?**
+
+A. Depende de tu estilo y de tu bankroll. Si quieres una ganancia por hora más predecible, sesiones flexibles y un juego postflop profundo, el cash game te encaja mejor. Si te atrae la varianza alta a cambio de la posibilidad de un gran premio desde un solo buy-in y aguantas largas rachas sin cobrar, los torneos son lo tuyo. Ningún formato es "mejor": el cash pide un bankroll de 20-40 buy-ins y disciplina; el torneo pide 100+ buy-ins y temple para los swings.
+
+**Q. ¿Qué es el "cash" (partida de dinero real) en el póker?**
+
+A. El cash, o cash game (también ring game), es una partida en la que cada ficha vale exactamente su valor en dinero: te sientas, cambias tu dinero por fichas y cada bote que ganas es tuyo al instante. No hay horario, ni bolsa de premios, ni puestos finales — eliges tu buy-in dentro de los límites de la mesa, las ciegas se mantienen fijas y te levantas con lo que tengas cuando quieras.
 
 ---
 

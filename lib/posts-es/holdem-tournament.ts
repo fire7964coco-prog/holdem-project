@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "En un torneo de póker pagas un buy-in fijo por fichas; las ciegas suben con el reloj hasta que un jugador tiene todas las fichas. El 10-15% de arriba cobra. Formatos: freezeout, PKO, satélite y deepstack — entras por buy-in directo, satélite o preinscripción online.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-07-11",
+  updated: "2026-07-24",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏆",
@@ -86,7 +87,7 @@ Esto es lo que la mayoría de guías para principiantes se salta, y es el concep
 
 Fíjate: **no perdiste ni una sola ficha** entre el Nivel 1 y el Nivel 9. Pero tu stack pasó de 200BB a 10BB porque las ciegas subieron. Así es como los torneos fuerzan la acción y acaban eliminando jugadores.
 
-==g:Regla general: por debajo de 20 ciegas grandes estás en terreno de push-or-fold. Por debajo de 10 ciegas grandes, tienes que ir all-in con casi cualquier mano jugable antes de que las ciegas te coman vivo.==
+==g:Regla general: por debajo de 20 ciegas grandes estás en terreno de push-or-fold, y a partir de 15 es tu modo principal. Por debajo de 10 ciegas grandes, tienes que ir all-in con casi cualquier mano jugable antes de que las ciegas te coman vivo.==
 
 Cuando llegues ahí, los rangos exactos de shove están en [estrategia de short stack — cuándo hacer push o fold](/es/blog/holdem-short-stack).
 
@@ -345,6 +346,26 @@ A. Sí, durante la ventana de registro tardío — normalmente los primeros nive
 **Q. ¿Puedes irte pronto de un torneo de póker y quedarte con tus fichas?**
 
 A. No. A diferencia de un cash game, las fichas de torneo no tienen valor en dinero y no se pueden cambiar por efectivo a mitad de evento. Si te levantas, tus fichas se quedan en juego y siguen pagando ciegas y antes hasta que desaparecen. Solo cobras si terminas en un puesto de premio (ITM).
+
+**Q. ¿Cómo ganan dinero los torneos de póker?**
+
+A. El local se lleva una comisión encima de cada buy-in — la parte "+$9" de una entrada de "$100+$9". Esa comisión (normalmente en torno al 8-10% en los grandes eventos en vivo, y más en los diarios pequeños) es el ingreso de la casa; la parte de "$100" va entera a la bolsa de premios por la que compiten los jugadores. Así que una sala de torneos gana por el volumen de inscripciones y sus comisiones, no por el dinero de los premios, que simplemente se recicla entre los jugadores.
+
+**Q. ¿Los torneos de póker son más suerte o habilidad?**
+
+A. Ambas cosas — pero la habilidad decide quién gana a largo plazo. Un solo torneo carga con muchísima varianza: puedes jugar impecable y aun así bustear cuando te revientan los ases, por eso hasta los mejores pros pasan largas rachas sin un gran cobro. A lo largo de cientos de eventos, en cambio, los mejores jugadores llegan a mesas finales mucho más a menudo de lo que permite el azar. El póker es un juego de habilidad envuelto en suerte a corto plazo — y los torneos concentran más de esa suerte que los cash games.
+
+**Q. ¿Qué es un torneo de póker y cómo funciona?**
+
+A. Es una competición donde todos pagan la misma entrada (el buy-in) y reciben el mismo número de fichas iniciales; a partir de ahí se juega hasta que una sola persona tiene todas las fichas. Las ciegas suben con el reloj para forzar la acción, y quienes se quedan sin fichas quedan eliminados. Solo cobra el 10-15% superior del campo (los que llegan en premios, ITM). Tu pérdida máxima es exactamente el buy-in, pero juegas por una parte de una bolsa mucho mayor.
+
+**Q. ¿Qué significa PKO (knockout progresivo) en un torneo?**
+
+A. PKO es Progressive Knockout, un formato de bounty donde normalmente la mitad de cada buy-in va a la bolsa de premios y la otra mitad se convierte en un bounty sobre la cabeza de cada jugador. Cuando eliminas a alguien, cobras parte de su bounty al instante y el resto se suma al tuyo — así te vuelves un objetivo más goloso a medida que ganas. El reparto exacto (50/50 es común, pero no universal) aparece en el lobby o en la hoja de estructura.
+
+**Q. ¿Cuántos jugadores cobran en un torneo (ITM)?**
+
+A. Como regla, cobra el 10-15% superior del campo. En un torneo de 100 jugadores suelen pagar unos 13 puestos; en uno de 500, alrededor de 60; y en uno de 10,000, unos 1,200. El corte exacto se anuncia antes de empezar y viene en la hoja de estructura. El puesto de premio más bajo (min-cash) suele rondar 1.5-2x tu buy-in, y a partir de ahí los premios suben con fuerza hacia la mesa final.
 
 ---
 

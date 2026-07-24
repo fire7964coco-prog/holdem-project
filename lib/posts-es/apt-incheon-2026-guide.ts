@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "El APT Incheon 2026 se juega del 7 al 16 de agosto en el Paradise City Casino, Incheon — a 10 min en lanzadera gratuita desde la Terminal 1. Main Event: entrada de KRW 2,500,000 (~$1,703), $1M GTD. Clasifica desde $3.50 con los satélites por pasos de Natural8. Solo para extranjeros (los ciudadanos coreanos no pueden entrar). Seúl está a ~1 hora y es una de las mejores ciudades de Asia para comer, cultura y vida nocturna.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-07-03",
+  updated: "2026-07-24",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🇰🇷",
@@ -48,7 +49,7 @@ Antes del póker: Corea del Sur se ha convertido, casi sin ruido, en uno de los 
 - **Cultura K:** el Palacio Gyeongbokgung, la aldea hanok de Bukchon y la escena de música en directo de Hongdae son experiencias culturales de primer nivel, sin exagerar.
 - **Coste:** comparada con Tokio, Hong Kong o Sídney, Seúl es sorprendentemente asequible — una cena completa de BBQ coreano con bebidas sale por menos de $20 por persona.
 
-Y para el visitante internacional: ==g:la mayoría de los pasaportes occidentales entran a Corea sin visado o con una K-ETA gratuita (autorización electrónica de viaje) que se tramita en minutos por internet.==
+Y para el visitante internacional: ==g:la mayoría de los pasaportes occidentales (EE. UU., Canadá, Reino Unido, Australia, NZ, Japón y 16 más) están temporalmente exentos de la K-ETA hasta el 31 de diciembre de 2026 — embarcas solo con tu pasaporte y presentas la Tarjeta de Llegada electrónica (e-Arrival Card) gratuita antes de aterrizar.==
 
 ---
 
@@ -104,8 +105,8 @@ Natural8 es el partner online oficial del APT y organiza la campaña de satélit
 
 | Ruta | Asientos GTD | Cómo funciona |
 |---|---|---|
-| **Mega Satélite → Día 1 en vivo** | 52 asientos | Ganas online → juegas el Main Event completo en vivo desde el Día 1 |
-| **OnLive Día 1** | 22 asientos | Juegas el Día 1 online → si embolsas fichas, continúas en vivo desde el Día 3 |
+| **Mega Satélite → Día 1 en vivo** | 45 asientos (7 incl. $500 en créditos) | Ganas online → juegas el Main Event completo en vivo desde el Día 1 |
+| **OnLive Día 1** | 12 asientos | Juegas el Día 1 online → si embolsas fichas, continúas en vivo desde el Día 3 |
 
 </div>
 
@@ -149,7 +150,7 @@ Paradise City opera su propio traslado gratuito desde el aeropuerto:
 | Opción | Trayecto | Coste | Notas |
 |:---|:---:|:---|:---|
 | ==g:**Lanzadera gratuita (desde T1)**== | ==g:~10 min== | ==g:Gratis== | La mejor opción — puerta 3C o 14C, cada 30 min (5:00–23:00) |
-| Lanzadera gratuita (desde T2) | ~20 min | Gratis | Puerta 2A, cada 60 min |
+| Lanzadera gratuita (desde T2) | ~20 min | Gratis | Puerta 4A, cada 60 min |
 | Taxi desde T1 | ~15–20 min | ~$15–20 | Con taxímetro, disponible 24/7 |
 | AREX hasta la estación de Unseo → taxi | ~20 min en total | ~$8 | Útil si el horario del tren encaja |
 
@@ -288,11 +289,11 @@ Comparado con el EPT Barcelona (~€5,300 el Main) o el WPT Australia (~AUD $5,0
 
 | Nacionalidad | ¿Visado? | Cómo entrar |
 |---|---|---|
-| EE. UU., Canadá, Reino Unido, Australia, NZ, la mayor parte de la UE | **Sin visado** | K-ETA (gratis, online, se tramita en 5 min) |
+| EE. UU., Canadá, Reino Unido, Australia, NZ, la mayor parte de la UE | **Sin visado** | Exentos de K-ETA hasta el 31 de diciembre de 2026 (presenta la e-Arrival Card gratuita); países no exentos: K-ETA de ₩10,000 en k-eta.go.kr |
 | Japón, Singapur, Hong Kong, Taiwán | **Sin visado** | K-ETA |
 | La mayoría del resto de países | Consulta [mofa.go.kr](https://www.mofa.go.kr) | Puede que necesites visado de turista |
 
-==r:Solicita la K-ETA antes de reservar los vuelos.== Suele ser instantánea, pero compruébalo con 2 semanas de antelación en [k-eta.go.kr](https://www.k-eta.go.kr).
+==r:Comprueba tu situación de K-ETA antes de reservar.== 22 países (EE. UU., Reino Unido, UE, Australia, Japón y más) están exentos hasta el 31 de diciembre de 2026 y solo presentan la e-Arrival Card gratuita antes de aterrizar; el resto la solicita en [k-eta.go.kr](https://www.k-eta.go.kr) (₩10,000, normalmente instantánea — deja 2 semanas de margen por seguridad).
 
 **Entrada al casino (Paradise City):**
 - Pasaporte no coreano válido obligatorio
@@ -311,11 +312,11 @@ Comparado con el EPT Barcelona (~€5,300 el Main) o el WPT Australia (~AUD $5,0
 
 **Q. ¿De verdad se puede ir andando desde el aeropuerto de Incheon al Paradise City Casino?**
 
-A. Está muy cerca. Paradise City opera una lanzadera gratuita desde la Terminal 1 (puertas 3C y 14C) cada 30 minutos — el trayecto dura unos 10 minutos. La Terminal 2 tiene su propia lanzadera cada 60 minutos desde la puerta 2A. El resort es un complejo integrado pegado al aeropuerto, pensado específicamente para las llegadas internacionales.
+A. Está muy cerca. Paradise City opera una lanzadera gratuita desde la Terminal 1 (puertas 3C y 14C) cada 30 minutos — el trayecto dura unos 10 minutos. La Terminal 2 tiene su propia lanzadera cada 60 minutos desde la puerta 4A. El resort es un complejo integrado pegado al aeropuerto, pensado específicamente para las llegadas internacionales.
 
 **Q. ¿Puedo jugar el Main Event del APT Incheon si nunca he jugado un torneo en vivo?**
 
-A. Sí. La entrada (~$1,703) es considerable, pero la estructura es amable para principiantes — stacks iniciales profundos y niveles largos. Si te manejas con las partidas caseras o el póker online, la transición al juego en vivo es asumible. El Mini Main Event (~$610) y el Ultra Stack (~$475) son opciones de stakes más bajos para empezar.
+A. Sí. La entrada (~$1,703) es considerable, pero la estructura es amable para principiantes — stacks iniciales profundos y niveles largos. Si te manejas con las partidas caseras o el póker online, la transición al juego en vivo es asumible. El Mini Main Event (~$610, KRW 900K) y el Ultra Stack (~$475) son opciones de stakes más bajos para empezar.
 
 **Q. ¿Cómo voy de Paradise City a Seúl?**
 

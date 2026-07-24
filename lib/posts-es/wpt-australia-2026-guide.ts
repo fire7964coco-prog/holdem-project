@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "WPT Australia 2026: 10–30 sep, The Star Sydney. Dos eventos estrella: AUD $1,500 WPT Prime (17–22 sep) y AUD $5,000 WPT Championship (24–30 sep). Satélites presenciales desde AUD ~$255. El campeón se lleva además un asiento de $10,400 al WPT World Championship. Obligatorio ser mayor de 18 años, socio del Star Club y respetar el código de vestimenta smart-casual.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-07-03",
+  updated: "2026-07-24",
+  masterUpdated: "2026-07-19",
   readTime: "14 min",
   emoji: "🦘",
   layout: "tournament-guide",
@@ -61,7 +62,7 @@ El festival de este año regresa a ==**The Star Sydney**== e introduce un **form
 
 </div>
 
-**Por qué 2026 es más grande**: el formato de doble campeonato significa dos oportunidades distintas de levantar la WPT Champions Cup. Los jugadores internacionales con un bankroll de nivel $1,500 tienen ahora un camino realista hacia el trofeo sin tener que soltar $5,000.
+**Por qué 2026 es más grande**: el formato de doble campeonato pone en juego dos títulos de campeonato retransmitidos en directo en un mismo festival — el WPT Prime Perpetual Trophy en el AUD $1,500 y la Mike Sexton Champions Cup en el AUD $5,000. Los jugadores internacionales con un bankroll de nivel $1,500 tienen ahora un camino realista hacia un título WPT sin tener que soltar $5,000.
 
 ---
 
@@ -78,12 +79,12 @@ Es la pregunta que hace todo debutante. Aquí va el desglose honesto:
 | Tamaño del campo (est.) | 500–800 entradas | 400–600 entradas |
 | Estructura | Deep-stack, multi-flight | Deep-stack, 3 flights |
 | Mesa final | ==g:Retransmitida en global== | ==g:Retransmitida en global== |
-| WPT Champions Cup | ✅ Sí | ✅ Sí + asiento WC |
+| Título en juego | WPT Prime Perpetual Trophy | Mike Sexton Champions Cup + asiento WC |
 | Ideal para | Debutantes, grinders de bankroll medio | Regulares experimentados de torneo |
 
 </div>
 
-**Recomendación**: si es tu primer evento WPT, ==g:empieza por el Prime de AUD $1,500==. Vivirás el ambiente WPT completo — mesa final retransmitida en directo, estructura profunda, WPT Champions Cup — por aproximadamente un tercio del buy-in del Championship. Muchos jugadores entran en ambos.
+**Recomendación**: si es tu primer evento WPT, ==g:empieza por el Prime de AUD $1,500==. Vivirás el ambiente WPT completo — mesa final retransmitida en directo, estructura profunda, una oportunidad de llevarte el Prime Perpetual Trophy — por aproximadamente un tercio del buy-in del Championship. Muchos jugadores entran en ambos.
 
 ---
 
@@ -213,7 +214,7 @@ Esta sección es la que ==r:se salta la guía de toda la competencia== — y es 
 
 ### Ley de NSW: límite diario de juego en efectivo de AUD $5,000
 
-Bajo la **Casino Control Act de NSW**, existe un **límite diario de AUD $5,000 en efectivo** para el juego. Todas las entradas de torneo (incluidos los satélites) deben comprarse con fichas de juego — no con tarjetas de crédito ni efectivo en la mesa.
+Bajo las **reformas de manejo de efectivo de los casinos de NSW**, existe un **límite diario de AUD $5,000 en efectivo** para el juego (este tope se mantiene hasta septiembre de 2026 y está previsto que baje a AUD $1,000/día a partir de agosto de 2027). El juego es **carded** — juegas a través de tu tarjeta del Star Club — y todas las entradas de torneo (incluidos los satélites) deben comprarse con fichas de juego, no con tarjetas de crédito ni efectivo en la mesa.
 
 ### Transferencia bancaria a The Star Sydney — antes de llegar
 
@@ -272,7 +273,7 @@ Esto es lo que cuesta de verdad un viaje completo al WPT Australia, según los d
 
 </div>
 
-> **Nota**: el escenario ajustado asume que ganaste tu satélite al Prime mediante el clasificatorio presencial por pasos (~AUD $255). Los escenarios estándar y de experiencia completa incluyen el buy-in directo. Los vuelos desde Asia Oriental/Sudeste Asiático suelen oscilar entre AUD $700–1,500 ida y vuelta.
+> **Nota**: el escenario ajustado asume que ganaste un asiento al Championship mediante el clasificatorio presencial por pasos (~AUD $255 en total si ganas atravesando ambos pasos). Los escenarios estándar y de experiencia completa incluyen el buy-in directo. Los vuelos desde Asia Oriental/Sudeste Asiático suelen oscilar entre AUD $700–1,500 ida y vuelta.
 
 ---
 
