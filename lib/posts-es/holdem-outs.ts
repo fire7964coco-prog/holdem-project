@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un out es cualquier carta que queda en la baraja y convierte tu mano en una probable ganadora. Cuéntalos y conviértelos: multiplica los outs por 4 en el flop o por 2 en el turn para tu % aproximado de ligar. Un proyecto de color son 9 outs ≈ 36% para el river.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-07-13",
-  masterUpdated: "2026-07-03",
+  updated: "2026-07-24",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🎯",
@@ -182,6 +182,10 @@ Rara vez sabes el descuento exacto, y no pasa nada. La jugada es direccional: cu
 
 A. Los outs son las cartas que quedan en la baraja y mejoran tu mano hasta una probable ganadora. Un proyecto de color tiene 9 outs (las 9 cartas no vistas de tu palo); un proyecto de escalera abierto tiene 8. Los cuentas para calcular tu probabilidad de ligar y si un call es rentable.
 
+**Q. ¿Qué significan 9 outs en el póker?**
+
+A. Significa que nueve cartas que quedan en la baraja pueden completar tu mano — casi siempre un proyecto de color (13 de un palo menos las 4 que ves). Nueve outs equivalen a un 35% de ligar para el river desde el flop, o un 19.1% en la única carta del turn. La regla vale para cualquier número: más outs significa más probabilidad de ligar, y multiplicar tus outs por 4 en el flop (o por 2 en el turn) te da un porcentaje rápido.
+
 **Q. ¿Cómo se cuentan los outs en el póker?**
 
 A. Nombra la mano que persigues, cuenta cuántas cartas la completan (13 de cada palo, 4 de cada valor), resta las que ya puedes ver en tu mano y en la mesa, y luego tacha cualquier out "muerto" que aun así perdería. Un proyecto de color es 13 − 4 = 9.
@@ -209,6 +213,14 @@ A. 15, no 17. Un proyecto de color son 9 outs y una escalera abierta son 8, pero
 **Q. ¿Se cuentan las cartas del rival al contar outs?**
 
 A. No. Solo restas las cartas que puedes ver de verdad — tus cartas y la mesa comunitaria. Cualquier otra carta no vista se trata como viva, y por eso los conteos de outs estándar (9 de color, 8 de una escalera abierta) se sostienen sin importar lo que tenga el rival.
+
+**Q. ¿Cómo se calculan o cuentan los outs rápidamente?**
+
+A. Identifica las cartas que te ayudan: nombra el proyecto que persigues, cuenta cuántas cartas lo completan (13 de cada palo, 4 de cada valor) y resta las que ya ves. Un proyecto de color es 13 − 4 = 9. Para pasar ese número a un porcentaje en segundos, usa la [regla del 2 y 4](/es/blog/holdem-probability): multiplica los outs por 4 en el flop, por 2 en el turn.
+
+**Q. ¿Qué son las odds y los outs?**
+
+A. Son las dos mitades de la misma decisión. Los outs son las cartas que completan tu mano; las odds son la probabilidad de que salga uno de esos outs, expresada como porcentaje o como relación (por ejemplo, 9 outs ≈ 35% o 1.9 a 1 para el river). Cuentas los outs, los conviertes en odds con la regla del 2 y 4, y luego comparas esas odds con las [pot odds](/es/blog/holdem-pot-odds) para decidir si el call es rentable.
 
 ---
 

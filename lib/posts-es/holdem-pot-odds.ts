@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Para calcular las pot odds, divide lo que tienes que igualar entre el bote total después de tu call. Igualar $50 en un bote de $150 = 50 ÷ 200 = 25% — necesitas al menos un 25% de equity para que el call sea rentable.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-07-13",
-  masterUpdated: "2026-07-03",
+  updated: "2026-07-24",
+  masterUpdated: "2026-07-18",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🧮",
@@ -195,6 +195,14 @@ A. Divide lo que tienes que igualar entre el bote total *después* de tu call. I
 
 A. Sí. La fórmula de equity necesaria usa el bote *final*, que incluye tu propio call. Igualar $50 en un bote de $150 da un bote final de $200, así que 50 ÷ 200 = 25%. Dejar fuera tu call es el error de principiante más común.
 
+**Q. ¿Cómo se calcula el tamaño del bote en el póker?**
+
+A. El bote es cada ficha que ya está en el centro más cualquier apuesta hecha en la calle actual. Antes de calcular las pot odds, suma el bote inicial y la apuesta de tu rival — y luego incluye tu propio call en el bote *final*. Ejemplo: un bote de $100, una apuesta de $50 y tu call de $50 hacen un bote final de $200.
+
+**Q. ¿Qué son los pot odds y cómo se calculan?**
+
+A. Los pot odds (o probabilidades del bote) son el precio que te ofrecen por seguir en la mano: comparan la recompensa (el bote) con el coste (el call). Para calcularlos en porcentaje, divide lo que tienes que igualar entre el bote *final* (con tu call incluido). Igualar $50 en un bote de $150 es 50 ÷ 200 = 25% — esa es la equity que necesitas para que el call sea rentable.
+
 **Q. ¿Qué es un buen ratio de pot odds?**
 
 A. Cuanto más alto, mejor — te encantaría estar "recibiendo 5 a 1" (necesitando solo un 16.7%). Pero lo "bueno" es relativo a tu mano: recibir 2 a 1 (necesitar un 33%) es genial con un proyecto de color y terrible con un gutshot. Compara siempre el precio con tu equity.
@@ -218,6 +226,22 @@ A. Un atajo para convertir outs en equity: multiplica los outs por 4 en el flop 
 **Q. ¿Cuánta equity necesito para pagar una apuesta?**
 
 A. Exactamente tus pot odds en porcentaje: call ÷ bote final. Frente a una apuesta de medio bote necesitas un 25%; frente a una del tamaño del bote, un 33%. Cuenta tus outs, conviértelos con la regla del 2 y 4, y paga cuando tu equity supere el listón.
+
+**Q. ¿Qué parte del bote deberías apostar?**
+
+A. El sizing de la apuesta es la otra cara de las pot odds — tu apuesta fija el precio que recibe tu rival. Una apuesta de medio bote le da 3 a 1 (necesita un 25%), una del tamaño del bote le da 2 a 1 (necesita un 33%), y un overbet exige aún más. Apuesta más grande en mesas cargadas de proyectos para negarles a los proyectos un call rentable; baja el tamaño cuando quieres que una mano más débil pague por valor. Los sizings habituales van desde ⅓ del bote hasta el bote entero según la mesa y tu objetivo.
+
+**Q. ¿Tu equity debería ser mayor o menor que tus pot odds?**
+
+A. Mayor. Tus pot odds te dan la equity que *necesitas* para pagar (call ÷ bote final); tu equity es cuántas veces vas a ganar de verdad. Pagas cuando tu equity es *mayor* que ese número necesario y foldeas cuando es menor. Si una apuesta de medio bote necesita un 25% y tu proyecto de color tiene un 35%, entonces 35% > 25% → un call rentable.
+
+**Q. ¿Qué es el MDF (frecuencia mínima de defensa) en el póker?**
+
+A. El MDF (minimum defense frequency, o frecuencia mínima de defensa) es el porcentaje del rango con el que tienes que continuar frente a una apuesta para que tu rival no gane dinero automáticamente faroleando con cualquier carta. Se calcula con la fórmula bote ÷ (bote + apuesta): frente a una apuesta del tamaño del bote, el MDF es del 50%; frente a una de medio bote, del 67%. Es un concepto avanzado de teoría de juego (GTO): las pot odds te dicen si *esta* mano concreta paga, y el MDF te dice cuánto de *todo tu rango* debes defender.
+
+**Q. ¿Cuál es la diferencia entre los pot odds y el MDF?**
+
+A. Los pot odds son una decisión de *una sola mano*: comparan lo que arriesgas (el call) con lo que puedes ganar (el bote) para decirte si esa mano concreta tiene equity suficiente para pagar. El MDF (frecuencia mínima de defensa) es una decisión de *rango completo*: te dice qué porción de todas tus manos debes defender para que el rival no se lleve el bote faroleando gratis. Las pot odds miran tu equity contra el precio; el MDF mira tu frecuencia de defensa contra su frecuencia de farol.
 
 ---
 

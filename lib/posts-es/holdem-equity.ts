@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "El equity es tu parte del bote: el porcentaje de veces que tu mano gana si se reparten todas las cartas. Igualas cuando tu equity supera a tus pot odds, pero la posición y las apuestas hacen que casi nunca te quedes con todo tu equity — y el fold equity te deja ganar botes incluso cuando tu mano va por detrás.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-07-13",
-  masterUpdated: "2026-07-08",
+  updated: "2026-07-24",
+  masterUpdated: "2026-07-18",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🥧",
@@ -198,6 +198,18 @@ A. El equity es tu probabilidad de ganar (lo que tienes); las pot odds son el eq
 
 A. Por sí solo no es ni bueno ni malo — un 50% es un coin flip. Que sea un call depende del precio: frente a una apuesta de medio bote solo necesitas un 25%, así que un 50% es un call fácil; pero arriesgar todo tu stack como underdog al 50/50 sin nada más es un juego de azar, no una ventaja. El equity solo tiene sentido junto a las pot odds.
 
+**Q. ¿Qué significa un 20% de equity?**
+
+A. Significa que tu mano gana alrededor del 20% de las veces si se juega hasta el showdown — así que en un bote de $100 tu parte vale en torno a $20 a largo plazo. Que un 20% sea un call depende del precio: frente a una apuesta de un cuarto de bote necesitas un 17% aproximadamente, así que un 20% está bien; frente a una apuesta de medio bote (hace falta un 25%) es un fold. Cualquier cifra de equity solo significa algo junto a las pot odds.
+
+**Q. ¿Qué es el fold equity?**
+
+A. El fold equity es el equity extra que ganas por la posibilidad de que tu rival se retire ante tu apuesta. Cuando apuestas tienes dos formas de ganar — que se retiren ahora, o que igualen y ganes en el showdown —, mientras que pasar (check) solo te da la segunda. Ese equity añadido es la razón por la que una apuesta puede ganar un bote que tu mano sola perdería, y por la que la agresión rinde más que el juego pasivo.
+
+**Q. ¿Cuánta equity necesitas para pagar una apuesta del tamaño del bote?**
+
+A. Necesitas un 33% de equity para igualar una apuesta del tamaño del bote. La equity requerida sale de coste ÷ bote final: pagas $100 para ganar un bote final de $300 (bote $100 + apuesta $100 + tu propio call $100), así que 100 ÷ 300 = 33%. Frente a media apuesta de bote solo hace falta un 25% (pagas 50 para ganar 200), y frente a un cuarto de bote un 17% aproximadamente (25 ÷ 150) — cuanto más grande es la apuesta, más equity necesitas para pagar.
+
 **Q. ¿Cuánto fold equity necesito para farolear con beneficio?**
 
 A. Para un farol puro, necesitas que tu rival se retire al menos apuesta ÷ (bote + apuesta) de las veces. Apostar $50 a un bote de $100 significa 50 ÷ 150 = 33%. Si además tienes un proyecto (un semi-farol), necesitas que se retiren aún menos, porque todavía puedes ganar cuando te igualan. Por eso semi-farolear con proyectos es tan rentable.
@@ -213,6 +225,14 @@ A. El equity all-in es simplemente tu porcentaje de victoria bruto cuando ya no 
 **Q. ¿Por qué baja mi equity en botes multiway?**
 
 A. Porque el mismo bote del 100% ahora se reparte entre más manos — un par de ases al ~85% mano a mano cae al ~64% contra tres jugadores y al ~56% contra cuatro. El multiway también recorta tu fold equity (todos tienen que retirarse, no solo un jugador) y tu realización (más jugadores significan más formas de que te superen ligando), así que se encogen tanto tu parte bruta como lo que te quedas de ella.
+
+**Q. ¿Qué es el EV (valor esperado) en el póker?**
+
+A. El valor esperado es la cantidad media que una decisión gana o pierde a largo plazo. Una jugada que en promedio deja más de cero es +EV (rentable); menos de cero es −EV (perdedora); cero es no perder ni ganar. El póker ganador consiste simplemente en elegir acciones +EV y foldear las −EV — cada apuesta, call y fold tiene un EV, aunque no puedas ver la cifra exacta.
+
+**Q. ¿Cuál es la diferencia entre el equity y el EV?**
+
+A. El equity es tu probabilidad de ganar el bote (un porcentaje); el EV es si *actuar* sobre ese equity de verdad gana dinero (una cantidad, en fichas). Puedes tener mucho equity y aun así hacer un call −EV si el precio está mal, o tener poco equity y un farol +EV si tu rival se retira lo bastante a menudo. El equity te dice dónde estás; el EV te dice si la decisión es rentable.
 
 ---
 

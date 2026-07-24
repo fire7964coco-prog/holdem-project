@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ligas un set con una pareja servida el 11.8% de las veces (7.5 a 1 en contra), ligas un color con dos cartas del mismo palo apenas un 0.84%, y completas un proyecto de color del flop al river el 35% de las veces. Cada número de abajo sale de la baraja, no se adivina.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-07-13",
-  masterUpdated: "2026-07-04",
+  updated: "2026-07-24",
+  masterUpdated: "2026-07-18",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🎲",
@@ -190,6 +190,10 @@ A. Son las mismas odds dichas de dos formas. "7.5 a 1 en contra" cuenta fallos f
 
 A. Un set es una pareja servida más una carta que la empareja en la mesa — lo ligas el 11.8% de las veces y está bien disimulado. Trips es una carta suelta sin emparejar que la mesa empareja (dos cartas iguales en la mesa) — solo el 1.35% en el flop, y mucho más evidente para los rivales. El mismo valor de trío, odds y valor muy distintos.
 
+**Q. ¿Qué es un proyecto de color?**
+
+A. Un proyecto de color es cuando tienes cuatro cartas hacia un color y necesitas una más de ese palo — por ejemplo A♥ K♥ en un flop 9♥ 5♥ 2♠, donde cualquiera de los nueve corazones que quedan lo completa. Un proyecto de color ligado en el flop tiene nueve outs y llega más o menos el 35% de las veces al river, o alrededor del 19% con una sola carta.
+
 **Q. ¿Qué probabilidad hay de ligar un color?**
 
 A. Apenas un 0.84% (más o menos 118 a 1) con dos cartas del mismo palo — eso es C(11,3)/C(50,3). No lo confundas con ligar un *proyecto* de color, que es un 10.9%, ni con *completar* ese proyecto al river, que es un 35%. Dos cartas del mismo palo ligan un proyecto trece veces más a menudo que un color hecho.
@@ -197,6 +201,18 @@ A. Apenas un 0.84% (más o menos 118 a 1) con dos cartas del mismo palo — eso 
 **Q. Si ligo un proyecto de color, ¿qué probabilidad tengo de completarlo?**
 
 A. Alrededor del 35% al river con nueve outs (1 − C(38,2)/C(47,2)) — un poco mejor que uno de cada tres. Con una sola carta es más o menos un 19%: 9/47 del flop al turn, 9/46 del turn al river. Usa el número de una carta siempre que quede apuesta por venir.
+
+**Q. ¿Qué probabilidad hay de ligar un color con cuatro cartas frente a tres?**
+
+A. Con cuatro cartas hacia un color después del flop — un proyecto de color real con nueve outs — lo completarás más o menos el 35% de las veces al river. Con solo tres cartas hacia el color necesitas que *tanto* el turn como el river sean de tu palo (un color por puerta trasera, o runner-runner), lo que sale apenas un ~4.2%. Por eso cuatro cartas hacia el color es un proyecto que vale la pena jugar y tres es apenas un desempate.
+
+**Q. ¿Qué es un proyecto de escalera y qué probabilidad hay de ligarlo?**
+
+A. Un proyecto de escalera son cuatro cartas hacia una escalera. Un proyecto de escalera abierto (como 8-7 en una mesa 9-6-2, a la espera de un 5 o un 10) tiene ocho outs y se completa más o menos el 31.5% de las veces al river. Un proyecto interior (gutshot) tiene solo cuatro outs — un único valor rellena el hueco — así que liga alrededor del 16.5%, más o menos la mitad de a menudo.
+
+**Q. ¿Cuál es la regla para jugar un proyecto?**
+
+A. La regla es sencilla: compara tu probabilidad de ligar con las pot odds que te da el bote. Un proyecto de color tiene un 19.6% de ligar del turn al river (nueve outs) y un proyecto abierto un 17% con una carta (ocho outs); si el bote paga más de lo que "cuesta" completar el proyecto, pagas, y si no, te retiras o buscas odds implícitas que lo compensen. Pasa el número por [cómo calcular las pot odds](/es/blog/holdem-pot-odds) y tendrás la decisión hecha.
 
 **Q. ¿Qué probabilidad hay de ligar un póker?**
 

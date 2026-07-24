@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Para el river ligarás pareja el 43.8% de las veces, doble pareja el 23.5%, color el 3.0% y full el 2.6% — mientras que una escalera real aparece solo una vez cada 31,000 manos.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-07-13",
-  masterUpdated: "2026-07-03",
+  updated: "2026-07-24",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🎲",
@@ -217,6 +217,18 @@ A. Alrededor de 1 entre 30,940 para el river cuando juegas una mano de Hold'em h
 
 A. Más o menos 1 entre 72,193 como mano de cinco cartas, o alrededor de 1 entre 3,590 para el river en Hold'em. Es la segunda mano más rara, superada solo por la escalera real.
 
+**Q. ¿Cuál es la probabilidad de tener póker (four of a kind)?**
+
+A. El póker (cuatro iguales) se liga alrededor de 1 entre 595 veces para el river en Hold'em (0.168%), o 1 entre 4,165 como mano servida de cinco cartas. Un póker *concreto*, como póker de ases, es mucho más improbable — o tienes esa pareja servida y caen las dos cartas restantes, o los cuatro palos aparecen en la mesa.
+
+**Q. ¿Qué probabilidad hay de ligar un color, una escalera o un full?**
+
+A. Para el river en Hold'em ligas color alrededor del 3.0% de las veces (1 entre 33), escalera el 4.6% (1 entre 22) y full el 2.6% (1 entre 39). Así que el full es en realidad más raro que el color, y el color más raro que la escalera — exactamente el orden que la jerarquía de manos les da.
+
+**Q. ¿Cuál es la probabilidad de cada mano de póker?**
+
+A. En resumen, para el river en Hold'em: pareja el 43.8%, doble pareja el 23.5%, trío el 4.83%, escalera el 4.62%, color el 3.03%, full el 2.60% y póker el 0.168%; la escalera de color es 1 entre 3,590 y la escalera real 1 entre 30,940. Tienes cada valor, junto a las odds a cinco cartas, en la tabla de arriba.
+
 **Q. ¿Cuál es la probabilidad de ligar un color para el river?**
 
 A. Si ligas un proyecto de color en el flop (nueve outs), lo completarás alrededor del 35% de las veces para el river — mejor que una de cada tres. Con una sola carta (turn a river), baja a aproximadamente 19.6%.
@@ -231,7 +243,15 @@ A. 1 entre 221 (0.45%) para los ases en concreto. Cualquier pareja, en cambio, l
 
 **Q. ¿Qué es la regla del 2 y 4 en el póker?**
 
-A. Un atajo para las odds de proyecto: multiplica tus outs por 4 en el flop (faltan dos cartas) o por 2 en el turn (falta una carta) para estimar tu porcentaje de ligar. Es precisa a un punto o dos hasta unos nueve outs.
+A. Un atajo para las odds de proyecto — también llamada "regla del 4 y 2": multiplica tus outs por 4 en el flop (faltan dos cartas) o por 2 en el turn (falta una carta) para estimar tu porcentaje de ligar. Es precisa a un punto o dos hasta unos nueve outs.
+
+**Q. ¿Cómo se calculan las probabilidades en el póker?**
+
+A. Empiezas contando tus outs — las cartas no vistas que completan tu mano — y aplicas la regla del 2 y 4: outs × 4 en el flop, outs × 2 en el turn te dan tu porcentaje aproximado de ligar. Un proyecto de color son 9 outs, así que 9 × 4 = 36% (real: 35.0%). Luego comparas ese porcentaje con tus pot odds para decidir si pagar es rentable.
+
+**Q. ¿Qué es la "regla 80/20" en el póker?**
+
+A. No es una fórmula de odds fija, sino la idea de que buena parte del beneficio a largo plazo viene de una minoría de tus manos y decisiones — las manos premium bien jugadas y los momentos en que tus odds de proyecto superan claramente el precio del call. La mayoría de manos se foldean; el dinero se hace en ese puñado de situaciones donde la matemática está de tu lado. Por eso conviene automatizar la regla del 2 y 4 y las pot odds: son las que deciden esos botes clave.
 
 **Q. ¿Cómo se calculan las pot odds?**
 
@@ -240,6 +260,26 @@ A. Divide la cantidad que debes igualar entre el bote total tras tu call. Iguala
 **Q. ¿Cuál es la probabilidad de set sobre set?**
 
 A. No hay un número fijo único — depende de cuántos rivales tengan parejas servidas — pero es raro. Para empezar, tú ligas un set solo el 11.8% de las veces, así que que dos jugadores liguen sets en la misma mesa es el clásico "cooler" que cuesta stacks.
+
+**Q. ¿Cuál es la probabilidad de ligar una escalera real en el flop?**
+
+A. Ínfima. Incluso cuando ya tienes dos de sus cinco cartas del mismo palo — digamos A♥ K♥ — el flop trae el Q♥ J♥ 10♥ exacto solo alrededor de una vez cada 19,600 flops. Desde una mano inicial aleatoria es muchísimo más raro aún, y por eso casi toda escalera real que se liga se completa en el turn o el river, no en el flop.
+
+**Q. ¿Cuál es la mano ganadora más común en el póker?**
+
+A. La pareja, seguida de la doble pareja. Como todos los jugadores comparten las cinco cartas comunitarias, la mayoría de los botes de Texas Hold'em se deciden con una sola pareja y su kicker — los colores, escaleras y fulls ganan mucho menos de lo que espera un principiante. La frecuencia completa de cada resultado está en la tabla de arriba.
+
+**Q. ¿Con qué frecuencia gana la mejor mano en el póker?**
+
+A. Menos de lo que crees antes del river. Incluso la pareja de ases — la mejor mano inicial — gana solo alrededor del 85% de las veces mano a mano, y mucho menos contra una mesa llena. Para el river, las mejores cinco cartas ganan por definición; las sorpresas pasan antes, cuando una mano hecha es superada por un proyecto vivo.
+
+**Q. ¿Con qué frecuencia ligas en el flop?**
+
+A. Con dos cartas propias sin emparejar, ligarás al menos una de ellas en el flop alrededor del 32% de las veces — así que fallas por completo unos dos flops de cada tres. Por eso importan tanto la posición y la agresividad: la mayoría de los flops no ligan a nadie, y quien está dispuesto a apostar se lleva el bote a menudo.
+
+**Q. ¿Qué probabilidad hay de tener los nuts?**
+
+A. No hay un número único — los nuts (la mejor mano posible en una mesa dada) cambian con cada tablero. En una mesa seca y sin parejas, los nuts pueden ser el set más alto; en una mesa coordinada, una escalera o un color. La destreza no es memorizar una cifra de odds, sino leer qué mano *es* los nuts y calcular cuán probable es que un rival la tenga.
 
 ---
 
