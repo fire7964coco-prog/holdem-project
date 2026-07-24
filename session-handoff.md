@@ -5,21 +5,23 @@
 
 ---
 
-## ▶▶▶▶ 새 세션 START HERE (es 재경화 진행중 — ✅**규칙6·족보6·확률6 완료(3/6)** / 다음 = ★**전략8**)
+## ▶▶▶▶ 새 세션 START HERE (es 재경화 진행중 — ✅**규칙6·족보6·확률6·전략8 완료(4/6)** / 다음 = ★**토너먼트9**)
 
-> 읽는 순서: `CLAUDE.md` → 이 블록 → `docs/es-hardening-workflow.md`(워크플로+지역편차 그라디언트) → `docs/es-brief-probability.md`(직전 확률6 브리프) → 방법론 상세는 바로 아래 "(방법론 참조) es 42편 재경화" 블록.
+> 읽는 순서: `CLAUDE.md` → 이 블록 → `docs/es-hardening-workflow.md`(워크플로) → `docs/es-brief-strategy.md`(직전 전략8 브리프) → 방법론 상세는 바로 아래 "(방법론 참조) es 42편 재경화" 블록.
 
-### ✅ 규칙6 `2570bae` + ✅ 족보6 `ba373dc` + ✅ 확률6 `b618804` (전부 2026-07-24 배포)
-- 규칙6: texas-holdem-rules(필라)·game-order·blind-meaning·all-in-rules·showdown-rules·betting-actions.
-- 족보6: hand-rankings(필라)·flush-vs-straight·kicker·tiebreak·split-pot·reading-board. EN FAQ 대량 포팅(tiebreak 8→15·split 8→17). 🔴교정 필라 Puzzle 3.
-- 확률6: probability(필라)·pot-odds·outs·drawing-odds·implied-odds·equity. §13 계산 최다→QA 독립재산(fold equity +$52·MDF 50/67%·9 outs 35%/19.6%). 🔴교정 equity pot-size 산식(100÷200=50%≠33%→coste÷bote final).
-- 공통: EN 마스터=뼈대, §13 EN verbatim(재계산X), tldr 2~3줄, masterUpdated=EN 실제날짜. 발행 총계 불변 57+448.
-- ★**교훈**(`docs/es-hardening-workflow.md`): 시드 얇으면 SERP 2회차 확장·네이티브 표현 교체(showdown→`quien gana`·bote dividido→`empate/split`·proyecto→`proyecto de color/escalera`). ★노이즈: split·proyecto=`planning/scrum poker`(애자일)·ante=스웨이드·all in=굿즈. ★작가 신규 추가 계산은 QA 독립재산 필수(equity 33% 산식오류 포착).
+### ✅ 규칙6 `2570bae` + 족보6 `ba373dc` + 확률6 `b618804` + 전략8 `982b946` (전부 2026-07-24 배포)
+- 규칙6/족보6/확률6/전략8 = 26편. EN 마스터=뼈대, §13 EN verbatim(재계산X), tldr 2~3줄, masterUpdated=EN 실제날짜. 발행 총계 불변 57+448.
+- 족보6: EN FAQ 대량 포팅(tiebreak 8→15·split 8→17). 🔴 필라 Puzzle 3(quad kings 누락).
+- 확률6: §13 계산 최다. 🔴 equity pot-size 산식(100÷200=50%≠33%→coste÷bote final).
+- ★전략8: **간체서 잡은 §13 stale 오류 3건이 es에도 존재→EN 대조로 전부 교정**(position-play 88+→TT+·3bet A5s 30→28%·when-to-fold 80-86→80-85%). 🔴 strategy always-raise J-J서 끊김→A-A~10-10·3bet T8s→108s.
+- ★**교훈**(`docs/es-hardening-workflow.md`): 시드 얇으면 2회차 확장·네이티브 표현 교체. ★노이즈: split·proyecto=애자일 planning poker·ante=스웨이드·cbet=cabernet·3bet=22bet(베팅사이트). ★**작가 신규 추가 계산·구언어 stale §13은 QA 독립재산 필수**(equity 33%·전략8 3건 포착). ★c-bet은 하이픈 빼야(`cbet` 563 vs `c-bet` 0).
 
-### ▶ 다음 = 전략8 (strategy 필라·positions·position-play·starting-hands-chart·limping·3bet·continuation-bet·when-to-fold) — 최다 8편
-- 방법론 동일: Phase1 나 중앙 리서치 → Phase2 병렬 작가**8**+적대적 스페인 QA(4편씩 2~3병렬) → Phase3 빌드·커밋. **§13**: 간체 전략8서 교정한 오차 주의 — position-play UTG 코어 88+→TT+·3bet A5s 28%·when-to-fold 80-85%. EN 마스터 실제값 확인 후 이식.
-- lowfruits 시드: `estrategia poker *`·`posiciones poker *`·`manos iniciales poker *`·`3bet poker *`·`c-bet poker *`·`cuando foldear poker *`·`limpear poker *`. spanglish 동사(foldear·limpear·cbetear·resubir) 용어은행 §Estrategia 참조.
-- es 클러스터 순서: 규칙6✅ → 족보6✅ → 확률6✅ → **전략8** → 토너먼트9 → 용어6.
+### ▶ 다음 = 토너먼트9 (tournament 필라·tvc·icm·bubble·short-stack + 라이브이벤트4: apt-incheon·korea-marathon·wpt-australia·ept-barcelona)
+- 방법론 동일: Phase1 나 중앙 리서치 → Phase2 병렬 작가9(전략5=4~5편씩 QA) → Phase3 빌드·커밋. **§13**: 간체 토너9서 ICM 재귀 재산·버블팩터·M값존 검산. EN 마스터 실제값 이식.
+- ★★**라이브이벤트4(apt-incheon·korea-marathon·wpt-australia·ept-barcelona)는 §14 사실=EN 母稿 verbatim**(날짜·바이인·GTD·場館·결과 rakko/官網 숫자로 갱신 금지=번역이지 업데이트 아님). ★"Brazalete"는 WSOP만·WPT/EPT/APT=título/trofeo. EPT Barcelona=스페인 이벤트라 고관련(la Armada 앵글). 용어은행 §Torneos 참조.
+- ★EN 마스터 검토 후보(전 언어 소급): ept Gold Pass $/€ 통화·WPT 36場vs표12場·all-in $15/$25행.
+- lowfruits 시드: `torneo poker *`·`icm poker *`·`burbuja poker *`·`stack corto poker *`·`cash vs torneo poker *`. Country=Spain/Spanish.
+- es 클러스터 순서: 규칙6✅ → 족보6✅ → 확률6✅ → 전략8✅ → **토너먼트9** → 용어6.
 
 ---
 

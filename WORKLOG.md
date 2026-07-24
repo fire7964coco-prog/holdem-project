@@ -3,6 +3,16 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-24 (★ es(스페인어) 전략8 클러스터 8편 경화 — es 재경화 4/6, 최다 8편·§13 오류 3건 교정)
+
+> 확률6에 이어 전략8(최다). `982b946`. ★간체 전략8서 잡았던 §13 오류 3건이 es에도 stale로 존재 → EN 대조로 전부 교정.
+- **8편**: `holdem-strategy`(필라·EN FAQ 3포팅 11→18+dinero real·loose/tight·tells) · `holdem-positions`(FAQ3+9-max·6-max·mejor posición=botón) · `holdem-position-play`(EN FAQ 2포팅+IP/OOP·actuar último) · `holdem-starting-hands-chart`(입池率<raw mean 델타 포팅+tabla·rangos por posición) · `holdem-limping`(over-limp+fish/pez) · `holdem-3bet`(EN FAQ 2포팅 13→16+4bet/5bet·rango por posición) · `holdem-continuation-bet`(value bet 포팅+tamaño/% cbet·cuándo NO) · `holdem-when-to-fold`(hero fold+pierdes al foldear).
+- **리서치**: lowfruits 11파일(estrategia 448·posiciones 362·3bet·cbet 563·manos iniciales 2회차 267·foldear·hero fold). ★노이즈: cbet=cabernet·3bet=22bet(베팅사이트)·posiciones=yoga/해부학·proyecto/limpear=애자일/세탁. 시드 교체(c-bet→cbet 하이픈 제거로 563개). → `docs/es-brief-strategy.md`.
+- **★§13 stale 오류 3건 EN 대조로 수정**(전부 간체와 동일): position-play UTG **88+→TT+** · 3bet A5s **30→28%** · when-to-fold **80-86→80-85%**(2곳). starting-hands 입池率 명확화도 델타 포팅.
+- **적대적 QA 4병렬: 8편 §13 독립 재산**. A5s 28%·TT+·80-85%·MDF 33%·set 11.8%·3bet sizing 9/12bb·cbet $30 boards 7-6-5·when-fold 25/29/33/37.5% 전수 통과. spanglish 검증: **cojear 부재·pasar≠fold·Cutoff≠corte·squeeze≠apretón**.
+- **🔴 2건 커밋 전 교정**: strategy always-raise가 J-J서 끊김(EN=A-A down to T-T)→**de A-A a 10-10** 복원 · 3bet **`T8s`→`108s`**(카드 10 표기, §13 규칙). 🟠 starting-hands `/hand-chart`→`/en/hand-chart` 통일.
+- masterUpdated=EN 실제날짜(positions 07-11·나머지 07-19, 대부분 필드 신규 추가). 발행 총계 불변 57 blog+448 intl. **다음=토너먼트9**(tournament·tvc·icm·bubble·short-stack + 라이브이벤트4 §14=EN verbatim).
+
 ## 2026-07-24 (★ es(스페인어) 확률6 클러스터 6편 경화 — es 재경화 3/6, 계산 최다 클러스터)
 
 > 족보6에 이어 확률6. `b618804`. §13 계산 최다 → verbatim 복사 + QA 독립 재산이 핵심.
