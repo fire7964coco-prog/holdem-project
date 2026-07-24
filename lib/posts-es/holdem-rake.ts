@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "El rake es la pequeña tajada que la sala se lleva de cada bote por montar la partida — normalmente entre 2.5 y 10% hasta un tope de unos pocos dólares. La mayoría de salas no cobra nada si todos foldean antes del flop ('no flop, no drop'). Golpea más fuerte a los límites bajos y a las mesas cortas, y el rakeback devuelve una parte a los regulares.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-07-04",
+  updated: "2026-07-24",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🏦",
@@ -97,9 +98,11 @@ Como la casa se beneficia del volumen que generas, la mayoría de salas te devue
 Hay dos formas de calcularlo:
 
 :::compare
-Contributed | Dealt
+Contribuido (contributed) | Repartido (dealt)
 Basado en el rake de los botes **en los que pones dinero** — el método moderno estándar | Repartido a partes iguales entre **todos los que reciben cartas** en el bote rakeado, contribuyan o no — ya poco común
 :::
+
+Cada vez más salas usan además un tercer método, el **rakeback progresivo**: en lugar de un porcentaje fijo, tu tasa de devolución sube por escalones conforme acumulas volumen a lo largo del mes, así que cuanto más juegas, mayor es el porcentaje que recuperas.
 
 Para un jugador casual, el rakeback es un extra menor. Para un regular de mucho volumen es enorme: la diferencia entre un acuerdo del 20% y del 40% puede valer **decenas de miles al año**, y para muchos grinders en tablas, el rakeback *es* su beneficio. En la práctica rebaja tu rake real, así que conviene comprobarlo antes de elegir dónde jugar. Eso sí, ten en cuenta que buena parte de los consejos de rakeback online son de afiliados — trata las páginas de "regístrate aquí" con el escepticismo que le darías a cualquier venta.
 
@@ -141,7 +144,11 @@ A. El rake es la comisión que una sala se lleva de un cash game por montarlo �
 
 **Q. ¿Cómo se calcula el rake?**
 
-A. En la mayoría de cash games es un porcentaje del bote, depositado antes de pagar al ganador, hasta un tope de unos pocos dólares. El porcentaje y el tope varían según la sala y los límites, y el tope a menudo se reduce cuando reparten a menos jugadores. En límites altos, las salas pueden cobrar una tarifa fija por tiempo por jugador en su lugar.
+A. En la mayoría de cash games es un porcentaje del bote (habitualmente 2.5–10%), depositado antes de pagar al ganador, hasta un tope de unos pocos dólares. Solo se cobra si la mano llega al flop: si todos foldean antes, no hay rake. El porcentaje y el tope varían según la sala y los límites, y el tope a menudo se reduce cuando reparten a menos jugadores. En límites altos, las salas pueden cobrar una tarifa fija por tiempo por jugador en su lugar.
+
+**Q. ¿Quién paga el rake en póker?**
+
+A. El rake se saca directamente del bote, así que sobre el papel lo paga el jugador que gana la mano — el montón ganador vuelve más pequeño por la cantidad del rake. En la práctica, todos los que metieron fichas en ese bote contribuyeron a él, así que la mesa entera comparte el coste a lo largo de una sesión. En torneos no hay ambigüedad: cada participante paga una comisión igual incluida en el buy-in, gane o buste primero.
 
 **Q. ¿Pagas rake si todos foldean antes del flop?**
 
@@ -154,6 +161,22 @@ A. Comúnmente el 10% del bote topado en unos $5. La mayoría de botes disputado
 **Q. ¿Qué es el rakeback?**
 
 A. El rakeback devuelve un porcentaje del rake que pagas personalmente — a menudo el 20–40% — a través de puntos, cashback o un programa de fidelidad. En la práctica rebaja tu rake real. Para jugadores casuales es un pequeño extra; para regulares de mucho volumen puede ser la diferencia entre un año perdedor y uno ganador.
+
+**Q. ¿Qué tipos de rakeback hay?**
+
+A. Hay tres formas de calcularlo. El **contribuido (contributed)** se basa solo en el rake de los botes en los que pones dinero — es el método moderno estándar. El **repartido (dealt)** divide el rake a partes iguales entre todos los que reciben cartas en el bote, contribuyan o no — ya es poco común. Y el **progresivo** sube tu tasa de devolución por escalones conforme acumulas volumen, así que cuanto más juegas, mayor es el porcentaje que recuperas.
+
+**Q. ¿Cuánto rake cobran las salas como GGPoker o PokerStars?**
+
+A. Varía según la sala, los límites y el formato, así que siempre conviene mirar la estructura de rake concreta antes de elegir mesa. Como referencia, el rake online suele moverse en un 3–5% del bote con un tope de $1–$3, mientras que en vivo tiende a ser un porcentaje más alto (a menudo el 10%) con un tope de $4–$6. Un detalle a tener en cuenta: la mayoría de salas siguen el "no flop, no drop" y no rakean los botes preflop, pero unas pocas (sobre todo GGPoker) sí sacan rake de algunos, así que comprueba la regla de tu sala.
+
+**Q. ¿Cómo puedes pagar menos rake en póker?**
+
+A. No puedes escapar del rake por completo en una partida rakeada, pero sí reducirlo. Consigue el mejor acuerdo de rakeback que puedas, elige salas con topes amables para el jugador y sube de límites, donde un tope fijo es una parte menor de cada bote. Jugar menos botes pero más grandes en lugar de una avalancha de botes pequeños topados, evitar las mesas muy cortas donde el tope apenas baja, y preferir las partidas de límites altos con rake por tiempo también rebajan tu rake efectivo. Las partidas caseras sin rake son el póker más barato que existe.
+
+**Q. ¿Es ilegal cobrar rake?**
+
+A. Cobrar rake es perfectamente legal para una sala, casino o sitio online con licencia — cobrar una comisión por montar la partida es todo su modelo de negocio. Lo que es ilegal en la mayoría de sitios es que el anfitrión de una partida *privada* o casera se lleve un rake para lucro personal: quedarse una tajada convierte una partida entre amigos en gestionar un negocio de juego sin licencia, y eso es lo que cruza la línea — no el póker en sí. Por eso las partidas caseras legales reparten los gastos pero nunca rakean el bote.
 
 **Q. ¿Los torneos de póker tienen rake?**
 

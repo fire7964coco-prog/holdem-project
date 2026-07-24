@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "Este es un glosario en lenguaje llano de los términos de póker que de verdad salen en una partida de Texas Hold'em, agrupados según cómo te los vas a encontrar: acciones de apuesta, posiciones, manos y mesa, tipos de jugador, dinero y situaciones de mesa. Empieza por los términos que más se confunden (pasar vs igualar, trío/set vs trips, cooler vs bad beat) y luego navega por categoría. Los términos con una guía más completa enlazan directamente a ella.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-07-05",
+  updated: "2026-07-24",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "📖",
@@ -26,7 +27,7 @@ El póker tiene su propio vocabulario, y dominarlo hace dos cosas: evita que par
 
 :::stripe
 6 | Categorías, agrupadas por cómo te las encuentras
-80+ | Términos explicados en lenguaje llano
+90+ | Términos explicados en lenguaje llano
 8 | Parejas de "los que más se confunden", aclaradas primero
 → | Guías más completas enlazadas desde términos clave
 :::
@@ -197,8 +198,12 @@ Fichas, límites y los dos formatos. La gran bifurcación es [cash game vs torne
 | **Rakeback** | Una devolución que reintegra parte del rake que has pagado. |
 | **Straddle** | Una ciega opcional (normalmente 2× BB) que compra la última acción preflop — [guía completa](/es/blog/holdem-straddle). |
 | **Cash game** | Fichas con valor real, entras o sales cuando quieres, ciegas fijas. |
+| **Sin límite (NLH) / Límite fijo** | El sin límite te deja apostar lo que quieras hasta todo tu stack; el límite fijo topa cada apuesta a un tamaño fijo. El Hold'em casi siempre es sin límite. |
+| **PLO** | Pot-Limit Omaha — una variante popular en la que recibes cuatro cartas de mano y debes usar exactamente dos (no es el mismo juego, pero lo oirás nombrar). |
 | **Torneo** | Buy-in fijo, ciegas crecientes, juegas hasta bustear o ganar. |
 | **Freezeout** | Un torneo sin recompras — fuera es fuera. |
+| **GTD (garantizado)** | La bolsa de premios mínima prometida de un torneo, pagada aunque las entradas se queden cortas. |
+| **Mano a mano (hand-for-hand)** | Cerca de la burbuja de premios, todas las mesas juegan una mano cada vez para que nadie pueda hacer tiempo hasta entrar en premios. |
 | **Bounty (knockout)** | Un torneo que paga un premio por cada jugador que elimines. |
 | **Sit & Go (SNG)** | Un torneo pequeño que arranca en cuanto se llena. |
 | **MTT** | Un torneo multimesa que fusiona mesas a medida que los jugadores bustean. |
@@ -234,6 +239,9 @@ Las palabras para lo que está pasando — y cómo comportarse mientras pasa.
 | **Cold deck** | Un reparto de mala suerte que produce un cooler (originalmente la baraja pre-ordenada de un tramposo). |
 | **"Don't tap the glass"** | No critiques a los jugadores flojos — espantarás a los que te dan de comer. |
 | **Run it twice** | Los jugadores all-in reparten la mesa restante dos veces, cada una por la mitad del bote, para reducir la varianza. |
+| **Mano a mano (heads-up)** | Jugar uno contra uno — ya sea una partida de dos jugadores o los dos últimos de un torneo. |
+| **RFI (raise first in)** | Ser el primer jugador en entrar al bote con una subida (un open-raise). |
+| **Splash the pot** | Tirar las fichas de cualquier manera al bote en vez de apilarlas delante de ti — mal visto, porque no se puede verificar la cantidad. |
 
 </div>
 
@@ -277,6 +285,18 @@ A. Los nuts son la mejor mano posible dadas las cartas de la mesa en ese momento
 **Q. ¿Qué significan VPIP y PFR en las estadísticas de póker?**
 
 A. VPIP (Voluntarily Put money In Pot) es el porcentaje de manos que un jugador elige jugar preflop — una medida de lo flojo o cerrado que es. PFR (Pre-Flop Raise) es el porcentaje con el que sube preflop — una medida de agresión. El PFR nunca puede ser mayor que el VPIP, y una gran diferencia entre ambos delata a un jugador pasivo, muy dado a igualar.
+
+**Q. ¿Cuáles son los términos y la jerga más importantes del póker?**
+
+A. Los que de verdad tienes que dominar son las acciones de apuesta (pasar, apostar, igualar, subir, retirarse, all-in), las posiciones (botón, ciega pequeña, ciega grande, UTG, cutoff), las calles (flop, turn, river) y la jerga de mesa que oirás cada noche: los nuts, un [fish (pez)](/es/blog/holdem-fish), un [cooler](/es/blog/holdem-cooler), un [bad beat](/es/blog/holdem-bad-beat), tiltearse y foldear. Con esos entiendes casi cualquier conversación; el resto lo vas pillando sobre la marcha.
+
+**Q. ¿Qué significan fish, tiburón y ballena en el póker?**
+
+A. Son apodos para los tipos de jugador. Un fish (pez) es el jugador recreativo flojo y perdedor, la fuente de beneficio de la mesa. Un tiburón (shark) es el jugador fuerte que se aprovecha de los más débiles. Una ballena (whale) es un recreativo rico que juega límites altos — un "pez con los bolsillos llenos". Regla de oro: si no ves al pez en la mesa, el pez eres tú. Tienes el desglose completo en la [guía del fish](/es/blog/holdem-fish).
+
+**Q. ¿Qué es un cooler y qué es un bad beat?**
+
+A. En un cooler ibas por detrás desde el principio con una mano demasiado fuerte para foldear (piensa en trío contra trío), y no hizo falta ninguna carta afortunada: la mano mayor iba delante todo el rato. En un bad beat eras el claro favorito cuando entró el dinero y te cazaron con una carta improbable en el river. Test rápido: si tu rival tuvo que *mejorar* para ganar, es un bad beat; si no, es un cooler. Tienes las dos situaciones a fondo en la [guía del cooler](/es/blog/holdem-cooler) y la [guía del bad beat](/es/blog/holdem-bad-beat).
 
 ---
 

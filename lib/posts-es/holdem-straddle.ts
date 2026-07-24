@@ -5,10 +5,11 @@ export const POST: Post = {
   title: "¿Qué es un straddle en póker? Reglas, tipos y si deberías ponerlo",
   seoTitle: "La apuesta que dobla la mesa — ¿qué es un straddle?",
   desc: "El straddle es una ciega voluntaria que dobla la apuesta antes de repartir. Reglas, tipos de straddle, quién actúa primero y si straddlear es rentable.",
-  tldr: "Un straddle es una apuesta ciega opcional — normalmente el doble de la ciega grande — que se pone antes de repartir las cartas. Le compra al que la pone la última acción y la opción de subir en preflop, doblando la apuesta. En casi todos los casos es una jugada -EV, permitida solo en cash games según las reglas de la casa.",
+  tldr: "Un straddle es una apuesta ciega voluntaria — normalmente el doble de la ciega grande (2× BB) — que un jugador pone antes de repartir las cartas, casi siempre desde UTG; en España se le llama 'matar la ciega'. Le compra al que lo pone la última acción y la opción de subir en preflop, doblando la apuesta de la mano. Para casi todo el mundo es una jugada -EV, y solo se permite en cash games según las reglas de la casa (casi nunca en torneos).",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-07-04",
+  updated: "2026-07-24",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "💰",
@@ -35,7 +36,7 @@ Solo cash | Casi nunca permitido en torneos
 
 ## ¿Qué es un straddle en póker?
 
-**Un straddle es una apuesta ciega voluntaria — normalmente el doble de la ciega grande — que se pone antes de repartir las cartas.** En una partida de $1/$2 el jugador en UTG (justo a la izquierda de la ciega grande) puede soltar $4 "de straddle", y la mano se juega al instante como si fuera una mesa de $1/$2/$4.
+**Un straddle —lo que en los casinos de España se llama "matar la ciega"— es una apuesta ciega voluntaria, normalmente el doble de la ciega grande (2× BB), que se pone antes de repartir las cartas.** En una partida de $1/$2 el jugador en UTG (justo a la izquierda de la ciega grande) puede soltar $4 "de straddle", y la mano se juega al instante como si fuera una mesa de $1/$2/$4.
 
 Dos cosas hacen que sea más que simple dinero extra en el bote:
 
@@ -155,6 +156,14 @@ A. El straddle estándar es 2× la ciega grande — $4 en una partida de $1/$2. 
 **Q. ¿Quién actúa primero tras un straddle?**
 
 A. El jugador justo a la izquierda de quien pone el straddle actúa primero, porque un straddle vivo funciona como una nueva ciega grande. La acción da luego la vuelta a la mesa, la ciega pequeña y la grande actúan por turno, y quien puso el straddle actúa el último en preflop — con la opción de pasar o subir si nadie subió antes que él.
+
+**Q. ¿Quién puede poner un straddle? ¿Puede straddlear cualquiera?**
+
+A. Depende del tipo. Para un straddle estándar, solo el jugador en UTG — el asiento justo a la izquierda de la ciega grande — puede ponerlo. Un Mississippi straddle, donde la casa lo permite, deja que cualquier jugador straddlee desde cualquier posición, casi siempre el botón o el cutoff. En cualquier caso, solo puedes straddlear *antes* de que se repartan las cartas (o antes de mirarlas), y si un asiento concreto puede straddlear o no depende por completo de las reglas de la casa — algunas salas permiten solo UTG, otras cualquier asiento, y muchas partidas online y torneos lo prohíben de plano.
+
+**Q. ¿Se puede resubir después de un straddle?**
+
+A. Sí. Un straddle es una ciega, no cierra la apuesta — funciona como una nueva ciega grande, así que cualquier jugador que actúe después puede subir (hacer raise) por encima de él con normalidad. Si nadie sube y la acción vuelve a quien puso el straddle, él conserva la opción de resubir la última, igual que la ciega grande tiene su opción. Distinto es el re-straddle, que sí debe ser como mínimo el doble del straddle anterior ($4 → $8 → $16), donde las reglas de la casa lo permiten.
 
 **Q. ¿Un straddle se considera una subida?**
 

@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "Un 'fish' (pez) es la jerga del póker para el jugador débil y perdedor del que los jugadores fuertes (los 'tiburones') sacan su dinero. El pez juega demasiadas manos, iguala demasiado y no sabe foldear — y la famosa frase avisa: si no ves al pez en tu mesa, el pez eres tú. Es la lectura más importante del juego: encuentra al pez, o conviértete en uno.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-07-05",
+  updated: "2026-07-24",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🐟",
@@ -35,7 +36,7 @@ Tiburón (shark) | Lo contrario — el jugador ganador
 
 ## ¿Qué significa "fish" en el póker?
 
-**Un fish es un jugador débil, inexperto o perdedor — la fuente de dinero que todos los demás en la mesa intentan ganar.** Es el término paraguas para un mal jugador, y se define enteramente por su opuesto: el **shark** (tiburón), el jugador fuerte que "se alimenta" de peces. Si los tiburones son los depredadores, los peces son lo que hay en el menú.
+**Un fish es un jugador débil, inexperto o perdedor — la fuente de dinero que todos los demás en la mesa intentan ganar.** En español conviven las dos formas: el anglicismo **fish** y su traducción viva, **pez** (algunos también dicen "pescado"). Es el término paraguas para un mal jugador, y se define enteramente por su opuesto: el **shark** (tiburón), el jugador fuerte y formado que "se alimenta" de peces. Si los tiburones son los depredadores, los peces son lo que hay en el menú — y en lo más alto de esa cadena está la **ballena** (whale), el pez de bankroll gigante que todos quieren tener sentado a su izquierda.
 
 La palabra no va de lo *simpático* que sea alguien ni de cuánto disfruta el juego — muchos peces son la gente más divertida de la mesa. Va puramente de resultados y decisiones: un pez toma jugadas perdedoras de forma constante y, con el tiempo, entrega sus fichas a jugadores mejores. Y algo clave: un pez rara vez sabe que es un pez. Ese punto ciego es la esencia del término, y es la razón por la que el concepto importa mucho más de lo que parece al principio.
 
@@ -176,6 +177,14 @@ A. Sí, a la cara es grosero, y muchas salas tratan ese tipo de comentarios de m
 **Q. ¿Cuál es lo contrario de un fish en el póker?**
 
 A. Un tiburón — un jugador fuerte y ganador que saca beneficio de rivales más débiles. Toda la metáfora es una cadena alimenticia: los tiburones se alimentan de peces. Un "reg" (regular) o un "grinder" también son en sentido amplio lo contrario, por ser jugadores competentes y disciplinados, aunque no todo reg sea ganador.
+
+**Q. ¿Cuál es la diferencia entre un tiburón y un pez?**
+
+A. Es la metáfora del océano llevada a la mesa: el **tiburón** (shark) es el jugador fuerte y formado — tight-agresivo, disciplinado y ganador a largo plazo — mientras que el **pez** (fish) es el jugador débil y pasivo del que aquel se alimenta. En una frase: el tiburón toma decisiones que le hacen ganar fichas con el tiempo; el pez toma las que se las regalan. Y ojo con el orgullo: en toda mesa el tiburón sabe quién es el pez mucho antes que el propio pez.
+
+**Q. ¿Qué es una ballena en el póker?**
+
+A. Una **ballena** (whale) es un tipo concreto de pez: un jugador muy suelto con un bankroll enorme (o un stack gigante) que pierde **a lo grande**, normalmente adinerado y jugando altos límites sin que le importe demasiado el dinero. Siguiendo la metáfora del océano, es la presa más grande de todas — y su presencia es justo lo que atrae a los tiburones a la partida, porque ahí es donde está el dinero gordo. Un apunte cultural: llamar "pez" o "ballena" a alguien a la cara puede sonar ofensivo, así que estos términos se usan al hablar *sobre* el juego, no en la mesa.
 
 **Q. ¿Qué diferencia hay entre un fish y una ballena?**
 
