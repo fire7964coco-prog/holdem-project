@@ -3,6 +3,18 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-24 (★ es(스페인어) 규칙6 클러스터 6편 경화 — es 42편 재경화 트랙 착수 1/6)
+
+> es 재경화 시작. rakko 대신 **lowfruits**(스페인 SERP) 키워드 리서치. `2570bae`.
+- **6편**: `texas-holdem-rules-for-beginners`(필라·FAQ4: primera regla·4 palos·carta más alta) · `holdem-game-order`(burn-card FAQ 포팅+quién empieza preflop/postflop·cuántas cartas·orden acciones→hand-rankings 리다이렉트) · `holdem-blind-meaning`(FAQ5: cuánto vale·**cada cuánto se suben las ciegas**·"blin" 오타표기·little/big blind·dealer vs crupier) · `holdem-all-in-rules`(FAQ5+**side-pot 계산 verbatim** 300/100·¿qué pasa si no puedes igualar?) · `holdem-showdown-rules`(FAQ3: qué es showdown·cuándo se muestran·empate→split/tiebreak) · `holdem-betting-actions`(FAQ5: **igualar vs pasar**·foldear·fold/call/raise·orden acciones·sin apostar).
+- **lowfruits 리서치**: 20파일(스페인 SERP, 2,315 고유KW) 종합·노이즈필터·중복제거·편별 라우팅 → `docs/es-brief-rules.md`. 편별 winnable FAQ 26개 주입.
+- **워크플로**: Phase1 리서치=나 중앙(lowfruits 파싱 PowerShell/node + WebSearch PAA + 현지 3편) → Phase2 병렬 작가6(EN 마스터+기존 es+브리프) + 적대적 스페인 네이티브 QA 3(2편씩) → Phase3 나=수정·빌드·커밋.
+- **적대적 QA 3병렬: 6편 §13 全数통과 0红**. side-pot 300/100·1,300·재레이즈 증분·블라인드 2.5/1.5/4BB·2.7-to-1·27%·straight flush Q-J-10-9-8 전수 독립 재산 EN 일치. false-friend(Color=flush/Escalera=straight/Póker=quads) 무오류. 언어잔재 0.
+- **🟠 수정 3건**: 쇼다운 desc 161→157자 · 필라 링크 `/hand-chart`·`/calculator`→`/en/` 통일 · masterUpdated 정규화(game-order 07-02·all-in 07-12→**07-19**, betting 07-11).
+- **★핵심 발견**: ES 규칙6은 **이미 EN 구조 완전 패리티**(07-12 번역이 완결 EN 기반). 경화=재작성 아니라 **lowfruits winnable FAQ 주입 + EN 07-19 경험담 델타 포팅 + tldr 2~3줄**.
+- **★워크플로 교훈(문서화)**: "시드 1차 얇으면 SERP **2회차로 확장**(관련어·PAA 딸려나옴), 풍부하면 1회"(블라인드 13→90 금맥이 증명). es는 영어보다 **작은 우주**(노이즈 적음)—얇은 게 정상. 네이티브 표현으로 시드 바꾸면 금맥(showdown→`quien gana`).
+- **🎁 족보6 이월 확보**: 규칙6 lowfruits에서 족보6 winnable 35+질문 115 선확보(color/escalera/full 비교·**flor**=중남미 flush). 발행 총계 불변 57 blog+448 intl. **다음=족보6**.
+
 ## 2026-07-24 (★★★ 간체(zh) 용어 클러스터 6편 경화 → 42/42 완결 = EN 유니버스 전 언어 3번째)
 
 > 토너먼트9에 이어 마지막 용어6. `983f74e`. **이로써 간체 42편 전체 경화 완료** = JA·zh-hant 이어 EN 마스터 유니버스 3번째 풀 경화 언어.

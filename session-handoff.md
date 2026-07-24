@@ -5,7 +5,24 @@
 
 ---
 
-## ▶▶▶▶ 새 세션 START HERE (다음 작업 = ★★★ **es(스페인어) 42편 재경화** — 키워드는 lowfruits)
+## ▶▶▶▶ 새 세션 START HERE (es 재경화 진행중 — ✅**규칙6 완료(1/6)** / 다음 = ★**족보6**)
+
+> 읽는 순서: `CLAUDE.md` → 이 블록 → `docs/es-hardening-workflow.md`(워크플로+지역편차 그라디언트) → `docs/es-brief-rules.md`(편별 winnable, 맨 아래 §족보6 이월) → 방법론 상세는 바로 아래 "(방법론 참조) es 42편 재경화" 블록.
+
+### ✅ 규칙6 완료·배포 (2026-07-24 `2570bae`)
+- 6편: `texas-holdem-rules-for-beginners`(필라)·`holdem-game-order`·`holdem-blind-meaning`·`holdem-all-in-rules`·`holdem-showdown-rules`·`holdem-betting-actions`. WORKLOG 2026-07-24 상세.
+- lowfruits 20파일(스페인 SERP, 2,315 KW) → winnable FAQ 26개 주입 + EN 07-19 델타 포팅 + tldr 2~3줄 + §13 verbatim. 적대적 스페인 QA 3병렬 6편 §13 0红. 발행 총계 불변 57+448.
+- ★**ES 규칙6은 이미 EN 구조 완전 패리티**였음(07-12 번역이 완결 EN 기반) → 경화=재작성 아님, winnable FAQ 주입+델타 포팅+tldr가 핵심.
+- ★**워크플로 교훈(문서화됨, `docs/es-hardening-workflow.md`)**: "시드 1차 얇으면 SERP **2회차로 확장**(관련어·PAA 딸려나옴 → 금맥), 풍부하면 1회"(블라인드 13→90 증명). es=영어보다 작은 우주(노이즈 적음)—얇은 게 정상. 네이티브 표현으로 시드 바꾸면 금맥(showdown→`quien gana`). lowfruits export=Analyzed only, 파싱은 node/PowerShell.
+
+### ▶ 다음 = 족보6 (hand-rankings·flush-vs-straight·kicker·tiebreak-rules·split-pot-rules·reading-the-board)
+- 🎁 ★**리서치 상당부분 선완료**: 규칙6 lowfruits에서 **족보6 이월 winnable 35개 + 질문 115개** 이미 확보(`docs/es-brief-rules.md` 맨 아래 §족보6 이월). color/escalera/full 비교 대량·**flor**(중남미 flush 지역어)·quien gana·¿qué vale más full o color?·escalera real. → 족보6은 **족보 전용 시드 몇 개(escalera real·kicker·empate·counterfeit)만 추가** 뽑으면 됨(사용자에게 lowfruits 요청).
+- 방법론 동일: Phase1 나 중앙 리서치(lowfruits+WebSearch PAA+현지3편) → Phase2 병렬 작가6+적대적 스페인 QA → Phase3 빌드·링크복원·커밋. **§13 특히 중요**(족보=핸드비교 최다 클러스터).
+- es 클러스터 순서: 규칙6✅ → **족보6** → 확률6 → 전략8 → 토너먼트9 → 용어6.
+
+---
+
+## ▶▶▶ (방법론 참조) es 42편 재경화 — 전체 계획·lowfruits 워크플로 (키워드는 lowfruits)
 
 > 읽는 순서: `CLAUDE.md` → 이 블록 → `.cursor/rules/posting.mdc` → (참고) 바로 아래 "간체 42/42 완결" 블록의 병렬 오케스트레이션 워크플로·§8 리서치 축적(방법론 그대로 재사용).
 
