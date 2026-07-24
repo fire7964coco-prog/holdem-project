@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "En Texas Hold'em hay 5 acciones de apuesta: pasar (check, gratis), apostar (abrir la ronda), igualar (call, pagar la apuesta), subir (raise — la subida mínima iguala la apuesta o subida anterior) y retirarse (fold). Solo puedes pasar cuando nadie ha apostado todavía en esa calle.",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-07-12",
+  updated: "2026-07-24",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -232,6 +232,26 @@ A. Meter fichas en varios movimientos, o decir "pago" y luego añadir una subida
 **Q. ¿Qué significa limpear en el póker?**
 
 A. Limpear (limp) es entrar al bote en el preflop solo igualando la ciega grande en lugar de subir. Es legal, pero casi siempre es un juego débil — mira [por qué limpear te cuesta dinero](/es/blog/holdem-limping) para saber cuándo sí es aceptable.
+
+**Q. ¿Cuál es la diferencia entre igualar (call) y pasar (check)?**
+
+A. Pasar (check) es gratis y solo se puede cuando nadie ha apostado todavía en esa ronda — dices "sigo dentro" sin poner una sola ficha. Igualar (call) cuesta fichas: pagas exactamente la apuesta que alguien ya ha hecho para seguir en la mano. En una palabra: pasas cuando no hay nada que pagar, igualas cuando ya hay una apuesta sobre la mesa.
+
+**Q. ¿Qué significa foldear?**
+
+A. Foldear (también "retirarse" o "tirar la mano") es abandonar la mano: sueltas tus cartas y renuncias al bote. No pagas nada nuevo, pero las fichas que ya metiste se quedan en el bote. Puedes foldear siempre que la acción sea tuya — aunque, si nadie ha apostado, pasar gratis es mejor que tirar la mano por nada.
+
+**Q. ¿Qué es "fold, call y raise" en el póker?**
+
+A. Son los tres términos ingleses de las tres acciones que tienes ante una apuesta rival: **fold** = retirarte (tirar la mano), **call** = igualar (pagar la apuesta vigente) y **raise** = subir (poner más fichas por encima). En cuanto alguien apuesta, tus únicas opciones son esas tres — pasar (check) deja de existir en esa ronda.
+
+**Q. ¿Cuál es el orden de las acciones en una ronda de apuestas?**
+
+A. La acción avanza en el sentido de las agujas del reloj, jugador por jugador, empezando a la izquierda de quien abre la ronda. Cada jugador, cuando le llega el turno, elige entre pasar, apostar, igualar, subir o retirarse según lo que haya pasado antes que él. Para ver quién habla primero calle por calle, mira el [orden de juego del Texas Hold'em](/es/blog/holdem-game-order).
+
+**Q. ¿Se puede jugar al póker sin apostar?**
+
+A. Sí. En las partidas caseras y en las apps sociales se juega con fichas sin valor en dinero real ("play money" o fichas de juego), y las reglas de las acciones — pasar, igualar, subir, retirarse — son exactamente las mismas. Cambia lo que hay en juego, no el reglamento: aprendes las acciones igual de bien sin arriesgar un céntimo.
 
 ---
 

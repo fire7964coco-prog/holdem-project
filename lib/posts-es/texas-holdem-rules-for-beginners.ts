@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Cómo jugar al Texas Hold'em para principiantes — reglas, fichas, manos y primera estrategia",
   seoTitle: "Cómo jugar al Texas Hold'em — reglas, fichas y chuleta",
   desc: "¿Primera partida? Cómo jugar al Texas Hold'em paso a paso: ciegas, reparto de fichas, jerarquía de manos y una chuleta imprimible para aprender desde cero.",
-  tldr: "En el Texas Hold'em cada jugador recibe 2 cartas propias, se usan 5 cartas comunitarias y, tras cuatro rondas de apuestas, gana la mejor mano de póker de 5 cartas.",
+  tldr: "En el Texas Hold'em cada jugador recibe 2 cartas propias y comparte 5 cartas comunitarias en la mesa. Se apuesta en cuatro rondas — preflop, flop, turn y river — y gana quien forma la mejor mano de póker de 5 cartas, o el último que quede si todos los demás se retiran. Puedes usar tus dos cartas, una sola o ninguna: lo que forme la mano más fuerte.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-07-12",
-  masterUpdated: "2026-07-12",
+  updated: "2026-07-24",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -31,6 +31,8 @@ Si has buscado ==reglas del Texas Hold'em para principiantes==, lo que necesitas
 Necesitas saber qué son las ciegas, cuándo te toca hablar, cómo funcionan las cinco cartas comunitarias, qué mano gana y cuántas fichas repartir a cada uno cuando juegas en casa.
 
 Esta guía explica ==cómo jugar al Texas Hold'em para principiantes== en lenguaje llano, con el orden exacto de juego, el reparto de fichas para empezar, cómo repartir las cartas y una chuleta imprimible para tener al lado de la mesa.
+
+Todo lo que viene a continuación sale de haber montado la partida de verdad — mesas de cocina, timbas caseras y salas de póker —, no solo del reglamento, así que te iré señalando los puntos exactos donde los principiantes tropiezan en la vida real.
 
 ### Cómo se juega al Texas Hold'em en 30 segundos
 
@@ -356,13 +358,15 @@ Si dos jugadores tienen el mismo tipo de mano, se comparan las cartas más altas
 
 ## Errores típicos de principiante
 
+Después de años organizando timbas en casa, veo los mismos cinco errores en casi toda mesa de principiantes — y ninguno tiene que ver con la estrategia. Vienen de no fiarse todavía de las reglas.
+
 ### Error 1: Creer que debes usar tus dos cartas propias
 
 Puedes usar las dos, una o ninguna. Gana la mejor mano de cinco cartas.
 
 ### Error 2: Olvidar que el orden de acción cambia
 
-El preflop empieza a la izquierda de la ciega grande. Después del flop, la acción empieza a la izquierda del botón.
+El preflop empieza a la izquierda de la ciega grande. Después del flop, la acción empieza a la izquierda del botón. La primera partida que repartí, dos jugadores hablaban fuera de turno en cada flop — pusimos un botón físico sobre la mesa y la confusión desapareció en menos de una vuelta.
 
 ### Error 3: Igualar porque "a lo mejor llega"
 
@@ -370,7 +374,7 @@ Los proyectos necesitan el precio adecuado. Si el bote es pequeño y la apuesta 
 
 ### Error 4: Jugar cualquier as
 
-A♣4♦ le parece emocionante a un principiante, pero los ases débiles suelen acabar en la segunda mejor pareja. Los ases grandes como AK y AQ son mucho más fuertes.
+A♣4♦ le parece emocionante a un principiante — he visto a más jugadores nuevos perder fichas con un as débil que con casi cualquier otra mano —, pero los ases débiles suelen acabar en la segunda mejor pareja. Los ases grandes como AK y AQ son mucho más fuertes.
 
 ### Error 5: Ignorar la posición
 
@@ -433,6 +437,22 @@ No-Limit significa que puedes apostar cualquier cantidad hasta todas tus fichas 
 
 Una sola mano suele durar entre 10 y 60 segundos, aunque un bote grande con varios jugadores y decisiones difíciles puede alargarse varios minutos. En una sesión casera de unas horas se juegan docenas de manos, así que nadie tiene que dedicar toda la noche a un solo reparto.
 
+### ¿Cuál es la primera regla del póker?
+
+La primera regla es sencilla: gana la mejor mano de cinco cartas — o el último jugador que quede en pie cuando todos los demás se retiran. Todo lo demás (ciegas, posición, apuestas) existe solo para llegar a ese momento. Si aprendes a leer qué mano gana, ya sabes lo esencial.
+
+### ¿Cuáles son los 4 palos del póker?
+
+Los cuatro palos son picas ♠, corazones ♥, diamantes ♦ y tréboles ♣. En el Texas Hold'em ==ningún palo vale más que otro==: dos colores del mismo tamaño se comparan por el número de las cartas, no por el palo. El palo solo importa para formar un color (cinco cartas del mismo palo), nunca para desempatar.
+
+### ¿Qué es lo que más gana en el póker?
+
+La mano más alta es la escalera real (A-K-Q-J-10 del mismo palo), seguida de la escalera de color y el póker (cuatro iguales). En la práctica casi nunca las verás; ganan mucho más a menudo la pareja, la doble pareja y el color. Tienes el orden completo, de la más fuerte a la más débil, en la [jerarquía de manos del Texas Hold'em](/es/blog/holdem-hand-rankings).
+
+### ¿Cuál es la carta que vale más en el póker?
+
+El As es la carta de mayor valor: encabeza las manos altas (A-K-Q-J-10) y también sirve como la más baja en la rueda (A-2-3-4-5). Le siguen K, Q, J y el 10. Puedes ver cómo se usa dentro de cada mano en la [jerarquía de manos del Texas Hold'em](/es/blog/holdem-hand-rankings).
+
 ---
 
 ## Para terminar
@@ -441,7 +461,7 @@ El Texas Hold'em es más fácil de aprender cuando separas las reglas de la estr
 
 Primero, ==aprende el flujo==: ciegas, dos cartas propias, cinco comunitarias, cuatro rondas de apuestas y la mejor mano de cinco cartas. ==g:Después aprende la posición, las manos iniciales y las decisiones básicas de bote.==
 
-Como siguiente paso, repasa la [jerarquía de manos del Texas Hold'em](/es/blog/holdem-hand-rankings), practica con el [chart de manos iniciales](/hand-chart) y usa la [calculadora de probabilidades de póker](/calculator) cuando quieras entender por qué un call es rentable o no.
+Como siguiente paso, repasa la [jerarquía de manos del Texas Hold'em](/es/blog/holdem-hand-rankings), practica con el [chart de manos iniciales](/en/hand-chart) y usa la [calculadora de probabilidades de póker](/en/calculator) cuando quieras entender por qué un call es rentable o no.
 
 ---
 

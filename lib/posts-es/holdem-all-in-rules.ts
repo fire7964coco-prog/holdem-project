@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ir all-in es apostar todas las fichas que tienes delante. Solo puedes ganar de cada rival lo que hayas igualado (el bote principal); las fichas extra de los stacks más grandes forman un side pot que no puedes tocar. Un all-in menor que una subida completa NO reabre la apuesta para quienes ya actuaron.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-07-12",
-  masterUpdated: "2026-07-12",
+  updated: "2026-07-24",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "♠",
@@ -219,7 +219,7 @@ Table stakes. Lo que hay en la mesa es todo lo que puedes apostar. Si estás all
 
 ### Error 4: tirar tu mano demasiado pronto
 
-Estás all-in por el bote principal. Otros dos jugadores se pelean por el side pot. No tires tus cartas — tu mano sigue viva para el bote principal. ==Espera siempre a que el dealer resuelva todos los botes antes de tocar tus cartas.==
+Estás all-in por el bote principal. Otros dos jugadores se pelean por el side pot. Una vez vi a un stack corto tirar sus cartas en cuanto el showdown del side pot se le puso en contra — olvidando que él ni siquiera estaba en ese bote, y que el principal seguía siendo suyo por ganar. Esas fichas se esfumaron en el instante en que las cartas tocaron el muck. No tires tus cartas — tu mano sigue viva para el bote principal. ==Espera siempre a que el dealer resuelva todos los botes antes de tocar tus cartas.==
 
 ### Error 5: ir all-in por frustración
 
@@ -261,6 +261,26 @@ A. El último all-in que fue una **apuesta o subida** es la última acción agre
 **Q. ¿Las reglas del all-in cambian entre torneos y cash?**
 
 A. El núcleo es el mismo, con dos diferencias prácticas. Primera: en torneos, todas las manos implicadas en un all-in se ponen boca arriba en cuanto se cierra la apuesta (Regla 16 de la TDA) — no puedes tirar tus cartas antes del showdown. En cash aplica el orden normal del showdown y sí se puede. Segunda: el run it twice es habitual en cash (si ambos jugadores aceptan), pero en torneos generalmente no se permite.
+
+**Q. ¿Qué significa "ir all-in"? ¿Qué es un all-in?**
+
+A. Ir all-in (o "ir con todo") significa apostar todas las fichas que tienes delante en una sola acción. Una vez comprometido, no puedes añadir más fichas y nadie puede echarte de la mano con un farol: tus cartas quedan vivas hasta el river. Es la jugada más agresiva del póker porque te obliga a arriesgar todo tu stack en esa mano.
+
+**Q. ¿Cuánto es el all-in en el póker?**
+
+A. El all-in no es una cantidad fija: es apostar exactamente todas las fichas que tengas sobre la mesa en ese momento, ni más ni menos. Por la regla de table stakes, no puedes añadir dinero del bolsillo, así que "cuánto es" depende del tamaño de tu stack. Si tienes 800 fichas, tu all-in son 800; si te quedan 40, tu all-in son 40.
+
+**Q. ¿Qué pasa si alguien hace all-in?**
+
+A. Cuando un rival hace all-in, tú decides entre pagar (igualar sus fichas), resubir o retirarte; él ya no puede hacer ninguna acción más en esa mano y verá todas las cartas comunitarias que queden. Si su all-in es menor que tu stack, solo estás obligado a igualar hasta esa cantidad para seguir en el bote. Si es por más de lo que tienes, no te preocupes: nunca puedes perder más que tu propio stack, y el exceso del rival forma un side pot que a ti no te afecta.
+
+**Q. ¿Qué pasa si no puedes igualar la apuesta (no cubres el all-in)?**
+
+A. No pasa nada: por table stakes nunca estás obligado a poner más de lo que tienes. Vas all-in por tus fichas y compites por el bote principal (lo que igualaste de cada rival). El resto de lo apostado por los stacks más grandes forma un side pot que ellos se disputan aparte y que tú no puedes ganar, aunque tengas la mejor mano.
+
+**Q. ¿Cómo se calcula el all-in y el bote secundario (side pot)?**
+
+A. El jugador all-in solo puede ganar lo que puso, multiplicado por cada rival que lo iguale (el bote principal); lo apostado por encima forma el bote secundario o side pot. Ejemplo: el Jugador A va all-in por 100 fichas, y B y C pagan 100 cada uno y luego apuestan 50 más. El bote principal es 100 × 3 = **300 fichas** (lo pueden ganar A, B y C) y el side pot es 50 × 2 = **100 fichas** (solo para B y C). A puede ganar las 300 del bote principal, pero jamás las 100 del side pot.
 
 ---
 

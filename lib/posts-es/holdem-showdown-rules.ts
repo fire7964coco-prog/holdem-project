@@ -4,12 +4,12 @@ export const POST: Post = {
   slug: "holdem-showdown-rules",
   title: "Reglas del showdown en Texas Hold'em: quién enseña primero, el muck y el slow roll",
   seoTitle: "¿Quién enseña primero? Reglas del showdown y del muck",
-  desc: "¿Quién muestra las cartas primero en el showdown? ¿Puedes tirarlas sin enseñarlas? Último agresor, cards speak, slow roll y all-in — las reglas, sin líos.",
+  desc: "¿Quién muestra las cartas primero en el showdown? ¿Puedes tirarlas sin enseñarlas? Último agresor, cards speak, slow roll y all-in — todas las reglas.",
   tldr: "En el showdown, el último jugador que apostó o subió enseña primero. Si en el river todos pasaron, enseña primero el primer jugador activo a la izquierda del botón. Puedes tirar tus cartas sin enseñarlas si has perdido, pero los rivales pueden pedir ver una mano que fue pagada.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-07-12",
-  masterUpdated: "2026-07-12",
+  updated: "2026-07-24",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -135,9 +135,11 @@ Esta es una de las razones por las que el póker es interesante. No siempre gana
 
 ## Etiqueta en el showdown — lo que los principiantes hacen mal
 
+Nada agría una mesa más rápido que un showdown mal gestionado. Y casi nunca es cuestión de reglas — son costumbres que nadie le enseñó al jugador nuevo. Estos son los cuatro fallos que acabo corrigiendo más a menudo.
+
 ### Error 1: esperar a que enseñe primero el que pagó
 
-Apuestas el river. Alguien te paga. Te quedas quieto esperando a que enseñe él. Es al revés. ==Enseñas tú primero — fuiste el último agresor.== Esperar parece un slow roll aunque no lo sea.
+Apuestas el river. Alguien te paga. Te quedas quieto esperando a que enseñe él. Es al revés. ==Enseñas tú primero — fuiste el último agresor.== Esperar parece un slow roll aunque no lo sea — he visto una partida entre amigos enfriarse durante una vuelta entera de mesa porque un jugador seguía dejando sudar al que había pagado antes de dar la vuelta a la ganadora.
 
 ### Error 2: tirar las cartas antes de que el dealer lea la mano
 
@@ -159,6 +161,14 @@ No hay ninguna regla que prohíba dar la vuelta a tu mano antes de que sea ofici
 :::
 
 ## Preguntas frecuentes
+
+**Q. ¿Qué es un showdown en el póker? ¿Qué significa "showdown" en español?**
+
+A. El showdown es la apertura o muestra de cartas al final de la mano: cuando dos o más jugadores llegan hasta el river sin tirarse, enseñan sus cartas para ver quién tiene la mejor mano y se lleva el bote. El término se usa tal cual en español ("hacer el showdown", "llegar al showdown"); su equivalente literal sería "mostrar las cartas" o "la muestra de manos".
+
+**Q. ¿Cuándo se muestran las cartas en el póker?**
+
+A. Solo en el showdown, es decir, cuando queda al menos un rival tras la última ronda de apuestas del river. Si todos los demás se tiran antes de llegar ahí, ganas el bote sin enseñar nada. También puedes enseñar tus cartas voluntariamente en cualquier momento tras acabar la mano, pero no estás obligado salvo que llegues al showdown y te toque mostrar.
 
 **Q. ¿Quién enseña las cartas primero en el showdown de póker?**
 
@@ -187,6 +197,10 @@ A. Cards speak («las cartas hablan») significa que gana la mejor mano según l
 **Q. ¿Tienes que enseñar tus cartas si ganas sin showdown?**
 
 A. No. Si todos los demás se tiran antes del showdown, ganas el bote inmediatamente y nunca tienes que revelar tus cartas. Enseñarlas es opcional — algunos jugadores enseñan un farol para picar al rival, pero nunca estás obligado a mostrar una mano que ganó sin oposición.
+
+**Q. ¿Qué pasa si hay un empate en el showdown?**
+
+A. Si dos o más jugadores enseñan exactamente la misma mejor mano de cinco cartas, el bote se reparte a partes iguales entre ellos: es un bote dividido (split). Ojo, no basta con tener la misma jugada — cuenta la mejor combinación de cinco cartas, y a menudo el kicker o una carta de la mesa deshace el empate. Lo tienes detallado en [las reglas del split pot y del reparto del bote](/es/blog/holdem-split-pot-rules) y en [las reglas del desempate y el kicker](/es/blog/holdem-tiebreak-rules).
 
 ---
 

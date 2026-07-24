@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Las ciegas son apuestas obligatorias que se ponen antes de repartir las cartas. La ciega pequeña se sienta a la izquierda del botón y la ciega grande a su izquierda; la ciega grande — normalmente el doble de la pequeña — es la unidad de apuesta de la mesa.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-07-12",
-  masterUpdated: "2026-07-11",
+  updated: "2026-07-24",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "💰",
@@ -139,7 +139,9 @@ Al sentarte en una mesa de cash en vivo normalmente no juegas gratis: o **pones 
 
 ![Pila de fichas cayendo hacia el bote en una mesa de póker — un robo de ciegas desde el botón](/images/holdem-blind-steal.webp)
 
-- **Ciega pequeña: sin complicarte.** Penúltima preflop pero **primera en hablar** tras el flop; el enfoque limpio para empezar es **subir o tirar**, no pagar. Entrar de limp y que te ataquen fuera de posición es una fuga constante de fichas.
+Las ciegas son el sitio donde veo a los principiantes sangrar fichas en silencio — no en un bote enorme, sino un poquito cada órbita. Dos hábitos arreglan casi todo:
+
+- **Ciega pequeña: sin complicarte.** Penúltima preflop pero **primera en hablar** tras el flop; el enfoque limpio para empezar es **subir o tirar**, no pagar. Entrar de limp y que te ataquen fuera de posición es una fuga constante de fichas — la ciega pequeña es el asiento desde el que más veo perder a los novatos a lo largo de una sesión entera.
 - **Ciega grande: defiende con las odds.** Ya has puesto una apuesta completa, así que puedes pagar subidas de forma rentable con más manos que desde cualquier otro asiento. Ante un open a 2.5 BB (con la ciega pequeña retirándose), pagas 1.5 BB por un bote de 4 BB — unas 2.7 a 1, es decir, con aproximadamente un 27% de equity el call ya sale a cuenta. Esa cuenta son las [pot odds](/es/blog/holdem-pot-odds), y por eso existe la "defensa de la ciega grande".
 - **Posición tardía: el robo.** Cuando todos se retiran hasta el botón o el cutoff, una subida que solo busca llevarse las dos ciegas es un **robo de ciegas** — y contraatacar con una resubida es un **resteal**. Los tamaños de robo, los rangos por asiento y cuánto defender son temas de estrategia, tratados a fondo en [la guía de jugar en posición vs fuera de posición](/es/blog/holdem-position-play).
 
@@ -183,6 +185,26 @@ A. En la mayoría de salas pones las ciegas pendientes al volver — la ciega gr
 **Q. ¿"La ciega grande" es lo mismo que "las ciegas"?**
 
 A. No exactamente — "las ciegas" se refiere a la pequeña y la grande juntas, mientras que la ciega grande es específicamente la apuesta obligatoria mayor y la unidad base de la mesa.
+
+**Q. ¿Cuánto vale una ciega en el póker?**
+
+A. Depende de los niveles de la mesa, que se escriben SB/BB. En una partida $1/$2 la ciega pequeña vale $1 y la grande $2; en una $2/$5, $2 y $5. La ciega grande marca la apuesta base y la ciega pequeña suele ser la mitad.
+
+**Q. ¿Cada cuánto se suben las ciegas?**
+
+A. En un cash game no se suben nunca: te sientas en $1/$2 y sigue igual hasta que te levantas. En torneo suben con un reloj, normalmente cada 15–30 minutos por nivel (25/50 → 50/100 → 100/200), así que la presión crece según avanza la partida.
+
+**Q. ¿Qué es "blin" o las ciegas en el póker?**
+
+A. "Blin" suele ser una forma abreviada o mal escrita de "blind", que en español es la ciega. Son las dos apuestas obligatorias — ciega pequeña y ciega grande — que ponen antes del reparto los dos jugadores a la izquierda del botón.
+
+**Q. ¿Qué es el "little blind" o el "big blind" en el póker?**
+
+A. Son los nombres en inglés: "little blind" (o small blind) es la ciega pequeña, y "big blind" es la ciega grande. Verás las siglas SB y BB por todas partes; la BB es además la unidad con la que se miden subidas y stacks.
+
+**Q. ¿Cuál es la diferencia entre el dealer y el crupier?**
+
+A. En la práctica son lo mismo: el repartidor que da las cartas. "Crupier" es el término del casino; "dealer" es el anglicismo habitual en el póker. Ojo: el botón del dealer marca la posición de reparto, pero en las salas físicas quien reparte de verdad es un crupier profesional que no juega la mano.
 
 ---
 

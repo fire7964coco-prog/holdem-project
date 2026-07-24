@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Cómo jugar al Texas Hold'em: el orden de juego, de las ciegas al showdown",
   seoTitle: "¿No sabes cuándo apostar? — Orden de juego en Texas Hold'em",
   desc: "¿Te quedas en blanco cuando te toca en el Hold'em? Aquí tienes el orden completo — preflop, flop, turn, river y showdown — con una mano real paso a paso.",
-  tldr: "Una mano de Texas Hold'em sigue este orden: se ponen las ciegas → se reparten dos cartas propias → preflop → flop (3 cartas) → turn (1 carta) → river (1 carta) → showdown, con cuatro rondas de apuestas en total.",
+  tldr: "Una mano de Texas Hold'em sigue este orden: se ponen las ciegas → se reparten dos cartas propias → preflop → flop (3 cartas) → turn (1 carta) → river (1 carta) → showdown, con cuatro rondas de apuestas en total. En el preflop habla primero el jugador a la izquierda de la ciega grande; a partir del flop, el primero a la izquierda del botón. Al final gana la mejor mano de cinco cartas entre tus dos cartas propias y las cinco comunitarias.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-07-12",
-  masterUpdated: "2026-07-02",
+  updated: "2026-07-24",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎬",
@@ -295,11 +295,11 @@ Para ganar en el showdown necesitas saber al instante qué mano gana a cuál. Es
 
 ## Los 5 errores que todo principiante debe evitar
 
-Puedes saberte el orden de juego de memoria y aun así ir sangrando fichas si caes en esto.
+Puedes saberte el orden de juego de memoria y aun así ir sangrando fichas si caes en esto. He visto cada uno de estos errores costarle el bote a un principiante en directo — normalmente más de una vez en la misma sesión.
 
 ### 1. Jugar casi todas las manos
 
-"Vamos a ver un flop" es perdedor a largo plazo. Los jugadores fuertes juegan solo el 15–25% de las manos y tiran el resto sin dudar. Si pagas el preflop con dos cartas cualesquiera, estás pagando por perder.
+"Vamos a ver un flop" es perdedor a largo plazo — es la fuga más común que veo en la primera mesa de un jugador novato. Los jugadores fuertes juegan solo el 15–25% de las manos y tiran el resto sin dudar. Si pagas el preflop con dos cartas cualesquiera, estás pagando por perder.
 
 ### 2. Ignorar la posición
 
@@ -315,7 +315,7 @@ Si pasaste de forma pasiva todo el camino y de repente lo metes todo en el river
 
 ### 5. Leer mal tu mano en el showdown
 
-Un clásico del principiante: pensar "¡tengo doble pareja!" cuando en realidad tienes una pareja. Practica elegir las **mejores cinco cartas** entre tus dos cartas propias y las cinco de la mesa hasta que te salga solo.
+Un clásico del principiante: pensar "¡tengo doble pareja!" cuando en realidad tienes una pareja. Me ha pasado ver a jugadores dar la vuelta a sus cartas orgullosos, convencidos de tener una escalera, y descubrir que las cartas no ligaban — la mesa se queda en silencio y el bote se va para el otro lado. Practica elegir las **mejores cinco cartas** entre tus dos cartas propias y las cinco de la mesa hasta que te salga solo.
 
 ---
 
@@ -366,6 +366,26 @@ A. El all-in significa apostar todas las fichas que tienes. Úsalo con una mano 
 **Q. ¿Cuántas rondas de apuestas hay en una mano?**
 
 A. Cuatro: preflop, flop, turn y river. Las ciegas son apuestas obligatorias, y en el showdown ya no se apuesta.
+
+**Q. ¿Por qué el dealer quema una carta, y cuántas se queman?**
+
+A. Antes de repartir el flop, el turn y el river, el dealer descarta boca abajo la primera carta del mazo — la "carta quemada". Son tres cartas quemadas por mano, una antes de cada calle de cartas comunitarias. Quemar protege la partida: si la carta de arriba estuviera marcada o se hubiera expuesto por accidente, un jugador podría sacar información de lo que viene, así que se retira del juego primero.
+
+**Q. ¿Quién empieza en el póker? ¿Quién habla primero?**
+
+A. Depende de la calle, y es distinto antes y después del flop. En el preflop habla primero el jugador a la izquierda de la ciega grande (UTG). En el flop, el turn y el river habla primero el primer jugador activo a la izquierda del botón (la ciega pequeña si sigue en la mano). En el heads-up (2 jugadores) el botón habla primero en el preflop pero último en el resto de calles.
+
+**Q. ¿Cuántas cartas se reparten en el póker (Texas Hold'em)?**
+
+A. Recibes 2 cartas propias boca abajo (tus hole cards) que solo ves tú, y a lo largo de la mano salen 5 cartas comunitarias en el centro de la mesa (3 en el flop, 1 en el turn y 1 en el river). Formas tu mejor mano de cinco combinando esas 7 cartas.
+
+**Q. ¿Cómo se reparten las fichas al empezar?**
+
+A. Cada jugador entra con el mismo stack inicial: en un torneo lo fija el buy-in (por ejemplo, 20,000 fichas de salida), y en cash game compras fichas por el importe con el que quieras sentarte, dentro de los topes de la mesa. Esas fichas son con las que apuestas; no se vuelven a repartir mano a mano, solo cambian de dueño según quién gana los botes.
+
+**Q. ¿Cuál es el orden de las acciones en una mano?**
+
+A. Se ponen las ciegas → se reparten las cartas → y en cada ronda la acción avanza en el sentido de las agujas del reloj, jugador por jugador, hasta que todos los que siguen han igualado la apuesta más alta. Ese turno de acciones se repite en el preflop, el flop, el turn y el river. (Ojo: esto es el orden de juego; si buscas qué jugada gana a cuál, mira la [jerarquía de manos de póker](/es/blog/holdem-hand-rankings).)
 
 ---
 
