@@ -5,20 +5,21 @@
 
 ---
 
-## ▶▶▶▶ 새 세션 START HERE (es 재경화 진행중 — ✅**규칙6·족보6 완료(2/6)** / 다음 = ★**확률6**)
+## ▶▶▶▶ 새 세션 START HERE (es 재경화 진행중 — ✅**규칙6·족보6·확률6 완료(3/6)** / 다음 = ★**전략8**)
 
-> 읽는 순서: `CLAUDE.md` → 이 블록 → `docs/es-hardening-workflow.md`(워크플로+지역편차 그라디언트) → `docs/es-brief-rankings.md`(직전 족보6 브리프, winnable 라우팅 참고) → 방법론 상세는 바로 아래 "(방법론 참조) es 42편 재경화" 블록.
+> 읽는 순서: `CLAUDE.md` → 이 블록 → `docs/es-hardening-workflow.md`(워크플로+지역편차 그라디언트) → `docs/es-brief-probability.md`(직전 확률6 브리프) → 방법론 상세는 바로 아래 "(방법론 참조) es 42편 재경화" 블록.
 
-### ✅ 규칙6 완료·배포 (2026-07-24 `2570bae`) + ✅ 족보6 완료·배포 (2026-07-24 `ba373dc`)
-- 규칙6: texas-holdem-rules(필라)·game-order·blind-meaning·all-in-rules·showdown-rules·betting-actions. winnable FAQ 26 주입. WORKLOG 상세.
-- 족보6: hand-rankings(필라)·flush-vs-straight·kicker·tiebreak-rules·split-pot-rules·reading-the-board. ★**족보6 ES는 규칙6과 달리 EN 07-18/19 FAQ 다수 누락**(tiebreak 8→15·split 8→17·kicker 9→13·reading 8→14) → **EN FAQ 대량 포팅** + lowfruits winnable 주입. 적대적 QA 3병렬 §13 독립재산, 🔴 1건 교정(필라 Puzzle 3 quad kings 누락).
-- 공통: EN 마스터=뼈대, §13 EN verbatim(재계산X), tldr 2~3줄. 발행 총계 불변 57+448.
-- ★**워크플로 교훈(`docs/es-hardening-workflow.md`)**: "시드 1차 얇으면 SERP **2회차 확장**(관련어·PAA→금맥), 풍부하면 1회". es=영어보다 작은 우주(노이즈 적음)—얇은 게 정상. 네이티브 표현으로 시드 교체(showdown→`quien gana`·bote dividido→`empate`/`split`·jugar la mesa→`cartas comunitarias`). ★노이즈 함정: split=`planning/scrum poker`(애자일)·ante=`스웨이드 세탁`·all in=굿즈/포커룸브랜드.
+### ✅ 규칙6 `2570bae` + ✅ 족보6 `ba373dc` + ✅ 확률6 `b618804` (전부 2026-07-24 배포)
+- 규칙6: texas-holdem-rules(필라)·game-order·blind-meaning·all-in-rules·showdown-rules·betting-actions.
+- 족보6: hand-rankings(필라)·flush-vs-straight·kicker·tiebreak·split-pot·reading-board. EN FAQ 대량 포팅(tiebreak 8→15·split 8→17). 🔴교정 필라 Puzzle 3.
+- 확률6: probability(필라)·pot-odds·outs·drawing-odds·implied-odds·equity. §13 계산 최다→QA 독립재산(fold equity +$52·MDF 50/67%·9 outs 35%/19.6%). 🔴교정 equity pot-size 산식(100÷200=50%≠33%→coste÷bote final).
+- 공통: EN 마스터=뼈대, §13 EN verbatim(재계산X), tldr 2~3줄, masterUpdated=EN 실제날짜. 발행 총계 불변 57+448.
+- ★**교훈**(`docs/es-hardening-workflow.md`): 시드 얇으면 SERP 2회차 확장·네이티브 표현 교체(showdown→`quien gana`·bote dividido→`empate/split`·proyecto→`proyecto de color/escalera`). ★노이즈: split·proyecto=`planning/scrum poker`(애자일)·ante=스웨이드·all in=굿즈. ★작가 신규 추가 계산은 QA 독립재산 필수(equity 33% 산식오류 포착).
 
-### ▶ 다음 = 확률6 (probability 필라·pot-odds·outs·drawing-odds·implied-odds·equity)
-- 방법론 동일: Phase1 나 중앙 리서치(lowfruits+WebSearch PAA+현지3편) → Phase2 병렬 작가6+적대적 스페인 QA → Phase3 빌드·링크복원·커밋. **§13 = 계산 최다**(regla del 2 y 4·pot odds·equity·fold equity) → QA 재산 필수. 간체 확률6서 fold equity +$52·換算표 검산했듯 es도 동일.
-- lowfruits 시드(사용자 요청): `probabilidades poker *`·`pot odds *`·`outs poker *`·`equity poker *`·`regla del 2 y 4 *`·`cuando pagar poker *`. 얇으면 2회차. Country=Spain/Spanish.
-- es 클러스터 순서: 규칙6✅ → 족보6✅ → **확률6** → 전략8 → 토너먼트9 → 용어6.
+### ▶ 다음 = 전략8 (strategy 필라·positions·position-play·starting-hands-chart·limping·3bet·continuation-bet·when-to-fold) — 최다 8편
+- 방법론 동일: Phase1 나 중앙 리서치 → Phase2 병렬 작가**8**+적대적 스페인 QA(4편씩 2~3병렬) → Phase3 빌드·커밋. **§13**: 간체 전략8서 교정한 오차 주의 — position-play UTG 코어 88+→TT+·3bet A5s 28%·when-to-fold 80-85%. EN 마스터 실제값 확인 후 이식.
+- lowfruits 시드: `estrategia poker *`·`posiciones poker *`·`manos iniciales poker *`·`3bet poker *`·`c-bet poker *`·`cuando foldear poker *`·`limpear poker *`. spanglish 동사(foldear·limpear·cbetear·resubir) 용어은행 §Estrategia 참조.
+- es 클러스터 순서: 규칙6✅ → 족보6✅ → 확률6✅ → **전략8** → 토너먼트9 → 용어6.
 
 ---
 

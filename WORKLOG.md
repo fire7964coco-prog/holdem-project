@@ -3,6 +3,17 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-24 (★ es(스페인어) 확률6 클러스터 6편 경화 — es 재경화 3/6, 계산 최다 클러스터)
+
+> 족보6에 이어 확률6. `b618804`. §13 계산 최다 → verbatim 복사 + QA 독립 재산이 핵심.
+- **6편**: `holdem-probability`(필라·EN FAQ **7포팅** 8→15+regla 2y4·prob de cada mano·regla 80/20) · `holdem-pot-odds`(EN FAQ 3포팅+**MDF** frecuencia mínima de defensa·pot odds↔% 변환) · `holdem-outs`(EN FAQ 1포팅+contar rápido→regla 2y4·"los outs" 남성형) · `holdem-drawing-odds`(EN FAQ 4포팅+proyecto de color/escalera·ligar 확률) · `holdem-implied-odds`(EN FAQ 1포팅+probabilidades implícitas 풍부·cuándo usar) · `holdem-equity`(EN FAQ 3포팅+**fold equity**·33% pot-size).
+- **리서치**: lowfruits 11파일(probabilidades 326·pot odds 779·equity·outs·proyecto·odds implicitas 712·contar outs). outs·drawing은 스페인어 얇음(영어 우세)→개념+overlap 커버. ★노이즈: proyecto=planning/scrum poker(애자일)·equity=home equity(부동산). → `docs/es-brief-probability.md`.
+- **적대적 QA 3병렬: 6편 §13 독립 재산**. fold equity EV 단계별 재산(0.35×150−0.65×50=20, 0.6×20=12, +40=**+$52**)·implied (50÷0.196)−200=$55·9 outs 35%/19.6%·combo 15 outs·four of a kind 1/4,165·MDF pot 50%/half 67% 전수 통과.
+- **🔴 1건 커밋 전 교정**: equity pot-size FAQ "apuesta÷(bote+apuesta)=100÷200=33%" → **100÷200=50%라 산식 오류**(답 33%는 맞음). caller 공식 `coste÷bote final=100÷300=33%`로 정정. ★작가 신규 추가 계산 리스크(EN에 없던 것)를 QA가 포착.
+- **★신규 계산 3건 QA 검증**: MDF(50/67%)·regla 80/20(Pareto 헤지, 사실)·equity 33% → MDF·80/20 정확, equity만 산식 교정.
+- **🟠 무해**: probability 롱샷표 1 en 407(ES 자체일관, EN은 407/408 혼재)·outs muertas 성별·drawing readTime 13 유지. masterUpdated EN 실제날짜(probability/outs/implied 07-19·pot-odds/drawing/equity 07-18).
+- 발행 총계 불변 57 blog+448 intl. **다음=전략8**(strategy·positions·position-play·starting-hands-chart·limping·3bet·continuation-bet·when-to-fold, 최다 8편).
+
 ## 2026-07-24 (★ es(스페인어) 족보6 클러스터 6편 경화 — es 재경화 2/6, EN FAQ 대량 포팅)
 
 > 규칙6에 이어 족보6. `ba373dc`. ★규칙6과 달리 족보6 ES는 EN 07-18/19 FAQ가 다수 누락(stale)이라 **EN FAQ 대량 포팅**이 주작업.
