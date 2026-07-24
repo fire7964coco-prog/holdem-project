@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "Un 3-bet es la primera resubida antes del flop — se llama 3-bet porque la ciega grande es la primera apuesta, la subida de apertura la segunda y tu resubida la tercera. Haz un 3-bet de valor con un núcleo cerrado (QQ+, AK) más unos pocos faroles con bloqueadores del mismo palo como A5s, dale un tamaño de unas 3x la apertura en posición y 4x fuera de posición, y mantén tu frecuencia global de 3-bet cerca del 6–10%. Cuando eres tú quien se enfrenta a un 3-bet, resube con un 4-bet tus manos premium, iguala las que se juegan bien y foldea el resto — foldeando más de lo 'balanceado' contra jugadores de stakes bajos que nunca farolean.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-07-06",
+  updated: "2026-07-24",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "♦️",
@@ -78,11 +79,11 @@ Un rango de 3-bet ganador tiene **dos partes bien distintas**, y entender esa di
 |:---|:---|
 | **A5s–A2s** (ases del mismo palo de la rueda) | Tu as **bloquea** sus manos premium — baja sus combinaciones de AA de 6 a 3 y de AK de 16 a 12 — así que es menos probable que tenga una mano con la que continuar. Además liga colores, escaleras y proyectos de rueda. |
 | **Conectores del mismo palo** (76s, 65s) | Jugabilidad estupenda — ligan escaleras, colores y proyectos, así que ganan mucho incluso cuando el farol te lo pagan. |
-| **One-gappers del mismo palo** (T8s, 97s) | Misma idea, algo más flojo: disimulados, flexibles y baratos de foldear si te meten 4-bet. |
+| **One-gappers del mismo palo** (108s, 97s) | Misma idea, algo más flojo: disimulados, flexibles y baratos de foldear si te meten 4-bet. |
 
 </div>
 
-Aquí tienes la lógica de los bloqueadores en una frase: **tener un as hace matemáticamente menos probable que tu rival tenga ases o as-rey**, así que A5s es un farol mucho mejor que, digamos, A9o — que bloquea las mismas premium pero se juega fatal cuando te pagan y solo liga parejas flojas. La equity de respaldo importa porque tu rival no va a foldear todas las veces; quieres un farol que aún pueda ganar el bote. Por eso A5s ≈ 30% de equity contra un rango de call de QQ+/AK, mientras que la basura offsuit se queda muy por debajo. Es la misma disciplina de [manos iniciales](/es/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") de siempre — solo que aplicada a resubir.
+Aquí tienes la lógica de los bloqueadores en una frase: **tener un as hace matemáticamente menos probable que tu rival tenga ases o as-rey**, así que A5s es un farol mucho mejor que, digamos, A9o — que bloquea las mismas premium pero se juega fatal cuando te pagan y solo liga parejas flojas. La equity de respaldo importa porque tu rival no va a foldear todas las veces; quieres un farol que aún pueda ganar el bote. Por eso A5s ≈ 28% de equity contra un rango de call de QQ+/AK, mientras que la basura offsuit se queda muy por debajo. Es la misma disciplina de [manos iniciales](/es/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") de siempre — solo que aplicada a resubir.
 
 ---
 
@@ -240,6 +241,14 @@ A. Porque el nombre cuenta las apuestas de la secuencia, no las subidas. La cieg
 
 A. Un 3-bet es la primera resubida (sobre una subida de apertura); un 4-bet es la siguiente resubida, hecha sobre un 3-bet. Así que la escalera va: subida de apertura (2ª apuesta) → 3-bet (3ª apuesta) → 4-bet (4ª apuesta) → 5-bet (normalmente all-in). Un 4-bet representa un rango muy fuerte y polarizado.
 
+**Q. ¿Con qué manos deberías hacer un 4-bet y cuánto?**
+
+A. Haz un 4-bet con un rango polarizado: premium por valor (normalmente AA–KK, más AK) y unos pocos faroles con bloqueadores como A5s, que bloquean los ases y reyes de tu rival. Dale al 4-bet un tamaño de unas 2.2–2.5x el 3-bet en posición y un poco mayor fuera de posición — más pequeño de lo que espera la mayoría de los principiantes, porque el bote ya es grande. Como frecuencia, los jugadores sólidos solo meten 4-bet un pequeño porcentaje de manos; amplía tus 4-bets de valor contra rivales que 3-betean demasiado a menudo.
+
+**Q. ¿Cuándo deberías hacer un 5-bet en el póker?**
+
+A. Un 5-bet es la resubida sobre un 4-bet y, con unas 100 ciegas grandes, casi siempre es all-in. Haz un 5-bet por valor con lo más alto de tu rango (AA, KK, a menudo AK) y, contra jugadores agresivos que 4-betean light, añade el farol ocasional con un bloqueador de as. Contra la mayoría de rivales de stakes bajos, un 5-bet grita "ases o reyes", así que si un jugador pasivo mete un 5-bet, foldea todo menos tus premium absolutas.
+
 **Q. ¿Con qué manos deberías hacer un 3-bet?**
 
 A. Divide tus 3-bets en valor y faroles. El núcleo de valor es QQ+ y AK, ampliándolo a JJ, TT, AQs y KQs contra aperturas más amplias. Para los faroles, usa manos del mismo palo con bloqueadores y jugabilidad — de A5s a A2s y conectores del mismo palo como 76s y 65s — no basura offsuit al azar.
@@ -259,6 +268,10 @@ A. Un rango lineal (merged) es un solo bloque sólido de tus mejores manos — s
 **Q. ¿Cuánto deberías subir en un 3-bet?**
 
 A. Unas 3x la apertura en posición y 4–4.5x fuera de posición. Así que contra una apertura de 3 ciegas grandes, llévalo a unas 9bb en posición o 12bb fuera de posición. Suma más o menos una subida de apertura extra por pagador cuando hagas squeeze. No hagas un 3-bet pequeño fuera de posición — le da a tu rival un call barato y fácil en posición.
+
+**Q. ¿Cuál es un buen rango de 3-bet por posición?**
+
+A. Tu rango se abre a medida que avanzas en la mesa. Contra una apertura de posición temprana, ciérralo hacia el núcleo — QQ+, AK y unos pocos faroles con bloqueadores como A5s. Contra una apertura de posición tardía (Cutoff o botón), que es mucho más amplia, añade JJ, TT, AQs y KQs por valor y más faroles del mismo palo. Desde las ciegas prefiere un 3-bet-o-fold polarizado, y desde el botón puedes ir más lineal porque juegas en posición.
 
 **Q. ¿Cuál es un buen porcentaje de 3-bet?**
 

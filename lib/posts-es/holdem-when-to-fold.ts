@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "Foldear es la habilidad más infravalorada del póker: en el peor de los casos un fold te cuesta cero, mientras que un call perdedor sangra fichas todas las veces. Un jugador sólido foldea entre el 75 y el 85% de sus manos antes del flop, suelta las manos falladas y los proyectos débiles que no cumplen sus pot odds después, y —lo más difícil de todo— tira manos fuertes pero batidas cuando la línea de un rival pasivo grita valor. La mayoría no paga de más porque no sepa leer manos; paga porque las fichas que ya están en el bote las siente suyas. No lo son.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-07-06",
+  updated: "2026-07-24",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🛡️",
@@ -45,7 +46,7 @@ Un matiz preciso, porque importa: foldear *no es gratis.* Las fichas que ya est�
 
 ## Cuándo foldear antes del flop
 
-La mayor fuga del póker es jugar demasiadas manos, así que el mayor arreglo de un golpe es foldear la mayoría. **Un jugador sólido tight-aggressive foldea aproximadamente entre el 75 y el 85% de sus manos preflop** — más cerca del 75–80% en mesas de 6-max, y del 80–86% en full-ring. Si eso te parece extremo, recuerda: las manos que conservas son de media más fuertes que las de tus rivales, y de ahí viene tu ventaja.
+La mayor fuga del póker es jugar demasiadas manos, así que el mayor arreglo de un golpe es foldear la mayoría. **Un jugador sólido tight-aggressive foldea aproximadamente entre el 75 y el 85% de sus manos preflop** — más cerca del 75–80% en mesas de 6-max, y del 80–85% en full-ring. Si eso te parece extremo, recuerda: las manos que conservas son de media más fuertes que las de tus rivales, y de ahí viene tu ventaja.
 
 Foldea preflop cuando:
 
@@ -194,13 +195,21 @@ Fíjate en que ambos polos están aquí: foldea *más* contra los jugadores carg
 
 A. Foldea siempre que igualar o subir pierda dinero a la larga: cuando tu mano es demasiado débil preflop, cuando fallas el flop y encaras agresión en una mesa que encaja con el rango del rival, cuando un proyecto no cumple sus pot odds, y cuando una línea cargada de valor le gana a la mano que tienes. En el peor de los casos un fold te cuesta cero, así que foldear un spot perdedor siempre le gana a pagarlo.
 
+**Q. ¿Pierdes dinero cuando foldeas en el póker?**
+
+A. Solo pierdes las fichas que ya metiste en el bote — foldear no te cuesta nada más. Cualquier apuesta que hiciste antes se fue en el momento en que la hiciste (pertenece al bote), y foldear solo te impide meter *otra* ficha. Así que un fold no es "perder" como lo es pagar hasta el final y perder: de ese punto en adelante, en el peor de los casos te cuesta cero, y eso siempre le gana a un call que vas a perder. No puedes ganar el bote foldeando, pero sí ahorras cada ficha que habrías pagado para perder.
+
 **Q. ¿Con qué frecuencia deberías foldear preflop?**
 
-A. Un jugador sólido tight-aggressive foldea aproximadamente entre el 75 y el 85% de sus manos antes del flop — más cerca del 75–80% en 6-max y del 80–86% en full-ring. Jugar menos manos y más fuertes es el mayor arreglo de un golpe para casi todos los jugadores perdedores. Si entras en mucho más de una quinta parte de tus manos, casi seguro estás jugando demasiadas.
+A. Un jugador sólido tight-aggressive foldea aproximadamente entre el 75 y el 85% de sus manos antes del flop — más cerca del 75–80% en 6-max y del 80–85% en full-ring. Jugar menos manos y más fuertes es el mayor arreglo de un golpe para casi todos los jugadores perdedores. Si entras en mucho más de una quinta parte de tus manos, casi seguro estás jugando demasiadas.
 
 **Q. ¿Cuándo deberías foldear una buena mano?**
 
 A. Foldea una mano fuerte cuando la acción te dice que está batida: top pair o un sobrepar encarando agresión pesada de varias calles, especialmente un raise de un jugador pasivo o un river peligroso que completa proyectos obvios. El top pair no es lo más alto de tu rango en un bote grande. Un laydown disciplinado de una mano fuerte pero batida es una jugada ganadora, no una débil.
+
+**Q. ¿Qué es un "hero fold"?**
+
+A. Un hero fold es tirar una mano fuerte —normalmente top pair, doble pareja o incluso un trío— cuando estás casi seguro de que vas por detrás, aunque el bote te tiente a pagar. Es lo contrario de un hero call: en vez de atrapar un farol, sueltas una buena mano leyendo que la línea del rival grita valor. Bien hecho, ahorra un stack; hecho de más, te convierte en un nit al que farolean a placer. Resérvalo para líneas concretas de valor (un pasivo que hace check-raise en el river), no para cada carta de miedo.
 
 **Q. ¿Deberías foldear alguna vez los ases servidos?**
 
@@ -216,7 +225,7 @@ A. Es la falsa creencia de que como ya has metido fichas en el bote, tienes que 
 
 **Q. ¿Debería foldear o pagar cuando no estoy seguro?**
 
-A. Cuando es genuinamente ajustado y no estás seguro, foldear suele ser la mejor opción por defecto — sobre todo en stakes bajos, donde los rivales farolean mucho menos de lo que deberían. Pregúntate si superas el umbral de pot odds y si su línea pinta a valor o a farol. Si no puedes nombrar suficientes manos peores que apostarían así, foldea y pasa a un spot más claro.
+A. Cuando es genuinamente ajustado y no estás seguro, foldear suele ser la mejor opción por defecto — sobre todo en stakes bajos, donde los rivales farolean mucho menos de lo que deberían. Pregúntate si superas el umbral de [pot odds](/es/blog/holdem-pot-odds) y si su línea pinta a valor o a farol. Si no puedes nombrar suficientes manos peores que apostarían así, foldea y pasa a un spot más claro.
 
 **Q. ¿Cómo sabes cuándo foldear a un raise en el river?**
 

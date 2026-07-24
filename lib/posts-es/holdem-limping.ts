@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "Limpear es entrar en un bote preflop solo igualando la ciega grande en lugar de subir o foldear. El open-limp (ser el primero en entrar) casi siempre es un error — no puedes ganar el bote preflop, cedes la iniciativa y los buenos jugadores te castigan. Pero limpear no siempre está mal: completar la ciega pequeña, hacer over-limp con manos especulativas detrás de otros limpers, y algunos casos en vivo y con stack corto son excepciones legítimas.",
   category: "strategy",
   date: "2026-07-05",
-  updated: "2026-07-05",
+  updated: "2026-07-24",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🚶",
@@ -171,6 +172,14 @@ A. A menudo, sí — completar la ciega pequeña es uno de los limps más defend
 **Q. ¿Cuál es la diferencia entre un limper y una calling station?**
 
 A. Un limper entra en botes sin subir solo igualando la ciega grande antes del flop — va de cómo *entra* en los botes. Una calling station paga demasiadas apuestas después del flop, en el turn y el river — va de cómo *continúa*. El mismo jugador loose-passive a menudo hace ambas cosas, pero los términos describen hábitos distintos y no deberían usarse de forma intercambiable.
+
+**Q. ¿Qué es un over-limp?**
+
+A. Un over-limp es limpear detrás de otro limper: alguien ya ha entrado igualando la ciega grande y tú te sumas pagando ese mismo importe. Es la versión menos mala de limpear, porque entras con descuento a un bote multiway y te da buenas odds implícitas para manos especulativas como pares pequeños o conectores del mismo palo, que buscan ligar un trío o un proyecto y cobrar en un bote con varios jugadores. Nada que ver con el open-limp, que es entrar el primero y suele ser un error.
+
+**Q. ¿Cómo se llama a un jugador que limpea mucho?**
+
+A. Normalmente "fish" o "pez" — el término general para un jugador débil y perdedor — o, más concretamente, una "calling station" (paga demasiado) o un "donk" (juega mal). El open-limp habitual es una de las señales más claras de un jugador inexperto, y por eso mismo los jugadores más fuertes van a por los limpers con subidas de aislamiento. Si prefieres no llevar esa etiqueta, ve por defecto a subir o foldear.
 
 ---
 

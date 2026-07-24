@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "De los 169 tipos de mano inicial, solo una pequeña franja superior — cerca del 15–20% de las manos que te reparten — es rentable para un principiante. Los pares grandes (AA–TT) y AK suben desde cualquier asiento; cuanto más tarde actúas, más abres tu rango — desde ~13% en UTG hasta ~43% en el botón (más amplio aún en 6-max). Empieza con una tabla simplificada y añade las tablas GTO de preflop cuando el subir-o-foldear ya te salga automático.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-07-11",
+  updated: "2026-07-24",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🂡",
@@ -106,7 +107,7 @@ Explora la cuadrícula completa con código de colores — cada una de las 169 m
 
 :::rangechart:::
 
-¿La quieres como herramienta independiente con rangos ampliados por asiento? Usa la [herramienta de tabla de manos iniciales de Texas Hold'em](/hand-chart). Para un desglose de cada nombre de asiento (UTG, HJ, CO, BTN, SB, BB), consulta la [guía de posiciones de póker](/es/blog/holdem-positions "thumb:/images/holdem-positions-hero.webp").
+¿La quieres como herramienta independiente con rangos ampliados por asiento? Usa la [herramienta de tabla de manos iniciales de Texas Hold'em](/en/hand-chart). Para un desglose de cada nombre de asiento (UTG, HJ, CO, BTN, SB, BB), consulta la [guía de posiciones de póker](/es/blog/holdem-positions "thumb:/images/holdem-positions-hero.webp").
 
 ### Posición temprana (UTG): el rango más cerrado
 
@@ -156,7 +157,7 @@ El error que hay que evitar es jugar una tabla de 9-max en una partida de 6-max:
 
 ## ¿Qué porcentaje de manos iniciales deberías jugar?
 
-A lo largo de una sesión completa, ==un buen objetivo para un principiante es jugar más o menos el 15–20% de las manos que te reparten== — lo que significa foldear el 80–85% en preflop. Eso no es un número plano, es el *promedio* de la tabla por posición de arriba: ~13% desde UTG, ~17% desde MP, ~27% desde el cutoff, ~43% desde el botón.
+A lo largo de una sesión completa, ==un buen objetivo para un principiante es jugar más o menos el 15–20% de las manos que te reparten== — lo que significa foldear el 80–85% en preflop. Eso no es un único número plano: las cifras por asiento de arriba — ~13% desde UTG, ~17% desde MP, ~27% desde el cutoff, ~43% desde el botón — son lo ancho que *abres un bote sin abrir*. Tu promedio de sesión queda por debajo de la media bruta de esas cifras, porque muchas veces te enfrentas a una subida (donde continúas con muchas menos manos) y te pasas muchas órbitas atascado en asientos tempranos y en las ciegas.
 
 :::stat[15–20%] de las manos repartidas — un rango sano de principiante en 9-max:::
 
@@ -280,6 +281,18 @@ A. Ser del mismo palo añade en torno a un 2–3% de equity sobre la misma mano 
 **Q. ¿Debería foldear siempre los pares servidos bajos como 22 o 33?**
 
 A. No siempre — decide la posición. Desde el cutoff o el botón, los pares bajos vale la pena jugarlos para "buscar trío": ligas un trío o mejor cerca del 11.8% de las veces (más o menos 1 de cada 8.5). Desde posición temprana son difíciles de jugar de forma rentable y suelen ser fold.
+
+**Q. ¿Cuál es la tabla de manos iniciales del póker?**
+
+A. La tabla de manos iniciales es una chuleta que ordena los 169 tipos de mano en niveles — premium (AA, KK, AKs), fuertes (TT–88, AQ, KQs), especulativas (pares bajos, conectores del mismo palo) y basura — y te dice desde qué posición abrir cada una. La tabla completa de esta página va de un rango del ~13% en UTG a un ~43% en el botón; tienes la versión imprimible en PDF más arriba.
+
+**Q. ¿Cuáles son los rangos de manos por posición?**
+
+A. Cuanto más tarde actúas, más ancho es tu rango. En una mesa de 9-max: UTG abre el ~13% superior (TT+, AJs+, AKo, KQs), MP añade parejas medias y suited broadways (~17%), el cutoff amplía a ~27% con pares bajos, A9s+ y conectores del mismo palo, y el botón llega al ~43% sumando pares del 22 al 44, A2s+ y broadways más flojos. El rango temprano es estrecho; el del botón, amplio.
+
+**Q. ¿Es 7-2 la peor mano inicial?**
+
+A. Sí. El 7-2 de distinto palo se considera la peor mano inicial del póker: las cartas están demasiado separadas para hacer una escalera juntas y son demasiado bajas para ganar sin mejorar. De ahí sale la "regla del 7-2", un juego paralelo de la casa que premia a quien se atreva a ganar un bote con ella de farol.
 
 ---
 

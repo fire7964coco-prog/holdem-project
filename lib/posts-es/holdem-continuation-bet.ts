@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "Una apuesta de continuación (c-bet) es una apuesta en el flop del jugador que subió antes del flop. La regla moderna no es 'cbetear cada flop' — es apostar los flops que favorecen tu rango (boards altos y secos como K-7-2) pequeño y a menudo, y pasar los que favorecen a tu rival (boards bajos y conectados como 7-6-5). Apuesta pequeño — un tercio del bote — en boards secos, grande — dos tercios o más — en los húmedos, cbetea menos fuera de posición y mucho menos multiway.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-07-06",
+  updated: "2026-07-24",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "15 min",
   emoji: "🔥",
@@ -246,6 +247,22 @@ A. No cbetees cuando el board machacó el rango de tu rival (boards bajos y cone
 **Q. ¿Es la c-bet un farol?**
 
 A. A veces sí, a veces no — ese es el punto. Muchas c-bets son semifaroles o faroles puros con manos que fallaron, apostando porque tu rival probablemente falló también. Otras son apuestas de valor con manos fuertes. Una estrategia de c-bet equilibrada mezcla ambas en los mismos boards, así que los rivales no pueden saber si tu apuesta del flop significa fuerza o aire.
+
+**Q. ¿Qué es una apuesta de valor en el póker?**
+
+A. Una apuesta de valor es una apuesta hecha con una mano fuerte esperando que te *paguen* con una peor — lo contrario de un farol, que busca que una mano mejor se retire. La mayoría de tus c-bets en boards con los que ligaste son apuestas de valor: apuestas top pair o un set para cobrarles a parejas y proyectos peores. La habilidad está en el tamaño, de modo que las manos más débiles todavía paguen — apuesta una cantidad que tu rival pueda convencerse de pagar.
+
+**Q. ¿De qué tamaño debe ser una c-bet? (cuánto apostar en una cbet)**
+
+A. El tamaño lo marca la textura del board, con dos marchas que cubren casi todo. En boards secos y estáticos apuesta pequeño — alrededor de un tercio del bote: si el bote es de $30, cbeteas $10. En boards húmedos y dinámicos apuesta grande — dos tercios del bote o más ($20 sobre ese bote de $30) — para cobrarles a los colores y proyectos de escalera y construir el bote con tus manos fuertes. En torneos, inclínate más pequeño, a menudo medio bote o menos, porque no puedes recargar el stack.
+
+**Q. ¿Cuál es un buen porcentaje de c-bet?**
+
+A. Una banda sana y equilibrada de c-bet en el flop está cerca del 55–70% agregando todos los boards. Pero no hay un solo número correcto: en posición mano a mano sobre un board seco cbeteas el 70–100% (a un tamaño pequeño), fuera de posición bajas al 40–50%, y multiway apuestas el 50% o menos. Más del ~85% delata piloto automático que los buenos jugadores castigan; por debajo del ~40% eres demasiado honesto. Trátalo como un chequeo de salud, no como un objetivo.
+
+**Q. ¿Cuándo NO hacer c-bet?**
+
+A. No cbetees cuando el board machacó el rango de tu rival — boards bajos y conectados como 7‑6‑5 o 9‑8‑7 ligan con las manos que pagan una subida mucho más fuerte que con las tuyas. Tampoco cuando estás multiway con aire: cada rival extra derrumba tu fold equity, así que en boards húmedos con varios jugadores solo apuestas valor y buenos proyectos. Añade a la lista estar fuera de posición con una mano marginal en un board dinámico. En todos estos casos pasar ahorra fichas y hace tus apuestas futuras más creíbles.
 
 **Q. ¿Qué es un buen porcentaje de c-bet en un HUD de póker?**
 

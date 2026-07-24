@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Cada decisión ganadora en Texas Hold'em se reduce a cinco preguntas repetibles: dónde estoy sentado (posición), ¿vale la pena jugar esta mano?, ¿subo o foldeo? (nunca limpeo), ¿sigo apostando en el flop?, y ¿cuándo suelto la mano? Un jugador tight-aggressive que responde bien esas cinco foldea ~80% de sus manos preflop, las juega con agresividad cuando entra, y le gana a casi cualquier partida casual — sin necesidad de memorizar listas de tips.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-07-06",
-  masterUpdated: "2026-07-06",
+  updated: "2026-07-24",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -80,7 +80,7 @@ La mayor fuga del póker es jugar demasiadas manos. Los novatos igualan con cual
 
 Qué manos merecen jugarse depende de tu posición (la Decisión 1 alimentando a la Decisión 2), pero una regla de oro para empezar:
 
-- **Sube siempre:** los pares grandes (A‑A, K‑K, Q‑Q, J‑J), y A‑K.
+- **Sube siempre:** los pares grandes (de A‑A a 10‑10), y A‑K.
 - **Sube casi siempre:** pares medios, A‑Q, y broadways fuertes del mismo palo (K‑Q, A‑J del mismo palo) — con más libertad cuanto más tardío sea tu asiento.
 - **Especulativo, según la posición:** pares servidos pequeños y conectores del mismo palo, que quieren botes multiway baratos (más sobre la matemática abajo).
 - **Foldea:** casi todo lo demás, sobre todo la basura de distinto palo como J‑4, Q‑7, K‑3.
@@ -223,6 +223,34 @@ A. Tight-aggressive describe jugar un rango estrecho de manos fuertes (tight) pe
 **Q. ¿Con qué frecuencia deberías hacer c-bet?**
 
 A. No hay un único número — depende de la posición, del board y de cuántos rivales enfrentas. En posición contra un solo jugador en un board seco podrías cbetear el 60–80% de las veces; fuera de posición o contra dos o más rivales baja hacia el 40–50% o menos. Apuesta más en boards que fallan al rango de tu rival, menos en boards húmedos que conectan con él, y usa un tamaño pequeño (25–35% del bote) cuando apuestas amplio, y mayor (65%+) cuando vas polarizado.
+
+**Q. ¿El póker es un juego de habilidad o de suerte?**
+
+A. Los dos — pero la habilidad gana a la larga. Cualquier mano suelta lleva un componente enorme de suerte, y por eso un principiante puede quitarle el stack a un pro en una sola sesión. A lo largo de miles de manos, sin embargo, la ventaja del que toma mejores decisiones se impone y la varianza se compensa — que es justo por lo que los mismos jugadores siguen cobrando. El póker es un juego de habilidad jugado con una baraja de suerte.
+
+**Q. ¿Qué es el póker GTO?**
+
+A. El GTO (Game Theory Optimal, óptimo según la teoría de juegos) es una estrategia matemáticamente equilibrada que no se puede explotar — mezclas faroles y apuestas de valor en proporciones que no dejan a tus rivales ningún contraataque rentable. Es el ideal teórico que calculan los solvers, pero a stakes bajos ganas más dinero jugando póker *explotativo*: desviarte del GTO para castigar fugas concretas (jugadores que foldean de más o que igualan demasiado). Empieza con tight-aggressive, aprende a explotar, y trata el GTO como el punto de referencia — no como la meta del primer día.
+
+**Q. ¿Cómo se mejora en el póker?**
+
+A. Estudia fuera de la mesa y aprieta en ella. Las mejoras más rápidas para la mayoría: foldear más manos preflop (la regla del ~80%), subir o foldear en vez de limpear, y revisar después tus mayores manos perdidas para encontrar la fuga. Añade un concepto cada vez — primero la posición, luego las pot odds, luego el c-bet — en vez de todo a la vez. El volumen más una revisión honesta le gana a cualquier «tip» aislado.
+
+**Q. ¿Cuál es la mejor estrategia para jugar al póker con dinero real?**
+
+A. La misma que en las mesas de juego en dinero ficticio, solo que la disciplina importa más porque cada ficha vale de verdad: juega tight-aggressive, foldea la mayoría de tus manos preflop y entra a los botes subiendo, no limpeando. Con dinero real añade dos reglas: juega solo con dinero que puedas permitirte perder (una gestión de bankroll sensata) y retírate en cuanto notes que estás en tilt. El dinero real castiga las decisiones emocionales mucho más rápido que las fichas de práctica.
+
+**Q. ¿Cuál es la estrategia básica del póker?**
+
+A. Tight-aggressive para empezar: juega pocas manos, pero juégalas con agresividad. En la práctica son cuatro hábitos — foldea alrededor del 80% de tus manos preflop, entra subiendo en vez de limpear, apuesta más en posición, y foldea sin drama cuando la mano ya no te pertenece. Con solo eso le ganas a casi cualquier partida casual; los matices (rangos, pot odds, tamaños de c-bet) vienen después.
+
+**Q. ¿Qué significa jugar «loose» o «tight»?**
+
+A. Tight significa jugar pocas manos y solo las fuertes; loose significa entrar con muchas manos, incluidas las flojas — y es la fuga número uno del principiante. Va junto con otro eje: agresivo (subes y apuestas) frente a pasivo (igualas y pasas). El estilo ganador para empezar es **tight-aggressive** (pocas manos, jugadas con fuerza); el perfil perdedor clásico es **loose-passive** (muchas manos, sobre todo igualando). Aprieta tu selección y juega con agresividad lo que te quedas.
+
+**Q. ¿Qué son los tells en el póker?**
+
+A. Un tell es una pista involuntaria — física o de patrón de apuesta — que delata la fuerza de una mano: manos temblorosas, mirar las fichas al ligar, apostar rápido con un farol o quedarse congelado con una mano fuerte. En vivo valen algo, pero online los tells de comportamiento (timing, tamaños de apuesta) importan mucho más. No los persigas de principiante: le ganarás mucho más dinero a la mesa jugando tus cinco decisiones bien que intentando «leer almas». Los tells son el último 5%, no el primero.
 
 ---
 

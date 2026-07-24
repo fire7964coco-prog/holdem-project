@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "Estar en posición significa que hablas último — ves la decisión de cada rival antes de gastar una ficha. Los estudios de solver y de bases de datos sugieren que en posición realizas más o menos el 85–100% de tu equity, mientras que fuera de posición solo capturas alrededor del 60–85%. Por eso UTG abre ~13% de las manos y el botón ~43% — y por eso la posición reescribe cada c-bet, cada farol y cada decisión de control del bote en el postflop.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-07-11",
+  updated: "2026-07-24",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎯",
@@ -125,7 +126,7 @@ La distinción importa: la **ciega grande pierde más fichas brutas por cada 100
 
 Jugar bien UTG va sobre todo de contención:
 
-- **Abre más o menos el ~13% superior de las manos** — el núcleo son los pares fuertes (88+), AK/AQ y los mejores broadways del mismo palo (AJs, KQs), redondeado con pares medios y los mejores ases del mismo palo. Para la rejilla exacta mano a mano, usa la [tabla de manos iniciales](/es/blog/holdem-starting-hands-chart).
+- **Abre más o menos el ~13% superior de las manos** — el núcleo son los pares fuertes (TT+), AK/AQ y los mejores broadways del mismo palo (AJs, KQs), redondeado con pares medios y los mejores ases del mismo palo. Para la rejilla exacta mano a mano, usa la [tabla de manos iniciales](/es/blog/holdem-starting-hands-chart).
 - **Foldea lo bonito pero dominado.** KJo y QJo parecen jugables y sangran fichas en silencio desde UTG — cuando conectan, alguien de detrás suele conectar más fuerte.
 - **Cuenta con jugar la mano OOP.** Quien iguale tu apertura de UTG probablemente tenga posición sobre ti durante tres calles, así que tu rango tiene que ser lo bastante fuerte como para aguantar ese impuesto.
 
@@ -252,6 +253,18 @@ Para la mecánica de las ciegas en sí — por qué existen y cómo las apuestas
 
 A. Fuera de posición (OOP) significa que tienes que actuar antes que tu rival en las calles del postflop — flop, turn y river. Comprometes fichas sin saber qué hará él, no puedes tomar cartas gratis y te cuesta controlar el tamaño del bote. Las ciegas están OOP contra todos los demás asientos (entre las dos, la ciega pequeña actúa primero — así que la ciega grande en realidad tiene posición sobre la ciega pequeña); el botón nunca está OOP contra nadie.
 
+**Q. ¿Quién habla primero, la ciega pequeña o la ciega grande?**
+
+A. Depende de la calle. En el *preflop*, la ciega pequeña habla antes que la ciega grande, y la ciega grande habla la última — «cierra» la acción. En el *postflop* (flop, turn y river), la ciega pequeña es la primera en actuar y la ciega grande justo después, así que una vez que salen las cartas la ciega pequeña siempre habla antes que la ciega grande. El botón siempre habla último en el postflop, que es justo por lo que es el asiento más rentable.
+
+**Q. ¿Qué es jugar en posición (IP) y fuera de posición (OOP)?**
+
+A. En posición (IP) significa que hablas el último en el flop, el turn y el river — ves cómo tu rival pasa, apuesta o se rinde antes de comprometer una ficha. Fuera de posición (OOP) es lo contrario: hablas primero y actúas a ciegas. La posición se decide en el preflop respecto al botón y no cambia durante la mano: cuanto más cerca del botón te sientas, más tarde hablas, y el botón habla último siempre.
+
+**Q. ¿Por qué es una ventaja actuar el último (tener posición)?**
+
+A. Porque tener posición sobre alguien te deja llevar las riendas de la mano: ves cada decisión suya antes de tomar la tuya. Puedes tomar una carta gratis pasando detrás, controlar el tamaño del bote y elegir el momento justo para apostar por valor o farolear. Esa información es la razón por la que en posición realizas alrededor del 85–100% de tu equity y fuera de posición solo el 60–85%, con las mismas cartas.
+
 **Q. ¿Por qué importa tanto la posición en el póker?**
 
 A. Porque hablar último convierte las mismas cartas en más dinero. Los estudios de solver y de bases de datos sugieren que en posición realizas más o menos el 85–100% de tu equity teórica mientras que fuera de posición solo capturas alrededor del 60–85% — el jugador en posición ve la decisión de cada rival antes de tomar la suya, así que apuesta por valor, farolea y foldea en mejores momentos con las mismas manos.
@@ -263,6 +276,14 @@ A. El botón. Es el único asiento que tiene garantizado hablar último en cada 
 **Q. ¿Cuál es la posición más débil en el póker?**
 
 A. Dos respuestas, según la pregunta. La ciega pequeña es el peor asiento estructural desde el que jugar una mano — el primero en actuar en cada calle del postflop. La ciega grande pierde más fichas brutas por cada 100 manos, simplemente porque pone una ciega obligada completa en cada órbita; ni el juego perfecto reduce del todo esa pérdida. Entre los asientos no ciegos, UTG es el más débil: primero en el preflop, el rango más cerrado, normalmente OOP tras el flop.
+
+**Q. ¿Es la ciega pequeña una posición temprana?**
+
+A. No — la ciega pequeña es una ciega, no un asiento de «posición temprana». Los jugadores de posición temprana (UTG y los asientos de al lado) abren cerrado porque toda la mesa actúa detrás de ellos, pero aun así hablan *después* de las ciegas en el preflop. La ciega pequeña es en realidad el peor asiento para jugar: pone media ciega y luego actúa primero en cada calle del postflop. No la trates como posición temprana — el estándar moderno desde la ciega pequeña es 3-bet o fold.
+
+**Q. ¿Cómo se juega fuera de posición (OOP)?**
+
+A. Pierde lo mínimo con disciplina. El check-raise es tu igualador: como el rival espera apostar cuando le pasas, un check-raise vuelve su piloto automático en su contra. Cuando apuestes, sube el tamaño (dos tercios o tres cuartos del bote) para negar cartas gratis. Controla el bote con las manos medias — pasa, iguala barato y foldea el river más de lo que parece natural, porque OOP tus manos marginales son bluff-catchers que infra-realizan. Y lo mejor: evita meterte OOP con basura desde las ciegas.
 
 **Q. ¿Es mejor limpear o subir desde UTG?**
 

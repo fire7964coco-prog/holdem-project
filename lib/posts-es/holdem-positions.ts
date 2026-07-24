@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "Las posiciones del póker son nombres de asiento que se miden desde el botón del repartidor — UTG, lojack, hijack, cutoff, botón y las ciegas — y se mueven un asiento en el sentido de las agujas del reloj cada mano. En el preflop, UTG actúa primero y la ciega grande última; en el postflop, la ciega pequeña actúa primero y el botón último. Los números de asiento físicos nunca se mueven; las posiciones sí.",
   category: "strategy",
   date: "2026-06-13",
-  updated: "2026-07-11",
+  updated: "2026-07-24",
+  masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🎯",
@@ -223,6 +224,18 @@ A. Sí. El botón del repartidor se mueve un asiento en el sentido de las agujas
 **Q. ¿Qué es el Asiento 1 en el póker?**
 
 A. El Asiento 1 es una silla física, no una posición — en la mayoría de las salas es el primer asiento a la izquierda inmediata del repartidor, con los números corriendo en el sentido de las agujas del reloj hasta el Asiento 9 o 10. El personal usa los números de asiento para sentar jugadores y la logística. Las posiciones del póker (UTG, botón, ciegas) rotan de forma independiente cada mano, así que el Asiento 1 puede ser cualquier posición.
+
+**Q. ¿Cuáles son las posiciones en una mesa de póker de 9 jugadores?**
+
+A. Por orden de acción en el preflop: UTG, UTG+1, UTG+2 (posición temprana), lojack (LJ) y hijack (HJ) (posición media), cutoff (CO) y botón (BTN) (posición tardía), y luego las dos ciegas: ciega pequeña (SB) y ciega grande (BB). Todas se nombran por su distancia al botón, así que se desplazan un asiento cada mano.
+
+**Q. ¿Cuál es la mejor posición en la mesa?**
+
+A. El botón (BTN). Es el único asiento que actúa último en cada calle postflop, lo que significa que ves lo que hacen todos los demás antes de decidir. Esa información garantizada es lo que lo convierte en el asiento más rentable del póker; el cutoff (CO), justo a su derecha, es el segundo mejor por el mismo motivo.
+
+**Q. ¿Qué es el 6-max y en qué cambian las posiciones?**
+
+A. Una mesa 6-max tiene seis asientos en vez de nueve: UTG (también llamado lojack), hijack, cutoff, botón, ciega pequeña y ciega grande. Se quitan los tres asientos tempranos de más (UTG+1, UTG+2 y un asiento medio), así que cada asiento juega "más tarde" que su homólogo de mesa completa y los rangos se abren en todos los asientos.
 
 ---
 
