@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "El kicker es la carta lateral más alta que no forma parte de tu mano hecha — rompe el empate cuando dos jugadores comparten el mismo valor. La pareja usa 3 kickers, la doble pareja 1, el trío 2; escaleras, colores y fulls no tienen ninguno. Es la razón por la que AK gana a AQ cuando la mesa empareja un as.",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-07-13",
-  masterUpdated: "2026-07-08",
+  updated: "2026-07-24",
+  masterUpdated: "2026-07-18",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -168,6 +168,18 @@ A. No. Un full es un trío más una pareja — las cinco cartas. Los empates se 
 
 A. Sí, el póker tiene un kicker de una carta, pero rara vez importa en Hold'em. Solo decide una mano cuando dos jugadores empatan con el mismo póker exacto — lo que exige que las cuatro cartas estén en la mesa — y entonces gana la quinta carta más alta.
 
+**Q. ¿Importa el kicker con trío?**
+
+A. Sí. El trío usa dos kickers, así que cuando dos jugadores hacen el mismo trío las dos cartas más altas siguientes rompen el empate — K-K-K-A-2 gana a K-K-K-Q-J porque el as supera a la reina. (Un *set* de verdad hecho con una pareja servida rara vez empata, ya que solo un jugador puede tener esa pareja exacta.)
+
+**Q. ¿La doble pareja tiene kicker?**
+
+A. Sí — la doble pareja usa un kicker. Si tienes K-Q y tu rival tiene J-Q en una mesa Q-7-7, ambos tenéis reinas y sietes, pero tu rey de kicker supera a su jota. El kicker solo entra en juego cuando ambos jugadores tienen la doble pareja idéntica.
+
+**Q. ¿El kicker tiene que estar en tu mano?**
+
+A. No. Un kicker puede ser una carta comunitaria. El póker siempre forma las mejores cinco cartas de siete, así que si una carta de la mesa supera a tu carta propia, esa carta de la mesa se convierte en el kicker compartido y decide la siguiente carta. Tu carta propia solo juega como kicker cuando es más alta que las cartas de la mesa a las que sustituiría.
+
 **Q. ¿Cuántos kickers hay en una mano de póker?**
 
 A. Depende de la mano: la pareja usa tres kickers, el trío dos, y la doble pareja y el póker uno cada uno. Escaleras, colores, fulls y escaleras de color no tienen kickers porque ya llenan las cinco cartas.
@@ -176,6 +188,10 @@ A. Depende de la mano: la pareja usa tres kickers, el trío dos, y la doble pare
 
 A. Uno alto — un kicker de as o de rey es fuerte, mientras que un kicker bajo como un nueve te deja "dominado". Por eso AK y AQ son mucho mejores que A9 o A5: cuando todos emparejan su as, gana el bote el kicker más grande.
 
+**Q. ¿Qué es un kicker de as (o un kicker de rey)?**
+
+A. Un kicker de as significa que tu carta lateral más alta es un as — el kicker más fuerte que hay, así que "pareja máxima, kicker de as" gana casi todos los showdowns con la misma pareja. Un kicker de rey es el siguiente mejor. Es exactamente por lo que A-K y A-Q ganan a un as flojo como A-9: cuando la mesa empareja el as de todos, el kicker más grande se lleva el bote.
+
 **Q. ¿Qué significa "jugar la mesa"?**
 
 A. Jugar la mesa significa que las cinco cartas comunitarias son tu mejor mano y tus cartas propias no pueden mejorarla. Como todos usan las mismas cinco cartas, el bote se divide. No hay kicker porque la mesa ya forma una mano completa de cinco cartas.
@@ -183,6 +199,18 @@ A. Jugar la mesa significa que las cinco cartas comunitarias son tu mejor mano y
 **Q. ¿Importan los kickers en el Texas Hold'em?**
 
 A. Mucho. Como todos comparten las cartas comunitarias, los jugadores hacen con frecuencia la misma pareja o el mismo trío, y el kicker decide esos botes. Elegir manos con kickers fuertes (y retirar las dominadas) es una parte central del juego ganador.
+
+**Q. ¿Qué es el "top kicker"?**
+
+A. El top kicker es el kicker más alto posible con tu combinación — normalmente un as. Si ligas pareja máxima con A-K, tienes "pareja máxima, top kicker": nadie con la misma pareja puede superarte, salvo que la mesa reparta un kicker aún mayor a los dos. Es la posición más cómoda en un showdown de pareja compartida.
+
+**Q. ¿Gana el que tiene el kicker más alto?**
+
+A. Con la misma jugada, sí. Si ambos tenéis la misma pareja (o el mismo trío), gana quien tenga el kicker más alto — A-K supera a A-Q sobre un as en la mesa. Pero el kicker nunca gana a una mano de valor superior: una pareja de reyes con kicker de dos sigue aplastando a una pareja de dieces con kicker de as. Primero el valor, luego el kicker.
+
+**Q. ¿Qué es el "problema del kicker" (kicker problem)?**
+
+A. Es la trampa de jugar un as flojo (A-x, como A-9 o A-5) y perder el bote por el kicker cuando la mesa empareja el as. Ligas tu pareja de ases, te sientes fuerte y pagas hasta el final — pero un rival con A-K o A-Q tiene el mismo as y un kicker mayor, así que estás dominado. Es exactamente la mano que me costó un buy-in: evitar el problema del kicker es la razón por la que se retiran los ases débiles fuera de posición.
 
 ---
 

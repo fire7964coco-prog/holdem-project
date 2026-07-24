@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Los empates se rompen en un orden fijo: primero el tipo de mano, luego las cartas que la forman y por último los kickers de mayor a menor. Misma pareja → gana el primer kicker más alto; cinco cartas idénticas → bote dividido. Los palos nunca deciden un empate.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-07-13",
-  masterUpdated: "2026-07-11",
+  updated: "2026-07-24",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "⚖️",
@@ -182,6 +182,10 @@ A. El jugador cuyas mejores cinco tengan el kicker más alto. Una pareja lleva t
 
 A. Se compara primero la pareja alta, luego la baja y por último el único kicker. Ases y treses gana a reyes y reinas, porque la pareja alta se comprueba antes que cualquier otra cosa.
 
+**Q. ¿Quién gana si dos jugadores tienen el mismo trío?**
+
+A. El trío lleva dos kickers, comparados de mayor a menor — así que si ambos jugadores hacen el mismo trío, gana la carta lateral más alta. Con trío de nueves, 9-9-9-A-K gana a 9-9-9-A-Q porque el segundo kicker (rey) supera a la reina. Trío y ambos kickers iguales significa bote dividido. (Un trío formado con una pareja servida casi nunca empata, ya que solo un jugador puede tener esa pareja exacta.)
+
 **Q. ¿Importa la 5.ª carta en el póker?**
 
 A. Sí. Cuando las primeras cuatro cartas de ambas manos son idénticas, la quinta carta decide todo el bote — el tercer kicker de una pareja, la carta más baja de un color, la carta lateral del póker en la mesa. Solo deja de importar cuando las cartas de la mesa superan tu carta de mano.
@@ -194,6 +198,26 @@ A. Sí, pero solo en la escalera A-2-3-4-5 (la "rueda"), donde juega como la car
 
 A. Sí — las escaleras se ordenan únicamente por su carta más alta, así que 6-5-4-3-2 gana a la rueda A-5, y Broadway (A-K-Q-J-10) les gana a todas. Cartas más altas iguales significan escaleras idénticas y bote dividido.
 
+**Q. ¿Quién gana si dos jugadores tienen la misma escalera?**
+
+A. Gana la escalera con la carta más alta — Q-J-10-9-8 gana a J-10-9-8-7, porque una escalera se ordena solo por su carta más alta y no tiene kicker. Si ambas escaleras tienen la misma carta más alta son idénticas, así que el bote se divide. Esto pasa sobre todo cuando la escalera está casi toda en la mesa y ambos jugadores completan el mismo extremo.
+
+**Q. ¿Quién gana en un empate de color?**
+
+A. Se comparan los colores carta por carta de mayor a menor: un color con As gana a un color con K, y si las cartas más altas coinciden pasas a la siguiente, y así con las cinco. Los palos nunca rompen el empate, así que si las cinco cartas coinciden en valor el bote se divide. (En Hold'em dos colores son siempre del mismo palo, ya que los jugadores comparten la mesa.)
+
+**Q. ¿Quién gana si dos jugadores tienen el mismo full?**
+
+A. Se compara primero el trío — el trío más alto gana, así que K-K-K-2-2 gana a Q-Q-Q-A-A aunque los ases parezcan mayores. Solo si los tríos son idénticos comparas la pareja. Un full no tiene kicker, así que trío y pareja iguales significa bote dividido.
+
+**Q. ¿Qué pasa si dos jugadores tienen escalera de color?**
+
+A. Gana la escalera de color más alta, decidida por su carta más alta — una escalera de color con reina alta gana a una con nueve alto. Una escalera real es sencillamente la escalera de color con As alto, así que gana a cualquier otra escalera de color. Cartas más altas idénticas significan una mano idéntica y bote dividido.
+
+**Q. ¿Importan los palos en el póker?**
+
+A. Solo para formar un color — nunca para ordenar manos ni romper empates. Los palos te permiten formar un color (cinco cartas del mismo palo), pero ningún palo gana a otro, así que un color de picas no gana a un color de corazones, y dos manos por lo demás idénticas siempre se dividen. Los ganadores se deciden solo por valor y kicker.
+
 **Q. ¿Los palos rompen alguna vez un empate en Texas Hold'em?**
 
 A. No. En Hold'em no hay jerarquía de palos — si dos mejores manos de cinco cartas coinciden carta por carta, el bote se divide sin importar los palos.
@@ -201,6 +225,10 @@ A. No. En Hold'em no hay jerarquía de palos — si dos mejores manos de cinco c
 **Q. ¿Qué pasa si ambos jugadores tienen exactamente la misma mano?**
 
 A. El bote se divide a partes iguales — un "empate". Cómo se reparten físicamente las fichas, quién se queda la ficha impar y cómo se resuelven los botes secundarios se explica en las [reglas del bote dividido](/es/blog/holdem-split-pot-rules).
+
+**Q. ¿Es posible un empate (bote dividido) en el póker?**
+
+A. Sí, pero es poco frecuente. Un empate real ocurre solo cuando las mejores cinco cartas de dos o más jugadores coinciden en valor exactamente — lo más habitual cuando la propia mesa es la mejor mano ("jugar la mesa"), o una escalera o color compartidos que ninguna carta de mano puede mejorar. Entonces el bote se divide a partes iguales. Los kickers existen precisamente para romper la mayoría de los posibles empates antes de que lleguen a ser una división.
 
 ---
 

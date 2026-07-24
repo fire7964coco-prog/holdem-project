@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "En Texas Hold'em siempre juegas la mejor mano de 5 cartas entre 7 (2 cartas propias + 5 cartas comunitarias) — usando las dos, una, o ninguna (jugar con la mesa). Repasa las 7 cartas en un orden fijo: color → escalera → parejas → carta alta.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-07-13",
-  masterUpdated: "2026-07-11",
+  updated: "2026-07-24",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🃏",
@@ -238,6 +238,18 @@ Ligas color en el river, la mesa muestra dos reinas, y nunca te haces la pregunt
 
 A. Repasa las 7 cartas (2 propias + 5 de la mesa) en un orden fijo: primero color (cualquier palo 5+ veces), luego escalera (5 valores seguidos), luego parejas (parejas, tríos, fulls, pókers). Quédate con lo más fuerte que encuentres y complétalo hasta exactamente 5 cartas con tus cartas más altas restantes. Puedes usar las dos cartas propias, una, o ninguna.
 
+**Q. ¿Tienes que usar tus dos cartas propias en Texas Hold'em?**
+
+A. No. Formas la mejor mano de 5 cartas con cualquier combinación de tus dos cartas propias y las cinco cartas comunitarias — las dos, solo una, o ninguna. Usar ninguna se llama "jugar con la mesa". (El Omaha es lo contrario: allí estás obligado a usar exactamente dos de tus cuatro cartas propias.)
+
+**Q. ¿Cuántas cartas comunitarias se pueden usar?**
+
+A. Todas las que necesites para completar tus mejores 5. La regla real es al revés: de tus cartas propias puedes usar dos, una o cero, y el resto de tu mano lo rellenan las cartas comunitarias. Si usas las dos propias, juegas 3 comunitarias; si usas una, 4 comunitarias; si no usas ninguna, las 5 comunitarias son tu mano (jugar con la mesa). En todos los casos, tu mano final son exactamente 5 cartas: las 5 mejores de las 7.
+
+**Q. ¿Qué son y cómo se utilizan las cartas comunitarias?**
+
+A. Las cartas comunitarias son las 5 cartas que se reparten boca arriba en el centro de la mesa (el flop, el turn y el river) y que todos los jugadores comparten. Se usan combinándolas con tus 2 cartas propias para formar la mejor mano de 5 cartas: cada jugador ve las mismas 5 cartas de la mesa, pero lo que las diferencia son las cartas propias que cada uno esconde.
+
 **Q. ¿Qué significa "jugar con la mesa" en Texas Hold'em?**
 
 A. Significa que las 5 cartas comunitarias ya son tu mejor mano posible de 5 cartas — ninguna carta propia las mejora. Como la mesa es compartida, todos los jugadores pueden reclamar esa misma mano, así que jugar con la mesa suele acabar en bote dividido, salvo que las cartas propias de un rival mejoren la mesa.
@@ -261,6 +273,18 @@ A. No. Secuencias como K-A-2-3-4 o Q-K-A-2-3 no son escaleras en Texas Hold'em �
 **Q. ¿Cómo sabes si un color es posible en la mesa?**
 
 A. Cuenta los palos en la mesa. Con 0–2 de un palo, no hay color para nadie. Con 3, un jugador necesita dos de ese palo en la mano; con 4, solo uno; con los 5, la propia mesa es color y solo una carta más alta de ese palo la mejora.
+
+**Q. Si hay un color en la mesa, ¿quién gana?**
+
+A. Cuando las cinco cartas comunitarias forman un color, todos los jugadores que queden lo comparten, así que gana quien tenga en la mano la carta más alta de ese palo. Si nadie tiene una carta más alta de ese palo, el bote se reparte. (Con solo tres o cuatro cartas del mismo palo en la mesa, únicamente tienen color los jugadores que tengan las cartas de ese palo que faltan.)
+
+**Q. Si hay una escalera en la mesa, ¿quién gana?**
+
+A. Cuando las cinco cartas comunitarias ya forman una escalera, todos tienen al menos esa escalera — así que gana quien la extienda a una escalera más alta con una carta propia. En una mesa 5-6-7-8-9, un jugador con un 10 forma 6-7-8-9-10 y le gana a la mesa. Si nadie puede subir más, el bote se reparte.
+
+**Q. ¿Cuál es la función de las cartas comunitarias y cuál es la mejor mano de 5 posible en la mesa?**
+
+A. La función de las cartas comunitarias es dar a todos una base compartida sobre la que construir: cada jugador la combina con sus 2 cartas propias para su mejor mano de 5. La mejor mano posible que permite una mesa concreta se llama las nuts — y para hallarla no miras tus cartas, sino que preguntas "¿cuál es la mano más fuerte que CUALQUIERA podría formar con esta mesa?". Repasa color, luego mesa emparejada (fulls/pókers) y luego la escalera más alta que conecte; lo mejor de ese repaso es el techo de la mesa.
 
 **Q. ¿Cuenta una pareja en la mesa como parte de tu mano?**
 

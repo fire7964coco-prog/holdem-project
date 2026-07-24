@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "¿El color gana a la escalera? La matemática y los errores de lectura",
   seoTitle: "¿El color gana a la escalera? Sí — y qué le gana al color",
   desc: "¿Empujaste tu escalera y el color se llevó el bote? El color siempre gana a la escalera. Aquí tienes la matemática, qué le gana al color y 3 mesas que engañan.",
-  tldr: "Un color (cinco cartas del mismo palo, ~0.197% de repartos de 5 cartas) siempre gana a una escalera (cinco en secuencia, ~0.392%) en el Texas Hold'em — porque el color es casi el doble de difícil de ligar.",
+  tldr: "En el Texas Hold'em, un color (cinco cartas del mismo palo) siempre gana a una escalera (cinco cartas en secuencia), sin excepciones. La razón es pura frecuencia: hay unas 5,108 formas de ligar un color frente a 10,200 de armar una escalera, así que el color es casi el doble de raro. Al color solo le ganan el full, el póker, la escalera de color, la escalera real y un color más alto.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-07-13",
-  masterUpdated: "2026-07-11",
+  updated: "2026-07-24",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "⚡",
@@ -209,6 +209,26 @@ A. No. El Texas Hold'em no tiene jerarquía de palos. Los palos solo importan pa
 **Q. ¿Un color y una escalera pueden empatar o dividir el bote?**
 
 A. No. Una mano siempre está por encima de la otra, así que el color simplemente gana. Un bote dividido solo ocurre entre dos manos exactamente del mismo puesto y con los mismos cinco valores.
+
+**Q. ¿Qué gana, el color o la escalera?**
+
+A. Gana el color. En el Texas Hold'em el color (#5) siempre gana a la escalera (#6), sin ninguna excepción en el juego estándar. Si empujaste la escalera y viste caer el bote hacia el otro lado, no fue un error del dealer: el color es la mano más alta de las dos.
+
+**Q. ¿Qué es más probable, un color o una escalera?**
+
+A. Una escalera es más frecuente. Hay unas 10,200 formas de armar una escalera frente a solo 5,108 de ligar un color, así que la escalera aparece casi el doble de veces. Precisamente por ser más común vale menos: en el póker, cuanto más rara es una mano, más alto está.
+
+**Q. ¿Qué es mejor, una escalera de color o un full?**
+
+A. La escalera de color. Con solo 36 combinaciones (~0.00139%) es muchísimo más rara que un full, así que la escalera de color (#2) gana al full (#4) con claridad. Solo la bate una escalera real.
+
+**Q. ¿Qué le gana a la escalera de color?**
+
+A. Casi nada. La escalera de color (#2) solo la bate una escalera real (#1), que no es más que la escalera de color con As, A-K-Q-J-10 del mismo palo. Otra escalera de color más alta también gana: si dos chocan, decide la carta superior de cada secuencia.
+
+**Q. ¿El color vence al full?**
+
+A. No, es al revés: el full gana al color. En una mesa emparejada, un rival con full se lleva tu color por muy alto que sea — lo he pagado más veces de las que me gustaría con un color máximo en la mano. En el Texas Hold'em estándar solo el Short Deck invierte ese orden.
 
 ---
 

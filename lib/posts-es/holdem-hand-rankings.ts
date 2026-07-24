@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Jerarquía de manos de póker en Texas Hold'em — de la mejor a la peor, con probabilidades",
   seoTitle: "¿Creías que ganabas y perdiste el bote? — Manos y desempates",
   desc: "¿Ligaste color y aun así perdiste el bote? Casi siempre falla una sola regla. Aquí tienes las 10 manos de mejor a peor, con probabilidades y desempates.",
-  tldr: "La jerarquía de manos de póker, de la mejor a la peor, es: Escalera Real, Escalera de Color, Póker, Full, Color, Escalera, Trío, Doble Pareja, Pareja y Carta Alta.",
+  tldr: "La jerarquía de manos de póker, de la mejor a la peor, es: Escalera Real, Escalera de Color, Póker, Full, Color, Escalera, Trío, Doble Pareja, Pareja y Carta Alta. La regla básica: cuanto más rara es una mano de ligar, más alto está — por eso el color gana a la escalera y el full gana al color. Cuando dos jugadores tienen el mismo tipo de mano, decide el kicker; si las cinco cartas coinciden, el bote se divide.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-07-13",
-  masterUpdated: "2026-07-03",
+  updated: "2026-07-24",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🃏",
@@ -21,13 +21,13 @@ Estás mano a mano en el river. Ligaste tu color, estás seguro de que es bueno�
 
 Casi todos los momentos de "creía que ganaba" se reducen a lo mismo: ==no leer la **jerarquía de manos de póker** con suficiente rapidez==. El orden en sí se aprende en cinco minutos. Leerlo en vivo, bajo presión, con una mesa emparejada o conectada — ==eso es lo que casi nadie te explica bien==.
 
-Esta guía resuelve las dos cosas. Tendrás el orden completo con las probabilidades reales, todas las reglas de desempate, tres problemas de mesa reales para practicar "encuentra tus mejores cinco", y una rutina de 1 segundo para leer cualquier mesa en directo.
+He visto esa cara de "creía que ganaba" al otro lado de la mesa más noches de las que puedo contar, y casi siempre se remonta a un detalle que se le pasó por alto en la mesa. Esta guía resuelve las dos cosas. Tendrás el orden completo con las probabilidades reales, todas las reglas de desempate, tres problemas de mesa reales para practicar "encuentra tus mejores cinco", y una rutina de 1 segundo para leer cualquier mesa en directo.
 
 ---
 
-## Jerarquía de manos de póker: el orden completo de un vistazo
+## ¿Cuál es la jerarquía de manos de póker, de la mejor a la peor?
 
-Empieza aquí. Esta es toda la jerarquía, de la más fuerte a la más débil, con la probabilidad a largo plazo de ligar cada mano para el river en Texas Hold'em.
+De la mejor a la peor, las diez manos del Texas Hold'em son: Escalera Real, Escalera de Color, Póker, Full, Color, Escalera, Trío, Doble Pareja, Pareja y Carta Alta. La regla básica es simple: cuanto más rara es una mano de ligar, más alto está. Abajo tienes toda la jerarquía, con la probabilidad a largo plazo de ligar cada mano para el river.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -45,6 +45,8 @@ Empieza aquí. Esta es toda la jerarquía, de la más fuerte a la más débil, c
 | **10** | Carta Alta | "Sin nada" | Ninguna combinación | 17.4% |
 
 </div>
+
+*Estas son las frecuencias estándar de manos de siete cartas para una baraja completa de 52 — las mismas probabilidades que usan todos los solvers y sitios de entrenamiento de póker.*
 
 > **La regla que gana discusiones**
 > La Pareja y la Carta Alta juntas suman alrededor del 61% de todas las manos de siete cartas al river. Las manos grandes parecen comunes porque se recuerdan, pero la mayoría de los botes se deciden con una pareja y un [kicker](/es/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp").
@@ -69,7 +71,9 @@ En el Texas Hold'em estándar, **ningún palo gana a otro**. Las picas no ganan 
 
 ---
 
-## Las 10 manos de póker explicadas
+## Las 10 manos de póker explicadas (una a una)
+
+Aquí tienes cada mano, de la más fuerte a la más débil, con un ejemplo y la regla que decide cada duelo. Las cinco que más confusión causan — full, color, escalera y los dos tipos de trío — reciben más atención.
 
 ### #1 — Escalera Real
 
@@ -104,7 +108,7 @@ Entre dos pókers, gana el de valor más alto. Si las cuatro están *en la mesa*
 Compara **primero el trío**: QQQ55 gana a JJJ99 porque las reinas superan a las jotas, sin importar el tamaño de la pareja. Solo si el trío empata se compara la pareja.
 
 > **El "cooler" más común**
-> Cada vez que la mesa se empareja, busca un full antes de comprometerte con un color o una escalera. "Mi color máximo perdió contra un full" es el bad beat más frecuente del Hold'em.
+> En doce años alrededor del tapete, "mi color máximo perdió contra un full" es el bad beat que más veces he oído lamentar a un jugador. Cada vez que la mesa se empareja, busca un full *antes* de comprometerte con un color o una escalera.
 
 ### #5 — Color
 
@@ -165,11 +169,11 @@ En el showdown gana la carta más alta, luego la siguiente, y así con las cinco
 
 ---
 
-## Cómo funcionan de verdad los kickers y los empates
+## ¿Cómo funcionan los kickers y los empates en el póker?
 
 ![Showdown de póker — comparando las mejores cinco cartas de dos jugadores](/images/holdem-hand-rankings-showdown.webp "En el showdown gana la mejor mano de cinco cartas")
 
-Esta es la parte que decide botes reales — y la que muchas tablas se saltan. Cuando dos jugadores tienen el **mismo tipo de mano**, sigue este orden exacto:
+Cuando dos jugadores tienen el mismo tipo de mano, el ganador se decide comparando primero las cartas que forman la mano, y luego un **kicker** — una carta lateral que no forma parte de la mano hecha — rompe el empate cuando todo lo demás coincide. Esta es la parte que decide botes reales, y la que muchas tablas se saltan. Sigue este orden exacto:
 
 1. **Compara el tipo de mano.** Un color siempre gana a una escalera, un full siempre gana a un color, y así sucesivamente.
 2. **Compara las cartas que forman la mano.** Una pareja de ases gana a una de reyes; un color con reina alta gana a uno con jota alta.
@@ -207,7 +211,7 @@ Saber el orden no es lo mismo que leerlo rápido. Aquí van tres situaciones rea
 
 Tienes **Q♥ Q♦**. ¿Cuál es tu mejor mano?
 
-→ La mesa ya muestra doble pareja (A-A y K-K). Tus dos reinas más la Q♠ de la mesa hacen **trío de reinas**, y junto con los ases de la mesa tienes un **full — QQQ + AA**. Esas son tus mejores cinco. Los principiantes se traban con "¿AAKK + Q no es doble pareja?" — no. En cuanto tienes trío, te quedas con el full. **El full gana a la doble pareja.**
+→ La mesa ya muestra doble pareja (A-A y K-K). Tus dos reinas más la Q♠ de la mesa hacen **trío de reinas**, y junto con los ases de la mesa tienes un **full — QQQ + AA**. Esas son tus mejores cinco. En la primera partida casera que repartí vi a dos jugadores distintos tirar esta misma mano pensando "AAKK + Q es solo doble pareja" — no lo es. En cuanto tienes trío, te quedas con el full. **El full gana a la doble pareja.**
 
 ### Problema 2 — El color que en realidad es mejor
 
@@ -223,7 +227,7 @@ Tienes **6♥ 2♣**. La mesa tiene cuatro corazones.
 
 Tienes **A♥ 3♣**. La mesa ya trae trío de reyes.
 
-→ Tu A♥ empareja con el A♠ de la mesa y te da un **full, KKK + AA**. Pero si tu rival también tiene un As, tiene el *mismo* full y se divide (solo la pareja exacta A-A de mano hace un full mayor, ases sobre reyes). Si no tiene As y solo una pareja menor, tu full gana. La lección: cuando la mesa hace casi todo el trabajo, tu mano a menudo vale solo una carta extra.
+→ Tu A♥ empareja con el A♠ de la mesa y te da un **full, KKK + AA** (reyes full de ases). Pero si tu rival también tiene un As suelto —y no el rey que falta—, tiene el *mismo* full y se reparte el bote. Dos manos aún te ganan: una **pareja servida de ases (A-A)** hace un full mayor (ases sobre reyes), y **un As junto al último rey (K♣)** hace **póker de reyes**. Si no tiene As y solo una pareja menor, tu full gana. La lección: cuando la mesa hace casi todo el trabajo, tu mano a menudo vale solo una carta extra.
 
 ---
 
@@ -245,9 +249,9 @@ Tienes **A♥ 3♣**. La mesa ya trae trío de reyes.
 
 ---
 
-## Por qué el orden es así
+## ¿Por qué el color gana a la escalera?
 
-La jerarquía no es arbitraria: es ==pura probabilidad==. ==g:**Cuanto más difícil es ligar una mano, más alto está.**== El color está por encima de la escalera porque, en una baraja de 52 cartas, simplemente hay menos formas de hacer cinco del mismo palo que cinco en secuencia de cualquier palo. Ese único principio explica toda la jerarquía — puedes ver los números exactos en la [tabla de probabilidades y odds del póker](/es/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
+El color gana a la escalera simplemente porque es más difícil de ligar: en una baraja de 52 cartas hay menos formas de sacar cinco cartas del mismo palo (3.03% de las manos de siete cartas al river) que cinco en secuencia de cualquier palo (4.62%). La jerarquía no es arbitraria: es ==pura probabilidad==. ==g:**Cuanto más difícil es ligar una mano, más alto está.**== Ese único principio explica toda la jerarquía — puedes ver los números exactos en la [tabla de probabilidades y odds del póker](/es/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
 También explica la gran excepción que verás: en el **Short Deck (6+) Hold'em**, donde se quitan los doses a los cincos, los colores se vuelven más difíciles que los fulls — así que en ese formato un ==r:**color gana a un full**==. Cambió la matemática, cambió el orden. Más sobre las diferencias por modalidad abajo.
 
@@ -265,11 +269,13 @@ Con el reloj en contra, repasa este escaneo en orden cada vez que la mesa esté 
 
 **3. Por último las parejas** — ¿está emparejada la mesa? ==r:Si sí, hay fulls y pókers en juego, y tu color o escalera puede estar en peligro.==
 
-Los jugadores entrenados leen la mesa en este orden exacto — primero el peligro (color/escalera en la mesa), luego si la mesa está emparejada (lo que amenaza todo). Crea el hábito y dejarás de pagar a la ligera en el river.
+Yo sigo repasando este mismo escaneo — palos, luego escaleras, luego parejas — en cada mesa, por muchas horas que lleve sentado. Primero el peligro (color/escalera en la mesa), luego si la mesa está emparejada (lo que amenaza todo). Crea el hábito y dejarás de pagar a la ligera en el river.
 
 ---
 
-## Memorízalo en 3 pasos
+## ¿Cómo se memorizan las manos de póker rápido?
+
+La forma más rápida de memorizar las manos de póker es dejar de tratarlas como diez elementos sueltos: apréndelas en tres grupos (Premium, Medio, Común), practica solo los duelos confusos y canta el ganador en los streams antes que el dealer. Aquí tienes el plan en tres pasos.
 
 | Paso | Qué hacer | Tiempo |
 |------|------|------|
@@ -281,9 +287,9 @@ Agrupar primero evita que el orden parezca diez cosas al azar. Los duelos confus
 
 ---
 
-## Jerarquía de manos por modalidad
+## ¿La jerarquía de manos es igual en todos los juegos?
 
-El orden es común a casi todas las variantes de póker, con algunos giros importantes.
+En su mayoría sí — el mismo orden de diez manos vale en Texas Hold'em, Omaha y Seven-Card Stud. Las excepciones principales son el Short Deck (6+), donde el color gana al full, y la regla del Omaha de usar exactamente dos de tus cartas propias. Así se comparan las variantes más comunes.
 
 | Juego | Jerarquía | Diferencia clave |
 |------|------|------|
@@ -382,6 +388,22 @@ A. No. Una mano de póker siempre son cinco cartas, así que puede contener como
 **Q. ¿Se puede usar el As como un 1 en el póker?**
 
 A. Sí. El As juega alto y bajo, así que A-2-3-4-5 ("la rueda") es una escalera legal — la más baja posible. Eso sí, no se puede dar la vuelta por la esquina: K-A-2-3-4 no es escalera.
+
+**Q. ¿Cuál es la peor mano del póker? ¿Por qué 7-2 es la peor?**
+
+A. La peor mano inicial en Texas Hold'em es 7-2 de distinto palo. Es la más floja porque el 7 y el 2 son las dos cartas más bajas que no pueden formar una escalera juntas (quedan demasiado separadas), al ser de distinto palo tampoco proyectan color, y aunque emparejes, un par de sietes o de doses casi nunca aguanta. Por eso 7-2 offsuit es el ejemplo clásico de mano para tirar antes del flop.
+
+**Q. ¿Qué es una "quintilla" (cinco iguales)?**
+
+A. Una quintilla, o cinco iguales (five of a kind), son cinco cartas del mismo valor y solo existe cuando se juega con comodines — por ejemplo cuatro reyes más un comodín. En el Texas Hold'em estándar **no existe**: la baraja no lleva comodines, así que la mejor mano posible sigue siendo la escalera real.
+
+**Q. ¿Cómo funcionan los comodines en el póker?**
+
+A. Un comodín (wild card) es una carta que puede sustituir a cualquier otra para completar la mejor mano, y permite jugadas que no existen sin él, como los cinco iguales. Pero el **Texas Hold'em estándar NO usa comodines**: se juega con una baraja de 52 cartas sin jokers. Solo verás comodines en variantes caseras o en algunos juegos de dados/póker con joker.
+
+**Q. ¿Qué jugada vale más en el póker?**
+
+A. La jugada que más vale es la escalera real (A-K-Q-J-10 del mismo palo): es la cima de la jerarquía y no se puede superar. Le siguen, de mayor a menor, la escalera de color, el póker, el full y el color.
 
 ---
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Sí — en el póker se puede empatar. El bote se divide (un \"split\" o \"chop\") cuando dos o más jugadores muestran las mismas mejores cinco cartas en el showdown. El palo nunca rompe el empate, y la ficha impar que sobra va al primer jugador empatado a la izquierda del botón.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-07-13",
-  masterUpdated: "2026-07-11",
+  updated: "2026-07-24",
+  masterUpdated: "2026-07-18",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🃏",
@@ -153,13 +153,29 @@ En el Texas Hold'em no. Puede que hayas oído hablar de "juegos de bote dividido
 
 ## Preguntas frecuentes
 
+**Q. ¿Qué es un bote dividido (split pot)?**
+
+A. Un bote dividido es cuando dos o más jugadores empatan en el showdown con las mismas mejores cinco cartas, así que el dealer reparte las fichas por igual entre ellos en lugar de dárselas a un solo ganador. Es el mismo concepto que un "split" o un "chop".
+
 **Q. ¿Cuándo se divide el bote en el póker?**
 
 A. El bote se divide cuando dos o más jugadores tienen las mismas mejores cinco cartas en el showdown; las fichas se reparten a partes iguales entre ellos.
 
+**Q. ¿Cómo se divide el bote en el póker?**
+
+A. El dealer reparte las fichas por igual entre los jugadores empatados. Si el bote no se puede dividir de forma exacta, la ficha impar sobrante va al primer jugador empatado a la izquierda del botón. El palo nunca afecta al reparto, y cuando un jugador está all-in cada bote —principal y lateral— se divide por separado.
+
 **Q. ¿Se divide el bote si ambos jugadores tienen la misma mano?**
 
 A. Solo si las mejores cinco empatan por completo —la misma pareja con los mismos kickers, o la misma escalera, color o full—. Si algún kicker difiere, el kicker más alto gana todo el bote en lugar de dividirse.
+
+**Q. ¿Se divide el bote con un full, una escalera o dos parejas?**
+
+A. Solo cuando ambas manos son completamente idénticas. Dos fulls se dividen únicamente si coinciden el trío *y* la pareja —lo normal cuando el full está sobre la mesa—. Dos escaleras se dividen solo con la misma carta alta, y dos dobles parejas se dividen solo cuando coinciden ambas parejas y el kicker. En cualquier otro caso, la mano más alta se lleva todo el bote.
+
+**Q. ¿Dos parejas iguales dividen el bote?**
+
+A. Sí, si las mejores cinco cartas terminan siendo idénticas. Con dos parejas, el kicker (la quinta carta) suele romper el empate: si un jugador tiene un kicker más alto, gana todo el bote. Solo cuando las dos parejas *y* el kicker coinciden exactamente se divide el bote.
 
 **Q. ¿Qué significa "bote partido" (chopped pot) en el póker?**
 
@@ -179,7 +195,23 @@ A. Sí. Si tres o más jugadores tienen las mismas mejores cinco cartas, el bote
 
 **Q. ¿Cómo se gestionan los botes divididos cuando alguien está all-in?**
 
-A. El bote se separa en un bote principal y botes laterales; cada uno se adjudica o se parte por separado según la mejor mano entre los jugadores elegibles para ese bote concreto.
+A. El bote se separa en un bote principal y botes laterales (side pots); cada uno se adjudica o se parte por separado según la mejor mano entre los jugadores elegibles para ese bote concreto.
+
+**Q. ¿Cómo funciona un split pot con all-in o bote secundario?**
+
+A. Cada bote se resuelve por su cuenta. Si un all-in empata para el bote principal, ese bote se divide entre los jugadores empatados, mientras el bote secundario (side pot) lo pelean solo los que siguieron apostando. Un jugador all-in solo puede ganar o partir los botes a los que aportó fichas — nunca el bote secundario construido con fichas que no pudo igualar. Los detalles de cómo se forman están en la [guía de reglas del all-in y botes laterales](/es/blog/holdem-all-in-rules).
+
+**Q. ¿Cómo se calcula un bote secundario (side pot)?**
+
+A. Cada jugador solo puede ganar de un rival tanto como él mismo puso. Si A hace all-in por 100 y B y C apuestan 300 cada uno, el bote principal es 100 × 3 = 300 (los tres elegibles) y el bote secundario es 200 × 2 = 400 (solo B y C). Cada bote va después a la mejor mano entre los jugadores elegibles para él.
+
+**Q. ¿Quién es elegible para un bote secundario?**
+
+A. Solo los jugadores que pusieron fichas en ese bote secundario concreto —los que siguieron apostando después de que otro jugador quedara all-in—. Un jugador all-in es elegible solo para el bote principal (y cualquier bote secundario anterior al que sí aportó), nunca para un bote secundario formado con fichas que no pudo igualar. Cada bote se adjudica a la mejor mano entre sus propios jugadores elegibles.
+
+**Q. ¿Se puede ganar el bote principal y un bote secundario a la vez?**
+
+A. Sí. Un jugador con más fichas y la mejor mano puede ganar el bote principal y todos los botes secundarios para los que es elegible —llevándose todo (scoop)—. En cambio, un short stack all-in solo puede ganar el bote principal (y cualquier bote secundario anterior al que aportó); nunca cobra fichas que no igualó, por muy fuerte que sea su mano.
 
 **Q. ¿Un chop de torneo es lo mismo que un bote dividido?**
 
