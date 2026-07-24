@@ -5,23 +5,24 @@
 
 ---
 
-## ▶▶▶▶ 새 세션 START HERE (es 재경화 진행중 — ✅**규칙6·족보6·확률6·전략8 완료(4/6)** / 다음 = ★**토너먼트9**)
+## ▶▶▶▶ 새 세션 START HERE (es 재경화 — ✅**규칙6·족보6·확률6·전략8·토너먼트9 완료(5/6)** / 다음 = ★**용어6(마지막!)**)
 
-> 읽는 순서: `CLAUDE.md` → 이 블록 → `docs/es-hardening-workflow.md`(워크플로) → `docs/es-brief-strategy.md`(직전 전략8 브리프) → 방법론 상세는 바로 아래 "(방법론 참조) es 42편 재경화" 블록.
+> 읽는 순서: `CLAUDE.md` → 이 블록 → `docs/es-hardening-workflow.md`(워크플로) → `docs/es-brief-tournament.md`(직전 토너9 브리프) → 방법론 상세는 바로 아래 "(방법론 참조) es 42편 재경화" 블록.
 
-### ✅ 규칙6 `2570bae` + 족보6 `ba373dc` + 확률6 `b618804` + 전략8 `982b946` (전부 2026-07-24 배포)
-- 규칙6/족보6/확률6/전략8 = 26편. EN 마스터=뼈대, §13 EN verbatim(재계산X), tldr 2~3줄, masterUpdated=EN 실제날짜. 발행 총계 불변 57+448.
-- 족보6: EN FAQ 대량 포팅(tiebreak 8→15·split 8→17). 🔴 필라 Puzzle 3(quad kings 누락).
-- 확률6: §13 계산 최다. 🔴 equity pot-size 산식(100÷200=50%≠33%→coste÷bote final).
-- ★전략8: **간체서 잡은 §13 stale 오류 3건이 es에도 존재→EN 대조로 전부 교정**(position-play 88+→TT+·3bet A5s 30→28%·when-to-fold 80-86→80-85%). 🔴 strategy always-raise J-J서 끊김→A-A~10-10·3bet T8s→108s.
-- ★**교훈**(`docs/es-hardening-workflow.md`): 시드 얇으면 2회차 확장·네이티브 표현 교체. ★노이즈: split·proyecto=애자일 planning poker·ante=스웨이드·cbet=cabernet·3bet=22bet(베팅사이트). ★**작가 신규 추가 계산·구언어 stale §13은 QA 독립재산 필수**(equity 33%·전략8 3건 포착). ★c-bet은 하이픈 빼야(`cbet` 563 vs `c-bet` 0).
+### ✅ 규칙6 `2570bae` + 족보6 `ba373dc` + 확률6 `b618804` + 전략8 `982b946` + 토너먼트9 `f68c7ff` (전부 2026-07-24 배포)
+- 35편 완료. EN 마스터=뼈대, §13 EN verbatim(재계산X), tldr 2~3줄, masterUpdated=EN 실제날짜. 발행 총계 불변 57+448.
+- 🔴 교정 이력: 족보 필라 Puzzle 3(quad kings)·확률 equity 산식(100÷200≠33%)·전략 stale 3건(88+→TT+·A5s 28%·80-85%)+always-raise 10-10·3bet 108s.
+- ★토너9 라이브이벤트4=§14 EN verbatim 동기화(apt 위성 52→45·셔틀 2A→4A·korea 창작오류 제거·wpt 트로피명). **Brazalete=WSOP만**. 지역 대회 키워드 526개→`docs/keyword-bank/es-local-tournaments.md`(미래 현지 포스팅).
+- ★**핵심 교훈**(`docs/es-hardening-workflow.md`): ①시드 얇으면 2회차 확장·네이티브 표현 교체(cbet 하이픈 빼야 563 vs 0) ②노이즈: 애자일 planning poker·스웨이드 ante·cabernet cbet·22bet ③**작가 신규계산·구언어 stale §13은 QA 독립재산 필수** ④이벤트=§14 EN verbatim(재리서치 금지, 창작 제거).
+- ★EN 검토 후보(전 언어 소급): ept Gold Pass $/€·wpt 36場vs표12場·korea Jul10vs15·YTN 11K·all-in $15/$25행.
 
-### ▶ 다음 = 토너먼트9 (tournament 필라·tvc·icm·bubble·short-stack + 라이브이벤트4: apt-incheon·korea-marathon·wpt-australia·ept-barcelona)
-- 방법론 동일: Phase1 나 중앙 리서치 → Phase2 병렬 작가9(전략5=4~5편씩 QA) → Phase3 빌드·커밋. **§13**: 간체 토너9서 ICM 재귀 재산·버블팩터·M값존 검산. EN 마스터 실제값 이식.
-- ★★**라이브이벤트4(apt-incheon·korea-marathon·wpt-australia·ept-barcelona)는 §14 사실=EN 母稿 verbatim**(날짜·바이인·GTD·場館·결과 rakko/官網 숫자로 갱신 금지=번역이지 업데이트 아님). ★"Brazalete"는 WSOP만·WPT/EPT/APT=título/trofeo. EPT Barcelona=스페인 이벤트라 고관련(la Armada 앵글). 용어은행 §Torneos 참조.
-- ★EN 마스터 검토 후보(전 언어 소급): ept Gold Pass $/€ 통화·WPT 36場vs표12場·all-in $15/$25행.
-- lowfruits 시드: `torneo poker *`·`icm poker *`·`burbuja poker *`·`stack corto poker *`·`cash vs torneo poker *`. Country=Spain/Spanish.
-- es 클러스터 순서: 규칙6✅ → 족보6✅ → 확률6✅ → 전략8✅ → **토너먼트9** → 용어6.
+### ▶ 다음 = 용어6 (★마지막 클러스터! glossary 필라·straddle·rake·fish·cooler·bad-beat) → 완료 시 **es 42/42 완결**
+- 방법론 동일: Phase1 나 중앙 리서치 → Phase2 병렬 작가6+적대적 스페인 QA → Phase3 빌드·커밋.
+- ★★**§13 레드라인**(간체서 잡은 것): **bad-beat 四条=3번째 카테고리**("only straight flush beats quad aces"·"segunda más fuerte" 오역 주의) · **cooler set over set** 예시(0 outs 아님·유일 out=4번째 카드). es bad-beat는 2026-07-20 `7ad2ee5`에서 이미 quad aces 정정 완료였으니 QA 재확인.
+- ★glossary는 각 편=단일 용어 심화 vs glossary A-Z → **카니발 회피**(작가에 차별화 지시 + glossary 역링크).
+- 용어은행 §Glossary/Jerga: straddle 크루도·rake=comisión(★NO rastrillo)·fish/pez 병용·cooler 크루도(★NO refrigerador)·bad beat 크루도·spanglish farolear/tiltearse.
+- lowfruits 시드: `straddle poker *`·`rake poker *`·`fish poker *`·`cooler poker *`·`bad beat poker *`·`glosario poker *`. Country=Spain/Spanish.
+- es 클러스터 순서: 규칙6✅ → 족보6✅ → 확률6✅ → 전략8✅ → 토너먼트9✅ → **용어6**(마지막).
 
 ---
 

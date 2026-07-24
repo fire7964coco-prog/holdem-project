@@ -3,6 +3,17 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-24 (★ es(스페인어) 토너먼트9 클러스터 9편 경화 — es 재경화 5/6, 전략5+라이브이벤트4)
+
+> 전략8에 이어 토너먼트9. `f68c7ff`. 전략5=§13 EN verbatim + 라이브이벤트4=§14 사실 EN 母稿 동기화(재리서치 아님).
+- **전략5**: `holdem-tournament`(필라·EN FAQ 2포팅 7→12+PKO·ITM·cuánto dura) · `holdem-tournament-vs-cash-game`(EN FAQ 2포팅 8→13+diferencia·mejor·qué es cash) · `holdem-icm`(EN FAQ 1포팅+ITM=en premios) · `holdem-bubble`(EN FAQ 2포팅 7→9+estallar·bubble factor+07-19 동점자 델타) · `holdem-short-stack`(EN FAQ 2포팅 7→10+all-in or fold·shove·Nash).
+- **라이브이벤트4(§14 EN verbatim 동기화)**: ★`apt-incheon`(stale 사실 동기화, 간체와 동일: 위성 52→45[+$500 credits]·OnLive 22→12·T2 셔틀 2A→4A 2곳·K-ETA 면제 3곳·Mini Main KRW 900K) · ★`korea-marathon`(등록상태 Abierto→Cerrada·YTN 15→10 jul + **ES 창작오류 제거**: Palo Alto 호텔·50,000 fans→Stanford Stadium agotado) · `wpt-australia`(트로피명 generic→**Prime Perpetual Trophy + Mike Sexton Champions Cup**·NSW cap Sep2026 유지/Aug2027 $1,000·seat Prime→Championship) · `ept-barcelona`(§14 완전 일치, Gold Pass €10,300 스페인 일관·la Armada 앵글).
+- **리서치**: lowfruits 6파일(torneo 1244·icm 934·burbuja·short stack·push fold·diferencia cash torneo). ★torneo는 대부분 **지역 대회 찾기 검색**(casino barcelona/madrid) → 전략 필라와 의도 다름 → **526개 지역 키워드를 `docs/keyword-bank/es-local-tournaments.md`에 별도 저장**(미래 현지 이벤트 포스팅용, [[tournament-schedule-local-intent-keep]]). → `docs/es-brief-tournament.md`.
+- **적대적 QA 4병렬: 9편 §13/§14 독립 재산·0红**. ICM 재귀($38.39/$32.75/$28.86·deal $618/$485/$397·risk premium 48-50%)·버블팩터표(1.0/1.3/1.5/1.7/2.0→50/57/60/63/67%)·M존·WPT Seminole $4,592,000·이벤트4 사실 EN 逐格 대조. ★**"Brazalete"=WSOP만**(4편 전부 título/trofeo, brazalete 0회)·창작 제거 확인.
+- **🟠 보강 1건**: tournament push/fold 규칙에 "15 BB부터 주모드" 티어 EN 패리티 복원.
+- **★EN 검토 후보(전 언어 소급)**: ept Gold Pass $/€·wpt 36場vs표12場·korea "Jul 10 vs 15"·YTN "11K vs 10K"(전부 EN 내부 불일치, ES는 verbatim 미러). all-in $15/$25행도 여전히 후보.
+- masterUpdated=EN 실제날짜(korea 07-20·나머지 07-19). 발행 총계 불변 57 blog+448 intl. **다음=용어6(마지막! glossary·straddle·rake·fish·cooler·bad-beat)** → 완료 시 es 42/42 완결.
+
 ## 2026-07-24 (★ es(스페인어) 전략8 클러스터 8편 경화 — es 재경화 4/6, 최다 8편·§13 오류 3건 교정)
 
 > 확률6에 이어 전략8(최다). `982b946`. ★간체 전략8서 잡았던 §13 오류 3건이 es에도 stale로 존재 → EN 대조로 전부 교정.
