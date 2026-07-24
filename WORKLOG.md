@@ -3,6 +3,24 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-24 (★★★ es(스페인어) 용어6 클러스터 6편 경화 → es 42/42 완결 = EN 유니버스 4번째 풀 경화 언어)
+
+> 토너먼트9에 이어 마지막 용어6. `dd4c087`. **이로써 es 42편 전체 경화 완료** = JA·zh-hant·zh 이어 EN 마스터 유니버스 4번째 풀 경화 언어.
+- **6편**: `holdem-glossary`(필라·EN 델타[stripe 90+·Money 4행·Situaciones 3행]+FAQ3 딥다이브 역링크로 카니발 회피) · `holdem-straddle`(EN FAQ 1포팅+★**"matar la ciega"** 삽입) · `holdem-rake`(EN FAQ 3포팅+**rakeback 3종** contribuido/repartido/progresivo) · `holdem-fish`(FAQ2 tiburón/ballena+문화 뉘앙스) · `holdem-cooler`(EN FAQ 2포팅+**"ducha de agua fría"**) · `holdem-bad-beat`(이미 앞섬, FAQ2 tiltearse/variance).
+- **★현지글 정독 리서치**(사용자 지적 반영, 슬랭 클러스터 필수): WebSearch로 poker-red·GipsyTeam·888.es·CasinoBarcelona 정독 → **matar la ciega**(straddle 스페인 실사용, 용어은행에 없던 것!)·**ducha de agua fría**(cooler)·**rakeback 3종**·fish 문화뉘앙스. → `docs/es-brief-glossary.md §현지글 정독`.
+- **★★§13 레드라인 적대적 QA 독립 재산·전수 통과**: cooler set over set(7-7-7-Q-J vs J-J-J-Q-7) **1-out 로직 정확**(case 7→四条, 0 outs 아님)·bad-beat quad aces=**3번째 카테고리·only straight flush**(Mabuchi 2008 A♦→四条A vs Phillips royal 10-J-Q-K-A), **"segunda más fuerte" 오류 부재 grep 확인**. es는 `7ad2ee5`서 이미 quad aces 정정됐던 게 유지됨.
+- **🔴 1건 교정**: cooler desc 168→≤160 트림(§11.7). 🟠 straddle tldr 4→3문장.
+- **리서치**: lowfruits 7파일(straddle 629·rake·fish 460[칩/플라크 오염]·cooler·pez·bad-beat 703). 지역 대회 키워드는 토너9의 keyword-bank에 이미 축적.
+- 발행 총계 불변 57 blog+448 intl.
+
+### ★★★ 2026-07-24 세션 총괄: es 42편 6클러스터 순차 경화 완결
+- **커밋**: 규칙6 `2570bae`·족보6 `ba373dc`·확률6 `b618804`·전략8 `982b946`·토너먼트9 `f68c7ff`·용어6 `dd4c087` (+ docs 커밋 6).
+- **방식**: EN 마스터=뼈대 + 편당 lowfruits(사용자 export) 파싱 + 현지 WebSearch → 병렬 작가 + 적대적 스페인 네이티브 QA → 빌드·커밋. 클러스터마다 자동배포.
+- **★§13 안전망 실증**: 구언어(간체)가 잡았던 stale 오류가 es에도 그대로 존재 → EN 대조 지시로 대량 사전교정(전략8 3건: 88+→TT+·A5s 28%·80-85%). QA가 추가 포착(족보 Puzzle 3·확률 equity 산식·전략 always-raise/T8s·용어 cooler desc). 배포본 §13 오류 0.
+- **★이벤트 §14 안전망**: 라이브이벤트4=EN 母稿 verbatim 동기화(재리서치 금지), ES가 갖고 있던 **stale 사실+창작 details**(korea Palo Alto 호텔·50k fans) 제거.
+- **★lowfruits 워크플로 확립**: 시드 얇으면 2회차 확장·네이티브 표현 교체·노이즈 함정(애자일 planning poker·스웨이드 ante·cabernet cbet·22bet·F1 rake·칩플라크 fish). 지역 대회 키워드는 별도 뱅크(미래 현지 포스팅).
+- **★EN 마스터 검토 후보(전 언어 소급)**: ept Gold Pass $/€·wpt 36場vs표12場·korea Jul10vs15·YTN 11K·all-in $15/$25행(전부 EN 내부 불일치).
+
 ## 2026-07-24 (★ es(스페인어) 토너먼트9 클러스터 9편 경화 — es 재경화 5/6, 전략5+라이브이벤트4)
 
 > 전략8에 이어 토너먼트9. `f68c7ff`. 전략5=§13 EN verbatim + 라이브이벤트4=§14 사실 EN 母稿 동기화(재리서치 아님).

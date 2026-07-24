@@ -5,24 +5,24 @@
 
 ---
 
-## ▶▶▶▶ 새 세션 START HERE (es 재경화 — ✅**규칙6·족보6·확률6·전략8·토너먼트9 완료(5/6)** / 다음 = ★**용어6(마지막!)**)
+## ▶▶▶▶ 새 세션 START HERE (★★★ **es 42/42 완결(6/6)** — EN 유니버스 4번째 풀 경화 언어 / 다음 방향 후보 아래)
 
-> 읽는 순서: `CLAUDE.md` → 이 블록 → `docs/es-hardening-workflow.md`(워크플로) → `docs/es-brief-tournament.md`(직전 토너9 브리프) → 방법론 상세는 바로 아래 "(방법론 참조) es 42편 재경화" 블록.
+> 읽는 순서: `CLAUDE.md` → 이 블록 → (참고) `docs/es-hardening-workflow.md`·`docs/es-brief-*.md`(6클러스터 브리프)·`docs/keyword-bank/es-local-tournaments.md`.
 
-### ✅ 규칙6 `2570bae` + 족보6 `ba373dc` + 확률6 `b618804` + 전략8 `982b946` + 토너먼트9 `f68c7ff` (전부 2026-07-24 배포)
-- 35편 완료. EN 마스터=뼈대, §13 EN verbatim(재계산X), tldr 2~3줄, masterUpdated=EN 실제날짜. 발행 총계 불변 57+448.
-- 🔴 교정 이력: 족보 필라 Puzzle 3(quad kings)·확률 equity 산식(100÷200≠33%)·전략 stale 3건(88+→TT+·A5s 28%·80-85%)+always-raise 10-10·3bet 108s.
-- ★토너9 라이브이벤트4=§14 EN verbatim 동기화(apt 위성 52→45·셔틀 2A→4A·korea 창작오류 제거·wpt 트로피명). **Brazalete=WSOP만**. 지역 대회 키워드 526개→`docs/keyword-bank/es-local-tournaments.md`(미래 현지 포스팅).
-- ★**핵심 교훈**(`docs/es-hardening-workflow.md`): ①시드 얇으면 2회차 확장·네이티브 표현 교체(cbet 하이픈 빼야 563 vs 0) ②노이즈: 애자일 planning poker·스웨이드 ante·cabernet cbet·22bet ③**작가 신규계산·구언어 stale §13은 QA 독립재산 필수** ④이벤트=§14 EN verbatim(재리서치 금지, 창작 제거).
-- ★EN 검토 후보(전 언어 소급): ept Gold Pass $/€·wpt 36場vs표12場·korea Jul10vs15·YTN 11K·all-in $15/$25행.
+### ✅✅✅ es 42/42 완결·배포 (2026-07-24, 6클러스터 순차)
+- **커밋**: 규칙6 `2570bae`·족보6 `ba373dc`·확률6 `b618804`·전략8 `982b946`·토너먼트9 `f68c7ff`·용어6 `dd4c087`. WORKLOG 2026-07-24 "세션 총괄" 상세.
+- **방식**: EN 마스터=뼈대 + 편당 lowfruits(사용자 export) 파싱 + 현지 WebSearch → 병렬 작가 + 적대적 스페인 네이티브 QA → 빌드·커밋. §13 EN verbatim(재계산X). 발행 총계 불변 57 blog+448 intl.
+- **★§13 안전망 실증**: 구언어(간체) stale 오류가 es에도 존재 → EN 대조 지시로 사전 대량교정(전략8 3건). QA가 추가 포착(족보 Puzzle 3·확률 equity 산식·전략 always-raise/T8s·cooler desc). 배포본 §13 오류 0.
+- **★이벤트 §14 안전망**: 라이브이벤트4=EN 母稿 verbatim(재리서치 금지), ES가 갖던 stale 사실+**창작 details 제거**(korea Palo Alto 호텔·50k fans).
+- **★lowfruits 워크플로 확립**(`docs/es-hardening-workflow.md`): 시드 얇으면 2회차 확장·네이티브 표현 교체·노이즈 함정(애자일 planning poker·스웨이드 ante·cabernet cbet·22bet·F1 rake·칩플라크 fish). 현지 슬랭은 WebSearch 정독 필수(matar la ciega 등).
+- **★★EN 마스터 검토 후보(전 언어 소급 — 우선 처리 권장)**: ept Gold Pass **$/€**·wpt **36場vs표12場**·korea **Jul10 vs Jul15**·YTN **11K vs 10K**·all-in **$15/$25행**(전부 EN 내부 불일치, 전 언어가 verbatim 미러 중). EN에서 고치면 전 언어 동기화.
+- **🎁 미래 자산**: `docs/keyword-bank/es-local-tournaments.md`(526개 지역 대회 키워드) — 번역 트랙 끝난 뒤 **"스페인 지역 대회 가이드/일정" 신규 현지 포스팅**용(사용자 확정: 지역 홀덤대회 포스팅이 검색실적 좋음=비대체 홈유입 자산).
 
-### ▶ 다음 = 용어6 (★마지막 클러스터! glossary 필라·straddle·rake·fish·cooler·bad-beat) → 완료 시 **es 42/42 완결**
-- 방법론 동일: Phase1 나 중앙 리서치 → Phase2 병렬 작가6+적대적 스페인 QA → Phase3 빌드·커밋.
-- ★★**§13 레드라인**(간체서 잡은 것): **bad-beat 四条=3번째 카테고리**("only straight flush beats quad aces"·"segunda más fuerte" 오역 주의) · **cooler set over set** 예시(0 outs 아님·유일 out=4번째 카드). es bad-beat는 2026-07-20 `7ad2ee5`에서 이미 quad aces 정정 완료였으니 QA 재확인.
-- ★glossary는 각 편=단일 용어 심화 vs glossary A-Z → **카니발 회피**(작가에 차별화 지시 + glossary 역링크).
-- 용어은행 §Glossary/Jerga: straddle 크루도·rake=comisión(★NO rastrillo)·fish/pez 병용·cooler 크루도(★NO refrigerador)·bad beat 크루도·spanglish farolear/tiltearse.
-- lowfruits 시드: `straddle poker *`·`rake poker *`·`fish poker *`·`cooler poker *`·`bad beat poker *`·`glosario poker *`. Country=Spain/Spanish.
-- es 클러스터 순서: 규칙6✅ → 족보6✅ → 확률6✅ → 전략8✅ → 토너먼트9✅ → **용어6**(마지막).
+### ▶▶ 다음 방향 후보 (es 완결 — 사용자와 합의)
+- **(A) EN 마스터 검토 소급**(위 5건 EN 내부 불일치 정리 → 전 언어 동기화). 원래 "EN부터가 맞는데 es 끝나고" 사용자 의사 → **지금이 그 타이밍**.
+- **(B) 타 언어 재경화**: pt·de·id (EN 07-19 stale·[[rehardening-stale-link-drift]]·간체/es가 잡은 §13 stale 3건 동일 존재 가능성 → 간체 교정치+EN 대조 지시 재사용). lowfruits는 pt/de/id도 되나(rakko는 JA·간체만) 현지 서치 병행.
+- **(C) 신규 현지 포스팅**: 스페인 지역 대회 가이드(keyword-bank 활용) 등 비대체 자산.
+- **(D) KO 본진 강화**(GSC 성과=ko 기준·족보 카니발·GEO).
 
 ---
 
