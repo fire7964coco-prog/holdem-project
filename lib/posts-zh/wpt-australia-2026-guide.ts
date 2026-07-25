@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "WPT Australia 2026：9 月 10–30 日，The Star Sydney。两个旗舰赛：AUD $1,500 WPT Prime（9 月 17–22 日）和 AUD $5,000 WPT Championship（9 月 24–30 日）。现场卫星赛 AUD 约 $255 起。冠军额外获得 $10,400 WPT World Championship 席位。必须年满 18 岁、成为 Star Club 会员，并遵守 smart-casual 着装要求。",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-07-24",
-  masterUpdated: "2026-07-19",
+  updated: "2026-07-25",
+  masterUpdated: "2026-07-25",
   readTime: "14 分钟",
   emoji: "🦘",
   layout: "tournament-guide",
@@ -116,7 +116,7 @@ WPT Australia 2026 重回 The Star Sydney，规模是 WPT 历史上最大的一�
 
 ---
 
-## WPT Australia 2026 完整赛程——从 AUD $460 到 $10,000 的所有关键赛事
+## WPT Australia 2026 赛程亮点——12 场重点赛事，从 AUD $460 到 $10,000
 
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.25);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -137,7 +137,7 @@ WPT Australia 2026 重回 The Star Sydney，规模是 WPT 历史上最大的一�
 
 </div>
 
-> **共 36 场赛事。** 根据 NSW 法规，GTD 保证奖池不对外公布，但根据历史人数，整个赛事预计总额在 AUD $10M+。仅 2025 年冠军赛就产生了 AUD $3,000,000。
+> **以上 12 场为重点赛事——完整赛程共 36 场赛事**（见 [starpoker.com.au](https://www.starpoker.com.au/wpt-australia)）。根据 NSW 法规，GTD 保证奖池不对外公布，但根据历史人数，整个赛事预计总额在 AUD $10M+。仅 2025 年冠军赛就产生了 AUD $3,000,000。
 
 ---
 

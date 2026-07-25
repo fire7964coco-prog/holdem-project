@@ -5,11 +5,11 @@ export const POST: Post = {
   seoTitle: "¿No te da para el EPT Barcelona? De $0.50 al Main de €5,300",
   title: "EPT Barcelona 2026 — Guía completa del jugador: calendario, buy-ins y cómo clasificar",
   desc: "EPT Barcelona 2026 — 16–29 ago, Casino Barcelona. Del Power Path de $0.50 al Main de €5,300. Calendario, buy-ins, hoteles y consejos para novatos.",
-  tldr: "El EPT Barcelona 2026 es del 16 al 29 de agosto en Casino Barcelona. Buy-in del Main Event: €5,300. La vía online más barata: Power Path desde $0.50 → Gold Pass (Main de €5,300 + 8 noches de hotel + €690 de gastos). Necesitas una cuenta de PokerStars Live y un pasaporte en regla. Reserva hotel cuanto antes: agosto es plena temporada alta.",
+  tldr: "El EPT Barcelona 2026 es del 16 al 29 de agosto en Casino Barcelona. Buy-in del Main Event: €5,300. La vía online más barata: Power Path desde $0.50 → Gold Pass (Main de €5,300 + side event de €1,100 + 8 noches de hotel + €690 de gastos). Necesitas una cuenta de PokerStars Live y un pasaporte en regla. Reserva hotel cuanto antes: agosto es plena temporada alta.",
   category: "tournament",
   date: "2026-06-17",
-  updated: "2026-07-24",
-  masterUpdated: "2026-07-19",
+  updated: "2026-07-25",
+  masterUpdated: "2026-07-25",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🃏",
@@ -114,7 +114,7 @@ Gana el Paso 4 y recibirás uno de estos tres Power Passes:
 |:---|:---:|:---|
 | Bronze Pass | ~$530 | Créditos para torneos online |
 | Silver Pass | ~$2,300 | Entradas a eventos en vivo de gama media |
-| ==**Gold Pass**== | ==g:**~€10,300**== | ==g:Main de €5,300 + side event de €1,100 + 8 noches de hotel + gastos== |
+| ==**Gold Pass**== | ==g:**~$10,300** (USD)== | ==g:Main de €5,300 + side event de €1,100 + 8 noches de hotel + €690 de gastos== |
 
 ==g:El **Gold Pass** es el que quieres.== PokerStars aspira a que al menos el 25% del field del Main Event sean clasificados por satélite — así que los asientos son de verdad.
 
@@ -180,7 +180,7 @@ Gana el Paso 4 y recibirás uno de estos tres Power Passes:
 | Concepto | Coste estimado |
 |:---|:---:|
 | Buy-ins del Power Path para llegar al Paso 4 | **$11–$55** |
-| El Gold Pass cubre: entrada al Main + side event + 8 noches | ==g:✅ Incluido (~€10,300 de valor)== |
+| El Gold Pass cubre: entrada al Main + side event + 8 noches | ==g:✅ Incluido (~$10,300 de valor)== |
 | Vuelos (no siempre incluidos) | €150–€400 |
 | Comida y días extra | €400–€600 |
 | ==**Total de tu bolsillo**== | ==g:**~€550–€1,000**== |
@@ -403,7 +403,7 @@ A. Sí. Bajo la normativa española de casinos, cualquier transacción en efecti
 
 **Q. Si gano un Gold Pass del Power Path, ¿el hotel se reserva automáticamente?**
 
-A. PokerStars te contactará después de que ganes el pass. El Gold Pass suele incluir: ==g:entrada al Main de €5,300 + crédito de €1,100 en side event + 8 noches de hotel + gastos diarios==. Coordinarás la reserva con el equipo de PokerStars Live — tienen soporte dedicado.
+A. PokerStars te contactará después de que ganes el pass. El Gold Pass suele incluir: ==g:entrada al Main de €5,300 + crédito de €1,100 en side event + 8 noches de hotel + €690 de gastos==. Coordinarás la reserva con el equipo de PokerStars Live — tienen soporte dedicado.
 
 **Q. ¿Es Barcelona segura para jugadores de póker que llevan grandes cantidades de efectivo?**
 

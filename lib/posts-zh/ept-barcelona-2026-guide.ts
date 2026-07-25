@@ -5,11 +5,11 @@ export const POST: Post = {
   seoTitle: "打不起 EPT 巴塞罗那？从 $0.50 冲上 €5,300 主赛的路线",
   title: "EPT Barcelona 2026 完全参赛指南 — 赛程、买入与线上打包资格全攻略",
   desc: "EPT Barcelona 2026 于 8 月 16–29 日在 Casino Barcelona 举行，主赛事买入 €5,300。最便宜的线上路线是从 $0.50 起步的 Power Path 阶梯，一路冲上覆盖主赛席位和酒店的 Gold Pass。完整赛程、各档买入、赌场附近酒店和新手参赛攻略，都在这篇里讲清楚了。",
-  tldr: "EPT Barcelona 2026 是 8 月 16–29 日，地点 Casino Barcelona。主赛事买入 €5,300。最便宜的线上路线：Power Path 从 $0.50 起步 → Gold Pass（€5,300 主赛 + 8 晚酒店 + €690 花销）。你需要一个 PokerStars Live 账号和一本有效护照。酒店要早订——8 月是旺季。",
+  tldr: "EPT Barcelona 2026 是 8 月 16–29 日，地点 Casino Barcelona。主赛事买入 €5,300。最便宜的线上路线：Power Path 从 $0.50 起步 → Gold Pass（€5,300 主赛 + €1,100 副赛 + 8 晚酒店 + €690 花销）。你需要一个 PokerStars Live 账号和一本有效护照。酒店要早订——8 月是旺季。",
   category: "tournament",
   date: "2026-06-17",
-  updated: "2026-07-24",
-  masterUpdated: "2026-07-19",
+  updated: "2026-07-25",
+  masterUpdated: "2026-07-25",
   keepImagesInBody: true,
   readTime: "16 分钟",
   emoji: "🃏",
@@ -39,7 +39,7 @@ export const POST: Post = {
 ---
 
 > **快速答案**
-> EPT Barcelona 2026 是 ==**8 月 16–29 日**== 在 Casino Barcelona。主赛事：==**€5,300**==。最便宜的路线：Power Path 从 $0.50 起步 → ==g:Gold Pass（€5,300 主赛席位 + 8 晚酒店 + €690 花销）==。你需要一个 PokerStars Live 账号和一本有效护照。==r:酒店现在就订——8 月是旺季。==
+> EPT Barcelona 2026 是 ==**8 月 16–29 日**== 在 Casino Barcelona。主赛事：==**€5,300**==。最便宜的路线：Power Path 从 $0.50 起步 → ==g:Gold Pass（€5,300 主赛席位 + €1,100 副赛 + 8 晚酒店 + €690 花销）==。你需要一个 PokerStars Live 账号和一本有效护照。==r:酒店现在就订——8 月是旺季。==
 
 ---
 
@@ -114,7 +114,7 @@ PokerStars 专门设计了 Power Path，就是要 ==挡住职业牌手直接买�
 |:---|:---:|:---|
 | Bronze Pass | ~$530 | 线上锦标赛点数 |
 | Silver Pass | ~$2,300 | 中档线下赛事入场 |
-| ==**Gold Pass**== | ==g:**~€10,300**== | ==g:€5,300 主赛 + €1,100 副赛 + 8 晚酒店 + 花销== |
+| ==**Gold Pass**== | ==g:**~$10,300**（USD）== | ==g:€5,300 主赛 + €1,100 副赛 + 8 晚酒店 + €690 花销== |
 
 ==g:你想要的是 **Gold Pass**。== PokerStars 的目标是让至少 25% 的主赛事牌手来自卫星赛晋级者——所以这些席位是实打实的。
 
@@ -180,7 +180,7 @@ PokerStars 专门设计了 Power Path，就是要 ==挡住职业牌手直接买�
 | 项目 | 估算花销 |
 |:---|:---:|
 | 打到 Step 4 的 Power Path 买入 | **$11–$55** |
-| Gold Pass 覆盖：主赛入场 + 副赛 + 8 晚酒店 | ==g:✅ 已包含（~€10,300 价值）== |
+| Gold Pass 覆盖：主赛入场 + 副赛 + 8 晚酒店 | ==g:✅ 已包含（~$10,300（USD）价值）== |
 | 机票（不一定包含） | €150–€400 |
 | 餐饮与额外天数 | €400–€600 |
 | ==**自掏腰包合计**== | ==g:**~€550–€1,000**== |
@@ -403,7 +403,7 @@ A. 是的。根据西班牙赌场法规，任何超过一定门槛的现金交�
 
 **Q. 如果我赢了 Power Path 的 Gold Pass，酒店是自动订好的吗？**
 
-A. 你赢下通行证之后，PokerStars 会联系你。Gold Pass 通常包含：==g:€5,300 主赛入场 + €1,100 副赛点数 + 8 晚酒店 + 每日花销==。你会和 PokerStars Live 团队一起协调预订——他们有专门的客服支持。
+A. 你赢下通行证之后，PokerStars 会联系你。Gold Pass 通常包含：==g:€5,300 主赛入场 + €1,100 副赛点数 + 8 晚酒店 + €690 花销==。你会和 PokerStars Live 团队一起协调预订——他们有专门的客服支持。
 
 **Q. 对携带大量现金的牌手来说，巴塞罗那安全吗？**
 

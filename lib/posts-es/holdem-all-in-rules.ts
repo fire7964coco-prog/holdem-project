@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ir all-in es apostar todas las fichas que tienes delante. Solo puedes ganar de cada rival lo que hayas igualado (el bote principal); las fichas extra de los stacks más grandes forman un side pot que no puedes tocar. Un all-in menor que una subida completa NO reabre la apuesta para quienes ya actuaron.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-07-24",
-  masterUpdated: "2026-07-19",
+  updated: "2026-07-25",
+  masterUpdated: "2026-07-25",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "♠",
@@ -63,7 +63,7 @@ Hay dos formas válidas:
 
 ![Showdown de un all-in en Texas Hold'em — una mesa con K♠ 10♣ 7♦ 4♥ 2♣ y las fichas separadas en bote principal y side pot etiquetados](/images/holdem-all-in-declare.webp)
 
-==r:Nunca empujes una sola ficha sin decir nada — el dealer la contará solo por el valor de esa ficha, no como tu stack completo.== Declara siempre "all-in" en voz alta o mueve todo el stack de una vez.
+==r:Nunca empujes una sola ficha sobredimensionada sin decir nada — si hay una apuesta por delante, el dealer la cuenta como un call (y si no hay apuesta pendiente, solo por el valor de esa ficha), nunca como tu stack completo.== Declara siempre "all-in" en voz alta o mueve todo el stack de una vez.
 
 ---
 
@@ -166,7 +166,7 @@ Incrementos combinados: $4 + $7 = **$11** — alcanza el umbral de subida mínim
 |:---|:---:|:---|:---|
 | $14 (+$4) | $18 (+$4) | $8 — por debajo de $10 | ❌ No |
 | $14 (+$4) | $21 (+$7) | $11 — alcanza los $10 | ✅ Sí |
-| $15 (+$5) | $25 (+$10) | $15 — alcanza los $10 | ✅ Sí |
+| $15 (+$5) | $24 (+$9) | $14 — alcanza los $10 | ✅ Sí |
 
 </div>
 

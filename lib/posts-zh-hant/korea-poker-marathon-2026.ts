@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "韓國秋季頂級馬拉松（春川 10/25、JTBC 首爾 11/1、Garmin Run 11/15）正好落在最舒服的跑步天氣。仁川機場旁的 Paradise City 賭場全年開放現金桌——僅限外國人、離航廈十分鐘。撲克錦標賽（APT 仁川 8/7–16、APT 濟州 9/25–10/7）也在同一個秋季窗口——一趟行程兩邊都吃得到。",
   category: "tournament",
   date: "2026-07-23",
-  updated: "2026-07-23",
-  masterUpdated: "2026-07-20",
+  updated: "2026-07-25",
+  masterUpdated: "2026-07-25",
   keepImagesInBody: true,
   readTime: "14 分鐘",
   emoji: "🏃",
@@ -153,17 +153,17 @@ export const POST: Post = {
 九月抵達的人，可以跑 ==**YTN 首爾旅遊馬拉松**==，起點在 ==**首爾廣場**==（서울광장）——就在市政廳正前方，背景是德壽宮與市中心天際線。
 
 - 日期：2026 年 9 月 6 日，早上 7:30 起跑
-- 距離：半馬 · 10K
+- 距離：半馬 · 11K
 - 起點：首爾廣場（市政廳一帶）
 - 主辦：YTN
 - 網站：[run.ytn.co.kr](http://run.ytn.co.kr)
-- 報名：6/17 – 7/15（已截止）
+- 報名：6/17 – 7/10（已截止——7/15 是退費截止日，非報名截止日）
 
 提醒：韓國的暑熱在八月達到頂點。九月仍偏暖（20–28°C），濕度到月底才緩和。在這種條件下，半馬比全馬好駕馭。
 
 ---
 
-## 韓國撲克錦標賽：2026 年 10–12 月
+## 韓國撲克錦標賽：2026 年 9–12 月
 
 這裡賽曆就變得有意思了。有三個撲克賽事系列在韓國場館開打，時間點正好落在跟馬拉松同一個秋季窗口——其中一個還跟 JTBC 首爾直接重疊。
 
@@ -290,7 +290,7 @@ export const POST: Post = {
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">9/6</td>
       <td style="padding:9px 12px">🏃 YTN 首爾旅遊馬拉松</td>
       <td style="padding:9px 12px">首爾廣場</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">半馬 · 10K · 7:30 · 報名已截止</td>
+      <td style="padding:9px 12px;color:var(--muted-foreground)">半馬 · 11K · 7:30 · 報名已截止</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">9/25–10/7</td>

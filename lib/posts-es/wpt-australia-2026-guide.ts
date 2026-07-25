@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "WPT Australia 2026: 10–30 sep, The Star Sydney. Dos eventos estrella: AUD $1,500 WPT Prime (17–22 sep) y AUD $5,000 WPT Championship (24–30 sep). Satélites presenciales desde AUD ~$255. El campeón se lleva además un asiento de $10,400 al WPT World Championship. Obligatorio ser mayor de 18 años, socio del Star Club y respetar el código de vestimenta smart-casual.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-07-24",
-  masterUpdated: "2026-07-19",
+  updated: "2026-07-25",
+  masterUpdated: "2026-07-25",
   readTime: "14 min",
   emoji: "🦘",
   layout: "tournament-guide",
@@ -116,7 +116,7 @@ Si estás fuera de Australia y quieres calentar con satélites online antes de v
 
 ---
 
-## Calendario completo del WPT Australia 2026 — todos los eventos clave desde AUD $460 hasta $10,000
+## Eventos destacados del WPT Australia 2026 — 12 eventos clave desde AUD $460 hasta $10,000
 
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.25);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -137,7 +137,7 @@ Si estás fuera de Australia y quieres calentar con satélites online antes de v
 
 </div>
 
-> **36 eventos en total.** Las bolsas de premios garantizadas (GTD) no se publicitan según la normativa de Nueva Gales del Sur (NSW), pero se estima que el festival completo supera los AUD $10M según la afluencia histórica. Solo el Championship de 2025 generó AUD $3,000,000.
+> **Los 12 eventos de arriba son los destacados — el calendario completo tiene 36 eventos** (ver [starpoker.com.au](https://www.starpoker.com.au/wpt-australia)). Las bolsas de premios garantizadas (GTD) no se publicitan según la normativa de Nueva Gales del Sur (NSW), pero se estima que el festival completo supera los AUD $10M según la afluencia histórica. Solo el Championship de 2025 generó AUD $3,000,000.
 
 ---
 

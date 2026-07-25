@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Los grandes maratones de otoño de Corea (Chuncheon 25 oct, JTBC Seúl 1 nov, Garmin Run 15 nov) coinciden con el clima ideal para correr. El casino Paradise City, junto al aeropuerto de Incheon, ofrece cash games todo el año — solo extranjeros, a 10 min de la terminal. Un viaje cubre ambas cosas.",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-07-24",
-  masterUpdated: "2026-07-20",
+  updated: "2026-07-25",
+  masterUpdated: "2026-07-25",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏃",
@@ -67,7 +67,7 @@ El argumento no es complicado. Es cuestión de fechas y ubicación.
 | Carrera | Fecha | Distancia | Ubicación | Registro extranjeros | Estado |
 |---|---|---|---|---|---|
 | Maratón Internacional Dong-A de Seúl | Mar 2026 | Completo, 10K | Seúl | [dongamarathon.com](https://www.dongamarathon.com) | Finalizado en 2026 |
-| ==**YTN Seoul Tour Marathon**== | ==**6 sep**== | Medio, 10K | Seoul Plaza | [run.ytn.co.kr](http://run.ytn.co.kr) | Cerrado el 10 jul |
+| ==**YTN Seoul Tour Marathon**== | ==**6 sep**== | Medio, 11K | Seoul Plaza | [run.ytn.co.kr](http://run.ytn.co.kr) | Cerrado el 10 jul |
 | ==g:**Maratón de Chuncheon**== | ==g:**25 oct**== | ==g:Completo, 10K== | ==g:Chuncheon== | ==g:[chuncheonmarathon.com](https://www.chuncheonmarathon.com)== | ==g:Inscripción cerrada (agotado)== |
 | ==**JTBC Seoul Marathon**== | ==**1 nov**== | Completo, 10K | Seúl (Sangam) | [worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon) | Cupo extranjeros (se llena pronto — consulta) |
 | Garmin Run Korea | 15 nov | Medio, 10K | Goyang | [runable.me](http://runable.me/product/18977?comp=18962) | Cerrado (reg. fue 1–3 jul) |
@@ -153,17 +153,17 @@ Goyang está a ~50 min del centro de Seúl en metro (línea 3, dirección Daehwa
 Para quienes lleguen en septiembre, el ==**YTN Seoul Tour Marathon**== sale de ==**Seoul Plaza**== (서울광장) — justo enfrente del Ayuntamiento, con el palacio de Deoksugung y el skyline del centro como telón de fondo.
 
 - Fecha: 6 de septiembre de 2026, salida a las 7:30
-- Distancias: Medio · 10K
+- Distancias: Medio · 11K
 - Salida: Seoul Plaza (zona del Ayuntamiento)
 - Organizador: YTN
 - Web: [run.ytn.co.kr](http://run.ytn.co.kr)
-- Registro: 17 jun – 15 jul (cerrado)
+- Registro: 17 jun – 10 jul (cerrado — el 15 jul era la fecha límite de reembolso, no el cierre de inscripción)
 
 Nota: el calor del verano coreano toca techo en agosto. Septiembre sigue siendo caluroso (20–28 °C), con la humedad aflojando hacia final de mes. La distancia de medio es más manejable que un completo en estas condiciones.
 
 ---
 
-## Torneos de póker en Corea: oct–dic 2026
+## Torneos de póker en Corea: sep–dic 2026
 
 Aquí es donde el calendario se pone interesante. Tres festivales de póker se celebran en sedes coreanas en la mismísima ventana de otoño que los maratones — y uno se solapa directamente con el JTBC de Seúl.
 
@@ -290,7 +290,7 @@ Para el panorama completo de torneos (el APT Incheon se disputa del 7 al 16 de a
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">6 sep</td>
       <td style="padding:9px 12px">🏃 YTN Seoul Tour Marathon</td>
       <td style="padding:9px 12px">Seoul Plaza</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">Medio · 10K · 7:30 · Reg. cerrado</td>
+      <td style="padding:9px 12px;color:var(--muted-foreground)">Medio · 11K · 7:30 · Reg. cerrado</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">25 sep–7 oct</td>

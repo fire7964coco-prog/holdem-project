@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "韩国最好的秋季马拉松（春川 10 月 25 日、JTBC 首尔 11 月 1 日、Garmin Run 11 月 15 日）正好赶上完美的跑步天气。仁川机场旁的 Paradise City Casino 全年开放现金局——只对外国人开放，离航站楼 10 分钟。一趟行程两样都能拿下。",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-07-24",
-  masterUpdated: "2026-07-20",
+  updated: "2026-07-25",
+  masterUpdated: "2026-07-25",
   keepImagesInBody: true,
   readTime: "14 分钟",
   emoji: "🏃",
@@ -67,7 +67,7 @@ export const POST: Post = {
 | 赛事 | 日期 | 距离 | 地点 | 外国人报名 | 状态 |
 |---|---|---|---|---|---|
 | Dong-A 首尔国际马拉松 | 2026 年 3 月 | 全程、10K | 首尔 | [dongamarathon.com](https://www.dongamarathon.com) | 2026 已结束 |
-| ==**YTN 首尔 Tour Marathon**== | ==**9 月 6 日**== | 半程、10K | Seoul Plaza | [run.ytn.co.kr](http://run.ytn.co.kr) | 7 月 10 日截止 |
+| ==**YTN 首尔 Tour Marathon**== | ==**9 月 6 日**== | 半程、11K | Seoul Plaza | [run.ytn.co.kr](http://run.ytn.co.kr) | 7 月 10 日截止 |
 | ==g:**春川马拉松**== | ==g:**10 月 25 日**== | ==g:全程、10K== | ==g:春川== | ==g:[chuncheonmarathon.com](https://www.chuncheonmarathon.com)== | ==g:报名截止（售罄）== |
 | ==**JTBC 首尔马拉松**== | ==**11 月 1 日**== | 全程、10K | 首尔（上岩） | [worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon) | 外国人名额（早满·请确认） |
 | Garmin Run Korea | 11 月 15 日 | 半程、10K | 高阳 | [runable.me](http://runable.me/product/18977?comp=18962) | 已截止（报名为 7 月 1–3 日） |
@@ -153,17 +153,17 @@ export const POST: Post = {
 对 9 月抵达的人来说，==**YTN 首尔 Tour Marathon**== 从 ==**Seoul Plaza**==（서울광장）出发——就在市政厅正前方，背景是德寿宫和市中心天际线。
 
 - 日期：2026 年 9 月 6 日，7:30 出发
-- 距离：半程 · 10K
+- 距离：半程 · 11K
 - 起点：Seoul Plaza（市政厅一带）
 - 主办方：YTN
 - 网站：[run.ytn.co.kr](http://run.ytn.co.kr)
-- 报名：6 月 17 日 – 7 月 15 日（已截止）
+- 报名：6 月 17 日 – 7 月 10 日（已截止——7 月 15 日是退款截止日，并非报名截止日）
 
 注意：韩国的暑热在 8 月达到顶峰。9 月仍然偏热（20–28°C），湿度到月底才缓下来。在这种条件下，半程比全程更好扛。
 
 ---
 
-## 韩国扑克赛事：2026 年 10–12 月
+## 韩国扑克赛事：2026 年 9–12 月
 
 赛程有意思的地方就在这里。三场扑克节在韩国场馆举办，正好落在和马拉松同一个秋季窗口——而且其中一场直接和 JTBC 首尔撞上。
 
@@ -290,7 +290,7 @@ export const POST: Post = {
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">9 月 6 日</td>
       <td style="padding:9px 12px">🏃 YTN 首尔 Tour Marathon</td>
       <td style="padding:9px 12px">Seoul Plaza</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">半程 · 10K · 7:30 · 报名已截止</td>
+      <td style="padding:9px 12px;color:var(--muted-foreground)">半程 · 11K · 7:30 · 报名已截止</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">9 月 25 日–10 月 7 日</td>

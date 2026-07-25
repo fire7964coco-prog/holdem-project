@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "WPT 澳洲 2026：9 月 10–30 日，雪梨 The Star。兩場旗艦賽——AUD $1,500 WPT Prime（9/17–22）與 AUD $5,000 WPT 澳洲冠軍賽（9/24–30）。現場衛星賽從 AUD ~$255 起。冠軍另得價值 $10,400 的 WPT 世界冠軍賽（拉斯維加斯 Wynn）席位。須年滿 18 歲、加入 Star Club、遵守 smart-casual 著裝規定。",
   category: "tournament",
   date: "2026-07-23",
-  updated: "2026-07-23",
-  masterUpdated: "2026-07-19",
+  updated: "2026-07-25",
+  masterUpdated: "2026-07-25",
   keepImagesInBody: true,
   readTime: "14 分鐘",
   emoji: "🦘",
@@ -117,7 +117,7 @@ WPT 澳洲 2026 重回雪梨 The Star，這是 WPT 史上規模最大的一屆�
 
 ---
 
-## WPT 澳洲 2026 完整賽程——從 AUD $460 到 $10,000 的重點賽事
+## 賽程亮點 — 12 場重點賽事（從 AUD $460 到 $10,000）
 
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.25);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -138,7 +138,7 @@ WPT 澳洲 2026 重回雪梨 The Star，這是 WPT 史上規模最大的一屆�
 
 </div>
 
-> **總計 36 場賽事。** 依 NSW 法規，各賽事不對外公告 GTD 保證獎池，但依歷年參與人數估計，整屆賽事上看 AUD $10M+。光是 2025 年的冠軍賽就創造了 AUD $3,000,000 的獎池。
+> **以上 12 場為重點賽事 — 完整賽程共 36 場**（見 [starpoker.com.au](https://www.starpoker.com.au/wpt-australia)）。依 NSW 法規，各賽事不對外公告 GTD 保證獎池，但依歷年參與人數估計，整屆賽事上看 AUD $10M+。光是 2025 年的冠軍賽就創造了 AUD $3,000,000 的獎池。
 
 ---
 

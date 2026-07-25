@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "韓国の秋の主要マラソン(春川10/25、JTBCソウル11/1、ガーミンラン11/15)は、走るのに最高の気候と重なります。仁川空港すぐそばのパラダイスシティ・カジノは通年でキャッシュゲームを開催(外国人専用・ターミナルから10分)。一度の旅で両方を味わえます。",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-07-20",
-  masterUpdated: "2026-07-19",
+  updated: "2026-07-25",
+  masterUpdated: "2026-07-25",
   keepImagesInBody: true,
   readTime: "14分",
   emoji: "🏃",
@@ -67,7 +67,7 @@ export const POST: Post = {
 | レース | 日程 | 距離 | 場所 | 外国人エントリー | ステータス |
 |---|---|---|---|---|---|
 | 東亜(トンア)ソウル国際マラソン | 2026年3月 | フル, 10K | ソウル | [dongamarathon.com](https://www.dongamarathon.com) | 2026は終了 |
-| ==**YTNソウルツアーマラソン**== | ==**9/6**== | ハーフ, 10K | ソウル広場 | [run.ytn.co.kr](http://run.ytn.co.kr) | 受付終了 |
+| ==**YTNソウルツアーマラソン**== | ==**9/6**== | ハーフ, 11K | ソウル広場 | [run.ytn.co.kr](http://run.ytn.co.kr) | 7/10受付終了 |
 | ==g:**春川(チュンチョン)マラソン**== | ==g:**10/25**== | ==g:フル, 10K== | ==g:春川== | ==g:[chuncheonmarathon.com](https://www.chuncheonmarathon.com)== | ==r:受付終了(定員)== |
 | ==**JTBCソウルマラソン**== | ==**11/1**== | フル, 10K | ソウル(上岩/サンアム) | [worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon) | 外国人枠受付(早期完売・要確認) |
 | ガーミンラン韓国 | 11/15 | ハーフ, 10K | 高陽(コヤン) | [runable.me](http://runable.me/product/18977?comp=18962) | 受付終了(7/1〜3) |
@@ -153,17 +153,17 @@ export const POST: Post = {
 9月に到着する人には、==**YTNソウルツアーマラソン**==があります。スタートは==**ソウル広場**==(서울광장)——市庁舎のすぐ前で、徳寿宮とダウンタウンのスカイラインを背景にします。
 
 - 日程: 2026年9月6日、午前7:30スタート
-- 距離: ハーフ · 10K
+- 距離: ハーフ · 11K
 - スタート: ソウル広場(市庁エリア)
 - 主催: YTN
 - ウェブ: [run.ytn.co.kr](http://run.ytn.co.kr)
-- 受付: 6/17〜7/15(終了)
+- 受付: 6/17〜7/10(終了 — 7/15は返金期限であって、エントリー締切ではありません)
 
 注意: 韓国の夏の暑さは8月がピーク。9月もまだ暖かく(20〜28°C)、湿度は月末に向けて和らぎます。このコンディションでは、フルよりハーフのほうが無理なく走れます。
 
 ---
 
-## 韓国のポーカートーナメント: 2026年10〜12月
+## 韓国のポーカートーナメント: 2026年9〜12月
 
 ここからがカレンダーの面白いところ。3つのポーカーフェスティバルが、マラソンとまったく同じ秋の窓の中、韓国の会場で開催されます——しかも1つはJTBCソウルと直接重なります。
 
@@ -290,7 +290,7 @@ export const POST: Post = {
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">9/6</td>
       <td style="padding:9px 12px">🏃 YTNソウルツアーマラソン</td>
       <td style="padding:9px 12px">ソウル広場</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">ハーフ · 10K · 7:30 · 受付終了</td>
+      <td style="padding:9px 12px;color:var(--muted-foreground)">ハーフ · 11K · 7:30 · 受付終了</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">9/25–10/7</td>
