@@ -7,7 +7,7 @@
 
 ## ▶▶▶▶ 새 세션 START HERE (다음 작업 = ★**LATAM 보충 패스 — 멕시코부터**. es 42/42 Spain 베이스는 완결)
 
-> 읽는 순서: `CLAUDE.md` → 이 블록 → `docs/es-hardening-workflow.md`(지역편차 그라디언트) → `docs/es-brief-*.md`(6클러스터 Spain 브리프, LATAM 신규분과 대조용).
+> 읽는 순서: `CLAUDE.md` → 이 블록 → ★**`docs/session-log-2026-07-24_25.md`(직전 세션 대화·결정·지시 전문 — 재부팅으로 맥락 날아가도 이걸로 복원)** → `docs/es-hardening-workflow.md`(지역편차 그라디언트) → `docs/es-brief-*.md`(6클러스터 Spain 브리프, LATAM 신규분과 대조용) → `docs/local-voice/es-mexico.md`(멕시코 현지 voice).
 
 ### ✅ 곁가지 완료 (2026-07-25) — EN 마스터 내부 불일치 12건 정리 + 전 언어 소급
 - Fable5 정밀 재검수(웹검증)로 EN 4편(ept·wpt·korea·all-in) 모순 12건 교정(`973144b`) → es·ja·zh·zh-hant 16편 소급(`3f2cbe0`). ★Gold Pass=**$10,300 USD**(es·zh·ja가 €로 잘못 현지화했던 것 되돌림)·YTN Jul10/11K·wpt 재라벨·all-in 3행 $24. 교훈=[[event-guide-consistency-review]](정확성≠내부일관성). 잔여 판단건: ept 예산·Step4·Chuncheon 시제·이미지 64KB(미처리).
