@@ -24,6 +24,12 @@
 - ★**범위(사용자와 합의)**: 추천=슬랭 우선(용어6·전략8=LATAM 차이 최대). 확률6은 LATAM≈스페인이라 스킵 가능. 순서는 슬랭→나머지.
 - ★**LATAM 특화 신호 주의**: **flor**(=중남미 flush, es 족보6서 이미 발견)·**dompe**(홈게임)·지역 운영사·멕시코/아르헨 어휘. Spain 데이터엔 약했던 것들.
 - ★멕시코=스페인어권 최대 시장. Core 듀오(ES+MX)가 그라디언트 최소기준이었음.
+- ★★**번역 웹서치 철저히 + 현지 voice 파일 축적**([[translation-websearch-local-voice]], 사용자 2번째 강조). MX voice=`docs/local-voice/es-mexico.md`(cooler=**mano maldita**·shark=**talacheros/los que saben**·tilt=**calientón**·cuate·draw="traigo/voy con proyecto"). 클러스터마다 멕시코 WebSearch(Stake.mx·PokerStars LATAM·codigopoker) 정독→이 파일에 추가.
+
+### 🔵 진행 상황 (2026-07-25, LATAM 멕시코 패스 착수)
+- 용어6 멕시코 export 시작(사용자 Country=Mexico/Spanish). ★**straddle_MX 처리 완료: Spain 대비 신규 2개뿐=head-term 저변이 확증**(진단 결과). 슬랭 변이는 head-term(straddle/rake)보다 **표현(cooler/tilt/shark)에** 있음.
+- **다음(새 세션 이어받기)**: `fish poker` / `cooler poker` / `bad beat poker` MX부터(변이 클 것: mano maldita 등). dedup은 Spain 브리프(`docs/es-brief-glossary.md`) 대비. Mexico xlsx는 사용자가 `_MX`로 제공.
+- 변이 큰 편만 LATAM FAQ 추가+멕시코 색(mano maldita·cuate) 반영. straddle은 소급 불필요(변이 미미).
 
 ### ✅ (완료) es 42/42 Spain 베이스 — 아래 "(완료) es 42/42 완결" 블록 참조. 6클러스터 전부 배포됨.
 
