@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "WPT Australia 2026: Sep 10–30, The Star Sydney. Two flagships: AUD $1,500 WPT Prime (Sep 17–22) and AUD $5,000 WPT Championship (Sep 24–30). On-site satellites from AUD ~$255. Winner gets extra $10,400 WPT World Championship seat. Must be 18+, Star Club member, and smart-casual dress enforced.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-07-19",
+  updated: "2026-07-25",
   readTime: "14 min",
   emoji: "🦘",
   layout: "tournament-guide",
@@ -115,7 +115,7 @@ If you're outside Australia and want to warm up with online satellites before fl
 
 ---
 
-## WPT Australia 2026 Full Schedule — All Key Events From AUD $460 to $10,000
+## WPT Australia 2026 Schedule Highlights — 12 Key Events From AUD $460 to $10,000
 
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.25);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -136,7 +136,7 @@ If you're outside Australia and want to warm up with online satellites before fl
 
 </div>
 
-> **36 events total.** GTD prize pools are not advertised under NSW regulations, but the full festival is estimated at AUD $10M+ based on historical turnouts. The 2025 Championship alone generated AUD $3,000,000.
+> **The 12 events above are festival highlights — the full schedule runs 36 events total** (see [starpoker.com.au](https://www.starpoker.com.au/wpt-australia)). GTD prize pools are not advertised under NSW regulations, but the full festival is estimated at AUD $10M+ based on historical turnouts. The 2025 Championship alone generated AUD $3,000,000.
 
 ---
 

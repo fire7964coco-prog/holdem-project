@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Korea's top autumn marathons (Chuncheon Oct 25, JTBC Seoul Nov 1, Garmin Run Nov 15) align with perfect running weather. Paradise City Casino near Incheon Airport runs year-round cash games — foreigners only, 10 min from the terminal. One trip covers both.",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-07-20",
+  updated: "2026-07-25",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏃",
@@ -152,17 +152,17 @@ Goyang is ~50 min from central Seoul by subway (Line 3, Daehwa direction toward 
 For those arriving in September, the ==**YTN Seoul Tour Marathon**== runs from ==**Seoul Plaza**== (서울광장) — directly in front of City Hall, with Deoksugung Palace and the downtown skyline as the backdrop.
 
 - Date: September 6, 2026, 7:30am start
-- Distances: Half · 10K
+- Distances: Half · 11K
 - Start: Seoul Plaza (City Hall area)
 - Organizer: YTN
 - Website: [run.ytn.co.kr](http://run.ytn.co.kr)
-- Registration: Jun 17 – Jul 15 (closed)
+- Registration: Jun 17 – Jul 10 (closed — Jul 15 was the refund deadline, not the entry close)
 
 Note: Korea's summer heat peaks in August. September is still warm (20–28°C), with humidity easing toward month-end. The half distance is more manageable than a full in these conditions.
 
 ---
 
-## Korea Poker Tournaments: Oct–Dec 2026
+## Korea Poker Tournaments: Sep–Dec 2026
 
 This is where the calendar gets interesting. Three poker festivals run at Korean venues in the exact same autumn window as the marathons — and one overlaps directly with JTBC Seoul.
 
@@ -289,7 +289,7 @@ For the full tournament picture (APT Incheon runs August 7–16 with $2.7M GTD),
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">Sep 6</td>
       <td style="padding:9px 12px">🏃 YTN Seoul Tour Marathon</td>
       <td style="padding:9px 12px">Seoul Plaza</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">Half · 10K · 7:30am · Reg. closed</td>
+      <td style="padding:9px 12px;color:var(--muted-foreground)">Half · 11K · 7:30am · Reg. closed</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">Sep 25–Oct 7</td>

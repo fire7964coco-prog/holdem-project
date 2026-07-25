@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Going all-in means betting every chip you have. You can only win what you matched from each opponent (the main pot). Extra bets from bigger stacks form a side pot you cannot win. An all-in for less than a full raise does NOT reopen the betting for players who already acted.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-07-19",
+  updated: "2026-07-25",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "♠",
@@ -62,7 +62,7 @@ Two valid ways:
 
 ![Texas Hold'em all-in showdown — a K♠ 10♣ 7♦ 4♥ 2♣ board with chips separated into a labeled main pot and side pot](/images/holdem-all-in-declare.webp)
 
-==r:Never push a single chip forward without saying anything — the dealer counts it as just that chip's value, not your full stack.== Always declare "all-in" out loud, or move your entire stack at once.
+==r:Never push a single oversized chip forward silently — facing a bet, the dealer counts it as a call (with no bet pending, as just that chip's value), never your full stack.== Always declare "all-in" out loud, or move your entire stack at once.
 
 ---
 
@@ -165,7 +165,7 @@ Combined increments: $4 + $7 = **$11** — that meets the $10 minimum raise thre
 |:---|:---:|:---|:---|
 | $14 (+$4) | $18 (+$4) | $8 — below $10 | ❌ No |
 | $14 (+$4) | $21 (+$7) | $11 — meets $10 | ✅ Yes |
-| $15 (+$5) | $25 (+$10) | $15 — meets $10 | ✅ Yes |
+| $15 (+$5) | $24 (+$9) | $14 — meets $10 | ✅ Yes |
 
 </div>
 
