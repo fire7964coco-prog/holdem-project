@@ -9,6 +9,10 @@
 
 > 읽는 순서: `CLAUDE.md` → 이 블록 → `docs/es-hardening-workflow.md`(지역편차 그라디언트) → `docs/es-brief-*.md`(6클러스터 Spain 브리프, LATAM 신규분과 대조용).
 
+### ✅ 곁가지 완료 (2026-07-25) — EN 마스터 내부 불일치 12건 정리 + 전 언어 소급
+- Fable5 정밀 재검수(웹검증)로 EN 4편(ept·wpt·korea·all-in) 모순 12건 교정(`973144b`) → es·ja·zh·zh-hant 16편 소급(`3f2cbe0`). ★Gold Pass=**$10,300 USD**(es·zh·ja가 €로 잘못 현지화했던 것 되돌림)·YTN Jul10/11K·wpt 재라벨·all-in 3행 $24. 교훈=[[event-guide-consistency-review]](정확성≠내부일관성). 잔여 판단건: ept 예산·Step4·Chuncheon 시제·이미지 64KB(미처리).
+- → 이제 원래 다음 작업(LATAM 보충)으로 복귀.
+
 ### 🚀 한 줄 (사용자 확정 2026-07-24 밤)
 **es는 42편 전부 Country=Spain으로만 뽑았음 → 계획했던 지역편차 그라디언트(ES+MX 전클러스터 필수, 슬랭은 +AR/CO)의 MX/AR/CO 층을 안 뺐음.** 내일 **Country=Mexico로 2차 패스**를 돌려 Spain에 없던 **LATAM 신규 winnable만 추출→해당 편에 FAQ 추가→QA→재배포**.
 
