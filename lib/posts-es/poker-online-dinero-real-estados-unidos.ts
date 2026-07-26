@@ -53,7 +53,7 @@ En seis, y en ningún otro: **Nueva Jersey, Nevada, Pensilvania, Míchigan, Dela
 | Delaware | BetRivers — es la única |
 | Virginia Occidental | BetRivers — es la única |
 
-:::tip[Si vives en California, Texas, Florida o Nueva York, la respuesta corta es que todavía no puedes jugar online por dinero real, por mucha publicidad que veas. No es tu caso el raro — es donde vive la mayoría de nosotros. Salta al mapa de los 50 estados para ver qué sí tienes cerca.]:::
+:::tip[Si vives en California, Texas, Florida o Nueva York, la respuesta corta es que todavía no puedes jugar online por dinero real, por mucha publicidad que veas. No es tu caso el raro — es donde vive la mayoría de nosotros. Si estás en Texas, además, hay clubes privados que funcionan con otro modelo — lo explico aparte.]:::
 
 :::note[DraftKings aparece en muchas listas como sala de póker, pero en realidad solo ofrece "Electric Poker": un torneo exprés de tres jugadores donde el premio se sortea antes de repartir las cartas. No hay mesas de cash ni torneos normales de varias mesas, así que no lo cuentes como alternativa si buscas jugar en serio.]:::
 
@@ -68,6 +68,8 @@ Porque el acuerdo que une a los seis estados —el **MSIGA**— solo da permiso;
 La consecuencia práctica sorprende a todo el mundo: **un jugador de Nevada no puede sentarse con uno de Delaware o Virginia Occidental.** En Nevada la única sala es WSOP.com; en Delaware y Virginia Occidental, la única es BetRivers. No existe ninguna marca con licencia en ambos lados, así que esos jugadores nunca se cruzan.
 
 Lo que sí funciona igual en todas partes: **Nueva Jersey, Míchigan y Pensilvania** están en prácticamente todas las redes. Si vives en uno de esos tres, tienes acceso a las mesas más llenas del país sin importar qué app abras.
+
+En **Texas** el camino es otro: no hay salas online ni casinos, pero sí [clubes de socios que cobran por hora](/es/blog/poker-en-texas "thumb:/images/poker-en-texas-hero.webp") en vez de rake.
 
 Si vives en Nueva York, este es justo el motivo por el que a mucha gente le sale a cuenta cruzar a [Nueva Jersey](/es/blog/poker-en-nueva-jersey "thumb:/images/poker-en-nueva-jersey-hero.webp"): al otro lado del río el póker online sí tiene licencia. Los detalles del caso neoyorquino están en la [guía de póker en Nueva York](/es/blog/poker-en-nueva-york "thumb:/images/poker-en-nueva-york-hero.webp").
 
