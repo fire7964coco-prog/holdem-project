@@ -42,7 +42,7 @@ No era verdad. Nada de lo que le frenaba era un requisito real — solo estaba m
 
 ## ¿En qué estados puedo jugar póker online por dinero real?
 
-En seis, y en ningún otro: **Nueva Jersey, Nevada, Pensilvania, Míchigan, Delaware y Virginia Occidental**. Solo ahí existe una sala con licencia estatal, sujeta a un regulador que puede obligarla a pagarte. En el resto del país no existe ninguna sala con licencia estatal. Lo que sí verás anunciado son dos cosas distintas que conviene no confundir: los sitios **offshore**, que operan sin licencia de tu estado, y los **sweepstakes**, que funcionan con monedas virtuales bajo otra figura legal y que cada vez más estados están prohibiendo.
+En seis, y en ningún otro: **Nueva Jersey, Nevada, Pensilvania, Míchigan, Delaware y Virginia Occidental**. Pero la lista de estados es la parte fácil — lo que decide si puedes jugar de verdad es **qué marca tiene licencia en el tuyo**, y eso es lo que casi ninguna guía te dice. Solo ahí existe una sala con licencia estatal, sujeta a un regulador que puede obligarla a pagarte. En el resto del país lo que verás anunciado son dos cosas distintas que conviene no confundir: los sitios **offshore**, que operan sin licencia de tu estado, y los **sweepstakes**, que funcionan con monedas virtuales bajo otra figura legal y que cada vez más estados están prohibiendo.
 
 | Estado | Dónde puedes jugar |
 |---|---|
@@ -71,7 +71,7 @@ Lo que sí funciona igual en todas partes: **Nueva Jersey, Míchigan y Pensilvan
 
 En **Texas** el camino es otro: no hay salas online ni casinos, pero sí [clubes de socios que cobran por hora](/es/blog/poker-en-texas "thumb:/images/poker-en-texas-hero.webp") en vez de rake. Y en **Florida** hay salas por todo el sur del estado, con una particularidad: [ahí se juega póker desde los 18](/es/blog/poker-en-florida "thumb:/images/poker-en-florida-hero.webp"). **California** tiene 78 cardrooms y una regla propia: [la ley prohíbe cobrar rake por porcentaje](/es/blog/poker-en-california "thumb:/images/poker-en-california-hero.webp").
 
-Si vives en Nueva York, este es justo el motivo por el que a mucha gente le sale a cuenta cruzar a [Nueva Jersey](/es/blog/poker-en-nueva-jersey "thumb:/images/poker-en-nueva-jersey-hero.webp"): al otro lado del río el póker online sí tiene licencia. Los detalles del caso neoyorquino están en la [guía de póker en Nueva York](/es/blog/poker-en-nueva-york "thumb:/images/poker-en-nueva-york-hero.webp").
+Si vives en Nueva York, este es justo el motivo por el que a mucha gente le conviene cruzar a [Nueva Jersey](/es/blog/poker-en-nueva-jersey "thumb:/images/poker-en-nueva-jersey-hero.webp"): al otro lado del río el póker online sí tiene licencia. Los detalles del caso neoyorquino están en la [guía de póker en Nueva York](/es/blog/poker-en-nueva-york "thumb:/images/poker-en-nueva-york-hero.webp").
 
 :::tip[Si tu problema es que a tu hora no hay mesas, el estado no es lo que tienes que cambiar — es la marca. Una sala con cuatro estados en su red tiene tráfico a las 3 de la mañana; una con tres, no siempre.]:::
 
@@ -160,7 +160,7 @@ Solo funciona dentro del estado | Funciona en todas partes, y por eso es tentado
 
 :::
 
-Que un sitio offshore acepte tu depósito no lo hace legal, y desde luego no garantiza que puedas sacar tus ganancias. La comodidad que ofrece es exactamente el precio del riesgo.
+Que un sitio offshore acepte tu depósito no lo hace legal, y mucho menos garantiza que puedas sacar tus ganancias. La comodidad que ofrece es exactamente el precio del riesgo.
 
 :::readnext[Sigue leyendo]
 /es/blog/poker-legal-estados-unidos | ¿Dónde es legal jugar póker en EE. UU.? | /images/poker-legal-estados-unidos-hero.webp
@@ -207,7 +207,7 @@ A. En casi ninguna. Durante 2026 la mayoría de las salas dejaron de aceptarlas;
 
 ---
 
-:::note[Juega por diversión, no para resolver un problema de dinero. Si sientes que estás perdiendo el control, la Línea Nacional de Ayuda para el Juego Problemático atiende gratis y las 24 horas, con intérprete en español: **1-800-522-4700** (también 1-800-MY-RESET).]:::
+:::note[Juega por diversión, no para resolver un problema de dinero. Si sientes que estás perdiendo el control, la Línea Nacional de Ayuda para el Juego Problemático atiende gratis y las 24 horas, con intérprete en español: **1-800-MY-RESET** (1-800-697-3738).]:::
 
 ## Fuentes oficiales
 
@@ -223,7 +223,7 @@ Nada de lo que has leído aquí sale de una lista de afiliados: todo está en do
 - **Qué es exactamente Electric Poker**: [DraftKings](https://support.draftkings.com/dk/en-us/what-is-draftkings-electric-poker?id=kb_article_view&sysparm_article=KB0010489)
 - **Plazos y mínimos de retiro**: [Política de retiros de WSOP](https://www.wsoponline.com/legal/withdrawal-policy/)
 
-:::note[Las leyes de juego cambian rápido, y más en este momento. Si vas a mover dinero, dedica dos minutos a abrir el enlace de tu estado antes de fiarte de cualquier guía — incluida esta.]:::
+:::note[Las leyes de juego cambian rápido, y más en este momento. Si vas a mover dinero, dedica dos minutos a abrir el enlace de tu estado antes de confiar en cualquier guía — incluida esta.]:::
 
 ## En resumen
 

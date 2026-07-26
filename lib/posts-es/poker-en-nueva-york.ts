@@ -42,7 +42,7 @@ No es que buscara mal. Es que ==en los cinco condados de Nueva York no existe ni
 
 ## ¿Hay alguna sala de póker en la ciudad de Nueva York?
 
-No, ninguna. Y no es por falta de casinos: el **29 de abril de 2026**, Resorts World New York City —en South Ozone Park, Queens— inauguró **242 mesas de juego en vivo**, las primeras de la historia de la ciudad. Blackjack, crap, baccarat, ruleta. ==Ni una sola mesa de póker.==
+No, ninguna. Y no es por falta de casinos: a finales de abril de 2026, Resorts World New York City —en South Ozone Park, Queens— inauguró **242 mesas de juego en vivo**, las primeras de la historia de la ciudad. Blackjack, craps, baccarat, ruleta. ==Ni una sola mesa de póker.==
 
 No es un olvido temporal. En diciembre de 2025 el estado aprobó tres licencias de casino para la zona: la de Resorts World en Queens, Hard Rock en Willets Point y Bally's en el Bronx. Las dos últimas son obra nueva y no abrirán hasta cerca de 2030 — y **ninguna ha anunciado sala de póker**.
 
@@ -61,11 +61,13 @@ Subiendo al norte. Estas son las salas cuyo funcionamiento está confirmado en l
 | Seneca Niagara | Niagara Falls | 21 |
 | Tioga Downs | Nichols (sala pequeña) | 21 |
 
-**Turning Stone es la referencia del estado**: 32 mesas, abierta las 24 horas, y el único destino del noreste que celebra **dos series del WSOP Circuit al año**. Si tu plan es jugar en serio o entrar a un torneo grande, ese es el sitio.
+**Turning Stone es la referencia del estado**: 32 mesas, abierta las 24 horas, y sede habitual del **WSOP Circuit** en el noreste. Si tu plan es jugar en serio o entrar a un torneo grande, ese es el sitio.
 
 :::note[Ojo con dos casinos que aparecen en muchas listas: **Akwesasne Mohawk** y **Seneca Allegany** no tienen sala de póker. Lo que ofrecen son juegos de casino con nombre parecido —como el Ultimate Texas Hold'em— donde juegas contra la casa, no contra otros jugadores. No hagas el viaje esperando una mesa.]:::
 
-Desde Manhattan, la más cercana es **Resorts World Catskills**: unas 90 millas, alrededor de hora y media o dos en carro. Es el viaje que hace la mayoría cuando quiere jugar el mismo día.
+Desde Manhattan, la más cercana dentro del estado es **Resorts World Catskills**: unas 90 millas, alrededor de hora y media o dos en carro.
+
+Y conviene no olvidar la tercera dirección: **cruzando a Pensilvania** hay salas grandes a distancia parecida o incluso menor, como Wind Creek Bethlehem o Parx. Si vives en el sur de la ciudad, a veces sale mejor ir hacia allá que subir al norte.
 
 ## ¿Puedo jugar póker online en Nueva York?
 
@@ -77,7 +79,7 @@ Si vives en la ciudad y quieres jugar online hoy, la vía legal es cruzar a **Nu
 
 ## ¿Y los casinos sweepstakes?
 
-Se acabaron, y esto es reciente. El **5 de diciembre de 2025** se firmó la ley S5935-A (Capítulo 605), que prohíbe los casinos de sweepstakes en Nueva York **con efecto inmediato**. Las multas van de $10,000 a $100,000 por infracción.
+Se acabaron, y esto es reciente. En **diciembre de 2025** se firmó la ley S5935-A (Capítulo 605), que prohíbe los casinos de sweepstakes en Nueva York **con efecto inmediato**, con multas que llegan a $100,000 por infracción.
 
 Lo importante para nosotros: ==el texto de la ley nombra el póker de forma expresa== dentro de los juegos prohibidos. No es una zona gris ni una interpretación — está escrito.
 
@@ -136,7 +138,7 @@ Los datos de esta guía salen de páginas oficiales y del texto de las leyes, no
 
 **Q. ¿Hay casinos con póker en la ciudad de Nueva York?**
 
-A. No. Resorts World New York City, en Queens, abrió 242 mesas de casino en abril de 2026 —las primeras de la historia de la ciudad— pero ninguna es de póker. Los otros dos casinos aprobados, en Willets Point y el Bronx, no abrirán hasta cerca de 2030 y tampoco han anunciado sala de póker.
+A. No. Resorts World New York City, en Queens, estrenó 242 mesas de casino en abril de 2026 —las primeras de la historia de la ciudad— pero ninguna es de póker. Los otros dos casinos aprobados, en Willets Point y el Bronx, no abrirán hasta cerca de 2030 y tampoco han anunciado sala de póker.
 
 **Q. ¿Cuál es la sala de póker más cercana a Manhattan?**
 
@@ -168,7 +170,7 @@ A. Si quieres jugar online, es la opción legal más cercana: allí el póker on
 
 ---
 
-:::note[Juega por diversión, no para resolver un problema de dinero. Si sientes que estás perdiendo el control, la Línea Nacional de Ayuda para el Juego Problemático atiende gratis y las 24 horas, con intérprete en español: **1-800-522-4700** (también 1-800-MY-RESET).]:::
+:::note[Juega por diversión, no para resolver un problema de dinero. Si sientes que estás perdiendo el control, la Línea Nacional de Ayuda para el Juego Problemático atiende gratis y las 24 horas, con intérprete en español: **1-800-MY-RESET** (1-800-697-3738).]:::
 
 ## En resumen
 

@@ -34,7 +34,7 @@ No es un truco ni una zona gris. ==Es exactamente como funciona la ley.== Nueva 
 ### Lo esencial en números
 
 :::stripe
-6 | marcas con póker autorizado por el estado
+5 | redes de póker distintas en el estado
 3 | de los 9 casinos de Atlantic City tienen póker
 21 | años, sin excepción
 3% | de retención estatal sobre lo que ganas
@@ -48,19 +48,18 @@ Esa última parte es la que casi nadie lee y la que más te conviene: **buena pa
 
 ## ¿Qué apps de póker funcionan en Nueva Jersey?
 
-Seis, y no todas las que anuncian. El estado publica una lista de sitios autorizados, y **cualquier página que no esté ahí no tiene permiso para ofrecerte póker**. Estas son las que sí:
+Menos de las que anuncian, y varias comparten mesa entre sí. El estado publica una lista de sitios autorizados, y **cualquier página que no esté ahí no tiene permiso para ofrecerte póker**. Estas son las redes reales:
 
 | Marca | Bajo la licencia de |
 |---|---|
 | **Borgata Poker** · **BetMGM Poker** · **partypoker** | Borgata (misma casa) |
 | **WSOP.com** | Tropicana |
-| **PokerStars NJ** | Resorts |
-| **FanDuel Poker** | Golden Nugget |
+| **PokerStars** · **FanDuel Poker** | Resorts / Golden Nugget (desde 2026 comparten mesa) |
 | **DraftKings** | Resorts (recién llegado) |
 
-:::note[Dos avisos que te ahorran una descarga inútil. **BetRivers sí opera en Nueva Jersey, pero solo casino — aquí no tiene póker.** Y **DraftKings, aunque acaba de llegar (julio de 2026), solo ofrece "Electric Poker"**: un torneo exprés de tres jugadores, sin mesas de cash ni torneos normales de varias mesas. Si buscas jugar en serio, las salas completas son las otras cinco.]:::
+:::note[Dos avisos que te ahorran una descarga inútil. **BetRivers sí opera en Nueva Jersey, pero solo casino — aquí no tiene póker.** Y **DraftKings, aunque acaba de llegar (julio de 2026), solo ofrece "Electric Poker"**: un torneo exprés de tres jugadores, sin mesas de cash ni torneos normales de varias mesas. Si buscas jugar en serio, quédate con las cuatro redes completas de arriba.]:::
 
-## ¿Contra quién juego? No solo contra jerseyanos
+## ¿Contra quién juego? No solo contra gente de Nueva Jersey
 
 Aquí está la ventaja de jugar desde Nueva Jersey. Existe un acuerdo entre estados —el **MSIGA**— que permite juntar jugadores de varios sitios en la misma mesa, y ==Nueva Jersey está en prácticamente todas las redes.==
 
@@ -160,7 +159,7 @@ A. Sí, siempre que estés físicamente dentro de Nueva Jersey mientras juegas. 
 
 **Q. ¿Qué apps tienen póker de verdad en Nueva Jersey?**
 
-A. Borgata Poker, BetMGM Poker, partypoker, WSOP.com, PokerStars NJ y FanDuel Poker son salas completas. DraftKings llegó en julio de 2026 pero solo con "Electric Poker", un formato exprés de tres jugadores sin mesas de cash. BetRivers opera en el estado, pero solo con casino.
+A. Hay cuatro redes completas: la de Borgata (que incluye BetMGM y partypoker), WSOP.com, y PokerStars —que desde 2026 comparte mesa con FanDuel—. DraftKings llegó en julio de 2026 pero solo con "Electric Poker", un formato exprés de tres jugadores sin mesas de cash. BetRivers opera en el estado, pero solo con casino.
 
 **Q. ¿Puedo abrir cuenta sin Seguro Social?**
 
@@ -188,7 +187,7 @@ A. Sí. Harrah's Atlantic City recibe el WSOP Circuit del 13 al 24 de agosto de 
 
 ---
 
-:::note[Juega por diversión, no para resolver un problema de dinero. Si sientes que estás perdiendo el control, Nueva Jersey tiene un programa oficial de autoexclusión, y la Línea Nacional de Ayuda para el Juego Problemático atiende gratis las 24 horas con intérprete en español: **1-800-522-4700** (también 1-800-MY-RESET).]:::
+:::note[Juega por diversión, no para resolver un problema de dinero. Si sientes que estás perdiendo el control, Nueva Jersey tiene un programa oficial de autoexclusión, y la Línea Nacional de Ayuda para el Juego Problemático atiende gratis las 24 horas con intérprete en español: **1-800-MY-RESET** (1-800-697-3738).]:::
 
 ## En resumen
 

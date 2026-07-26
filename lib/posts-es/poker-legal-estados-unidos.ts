@@ -16,7 +16,7 @@ export const POST: Post = {
   imageAlt: "Sala de póker de un casino estadounidense por la tarde, con fichas apiladas sobre el fieltro verde y varias mesas ocupadas al fondo",
   tags: [
     "es legal el poker en estados unidos",
-    "poker online legal estados unidos",
+    "en que estados hay casinos de poker",
     "en que estados es legal el poker",
     "salas de poker en estados unidos",
     "edad minima para jugar poker",
@@ -46,47 +46,17 @@ Sí, pero **depende por completo del estado en el que estés físicamente**, no 
 
 Esa es la confusión número uno: la gente busca "¿es legal el poker?" — con acento o sin él, da igual — como si fuera una sola pregunta. En realidad son tres, y en muchos estados las respuestas ==no coinciden entre sí.==
 
-## ¿En qué estados puedo jugar póker online por dinero real?
+## ¿Y el póker online? Solo en seis estados
 
-Solo seis estados tienen póker online con licencia y funcionando hoy. Existe un acuerdo entre ellos, el MSIGA (Multi-State Internet Gaming Agreement), que permite juntar jugadores de varios estados en la misma mesa — algo esencial, porque un estado solo casi nunca tiene gente suficiente para llenar mesas a todas horas.
+**Nueva Jersey, Nevada, Pensilvania, Míchigan, Delaware y Virginia Occidental.** En ningún otro estado existe hoy una sala de póker online con licencia estatal. Si vives en California, Texas, Florida o Nueva York —donde vive la mayoría de nosotros— la respuesta corta es que todavía no, por mucha publicidad que veas.
 
-Pero aquí está el detalle que casi ninguna guía explica bien: ==el acuerdo solo da permiso; quien junta las mesas de verdad es cada marca.== Por eso las partidas se agrupan **por operador, no por estado**:
-
-| Marca | Estados que junta en la misma mesa |
-|---|---|
-| WSOP.com | Nevada + Nueva Jersey + Míchigan + Pensilvania |
-| BetRivers | Pensilvania + Míchigan + Delaware + Virginia Occidental |
-| BetMGM · PokerStars (FanDuel) · DraftKings | Nueva Jersey + Míchigan + Pensilvania |
-
-La consecuencia práctica sorprende a mucha gente: **un jugador de Nevada no puede sentarse con uno de Delaware o Virginia Occidental.** En Nevada la única sala es WSOP.com, y en Delaware y Virginia Occidental la única es BetRivers — no hay ninguna marca con licencia en ambos lados.
-
-| Estado | Operadores con licencia |
-|---|---|
-| Nueva Jersey | WSOP.com, BetMGM, PokerStars (opera como FanDuel), Borgata |
-| Nevada | WSOP.com (único) |
-| Pensilvania | WSOP.com, BetMGM, BetRivers, PokerStars/FanDuel |
-| Míchigan | WSOP.com, BetMGM, BetRivers, PokerStars/FanDuel |
-| Delaware | BetRivers (único) |
-| Virginia Occidental | BetRivers (único) |
-
-:::note[Ojo con la marca: PokerStars sigue existiendo en EE. UU., pero en Nueva Jersey, Pensilvania y Míchigan opera bajo el paraguas de FanDuel. Si buscas "PokerStars" y te aparece FanDuel, no es una estafa — es la misma operación con otro nombre.]:::
+El malentendido más común no es cuál es la lista, sino esto: ==residencia y ubicación no son lo mismo.== **No te piden ser residente del estado; te piden estar dentro de él en ese momento.** Puedes vivir en Nueva York y jugar legalmente cruzando a Nueva Jersey, porque la app comprueba dónde estás por GPS y wifi, no tu domicilio.
 
 ![Jugador de póker en línea frente a su computadora portátil de noche, con la mesa verde en pantalla y una taza de café al lado](/images/poker-legal-estados-unidos-online.webp)
 
-Hay dos casos que confunden mucho y conviene separar:
+Dos avisos que cuestan dinero si se ignoran: **todas las salas online con licencia son 21+**, aunque en ese mismo estado puedas jugar en vivo a los 18; y **usar VPN** está prohibido en los términos de todas ellas — no es una zona gris, es motivo de cierre de cuenta y de que no te paguen lo ganado.
 
-- **Connecticut** legalizó el póker online en 2021… y nunca lo lanzó. Los dos licenciatarios del estado decidieron que el mercado era demasiado pequeño, y la ley estatal tampoco permite compartir jugadores con otros estados. Legal en el papel, imposible en la práctica.
-- **Rhode Island** sí tiene casino online, pero su ley solo autoriza tragamonedas y mesas con crupier en vivo. El póker, donde juegas contra otras personas y no contra la casa, **no entra en ninguna de esas dos categorías** — no es que no lo hayan lanzado, es que no cabe en la licencia.
-
-### Tres reglas que casi todos los recién llegados rompen
-
-:::steps
-Tienes que estar dentro del estado | No basta con vivir ahí. La app comprueba tu ubicación por GPS y wifi cada pocos minutos. Puedes vivir en Nueva York y jugar legalmente si cruzas a Nueva Jersey.
-No uses VPN | Está prohibido en los términos de todas las salas con licencia. No es una zona gris: es motivo de cierre de cuenta y de que no te paguen.
-21 años, sin excepción | Todas las salas online con licencia son 21+, aunque en ese mismo estado puedas jugar en vivo a los 18.
-:::
-
-Ese primer punto es el que más malentendidos genera entre los jugadores hispanos: **residencia y ubicación no son lo mismo**. No te piden ser residente. Te piden estar ahí en ese momento.
+Qué app funciona en tu estado, cómo abrir cuenta sin Seguro Social, cuánto tiempo tienes para verificarte y cuánto te retienen de impuestos es otra conversación, y la tengo aparte en la [guía del póker online por dinero real](/es/blog/poker-online-dinero-real-estados-unidos "thumb:/images/poker-online-dinero-real-msiga.webp").
 
 ## ¿En qué grupo cae tu estado?
 
@@ -106,7 +76,7 @@ Son los únicos con salas online reguladas y funcionando de verdad. También tie
 
 **Connecticut · Maine**
 
-La ley existe; la sala no. Maine aprobó el póker online en enero de 2026 y se convirtió en el noveno estado en legalizarlo, con licencia exclusiva para las cuatro naciones wabanaki, pero todavía no ha salido. Aquí conviene desconfiar de cualquier página que te diga que ya puedes jugar "porque es legal": lo será el día que un operador lance de verdad. Mientras tanto, en los dos hay póker en vivo.
+La ley existe; la sala no. Maine aprobó el póker online en enero de 2026, con licencia exclusiva para las cuatro naciones wabanaki, pero todavía no ha salido. Aquí conviene desconfiar de cualquier página que te diga que ya puedes jugar "porque es legal": lo será el día que un operador lance de verdad. Mientras tanto, en los dos hay póker en vivo.
 
 ### 3. En vivo sí, online no — 32 estados
 
@@ -114,7 +84,7 @@ La ley existe; la sala no. Maine aprobó el póker online en enero de 2026 y se 
 
 Es el grupo más grande y el que más confusión genera, porque en muchos de ellos ==ya puedes apostar a deportes desde el teléfono pero no jugar póker== (lo explico en la siguiente sección). Para jugar tienes que ir a una sala física.
 
-Dentro de este grupo hay dos casos que merecen guía aparte. En **Nueva York**, la ciudad acaba de estrenar 242 mesas de casino y ninguna es de póker — lo explico en la [guía de póker en Nueva York](/es/blog/poker-en-nueva-york "thumb:/images/poker-en-nueva-york-hero.webp"). **Texas**, el estado con más hispanos del país, no tiene casinos pero sí [clubes privados con membresía](/es/blog/poker-en-texas "thumb:/images/poker-en-texas-hero.webp"). Y **California** tiene 78 cardrooms donde [la ley prohíbe el rake por porcentaje](/es/blog/poker-en-california "thumb:/images/poker-en-california-hero.webp") — dos modelos que no existen en ningún otro lado. Y en **Washington**, jugar póker online no es solo ilegal: es delito grave.
+Dentro de este grupo hay dos casos que merecen guía aparte. En **Nueva York**, la ciudad acaba de estrenar 242 mesas de casino y ninguna es de póker — lo explico en la [guía de póker en Nueva York](/es/blog/poker-en-nueva-york "thumb:/images/poker-en-nueva-york-hero.webp"). **Texas**, el estado con más hispanos del país, no tiene casinos comerciales pero sí [clubes privados con membresía](/es/blog/poker-en-texas "thumb:/images/poker-en-texas-hero.webp"). Y **California** tiene 78 cardrooms donde [la ley prohíbe el rake por porcentaje](/es/blog/poker-en-california "thumb:/images/poker-en-california-hero.webp") — dos modelos que no existen en ningún otro lado. Y en **Washington**, jugar póker online no es solo ilegal: es delito grave.
 
 ### 4. No hay póker en vivo en todo el estado — 10 estados
 
@@ -175,7 +145,7 @@ La edad mínima no es uniforme, y dentro de un mismo edificio puede haber ==dos 
 | Salas online con licencia | 21 | Los 6 estados de MSIGA, sin excepción |
 | Casinos comerciales | 21 | Las Vegas, Detroit, Filadelfia |
 | [Póker en Florida](/es/blog/poker-en-florida) | 18 | Tanto en cardrooms como en los casinos Seminole. Las tragamonedas y mesas de casino siguen siendo 21 |
-| Card houses de Texas | 18 | Modelo de membresía, no casino |
+| Card houses de Texas | 18 | Política de cada club, no ley estatal — confírmalo antes de ir |
 | Todo el póker de Minnesota | 18 | Canterbury Park, Running Aces y también los casinos tribales |
 | Varios casinos tribales | 18 | Turning Stone (NY), Wind River (WY) |
 
@@ -203,11 +173,7 @@ A. Depende del estado donde estés físicamente. Jugar en vivo en un casino es l
 
 **Q. ¿Necesito ser residente del estado para jugar online?**
 
-A. No. Solo necesitas estar **dentro** del estado en el momento de jugar. Puedes vivir en Nueva York y jugar legalmente cruzando a Nueva Jersey. La app verifica tu ubicación por GPS y wifi, no tu dirección.
-
-**Q. ¿Puedo usar una VPN para jugar desde un estado donde no es legal?**
-
-A. No. Todas las salas con licencia lo prohíben expresamente y detectan las VPN. El riesgo real no es una multa: es que te cierren la cuenta y no puedas retirar tu dinero.
+A. No. Solo necesitas estar **dentro** del estado en el momento de jugar. Puedes vivir en Nueva York y jugar legalmente cruzando a Nueva Jersey. La app verifica tu ubicación por GPS y wifi, no tu dirección. Los documentos que piden para abrir la cuenta —y qué hacer si no tienes Seguro Social— los explico en la [guía del póker online](/es/blog/poker-online-dinero-real-estados-unidos).
 
 **Q. ¿Qué edad necesito para jugar póker en un casino?**
 
@@ -225,17 +191,9 @@ A. En la mayoría de estados sí, siempre que nadie cobre comisión ni gane dine
 
 A. Casi siempre hay un casino al otro lado de la frontera estatal: de Memphis se va a Tunica, de Louisville a Indiana, de Atlanta a Cherokee. Las dos excepciones sin salida son Hawái y Alaska.
 
-**Q. ¿Puedo abrir una cuenta sin Seguro Social?**
-
-A. Sí, y **ningún estado exige ser ciudadano**. Las reglas de Nueva Jersey, Pensilvania, Míchigan y Delaware aceptan de forma expresa, para quien no es estadounidense, un **pasaporte o un número de identificación fiscal (ITIN)** en lugar del Seguro Social. En Nevada la regla pide el SSN solo "si eres residente de EE. UU.". Lo que no puedes saltarte es **verificar tu identidad**: sin ese paso no hay retiros. Como los formularios de las apps no siempre explican esta alternativa, lo práctico es escribirle al soporte antes de depositar.
-
-**Q. ¿Qué pasa si tardo en mandar mis documentos?**
-
-A. Puedes perder lo que ganaste, y esta es la letra chica que menos gente lee. En **Nevada**, la regla estatal te da **30 días** desde que abres la cuenta para completar la verificación. Mientras no la termines no puedes retirar nada ni depositar más de $5,000 — y si se cumple el plazo sin verificar, el operador cierra la cuenta, te devuelve solo tu depósito y **se queda con las ganancias**. Si el inglés te frena, pide ayuda el primer día, no el día 29.
-
 ---
 
-:::note[Juega por diversión, no para resolver un problema de dinero. Si sientes que estás perdiendo el control, la Línea Nacional de Ayuda para el Juego Problemático atiende en español, gratis y las 24 horas: **1-800-522-4700**.]:::
+:::note[Juega por diversión, no para resolver un problema de dinero. Si sientes que estás perdiendo el control, la Línea Nacional de Ayuda para el Juego Problemático atiende gratis y las 24 horas, con intérprete en español: **1-800-MY-RESET** (1-800-697-3738).]:::
 
 ## Fuentes oficiales
 

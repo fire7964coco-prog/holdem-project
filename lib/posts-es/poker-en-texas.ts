@@ -25,9 +25,9 @@ export const POST: Post = {
     "texas card house membresia",
   ],
   content: `
-En Texas hay más gente jugando póker que en muchos estados con casino — y aun así el estado no tiene ni uno. Lo que hay son **clubes privados**, y casi nadie explica bien qué son.
+En Texas hay más gente jugando póker que en muchos estados con casino — y aun así no hay ni un casino comercial en todo el estado. Lo que hay son **clubes privados**, y casi nadie explica bien qué son.
 
-He visto las dos versiones malas de esta historia. Una dice "en Texas el póker es legal, apúntate aquí". La otra dice "es ilegal, no te metas". ==Las dos están equivocadas,== y la verdad es más útil que cualquiera de ellas.
+He visto las dos versiones malas de esta historia. Una dice "en Texas el póker es legal, regístrate aquí". La otra dice "es ilegal, no te metas". ==Las dos están equivocadas,== y la verdad es más útil que cualquiera de ellas.
 
 ---
 
@@ -37,7 +37,7 @@ He visto las dos versiones malas de esta historia. Una dice "en Texas el póker 
 0% | de rake — los clubes no tocan el bote
 $10 | membresía semanal, en el club más barato
 $13 | renta de asiento por hora, aproximadamente
-0 | casinos y salas online con licencia en el estado
+0 | casinos comerciales y salas online del estado
 :::
 
 ## ¿Es legal jugar póker en Texas?
@@ -79,6 +79,8 @@ Estos son los precios publicados por los propios clubes:
 
 Champions Club Texas y House of Kings no publican sus tarifas en la web — ahí toca llamar antes de ir.
 
+⚠️ Y un detalle de The Lodge que cuesta dinero si no lo sabes: **la membresía de una sede no vale automáticamente en la otra**. Si pagas la anual en Round Rock, confirma antes de aparecerte en San Antonio.
+
 ## ¿Dónde están los clubes que sí están abiertos?
 
 Esto cambia seguido, así que aquí solo van los que **están operando según su propia página**:
@@ -118,6 +120,12 @@ No con dinero real. **Texas no ha autorizado ninguna sala online**, así que no 
 Sobre los casinos de tipo **sweepstakes**: en Texas **no hay una ley que los prohíba**, pero tampoco una que los autorice. Es zona gris, no vía libre. La propuesta legislativa que podría haberlos regulado también murió en 2025.
 
 Y una aclaración de proporción, porque hay mucha exageración: para el jugador, apostar en cartas es una **falta menor de clase C**, no un delito grave. Operar una casa de juego es harina de otro costal. Si algún sitio te dice que en Texas puedes ir preso por jugar una mano, te está asustando de más — y probablemente quiera venderte algo.
+
+## ¿Y el casino de Eagle Pass?
+
+Conviene aclararlo porque mucha gente lo da por inexistente: **en Texas sí hay casinos tribales**, que operan bajo ley federal y no bajo la ley estatal que acabamos de explicar. El más conocido es el **Kickapoo Lucky Eagle**, en Eagle Pass, justo en la frontera — con hotel y sala de máquinas, y entrada a partir de los 21 años. También existen instalaciones tribales en Livingston y en El Paso.
+
+⚠️ Lo que **no** puedo confirmarte es si su sala de póker está abierta hoy: su propia página de póker no carga. Si vives en Laredo, Del Río o Eagle Pass y te queda cerca, llama antes de manejar — igual que con WinStar, no des por hecho que hay mesa.
 
 ## ¿Y si cruzo a Oklahoma o Luisiana?
 
@@ -194,7 +202,7 @@ A. Es el caso que mejor encaja con las tres condiciones de la defensa, siempre q
 
 ---
 
-:::note[Juega por diversión, no para resolver un problema de dinero. Si sientes que estás perdiendo el control, la Línea Nacional de Ayuda para el Juego Problemático atiende gratis las 24 horas con intérprete en español: **1-800-522-4700** (también 1-800-MY-RESET).]:::
+:::note[Juega por diversión, no para resolver un problema de dinero. Si sientes que estás perdiendo el control, la Línea Nacional de Ayuda para el Juego Problemático atiende gratis las 24 horas con intérprete en español: **1-800-MY-RESET** (1-800-697-3738).]:::
 
 ## En resumen
 

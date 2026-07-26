@@ -179,7 +179,7 @@ A. El estado no, porque no tiene impuesto sobre la renta. El federal sí: las ga
 
 ---
 
-:::note[Juega por diversión, no para resolver un problema de dinero. Si sientes que estás perdiendo el control, la Línea Nacional de Ayuda para el Juego Problemático atiende gratis las 24 horas con intérprete en español: **1-800-522-4700** (también 1-800-MY-RESET).]:::
+:::note[Juega por diversión, no para resolver un problema de dinero. Si sientes que estás perdiendo el control, la Línea Nacional de Ayuda para el Juego Problemático atiende gratis las 24 horas con intérprete en español: **1-800-MY-RESET** (1-800-697-3738).]:::
 
 ## En resumen
 

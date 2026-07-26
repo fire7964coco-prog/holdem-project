@@ -37,7 +37,7 @@ Eso pasa mucho en California, porque aquí se juega algo que no existe en casi n
 78 | cardrooms con licencia en el estado
 0% | de rake — la ley prohíbe cobrar por porcentaje
 41 | cartas en el póker mexicano
-21 | años, sin ninguna excepción
+21 | años en todos los cardrooms — es ley estatal
 :::
 
 ## ¿Es legal jugar póker en California?
@@ -118,7 +118,7 @@ Estas son las salas cuyo funcionamiento está confirmado en su propia página:
 
 | Sala | Dónde | Nota |
 |---|---|---|
-| **Commerce Casino** | Commerce (LA) | La más grande, con 374 mesas autorizadas. **Aquí sí está el póker mexicano** |
+| **Commerce Casino** | Commerce (LA) | La mayor en operación, con 374 mesas autorizadas. **Aquí sí está el póker mexicano** |
 | **Parkwest Bicycle Casino** | Bell Gardens | 250 mesas. Sede del Legends of Poker |
 | **Hustler Casino** | Gardena | 91 mesas |
 | **The Gardens Casino** | Hawaiian Gardens | Hold'em, Omaha, Stud |
@@ -128,7 +128,7 @@ Estas son las salas cuyo funcionamiento está confirmado en su propia página:
 
 ## ¿A qué edad puedo entrar?
 
-**21 años, sin excepciones.** Y aquí California es más estricto que otros estados: no es una política de cada sala, es **ley estatal** — una persona menor de 21 años no puede ni siquiera entrar al recinto de un establecimiento de juego con licencia.
+**21 años.** Y aquí California es más estricto que otros estados: en los cardrooms no es una política de cada sala, es **ley estatal** — una persona menor de 21 años no puede ni siquiera entrar al recinto de un establecimiento de juego con licencia.
 
 Los casinos tribales que revisamos aplican la misma edad. Si tienes entre 18 y 20 años y quieres jugar póker legalmente, California no es tu estado — a diferencia de [Florida, donde el póker se juega desde los 18](/es/blog/poker-en-florida "thumb:/images/poker-en-florida-hero.webp").
 
@@ -188,7 +188,7 @@ A. Commerce Casino lo tiene en su lista oficial de juegos. Otras salas del sur d
 
 **Q. ¿Puedo entrar a un cardroom con 18 años?**
 
-A. No. En California la edad mínima es 21 y no es política de la sala: la ley estatal prohíbe que un menor de 21 entre al recinto de un establecimiento de juego con licencia.
+A. En los cardrooms no: la ley estatal prohíbe que un menor de 21 entre al recinto de un establecimiento de juego con licencia. En los casinos tribales la edad la fija cada acuerdo, y los grandes que revisamos también piden 21.
 
 **Q. ¿Puedo jugar póker online desde California?**
 
@@ -204,7 +204,7 @@ A. Es legal, y la ley lo dice explícitamente: quedan excluidos los juegos con c
 
 ---
 
-:::note[Juega por diversión, no para resolver un problema de dinero. Si sientes que estás perdiendo el control, la Línea Nacional de Ayuda para el Juego Problemático atiende gratis las 24 horas con intérprete en español: **1-800-522-4700** (también 1-800-MY-RESET).]:::
+:::note[Juega por diversión, no para resolver un problema de dinero. Si sientes que estás perdiendo el control, la Línea Nacional de Ayuda para el Juego Problemático atiende gratis las 24 horas con intérprete en español: **1-800-MY-RESET** (1-800-697-3738).]:::
 
 ## En resumen
 
