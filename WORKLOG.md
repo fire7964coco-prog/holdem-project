@@ -3,6 +3,15 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-26 (심야) — ✅✅ US-히스패닉 실검색 수요 **50개주 전수 실측 완료** (배치3 나머지 22개주 + NY 재발견)
+
+> 배치2 재실측에 이어 "서치 한번에 끝내자"(사용자) → 남은 22개주(티어C/D+규제 잔여) 4에이전트 병렬 라이브 WebSearch. **미 50개주 전수 완료.**
+- **22개주**: NY·DE·WV·RI(고가치) / MO·WI·MS·ID·OR(C) / SD·NH·KY·SC·AL(D·포커앵글) / UT·HI·AK·ND·MT·WY·ME·VT(D 초소형). `docs/keyword-bank/es-us-search-demand-phase1.md` 3차 배치 추가. 정정=`scratchpad/batch3-*.md`.
+- **★★NY 재발견**: 마스터 티어표(`es-us-hispanic.md`)에서 **NY 누락**(49개주만 담겨 있었음) → **티어 S 추가**(최대 미개척 카리브 시장·삼중훅). RI도 C 상위 격상.
+- **★3차 §13 정정**: DE Delaware Park 유일(3racino 거짓)·WV Mountaineer 영구폐쇄·ID 라이브 전면 없음(전자만)·KY/SC/AL 주내 포커0(HHR/크루즈/Class-II≠포커·AL "68테이블" 거짓 반박)·OR Chinook Winds 대회없음·MO Harrah's NKC 오픈·WI 스포츠 미출시. 반대로 ND·WY·ME·MT·SD·NH=라이브 포커 있음(D=포커없음 아님).
+- **초소형 8주=단독 부적합→전국 합법성 허브 흡수 권고**(UT·HI 전면금지쌍·ME/VT 뉴잉글랜드쌍). ★sweeps 지역분화(NY금지·KY제한·RI/DE/WV합법).
+- **다음**: 티어 기반 첫 글 착수. 발행 총계 불변 57 blog+448 intl(문서만).
+
 ## 2026-07-26 (밤) — ✅ US-히스패닉 실검색 수요 배치2 16개주 **라이브 재실측 완료** (Phase 1 총 28개주 풀실측)
 
 > 재시작 직후 액션. WebSearch 한도 상향(1000) 적용 후, 배치2가 폴백(Suggest/rakko)이던 16개주를 **4에이전트 병렬 라이브 WebSearch**로 재실측. 주당 6각도·verbatim PAA·SERP whitespace 실측·**주당 4개 포스팅 컨셉**(사용자 지시).

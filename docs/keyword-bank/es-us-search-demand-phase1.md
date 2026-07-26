@@ -184,3 +184,109 @@
 ---
 
 > **재확인(발행 전) 종합**: 테이블수 대부분 변동(OH·IN·LA·CT·IA)·CT Foxwoods 114=수용능력/일상 ~35-40(최다오류 지점)·MD 홈게임법 연도(2016 vs 2018)·MD sweeps 금지 진행·IA SF2289 법조문 정확표현·TN SB2136 서명일(5월 내 편차)·WA 베뉴별 나이(트라이벌 18 확정, 주류구역 21)·MN Running Aces 포커룸 실체·register 인구비(demographic prior, 미실측). ★대회/일정·법령 시의성은 발행 시점 재검증.
+
+---
+
+# ★3차 배치 — 나머지 22개주 (2026-07-26 라이브 실측) → **Phase 1 = 50개주 전수 완료**
+
+> ✅ 티어 C/D + 규제 잔여주 22개(`AL AK DE HI ID KY ME MS MO MT NH NY ND OR RI SC SD UT VT WV WI WY`)를 4에이전트 병렬 라이브 WebSearch로 실측. 이로써 **미 50개주 실검색 수요 전수 완료.**
+> ★★**최대 발견 — NY 재발견**: NY가 50개주 마스터 티어표(`es-us-hispanic.md`)에서 **누락돼 있었음**. 실측 결과 **NY = 티어 S로 승격 제안**(최대 미개척 카리브 시장: NYC 카리브+Bronx 도미니칸+업스테이트/LI 멕시코, 삼중훅=NYC 상업룸 없음+합법 온라인 없음+2025 sweeps 금지 신규).
+> ★**티어별 결론**: (A) NY=신규 티어 S 우선주. (B) RI=티어 C 상위(Providence 도미니칸 40%+·Maverick 32테이블). (C) DE·WV=규제(티어 S 가치)이나 마이크로 독자→집약+크로스보더 흡수(VA/DC→Charles Town·DE→MSIGA). (D) 초소형 8주(UT·HI·AK·ND·MT·WY·ME·VT)=단독글 부적합, **전국 합법성 허브의 row로 흡수**.
+
+## 3차 배치 신규 크로스-패턴
+- **★sweeps 합법성 지역 분화**: NY=sweeps **금지**(2025-12 Hochul)→"기다리며 sweeps" 각도 **위험**(순수 free-play만). RI·DE·WV=sweeps **아직 합법**→그 각도 유효. KY=sweeps **제한**(추천 금지). 발행 전 주별 sweeps 상태 필수 확인(전국 붕괴 진행 중).
+- **★"카지노≠포커룸" 정정 대량 확인(라이브)**: DE=Delaware Park **한 곳만**(Bally's Dover·Harrington 폐쇄) / WV=Mountaineer **영구폐쇄**(3곳만 오픈) / ID=트라이벌 **전자 Class-II만**(라이브 0·Coeur d'Alene 2014 폐쇄) / KY=HHR 슬롯만(라이브 0) / SC=크루즈만(육상 0) / AL=Wind Creek **Class-II 전자빙고만**(letsgambleusa "68 테이블+포커룸"=**거짓·인용금지**·Wind Creek Bethlehem=PA지 AL 아님) / OR Chinook Winds=대회 없음.
+- **★그런데 라이브 포커 있는 저평가 주(정정)**: ND(트라이벌 Spirit Lake/4 Bears/Sky Dancer)·WY(Wind River ~10테이블 18+)·ME(Hollywood Bangor 유일 4테이블)·MT(**바에서 라이브 포커** 유일 주)·SD(Deadwood 3룸)·NH(charity 포커=진짜 라이브, The Brook 미 최대). "D=포커 없음" 아님.
+- **크로스보더 답(무포커 주)**: KY→Caesars Southern Indiana(Louisville 30분) / SC→Harrah's Cherokee NC / AL→Beau Rivage Biloxi MS / VT→MGM Springfield MA / VA/DC→WV Charles Town / UT→Wendover NV / HI·AK=고립(본토/offshore).
+- **나이 이원 추가**: NY(Turning Stone/Akwesasne 18+ vs Seneca/상업 21+)·WY(18+)·MT(21+)·NH charity(21+). blanket 나이 금지.
+
+## 22개주 라이브 실측 (whitespace · ★포스팅 컨셉 · register · §13함정 [❌=정정])
+
+### New York (NY) — ★whitespace HIGH · **티어 S 제안**. NYC 카리브+Bronx 도미니칸+업스테이트/LI 멕시코.
+- **winnable**: 합법성 `póker en línea legal Nueva York dinero real`·`deportivas legal NY pero póker no`·`NY prohíbe casinos sweepstakes póker` / 살라 `salas en Nueva York`·`casino con póker cerca de NYC`·`Turning Stone/Resorts World Catskills español`·`mejor sala torneos` / cómo `edad`(18 vs 21)·`inscribirse torneo Turning Stone`·`reglas principiantes` / sweeps ⚠️`apps gratis`(리얼머니 sweeps 금지) / 로컬 `sala más cercana a Manhattan/Bronx/Queens`·`cerca de NYC en autobús`·`Niagara lado americano vs Canadá`
+- **§13**: 온라인 리얼머니 포커 불법. ★**sweeps/소셜 리얼머니 포커 금지**(Hochul 2025-12)→NY선 "sweeps로 기다려" 약함/위험(순수 free-play만). **NYC 상업/트라이벌 포커룸 없음**(다운스테이트 라이선스 대기·"NYC poker clubs"=사설 언더그라운드→업스테이트/주경계 라우팅). 라이브룸: **Turning Stone**(Verona 32테이블·WSOP-C 2026-10)·**Resorts World Catskills**(~16)·Seneca Niagara/Allegany·Akwesasne Mohawk·Rivers Schenectady·del Lago. ★**나이 이원**: Turning Stone·Akwesasne=**18+**(dry 트라이벌), Seneca·상업=21+. Casino Niagara/Fallsview=**온타리오 캐나다**(여권).
+- **★4컨셉**: 1)"deportivas sí, póker por dinero no: la verdad legal en NY 2026"(sweeps금지 업데이트=최신성 엣지) 2)"vives en NYC y quieres jugar en vivo: por qué no hay sala en la ciudad y a dónde ir"(라우팅) 3)"18 o 21 años: dónde puede jugar un joven en NY"(나이 이원) 4)"Turning Stone y Resorts World Catskills: inscribirte a tu primer torneo(español)"
+- 재확인: NYC 도미니칸/PR 인구수·del Lago/Rivers 포커 라이브·순수 free-play sweeps 영향
+
+### Delaware (DE) — whitespace TOTAL·시장 TINY(과테말라/멕시코 Sussex/Georgetown 가금). 규제온라인=집약/지원.
+- **winnable**: 합법성 `póker en línea legal Delaware`·`BetRivers póker Delaware legal` / 살라 `sala Delaware Park` / cómo `registrarse BetRivers DE`·`edad`(21+) / sweeps `BetRivers bono`(100% $250)·`póker compartido DE-PA-MI`(MSIGA) / 로컬 `cerca de MD/PA`·`Wilmington/Dover`
+- **§13**: **BetRivers Poker=유일 온라인**(2025-06·DE Lottery·21+·DE/MI/PA/WV MSIGA풀·888/WSOP 철수). ❌**정정**: "3racino 라이브"=거짓. **Delaware Park(Wilmington) 한 곳만**(수용 ~25·실운영 3-5). Bally's Dover=Crown Royal 18테이블 폐쇄(2021), Harrington=COVID 폐쇄·미재개.
+- **★4컨셉**: 1)"póker online legal en DE: la única app real(BetRivers)" 2)"¿hay póker en vivo en DE? solo un casino lo tiene"(3racino 미신 정정) 3)"cómo registrarte y cobrar en BetRivers desde DE" 4)"el pool compartido: por qué juegas contra PA y MI desde DE"(MSIGA)
+
+### West Virginia (WV) — whitespace TOTAL·시장 최소(~2.2% 재확인). 규제=가치나 **흡수** 역할.
+- **winnable**: 합법성 `póker en línea legal Virginia Occidental`·`BetRivers póker WV` / 살라 `Hollywood Charles Town/Mardi Gras/Wheeling Island` / cómo `edad`(21+) / sweeps `compartido WV-MI-PA`(MSIGA 2023) / 로컬 `cerca de VA/DC`(Charles Town)·`cerca de OH/Pittsburgh`(Wheeling)
+- **§13**: **BetRivers 유일 온라인**(2019-03 합법·2020 출시·MSIGA 2023·21+). ❌**정정**: **오픈 3곳만** — Hollywood Charles Town(16테이블 Wed-Sun)·Mardi Gras(Cross Lanes ~10 Fri-Sat)·Wheeling Island(Thu-Sat). **Mountaineer(Chester)=영구폐쇄**(prior 오류·한때 37테이블). Greenbrier=전용 포커룸 없음. ★**VA 진짜 라이브 포커룸 없음**(Rosie's=HHR)→Charles Town=NoVA/DC 사실상 포커룸(강력 흡수훅).
+- **★4컨셉**: 1)"póker en WV: la única app legal y las 3 salas que aún abren"(집약) 2)"vives en Virginia o DC y no hay sala: por qué Charles Town es tu casino"(VA/DC 더 큰 독자) 3)"Mountaineer ya no tiene póker: dónde jugar ahora"(stale 정정) 4)"MSIGA: cómo WV te conecta con MI y PA"
+
+### Rhode Island (RI) — whitespace HIGH(Providence 40%+ 도미니칸). 온라인 포커 미출시→라이브+"곧" 각도.
+- **winnable**: 합법성 `¿cuándo llega el póker online a RI?`·`Bally's casino online RI póker` / 살라 `sala Bally's Twin River`·`en vivo cerca de Providence` / cómo `edad`(21+)·`torneos RI` / sweeps `Global Poker/ClubWPT RI`(현 유일) / 로컬 `cerca de Providence MA/CT`·`Foxwoods/Encore Boston español`
+- **§13**: **Bally's 온라인 카지노 2024**이나 ★**온라인 포커 미출시**(2026초/중 리얼머니 P2P 없음)→"RI 규제 온라인 포커 하라" 금지. 현 유일 온라인=**sweeps·RI는 sweeps 여전 합법**(NY와 대조)→"기다리며 sweeps" 유효. 라이브: **Bally's Twin River(Lincoln)=Maverick Poker Room 32테이블**(Maverick/Eric Persson 리브랜드·Providence 9mi)·Bally's Tiverton 라이선스·21+. 크로스보더 Foxwoods/Mohegan(CT)·Encore(MA) 더 큰룸.
+- **★4컨셉**: 1)"póker en Providence: en vivo(Bally's Twin River) y por qué el online aún no llega"(도미니칸 로컬) 2)"la nueva sala Maverick: 32 mesas para competir con Foxwoods"(뉴스훅) 3)"mientras esperas el online: jugar gratis en sweeps(legal aquí)"(NY금지와 대조) 4)"¿Twin River, Foxwoods o Encore? guía desde Providence"
+- 재확인: 40%·Twin River 테이블수·Tiverton 포커 여부·온라인 포커 ETA
+
+### Missouri (MO) — whitespace 확증. 멕시코(KC Westside/Argentine·STL).
+- **winnable**: 합법성 `¿es legal póker en línea MO?`(스포츠만 2025-12)·`deportivas sí póker no` / 살라 `en vivo St. Louis`·`Kansas City`·`Ameristar/Hollywood/Harrah's NKC` / cómo `edad`(21) / sweeps `Stake.us` / 로컬 `cerca de KC`(캔자스측도)
+- **§13**: 라이브 검증 — STL: Hollywood STL(20)·Horseshoe STL(10 WSOP)·Ameristar St.Charles. KC: Ameristar KC(15)+**Harrah's North KC OPEN(13테이블·폐쇄 아님·정정)**. +Century Cape Girardeau(4)·St.Jo(11). 온라인=스포츠만. Age 21.
+- **★4컨셉**: 1)"deportivas ya, ¿y el póker? qué es legal en MO 2026" 2)"dónde jugar en vivo en St. Louis: 3 salas" 3)"póker en KC: Ameristar vs Harrah's + cruzar a Kansas" 4)"sin póker online legal en MO: sweepstakes y límites"
+
+### Wisconsin (WI) — whitespace 확증. 멕시코68%+PR23%(Milwaukee).
+- **winnable**: 합법성 `¿es legal póker en WI?`(라이브 트라이벌 yes·온라인 no) / 살라 `sala Potawatomi Milwaukee`·`Ho-Chunk Dells` / cómo `edad`(21)·`$1/$3 Potawatomi` / 로컬 `torneos cerca de Milwaukee`
+- **§13**: **Potawatomi Milwaukee=15테이블**($1/3·$2/5 NL·PLO 21+). Ho-Chunk도 포커. 온라인 포커 불법. ⚠️**스포츠벳 정정**: AB601 2026-04-09 서명(트라이벌 전용)이나 **컴팩트 미협상=출시일 없음**(현 ~6곳 키오스크만). "WI 모바일 스포츠 라이브" 금지.
+- **★4컨셉**: 1)"la única gran sala de Milwaukee: guía del Potawatomi" 2)"¿es legal el póker en WI? en vivo sí online no(mexicano en Milwaukee)" 3)"deportivas llegan(2026) pero póker online prohibido" 4)"póker fuera de Milwaukee: Ho-Chunk y tribales"
+
+### Mississippi (MS) — whitespace 확증. ★이벤트/크로스보더 최강(TN·AR도 서빙). 소형 히스패닉(중미).
+- **winnable**: 합법성 `¿es legal póker en MS?`(라이브 yes·온라인 전부 불법) / 살라 `Beau Rivage Biloxi`·`Gulf Coast`·`salas en Tunica`(Horseshoe/Gold Strike) / cómo `edad`(21)·`torneos WSOP Circuit Tunica/Beau Rivage fechas` / 로컬 `cerca de Memphis`(Tunica 20분)·`cerca de Nueva Orleans/Mobile`(Biloxi)
+- **§13**: **Beau Rivage Biloxi=걸프코스트 최대 ~12-16테이블 금연**(Gulf Coast Poker Championship). **Tunica: Horseshoe Tunica 운영**(2026 Mid-South Jul17-26·WSOP Circuit Apr16-27), Gold Strike. 온라인 전부 불법(2018 리테일 스포츠만). Age 21. Tunica=멤피스 20분=TN 답·AR 일부 최근접.
+- **★4컨셉**: 1)"Beau Rivage: la mayor sala de la Costa del Golfo(Biloxi)" 2)"WSOP Circuit y Mid-South en Tunica 2026: fechas, buy-ins, desde Memphis"(이벤트+TN) 3)"¿es legal en MS? en vivo sí online prohibido" 4)"póker cerca de Memphis y norte de Arkansas: Tunica es tu respuesta"
+
+### Idaho (ID) — whitespace 확증. ★prior 확정(주내 라이브 포커 전무)=gap 자체가 winnable. 멕시코 농업(Nampa/Caldwell).
+- **winnable**: 합법성 `¿es legal el póker en Idaho?`(NO 전면)·`por qué no hay póker en los casinos de Idaho`·`sweepstakes póker legal Idaho`(금지) / 살라(주내 0)→`casinos tribales tienen póker`(no·전자만) / cómo `máquinas video póker vs en vivo` / 로컬 `cerca de Nampa/Boise`→NV·WA(18+)·OR·MT
+- **§13**: ★**"Idaho 카지노에 포커 있다" 절대 금지.** 라이브 전면 불법·6 트라이벌=**전자/Class-II만**(라이브 0). Coeur d'Alene 2014 라이브룸→9th Circuit 폐쇄. sweeps 명시 금지(§18-3802). 최근접=NV·WA(트라이벌 18+ Ace's/Fortune)·OR·MT.
+- **★컨셉(얇음→2 리치+FAQ흡수)**: 1)RICH "en Idaho no hay póker en vivo(y por qué): la ley, el caso Coeur d'Alene, qué son las 'máquinas'" 2)RICH "Idaho: dónde jugar cruzando la frontera — NV, WA(18+), OR"
+
+### Oregon (OR) — whitespace 확증. ★가장 미묘(트라이벌 라이브 YES + 소셜클럽 단속 스토리). 멕시코(Woodburn 60%/Salem).
+- **winnable**: 합법성 `¿es legal póker en Oregon?`(트라이벌 yes·상업 no)·`clubes sociales legales`(압박) / 살라 `Spirit Mountain`·`en vivo Portland`(Final Table)·`torneos Wildhorse Pendleton` / cómo `cómo funcionan clubes sociales(dealers voluntarios)` / 로컬 `cerca de Portland/Salem/Woodburn`
+- **§13**: 트라이벌 라이브 실재 — **Spirit Mountain**(Grand Ronde·OR 최대)·**Wildhorse(Pendleton)** 주간대회. ⚠️**Chinook Winds(Lincoln City)=현재 포커 대회 없음**(대회 베뉴로 나열 금지). 포틀랜드 소셜룸=skill loophole→**시 단속 실재**(~15클럽 경고·Encore 폐쇄·Final Table 운영중 불안정). 온라인 무규제.
+- **★4컨셉**: 1)"póker en vivo en Oregon: Spirit Mountain y Wildhorse" 2)"los clubes de Portland bajo presión: qué es 'social gaming' y cuáles siguen abiertos"(단속 스토리·유니크) 3)"¿es legal en Oregon? tribal sí, comercial no, online sin regular" 4)"cerca de Portland/Salem/Woodburn: tribales y sociales(comunidad mexicana)"
+- 재확인: 포틀랜드 클럽 상태 불안정(발행 시점)·Chinook Winds 스케줄
+
+### South Dakota (SD) — ★티어D 콘텐츠 가치 최고(Deadwood 3룸+역사 자산). 육가공(Huron/Sioux Falls 멕시코).
+- **winnable**: 합법성 `¿es legal el póker en Dakota del Sur?`·`apuestas deportivas solo en persona Deadwood` / 살라 `salas de póker en Deadwood`·`Silverado/Saloon 10/Cadillac Jack's` / cómo `spread limit hold'em qué es` / 역사 `la mano del muerto historia`·`Wild Bill Hickok Saloon 10` / sweeps `online no legal SD`
+- **§13**: ✅**Deadwood 3 라이브룸**(Silverado Franklin=SD State Championship·Saloon No.10=Hold'em/Omaha/Stud·Cadillac Jack's=spread-limit 2-10/3-15/3-25). max bet $1,000·**spread-limit hold'em=시그니처**. Dead Man's Hand=**A-A-8-8(투페어 aces&eights)**. 온라인 포커 불법.
+- **★4컨셉**: 1)"¿dónde jugar en vivo en Dakota del Sur? las 3 salas de Deadwood" 2)"Deadwood y la mano del muerto: la historia real del A-A-8-8(+dónde jugar hoy)"(비대체 자산) 3)"spread limit hold'em: la modalidad rey de Deadwood"(스페인어 설명 공백) 4)"apuestas en SD: deportivas solo en Deadwood, póker sí, online no"
+
+### New Hampshire (NH) — ★티어D인데 라이브 포커 밀도 높음(charity=진짜). 소형 히스패닉(~4-5%).
+- **winnable**: 합법성 `¿es legal el póker en NH?`·`charity poker cómo funciona` / 살라 `The Brook Seabrook`·`Chasers Salem NH`·`The Nash` / cómo `qué es charitable gaming póker` / sweeps `online alternativas`
+- **§13**: ✅**charity 포커=진짜 라이브**(전자 아님). The Brook(Seabrook)=미 최대 charity 카지노(NLHE $1/2~$5/10+대회 $30-100)·Chasers(Salem) NLHE. **정확 수치**: 대회 **max buy-in $250**(리바이/애드온 포함)·rake **20% 대회 엔트리**·캐시 팟 ~10%($4-6 캡). "캐시게임 $250 캡" 금지(대회 전용). 스포츠 2019 DraftKings 독점.
+- **★4컨셉**: 1)"póker de caridad en NH: el 'Texas de Nueva Inglaterra'(The Brook, Chasers)" 2)"The Brook, el casino de caridad más grande de EE.UU.: cash games y torneos NLHE" 3)"¿cómo funciona el charitable gaming? modelo de NH(tope $250, rake 20%)" 4)"NH: deportivas monopolio DraftKings pero póker en vivo florece"
+
+### Kentucky (KY) — 크로스보더 수요 高·주내 포커 0. 멕시코(Louisville 대형).
+- **winnable**: 합법성 `¿es legal el póker en Kentucky?`·`Kentucky no hay casinos HHR qué es` / 인근주 `casino más cercano a Louisville para póker`·`Caesars Southern Indiana sala de póker`·`Hollywood Lawrenceburg` / cómo `en vivo primera vez casino Indiana` / 로컬 `cruzar a Indiana/Ohio`
+- **§13**: ✅**주내 라이브 포커 0·상업 카지노 0·라이브 테이블 0.** 9개 HHR 베뉴(~7,000 HHR 머신=슬롯류, **포커 아님**). 스포츠 2023. ★**HHR racino에 포커 있다고 암시 금지.** 최근접=**Caesars Southern Indiana**(Elizabeth IN·Louisville 20-30분 포커룸)·Hollywood Lawrenceburg(IN). ⚠️**KY sweeps 제한**(추천 금지).
+- **★컨셉(2 리치+FAQ흡수)**: 1)"¿hay casinos con póker en Kentucky? la verdad sobre las máquinas HHR(y por qué no son póker)" 2)"desde Louisville: cómo cruzar a Indiana para jugar en vivo(Caesars Southern Indiana, 30 min)" (+FAQ: deportivas sí póker no·도시별 인근주)
+
+### South Carolina (SC) — 크로스보더 수요 中·주내 포커 0(크루즈만). 멕시코(Greenville/Charleston 성장).
+- **winnable**: 합법성 `¿es legal el póker en Carolina del Sur?`·`solo lotería y cruceros` / 인근주 `Harrah's Cherokee NC sala de póker`·`más cercano a Greenville` / 크루즈 `Big M Casino Little River crucero aguas internacionales` / 로컬 `cruzar a Carolina del Norte`
+- **§13**: ✅**주내 육상 라이브 포커 0.** 유일 합법 라이브 테이블=**국제수역 크루즈**(Big "M" Casino, Little River/Myrtle Beach·3마일 밖 나가면 합법). 복권=유일 육상 합법. 최근접 육상=**Harrah's Cherokee NC**(20테이블 $2-5 24/7). 육상 SC 베뉴에 포커 암시 금지.
+- **★4컨셉**: 1)"¿se puede jugar póker en SC? solo en un crucero a aguas internacionales(Big M)" 2)"Harrah's Cherokee: la sala más cercana(desde Greenville)" 3)"SC y el juego: por qué solo la lotería es legal en tierra" 4)"el 'crucero a ninguna parte': cómo funciona el póker offshore desde Little River"(유니크)
+
+### Alabama (AL) — 크로스보더 수요 中·주내 포커 0(Class-II 전자만). 멕시코 가금(Birmingham/Albertville).
+- **winnable**: 합법성 `¿es legal el póker en Alabama?`·`Wind Creek solo bingo electrónico no en vivo`·`Class II gaming qué significa` / 인근주 `Beau Rivage Biloxi desde Alabama`·`más cercano a Birmingham` / cómo `en vivo Biloxi primera vez` / 로컬 `cruzar a Mississippi/Florida`
+- **§13**: ✅**주내 라이브 포커 0.** Wind Creek(Atmore/Montgomery/Wetumpka)=**Class-II 전자빙고만**(슬롯처럼 보임)+바 비디오포커. 라이브 딜러/포커룸 없음(컴팩트 부재·IGRA Class-II 제한). ⚠️**letsgambleusa "Wetumpka 68 테이블게임+포커룸"=거짓·다수 2026 소스 반박·인용금지.** 최근접=**Beau Rivage Biloxi MS**(16테이블 24/7). ★**Wind Creek Bethlehem=PA 자산**(포커룸 있음)이지 AL 아님(혼동 금지).
+- **★컨셉(2 리치+FAQ흡수)**: 1)"¿Wind Creek tiene póker en vivo? no — por qué Alabama solo tiene bingo electrónico(Class II)" 2)"desde Birmingham/Mobile a Biloxi: la sala de Beau Rivage y cómo llegar" (+FAQ: bingo electrónico vs 진짜 포커·deportivas도 불법)
+
+### 초소형 8주 (UT·HI·AK·ND·MT·WY·ME·VT) — 단독글 부적합, **전국 합법성 허브 row로 흡수**
+> 수요 near-zero(툴 과소평가 아님·진짜 얇음). 서브클러스터: 전면금지쌍 UT+HI / 뉴잉글랜드 ME+VT.
+- **UT**: ★전면금지(미 유이 zero-gambling). 라이브 0. 최근접=Wendover NV(국경·재확인 카지노수) or Vegas. 훅=허브 "prohibición total" 예시+Wendover 크로스보더 마이크로섹션. register=멕시코(SLC/Ogden 성장)+공감톤.
+- **HI**: ★전면금지(다른 하나). 섬=인근주 없음→본토(Vegas)/offshore. UT와 쌍으로 허브 흡수.
+- **AK**: 상업/공공 포커룸 0. charity pull-tab+무레이크 홈게임만(트라이벌=슬롯/빙고). 고립. 허브 흡수.
+- **ND**: ❌정정 — 라이브 포커 **있음**(트라이벌 Spirit Lake·4 Bears·Sky Dancer, Hold'em/Omaha/Stud+대회). 온라인 금지. "ND 포커 없다" 금지. 허브 정확 한줄. 재확인: 스케줄.
+- **MT**: ★유니크 — **바에서 라이브 포커 합법**(카지노 밖 도박 허용 유일 주·태번 수백곳)+트라이벌. 21+. 온라인 2005 금지. ⚠️SB555 2025 sweeps금지 미확인(재확인). 훅="en Montana se juega en los bares".
+- **WY**: ❌정정 — 라이브 포커 **있음**: Wind River Casino(Riverton) 전용 Hold'em룸 ~10테이블 24h+대회. **18+**. 비트라이벌 상업룸 불가. 허브 흡수. 재확인: 테이블수.
+- **ME**: ❌정정 — 주내 포커룸 **Hollywood Casino Bangor 유일**(4테이블·Bravo앱). **Oxford Casino=포커 없음**(슬롯+테이블게임). 2024 라이브 복귀. 뉴잉글랜드 허브 흡수.
+- **VT**: 주내 카지노/포커 **전무**. 온라인 스포츠벳만(2024·21+)="deportivas sí póker no" 교과서. 최근접=MGM Springfield MA(23테이블 ~20mi). ME와 뉴잉글랜드 쌍.
+
+---
+
+## ✅✅ Phase 1 = 미 50개주 실검색 수요 전수 완료 (2026-07-26)
+> 1차 12(풀실측) + 2차 16(라이브 재실측) + 3차 22(라이브) = **50/50.** 전 주 whitespace 확증(스페인어 州로컬 PAA 0·州로컬 포커 에디토리얼 0 랭크). **다음=티어 기반 첫 글 착수.** ★**`es-us-hispanic.md` 마스터 티어표에 NY 누락 → 티어 S로 추가 필요**(별도 반영). 발행 전 주별 sweeps 상태·테이블수·나이·법령 시의성 재확인.

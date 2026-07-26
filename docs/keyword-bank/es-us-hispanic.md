@@ -183,10 +183,11 @@
 > 사용자 "나머지 주 전체 서치" 지시. 개별 15(DE·WV·OH·IN·MO·LA·MN·WI·MS·IA·KS·NE·AR·TN·OR)+묶음4(AL·SC·KY / RI·ME·NH·VT / ND·SD·MT·WY / UT·HI·ID·AK). **50개주 전부 스페인어 州특화 부재 = whitespace 최종 확증.**
 
 ## 🏁 50개주 우선순위 티어 (마스터)
-- **S (규제-전환, 최고가치)**: NJ·NV·PA·MI + **DE·WV** = ★**규제 온라인 6개주 = 전부 MSIGA. 완결.** (TX·CA·FL은 대형 히스패닉 라이브로 S)
+> ★2026-07-26 정정: **NY 누락 발견 → 티어 S 추가**(라이브 실측, 최대 미개척 카리브 시장). 이로써 티어표 50/50 완비.
+- **S (최고가치)**: **NY**(★NYC 카리브+Bronx 도미니칸+업스테이트/LI 멕시코, 삼중훅=NYC 상업룸 없음+합법 온라인 없음+2025 sweeps 금지) + NJ·NV·PA·MI + **DE·WV**(규제 온라인 6개주=전부 MSIGA) + TX·CA·FL(대형 히스패닉 라이브)
 - **A (대형 라이브+히스패닉)**: IL·AZ + OH·IN·LA·OK·CT·MA·MD·WA·CO
 - **B (offshore/합법성 훅 + 대형 히스패닉)**: GA·NC·TN·VA + KS·NE·IA·MN·AR (★육가공벨트)
-- **C (소형·니치)**: NM(특수)·RI·ID·OR·MO·WI·MS
+- **C (소형·니치)**: NM(특수)·RI(★Providence 도미니칸 40%+·Maverick 32테이블)·ID·OR·MO·WI·MS
 - **D (저우선)**: ND·SD·MT·WY·ME·NH·VT·UT·HI·AK
 
 ## 30개주 압축 블록

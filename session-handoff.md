@@ -5,9 +5,11 @@
 
 ---
 
-## ▶▶▶▶▶▶ 새 세션 START HERE (2026-07-26 밤 — ✅**US 배치2 라이브 재실측 완료** → 다음 액션 = **첫 글 착수**)
+## ▶▶▶▶▶▶ 새 세션 START HERE (2026-07-26 밤 — ✅✅**US 50개주 전수 실측 완료** → 다음 액션 = **첫 글 착수**)
 
-> ✅✅**방금 완료(2026-07-26)**: US 2차 16개주(OH·IN·LA·CT·MA·MD·WA·GA·NC·VA·TN·IA·NE·KS·AR·MN)를 **한도 상향 후 4에이전트 병렬 라이브 WebSearch(주당 6각도·PAA·SERP 실측·4개 포스팅 컨셉)로 전량 재실측** → 폴백 대체 완료. **Phase 1 총 28개주 전부 풀실측.** `docs/keyword-bank/es-us-search-demand-phase1.md` 2차 배치 섹션 갱신됨. 정정 요약=`scratchpad/batch2-corrections.md`.
+> ✅✅✅**방금 완료(2026-07-26)**: US 실검색 수요 **50개주 전수 실측 완료**(1차12 풀실측 + 2차16 라이브 재실측 + 3차22 라이브). 전부 4에이전트 병렬 라이브 WebSearch(주당 6각도·PAA·SERP 실측·주당 4개 포스팅 컨셉). `docs/keyword-bank/es-us-search-demand-phase1.md`에 1~3차 배치 전부 반영. 정정요약=`scratchpad/batch2-corrections.md`·`batch3-*.md`.
+> ★★**3차 최대 발견 — NY 재발견**: NY가 마스터 티어표(`es-us-hispanic.md`)에서 **누락돼 있었음** → **티어 S로 추가 완료**(최대 미개척 카리브 시장: NYC 카리브+Bronx 도미니칸+업스테이트/LI 멕시코, 삼중훅=NYC 상업룸 없음+합법 온라인 없음+2025 sweeps 금지). RI도 티어 C 상위로 격상(Providence 도미니칸 40%+·Maverick 32테이블).
+> ★**3차 §13 정정(라이브)**: DE=Delaware Park 유일(3racino 거짓·Dover/Harrington 폐쇄)·WV Mountaineer 영구폐쇄(3곳만)·ID 라이브 전면 없음(전자 Class-II만)·KY/SC/AL 주내 포커 0(HHR/크루즈/Class-II≠포커·AL letsgambleusa "68테이블" 거짓)·OR Chinook Winds 대회 없음·MO Harrah's NKC 오픈·WI 스포츠 서명O 출시X. **정정: ND·WY·ME·MT·SD·NH는 라이브 포커 있음**("D=포커 없음" 아님). 초소형 8주(UT·HI·AK·ND·MT·WY·ME·VT)=단독 부적합→전국 합법성 허브 흡수. ★sweeps 지역분화: NY 금지·KY 제한·RI/DE/WV 합법(발행 전 확인).
 > ★**재실측이 잡은 §13 정정(폴백 오류)**: MD Horseshoe Baltimore **폐쇄 아님(OPEN 23테이블)** · AR 진짜 포커룸=**Saracen 유일**(Oaklawn/Southland=house-banked) · IA sweeps **전면금지 아님**(SF2289=집행권한) · NC Two Kings **포커룸 없음**(→Cherokee 2.5h) · OH Toledo **자체룸 있음**(Cleveland 라우팅 오류) · NE WarHorse·LA Kenner OTB·TN Southland=**포커룸 없음** · MN sweeps **철수**(2025-12/SF4474)·스포츠벳 자체 없음 · WA Legends **18+**(21 아님) · CT Foxwoods **114=수용능력**(일상 ~35-40).
 > ★**다음 액션 = 첫 글 착수**(사용자와 착수 순서 합의 권장). 유력 후보(데이터 최리치·경쟁 최저): **NJ 규제전환 퍼널**(1차, 스페인어 경쟁 1개뿐·전환 데이터 리치) / **TX 합법성+card house**(최대 독자·50주 템플릿) / **AZ·CO "스포츠벳 sí, póker no" gap**(훅 최강) / 배치2 중 **MD 홈게임 $1000법**·**WA felony 보호글**·**IN HB1052 뉴스훅**·**VA≠WV**도 유니크. 워크플로=translate-pillar 아닌 **신규 /es/ 유니크 글**(인프라0, 플랜 §하이브리드).
 > ★★**먼저 읽어라**: ①`docs/keyword-bank/es-us-search-demand-phase1.md`(**US 28개주 풀실측** 1차12+2차16) ②`docs/es-plan-latam-us-hybrid.md`(확정 플랜) ③`docs/keyword-bank/es-us-hispanic.md`(50개주 시장지도) ④`docs/session-log-2026-07-26.md`(전략Q&A).
