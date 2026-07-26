@@ -174,7 +174,7 @@ La edad mínima no es uniforme, y dentro de un mismo edificio puede haber ==dos 
 |---|---|---|
 | Salas online con licencia | 21 | Los 6 estados de MSIGA, sin excepción |
 | Casinos comerciales | 21 | Las Vegas, Detroit, Filadelfia |
-| Póker en Florida | 18 | Tanto en cardrooms como en los casinos Seminole. Las tragamonedas y mesas de casino siguen siendo 21 |
+| [Póker en Florida](/es/blog/poker-en-florida) | 18 | Tanto en cardrooms como en los casinos Seminole. Las tragamonedas y mesas de casino siguen siendo 21 |
 | Card houses de Texas | 18 | Modelo de membresía, no casino |
 | Todo el póker de Minnesota | 18 | Canterbury Park, Running Aces y también los casinos tribales |
 | Varios casinos tribales | 18 | Turning Stone (NY), Wind River (WY) |
