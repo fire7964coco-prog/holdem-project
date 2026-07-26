@@ -139,6 +139,14 @@ NE WarHorse · NC Two Kings · AR Oaklawn/Southland(UTH만) · TN Southland · L
 - **Minnesota는 법이 아니라 AG 명령** — SF 4474는 2026-05-18 회기종료로 폐기, [Ellison AG cease-and-desist](https://www.ag.state.mn.us/Office/Communications/2025/11/05_IllegalGamblingWebsites.asp)(14개 사업자, 12/1 시한)
 - ❌**Nevada 미포함** — SB 256에 "sweepstakes" 0회. 무면허 도박 형량 상향법일 뿐
 - ❌**Utah·Kentucky 미포함** — 제정된 sweeps 금지법 없음
+
+> ### ⚖️ 재논쟁 방지 기록 (2026-07-26 1차출처 심판 확정)
+> 검수 에이전트가 **LA·NV 두 건 모두 반대로 주장**했으나 원문 판독으로 위 표가 옳음이 확정됐다. 같은 지적이 또 올라오면 이 기록으로 종결할 것.
+>
+> - **Louisiana는 금지 맞음.** [Act 182 원문 PDF](https://www.legis.la.gov/legis/ViewDocument.aspx?d=1475229) R.S. 14:90.3(B) 축자: *"Any game… that **utilizes a dual-currency system of payment**… and simulates any form of gambling **constitutes gambling by computer**."* 법문에 "sweepstakes"라는 **단어는 없다** — 골드코인/스윕스코인 이중화폐 정의로 포섭한다. 이 때문에 단어 검색만 하면 "금지 아님"으로 오판하기 쉽다.
+>   반박 주장의 근거였던 **2025년 SB 181 거부권은 사실이지만 무의미** — 2026 회기에 HB 883이 통과했다. 보조로 HB 53(Act 48)이 도박범죄를 racketeering 전제범죄에 추가.
+> - **Nevada는 금지 아님.** 반박 측이 근거로 든 **AB 380은 정신건강 위기대응팀(988 핫라인) 법안**으로 도박과 완전 무관하다(표제부: *"Revises provisions relating to mobile crisis teams"*). SB 256도 원문 4쪽 전문에 "sweepstakes" 0회 — 무면허 게이밍 **이익몰수(disgorgement)** 추가 + 주내 베팅 수수 misdemeanor→gross misdemeanor 상향이 전부.
+> - 교훈: leg.state.nv.us는 Cloudflare 차단이라 **Wayback의 공식 PDF 사본**으로 판독해야 한다(원본 URL 보존형).
 - **Iowa SF 2289**(2026-05 서명, 07-01 시행)는 **집행권한 부여형**이지 전면 금지 아님(TN과 성격 다름)
 
 ---
