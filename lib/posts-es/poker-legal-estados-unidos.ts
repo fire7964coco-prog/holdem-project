@@ -120,7 +120,7 @@ Una advertencia seria dentro de este grupo: en **Washington**, jugar póker onli
 
 **Alabama · Alaska · Carolina del Sur · Georgia · Hawái · Idaho · Kentucky · Tennessee · Utah · Vermont**
 
-Aquí no existe una sola sala legal, y en **Utah** y **Hawái** no existe ningún tipo de juego legal. En **Georgia** y **Tennessee** ni siquiera se permite la partida en casa. La salida casi siempre está cruzando la frontera estatal: más abajo tienes el mapa de a dónde va la gente.
+Aquí no existe una sola sala legal, y en **Utah** y **Hawái** no existe ningún tipo de juego legal. El caso más tajante es **Idaho**: su propia constitución estatal nombra el póker entre los juegos prohibidos, así que ni siquiera los casinos tribales pueden abrir una sala. En **Georgia** y **Tennessee** ni siquiera se permite la partida en casa. La salida casi siempre está cruzando la frontera estatal: más abajo tienes el mapa de a dónde va la gente.
 
 :::note[No pongo aquí qué casino tiene cuántas mesas a propósito: las salas abren, cierran y cambian de horario cada pocos meses, y una lista así envejece mal. Lo que sí se mantiene es la ley, que es lo que ves arriba. Antes de manejar dos horas, llama a la sala y confirma que hoy hay mesa.]:::
 
@@ -152,7 +152,7 @@ Los tiempos de viaje varían mucho según de dónde salgas dentro del estado, as
 
 Los dos que no tienen salida son **Hawái** (no hay estado vecino al que manejar) y **Alaska**, por pura distancia.
 
-Y hay un caso que merece una advertencia aparte: **en el estado de Washington, jugar póker online es un delito grave** (RCW 9.46.240), con penas de hasta cinco años y multas de hasta $10,000. Es el único estado del país que lo clasifica como *felony* para el propio jugador, no solo para quien opera la sala. Jugar en vivo en un cardroom o en un casino tribal de Washington, en cambio, es perfectamente legal.
+Y hay un caso que merece una advertencia aparte: **en el estado de Washington, jugar póker online es un delito grave** ([RCW 9.46.240](https://app.leg.wa.gov/RCW/default.aspx?cite=9.46.240)), con penas de hasta cinco años y multas de hasta $10,000. Es el único estado del país que lo clasifica como *felony* para el propio jugador, no solo para quien opera la sala. Jugar en vivo en un cardroom o en un casino tribal de Washington, en cambio, es perfectamente legal.
 
 ## ¿Siguen siendo legales los casinos sweepstakes?
 
@@ -236,6 +236,19 @@ A. Puedes perder lo que ganaste, y esta es la letra chica que menos gente lee. E
 ---
 
 :::note[Juega por diversión, no para resolver un problema de dinero. Si sientes que estás perdiendo el control, la Línea Nacional de Ayuda para el Juego Problemático atiende en español, gratis y las 24 horas: **1-800-522-4700**.]:::
+
+## Fuentes oficiales
+
+Este mapa no sale de listas de afiliados sino de leyes y reglamentos públicos. Si quieres comprobar el dato de tu estado, empieza por aquí:
+
+- **Washington — jugar online es delito grave**: [RCW 9.46.240](https://app.leg.wa.gov/RCW/default.aspx?cite=9.46.240)
+- **Arizona — 21 años en todos los casinos tribales**: [A.R.S. §5-601](https://www.azleg.gov/ars/5/00601.htm)
+- **Florida — 18 años para póker en cardrooms**: [Fla. Stat. §849.086](https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0800-0899/0849/Sections/0849.086.html) · y la propia [sala de póker del Hard Rock](https://casino.hardrock.com/tampa/casino/poker) confirma los 18 años
+- **Minnesota — 18 años también en casinos tribales**: [políticas de Mystic Lake](https://mysticlake.com/company-policies)
+- **Maryland — el límite de $1,000 en partidas caseras**: [Md. Code, State Gov't §9-1C-01](https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gsg&section=9-1C-01)
+- **Idaho — la constitución estatal nombra el póker**: Constitución de Idaho, Art. III, §20
+
+:::note[Las leyes de juego cambian de un año para otro, y las salas abren y cierran todavía más rápido. Antes de manejar o de mover dinero, abre el enlace de tu estado y confírmalo — es la única forma de no depender de que una guía esté al día.]:::
 
 ## En resumen
 

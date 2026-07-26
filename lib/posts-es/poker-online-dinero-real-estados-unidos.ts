@@ -75,7 +75,7 @@ Lo que sí funciona igual en todas partes: **Nueva Jersey, Míchigan y Pensilvan
 
 **No, y ningún estado exige ser ciudadano.** Esta es probablemente la barrera más grande y la que menos gente explica bien.
 
-La regla de Nueva Jersey dice literalmente que el Seguro Social se pide "si el jugador lo proporciona voluntariamente, o su equivalente para un jugador extranjero, como un pasaporte o un número de identificación fiscal". Míchigan usa una fórmula parecida. En la práctica, la mayoría de las salas ni siquiera piden el número completo: solo los **últimos cuatro dígitos**.
+La [regla de Nueva Jersey (N.J.A.C. 13:69O-1.3)](https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-13-69O-1-3) dice literalmente que el Seguro Social se pide "si el jugador lo proporciona voluntariamente, o su equivalente para un jugador extranjero, como un pasaporte o un número de identificación fiscal". Míchigan usa una fórmula parecida. En la práctica, la mayoría de las salas ni siquiera piden el número completo: solo los **últimos cuatro dígitos**.
 
 ⚠️ **Nevada es la excepción, y va en tu contra**: su norma exige el SSN precisamente a quien reside en Estados Unidos. Si vives aquí y no tienes Seguro Social, Nevada es el estado más difícil para abrir cuenta — empieza por Nueva Jersey.
 
@@ -91,7 +91,7 @@ Sin SSN | Puedes tramitar un ITIN con el formulario W-7, pero se solicita junto 
 
 ## ¿Cuánto tiempo tengo para verificar mi cuenta?
 
-Menos del que crees, y aquí está la letra chica que más caro sale. En **Nevada**, la norma estatal te da **30 días** desde que abres la cuenta para completar la verificación de identidad. Mientras no la termines, la regla es explícita: **no puedes retirar ni un dólar** y no puedes depositar más de $5,000.
+Menos del que crees, y aquí está la letra chica que más caro sale. En **Nevada**, la [regla 5A.110 de la Comisión del Juego](https://www.gaming.nv.gov/siteassets/content/home/features/Regulation5A.pdf) te da **30 días** desde que abres la cuenta para completar la verificación de identidad. Mientras no la termines, la regla es explícita: **no puedes retirar ni un dólar** y no puedes depositar más de $5,000.
 
 Si se cumple el plazo sin verificar, la sala suspende la cuenta, ==se queda con las ganancias==, te devuelve solo lo que habías depositado y cierra la cuenta de forma definitiva. No es una multa ni una advertencia: es exactamente lo que la norma le manda hacer.
 
@@ -204,6 +204,22 @@ A. En casi ninguna. Durante 2026 la mayoría de las salas dejaron de aceptarlas;
 ---
 
 :::note[Juega por diversión, no para resolver un problema de dinero. Si sientes que estás perdiendo el control, la Línea Nacional de Ayuda para el Juego Problemático atiende gratis y las 24 horas, con intérprete en español: **1-800-522-4700** (también 1-800-MY-RESET).]:::
+
+## Fuentes oficiales
+
+Nada de lo que has leído aquí sale de una lista de afiliados: todo está en documentos públicos que puedes abrir y comprobar tú mismo. Si algo de esta guía cambia y yo tardo en actualizarlo, estas son las páginas que mandan.
+
+- **Nevada — verificación, plazo de 30 días y retención de ganancias**: [Nevada Gaming Commission, Regulation 5A](https://www.gaming.nv.gov/siteassets/content/home/features/Regulation5A.pdf) (§5A.110)
+- **Nueva Jersey — pasaporte o número fiscal en lugar del SSN**: [N.J.A.C. 13:69O-1.3](https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-13-69O-1-3)
+- **Míchigan — misma equivalencia para no ciudadanos**: [Mich. Admin. Code R. 432.655](https://www.law.cornell.edu/regulations/michigan/Mich-Admin-Code-R-432-655)
+- **Rhode Island — por qué el póker quedó fuera**: R.I. Gen. Laws §42-61.2-1 (definición de "online table game")
+- **Maine — estado del reglamento**: [Maine Gambling Control Unit](https://www.maine.gov/dps/gcu/I-Gaming)
+- **Retención del 24% y formularios W-2G**: [IRS, instrucciones del formulario W-2G](https://www.irs.gov/pub/irs-pdf/iw2g.pdf)
+- **No residentes: retención del 30% y tratados**: [IRS — ¿están exentas las ganancias de un extranjero no residente?](https://www.irs.gov/help/ita/as-a-nonresident-alien-are-my-gambling-winnings-exempt-from-federal-income-tax)
+- **Qué es exactamente Electric Poker**: [DraftKings](https://support.draftkings.com/dk/en-us/what-is-draftkings-electric-poker)
+- **Plazos y mínimos de retiro**: [Política de retiros de WSOP](https://www.wsoponline.com/legal/withdrawal-policy/)
+
+:::note[Las leyes de juego cambian rápido, y más en este momento. Si vas a mover dinero, dedica dos minutos a abrir el enlace de tu estado antes de fiarte de cualquier guía — incluida esta.]:::
 
 ## En resumen
 
