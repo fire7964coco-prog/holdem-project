@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{width:1200px;height:675px;font-family:Inter,system-ui,sans-serif;
+    background:radial-gradient(ellipse at 50% 0%,#1d3a2f 0%,#132821 55%,#0d1a16 100%);
+    color:#f4efe4;position:relative;overflow:hidden}
+  .felt{position:absolute;inset:0;opacity:.10;
+    background-image:repeating-linear-gradient(45deg,#000 0 2px,transparent 2px 5px)}
+  .wrap{position:relative;padding:40px 64px 0}
+  .kicker{font-size:19px;letter-spacing:.22em;text-transform:uppercase;color:#c9a44a;font-weight:700}
+  h1{font-size:54px;line-height:1.08;font-weight:900;margin-top:10px;max-width:1050px}
+  h1 em{font-style:normal;color:#c9a44a}
+  .cards{display:flex;gap:26px;margin-top:28px}
+  .card{flex:1;background:rgba(255,255,255,.05);border:1px solid rgba(201,164,74,.32);
+    border-radius:20px;padding:22px 28px 22px}
+  .st{font-size:29px;font-weight:800;letter-spacing:.02em;margin-bottom:14px;color:#f4efe4}
+  .st span{font-size:19px;font-weight:600;color:#9db3a6;margin-left:10px;letter-spacing:0}
+  .row{display:flex;align-items:center;gap:16px;padding:11px 0;
+    border-top:1px solid rgba(255,255,255,.09)}
+  .mark{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;
+    font-size:21px;font-weight:900;flex:none}
+  .yes{background:rgba(93,168,113,.20);color:#7dd694;border:1px solid rgba(125,214,148,.45)}
+  .no{background:rgba(196,84,74,.18);color:#e08a80;border:1px solid rgba(224,138,128,.42)}
+  .lbl{font-size:23px;font-weight:600;line-height:1.25}
+  .lbl b{display:block;font-size:15px;font-weight:500;color:#94a89c;margin-top:3px}
+  .big{margin-top:22px;display:flex;gap:26px;padding-right:290px}
+  .fact{flex:1;background:rgba(201,164,74,.11);border-radius:16px;padding:14px 22px;
+    display:flex;align-items:baseline;gap:14px}
+  .num{font-size:40px;font-weight:900;color:#c9a44a;line-height:1}
+  .ftx{font-size:17px;font-weight:600;color:#d8cfbb;line-height:1.3}
+  .wm{position:absolute;right:40px;bottom:30px;display:flex;align-items:center;gap:11px;opacity:.66}
+  .wm svg{width:29px;height:29px}
+  .wm span{font-size:20px;font-weight:700;color:#c9a44a;letter-spacing:.02em}
+</style></head>
+<body>
+<div class="felt"></div>
+<div class="wrap">
+  <div class="kicker">Arizona &nbsp;·&nbsp; Colorado</div>
+  <h1>Apuestas deportivas, sí.<br><em>Póker online, no.</em></h1>
+
+  <div class="cards">
+    <div class="card">
+      <div class="st">Arizona <span>21 años</span></div>
+      <div class="row"><div class="mark yes">&#10003;</div><div class="lbl">Apuestas deportivas<b>Por internet desde 2021</b></div></div>
+      <div class="row"><div class="mark no">&#10005;</div><div class="lbl">Póker online<b>Sin licencia estatal ni tribal</b></div></div>
+      <div class="row"><div class="mark yes">&#10003;</div><div class="lbl">Póker en vivo<b>Casinos tribales</b></div></div>
+    </div>
+    <div class="card">
+      <div class="st">Colorado <span>21 años</span></div>
+      <div class="row"><div class="mark yes">&#10003;</div><div class="lbl">Apuestas deportivas<b>Por internet desde 2020</b></div></div>
+      <div class="row"><div class="mark no">&#10005;</div><div class="lbl">Póker online<b>Nunca se autorizó</b></div></div>
+      <div class="row"><div class="mark yes">&#10003;</div><div class="lbl">Póker en vivo<b>Black Hawk y Cripple Creek</b></div></div>
+    </div>
+  </div>
+
+  <div class="big">
+    <div class="fact"><div class="num">69</div><div class="ftx">mesas en Talking Stick<br>(Scottsdale)</div></div>
+    <div class="fact"><div class="num">6</div><div class="ftx">mesas en Cripple Creek<br>(jueves a domingo)</div></div>
+  </div>
+</div>
+
+<div class="wm">
+  <svg viewBox="0 0 24 24" fill="#c9a44a"><path d="M12 2C9 6.5 4 9.2 4 13.4A5.1 5.1 0 0 0 9.1 18.5c.9 0 1.7-.2 2.4-.7-.2 1.6-.8 2.9-1.9 4.2h4.8c-1.1-1.3-1.7-2.6-1.9-4.2.7.5 1.5.7 2.4.7A5.1 5.1 0 0 0 20 13.4C20 9.2 15 6.5 12 2z"/></svg>
+  <span>holdemmaster.com</span>
+</div>
+</body></html>

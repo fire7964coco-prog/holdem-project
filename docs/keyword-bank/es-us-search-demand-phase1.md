@@ -66,9 +66,10 @@
 - **함정**: ★Horseshoe Hammond=**인디애나州**(cerca지만 IN법, "cruzando a Indiana" 명시). IL 온라인 포커 비규제(sweeps=최고 winnable, "dinero real 직접 아님" 정확히).
 
 ### Arizona (AZ) — 매우 넓음. ★스포츠벳은 스페인어 로컬 도는데 포커는 공백. 멕시코. 비규제→offshore+sweeps.
-- **winnable**: 합법성 `¿es legal el póker online en Arizona?` / ★gap 훅 `por qué hay apuestas deportivas pero no póker online en Arizona`·`¿por qué no puedo jugar póker online si sí puedo apostar deportes?` / sweeps `Global Poker Arizona es legal`·`jugar póker gratis y ganar dinero real` / 라이브 `casinos con póker en Arizona`·`sala de póker Talking Stick`·`dónde jugar póker en Phoenix`·`póker cerca de Tucson`·`Casino Arizona/Desert Diamond/Harrah's Ak-Chin` / 나이 `qué edad para jugar póker en Arizona`(라이브 18 vs 스포츠벳 21)
-- **PAA**: 온라인 미규제·유일합법=sweepstakes·2021 컴팩트가 스포츠벳만(iGaming 제외)·The Arena Talking Stick 69테이블(라스베가스 최대급)·18세(포커) vs 21세(스포츠벳)
-- **함정**: ★"스포츠벳 legal but 포커 online 아님"(2021 컴팩트 iGaming 제외) 최우선 훅. sweeps=sorteo(offshore와 구분). 18/21 나이.
+- **winnable**: 합법성 `¿es legal el póker online en Arizona?` / ★gap 훅 `por qué hay apuestas deportivas pero no póker online en Arizona`·`¿por qué no puedo jugar póker online si sí puedo apostar deportes?` / sweeps `Global Poker Arizona es legal`·`jugar póker gratis y ganar dinero real` / 라이브 `casinos con póker en Arizona`·`sala de póker Talking Stick`·`dónde jugar póker en Phoenix`·`póker cerca de Tucson`·`Casino Arizona/Desert Diamond/Harrah's Ak-Chin` / 나이 `qué edad para jugar póker en Arizona`(★전부 21 — 아래 정정 참조)
+- **PAA**: 온라인 미규제·유일합법=sweepstakes·2021 컴팩트가 스포츠벳만(iGaming 제외)·The Arena Talking Stick 69테이블(라스베가스 최대급)·전 게임 21세
+- **함정**: ★"스포츠벳 legal but 포커 online 아님"(2021 컴팩트 iGaming 제외) 최우선 훅. sweeps=sorteo(offshore와 구분).
+- ⚠️**2026-07-27 1차출처 정정**: 초기 수확 때 적힌 "포커 18세"는 **오류**. A.R.S. §5-601(B)(1) "prohibits persons who are under twenty-one years of age from wagering" + 2021 컴팩트 §3(w) "no Person under twenty one (21) years of age" + 카지노 공식 문구(Desert Diamond "Must be 21") 3중 확인 = **애리조나는 포커 포함 전 게임 21세**. 또한 Casino Arizona는 포커룸 없음(Talking Stick으로 이전), Bucky's는 2020년 포커 영구 폐쇄, Harrah's Ak-Chin은 미확인 → 기사에서 제외.
 
 ### New Mexico (NM) — 거의 완전 공백. ★국가 오인식 함정. 표준 멕시코+문화톤. 비규제(트라이벌 라이브만).
 - **winnable**: 합법성 `¿es legal jugar póker en Nuevo México?`·`¿me pueden arrestar por jugar póker online?`(기소 0건 훅) / 라이브 `casinos con sala de póker en Nuevo México`·`póker en vivo en Albuquerque`·`sala de póker Sandia Casino`·`dónde jugar cerca de Santa Fe`(Buffalo Thunder) / 방법 `cómo jugar póker por dinero en Nuevo México`·`qué edad`(21)·`torneos`(Heartland@Route 66) / 온라인대안 `sweepstakes póker NM`·`póker offshore desde NM` / 트라이벌 `casinos tribales con póker`

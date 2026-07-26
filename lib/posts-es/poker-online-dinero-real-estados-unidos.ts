@@ -47,7 +47,7 @@ En seis, y en ningún otro: **Nueva Jersey, Nevada, Pensilvania, Míchigan, Dela
 | Estado | Dónde puedes jugar |
 |---|---|
 | Nueva Jersey | WSOP.com · BetMGM (también como Borgata, misma red) · PokerStars (como FanDuel) |
-| Nevada | WSOP.com — es la única |
+| Nevada | WSOP.com — la única con sala abierta al público |
 | Pensilvania | WSOP.com · BetMGM · BetRivers · PokerStars (FanDuel) |
 | Míchigan | WSOP.com · BetMGM · BetRivers · PokerStars (FanDuel) |
 | Delaware | BetRivers — es la única |
@@ -65,11 +65,11 @@ Hay tres estados donde la ley avanzó pero sigue sin haber una sala de póker ab
 
 Porque el acuerdo que une a los seis estados —el **MSIGA**— solo da permiso; quien junta las mesas de verdad es cada marca. Y ninguna marca tiene licencia en los seis a la vez. Por eso ==el estado en el que vives importa menos que la app que elijas.==
 
-La consecuencia práctica sorprende a todo el mundo: **un jugador de Nevada no puede sentarse con uno de Delaware o Virginia Occidental.** En Nevada la única sala es WSOP.com; en Delaware y Virginia Occidental, la única es BetRivers. No existe ninguna marca con licencia en ambos lados, así que esos jugadores nunca se cruzan.
+La consecuencia práctica sorprende a todo el mundo: **un jugador de Nevada no puede sentarse con uno de Delaware o Virginia Occidental.** En Nevada la única sala abierta al público es WSOP.com; en Delaware y Virginia Occidental, la única es BetRivers. No existe ninguna marca con licencia en ambos lados, así que esos jugadores nunca se cruzan.
 
 Lo que sí funciona igual en todas partes: **Nueva Jersey, Míchigan y Pensilvania** están en prácticamente todas las redes. Si vives en uno de esos tres, tienes acceso a las mesas más llenas del país sin importar qué app abras.
 
-En **Texas** el camino es otro: no hay salas online ni casinos, pero sí [clubes de socios que cobran por hora](/es/blog/poker-en-texas "thumb:/images/poker-en-texas-hero.webp") en vez de rake. Y en **Florida** hay salas por todo el sur del estado, con una particularidad: [ahí se juega póker desde los 18](/es/blog/poker-en-florida "thumb:/images/poker-en-florida-hero.webp"). **California** tiene 78 cardrooms y una regla propia: [la ley prohíbe cobrar rake por porcentaje](/es/blog/poker-en-california "thumb:/images/poker-en-california-hero.webp").
+En **Texas** el camino es otro: no hay salas online ni casinos, pero sí [clubes de socios que cobran por hora](/es/blog/poker-en-texas "thumb:/images/poker-en-texas-hero.webp") en vez de rake. Y en **Florida** hay salas por todo el sur del estado, con una particularidad: [ahí se juega póker desde los 18](/es/blog/poker-en-florida "thumb:/images/poker-en-florida-hero.webp"). **California** tiene 78 cardrooms y una regla propia: [la ley prohíbe cobrar rake por porcentaje](/es/blog/poker-en-california "thumb:/images/poker-en-california-hero.webp"). Desde **Chicago** la app legal más cercana es la de Míchigan, y mientras tanto [las mesas de verdad están fuera de la ciudad](/es/blog/poker-en-chicago "thumb:/images/poker-en-chicago-hero.webp"). Y en **Arizona y Colorado** el contraste es al revés: apuestas deportivas por celular sí, [póker online no — y por un motivo concreto](/es/blog/poker-en-arizona-y-colorado "thumb:/images/poker-en-arizona-y-colorado-hero.webp").
 
 Si vives en Nueva York, este es justo el motivo por el que a mucha gente le conviene cruzar a [Nueva Jersey](/es/blog/poker-en-nueva-jersey "thumb:/images/poker-en-nueva-jersey-hero.webp"): al otro lado del río el póker online sí tiene licencia. Los detalles del caso neoyorquino están en la [guía de póker en Nueva York](/es/blog/poker-en-nueva-york "thumb:/images/poker-en-nueva-york-hero.webp").
 

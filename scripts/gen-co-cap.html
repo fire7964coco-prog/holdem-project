@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{width:1200px;height:675px;font-family:Inter,system-ui,sans-serif;
+    background:radial-gradient(ellipse at 50% 0%,#1d3a2f 0%,#132821 55%,#0d1a16 100%);
+    color:#f4efe4;position:relative;overflow:hidden}
+  .felt{position:absolute;inset:0;opacity:.10;
+    background-image:repeating-linear-gradient(45deg,#000 0 2px,transparent 2px 5px)}
+  .wrap{position:relative;padding:52px 68px 0;text-align:center}
+  .kicker{font-size:19px;letter-spacing:.22em;text-transform:uppercase;color:#c9a44a;font-weight:700}
+  h1{font-size:46px;line-height:1.12;font-weight:900;margin-top:12px}
+  .pair{display:flex;gap:34px;margin-top:44px;align-items:stretch}
+  .side{flex:1;border-radius:20px;padding:30px 30px 32px;text-align:left;position:relative}
+  .old{background:rgba(196,84,74,.13);border:1px solid rgba(224,138,128,.34)}
+  .new{background:rgba(201,164,74,.13);border:1px solid rgba(201,164,74,.55)}
+  .yr{font-size:19px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+  .old .yr{color:#e08a80}
+  .new .yr{color:#c9a44a}
+  .amt{font-size:76px;font-weight:900;line-height:1;margin-top:14px}
+  .old .amt{color:#e08a80}
+  .new .amt{color:#c9a44a;font-size:62px;margin-top:24px}
+  .cap{font-size:22px;font-weight:600;color:#e2dac8;margin-top:16px;line-height:1.35}
+  .sub{font-size:17px;font-weight:500;color:#a0b4a8;margin-top:12px;line-height:1.4}
+  .arrow{align-self:center;font-size:46px;color:#c9a44a;font-weight:900}
+  .foot{margin-top:34px;font-size:20px;font-weight:600;color:#cfc6b2}
+  .foot b{color:#c9a44a;font-weight:800}
+  .wm{position:absolute;right:40px;bottom:30px;display:flex;align-items:center;gap:11px;opacity:.66}
+  .wm svg{width:29px;height:29px}
+  .wm span{font-size:20px;font-weight:700;color:#c9a44a;letter-spacing:.02em}
+</style></head>
+<body>
+<div class="felt"></div>
+<div class="wrap">
+  <div class="kicker">Colorado</div>
+  <h1>El tope de $100 por apuesta<br>desapareció en 2021</h1>
+
+  <div class="pair">
+    <div class="side old">
+      <div class="yr">Hasta abril de 2021</div>
+      <div class="amt">$100</div>
+      <div class="cap">máximo por apuesta,<br>también en póker</div>
+      <div class="sub">No existía el no-limit de verdad: no podías poner más de cien dólares en una sola acción.</div>
+    </div>
+
+    <div class="arrow">&#10230;</div>
+
+    <div class="side new">
+      <div class="yr">Desde el 1 de mayo de 2021</div>
+      <div class="amt">Sin tope</div>
+      <div class="cap">cada pueblo decide<br>sus propios límites</div>
+      <div class="sub">Black Hawk fue el primero en autorizarlo. Por eso hoy ves mesas anunciadas como "sin máximo".</div>
+    </div>
+  </div>
+
+  <div class="foot">Lo aprobaron los votantes en noviembre de 2020 &nbsp;·&nbsp; <b>60.5% a favor</b></div>
+</div>
+
+<div class="wm">
+  <svg viewBox="0 0 24 24" fill="#c9a44a"><path d="M12 2C9 6.5 4 9.2 4 13.4A5.1 5.1 0 0 0 9.1 18.5c.9 0 1.7-.2 2.4-.7-.2 1.6-.8 2.9-1.9 4.2h4.8c-1.1-1.3-1.7-2.6-1.9-4.2.7.5 1.5.7 2.4.7A5.1 5.1 0 0 0 20 13.4C20 9.2 15 6.5 12 2z"/></svg>
+  <span>holdemmaster.com</span>
+</div>
+</body></html>
