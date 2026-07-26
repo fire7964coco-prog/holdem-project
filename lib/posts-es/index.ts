@@ -41,6 +41,8 @@ import { POST as holdemFish } from "./holdem-fish";
 import { POST as holdemCooler } from "./holdem-cooler";
 import { POST as holdemBadBeat } from "./holdem-bad-beat";
 import { POST as holdemCardCounting } from "./holdem-card-counting";
+// es-US 로컬 (KO/EN 대응본 없는 유니크 글)
+import { POST as pokerLegalEstadosUnidos } from "./poker-legal-estados-unidos";
 
 /**
  * 스페인어(es) 블로그 포스트.
@@ -97,6 +99,8 @@ export const ES_POSTS: Post[] = [
   holdemBadBeat,
   // 기타 (독립)
   holdemCardCounting,
+  // es-US 로컬 허브 (미국 히스패닉 대상 유니크 글 — 다른 언어에 대응본 없음)
+  pokerLegalEstadosUnidos,
 ];
 
 export function getEsPost(slug: string): Post | undefined {

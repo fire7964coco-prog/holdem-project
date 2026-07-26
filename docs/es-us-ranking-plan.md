@@ -45,7 +45,8 @@
 
 ### 2-2. 전국 허브 2개 (내부링크 중심축 + generic 흡수)
 1. **허브 A — 합법성 지도**: `¿En qué estados de EE.UU. es legal jugar póker? (guía 2026)` — 50주 테이블(라이브/온라인/스포츠/나이/sweeps 열). **초소형 8주(UT·HI·AK·ND·MT·WY·ME·VT)는 여기 row로 흡수**(단독글 X). 모든 州허브로 링크 방출 → 링크주스 분배 + generic `¿es legal el póker en EE.UU.?` 흡수.
-2. **허브 B — 규제전환/MSIGA**: `Los 7 estados donde el póker online es legal (y cómo comparten mesas: MSIGA)` — NY 제외 규제 6주(NJ·NV·PA·MI·DE·WV) + 앱 매핑(WSOP=NV/NJ/PA/MI · BetRivers=PA/MI/DE/WV · PokerStars-FanDuel=NJ/PA/MI). **최고 전환 자산**(가입 직결).
+2. **허브 B — 규제전환/MSIGA**: `Los 6 estados donde el póker online es legal (y cómo comparten mesas: MSIGA)` — 규제 6주(NJ·NV·PA·MI·DE·WV) + 앱 매핑(WSOP=NV/NJ/PA/MI · BetRivers=PA/MI/DE/WV · PokerStars-FanDuel=NJ/PA/MI). **최고 전환 자산**(가입 직결).
+   - ⚠️**정확성**: "7개주"로 쓰지 말 것 — **운영 중인 건 6개주**. CT는 2021 합법화했으나 **미출시**(licensee 포기), RI는 온라인 카지노만 있고 포커 없음. 이 둘은 "legalizado pero sin lanzar"로 별도 분류.
 
 ### 2-3. register 5클러스터 로컬라이징 (단일 voice 불가)
 멕시코(tuteo 표준) / 쿠바(FL) / 카리브 PR·도미니칸(NY·NJ·PA·MA·CT·RI·OH북동) / 중미 voseo(MD·VA·GA·LA온두라스) / 특수 NM. → 州글마다 해당 클러스터 voice·슬랭·통화(전부 USD).

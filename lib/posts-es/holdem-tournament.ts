@@ -402,6 +402,11 @@ A. Como regla, cobra el 10-15% superior del campo. En un torneo de 100 jugadores
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Las posiciones en la mesa de póker</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Por qué tu asiento marca cada decisión del torneo</div>
   </a>
+  <a href="/es/blog/poker-legal-estados-unidos" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Legalidad</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">¿Dónde es legal jugar póker en EE. UU.?</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Antes de buscar torneo, mira qué se permite en tu estado</div>
+  </a>
 </div>
 `.trim(),
 };
