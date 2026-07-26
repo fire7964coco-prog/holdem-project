@@ -5,7 +5,17 @@
 
 ---
 
-## ▶▶▶▶ 새 세션 START HERE (다음 작업 = ★**LATAM 보충 패스 — 멕시코부터**. es 42/42 Spain 베이스는 완결)
+## ▶▶▶▶▶ 새 세션 START HERE (2026-07-26 — ★**es 국가별 SEO 구조 전략 논의 중**, 실행 전. 사용자: "작업 나중, 논의/플랜 먼저")
+
+> ★★**먼저 읽어라**: `docs/session-log-2026-07-26.md`(요약 아닌 전문 — es 국가분할 전략 Q&A·추론·수렴점·열린 결정 전부). 재부팅/모델전환으로 맥락 날아가도 이걸로 복원.
+> **한 줄 상태**: es 42/42는 **Spain 베이스로 경화 완료**. 그 후 MX/UY/PE/US히스패닉 롱테일 수확함(리서치 단계). US히스패닉 8개주 시장분석 완료(`docs/keyword-bank/es-us-hispanic.md`). **아직 lowfruits US 파싱·포스트 편집 미착수.**
+> **수렴한 방향(미확정)**: ①개념·전략·확률 = `/es/`를 **LATAM-중립**으로 재경화(스페인풍 제거: póquer→poker·€→중립/$·vosotros→ustedes, US히스패닉도 중립에 포함) ②미국 로컬(합법성·도시살라·USD전환) = **신규 `/es-us/` 트랙**으로 국가특화(zh/zh-hant 선례로 es만 독립·글단위 선택분할 가능, /es/ 무변경 추가형) ③핵심근거=hreflang은 순위부스트 아님·개념글은 지역 안 잠기나 SERP는 국가별 localize·단일 /es/를 US로 좁히면 LATAM 소외.
+> **다음 세션 = 이 논의 이어 실행안 확정**: (a)LATAM-중립 register 규칙 수립 (b)/es/ 중립 vs es-us 경계선 긋기 (c)착수점(lowfruits US 파싱 / 멕시코 fish·cooler·bad-beat 복귀 / 중립 재경화). 사용자 합의 후 착수.
+> ⚠️ 이번 세션 커밋: `52eaa2b`(리서치5파일)·`4622198`(SEO가이드 원문복구—2개월전 "새새" 오타로 유실됐던 것). 손상3파일 git checkout 복구.
+
+---
+
+## ▶▶▶▶ (이전 계획, 위 논의로 재검토중) START HERE (다음 작업 = ★**LATAM 보충 패스 — 멕시코부터**. es 42/42 Spain 베이스는 완결)
 
 > 읽는 순서: `CLAUDE.md` → 이 블록 → ★**`docs/session-log-2026-07-24_25.md`(직전 세션 대화·결정·지시 전문 — 재부팅으로 맥락 날아가도 이걸로 복원)** → `docs/es-hardening-workflow.md`(지역편차 그라디언트) → `docs/es-brief-*.md`(6클러스터 Spain 브리프, LATAM 신규분과 대조용) → `docs/local-voice/es-mexico.md`(멕시코 현지 voice).
 
