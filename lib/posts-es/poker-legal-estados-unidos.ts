@@ -12,8 +12,8 @@ export const POST: Post = {
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🗺️",
-  image: "/images/holdem-pub-legal-casino-floor.webp",
-  imageAlt: "Sala de casino llena de jugadores sentados en mesas, con máquinas tragamonedas al fondo",
+  image: "/images/poker-legal-estados-unidos-hero.webp",
+  imageAlt: "Sala de póker de un casino estadounidense por la tarde, con fichas apiladas sobre el fieltro verde y varias mesas ocupadas al fondo",
   tags: [
     "es legal el poker en estados unidos",
     "poker online legal estados unidos",
