@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "poker-legal-estados-unidos",
   title: "¿Dónde es legal jugar póker en Estados Unidos? Mapa estado por estado",
   seoTitle: "¿Dónde es legal el póker en EE. UU.? Mapa estado por estado",
-  desc: "Solo 6 estados tienen póker online con licencia y en 11 no hay ni una sala en vivo. Los 50 estados por grupo: qué es legal y qué edad piden.",
+  desc: "Solo 6 estados tienen póker online con licencia y en 10 no hay ni una sala en vivo. Los 50 estados por grupo: qué es legal y qué edad piden.",
   tldr: "En Estados Unidos el póker no se decide a nivel nacional: cada estado manda. Jugar en vivo es legal en 40 de los 50 estados, pero el póker online con dinero real y licencia solo existe en 6 — Nueva Jersey, Nevada, Pensilvania, Míchigan, Delaware y Virginia Occidental. Ojo con un mito muy repetido: esos seis NO comparten todos la misma mesa, porque las partidas se juntan por marca, no por estado. En 10 estados no hay ni una sala en vivo, y en dos (Utah y Hawái) no hay ningún juego legal.",
   category: "rules",
   date: "2026-07-26",
