@@ -221,7 +221,11 @@ A. Casi siempre hay un casino al otro lado de la frontera estatal: de Memphis se
 
 **Q. ¿Puedo abrir una cuenta sin Seguro Social?**
 
-A. Las salas online con licencia están obligadas a verificar tu identidad, y para eso piden un **SSN o un ITIN** más una identificación oficial vigente. No es un trámite opcional ni algo que puedas saltarte: sin verificación no te dejan retirar el dinero que ganes. En las salas en vivo de un casino basta con una identificación oficial con foto, aunque si ganas un premio grande también te pedirán tu número fiscal para reportarlo.
+A. Sí, y **ningún estado exige ser ciudadano**. Las reglas de Nueva Jersey, Pensilvania, Míchigan y Delaware aceptan de forma expresa, para quien no es estadounidense, un **pasaporte o un número de identificación fiscal (ITIN)** en lugar del Seguro Social. En Nevada la regla pide el SSN solo "si eres residente de EE. UU.". Lo que no puedes saltarte es **verificar tu identidad**: sin ese paso no hay retiros. Como los formularios de las apps no siempre explican esta alternativa, lo práctico es escribirle al soporte antes de depositar.
+
+**Q. ¿Qué pasa si tardo en mandar mis documentos?**
+
+A. Puedes perder lo que ganaste, y esta es la letra chica que menos gente lee. En **Nevada**, la regla estatal te da **30 días** desde que abres la cuenta para completar la verificación. Mientras no la termines no puedes retirar nada ni depositar más de $5,000 — y si se cumple el plazo sin verificar, el operador cierra la cuenta, te devuelve solo tu depósito y **se queda con las ganancias**. Si el inglés te frena, pide ayuda el primer día, no el día 29.
 
 ---
 
