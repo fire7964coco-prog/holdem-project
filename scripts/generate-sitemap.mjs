@@ -68,14 +68,25 @@ function entry(loc, lastmod, changefreq, priority, alternates) {
   </url>`;
 }
 
-/** 번역본이 있는 글의 hreflang 대체 링크 묶음 (ko + 보조 언어 + x-default) */
+/** ko(한국어 마스터)에 실제 존재하는 슬러그 — hreflang이 404를 가리키지 않도록 가드 */
+const KO_SLUGS = new Set(POSTS.map((p) => p.slug));
+
+/**
+ * 번역본이 있는 글의 hreflang 대체 링크 묶음 (ko + 보조 언어 + x-default)
+ * ⚠️ ko는 **실제로 존재할 때만** 추가한다. 특정 언어에만 있는 유니크 글
+ * (예: es-US 로컬 글)은 ko 대응본이 없어 `/blog/<slug>`가 404이기 때문.
+ * (`lib/intl-blog-page.tsx`의 hreflangLanguages와 동일한 규칙)
+ */
 function altsForSlug(slug) {
   const secondaries = secondaryLocalesForSlug(slug);
   if (secondaries.length === 0) return [];
-  const alts = [{ hreflang: "ko", href: `${SITE}/blog/${slug}` }];
+  const alts = [];
+  if (KO_SLUGS.has(slug)) alts.push({ hreflang: "ko", href: `${SITE}/blog/${slug}` });
   for (const l of secondaries) {
     alts.push({ hreflang: HTML_LANG[l], href: `${SITE}/${l}/blog/${slug}` });
   }
+  // 자기 자신 하나뿐이면 hreflang 세트 자체가 무의미 → 생략
+  if (alts.length < 2) return [];
   const xDefault = secondaries.includes("en")
     ? `${SITE}/en/blog/${slug}`
     : `${SITE}/${secondaries[0]}/blog/${slug}`;
