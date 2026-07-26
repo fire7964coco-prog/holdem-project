@@ -55,7 +55,7 @@ O sea que dentro del mismo casino conviven **dos edades a la vez**:
 | Apuestas deportivas | 21 |
 | Blackjack y otros juegos de mesa | 21 |
 
-Si tienes entre 18 y 20 años, esa primera fila es toda tu vida social en un casino de Florida. Lleva identificación: te la van a pedir.
+Si tienes entre 18 y 20 años, esa primera fila es toda tu vida social en un casino de Florida. Lleva identificación: te la van a pedir. En [California, por ejemplo, la ley exige 21 para entrar siquiera](/es/blog/poker-en-california "thumb:/images/poker-en-california-hero.webp").
 
 ## ¿Dónde hay salas de póker de verdad?
 

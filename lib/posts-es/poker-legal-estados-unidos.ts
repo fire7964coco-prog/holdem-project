@@ -114,7 +114,7 @@ La ley existe; la sala no. Maine aprobó el póker online en enero de 2026 y se 
 
 Es el grupo más grande y el que más confusión genera, porque en muchos de ellos ==ya puedes apostar a deportes desde el teléfono pero no jugar póker== (lo explico en la siguiente sección). Para jugar tienes que ir a una sala física.
 
-Dentro de este grupo hay dos casos que merecen guía aparte. En **Nueva York**, la ciudad acaba de estrenar 242 mesas de casino y ninguna es de póker — lo explico en la [guía de póker en Nueva York](/es/blog/poker-en-nueva-york "thumb:/images/poker-en-nueva-york-hero.webp"). Y **Texas**, el estado con más hispanos del país, no tiene casinos pero sí [clubes privados con membresía](/es/blog/poker-en-texas "thumb:/images/poker-en-texas-hero.webp") — un modelo que no existe en ningún otro lado. Y en **Washington**, jugar póker online no es solo ilegal: es delito grave.
+Dentro de este grupo hay dos casos que merecen guía aparte. En **Nueva York**, la ciudad acaba de estrenar 242 mesas de casino y ninguna es de póker — lo explico en la [guía de póker en Nueva York](/es/blog/poker-en-nueva-york "thumb:/images/poker-en-nueva-york-hero.webp"). **Texas**, el estado con más hispanos del país, no tiene casinos pero sí [clubes privados con membresía](/es/blog/poker-en-texas "thumb:/images/poker-en-texas-hero.webp"). Y **California** tiene 78 cardrooms donde [la ley prohíbe el rake por porcentaje](/es/blog/poker-en-california "thumb:/images/poker-en-california-hero.webp") — dos modelos que no existen en ningún otro lado. Y en **Washington**, jugar póker online no es solo ilegal: es delito grave.
 
 ### 4. No hay póker en vivo en todo el estado — 10 estados
 

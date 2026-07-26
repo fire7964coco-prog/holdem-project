@@ -48,6 +48,7 @@ import { POST as pokerEnNuevaYork } from "./poker-en-nueva-york";
 import { POST as pokerEnNuevaJersey } from "./poker-en-nueva-jersey";
 import { POST as pokerEnTexas } from "./poker-en-texas";
 import { POST as pokerEnFlorida } from "./poker-en-florida";
+import { POST as pokerEnCalifornia } from "./poker-en-california";
 
 /**
  * 스페인어(es) 블로그 포스트.
@@ -111,6 +112,7 @@ export const ES_POSTS: Post[] = [
   pokerEnNuevaJersey,
   pokerEnTexas,
   pokerEnFlorida,
+  pokerEnCalifornia,
 ];
 
 export function getEsPost(slug: string): Post | undefined {
