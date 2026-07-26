@@ -84,3 +84,67 @@
 - **winnable**: 합법 `¿es legal el póker en Oklahoma?`·`casinos tribales póker Oklahoma legal` / ★트라이벌 `salas de póker en Oklahoma`·`WinStar sala de póker mesas`(46~55, 세계최대급)·`Choctaw Durant póker 24 horas`·`Hard Rock Tulsa`·`River Spirit Tulsa`·`Riverwind Norman` / 방법 `cómo entrar a la sala de póker de WinStar`·`qué juegos`(Hold'em/Omaha/Stud)·`Choctaw Rewards Club cómo registrarse` / 위치 `dónde jugar póker en Oklahoma City`·`casino con póker cerca de Tulsa` / ★크로스보더 `casino con póker cerca de Dallas`·`casino de póker en la frontera de Texas`·`WinStar cuánto queda de Dallas`(90min/I-35)·`Border Casino Thackerville`·`póker legal cerca de Texas`
 - **PAA**: 온라인 미규제(offshore만)·트라이벌(WinStar/Choctaw/Hard Rock)·WinStar ~46-55테이블·Dallas 80mi/90분·Hold'em/Omaha/Stud
 - **함정**: ★TX 국경 앵글 결정적(TX는 카지노 포커 없음 → OK 트라이벌이 Dallas 멕시칸 목적지, "cerca de Dallas/frontera/90 min I-35"). sweeps 2026-11 금지(offshore/sweeps 각도 stale 위험→트라이벌 에버그린). OK 트라이벌 베팅한도 없음(셀링포인트). WinStar 테이블수 확인 요망.
+
+---
+
+# ★2차 배치 — A·B티어 16개주 (2026-07-26) → Phase 1 총 28개주
+
+> ⚠️**데이터 품질**: 이 16개주는 세션 WebSearch 예산 소진(200/200) 이후 수확 → **Google Suggest API + rakko 폴백**. **3개 포스팅 컨셉·합법성·register·§13 함정은 사실 기반 견고**하나, **PAA 원문·라이브 SERP 순위는 미실측(재검증 플래그)**. 예산 재확보 후 6쿼리 라이브 재실측 권장. 다음 패스는 **주당 4개 컨셉**으로(사용자 지시).
+> ★**폴백의 수확**: Suggest가 **정량 whitespace 증명** — 스페인어 "州+poker" 조합 = 0건 / 영어 등가어 = 풍부. "수요 없음"이 아니라 "아직 아무도 스페인어로 안 써서 Suggest 미형성" = 선점.
+
+## 2차 배치 신규 크로스-패턴
+- **★육가공벨트 = 초고밀 히스패닉인데 카지노 원거리**(KS Garden City→Wichita 3시간·MN Worthington→트윈시티·IA Storm Lake·NE Schuyler): "cerca de mí" 검색 대비 실물 공급 부족 → **온라인/홈게임/학습 콘텐츠 + 정직한 거리안내**가 오히려 winnable.
+- **★"카지노≠포커" 정확성**: NE racino(WarHorse)·다수 신규 카지노 = **전용 포커룸 없음**(slots-first, 공식페이지 검증). "카지노 있음=포커 있음" §13 사고 주의.
+- **크로스보더 흡수**: IA Council Bluffs=오마하(NE) / IN Hammond=시카고(IL) / OK WinStar=댈러스(TX) / TN=Tunica(MS)·Cherokee(NC) / GA=FL·NC / NC=거리 먼 Cherokee / KS Garden City=원거리. "가장 가까운 합법 포커"가 옆 주인 경우 많음.
+- **★AR 스큐 노이즈**: `poker por dinero real` Suggest가 아르헨티나 voseo로 심하게 스큐 → US 글은 州앵커로 AR 분리 필수.
+- **register 확대**: 카리브(OH Lorain·CT Hartford·MA Lawrence/Holyoke) / 중미 voseo(LA 온두라스·MD 살바도르·VA 살바도르+볼리비아/페루) / 멕시코(WA·KS·NE·IA·MN·AR·IN·GA·NC 육가공). ★단 검색어·본문은 대체로 tuteo 중립이 안전(voseo는 로컬 voice 액센트로만, MD는 voseo 본문 실험 가능).
+
+## 16개주 압축 (whitespace · ★3개 포스팅 컨셉 · register · §13함정)
+
+### Ohio (OH) — 강한 whitespace(PokerAtlas/es 자동번역만). Lorain PR + Toledo 멕시코 이중.
+1. **합법성**: "¿Es legal jugar póker en línea en Ohio?..." (온라인X·라이브4카지노·sweeps 회색) 2. **살라 가이드**: Cleveland(JACK 26)/Columbus(Hollywood 34)/Cincinnati(Hard Rock 31) 3. **cómo(초보 온보딩)**: ID·현금바이인·$1/3. 함정: 온라인 포커 불가·PokerStars/GG 유도 금지. Toledo/Lorain 포커룸 없음→Cleveland 라우팅.
+
+### Indiana (IN) — 명확한 whitespace. 멕시코(East Chicago 57%).
+1. **합법성/HB1052**: sweeps 2026-07 금지+P2P 포커 예외(뉴스 훅) 2. **로컬(시카고 인접)**: Horseshoe Hammond·Ameristar East Chicago 3. **대안/무료플레이**: 라이브+스포츠벳+P2P sweeps. 함정: ★Hammond=IN州("Illinois 아님" 명시). 온라인 포커 불법.
+
+### Louisiana (LA) — 거의 전면 whitespace. ★온두라스 voseo(Kenner "Little Honduras").
+1. **로컬 라이브룸**: Caesars NO(WSOP, 8 Canal St)·Kenner·Metairie 2. **합법성**: ★"apuestas deportivas online SÍ, póker online NO" 3. **배턴루지/광역**: L'Auberge·Coushatta. 함정: 온라인 포커 불법 vs 스포츠벳 합법. Caesars=구 Harrah's. 홈게임 합법(하우스수익 없을때). Kenner OTB=슬롯(라이브룸 아님).
+
+### Connecticut (CT) — 매우 큼. ★카리브 PR(Hartford). [부분 실측 3/6]
+1. **합법성/gap**: ★"casino online sí, póker online todavía no"(2021 합법이나 미출시) 2. **라이브**: Foxwoods(114테이블?)·Mohegan Sun(30+) 3. **por dinero real**: 라이브+홈게임+offshore 3경로. 함정: 합법성≠이용가능성. Foxwoods 테이블수 재확인. portal.ct.gov가 PAA 직접 운영.
+
+### Massachusetts (MA) — 큼. ★카리브 도미니칸(Lawrence 82%)+PR(Holyoke). [부분 2/6]
+1. **합법성 허브**: 온라인 리얼머니X·라이브O·스포츠벳만 온라인 2. **살라**: Encore Boston Harbor(Everett, 24테이블 24h 21+)·MGM Springfield 3. **합법 대안**: sweeps/무료앱. 함정: Encore=Everett(보스턴 아님). 스포츠벳 vs 포커 혼동.
+
+### Maryland (MD) — 매우 넓음. ★★살바도르 voseo(PG County 미 최대 허브). [부분 2/6]
+1. **합법성**: ★홈게임법(테이블당 $1,000·2018)·온라인 스포츠벳만 2. **DC 근접**: MGM National Harbor(Oxon Hill=PG County 안, 45테이블 24h) 3. **포커 vs 스포츠벳**: 온라인 뭐가 합법. 함정: ★Horseshoe Baltimore 포커룸 폐쇄 가능성(재확인)→MGM+Live! 두 곳으로. register=voseo 본문 실험("¿podés jugar?").
+
+### Washington (WA) — 넓음. 멕시코 농업(Yakima 54%). [Suggest 폴백]
+1. **합법성·보호(최우선)**: ★온라인=중범죄(felony) 경고 2. **라이브 어디서**: card room+트라이벌 3. **Yakima/Tri-Cities 로컬**: Legends Casino(Toppenish). 함정: ★"온라인 pó커 delito grave" 상단 경고·보호적 톤=E-E-A-T. WA DC/Post/Denzel 노이즈 분리. 카드룸 21세.
+
+### Georgia (GA) — 완전 백지. 멕시코+중미(Atlanta 급성장). [Suggest 폴백]
+1. **합법성/현실경로**: ★라이브0·홈게임도 불법→sweeps/offshore/인근주 2. **애틀랜타 로컬**: "왜 없나"+인근주(FL Seminole·NC Cherokee) 3. **sweeps/온라인**: Global Poker 구조 정확히. 함정: "legal en Georgia" 절대 금지. sweeps=코인→상금(현금배팅 아님).
+
+### North Carolina (NC) — 순백. 멕시코+중미(Charlotte/Raleigh 급증). [Suggest 폴백]
+1. **합법성**: 스포츠벳만 합법·온라인 포커/카지노 불법 2. **어디서**: Cherokee 원거리(Charlotte 2.5시간)·Catawba 3. **실머니/온라인 대안**: sweeps/offshore 위험·라이브만 합법. 함정: 스포츠O 포커X 뭉뚱그리면 §13. Cherokee 지리 함정.
+
+### Virginia (VA) — 완전 공백. ★살바도르+볼리비아/페루(NoVA) tuteo 중립. [Suggest 폴백]
+1. **합법성**: ★"casinos sí, póker online real money NO"·WV와 별개주 혼동주의 2. **카지노 룸**: Rivers Portsmouth(최대)·Caesars Danville(WSOP) 3. **NoVA/DC 근접**: 상업카지노 없음→MD MGM. 함정: online real money 합법 오도 금지. Portsmouth/Danville만 포커룸.
+
+### Tennessee (TN) — 거의 백지. 멕시코(Nashville). [Suggest 실측]
+1. **합법성 진실**: ★카지노0+홈게임 불법+sweeps 금지(2026-05) 2. **인근주 지도**: Tunica MS(멤피스 40분)·Cherokee NC 3. **온라인/offshore**: 스포츠벳만 합법. 함정: "TN에 포커 카지노 있다" 금지. AR 스큐 분리(州앵커). 저볼륨→리치 필라 흡수.
+
+### Iowa (IA) — 거의 완전 공백. 멕시코 육가공. [재구성]
+1. **합법성/2026법**: sweeps 2026-07 금지·온라인 포커 불가·스포츠벳만 2. **포커룸 디렉토리**: Council Bluffs(Horseshoe/Ameristar)·Prairie Meadows·Riverside 3. **현금게임(앱없이)**: ID·21세·홈게임. 함정: ★Council Bluffs=오마하 크로스보더(사우스오마하 흡수). 육가공 도시 저볼륨→흡수.
+
+### Nebraska (NE) — 거의 완전 공백. 멕시코(South Omaha 육가공). [Suggest+공식검증]
+1. **합법성**: 스포츠벳 2025-12·온라인 포커/카지노 불법 2. **오마하 근처**: ★NE 카지노 포커룸 없음→강 건너 IA Council Bluffs(10-15분) 3. **Texas Hold'em 룰/전략**(상록수). 함정: ★★검증됨 racino=slots-first 포커룸 없음("카지노=포커" §13 사고). 크로스워드/가구 노이즈 필터.
+
+### Kansas (KS) — 거의 완전 공백. 멕시코 육가공. [Suggest 실측]
+1. **합법성**: 리테일 라이브O·온라인 리얼머니 포커X·스포츠벳만(2024) 2. **육가공 원거리**: Garden City/Dodge City/Liberal→Kansas Star(Wichita 3시간+) 정직 안내 3. **Texas Hold'em 학습허브**(228+ Suggest 수요→KS 랜딩). 함정: ★초고밀 히스패닉≠접근성. Boot Hill 소규모. KCK Argentine 역사지구.
+
+### Arkansas (AR) — 거의 완전 whitespace. 멕시코(NWA Springdale 42%). [Suggest+재구성]
+1. **합법성 허브**: 라이브 합법(3카지노)·온라인 포커 불법·스포츠벳만 2. **NWA 근접**: ★NWA 카지노 없음→OK 경계/Oaklawn 거리 3. **카지노 룸 가이드**: Oaklawn·Saracen·Southland. 함정: ⚠️Marshallese=비히스패닉. online real money 합법 오도 금지. "bono" 크로스오버(스페인어가 영어 SERP 유입 증거).
+
+### Minnesota (MN) — 교과서적 whitespace. 멕시코(Worthington 45% 육가공). [Suggest 실측]
+1. **합법성 허브**: ★온라인 스포츠벳조차 없음·온라인 전면불가·카드클럽18세/트라이벌 상이 2. **베뉴 가이드**: Canterbury Park(Shakopee)·Running Aces·트라이벌(Mystic Lake) 3. **온라인 대안**: ★sweeps 2025-11 철수(옛정보 금지)·라이브 유도. 함정: 나이 18(카드클럽) vs 21(트라이벌 주류구역). "card club(sala de cartas)" 병기. 육가공 통근권 거리.
