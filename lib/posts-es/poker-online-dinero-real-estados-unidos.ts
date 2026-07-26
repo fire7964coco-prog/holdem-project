@@ -69,7 +69,7 @@ La consecuencia práctica sorprende a todo el mundo: **un jugador de Nevada no p
 
 Lo que sí funciona igual en todas partes: **Nueva Jersey, Míchigan y Pensilvania** están en prácticamente todas las redes. Si vives en uno de esos tres, tienes acceso a las mesas más llenas del país sin importar qué app abras.
 
-Si vives en Nueva York, este es justo el motivo por el que a mucha gente le sale a cuenta cruzar a Nueva Jersey: al otro lado del río el póker online sí tiene licencia. Los detalles del caso neoyorquino están en la [guía de póker en Nueva York](/es/blog/poker-en-nueva-york "thumb:/images/poker-en-nueva-york-hero.webp").
+Si vives en Nueva York, este es justo el motivo por el que a mucha gente le sale a cuenta cruzar a [Nueva Jersey](/es/blog/poker-en-nueva-jersey "thumb:/images/poker-en-nueva-jersey-hero.webp"): al otro lado del río el póker online sí tiene licencia. Los detalles del caso neoyorquino están en la [guía de póker en Nueva York](/es/blog/poker-en-nueva-york "thumb:/images/poker-en-nueva-york-hero.webp").
 
 :::tip[Si tu problema es que a tu hora no hay mesas, el estado no es lo que tienes que cambiar — es la marca. Una sala con cuatro estados en su red tiene tráfico a las 3 de la mañana; una con tres, no siempre.]:::
 

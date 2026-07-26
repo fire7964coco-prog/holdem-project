@@ -45,6 +45,7 @@ import { POST as holdemCardCounting } from "./holdem-card-counting";
 import { POST as pokerLegalEstadosUnidos } from "./poker-legal-estados-unidos";
 import { POST as pokerOnlineDineroReal } from "./poker-online-dinero-real-estados-unidos";
 import { POST as pokerEnNuevaYork } from "./poker-en-nueva-york";
+import { POST as pokerEnNuevaJersey } from "./poker-en-nueva-jersey";
 
 /**
  * 스페인어(es) 블로그 포스트.
@@ -105,6 +106,7 @@ export const ES_POSTS: Post[] = [
   pokerLegalEstadosUnidos,
   pokerOnlineDineroReal,
   pokerEnNuevaYork,
+  pokerEnNuevaJersey,
 ];
 
 export function getEsPost(slug: string): Post | undefined {

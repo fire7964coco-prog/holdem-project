@@ -110,7 +110,7 @@ Lo que sí arriesgas es otra cosa: no hay regulador al que reclamar si desaparec
 
 ## ¿Me conviene cruzar a Nueva Jersey?
 
-Para muchos neoyorquinos, sí. Nueva Jersey tiene **las dos cosas legales**: salas en vivo en Atlantic City y **póker online con licencia estatal**. Desde el norte de Jersey se llega en transporte público, y para jugar online solo necesitas estar dentro del estado en ese momento — no ser residente.
+Para muchos neoyorquinos, sí. Nueva Jersey tiene **las dos cosas legales**: salas en vivo en Atlantic City y **póker online con licencia estatal**. Cómo abrir cuenta, qué casinos tienen mesas de verdad y qué papeles piden está en la [guía de póker en Nueva Jersey](/es/blog/poker-en-nueva-jersey "thumb:/images/poker-en-nueva-jersey-hero.webp"). Desde el norte de Jersey se llega en transporte público, y para jugar online solo necesitas estar dentro del estado en ese momento — no ser residente.
 
 La otra frontera es Canadá. Casino Niagara, del lado de Ontario, tiene sala de póker de 18 mesas y admite **desde los 19 años**. Para cruzar necesitas documento válido de frontera: pasaporte, tarjeta de pasaporte o la licencia de conducir mejorada (Enhanced Driver's License) que emite Nueva York.
 
