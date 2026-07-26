@@ -175,3 +175,66 @@
 - **디아스포라**: NoVA(Fairfax/PW/Arlington)=DC메트로 살바도르+★볼리비아(전미 38% 집중)/페루. Richmond/VA Beach=멕시코.
 - **winnable**: 신규 카지노+포커룸 트래커(어디 포커 있나)·합법성·NoVA 라이브 가이드(살바도르/볼리비아).
 - **register**: ★중미+남미 혼합. 중립 LATAM+DC메트로 맥락.
+
+---
+
+# ★★★확장 2차 — 나머지 30개주 (2026-07-26, 19에이전트) → **50개주 전체 완료**
+
+> 사용자 "나머지 주 전체 서치" 지시. 개별 15(DE·WV·OH·IN·MO·LA·MN·WI·MS·IA·KS·NE·AR·TN·OR)+묶음4(AL·SC·KY / RI·ME·NH·VT / ND·SD·MT·WY / UT·HI·ID·AK). **50개주 전부 스페인어 州특화 부재 = whitespace 최종 확증.**
+
+## 🏁 50개주 우선순위 티어 (마스터)
+- **S (규제-전환, 최고가치)**: NJ·NV·PA·MI + **DE·WV** = ★**규제 온라인 6개주 = 전부 MSIGA. 완결.** (TX·CA·FL은 대형 히스패닉 라이브로 S)
+- **A (대형 라이브+히스패닉)**: IL·AZ + OH·IN·LA·OK·CT·MA·MD·WA·CO
+- **B (offshore/합법성 훅 + 대형 히스패닉)**: GA·NC·TN·VA + KS·NE·IA·MN·AR (★육가공벨트)
+- **C (소형·니치)**: NM(특수)·RI·ID·OR·MO·WI·MS
+- **D (저우선)**: ND·SD·MT·WY·ME·NH·VT·UT·HI·AK
+
+## 30개주 압축 블록
+
+### 규제 온라인 (S) — MSIGA 완성
+- **DE**: ★2025 BetRivers Poker 단독(888/WSOP 철수). MSIGA=BetRivers 풀 PA·MI·DE·WV. 히스패닉 소(Sussex/Georgetown=과테말라 가금). winnable=저볼륨. register=과테말라/멕시코.
+- **WV**: ★2025 BetRivers Poker 단독. MSIGA(2023가입, MI·PA·DE·WV풀). 히스패닉 전미 최저(~2.2%). winnable=MSIGA 조연·라이브(인접 VA/OH 흡수). 단독 필라 지양.
+
+### 대형 라이브+히스패닉 (A)
+- **OH**: 온라인=스포츠만(포커X). 라이브 4카지노(JACK Cleveland·Hollywood Columbus·Hard Rock Cincinnati). ★Lorain 28%=PR/북동부 카리브 vs Toledo 멕시코. winnable=합법성 구분·라이브 가이드.
+- **IN**: 온라인=스포츠만. ★Horseshoe Hammond(중서부 최대급, 시카고 풀)·East Chicago 57%. sweeps 2026-07 금지(P2P포커 면제 뉘앙스). register=멕시코.
+- **LA**: 온라인=스포츠만. 라이브 Caesars NO(구 Harrah's)·Coushatta. ★★뉴올리언스=미 최대 온두라스("Little Honduras" Kenner). register=중미 voseo.
+- **OK**: (20개주 편 참조) 대형 트라이벌 WinStar 46테이블. sweeps 2026-11 금지.
+- **CT·MA·MD·WA·CO**: (20개주 편 참조)
+
+### offshore/합법성 훅 + 대형 히스패닉 (B)
+- **TN**: ★극단 제약 — 카지노0+**홈게임도 불법**+sweeps 2026-05 금지. offshore 유일. 스포츠만 합법. Nashville 급성장 멕시코(20.9만). winnable=합법성 explainer·인접주(Tunica MS/Cherokee NC).
+- **KS**: 온라인=스포츠만. 라이브 3룸(Hollywood KS Speedway·Kansas Star·Boot Hill). ★육가공벨트 Liberal 69%·Dodge City 67%·Garden City 56%·KCK 36%. register=멕시코.
+- **NE**: 온라인=규제無(스포츠 2025-12). ★신규 racino(WarHorse 등)=**전용 포커룸 없음**(slots-first, 정확성 주의). 육가공 Schuyler 75%·Lexington 60%·South Omaha. register=멕시코.
+- **IA**: 온라인=스포츠만. 라이브(Horseshoe/Ameristar Council Bluffs·Prairie Meadows). 육가공 Storm Lake 41%·Marshalltown·West Liberty. sweeps 2026-07 금지. Council Bluffs=오마하 크로스.
+- **MN**: ★온라인 스포츠도 없음(희귀). 카드클럽(Canterbury·Running Aces)+트라이벌. sweeps 2025-11 퇴출명령. 육가공 Worthington 45%·Willmar. register=멕시코.
+- **AR**: 온라인=스포츠만. 라이브 3레이시노(Oaklawn·Saracen·Southland). ★NWA Springdale 42%(Tyson 가금). ⚠️Marshallese=비히스패닉 구분. register=멕시코.
+- **GA·NC·VA**: (20개주 편 참조)
+
+### 소형·니치 (C)
+- **MO**: 온라인=스포츠(2025-12). 라이브 StL 4룸+KC Harrah's. 히스패닉 4%(KC Westside/Argentine). register=멕시코.
+- **WI**: 온라인=규제無(스포츠 2026 부족독점). 트라이벌 Potawatomi Milwaukee 15테이블. Milwaukee 멕시코68%/PR23%. register=멕시코+카리브.
+- **MS**: 온라인=규제無(스포츠는 카지노 내부만). ★걸프코스트 Biloxi(Beau Rivage)·Tunica(Horseshoe, 멤피스 인접). 히스패닉 소(카트리나 재건 중미). 이벤트 훅.
+- **RI**: ★규제 온라인카지노(Bally's 2024, 포커는 미출시). 라이브 Bally's Twin River(Maverick 룸). ★Providence 40%+ 라티노(도미니칸). register=카리브.
+- **ID**: 규제無. ★트라이벌=Class II 전자게임만(**포커룸 사실상 부재**). 농업 Nampa/Caldwell 멕시코. winnable=D중 최고("부족카지노 포커 없음→offshore").
+- **OR**: 규제無(스포츠 복권앱만). 트라이벌(Spirit Mountain·Wildhorse)+포틀랜드 소셜룸(폐업 진행). 히스패닉 14%(Woodburn 60%·Salem 농업). register=멕시코.
+- **NM**: (20개주 편, ★전미 1위 Nuevomexicano)
+
+### 저우선 (D) — 소형/도박금지
+- **AL**: 라이브0(Wind Creek=전자빙고만). offshore/인근주. Birmingham/Albertville 가금 히스패닉 성장.
+- **SC**: 라이브0(크루즈 to nowhere만). offshore/인근주(NC). Greenville/Charleston 성장.
+- **KY**: 라이브0(HHR 슬롯만). 스포츠 2023. offshore/인근주(IN/OH). Louisville/Lexington.
+- **SD**: ★Deadwood 역사·관광 포커(Dead Man's Hand). 스포츠=현장만. 육가공 Huron/Sioux Falls. D중 콘텐츠 가치 상.
+- **NH**: ★"charity poker"룸 밀집(The Nash 19테이블 등). 히스패닉 소(~4-5%).
+- **ND·MT·WY·ME·VT**: 소형·저볼륨. MT=2025 sweeps 금지(SB555). WY=Wind River 단일. VT=라이브0.
+- **UT·HI**: ★★미국 유이 **합법 도박 전면 0**. offshore/NV원정만. UT=SLC/Ogden 멕시코 성장.
+- **AK**: 자선게임만. offshore. 소형.
+
+## 🎯🎯 50개주 최종 종합 전략 (플랜 확정 입력)
+1. **whitespace = 전 50개주 확증.** 표본편향 아님. 기회 실재.
+2. **규제-전환 티어 = 정확히 6개주(NJ·NV·PA·MI·DE·WV), 전부 MSIGA.** ★풀 분할 주의: WSOP(NV/NJ/PA/MI)·BetRivers(PA/MI/DE/WV)·PokerStars-FanDuel(NJ/PA/MI). DE·WV=BetRivers 단독. → **"어느 주에서 어느 앱이 합법+공유풀" 스페인어 정리글 = 최고 전환 자산.**
+3. **★"스포츠벳은 합법인데 포커는 아님" = 전국 최대 반복 훅**(CO·MA·MD·NC·VA·OH·IN·MO·IA·KS·AR·TN·WI·LA…). 검색혼동 크고 스페인어 답 전무.
+4. **★sweepstakes 전국 붕괴 중**(금지: CA·NY·OK·IN·IA·TN·MT·UT + MN 퇴출). → sweeps는 "합법 대안"이 아니라 **"금지되는 중" 경고 앵글**로 전환. 최신성 필수.
+5. **디아스포라 register 지도(50개주) = 5클러스터**: 멕시코(대다수+육가공벨트)·쿠바(FL)·카리브PR/도미니칸(NY·NJ·PA·MA·CT·RI·OH북동)·중미남미voseo(MD·VA·GA·**LA온두라스**)·특수(NM Nuevomexicano). → **es-us는 단일 voice 불가, 주별 로컬라이징 필수.**
+6. **★육가공벨트 = 숨은 슈퍼클러스터**(Liberal 69%·Schuyler 75%·Storm Lake 41%·Worthington 45%·Springdale 42%·Yakima 54%·Dodge City 67%): 히스패닉 초고밀 + 경쟁 0 + 멕시코 register. 단 카지노 원거리 → **합법성+로컬+offshore/인근주** 콘텐츠.
+7. **정확성 주의(§13급)**: NE racino 포커룸 없음·ID 트라이벌 포커 없음·신규카지노 포커룸 생략 패턴 → "카지노=포커" 오도 금지. 합법성 과장·offshore "합법" 단정 금지.
