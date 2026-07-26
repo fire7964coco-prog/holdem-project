@@ -15,7 +15,11 @@
 > ✅✅**Wave 1 #1 발행 완료(2026-07-26)** = **전국 허브 A** `/es/blog/poker-legal-estados-unidos`(`lib/posts-es/`, intl 449). **KO/EN 대응본 없는 첫 유니크 es 글** — 인프라 0으로 가능함 검증됨(라우팅·hreflang·check-intl-links·sitemap 전부 통과).
 > ★**구조 교훈(사용자 지시)**: 50행 주별 표 → **법적 상태 그룹 4개**(6/2/32/10=50). 주별 상세 글을 쓸 게 아니면 표는 **오류 원천이자 유지보수 폭탄**. 커버리지는 유지하되 베뉴·거리 등 휘발성 주장 0건 → QA 치명 지적 8건이 설계로 소멸. **이 원칙을 이후 허브·주별 글에 그대로 적용할 것.**
 > ★★**2단 검증이 필수임을 실증**: 적대적 QA → 1차출처 심판. **초안과 QA가 둘 다 틀린 항목 다수**. 확정된 것 = MSIGA는 브랜드별 풀(NV↔DE/WV 불가) · AZ 21 · FL 포커만 18 · MN 전부 18 · NE 라이브 포커 있음(그룹4=10개주) · MD $1,000=24h 전원합계 · sweeps 제정법 10개주(UT·KY 제외, MN은 AG명령, NV 미포함, IN만 P2P포커 예외·NJ는 포커 명시금지) · ME 2026-01 합법화 미출시 · RI는 포커 인가대상 아님.
-> ▶**다음 = Wave 1 #2 = 전국 허브 B**(MSIGA 규제전환, 최고 전환 자산). 리서치 에이전트 결과 대기 중. ⚠️제목 "7 estados" 금지 — **운영 중은 6개주**.
+> ✅✅**Wave 1 #2 발행 완료** = **전국 허브 B** `/es/blog/poker-online-dinero-real-estados-unidos`(intl 450). 핵심="테이블은 주가 아니라 **브랜드**가 합친다"(NV↔DE/WV 불가). 히어로=MSIGA 인포그래픽(HTML+Playwright).
+> ★★**3단 검증 확립**(이 트랙 표준으로 굳힐 것): ①적대적 QA(Opus) → ②**Fable5 현지전문가 페르소나** → ③**1차출처 심판**. **심판이 QA의 오지적 2건을 되돌린 실증**(NV Reg 5A.110은 예치금 환불을 "의무"로 규정 — QA 따랐으면 개악될 뻔). **검수자도 틀린다 → 심판 생략 금지.**
+> ★★**1차 출처 은행 구축** = `docs/us-poker-primary-sources.md` — 법령·규정·IRS URL + 인용금지 stale 목록 + 확정불가 목록. **언어 중립이라 EN 트랙에서 그대로 재사용**(사용자 지시 2026-07-26). 주별 글·EN 미국 글의 근거로 직행.
+> ★**출처 인용을 기본 정책으로**(사용자 지시): 두 허브에 "Fuentes oficiales" 섹션 + 인라인 링크. 근거=posting.mdc GEO(출처 인용 +24.9%, 합산 +40%) + YMYL 신뢰. **게재 전 curl로 링크 응답 검증**, 접속 불가 URL은 조문 번호만 표기.
+> ▶**다음 = Wave 1 #3 = NY 주별 글**(최대 미개척 카리브 시장·삼중훅: NYC 상업룸 없음 + 합법 온라인 없음 + 2025-12 sweeps 금지). 이후 #4 NJ(전환 최강)·#5 TX.
 > ⚠️**미해결(사용자 확인 필요)**: ①히어로 이미지가 KO 글 재사용이라 맥락 약함 ②본문 이미지 0장(14분 글) → 커서로 "6개주 지도"·"18 vs 21" 인포그래픽 제작 권장.
 > ★★**먼저 읽어라**: ①`docs/keyword-bank/es-us-search-demand-phase1.md`(**US 28개주 풀실측** 1차12+2차16) ②`docs/es-plan-latam-us-hybrid.md`(확정 플랜) ③`docs/keyword-bank/es-us-hispanic.md`(50개주 시장지도) ④`docs/session-log-2026-07-26.md`(전략Q&A).
 > **★핵심 방법론 교훈**([[es-us-keyword-tool-websearch-paa]]): **lowfruits는 US-로컬 스페인어 못 뽑음**(자동완성=영어/LATAM 지배, 4시드 실증). US-히스패닉은 영어 못하는 인구가 스페인어로 검색하나 볼륨툴이 과소평가=whitespace 이면. → **WebSearch PAA(주별 6각도)가 US-로컬 주도구.** 폴백 Suggest도 정량 whitespace 확증(스페인어 "州+poker"=0건).
