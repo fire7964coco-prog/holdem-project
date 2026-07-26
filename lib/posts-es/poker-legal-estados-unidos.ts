@@ -100,7 +100,7 @@ Antes, una aclaración que evita la mayoría de los malentendidos. "Póker en vi
 
 **Delaware · Míchigan · Nevada · Nueva Jersey · Pensilvania · Virginia Occidental**
 
-Son los únicos con salas online reguladas y funcionando de verdad. También tienen póker en vivo. Todos exigen 21 años y que estés físicamente dentro del estado.
+Son los únicos con salas online reguladas y funcionando de verdad. También tienen póker en vivo. Todos exigen 21 años y que estés físicamente dentro del estado. Si vives en uno de ellos, la [guía para empezar a jugar online](/es/blog/poker-online-dinero-real-estados-unidos "thumb:/images/poker-online-dinero-real-msiga.webp") explica qué app sirve en tu estado y qué documentos piden.
 
 ### 2. Lo legalizaron, pero todavía no puedes jugar — 2 estados
 
