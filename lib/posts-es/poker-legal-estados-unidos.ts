@@ -71,6 +71,8 @@ La consecuencia práctica sorprende a mucha gente: **un jugador de Nevada no pue
 
 :::note[Ojo con la marca: PokerStars sigue existiendo en EE. UU., pero en Nueva Jersey, Pensilvania y Míchigan opera bajo el paraguas de FanDuel. Si buscas "PokerStars" y te aparece FanDuel, no es una estafa — es la misma operación con otro nombre.]:::
 
+![Jugador de póker en línea frente a su computadora portátil de noche, con la mesa verde en pantalla y una taza de café al lado](/images/poker-legal-estados-unidos-online.webp)
+
 Hay dos casos que confunden mucho y conviene separar:
 
 - **Connecticut** legalizó el póker online en 2021… y nunca lo lanzó. Los dos licenciatarios del estado decidieron que el mercado era demasiado pequeño, y la ley estatal tampoco permite compartir jugadores con otros estados. Legal en el papel, imposible en la práctica.
