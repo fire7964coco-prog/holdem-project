@@ -94,6 +94,8 @@ No hacen falta cincuenta fichas distintas: en la práctica cada estado cae en un
 
 Antes, una aclaración que evita la mayoría de los malentendidos. "Póker en vivo" significa una sala de verdad: dealer, mesa y jugadores contra jugadores. ==No cuentan las máquinas de video póker, el bingo electrónico ni los juegos de casino con nombre parecido== —como el Ultimate Texas Hold'em— donde juegas contra la casa y no contra otras personas. Más de un casino presume de "Hold'em" sin tener una sola mesa de póker real.
 
+![Resumen visual: los 50 estados repartidos en cuatro grupos — 6 con póker online, 2 legalizados sin lanzar, 32 solo en vivo y 10 sin ninguna sala](/images/poker-legal-estados-unidos-grupos.webp)
+
 ### 1. Puedes jugar online con dinero real — 6 estados
 
 **Delaware · Míchigan · Nevada · Nueva Jersey · Pensilvania · Virginia Occidental**
@@ -165,6 +167,8 @@ Antes de abrir una cuenta en una de estas apps, revisa cómo está la situación
 ## ¿18 o 21 años? Depende del sitio, no solo del estado
 
 La edad mínima no es uniforme, y dentro de un mismo edificio puede haber ==dos edades distintas a la vez==: en Florida puedes sentarte a una mesa de póker a los 18 y no poder tocar una tragamonedas hasta los 21. La norma general del país son 21 años, con excepciones concretas.
+
+![Comparación de la edad mínima para jugar póker: 18 años solo en salas concretas de Florida, Minnesota y Texas, frente a los 21 años que rigen en el resto](/images/poker-legal-estados-unidos-edad.webp)
 
 | Sitio | Edad | Ejemplo |
 |---|---|---|
