@@ -148,7 +148,7 @@ En **Colorado** no encontré ni una ley que los prohíba ni una acción del regu
 
 Solo en seis estados, y **estando físicamente dentro de uno de ellos**: Nueva Jersey, Nevada, Pensilvania, Míchigan, Delaware y Virginia Occidental. Ni Arizona ni Colorado están en la lista, y no basta con abrir la cuenta cuando andes de visita por allá — la app comprueba dónde estás parado, no dónde vives.
 
-Para quien vive en Arizona, el estado con póker online más cercano es **Nevada**, ahí al lado. Es la razón por la que a mucha gente de Phoenix le rinde doble el viaje a Las Vegas: la sala en vivo y, mientras anda allá, la app.
+Para quien vive en Arizona, el estado con póker online más cercano es **Nevada**, ahí al lado — y si vas a manejar hasta allá, [esto es lo que cuesta sentarse en Las Vegas](/es/blog/poker-en-las-vegas "thumb:/images/poker-en-las-vegas-hero.webp"). Es la razón por la que a mucha gente de Phoenix le rinde doble el viaje a Las Vegas: la sala en vivo y, mientras anda allá, la app.
 
 Desde Colorado no hay ninguno cerca. Ahí la respuesta honesta es que **el póker de verdad es en vivo, en Black Hawk**, y que cualquier página que te acepte desde Denver está operando sin licencia de tu estado.
 

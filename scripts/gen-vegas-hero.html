@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{width:1200px;height:675px;font-family:Inter,system-ui,sans-serif;
+    background:radial-gradient(ellipse at 50% 0%,#1d3a2f 0%,#132821 55%,#0d1a16 100%);
+    color:#f4efe4;position:relative;overflow:hidden}
+  .felt{position:absolute;inset:0;opacity:.10;
+    background-image:repeating-linear-gradient(45deg,#000 0 2px,transparent 2px 5px)}
+  .wrap{position:relative;padding:44px 64px 0}
+  .kicker{font-size:19px;letter-spacing:.22em;text-transform:uppercase;color:#c9a44a;font-weight:700}
+  h1{font-size:50px;line-height:1.08;font-weight:900;margin-top:10px}
+  h1 em{font-style:normal;color:#c9a44a}
+  .cards{display:flex;gap:20px;margin-top:32px}
+  .c{flex:1;background:rgba(255,255,255,.05);border:1px solid rgba(201,164,74,.30);
+    border-radius:18px;padding:22px 22px 20px}
+  .c.warn{background:rgba(196,84,74,.13);border-color:rgba(224,138,128,.40)}
+  .n{font-size:52px;font-weight:900;color:#c9a44a;line-height:1}
+  .c.warn .n{color:#e08a80}
+  .t{font-size:20px;font-weight:700;margin-top:12px;line-height:1.28}
+  .s{font-size:16px;font-weight:500;color:#9db3a6;margin-top:7px;line-height:1.35}
+  .strip{margin-top:26px;background:rgba(201,164,74,.10);border:1px solid rgba(201,164,74,.30);
+    border-radius:16px;padding:16px 26px;width:830px}
+  .strip .h{font-size:19px;font-weight:800;color:#c9a44a;letter-spacing:.02em}
+  .strip .b{font-size:18px;font-weight:600;color:#d8cfbb;margin-top:6px;line-height:1.35}
+  .wm{position:absolute;right:40px;bottom:32px;display:flex;align-items:center;gap:11px;opacity:.66}
+  .wm svg{width:29px;height:29px}
+  .wm span{font-size:20px;font-weight:700;color:#c9a44a;letter-spacing:.02em}
+</style></head>
+<body>
+<div class="felt"></div>
+<div class="wrap">
+  <div class="kicker">Las Vegas &nbsp;·&nbsp; Nevada</div>
+  <h1>Lo que nadie te dice antes<br><em>de tu primera mesa en Las Vegas</em></h1>
+
+  <div class="cards">
+    <div class="c">
+      <div class="n">21</div>
+      <div class="t">años cumplidos</div>
+      <div class="s">Sin excepciones. Un menor no puede ni quedarse parado en la zona de juego.</div>
+    </div>
+    <div class="c">
+      <div class="n">$1/$2</div>
+      <div class="t">la mesa más barata</div>
+      <div class="s">Publicada oficialmente, y fuera del Strip. Las salas del Strip no publican sus límites.</div>
+    </div>
+    <div class="c warn">
+      <div class="n">30%</div>
+      <div class="t">retención si no eres residente</div>
+      <div class="s">Lo aplica el IRS sobre lo ganado en póker.</div>
+    </div>
+  </div>
+
+  <div class="strip">
+    <div class="h">De todos los países hispanohablantes, solo España está exenta</div>
+    <div class="b">México, Colombia, Argentina, Perú, Chile y el resto de Latinoamérica no aparecen en la lista de convenios del IRS.</div>
+  </div>
+</div>
+
+<div class="wm">
+  <svg viewBox="0 0 24 24" fill="#c9a44a"><path d="M12 2C9 6.5 4 9.2 4 13.4A5.1 5.1 0 0 0 9.1 18.5c.9 0 1.7-.2 2.4-.7-.2 1.6-.8 2.9-1.9 4.2h4.8c-1.1-1.3-1.7-2.6-1.9-4.2.7.5 1.5.7 2.4.7A5.1 5.1 0 0 0 20 13.4C20 9.2 15 6.5 12 2z"/></svg>
+  <span>holdemmaster.com</span>
+</div>
+</body></html>
