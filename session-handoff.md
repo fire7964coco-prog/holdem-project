@@ -5,10 +5,12 @@
 
 ---
 
-## ▶▶▶▶▶▶ 새 세션 START HERE (2026-07-26 밤 — ★**재시작 직후: US 실검색 배치2 라이브 재실측**이 다음 액션)
+## ▶▶▶▶▶▶ 새 세션 START HERE (2026-07-26 밤 — ✅**US 배치2 라이브 재실측 완료** → 다음 액션 = **첫 글 착수**)
 
-> ★★★**재시작 이유·즉시 할 일**: 이번 세션에서 US 28개주 실검색 수요 수확 중, **WebSearch 세션한도(200회) 소진** → 2차 16개주가 Google Suggest/rakko 폴백(품질 저하)으로 나옴. **한도를 1000으로 올림**(`.claude/settings.local.json`의 `env.CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION`). 재시작하면 새 한도 적용 → **다음 액션 = 2차 16개주(OH·IN·LA·CT·MA·MD·WA·GA·NC·VA·TN·IA·NE·KS·AR·MN) + CT·MA·MD 부분분을 라이브 WebSearch로 재실측**(주별 6각도, ★**주당 4개 포스팅 컨셉**으로 — 사용자 지시). 그 후 병합 → 첫 글 착수.
-> ★★**먼저 읽어라**: ①`docs/keyword-bank/es-us-search-demand-phase1.md`(**US 28개주 실검색 수요** — 1차12=풀실측/2차16=폴백[재실측 대상]) ②`docs/es-plan-latam-us-hybrid.md`(확정 플랜) ③`docs/keyword-bank/es-us-hispanic.md`(50개주 시장지도) ④`docs/session-log-2026-07-26.md`(전략Q&A).
+> ✅✅**방금 완료(2026-07-26)**: US 2차 16개주(OH·IN·LA·CT·MA·MD·WA·GA·NC·VA·TN·IA·NE·KS·AR·MN)를 **한도 상향 후 4에이전트 병렬 라이브 WebSearch(주당 6각도·PAA·SERP 실측·4개 포스팅 컨셉)로 전량 재실측** → 폴백 대체 완료. **Phase 1 총 28개주 전부 풀실측.** `docs/keyword-bank/es-us-search-demand-phase1.md` 2차 배치 섹션 갱신됨. 정정 요약=`scratchpad/batch2-corrections.md`.
+> ★**재실측이 잡은 §13 정정(폴백 오류)**: MD Horseshoe Baltimore **폐쇄 아님(OPEN 23테이블)** · AR 진짜 포커룸=**Saracen 유일**(Oaklawn/Southland=house-banked) · IA sweeps **전면금지 아님**(SF2289=집행권한) · NC Two Kings **포커룸 없음**(→Cherokee 2.5h) · OH Toledo **자체룸 있음**(Cleveland 라우팅 오류) · NE WarHorse·LA Kenner OTB·TN Southland=**포커룸 없음** · MN sweeps **철수**(2025-12/SF4474)·스포츠벳 자체 없음 · WA Legends **18+**(21 아님) · CT Foxwoods **114=수용능력**(일상 ~35-40).
+> ★**다음 액션 = 첫 글 착수**(사용자와 착수 순서 합의 권장). 유력 후보(데이터 최리치·경쟁 최저): **NJ 규제전환 퍼널**(1차, 스페인어 경쟁 1개뿐·전환 데이터 리치) / **TX 합법성+card house**(최대 독자·50주 템플릿) / **AZ·CO "스포츠벳 sí, póker no" gap**(훅 최강) / 배치2 중 **MD 홈게임 $1000법**·**WA felony 보호글**·**IN HB1052 뉴스훅**·**VA≠WV**도 유니크. 워크플로=translate-pillar 아닌 **신규 /es/ 유니크 글**(인프라0, 플랜 §하이브리드).
+> ★★**먼저 읽어라**: ①`docs/keyword-bank/es-us-search-demand-phase1.md`(**US 28개주 풀실측** 1차12+2차16) ②`docs/es-plan-latam-us-hybrid.md`(확정 플랜) ③`docs/keyword-bank/es-us-hispanic.md`(50개주 시장지도) ④`docs/session-log-2026-07-26.md`(전략Q&A).
 > **★핵심 방법론 교훈**([[es-us-keyword-tool-websearch-paa]]): **lowfruits는 US-로컬 스페인어 못 뽑음**(자동완성=영어/LATAM 지배, 4시드 실증). US-히스패닉은 영어 못하는 인구가 스페인어로 검색하나 볼륨툴이 과소평가=whitespace 이면. → **WebSearch PAA(주별 6각도)가 US-로컬 주도구.** 폴백 Suggest도 정량 whitespace 확증(스페인어 "州+poker"=0건).
 > **확정 플랜(하이브리드)**: 개념·전략·확률=`/es/` LATAM-중립(Phase3 경량) / 미국로컬(합법성·도시살라·USD전환)=**신규 /es/ 유니크 글 먼저**(인프라0), generic 충돌만 나중에 /es-us/ 로케일. hreflang≠순위부스트·개념글 지역무관하나 SERP 국가별localize.
 > **★US 발견**: 티어 S(규제6주 NJ·NV·PA·MI·DE·WV=MSIGA + TX·CA·FL)/A/B/C/D · register 5클러스터(멕시코/쿠바FL/카리브PR도미니칸/중미남미voseo[LA온두라스·MD/VA살바도르]/NM) · 3훅(합법성·**"스포츠벳O 포커X"**·규제전환MSIGA풀) · 육가공벨트(카지노 원거리) · sweeps 붕괴. **첫 글 후보**: NJ 규제전환(데이터 최리치·경쟁1개) / TX 합법성(최대독자·card house·50주 템플릿) / AZ·CO "스포츠벳 gap".

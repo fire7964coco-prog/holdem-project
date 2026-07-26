@@ -3,6 +3,14 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-07-26 (밤) — ✅ US-히스패닉 실검색 수요 배치2 16개주 **라이브 재실측 완료** (Phase 1 총 28개주 풀실측)
+
+> 재시작 직후 액션. WebSearch 한도 상향(1000) 적용 후, 배치2가 폴백(Suggest/rakko)이던 16개주를 **4에이전트 병렬 라이브 WebSearch**로 재실측. 주당 6각도·verbatim PAA·SERP whitespace 실측·**주당 4개 포스팅 컨셉**(사용자 지시).
+- **16개주**: OH·IN·LA·CT·MA·MD·WA·GA·NC·VA·TN·IA·NE·KS·AR·MN. `docs/keyword-bank/es-us-search-demand-phase1.md` 2차 배치 섹션 폴백→실측 교체. 정정요약=`scratchpad/batch2-corrections.md`.
+- **★재실측이 잡은 폴백 §13 오류(발행 전 방지)**: MD Horseshoe Baltimore 폐쇄 아님(OPEN 23테이블 WSOP) · AR 진짜 포커룸=Saracen 유일(Oaklawn/Southland=house-banked UTH) · IA sweeps 전면금지 아님(SF2289=집행권한, TN SB2136=전면금지와 대조) · NC Two Kings 포커룸 없음(→Cherokee 2.5h) · OH Toledo 자체룸 있음(Hollywood 12테이블·"Cleveland 라우팅" 오류) · NE WarHorse/LA Kenner OTB/TN Southland=포커룸 없음("카지노=포커" 사고) · MN sweeps 철수(AG 2025-12·SF4474)·합법 스포츠벳 자체 없음(훅 재프레임) · WA Legends 18+(21 아님) · CT Foxwoods 114=수용능력(일상 ~35-40).
+- **whitespace 균일 확증**: 96쿼리 전부 스페인어 州로컬 PAA 0건·州로컬 포커 가이드 0건 랭크 → lowfruits 아닌 WebSearch-PAA가 정답 도구 재확인([[es-us-keyword-tool-websearch-paa]]).
+- **다음**: 첫 글 착수(NJ 규제전환/TX card house/AZ·CO gap 등). 발행 총계 불변 57 blog+448 intl(문서만 변경).
+
 ## 2026-07-24 (★★★ es(스페인어) 용어6 클러스터 6편 경화 → es 42/42 완결 = EN 유니버스 4번째 풀 경화 언어)
 
 > 토너먼트9에 이어 마지막 용어6. `dd4c087`. **이로써 es 42편 전체 경화 완료** = JA·zh-hant·zh 이어 EN 마스터 유니버스 4번째 풀 경화 언어.
