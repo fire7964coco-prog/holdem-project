@@ -4,6 +4,7 @@
 > **★언어 중립 자산**: 사실과 URL은 언어와 무관하므로 **EN 트랙·다른 언어에서 그대로 재사용**한다. EN 독자는 미국인이라 활용도가 더 높다.
 > 사용처: `docs/es-us-ranking-plan.md` Wave 1~4의 주별 글, EN 미국 관련 글, 향후 갱신 검증.
 > ⚠️**링크는 게재 전 응답 확인**(curl 200). 죽은 링크를 권위 근거로 걸면 신뢰가 깎인다.
+> ✅**2026-07-26 인용 전수 감사 완료**(14건, WebFetch로 실제 열람·원문 대조). ★**살아있는 URL ≠ 근거**임이 실증됨 — 3건이 "페이지에 그 내용이 없음"으로 적발(IRS ITA 랜딩·WSOP 소요일수·DraftKings 리다이렉트). **URL 응답 검증과 내용 대조는 별개 작업이다.**
 
 ---
 
@@ -13,6 +14,8 @@
 2. **검수자도 틀린다** — 적대적 QA가 "규정에 없다"고 지적한 항목이 실제로는 **규정에 있었다**(NV 예치금 환불). 반드시 **1차 출처 심판**으로 결판낼 것.
 3. **확정 못 한 건 문장을 뺀다.** 애매하게 쓰느니 안 쓰는 게 YMYL에서 이득.
 4. **접속 확인 안 되는 링크는 조문 번호만 표기.** 인용 신호는 유지되고 위험은 0.
+5. ★**URL이 200이어도 그 페이지에 내용이 없을 수 있다.** IRS 인터랙티브 툴 랜딩처럼 "안내만 있고 사실은 없는" 페이지, 쿼리스트링이 빠져 포털로 리다이렉트되는 헬프센터가 실제로 있었다. **게재 전 WebFetch로 원문 대조 필수.**
+6. **미러보다 공식**: Cornell LII·FindLaw는 신뢰할 만하나 2차 호스트다. 주 공식이 열리면 그쪽으로(예: NJ는 nj.gov/oag/ge PDF). 단 미시간처럼 공식 호스트가 해외 IP를 차단하면 Cornell 유지가 현실적.
 
 ---
 
@@ -22,13 +25,13 @@
 |---|---|---|
 | TIN 미제출 시 **백업 원천징수 24%**(30% 아님). 정규 도박 원천징수도 24% | [IRS, Instructions for Form W-2G](https://www.irs.gov/pub/irs-pdf/iw2g.pdf) | ✅200 |
 | **포커 캐시게임은 W-2G 보고 대상 아님**(한정 열거에 의한 배제). 단 과세 대상은 그대로 | 위 동일 | ✅ |
-| 비거주 외국인 **30% 원천징수**, **스페인은 조약 면제 0%**, 라틴아메리카 국가는 전부 비면제(멕시코는 조약 있으나 도박 소득 미포함) | [IRS ITA — nonresident alien gambling](https://www.irs.gov/help/ita/as-a-nonresident-alien-are-my-gambling-winnings-exempt-from-federal-income-tax) | ✅200 |
+| 비거주 외국인 **30% 원천징수**, **스페인은 조약 면제 0%**, 라틴아메리카 국가는 전부 비면제 | ★[IRS Publication 515](https://www.irs.gov/publications/p515) ("Gambling winnings", income code 28). 면제국 원문 확인: 오스트리아·벨기에·…·**스페인**·영국 등 25개국, **라틴아메리카 0개**. ⚠️몰타는 10%, 헝가리·러시아는 조약 면제 실효 | ✅원문대조 |
 | 비거주자는 **손실 상계 불가**, 30%는 **총액(gross)** 기준 | IRS Pub 515 | ✅(원문 확인) |
 | **2026년 신설: 도박 손실 공제 90% 제한**(OBBBA §70114). 본전이어도 과세소득 발생. ★단 **항목별 공제(itemize) 시에만** 의미 | IRS Pub 505(2026) | ✅ |
 | ITIN은 W-2G Box 9에서 SSN과 동등한 TIN → 24% 백업원천징수 회피 가능. **단 ITIN ≠ 세법상 거주자**(거주 판정=green card 또는 실질체류 테스트) | [IRS Topic 857](https://www.irs.gov/taxtopics/tc857) | ✅ |
 | W-7 **Exception 2(d) "Gambling Income"** 카지노 현장 발급 = **조약 청구 비거주 외국인 전용** → 라틴 국가는 조약이 없어 해당 없음 | IRS Instructions for Form W-7 | ✅ |
 
-⚠️**W-2G 토너먼트 기준액은 확정 불가** — $2,000(Pub 1099 2026) vs $5,000(Rev.Proc. 2007-57 미폐지)로 **1차 출처끼리 충돌**. 숫자 단정 금지.
+✅**W-2G 토너먼트 기준액 확정(2026-07-26 감사)**: 충돌이 아니라 **제도 변경**이었다. IRS W-2G 지침 **Rev. January 2026** 원문은 고정 금액을 삭제하고 "applicable reporting threshold"로 바꿨으며, What is New에 **"2026년 지급분 최소 기준액 = $2,000"**(이후 매년 인플레 조정)이라 명시. → 쓰려면 **"2026년 기준 $2,000, 연도별 조정"**으로. 연도 없이 숫자만 쓰면 곧 틀린다.
 
 🚫**인용 금지**: `Publication 901`(도박 내용 0건, 구판 유물 — 조약은 **Pub 515**로) · `IRS Topic 419`(2026-06 갱신인데 90% 제한 미반영)
 
@@ -40,8 +43,8 @@
 
 | 사실 | 출처 | 상태 |
 |---|---|---|
-| **NJ**: SSN은 "자발적 제공 시, 또는 외국인에겐 **여권·납세자번호 등가물**" | [N.J.A.C. 13:69O-1.3](https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-13-69O-1-3) | ✅200 |
-| **MI**: 동일 공식 — "SSN 또는 끝 4자리, **비시민권자는 여권·납세자번호 등 등가 식별번호**" | [Mich. Admin. Code R. 432.655](https://www.law.cornell.edu/regulations/michigan/Mich-Admin-Code-R-432-655) | ✅200 |
+| **NJ**: SSN은 "자발적 제공 시, 또는 외국인에겐 **여권·납세자번호 등가물**" | ★공식: [NJ DGE 규정 CHAPTER 69O PDF](https://www.nj.gov/oag/ge/docs/Regulations/CHAPTER69O.pdf) (§13:69O-1.3) · 미러: [Cornell LII](https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-13-69O-1-3) | ✅원문대조 |
+| **MI**: 동일 공식 — "SSN 또는 끝 4자리, **비시민권자는 여권·납세자번호 등 등가 식별번호**" | [Mich. Admin. Code R. 432.655](https://www.law.cornell.edu/regulations/michigan/Mich-Admin-Code-R-432-655) (Cornell) ⚠️미시간 공식 호스트 3곳 모두 403/WAF 차단 — 미러 유지가 현실적 | ✅원문대조 |
 | **NV**: ★SSN을 **"미국 거주자인 경우"** 요구 → 미국 거주 독자에겐 **불리한 예외**(유리한 면제로 오독 주의) | [NV Gaming Commission Reg 5A](https://www.gaming.nv.gov/siteassets/content/home/features/Regulation5A.pdf) §5A.110(2)(d) | ✅200 |
 | **NV 30일 룰**: 등록 후 30일 내 미검증 시 ①계정 **즉시 정지** ②상금 **보유(몰수)** ③**예치금 잔액 환불 의무** ④계정 **영구 폐쇄**. 검증 전엔 **출금 전면 금지** + 입금 $5,000 상한. 검증 성공 시 보류 상금 **즉시 지급** | 위 Reg 5A §5A.110(5)(6)(7) | ✅축자 |
 | 6개주 전부 **21세** | 각 주 규정 | ✅ |
@@ -61,9 +64,9 @@
 
 → **NV 플레이어는 DE·WV와 같은 테이블 불가**(양쪽 라이선스 가진 브랜드 0). ★2023년 이전 자료는 DE가 888로 NV·NJ와 공유하던 시절이라 **그대로 옮기면 반드시 틀림**.
 
-**DraftKings = 풀 포커룸 아님** — [Electric Poker](https://support.draftkings.com/dk/en-us/what-is-draftkings-electric-poker)(3인 초고속 NLHE 토너먼트, 상금 최대 바이인 10,000배) 단일. 캐시게임·일반 MTT 없음. NJ·MI·PA만. ✅200
+**DraftKings = 풀 포커룸 아님** — [Electric Poker](https://support.draftkings.com/dk/en-us/what-is-draftkings-electric-poker?id=kb_article_view&sysparm_article=KB0010489) 단일. 공식 문구로 확인되는 것: "fast-paced, **3-handed** game of No-Limit Texas Hold'em", 상금 최대 바이인 10,000배, **NJ·MI·PA에 물리적으로 있어야 함**. ⚠️**"캐시게임·일반 MTT 없음"은 이 페이지에 없는 주장**(외부 사실) → 이 URL에 걸지 말 것. ⚠️쿼리스트링 빼면 포털 홈으로 리다이렉트됨.
 
-**WSOP 출금**: PayPal 최대 4영업일 / ACH·Play+ 최대 5영업일 / 초기 ~3일 취소 가능 / 최소 $10(케이지 $50) / WSOP 자체 수수료 없음(은행·PayPal은 별도) / 서류 요구 시 14일 내 미제출이면 반려 → [WSOP 출금정책](https://www.wsoponline.com/legal/withdrawal-policy/) ✅200
+**WSOP 출금** → [출금정책](https://www.wsoponline.com/legal/withdrawal-policy/)에서 **원문 확인된 것만**: 최소 $10(ACH·PayPal), **케이지 $50**, "We do not charge a fee for any withdrawal method"(은행·PayPal 자체 수수료는 별도), 서류 검증 **14일** 미완료 시 출금 반려. ⚠️**소요일수(PayPal 4영업일/ACH 5영업일)는 이 페이지에 없음** — 감사에서 적발. 쓰려면 헬프센터 등 별도 출처 필요. ⚠️케이지 "당일 지급"은 확정 불가.
 
 **신용카드 중단**: DraftKings 2025-08-25 → FanDuel 2026-03-02(PokerStars 통합) → BetMGM 2026-03-31 단계적 → Caesars/WSOP 2026-04-14. **BetRivers만 유지**(단 일부 주는 법으로 금지, 카드사 거절도 흔함).
 
@@ -155,9 +158,19 @@ NE WarHorse · NC Two Kings · AR Oaklawn/Southland(UTH만) · TN Southland · L
 
 ---
 
+## 7-1. ✅ 인용 감사 결과 (2026-07-26, 14건 전수 실제 열람)
+
+**원문 대조 통과(그대로 사용 가능)**: NV Reg 5A(현행 Rev. 05/24, §5A.110 전 항목 축자 일치) · WA RCW 9.46.240("class C felony" 확인, 2020 개정이 최신) · AZ §5-601(B)(1) · FL §849.086(12)(b) · Hard Rock 탬파(포커 18세 푸터 문구) · Mystic Lake(18세) · MD §9-1C-01(24시간 총액·21세·사전 사교관계 3항목 전부) · IRS W-2G 지침(24% 백업원천징수·포커는 토너먼트만 열거) · NJ CHAPTER 69O · Maine GCU(+Rulemaking 하위)
+
+**적발되어 교체·삭제한 것**:
+1. **IRS ITA 랜딩** — 30%도 면제국도 페이지에 없음(인터랙티브 툴 안내뿐) → **Pub 515로 교체**
+2. **WSOP 출금 소요일수**(PayPal 4일/ACH 5일) — 인용한 정책 페이지에 **해당 문구 없음** → 기사에서 일수 삭제, 검증된 최소액·무수수료·14일만 유지
+3. **DraftKings 무쿼리 URL** — 실제 브라우저에서 **포털 홈으로 리다이렉트**돼 본문이 안 보임 → 쿼리 포함 URL로 교체. 또한 "캐시게임·MTT 없음"은 그 페이지에 없는 주장이라 **출처를 분리**
+
+**정밀화**: NV 규정 문언은 SSN 전체가 아니라 **끝 4자리**.
+
 ## 8. 확정 불가 (쓰지 말 것)
 
-1. **W-2G 포커 토너먼트 기준액** — $2,000 vs $5,000 1차 출처 충돌
 2. **ITIN이 실제 운영사 가입 UI에서 통과되는지** — 규정은 허용, 운영사 문서는 침묵 → "소포르테에 확인" 헤지 필수
 3. **FanDuel "여권 거부"** — 미확인. 사실이면 외국인에게 치명적이므로 단정 금지
 4. **FanDuel 지오로케이션 "연결 필수"** — 공식은 권장 수준
