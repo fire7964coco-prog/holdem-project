@@ -108,6 +108,22 @@
 | 11 | **TX** 위성 | `Cómo funciona la membresía de un card house (Texas Card House, The Lodge)` | #5 클러스터·롱테일·seat fee 공백 | 멕시코 |
 | 12 | **NJ** 위성 | `¿Puedo jugar con VPN en NJ? Geolocalización y residencia vs ubicación` | ★이민자 오해(residencia≠ubicación)·전환 클러스터 | 카리브 |
 
+> ### ⚠️ 2026-07-27 재검토 — **위성 2편(#11·#12)은 현 설계로 쓰면 안 된다(카니발)**
+> 부모 글을 실제로 발행하고 나니 위성의 핵심 내용이 이미 부모 안에 들어가 있다. 허브 A↔B에서 겪은 카니발 문제와 **동일 구조**라, 그대로 쓰면 두 글이 서로를 깎는다.
+>
+> - **#11(card house 멤버십)** → TX 본문이 이미 `## ¿Cómo funcionan los card houses?` + `## ¿Cuánto cuesta jugar?`(클럽별 멤버십·시간당 좌석료 표)를 커버하고, The Lodge 새벽 무료 시간·시니어/군인 할인·**지점 간 멤버십 비호환**까지 들어가 있다. → **남은 고유 수요 없음.**
+> - **#12(VPN·지오로케이션)** → 내용이 세 글에 이미 분산 완료: NJ `## ¿Tengo que vivir en Nueva Jersey?` / Hub B `## ¿Por qué la app dice que no estoy en el estado?` + FAQ `¿Sirve una VPN?` / Hub A 위치≠거주 단락. → **새 글은 3중 중복.**
+>
+> **재설계 후보 (키워드뱅크 기준 미커버 수요):**
+> 1. ★**스페인 `.es` 사이트 오인 교정** — 미국 거주 히스패닉이 스페인어로 검색하면 스페인 라이선스 사이트(888.es·bwin 등)가 상위에 뜨는데 **미국에서는 쓸 수 없다**. 전 주(州) 공통이라 모든 주별 글이 링크하는 허브형 자산이 되고, 스페인어권에 이 교정 글이 아예 없다.
+>    ⚠️ 단 키워드뱅크엔 "함정"으로만 기록돼 있고 **검색 수요 실측은 안 됨** → 착수 전 수요 확인 필요.
+> 2. **NJ 계정 개설 단계별(전환형)** — `cómo registrarse en BetMGM Poker` · `depósito mínimo`($10) · `bono`. Hub B는 "무엇이 합법·어떤 앱·세금"이라 **트랜잭셔널 의도가 비어 있다.** 다만 착수 전 Hub B와의 경계를 문장 단위로 확정할 것(또 카니발 나면 같은 실수 반복).
+> 3. **Wave 2로 바로 진행** — 티어 A 16편은 신규 주라 중복 0. 가장 안전한 선택.
+>
+> **판단 대기**: 사용자 확인 후 진행. 기본값 = 3번(Wave 2 착수).
+>
+> 📌 **교훈(일반화)**: 위성글은 **부모를 발행한 뒤에 각도를 확정**해야 한다. 기획 시점의 위성 컨셉은 부모가 얼마나 깊게 쓸지 모른 채 잡은 것이라, 부모가 충실할수록 위성이 잡아먹힌다. Wave 2·3의 "클러스터" 항목도 착수 직전에 같은 점검을 할 것.
+
 ### Wave 2 (13~28편) — 티어 A 확장 + 3대 훅 전파
 - 대형 라이브 州허브+살라: OH(Toledo 자체룸 정정)·IN(HB1052 뉴스훅)·LA(Caesars WSOP·Kenner OTB 정정)·OK(WinStar 댈러스)·CT(Foxwoods 114 정정)·MA(Encore Everett)·MD(홈게임 $1000법·Horseshoe OPEN)·WA(felony 보호글)·MI(오프쇼어 crackdown).
 - gap훅 전파: NC·VA(VA≠WV)·GA(홈게임 불법·Cherokee)·TN(Tunica).
