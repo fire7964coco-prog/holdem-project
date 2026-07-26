@@ -308,6 +308,7 @@ Este glosario es el mapa; el aprendizaje de verdad está en las guías a las que
 - **Manos:** [qué gana a qué](/es/blog/holdem-hand-rankings) y las [reglas de desempate](/es/blog/holdem-tiebreak-rules).
 - **Las matemáticas:** [pot odds](/es/blog/holdem-pot-odds), [outs](/es/blog/holdem-outs) y [probabilidad](/es/blog/holdem-probability).
 - **La jerga, a fondo:** [fish](/es/blog/holdem-fish), [cooler](/es/blog/holdem-cooler), [bad beat](/es/blog/holdem-bad-beat), [straddle](/es/blog/holdem-straddle) y [rake](/es/blog/holdem-rake).
+- **Si juegas en Estados Unidos:** [dónde es legal el póker, estado por estado](/es/blog/poker-legal-estados-unidos "thumb:/images/poker-legal-estados-unidos-hero.webp").
 
 Guarda esta página en marcadores y vuelve siempre que una palabra te haga tropezar. Habla el idioma y el juego deja de sentirse como algo que te pasa — y empieza a sentirse como algo que le haces tú *a* la mesa.
 

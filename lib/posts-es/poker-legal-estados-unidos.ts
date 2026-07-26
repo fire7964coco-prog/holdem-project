@@ -35,7 +35,7 @@ Lo que es perfectamente legal en Nueva Jersey puede ser un delito grave al otro 
 
 :::stripe
 6 | estados con póker online con licencia
-40 | estados donde puedes jugar en vivo
+40 | estados con póker en vivo (Texas, solo en clubes de socios)
 10 | estados sin ninguna sala de póker
 2 | estados sin ningún juego legal (Utah y Hawái)
 :::
@@ -169,7 +169,7 @@ Dos casos concretos que conviene conocer:
 
 **Q. ¿Es legal jugar póker por dinero real en Estados Unidos?**
 
-A. Depende del estado donde estés físicamente. Jugar en vivo en un casino es legal en 40 estados. El póker online con dinero real y licencia solo existe en 6: Nueva Jersey, Nevada, Pensilvania, Míchigan, Delaware y Virginia Occidental. La ley federal no persigue al jugador; regula a quien opera la sala.
+A. Depende del estado donde estés físicamente. Hay póker en vivo legal en 40 estados — aunque en Texas no sea en un casino, sino en clubes privados de socios. El póker online con dinero real y licencia solo existe en 6: Nueva Jersey, Nevada, Pensilvania, Míchigan, Delaware y Virginia Occidental. La ley federal no persigue al jugador; regula a quien opera la sala.
 
 **Q. ¿Necesito ser residente del estado para jugar online?**
 
