@@ -46,7 +46,7 @@ Aquí va el recorrido completo, en el orden en que te va a pasar.
 
 Tres cosas, y ninguna se improvisa.
 
-**La identificación.** Oficial y vigente, con foto. Te la van a pedir en la puerta o en la caja, y en Estados Unidos también cuando cobres un premio grande. Si no eres ciudadano, el pasaporte es la opción que nunca falla; algunos sitios aceptan más documentos, pero eso ya depende de cada casino.
+**La identificación.** Oficial y vigente, con foto. Te la van a pedir en la puerta o en la caja, y en Estados Unidos también cuando cobres un premio grande. Si estás en Estados Unidos y no eres ciudadano, el pasaporte es la opción que nunca falla; algunos casinos aceptan otros documentos, pero eso ya depende de cada casa. En México con tu **INE** basta, y en la entrada te van a registrar — es trámite de un minuto.
 
 **La edad.** En casi todo Estados Unidos son 21 años, y en varios sitios eso significa que ni siquiera puedes estar parado en la zona de juego. En México y buena parte de Latinoamérica el mínimo suele ser 18, pero cada casino lo publica en sus reglas de la casa. Revísalo antes de manejar.
 
@@ -54,7 +54,7 @@ Tres cosas, y ninguna se improvisa.
 
 ### Cuánto llevar
 
-La referencia que usa casi todo el mundo es **100 veces la ciega grande (big blind)** — el *buy-in*, o la entrada. En una mesa de $1/$2, eso son $200.
+La referencia que usa casi todo el mundo es **100 veces la ciega grande (big blind)** — el *buy-in*, o la entrada. En una mesa de $1/$2, son $200.
 
 *Por ejemplo:*
 
@@ -63,6 +63,8 @@ La referencia que usa casi todo el mundo es **100 veces la ciega grande (big bli
 | $1/$2 | $2 | ~$200 |
 | $1/$3 | $3 | ~$300 |
 | $2/$5 | $5 | ~$500 |
+
+*En México las mesas chicas suelen ser de 10/20 o 25/50 pesos, y la regla de las 100 ciegas aplica igual: entre $2,000 y $5,000 MXN por entrada.*
 
 Pero **ese buy-in no es tu presupuesto.** Si llegas con una sola entrada y pierdes dos manos grandes, se acabó la noche. Lo que yo hago es llevar **tres entradas completas** y decidir antes de entrar que si se van las tres, me voy. El cajero automático del casino a las tres de la mañana es el peor consejero que existe.
 
@@ -74,7 +76,7 @@ Hay dos formas, y conviene saber las dos:
 
 :::steps
 En el mostrador | Pasas al **mostrador de la sala** (el podio de la entrada), dices qué mesa quieres y te anotan en la lista. Si no sabes cuál pedir, di que quieres **la más chica que haya** — casi siempre $1/$2 o $1/$3. Te vocean cuando se desocupa un lugar.
-Desde el celular, antes de salir | Muchas salas usan la aplicación **Bravo Poker Live**. Ahí ves qué partidas están corriendo en tiempo real, y muchas salas hasta te dejan anotarte a distancia. Choctaw, por poner un ejemplo, lo dice en su propia página: descarga la app para ver qué juegos hay disponibles.
+Desde el celular, antes de salir | Muchas salas usan la aplicación **Bravo Poker Live**. Ahí ves qué partidas están corriendo en tiempo real, y muchas salas hasta te dejan anotarte a distancia. Choctaw, por decir algo, lo dice en su propia página: descarga la app para ver qué juegos hay disponibles. En México muchas salas mueven la lista por **WhatsApp** — pregunta al llegar por el grupo.
 :::
 
 Esa segunda opción te cambia el plan por completo. Si vas a manejar una hora, **abre la app antes de salir**: si a esa hora solo hay una mesa corriendo, más vale saberlo desde tu casa.
@@ -87,17 +89,17 @@ Dos lugares, y el segundo es el que nadie te dice.
 
 **O en la mesa misma.** Te sientas, le dices al dealer cuánto quieres, pones el efectivo sobre la mesa y él llama al *chip runner*, que te trae las fichas. En muchas salas el efectivo juega mientras llegan las fichas — pero eso depende de la casa, así que pregúntale al dealer si tu billete juega.
 
-:::note[Un detalle que confunde a todo el mundo: **el dinero no se le entrega en la mano al dealer.** Se pone sobre la mesa, extendido. No es desconfianza: es que las cámaras tienen que ver la transacción completa. Lo mismo vale al revés cuando te dan cambio.]:::
+:::note[Un detalle que confunde a todo el mundo: **el dinero no se le entrega en la mano al dealer.** Se pone sobre la mesa, extendido. No es desconfianza: es que las cámaras tienen que ver la transacción completa. Lo mismo aplica al revés cuando te dan cambio.]:::
 
 ## Sentarte a la mesa
 
 Ya tienes asiento y fichas. Ahora hay una decisión que casi nadie explica:
 
-**¿Esperas a que te llegue la ciega grande, o pagas para entrar ya?** Si te acabas de sentar, puedes esperar sin jugar a que la ciega grande te llegue por turno — es gratis y es lo que yo recomiendo la primera vez, porque te da tres o cuatro manos para mirar. O puedes *postear* (pagar la ciega de entrada): pones el monto de la ciega grande y entras en la siguiente mano.
+**¿Esperas a que te llegue la ciega grande, o pagas para entrar ya?** Si te acabas de sentar, puedes esperar, sin jugar, a que te llegue la ciega grande — es gratis y es lo que yo recomiendo la primera vez, porque te da tres o cuatro manos para mirar. O puedes *postear* (pagar la ciega de entrada): pones el monto de la ciega grande y entras en la siguiente mano.
 
 Y dos costumbres de la mesa que se notan de inmediato:
 
-- **Las fichas grandes, adelante y visibles.** Nadie puede esconder cuánto tiene. Si apilas las de mayor valor al fondo, el dealer te va a pedir que las pases al frente.
+- **Las fichas grandes, adelante y visibles.** Nadie puede esconder cuánto tiene. Si apilas las de mayor valor hasta atrás, el dealer te va a pedir que las pases al frente.
 - **Tus cartas se quedan sobre la mesa**, y muchos jugadores les ponen encima una ficha o un objeto pequeño para que el dealer no las recoja por error.
 
 ## Las siete palabras que necesitas
@@ -116,7 +118,7 @@ pot | el bote (solo en pot-limit)
 complete | completar
 :::
 
-Siete palabras. El mismo reglamento las describe como *declaraciones simples, inequívocas y de las de siempre*, y añade algo importante: **los términos regionales también valen**, pero usar lenguaje no estándar es **a tu propio riesgo**, porque pueden entenderte otra cosa.
+Siete palabras. El mismo reglamento las describe como *declaraciones simples, inequívocas, las de siempre*, y añade algo importante: **los términos regionales también valen**, pero usar lenguaje no estándar es **a tu propio riesgo**, porque pueden entenderte otra cosa.
 
 :::note[Y un dato que conviene conocer si vas al WSOP: su reglamento tiene una **regla de solo inglés en la mesa mientras las cartas están en juego**. No es para excluir a nadie: es para que ningún jugador pueda pasarle información a otro en un idioma que el resto no entiende. En la práctica, con esas siete palabras ya cumples. Fuera de la mano y fuera de la mesa hablas lo que quieras.]:::
 
@@ -177,7 +179,7 @@ Dar el dinero en la mano al dealer | Va sobre la mesa, siempre.
 Esconder las fichas grandes | Van adelante y a la vista.
 Sentarse con lo justo | Tres entradas, y si se van las tres, se acabó la noche.
 Hablar de la mano mientras se juega | Aunque ya te hayas retirado, no se comenta una mano en curso. Ni para ayudar.
-Guardarse fichas en la bolsa | Lo que está en la mesa es lo que juega. No puedes meterte fichas al bolsillo ni comprar más a media mano — si quieres subir tu stack, se hace entre manos.
+Guardarse fichas en la bolsa | Lo que está en la mesa es lo que juega. No puedes meterte fichas a la bolsa ni comprar más a media mano — si quieres subir tu stack, se hace entre manos.
 Enseñar las cartas al tirarlas | Para foldear se deslizan boca abajo hacia el dealer, sin levantarlas. Si las enseñas, le das información gratis a toda la mesa.
 :::
 
@@ -204,11 +206,11 @@ A. En la caja del casino, o directamente en la mesa: le dices al dealer cuánto 
 
 **Q. ¿Cómo me anoto para jugar?**
 
-A. En el mostrador de la sala, o desde el celular con una aplicación de lista de espera como Bravo Poker Live, que además te muestra qué partidas están corriendo en ese momento. Si vas a manejar lejos, revísala antes de salir.
+A. En el mostrador de la sala, o desde el celular con una aplicación de lista de espera como Bravo Poker Live, que además te muestra qué partidas están corriendo en ese momento. Si la sala te queda lejos, revísala antes de salir.
 
 **Q. ¿Qué es un string bet?**
 
-A. Intentar una apuesta o subida en varios movimientos: empujas fichas y luego regresas por más. El dealer lo canta y solo cuenta el primer montón. Se evita declarando con la voz antes de tocar las fichas, o moviéndolas en un solo viaje.
+A. Intentar una apuesta o subida en varios movimientos: empujas fichas y luego regresas por más. El dealer lo canta y solo cuenta el primer montón. Se evita declarando con la voz antes de tocar las fichas, o moviéndolas en un solo movimiento.
 
 **Q. ¿Cuánto se le da de propina al dealer?**
 
@@ -216,7 +218,7 @@ A. No es una regla, es costumbre. En Estados Unidos lo habitual es un dólar por
 
 **Q. ¿La casa cobra algo por jugar?**
 
-A. Sí: el rake (la comisión), un porcentaje de cada bote con un tope. En Estados Unidos suele rondar el 10% con tope de unos $5; en México anda cerca del 5%. No lo pagas aparte — sale del bote antes de que te lo entreguen, así que ya está contemplado en el juego.
+A. Sí: el rake (la comisión), un porcentaje de cada bote con un tope. En Estados Unidos suele rondar el 10% con un tope de unos $5. En México depende de la sala — hay casas que cobran porcentaje y otras que cobran por tiempo, así que pregunta el porcentaje y el tope al sentarte. No lo pagas aparte: sale del bote antes de que te lo entreguen.
 
 **Q. ¿Puedo levantarme cuando quiera?**
 
@@ -225,6 +227,14 @@ A. En un cash game, sí, en cualquier momento y sin dar explicaciones. Juntas la
 **Q. ¿Qué edad piden?**
 
 A. En casi todo Estados Unidos, 21 años — y en varios sitios ni siquiera puedes estar en la zona de juego siendo menor. En México y buena parte de Latinoamérica suelen ser 18. Cada casino lo publica en sus reglas de la casa.
+
+**Q. ¿Hay código de vestimenta?**
+
+A. En una sala de póker, casi nunca. Con ropa casual normal vas bien — playera, jeans y tenis es lo que trae la mitad de la mesa. Si el casino tiene restaurante o zona de espectáculos, ahí sí puede haber reglas distintas.
+
+**Q. ¿Sirven bebidas en la mesa?**
+
+A. Sí, pasan meseras a tomar la orden y no tienes que levantarte. En Estados Unidos las bebidas sin alcohol suelen ser cortesía y se acostumbra dejar un dólar de propina a quien te la trae; en México depende de la casa. Pide agua además de lo que tomes — son sesiones largas.
 
 **Q. ¿Y si me equivoco en algo?**
 
