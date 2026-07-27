@@ -133,6 +133,8 @@ Lo importante para quien viene de fuera: en Estados Unidos **la propina no es op
 
 ## ¿Puedo jugar el WSOP siendo extranjero?
 
+Sí — los requisitos y los papeles exactos los detallo en la [guía de cómo entrar al WSOP](/es/blog/como-entrar-al-wsop "thumb:/images/como-entrar-al-wsop-hero.webp"). Aquí va lo esencial.
+
 **Sí, y esta es probablemente la mejor noticia de esta guía.**
 
 Las reglas oficiales del World Series of Poker no piden ciudadanía ni visa de ningún tipo. Lo único que exigen es **21 años cumplidos con prueba de edad**.

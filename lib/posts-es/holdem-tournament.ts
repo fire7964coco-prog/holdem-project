@@ -288,6 +288,10 @@ Estos 13 términos cubren casi todo lo que oirás en la mesa. Para la A a la Z c
 
 ---
 
+## ¿Cómo entro a un torneo grande como el WSOP?
+
+Menos filtros de los que la gente cree: el reglamento del WSOP pide **21 años y una identificación válida**, sin requisitos de ciudadanía ni visa, y su evento de brazalete más barato cuesta **$300**. Qué papeles acepta, cómo funciona el registro y qué pasa el primer día está en la [guía de cómo entrar al WSOP](/es/blog/como-entrar-al-wsop "thumb:/images/como-entrar-al-wsop-hero.webp").
+
 ## Checklist para tu primer torneo
 
 <div style="background:rgba(255,248,210,0.06);border:1px solid rgba(255,240,180,0.25);border-radius:12px;padding:20px 24px;margin:20px 0">

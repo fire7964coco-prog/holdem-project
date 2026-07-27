@@ -935,7 +935,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- 다국어 블로그 포스트 (461편) -->
+  <!-- 다국어 블로그 포스트 (462편) -->
 
   <url>
     <loc>https://www.holdemmaster.com/en/blog/apt-incheon-2026-guide</loc>
@@ -2544,6 +2544,13 @@
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/apt-incheon-2026-guide" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/apt-incheon-2026-guide" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/apt-incheon-2026-guide" />
+  </url>
+
+  <url>
+    <loc>https://www.holdemmaster.com/es/blog/como-entrar-al-wsop</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <url>
