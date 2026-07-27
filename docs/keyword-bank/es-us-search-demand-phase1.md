@@ -109,7 +109,7 @@
 
 ### Indiana (IN) — whitespace 확증. HB1052 뉴스 훅. 멕시코(East Chicago 57%).
 - **winnable**: 합법성 `¿es legal póker en línea Indiana?`·`prohibición sweepstakes HB1052`·`¿Global Poker sigue legal Indiana?` / 살라 `cerca de Chicago en Indiana`·`Horseshoe Hammond`·`Ameristar East Chicago` / cómo `edad`(21)·`torneos Hammond buy-in` / sweeps `qué apps cerraron 1 julio` / 로컬 `póker más cercano a Chicago`·`East Chicago comunidad mexicana`
-- **§13**: ✅Hammond=**INDIANA**(IL 아님), ~13+테이블 24/7 대회 $60-220. ✅Ameristar East Chicago **22테이블**(Hammond보다 큰 로컬룸). ✅HB1052 2026-03-13 서명·07-01 발효: dual-currency sweeps 금지 **BUT P2P 스킬포커 예외**→Global Poker/ClubWPT/Clubs Poker 유지(위반 $10만 벌금). 온라인 리얼머니 불법. Age 21. (재확인: 테이블수·Majestic Star Gary룸)
+- **§13**: ✅Hammond=**INDIANA**(IL 아님), ~13+테이블 24/7 대회 $60-220. ❌**Ameristar East Chicago 22테이블 = 오류(2026-07-27 1차출처 심판으로 폐기)**. 포커룸은 **2015-07 폐쇄**, 공식 사이트 카지노 메뉴에 poker 페이지 자체가 없음(슬롯·테이블게임·바카라룸·스포츠북만). 예외=MSPT가 연 1~2회 **연회장**에서 토너먼트 개최(2026-08-25~30 Indiana Poker State Championship $300K GTD). 인디애나 최대 룸은 **Horseshoe Indianapolis 20테이블**, 시카고권 최대는 **Horseshoe Hammond 13테이블(24/7)**. ✅HB1052 2026-03-13 서명·07-01 발효: dual-currency sweeps 금지 **BUT P2P 스킬포커 예외**→Global Poker/ClubWPT/Clubs Poker 유지(위반 $10만 벌금). 온라인 리얼머니 불법. Age 21. (재확인: 테이블수·Majestic Star Gary룸)
 - **★4컨셉**: 1)"HB1052: qué apps cerraron, cuáles siguen(Global sobrevive)"(뉴스) 2)"cerca de Chicago pero ley de Indiana: Horseshoe Hammond"(IL/IN 정정) 3)Ameristar East Chicago 22 mesas(멕시코) 4)deportivas sí póker no
 
 ### Louisiana (LA) — whitespace 확증. 4주 중 라이브 밀도 최고. ★온두라스 voseo(Kenner "Little Honduras").

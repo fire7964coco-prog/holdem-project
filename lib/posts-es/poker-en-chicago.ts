@@ -75,7 +75,7 @@ Es la única sala 24 horas de la zona | Ninguna sala de Illinois anuncia 24 hora
 También es 21 años | La ley de Indiana prohíbe que un menor de 21 esté en el área donde se juega.
 :::
 
-:::note[Dato práctico para el resto del noroeste de Indiana: **Hard Rock Northern Indiana, en Gary, no tiene sala de póker** — mucha mesa de casino, pero póker no. Y **Ameristar East Chicago cerró la suya en 2015**. En esa zona, la sala de póker es Hammond y punto.]:::
+:::note[Dato práctico para el resto del noroeste de Indiana: **Hard Rock Northern Indiana, en Gary, no tiene sala de póker** — mucha mesa de casino, pero póker no. Y **Ameristar East Chicago cerró su sala de póker en 2015** y no la ha reabierto: hoy solo tiene mesas de casino, tragamonedas y sportsbook. La única excepción son los torneos que el Mid-States Poker Tour monta en sus salones de eventos una o dos veces al año. Para jugar cash cualquier día de la semana, en esa zona la sala es Horseshoe Hammond.]:::
 
 ## ¿Es legal jugar póker online en Illinois?
 

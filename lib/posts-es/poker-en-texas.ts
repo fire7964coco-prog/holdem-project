@@ -129,6 +129,8 @@ Conviene aclararlo porque mucha gente lo da por inexistente: **en Texas sí hay 
 
 ## ¿Y si cruzo a Oklahoma o Luisiana?
 
+Si tu plan es Oklahoma, tengo una [guía dedicada con las salas, la edad de cada casino y el asunto de los impuestos](/es/blog/poker-en-oklahoma "thumb:/images/poker-en-oklahoma-hero.webp") — porque ahí la edad cambia de un casino a otro y hay una obligación de declarar que sorprende a los tejanos.
+
 Es la salida clásica, pero **hay un dato que casi todas las guías tienen desactualizado**:
 
 ⚠️ ==La sala de póker de WinStar está cerrada.== El propio casino lo anuncia en su web: el póker, el bingo y las apuestas hípicas siguen cerrados hasta nuevo aviso. Si tu plan era manejar a Thackerville a jugar cartas, no vayas.
