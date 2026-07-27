@@ -2,9 +2,9 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "poker-en-california",
-  title: "Póker en California: cardrooms, el póker mexicano y por qué aquí no hay rake",
-  seoTitle: "Póker en California: cardrooms, sin rake y póker mexicano",
-  desc: "California tiene 78 cardrooms y una ley que prohíbe cobrar rake por porcentaje. Dónde se juega, qué es el póker mexicano y por qué el online está cerrado.",
+  title: "Póker en California: 78 cardrooms, el póker mexicano y por qué aquí no hay rake",
+  seoTitle: "Póker en California: dónde jugar, sin rake y póker mexicano",
+  desc: "78 cardrooms, mesas donde nadie te cobra un porcentaje del bote y una variante propia de 41 cartas. Dónde se juega y qué es el póker mexicano.",
   tldr: "California no tiene casinos al estilo de Las Vegas porque su Constitución los prohíbe: lo que hay son 78 cardrooms con licencia, donde juegas contra otros jugadores y nunca contra la casa. Por ley, la sala no puede cobrarte un porcentaje del bote — cobra una tarifa fija acordada antes de la mano. Y en varias de esas salas se juega el póker mexicano, una variante de 41 cartas donde el color le gana al full.",
   category: "rules",
   date: "2026-07-26",
@@ -35,22 +35,22 @@ Eso pasa mucho en California, porque aquí se juega algo que no existe en casi n
 
 :::stripe
 78 | cardrooms con licencia en el estado
-0% | de rake — la ley prohíbe cobrar por porcentaje
+0% | de rake por porcentaje — pagas tarifa fija, ganes poco o mucho
 41 | cartas en el póker mexicano
-21 | años en todos los cardrooms — es ley estatal
+21 | años en los cardrooms, sin excepción
 :::
 
-## ¿Es legal jugar póker en California?
+## ¿Qué tiene California que no tenga otro estado?
 
-**En vivo sí, y mucho. Online no, en absoluto.**
+**La escena presencial más grande del país, y ninguna sala online.**
 
-California tiene una de las escenas de póker presencial más grandes del país — 78 salas con licencia y más de dos mil mesas autorizadas — y al mismo tiempo cero sitios legales para jugar por internet. Es una combinación rara que conviene entender antes de buscar dónde jugar.
+Aquí hay **78 salas con licencia y más de dos mil mesas** — más que en cualquier otro estado. Lo que no vas a encontrar es una app para jugar por dinero real: en internet no opera ninguna sala de California. Es una combinación rara, y explica por qué la vida del póker aquí pasa entera en la mesa física.
 
-## ¿Por qué no hay casinos como los de Las Vegas?
+## ¿Por qué aquí hay cardrooms y no casinos?
 
-Porque la **Constitución del estado lo prohíbe**, con esas palabras. El texto dice que la legislatura *"no tiene poder para autorizar, y deberá prohibir, casinos del tipo que actualmente operan en Nevada y Nueva Jersey"*.
+Por una frase que alguien escribió en la Constitución de California hace décadas, y que sigue ahí: la legislatura *"no tiene poder para autorizar, y deberá prohibir, casinos del tipo que actualmente operan en **Nevada y Nueva Jersey**"*.
 
-De ahí sale la estructura doble que confunde a todo el mundo:
+Sí — la constitución del estado **nombra a los otros dos por su nombre**. De esa frase sale toda la escena que ves hoy: en vez de casinos, California desarrolló un modelo propio con dos tipos de sala que conviene distinguir antes de manejar:
 
 :::compare
 Cardroom | Casino tribal
@@ -60,9 +60,9 @@ Juegas contra otros jugadores | Puede haber juegos contra la casa (blackjack)
 La casa nunca es el banco | La casa sí puede ser el banco
 :::
 
-La razón legal de fondo: el código penal prohíbe los juegos donde la casa hace de banca. Para que un juego no cuente como "de banca", la posición de repartidor tiene que ir **rotando de forma continua y sistemática entre los participantes**, y la casa tiene prohibido quedarse con ese puesto.
+El detalle técnico que lo explica todo: en California la casa **no puede ser el banco**. Para que un juego valga, la posición de repartidor tiene que ir **rotando entre los jugadores** — la casa no se puede quedar con ese puesto.
 
-Por eso en un cardroom de Los Ángeles puedes jugar póker toda la noche pero no vas a encontrar una ruleta.
+Y ahí está la razón de fondo por la que el póker encaja tan bien aquí y la ruleta no: el póker **ya es de jugador contra jugador por naturaleza**. No hubo que inventarle nada. Por eso en un cardroom de Los Ángeles puedes jugar toda la noche y no vas a ver una ruleta en ninguna parte.
 
 ## ¿Cómo cobran los cardrooms si no hay rake?
 
@@ -128,23 +128,23 @@ Estas son las salas cuyo funcionamiento está confirmado en su propia página:
 
 ## ¿A qué edad puedo entrar?
 
-**21 años.** Y aquí California es más estricto que otros estados: en los cardrooms no es una política de cada sala, es **ley estatal** — una persona menor de 21 años no puede ni siquiera entrar al recinto de un establecimiento de juego con licencia.
+**21 años, y aquí no depende de la sala.** A diferencia de otros estados donde cada casino pone su regla, en California la edad viene fijada para todos los cardrooms — y no es solo para jugar: un menor de 21 **tampoco puede entrar al local**. Si viajas con familia, eso se planea antes de salir.
 
-Los casinos tribales que revisamos aplican la misma edad. Si tienes entre 18 y 20 años y quieres jugar póker legalmente, California no es tu estado — a diferencia de [Florida, donde el póker se juega desde los 18](/es/blog/poker-en-florida "thumb:/images/poker-en-florida-hero.webp").
+Los casinos tribales que revisamos piden lo mismo. Si tienes entre 18 y 20 años y quieres jugar póker legalmente, California no es tu estado — a diferencia de [Florida, donde el póker se juega desde los 18](/es/blog/poker-en-florida "thumb:/images/poker-en-florida-hero.webp").
 
 ## ¿Puedo jugar póker online desde California?
 
-No. Y en 2026 se cerraron las dos últimas puertas que quedaban abiertas.
+Aquí no, y California es un caso curioso en esto: **es el estado más poblado del país y uno de los pocos donde no puedes apostar ni siquiera a deportes desde el teléfono.**
 
-**No existe ninguna sala online con licencia** del estado: California nunca creó un sistema para otorgarlas. Y la vía alternativa que mucha gente usaba —los casinos de tipo sweepstakes— **quedó prohibida**: una ley firmada en octubre de 2025 entró en vigor el 1 de enero de 2026, y su texto ==nombra el póker de forma expresa== entre los juegos que no se pueden ofrecer así. También alcanza a quienes procesan los pagos o dan soporte técnico.
+Y no fue por falta de intentos. En 2022 se votaron **dos** propuestas para legalizar las apuestas deportivas y los californianos rechazaron las dos — una de ellas con un **82% en contra**. Pocas votaciones en Estados Unidos salen tan parejas en una dirección.
 
-Y las apuestas deportivas tampoco: en 2022 los votantes rechazaron **las dos** propuestas que las habrían legalizado, una de ellas por 82% en contra. En California, a diferencia de casi todo el país, **ni siquiera puedes apostar a deportes desde el teléfono.**
+Para el póker online nunca hubo siquiera sistema de licencias, y desde enero de 2026 tampoco operan aquí los sitios de tipo sweepstakes.
 
-Si buscas jugar online de forma legal, tendrías que estar físicamente en uno de los seis estados que lo permiten — todos lejos. Están en la [guía de póker online por dinero real](/es/blog/poker-online-dinero-real-estados-unidos "thumb:/images/poker-online-dinero-real-msiga.webp").
+Así que la vida del póker en California es presencial, y eso explica por qué las salas de aquí son tan grandes: **toda la demanda de un estado de cuarenta millones de personas cabe en mesas físicas.** Si viajas a alguno de los seis estados con póker online, eso lo cubro en la [guía de póker online por dinero real](/es/blog/poker-online-dinero-real-estados-unidos "thumb:/images/poker-online-dinero-real-msiga.webp").
 
-## ¿Es legal jugar en casa?
+## ¿Puedo organizar una partida en casa?
 
-Sí, y California lo dice de forma explícita, lo cual no es común. La ley excluye de los juegos controlados a *"los juegos con cartas en casas o residencias privadas, en los que ninguna persona gana dinero por operar el juego, salvo como jugador"*.
+Sí, y California es de los pocos estados que lo deja por escrito en vez de dejarlo a interpretación. El texto excluye expresamente *"los juegos con cartas en casas o residencias privadas, en los que ninguna persona gana dinero por operar el juego, salvo como jugador"*.
 
 Traducido: la partida entre amigos en tu casa está fuera del alcance de la ley **mientras nadie cobre por organizarla**. Si el anfitrión empieza a llevarse una tajada o a cobrar por sentarse, se acabó la protección.
 
@@ -172,7 +172,7 @@ Todo lo anterior se puede verificar en documentos públicos del estado:
 
 **Q. ¿Es legal jugar póker en California?**
 
-A. En vivo sí: hay 78 cardrooms con licencia más los casinos tribales. Online no existe ninguna sala legal, y desde enero de 2026 tampoco se permiten los casinos de sweepstakes.
+A. En vivo, y a lo grande: 78 cardrooms con licencia más los casinos tribales, con más de dos mil mesas entre todos. Lo que no hay es sala online — para eso tendrías que estar en uno de los seis estados que la tienen.
 
 **Q. ¿Por qué los cardrooms no cobran rake?**
 
@@ -208,11 +208,11 @@ A. Es legal, y la ley lo dice explícitamente: quedan excluidos los juegos con c
 
 ## En resumen
 
-California es el estado con más jugadores hispanos del país y funciona con reglas propias: **nada de casinos tipo Las Vegas, pero 78 cardrooms** donde juegas contra otra gente y no contra la casa; **nada de rake por porcentaje**, porque la ley lo prohíbe; y **nada de online**, ni póker ni apuestas deportivas.
+California juega con reglas propias, y una vez que las entiendes es de los mejores sitios del país para sentarse a una mesa. Tres cosas para llevarte:
 
-A cambio tienes algo que casi ningún otro estado ofrece: un juego con nombre nuestro, reglas propias y una mesa donde el color le gana al full.
+**Tienes 78 salas y más de dos mil mesas** — la escena presencial más grande de Estados Unidos, con Commerce a la cabeza. **Los botes grandes salen más baratos aquí**, porque nadie te cobra un porcentaje: pagas una tarifa fija, ganes cien dólares o mil. Y **tienes un juego que casi no existe fuera de aquí** — 41 cartas, comodín, cinco iguales, y el color por encima del full.
 
-Si quieres comparar con el resto del país, el [mapa de los 50 estados](/es/blog/poker-legal-estados-unidos) lo resume. Y si vas a debutar, empieza por las [reglas del Texas Hold'em](/es/blog/texas-holdem-rules-for-beginners) — que es lo que vas a encontrar en la mayoría de las mesas.
+Si vas a ir por primera vez, dos lecturas te ahorran la peor parte de la noche: las [reglas del Texas Hold'em](/es/blog/texas-holdem-rules-for-beginners "thumb:/images/rules-texas-holdem.webp") —que es lo que vas a encontrar en la mayoría de las mesas— y el [ranking de manos](/es/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp"). Y si andas por otro estado, el [mapa de los 50](/es/blog/poker-legal-estados-unidos) te dice qué tienes cerca.
 `,
 };
 
