@@ -127,7 +127,7 @@ Es un trade-off real, y la respuesta sorprende:
 - **El rake en vivo** tiende a ser un **porcentaje más alto (a menudo 10%) con un tope mayor ($4–$6)** — pero solo juegas ~30 manos por hora, así que lo pagas menos veces.
 - **El rake online** suele ser un **porcentaje más bajo (3–5%) con un tope menor ($1–$3)** — pero puedes ver 250+ manos por hora entre varias mesas, así que un grinder de volumen puede pagar *más* rake por hora que un jugador en vivo a pesar de la tasa más baja.
 
-Y hay un sitio donde nada de esto aplica: en **California la ley prohíbe que la sala cobre un porcentaje del bote**, así que los cardrooms cobran una tarifa fija o una renta por tiempo. Si juegas en Los Ángeles, [lo explico con los números aquí](/es/blog/poker-en-california "thumb:/images/poker-en-california-hero.webp").
+Y hay un sitio donde nada de esto aplica: en **California la ley prohíbe que la sala cobre un porcentaje del bote**, así que los cardrooms cobran una tarifa fija o una renta por tiempo. Los cardrooms de allá cobran una tarifa fija por mano o una renta por tiempo.
 
 La lección: nunca juzgues el rake solo por el porcentaje. Lo que importa es el porcentaje **multiplicado por cuántas veces lo pagas.** Una partida online "barata" del 5% a cuatro mesas puede costarte más que una partida en vivo "cara" del 10% — que es exactamente por qué el rakeback y la selección de mesa importan más online.
 

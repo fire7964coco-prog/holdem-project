@@ -144,7 +144,7 @@ Sí — el **WSOP Circuit** es la versión itinerante, y pasa cerca de mucha má
 | **Horseshoe Indianapolis** (Indiana) | Sala con marca WSOP |
 | **Caesars Southern Indiana** | Sala con marca WSOP, frente a Louisville |
 
-Y si prefieres clasificar desde casa, **WSOP.com** es la versión online: funciona en Nevada, Nueva Jersey, Michigan y Pensilvania, y ahí también se juegan satélites que reparten entradas. Cómo funciona lo explico en la [guía del póker online por dinero real](/es/blog/poker-online-dinero-real-estados-unidos "thumb:/images/poker-online-dinero-real-msiga.webp").
+Y si prefieres clasificar desde casa, **WSOP.com** es la versión online: funciona en Nevada, Nueva Jersey, Michigan y Pensilvania, y ahí también se juegan satélites que reparten entradas.
 
 ## ¿Cuánto te retienen de impuestos si ganas?
 
@@ -152,7 +152,7 @@ El reglamento lo dice sin adornos: **los impuestos corren por cuenta del jugador
 
 Si vives y tributas en Estados Unidos, el casino entrega el formulario **W-2G** y necesita un número fiscal — sirve el Seguro Social o el **ITIN**, que es el número para quien no puede tener Seguro Social.
 
-Si vienes de fuera del país, la regla general del IRS retiene el **30%** de lo ganado. Existen convenios que eximen, pero conviene mirar la lista real: **de los países hispanohablantes, solo España está en ella.** México, Colombia, Argentina y el resto de Latinoamérica no. Lo desarrollo con las fuentes en la [guía de Las Vegas](/es/blog/poker-en-las-vegas "thumb:/images/poker-en-las-vegas-hero.webp").
+Si vienes de fuera del país, la regla general del IRS retiene el **30%** de lo ganado. Existen convenios que eximen, pero conviene mirar la lista real: **de los países hispanohablantes, solo España está en ella.** México, Colombia, Argentina y el resto de Latinoamérica no.
 
 ## Preguntas frecuentes
 

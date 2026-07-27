@@ -41,20 +41,13 @@ import { POST as holdemFish } from "./holdem-fish";
 import { POST as holdemCooler } from "./holdem-cooler";
 import { POST as holdemBadBeat } from "./holdem-bad-beat";
 import { POST as holdemCardCounting } from "./holdem-card-counting";
-// es-US 로컬 (KO/EN 대응본 없는 유니크 글)
-import { POST as pokerLegalEstadosUnidos } from "./poker-legal-estados-unidos";
-import { POST as pokerOnlineDineroReal } from "./poker-online-dinero-real-estados-unidos";
-import { POST as pokerEnNuevaYork } from "./poker-en-nueva-york";
-import { POST as pokerEnNuevaJersey } from "./poker-en-nueva-jersey";
-import { POST as pokerEnTexas } from "./poker-en-texas";
-import { POST as pokerEnFlorida } from "./poker-en-florida";
-import { POST as pokerEnCalifornia } from "./poker-en-california";
-import { POST as pokerEnArizonaYColorado } from "./poker-en-arizona-y-colorado";
-import { POST as pokerEnChicago } from "./poker-en-chicago";
-import { POST as pokerEnLasVegas } from "./poker-en-las-vegas";
-import { POST as pokerEnOklahoma } from "./poker-en-oklahoma";
-import { POST as pokerEnIndiana } from "./poker-en-indiana";
-import { POST as pokerEnMichigan } from "./poker-en-michigan";
+// ⛔ 2026-07-27 발행 중단 — es-US 합법성 클러스터 13편은 index에서 등록 해제함.
+//    사유: 사이트 컨셉을 "합법/불법 판정"에서 "하는 방법·룰·대회·전략"으로 전환.
+//    파일은 lib/posts-es/ 에 그대로 보존 — 향후 포스팅의 H2 하나에 넣을 재료로 재사용.
+//    해당 슬러그: poker-legal-estados-unidos, poker-online-dinero-real-estados-unidos,
+//    poker-en-{nueva-york, nueva-jersey, texas, florida, california, arizona-y-colorado,
+//    chicago, las-vegas, oklahoma, indiana, michigan}
+// es-US 신규 (대회 트랙)
 import { POST as comoEntrarAlWsop } from "./como-entrar-al-wsop";
 
 /**
@@ -113,19 +106,6 @@ export const ES_POSTS: Post[] = [
   // 기타 (독립)
   holdemCardCounting,
   // es-US 로컬 허브 (미국 히스패닉 대상 유니크 글 — 다른 언어에 대응본 없음)
-  pokerLegalEstadosUnidos,
-  pokerOnlineDineroReal,
-  pokerEnNuevaYork,
-  pokerEnNuevaJersey,
-  pokerEnTexas,
-  pokerEnFlorida,
-  pokerEnCalifornia,
-  pokerEnArizonaYColorado,
-  pokerEnChicago,
-  pokerEnLasVegas,
-  pokerEnOklahoma,
-  pokerEnIndiana,
-  pokerEnMichigan,
   comoEntrarAlWsop,
 ];
 
