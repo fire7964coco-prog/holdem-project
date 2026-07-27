@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{width:1200px;height:675px;font-family:Inter,system-ui,sans-serif;
+    background:radial-gradient(ellipse at 50% 0%,#1d3a2f 0%,#132821 55%,#0d1a16 100%);
+    color:#f4efe4;position:relative;overflow:hidden}
+  .felt{position:absolute;inset:0;opacity:.10;
+    background-image:repeating-linear-gradient(45deg,#000 0 2px,transparent 2px 5px)}
+  .wrap{position:relative;padding:56px 64px 0;text-align:center}
+  .kicker{font-size:19px;letter-spacing:.22em;text-transform:uppercase;color:#c9a44a;font-weight:700}
+  h1{font-size:54px;line-height:1.1;font-weight:900;margin-top:14px}
+  h1 em{font-style:normal;color:#c9a44a}
+  .sub{font-size:20px;font-weight:600;color:#a9bdb1;margin-top:16px}
+  .cols{display:flex;gap:26px;margin-top:42px;text-align:left}
+  .c{flex:1;border-radius:18px;padding:24px 28px}
+  .yes{background:rgba(201,164,74,.13);border:1px solid rgba(201,164,74,.55)}
+  .no{background:rgba(196,84,74,.12);border:1px solid rgba(224,138,128,.36)}
+  .tag{font-size:16px;font-weight:800;letter-spacing:.10em;text-transform:uppercase}
+  .yes .tag{color:#c9a44a}
+  .no .tag{color:#e08a80}
+  li{list-style:none;font-size:20px;font-weight:600;color:#e2dac8;margin-top:13px;line-height:1.35;
+    padding-left:24px;position:relative}
+  li:before{position:absolute;left:0;font-weight:900}
+  .yes li:before{content:"·";color:#c9a44a;font-size:26px;top:-4px}
+  .no li:before{content:"·";color:#e08a80;font-size:26px;top:-4px}
+  li small{display:block;font-size:15px;font-weight:500;color:#93a99d;margin-top:2px}
+  .foot{margin-top:34px;font-size:19px;font-weight:600;color:#9db3a6}
+  .foot b{color:#e2dac8;font-weight:800}
+  .wm{position:absolute;right:40px;bottom:28px;display:flex;align-items:center;gap:11px;opacity:.66}
+  .wm svg{width:29px;height:29px}
+  .wm span{font-size:20px;font-weight:700;color:#c9a44a;letter-spacing:.02em}
+</style></head>
+<body>
+<div class="felt"></div>
+<div class="wrap">
+  <div class="kicker">Propina al dealer</div>
+  <h1>Un dólar por bote ganado.<br><em>Y nada cuando pierdes.</em></h1>
+  <div class="sub">No es una regla — es costumbre. Por eso nadie la escribe clara.</div>
+
+  <div class="cols">
+    <div class="c yes">
+      <div class="tag">Se da</div>
+      <ul>
+        <li>Cuando ganas el bote<small>$1 en mesas bajas · $2–$5 si fue grande</small></li>
+        <li>Al chip runner<small>cuando te trae las fichas</small></li>
+        <li>A la mesera<small>por cada bebida, aunque sea cortesía</small></li>
+      </ul>
+    </div>
+    <div class="c no">
+      <div class="tag">No hace falta</div>
+      <ul>
+        <li>Cuando pierdes<small>la propina va con el bote ganado</small></li>
+        <li>Mano por mano en torneos<small>la inscripción ya cubre al personal</small></li>
+        <li>Al supervisor de sala<small>ese es su trabajo</small></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="foot">Se da <b>por bote ganado</b>, no por mano jugada</div>
+</div>
+
+<div class="wm">
+  <svg viewBox="0 0 24 24" fill="#c9a44a"><path d="M12 2C9 6.5 4 9.2 4 13.4A5.1 5.1 0 0 0 9.1 18.5c.9 0 1.7-.2 2.4-.7-.2 1.6-.8 2.9-1.9 4.2h4.8c-1.1-1.3-1.7-2.6-1.9-4.2.7.5 1.5.7 2.4.7A5.1 5.1 0 0 0 20 13.4C20 9.2 15 6.5 12 2z"/></svg>
+  <span>holdemmaster.com</span>
+</div>
+</body></html>

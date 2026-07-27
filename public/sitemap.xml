@@ -935,7 +935,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- 다국어 블로그 포스트 (450편) -->
+  <!-- 다국어 블로그 포스트 (452편) -->
 
   <url>
     <loc>https://www.holdemmaster.com/en/blog/apt-incheon-2026-guide</loc>
@@ -2554,6 +2554,13 @@
   </url>
 
   <url>
+    <loc>https://www.holdemmaster.com/es/blog/cuanto-dinero-llevar-poker</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://www.holdemmaster.com/es/blog/ept-barcelona-2026-guide</loc>
     <lastmod>2026-07-25</lastmod>
     <changefreq>monthly</changefreq>
@@ -3284,6 +3291,13 @@
 
   <url>
     <loc>https://www.holdemmaster.com/es/blog/poker-casino-primera-vez</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.holdemmaster.com/es/blog/propina-dealer-poker</loc>
     <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

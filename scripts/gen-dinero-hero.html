@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{width:1200px;height:675px;font-family:Inter,system-ui,sans-serif;
+    background:radial-gradient(ellipse at 50% 0%,#1d3a2f 0%,#132821 55%,#0d1a16 100%);
+    color:#f4efe4;position:relative;overflow:hidden}
+  .felt{position:absolute;inset:0;opacity:.10;
+    background-image:repeating-linear-gradient(45deg,#000 0 2px,transparent 2px 5px)}
+  .wrap{position:relative;padding:52px 64px 0;text-align:center}
+  .kicker{font-size:19px;letter-spacing:.22em;text-transform:uppercase;color:#c9a44a;font-weight:700}
+  h1{font-size:52px;line-height:1.1;font-weight:900;margin-top:14px}
+  h1 em{font-style:normal;color:#c9a44a}
+  .three{display:flex;gap:22px;margin-top:40px;text-align:left}
+  .s{flex:1;background:rgba(255,255,255,.05);border:1px solid rgba(201,164,74,.30);
+    border-radius:18px;padding:22px 24px;position:relative}
+  .s.hi{background:rgba(201,164,74,.13);border-color:rgba(201,164,74,.6)}
+  .num{position:absolute;top:-14px;left:22px;width:30px;height:30px;border-radius:50%;
+    background:#c9a44a;color:#10201a;font-size:16px;font-weight:900;display:grid;place-items:center}
+  .t{font-size:25px;font-weight:900;margin-top:8px}
+  .d{font-size:17px;font-weight:500;color:#a9bdb1;margin-top:9px;line-height:1.4}
+  .v{font-size:20px;font-weight:800;color:#c9a44a;margin-top:14px}
+  .foot{margin-top:36px;background:rgba(255,255,255,.05);border-radius:14px;
+    padding:16px 26px;font-size:20px;font-weight:600;color:#cfc6b2;display:inline-block}
+  .foot b{color:#c9a44a;font-weight:800}
+  .wm{position:absolute;right:40px;bottom:28px;display:flex;align-items:center;gap:11px;opacity:.66}
+  .wm svg{width:29px;height:29px}
+  .wm span{font-size:20px;font-weight:700;color:#c9a44a;letter-spacing:.02em}
+</style></head>
+<body>
+<div class="felt"></div>
+<div class="wrap">
+  <div class="kicker">Cuánto llevar a una sala</div>
+  <h1>El buy-in no es tu presupuesto.<br><em>Son tres números distintos.</em></h1>
+
+  <div class="three">
+    <div class="s hi">
+      <div class="num">1</div>
+      <div class="t">El buy-in</div>
+      <div class="d">Lo que pones en la mesa de una vez. Cien veces la ciega grande.</div>
+      <div class="v">$200 · $2,000 MXN</div>
+    </div>
+    <div class="s">
+      <div class="num">2</div>
+      <div class="t">El presupuesto</div>
+      <div class="d">Lo que estás dispuesto a perder esa noche. Cuando se acaba, te vas.</div>
+      <div class="v">3 buy-ins</div>
+    </div>
+    <div class="s">
+      <div class="num">3</div>
+      <div class="t">El fondo de juego</div>
+      <div class="d">Solo si vas a jugar seguido. Se cuenta en meses, no en noches.</div>
+      <div class="v">Decenas de buy-ins</div>
+    </div>
+  </div>
+
+  <div class="foot">Mesa de $1/$2 → <b>$600 para la noche</b> &nbsp;·&nbsp; Mesa de 10/20 pesos → <b>$6,000 MXN</b></div>
+</div>
+
+<div class="wm">
+  <svg viewBox="0 0 24 24" fill="#c9a44a"><path d="M12 2C9 6.5 4 9.2 4 13.4A5.1 5.1 0 0 0 9.1 18.5c.9 0 1.7-.2 2.4-.7-.2 1.6-.8 2.9-1.9 4.2h4.8c-1.1-1.3-1.7-2.6-1.9-4.2.7.5 1.5.7 2.4.7A5.1 5.1 0 0 0 20 13.4C20 9.2 15 6.5 12 2z"/></svg>
+  <span>holdemmaster.com</span>
+</div>
+</body></html>

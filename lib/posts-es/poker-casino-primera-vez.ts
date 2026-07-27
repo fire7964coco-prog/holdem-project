@@ -68,6 +68,8 @@ La referencia que usa casi todo el mundo es **100 veces la ciega grande (big bli
 
 Pero **ese buy-in no es tu presupuesto.** Si llegas con una sola entrada y pierdes dos manos grandes, se acabó la noche. Lo que yo hago es llevar **tres entradas completas** y decidir antes de entrar que si se van las tres, me voy. El cajero automático del casino a las tres de la mañana es el peor consejero que existe.
 
+La cuenta completa —buy-in, presupuesto de la noche y fondo de juego son tres números distintos— está en la [guía de cuánto dinero llevar](/es/blog/cuanto-dinero-llevar-poker "thumb:/images/cuanto-dinero-llevar-poker-hero.webp").
+
 ## La lista de espera
 
 Esto es lo primero que sorprende: **no te sientas y ya.** Las mesas están llenas y hay que anotarse.
@@ -154,11 +156,9 @@ Si todavía no tienes el ranking bien metido, [aquí está completo, de mayor a 
 
 ## La propina al dealer
 
-Esto no es una regla, es una costumbre — y la digo como tal.
+No es una regla, es costumbre. Lo corto: en mesas bajas de Estados Unidos se acostumbra **un dólar por bote ganado** — solo cuando ganas, no en cada mano. En México la costumbre existe pero es más relajada.
 
-Lo habitual en Estados Unidos es **un dólar por bote ganado** en las mesas bajas, y algo más si el bote fue grande. No se da en cada mano que juegas: se da cuando **ganas**.
-
-En México y buena parte de Latinoamérica el monto es menor y la costumbre es más relajada, pero existe. Lo importante: en Estados Unidos el sueldo del dealer depende de esto en buena medida, así que en la mesa se nota — y se agradece. No es una cantidad grande — piénsalo como parte del costo de jugar, igual que el rake (la comisión).
+Cuánto se da en botes grandes, qué cambia en torneos, a quién más se le da y cuándo no hace falta dar nada está en la [guía de la propina al dealer](/es/blog/propina-dealer-poker "thumb:/images/propina-dealer-poker-hero.webp").
 
 ## Salir de la mesa
 
