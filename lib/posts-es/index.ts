@@ -49,6 +49,7 @@ import { POST as holdemCardCounting } from "./holdem-card-counting";
 //    chicago, las-vegas, oklahoma, indiana, michigan}
 // es-US 신규 (대회 트랙)
 import { POST as comoEntrarAlWsop } from "./como-entrar-al-wsop";
+import { POST as pokerCasinoPrimeraVez } from "./poker-casino-primera-vez";
 
 /**
  * 스페인어(es) 블로그 포스트.
@@ -107,6 +108,7 @@ export const ES_POSTS: Post[] = [
   holdemCardCounting,
   // es-US 로컬 허브 (미국 히스패닉 대상 유니크 글 — 다른 언어에 대응본 없음)
   comoEntrarAlWsop,
+  pokerCasinoPrimeraVez,
 ];
 
 export function getEsPost(slug: string): Post | undefined {

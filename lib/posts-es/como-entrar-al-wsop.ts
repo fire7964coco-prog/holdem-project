@@ -109,6 +109,8 @@ Esa es la escalera que usa buena parte de la gente que ves en la tele. Juegas un
 
 ## ¿Cómo es el día del torneo?
 
+Si además es tu primera vez en una sala, el recorrido completo —lista de espera, compra de fichas, qué se dice en la mesa— está en la [guía de tu primera vez](/es/blog/poker-casino-primera-vez "thumb:/images/poker-casino-primera-vez-hero.webp").
+
 La parte que quita nervios. Va por orden, y todo esto sale del reglamento.
 
 :::steps

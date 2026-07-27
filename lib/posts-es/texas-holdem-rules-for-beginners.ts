@@ -387,6 +387,10 @@ Las manos son más fáciles de jugar cuando hablas más tarde. Si eres el primer
 /es/blog/holdem-hand-rankings | Jerarquía de manos de póker | /images/holdem-hand-rankings-hero.webp
 :::
 
+## ¿Y si voy a jugar a un casino?
+
+Las reglas son las mismas, pero el trámite no: hay lista de espera, las fichas se compran de una forma concreta y en la mesa se usan unos pocos términos fijos. El recorrido completo, paso a paso, está en la [guía de tu primera vez en una sala](/es/blog/poker-casino-primera-vez "thumb:/images/poker-casino-primera-vez-hero.webp").
+
 ## Preguntas frecuentes
 
 ### ¿Cómo se juega al Texas Hold'em paso a paso?
