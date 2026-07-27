@@ -49,13 +49,13 @@ En seis, y en ningún otro: **Nueva Jersey, Nevada, Pensilvania, Míchigan, Dela
 | Nueva Jersey | WSOP.com · BetMGM (también como Borgata, misma red) · PokerStars (como FanDuel) |
 | Nevada | WSOP.com — la única con sala abierta al público |
 | Pensilvania | WSOP.com · BetMGM · BetRivers · PokerStars (FanDuel) |
-| Míchigan | WSOP.com · BetMGM · BetRivers · PokerStars (FanDuel) |
+| Míchigan | WSOP.com · BetMGM · PokerStars (FanDuel) · DraftKings |
 | Delaware | BetRivers — es la única |
 | Virginia Occidental | BetRivers — es la única |
 
 :::tip[Si vives en California, Texas, Florida o Nueva York, la respuesta corta es que todavía no puedes jugar online por dinero real, por mucha publicidad que veas. No es tu caso el raro — es donde vive la mayoría de nosotros. En California, Texas y Florida, además, hay caminos propios que explico aparte.]:::
 
-:::note[DraftKings aparece en muchas listas como sala de póker, pero en realidad solo ofrece "Electric Poker": un torneo exprés de tres jugadores donde el premio se sortea antes de repartir las cartas. No hay mesas de cash ni torneos normales de varias mesas, así que no lo cuentes como alternativa si buscas jugar en serio.]:::
+:::note[Cuidado con dos marcas. **BetRivers no tiene póker en Míchigan** — ahí solo ofrece casino y apuestas deportivas, según la propia lista del regulador estatal. Y **DraftKings** entró al póker multiestado (Míchigan, Pensilvania y Nueva Jersey) en julio de 2026, pero su producto de póker ha sido el formato exprés de tres jugadores llamado "Electric Poker", sin mesas de cash — comprueba en la app qué formato ofrece hoy antes de contarlo como sala completa.]:::
 
 :::note[Delaware y Virginia Occidental estrenaron su sala en junio de 2025. Si encuentras una guía que dice que ahí no hay póker online, está desactualizada.]:::
 

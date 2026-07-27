@@ -65,7 +65,7 @@ Así que si tu plan era caminar al casino después del trabajo y sentarte a una 
 
 Este es el malentendido más caro de esta guía, porque cambia qué ley te aplica.
 
-Verás Horseshoe Hammond anunciado como "el casino de Chicago" en decenas de páginas. **Está en Hammond, Indiana**, a unas 20 millas del Loop, unos 25 o 30 minutos por la I-90/94 — y si tomas el Skyway, lleva peaje. Su propia página lo dice: *"Hammond Indiana near Chicago"*.
+Verás Horseshoe Hammond anunciado como "el casino de Chicago" en decenas de páginas. **Está en Hammond, Indiana**, y lo que eso cambia lo detallo en la [guía de póker de Indiana](/es/blog/poker-en-indiana "thumb:/images/poker-en-indiana-hero.webp") — a unas 20 millas del Loop, unos 25 o 30 minutos por la I-90/94 — y si tomas el Skyway, lleva peaje. Su propia página lo dice: *"Hammond Indiana near Chicago"*.
 
 ¿Por qué importa si de todos modos vas a manejar media hora?
 
