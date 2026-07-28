@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "APT 仁川 2026 於 8 月 7–16 日在仁川 Paradise City 賭場舉行——距第一航廈免費接駁車僅 10 分鐘。主賽事（Main Event）買入 KRW 2,500,000（約 $1,703），$1M GTD。$3.50 起可透過 Natural8 階梯式衛星賽（Satellite）晉級。僅限外國人參加（韓國公民不得進入）。首爾距離約 1 小時，是全亞洲美食、文化與夜生活最頂尖的城市之一。",
   category: "tournament",
   date: "2026-07-23",
-  updated: "2026-07-23",
+  updated: "2026-07-28",
   masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "16 分鐘",
@@ -107,8 +107,8 @@ Natural8 是 APT 的官方線上合作夥伴，主辦 ==**Journey to APT Incheon
 
 | 路線 | 保證席次 | 運作方式 |
 |---|---|---|
-| **Mega 衛星賽 → 現場 Day 1** | 45 席（其中 7 席含 $500 額度） | 線上贏得 → 從 Day 1 打完整的現場主賽事 |
-| **OnLive Day 1** | 12 席 | 線上打 Day 1 → 若成功保牌，從 Day 3 接續現場 |
+| **Mega 衛星賽 → 現場 Day 1** | 52 席 | 線上贏得 → 從 Day 1 打完整的現場主賽事 |
+| **OnLive Day 1** | 22 席 | 線上打 Day 1 → 若成功保牌，從 Day 3 接續現場 |
 
 </div>
 

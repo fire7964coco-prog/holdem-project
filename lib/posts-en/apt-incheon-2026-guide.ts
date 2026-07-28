@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "APT Incheon 2026 runs Aug 7–16 at Paradise City Casino, Incheon — 10 min by free shuttle from Terminal 1. Main Event: KRW 2,500,000 (~$1,703) buy-in, $1M GTD. Qualify from $3.50 via Natural8 step satellites. Foreign nationals only (Korean citizens cannot enter). Seoul is ~1 hour away and is one of the best cities in Asia for food, culture, and nightlife.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-07-19",
+  updated: "2026-07-28",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🇰🇷",
@@ -104,8 +104,8 @@ Natural8 is APT's official online partner and runs the ==**Journey to APT Incheo
 
 | Route | Seats GTD | How It Works |
 |---|---|---|
-| **Mega Satellite → Live Day 1** | 45 seats (7 incl. $500 credits) | Win online → play the full live Main Event from Day 1 |
-| **OnLive Day 1** | 12 seats | Play Day 1 online → if you bag chips, continue live from Day 3 |
+| **Mega Satellite → Live Day 1** | 52 seats | Win online → play the full live Main Event from Day 1 |
+| **OnLive Day 1** | 22 seats | Play Day 1 online → if you bag chips, continue live from Day 3 |
 
 </div>
 

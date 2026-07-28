@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "El APT Incheon 2026 se juega del 7 al 16 de agosto en el Paradise City Casino, Incheon — a 10 min en lanzadera gratuita desde la Terminal 1. Main Event: entrada de KRW 2,500,000 (~$1,703), $1M GTD. Clasifica desde $3.50 con los satélites por pasos de Natural8. Solo para extranjeros (los ciudadanos coreanos no pueden entrar). Seúl está a ~1 hora y es una de las mejores ciudades de Asia para comer, cultura y vida nocturna.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-07-24",
+  updated: "2026-07-28",
   masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -105,8 +105,8 @@ Natural8 es el partner online oficial del APT y organiza la campaña de satélit
 
 | Ruta | Asientos GTD | Cómo funciona |
 |---|---|---|
-| **Mega Satélite → Día 1 en vivo** | 45 asientos (7 incl. $500 en créditos) | Ganas online → juegas el Main Event completo en vivo desde el Día 1 |
-| **OnLive Día 1** | 12 asientos | Juegas el Día 1 online → si embolsas fichas, continúas en vivo desde el Día 3 |
+| **Mega Satélite → Día 1 en vivo** | 52 asientos | Ganas online → juegas el Main Event completo en vivo desde el Día 1 |
+| **OnLive Día 1** | 22 asientos | Juegas el Día 1 online → si embolsas fichas, continúas en vivo desde el Día 3 |
 
 </div>
 
