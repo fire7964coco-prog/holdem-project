@@ -95,7 +95,7 @@ APT仁川2026。8月7〜16日。パラダイスシティ・カジノ。総額$2.
 
 </div>
 
-**APT仁川ならではの魅力:** スケジュールには、WPTやEPTでは見られない形式が並びます——「Choose Your Own Adventure」(BBがゲームを選ぶ)、Omaha 21、12種目のスタッド限定ミックス、そして==g:9つの女性イベント。これは大手ツアーが1年かけて開催する数より多い規模です==。いつものNLHEグラインドに飽きているなら、まさにうってつけのフェスティバルです。
+**APT仁川ならではの魅力:** スケジュールには、WPTやEPTでは見られない形式が並びます——「Choose Your Own Adventure」(BBがゲームを選ぶ)、Omaha 21、12種目のスタッド限定ミックス、そして==g:Women's Main Eventを含む7つのレディースイベント。大手ツアーが1シーズンかけて開催する数より多い規模です==。いつものNLHEグラインドに飽きているなら、まさにうってつけのフェスティバルです。
 
 ---
 
@@ -292,7 +292,7 @@ Natural8はAPT公式のオンラインパートナーで、==**Journey to APT In
   </div>
 </div>
 
-**夜の散歩:** 明洞から北へ10分ほど歩くと、==**清渓川(チョンゲチョン)**==(청계천)へ下りていきます。ソウル都心の中心を貫く全長11kmの都市河川——朝鮮戦争後に高速道路の下に埋められ、2005年に掘り起こして復元されました。遊歩道は道路より一段低く、石垣・柳・夏の木陰に囲まれています。==g:水辺にはサギが営巣しています。==夜には光の演出が水面に映り、地元の人々がコンビニのドリンク片手に川べりに腰かけます。全長にわたって数分おきに地下鉄の出口があるので、好きなだけ歩いて、どこからでも地上に出られます。
+**夜の散歩:** 明洞から北へ10分ほど歩くと、==**清渓川(チョンゲチョン)**==(청계천)へ下りていきます。ソウル都心の中心を貫く全長11kmの都市河川——朝鮮戦争後に高速道路の下に埋められ、2005年に掘り起こして復元されました。遊歩道は道路より一段低く、石垣・柳・夏の木陰に囲まれています。==g:水辺にはサギが下りてきて魚を狙っています。==夜には光の演出が水面に映り、地元の人々がコンビニのドリンク片手に川べりに腰かけます。全長にわたって数分おきに地下鉄の出口があるので、好きなだけ歩いて、どこからでも地上に出られます。
 
 <div style="display:flex;gap:6px;margin:14px 0">
   <div style="flex:1;min-width:0;text-align:center">
@@ -301,7 +301,7 @@ Natural8はAPT公式のオンラインパートナーで、==**Journey to APT In
   </div>
   <div style="flex:1;min-width:0;text-align:center">
     <img src="/images/apt-incheon-2026-guide-cheonggyecheon2.webp" alt="清渓川のクローズアップ — 流れる水の中に立つ白いサギ、岸辺の岩に座るカップル" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
-    <p style="font-size:11px;color:#888;margin:4px 0 0">サギが営巣する川 — 首都の真ん中で</p>
+    <p style="font-size:11px;color:#888;margin:4px 0 0">サギが魚を狙う川 — 首都の真ん中で</p>
   </div>
   <div style="flex:1;min-width:0;text-align:center">
     <img src="/images/apt-incheon-2026-guide-cheonggyecheon3.webp" alt="清渓川の遊歩道 — 川沿いに枝垂れ柳が並び、人々が川辺の小道を散策している" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />

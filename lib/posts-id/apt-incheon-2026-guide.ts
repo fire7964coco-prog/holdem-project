@@ -95,7 +95,7 @@ Dan untuk pengunjung internasional: ==g:sebagian besar pemegang paspor negara Ba
 
 </div>
 
-**Yang membuat APT Incheon unik:** Jadwalnya menampilkan format yang tidak akan Anda temukan di WPT atau EPT — "Choose Your Own Adventure" (BB yang memilih permainannya), Omaha 21, mix 12 permainan khusus stud, dan ==g:sembilan women's event, lebih banyak daripada yang digelar kebanyakan tur besar dalam setahun penuh==. Kalau Anda bosan dengan grind NLHE yang itu-itu saja, inilah festival yang tepat.
+**Yang membuat APT Incheon unik:** Jadwalnya menampilkan format yang tidak akan Anda temukan di WPT atau EPT — "Choose Your Own Adventure" (BB yang memilih permainannya), Omaha 21, mix 12 permainan khusus stud, dan ==g:tujuh women's event termasuk Women's Main Event — lebih banyak daripada yang digelar kebanyakan tur besar dalam satu musim penuh==. Kalau Anda bosan dengan grind NLHE yang itu-itu saja, inilah festival yang tepat.
 
 ---
 
@@ -294,7 +294,7 @@ Berikut yang bisa dilakukan dengan 1–3 hari luang:
   </div>
 </div>
 
-**Jalan malam:** Dari Myeongdong, berjalan ke utara sekitar 10 menit dan Anda akan turun ke ==**Cheonggyecheon Stream**== (청계천). Kanal urban sepanjang 11km yang mengalir melintasi jantung pusat kota Seoul — dulu terkubur di bawah jalan tol setelah Perang Korea, digali dan direstorasi tahun 2005. Jalurnya berada di bawah permukaan jalan, diapit tembok batu, pohon willow, dan naungan musim panas. ==g:Burung kuntul bersarang di air.== Pada malam hari instalasi lampu memantul di permukaan air dan warga lokal duduk di tepiannya dengan minuman dari minimarket. Exit subway muncul setiap beberapa menit di sepanjang jalur, jadi Anda bisa berjalan sebanyak atau sesedikit yang Anda mau dan muncul di mana saja.
+**Jalan malam:** Dari Myeongdong, berjalan ke utara sekitar 10 menit dan Anda akan turun ke ==**Cheonggyecheon Stream**== (청계천). Kanal urban sepanjang 11km yang mengalir melintasi jantung pusat kota Seoul — dulu terkubur di bawah jalan tol setelah Perang Korea, digali dan direstorasi tahun 2005. Jalurnya berada di bawah permukaan jalan, diapit tembok batu, pohon willow, dan naungan musim panas. ==g:Burung kuntul berdiri di tengah aliran air, mencari ikan.== Pada malam hari instalasi lampu memantul di permukaan air dan warga lokal duduk di tepiannya dengan minuman dari minimarket. Exit subway muncul setiap beberapa menit di sepanjang jalur, jadi Anda bisa berjalan sebanyak atau sesedikit yang Anda mau dan muncul di mana saja.
 
 <div style="display:flex;gap:6px;margin:14px 0">
   <div style="flex:1;min-width:0;text-align:center">
@@ -303,7 +303,7 @@ Berikut yang bisa dilakukan dengan 1–3 hari luang:
   </div>
   <div style="flex:1;min-width:0;text-align:center">
     <img src="/images/apt-incheon-2026-guide-cheonggyecheon2.webp" alt="Close-up Cheonggyecheon Stream — burung kuntul putih berdiri di air yang mengalir, sepasang orang duduk di bebatuan tepi kanal" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
-    <p style="font-size:11px;color:#888;margin:4px 0 0">Burung kuntul bersarang di kanal — di tengah kota besar</p>
+    <p style="font-size:11px;color:#888;margin:4px 0 0">Burung kuntul mencari ikan di kanal — di tengah kota besar</p>
   </div>
   <div style="flex:1;min-width:0;text-align:center">
     <img src="/images/apt-incheon-2026-guide-cheonggyecheon3.webp" alt="Jalur setapak Cheonggyecheon Stream — pohon willow menjuntai di sisi kanal, pejalan kaki menyusuri jalur tepi sungai" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />

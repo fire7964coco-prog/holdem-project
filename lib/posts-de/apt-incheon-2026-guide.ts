@@ -95,7 +95,7 @@ Und für internationale Besucher: ==g:Die meisten westlichen Passinhaber reisen 
 
 </div>
 
-**Was die APT Incheon einzigartig macht:** Der Plan bietet Formate, die du bei WPT oder EPT nicht findest — "Choose Your Own Adventure" (der Big Blind wählt das Spiel), Omaha 21, ein 12-Game-Stud-Mix und ==g:neun Women's Events, mehr als die meisten großen Touren in einem ganzen Jahr laufen==. Wenn du den ewig gleichen NLHE-Grind satt hast, ist das das Festival dafür.
+**Was die APT Incheon einzigartig macht:** Der Plan bietet Formate, die du bei WPT oder EPT nicht findest — "Choose Your Own Adventure" (der Big Blind wählt das Spiel), Omaha 21, ein 12-Game-Stud-Mix und ==g:sieben Women's Events inklusive eines eigenen Women's Main Event — mehr, als die meisten großen Touren in einer ganzen Saison anbieten==. Wenn du den ewig gleichen NLHE-Grind satt hast, ist das das Festival dafür.
 
 ---
 
@@ -294,7 +294,7 @@ Hier ist, was du mit 1–3 freien Tagen machst:
   </div>
 </div>
 
-**Nachtspaziergang:** Von Myeongdong läufst du rund 10 Minuten nach Norden und steigst hinab zum ==**Cheonggyecheon Stream**== (청계천). Eine 11 km lange urbane Wasserstraße, die durchs Herz der Innenstadt von Seoul fließt — nach dem Koreakrieg unter einer Autobahn begraben, 2005 freigelegt und restauriert. Der Weg verläuft unter Straßenniveau, gesäumt von Steinmauern, Weiden und Sommerschatten. ==g:Reiher nisten im Wasser.== Nachts spiegeln sich die Lichtinstallationen auf der Oberfläche und Einheimische sitzen mit Getränken vom Convenience Store an den Ufern. U-Bahn-Ausgänge kommen entlang des gesamten Wegs alle paar Minuten hoch, also kannst du so viel oder so wenig laufen wie du willst und überall auftauchen.
+**Nachtspaziergang:** Von Myeongdong läufst du rund 10 Minuten nach Norden und steigst hinab zum ==**Cheonggyecheon Stream**== (청계천). Eine 11 km lange urbane Wasserstraße, die durchs Herz der Innenstadt von Seoul fließt — nach dem Koreakrieg unter einer Autobahn begraben, 2005 freigelegt und restauriert. Der Weg verläuft unter Straßenniveau, gesäumt von Steinmauern, Weiden und Sommerschatten. ==g:Reiher stehen mitten im Wasser und fischen.== Nachts spiegeln sich die Lichtinstallationen auf der Oberfläche und Einheimische sitzen mit Getränken vom Convenience Store an den Ufern. U-Bahn-Ausgänge kommen entlang des gesamten Wegs alle paar Minuten hoch, also kannst du so viel oder so wenig laufen wie du willst und überall auftauchen.
 
 <div style="display:flex;gap:6px;margin:14px 0">
   <div style="flex:1;min-width:0;text-align:center">
@@ -303,7 +303,7 @@ Hier ist, was du mit 1–3 freien Tagen machst:
   </div>
   <div style="flex:1;min-width:0;text-align:center">
     <img src="/images/apt-incheon-2026-guide-cheonggyecheon2.webp" alt="Cheonggyecheon Stream Nahaufnahme — weißer Reiher steht im fließenden Wasser, ein Paar sitzt auf Felsen am Ufer" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
-    <p style="font-size:11px;color:#888;margin:4px 0 0">Reiher nisten im Bach — mitten in einer Hauptstadt</p>
+    <p style="font-size:11px;color:#888;margin:4px 0 0">Reiher fischen im Bach — mitten in einer Hauptstadt</p>
   </div>
   <div style="flex:1;min-width:0;text-align:center">
     <img src="/images/apt-incheon-2026-guide-cheonggyecheon3.webp" alt="Cheonggyecheon Stream Fußweg — Trauerweiden entlang des Bachs, Spaziergänger auf dem Uferweg" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
@@ -353,11 +353,11 @@ Verglichen mit der EPT Barcelona (~€5.300 Main) oder WPT Australia (~AUD $5.00
 
 | Nationalität | Visum nötig? | Wie du einreist |
 |---|---|---|
-| USA, Kanada, UK, Australien, NZ, die meisten EU | **Kein Visum** | K-ETA (gratis, online, dauert 5 Min) |
+| USA, Kanada, UK, Australien, NZ, die meisten EU | **Kein Visum** | **bis 31.12.2026 vom K-ETA befreit** — nur die kostenlose e-Arrival Card |
 | Japan, Singapur, Hongkong, Taiwan | **Kein Visum** | K-ETA |
 | Die meisten anderen Länder | Prüfe [mofa.go.kr](https://www.mofa.go.kr) | Ggf. Touristenvisum nötig |
 
-==r:Beantrage das K-ETA, bevor du Flüge buchst.== Es geht meist sofort, aber prüfe 2 Wochen im Voraus auf [k-eta.go.kr](https://www.k-eta.go.kr).
+==g:**Gute Nachricht für DACH: Deutschland, Österreich und die Schweiz stehen auf der 22er-Ausnahmeliste — bis 31.12.2026 brauchst du kein K-ETA.**== Du fliegst visumfrei für bis zu 90 Tage, ohne Gebühr und ohne Wartezeit; vor der Landung reichst du nur die kostenlose e-Arrival Card online ein. Die Ausnahme wird jährlich verlängert — vor der Buchung trotzdem kurz auf [k-eta.go.kr](https://www.k-eta.go.kr) gegenchecken.
 
 **Casino-Zutritt (Paradise City):**
 - Gültiger nicht-koreanischer Pass erforderlich

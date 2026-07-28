@@ -94,7 +94,7 @@ And for international visitors: ==g:most Western passport holders (USA, Canada, 
 
 </div>
 
-**What makes APT Incheon unique:** The schedule runs formats you won't find at WPT or EPT — "Choose Your Own Adventure" (the BB picks the game), Omaha 21, a 12-game stud-only mix, and ==g:nine women's events, more than most major tours run in a full year==. If you're tired of the same NLHE grind, this is the festival for it.
+**What makes APT Incheon unique:** The schedule runs formats you won't find at WPT or EPT — "Choose Your Own Adventure" (the BB picks the game), Omaha 21, a 12-game stud-only mix, and ==g:seven women's events including a Women's Main Event — more than most major tours run in a full season==. If you're tired of the same NLHE grind, this is the festival for it.
 
 ---
 
@@ -289,7 +289,7 @@ Here's what to do with 1–3 free days:
   </div>
 </div>
 
-**Night walk:** From Myeongdong, walk north for about 10 minutes and you drop down into ==**Cheonggyecheon Stream**== (청계천). An 11km urban waterway that runs through the heart of downtown Seoul — buried under a highway after the Korean War, excavated and restored in 2005. The path runs below street level, flanked by stone walls, willows, and summer shade. ==g:Egrets nest in the water.== At night the light installations reflect on the surface and locals sit along the banks with convenience store drinks. Subway exits come up every few minutes along the entire path, so you can walk as much or as little as you want and surface anywhere.
+**Night walk:** From Myeongdong, walk north for about 10 minutes and you drop down into ==**Cheonggyecheon Stream**== (청계천). An 11km urban waterway that runs through the heart of downtown Seoul — buried under a highway after the Korean War, excavated and restored in 2005. The path runs below street level, flanked by stone walls, willows, and summer shade. ==g:Egrets stand in the stream, fishing.== At night the light installations reflect on the surface and locals sit along the banks with convenience store drinks. Subway exits come up every few minutes along the entire path, so you can walk as much or as little as you want and surface anywhere.
 
 <div style="display:flex;gap:6px;margin:14px 0">
   <div style="flex:1;min-width:0;text-align:center">
@@ -298,7 +298,7 @@ Here's what to do with 1–3 free days:
   </div>
   <div style="flex:1;min-width:0;text-align:center">
     <img src="/images/apt-incheon-2026-guide-cheonggyecheon2.webp" alt="Cheonggyecheon Stream close-up — white egret standing in the flowing water, couple sitting on rocks by the bank" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
-    <p style="font-size:11px;color:#888;margin:4px 0 0">Egrets nesting in the stream — in the middle of a capital city</p>
+    <p style="font-size:11px;color:#888;margin:4px 0 0">Egrets fishing in the stream — in the middle of a capital city</p>
   </div>
   <div style="flex:1;min-width:0;text-align:center">
     <img src="/images/apt-incheon-2026-guide-cheonggyecheon3.webp" alt="Cheonggyecheon Stream walking path — weeping willow trees alongside the stream, pedestrians strolling the riverside trail" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />

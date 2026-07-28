@@ -49,7 +49,7 @@ Antes do pôquer: a Coreia do Sul virou silenciosamente um dos melhores países 
 - **Cultura K:** o Palácio Gyeongbokgung, a Bukchon Hanok Village e a cena de música ao vivo de Hongdae são experiências culturais legitimamente de nível mundial.
 - **Custo:** comparada a Tóquio, Hong Kong ou Sydney, Seul é notavelmente acessível — um jantar completo de churrasco coreano com bebidas sai por menos de $20 por pessoa.
 
-E pra visitantes internacionais: ==g:a maioria dos portadores de passaporte ocidental entra na Coreia sem visto ou via um K-ETA gratuito (autorização eletrônica de viagem) que leva minutos pra solicitar online.==
+E pra visitantes internacionais: ==g:a maioria dos portadores de passaporte ocidental entra na Coreia sem visto ou via um K-ETA (autorização eletrônica de viagem). **Atenção, brasileiro: o Brasil não está na lista de 22 países isentos** — você entra sem visto por 90 dias, mas **precisa do K-ETA: ₩10.000 (~$7)**, em k-eta.go.kr, válido por 3 anos.==
 
 **E tem um motivo que vale só pra este ano.** O próprio anúncio da APT diz sem rodeios: *"with the APT turning twenty in 2026"* — o tour completa vinte anos em 2026. Ele nasceu em 2006, quando Antanas "Tony G" Guoga venceu o Main Event inaugural em Singapura. A temporada de aniversário fecha com o APT Championship em Taipei, e é por isso que **os assentos para o Championship distribuídos em Incheon valem mais que o normal neste ano**.
 
@@ -95,7 +95,7 @@ E pra visitantes internacionais: ==g:a maioria dos portadores de passaporte ocid
 
 </div>
 
-**O que torna o APT Incheon único:** a programação tem formatos que você não vai achar no WPT nem no EPT — "Choose Your Own Adventure" (o BB escolhe o jogo), Omaha 21, um mix só de stud com 12 jogos e ==g:nove eventos femininos, mais do que a maioria dos grandes tours faz num ano inteiro==. Se você está cansado do mesmo grind de NLHE, esse é o festival pra isso.
+**O que torna o APT Incheon único:** a programação tem formatos que você não vai achar no WPT nem no EPT — "Choose Your Own Adventure" (o BB escolhe o jogo), Omaha 21, um mix só de stud com 12 jogos e ==g:sete eventos femininos incluindo um Women’s Main Event — mais do que a maioria dos grandes tours faz numa temporada inteira==. Se você está cansado do mesmo grind de NLHE, esse é o festival pra isso.
 
 ---
 
@@ -214,7 +214,7 @@ O Paradise City roda o seu próprio transfer gratuito a partir do aeroporto:
 | Opção | Trajeto | Custo | Observações |
 |:---|:---:|:---|:---|
 | ==g:**Shuttle grátis (do T1)**== | ==g:~10 min== | ==g:Grátis== | Melhor opção — Portão 3C ou 14C, a cada 30 min (5h–23h) |
-| Shuttle grátis (do T2) | ~20 min | Grátis | Portão 2A, a cada 60 min |
+| Shuttle grátis (do T2) | ~20 min | Grátis | Portão 4A, a cada 60 min |
 | Táxi do T1 | ~15–20 min | ~$15–20 | Taxímetro, disponível 24/7 |
 | AREX até a Estação Unseo → táxi | ~20 min no total | ~$8 | Útil se o horário do trem bater |
 
@@ -294,7 +294,7 @@ Aqui está o que fazer com 1–3 dias livres:
   </div>
 </div>
 
-**Caminhada noturna:** de Myeongdong, ande pro norte por uns 10 minutos e você desce até o ==**Riacho Cheonggyecheon**== (청계천). Um curso d'água urbano de 11km que atravessa o coração do centro de Seul — soterrado sob uma via expressa depois da Guerra da Coreia, escavado e restaurado em 2005. O caminho fica abaixo do nível da rua, ladeado por muros de pedra, salgueiros e sombra de verão. ==g:Garças fazem ninho na água.== À noite, as instalações de luz se refletem na superfície e os locais sentam nas margens com bebidas de loja de conveniência. As saídas de metrô aparecem a cada poucos minutos ao longo de todo o caminho, então você pode caminhar o quanto quiser e emergir em qualquer ponto.
+**Caminhada noturna:** de Myeongdong, ande pro norte por uns 10 minutos e você desce até o ==**Riacho Cheonggyecheon**== (청계천). Um curso d'água urbano de 11km que atravessa o coração do centro de Seul — soterrado sob uma via expressa depois da Guerra da Coreia, escavado e restaurado em 2005. O caminho fica abaixo do nível da rua, ladeado por muros de pedra, salgueiros e sombra de verão. ==g:Garças ficam paradas no riacho, pescando.== À noite, as instalações de luz se refletem na superfície e os locais sentam nas margens com bebidas de loja de conveniência. As saídas de metrô aparecem a cada poucos minutos ao longo de todo o caminho, então você pode caminhar o quanto quiser e emergir em qualquer ponto.
 
 <div style="display:flex;gap:6px;margin:14px 0">
   <div style="flex:1;min-width:0;text-align:center">
@@ -353,7 +353,7 @@ Comparado ao EPT Barcelona (Main ~€5.300) ou ao WPT Australia (Main ~AUD $5.00
 
 | Nacionalidade | Precisa de visto? | Como entrar |
 |---|---|---|
-| EUA, Canadá, Reino Unido, Austrália, Nova Zelândia, maioria da UE | **Sem visto** | K-ETA (gratuito, online, leva 5 min) |
+| EUA, Canadá, Reino Unido, Austrália, Nova Zelândia, maioria da UE | **Sem visto** | **K-ETA obrigatório** — ₩10.000, em k-eta.go.kr, peça 72h+ antes |
 | Japão, Singapura, Hong Kong, Taiwan | **Sem visto** | K-ETA |
 | Maioria dos outros países | Confira [mofa.go.kr](https://www.mofa.go.kr) | Pode precisar de visto de turista |
 
@@ -376,7 +376,7 @@ Comparado ao EPT Barcelona (Main ~€5.300) ou ao WPT Australia (Main ~AUD $5.00
 
 **Q. O Paradise City Casino é mesmo caminhável a partir do Aeroporto de Incheon?**
 
-A. Bem pertinho. O Paradise City roda um shuttle grátis a partir do Terminal 1 (Portões 3C e 14C) a cada 30 minutos — a viagem leva cerca de 10 minutos. O Terminal 2 tem o seu próprio shuttle a cada 60 minutos a partir do Portão 2A. O resort é um complexo integrado adjacente ao aeroporto, projetado especificamente pra chegadas internacionais.
+A. Bem pertinho. O Paradise City roda um shuttle grátis a partir do Terminal 1 (Portões 3C e 14C) a cada 30 minutos — a viagem leva cerca de 10 minutos. O Terminal 2 tem o seu próprio shuttle a cada 60 minutos a partir do Portão 4A. O resort é um complexo integrado adjacente ao aeroporto, projetado especificamente pra chegadas internacionais.
 
 **Q. Posso jogar o Main Event do APT Incheon se nunca joguei um torneio ao vivo?**
 

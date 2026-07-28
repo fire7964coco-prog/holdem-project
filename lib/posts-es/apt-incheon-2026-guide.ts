@@ -95,7 +95,7 @@ Y para el visitante internacional: ==g:la mayoría de los pasaportes occidentale
 
 </div>
 
-**Lo que hace único al APT Incheon:** el calendario incluye formatos que no encontrarás en el WPT ni en el EPT — "Choose Your Own Adventure" (la BB elige la modalidad), Omaha 21, un mix de solo stud a 12 juegos y ==g:nueve eventos femeninos, más de los que muchos tours grandes montan en todo un año==. Si estás cansado del mismo grind de NLHE, este es el festival ideal.
+**Lo que hace único al APT Incheon:** el calendario incluye formatos que no encontrarás en el WPT ni en el EPT — "Choose Your Own Adventure" (la BB elige la modalidad), Omaha 21, un mix de solo stud a 12 juegos y ==g:siete eventos femeninos incluido un Women’s Main Event — más de los que muchos tours grandes montan en una temporada entera==. Si estás cansado del mismo grind de NLHE, este es el festival ideal.
 
 ---
 
@@ -294,7 +294,7 @@ Esto es lo que puedes hacer con 1–3 días libres:
   </div>
 </div>
 
-**Paseo nocturno:** desde Myeongdong, camina unos 10 minutos hacia el norte y bajas al ==**arroyo Cheonggyecheon**== (청계천). Una vía de agua urbana de 11 km que atraviesa el corazón del centro de Seúl — enterrada bajo una autopista tras la Guerra de Corea, excavada y restaurada en 2005. El camino discurre por debajo del nivel de la calle, flanqueado por muros de piedra, sauces y la sombra del verano. ==g:Las garcetas anidan en el agua.== De noche, las instalaciones de luz se reflejan en la superficie y los locales se sientan en las orillas con bebidas del súper. Hay salidas de metro cada pocos minutos a lo largo de todo el recorrido, así que puedes caminar tanto o tan poco como quieras y salir donde sea.
+**Paseo nocturno:** desde Myeongdong, camina unos 10 minutos hacia el norte y bajas al ==**arroyo Cheonggyecheon**== (청계천). Una vía de agua urbana de 11 km que atraviesa el corazón del centro de Seúl — enterrada bajo una autopista tras la Guerra de Corea, excavada y restaurada en 2005. El camino discurre por debajo del nivel de la calle, flanqueado por muros de piedra, sauces y la sombra del verano. ==g:Las garcetas se paran en el arroyo a pescar.== De noche, las instalaciones de luz se reflejan en la superficie y los locales se sientan en las orillas con bebidas del súper. Hay salidas de metro cada pocos minutos a lo largo de todo el recorrido, así que puedes caminar tanto o tan poco como quieras y salir donde sea.
 
 <div style="display:flex;gap:6px;margin:14px 0">
   <div style="flex:1;min-width:0;text-align:center">
@@ -303,7 +303,7 @@ Esto es lo que puedes hacer con 1–3 días libres:
   </div>
   <div style="flex:1;min-width:0;text-align:center">
     <img src="/images/apt-incheon-2026-guide-cheonggyecheon2.webp" alt="Primer plano del arroyo Cheonggyecheon — garceta blanca de pie en el agua que fluye, pareja sentada en las rocas junto a la orilla" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
-    <p style="font-size:11px;color:#888;margin:4px 0 0">Garcetas anidando en el arroyo — en pleno centro de una capital</p>
+    <p style="font-size:11px;color:#888;margin:4px 0 0">Garcetas pescando en el arroyo — en pleno centro de una capital</p>
   </div>
   <div style="flex:1;min-width:0;text-align:center">
     <img src="/images/apt-incheon-2026-guide-cheonggyecheon3.webp" alt="Sendero peatonal del arroyo Cheonggyecheon — sauces llorones junto al agua, peatones paseando por el camino de la ribera" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />

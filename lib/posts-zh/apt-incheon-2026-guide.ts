@@ -95,7 +95,7 @@ APT Incheon 2026。8 月 7–16 日。Paradise City Casino。总保底奖池 $2.
 
 </div>
 
-**APT Incheon 的独特之处：** 这里的赛制是你在 WPT 或 EPT 都找不到的——"Choose Your Own Adventure"（由大盲位选牌型）、Omaha 21、一个 12 种玩法的 stud-only 混合赛，还有 ==g:九场女子赛事，比大多数主流巡回赛一整年办的都多==。如果你打腻了千篇一律的 NLHE，就该来这个扑克节。
+**APT Incheon 的独特之处：** 这里的赛制是你在 WPT 或 EPT 都找不到的——"Choose Your Own Adventure"（由大盲位选牌型）、Omaha 21、一个 12 种玩法的 stud-only 混合赛，还有 ==g:七场女子赛事（含女子主赛），比大多数主流巡回赛一整个赛季办的都多==。如果你打腻了千篇一律的 NLHE，就该来这个扑克节。
 
 ---
 
@@ -294,7 +294,7 @@ Paradise City 提供自家的机场免费接驳：
   </div>
 </div>
 
-**夜间散步：** 从明洞往北走约 10 分钟，你就会下到 ==**清溪川**==（청계천）。这是一条贯穿首尔市中心的 11 公里城市水道——朝鲜战争后被高架路盖住，2005 年重新挖出并修复。步道位于街面之下，两侧是石墙、柳树和夏日树荫。==g:白鹭在水中筑巢。== 到了夜里，灯光装置倒映在水面，本地人拿着便利店的饮料坐在河岸边。整条步道每隔几分钟就有一个地铁出口，所以你想走多远就走多远，随处都能上来。
+**夜间散步：** 从明洞往北走约 10 分钟，你就会下到 ==**清溪川**==（청계천）。这是一条贯穿首尔市中心的 11 公里城市水道——朝鲜战争后被高架路盖住，2005 年重新挖出并修复。步道位于街面之下，两侧是石墙、柳树和夏日树荫。==g:白鹭就在溪里踱步捕鱼。== 到了夜里，灯光装置倒映在水面，本地人拿着便利店的饮料坐在河岸边。整条步道每隔几分钟就有一个地铁出口，所以你想走多远就走多远，随处都能上来。
 
 <div style="display:flex;gap:6px;margin:14px 0">
   <div style="flex:1;min-width:0;text-align:center">
@@ -303,7 +303,7 @@ Paradise City 提供自家的机场免费接驳：
   </div>
   <div style="flex:1;min-width:0;text-align:center">
     <img src="/images/apt-incheon-2026-guide-cheonggyecheon2.webp" alt="清溪川特写——一只白鹭立在流水中，一对情侣坐在岸边的石头上" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
-    <p style="font-size:11px;color:#888;margin:4px 0 0">白鹭在溪中筑巢——就在首都市中心</p>
+    <p style="font-size:11px;color:#888;margin:4px 0 0">白鹭在溪中捕食——就在首都市中心</p>
   </div>
   <div style="flex:1;min-width:0;text-align:center">
     <img src="/images/apt-incheon-2026-guide-cheonggyecheon3.webp" alt="清溪川步道——溪边的垂柳，行人沿着河畔小径散步" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
