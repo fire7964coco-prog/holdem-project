@@ -266,6 +266,90 @@ APT Main Event(상위 3명) / APT Super High Roller / APT High Roller / Supersta
 
 ---
 
+## 2-12. 3차 라운드 (GOP 등급 상향 · 호주 · 베트남 · 모로코)
+
+### ★★ 10월 말 영종도에 대회 2개가 동시에 열린다
+
+| 대회 | 날짜 | 베뉴 |
+|---|---|---|
+| **GOP Incheon II** "The Labyrinth Trail" | 10.30~11.08 | 인천 영종도 **파라다이스 시티** |
+| **WPT Seoul** | 10.30~11.09 | 인천 영종도 **INSPIRE** |
+
+**둘 다 실재한다.** 날짜 충돌이 아니라 **같은 섬에서 동시 개최**다. 파라다이스 시티와 INSPIRE는 차로 몇 분 거리다.
+→ 독자에게 매우 유용한 정보. "한 번 가서 둘 다 칠 수 있다" / "숙소·항공을 한 번만 잡으면 된다"는 각도의 콘텐츠가 나온다.
+
+### GOP(Gods of Poker) — 등급 B → **A로 상향**
+
+개별 시리즈 페이지가 실재함을 확인 (`godsofpoker.com/series/incheon-2026` 등) + [공식 시즌 페이지](https://godsofpoker.com/news/gods-of-poker-2026).
+각 시리즈에 **부제(코드네임)**가 붙는 것도 확인 — 페이지에 표기하면 디테일이 산다.
+
+| 대회 | 부제 | 날짜 | 베뉴 | 비고 |
+|---|---|---|---|---|
+| GOP Taipei | The Titan Assembly | 01.08~01.18 | CTP Asia Poker Arena | Cronus 스트럭처 |
+| GOP Incheon | **The Prophecy Unfolds** | 05.15~05.24 | 파라다이스 시티 | **ME GTD KRW 700M (7억)** ← 페이지에 없던 값 |
+| GOP Manila | The Arena of Champions | 08.21~08.30 | City of Dreams Manila | |
+| GOP Taipei II | The Trial of Wisdom | 09.18~09.27 | CTP Asia Poker Arena | |
+| GOP Incheon II | The Labyrinth Trail | 10.30~11.08 | 파라다이스 시티 | |
+| GOP Jeju | The Olympus Return | 12.04~12.13 | 제주 Les A Casino | |
+
+### 호주 🇦🇺 — WPT Australia 2026 (S등급)
+
+| 항목 | 값 |
+|---|---|
+| 페스티벌 | **09.10~09.30**, The Star Sydney (달링하버) |
+| 규모 | **36개 이벤트** |
+| 특징 | **호주 최초 듀얼 챔피언십 포맷** |
+| WPT Prime Australia Championship | AUD $1,500 / 09.17~09.22 |
+| WPT Australia Championship | AUD $5,000 / 09.24~09.30 |
+| 기타 | Ladies Championship AUD $500 (09.15~16), Australian Poker Cup $1,500, Mystery Bounty $1,350, Australian PLO Championship $5,000 |
+
+출처: [WPT 공식](https://www.worldpokertour.com/article/wpt-returns-to-the-star-sydney-for-wpt-prime-australia-and-wpt-australia-championship-events) + [Star Poker 공식](https://www.starpoker.com.au/wpt-australia) + [PokerMedia AU](https://www.pokermedia.com.au/2026/05/22/the-star-sydney-releases-full-schedules-for-wpt-australia-and-nsw-shot-clock-series/)
+
+### 베트남 🇻🇳
+
+**WPT Vietnam은 존재하지 않는다** (확인 완료 — WPT의 동남아 스톱은 캄보디아다).
+
+| 대회 | 날짜 | 베뉴 | 등급 |
+|---|---|---|---|
+| VPL Vietnam Poker League III | 04.29~05.11 | 하노이 Grand Plaza Hotel | B |
+| VPG Ho Chi Minh (Vietnam Poker Games) | 날짜 미확보 | 호치민 | C |
+| USOP Vietnam 2026 / Quads Poker Championship / HSOP | 날짜 미확보 | 하노이·다낭·푸꾸옥 | C |
+
+> 베트남은 업계에서 **"value king"**으로 불린다 — 저렴한 바이인 대비 큰 개런티. 한국에서 가깝고 저렴해서 **KO 독자에게 잠재 가치가 큰 목적지**다. 날짜 확보되면 우선 수록 대상.
+
+### 일본 🇯🇵 — JOPT Tokyo Grand Final (S등급, 공식 사이트 직접 확인)
+
+[schedule26gf.japanopenpoker.com](https://schedule26gf.japanopenpoker.com/) 원문 확인.
+
+| 항목 | 값 |
+|---|---|
+| 일정 | **2026.04.24~05.06** (이미 종료) |
+| 베뉴 | ベルサール高田馬場 (Bellesalle Takadanobaba) |
+| 이벤트 수 | **256개** |
+| ME 바이인 | **¥120,000** 또는 3 Tickets + ¥8,000 |
+| GTD | 미표기 |
+
+> 256개 이벤트는 아시아 최대급이다. **`ja` 로케일 페이지의 핵심 자산**이 될 수 있다. 2027년 판이 발표되면 즉시 수록.
+
+### 모로코 🇲🇦 — WSOPC Marrakech (S등급)
+
+| 항목 | 값 |
+|---|---|
+| 일정 | **01.16~01.25** (10일) |
+| 베뉴 | Casino de Marrakech (Es Saadi Marrakech Resort 내) |
+| 규모 | **31개 이벤트 / 골드링 15개** |
+
+출처: [WSOP 공식](https://www.wsop.com/tournaments/2026-wsop-circuit-es-saadi-marrakech-resort/)
+
+### 한국 국내 — KSOP
+
+**KSOP(Korea Series of Poker)** — 2019년 신설, 한국 최초 프로 포커 토너먼트 전문 브랜드. 공식 [ksop.co.kr](https://www.ksop.co.kr/).
+2026 하반기 일정은 **검색으로 확보 실패**. 공식 사이트 직접 확인 필요.
+
+> ⚠️ 이번 검색에서도 **"APT 인천 12개 이벤트 / 총 38억"** 오정보가 같은 저품질 집계 사이트에서 재출현했다. 공식은 **100+ 이벤트 / 40억+**. 이 사이트는 **블랙리스트**로 취급할 것.
+
+---
+
 ## 3. 미해결 / 다음 서치 대상
 
 | # | 항목 | 상태 |
@@ -273,16 +357,18 @@ APT Main Event(상위 3명) / APT Super High Roller / APT High Roller / Supersta
 | 1 | **WSOP 2027 일정** | ❌ 미발표 확인. 2026 종료 후 재검색 |
 | 2 | **EPT 2027 시즌** | ❌ 미발표. €100,000 프리롤이 "2027 첫 스톱"에서 열린다는 언급만 |
 | 3 | **APT 2027** | ❌ 미발표. 대개 3~6개월 전 공개 |
-| 4 | **WPT Seoul ↔ GOP Incheon II 날짜 충돌** | ⏳ 둘 다 실재하는지 미확인 (10.30~11.09 vs 10.30~11.08) |
+| 4 | ~~WPT Seoul ↔ GOP Incheon II 충돌~~ | ✅ **해결 — 충돌 아님. 영종도에서 동시 개최(베뉴 다름)** |
 | 5 | ~~APT 인천 총 38억~~ | ✅ **해결 — 40억+가 정답. 38억은 오류** |
 | 6 | ~~WPT Lucky Hearts~~ | ✅ **해결 — 플로리다, 01.06~01.20** |
-| 7 | **WPT Australia** | ⏳ 스톱 목록엔 있으나 날짜 미확보 |
-| 8 | JOPT Grand Final 날짜 | ⏳ 전용 사이트 존재 (schedule26gf.japanopenpoker.com) |
-| 9 | WSOPC 모로코·아프리카 스톱 | ⏳ |
+| 7 | ~~WPT Australia~~ | ✅ **해결 — The Star Sydney, 09.10~09.30, 듀얼 챔피언십** |
+| 8 | ~~JOPT Grand Final~~ | ✅ **해결 — 04.24~05.06, 256 이벤트 (종료됨)** |
+| 9 | ~~WSOPC 모로코~~ | ✅ **해결 — Marrakech 01.16~01.25, 31 이벤트** |
 | 10 | ~~partypoker~~ | ✅ **해결 — Tour 2026, 스페인+영국 10스톱** |
-| 11 | 베트남 (WPT Vietnam?) | ⏳ 미검색 |
-| 12 | 한국 국내 하반기 (KPC 등) | ⏳ 신뢰 출처 못 찾음. 포커고수·포커라이프 재검색 필요 |
-| 13 | **GOP(Gods of Poker) 시리즈 전반** | ⏳ 전 스톱이 B등급. 개별 대회 페이지가 없어 `/series` 일반 링크만 존재 → **등급 재판정 필요** |
+| 11 | ~~GOP 시리즈 등급~~ | ✅ **해결 — 개별 시리즈 페이지 실재 확인 → B에서 A로 상향** |
+| 12 | **KSOP 2026 하반기** | ⏳ 검색 실패. ksop.co.kr 직접 확인 필요 |
+| 13 | **베트남 VPG/USOP 날짜** | ⏳ 대회는 실재하나 날짜 미확보. KO 독자에게 가치 큼(가깝고 저렴) |
+| 14 | WSOPC 남미·중미 나머지 스톱 | ⏳ 멕시코만 확보. 아르헨티나·콜롬비아·파나마 미확인 |
+| 15 | JOPT 2027 / WPT Tokyo 2026 | ⏳ 둘 다 미발표. 발표 시 `ja` 핵심 자산 |
 
 ---
 
