@@ -63,7 +63,7 @@ Dan untuk pengunjung internasional: ==g:sebagian besar pemegang paspor negara Ba
 |---|---|
 | **Tanggal** | ==**7–16 Agustus 2026**== |
 | **Venue** | Paradise City Casino, Incheon, Korea Selatan |
-| **Total Bergaransi** | ==g:**Lebih dari KRW 4 miliar (~$2,7 juta USD)**== |
+| **Total GTD** | ==g:**Lebih dari KRW 4 miliar (~$2,7 juta USD)**== |
 | **Buy-In Main Event** | KRW 2.500.000 ==**($1.703 USD)**== |
 | **GTD Main Event** | ==g:KRW 1.500.000.000 (~$1 juta USD)== |
 | **Entry Satelit Termurah** | ==g:**$3,50 via Natural8**== |
@@ -101,13 +101,13 @@ Dan untuk pengunjung internasional: ==g:sebagian besar pemegang paspor negara Ba
 
 ---
 
-## Berapa nilai kursi APT Championship?
+## Berapa nilai seat APT Championship?
 
-Sepanjang festival ini dibagikan **sembilan kursi APT Championship (APTC) Taipei 2026** — masing-masing bernilai **$10.000**. Hampir semua liputan hanya menyebut "tiga kursi di Main Event". Itu tidak lengkap, dan selisihnya menentukan event mana yang sebaiknya Anda ikuti.
+Sepanjang festival ini dibagikan **sembilan seat APT Championship (APTC) Taipei 2026** — masing-masing bernilai **$10.000**. Hampir semua liputan hanya menyebut "tiga kursi di Main Event". Itu tidak lengkap, dan selisihnya menentukan event mana yang sebaiknya Anda ikuti.
 
 <div style="overflow-x:auto;margin:20px 0">
 
-| Event | Buy-in (USD) | Kursi APTC |
+| Event | Buy-in (USD) | Seat APTC |
 |:---|:---:|:---:|
 | **APT Main Event** | ~$1.703 | **3** (tiga besar) |
 | APT Super High Roller | ~$10.200 | 1 |
@@ -120,9 +120,9 @@ Sepanjang festival ini dibagikan **sembilan kursi APT Championship (APTC) Taipei
 
 </div>
 
-==g:Perhatikan baris termurah.== **Mini Main Event ~$610** membawa satu kursi utuh senilai $10.000. Memenangkannya sama sekali berbeda dari menembus tiga besar Main Event berisi seribu entri lebih — padahal tiketnya sama persis. Dari sembilan kursi, **ini pintu masuk termurah**.
+==g:Perhatikan baris termurah.== **Mini Main Event ~$610** membawa satu seat utuh senilai $10.000. Memenangkannya sama sekali berbeda dari menembus tiga besar Main Event berisi seribu entri lebih — padahal tiketnya sama persis. Dari sembilan seat, **ini pintu masuk termurah**.
 
-> ⚠️ **Dua event dengan nama mirip — jangan tertukar.** Kursi diberikan oleh **#37 High Roller – Ultra Stack (KRW 4,5 juta, 10–11 Agustus)**. **#90 Ultra Stack (KRW 700 ribu, 15–16 Agustus)** yang ada di jadwal atas **tidak memberi kursi APTC**. Namanya tumpang tindih, tetapi buy-in-nya berbeda lebih dari enam kali lipat.
+> ⚠️ **Dua event dengan nama mirip — jangan tertukar.** Seat diberikan oleh **#37 High Roller – Ultra Stack (KRW 4,5 juta, 10–11 Agustus)**. **#90 Ultra Stack (KRW 700 ribu, 15–16 Agustus)** yang ada di jadwal atas **tidak memberi seat APTC**. Namanya tumpang tindih, tetapi buy-in-nya berbeda lebih dari enam kali lipat.
 
 **Ke mana tiket itu membawa Anda:** APT Championship 2026 berlangsung **13–29 November di Red Space, Taipei**. Main Event Championship digelar **23–27 November, freezeout $10.000 dengan garansi $5.000.000** — event APT terbesar sepanjang tahun. Dan berbeda dengan Paradise City, **Taipei tidak punya pembatasan kewarganegaraan untuk masuk**.
 
@@ -145,9 +145,9 @@ Natural8 adalah partner online resmi APT dan menjalankan kampanye satelit ==**Jo
 Step 1 (~$3,50) → menangkan tiket ke Step 2 (~$15) → menangkan tiket ke Mega Satellite (~$50) → menangkan kursi Main Event (senilai ~$1.703)
 </div>
 
-==g:Natural8 juga menjalankan bonus payout 8%== untuk peserta yang lolos lewat satelit — kalau Anda memenangkan $10.000 di event live, Anda dapat tambahan $800 di atasnya. Daftar di natural8.com, filter turnamen dengan "APT Incheon" untuk menemukan jadwal satelit terkini.
+==g:Natural8 juga menjalankan bonus payout 8%== untuk peserta yang lolos lewat satelit — kalau Anda memenangkan $10.000 di event live, Anda dapat tambahan $800 di atasnya. Perlu dicatat: **akses ke platform ini ditentukan negara domisili** dan tidak semua negara termasuk — periksa dulu apakah negara Anda muncul di formulir pendaftaran mereka. ⚠️ **Memakai VPN untuk menembus pembatasan wilayah melanggar ketentuan layanan** dan berisiko akun dibekukan beserta saldonya, jadi itu bukan jalan keluar. **Jalur yang selalu terbuka untuk siapa pun adalah mendaftar langsung ke penyelenggara di registrations@apt.poker** dengan membayar buy-in penuh.
 
-> **Tip OnLive:** Rute OnLive memungkinkan Anda memainkan Day 1 dari zona waktu Anda sendiri dan hanya terbang ke Korea jika bertahan sampai Day 3. ==g:Kalau anggaran perjalanan Anda ketat, ini jalur kualifikasi yang lebih cerdas.==
+> **Tip OnLive:** Lewat rute OnLive, Day 1 bisa Anda mainkan dari zona waktu sendiri — terbang ke Korea baru perlu kalau bertahan sampai Day 3. ==g:Kalau anggaran perjalanan Anda ketat, ini jalur kualifikasi yang lebih cerdas.==
 
 **Ada jalur ketiga yang hampir tidak pernah disebut panduan lain: Country Exclusives.** Natural8 menjalankan kualifikasi khusus berdasarkan negara domisili yang membagikan **enam paket live** — dan paket bukan sekadar kursi: isinya **tiket Main Event (~$1.684) plus sekitar $500 biaya perjalanan**. Satelit biasa hanya memberi kursi, tiket pesawat urusan Anda sendiri. Kelayakan ditentukan negara domisili, jadi cek dulu di lobby apakah bracket negara Anda dibuka sebelum menggrind jalur umum.
 
@@ -159,7 +159,7 @@ Sebelum memesan tiket pesawat, ada baiknya tahu meja seperti apa yang menanti. A
 
 <div style="overflow-x:auto;margin:20px 0">
 
-| # | Negara | Entri | Porsi |
+| # | Negara | Entries | Porsi |
 |:---:|:---|---:|:---:|
 | 1 | **Jepang** | 484 | 37,8% |
 | 2 | **Tiongkok** | 299 | 23,3% |
@@ -176,7 +176,7 @@ Sebelum memesan tiket pesawat, ada baiknya tahu meja seperti apa yang menanti. A
 
 ==r:Jepang dan Tiongkok saja sudah 61% dari field.== Ada 27 negara yang hadir, dan menariknya **tetangga Asia Tenggara sudah masuk daftar** — Thailand ke-3, Singapura ke-7, Vietnam ke-8, Malaysia ke-10. Indonesia belum muncul di sepuluh besar.
 
-Itu justru kabar bagus buat pemain Indonesia. Jaraknya sebanding dengan Bangkok atau Kuala Lumpur, jalur kualifikasinya sama terbuka, dan ==g:Anda datang tanpa jejak sama sekali — tidak ada reg yang punya read atas Anda==, sementara banyak reguler di sirkuit ini sudah saling kenal bertahun-tahun.
+Itu justru kabar bagus buat pemain Indonesia. Secara jarak Indonesia tidak lebih jauh dari negara-negara yang sudah rutin datang: **Jakarta–Incheon sekitar 7 jam penerbangan langsung** (Garuda, Korean Air, Asiana, dan T'way Air sejak April 2026), dibanding ~5,5 jam dari Bangkok dan ~6,5 jam dari Kuala Lumpur. ==g:Zona waktunya pun cuma **2 jam di depan WIB**, jadi jadwal Day 1 OnLive yang mengikuti waktu Korea masih jam manusiawi buat pemain Indonesia== — keunggulan nyata dibanding pemain Eropa yang harus mundur 7 jam. Dan dan ==g:Anda datang tanpa jejak sama sekali — tidak ada reg yang punya read atas Anda==, sementara banyak reguler di sirkuit ini sudah saling kenal bertahun-tahun.
 
 **Angka 2025:** 1.281 entri dari **754 pemain unik** (sisanya re-entry), membentuk prize pool **KRW 2.766.660.000 (~$2,0 juta)** — Main Event terbesar yang pernah digelar APT di Korea sampai saat itu. Juaranya pemain Tiongkok **Junjie He** dengan ₩380.520.000 (~$275.140) plus satu kursi APT Championship, setelah kesepakatan ICM tiga arah bersama Kouki Okumiya dan Kuroda Kiyoto.
 
@@ -246,7 +246,7 @@ Anda bisa menginap di hotel kasino sepanjang trip — mainkan sesi Anda, tidur, 
 
 Berikut yang bisa dilakukan dengan 1–3 hari luang:
 
-![Overview Google Maps menampilkan Paradise City di Incheon dan jaraknya ke pusat Seoul — sekitar 50km di barat kota](/images/apt-incheon-2026-guide-map-wide.webp)
+![Overview Google Maps menampilkan Paradise City di Incheon dan jaraknya ke pusat Seoul — sekitar 50 km di barat kota](/images/apt-incheon-2026-guide-map-wide.webp)
 
 ![Google Maps di-zoom ke pusat Seoul dengan Namsan (N Seoul Tower) ditandai — Hongdae di barat, Sungai Han di selatan](/images/apt-incheon-2026-guide-map-seoul.webp)
 
@@ -277,7 +277,7 @@ Berikut yang bisa dilakukan dengan 1–3 hari luang:
   </div>
 </div>
 
-**Malam:** Subway ke ==**Myeongdong**== (Line 4, Exit 6). Kawasan paling banyak dikunjungi turis asing di Seoul — dan itu ada alasannya. Jalan pejalan kaki utamanya (Myeongdong-gil) membentang sekitar 800m dari ujung ke ujung: toko flagship K-beauty (Olive Young, Innisfree, Laneige, Sulwhasoo) di kedua sisi, pedagang street food mengisi celahnya sejak jam 5 sore. ==g:Street food terbaik: hotteok (pancake gula merah), tteokbokki, corn dog keju, sate lobster.== Untuk makan yang layak, ==**Myeongdong Kyoja**== (sejak 1966) adalah yang pantas diantre — kalguksu (mi potong pisau) dan mandu (pangsit). Kebanyakan toko tutup sekitar jam 10 malam; bus bandara kembali ke Incheon berhenti ==g:tepat di luar Stasiun Myeongdong==. ==g:Bawa paspor Anda — toko K-beauty menawarkan tax refund di tempat.==
+**Malam:** Subway ke ==**Myeongdong**== (Line 4, Exit 6). Kawasan paling banyak dikunjungi turis asing di Seoul — dan itu ada alasannya. Jalan pejalan kaki utamanya (Myeongdong-gil) membentang sekitar 800 m dari ujung ke ujung: toko flagship K-beauty (Olive Young, Innisfree, Laneige, Sulwhasoo) di kedua sisi, pedagang street food mengisi celahnya sejak jam 5 sore. ==g:Street food terbaik: hotteok (pancake gula merah), tteokbokki, corn dog keju, sate lobster.== Untuk makan yang layak, ==**Myeongdong Kyoja**== (sejak 1966) adalah yang pantas diantre — kalguksu (mi potong pisau) dan mandu (pangsit). Kebanyakan toko tutup sekitar jam 10 malam; bus bandara kembali ke Incheon berhenti ==g:tepat di luar Stasiun Myeongdong==. ==g:Bawa paspor Anda — toko K-beauty menawarkan tax refund di tempat.==
 
 <div style="display:flex;gap:6px;margin:14px 0">
   <div style="flex:1;min-width:0;text-align:center">
@@ -290,16 +290,16 @@ Berikut yang bisa dilakukan dengan 1–3 hari luang:
   </div>
   <div style="flex:1;min-width:0;text-align:center">
     <img src="/images/apt-incheon-2026-guide-myeongdong3.webp" alt="Jalan belanja Myeongdong dipenuhi toko K-beauty dan apotek berwarna-warni — Holika Holika terlihat di sebelah kanan" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
-    <p style="font-size:11px;color:#888;margin:4px 0 0">Myeongdong-gil — 800m K-beauty, street food, dan papan neon</p>
+    <p style="font-size:11px;color:#888;margin:4px 0 0">Myeongdong-gil — 800 m K-beauty, street food, dan papan neon</p>
   </div>
 </div>
 
-**Jalan malam:** Dari Myeongdong, berjalan ke utara sekitar 10 menit dan Anda akan turun ke ==**Cheonggyecheon Stream**== (청계천). Kanal urban sepanjang 11km yang mengalir melintasi jantung pusat kota Seoul — dulu terkubur di bawah jalan tol setelah Perang Korea, digali dan direstorasi tahun 2005. Jalurnya berada di bawah permukaan jalan, diapit tembok batu, pohon willow, dan naungan musim panas. ==g:Burung kuntul berdiri di tengah aliran air, mencari ikan.== Pada malam hari instalasi lampu memantul di permukaan air dan warga lokal duduk di tepiannya dengan minuman dari minimarket. Exit subway muncul setiap beberapa menit di sepanjang jalur, jadi Anda bisa berjalan sebanyak atau sesedikit yang Anda mau dan muncul di mana saja.
+**Jalan malam:** Dari Myeongdong, berjalan ke utara sekitar 10 menit dan Anda akan turun ke ==**Cheonggyecheon Stream**== (청계천). Kanal urban sepanjang 11 km yang mengalir melintasi jantung pusat kota Seoul — dulu terkubur di bawah jalan tol setelah Perang Korea, digali dan direstorasi tahun 2005. Jalurnya berada di bawah permukaan jalan, diapit tembok batu, pohon willow, dan naungan musim panas. ==g:Burung kuntul berdiri di tengah aliran air, mencari ikan.== Pada malam hari instalasi lampu memantul di permukaan air dan warga lokal duduk di tepiannya dengan minuman dari minimarket. Exit subway muncul setiap beberapa menit di sepanjang jalur, jadi Anda bisa berjalan sebanyak atau sesedikit yang Anda mau dan muncul di mana saja.
 
 <div style="display:flex;gap:6px;margin:14px 0">
   <div style="flex:1;min-width:0;text-align:center">
     <img src="/images/apt-incheon-2026-guide-cheonggyecheon1.webp" alt="Pemandangan lebar Cheonggyecheon Stream — jalur setapak dan batu pijakan dengan gedung pencakar langit pusat Seoul terlihat di balik deretan pohon" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
-    <p style="font-size:11px;color:#888;margin:4px 0 0">Kanal 11km yang mengalir melintasi pusat Seoul — gratis, 24 jam</p>
+    <p style="font-size:11px;color:#888;margin:4px 0 0">Kanal 11 km yang mengalir melintasi pusat Seoul — gratis, 24 jam</p>
   </div>
   <div style="flex:1;min-width:0;text-align:center">
     <img src="/images/apt-incheon-2026-guide-cheonggyecheon2.webp" alt="Close-up Cheonggyecheon Stream — burung kuntul putih berdiri di air yang mengalir, sepasang orang duduk di bebatuan tepi kanal" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
@@ -312,6 +312,10 @@ Berikut yang bisa dilakukan dengan 1–3 hari luang:
 </div>
 
 **Larut malam:** Korean BBQ. Duduk di meja dengan panggangan arang tertanam, pesan samgyeopsal (perut babi panggang), bungkus dengan daun selada bersama bawang putih dan pasta ssamjang, padukan dengan soju. Kebanyakan restoran Korean BBQ buka sampai jam 2 pagi.
+
+> 🕌 **Catatan untuk yang mencari halal.** Samgyeopsal itu daging babi dan soju itu alkohol — keduanya inti dari Korean BBQ pada umumnya, jadi bagian di atas tidak berlaku kalau Anda butuh halal. Arahkan langkah ke **Itaewon**: **Masjid Pusat Seoul** (berdiri sejak 1976, masjid pertama dan terbesar di Korea) ada di sana, dan gang-gang di sekitarnya penuh restoran halal serta toko bahan makanan Timur Tengah. Beberapa nama yang bersertifikat: **Makan Halal Korean Restaurant** (Itaewon, sertifikat KMF — tteokbokki, bibimbap, kimchi stew versi halal), **Siti Sarah** (Itaewon, masakan Melayu dan Mesir), dan **Osegyehyang** (Insadong, vegetarian bersertifikat halal).
+>
+> **Cara cepat memastikan:** cari salah satu dari tiga penanda ini — logo **halal certified by KMF** (Korea Muslim Federation, yang paling diakui), stiker **Muslim Friendly Restaurant**, atau tulisan **No Pork, No Alcohol**. Aplikasi **Halal Navi**, **Muslim Pro**, dan **Halal Korea** bisa menunjukkan pilihan terdekat. Untuk jaga-jaga: minimarket **CU** dan **GS25** menjual mie cup berlabel halal KMF — praktis untuk sarapan sebelum Day 1 atau makan larut setelah bustout.
 
 ---
 
@@ -353,7 +357,9 @@ Dibanding EPT Barcelona (Main ~€5.300) atau WPT Australia (Main ~AUD $5.000), 
 
 | Kewarganegaraan | Perlu visa? | Cara masuk |
 |---|---|---|
-| AS, Kanada, Inggris, Australia, NZ, sebagian besar UE | **Tanpa visa** | K-ETA (gratis, online, 5 menit) |
+| ==r:**Indonesia**== | ==r:**Perlu visa**== | **Visa turis C-3-9** lewat Kedubes Korea di Jakarta / Korea Visa Portal. ⚠️ Bebas visa 30 hari itu **khusus Pulau Jeju** — harus mendarat langsung di Jeju dan **tidak boleh melanjutkan ke Incheon/Seoul** |
+| AS, Kanada, Inggris, Australia, NZ, Jepang, Singapura, sebagian besar UE | **Tanpa visa** | Dibebaskan dari K-ETA sampai 31 Desember 2026 — cukup e-Arrival Card gratis |
+| Malaysia | **Tanpa visa** | Tidak masuk daftar 22 negara yang dibebaskan → **perlu K-ETA** (₩10.000, k-eta.go.kr) |
 | Jepang, Singapura, Hong Kong, Taiwan | **Tanpa visa** | K-ETA |
 | Sebagian besar negara lain | Cek [mofa.go.kr](https://www.mofa.go.kr) | Mungkin perlu visa turis |
 
@@ -400,7 +406,7 @@ A. Keduanya bisa, tapi ==g:disarankan tiba 2–3 hari lebih awal==. Anda pulih d
 
 1. **APT Incheon 2026** berlangsung ==**7–16 Agustus**== di Paradise City Casino — 10 menit dari Bandara Incheon dengan shuttle gratis, GTD $2,7 juta.
 2. **Main Event** buy-in: ==**~$1.703**== dengan ==g:garansi $1 juta==. Sekitar sepertiga buy-in Main EPT Barcelona dan separuh buy-in Championship WPT Australia.
-3. **Kualifikasi dari $3,50** via satelit berjenjang Natural8. Format OnLive memungkinkan Anda memulai Day 1 dari rumah.
+3. **Kualifikasi dari $3,50** via satelit berjenjang Natural8. Format OnLive membuat Day 1 bisa dimulai dari rumah.
 4. **Seoul berjarak 60 mnt** dan merupakan salah satu destinasi wisata terbaik di Asia — ==g:istana, BBQ, kehidupan malam, dan street food tak tertandingi.==
 5. **Hanya untuk warga negara asing** — turnamen ini dibuat untuk pemain internasional. Paspor Anda adalah kartu akses Anda.
 
