@@ -90,7 +90,7 @@ Und für internationale Besucher: ==g:Die meisten westlichen Passinhaber reisen 
 | Zodiac Classic | 13.–14. Aug | ~$2.000 | ~$340K |
 | Mini Main Event | 14.–16. Aug | ~$610 | ~$272K |
 | APT High Roller | 15.–16. Aug | ~$3.400 | ~$340K |
-| Ultra Stack | 15.–16. Aug | ~$475 | ~$102K |
+| Ultra Stack | 15.–16. Aug | ~$477 | ~$102K |
 | Micro Main Event | 16. Aug | ~$270 | — |
 
 </div>
@@ -113,14 +113,16 @@ Und für internationale Besucher: ==g:Die meisten westlichen Passinhaber reisen 
 | APT Super High Roller | ~$10.200 | 1 |
 | APT High Roller | ~$3.400 | 1 |
 | Superstar Challenge | ~$23.800 | 1 |
-| **Ultra Stack** | **~$475** | **1** |
+| High Roller – Ultra Stack | ~$3.066 | 1 |
 | **Mini Main Event** | **~$610** | **1** |
 | Zodiac Classic | ~$2.000 | 1 |
 | **Gesamt** | | **9** |
 
 </div>
 
-==g:Schau dir die beiden günstigsten Zeilen an.== Ein **Ultra Stack für $475** oder ein **Mini Main für $610** trägt jeweils einen kompletten $10.000-Seat. Eines davon zu gewinnen ist etwas völlig anderes, als in einem Main Event mit über tausend Entries unter die Top 3 zu kommen — das Ticket am Ende ist dasselbe.
+==g:Schau dir die günstigste Zeile an.== Im **Mini Main Event für ~$610** steckt ein kompletter $10.000-Seat. Das zu gewinnen ist etwas völlig anderes, als in einem Main Event mit über tausend Entries unter die Top 3 zu kommen — das Ticket am Ende ist dasselbe. Von den neun Seats ist das **die günstigste Tür**.
+
+> ⚠️ **Zwei ähnlich benannte Events — nicht verwechseln.** Den Seat vergibt das **#37 High Roller – Ultra Stack (KRW 4,5 Mio., 10.–11. August)**. Das **#90 Ultra Stack (KRW 700K, 15.–16. August)** aus dem Turnierplan oben vergibt **keinen APTC-Seat**. Die Namen überschneiden sich, die Buy-ins unterscheiden sich um mehr als das Sechsfache.
 
 **Wohin dich das Ticket bringt:** Die APT Championship 2026 läuft vom **13. bis 29. November im Red Space, Taipeh**. Das Championship Main Event ist vom **23. bis 27. November, ein $10.000-Freezeout mit $5.000.000 garantiert** — das größte APT-Event des Jahres. Und Taipeh hat, anders als Paradise City, **keine Nationalitätsbeschränkung beim Einlass**.
 
@@ -176,9 +178,9 @@ Bevor du fliegst, lohnt sich ein Blick darauf, an welchem Tisch du landest. APT 
 
 Praktisch heißt das: Am Tisch hörst du mehr Japanisch und Mandarin als Englisch, und der Floor geht damit völlig routiniert um. Der Vorteil dabei — **niemand hat Reads auf dich**. Du kommst ohne Historie in einen Circuit, in dem sich viele Regs seit Jahren kennen.
 
-**Die Zahlen von 2025:** 1.718 Entries von **850 einzelnen Spielern** (der Rest waren Re-Entries), daraus ein Preispool von **KRW 2.766.660.000 (~$2,0 Mio.)** — das damals größte Main Event, das APT je in Korea gespielt hat. Gewonnen hat der Chinese **Junjie He** für ₩380.520.000 (~$275.140) plus einen APT-Championship-Seat, nach einem Dreier-ICM-Deal mit Kouki Okumiya und Kuroda Kiyoto.
+**Die Zahlen von 2025:** 1.281 Entries von **754 einzelnen Spielern** (der Rest waren Re-Entries), daraus ein Preispool von **KRW 2.766.660.000 (~$2,0 Mio.)** — das damals größte Main Event, das APT je in Korea gespielt hat. Gewonnen hat der Chinese **Junjie He** für ₩380.520.000 (~$275.140) plus einen APT-Championship-Seat, nach einem Dreier-ICM-Deal mit Kouki Okumiya und Kuroda Kiyoto.
 
-> **Lies die Entry-Zahl richtig.** "1.718 Entries" sind keine 1.718 Personen, sondern 850 Spieler plus Re-Entries. Re-Entry-Felder wirken immer größer, als sie sind.
+> **Lies die Entry-Zahl richtig.** "1.281 Entries" sind keine 1.281 Personen, sondern 754 Spieler plus Re-Entries. Re-Entry-Felder wirken immer größer, als sie sind.
 
 ---
 
@@ -378,7 +380,7 @@ A. Sehr nah. Paradise City betreibt einen kostenlosen Shuttle vom Terminal 1 (Ga
 
 **Q. Kann ich das APT Incheon Main Event spielen, wenn ich noch nie ein Live-Turnier gespielt habe?**
 
-A. Ja. Der Buy-in (~$1.703) ist beträchtlich, aber die Struktur ist anfängerfreundlich — tiefe Starting Stacks und lange Levels. Wenn du mit Home Games oder Online-Poker vertraut bist, ist der Umstieg auf Live gut machbar. Das Mini Main Event (~$610, KRW 900K) und der Ultra Stack (~$475) sind Optionen mit niedrigeren Stakes für den Einstieg.
+A. Ja. Der Buy-in (~$1.703) ist beträchtlich, aber die Struktur ist anfängerfreundlich — tiefe Starting Stacks und lange Levels. Wenn du mit Home Games oder Online-Poker vertraut bist, ist der Umstieg auf Live gut machbar. Das Mini Main Event (~$610, KRW 900K) und der Ultra Stack (~$477) sind Optionen mit niedrigeren Stakes für den Einstieg.
 
 **Q. Wie komme ich vom Paradise City nach Seoul?**
 
@@ -415,7 +417,7 @@ Alle Zahlen wurden gegen Primärquellen geprüft. **Stand: 28. Juli 2026.**
 - **APT Championship 2026** — [Full APTC 2026 Schedule](https://www.theasianpokertour.com/news/apt-announces-full-aptc2026-schedule) · 13.–29. November, Taipeh; Main Event 23.–27. Nov, $10.000, $5.000.000 GTD
 - **20-jähriges Jubiläum** — [APT Gets Ready to Celebrate 20 Years](https://www.theasianpokertour.com/news/apt-2026-schedule)
 - **Satellites und Pakete** — [Natural8 — Journey to APT Incheon 2026](https://www.natural8.com/en/blog/journey-to-apt-incheon-2026) · [Country Exclusives 2026](https://www.natural8.com/en/poker/tournaments/apt-incheon-country-exclusives-2026)
-- **Feld und Ergebnis 2025 (offizieller Bericht des Veranstalters)** — [APT — China's Junjie He Wins APT's Largest Korean Main Event](https://www.theasianpokertour.com/news/china-s-junjie-he-wins-apt-s-largest-korean-main-event-for-krw-380-5-m-usd-275-k-plus-apt-championship-seat-worth-krw-13-8-m-usd-10-k) · 1.718 Entries von 850 Spielern · Preispool KRW 2.766.660.000 · Länderverteilung Top 10
+- **Feld und Ergebnis 2025 (offizieller Bericht des Veranstalters)** — [APT — China's Junjie He Wins APT's Largest Korean Main Event](https://www.theasianpokertour.com/news/china-s-junjie-he-wins-apt-s-largest-korean-main-event-for-krw-380-5-m-usd-275-k-plus-apt-championship-seat-worth-krw-13-8-m-usd-10-k) · 1.281 Entries von 754 Spielern · Preispool KRW 2.766.660.000 · Länderverteilung Top 10
 - **Casino-Einlassregeln** — [Paradise City offiziell](https://www.p-city.com/front/contents/casino/casinoInfo)
 
 > ⚠️ **Das Festival startet am 7. August.** Satellite-Seatzahlen, Late-Reg-Schluss und Shuttle-Zeiten können sich noch ändern. **Prüf am Tag deiner Anmeldung nochmal die APT-Eventseite und das Natural8-Lobby.**

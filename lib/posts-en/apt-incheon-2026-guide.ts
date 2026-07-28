@@ -89,7 +89,7 @@ And for international visitors: ==g:most Western passport holders (USA, Canada, 
 | Zodiac Classic | Aug 13–14 | ~$2,000 | ~$340K |
 | Mini Main Event | Aug 14–16 | ~$610 | ~$272K |
 | APT High Roller | Aug 15–16 | ~$3,400 | ~$340K |
-| Ultra Stack | Aug 15–16 | ~$475 | ~$102K |
+| Ultra Stack | Aug 15–16 | ~$477 | ~$102K |
 | Micro Main Event | Aug 16 | ~$270 | — |
 
 </div>
@@ -110,14 +110,16 @@ Nine seats to the **APT Championship (APTC) Taipei 2026** are given away across 
 | APT Super High Roller | ~$10,200 | 1 |
 | APT High Roller | ~$3,400 | 1 |
 | Superstar Challenge | ~$23,800 | 1 |
-| **Ultra Stack** | **~$475** | **1** |
+| High Roller – Ultra Stack | ~$3,066 | 1 |
 | **Mini Main Event** | **~$610** | **1** |
 | Zodiac Classic | ~$2,000 | 1 |
 | **Total** | | **9** |
 
 </div>
 
-==g:Look at the two cheapest rows.== A **$475 Ultra Stack** or a **$610 Mini Main** each carry a full $10,000 seat. Winning one of those is a very different proposition from finishing top-three in a 1,000+ field Main Event — and it pays the same ticket.
+==g:Look at the cheapest row.== The **~$610 Mini Main Event** carries a full $10,000 seat. Winning that is a very different proposition from finishing top-three in a 1,000-plus field Main Event — and it pays the same ticket. Of the nine seats, this is the cheapest door in.
+
+> ⚠️ **Two similarly named events — do not mix them up.** The seat belongs to **#37 High Roller – Ultra Stack (KRW 4.5M, Aug 10–11)**. The **#90 Ultra Stack (KRW 700K, Aug 15–16)** in the schedule above carries **no APTC seat**. The names overlap; the buy-ins differ by more than six times.
 
 **Where that ticket takes you:** APT Championship 2026 runs **November 13–29 at Red Space, Taipei**. The Championship Main Event is **November 23–27, a $10,000 freezeout with a $5,000,000 guarantee** — the biggest APT event of the year. Taipei also has no nationality restriction on entry, unlike Paradise City.
 
@@ -173,9 +175,9 @@ Before you book, it helps to know what table you'll be sitting at. APT publishes
 
 ==r:Japan and China alone are 61% of the field.== Twenty-seven countries were represented, but this is emphatically an **East Asian tournament** — if you're flying in from North America or Europe you'll be a small minority at the table. Practically, that means expect more Japanese and Mandarin at the table than English, and expect the floor to handle it routinely.
 
-**2025 by the numbers:** 1,718 entries from **850 unique players** (the rest were re-entries), building a **KRW 2,766,660,000 (~$2.0M)** prize pool — the largest Main Event APT had ever run in Korea at that point. China's **Junjie He** won it for ₩380,520,000 (~$275,140) plus an APT Championship seat, after a three-way ICM deal with Kouki Okumiya and Kuroda Kiyoto.
+**2025 by the numbers:** 1,281 entries from **754 unique players** (the rest were re-entries), building a **KRW 2,766,660,000 (~$2.0M)** prize pool — the largest Main Event APT had ever run in Korea at that point. China's **Junjie He** won it for ₩380,520,000 (~$275,140) plus an APT Championship seat, after a three-way ICM deal with Kouki Okumiya and Kuroda Kiyoto.
 
-> **Read the entry count correctly.** "1,718 entries" is not 1,718 people — it's 850 players plus re-entries. Re-entry fields look bigger than they are.
+> **Read the entry count correctly.** "1,281 entries" is not 1,281 people — it's 754 players plus re-entries. Re-entry fields look bigger than they are.
 
 ---
 
@@ -410,7 +412,7 @@ Every figure above was checked against primary sources. **Verified: July 28, 202
 - **APT Championship 2026** — [Full APTC 2026 Schedule](https://www.theasianpokertour.com/news/apt-announces-full-aptc2026-schedule) · Nov 13–29, Taipei; Main Event Nov 23–27, $10,000 buy-in, $5,000,000 GTD
 - **20th anniversary** — [APT Gets Ready to Celebrate 20 Years](https://www.theasianpokertour.com/news/apt-2026-schedule) · *"with the APT turning twenty in 2026"*
 - **Satellites & packages** — [Natural8 — Journey to APT Incheon 2026](https://www.natural8.com/en/blog/journey-to-apt-incheon-2026) · [Country Exclusives 2026](https://www.natural8.com/en/poker/tournaments/apt-incheon-country-exclusives-2026)
-- **2025 field & result (organizer's own report)** — [APT — China's Junjie He Wins APT's Largest Korean Main Event](https://www.theasianpokertour.com/news/china-s-junjie-he-wins-apt-s-largest-korean-main-event-for-krw-380-5-m-usd-275-k-plus-apt-championship-seat-worth-krw-13-8-m-usd-10-k) · 1,718 entries from 850 unique players · KRW 2,766,660,000 prize pool · full top-10 country breakdown
+- **2025 field & result (organizer's own report)** — [APT — China's Junjie He Wins APT's Largest Korean Main Event](https://www.theasianpokertour.com/news/china-s-junjie-he-wins-apt-s-largest-korean-main-event-for-krw-380-5-m-usd-275-k-plus-apt-championship-seat-worth-krw-13-8-m-usd-10-k) · 1,281 entries from 754 unique players · KRW 2,766,660,000 prize pool · full top-10 country breakdown
 - **Casino entry rules** — [Paradise City official](https://www.p-city.com/front/contents/casino/casinoInfo)
 
 > ⚠️ **The festival starts August 7.** Satellite seat counts, late-registration cutoffs and shuttle timetables can still change. Re-check the APT event page and the Natural8 lobby the day you register.

@@ -90,7 +90,7 @@ APT Incheon 2026。8 月 7–16 日。Paradise City Casino。总保底奖池 $2.
 | Zodiac Classic | Aug 13–14 | ~$2,000 | ~$340K |
 | Mini Main Event | Aug 14–16 | ~$610 | ~$272K |
 | APT High Roller | Aug 15–16 | ~$3,400 | ~$340K |
-| Ultra Stack | Aug 15–16 | ~$475 | ~$102K |
+| Ultra Stack | Aug 15–16 | ~$477 | ~$102K |
 | Micro Main Event | Aug 16 | ~$270 | — |
 
 </div>
@@ -113,14 +113,16 @@ APT Incheon 2026。8 月 7–16 日。Paradise City Casino。总保底奖池 $2.
 | APT 超级豪客赛 | ~$10,200 | 1 个 |
 | APT 豪客赛 | ~$3,400 | 1 个 |
 | 超级巨星挑战赛 | ~$23,800 | 1 个 |
-| **Ultra Stack** | **~$475** | **1 个** |
+| High Roller – Ultra Stack | ~$3,066 | 1 个 |
 | **迷你主赛** | **~$610** | **1 个** |
 | 生肖经典赛 | ~$2,000 | 1 个 |
 | **合计** | | **9 个** |
 
 </div>
 
-==g:注意最便宜的两行。== **$475 的 Ultra Stack** 和 **$610 的迷你主赛**，各自都挂着一个完整的 $10,000 席位。在千人以上的主赛里打进前三，和在这两个赛事里拿下冠军，难度完全不是一回事——但拿到的票一模一样。
+==g:注意最便宜的那一行。== **约 $610 的迷你主赛**挂着一个完整的 $10,000 席位。在千人以上的主赛里打进前三，和在 $610 的比赛里拿下冠军，难度完全不是一回事——但拿到的票一模一样。9 个席位里，**这是最便宜的入口**。
+
+> ⚠️ **两个名字相近的赛事，别搞混。** 带席位的是 **#37 High Roller – Ultra Stack（KRW 450 万，8 月 10–11 日）**；上方赛程表里的 **#90 Ultra Stack（KRW 70 万，8 月 15–16 日）没有席位**。名字重叠，但买入差了六倍以上。
 
 **这张票能带你去哪：** APT 冠军赛 2026 于 **11 月 13 日至 29 日在台北 Red Space** 举行。冠军赛主赛是 **11 月 23 至 27 日，$10,000 买入的 freezeout，保证奖金 $5,000,000**——全年最大的 APT 赛事。而且台北不像天堂城，**入场没有国籍限制**。
 
@@ -176,9 +178,9 @@ Step 1（~$3.50）→ 打赢拿到 Step 2 门票（~$15）→ 打赢拿到 Mega 
 
 实际意义是：牌桌上遇到中文使用者的概率很高，赛务对中文选手也早就习以为常。反过来说，你也会经常和同胞正面碰撞。
 
-**2025 年的数字：** 1,718 人次，但**实际人数只有 850 人**（其余是重复买入）。奖池 **KRW 2,766,660,000（约 $2.0M）**，是当时 APT 在韩国办过的最大主赛。冠军是中国选手 **何俊宇（Junjie He）**，拿下 ₩380,520,000（约 $275,140）和一个 APT 冠军赛席位——那是他与 Kouki Okumiya、Kuroda Kiyoto 三人 ICM 分钱之后的结果。
+**2025 年的数字：** 1,281 人次，但**实际人数只有 754 人**（其余是重复买入）。奖池 **KRW 2,766,660,000（约 $2.0M）**，是当时 APT 在韩国办过的最大主赛。冠军是中国选手 **何俊宇（Junjie He）**，拿下 ₩380,520,000（约 $275,140）和一个 APT 冠军赛席位——那是他与 Kouki Okumiya、Kuroda Kiyoto 三人 ICM 分钱之后的结果。
 
-> **参赛人次要会读。** "1,718 人次"不等于 1,718 个人，而是 850 人加上重复买入。重入赛制的牌局，看起来永远比实际人数大。
+> **参赛人次要会读。** "1,281 人次"不等于 1,281 个人，而是 754 人加上重复买入。重入赛制的牌局，看起来永远比实际人数大。
 
 ---
 
@@ -378,7 +380,7 @@ A. 非常近。Paradise City 从 1 号航站楼（3C 与 14C 登机口）每 30 
 
 **Q. 我从没打过线下锦标赛，能打 APT Incheon 主赛事吗？**
 
-A. 能。买入（~$1,703）不算小，但赛制对新手友好——起始筹码很深、盲注级别很长。如果你打惯了家庭局或线上扑克，转到线下是可以驾驭的。Mini Main Event（~$610，KRW 900K）和 Ultra Stack（~$475）是买入更低的入门选项。
+A. 能。买入（~$1,703）不算小，但赛制对新手友好——起始筹码很深、盲注级别很长。如果你打惯了家庭局或线上扑克，转到线下是可以驾驭的。Mini Main Event（~$610，KRW 900K）和 Ultra Stack（~$477）是买入更低的入门选项。
 
 **Q. 怎么从 Paradise City 到首尔？**
 
@@ -415,7 +417,7 @@ A. 都行，但 ==g:推荐提前 2–3 天到==。你可以倒时差、悠闲地
 - **APT 冠军赛 2026** — [Full APTC 2026 Schedule](https://www.theasianpokertour.com/news/apt-announces-full-aptc2026-schedule) · 11 月 13–29 日台北；主赛 11 月 23–27 日，$10,000 买入，$5,000,000 保证
 - **二十周年** — [APT Gets Ready to Celebrate 20 Years](https://www.theasianpokertour.com/news/apt-2026-schedule)
 - **卫星赛与套餐** — [Natural8 — Journey to APT Incheon 2026](https://www.natural8.com/en/blog/journey-to-apt-incheon-2026) · [Country Exclusives 2026](https://www.natural8.com/en/poker/tournaments/apt-incheon-country-exclusives-2026)
-- **2025 年参赛构成与结果（主办方官方战报）** — [APT — China's Junjie He Wins APT's Largest Korean Main Event](https://www.theasianpokertour.com/news/china-s-junjie-he-wins-apt-s-largest-korean-main-event-for-krw-380-5-m-usd-275-k-plus-apt-championship-seat-worth-krw-13-8-m-usd-10-k) · 1,718 人次/850 实际人数 · 奖池 KRW 2,766,660,000 · 国别前十名
+- **2025 年参赛构成与结果（主办方官方战报）** — [APT — China's Junjie He Wins APT's Largest Korean Main Event](https://www.theasianpokertour.com/news/china-s-junjie-he-wins-apt-s-largest-korean-main-event-for-krw-380-5-m-usd-275-k-plus-apt-championship-seat-worth-krw-13-8-m-usd-10-k) · 1,281 人次/754 实际人数 · 奖池 KRW 2,766,660,000 · 国别前十名
 - **赌场入场规定** — [天堂城官方](https://www.p-city.com/front/contents/casino/casinoInfo)
 
 > ⚠️ **赛事 8 月 7 日开打。** 卫星赛席位数、补注册截止时间、班车时刻表都还可能变动。**报名当天请再确认 APT 官方赛事页和 Natural8 大厅。**

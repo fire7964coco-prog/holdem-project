@@ -90,7 +90,7 @@ Dan untuk pengunjung internasional: ==g:sebagian besar pemegang paspor negara Ba
 | Zodiac Classic | 13–14 Agu | ~$2.000 | ~$340K |
 | Mini Main Event | 14–16 Agu | ~$610 | ~$272K |
 | APT High Roller | 15–16 Agu | ~$3.400 | ~$340K |
-| Ultra Stack | 15–16 Agu | ~$475 | ~$102K |
+| Ultra Stack | 15–16 Agu | ~$477 | ~$102K |
 | Micro Main Event | 16 Agu | ~$270 | — |
 
 </div>
@@ -113,14 +113,16 @@ Sepanjang festival ini dibagikan **sembilan kursi APT Championship (APTC) Taipei
 | APT Super High Roller | ~$10.200 | 1 |
 | APT High Roller | ~$3.400 | 1 |
 | Superstar Challenge | ~$23.800 | 1 |
-| **Ultra Stack** | **~$475** | **1** |
+| High Roller – Ultra Stack | ~$3.066 | 1 |
 | **Mini Main Event** | **~$610** | **1** |
 | Zodiac Classic | ~$2.000 | 1 |
 | **Total** | | **9** |
 
 </div>
 
-==g:Perhatikan dua baris termurah.== **Ultra Stack $475** dan **Mini Main $610** masing-masing membawa satu kursi utuh senilai $10.000. Memenangkan salah satunya sama sekali berbeda dari menembus tiga besar Main Event berisi seribu entri lebih — padahal tiketnya sama persis.
+==g:Perhatikan baris termurah.== **Mini Main Event ~$610** membawa satu kursi utuh senilai $10.000. Memenangkannya sama sekali berbeda dari menembus tiga besar Main Event berisi seribu entri lebih — padahal tiketnya sama persis. Dari sembilan kursi, **ini pintu masuk termurah**.
+
+> ⚠️ **Dua event dengan nama mirip — jangan tertukar.** Kursi diberikan oleh **#37 High Roller – Ultra Stack (KRW 4,5 juta, 10–11 Agustus)**. **#90 Ultra Stack (KRW 700 ribu, 15–16 Agustus)** yang ada di jadwal atas **tidak memberi kursi APTC**. Namanya tumpang tindih, tetapi buy-in-nya berbeda lebih dari enam kali lipat.
 
 **Ke mana tiket itu membawa Anda:** APT Championship 2026 berlangsung **13–29 November di Red Space, Taipei**. Main Event Championship digelar **23–27 November, freezeout $10.000 dengan garansi $5.000.000** — event APT terbesar sepanjang tahun. Dan berbeda dengan Paradise City, **Taipei tidak punya pembatasan kewarganegaraan untuk masuk**.
 
@@ -176,9 +178,9 @@ Sebelum memesan tiket pesawat, ada baiknya tahu meja seperti apa yang menanti. A
 
 Itu justru kabar bagus buat pemain Indonesia. Jaraknya sebanding dengan Bangkok atau Kuala Lumpur, jalur kualifikasinya sama terbuka, dan ==g:Anda datang tanpa jejak sama sekali — tidak ada reg yang punya read atas Anda==, sementara banyak reguler di sirkuit ini sudah saling kenal bertahun-tahun.
 
-**Angka 2025:** 1.718 entri dari **850 pemain unik** (sisanya re-entry), membentuk prize pool **KRW 2.766.660.000 (~$2,0 juta)** — Main Event terbesar yang pernah digelar APT di Korea sampai saat itu. Juaranya pemain Tiongkok **Junjie He** dengan ₩380.520.000 (~$275.140) plus satu kursi APT Championship, setelah kesepakatan ICM tiga arah bersama Kouki Okumiya dan Kuroda Kiyoto.
+**Angka 2025:** 1.281 entri dari **754 pemain unik** (sisanya re-entry), membentuk prize pool **KRW 2.766.660.000 (~$2,0 juta)** — Main Event terbesar yang pernah digelar APT di Korea sampai saat itu. Juaranya pemain Tiongkok **Junjie He** dengan ₩380.520.000 (~$275.140) plus satu kursi APT Championship, setelah kesepakatan ICM tiga arah bersama Kouki Okumiya dan Kuroda Kiyoto.
 
-> **Baca angka entri dengan benar.** "1.718 entri" bukan 1.718 orang, melainkan 850 pemain plus re-entry. Field dengan re-entry selalu terlihat lebih besar dari kenyataannya.
+> **Baca angka entri dengan benar.** "1.281 entri" bukan 1.281 orang, melainkan 754 pemain plus re-entry. Field dengan re-entry selalu terlihat lebih besar dari kenyataannya.
 
 ---
 
@@ -378,7 +380,7 @@ A. Sangat dekat. Paradise City menjalankan shuttle gratis dari Terminal 1 (Gate 
 
 **Q. Bisakah saya bermain di APT Incheon Main Event kalau belum pernah main turnamen live?**
 
-A. Bisa. Buy-in-nya (~$1.703) memang besar tapi strukturnya ramah pemula — starting stack yang dalam dan level yang panjang. Kalau Anda nyaman dengan home game atau poker online, transisi ke live cukup mudah. Mini Main Event (~$610, KRW 900K) dan Ultra Stack (~$475) adalah opsi stakes lebih rendah untuk memulai.
+A. Bisa. Buy-in-nya (~$1.703) memang besar tapi strukturnya ramah pemula — starting stack yang dalam dan level yang panjang. Kalau Anda nyaman dengan home game atau poker online, transisi ke live cukup mudah. Mini Main Event (~$610, KRW 900K) dan Ultra Stack (~$477) adalah opsi stakes lebih rendah untuk memulai.
 
 **Q. Bagaimana cara saya pergi dari Paradise City ke Seoul?**
 
@@ -415,7 +417,7 @@ Semua angka dicocokkan dengan sumber primer. **Diverifikasi: 28 Juli 2026.**
 - **APT Championship 2026** — [Full APTC 2026 Schedule](https://www.theasianpokertour.com/news/apt-announces-full-aptc2026-schedule) · 13–29 November, Taipei; Main Event 23–27 Nov, $10.000, garansi $5.000.000
 - **Ulang tahun ke-20** — [APT Gets Ready to Celebrate 20 Years](https://www.theasianpokertour.com/news/apt-2026-schedule)
 - **Satelit dan paket** — [Natural8 — Journey to APT Incheon 2026](https://www.natural8.com/en/blog/journey-to-apt-incheon-2026) · [Country Exclusives 2026](https://www.natural8.com/en/poker/tournaments/apt-incheon-country-exclusives-2026)
-- **Field dan hasil 2025 (laporan resmi penyelenggara)** — [APT — China's Junjie He Wins APT's Largest Korean Main Event](https://www.theasianpokertour.com/news/china-s-junjie-he-wins-apt-s-largest-korean-main-event-for-krw-380-5-m-usd-275-k-plus-apt-championship-seat-worth-krw-13-8-m-usd-10-k) · 1.718 entri dari 850 pemain · prize pool KRW 2.766.660.000 · rincian per negara
+- **Field dan hasil 2025 (laporan resmi penyelenggara)** — [APT — China's Junjie He Wins APT's Largest Korean Main Event](https://www.theasianpokertour.com/news/china-s-junjie-he-wins-apt-s-largest-korean-main-event-for-krw-380-5-m-usd-275-k-plus-apt-championship-seat-worth-krw-13-8-m-usd-10-k) · 1.281 entri dari 754 pemain · prize pool KRW 2.766.660.000 · rincian per negara
 - **Aturan masuk kasino** — [Paradise City resmi](https://www.p-city.com/front/contents/casino/casinoInfo)
 
 > ⚠️ **Festival dimulai 7 Agustus.** Jumlah kursi satelit, batas late reg, dan jadwal shuttle masih bisa berubah. **Cek ulang halaman event APT dan lobby Natural8 pada hari Anda mendaftar.**
