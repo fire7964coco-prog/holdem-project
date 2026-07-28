@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "APPT 코리아 2026 참가 완전 가이드 — 신청부터 착석까지",
   seoTitle: "APPT 코리아 2026 참가 방법 — PokerStars 위성부터 현장 체크인까지",
   desc: "APPT 코리아 2026(9월 3~14일, 파라다이스 시티)에 초보자가 참가하는 전 과정을 단계별로 정리했습니다. PokerStars 계정 생성 → Power Path 위성 → 현장 등록 → 체크인까지 순서대로 설명합니다.",
-  tldr: "APPT 코리아 2026은 9/3~14 인천 파라다이스 시티에서 열립니다. 메인이벤트 바이인 180만원. PokerStars Power Path로 $0.50부터 위성 도전 가능. 단, APT 인천과 동일하게 파라다이스 시티는 외국인 전용 — 한국 국적자 입장 불가.",
+  tldr: "APPT 코리아 2026은 2026년 9월 3~14일 인천 파라다이스 시티에서 열립니다. 메인이벤트는 9월 10~14일, 바이인 180만원(약 $1,260), 보장 상금 10억원(약 $700,000)입니다. 가장 싼 경로는 PokerStars Power Path로 $0.50 Spin & Go부터 단계를 올라가는 것이고, 온라인 위성 없이 간다면 9월 9일 현장 Mega Qualifier(35만원)가 현실적입니다. 다만 파라다이스 시티는 외국인 전용 카지노라 한국 국적자는 입장 자체가 안 됩니다 — 해외 영주권을 가진 재외국민은 예외입니다.",
   category: "토너먼트",
   date: "2026-06-16",
-  updated: "2026-07-22",
+  updated: "2026-07-28",
   readTime: "11분",
   emoji: "♠",
   layout: "tournament-guide",
@@ -17,13 +17,15 @@ export const POST: Post = {
   imageAlt: "APPT 코리아 2026 파라다이스 시티 카지노 — PokerStars APPT 토너먼트 현장",
   keepImagesInBody: true,
   content: `
-APPT(Asia Pacific Poker Tour)가 7년 만에 한국으로 돌아옵니다. 2026년 9월, 인천 파라다이스 시티에서 열리는 APPT 코리아 2026 — 초보자도 어떻게 참가하는지 처음부터 끝까지 설명합니다.
+APPT(Asia Pacific Poker Tour)가 2019년 4월 이후 처음으로 한국에 돌아옵니다. 2026년 9월, 인천 파라다이스 시티에서 열리는 APPT 코리아 2026 — 초보자도 어떻게 참가하는지 처음부터 끝까지 설명합니다.
 
 "PokerStars 계정은 어떻게 만들어?", "위성이 뭐야?", "현장에서 뭐부터 해야 해?" — 이 글이 그 답입니다.
 
 ---
 
-## 읽기 전 반드시 확인 — APT 인천과 동일 조건
+> **한 줄 답** — APPT 코리아 2026은 9월 3~14일 인천 파라다이스 시티에서 열리고, 메인이벤트(9/10~14)는 바이인 180만원·보장 10억원입니다. 참가 경로는 ① PokerStars Power Path 온라인 위성($0.50부터) ② 9월 9일 현장 Mega Qualifier(35만원) ③ 현장 직접 바이인 세 가지입니다. **단, 파라다이스 시티는 외국인 전용 카지노라 한국 여권으로는 입장이 불가합니다.**
+
+## 한국 국적자도 참가할 수 있나요? — 읽기 전 반드시 확인
 
 <div style="background:rgba(239,68,68,0.08);border:2px solid rgba(239,68,68,0.45);border-radius:14px;padding:20px 24px;margin:24px 0">
 <div style="display:flex;align-items:flex-start;gap:12px">
@@ -48,11 +50,13 @@ APPT(Asia Pacific Poker Tour)가 7년 만에 한국으로 돌아옵니다. 2026�
 
 ---
 
-## APPT 코리아 2026이란 — 대회 기본 정보
+## APPT 코리아 2026은 언제 어디서 열리나요?
 
 ![APPT 코리아 2026 PokerStars 토너먼트 — 파라다이스 시티 카지노 포커룸](/images/appt-korea-2026-guide-hero.webp)
 
-APPT는 PokerStars가 주관하는 아시아 태평양 최고 권위의 포커 투어입니다. 한국에서 마지막으로 열린 건 2019년 — **7년 만의 귀환**입니다.
+APPT는 PokerStars가 주관하는 아시아 태평양 최고 권위의 포커 투어입니다. 한국에서 마지막으로 열린 건 **2019년 4월 5~14일**, 같은 파라다이스 시티였습니다.
+
+한 가지 짚어둘 게 있습니다. PokerStars 공식 페이지는 이번 대회를 *"After six long years"*(6년 만)로 소개하는데, 2019년 4월에서 2026년 9월이면 실제로는 7년이 넘습니다. 공식 카피 기준으로는 "6년", 달력 기준으로는 "7년"이라 숫자가 엇갈리니, **"2019년 이후 처음"**으로 기억하는 편이 정확합니다.
 
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.3);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -89,6 +93,32 @@ APPT는 PokerStars가 주관하는 아시아 태평양 최고 권위의 포커 �
 
 ---
 
+## 2019년 대회에서는 누가 우승했나요?
+
+직전 대회인 2019년 APPT 코리아 메인이벤트 결과를 보면, 이 대회의 성격이 한눈에 드러납니다.
+
+메인이벤트에는 **581명이 참가**했고, 파이널 테이블에 오른 9명의 국적은 다음과 같았습니다.
+
+| 순위 | 선수 | 국적 | 상금 |
+|:---:|:---|:---:|---:|
+| 1위 | Sparrow Cheung | 홍콩 | ₩198,100,000 |
+| 2위 | Tomomitsu Ono | 일본 | ₩122,800,000 |
+| 3위 | Hung-Sheng Lin | 대만 | ₩76,250,000 |
+| 4위 | Jiang Chen | 중국 | ₩58,150,000 |
+| 5위 | Tao Fan | 중국 | ₩40,150,000 |
+| 6위 | Tetsuro Tomita | 일본 | ₩31,950,000 |
+| 7위 | Huidong Gu | 마카오 | ₩26,000,000 |
+| 8위 | Mengdian Peng | 중국 | ₩21,900,000 |
+| 9위 | Xinglong Huang | 중국 | ₩18,283,400 |
+
+==r:파이널 테이블 9명 중 한국 국적 선수는 0명이었습니다.== 중국 4명, 일본 2명, 홍콩·대만·마카오 각 1명 — 전원 외국 국적입니다.
+
+이건 우연이 아니라 **구조입니다.** 파라다이스 시티가 외국인 전용 카지노라 한국 국적자는 애초에 대회장에 들어갈 수 없습니다. 그래서 "한국에서 열리는 대회"인데도 한국인 입상자가 나오지 않습니다. [APT 인천 2026](/blog/apt-incheon-2026-guide)에서도 2025년 파이널 테이블에 한국 국적자가 없었던 것과 같은 이유입니다.
+
+참고로 2019년 대회는 파라다이스 시티에서 **4월 5일부터 14일까지** 열렸습니다. 이번 2026년 대회(9월 3~14일)와 기간 길이가 거의 같습니다.
+
+---
+
 ## APT 인천(8월)이랑 같이 갈 수 있다
 
 APT 인천은 8월 7~16일, APPT 코리아는 9월 3~14일입니다. 두 대회가 불과 18일 간격으로 같은 장소에서 연달아 열립니다. 두 대회 모두 파라다이스 시티 카지노이므로, **미리 파라다이스 시티 멤버십 카드를 만들어두면 두 번째 방문부터는 입장이 훨씬 빠릅니다.**
@@ -97,10 +127,11 @@ APT 인천은 8월 7~16일, APPT 코리아는 9월 3~14일입니다. 두 대회�
 
 ---
 
-## 참가 경로 3가지 — 비용 비교
+## 참가하는 방법은 몇 가지인가요? — 경로 3가지 비용 비교
 
 **방법 A: PokerStars Power Path 위성 (가장 저렴)**
-$0.50 Spin & Go → 단계별 위성 → $109 파이널 → Silver Pass($2,500) → 메인이벤트 바이인
+$0.50 Spin & Go(Step 1) → $1~$1.50(Step 2) → $11(Step 3) → Step 4 → Pass 획득 → 메인이벤트 바이인
+※ Silver Pass($2,500)를 따면 메인이벤트($1,260 상당) 참가 후 크레딧이 남습니다.
 
 **방법 B: 현장 Mega Qualifier (중간 · 가장 현실적)**
 9월 9일 현장 등록 → 35만원 Mega Qualifier 참가 → 상위 입상 시 메인이벤트 시트 획득
@@ -122,7 +153,7 @@ $0.50 Spin & Go → 단계별 위성 → $109 파이널 → Silver Pass($2,500) 
 
 ---
 
-## STEP 1 — PokerStars 계정 만들기
+## STEP 1 — PokerStars 계정은 어떻게 만드나요?
 
 Power Path 위성 경로를 선택했다면 먼저 PokerStars 계정이 필요합니다.
 
@@ -161,7 +192,7 @@ Power Path 위성 경로를 선택했다면 먼저 PokerStars 계정이 필요�
 
 ---
 
-## STEP 2 — PokerStars Power Path로 위성 따기
+## STEP 2 — 위성은 얼마부터 도전할 수 있나요? (Power Path)
 
 Power Path는 PokerStars의 단계별 위성 시스템입니다. 매일 무료 Step 1 티켓을 받을 수 있어서 사실상 **무료로 시작**할 수 있습니다.
 
@@ -172,22 +203,24 @@ Power Path는 PokerStars의 단계별 위성 시스템입니다. 매일 무료 S
 | 단계 | 바이인 | 형식 | 보상 |
 |:---|:---:|:---|:---|
 | Step 1 | **$0.50** (또는 무료 일일 티켓) | Spin & Go | Step 2 티켓 |
-| Step 2 | $1 또는 $1.50 | On-Demand SNG / MTT | Step 3 티켓 |
-| Step 3 | $11~$22 (단계에 따라) | MTT | Step 4 티켓 |
-| Step 4 | **$109** | MTT | **Bronze / Silver / Gold Pass** |
+| Step 2 | $1 (SNG) / $1.50 (MTT) | On-Demand SNG / MTT | Step 3 티켓 |
+| Step 3 | **$11** | MTT | Step 4 티켓 |
+| Step 4 | **직접 구매 불가** (Step 3 티켓으로만 진입) | MTT | **Bronze / Silver / Gold Pass** |
 
 </div>
 
-**Silver Pass($2,500)**: APPT 코리아 메인이벤트 포함 다양한 PokerStars Live 이벤트 바이인으로 사용 가능
+**패스 3종의 가치** — Bronze $109 / **Silver $2,500** / Gold $10,300. APPT 코리아 메인이벤트 바이인이 약 $1,260이므로, **Silver Pass 하나면 메인이벤트를 커버하고도 남습니다.**
+
+:::note[**$109를 안내하는 글은 구정보입니다.** PokerStars 공식 고지에 따르면 *"From October 14, 2024 the Step 4 events will change from a $109 buy-in to a $55 buy-in"* — 2024년 10월 14일부로 Step 4는 바이인 방식이 바뀌었습니다. 지금 $109는 **Step 4의 바이인이 아니라 Bronze Pass의 가치**입니다. 한국어로 APPT를 다루는 글 중 이 개편을 반영한 곳이 거의 없으니, 다른 글에서 "$109 파이널"을 보면 그 글의 작성 시점을 의심하세요.]:::
 
 **Power Path 찾는 법:**
 로그인 → 상단 **"Events"** 탭 → **"Live"** 서브탭 → "APPT Korea" 검색 → 위성 목록 확인
 
-→ 대회 약 6주 전부터 구체적인 APPT Korea 전용 위성이 로비에 등장합니다. (2026년 7월 말 예상)
+APPT Korea 전용 위성이 로비에 언제 열리는지는 **PokerStars가 공식적으로 고지하지 않습니다.** 대회가 가까워질수록 늘어나는 게 보통이므로, 위 경로를 주기적으로 직접 확인하는 수밖에 없습니다. 다만 Power Path 자체는 상시 운영되니, 전용 위성이 아직 없어도 Step 1부터 올라가는 건 지금도 가능합니다.
 
 ---
 
-## STEP 3 — 현장 Mega Qualifier (9월 9일) — 가장 현실적인 방법
+## STEP 3 — 35만원으로 메인이벤트 시트를 딸 수 있나요?
 
 온라인 위성 없이도 현장에서 직접 도전할 수 있는 경로가 있습니다. **9월 9일 현장에서 열리는 Mega Qualifier**가 그것입니다.
 
@@ -200,17 +233,17 @@ Power Path는 PokerStars의 단계별 위성 시스템입니다. 매일 무료 S
 
 ---
 
-## STEP 4 — PokerStars로 온라인 사전 등록 (대회 6주 전부터)
+## STEP 4 — 온라인으로 미리 등록할 수 있나요?
 
-현장 방문 전에 PokerStars 클라이언트를 통해 온라인으로 사전 등록할 수 있습니다.
+현장 방문 전에 PokerStars 클라이언트를 통해 온라인으로 사전 등록할 수 있습니다. 다만 **아래 절차의 세부 마감 시각은 PokerStars가 공식 페이지에 공개하지 않았습니다.** 등록 마감·데스크 운영 시간은 대회가 가까워지면 공식 페이지나 아래 현장 연락처로 반드시 재확인하세요.
 
 **1. PokerStars 로그인 → Events → Live 탭**
 
 **2. APPT Korea 이벤트 선택 → 원하는 토너먼트 클릭**
 
 **3. Stars Account 잔액으로 "Register" 클릭**
-- 온라인 등록은 **대회 24시간 전까지** 가능
-- 이후에는 반드시 현장 등록 데스크 방문
+- 온라인 등록은 이벤트 시작 전까지 가능하며, **마감 시각은 이벤트마다 다릅니다**
+- 마감 후에는 현장 등록 데스크를 방문해야 합니다
 
 **4. 등록 확인 이메일 수신**
 
@@ -222,14 +255,14 @@ Power Path는 PokerStars의 단계별 위성 시스템입니다. 매일 무료 S
 <div style="font-size:13px;color:var(--muted-foreground);line-height:1.7">
 ✅ 현금(KRW) — 가능<br/>
 ✅ 카지노 칩 — 가능<br/>
-✅ Stars Account 잔액 — 가능 (온라인 사전 등록 또는 현장 Stars Account 결제)<br/>
-❌ Casino wire transfer — APPT Korea는 미지원
+✅ Stars Account 잔액 — 온라인 사전 등록 시 사용<br/>
+⚠️ 그 외 결제 수단(카드·계좌이체 등)은 공식 안내가 없습니다 — 현장 문의(+82-10-4194-6121)로 확인하세요
 </div>
 </div>
 
 ---
 
-## 파라다이스 시티 가는 법
+## 파라다이스 시티는 어떻게 가나요?
 
 APT 인천 2026과 완전히 동일한 장소입니다. 상세 교통 정보는 [APT 인천 2026 가이드](/blog/apt-incheon-2026-guide)를 참고하세요.
 
@@ -249,7 +282,7 @@ APT 인천 2026과 완전히 동일한 장소입니다. 상세 교통 정보는 
 
 ---
 
-## 현장 체크인 절차 — 도착부터 착석까지
+## 현장에 도착하면 뭐부터 해야 하나요?
 
 APT 인천 2026 가이드에서 설명한 파라다이스 시티 체크인과 동일하게 진행됩니다. 단, **등록 데스크가 "APPT Registration Desk"** 라는 표지판으로 별도 운영됩니다.
 
@@ -271,7 +304,7 @@ APT 인천 2026 가이드에서 설명한 파라다이스 시티 체크인과 �
 
 ---
 
-## 준비물 완전 체크리스트
+## 무엇을 챙겨가야 하나요?
 
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.3);border-radius:14px;padding:20px 24px;margin:24px 0">
 <div style="font-size:13px;font-weight:700;color:var(--primary);margin-bottom:14px">필수 서류</div>
@@ -305,7 +338,7 @@ A. 가능합니다. 두 대회 모두 인천 파라다이스 시티에서 열리
 
 **Q. PokerStars 계정 없이 현장에서만 참가할 수 있나요?**
 
-A. 가능합니다. 방법 B(현장 Mega Qualifier)와 방법 C(현장 직접 바이인) 모두 PokerStars 계정 없이 현금(KRW) 또는 카지노 칩으로 참가할 수 있습니다. 현장 등록 데스크는 대회 시작 1시간 전부터 열립니다.
+A. 가능합니다. 방법 B(현장 Mega Qualifier)와 방법 C(현장 직접 바이인) 모두 PokerStars 계정 없이 현금(KRW) 또는 카지노 칩으로 참가할 수 있습니다. 현장 등록 데스크 운영 시간은 공식 공개 정보가 없으므로, 여유 있게 도착하거나 현장 연락처(+82-10-4194-6121)로 미리 확인하세요.
 
 **Q. Silver Pass로 메인이벤트에 어떻게 사용하나요?**
 
@@ -318,6 +351,18 @@ A. APPT 코리아 현장 Mega Qualifier(₩350K, 9월 9일)는 당일 첫 번째
 **Q. 참가 문의처는 어디인가요?**
 
 A. PokerStars Live 현장 문의: +82-10-4194-6121 / 이메일: manila@pokerstars.net / 공식 사이트: pokerstarslive.com/appt/korea/
+
+---
+
+## 출처
+
+이 글의 일정·바이인·상금·Power Path 구조는 아래 1차 출처를 직접 확인해 작성했습니다 (확인일: 2026년 7월 28일).
+
+- [PokerStars Live — APPT Korea 2026 공식 페이지](https://www.pokerstarslive.com/appt/korea/) — 대회 기간, 이벤트별 바이인·보장 상금, 메인이벤트 일정, 현장 연락처, 외국인 전용 카지노 및 만 19세 이상 입장 규정
+- [PokerStars — Power Path 공식 안내](https://www.pokerstars.com/poker/learn/news/power-path-the-new-way-to-play-the-biggest-pokerstars-events/) — Step 1~4 구조, 2024년 10월 14일 Step 4 개편, Bronze/Silver/Gold Pass 가치
+- [Somuchpoker — APPT Korea 2019 메인이벤트 결과](https://somuchpoker.com/news/appt-korea-sparrow-wins-the-main-event-soyza-crowned-super-high-roller-champion) — 2019년 대회 일정, 581 엔트리, 파이널 테이블 9명 국적·상금
+
+> 대회 정보는 변경될 수 있습니다. 참가를 확정하기 전에는 반드시 위 공식 페이지에서 최신 일정을 다시 확인하세요.
 
 ---
 
