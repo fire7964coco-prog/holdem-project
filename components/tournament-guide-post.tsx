@@ -111,7 +111,9 @@ export default function TournamentGuidePost({
                   <span className="text-[10px] font-bold uppercase tracking-widest text-primary bg-primary/20 border border-primary/40 px-2.5 py-1 rounded-full">
                     {post.category}
                   </span>
-                  <span className="text-xs text-white/60">{post.date} 업데이트</span>
+                  <time dateTime={post.updated || post.date} className="text-xs text-white/60">
+                    {post.updated || post.date} 업데이트
+                  </time>
                   <span className="text-xs text-white/60">{post.readTime} 읽기</span>
                 </div>
                 <h1 className="text-2xl md:text-3xl font-serif font-black text-white leading-tight">
@@ -128,7 +130,9 @@ export default function TournamentGuidePost({
               <span className="text-[10px] font-bold uppercase tracking-widest text-primary bg-primary/20 border border-primary/40 px-2.5 py-1 rounded-full">
                 {post.category}
               </span>
-              <span className="text-xs text-muted-foreground">{post.date} 업데이트</span>
+              <time dateTime={post.updated || post.date} className="text-xs text-muted-foreground">
+                {post.updated || post.date} 업데이트
+              </time>
             </div>
                 <h1 className="text-3xl md:text-4xl font-serif font-extrabold text-foreground leading-tight mb-3">
               {post.title}

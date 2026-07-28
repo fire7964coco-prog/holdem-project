@@ -978,7 +978,7 @@ export default function BlogPost({
               <dl className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 border-t border-border">
                 {[
                   { label: "운영 경력", value: "12년+" },
-                  { label: "발행 글 수", value: "29편" },
+                  { label: "발행 글 수", value: "57편" },
                   { label: "현장 취재", value: "WSOP·APT" },
                   { label: "솔버 분석", value: "Pio · GTO+" },
                 ].map(({ label, value }) => (
