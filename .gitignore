@@ -13,3 +13,6 @@ build
 *gsc*key*.json
 *service-account*.json
 docs/gsc-tracking/data/
+# Claude Code — 개인 설정(절대경로·머신별 허용목록)은 제외, 스킬/MCP 설정은 커밋
+.claude/settings.local.json
+.playwright-mcp/
