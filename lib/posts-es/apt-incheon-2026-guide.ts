@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "tournament",
   date: "2026-06-18",
   updated: "2026-07-28",
-  masterUpdated: "2026-07-19",
+  masterUpdated: "2026-07-28",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🇰🇷",
@@ -50,6 +50,8 @@ Antes del póker: Corea del Sur se ha convertido, casi sin ruido, en uno de los 
 - **Coste:** comparada con Tokio, Hong Kong o Sídney, Seúl es sorprendentemente asequible — una cena completa de BBQ coreano con bebidas sale por menos de $20 por persona.
 
 Y para el visitante internacional: ==g:la mayoría de los pasaportes occidentales (EE. UU., Canadá, Reino Unido, Australia, NZ, Japón y 16 más) están temporalmente exentos de la K-ETA hasta el 31 de diciembre de 2026 — embarcas solo con tu pasaporte y presentas la Tarjeta de Llegada electrónica (e-Arrival Card) gratuita antes de aterrizar.==
+
+**Y una razón más que aplica solo a este año.** El propio anuncio de APT lo dice sin rodeos: *"with the APT turning twenty in 2026"* (el APT cumple veinte años en 2026). El tour nació en 2006, cuando Antanas "Tony G" Guoga ganó el Main Event inaugural en Singapur. La temporada del vigésimo aniversario cierra con el APT Championship en Taipéi, y eso hace que **los asientos al Championship que se reparten en Incheon valgan más de lo habitual**.
 
 ---
 
@@ -97,6 +99,31 @@ Y para el visitante internacional: ==g:la mayoría de los pasaportes occidentale
 
 ---
 
+---
+
+## ¿Cuánto valen los asientos al APT Championship?
+
+En todo el festival se reparten **nueve asientos al APT Championship (APTC) Taipéi 2026**, cada uno valorado en **$10.000**. Casi toda la cobertura menciona solo "tres asientos en el Main Event". Está incompleto, y la diferencia importa a la hora de elegir en qué torneos entrar.
+
+<div style="overflow-x:auto;margin:20px 0">
+
+| Torneo | Buy-in (USD) | Asientos APTC |
+|:---|:---:|:---:|
+| **APT Main Event** | ~$1.703 | **3** (los tres primeros) |
+| APT Super High Roller | ~$10.200 | 1 |
+| APT High Roller | ~$3.400 | 1 |
+| Superstar Challenge | ~$23.800 | 1 |
+| **Ultra Stack** | **~$475** | **1** |
+| **Mini Main Event** | **~$610** | **1** |
+| Zodiac Classic | ~$2.000 | 1 |
+| **Total** | | **9** |
+
+</div>
+
+==g:Fíjate en las dos filas más baratas.== Un **Ultra Stack de $475** o un **Mini Main de $610** llevan cada uno un asiento completo de $10.000. Ganar uno de esos no se parece en nada a terminar entre los tres primeros de un Main Event con más de mil entradas — y el ticket que te llevas es el mismo.
+
+**A dónde te lleva ese ticket:** el APT Championship 2026 se juega del **13 al 29 de noviembre en Red Space, Taipéi**. El Main Event del Championship es del **23 al 27 de noviembre, un freezeout de $10.000 con $5.000.000 garantizados** — el evento más grande del año del APT. Y Taipéi, a diferencia de Paradise City, **no tiene restricción de nacionalidad para entrar**.
+
 ## Cómo clasificar en Natural8 (desde $3.50)
 
 Natural8 es el partner online oficial del APT y organiza la campaña de satélites ==**Journey to APT Incheon 2026**==. Dos caminos hacia el Main Event:
@@ -119,6 +146,41 @@ Paso 1 (~$3.50) → ganas ticket para el Paso 2 (~$15) → ganas ticket para el 
 ==g:Natural8 también ofrece un bono del 8% sobre los premios== para los clasificados por satélite — si ganas $10,000 en el evento en vivo, te llevas $800 extra encima. Regístrate en natural8.com y filtra los torneos por "APT Incheon" para ver el calendario de satélites vigente.
 
 > **Consejo OnLive:** la ruta OnLive te deja jugar el Día 1 desde tu propia zona horaria y solo volar a Corea si sobrevives hasta el Día 3. ==g:Si tu presupuesto de viaje va justo, esta es la vía de clasificación más inteligente.==
+
+**Hay una tercera vía que casi ninguna guía menciona: los Country Exclusives.** Natural8 organiza clasificatorios restringidos por país de residencia que reparten **seis paquetes en vivo**, y un paquete no es solo el asiento: incluye **la entrada al Main Event (~$1.684) más unos $500 en gastos de viaje**. Los satélites normales te dan el asiento y el vuelo corre de tu cuenta. La elegibilidad depende del país de residencia, así que comprueba en el lobby si tu país tiene bracket abierto antes de grindear la vía general.
+
+---
+
+## ¿Quién juega realmente este torneo? — El campo de 2025 por nacionalidad
+
+Antes de comprar el vuelo conviene saber en qué mesa te vas a sentar. APT publica el desglose por país, y el Main Event de Incheon 2025 quedó así:
+
+<div style="overflow-x:auto;margin:20px 0">
+
+| # | País | Entradas | Cuota |
+|:---:|:---|---:|:---:|
+| 1 | **Japón** | 484 | 37,8% |
+| 2 | **China** | 299 | 23,3% |
+| 3 | Tailandia | 107 | 8,4% |
+| 4 | Hong Kong | 106 | 8,3% |
+| 5 | Taiwán | 49 | 3,8% |
+| 6 | Rusia | 40 | 3,1% |
+| 7 | Singapur | 37 | 2,9% |
+| 8 | Vietnam | 29 | 2,3% |
+| 9 | Estados Unidos | 26 | 2,0% |
+| 10 | Malasia | 21 | 1,6% |
+
+</div>
+
+==r:Japón y China solos son el 61% del campo.== Participaron 27 países, pero esto es un torneo **asiático de arriba abajo**: ningún país hispanohablante aparece en el top 10. Si viajas desde España o Latinoamérica vas a ser una rareza en la mesa.
+
+En la práctica eso significa dos cosas. Primera: en la mesa se habla más japonés y mandarín que inglés, y el floor lo gestiona con total normalidad. Segunda — y esta juega a tu favor — **nadie va a tener reads previos sobre ti**. Llegas sin historial en un circuito donde muchos regulares se conocen entre ellos.
+
+**Los números de 2025:** 1.718 entradas de **850 jugadores únicos** (el resto fueron re-entradas), con un prize pool de **KRW 2.766.660.000 (~$2,0M)** — el Main Event más grande que APT había montado en Corea hasta entonces. Ganó el chino **Junjie He** por ₩380.520.000 (~$275.140) más un asiento al APT Championship, tras un acuerdo ICM a tres bandas con Kouki Okumiya y Kuroda Kiyoto.
+
+> **Lee bien el número de entradas.** "1.718 entradas" no son 1.718 personas: son 850 jugadores más re-entradas. Los campos con re-entry siempre parecen más grandes de lo que son.
+
+---
 
 ---
 
@@ -341,6 +403,24 @@ A. Ambos funcionan, pero ==g:se recomienda llegar 2–3 días antes==. Te recupe
 5. **Solo para extranjeros** — este torneo se construyó para los jugadores internacionales. Tu pasaporte es tu tarjeta de acceso.
 
 ¿Vas al APT Incheon? La [guía de torneos vs cash games](/es/blog/holdem-tournament-vs-cash-game "thumb:/images/tournament-table-action.webp") cubre las diferencias estructurales si vienes del cash. Y para los formatos de póker que te encontrarás más allá del NLHE, [las acciones de apuesta en el póker](/es/blog/holdem-betting-actions) son una referencia limpia que conviene haber leído antes del Día 1.
+
+---
+
+## Fuentes
+
+Todas las cifras se contrastaron con fuentes primarias. **Verificado: 28 de julio de 2026.**
+
+- **Página oficial de la serie** — [APT — Incheon, South Korea 2026](https://www.theasianpokertour.com/series/apt-incheon-south-korea-2026) · fechas, buy-in y garantizado del Main Event #20, estructura de flights
+- **Preview oficial** — [APT Incheon 2026: The Preview](https://www.theasianpokertour.com/news/apt-incheon-2026-the-preview) · garantizado total, stack inicial de 40.000, **los nueve asientos APTC Taipéi y cómo se reparten**
+- **APT Championship 2026** — [Full APTC 2026 Schedule](https://www.theasianpokertour.com/news/apt-announces-full-aptc2026-schedule) · 13–29 de noviembre, Taipéi; Main Event 23–27 nov, $10.000, $5.000.000 GTD
+- **20º aniversario** — [APT Gets Ready to Celebrate 20 Years](https://www.theasianpokertour.com/news/apt-2026-schedule)
+- **Satélites y paquetes** — [Natural8 — Journey to APT Incheon 2026](https://www.natural8.com/en/blog/journey-to-apt-incheon-2026) · [Country Exclusives 2026](https://www.natural8.com/en/poker/tournaments/apt-incheon-country-exclusives-2026)
+- **Campo y resultado 2025 (reporte oficial del organizador)** — [APT — China's Junjie He Wins APT's Largest Korean Main Event](https://www.theasianpokertour.com/news/china-s-junjie-he-wins-apt-s-largest-korean-main-event-for-krw-380-5-m-usd-275-k-plus-apt-championship-seat-worth-krw-13-8-m-usd-10-k) · 1.718 entradas de 850 jugadores únicos · prize pool KRW 2.766.660.000 · desglose por país
+- **Normas de acceso al casino** — [Paradise City oficial](https://www.p-city.com/front/contents/casino/casinoInfo)
+
+> ⚠️ **El festival arranca el 7 de agosto.** El número de asientos de los satélites, los cierres de late reg y los horarios del shuttle todavía pueden cambiar. **Vuelve a comprobarlo en la página de APT y en el lobby de Natural8 el mismo día que te registres.**
+>
+> 📌 **Criterio de fuentes:** calendarios, buy-ins, número de asientos y normas salen del organizador (APT), del partner online (Natural8) y del propio casino. La prensa especializada solo se usa para lo que esos tres no publican. No se citan rankings de afiliados.
 
 ---
 

@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "APT Incheon 2026 berlangsung 7–16 Agustus di Paradise City Casino, Incheon — 10 menit dengan shuttle gratis dari Terminal 1. Main Event: buy-in KRW 2.500.000 (~$1.703), GTD $1 juta. Kualifikasi dari $3,50 via satelit berjenjang Natural8. Hanya untuk warga negara asing (warga negara Korea tidak boleh masuk). Seoul berjarak ~1 jam dan merupakan salah satu kota terbaik di Asia untuk kuliner, budaya, dan kehidupan malam.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-07-03",
+  updated: "2026-07-28",
+  masterUpdated: "2026-07-28",
   keepImagesInBody: true,
   readTime: "16 mnt",
   emoji: "🇰🇷",
@@ -49,6 +50,8 @@ Sebelum bicara poker: Korea Selatan diam-diam sudah menjadi salah satu negara te
 - **Biaya:** Dibanding Tokyo, Hong Kong, atau Sydney, Seoul luar biasa terjangkau — makan malam Korean BBQ lengkap dengan minuman kurang dari $20 per orang.
 
 Dan untuk pengunjung internasional: ==g:sebagian besar pemegang paspor negara Barat masuk Korea tanpa visa atau lewat K-ETA gratis (otorisasi perjalanan elektronik) yang bisa diajukan online dalam hitungan menit.==
+
+**Dan ada satu alasan yang hanya berlaku tahun ini.** Pengumuman resmi APT menyebutnya terang-terangan: *"with the APT turning twenty in 2026"* — APT genap dua puluh tahun di 2026. Tur ini lahir pada 2006, saat Antanas "Tony G" Guoga menjuarai Main Event perdana di Singapura. Musim ulang tahun ke-20 ditutup dengan APT Championship di Taipei, dan itulah sebabnya **kursi Championship yang dibagikan di Incheon tahun ini bernilai lebih dari biasanya**.
 
 ---
 
@@ -96,6 +99,31 @@ Dan untuk pengunjung internasional: ==g:sebagian besar pemegang paspor negara Ba
 
 ---
 
+---
+
+## Berapa nilai kursi APT Championship?
+
+Sepanjang festival ini dibagikan **sembilan kursi APT Championship (APTC) Taipei 2026** — masing-masing bernilai **$10.000**. Hampir semua liputan hanya menyebut "tiga kursi di Main Event". Itu tidak lengkap, dan selisihnya menentukan event mana yang sebaiknya Anda ikuti.
+
+<div style="overflow-x:auto;margin:20px 0">
+
+| Event | Buy-in (USD) | Kursi APTC |
+|:---|:---:|:---:|
+| **APT Main Event** | ~$1.703 | **3** (tiga besar) |
+| APT Super High Roller | ~$10.200 | 1 |
+| APT High Roller | ~$3.400 | 1 |
+| Superstar Challenge | ~$23.800 | 1 |
+| **Ultra Stack** | **~$475** | **1** |
+| **Mini Main Event** | **~$610** | **1** |
+| Zodiac Classic | ~$2.000 | 1 |
+| **Total** | | **9** |
+
+</div>
+
+==g:Perhatikan dua baris termurah.== **Ultra Stack $475** dan **Mini Main $610** masing-masing membawa satu kursi utuh senilai $10.000. Memenangkan salah satunya sama sekali berbeda dari menembus tiga besar Main Event berisi seribu entri lebih — padahal tiketnya sama persis.
+
+**Ke mana tiket itu membawa Anda:** APT Championship 2026 berlangsung **13–29 November di Red Space, Taipei**. Main Event Championship digelar **23–27 November, freezeout $10.000 dengan garansi $5.000.000** — event APT terbesar sepanjang tahun. Dan berbeda dengan Paradise City, **Taipei tidak punya pembatasan kewarganegaraan untuk masuk**.
+
 ## Cara Kualifikasi via Natural8 (Mulai dari $3,50)
 
 Natural8 adalah partner online resmi APT dan menjalankan kampanye satelit ==**Journey to APT Incheon 2026**==. Ada dua jalur menuju Main Event:
@@ -118,6 +146,41 @@ Step 1 (~$3,50) → menangkan tiket ke Step 2 (~$15) → menangkan tiket ke Mega
 ==g:Natural8 juga menjalankan bonus payout 8%== untuk peserta yang lolos lewat satelit — kalau Anda memenangkan $10.000 di event live, Anda dapat tambahan $800 di atasnya. Daftar di natural8.com, filter turnamen dengan "APT Incheon" untuk menemukan jadwal satelit terkini.
 
 > **Tip OnLive:** Rute OnLive memungkinkan Anda memainkan Day 1 dari zona waktu Anda sendiri dan hanya terbang ke Korea jika bertahan sampai Day 3. ==g:Kalau anggaran perjalanan Anda ketat, ini jalur kualifikasi yang lebih cerdas.==
+
+**Ada jalur ketiga yang hampir tidak pernah disebut panduan lain: Country Exclusives.** Natural8 menjalankan kualifikasi khusus berdasarkan negara domisili yang membagikan **enam paket live** — dan paket bukan sekadar kursi: isinya **tiket Main Event (~$1.684) plus sekitar $500 biaya perjalanan**. Satelit biasa hanya memberi kursi, tiket pesawat urusan Anda sendiri. Kelayakan ditentukan negara domisili, jadi cek dulu di lobby apakah bracket negara Anda dibuka sebelum menggrind jalur umum.
+
+---
+
+## Siapa saja yang benar-benar datang? — Komposisi field 2025
+
+Sebelum memesan tiket pesawat, ada baiknya tahu meja seperti apa yang menanti. APT mempublikasikan rincian per negara, dan Main Event Incheon 2025 tampak seperti ini:
+
+<div style="overflow-x:auto;margin:20px 0">
+
+| # | Negara | Entri | Porsi |
+|:---:|:---|---:|:---:|
+| 1 | **Jepang** | 484 | 37,8% |
+| 2 | **Tiongkok** | 299 | 23,3% |
+| 3 | Thailand | 107 | 8,4% |
+| 4 | Hong Kong | 106 | 8,3% |
+| 5 | Taiwan | 49 | 3,8% |
+| 6 | Rusia | 40 | 3,1% |
+| 7 | Singapura | 37 | 2,9% |
+| 8 | Vietnam | 29 | 2,3% |
+| 9 | Amerika Serikat | 26 | 2,0% |
+| 10 | **Malaysia** | **21** | **1,6%** |
+
+</div>
+
+==r:Jepang dan Tiongkok saja sudah 61% dari field.== Ada 27 negara yang hadir, dan menariknya **tetangga Asia Tenggara sudah masuk daftar** — Thailand ke-3, Singapura ke-7, Vietnam ke-8, Malaysia ke-10. Indonesia belum muncul di sepuluh besar.
+
+Itu justru kabar bagus buat pemain Indonesia. Jaraknya sebanding dengan Bangkok atau Kuala Lumpur, jalur kualifikasinya sama terbuka, dan ==g:Anda datang tanpa jejak sama sekali — tidak ada reg yang punya read atas Anda==, sementara banyak reguler di sirkuit ini sudah saling kenal bertahun-tahun.
+
+**Angka 2025:** 1.718 entri dari **850 pemain unik** (sisanya re-entry), membentuk prize pool **KRW 2.766.660.000 (~$2,0 juta)** — Main Event terbesar yang pernah digelar APT di Korea sampai saat itu. Juaranya pemain Tiongkok **Junjie He** dengan ₩380.520.000 (~$275.140) plus satu kursi APT Championship, setelah kesepakatan ICM tiga arah bersama Kouki Okumiya dan Kuroda Kiyoto.
+
+> **Baca angka entri dengan benar.** "1.718 entri" bukan 1.718 orang, melainkan 850 pemain plus re-entry. Field dengan re-entry selalu terlihat lebih besar dari kenyataannya.
+
+---
 
 ---
 
@@ -340,6 +403,24 @@ A. Keduanya bisa, tapi ==g:disarankan tiba 2–3 hari lebih awal==. Anda pulih d
 5. **Hanya untuk warga negara asing** — turnamen ini dibuat untuk pemain internasional. Paspor Anda adalah kartu akses Anda.
 
 Menuju APT Incheon? [Panduan turnamen vs cash game](/id/blog/holdem-tournament-vs-cash-game "thumb:/images/tournament-table-action.webp") membahas perbedaan strukturalnya kalau Anda beralih dari cash. Dan untuk format poker yang akan Anda temui di luar NLHE, [aksi taruhan dalam poker](/id/blog/holdem-betting-actions) adalah referensi rapi untuk dibaca sebelum Day 1.
+
+---
+
+## Sumber
+
+Semua angka dicocokkan dengan sumber primer. **Diverifikasi: 28 Juli 2026.**
+
+- **Halaman resmi seri** — [APT — Incheon, South Korea 2026](https://www.theasianpokertour.com/series/apt-incheon-south-korea-2026) · tanggal, buy-in dan garansi Main Event #20, struktur flight
+- **Preview resmi** — [APT Incheon 2026: The Preview](https://www.theasianpokertour.com/news/apt-incheon-2026-the-preview) · total garansi, starting stack 40.000, **sembilan kursi APTC Taipei dan pembagiannya**
+- **APT Championship 2026** — [Full APTC 2026 Schedule](https://www.theasianpokertour.com/news/apt-announces-full-aptc2026-schedule) · 13–29 November, Taipei; Main Event 23–27 Nov, $10.000, garansi $5.000.000
+- **Ulang tahun ke-20** — [APT Gets Ready to Celebrate 20 Years](https://www.theasianpokertour.com/news/apt-2026-schedule)
+- **Satelit dan paket** — [Natural8 — Journey to APT Incheon 2026](https://www.natural8.com/en/blog/journey-to-apt-incheon-2026) · [Country Exclusives 2026](https://www.natural8.com/en/poker/tournaments/apt-incheon-country-exclusives-2026)
+- **Field dan hasil 2025 (laporan resmi penyelenggara)** — [APT — China's Junjie He Wins APT's Largest Korean Main Event](https://www.theasianpokertour.com/news/china-s-junjie-he-wins-apt-s-largest-korean-main-event-for-krw-380-5-m-usd-275-k-plus-apt-championship-seat-worth-krw-13-8-m-usd-10-k) · 1.718 entri dari 850 pemain · prize pool KRW 2.766.660.000 · rincian per negara
+- **Aturan masuk kasino** — [Paradise City resmi](https://www.p-city.com/front/contents/casino/casinoInfo)
+
+> ⚠️ **Festival dimulai 7 Agustus.** Jumlah kursi satelit, batas late reg, dan jadwal shuttle masih bisa berubah. **Cek ulang halaman event APT dan lobby Natural8 pada hari Anda mendaftar.**
+>
+> 📌 **Prinsip sumber:** jadwal, buy-in, jumlah kursi, dan aturan diambil dari penyelenggara (APT), mitra online (Natural8), dan pihak kasino. Media industri hanya dipakai untuk hal yang tidak dipublikasikan ketiganya. Ranking afiliasi tidak dikutip.
 
 ---
 
