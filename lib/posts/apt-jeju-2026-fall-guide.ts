@@ -3,12 +3,12 @@ import type { Post } from "../posts";
 export const POST: Post = {
   slug: "apt-jeju-2026-fall-guide",
   title: "APT 제주 2026 가을 참가 완전 가이드 — 신청부터 착석까지",
-  seoTitle: "APT 제주 2026 가을 참가 방법 — Natural8 위성부터 현장 체크인까지",
-  desc: "APT 제주 2026 가을(9월 25일~10월 7일, 제주 신화월드 LES A 카지노)에 참가하는 전 과정을 단계별로 정리했습니다. Natural8 계정 생성 → 위성 신청 → 현장 체크인까지 순서대로 설명합니다.",
-  tldr: "APT 제주 2026 가을은 9/25~10/7 제주 신화월드 LES A 카지노에서 열립니다. Natural8에서 $3.50 위성으로 시트 도전 가능. 단, LES A 카지노는 외국인 전용 — 한국 국적자 입장 불가.",
+  seoTitle: "메인 바이인 270만·보장 22억 — APT 제주 2026 가을 참가법",
+  desc: "13일간 136개 이벤트, 일정이 3일 늘었습니다. APT 제주 2026 가을(9/25~10/7, 제주 신화월드 LES A) 메인이벤트 270만원·22억 GTD, 타이베이 시트 12석, Natural8 위성 경로를 공식 출처로 정리했습니다.",
+  tldr: "APT 제주 2026 가을은 9/25~10/7 제주 신화월드 LES A 카지노에서 136개 트로피 이벤트로 열립니다. 메인이벤트(#19)는 바이인 270만원·보장 22억원이며, 시리즈 전체 보장은 $350만 이상이고 타이베이 APT 챔피언십 시트가 12석 걸려 있습니다. Natural8 $3.50 스텝 위성으로 시트에 도전할 수 있지만, LES A는 외국인 전용 카지노라 대한민국 국적자는 입장할 수 없습니다.",
   category: "토너먼트",
   date: "2026-06-17",
-  updated: "2026-07-22",
+  updated: "2026-07-28",
   readTime: "12분",
   emoji: "🌊",
   layout: "tournament-guide",
@@ -16,14 +16,29 @@ export const POST: Post = {
   image: "/images/apt-jeju-2026-fall-guide-hero.webp",
   imageAlt: "제주 신화월드 LES A 카지노 APT 제주 2026 가을 포커 토너먼트 — 제주도 배경 포커 테이블",
   keepImagesInBody: true,
+  event: {
+    name: "APT 제주 2026 가을 (Asian Poker Tour Jeju 2026)",
+    startDate: "2026-09-25",
+    endDate: "2026-10-07",
+    locationName: "LES A Casino, 제주 신화월드",
+    locationAddress: "제주특별자치도 서귀포시 안덕면 신화역사로 304번길 38",
+    lowPriceKRW: 750000,
+    highPriceKRW: 15000000,
+    offerUrl: "https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/events",
+    organizerName: "Asian Poker Tour",
+    organizerUrl: "https://www.theasianpokertour.com",
+  },
   content: `
 APT 제주 2026 가을에 참가하고 싶은데 어디서부터 시작해야 할지 모르겠다면, 이 글이 그 답입니다.
 
-"Natural8 위성은 어떻게 신청해?", "제주 신화월드까지 어떻게 가?", "현장 가면 뭐부터 하지?" — 이 질문에 하나씩 정확하게 답합니다.
+> **한 줄 답**
+> APT 제주 2026 가을은 **9월 25일~10월 7일 제주 신화월드 LES A 카지노**에서 **136개 트로피 이벤트**로 열립니다. 메인이벤트(#19)는 **바이인 270만원·보장 22억원**이고, 시리즈 전체 보장은 **$350만 이상**입니다. 타이베이 APT 챔피언십 시트가 **12석**(각 $10,000 상당) 걸려 있습니다. ★**단, LES A 카지노는 외국인 전용이라 대한민국 국적자는 입장할 수 없습니다.**
+
+"메인이벤트 바이인은 얼마야?", "Natural8 위성은 어떻게 신청해?", "현장 가면 뭐부터 하지?" — 이 질문에 하나씩 정확하게 답합니다.
 
 ---
 
-## 읽기 전 반드시 확인 — 외국인 전용 카지노
+## 한국 국적자도 참가할 수 있나요? — LES A는 외국인 전용
 
 <div style="background:rgba(239,68,68,0.08);border:2px solid rgba(239,68,68,0.45);border-radius:14px;padding:20px 24px;margin:24px 0">
 <div style="display:flex;align-items:flex-start;gap:12px">
@@ -48,23 +63,33 @@ APT 제주 2026 가을에 참가하고 싶은데 어디서부터 시작해야 �
 
 ---
 
-## APT 제주 2026 가을이란 — 대회 기본 정보
+## APT 제주 2026 가을은 언제 어디서 열리나요? — 대회 기본 정보
 
 ![APT 제주 2026 가을 — 제주 신화월드 LES A 카지노 포커 토너먼트](/images/apt-jeju-2026-fall-guide-hero.webp)
 
-APT(Asian Poker Tour)는 2026년 20주년을 맞이해 제주를 두 번 찾습니다. 1월~2월 **APT 제주 클래식**에 이어, 9월~10월 **APT 제주 2026 가을**이 같은 장소에서 열립니다.
+**2026년 9월 25일부터 10월 7일까지 13일간, 제주 신화월드 LES A 카지노**에서 열립니다. 메인이벤트는 #19번 이벤트로 바이인 **270만원**, 보장 상금 **22억원**입니다. 시리즈 전체로는 **136개 트로피 이벤트에 $350만 이상**이 보장돼 있습니다.
+
+APT(Asian Poker Tour)는 공식 발표대로 **2026년 창설 20주년**(2006년 싱가포르 초대 대회)을 맞아 제주를 두 번 찾습니다. 1월~2월 **APT 제주 클래식**에 이어, 9월~10월 **APT 제주 2026 가을**이 같은 장소에서 열립니다.
+
+★**이 대회는 원래 10월 4일에 끝날 예정이었습니다.** 이벤트가 136개까지 불어나면서 **일정을 3일 연장**해 10월 7일까지로 늘렸습니다. 직전 APT 제주(클래식)가 99개 트로피 이벤트였으니 한 해 만에 37개가 늘어난 셈입니다.
 
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.3);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | 항목 | 내용 |
 |------|------|
-| **기간** | 2026년 9월 25일 ~ 10월 7일 |
+| **기간** | 2026년 9월 25일 ~ 10월 7일 (13일) |
 | **장소** | LES A Casino, 제주 신화월드, 서귀포시 안덕면 신화역사로 304번길 38 |
+| **총 이벤트** | **136개 트로피 이벤트** |
+| **메인이벤트** | **#19 · 바이인 270만원 · 보장 22억원** |
+| **메인이벤트 일정** | 플라이트 A~D 9/27~29 → Day 2 9/30 → 파이널 10/1~3 |
+| **시리즈 총 보장** | **$3,500,000 이상** |
+| **APTC 타이베이 시트** | **12석** (각 $10,000 상당) |
 | **주관** | Asian Poker Tour (APT) |
 | **파트너** | Landing Entertainment Korea |
 | **타이틀 스폰서** | Natural8 |
 | **온라인 위성 플랫폼** | Natural8 |
-| **공식 사이트** | theasianpokertour.com |
+| **최소 입장 나이** | 만 19세 이상 |
+| **입장 조건** | 외국인 또는 재외교포 (여권 필수) |
 
 </div>
 
@@ -72,27 +97,67 @@ APT(Asian Poker Tour)는 2026년 20주년을 맞이해 제주를 두 번 찾습�
 
 *APT 제주가 열리는 LES A 카지노 — 제주 신화월드 메리어트 리조트 구역에 있다. (직접 방문해 촬영)*
 
-<div style="background:rgba(255,150,0,0.08);border:1px solid rgba(255,150,0,0.35);border-radius:12px;padding:16px 20px;margin:20px 0">
-<div style="font-size:13px;font-weight:700;color:#ff9600;margin-bottom:8px">📋 전체 스케줄 공개 · 메인이벤트 바이인 미발표 (2026년 7월 기준)</div>
-<div style="font-size:13px;color:var(--muted-foreground);line-height:1.7">APT 공식 발표로 <strong>대회 기간은 9월 25일~10월 7일(13일간 136개 이벤트)로 확정</strong>됐고 전체 스케줄이 공개됐습니다. 다만 <strong>메인이벤트 바이인·GTD는 아직 공식 발표 전</strong>입니다. 아래 예상치는 올해 1월~2월에 열린 <strong>APT 제주 클래식 2026</strong>을 기준으로 작성했으며, 공식 발표 후 즉시 업데이트됩니다.<br/>→ 최신 일정 확인: <a href="https://www.theasianpokertour.com" target="_blank" rel="noopener" style="color:var(--primary)">theasianpokertour.com</a></div>
+### 주요 이벤트는 얼마이고 언제 열리나요?
+
+APT 공식 이벤트 페이지에 확정 발표된 수치입니다. 바이인 오름차순으로 정리했습니다.
+
+<div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.3);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
+
+| 이벤트 | 바이인 | 날짜 | 보장 상금 | APTC 시트 |
+|:---|:---:|:---:|:---:|:---:|
+| #110 Micro Main Event | **75만원** | 10/5~6 | 1.25억원 | — |
+| #1 Korea National Cup | **90만원** | 9/25~26 | 2억원 | — |
+| #9 Mystery Bounty Hunter | **120만원** | 9/26~27 | 4억원 | **1석** |
+| #75 Mini Main Event | **150만원** | 10/2~3 | 3억원 | — |
+| #101 Baby Zodiac Classic | **150만원** | 10/4~5 | 1.25억원 | — |
+| **#19 APT Main Event** | **270만원** | **9/27~10/3** | **22억원** | **5석** |
+| #69 Zodiac Classic | **370만원** | 10/1~2 | 5억원 | **1석** |
+| #88 APT High Roller | **500만원** | 10/3~4 | 7억원 | **1석** |
+| #10 APT Super High Roller | **1,500만원** | 9/26~27 | 5억원 | **1석** |
+
 </div>
 
-### 예상 이벤트 목록 (APT 제주 클래식 2026 기준)
+==r:초보자 현실 목표: Micro Main Event(75만원) 또는 Natural8 위성으로 메인이벤트 시트 도전==
 
-| 이벤트명 | 예상 바이인 | 비고 |
-|:---|:---:|:---|
-| Micro Main Event | ~45만원 | 초보자 입문용 |
-| Mini Main Event | ~120만원 | |
-| Mystery Bounty | ~110만원 | Natural8 스폰서 |
-| **APT 메인이벤트** | **~230만원** | **KRW 2.2억+ GTD 예상** |
-| High Roller | ~500만원 | |
-| Super High Roller | ~1,500만원 | |
+:::note[출처: APT 공식 이벤트 페이지 — APT Jeju, South Korea 2026(이벤트 번호·바이인·GTD·APTC 시트). 대회 2개월 전 시점이라 개별 이벤트는 변경될 수 있습니다. 2026-07-28 확인]:::
 
-==g:초보자 현실 목표: Micro Main Event(~45만원) 또는 Natural8 위성으로 메인이벤트 시트 도전==
+### 136개 이벤트가 전부 홀덤은 아닙니다
+
+이번 시리즈의 특징은 **종목 다양성**입니다. 136개 중 노리밋 홀덤은 90개고 나머지 46개가 다른 종목이에요.
+
+| 종목 | 이벤트 수 |
+|:---|:---:|
+| 노리밋 홀덤 | 90 |
+| 오마하 | 21 |
+| 스터드 · 믹스드 게임 | 17 |
+| 드로우 포커 | 8 |
+| **여성 전용** | **11** |
+| 헤즈업 | 2 |
+| **체스/포커 · 바둑(Go)/포커 하이브리드** | **2** |
+
+==g:체스와 바둑을 포커에 접목한 하이브리드 이벤트가 각각 하나씩 있습니다.== 아시아 투어에서만 볼 수 있는 종목이고, 한국어로 이걸 안내한 글은 아직 없습니다. 홀덤 외 종목을 노린다면 오마하 21개·믹스드 17개도 눈여겨볼 만합니다.
 
 ---
 
-## APT 인천(8월)이랑 연달아 참가 가능
+## 타이베이 챔피언십 시트는 어떻게 받나요? — 12석 구조
+
+**APT 제주 2026 가을에서는 APT 챔피언십 타이베이 시트가 총 12석 배출됩니다.** 각 $10,000 상당이고, 11월 13~29일 타이베이에서 열리는 **$500만 보장 챔피언십 메인이벤트** 참가권입니다.
+
+메인이벤트 5석의 배분 방식이 특이합니다.
+
+:::steps
+상위 3인 | 메인이벤트 최종 순위 상위 3명에게 시트 지급 — 일반적인 방식
+Day 3·4 추첨 2석 | ★**성적과 무관한 추첨**입니다. Day 3와 Day 4에 살아남아 있으면 추첨 대상에 들어갑니다
+나머지 7석 | Super High Roller · High Roller · Mystery Bounty Hunter · Zodiac Classic 등 개별 이벤트 우승자에게 1석씩
+:::
+
+==g:Day 3·4 추첨 2석은 "잘 쳐서 이기는 것" 말고 "오래 살아남는 것"에 걸린 상금입니다.== 상위 3위 안에 못 들어도 Day 3까지 버티면 $10,000짜리 시트를 뽑을 기회가 생깁니다. 버블 근처에서 무리하게 칩을 던질 이유가 하나 줄어드는 셈이에요.
+
+:::note[출처: APT 공식 이벤트 페이지 · poker.org — Full APT Jeju schedule drops with 136 trophy events over 13 days(시트 12석·추첨 2석 구조). 2026-07-28 확인]:::
+
+---
+
+## APT 인천(8월)이랑 연달아 참가할 수 있나요?
 
 APT 인천은 8월 7~16일, APT 제주 가을은 9월 25일~10월 7일. 약 6주 간격으로 두 대회 모두 참가할 수 있습니다. 단, 두 대회는 장소가 다릅니다.
 
@@ -106,13 +171,13 @@ APT 인천은 8월 7~16일, APT 제주 가을은 9월 25일~10월 7일. 약 6주
 
 ---
 
-## 참가 경로 3가지 — 비용 비교
+## 참가 경로는 몇 가지인가요? — 3가지 비용 비교
 
 **방법 A: Natural8 위성 (가장 저렴)**
 $3.50 스텝 위성 → Mega Satellite → 메인이벤트 시트
 
 **방법 B: 현장 직접 바이인**
-현장 등록 데스크 → 약 230만원 결제 → 즉시 착석
+현장 등록 데스크 → 270만원 결제 → 즉시 착석
 
 **방법 C: 현장 위성**
 대회 기간 중 현장 위성 토너먼트 참가 → 상위 입상 시 메인이벤트 시트
@@ -122,14 +187,14 @@ $3.50 스텝 위성 → Mega Satellite → 메인이벤트 시트
 | 방법 | 최소 비용 | 시트 보장 | 준비 시간 |
 |:---|:---:|:---|:---|
 | A. Natural8 위성 | $3.50~ (약 5,000원) | 미보장 (실력 필요) | 지금부터 시작 |
-| B. 현장 직접 | ~230만원 | 즉시 보장 | 현장 당일 |
+| B. 현장 직접 | 270만원 | 즉시 보장 | 현장 당일 |
 | C. 현장 위성 | 수십만원 | 미보장 (실력 필요) | 현장 당일 |
 
 </div>
 
 ---
 
-## STEP 1 — Natural8 계정 만들기 (5분)
+## STEP 1 — Natural8 계정은 어떻게 만드나요? (5분)
 
 **1. 공식 사이트 접속** — [www.natural8.com](https://www.natural8.com) → **"Join Now"** 클릭
 
@@ -161,7 +226,7 @@ $3.50 스텝 위성 → Mega Satellite → 메인이벤트 시트
 
 ---
 
-## STEP 2 — Natural8에서 위성 찾아서 등록하기
+## STEP 2 — 위성은 어디서 찾아 등록하나요?
 
 APT 제주 2026 가을 전용 위성은 대회 약 6~8주 전부터 Natural8 로비에 오픈됩니다. **2026년 7월 말~8월 초 예상.**
 
@@ -189,9 +254,9 @@ APT 제주 2026 가을 전용 위성은 대회 약 6~8주 전부터 Natural8 로
 
 ---
 
-## STEP 3 — 메가 위성에서 메인이벤트 시트 따기
+## STEP 3 — 메가 위성에서 시트를 어떻게 따나요?
 
-메가 위성은 $35 또는 $200 바이인으로, 상위 입상자에게 **메인이벤트 시트(~230만원 상당)** 를 지급합니다.
+메가 위성은 $35 또는 $200 바이인으로, 상위 입상자에게 **메인이벤트 시트(270만원 상당)** 를 지급합니다.
 
 - **$35 Mega Satellite** → Live Day 1 시트 다수 배출 (참가자 규모에 비례)
 - **$200 Mega Satellite** → Live Day 1 시트 다수 배출 (배율이 더 높음)
@@ -203,7 +268,7 @@ $20 Step 위성 → OnLive Day 1 → **집에서 Day 1 플레이** → ITM 생�
 
 ---
 
-## STEP 4 — 시트를 땄다면 즉시 해야 할 일
+## STEP 4 — 시트를 땄다면 뭘 해야 하나요?
 
 **1. Natural8 이메일 수신 확인** — 시트 획득 후 영업일 기준 2~3일 내 **"Digital Seat Coupon"** 이메일이 발송됩니다.
 
@@ -215,7 +280,7 @@ $20 Step 위성 → OnLive Day 1 → **집에서 Day 1 플레이** → ITM 생�
 
 ---
 
-## STEP 5 — 현장 등록 데스크에서 시트 카드 수령
+## STEP 5 — 시트 카드는 어디서 받나요?
 
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.3);border-radius:14px;padding:16px 20px;margin:16px 0">
 <div style="font-size:13px;font-weight:700;color:var(--primary);margin-bottom:8px">💳 현장 결제 수단</div>
@@ -234,7 +299,7 @@ $20 Step 위성 → OnLive Day 1 → **집에서 Day 1 플레이** → ITM 생�
 
 ---
 
-## 제주 신화월드 가는 법
+## 제주 신화월드는 어떻게 가나요?
 
 LES A 카지노는 제주국제공항에서 서쪽으로 약 35km 거리입니다.
 
@@ -264,7 +329,7 @@ LES A 카지노는 제주국제공항에서 서쪽으로 약 35km 거리입니�
 
 ---
 
-## 현장 체크인 절차 — 도착부터 착석까지
+## 현장에 도착하면 뭐부터 하나요? — 체크인 절차
 
 **1. LES A 카지노 입구 → 여권 제시 → 입장 허가**
 
@@ -286,7 +351,7 @@ LES A 카지노는 제주국제공항에서 서쪽으로 약 35km 거리입니�
 
 ---
 
-## 준비물 완전 체크리스트
+## 뭘 챙겨가야 하나요? — 준비물 체크리스트
 
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.3);border-radius:14px;padding:20px 24px;margin:24px 0">
 <div style="font-size:13px;font-weight:700;color:var(--primary);margin-bottom:14px">필수 서류</div>
@@ -317,7 +382,7 @@ LES A 카지노는 제주국제공항에서 서쪽으로 약 35km 거리입니�
 
 **Q. APT 제주 메인이벤트 바이인은 정확히 얼마인가요?**
 
-A. 2026년 7월 현재 세부 일정·바이인은 아직 발표 전입니다(대회 기간 9/25~10/7는 공식 확정). APT 제주 클래식 2026(1~2월) 메인이벤트 기준 **약 230만원(KRW 2.3M, ~$1,600)**이었으며, 가을 대회도 유사한 수준으로 예상됩니다. 공식 발표 후 즉시 업데이트합니다. → 공식 확인: [theasianpokertour.com](https://www.theasianpokertour.com)
+A. **270만원(KRW 2.7M)입니다.** APT 공식 이벤트 페이지에 확정 발표된 수치이고, 이벤트 번호는 **#19 APT Main Event**, 보장 상금은 **22억원(KRW 2,200,000,000)** 입니다. 플라이트 A~D가 9월 27~29일, Day 2가 9월 30일, 파이널이 10월 1~3일입니다. 상위 3인과 Day 3·4 추첨자에게 **APTC 타이베이 시트 5석**이 걸려 있습니다.
 
 **Q. APT 인천(8월)과 APT 제주(9월) 둘 다 참가할 수 있나요?**
 
@@ -333,7 +398,24 @@ A. 가능합니다. LES A 카지노는 리조트 숙박 여부와 무관하게 �
 
 **Q. APT 제주 2026 가을의 상금 규모는?**
 
-A. 공식 발표 전이지만, APT 제주 클래식 2026(1~2월) 기준 전체 상금 보장 규모는 **49억원(~USD 340만)** 이었습니다. 가을 대회도 유사한 규모로 예상되며, 공식 발표 후 업데이트됩니다.
+A. **시리즈 전체 보장 상금이 $350만 이상**입니다. 단일 이벤트로는 메인이벤트가 **22억원**으로 가장 크고, 그다음이 High Roller 7억원 · Zodiac Classic 5억원 · Super High Roller 5억원 순입니다. 참고로 직전 APT 제주 클래식 2026(1~2월) 메인이벤트는 **1,718 엔트리**에 상금 **$230만 이상**을 기록했고, 44개국에서 1,200명 넘는 고유 플레이어가 참가했습니다.
+
+---
+
+## 출처
+
+이 글의 일정·바이인·보장 상금·시트 수는 아래 1차 출처를 직접 열어 대조했습니다. **확인일: 2026년 7월 28일.**
+
+- **대회 공식 일정·전체 이벤트·바이인·GTD**: [APT — Jeju, South Korea 2026](https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026) · 9/25~10/7, 136개 이벤트, 메인이벤트 #19 · 270만원 · 22억원 GTD
+- **이벤트별 상세(번호·날짜·APTC 시트)**: [APT — APT Jeju 2026 Events](https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/events)
+- **136개 이벤트 구성·시트 12석 구조·3일 연장**: [poker.org — Full APT Jeju schedule drops with 136 trophy events over 13 days](https://www.poker.org/latest-news/full-apt-jeju-schedule-drops-with-136-trophy-events-over-13-days-aByvK8j5Hq8v)
+- **APT 챔피언십 2026 일정·시트 가치**: [APT — Announces Full APTC 2026 Schedule](https://www.theasianpokertour.com/news/apt-announces-full-aptc2026-schedule) · 11/13~29 타이베이, 메인이벤트 $10,000 · $5,000,000 GTD
+- **투어 20주년·2026 전체 일정**: [APT — Gets Ready to Celebrate 20 Years](https://www.theasianpokertour.com/news/apt-2026-schedule)
+- **LES A 카지노(외국인 전용)·상호 변경**: [뉴스1 — 제주신화월드 랜딩카지노, '레스 에이 카지노'로 상호 변경](https://www.news1.kr/local/jeju/5904859) · 2025년 9월 랜딩카지노 → LES A로 변경, 외국인 전용 카지노
+
+> ⚠️ 대회 2개월 전 시점입니다. **개별 이벤트 일정·바이인·위성 배출 시트는 개막 직전까지 변경될 수 있습니다.** 특히 Natural8 위성 구조는 대회가 가까워질수록 확정되니, 참가 직전 APT 공식 이벤트 페이지와 Natural8 토너먼트 로비에서 다시 확인하세요.
+
+> 📌 **출처 선정 기준**: 일정·바이인·시트 수·규정은 주최사(APT)·운영사(Natural8)·시설 공식 자료를 우선합니다. 취재 매체는 공식 자료에 없는 항목(이벤트 구성 분석 등)에만 보조로 씁니다.
 
 ---
 
