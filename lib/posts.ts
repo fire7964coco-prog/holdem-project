@@ -2728,12 +2728,12 @@ A. BB 수비 범위는 **팟 오즈**를 기반으로 결정합니다. 상대가
  {
  slug: "wsop-2025-tournament-guide",
  title: "WSOP 2025 한국인도 참가할 수 있나요? — 일정·바이인·참가 방법",
- seoTitle: "WSOP 2025 결과 — 메인 우승자·상금·참가자 9,735명",
- desc: "WSOP 2025 메인 이벤트는 9,735명이 참가해 Michael Mizrachi가 상금 $1,000만(약 130억 원)에 우승했습니다. 대회 결과와 한국인 참가 기록, 다음 WSOP 도전 위성 경로까지 정리했습니다.",
+ seoTitle: "9,735명 중 그가 이겼다 — WSOP 2025 메인이벤트 결과",
+ desc: "9,735 엔트리·상금풀 9,053만 달러. Michael Mizrachi가 $1,000만에 우승하며 통산 9번째 브레이슬릿과 명예의 전당까지 손에 넣은 2025년 기록을 공식 발표 기준으로 정리했습니다.",
  tldr: "WSOP 2025 메인 이벤트는 9,735명이 참가해 Michael Mizrachi가 상금 1,000만 달러에 우승했습니다. 2024년 10,112명에 이어 두 해 연속 1만 명 안팎의 필드였고, 위성과 저바이인 이벤트로 아마추어가 대거 섞이는 구조가 자리를 잡았습니다. 이 글은 2025년 기록이며, 참가를 준비한다면 진행 중인 대회 정보를 보는 편이 낫습니다.",
  category: "토너먼트",
  date: "2026-03-10",
- updated: "2026-07-27",
+ updated: "2026-07-28",
  readTime: "8분",
  emoji: " ",
  image: "/images/wsop-2025-tournament-guide-hero.webp",
@@ -2741,7 +2741,7 @@ A. BB 수비 범위는 **팟 오즈**를 기반으로 결정합니다. 상대가
  tags: ["WSOP 2025 결과", "WSOP 우승자", "WSOP", "포커 토너먼트", "WSOP 한국인 참가", "세계 대회"],
  content: `
 <div style="background:rgba(212,175,55,0.12);border:1px solid rgba(212,175,55,0.4);border-radius:12px;padding:14px 20px;margin:0 0 28px">
-📅 <strong>2026 대회가 지금 진행 중입니다</strong> — 최신 일정·참가 방법은 <a href="/blog/wsop-2026-tournament-guide" style="color:var(--primary);font-weight:700">WSOP 2026 완전 가이드</a>에서 확인하세요.
+📅 <strong>이 글은 2025년 대회 기록입니다</strong> — 2026 시리즈도 7월 15일에 종료됐고 메인이벤트 파이널 테이블만 8월 3~5일에 남아 있습니다. 최신 결과·등록 규정·위성 경로는 <a href="/blog/wsop-2026-tournament-guide" style="color:var(--primary);font-weight:700">WSOP 2026 완전 가이드</a>에서 확인하세요.
 </div>
 
 ## WSOP 2025는 어떤 대회였나요?
@@ -2796,17 +2796,33 @@ WSOP 2025는 2025년 5월 27일부터 7월 16일까지 약 7주간, 호스슈 �
 
 ## 2025 메인 이벤트 결과는 어땠나요?
 
-2025년 메인 이벤트는 총 **9,735명**이 참가했고, 우승자는 미국의 **Michael Mizrachi**였습니다. 우승 상금은 **$10,000,000**로, 한국 돈으로 약 130억 원대 규모입니다(환율에 따라 변동).
+2025년 메인 이벤트는 총 **9,735 엔트리**가 모여 상금풀 **$90,535,500**을 기록했고, 우승자는 미국의 **Michael "The Grinder" Mizrachi**였습니다. 우승 상금은 **$10,000,000**로, 한국 돈으로 약 130억 원대 규모입니다(환율에 따라 변동).
+
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | 항목 | 2025 결과 |
-|:---|:---:|
+|:---|:---|
 | **이벤트** | $10,000 No-Limit Hold'em Main Event |
-| **참가자 수** | 9,735명 |
-| **우승자** | Michael Mizrachi |
-| **우승 상금** | $10,000,000 |
-| **파이널 테이블** | 7월 15~16일 진행 |
+| **엔트리** | **9,735** — 역대 **3번째** 규모 |
+| **상금풀** | **$90,535,500** |
+| **우승자** | **Michael "The Grinder" Mizrachi** (미국) |
+| **우승 상금** | **$10,000,000** + 브레이슬릿(가치 약 $500,000) |
+| **준우승** | Robert Wasnock — $6,000,000 |
+| **대회 종료** | 2025년 7월 16일 |
+
+</div>
+
+### 이 우승이 특별했던 이유
+
+==g:Mizrachi는 2025년 한 해에 Poker Players Championship 4번째 우승과 메인이벤트 우승을 동시에 해냈습니다.== 그 성취로 **통산 9번째 브레이슬릿**을 채웠고, 같은 해 **포커 명예의 전당 65번째 멤버로 만장일치 선출**됐습니다.
+
+파이널 테이블도 이례적으로 빨랐습니다. **단 80핸드 만에 끝나** 최소 2015년 이후 가장 짧은 파이널 테이블이었습니다.
+
+:::note[출처: WSOP 공식 — *Michael Mizrachi Wins the 2025 World Series of Poker Main Event Title and Achieves Poker Immortality*(상금풀 $90,535,500 · 우승 $10,000,000 · 준우승 Robert Wasnock $6,000,000 · 9번째 브레이슬릿 · 명예의 전당 65번째) · ESPN(9,735 엔트리·역대 3위·파이널 80핸드). ⚠️ 준우승자 이름을 "John Wasnock"으로 보도한 매체가 있으나 이 글은 **WSOP 공식 표기**를 따랐습니다. 2026-07-28 확인]:::
 
 중요한 포인트는 참가자 수입니다. 2024년 메인 이벤트가 10,112명으로 역대 최대였고, 2025년도 9,735명으로 매우 큰 필드를 유지했습니다. 즉 WSOP는 여전히 "프로만의 무대"라기보다, 위성·저바이인 이벤트·아마추어 참가자가 함께 섞이는 세계 최대 포커 축제에 가깝습니다.
+
+참고로 **2026년에는 9,208 엔트리로 줄어 역대 4번째**가 됐습니다(2024년 10,112 > 2023년 10,043 > 2025년 9,735 > 2026년 9,208). 대신 참가국은 111개국으로 신기록이었습니다 — 자세한 내용은 [WSOP 2026 완전 가이드](/blog/wsop-2026-tournament-guide "thumb:/images/wsop-2026-tournament-guide-hero.webp")에 정리했습니다.
 
 ---
 
@@ -2852,7 +2868,8 @@ WSOP의 가장 클래식한 구간입니다. $1,500이라는 중간 바이인으
 ### 위성 참가 플랫폼
 
 - **WSOP Online/WSOP.com**: 미국 내 허용 지역 중심의 공식 온라인 위성
-- **GGPoker Road to Vegas**: 국제 플레이어 대상 공식 온라인 위성. 2025년 패키지는 Main Event 좌석과 여행·숙박 크레딧이 포함된 구조
+- **GGPoker Road to Vegas**: 2025년 국제 플레이어 대상 공식 온라인 위성. 3월 9일 시작해 **각 $12,000 상당 패키지 1,000개 이상**을 배분했고, Main Event 좌석과 여행·숙박 크레딧이 포함된 구조였습니다.
+  ★**단, 이 프로모션은 2025년으로 끝났습니다.** GGPoker는 **2025년 7월 18일 WSOP Express를 출시**해 이후 위성을 이 체계로 통합했습니다 → [GGPoker WSOP Express 위성 가이드](/blog/ggpoker-wsop-express-satellite-guide)
 - **현장 위성**: 호스슈/파리 라스베이거스 현장에서 일정별로 진행
 
 > 전략 팁: 위성은 "우승"보다 "티켓 획득"이 목표입니다. 일반 토너먼트처럼 칩을 끝까지 모으는 게임이 아니라, 티켓권에 들어갈 수 있는 스택을 지키는 운영이 더 중요합니다.
@@ -2867,9 +2884,11 @@ WSOP의 가장 클래식한 구간입니다. $1,500이라는 중간 바이인으
 
 한국 여권 소지자는 일반적으로 **ESTA(전자여행허가)**를 발급받으면 단기 관광·상용 목적으로 미국을 방문할 수 있습니다. 다만 입국 가능 여부는 개인 이력과 미국 입국 규정에 따라 달라질 수 있으니, 항공권을 끊기 전에 공식 사이트에서 먼저 확인하세요.
 
-- 신청: esta.cbp.dhs.gov
-- 비용: $21 기준(변동 가능)
+- 신청: esta.cbp.dhs.gov (공식 사이트만 이용 — 대행 사이트는 수수료를 더 받습니다)
+- **비용: $40.27** (처리 $4.00 + 승인 $36.27)
 - 처리 시간: 보통 72시간 이내 (72시간 전 신청 권장)
+
+⚠️ **$21로 안내하는 글은 구정보입니다.** ESTA 수수료는 **2025년 9월 30일부로 $21 → $40**로 거의 두 배가 됐고, **2026 회계연도부터 매년 물가에 연동돼 오릅니다.** 2025년 대회를 기준으로 쓴 안내를 보고 예산을 잡으면 차이가 납니다.
 
 ### 2단계: 등록 절차
 
@@ -2911,7 +2930,7 @@ A. 네, 가능합니다. WSOP는 국적 제한이 없으며 21세 이상이면 �
 
 **Q. WSOP 위성 토너먼트는 어디서 참가하나요?**
 
-A. 국제 플레이어 대상 WSOP 위성 플랫폼은 **GGPoker Road to Vegas**가 대표적입니다. 2025년에는 $1대 스텝 위성부터 메인 이벤트 패키지까지 이어지는 구조가 운영됐습니다. 미국 내 허용 지역에서는 WSOP Online/WSOP.com 위성도 운영될 수 있고, 라스베이거스 현장 위성도 별도로 열립니다.
+A. **2025년에는 GGPoker "Road to Vegas"**가 국제 플레이어 대상 대표 경로였고, $12,000 상당 패키지를 1,000개 이상 배분했습니다. ★**지금은 이름과 구조가 바뀌었습니다** — GGPoker가 2025년 7월 WSOP Express를 출시해 $0.50부터 4단계로 올라가는 체계로 통합했고, 도착지도 베가스 메인이벤트뿐 아니라 WSOP Paradise·슈퍼 서킷까지 셋으로 늘었습니다. 현재 기준 안내는 [GGPoker WSOP Express 위성 가이드](/blog/ggpoker-wsop-express-satellite-guide)를 보세요.
 
 **Q. WSOP 참가 총 비용은 얼마나 될까요?**
 
@@ -2928,6 +2947,20 @@ A. $500 Colossus 같은 저바이인 이벤트는 경험 없이도 도전 가능
 **Q. WSOP 참가 전 어떤 스킬을 준비해야 하나요?**
 
 A. 기본적인 홀덤 실력 외에 토너먼트 특유의 전략이 필요합니다: 스택별 전략(딥스택·미디엄스택·쇼트스택), ICM 개념, 블라인드 레벨에 따른 오픈 레인지 조정이 핵심입니다. [홀덤 스타팅 핸드 169가지 완전 정리](/blog/holdem-starting-hand-range)에서 포지션별 오픈 레인지를 학습하고, [홀덤 블러핑 전략](/blog/bluffing-strategy-when-and-how)에서 중요한 토너먼트 심리전 스킬을 익히세요.
+
+---
+
+## 출처
+
+이 글은 **2025년 대회의 기록**이며, 아래 1차 출처를 직접 열어 대조했습니다. **확인일: 2026년 7월 28일.**
+
+- **2025 메인이벤트 공식 결과**: [WSOP — Michael Mizrachi Wins the 2025 World Series of Poker Main Event Title and Achieves Poker Immortality](https://www.wsop.com/news/michael-mizrachi-wins-the-2025-world-series-of-poker-main-event-title-and-achieves-poker-immortality/) · 상금풀 $90,535,500 · 우승 $10,000,000 · 준우승 Robert Wasnock $6,000,000 · 통산 9번째 브레이슬릿 · 포커 명예의 전당 65번째 멤버
+- **엔트리·역대 순위·파이널 테이블**: [ESPN — Michael Mizrachi wins 2025 World Series of Poker main event](https://www.espn.com/espn/betting/story/_/id/45757909/michael-mizrachi-wins-2025-world-series-poker-main-event) · 9,735 엔트리(역대 3위) · 파이널 테이블 80핸드(2015년 이후 최소)
+- **2025 위성 프로모션**: [GGPoker — Step Onto GGPoker's Road To Vegas From March 9](https://ggpoker.com/blog/step-onto-ggpokers-road-to-vegas-from-march-9/) · 각 $12,000 상당 패키지 1,000개 이상
+- **ESTA 수수료 인상**: [Fragomen — DHS Announces Implementation of New Fees for ESTA, EVUS, and Land Border I-94 Forms, Starting September 30](https://www.fragomen.com/insights/united-states-dhs-announces-implementation-of-new-fees-for-esta-evus-and-land-border-i-94-forms-starting-september-30.html) · **2025-09-30부로 $21 → $40**, 2026 회계연도부터 매년 물가연동
+- **WSOP 공식**: [wsop.com](https://www.wsop.com)
+
+> ⚠️ **연도가 붙은 기록물입니다.** 2025년 시점의 수치·프로모션·비용은 그대로 두되, **지금 참가를 준비한다면 이 글이 아니라 [WSOP 2026 완전 가이드](/blog/wsop-2026-tournament-guide)** 를 보세요. 등록 규정(계정 2종·카드 3% 수수료·주소 서류)과 위성 체계(WSOP Express)가 2025년과 달라졌습니다.
 
 ---
 
