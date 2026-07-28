@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "홀덤 대회 바이인은 홀덤펍 소규모는 보통 1만~20만 원대, 국내 대형 APT·APPT 메인은 약 180만~250만 원, WSOP 메인은 $10,000입니다. 초보자는 무료·소액 대회나 새틀라이트로 시작하는 것이 안전합니다.",
   category: "토너먼트",
   date: "2026-06-12",
-  updated: "2026-06-12",
+  updated: "2026-07-28",
   hideSummaryImageSlot: true,
   readTime: "16분",
   emoji: "💰",
@@ -116,7 +116,7 @@ export const POST: Post = {
 | APT 제주 클래식 2026 | National Cup | KRW 850,000 | 입문 가능한 대형 사이드 |
 | APT 제주 클래식 2026 | Mini Main Event | KRW 1,200,000 | 메인보다 낮은 부담 |
 | APT 제주 클래식 2026 | High Roller | KRW 5,000,000 | 고액 이벤트 |
-| APPT 코리아 2026 | Main Event | KRW 1,800,000 | 9/10~14, 파라다이스 시티 |
+| APPT 코리아 2026 | Main Event | KRW 1,800,000 | 9/10~14, 파라다이스 시티 ※외국인 전용 |
 | APPT 코리아 2026 | High Roller | KRW 5,000,000 | 9/13~14 |
 | APPT 코리아 2026 | Main Event Mega Qualifier | KRW 350,000 | 메인 진출용 예선 |
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "홀덤 대회 일정은 공식 투어 사이트를 1순위로 보고, PokerNews·SoMuchPoker·The Hendon Mob 같은 캘린더로 교차확인하세요. 날짜·장소·바이인·등록 마감은 대회 직전 반드시 다시 확인해야 합니다.",
   category: "토너먼트",
   date: "2026-06-12",
-  updated: "2026-06-12",
+  updated: "2026-07-28",
   hideSummaryImageSlot: true,
   readTime: "14분",
   emoji: "📅",
@@ -111,6 +111,8 @@ WSOP는 PokerNews가 공식 라이브 커버리지 파트너로 강하게 연결
 ==APT 일정==은 [Asian Poker Tour 공식 사이트](https://www.theasianpokertour.com/)를 먼저 확인하세요.
 
 2026년 APT는 한국 독자에게 특히 중요합니다. 공식 발표 기준으로 한국 개최 일정이 여러 번 잡혀 있기 때문입니다.
+
+> ⚠️ 아래 국내 개최 대회는 전부 **외국인 전용 카지노**에서 열립니다. 한국 여권으로는 입장이 안 되니, 일정을 보기 전에 [입장 조건부터 확인](/blog/apt-incheon-2026-guide)하세요.
 
 | APT 2026 주요 일정 | 장소 | 확인 포인트 |
 |:---|:---|:---:|
