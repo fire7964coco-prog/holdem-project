@@ -103,3 +103,91 @@
 - 리오플라텐세: Pokerlogia·Agencia Paco Urondo(voseo)·Betsson.bet.ar·lacapital.com.ar(flor=Truco)·codigopoker·bplay·torneos.poker/uruguay·Enjoy PDE
 - 카리브: worldpokerdeals(VE/DR)·vip-grinders(VE프로)·somuchpoker(DR)·Hard Rock Punta Cana·pokerscout(PR SB960)·salaspokerlatam·El Quindiano(vuelco)·slang(baselang/dominicanabroad)
 - 칠레/콜롬비아: salaspokerlatam(vuelco/rata)·ChileAllin·Pokerchile.cl·Rojabet·legalbet.co·RCN(operadores legales)·Coljuegos·Yogonet(Chile Bill 14838-03)·jerga.net(chilenismos)
+
+
+---
+
+## 8. 실전 교정 사례 — apt-incheon 미러 (2026-07-28)
+
+> 여행·대회 글에서 실제로 걸린 반도어. **§6.1 base register(neutral LATAM) 위반 사례집**으로 재사용.
+
+### 8-1. 반도어 → LATAM (검수자[멕시코]가 "30초면 들킨다"고 지적)
+| 반도어(스페인) | LATAM | 비고 |
+|---|---|---|
+| **coger** el metro | **tomar / subirse a / agarrar** | ★멕시코·LATAM에서 **비속어**. 최우선 제거 대상 |
+| **lanzadera** | **shuttle** | 멕시코 공항호텔(AICM·Fiesta Inn)은 shuttle/transporte gratuito. lanzadera 미사용 |
+| **coste** | **costo** | |
+| **tragaperras** | **tragamonedas** | |
+| noche **de marcha** | noche **de antro** | 마드리드 슬랭 |
+| música **en directo** | **en vivo** | ⚠️ 같은 글이 포커엔 "en vivo"를 써서 내부 불일치이기도 했음 |
+| **aparcadas** | **estacionadas** | bicicletas de alquiler → **bicis públicas** |
+| **tortitas de judía** mungo | **panqueques de frijol** mungo | 멕시코에서 tortita=다른 음식, judía 미통용 |
+| azúcar **moreno** | azúcar **mascabado** | |
+| hacer **cola** | hacer **fila** | |
+| **estupenda** | la mejor manera | |
+| **Sídney** | **Sydney** | RAE-스페인 표기 → 멕시코 매체 표기 |
+
+### 8-2. 포커 용어 (§0.4 영어 loanword 지배 원칙 적용)
+| 오역/스페인식 | LATAM 실사용 |
+|---|---|
+| **campo** (field 직역) | **el field** ← ★가장 흔한 실수. pt 미러는 이미 영어 유지 중이었음 |
+| **Entrada (USD)** 표 헤더 | **Buy-in (USD)** |
+| deal **a tres bandas** | **deal por ICM a tres manos** (a tres bandas=당구 관용구) |
+| **Paso 1 / Ruta de satélites por pasos** | **Step 1 / Ruta de los Steps** (로비 표기 그대로) |
+| los **habituales** | los **regs** |
+| **partidas caseras** | **home games** |
+| volver al **tapete** / tapete verde | volver **a la mesa** / **paño verde** (멕시코에서 tapete=현관 매트) |
+
+### 8-3. LATAM 독자용 입국 정보 (신규 대회·여행 글에 필수)
+- **K-ETA 면제**: 멕시코 · 칠레 · 콜롬비아 → e-Arrival Card만
+- **K-ETA 필요(₩10,000)**: 아르헨티나 · 페루 · 우루과이 · 브라질
+- → "LATAM"으로 뭉뚱그리지 말고 **국가별로 분기**해서 쓸 것. (상세는 파일 하단 공통 섹션)
+
+### 8-4. 잘 돼 있던 것 (유지)
+- **póker(k) 100%, póquer(q) 0건** — 스페인 표식 회피가 처음부터 지켜지고 있었음
+- 영어 유지가 맞는 자리: field · floor · reads · prize pool · stack · bounty · freezeout · late reg ·
+  grindear · bustear · high roller · ICM · NLHE
+
+
+---
+
+# ★ 대회·여행 글 공통 사실 (2026-07-28 확정, 전 언어 공용)
+
+> apt-incheon 미러 8개 언어 작업 중 확보. **대회 참가 글은 "비자/입국"이 가장 앞단인데
+> 작업 전 8개 언어 전부가 이 부분을 틀렸거나 비워두고 있었다.** 신규 대회 글마다 이 표를 먼저 확인할 것.
+
+## K-ETA 한시 면제 22개국 (외교부 재외공관 공지 · 2026-12-31까지 연장)
+네덜란드 · 노르웨이 · 뉴질랜드 · **대만** · 덴마크 · **독일** · **마카오** · 미국(괌 포함) · 벨기에 ·
+스웨덴 · 스페인 · **싱가포르** · 영국 · 오스트리아 · 이탈리아 · **일본** · 캐나다 · 폴란드 ·
+프랑스 · 핀란드 · 호주 · **홍콩**
+
+- 면제 대상 = **K-ETA 신청 불필요**, 무료 **e-Arrival Card**만 도착 전 온라인 제출
+- **명단 밖**이면 비자 면제국이라도 **K-ETA ₩10,000** 필요(72시간 전 신청 권장, 미승인 시 탑승 거부)
+- 명단 밖 주요국: **브라질 · 말레이시아 · 인도네시아 · 중국 · 아르헨티나 · 페루 · 우루과이**
+  (멕시코 · 칠레 · 콜롬비아는 면제 — es 작업 시 국가별 분기 필요)
+
+## 비자 자체가 필요한 경우 (K-ETA 이전 단계)
+| 국적 | 본토(인천·서울) | 함정 |
+|---|---|---|
+| **중국 내지** | **C-3-9 관광비자 필수** | 3인 이상 단체 무비자는 **2026-06-30 만료**. ★**제주 무비자는 제주 안에서만** — 제주→인천 이동 불가 |
+| **인도네시아** | **C-3-9 관광비자 필수** | ★**무비자 30일은 제주 전용**. 제주 직항 착륙 필수, 본토 이동 불가. 2026-02 발표 단체 무비자는 등록 여행사 경유 단체(15일) |
+| 홍콩·마카오 | 무비자 + K-ETA 면제 | — |
+
+## Natural8 / GGNetwork 국가별 접근 (★대회 위성 글 필수 확인)
+- **공식 T&C가 국가 목록을 공개하지 않는다.** 원문: *"if a potential player cannot find his/her
+  country of residence in the list of countries available during the registration process,
+  this means that Natural8 will not be able to accept him/her as a player."*
+  → **등록 화면의 국가 목록이 유일한 판정 기준.** 이걸 그대로 독자에게 넘기는 것이 가장 정확한 서술.
+- Natural8 = GGNetwork의 **아시아·태평양 스킨**. 서유럽 상당수는 본체 **GGPoker**로 라우팅
+  · **독일** → GGPoker 자체 라이선스 플랫폼 · **브라질** → GGPoker(포르투갈어 지원) · **일본** → GGPoker(일본어 UI)
+  · **스페인** → GGPoker 미운영(DGOJ 라이선스 없음)
+  · **대만·홍콩·마카오·싱가포르·말레이시아** → 통상 Natural8 등록 가능(중화권 독자에겐 유리한 사실)
+- ⚠️ **VPN 우회는 ToS 위반** — 계정 정지·잔액 몰수. 우회를 권하는 서술 금지.
+- ★**본문에 도메인 가입 CTA를 쓰지 말 것.** 정보는 남기되 "가입하러 가라"는 형태는 제거하고,
+  **누구에게나 열린 경로 = 주최사 직접 등록(registrations@apt.poker)** 를 앞세운다.
+  (id는 현지 법 환경상 특히 민감. 출처 섹션의 공식 링크는 근거이므로 유지 가능)
+
+## Natural8 Country Exclusives — 거주지가 아니라 **국적**
+- 공식 문구는 *citizen* + **KYC 국적 검증**. "거주국"으로 쓰면 주소만 바꾸면 된다는 오해를 준다.
+- 2026 인천분 공개된 장 = **「N8TW x APT Incheon 2026」 = 中華民國 국적 한정**
+- 패키지 = 시트 + 여행경비(대만분: **NT$53,888 + NT$16,000**). 일반 위성은 시트만.

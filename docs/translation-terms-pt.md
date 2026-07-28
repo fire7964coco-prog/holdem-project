@@ -19,3 +19,87 @@
 - 검색은 무악센트도 흔함("como jogar poker", "o que sao blinds"). seoTitle/desc는 브라질 검색자가 실제 치는 표현으로.
 
 Sources: pokernobrasil.com · checkraise.com.br · pokerlab.com.br · ggpoker.com/pt-br · partypoker.com/pt-br
+
+
+---
+
+# 대회·여행 글 실전 교정 (apt-incheon 미러, 2026-07-28)
+
+## ★1. K-ETA — 브라질은 **면제국이 아니다**
+- 브라질은 K-ETA 한시 면제 22개국 **명단 밖** → 무비자 90일이지만 **K-ETA ₩10.000(~$7) 필수**
+- ❌ "K-ETA **gratuito**" (무료라고 두 번 서술돼 있었음)
+- ✅ "**₩10.000, k-eta.go.kr, válido por 3 anos, peça 72h+ antes**" + 미승인 시 탑승 거부 명시
+- ⚠️ pt 미러는 es 미러보다 **비자 섹션이 낡아 있었다**(같은 masterUpdated인데도) → 갱신 시 언어 간 대조 필수
+
+## ★2. 실측 오류 사례 — 공항 셔틀 게이트
+- pt만 터미널 2 셔틀 탑승구를 **2A**로 적고 있었음(KO 원문·es 미러·시설 공식은 **4A**)
+- → 다국어 작업 시 **같은 사실을 언어별로 grep 대조**할 것. 한 언어만 어긋나면 그 언어가 틀린 것
+
+## ★3. Natural8 — 브라질은 본체 GGPoker
+- Natural8 = 아시아·태평양 스킨. 브라질은 **GGPoker**(포르투갈어 사이트·서포트)로 라우팅
+- 본문 도메인 CTA("Cadastre-se em natural8.com") 제거. 등록 화면이 판정 기준임을 서술
+- **누구에게나 열린 경로 = 주최사 직접 등록(registrations@apt.poker)**
+
+## 4. 용어 (브라질 포커 미디어 실사용)
+| 오역 | 브라질 표준 |
+|---|---|
+| **assento** (seat 직역) | **vaga** ("ganhou uma vaga no Main Event"). ⚠️ assento=버스 좌석 |
+| Natural8 **roda** transfer/bônus | **promove / faz / paga / tem** (runs 직역 남용 6건) |
+| deal **a três** | **deal por ICM a três** |
+| **regulars** | **regs** |
+| lojas-**conceito** (flagship) | **flagships / megalojas** (concept store는 다른 뜻) |
+| "espera-se manter o barulho baixo" | "**maneire no barulho**" (수동태 직역) |
+| satellite / satélite 혼용 | **satélite**로 통일, **step**만 영어 |
+
+## 5. 표기
+- 소수점은 **쉼표**: $2,7 milhões · $3,50 (❌ $2.7 / $3.50) — 본문 나머지는 이미 브라질식이었고 이 4곳만 영어식이었음
+- seoTitle 60자 이내(기존 86자로 잘림)
+
+## 6. 잘 돼 있던 것 (유지)
+- 루시타니즘 **0건** — ônibus·metrô·celular·caça-níqueis·rolê·grindar·bate-volta,
+  **「Round 6」·「Parasita」**(브라질 개봉명) 정확
+- 영어 유지가 맞는 자리: field · floor · regs · prize pool · stack · buy-in · re-entry · freezeout · late reg
+
+
+---
+
+# ★ 대회·여행 글 공통 사실 (2026-07-28 확정, 전 언어 공용)
+
+> apt-incheon 미러 8개 언어 작업 중 확보. **대회 참가 글은 "비자/입국"이 가장 앞단인데
+> 작업 전 8개 언어 전부가 이 부분을 틀렸거나 비워두고 있었다.** 신규 대회 글마다 이 표를 먼저 확인할 것.
+
+## K-ETA 한시 면제 22개국 (외교부 재외공관 공지 · 2026-12-31까지 연장)
+네덜란드 · 노르웨이 · 뉴질랜드 · **대만** · 덴마크 · **독일** · **마카오** · 미국(괌 포함) · 벨기에 ·
+스웨덴 · 스페인 · **싱가포르** · 영국 · 오스트리아 · 이탈리아 · **일본** · 캐나다 · 폴란드 ·
+프랑스 · 핀란드 · 호주 · **홍콩**
+
+- 면제 대상 = **K-ETA 신청 불필요**, 무료 **e-Arrival Card**만 도착 전 온라인 제출
+- **명단 밖**이면 비자 면제국이라도 **K-ETA ₩10,000** 필요(72시간 전 신청 권장, 미승인 시 탑승 거부)
+- 명단 밖 주요국: **브라질 · 말레이시아 · 인도네시아 · 중국 · 아르헨티나 · 페루 · 우루과이**
+  (멕시코 · 칠레 · 콜롬비아는 면제 — es 작업 시 국가별 분기 필요)
+
+## 비자 자체가 필요한 경우 (K-ETA 이전 단계)
+| 국적 | 본토(인천·서울) | 함정 |
+|---|---|---|
+| **중국 내지** | **C-3-9 관광비자 필수** | 3인 이상 단체 무비자는 **2026-06-30 만료**. ★**제주 무비자는 제주 안에서만** — 제주→인천 이동 불가 |
+| **인도네시아** | **C-3-9 관광비자 필수** | ★**무비자 30일은 제주 전용**. 제주 직항 착륙 필수, 본토 이동 불가. 2026-02 발표 단체 무비자는 등록 여행사 경유 단체(15일) |
+| 홍콩·마카오 | 무비자 + K-ETA 면제 | — |
+
+## Natural8 / GGNetwork 국가별 접근 (★대회 위성 글 필수 확인)
+- **공식 T&C가 국가 목록을 공개하지 않는다.** 원문: *"if a potential player cannot find his/her
+  country of residence in the list of countries available during the registration process,
+  this means that Natural8 will not be able to accept him/her as a player."*
+  → **등록 화면의 국가 목록이 유일한 판정 기준.** 이걸 그대로 독자에게 넘기는 것이 가장 정확한 서술.
+- Natural8 = GGNetwork의 **아시아·태평양 스킨**. 서유럽 상당수는 본체 **GGPoker**로 라우팅
+  · **독일** → GGPoker 자체 라이선스 플랫폼 · **브라질** → GGPoker(포르투갈어 지원) · **일본** → GGPoker(일본어 UI)
+  · **스페인** → GGPoker 미운영(DGOJ 라이선스 없음)
+  · **대만·홍콩·마카오·싱가포르·말레이시아** → 통상 Natural8 등록 가능(중화권 독자에겐 유리한 사실)
+- ⚠️ **VPN 우회는 ToS 위반** — 계정 정지·잔액 몰수. 우회를 권하는 서술 금지.
+- ★**본문에 도메인 가입 CTA를 쓰지 말 것.** 정보는 남기되 "가입하러 가라"는 형태는 제거하고,
+  **누구에게나 열린 경로 = 주최사 직접 등록(registrations@apt.poker)** 를 앞세운다.
+  (id는 현지 법 환경상 특히 민감. 출처 섹션의 공식 링크는 근거이므로 유지 가능)
+
+## Natural8 Country Exclusives — 거주지가 아니라 **국적**
+- 공식 문구는 *citizen* + **KYC 국적 검증**. "거주국"으로 쓰면 주소만 바꾸면 된다는 오해를 준다.
+- 2026 인천분 공개된 장 = **「N8TW x APT Incheon 2026」 = 中華民國 국적 한정**
+- 패키지 = 시트 + 여행경비(대만분: **NT$53,888 + NT$16,000**). 일반 위성은 시트만.
