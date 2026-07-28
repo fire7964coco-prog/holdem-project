@@ -3,9 +3,9 @@
 export const POST: Post = {
   slug: "pokerstars-appt-satellite-guide",
   title: "PokerStars APPT 위성 토너먼트 완전 가이드 2026",
-  seoTitle: "바이인 없이 APPT 코리아 가는 법 — PokerStars 위성 단계별 완전 가이드",
-  desc: "₩1.8M 바이인 없어도 괜찮다. PokerStars Power Path $0.50부터 Silver Pass($2,500) 획득까지 — APPT 코리아 2026 위성 신청 4단계, 현장 메가 퀄리파이어(9/9 ₩350K) 전략, 당첨 후 KYC·숙소 절차까지 처음부터 끝까지 정리했습니다.",
-  tldr: "APPT 코리아 2026(9/3~14 인천 파라다이스시티) 위성 2가지: ① PokerStars 온라인 Power Path($0.50부터 단계별) → Silver Pass ② 현장 메가 퀄리파이어(9/9, ₩350K). 파라다이스시티는 외국인 전용 — 한국 국적자 입장 불가.",
+  seoTitle: "바이인 없이 APPT 코리아 — PokerStars 위성 4단계",
+  desc: "4월에 패스 체계가 또 바뀌었습니다. Power Path $0.50부터 Step 4($55 티켓 전용)까지, 개편된 패스 4종(Spade·Bronze·Silver·Gold)과 9/9 메가 퀄리파이어를 공식 출처로 정리했습니다.",
+  tldr: "APPT 코리아 2026(9/3~14 인천 파라다이스시티, 시리즈 총 보장 ₩20억+)의 메인이벤트 시트를 따는 길은 둘입니다. ① PokerStars Power Path 온라인 4단계($0.50 → $1/$1.50 → $11 → $55 티켓 전용) ② 현장 메가 퀄리파이어(9/9, ₩350K). 2026년 4월 27일 개편으로 패스는 Spade $109·Bronze $530·Silver $2,500·Gold $10,300 4종이 됐고, 라이브 시트를 노린다면 Silver Pass가 핵심입니다. 단 파라다이스시티는 외국인 전용이라 한국 국적자는 현장 참가가 불가합니다.",
   category: "토너먼트",
   date: "2026-06-18",
   updated: "2026-07-28",
@@ -34,12 +34,12 @@ APPT 코리아 2026 메인이벤트 바이인은 **₩1,800,000(약 $1,260)**입
 
 ---
 
-> **핵심 요약**
-> APPT 코리아 2026 위성 루트는 두 가지: ==**① PokerStars 온라인 Power Path**==($0.50부터, 무료 티켓도 가능) ==**② 현장 메가 퀄리파이어**==(9월 9일, ₩350,000). ==r:단, 파라다이스시티 카지노는 외국인 전용 시설 — 한국 국적자는 현장 참가 불가입니다.==
+> **한 줄 답**
+> APPT 코리아 2026(**9월 3~14일 인천 파라다이스시티, 시리즈 총 보장 ₩20억+**)의 메인이벤트 시트를 따는 길은 둘입니다 — ①**PokerStars Power Path** 온라인 4단계($0.50 → $1/$1.50 → $11 → $55 티켓 전용) ②**현장 메가 퀄리파이어**(9월 9일, ₩350,000). ★**2026년 4월 27일 Power Path가 개편돼 패스가 4종으로 늘었습니다** — Spade $109 · Bronze $530 · Silver $2,500 · Gold $10,300. ==r:단, 파라다이스시티는 외국인 전용 카지노라 대한민국 국적자는 현장 참가가 불가합니다.==
 
 ---
 
-## APPT 코리아 2026 위성으로 가는 두 가지 길
+## 위성으로 가는 길은 몇 가지인가요? — 온라인 vs 현장
 
 바이인 없이 APPT 코리아 메인이벤트에 앉는 방법은 크게 두 가지입니다.
 
@@ -59,7 +59,7 @@ APPT 코리아 2026 메인이벤트 바이인은 **₩1,800,000(약 $1,260)**입
 
 ---
 
-## PokerStars 계정 만들기 + KYC 인증 — 위성 신청 전 반드시 완료해야 할 것
+## 위성 신청 전에 뭘 준비해야 하나요? — 계정 + KYC
 
 위성 신청 전에 반드시 아래 두 가지를 끝내야 합니다. 실제로 많은 사람이 "시드 토너먼트까지 통과했는데 현장 등록이 막혔다"는 경험을 합니다.
 
@@ -87,7 +87,7 @@ APPT 코리아 2026 메인이벤트 바이인은 **₩1,800,000(약 $1,260)**입
 
 ---
 
-## Power Path 4단계 완전 정복 — $0.50으로 APPT 시트 따는 법
+## Power Path는 어떻게 올라가나요? — $0.50부터 4단계
 
 PokerStars의 **Power Path**는 4단계 예선 시스템입니다. 아래 표가 전체 구조입니다.
 
@@ -95,30 +95,39 @@ PokerStars의 **Power Path**는 4단계 예선 시스템입니다. 아래 표가
 
 | 단계 | 형식 | 바이인 | 보상 |
 |:---:|---|---|---|
-| **Step 1** | Spin & Go 또는 데일리 챌린지 | ==g:$0.50 (무료 획득 가능)==  | Step 2 티켓 |
-| **Step 2** | On Demand Sit&Go 또는 MTT | $1.00~$1.50 | Step 3 티켓 |
-| **Step 3** | MTT (다단계 예선) | $11 | Step 4 티켓 |
-| **Step 4** | 파이널 (직접 구매 불가) | ==r:바이인 없음== | Bronze / Silver / ==**Gold Pass**== |
+| **Step 1** | Spin & Go (온디맨드) | ==g:$0.50 — 포커 플레이 시 매일 무료 티켓 지급== | Step 2 티켓 |
+| **Step 2** | Sit & Go 또는 MTT | $1 (SNG) / $1.50 (MTT) | Step 3 티켓 |
+| **Step 3** | MTT (온디맨드) | $11 | Step 4 티켓 |
+| **Step 4** | MTT | ==r:$55 — **티켓 진입 전용**== | Spade / Bronze / Silver / ==**Gold Pass**== |
 
-> **스킵 가능:** Step 2·Step 3는 티켓 없이 직접 바이인을 내고 들어갈 수 있습니다. 단 **Step 4는 반드시 Step 3를 통과해야만** 참가할 수 있습니다.
+> **스킵 가능:** Step 1~3는 티켓 없이 직접 바이인을 내고 들어갈 수 있습니다. 단 **Step 4는 표기 바이인이 $55이지만 현금 등록이 불가**하고 Step 3 티켓으로만 진입합니다(공식 표기: *"$55 MTT (Ticket entry only)"*).
 
 </div>
 
-:::note[**⚠️ "$109 파이널"을 안내하는 글은 구정보입니다.** PokerStars 공식 고지 원문: *"From October 14, 2024 the Step 4 events will change from a \$109 buy-in to a \$55 buy-in."* 2024년 10월 14일부로 Step 4의 바이인 방식이 바뀌었고, 현재 Step 4는 **Step 3 티켓으로만 진입**합니다. 지금 \$109는 Step 4의 바이인이 아니라 **Bronze Pass의 가치**입니다.]:::
+:::note[**⚠️ "$109 파이널"을 안내하는 글은 구정보입니다.** PokerStars 공식 고지 원문: *"From October 14, 2024 the Step 4 events will change from a \$109 buy-in to a \$55 buy-in."* 즉 현재 Step 4는 **$55 대회이며 Step 3 티켓으로만 진입**합니다.]:::
 
-### Power Pass 3종류와 가치
+### 패스는 몇 종류이고 얼마짜리인가요?
+
+★**2026년 4월 27일 Power Path가 개편되면서 패스가 3종에서 4종으로 늘었습니다.** 이 개편을 반영한 한국어 글이 거의 없어서, 옛 수치를 그대로 옮겨 적은 안내가 많습니다.
 
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.25);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Pass 등급 | 가치 | APPT 코리아 활용 |
-|:---:|---|---|
-| **Bronze Pass** | $530 | 온라인 토너먼트 참가권 (라이브 불가) |
-| **Silver Pass** | ==**$2,500**== | ==g:APPT 코리아 등 PokerStars Live 지역 이벤트 시트로 교환 가능== |
-| **Gold Pass** | $10,300 | ==r:APPT 코리아 사용 불가== — EPT 전용 (유럽 메인이벤트 + 8박 + 경비) |
+| Pass 등급 | 가치 | 용도 | 개편 전 |
+|:---:|---|---|---|
+| **Spade Pass** | **$109** | 저가 대표 대회(Sunday Million 등 $109 라인) | ★**신설** |
+| **Bronze Pass** | **$530** | 토너먼트 시리즈 티켓 번들 등 | $109에서 **상향** |
+| **Silver Pass** | ==**$2,500**== | PokerStars **지역 라이브 이벤트** 또는 대형 온라인 토너먼트 | 변동 없음 |
+| **Gold Pass** | **$10,300** | **EPT** 라이브 이벤트 또는 대형 온라인 토너먼트 | 변동 없음 |
 
 </div>
 
-**APPT 코리아 메인이벤트 시트를 노린다면 Silver Pass가 핵심**입니다. Silver Pass($2,500)는 ₩1.8M($1,260) 메인이벤트 바이인을 커버하고 남는 금액을 다른 이벤트에 쓸 수 있습니다.
+==r:여기서 가장 흔한 오해 — "$109 = Bronze Pass"는 이제 틀립니다.== 공식 Power Path 페이지 기준 **Bronze Pass는 $530**이고, $109는 개편에서 새로 생긴 **Spade Pass** 등급입니다. (공식 안내 페이지는 Bronze·Silver·Gold 3종을 소개하고 있고, Spade 신설은 개편 보도로 확인됩니다.)
+
+**APPT 코리아 메인이벤트 시트를 노린다면 Silver Pass가 핵심**입니다. Silver Pass는 $2,500 상당이라 ₩1.8M($1,260) 메인이벤트 바이인을 덮고도 남습니다.
+
+⚠️ 다만 **PokerStars 공식 문구는 "선택된(selected) 지역 라이브 이벤트"** 라고만 되어 있고, 어느 대회가 대상인지 목록을 공개하지 않습니다. 공식 안내에 예시로 자주 등장하는 건 UKIPT·BSOP 같은 지역 투어입니다. **APPT 코리아에 쓸 수 있는지는 패스를 받은 뒤 PokerStars 안내 메일이나 고객지원으로 확정하는 게 안전합니다** — "당연히 될 것"으로 전제하고 항공권부터 끊지 마세요.
+
+**Gold Pass는 라이브로는 EPT 전용**입니다. APPT에는 못 씁니다. 다만 EPT 대신 **대형 온라인 토너먼트에 쓰는 선택지**는 열려 있습니다.
 
 ### Power Path 실제 신청 경로 (클릭 순서)
 
@@ -128,7 +137,7 @@ PokerStars의 **Power Path**는 4단계 예선 시스템입니다. 아래 표가
 
 ---
 
-## PokerStars 직접 위성 — Events 탭에서 APPT Korea 찾는 법
+## APPT Korea 전용 위성은 어디서 찾나요? — Events 탭
 
 Power Path 외에도 **APPT Korea 전용 직접 위성**이 대회 전 수개월간 매일 열립니다.
 
@@ -140,7 +149,7 @@ Power Path 외에도 **APPT Korea 전용 직접 위성**이 대회 전 수개월
 
 ---
 
-## APPT 코리아 2026 현장 위성 — 9월 9일 메가 퀄리파이어 ₩350K 공략법
+## 현장 위성은 언제 열리나요? — 9월 9일 메가 퀄리파이어 ₩350K
 
 이미 인천 파라다이스시티에 도착해 있다면, **현장 메가 퀄리파이어**가 최적 루트입니다.
 
@@ -164,7 +173,7 @@ Power Path 외에도 **APPT Korea 전용 직접 위성**이 대회 전 수개월
 
 ---
 
-## 위성 당첨 후 해야 할 것 — 디지털 시트 → 숙소 예약
+## 위성에 당첨되면 뭘 해야 하나요? — 시트 확정 → 숙소
 
 위성에 당첨되면 **즉시 해야 할 3가지**가 있습니다.
 
@@ -189,7 +198,7 @@ APPT Korea 기간 파라다이스시티 내 숙박은 조기 마감됩니다.
 
 ---
 
-## APPT 코리아 2026 전체 이벤트 일정표 — ₩350K~₩5M
+## 어떤 이벤트가 열리나요? — 전체 일정표 ₩350K~₩5M
 
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.25);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -207,11 +216,15 @@ APPT Korea 기간 파라다이스시티 내 숙박은 조기 마감됩니다.
 
 </div>
 
+시리즈 전체로는 **총 보장 상금이 ₩20억 이상(약 $140만)** 입니다. APPT가 한국에 돌아오는 건 **2019년 이후 처음**으로, 공식 발표는 *"After six long years"* 라는 표현을 씁니다(직전 대회가 2019년이라 한국어 기사들은 "7년 만"으로 세기도 합니다 — 어느 쪽이든 **2019년 이후 첫 개최**라는 사실은 같습니다).
+
 바이인이 부담스럽다면 **₩500K~₩900K 사이드 이벤트**로 실전 경험을 쌓은 뒤 메인이벤트에 도전하는 전략도 좋습니다.
+
+:::note[출처: PokerStars LIVE APPT Korea 2026 일정(9/3~14 파라다이스시티, 메인이벤트 9/10~14 ₩1.8M, 메가 퀄리파이어 9/9 ₩350K) · Pokerfuse(시리즈 총 보장 ₩20억+). 개별 이벤트 일정·GTD는 개막 전까지 변경될 수 있습니다. 2026-07-28 확인]:::
 
 ---
 
-## 파라다이스시티 현장 도착 후 등록 절차 — 5단계
+## 현장에 도착하면 뭐부터 하나요? — 등록 절차 5단계
 
 <div style="background:rgba(59,130,246,0.06);border:1px solid rgba(59,130,246,0.25);border-radius:14px;padding:16px 24px;margin:24px 0">
 
@@ -244,7 +257,7 @@ APPT Korea 기간 파라다이스시티 내 숙박은 조기 마감됩니다.
 /blog/holdem-tournament-how-to-enter | 홀덤 대회 참가 방법 | /images/wsop-satellite-tournament.webp
 :::
 
-## APPT 위성 자주 묻는 질문 (FAQ)
+## FAQ — 자주 묻는 질문
 
 **Q. Power Path는 한국에서 이용 가능한가요?**
 
@@ -265,6 +278,22 @@ A. 아닙니다. ==g:메가 퀄리파이어는 일정 순위 안에만 들면 �
 **Q. 당첨 후 여권 이름이 계정 이름과 다르면 어떻게 되나요?**
 
 A. ==r:현장 등록이 거절될 수 있습니다.== KYC 인증 단계에서 여권과 계정 이름이 일치하는지 반드시 미리 확인하세요.
+
+---
+
+## 출처
+
+이 글의 Power Path 구조·패스 가치·대회 일정은 아래 1차 출처를 직접 열어 대조했습니다. **확인일: 2026년 7월 28일.**
+
+- **Power Path 공식 안내**: [PokerStars — Power Path](https://www.pokerstars.com/poker/promotions/power-path/) · Step 1 *"$0.50 Spin & Go"* / Step 2 *"$1 Sit & Go or $1.50 MTT"* / Step 3 *"$11 MTT"* / Step 4 ***"$55 MTT (Ticket entry only)"*** · Bronze **$530** · Silver **$2,500**(*"regional live events"*) · Gold **$10,300**(*"EPT event"*)
+- **Step 4 바이인 개편 공식 고지**: [PokerStars — Power Path 안내](https://www.pokerstars.com/poker/learn/news/power-path-the-new-way-to-play-the-biggest-pokerstars-events/) · *"From October 14, 2024 the Step 4 events will change from a \$109 buy-in to a \$55 buy-in."*
+- **2026년 4월 패스 체계 개편(Spade Pass 신설·Bronze $109→$530)**: [PokerNews — PokerStars Adds $530 Bronze Pass in Power Path Overhaul](https://www.pokernews.com/news/2026/04/pokerstars-power-path-new-bronze-pass-51156.htm) · 시행일 2026-04-27
+- **APPT 코리아 2026 일정·시리즈 보장**: [Pokerfuse — APPT Korea returns with exciting dates and a massive prize pool](https://pokerfuse.com/the-rail/2026/17/?post=4675) · 9/3~14 파라다이스시티, 시리즈 총 보장 ₩20억+
+- **파라다이스 시티 입장 규정(외국인 전용)**: [파라다이스 시티 공식](https://www.p-city.com/front/contents/casino/casinoInfo)
+
+> ⚠️ **프로모션 구조는 예고 없이 바뀝니다.** 실제로 Step 4 바이인은 2024년 10월에, 패스 체계는 2026년 4월에 바뀌었습니다. **참가 직전 PokerStars 클라이언트의 Power Path 탭에서 현재 조건을 직접 확인하세요.** 특히 Silver Pass로 APPT 코리아에 참가할 수 있는지는 공식 목록이 공개돼 있지 않으므로, 패스 수령 후 안내 메일이나 고객지원으로 확정하시기 바랍니다.
+
+> 📌 **출처 선정 기준**: Power Path 구조·패스 가치는 **운영사(PokerStars) 공식 페이지**를, 대회 일정은 **PokerStars LIVE 공식**을 우선했습니다. 패스 체계 개편처럼 공식 페이지에 이력이 남지 않는 항목만 취재 매체를 보조로 썼습니다.
 
 ---
 

@@ -209,9 +209,9 @@ Power Path는 PokerStars의 단계별 위성 시스템입니다. 매일 무료 S
 
 </div>
 
-**패스 3종의 가치** — Bronze $109 / **Silver $2,500** / Gold $10,300. APPT 코리아 메인이벤트 바이인이 약 $1,260이므로, **Silver Pass 하나면 메인이벤트를 커버하고도 남습니다.**
+**패스 4종의 가치** — Spade $109 / Bronze **$530** / **Silver $2,500** / Gold $10,300. APPT 코리아 메인이벤트 바이인이 약 $1,260이므로, **Silver Pass 하나면 메인이벤트를 커버하고도 남습니다.**
 
-:::note[**$109를 안내하는 글은 구정보입니다.** PokerStars 공식 고지에 따르면 *"From October 14, 2024 the Step 4 events will change from a $109 buy-in to a $55 buy-in"* — 2024년 10월 14일부로 Step 4는 바이인 방식이 바뀌었습니다. 지금 $109는 **Step 4의 바이인이 아니라 Bronze Pass의 가치**입니다. 한국어로 APPT를 다루는 글 중 이 개편을 반영한 곳이 거의 없으니, 다른 글에서 "$109 파이널"을 보면 그 글의 작성 시점을 의심하세요.]:::
+:::note[**"$109 파이널"을 안내하는 글은 구정보입니다.** PokerStars 공식 고지: *"From October 14, 2024 the Step 4 events will change from a $109 buy-in to a $55 buy-in"* — 현재 Step 4는 **$55 대회이며 Step 3 티켓으로만 진입**합니다. 그리고 **2026년 4월 27일 패스 체계가 다시 개편**돼, $109는 새로 생긴 **Spade Pass** 등급이 됐고 **Bronze Pass는 $530으로 올랐습니다.** 한국어 글 중 이 두 번의 개편을 반영한 곳이 거의 없으니, 다른 글에서 "$109 파이널"이나 "Bronze $109"를 보면 작성 시점을 의심하세요. → 단계별 상세는 [PokerStars APPT 위성 완전 가이드](/blog/pokerstars-appt-satellite-guide)]:::
 
 **Power Path 찾는 법:**
 로그인 → 상단 **"Events"** 탭 → **"Live"** 서브탭 → "APPT Korea" 검색 → 위성 목록 확인
