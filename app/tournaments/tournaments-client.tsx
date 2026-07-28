@@ -506,7 +506,7 @@ const SCHEDULE_2026 = [
     status: "ongoing" as const,
     link: "https://www.wsop.com/tournaments/2026-57th-annual-world-series-of-poker/",
     highlight: true,
-    note: "진행중 · 100개 브레이슬릿 · 메인이벤트 7/2~13",
+    note: "브레이슬릿 99개 수여 완료(7/15 종료) · 메인 파이널 테이블 8/3~5 ESPN",
     blogLink: "/blog/wsop-2026-tournament-guide",
   },
   {
@@ -888,9 +888,9 @@ export default function Tournaments() {
       "@context": "https://schema.org",
       "@type": "Event",
       "name": "WSOP World Series of Poker 2026",
-      "description": "세계 최대 홀덤 대회. 메인이벤트 바이인 $10,000, 100개 브레이슬릿 이벤트.",
+      "description": "세계 최대 홀덤 대회. 브레이슬릿 시리즈 5/26~7/15(251,899 엔트리·99개 수여), 메인이벤트 파이널 테이블 8/3~5 ESPN.",
       "startDate": "2026-05-26",
-      "endDate": "2026-07-15",
+      "endDate": "2026-08-05",
       "location": { "@type": "Place", "name": "Horseshoe Las Vegas", "address": { "@type": "PostalAddress", "addressLocality": "Las Vegas", "addressCountry": "US" } },
       "organizer": { "@type": "Organization", "name": "WSOP", "url": "https://www.wsop.com" },
       "url": "https://www.wsop.com",
@@ -924,8 +924,8 @@ export default function Tournaments() {
   return (
     <>
       <SEO
-        title="⚡ 홀덤 대회 일정 2026 — WSOP 진행중·APT 인천 예정"
-        description="【홀덤 대회 일정】WSOP 라스베이거스 진행중(~7/15) · APT 인천 8/7·EPT 바르셀로나 8/16 예정. ⚡2026 국내외 공식 일정·종료/진행중/예정 표시 — 참가 전 확인하세요."
+        title="⚡ 홀덤 대회 일정 2026 — WSOP 파이널 8/3~5·APT 인천 8/7"
+        description="【홀덤 대회 일정】WSOP 브레이슬릿 시리즈 종료(7/15)·메인 파이널 테이블 8/3~5 ESPN · APT 인천 8/7·EPT 바르셀로나 8/16 예정. ⚡2026 국내외 공식 일정·종료/진행중/예정 표시 — 참가 전 확인하세요."
         keywords="홀덤 대회, 홀덤대회, 포커 토너먼트, KPT 코리아포커투어, 피망 포커 대회, 한게임 포커 대회, WSOP 참가방법, WPT, EPT, APT 아시아, 홀덤펍 리그, 포커 대회 일정 2026, 홀덤 토너먼트 전략, 포커 대회 참가 방법"
         path="/tournaments"
         schema={combinedSchema}
@@ -950,7 +950,7 @@ export default function Tournaments() {
             국내 피망포커·한게임·KPT·홀덤펍 리그부터<br className="hidden md:block" />
             세계 최대 <strong className="text-foreground">WSOP·WPT·EPT·APT</strong>까지.<br />
             홀덤 대회의 모든 것을 한눈에 정리했습니다.
-            <span className="block mt-3 text-sm text-primary/90">2026년 7월 2일 기준 — WSOP 라스베이거스 메인이벤트 진행 중(메인 7/2~13, 파이널 테이블 8/3~5 ESPN 생중계) · 하반기 APT 인천(8/7)·APPT 코리아(9/3)·EPT 바르셀로나(8/16) 예정 · 공식 일정 웹검색 재확인 반영</span>
+            <span className="block mt-3 text-sm text-primary/90">2026년 7월 28일 기준 — WSOP 브레이슬릿 시리즈는 7월 15일 종료(역대 최다 251,899 엔트리, 99개 수여). 메인이벤트 파이널 테이블만 8월 3~5일 ESPN 방송으로 남았습니다 · 하반기 APT 인천(8/7)·APPT 코리아(9/3)·EPT 바르셀로나(8/16) 예정</span>
           </p>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-10 max-w-2xl mx-auto">
@@ -1428,13 +1428,13 @@ export default function Tournaments() {
           {/* WSOP 2026 Featured */}
           <Link href="/blog/wsop-2026-tournament-guide">
             <div className="mb-4 p-5 bg-card border-2 border-yellow-500/40 rounded-2xl hover:border-yellow-500/70 transition-colors cursor-pointer shadow-lg shadow-yellow-500/8 relative overflow-hidden">
-              <div className="absolute top-0 right-0 bg-green-500/20 text-green-400 text-[10px] font-bold px-2.5 py-1 rounded-bl-xl tracking-wide">🔴 LIVE 진행중</div>
+              <div className="absolute top-0 right-0 bg-yellow-500/20 text-yellow-400 text-[10px] font-bold px-2.5 py-1 rounded-bl-xl tracking-wide">⏳ 8/3~5 파이널</div>
               <div className="flex items-start gap-4">
                 <div className="text-3xl flex-shrink-0 mt-0.5">🏆</div>
                 <div className="flex-1">
-                  <div className="text-[11px] font-bold text-yellow-400 uppercase tracking-widest mb-1">WSOP 2026 · 지금 라스베이거스에서 진행 중</div>
+                  <div className="text-[11px] font-bold text-yellow-400 uppercase tracking-widest mb-1">WSOP 2026 · 메인이벤트 파이널 테이블 8월 3~5일</div>
                   <div className="text-base font-bold text-foreground mb-1 leading-tight">WSOP 2026 완전 가이드 — 일정·메인이벤트·한국인 참가 방법</div>
-                  <div className="text-xs text-muted-foreground leading-relaxed">메인이벤트 7월 2일 시작 · GGPoker $0.50 위성으로 $10,000 시트 도전 가능 · 파이널 테이블 8/3~5 ESPN 생중계</div>
+                  <div className="text-xs text-muted-foreground leading-relaxed">메인이벤트 9,208명 참가·상금풀 $8,563만 · 파이널 9명 확정, 우승 상금 $1,000만을 놓고 8/3~5 ESPN 방송</div>
                   <div className="mt-2 inline-flex items-center gap-1 text-xs text-primary font-bold">
                     자세히 보기 <ChevronRight className="w-3.5 h-3.5" />
                   </div>
