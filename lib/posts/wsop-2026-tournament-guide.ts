@@ -390,7 +390,7 @@ A. 이전 대회 결과가 궁금하다면 [WSOP 2025 완전 가이드](/blog/ws
 - **WSOP 공식 방송 안내** — [wsop.com/news — Main Event Broadcast](https://www.wsop.com/news/world-series-of-poker-begins-main-event-broadcast/) · 국제 중계망(ESPN·Eurosport·TSN·Abema TV 등), 파이널 테이블 8월 3~5일
 - **ESPN 프레스룸 공식 편성표** — [espnpressroom.com](https://espnpressroom.com/press-release/espn-and-world-series-of-poker-announce-programming-schedule-for-2026-main-event/) · 8/3 ESPN2, 8/4 ESPN, 8/5 ESPN 및 정확한 방송 시간
 - **ESPN 파이널 테이블 기사** — [espn.com](https://www.espn.com/espn/betting/story/_/id/49247958/world-series-poker-main-event-wsop-2026) · Jumalon 1억 9,400만 칩·전체 칩의 35%, 9,208 엔트리·상금풀 $85,634,400, 역대 4번째 필드(2024년 10,112 / 2023년 10,043 / 2025년 9,735)
-- **PokerNews 파이널 테이블 확정 기사** — [pokernews.com](https://www.pokernews.com/news/2026/07/2026-wsop-main-event-final-table-set-jumalon-leads-51869.htm) · 9명 전원 칩 카운트 및 1~9위 상금 구조
+- **PokerNews 파이널 테이블 확정 기사** — [pokernews.com](https://www.pokernews.com/news/2026/07/2026-wsop-main-event-final-table-set-jumalon-leads-51869.htm) · 9명 전원 칩 카운트 및 1~9위 상금 구조. *(PokerNews는 WSOP 공식 라이브 리포팅 파트너로 현장 칩카운트를 직접 기록하는 인가 매체입니다. 다만 모회사가 Flutter 계열이라 운영사 비교·추천 목적으로는 인용하지 않습니다.)*
 - **Pokerfuse 국가별 참가 분석** — [pokerfuse.com](https://pokerfuse.com/latest-news/2026/7/international-participation-climbs-again-wsop/) · 111개국 신기록(직전 2024년 108 / 2025년 103), 비미국인 3,574명·38.8%, 국가별 상위 10개국 수치
 - **시리즈 총계** — [CardPlayer 2026 WSOP By The Numbers](https://www.cardplayer.com/poker-news/1684562-record-entries-of-more-than-250000-headline-staggering-stats-for-2026-world-series-of-poker) · 251,899 엔트리, $469,975,059 지급, 35,157 인더머니, #63 22,811 엔트리, 레이디스 1,475 엔트리
 
