@@ -145,7 +145,7 @@ A Natural8 é a parceira online oficial do APT e roda a campanha de satellites =
 Step 1 (~$3.50) → ganhe o ticket pro Step 2 (~$15) → ganhe o ticket pro Mega Satellite (~$50) → ganhe a vaga no Main Event (valor ~$1.703)
 </div>
 
-==g:A Natural8 também roda um bônus de 8% sobre a premiação== para os classificados via satellite — se você ganhar $10.000 no evento ao vivo, recebe $800 extras por cima. Cadastre-se em natural8.com, filtre os torneios por "APT Incheon" pra achar a agenda de satellites atual.
+==g:A Natural8 também roda um bônus de 8% sobre a premiação== para os classificados via satellite — se você ganhar $10.000 no evento ao vivo, recebe $800 extras por cima. **Uma conferida antes de montar o plano em cima disso.** A Natural8 é o skin Ásia-Pacífico da rede GG e **o acesso depende do seu país de residência** — pelos próprios termos, se o seu país não estiver na lista de cadastro, eles não podem te aceitar. Jogadores do Brasil normalmente são direcionados pro skin principal **GGPoker**, que tem site e suporte em português. ⚠️ Contornar com VPN viola os termos e coloca conta e saldo em risco. **A rota aberta pra todo mundo é se inscrever direto com o organizador em registrations@apt.poker, pagando o buy-in cheio.**
 
 > **Dica OnLive:** a rota OnLive te deixa jogar o Day 1 do seu próprio fuso horário e só voar pra Coreia se você sobreviver até o Day 3. ==g:Se o seu orçamento de viagem está apertado, esse é o caminho de classificação mais esperto.==
 
