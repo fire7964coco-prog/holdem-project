@@ -19,6 +19,11 @@ import { Tournament, TOURNAMENTS, computeStatus } from "./tournaments";
 function clamp(text: string, max: number): string {
   if (text.length <= max) return text;
   const cut = text.slice(0, max);
+  // ★ 진행중 목록이 이름 중간에서 잘리면("7th Holdem") SERP에 깨져 보인다.
+  //    쉼표·중점 기준으로 마지막 온전한 항목까지만 남긴다.
+  const lastItem = Math.max(cut.lastIndexOf(", "), cut.lastIndexOf("、"), cut.lastIndexOf("・"));
+  const head = text.slice(0, max).search(/(Running now|開催中|进行中|進行中|En curso|진행중)/);
+  if (head >= 0 && lastItem > head) return cut.slice(0, lastItem).trimEnd().replace(/[,、·・]+$/, "") + ".";
   const sp = cut.lastIndexOf(" ");
   // 잘린 자리에 남는 나열 부호(", "·"·"、")를 떼어낸다 — "…WSOP 2026,"으로 끝나면 지저분하다
   return (sp > max - 25 ? cut.slice(0, sp) : cut).trimEnd().replace(/[,、·、]+$/, "");
@@ -51,6 +56,8 @@ export interface BoardStrings {
   status: Record<"upcoming" | "ongoing" | "ended", string>;
   /** 상시 개최 등 날짜가 없는 대회의 배지 */
   yearRound: string;
+  /** 개최는 발표됐으나 날짜가 아직 안 나온 대회의 배지 */
+  datesTba: string;
   officialSite: string;
   /** 우리 상세 가이드로 가는 버튼 문구. 번역본이 있는 대회에만 붙는다 */
   guideLink: string;
@@ -104,6 +111,7 @@ const en: BoardStrings = {
 
   status: { upcoming: "Upcoming", ongoing: "Running", ended: "Finished" },
   yearRound: "Year-round",
+  datesTba: "Dates TBA",
   officialSite: "Official site",
   guideLink: "Full guide",
   buyinUnlisted: "Not published",
@@ -201,6 +209,7 @@ const ja: BoardStrings = {
 
   status: { upcoming: "予定", ongoing: "開催中", ended: "終了" },
   yearRound: "通年",
+  datesTba: "日程未定",
   officialSite: "公式サイト",
   guideLink: "詳細ガイド",
   buyinUnlisted: "公式未掲載",
@@ -227,7 +236,7 @@ const ja: BoardStrings = {
     },
     {
       q: "ポーカーの世界大会で日本勢はどのくらい勝っていますか？",
-      a: "2026年のWSOPメインイベントは9,208エントリー・賞金総額$85,634,400という規模でしたが、日本勢の最高位は23位で、賞金は約5,200万円でした。2024年の21位に続いて2年ぶりに終盤まで残った形です。参加費は約160万円です。",
+      a: "2026年のWSOPで日本はブレスレットを4本獲得しました。Naoya KiharaがEvent #17($428,923)とEvent #23($301,970)、Koji FujimotoがEvent #67($392,478)、Daisuke OgitaがEvent #72で$1,000,000です。4本のうち3本がミックスゲームの選手権でした。メインイベント(9,208エントリー・賞金総額$85,634,400)は参加者222人で日本が全体5位。ファイナルテーブルの9人に日本人は残っていません。10位以下の順位はWSOP公式もPokerNewsも未公開のため、ここでは断定しません。",
     },
     {
       q: "韓国・パラダイスシティの大会の参加費は？",
@@ -239,7 +248,7 @@ const ja: BoardStrings = {
     },
     {
       q: "台湾の大会は日本から行きやすいですか？",
-      a: "この一覧で台湾は12大会と、韓国に次いで数が多い地域です。11月のAPT Championships（台北）が最大で、CTP Clubを中心に年間を通じてシリーズが動いています。台湾は賞金への課税がNT$750万までかからないため、入賞時の手取りが他国と大きく変わる点も知っておくと判断しやすくなります。",
+      a: "この一覧で台湾は12大会と、アジアでは韓国(17大会)に次ぐ多さです。11月のAPT Championships（台北）が最大で、CTP Clubを中心に年間を通じてシリーズが動いています。成田・羽田から台北までは片道4時間ほどで、会場もCTP Asia Poker Arenaに集中しているので、週末だけの遠征でも組みやすいのが利点です。",
     },
   ],
 
@@ -310,6 +319,7 @@ const zh: BoardStrings = {
 
   status: { upcoming: "即将开始", ongoing: "进行中", ended: "已结束" },
   yearRound: "全年",
+  datesTba: "日期待定",
   officialSite: "官方网站",
   guideLink: "详细指南",
   buyinUnlisted: "官方未公布",
@@ -324,7 +334,7 @@ const zh: BoardStrings = {
   faqs: [
     {
       q: "去济州岛打比赛需要签证吗？",
-      a: "中国大陆护照前往济州岛是长期免签的，停留期30天，个人和团体都可以，直飞的话也没有三人以上的人数限制。这一点对牌手来说很实际：这份日程里在济州举办的赛事有六场，包括Triton济州、APT济州秋季站和GOP济州。不过政策会变，出发前请再确认一次最新要求。",
+      a: "中国大陆护照前往济州岛是长期免签的，停留期30天，个人和团体都可以，直飞的话也没有三人以上的人数限制。这一点对牌手来说很实际：这份日程里在济州岛举办的赛事有七场，包括Triton济州、Triton济州II（西归浦）、APT济州秋季站和GOP济州。不过政策会变，出发前请再确认一次最新要求。",
     },
     {
       q: "那仁川呢？和济州一样免签吗？",
@@ -332,7 +342,7 @@ const zh: BoardStrings = {
     },
     {
       q: "台湾的比赛能去吗？",
-      a: "这要看你拿的是哪本护照。持中国大陆护照的话，本岛的团体游尚未开放，个人自由行自2019年8月中断后也没有恢复，目前只有金门、马祖、澎湖对特定省份居民开放团体行程。但如果你是长期居住在海外的大陆居民（含港澳），可以申请第三类入台证，获得15天自由行。持新加坡或马来西亚护照的读者则不受这些限制——这份日程里台湾有12场赛事，是仅次于韩国的第二多。",
+      a: "这要看你拿的是哪本护照。持中国大陆护照的话，本岛的团体游尚未开放，个人自由行自2019年8月中断后也没有恢复，目前只有金门、马祖、澎湖对特定省份居民开放团体行程。但如果你是长期居住在海外的大陆居民（含港澳），可以申请第三类入台证，获得15天自由行。持新加坡或马来西亚护照的读者则不受这些限制——这份日程里台湾有12场赛事，在亚洲仅次于韩国（17场）。",
     },
     {
       q: "德州扑克最大的赛事是哪一个？",
@@ -418,6 +428,7 @@ const zhHant: BoardStrings = {
 
   status: { upcoming: "即將開始", ongoing: "進行中", ended: "已結束" },
   yearRound: "全年",
+  datesTba: "日期待定",
   officialSite: "官方網站",
   guideLink: "詳細指南",
   buyinUnlisted: "官方未公布",
@@ -432,15 +443,15 @@ const zhHant: BoardStrings = {
   faqs: [
     {
       q: "為什麼台灣的德州撲克賽事這麼多？",
-      a: "台灣的場子幾乎都以錦標賽的形式在運作——籌碼當競技積分用，獎金連動總排名。這個結構是台灣賽事密度高的背景，也是為什麼一個場地一年能撐起四到六個系列賽。這份賽程裡台灣有12場，是僅次於韓國的第二多，CTP Asia Poker Arena 是最主要的據點。",
+      a: "台灣的場子幾乎都以錦標賽的形式在運作——籌碼當競技積分用，獎金連動總排名。這個結構是台灣賽事密度高的背景，也是為什麼一個場地一年能撐起四到六個系列賽。這份賽程裡台灣有12場，在亞洲僅次於韓國（17場），CTP Asia Poker Arena 是最主要的據點。",
     },
     {
       q: "台灣有哪些賽事可以打？",
-      a: "這份賽程裡台灣有12場，是僅次於韓國的第二多。CTP Asia Poker Arena一個場地就撐起一年四到六個系列賽，11月的APT Championships是其中規模最大的，另外還有WPG Taiwan、TMT 20、GOP Taipei系列。每張卡片下方都有主辦方官網連結，報名與賽程細節以那裡為準。",
+      a: "這份賽程裡台灣有12場，在亞洲僅次於韓國（17場）。CTP Asia Poker Arena一個場地就撐起一年四到六個系列賽，11月的APT Championships是其中規模最大的，另外還有WPG Taiwan、TMT 20、GOP Taipei系列。每張卡片下方都有主辦方官網連結，報名與賽程細節以那裡為準。",
     },
     {
       q: "去韓國打比賽需要簽證嗎？",
-      a: "台灣護照到韓國是90日免簽，而且K-ETA的臨時免除已延長到2026年12月31日，可以省下₩10,000的申請費。也就是說這份賽程裡韓國的9場——濟州的5場加上仁川的APT、APPT、WPT Seoul、GOP Incheon II——全部都能去。⚠️ 有一點容易漏掉：從2026年1月1日起韓國廢除紙本入境卡，改成入境前72小時內線上提交電子入境申報（e-Arrival）。另外K-ETA免除到2026年12月31日為止，之後的行程要再確認。",
+      a: "台灣護照到韓國是90日免簽，而且K-ETA的臨時免除已延長到2026年12月31日，可以省下₩10,000的申請費。也就是說這份賽程裡韓國的17場——濟州7場、仁川8場、首爾2場——全部都能去。⚠️ 有一點容易漏掉：從2026年1月1日起韓國廢除紙本入境卡，改成入境前72小時內線上提交電子入境申報（e-Arrival）。另外K-ETA免除到2026年12月31日為止，之後的行程要再確認。",
     },
     {
       q: "德州撲克最大的賽事是哪一個？",
@@ -527,6 +538,7 @@ const es: BoardStrings = {
 
   status: { upcoming: "Próximo", ongoing: "En curso", ended: "Finalizado" },
   yearRound: "Todo el año",
+  datesTba: "Fechas por confirmar",
   officialSite: "Web oficial",
   guideLink: "Guía completa",
   buyinUnlisted: "No publicado",
@@ -549,15 +561,15 @@ const es: BoardStrings = {
     },
     {
       q: "¿Qué torneos hay en España?",
-      a: "El EPT Barcelona en agosto es el más grande, con doble estructura: el PokerStars Open, de buy-in más bajo, corre en paralelo al EPT propiamente dicho. Además está el PokerStars Open Málaga y varias paradas del partypoker Tour en Madrid, Sevilla, Murcia y Castellón, estas últimas con buy-ins bastante más accesibles. En total seis paradas en territorio español.",
+      a: "El EPT Barcelona en agosto es el más grande, con doble estructura: el PokerStars Open, de buy-in más bajo, corre en paralelo al EPT propiamente dicho. Además está el WSOP Circuit Madrid a finales de octubre y varias paradas del partypoker Tour en Madrid, Sevilla, Murcia y Castellón, estas últimas con buy-ins bastante más accesibles. En total seis paradas en territorio español.",
     },
     {
       q: "¿Cuáles son los torneos de Las Vegas 2026?",
-      a: "Las World Series of Poker, del 26 de mayo al 5 de agosto: 100 brazaletes y un Main Event que reunió 9.208 entradas para un bote de $85.634.400, con la mesa final del 3 al 5 de agosto. Un detalle práctico que sorprende a mucha gente en la caja: los pagos con tarjeta llevan un 3% de comisión y están limitados a $10.000 por transacción, así que el Main Event de $10.000 no se cubre de una sola pasada.",
+      a: "Las World Series of Poker, del 26 de mayo al 5 de agosto: 100 brazaletes y un Main Event que reunió 9.208 entradas para una bolsa de premios de US$85.634.400, con la mesa final del 3 al 5 de agosto. Un detalle práctico que sorprende a mucha gente en la caja: los pagos con tarjeta llevan un 3% de comisión y están limitados a $10.000 por transacción, así que el Main Event de $10.000 no se puede pagar en un solo cargo.",
     },
     {
       q: "¿Necesito visado para los torneos en Europa?",
-      a: "Va a cambiar durante 2026. Se espera que ETIAS entre en funcionamiento en el último trimestre del año, y afecta a todos los pasaportes que hoy entran sin visado: Argentina, Chile, Uruguay, Brasil, Colombia y México, entre otros. Cuesta €20 para las personas de 18 a 70 años, vale 3 años o hasta que caduque el pasaporte, y hay un requisito que conviene comprobar con tiempo: el pasaporte tiene que ser biométrico. Si no lo es, no basta ETIAS y hace falta visado. El EPT Praga de diciembre es la primera parada grande que cae dentro de esa ventana.",
+      a: "Va a cambiar durante 2026. Se espera que ETIAS entre en funcionamiento en el último trimestre del año, y afecta a todos los pasaportes que hoy entran sin visado: Argentina, Chile, Uruguay, Brasil, Colombia y México, entre otros. Cuesta €20 para las personas de 18 a 70 años, vale 3 años o hasta que caduque el pasaporte, y hay un requisito que conviene comprobar con tiempo: el pasaporte tiene que ser biométrico. Si no lo es, no basta ETIAS y hace falta visado. La primera parada de esta lista que cae dentro de esa ventana es el WSOP Circuit Madrid, del 23 de octubre; la más grande es el EPT Praga de diciembre.",
     },
     {
       q: "¿Se pagan impuestos por los premios?",
@@ -852,7 +864,7 @@ const SCHEMA_DESC_ZH: Record<string, string> = {
   "wpt-seoul":
     "WPT首次在INSPIRE娱乐度假村举办的赛事。46场比赛，主赛事保证10亿韩元。",
   "appt-manila":
-    "PokerStars APPT的2026年马尼拉站，在Okada Manila举行，系列赛总保证₱132M。",
+    "PokerStars APPT的2026年马尼拉站，在Okada Manila举行，系列赛总保底约1.32亿菲律宾比索。",
 };
 
 
@@ -931,7 +943,7 @@ const SCHEMA_DESC_HANT: Record<string, string> = {
   "wpt-seoul":
     "WPT首次在INSPIRE娛樂度假村舉辦的賽事。46場比賽，主賽事保證10億韓元。",
   "appt-manila":
-    "PokerStars APPT的2026年馬尼拉站，在Okada Manila舉行，系列賽總保證₱132M。",
+    "PokerStars APPT的2026年馬尼拉站，在Okada Manila舉行，系列賽總保底約1.32億披索。",
 };
 
 const PAREN_HANT: Record<string, string> = {
@@ -989,7 +1001,6 @@ const CITY_ES: Record<string, string> = {
   "St. Julian's": "San Julián",
   Sanremo: "San Remo",
   Manchester: "Mánchester",
-  Hanover: "Hannover",
 };
 
 const VENUE_ES: Record<string, string> = {};
@@ -1008,7 +1019,7 @@ const SCHEMA_DESC_ES: Record<string, string> = {
   "holdem-masters-7":
     "Patrocinado por WPL, organizado por WeLive con YAJASU. 1.500 millones de KRW garantizados; entrada solo por invitación.",
   "wsop-2026":
-    "La serie de poker más grande del mundo. 100 brazaletes del 26 de mayo al 15 de julio; el Main Event reunió 9.208 entradas para un bote de $85.634.400, con la mesa final del 3 al 5 de agosto por ESPN.",
+    "La serie de poker más grande del mundo. 100 brazaletes del 26 de mayo al 15 de julio; el Main Event reunió 9.208 entradas para una bolsa de premios de US$85.634.400, con la mesa final del 3 al 5 de agosto por ESPN.",
   "kpc-king-july":
     "Festival de 17 días en el LES A Casino de la isla de Jeju. 2.000 millones de KRW garantizados en la serie y 1.100 millones en el Main Event de la King Poker Cup.",
   "apt-incheon":
@@ -1103,7 +1114,7 @@ const MONTH_EN = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","N
 
 export function localizedMonthBadge(t: Tournament, locale: BoardLocale): string {
   const s = BOARD_STRINGS[locale];
-  if (!t.startDate) return s?.yearRound ?? "";
+  if (!t.startDate) return s?.datesTba ?? s?.yearRound ?? "";
   const sm = Number(t.startDate.slice(5, 7));
   const em = t.endDate ? Number(t.endDate.slice(5, 7)) : sm;
   if (locale === "en") {

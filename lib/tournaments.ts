@@ -76,7 +76,10 @@ export interface Tournament {
    ──────────────────────────────────────────────────────────── */
 
 export function computeStatus(t: Tournament, todayISO: string): TournamentStatus {
-  if (!t.startDate || !t.endDate) return "ongoing"; // 상시 개최
+  // ★ 날짜가 아직 안 나온 대회는 "진행중"이 아니라 "예정"이다.
+  //    예전엔 ongoing을 반환해서, 날짜 미발표 대회가 6개 언어 전부에서
+  //    "진행중 + 연중 + 날짜 미발표"라는 자기모순 카드로 나갔다.
+  if (!t.startDate || !t.endDate) return "upcoming"; // 상시 개최
   if (todayISO < t.startDate) return "upcoming";
   if (todayISO > t.endDate) return "ended";
   return "ongoing";
@@ -101,7 +104,7 @@ export function formatDateRange(t: Tournament): string {
 
 /** 카드 상단 월 배지 */
 export function formatMonthBadge(t: Tournament): string {
-  if (!t.startDate) return "연중";
+  if (!t.startDate) return "일정 미정";
   const sm = Number(t.startDate.slice(5, 7));
   if (!t.endDate) return `${sm}월`;
   const em = Number(t.endDate.slice(5, 7));
