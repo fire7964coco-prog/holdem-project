@@ -14,7 +14,7 @@ export const POST: Post = {
   readTime: "12分",
   emoji: "🏆",
   image: "/images/wsop-2026-tournament-guide-hero.webp",
-  imageAlt: "WSOP 2026 ラスベガスのParis・Horseshoe会場で行われるメインイベント — ゴールドブレスレットとチップスタック",
+  imageAlt: "WSOP 2026 第57回ラスベガスのタイトルカード — 総エントリー251,899、ブレスレットイベント100、メインイベント賞金総額8,560万ドル",
   tags: [
     "WSOP 2026",
     "WSOP 日本人",

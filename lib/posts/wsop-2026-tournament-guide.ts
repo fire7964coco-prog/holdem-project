@@ -14,7 +14,7 @@ export const POST: Post = {
   emoji: "🏆",
   tags: ["WSOP 2026", "WSOP 일정", "홀덤 대회", "메인이벤트", "포커 세계대회", "GGPoker 위성", "라스베이거스 포커"],
   image: "/images/wsop-2026-tournament-guide-hero.webp",
-  imageAlt: "WSOP 2026 라스베이거스 Paris Horseshoe 메인이벤트 포커 토너먼트 — 브레이슬릿과 칩 스택",
+  imageAlt: "WSOP 2026 제57회 라스베이거스 타이틀 카드 — 총 엔트리 251,899명, 브레이슬릿 이벤트 100개, 메인이벤트 상금풀 8,560만 달러",
   content: `
 WSOP는 포커를 하는 사람이라면 한 번쯤 나가보고 싶은 무대입니다.
 
