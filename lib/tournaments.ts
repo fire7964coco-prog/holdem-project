@@ -108,10 +108,11 @@ export function formatMonthBadge(t: Tournament): string {
 
 /* ────────────────────────────────────────────────────────────
    대회 목록
-   ★ 날짜 오름차순 유지 (표시 순서 = 배열 순서)
+   ★ 순서는 신경 쓰지 말고 추가할 것. 아래에서 시작일 오름차순으로 자동 정렬한다.
+     (손으로 순서를 맞추면 반드시 어긋난다 — 실제로 한 번 어긋났다)
    ──────────────────────────────────────────────────────────── */
 
-export const TOURNAMENTS: Tournament[] = [
+const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "kpc-jeju",
     name: "KPC x LPT Series 2026",
@@ -271,6 +272,24 @@ export const TOURNAMENTS: Tournament[] = [
     emoji: "🎰",
     color: "bg-amber-500/15 text-amber-400 border-amber-500/30",
     sourceUrl: "https://www.pokerstarslive.com/ept/montecarlo/",
+    sourceTier: "B",
+    verifiedAt: "2026-07-29",
+  },
+  {
+    id: "triton-montenegro",
+    name: "Triton SHR 몬테네그로 2026",
+    type: "international",
+    startDate: "2026-05-13",
+    endDate: "2026-05-28",
+    location: "몬테네그로 부드바 (Maestral Resort)",
+    city: "Budva",
+    country: "ME",
+    venue: "Maestral Resort & Casino, Pržno",
+    buyin: "$25,000~$200,000",
+    emoji: "💎",
+    color: "bg-purple-500/15 text-purple-400 border-purple-500/30",
+    note: "$200K Invitational 상금풀 $27.4M · 메인이벤트 우승 Danny Tang $3,522,000",
+    sourceUrl: "https://tritonpokerseries.com/en-US/events/Triton_SHRS_Montenegro_S5",
     sourceTier: "B",
     verifiedAt: "2026-07-29",
   },
@@ -678,9 +697,30 @@ export const TOURNAMENTS: Tournament[] = [
   },
 ];
 
+/**
+ * 시작일 오름차순 정렬. 날짜 없는 상시 대회(HPL 등)는 맨 뒤.
+ * 배열에 추가할 때 위치를 신경 쓸 필요가 없다.
+ */
+export const TOURNAMENTS: Tournament[] = [...RAW_TOURNAMENTS].sort((a, b) => {
+  if (!a.startDate && !b.startDate) return 0;
+  if (!a.startDate) return 1;
+  if (!b.startDate) return -1;
+  return a.startDate < b.startDate ? -1 : a.startDate > b.startDate ? 1 : 0;
+});
+
+/** id 중복은 React key 충돌을 일으키므로 빌드 시점에 잡는다 */
+{
+  const seen = new Set<string>();
+  for (const t of RAW_TOURNAMENTS) {
+    if (seen.has(t.id)) throw new Error(`[tournaments] id 중복: "${t.id}"`);
+    seen.add(t.id);
+  }
+}
+
 /* ────────────────────────────────────────────────────────────
    Event JSON-LD 자동 생성
-   ★ 예전엔 3개만 손으로 적었다. 이제 데이터에서 자동 생성한다.
+   ★ 예전엔 3개를 손으로 적었으나 실제로는 렌더조차 되지 않았다.
+     이제 데이터에서 자동 생성하고, 종료된 대회는 제외한다.
    ──────────────────────────────────────────────────────────── */
 
 export function buildEventSchemas(todayISO: string) {
