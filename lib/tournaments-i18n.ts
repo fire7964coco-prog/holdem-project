@@ -20,7 +20,8 @@ function clamp(text: string, max: number): string {
   if (text.length <= max) return text;
   const cut = text.slice(0, max);
   const sp = cut.lastIndexOf(" ");
-  return (sp > max - 25 ? cut.slice(0, sp) : cut).trimEnd();
+  // 잘린 자리에 남는 나열 부호(", "·"·"、")를 떼어낸다 — "…WSOP 2026,"으로 끝나면 지저분하다
+  return (sp > max - 25 ? cut.slice(0, sp) : cut).trimEnd().replace(/[,、·、]+$/, "");
 }
 
 export type BoardLocale = "en" | "ja" | "zh" | "zh-hant" | "es";
@@ -470,7 +471,115 @@ const zhHant: BoardStrings = {
   ],
 };
 
-export const BOARD_STRINGS: Partial<Record<BoardLocale, BoardStrings>> = { en, ja, zh, "zh-hant": zhHant };
+
+/* ────────────────────────────────────────────────────────────
+   es — 6개 로케일 중 가장 파편화돼 있다 (es.md §0).
+   메인 독자는 멕시코 + US 히스패닉 + 남미이고 스페인이 아니다(es-latam.md §0).
+
+   ★ 구글 자동완성 실측 (2026-07-29)
+     calendario torneos de poker 2026 ★★★ (헤드) · …2026 españa ·
+     torneos de poker en mexico 2026 · …colombia 2026 · …en las vegas 2026 ·
+     …madrid 2026 · …en miami · …cerca de mi · …en español
+   ★ 헤드는 "torneos"가 아니라 "calendario torneos de poker 2026"이다.
+     일정표를 찾는 검색어가 따로 있다 → h1·타이틀에 calendario를 넣는다.
+
+   ★★ 프레이밍 (es.md §"이 로케일의 구조적 문제")
+     LAPT는 사실상 휴면이라 "우리 지역 대회 목록"으로는 페이지가 성립하지 않는다.
+     스페인어권 독자에게 가치 있는 건 "어떤 대회가 있나"가 아니라
+     "내 나라에서 거기까지 갈 수 있나"다 → heroLead와 FAQ를 그 축으로 짰다.
+
+   🔒 가드레일
+     · 스페인 손실 상계는 출처가 정면 충돌한다(es.md §B-3). 어느 쪽도 쓰지 않고
+       AEAT 확인을 안내한다. 지금 상태로 쓰면 절반은 틀린다.
+     · 사업자 가부는 국가마다 다르고 미확인이 많다 → 특정 사이트를 권하지 않는다.
+     · 콜롬비아 검색 수요는 있으나 우리 데이터에 콜롬비아 대회가 없다 → 있는 척하지 않는다.
+   ──────────────────────────────────────────────────────────── */
+const es: BoardStrings = {
+  htmlLang: "es",
+  ogLocale: "es_ES",
+
+  metaTitle: (next, mmdd) => {
+    const hooked = `Calendario de torneos de poker 2026 | ${next} ${mmdd}`;
+    return next && hooked.length <= 52 ? hooked : "Calendario de torneos de poker 2026";
+  },
+  metaDescription: (todayDot, ongoing) =>
+    clamp(`Todos los torneos de poker en vivo de 2026 en una tabla: fechas, buy-in y la fuente oficial de cada uno. Actualizado al ${todayDot}. ${ongoing}`, 158),
+
+  h1: "Calendario de torneos de poker 2026",
+  heroLead:
+    "Cada torneo de esta lista lo verificamos en la web del propio organizador, y cada tarjeta enlaza a la página donde lo leímos. El estado se calcula a partir de las fechas, así que nada queda desactualizado mientras una serie está en marcha. Los calendarios cambian: la web oficial siempre manda.",
+  asOf: (dot) => `al ${dot}`,
+
+  filterAll: "Todos",
+  filterUpcoming: "Próximos",
+  filterOngoing: "En curso",
+  filterEnded: "Finalizados",
+
+  colDates: "Fechas",
+  colBuyin: "Buy-in",
+  colVenue: "Sede",
+
+  status: { upcoming: "Próximo", ongoing: "En curso", ended: "Finalizado" },
+  yearRound: "Todo el año",
+  officialSite: "Web oficial",
+  buyinUnlisted: "No publicado",
+
+  countsLine: (total, countries) => `${total} torneos · ${countries} países`,
+  sourceNote:
+    "Cuando la página del propio organizador seguía mostrando información del año pasado, preferimos no enlazarla antes que enviarte allí.",
+  emptyState: "No hay torneos que coincidan con ese filtro.",
+  koLink: "Calendario en coreano →",
+
+  faqHeading: "Preguntas frecuentes",
+  faqs: [
+    {
+      q: "¿Qué torneos de poker hay en México en 2026?",
+      a: "El WSOP Circuit México, del 31 de agosto al 11 de septiembre en el Barceló México Santa Fe. Es el único gran torneo nacional mexicano de este calendario, así que si buscas algo grande sin salir del país, ese es. Para el resto del año la vía habitual desde México es viajar: Las Vegas en verano y Barcelona en agosto son los dos destinos con más torneos simultáneos.",
+    },
+    {
+      q: "¿Y en Argentina, Colombia o el resto de Sudamérica?",
+      a: "Argentina tiene el Circuito Argentino de Poker, con paradas en Santa Rosa, Puerto Iguazú, Buenos Aires y Rosario repartidas por el año. De Colombia no incluimos ninguna parada porque no encontramos ninguna con fechas publicadas en una web oficial, y preferimos dejar el hueco antes que rellenarlo. Conviene saber también que el LAPT de PokerStars lleva tiempo sin anunciar paradas con fecha en su web oficial de LatAm.",
+    },
+    {
+      q: "¿Qué torneos hay en España?",
+      a: "El EPT Barcelona en agosto es el más grande, con doble estructura: el PokerStars Open, de buy-in más bajo, corre en paralelo al EPT propiamente dicho. Además está el PokerStars Open Málaga y varias paradas del partypoker Tour en Madrid, Sevilla, Murcia y Castellón, estas últimas con buy-ins bastante más accesibles. En total seis paradas en territorio español.",
+    },
+    {
+      q: "¿Cuáles son los torneos de Las Vegas 2026?",
+      a: "Las World Series of Poker, del 26 de mayo al 5 de agosto: 100 brazaletes y un Main Event que reunió 9.208 entradas para un bote de $85.634.400, con la mesa final del 3 al 5 de agosto. Un detalle práctico que sorprende a mucha gente en la caja: los pagos con tarjeta llevan un 3% de comisión y están limitados a $10.000 por transacción, así que el Main Event de $10.000 no se cubre de una sola pasada.",
+    },
+    {
+      q: "¿Necesito visado para los torneos en Europa?",
+      a: "Va a cambiar durante 2026. Se espera que ETIAS entre en funcionamiento en el último trimestre del año, y afecta a todos los pasaportes que hoy entran sin visado: Argentina, Chile, Uruguay, Brasil, Colombia y México, entre otros. Cuesta €20 para las personas de 18 a 70 años, vale 3 años o hasta que caduque el pasaporte, y hay un requisito que conviene comprobar con tiempo: el pasaporte tiene que ser biométrico. Si no lo es, no basta ETIAS y hace falta visado. El EPT Praga de diciembre es la primera parada grande que cae dentro de esa ventana.",
+    },
+    {
+      q: "¿Se pagan impuestos por los premios?",
+      a: "Depende del país y las diferencias son grandes. En México los premios de poker en vivo llevan el Impuesto por Obtención de Premios del 6% más un 1% de ISR. En España los ingresos por torneos, tanto en vivo como online, son declarables, pero sobre si se pueden compensar las pérdidas hay versiones contradictorias circulando, así que ahí lo honesto es remitirte a la Agencia Tributaria antes que darte un cálculo que puede estar mal. Para Argentina, Colombia, Perú y Chile no tenemos dato verificado.",
+    },
+    {
+      q: "¿Hay torneos a los que no se puede entrar pagando?",
+      a: "Tres. La Triton Super High Roller Series funciona por recomendación: no hay satélites y el dinero por sí solo no consigue asiento. El Holdem Masters coreano va por entradas de invitación, sin vía de buy-in en efectivo. Y el APT Championships abre con una jornada solo para la industria antes de que empiece el calendario público. El resto son de inscripción abierta.",
+    },
+  ],
+
+  localHeading: "Antes de reservar",
+  localBlocks: [
+    {
+      title: "ETIAS llega en el último trimestre de 2026",
+      body: "Afecta a todos los pasaportes latinoamericanos que hoy entran en Schengen sin visado. €20, válido 3 años o hasta la caducidad del pasaporte, exento para menores de 18 y mayores de 70. El requisito que más gente pasa por alto es que el pasaporte debe ser biométrico: si el tuyo no lo es, ETIAS no sirve y toca visado. También piden al menos 3 meses de vigencia desde la fecha prevista de salida de Schengen.",
+    },
+    {
+      title: "Hispanohablante no significa una sola normativa",
+      body: "España regula desde la DGOJ y exige licencia singular específica para poker; en México lo lleva la Dirección General de Juegos y Sorteos; Argentina va por provincias, con IPLyC y LOTBA como reguladores distintos dentro del mismo país; Colombia fue de los primeros de la región en regular el juego online con Coljuegos; Perú lo hace desde la DGJCMT. Qué operadores puedes usar cambia según dónde estés, no según el idioma en que juegues.",
+    },
+    {
+      title: "Una web bloqueada no siempre significa un país bloqueado",
+      body: "Las operadoras suelen tener sociedades locales con licencia propia, separadas de su web .com. Pasa con PokerStars.es en España, igual que GGPoker UK está separada de GGPoker.com. Dar por hecho que las restricciones de la matriz se aplican en tu país lleva a equivocarse en ambos sentidos. Esta página solo recoge el calendario presencial y la fuente oficial de cada torneo.",
+    },
+  ],
+};
+
+export const BOARD_STRINGS: Partial<Record<BoardLocale, BoardStrings>> = { en, ja, zh, "zh-hant": zhHant, es };
 
 /**
  * 대회명 현지 표기.
@@ -498,6 +607,7 @@ function nameMaps(
   if (locale === "ja") return [CITY_JA, PAREN_JA];
   if (locale === "zh") return [CITY_ZH, PAREN_ZH];
   if (locale === "zh-hant") return [CITY_HANT, PAREN_HANT];
+  if (locale === "es") return [CITY_ES, PAREN_ES];
   return null;
 }
 
@@ -512,6 +622,11 @@ const NAME_OVERRIDE: Partial<Record<BoardLocale, Record<string, string>>> = {
     "holdem-masters-8": "第8回 Holdem Masters",
     "wsop-2026": "第57回 WSOP 2026",
     "wpt-world-championship": "WPT ワールドチャンピオンシップ",
+  },
+  es: {
+    "holdem-masters-7": "7.º Holdem Masters",
+    "holdem-masters-8": "8.º Holdem Masters",
+    "wsop-2026": "57.ª WSOP 2026",
   },
   "zh-hant": {
     "holdem-masters-7": "第7屆 Holdem Masters",
@@ -817,10 +932,102 @@ const PAREN_HANT: Record<string, string> = {
   "(November)": "（11月）", "(December)": "（12月）", "(Ha Long Bay)": "（下龍灣）",
 };
 
+
+/* es 필드 사전.
+   ★ 스페인어는 천단위 구분이 점(.)이고 소수점이 쉼표(,)다 — 영어와 반대.
+     "€5,300"을 그대로 두면 스페인어 독자에겐 "5.3유로"로 읽힌다. */
+const FIELD_ES: Record<string, string> = {
+  "공식 미기재": "No publicado",
+  "미발표": "Por confirmar",
+  "다양": "Según el evento",
+  "초대권 전용": "Solo por invitación",
+  "초대권 전용 (현금 바이인 없음)": "Solo por invitación (sin buy-in en efectivo)",
+  "메인 ₩150만": "Main event 1,5 M KRW",
+  "메인 ₩220만": "Main event 2,2 M KRW",
+  "메인 ₩230만": "Main event 2,3 M KRW",
+  "메인 ₩250만": "Main event 2,5 M KRW",
+  "메인 ₩270만": "Main event 2,7 M KRW",
+  "₩30만~₩800만": "300 mil – 8 M KRW",
+  "₩90만~": "desde 900 mil KRW",
+  "~₩700만 (하이롤러)": "hasta 7 M KRW (high roller)",
+  "€5,300 (메인)": "€5.300 (main event)",
+  "프리롤~NT$120,000": "freeroll – NT$120.000",
+  "미정 (공식 미기재)": "Por determinar (no publicado)",
+  "야자수 서울센터": "Centro YAJASU Seúl",
+  "Hilton Prague (King's Casino Prague 운영)": "Hilton Praga (operado por King's Casino Prague)",
+  "(ME 파이널 8/3~5)": "(mesa final 3–5 ago)",
+  "2026.12 예정 (날짜 미발표)": "Diciembre de 2026 (fechas por confirmar)",
+};
+
+/* ★ es는 CJK와 상황이 다르다.
+   대부분의 서구 도시명은 스페인어에서도 라틴 철자 그대로가 정답이라,
+   여기엔 **실제로 표기가 갈리는 것만** 넣는다. 사전에 없으면 원문이 맞다.
+   특히 Seville은 우리 데이터가 영어 철자인데 스페인어 독자에겐 Sevilla다. */
+const CITY_ES: Record<string, string> = {
+  Seville: "Sevilla",
+  London: "Londres",
+  Paris: "París",
+  Prague: "Praga",
+  Tokyo: "Tokio",
+  Sydney: "Sídney",
+  Taipei: "Taipéi",
+  Seoul: "Seúl",
+  "New Orleans": "Nueva Orleans",
+  "Mexico City": "Ciudad de México",
+  "Panama City": "Ciudad de Panamá",
+  "Monte Carlo": "Montecarlo",
+  "Monte-Carlo": "Montecarlo",
+  Nassau: "Nasáu",
+  Tallinn: "Tallin",
+  "St. Julian's": "San Julián",
+  Sanremo: "San Remo",
+  Manchester: "Mánchester",
+  Hanover: "Hannover",
+};
+
+const VENUE_ES: Record<string, string> = {};
+
+const PAREN_ES: Record<string, string> = {
+  "(Fall)": "(otoño)",
+  "(July)": "(julio)",
+  "(August)": "(agosto)",
+  "(November)": "(noviembre)",
+  "(December)": "(diciembre)",
+  "(Ha Long Bay)": "(bahía de Ha Long)",
+};
+
+/** es판 대회 설명. 수치는 원문 그대로 — §13은 언어 불변. 숫자 포맷만 스페인어식 */
+const SCHEMA_DESC_ES: Record<string, string> = {
+  "holdem-masters-7":
+    "Patrocinado por WPL, organizado por WeLive con YAJASU. 1.500 millones de KRW garantizados; entrada solo por invitación.",
+  "wsop-2026":
+    "La serie de poker más grande del mundo. 100 brazaletes del 26 de mayo al 15 de julio; el Main Event reunió 9.208 entradas para un bote de $85.634.400, con la mesa final del 3 al 5 de agosto por ESPN.",
+  "kpc-king-july":
+    "Festival de 17 días en el LES A Casino de la isla de Jeju. 2.000 millones de KRW garantizados en la serie y 1.100 millones en el Main Event de la King Poker Cup.",
+  "apt-incheon":
+    "Parada de Incheon 2026 del Asian Poker Tour, el circuito más grande de Asia. En Paradise City, con más de 4.000 millones de KRW garantizados y 1.500 millones en el Main Event.",
+  "holdem-masters-8":
+    "Octava edición del Holdem Masters, la mayor de la serie hasta la fecha con 2.000 millones de KRW garantizados y 1.800 millones en el Main Event.",
+  "appt-korea":
+    "Parada de Corea 2026 del APPT de PokerStars, en Paradise City Incheon, con 1.000 millones de KRW garantizados en el Main Event.",
+  "triton-jeju-2":
+    "Segunda Triton Super High Roller Series del año en Jeju: 14 torneos high roller con buy-ins de $15.000 a $200.000.",
+  "apt-jeju-fall":
+    "Parada de otoño de 2026 del Asian Poker Tour en Jeju: 136 eventos con 2.200 millones de KRW garantizados en el Main Event.",
+  "wpt-seoul":
+    "Primer evento del World Poker Tour en el INSPIRE Entertainment Resort: 46 eventos con 1.000 millones de KRW garantizados en el Main Event.",
+  "appt-manila":
+    "Parada de Manila 2026 del APPT de PokerStars, en Okada Manila, con ₱132M garantizados en la serie.",
+};
+
+/** 월 배지 es — "may–ago" */
+const MONTH_ES = ["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];
+
 export function localizeCity(city: string, locale: BoardLocale): string {
   if (locale === "ja") return CITY_JA[city] ?? city;
   if (locale === "zh") return CITY_ZH[city] ?? city;
   if (locale === "zh-hant") return CITY_HANT[city] ?? city;
+  if (locale === "es") return CITY_ES[city] ?? city;
   return city;
 }
 
@@ -831,6 +1038,7 @@ export function localizeField(value: string | undefined, locale: BoardLocale): s
   if (locale === "ja") return VENUE_JA[value] ?? FIELD_JA[value] ?? value;
   if (locale === "zh") return VENUE_ZH[value] ?? FIELD_ZH[value] ?? value;
   if (locale === "zh-hant") return VENUE_HANT[value] ?? FIELD_HANT[value] ?? value;
+  if (locale === "es") return VENUE_ES[value] ?? FIELD_ES[value] ?? value;
   return value;
 }
 
@@ -894,7 +1102,10 @@ export function localizedMonthBadge(t: Tournament, locale: BoardLocale): string 
   if (locale === "en") {
     return sm === em ? MONTH_EN[sm - 1] : `${MONTH_EN[sm - 1]}–${MONTH_EN[em - 1]}`;
   }
-  if (locale !== "en") return sm === em ? `${sm}月` : `${sm}〜${em}月`;   // ja·zh·zh-hant 공통
+  if (locale === "es") {
+    return sm === em ? MONTH_ES[sm - 1] : `${MONTH_ES[sm - 1]}–${MONTH_ES[em - 1]}`;
+  }
+  return sm === em ? `${sm}月` : `${sm}〜${em}月`;   // ja·zh·zh-hant 공통
   return sm === em ? `${sm}월` : `${sm}~${em}월`;
 }
 
@@ -945,7 +1156,9 @@ export function buildLocaleSchemas(
             ? SCHEMA_DESC_ZH[t.id]
             : locale === "zh-hant"
               ? SCHEMA_DESC_HANT[t.id]
-              : undefined) ??
+              : locale === "es"
+                ? SCHEMA_DESC_ES[t.id]
+                : undefined) ??
       t.schemaDescription,
     startDate: t.startDate,
     endDate: t.endDate,
