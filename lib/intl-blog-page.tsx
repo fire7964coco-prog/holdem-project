@@ -27,7 +27,14 @@ export function intlBlogMetadata(locale: SecondaryLocale, slug: string): Metadat
   const url = `${SITE}/${locale}/blog/${post.slug}`;
 
   return {
-    title: post.seoTitle || post.title,
+    /**
+     * ★ absolute 필수.
+     * 이걸 안 쓰면 루트 레이아웃의 title.template("%s | 홀덤마스터")이 붙어서
+     * 일본어·영어·스페인어 검색 결과에 한국어 브랜드명이 그대로 노출된다.
+     * og:siteName은 진작 CHROME[locale].brand를 쓰고 있었는데 <title>만 새고 있었다.
+     * (2026-07-29 발견 — 다국어 포스트 453편 전부 해당)
+     */
+    title: { absolute: `${post.seoTitle || post.title} | ${CHROME[locale].brand}` },
     description: post.desc,
     keywords: post.tags.join(", "),
     alternates: { canonical: url, languages: hreflangLanguages(slug) },

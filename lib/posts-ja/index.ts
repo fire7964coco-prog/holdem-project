@@ -33,6 +33,7 @@ import { POST as holdemBubble } from "./holdem-bubble";
 import { POST as holdemTournament } from "./holdem-tournament";
 import { POST as wptAustralia2026Guide } from "./wpt-australia-2026-guide";
 import { POST as aptIncheon2026Guide } from "./apt-incheon-2026-guide";
+import { POST as wsop2026TournamentGuide } from "./wsop-2026-tournament-guide";
 import { POST as eptBarcelona2026Guide } from "./ept-barcelona-2026-guide";
 import { POST as koreaPokerMarathon2026 } from "./korea-poker-marathon-2026";
 import { POST as holdemGlossary } from "./holdem-glossary";
@@ -48,6 +49,7 @@ import { POST as holdemBadBeat } from "./holdem-bad-beat";
  * 슬러그는 한국어/영어 글과 동일하게 맞춰 hreflang 상호 링크가 성립하도록 한다.
  */
 export const JA_POSTS: Post[] = [
+  wsop2026TournamentGuide,
   // Rules 필라 (6/6)
   texasHoldemRulesForBeginners,
   holdemGameOrder,
