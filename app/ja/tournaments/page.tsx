@@ -4,6 +4,7 @@ import TournamentBoard from "@/components/tournament-board";
 import { TOURNAMENTS, computeStatus } from "@/lib/tournaments";
 import { BOARD_STRINGS, buildLocaleSchemas, localizedName, nextUpcoming } from "@/lib/tournaments-i18n";
 import { TOURNAMENT_HREFLANG } from "@/lib/tournaments-hreflang";
+import { resolveBlogLinks } from "@/lib/tournaments-blog-links";
 
 const LOCALE = "ja" as const;
 
@@ -51,6 +52,8 @@ export function generateMetadata(): Metadata {
 export default function Page() {
   const todayISO = kstToday();
   const schemas = buildLocaleSchemas(LOCALE, todayISO, SITE);
+  // 번역본이 실제로 있는 대회에만 가이드 링크가 붙는다 (서버에서 해결)
+  const blogLinks = resolveBlogLinks(LOCALE);
 
   return (
     <>
@@ -58,7 +61,7 @@ export default function Page() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas) }}
       />
-      <TournamentBoard locale={LOCALE} todayISO={todayISO} />
+      <TournamentBoard locale={LOCALE} todayISO={todayISO} blogLinks={blogLinks} />
     </>
   );
 }

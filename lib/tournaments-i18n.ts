@@ -52,6 +52,8 @@ export interface BoardStrings {
   /** 상시 개최 등 날짜가 없는 대회의 배지 */
   yearRound: string;
   officialSite: string;
+  /** 우리 상세 가이드로 가는 버튼 문구. 번역본이 있는 대회에만 붙는다 */
+  guideLink: string;
   buyinUnlisted: string;
 
   countsLine: (total: number, countries: number) => string;
@@ -103,6 +105,7 @@ const en: BoardStrings = {
   status: { upcoming: "Upcoming", ongoing: "Running", ended: "Finished" },
   yearRound: "Year-round",
   officialSite: "Official site",
+  guideLink: "Full guide",
   buyinUnlisted: "Not published",
 
   countsLine: (total, countries) => `${total} tournaments · ${countries} countries`,
@@ -199,6 +202,7 @@ const ja: BoardStrings = {
   status: { upcoming: "予定", ongoing: "開催中", ended: "終了" },
   yearRound: "通年",
   officialSite: "公式サイト",
+  guideLink: "詳細ガイド",
   buyinUnlisted: "公式未掲載",
 
   countsLine: (total, countries) => `${total}大会 ・ ${countries}か国`,
@@ -307,6 +311,7 @@ const zh: BoardStrings = {
   status: { upcoming: "即将开始", ongoing: "进行中", ended: "已结束" },
   yearRound: "全年",
   officialSite: "官方网站",
+  guideLink: "详细指南",
   buyinUnlisted: "官方未公布",
 
   countsLine: (total, countries) => `${total} 场赛事 · ${countries} 个国家和地区`,
@@ -414,6 +419,7 @@ const zhHant: BoardStrings = {
   status: { upcoming: "即將開始", ongoing: "進行中", ended: "已結束" },
   yearRound: "全年",
   officialSite: "官方網站",
+  guideLink: "詳細指南",
   buyinUnlisted: "官方未公布",
 
   countsLine: (total, countries) => `${total} 場賽事 · ${countries} 個國家與地區`,
@@ -522,6 +528,7 @@ const es: BoardStrings = {
   status: { upcoming: "Próximo", ongoing: "En curso", ended: "Finalizado" },
   yearRound: "Todo el año",
   officialSite: "Web oficial",
+  guideLink: "Guía completa",
   buyinUnlisted: "No publicado",
 
   countsLine: (total, countries) => `${total} torneos · ${countries} países`,

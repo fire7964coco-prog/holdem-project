@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { Calendar, MapPin, ExternalLink, Star } from "lucide-react";
+import Link from "next/link";
+import { Calendar, MapPin, ExternalLink, Star, ChevronRight } from "lucide-react";
 import { TOURNAMENTS, computeStatus, type TournamentStatus } from "@/lib/tournaments";
 import {
   BOARD_STRINGS,
@@ -31,9 +32,16 @@ type Filter = "all" | TournamentStatus;
 export default function TournamentBoard({
   locale,
   todayISO,
+  blogLinks = {},
 }: {
   locale: BoardLocale;
   todayISO: string;
+  /**
+   * 대회 id → 이 로케일의 상세 가이드 경로.
+   * ★ 서버(page.tsx)에서 resolveBlogLinks()로 만들어 내려준다.
+   *   여기서 직접 포스트 목록을 import하면 클라이언트 번들이 터진다.
+   */
+  blogLinks?: Record<string, string>;
 }) {
   const s = BOARD_STRINGS[locale];
   const [filter, setFilter] = useState<Filter>("all");
@@ -170,16 +178,26 @@ export default function TournamentBoard({
                   </div>
                 </div>
 
-                {t.sourceUrl && (
-                  <a
-                    href={t.sourceUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-1 text-[11px] text-primary font-semibold hover:underline mt-auto"
-                  >
-                    {s.officialSite} <ExternalLink className="w-3 h-3" aria-hidden />
-                  </a>
-                )}
+                <div className="flex flex-wrap items-center gap-2 mt-auto">
+                  {t.sourceUrl && (
+                    <a
+                      href={t.sourceUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1 text-[11px] text-primary font-semibold hover:underline"
+                    >
+                      {s.officialSite} <ExternalLink className="w-3 h-3" aria-hidden />
+                    </a>
+                  )}
+                  {blogLinks[t.id] && (
+                    <Link
+                      href={blogLinks[t.id]}
+                      className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-primary/15 border border-primary/35 text-[11px] text-primary font-bold hover:bg-primary/25 transition-colors"
+                    >
+                      📖 {s.guideLink} <ChevronRight className="w-3 h-3" aria-hidden />
+                    </Link>
+                  )}
+                </div>
               </article>
             );
           })}
