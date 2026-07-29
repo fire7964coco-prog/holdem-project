@@ -44,6 +44,7 @@ import { POST as holdemCardCounting } from "./holdem-card-counting";
 // Positions(별개글) + 라이브이벤트 가이드 (EN 마스터 parity 42/42)
 import { POST as holdemPositions } from "./holdem-positions";
 import { POST as aptIncheon2026Guide } from "./apt-incheon-2026-guide";
+import { POST as wsop2026TournamentGuide } from "./wsop-2026-tournament-guide";
 import { POST as koreaPokerMarathon2026 } from "./korea-poker-marathon-2026";
 import { POST as wptAustralia2026Guide } from "./wpt-australia-2026-guide";
 import { POST as eptBarcelona2026Guide } from "./ept-barcelona-2026-guide";
@@ -55,6 +56,7 @@ import { POST as eptBarcelona2026Guide } from "./ept-barcelona-2026-guide";
  * 플랜·진행: docs/zh-hant-plan.md · 용어 브리프: docs/translation-terms-zh-hant.md
  */
 export const ZH_HANT_POSTS: Post[] = [
+  wsop2026TournamentGuide,
   // Hand Rankings 필라
   holdemHandRankings,
   // Rules 필라
