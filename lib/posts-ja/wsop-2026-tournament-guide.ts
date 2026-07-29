@@ -2,10 +2,10 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "wsop-2026-tournament-guide",
-  title: "WSOP 2026 完全ガイド — 日本勢ブレスレット3本と参加方法",
-  seoTitle: "日本はブレスレット3本 — WSOP 2026の日本人の成績",
-  desc: "2026年のWSOPで日本はブレスレットを3本獲得。Kiharaが14年ぶりの2本目、その3日後に3本目、Ogitaは$1,000の大会で$1,000,000。参加者222人は全体5位。日程・参加費・ESTA・GGPoker予選まで公式ソースで整理しました。",
-  tldr: "2026年の第57回WSOPは5月26日〜7月15日にラスベガスのHorseshoe・Paris両会場で100イベントを消化し、総エントリー251,899という過去最多を記録しました。日本勢はNaoya Kiharaが2本、Daisuke Ogitaが1本、あわせてブレスレット3本を獲得。参加者数でも222人で全体5位・アジア1位です。メインイベント(9,208エントリー・賞金総額$85,634,400)のファイナルテーブルだけが8月3〜5日に残っています。",
+  title: "WSOP 2026 完全ガイド — 日本勢ブレスレット4本と参加方法",
+  seoTitle: "日本はブレスレット4本 — WSOP 2026の日本人の成績",
+  desc: "2026年のWSOPで日本はブレスレットを4本獲得。うち3本がミックスゲームの選手権です。Kiharaが14年ぶりの2本、Fujimotoがシュルマンの9本目を阻止、Ogitaは$1,000の大会で$1,000,000。日程・参加費・ESTAまで公式ソースで整理しました。",
+  tldr: "2026年の第57回WSOPは5月26日〜7月15日にラスベガスのHorseshoe・Paris両会場で100イベントを消化し、総エントリー251,899という過去最多を記録しました。日本勢はNaoya Kiharaが2本、Koji FujimotoとDaisuke Ogitaが各1本、あわせてブレスレット4本を獲得。うち3本がミックスゲームの選手権でした。参加者数でも222人で全体5位・アジア1位です。メインイベント(9,208エントリー・賞金総額$85,634,400)のファイナルテーブルだけが8月3〜5日に残っています。",
   category: "tournament",
   date: "2026-06-16",
   updated: "2026-07-29",
@@ -26,7 +26,7 @@ export const POST: Post = {
     "ポーカー 世界大会",
   ],
   content: `
-まず、2026年のWSOPで日本が何を持ち帰ったかという話から。==**ブレスレット3本です。**==
+まず、2026年のWSOPで日本が何を持ち帰ったかという話から。==**ブレスレット4本です。**==
 
 > **一言まとめ**
 > 第57回WSOPは==**5月26日〜7月15日**==にHorseshoe・Paris Las Vegasで100イベントを終え、==g:総エントリー**251,899**という過去最多==を記録しました。日本勢は==**Naoya Kiharaが2本、Daisuke Ogitaが1本**==。参加者数でも==g:**222人で全体5位**==、アジアでは1位です。メインイベントは==**9,208エントリー・賞金総額$85,634,400**==で、ファイナルテーブルだけが==r:**8月3〜5日**==に残っています。日本のパスポートならビザは不要で、==g:ESTA($40.27)==と有効な身分証だけで参加できます。
@@ -55,9 +55,9 @@ WSOP(World Series of Poker)は1970年から続く、世界最大のポーカー�
 
 ---
 
-## 2026年のWSOP日本勢 — ブレスレット3本
+## 2026年のWSOP日本勢 — ブレスレット4本
 
-日本のプレイヤーが、この夏ラスベガスで3本のブレスレットを獲りました。
+日本のプレイヤーが、この夏ラスベガスで4本のブレスレットを獲りました。しかも==**そのうち3本がミックスゲームの選手権**==です。
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -65,13 +65,18 @@ WSOP(World Series of Poker)は1970年から続く、世界最大のポーカー�
 |:---|:---|:---:|:---|---:|
 | **#17** | No-Limit 2-7 Lowball Draw Championship | $10,000 | **Naoya Kihara** | **$428,923** |
 | **#23** | Seven Card Stud Championship | $10,000 | **Naoya Kihara** | **$301,970** |
+| **#67** | Limit 2-7 Triple Draw Championship | $10,000 | **Koji Fujimoto** | **$392,478** |
 | **#72** | Mini Main Event | $1,000 | **Daisuke Ogita** | **$1,000,000** |
 
 </div>
 
 ==g:Kiharaの#17はキャリア2本目のブレスレットでした。前回の優勝が2012年のEvent 34ですから、**14年ぶり**です。== そしてその3日後に#23を制し、3本目を積み上げました。#17は198エントリー・賞金総額$1,841,400、#23は130エントリー・賞金総額$1,209,000という、いずれもフィールドの小さいチャンピオンシップです。
 
-ここは強調しておきたいところで、==**2本ともノーリミットホールデムではありません。**== 2-7ローボールドローとセブンカードスタッド——どちらもミックスゲームのチャンピオンシップです。ホールデム一本で戦う層がこれだけ厚い大会で、種目の幅で勝ち切ったということになります。
+ここは強調しておきたいところで、==**4本のうち3本がノーリミットホールデムではありません。**== 2-7ローボールドロー、セブンカードスタッド、そしてリミット2-7トリプルドロー——すべてミックスゲームの選手権です。ホールデム一本で戦う層がこれだけ厚い大会で、種目の幅で勝ち切ったということになります。
+
+その3本目が**Koji Fujimotoの#67**です。176エントリーのフィールドを勝ち上がってキャリア初のブレスレットを獲得し、賞金は$392,478。ヘッズアップの相手は**Nick Schulman**で、==g:シュルマンの9本目を阻止した形==になりました。PokerNewsは彼を「日本出身として**11人目**のブレスレット獲得者」と書いています。優勝インタビューの通訳を務めたのは、同じ大会で2本獲ったKiharaでした。
+
+藤本はインタビューでこう話しています——「この1年、学生にポーカーを教えている。週に3回。そしてブレスレットを獲った。これで日本のミックスゲームが上がっていく」。
 
 Ogitaの#72も数字のインパクトが大きいイベントでした。バイインは**$1,000**。そこから**$1,000,000**です。「Mini」と名のつくイベントで7桁に届いた形になります。
 
@@ -356,7 +361,7 @@ A. World Series of Pokerの略です。1970年から続く世界最大のポー�
 
 **Q. 2026年のWSOPで日本人は優勝しましたか?**
 
-A. はい、3本のブレスレットが日本に渡りました。Naoya KiharaがEvent #17(No-Limit 2-7 Lowball Draw Championship)で$428,923、Event #23(Seven Card Stud Championship)で$301,970を獲得し、Daisuke OgitaがEvent #72(Mini Main Event)で$1,000,000を獲得しています。Kiharaの#17は2012年以来14年ぶりの2本目で、その3日後の#23が3本目でした。
+A. はい、4本のブレスレットが日本に渡りました。Naoya KiharaがEvent #17(No-Limit 2-7 Lowball Draw Championship)で$428,923とEvent #23(Seven Card Stud Championship)で$301,970、Koji FujimotoがEvent #67(Limit 2-7 Triple Draw Championship)で$392,478、Daisuke OgitaがEvent #72(Mini Main Event)で$1,000,000です。4本のうち3本がミックスゲームの選手権でした。Kiharaの#17は2012年以来14年ぶりの2本目で、その3日後の#23が3本目です。
 
 **Q. WSOP 2026のメインイベントで日本人最高位は誰ですか?**
 
@@ -397,7 +402,8 @@ A. 日本は源泉徴収ではなく確定申告の仕組みです。一時的�
 - **日本勢のブレスレット — イベント別の一次ソース**
   · [PokerNews Event #17 ライブレポート](https://www.pokernews.com/tours/wsop/2026-wsop/event-17-10000-no-limit-2-7-championship/) — Naoya Kihara優勝$428,923、準優勝David Lin、198エントリー・賞金総額$1,841,400、**通算2本目**(前回は2012年Event 34)
   · [PokerNews Event #23 ライブレポート](https://www.pokernews.com/tours/wsop/2026-wsop/event-23-seven-card-stud-championship/) — Naoya Kihara優勝$301,970、準優勝James Cheung、130エントリー・賞金総額$1,209,000、**通算3本目**
-  · [PokerNews 2026 WSOP 全日程・結果表](https://www.pokernews.com/tours/wsop/2026-wsop/schedule.htm) — 終了イベント**100**、日本人優勝3件
+  · [PokerNews Event #67 記事](https://www.pokernews.com/news/2026/06/koji-fujimoto-wins-event-67-10k-limit-2-7-triple-draw-champs-51689.htm) — Koji Fujimoto(Japan)優勝$392,478、準優勝Nick Schulman $256,181、176エントリー、キャリア初。原文に「Fujimoto became the 11th bracelet winner from his native country」
+  · [poker.org 2026 WSOP 優勝者一覧](https://www.poker.org/latest-news/2026-wsop-winners-the-full-list-aOgJd9w4oEe6) — 99イベントの優勝者を全件掲載(メイン#82のみ未了)。**日本4件**(#17・#23・#67・#72)
   · [WSOP公式 — Bracelets Won as the Main Event Marches On](https://www.wsop.com/news/wsop-updates-2026-bracelets-won-as-the-main-event-marches-on/) — Event #72 Daisuke Ogita(Japan)を公式に確認
 - **アメリカ入国要件** — [DHS公式 ビザ免除プログラム](https://www.dhs.gov/visa-waiver-program)(42か国の一覧と各国の適用開始日。日本は1988年12月15日) · [ESTA公式申請サイト](https://esta.cbp.dhs.gov/)(申請料$40.27、90日以内、VWP対象国の有効なパスポート) · [CBP ビザ免除プログラム](https://www.cbp.gov/travel/international-visitors/visa-waiver-program)(ESTAの承認は入国の保証ではない)
 - **税金** — [国税庁 タックスアンサー No.1490(一時所得)](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1490.htm) · 「総収入金額 − 収入を得るために支出した金額 − 特別控除額(最高50万円) = 一時所得の金額」「その所得金額の2分の1に相当する金額を…合計して総所得金額を求めた後、納める税額を計算します」 / [同 No.1900(給与所得者で確定申告が必要な人)](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1900.htm) · 「各種の所得金額(給与所得、退職所得を除く。)の合計額が20万円を超える人」。ポーカーの賞金がどちらの区分に当たるかは個別事情によります — 実際の判断は税務署または税理士に確認してください

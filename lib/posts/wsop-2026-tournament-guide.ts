@@ -161,13 +161,18 @@ WSOP(World Series of Poker)는 1970년부터 이어진 세계 최대 포커 토�
 | #24 High Roller 6-Handed | $25,000 | Artur Martirosian (러시아) | $1,286,285 |
 | #29 $50K High Roller | $50,000 | Santhosh Suvarna (인도) | $1,922,870 |
 | #36 $100K High Roller | $100,000 | Yuri Dzivielevski (브라질) | $2,841,432 |
+| #67 Limit 2-7 Triple Draw Championship | $10,000 | **Koji Fujimoto (일본)** | **$392,478** |
 | #72 Mini Main Event | $1,000 | **Daisuke Ogita (일본)** | **$1,000,000** |
 
 </div>
 
-==r:2026년 일본은 브레이슬릿 3개를 가져갔습니다.== 일본의 Naoya Kihara가 이번 시리즈에서만 **2개**(#17 2-7 Lowball Draw 챔피언십 $428,923, #23 세븐카드 스터드 챔피언십 $301,970)를 따냈습니다. 둘 다 노리밋 홀덤이 아니라 **믹스드 게임 챔피언십**이라는 점이 눈에 띕니다. #17이 통산 두 번째 브레이슬릿인데 **직전 우승이 2012년**이었으니 14년 만이었고, 사흘 뒤 #23으로 세 번째를 채웠습니다.
+==r:2026년 일본은 브레이슬릿 4개를 가져갔습니다.== Naoya Kihara가 혼자 **2개**(#17 2-7 Lowball Draw 챔피언십 $428,923, #23 세븐카드 스터드 챔피언십 $301,970)를 따냈습니다. #17이 통산 두 번째인데 **직전 우승이 2012년**이었으니 14년 만이었고, 사흘 뒤 #23으로 세 번째를 채웠습니다.
 
-여기에 **Daisuke Ogita가 #72 Mini Main Event에서 $1,000,000**을 받았습니다. 바이인 $1,000짜리 이벤트에서 나온 백만 달러입니다.
+==g:여기서 눈여겨볼 건 **4개 중 3개가 믹스드 게임 챔피언십**이라는 점입니다.== #17(2-7 Lowball Draw)·#23(세븐카드 스터드)에 더해 **Koji Fujimoto가 #67 Limit 2-7 Triple Draw 챔피언십**에서 $392,478을 받았습니다. 176 엔트리 필드였고 준우승이 **Nick Schulman** — 후지모토가 슐먼의 아홉 번째 브레이슬릿을 막은 셈입니다. 후지모토는 일본 통산 **11번째** 브레이슬릿 위너이고, 우승 인터뷰 통역을 기하라가 맡았습니다.
+
+나머지 하나는 **Daisuke Ogita의 #72 Mini Main Event $1,000,000**입니다. 바이인 $1,000짜리에서 나온 백만 달러입니다.
+
+노리밋 홀덤 한 종목만 파는 나라가 아니라는 뜻입니다. 후지모토는 인터뷰에서 *"1년째 학생들에게 포커를 가르치고 있다. 일주일에 세 번. 그리고 브레이슬릿을 땄다. 이게 일본에서 믹스드 게임을 끌어올릴 것"*이라고 했습니다.
 
 한국 선수의 2026 브레이슬릿 획득은 확인되지 않았습니다.
 
@@ -326,7 +331,7 @@ Step 4를 $150에 직접 바이인해도 되고, $1,000짜리 Bracelet Step이�
 
 ==r:일본이 222명을 보내는 동안 한국은 순위표에 이름조차 올리지 못했습니다.== 인구도 포커 인구도 일본이 더 많다는 점을 감안해도, 이건 실력 격차가 아니라 **경로 정보의 격차**에 가깝습니다. 일본은 아마추어가 밟는 온라인 위성 경로가 커뮤니티에 정리돼 있고, 방송도 현지 채널(Abema TV)로 중계됩니다.
 
-실제로 이번 시리즈 브레이슬릿 3개가 일본으로 갔습니다. Naoya Kihara가 2개(#17·#23), Daisuke Ogita가 #72 Mini Main Event에서 $1,000,000. 한국 선수의 2026 브레이슬릿 획득은 확인되지 않았습니다.
+실제로 이번 시리즈 브레이슬릿 4개가 일본으로 갔습니다. Naoya Kihara 2개(#17·#23), Koji Fujimoto 1개(#67), Daisuke Ogita 1개(#72 $1,000,000). 한국 선수의 2026 브레이슬릿 획득은 확인되지 않았습니다.
 
 국내 쪽 기록으로는 WSOP 유럽(WSOPE, 체코 프라하) 메인이벤트에 **정승묵(7high), 임요환, 김기영, 이우수** 등이 참가한 이력이 있습니다. 라스베이거스 본대회 참가 현황은 WSOP 공식 사이트(wsop.com)의 Player Database에서 국적 필터로 직접 확인할 수 있습니다.
 
@@ -401,7 +406,8 @@ A. 이전 대회 결과가 궁금하다면 [WSOP 2025 완전 가이드](/blog/ws
 - **일본 브레이슬릿 — 이벤트별 원문** *(2026-07-29 보강)*
   · [PokerNews Event #17 라이브리포팅](https://www.pokernews.com/tours/wsop/2026-wsop/event-17-10000-no-limit-2-7-championship/) — Naoya Kihara(일본) 우승 $428,923, 준우승 David Lin, 198 엔트리·상금풀 $1,841,400, **통산 두 번째**(직전 2012년 Event 34)
   · [PokerNews Event #23 라이브리포팅](https://www.pokernews.com/tours/wsop/2026-wsop/event-23-seven-card-stud-championship/) — Naoya Kihara 우승 $301,970, 준우승 James Cheung, 130 엔트리·상금풀 $1,209,000, **통산 세 번째**
-  · [PokerNews 2026 WSOP 전체 일정·결과표](https://www.pokernews.com/tours/wsop/2026-wsop/schedule.htm) — 완료 이벤트 **100개**, 일본 우승자 3건(Kihara ×2 + Daisuke Ogita #72 Mini Main Event $1,000,000)
+  · [PokerNews Event #67](https://www.pokernews.com/news/2026/06/koji-fujimoto-wins-event-67-10k-limit-2-7-triple-draw-champs-51689.htm) — Koji Fujimoto(Japan) $392,478, 준우승 Nick Schulman $256,181, 176 엔트리, 첫 브레이슬릿. 원문에 *"Fujimoto became the 11th bracelet winner from his native country"*
+  · [poker.org 2026 WSOP 전체 우승자 명단](https://www.poker.org/latest-news/2026-wsop-winners-the-full-list-aOgJd9w4oEe6) — 99개 이벤트 우승자 전수(메인 #82만 미완). **일본 4건**(#17·#23·#67·#72), 중국 4건, 대만·홍콩 0건
   · [WSOP 공식 — Bracelets Won as the Main Event Marches On](https://www.wsop.com/news/wsop-updates-2026-bracelets-won-as-the-main-event-marches-on/) — Event #72 Daisuke Ogita(Japan) 공식 확인
 
 > ⚠️ 대회 규정·수수료·결제 수단은 시즌마다 바뀝니다. **실제 등록 전에는 반드시 WSOP 공식 등록 페이지에서 다시 확인하세요.** 특히 카드 수수료율과 와이어 최소 금액은 변경 이력이 있는 항목입니다.
