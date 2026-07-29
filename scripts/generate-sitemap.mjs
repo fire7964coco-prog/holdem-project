@@ -96,8 +96,35 @@ function altsForSlug(slug) {
 
 const siteToday = todayIso();
 
+/**
+ * 토너먼트 일정표의 로케일 판.
+ * 블로그와 달리 슬러그가 아니라 페이지 하나가 통째로 언어별로 존재하므로
+ * altsForSlug()를 못 쓴다. 로케일을 추가하면 이 배열에만 넣으면 된다.
+ * ★ app/<locale>/tournaments/page.tsx 를 만들기 전에 여기 먼저 넣으면 사이트맵이 404를 가리킨다.
+ */
+const TOURNAMENT_LOCALES = ["en"];
+
+const tournamentAlts = [
+  { hreflang: "ko", href: `${SITE}/tournaments` },
+  ...TOURNAMENT_LOCALES.map((l) => ({
+    hreflang: HTML_LANG[l] || l,
+    href: `${SITE}/${l}/tournaments`,
+  })),
+  { hreflang: "x-default", href: `${SITE}/en/tournaments` },
+];
+
+const tournamentEntries = TOURNAMENT_LOCALES.map((l) =>
+  entry(`${SITE}/${l}/tournaments`, siteToday, "weekly", "0.9", tournamentAlts)
+);
+
 const staticEntries = STATIC_ROUTES.map((r) =>
-  entry(`${SITE}${r.path}`, siteToday, r.changefreq, r.priority)
+  entry(
+    `${SITE}${r.path}`,
+    siteToday,
+    r.changefreq,
+    r.priority,
+    r.path === "/tournaments" ? tournamentAlts : undefined,
+  )
 );
 
 const blogEntries = [...POSTS]
@@ -128,6 +155,10 @@ const xml = `<?xml version="1.0" encoding="UTF-8"?>
   <!-- 자동 생성: npm run generate:sitemap · 블로그 lastmod = post.updated || post.date -->
 
 ${staticEntries.join("\n\n")}
+
+  <!-- 다국어 토너먼트 일정표 (${TOURNAMENT_LOCALES.length}개 로케일) -->
+
+${tournamentEntries.join("\n\n")}
 
   <!-- 블로그 포스트 (${POSTS.length}편) -->
 

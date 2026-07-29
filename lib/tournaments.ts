@@ -25,6 +25,8 @@ export type SourceTier = "A" | "B" | "C";
 export interface Tournament {
   id: string;
   name: string;
+  /** 다국어 페이지용 영문 대회명. 라틴 표기가 12개 언어의 공통 베이스가 된다 */
+  nameEn: string;
   type: TournamentType;
 
   /** ISO 'YYYY-MM-DD'. null이면 상시 개최(status는 항상 ongoing) */
@@ -116,6 +118,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "kpc-jeju",
     name: "KPC x LPT Series 2026",
+    nameEn: "KPC x LPT Series 2026",
     type: "domestic",
     startDate: "2026-01-03",
     endDate: "2026-01-18",
@@ -136,6 +139,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "aspt-korea",
     name: "ASPT Korea 2026",
+    nameEn: "ASPT Korea 2026",
     type: "domestic",
     startDate: "2026-01-23",
     endDate: "2026-02-01",
@@ -155,6 +159,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "apt-jeju-classic",
     name: "APT 제주 클래식 2026",
+    nameEn: "APT Jeju Classic 2026",
     type: "domestic",
     startDate: "2026-01-30",
     endDate: "2026-02-08",
@@ -175,6 +180,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "ept-paris",
     name: "EPT 파리 2026",
+    nameEn: "EPT Paris 2026",
     type: "international",
     startDate: "2026-02-18",
     endDate: "2026-03-01",
@@ -193,6 +199,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "triton-jeju-1",
     name: "Triton 제주 2026 (ONE + SHR)",
+    nameEn: "Triton Jeju 2026 (ONE + SHR)",
     type: "domestic",
     startDate: "2026-03-05",
     endDate: "2026-04-01",
@@ -213,6 +220,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "wsope",
     name: "WSOP Europe 2026",
+    nameEn: "WSOP Europe 2026",
     type: "international",
     // ★ 정정: 종료일 04.10 → 04.12 / 베뉴 King's Resort Rozvadov → Hilton Prague
     startDate: "2026-03-31",
@@ -232,6 +240,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "ajpc-incheon-1",
     name: "AJPC 사무라이 서킷 인천 1차",
+    nameEn: "AJPC Samurai Circuit Incheon #1",
     type: "domestic",
     startDate: "2026-04-10",
     endDate: "2026-04-19",
@@ -250,6 +259,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "apt-taipei",
     name: "APT Taipei 2026",
+    nameEn: "APT Taipei 2026",
     type: "international",
     startDate: "2026-04-22",
     endDate: "2026-05-03",
@@ -268,6 +278,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "ept-montecarlo",
     name: "EPT 몬테카를로 2026",
+    nameEn: "EPT Monte-Carlo 2026",
     type: "international",
     startDate: "2026-04-30",
     endDate: "2026-05-10",
@@ -286,6 +297,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "ajpc-taipei",
     name: "AJPC 사무라이 서킷 타이베이",
+    nameEn: "AJPC Samurai Circuit Taipei",
     type: "international",
     startDate: "2026-05-11",
     endDate: "2026-05-18",
@@ -304,6 +316,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "triton-montenegro",
     name: "Triton SHR 몬테네그로 2026",
+    nameEn: "Triton SHR Montenegro 2026",
     type: "international",
     startDate: "2026-05-13",
     endDate: "2026-05-28",
@@ -324,6 +337,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "gop-incheon-1",
     name: "GOP 인천 2026 (The Prophecy Unfolds)",
+    nameEn: "GOP Incheon 2026 (The Prophecy Unfolds)",
     type: "domestic",
     startDate: "2026-05-15",
     endDate: "2026-05-24",
@@ -342,6 +356,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "holdem-masters-7",
     name: "제7회 홀덤 마스터스",
+    nameEn: "7th Holdem Masters",
     type: "domestic",
     startDate: "2026-05-29",
     endDate: "2026-08-02",
@@ -365,6 +380,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "wsop-2026",
     name: "제57회 WSOP 2026",
+    nameEn: "57th WSOP 2026",
     type: "international",
     startDate: "2026-05-26",
     endDate: "2026-08-05",
@@ -390,6 +406,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "kpc-king-july",
     name: "K Poker Cup + King Poker Cup 2026",
+    nameEn: "K Poker Cup + King Poker Cup 2026",
     type: "domestic",
     startDate: "2026-07-25",
     endDate: "2026-08-10",
@@ -412,6 +429,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "apt-incheon",
     name: "APT 인천 2026",
+    nameEn: "APT Incheon 2026",
     type: "domestic",
     startDate: "2026-08-07",
     endDate: "2026-08-16",
@@ -436,6 +454,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "ept-barcelona",
     name: "EPT 바르셀로나 2026",
+    nameEn: "EPT Barcelona 2026",
     type: "international",
     startDate: "2026-08-16",
     endDate: "2026-08-29",
@@ -454,6 +473,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "gop-manila",
     name: "GOP Manila 2026 (The Arena of Champions)",
+    nameEn: "GOP Manila 2026 (The Arena of Champions)",
     type: "international",
     startDate: "2026-08-21",
     endDate: "2026-08-30",
@@ -472,6 +492,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "ajpc-incheon-2",
     name: "AJPC 사무라이 서킷 인천 2차",
+    nameEn: "AJPC Samurai Circuit Incheon #2",
     type: "domestic",
     startDate: "2026-08-21",
     endDate: "2026-08-30",
@@ -489,6 +510,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "holdem-masters-8",
     name: "제8회 홀덤 마스터스",
+    nameEn: "8th Holdem Masters",
     type: "domestic",
     startDate: "2026-08-03",
     endDate: "2026-10-05",
@@ -511,6 +533,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "appt-korea",
     name: "APPT 코리아 2026",
+    nameEn: "APPT Korea 2026",
     type: "domestic",
     startDate: "2026-09-03",
     endDate: "2026-09-14",
@@ -534,6 +557,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "triton-jeju-2",
     name: "Triton SHR 제주 II 2026",
+    nameEn: "Triton SHR Jeju II 2026",
     type: "domestic",
     startDate: "2026-09-04",
     endDate: "2026-09-17",
@@ -555,6 +579,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "gop-taipei-2",
     name: "GOP Taipei II (The Trial of Wisdom)",
+    nameEn: "GOP Taipei II (The Trial of Wisdom)",
     type: "international",
     startDate: "2026-09-18",
     endDate: "2026-09-27",
@@ -572,6 +597,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "apt-jeju-fall",
     name: "APT 제주 2026 (가을)",
+    nameEn: "APT Jeju 2026 (Fall)",
     type: "domestic",
     startDate: "2026-09-25",
     endDate: "2026-10-07",
@@ -595,6 +621,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "gop-incheon-2",
     name: "GOP Incheon II (The Labyrinth Trail)",
+    nameEn: "GOP Incheon II (The Labyrinth Trail)",
     type: "domestic",
     startDate: "2026-10-30",
     endDate: "2026-11-08",
@@ -613,6 +640,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "wpt-seoul",
     name: "WPT Seoul 2026",
+    nameEn: "WPT Seoul 2026",
     type: "domestic",
     startDate: "2026-10-30",
     endDate: "2026-11-09",
@@ -637,6 +665,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "apt-championship",
     name: "APT 챔피언십 2026",
+    nameEn: "APT Championships 2026",
     type: "international",
     // 정본 시리즈 페이지 헤더는 "12 Nov to 29 Nov". 11/12 첫 이벤트(#1000 Event 0)는
     // "restricted to casino employees and poker industry persons only" — 일반 참가자는 11/13부터.
@@ -658,6 +687,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "wsop-paradise",
     name: "WSOP Paradise 2026",
+    nameEn: "WSOP Paradise 2026",
     type: "international",
     // ★ 정정: 12.01~12.18 → 12.03~12.17 (공식 대회 페이지 기준)
     startDate: "2026-12-03",
@@ -678,6 +708,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "ept-prague",
     name: "EPT 프라하 2026",
+    nameEn: "EPT Prague 2026",
     type: "international",
     startDate: "2026-12-02",
     endDate: "2026-12-13",
@@ -696,6 +727,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "gop-jeju",
     name: "GOP Jeju 2026 (The Olympus Return)",
+    nameEn: "GOP Jeju 2026 (The Olympus Return)",
     type: "domestic",
     startDate: "2026-12-04",
     endDate: "2026-12-13",
@@ -714,6 +746,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "jopt-fukuoka-1",
     name: "JOPT 2026 Fukuoka #01",
+    nameEn: "JOPT 2026 Fukuoka #01",
     type: "international",
     startDate: "2026-07-30",
     endDate: "2026-08-02",
@@ -732,6 +765,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "jopt-sapporo-2",
     name: "JOPT 2026 Sapporo #02",
+    nameEn: "JOPT 2026 Sapporo #02",
     type: "international",
     startDate: "2026-09-18",
     endDate: "2026-09-23",
@@ -749,6 +783,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "jopt-tokyo-3",
     name: "JOPT 2026 Tokyo #03",
+    nameEn: "JOPT 2026 Tokyo #03",
     type: "international",
     startDate: "2026-10-08",
     endDate: "2026-10-12",
@@ -766,6 +801,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "jopt-osaka-2",
     name: "JOPT 2026 Osaka #02",
+    nameEn: "JOPT 2026 Osaka #02",
     type: "international",
     startDate: "2026-10-29",
     endDate: "2026-11-03",
@@ -783,6 +819,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "jopt-tokyo-2027-1",
     name: "JOPT 2027 Tokyo #01",
+    nameEn: "JOPT 2027 Tokyo #01",
     type: "international",
     startDate: "2026-12-24",
     endDate: "2027-01-03",
@@ -803,6 +840,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "appt-manila",
     name: "APPT Manila 2026",
+    nameEn: "APPT Manila 2026",
     type: "international",
     startDate: "2026-07-28",
     endDate: "2026-08-10",
@@ -824,6 +862,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "manila-super-series-24",
     name: "Manila Super Series 24",
+    nameEn: "Manila Super Series 24",
     type: "international",
     startDate: "2026-09-18",
     endDate: "2026-09-27",
@@ -841,6 +880,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "appt-manila-championship",
     name: "APPT Manila Championship",
+    nameEn: "APPT Manila Championship",
     type: "international",
     startDate: "2026-10-08",
     endDate: "2026-10-19",
@@ -859,6 +899,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "manila-megastack-25",
     name: "Manila Megastack 25",
+    nameEn: "Manila Megastack 25",
     type: "international",
     startDate: "2026-11-28",
     endDate: "2026-12-07",
@@ -878,6 +919,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "usop-vietnam-2",
     name: "USOP Vietnam 2026 (하롱베이)",
+    nameEn: "USOP Vietnam 2026 (Ha Long Bay)",
     type: "international",
     startDate: "2026-08-27",
     endDate: "2026-09-09",
@@ -899,6 +941,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "wpt-australia",
     name: "WPT Australia 2026",
+    nameEn: "WPT Australia 2026",
     type: "international",
     startDate: "2026-09-10",
     endDate: "2026-09-30",
@@ -919,6 +962,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "triton-one-cyprus",
     name: "Triton ONE 북키프로스 2026",
+    nameEn: "Triton ONE North Cyprus 2026",
     type: "international",
     startDate: "2026-11-04",
     endDate: "2026-11-15",
@@ -937,6 +981,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "triton-shrs-cyprus",
     name: "Triton SHR 북키프로스 2026",
+    nameEn: "Triton SHR North Cyprus 2026",
     type: "international",
     startDate: "2026-11-15",
     endDate: "2026-11-28",
@@ -958,6 +1003,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "tmt-20",
     name: "Taiwan Millions Tournament TMT 20",
+    nameEn: "Taiwan Millions Tournament TMT 20",
     type: "international",
     startDate: "2026-07-08",
     endDate: "2026-08-03",
@@ -976,6 +1022,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "apc-taipei-3",
     name: "Asia Poker Championship Taipei III",
+    nameEn: "Asia Poker Championship Taipei III",
     type: "international",
     startDate: "2026-08-05",
     endDate: "2026-08-10",
@@ -993,6 +1040,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "ps-championship-4-taipei",
     name: "PS Championship IV Taipei 2026",
+    nameEn: "PS Championship IV Taipei 2026",
     type: "international",
     startDate: "2026-08-19",
     endDate: "2026-08-31",
@@ -1011,6 +1059,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "zsop-final-horse",
     name: "Zodiac Series of Poker: The Final Horse",
+    nameEn: "Zodiac Series of Poker: The Final Horse",
     type: "international",
     startDate: "2026-09-04",
     endDate: "2026-09-14",
@@ -1028,6 +1077,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "harbour-poker-cup-2",
     name: "Harbour Poker Cup II 2026",
+    nameEn: "Harbour Poker Cup II 2026",
     type: "international",
     startDate: "2026-09-30",
     endDate: "2026-10-04",
@@ -1045,6 +1095,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "tmt-championship",
     name: "Taiwan Millions Tournament Championship 2026",
+    nameEn: "Taiwan Millions Tournament Championship 2026",
     type: "international",
     startDate: "2026-10-16",
     endDate: "2026-10-26",
@@ -1063,6 +1114,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "apc-taipei-4",
     name: "Asia Poker Championship Taipei IV 2026",
+    nameEn: "Asia Poker Championship Taipei IV 2026",
     type: "international",
     startDate: "2026-12-02",
     endDate: "2026-12-13",
@@ -1080,6 +1132,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "ola-poker-tour-taipei",
     name: "OLA Poker Tour: Taipei",
+    nameEn: "OLA Poker Tour: Taipei",
     type: "international",
     startDate: "2026-12-16",
     endDate: "2026-12-21",
@@ -1101,6 +1154,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "merit-noir",
     name: "NOIR Poker Series",
+    nameEn: "NOIR Poker Series",
     type: "international",
     startDate: "2026-07-27",
     endDate: "2026-08-06",
@@ -1119,6 +1173,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "merit-onyx-aug",
     name: "Onyx High Roller Series (8월)",
+    nameEn: "Onyx High Roller Series (August)",
     type: "international",
     startDate: "2026-08-07",
     endDate: "2026-08-16",
@@ -1138,6 +1193,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "mediterranean-poker-party",
     name: "Mediterranean Poker Party",
+    nameEn: "Mediterranean Poker Party",
     type: "international",
     startDate: "2026-09-17",
     endDate: "2026-09-27",
@@ -1158,6 +1214,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "wsopc-tallinn",
     name: "WSOP Circuit 탈린",
+    nameEn: "WSOP Circuit Tallinn",
     type: "international",
     startDate: "2026-07-24",
     endDate: "2026-08-02",
@@ -1176,6 +1233,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "wsopc-bratislava",
     name: "WSOP Circuit 브라티슬라바",
+    nameEn: "WSOP Circuit Bratislava",
     type: "international",
     startDate: "2026-07-31",
     endDate: "2026-08-11",
@@ -1193,6 +1251,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "wsopc-canada-super",
     name: "WSOP Super Circuit 캐나다",
+    nameEn: "WSOP Super Circuit Canada",
     type: "international",
     startDate: "2026-08-26",
     endDate: "2026-09-12",
@@ -1211,6 +1270,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "wsopc-mexico",
     name: "WSOP Circuit 멕시코시티",
+    nameEn: "WSOP Circuit Mexico City",
     type: "international",
     startDate: "2026-08-31",
     endDate: "2026-09-11",
@@ -1229,6 +1289,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "wsopc-paris",
     name: "WSOP Circuit 파리",
+    nameEn: "WSOP Circuit Paris",
     type: "international",
     startDate: "2026-09-01",
     endDate: "2026-09-14",
@@ -1246,6 +1307,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "wsopc-liechtenstein",
     name: "WSOP Circuit 리히텐슈타인",
+    nameEn: "WSOP Circuit Liechtenstein",
     type: "international",
     startDate: "2026-09-10",
     endDate: "2026-09-22",
@@ -1264,6 +1326,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "wsopc-malta",
     name: "WSOP Circuit 몰타",
+    nameEn: "WSOP Circuit Malta",
     type: "international",
     startDate: "2026-09-25",
     endDate: "2026-10-05",
@@ -1281,6 +1344,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "wsopc-calgary",
     name: "WSOP Circuit 캘거리",
+    nameEn: "WSOP Circuit Calgary",
     type: "international",
     startDate: "2026-09-30",
     endDate: "2026-10-12",
@@ -1298,6 +1362,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "wsopc-madrid",
     name: "WSOP Circuit 마드리드",
+    nameEn: "WSOP Circuit Madrid",
     type: "international",
     startDate: "2026-10-23",
     endDate: "2026-11-02",
@@ -1315,6 +1380,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "wsopc-playground-nov",
     name: "WSOP Circuit 플레이그라운드 (11월)",
+    nameEn: "WSOP Circuit Playground (November)",
     type: "international",
     startDate: "2026-11-02",
     endDate: "2026-11-17",
@@ -1333,6 +1399,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "wsopc-panama",
     name: "WSOP Circuit 파나마시티",
+    nameEn: "WSOP Circuit Panama City",
     type: "international",
     startDate: "2026-11-05",
     endDate: "2026-11-15",
@@ -1350,6 +1417,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "wsopc-middelkerke",
     name: "WSOP Circuit 미델케르케",
+    nameEn: "WSOP Circuit Middelkerke",
     type: "international",
     startDate: "2026-11-06",
     endDate: "2026-11-15",
@@ -1367,6 +1435,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "wsopc-sanremo",
     name: "WSOP Circuit 산레모",
+    nameEn: "WSOP Circuit Sanremo",
     type: "international",
     startDate: "2026-11-20",
     endDate: "2026-11-30",
@@ -1386,6 +1455,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "pp-sheffield",
     name: "partypoker Tour 셰필드",
+    nameEn: "partypoker Tour Sheffield",
     type: "international",
     startDate: "2026-01-27",
     endDate: "2026-02-01",
@@ -1403,6 +1473,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "pp-seville",
     name: "partypoker Tour 세비야",
+    nameEn: "partypoker Tour Seville",
     type: "international",
     startDate: "2026-03-16",
     endDate: "2026-03-22",
@@ -1420,6 +1491,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "pp-madrid",
     name: "partypoker Tour 마드리드",
+    nameEn: "partypoker Tour Madrid",
     type: "international",
     startDate: "2026-05-11",
     endDate: "2026-05-17",
@@ -1437,6 +1509,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "pp-manchester",
     name: "partypoker Tour 맨체스터",
+    nameEn: "partypoker Tour Manchester",
     type: "international",
     startDate: "2026-06-13",
     endDate: "2026-06-21",
@@ -1454,6 +1527,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "pp-london-jul",
     name: "partypoker Tour 런던 (7월)",
+    nameEn: "partypoker Tour London (July)",
     type: "international",
     startDate: "2026-07-04",
     endDate: "2026-07-12",
@@ -1472,6 +1546,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "pp-glasgow",
     name: "partypoker Tour 글래스고",
+    nameEn: "partypoker Tour Glasgow",
     type: "international",
     startDate: "2026-08-03",
     endDate: "2026-08-09",
@@ -1490,6 +1565,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "pp-castellon",
     name: "partypoker Tour 카스테욘",
+    nameEn: "partypoker Tour Castellón",
     type: "international",
     startDate: "2026-10-05",
     endDate: "2026-10-11",
@@ -1507,6 +1583,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "pp-cork",
     name: "partypoker Tour 코크",
+    nameEn: "partypoker Tour Cork",
     type: "international",
     startDate: "2026-11-09",
     endDate: "2026-11-15",
@@ -1525,6 +1602,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "pp-murcia",
     name: "partypoker Tour 무르시아",
+    nameEn: "partypoker Tour Murcia",
     type: "international",
     startDate: "2026-11-30",
     endDate: "2026-12-06",
@@ -1542,6 +1620,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "pp-london-dec",
     name: "partypoker Tour 런던 (12월)",
+    nameEn: "partypoker Tour London (December)",
     type: "international",
     startDate: "2026-12-12",
     endDate: "2026-12-20",
@@ -1562,6 +1641,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "bsop-winter",
     name: "BSOP Winter",
+    nameEn: "BSOP Winter",
     type: "international",
     startDate: "2026-07-21",
     endDate: "2026-07-30",
@@ -1580,6 +1660,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "bsop-floripa",
     name: "BSOP Floripa",
+    nameEn: "BSOP Floripa",
     type: "international",
     startDate: "2026-09-04",
     endDate: "2026-09-08",
@@ -1598,6 +1679,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "bsop-millions",
     name: "BSOP Millions",
+    nameEn: "BSOP Millions",
     type: "international",
     startDate: "2026-11-13",
     endDate: "2026-11-28",
@@ -1616,6 +1698,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "bsop-summer-2027",
     name: "BSOP Summer 2027",
+    nameEn: "BSOP Summer 2027",
     type: "international",
     startDate: "2027-01-22",
     endDate: "2027-01-30",
@@ -1635,6 +1718,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "cap-5-santarosa",
     name: "CAP 5° Fecha 산타로사",
+    nameEn: "CAP 5° Fecha Santa Rosa",
     type: "international",
     startDate: "2026-08-19",
     endDate: "2026-08-24",
@@ -1653,6 +1737,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "cap-6-iguazu",
     name: "CAP 6° Fecha 이과수",
+    nameEn: "CAP 6° Fecha Puerto Iguazú",
     type: "international",
     startDate: "2026-09-16",
     endDate: "2026-09-21",
@@ -1670,6 +1755,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "cap-7-buenosaires",
     name: "CAP 7° Fecha 부에노스아이레스",
+    nameEn: "CAP 7° Fecha Buenos Aires",
     type: "international",
     startDate: "2026-10-03",
     endDate: "2026-10-11",
@@ -1687,6 +1773,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "cap-8-rosario",
     name: "CAP 8° Fecha 로사리오",
+    nameEn: "CAP 8° Fecha Rosario",
     type: "international",
     startDate: "2026-12-12",
     endDate: "2026-12-20",
@@ -1707,6 +1794,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "maryland-state",
     name: "Maryland State Poker Championship",
+    nameEn: "Maryland State Poker Championship",
     type: "international",
     startDate: "2026-08-26",
     endDate: "2026-09-07",
@@ -1725,6 +1813,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "bpc-megastack",
     name: "BPC Megastack Edition",
+    nameEn: "BPC Megastack Edition",
     type: "international",
     startDate: "2026-09-17",
     endDate: "2026-09-27",
@@ -1743,6 +1832,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "ps-open-aix",
     name: "PokerStars Open 엑상프로방스",
+    nameEn: "PokerStars Open Aix-en-Provence",
     type: "international",
     startDate: "2026-11-02",
     endDate: "2026-11-08",
@@ -1762,6 +1852,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "wsopc-cherokee-aug",
     name: "WSOP Circuit 체로키 (8월)",
+    nameEn: "WSOP Circuit Cherokee (August)",
     type: "international",
     startDate: "2026-08-06",
     endDate: "2026-08-17",
@@ -1779,6 +1870,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "wsopc-atlantic-city",
     name: "WSOP Circuit 애틀랜틱시티",
+    nameEn: "WSOP Circuit Atlantic City",
     type: "international",
     startDate: "2026-08-13",
     endDate: "2026-08-24",
@@ -1796,6 +1888,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "wsopc-tunica",
     name: "WSOP Circuit 튜니카",
+    nameEn: "WSOP Circuit Tunica",
     type: "international",
     startDate: "2026-08-20",
     endDate: "2026-08-31",
@@ -1813,6 +1906,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "wsopc-tulsa",
     name: "WSOP Circuit 털사",
+    nameEn: "WSOP Circuit Tulsa",
     type: "international",
     startDate: "2026-08-26",
     endDate: "2026-09-07",
@@ -1830,6 +1924,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "wsopc-virginia",
     name: "WSOP Circuit 버지니아",
+    nameEn: "WSOP Circuit Virginia",
     type: "international",
     startDate: "2026-09-03",
     endDate: "2026-09-14",
@@ -1847,6 +1942,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "wsopc-austin",
     name: "WSOP Circuit 오스틴",
+    nameEn: "WSOP Circuit Austin",
     type: "international",
     startDate: "2026-09-10",
     endDate: "2026-09-21",
@@ -1864,6 +1960,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "wsopc-council-bluffs",
     name: "WSOP Circuit 카운슬블러프스",
+    nameEn: "WSOP Circuit Council Bluffs",
     type: "international",
     startDate: "2026-09-17",
     endDate: "2026-09-28",
@@ -1881,6 +1978,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "wsopc-thunder-valley",
     name: "WSOP Circuit 썬더밸리",
+    nameEn: "WSOP Circuit Thunder Valley",
     type: "international",
     startDate: "2026-09-24",
     endDate: "2026-10-05",
@@ -1898,6 +1996,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "wsopc-pompano",
     name: "WSOP Circuit 폼파노비치",
+    nameEn: "WSOP Circuit Pompano Beach",
     type: "international",
     startDate: "2026-10-01",
     endDate: "2026-10-12",
@@ -1915,6 +2014,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "wsopc-turning-stone",
     name: "WSOP Circuit 터닝스톤",
+    nameEn: "WSOP Circuit Turning Stone",
     type: "international",
     startDate: "2026-10-15",
     endDate: "2026-10-26",
@@ -1932,6 +2032,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "wsopc-lake-tahoe",
     name: "WSOP Circuit 레이크타호",
+    nameEn: "WSOP Circuit Lake Tahoe",
     type: "international",
     startDate: "2026-10-22",
     endDate: "2026-11-02",
@@ -1949,6 +2050,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "wsopc-southern-indiana",
     name: "WSOP Circuit 서던인디애나",
+    nameEn: "WSOP Circuit Southern Indiana",
     type: "international",
     startDate: "2026-10-22",
     endDate: "2026-11-02",
@@ -1966,6 +2068,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "wsopc-choctaw",
     name: "WSOP Circuit 초크토",
+    nameEn: "WSOP Circuit Choctaw Durant",
     type: "international",
     startDate: "2026-10-28",
     endDate: "2026-11-09",
@@ -1983,6 +2086,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "wsopc-toledo",
     name: "WSOP Circuit 톨레도",
+    nameEn: "WSOP Circuit Toledo",
     type: "international",
     startDate: "2026-10-29",
     endDate: "2026-11-09",
@@ -2000,6 +2104,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "wsopc-talking-stick",
     name: "WSOP Circuit 토킹스틱",
+    nameEn: "WSOP Circuit Talking Stick",
     type: "international",
     startDate: "2026-11-05",
     endDate: "2026-11-16",
@@ -2017,6 +2122,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "wsopc-grand-victoria",
     name: "WSOP Circuit 그랜드빅토리아",
+    nameEn: "WSOP Circuit Grand Victoria",
     type: "international",
     startDate: "2026-11-05",
     endDate: "2026-11-16",
@@ -2034,6 +2140,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "wsopc-new-orleans",
     name: "WSOP Circuit 뉴올리언스",
+    nameEn: "WSOP Circuit New Orleans",
     type: "international",
     startDate: "2026-11-12",
     endDate: "2026-11-23",
@@ -2051,6 +2158,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "wsopc-cherokee-nov",
     name: "WSOP Circuit 체로키 (11월)",
+    nameEn: "WSOP Circuit Cherokee (November)",
     type: "international",
     startDate: "2026-11-26",
     endDate: "2026-12-07",
@@ -2069,6 +2177,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
   {
     id: "wpt-world-championship",
     name: "WPT 월드 챔피언십",
+    nameEn: "WPT World Championship",
     type: "international",
     // ★ 2026년 날짜는 공식 미발표. (12/2~12/22는 2025년 날짜이므로 쓰지 않는다)
     startDate: null,
