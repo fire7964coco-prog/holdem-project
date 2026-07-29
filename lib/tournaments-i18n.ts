@@ -122,7 +122,7 @@ const en: BoardStrings = {
     },
     {
       q: "Where do I play satellites for these?",
-      a: "That depends entirely on where you live, and the answer flips between English-speaking countries. In the US, online poker is legal in six states, and WSOP.com — live in Nevada, Michigan, Pennsylvania and New Jersey — runs the deepest WSOP satellite schedule; GGPoker, Natural8 and WPT Global are all unavailable to US players. In the UK, the market is the most open in the world, with 14 UKGC-licensed operators as of June 2026. In Australia the Interactive Gambling Act closed online poker to operators, so the practical route there is live rather than online — which is what WPT Australia at The Star Sydney is for.",
+      a: "It depends on where you are, and the answer changes a lot between English-speaking countries. US players go through WSOP.com, which runs the deepest WSOP satellite schedule and operates in Nevada, Michigan, Pennsylvania and New Jersey — the international sites are not an option there. In the UK you have the widest choice anywhere, with 14 UKGC-licensed rooms as of June 2026. In Australia the practical route is live rather than online, which is what WPT Australia at The Star Sydney is for. Check what is available where you are before you plan around a satellite.",
     },
     {
       q: "What does a WPT Passport actually cover?",
@@ -146,7 +146,7 @@ const en: BoardStrings = {
   localBlocks: [
     {
       title: "Online access is not one answer in English",
-      body: "The UK, the US and Australia sit at opposite ends of the same question. The UK is the most heavily licensed online poker market in the world; the US allows it in six states and blocks international sites entirely; Australia's Interactive Gambling Act, as amended in 2017, put online poker tournaments out of reach of operators — though the Act targets operators, not individual players, and an IGA reform package is scheduled for 1 January 2027. Canada runs Ontario as its own regime.",
+      body: "Where you live changes which routes are open to you. The UK has the widest choice of licensed rooms anywhere. In the US the picture is state by state, and the online path runs through WSOP.com in Nevada, Michigan, Pennsylvania and New Jersey rather than the international sites. Australian players tend to go live rather than online — which is exactly what WPT Australia at The Star Sydney is for. Canada treats Ontario separately from the rest of the country.",
     },
     {
       title: "A blocked head office does not mean a blocked country",
@@ -218,8 +218,8 @@ const ja: BoardStrings = {
       a: "WSOP（World Series of Poker）、WPT（World Poker Tour）、EPT（European Poker Tour）の3つを指すのが一般的です。この一覧にはいずれも入っていて、2026年はWSOPが5月26日〜8月5日のラスベガス、WPTがソウル（INSPIRE）やオーストラリアなど、EPTがバルセロナ・モンテカルロ・パリ・プラハで開催されます。",
     },
     {
-      q: "日本でポーカー大会は違法ですか？",
-      a: "国内で金銭を賭ける行為は刑法の賭博罪の対象ですが、アミューズメント形式の大会や、賞品・海外大会のシート（参加権）を出す形式は国内で広く運営されています。JOPTのような大型シリーズが継続しているのはこの形です。実務的な関心は「合法かどうか」よりも「どこでシートを取るか」にあるはずなので、この一覧では各大会の公式サイトを直接たどれるようにしています。",
+      q: "日本国内で出られる大会は？",
+      a: "JOPT（Japan Open Poker Tour）が国内最大級です。2026年4月24日〜5月6日のTokyo Grand Finalはベルサール高田馬場で256イベント、メインイベントのバイインは¥120,000でした。福岡・札幌・大阪でもシリーズが動いています。海外大会のシート（参加権）を出す大会もあるので、行き先を決めてから逆算するのが早いです。この一覧では各大会の公式サイトを直接たどれるようにしています。",
     },
     {
       q: "日本で最大のポーカー大会は？",
@@ -364,7 +364,7 @@ const zh: BoardStrings = {
     },
     {
       title: "线上与线下是两回事",
-      body: "各地对线上扑克的规定差异很大，新加坡的《Remote Gambling Act 2014》甚至对个人访问无牌照网站也有罚则（最高S$5,000，再犯可至两年监禁）；马来西亚目前属于灰色地带，尚无当地人因线上扑克被处罚的案例。这份页面只提供线下赛事的日程与官方链接，线上路径请各自依当地规定判断。",
+      body: "线上的部分各地情况不一样，能不能用、以什么身分注册，实务上以各家注册流程里出现的国家／地区清单为准。这份页面只处理线下赛事——日程、买入、场馆，还有每一场的官方链接。要去哪一场，从这里往下看就够了。",
     },
   ],
 };
@@ -432,7 +432,7 @@ const zhHant: BoardStrings = {
   faqs: [
     {
       q: "為什麼台灣的德州撲克賽事這麼多？",
-      a: "跟法院怎麼看「賽事結構」有關。刑法第266條的賭博罪要同時滿足射倖性、公眾得出入之場所、以財物為賭注三個要件，而台北地院曾就德州撲克作出無罪判決，理由是它具有競技性質、需要技術與策略、不是單純靠運氣，因此射倖性這一項不成立。臺灣高等檢察署的說明頁面也有相關整理。不過這是個案判斷，關鍵在結構：籌碼只作為競技積分使用、獎金連動總排名的錦標賽形式，跟現金直接買入、籌碼即時換現、單局直接決定金額的形式，在法律評價上是兩回事。這也是為什麼台灣的場子幾乎都以錦標賽在運作。",
+      a: "台灣的場子幾乎都以錦標賽的形式在運作——籌碼當競技積分用，獎金連動總排名。這個結構是台灣賽事密度高的背景，也是為什麼一個場地一年能撐起四到六個系列賽。這份賽程裡台灣有12場，是僅次於韓國的第二多，CTP Asia Poker Arena 是最主要的據點。",
     },
     {
       q: "台灣有哪些賽事可以打？",
@@ -456,7 +456,7 @@ const zhHant: BoardStrings = {
     },
     {
       q: "Natural8跟GGPoker是同一個地方嗎？",
-      a: "是同一套軟體、同一個玩家池，Natural8是面向亞洲的品牌。判斷牌局規模時這一點很實際——看到的人數是合併後的。不過線上的部分各地規定不同：香港《賭博條例》第148章規定，即使投注網站設在境外，香港居民在香港參與也可能違法，所以這頁只提供線下賽事的賽程與官方連結，線上路徑請依自己所在地的規定判斷。",
+      a: "是同一套軟體、同一個玩家池，Natural8是面向亞洲的品牌。判斷牌局規模時這一點很實際——看到的人數是合併後的。線上的部分各地情況不同，這頁專心處理線下：賽程、買入、場館，以及每一場的官方連結。",
     },
   ],
 
@@ -471,8 +471,8 @@ const zhHant: BoardStrings = {
       body: "海外所得達NT$100萬就有申報義務，但基本所得額在NT$750萬以下時基本稅額是0。也就是說中等規模的獎金通常要申報、不用繳。而且獎金可以減除成本與必要費用，買入有機會被認列。這跟韓國在發獎時就先扣4.4%、日本要自行辦理確定申告的做法都不一樣。",
     },
     {
-      title: "台灣與香港的規則方向相反",
-      body: "台灣的法院對錦標賽形式的德州撲克有過競技性質的認定，這是台灣賽事密度高的結構性背景；香港則是《賭博條例》第148章，除政府明文批准者外一律不合法，且境外網站也可能適用。同樣是繁體讀者，兩地的判斷基準不同，這頁只處理線下賽程資訊。",
+      title: "台港澳讀者，出發點不一樣",
+      body: "同樣看繁體中文，三地的起點差很多。台灣有12場在地賽事，一年到頭都有得打；香港與澳門沒有本地站，等於每一場都是出國行程，機票和簽證要更早排。反過來說，香港飛台北不到兩小時，飛首爾也在三小時出頭——把台灣或韓國當主場來安排，比想像中省事。這頁的賽程就是照這個順序排的。",
     },
   ],
 };
