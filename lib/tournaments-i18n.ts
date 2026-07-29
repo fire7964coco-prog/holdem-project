@@ -447,15 +447,15 @@ const zhHant: BoardStrings = {
     },
     {
       q: "台灣有哪些賽事可以打？",
-      a: "這份賽程裡台灣有12場，在亞洲僅次於韓國（17場）。CTP Asia Poker Arena一個場地就撐起一年四到六個系列賽，11月的APT Championships是其中規模最大的，另外還有WPG Taiwan、TMT 20、GOP Taipei系列。每張卡片下方都有主辦方官網連結，報名與賽程細節以那裡為準。",
+      a: "這份賽程裡台灣有12場，在亞洲僅次於韓國（17場）。CTP Asia Poker Arena一個場地就撐起一年四到六個系列賽，11月的APT Championships是其中規模最大的，另外還有 TMT 20、Asia Poker Championship、GOP Taipei 這幾個系列。每張卡片下方都有主辦方官網連結，報名與賽程細節以那裡為準。",
     },
     {
       q: "去韓國打比賽需要簽證嗎？",
-      a: "台灣護照到韓國是90日免簽，而且K-ETA的臨時免除已延長到2026年12月31日，可以省下₩10,000的申請費。也就是說這份賽程裡韓國的17場——濟州7場、仁川8場、首爾2場——全部都能去。⚠️ 有一點容易漏掉：從2026年1月1日起韓國廢除紙本入境卡，改成入境前72小時內線上提交電子入境申報（e-Arrival）。另外K-ETA免除到2026年12月31日為止，之後的行程要再確認。",
+      a: "台灣護照到韓國是90日免簽，而且K-ETA的臨時免除已延長到2026年12月31日，可以省下₩10,000的申請費。也就是說這份賽程裡韓國的17場——濟州7場（含標示為西歸浦的 Triton SHR 濟州 II，西歸浦就在濟州島上）、仁川8場、首爾2場——全部都能去。⚠️ 有一點容易漏掉：從2026年1月1日起韓國廢除紙本入境卡，改成入境前72小時內線上提交電子入境申報（e-Arrival）。另外K-ETA免除到2026年12月31日為止，之後的行程要再確認。",
     },
     {
       q: "德州撲克最大的賽事是哪一個？",
-      a: "WSOP（世界撲克系列賽）。2026年是5月26日到8月5日在拉斯維加斯，共100條金手鍊，主賽事9,208人次報名、獎池$85,634,400，決賽桌8月3到5日由ESPN轉播。亞洲這邊規模最大的是APT，2026年仁川站保證獎金超過40億韓元。",
+      a: "WSOP（世界撲克大賽）。2026年是5月26日到8月5日在拉斯維加斯，共100條金手鍊，主賽事9,208人次報名、獎池$85,634,400，決賽桌8月3到5日由ESPN轉播。亞洲這邊規模最大的是APT，2026年仁川站保證獎金超過40億韓元。",
     },
     {
       q: "比賽獎金要繳稅嗎？",
@@ -637,10 +637,20 @@ function nameMaps(
  */
 const NAME_OVERRIDE: Partial<Record<BoardLocale, Record<string, string>>> = {
   ja: {
+    "cap-5-santarosa": "CAP 第5戦 サンタローサ",
+    "cap-6-iguazu": "CAP 第6戦 プエルトイグアス",
+    "cap-7-buenosaires": "CAP 第7戦 ブエノスアイレス",
+    "cap-8-rosario": "CAP 第8戦 ロサリオ",
     "holdem-masters-7": "第7回 Holdem Masters",
     "holdem-masters-8": "第8回 Holdem Masters",
     "wsop-2026": "第57回 WSOP 2026",
     "wpt-world-championship": "WPT ワールドチャンピオンシップ",
+  },
+  en: {
+    "cap-5-santarosa": "CAP Leg 5 — Santa Rosa",
+    "cap-6-iguazu": "CAP Leg 6 — Puerto Iguazú",
+    "cap-7-buenosaires": "CAP Leg 7 — Buenos Aires",
+    "cap-8-rosario": "CAP Leg 8 — Rosario",
   },
   es: {
     "holdem-masters-7": "7.º Holdem Masters",
@@ -648,12 +658,20 @@ const NAME_OVERRIDE: Partial<Record<BoardLocale, Record<string, string>>> = {
     "wsop-2026": "57.ª WSOP 2026",
   },
   "zh-hant": {
+    "cap-5-santarosa": "CAP 第5站 聖羅莎",
+    "cap-6-iguazu": "CAP 第6站 伊瓜蘇港",
+    "cap-7-buenosaires": "CAP 第7站 布宜諾斯艾利斯",
+    "cap-8-rosario": "CAP 第8站 羅薩里奧",
     "holdem-masters-7": "第7屆 Holdem Masters",
     "holdem-masters-8": "第8屆 Holdem Masters",
     "wsop-2026": "第57屆 WSOP 2026",
     "wpt-world-championship": "WPT 世界錦標賽",
   },
   zh: {
+    "cap-5-santarosa": "CAP 第5站 圣罗莎",
+    "cap-6-iguazu": "CAP 第6站 伊瓜苏港",
+    "cap-7-buenosaires": "CAP 第7站 布宜诺斯艾利斯",
+    "cap-8-rosario": "CAP 第8站 罗萨里奥",
     "holdem-masters-7": "第7届 Holdem Masters",
     "holdem-masters-8": "第8届 Holdem Masters",
     "wsop-2026": "第57届 WSOP 2026",
@@ -707,6 +725,9 @@ export function localizedName(t: Tournament, locale: BoardLocale): string {
    ★ 사전에 없는 값은 원문 그대로 통과시킨다. 지어내지 않는다.
    ──────────────────────────────────────────────────────────── */
 const FIELD_EN: Record<string, string> = {
+  "€400~": "€400 and up",
+  "€1,100~": "€1,100 and up",
+  "₩350K~₩5M": "₩350K – ₩5M",
   // buyin
   "공식 미기재": "Not published",
   "미발표": "TBA",
@@ -736,6 +757,9 @@ const FIELD_EN: Record<string, string> = {
 /* ja 필드 사전. 통화는 원문 통화를 유지하되 표기만 일본식으로 옮긴다
    ("₩150만"은 일본 독자가 읽는 형태가 아니다 → "150万ウォン") */
 const FIELD_JA: Record<string, string> = {
+  "€400~": "€400〜",
+  "€1,100~": "€1,100〜",
+  "₩350K~₩5M": "35万〜500万ウォン",
   "공식 미기재": "公式未掲載",
   "미발표": "未発表",
   "다양": "イベントにより異なる",
@@ -792,6 +816,9 @@ const VENUE_JA: Record<string, string> = {
 
 /* zh 필드 사전 (간체). 통화는 원문 통화 유지, 표기만 현지식 */
 const FIELD_ZH: Record<string, string> = {
+  "€400~": "€400起",
+  "€1,100~": "€1,100起",
+  "₩350K~₩5M": "35万〜500万韩元",
   "공식 미기재": "官方未公布",
   "미발표": "尚未公布",
   "다양": "视赛事而定",
@@ -870,6 +897,9 @@ const SCHEMA_DESC_ZH: Record<string, string> = {
 
 /* zh-hant 필드 사전 (번체) */
 const FIELD_HANT: Record<string, string> = {
+  "€400~": "€400起",
+  "€1,100~": "€1,100起",
+  "₩350K~₩5M": "35萬〜500萬韓元",
   "공식 미기재": "官方未公布",
   "미발표": "尚未公布",
   "다양": "視賽事而定",
@@ -956,6 +986,9 @@ const PAREN_HANT: Record<string, string> = {
    ★ 스페인어는 천단위 구분이 점(.)이고 소수점이 쉼표(,)다 — 영어와 반대.
      "€5,300"을 그대로 두면 스페인어 독자에겐 "5.3유로"로 읽힌다. */
 const FIELD_ES: Record<string, string> = {
+  "€400~": "desde €400",
+  "€1,100~": "desde €1.100",
+  "₩350K~₩5M": "350 mil – 5 M KRW",
   "공식 미기재": "No publicado",
   "미발표": "Por confirmar",
   "다양": "Según el evento",
