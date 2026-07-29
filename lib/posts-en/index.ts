@@ -41,6 +41,7 @@ import { POST as wptAustralia2026Guide } from "./wpt-australia-2026-guide";
 import { POST as eptBarcelona2026Guide } from "./ept-barcelona-2026-guide";
 import { POST as aptIncheon2026Guide } from "./apt-incheon-2026-guide";
 import { POST as koreaPokerMarathon2026 } from "./korea-poker-marathon-2026";
+import { POST as wsop2026TournamentGuide } from "./wsop-2026-tournament-guide";
 
 /**
  * 영어(en) 블로그 포스트.
@@ -48,6 +49,7 @@ import { POST as koreaPokerMarathon2026 } from "./korea-poker-marathon-2026";
  * 슬러그는 한국어 글과 동일하게 맞춰 hreflang 상호 링크가 성립하도록 한다.
  */
 export const EN_POSTS: Post[] = [
+  wsop2026TournamentGuide,
   holdemWhenToFold,
   holdemContinuationBet,
   holdem3bet,
