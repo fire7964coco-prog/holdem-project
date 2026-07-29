@@ -1014,12 +1014,13 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/wsop-2026-tournament-guide" />
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/wsop-2026-tournament-guide" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/wsop-2026-tournament-guide" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/wsop-2026-tournament-guide" />
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/wsop-2026-tournament-guide" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/ja/blog/wsop-2026-tournament-guide" />
   </url>
 
-  <!-- 다국어 블로그 포스트 (455편) -->
+  <!-- 다국어 블로그 포스트 (456편) -->
 
   <url>
     <loc>https://www.holdemmaster.com/en/blog/apt-incheon-2026-guide</loc>
@@ -2620,6 +2621,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/wsop-2026-tournament-guide" />
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/wsop-2026-tournament-guide" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/wsop-2026-tournament-guide" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/wsop-2026-tournament-guide" />
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/wsop-2026-tournament-guide" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/ja/blog/wsop-2026-tournament-guide" />
@@ -3450,6 +3452,19 @@
   </url>
 
   <url>
+    <loc>https://www.holdemmaster.com/es/blog/wsop-2026-tournament-guide</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/wsop-2026-tournament-guide" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/wsop-2026-tournament-guide" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/wsop-2026-tournament-guide" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/wsop-2026-tournament-guide" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/wsop-2026-tournament-guide" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/ja/blog/wsop-2026-tournament-guide" />
+  </url>
+
+  <url>
     <loc>https://www.holdemmaster.com/zh/blog/apt-incheon-2026-guide</loc>
     <lastmod>2026-07-28</lastmod>
     <changefreq>monthly</changefreq>
@@ -4252,6 +4267,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/wsop-2026-tournament-guide" />
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/wsop-2026-tournament-guide" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/wsop-2026-tournament-guide" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/wsop-2026-tournament-guide" />
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/wsop-2026-tournament-guide" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/ja/blog/wsop-2026-tournament-guide" />
@@ -5060,6 +5076,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/wsop-2026-tournament-guide" />
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/wsop-2026-tournament-guide" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/wsop-2026-tournament-guide" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/wsop-2026-tournament-guide" />
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/wsop-2026-tournament-guide" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/ja/blog/wsop-2026-tournament-guide" />

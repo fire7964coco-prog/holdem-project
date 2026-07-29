@@ -49,6 +49,7 @@ import { POST as holdemCardCounting } from "./holdem-card-counting";
 //    chicago, las-vegas, oklahoma, indiana, michigan}
 // es-US 신규 (대회 트랙)
 import { POST as comoEntrarAlWsop } from "./como-entrar-al-wsop";
+import { POST as wsop2026TournamentGuide } from "./wsop-2026-tournament-guide";
 import { POST as pokerCasinoPrimeraVez } from "./poker-casino-primera-vez";
 import { POST as propinaDealerPoker } from "./propina-dealer-poker";
 import { POST as cuantoDineroLlevarPoker } from "./cuanto-dinero-llevar-poker";
@@ -59,6 +60,7 @@ import { POST as cuantoDineroLlevarPoker } from "./cuanto-dinero-llevar-poker";
  * 슬러그는 한국어/영어/일본어 글과 동일하게 맞춰 hreflang 상호 링크가 성립하도록 한다.
  */
 export const ES_POSTS: Post[] = [
+  wsop2026TournamentGuide,
   // Rules 필라 (6/6)
   texasHoldemRulesForBeginners,
   holdemGameOrder,
