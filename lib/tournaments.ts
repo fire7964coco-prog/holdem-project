@@ -732,26 +732,6 @@ const RAW_TOURNAMENTS: Tournament[] = [
     sourceTier: null,
     verifiedAt: "2026-07-29",
   },
-  {
-    id: "hpl",
-    name: "홀덤펍 리그 (HPL)",
-    type: "domestic",
-    startDate: null,
-    endDate: null,
-    dateLabelOverride: "매월 상시 진행",
-    location: "전국 홀덤펍 참가 매장",
-    city: "Seoul",
-    country: "KR",
-    venue: "전국 홀덤펍",
-    buyin: "무료~소액",
-    emoji: "🍺",
-    color: "bg-green-500/15 text-green-400 border-green-500/30",
-    // ⚠️ 특정 대회가 아니라 상시 리그 카테고리다. 링크할 공식 출처가 존재하지 않는다.
-    //    아래 "국내 대회 소개" 섹션에 같은 내용이 있으므로 일정표에서 뺄지 검토 대상.
-    sourceUrl: null,
-    sourceTier: null,
-    verifiedAt: null,
-  },
 ];
 
 /**
