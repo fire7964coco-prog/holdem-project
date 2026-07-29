@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "WSOP 2026은 5월 26일~7월 15일 Horseshoe·Paris Las Vegas에서 100개 이벤트를 치렀고, 총 251,899 엔트리로 역대 최다 참가 기록을 세웠습니다. 메인이벤트(#82)는 9,208 엔트리·상금풀 $85,634,400로 역대 네 번째 규모였고, 참가국은 111개국으로 신기록입니다. 마지막 브레이슬릿을 가리는 파이널 테이블은 8월 3일 ESPN2, 4~5일 ESPN에서 중계되며 우승 상금은 $10,000,000입니다.",
   category: "토너먼트",
   date: "2026-06-16",
-  updated: "2026-07-28",
+  updated: "2026-07-29",
   keepImagesInBody: true,
   readTime: "10분",
   emoji: "🏆",
@@ -161,10 +161,15 @@ WSOP(World Series of Poker)는 1970년부터 이어진 세계 최대 포커 토�
 | #24 High Roller 6-Handed | $25,000 | Artur Martirosian (러시아) | $1,286,285 |
 | #29 $50K High Roller | $50,000 | Santhosh Suvarna (인도) | $1,922,870 |
 | #36 $100K High Roller | $100,000 | Yuri Dzivielevski (브라질) | $2,841,432 |
+| #72 Mini Main Event | $1,000 | **Daisuke Ogita (일본)** | **$1,000,000** |
 
 </div>
 
-일본의 Naoya Kihara가 이번 시리즈에서만 **브레이슬릿 2개**(#17 2-7 Lowball Draw 챔피언십, #23 세븐카드 스터드 챔피언십)를 따냈습니다. 둘 다 노리밋 홀덤이 아니라 **믹스드 게임 챔피언십**이라는 점이 눈에 띕니다. 한국 선수의 2026 브레이슬릿 획득은 확인되지 않았습니다.
+==r:2026년 일본은 브레이슬릿 3개를 가져갔습니다.== 일본의 Naoya Kihara가 이번 시리즈에서만 **2개**(#17 2-7 Lowball Draw 챔피언십 $428,923, #23 세븐카드 스터드 챔피언십 $301,970)를 따냈습니다. 둘 다 노리밋 홀덤이 아니라 **믹스드 게임 챔피언십**이라는 점이 눈에 띕니다. #17이 통산 두 번째 브레이슬릿인데 **직전 우승이 2012년**이었으니 14년 만이었고, 사흘 뒤 #23으로 세 번째를 채웠습니다.
+
+여기에 **Daisuke Ogita가 #72 Mini Main Event에서 $1,000,000**을 받았습니다. 바이인 $1,000짜리 이벤트에서 나온 백만 달러입니다.
+
+한국 선수의 2026 브레이슬릿 획득은 확인되지 않았습니다.
 
 ---
 
@@ -321,7 +326,7 @@ Step 4를 $150에 직접 바이인해도 되고, $1,000짜리 Bracelet Step이�
 
 ==r:일본이 222명을 보내는 동안 한국은 순위표에 이름조차 올리지 못했습니다.== 인구도 포커 인구도 일본이 더 많다는 점을 감안해도, 이건 실력 격차가 아니라 **경로 정보의 격차**에 가깝습니다. 일본은 아마추어가 밟는 온라인 위성 경로가 커뮤니티에 정리돼 있고, 방송도 현지 채널(Abema TV)로 중계됩니다.
 
-실제로 이번 시리즈에서 브레이슬릿 2개를 딴 것도 일본의 Naoya Kihara였습니다. 한국 선수의 2026 브레이슬릿 획득은 확인되지 않았습니다.
+실제로 이번 시리즈 브레이슬릿 3개가 일본으로 갔습니다. Naoya Kihara가 2개(#17·#23), Daisuke Ogita가 #72 Mini Main Event에서 $1,000,000. 한국 선수의 2026 브레이슬릿 획득은 확인되지 않았습니다.
 
 국내 쪽 기록으로는 WSOP 유럽(WSOPE, 체코 프라하) 메인이벤트에 **정승묵(7high), 임요환, 김기영, 이우수** 등이 참가한 이력이 있습니다. 라스베이거스 본대회 참가 현황은 WSOP 공식 사이트(wsop.com)의 Player Database에서 국적 필터로 직접 확인할 수 있습니다.
 
@@ -384,7 +389,7 @@ A. 이전 대회 결과가 궁금하다면 [WSOP 2025 완전 가이드](/blog/ws
 
 ## 출처
 
-이 글의 수치·규정은 아래 1차 출처를 직접 열어 대조했습니다. **확인일: 2026년 7월 28일.**
+이 글의 수치·규정은 아래 1차 출처를 직접 열어 대조했습니다. **확인일: 2026년 7월 28일** (일본 브레이슬릿 항목은 **7월 29일** 재확인).
 
 - **WSOP 공식 등록 규정** — [wsop.com/registration](https://www.wsop.com/registration/) · 필수 계정(Caesars Rewards + WSOP LIVE), Versailles Ballroom 확인 구역, 카드 건당 $10,000 한도 및 3% 수수료, 와이어 $100,000 최소, 주소 없는 신분증 시 2차 서류 요구, 최초 등록 1시간 전 도착 권장
 - **WSOP 공식 방송 안내** — [wsop.com/news — Main Event Broadcast](https://www.wsop.com/news/world-series-of-poker-begins-main-event-broadcast/) · 국제 중계망(ESPN·Eurosport·TSN·Abema TV 등), 파이널 테이블 8월 3~5일
@@ -393,6 +398,11 @@ A. 이전 대회 결과가 궁금하다면 [WSOP 2025 완전 가이드](/blog/ws
 - **PokerNews 파이널 테이블 확정 기사** — [pokernews.com](https://www.pokernews.com/news/2026/07/2026-wsop-main-event-final-table-set-jumalon-leads-51869.htm) · 9명 전원 칩 카운트 및 1~9위 상금 구조. *(PokerNews는 WSOP 공식 라이브 리포팅 파트너로 현장 칩카운트를 직접 기록하는 인가 매체입니다. 다만 모회사가 Flutter 계열이라 운영사 비교·추천 목적으로는 인용하지 않습니다.)*
 - **Pokerfuse 국가별 참가 분석** — [pokerfuse.com](https://pokerfuse.com/latest-news/2026/7/international-participation-climbs-again-wsop/) · 111개국 신기록(직전 2024년 108 / 2025년 103), 비미국인 3,574명·38.8%, 국가별 상위 10개국 수치
 - **시리즈 총계** — [CardPlayer 2026 WSOP By The Numbers](https://www.cardplayer.com/poker-news/1684562-record-entries-of-more-than-250000-headline-staggering-stats-for-2026-world-series-of-poker) · 251,899 엔트리, $469,975,059 지급, 35,157 인더머니, #63 22,811 엔트리, 레이디스 1,475 엔트리
+- **일본 브레이슬릿 — 이벤트별 원문** *(2026-07-29 보강)*
+  · [PokerNews Event #17 라이브리포팅](https://www.pokernews.com/tours/wsop/2026-wsop/event-17-10000-no-limit-2-7-championship/) — Naoya Kihara(일본) 우승 $428,923, 준우승 David Lin, 198 엔트리·상금풀 $1,841,400, **통산 두 번째**(직전 2012년 Event 34)
+  · [PokerNews Event #23 라이브리포팅](https://www.pokernews.com/tours/wsop/2026-wsop/event-23-seven-card-stud-championship/) — Naoya Kihara 우승 $301,970, 준우승 James Cheung, 130 엔트리·상금풀 $1,209,000, **통산 세 번째**
+  · [PokerNews 2026 WSOP 전체 일정·결과표](https://www.pokernews.com/tours/wsop/2026-wsop/schedule.htm) — 완료 이벤트 **100개**, 일본 우승자 3건(Kihara ×2 + Daisuke Ogita #72 Mini Main Event $1,000,000)
+  · [WSOP 공식 — Bracelets Won as the Main Event Marches On](https://www.wsop.com/news/wsop-updates-2026-bracelets-won-as-the-main-event-marches-on/) — Event #72 Daisuke Ogita(Japan) 공식 확인
 
 > ⚠️ 대회 규정·수수료·결제 수단은 시즌마다 바뀝니다. **실제 등록 전에는 반드시 WSOP 공식 등록 페이지에서 다시 확인하세요.** 특히 카드 수수료율과 와이어 최소 금액은 변경 이력이 있는 항목입니다.
 
@@ -401,7 +411,7 @@ A. 이전 대회 결과가 궁금하다면 [WSOP 2025 완전 가이드](/blog/ws
 ## 관련 글
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
-  <a href="/tournaments/" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/tournaments" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">필라</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">홀덤 대회 완벽 가이드</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">국내외 토너먼트·2026 일정 전체</div>
