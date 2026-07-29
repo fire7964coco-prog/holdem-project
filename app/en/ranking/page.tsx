@@ -9,6 +9,12 @@ export const metadata: Metadata = {
   description:
     "Our Top 5 online poker sites for 2026, tested end-to-end from signup to withdrawal. Licensing, security, traffic, and bonuses compared.",
   alternates: { canonical: `${SITE}/en/ranking` },
+  // twitter:*를 안 주면 루트 레이아웃의 한국어가 그대로 나간다
+  twitter: {
+    card: "summary_large_image",
+    title: "Best Online Poker Sites 2026 — Top 5 Tested & Ranked | HoldemMaster",
+    description: "Our Top 5 online poker sites for 2026, tested end-to-end from signup to withdrawal. Licensing, security, traffic, and bonuses compared.",
+  },
   openGraph: {
     title: "Best Online Poker Sites 2026 — HoldemMaster",
     description: "Top 5 online poker sites, independently tested and ranked for 2026.",

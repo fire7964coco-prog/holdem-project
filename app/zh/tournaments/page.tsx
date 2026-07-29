@@ -37,6 +37,12 @@ export function generateMetadata(): Metadata {
       canonical: `${SITE}/${LOCALE}/tournaments`,
       languages: TOURNAMENT_HREFLANG,
     },
+    // twitter:*를 안 주면 루트 레이아웃의 한국어가 그대로 나간다 (X 공유 시 노출)
+    twitter: {
+      card: "summary_large_image",
+      title: `${title} | 德扑大师`,
+      description: "全球德州扑克赛事日程——日期、买入、场馆，每一场都附主办方官网链接。",
+    },
     openGraph: {
       title: `${title} | 德扑大师`,
       description: "全球德州扑克赛事日程——日期、买入、场馆，每一场都附主办方官网链接。",

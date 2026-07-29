@@ -16,6 +16,12 @@ export const metadata: Metadata = {
       "en-US": `${SITE}/en/calculator`,
     },
   },
+  // twitter:*를 안 주면 루트 레이아웃의 한국어가 그대로 나간다
+  twitter: {
+    card: "summary_large_image",
+    title: "Poker Odds Calculator — Outs, Pot Odds, Hand Rank, SPR & ICM | HoldemMaster",
+    description: "Free Texas Hold'em calculator: outs & draw odds, pot odds, hand evaluator, starting hand strength, SPR, tournament M value, and ICM — 7 tools in one.",
+  },
   openGraph: {
     title: "Poker Odds Calculator — HoldemMaster",
     description:

@@ -17,6 +17,12 @@ export function intlBlogIndexMetadata(locale: SecondaryLocale): Metadata {
     title: { absolute: title },
     description: t.blogIntro,
     alternates: { canonical: url },
+    // twitter:*를 안 주면 루트 레이아웃의 한국어가 그대로 나간다
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description: t.blogIntro,
+    },
     openGraph: {
       type: "website",
       url,

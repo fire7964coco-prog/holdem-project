@@ -24,9 +24,28 @@ function isFeedAppRoute(pathname: string): boolean {
 }
 
 
+/**
+ * 「맨 위로」 버튼의 스크린리더 라벨.
+ * 예전엔 한국어가 하드코딩돼 있어서, 일본어·스페인어 페이지에서도
+ * 스크린리더가 「맨 위로 이동」을 한국어로 읽었다.
+ */
+const BACK_TO_TOP: Record<string, string> = {
+  en: "Back to top", ja: "ページ上部へ戻る", es: "Volver arriba",
+  zh: "回到顶部", "zh-hant": "回到頂部", ar: "العودة إلى الأعلى",
+  pt: "Voltar ao topo", id: "Kembali ke atas", ms: "Kembali ke atas",
+  vi: "Về đầu trang", hi: "शीर्ष पर जाएँ", de: "Nach oben",
+  tr: "Başa dön", fr: "Retour en haut", ru: "Наверх",
+  it: "Torna su", pl: "Do góry", th: "กลับไปด้านบน",
+  fa: "بازگشت به بالا", sw: "Rudi juu", bn: "উপরে ফিরে যান",
+  ro: "Înapoi sus", fil: "Bumalik sa itaas", uk: "Догори", he: "חזרה למעלה",
+};
+
 /** 스크롤 300px 이상 시 나타나는 맨 위로 버튼 */
 export function ScrollToTopButton() {
   const [visible, setVisible] = useState(false);
+  const pathname = usePathname();
+  const locale = localeFromPath(pathname);
+  const label = (locale && BACK_TO_TOP[locale]) || "맨 위로 이동";
 
   useEffect(() => {
     const onScroll = () => setVisible(window.scrollY > 300);
@@ -37,7 +56,7 @@ export function ScrollToTopButton() {
   return (
     <button
       onClick={() => smoothScrollWindowTo(0)}
-      aria-label="맨 위로 이동"
+      aria-label={label}
       className="fixed bottom-6 right-4 z-50 w-11 h-11 rounded-full flex items-center justify-center shadow-lg transition-all duration-200 hover:scale-110 active:scale-95"
       style={{
         background: "linear-gradient(135deg,#d4af37,#f0d060)",

@@ -37,6 +37,12 @@ export function generateMetadata(): Metadata {
       canonical: `${SITE}/${LOCALE}/tournaments`,
       languages: TOURNAMENT_HREFLANG,
     },
+    // twitter:*를 안 주면 루트 레이아웃의 한국어가 그대로 나간다 (X 공유 시 노출)
+    twitter: {
+      card: "summary_large_image",
+      title: `${title}｜ホールデムマスター`,
+      description: "国内・海外のポーカー大会を、日程・バイイン・会場と公式サイトのリンクつきで一覧に。",
+    },
     openGraph: {
       title: `${title}｜ホールデムマスター`,
       description:

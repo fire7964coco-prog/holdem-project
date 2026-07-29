@@ -11,6 +11,12 @@ export const metadata: Metadata = {
   alternates: { canonical: `${SITE}/en/glossary` },
   // 카니발 방지: holdem-glossary 필라가 "poker glossary" 키워드 소유. 도구는 SERP 제외.
   robots: { index: false, follow: true },
+  // twitter:*를 안 주면 루트 레이아웃의 한국어가 그대로 나간다
+  twitter: {
+    card: "summary_large_image",
+    title: "Poker Glossary — Texas Hold'em Terms Explained (A–Z) | HoldemMaster",
+    description: "A clear, accurate glossary of Texas Hold'em terms: nuts, outs, pot odds, 3-bet, c-bet, ICM, SPR, kicker, tilt and more. Search or filter 45+ essential poker terms.",
+  },
   openGraph: {
     title: "Poker Glossary — HoldemMaster",
     description: "45+ essential Texas Hold'em terms, defined clearly and correctly. Search or filter by category.",
