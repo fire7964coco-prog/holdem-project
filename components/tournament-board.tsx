@@ -12,6 +12,7 @@ import {
   localizedDateRange,
   localizeField,
   localizeCity,
+  localizedNote,
   type BoardLocale,
 } from "@/lib/tournaments-i18n";
 import { SITE } from "@/lib/site";
@@ -177,6 +178,17 @@ export default function TournamentBoard({
                     </div>
                   </div>
                 </div>
+
+                {/* ★ 배지 — GTD 보증금·엔트리 수·메인이벤트 날짜가 여기 들어간다.
+                    번역이 없는 대회는 undefined라서 아예 안 그린다(한국어 폴백 금지). */}
+                {localizedNote(t, locale) && (
+                  <div className="flex items-start gap-1.5 bg-primary/8 border border-primary/20 rounded-lg px-2.5 py-2">
+                    <Star className="w-3 h-3 text-primary flex-shrink-0 mt-0.5" aria-hidden />
+                    <span className="text-[11px] text-foreground/80 leading-snug">
+                      {localizedNote(t, locale)}
+                    </span>
+                  </div>
+                )}
 
                 <div className="flex flex-wrap items-center gap-2 mt-auto">
                   {t.sourceUrl && (
