@@ -13,7 +13,7 @@ import { SITE } from "./site";
  * ⚠️ `scripts/generate-sitemap.mjs`는 .mjs라 이 파일을 import하지 않는다.
  *    거기 `TOURNAMENT_LOCALES`도 함께 갱신할 것.
  */
-export const TOURNAMENT_LOCALES = ["en", "ja", "zh"] as const;
+export const TOURNAMENT_LOCALES = ["en", "ja", "zh", "zh-hant"] as const;
 
 export const TOURNAMENT_HREFLANG: Record<string, string> = {
   ko: `${SITE}/tournaments`,
@@ -21,7 +21,7 @@ export const TOURNAMENT_HREFLANG: Record<string, string> = {
     TOURNAMENT_LOCALES.map((l) => [
       // zh는 간체이므로 zh-Hans로 명시한다. 그냥 "zh"로 두면
       // 나중에 추가할 번체판(zh-Hant)과 구글이 구분하지 못한다.
-      l === "zh" ? "zh-Hans" : l,
+      l === "zh" ? "zh-Hans" : l === "zh-hant" ? "zh-Hant" : l,
       `${SITE}/${l}/tournaments`,
     ]),
   ),

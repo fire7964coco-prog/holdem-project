@@ -102,13 +102,13 @@ const siteToday = todayIso();
  * altsForSlug()를 못 쓴다. 로케일을 추가하면 이 배열에만 넣으면 된다.
  * ★ app/<locale>/tournaments/page.tsx 를 만들기 전에 여기 먼저 넣으면 사이트맵이 404를 가리킨다.
  */
-const TOURNAMENT_LOCALES = ["en", "ja", "zh"];
+const TOURNAMENT_LOCALES = ["en", "ja", "zh", "zh-hant"];
 
 const tournamentAlts = [
   { hreflang: "ko", href: `${SITE}/tournaments` },
   ...TOURNAMENT_LOCALES.map((l) => ({
     // zh는 간체 → zh-Hans. lib/tournaments-hreflang.ts와 같은 규칙을 쓴다
-    hreflang: l === "zh" ? "zh-Hans" : HTML_LANG[l] || l,
+    hreflang: l === "zh" ? "zh-Hans" : l === "zh-hant" ? "zh-Hant" : HTML_LANG[l] || l,
     href: `${SITE}/${l}/tournaments`,
   })),
   { hreflang: "x-default", href: `${SITE}/en/tournaments` },

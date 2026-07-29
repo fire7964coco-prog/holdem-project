@@ -363,7 +363,114 @@ const zh: BoardStrings = {
   ],
 };
 
-export const BOARD_STRINGS: Partial<Record<BoardLocale, BoardStrings>> = { en, ja, zh };
+
+/* ────────────────────────────────────────────────────────────
+   zh-hant — 번체(대만·홍콩·마카오). **모든 로케일 중 조건이 가장 좋다** (zh-hant.md §0).
+   톤은 "장벽 설명"이 아니라 "선택지가 많다"여야 한다. zh(본토)와 정반대.
+
+   ★ 구글 자동완성 실측 (2026-07-29)
+     台灣撲克賽事 · 台灣/台北 德州撲克 賽事 · 濟州島 撲克 賽事 ★★★ ·
+     澳門 德州撲克 賽事 · 華人 德州撲克 賽事 · 亞洲 撲克 賽事 ·
+     德州撲克 最大 賽事 · 德州撲克國際賽事 · 德州撲克 比賽獎金
+   → 대만 12 + 한국 17을 들고 있는 우리와 정확히 겹친다.
+     대만 여권은 한국 90일 무비자 + K-ETA 면제라 한국 대회 9개가 전부 열려 있다
+     (본토는 제주만 열려 있는 것과 대조).
+
+   🔒 편집 가드레일 (zh-hant.md §B-4)
+     · ★ **"대만은 홀덤이 합법"이라고 쓰면 틀린다.** 법원이 보는 건 대회 "구조"다.
+       칩이 경기 점수로만 쓰이고 상금이 총 순위에 연동될 때 競技로 인정될 여지가 있는 것이지,
+       현금 직접 바이인·즉시 환전·단판이 금액을 정하는 구조는 도박으로 인정될 위험이 있다.
+       → 조건을 빼고 "합법"만 쓰면 독자를 위험에 빠뜨린다. 반드시 함께 쓴다.
+     · 홍콩은 정반대다. 《賭博條例》 제148장 — 해외 사이트라도 홍콩에서 참여하면 위반이 될 수 있다.
+       홍콩 독자에게 온라인 새틀라이트를 권하지 않는다. 빠뜨리지도 않는다.
+     · 판례의 심급·사건번호는 아직 미확인(zh-hant.md 미해결 #1) → "법원 견해"로 쓰고 단정하지 않는다.
+   ──────────────────────────────────────────────────────────── */
+const zhHant: BoardStrings = {
+  htmlLang: "zh-Hant",
+  ogLocale: "zh_TW",
+
+  metaTitle: (next, mmdd) => {
+    const hooked = `2026德州撲克賽事賽程 | 下一場 ${next} ${mmdd}`;
+    return next && hooked.length <= 34 ? hooked : "2026德州撲克賽事賽程 | 台灣與亞洲賽程一覽";
+  },
+  metaDescription: (todayDot, ongoing) =>
+    clamp(`截至${todayDot}。${ongoing}台北、濟州島、仁川、馬尼拉到拉斯維加斯，2026年德州撲克賽事的日期、買入與場館，每一場都附主辦方官網連結。`, 118),
+
+  h1: "2026 德州撲克賽事賽程",
+  heroLead:
+    "以下每一場都是從主辦方官網上直接確認的，每張卡片都連到我們讀到它的那一頁。賽事狀態由日期自動計算，所以系列賽進行中也不會顯示過期資訊。賽程有可能變動——最後還是以官網為準。",
+  asOf: (dot) => `截至 ${dot}`,
+
+  filterAll: "全部",
+  filterUpcoming: "即將開始",
+  filterOngoing: "進行中",
+  filterEnded: "已結束",
+
+  colDates: "日期",
+  colBuyin: "買入",
+  colVenue: "場館",
+
+  status: { upcoming: "即將開始", ongoing: "進行中", ended: "已結束" },
+  yearRound: "全年",
+  officialSite: "官方網站",
+  buyinUnlisted: "官方未公布",
+
+  countsLine: (total, countries) => `${total} 場賽事 · ${countries} 個國家與地區`,
+  sourceNote:
+    "如果主辦方自己的頁面還停留在去年的資訊，我們寧可不放連結，也不把你帶到那一頁。",
+  emptyState: "沒有符合這個篩選條件的賽事。",
+  koLink: "韓文版賽程 →",
+
+  faqHeading: "常見問題",
+  faqs: [
+    {
+      q: "為什麼台灣的德州撲克賽事這麼多？",
+      a: "跟法院怎麼看「賽事結構」有關。刑法第266條的賭博罪要同時滿足射倖性、公眾得出入之場所、以財物為賭注三個要件，而台北地院曾就德州撲克作出無罪判決，理由是它具有競技性質、需要技術與策略、不是單純靠運氣，因此射倖性這一項不成立。臺灣高等檢察署的說明頁面也有相關整理。不過這是個案判斷，關鍵在結構：籌碼只作為競技積分使用、獎金連動總排名的錦標賽形式，跟現金直接買入、籌碼即時換現、單局直接決定金額的形式，在法律評價上是兩回事。這也是為什麼台灣的場子幾乎都以錦標賽在運作。",
+    },
+    {
+      q: "台灣有哪些賽事可以打？",
+      a: "這份賽程裡台灣有12場，是僅次於韓國的第二多。CTP Asia Poker Arena一個場地就撐起一年四到六個系列賽，11月的APT Championships是其中規模最大的，另外還有WPG Taiwan、TMT 20、GOP Taipei系列。每張卡片下方都有主辦方官網連結，報名與賽程細節以那裡為準。",
+    },
+    {
+      q: "去韓國打比賽需要簽證嗎？",
+      a: "台灣護照到韓國是90日免簽，而且K-ETA的臨時免除已延長到2026年12月31日，可以省下₩10,000的申請費。也就是說這份賽程裡韓國的9場——濟州的5場加上仁川的APT、APPT、WPT Seoul、GOP Incheon II——全部都能去。⚠️ 有一點容易漏掉：從2026年1月1日起韓國廢除紙本入境卡，改成入境前72小時內線上提交電子入境申報（e-Arrival）。另外K-ETA免除到2026年12月31日為止，之後的行程要再確認。",
+    },
+    {
+      q: "德州撲克最大的賽事是哪一個？",
+      a: "WSOP（世界撲克系列賽）。2026年是5月26日到8月5日在拉斯維加斯，共100條金手鍊，主賽事9,208人次報名、獎池$85,634,400，決賽桌8月3到5日由ESPN轉播。亞洲這邊規模最大的是APT，2026年仁川站保證獎金超過40億韓元。",
+    },
+    {
+      q: "比賽獎金要繳稅嗎？",
+      a: "台灣採最低稅負制，跟韓國、日本的做法差很多。個人海外所得達NT$100萬就要計入基本所得額、產生申報義務，但基本所得額在NT$750萬以下是不用繳基本稅額的（免稅額已從670萬調高到750萬）。超過的部分才以「（基本所得額−750萬）×20%」計算。而且競技、競賽及機會中獎的獎金，是可以從收入額中減除成本與必要費用後的餘額來認定所得的——買入費用有機會被算進去。實際情形請以財政部的說明與個人狀況為準。",
+    },
+    {
+      q: "有哪些賽事是有錢也進不去的？",
+      a: "有三種。Triton超高額系列賽是推薦制的，沒有衛星賽，光有錢買不到席位。韓國的Holdem Masters用邀請券，完全沒有現金買入的管道。APT Championships的開幕日是業界專場，公開賽程要從第二天算起。其餘絕大多數都是公開報名的。",
+    },
+    {
+      q: "Natural8跟GGPoker是同一個地方嗎？",
+      a: "是同一套軟體、同一個玩家池，Natural8是面向亞洲的品牌。判斷牌局規模時這一點很實際——看到的人數是合併後的。不過線上的部分各地規定不同：香港《賭博條例》第148章規定，即使投注網站設在境外，香港居民在香港參與也可能違法，所以這頁只提供線下賽事的賽程與官方連結，線上路徑請依自己所在地的規定判斷。",
+    },
+  ],
+
+  localHeading: "出發前該知道的",
+  localBlocks: [
+    {
+      title: "韓國9場全部都能去，但入境流程2026年變了",
+      body: "台灣護照到韓國90日免簽，K-ETA臨時免除延長到2026年12月31日。真正容易踩到的是另一件事：從2026年1月1日起韓國廢除紙本入境卡，改為入境前72小時內線上提交電子入境申報。濟州的Triton、APT秋季站、GOP Jeju，仁川的APT、APPT、WPT Seoul都適用。",
+    },
+    {
+      title: "申報和繳稅是兩回事",
+      body: "海外所得達NT$100萬就有申報義務，但基本所得額在NT$750萬以下時基本稅額是0。也就是說中等規模的獎金通常要申報、不用繳。而且獎金可以減除成本與必要費用，買入有機會被認列。這跟韓國在發獎時就先扣4.4%、日本要自行辦理確定申告的做法都不一樣。",
+    },
+    {
+      title: "台灣與香港的規則方向相反",
+      body: "台灣的法院對錦標賽形式的德州撲克有過競技性質的認定，這是台灣賽事密度高的結構性背景；香港則是《賭博條例》第148章，除政府明文批准者外一律不合法，且境外網站也可能適用。同樣是繁體讀者，兩地的判斷基準不同，這頁只處理線下賽程資訊。",
+    },
+  ],
+};
+
+export const BOARD_STRINGS: Partial<Record<BoardLocale, BoardStrings>> = { en, ja, zh, "zh-hant": zhHant };
 
 /**
  * 대회명 현지 표기.
@@ -390,6 +497,7 @@ function nameMaps(
 ): [Record<string, string>, Record<string, string>] | null {
   if (locale === "ja") return [CITY_JA, PAREN_JA];
   if (locale === "zh") return [CITY_ZH, PAREN_ZH];
+  if (locale === "zh-hant") return [CITY_HANT, PAREN_HANT];
   return null;
 }
 
@@ -404,6 +512,12 @@ const NAME_OVERRIDE: Partial<Record<BoardLocale, Record<string, string>>> = {
     "holdem-masters-8": "第8回 Holdem Masters",
     "wsop-2026": "第57回 WSOP 2026",
     "wpt-world-championship": "WPT ワールドチャンピオンシップ",
+  },
+  "zh-hant": {
+    "holdem-masters-7": "第7屆 Holdem Masters",
+    "holdem-masters-8": "第8屆 Holdem Masters",
+    "wsop-2026": "第57屆 WSOP 2026",
+    "wpt-world-championship": "WPT 世界錦標賽",
   },
   zh: {
     "holdem-masters-7": "第7届 Holdem Masters",
@@ -619,9 +733,94 @@ const SCHEMA_DESC_ZH: Record<string, string> = {
     "PokerStars APPT的2026年马尼拉站，在Okada Manila举行，系列赛总保证₱132M。",
 };
 
+
+/* zh-hant 필드 사전 (번체) */
+const FIELD_HANT: Record<string, string> = {
+  "공식 미기재": "官方未公布",
+  "미발표": "尚未公布",
+  "다양": "視賽事而定",
+  "초대권 전용": "僅限邀請",
+  "초대권 전용 (현금 바이인 없음)": "僅限邀請（無現金買入）",
+  "메인 ₩150만": "主賽 150萬韓元",
+  "메인 ₩220만": "主賽 220萬韓元",
+  "메인 ₩230만": "主賽 230萬韓元",
+  "메인 ₩250만": "主賽 250萬韓元",
+  "메인 ₩270만": "主賽 270萬韓元",
+  "₩30만~₩800만": "30萬〜800萬韓元",
+  "₩90만~": "90萬韓元起",
+  "~₩700만 (하이롤러)": "至700萬韓元（高額桌）",
+  "€5,300 (메인)": "€5,300（主賽）",
+  "프리롤~NT$120,000": "免費賽〜NT$120,000",
+  "미정 (공식 미기재)": "待定（官方未公布）",
+  "야자수 서울센터": "YAJASU 首爾中心",
+  "Hilton Prague (King's Casino Prague 운영)": "布拉格希爾頓（King's Casino Prague 營運）",
+  "(ME 파이널 8/3~5)": "（主賽決賽桌 8/3〜5）",
+  "2026.12 예정 (날짜 미발표)": "2026年12月預定（日期未公布）",
+};
+
+/* ★ 번체는 간체와 음역이 다른 도시가 실제로 있다.
+   悉尼/雪梨(Sydney) · 蒙特卡洛/蒙地卡羅 · 巴塞罗那/巴塞隆納 ·
+   新奥尔良/紐奧良 · 谢菲尔德/雪菲爾 — 간체판을 번체 변환만 하면 대만 독자에게 어색해진다. */
+const CITY_HANT: Record<string, string> = {
+  "Aix-en-Provence": "艾克斯普羅旺斯", "Atlantic City": "大西洋城", Austin: "奧斯汀",
+  Barcelona: "巴塞隆納", Bratislava: "布拉提斯拉瓦", Budva: "布德瓦",
+  "Buenos Aires": "布宜諾斯艾利斯", Calgary: "卡加利", "Castellón": "卡斯特利翁",
+  Catoosa: "卡圖薩", Cherokee: "切羅基", Cork: "科克", "Council Bluffs": "康瑟爾布拉夫斯",
+  Danville: "丹維爾", Durant: "杜蘭特", Elgin: "埃爾金", Elizabeth: "伊莉莎白",
+  "Florianópolis": "弗洛里亞諾波利斯", Fukuoka: "福岡", Gamprin: "甘普林", Glasgow: "格拉斯哥",
+  "Ha Long": "下龍", Hanover: "漢諾威", Incheon: "仁川", Jeju: "濟州", Kahnawake: "卡納瓦克",
+  Kyrenia: "凱里尼亞", "Las Vegas": "拉斯維加斯", Lincoln: "林肯", London: "倫敦",
+  Madrid: "馬德里", Manchester: "曼徹斯特", Manila: "馬尼拉",
+  "Mata de São João": "聖若昂馬塔", "Mexico City": "墨西哥城", Middelkerke: "米德爾凱爾克",
+  "Monte Carlo": "蒙地卡羅", "Monte-Carlo": "蒙地卡羅", Murcia: "穆爾西亞", Namur: "那慕爾",
+  Nassau: "拿騷", "New Orleans": "紐奧良", Osaka: "大阪", "Panama City": "巴拿馬城",
+  "Parañaque": "帕拉納克", Paris: "巴黎", "Pompano Beach": "龐帕諾比奇", Prague: "布拉格",
+  "Puerto Iguazú": "伊瓜蘇港", Robinsonville: "羅賓遜維爾", Rosario: "羅薩里奧",
+  Sanremo: "聖雷莫", "Santa Rosa": "聖羅莎", "São Paulo": "聖保羅", Sapporo: "札幌",
+  Scottsdale: "斯科茨代爾", Seogwipo: "西歸浦", Seoul: "首爾", Seville: "塞維利亞",
+  Sheffield: "雪菲爾", "St. Julian's": "聖朱利安", Stateline: "斯泰特萊恩",
+  Sydney: "雪梨", Taipei: "台北", Tallinn: "塔林", Tokyo: "東京", Toledo: "托雷多",
+  Verona: "維羅納",
+};
+
+const VENUE_HANT: Record<string, string> = {
+  "Paradise City": "百樂達斯城",
+  "Paradise City Casino": "百樂達斯城賭場",
+};
+
+/** zh-hant판 대회 설명. 수치는 원문 그대로 — §13은 언어 불변 */
+const SCHEMA_DESC_HANT: Record<string, string> = {
+  "holdem-masters-7":
+    "WPL贊助、WeLive主辦、YAJASU協辦。總獎金保證15億韓元，僅憑邀請券參賽。",
+  "wsop-2026":
+    "全球規模最大的撲克系列賽。5月26日至7月15日共100條金手鍊，主賽事9,208人次報名、獎池$85,634,400，決賽桌8月3至5日由ESPN轉播。",
+  "kpc-king-july":
+    "在濟州島LES A Casino舉行的17天撲克節。系列賽保證20億韓元，King Poker Cup主賽事保證11億韓元。",
+  "apt-incheon":
+    "亞洲最大巡迴賽APT的2026年仁川站。百樂達斯城舉辦，總保證獎金超過40億韓元，主賽事保證15億韓元。",
+  "holdem-masters-8":
+    "第8屆Holdem Masters。總獎金保證20億韓元，為該系列歷來最高，主賽事保證18億韓元。",
+  "appt-korea":
+    "PokerStars APPT的2026年韓國站，在仁川百樂達斯城舉行，主賽事保證10億韓元。",
+  "triton-jeju-2":
+    "Triton超高額系列賽本年度第二次落地濟州。14場高額賽事，買入$15,000至$200,000。",
+  "apt-jeju-fall":
+    "APT的2026年濟州秋季站。136場賽事，主賽事保證22億韓元。",
+  "wpt-seoul":
+    "WPT首次在INSPIRE娛樂度假村舉辦的賽事。46場比賽，主賽事保證10億韓元。",
+  "appt-manila":
+    "PokerStars APPT的2026年馬尼拉站，在Okada Manila舉行，系列賽總保證₱132M。",
+};
+
+const PAREN_HANT: Record<string, string> = {
+  "(Fall)": "（秋季）", "(July)": "（7月）", "(August)": "（8月）",
+  "(November)": "（11月）", "(December)": "（12月）", "(Ha Long Bay)": "（下龍灣）",
+};
+
 export function localizeCity(city: string, locale: BoardLocale): string {
   if (locale === "ja") return CITY_JA[city] ?? city;
   if (locale === "zh") return CITY_ZH[city] ?? city;
+  if (locale === "zh-hant") return CITY_HANT[city] ?? city;
   return city;
 }
 
@@ -631,6 +830,7 @@ export function localizeField(value: string | undefined, locale: BoardLocale): s
   if (locale === "en") return FIELD_EN[value] ?? value;
   if (locale === "ja") return VENUE_JA[value] ?? FIELD_JA[value] ?? value;
   if (locale === "zh") return VENUE_ZH[value] ?? FIELD_ZH[value] ?? value;
+  if (locale === "zh-hant") return VENUE_HANT[value] ?? FIELD_HANT[value] ?? value;
   return value;
 }
 
@@ -694,7 +894,7 @@ export function localizedMonthBadge(t: Tournament, locale: BoardLocale): string 
   if (locale === "en") {
     return sm === em ? MONTH_EN[sm - 1] : `${MONTH_EN[sm - 1]}–${MONTH_EN[em - 1]}`;
   }
-  if (locale === "ja" || locale === "zh") return sm === em ? `${sm}月` : `${sm}〜${em}月`;
+  if (locale !== "en") return sm === em ? `${sm}月` : `${sm}〜${em}月`;   // ja·zh·zh-hant 공통
   return sm === em ? `${sm}월` : `${sm}~${em}월`;
 }
 
@@ -743,7 +943,9 @@ export function buildLocaleSchemas(
           ? SCHEMA_DESC_JA[t.id]
           : locale === "zh"
             ? SCHEMA_DESC_ZH[t.id]
-            : undefined) ??
+            : locale === "zh-hant"
+              ? SCHEMA_DESC_HANT[t.id]
+              : undefined) ??
       t.schemaDescription,
     startDate: t.startDate,
     endDate: t.endDate,
