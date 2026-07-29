@@ -13,14 +13,16 @@
 구조도 갈아엎었다: `lib/tournaments.ts` 하나에서 카드·정렬·상태배지·메타태그·JSON-LD가 전부 파생된다.
 → 날짜만 맞으면 배포할 때마다 자동 갱신. "WSOP 진행중 13일 노출" 사고의 구조적 원인 제거.
 
-**Phase 2 진행 중** — 로케일판 `/(locale)/tournaments`
-- ✅ `en` (2026-07-29)
-- ✅ `ja` (2026-07-29)
-- ⬜ **`zh` ← 다음**
-- ⬜ `zh-hant`
-- ⬜ `es`
+**Phase 2 완료 (2026-07-29)** — 로케일판 `/(locale)/tournaments` 5개 전부 배포
+✅ `en` · ✅ `ja` · ✅ `zh` · ✅ `zh-hant` · ✅ `es`
+hreflang 6페이지 상호참조 성립 (ko · en · ja · zh-Hans · zh-Hant · es).
 
-### 다음 로케일 작업 절차 (그대로 따를 것)
+**다음 후보** (사용자 판단 필요)
+- `de` · `pt` · `id` 등 나머지 로케일로 확장 — 절차는 아래 8단계 그대로
+- ko `/tournaments` 본문에 로케일 전환 링크 노출 (지금은 로케일→ko 단방향만 있음)
+- 조사 자산 포스팅화 (ICM 딜 12건 · 3국 세금 대조 · 영종도 10월 말 동시 개최 등)
+
+### 로케일 추가 절차 (5개 만들며 확정된 것)
 
 1. `docs/market-profile/<locale>.md` 정독 (비자·세금·통화·사업자·합법성)
 2. **현지 서제스트/질문 툴로 실검색 형태소 실측** — 건너뛰지 말 것.
@@ -29,13 +31,19 @@
    `ポーカー 大会 韓国` 50 이 잡혔다 → **우리 데이터가 가장 두꺼운 곳(KR17·TW12·PH5)과 정확히 겹친다.**
    zh-hant는 대만이 12개라 같은 논리가 더 세게 먹힐 가능성이 높다.
 3. `lib/tournaments-i18n.ts`에 `BoardStrings` 추가 + `BOARD_STRINGS`에 등록
-4. **필드 사전**: `FIELD_<LOC>`(바이인·회장 15~20개 값), `CITY_<LOC>`(67개 도시), `SCHEMA_DESC_<LOC>`(10건)
-   - ★ 도시명은 그 자체가 검색어다. 라틴으로 두면 지역 검색을 통째로 놓친다.
+4. **필드 사전**: `FIELD_<LOC>`(15~20개 값), `CITY_<LOC>`, `PAREN_<LOC>`, `SCHEMA_DESC_<LOC>`(10건),
+   서수 대회명이 필요하면 `NAME_OVERRIDE`
+   - ★ **CJK는 도시 67개 전수 매핑** — 라틴으로 두면 지역 검색을 통째로 놓친다.
+   - ★ **라틴 문자 언어(es 등)는 표기가 실제로 갈리는 것만** — 전수 매핑하면 오히려 틀린다.
+     (es는 19개만: Seville→Sevilla · Sydney→Sídney · Mexico City→Ciudad de México …)
    - ★ 대회명은 **브랜드 라틴 + 지명만 현지** (「APT 仁川 2026」)
-5. `app/<locale>/tournaments/page.tsx` 생성 (ja판 복사가 가장 빠름)
-6. `scripts/generate-sitemap.mjs`의 `TOURNAMENT_LOCALES`에 추가
-7. `app/tournaments/layout.tsx` + 기존 로케일 page들의 `alternates.languages`에 상호 추가
-8. 빌드 → **렌더 HTML을 직접 열어 한글 누수·실검색어 렌더 확인** → 커밋·푸시
+   - ★ 각 분기점 5곳을 전부 건드려야 한다: `localizeField` · `localizeCity` ·
+     `localizedMonthBadge` · `nameMaps` · `buildLocaleSchemas`의 description 삼항
+5. `app/<locale>/tournaments/page.tsx` 생성 (기존 로케일 복사가 가장 빠름)
+6. **`lib/tournaments-hreflang.ts`의 `TOURNAMENT_LOCALES`에 추가** ← 여기 하나면 5개 페이지 hreflang이 다 붙는다
+7. `scripts/generate-sitemap.mjs`의 `TOURNAMENT_LOCALES`에도 추가
+   (.mjs라 lib을 import 못 해서 목록이 두 군데다. 둘 다 고칠 것)
+8. 빌드 → **렌더 HTML을 직접 열어** 한글 누수·실검색어 렌더·숫자 포맷 확인 → 커밋·푸시
 
 ### ⚠️ 이미 밟은 지뢰 (반복하지 말 것)
 
@@ -44,6 +52,16 @@
 - 대회명의 지명이 `t.city`와 다를 수 있다 (APPT Manila의 city는 Parañaque). 사전 전체를 훑되 **긴 지명 우선**.
 - 루트 레이아웃 `title.template`이 `| 홀덤마스터`를 붙인다 → 로케일 page는 `title: { absolute: ... }`.
 - 환율 고정 환산을 페이지에 박지 말 것. 환율이 움직인 순간 거짓이 된다. 기준점만 안내.
+- **모듈 최상위 `const`가 사전보다 먼저 평가되면 TDZ로 빌드가 깨진다**
+  (`Cannot access 'd' before initialization`). 사전을 참조하는 매핑은 **함수로** 만들 것.
+- **정규식으로 `languages: { ... }` 블록을 치환하지 말 것.** 안에 `${SITE}`가 있어서
+  `[^}]*`가 끊긴다. 이런 건 Edit로 직접 고치는 게 빠르다.
+- 괄호 치환을 지명보다 **먼저** 할 것. `(Ha Long Bay)`가 지명 `Ha Long`을 품고 있다.
+- **스페인어는 천단위가 `.`이고 소수점이 `,`다** — 영어와 반대.
+  `€5,300`을 그대로 두면 5.3유로로 읽힌다. 날짜도 d/m 순서.
+- CJK는 전각 괄호 앞 반각 공백을 제거해야 조판이 맞는다 (`切罗基 （8月）` → `切罗基（8月）`).
+- **간체판을 번체로 기계 변환하지 말 것.** 음역이 다른 도시가 실제로 있다 —
+  悉尼/雪梨 · 蒙特卡洛/蒙地卡羅 · 巴塞罗那/巴塞隆納 · 新奥尔良/紐奧良 · 谢菲尔德/雪菲爾
 
 ### 🔧 별건으로 남긴 것 (아직 안 함)
 
