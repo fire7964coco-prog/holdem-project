@@ -82,20 +82,24 @@ WSOP（World Series of Poker，世界撲克大賽）是 1970 年開辦、規模�
 
 ## 華人在 2026 WSOP 拿到什麼？
 
-先講結論：==**PokerNews 的完整結果表裡，沒有台灣或香港籍的金手鍊得主。**== 這一年拿下金手鍊的華人選手有兩位——Yang Wang（中國籍），以及原籍中國、現居美國的 Joshua Wang。
+先講結論：==**PokerNews 的完整結果表裡，沒有台灣或香港籍的金手鍊得主。**== 不過中國籍選手這一年拿下了**四條**。
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | 賽事 | 項目 | 買入 | 冠軍 | 獎金 |
 |:---|:---|:---:|:---|---:|
-| **#5** | Pot-Limit Omaha | $5,000 | **Yang Wang（中國）** | **$595,388** |
+| **#5** | Pot-Limit Omaha（8人桌） | $5,000 | **Yang Wang** | **$595,388** |
+| **#38** | Limit Hold'em Championship | $10,000 | **Dong Chen** | **$285,200** |
+| **#85** | No-Limit Hold'em | $1,000 | **Zixuan Liu** | **$219,391** |
 | **#96** | 6-Handed Pot-Limit Omaha | $3,000 | **Joshua Wang** | **$407,137** |
 
 </div>
 
-Yang Wang 的 #5 有 716 人次買入、獎池 $3,293,600，是他的**第一條金手鍊**。#96 的 Joshua Wang 也是生涯第一條，獎池 $2,381,640——這一場的看點在對手：他在單挑擋下的是 **Erik Seidel**，等於讓這位名人堂級選手的第 11 條金手鍊晚了一年。
+最有份量的是 **#38 的 Dong Chen**。$10,000 的固定限注錦標賽只有 121 人次買入、獎池 $1,125,300，他在單挑擋下的是 **Benny Glaser**——當時正在追第 9 條金手鍊的名將。這是 Dong Chen 的**第二條**（第一條是 2023 年 WSOP Paradise 的 $10,000 六人桌高額賽），==g:PokerNews 寫得很清楚：他是**中國第三位拿到多條金手鍊的選手**，前兩位是 Xixiang Luo 與 Renji Mao。==
 
-:::note[Joshua Wang 在 PokerNews 的報導中被描述為「originally from China but now residing in the United States」（原籍中國、現居美國），因此嚴格來說國籍歸屬與 Yang Wang 的情況不同。這裡照原文呈現，不做延伸解讀。]:::
+Yang Wang 的 #5 有 716 人次買入、獎池 $3,293,600，是他的第一條。#96 的 Joshua Wang 也是生涯第一條，獎池 $2,381,640，單挑對手是 **Erik Seidel**——等於讓這位名人堂級選手的第 11 條金手鍊晚了一年。#85 的 Zixuan Liu 從 1,733 人次的場子裡殺出來拿下第一條，他的本業是 TikTok 的軟體工程師。
+
+:::note[國籍標示照原始報導呈現，不做延伸解讀。Zixuan Liu 的報導寫的是中國籍、現居加州 Cupertino；Joshua Wang 則被描述為「originally from China but now residing in the United States」（原籍中國、現居美國）。另外 #13 的 Honghao Zhang 在完整結果表上標的是**美國籍**，部分中文媒體把他計入中國選手，這裡依官方標示處理。]:::
 
 主賽事那邊，==r:2026 年的國別統計中，中國以 169 人次排第 7==（2025 年是 177 人次，減少了）。台灣與香港沒有進入前十名——第 10 名的德國是 146 人次，所以人數在那之下。前十名依序是美國 5,634、加拿大 371、英國 356、法國 296、日本 222、巴西 172、中國 169、以色列 154、西班牙 148、德國 146。
 
@@ -343,7 +347,7 @@ A. World Series of Poker，中文一般譯作「世界撲克大賽」。1970 年
 
 **Q. 2026 年有台灣或香港選手拿到金手鍊嗎？**
 
-A. 沒有。PokerNews 的完整結果表裡沒有台灣或香港籍的冠軍。這一年拿下金手鍊的華人選手有兩位：Yang Wang（中國籍）在 Event #5（$5,000 Pot-Limit Omaha）拿到 $595,388；原籍中國、現居美國的 Joshua Wang 在 Event #96（$3,000 6-Handed Pot-Limit Omaha）拿到 $407,137。兩人都是生涯第一條。主賽事的部分，決賽桌 9 人中沒有華人選手，第 10 名之後的名次官方尚未公開。
+A. 沒有。完整結果表裡沒有台灣或香港籍的冠軍。中國籍選手則拿下四條：Yang Wang（#5 $5,000 Pot-Limit Omaha，$595,388）、Dong Chen（#38 $10,000 Limit Hold'em Championship，$285,200）、Zixuan Liu（#85 $1,000 No-Limit Hold'em，$219,391）、Joshua Wang（#96 $3,000 6-Handed Pot-Limit Omaha，$407,137）。其中 Dong Chen 是第二條，也是中國第三位拿到多條金手鍊的選手。主賽事的部分，決賽桌 9 人中沒有華人選手，第 10 名之後的名次官方尚未公開。
 
 **Q. WSOP 主賽事的冠軍獎金是多少？**
 
@@ -376,6 +380,9 @@ A. 滿 21 歲、有有效證件就可以，沒有國籍限制。但台港澳的�
 - **華人金手鍊 — 逐場原始報導**
   · [PokerNews Event #5](https://www.pokernews.com/news/2026/05/yang-wang-wins-first-wsop-bracelet-5-000-pot-limit-omaha-51383.htm)：Yang Wang（China）$595,388、716 人次、獎池 $3,293,600、生涯第一條
   · [PokerNews Event #96](https://www.pokernews.com/news/2026/07/2026-wsop-event-96-3000-plo-results-joshua-wang-beats-seidel-51896.htm)：Joshua Wang $407,137、獎池 $2,381,640、生涯第一條、亞軍 Erik Seidel（$271,371）、原文描述為「originally from China but now residing in the United States」
+  · [PokerNews Event #38](https://www.pokernews.com/news/2026/06/dong-chen-beats-poker-legends-for-second-wsop-gold-bracelet-51541.htm)：Dong Chen（China）$285,200、亞軍 Benny Glaser、121 人次・獎池 $1,125,300、第二條（首條為 2023 WSOP Paradise），原文載明「Chen is just the third player from China to win multiple WSOP bracelets, joining Xixiang Luo and Renji Mao」
+  · [PokerNews Event #85](https://www.pokernews.com/news/2026/07/zixuan-liu-wins-wsop-1000-nlh-51778.htm)：Zixuan Liu（China・現居 Cupertino）$219,391、1,733 人次、亞軍 Justin Shiao、生涯第一條
+  · [poker.org 2026 WSOP 完整冠軍名單](https://www.poker.org/latest-news/2026-wsop-winners-the-full-list-aOgJd9w4oEe6)：中國籍冠軍共 4 名（#5・#38・#85・#96）；#13 Honghao Zhang 標示為美國籍
   · [PokerNews 2026 WSOP 全賽程與結果表](https://www.pokernews.com/tours/wsop/2026-wsop/schedule.htm)：完賽 100 場、無台灣與香港籍冠軍
 - **美國入境要件** — [DHS 官方 免簽計畫](https://www.dhs.gov/visa-waiver-program)（42 國名單與各自生效日；台灣為 2012 年 11 月 1 日，並載明《台灣關係法》為法源；香港、澳門不在名單內）· [ESTA 官方申請網站](https://esta.cbp.dhs.gov/)（$40.27、90 天以內、VWP 名單內有效護照）· [CBP 免簽計畫](https://www.cbp.gov/travel/international-visitors/visa-waiver-program)（ESTA 通過不等於保證入境）
 - **稅務** — 財政部稅務入口網的最低稅負制說明（海外所得 NT$100 萬申報門檻、基本所得額 NT$750 萬、競技競賽獎金得減除成本與必要費用）。實際判斷請洽稅務機關或會計師
