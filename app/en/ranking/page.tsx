@@ -3,7 +3,9 @@ import { SITE } from "@/lib/site";
 import RankingEn from "./ranking-client";
 
 export const metadata: Metadata = {
-  title: "Best Online Poker Sites 2026 — Top 5 Tested & Ranked",
+  // absolute — 안 쓰면 루트 layout의 title.template("%s | 홀덤마스터")이 붙어
+  //            영어 페이지 검색 결과에 한국어 브랜드명이 노출된다.
+  title: { absolute: "Best Online Poker Sites 2026 — Top 5 Tested & Ranked | HoldemMaster" },
   description:
     "Our Top 5 online poker sites for 2026, tested end-to-end from signup to withdrawal. Licensing, security, traffic, and bonuses compared.",
   alternates: { canonical: `${SITE}/en/ranking` },

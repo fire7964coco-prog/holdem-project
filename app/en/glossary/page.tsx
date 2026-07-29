@@ -3,7 +3,9 @@ import { SITE } from "@/lib/site";
 import GlossaryEn from "./glossary-client";
 
 export const metadata: Metadata = {
-  title: "Poker Glossary — Texas Hold'em Terms Explained (A–Z)",
+  // absolute — 안 쓰면 루트 layout의 title.template("%s | 홀덤마스터")이 붙어
+  //            영어 페이지 검색 결과에 한국어 브랜드명이 노출된다.
+  title: { absolute: "Poker Glossary — Texas Hold'em Terms Explained (A–Z) | HoldemMaster" },
   description:
     "A clear, accurate glossary of Texas Hold'em terms: nuts, outs, pot odds, 3-bet, c-bet, ICM, SPR, kicker, tilt and more. Search or filter 45+ essential poker terms.",
   alternates: { canonical: `${SITE}/en/glossary` },

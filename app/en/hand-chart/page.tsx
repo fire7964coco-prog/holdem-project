@@ -3,7 +3,9 @@ import { SITE } from "@/lib/site";
 import HandChartEn from "./hand-chart-client";
 
 export const metadata: Metadata = {
-  title: "Poker Starting Hand Chart — Open Ranges by Position",
+  // absolute — 안 쓰면 루트 layout의 title.template("%s | 홀덤마스터")이 붙어
+  //            영어 페이지 검색 결과에 한국어 브랜드명이 노출된다.
+  title: { absolute: "Poker Starting Hand Chart — Open Ranges by Position | HoldemMaster" },
   description:
     "Interactive Texas Hold'em starting hand chart. Compare all 169 hands across UTG, HJ, CO, Button, and SB with color-coded GTO open ranges.",
   alternates: { canonical: `${SITE}/en/hand-chart` },

@@ -4,7 +4,9 @@ import CalculatorClientEn from "./calculator-client";
 import { CALCULATOR_FAQ_EN } from "./faq";
 
 export const metadata: Metadata = {
-  title: "Poker Odds Calculator — Outs, Pot Odds, Hand Rank, SPR & ICM",
+  // absolute — 안 쓰면 루트 layout의 title.template("%s | 홀덤마스터")이 붙어
+  //            영어 페이지 검색 결과에 한국어 브랜드명이 노출된다.
+  title: { absolute: "Poker Odds Calculator — Outs, Pot Odds, Hand Rank, SPR & ICM | HoldemMaster" },
   description:
     "Free Texas Hold'em calculator: outs & draw odds, pot odds, hand evaluator, starting hand strength, SPR, tournament M value, and ICM — 7 tools in one.",
   alternates: {

@@ -8,9 +8,13 @@ import BlogTopBar from "@/components/blog-top-bar";
 export function intlBlogIndexMetadata(locale: SecondaryLocale): Metadata {
   const t = POST_LABELS[locale];
   const url = `${SITE}/${locale}/blog`;
-  const title = `${t.blogTitle} ??${CHROME[locale].brand}`;
+  // ⚠️ 여기 구분자가 원래 "??"(물음표 2개)로 박혀 있었다.
+  //    em dash가 인코딩 사고로 U+3F U+3F가 된 채 커밋돼서
+  //    25개 로케일 블로그 목록의 <title>에 "Blog ??HoldemMaster"로 나가고 있었다.
+  const title = `${t.blogTitle} | ${CHROME[locale].brand}`;
   return {
-    title,
+    // absolute — 안 쓰면 루트 template("%s | 홀덤마스터")이 덧붙는다
+    title: { absolute: title },
     description: t.blogIntro,
     alternates: { canonical: url },
     openGraph: {

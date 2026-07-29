@@ -3,7 +3,9 @@ import { SITE } from "@/lib/site";
 import QuizEn from "./quiz-client";
 
 export const metadata: Metadata = {
-  title: "Poker Hand Quiz — Spot the Best Hand from 7 Cards",
+  // absolute — 안 쓰면 루트 layout의 title.template("%s | 홀덤마스터")이 붙어
+  //            영어 페이지 검색 결과에 한국어 브랜드명이 노출된다.
+  title: { absolute: "Poker Hand Quiz — Spot the Best Hand from 7 Cards | HoldemMaster" },
   description:
     "Free poker hand quiz. From 7 cards, pick the best 5-card hand. 10 questions to test your Texas Hold'em hand-ranking skills — share your score.",
   alternates: { canonical: `${SITE}/en/quiz` },
