@@ -5,7 +5,7 @@ import { TOURNAMENTS, computeStatus } from "@/lib/tournaments";
 import { BOARD_STRINGS, buildLocaleSchemas, localizedName, nextUpcoming } from "@/lib/tournaments-i18n";
 import { TOURNAMENT_HREFLANG } from "@/lib/tournaments-hreflang";
 
-const LOCALE = "ja" as const;
+const LOCALE = "zh" as const;
 
 /** 기준일은 빌드 시점(서버)에서 계산한다. 클라이언트 new Date()는 하이드레이션 불일치를 낸다. */
 function kstToday(): string {
@@ -23,25 +23,24 @@ export function generateMetadata(): Metadata {
     (t) => t.startDate && computeStatus(t, today) === "ongoing",
   ).slice(0, 2);
   const ongoingText = running.length
-    ? `開催中は${running.map((t) => localizedName(t, LOCALE)).join("・")}。`
+    ? `进行中：${running.map((t) => localizedName(t, LOCALE)).join("、")}。`
     : "";
 
   const title = s.metaTitle(next ? localizedName(next, LOCALE) : "", mmdd);
 
   return {
     // absolute — 루트 레이아웃 template의 "| 홀덤마스터"가 붙는 것을 막는다.
-    title: { absolute: `${title}｜ホールデムマスター` },
+    title: { absolute: `${title} | 德扑大师` },
     description: s.metaDescription(today.replace(/-/g, "."), ongoingText),
     alternates: {
       canonical: `${SITE}/${LOCALE}/tournaments`,
       languages: TOURNAMENT_HREFLANG,
     },
     openGraph: {
-      title: `${title}｜ホールデムマスター`,
-      description:
-        "国内・海外のポーカー大会を、日程・バイイン・会場と公式サイトのリンクつきで一覧に。",
+      title: `${title} | 德扑大师`,
+      description: "全球德州扑克赛事日程——日期、买入、场馆，每一场都附主办方官网链接。",
       url: `${SITE}/${LOCALE}/tournaments`,
-      siteName: "ホールデムマスター",
+      siteName: "德扑大师",
       locale: s.ogLocale,
       type: "article",
     },

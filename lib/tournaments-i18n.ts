@@ -11,6 +11,18 @@ import { Tournament, TOURNAMENTS, computeStatus } from "./tournaments";
  *       → docs/market-profile/<locale>.md 를 읽고 쓸 것.
  */
 
+/**
+ * 길이 제한을 걸되 단어 중간에서 자르지 않는다.
+ * 영어 설명이 "an official-sou"에서 끊기고 있었다.
+ * CJK는 띄어쓰기가 없어 공백을 못 찾으므로 그냥 자른다(그게 정상 조판이다).
+ */
+function clamp(text: string, max: number): string {
+  if (text.length <= max) return text;
+  const cut = text.slice(0, max);
+  const sp = cut.lastIndexOf(" ");
+  return (sp > max - 25 ? cut.slice(0, sp) : cut).trimEnd();
+}
+
 export type BoardLocale = "en" | "ja" | "zh" | "zh-hant" | "es";
 
 export interface BoardStrings {
@@ -68,10 +80,10 @@ const en: BoardStrings = {
   // 고정 포맷으로는 길이를 통제할 수 없다.
   metaTitle: (next, mmdd) => {
     const hooked = `Poker Tournaments 2026 — ${next} starts ${mmdd}`;
-    return next && hooked.length <= 60 ? hooked : "Poker Tournament Schedule 2026";
+    return next && hooked.length <= 45 ? hooked : "Poker Tournament Schedule 2026";
   },
   metaDescription: (todayDot, ongoing) =>
-    `Every major live poker tournament of 2026 in one table — as of ${todayDot}. ${ongoing}Dates, buy-ins and an official-source link on every event.`.slice(0, 158),
+    clamp(`Every major live poker tournament of 2026 — dates, buy-ins and an official source for each. As of ${todayDot}. ${ongoing}`, 158),
 
   h1: "Poker Tournament Schedule 2026",
   heroLead:
@@ -167,7 +179,7 @@ const ja: BoardStrings = {
     return next && hooked.length <= 40 ? hooked : "【2026年最新】ポーカー大会スケジュール｜国内・海外の日程一覧";
   },
   metaDescription: (todayDot, ongoing) =>
-    `${todayDot}時点。国内のJOPTから韓国・台湾・マニラ・ラスベガスまで、2026年のポーカー大会を日程・バイイン・会場つきで一覧に。各大会に公式サイトのリンクを添えています。`.slice(0, 120),
+    clamp(`${todayDot}時点。${ongoing}韓国・台湾・マニラからラスベガスまで、2026年のポーカー大会を日程・バイイン・会場つきで一覧に。各大会に公式サイトのリンクつき。`, 120),
 
   h1: "ポーカー大会スケジュール 2026",
   heroLead:
@@ -243,7 +255,115 @@ const ja: BoardStrings = {
   ],
 };
 
-export const BOARD_STRINGS: Partial<Record<BoardLocale, BoardStrings>> = { en, ja };
+
+/* ────────────────────────────────────────────────────────────
+   zh — 간체. 본토 · 싱가포르 · 말레이시아 세 시장이 섞여 있고
+   입국 요건도 법도 전부 다르다 (zh.md §0).
+
+   ★ 구글 자동완성 실측 (2026-07-29)
+     济州岛 扑克 赛事 ★★★ · 台湾/台北 德州扑克 比赛 · 华人 德州扑克 赛事 ·
+     亚洲 扑克 赛事 · 澳门 德州扑克 比赛 · 德州扑克 比赛奖金 · 德州扑克 赛事 直播
+   ★★ 「济州岛 扑克 赛事」가 잡힌 것이 결정적이다.
+     본토 여권은 제주가 **영구 무비자 30일**이고, 우리는 제주 대회를 6개 들고 있다.
+     반대로 인천은 2026-07-01부터 단체무비자가 끝나 비자가 필요하다 —
+     옛 정보를 그대로 옮기면 "인천 무비자"라는 치명적 오답이 나온다.
+   ★ 台湾/台北 검색이 많지만 본토 여권으로는 사실상 막혀 있다.
+     이 검색을 하는 사람은 싱가포르·말레이시아 화교이거나 해외 거주 본토인이다.
+     → 같은 페이지에서 둘을 구분해 써야 한다 (zh.md §B-1).
+
+   🔒 편집 가드레일 (zh.md §B-4)
+     · 본토: 刑法 303조 3항이 겨냥하는 건 "조직하는 자"다.
+       알선·모집·대리등록·"함께 가실 분" 뉘앙스 금지. 정보 제공 선을 지킨다.
+     · 싱가포르: Remote Gambling Act 2014에 **개인 처벌 조항이 실재**한다.
+       온라인 새틀라이트를 권하는 서술을 쓰지 않는다. 라이브 정보로 간다.
+     · 부정형 결론으로 겁주지 않는다. 우리 컨셉은 판정자가 아니라 플레이어다.
+   ──────────────────────────────────────────────────────────── */
+const zh: BoardStrings = {
+  htmlLang: "zh-Hans",
+  ogLocale: "zh_CN",
+
+  metaTitle: (next, mmdd) => {
+    const hooked = `2026德州扑克赛事日程 | 下一场 ${next} ${mmdd}`;
+    return next && hooked.length <= 34 ? hooked : "2026德州扑克赛事日程 | 亚洲与全球赛程一览";
+  },
+  metaDescription: (todayDot, ongoing) =>
+    clamp(`截至${todayDot}。${ongoing}济州岛、仁川、台北、马尼拉到拉斯维加斯，2026年德州扑克赛事的日期、买入与场馆，每一场都附主办方官网链接。`, 118),
+
+  h1: "2026 德州扑克赛事日程",
+  heroLead:
+    "以下每一场都是从主办方官网上直接确认的，每张卡片都链接到我们读到它的那一页。赛事状态由日期自动计算，所以系列赛进行途中也不会显示过期信息。日程有可能变动——最终以官网为准。",
+  asOf: (dot) => `截至 ${dot}`,
+
+  filterAll: "全部",
+  filterUpcoming: "即将开始",
+  filterOngoing: "进行中",
+  filterEnded: "已结束",
+
+  colDates: "日期",
+  colBuyin: "买入",
+  colVenue: "场馆",
+
+  status: { upcoming: "即将开始", ongoing: "进行中", ended: "已结束" },
+  yearRound: "全年",
+  officialSite: "官方网站",
+  buyinUnlisted: "官方未公布",
+
+  countsLine: (total, countries) => `${total} 场赛事 · ${countries} 个国家和地区`,
+  sourceNote:
+    "如果主办方自己的页面仍停留在去年的信息，我们宁可不放链接，也不把你带到那一页。",
+  emptyState: "没有符合该筛选条件的赛事。",
+  koLink: "韩文版赛程 →",
+
+  faqHeading: "常见问题",
+  faqs: [
+    {
+      q: "去济州岛打比赛需要签证吗？",
+      a: "中国大陆护照前往济州岛是长期免签的，停留期30天，个人和团体都可以，直飞的话也没有三人以上的人数限制。这一点对牌手来说很实际：这份日程里在济州举办的赛事有六场，包括Triton济州、APT济州秋季站和GOP济州。不过政策会变，出发前请再确认一次最新要求。",
+    },
+    {
+      q: "那仁川呢？和济州一样免签吗？",
+      a: "不一样，这里最容易出错。仁川过去是全国团体免签的入境口岸，但那项措施已于2026年6月30日到期——从2026年7月1日起，三人团体也需要C-3-2团体旅游签证，个人旅游则走C-3-9（单次停留30天，有效期3个月）。也就是说APT仁川、APPT韩国、WPT Seoul、GOP仁川这几场都需要提前办签证。另外到2026年12月31日之前，团体旅游签证的手续费是免收的。",
+    },
+    {
+      q: "台湾的比赛能去吗？",
+      a: "这要看你拿的是哪本护照。持中国大陆护照的话，本岛的团体游尚未开放，个人自由行自2019年8月中断后也没有恢复，目前只有金门、马祖、澎湖对特定省份居民开放团体行程。但如果你是长期居住在海外的大陆居民（含港澳），可以申请第三类入台证，获得15天自由行。持新加坡或马来西亚护照的读者则不受这些限制——这份日程里台湾有12场赛事，是仅次于韩国的第二多。",
+    },
+    {
+      q: "德州扑克最大的赛事是哪一个？",
+      a: "WSOP（世界扑克系列赛）。2026年是5月26日至8月5日在拉斯维加斯，共100条金手链，主赛事有9,208人次报名，奖池$85,634,400，决赛桌在8月3至5日由ESPN转播。亚洲这边规模最大的是APT（亚洲扑克巡回赛），2026年的仁川站保证奖金超过40亿韩元。",
+    },
+    {
+      q: "比赛奖金要交税吗？",
+      a: "中国大陆居民的境外所得，需要在次年3月1日至6月30日之间申报，可以通过个人所得税APP或自然人电子税务局网页版的「年度汇算（适用境外所得）」模块办理。偶然所得这类分类所得是分别计算税额的。这里有个实务要点：如果想抵免在境外已经缴过的税，需要当地征税主体出具的完税证明——比如在韩国的赛事，奖金会先扣掉4.4%的税费，那份凭证要留好；在美国则是1042-S表。",
+    },
+    {
+      q: "哪里能看这些赛事的直播？",
+      a: "WSOP主赛事决赛桌由ESPN转播，多数大型系列赛也会在主办方官网或其官方频道放出直播与集锦。每张卡片下方的官网链接里通常就有转播安排，这比第三方转载的信息可靠。",
+    },
+    {
+      q: "有哪些赛事是花钱也进不去的？",
+      a: "有三种。Triton超高额系列赛是推荐制的，没有卫星赛，光有钱买不到席位。韩国的Holdem Masters用的是邀请券，完全没有现金买入的通道。还有APT锦标赛的开幕日是业内专场，公开赛程要从第二天算起。其余绝大多数赛事都是公开报名的。",
+    },
+  ],
+
+  localHeading: "出发前需要知道的",
+  localBlocks: [
+    {
+      title: "济州免签、仁川需签——这是2026年7月才变的",
+      body: "中国大陆护照到济州岛长期免签、停留30天；而全国团体免签在2026年6月30日到期，从7月1日起前往仁川、首尔等地都需要签证。旧攻略里「仁川免签」的说法现在是错的，而仁川恰好是APT、APPT、WPT Seoul的所在地。团体旅游签证的手续费到2026年12月31日为止是免收的。",
+    },
+    {
+      title: "同样是中文读者，能去的地方不一样",
+      body: "这份日程面向的是大陆、新加坡和马来西亚三个市场，但三地的入境条件差别很大。台湾的12场赛事对持新马护照的读者是开放的，对持大陆护照的读者目前基本关闭。反过来，新加坡护照持有人前往中国是30天免签（2024年2月起的互免协定）。看日程时先确认自己那本护照的条件。",
+    },
+    {
+      title: "线上与线下是两回事",
+      body: "各地对线上扑克的规定差异很大，新加坡的《Remote Gambling Act 2014》甚至对个人访问无牌照网站也有罚则（最高S$5,000，再犯可至两年监禁）；马来西亚目前属于灰色地带，尚无当地人因线上扑克被处罚的案例。这份页面只提供线下赛事的日程与官方链接，线上路径请各自依当地规定判断。",
+    },
+  ],
+};
+
+export const BOARD_STRINGS: Partial<Record<BoardLocale, BoardStrings>> = { en, ja, zh };
 
 /**
  * 대회명 현지 표기.
@@ -255,34 +375,77 @@ const PAREN_JA: Record<string, string> = {
   "(Fall)": "（秋）", "(July)": "（7月）", "(August)": "（8月）",
   "(November)": "（11月）", "(December)": "（12月）", "(Ha Long Bay)": "（ハロン湾）",
 };
+const PAREN_ZH: Record<string, string> = {
+  "(Fall)": "（秋季）", "(July)": "（7月）", "(August)": "（8月）",
+  "(November)": "（11月）", "(December)": "（12月）", "(Ha Long Bay)": "（下龙湾）",
+};
+
+/**
+ * 로케일별 (도시사전, 괄호사전). 없으면 라틴 그대로가 정답이다.
+ * ★ const 객체가 아니라 함수다 — CITY_* 사전이 이 아래에 선언돼 있어서
+ *   모듈 최상위 const로 잡으면 TDZ("Cannot access before initialization")로 빌드가 깨진다.
+ */
+function nameMaps(
+  locale: BoardLocale,
+): [Record<string, string>, Record<string, string>] | null {
+  if (locale === "ja") return [CITY_JA, PAREN_JA];
+  if (locale === "zh") return [CITY_ZH, PAREN_ZH];
+  return null;
+}
+
+/**
+ * 지명이 안 들어간 대회명은 위 치환이 걸리지 않는다("57th WSOP 2026", "7th Holdem Masters").
+ * 서수 표기가 로케일마다 달라서 그대로 두면 중국어·일본어 페이지에 영어가 남는다.
+ * ★ 브랜드(WSOP·Holdem Masters)는 라틴 유지 — 카타카나·한자 표기를 지어내지 않는다.
+ */
+const NAME_OVERRIDE: Partial<Record<BoardLocale, Record<string, string>>> = {
+  ja: {
+    "holdem-masters-7": "第7回 Holdem Masters",
+    "holdem-masters-8": "第8回 Holdem Masters",
+    "wsop-2026": "第57回 WSOP 2026",
+    "wpt-world-championship": "WPT ワールドチャンピオンシップ",
+  },
+  zh: {
+    "holdem-masters-7": "第7届 Holdem Masters",
+    "holdem-masters-8": "第8届 Holdem Masters",
+    "wsop-2026": "第57届 WSOP 2026",
+    "wpt-world-championship": "WPT 世界锦标赛",
+  },
+};
 
 export function localizedName(t: Tournament, locale: BoardLocale): string {
-  if (locale !== "ja") return t.nameEn;
+  const override = NAME_OVERRIDE[locale]?.[t.id];
+  if (override) return override;
 
-  // ja.md가 `APT 仁川`을 실검색형으로 기록하고 있다.
-  // 브랜드(APT·WSOP)는 라틴 그대로, 지명만 현지 표기로 바꾼다.
+  const maps = nameMaps(locale);
+  if (!maps) return t.nameEn;
+  const [CITY, PAREN] = maps;
+
+  // 브랜드(APT·WSOP·EPT)는 라틴 그대로, 지명만 현지 표기로 바꾼다.
+  // ja.md가 `APT 仁川`을 실검색형으로 기록하고 있고,
+  // 간체 자동완성에도 「台北 德州扑克 比赛」가 잡힌다.
   let out = t.nameEn;
 
   // ★ 괄호를 먼저. "(Ha Long Bay)"가 지명 "Ha Long"을 품고 있어서
-  //   순서를 뒤집으면 "(ハロン Bay)" 같은 반쪽 치환이 나온다.
-  for (const [en, ja] of Object.entries(PAREN_JA)) {
-    if (out.includes(en)) out = out.replace(en, ja);
+  //   순서를 뒤집으면 "(下龙 Bay)" 같은 반쪽 치환이 나온다.
+  for (const [en, loc] of Object.entries(PAREN)) {
+    if (out.includes(en)) out = out.replace(en, loc);
   }
 
   // t.city를 먼저 쓰되, 대회명의 지명이 city와 다른 경우가 있다
   // (APPT Manila는 city가 Parañaque다) → 사전 전체를 훑어 실제로 들어 있는 지명을 찾는다.
-  const direct = CITY_JA[t.city];
+  const direct = CITY[t.city];
   if (direct && out.includes(t.city)) {
     out = out.replace(t.city, direct);
   } else {
     // 긴 지명부터 (Las Vegas가 Vegas보다 먼저 걸려야 한다)
-    const key = Object.keys(CITY_JA)
+    const key = Object.keys(CITY)
       .filter((c) => out.includes(c))
       .sort((a, b) => b.length - a.length)[0];
-    if (key) out = out.replace(key, CITY_JA[key]);
+    if (key) out = out.replace(key, CITY[key]);
   }
 
-  // 전각 괄호 앞의 반각 공백은 일본어 조판에서 어색하다 ("チェロキー （8月）" → "チェロキー（8月）")
+  // 전각 괄호 앞의 반각 공백은 CJK 조판에서 어색하다 ("切罗基 （8月）" → "切罗基（8月）")
   return out.replace(/ （/g, "（");
 }
 
@@ -378,8 +541,88 @@ const VENUE_JA: Record<string, string> = {
   "Paradise City Casino": "パラダイスシティ・カジノ",
 };
 
+
+/* zh 필드 사전 (간체). 통화는 원문 통화 유지, 표기만 현지식 */
+const FIELD_ZH: Record<string, string> = {
+  "공식 미기재": "官方未公布",
+  "미발표": "尚未公布",
+  "다양": "视赛事而定",
+  "초대권 전용": "仅限邀请",
+  "초대권 전용 (현금 바이인 없음)": "仅限邀请（无现金买入）",
+  "메인 ₩150만": "主赛 150万韩元",
+  "메인 ₩220만": "主赛 220万韩元",
+  "메인 ₩230만": "主赛 230万韩元",
+  "메인 ₩250만": "主赛 250万韩元",
+  "메인 ₩270만": "主赛 270万韩元",
+  "₩30만~₩800만": "30万〜800万韩元",
+  "₩90만~": "90万韩元起",
+  "~₩700만 (하이롤러)": "至700万韩元（高额桌）",
+  "€5,300 (메인)": "€5,300（主赛）",
+  "프리롤~NT$120,000": "免费赛〜NT$120,000",
+  "미정 (공식 미기재)": "待定（官方未公布）",
+  "야자수 서울센터": "YAJASU 首尔中心",
+  "Hilton Prague (King's Casino Prague 운영)": "布拉格希尔顿（King's Casino Prague 运营）",
+  "(ME 파이널 8/3~5)": "（主赛决赛桌 8/3〜5）",
+  "2026.12 예정 (날짜 미발표)": "2026年12月预定（日期未公布）",
+};
+
+/* ★ 간체 자동완성에 「济州岛 扑克 赛事」「台北 德州扑克 比赛」가 잡혔다.
+   도시명을 라틴으로 두면 이 검색을 통째로 놓친다. */
+const CITY_ZH: Record<string, string> = {
+  "Aix-en-Provence": "艾克斯普罗旺斯", "Atlantic City": "大西洋城", Austin: "奥斯汀",
+  Barcelona: "巴塞罗那", Bratislava: "布拉迪斯拉发", Budva: "布德瓦",
+  "Buenos Aires": "布宜诺斯艾利斯", Calgary: "卡尔加里", "Castellón": "卡斯特利翁",
+  Catoosa: "卡图萨", Cherokee: "切罗基", Cork: "科克", "Council Bluffs": "康瑟尔布拉夫斯",
+  Danville: "丹维尔", Durant: "杜兰特", Elgin: "埃尔金", Elizabeth: "伊丽莎白",
+  "Florianópolis": "弗洛里亚诺波利斯", Fukuoka: "福冈", Gamprin: "甘普林", Glasgow: "格拉斯哥",
+  "Ha Long": "下龙", Hanover: "汉诺威", Incheon: "仁川", Jeju: "济州", Kahnawake: "卡纳瓦克",
+  Kyrenia: "凯里尼亚", "Las Vegas": "拉斯维加斯", Lincoln: "林肯", London: "伦敦",
+  Madrid: "马德里", Manchester: "曼彻斯特", Manila: "马尼拉",
+  "Mata de São João": "圣若昂马塔", "Mexico City": "墨西哥城", Middelkerke: "米德尔凯尔克",
+  "Monte Carlo": "蒙特卡洛", "Monte-Carlo": "蒙特卡洛", Murcia: "穆尔西亚", Namur: "那慕尔",
+  Nassau: "拿骚", "New Orleans": "新奥尔良", Osaka: "大阪", "Panama City": "巴拿马城",
+  "Parañaque": "帕拉纳克", Paris: "巴黎", "Pompano Beach": "庞帕诺比奇", Prague: "布拉格",
+  "Puerto Iguazú": "伊瓜苏港", Robinsonville: "罗宾逊维尔", Rosario: "罗萨里奥",
+  Sanremo: "圣雷莫", "Santa Rosa": "圣罗莎", "São Paulo": "圣保罗", Sapporo: "札幌",
+  Scottsdale: "斯科茨代尔", Seogwipo: "西归浦", Seoul: "首尔", Seville: "塞维利亚",
+  Sheffield: "谢菲尔德", "St. Julian's": "圣朱利安", Stateline: "斯泰特莱恩",
+  Sydney: "悉尼", Taipei: "台北", Tallinn: "塔林", Tokyo: "东京", Toledo: "托莱多",
+  Verona: "维罗纳",
+};
+
+const VENUE_ZH: Record<string, string> = {
+  "Paradise City": "百乐达斯城",
+  "Paradise City Casino": "百乐达斯城赌场",
+};
+
+/** zh판 대회 설명. 수치는 원문 그대로 — §13은 언어 불변 */
+const SCHEMA_DESC_ZH: Record<string, string> = {
+  "holdem-masters-7":
+    "WPL赞助、WeLive主办、YAJASU协办。总奖金保证15亿韩元，仅凭邀请券参赛。",
+  "wsop-2026":
+    "全球规模最大的扑克系列赛。5月26日至7月15日共100条金手链，主赛事9,208人次报名、奖池$85,634,400，决赛桌8月3至5日由ESPN转播。",
+  "kpc-king-july":
+    "在济州岛LES A Casino举行的17天扑克节。系列赛保证20亿韩元，King Poker Cup主赛事保证11亿韩元。",
+  "apt-incheon":
+    "亚洲最大巡回赛APT的2026年仁川站。百乐达斯城举办，总保证奖金超过40亿韩元，主赛事保证15亿韩元。",
+  "holdem-masters-8":
+    "第8届Holdem Masters。总奖金保证20亿韩元，为该系列历来最高，主赛事保证18亿韩元。",
+  "appt-korea":
+    "PokerStars APPT的2026年韩国站，在仁川百乐达斯城举行，主赛事保证10亿韩元。",
+  "triton-jeju-2":
+    "Triton超高额系列赛本年度第二次落地济州。14场高额赛事，买入$15,000至$200,000。",
+  "apt-jeju-fall":
+    "APT的2026年济州秋季站。136场赛事，主赛事保证22亿韩元。",
+  "wpt-seoul":
+    "WPT首次在INSPIRE娱乐度假村举办的赛事。46场比赛，主赛事保证10亿韩元。",
+  "appt-manila":
+    "PokerStars APPT的2026年马尼拉站，在Okada Manila举行，系列赛总保证₱132M。",
+};
+
 export function localizeCity(city: string, locale: BoardLocale): string {
-  return locale === "ja" ? (CITY_JA[city] ?? city) : city;
+  if (locale === "ja") return CITY_JA[city] ?? city;
+  if (locale === "zh") return CITY_ZH[city] ?? city;
+  return city;
 }
 
 /** 데이터 필드 값을 로케일 표기로. 사전에 없으면 원문 그대로 */
@@ -387,6 +630,7 @@ export function localizeField(value: string | undefined, locale: BoardLocale): s
   if (!value) return "";
   if (locale === "en") return FIELD_EN[value] ?? value;
   if (locale === "ja") return VENUE_JA[value] ?? FIELD_JA[value] ?? value;
+  if (locale === "zh") return VENUE_ZH[value] ?? FIELD_ZH[value] ?? value;
   return value;
 }
 
@@ -450,7 +694,7 @@ export function localizedMonthBadge(t: Tournament, locale: BoardLocale): string 
   if (locale === "en") {
     return sm === em ? MONTH_EN[sm - 1] : `${MONTH_EN[sm - 1]}–${MONTH_EN[em - 1]}`;
   }
-  if (locale === "ja") return sm === em ? `${sm}月` : `${sm}〜${em}月`;
+  if (locale === "ja" || locale === "zh") return sm === em ? `${sm}月` : `${sm}〜${em}月`;
   return sm === em ? `${sm}월` : `${sm}~${em}월`;
 }
 
@@ -493,7 +737,13 @@ export function buildLocaleSchemas(
     "@type": "Event",
     name: localizedName(t, locale),
     description:
-      (locale === "en" ? SCHEMA_DESC_EN[t.id] : locale === "ja" ? SCHEMA_DESC_JA[t.id] : undefined) ??
+      (locale === "en"
+        ? SCHEMA_DESC_EN[t.id]
+        : locale === "ja"
+          ? SCHEMA_DESC_JA[t.id]
+          : locale === "zh"
+            ? SCHEMA_DESC_ZH[t.id]
+            : undefined) ??
       t.schemaDescription,
     startDate: t.startDate,
     endDate: t.endDate,

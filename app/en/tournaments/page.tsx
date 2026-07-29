@@ -3,6 +3,7 @@ import { SITE } from "@/lib/site";
 import TournamentBoard from "@/components/tournament-board";
 import { TOURNAMENTS, computeStatus } from "@/lib/tournaments";
 import { BOARD_STRINGS, buildLocaleSchemas, localizedName, nextUpcoming } from "@/lib/tournaments-i18n";
+import { TOURNAMENT_HREFLANG } from "@/lib/tournaments-hreflang";
 
 const LOCALE = "en" as const;
 
@@ -34,7 +35,7 @@ export function generateMetadata(): Metadata {
     description: s.metaDescription(today.replace(/-/g, "."), ongoingText),
     alternates: {
       canonical: `${SITE}/${LOCALE}/tournaments`,
-      languages: { ko: `${SITE}/tournaments`, en: `${SITE}/en/tournaments`, ja: `${SITE}/ja/tournaments` },
+      languages: TOURNAMENT_HREFLANG,
     },
     openGraph: {
       title: `${title} | HoldemMaster`,

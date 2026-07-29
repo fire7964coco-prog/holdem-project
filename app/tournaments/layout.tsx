@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { SITE } from "@/lib/site";
 import { TOURNAMENTS, computeStatus } from "@/lib/tournaments";
+import { TOURNAMENT_HREFLANG } from "@/lib/tournaments-hreflang";
 
 /**
  * ★ 메타데이터도 대회 데이터에서 자동 생성한다.
@@ -50,12 +51,7 @@ export function generateMetadata(): Metadata {
     description,
     alternates: {
       canonical: `${SITE}/tournaments`,
-      // 로케일판이 늘어나면 여기와 scripts/generate-sitemap.mjs의 TOURNAMENT_LOCALES를 함께 갱신한다
-      languages: {
-        ko: `${SITE}/tournaments`,
-        en: `${SITE}/en/tournaments`,
-        ja: `${SITE}/ja/tournaments`,
-      },
+      languages: TOURNAMENT_HREFLANG,
     },
     openGraph: {
       title: `${title} | 홀덤마스터`,
