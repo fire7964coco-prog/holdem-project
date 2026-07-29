@@ -87,6 +87,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/tournaments" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/tournaments" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/tournaments" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/tournaments" />
   </url>
 
@@ -356,7 +357,7 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- 다국어 토너먼트 일정표 (1개 로케일) -->
+  <!-- 다국어 토너먼트 일정표 (2개 로케일) -->
 
   <url>
     <loc>https://www.holdemmaster.com/en/tournaments</loc>
@@ -365,6 +366,18 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/tournaments" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/tournaments" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/tournaments" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/tournaments" />
+  </url>
+
+  <url>
+    <loc>https://www.holdemmaster.com/ja/tournaments</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/tournaments" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/tournaments" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/tournaments" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/tournaments" />
   </url>
 

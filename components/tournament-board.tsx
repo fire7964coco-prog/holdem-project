@@ -10,6 +10,7 @@ import {
   localizedMonthBadge,
   localizedDateRange,
   localizeField,
+  localizeCity,
   type BoardLocale,
 } from "@/lib/tournaments-i18n";
 import { SITE } from "@/lib/site";
@@ -164,7 +165,7 @@ export default function TournamentBoard({
                     </div>
                     <div className="font-semibold text-foreground flex items-center gap-1">
                       <MapPin className="w-3 h-3 flex-shrink-0" aria-hidden />
-                      {localizeField(t.venue, locale)}, {t.city}
+                      {localizeField(t.venue, locale)}, {localizeCity(t.city, locale)}
                     </div>
                   </div>
                 </div>

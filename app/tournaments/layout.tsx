@@ -48,7 +48,15 @@ export function generateMetadata(): Metadata {
   return {
     title,
     description,
-    alternates: { canonical: `${SITE}/tournaments` },
+    alternates: {
+      canonical: `${SITE}/tournaments`,
+      // 로케일판이 늘어나면 여기와 scripts/generate-sitemap.mjs의 TOURNAMENT_LOCALES를 함께 갱신한다
+      languages: {
+        ko: `${SITE}/tournaments`,
+        en: `${SITE}/en/tournaments`,
+        ja: `${SITE}/ja/tournaments`,
+      },
+    },
     openGraph: {
       title: `${title} | 홀덤마스터`,
       description:

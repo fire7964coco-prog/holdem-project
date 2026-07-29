@@ -4,7 +4,7 @@ import TournamentBoard from "@/components/tournament-board";
 import { TOURNAMENTS, computeStatus } from "@/lib/tournaments";
 import { BOARD_STRINGS, buildLocaleSchemas, localizedName, nextUpcoming } from "@/lib/tournaments-i18n";
 
-const LOCALE = "en" as const;
+const LOCALE = "ja" as const;
 
 /** 기준일은 빌드 시점(서버)에서 계산한다. 클라이언트 new Date()는 하이드레이션 불일치를 낸다. */
 function kstToday(): string {
@@ -22,26 +22,29 @@ export function generateMetadata(): Metadata {
     (t) => t.startDate && computeStatus(t, today) === "ongoing",
   ).slice(0, 2);
   const ongoingText = running.length
-    ? `Running now: ${running.map((t) => localizedName(t, LOCALE)).join(", ")}. `
+    ? `開催中は${running.map((t) => localizedName(t, LOCALE)).join("・")}。`
     : "";
 
   const title = s.metaTitle(next ? localizedName(next, LOCALE) : "", mmdd);
 
   return {
-    // absolute — 루트 레이아웃의 title.template이 "| 홀덤마스터"를 붙인다.
-    // 영어 페이지에 한국어 사이트명이 SERP에 노출되면 안 된다.
-    title: { absolute: `${title} | HoldemMaster` },
+    // absolute — 루트 레이아웃 template의 "| 홀덤마스터"가 붙는 것을 막는다.
+    title: { absolute: `${title}｜ホールデムマスター` },
     description: s.metaDescription(today.replace(/-/g, "."), ongoingText),
     alternates: {
       canonical: `${SITE}/${LOCALE}/tournaments`,
-      languages: { ko: `${SITE}/tournaments`, en: `${SITE}/en/tournaments`, ja: `${SITE}/ja/tournaments` },
+      languages: {
+        ko: `${SITE}/tournaments`,
+        en: `${SITE}/en/tournaments`,
+        ja: `${SITE}/ja/tournaments`,
+      },
     },
     openGraph: {
-      title: `${title} | HoldemMaster`,
+      title: `${title}｜ホールデムマスター`,
       description:
-        "Live poker tournaments worldwide — dates, buy-ins and an official-source link on every event.",
+        "国内・海外のポーカー大会を、日程・バイイン・会場と公式サイトのリンクつきで一覧に。",
       url: `${SITE}/${LOCALE}/tournaments`,
-      siteName: "HoldemMaster",
+      siteName: "ホールデムマスター",
       locale: s.ogLocale,
       type: "article",
     },
