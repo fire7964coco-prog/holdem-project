@@ -5,6 +5,14 @@ import { SEO } from "@/components/seo";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { Trophy, Globe, MapPin, Calendar, Users, DollarSign, ChevronRight, Star, Info, BookOpen, Target, Zap, ExternalLink } from "lucide-react";
+import {
+  TOURNAMENTS,
+  computeStatus,
+  formatDateRange,
+  formatMonthBadge,
+  buildEventSchemas,
+  STATUS_LABEL,
+} from "@/lib/tournaments";
 
 const DOMESTIC = [
   {
@@ -326,392 +334,10 @@ const BEGINNER_GUIDE = [
   },
 ];
 
-/** 2026-07-02 기준. WSOP·APT·EPT·GOP·AJPC·APPT·Triton 등 공식 일정 웹검색 재확인 후 반영. */
-const SCHEDULE_2026 = [
-  {
-    id: "kpc-jeju",
-    name: "KPC x LPT Series 2026",
-    type: "domestic" as const,
-    month: "1월",
-    monthNum: 1,
-    dateRange: "2026.01.03~01.18",
-    location: "한국 제주 (LES A Casino)",
-    buyin: "₩90만~",
-    emoji: "🃏",
-    color: "bg-primary/20 text-primary border-primary/40",
-    status: "ended" as const,
-    link: "https://koreapokercup.com",
-    note: "K Poker Cup 공식 · 54개 메인 이벤트",
-  },
-  {
-    id: "aspt-korea",
-    name: "ASPT Korea 2026",
-    type: "domestic" as const,
-    month: "1~2월",
-    monthNum: 1,
-    dateRange: "2026.01.23~02.01",
-    location: "한국 인천 (파라다이스 시티)",
-    buyin: "다양",
-    emoji: "🏙️",
-    color: "bg-blue-500/15 text-blue-400 border-blue-500/30",
-    status: "ended" as const,
-    link: "https://aspt.world/events/aspt-korea-2026/",
-  },
-  {
-    id: "apt-jeju-classic",
-    name: "APT 제주 클래식 2026",
-    type: "domestic" as const,
-    month: "1~2월",
-    monthNum: 1,
-    dateRange: "2026.01.30~02.08",
-    location: "한국 제주 (신화월드)",
-    buyin: "다양",
-    emoji: "🌊",
-    color: "bg-orange-500/15 text-orange-400 border-orange-500/30",
-    status: "ended" as const,
-    link: "https://www.theasianpokertour.com/series/apt-jeju-classic-south-korea-2026",
-    highlight: true,
-    note: "APT 공식 · 총 KRW 49억 GTD · 99개 이벤트",
-  },
-  {
-    id: "ept-paris",
-    name: "EPT 파리 2026",
-    type: "international" as const,
-    month: "2~3월",
-    monthNum: 2,
-    dateRange: "2026.02.18~03.01",
-    location: "프랑스 파리",
-    buyin: "€5,300 (메인)",
-    emoji: "🗼",
-    color: "bg-red-500/15 text-red-400 border-red-500/30",
-    status: "ended" as const,
-    link: "https://www.pokerstars.com/poker/ept",
-  },
-  {
-    id: "triton-jeju",
-    name: "Triton Poker Series 제주",
-    type: "domestic" as const,
-    month: "3~4월",
-    monthNum: 3,
-    dateRange: "2026.03.05~04.01",
-    location: "한국 제주 (LES A Casino)",
-    buyin: "$2,000~$150,000",
-    emoji: "💎",
-    color: "bg-violet-500/15 text-violet-400 border-violet-500/30",
-    status: "ended" as const,
-    link: "https://www.tritonpokerseries.com",
-    note: "Triton ONE(3/5~15) + SHR(3/15~4/1) · 공식 일정",
-  },
-  {
-    id: "triton-montenegro",
-    name: "Triton SHR 몬테네그로",
-    type: "international" as const,
-    month: "5월",
-    monthNum: 5,
-    dateRange: "2026.05.13~05.28",
-    location: "몬테네그로 부드바 (Budva)",
-    buyin: "$25,000~$100,000+",
-    emoji: "💎",
-    color: "bg-violet-500/15 text-violet-400 border-violet-500/30",
-    status: "ended" as const,
-    link: "https://www.tritonpokerseries.com",
-    note: "Triton 10주년 · $100K PLO·NLH 메인 + Triton Invitational",
-  },
-  {
-    id: "wsop-europe-spring",
-    name: "WSOP Europe 2026",
-    type: "international" as const,
-    month: "3~4월",
-    monthNum: 3,
-    dateRange: "2026.03.31~04.10",
-    location: "체코 프라하 (King's Casino)",
-    buyin: "€5,300 (메인)",
-    emoji: "🏰",
-    color: "bg-yellow-500/15 text-yellow-400 border-yellow-500/30",
-    status: "ended" as const,
-    link: "https://www.wsop.com/tournaments/2026-wsop-europe/",
-    note: "WSOP 공식 · 로즈바도프→프라하 이전 · 15개 브레이슬릿 · 메인(€10M GTD) 4/3~9",
-  },
-  {
-    id: "ajpc-incheon-1",
-    name: "AJPC 사무라이 서킷 인천 1차",
-    type: "domestic" as const,
-    month: "4월",
-    monthNum: 4,
-    dateRange: "2026.04.10~04.19",
-    location: "한국 인천 (파라다이스 시티)",
-    buyin: "다양",
-    emoji: "⚔️",
-    color: "bg-blue-500/15 text-blue-400 border-blue-500/30",
-    status: "ended" as const,
-    link: "https://samurai.ajpc.jp",
-    note: "AJPC 공식 · Paradise City · 35개 이벤트",
-  },
-  {
-    id: "apt-taipei",
-    name: "APT Taipei 2026",
-    type: "international" as const,
-    month: "4~5월",
-    monthNum: 4,
-    dateRange: "2026.04.22~05.03",
-    location: "대만 타이베이 (Red Space)",
-    buyin: "다양",
-    emoji: "🏙️",
-    color: "bg-orange-500/15 text-orange-400 border-orange-500/30",
-    status: "ended" as const,
-    link: "https://www.theasianpokertour.com/series",
-    note: "APT 공식 · 20주년 시즌 2번째 스톱",
-  },
-  {
-    id: "ept-monte-carlo",
-    name: "EPT 몬테카를로 2026",
-    type: "international" as const,
-    month: "4~5월",
-    monthNum: 4,
-    dateRange: "2026.04.30~05.10",
-    location: "모나코 (Sporting Monte-Carlo)",
-    buyin: "€5,300 (메인)",
-    emoji: "🎰",
-    color: "bg-red-500/15 text-red-400 border-red-500/30",
-    status: "ended" as const,
-    link: "https://www.pokerstars.com/poker/ept",
-    note: "EPT 공식 · 21주년 · €5,300 메인",
-  },
-  {
-    id: "gop-incheon-1",
-    name: "Gods of Poker (GOP) 인천",
-    type: "domestic" as const,
-    month: "5월",
-    monthNum: 5,
-    dateRange: "2026.05.15~05.24",
-    location: "한국 인천 (Paradise City)",
-    buyin: "다양",
-    emoji: "👑",
-    color: "bg-primary/20 text-primary border-primary/40",
-    status: "ended" as const,
-    link: "https://godsofpoker.com/series/incheon-2026",
-    note: "GOP 공식 · 'The Prophecy Unfolds' · 79개 트로피 · 메인 우승 Kyung Min Lee(₩1.48억)",
-  },
-  {
-    id: "wsop-2026",
-    name: "제57회 WSOP 2026",
-    type: "international" as const,
-    month: "5~8월",
-    monthNum: 5,
-    dateRange: "2026.05.26~08.05 (ME 파이널 8/3~5)",
-    location: "미국 라스베이거스 (Horseshoe & Paris)",
-    buyin: "$300~$250,000",
-    emoji: "🌎",
-    color: "bg-yellow-500/15 text-yellow-400 border-yellow-500/30",
-    status: "ongoing" as const,
-    link: "https://www.wsop.com/tournaments/2026-57th-annual-world-series-of-poker/",
-    highlight: true,
-    note: "브레이슬릿 99개 수여 완료(7/15 종료) · 메인 파이널 테이블 8/3~5 ESPN",
-    blogLink: "/blog/wsop-2026-tournament-guide",
-  },
-  {
-    id: "apt-incheon",
-    name: "APT 인천 2026",
-    type: "domestic" as const,
-    month: "8월",
-    monthNum: 8,
-    dateRange: "2026.08.07~08.16",
-    location: "한국 인천 (파라다이스 시티)",
-    buyin: "다양",
-    emoji: "🌊",
-    color: "bg-orange-500/15 text-orange-400 border-orange-500/30",
-    status: "upcoming" as const,
-    link: "https://www.theasianpokertour.com/series/apt-incheon-south-korea-2026",
-    note: "APT 공식 · Paradise City · 메인 KRW 15억 GTD",
-    blogLink: "/blog/apt-incheon-2026-guide",
-  },
-  {
-    id: "ept-barcelona",
-    name: "EPT 바르셀로나 2026",
-    type: "international" as const,
-    month: "8~9월",
-    monthNum: 8,
-    dateRange: "2026.08.16~08.29",
-    location: "스페인 바르셀로나",
-    buyin: "€5,300 (메인)",
-    emoji: "🏖️",
-    color: "bg-red-500/15 text-red-400 border-red-500/30",
-    status: "upcoming" as const,
-    link: "https://www.pokerstars.com/poker/ept",
-    note: "PokerStars·Casino Barcelona 공식 · 8/16~29",
-  },
-  {
-    id: "gop-manila",
-    name: "GOP Manila 2026 (The Arena of Champions)",
-    type: "international" as const,
-    month: "8월",
-    monthNum: 8,
-    dateRange: "2026.08.21~08.30",
-    location: "필리핀 마닐라 (City of Dreams)",
-    buyin: "다양",
-    emoji: "👑",
-    color: "bg-primary/20 text-primary border-primary/40",
-    status: "upcoming" as const,
-    link: "https://godsofpoker.com/series/manila-2026",
-    note: "GOP 공식 · 'The Arena of Champions' · 82개 이벤트 · 메인 PHP 30M GTD",
-  },
-  {
-    id: "appt-korea",
-    name: "APPT 코리아 2026",
-    type: "domestic" as const,
-    month: "9월",
-    monthNum: 9,
-    dateRange: "2026.09.03~09.14",
-    location: "한국 인천 (파라다이스 시티)",
-    buyin: "₩600K~₩5M",
-    emoji: "♠️",
-    color: "bg-red-500/15 text-red-400 border-red-500/30",
-    status: "upcoming" as const,
-    link: "https://www.pokerstarslive.com/appt/korea/",
-    highlight: true,
-    note: "PokerStars 공식 · 6년 만의 한국 복귀 · 메인 9/10~14(₩1.8M) · 총 ₩20억+ GTD",
-    blogLink: "/blog/appt-korea-2026-guide",
-  },
-  {
-    id: "gop-taipei-2",
-    name: "GOP Taipei II (The Trial of Wisdom)",
-    type: "international" as const,
-    month: "9월",
-    monthNum: 9,
-    dateRange: "2026.09.18~09.27",
-    location: "대만 타이베이",
-    buyin: "다양",
-    emoji: "👑",
-    color: "bg-primary/20 text-primary border-primary/40",
-    status: "upcoming" as const,
-    link: "https://godsofpoker.com/series",
-    note: "GOP 공식 · 타이베이 2번째 스톱",
-  },
-  {
-    id: "apt-jeju-fall",
-    name: "APT 제주 2026 (가을)",
-    type: "domestic" as const,
-    month: "9~10월",
-    monthNum: 9,
-    dateRange: "2026.09.25~10.07",
-    location: "한국 제주",
-    buyin: "다양",
-    emoji: "🍂",
-    color: "bg-orange-500/15 text-orange-400 border-orange-500/30",
-    status: "upcoming" as const,
-    link: "https://www.theasianpokertour.com/series",
-    note: "APT 공식 · 제주 신화월드 · 가을 시리즈",
-    blogLink: "/blog/apt-jeju-2026-fall-guide",
-  },
-  {
-    id: "gop-incheon-2",
-    name: "GOP Incheon II (The Labyrinth Trail)",
-    type: "domestic" as const,
-    month: "10~11월",
-    monthNum: 10,
-    dateRange: "2026.10.30~11.08",
-    location: "한국 인천 (Paradise City)",
-    buyin: "다양",
-    emoji: "👑",
-    color: "bg-primary/20 text-primary border-primary/40",
-    status: "upcoming" as const,
-    link: "https://godsofpoker.com/series",
-    note: "GOP 공식 · 10/30~11/8",
-  },
-  {
-    id: "apt-championship",
-    name: "APT 챔피언십 2026",
-    type: "international" as const,
-    month: "11월",
-    monthNum: 11,
-    dateRange: "2026.11.12~11.29",
-    location: "대만 타이베이 (Red Space)",
-    buyin: "다양",
-    emoji: "🏆",
-    color: "bg-orange-500/15 text-orange-400 border-orange-500/30",
-    status: "upcoming" as const,
-    link: "https://www.theasianpokertour.com/series/apt-championship-taipei-2026/info",
-    note: "APT 공식 · 메인 $500만 GTD(11/23~27) · 20주년 피날레",
-  },
-  {
-    id: "wsop-paradise",
-    name: "WSOP Paradise 2026",
-    type: "international" as const,
-    month: "12월",
-    monthNum: 12,
-    dateRange: "2026.12.01~12.18",
-    location: "바하마 나소 (Baha Mar)",
-    buyin: "다양",
-    emoji: "🌴",
-    color: "bg-yellow-500/15 text-yellow-400 border-yellow-500/30",
-    status: "upcoming" as const,
-    link: "https://www.wsop.com/tournaments/2026-wsop-paradise/",
-    note: "WSOP 공식 · Baha Mar(나소) 신규 이전 · 이벤트 12/3~17 · 15+ 브레이슬릿",
-  },
-  {
-    id: "ept-prague",
-    name: "EPT 프라하 2026",
-    type: "international" as const,
-    month: "12월",
-    monthNum: 12,
-    dateRange: "2026.12.02~12.13",
-    location: "체코 프라하",
-    buyin: "€5,300 (메인)",
-    emoji: "🏰",
-    color: "bg-red-500/15 text-red-400 border-red-500/30",
-    status: "upcoming" as const,
-    link: "https://www.pokerstars.com/poker/ept",
-    note: "PokerStars 공식 · 2026 EPT 시즌 피날레",
-  },
-  {
-    id: "gop-jeju-2026",
-    name: "GOP Jeju 2026 (The Olympus Return)",
-    type: "domestic" as const,
-    month: "12월",
-    monthNum: 12,
-    dateRange: "2026.12.04~12.13",
-    location: "한국 제주 (신화월드 LES A)",
-    buyin: "다양",
-    emoji: "🎄",
-    color: "bg-primary/20 text-primary border-primary/40",
-    status: "upcoming" as const,
-    link: "https://godsofpoker.com/series",
-    note: "GOP 공식 · 2026 시즌 피날레",
-  },
-  {
-    id: "wpt-championship",
-    name: "WPT 월드 챔피언십",
-    type: "international" as const,
-    month: "12월",
-    monthNum: 12,
-    dateRange: "2026.12 예정 (미발표)",
-    location: "미국 라스베이거스 (Wynn)",
-    buyin: "$10,400 예상",
-    emoji: "🌍",
-    color: "bg-blue-500/15 text-blue-400 border-blue-500/30",
-    status: "upcoming" as const,
-    link: "https://www.worldpokertour.com",
-    note: "WPT 공식 · 2025 Prime 챔피언십 우승 Schuyler Thornton($2.26M) · 2026 메인($10,400) 일정 발표 대기",
-  },
-  {
-    id: "hpl-league",
-    name: "홀덤펍 리그 (HPL)",
-    type: "domestic" as const,
-    month: "연중",
-    monthNum: 0,
-    dateRange: "매월 상시 진행",
-    location: "전국 홀덤펍 참가 매장",
-    buyin: "무료~소액",
-    emoji: "🍺",
-    color: "bg-green-500/15 text-green-400 border-green-500/30",
-    status: "ongoing" as const,
-    link: null,
-  },
-];
-
-function ScheduleSection() {
+/** 데이터 정본: lib/tournaments.ts — 값 출처·원문 인용은 docs/tournament-spine.md */
+function ScheduleSection({ todayISO }: { todayISO: string }) {
   const [filter, setFilter] = useState<"all" | "domestic" | "international">("all");
-  const filtered = filter === "all" ? SCHEDULE_2026 : SCHEDULE_2026.filter(t => t.type === filter);
+  const filtered = filter === "all" ? TOURNAMENTS : TOURNAMENTS.filter(t => t.type === filter);
 
   return (
     <motion.section
@@ -723,10 +349,10 @@ function ScheduleSection() {
       <div className="flex items-center gap-3 mb-5">
         <Calendar className="w-5 h-5 text-primary flex-shrink-0" />
         <h2 className="text-2xl font-serif font-bold text-foreground">2026 홀덤 대회 일정표</h2>
-        <span className="text-xs bg-primary/15 text-primary border border-primary/30 px-2.5 py-0.5 rounded-full font-bold">2026.07.02 기준</span>
+        <span className="text-xs bg-primary/15 text-primary border border-primary/30 px-2.5 py-0.5 rounded-full font-bold">{todayISO.replace(/-/g, ".")} 기준</span>
       </div>
       <p className="text-muted-foreground text-sm mb-5 leading-relaxed">
-        WSOP·APT·APPT·EPT·GOP·AJPC·Triton 공식 발표 일정을 웹검색으로 재확인해 반영했습니다. 변경·연기는 각 대회 공식 사이트를 우선 확인하세요.
+        각 대회 <strong className="text-foreground">공식 사이트 원문</strong>을 직접 확인해 기록했고, 카드마다 그 출처를 링크했습니다. 진행 상태는 날짜에서 자동 계산됩니다. 변경·연기는 공식 사이트를 우선 확인하세요.
       </p>
 
       <div className="flex gap-2 mb-6">
@@ -757,26 +383,26 @@ function ScheduleSection() {
                 <span className="text-2xl">{t.emoji}</span>
                 <div>
                   <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full border ${t.color} mb-1 inline-block`}>
-                    {t.month}
+                    {formatMonthBadge(t)}
                   </span>
                   <h3 className="text-sm font-bold text-foreground leading-snug">{t.name}</h3>
                 </div>
               </div>
               <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full border flex-shrink-0 ${
-                t.status === "ongoing"
+                computeStatus(t, todayISO) === "ongoing"
                   ? "bg-green-500/15 text-green-400 border-green-500/30"
-                  : t.status === "ended"
+                  : computeStatus(t, todayISO) === "ended"
                     ? "bg-muted/20 text-muted-foreground/80 border-border"
                     : "bg-primary/10 text-primary border-primary/25"
               }`}>
-                {t.status === "ongoing" ? "진행중" : t.status === "ended" ? "종료" : "예정"}
+                {STATUS_LABEL[computeStatus(t, todayISO)]}
               </span>
             </div>
 
             <div className="grid grid-cols-2 gap-2 text-xs">
               <div className="bg-background/50 rounded-lg p-2">
                 <div className="text-[10px] text-muted-foreground/60 uppercase tracking-wider mb-0.5">일정</div>
-                <div className="font-semibold text-foreground">{t.dateRange}</div>
+                <div className="font-semibold text-foreground">{formatDateRange(t)}</div>
               </div>
               <div className="bg-background/50 rounded-lg p-2">
                 <div className="text-[10px] text-muted-foreground/60 uppercase tracking-wider mb-0.5">바이인</div>
@@ -797,8 +423,8 @@ function ScheduleSection() {
               </div>
             )}
             <div className="flex flex-wrap items-center gap-2 mt-auto">
-              {t.link && (
-                <a href={t.link} target="_blank" rel="noopener noreferrer"
+              {t.sourceUrl && (
+                <a href={t.sourceUrl} target="_blank" rel="noopener noreferrer"
                   className="flex items-center gap-1 text-[11px] text-primary font-semibold hover:underline">
                   공식 사이트 <ExternalLink className="w-3 h-3" />
                 </a>
@@ -848,7 +474,7 @@ const FAQS = [
   },
 ];
 
-export default function Tournaments() {
+export default function Tournaments({ todayISO }: { todayISO: string }) {
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -883,46 +509,17 @@ export default function Tournaments() {
     ],
   };
 
-  const eventSchemas = [
-    {
-      "@context": "https://schema.org",
-      "@type": "Event",
-      "name": "WSOP World Series of Poker 2026",
-      "description": "세계 최대 홀덤 대회. 브레이슬릿 시리즈 5/26~7/15(251,899 엔트리·99개 수여), 메인이벤트 파이널 테이블 8/3~5 ESPN.",
-      "startDate": "2026-05-26",
-      "endDate": "2026-08-05",
-      "location": { "@type": "Place", "name": "Horseshoe Las Vegas", "address": { "@type": "PostalAddress", "addressLocality": "Las Vegas", "addressCountry": "US" } },
-      "organizer": { "@type": "Organization", "name": "WSOP", "url": "https://www.wsop.com" },
-      "url": "https://www.wsop.com",
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Event",
-      "name": "APT Incheon 2026 (Asian Poker Tour)",
-      "description": "아시아 최대 홀덤 대회 투어 APT의 2026 인천 스톱. 파라다이스 시티 카지노 개최.",
-      "startDate": "2026-08-07",
-      "endDate": "2026-08-16",
-      "location": { "@type": "Place", "name": "Paradise City Casino", "address": { "@type": "PostalAddress", "addressLocality": "Incheon", "addressCountry": "KR" } },
-      "organizer": { "@type": "Organization", "name": "Asian Poker Tour", "url": "https://www.theasianpokertour.com" },
-      "url": "https://www.theasianpokertour.com/series/apt-incheon-south-korea-2026",
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Event",
-      "name": "APPT Korea 2026 (Asia Pacific Poker Tour)",
-      "description": "PokerStars APPT가 6년 만에 한국 복귀. 파라다이스 시티 인천에서 ₩20억+ 보장 개최.",
-      "startDate": "2026-09-03",
-      "endDate": "2026-09-14",
-      "location": { "@type": "Place", "name": "Paradise City Casino", "address": { "@type": "PostalAddress", "addressLocality": "Incheon", "addressCountry": "KR" } },
-      "organizer": { "@type": "Organization", "name": "PokerStars LIVE", "url": "https://www.pokerstarslive.com/appt/korea/" },
-      "url": "https://www.pokerstarslive.com/appt/korea/",
-    },
-  ];
+  const eventSchemas = buildEventSchemas(todayISO);
 
   const combinedSchema = { "@context": "https://schema.org", "@graph": [articleSchema, breadcrumbSchema, faqSchema, ...eventSchemas] };
 
   return (
     <>
+      {/* 구조화 데이터 — SEO 컴포넌트는 schema prop을 렌더하지 않으므로 여기서 직접 주입한다 */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedSchema) }}
+      />
       <SEO
         title="⚡ 홀덤 대회 일정 2026 — WSOP 파이널 8/3~5·APT 인천 8/7"
         description="【홀덤 대회 일정】WSOP 브레이슬릿 시리즈 종료(7/15)·메인 파이널 테이블 8/3~5 ESPN · APT 인천 8/7·EPT 바르셀로나 8/16 예정. ⚡2026 국내외 공식 일정·종료/진행중/예정 표시 — 참가 전 확인하세요."
@@ -970,7 +567,7 @@ export default function Tournaments() {
         </motion.div>
 
         {/* 2026 대회 일정표 */}
-        <ScheduleSection />
+        <ScheduleSection todayISO={todayISO} />
 
         {/* 🇰🇷 한국 포커 허브 2026 */}
         <motion.section
