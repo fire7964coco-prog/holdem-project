@@ -3,17 +3,24 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
-## 2026-07-30 (심야) — ★KO 규칙·족보 클러스터 10편 전수 경화 (§13 오류 16건 수정)
+## 2026-07-30 (심야) — ★KO 규칙·족보 클러스터 13편 전수 경화 (§13 오류 20건 수정)
 
 **포스트 총 수: 한국어 57 / 다국어 457** (기존 글 경화 — 순증 0)
 
 사장님 지시: *"규칙클러스터부터 족보클러스터까지만 순서대로. 배포는 글마다. 규칙 클러스터가 끝나면
 전체 병렬 fable5로 페르소나 입혀서 적대적 에이전트 검수. 상단 한줄답을 2~4줄 요약 단락으로."*
 
-### 대상 10편 (커밋 10건, 전부 개별 배포)
+### 대상 13편 (커밋 13건, 전부 개별 배포)
 
-**규칙 4편** — `holdem-rules`(필라) · `texas-holdem-rules-for-beginners` · `holdem-game-order`(LEG) · `holdem-check-meaning`
+**규칙 7편** — `holdem-rules`(필라) · `texas-holdem-rules-for-beginners` · `holdem-game-order`(LEG) ·
+`holdem-check-meaning` · `holdem-blind-meaning`(LEG) · `holdem-small-blind-role` · `holdem-beginner-mistakes-10`(LEG)
 **족보 6편** — `holdem-hand-rankings`(필라) · `holdem-tiebreak-rules` · `holdem-hand-rankings-confusing` · `holdem-split-pot-rules` · `holdem-flush-vs-straight` · `holdem-vs-7poker-hand-rankings` (전부 LEG)
+
+> ⚠️ **클러스터 정의 오류를 중간에 정정했다.** 처음에 규칙 클러스터를 임의로 4편으로 잡았는데,
+> `holdem-rules` 필라의 `:::pillarhub[홀덤 규칙 완전정복 로드맵]`이 **이미 멤버를 선언**하고 있었다
+> (game-order · **blind-meaning** · **small-blind-role** · check-meaning · **beginner-mistakes-10**).
+> 사장님 지적으로 확인해 누락 3편을 추가 경화했다. 특히 `blind-meaning`은 **GSC 540노출로 KO 최다**였다.
+> → **다음부터 클러스터 범위는 필라의 pillarhub를 먼저 읽고 정한다.**
 
 ### 🔴 §13 사실오류 16건 수정 (글별)
 
@@ -27,7 +34,10 @@
 | `holdem-hand-rankings-confusing` | "포카드가 7배 드물다" → **6배**(3,744÷624) / FAQ가 7장으로 성립 불가한 전제(A-2-3-4-5와 A-K-Q-J-10 동시 = 9장 필요) / 키커 예시가 `tiebreak-rules`와 100% 동일 → 교체 |
 | `holdem-split-pot-rules` | **오류 6건(최다)** — "무늬까지 같아야 스플릿"(2곳, 무늬는 무관) / 보드 9999K "전원 스플릿" → **A 보유자 단독승** / 보드 5♠~9♠ 스트플 "전원 스플릿" → **10♠ 보유자 단독승** / A♠A♦ 카드중복 + 트리플이 스트레이트를 이긴다는 역전 / "풀하우스+키커 A"(풀하우스는 키커 없음) / FAQ "트리플 A" → 풀하우스 |
 | `holdem-flush-vs-straight` | "♥가 나오면 스트레이트 플러시" → **6♥일 때만**(스트플은 연속 5장) / FAQ "보드 같은 무늬 4장이면 그 무늬 없는 사람도 보드 플러시" → **플러시 아님**(5장 필요) |
-| `holdem-vs-7poker-hand-rankings` | 키커 표에서 풀하우스·플러시를 "키커 있음" → **없음**(5장을 다 쓰므로) |
+| `holdem-vs-7poker-hand-rankings` | 키커 표에서 풀하우스·플러시를 "키커 있음" → **없음**(5장을 다 쓰므로) / AA 키커 예시가 **홀덤에서 성립 불가**(두 베스트5 교집합 ∅ → 보드 6장 필요) |
+| `holdem-blind-meaning` | 표 "SB 프리플랍 세 번째 마지막" → **끝에서 두 번째**(같은 글 본문과 모순) / "스몰이 **항상** 빅의 절반" → 같은 글 FAQ가 1/3 게임 반례를 제시하며 자기모순 / "리메이크"(비존재 용어)·"오버리밍프" 오타 |
+| `holdem-small-blind-role` | §13 오류 0건. FAQ 구형 형식 전환 + 필라 역링크 0건 복구 |
+| `holdem-beginner-mistakes-10` | §13 오류 0건. "시뮬레이션" → 어림값 정직 표기, "99%" → "대부분" 완화 |
 
 ### ★ 이번 세션에서 확립·발견된 것
 

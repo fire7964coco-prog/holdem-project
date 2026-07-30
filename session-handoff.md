@@ -9,12 +9,18 @@
 
 ### 0. 한 줄 요약
 
-**KO 규칙 4편 + 족보 6편을 전수 경화하고 12개 커밋으로 개별 배포했다.** §13 사실오류 **19건**을 잡았고,
-그중 **3건은 내가 경화 중에 만든 것**을 Fable5 적대적 검수가 되잡았다. 다음은 **블라인드·포지션 클러스터**가 유력하다.
+**KO 규칙 7편 + 족보 6편(총 13편)을 전수 경화하고 개별 배포했다.** §13 사실오류 **20건**을 잡았고,
+그중 **3건은 내가 경화 중에 만든 것**을 Fable5 적대적 검수가 되잡았다.
 
-### 1. 무엇을 했나 (커밋 12건, 전부 배포됨)
+⚠️ **처음에 규칙 클러스터를 4편으로 잘못 잡았다.** 필라 `holdem-rules`의 `:::pillarhub`가 멤버를
+이미 선언(game-order·blind-meaning·small-blind-role·check-meaning·beginner-mistakes-10)하고 있었는데
+그걸 무시하고 임의로 범위를 정해 **3편을 빠뜨렸다**(사장님 지적으로 발견·추가 완료).
+→ ★**다음부터 클러스터 범위는 반드시 필라의 pillarhub를 먼저 읽고 정할 것.**
 
-**규칙 4편** — `holdem-rules`(필라) · `texas-holdem-rules-for-beginners` · `holdem-game-order`(LEG) · `holdem-check-meaning`
+### 1. 무엇을 했나 (커밋 16건, 전부 배포됨)
+
+**규칙 7편** — `holdem-rules`(필라) · `texas-holdem-rules-for-beginners` · `holdem-game-order`(LEG) ·
+`holdem-check-meaning` · `holdem-blind-meaning`(LEG·540노출) · `holdem-small-blind-role` · `holdem-beginner-mistakes-10`(LEG)
 **족보 6편** — `holdem-hand-rankings`(필라) · `holdem-tiebreak-rules` · `holdem-hand-rankings-confusing` · `holdem-split-pot-rules` · `holdem-flush-vs-straight` · `holdem-vs-7poker-hand-rankings` (전부 LEG)
 + 클러스터별 **Fable5 병렬 적대적 검수 반영 커밋 2건**
 
@@ -50,10 +56,11 @@
 
 ### 3. ▶ 다음 액션 후보
 
-1. ★ **블라인드·포지션 클러스터 5편** — 같은 방식으로 경화하기에 가장 적합
-   `holdem-blind-meaning`(540노출·CTR 1.85%·r8.0 — **KO 최다 노출**) · `holdem-blind-steal`(r5.2인데 **클릭 0**) ·
-   `holdem-small-blind-role` · `holdem-button-position` · `position-is-everything-in-holdem`
-   → `blind-steal`은 5위인데 CTR 0%라 **메타만 고쳐도 즉효** 가능성이 크다.
+1. ★ **포지션·전략 클러스터** — 규칙·족보 다음으로 자연스러운 확장
+   `holdem-blind-steal`(**평균 5.2위인데 클릭 0** — 메타만 고쳐도 즉효 가능성) ·
+   `holdem-button-position`(31노출·질문형 H2 0%) · `position-is-everything-in-holdem`(54노출·이미 67%) ·
+   `holdem-3bet-strategy`(65노출) · `holdem-check-raise`(57노출·CTR 1.75%)
+   ⚠️ **착수 전 해당 필라의 pillarhub를 먼저 읽어 멤버를 확정할 것**(이번 세션의 교훈).
 2. **스코프 밖으로 남긴 것 2건 (즉시 처리 가능·작음)**
    - `ak-offsuit-strategy`: `### Q1.` 뒤 **빈 줄이 없어 FAQPage 스키마가 0**. 빈 줄만 넣으면 복구.
    - `holdem-blind-meaning`: `title`에 ⚡ 잔존(다른 글은 이번에 제거 완료).
