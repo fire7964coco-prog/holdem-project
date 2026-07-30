@@ -23,9 +23,22 @@
  * 정석은 `app/[locale]/`로 이관해 루트 레이아웃이 params.locale을 받는 것이다.
  * 다만 91개 파일·517개 페이지의 라우팅을 재배선해야 해서, lang 속성 하나를 위해
  * 감당할 위험이 아니다. 이 스크립트는 앱 코드를 한 글자도 건드리지 않고
- * 같은 결과를 낸다. 되돌리려면 package.json의 postbuild 한 줄만 지우면 된다.
+ * 같은 결과를 낸다.
  * 인라인 스크립트는 그대로 남긴다 — 클라이언트 라우팅(/ja → /es) 대응이 필요하고,
  * 이중 안전망이 된다.
+ *
+ * ── ★ 호출 지점이 두 곳이다. 한 곳만 걸면 프로덕션에서 안 돈다
+ *   1) 로컬: package.json의 `postbuild` — `npm run build` 뒤 자동 실행
+ *   2) 프로덕션: **vercel.json의 `buildCommand`**
+ *        "next build && node scripts/patch-html-lang.mjs"
+ *
+ *   Vercel은 vercel.json에 buildCommand가 명시돼 있어서 `npm run build`가 아니라
+ *   `next build`를 직접 실행한다. 그래서 npm 라이프사이클 훅인 prebuild·postbuild가
+ *   **프로덕션에서 한 번도 돌지 않는다.**
+ *   실제로 처음엔 postbuild만 걸고 배포했다가 라이브가 그대로 lang="ko"였다.
+ *   (같은 이유로 prebuild의 generate-sitemap도 Vercel에서 안 돈다 →
+ *    public/sitemap.xml이 git에 커밋돼 있는 이유가 이것이다. 로컬 생성물이다.)
+ *   되돌리려면 위 두 곳의 호출만 지우면 된다.
  *
  * ── 로케일 목록을 어디서 얻는가 (★ 드리프트 방지)
  * lib/intl.ts를 import하지 않는다(.mjs라 TS를 못 읽는다). 대신 **빌드된 HTML에
