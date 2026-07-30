@@ -9,6 +9,7 @@
     "check:stale": "node scripts/check-translation-staleness.mjs",
     "prebuild": "npm run check:intl-links && npm run generate:sitemap",
     "build": "next build",
+    "postbuild": "node scripts/patch-html-lang.mjs",
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
