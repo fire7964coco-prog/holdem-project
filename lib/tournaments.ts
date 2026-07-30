@@ -817,7 +817,6 @@ const RAW_TOURNAMENTS: Tournament[] = [
     emoji: "🇯🇵",
     color: "bg-rose-500/15 text-rose-400 border-rose-500/30",
     sourceUrl: "https://japanopenpoker.com/events/",
-    blogLink: "/blog/jopt-osaka-2026-guide",
     sourceTier: "A",
     verifiedAt: "2026-07-29",
   },
