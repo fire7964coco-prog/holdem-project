@@ -34,6 +34,7 @@ import { POST as holdemTournament } from "./holdem-tournament";
 import { POST as wptAustralia2026Guide } from "./wpt-australia-2026-guide";
 import { POST as aptIncheon2026Guide } from "./apt-incheon-2026-guide";
 import { POST as wsop2026TournamentGuide } from "./wsop-2026-tournament-guide";
+import { POST as joptOsaka2026Guide } from "./jopt-osaka-2026-guide";
 import { POST as eptBarcelona2026Guide } from "./ept-barcelona-2026-guide";
 import { POST as koreaPokerMarathon2026 } from "./korea-poker-marathon-2026";
 import { POST as holdemGlossary } from "./holdem-glossary";
@@ -50,6 +51,7 @@ import { POST as holdemBadBeat } from "./holdem-bad-beat";
  */
 export const JA_POSTS: Post[] = [
   wsop2026TournamentGuide,
+  joptOsaka2026Guide,
   // Rules 필라 (6/6)
   texasHoldemRulesForBeginners,
   holdemGameOrder,

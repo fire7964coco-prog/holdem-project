@@ -106,7 +106,7 @@
 
 ## 내부링크 (하드 규칙)
 - 전부 `/ja/blog/슬러그` 형식.
-- **ja 화이트리스트(존재하는 글만 링크, Wave 5 반영 41개 + wsop판 = **42개**)**: texas-holdem-rules-for-beginners · holdem-game-order · holdem-betting-actions · holdem-blind-meaning · holdem-all-in-rules · holdem-showdown-rules · holdem-hand-rankings · holdem-tournament-vs-cash-game · holdem-flush-vs-straight · holdem-kicker · holdem-tiebreak-rules · holdem-split-pot-rules · holdem-reading-the-board · holdem-probability · holdem-pot-odds · holdem-outs · holdem-drawing-odds · holdem-implied-odds · holdem-equity · holdem-strategy · holdem-positions · holdem-position-play · holdem-starting-hands-chart · holdem-limping · holdem-3bet · holdem-continuation-bet · holdem-when-to-fold · holdem-tournament · holdem-icm · holdem-bubble · holdem-short-stack · apt-incheon-2026-guide · korea-poker-marathon-2026 · wpt-australia-2026-guide · ept-barcelona-2026-guide · **wsop-2026-tournament-guide**(2026-07-29 신설) · **holdem-glossary · holdem-straddle · holdem-rake · holdem-fish · holdem-cooler · holdem-bad-beat**.
+- **ja 화이트리스트(존재하는 글만 링크, Wave 5 반영 41개 + wsop·jopt오사카 = **43개**)**: texas-holdem-rules-for-beginners · holdem-game-order · holdem-betting-actions · holdem-blind-meaning · holdem-all-in-rules · holdem-showdown-rules · holdem-hand-rankings · holdem-tournament-vs-cash-game · holdem-flush-vs-straight · holdem-kicker · holdem-tiebreak-rules · holdem-split-pot-rules · holdem-reading-the-board · holdem-probability · holdem-pot-odds · holdem-outs · holdem-drawing-odds · holdem-implied-odds · holdem-equity · holdem-strategy · holdem-positions · holdem-position-play · holdem-starting-hands-chart · holdem-limping · holdem-3bet · holdem-continuation-bet · holdem-when-to-fold · holdem-tournament · holdem-icm · holdem-bubble · holdem-short-stack · apt-incheon-2026-guide · korea-poker-marathon-2026 · wpt-australia-2026-guide · ept-barcelona-2026-guide · **wsop-2026-tournament-guide**(2026-07-29 신설) · **jopt-osaka-2026-guide**(2026-07-30 신설) · **holdem-glossary · holdem-straddle · holdem-rake · holdem-fish · holdem-cooler · holdem-bad-beat**.
 - ★Glossary 완료 시 **화이트리스트 = EN 41편 전량** → 이 웨이브에선 신규 6편만 정상 링크. **이전 웨이브에서 스트립했던 링크들은 별도 "최종 링크복원 패스"에서 일괄 복원**(전 필라 존재).
 
 
@@ -312,3 +312,22 @@ apt-incheon ja판이 『パラサイト』·『イカゲーム』·BTS로 시작
 
 ★ **마라톤 글에서는 시차가 포커보다 더 결정적이다** — 풀마라톤 스타트가 아침 8~9시라
 시차가 안 빠진 몸으로 아침 레이스에 서면 뛰기 전부터 불리하다.
+
+### 12-7. 템플릿 리터럴 안의 백틱 (기술 함정, 2026-07-30)
+`content: \`...\`` 안에 마크다운 인라인 코드(`` `¥8,000` ``)를 쓰면 **템플릿 문자열이 끊겨
+빌드가 ParseError로 죽는다.** 공식 원문을 인용할 때 백틱을 그대로 붙여넣기 쉽다.
+→ 본문 안 백틱은 **`\``로 이스케이프**한다. 빌드 에러 메시지는
+   `ParseError: Unexpected token, expected ","`로 나오고 줄 번호를 알려준다.
+
+### 12-8. 국내(일본) 대회 글은 브랜드명을 제목에 넣는다
+`jopt` **18,100/월** vs `ポーカー 大会` 2,900 = **6배**.
+`jopt 大阪` 1,600 vs `ポーカー 大会 大阪` 210 = **7.6배**.
+→ 총칭만 쓰면 수요의 1/7만 받는다. **JOPT·WPT 같은 브랜드는 제목·H2·tags에 반드시.**
+   해외 대회는 반대로 브랜드 인지도를 먼저 확인할 것(EPT는 ja에서 실질 70).
+
+### 12-9. 「未公開」を書くのは弱さではない
+JOPT는 개막 1~2개월 전까지 바이인을 안 낸다(3레그 대조 확인).
+그때 **「まだ公開されていません」と明記し、根拠(他レグの状態)を並べる**のが正解다.
+경쟁 매체가 과거 레그 수치를 현재값처럼 쓰는 자리에서 이게 차별점이 된다.
+→ 그리고 **「待っている間にできること」**을 제시해 글의 효용을 유지한다
+  (JOPT는 티켓이 전 레그 공용이라 "지금부터 모을 수 있다"가 성립).
