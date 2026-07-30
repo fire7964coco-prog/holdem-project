@@ -5,28 +5,88 @@
 
 ---
 
-## ▶▶▶▶▶▶▶▶▶ 새 세션 START HERE (2026-07-30 심야 — KO 규칙·족보 클러스터 10편 전수 경화 완료)
+## ▶▶▶▶▶▶▶▶▶ 새 세션 START HERE (2026-07-30 심야 — KO 클러스터 경화, 전략 6/9에서 중단)
 
-### 0. 한 줄 요약
+### 0. 지금 어디까지 왔나
 
-**KO 규칙 7편 + 족보 6편(총 13편)을 전수 경화하고 개별 배포했다.** §13 사실오류 **20건**을 잡았고,
-그중 **3건은 내가 경화 중에 만든 것**을 Fable5 적대적 검수가 되잡았다.
+**KO 포스트 경화를 클러스터 단위로 진행 중.** 규칙(7) · 족보(6) · 포지션(3) 완료, **전략 클러스터 6/9에서 중단**.
 
-⚠️ **처음에 규칙 클러스터를 4편으로 잘못 잡았다.** 필라 `holdem-rules`의 `:::pillarhub`가 멤버를
-이미 선언(game-order·blind-meaning·small-blind-role·check-meaning·beginner-mistakes-10)하고 있었는데
-그걸 무시하고 임의로 범위를 정해 **3편을 빠뜨렸다**(사장님 지적으로 발견·추가 완료).
-→ ★**다음부터 클러스터 범위는 반드시 필라의 pillarhub를 먼저 읽고 정할 것.**
+| 클러스터 | 상태 | 편수 |
+|---|---|---|
+| 규칙 (필라 `holdem-rules`) | ✅ 완료 | 7편 |
+| 족보 (필라 `holdem-hand-rankings`) | ✅ 완료 + Fable5 검수 반영 | 6편 |
+| 포지션 (필라 `position-is-everything-in-holdem`) | ✅ 완료 | 3편 |
+| **전략 (필라 `holdem-strategy`)** | 🔄 **6/9 진행 중** | 9편 |
 
-### 1. 무엇을 했나 (커밋 16건, 전부 배포됨)
+### 1. ⚠️ 다음 세션이 바로 이어받을 것 — 전략 클러스터 3.5편
+
+**① `bluffing-strategy-when-and-how` — 부분 완료 상태 (커밋 `8410aa4`)**
+- ✅ 완료: §13 폴드율 오류(33%→37.5%) 수정 · 질문형 H2 75% · updated 갱신
+- ❌ **남음: "바로 답" 블록 · `## 출처` 섹션 · desc 정리(【블러핑 타이밍】·⚡ 제거) · emoji 필드가 공백(" ")**
+- 이 글은 LEGACY(`lib/posts.ts`)에 있고 16개 H2로 큰 편
+
+**② 미착수 3편**
+| 글 | 위치 | 상태 |
+|---|---|---|
+| `holdem-value-bet-sizing` | NEW | 질문형 11% · **desc 107자 초과** · 한줄 블록 있음 |
+| `holdem-overbet-strategy` | LEG | 질문형 18% · **desc 103자 초과** |
+| `holdem-bankroll-management` | NEW | 질문형 8% · desc 88 OK · 한줄 블록 있음 |
+
+**작업 패턴은 앞 6편과 동일**: §13 검산 → 바로 답 → 질문형 H2 70%+ → Q-A-E 직답 → 출처 섹션 → 메타 정리 → 빌드 → 개별 커밋.
+
+---
+
+### 2. 🔴 이번 세션에서 내가 저지른 실수 (사장님 지시로 기록 — 반복 금지)
+
+**① 규칙 클러스터 범위를 임의로 정해 3편을 빠뜨렸다**
+필라 `holdem-rules`의 `:::pillarhub`가 멤버를 **이미 선언**하고 있었는데(game-order·blind-meaning·small-blind-role·check-meaning·beginner-mistakes-10), 그걸 읽고도 무시하고 "규칙 4편"으로 내가 확정했다.
+→ 누락된 `holdem-blind-meaning`은 **GSC 540노출로 KO 최다 노출 글**이었다. 사장님이 "규칙클러스터에 blind-meaning 있지 않아?"라고 지적해서야 발견했다.
+→ ★**클러스터 범위는 반드시 필라의 pillarhub를 먼저 읽고 정할 것.** 내 판단으로 묶지 말 것.
+
+**② 백틱을 템플릿 리터럴에 넣어 빌드를 2번 깨뜨렸다**
+CLAUDE.md §12-A에 명시된 규칙인데 같은 실수를 반복했다(`texas-beginners`의 s/o/T 표기, `bluffing`의 계산식).
+→ 표기는 `**굵게**` 또는 `==하이라이트==`로. 계산식도 백틱 금지.
+
+**③ posting.mdc를 세션 초반에 1번 읽고 그 뒤 재독하지 않았다**
+20편 넘게 작업하며 컨텍스트가 요약되는 동안 기억에만 의존했다. 사장님이 "규칙파일 읽고 하는 거야?"라고 물어서 재독했고, 그제서야 **"바로 답"이 tldr·stripe와 3중 중복**이라는 걸 확인했다(SEO 검수 에이전트도 이미 지적했는데 내가 넘겼던 항목).
+→ ★긴 세션에서는 **클러스터가 바뀔 때마다 posting.mdc를 다시 볼 것.**
+
+**④ 경화하면서 내가 새 오류를 3건 만들었다** (전부 Fable5 검수가 되잡음)
+- `texas-beginners` 핸드 표 "1장 (A♠)" → 실제로는 K♠가 키커로 들어가 **2장** 사용
+- `flush-vs-straight` 드로우 분기 표에서 **10이 오면 스트레이트가 개선되는 경우를 누락**
+- `split-pot` "개선 불가능은 로열플러시뿐" → A-A-A-A-K 보드 반례 존재(거짓 절대명제)
+→ ★자체 검산만으로는 못 거른다. **적대적 검수는 선택이 아니라 필수.**
+
+**⑤ FAQ 스키마 감사를 잘못해서 사장님께 틀린 숫자를 보고했다**
+소스를 raw로 읽어 정규식을 돌렸는데, JS 스펙상 **템플릿 리터럴의 CRLF가 런타임에 LF로 정규화**되는 걸 몰라 검출 수를 오카운트했다("23개 손실"이라 보고 → 실제로는 대부분 정상).
+→ ★진실은 **빌드 산출물**(`.next/server/app/blog/*.html`)의 `"@type":"Question"` 개수다.
+
+**⑥ 필라 seoTitle을 오히려 카니발이 나는 방향으로 바꿨다**
+족보 필라를 "플러시가 스트레이트보다 센 이유"로 바꿨는데, 이건 `confusing`·`flush-vs-straight`와 **같은 앵글**이라 세 글이 충돌했다. SEO 검수가 지적해 "투페어가 하이카드보다 흔합니다 — 홀덤 족보 순위"로 재수정.
+→ ★메타를 고칠 때 **클러스터 형제 글의 seoTitle을 먼저 훑을 것.**
+
+**⑦ 에러 원인을 추측으로 답했다**
+사장님이 "왜 자꾸 에러나냐"고 물었을 때 4가지를 나열했는데, 실제 원인은 **API 529 Overloaded**였다. 스크린샷을 받고서야 확인했다.
+→ ★내가 못 보는 화면의 에러는 **추측하지 말고 문구를 물어볼 것.**
+
+**⑧ 인라인 정규식이 셸에서 깨지는 걸 반복했다**
+CLAUDE.md §16이 "복잡한 스크립트는 .mjs 파일로"라고 명시하는데 `node -e` 인라인을 쓰다 2회 실패했다.
+
+---
+
+### 3. 무엇을 했나 (커밋 25건, 전부 배포됨)
 
 **규칙 7편** — `holdem-rules`(필라) · `texas-holdem-rules-for-beginners` · `holdem-game-order`(LEG) ·
 `holdem-check-meaning` · `holdem-blind-meaning`(LEG·540노출) · `holdem-small-blind-role` · `holdem-beginner-mistakes-10`(LEG)
 **족보 6편** — `holdem-hand-rankings`(필라) · `holdem-tiebreak-rules` · `holdem-hand-rankings-confusing` · `holdem-split-pot-rules` · `holdem-flush-vs-straight` · `holdem-vs-7poker-hand-rankings` (전부 LEG)
-+ 클러스터별 **Fable5 병렬 적대적 검수 반영 커밋 2건**
+**포지션 3편** — `position-is-everything-in-holdem`(필라) · `holdem-button-position` · `holdem-blind-steal`
+**전략 6/9** — `holdem-strategy`(필라) · `range-meaning` · `3bet` · `check-raise` · `cbet` · `bluffing`(부분)
+**별건** — `ak-offsuit-strategy` FAQ 스키마 복구(0→5) · "한 줄 답"→"바로 답" 라벨 11곳 통일
++ 클러스터별 **Fable5 병렬 적대적 검수 반영 2건**
 
-상세 오류 목록은 `WORKLOG.md` 2026-07-30(심야) 항목의 표 참조.
+**§13 사실오류 총 25건 수정.** 상세는 `WORKLOG.md` 2026-07-30(심야) 항목 표 참조.
 
-### 2. ★ 다음 세션이 반드시 알아야 할 것
+### 4. ★ 이번 세션에서 확립된 것 (그대로 재사용)
 
 1. **"바로 답" 블록이 새 표준이다** (사장님 지시 2026-07-30)
    기존 `> **한 줄 답**` / `> **한 줄 정리**`를 **`> **바로 답**` 2~4줄 자기완결 단락**으로 전환했다.
@@ -54,16 +114,22 @@
 
 6. ⚠️ **템플릿 리터럴에 백틱 금지**(CLAUDE.md §12-A). 1회 빌드 파손했다(exit=1). 표기는 `**s**`·`==JTs==`로.
 
-### 3. ▶ 다음 액션 후보
+### 5. ▶ 전략 클러스터 다음은 어디로?
 
-1. ★ **포지션·전략 클러스터** — 규칙·족보 다음으로 자연스러운 확장
-   `holdem-blind-steal`(**평균 5.2위인데 클릭 0** — 메타만 고쳐도 즉효 가능성) ·
-   `holdem-button-position`(31노출·질문형 H2 0%) · `position-is-everything-in-holdem`(54노출·이미 67%) ·
-   `holdem-3bet-strategy`(65노출) · `holdem-check-raise`(57노출·CTR 1.75%)
-   ⚠️ **착수 전 해당 필라의 pillarhub를 먼저 읽어 멤버를 확정할 것**(이번 세션의 교훈).
-2. **스코프 밖으로 남긴 것 2건 (즉시 처리 가능·작음)**
-   - `ak-offsuit-strategy`: `### Q1.` 뒤 **빈 줄이 없어 FAQPage 스키마가 0**. 빈 줄만 넣으면 복구.
-   - ~~`holdem-blind-meaning` title 이모지~~ → **해결됨**(규칙 클러스터 누락분 경화 시 처리).
+전략 9편을 끝내면 남은 pillarhub 클러스터는 셋이다. **착수 전 반드시 각 필라의 pillarhub를 먼저 읽고 멤버를 확정할 것.**
+
+| 클러스터 | 필라 위치 | 비고 |
+|---|---|---|
+| 스타팅 핸드·프리플랍 | `lib/posts.ts` 3540행 부근 | `holdem-starting-hand-range`(12노출·r23.8)·`when-to-fold-preflop` 등 |
+| 확률·수학 | `lib/posts.ts` 6846행 부근 | `holdem-probability`(34노출·**r28.6**·질문형 0%)·`pot-odds`·`outs`·`odds-calculator` |
+| 홀덤펍 | `lib/posts/holdem-pub-guide.ts` | `pub-first-visit`(227노출·CTR 9.69%)·`pub-legal`·`pub-promotion` |
+
+**우선순위 제안**: 확률·수학(필라가 r28.6으로 3페이지, 질문형 0%라 개선 여지 최대) → 홀덤펍(노출 큼) → 스타팅 핸드.
+
+**그 외 남은 것**
+- `docs/update-calendar.md` **8월 항목** — 8/2 홀덤마스터스, **8/5 WSOP 메인 결과(6개 언어)**, 8/16 APT 인천
+- GSC 최신 데이터가 **2026-07-12로 3주 묵음** → 새 CSV 받으면 우선순위 재산정
+- 이번 세션 메타 카니발 재배분(족보 필라·confusing·flush / 포지션 3편) **효과는 2~4주 후 GSC로 검증**
 3. **대회 글 10편의 "한 줄 답" → "바로 답" 라벨 통일** (위 2-1 참조)
 4. `docs/update-calendar.md` **8월 항목** — 8/2 홀덤마스터스, **8/5 WSOP 메인 결과(6개 언어)**, 8/16 APT 인천
 
