@@ -5,7 +5,7 @@
 
 ---
 
-## ▶▶▶▶▶▶▶▶▶ 새 세션 START HERE (2026-07-29 — 🔄**토너먼트 페이지 다국어 확장 진행 중**)
+## ▶▶▶▶▶▶▶▶▶ 새 세션 START HERE (2026-07-30 — ✅**로케일 보드 검수 7건 전건 완료·배포**)
 
 ### 지금 어디까지 왔나
 
@@ -16,6 +16,14 @@
 **Phase 2 완료 (2026-07-29)** — 로케일판 `/(locale)/tournaments` 5개 전부 배포
 ✅ `en` · ✅ `ja` · ✅ `zh` · ✅ `zh-hant` · ✅ `es`
 hreflang 6페이지 상호참조 성립 (ko · en · ja · zh-Hans · zh-Hant · es).
+
+**Phase 3 완료 (2026-07-30)** — 각 언어 **현지 기자 페르소나 병렬 적대적 검수** 7건 전건 처리·배포.
+① `<html lang>` ② twitter 카드 ③ aria-label ④ 날짜 표기 ⑤ es 숫자·통화 ⑥ note 배지 ⑦ 회장·국가명
+상세는 `WORKLOG.md` 2026-07-30 항목. 라이브 검증까지 끝났다(28경로 + 하위 7경로 전건 일치).
+
+★ **이 검수 방식이 효과가 컸다.** 로케일 페이지를 새로 만들면 배포 후
+   **각 언어 현지 기자 페르소나로 Agent를 병렬 실행해 적대적 검수**를 붙일 것.
+   사람이 안 보는 자리(twitter 태그·aria-label·숫자 포맷·회장명)에서 7건이 나왔다.
 
 **다음 후보** (사용자 판단 필요)
 - `de` · `pt` · `id` 등 나머지 로케일로 확장 — 절차는 아래 8단계 그대로
@@ -58,6 +66,159 @@ hreflang 6페이지 상호참조 성립 (ko · en · ja · zh-Hans · zh-Hant ·
   `[^}]*`가 끊긴다. 이런 건 Edit로 직접 고치는 게 빠르다.
 - 괄호 치환을 지명보다 **먼저** 할 것. `(Ha Long Bay)`가 지명 `Ha Long`을 품고 있다.
 - **스페인어는 천단위가 `.`이고 소수점이 `,`다** — 영어와 반대.
+  그리고 **멕시코에서 `# 세션 인수인계 (Session Handoff)
+
+> **사용법**: 작업 마칠 때 이 파일 업데이트 → 다음 세션 시작 시 AI가 읽고 바로 이어받음
+> 작업 시작 전 `CLAUDE.md` → `session-handoff.md` → `WORKLOG.md` 순서로 읽을 것.
+
+---
+
+## ▶▶▶▶▶▶▶▶▶ 새 세션 START HERE (2026-07-30 — ✅**로케일 보드 검수 7건 전건 완료·배포**)
+
+### 지금 어디까지 왔나
+
+**Phase 0~1 완료** — `/tournaments`를 25개 → **107개 / 28개국**으로 경화. 전부 공식 원문 정독(A등급 102 · B 4).
+구조도 갈아엎었다: `lib/tournaments.ts` 하나에서 카드·정렬·상태배지·메타태그·JSON-LD가 전부 파생된다.
+→ 날짜만 맞으면 배포할 때마다 자동 갱신. "WSOP 진행중 13일 노출" 사고의 구조적 원인 제거.
+
+**Phase 2 완료 (2026-07-29)** — 로케일판 `/(locale)/tournaments` 5개 전부 배포
+✅ `en` · ✅ `ja` · ✅ `zh` · ✅ `zh-hant` · ✅ `es`
+hreflang 6페이지 상호참조 성립 (ko · en · ja · zh-Hans · zh-Hant · es).
+
+**Phase 3 완료 (2026-07-30)** — 각 언어 **현지 기자 페르소나 병렬 적대적 검수** 7건 전건 처리·배포.
+① `<html lang>` ② twitter 카드 ③ aria-label ④ 날짜 표기 ⑤ es 숫자·통화 ⑥ note 배지 ⑦ 회장·국가명
+상세는 `WORKLOG.md` 2026-07-30 항목. 라이브 검증까지 끝났다(28경로 + 하위 7경로 전건 일치).
+
+★ **이 검수 방식이 효과가 컸다.** 로케일 페이지를 새로 만들면 배포 후
+   **각 언어 현지 기자 페르소나로 Agent를 병렬 실행해 적대적 검수**를 붙일 것.
+   사람이 안 보는 자리(twitter 태그·aria-label·숫자 포맷·회장명)에서 7건이 나왔다.
+
+**다음 후보** (사용자 판단 필요)
+- `de` · `pt` · `id` 등 나머지 로케일로 확장 — 절차는 아래 8단계 그대로
+- ko `/tournaments` 본문에 로케일 전환 링크 노출 (지금은 로케일→ko 단방향만 있음)
+- 조사 자산 포스팅화 (ICM 딜 12건 · 3국 세금 대조 · 영종도 10월 말 동시 개최 등)
+
+### 로케일 추가 절차 (5개 만들며 확정된 것)
+
+1. `docs/market-profile/<locale>.md` 정독 (비자·세금·통화·사업자·합법성)
+2. **현지 서제스트/질문 툴로 실검색 형태소 실측** — 건너뛰지 말 것.
+   ja에서 이게 결정적이었다: 「トーナメント」가 아니라 **「大会」**(2,900/월)였고,
+   `パラダイスシティ ポーカー 大会` 90 · `台湾…2026` 70 · `マニラ…2026` 50 ·
+   `ポーカー 大会 韓国` 50 이 잡혔다 → **우리 데이터가 가장 두꺼운 곳(KR17·TW12·PH5)과 정확히 겹친다.**
+   zh-hant는 대만이 12개라 같은 논리가 더 세게 먹힐 가능성이 높다.
+3. `lib/tournaments-i18n.ts`에 `BoardStrings` 추가 + `BOARD_STRINGS`에 등록
+4. **필드 사전**: `FIELD_<LOC>`(15~20개 값), `CITY_<LOC>`, `PAREN_<LOC>`, `SCHEMA_DESC_<LOC>`(10건),
+   서수 대회명이 필요하면 `NAME_OVERRIDE`
+   - ★ **CJK는 도시 67개 전수 매핑** — 라틴으로 두면 지역 검색을 통째로 놓친다.
+   - ★ **라틴 문자 언어(es 등)는 표기가 실제로 갈리는 것만** — 전수 매핑하면 오히려 틀린다.
+     (es는 19개만: Seville→Sevilla · Sydney→Sídney · Mexico City→Ciudad de México …)
+   - ★ 대회명은 **브랜드 라틴 + 지명만 현지** (「APT 仁川 2026」)
+   - ★ 각 분기점 5곳을 전부 건드려야 한다: `localizeField` · `localizeCity` ·
+     `localizedMonthBadge` · `nameMaps` · `buildLocaleSchemas`의 description 삼항
+5. `app/<locale>/tournaments/page.tsx` 생성 (기존 로케일 복사가 가장 빠름)
+6. **`lib/tournaments-hreflang.ts`의 `TOURNAMENT_LOCALES`에 추가** ← 여기 하나면 5개 페이지 hreflang이 다 붙는다
+7. `scripts/generate-sitemap.mjs`의 `TOURNAMENT_LOCALES`에도 추가
+   (.mjs라 lib을 import 못 해서 목록이 두 군데다. 둘 다 고칠 것)
+8. 빌드 → **렌더 HTML을 직접 열어** 한글 누수·실검색어 렌더·숫자 포맷 확인 → 커밋·푸시
+
+### ⚠️ 이미 밟은 지뢰 (반복하지 말 것)
+
+- **`components/seo.tsx`는 `schema` prop을 받기만 하고 렌더하지 않는다.** 로케일 page에서 `<script>`로 직접 주입할 것.
+- 대회명 치환은 **괄호 먼저, 지명 나중**. `(Ha Long Bay)`가 지명 `Ha Long`을 품고 있어 순서를 뒤집으면 반쪽 치환이 난다.
+- 대회명의 지명이 `t.city`와 다를 수 있다 (APPT Manila의 city는 Parañaque). 사전 전체를 훑되 **긴 지명 우선**.
+- 루트 레이아웃 `title.template`이 `| 홀덤마스터`를 붙인다 → 로케일 page는 `title: { absolute: ... }`.
+- 환율 고정 환산을 페이지에 박지 말 것. 환율이 움직인 순간 거짓이 된다. 기준점만 안내.
+- **모듈 최상위 `const`가 사전보다 먼저 평가되면 TDZ로 빌드가 깨진다**
+  (`Cannot access 'd' before initialization`). 사전을 참조하는 매핑은 **함수로** 만들 것.
+- **정규식으로 `languages: { ... }` 블록을 치환하지 말 것.** 안에 `${SITE}`가 있어서
+  `[^}]*`가 끊긴다. 이런 건 Edit로 직접 고치는 게 빠르다.
+- 괄호 치환을 지명보다 **먼저** 할 것. `(Ha Long Bay)`가 지명 `Ha Long`을 품고 있다.
+는 페소다.** USD는 `US# 세션 인수인계 (Session Handoff)
+
+> **사용법**: 작업 마칠 때 이 파일 업데이트 → 다음 세션 시작 시 AI가 읽고 바로 이어받음
+> 작업 시작 전 `CLAUDE.md` → `session-handoff.md` → `WORKLOG.md` 순서로 읽을 것.
+
+---
+
+## ▶▶▶▶▶▶▶▶▶ 새 세션 START HERE (2026-07-30 — ✅**로케일 보드 검수 7건 전건 완료·배포**)
+
+### 지금 어디까지 왔나
+
+**Phase 0~1 완료** — `/tournaments`를 25개 → **107개 / 28개국**으로 경화. 전부 공식 원문 정독(A등급 102 · B 4).
+구조도 갈아엎었다: `lib/tournaments.ts` 하나에서 카드·정렬·상태배지·메타태그·JSON-LD가 전부 파생된다.
+→ 날짜만 맞으면 배포할 때마다 자동 갱신. "WSOP 진행중 13일 노출" 사고의 구조적 원인 제거.
+
+**Phase 2 완료 (2026-07-29)** — 로케일판 `/(locale)/tournaments` 5개 전부 배포
+✅ `en` · ✅ `ja` · ✅ `zh` · ✅ `zh-hant` · ✅ `es`
+hreflang 6페이지 상호참조 성립 (ko · en · ja · zh-Hans · zh-Hant · es).
+
+**Phase 3 완료 (2026-07-30)** — 각 언어 **현지 기자 페르소나 병렬 적대적 검수** 7건 전건 처리·배포.
+① `<html lang>` ② twitter 카드 ③ aria-label ④ 날짜 표기 ⑤ es 숫자·통화 ⑥ note 배지 ⑦ 회장·국가명
+상세는 `WORKLOG.md` 2026-07-30 항목. 라이브 검증까지 끝났다(28경로 + 하위 7경로 전건 일치).
+
+★ **이 검수 방식이 효과가 컸다.** 로케일 페이지를 새로 만들면 배포 후
+   **각 언어 현지 기자 페르소나로 Agent를 병렬 실행해 적대적 검수**를 붙일 것.
+   사람이 안 보는 자리(twitter 태그·aria-label·숫자 포맷·회장명)에서 7건이 나왔다.
+
+**다음 후보** (사용자 판단 필요)
+- `de` · `pt` · `id` 등 나머지 로케일로 확장 — 절차는 아래 8단계 그대로
+- ko `/tournaments` 본문에 로케일 전환 링크 노출 (지금은 로케일→ko 단방향만 있음)
+- 조사 자산 포스팅화 (ICM 딜 12건 · 3국 세금 대조 · 영종도 10월 말 동시 개최 등)
+
+### 로케일 추가 절차 (5개 만들며 확정된 것)
+
+1. `docs/market-profile/<locale>.md` 정독 (비자·세금·통화·사업자·합법성)
+2. **현지 서제스트/질문 툴로 실검색 형태소 실측** — 건너뛰지 말 것.
+   ja에서 이게 결정적이었다: 「トーナメント」가 아니라 **「大会」**(2,900/월)였고,
+   `パラダイスシティ ポーカー 大会` 90 · `台湾…2026` 70 · `マニラ…2026` 50 ·
+   `ポーカー 大会 韓国` 50 이 잡혔다 → **우리 데이터가 가장 두꺼운 곳(KR17·TW12·PH5)과 정확히 겹친다.**
+   zh-hant는 대만이 12개라 같은 논리가 더 세게 먹힐 가능성이 높다.
+3. `lib/tournaments-i18n.ts`에 `BoardStrings` 추가 + `BOARD_STRINGS`에 등록
+4. **필드 사전**: `FIELD_<LOC>`(15~20개 값), `CITY_<LOC>`, `PAREN_<LOC>`, `SCHEMA_DESC_<LOC>`(10건),
+   서수 대회명이 필요하면 `NAME_OVERRIDE`
+   - ★ **CJK는 도시 67개 전수 매핑** — 라틴으로 두면 지역 검색을 통째로 놓친다.
+   - ★ **라틴 문자 언어(es 등)는 표기가 실제로 갈리는 것만** — 전수 매핑하면 오히려 틀린다.
+     (es는 19개만: Seville→Sevilla · Sydney→Sídney · Mexico City→Ciudad de México …)
+   - ★ 대회명은 **브랜드 라틴 + 지명만 현지** (「APT 仁川 2026」)
+   - ★ 각 분기점 5곳을 전부 건드려야 한다: `localizeField` · `localizeCity` ·
+     `localizedMonthBadge` · `nameMaps` · `buildLocaleSchemas`의 description 삼항
+5. `app/<locale>/tournaments/page.tsx` 생성 (기존 로케일 복사가 가장 빠름)
+6. **`lib/tournaments-hreflang.ts`의 `TOURNAMENT_LOCALES`에 추가** ← 여기 하나면 5개 페이지 hreflang이 다 붙는다
+7. `scripts/generate-sitemap.mjs`의 `TOURNAMENT_LOCALES`에도 추가
+   (.mjs라 lib을 import 못 해서 목록이 두 군데다. 둘 다 고칠 것)
+8. 빌드 → **렌더 HTML을 직접 열어** 한글 누수·실검색어 렌더·숫자 포맷 확인 → 커밋·푸시
+
+### ⚠️ 이미 밟은 지뢰 (반복하지 말 것)
+
+- **`components/seo.tsx`는 `schema` prop을 받기만 하고 렌더하지 않는다.** 로케일 page에서 `<script>`로 직접 주입할 것.
+- 대회명 치환은 **괄호 먼저, 지명 나중**. `(Ha Long Bay)`가 지명 `Ha Long`을 품고 있어 순서를 뒤집으면 반쪽 치환이 난다.
+- 대회명의 지명이 `t.city`와 다를 수 있다 (APPT Manila의 city는 Parañaque). 사전 전체를 훑되 **긴 지명 우선**.
+- 루트 레이아웃 `title.template`이 `| 홀덤마스터`를 붙인다 → 로케일 page는 `title: { absolute: ... }`.
+- 환율 고정 환산을 페이지에 박지 말 것. 환율이 움직인 순간 거짓이 된다. 기준점만 안내.
+- **모듈 최상위 `const`가 사전보다 먼저 평가되면 TDZ로 빌드가 깨진다**
+  (`Cannot access 'd' before initialization`). 사전을 참조하는 매핑은 **함수로** 만들 것.
+- **정규식으로 `languages: { ... }` 블록을 치환하지 말 것.** 안에 `${SITE}`가 있어서
+  `[^}]*`가 끊긴다. 이런 건 Edit로 직접 고치는 게 빠르다.
+- 괄호 치환을 지명보다 **먼저** 할 것. `(Ha Long Bay)`가 지명 `Ha Long`을 품고 있다.
+로 적어야 한다
+  (`$25,000`을 페소로 읽으면 실제 바이인의 약 1/20이 된다 — 쉼표보다 큰 오차).
+- **`vercel.json`에 `buildCommand`가 명시돼 있어 npm의 `prebuild`·`postbuild`가
+  프로덕션에서 안 돈다.** 빌드 시점 스크립트는 `vercel.json`의 `buildCommand`에 직접 이어붙일 것
+  (`"next build && node scripts/foo.mjs"`).
+  → `public/sitemap.xml`이 git에 커밋돼 있는 이유가 이것이다(로컬 생성물).
+  **빌드 파이프라인을 손댔으면 배포 후 라이브 응답을 반드시 curl로 확인할 것.**
+  커밋된 산출물을 "프로덕션에서 실행된 증거"로 착각한 적이 있다.
+- **`twitter:*`를 안 주면 루트 레이아웃의 한국어가 그대로 나간다.** `og:*`만 덮으면 부족하다
+  — X는 `twitter:*`를 우선한다. `<title>`을 고칠 때와 **같은 3그룹**을 항상 같이 볼 것:
+  로케일 블로그 목록 25 · en 정적 5 · 로케일 토너먼트 5.
+- **로케일 보드에 한국어 데이터 필드를 띄울 땐 사전 키를 `한국어 원문`이 아니라 `대회 id`로 잡을 것.**
+  원문 키는 `lib/tournaments.ts`에서 한 글자만 고쳐도 조용히 매칭이 깨져 한글이 샌다.
+  id 기준이면 못 찾을 때 `undefined`가 되고 배지를 아예 안 그린다(누수 구조적 0).
+- **날짜 범위 기호는 로케일마다 다르다.** `~`는 한·일 전용.
+  en·es는 en dash(`–`), ja·zh는 전각(`〜`). 그리고 `2026.05.03`은 D.M.Y가 표준인
+  스페인어권에서 판독이 안 되므로 en·es는 **월 이름**을 쓴다.
+- **대회명 속 지명을 무조건 치환하지 말 것.** `Taiwan Millions Tournament`의 Taiwan은
+  개최지가 아니라 대회명의 일부다 → `BRAND_LOCKED`로 제외한다.
   `€5,300`을 그대로 두면 5.3유로로 읽힌다. 날짜도 d/m 순서.
 - CJK는 전각 괄호 앞 반각 공백을 제거해야 조판이 맞는다 (`切罗基 （8月）` → `切罗基（8月）`).
 - **간체판을 번체로 기계 변환하지 말 것.** 음역이 다른 도시가 실제로 있다 —
