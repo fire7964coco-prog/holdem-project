@@ -106,7 +106,7 @@
 
 ## 내부링크 (하드 규칙)
 - 전부 `/ja/blog/슬러그` 형식.
-- **ja 화이트리스트(존재하는 글만 링크, Wave 5 반영 = 41개 = EN 전량)**: texas-holdem-rules-for-beginners · holdem-game-order · holdem-betting-actions · holdem-blind-meaning · holdem-all-in-rules · holdem-showdown-rules · holdem-hand-rankings · holdem-tournament-vs-cash-game · holdem-flush-vs-straight · holdem-kicker · holdem-tiebreak-rules · holdem-split-pot-rules · holdem-reading-the-board · holdem-probability · holdem-pot-odds · holdem-outs · holdem-drawing-odds · holdem-implied-odds · holdem-equity · holdem-strategy · holdem-positions · holdem-position-play · holdem-starting-hands-chart · holdem-limping · holdem-3bet · holdem-continuation-bet · holdem-when-to-fold · holdem-tournament · holdem-icm · holdem-bubble · holdem-short-stack · apt-incheon-2026-guide · korea-poker-marathon-2026 · wpt-australia-2026-guide · ept-barcelona-2026-guide · **holdem-glossary · holdem-straddle · holdem-rake · holdem-fish · holdem-cooler · holdem-bad-beat**.
+- **ja 화이트리스트(존재하는 글만 링크, Wave 5 반영 41개 + wsop판 = **42개**)**: texas-holdem-rules-for-beginners · holdem-game-order · holdem-betting-actions · holdem-blind-meaning · holdem-all-in-rules · holdem-showdown-rules · holdem-hand-rankings · holdem-tournament-vs-cash-game · holdem-flush-vs-straight · holdem-kicker · holdem-tiebreak-rules · holdem-split-pot-rules · holdem-reading-the-board · holdem-probability · holdem-pot-odds · holdem-outs · holdem-drawing-odds · holdem-implied-odds · holdem-equity · holdem-strategy · holdem-positions · holdem-position-play · holdem-starting-hands-chart · holdem-limping · holdem-3bet · holdem-continuation-bet · holdem-when-to-fold · holdem-tournament · holdem-icm · holdem-bubble · holdem-short-stack · apt-incheon-2026-guide · korea-poker-marathon-2026 · wpt-australia-2026-guide · ept-barcelona-2026-guide · **wsop-2026-tournament-guide**(2026-07-29 신설) · **holdem-glossary · holdem-straddle · holdem-rake · holdem-fish · holdem-cooler · holdem-bad-beat**.
 - ★Glossary 완료 시 **화이트리스트 = EN 41편 전량** → 이 웨이브에선 신규 6편만 정상 링크. **이전 웨이브에서 스트립했던 링크들은 별도 "최종 링크복원 패스"에서 일괄 복원**(전 필라 존재).
 
 
@@ -154,7 +154,18 @@
 
 ## 6. 용어 통일
 - **「シート」**로 통일(チケット·参加権 혼용 금지). 이벤트명은 **영어 그대로**(현장 게시·로비 표기와 일치)
-- リエントリー(재엔트리 X) / **ユニークプレイヤー**(실인수)
+- リエントリー(재엔트리 X) / **ユニークプレイヤー**(실인수 X)
+
+### ★ 예외 — 「チケット」이 정당한 자리 (2026-07-30 확인)
+**위성 스텝의 진행 토큰은 시트와 다른 물건이다.** 여기선 「チケット」이 맞다.
+```
+✅ Step 1チケット / ステップ2のチケットを獲得 / 毎日ステップ1の無料チケット
+❌ そのチケットで行ける場所(→ APTC 시트를 가리킴)   → 「そのシート」
+❌ メインイベント参加権(約$1,684)                 → 「メインイベントのシート」
+❌ €5,300のメイン参加権                           → 「€5,300のメインシート」
+```
+→ 일괄 치환하지 말고 **문맥으로 판정**한다. "대회에 앉을 권리" = シート,
+  "다음 스텝으로 올라가는 토큰" = チケット.
 
 
 ---
