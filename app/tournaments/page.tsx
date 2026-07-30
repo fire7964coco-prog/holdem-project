@@ -1,4 +1,5 @@
 import TournamentsClient from "./tournaments-client";
+import { resolveBlogLinks } from "@/lib/tournaments-blog-links";
 
 /**
  * 기준일은 서버(빌드 시점)에서 계산해 내려준다.
@@ -11,5 +12,9 @@ export default function Page() {
   const todayISO = new Date(Date.now() + 9 * 60 * 60 * 1000)
     .toISOString()
     .slice(0, 10);
-  return <TournamentsClient todayISO={todayISO} />;
+  // ★ 가이드 링크는 서버에서 해결해 내려준다.
+  //   resolveBlogLinks가 POSTS(전 한국어 본문)를 읽으므로 클라이언트에서 부르면
+  //   본문 전체가 번들에 딸려 들어간다. 결과는 대회 id → 경로 몇 줄뿐이다.
+  //   ko도 존재 검사를 타므로, 한국어판이 없는 가이드는 링크가 조용히 숨는다.
+  return <TournamentsClient todayISO={todayISO} blogLinks={resolveBlogLinks("ko")} />;
 }

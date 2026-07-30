@@ -335,7 +335,14 @@ const BEGINNER_GUIDE = [
 ];
 
 /** 데이터 정본: lib/tournaments.ts — 값 출처·원문 인용은 docs/tournament-spine.md */
-function ScheduleSection({ todayISO }: { todayISO: string }) {
+function ScheduleSection({
+  todayISO,
+  blogLinks,
+}: {
+  todayISO: string;
+  /** 대회 id → 가이드 경로. 한국어 글이 실제로 있는 대회만 들어 있다 */
+  blogLinks: Record<string, string>;
+}) {
   const [filter, setFilter] = useState<"all" | "domestic" | "international">("all");
   const filtered = filter === "all" ? TOURNAMENTS : TOURNAMENTS.filter(t => t.type === filter);
 
@@ -429,8 +436,11 @@ function ScheduleSection({ todayISO }: { todayISO: string }) {
                   공식 사이트 <ExternalLink className="w-3 h-3" />
                 </a>
               )}
-              {"blogLink" in t && t.blogLink && (
-                <Link href={t.blogLink as string}
+              {/* ★ t.blogLink를 그대로 걸지 않는다. blogLink는 "가이드 slug"일 뿐이고
+                  한국어판이 없는 가이드도 있어서(EN 마스터로만 쓰인 것) 404가 났다.
+                  서버에서 한국어 글 존재를 확인해 내려준 blogLinks만 신뢰한다. */}
+              {blogLinks[t.id] && (
+                <Link href={blogLinks[t.id]}
                   className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-primary/15 border border-primary/35 text-[11px] text-primary font-bold hover:bg-primary/25 transition-colors">
                   📖 상세 가이드 <ChevronRight className="w-3 h-3" />
                 </Link>
@@ -474,7 +484,13 @@ const FAQS = [
   },
 ];
 
-export default function Tournaments({ todayISO }: { todayISO: string }) {
+export default function Tournaments({
+  todayISO,
+  blogLinks,
+}: {
+  todayISO: string;
+  blogLinks: Record<string, string>;
+}) {
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -567,7 +583,7 @@ export default function Tournaments({ todayISO }: { todayISO: string }) {
         </motion.div>
 
         {/* 2026 대회 일정표 */}
-        <ScheduleSection todayISO={todayISO} />
+        <ScheduleSection todayISO={todayISO} blogLinks={blogLinks} />
 
         {/* 🇰🇷 한국 포커 허브 2026 */}
         <motion.section
