@@ -5,7 +5,74 @@
 
 ---
 
-## ▶▶▶▶▶▶▶▶▶ 새 세션 START HERE (2026-07-30 밤 — 네이티브 포스팅 워크플로 확립 / JOPT 오사카는 **발행 취소**)
+## ▶▶▶▶▶▶▶▶▶ 새 세션 START HERE (2026-07-30 심야 — KO 규칙·족보 클러스터 10편 전수 경화 완료)
+
+### 0. 한 줄 요약
+
+**KO 규칙 4편 + 족보 6편을 전수 경화하고 12개 커밋으로 개별 배포했다.** §13 사실오류 **19건**을 잡았고,
+그중 **3건은 내가 경화 중에 만든 것**을 Fable5 적대적 검수가 되잡았다. 다음은 **블라인드·포지션 클러스터**가 유력하다.
+
+### 1. 무엇을 했나 (커밋 12건, 전부 배포됨)
+
+**규칙 4편** — `holdem-rules`(필라) · `texas-holdem-rules-for-beginners` · `holdem-game-order`(LEG) · `holdem-check-meaning`
+**족보 6편** — `holdem-hand-rankings`(필라) · `holdem-tiebreak-rules` · `holdem-hand-rankings-confusing` · `holdem-split-pot-rules` · `holdem-flush-vs-straight` · `holdem-vs-7poker-hand-rankings` (전부 LEG)
++ 클러스터별 **Fable5 병렬 적대적 검수 반영 커밋 2건**
+
+상세 오류 목록은 `WORKLOG.md` 2026-07-30(심야) 항목의 표 참조.
+
+### 2. ★ 다음 세션이 반드시 알아야 할 것
+
+1. **"바로 답" 블록이 새 표준이다** (사장님 지시 2026-07-30)
+   기존 `> **한 줄 답**` / `> **한 줄 정리**`를 **`> **바로 답**` 2~4줄 자기완결 단락**으로 전환했다.
+   ⚠️ **대회 글 10편은 아직 `> **한 줄 답**`이다** — 라벨과 실제가 어긋나 있으니 다음에 손댈 때 통일할 것.
+
+2. **FAQ 스키마가 조용히 누락된다** → 메모리 [[faq-schema-build-output-is-truth]]
+   `**Q. 질문**` + **빈 줄** + `A. 답변`이어야 잡힌다. `A.` 없으면 리치결과 0.
+   ⚠️ **감사할 때 소스를 raw로 세면 틀린다**(CRLF→LF 정규화). `.next/server/app/blog/*.html`의
+   `"@type":"Question"` 개수가 진실. 스캔 스크립트는 스크래치패드의 `faq-audit2.mjs` 방식 재사용.
+
+3. **WSOP 공식 룰 원문을 확보해 뒀다** → 메모리 [[wsop-rules-primary-source-asset]]
+   `pdftotext -layout`로 추출. Rule 72·73·74·75·96 + CHECK·BURN CARD·DEALER BUTTON 용어집.
+   ★**"홀덤에 무늬 서열이 없다"를 Rule 73(홀수 칩조차 무늬가 아님)으로 역증명**한 것이 최대 차별화.
+   단 무늬는 **최초 버튼 자리 추첨엔 쓴다**(DEALER BUTTON) → "승패·팟 배분엔 안 쓴다"가 정확한 표현.
+
+4. **족보 확률은 5장/7장 기준이 다르다** → 메모리 [[poker-probability-5card-vs-7card]]
+   교과서=5장, 홀덤=7장. ★**7장 기준에선 투페어(23.5%)가 하이카드(17.4%)보다 흔하다**(하이카드가 3위로 밀림).
+   기준 표기 없이 쓰면 사실오류. 필라 출처 섹션에 5장·7장 조합수 전량 기재해 뒀다.
+
+5. **Fable5 4페르소나 병렬 검수가 매우 효과적이다.**
+   현장 딜러 / 공식 룰 검산 / 한국어 SEO·GEO / 초보 편집자 → 4개가 **독립적으로 같은 오류를 지적**하면 확정.
+   ⚠️ **검수자도 틀린다** — 검산 에이전트가 사이드팟 합계를 오산(235만 vs 실제 185만)했고,
+   반대로 **SEO 에이전트가 검산 에이전트도 놓친 판정 오류**(9♠ 보유 시 보드 플러시 개선)를 잡았다.
+   → 두 종류를 **반드시 함께** 돌릴 것.
+
+6. ⚠️ **템플릿 리터럴에 백틱 금지**(CLAUDE.md §12-A). 1회 빌드 파손했다(exit=1). 표기는 `**s**`·`==JTs==`로.
+
+### 3. ▶ 다음 액션 후보
+
+1. ★ **블라인드·포지션 클러스터 5편** — 같은 방식으로 경화하기에 가장 적합
+   `holdem-blind-meaning`(540노출·CTR 1.85%·r8.0 — **KO 최다 노출**) · `holdem-blind-steal`(r5.2인데 **클릭 0**) ·
+   `holdem-small-blind-role` · `holdem-button-position` · `position-is-everything-in-holdem`
+   → `blind-steal`은 5위인데 CTR 0%라 **메타만 고쳐도 즉효** 가능성이 크다.
+2. **스코프 밖으로 남긴 것 2건 (즉시 처리 가능·작음)**
+   - `ak-offsuit-strategy`: `### Q1.` 뒤 **빈 줄이 없어 FAQPage 스키마가 0**. 빈 줄만 넣으면 복구.
+   - `holdem-blind-meaning`: `title`에 ⚡ 잔존(다른 글은 이번에 제거 완료).
+3. **대회 글 10편의 "한 줄 답" → "바로 답" 라벨 통일** (위 2-1 참조)
+4. `docs/update-calendar.md` **8월 항목** — 8/2 홀덤마스터스, **8/5 WSOP 메인 결과(6개 언어)**, 8/16 APT 인천
+
+### 4. GSC 참고 (최신 데이터가 2026-07-12로 2주 묵음 — 새 CSV 받으면 우선순위 재산정 권장)
+
+경화한 10편 중 GSC 성적: `blind-meaning` 540 · `hand-rankings` 380(CTR 0.53%·r18.2) · `tiebreak` 187(+앵커 94) ·
+`game-order` 26 · `check-meaning` 36 · `split-pot` 28(CTR 10.71% — 최상) · `confusing` 48(r31.2) ·
+`flush-vs-straight` 2 · `7poker` 0(미노출) · `texas-beginners` 2
+
+★ SEO 검수 진단: **필라 CTR 0.53%는 18위대에선 정상 범위** — 병목은 CTR이 아니라 순위였고,
+원인은 **필라·confusing·flush 세 편의 seoTitle이 전부 "플러시 vs 스트레이트" 앵글로 충돌**한 카니발이었다.
+이번에 글별 소유 쿼리를 재배분했으니 **2~4주 후 GSC로 효과 검증**할 것.
+
+---
+
+## 📌 (이전) 2026-07-30 밤 — 네이티브 포스팅 워크플로 확립 / JOPT 오사카는 **발행 취소**
 
 ### 0. 한 줄 요약
 
