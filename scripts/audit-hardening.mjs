@@ -335,23 +335,50 @@ const SPLIT_KW = /(스플릿|찹\b|split|무승부|동점|반씩|나눠 ?갖|나
 // 2장 런이 "플레이어의 홀카드"임을 확정해 주는 라벨. 이게 없으면 평가하지 않는다
 // (레인지 나열·베스트5 재기술·대안 핸드를 플레이어로 오인하면 통째로 오탐이 된다).
 // 키워드와 콜론 사이에 마크다운이 낀 형태도 받는다: "**내 홀카드**: K♠ Q♦"
-const PLAYER_RE = /(내\s*패|내\s*핸드|내\s*카드|나|상대\S{0,2}|플레이어\s*\S{0,3}|히어로|빌런|hero|villain|당신|홀\s*카드)\s*[*_]*\s*[::]?\s*[*_=\s(]*$/i;
+// 영어 라벨은 2026-07-31 EN 전수조사에서 추가. EN 글은 "**My hand:** ==A♥K♣==" 또는
+// "I raise ==A♣K♦==" 형태가 압도적이라 이게 없으면 홀카드를 하나도 못 잡는다.
+const PLAYER_RE = new RegExp(
+  '(' + [
+    '내\\s*패', '내\\s*핸드', '내\\s*카드', '나', '상대\\S{0,2}', '플레이어\\s*\\S{0,3}', '히어로', '빌런', '당신', '홀\\s*카드',
+    'hero', 'villain',
+    'my\\s+(hand|cards|hole\\s*cards)', "I\\s+(raise|have|hold|open|call|'m\\s+holding)", '(he|she|they|opponent)\\s+(has|holds|shows)',
+    // de — "Du hältst J♥ 10♥", "Deine Karten", "Spieler A (du)"
+    'du\\s+(hältst|haltst|hast)', 'deine?\\s+(karten|hand|blatt)', 'gegner',
+    // 각 언어의 "플레이어" (표·대결 표기에서 흔하다)
+    '(spieler|jugador|giocatore|pemain|player)\\s*\\S{0,3}',
+    // ja·zh
+    '(自分|あなた)の?(手札|ハンド|カード)', '(我|你|對手|对手)的?(手牌|牌)',
+  ].join('|') + ')\\s*[*_]*\\s*[::]?\\s*[*_=\\s(]*(?:to\\s+\\S+\\s+with\\s+)?$', 'i');
 const PLAYER_AB_RE = /(^|\n|\|)\s*\**\s*[A-Z]\s*[::]\s*\**\s*$/;
 const ROW_LABEL_RE = /^[|\s*]*(홀카드|핸드|패|hand)/i;
 
 /** 족보 표기 → 정본 이름. 구체적인 것부터 검사해야 "플러시"가 "스트레이트 플러시"를 잡아먹지 않는다. */
+/*
+ * 족보 별칭 — 위에서부터 매칭하므로 **긴 이름이 먼저** 와야 한다
+ * ("straight flush"가 "flush"에 먼저 걸리면 안 된다).
+ * 영어 별칭은 2026-07-31 EN 전수조사에서 추가했다. 그전까지 EN·다국어판은
+ * 족보명을 하나도 인식하지 못해 H4·H5·H6이 원리상 작동하지 않았다(커버리지 쇼다운 1개).
+ * ⚠ 영어는 일반 단어와 겹치므로 가드가 필요하다:
+ *   - "set"은 settings·set of 등과 겹쳐 통째로 뺐다(trips·three of a kind로 충분)
+ *   - 맨 "pair"는 KO와 같은 이유로 뺀다(two pair·구성 설명 오독)
+ */
 const HAND_ALIASES = [
-  ['로열 플러시', /로열\s*(스트레이트\s*)?플러시/],
-  ['스트레이트 플러시', /스트레이트\s*플러시|스트플|스티플/],
-  ['포카드', /포카드|포 ?카드|쿼드|포 ?오브 ?어 ?카인드/],
-  ['풀하우스', /풀\s*하우스|풀하우스|보트/],
-  ['플러시', /플러시/],
-  ['스트레이트', /스트레이트|양차|백도어 ?스트/],
-  ['트리플', /트리플|트립스|쓰리\s*카드|셋(?=[\s)*.,·]|$)/],
-  ['투페어', /투\s*페어|투페어/],
-  // 맨 "페어"는 뺀다 — "페어 2쌍"(=투페어) · "트리플 + 페어"(=풀하우스 구성 설명)를 원페어로 오독한다.
-  ['원페어', /원\s*페어|오버\s*페어|탑\s*페어|바텀\s*페어|미들\s*페어|포켓\s*페어/],
-  ['하이카드', /하이\s*카드/],
+  ['로열 플러시', /로열\s*(스트레이트\s*)?플러시|\broyal\s+flush\b|ロイヤル(ストレート)?フラッシュ|皇家同花[顺順]|\bescalera\s+real\b/i],
+  ['스트레이트 플러시', /스트레이트\s*플러시|스트플|스티플|\bstraight\s+flush\b|ストレートフラッシュ|同花[顺順]|\bescalera\s+de\s+color\b/i],
+  ['포카드', /포카드|포 ?카드|쿼드|포 ?오브 ?어 ?카인드|\bfour\s+of\s+a\s+kind\b|\bquads?\b|フォーカード|クワッズ|四[条條]|\bvierling\b|\bquadra\b/i],
+  ['풀하우스', /풀\s*하우스|풀하우스|보트|\bfull\s+house\b|\bfull\s+boat\b|フルハウス|葫[芦蘆]/i],
+  // ⚠ 中文 "同花色"는 "같은 무늬"라는 뜻이지 플러시가 아니다 → 뒤에 "色"이 오면 제외.
+  // ⚠ 中文 "同花色"는 "같은 무늬"라는 뜻이지 플러시가 아니다 → 뒤에 "色"이 오면 제외.
+  // ⚠ es "color"가 곧 flush다(용어파일의 ★★TRAMPAS). 스페인어 글은 무늬를 "palo"라 쓰므로 충돌이 적다.
+  ['플러시', /플러시|\bflush\b|フラッシュ|同花(?!色)|\bcolor(?:es)?\b/i],
+  // ⚠ pt "sequência"는 뺐다 — "sem importar a sequência"(순서 상관없이)처럼 일반 명사로 더 자주 쓴다.
+  //   같은 이유로 es "orden", de "Reihenfolge"도 넣지 않는다.
+  ['스트레이트', /스트레이트|양차|백도어 ?스트|\bstraight\b|ストレート|[顺順]子|\bescalera\b|\bstra[ßs]e\b/i],
+  ['트리플', /트리플|트립스|쓰리\s*카드|셋(?=[\s)*.,·]|$)|\bthree\s+of\s+a\s+kind\b|\btrips\b|スリーカード|トリップス|三[条條]|\bdrilling\b|\btrinca\b|\btr[íi]o\b/i],
+  ['투페어', /투\s*페어|투페어|\btwo\s+pair\b|ツーペア|[两兩][对對]|\bzwei\s+paare\b|\bdois\s+pares\b|\bdoble\s+pareja\b/i],
+  // 맨 "페어"/"pair"/"par"/"Paar"는 뺀다 — "페어 2쌍"(=투페어) · "트리플 + 페어"(=풀하우스 구성 설명)를 원페어로 오독한다.
+  ['원페어', /원\s*페어|오버\s*페어|탑\s*페어|바텀\s*페어|미들\s*페어|포켓\s*페어|\b(one|top|over|bottom|middle|pocket)\s*-?\s*pair\b|ワンペア|オーバーペア|トップペア|ポケットペア|一[对對]/i],
+  ['하이카드', /하이\s*카드|\bhigh\s+card\b|ハイカード|ノーペア|高牌|\bcarta\s+alta\b|\bh[öo]chste\s+karte\b/i],
 ];
 
 function tokenizeCards(text) {
@@ -395,6 +422,11 @@ function handMentions(text) {
       if (!m[0].length) break;
       const after = text.slice(m.index + m[0].length, m.index + m[0].length + 14);
       if (/^[\s는은이가도를로]{0,3}(없|불성립|불가|아님|아닙|아니|못|않|안\s)/.test(after)) continue;  // 부정은 주장이 아니다
+      // 다국어 부정 — 족보명 **앞**에 붙는다: "sin escalera ni color", "nenhum flush", "没有顺子", "kein Flush".
+      // 범위를 넉넉히 잡는 이유: 부정어가 등위접속으로 떨어져 있다("no straight or flush").
+      const before = text.slice(Math.max(0, m.index - 26), m.index);
+      if (/\b(sin|sem|ni|nem|no|not|nenhum|nenhuma|kein|keine|nicht|tidak|bukan|tanpa)\b[^.。!?]{0,22}$/i.test(before)) continue;
+      if (/(没有|沒有|不是|なし|ではない)[^。.!?]{0,10}$/.test(before)) continue;
       ms.push({ name, start: m.index, end: m.index + m[0].length });
     }
   }
@@ -408,6 +440,14 @@ function namedHandIn(text) {
   const ms = handMentions(text);
   return ms.length ? ms[0].name : null;
 }
+
+/**
+ * 글이 실제 족보를 **상위 개념 이름**으로 부른 경우는 오류가 아니다.
+ * 로열 플러시는 정의상 "가장 높은 스트레이트 플러시"라, 그렇게 설명하는 문장이 전 언어에 있다
+ * ("the highest straight flush" · 「最も高いストレートフラッシュ」 · "la escalera de color más alta").
+ * ⚠ 반대는 오류다 — 로열을 그냥 "플러시"라 부르면 2026-07-31에 실제로 잡은 그 사고다.
+ */
+const isBroaderName = (actual, named) => actual === '로열 플러시' && named === '스트레이트 플러시';
 
 /** 한 줄에 서로 다른 족보가 2개 이상이면 "구성 설명"(트리플+원페어=풀하우스)이라 판정 근거가 안 된다. */
 function distinctHandNames(text) {
@@ -451,7 +491,12 @@ function extractScenario(para) {
       if (board.length < 5) { board.push(...run); boardRuns.push(run); }
       continue;
     }
-    if (run.length === 1 && sawBoard && board.length < 5) { board.push(...run); continue; } // 턴·리버 공개
+    // ★라벨 없는 1장은 보드로 흡수하지 않는다.
+    //   산문에서 "my K♦ pairs the K♠" 같은 낱장 언급이 보드에 섞여 카드가 중복된다(2026-07-31 EN 실측).
+    //   줄 단위 가드로는 못 막는다 — 영어 문단은 보드·액션·결과가 한 줄에 다 들어 있다.
+    //   턴·리버는 "Turn:" 같은 라벨이 붙으면 위 BOARD_KW 분기에서 이미 잡힌다.
+    //   라벨이 없으면 판정하지 않고 커버리지에 "미검사"로 남긴다 — 잘못 잡는 것보다 낫다.
+    if (run.length === 1) continue;
     if (run.length !== 2) continue;
 
     const anchored = PLAYER_RE.test(before.slice(-16))
@@ -521,9 +566,17 @@ function auditHandsIn(post, PE) {
       if (toks.length !== 5) continue;
       const runs = groupRuns(toks, ln);
       if (runs.length !== 1) continue;
+      // 이미지 마크다운 줄은 판정하지 않는다 — alt·캡션은 "보드를 읽는 법" 같은 설명문이라
+      // 카드와 족보명이 함께 있어도 그 카드의 족보를 주장하는 문장이 아니다.
+      if (/!\[/.test(ln)) continue;
       const named = namedHandIn(ln);
       if (!named) continue;
       if (distinctHandNames(ln) > 1) continue;   // 구성 설명 줄은 판정 근거가 안 된다
+      // 구성 설명 다국어 — "three of a kind plus a pair" · "un trío más una pareja" ·
+      // "uma trinca mais um par" · "three of a kind plus sepasang" (전부 풀하우스의 부품 나열).
+      // 맨 "pair/pareja/par/paar"를 별칭에서 뺐기 때문에 위 가드에 안 걸려 여기서 따로 거른다.
+      // ⚠ id "sepasang"은 se+pasang = "a pair" 자체다 — 수식어가 아니라 명사 쪽에 둔다.
+      if (/(plus|and|with|más|mas|mais|\+|と|加)\s*(a|an|one|two|un|una|uma|um|dois|einem?|eine)?\s*(sepasang|pair|pareja|pares|par|pasang|paare?|ペア|[对對])\b/i.test(ln)) continue;
       stat.fiveCard++;
       h5Lines.add(i + 1);
       const ids = runs[0].map((t) => t.id);
@@ -532,7 +585,7 @@ function auditHandsIn(post, PE) {
         continue;
       }
       const actual = PE.evalHand5(runs[0].map((t) => ({ rank: t.rank, suit: t.suit, id: t.id })));
-      if (actual.koreanName !== named) {
+      if (actual.koreanName !== named && !isBroaderName(actual.koreanName, named)) {
         add('ERR', 'H5', `L${i + 1} 5장 족보 예시 불일치 — 글은 "${named}", 실제는 "${actual.koreanName}"`,
           [ln.trim().slice(0, 110), `→ ${ids.join(' ')} = ${actual.koreanName}`]);
       }
@@ -541,7 +594,11 @@ function auditHandsIn(post, PE) {
   const paras = [];
   let off = 0;
   for (const p of c.split(/\n[ \t]*\n/)) {
-    paras.push({ text: p, line: c.slice(0, off).split('\n').length });
+    // 이미지 마크다운(alt·캡션)은 걷어낸다 — "…A♠ A♦ 대 K♥ K♦ … 플랍 트리플이 에이스를 깬다" 같은
+    // 설명문이라 카드와 족보명이 함께 있어도 그 핸드의 족보를 주장하는 문장이 아니다(2026-07-31 pt·ja·zh 실측).
+    // 길이는 보존해야 line 계산이 어긋나지 않으므로 같은 길이의 공백으로 치환한다.
+    const cleaned = p.replace(/!\[[^\]]*\]\([^)]*\)/g, (mm) => ' '.repeat(mm.length));
+    paras.push({ text: cleaned, line: c.slice(0, off).split('\n').length });
     off += p.length + 2;
   }
 
@@ -977,6 +1034,30 @@ if (argv.includes('--selftest')) {
       '- 플레이어 A: A♠ K♠ Q♠ J♠ 10♠ (스페이드 플러시)'],
     ['표 두 열의 베스트5는 별개다 (오탐 금지)', false,
       '| **홀카드** | K♠ 7♣ | K♥ 2♦ |\n| **보드** | K♦ K♣ Q♥ Q♦ J♠ | (동일) |\n| **베스트 5장** | K♠ K♦ K♣ Q♥ Q♦ | K♥ K♦ K♣ Q♥ Q♦ |\n| **결과** | 풀하우스 | 풀하우스 → **스플릿** |'],
+
+    /* ── 다국어 (2026-07-31 EN·ja·zh·es·pt·id 전수조사에서 실측된 오탐/검출) ── */
+    ['ja 족보 오기 (잡아야 함)', true, '**A♠ K♠ Q♠ J♠ 10♠** — フルハウス。'],
+    ['zh 족보 오기 (잡아야 함)', true, '**9♥ 8♥ 7♥ 6♥ 5♥** —— 葫芦。'],
+    ['es 족보 오기 (잡아야 함)', true, '**A♦ J♦ 8♦ 6♦ 2♦** — una escalera.'],
+    ['로열을 "가장 높은 스트레이트 플러시"라 부르는 건 정확하다 — en (오탐 금지)', false,
+      '**A♠ K♠ Q♠ J♠ 10♠** — the highest straight flush, and the best hand in poker.'],
+    ['로열을 "가장 높은 스트레이트 플러시"라 부르는 건 정확하다 — ja (오탐 금지)', false,
+      '**A♠ K♠ Q♠ J♠ 10♠** — 最も高いストレートフラッシュであり、ポーカー最強の役。'],
+    ['로열을 "가장 높은 스트레이트 플러시"라 부르는 건 정확하다 — es (오탐 금지)', false,
+      '**A♠ K♠ Q♠ J♠ 10♠** — la escalera de color más alta y la mejor mano del póker.'],
+    ['구성 설명 — es "un trío más una pareja" (오탐 금지)', false, '**Q♠ Q♥ Q♦ 5♣ 5♠** — un trío más una pareja.'],
+    ['구성 설명 — pt "uma trinca mais um par" (오탐 금지)', false, '**Q♠ Q♥ Q♦ 5♣ 5♠** — uma trinca mais um par.'],
+    ['구성 설명 — id "three of a kind plus sepasang" (오탐 금지)', false, '**Q♠ Q♥ Q♦ 5♣ 5♠** — three of a kind plus sepasang.'],
+    ['부정문 — en "no straight or flush" (오탐 금지)', false,
+      'Back to my buy-in. Board ==b:A♦ 7♣ 2♥ Q♠ 4♦==, no straight or flush out there.'],
+    ['부정문 — es "sin escalera ni color" (오탐 금지)', false,
+      'Mesa ==b:A♦ 7♣ 2♥ Q♠ 4♦==, sin escalera ni color a la vista.'],
+    ['zh "同花色"는 같은 무늬이지 플러시가 아니다 (오탐 금지)', false,
+      '关键在于：同样这五张牌必须既同花色又连续。在牌面 **8♥ 7♥ 6♥ Q♠ 3♦** 上看看差别。'],
+    ['이미지 alt는 족보 주장이 아니다 (오탐 금지)', false,
+      '![Infográfico de um par de ases A♠ A♦ contra K♥ K♦ num board K♠ 7♦ 2♣ 8♥ 3♠ — a trinca de reis quebra os ases](/images/x.webp "legenda")'],
+    ['라벨 없는 낱장은 보드가 아니다 (오탐 금지)', false,
+      'I raise ==A♣K♦== and the big blind calls. Flop: ==K♠ 7♦ 2♣.== my K♦ pairs the K♠, with the ace as the best kicker.'],
   ];
   let pass = 0;
   console.log('\n══════ 자가 테스트 ══════');
