@@ -80,7 +80,7 @@ export function evalHand5(cards: Card[]): HandInfo {
  * 예) AA+KQ → [14,14,13,12], AA+67 → [14,14,7,6]
  * 배열을 앞에서부터 비교하면 자동으로 킥커까지 올바르게 비교된다.
  */
-function handScore(cards: Card[]): number[] {
+export function handScore(cards: Card[]): number[] {
   const freq: Record<number, number> = {};
   for (const c of cards) {
     const v = RANK_VALUE[c.rank];
@@ -97,7 +97,7 @@ function handScore(cards: Card[]): number[] {
   return score;
 }
 
-function scoreBetter(a: number[], b: number[]): boolean {
+export function scoreBetter(a: number[], b: number[]): boolean {
   for (let i = 0; i < Math.min(a.length, b.length); i++) {
     if (a[i] !== b[i]) return a[i] > b[i];
   }

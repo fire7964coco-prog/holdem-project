@@ -2,13 +2,13 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "holdem-check-meaning",
-  title: "⚡ 홀덤 체크 뜻 — 패스 아닙니다, 베팅 0원입니다",
+  title: "홀덤 체크 뜻 — 패스 아닙니다, 베팅 0원입니다",
   seoTitle: "체크는 패스가 아닙니다 — 홀덤 체크 뜻과 안 되는 상황",
   desc: "\"체크요\"가 패스라고 생각하면 판이 꼬입니다. 홀덤 체크 뜻은 베팅 0원 — BB 옵션, 체크가 안 되는 상황, 콜·폴드와 차이까지 3분 정리.",
   tldr: "홀덤 체크(Check)는 내 차례에 추가 베팅 없이 턴을 넘기는 행동입니다. 앞에서 베팅이 없을 때만 가능하고, 빅블라인드 옵션 체크가 대표적입니다. 판을 포기하는 폴드와 달리 체크는 팟에 그대로 남아 있고, 이후 상대가 베팅하면 콜·레이즈·폴드를 다시 고를 권리도 유지합니다.",
   category: "초보 가이드",
   date: "2026-05-19",
-  updated: "2026-07-30",
+  updated: "2026-07-31",
   keepImagesInBody: true,
   readTime: "9분",
   emoji: "✋",
