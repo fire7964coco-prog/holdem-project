@@ -722,6 +722,16 @@ function sentencesOf(c) {
   let m;
   while ((m = lineRe.exec(c))) {
     if (/^\s*[|>]/.test(m[0]) || /^\s*#{1,6}\s/.test(m[0])) continue;   // 표·인용·헤딩 제외
+    // HTML 라인은 태그를 벗기고 남은 산문만 본다.
+    // 왜: 표를 감싸는 <div style="background:rgba(...)"> 래퍼나 연속된 <img ...>가
+    //     서로 "유사도 100% 축어 중복"으로 잡히던 오탐(2026-08-01 masters-7th에서 5건).
+    //     스타일 속성은 콘텐츠가 아니다. 반대로 <p style="...">진짜 문장</p> 은
+    //     이제 스타일 노이즈 없이 산문끼리 비교돼 검출력이 오히려 올라간다.
+    if (m[0].includes('<')) {
+      const prose = normText(m[0].replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim());
+      if (prose.length >= 30) out.push({ norm: prose, start: m.index, line: c.slice(0, m.index).split('\n').length });
+      continue;
+    }
     let base = m.index;
     for (const part of m[0].split(/(?<=[.?!])\s+/)) {
       const idx = c.indexOf(part, base);
@@ -1141,7 +1151,32 @@ if (argv.includes('--selftest')) {
     for (const x of found) console.log(`      → [${x.code}] ${x.msg}`);
   }
 
-  const TOTAL = FIX.length + CFIX.length + AFIX.length;
+  /* ── E1 축어 중복 자가 테스트 ──
+     2026-08-01 masters-7th에서 표를 감싸는 <div style="..."> 래퍼 5쌍이
+     "유사도 100% 축어 중복"으로 🔴 오탐을 냈다. 스타일 속성은 콘텐츠가 아니다.
+     동시에 HTML 안에 든 진짜 산문 중복은 계속 잡아야 한다. */
+  const WRAP = '<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">';
+  const DFIX = [
+    ['표 감싸는 style div 반복 (울리면 안 됨)', false, `${WRAP}\n\n표1\n\n</div>\n\n${WRAP}\n\n표2\n\n</div>`],
+    ['연속 <img> 나열 (울리면 안 됨)', false,
+      '<img src="/images/a-1.webp" alt="공식 일정표 1" width="900" height="1270" loading="lazy" style="width:100%" />\n' +
+      '<img src="/images/a-2.webp" alt="공식 일정표 2" width="900" height="1270" loading="lazy" style="width:100%" />'],
+    ['HTML 안에 든 진짜 산문 중복 (잡아야 함)', true,
+      '<p style="font-size:14px;line-height:1.7">새틀라이트 1~10위 안에 들면 초대권이 자동으로 지급됩니다.</p>\n' +
+      '<p style="color:var(--muted)">새틀라이트 1~10위 안에 들면 초대권이 자동으로 지급됩니다.</p>'],
+    ['평문 축어 중복은 그대로 잡는다 (잡아야 함)', true,
+      '초대권을 따도 DAY1을 아무 날이나 가는 게 아니라 정해진 플라이트 날짜에 가야 합니다.\n\n' +
+      '초대권을 따도 DAY1을 아무 날이나 가는 게 아니라 정해진 플라이트 날짜에 가야 합니다.'],
+  ];
+  for (const [name, shouldFire, content] of DFIX) {
+    const found = auditDuplication({ slug: 'selftest', content }).filter((x) => x.code === 'E1');
+    const ok = shouldFire ? found.length > 0 : found.length === 0;
+    if (ok) pass++;
+    console.log(`${ok ? '✅' : '❌'} ${shouldFire ? '[잡아야 함]' : '[울리면 안 됨]'} ${name}`);
+    for (const x of found) console.log(`      → [${x.code}] ${x.msg}`);
+  }
+
+  const TOTAL = FIX.length + CFIX.length + AFIX.length + DFIX.length;
   console.log(`\n${pass}/${TOTAL} 통과`);
   process.exit(pass === TOTAL ? 0 : 1);
 }
