@@ -308,7 +308,8 @@ const GAP_OK = /^[\s,·/、*_~()\-—–]*$/;
 const SPLIT_KW = /(스플릿|찹\b|split|무승부|동점|반씩|나눠 ?갖|나눠 ?가)/i;
 // 2장 런이 "플레이어의 홀카드"임을 확정해 주는 라벨. 이게 없으면 평가하지 않는다
 // (레인지 나열·베스트5 재기술·대안 핸드를 플레이어로 오인하면 통째로 오탐이 된다).
-const PLAYER_RE = /(내\s*패|내\s*핸드|내\s*카드|나|상대\S{0,2}|플레이어\s*\S{0,3}|히어로|빌런|hero|villain|당신|홀카드)\s*[::]?\s*[*_=\s(]*$/i;
+// 키워드와 콜론 사이에 마크다운이 낀 형태도 받는다: "**내 홀카드**: K♠ Q♦"
+const PLAYER_RE = /(내\s*패|내\s*핸드|내\s*카드|나|상대\S{0,2}|플레이어\s*\S{0,3}|히어로|빌런|hero|villain|당신|홀\s*카드)\s*[*_]*\s*[::]?\s*[*_=\s(]*$/i;
 const PLAYER_AB_RE = /(^|\n|\|)\s*\**\s*[A-Z]\s*[::]\s*\**\s*$/;
 const ROW_LABEL_RE = /^[|\s*]*(홀카드|핸드|패|hand)/i;
 
@@ -367,7 +368,7 @@ function handMentions(text) {
     while ((m = r.exec(text))) {
       if (!m[0].length) break;
       const after = text.slice(m.index + m[0].length, m.index + m[0].length + 14);
-      if (/^[\s는은이가도를로]{0,3}(없|불성립|아닙|아니|못|않)/.test(after)) continue;  // 부정은 주장이 아니다
+      if (/^[\s는은이가도를로]{0,3}(없|불성립|불가|아님|아닙|아니|못|않|안\s)/.test(after)) continue;  // 부정은 주장이 아니다
       ms.push({ name, start: m.index, end: m.index + m[0].length });
     }
   }
@@ -444,13 +445,44 @@ function extractScenario(para) {
 
 /** 커버리지 — "오류 0건"이 진짜인지 판단하려면 몇 개를 실제로 계산했는지 알아야 한다. */
 const HAND_STATS = new Map();
+/** 카드가 있는데 기계가 판정하지 못한 문단 — --uncovered 로 뽑아 사람이 직접 검산한다. */
+const UNCOVERED_PARAS = [];
 
 function auditHandsIn(post, PE) {
   const f = [];
   const add = (sev, code, msg, detail) => f.push({ sev, code, msg, detail });
   const c = post.content ?? '';
-  const stat = { cardParas: 0, scenarios: 0, evaluated: 0, unanchored: 0, fiveCard: 0 };
+  const stat = { cardParas: 0, scenarios: 0, evaluated: 0, unanchored: 0, fiveCard: 0, tableRows: 0 };
   HAND_STATS.set(post.slug, stat);
+  const h5Lines = new Set();   // H5가 이미 판정한 줄 — 미판정 목록에서 빼야 잡음이 안 낀다
+
+  /* H6 — "홀카드 | 보드" 표 판정.
+     `| 내 카드 | 보드 | ... | 최종 족보 |` 형태는 행마다 7장이 다 있어 완전히 계산 가능한데,
+     런이 파이프로 끊겨 시나리오 경로로는 못 잡힌다. 표는 표로 읽는다. */
+  for (const t of extractTables(c)) {
+    const hi = t.header.findIndex((h) => /(내\s*카드|홀\s*카드|내\s*패|내\s*핸드|hand)/i.test(h));
+    const bi = t.header.findIndex((h) => /(보드|board)/i.test(h));
+    if (hi < 0 || bi < 0 || hi === bi) continue;
+    for (const row of t.rows) {
+      const hole = tokenizeCards(row[hi] ?? '');
+      const board = tokenizeCards(row[bi] ?? '');
+      if (hole.length !== 2 || board.length !== 5) continue;
+      const ids = [...hole, ...board].map((x) => x.id);
+      if (new Set(ids).size !== 7) {
+        add('ERR', 'H6', `L${t.line} 표 행에서 홀카드가 보드와 겹침: ${ids.join(' ')}`, [row.join(' | ').slice(0, 110)]);
+        continue;
+      }
+      stat.tableRows++;
+      const { best, bestCards } = PE.evalBest7(ids.map((id, k) => [...hole, ...board][k]).map((x) => ({ rank: x.rank, suit: x.suit, id: x.id })));
+      const claimCell = row.filter((_, k) => k !== hi && k !== bi).join(' ');
+      if (distinctHandNames(claimCell) !== 1) continue;
+      const named = namedHandIn(claimCell);
+      if (named && named !== best.koreanName) {
+        add('ERR', 'H6', `L${t.line} 표 행 족보 불일치 — 글은 "${named}", 실제는 "${best.koreanName}"`,
+          [row.join(' | ').slice(0, 110), `→ ${hole.map((x) => x.id).join(' ')} + ${board.map((x) => x.id).join(' ')} = ${bestCards.map((x) => x.id).join(' ')}`]);
+      }
+    }
+  }
 
   /* H5 — 5장 족보 예시 직접 판정.
      "| 5위 | 플러시 | A♠ J♠ 9♠ 6♠ 2♠ |" 처럼 족보 이름과 예시가 한 줄에 붙어 있는 형태.
@@ -467,6 +499,7 @@ function auditHandsIn(post, PE) {
       if (!named) continue;
       if (distinctHandNames(ln) > 1) continue;   // 구성 설명 줄은 판정 근거가 안 된다
       stat.fiveCard++;
+      h5Lines.add(i + 1);
       const ids = runs[0].map((t) => t.id);
       if (new Set(ids).size !== 5) {
         add('ERR', 'H5', `L${i + 1} 5장 예시에 같은 카드 중복: ${ids.join(' ')}`, [ln.trim().slice(0, 110)]);
@@ -487,8 +520,18 @@ function auditHandsIn(post, PE) {
   }
 
   for (const { text: para, line } of paras) {
-    if (tokenizeCards(para).length >= 4) stat.cardParas++;
+    const hasCards = tokenizeCards(para).length >= 4;
+    if (hasCards) stat.cardParas++;
     const sc = extractScenario(para);
+    const nLines = para.split('\n').length;
+    let h5Covered = false;
+    for (let k = line; k < line + nLines; k++) if (h5Lines.has(k)) { h5Covered = true; break; }
+    if (hasCards && !h5Covered && (!sc || sc.board.length !== 5 || sc.players.length === 0)) {
+      UNCOVERED_PARAS.push({
+        slug: post.slug, line, para,
+        why: !sc ? '카드 수 부족' : sc.board.length !== 5 ? `보드 ${sc.board.length}장(5장 아님)` : '홀카드 라벨 없음',
+      });
+    }
     if (!sc) continue;
     if (sc.board.length === 5 && sc.players.length === 0) stat.unanchored++;  // 보드는 있는데 홀카드 라벨을 못 잡음
 
@@ -762,6 +805,14 @@ if (argv.includes('--selftest')) {
       '**Q♠ Q♥ Q♦ 5♣ 5♠** — 트리플(3장) + 원페어(2장).'],
     ['구성 설명은 판정 근거가 아니다 — 페어 2쌍 (오탐 금지)', false,
       '**10♠ 10♥ 8♣ 8♦ A♠** — 서로 다른 숫자의 페어 2쌍.'],
+    ['홀카드|보드 표 — 정상 4행 (오탐 금지)', false,
+      '| 내 카드 | 보드 | 쓰는 개인 카드 | 최종 족보 |\n|---|---|---|---|\n| A♠ K♠ | A♦ 7♣ 7♥ 2♠ 9♣ | 2장 | 에이스·세븐 투페어 (K 키커) |\n| 8♠ 8♦ | K♣ 8♥ 4♠ 4♦ J♣ | 2장 | 8 풀하우스 |\n| 2♣ 3♦ | A♠ K♠ Q♠ J♠ 10♠ | 0장 | 보드 로열플러시 |'],
+    ['부정 축약형 "아님"도 주장이 아니다 (오탐 금지)', false,
+      '| 내 홀카드 | 보드 | 플러시? | 설명 |\n|---|---|---|---|\n| ♣A ♦K | ♠Q ♠J ♥9 ♦7 ♣3 | ❌ 플러시 아님 | 같은 무늬 5장 없음 |'],
+    ['홀카드|보드 표 — 족보 오기 (잡아야 함)', true,
+      '| 내 카드 | 보드 | 최종 족보 |\n|---|---|---|\n| A♠ 4♦ | A♦ K♣ 9♥ 7♣ 2♠ | 에이스 투페어 |'],
+    ['**내 홀카드**: 형태도 잡는다 (잡아야 함)', true,
+      '**내 홀카드**: K♠ Q♦ / **상대 홀카드**: K♥ 5♣\n**보드**: K♦ J♠ 8♥ 4♣ 2♦\n→ **스플릿**'],
     ['로열 플러시를 "플러시"로 표기 (잡아야 함)', true,
       '- 플레이어 A: A♠ K♠ Q♠ J♠ 10♠ (스페이드 플러시)'],
     ['표 두 열의 베스트5는 별개다 (오탐 금지)', false,
@@ -885,6 +936,20 @@ if (argv.includes('--schema')) {
   }
 }
 
+/* --uncovered — 기계가 판정 못 한 카드 문단을 원문 그대로 뽑는다. 사람이 직접 검산할 목록이다. */
+if (argv.includes('--uncovered')) {
+  const want = new Set(report.map((r) => r.slug));
+  const list = UNCOVERED_PARAS.filter((u) => want.has(u.slug));
+  console.log(`\n\n══════ 기계 미판정 카드 문단 ${list.length}개 — 직접 검산 대상 ══════`);
+  let cur = null;
+  for (const u of list) {
+    if (u.slug !== cur) { cur = u.slug; console.log(`\n───── ${u.slug} ─────`); }
+    console.log(`\n[L${u.line}] (${u.why})`);
+    console.log(u.para.split('\n').map((l) => '  ' + l).join('\n'));
+  }
+  process.exit(0);
+}
+
 const approved = report.flatMap((r) => r.findings.filter((x) => x.msg.includes('[예외 승인]')).map((x) => `${r.slug} [${x.code}] ${x.msg}`));
 if (approved.length) {
   console.log(`\n승인된 예외 ${approved.length}건 (통과가 아니라 "이유 있는 미준수"다):`);
@@ -895,16 +960,19 @@ console.log('\n코드별:');
 for (const [k, n] of [...byCode.entries()].sort((a, b) => b[1] - a[1])) console.log(`  ${k.padEnd(10)} ${n}건`);
 
 /* §13 커버리지 — "0건"이 검증인지 미검사인지 구분해서 보고한다(묵시적 축소 금지) */
-let sSc = 0, sEv = 0, sPara = 0, sUn = 0, sFive = 0;
+let sSc = 0, sEv = 0, sPara = 0, sUn = 0, sFive = 0, sTab = 0;
 const uncovered = [];
 for (const r of report) {
   const st = HAND_STATS.get(r.slug);
   if (!st) continue;
-  sSc += st.scenarios; sEv += st.evaluated; sPara += st.cardParas; sUn += st.unanchored; sFive += st.fiveCard;
-  if (st.cardParas > 0 && st.scenarios === 0 && st.fiveCard === 0) uncovered.push(`${r.slug} (카드 문단 ${st.cardParas})`);
+  sSc += st.scenarios; sEv += st.evaluated; sPara += st.cardParas; sUn += st.unanchored;
+  sFive += st.fiveCard; sTab += st.tableRows;
+  if (st.cardParas > 0 && st.scenarios === 0 && st.fiveCard === 0 && st.tableRows === 0) {
+    uncovered.push(`${r.slug} (카드 문단 ${st.cardParas})`);
+  }
 }
 console.log('\n§13 자동 판정 커버리지:');
-console.log(`  쇼다운 시나리오 ${sSc}개(플레이어 ${sEv}명) · 5장 족보 예시 ${sFive}개 · 카드가 나온 문단 ${sPara}개`);
+console.log(`  쇼다운 ${sSc}개(플레이어 ${sEv}명) · 5장 족보 예시 ${sFive}개 · 홀카드|보드 표 ${sTab}행 · 카드가 나온 문단 ${sPara}개`);
 if (sUn) console.log(`  ⚠ 보드는 잡혔으나 홀카드 라벨이 없어 계산 못 한 문단 ${sUn}개`);
 if (uncovered.length) {
   console.log(`  ⚠ 카드가 있으나 시나리오를 하나도 못 잡은 글 ${uncovered.length}편 — 이 글의 "0건"은 검증이 아니라 미검사다:`);
