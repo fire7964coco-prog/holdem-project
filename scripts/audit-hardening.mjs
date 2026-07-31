@@ -57,6 +57,11 @@ export const CLUSTERS = {
     'holdem-cbet-strategy', 'bluffing-strategy-when-and-how', 'holdem-value-bet-sizing',
     'holdem-overbet-strategy', 'holdem-bankroll-management',
   ],
+  // 멤버는 필라 holdem-probability의 :::pillarhub 선언 그대로 (lib/posts.ts:6892)
+  '확률': [
+    'holdem-probability', 'holdem-outs-calculation', 'holdem-pot-odds-calculation',
+    'holdem-implied-odds', 'holdem-odds-calculator',
+  ],
 };
 
 /* ────────────────────────────────────────────────────────────────
@@ -133,7 +138,8 @@ function getH2s(content) {
  * 구조 섹션 H2 — FAQ·출처·마무리 등은 질문형일 수 없다.
  * 질문형 70% 기준의 분모에서 빼지 않으면 잘 쓴 글이 무더기로 오탐된다.
  */
-const STRUCTURAL_H2 = /(FAQ|자주 묻는 질문|출처|참고 자료|참고자료|마무리|핵심 요약|이 글 핵심|먼저 보세요|한눈에 보기)/;
+// "핵심 1줄 요약"(하단 요약)과 pillarhub 로드맵 섹션도 구조다 — 질문형으로 바꾸면 오히려 어색해진다.
+const STRUCTURAL_H2 = /(FAQ|자주 묻는 질문|출처|참고 자료|참고자료|마무리|핵심 요약|핵심 정리|이 글 핵심|먼저 보세요|한눈에 보기|줄 요약|줄 정리|로드맵)/;
 function isStructuralH2(t) {
   const s = t.replace(/^[0-9]+[.)]\s*/, '').replace(/[*_~]/g, '').trim();
   return STRUCTURAL_H2.test(s) || /^정리\b|^정리\s*—/.test(s);
@@ -615,7 +621,9 @@ function normText(s) {
     .replace(/\[([^\]]*)\]\([^)]*\)/g, '$1')   // 링크 → 라벨만
     .replace(/[*_=~`>#]/g, '')
     .replace(/\s+/g, ' ')
-    .replace(/[.。!?·,·:：]/g, '')
+    // ★소수점은 문장부호가 아니다. 보호하지 않으면 "3.5%"와 "35%"가 같은 값이 돼
+    //   형제 글의 확률 수치 모순을 통째로 놓친다(2026-07-31 확률 클러스터에서 발견).
+    .replace(/[.。!?·,·:：]/g, (m, i, str) => (m === '.' && /\d/.test(str[i - 1] ?? '') && /\d/.test(str[i + 1] ?? '')) ? '.' : '')
     .trim();
 }
 function trigrams(s) { const g = new Set(); for (let i = 0; i < s.length - 2; i++) g.add(s.slice(i, i + 3)); return g; }
@@ -697,6 +705,19 @@ function extractTables(c) {
 }
 const numsOf = (s) => (s.match(/\d+(?:[.,]\d+)?/g) ?? []).join('/');
 
+/** 편집거리(Levenshtein) — 표 열 이름의 표기차 판정용. */
+function editDistance(a, b) {
+  let prev = Array.from({ length: b.length + 1 }, (_, j) => j);
+  for (let i = 1; i <= a.length; i++) {
+    const cur = [i];
+    for (let j = 1; j <= b.length; j++) {
+      cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+    }
+    prev = cur;
+  }
+  return prev[b.length];
+}
+
 // 아무 표에나 붙는 일반 머리말 — 이것만 겹치는 건 "같은 주제"의 근거가 못 된다.
 const GENERIC_HEADER = new Set(['구분', '주제', '항목', '궁금한 점', '핵심 정리', '내용', '연결 내용', '설명',
   '비고', '상황', '기준', '예시', '포인트', '방법', '이유', '결과', '체크', '단계']);
@@ -726,18 +747,59 @@ function auditClusterTables(cluster, slugs, bySlug, stats) {
     for (let j = i + 1; j < all.length; j++) {
       const A = all[i], B = all[j];
       if (A.slug === B.slug) continue;
-      if (jaccard(A.gram, B.gram) < 0.45 || !sameTopicTable(A, B)) continue;
-      stats.pairs++;
       const mapB = new Map(B.rows.map((r) => [r[0], r]));
+      const rowOverlap = A.rows.filter((r) => r[0] && mapB.has(r[0])).length;
+      // ★짝짓기 신호 2개 — 어느 하나만 성립해도 대조 대상이다.
+      //  ① 헤더가 닮았다(값 열 이름 2개 이상 공유) — overbet↔bluffing 사고가 이 경로
+      //  ② 헤더가 달라도 **같은 행 키를 2개 이상 공유**한다 — 확률 클러스터가 이 경로.
+      //     「플러시 드로우/거트샷…」 행을 4편이 공유하는데 값 열 이름이 제각각이라
+      //     ①만 보면 통째로 빠진다(침묵 = "검증됨"으로 오독되는 공백).
+      if (!(jaccard(A.gram, B.gram) >= 0.45 && sameTopicTable(A, B)) && rowOverlap < 3) continue;
+      stats.pairs++;
+      // ★열은 인덱스가 아니라 **이름**으로 맞춘다.
+      // 인덱스로 맞추면 다른 개념끼리 대조해 오탐이 난다 — 2026-07-31 확률 클러스터에서 실제 발생:
+      //   probability「드로우|아웃츠|플럽 승률(×4)|턴 승률(×2)」 ↔ pot-odds「…|콜 가능 최대 팟오즈」
+      //   → 4번째 열끼리 비교해 "18% vs 36%" 불일치 5건을 쏟았으나, 공통 열(플럽 승률)은 완전 일치였다.
+      const colMap = [];
+      for (let k = 1; k < A.header.length; k++) {
+        const h = A.header[k];
+        if (!h) continue;
+        const kb = B.header.indexOf(h);
+        if (kb > 0) colMap.push([k, kb, h]);
+      }
+      /* 이름이 안 맞아 비교에서 빠진 열 중 **같은 개념의 다른 이름으로 의심되는 쌍**만 육안으로 올린다.
+         조건: 양쪽 다 숫자를 담은 값 열이고, 열 이름끼리 닮았을 것.
+         ─ 이름이 안 닮았으면 애초에 다른 개념이다("턴 승률(×2)" ↔ "콜 가능 최대 팟오즈") → 침묵이 맞다.
+         ─ 이 조건 없이 "미대조 열 전부"를 올렸더니 25편에서 C2가 40건 넘게 터졌다. 40건은 아무도 안 본다. */
+      const hasNum = (rows, k) => rows.some((r) => numsOf(r[k] ?? ''));
+      // 열 이름은 3-gram으로는 표기차를 못 잡는다("플럽 승률 (×4)" ↔ "플랍 승률(×4)" = 0.25).
+      // 기호·공백을 걷어내고 편집거리로 본다.
+      const keyOf = (h) => h.replace(/[\s()（）[\]{}·,:/\-—]/g, '');
+      const nearName = (x, y) => {
+        const a = keyOf(x), b = keyOf(y);
+        if (!a || !b) return false;
+        const d = editDistance(a, b);
+        return d <= Math.max(1, Math.floor(Math.max(a.length, b.length) * 0.25));
+      };
+      const unmatchedCols = [];
+      for (let ka = 1; ka < A.header.length; ka++) {
+        if (!A.header[ka] || colMap.some(([x]) => x === ka) || !hasNum(A.rows, ka)) continue;
+        for (let kb = 1; kb < B.header.length; kb++) {
+          if (!B.header[kb] || colMap.some(([, y]) => y === kb) || !hasNum(B.rows, kb)) continue;
+          if (nearName(A.header[ka], B.header[kb])) {
+            unmatchedCols.push(`"${A.header[ka]}" ↔ "${B.header[kb]}"`);
+          }
+        }
+      }
       const diffs = [];
       let matched = 0;
       for (const r of A.rows) {
         const b = mapB.get(r[0]);
         if (!b) continue;
         stats.rows++; matched++;
-        for (let k = 1; k < Math.min(r.length, b.length); k++) {
-          const na = numsOf(r[k]), nb = numsOf(b[k]);
-          if (na && nb && na !== nb) diffs.push(`"${r[0]}" ${A.header[k] ?? k}: ${A.slug}=${r[k].slice(0, 28)} / ${B.slug}=${b[k].slice(0, 28)}`);
+        for (const [ka, kb, hname] of colMap) {
+          const na = numsOf(r[ka] ?? ''), nb = numsOf(b[kb] ?? '');
+          if (na && nb && na !== nb) diffs.push(`"${r[0]}" ${hname}: ${A.slug}=${(r[ka] ?? '').slice(0, 28)} / ${B.slug}=${(b[kb] ?? '').slice(0, 28)}`);
         }
       }
       if (diffs.length) {
@@ -746,13 +808,14 @@ function auditClusterTables(cluster, slugs, bySlug, stats) {
           msg: `[${cluster}] 형제 글의 같은 표에서 수치 불일치 ${diffs.length}건 — ${A.slug}(L${A.line}) ↔ ${B.slug}(L${B.line})`,
           detail: diffs,
         });
-      } else if (matched === 0) {
-        // 같은 주제의 표인데 행 키가 달라 기계가 대조하지 못했다.
-        // 여기서 침묵하면 "검증됨"으로 읽힌다 → 육안 대조 대상으로 올린다. (overbet↔bluffing 사고가 정확히 이 자리)
+      } else if (matched === 0 || unmatchedCols.length) {
+        // 대조하지 못하고 남은 것이 있다 — 행 키가 안 맞거나(matched 0), 열 이름이 달라 비교에서 빠진 값 열이 있다.
+        // ★이름이 다른 두 열이 "다른 개념"인지 "같은 개념의 다른 이름"인지는 기계가 판정할 수 없다.
+        //   여기서 침묵하면 "검증됨"으로 읽힌다 → 사람에게 넘긴다. (overbet↔bluffing 사고가 정확히 이 자리)
         stats.manual++;
         out.push({
           sev: 'WARN', code: 'C2',
-          msg: `[${cluster}] 같은 주제 표인데 행 키가 달라 자동 대조 불가 — 육안 대조 필요: ${A.slug}(L${A.line}) ↔ ${B.slug}(L${B.line})`,
+          msg: `[${cluster}] ${matched === 0 ? '자동 대조가 행 키 불일치로 전혀 안 됨' : `이름만 다른 같은 개념 열로 의심됨 — ${unmatchedCols.join(', ')}`} — 육안 대조 필요: ${A.slug}(L${A.line}) ↔ ${B.slug}(L${B.line})`,
           detail: [
             `헤더 A: ${A.header.join(' | ')}`,
             ...A.rows.slice(0, 5).map((r) => `   ${A.slug}: ${r.join(' | ')}`),
@@ -827,8 +890,45 @@ if (argv.includes('--selftest')) {
     console.log(`${ok ? '✅' : '❌'} ${shouldFire ? '[잡아야 함]' : '[울리면 안 됨]'} ${name}`);
     for (const x of found) console.log(`      → [${x.code}] ${x.msg}`);
   }
-  console.log(`\n${pass}/${FIX.length} 통과`);
-  process.exit(pass === FIX.length ? 0 : 1);
+
+  /* ── 클러스터 표 교차 대조(C1/C2) 자가 테스트 ──
+     C1은 "형제 글의 같은 표가 서로 모순"을 잡는 검사다. 열을 인덱스로 맞추면
+     서로 다른 개념 열을 대조해 오탐이 난다(2026-07-31 확률 클러스터 실측). */
+  const CFIX = [
+    ['실제 사고 재현 — 같은 이름 열의 수치 모순', ['C1'],
+      '| 벳 사이즈 | 밸류:블러프 | 블러프 비중 |\n|---|---|---|\n| 100% | 2:1 | 33% |\n| 200% | 1.5:1 | 40% |',
+      '| 오버벳 크기 | 밸류:블러프 | 블러프 비중 |\n|---|---|---|\n| 100% | 2:1 | 33% |\n| 200% | 1.5:1 | 25% |'],
+    ['같은 이름 열이 전부 일치하면 조용하다', [],
+      '| 벳 사이즈 | 밸류:블러프 | 블러프 비중 |\n|---|---|---|\n| 100% | 2:1 | 33% |\n| 200% | 1.5:1 | 40% |',
+      '| 오버벳 크기 | 밸류:블러프 | 블러프 비중 |\n|---|---|---|\n| 100% | 2:1 | 33% |\n| 200% | 1.5:1 | 40% |'],
+    // ★2026-07-31 확률 클러스터 실측: 열을 인덱스로 맞춰 "턴 승률(×2)"와 "콜 가능 최대 팟오즈"를
+    //   대조하고 🔴 수치 불일치 5건을 단정했다. C1은 절대 울리면 안 되고, 대조 못 한 열은 C2로만 넘긴다.
+    ['확률 클러스터 오탐 — 다른 개념 열은 C1도 C2도 아니다', [],
+      '| 드로우 종류 | 아웃츠 | 플럽 승률 (×4) | 턴 승률 (×2) |\n|:---|:---:|:---|:---|\n| 플러시 드로우 | 9장 | 약 36% | 약 18% |\n| 양방 스트레이트 | 8장 | 약 32% | 약 16% |\n| 거트샷 스트레이트 | 4장 | 약 16% | 약 8% |',
+      '| 드로우 종류 | 아웃츠 | 플럽 승률 (×4) | 콜 가능 최대 팟오즈 |\n|:---|:---:|:---|:---|\n| 플러시 드로우 | 9장 | 약 36% | 36% 이하 (팟의 56% 이하 베팅) |\n| 양방 스트레이트 | 8장 | 약 32% | 32% 이하 (팟의 47% 이하 베팅) |\n| 거트샷 스트레이트 | 4장 | 약 16% | 16% 이하 (팟의 19% 이하 베팅) |'],
+    // ★normText가 마침표를 문장부호로 보고 지우면 "3.5%"와 "35%"가 같은 값이 된다.
+    //   확률 클러스터는 19.6%·31.5%·16.5%처럼 소수점 수치투성이라 이 결함 하나로 전부 무력화된다.
+    ['소수점을 지우면 안 된다 — 3.5%와 35%는 다른 값', ['C1'],
+      '| 드로우 | 아웃츠 | 완성 확률 |\n|---|---|---|\n| 투페어+ | 6 | 3.5% |\n| 플러시 드로우 | 9 | 35% |\n| 거트샷 | 4 | 16.5% |',
+      '| 드로우 | 아웃츠 | 완성 확률 |\n|---|---|---|\n| 투페어+ | 6 | 35% |\n| 플러시 드로우 | 9 | 35% |\n| 거트샷 | 4 | 16.5% |'],
+    ['같은 개념인데 표기만 다른 열은 육안으로 올린다 (C2)', ['C2'],
+      '| 드로우 | 아웃츠 | 플럽 승률 (×4) |\n|---|---|---|\n| 플러시 드로우 | 9장 | 약 36% |\n| 양방 스트레이트 | 8장 | 약 32% |\n| 거트샷 | 4장 | 약 16% |',
+      '| 드로우 | 아웃츠 | 플랍 승률(×4) |\n|---|---|---|\n| 플러시 드로우 | 9장 | 약 35% |\n| 양방 스트레이트 | 8장 | 약 31% |\n| 거트샷 | 4장 | 약 17% |'],
+  ];
+  for (const [name, want, ca, cb] of CFIX) {
+    const bs = new Map([['a', { slug: 'a', content: ca }], ['b', { slug: 'b', content: cb }]]);
+    const st = { tables: 0, pairs: 0, rows: 0, manual: 0 };
+    const found = auditClusterTables('selftest', ['a', 'b'], bs, st);
+    const codes = [...new Set(found.map((x) => x.code))].sort();
+    const ok = codes.join(',') === [...want].sort().join(',');
+    if (ok) pass++;
+    console.log(`${ok ? '✅' : '❌'} [기대 ${want.length ? want.join('+') : '무음'}] ${name}`);
+    for (const x of found) console.log(`      → [${x.code}] ${x.msg}`);
+  }
+
+  const TOTAL = FIX.length + CFIX.length;
+  console.log(`\n${pass}/${TOTAL} 통과`);
+  process.exit(pass === TOTAL ? 0 : 1);
 }
 const bySlug = new Map(POSTS.map((p) => [p.slug, p]));
 const allSlugs = new Set(POSTS.map((p) => p.slug));
