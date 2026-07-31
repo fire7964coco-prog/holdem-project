@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
-import { Noto_Sans_KR, Inter, Lora, EB_Garamond } from "next/font/google";
+import { Noto_Sans_KR, Inter, Lora } from "next/font/google";
 import { SiteHeader, SiteFooter, HtmlLangSync, MainContent, ScrollToTopButton } from "@/components/site-chrome";
 import { BrushDefs } from "@/components/brush-defs";
 import SitePopup from "@/components/site-popup";
@@ -26,17 +26,33 @@ const LANG_BOOTSTRAP = `(function(){try{var s=location.pathname.split('/')[1];va
 )};var e=document.documentElement;e.lang=L[s]||'ko';e.dir=R[s]?'rtl':'ltr';}catch(_){}})();`;
 
 /**
- * 모바일 LCP/TBT 최적화:
- *  - weight 4개 → 2개 (400 본문, 700 강조) 다운로드 시간 절반
- *  - Noto Serif KR 제거: 헤딩도 Sans 700/900 으로 통일 (한글 폰트 파일 3개 추가 절감)
- *  - 본문/헤딩이 같은 폰트 파일 → 1번 다운로드로 모든 weight 커버
- *  - display:"optional" — 한글 서브셋이 100ms 안에 못 오면 시스템 폰트(Apple SD Gothic
- *    Neo / Malgun Gothic) 로 고정 렌더, 스왑 없음. 모바일 LCP = FCP 로 단축. 두 번째
- *    방문 이후엔 캐시된 Noto Sans KR 사용. (첫 방문자 시각 변화는 사실상 인지 불가)
+ * 모바일 전송량 최적화 (2026-08-01 실측 기준으로 재정리)
+ *
+ * ★ 여기 숫자를 늘리기 전에 반드시 읽을 것.
+ * Noto Sans KR은 구글이 한글 글리프를 **124개 서브셋으로 쪼개** 배포한다.
+ * 그래서 빌드 산출물의 @font-face 수 = weight 수 × 124.
+ * weight 6개였을 때 실측: **@font-face 744개 · 한 페이지가 실제로 받는 woff2 21개 · 440KB**
+ * (그 페이지 총 전송량 896KB의 절반이 폰트였다.)
+ *
+ * ★그런데 weight를 줄여도 **전송 바이트는 안 줄어든다.** 직접 재봤다(2026-08-01):
+ *     weight 6개 → 받는 파일 21개 · 397KB (전부 weight 900 하나)
+ *     weight 3개 → 21개 · 397KB (여전히 900 하나)
+ *     weight 2개 → 21개 · 397KB (900이 없으니 700이 그만큼)
+ *   브라우저는 **"이 페이지 한글 볼드에 필요한 글리프 한 벌"**만 받고, 그게 397KB다.
+ *   나머지 weight는 @font-face 선언만 차지하고 실제로는 한 번도 안 받아진다.
+ *   (본문 한글 400은 Inter_Fallback이 먼저 매칭돼 시스템 한글 폰트로 렌더된다.
+ *    Noto Sans KR 400 파일이 단 한 번도 요청되지 않는 것이 그 증거다.)
+ *
+ * 그래서 여기서 하는 일은 **CSS 군살 제거**다 — @font-face 846개 → 438개.
+ * 실제로 렌더에 쓰이는 400/700/900만 남긴다. 500·600·800은 어차피 다운로드된 적이
+ * 없으므로 지워도 화면은 그대로다(라틴은 Inter가 5 weight를 유지하므로 무관).
+ *
+ * ⚠ 397KB를 진짜로 없애려면 **한글 웹폰트 자체를 포기**해야 한다(본문은 이미 시스템
+ *   폰트를 쓰고 있으니 헤딩만 맞추면 된다). 그건 타이포그래피 결정이라 사장님 판단 몫.
  */
 const notoSansKr = Noto_Sans_KR({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800", "900"],
+  weight: ["400", "700", "900"],
   display: "swap",
   preload: true,
   variable: "--font-noto-sans-kr",
@@ -66,18 +82,14 @@ const lora = Lora({
   variable: "--font-lora",
 });
 
-/**
- * EB Garamond — Adobe Caslon Pro와 동일 계열 올드스타일 세리프
- * 팩트풀니스 느낌의 본문 가독성, 크림 배경과 최적 궁합
+/*
+ * EB Garamond 제거됨 (2026-08-01)
+ * globals.css 19행에 "font-serif → sans-serif 통일 (EB Garamond 제거, 한글 혼용
+ * 굵기 불균일 문제 해결)"이라고 이미 적혀 있었는데 **선언만 남아 있었다.**
+ * --font-eb-garamond 를 참조하는 코드는 layout.tsx 자기 자신뿐이었다(전수 검색 확인).
+ * @font-face 35개 · 빌드 산출물 1.27MB 분량이 아무 데도 안 쓰이고 있었다.
+ * 되살리려면 globals.css의 위 결정부터 뒤집어야 한다.
  */
-const ebGaramond = EB_Garamond({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
-  display: "optional",
-  preload: false,
-  variable: "--font-eb-garamond",
-});
-
 export const viewport: Viewport = {
   themeColor: "#0a1f10",
   colorScheme: "dark",
@@ -136,7 +148,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="ko" dir="ltr" suppressHydrationWarning className={`${notoSansKr.variable} ${inter.variable} ${lora.variable} ${ebGaramond.variable}`}>
+    <html lang="ko" dir="ltr" suppressHydrationWarning className={`${notoSansKr.variable} ${inter.variable} ${lora.variable}`}>
       <head>
         {/* 보조 언어 경로에서 lang/dir을 페인트 직전 보정 (RTL 깜빡임·언어 신호) */}
         <script dangerouslySetInnerHTML={{ __html: LANG_BOOTSTRAP }} />
