@@ -98,6 +98,26 @@ async function loadPosts() {
   return mod.POSTS;
 }
 
+/**
+ * 로케일판 포스트 로드 (--locale=en 등).
+ * ⚠ 여기서 돌리는 검사는 **언어 불변 항목만**이다 — §13 핸드·산수·카드 중복·표 교차대조.
+ *    메타 길이·"바로 답" 라벨·질문형 종결어미·§17 금지어는 한국어 기준이라 로케일에 적용하지 않는다.
+ *    (EN은 seoTitle ~55자·desc ≤160자로 기준 자체가 다르다.)
+ */
+async function loadLocalePosts(locale) {
+  const dir = path.join(ROOT, 'lib', `posts-${locale}`);
+  if (!fs.existsSync(dir)) throw new Error(`로케일 폴더 없음: lib/posts-${locale}`);
+  const outDir = path.join(TMP, `posts-${locale}`);
+  for (const f of fs.readdirSync(dir)) {
+    if (!f.endsWith('.ts')) continue;
+    transpileTo(path.join(dir, f), path.join(outDir, f.replace(/\.ts$/, '.mjs')));
+  }
+  const mod = await import(pathToFileURL(path.join(outDir, 'index.mjs')).href);
+  const arr = Object.values(mod).find((v) => Array.isArray(v) && v.length && v[0]?.slug);
+  if (!arr) throw new Error(`lib/posts-${locale}/index.ts 에서 포스트 배열을 못 찾음`);
+  return arr;
+}
+
 /** 사이트가 실제로 쓰는 평가기를 그대로 재사용한다(감사기 독자 구현 = 원본과 갈라짐). */
 async function loadPokerEval() {
   transpileTo(path.join(ROOT, 'lib', 'poker-eval.ts'), path.join(TMP, 'poker-eval.mjs'));
@@ -647,6 +667,49 @@ function sentencesOf(c) {
   return out;
 }
 
+/* ────────────────────────────────────────────────────────────────
+   F13 — 본문에 적힌 나눗셈을 실제로 계산해 본다.
+   왜 있는가: 2026-07-31 확률 클러스터에서 팟오즈 분모가 통째로 틀렸는데
+   "팟오즈" 키워드 검색으로는 안 걸렸다. position 글의 "팟 오즈 = 2/4 = 33%"(2/4는 50%)는
+   적대적 검수가 우연히 발견했다. 산수 자체를 기계가 재계산하면 언어와 무관하게 전부 잡힌다.
+   ──────────────────────────────────────────────────────────────── */
+const DIV_RE = /([\d][\d,]*(?:\.\d+)?)\s*(?:÷|\/)\s*\(?\s*([0-9,.\s+×x*]+?)\s*\)?\s*(?:(?:×|x|\*)\s*100\s*)?=\s*\**\s*(?:약\s*)?([\d.]+)\s*%/g;
+
+/** "10,000 + 5,000 + 5,000" 또는 "20,000 + 10,000 × 2" → 숫자. 못 풀면 null. */
+function evalDenom(s) {
+  const t = s.replace(/,/g, '').trim();
+  if (!/^[\d.\s+×x*]+$/.test(t)) return null;
+  let sum = 0;
+  for (const term of t.split('+')) {
+    const factors = term.split(/[×x*]/).map((x) => parseFloat(x.trim()));
+    if (factors.some((f) => !Number.isFinite(f))) return null;
+    sum += factors.reduce((a, b) => a * b, 1);
+  }
+  return sum;
+}
+
+function auditArithmetic(post) {
+  const out = [];
+  const lines = (post.content ?? '').split('\n');
+  lines.forEach((raw, i) => {
+    for (const m of raw.matchAll(DIV_RE)) {
+      const num = parseFloat(m[1].replace(/,/g, ''));
+      const den = evalDenom(m[2]);
+      const claimed = parseFloat(m[3]);
+      if (!Number.isFinite(num) || den === null || den === 0 || !Number.isFinite(claimed)) continue;
+      const actual = (num / den) * 100;
+      // 0.6%p까지는 반올림·어림으로 본다. 그 이상 벌어지면 산수가 틀린 것이다.
+      if (Math.abs(actual - claimed) > 0.6) {
+        out.push({
+          sev: 'ERR', code: 'F13',
+          msg: `L${i + 1} 나눗셈 결과 불일치 — 글은 "${claimed}%", 실제 ${actual.toFixed(1)}% (${m[1]} ÷ ${m[2].trim()})`,
+        });
+      }
+    }
+  });
+  return out;
+}
+
 function auditDuplication(post) {
   const f = [];
   const c = post.content ?? '';
@@ -718,6 +781,35 @@ function editDistance(a, b) {
   return prev[b.length];
 }
 
+/**
+ * 형제 글끼리 달라도 정상인 셀 — 대조하면 오탐만 난다.
+ *   ① 예시 핸드: 카드 기호(♠♥♦♣), 또는 랭크 5개 나열("9-8-7-6-5" 같은 베스트5 표기)
+ *   ② 날짜·연도·월
+ *   ③ 금액(통화 기호·통화 코드)
+ *   ④ 오즈 표기("16 para 1" ↔ "1 em 17"은 같은 값의 다른 표기다)
+ * 카드 자체의 정합성은 H1~H6이 따로 본다.
+ */
+const NON_COMPARABLE_CELL = new RegExp([
+  '[♠♥♦♣$€₩¥£]',
+  '\\b[AKQJT0-9]{1,2}(?:-[AKQJT0-9]{1,2}){4}\\b',
+  '\\b(19|20)\\d{2}\\b',
+  '\\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\b',
+  '\\d+\\s*월',
+  'AUD|USD|KRW|EUR',
+  '\\d+\\s*(?:대|對|para|to|:)\\s*1\\b',
+].join('|'), 'i');
+
+/** 대회 가이드 slug(연도 포함) — 서로 다른 대회의 수치를 대조하는 건 의미가 없다. */
+const isEventGuide = (s) => /\b(19|20)\d{2}\b/.test(s);
+
+/** 열 이름 비교 — 3-gram으로는 표기차를 못 잡는다("플럽 승률 (×4)" ↔ "플랍 승률(×4)" = 0.25). */
+const keyOf = (h) => (h ?? '').replace(/[\s()（）[\]{}·,:/\-—]/g, '');
+function nearName(x, y) {
+  const a = keyOf(x), b = keyOf(y);
+  if (!a || !b) return false;
+  return editDistance(a, b) <= Math.max(1, Math.floor(Math.max(a.length, b.length) * 0.25));
+}
+
 // 아무 표에나 붙는 일반 머리말 — 이것만 겹치는 건 "같은 주제"의 근거가 못 된다.
 const GENERIC_HEADER = new Set(['구분', '주제', '항목', '궁금한 점', '핵심 정리', '내용', '연결 내용', '설명',
   '비고', '상황', '기준', '예시', '포인트', '방법', '이유', '결과', '체크', '단계']);
@@ -747,6 +839,8 @@ function auditClusterTables(cluster, slugs, bySlug, stats) {
     for (let j = i + 1; j < all.length; j++) {
       const A = all[i], B = all[j];
       if (A.slug === B.slug) continue;
+      // 서로 다른 대회 가이드끼리는 엔트리·상금·일정이 다른 게 정상이다.
+      if (isEventGuide(A.slug) && isEventGuide(B.slug)) continue;
       const mapB = new Map(B.rows.map((r) => [r[0], r]));
       const rowOverlap = A.rows.filter((r) => r[0] && mapB.has(r[0])).length;
       // ★짝짓기 신호 2개 — 어느 하나만 성립해도 대조 대상이다.
@@ -754,7 +848,12 @@ function auditClusterTables(cluster, slugs, bySlug, stats) {
       //  ② 헤더가 달라도 **같은 행 키를 2개 이상 공유**한다 — 확률 클러스터가 이 경로.
       //     「플러시 드로우/거트샷…」 행을 4편이 공유하는데 값 열 이름이 제각각이라
       //     ①만 보면 통째로 빠진다(침묵 = "검증됨"으로 오독되는 공백).
-      if (!(jaccard(A.gram, B.gram) >= 0.45 && sameTopicTable(A, B)) && rowOverlap < 3) continue;
+      // ★행 키만 겹치는 경로는 **첫 열 이름도 닮아야** 짝짓는다.
+      //   족보 이름(플러시·스트레이트…)은 어느 표에나 행 키로 등장하기 때문이다.
+      //   2026-07-31 ja/zh 실측: 「5장 족보 확률」표와 「플랍에서 완성될 확률」표가
+      //   행 키를 공유한다는 이유로 짝지어져 🔴 4건씩 오탐이 났다. 둘 다 정확한 표였다.
+      const rowLinked = rowOverlap >= 3 && nearName(A.header[0], B.header[0]);
+      if (!(jaccard(A.gram, B.gram) >= 0.45 && sameTopicTable(A, B)) && !rowLinked) continue;
       stats.pairs++;
       // ★열은 인덱스가 아니라 **이름**으로 맞춘다.
       // 인덱스로 맞추면 다른 개념끼리 대조해 오탐이 난다 — 2026-07-31 확률 클러스터에서 실제 발생:
@@ -772,15 +871,6 @@ function auditClusterTables(cluster, slugs, bySlug, stats) {
          ─ 이름이 안 닮았으면 애초에 다른 개념이다("턴 승률(×2)" ↔ "콜 가능 최대 팟오즈") → 침묵이 맞다.
          ─ 이 조건 없이 "미대조 열 전부"를 올렸더니 25편에서 C2가 40건 넘게 터졌다. 40건은 아무도 안 본다. */
       const hasNum = (rows, k) => rows.some((r) => numsOf(r[k] ?? ''));
-      // 열 이름은 3-gram으로는 표기차를 못 잡는다("플럽 승률 (×4)" ↔ "플랍 승률(×4)" = 0.25).
-      // 기호·공백을 걷어내고 편집거리로 본다.
-      const keyOf = (h) => h.replace(/[\s()（）[\]{}·,:/\-—]/g, '');
-      const nearName = (x, y) => {
-        const a = keyOf(x), b = keyOf(y);
-        if (!a || !b) return false;
-        const d = editDistance(a, b);
-        return d <= Math.max(1, Math.floor(Math.max(a.length, b.length) * 0.25));
-      };
       const unmatchedCols = [];
       for (let ka = 1; ka < A.header.length; ka++) {
         if (!A.header[ka] || colMap.some(([x]) => x === ka) || !hasNum(A.rows, ka)) continue;
@@ -798,8 +888,14 @@ function auditClusterTables(cluster, slugs, bySlug, stats) {
         if (!b) continue;
         stats.rows++; matched++;
         for (const [ka, kb, hname] of colMap) {
-          const na = numsOf(r[ka] ?? ''), nb = numsOf(b[kb] ?? '');
-          if (na && nb && na !== nb) diffs.push(`"${r[0]}" ${hname}: ${A.slug}=${(r[ka] ?? '').slice(0, 28)} / ${B.slug}=${(b[kb] ?? '').slice(0, 28)}`);
+          const ca = r[ka] ?? '', cb = b[kb] ?? '';
+          // ★예시 핸드와 날짜는 "달라도 되는 값"이다 — 대조하면 오탐만 난다.
+          //   족보 예시: 9♥8♥7♥6♥5♥ ↔ 5♥6♥7♥8♥9♥ 는 같은 핸드를 순서만 바꿔 쓴 것.
+          //   대회 날짜: 서로 다른 대회의 일정이 다른 건 당연하다.
+          //   (카드 자체의 정합성은 H1~H6이 따로 본다.)
+          if (NON_COMPARABLE_CELL.test(ca) || NON_COMPARABLE_CELL.test(cb)) continue;
+          const na = numsOf(ca), nb = numsOf(cb);
+          if (na && nb && na !== nb) diffs.push(`"${r[0]}" ${hname}: ${A.slug}=${ca.slice(0, 28)} / ${B.slug}=${cb.slice(0, 28)}`);
         }
       }
       if (diffs.length) {
@@ -839,7 +935,8 @@ const wantJson = argv.includes('--json');
 const oneSlug = arg('slug');
 const oneCluster = arg('cluster');
 
-const POSTS = await loadPosts();
+const oneLocale = arg('locale');
+const POSTS = oneLocale && oneLocale !== 'ko' ? await loadLocalePosts(oneLocale) : await loadPosts();
 const PE = await loadPokerEval();
 
 /* ── 자가 테스트 (--selftest) — 게이트가 실제 사고를 잡는지 증명한다 ──
@@ -908,6 +1005,13 @@ if (argv.includes('--selftest')) {
       '| 드로우 종류 | 아웃츠 | 플럽 승률 (×4) | 콜 가능 최대 팟오즈 |\n|:---|:---:|:---|:---|\n| 플러시 드로우 | 9장 | 약 36% | 36% 이하 (팟의 56% 이하 베팅) |\n| 양방 스트레이트 | 8장 | 약 32% | 32% 이하 (팟의 47% 이하 베팅) |\n| 거트샷 스트레이트 | 4장 | 약 16% | 16% 이하 (팟의 19% 이하 베팅) |'],
     // ★normText가 마침표를 문장부호로 보고 지우면 "3.5%"와 "35%"가 같은 값이 된다.
     //   확률 클러스터는 19.6%·31.5%·16.5%처럼 소수점 수치투성이라 이 결함 하나로 전부 무력화된다.
+    // ★2026-07-31 EN 전수조사 실측 오탐: 같은 족보의 다른 예시 핸드, 서로 다른 대회의 날짜.
+    ['예시 핸드가 다른 건 모순이 아니다 (오탐 금지)', [],
+      '| 순위 | 족보 | Example |\n|---|---|---|\n| 2 | 스트레이트 플러시 | 9♥ 8♥ 7♥ 6♥ 5♥ |\n| 5 | 플러시 | A♠ J♠ 9♠ 6♠ 2♠ |\n| 6 | 스트레이트 | 9♣ 8♥ 7♦ 6♣ 5♠ |',
+      '| 순위 | 족보 | Example |\n|---|---|---|\n| 2 | 스트레이트 플러시 | 5♥ 6♥ 7♥ 8♥ 9♥ |\n| 5 | 플러시 | A♠ K♠ 8♠ 5♠ 2♠ |\n| 6 | 스트레이트 | 5♥ 6♠ 7♦ 8♣ 9♥ |'],
+    ['서로 다른 대회의 날짜가 다른 건 모순이 아니다 (오탐 금지)', [],
+      '| 항목 | 2026 (Confirmed) | 2025 (Actual) |\n|---|---|---|\n| Dates | Sep 10–30 2026 | Sep 18–Oct 1 2025 |\n| Venue | Melbourne | Melbourne |\n| Buy-in | A$1,100 | A$1,100 |',
+      '| 항목 | 2026 (Confirmed) | 2025 (Actual) |\n|---|---|---|\n| Dates | Aug 16–29 2026 | Aug 18–31 2025 |\n| Venue | Barcelona | Barcelona |\n| Buy-in | A$1,100 | A$1,100 |'],
     ['소수점을 지우면 안 된다 — 3.5%와 35%는 다른 값', ['C1'],
       '| 드로우 | 아웃츠 | 완성 확률 |\n|---|---|---|\n| 투페어+ | 6 | 3.5% |\n| 플러시 드로우 | 9 | 35% |\n| 거트샷 | 4 | 16.5% |',
       '| 드로우 | 아웃츠 | 완성 확률 |\n|---|---|---|\n| 투페어+ | 6 | 35% |\n| 플러시 드로우 | 9 | 35% |\n| 거트샷 | 4 | 16.5% |'],
@@ -926,7 +1030,25 @@ if (argv.includes('--selftest')) {
     for (const x of found) console.log(`      → [${x.code}] ${x.msg}`);
   }
 
-  const TOTAL = FIX.length + CFIX.length;
+  /* ── F13 산수 검산 자가 테스트 ──
+     2026-07-31 position 글의 실제 오류("팟 오즈 = 2/4 = 33%")를 잡는지 고정한다. */
+  const AFIX = [
+    ['실제 사고 재현 — 2/4를 33%라고 씀', true, '2BB만 더 내면 4BB를 탈 수 있습니다. 팟 오즈 = 2/4 = 33%.'],
+    ['분모가 합인 정상 계산 (울리면 안 됨)', false, '팟오즈 = 5,000 ÷ (10,000 + 5,000 + 5,000) × 100 = 25%'],
+    ['분모 합이 틀린 경우 (잡아야 함)', true, '팟오즈 = 10,000 ÷ (20,000 + 10,000) × 100 = 25%'],
+    ['반올림 오차는 봐준다 (울리면 안 됨)', false, '팟오즈 = 3,300 ÷ (13,300 + 3,300) × 100 = 20%'],
+    ['곱셈이 섞인 분모도 푼다 (울리면 안 됨)', false, '필요 승률 = 10 ÷ (10 + 10 × 2) × 100 = 33.3%'],
+    ['분모에 문자가 섞이면 판정하지 않는다 (오탐 금지)', false, '팟오즈 = 콜 ÷ (팟 + 상대 베팅 + 콜) × 100 = 25%'],
+  ];
+  for (const [name, shouldFire, content] of AFIX) {
+    const found = auditArithmetic({ slug: 'selftest', content });
+    const ok = shouldFire ? found.length > 0 : found.length === 0;
+    if (ok) pass++;
+    console.log(`${ok ? '✅' : '❌'} ${shouldFire ? '[잡아야 함]' : '[울리면 안 됨]'} ${name}`);
+    for (const x of found) console.log(`      → [${x.code}] ${x.msg}`);
+  }
+
+  const TOTAL = FIX.length + CFIX.length + AFIX.length;
   console.log(`\n${pass}/${TOTAL} 통과`);
   process.exit(pass === TOTAL ? 0 : 1);
 }
@@ -935,7 +1057,8 @@ const allSlugs = new Set(POSTS.map((p) => p.slug));
 const srcMap = buildSourceMap();
 
 let targets = [];
-if (oneSlug) targets = [['지정', [oneSlug]]];
+if (oneLocale && oneLocale !== 'ko') targets = [[`${oneLocale.toUpperCase()} 전체 (언어 불변 항목만)`, POSTS.map((p) => p.slug)]];
+else if (oneSlug) targets = [['지정', [oneSlug]]];
 else if (oneCluster) targets = [[oneCluster, CLUSTERS[oneCluster] ?? []]];
 else if (wantAll) targets = [['KO 전체', POSTS.map((p) => p.slug)]];
 else targets = Object.entries(CLUSTERS);
@@ -960,9 +1083,13 @@ for (const [cluster, slugs] of targets) {
     if (pillar && slug !== pillar && !(post.content ?? '').includes(`/blog/${pillar}`)) {
       extra.push({ sev: 'WARN', code: 'F12', msg: `필라(/blog/${pillar}) 역링크 없음 — 클러스터 구조가 작동하지 않는다` });
     }
+    // 로케일 모드는 언어 불변 항목만 본다(위 loadLocalePosts 주석 참조).
     report.push({
-      cluster, slug, src: srcMap.get(slug) ?? '?',
-      findings: [...auditPost(post, allSlugs), ...auditHandsIn(post, PE), ...auditDuplication(post), ...extra],
+      cluster, slug,
+      src: oneLocale && oneLocale !== 'ko' ? `lib/posts-${oneLocale}/` : (srcMap.get(slug) ?? '?'),
+      findings: oneLocale && oneLocale !== 'ko'
+        ? [...auditHandsIn(post, PE), ...auditArithmetic(post)]
+        : [...auditPost(post, allSlugs), ...auditHandsIn(post, PE), ...auditDuplication(post), ...auditArithmetic(post), ...extra],
     });
   }
 }
