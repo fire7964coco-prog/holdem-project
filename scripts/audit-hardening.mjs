@@ -416,7 +416,10 @@ function groupRuns(tokens, text) {
 function handMentions(text) {
   const ms = [];
   for (const [name, re] of HAND_ALIASES) {
-    const r = new RegExp(re.source, 'g');
+    // ★'gi' — 원본의 i 플래그를 반드시 이어받아야 한다.
+    //   'g'만 주면 대소문자 구분이 살아나 "Straight Flush"(대문자)가 통째로 누락된다.
+    //   한글 별칭은 영향이 없어 KO에서는 드러나지 않았고, de·en 실측에서 잡혔다(2026-07-31).
+    const r = new RegExp(re.source, 'gi');
     let m;
     while ((m = r.exec(text))) {
       if (!m[0].length) break;
@@ -563,8 +566,15 @@ function auditHandsIn(post, PE) {
     for (let i = 0; i < lines.length; i++) {
       const ln = lines[i];
       const toks = tokenizeCards(ln);
+      /* H5가 어떤 줄을 왜 건너뛰는지 보려면:
+           AUDIT_DEBUG5="문장 일부" npm run audit:hard -- --locale=de
+         "5장 예시 0개"의 원인이 카드 토큰인지·런 분리인지·족보명 인식인지 바로 갈린다.
+         (실제로 이 훅으로 handMentions의 'gi' 플래그 누락을 찾았다 — 2026-07-31) */
+      const DBG = process.env.AUDIT_DEBUG5 && ln.includes(process.env.AUDIT_DEBUG5);
+      if (DBG) console.log(`[dbg] toks=${toks.length} :: ${ln.slice(0, 80)}`);
       if (toks.length !== 5) continue;
       const runs = groupRuns(toks, ln);
+      if (DBG) console.log(`[dbg] runs=${runs.length} named=${namedHandIn(ln)} distinct=${distinctHandNames(ln)}`);
       if (runs.length !== 1) continue;
       // 이미지 마크다운 줄은 판정하지 않는다 — alt·캡션은 "보드를 읽는 법" 같은 설명문이라
       // 카드와 족보명이 함께 있어도 그 카드의 족보를 주장하는 문장이 아니다.
@@ -576,7 +586,7 @@ function auditHandsIn(post, PE) {
       // "uma trinca mais um par" · "three of a kind plus sepasang" (전부 풀하우스의 부품 나열).
       // 맨 "pair/pareja/par/paar"를 별칭에서 뺐기 때문에 위 가드에 안 걸려 여기서 따로 거른다.
       // ⚠ id "sepasang"은 se+pasang = "a pair" 자체다 — 수식어가 아니라 명사 쪽에 둔다.
-      if (/(plus|and|with|más|mas|mais|\+|と|加)\s*(a|an|one|two|un|una|uma|um|dois|einem?|eine)?\s*(sepasang|pair|pareja|pares|par|pasang|paare?|ペア|[对對])\b/i.test(ln)) continue;
+      if (/(plus|und|and|with|más|mas|mais|\+|と|加)\s*(a|an|one|two|un|una|uma|um|dois|ein(e|em|en)?)?\s*(sepasang|pair|pareja|pares|par|pasang|paare?|ペア|[对對])\b/i.test(ln)) continue;
       stat.fiveCard++;
       h5Lines.add(i + 1);
       const ids = runs[0].map((t) => t.id);
@@ -1048,6 +1058,8 @@ if (argv.includes('--selftest')) {
     ['구성 설명 — es "un trío más una pareja" (오탐 금지)', false, '**Q♠ Q♥ Q♦ 5♣ 5♠** — un trío más una pareja.'],
     ['구성 설명 — pt "uma trinca mais um par" (오탐 금지)', false, '**Q♠ Q♥ Q♦ 5♣ 5♠** — uma trinca mais um par.'],
     ['구성 설명 — id "three of a kind plus sepasang" (오탐 금지)', false, '**Q♠ Q♥ Q♦ 5♣ 5♠** — three of a kind plus sepasang.'],
+    ['구성 설명 — de "ein Drilling plus ein Paar" (오탐 금지)', false, '**Q♠ Q♥ Q♦ 5♣ 5♠** — ein Drilling plus ein Paar.'],
+    ['대문자 족보명도 잡아야 한다 — de (잡아야 함)', true, '**A♠ K♠ Q♠ J♠ 10♠** — ein Full House im Poker.'],
     ['부정문 — en "no straight or flush" (오탐 금지)', false,
       'Back to my buy-in. Board ==b:A♦ 7♣ 2♥ Q♠ 4♦==, no straight or flush out there.'],
     ['부정문 — es "sin escalera ni color" (오탐 금지)', false,
