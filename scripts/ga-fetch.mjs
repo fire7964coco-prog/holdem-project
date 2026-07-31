@@ -4,6 +4,10 @@
  * 사용법:
  *   node scripts/ga-fetch.mjs            # 최근 90일
  *   node scripts/ga-fetch.mjs --days 28  # 최근 28일
+ *   node scripts/ga-fetch.mjs --pages --days 30
+ *       ↳ GA4 UI 「트래픽 획득: 세션 기본 채널 그룹 × 페이지 경로 및 화면 클래스」와 동일.
+ *         ★Direct 채널은 봇으로 판정돼 제외한다(참여율 17%·세션 0초대) — Organic Search만 본다.
+ *         참여율 오름차순 = 위쪽이 "들어와서 바로 나가는" 페이지.
  *
  * 필요 설정 (.env.local, GSC와 같은 서비스계정 키 재사용):
  *   GA_PROPERTY_ID   = 529721248
@@ -35,6 +39,8 @@ const args = process.argv.slice(2);
 const di = args.indexOf('--days');
 const DAYS = di >= 0 && args[di + 1] ? parseInt(args[di + 1], 10) : 90;
 const START = `${DAYS}daysAgo`;
+const mi = args.indexOf('--min');
+const MIN_SES = mi >= 0 && args[mi + 1] ? parseInt(args[mi + 1], 10) : 5;
 
 const PROP = process.env.GA_PROPERTY_ID;
 if (!PROP) { console.error('✖ GA_PROPERTY_ID 미설정 (.env.local)'); process.exit(1); }
@@ -68,7 +74,61 @@ async function report(dimensions, metrics, opts = {}) {
   }));
 }
 
+/** 트래픽 획득 × 페이지 경로 및 화면 클래스 (Organic Search 한정) */
+async function pagesMode() {
+  const res = await ga.properties.runReport({
+    property: `properties/${PROP}`,
+    requestBody: {
+      dateRanges: [{ startDate: START, endDate: 'yesterday' }],
+      dimensions: [{ name: 'sessionDefaultChannelGroup' }, { name: 'unifiedPagePathScreen' }],
+      metrics: [
+        { name: 'sessions' }, { name: 'engagedSessions' }, { name: 'engagementRate' },
+        { name: 'userEngagementDuration' }, { name: 'eventCount' },
+      ],
+      orderBys: [{ metric: { metricName: 'sessions' }, desc: true }],
+      limit: 1000,
+    },
+  });
+  const rows = (res.data.rows || []).map((r) => {
+    const [chan, path] = r.dimensionValues.map((v) => v.value);
+    const [ses, engSes, rate, engDur, evt] = r.metricValues.map((v) => +v.value);
+    return { chan, path, ses, engSes, rate, perSes: ses ? engDur / ses : 0, evtPerSes: ses ? evt / ses : 0 };
+  });
+
+  console.log(`\n${'='.repeat(96)}`);
+  console.log(`GA4 ${PROP} · 최근 ${DAYS}일 · 트래픽 획득 × 페이지 경로 (총 ${rows.length}행)`);
+  console.log(`★ Direct 제외 = 봇 추정 (참여율 17%대·세션당 0초대)`);
+  console.log('='.repeat(96));
+
+  const org = rows.filter((r) => r.chan === 'Organic Search' && r.ses >= MIN_SES).sort((a, b) => a.rate - b.rate);
+  console.log(`\n── Organic Search · 세션 ${MIN_SES}+ · 참여율 오름차순 (${org.length}행) ──`);
+  console.log('참여율   세션 참여세션  세션당참여  이벤트/세션  ★손실   페이지');
+  for (const r of org) {
+    const lost = r.ses - r.engSes;   // 이탈 세션 수 = 개선 여지의 절대량
+    console.log(
+      `${(r.rate * 100).toFixed(1).padStart(5)}% ${String(r.ses).padStart(5)} ${String(r.engSes).padStart(6)} ` +
+      `${dur(r.perSes).padStart(10)} ${r.evtPerSes.toFixed(2).padStart(10)} ${String(lost).padStart(6)}   ${r.path}`
+    );
+  }
+
+  console.log(`\n── ★ 개선 여지 큰 순 (이탈 세션 절대량) top15 ──`);
+  for (const r of [...org].sort((a, b) => (b.ses - b.engSes) - (a.ses - a.engSes)).slice(0, 15)) {
+    console.log(`  이탈 ${String(r.ses - r.engSes).padStart(3)}  (${r.ses}세션 중 ${pct(r.rate)})  ${dur(r.perSes).padStart(7)}  ${r.path}`);
+  }
+
+  const chan = new Map();
+  for (const r of rows) {
+    const c = chan.get(r.chan) || { ses: 0, eng: 0 };
+    c.ses += r.ses; c.eng += r.engSes; chan.set(r.chan, c);
+  }
+  console.log(`\n── 채널 요약 (페이지 단위 합산이라 UI 세션 총계와 다름) ──`);
+  for (const [c, v] of [...chan].sort((a, b) => b[1].ses - a[1].ses)) {
+    console.log(`  ${c.padEnd(16)} ${String(v.ses).padStart(6)}  참여율 ${pct(v.eng / v.ses)}`);
+  }
+}
+
 async function main() {
+  if (args.includes('--pages')) return pagesMode();
   console.log(`\n${'='.repeat(72)}\nGA4 속성 ${PROP}  ·  최근 ${DAYS}일\n${'='.repeat(72)}`);
 
   // 1) 채널별 트래픽·참여
