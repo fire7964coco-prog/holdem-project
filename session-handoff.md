@@ -20,6 +20,61 @@
 
 전략 9편 = 필라 `:::pillarhub` 멤버 8 + 필라 1. **pillarhub와 대조해 누락 0 확인함.**
 
+**작업 트리 깨끗함.** 미완 작업 없음 — 중단된 편집이나 스테이징 잔여물 없이 끝났다.
+
+---
+
+## ▶ 다음 세션 첫 행동 (이 순서대로)
+
+### STEP 1 — 규칙 파일 정독 (건너뛰지 말 것)
+`CLAUDE.md` §13·§14-A → `.cursor/rules/posting.mdc` 전체.
+지난 세션에서 **20편 넘게 작업하며 posting.mdc를 재독하지 않아** 3중 중복을 놓친 적이 있다.
+**클러스터가 바뀔 때마다 다시 읽을 것.**
+
+### STEP 2 — 착수할 클러스터의 pillarhub부터 읽기
+필라 글의 `:::pillarhub` 블록이 멤버를 선언하고 있다. **내 판단으로 묶지 말 것.**
+과거에 이걸 무시했다가 GSC 최다 노출 글(`holdem-blind-meaning` 540노출)을 통째로 빠뜨렸다.
+
+### STEP 3 — 권장 착수 대상: **확률·수학 클러스터**
+**멤버는 이미 확인해 뒀다** — 필라 `holdem-probability`(`lib/posts.ts:6634`)의
+`:::pillarhub[홀덤 확률·수학 완전정복 로드맵]`(`lib/posts.ts:6890`)이 선언한 4편 + 필라 = **총 5편**.
+
+| # | slug | 라벨 |
+|:---:|---|---|
+| 필라 | `holdem-probability` | 확률·수학 필라 (r28.6 · 34노출 · 질문형 H2 0%) |
+| 1 | `holdem-outs-calculation` | 아웃츠 계산법 |
+| 2 | `holdem-pot-odds-calculation` | 팟오즈 계산 |
+| 3 | `holdem-implied-odds` | 임플라이드 오즈 |
+| 4 | `holdem-odds-calculator` | 확률 빠른 계산 |
+
+- 필라가 **r28.6(구글 3페이지)**, **질문형 H2 0%** → 남은 클러스터 중 개선 여지가 가장 크다
+- ⚠️ 이 4편은 **같은 공식(팟오즈·아웃츠·Rule of 2·4)을 나눠 쓴다.** 전략 클러스터에서
+  `overbet`↔`bluffing` 표가 정면 모순이었던 사고가 **여기서 재발할 확률이 가장 높다.**
+  → 착수하자마자 **4편의 공식·수치 표를 한자리에 모아 교차 대조**하고 시작할 것.
+- ⚠️ **확률 글은 §13 리스크가 가장 높은 영역이다.** 5장 기준과 7장 기준을 섞어 쓰면 즉시 사실오류가 된다
+  → 메모리 [[poker-probability-5card-vs-7card]] 먼저 확인
+
+### STEP 4 — 글 1편당 루틴 (전략 9편에서 확립된 것)
+```
+§13 검산(핸드 7장 → 베스트5 조합 → 판정 대조 / 표 산수 전 칸)
+  → 바로 답 2~4줄 + :::stripe
+  → 질문형 H2 70%+ (FAQ 문항과 축어 중복 금지)
+  → H2 직후 40~75단어 Q-A-E 직답
+     ★삽입 후 반드시 "바로 아래 원문과 같은 말인지" 확인 — 여기서 축어 중복이 반복 발생
+  → 메타(desc ~95자·seoTitle ~32자·emoji·updated)
+  → npm run build → 개별 커밋 → push
+```
+
+### STEP 5 — 클러스터 종료 시 적대적 검수 (필수, §14-A 9항)
+**Agent 툴로 4페르소나 병렬.** 렌즈를 반드시 다르게 줄 것 → 상세는 아래 §4.
+
+---
+
+### ⚡ 5분짜리 잔챙이 (착수 전에 털어도 좋음)
+- `holdem-range-meaning` seoTitle의 §17 금지어 **"총정리"** 교체
+  현재: "홀덤 레인지란? 뜻·차트·실전 활용 총정리"
+- 대회 글 10편의 `> **한 줄 답**` → `> **바로 답**` 라벨 통일
+
 ---
 
 ### 1. ✅ 종결된 안건 — 홀덤펍 "합법성" 서술은 그대로 둔다 (사장님 결정 2026-07-31)
@@ -46,7 +101,7 @@
 
 | 클러스터 | 필라 위치 | 비고 |
 |---|---|---|
-| **확률·수학** | `lib/posts.ts` 6846행 부근 | `holdem-probability`(34노출·**r28.6**·질문형 0%)·`pot-odds`·`outs`·`odds-calculator` |
+| **확률·수학** (5편) | `lib/posts.ts:6634` (pillarhub `:6890`) | `holdem-probability`(34노출·**r28.6**·질문형 0%) + outs·pot-odds·implied-odds·odds-calculator |
 | **홀덤펍** | `lib/posts/holdem-pub-guide.ts` | `pub-first-visit`(227노출·CTR 9.69%)·`pub-legal`·`pub-promotion`. 합법성 서술 유지 결정됨(§1) — 차단 없음 |
 | 스타팅 핸드·프리플랍 | `lib/posts.ts` 3540행 부근 | `holdem-starting-hand-range`(12노출·r23.8)·`when-to-fold-preflop` 등 |
 
@@ -60,7 +115,7 @@
 
 ---
 
-### 3. 2026-07-31에 한 일 (커밋 5건, 전부 배포)
+### 3. 2026-07-31에 한 일 (커밋 8건, 전부 배포 — 최신 `d5d8ef9`)
 
 **전략 잔여 4편** — `bluffing-strategy-when-and-how`(LEG·잔여분) · `holdem-value-bet-sizing` ·
 `holdem-overbet-strategy`(LEG) · `holdem-bankroll-management`
