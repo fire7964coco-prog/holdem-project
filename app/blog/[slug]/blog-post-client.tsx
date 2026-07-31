@@ -692,14 +692,6 @@ export default function BlogPost({
                 {post.title}
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed">{post.desc}</p>
-
-              <div className="flex flex-wrap gap-2 mt-5">
-                {post.tags.map(tag => (
-                  <span key={tag} className="flex items-center gap-1 text-xs px-2.5 py-1 rounded-full bg-card border border-border text-muted-foreground">
-                    <Tag className="w-3 h-3" /> {tag}
-                  </span>
-                ))}
-              </div>
             </header>
 
             {/* 한 줄 정답 — Featured Snippet 후보 */}
@@ -721,6 +713,20 @@ export default function BlogPost({
                 </p>
               </aside>
             )}
+
+            {/* 태그 칩 — 2026-08-01 헤더에서 여기로 내림.
+                왜: 모바일 첫 화면(844px)에 본문이 0줄이었다. 태그 8~10개가 4줄(약 150px)을
+                차지해 "한 줄 정답"을 화면 밖으로 밀어내고 있었다. 태그는 링크가 아니라
+                단순 표시라 SEO 값도 없고 독자가 누르지도 않는다.
+                영어(intl) 템플릿은 이미 히어로 이미지 → 태그 순서였다 — 그쪽에 맞춘 것이다.
+                근거: docs/ga4-engagement-report-2026-07-31.md §6 */}
+            <div className="flex flex-wrap gap-2 mb-8">
+              {post.tags.map(tag => (
+                <span key={tag} className="flex items-center gap-1 text-xs px-2.5 py-1 rounded-full bg-card border border-border text-muted-foreground">
+                  <Tag className="w-3 h-3" /> {tag}
+                </span>
+              ))}
+            </div>
 
             {/* 순위/목록형 글(족보 순위 등) — 최상단 예쁜 순위표 (발췌·AI 인용 최적화) */}
             {post.itemList && (
