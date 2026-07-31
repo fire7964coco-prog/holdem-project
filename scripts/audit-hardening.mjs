@@ -945,15 +945,24 @@ const SEV_ICON = { ERR: '🔴', WARN: '🟠', INFO: '🟡' };
 const report = [];
 
 for (const [cluster, slugs] of targets) {
+  // CLUSTERS 정의의 첫 원소가 그 클러스터의 필라다.
+  // --slug/--all 모드는 클러스터 맥락이 없으므로 이 검사를 건너뛴다.
+  const pillar = CLUSTERS[cluster] ? CLUSTERS[cluster][0] : null;
   for (const slug of slugs) {
     const post = bySlug.get(slug);
     if (!post) {
       report.push({ cluster, slug, src: '(없음)', findings: [{ sev: 'ERR', code: 'F0', msg: '슬러그가 존재하지 않음 — 클러스터 정의 오류' }] });
       continue;
     }
+    const extra = [];
+    // F12 — 클러스터 글은 필라를 내부링크로 연결해야 한다(§6 STEP 4 / posting.mdc 내부링크 규칙).
+    // 이게 빠지면 필라를 띄우려는 클러스터 구조 자체가 작동하지 않는다.
+    if (pillar && slug !== pillar && !(post.content ?? '').includes(`/blog/${pillar}`)) {
+      extra.push({ sev: 'WARN', code: 'F12', msg: `필라(/blog/${pillar}) 역링크 없음 — 클러스터 구조가 작동하지 않는다` });
+    }
     report.push({
       cluster, slug, src: srcMap.get(slug) ?? '?',
-      findings: [...auditPost(post, allSlugs), ...auditHandsIn(post, PE), ...auditDuplication(post)],
+      findings: [...auditPost(post, allSlugs), ...auditHandsIn(post, PE), ...auditDuplication(post), ...extra],
     });
   }
 }

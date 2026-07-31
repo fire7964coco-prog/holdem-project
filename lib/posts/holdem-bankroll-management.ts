@@ -244,7 +244,7 @@ export const POST: Post = {
 ---
 
 :::readnext[이어서 읽기]
-/blog/holdem-probability | 홀덤 확률 완전 정복 | /images/holdem-probability/holdem-probability-intro-infographic.webp
+/blog/holdem-probability | 홀덤 확률 완전 정복 | /images/holdem-probability/holdem-probability-hero.webp
 /blog/holdem-tournament-buy-in-cost | 홀덤 대회 바이인·참가비 | /images/tournament-table-action.webp
 :::
 
