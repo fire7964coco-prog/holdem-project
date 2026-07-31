@@ -5319,19 +5319,23 @@ APT 제주 클래식은 아시아 전역에서 실력 있는 플레이어들이 
   image: '/images/holdem-hand-rankings-showdown.webp',
   imageAlt: '포커 테이블 위 커뮤니티 카드 다섯 장과 양쪽 플레이어의 홀카드가 공개된 쇼다운 장면',
   tags: ["홀덤족보", "홀덤 족보 순위", "포커 족보", "홀덤 패 순위", "포커 핸드 순위", "홀덤 핸드 랭킹", "로열플러시", "풀하우스", "포커 족보 순서", "홀덤 족보 종류"],
+  // ★확률은 7장(홀덤 실제) 기준이다. 5장(교과서) 기준을 쓰면 이 글의 제목
+  // "투페어가 하이카드보다 흔합니다"를 표가 정면으로 반박한다(5장 기준 하이카드 50.1%).
+  // 이 itemList는 최상단 RankingTable + JSON-LD ItemList로 나가 AI·구글이 그대로 인용하는
+  // 자리라 본문 §7장 기준 표와 반드시 같은 값이어야 한다. 2026-08-01 재계산·정정.
   itemList: {
-    name: "홀덤 족보 순위 (텍사스 홀덤, 강→약 10단계)",
+    name: "홀덤 족보 순위 (텍사스 홀덤 7장 기준, 강→약 10단계)",
     items: [
-      { name: "로열 플러시", description: "A K Q J 10 동일 무늬 · Royal Flush · 0.000154%" },
-      { name: "스트레이트 플러시", description: "연속 5장 동일 무늬 · Straight Flush · 0.00139%" },
-      { name: "포카드", description: "같은 숫자 4장 · Four of a Kind · 0.024%" },
-      { name: "풀하우스", description: "트리플 + 원페어 · Full House · 0.144%" },
-      { name: "플러시", description: "같은 무늬 5장 · Flush · 0.197%" },
-      { name: "스트레이트", description: "연속 숫자 5장 · Straight · 0.392%" },
-      { name: "트리플", description: "같은 숫자 3장 · Three of a Kind · 2.11%" },
-      { name: "투페어", description: "다른 페어 2쌍 · Two Pair · 4.75%" },
-      { name: "원페어", description: "같은 숫자 2장 · One Pair · 42.3%" },
-      { name: "하이카드", description: "조합 없음 · High Card · 50.1%" },
+      { name: "로열 플러시", description: "A K Q J 10 동일 무늬 · Royal Flush · 0.0032%" },
+      { name: "스트레이트 플러시", description: "연속 5장 동일 무늬 · Straight Flush · 0.0279%" },
+      { name: "포카드", description: "같은 숫자 4장 · Four of a Kind · 0.168%" },
+      { name: "풀하우스", description: "트리플 + 원페어 · Full House · 2.60%" },
+      { name: "플러시", description: "같은 무늬 5장 · Flush · 3.03%" },
+      { name: "스트레이트", description: "연속 숫자 5장 · Straight · 4.62%" },
+      { name: "트리플", description: "같은 숫자 3장 · Three of a Kind · 4.83%" },
+      { name: "투페어", description: "다른 페어 2쌍 · Two Pair · 23.5%" },
+      { name: "원페어", description: "같은 숫자 2장 · One Pair · 43.8%" },
+      { name: "하이카드", description: "조합 없음 · High Card · 17.4%" },
     ],
   },
   content: `
