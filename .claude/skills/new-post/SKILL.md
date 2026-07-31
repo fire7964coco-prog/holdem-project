@@ -50,14 +50,26 @@ export default post;
 - 가장 연관된 글은 인라인 미니썸네일 + FAQ앞 `:::readnext` 카드([[internal-link-thumbnail-readnext]])
 - 링크 끝 `/` 금지(trailingSlash:false → 301)
 
-## Step 5 — 빌드 & 배포
+## Step 5 — ★검수 (발행 전 필수, 스킵 금지)
+
+**`REVIEW-PROTOCOL.md`(레포 루트) 전체를 Read 하고 3층 게이트를 그대로 적용한다.**
+새로 쓴 글이라고 예외가 아니다 — 오히려 갓 쓴 글이 §13 오류가 가장 많다.
+
+```
+npm run audit:hard -- --slug=<slug>              # 🔴 0건까지
+npm run audit:hard -- --uncovered --slug=<slug>  # 기계가 못 본 카드 문단 → 직접 검산
+```
+그다음 **적대적 렌즈**(D유형 유해 조언·F유형 사실)를 Agent로 돌린다.
+게이트가 초록이어도 이건 별도다 — 상세는 REVIEW-PROTOCOL.md 3층.
+
+## Step 6 — 빌드 & 배포
 
 ```
 npm run build       # 성공 + sitemap의 "N blog posts" 확인
 git add . && git commit -F commit-msg.txt && git push
 ```
 
-## Step 6 — 기록
+## Step 7 — 기록
 
 - `WORKLOG.md` 최상단에 날짜·작업·**post 총 수**
 - `session-handoff.md` 갱신
