@@ -169,8 +169,13 @@ npm run gsc:page -- blog/<slug> --days 90   # 그 페이지가 잡히는 검색�
    `browser_run_code_unsafe` + CDP(`Emulation.setCPUThrottlingRate`, `Network.emulateNetworkConditions`).
    **PSI는 무료 쿼터가 소진**돼 있다(429) → `PSI_API_KEY` 발급 필요.
 6. **테스트 폭은 384×832로.** GA4 최다 해상도이자 참여율 최저 구간이다(390×844는 좋은 축이라 착시).
-7. **폰트는 `preload: false`다 — 되돌리지 말 것.** `display:"swap"`이라 첫 페인트에 필요 없는데
-   preload가 196ms에 대역폭을 선점해 CSS를 971ms까지 늦추고 있었다. 끄자 LCP가 절반이 됐다.
+7. **폰트는 `preload: false` + `display:"optional"`이다 — 둘 다 되돌리지 말 것.**
+   preload는 196ms에 대역폭을 선점해 CSS를 971ms까지 늦추고 있었다 → 끄자 LCP가 절반(2026-08-01).
+   display는 `swap`일 때 **CLS 0.227**이 나왔다 → `optional`로 바꿔 **0**이 됐다(2026-08-02, 라이브 확인).
+   swap은 늦게 온 폰트로 갈아끼우며 글자를 다시 흐르게 한다(설명 117→88px·태그 50→94px).
+   optional은 늦으면 그 페이지에서 시스템 폰트를 유지하고, 캐시엔 담아 **다음 페이지부터 웹폰트 적용**.
+   ⚠ 배포 확인은 **"swap이 사라졌나"**로 하라 — Lora는 원래부터 optional이라
+   "optional이 있나"로 보면 옛 배포도 참이 된다(2026-08-02에 실제로 헛짚음).
 8. **`allPostsMeta`는 8개 필드만 넘긴다.** 필드를 늘리면 57편치가 곱해져 HTML 플라이트가 커진다.
    추가할 땐 `app/blog/[slug]/page.tsx`의 소비처 목록 주석도 같이 갱신할 것.
 
