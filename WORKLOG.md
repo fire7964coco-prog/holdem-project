@@ -40,11 +40,19 @@
 "포커 족보" 40.1위 / "포커 족보 순위" 31.8위인데 클러스터 5편 중 이 쿼리를 노리는 글이 없었다(카니발 없음).
 seoTitle·H2·tldr·정리·FAQ에 병기. 첫 화면에 `:::stripe` + **점프 링크 7개**(랜딩 참여율 0%·체류 3초 대응).
 
-### 5. 남은 것 — 다국어 17편이 같은 잘못된 캡션을 쓰고 있다
+### 5. ✅ 같은 오류가 13개 언어에 동시에 있었다 — 함께 처리 (`ada628c`)
 
 `holdem-hand-rankings-showdown.webp`를 EN("comparing two players' best five-card hands")·
-JA("ベスト5枚を比べる場面") 등 **전 언어가 같은 설명으로** 쓴다. 새 이미지는 글자가 없어 **경로만 갈아끼우면
-각 언어 캡션이 참이 된다.** 이번엔 KO만 처리했다.
+JA("ベスト5枚を比べる場面") 등 **13개 언어가 같은 설명으로** 쓰고 있었다(ar de en es hi id ja ms pt tr vi zh zh-hant).
+그리고 **13편 전부 섹션 주제가 "키커·타이"**였다.
+
+→ 쇼다운 일반 그림 대신 **키커 그림의 언어중립판**(`holdem-kicker-showdown-neutral.webp`)을 새로 만들어 넣었다.
+보드 A♣7♦3♠9♥2♦ / A♠K♠ vs A♥J♥ → 셋째 카드 K > J. **글자는 "VS"뿐이라 RTL 포함 전 언어 공용.**
+
+⚠ **`updated`·`masterUpdated`는 의도적으로 안 건드렸다.** `check-translation-staleness`는
+`rev = masterUpdated || updated || date`로 판정한다 — 여기서 날짜를 올리면 **ar·hi·id·ms·pt·tr·vi 7개 언어의
+진짜 스테일 신호(EN 07-19 > 번역 06-09)가 지워지고**, EN만 올리면 es·ja·zh가 거짓 스테일이 된다.
+masterUpdated를 지어내지 않기로 하고 교체 전후 **스테일 후보 216건 동일**을 확인했다.
 
 ---
 
