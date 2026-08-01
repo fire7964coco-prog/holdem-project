@@ -646,7 +646,10 @@ export default function BlogPost({
     <div className="min-h-screen">
       <ReadingProgressBar targetRef={contentRef} />
       <BlogTopBar homeHref="/" communityLabel="커뮤니티" />
-      <div className="max-w-[1440px] mx-auto px-4 py-10">
+      {/* 모바일 좌우 여백: px-4(16px) + article p-4(16px) = 한쪽 32px가 겹쳐 있었다.
+          384px 화면에서 본문 폭이 318px까지 좁아져 한 줄 21자에 그쳤다(2026-08-01 실측).
+          바깥을 px-2로 낮춰 본문 폭을 되찾는다. sm 이상은 기존 그대로. */}
+      <div className="max-w-[1440px] mx-auto px-2 sm:px-4 py-10">
         <div className={gridClass}>
 
           {/* 데스크탑 사이드바 TOC — xl 이상에서만 표시 */}
@@ -744,7 +747,10 @@ export default function BlogPost({
                 top-14 = BlogTopBar(56px) 바로 아래, z-40 = 상단바(z-50)/하단 다음글 바(z-50)보다 아래 */}
             <div
               ref={stickyToolsRef}
-              className="xl:hidden sticky top-14 z-40 -mx-4 mb-6 px-4 pt-2 pb-2 bg-background/95 backdrop-blur-sm border-b border-border/70 shadow-[0_8px_18px_-14px_rgba(0,0,0,0.3)]"
+              /* 이 바는 article 안이 아니라 div.min-w-0 의 자식이다 — 상쇄 대상은
+                 article 패딩이 아니라 **바깥 컨테이너(max-w-[1440px] px-2 sm:px-4)** 다.
+                 음수 마진이 그 패딩과 정확히 같지 않으면 가로 스크롤이 생긴다. (2026-08-01) */
+              className="xl:hidden sticky top-14 z-40 -mx-2 px-2 sm:-mx-4 sm:px-4 mb-6 pt-2 pb-2 bg-background/95 backdrop-blur-sm border-b border-border/70 shadow-[0_8px_18px_-14px_rgba(0,0,0,0.3)]"
             >
               {/* 행1 — 계산기 CTA (슬림: mb·py 축소, .calc-pulse 깜빡임은 그대로) */}
               <div className="[&>a]:mb-0 [&>a]:py-2">
@@ -817,7 +823,7 @@ export default function BlogPost({
             {/* Article Body */}
             <article
               ref={contentRef}
-              className="prose-holdem blog-prose bg-card border border-border rounded-2xl p-4 sm:p-6 md:p-10"
+              className="prose-holdem blog-prose bg-card border border-border rounded-2xl px-3 py-4 sm:p-6 md:p-10"
             >
               {post.content.includes(':::quiz:::')
                 ? (() => {

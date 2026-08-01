@@ -133,10 +133,15 @@
   }
 }
 
-/* ── 블로그 본문 타이포그래피 (Inter 우선 — Threads 스타일, 한글은 Noto Sans KR 폴백) ── */
+/* ── 블로그 본문 타이포그래피 (Inter 우선 — Threads 스타일, 한글은 Noto Sans KR 폴백) ──
+   모바일 본문 0.95rem(15.2px) → 1rem(16px), 2026-08-01.
+   왜: 384x832 실측에서 본문 가중평균이 14.6px였다(15px 53% + 14px 18% + 12px 4%).
+   모바일 한글 본문 권장은 16px다. 좌우 여백도 같이 줄였기 때문에(px-4 이중 중첩 해소)
+   한 줄 글자 수는 21자대를 유지한다 — 폰트만 키우면 20자 밑으로 떨어져 오히려 나빠진다.
+   근거: docs/ga4-engagement-report-2026-07-31.md */
 .blog-prose {
   font-family: var(--font-inter), var(--font-noto-sans-kr), var(--font-sans);
-  font-size: 0.95rem;
+  font-size: 1rem;
   line-height: 1.85;
   letter-spacing: -0.01em;
   word-break: keep-all;            /* 한국어 어절 단위 줄바꿈 (단어 중간에서 안 끊김) */
@@ -154,7 +159,7 @@
   }
 }
 .blog-prose p {
-  font-size: 0.95rem;
+  font-size: 1rem;      /* 모바일 16px — 위 .blog-prose 주석 참조 */
   line-height: 1.85;
   margin-bottom: 1.2em;
   text-wrap: pretty;
@@ -168,7 +173,7 @@
   }
 }
 .blog-prose li {
-  font-size: 0.95rem; /* 모바일 14.9px→15.2px — 본문 문단(p)과 동일 크기로 통일 (가독성) */
+  font-size: 1rem;    /* 모바일 16px — 본문 문단(p)과 동일 크기로 통일 (가독성) */
   line-height: 1.75;
   margin-bottom: 0.35em; /* 항목 간 호흡 — 줄바꿈된 리스트가 답답하지 않게 */
   text-wrap: pretty;
