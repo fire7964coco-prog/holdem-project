@@ -36,6 +36,17 @@ https://www.holdemmaster.com/blog/holdem-probability
 https://www.holdemmaster.com/blog/holdem-odds-calculator
 ```
 
+**★그리고 성격이 다른 요청 3건 — noindex 재크롤 트리거 (빠뜨리기 쉬움)**
+```
+https://www.holdemmaster.com/hands
+https://www.holdemmaster.com/hand-chart
+https://www.holdemmaster.com/en/hand-chart
+```
+코드상 noindex는 5개인데 **GSC는 3개만 인식**한다 = 나머지는 재크롤이 안 돼 미반영.
+사이트맵에서 빼놨기 때문에 자연 재크롤이 안 온다(WORKLOG 1848행의 그 역설).
+색인 요청이 **거부(noindex 감지)되는 것이 정상이고 그게 de-index의 시작**이다.
+⚠ `/hands`는 지금도 "홀덤 족보" **16.4위**로 필라(29.4위)를 누르고 있다.
+
 **이미 완료한 것** — 색인 안 된 9편(`holdem-strategy`·`buy-in-cost`·`overbet-strategy`·
 `raise-how-much`·`value-bet-sizing`·`bankroll-management`·`community-event-guide`·
 `pub-promotion`·`ggpoker-wsop-express`) + 오늘 크게 고친 3편(`hand-rankings`·`icm-poker-meaning`·`flush-vs-straight`).
