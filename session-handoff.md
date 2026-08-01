@@ -72,6 +72,19 @@ npm run ga -- --pages --days 90 --min 10
 8. **`allPostsMeta`는 8개 필드만 넘긴다.** 필드를 늘리면 57편치가 곱해져 HTML 플라이트가 커진다.
    추가할 땐 `app/blog/[slug]/page.tsx`의 소비처 목록 주석도 같이 갱신할 것.
 
+### ▶ 2-A-2. 이미지·Vercel 관련 주의 (2026-08-01 추가)
+
+9. **본문 이미지는 `/_next/image`를 탄다.** 렌더러의 `fullWidthImg()` / `optSrc()`가 만든다.
+   생 `<img src="/images/...">`로 되돌리면 **1200px 원본을 342px 자리에 보내는 상태로 회귀**한다.
+10. **★히어로 preload와 렌더러는 반드시 같은 src/srcset/sizes를 써야 한다.**
+    (`app/blog/[slug]/page.tsx`의 `optUrl` ↔ `blog-post-client.tsx`의 `fullWidthImg`)
+    어긋나면 **최적화본과 원본을 둘 다 받는다** — 화면상 티가 안 나서 놓치기 쉽다.
+11. **`w` 값은 `deviceSizes ∪ imageSizes` 안에서만.** 그 외는 이미지 API가 400을 준다.
+    현재: 16·32·64·96·128·256·384 / 360·480·640·750·828·1080·1200·1920
+12. **Vercel Speed Insights 동작 확인이 미완이다.** 엔드포인트는 200, 컴포넌트도 초기화되는데
+    자동화 브라우저에선 수집 스크립트가 안 붙었다. **대시보드에 실데이터가 쌓이는지 먼저 볼 것.**
+    안 쌓이면 `@vercel/analytics`·`@vercel/speed-insights` 버전/통합 설정부터 의심.
+
 ### ▶ 2-B. 현재 성능 기준선 (2026-08-01 라이브 실측 · 384×832 · 캐시 없음)
 
 | 조건 | LCP | 판정 |
