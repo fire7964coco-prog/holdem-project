@@ -14,6 +14,7 @@ export const POST: Post = {
   emoji: "🧾",
   image: "/images/tournament-trophy.webp",
   imageAlt: "카지노 테이블 위에 놓인 금색 우승 브레이슬릿과 칩, 그리고 A·K 카드",
+  keepImagesInBody: true,
   tags: [
     "홀덤 대회 세금",
     "포커 상금 세금",

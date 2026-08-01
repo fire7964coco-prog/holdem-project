@@ -1295,6 +1295,7 @@ slug: "holdem-odds-calculator",
  emoji: "🎯",
  image: '/images/rule-of-4-and-2-flop-turn.webp',
  imageAlt: '플랍에서는 아웃츠에 4를, 턴에서는 2를 곱해 승률을 어림하는 계산법을 카드와 함께 보여주는 그림',
+ keepImagesInBody: true,
  tags: ["포커 확률 계산기", "홀덤 확률 계산기", "포커 계산기 앱", "확률 암산", "홀덤 복기"],
  content: `
 ## 확률을 모르면 왜 평생 돈을 잃을까?
@@ -1870,6 +1871,7 @@ slug: "holdem-game-order",
  emoji: "🔄",
  image: '/images/blog-holdem-game-flow.webp',
  imageAlt: '블라인드부터 프리플랍·플랍·턴·리버·쇼다운까지 홀덤 한 판의 진행 단계를 순서대로 나열한 흐름도',
+ keepImagesInBody: true,
  tags: ["홀덤 게임 진행 순서", "텍사스 홀덤 흐름", "프리플랍 플랍 턴 리버", "홀덤 입문", "홀덤 기초", "포커 초보", "온라인홀덤 방법"],
  content: `
 홀덤 게임을 처음 접하면 누구나 이 질문을 합니다. "도대체 순서가 어떻게 되는 거야?" 카드를 받는다는 건 알겠는데, 언제 돈을 걸고, 카드는 언제 더 나오고, 최종 승부는 어떻게 가리는지 — 한 번에 잡히지 않는 게 당연합니다.
@@ -2260,6 +2262,7 @@ A. 안전하고 신뢰할 수 있는 플랫폼을 선택하는 것이 중요합�
  emoji: "🎭",
  image: '/images/tournament-table-action.webp',
  imageAlt: '토너먼트 클록이 켜진 홀덤 테이블 위 칩 더미와 딜러 버튼, 그 앞에 놓인 A·K 홀카드',
+ keepImagesInBody: true,
  tags: ["블러핑", "홀덤 전략", "심리전", "포커 기술"],
  content: `
 ## 블러핑이 통하지 않는 진짜 이유
@@ -2659,6 +2662,7 @@ A. 블러핑이 들켰다는 것이 확인됐다면(상대가 콜 또는 레이�
  emoji: "🎯",
  image: '/images/rules-texas-holdem.webp',
  imageAlt: '초록 홀덤 테이블에 커뮤니티 카드가 부채꼴로 펼쳐지고 가운데 칩이 쌓인 앞에 잭 페어 홀카드가 놓인 장면',
+ keepImagesInBody: true,
  tags: ["포지션", "홀덤 전략", "텍사스 홀덤", "포커 전술"],
  content: `
 ## 왜 포지션이 핸드보다 중요한가요?
@@ -2952,6 +2956,7 @@ A. BB 수비 범위는 **팟 오즈**를 기반으로 결정합니다. 상대가
  emoji: " ",
  image: "/images/wsop-2025-tournament-guide-hero.webp",
  imageAlt: "WSOP 2025 메인 이벤트 트로피와 포커 칩이 놓인 그린 펠트 테이블",
+ keepImagesInBody: true,
  tags: ["WSOP 2025 결과", "WSOP 우승자", "WSOP", "포커 토너먼트", "WSOP 한국인 참가", "세계 대회"],
  content: `
 <div style="background:rgba(212,175,55,0.12);border:1px solid rgba(212,175,55,0.4);border-radius:12px;padding:14px 20px;margin:0 0 28px">
@@ -3206,6 +3211,7 @@ WSOP는 단순한 포커 대회가 아닙니다. 전 세계 최고 선수들과 
  emoji: " ",
  image: '/images/blog-fold-weak-hand.webp',
  imageAlt: '포커 테이블 위에 던져진 7과 2 오프수트 카드 — 프리플랍에서 접어야 할 약한 핸드',
+ keepImagesInBody: true,
  tags: ["홀덤 폴드 기준", "프리플랍 폴드", "홀덤 초보 폴드", "언제 폴드해야 하나", "홀덤 핸드 선택", "프리플랍 전략", "홀덤 입문"],
  content: `
 포커에서 가장 많이 사용하는 행동이 무엇인지 아시나요? 벳도 아니고, 레이즈도 아닙니다. 바로 **폴드**입니다.
@@ -3482,6 +3488,7 @@ A. 처음엔 외우는 것이 도움이 됩니다. 하지만 궁극적으로는 
  emoji: " ",
  image: '/images/blog-starting-hand-grid.webp',
  imageAlt: '스타팅 핸드별 플레이·폴드 빈도를 색상 셀과 손 아이콘으로 정리한 홀덤 시작 패 레인지 표',
+ keepImagesInBody: true,
  tags: ["홀덤 스타팅 핸드", "홀덤 핸드 레인지", "텍사스 홀덤 시작 패", "프리플랍 전략", "홀덤 포지션별 핸드", "포커 핸드 등급"],
  content: `
 ## 스타팅 핸드를 모르면 프리플랍에서 이미 지고 시작합니다
@@ -3786,6 +3793,7 @@ A. 네! [홀덤마스터 스타팅 핸드 계산기](/calculator)를 활용하�
  emoji: "🎲",
  image: '/images/blog-outs-straight-draw-comparison.webp',
  imageAlt: '오픈엔드 스트레이트 드로우는 아웃 8장, 거트샷 스트레이트 드로우는 아웃 4장임을 카드와 화살표로 비교한 그림',
+ keepImagesInBody: true,
  tags: ["홀덤 아웃츠", "아웃츠 계산법", "Rule of 2 and 4", "포커 확률", "플러시 드로우 확률", "스트레이트 드로우 아웃츠"],
  content: `
 강남 홀덤펍에서 이런 상황을 겪은 적 있을 겁니다. 플랍에서 플러시 드로우를 잡았고, 상대가 콜하기 애매한 금액을 베팅합니다. "이 패, 들어가야 하나, 말아야 하나?" 결국 감으로 콜했다가 히트 못하고 칩을 잃습니다. 반대로 너무 보수적으로 폴드했는데 나중에 보니 히트됐을 상황이었습니다.
@@ -4132,6 +4140,7 @@ A. 오마하처럼 홀 카드가 4장인 게임은 드로우 조합이 달라서
  emoji: "💥",
  image: '/images/overbet-hero-summary.webp',
  imageAlt: '녹색 펠트 위 팟보다 훨씬 높게 쌓인 칩 더미를 앞으로 밀어 넣는 오버벳 순간',
+ keepImagesInBody: true,
  tags: ["홀덤 오버벳", "오버벳 전략", "팟 초과 베팅", "오버벳 밸류", "블러프 오버벳", "홀덤 전략"],
  content: `
 ## 상대가 팟보다 큰 베팅을 하면 왜 그렇게 어려울까요?
@@ -4404,6 +4413,7 @@ A. 세 숫자만 외워두세요. 팟의 **100%면 33.3%**, **150%면 37.5%**, *
  emoji: "🩹",
  image: '/images/beginner-mistakes-hero.webp',
  imageAlt: '홀덤 초보 실수 10가지 — 루즈콜·포지션 무시·틸트 교정법',
+ keepImagesInBody: true,
  tags: ["홀덤 초보 실수", "홀덤 초보 가이드", "홀덤 루즈 콜", "홀덤 포지션", "홀덤 틸트", "홀덤 팟오즈", "홀덤펍 실수", "홀덤 초보 탈출"],
  content: `
 ## 홀덤, 열심히 배우는데 왜 항상 돈을 잃을까요?
@@ -4903,6 +4913,7 @@ A. **100판 단위 기록 분석**이 가장 정확합니다.
  emoji: "🏆",
  image: "/images/apt-jeju-classic-2026-guide-hero.webp",
  imageAlt: "APT 제주 2026 포커 테이블 위 칩과 카드, 배경에 야경이 보이는 리조트",
+ keepImagesInBody: true,
  tags: ["APT 제주 클래식", "APT 제주", "아시아 포커 투어", "홀덤 대회", "포커 토너먼트", "LES A 카지노", "제주 포커"],
   content: `
 ## APT 제주 클래식 2026은 어떤 대회였나요? — 한국 최대 기록
@@ -5318,6 +5329,7 @@ APT 제주 클래식은 아시아 전역에서 실력 있는 플레이어들이 
   emoji: "🃏",
   image: '/images/holdem-hand-rankings-showdown.webp',
   imageAlt: '포커 테이블 위 커뮤니티 카드 다섯 장과 양쪽 플레이어의 홀카드가 공개된 쇼다운 장면',
+  keepImagesInBody: true,
   tags: ["홀덤족보", "홀덤 족보 순위", "포커 족보", "홀덤 패 순위", "포커 핸드 순위", "홀덤 핸드 랭킹", "로열플러시", "풀하우스", "포커 족보 순서", "홀덤 족보 종류"],
   // ★확률은 7장(홀덤 실제) 기준이다. 5장(교과서) 기준을 쓰면 이 글의 제목
   // "투페어가 하이카드보다 흔합니다"를 표가 정면으로 반박한다(5장 기준 하이카드 50.1%).
@@ -6076,6 +6088,7 @@ A. 족보 → 높은 카드 순서대로 비교하는 게 가장 빠릅니다. �
  emoji: "⚡",
  image: "/images/holdem-flush-vs-straight-hero.webp",
  imageAlt: "스페이드 A-J-9-6-2 플러시와 9 하이 스트레이트를 나란히 놓고 플러시가 이긴다고 표시한 비교 이미지",
+ keepImagesInBody: true,
  tags: ["플러시 스트레이트 차이", "홀덤 족보 순서", "플러시가 스트레이트보다 높은 이유", "홀덤 족보 확률", "플러시 타이브레이크", "스트레이트 타이브레이크"],
  content: `
 ![홀덤 플러시 vs 스트레이트 완전 정리 인포그래픽 — 직관 vs 수학 비교·확률 2배 차이·타이브레이크 규칙 핵심 요약](/images/flush-vs-straight-intro-infographic.webp "홀덤 플러시 vs 스트레이트 — 출현 확률 비교와 타이브레이크 결정법 한눈에 보기")
@@ -6412,6 +6425,7 @@ A. [홀덤 족보 순위 10가지 — 로열 플러시부터 하이카드까지]
   emoji: "🧮",
   image: '/images/pot-odds-formula-card.webp',
   imageAlt: '팟오즈 정의와 콜 금액을 팟과 콜 합으로 나누는 공식, 콜·폴드 판단 기준을 정리한 요약 카드',
+  keepImagesInBody: true,
   tags: ["팟오즈 계산", "홀덤 팟오즈", "콜 vs 폴드", "팟오즈 공식", "홀덤 수학", "브레이크이븐"],
   content: `
 ![홀덤 팟오즈 완전 정복 인포그래픽 — 팟오즈 공식·콜 vs 폴드 수학 판단·실전 Q&A 한눈에 정리](/images/pot-odds-infographic.webp "홀덤 팟오즈(Pot Odds) 완전 정복 필기 노트 — 콜 금액 나누기 팟 공식, 콜 vs 폴드 수학 기준, 드로우 실전 Q&A")
@@ -6731,6 +6745,7 @@ A. 생각보다 큽니다. 풀팟 베팅(팟오즈 33%)에 승률 20%짜리 핸�
   emoji: "📊",
   image: '/images/holdem-probability/holdem-probability-hero.webp',
   imageAlt: '홀덤 확률의 세 축인 스타팅 핸드 확률·아웃츠 계산·팟오즈를 정리하고 매 결정의 수학적 근거를 요약한 인트로 카드',
+  keepImagesInBody: true,
   tags: ["홀덤 확률", "포커 확률", "홀덤 수학", "아웃츠", "팟오즈", "확률 계산"],
   content: `홀덤을 오래 해도 실력이 늘지 않는다고 느끼는 분들이 있습니다. 경험은 쌓였는데 잃는 패턴이 반복된다면, 원인은 대부분 하나입니다. 홀덤 확률을 모른 채 느낌에만 의존하고 있는 것입니다.
 
@@ -7186,6 +7201,7 @@ A. 생각보다 큽니다. 풀팟 베팅(팟오즈 33%)에 승률 20%짜리 핸�
   emoji: "♠️",
   image: '/images/holdem-3bet-defense.webp',
   imageAlt: '3벳을 당했을 때 폴드·콜·4벳 세 가지 대응을 각각의 조건과 함께 비교해 정리한 표',
+  keepImagesInBody: true,
   tags: ["3벳이란", "밸류 3벳", "블러프 3벳", "스퀴즈 3벳", "3벳 타이밍", "포커 3벳"],
   content: `
 ## 3벳, 왜 당하는 쪽만 손해를 볼까요?
