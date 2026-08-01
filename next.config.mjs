@@ -28,7 +28,15 @@ const nextConfig = {
         destination: "/",
         permanent: true,
       },
+      // ★ 아래 3개는 반드시 catch-all보다 먼저 온다.
+      // 커뮤니티 탭(feed·chat·event)은 독립 라우트가 아니라 홈(/)의 탭이다.
+      // 접두어만 떼면 /feed·/chat·/event로 가는데 그런 라우트가 없어 **리디렉션이 404로 떨어졌다**
+      // (2026-08-01 GSC "리디렉션 오류"로 발견). 홈의 해당 탭으로 보낸다.
+      { source: "/community/feed", destination: "/", permanent: true },
+      { source: "/community/chat", destination: "/?tab=chat", permanent: true },
+      { source: "/community/event", destination: "/?tab=event", permanent: true },
       {
+        // 나머지(/community/blog/*·/tournaments·/ranking·/login…)는 접두어만 떼면 실제 라우트가 있다
         source: "/community/:path*",
         destination: "/:path*",
         permanent: true,
