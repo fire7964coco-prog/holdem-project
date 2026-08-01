@@ -17,3 +17,4 @@ docs/gsc-tracking/data/
 .claude/settings.local.json
 .playwright-mcp/
 .html-baseline.json
+.html-baseline-dom.json

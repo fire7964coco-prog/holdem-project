@@ -9,7 +9,6 @@ import { useState, useRef, useEffect, useCallback } from "react";
 import type { Post } from "@/lib/posts";
 import { SITE } from "@/lib/site";
 import { POST_LABELS, NAV_CTA, NAV_HOME_FEED, dirForLocale, type SecondaryLocale } from "@/lib/intl";
-import { renderMarkdown, extractHeadings } from "@/app/blog/[slug]/blog-post-client";
 import { clusterForSlug, EN_CLUSTERS, JA_CLUSTERS, ES_CLUSTERS, PT_CLUSTERS, DE_CLUSTERS, ZH_CLUSTERS, ZH_HANT_CLUSTERS, ID_CLUSTERS, type PillarCluster } from "@/lib/pillar-clusters";
 import ClusterMinimap from "@/components/cluster-minimap";
 import CommunityCTA from "@/components/community-cta";
@@ -67,29 +66,42 @@ function IntlTocList({
   );
 }
 
+/**
+ * 관련글·이전/다음에 **실제로 쓰는 필드만**. (2026-08-02)
+ * 전에는 Omit<Post,"content">라 로케일당 40여 편의 tldr·desc·tags·seoTitle까지 직렬화돼
+ * de/blog/holdem-hand-rankings.html의 플라이트가 109.8KB(KO는 79.8KB)였다.
+ * 게다가 40여 편을 다 보내놓고 화면에 나오는 건 5편뿐이었다 → 선별도 서버로 옮겼다.
+ */
+type NavLink = Pick<Post, "slug" | "title">;
+type RelatedCard = Pick<Post, "slug" | "title" | "emoji">;
+
 export default function IntlBlogPostClient({
   post,
   locale,
+  headings,
+  bodyHtml,
   summarySlot,
-  allPosts,
+  prevPost,
+  nextPost,
+  related,
 }: {
-  post: Post;
+  /** ★ content 없음 — 본문은 서버에서 렌더돼 bodyHtml로 온다. */
+  post: Omit<Post, "content">;
   locale: SecondaryLocale;
+  /** 목차 — 서버에서 계산해 전달. */
+  headings: { id: string; text: string; level: number }[];
+  /** 서버에서 렌더된 본문 HTML. */
+  bodyHtml: string;
   summarySlot?: ReactNode;
-  /** 관련글·이전/다음 계산용 메타(본문 content 제외). 서버에서 전달 — 클라이언트가 전 로케일 본문을 번들하지 않게. */
-  allPosts: Omit<Post, "content">[];
+  /** 이전/다음 글 — 로케일 피드 순서대로 **서버에서** 고른 것. */
+  prevPost: NavLink | null;
+  nextPost: NavLink | null;
+  /** 관련글 3개 — 서버에서 선별. */
+  related: RelatedCard[];
 }) {
   const t = POST_LABELS[locale];
   const dir = dirForLocale(locale);
-  const posts = allPosts;
   const base = `/${locale}/blog`;
-
-  // 이전/다음 글: 다국어 /[locale]/blog 피드는 postsForLocale 배열 순서 그대로 노출되므로
-  // 그 순서를 따라 "이전 글 = 피드에서 바로 위 / 다음 글 = 피드에서 바로 아래"가 되게 한다.
-  const currentIndex = posts.findIndex((p) => p.slug === post.slug);
-  const prevPost = currentIndex > 0 ? posts[currentIndex - 1] : null;
-  const nextPost = currentIndex >= 0 && currentIndex < posts.length - 1 ? posts[currentIndex + 1] : null;
-  const related = posts.filter((p) => p.slug !== post.slug).slice(0, 3);
 
   const [copied, setCopied] = useState(false);
   const contentRef = useRef<HTMLDivElement>(null);
@@ -129,7 +141,6 @@ export default function IntlBlogPostClient({
     });
   }
 
-  const headings = extractHeadings(post.content);
   const hasToc = headings.length >= 2;
   // 클러스터 미니맵: 전 필라를 완역한 로케일만(en·ja·es·pt·de·zh·zh-hant·id). 라벨은 로케일별 클러스터, UI라벨은 EN 유지.
   const localeClusters: PillarCluster[] | null =
@@ -144,9 +155,6 @@ export default function IntlBlogPostClient({
         : showMinimap
           ? "xl:grid xl:grid-cols-[1fr_250px] xl:gap-10"
           : "";
-  const bodyHtml = `<p class="text-muted-foreground text-base leading-relaxed mb-4">${renderMarkdown(
-    post.content.replace(/^:::quiz:::$/m, ""),
-  )}</p>`;
 
   return (
     <div dir={dir} lang={locale}>
@@ -316,7 +324,12 @@ export default function IntlBlogPostClient({
             )}
 
             <article ref={contentRef} className="prose-holdem blog-prose bg-card border border-border rounded-2xl p-4 sm:p-6 md:p-10">
-              <div className="text-muted-foreground leading-relaxed" dangerouslySetInnerHTML={{ __html: bodyHtml }} />
+              <div
+                className="text-muted-foreground leading-relaxed"
+                dangerouslySetInnerHTML={{
+                  __html: `<p class="text-muted-foreground text-base leading-relaxed mb-4">${bodyHtml}</p>`,
+                }}
+              />
             </article>
 
             <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-4">

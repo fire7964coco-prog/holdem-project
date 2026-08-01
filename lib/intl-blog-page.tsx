@@ -6,6 +6,8 @@ import { SITE } from "@/lib/site";
 import { CHROME, OG_LOCALE, HTML_LANG, type SecondaryLocale } from "@/lib/intl";
 import { getPostByLocale, secondaryLocalesForSlug, postsForLocale } from "@/lib/intl-posts";
 import IntlBlogPostClient from "@/components/intl-blog-post-client";
+import { extractHeadings } from "@/lib/blog-headings";
+import { renderMarkdown } from "@/lib/render-markdown";
 
 /** 해당 슬러그의 모든 언어 대체 링크 (ko + 번역된 보조 언어 + x-default) */
 function hreflangLanguages(slug: string): Record<string, string> {
@@ -120,8 +122,28 @@ export function IntlBlogArticle({ locale, slug }: { locale: SecondaryLocale; slu
 
   const graph = [articleSchema, breadcrumbSchema, ...(faqSchema ? [faqSchema] : [])];
 
-  // 관련글·이전/다음 계산용 메타(본문 content 제외) — 클라이언트가 전 로케일 본문을 번들하지 않도록 서버에서 전달.
-  const allPostsMeta = postsForLocale(locale).map(({ content, ...meta }) => meta);
+  // 이전/다음·관련글은 **서버에서 확정해서** 넘긴다.
+  //
+  // ★ 2026-08-02: 전엔 Omit<Post,"content">로 로케일 전편(40여 편)을 통째로 넘겼다.
+  // 그래서 tldr·desc·tags·seoTitle까지 직렬화돼 de/blog/holdem-hand-rankings.html의
+  // 플라이트가 109.8KB였다(KO는 c50cb67에서 이미 좁혔는데 다국어 457편엔 적용이 안 돼 있었다).
+  // 화면에 나오는 건 이전·다음·관련 3개 = 5편뿐이므로 고르는 일까지 서버로 옮긴다.
+  // 규칙은 클라이언트에 있던 것과 동일: 피드는 postsForLocale 배열 순서 그대로.
+  const localePosts = postsForLocale(locale);
+  const idx = localePosts.findIndex((p) => p.slug === post.slug);
+  const navLink = (p: (typeof localePosts)[number] | undefined | null) =>
+    p ? { slug: p.slug, title: p.title } : null;
+  const prevPost = idx > 0 ? navLink(localePosts[idx - 1]) : null;
+  const nextPost = idx >= 0 && idx < localePosts.length - 1 ? navLink(localePosts[idx + 1]) : null;
+  const related = localePosts
+    .filter((p) => p.slug !== post.slug)
+    .slice(0, 3)
+    .map((p) => ({ slug: p.slug, title: p.title, emoji: p.emoji }));
+
+  // ★ 마크다운 렌더링은 서버에서. 클라이언트에는 content를 넘기지 않는다(원문+HTML 이중 적재 방지).
+  const { content: _rawContent, ...postMeta } = post;
+  const headings = extractHeadings(post.content);
+  const bodyHtml = renderMarkdown(post.content.replace(/^:::quiz:::$/m, ""));
 
   return (
     <>
@@ -129,7 +151,15 @@ export function IntlBlogArticle({ locale, slug }: { locale: SecondaryLocale; slu
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@graph": graph }) }}
       />
-      <IntlBlogPostClient post={post} locale={locale} allPosts={allPostsMeta} />
+      <IntlBlogPostClient
+        post={postMeta}
+        locale={locale}
+        headings={headings}
+        bodyHtml={bodyHtml}
+        prevPost={prevPost}
+        nextPost={nextPost}
+        related={related}
+      />
     </>
   );
 }

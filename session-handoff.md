@@ -5,11 +5,15 @@
 
 ---
 
-## ▶▶▶▶▶▶▶▶▶ 새 세션 START HERE (2026-08-02)
+## ▶▶▶▶▶▶▶▶▶ 새 세션 START HERE (2026-08-03)
 
-> **직전 세션(2026-08-01) 요약**: GA4 참여율 분석 + 1~4순위 조치 완료. 커밋 6건 전부 배포.
-> **작업 트리 깨끗 · 게이트 30/30 무결 · 자가 테스트 50/50 · build 611 pages.**
-> 상세는 `WORKLOG.md` 2026-08-01 항목과 `docs/ga4-engagement-report-2026-07-31.md`.
+> **직전 세션(2026-08-02) 요약**: 마크다운 렌더러 서버 분리 + 다국어 메타 슬림화 완료.
+> 콘텐츠 변경 0건 — **605페이지 DOM 완전 동일**로 검증. brotli KO −7% / DE −30.6% / EN −29.1%,
+> First Load JS 138 → 122~124KB. 상세는 `WORKLOG.md` 2026-08-02 · 아래 0-A·0-B.
+> **작업 트리 깨끗 · 자가 테스트 50/50 · build 605 HTML.**
+>
+> 그 이전 세션(2026-08-01)은 GA4 참여율 분석 + 1~4순위 조치(커밋 6건 배포).
+> 근거: `docs/ga4-engagement-report-2026-07-31.md`.
 
 ### ▶ 0. GA4는 사장님 CSV 없이 바로 뽑힌다 (핸드오프 정정)
 
@@ -24,79 +28,47 @@ npm run ga -- --pages --days 90 --min 10
 ⚠ **Direct 채널은 봇이다**(360세션·참여율 17.5%·세션당 0초대). 사장님도 같은 판정.
 분석에서 반드시 제외할 것. `--pages`는 코드에서 이미 뺀다.
 
-### ▶ 0-A. ★다음 세션 1순위 — 마크다운 렌더러 서버 분리 (착수 직전까지 준비됨)
+### ▶ 0-A. ✅ 렌더러 서버 분리 + 다국어 메타 슬림화 — **완료** (2026-08-02)
 
-> 사장님 판단: *"다국어를 늘려가면 사이트가 커질 텐데, 구조적인 건 오늘이 가장 적기다."*
-> **동의함.** 단 아래 검증 게이트를 통과 못 하면 중단한다. **소스는 아직 무변경 상태다.**
+핸드오프 0-A·0-B를 한 번에 처리했고 **605페이지 DOM 완전 동일**로 검증했다. 상세는 WORKLOG 2026-08-02.
 
-**무엇을 하나**
-`app/blog/[slug]/blog-post-client.tsx`(`"use client"`)에 들어 있는 **마크다운 렌더러 499줄**이
-브라우저 번들로 나가고 있다. SSG라 결과 HTML은 빌드 때 이미 만들어지는데 **만드는 도구까지
-배달**하는 셈이다. 서버에서 렌더해 HTML 문자열만 props로 넘기면 브라우저에 안 간다.
-
-**조사 완료된 사실 (다시 조사하지 말 것)**
-
-| 항목 | 값 |
+| 결과 | 값 |
 |---|---|
-| 파일 총 줄수 | 1,161줄 |
-| `slugify` + `extractHeadings` | 35~49행 (작음, 클라이언트도 씀 → 별도 모듈로) |
-| `TocList` | 50~91행 — **클라이언트 컴포넌트, 그대로 둔다** |
-| **`renderMarkdown`** | **93~590행 = 499줄(43%)** ← 이걸 옮긴다 |
-| `BlogPost` 컴포넌트 | 592행~ |
+| `lib/render-markdown.ts` | 498줄, **서버 전용** — 클라이언트에서 import 금지 |
+| `lib/blog-headings.ts` | `slugify`·`extractHeadings` (클라이언트 허용) |
+| 클라이언트 props | `content` 없음. `headings`·`bodyParts`(또는 `bodyHtml`)·`prevPost`·`nextPost`·`related` |
+| 삭제 | `components/tournament-guide-utils.ts` |
+| brotli | KO −7% · DE −30.6% · EN −29.1% / First Load JS 138 → 122~124KB |
 
-**★정확한 파일 지도 (실측 확인함 — 이걸 믿고 시작하면 된다)**
+**★ 다음 사람이 반드시 알아야 할 것**
 
-서버 진입점은 **딱 2개**다. 언어별 `app/de/blog/[slug]/page.tsx` 같은 파일이 **26개** 있지만
-전부 `lib/intl-blog-page.tsx`의 `IntlBlogArticle`로 위임하므로 **손댈 필요 없다.**
+1. **`content`를 클라이언트 props에 되돌리지 말 것.** 넣는 순간 마크다운 원문과 렌더된 HTML이
+   플라이트에 **둘 다** 실려 이번 개선이 통째로 사라진다.
+2. **raw HTML 크기는 늘어난 게 정상이다**(KO 334→418KB). React가 플라이트에서 `<`를 `\u003c`로
+   바꿔 넣어 DOM 사본과 매칭이 끊기기 때문. **판단은 brotli로 한다** — Vercel은 압축본을 보낸다.
+3. **관련글·이전/다음은 이제 서버가 고른다**(`app/blog/[slug]/page.tsx`·`lib/intl-blog-page.tsx`).
+   클라이언트에 전체 목록을 다시 넘기지 말 것. 필드를 늘릴 땐 그 파일의 소비처 주석도 같이 갱신.
+4. **`lib/blog-lcp.ts`는 여전히 렌더러와 같은 문서 순서 규칙에 의존한다.** 이미지 정규식을 고치면 양쪽을 함께 볼 것.
 
-| 층 | 파일 | 역할 |
-|---|---|---|
-| 서버 | `app/blog/[slug]/page.tsx` | KO 57편 + 토너먼트 레이아웃 분기 |
-| 서버 | `lib/intl-blog-page.tsx` | **다국어 457편 전부** (26개 로케일 page가 여기로 위임) |
-| 클라 | `app/blog/[slug]/blog-post-client.tsx` | `:::quiz:::` split 후 파트별 렌더 + `<QuizWidget/>` 삽입 |
-| 클라 | `components/intl-blog-post-client.tsx` | 다국어 본문 |
-| 클라 | `components/tournament-guide-post.tsx` | 토너먼트 레이아웃 |
-| 정리 | `components/tournament-guide-utils.ts` | 클라이언트 파일에서 재수출하는 **우회 경로 — 같이 제거** |
+### ▶ 0-B. ★검증 게이트 사용법 (`npm run snapshot:html`)
 
-→ 클라이언트가 `bodyParts: string[]`(이미 렌더된 HTML)을 받게 한다.
-   길이 1이면 퀴즈 없음, 2 이상이면 사이사이에 `<QuizWidget/>`. 이러면 출력이 동일하다.
+구조를 건드리는 작업은 **이 게이트를 먼저 뜨고 시작한다.**
 
-⚠ 연관 결합도 같이 볼 것: `lib/blog-lcp.ts`가 *"renderMarkdown과 동일한 문서 순서 규칙"*으로
-LCP 이미지를 추출한다. 렌더러를 옮겨도 이 규칙이 어긋나지 않아야 한다.
-
-### ▶ 0-B. ★같이 처리할 것 — 다국어 457편에 메타 슬림화가 안 됐다 (2026-08-01 발견)
-
-`c50cb67`에서 KO의 `allPostsMeta`를 8개 필드로 줄였는데(HTML brotli 46→32KB),
-**`lib/intl-blog-page.tsx:124`는 아직 `Omit<Post,"content">` 그대로다.**
-
-```
-현재: const allPostsMeta = postsForLocale(locale).map(({ content, ...meta }) => meta);
-```
-실측: `de/blog/holdem-hand-rankings.html` = **331KB · `tldr` 43회**(KO는 최적화 후 1회).
-
-**영향 범위가 KO(57편)의 8배인 457편이다.** KO와 같은 방식으로 필드를 좁히면 된다 —
-`intl-blog-post-client.tsx`가 실제로 읽는 필드를 전수 확인한 뒤 `Pick`으로 바꾼다.
-렌더러 분리와 같은 파일을 건드리므로 **한 번에 처리하는 게 효율적이다.**
-
-**★모듈을 둘로 쪼갤 것** — 한 파일에 두면 클라이언트가 `extractHeadings` 하나 쓰려다
-`renderMarkdown`까지 끌고 갈 수 있다(트리셰이킹에 기대지 말 것).
-- `lib/blog-headings.ts` — `slugify`·`extractHeadings` (클라이언트 import 허용)
-- `lib/render-markdown.ts` — `renderMarkdown` (**클라이언트에서 import 금지**)
-
-**🔴 검증 게이트 — 이게 통과 못 하면 되돌린다**
 ```bash
-npm run build && npm run snapshot:html -- save   # 착수 전 기준선 (605개 HTML)
-# … 리팩터 …
-npm run build && npm run snapshot:html -- diff   # "바이트 단위 완전 동일" 나와야 함
+npm run build && npm run snapshot:html -- save --dom   # 착수 전 기준선
+#   … 리팩터 …
+npm run build && npm run snapshot:html -- diff --dom   # "DOM 완전 동일"이어야 통과
 ```
-왜 이렇게까지: 605페이지의 본문·**앵커 ID·FAQ 스키마**가 전부 이 함수에서 나온다.
-1바이트만 달라져도 목차 링크가 깨지거나 리치결과가 사라진다.
-**함수 본문은 한 글자도 바꾸지 말고 그대로 옮길 것.**
 
-**기대 효과 (정직하게)**
-- JS 번들 ↓ · 하이드레이션 비용 ↓ → **INP·TBT 개선**. 605페이지 전체에 적용
-- **LCP는 거의 안 바뀔 것** — 이미 1,988ms 🟢이고 첫 페인트는 CSS가 좌우한다
-- 즉 "더 빨라진다"보다 **"터치 반응이 좋아진다"**에 가깝다
+- `--dom` = 하이드레이션 플라이트(`self.__next_f`)를 걷어내고 비교한다. 렌더 위치를 옮기면
+  플라이트는 **의도적으로** 바뀌므로 파일 전체 바이트 동일성은 애초에 성립하지 않는다.
+  JSON-LD는 `ld+json` 태그라 비교에 **포함된다**(FAQ 리치결과 보증 유지).
+- 본문 `<article>`·JSON-LD는 **별도 해시**로 한 번 더 본다 — 출력에 "★본문·JSON-LD 변경" 줄이 그것이다.
+  껍데기(청크·헤드)가 흔들려도 이 줄이 0이면 글 자체는 무사하다.
+- 청크 파일명·익명 청크 번호는 정규화한다. 안 하면 **손대지도 않은 목록 페이지 541개**가 빨간불로 뜬다.
+- `/quiz`·`/en/quiz`는 비교에서 제외한다 — `lib/poker-eval`의 `makeQuestion`이 빌드 타임에
+  **랜덤 핸드**를 뽑아 매 빌드 달라진다. (스크립트의 `NONDETERMINISTIC` 배열)
+- ⚠ 기준선은 `.html-baseline-dom.json`(gitignore). 정규화 규칙을 고치면 **기준선도 다시 떠야 한다.**
 
 ### ▶ 1. 다음에 할 일 (우선순위)
 

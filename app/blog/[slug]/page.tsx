@@ -8,6 +8,8 @@ import { secondaryLocalesForSlug } from "@/lib/intl-posts";
 import { SITE } from "@/lib/site";
 import BlogPostClient from "./blog-post-client";
 import TournamentGuidePost from "@/components/tournament-guide-post";
+import { extractHeadings } from "@/lib/blog-headings";
+import { renderMarkdown } from "@/lib/render-markdown";
 
 /**
  * 빌드 타임에 모든 블로그 포스트(29개) URL 정적 생성
@@ -293,29 +295,45 @@ export default function Page({ params }: { params: { slug: string } }) {
       />
     ) : null;
 
-  // 관련글·이전/다음 계산용 메타 — 클라이언트가 전체 POSTS(본문 ~9.5MB)를 번들하지 않도록
-  // 서버에서 메타만 뽑아 props로 전달한다.
+  // 이전/다음·관련글은 **서버에서 확정해서** 넘긴다.
   //
-  // ★ 2026-08-01: content만 뺀 게 아니라 **실제로 읽는 8개 필드만** 남긴다.
-  // 왜: Omit<Post,"content">로 넘기면 57편의 tldr·desc·tags까지 전부 직렬화돼
-  // HTML의 __next_f 플라이트가 83KB(문서 314KB의 27%)를 차지했다. 모바일 4G에서
-  // 이 바이트가 CSS·HTML과 대역폭을 다퉈 첫 페인트를 늦춘다.
-  //
-  // 소비처가 읽는 필드(전수 확인):
-  //   blog-post-client   prev/next → title·slug / related → title·slug·image·imageAlt·emoji·category
-  //   tournament-guide   related → title·slug·image·imageAlt·category / 시리즈 필터 → layout
-  //   정렬·필터          date·category·slug
-  // 여기에 필드를 추가할 땐 위 목록도 같이 갱신할 것.
-  const allPostsMeta = POSTS.map((p) => ({
-    slug: p.slug,
-    title: p.title,
-    date: p.date,
-    category: p.category,
-    image: p.image,
-    imageAlt: p.imageAlt,
-    emoji: p.emoji,
-    layout: p.layout,
-  }));
+  // 연혁: 예전엔 클라이언트가 전체 POSTS(본문 ~9.5MB)를 번들했다 → 메타만 넘기게 바꿨고(2026-07),
+  // 다시 실제로 읽는 8개 필드만 남겼다(2026-08-01, c50cb67).
+  // ★ 2026-08-02: 그래도 57편치를 통째로 보내고 있었다. 정작 화면에 나오는 건 이전·다음·관련 3개
+  //   = **5편뿐**이고, 나머지 52편은 __next_f 플라이트에 실려 나가는 순수 낭비였다(row 0이 35.5KB).
+  //   고르는 일 자체를 서버로 옮긴다. 골라내는 규칙은 클라이언트에 있던 것과 **동일하다**
+  //   (피드 순서 = 날짜 내림차순 / 관련글 = 같은 카테고리 3개 / 시리즈 = 첫 tournament-guide).
+  const feed = [...POSTS].sort((a, b) => b.date.localeCompare(a.date));
+  const feedIndex = feed.findIndex((p) => p.slug === post.slug);
+  const navLink = (p: (typeof POSTS)[number] | undefined | null) =>
+    p ? { slug: p.slug, title: p.title } : null;
+  const prevPost = feedIndex > 0 ? navLink(feed[feedIndex - 1]) : null;
+  const nextPost = feedIndex >= 0 && feedIndex < feed.length - 1 ? navLink(feed[feedIndex + 1]) : null;
+  const relatedPosts = POSTS.filter((p) => p.slug !== post.slug && p.category === post.category)
+    .slice(0, 3)
+    .map((p) => ({
+      slug: p.slug,
+      title: p.title,
+      category: p.category,
+      image: p.image,
+      imageAlt: p.imageAlt,
+      emoji: p.emoji,
+    }));
+  const nextTourPost = navLink(
+    POSTS.find((p) => p.layout === "tournament-guide" && p.slug !== post.slug),
+  );
+
+  // ★ 2026-08-02: 마크다운 렌더링을 서버로 옮겼다.
+  // 렌더러 499줄이 브라우저 번들에서 빠지고, 하이드레이션 때 정규식 체인을 다시 돌지 않는다.
+  // 클라이언트에는 **content를 넘기지 않는다** — 넘기면 마크다운 원문과 렌더된 HTML이
+  // 둘 다 __next_f 플라이트에 실려 이득이 사라진다(측정: brotli 32.7→30.1KB는 원문을 뺐을 때의 값).
+  const { content: _rawContent, ...postMeta } = post;
+  const headings = extractHeadings(contentForClient);
+  // 토너먼트 레이아웃은 예나 지금이나 본문을 쪼개지 않는다(퀴즈 위젯이 없다) → 통째로 렌더.
+  const bodyParts =
+    post.layout !== "tournament-guide" && contentForClient.includes(":::quiz:::")
+      ? contentForClient.split(/^:::quiz:::$/m).map(renderMarkdown)
+      : [renderMarkdown(contentForClient)];
 
   return (
     <>
@@ -327,9 +345,24 @@ export default function Page({ params }: { params: { slug: string } }) {
         }}
       />
       {post.layout === "tournament-guide" ? (
-        <TournamentGuidePost post={{ ...post, content: contentForClient }} summarySlot={summarySlot} allPosts={allPostsMeta} />
+        <TournamentGuidePost
+          post={postMeta}
+          headings={headings}
+          bodyHtml={bodyParts[0]}
+          summarySlot={summarySlot}
+          related={relatedPosts}
+          nextTourPost={nextTourPost}
+        />
       ) : (
-        <BlogPostClient post={{ ...post, content: contentForClient }} summarySlot={summarySlot} allPosts={allPostsMeta} />
+        <BlogPostClient
+          post={postMeta}
+          headings={headings}
+          bodyParts={bodyParts}
+          summarySlot={summarySlot}
+          prevPost={prevPost}
+          nextPost={nextPost}
+          related={relatedPosts}
+        />
       )}
     </>
   );

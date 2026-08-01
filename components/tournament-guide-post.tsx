@@ -8,28 +8,33 @@ import { ChevronLeft, ChevronRight, ChevronDown, Share2, Link2, MapPin, Calendar
 import { FaXTwitter, FaFacebookF } from "react-icons/fa6";
 import type { Post } from "@/lib/posts";
 
-/** 관련글·시리즈에 실제로 쓰는 필드만. 넓히면 HTML 플라이트가 커진다 — blog/[slug]/page.tsx 주석 참조. */
-type PostMeta = Pick<Post, "slug" | "title" | "date" | "category" | "image" | "imageAlt" | "emoji" | "layout">;
+/** 관련글·시리즈에 실제로 쓰는 필드만. 선별 자체는 서버가 한다 — blog/[slug]/page.tsx 주석 참조. */
+type NavLink = Pick<Post, "slug" | "title">;
+type RelatedCard = Pick<Post, "slug" | "title" | "category" | "image" | "imageAlt">;
 import { SITE } from "@/lib/site";
 import { useState, useRef } from "react";
-import { renderMarkdown, slugify, extractHeadings } from "./tournament-guide-utils";
 import ReadingProgressBar from "./reading-progress-bar";
 
 export default function TournamentGuidePost({
   post,
+  headings,
+  bodyHtml,
   summarySlot,
-  allPosts,
+  related,
+  nextTourPost,
 }: {
-  post: Post;
+  /** ★ content 없음 — 본문은 서버에서 렌더돼 bodyHtml로 온다. */
+  post: Omit<Post, "content">;
+  /** 목차 — 서버에서 계산해 전달. */
+  headings: { id: string; text: string; level: number }[];
+  /** 서버에서 렌더된 본문 HTML. */
+  bodyHtml: string;
   summarySlot?: ReactNode;
-  /** 관련글·이전/다음 계산용 메타데이터(본문 content 제외). 서버에서 전달. */
-  allPosts: PostMeta[];
+  /** 같은 카테고리 관련 대회 가이드 3개 — 서버에서 선별. */
+  related: RelatedCard[];
+  /** 시리즈의 다음 대회 가이드 — 서버에서 선별. */
+  nextTourPost: NavLink | null;
 }) {
-  const currentIndex = allPosts.findIndex((p) => p.slug === post.slug);
-  const related = allPosts.filter(
-    (p) => p.slug !== post.slug && p.category === post.category
-  ).slice(0, 3);
-
   const [copied, setCopied] = useState(false);
   const contentRef = useRef<HTMLDivElement>(null);
   const pageUrl = `${SITE}/blog/${post.slug}`;
@@ -41,12 +46,7 @@ export default function TournamentGuidePost({
     });
   }
 
-  const headings = extractHeadings(post.content);
   const hasToc = headings.length >= 2;
-
-  // Next tournament guide post (same series)
-  const tourSeriesPosts = allPosts.filter(p => p.layout === "tournament-guide" && p.slug !== post.slug);
-  const nextTourPost = tourSeriesPosts[0] ?? null;
 
   return (
     <>
@@ -242,7 +242,7 @@ export default function TournamentGuidePost({
               <div
                 className="text-muted-foreground leading-relaxed"
                 dangerouslySetInnerHTML={{
-                  __html: `<p class="text-muted-foreground text-base leading-relaxed mb-4">${renderMarkdown(post.content)}</p>`,
+                  __html: `<p class="text-muted-foreground text-base leading-relaxed mb-4">${bodyHtml}</p>`,
                 }}
               />
             </article>
