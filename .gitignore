@@ -18,3 +18,6 @@ docs/gsc-tracking/data/
 .playwright-mcp/
 .html-baseline.json
 .html-baseline-dom.json
+
+# 커밋 메시지 임시 파일 (§16 — 한글·여러 줄 메시지는 git commit -F 로 넣는다)
+commit-msg.txt
