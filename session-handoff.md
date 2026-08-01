@@ -70,6 +70,22 @@ npm run build && npm run snapshot:html -- diff --dom   # "DOM 완전 동일"이�
   **랜덤 핸드**를 뽑아 매 빌드 달라진다. (스크립트의 `NONDETERMINISTIC` 배열)
 - ⚠ 기준선은 `.html-baseline-dom.json`(gitignore). 정규화 규칙을 고치면 **기준선도 다시 떠야 한다.**
 
+### ▶ 0-C. ⚠ 라이브 배포 확인 — `curl | grep`을 믿지 말 것 (2026-08-02에 헛짚음)
+
+이 환경에서 **`curl`의 본문을 파이프로 넘기면 빈 값이 온다**(`curl -sI` 헤더는 정상). 그래서
+`curl -s URL | grep -q "..."`가 **항상 실패**해 "아직 이전 배포"로 10번 연속 오판했다.
+
+→ 라이브 확인은 **Node `fetch`로 하고, 판별은 내용으로** 한다(청크 해시는 판별 근거로 약하다):
+
+\`\`\`js
+const html = await (await fetch('https://holdemmaster.com/blog/holdem-hand-rankings')).text();
+html.split('\\\\n## ').length - 1      // >0 이면 구버전(플라이트에 마크다운 원문)
+html.split('\\\\u003ch2').length - 1   // >0 이면 신버전(렌더된 HTML)
+\`\`\`
+
+실측 확인: 라이브 raw 크기가 로컬 빌드와 **소수점까지 일치**(417.7/386.5/386.0/278.9KB)했고
+`content-encoding: br` 확인 — Vercel 산출물 = 로컬 산출물이다.
+
 ### ▶ 1. 다음에 할 일 (우선순위)
 
 | # | 할 일 | 근거 |
