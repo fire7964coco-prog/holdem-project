@@ -94,6 +94,9 @@ export default function Strategy() {
                   참여할 때는 <strong className="text-foreground">콜이 아닌 레이즈</strong>로 주도권을 잡으세요.
                   약한 패로 플랍을 보는 것은 장기적으로 손실입니다.
                 </p>
+                <Link href="/blog/holdem-strategy" className="mt-4 inline-flex items-center gap-1 text-sm text-primary font-semibold hover:underline">
+                  전략을 어떤 순서로 쌓을지 로드맵 보기 →
+                </Link>
               </div>
               <div className="bg-card border border-border p-8 rounded-xl">
                 <Crosshair className="w-10 h-10 text-primary mb-4" />
@@ -103,6 +106,9 @@ export default function Strategy() {
                   딜러 버튼(BTN)에 가까울수록 마지막에 행동하므로 상대 정보를 먼저 얻을 수 있습니다.
                   얼리 포지션(UTG)에서는 강한 핸드만, <strong className="text-foreground">레이트 포지션(BTN, CO)에서는 더 넓은 핸드 레인지</strong>로 공격적으로 플레이하세요.
                 </p>
+                <Link href="/blog/position-is-everything-in-holdem" className="mt-4 inline-flex items-center gap-1 text-sm text-primary font-semibold hover:underline">
+                  포지션별 오픈 레인지 자세히 보기 →
+                </Link>
               </div>
               <div className="bg-card border border-border p-8 rounded-xl md:col-span-2">
                 <h2 className="text-xl font-serif font-bold text-foreground mb-3">초보자 추천 스타팅 핸드</h2>
@@ -121,6 +127,9 @@ export default function Strategy() {
                   ))}
                 </div>
               </div>
+                <Link href="/blog/holdem-starting-hand-range" className="mt-4 inline-flex items-center gap-1 text-sm text-primary font-semibold hover:underline">
+                  스타팅 핸드 4등급 기준 자세히 보기 →
+                </Link>
             </motion.div>
           </TabsContent>
 
@@ -139,6 +148,9 @@ export default function Strategy() {
                   공격적 플레이어는 최강 패로도 이기지만, <strong className="text-foreground">상대가 폴드하게 만들어서도 승리</strong>합니다.
                   이것이 홀덤에서 장기적으로 수익을 내는 비결입니다.
                 </p>
+                <Link href="/blog/holdem-3bet-strategy" className="mt-4 inline-flex items-center gap-1 text-sm text-primary font-semibold hover:underline">
+                  3벳으로 주도권 잡는 법 보기 →
+                </Link>
               </div>
               <div className="bg-card border border-border p-8 rounded-xl">
                 <BookOpen className="w-10 h-10 text-primary mb-4" />
@@ -148,6 +160,9 @@ export default function Strategy() {
                   타이트한 플레이어의 레이즈는 강한 패, 루즈한 플레이어의 레이즈는 블러핑일 수 있습니다.
                   상대의 베팅 패턴·포지션·프리플랍 행동을 종합해 레인지를 좁혀가세요.
                 </p>
+                <Link href="/blog/holdem-range-meaning" className="mt-4 inline-flex items-center gap-1 text-sm text-primary font-semibold hover:underline">
+                  레인지 읽는 3단계 자세히 보기 →
+                </Link>
               </div>
               <div className="bg-card border border-border p-8 rounded-xl md:col-span-2">
                 <h2 className="text-xl font-serif font-bold text-foreground mb-3">세미 블러핑 — 가장 안전한 블러핑</h2>
@@ -156,6 +171,9 @@ export default function Strategy() {
                   플러시 드로우(카드 1장 부족)나 오픈 엔드 스트레이트 드로우 상황에서 활용하면,
                   상대가 폴드해도 이기고 콜해도 드로우 완성 시 이길 수 있습니다.
                 </p>
+                <Link href="/blog/bluffing-strategy-when-and-how" className="mt-4 inline-flex items-center gap-1 text-sm text-primary font-semibold hover:underline">
+                  블러핑 타이밍 판단법 자세히 보기 →
+                </Link>
                 <div className="mt-4 flex flex-wrap gap-3">
                   {["플러시 드로우 (아웃츠 9장)", "양방 스트레이트 드로우 (아웃츠 8장)", "오버카드 2장 (아웃츠 6장)"].map(t => (
                     <span key={t} className="text-xs px-3 py-1.5 rounded-full bg-background border border-border text-muted-foreground">
@@ -257,9 +275,16 @@ export default function Strategy() {
             {[
               { href: "/rules", label: "기초 규칙", desc: "블라인드·쇼다운 6단계" },
               { href: "/blog/holdem-hand-rankings", label: "핸드 랭킹", desc: "족보 순위 완벽 정리" },
-              { href: "/glossary", label: "용어 사전", desc: "필수 홀덤 용어 26개" },
+              { href: "/glossary", label: "용어 사전", desc: "필수 홀덤 용어 27개" },
               { href: "/ranking", label: "추천 사이트", desc: "TOP5 홀덤 사이트" },
               { href: "/blog", label: "전략 블로그", desc: "실전 전략 칼럼" },
+              // ★탭(중급·고급) 안의 링크는 활성 탭만 렌더돼 HTML에 안 실린다(2026-08-01 확인).
+              //   그래서 중급 주제의 상세 가이드는 **항상 렌더되는 이 목록**에도 둔다.
+              { href: "/blog/holdem-3bet-strategy", label: "3벳 전략", desc: "주도권 잡는 리레이즈" },
+              { href: "/blog/holdem-range-meaning", label: "레인지 읽기", desc: "상대 패 범위 좁히기" },
+              { href: "/blog/bluffing-strategy-when-and-how", label: "블러핑", desc: "언제·어떻게 치나" },
+              { href: "/blog/holdem-pot-odds-calculation", label: "팟 오즈", desc: "콜·폴드 수치 판단" },
+              { href: "/blog/holdem-strategy", label: "전략 로드맵", desc: "초보→고수 학습 순서" },
             ].map(({ href, label, desc }) => (
               <Link key={href} href={href}>
                 <div className="bg-card border border-border rounded-lg p-3 hover:border-primary/50 hover:bg-primary/5 transition-all text-center group">

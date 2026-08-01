@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: `${SITE}/about`,
-    title: "팀 소개 — 누가 홀덤마스터를 운영하나요? | 홀덤마스터",
+    title: "팀 소개 — 누가 홀덤마스터를 운영하나요?",
     description:
       "12년 경력의 포커 전략 전문가 팀. GTO 솔버 분석 + WSOP·KPT 현장 취재 + 데이터 중심 검수 프로세스로 한국 홀덤 정보의 신뢰 기준을 만듭니다.",
     siteName: "홀덤마스터",
