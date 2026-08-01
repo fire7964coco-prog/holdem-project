@@ -118,6 +118,33 @@ export function renderMarkdown(content: string): string {
       ? { loading: "eager", fetchpriority: "high" }
       : { loading: "lazy", fetchpriority: "auto" };
 
+  /**
+   * 본문 이미지를 Vercel 이미지 최적화(/_next/image)로 태운다. (2026-08-01)
+   *
+   * 왜: next.config.mjs에 AVIF·deviceSizes를 다 설정해 뒀는데 **본문 이미지는 그걸 못 탔다.**
+   * 이 렌더러가 생 <img src="/images/x.webp">를 뱉기 때문이다. 실측(포지션 글):
+   *   본문 5장 = 1200x675 원본을 342px 자리에 그대로 → 3.5배 낭비 · 합 95KB
+   *   관련글 3장 = next/image 경유 384x216 → 1.0배 · 합 14KB
+   * 최적화를 태우면 AVIF 협상 + 폭 리사이즈로 페이지당 ~80KB가 준다.
+   *
+   * ⚠ w 값은 next.config.mjs의 deviceSizes ∪ imageSizes 안에 있어야 한다.
+   *   그 외 값을 넣으면 이미지 최적화 API가 400을 돌려준다.
+   *   현재 허용: imageSizes 16·32·64·96·128·256·384 / deviceSizes 360·480·640·750·828·1080·1200·1920
+   * ⚠ 외부 호스트(i.ytimg.com 등)는 remotePatterns 설정이 없으므로 건드리지 않는다.
+   */
+  const optSrc = (src: string, w: number, q = 75) =>
+    src.startsWith("/") ? `/_next/image?url=${encodeURIComponent(src)}&w=${w}&q=${q}` : src;
+  const optSet = (src: string, widths: number[], q = 75) =>
+    src.startsWith("/") ? widths.map((w) => `${optSrc(src, w, q)} ${w}w`).join(", ") : "";
+  /** 본문 전폭 이미지용 src/srcset/sizes 속성 문자열 (컨테이너 max-w-2xl = 672px) */
+  const fullWidthImg = (src: string) => {
+    if (!src.startsWith("/")) return `src="${src}"`;
+    return (
+      `src="${optSrc(src, 750)}" srcset="${optSet(src, [384, 640, 750, 1080])}" ` +
+      `sizes="(max-width: 768px) 100vw, 672px"`
+    );
+  };
+
   return content
     // Tie-break rule rows — language-independent block (rows come from markdown).
     // Syntax: :::tiebreak  (then one row per line)  name|rule|(+/-)kickerLabel  ... :::
@@ -201,11 +228,11 @@ export function renderMarkdown(content: string): string {
     .replace(/\*(.+?)\*/g, '<em class="italic text-foreground/90">$1</em>')
     .replace(/!\[([^\]]*)\]\(([^)]+?)\s+"([^"]+)"\)/g, (_, alt, src, cap) => {
       const a = imgAttrs(src);
-      return `<figure class="my-4 sm:my-6 max-w-2xl mx-auto"><img src="${src}" alt="${alt}" width="1200" height="630" loading="${a.loading}" fetchpriority="${a.fetchpriority}" decoding="async" class="w-full h-auto rounded-xl border border-border transition-transform duration-200 hover:scale-[1.015] hover:shadow-lg" /><figcaption class="text-center text-xs text-muted-foreground mt-2 italic">${cap}</figcaption></figure>`;
+      return `<figure class="my-4 sm:my-6 max-w-2xl mx-auto"><img ${fullWidthImg(src)} alt="${alt}" width="1200" height="630" loading="${a.loading}" fetchpriority="${a.fetchpriority}" decoding="async" class="w-full h-auto rounded-xl border border-border transition-transform duration-200 hover:scale-[1.015] hover:shadow-lg" /><figcaption class="text-center text-xs text-muted-foreground mt-2 italic">${cap}</figcaption></figure>`;
     })
     .replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (_, alt, src) => {
       const a = imgAttrs(src);
-      return `<figure class="my-4 sm:my-6 max-w-2xl mx-auto"><img src="${src}" alt="${alt}" width="1200" height="630" loading="${a.loading}" fetchpriority="${a.fetchpriority}" decoding="async" class="w-full h-auto rounded-xl border border-border transition-transform duration-200 hover:scale-[1.015] hover:shadow-lg" /></figure>`;
+      return `<figure class="my-4 sm:my-6 max-w-2xl mx-auto"><img ${fullWidthImg(src)} alt="${alt}" width="1200" height="630" loading="${a.loading}" fetchpriority="${a.fetchpriority}" decoding="async" class="w-full h-auto rounded-xl border border-border transition-transform duration-200 hover:scale-[1.015] hover:shadow-lg" /></figure>`;
     })
     .replace(
       /\[([^\]]+)\]\((\/downloads\/[^)]+\.pdf)\)/g,
@@ -224,7 +251,7 @@ export function renderMarkdown(content: string): string {
     )
     // 인라인 썸네일 링크: [텍스트](/url "thumb:/images/x.webp") — 앵커 앞 미니 썸네일(핵심 링크 1~2개만 선택적 사용, 남발 금지)
     .replace(/\[([^\]]+)\]\((?!https?:\/\/)([^)\s"]+)\s+"thumb:([^"]+)"\)/g, (_m, t, u, img) =>
-      `<a href="${u}" class="brush-link" style="--hl:${LINK_HL[hlIdx++ % LINK_HL.length]}"><img src="${img}" alt="" loading="lazy" style="display:inline-block;width:1.3em;height:1.3em;object-fit:cover;border-radius:4px;vertical-align:-0.32em;margin-right:5px;border:1.5px solid #ffd23f" />${t}</a>`
+      `<a href="${u}" class="brush-link" style="--hl:${LINK_HL[hlIdx++ % LINK_HL.length]}"><img src="${optSrc(img, 64)}" alt="" loading="lazy" style="display:inline-block;width:1.3em;height:1.3em;object-fit:cover;border-radius:4px;vertical-align:-0.32em;margin-right:5px;border:1.5px solid #ffd23f" />${t}</a>`
     )
     .replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, (_m, t, u) => `<a href="${u}" target="_blank" rel="noopener noreferrer" class="brush-link" style="--hl:${LINK_HL[hlIdx++ % LINK_HL.length]}">${t} ↗</a>`)
     .replace(/\[([^\]]+)\]\((?!https?:\/\/)([^)]+)\)/g, (_m, t, u) => `<a href="${u}" class="brush-link" style="--hl:${LINK_HL[hlIdx++ % LINK_HL.length]}">${t}</a>`)
@@ -287,7 +314,7 @@ export function renderMarkdown(content: string): string {
         const [href = '', title = '', img = ''] = line.split('|').map((s: string) => s.trim());
         if (!href || !title) return '';
         const thumb = img
-          ? `<img src="${img}" alt="" loading="lazy" style="width:64px;height:64px;object-fit:cover;border-radius:10px;flex-shrink:0"/>`
+          ? `<img src="${optSrc(img, 128)}" srcset="${optSet(img, [64, 128])}" sizes="64px" alt="" loading="lazy" style="width:64px;height:64px;object-fit:cover;border-radius:10px;flex-shrink:0"/>`
           : '';
         return (
           `<a href="${href}" style="display:flex;align-items:center;gap:14px;padding:12px 14px;background:var(--card);border:2px solid #ffd23f;border-radius:12px;text-decoration:none;flex:1 1 260px;min-width:0;transition:box-shadow .2s,transform .2s;box-shadow:0 0 10px rgba(255,210,63,0.40)" onmouseover="this.style.boxShadow='0 0 16px rgba(255,210,63,0.70)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='0 0 10px rgba(255,210,63,0.40)';this.style.transform='none'">` +
@@ -504,7 +531,7 @@ export function renderMarkdown(content: string): string {
       const a = imgAttrs(src);
       return `<div style="margin:28px 0;padding:3px;border-radius:18px;background:linear-gradient(135deg,rgba(196,154,24,0.55) 0%,rgba(56,189,248,0.25) 48%,rgba(196,154,24,0.45) 100%);box-shadow:0 6px 24px rgba(0,0,0,0.15)">` +
         `<div style="background:#faf6ed;border-radius:16px;overflow:hidden">` +
-        `<img src="${src}" alt="${alt}" loading="${a.loading}" fetchpriority="${a.fetchpriority}" decoding="async" width="1124" height="613" style="width:100%;height:auto;display:block" />` +
+        `<img ${fullWidthImg(src)} alt="${alt}" loading="${a.loading}" fetchpriority="${a.fetchpriority}" decoding="async" width="1124" height="613" style="width:100%;height:auto;display:block" />` +
         `<div style="padding:10px 18px;border-top:1px solid rgba(196,154,24,0.25);text-align:center">` +
         `<p class="blog-faqcard-caption" style="font-size:14px;color:#b8820a;margin:0;letter-spacing:0.4px;font-weight:700">${caption}</p>` +
         `</div></div></div>`;

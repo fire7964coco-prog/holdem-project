@@ -274,12 +274,21 @@ export default function Page({ params }: { params: { slug: string } }) {
 
   // keepImagesInBody 포스트는 히어로 이미지가 본문 내 <img>로 렌더됨.
   // <link rel="preload">를 head에 주입해 브라우저가 HTML 파싱 초기에 이미지를 발견하도록 해 LCP 개선.
+  // ★ 2026-08-01: 본문 이미지가 /_next/image 최적화를 타도록 바뀌었다.
+  // 원본 경로를 preload하면 **최적화본과 원본을 둘 다 받는다**(이중 다운로드).
+  // 그래서 preload도 렌더러(blog-post-client의 fullWidthImg)와 **똑같은**
+  // src/srcset/sizes를 써야 브라우저가 같은 리소스로 인식해 재사용한다.
+  // 양쪽이 어긋나면 조용히 두 번 받으므로, 한쪽을 고치면 반드시 다른 쪽도 고칠 것.
+  const optUrl = (src: string, w: number, q = 75) =>
+    `/_next/image?url=${encodeURIComponent(src)}&w=${w}&q=${q}`;
   const heroPreload =
-    post.keepImagesInBody && firstImg ? (
+    post.keepImagesInBody && firstImg && firstImg.startsWith("/") ? (
       <link
         rel="preload"
         as="image"
-        href={firstImg}
+        href={optUrl(firstImg, 750)}
+        imageSrcSet={[384, 640, 750, 1080].map((w) => `${optUrl(firstImg, w)} ${w}w`).join(", ")}
+        imageSizes="(max-width: 768px) 100vw, 672px"
         fetchPriority="high"
       />
     ) : null;
