@@ -23,6 +23,54 @@
 > 그 이전 세션(2026-08-01)은 GA4 참여율 분석 + 1~4순위 조치(커밋 6건 배포).
 > 근거: `docs/ga4-engagement-report-2026-07-31.md`.
 
+### ▶ 0-★. 🔴 내일 아침에 바로 — 색인 요청 잔여분 (할당량 초과로 밀림)
+
+> 2026-08-01에 사장님이 직접 GSC에서 요청하셨고, **하루 할당량이 소진돼 아래가 남았다.**
+> 요청은 사장님이 직접 하신다(자동화·체크리스트 추가는 사장님이 원치 않으심 — 묻지 말 것).
+
+**남은 것 (요청 순서대로)**
+```
+https://www.holdemmaster.com/blog/holdem-blind-steal
+https://www.holdemmaster.com/blog/holdem-hand-rankings-confusing
+https://www.holdemmaster.com/blog/holdem-probability
+https://www.holdemmaster.com/blog/holdem-odds-calculator
+```
+
+**이미 완료한 것** — 색인 안 된 9편(`holdem-strategy`·`buy-in-cost`·`overbet-strategy`·
+`raise-how-much`·`value-bet-sizing`·`bankroll-management`·`community-event-guide`·
+`pub-promotion`·`ggpoker-wsop-express`) + 오늘 크게 고친 3편(`hand-rankings`·`icm-poker-meaning`·`flush-vs-straight`).
+`holdem-rules`는 어제 요청 → **색인 완료 확인됨**(요청이 실제로 통한다는 증거).
+
+⚠ `icm-poker-meaning`은 **FAQ 리치결과가 0 → 6문항으로 살아난 글**이라 재크롤 전까지는 반영 안 된다.
+
+### ▶ 0-★★. GSC 색인 리포트 진단 (2026-08-01) — 다음 판단의 근거
+
+**색인됨 117 / 색인 안 됨 467.** 압도적 1위가 **"발견됨 – 현재 색인 생성 안 됨" 403개**
+= 구글이 URL은 아는데 **크롤조차 안 한** 상태다. 우리 다국어가 457개라 거의 그대로 겹친다.
+
+| 구분 | 사이트맵 | 노출 있음 | 90일 클릭 |
+|---|---:|---:|---:|
+| KO 블로그 | 58 | **83%** | **454** |
+| 정적·기타 | 54 | 24% | 386 |
+| **다국어 블로그** | **457** | **11%** | **5** |
+
+★ **사이트맵의 80%가 다국어인데 클릭의 1%를 낸다.** `holdem-tournament-buy-in-cost`가
+**한 번도 크롤링되지 않은** 이유가 이것으로 보인다(크롤 예산).
+
+**전수 검사로 확인한 것 — 우리 쪽 기술 결함은 거의 없다**
+- 사이트맵 **569 URL 전부 200**·리디렉션 0 (라이브 = 로컬)
+- KO 58편의 **hreflang 188개 전부 대상 존재** ✅
+- 레포·페이지에 외부 도메인 주입 흔적 0 (해킹 아님)
+- ⚠ `holdem-strategy`만 구글이 표준 URL을 **747live.bet**(필리핀 베팅 사이트, 한국어 없음)으로
+  잘못 골랐다. **이 한 건뿐이라 사이트 전체 문제가 아니다.** 재크롤로 풀리는지 볼 것.
+
+**고쳐서 배포함**(`1b2e51f`): `/community/:path*`가 접두어만 떼는 바람에
+`/community/feed → /feed → 404`로 떨어지고 있었다(chat·event 동일). 셋을 홈 탭으로 명시 지정.
+
+**★남은 결정 (사장님)**: 다국어 457개를 어떻게 할지. (A)그대로 (B)**사이트맵 KO/다국어 분리**
+(위험 0, 언어별 색인률이 보인다 — 먼저 권함) (C)미완성 언어 한시적 제외.
+번역 계획은 **es까지만 먼저, 나머지는 나중에**로 확정돼 있다.
+
 ### ▶ 0. GA4는 사장님 CSV 없이 바로 뽑힌다 (핸드오프 정정)
 
 이전 핸드오프에 "사장님께 데이터를 받아야 시작할 수 있다"고 적혀 있었으나 **틀렸다.**
