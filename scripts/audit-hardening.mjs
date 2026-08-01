@@ -64,6 +64,18 @@ export const CLUSTERS = {
   ],
 };
 
+/**
+ * slug → 소속 클러스터. `--slug` 모드에서 형제 글을 끌어오는 데 쓴다.
+ *
+ * ★왜 필요한가 (2026-08-01): 경화는 언제나 `--slug=<slug>` 1편 단위로 돌린다. 그런데 그 모드는
+ * 대상 1편만 로드해 클러스터 대조가 **표 0개·0쌍**이 됐고, 출력은 "헤더가 서로 달라 매칭 실패"라는
+ * 틀린 원인까지 붙였다. 전체 실행에선 25쌍이 멀쩡히 돌고 있었다 — 즉 검사가 죽은 게 아니라
+ * **정작 쓰는 순간에만 죽어 있었고, 그 사실이 오진으로 기록됐다.**
+ * 형제 대조는 글 1편 검수로는 원리상 못 잡는 자리이므로, 1편 모드일수록 반드시 살아 있어야 한다.
+ */
+export const clusterOf = (slug) =>
+  Object.keys(CLUSTERS).find((c) => CLUSTERS[c].includes(slug)) ?? null;
+
 /* ────────────────────────────────────────────────────────────────
    1. 로더 — lib/**.ts 를 임시 .mjs 로 트랜스파일해 실제 객체로 읽는다.
       (정규식 파싱은 템플릿 리터럴 경계에서 틀린다. 실제 값으로 판정한다.)
@@ -903,7 +915,12 @@ function sameTopicTable(A, B) {
   return valA.filter((h) => valB.has(h)).length >= 2;
 }
 
-function auditClusterTables(cluster, slugs, bySlug, stats) {
+/**
+ * @param focus  지정하면 **그 글이 한쪽에 낀 쌍만** 대조한다.
+ *               `--slug` 모드에서 형제 전원을 로드하되, 손대지도 않은 형제끼리의
+ *               C2까지 쏟아내면 정작 내 글의 지적이 묻힌다.
+ */
+function auditClusterTables(cluster, slugs, bySlug, stats, focus = null) {
   const out = [];
   const all = [];
   for (const s of slugs) {
@@ -916,6 +933,7 @@ function auditClusterTables(cluster, slugs, bySlug, stats) {
     for (let j = i + 1; j < all.length; j++) {
       const A = all[i], B = all[j];
       if (A.slug === B.slug) continue;
+      if (focus && A.slug !== focus && B.slug !== focus) continue;
       // 서로 다른 대회 가이드끼리는 엔트리·상금·일정이 다른 게 정상이다.
       if (isEventGuide(A.slug) && isEventGuide(B.slug)) continue;
       const mapB = new Map(B.rows.map((r) => [r[0], r]));
@@ -975,6 +993,8 @@ function auditClusterTables(cluster, slugs, bySlug, stats) {
           if (na && nb && na !== nb) diffs.push(`"${r[0]}" ${hname}: ${A.slug}=${ca.slice(0, 28)} / ${B.slug}=${cb.slice(0, 28)}`);
         }
       }
+      // 짝은 지어졌으나 행 키가 안 맞아 그냥 지나간 행 — 침묵이 "검증됨"으로 읽히지 않게 집계만 해둔다.
+      stats.rowsSkipped += A.rows.length - matched;
       if (diffs.length) {
         out.push({
           sev: 'ERR', code: 'C1',
@@ -1124,13 +1144,56 @@ if (argv.includes('--selftest')) {
   ];
   for (const [name, want, ca, cb] of CFIX) {
     const bs = new Map([['a', { slug: 'a', content: ca }], ['b', { slug: 'b', content: cb }]]);
-    const st = { tables: 0, pairs: 0, rows: 0, manual: 0 };
+    const st = { tables: 0, pairs: 0, rows: 0, rowsSkipped: 0, manual: 0 };
     const found = auditClusterTables('selftest', ['a', 'b'], bs, st);
     const codes = [...new Set(found.map((x) => x.code))].sort();
     const ok = codes.join(',') === [...want].sort().join(',');
     if (ok) pass++;
     console.log(`${ok ? '✅' : '❌'} [기대 ${want.length ? want.join('+') : '무음'}] ${name}`);
     for (const x of found) console.log(`      → [${x.code}] ${x.msg}`);
+  }
+
+  /* ── `--slug` 1편 모드에서 형제 대조가 살아 있는가 (2026-08-01 오진 재발 방지) ──
+     이 배선이 끊기면 게이트는 조용히 초록이 되고, 그 침묵을 사람이 "검증됨"으로 읽는다.
+     실제로 핸드오프에 "헤더 매칭 실패라 0쌍"이라는 **틀린 원인**이 기록돼 있었다. */
+  const CONTRA_A = '| 벳 사이즈 | 밸류:블러프 | 블러프 비중 |\n|---|---|---|\n| 100% | 2:1 | 33% |\n| 200% | 1.5:1 | 40% |';
+  const CONTRA_B = '| 오버벳 크기 | 밸류:블러프 | 블러프 비중 |\n|---|---|---|\n| 100% | 2:1 | 33% |\n| 200% | 1.5:1 | 25% |';
+  const SAME_C = CONTRA_A.replace('벳 사이즈', '벳 크기');
+  // 벳 사이즈 표와 헤더·행 키가 하나도 안 겹쳐 애초에 짝이 안 지어지는 표.
+  const UNRELATED = '| 드로우 종류 | 아웃츠 | 플럽 승률 (×4) |\n|---|---|---|\n| 플러시 드로우 | 9장 | 약 36% |\n| 양방 스트레이트 | 8장 | 약 32% |\n| 거트샷 | 4장 | 약 16% |';
+  const WFIX = [
+    // focus를 줘도 그 글이 낀 모순은 그대로 잡아야 한다 (a↔b가 모순)
+    ['focus=a — 내 글이 낀 모순은 잡는다', ['C1'], 'a',
+      new Map([['a', { slug: 'a', content: CONTRA_A }], ['b', { slug: 'b', content: CONTRA_B }], ['c', { slug: 'c', content: SAME_C }]])],
+    // 내가 손대지 않은 형제끼리(b↔c)의 모순으로 내 보고를 오염시키지 않는다.
+    // a는 짝이 안 지어지는 다른 주제 표만 갖고 있으므로, 남는 모순은 b↔c뿐이다.
+    ['focus=a — 형제끼리의 모순은 내 보고에 섞지 않는다', [], 'a',
+      new Map([['a', { slug: 'a', content: UNRELATED }], ['b', { slug: 'b', content: CONTRA_A }], ['c', { slug: 'c', content: CONTRA_B }]])],
+    // focus 없이(전체 모드) 돌리면 그 b↔c 모순은 당연히 잡아야 한다 — 위 무음이 "검사 죽음"이 아님을 증명한다
+    ['focus 없음 — 같은 데이터에서 형제끼리의 모순은 잡는다', ['C1'], null,
+      new Map([['a', { slug: 'a', content: UNRELATED }], ['b', { slug: 'b', content: CONTRA_A }], ['c', { slug: 'c', content: CONTRA_B }]])],
+  ];
+  for (const [name, want, focus, bs] of WFIX) {
+    const st = { tables: 0, pairs: 0, rows: 0, rowsSkipped: 0, manual: 0 };
+    const found = auditClusterTables('selftest', ['a', 'b', 'c'], bs, st, focus);
+    const codes = [...new Set(found.map((x) => x.code))].sort();
+    const ok = codes.join(',') === [...want].sort().join(',');
+    if (ok) pass++;
+    console.log(`${ok ? '✅' : '❌'} [기대 ${want.length ? want.join('+') : '무음'}] ${name}`);
+    for (const x of found) console.log(`      → [${x.code}] ${x.msg}`);
+  }
+
+  /* slug → 클러스터 역인덱스. 이게 null이면 `--slug` 모드의 형제 대조가 통째로 안 돈다. */
+  const KFIX = [
+    ['필라 slug가 자기 클러스터를 찾는다', 'holdem-hand-rankings', '족보'],
+    ['클러스터 글도 찾는다', 'holdem-overbet-strategy', '전략'],
+    ['정의에 없는 slug는 null (조용히 오답 내지 말 것)', 'holdem-masters-7th-guide', null],
+  ];
+  for (const [name, slug, want] of KFIX) {
+    const got = clusterOf(slug);
+    const ok = got === want;
+    if (ok) pass++;
+    console.log(`${ok ? '✅' : '❌'} [기대 ${want ?? 'null'}] ${name} → ${got ?? 'null'}`);
   }
 
   /* ── F13 산수 검산 자가 테스트 ──
@@ -1176,7 +1239,7 @@ if (argv.includes('--selftest')) {
     for (const x of found) console.log(`      → [${x.code}] ${x.msg}`);
   }
 
-  const TOTAL = FIX.length + CFIX.length + AFIX.length + DFIX.length;
+  const TOTAL = FIX.length + CFIX.length + WFIX.length + KFIX.length + AFIX.length + DFIX.length;
   console.log(`\n${pass}/${TOTAL} 통과`);
   process.exit(pass === TOTAL ? 0 : 1);
 }
@@ -1191,15 +1254,26 @@ else if (oneCluster) targets = [[oneCluster, CLUSTERS[oneCluster] ?? []]];
 else if (wantAll) targets = [['KO 전체', POSTS.map((p) => p.slug)]];
 else targets = Object.entries(CLUSTERS);
 
+/* ── 클러스터 대조는 대상 목록이 다르다 ──
+   게이트(F·H·E)는 "내가 편집한 글"만 보면 되지만, C유형은 **형제가 있어야 성립**한다.
+   `--slug` 모드에서 대상 1편만 넘기면 짝이 0쌍이 되고, 그 침묵이 "검증됨"으로 오독된다.
+   → 소속 클러스터 전원을 넘기되 focusSlug로 내 글이 낀 쌍만 보고한다. */
+const focusCluster = oneSlug ? clusterOf(oneSlug) : null;
+const clusterTargets = oneSlug
+  ? (focusCluster ? [[focusCluster, CLUSTERS[focusCluster]]] : [])
+  : targets;
+
 const SEV_ORDER = { ERR: 0, WARN: 1, INFO: 2 };
 const SEV_ICON = { ERR: '🔴', WARN: '🟠', INFO: '🟡' };
 const report = [];
 
 for (const [cluster, slugs] of targets) {
   // CLUSTERS 정의의 첫 원소가 그 클러스터의 필라다.
-  // --slug/--all 모드는 클러스터 맥락이 없으므로 이 검사를 건너뛴다.
-  const pillar = CLUSTERS[cluster] ? CLUSTERS[cluster][0] : null;
+  // ★`--slug`/`--all`도 slug로 소속을 역인덱스해 F12를 살린다 — 예전엔 여기서 건너뛰는 바람에
+  //   "경화하며 1편씩 돌릴 때만 필라 역링크 검사가 꺼져 있는" 상태였다(C유형과 같은 종류의 구멍).
+  const clusterPillar = CLUSTERS[cluster] ? CLUSTERS[cluster][0] : null;
   for (const slug of slugs) {
+    const pillar = clusterPillar ?? (CLUSTERS[clusterOf(slug)] ?? [])[0] ?? null;
     const post = bySlug.get(slug);
     if (!post) {
       report.push({ cluster, slug, src: '(없음)', findings: [{ sev: 'ERR', code: 'F0', msg: '슬러그가 존재하지 않음 — 클러스터 정의 오류' }] });
@@ -1251,14 +1325,36 @@ for (const r of report) {
 
 /* ── 클러스터 단위 대조 (C유형) — 글 1편 검수로는 원리상 못 잡는 자리 ── */
 const clusterFindings = [];
-const cStats = { tables: 0, pairs: 0, rows: 0, manual: 0 };
-for (const [cluster, slugs] of targets) {
+const cStats = { tables: 0, pairs: 0, rows: 0, rowsSkipped: 0, manual: 0 };
+for (const [cluster, slugs] of clusterTargets) {
   if (slugs.length < 2) continue;
-  clusterFindings.push(...auditClusterTables(cluster, slugs, bySlug, cStats));
+  clusterFindings.push(...auditClusterTables(cluster, slugs, bySlug, cStats, oneSlug));
 }
 console.log('\n\n══════ 클러스터 교차 대조 (형제 글 간 모순) ══════');
+if (oneSlug) {
+  console.log(focusCluster
+    ? `대상: ${oneSlug} ↔ [${focusCluster}] 형제 ${CLUSTERS[focusCluster].length - 1}편`
+    : `대상: ${oneSlug} — 형제 없음`);
+}
 console.log(`표 ${cStats.tables}개 수집 · 같은 주제로 짝지어진 표 ${cStats.pairs}쌍 · 자동 대조한 행 ${cStats.rows}개 · 육안 대조 넘김 ${cStats.manual}쌍`);
-if (!cStats.pairs) console.log('⚠ 짝지어진 표가 없다 = 이 대조는 아무것도 검증하지 못했다(헤더가 서로 달라 매칭 실패).');
+if (cStats.rowsSkipped) {
+  // 짝은 지어졌는데 행 키가 안 맞아 그냥 지나간 행들. "0건"이 이 공백을 덮지 않게 항상 보여준다.
+  console.log(`ℹ 짝지어진 표 안에서 행 키가 안 맞아 대조 못 한 행 ${cStats.rowsSkipped}개 — 이 행들은 검증되지 않았다.`);
+}
+/* ★"0쌍"의 원인을 구분해서 말한다.
+   예전엔 무조건 "헤더가 서로 달라 매칭 실패"라고 단정했는데, 실제 원인은 대부분
+   **대상에 형제가 없어 애초에 대조를 시도조차 안 한 것**이었다(2026-08-01에 오진으로 판명).
+   진단 메시지가 틀리면 사람이 엉뚱한 데를 고친다 — 게이트 자신의 한계도 정직해야 한다. */
+if (!cStats.pairs) {
+  if (oneSlug && !focusCluster) {
+    console.log(`⚠ '${oneSlug}'가 CLUSTERS 정의에 없다 → 형제 대조를 **시도하지 않았다**. 헤더 문제가 아니다.`);
+    console.log('   이 글도 클러스터 대조를 받게 하려면 scripts/audit-hardening.mjs의 CLUSTERS에 추가할 것.');
+  } else if (!cStats.tables) {
+    console.log('⚠ 대조할 표가 하나도 없다 → 이 대조는 아무것도 검증하지 못했다(글에 표가 없음).');
+  } else {
+    console.log(`⚠ 표 ${cStats.tables}개를 봤지만 짝이 0쌍 = 아무것도 검증하지 못했다(헤더·행 키가 서로 달라 매칭 실패).`);
+  }
+}
 for (const x of clusterFindings) {
   console.log(`\n${SEV_ICON[x.sev]} [${x.code}] ${x.msg}`);
   for (const d of x.detail.slice(0, 12)) console.log(`     · ${d}`);
