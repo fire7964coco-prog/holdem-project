@@ -24,6 +24,52 @@ npm run ga -- --pages --days 90 --min 10
 ⚠ **Direct 채널은 봇이다**(360세션·참여율 17.5%·세션당 0초대). 사장님도 같은 판정.
 분석에서 반드시 제외할 것. `--pages`는 코드에서 이미 뺀다.
 
+### ▶ 0-A. ★다음 세션 1순위 — 마크다운 렌더러 서버 분리 (착수 직전까지 준비됨)
+
+> 사장님 판단: *"다국어를 늘려가면 사이트가 커질 텐데, 구조적인 건 오늘이 가장 적기다."*
+> **동의함.** 단 아래 검증 게이트를 통과 못 하면 중단한다. **소스는 아직 무변경 상태다.**
+
+**무엇을 하나**
+`app/blog/[slug]/blog-post-client.tsx`(`"use client"`)에 들어 있는 **마크다운 렌더러 499줄**이
+브라우저 번들로 나가고 있다. SSG라 결과 HTML은 빌드 때 이미 만들어지는데 **만드는 도구까지
+배달**하는 셈이다. 서버에서 렌더해 HTML 문자열만 props로 넘기면 브라우저에 안 간다.
+
+**조사 완료된 사실 (다시 조사하지 말 것)**
+
+| 항목 | 값 |
+|---|---|
+| 파일 총 줄수 | 1,161줄 |
+| `slugify` + `extractHeadings` | 35~49행 (작음, 클라이언트도 씀 → 별도 모듈로) |
+| `TocList` | 50~91행 — **클라이언트 컴포넌트, 그대로 둔다** |
+| **`renderMarkdown`** | **93~590행 = 499줄(43%)** ← 이걸 옮긴다 |
+| `BlogPost` 컴포넌트 | 592행~ |
+
+**호출처 3곳** (전부 클라이언트 컴포넌트 → 서버에서 렌더해 prop으로 내려야 함)
+1. `blog-post-client.tsx` — `:::quiz:::` 로 split 후 파트별 렌더 + `<QuizWidget/>` 끼워넣기
+   → `bodyParts: string[]` 로 넘기면 동일 출력 (길이 1이면 퀴즈 없음)
+2. `components/intl-blog-post-client.tsx` (다국어 457페이지)
+3. `components/tournament-guide-post.tsx` (+ `tournament-guide-utils.ts`가 재수출 중 — 이 우회 경로도 정리)
+
+**★모듈을 둘로 쪼갤 것** — 한 파일에 두면 클라이언트가 `extractHeadings` 하나 쓰려다
+`renderMarkdown`까지 끌고 갈 수 있다(트리셰이킹에 기대지 말 것).
+- `lib/blog-headings.ts` — `slugify`·`extractHeadings` (클라이언트 import 허용)
+- `lib/render-markdown.ts` — `renderMarkdown` (**클라이언트에서 import 금지**)
+
+**🔴 검증 게이트 — 이게 통과 못 하면 되돌린다**
+```bash
+npm run build && npm run snapshot:html -- save   # 착수 전 기준선 (605개 HTML)
+# … 리팩터 …
+npm run build && npm run snapshot:html -- diff   # "바이트 단위 완전 동일" 나와야 함
+```
+왜 이렇게까지: 605페이지의 본문·**앵커 ID·FAQ 스키마**가 전부 이 함수에서 나온다.
+1바이트만 달라져도 목차 링크가 깨지거나 리치결과가 사라진다.
+**함수 본문은 한 글자도 바꾸지 말고 그대로 옮길 것.**
+
+**기대 효과 (정직하게)**
+- JS 번들 ↓ · 하이드레이션 비용 ↓ → **INP·TBT 개선**. 605페이지 전체에 적용
+- **LCP는 거의 안 바뀔 것** — 이미 1,988ms 🟢이고 첫 페인트는 CSS가 좌우한다
+- 즉 "더 빨라진다"보다 **"터치 반응이 좋아진다"**에 가깝다
+
 ### ▶ 1. 다음에 할 일 (우선순위)
 
 | # | 할 일 | 근거 |
