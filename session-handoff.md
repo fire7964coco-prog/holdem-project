@@ -67,6 +67,22 @@ npm run ga -- --pages --days 90 --min 10
    `browser_run_code_unsafe` + CDP(`Emulation.setCPUThrottlingRate`, `Network.emulateNetworkConditions`).
    **PSI는 무료 쿼터가 소진**돼 있다(429) → `PSI_API_KEY` 발급 필요.
 6. **테스트 폭은 384×832로.** GA4 최다 해상도이자 참여율 최저 구간이다(390×844는 좋은 축이라 착시).
+7. **폰트는 `preload: false`다 — 되돌리지 말 것.** `display:"swap"`이라 첫 페인트에 필요 없는데
+   preload가 196ms에 대역폭을 선점해 CSS를 971ms까지 늦추고 있었다. 끄자 LCP가 절반이 됐다.
+8. **`allPostsMeta`는 8개 필드만 넘긴다.** 필드를 늘리면 57편치가 곱해져 HTML 플라이트가 커진다.
+   추가할 땐 `app/blog/[slug]/page.tsx`의 소비처 목록 주석도 같이 갱신할 것.
+
+### ▶ 2-B. 현재 성능 기준선 (2026-08-01 라이브 실측 · 384×832 · 캐시 없음)
+
+| 조건 | LCP | 판정 |
+|---|---:|---|
+| 중급폰 4G (CPU 4×) · 족보 | 2,096ms | 🟢 |
+| 중급폰 4G · 포지션 | 1,776ms | 🟢 |
+| 중급폰 4G · 참가방법 | 1,416ms | 🟢 |
+| 보급형 · 느린 4G (CPU 6×) | 1,404ms | 🟢 |
+
+**전 조건 구글 기준(2.5s) 아래.** 이 값이 나빠지면 위 7·8번이 되돌려졌는지부터 의심할 것.
+재현: `browser_run_code_unsafe` + CDP(`Emulation.setCPUThrottlingRate`, `Network.emulateNetworkConditions`).
 
 ### ▶ 3. 이번에 배운 것 (같은 실수 반복 방지)
 
