@@ -55,11 +55,23 @@ const LANG_BOOTSTRAP = `(function(){try{var s=location.pathname.split('/')[1];va
 const notoSansKr = Noto_Sans_KR({
   subsets: ["latin"],
   weight: ["400", "700", "900"],
-  display: "swap",
-  // ★ preload 끔 (2026-08-01). display:"swap"이라 첫 페인트는 시스템 폰트로 이미 나온다 —
-  // 즉 이 폰트는 FCP에 필요하지 않다. 그런데 preload는 196ms에 최우선으로 받기 시작해
-  // 렌더를 막는 CSS·HTML과 1.6Mbps를 다퉜다(모바일 4G 실측: CSS 24KB가 971ms 걸림).
-  // 끄면 CSS 파싱 후에 받으므로 임계 경로에서 빠진다. 글자는 나중에 스왑된다.
+  /**
+   * ★ 2026-08-02: "swap" → "optional" (사장님 승인)
+   *
+   * swap일 때 실측 CLS가 **0.227**이었다(모바일 4G·CPU 4× · holdem-range-meaning).
+   * 폰트가 3.2~3.9초에 도착 → 4.44초에 리플로우:
+   *     설명 문단 117→88px · 요약 박스 251→225px · 태그 줄 50→94px
+   * 글자가 많은 헤더일수록 커져서 글마다 0.04~0.24로 갈렸다. 구글 "불량" 경계(0.25) 코앞이다.
+   *
+   * optional은 블록 구간(~100ms) 안에 못 받으면 **그 페이지에선 시스템 폰트를 유지**한다 →
+   * 늦게 도착해도 갈아끼우지 않으므로 리플로우가 아예 없다. 다운로드는 백그라운드로 진행돼
+   * 캐시에 들어가므로 **두 번째 페이지부터는 웹폰트가 정상 적용**된다.
+   * 대가: 느린 회선의 첫 방문에서 제목이 시스템 한글 폰트로 보인다(본문은 원래도 시스템 폰트다 — 아래 설명).
+   *
+   * ⚠ preload:false는 그대로 둔다. preload는 196ms에 대역폭을 선점해 CSS를 971ms까지 늦췄고,
+   *   끄자 LCP가 절반이 됐다(2026-08-01). 되돌리지 말 것.
+   */
+  display: "optional",
   preload: false,
   variable: "--font-noto-sans-kr",
 });
@@ -71,8 +83,13 @@ const notoSansKr = Noto_Sans_KR({
 const inter = Inter({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
-  display: "swap",
-  preload: false, // 위 Noto Sans KR과 같은 이유 — swap이라 FCP에 불필요한데 대역폭만 선점했다
+  // "optional" — 위 Noto Sans KR과 같은 이유(2026-08-02 CLS 0.227).
+  // ★ 리플로우의 실제 주범은 이쪽일 가능성이 크다: font-family가
+  //   var(--font-inter), var(--font-noto-sans-kr), var(--font-sans) 순서라
+  //   Inter가 첫 매칭이고, 한글은 여기서 폴백으로 흘러간다. Inter가 늦게 도착하면
+  //   라틴·숫자 폭이 바뀌면서 한글이 섞인 문단까지 통째로 다시 흐른다.
+  display: "optional",
+  preload: false, // 위 Noto Sans KR과 같은 이유 — FCP에 불필요한데 대역폭만 선점했다
   variable: "--font-inter",
 });
 
