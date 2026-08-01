@@ -57,6 +57,10 @@ export const CLUSTERS = {
     'holdem-cbet-strategy', 'bluffing-strategy-when-and-how', 'holdem-value-bet-sizing',
     'holdem-overbet-strategy', 'holdem-bankroll-management',
   ],
+  // 멤버는 필라 holdem-pub-guide의 :::pillarhub 선언 그대로(디렉토리 /pub은 포스트가 아니라 제외).
+  '홀덤펍': [
+    'holdem-pub-guide', 'holdem-pub-first-visit-guide', 'holdem-pub-legal', 'holdem-pub-promotion',
+  ],
   // 멤버는 필라 holdem-probability의 :::pillarhub 선언 그대로 (lib/posts.ts:6892)
   '확률': [
     'holdem-probability', 'holdem-outs-calculation', 'holdem-pot-odds-calculation',
@@ -233,6 +237,10 @@ const LIMIT = {
 const EXCEPTIONS = {
   'holdem-beginner-mistakes-10': {
     F2: '리스티클(실수 ①~⑩) — H2가 목록 항목이라 질문형으로 바꾸면 스캔성이 나빠진다. 2026-07-31 판단.',
+  },
+  'holdem-pub-promotion': {
+    F2: '매장 운영자용 영업 랜딩(검색 대상 아님 — 90일 GSC 노출 0). 독자가 검색자가 아니라 제안을 받는 사장님이라, '
+      + '질문형 H2로 바꾸면 제안서가 아니라 FAQ처럼 읽혀 전환이 나빠진다. 2026-08-01 판단.',
   },
 };
 
