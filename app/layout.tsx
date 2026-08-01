@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import { Noto_Sans_KR, Inter, Lora } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 import { SiteHeader, SiteFooter, HtmlLangSync, MainContent, ScrollToTopButton } from "@/components/site-chrome";
 import { BrushDefs } from "@/components/brush-defs";
 import SitePopup from "@/components/site-popup";
@@ -205,6 +207,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             gtag('config', 'G-CHSBJJDC14', { send_page_view: true });
           `}
         </Script>
+
+        {/*
+         * Vercel Speed Insights — 실사용자(RUM) Core Web Vitals
+         * 왜 필요한가: 지금까지 LCP는 CDP 스로틀링으로 "흉내낸" 값뿐이었다.
+         * PSI는 무료 쿼터가 소진돼(429) 못 돌린다. 이건 실제 방문자의 LCP/INP/CLS를
+         * 페이지별로 상시 수집한다 — 개선이 진짜 먹혔는지 확인할 유일한 수단.
+         * GA4와 목적이 다르다: GA4=행동(참여율), Speed Insights=성능(CWV).
+         * ⚠ Vercel 대시보드에서 Speed Insights를 켜야 데이터가 쌓인다(무료 티어 있음).
+         */}
+        <SpeedInsights />
+        {/* Vercel Analytics — 서버 사이드 집계라 애드블록·ITP에 덜 막힌다.
+            GA4가 놓치는 트래픽의 대조군으로 쓴다(Direct=봇 판정 검증에도 유용). */}
+        <Analytics />
       </body>
     </html>
   );
