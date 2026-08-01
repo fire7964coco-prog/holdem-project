@@ -166,7 +166,51 @@ const kicker = page(`
 .note{color:${MUTED};font-size:13.5px;font-weight:600}
 `);
 
+/* ─────── ④ 키커 비교 — 언어중립판 (13개 언어 공용) ───────
+ * 왜: ar·de·en·es·hi·id·ja·ms·pt·tr·vi·zh·zh-hant 13편이 전부 "키커·타이" 섹션에서
+ * holdem-hand-rankings-showdown.webp를 "두 플레이어의 베스트 5장"이라는 캡션으로 쓰는데,
+ * 그 그림은 보드(10♥9♣7♦4♠2♦)로 성립할 수 없는 스페이드 로열플러시를 양쪽이 5장씩 들고 있다.
+ * ③(키커)과 카드는 같지만 **글자를 넣지 않아** 전 언어에서 그대로 쓸 수 있다(RTL 포함).
+ * 카드: 보드 A♣7♦3♠9♥2♦ / A♠K♠(키커 K) vs A♥J♥(키커 J) → 셋째 카드 K > J로 좌측 승. */
+const kickerNeutral = page(`
+<div class="stage" style="justify-content:center;gap:40px;padding:30px 44px">
+  <div class="felt"></div>
+  <div class="cards" style="gap:14px;position:relative">${row(['Ac', '7d', '3s', '9h', '2d'], 'lg')}</div>
+  <div class="panels" style="position:relative">
+    <div class="pl win">
+      <div class="cards">${row(['As', 'Ks'], 'md')}</div>
+      <div class="best">${row(['Ac', 'As', 'Ks', '9h', '7d'], 'sm')}</div>
+      <div class="mark">✓</div>
+    </div>
+    <div class="vs">VS</div>
+    <div class="pl lose">
+      <div class="cards">${row(['Ah', 'Jh'], 'md')}</div>
+      <div class="best">${row(['Ac', 'Ah', 'Jh', '9h', '7d'], 'sm')}</div>
+      <div class="mark">✕</div>
+    </div>
+  </div>
+</div>`, `
+.panels{display:flex;align-items:center;gap:30px}
+.pl{position:relative;display:flex;flex-direction:column;align-items:center;gap:14px;padding:20px 26px 22px;border-radius:18px;border:2px solid}
+.pl.lose{border-color:rgba(169,181,166,.32);background:rgba(255,255,255,.03)}
+.pl.win{border-color:${GOLD};background:rgba(201,162,39,.11);box-shadow:0 0 30px rgba(201,162,39,.22)}
+.best{display:flex;gap:7px;padding-top:13px;border-top:1px dashed rgba(255,255,255,.16)}
+.mark{position:absolute;top:-17px;right:-14px;width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:19px;font-weight:800}
+.lose .mark{background:#3A4740;color:#9AA79E}
+.win .mark{background:${GOLD};color:#0B1F17}
+.vs{color:${MUTED};font-size:26px;font-weight:800;letter-spacing:.06em;opacity:.75}
+.cd.lg{width:100px;height:140px}
+.cd.md{width:78px;height:109px}
+.cd.sm{width:60px;height:84px}
+.lg .rk{font-size:44px}.lg .su{font-size:37px}
+.md .rk{font-size:35px}.md .su{font-size:29px}
+.sm .rk{font-size:27px}.sm .su{font-size:23px}
+.felt{position:absolute;left:50%;top:-320px;transform:translateX(-50%);width:1500px;height:760px;border-radius:50%;
+ background:radial-gradient(ellipse at 50% 70%,rgba(46,125,70,.22),rgba(46,125,70,0) 70%)}
+`);
+
 const JOBS = [
+  { html: kickerNeutral, out: 'public/images/holdem-kicker-showdown-neutral.webp', q: 68 },
   { html: showdown, out: 'public/images/holdem-showdown-flush-vs-fullhouse.webp', q: 68 },
   { html: best5, out: 'public/images/holdem-best5-from-seven.webp', q: 66 },
   { html: kicker, out: 'public/images/holdem-kicker-compare.webp', q: 66 },

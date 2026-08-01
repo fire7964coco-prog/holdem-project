@@ -170,7 +170,7 @@ At showdown, the highest card wins, then the next, and so on down all five. If a
 
 ## How Do Kickers and Ties Work in Poker?
 
-![Poker showdown — comparing two players' best five-card hands](/images/holdem-hand-rankings-showdown.webp "At showdown, the best five-card hand takes the pot")
+![Poker showdown — comparing two players' best five-card hands](/images/holdem-kicker-showdown-neutral.webp "At showdown, the best five-card hand takes the pot")
 
 When two players hold the same hand type, the winner is decided by comparing the cards inside the hand first, and then a **kicker** — a side card that isn't part of the made hand — breaks the tie when everything else matches. This is the part that decides real pots, and the part most charts skip. Work through this exact order:
 

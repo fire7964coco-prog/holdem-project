@@ -166,7 +166,7 @@ Beim Showdown gewinnt die höchste Karte, dann die nächste, und so weiter über
 
 ## Wie Kicker und Splits wirklich funktionieren
 
-![Poker-Showdown — die besten fünf Karten zweier Spieler im Vergleich](/images/holdem-hand-rankings-showdown.webp "Beim Showdown holt die beste Fünf-Karten-Hand den Pot")
+![Poker-Showdown — die besten fünf Karten zweier Spieler im Vergleich](/images/holdem-kicker-showdown-neutral.webp "Beim Showdown holt die beste Fünf-Karten-Hand den Pot")
 
 Das ist der Teil, der echte Pots entscheidet — und den die meisten Tabellen überspringen. Wenn zwei Spieler **denselben Handtyp** haben, arbeite genau diese Reihenfolge ab:
 

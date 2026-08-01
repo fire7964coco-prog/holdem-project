@@ -160,7 +160,7 @@ No showdown ganha a carta mais alta, depois a seguinte, e assim com as cinco. Se
 
 ## Como kickers e empates funcionam de verdade
 
-![Showdown de pôquer — comparando as melhores cinco cartas de dois jogadores](/images/holdem-hand-rankings-showdown.webp "No showdown, a melhor mão de cinco cartas leva o pote")
+![Showdown de pôquer — comparando as melhores cinco cartas de dois jogadores](/images/holdem-kicker-showdown-neutral.webp "No showdown, a melhor mão de cinco cartas leva o pote")
 
 Esta é a parte que decide potes de verdade — e que a maioria das tabelas pula. Quando dois jogadores têm o **mesmo tipo de mão**, siga esta ordem exata:
 

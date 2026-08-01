@@ -160,7 +160,7 @@ Showdown'da en yüksek kart kazanır, sonra bir sonraki, ve beşi boyunca böyle
 
 ## Kicker ve beraberlikler gerçekte nasıl işler
 
-![Poker showdown — iki oyuncunun en iyi beş kartının karşılaştırılması](/images/holdem-hand-rankings-showdown.webp "Showdown'da en iyi beş kartlık el potu alır")
+![Poker showdown — iki oyuncunun en iyi beş kartının karşılaştırılması](/images/holdem-kicker-showdown-neutral.webp "Showdown'da en iyi beş kartlık el potu alır")
 
 Gerçek potları belirleyen kısım budur — ve çoğu tablonun atladığı kısım. İki oyuncuda **aynı el türü** olduğunda tam olarak şu sırayı izle:
 

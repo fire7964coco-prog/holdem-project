@@ -160,7 +160,7 @@ Khi lật bài, lá cao nhất thắng, rồi đến lá tiếp theo, và cứ t
 
 ## Kicker và thế hòa thực sự hoạt động ra sao
 
-![Lật bài poker — so sánh năm lá tốt nhất của hai người chơi](/images/holdem-hand-rankings-showdown.webp "Khi lật bài, tay năm-lá tốt nhất lấy pot")
+![Lật bài poker — so sánh năm lá tốt nhất của hai người chơi](/images/holdem-kicker-showdown-neutral.webp "Khi lật bài, tay năm-lá tốt nhất lấy pot")
 
 Đây là phần định đoạt những pot thật — và cũng là phần mà phần lớn các bảng xếp hạng bỏ qua. Khi hai người chơi có **cùng loại tay bài**, hãy theo đúng thứ tự này:
 

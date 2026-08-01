@@ -160,7 +160,7 @@ Saat showdown, kartu tertinggi menang, lalu berikutnya, dan seterusnya untuk kel
 
 ## Cara kerja kicker dan seri yang sebenarnya
 
-![Showdown poker — membandingkan lima kartu terbaik dua pemain](/images/holdem-hand-rankings-showdown.webp "Saat showdown, tangan lima-kartu terbaik mengambil pot")
+![Showdown poker — membandingkan lima kartu terbaik dua pemain](/images/holdem-kicker-showdown-neutral.webp "Saat showdown, tangan lima-kartu terbaik mengambil pot")
 
 Inilah bagian yang menentukan pot sungguhan — dan yang sering dilewati banyak tabel. Saat dua pemain punya **jenis tangan yang sama**, ikuti urutan persis ini:
 

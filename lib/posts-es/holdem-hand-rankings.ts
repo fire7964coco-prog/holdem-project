@@ -171,7 +171,7 @@ En el showdown gana la carta más alta, luego la siguiente, y así con las cinco
 
 ## ¿Cómo funcionan los kickers y los empates en el póker?
 
-![Showdown de póker — comparando las mejores cinco cartas de dos jugadores](/images/holdem-hand-rankings-showdown.webp "En el showdown gana la mejor mano de cinco cartas")
+![Showdown de póker — comparando las mejores cinco cartas de dos jugadores](/images/holdem-kicker-showdown-neutral.webp "En el showdown gana la mejor mano de cinco cartas")
 
 Cuando dos jugadores tienen el mismo tipo de mano, el ganador se decide comparando primero las cartas que forman la mano, y luego un **kicker** — una carta lateral que no forma parte de la mano hecha — rompe el empate cuando todo lo demás coincide. Esta es la parte que decide botes reales, y la que muchas tablas se saltan. Sigue este orden exacto:
 

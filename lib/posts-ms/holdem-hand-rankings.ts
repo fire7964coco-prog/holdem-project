@@ -160,7 +160,7 @@ Ketika showdown, kad tertinggi menang, kemudian yang seterusnya, dan begitulah u
 
 ## Bagaimana kicker dan seri berfungsi sebenarnya
 
-![Showdown poker — membandingkan lima kad terbaik dua pemain](/images/holdem-hand-rankings-showdown.webp "Ketika showdown, tangan lima-kad terbaik mengambil pot")
+![Showdown poker — membandingkan lima kad terbaik dua pemain](/images/holdem-kicker-showdown-neutral.webp "Ketika showdown, tangan lima-kad terbaik mengambil pot")
 
 Inilah bahagian yang menentukan pot sebenar — dan yang sering dilangkau banyak jadual. Apabila dua pemain memegang **jenis tangan yang sama**, ikut urutan tepat ini:
 
