@@ -27,7 +27,8 @@
     "generate:beginner-pdf": "node scripts/generate-beginner-pdf.mjs",
     "snapshot:html": "node scripts/snapshot-html.mjs",
     "gsc:page": "node scripts/gsc-page.mjs",
-    "ga:page": "node scripts/ga-page.mjs"
+    "ga:page": "node scripts/ga-page.mjs",
+    "board": "node scripts/priority-board.mjs"
   },
   "dependencies": {
     "@radix-ui/react-tabs": "^1.1.4",
