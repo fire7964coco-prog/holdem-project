@@ -7,7 +7,8 @@ import { Clock, Tag, ChevronLeft, ChevronRight, ChevronDown, Share2, Link2, Map,
 import { FaXTwitter, FaFacebookF } from "react-icons/fa6";
 import type { Post } from "@/lib/posts";
 
-type PostMeta = Omit<Post, "content">;
+/** 관련글·이전/다음에 실제로 쓰는 필드만. 넓히면 HTML 플라이트가 커진다 — page.tsx 주석 참조. */
+type PostMeta = Pick<Post, "slug" | "title" | "date" | "category" | "image" | "imageAlt" | "emoji" | "layout">;
 import { SITE } from "@/lib/site";
 import CommunityCTA from "@/components/community-cta";
 import BlogTopBar from "@/components/blog-top-bar";

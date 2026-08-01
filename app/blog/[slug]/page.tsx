@@ -284,9 +284,29 @@ export default function Page({ params }: { params: { slug: string } }) {
       />
     ) : null;
 
-  // 관련글·이전/다음 계산용 메타(본문 content 제외) — 클라이언트가 전체 POSTS(본문 ~9.5MB)를
-  // 번들하지 않도록 서버에서 메타데이터만 뽑아 props로 전달. content 없이 slug/제목/이미지 등만.
-  const allPostsMeta = POSTS.map(({ content, ...meta }) => meta);
+  // 관련글·이전/다음 계산용 메타 — 클라이언트가 전체 POSTS(본문 ~9.5MB)를 번들하지 않도록
+  // 서버에서 메타만 뽑아 props로 전달한다.
+  //
+  // ★ 2026-08-01: content만 뺀 게 아니라 **실제로 읽는 8개 필드만** 남긴다.
+  // 왜: Omit<Post,"content">로 넘기면 57편의 tldr·desc·tags까지 전부 직렬화돼
+  // HTML의 __next_f 플라이트가 83KB(문서 314KB의 27%)를 차지했다. 모바일 4G에서
+  // 이 바이트가 CSS·HTML과 대역폭을 다퉈 첫 페인트를 늦춘다.
+  //
+  // 소비처가 읽는 필드(전수 확인):
+  //   blog-post-client   prev/next → title·slug / related → title·slug·image·imageAlt·emoji·category
+  //   tournament-guide   related → title·slug·image·imageAlt·category / 시리즈 필터 → layout
+  //   정렬·필터          date·category·slug
+  // 여기에 필드를 추가할 땐 위 목록도 같이 갱신할 것.
+  const allPostsMeta = POSTS.map((p) => ({
+    slug: p.slug,
+    title: p.title,
+    date: p.date,
+    category: p.category,
+    image: p.image,
+    imageAlt: p.imageAlt,
+    emoji: p.emoji,
+    layout: p.layout,
+  }));
 
   return (
     <>

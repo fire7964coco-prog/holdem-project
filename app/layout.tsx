@@ -54,7 +54,11 @@ const notoSansKr = Noto_Sans_KR({
   subsets: ["latin"],
   weight: ["400", "700", "900"],
   display: "swap",
-  preload: true,
+  // ★ preload 끔 (2026-08-01). display:"swap"이라 첫 페인트는 시스템 폰트로 이미 나온다 —
+  // 즉 이 폰트는 FCP에 필요하지 않다. 그런데 preload는 196ms에 최우선으로 받기 시작해
+  // 렌더를 막는 CSS·HTML과 1.6Mbps를 다퉜다(모바일 4G 실측: CSS 24KB가 971ms 걸림).
+  // 끄면 CSS 파싱 후에 받으므로 임계 경로에서 빠진다. 글자는 나중에 스왑된다.
+  preload: false,
   variable: "--font-noto-sans-kr",
 });
 
@@ -66,7 +70,7 @@ const inter = Inter({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
   display: "swap",
-  preload: true,
+  preload: false, // 위 Noto Sans KR과 같은 이유 — swap이라 FCP에 불필요한데 대역폭만 선점했다
   variable: "--font-inter",
 });
 
