@@ -223,7 +223,7 @@ export const POST: Post = {
 
 :::readnext[이어서 읽기]
 /blog/holdem-game-order | 홀덤 게임 어떻게 진행되나요? | /images/blog-holdem-game-flow.webp
-/blog/holdem-hand-rankings | 홀덤 족보 순위 10가지 | /images/holdem-hand-rankings-showdown.webp
+/blog/holdem-hand-rankings | 홀덤 족보 순위 10가지 | /images/holdem-showdown-flush-vs-fullhouse.webp
 :::
 
 ## FAQ — 자주 묻는 질문

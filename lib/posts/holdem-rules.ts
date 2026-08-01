@@ -244,7 +244,7 @@ A(스택 25만원)가 올인 → B(스택 80만원)가 80만원 올인 → C(스
 ---
 
 :::readnext[이어서 읽기]
-/blog/holdem-hand-rankings | 홀덤 족보 순위 10가지 | /images/holdem-hand-rankings-showdown.webp
+/blog/holdem-hand-rankings | 홀덤 족보 순위 10가지 | /images/holdem-showdown-flush-vs-fullhouse.webp
 /blog/holdem-blind-meaning | 홀덤 블라인드 뜻 | /images/holdem-blind-meaning-hero.webp
 :::
 
