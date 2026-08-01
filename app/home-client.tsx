@@ -7,7 +7,9 @@ import { useState } from "react";
 
 const FEATURES = [
   { title: "기초 규칙 가이드", description: "블라인드부터 쇼다운까지, 텍사스 홀덤의 기본 흐름을 완벽하게 마스터하세요.", icon: BookOpen, href: "/rules", cta: "홀덤 기초 규칙 전체 보기" },
-  { title: "핸드 랭킹(족보)", description: "로열 플러시부터 하이카드까지, 승패를 가르는 족보 순위를 확인하세요.", icon: Trophy, href: "/hands", cta: "홀덤 족보 순위 전체 확인하기" },
+  // ★ /hands(noindex)가 아니라 필라로 보낸다 — noindex로 "검색에 내지 마라" 해놓고
+  //   내부링크로 "우리 족보 페이지는 /hands다"라고 말하면 신호가 충돌한다(2026-08-01).
+  { title: "핸드 랭킹(족보)", description: "로열 플러시부터 하이카드까지, 승패를 가르는 족보 순위를 확인하세요.", icon: Trophy, href: "/blog/holdem-hand-rankings", cta: "홀덤 족보 순위 전체 확인하기" },
   { title: "전략 가이드", description: "포지션, 베팅 사이즈, 심리전 등 승률을 높이는 실전 팁을 제공합니다.", icon: Lightbulb, href: "/strategy", cta: "포지션별 전략 가이드 보러가기" },
   { title: "홀덤 용어 사전", description: "플랍, 턴, 리버, 벳, 폴드 등 알쏭달쏭한 홀덤 전문 용어를 총정리했습니다.", icon: Library, href: "/glossary", cta: "홀덤 용어 사전 전체 보기" },
 ];
@@ -523,7 +525,7 @@ export default function Home() {
             </table>
           </div>
           <div className="mt-6 text-center">
-            <Link href="/hands" className="inline-flex items-center gap-2 text-primary font-semibold hover:text-yellow-400 transition-colors">
+            <Link href="/blog/holdem-hand-rankings" className="inline-flex items-center gap-2 text-primary font-semibold hover:text-yellow-400 transition-colors">
               홀덤 족보 순위 상세 가이드 및 예시 보러가기 <ChevronRight className="w-4 h-4" />
             </Link>
           </div>
@@ -802,7 +804,7 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 text-sm">
             {[
               { href: "/rules", label: "텍사스 홀덤 기초 규칙 가이드" },
-              { href: "/hands", label: "홀덤 족보(핸드 랭킹) 순위표" },
+              { href: "/blog/holdem-hand-rankings", label: "홀덤 족보(핸드 랭킹) 순위표" },
               { href: "/strategy", label: "포지션·전략·GTO 가이드" },
               { href: "/glossary", label: "홀덤 포커 용어 사전 100+" },
               { href: "/ranking", label: "추천 온라인 홀덤 사이트 랭킹" },

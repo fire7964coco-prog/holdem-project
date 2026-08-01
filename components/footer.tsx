@@ -43,7 +43,7 @@ export function Footer() {
             <ul className="space-y-2.5 text-sm">
               {[
                 { href: "/rules", label: "기초 규칙" },
-                { href: "/hands", label: "핸드 랭킹" },
+                { href: "/blog/holdem-hand-rankings", label: "핸드 랭킹" },
                 { href: "/hand-chart", label: "스타팅 핸드 차트" },
                 { href: "/strategy", label: "전략 가이드" },
                 { href: "/glossary", label: "용어 사전" },

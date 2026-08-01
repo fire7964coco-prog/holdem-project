@@ -395,7 +395,7 @@ export default function Rules() {
               </p>
             </div>
             <div className="mt-3 text-right">
-              <Link href="/hands" className="text-sm text-primary hover:underline inline-flex items-center gap-1">
+              <Link href="/blog/holdem-hand-rankings" className="text-sm text-primary hover:underline inline-flex items-center gap-1">
                 족보 순위 전체 보기 <ChevronRight className="w-3 h-3" />
               </Link>
             </div>
@@ -512,7 +512,7 @@ export default function Rules() {
               className="inline-flex items-center gap-1.5 bg-primary text-black font-semibold rounded-full px-6 py-2.5 hover:bg-primary/90 transition-colors">
               텍사스 홀덤 규칙 완전 정복 <ChevronRight className="w-4 h-4" />
             </Link>
-            <Link href="/hands"
+            <Link href="/blog/holdem-hand-rankings"
               className="inline-flex items-center gap-1.5 border border-border text-foreground font-semibold rounded-full px-6 py-2.5 hover:border-primary/50 transition-colors">
               족보 순위 보기
             </Link>

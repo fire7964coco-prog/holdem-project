@@ -139,7 +139,7 @@ export default function Glossary() {
           <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
             {[
               { href: "/rules", label: "기초 규칙", desc: "블라인드·쇼다운 6단계" },
-              { href: "/hands", label: "핸드 랭킹", desc: "족보 순위 완벽 정리" },
+              { href: "/blog/holdem-hand-rankings", label: "핸드 랭킹", desc: "족보 순위 완벽 정리" },
               { href: "/strategy", label: "전략 가이드", desc: "포지션·팟 오즈·블러핑" },
               { href: "/ranking", label: "추천 사이트", desc: "TOP5 홀덤 사이트" },
               { href: "/blog", label: "전략 블로그", desc: "실전 전략 칼럼" },
