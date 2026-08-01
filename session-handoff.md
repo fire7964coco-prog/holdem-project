@@ -44,11 +44,39 @@ npm run ga -- --pages --days 90 --min 10
 | **`renderMarkdown`** | **93~590행 = 499줄(43%)** ← 이걸 옮긴다 |
 | `BlogPost` 컴포넌트 | 592행~ |
 
-**호출처 3곳** (전부 클라이언트 컴포넌트 → 서버에서 렌더해 prop으로 내려야 함)
-1. `blog-post-client.tsx` — `:::quiz:::` 로 split 후 파트별 렌더 + `<QuizWidget/>` 끼워넣기
-   → `bodyParts: string[]` 로 넘기면 동일 출력 (길이 1이면 퀴즈 없음)
-2. `components/intl-blog-post-client.tsx` (다국어 457페이지)
-3. `components/tournament-guide-post.tsx` (+ `tournament-guide-utils.ts`가 재수출 중 — 이 우회 경로도 정리)
+**★정확한 파일 지도 (실측 확인함 — 이걸 믿고 시작하면 된다)**
+
+서버 진입점은 **딱 2개**다. 언어별 `app/de/blog/[slug]/page.tsx` 같은 파일이 **26개** 있지만
+전부 `lib/intl-blog-page.tsx`의 `IntlBlogArticle`로 위임하므로 **손댈 필요 없다.**
+
+| 층 | 파일 | 역할 |
+|---|---|---|
+| 서버 | `app/blog/[slug]/page.tsx` | KO 57편 + 토너먼트 레이아웃 분기 |
+| 서버 | `lib/intl-blog-page.tsx` | **다국어 457편 전부** (26개 로케일 page가 여기로 위임) |
+| 클라 | `app/blog/[slug]/blog-post-client.tsx` | `:::quiz:::` split 후 파트별 렌더 + `<QuizWidget/>` 삽입 |
+| 클라 | `components/intl-blog-post-client.tsx` | 다국어 본문 |
+| 클라 | `components/tournament-guide-post.tsx` | 토너먼트 레이아웃 |
+| 정리 | `components/tournament-guide-utils.ts` | 클라이언트 파일에서 재수출하는 **우회 경로 — 같이 제거** |
+
+→ 클라이언트가 `bodyParts: string[]`(이미 렌더된 HTML)을 받게 한다.
+   길이 1이면 퀴즈 없음, 2 이상이면 사이사이에 `<QuizWidget/>`. 이러면 출력이 동일하다.
+
+⚠ 연관 결합도 같이 볼 것: `lib/blog-lcp.ts`가 *"renderMarkdown과 동일한 문서 순서 규칙"*으로
+LCP 이미지를 추출한다. 렌더러를 옮겨도 이 규칙이 어긋나지 않아야 한다.
+
+### ▶ 0-B. ★같이 처리할 것 — 다국어 457편에 메타 슬림화가 안 됐다 (2026-08-01 발견)
+
+`c50cb67`에서 KO의 `allPostsMeta`를 8개 필드로 줄였는데(HTML brotli 46→32KB),
+**`lib/intl-blog-page.tsx:124`는 아직 `Omit<Post,"content">` 그대로다.**
+
+```
+현재: const allPostsMeta = postsForLocale(locale).map(({ content, ...meta }) => meta);
+```
+실측: `de/blog/holdem-hand-rankings.html` = **331KB · `tldr` 43회**(KO는 최적화 후 1회).
+
+**영향 범위가 KO(57편)의 8배인 457편이다.** KO와 같은 방식으로 필드를 좁히면 된다 —
+`intl-blog-post-client.tsx`가 실제로 읽는 필드를 전수 확인한 뒤 `Pick`으로 바꾼다.
+렌더러 분리와 같은 파일을 건드리므로 **한 번에 처리하는 게 효율적이다.**
 
 **★모듈을 둘로 쪼갤 것** — 한 파일에 두면 클라이언트가 `extractHeadings` 하나 쓰려다
 `renderMarkdown`까지 끌고 갈 수 있다(트리셰이킹에 기대지 말 것).
