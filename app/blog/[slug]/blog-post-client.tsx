@@ -215,9 +215,11 @@ export function renderMarkdown(content: string): string {
         `<div style="margin-bottom:12px;border:2px solid rgba(234,88,12,0.55);border-radius:12px;overflow:hidden">` +
         `<div style="padding:11px 16px;background:rgba(234,88,12,0.10);border-bottom:2px solid rgba(234,88,12,0.30);display:flex;gap:10px;align-items:flex-start">` +
         `<span style="flex-shrink:0;width:22px;height:22px;border-radius:50%;background:rgba(234,88,12,0.20);border:1.5px solid rgba(234,88,12,0.70);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#ea580c;margin-top:1px">Q</span>` +
-        `<span style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.5">${q.trim()}</span>` +
+        `<span style="font-size:15.5px;font-weight:700;color:var(--foreground);line-height:1.5">${q.trim()}</span>` +
         `</div>` +
-        `<div class="blog-faq-answer" style="padding:12px 16px 12px 48px;font-size:13.5px;color:var(--muted-foreground);line-height:1.7">${a.trim()}</div>` +
+        // FAQ 답변은 본문 글자의 약 11%를 차지한다 — 13.5px는 모바일에서 너무 작았다.
+        // 15px로 올린다(본문 16px보다 살짝 작아 위계는 유지). 2026-08-01 실측 근거.
+        `<div class="blog-faq-answer" style="padding:12px 16px 12px 48px;font-size:15px;color:var(--muted-foreground);line-height:1.75">${a.trim()}</div>` +
         `</div>`
     )
     .replace(/==r:(.+?)==/g, '<mark class="brush-hl brush-hl-red">$1</mark>')
@@ -519,7 +521,9 @@ export function renderMarkdown(content: string): string {
 </div>`;
       }
     )
-    .replace(/^> (.+)$/gm, '<blockquote class="my-4 pl-4 border-l-4 border-primary/40 text-muted-foreground italic text-sm">$1</blockquote>')
+    // 인용문(> ) — text-sm(14px)은 모바일에서 작았다. text-[15px]로 올린다(2026-08-01).
+    // "바로 답" 블록이 이 인용문 문법을 쓰므로 첫 화면 가독성에 직결된다.
+    .replace(/^> (.+)$/gm, '<blockquote class="my-4 pl-4 border-l-4 border-primary/40 text-muted-foreground italic text-[15px] leading-relaxed">$1</blockquote>')
     // → result blocks (after bold so inner bold is already processed)
     .replace(/^→ (.+)$/gm, (_, text) =>
       `<div class="blog-callout" style="display:flex;gap:10px;align-items:flex-start;margin:10px 0;padding:14px 16px;background:rgba(212,175,55,0.10);border-left:3px solid rgba(196,154,24,0.7);border-radius:0 10px 10px 0">` +

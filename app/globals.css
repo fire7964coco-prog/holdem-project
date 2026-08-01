@@ -634,8 +634,11 @@ a.brush-link:hover { filter: brightness(0.9); }
 @media (max-width: 639px) {
   .blog-prose table th,
   .blog-prose table td {
-    padding: 7px 10px !important;
-    font-size: 0.78rem;
+    /* 0.78rem(12.5px) → 0.875rem(14px). 모바일에서 표 글씨가 가장 작았다(2026-08-01 실측).
+       표는 overflow-x-auto 안이라 넓어져도 가로 스크롤로 흡수된다 — 본문은 안 밀린다.
+       패딩을 살짝 줄여 글자를 키운 만큼의 폭 증가를 상쇄한다. */
+    padding: 6px 8px !important;
+    font-size: 0.875rem;
     white-space: normal;
     word-break: keep-all;
   }
