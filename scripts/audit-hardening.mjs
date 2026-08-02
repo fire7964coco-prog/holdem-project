@@ -66,6 +66,19 @@ export const CLUSTERS = {
     'holdem-probability', 'holdem-outs-calculation', 'holdem-pot-odds-calculation',
     'holdem-implied-odds', 'holdem-odds-calculator',
   ],
+  // 멤버는 holdem-tournament-how-to-enter의 :::pillarhub 선언 그대로 + 그 글 자신.
+  // ⚠ §8의 필라 슬러그 'holdem-tournament'는 **포스트로 존재하지 않는다** — /tournaments가
+  //   /pub처럼 라우트 허브다. 그래서 이 클러스터엔 필라 포스트가 없다.
+  // 왜 늦게 추가됐나 (2026-08-02): 핸드오프가 "icm-poker-meaning은 CLUSTERS에 없어 형제 대조를
+  //   못 받는다(토너먼트 클러스터 미정의)"를 두 번 남겼는데, 정작 정의가 안 돼 있었다.
+  //   바이인·상금·일정 수치가 글마다 흩어져 있어 교차 대조 값어치가 가장 큰 묶음이다.
+  // 개별 대회 후기(apt-*·appt-*·wsop-*·holdem-masters-*)는 날짜·바이인이 회차마다 달라
+  //   전략 글과 섞으면 오탐이 난다. 필요하면 '대회이벤트'로 따로 묶을 것.
+  '토너먼트': [
+    'holdem-tournament-how-to-enter', 'holdem-tournament-vs-cash-game',
+    'holdem-tournament-buy-in-cost', 'holdem-tournament-schedule-check',
+    'holdem-bubble-strategy', 'icm-poker-meaning', 'holdem-tournament-tax-guide',
+  ],
 };
 
 /**
