@@ -310,7 +310,7 @@ ICM은 토너먼트 칩을 실제 상금 기대값으로 환산하는 개념입�
 ---
 
 :::readnext[이어서 읽기]
-/blog/icm-poker-meaning | ICM이란 뜻 | /images/icm-stack-strategy-players.webp
+/blog/icm-poker-meaning | ICM이란 뜻 | /images/holdem-icm-hero.webp
 /blog/when-to-fold-preflop-holdem | 홀덤 프리플랍에서 언제 폴드해야 하나요? | /images/blog-fold-weak-hand.webp
 :::
 

@@ -309,7 +309,7 @@ DAY1은 메인 이벤트 진출권 확보를 위한 예선 단계이며, DAY2(8/
 
 :::readnext[이어서 읽기]
 /blog/holdem-bubble-strategy | 홀덤 버블 전략 완전 분석 | /images/holdem-bubble-chips.webp
-/blog/icm-poker-meaning | ICM이란 뜻 | /images/icm-stack-strategy-players.webp
+/blog/icm-poker-meaning | ICM이란 뜻 | /images/holdem-icm-hero.webp
 :::
 
 ## FAQ
