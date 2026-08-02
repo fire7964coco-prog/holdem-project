@@ -22,6 +22,11 @@
  * 사용법:
  *   node scripts/render-infographic.mjs <htmlDir> '[{"html":"a.html","out":"public/images/x.webp"}]'
  *   htmlDir 안에 `_style.css`가 있으면 <link rel="stylesheet" href="_style.css">를 인라인으로 치환한다.
+ *   job에 `"q": 80`을 주면 그 장만 품질을 낮춘다(기본 88).
+ *
+ * ★글당 합계 200KB 규칙에 주의 — 개별 60KB를 지켜도 4~5장이면 합계가 넘는다.
+ *   실제로 2026-08-03 `holdem-implied-odds`에서 5장 합계 229KB로 초과했다.
+ *   그때는 q88 → q80으로 낮춰 해결했다(선명도 차이는 육안으로 거의 없다).
  */
 import { chromium } from 'playwright';
 import sharp from 'sharp';
@@ -58,7 +63,7 @@ for (const j of jobs) {
   const webp = await sharp(png)
     .resize(1200, 675, { kernel: 'lanczos3' })
     .sharpen({ sigma: 0.7, m1: 0.6, m2: 2.2 })
-    .webp({ quality: 88, effort: 6 })
+    .webp({ quality: j.q ?? 88, effort: 6 })
     .toBuffer();
 
   writeFileSync(j.out, webp);
