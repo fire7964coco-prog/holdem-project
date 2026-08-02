@@ -7,7 +7,49 @@
 
 ## ▶▶▶▶▶▶▶▶▶ 새 세션 START HERE
 
-### ▶ 0-◈. 2026-08-03 세션 — 토너먼트 클러스터 완결 (여기서 멈춤)
+### ▶ 0-◈. 2026-08-03 세션 — 토너먼트 클러스터 완결 + 임플라이드 오즈 (여기서 멈춤)
+
+> **작업 트리 깨끗 · 게이트 47/57(🔴 17 · 🟠 24, 승인 예외 3건) · build 611 · canonical 0건.**
+> 커밋 `f49405c` · `96137c6` · `b64e0b8` · `879e186` · `e052fda` · `d95fe50`.
+
+## 🚀 새 세션은 이 순서로
+
+**시한이 있는 것부터.**
+
+| 순위 | 할 일 | 왜 급한가 |
+|---:|---|---|
+| **1** | `holdem-masters-7th-guide` 갱신 | **8/3 제8회 개막** — 이미 지났을 수 있다. `docs/update-calendar.md` |
+| **2** | `apt-incheon-2026-guide` | **8/7 개막** — 대회 가이드 9편 중 가장 급하다 |
+| **3** | 대회·이벤트 가이드 나머지 8편 | [[event-guide-consistency-review]] 방식(fact-instance 전수 diff)이 **별도로** 필요. 경화 표준만으론 안 된다 |
+| 4 | 소급 3건 (아래 0-◈-2) | 시한 없음 |
+
+**경화 절차는 이 세션에서 확립된 순서를 그대로 쓰면 된다** (5편 연속 적용, 매번 결함 검출):
+
+```
+① REVIEW-PROTOCOL.md 통독 → npm run audit:hard -- --slug=<slug>   (🔴 0까지)
+② npm run audit:hard -- --uncovered --slug=<slug>                  (기계 미판정 카드 문단 손 검산)
+③ 자동완성 실측(rakko suggest-keywords) — 본문이 못 받는 수요 찾기
+④ 사실은 1차 출처 직접 추출 (법령=법제처 iframe DOM / 대회=공식 일정 DOM / IRS·룰=PDF)
+⑤ 적대 렌즈 2종 병렬 (사실검증형 + SEO/GEO형) — Agent, model: fable
+⑥ ★2차 교열 패스 (git diff를 준다) — 다섯 세션 연속 내 수정의 부작용을 잡았다
+⑦ 이미지: defects.md grep → Read로 현물 확인 → 필요 시 HTML+Playwright 제작
+⑧ npm run build → git commit -F commit-msg.txt → push → WORKLOG·handoff
+```
+
+## ⚠️ 이 세션에서 배운 함정 (반복 방지)
+
+1. **렌즈가 준 숫자를 검산 없이 쓰지 마라.** ICM 글에서 "KK 에퀴티 70%"를 그대로 받아썼다가
+   2차 교열이 잡았다(실제 57.2%). REVIEW-PROTOCOL "검수자도 틀린다"를 내가 어긴 것이다.
+2. **검수자 지적도 틀린다 — 원문으로 판정하라.** 임플라이드 글에서 "형제 글은 19.6%인데 너만 19%"
+   지적이 왔는데, 확인하니 **형제 글이 시점을 섞은 것**이었다.
+3. **추론으로 사실을 뒤집지 마라.** 바이인 글에서 "Korea National Cup이 있으니 한국인 참가 가능"으로
+   추론했다가 관광진흥법 제28조 + 형제 글의 2025년 실측(한국 국적자 0명)으로 재반전했다.
+4. **글당 이미지 합계 200KB.** 개별 60KB를 지켜도 4~5장이면 넘는다(실제 229KB 초과).
+   `scripts/render-infographic.mjs`에 `"q": 78` 옵션으로 조절.
+5. **텍스트만 고치고 이미지를 안 보면 반쪽이다.** "하버드 노트" 표기를 8/2에 본문에서 지웠는데
+   인포그래픽 2장에 그대로 남아 있었다.
+
+### ▶ 0-◈-0. 이 세션에 한 일 (참고)
 
 > **작업 트리 깨끗 · 게이트 43/57 → 47/57(🔴 22 → 17 · 🟠 28 → 24) · 한국어 색인 57 → 56편.**
 > 커밋 `f49405c`(바이인) · `96137c6`(프로토콜) · `b64e0b8`(카니발) · `879e186`(ICM).
@@ -35,26 +77,32 @@ schedule-check는 「일정 확인법」류 자동완성이 **0개**였다 — �
 "이번 편집의 결함"만 보고된다. 이제 렌즈 프롬프트에 **"①원본 유래 / ②이번 편집 유래" 구분**을
 요구하고, 보고서는 둘을 나란히 적는다(`REVIEW-PROTOCOL.md` 3층).
 
-### ▶ 0-◈-1. 🔴 남은 것 — 새 세션은 여기서 시작
+이 세션에서 경화·정리한 글 **5편** — `holdem-bubble-strategy` · `holdem-tournament-tax-guide` ·
+`holdem-tournament-buy-in-cost` · `holdem-tournament-schedule-check`(noindex) · `icm-poker-meaning` ·
+`holdem-implied-odds`. **토너먼트 클러스터는 이걸로 완결**이다.
 
-1. **★8/3 오늘 개막 — 제8회 홀덤 마스터스.** `holdem-masters-7th-guide` 갱신이 **시한 최우선**.
-   `docs/update-calendar.md` 참조.
-2. **대회·이벤트 가이드 9편** — 날짜·바이인이 회차마다 달라 [[event-guide-consistency-review]] 방식
-   (fact-instance 전수 diff)이 별도로 필요하다. 경화 표준만으로는 안 된다.
-   ※ `apt-incheon-2026-guide`는 **8/7 개막**이라 이 묶음에서 가장 급하다.
-3. **세금 서술 소급 정렬** — `apt-incheon-2026-guide`("필요경비 공제 후 약 22%") ·
+신규 기능·자산: `Post.noindex` 필드 · `scripts/render-infographic.mjs` · `docs/infographic-style.css` ·
+게이트 예외 승인 3건 · REVIEW-PROTOCOL 측정 편향 경고.
+
+### ▶ 0-◈-2. 시한 없는 소급 과제 (위 표의 4번)
+
+1. **세금 서술 정렬** — `apt-incheon-2026-guide`("필요경비 공제 후 약 22%") ·
    `holdem-tournament-how-to-enter`("원칙적으로 국내 소득세 신고 대상")가
-   `holdem-tournament-tax-guide`와 단정 수위·기준이 어긋난다. 각 글 경화 차례에 정렬할 것.
-4. **AAAA 이미지 소급** — `icm-chips-not-money-real.webp`(에이스 4장)가 번역본 6편
+   `holdem-tournament-tax-guide`와 단정 수위·기준이 어긋난다. 각 글 경화 차례에 정렬.
+2. **아웃츠 확률 시점 정렬** — `lib/posts.ts`의 팟오즈·아웃츠·확률 글이 "한 장 기준 **19.6%**"로
+   통일돼 있는데, 표에서 `35.0% | 19.6%`를 나란히 놓아 **시점이 섞였다**
+   (35.0%=플랍→리버 두 장 / 19.6%=턴→리버 한 장 / 플랍→턴 한 장은 **19.1%**).
+   `holdem-implied-odds`는 19.1%로 정확하다. 세 글에 시점 라벨을 붙이는 소급이 필요하다.
+3. **AAAA 이미지 소급** — `icm-chips-not-money-real.webp`(에이스 4장)가 번역본 6편
    (`holdem-tournament-vs-cash-game` ar·hi·ms·pt·tr·vi)의 "칩≠상금" 절에 아직 삽입돼 있다.
-   KO에서 뺀 사유가 그대로 적용되는 자리다.
-5. **히어로 워터마크 표준화 미완** — `holdem-icm-hero`·`holdem-icm-pressure`가 구식
+   KO에서 뺀 사유(비선형 개념 설명 자리에 맥락 무관)가 그대로 적용된다.
+4. **히어로 워터마크 표준화 미완** — `holdem-icm-hero`·`holdem-icm-pressure`가 구식
    "HoldemMaster" 워드마크 단독이다(표준은 스페이드+URL). sharp 후합성을 시도했으나
-   **기존 워드마크를 못 덮고 겹쳐서 원복**했다. 덮으려면 해당 영역을 실제로 가리는 처리(크롭·블러·
-   불투명 배경)가 필요하다.
-6. **C1 형제 표 수치 불일치 3건** · **`holdem-raise-how-much`** 1편 (아래 그대로).
-7. **색인 요청 목록에 4편 추가** — 버블 · 세금 · 바이인 · ICM. schedule-check는 **요청하지 말 것**
-   (noindex로 뺐다).
+   **기존 워드마크를 못 덮고 겹쳐서 원복**했다. 덮으려면 그 영역을 실제로 가리는 처리
+   (크롭·블러·불투명 배경)가 필요하다. 그냥 얹으면 겹친다.
+5. **C1 형제 표 수치 불일치 3건** · **`holdem-raise-how-much`** 1편 (아래 그대로).
+6. **AI 인포그래픽 미수정 의심 9건** — `docs/image-audit/defects.md` 기준.
+   `holdem-bubble-table` 등. 일괄 프로젝트 금지(사장님 지시) — 각 글 경화 때 함께 처리.
 
 ### ▶ 0-⊚. 2026-08-02 (11) 세션 — `holdem-tournament-tax-guide` 재검수
 
@@ -496,10 +544,13 @@ https://www.holdemmaster.com/blog/icm-poker-meaning
 > 2026-08-03에 **noindex로 뺐다**(카니발 몰아주기). 「일정」 쿼리는 `/tournaments`가 수령한다.
 > 색인 요청하면 할당량 낭비다.
 
-**🟠 2순위**
+**🟠 2순위 — 임플라이드 오즈 (8/3 재검수, `d95fe50`)**
 ```
+https://www.holdemmaster.com/blog/holdem-implied-odds
 https://www.holdemmaster.com/blog/holdem-hand-rankings
 ```
+> `implied-odds`는 본문 이미지 **2 → 5장**과 FAQ 정합 수정이라 1순위들보다 급하지 않다.
+> (7/31 경화본 자체는 수학 검증 통과 — 수정 필수 0건이었다)
 
 **🟡 3순위 — 기존 잔여분**
 ```
