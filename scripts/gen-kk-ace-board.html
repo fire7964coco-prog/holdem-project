@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden; padding:36px 44px;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  display:flex; flex-direction:column; align-items:center;
+}
+.kicker { color:#C9A227; font-size:15px; font-weight:700; letter-spacing:.28em; text-transform:uppercase; margin-bottom:8px; }
+h1 { color:#F2EEE3; font-size:40px; font-weight:800; text-align:center; text-shadow:0 2px 12px rgba(0,0,0,.45); margin-bottom:6px; }
+h1 .gold { color:#C9A227; }
+.sub { color:#9fb39a; font-size:18px; font-weight:600; margin-bottom:20px; }
+.sub b { color:#e07b6e; }
+.cols { display:grid; grid-template-columns:1fr 1fr; gap:22px; width:100%; margin-bottom:18px; }
+.col { background:rgba(0,0,0,.28); border:2px solid rgba(201,162,39,.5); border-radius:16px; padding:18px 20px; }
+.col.wet { border-color:rgba(224,123,110,.5); }
+.ch { display:flex; align-items:center; gap:12px; margin-bottom:12px; }
+.cards { display:flex; gap:6px; }
+.card { position:relative; width:44px; height:63px; background:linear-gradient(175deg,#FDFBF4 0%,#F2EEE3 100%); border-radius:6px; box-shadow:0 4px 9px rgba(0,0,0,.4); }
+.card .corner { position:absolute; top:3px; left:5px; font-size:13px; font-weight:800; line-height:1; }
+.card .corner .csuit { display:block; font-size:9px; line-height:1; }
+.card .big { position:absolute; top:52%; left:50%; transform:translate(-42%,-44%); font-size:26px; line-height:1; }
+.black { color:#1a1a1a; } .red { color:#c0392b; }
+.ct { color:#F2EEE3; font-size:20px; font-weight:800; }
+.ct small { display:block; color:#9fb39a; font-size:14px; font-weight:600; margin-top:2px; }
+.bet { color:#0B1F17; background:#C9A227; border-radius:9px; padding:8px 0; text-align:center; font-size:21px; font-weight:900; margin-bottom:10px; }
+.bet.wet { background:#e07b6e; }
+.li { color:#cfd8c8; font-size:16px; font-weight:600; line-height:1.45; margin-bottom:5px; }
+.li b { color:#C9A227; }
+.foot { width:100%; display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+.fbox { border-radius:14px; padding:14px 20px; }
+.fbox.no { background:rgba(224,123,110,.14); border:2px solid rgba(224,123,110,.45); }
+.fbox.go { background:rgba(46,125,70,.18); border:2px solid rgba(94,168,110,.45); }
+.ft { font-size:17px; font-weight:900; margin-bottom:6px; }
+.fbox.no .ft { color:#e07b6e; } .fbox.go .ft { color:#7fc98f; }
+.fl { color:#cfd8c8; font-size:15px; font-weight:600; line-height:1.5; }
+.wordmark { position:absolute; right:44px; bottom:14px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.04em; opacity:.9; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="kicker">Pocket Kings &middot; Ace on Board</div>
+  <h1>에이스가 깔렸다 &mdash; <span class="gold">KK</span>는 어떻게 하나</h1>
+  <div class="sub">플랍에 A가 나올 확률 약 22% &middot; 그래도 <b>먼저 체크하지 않는다</b></div>
+  <div class="cols">
+    <div class="col">
+      <div class="ch">
+        <div class="cards">
+          <div class="card"><div class="corner red">A<span class="csuit">&#9830;</span></div><div class="big red">&#9830;</div></div>
+          <div class="card"><div class="corner black">7<span class="csuit">&#9827;</span></div><div class="big black">&#9827;</div></div>
+          <div class="card"><div class="corner red">2<span class="csuit">&#9829;</span></div><div class="big red">&#9829;</div></div>
+        </div>
+        <div class="ct">드라이 보드<small>연결도 무늬도 없다</small></div>
+      </div>
+      <div class="bet">C벳 40~50%</div>
+      <div class="li">목적은 이기는 게 아니라 <b>정보 수집</b></div>
+      <div class="li">단순 콜이면 A-X 중간 키커일 때가 많다</div>
+    </div>
+    <div class="col wet">
+      <div class="ch">
+        <div class="cards">
+          <div class="card"><div class="corner black">A<span class="csuit">&#9824;</span></div><div class="big black">&#9824;</div></div>
+          <div class="card"><div class="corner black">J<span class="csuit">&#9824;</span></div><div class="big black">&#9824;</div></div>
+          <div class="card"><div class="corner red">10<span class="csuit">&#9829;</span></div><div class="big red">&#9829;</div></div>
+        </div>
+        <div class="ct">웻 보드<small>드로우가 살아 있다</small></div>
+      </div>
+      <div class="bet wet">C벳 60~75%</div>
+      <div class="li">드로우에 싼 카드를 <b>주지 않는다</b></div>
+      <div class="li">체크백은 공짜 카드를 내주는 것</div>
+    </div>
+  </div>
+  <div class="foot">
+    <div class="fbox no">
+      <div class="ft">폴드를 고민할 신호</div>
+      <div class="fl">플랍 레이즈 &middot; 체크레이즈 &middot; 타이트한 상대의 오버벳 &middot; 멀티웨이에서 여러 명이 강하게</div>
+    </div>
+    <div class="fbox go">
+      <div class="ft">그대로 가져갈 상황</div>
+      <div class="fl">상대가 루스&middot;어그레시브 &middot; 팟오즈상 수익적인 콜 &middot; 상대 레인지에 블러프가 많을 때</div>
+    </div>
+  </div>
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>

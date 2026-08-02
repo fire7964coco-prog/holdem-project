@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden; padding:40px 44px;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  display:flex; flex-direction:column; align-items:center;
+}
+.kicker { color:#C9A227; font-size:15px; font-weight:700; letter-spacing:.28em; text-transform:uppercase; margin-bottom:8px; }
+h1 { color:#F2EEE3; font-size:40px; font-weight:800; text-align:center; text-shadow:0 2px 12px rgba(0,0,0,.45); margin-bottom:26px; }
+h1 .gold { color:#C9A227; }
+.grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; width:100%; }
+.qa { background:rgba(0,0,0,.28); border:2px solid rgba(201,162,39,.5); border-radius:16px; padding:20px 22px; }
+.q { display:flex; gap:11px; align-items:flex-start; margin-bottom:12px; }
+.qm { flex:none; width:32px; height:32px; border-radius:50%; background:#C9A227; color:#0B1F17; font-size:17px; font-weight:900; display:flex; align-items:center; justify-content:center; }
+.qt { color:#F2EEE3; font-size:20px; font-weight:800; line-height:1.3; padding-top:3px; }
+.a { display:flex; gap:11px; align-items:flex-start; }
+.am { flex:none; width:32px; height:32px; border-radius:50%; background:rgba(94,168,110,.28); color:#7fc98f; font-size:17px; font-weight:900; display:flex; align-items:center; justify-content:center; }
+.at { color:#cfd8c8; font-size:17px; font-weight:600; line-height:1.45; padding-top:4px; }
+.at b { color:#C9A227; font-weight:800; }
+.at .no { color:#e07b6e; font-weight:800; }
+.tail { margin-top:26px; width:100%; background:rgba(46,125,70,.16); border:2px solid rgba(94,168,110,.42); border-radius:16px; padding:20px 26px; display:flex; align-items:center; gap:20px; }
+.tt { flex:none; color:#7fc98f; font-size:18px; font-weight:900; letter-spacing:.02em; }
+.td { color:#e6ecdf; font-size:20px; font-weight:700; line-height:1.4; }
+.td b { color:#C9A227; font-weight:900; }
+.wordmark { position:absolute; right:44px; bottom:14px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.04em; opacity:.9; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="kicker">Pocket Kings &middot; FAQ</div>
+  <h1>포켓 킹(<span class="gold">KK</span>) 자주 묻는 것 4가지</h1>
+  <div class="grid">
+    <div class="qa">
+      <div class="q"><div class="qm">Q</div><div class="qt">KK 받으면 무조건 올인?</div></div>
+      <div class="a"><div class="am">A</div><div class="at">아니다. 4벳 이상이 오갔거나 숏스택이면 올인, <b>딥스택 캐시게임은 단계적으로</b> 팟을 키운다</div></div>
+    </div>
+    <div class="qa">
+      <div class="q"><div class="qm">Q</div><div class="qt">에이스 뜨면 무조건 폴드?</div></div>
+      <div class="a"><div class="am">A</div><div class="at"><span class="no">가장 흔한 실수다.</span> C벳으로 정보를 먼저 받고, <b>레이즈가 왔을 때</b> 폴드를 고민한다</div></div>
+    </div>
+    <div class="qa">
+      <div class="q"><div class="qm">Q</div><div class="qt">KK vs AK는 누가 유리?</div></div>
+      <div class="a"><div class="am">A</div><div class="at">KK가 <b>약 70%</b>로 유리하다. AK 수티드 상대로도 약 66%다</div></div>
+    </div>
+    <div class="qa">
+      <div class="q"><div class="qm">Q</div><div class="qt">프리플랍 폴드가 있나?</div></div>
+      <div class="a"><div class="am">A</div><div class="at">딥스택 5벳&middot;나이트 5벳 전쟁&middot;토너먼트 버블 <b>셋뿐</b>. 일반 게임에선 사실상 없다</div></div>
+    </div>
+  </div>
+  <div class="tail">
+    <div class="tt">한 줄로 줄이면</div>
+    <div class="td">프리플랍은 <b>최대한 강하게</b>, 에이스 보드에서는 <b>체크가 아니라 C벳</b>부터 &mdash; 이 둘이 KK의 전부다</div>
+  </div>
+  <div class="wordmark">&#9824;HoldemMaster</div>
+</div>
+</body>
+</html>
