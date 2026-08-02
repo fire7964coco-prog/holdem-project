@@ -68,7 +68,10 @@ export const CLUSTERS = {
   ],
   // 멤버는 holdem-tournament-how-to-enter의 :::pillarhub 선언 그대로 + 그 글 자신.
   // ⚠ §8의 필라 슬러그 'holdem-tournament'는 **포스트로 존재하지 않는다** — /tournaments가
-  //   /pub처럼 라우트 허브다. 그래서 이 클러스터엔 필라 포스트가 없다.
+  //   /pub처럼 라우트 허브다.
+  //   ★2026-08-02 정정: 그렇다고 필라가 없는 게 아니다 — `lib/pillar-clusters.ts` 는 이 클러스터의
+  //   pillarSlug 를 'holdem-tournament-how-to-enter' 로 지정한다. 배열 첫 원소를 그 필라로 맞춰 둔다.
+  //   (앞선 주석이 "필라 포스트가 없다"고 단정했는데 소스를 안 열어보고 쓴 것이었다)
   // 왜 늦게 추가됐나 (2026-08-02): 핸드오프가 "icm-poker-meaning은 CLUSTERS에 없어 형제 대조를
   //   못 받는다(토너먼트 클러스터 미정의)"를 두 번 남겼는데, 정작 정의가 안 돼 있었다.
   //   바이인·상금·일정 수치가 글마다 흩어져 있어 교차 대조 값어치가 가장 큰 묶음이다.

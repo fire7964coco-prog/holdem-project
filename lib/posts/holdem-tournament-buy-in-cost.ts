@@ -34,7 +34,7 @@ export const POST: Post = {
 
 이 글은 ==홀덤 대회 바이인·참가비==를 초보자 기준으로 정리한 비용 가이드입니다. 홀덤펍 소규모 대회, 국내 대형 APT·APPT, 해외 WSOP·EPT, 리엔트리·애드온까지 포함한 총비용, 그리고 새틀라이트로 바이인을 줄이는 방법까지 한 번에 보겠습니다.
 
-처음 대회 신청 절차 자체가 궁금하다면 [홀덤 대회 참가 방법](/blog/holdem-tournament-how-to-enter)을 먼저 읽고, 이 글로 돌아오면 비용 판단이 훨씬 쉬워집니다. 전체 일정은 [홀덤 대회 완벽 가이드](/tournaments/)에서 확인할 수 있습니다.
+처음 대회 신청 절차 자체가 궁금하다면 [홀덤 대회 참가 방법](/blog/holdem-tournament-how-to-enter)을 먼저 읽고, 이 글로 돌아오면 비용 판단이 훨씬 쉬워집니다. 전체 일정은 [홀덤 대회 완벽 가이드](/tournaments)에서 확인할 수 있습니다.
 
 ![홀덤 토너먼트 테이블 위 칩과 참가권 — 홀덤 대회 바이인·참가비 계산 가이드](/images/tournament-table-action.webp "홀덤 대회 바이인·참가비 — 초보 총비용 계산")
 
@@ -272,7 +272,7 @@ WSOP Main Event 바이인은 $10,000입니다. 하지만 WSOP에는 $300, $500, 
 | [홀덤 대회 일정 확인법](/blog/holdem-tournament-schedule-check) | 공식 일정과 바이인 변경 여부 확인 |
 | [홀덤 대회 세금·신고](/blog/holdem-tournament-tax-guide) | 상금 원천징수와 해외 대회 세금 |
 | [홀덤 대회 참가 방법](/blog/holdem-tournament-how-to-enter) | 온라인 무료부터 WSOP까지 단계별 신청법 |
-| [홀덤 대회 완벽 가이드](/tournaments/) | 2026 국내·해외 대회 일정과 추천 루트 |
+| [홀덤 대회 완벽 가이드](/tournaments) | 2026 국내·해외 대회 일정과 추천 루트 |
 | [홀덤 토너먼트 vs 캐시게임 차이](/blog/holdem-tournament-vs-cash-game) | 토너먼트 칩과 돈의 차이 |
 | [APT 제주 클래식 2026 가이드](/blog/apt-jeju-classic-2026-guide) | 국내 대형 대회 바이인·상금 사례 |
 | [한국 선수 WSOP 참가 가이드](/blog/wsop-2025-tournament-guide) | WSOP 비용·일정·위성 진출 |
