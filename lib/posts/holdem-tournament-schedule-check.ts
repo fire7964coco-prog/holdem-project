@@ -35,7 +35,7 @@ export const POST: Post = {
 
 이 글은 ==홀덤 대회 일정 확인법==을 정리한 가이드입니다. 단순히 2026년 일정을 다시 나열하는 글이 아니라, **WSOP·APT·APPT·EPT·WPT 공식 사이트에서 먼저 확인하고, PokerNews·SoMuchPoker·The Hendon Mob 같은 종합 캘린더로 교차검증하는 방법**을 알려드립니다.
 
-실시간으로 정리된 국내·해외 일정표는 [홀덤 대회 완벽 가이드](/tournaments/)에서 보고, 이 글에서는 "그 일정이 맞는지 직접 확인하는 법"을 익히면 됩니다.
+실시간으로 정리된 국내·해외 일정표는 [홀덤 대회 완벽 가이드](/tournaments)에서 보고, 이 글에서는 "그 일정이 맞는지 직접 확인하는 법"을 익히면 됩니다.
 
 ![대형 홀덤 대회장 전경 — 국내·해외 포커 토너먼트 일정을 공식 사이트에서 확인하는 방법](/images/tournament-hall-wsop.webp "홀덤 대회 일정 확인법 — 공식 사이트와 캘린더 교차검증")
 
@@ -278,7 +278,7 @@ WPT는 Main Tour, Prime, WPT500, Special Events처럼 카테고리가 나뉩니�
 
 | 관련 글 | 연결 내용 |
 |---------|-----------|
-| [홀덤 대회 완벽 가이드](/tournaments/) | 2026 국내·해외 대회 일정표 |
+| [홀덤 대회 완벽 가이드](/tournaments) | 2026 국내·해외 대회 일정표 |
 | [홀덤 대회 참가 방법](/blog/holdem-tournament-how-to-enter) | 온라인 무료부터 WSOP까지 신청 절차 |
 | [홀덤 대회 바이인·참가비](/blog/holdem-tournament-buy-in-cost) | 일정별 비용과 총예산 계산 |
 | [홀덤 대회 세금·신고](/blog/holdem-tournament-tax-guide) | 해외·국내 상금 수령 전 확인할 세금 |
