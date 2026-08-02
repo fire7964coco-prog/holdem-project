@@ -277,5 +277,6 @@ WSOP Main Event 바이인은 $10,000입니다. 하지만 WSOP에는 $300, $500, 
 | [APT 제주 클래식 2026 가이드](/blog/apt-jeju-classic-2026-guide) | 국내 대형 대회 바이인·상금 사례 |
 | [한국 선수 WSOP 참가 가이드](/blog/wsop-2025-tournament-guide) | WSOP 비용·일정·위성 진출 |
 | [ICM이란 뜻](/blog/icm-poker-meaning) | 대회 상금 구조와 칩 가치 이해 |
+| [홀덤 버블 전략](/blog/holdem-bubble-strategy) | 낸 바이인을 지키는 마지막 관문, 상금권 직전 대응법 |
 `.trim(),
 };
