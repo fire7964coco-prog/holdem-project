@@ -16,6 +16,21 @@ export interface Post {
   */
  updated?: string;
  /**
+  * true면 이 글을 검색 색인에서 제외한다 (robots noindex + sitemap 제외).
+  *
+  * ★언제 쓰나 — 카니발 몰아주기. 같은 쿼리를 다른 페이지가 더 높은 순위로 이미 먹고 있고,
+  *   이 글에 고유 쿼리가 없을 때. 글은 남겨 두므로 내부링크 경로로는 계속 작동한다.
+  *
+  * ⚠️ noindex를 걸면 canonical은 반드시 **자기 자신**을 가리켜야 한다.
+  *   "색인하지 마라 + 정본은 다른 URL이다"는 구글에 모순 신호다
+  *   (2026-08-02 /hands·/rules/texas-holdem에서 실제로 발생한 사고).
+  *   `app/blog/[slug]/page.tsx`가 이미 자기 URL을 canonical로 주므로 그대로 두면 된다.
+  *
+  * 적용 사례: `holdem-tournament-schedule-check` (2026-08-02) —
+  *   28일 클릭 1 · 고유 쿼리 0개, 「일정」 쿼리를 /tournaments가 2~6위로 수령 중.
+  */
+ noindex?: boolean;
+ /**
   * (번역본 전용) 저작 시점의 EN 마스터 updated 값 (YYYY-MM-DD).
   * scripts/check-translation-staleness.mjs 가 updated 대신 이 값을 우선 사용해
   * 번역본 자체 수정과 무관하게 마스터 대비 스테일 여부를 정확히 판별한다.

@@ -128,7 +128,11 @@ const staticEntries = STATIC_ROUTES.map((r) =>
   )
 );
 
-const blogEntries = [...POSTS]
+// noindex 글은 사이트맵에서도 뺀다 — "색인하지 마라"고 해놓고 사이트맵에 제출하면 모순 신호다.
+const INDEXABLE_POSTS = POSTS.filter((p) => !p.noindex);
+const NOINDEX_POSTS = POSTS.filter((p) => p.noindex);
+
+const blogEntries = [...INDEXABLE_POSTS]
   .sort((a, b) => a.slug.localeCompare(b.slug))
   .map((p) =>
     entry(
@@ -161,7 +165,7 @@ ${staticEntries.join("\n\n")}
 
 ${tournamentEntries.join("\n\n")}
 
-  <!-- 블로그 포스트 (${POSTS.length}편) -->
+  <!-- 블로그 포스트 (${INDEXABLE_POSTS.length}편) -->
 
 ${blogEntries.join("\n\n")}
 
@@ -175,5 +179,6 @@ ${intlBlogEntries.join("\n\n")}
 const outPath = join(root, "public", "sitemap.xml");
 writeFileSync(outPath, xml, "utf8");
 
-console.log(`sitemap.xml → ${POSTS.length} blog posts + ${intlCount} intl posts + ${STATIC_ROUTES.length} static URLs`);
+console.log(`sitemap.xml → ${INDEXABLE_POSTS.length} blog posts + ${intlCount} intl posts + ${STATIC_ROUTES.length} static URLs`);
+console.log(NOINDEX_POSTS.length ? `  ↳ noindex로 제외: ${NOINDEX_POSTS.map(p=>p.slug).join(", ")}` : "");
 console.log(`Latest blog lastmod: ${[...POSTS].map((p) => p.updated || p.date).sort().pop()}`);

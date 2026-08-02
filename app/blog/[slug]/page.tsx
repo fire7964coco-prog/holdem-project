@@ -45,6 +45,9 @@ export async function generateMetadata({
     title: post.seoTitle || post.title,
     description: post.desc,
     keywords: post.tags.join(", "),
+    // noindex 글도 canonical은 자기 자신을 가리켜야 한다 —
+    // "색인하지 마라 + 정본은 다른 URL"은 구글에 모순 신호다(lib/posts.ts의 noindex 주석 참조).
+    ...(post.noindex ? { robots: { index: false, follow: true } } : {}),
     alternates: {
       canonical: url,
       ...(languages ? { languages } : {}),

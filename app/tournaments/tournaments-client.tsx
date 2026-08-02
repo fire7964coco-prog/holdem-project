@@ -362,6 +362,41 @@ function ScheduleSection({
         각 대회 <strong className="text-foreground">공식 사이트 원문</strong>을 직접 확인해 기록했고, 카드마다 그 출처를 링크했습니다. 진행 상태는 날짜에서 자동 계산됩니다. 변경·연기는 공식 사이트를 우선 확인하세요.
       </p>
 
+      {/* 일정 검증 방법 — 2026-08-02 holdem-tournament-schedule-check(noindex)에서 흡수.
+          그 글이 「일정」 쿼리를 이 페이지와 나눠 갖고 있어 색인에서 뺐고, 고유 가치인
+          "공식 사이트 1순위 목록 + 확인 순서 + 체크 항목"만 여기로 옮겼다. */}
+      <details className="mb-6 bg-card border border-border rounded-xl overflow-hidden group">
+        <summary className="px-4 py-3 cursor-pointer text-sm font-bold text-foreground hover:bg-primary/5 transition-colors list-none flex items-center gap-2">
+          <span className="text-primary">🔍</span>
+          이 일정이 맞는지 직접 확인하는 법
+          <ChevronRight className="w-4 h-4 ml-auto text-muted-foreground transition-transform group-open:rotate-90" />
+        </summary>
+        <div className="px-4 pb-4 pt-1 text-sm text-muted-foreground leading-relaxed space-y-3 border-t border-border">
+          <p className="pt-3">
+            대회 일정은 <strong className="text-foreground">장소·시작일·메인 이벤트 날짜·보장 상금·바이인</strong>이 시즌 중에도 바뀝니다.
+            항공·숙박을 잡기 전에는 아래 순서로 한 번 더 확인하세요.
+          </p>
+          <div className="grid gap-2 sm:grid-cols-2">
+            {[
+              { k: "1순위 — 공식 사이트", v: "WSOP는 wsop.com/schedule, APT는 theasianpokertour.com, APPT·EPT는 pokerstarslive.com, WPT는 worldpokertour.com" },
+              { k: "2순위 — 전문 캘린더", v: "PokerNews(라이브 리포팅) · SoMuchPoker(아시아권 비교)" },
+              { k: "3순위 — 과거 데이터", v: "The Hendon Mob에서 이전 시즌 규모·입상 기록 확인" },
+              { k: "4순위 — 커뮤니티", v: "현장 후기·분위기. 일정 근거로는 쓰지 않는다" },
+            ].map((r) => (
+              <div key={r.k} className="bg-background/60 border border-border rounded-lg px-3 py-2">
+                <div className="text-xs font-bold text-primary mb-0.5">{r.k}</div>
+                <div className="text-xs">{r.v}</div>
+              </div>
+            ))}
+          </div>
+          <p>
+            <strong className="text-foreground">날짜만 보면 절반만 본 것입니다.</strong> 페스티벌 전체 기간과 내가 나갈 이벤트 시작일은 다릅니다.
+            장소·카지노명, 바이인과 수수료 구분, 레이트 레지 마감, 리엔트리 가능 여부, 신분증·나이 제한까지 함께 확인하세요.
+            <span className="text-foreground"> 예약 전과 출발 1주 전, 두 번 확인하는 것이 안전합니다.</span>
+          </p>
+        </div>
+      </details>
+
       <div className="flex gap-2 mb-6">
         {(["all","domestic","international"] as const).map(f => (
           <button key={f} onClick={() => setFilter(f)}
