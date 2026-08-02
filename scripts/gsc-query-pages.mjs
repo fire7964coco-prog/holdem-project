@@ -37,10 +37,11 @@ const end = new Date(Date.now() - LAG * 864e5);
 const start = new Date(end.getTime() - (DAYS - 1) * 864e5);
 const iso = (d) => d.toISOString().slice(0, 10);
 
-const auth = new google.auth.GoogleAuth({
-  keyFile: join(ROOT, process.env.GSC_KEY_FILE || 'gsc-key.json'),
-  scopes: ['https://www.googleapis.com/auth/webmasters.readonly'],
-});
+// ⚠ 인증은 gsc-page.mjs와 동일 방식이어야 한다(gsc-key.json은 이 레포에 없다).
+//   GSC_SA_KEY_JSON(인라인) 우선, 없으면 GSC_SA_KEY_PATH.
+const auth = process.env.GSC_SA_KEY_JSON
+  ? new google.auth.GoogleAuth({ credentials: JSON.parse(process.env.GSC_SA_KEY_JSON), scopes: ['https://www.googleapis.com/auth/webmasters.readonly'] })
+  : new google.auth.GoogleAuth({ keyFile: process.env.GSC_SA_KEY_PATH, scopes: ['https://www.googleapis.com/auth/webmasters.readonly'] });
 const webmasters = google.webmasters({ version: 'v3', auth });
 
 const res = await webmasters.searchanalytics.query({
