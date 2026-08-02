@@ -27,19 +27,39 @@
 
 ### ▶ 0-◉-1. 🔴 남은 것 — 새 세션은 여기서 시작
 
-**A. 28일 기준 경화 대기열** (이탈 절대량 순, `npm run ga -- --pages --days 28`로 재측정 후 착수)
+**A. ★KO 경화 현황 — 게이트 실측이 진실이다 (2026-08-02)**
 
-| 글 | 세션 | 참여율 | 이탈 | 게이트 |
-|---|---:|---:|---:|---|
-| `holdem-masters-7th-guide` | 68 | 63.2% | 25 | **🔴 0건 — 이미 경화됨. 원인이 다르다** |
-| `holdem-range-meaning` | 32 | **53.1%** | 15 | 미확인 |
-| `holdem-tiebreak-rules` | 23 | 56.5% | 10 | 미확인 |
-| `holdem-check-meaning` | 24 | 66.7% | 8 | 미확인 |
-| `holdem-pub-legal` | 18 | 66.7% | 6 | 미확인 |
+```
+npm run audit:hard -- --all   →  통과(무결) 38/57편 · 🔴 33건 · 🟠 40건 · 승인된 예외 2건
+```
 
-⚠ 아래 4줄은 **n=15~24라 66.7% = "3명 중 1명"** 수준이다. 표본을 먼저 의심할 것.
-⚠ `masters-7th-guide`는 게이트가 초록인데 참여율이 낮다 = **경화 항목으로 설명되지 않는 이탈**이다.
-   구조가 아니라 내용·의도 불일치일 수 있으니 `gsc:page`로 어떤 검색어가 들어오는지부터 봐라.
+핸드오프에 "🔴 45건"으로 적혀 있던 수치는 오늘 기준 **33건**이다. 남은 🔴 **18편은 세 덩어리**:
+
+| 덩어리 | 편수 | 글 |
+|---|---:|---|
+| **대회·이벤트 가이드** | 9 | `wsop-2025`·`wsop-2026`·`apt-jeju-classic-2026`·`apt-jeju-2026-fall`·`appt-korea-2026`·`apt-incheon-2026`·`pokerstars-appt-satellite`·`ggpoker-wsop-express-satellite`·`holdem-community-event-guide` |
+| **토너먼트 클러스터 잔여** | 5 | `tournament-schedule-check`·`tournament-tax-guide`·`tournament-buy-in-cost`·`tournament-vs-cash-game`·`bubble-strategy` (+ `icm-poker-meaning` 🟠) |
+| **스타팅핸드·개별** | 4 | `ak-offsuit-strategy`·`pocket-kings-kk`·`pocket-aces-aa`·`holdem-raise-how-much` |
+
+★ **WORKLOG 07-28의 "대회 클러스터 10편 전수 경화 완료"와 모순돼 보이지만 둘 다 맞다** —
+§14-A 경화 표준은 07-30~31에 확립됐고 게이트는 07-31에 만들어졌다. **07-28 경화는 그 이전 기준**이다.
+"경화 완료" 기록을 볼 땐 **그 시점의 기준이 무엇이었는지**를 같이 봐야 한다.
+
+★ **다음 순서 권장**: 토너먼트 클러스터 잔여 5편. 오늘 `CLUSTERS`에 '토너먼트'를 넣어 뒀으므로
+이제 이 5편을 손대면 **형제 대조를 받으며** 경화된다. 대회 이벤트 가이드 9편은 날짜·바이인이
+회차마다 달라 [[event-guide-consistency-review]] 방식(fact-instance 전수 diff)이 따로 필요하다.
+
+**A-2. ⚠ 내가 8/2에 만든 대기열은 지표를 잘못 골랐다 — 폐기하고 다시 뽑아라**
+
+`npm run ga -- --pages`의 참여율로 대상을 골랐는데, **WORKLOG 494행이 그건 함정이라고 이미 적어 뒀다**:
+페이지 경로 기준 참여율은 **내부링크로 넘어온 세션(이미 2페이지째 = 자동 참여)이 섞인다.**
+글이 실제로 튕겨내는지는 **랜딩 기준**으로 봐야 한다 → `npm run ga:page <path>` · `npm run gsc:page <path>`.
+
+- `holdem-range-meaning`(53.1%)은 **이미 경화된 글이다**(`aaf5b16`). 진단 결과 진짜 문제는 이탈이 아니라
+  **GSC 90일 클릭 0·노출 47** — "구글에서 안 보이는 것"이었다. 대기열에서 뺀다.
+- `holdem-masters-7th-guide`(68세션 63.2%)는 게이트 🔴 0건이다 = 경화 항목으로 설명되지 않는 이탈.
+  `ga:page`로 랜딩 기준 참여율을 먼저 재고, `gsc:page`로 어떤 검색어가 들어오는지 본 다음 판단할 것.
+- 하위 4줄(n=15~24)은 66.7% = "3명 중 1명" 수준이라 표본부터 의심할 것.
 
 **B. ★이벤트 저조 별건 — 성격이 다르다**
 - **`holdem-hand-rankings`(족보 필라): 체류 0m16s · 이벤트/세션 1.90** (사이트 평균 4.77).
