@@ -634,6 +634,13 @@ function auditHandsIn(post, PE) {
       }
     }
   }
+  // H7 억제 대상 — "이 비교는 실제 홀덤에서 나오지 않는다"고 본문이 **스스로 밝힌** 자리.
+  // 무늬 서열이 없다는 규칙을 가르치려고 일부러 추상 비교를 쓰고 각주를 단 경우가 있다
+  // (holdem-vs-7poker-hand-rankings). 그건 결함이 아니라 의도된 서술이므로 울리면 오탐이다.
+  const H7_DISCLAIMER = /(일어나지 않습니다|나오지 않습니다|성립하지 않습니다|보드는 5장|최소 6장)/;
+  const h7Exempt = [];
+  c.split('\n').forEach((ln, i) => { if (H7_DISCLAIMER.test(ln)) h7Exempt.push(i + 1); });
+
   const paras = [];
   let off = 0;
   for (const p of c.split(/\n[ \t]*\n/)) {
@@ -658,6 +665,37 @@ function auditHandsIn(post, PE) {
         why: !sc ? '카드 수 부족' : sc.board.length !== 5 ? `보드 ${sc.board.length}장(5장 아님)` : '홀카드 라벨 없음',
       });
     }
+    /* H7 — 5장 vs 5장인데 공유 카드가 0장 = 홀덤에서 나올 수 없는 조합
+     *
+     * 근거(순수 산수): 각 플레이어의 베스트 5장은 홀카드가 2장뿐이라 **최소 3장을 보드에서** 가져온다.
+     * 두 명이면 3+3=6장이 필요한데 보드는 5장뿐이므로, 비둘기집 원리로 **두 베스트 5장은 반드시
+     * 1장 이상을 공유**한다. 공유가 0장이면 그 상황은 홀덤에서 발생할 수 없다.
+     *
+     * ★왜 필요한가 (2026-08-02): `holdem-tiebreak-rules` 한 편에서 이 유형이 **3건** 나왔다 —
+     *   로열플러시 2개·브로드웨이 2개·플러시 2개(스페이드 vs 다이아). 전부 "무늬 서열이 없다"를
+     *   가르치려다 나온 것인데, 정작 그 상황 자체가 홀덤에 없다.
+     *
+     * ★반드시 `if (!sc) continue` **앞**에 있어야 한다. 이 문단들은 보드 라벨이 없어 extractScenario가
+     *   null을 주고, 기계는 "보드 0장"으로 분류해 **미판정으로 넘겨버린다.** 가드 뒤에 두면
+     *   정작 잡아야 할 자리에서만 조용해진다(2026-08-01 C1/C2가 --slug 모드에서만 죽어 있던 것과 같은 함정).
+     *
+     * WARN인 이유: "vs"로 이어진 두 5장이 **같은 쇼다운**이라는 추론까지는 기계가 확신할 수 없다
+     * (족보 강약을 추상적으로 비교하는 문장일 수도 있다). 산수는 확실하니 사람에게 올린다.
+     */
+    for (const ln of para.split('\n')) {
+      const sides = ln.split(/\s+(?:vs|VS|Vs|대)\s+/);
+      if (sides.length !== 2) continue;
+      const L = tokenizeCards(sides[0]).map((t) => t.id);
+      const R = tokenizeCards(sides[1]).map((t) => t.id);
+      if (L.length !== 5 || R.length !== 5) continue;
+      if (L.some((x) => R.includes(x))) continue;
+      // 본문이 "실제로는 안 나온다"고 이미 밝혔으면 의도된 추상 비교다(위 h7Exempt 주석 참조).
+      if (h7Exempt.some((d) => Math.abs(d - line) <= 8)) continue;
+      add('WARN', 'H7',
+        `L${line} 5장 vs 5장인데 공유 카드 0장 — 홀덤에서 나올 수 없는 조합`,
+        [ln.trim(), '베스트5는 보드에서 최소 3장을 가져오므로 두 손은 반드시 1장 이상을 공유한다(3+3>5)']);
+    }
+
     if (!sc) continue;
     if (sc.board.length === 5 && sc.players.length === 0) stat.unanchored++;  // 보드는 있는데 홀카드 라벨을 못 잡음
 
@@ -1096,6 +1134,8 @@ if (argv.includes('--selftest')) {
     ['표 두 열의 베스트5는 별개다 (오탐 금지)', false,
       '| **홀카드** | K♠ 7♣ | K♥ 2♦ |\n| **보드** | K♦ K♣ Q♥ Q♦ J♠ | (동일) |\n| **베스트 5장** | K♠ K♦ K♣ Q♥ Q♦ | K♥ K♦ K♣ Q♥ Q♦ |\n| **결과** | 풀하우스 | 풀하우스 → **스플릿** |'],
 
+    /* H7(5장 vs 5장 공유 0장) 픽스처는 WARN 등급이라 아래 H7FIX 블록에서 따로 돌린다. */
+
     /* ── 다국어 (2026-07-31 EN·ja·zh·es·pt·id 전수조사에서 실측된 오탐/검출) ── */
     ['ja 족보 오기 (잡아야 함)', true, '**A♠ K♠ Q♠ J♠ 10♠** — フルハウス。'],
     ['zh 족보 오기 (잡아야 함)', true, '**9♥ 8♥ 7♥ 6♥ 5♥** —— 葫芦。'],
@@ -1126,6 +1166,29 @@ if (argv.includes('--selftest')) {
   console.log('\n══════ 자가 테스트 ══════');
   for (const [name, shouldFire, content] of FIX) {
     const found = auditHandsIn({ slug: 'selftest', content }, PE).filter((x) => x.sev === 'ERR');
+    const ok = shouldFire ? found.length > 0 : found.length === 0;
+    if (ok) pass++;
+    console.log(`${ok ? '✅' : '❌'} ${shouldFire ? '[잡아야 함]' : '[울리면 안 됨]'} ${name}`);
+    for (const x of found) console.log(`      → [${x.code}] ${x.msg}`);
+  }
+
+  /* ── WARN 등급 핸드 검사(H7) 자가 테스트 ──
+     위 FIX 루프는 ERR만 센다. H7은 "vs로 이어진 두 5장이 같은 쇼다운인가"를 기계가 확신할 수 없어
+     WARN으로 두었으므로 별도로 검증해야 한다. 안 그러면 검사가 죽어도 자가 테스트가 초록이다. */
+  const H7FIX = [
+    ['H7 로열 vs 로열 — 공유 0장이라 홀덤에서 불가능 (잡아야 함)', true,
+      'A♠ K♠ Q♠ J♠ 10♠ vs A♥ K♥ Q♥ J♥ 10♥ → 무늬 달라도 숫자 동일이라 스플릿.'],
+    ['H7 다른 무늬 플러시끼리 — 보드 6장이 필요하다 (잡아야 함)', true,
+      'A♠ K♠ Q♠ J♠ 9♠ vs A♦ K♦ Q♦ J♦ 8♦ → 9 > 8 이라 스페이드 승리.'],
+    ['H7 본문이 "실제로는 안 나온다"고 밝혔으면 의도된 비교다 (오탐 금지)', false,
+      'A♠ K♠ Q♠ J♠ 9♠ vs A♥ K♥ Q♥ J♥ 9♥ → 스플릿 팟.\n\n서로 다른 무늬로 동시에 플러시를 만드는 일은 일어나지 않습니다. 보드는 5장뿐이기 때문입니다.'],
+    ['H7 보드를 공유하는 정상 쇼다운은 울리지 않는다 (오탐 금지)', false,
+      '**보드**: A♠ K♠ Q♠ J♠ 2♥ / **나**: 9♠ 3♦ / **상대**: 8♠ 5♦\n나는 A-K-Q-J-9, 상대는 A-K-Q-J-8 이라 내가 이깁니다.'],
+    ['H7 홀카드끼리 2장 비교는 대상이 아니다 (오탐 금지)', false,
+      'A♠ K♦ vs A♥ K♣ — 보드에서 같은 족보가 완성되면 스플릿입니다.'],
+  ];
+  for (const [name, shouldFire, content] of H7FIX) {
+    const found = auditHandsIn({ slug: 'selftest', content }, PE).filter((x) => x.code === 'H7');
     const ok = shouldFire ? found.length > 0 : found.length === 0;
     if (ok) pass++;
     console.log(`${ok ? '✅' : '❌'} ${shouldFire ? '[잡아야 함]' : '[울리면 안 됨]'} ${name}`);
@@ -1260,7 +1323,7 @@ if (argv.includes('--selftest')) {
     for (const x of found) console.log(`      → [${x.code}] ${x.msg}`);
   }
 
-  const TOTAL = FIX.length + CFIX.length + WFIX.length + KFIX.length + AFIX.length + DFIX.length;
+  const TOTAL = FIX.length + H7FIX.length + CFIX.length + WFIX.length + KFIX.length + AFIX.length + DFIX.length;
   console.log(`\n${pass}/${TOTAL} 통과`);
   process.exit(pass === TOTAL ? 0 : 1);
 }
