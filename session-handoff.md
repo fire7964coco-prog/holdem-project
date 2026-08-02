@@ -244,16 +244,20 @@ https://www.holdemmaster.com/blog/holdem-probability
 https://www.holdemmaster.com/blog/holdem-odds-calculator
 ```
 
-**⚫ 성격이 다른 3건 — noindex 재크롤 트리거 (빠뜨리기 쉬움)**
-```
-https://www.holdemmaster.com/hands
-https://www.holdemmaster.com/hand-chart
-https://www.holdemmaster.com/en/hand-chart
-```
-코드상 noindex는 5개인데 **GSC는 3개만 인식**한다 = 나머지는 재크롤이 안 돼 미반영.
-사이트맵에서 빼놨기 때문에 자연 재크롤이 안 온다.
-색인 요청이 **거부(noindex 감지)되는 것이 정상이고 그게 de-index의 시작**이다.
-⚠ `/hands`는 지금도 "홀덤 족보" **16.4위**로 필라(29.4위)를 누르고 있다.
+**⚫ ~~noindex 재크롤 트리거 3건~~ — 🔴 2026-08-02 취소. 요청하지 말 것 (할당량 낭비)**
+
+> 이 항목은 **이미 끝난 일**이었다. URL 검사 API로 확인:
+> `/hands` = **Excluded by 'noindex' tag** · BLOCKED_BY_META_TAG · 마지막 크롤 **2026-07-22** ·
+> 구글 canonical도 `/hands` 자기 자신. `/hand-chart`도 동일(크롤 7/24).
+> "GSC는 3개만 인식한다"는 **낡은 기록**이었다.
+>
+> 주차별 실측이 결정적이다 — `/hands` 노출이 **169(7/17~23) → 0(7/24~30)**으로 사라졌고,
+> 같은 주에 족보 필라가 135 → **169노출·21위 → 18위**로 올라왔다. de-index는 작동했다.
+>
+> ⚠ **28일 총계로 보면 아직 살아 있는 것처럼 보인다**(「홀덤 족보 순위」 283노출을 /hands 175 ·
+> 필라 108로 나눠 갖는 것으로 나온다). 그건 7/22 이전 구간이 섞인 것이다.
+> 오전의 apex 307과 **완전히 같은 함정에 하루에 두 번 빠졌다.** 조치가 있었던 지표는
+> 반드시 **주차별로 잘라서** 봐라 — [[analytics-window-28days]].
 
 > **할당량이 모자라면 1순위 4건 + noindex 3건을 먼저.** 2·3순위는 하루 미뤄도 손실이 거의 없다.
 
