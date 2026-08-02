@@ -347,6 +347,13 @@ function auditPost(post, allSlugs) {
   if (iAnswer >= 0 && h2Offsets.length >= 3 && iAnswer > h2Offsets[2]) {
     add('WARN', 'F10', '"바로 답"이 본문 한참 뒤에 있음(3번째 H2 이후)');
   }
+  // §14-A 6의 순서는 … → :::stripe → 바로 답 → H2들 이다. stripe가 뒤에 오면 독자가
+  // 한 줄 요약을 보기 전에 직답부터 만나 두 블록이 같은 말을 두 번 하는 것처럼 읽힌다.
+  // 2026-08-02 실측: 14편 중 6편이 역순이었고, 라벨 존재만 보던 F1은 이걸 못 잡았다.
+  const iStripe = c.indexOf(':::stripe');
+  if (iStripe >= 0 && iAnswer >= 0 && iStripe > iAnswer) {
+    add('WARN', 'F10', ':::stripe 가 "바로 답"보다 뒤에 있음 (§14-A 6 순서: stripe → 바로 답)');
+  }
   if (iReadnext >= 0 && iFaq >= 0 && iReadnext > iFaq) add('WARN', 'F10', ':::readnext 가 FAQ보다 뒤에 있음');
   if (iReadnext < 0) add('INFO', 'F10', ':::readnext 카드 없음');
   if (!post.image) add('WARN', 'F10', 'image 없음');
@@ -1315,6 +1322,25 @@ if (argv.includes('--selftest')) {
       '초대권을 따도 DAY1을 아무 날이나 가는 게 아니라 정해진 플라이트 날짜에 가야 합니다.\n\n' +
       '초대권을 따도 DAY1을 아무 날이나 가는 게 아니라 정해진 플라이트 날짜에 가야 합니다.'],
   ];
+  /* ── F10 구조 배치 순서(§14-A 6) 자가 테스트 — stripe → 바로 답 ──
+     라벨 존재만 보던 F1은 순서를 못 잡는다. 2026-08-02에 14편 중 6편이 역순이었다. */
+  const OFIX = [
+    ['stripe → 바로 답 정순 (울리면 안 됨)', false,
+      ':::stripe\n정의 | 어쩌고\n:::\n\n> **바로 답**\n> 직답입니다.'],
+    ['바로 답 → stripe 역순 (잡아야 함)', true,
+      '> **바로 답**\n> 직답입니다.\n\n:::stripe\n정의 | 어쩌고\n:::'],
+    ['stripe가 아예 없으면 순서 검사 대상이 아니다 (울리면 안 됨)', false,
+      '> **바로 답**\n> 직답입니다.\n\n## 첫 번째 질문인가요?'],
+  ];
+  for (const [name, shouldFire, content] of OFIX) {
+    const found = auditPost({ slug: 'selftest', title: 't', seoTitle: 't', desc: 'd', content, image: '/i.webp', imageAlt: 'a' }, new Set(['selftest']))
+      .filter((x) => x.code === 'F10' && /stripe/.test(x.msg));
+    const ok = shouldFire ? found.length > 0 : found.length === 0;
+    if (ok) pass++;
+    console.log(`${ok ? '✅' : '❌'} ${shouldFire ? '[잡아야 함]' : '[울리면 안 됨]'} ${name}`);
+    for (const x of found) console.log(`      → [${x.code}] ${x.msg}`);
+  }
+
   for (const [name, shouldFire, content] of DFIX) {
     const found = auditDuplication({ slug: 'selftest', content }).filter((x) => x.code === 'E1');
     const ok = shouldFire ? found.length > 0 : found.length === 0;
@@ -1323,7 +1349,7 @@ if (argv.includes('--selftest')) {
     for (const x of found) console.log(`      → [${x.code}] ${x.msg}`);
   }
 
-  const TOTAL = FIX.length + H7FIX.length + CFIX.length + WFIX.length + KFIX.length + AFIX.length + DFIX.length;
+  const TOTAL = FIX.length + H7FIX.length + CFIX.length + WFIX.length + KFIX.length + AFIX.length + OFIX.length + DFIX.length;
   console.log(`\n${pass}/${TOTAL} 통과`);
   process.exit(pass === TOTAL ? 0 : 1);
 }
