@@ -1,0 +1,20 @@
+/* HoldemMaster 인포그래픽 공통 스타일 — 선명도 개선판
+   · 3x 렌더 → lanczos3 다운스케일 → sharpen → webp q88
+   · 본문 대비 상향(#fbf7ec / #c3d4c8), 소자 굵기 700↑ */
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  width:1200px;height:675px;overflow:hidden;
+  font-family:"Malgun Gothic","맑은 고딕","Apple SD Gothic Neo",sans-serif;
+  background:radial-gradient(120% 100% at 50% 0%,#17402c 0%,#0d2419 55%,#081710 100%);
+  color:#fbf7ec;display:flex;flex-direction:column;justify-content:center;
+  padding:48px 68px;position:relative;
+  -webkit-font-smoothing:antialiased;text-rendering:geometricPrecision;
+}
+.kicker{font-size:19px;letter-spacing:.2em;color:#e5c04a;font-weight:800;margin-bottom:11px}
+h1{font-size:43px;font-weight:800;letter-spacing:-.02em;margin-bottom:30px;line-height:1.2}
+h1 em{font-style:normal;color:#e5c04a}
+.foot{margin-top:26px;font-size:18px;color:#c3d4c8;text-align:center;font-weight:600}
+.foot b{color:#f2dc93;font-weight:800}
+.wm{position:absolute;right:32px;bottom:22px;display:flex;align-items:center;gap:9px;
+  color:#e5c04a;opacity:.72;font-size:17px;font-weight:800}
+.wm svg{width:19px;height:19px;fill:#e5c04a}
