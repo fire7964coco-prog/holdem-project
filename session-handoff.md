@@ -7,7 +7,65 @@
 
 ## ▶▶▶▶▶▶▶▶▶ 새 세션 START HERE
 
-### ▶ 0-◉. 2026-08-02 (3) 세션 — 분석 창 28일 전환 + 이탈 1위 경화 (여기서 멈춤)
+### ▶ 0-◎. 2026-08-02 (4) 세션 — 구조 결함 전수 + 프리미엄 핸드 3부작 경화 (여기서 멈춤)
+
+> **작업 트리 깨끗 · audit:hard 통과 42/57편(🔴 33 → 24) · selftest 64/64 · build 611.**
+> 커밋: `86e4cba`(캐노니컬 13라우트) · `fb1caf7`(F3+템플릿) · `5a9d22a`·`6c66371`·`3630f54`(KK·AA·AK) ·
+> `13b5b52`·`dcba8cb`(적대 렌즈 반영) · `1c0397d`(구조 개선). 상세는 `WORKLOG.md` 2026-08-02 (9).
+
+**★이번 세션 최대 발견 — 캐노니컬이 13개 라우트에서 홈을 가리키고 있었다**
+
+`/pub`·`/ranking`·`/quiz`·`/rules/*`·`/hands`·`/hand-chart`·`/blog/roadmap` 등이 **자기 자신이 아니라
+홈페이지를 canonical로 선언**하고 있었다. 원인은 루트 레이아웃의 `alternates.canonical`이 절대 URL이라
+**metadata를 선언하지 않은 라우트가 그걸 그대로 상속**한 것. 구글에겐 "이 페이지는 홈의 사본"이라는 뜻이다.
+
+근본 원인은 `components/seo.tsx`였다 — **`useEffect`로 메타를 심는 클라이언트 컴포넌트**라
+크롤러가 받는 HTML에는 아무것도 없다. 파일 상단 주석이 오히려 "SEO 처리됨"이라고 적혀 있어
+**읽어서는 절대 안 잡히는 결함**이었다. 주석을 🔴 경고로 교체하고 13개 라우트에 서버 metadata를 넣었다.
+재발 방지로 `npm run canonical`(`scripts/canonical-check.mjs`) 신설 — 빌드 산출물 HTML을 직접 읽는다.
+
+**★`lib/posts/_template.ts`가 죽은 FAQ의 진원지였다**
+8/1 홀덤펍 15문항 · 8/2 대회글 6문항 · KK 6문항이 전부 스키마 0이었던 이유 —
+**템플릿의 FAQ 예시가 `### Qn.` 구형**이었다. 템플릿을 §14-A 현행 표준으로 전면 재작성했다.
+(`:::stripe`→바로답 순서, 질문형 H2 70%, Q-A-E, `:::readnext`, 올바른 FAQ 형식, 게이트 실행 체크리스트)
+
+**★프리미엄 핸드 3부작 경화 — AA·KK·AK**
+90일 노출이 AA **0** · KK **0** · AK **3**이었다. 태그·제목이 검색어와 무관했다(rakko 서제스트 실측).
+seoTitle을 「홀덤 AA/KK/AK」 실검색 표기로 갈고, 사실 오류를 잡고, 구조를 형제 글끼리 맞췄다.
+
+| 잡은 것 | 어디서 |
+|---|---|
+| AK **vs AA 12% → 7%** (표 + 산문 두 곳) | 적대 검수 |
+| AA 멀티웨이 승률표 전면 정정(85/73/64/56/49) | 적대 검수 |
+| AA 도입부 상대 핸드 6-10 → **10-4o** (6-10이면 플랍에서 이미 스트레이트라 이야기가 성립 안 함) | 적대 검수 |
+| KK **FAQ 0→6문항** · §13 17→22% | 게이트 + 검수 |
+| 필라(`lib/posts.ts`)의 KK 요약이 자식 글과 **정면충돌**("조심스럽게" ↔ "C벳으로 정보를 받는다") | 적대 검수 |
+| 3편 사이 내부링크 **1/6 → 6/6** · 표 형식 통일 · 마무리 H2 신설 | SEO 렌즈 |
+
+★**내 직답이 결함을 만든다** — 이번에도 축어 중복 8건, 사실 오류("QQ·JJ·TT를 붙잡아 앞선 상태로"
+→ AK는 43%로 **뒤진다**), 문체 드리프트(합쇼체 글에 해요체)를 내가 새로 주입했다.
+[[adversarial-review-lens-diversity]]의 "**수정이 새 모순을 만든다 → 2차 교열 패스 필수**"가 또 맞았다.
+
+★**게이트에 검사 2종 추가** — H7(홀덤에서 불가능한 "5장 vs 5장 0장 공유" 판정) · F10 확장(`:::stripe`가
+`바로 답`보다 앞에 오는지). selftest 56 → **64**. ⚠ H7은 처음에 `if (!sc) continue` **뒤에** 놓아
+한 번도 발화하지 못했다 — 셀프테스트 픽스처가 아니었으면 못 잡았다. 게이트도 검증해야 게이트다.
+
+### ▶ 0-◎-1. 🔴 남은 것 — 새 세션은 여기서 시작
+
+1. **토너먼트 클러스터 잔여 4편** — `bubble-strategy`(구형 FAQ 7) · `tournament-buy-in-cost`(6) ·
+   `tournament-schedule-check`(6) · `tournament-tax-guide`. 전부 **같은 클러스터라 묶으면 형제 대조가 같이 돈다.**
+   구형 `### Q` FAQ가 죽어 있는 유형이라 처방이 이미 정해져 있다 — **다음 세션 1순위로 권장.**
+2. **대회·이벤트 가이드 9편** — 날짜·바이인이 회차마다 달라 [[event-guide-consistency-review]] 방식
+   (fact-instance 전수 diff)이 따로 필요하다. 경화 표준만으로는 안 된다.
+3. **C1 형제 표 수치 불일치 3건** — `tiebreak-rules`↔`blind-meaning` · `blind-meaning`↔`flush-vs-straight` ·
+   `position-is-everything`↔`when-to-fold-preflop`(4건). 개별 글은 다 참인데 **글끼리 어긋난다.**
+4. **`holdem-raise-how-much`** 1편 개별 잔여.
+5. **8/3 제8회 홀덤 마스터스 개막** — `holdem-masters-7th-guide` 갱신 필요.
+   `docs/update-calendar.md` 참조. 8/2는 챔피언스 결승일이라 일부러 미뤘다.
+6. **2~3주 뒤 재측정** — 3부작이 「홀덤 AA」·「홀덤 KK」·「홀덤 AK」에서 노출을 받기 시작하는지.
+   **색인 요청(0-★ 1순위-B) 전에는 측정 자체가 불가능하다.**
+
+### ▶ 0-◉. 2026-08-02 (3) 세션 — 분석 창 28일 전환 + 이탈 1위 경화
 
 > **작업 트리 깨끗 · audit:hard 🔴 0 🟠 0 · selftest 56/56 · build 611 · FAQ 0 → 10문항.**
 > 사장님이 "지금 하는 것까지만 하고 멈춰"라고 하셔서 1편 경화 + 클러스터 신설까지만 하고 종료.
@@ -27,19 +85,20 @@
 
 ### ▶ 0-◉-1. 🔴 남은 것 — 새 세션은 여기서 시작
 
-**A. ★KO 경화 현황 — 게이트 실측이 진실이다 (2026-08-02)**
+**A. ★KO 경화 현황 — 게이트 실측이 진실이다** ⚠ **이 표는 낡았다 → 0-◎-1을 볼 것**
 
 ```
-npm run audit:hard -- --all   →  통과(무결) 38/57편 · 🔴 33건 · 🟠 40건 · 승인된 예외 2건
+2026-08-02 (3) 시점  →  통과 38/57편 · 🔴 33건 · 🟠 40건
+2026-08-02 (4) 시점  →  통과 42/57편 · 🔴 24건 · 🟠 31건   ← 현재
 ```
 
-핸드오프에 "🔴 45건"으로 적혀 있던 수치는 오늘 기준 **33건**이다. 남은 🔴 **18편은 세 덩어리**:
+당시 남은 🔴 18편의 분류(스타팅핸드 3편·`tournament-vs-cash-game`은 (4) 세션에서 해소):
 
 | 덩어리 | 편수 | 글 |
 |---|---:|---|
 | **대회·이벤트 가이드** | 9 | `wsop-2025`·`wsop-2026`·`apt-jeju-classic-2026`·`apt-jeju-2026-fall`·`appt-korea-2026`·`apt-incheon-2026`·`pokerstars-appt-satellite`·`ggpoker-wsop-express-satellite`·`holdem-community-event-guide` |
-| **토너먼트 클러스터 잔여** | 5 | `tournament-schedule-check`·`tournament-tax-guide`·`tournament-buy-in-cost`·`tournament-vs-cash-game`·`bubble-strategy` (+ `icm-poker-meaning` 🟠) |
-| **스타팅핸드·개별** | 4 | `ak-offsuit-strategy`·`pocket-kings-kk`·`pocket-aces-aa`·`holdem-raise-how-much` |
+| **토너먼트 클러스터 잔여** | 5 | `tournament-schedule-check`·`tournament-tax-guide`·`tournament-buy-in-cost`·~~`tournament-vs-cash-game`~~·`bubble-strategy` (+ `icm-poker-meaning` 🟠) |
+| **스타팅핸드·개별** | 4 | ~~`ak-offsuit-strategy`·`pocket-kings-kk`·`pocket-aces-aa`~~·`holdem-raise-how-much` |
 
 ★ **WORKLOG 07-28의 "대회 클러스터 10편 전수 경화 완료"와 모순돼 보이지만 둘 다 맞다** —
 §14-A 경화 표준은 07-30~31에 확립됐고 게이트는 07-31에 만들어졌다. **07-28 경화는 그 이전 기준**이다.
@@ -67,8 +126,11 @@ npm run audit:hard -- --all   →  통과(무결) 38/57편 · 🔴 33건 · 🟠
   16.4위로 필라를 누르고 있는 것과 같이 봐야 한다.
 - `/ranking` 103세션·0m25s·이탈 29 · `/hands` 이벤트 1.86.
 
-**C. 다른 글도 `### Q` FAQ가 죽어 있는지 훑을 것** — 8/1 홀덤펍 15문항, 8/2 대회글 6문항.
-**두 번 다 같은 유형이 나왔다.** 전수 스캔이 값어치 있다(소스 `### Q` grep → 빌드 산출물 Question 수 대조).
+**C. ~~다른 글도 `### Q` FAQ가 죽어 있는지 훑을 것~~ — ✅ 2026-08-02 (4) 해결.**
+게이트 **F3이 이 유형을 직접 잡도록** 돼 있다("FAQ 스키마 0개 — 그런데 본문에 구형 `### Q` 형식 N문항이
+있다"). 손으로 훑을 필요가 없다. 현재 남은 건 `bubble-strategy`(7) · `buy-in-cost`(6) ·
+`schedule-check`(6) **3편뿐**이고 전부 토너먼트 클러스터다.
+**진원지도 찾아 고쳤다** — `lib/posts/_template.ts`의 FAQ 예시가 구형이었다.
 
 **D. 이전 세션 잔여** — 0-●(홀덤펍 필라)의 남은 것 5건, 0-◆-1의 3·4번은 아래 그대로.
 
@@ -229,15 +291,36 @@ https://www.holdemmaster.com/blog/holdem-pub-guide
 https://www.holdemmaster.com/blog/holdem-blind-steal
 https://www.holdemmaster.com/blog/holdem-blind-meaning
 https://www.holdemmaster.com/blog/holdem-tournament-how-to-enter
+https://www.holdemmaster.com/blog/holdem-tournament-vs-cash-game
 ```
 | URL | 무엇이 바뀌었나 |
-| `holdem-blind-meaning` | 8/2 추가 — 제목에 **BB 표기 신설** + BB 계산 답을 상단으로. 141노출 7.9위인데 CTR 0.7%였다 |
-| `tournament-how-to-enter` | 8/2 추가 — FAQ **0→10문항**(`### Qn.`이라 스키마가 죽어 있었다) + 질문형 H2 0→100% |
 |---|---|
 | `pub-first-visit-guide` | FAQ **0→8문항** · 이미 CTR 10.3%라 효과 가장 큼 · 8/2에 본문도 크게 손봄 |
 | `pub-legal` | FAQ **0→7문항** + 법조문 오류 수정 + 8/2 전면 재구성 |
 | `pub-guide` | 필라(90일 노출 1) · 고유 콘텐츠 신설 |
 | `blind-steal` | 210노출 5.8위·클릭 0 → 제목·설명 전면 교체 |
+| `blind-meaning` | 8/2 추가 — 제목에 **BB 표기 신설** + BB 계산 답을 상단으로. 141노출 7.9위인데 CTR 0.7%였다 |
+| `tournament-how-to-enter` | 8/2 추가 — FAQ **0→10문항**(`### Qn.`이라 스키마가 죽어 있었다) + 질문형 H2 0→100% |
+| `tournament-vs-cash-game` | 8/2 추가 — FAQ **0→8문항** 동일 유형 + 질문형 H2·바로답 신설 |
+
+**🔴 1순위-B — 프리미엄 핸드 3부작 (8/2 경화, `dcba8cb`·`1c0397d`)**
+```
+https://www.holdemmaster.com/blog/pocket-aces-aa-strategy
+https://www.holdemmaster.com/blog/pocket-kings-kk-strategy
+https://www.holdemmaster.com/blog/ak-offsuit-strategy
+```
+> ★**이 3편은 재크롤이 없으면 아무 일도 안 일어난다** — 90일 노출이 AA **0** · KK **0** · AK **3**이다.
+> "순위가 낮다"가 아니라 **구글이 이 글들을 검색 결과에 거의 안 올린다**. 8/2에 seoTitle을
+> 「홀덤 AA/KK/AK」 실검색 표기로 전부 갈아엎었는데, 그 표기가 색인에 반영돼야 측정이 시작된다.
+
+| URL | 무엇이 바뀌었나 |
+|---|---|
+| `pocket-aces-aa` | seoTitle 전면 교체 · 멀티웨이 승률표 정정(85/73/64/56/49) · C벳 사이즈 표 통합 · 마무리 H2 신설 |
+| `pocket-kings-kk` | **FAQ 0→6문항** · seoTitle 교체 · §13 수치 정정(17→22%) · 초기 일러스트 3장을 현행 스타일로 교체 |
+| `ak-offsuit` | seoTitle 교체 · vs AA **12%→7%** 정정 · 신설 3절(승률/빅슬릭/수티드 비교) · FAQ 스키마 5문항 생존 확인 |
+
+⚠ 3편 모두 **빌드 산출물에서 Question 6·6·5 생존 확인**(2026-08-02). 메모리 `faq-schema-build-output-is-truth`의
+"ak-offsuit는 아직 0"은 **해소됐다**.
 
 **🟠 2순위**
 ```
@@ -268,7 +351,12 @@ https://www.holdemmaster.com/blog/holdem-odds-calculator
 > 오전의 apex 307과 **완전히 같은 함정에 하루에 두 번 빠졌다.** 조치가 있었던 지표는
 > 반드시 **주차별로 잘라서** 봐라 — [[analytics-window-28days]].
 
-> **할당량이 모자라면 1순위 4건 + noindex 3건을 먼저.** 2·3순위는 하루 미뤄도 손실이 거의 없다.
+> **할당량이 모자라면 1순위 7건 → 1순위-B 3건 순으로.** 2·3순위는 하루 미뤄도 손실이 거의 없다.
+> (취소된 noindex 3건은 요청하지 말 것 — 위 ⚫ 항목 참조)
+>
+> 순서 근거: 1순위는 **이미 노출이 있는 글**이라 재크롤 즉시 CTR로 결과가 보인다.
+> 1순위-B는 **노출 자체가 0**이라 재크롤이 있어야 비로소 측정이 시작되는 쪽이다 — 급하진 않지만
+> **안 하면 8/2 작업의 효과를 영원히 알 수 없다.**
 
 **이미 완료한 것** — 색인 안 된 9편(`holdem-strategy`·`buy-in-cost`·`overbet-strategy`·
 `raise-how-much`·`value-bet-sizing`·`bankroll-management`·`community-event-guide`·
