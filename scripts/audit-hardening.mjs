@@ -287,7 +287,20 @@ function auditPost(post, allSlugs) {
 
   /* F3 — FAQ 스키마 */
   const faq = getFaq(c);
-  if (faq.length === 0) add('ERR', 'F3', 'FAQ 문항 0개 — 리치결과 없음');
+  if (faq.length === 0) {
+    // ★"FAQ가 없다"와 "FAQ는 있는데 구형 형식이라 스키마가 0이다"는 처방이 정반대다.
+    //   후자는 새로 쓸 게 아니라 형식만 바꾸면 즉시 살아난다.
+    //   2026-08-02 하루에 세 번 나왔다(홀덤펍 15문항·대회참가 6·토너먼트vs캐시 6).
+    //   그때마다 "FAQ 문항 0개"만 보고 사람이 소스를 열어보고서야 알아챘다 — 그 왕복을 없앤다.
+    //   posting.mdc가 금지한 구형: `### Q1. 질문` (스타일드 카드 미렌더 + FAQPage 스키마 누락)
+    const legacyQ = [...c.matchAll(/^#{3,4}\s*Q\s*\d*\s*[.·:]?\s*(.+)$/gm)];
+    if (legacyQ.length) {
+      add('ERR', 'F3',
+        `FAQ 스키마 0개 — 그런데 본문에 구형 "### Q" 형식 ${legacyQ.length}문항이 있다. 새로 쓰지 말고 형식만 바꿔라`,
+        [...legacyQ.slice(0, 3).map((m) => m[0].trim().slice(0, 50)),
+          '변환: `### Qn. 질문` → `**Q. 질문**` + 빈 줄 + `A. 답변` (posting.mdc §FAQ 형식)']);
+    } else add('ERR', 'F3', 'FAQ 문항 0개 — 리치결과 없음');
+  }
   else {
     const bad = faq.filter((x) => x.form !== 'ok');
     if (bad.length) add('ERR', 'F3', `FAQ ${faq.length}문항 중 ${bad.length}개 형식 깨짐(A. 누락 또는 빈 줄 없음)`,
