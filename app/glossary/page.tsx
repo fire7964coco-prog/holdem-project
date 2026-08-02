@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SITE } from "@/lib/site";
 import GlossaryClient from "./glossary-client";
 
 // ★2026-08-01: metadata export가 없어 /strategy와 <title>이 완전히 같았다(루트 기본값).
@@ -9,6 +10,8 @@ export const metadata: Metadata = {
   description:
     "홀덤 테이블에서 실제로 오가는 용어 27개를 한 곳에 모았습니다. 플랍·턴·리버·체크·레이즈 같은 기본부터 레인지·ICM까지, 뜻과 실전에서 쓰이는 장면을 함께 정리했습니다.",
   robots: { index: true, follow: true },
+  // ★2026-08-02: alternates 미선언 → 루트 layout의 홈 canonical을 물려받고 있었다.
+  alternates: { canonical: `${SITE}/glossary` },
 };
 
 export default function Page() {

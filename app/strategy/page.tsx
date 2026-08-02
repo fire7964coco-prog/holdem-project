@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SITE } from "@/lib/site";
 import StrategyClient from "./strategy-client";
 
 // ★2026-08-01: metadata export가 없어 루트 기본 제목("홀덤마스터 — 텍사스 홀덤 완벽 가이드")이
@@ -10,6 +11,9 @@ export const metadata: Metadata = {
   description:
     "타이트 어그레시브부터 포지션·스타팅 핸드·레인지 리딩·세미 블러핑·팟오즈까지, 홀덤 전략 주제를 한 화면에 모았습니다. 각 주제의 상세 가이드로 바로 이동하세요.",
   robots: { index: true, follow: true },
+  // ★2026-08-02: alternates를 선언하지 않으면 루트 layout의 canonical(홈 절대주소)을 물려받는다.
+  //   제목은 8/1에 고쳤지만 canonical은 계속 홈을 가리키고 있었다.
+  alternates: { canonical: `${SITE}/strategy` },
 };
 
 export default function Page() {

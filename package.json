@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "holdemmaster",
   "version": "1.0.0",
   "private": true,
@@ -28,6 +28,8 @@
     "snapshot:html": "node scripts/snapshot-html.mjs",
     "gsc:page": "node scripts/gsc-page.mjs",
     "triage": "node scripts/triage-posts.mjs",
+    "cannibal": "node scripts/cannibal-check.mjs",
+    "canonical:check": "node scripts/canonical-check.mjs",
     "ga:page": "node scripts/ga-page.mjs",
     "board": "node scripts/priority-board.mjs"
   },
