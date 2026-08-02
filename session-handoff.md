@@ -7,7 +7,56 @@
 
 ## ▶▶▶▶▶▶▶▶▶ 새 세션 START HERE
 
-### ▶ 0-⊚. 2026-08-02 (11) 세션 — `holdem-tournament-tax-guide` 재검수 (여기서 멈춤)
+### ▶ 0-◈. 2026-08-03 세션 — 토너먼트 클러스터 완결 (여기서 멈춤)
+
+> **작업 트리 깨끗 · 게이트 43/57 → 47/57(🔴 22 → 17 · 🟠 28 → 24) · 한국어 색인 57 → 56편.**
+> 커밋 `f49405c`(바이인) · `96137c6`(프로토콜) · `b64e0b8`(카니발) · `879e186`(ICM).
+> 상세는 `WORKLOG.md` 2026-08-03.
+
+**★토너먼트 클러스터 4편이 끝났다** — 버블 · 세금 · 바이인 · 일정확인. ICM까지 재경화 완료.
+
+**★`Post.noindex` 필드가 생겼다 (신규 기능)**
+카니발 몰아주기용. 걸면 **robots 메타 + 사이트맵 제외**가 함께 적용된다.
+⚠️ **canonical은 반드시 자기 자신으로 둘 것** — "색인하지 마라 + 정본은 다른 URL"은 모순 신호다
+(8/2 `/hands` 사고). `app/blog/[slug]/page.tsx`가 이미 자기 URL을 주므로 건드리지 말 것.
+첫 적용: `holdem-tournament-schedule-check`(28일 클릭 1 · 고유 쿼리 0개).
+
+**★판단 기준 — 카니발은 "겹친다"가 아니라 "고유 쿼리 0개"로 판정한다**
+`npm run cannibal` + `npm run gsc:page` 두 페이지 비교 + **자동완성으로 검색 의도 실재 확인**.
+schedule-check는 「일정 확인법」류 자동완성이 **0개**였다 — 아무도 안 치는 의도를 노리고 있었다.
+
+**★내 판단이 틀렸던 건**(참고용, 자책 아님 — 판정 절차의 실증)
+- `buy-in-cost`: "APPT 외국인 전용은 오해"라고 추론으로 뒤집었다가 **관광진흥법 제28조 원문 +
+  형제 글의 2025년 실측(한국 국적자 0명)**으로 재반전. SEO 렌즈가 형제 글 충돌로 잡았다.
+- `icm`: 렌즈가 준 "KK 에퀴티 70%"를 **검산 없이 받아썼다가** 2차 교열이 잡았다(실제 57.2%).
+  → **렌즈가 준 숫자는 반영 전 반드시 직접 계산한다.**
+
+**★프로토콜에 측정 편향 경고를 넣었다** — 교열 렌즈에 `git diff`만 주니 원리상
+"이번 편집의 결함"만 보고된다. 이제 렌즈 프롬프트에 **"①원본 유래 / ②이번 편집 유래" 구분**을
+요구하고, 보고서는 둘을 나란히 적는다(`REVIEW-PROTOCOL.md` 3층).
+
+### ▶ 0-◈-1. 🔴 남은 것 — 새 세션은 여기서 시작
+
+1. **★8/3 오늘 개막 — 제8회 홀덤 마스터스.** `holdem-masters-7th-guide` 갱신이 **시한 최우선**.
+   `docs/update-calendar.md` 참조.
+2. **대회·이벤트 가이드 9편** — 날짜·바이인이 회차마다 달라 [[event-guide-consistency-review]] 방식
+   (fact-instance 전수 diff)이 별도로 필요하다. 경화 표준만으로는 안 된다.
+   ※ `apt-incheon-2026-guide`는 **8/7 개막**이라 이 묶음에서 가장 급하다.
+3. **세금 서술 소급 정렬** — `apt-incheon-2026-guide`("필요경비 공제 후 약 22%") ·
+   `holdem-tournament-how-to-enter`("원칙적으로 국내 소득세 신고 대상")가
+   `holdem-tournament-tax-guide`와 단정 수위·기준이 어긋난다. 각 글 경화 차례에 정렬할 것.
+4. **AAAA 이미지 소급** — `icm-chips-not-money-real.webp`(에이스 4장)가 번역본 6편
+   (`holdem-tournament-vs-cash-game` ar·hi·ms·pt·tr·vi)의 "칩≠상금" 절에 아직 삽입돼 있다.
+   KO에서 뺀 사유가 그대로 적용되는 자리다.
+5. **히어로 워터마크 표준화 미완** — `holdem-icm-hero`·`holdem-icm-pressure`가 구식
+   "HoldemMaster" 워드마크 단독이다(표준은 스페이드+URL). sharp 후합성을 시도했으나
+   **기존 워드마크를 못 덮고 겹쳐서 원복**했다. 덮으려면 해당 영역을 실제로 가리는 처리(크롭·블러·
+   불투명 배경)가 필요하다.
+6. **C1 형제 표 수치 불일치 3건** · **`holdem-raise-how-much`** 1편 (아래 그대로).
+7. **색인 요청 목록에 4편 추가** — 버블 · 세금 · 바이인 · ICM. schedule-check는 **요청하지 말 것**
+   (noindex로 뺐다).
+
+### ▶ 0-⊚. 2026-08-02 (11) 세션 — `holdem-tournament-tax-guide` 재검수
 
 > **작업 트리 깨끗 · 커밋 `2b7e64e`·`0898cb0` · build 611 · canonical:check 0건.**
 > 상세는 `WORKLOG.md` 2026-08-02 (11).
@@ -433,12 +482,24 @@ https://www.holdemmaster.com/blog/holdem-tournament-tax-guide
 > FAQ **6 → 7문항** · 300만 원 분리과세 **방향 정정** · 시행령 §87 단서 절 신설 ·
 > 본문 이미지 **1 → 4장**. 조문 근거가 국세청 안내 → 법 조문으로 격상됐다.
 
+**🔴 1순위-E — 바이인·ICM (8/3 경화, `f49405c`·`879e186`)**
+```
+https://www.holdemmaster.com/blog/holdem-tournament-buy-in-cost
+https://www.holdemmaster.com/blog/icm-poker-meaning
+```
+> `buy-in-cost` — FAQ **0 → 6문항**(구형 `### Q` 스키마 사망) · **참가 자격 전면 정정**
+> (한국 여권 입장 불가 O/X 열 신설) · 본문 이미지 **1 → 4장** · 공식 일정 실측 반영
+> `icm` — **하버드 표기 이미지 2장 제거** · ICM 수치 정정(38만 → 36만) · FAQ 6 → 7문항 ·
+> 이미지 5장 중 4장 교체. og:image가 청록 보정본 → 온브랜드 실사로 바뀌었다.
+
+**⚫ 요청하지 말 것 — `holdem-tournament-schedule-check`**
+> 2026-08-03에 **noindex로 뺐다**(카니발 몰아주기). 「일정」 쿼리는 `/tournaments`가 수령한다.
+> 색인 요청하면 할당량 낭비다.
+
 **🟠 2순위**
 ```
 https://www.holdemmaster.com/blog/holdem-hand-rankings
-https://www.holdemmaster.com/blog/icm-poker-meaning
 ```
-⚠ `icm`은 **FAQ 0→6문항으로 살아난 글**인데 아직 재크롤 전이다.
 
 **🟡 3순위 — 기존 잔여분**
 ```
