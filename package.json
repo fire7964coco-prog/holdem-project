@@ -1,4 +1,4 @@
-{
+﻿{
   "name": "holdemmaster",
   "version": "1.0.0",
   "private": true,
@@ -27,6 +27,7 @@
     "generate:beginner-pdf": "node scripts/generate-beginner-pdf.mjs",
     "snapshot:html": "node scripts/snapshot-html.mjs",
     "gsc:page": "node scripts/gsc-page.mjs",
+    "triage": "node scripts/triage-posts.mjs",
     "ga:page": "node scripts/ga-page.mjs",
     "board": "node scripts/priority-board.mjs"
   },
