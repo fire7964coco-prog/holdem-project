@@ -222,8 +222,12 @@ https://www.holdemmaster.com/blog/holdem-pub-first-visit-guide
 https://www.holdemmaster.com/blog/holdem-pub-legal
 https://www.holdemmaster.com/blog/holdem-pub-guide
 https://www.holdemmaster.com/blog/holdem-blind-steal
+https://www.holdemmaster.com/blog/holdem-blind-meaning
+https://www.holdemmaster.com/blog/holdem-tournament-how-to-enter
 ```
 | URL | 무엇이 바뀌었나 |
+| `holdem-blind-meaning` | 8/2 추가 — 제목에 **BB 표기 신설** + BB 계산 답을 상단으로. 141노출 7.9위인데 CTR 0.7%였다 |
+| `tournament-how-to-enter` | 8/2 추가 — FAQ **0→10문항**(`### Qn.`이라 스키마가 죽어 있었다) + 질문형 H2 0→100% |
 |---|---|
 | `pub-first-visit-guide` | FAQ **0→8문항** · 이미 CTR 10.3%라 효과 가장 큼 · 8/2에 본문도 크게 손봄 |
 | `pub-legal` | FAQ **0→7문항** + 법조문 오류 수정 + 8/2 전면 재구성 |
