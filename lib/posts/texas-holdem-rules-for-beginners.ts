@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "텍사스 홀덤은 개인 카드 2장과 공용 카드 5장으로 최고의 5장 족보를 만드는 게임이며, 프리플랍·플랍·턴·리버 네 번의 베팅 라운드로 진행된다. 개인 카드를 2장·1장·0장 어느 쪽으로 써도 되고, 액션 순서는 프리플랍엔 빅블라인드 왼쪽, 플랍 이후엔 버튼 왼쪽부터 시작한다.",
   category: "초보 가이드",
   date: "2026-06-11",
-  updated: "2026-08-02",
+  updated: "2026-08-03",
   keepImagesInBody: true,
   readTime: "14분",
   emoji: "♠️",
@@ -322,7 +322,6 @@ A. 아니요. 공식 텍사스 홀덤에는 무늬 서열이 없습니다. 플�
 ## 출처
 
 - **2026 World Series of Poker Official Tournament Rules** — 쇼다운 카드 공개 순서(Rule 72), 최소 레이즈 규정(Rule 96) — [wsop.gg-global-cdn.com PDF](https://wsop.gg-global-cdn.com/wsop/pdfs/2026-WSOP-Tournament-Rules.pdf) · 확인일 2026-07-30
-- 시작 핸드 1,326가지 / 169유형은 조합 계산 결과입니다 — 52장에서 2장 = 1,326, 유형 분류 = 페어 13 + 수티드 78 + 오프수트 78 = 169
 
 > 위 규정은 토너먼트 공식 기준입니다. 홈게임·홀덤펍은 하우스 룰이 다를 수 있으니 시작 전에 최소 레이즈와 스트래들 여부를 정해두면 분쟁이 없습니다.
 
