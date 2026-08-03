@@ -1082,7 +1082,9 @@ function PushFoldCalc() {
 
       {table === "hu" ? (
         <div className="grid md:grid-cols-2 gap-2.5 md:gap-4">
-          <div className={ROW}>
+          {/* md:col-span-2 — 6·9맥스의 포지션 줄과 같은 구조로 맞춘다.
+              이게 없으면 헤즈업만 시나리오·앤티가 좌우로 눌려 버튼이 좁아졌다. */}
+          <div className={`${ROW} md:col-span-2`}>
             <label className={ROW_LABEL}>시나리오</label>
             <div className={`${ROW_BODY} grid grid-cols-2 gap-2`}>
               {([["push", "SB: 푸시 or 폴드"], ["call", "BB: 올인 콜 판단"]] as const).map(([v, l]) => (
