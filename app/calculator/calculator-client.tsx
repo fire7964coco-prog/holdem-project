@@ -867,16 +867,16 @@ function ICMCalc() {
     setPrizes(p => { const n = [...p]; n[i] = Math.max(0, val); return n; });
 
   return (
-    <div className="space-y-4 sm:space-y-6">
-      <div className="bg-primary/8 border border-primary/20 rounded-xl p-4 text-sm text-foreground/80 leading-relaxed">
+    <div className="space-y-3 sm:space-y-4">
+      <div className="bg-primary/8 border border-primary/20 rounded-xl p-3 text-[13px] text-foreground/80 leading-relaxed">
         <strong className="text-primary">ICM(Independent Chip Model)</strong>이란 토너먼트 칩의 실제 상금 가치를 계산하는 방법입니다.
         칩 리더라도 ICM 가치는 칩 비율보다 낮고, 반대로 숏스택은 칩 비율보다 높습니다.
         파이널 테이블·버블에서 콜/폴드 결정에 활용하세요.
       </div>
 
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 gap-3">
         <div>
-          <label className="text-xs text-muted-foreground mb-2 block font-bold uppercase tracking-wider">플레이어 수</label>
+          <label className="text-xs text-muted-foreground mb-1.5 block font-bold uppercase tracking-wider">플레이어 수</label>
           <div className="flex gap-1.5 flex-wrap">
             {[2,3,4,5,6,7,8,9].map(n => (
               <button key={n} onClick={() => { setNumPlayers(n); setNumPrizes(p => Math.min(p, n)); }}
@@ -887,7 +887,7 @@ function ICMCalc() {
           </div>
         </div>
         <div>
-          <label className="text-xs text-muted-foreground mb-2 block font-bold uppercase tracking-wider">상금 순위 수</label>
+          <label className="text-xs text-muted-foreground mb-1.5 block font-bold uppercase tracking-wider">상금 순위 수</label>
           <div className="flex gap-1.5 flex-wrap">
             {[1,2,3,4,5,6].map(n => (
               <button key={n} onClick={() => setNumPrizes(Math.min(n, numPlayers))}
@@ -899,50 +899,50 @@ function ICMCalc() {
         </div>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-6">
+      <div className="grid md:grid-cols-2 gap-4">
         <div>
-          <div className="text-xs text-muted-foreground mb-3 font-bold uppercase tracking-wider flex items-center justify-between">
+          <div className="text-xs text-muted-foreground mb-2 font-bold uppercase tracking-wider flex items-center justify-between">
             <span>플레이어 칩 스택</span>
             <span className="text-foreground/50 text-[10px] normal-case">합계 {totalChips.toLocaleString()}</span>
           </div>
-          <div className="space-y-2">
+          <div className="space-y-1.5">
             {Array.from({ length: numPlayers }, (_, i) => (
               <div key={i} className="flex items-center gap-2">
                 <span className="text-xs font-bold text-muted-foreground w-10 flex-shrink-0 text-center">{MEDALS[i]}</span>
                 <button onClick={() => updateStack(i, stacks[i] - 1000)}
-                  className="w-8 h-8 rounded-md bg-background border border-border text-muted-foreground hover:border-primary/50 flex-shrink-0 text-xs font-bold">−</button>
+                  className="w-7 h-7 rounded-md bg-background border border-border text-muted-foreground hover:border-primary/50 flex-shrink-0 text-xs font-bold">−</button>
                 <input
                   type="number"
                   value={stacks[i] ?? 1000}
                   onChange={e => updateStack(i, parseInt(e.target.value) || 0)}
-                  className="flex-1 min-w-0 bg-background border border-border rounded-lg px-2 py-1.5 text-sm text-foreground text-right font-mono"
+                  className="flex-1 min-w-0 bg-background border border-border rounded-lg px-2 py-1 text-sm text-foreground text-right font-mono"
                 />
                 <button onClick={() => updateStack(i, stacks[i] + 1000)}
-                  className="w-8 h-8 rounded-md bg-background border border-border text-muted-foreground hover:border-primary/50 flex-shrink-0 text-xs font-bold">+</button>
+                  className="w-7 h-7 rounded-md bg-background border border-border text-muted-foreground hover:border-primary/50 flex-shrink-0 text-xs font-bold">+</button>
               </div>
             ))}
           </div>
         </div>
 
         <div>
-          <div className="text-xs text-muted-foreground mb-3 font-bold uppercase tracking-wider flex items-center justify-between">
+          <div className="text-xs text-muted-foreground mb-2 font-bold uppercase tracking-wider flex items-center justify-between">
             <span>상금 (원)</span>
             <span className="text-foreground/50 text-[10px] normal-case">총 {fmtKRW(totalPrize)}</span>
           </div>
-          <div className="space-y-2">
+          <div className="space-y-1.5">
             {Array.from({ length: numPrizes }, (_, i) => (
               <div key={i} className="flex items-center gap-2">
                 <span className="text-xs font-bold text-muted-foreground w-10 flex-shrink-0 text-center">{MEDALS[i]}</span>
                 <button onClick={() => updatePrize(i, prizes[i] - 50000)}
-                  className="w-8 h-8 rounded-md bg-background border border-border text-muted-foreground hover:border-primary/50 flex-shrink-0 text-xs font-bold">−</button>
+                  className="w-7 h-7 rounded-md bg-background border border-border text-muted-foreground hover:border-primary/50 flex-shrink-0 text-xs font-bold">−</button>
                 <input
                   type="number"
                   value={prizes[i] ?? 0}
                   onChange={e => updatePrize(i, parseInt(e.target.value) || 0)}
-                  className="flex-1 min-w-0 bg-background border border-border rounded-lg px-2 py-1.5 text-sm text-foreground text-right font-mono"
+                  className="flex-1 min-w-0 bg-background border border-border rounded-lg px-2 py-1 text-sm text-foreground text-right font-mono"
                 />
                 <button onClick={() => updatePrize(i, prizes[i] + 50000)}
-                  className="w-8 h-8 rounded-md bg-background border border-border text-muted-foreground hover:border-primary/50 flex-shrink-0 text-xs font-bold">+</button>
+                  className="w-7 h-7 rounded-md bg-background border border-border text-muted-foreground hover:border-primary/50 flex-shrink-0 text-xs font-bold">+</button>
               </div>
             ))}
           </div>
@@ -952,17 +952,17 @@ function ICMCalc() {
 
       {icmResult ? (
         <motion.div initial={false} animate={{ opacity: 1, y: 0 }}>
-          <div className="text-xs text-muted-foreground mb-3 font-bold uppercase tracking-wider">ICM 계산 결과</div>
+          <div className="text-xs text-muted-foreground mb-2 font-bold uppercase tracking-wider">ICM 계산 결과</div>
           <div className="overflow-x-auto rounded-xl border border-border">
             <table className="w-full text-xs">
               <thead>
                 <tr className="bg-background/50 border-b border-border">
-                  <th className="px-3 py-2.5 text-left text-muted-foreground font-bold">플레이어</th>
-                  <th className="px-3 py-2.5 text-right text-muted-foreground font-bold hidden sm:table-cell">칩스택</th>
-                  <th className="px-3 py-2.5 text-right text-muted-foreground font-bold hidden sm:table-cell">칩 %</th>
-                  <th className="px-3 py-2.5 text-right text-primary font-bold">ICM 가치</th>
-                  <th className="px-3 py-2.5 text-right text-muted-foreground font-bold">ICM %</th>
-                  <th className="px-3 py-2.5 text-right text-muted-foreground font-bold">차이</th>
+                  <th className="px-3 py-1.5 text-left text-muted-foreground font-bold">플레이어</th>
+                  <th className="px-3 py-1.5 text-right text-muted-foreground font-bold hidden sm:table-cell">칩스택</th>
+                  <th className="px-3 py-1.5 text-right text-muted-foreground font-bold hidden sm:table-cell">칩 %</th>
+                  <th className="px-3 py-1.5 text-right text-primary font-bold">ICM 가치</th>
+                  <th className="px-3 py-1.5 text-right text-muted-foreground font-bold">ICM %</th>
+                  <th className="px-3 py-1.5 text-right text-muted-foreground font-bold">차이</th>
                 </tr>
               </thead>
               <tbody>
@@ -972,12 +972,12 @@ function ICMCalc() {
                   const diff = icmPct - chipPct;
                   return (
                     <tr key={i} className="border-b border-border/50 last:border-0 hover:bg-primary/5 transition-colors">
-                      <td className="px-3 py-2.5 font-bold text-foreground">{MEDALS[i]} P{i+1}<span className="block sm:hidden text-[10px] font-mono font-normal text-muted-foreground mt-0.5">{stacks[i].toLocaleString()} · {chipPct.toFixed(1)}%</span></td>
-                      <td className="px-3 py-2.5 text-right font-mono text-muted-foreground hidden sm:table-cell">{stacks[i].toLocaleString()}</td>
-                      <td className="px-3 py-2.5 text-right font-mono text-muted-foreground hidden sm:table-cell">{chipPct.toFixed(1)}%</td>
-                      <td className="px-3 py-2.5 text-right font-mono font-bold text-primary">{Math.round(equity).toLocaleString()}원</td>
-                      <td className="px-3 py-2.5 text-right font-mono">{icmPct.toFixed(1)}%</td>
-                      <td className={`px-3 py-2.5 text-right font-mono font-bold ${diff > 0.1 ? "text-green-400" : diff < -0.1 ? "text-red-400" : "text-muted-foreground"}`}>
+                      <td className="px-3 py-1.5 font-bold text-foreground">{MEDALS[i]} P{i+1}<span className="block sm:hidden text-[10px] font-mono font-normal text-muted-foreground mt-0.5">{stacks[i].toLocaleString()} · {chipPct.toFixed(1)}%</span></td>
+                      <td className="px-3 py-1.5 text-right font-mono text-muted-foreground hidden sm:table-cell">{stacks[i].toLocaleString()}</td>
+                      <td className="px-3 py-1.5 text-right font-mono text-muted-foreground hidden sm:table-cell">{chipPct.toFixed(1)}%</td>
+                      <td className="px-3 py-1.5 text-right font-mono font-bold text-primary">{Math.round(equity).toLocaleString()}원</td>
+                      <td className="px-3 py-1.5 text-right font-mono">{icmPct.toFixed(1)}%</td>
+                      <td className={`px-3 py-1.5 text-right font-mono font-bold ${diff > 0.1 ? "text-green-400" : diff < -0.1 ? "text-red-400" : "text-muted-foreground"}`}>
                         {diff > 0 ? "+" : ""}{diff.toFixed(1)}%
                       </td>
                     </tr>
