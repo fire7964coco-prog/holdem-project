@@ -32,15 +32,14 @@ KO 글에서 참조하나 파일 부재. 생성 or 참조 제거 필요:
 - DEFECT — ak-offsuit-faq.webp — "Q3.프리플랍 올인" 노드 중복 — PROMPT: Notebook FAQ mind-map "AK FAQ", cream+gold/green, 1200×675. Five unique nodes Q1 수티드 차이(~3%,전략동일) Q2 vs AA 예측(4벳관찰) Q3 올인(20BB↓) Q4 미스 후 C벳(33~50%) Q5 순위(6위). Each once. Cards clean tiles no pip art.
 - DEFECT — ak-offsuit-postflop.webp — 파일명·"이미지 2 자리" 플레이스홀더·"Gifiton" 잡단어 baked in, 언페어드 보드에 "풀하우스 조심" 오류 — PROMPT: Notebook diagram "AK 포스트플랍 — 히트·미스 대응", cream, gold/green, 1200×675. Boards A♦7♣2♠→강밸류 / A♠J♥T♥ 웻→빠른베팅·드로주의 / A♠A♦7♣ 페어→중간사이즈. 미스: 드라이 C벳1회, 멀티웨이 포기. No meta/filename/placeholder text; listed valid cards only.
 - DEFECT — ak-offsuit-preflop.webp — "📌 ak-offsuit-preflop.webp/이미지 내용" 플레이스홀더 baked in, "AK vs AA 12%" 오기 — PROMPT: Notebook diagram "2. AK 프리플랍 — 무조건 3벳", cream+gold/green, 1200×675. Small raise table EP2.5 MP2.5 CO3.0 BTN2.5 SB3.5, 브랜치 오픈없으면2.5~3BB·리레이즈면3벳2.5~3x·4벳or폴드, 교정 "AK vs KK ~30%","AK vs AA ~7%". No filenames/pins/placeholders; A♠ K♥ tiles.
-- DEFECT — beginner-mistakes-action-plan.webp — 제목 오타 "MISTIAKE CORRECTION ROADMAP" — PROMPT: Premium dark-green infographic, 1200×675, "TEXAS HOLD'EM BEGINNER" + gold "MISTAKE CORRECTION ROADMAP"(verify spelling). 3 gold arrow steps STEP1 TIGHT SELECTION / STEP2 POSITION AWARENESS / STEP3 EMOTIONAL CONTROL + simple icons (card fan, table top, calm). Face-down cards only.
-- DEFECT — beginner-mistakes-bluff.webp — 카드 인덱스 깨짐(7c에 하트핏, 2h에 스페이드핏), 7-2 3회 중복 — PROMPT: Flat cartoon "과도한 블러핑", blue/green table, 1200×675: over-aggressive player pushing chips holding 7♥ 2♠ once (standard corners, no letter suffix), skeptical opponent, small chart "블러핑 빈도 100%". Hand shown once. Short correct Korean.
-- OK — beginner-mistakes-calling-station.webp
-- DEFECT — beginner-mistakes-hand-read.webp — 존재하지 않는 카드 "KQ","72"(한 카드에 두 랭크) — PROMPT: Flat cartoon "상대의 핸드 범위 무시", 1200×675 split: left beginner w/ K♦ Q♦ "내 카드만 봄"; right opponent thought-bubble range as face-down/tiles (AK,JJ,T9s) "상대 범위 무시". Each card single rank+suit or face-down. Blue/green, short Korean.
-- DEFECT — beginner-mistakes-intro-card.webp — 한자 혼입("矯正法","一文")·"(2x ⊘⊘)" 아티팩트·조밀텍스트 — PROMPT: Notebook-card "홀덤 초보 탈출 Q&A — 왜 맨날 돈 잃을까?", 1200×675, cream+gold/green. Short Korean only: "초보 실수 10가지","운 No! 반복 패턴","Top3: 루즈콜·포지션무시·틸트","즉시 교정법", footer holdemmaster.com. No Chinese, no dense paragraphs; icons.
-- DEFECT — beginner-mistakes-position.webp — 제목 깨짐 "이고난 차뇨", 좌석맵 오류(UTG 2회·순서무효) — PROMPT: Flat oval table diagram "포지션 무시", dark green, 1200×675. Clockwise once each UTG MP HJ CO BTN/Dealer SB BB. Red X on UTG loose raise, green check on BTN, arrows to BB. Verify every label spelling.
-- DEFECT — beginner-mistakes-pot-odds.webp — 제목 깨짐 "표표느 공는 거내", "SALT!" 잡라벨, A♥ 2장 중복 — PROMPT: Flat split "팟 오즈 무시", dark green, 1200×675: left hand A♥ A♠ "에퀴티 19% 콜 불가"+odds chart; right sweating player "필요 승률 31%"+graph. Real Korean, two distinct cards, no gibberish.
-- OK — beginner-mistakes-stack-bet.webp
-- DEFECT — beginner-mistakes-summary-table.webp — 제목 오타 "10 Doker", 표 전체 깨진 한글, 행번호 3·7·8 누락 — PROMPT: Premium dark-green table, 1200×675, "10 Poker Beginner Mistakes"(verify). Columns 실수/증상/교정법, 10 numbered rows real Korean (1.너무 많은 핸드 …10.복기 안 함). Gold accents; ≤4 words/cell if reliability risk.
+- ✅ RESOLVED 2026-08-03 — `beginner-mistakes-*` 전체. 이 배치의 개별 항목은 더 이상 유효하지 않다.
+  9장을 HTML+Playwright로 신규 제작(`hero` `loss-chart` `loose-call` `pot-odds` `calling-station`
+  `bluff` `stack-bet` `hand-read` `action-plan`), `position`·`tilt`는 유지,
+  `intro-card`·`korea-pub`·`summary-table`·`reveal`·`record`는 **파일 삭제**(참조 0).
+  ⚠ **이 파일의 PROMPT를 그대로 따르지 말 것** — 아래 pot-odds 프롬프트가 실제로 사실 오류를
+  만들었다. 원문: *left hand A♥ A♠ "에퀴티 19% 콜 불가"*. 19%는 **플러시 드로우 9아웃**의
+  확률이지 포켓 에이스의 에퀴티가 아니다. 그대로 렌더된 그림이 몇 달간 "AA를 폴드하라"고
+  가르치고 있었다. **프롬프트의 수치도 §13 검산 대상이다.**
 - OK — blind-chips-closeup.webp
 - DEFECT — blog-fold-hand-tiers.webp — 다수 불가능카드(J·A를 핏바디, 코너 J/K 혼합), J 다수중복 — PROMPT: Photoreal three-row hand tiers on dark felt, top row gold glow, 1200×675. Top A♠A♥|K♠K♥|A♦K♦; mid Q♠Q♥|A♣Q♣|K♥Q♥; bottom J♠7♦|9♣4♥|Q♦2♣ — unique real cards. If unreliable, lower tiers face-down. No duplicates.
 - DEFECT — blog-fold-position-chart.webp — 존재하지 않는 "UP+1", 좌석 중복(MP 2회 등) — PROMPT: Top-down 9-seat oval table, green felt+gold, central DEALER, 1200×675. Clockwise once each: UTG UTG+1 MP LJ HJ CO BTN SB BB. Verify spelling, no repeats.
@@ -149,12 +148,11 @@ KO 글에서 참조하나 파일 부재. 생성 or 참조 제거 필요:
 - DEFECT — apt-jeju-main-event-winner.webp — 배너 "ASIA POKER GRAND FINALE"(오이벤트)+체크 잡텍스트+화면 A-A-Q-A-K — PROMPT: Realistic winner ceremony: champion lifting gold trophy, gold confetti, chips+bracelet, two officials, large prize check plain white(no text). Screens abstract light only(no card faces/event text). Photojournalism, teal-gold light, 1200×675. No readable banner/fake event names/duplicate ranks.
 - DEFECT — apt-jeju-nau-cafe.webp — 흰 레터박스 여백+생뚱맞은 미래건물(맥락불일치) — PROMPT: Full-bleed realistic modern Jeju cafe: glass facade, basalt-wood accents, terrace seats, sea/tangerine-field bg, soft afternoon light. Edge-to-edge no white borders, travel-mag style, 1200×675. No readable signage/sci-fi architecture/theme-park.
 - DEFECT — apt-jeju-satellite-strategy.webp — 불가능카드(K♦ 핏바디·"J/K" 병합 인덱스) — PROMPT: Realistic macro deep green felt: tall multicolor chip stacks behind a fan of exactly five valid cards A♠ K♠ Q♥ J♦ 10♣ correct art/pips one index/corner. Shallow DOF, moody, 1200×675. No duplicate ranks/merged indexes/face cards with pips.
-- DEFECT — beginner-mistakes-hero.webp — 제목 "10MMO BEGINNER MISTAKES"+깨진 한/영 라벨+패널번호 중복 — PROMPT: Premium dark green+gold hero, 2×5 grid of ten simple icon tiles(card fan/chip/?/tilt face/notepad…) numbered 1–10 numerals ONLY, no words. Flat premium, gold/green/cream, 1200×675. No Korean/English labels; each numeral once.
-- DEFECT — beginner-mistakes-korea-pub.webp — 펠트 "TEIDAS SEN"(깨진 Texas)+보드 번짐 — PROMPT: Warm Korean holdem pub: nervous beginner at green felt, 3 calm opponents, chips+drink, cozy light. Felt plain no lettering, board face-down or valid A♠ K♦ 7♣ 7♥ 2♠, 1200×675. No pseudo-English felt logos/smudged cards.
-- DEFECT — beginner-mistakes-loose-call.webp — 깨진 한글("도릉 배도…·재빈가를")+오버사이즈 팬 중복의심 — PROMPT: Clean cartoon "너무 많은 핸드(VPIP 70%)": player fanning generic card BACKS only, rising bar chart labeled only "VPIP 70%"(sole text). Red/cream/navy on green-felt edge, 1200×675. No Korean sentences/card faces.
-- DEFECT — beginner-mistakes-record.webp — 제목 "게임 기록 부재" 상·하 중복(하단 잘림)+흰여백 4:3+스파클 아티팩트 — PROMPT: Flat infographic record vs no-record: left scattered cash/receipts, right clean spreadsheet+rising graph green check vs messy pile red X. Single title, at most "RECORD"/"NO RECORD". Full-bleed 1200×675. No duplicated/cropped banners/sparkle/white borders.
-- DEFECT — beginner-mistakes-reveal.webp — 제목 "불필요한 핸드 노출" 상·하 중복(잘림)+보드 번짐+4:3 — PROMPT: Flat illustration of beginner flashing hole cards(two valid K♦ K♠ once each) as others glance+take notes. Green felt cozy pub, board face-down. One title zone or none. Full-bleed 1200×675. No duplicated cropped banners/smeared cards/white margins.
-- DEFECT — beginner-mistakes-tilt.webp — 헤드라인 "빌로 (Tilt)"(깨짐, 정답 "틸트") — PROMPT: Split cartoon calm vs tilted player(red face, steam, chips flying), emotion gauge to red, label only "틸트 (Tilt)" or "TILT". Green felt gold/green, 1200×675. No misspelled Korean/extra captions/unreadable cards.
+- ✅ RESOLVED 2026-08-03 — `beginner-mistakes-hero` · `-korea-pub` · `-loose-call`. BATCH 01 상단의
+  RESOLVED 항목 참조. hero·loose-call은 HTML로 재제작, korea-pub은 삭제했다.
+  ★hero의 옛 프롬프트("numerals ONLY, no words")는 철자 깨짐은 막았지만 **정보가 0인 그림**을
+  만들었다 — 라벨 없는 아이콘 10개는 독자에게 아무것도 알려주지 않는다. 안전과 무용은 다르다.
+- ✅ RESOLVED 2026-08-03 — `beginner-mistakes-record` · `-reveal`(파일 삭제) · `-tilt`(재제작본 유지).
 - OK(5): jeju hotel-budget · hotel-business · hotel-luxury · island-resort · les-a-casino
 
 ## BATCH 15 (저위험)
