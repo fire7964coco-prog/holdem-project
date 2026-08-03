@@ -1109,7 +1109,23 @@ function PushFoldCalc() {
       </div>
       </div>
 
+      {/* ★ Legend sits ABOVE the grid — see app/calculator/calculator-client.tsx for the reason
+          (a reader reported the highlighted cells "having a hole in the middle"). */}
       <div className="space-y-3">
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 text-xs text-muted-foreground">
+          <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded-[3px] bg-primary inline-block" />Push (all-in)</span>
+          {table === "hu" && (
+            <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded-[3px] bg-green-500/90 inline-block" />Call</span>
+          )}
+          <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded-[3px] bg-card/70 border border-border/50 inline-block" />Fold</span>
+        </div>
+        <p className="text-xs leading-relaxed break-keep text-muted-foreground rounded-lg bg-muted/40 border border-border/60 px-3 py-2">
+          <strong className="text-foreground/85">Diagonal = pairs · upper right = suited · lower left = offsuit</strong><br />
+          The grid is ordered by <strong className="text-foreground/85">rank, not by strength</strong>, so highlighted and
+          unhighlighted cells alternating within a row is expected — AQo, KQo and QQ sit side by side but are not in strength order.
+          A5s being in while A6s is out is also correct: A5s makes the{" "}
+          <strong className="text-foreground/85">wheel straight (A-2-3-4-5)</strong>, which outweighs the lower kicker.
+        </p>
         <div className="grid gap-[2px]" style={{ gridTemplateColumns: "repeat(13, minmax(0, 1fr))" }}>
           {Array.from({ length: 169 }, (_, i) => {
             const r = Math.floor(i / 13), c = i % 13;
@@ -1128,14 +1144,6 @@ function PushFoldCalc() {
               </div>
             );
           })}
-        </div>
-        <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 mt-3 text-xs text-muted-foreground">
-          <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded-[3px] bg-primary inline-block" />Push (all-in)</span>
-          {table === "hu" && (
-            <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded-[3px] bg-green-500/90 inline-block" />Call</span>
-          )}
-          <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded-[3px] bg-card/70 border border-border/50 inline-block" />Fold</span>
-          <span className="ml-auto text-[10px]">Diagonal = pairs · upper right = suited · lower left = offsuit</span>
         </div>
       </div>
 

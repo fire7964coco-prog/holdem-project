@@ -1122,7 +1122,23 @@ function PushFoldCalc() {
       </div>
       </div>
 
+      {/* ★ 범례는 그리드 "위"에 둔다 — 아래에 10px로 두니 표를 다 본 뒤에야 읽게 돼서
+          "칸이 중간에 비었다(=버그 아니냐)"는 문의가 실제로 들어왔다(2026-08-03).
+          표는 강도 순이 아니라 랭크 순 배열이라 한 줄 안에서 켜짐·꺼짐이 번갈아 나오는 게 정상이다. */}
       <div className="space-y-3">
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 text-xs text-muted-foreground">
+          <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded-[3px] bg-primary inline-block" />푸시(올인)</span>
+          {table === "hu" && (
+            <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded-[3px] bg-green-500/90 inline-block" />콜</span>
+          )}
+          <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded-[3px] bg-card/70 border border-border/50 inline-block" />폴드</span>
+        </div>
+        <p className="text-xs leading-relaxed break-keep text-muted-foreground rounded-lg bg-muted/40 border border-border/60 px-3 py-2">
+          <strong className="text-foreground/85">대각선 = 페어 · 우상단 = 수티드 · 좌하단 = 오프수트</strong><br />
+          표는 강도 순이 아니라 <strong className="text-foreground/85">랭크 순</strong>으로 놓여 있어, 한 줄 안에서 켜짐·꺼짐이
+          번갈아 나오는 건 정상입니다 — AQo · KQo · QQ가 나란히 있어도 강도 순이 아니니까요.
+          A5s가 켜지고 A6s가 꺼진 것도 맞습니다(A5s는 <strong className="text-foreground/85">휠 스트레이트 A-2-3-4-5</strong>를 만듭니다).
+        </p>
         <div className="grid gap-[2px]" style={{ gridTemplateColumns: "repeat(13, minmax(0, 1fr))" }}>
           {Array.from({ length: 169 }, (_, i) => {
             const r = Math.floor(i / 13), c = i % 13;
@@ -1141,14 +1157,6 @@ function PushFoldCalc() {
               </div>
             );
           })}
-        </div>
-        <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 mt-3 text-xs text-muted-foreground">
-          <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded-[3px] bg-primary inline-block" />푸시(올인)</span>
-          {table === "hu" && (
-            <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded-[3px] bg-green-500/90 inline-block" />콜</span>
-          )}
-          <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded-[3px] bg-card/70 border border-border/50 inline-block" />폴드</span>
-          <span className="ml-auto text-[10px]">대각선=페어 · 우상단=수티드 · 좌하단=오프수트</span>
         </div>
       </div>
 
