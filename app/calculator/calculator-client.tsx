@@ -261,10 +261,10 @@ function OutsCalc() {
   const turn = ec(outs, false);
   const pct = stage === "flop" ? flop : turn;
   return (
-    <div className="space-y-6">
+    <div className="space-y-4 sm:space-y-6">
       <div className="grid md:grid-cols-2 gap-4">
         <div>
-          <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">드로우 종류</label>
+          <label className="block text-xs font-bold text-muted-foreground mb-1.5 sm:mb-2 uppercase tracking-wide">드로우 종류</label>
           <select value={sel} onChange={e => setSel(Number(e.target.value))}
             className="w-full px-4 py-3 rounded-xl bg-card border border-border text-foreground text-sm focus:outline-none focus:border-primary">
             {DRAW_PRESETS.map((p,i) => (
@@ -276,11 +276,11 @@ function OutsCalc() {
           )}
         </div>
         <div>
-          <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">게임 단계</label>
+          <label className="block text-xs font-bold text-muted-foreground mb-1.5 sm:mb-2 uppercase tracking-wide">게임 단계</label>
           <div className="grid grid-cols-2 gap-2">
             {(["flop","turn"] as const).map(s => (
               <button key={s} onClick={() => setStage(s)}
-                className={`py-3 rounded-xl text-sm font-bold border transition-all ${stage===s ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
+                className={`py-2.5 sm:py-3 rounded-xl text-sm font-bold border transition-all ${stage===s ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
                 {s==="flop" ? "🃏 플랍 이후" : "🔄 턴 이후"}
               </button>
             ))}
@@ -289,7 +289,7 @@ function OutsCalc() {
       </div>
       {preset.custom && (
         <div>
-          <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">
+          <label className="block text-xs font-bold text-muted-foreground mb-1.5 sm:mb-2 uppercase tracking-wide">
             아웃츠 수: <span className="text-primary text-base">{custom}개</span>
           </label>
           <input type="range" min={1} max={20} value={custom} onChange={e => setCustom(Number(e.target.value))}
@@ -352,10 +352,10 @@ function PotOddsCalc() {
     eq > threshold ? "call" : eq < threshold ? "fold" : "even";
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-4 sm:space-y-6">
       <div className="grid md:grid-cols-2 gap-4">
         <div>
-          <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">현재 팟 크기</label>
+          <label className="block text-xs font-bold text-muted-foreground mb-1.5 sm:mb-2 uppercase tracking-wide">현재 팟 크기</label>
           <div className="relative">
             <input type="number" value={pot} onChange={e => setPot(Math.max(0,Number(e.target.value)))}
               className="w-full px-4 py-3 pr-14 rounded-xl bg-card border border-border text-foreground text-sm focus:outline-none focus:border-primary" step={1000} />
@@ -363,7 +363,7 @@ function PotOddsCalc() {
           </div>
         </div>
         <div>
-          <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">내 콜 금액</label>
+          <label className="block text-xs font-bold text-muted-foreground mb-1.5 sm:mb-2 uppercase tracking-wide">내 콜 금액</label>
           <div className="relative">
             <input type="number" value={call} onChange={e => setCall(Math.max(0,Number(e.target.value)))}
               className="w-full px-4 py-3 pr-14 rounded-xl bg-card border border-border text-foreground text-sm focus:outline-none focus:border-primary" step={500} />
@@ -406,7 +406,7 @@ function PotOddsCalc() {
           {showImplied && (
             <motion.div initial={{ height:0, opacity:0 }} animate={{ height:"auto", opacity:1 }} exit={{ height:0, opacity:0 }} className="overflow-hidden">
               <div className="pb-4">
-                <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">
+                <label className="block text-xs font-bold text-muted-foreground mb-1.5 sm:mb-2 uppercase tracking-wide">
                   예상 추가 수익 (핸드 완성 시): <span className="text-blue-400">{implied.toLocaleString()}원</span>
                 </label>
                 <input type="range" min={0} max={200000} step={1000} value={implied} onChange={e => setImplied(Number(e.target.value))}
@@ -470,7 +470,7 @@ function HandEvaluatorCalc() {
   const barWidth = result ? ((result.rank + 1) / 10) * 100 : 0;
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-4 sm:space-y-6">
       <CardPicker selected={cards} max={7} onToggle={toggle} onClear={() => setCards([])}
         label="카드 선택 (5~7장)" />
 
@@ -483,7 +483,7 @@ function HandEvaluatorCalc() {
           </div>
         ) : (
           <motion.div initial={false} animate={{ opacity:1, scale:1 }} className="text-center">
-            <p className="text-xs text-muted-foreground mb-2 uppercase tracking-wide">
+            <p className="text-xs text-muted-foreground mb-1.5 sm:mb-2 uppercase tracking-wide">
               {cards.length}장 중 최강 족보
             </p>
             <p className={`text-3xl sm:text-4xl font-black mb-4 ${result.color}`}>{result.name}</p>
@@ -554,7 +554,7 @@ function StartingHandCalc() {
   const tierNames = ["","🥇 Tier 1 — 프리미엄","🥈 Tier 2 — 강함","🥉 Tier 3 — 플레이 가능","⚠️ Tier 4 — 마지널","🚫 Tier 5 — 약함"];
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-4 sm:space-y-6">
       <CardPicker selected={cards} max={2} onToggle={toggle} onClear={() => setCards([])}
         label="홀카드 2장 선택" />
 
@@ -636,10 +636,10 @@ function SPRCalc() {
         actions:[["너트 핸드","크게 베팅 가능","text-green-400"],["드로우","매우 높은 임플라이드 오즈","text-blue-400"],["약한 메이드","조심, 블러핑에 취약","text-red-400"]] };
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-4 sm:space-y-6">
       <div className="grid md:grid-cols-2 gap-4">
         <div>
-          <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">유효 스택 (내 스택)</label>
+          <label className="block text-xs font-bold text-muted-foreground mb-1.5 sm:mb-2 uppercase tracking-wide">유효 스택 (내 스택)</label>
           <div className="relative">
             <input type="number" value={stack} onChange={e => setStack(Math.max(0,Number(e.target.value)))}
               className="w-full px-4 py-3 pr-14 rounded-xl bg-card border border-border text-foreground text-sm focus:outline-none focus:border-primary" step={5000} />
@@ -647,7 +647,7 @@ function SPRCalc() {
           </div>
         </div>
         <div>
-          <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">현재 팟 크기</label>
+          <label className="block text-xs font-bold text-muted-foreground mb-1.5 sm:mb-2 uppercase tracking-wide">현재 팟 크기</label>
           <div className="relative">
             <input type="number" value={pot} onChange={e => setPot(Math.max(1,Number(e.target.value)))}
               className="w-full px-4 py-3 pr-14 rounded-xl bg-card border border-border text-foreground text-sm focus:outline-none focus:border-primary" step={1000} />
@@ -724,7 +724,7 @@ function MValueCalc() {
         desc:"여유 있는 스택입니다. 다양한 전략 사용 가능. 포지션 플레이와 블러핑으로 칩을 늘려가세요." };
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-4 sm:space-y-6">
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
         {[
           { label:"내 스택", val:stack, set:setStack, step:1000, suffix:"" },
@@ -733,7 +733,7 @@ function MValueCalc() {
           { label:"앤티", val:ante, set:setAnte, step:25, suffix:"" },
         ].map(f => (
           <div key={f.label}>
-            <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">{f.label}</label>
+            <label className="block text-xs font-bold text-muted-foreground mb-1.5 sm:mb-2 uppercase tracking-wide">{f.label}</label>
             <input type="number" value={f.val} onChange={e => f.set(Math.max(0,Number(e.target.value)))}
               className="w-full px-3 py-2.5 rounded-xl bg-card border border-border text-foreground text-sm focus:outline-none focus:border-primary" step={f.step} />
           </div>
@@ -741,7 +741,7 @@ function MValueCalc() {
       </div>
 
       <div>
-        <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">
+        <label className="block text-xs font-bold text-muted-foreground mb-1.5 sm:mb-2 uppercase tracking-wide">
           테이블 인원: <span className="text-primary">{players}명</span>
         </label>
         <input type="range" min={2} max={10} value={players} onChange={e => setPlayers(Number(e.target.value))}
@@ -867,7 +867,7 @@ function ICMCalc() {
     setPrizes(p => { const n = [...p]; n[i] = Math.max(0, val); return n; });
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-4 sm:space-y-6">
       <div className="bg-primary/8 border border-primary/20 rounded-xl p-4 text-sm text-foreground/80 leading-relaxed">
         <strong className="text-primary">ICM(Independent Chip Model)</strong>이란 토너먼트 칩의 실제 상금 가치를 계산하는 방법입니다.
         칩 리더라도 ICM 가치는 칩 비율보다 낮고, 반대로 숏스택은 칩 비율보다 높습니다.
@@ -1047,11 +1047,11 @@ function PushFoldCalc() {
 
   const anteButtons = (
     <div>
-      <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">앤티</label>
+      <label className="block text-xs font-bold text-muted-foreground mb-1.5 sm:mb-2 uppercase tracking-wide">앤티</label>
       <div className="grid grid-cols-2 gap-2">
         {([[false, "앤티 없음"], [true, "BB 앤티 ON"]] as const).map(([v, l]) => (
           <button key={String(v)} onClick={() => setAnte(v)}
-            className={`py-3 rounded-xl text-sm font-bold border transition-all ${ante === v ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
+            className={`py-2.5 sm:py-3 rounded-xl text-sm font-bold border transition-all ${ante === v ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
             {l}
           </button>
         ))}
@@ -1061,13 +1061,13 @@ function PushFoldCalc() {
 
   return (
     <div className="space-y-6 lg:space-y-0 lg:grid lg:grid-cols-[minmax(0,1fr)_460px] lg:gap-6 lg:items-start">
-      <div className="space-y-5">
+      <div className="space-y-4 sm:space-y-5">
       <div>
-        <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">테이블</label>
+        <label className="block text-xs font-bold text-muted-foreground mb-1.5 sm:mb-2 uppercase tracking-wide">테이블</label>
         <div className="grid grid-cols-3 gap-2">
           {([["hu", "헤즈업"], [6, "6맥스"], [9, "9맥스"]] as const).map(([v, l]) => (
             <button key={String(v)} onClick={() => setTable(v)}
-              className={`py-3 rounded-xl text-sm font-bold border transition-all ${table === v ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
+              className={`py-2.5 sm:py-3 rounded-xl text-sm font-bold border transition-all ${table === v ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
               {l}
             </button>
           ))}
@@ -1077,11 +1077,11 @@ function PushFoldCalc() {
       {table === "hu" ? (
         <div className="grid md:grid-cols-2 gap-4">
           <div>
-            <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">시나리오</label>
+            <label className="block text-xs font-bold text-muted-foreground mb-1.5 sm:mb-2 uppercase tracking-wide">시나리오</label>
             <div className="grid grid-cols-2 gap-2">
               {([["push", "SB: 푸시 or 폴드"], ["call", "BB: 올인 콜 판단"]] as const).map(([v, l]) => (
                 <button key={v} onClick={() => setView(v)}
-                  className={`py-3 rounded-xl text-sm font-bold border transition-all ${view === v ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
+                  className={`py-2.5 sm:py-3 rounded-xl text-sm font-bold border transition-all ${view === v ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
                   {l}
                 </button>
               ))}
@@ -1092,7 +1092,7 @@ function PushFoldCalc() {
       ) : (
         <div className="grid md:grid-cols-2 gap-4">
           <div className="md:col-span-2">
-            <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">
+            <label className="block text-xs font-bold text-muted-foreground mb-1.5 sm:mb-2 uppercase tracking-wide">
               포지션 <span className="normal-case font-semibold text-muted-foreground/70">(퍼스트인 — 앞 전원 폴드)</span>
             </label>
             <div className={`grid gap-2 ${table === 9 ? "grid-cols-4" : "grid-cols-5"}`}>
@@ -1109,7 +1109,7 @@ function PushFoldCalc() {
       )}
 
       <div>
-        <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">
+        <label className="block text-xs font-bold text-muted-foreground mb-1.5 sm:mb-2 uppercase tracking-wide">
           유효 스택: <span className="text-primary text-base tabular-nums">{stack}bb</span>
         </label>
         <input type="range" min={PF_STACK_MIN} max={PF_STACK_MAX} step={PF_STACK_STEP} value={stack}
@@ -1226,24 +1226,26 @@ export default function CalculatorPage() {
       />
 
       {/* Hero */}
-      <section className="relative pt-14 sm:pt-16 pb-12 overflow-hidden border-b border-border/60">
+      <section className="relative pt-9 sm:pt-16 pb-7 sm:pb-12 overflow-hidden border-b border-border/60">
         <div className="absolute inset-0 opacity-70 pointer-events-none" style={{
           backgroundImage:`radial-gradient(ellipse 900px 380px at 28% -10%, hsl(43 55% 82% / 0.55) 0%, transparent 60%), radial-gradient(ellipse 700px 340px at 92% 8%, hsl(152 35% 84% / 0.4) 0%, transparent 60%)`
         }} />
         <div className="max-w-5xl mx-auto px-4 sm:px-6 relative">
-          <div className="flex items-center gap-2 mb-4">
+          <div className="flex items-center gap-2 mb-2.5 sm:mb-4">
             <span className="badge-gold">무료 도구</span>
             <span className="badge-gold">실시간 계산</span>
           </div>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-black leading-tight mb-4 tracking-tight text-foreground">
+          <h1 className="text-[26px] sm:text-4xl md:text-5xl font-black leading-tight mb-2.5 sm:mb-4 tracking-tight text-foreground">
             포커 확률 계산기<br />
             <span className="text-gold-gradient">홀덤 모든 계산 한 곳에</span>
           </h1>
-          <p className="text-muted-foreground text-base sm:text-lg max-w-2xl leading-relaxed">
+          <p className="text-muted-foreground text-sm sm:text-lg max-w-2xl leading-relaxed">
             아웃츠·팟 오즈·핸드 족보 판별·스타팅 핸드 강도·SPR·토너먼트 M값·ICM·푸시/폴드 내시 차트 —
             실전에서 필요한 계산을 즉시 확인하세요.
           </p>
-          <div className="flex flex-wrap gap-2 mt-6">
+          {/* ★모바일에서는 숨긴다 — 바로 아래 탭 버튼이 똑같은 8개 항목이라 화면만 두 번 먹었다.
+              DOM에는 남으므로 색인에는 영향 없고, 같은 키워드가 위 문단·탭 라벨에도 있다. */}
+          <div className="hidden sm:flex flex-wrap gap-2 mt-6">
             {["🎯 아웃츠","💰 팟 오즈","🃏 족보 판별","📊 스타팅 핸드","📐 SPR","🏆 M값","📈 ICM","⚡ 푸시/폴드"].map(f => (
               <span key={f} className="text-xs font-semibold text-foreground/80 bg-card border border-border rounded-full px-3 py-1.5 shadow-sm">{f}</span>
             ))}
@@ -1252,14 +1254,14 @@ export default function CalculatorPage() {
       </section>
 
       {/* Calculator Area */}
-      <section className="max-w-5xl mx-auto px-4 sm:px-6 py-10">
+      <section className="max-w-5xl mx-auto px-4 sm:px-6 py-5 sm:py-10">
         {/* Tabs — 전부 한 화면에 (모바일 4+4 가운데정렬 / 데스크톱 8열) */}
-        <div className="flex flex-wrap justify-center gap-1.5 sm:gap-2 mb-6">
+        <div className="flex flex-wrap justify-center gap-1.5 sm:gap-2 mb-4 sm:mb-6">
           {TABS.map(t => (
             <button
               key={t.id}
               onClick={() => setActive(t.id)}
-              className={`flex flex-col items-center justify-center gap-1.5 w-[72px] sm:w-auto sm:flex-1 sm:basis-0 min-h-[62px] px-1 py-2 rounded-xl text-xs font-bold border transition-all ${
+              className={`flex flex-col items-center justify-center gap-1 sm:gap-1.5 w-[72px] sm:w-auto sm:flex-1 sm:basis-0 min-h-[50px] sm:min-h-[62px] px-1 py-1.5 sm:py-2 rounded-xl text-[11px] sm:text-xs font-bold border transition-all ${
                 active === t.id
                   ? "bg-primary text-primary-foreground border-primary shadow-lg shadow-primary/20"
                   : "bg-card text-muted-foreground border-border hover:border-primary/50 hover:text-foreground"
@@ -1274,18 +1276,18 @@ export default function CalculatorPage() {
         {/* Panel */}
         <div className="calc-console rounded-2xl overflow-hidden">
           {/* Panel Header */}
-          <div className="px-6 py-5 border-b border-primary/20 flex items-center gap-4">
-            <div className="w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center text-primary flex-shrink-0">
+          <div className="px-4 py-3 sm:px-6 sm:py-5 border-b border-primary/20 flex items-center gap-3 sm:gap-4">
+            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-primary/20 flex items-center justify-center text-primary flex-shrink-0">
               {tab.icon}
             </div>
             <div>
-              <h2 className="text-lg font-black text-foreground">{tab.label}</h2>
-              <p className="text-xs text-muted-foreground">{tab.sub}</p>
+              <h2 className="text-base sm:text-lg font-black text-foreground leading-tight">{tab.label}</h2>
+              <p className="text-[11px] sm:text-xs text-muted-foreground">{tab.sub}</p>
             </div>
           </div>
 
           {/* Panel Content */}
-          <div className="p-6">
+          <div className="p-4 sm:p-6">
             <AnimatePresence mode="wait">
               <motion.div
                 key={active}
