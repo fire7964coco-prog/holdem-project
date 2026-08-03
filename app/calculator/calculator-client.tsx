@@ -1114,21 +1114,22 @@ function PushFoldCalc() {
         </label>
         <input type="range" min={PF_STACK_MIN} max={PF_STACK_MAX} step={PF_STACK_STEP} value={stack}
           onChange={e => setStack(Number(e.target.value))} className="w-full accent-primary h-2 rounded-full" />
-        <div className="flex justify-between text-xs text-muted-foreground mt-1">
+        <div className="flex justify-between text-[10px] sm:text-xs text-muted-foreground mt-0.5 sm:mt-1">
           <span>1bb</span><span>5</span><span>10</span><span>15</span><span>20</span><span>25bb</span>
         </div>
       </div>
 
-      <div className="rounded-2xl bg-card border border-border p-5">
-        <p className="text-xs text-muted-foreground mb-1">
+      {/* 결과 카드 — 모바일은 한 줄로 붙인다(세로 공간이 그리드로 가야 한다) */}
+      <div className="rounded-2xl bg-card border border-border p-3.5 sm:p-5">
+        <p className="text-[11px] sm:text-xs text-muted-foreground mb-0.5 sm:mb-1">
           {table === "hu"
             ? (view === "push" ? `SB가 ${stack}bb에서 올인하는 핸드` : `BB가 ${stack}bb 올인을 콜하는 핸드`)
             : `${table}맥스 ${PF_POS_LABELS[posSafe]} 퍼스트인 — ${stack}bb에서 올인하는 핸드`}
           {ante ? " (앤티 포함)" : ""}
         </p>
-        <div className="flex items-end gap-3">
-          <p className={`text-4xl sm:text-5xl font-black tabular-nums ${isCall ? "text-green-400" : "text-primary"}`}>{stat.pct}%</p>
-          <p className="text-sm text-muted-foreground mb-1.5">{stat.combos.toLocaleString()} / 1,326 콤보</p>
+        <div className="flex items-baseline gap-2.5">
+          <p className={`text-[32px] sm:text-5xl leading-none font-black tabular-nums ${isCall ? "text-green-400" : "text-primary"}`}>{stat.pct}%</p>
+          <p className="text-xs sm:text-sm text-muted-foreground">{stat.combos.toLocaleString()} / 1,326 콤보</p>
         </div>
       </div>
       </div>
@@ -1136,20 +1137,27 @@ function PushFoldCalc() {
       {/* ★ 범례는 그리드 "위"에 둔다 — 아래에 10px로 두니 표를 다 본 뒤에야 읽게 돼서
           "칸이 중간에 비었다(=버그 아니냐)"는 문의가 실제로 들어왔다(2026-08-03).
           표는 강도 순이 아니라 랭크 순 배열이라 한 줄 안에서 켜짐·꺼짐이 번갈아 나오는 게 정상이다. */}
-      <div className="space-y-3">
-        <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 text-xs text-muted-foreground">
+      <div className="space-y-2 sm:space-y-3">
+        <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] sm:text-xs text-muted-foreground">
           <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded-[3px] bg-primary inline-block" />푸시(올인)</span>
           {table === "hu" && (
             <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded-[3px] bg-green-500/90 inline-block" />콜</span>
           )}
           <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded-[3px] bg-card/70 border border-border/50 inline-block" />폴드</span>
         </div>
-        <p className="text-xs leading-relaxed break-keep text-muted-foreground rounded-lg bg-muted/40 border border-border/60 px-3 py-2">
-          <strong className="text-foreground/85">대각선 = 페어 · 우상단 = 수티드 · 좌하단 = 오프수트</strong><br />
-          표는 강도 순이 아니라 <strong className="text-foreground/85">랭크 순</strong>으로 놓여 있어, 한 줄 안에서 켜짐·꺼짐이
-          번갈아 나오는 건 정상입니다 — AQo · KQo · QQ가 나란히 있어도 강도 순이 아니니까요.
-          A5s가 켜지고 A6s가 꺼진 것도 맞습니다(A5s는 <strong className="text-foreground/85">휠 스트레이트 A-2-3-4-5</strong>를 만듭니다).
-        </p>
+        {/* 배열 규칙은 항상 보이게(요약줄), "왜 번갈아 켜지나"는 접어 둔다 —
+            5줄짜리 문단이 정작 주인공인 13×13 그리드를 화면 밖으로 밀어냈다(2026-08-03). */}
+        <details className="group rounded-lg bg-muted/40 border border-border/60">
+          <summary className="cursor-pointer list-none px-3 py-2 text-[11px] sm:text-xs font-bold text-foreground/85 break-keep flex items-start gap-1.5">
+            <span className="flex-1">대각선=페어 · 우상단=수티드 · 좌하단=오프수트</span>
+            <span className="text-primary shrink-0 transition-transform group-open:rotate-180">▾</span>
+          </summary>
+          <p className="px-3 pb-2.5 text-[11px] sm:text-xs leading-relaxed break-keep text-muted-foreground">
+            표는 강도 순이 아니라 <strong className="text-foreground/85">랭크 순</strong>으로 놓여 있어, 한 줄 안에서 켜짐·꺼짐이
+            번갈아 나오는 건 정상입니다 — AQo · KQo · QQ가 나란히 있어도 강도 순이 아니니까요.
+            A5s가 켜지고 A6s가 꺼진 것도 맞습니다(A5s는 <strong className="text-foreground/85">휠 스트레이트 A-2-3-4-5</strong>를 만듭니다).
+          </p>
+        </details>
         <div className="grid gap-[2px]" style={{ gridTemplateColumns: "repeat(13, minmax(0, 1fr))" }}>
           {Array.from({ length: 169 }, (_, i) => {
             const r = Math.floor(i / 13), c = i % 13;
@@ -1171,7 +1179,13 @@ function PushFoldCalc() {
         </div>
       </div>
 
-      <div className="lg:col-span-2 rounded-xl bg-primary/8 border border-primary/20 p-4 text-xs sm:text-sm text-foreground/80 leading-relaxed">
+      {/* 계산 전제 설명 — 길어서 접어 둔다(DOM에는 남으므로 색인 영향 없음) */}
+      <details className="lg:col-span-2 group rounded-xl bg-primary/8 border border-primary/20 text-xs sm:text-sm text-foreground/80 leading-relaxed">
+        <summary className="cursor-pointer list-none px-4 py-2.5 font-bold text-primary flex items-center gap-1.5">
+          <span className="flex-1">이 차트는 어떻게 계산했나요?</span>
+          <span className="shrink-0 transition-transform group-open:rotate-180">▾</span>
+        </summary>
+        <div className="px-4 pb-3.5 break-keep">
         {table === "hu" ? (
           <>
             <strong className="text-primary">헤즈업(SB vs BB) 내시 균형</strong> 기준 차트입니다. SB는 올인 또는 폴드만 한다고 가정하며,
@@ -1191,7 +1205,8 @@ function PushFoldCalc() {
         {" "}토너먼트 후반 숏스택 판단이 더 궁금하면{" "}
         <a href="/blog/holdem-bubble-strategy" className="text-primary font-semibold underline underline-offset-2">버블 생존 전략</a>{" "}
         가이드를 참고하세요.
-      </div>
+        </div>
+      </details>
     </div>
   );
 }
