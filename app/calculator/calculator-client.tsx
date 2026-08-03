@@ -1045,10 +1045,16 @@ function PushFoldCalc() {
     return { combos, pct: Math.round((combos / 1326) * 1000) / 10 };
   }, [mask]);
 
+  // ★모바일은 라벨을 버튼 왼쪽에 붙여 한 줄로 만든다(라벨 한 줄 = 22px씩 절약).
+  //  sm 이상은 기존처럼 라벨이 위에 오는 블록 배치.
+  const ROW = "flex items-center gap-2.5 sm:block";
+  const ROW_LABEL = "w-[46px] shrink-0 text-[11px] leading-tight font-bold text-muted-foreground uppercase tracking-wide sm:w-auto sm:block sm:text-xs sm:mb-2";
+  const ROW_BODY = "flex-1 min-w-0";
+
   const anteButtons = (
-    <div>
-      <label className="block text-xs font-bold text-muted-foreground mb-1.5 sm:mb-2 uppercase tracking-wide">앤티</label>
-      <div className="grid grid-cols-2 gap-2">
+    <div className={ROW}>
+      <label className={ROW_LABEL}>앤티</label>
+      <div className={`${ROW_BODY} grid grid-cols-2 gap-2`}>
         {([[false, "앤티 없음"], [true, "BB 앤티 ON"]] as const).map(([v, l]) => (
           <button key={String(v)} onClick={() => setAnte(v)}
             className={`py-2 sm:py-3 rounded-xl text-[13px] sm:text-sm font-bold border transition-all ${ante === v ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
@@ -1061,10 +1067,10 @@ function PushFoldCalc() {
 
   return (
     <div className="space-y-6 lg:space-y-0 lg:grid lg:grid-cols-[minmax(0,1fr)_460px] lg:gap-6 lg:items-start">
-      <div className="space-y-4 sm:space-y-5">
-      <div>
-        <label className="block text-xs font-bold text-muted-foreground mb-1.5 sm:mb-2 uppercase tracking-wide">테이블</label>
-        <div className="grid grid-cols-3 gap-2">
+      <div className="space-y-2.5 sm:space-y-5">
+      <div className={ROW}>
+        <label className={ROW_LABEL}>테이블</label>
+        <div className={`${ROW_BODY} grid grid-cols-3 gap-2`}>
           {([["hu", "헤즈업"], [6, "6맥스"], [9, "9맥스"]] as const).map(([v, l]) => (
             <button key={String(v)} onClick={() => setTable(v)}
               className={`py-2 sm:py-3 rounded-xl text-[13px] sm:text-sm font-bold border transition-all ${table === v ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
@@ -1075,10 +1081,10 @@ function PushFoldCalc() {
       </div>
 
       {table === "hu" ? (
-        <div className="grid md:grid-cols-2 gap-4">
-          <div>
-            <label className="block text-xs font-bold text-muted-foreground mb-1.5 sm:mb-2 uppercase tracking-wide">시나리오</label>
-            <div className="grid grid-cols-2 gap-2">
+        <div className="grid md:grid-cols-2 gap-2.5 md:gap-4">
+          <div className={ROW}>
+            <label className={ROW_LABEL}>시나리오</label>
+            <div className={`${ROW_BODY} grid grid-cols-2 gap-2`}>
               {([["push", "SB: 푸시 or 폴드"], ["call", "BB: 올인 콜 판단"]] as const).map(([v, l]) => (
                 <button key={v} onClick={() => setView(v)}
                   className={`py-2 sm:py-3 rounded-xl text-[13px] sm:text-sm font-bold border transition-all ${view === v ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
@@ -1108,28 +1114,27 @@ function PushFoldCalc() {
         </div>
       )}
 
-      <div>
-        <label className="block text-xs font-bold text-muted-foreground mb-1.5 sm:mb-2 uppercase tracking-wide">
-          유효 스택: <span className="text-primary text-base tabular-nums">{stack}bb</span>
-        </label>
+      {/* ★스택 슬라이더와 결과를 한 카드로 합쳤다 — 둘이 따로일 때 168px을 먹었다.
+          슬라이더를 움직이면 바로 위 %가 바뀌므로 인과가 오히려 더 잘 보인다. */}
+      <div className="rounded-2xl bg-card border border-border p-3 sm:p-5 space-y-2 sm:space-y-3">
+        <div className="flex items-baseline justify-between gap-2">
+          <label className="text-[11px] sm:text-xs font-bold text-muted-foreground uppercase tracking-wide">
+            유효 스택 <span className="text-primary text-sm sm:text-base tabular-nums">{stack}bb</span>
+          </label>
+          <span className={`text-[26px] sm:text-4xl leading-none font-black tabular-nums ${isCall ? "text-green-400" : "text-primary"}`}>
+            {stat.pct}%
+          </span>
+        </div>
         <input type="range" min={PF_STACK_MIN} max={PF_STACK_MAX} step={PF_STACK_STEP} value={stack}
           onChange={e => setStack(Number(e.target.value))} className="w-full accent-primary h-2 rounded-full" />
-        <div className="flex justify-between text-[10px] sm:text-xs text-muted-foreground mt-0.5 sm:mt-1">
-          <span>1bb</span><span>5</span><span>10</span><span>15</span><span>20</span><span>25bb</span>
-        </div>
-      </div>
-
-      {/* 결과 카드 — 모바일은 한 줄로 붙인다(세로 공간이 그리드로 가야 한다) */}
-      <div className="rounded-2xl bg-card border border-border p-3.5 sm:p-5">
-        <p className="text-[11px] sm:text-xs text-muted-foreground mb-0.5 sm:mb-1">
-          {table === "hu"
-            ? (view === "push" ? `SB가 ${stack}bb에서 올인하는 핸드` : `BB가 ${stack}bb 올인을 콜하는 핸드`)
-            : `${table}맥스 ${PF_POS_LABELS[posSafe]} 퍼스트인 — ${stack}bb에서 올인하는 핸드`}
-          {ante ? " (앤티 포함)" : ""}
-        </p>
-        <div className="flex items-baseline gap-2.5">
-          <p className={`text-[32px] sm:text-5xl leading-none font-black tabular-nums ${isCall ? "text-green-400" : "text-primary"}`}>{stat.pct}%</p>
-          <p className="text-xs sm:text-sm text-muted-foreground">{stat.combos.toLocaleString()} / 1,326 콤보</p>
+        <div className="flex items-baseline justify-between gap-2 text-[10px] sm:text-xs text-muted-foreground">
+          <span className="min-w-0 truncate">
+            {table === "hu"
+              ? (view === "push" ? `SB가 ${stack}bb에서 올인하는 핸드` : `BB가 ${stack}bb 올인을 콜하는 핸드`)
+              : `${table}맥스 ${PF_POS_LABELS[posSafe]} 퍼스트인 — ${stack}bb 올인`}
+            {ante ? " (앤티 포함)" : ""}
+          </span>
+          <span className="shrink-0 tabular-nums">{stat.combos.toLocaleString()} / 1,326</span>
         </div>
       </div>
       </div>
@@ -1291,7 +1296,8 @@ export default function CalculatorPage() {
         {/* Panel */}
         <div className="calc-console rounded-2xl overflow-hidden">
           {/* Panel Header */}
-          <div className="px-4 py-3 sm:px-6 sm:py-5 border-b border-primary/20 flex items-center gap-3 sm:gap-4">
+          {/* ★모바일은 숨긴다 — 바로 위 탭에서 이미 그 계산기가 골드로 선택돼 있어 제목이 중복이다(62px). */}
+          <div className="hidden sm:flex px-4 py-3 sm:px-6 sm:py-5 border-b border-primary/20 items-center gap-3 sm:gap-4">
             <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-primary/20 flex items-center justify-center text-primary flex-shrink-0">
               {tab.icon}
             </div>
