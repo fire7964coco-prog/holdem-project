@@ -1048,7 +1048,13 @@ function PushFoldCalc() {
   // ★모바일은 라벨을 버튼 왼쪽에 붙여 한 줄로 만든다(라벨 한 줄 = 22px씩 절약).
   //  sm 이상은 기존처럼 라벨이 위에 오는 블록 배치.
   const ROW = "flex items-center gap-2.5 sm:block";
-  const ROW_LABEL = "w-[46px] shrink-0 text-[11px] leading-tight font-bold text-muted-foreground uppercase tracking-wide sm:w-auto sm:block sm:text-xs sm:mb-2";
+  // ★모바일에서 라벨이 버튼 옆으로 들어가면서 눈에 안 띄어, 무지개 그라디언트로 강조한다.
+  //   sm 이상은 라벨이 버튼 위 제자리로 돌아가므로 기존 muted 색으로 되돌린다.
+  const ROW_LABEL =
+    "w-[46px] shrink-0 text-[11px] leading-tight font-black uppercase tracking-wide " +
+    "bg-[repeating-linear-gradient(95deg,#ef4444_0px,#f97316_6px,#eab308_11px,#22c55e_16px,#3b82f6_21px,#a855f7_26px,#ef4444_32px)] " +
+    "bg-clip-text text-transparent " +
+    "sm:bg-none sm:text-muted-foreground sm:font-bold sm:w-auto sm:block sm:text-xs sm:mb-2";
   const ROW_BODY = "flex-1 min-w-0";
 
   const anteButtons = (
@@ -1101,7 +1107,9 @@ function PushFoldCalc() {
         <div className="grid md:grid-cols-2 gap-4">
           <div className="md:col-span-2">
             <label className="block text-xs font-bold text-muted-foreground mb-1.5 sm:mb-2 uppercase tracking-wide">
-              포지션 <span className="normal-case font-semibold text-muted-foreground/70">(퍼스트인 — 앞 전원 폴드)</span>
+              {/* '포지션'만 모바일에서 무지개 — 테이블·시나리오·앤티 라벨과 눈높이를 맞춘다 */}
+              <span className="text-[11px] font-black bg-[repeating-linear-gradient(95deg,#ef4444_0px,#f97316_6px,#eab308_11px,#22c55e_16px,#3b82f6_21px,#a855f7_26px,#ef4444_32px)] bg-clip-text text-transparent sm:bg-none sm:text-muted-foreground sm:font-bold sm:text-xs">포지션</span>{" "}
+              <span className="normal-case font-semibold text-muted-foreground/70">(퍼스트인 — 앞 전원 폴드)</span>
             </label>
             <div className={`grid gap-2 ${table === 9 ? "grid-cols-4" : "grid-cols-5"}`}>
               {positions!.map((p) => (
