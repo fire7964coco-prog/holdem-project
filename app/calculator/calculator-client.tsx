@@ -1051,7 +1051,7 @@ function PushFoldCalc() {
       <div className="grid grid-cols-2 gap-2">
         {([[false, "앤티 없음"], [true, "BB 앤티 ON"]] as const).map(([v, l]) => (
           <button key={String(v)} onClick={() => setAnte(v)}
-            className={`py-2.5 sm:py-3 rounded-xl text-sm font-bold border transition-all ${ante === v ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
+            className={`py-2 sm:py-3 rounded-xl text-[13px] sm:text-sm font-bold border transition-all ${ante === v ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
             {l}
           </button>
         ))}
@@ -1067,7 +1067,7 @@ function PushFoldCalc() {
         <div className="grid grid-cols-3 gap-2">
           {([["hu", "헤즈업"], [6, "6맥스"], [9, "9맥스"]] as const).map(([v, l]) => (
             <button key={String(v)} onClick={() => setTable(v)}
-              className={`py-2.5 sm:py-3 rounded-xl text-sm font-bold border transition-all ${table === v ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
+              className={`py-2 sm:py-3 rounded-xl text-[13px] sm:text-sm font-bold border transition-all ${table === v ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
               {l}
             </button>
           ))}
@@ -1081,7 +1081,7 @@ function PushFoldCalc() {
             <div className="grid grid-cols-2 gap-2">
               {([["push", "SB: 푸시 or 폴드"], ["call", "BB: 올인 콜 판단"]] as const).map(([v, l]) => (
                 <button key={v} onClick={() => setView(v)}
-                  className={`py-2.5 sm:py-3 rounded-xl text-sm font-bold border transition-all ${view === v ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
+                  className={`py-2 sm:py-3 rounded-xl text-[13px] sm:text-sm font-bold border transition-all ${view === v ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
                   {l}
                 </button>
               ))}
@@ -1098,7 +1098,7 @@ function PushFoldCalc() {
             <div className={`grid gap-2 ${table === 9 ? "grid-cols-4" : "grid-cols-5"}`}>
               {positions!.map((p) => (
                 <button key={p} onClick={() => setPos(p)}
-                  className={`py-2.5 rounded-xl text-xs sm:text-sm font-bold border transition-all ${posSafe === p ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
+                  className={`py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold border transition-all ${posSafe === p ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
                   {PF_POS_LABELS[p]}
                 </button>
               ))}
