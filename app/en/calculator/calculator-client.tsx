@@ -345,7 +345,10 @@ function PotOddsCalc() {
   const impliedPot = pot + implied;
   const impliedOdds = call > 0 ? Math.round(call / (impliedPot + call) * 1000) / 10 : 0;
   const threshold = showImplied ? impliedOdds : potOdds;
-  const ok = eq > threshold;
+  // ★ equity == required equity is break-even (EV 0), not a fold.
+  //   A single `eq > threshold` printed "23% < 23% → losing", an inequality that does not hold.
+  const verdict: "call" | "even" | "fold" =
+    eq > threshold ? "call" : eq < threshold ? "fold" : "even";
 
   return (
     <div className="space-y-6">
@@ -417,18 +420,25 @@ function PotOddsCalc() {
         </AnimatePresence>
       </div>
 
-      <motion.div key={ok?"ok":"no"} animate={{ scale:[1,1.02,1] }} transition={{ duration:0.3 }}
-        className={`rounded-2xl p-5 border-2 text-center ${ok ? "border-green-500/50 bg-green-500/10" : "border-red-500/50 bg-red-500/10"}`}>
-        <div className="text-4xl mb-2">{ok ? "✅" : "❌"}</div>
-        <p className={`text-2xl font-black mb-2 ${ok ? "text-green-400" : "text-red-400"}`}>
-          {ok ? "Call (profitable)" : "Fold recommended"}
-        </p>
-        <p className="text-sm text-muted-foreground">
-          {ok
-            ? `Your equity ${eq}% > ${showImplied && implied>0 ? `implied odds ${impliedOdds}%` : `pot odds ${threshold}%`} → profitable long term`
-            : `Your equity ${eq}% < ${showImplied && implied>0 ? `implied odds ${impliedOdds}%` : `pot odds ${threshold}%`} → losing long term`}
-        </p>
-      </motion.div>
+      {(() => {
+        const need = showImplied && implied > 0 ? `implied odds ${impliedOdds}%` : `pot odds ${threshold}%`;
+        const V = {
+          call: { box:"border-green-500/50 bg-green-500/10", text:"text-green-400", icon:"✅", title:"Call (profitable)",
+                  body:`Your equity ${eq}% > ${need} → profitable long term` },
+          even: { box:"border-yellow-500/50 bg-yellow-500/10", text:"text-yellow-400", icon:"⚖️", title:"Break-even (EV 0)",
+                  body:`Your equity ${eq}% = ${need} → calling neither gains nor loses. Decide on factors outside pot odds, such as position and opponent tendencies` },
+          fold: { box:"border-red-500/50 bg-red-500/10", text:"text-red-400", icon:"❌", title:"Fold recommended",
+                  body:`Your equity ${eq}% < ${need} → losing long term` },
+        }[verdict];
+        return (
+          <motion.div key={verdict} animate={{ scale:[1,1.02,1] }} transition={{ duration:0.3 }}
+            className={`rounded-2xl p-5 border-2 text-center ${V.box}`}>
+            <div className="text-4xl mb-2">{V.icon}</div>
+            <p className={`text-2xl font-black mb-2 ${V.text}`}>{V.title}</p>
+            <p className="text-sm text-muted-foreground">{V.body}</p>
+          </motion.div>
+        );
+      })()}
     </div>
   );
 }
@@ -660,10 +670,10 @@ function SPRCalc() {
 
       <div className="grid grid-cols-4 gap-2">
         {[
-          { r:"< 4", l:"Committed", c:"bg-red-400/20 border-red-400/40 text-red-400" },
-          { r:"4–8", l:"Flexible", c:"bg-yellow-400/20 border-yellow-400/40 text-yellow-400" },
-          { r:"8–15", l:"Getting deep", c:"bg-blue-400/20 border-blue-400/40 text-blue-400" },
-          { r:"> 15", l:"Deep", c:"bg-green-400/20 border-green-400/40 text-green-400" },
+          { r:"SPR < 4", l:"Committed", c:"bg-red-400/20 border-red-400/40 text-red-400" },
+          { r:"4 ≤ SPR < 8", l:"Flexible", c:"bg-yellow-400/20 border-yellow-400/40 text-yellow-400" },
+          { r:"8 ≤ SPR < 15", l:"Getting deep", c:"bg-blue-400/20 border-blue-400/40 text-blue-400" },
+          { r:"SPR ≥ 15", l:"Deep", c:"bg-green-400/20 border-green-400/40 text-green-400" },
         ].map(z => (
           <div key={z.r} className={`rounded-lg border p-2.5 text-center ${z.c}`}>
             <p className="text-base font-black">{z.r}</p>

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   //            영어 페이지 검색 결과에 한국어 브랜드명이 노출된다.
   title: { absolute: "Poker Odds Calculator — Outs, Pot Odds, Hand Rank, SPR & ICM | HoldemMaster" },
   description:
-    "Free Texas Hold'em calculator: outs & draw odds, pot odds, hand evaluator, starting hand strength, SPR, tournament M value, and ICM — 7 tools in one.",
+    "Free Texas Hold'em calculator: outs & draw odds, pot odds, hand evaluator, starting hand strength, SPR, tournament M value, ICM, and push/fold Nash charts — 8 tools in one.",
   alternates: {
     canonical: `${SITE}/en/calculator`,
     languages: {
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Poker Odds Calculator — Outs, Pot Odds, Hand Rank, SPR & ICM | HoldemMaster",
-    description: "Free Texas Hold'em calculator: outs & draw odds, pot odds, hand evaluator, starting hand strength, SPR, tournament M value, and ICM — 7 tools in one.",
+    description: "Free Texas Hold'em calculator: outs & draw odds, pot odds, hand evaluator, starting hand strength, SPR, tournament M value, ICM, and push/fold Nash charts — 8 tools in one.",
   },
   openGraph: {
     title: "Poker Odds Calculator — HoldemMaster",

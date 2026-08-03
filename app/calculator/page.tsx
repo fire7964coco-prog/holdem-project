@@ -6,7 +6,7 @@ import { CALCULATOR_FAQ } from "./faq";
 export const metadata: Metadata = {
   title: "ICM 계산기·홀덤 확률 계산기 — 아웃츠·팟오즈·SPR·M값 무료",
   description:
-    "칩 리더인데 왜 그 콜이 손해일까? ICM 계산기로 토너먼트 칩의 진짜 상금 가치를 즉시 확인하세요. 아웃츠·팟오즈·족보·스타팅핸드·SPR·M값까지 홀덤 계산기 7종 무료.",
+    "칩 리더인데 왜 그 콜이 손해일까? ICM 계산기로 토너먼트 칩의 진짜 상금 가치를 즉시 확인하세요. 아웃츠·팟오즈·족보·스타팅핸드·SPR·M값·푸시폴드까지 홀덤 계산기 8종 무료.",
   alternates: {
     canonical: `${SITE}/calculator`,
     languages: {
@@ -15,9 +15,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "ICM 계산기·홀덤 확률 계산기 — 홀덤 계산 7종 올인원",
+    title: "ICM 계산기·홀덤 확률 계산기 — 홀덤 계산 8종 올인원",
     description:
-      "아웃츠·팟오즈·족보 판별·스타팅핸드·SPR·토너먼트 M값·ICM — 실전에서 필요한 홀덤 계산을 한 곳에서 무료로.",
+      "아웃츠·팟오즈·족보 판별·스타팅핸드·SPR·토너먼트 M값·ICM·푸시폴드 — 실전에서 필요한 홀덤 계산을 한 곳에서 무료로.",
     url: `${SITE}/calculator`,
     siteName: "홀덤마스터",
     locale: "ko_KR",

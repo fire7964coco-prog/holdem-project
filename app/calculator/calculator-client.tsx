@@ -345,7 +345,11 @@ function PotOddsCalc() {
   const impliedPot = pot + implied;
   const impliedOdds = call > 0 ? Math.round(call / (impliedPot + call) * 1000) / 10 : 0;
   const threshold = showImplied ? impliedOdds : potOdds;
-  const ok = eq > threshold;
+  // ★ 승률 == 필요 승률은 폴드가 아니라 손익분기(EV 0)다.
+  //   `eq > threshold` 하나로 갈랐더니 같을 때도 "폴드 권장"이 뜨고,
+  //   설명문이 "23% < 23% → 손해"라는 성립하지 않는 부등식을 출력했다(2026-08-03 검수).
+  const verdict: "call" | "even" | "fold" =
+    eq > threshold ? "call" : eq < threshold ? "fold" : "even";
 
   return (
     <div className="space-y-6">
@@ -423,18 +427,25 @@ function PotOddsCalc() {
         </AnimatePresence>
       </div>
 
-      <motion.div key={ok?"ok":"no"} animate={{ scale:[1,1.02,1] }} transition={{ duration:0.3 }}
-        className={`rounded-2xl p-5 border-2 text-center ${ok ? "border-green-500/50 bg-green-500/10" : "border-red-500/50 bg-red-500/10"}`}>
-        <div className="text-4xl mb-2">{ok ? "✅" : "❌"}</div>
-        <p className={`text-2xl font-black mb-2 ${ok ? "text-green-400" : "text-red-400"}`}>
-          {ok ? "콜 (수익적)" : "폴드 권장"}
-        </p>
-        <p className="text-sm text-muted-foreground">
-          {ok
-            ? `내 승률 ${eq}% > ${showImplied && implied>0 ? `임플라이드 오즈 ${impliedOdds}%` : `팟 오즈 ${threshold}%`} → 장기적으로 이익`
-            : `내 승률 ${eq}% < ${showImplied && implied>0 ? `임플라이드 오즈 ${impliedOdds}%` : `팟 오즈 ${threshold}%`} → 장기적으로 손해`}
-        </p>
-      </motion.div>
+      {(() => {
+        const need = showImplied && implied > 0 ? `임플라이드 오즈 ${impliedOdds}%` : `팟 오즈 ${threshold}%`;
+        const V = {
+          call: { box:"border-green-500/50 bg-green-500/10", text:"text-green-400", icon:"✅", title:"콜 (수익적)",
+                  body:`내 승률 ${eq}% > ${need} → 장기적으로 이익` },
+          even: { box:"border-yellow-500/50 bg-yellow-500/10", text:"text-yellow-400", icon:"⚖️", title:"손익분기 (EV 0)",
+                  body:`내 승률 ${eq}% = ${need} → 콜해도 이익도 손해도 아님. 포지션·상대 성향처럼 팟 오즈 밖의 요소로 결정하세요` },
+          fold: { box:"border-red-500/50 bg-red-500/10", text:"text-red-400", icon:"❌", title:"폴드 권장",
+                  body:`내 승률 ${eq}% < ${need} → 장기적으로 손해` },
+        }[verdict];
+        return (
+          <motion.div key={verdict} animate={{ scale:[1,1.02,1] }} transition={{ duration:0.3 }}
+            className={`rounded-2xl p-5 border-2 text-center ${V.box}`}>
+            <div className="text-4xl mb-2">{V.icon}</div>
+            <p className={`text-2xl font-black mb-2 ${V.text}`}>{V.title}</p>
+            <p className="text-sm text-muted-foreground">{V.body}</p>
+          </motion.div>
+        );
+      })()}
     </div>
   );
 }
@@ -672,10 +683,10 @@ function SPRCalc() {
 
       <div className="grid grid-cols-4 gap-2">
         {[
-          { r:"< 4", l:"커밋", c:"bg-red-400/20 border-red-400/40 text-red-400" },
-          { r:"4–8", l:"유연", c:"bg-yellow-400/20 border-yellow-400/40 text-yellow-400" },
-          { r:"8–15", l:"딥스택 시작", c:"bg-blue-400/20 border-blue-400/40 text-blue-400" },
-          { r:"> 15", l:"딥스택", c:"bg-green-400/20 border-green-400/40 text-green-400" },
+          { r:"SPR < 4", l:"커밋", c:"bg-red-400/20 border-red-400/40 text-red-400" },
+          { r:"4 ≤ SPR < 8", l:"유연", c:"bg-yellow-400/20 border-yellow-400/40 text-yellow-400" },
+          { r:"8 ≤ SPR < 15", l:"딥스택 시작", c:"bg-blue-400/20 border-blue-400/40 text-blue-400" },
+          { r:"SPR ≥ 15", l:"딥스택", c:"bg-green-400/20 border-green-400/40 text-green-400" },
         ].map(z => (
           <div key={z.r} className={`rounded-lg border p-2.5 text-center ${z.c}`}>
             <p className="text-base font-black">{z.r}</p>
@@ -1455,10 +1466,10 @@ export default function CalculatorPage() {
               </thead>
               <tbody>
                 {([
-                  ["< 4", "커밋 구간", "TPTK(탑페어 탑키커) 이상이면 올인 고려 — 폴드가 오히려 손해일 수 있음"],
-                  ["4–8", "유연 구간", "투페어 이상으로 밸류 베팅, 스택 보호가 중요"],
-                  ["8–15", "딥스택 시작", "셋 이상은 강하게, 드로우는 임플라이드 오즈 상승"],
-                  ["> 15", "딥스택", "너트급으로만 큰 팟 — 약한 메이드는 블러핑에 취약"],
+                  ["SPR < 4", "커밋 구간", "TPTK(탑페어 탑키커) 이상이면 올인 고려 — 폴드가 오히려 손해일 수 있음"],
+                  ["4 ≤ SPR < 8", "유연 구간", "투페어 이상으로 밸류 베팅, 스택 보호가 중요"],
+                  ["8 ≤ SPR < 15", "딥스택 시작", "셋 이상은 강하게, 드로우는 임플라이드 오즈 상승"],
+                  ["SPR ≥ 15", "딥스택", "너트급으로만 큰 팟 — 약한 메이드는 블러핑에 취약"],
                 ] as [string, string, string][]).map(([r, c, a]) => (
                   <tr key={r} className="border-b border-border/60 last:border-0">
                     <td className="px-3 py-2.5 font-mono font-bold text-foreground whitespace-nowrap">{r}</td>
