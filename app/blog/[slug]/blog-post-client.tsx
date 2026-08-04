@@ -141,6 +141,7 @@ export default function BlogPost({
    */
   const [toolsHidden, setToolsHidden] = useState(true);
   const lastYRef = useRef(0);
+  const idleTimerRef = useRef<number | undefined>(undefined);
 
   // 스크롤 60% 지나면 모바일 스티키 CTA 표시
   const handleScroll = useCallback(() => {
@@ -150,14 +151,22 @@ export default function BlogPost({
 
     const dy = scrolled - lastYRef.current;
     if (Math.abs(dy) > 6) {
-      setToolsHidden(dy > 0); // 내려가면 숨김, 올라가면 표시
+      setToolsHidden(dy > 0); // 내려가는 "동안"만 숨김, 위로 올리면 즉시 표시
       lastYRef.current = scrolled;
     }
+
+    // ★스크롤이 멈추면 다시 꺼낸다 — 읽는 동안은 본문 100%, 손을 떼면 네비가 돌아온다.
+    //   관성 스크롤이 이어지는 동안엔 타이머가 계속 리셋되므로 진짜 멈췄을 때만 뜬다.
+    if (idleTimerRef.current) window.clearTimeout(idleTimerRef.current);
+    idleTimerRef.current = window.setTimeout(() => setToolsHidden(false), 220);
   }, []);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      if (idleTimerRef.current) window.clearTimeout(idleTimerRef.current);
+    };
   }, [handleScroll]);
 
   /**
@@ -345,8 +354,10 @@ export default function BlogPost({
                  위로 스크롤할 때만 나타난다.
                  lg 이상은 BlogTopBar(56px)가 있으므로 그 아래(top-14)에 붙는다.
                  배경은 하단 전역 탭바와 같은 계열에 한 톤 밝게(#1a3a2a vs #0d1c14). */
-              style={{ background: "#1a3a2a", borderBottom: "1px solid rgba(255,255,255,0.10)" }}
-              className={`xl:hidden fixed inset-x-0 top-0 lg:top-14 z-40 px-2 sm:px-4 py-1.5 shadow-[0_8px_18px_-14px_rgba(0,0,0,0.45)] transition-transform duration-200 ${
+              /* ★하단 전역 탭바와 완전 동일 규격 — 높이 62px, 아이콘 위 / 라벨 아래 세로 배치.
+                 배경만 한 톤 밝게(#1a3a2a vs 하단 #0d1c14)해 상·하단을 구분한다. */
+              style={{ background: "#1a3a2a", borderBottom: "1px solid rgba(255,255,255,0.10)", height: 62 }}
+              className={`xl:hidden fixed inset-x-0 top-0 lg:top-14 z-40 px-2 sm:px-4 flex items-stretch shadow-[0_8px_18px_-14px_rgba(0,0,0,0.45)] transition-transform duration-200 ${
                 toolsHidden ? "-translate-y-[calc(100%+1px)] lg:-translate-y-[calc(100%+3.5rem)]" : "translate-y-0"
               }`}
             >
@@ -354,16 +365,17 @@ export default function BlogPost({
                   [←] · 카테고리 ▾ · 목차 ▾ · 바로가기 ▾ — 셋 다 "누르면 열리는" 같은 문법으로
                   통일해 하단 전역 탭바와 짝을 맞춘다. 전엔 계산기만 바로가는 링크라 성격이 튀었다.
                   카테고리 버튼은 현재 필라 이름을 그대로 달아 "지금 어느 카테고리인지"를 보여준다. */}
-              <div className="relative flex items-stretch gap-1.5">
-                {/* 뒤로 */}
+              <div className="relative flex w-full items-stretch">
+                {/* 뒤로 — 하단 탭과 같은 세로 배치(아이콘 위 / 라벨 아래) */}
                 <button
                   type="button"
                   onClick={goBack}
                   aria-label="뒤로 가기"
-                  className="flex flex-shrink-0 items-center justify-center rounded-lg px-2.5 hover:bg-white/10 transition-colors"
+                  className="flex flex-1 flex-col items-center justify-center gap-0.5 py-2 hover:bg-white/10 transition-colors"
                   style={{ color: "#f4f0e7" }}
                 >
                   <ChevronLeft className="w-4 h-4" aria-hidden="true" />
+                  <span className="text-[10px] font-semibold leading-tight">뒤로</span>
                 </button>
 
                 {/* 카테고리(= 이 글이 속한 필라) — 펼치면 전체 학습맵(현재 필라는 자동 펼침) */}
@@ -374,12 +386,14 @@ export default function BlogPost({
                     className="group/map flex-1 min-w-0"
                   >
                     <summary
-                      className="flex h-full items-center justify-center gap-1 px-1.5 py-2 cursor-pointer list-none [&::-webkit-details-marker]:hidden rounded-lg hover:bg-white/10 group-open/map:bg-white/10 transition-colors"
+                      className="flex h-full flex-col items-center justify-center gap-0.5 px-1 py-2 cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-white/10 group-open/map:bg-white/10 transition-colors"
                       style={{ color: "#f4f0e7" }}
                     >
-                      <PillarIcon className="w-3.5 h-3.5 flex-shrink-0" aria-hidden="true" />
-                      <span className="min-w-0 truncate text-[11px] font-bold leading-none">{cluster.pillarLabel}</span>
-                      <ChevronDown className="w-3 h-3 flex-shrink-0 transition-transform duration-200 group-open/map:rotate-180" aria-hidden="true" />
+                      <PillarIcon className="w-4 h-4 flex-shrink-0" aria-hidden="true" />
+                      <span className="flex max-w-full items-center gap-0.5 text-[10px] font-semibold leading-tight">
+                        <span className="min-w-0 truncate">{cluster.pillarLabel}</span>
+                        <ChevronDown className="w-2.5 h-2.5 flex-shrink-0 transition-transform duration-200 group-open/map:rotate-180" aria-hidden="true" />
+                      </span>
                     </summary>
                     {/* ★한 번에 전체 학습맵 (2026-08-04) — 전엔 현재 필라 트레일만 보이고
                         「다른 카테고리 보기」를 또 눌러야 전체가 나왔다. 두 단계를 없앴다.
@@ -401,13 +415,15 @@ export default function BlogPost({
                     className="group/toc flex-1 min-w-0"
                   >
                     <summary
-                      className="flex h-full items-center justify-center gap-1 px-1.5 py-2 cursor-pointer list-none [&::-webkit-details-marker]:hidden rounded-lg hover:bg-white/10 group-open/toc:bg-white/10 transition-colors"
+                      className="flex h-full flex-col items-center justify-center gap-0.5 px-1 py-2 cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-white/10 group-open/toc:bg-white/10 transition-colors"
                       style={{ color: "#f4f0e7" }}
                       aria-label="목차 펼치기/접기"
                     >
-                      <span className="text-[11px] font-bold leading-none">📚 목차</span>
-                      <span className="text-[10px] leading-none opacity-60">{headings.length}</span>
-                      <ChevronDown className="w-3 h-3 flex-shrink-0 transition-transform duration-200 group-open/toc:rotate-180" aria-hidden="true" />
+                      <span className="text-[16px] leading-none">📚</span>
+                      <span className="flex max-w-full items-center gap-0.5 text-[10px] font-semibold leading-tight">
+                        <span className="min-w-0 truncate">목차 {headings.length}</span>
+                        <ChevronDown className="w-2.5 h-2.5 flex-shrink-0 transition-transform duration-200 group-open/toc:rotate-180" aria-hidden="true" />
+                      </span>
                     </summary>
                     <nav
                       className="absolute inset-x-0 top-full z-10 mt-1.5 max-h-[55vh] overflow-y-auto overscroll-contain rounded-xl bg-card border border-border shadow-xl p-4"
@@ -425,12 +441,14 @@ export default function BlogPost({
                   className="group/go flex-1 min-w-0"
                 >
                   <summary
-                    className="flex h-full items-center justify-center gap-1 px-1.5 py-2 cursor-pointer list-none [&::-webkit-details-marker]:hidden rounded-lg hover:bg-white/10 group-open/go:bg-white/10 transition-colors"
+                    className="flex h-full flex-col items-center justify-center gap-0.5 px-1 py-2 cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-white/10 group-open/go:bg-white/10 transition-colors"
                     style={{ color: "#e9c766" }}
                   >
-                    <Zap className="w-3.5 h-3.5 flex-shrink-0" aria-hidden="true" />
-                    <span className="min-w-0 truncate text-[11px] font-extrabold leading-none">바로가기</span>
-                    <ChevronDown className="w-3 h-3 flex-shrink-0 transition-transform duration-200 group-open/go:rotate-180" aria-hidden="true" />
+                    <Zap className="w-4 h-4 flex-shrink-0" aria-hidden="true" />
+                    <span className="flex max-w-full items-center gap-0.5 text-[10px] font-semibold leading-tight">
+                      <span className="min-w-0 truncate">바로가기</span>
+                      <ChevronDown className="w-2.5 h-2.5 flex-shrink-0 transition-transform duration-200 group-open/go:rotate-180" aria-hidden="true" />
+                    </span>
                   </summary>
                   <div className="absolute inset-x-0 top-full z-10 mt-1.5 rounded-xl bg-card border border-border shadow-xl overflow-hidden">
                     {([

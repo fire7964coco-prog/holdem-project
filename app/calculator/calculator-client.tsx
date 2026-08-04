@@ -1297,17 +1297,18 @@ export default function CalculatorPage() {
           아래 8개 탭 그리드는 진입 시 한눈에 보라고 남겨 두고, 스크롤로 지나간 뒤에는
           이 바가 같은 역할을 이어받는다. */}
       <div
-        className="lg:hidden sticky top-0 z-40 px-3 py-1.5 shadow-[0_8px_18px_-14px_rgba(0,0,0,0.45)]"
-        style={{ background: "#1a3a2a", borderBottom: "1px solid rgba(255,255,255,0.10)" }}
+        className="lg:hidden sticky top-0 z-40 px-2 flex items-stretch shadow-[0_8px_18px_-14px_rgba(0,0,0,0.45)]"
+        style={{ background: "#1a3a2a", borderBottom: "1px solid rgba(255,255,255,0.10)", height: 62 }}
       >
-        <div className="relative flex items-stretch gap-1.5">
+        <div className="relative flex w-full items-stretch">
           <Link
             href="/"
             aria-label="홈 피드로"
-            className="flex flex-shrink-0 items-center justify-center rounded-lg px-2.5 no-underline hover:bg-white/10 transition-colors"
+            className="flex flex-1 flex-col items-center justify-center gap-0.5 py-2 no-underline hover:bg-white/10 transition-colors"
             style={{ color: "#f4f0e7" }}
           >
             <ChevronLeft className="w-4 h-4" aria-hidden="true" />
+            <span className="text-[10px] font-semibold leading-tight">뒤로</span>
           </Link>
 
           {/* 현재 계산기 — 펼치면 8종 전체 */}
@@ -1317,11 +1318,14 @@ export default function CalculatorPage() {
             className="group/calc flex-1 min-w-0"
           >
             <summary
-              className="flex h-full items-center justify-center gap-1 px-1.5 py-2 cursor-pointer list-none [&::-webkit-details-marker]:hidden rounded-lg hover:bg-white/10 group-open/calc:bg-white/10 transition-colors"
+              className="flex h-full flex-col items-center justify-center gap-0.5 px-1 py-2 cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-white/10 group-open/calc:bg-white/10 transition-colors"
               style={{ color: "#f4f0e7" }}
             >
-              <span className="min-w-0 truncate text-[11px] font-bold leading-none">{tab.label}</span>
-              <ChevronDown className="w-3 h-3 flex-shrink-0 transition-transform duration-200 group-open/calc:rotate-180" aria-hidden="true" />
+              <Calculator className="w-4 h-4 flex-shrink-0" aria-hidden="true" />
+              <span className="flex max-w-full items-center gap-0.5 text-[10px] font-semibold leading-tight">
+                <span className="min-w-0 truncate">{tab.label}</span>
+                <ChevronDown className="w-2.5 h-2.5 flex-shrink-0 transition-transform duration-200 group-open/calc:rotate-180" aria-hidden="true" />
+              </span>
             </summary>
             <div className="absolute inset-x-0 top-full z-10 mt-1.5 max-h-[62vh] overflow-y-auto overscroll-contain rounded-xl bg-card border border-border shadow-xl overflow-hidden">
               {TABS.map(t => (
@@ -1352,12 +1356,14 @@ export default function CalculatorPage() {
             className="group/go flex-1 min-w-0"
           >
             <summary
-              className="flex h-full items-center justify-center gap-1 px-1.5 py-2 cursor-pointer list-none [&::-webkit-details-marker]:hidden rounded-lg hover:bg-white/10 group-open/go:bg-white/10 transition-colors"
+              className="flex h-full flex-col items-center justify-center gap-0.5 px-1 py-2 cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-white/10 group-open/go:bg-white/10 transition-colors"
               style={{ color: "#e9c766" }}
             >
-              <Zap className="w-3.5 h-3.5 flex-shrink-0" aria-hidden="true" />
-              <span className="min-w-0 truncate text-[11px] font-extrabold leading-none">바로가기</span>
-              <ChevronDown className="w-3 h-3 flex-shrink-0 transition-transform duration-200 group-open/go:rotate-180" aria-hidden="true" />
+              <Zap className="w-4 h-4 flex-shrink-0" aria-hidden="true" />
+              <span className="flex max-w-full items-center gap-0.5 text-[10px] font-semibold leading-tight">
+                <span className="min-w-0 truncate">바로가기</span>
+                <ChevronDown className="w-2.5 h-2.5 flex-shrink-0 transition-transform duration-200 group-open/go:rotate-180" aria-hidden="true" />
+              </span>
             </summary>
             <div className="absolute inset-x-0 top-full z-10 mt-1.5 rounded-xl bg-card border border-border shadow-xl overflow-hidden">
               {([
