@@ -7,7 +7,68 @@
 
 ## ▶▶▶▶▶▶▶▶▶ 새 세션 START HERE
 
-### ▶ 0-●. 2026-08-04 (3) — 허브 페이지 셸 통일 ✅ (여기서 멈춤)
+### ▶ 0-◉. 2026-08-04 (5) — 허브 셸 en 적용 + SEO 결함 5종 ✅ (여기서 멈춤)
+
+> **작업 트리 깨끗 · build 615 · sitemap 58 static + 25 locale homes ·
+> `npm run canonical:check` ✅ 0건 · 전부 라이브 확인 완료.**
+> 마지막 커밋 `dbcea38`. 상세는 `WORKLOG.md` 「2026-08-04 (5)」.
+>
+> ⚠ **이 폴더는 구조·UI 담당이고 포스트 검수는 별도 폴더가 한다**(0-◇ 참조).
+>   작업 시작 전 **`git pull` 먼저.**
+
+en 허브 셸을 붙이는 과정에서 **기존 SEO 결함이 줄줄이 나왔다.** 그게 이 세션의 본체다.
+
+| # | 한 일 |
+|---:|---|
+| 1 | 허브 셸 **로케일 대응화** → en 8개 라우트 적용. `lib/hub-i18n.ts` 신설(라벨 36개 축어 대조) |
+| 2 | **Trending 슬러그 하드코딩 제거** → 필라 2 + 최신 2, 로케일별 자동 |
+| 3 | 다국어 홈의 한국어 3곳 제거 + 정책 링크가 ja·es·zh 홈에서 사라지던 중첩 결함 |
+| 4 | **★`seo.tsx`가 런타임에 제목·canonical을 덮어쓰던 결함** (아래 별도 설명) |
+| 5 | `/en/win-rate-quiz` 신설(엔진 공유, §13 불변) + 레일 교체 |
+| 6 | **사이트맵 누락 29건** 복구 + 검사기 C-5/C-6 신설 |
+| 7 | 404 로케일 대응(ko + en, 나머지 en 폴백) |
+
+**★4번이 가장 중요하다 — 다시 밟기 쉽다**
+`components/seo.tsx`가 useEffect로 제목·canonical·og를 **런타임에 덮어쓴다.**
+그래서 정적 HTML은 멀쩡한데 브라우저에서만 틀리게 보였다. `curl`로는 원리상 못 잡는다.
+- `/en/glossary`·`/en/hand-chart`·`/en/ranking`·`/hand-chart`가 **canonical을 홈으로** 바꾸고 있었다
+  (`SEOProps`에 없는 `canonical` prop을 넘겨 `path`가 비었고 `SITE + "" = 홈`).
+- 그 잘못된 prop은 **타입 에러로 이미 드러나 있었다** — `next.config.mjs`의
+  `ignoreBuildErrors: true`에 묻혀 있었을 뿐이다. ★`npx tsc --noEmit` 출력을 가끔은 볼 것.
+
+**🔴 되돌리면 안 되는 것 (이번 세션분)**
+1. **`lib/hub-trending.ts`에 슬러그를 적지 말 것.** 언어별로 다른 글 세트다 — 하드코딩하면
+   한국어 큐레이션이 다른 언어로 샌다(실제로 `/en/calculator`에 한국어 제목이 떴다).
+2. **`seo.tsx`의 `path`를 비우지 말 것.** 비면 canonical이 홈이 된다. `canonical=` prop은 없다.
+3. **레일에서 빼는 것과 `lib/hub-routes.ts`에서 빼는 것은 별개다.** 후자를 지우면
+   `<HubPage>`로 감싼 페이지에 BlogTopBar가 또 그려져 상단바가 2겹이 된다
+   (`/en/ranking`·`/en/quiz`가 그 상태로 남아 있다 — 의도된 것).
+4. **noindex 페이지를 사이트맵에 넣지 말 것.** `/en/glossary`·`/en/hand-chart`·`/hand-chart`·`/hands`.
+   `npm run canonical:check`의 C-5가 잡는다.
+5. **다국어 UI 문자열을 새로 쓰지 말 것.** `CHROME[locale]`·`tabLabels()`·`hub-i18n`의 검증된 값을
+   복사한다. 손으로 옮기면 숫자가 바뀐다(EN 이벤트 금액이 `$30→$35`가 될 뻔했다).
+
+**⚠ 서버 띄운 채 재빌드 금지** — `.next`가 깨져 전 페이지 500이 뜬다. 코드 문제로 오인하기 쉽다.
+`rm -rf .next` 후 클린 빌드로 해소.
+
+## 🚀 새 세션은 이 순서로
+
+| 순위 | 할 일 | 메모 |
+|---:|---|---|
+| **1** | **ja 허브 셸** (`/ja/blog`·`/ja/tournaments`) | 배관은 en에서 다 만들어 뒀다. `hub-i18n.ts`에 ja 라벨 **이미 있음**. 할 일은 ①`lib/hub-routes.ts`에 ja 2개 등록 ②`page.tsx`를 `<HubPage locale="ja">`로 감싸기 ③`IntlBlogIndex`에 `inShell` ④`LOCALE_HUB_PAGES.ja` 추가(라벨은 `CHROME.ja.blogLabel` = "ブログ") |
+| **2** | **es 허브 셸** (`/es/blog`·`/es/tournaments`) | ja와 동일. 여기까지가 사장님이 정한 범위(경화가 es까지라서) |
+| 3 | `/holdem-practice` h1 0개 | 기존 결함 |
+| 4 | `tournaments-client.tsx:601` 하드코딩 | "2026년 7월 28일 기준 … 8월 3~5일"이 낡았다 |
+| 5 | EN 도구 페이지 `<title>` | `/en/calculator`·`quiz`·`glossary`·`hand-chart`·`ranking`이 자체 제목에 "\| HoldemMaster"를 직접 넣고 있다. 동작은 하지만 `title:{absolute}`가 정석 |
+| 6 | 다국어 정책 페이지 | `/privacy`·`/terms`·`/contact`가 한국어뿐. 링크는 영어 라벨로 걸어 뒀다 |
+
+**착수 전 필독**: 새 허브 페이지를 만들면 `lib/hub-routes.ts` 등록과 `<HubPage>` 감싸기를
+**둘 다** 해야 한다. 하나만 하면 상단바가 2겹이 되거나 셸이 안 붙는다.
+페이지를 만들면 `npm run build && npm run canonical:check`로 C-5/C-6를 확인할 것.
+
+---
+
+### ▶ 0-●. 2026-08-04 (3) — 허브 페이지 셸 통일 ✅
 
 > **작업 트리 깨끗 · build 614 · 1440/360 실측 확인 · 배포 완료.**
 > 상세는 `WORKLOG.md` 「2026-08-04 (3)」.
@@ -79,7 +140,11 @@
   그게 이번에 뺀 이유다.
 - 다국어 글(`intl-blog-post-client`)에는 브레드크럼을 **아직 안 넣었다**(한국어만).
 
-## 🚀 다음 세션은 이 순서로
+## 🚀 다음 세션은 이 순서로 — ⛔ **이 목록은 낡았다(2026-08-04 (5)에서 대체)**
+
+> **최신 순서는 이 파일 맨 위 `0-◉` 섹션의 「새 세션은 이 순서로」를 볼 것.**
+> 아래는 그 시점의 기록으로만 남긴다. 여기 1순위였던 「다국어 툴 페이지 허브 셸」은
+> en까지 끝났고 다음은 ja다.
 
 > ### ⚠ 포스트 검수는 **이 폴더에서 하지 않는다** (사장님 지시 2026-08-04)
 > 글 검수는 별도 **검수 프로젝트 폴더**에서 진행하고 거기서 바로 배포한다.
