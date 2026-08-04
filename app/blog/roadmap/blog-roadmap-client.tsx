@@ -3,6 +3,7 @@
 import { useRef, useState } from "react";
 import Link from "next/link";
 import { SEO } from "@/components/seo";
+import BlogTopBar from "@/components/blog-top-bar";
 import { Home, BookOpen } from "lucide-react";
 
 /* ── 타입 ─────────────────────────────────────────────────────── */
@@ -220,6 +221,11 @@ export default function BlogRoadmap() {
         description={`홀덤마스터 블로그 전체 ${totalPlanned}개 주제 로드맵. 족보·기초규칙·확률·포지션·배팅전략 등 8개 카테고리를 마인드맵으로 한눈에 확인하세요.`}
         keywords={["홀덤 학습 로드맵", "홀덤 블로그 목차", "홀덤 마스터 가이드", "홀덤 전략 모음"]}
       />
+
+      {/* ★이 페이지엔 상단 크롬이 아예 없었다. site-chrome.tsx의 isFeedAppRoute()가
+          pathname.startsWith("/blog/")로 매치해 SiteHeader를 null 처리하는데,
+          다른 블로그 페이지와 달리 여기엔 자체 BlogTopBar가 없었기 때문. */}
+      <BlogTopBar />
 
       <div className="min-h-screen bg-[#0a0f1a] text-white">
         {/* 헤더 */}

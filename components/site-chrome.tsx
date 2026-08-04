@@ -2,11 +2,20 @@
 
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { localeFromPath, HTML_LANG, NAV_CTA, NAV_HOME_FEED, dirForLocale } from "@/lib/intl";
+import { localeFromPath, HTML_LANG, NAV_CTA, NAV_HOME_FEED, dirForLocale, SECONDARY_LOCALES } from "@/lib/intl";
 import BlogTopBar from "@/components/blog-top-bar";
 import { smoothScrollWindowTo } from "@/lib/smooth-scroll";
 
-const LOCALE_FEED_ROOTS = ["/en", "/ja", "/zh", "/es", "/ar", "/pt", "/id", "/ms", "/vi", "/hi", "/de", "/tr"];
+/**
+ * ★SECONDARY_LOCALES에서 파생시킨다 — 손으로 적으면 반드시 어긋난다.
+ *   실제로 2026-08-04까지 이 배열은 12개였고 SECONDARY_LOCALES는 25개였다.
+ *   누락된 13개(zh-hant·fr·ru·it·pl·th·fa·sw·bn·ro·fil·uk·he)는
+ *   isFeedAppRoute()가 false를 반환해 SiteHeader가 BlogTopBar를 렌더했고,
+ *   그 아래 community-client의 자체 마스트헤드가 또 렌더돼 **상단바가 2겹**이었다.
+ *   lib/intl.ts의 "새 언어 추가 = SECONDARY_LOCALES + CHROME" 안내가
+ *   이 배열을 언급하지 않아 생긴 드리프트다. 파생시켜 재발을 막는다.
+ */
+const LOCALE_FEED_ROOTS = SECONDARY_LOCALES.map((l) => `/${l}`);
 
 /**
  * 피드 앱 라우트 — 자체 헤더를 가지므로 SiteHeader/SiteFooter 불필요
@@ -91,17 +100,17 @@ export function SiteFooter() {
 }
 
 /**
- * <main> 래퍼 — 헤더가 없는 피드 앱 전체에서 상단 패딩 제거.
- * 툴 페이지에서는 AppTopBar(h-11 = 44px) 높이만큼 패딩 추가.
+ * <main> 래퍼.
+ *
+ * ★예전엔 툴 페이지에 pt-11(44px)을 줬다. 그때 상단바가 `fixed`인 AppTopBar(h-11)라
+ *   문서 흐름에서 빠져 있었기 때문이다. 지금 렌더되는 건 BlogTopBar이고
+ *   `sticky top-0` + height 56px라 **자기 높이를 이미 차지한다**(blog-top-bar.tsx:26).
+ *   그래서 pt-11은 순수 잉여였고, 계산기·대회·규칙 등 모든 툴 페이지 상단에
+ *   44px 빈 공간을 만들고 있었다. 제거한다.
  */
 export function MainContent({ children }: { children: React.ReactNode }) {
-  const pathname = usePathname() || "/";
-  const isApp = isFeedAppRoute(pathname);
   return (
-    <main
-      id="main-content"
-      className={isApp ? "relative z-10" : "relative z-10 pt-11"}
-    >
+    <main id="main-content" className="relative z-10">
       {children}
     </main>
   );

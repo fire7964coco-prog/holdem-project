@@ -29,6 +29,9 @@ export type { FeedPost } from "./post-card";
 
 // 허브 페이지 목록 — 데스크탑 왼쪽 사이드바에 표시 (한국어 피드 전용)
 const HUB_PAGES = [
+  // ★/blog(전체 글 목록)은 여기에도 KO_PAGE_TEASERS에도 없어서 홈에서 도달할 방법이 없었다.
+  //   블로그 57편이 사이트의 주력인데 목록으로 가는 길이 끊겨 있던 것.
+  { href: "/blog",            icon: "📚", label: "전체 글 보기" },
   { href: "/tournaments",     icon: "🏆", label: "홀덤 대회 일정" },
   { href: "/pub",             icon: "🍺", label: "내 근처 홀덤펍" },
   { href: "/strategy",        icon: "⚡", label: "전략 가이드" },
