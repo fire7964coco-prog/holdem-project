@@ -1,26 +1,126 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo, useEffect, useRef, useCallback } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
-import { Clock, ChevronRight, Tag } from "lucide-react";
+import { Clock, ChevronRight, Tag, Search, X } from "lucide-react";
 import { SEO } from "@/components/seo";
-import { POSTS, CATEGORIES, type Category } from "@/lib/posts";
 import CardThumb from "@/components/card-thumb";
 import BottomTabBar from "@/components/bottom-tab-bar";
 
+/**
+ * 카드가 실제로 그리는 필드만. 본문(content)은 여기 없다 — page.tsx 주석 참조.
+ * ★`@/lib/posts`에서 타입·상수를 import하지 않는 이유도 같다. 그 모듈을 클라이언트에서
+ *   참조하는 순간 56편치 본문이 딸려 올 위험이 있어, 필요한 건 전부 props로 받는다.
+ */
+export type BlogCardMeta = {
+  slug: string;
+  title: string;
+  desc: string;
+  category: string;
+  date: string;
+  readTime: string;
+  tags: string[];
+};
 
-export default function BlogIndex() {
-  const [activeCategory, setActiveCategory] = useState<Category | "전체">("전체");
+/**
+ * 검색 정규화 — 소문자 + 공백 제거.
+ * 한국어 검색어는 띄어쓰기가 제각각이다("팟 오즈" / "팟오즈"). 공백을 지워 비교하면
+ * 둘 다 같은 글을 찾는다. 영문 대소문자도 함께 흡수한다(ICM / icm).
+ */
+function normalize(s: string): string {
+  return s.toLowerCase().replace(/\s+/g, "");
+}
 
-  const sorted = [...POSTS].sort((a, b) => b.date.localeCompare(a.date));
+/** 이 글이 검색어에 걸리는가 — 토큰 전부를 만족해야 한다(AND) */
+function matchesQuery(post: BlogCardMeta, tokens: string[]): boolean {
+  if (tokens.length === 0) return true;
+  const haystack = normalize(`${post.title} ${post.desc} ${post.category} ${post.tags.join(" ")}`);
+  return tokens.every((t) => haystack.includes(t));
+}
 
-  const filtered = activeCategory === "전체"
-    ? sorted
-    : sorted.filter((p) => p.category === activeCategory);
+export default function BlogIndex({
+  posts,
+  categories,
+}: {
+  posts: BlogCardMeta[];
+  categories: string[];
+}) {
+  const router = useRouter();
+
+  const [activeCategory, setActiveCategory] = useState<string>("전체");
+  const [query, setQuery] = useState("");
+  const [activeTag, setActiveTag] = useState<string | null>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  /**
+   * URL 쿼리(?q= · ?tag=) 읽기 — **useSearchParams()를 쓰지 않는다.**
+   *
+   * ★이유(2026-08-05에 실제로 한 번 밟은 지뢰): 정적 렌더 페이지에서 useSearchParams()를
+   *   호출하면 가장 가까운 Suspense 경계까지가 통째로 클라이언트 렌더로 떨어진다.
+   *   그 결과 빌드 산출물 `.next/server/app/blog.html`에 **글 목록이 한 편도 안 남았다**
+   *   (post 링크 56개 → 1개). 크롤러에겐 빈 페이지가 되는 것이라 SEO상 치명적이다.
+   *
+   *   대신 마운트 후 window.location에서 읽는다. 정적 HTML에는 전체 목록이 그대로 남고,
+   *   ?q=·?tag= 가 붙어 들어온 경우에만 하이드레이션 직후 필터가 적용된다.
+   *   ⚠ 되돌리지 말 것 — 되돌리면 목록 HTML이 다시 빈다.
+   */
+  const syncFromUrl = useCallback(() => {
+    const sp = new URLSearchParams(window.location.search);
+    setQuery(sp.get("q") ?? "");
+    setActiveTag(sp.get("tag"));
+  }, []);
+
+  useEffect(() => {
+    syncFromUrl();
+    // 뒤로/앞으로 가기 — 같은 라우트 안에서 쿼리만 바뀌면 컴포넌트가 다시 마운트되지 않는다
+    window.addEventListener("popstate", syncFromUrl);
+    return () => window.removeEventListener("popstate", syncFromUrl);
+  }, [syncFromUrl]);
+
+  const sorted = useMemo(
+    () => [...posts].sort((a, b) => b.date.localeCompare(a.date)),
+    [posts]
+  );
+
+  /** 검색어를 공백으로 쪼갠 토큰들. "팟오즈 리버" 처럼 두 단어를 다 만족하는 글만 남긴다. */
+  const tokens = useMemo(
+    () => query.trim().split(/\s+/).map(normalize).filter(Boolean),
+    [query]
+  );
+
+  const filtered = useMemo(
+    () =>
+      sorted.filter(
+        (p) =>
+          (activeCategory === "전체" || p.category === activeCategory) &&
+          (!activeTag || p.tags.includes(activeTag)) &&
+          matchesQuery(p, tokens)
+      ),
+    [sorted, activeCategory, activeTag, tokens]
+  );
+
+  /** 필터가 하나라도 걸려 있으면 추천 포스트 없이 결과 그리드만 보여준다 */
+  const isFiltering = activeCategory !== "전체" || !!activeTag || tokens.length > 0;
 
   const featured = sorted[0];
   const rest = sorted.slice(1);
+
+  /** 검색 제출 — 입력 중에는 로컬 필터로 즉시 반응하고, 제출 시에만 URL에 남긴다(공유·뒤로가기용) */
+  function submitSearch(e: React.FormEvent) {
+    e.preventDefault();
+    const q = query.trim();
+    router.replace(q ? `/blog?q=${encodeURIComponent(q)}` : "/blog", { scroll: false });
+    inputRef.current?.blur();
+  }
+
+  function clearAll() {
+    setQuery("");
+    setActiveTag(null);
+    setActiveCategory("전체");
+    router.replace("/blog", { scroll: false });
+  }
 
   const jsonLd = [
     {
@@ -77,9 +177,47 @@ export default function BlogIndex() {
           <h1 className="text-4xl md:text-5xl font-serif font-black text-primary mb-3">
             홀덤 전략 블로그
           </h1>
-          <p className="max-w-xl mx-auto mb-8" style={{ color: "#fef3c7" }}>
+          <p className="max-w-xl mx-auto mb-6" style={{ color: "#fef3c7" }}>
             텍사스 홀덤 전략, 초보 가이드, 토너먼트 소식을 2~3일마다 업데이트합니다.
           </p>
+
+          {/* ★사이트 검색 (2026-08-05 신설).
+              그 전까지 사이트 전체에 type="search" 입력이 **0개**였다 — 한국어 56편 +
+              다국어 457편을 카테고리 칩으로만 훑어야 했다.
+              layout.tsx의 WebSite SearchAction이 이미 `/blog?q={search_term_string}` 를
+              선언하고 있었으므로(구글에 약속만 해 두고 구현이 없던 상태) 그 계약을 그대로 구현한다. */}
+          <form
+            onSubmit={submitSearch}
+            role="search"
+            className="max-w-2xl mx-auto mb-8"
+            id="search"
+          >
+            <label htmlFor="blog-search" className="sr-only">
+              블로그 글 검색
+            </label>
+            <div className="relative">
+              <Search
+                className="absolute start-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground pointer-events-none"
+                aria-hidden="true"
+              />
+              <input
+                ref={inputRef}
+                id="blog-search"
+                type="search"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                placeholder="찾는 주제를 검색하세요 — 팟오즈, 블라인드, 족보…"
+                autoComplete="off"
+                className="w-full h-12 ps-12 pe-24 rounded-full bg-card border border-border text-foreground placeholder:text-muted-foreground/70 text-sm md:text-base shadow-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/25 transition-colors"
+              />
+              <button
+                type="submit"
+                className="absolute end-1.5 top-1/2 -translate-y-1/2 h-9 px-4 rounded-full bg-primary text-primary-foreground text-sm font-bold hover:brightness-95 active:scale-95 transition-all"
+              >
+                검색
+              </button>
+            </div>
+          </form>
 
           {/* 로드맵 배너 */}
           <Link href="/blog/roadmap">
@@ -151,10 +289,10 @@ export default function BlogIndex() {
       {/* Category Filter */}
       <div className="sticky top-20 z-30 bg-background/90 backdrop-blur-md border-b border-border">
         <div className="max-w-5xl mx-auto px-4 py-3 flex items-center gap-2 overflow-x-auto scrollbar-hide">
-          {(["전체", ...CATEGORIES] as const).map((cat) => (
+          {["전체", ...categories].map((cat) => (
             <button
               key={cat}
-              onClick={() => setActiveCategory(cat as Category | "전체")}
+              onClick={() => setActiveCategory(cat)}
               className={`flex-shrink-0 px-4 py-1.5 rounded-full text-sm font-semibold transition-all ${
                 activeCategory === cat
                   ? "bg-primary text-primary-foreground shadow-[0_0_10px_rgba(212,175,55,0.3)]"
@@ -168,7 +306,46 @@ export default function BlogIndex() {
       </div>
 
       <div className="max-w-5xl mx-auto px-4 py-12">
-        {activeCategory === "전체" ? (
+        {/* 활성 필터 표시 — 지금 무엇으로 걸러진 목록인지 알려주고, 해제 경로를 준다 */}
+        {isFiltering && (
+          <div className="mb-6 flex flex-wrap items-center gap-2 text-sm">
+            <span className="text-muted-foreground">
+              <strong className="text-foreground">{filtered.length}편</strong>
+            </span>
+            {tokens.length > 0 && (
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/15 border border-primary/30 text-primary font-semibold">
+                <Search className="w-3.5 h-3.5" aria-hidden="true" /> {query.trim()}
+              </span>
+            )}
+            {activeTag && (
+              /* Link가 아니라 button인 이유: 같은 라우트로의 이동은 컴포넌트를 다시 마운트하지
+                 않아 URL만 바뀌고 화면은 그대로 남는다. 상태를 직접 지우고 URL을 정리한다. */
+              <button
+                type="button"
+                onClick={clearAll}
+                aria-label={`태그 필터 «${activeTag}» 해제`}
+                className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/15 border border-primary/30 text-primary font-semibold hover:bg-primary/25 transition-colors"
+              >
+                <Tag className="w-3.5 h-3.5" aria-hidden="true" /> {activeTag}
+                <X className="w-3.5 h-3.5" aria-hidden="true" />
+              </button>
+            )}
+            {activeCategory !== "전체" && (
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-card border border-border text-muted-foreground">
+                {activeCategory}
+              </span>
+            )}
+            <button
+              type="button"
+              onClick={clearAll}
+              className="text-xs text-muted-foreground underline underline-offset-2 hover:text-primary transition-colors"
+            >
+              필터 해제
+            </button>
+          </div>
+        )}
+
+        {!isFiltering ? (
           <>
             {/* Featured Post */}
             <Link href={`/blog/${featured.slug}`}>
@@ -220,8 +397,18 @@ export default function BlogIndex() {
               : (
                 <div className="md:col-span-3 text-center py-20 text-muted-foreground">
                   <div className="text-5xl mb-4">—</div>
-                  <p className="text-lg font-semibold">곧 업로드 예정입니다</p>
-                  <p className="text-sm mt-2">이 카테고리의 콘텐츠를 준비 중입니다.</p>
+                  <p className="text-lg font-semibold">일치하는 글이 없습니다</p>
+                  <p className="text-sm mt-2">
+                    다른 검색어를 써 보시거나{" "}
+                    <button
+                      type="button"
+                      onClick={clearAll}
+                      className="text-primary font-semibold underline underline-offset-2"
+                    >
+                      전체 글
+                    </button>
+                    을 둘러보세요.
+                  </p>
                 </div>
               )
             }
@@ -236,7 +423,7 @@ export default function BlogIndex() {
   );
 }
 
-function PostCard({ post, delay }: { post: typeof POSTS[0]; delay: number }) {
+function PostCard({ post, delay }: { post: BlogCardMeta; delay: number }) {
   return (
     <Link href={`/blog/${post.slug}`}>
       <motion.article
@@ -262,6 +449,9 @@ function PostCard({ post, delay }: { post: typeof POSTS[0]; delay: number }) {
             {post.title}
           </h3>
           <p className="text-xs text-muted-foreground line-clamp-2 leading-relaxed mb-3">{post.desc}</p>
+          {/* ★카드 안의 태그는 링크로 만들지 않는다 — 카드 전체가 이미 <Link>라
+              그 안에 또 <a>를 넣으면 중첩 앵커가 되어 HTML이 무효가 된다.
+              태그를 눌러 필터링하는 경로는 글 상세 페이지의 태그 칩이 맡는다. */}
           <div className="flex flex-wrap gap-1 mb-3">
             {post.tags.slice(0, 2).map(t => (
               <span key={t} className="flex items-center gap-0.5 text-xs text-muted-foreground/70">

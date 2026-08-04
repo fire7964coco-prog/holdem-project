@@ -6,6 +6,7 @@ import { localeFromPath, HTML_LANG, NAV_CTA, NAV_HOME_FEED, dirForLocale, SECOND
 import BlogTopBar from "@/components/blog-top-bar";
 import { hasBottomTabBar } from "@/components/bottom-tab-bar";
 import { FixedSideRail, hasFixedSideRail } from "@/components/side-rail";
+import { Footer } from "@/components/footer";
 import { smoothScrollWindowTo } from "@/lib/smooth-scroll";
 
 /**
@@ -145,9 +146,36 @@ export function SiteRail() {
   );
 }
 
-/** 옛 사이트 푸터 — 전면 피드 전환으로 완전 제거 */
+/**
+ * 푸터를 깔지 **않는** 라우트 — 피드 앱(홈·글상세·로그인)과 커뮤니티.
+ *
+ * 무한 스크롤 피드는 바닥이 없어서 푸터가 사실상 도달 불가능한 자리에 놓인다.
+ * 대신 데스크톱 좌측 레일 하단에 정책 링크를 넣어(side-rail.tsx) 홈에서도 도달 가능하게 했다.
+ * 그 외 모든 페이지(블로그 글·목록·계산기·대회·규칙·툴)에는 푸터가 깔린다.
+ */
+function isFooterlessRoute(pathname: string): boolean {
+  if (pathname === "/" || pathname === "/login") return true;
+  if (pathname.startsWith("/post/") || pathname.startsWith("/community")) return true;
+  return LOCALE_FEED_ROOTS.some((p) => pathname === p || pathname === p + "/");
+}
+
+/**
+ * 사이트 푸터.
+ *
+ * ★2026-08-05 부활 — 그 전까지 이 함수는 `return null`이었고, 그래서 사이트 전체에
+ *   렌더된 <footer>가 **0개**였다. 개인정보처리방침·이용약관·문의로 가는 길이 없었고
+ *   /about은 만들어져 있는데 어디서도 링크되지 않았다.
+ *
+ * ★푸터는 <main> 밖(layout.tsx)에 있으므로 <main>이 받는 보정을 **똑같이 받아야 한다**:
+ *   - 고정 좌측 레일(xl) → ps-[212px] 없으면 푸터가 레일 아래로 깔린다
+ *   - 고정 하단 탭바     → pb 없으면 탭바가 푸터 마지막 62px을 덮는다
+ */
 export function SiteFooter() {
-  return null;
+  const pathname = usePathname() || "/";
+  if (isFooterlessRoute(pathname)) return null;
+  const railPad = hasFixedSideRail(pathname) ? " xl:ps-[212px]" : "";
+  const tabPad = hasBottomTabBar(pathname) ? " pb-[62px] lg:pb-0" : "";
+  return <Footer className={`${railPad}${tabPad}`} />;
 }
 
 /**

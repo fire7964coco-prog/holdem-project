@@ -3,7 +3,7 @@
 import type { ReactNode } from "react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
-import { Clock, Tag, ChevronLeft, ChevronRight, ChevronDown, Share2, Link2, Map, Calculator, Trophy, TrendingUp, LayoutGrid, Zap, Book } from "lucide-react";
+import { Clock, Tag, ChevronLeft, ChevronRight, ChevronDown, Share2, Link2, Map, Calculator, Trophy, TrendingUp, LayoutGrid, Zap, Book, Search } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { FaXTwitter, FaFacebookF } from "react-icons/fa6";
 import type { Post } from "@/lib/posts";
@@ -268,6 +268,34 @@ export default function BlogPost({
 
           {/* 메인 콘텐츠 컬럼 */}
           <div className="min-w-0">
+            {/* ★시각적 브레드크럼 (2026-08-05 신설).
+                `page.tsx`는 BreadcrumbList JSON-LD를 예전부터 내보내고 있었는데 **화면에는 없었다**
+                — 구조화 데이터만 있고 사람이 볼 경로가 없는 상태였다. 같은 사이트 안에서도
+                /rules/*·tournament-guide-post는 이미 시각 브레드크럼을 갖고 있어 일관성도 깨져 있었다.
+
+                ★단계는 JSON-LD와 **정확히 같은 3단**(홈 → 블로그 → 이 글)으로 맞춘다.
+                  카테고리를 한 칸 끼워 넣고 싶어지지만, 카테고리는 URL이 없는 클라이언트 필터라
+                  마크업에 없는 단계를 화면에만 만들면 구글 기준으로 불일치다. */}
+            <nav aria-label="현재 위치" className="mb-5">
+              <ol className="flex flex-wrap items-center gap-1.5 text-xs text-muted-foreground">
+                <li>
+                  <Link href="/" className="hover:text-primary transition-colors">홈</Link>
+                </li>
+                <li aria-hidden="true" className="text-muted-foreground/50">
+                  <ChevronRight className="w-3 h-3" />
+                </li>
+                <li>
+                  <Link href="/blog" className="hover:text-primary transition-colors">블로그</Link>
+                </li>
+                <li aria-hidden="true" className="text-muted-foreground/50">
+                  <ChevronRight className="w-3 h-3" />
+                </li>
+                <li className="min-w-0 max-w-full truncate font-semibold text-foreground" aria-current="page">
+                  {post.title}
+                </li>
+              </ol>
+            </nav>
+
             {/* Article Header */}
             <header className="mb-10">
               <div className="flex flex-wrap items-center gap-2 mb-4">
@@ -325,15 +353,22 @@ export default function BlogPost({
 
             {/* 태그 칩 — 2026-08-01 헤더에서 여기로 내림.
                 왜: 모바일 첫 화면(844px)에 본문이 0줄이었다. 태그 8~10개가 4줄(약 150px)을
-                차지해 "한 줄 정답"을 화면 밖으로 밀어내고 있었다. 태그는 링크가 아니라
-                단순 표시라 SEO 값도 없고 독자가 누르지도 않는다.
-                영어(intl) 템플릿은 이미 히어로 이미지 → 태그 순서였다 — 그쪽에 맞춘 것이다.
-                근거: docs/ga4-engagement-report-2026-07-31.md §6 */}
+                차지해 "한 줄 정답"을 화면 밖으로 밀어내고 있었다.
+                근거: docs/ga4-engagement-report-2026-07-31.md §6
+
+                ★2026-08-05: <span> → <Link>. 위 주석에 "태그는 링크가 아니라 단순 표시라
+                  독자가 누르지도 않는다"고 적혀 있었는데, 그건 **누를 수 없게 만들어 놨기 때문**이다
+                  (글마다 6~10개가 전부 <span>이라 눌러도 아무 일도 안 일어났다).
+                  같은 태그의 글로 가는 `/blog?tag=` 필터를 붙여 진짜 탐색 경로로 만든다. */}
             <div className="flex flex-wrap gap-2 mb-8">
               {post.tags.map(tag => (
-                <span key={tag} className="flex items-center gap-1 text-xs px-2.5 py-1 rounded-full bg-card border border-border text-muted-foreground">
-                  <Tag className="w-3 h-3" /> {tag}
-                </span>
+                <Link
+                  key={tag}
+                  href={`/blog?tag=${encodeURIComponent(tag)}`}
+                  className="flex items-center gap-1 text-xs px-2.5 py-1 rounded-full bg-card border border-border text-muted-foreground hover:border-primary/50 hover:text-primary transition-colors"
+                >
+                  <Tag className="w-3 h-3" aria-hidden="true" /> {tag}
+                </Link>
               ))}
             </div>
 
@@ -459,6 +494,9 @@ export default function BlogPost({
                   </summary>
                   <div className="absolute inset-x-0 top-full z-10 mt-1.5 rounded-xl bg-card border border-border shadow-xl overflow-hidden">
                     {([
+                      // ★검색 진입점 (2026-08-05). 사이트에 검색 입력이 0개였다 — 그 첫 관문을
+                      //   여기 맨 위에 둔다(블로그 글이 검색 유입의 착지점이라 가장 자주 열리는 메뉴다).
+                      { href: "/blog#search",   Icon: Search,     label: "글 검색",       desc: "56편에서 주제 찾기" },
                       { href: "/tournaments",   Icon: Trophy,     label: "대회 일정",     desc: "국내외 홀덤 대회" },
                       { href: "/calculator",    Icon: Calculator, label: "계산기",        desc: "아웃츠·팟오즈·ICM" },
                       { href: "/win-rate-quiz", Icon: TrendingUp, label: "승률 시뮬레이터", desc: "핸드별 승률 확인" },

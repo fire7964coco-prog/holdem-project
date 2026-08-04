@@ -24,6 +24,11 @@ function secondaryLocalesForSlug(slug) {
 const STATIC_ROUTES = [
   { path: "/", priority: "1.0", changefreq: "weekly" },
   { path: "/about", priority: "0.7", changefreq: "monthly" },
+  // 정책·문의 (2026-08-05 신설). 순위를 노리는 페이지는 아니지만 색인은 시킨다 —
+  // 검색엔진이 사이트의 신뢰도(E-E-A-T)를 볼 때 실제로 조회하는 페이지들이다.
+  { path: "/contact", priority: "0.4", changefreq: "yearly" },
+  { path: "/privacy", priority: "0.3", changefreq: "yearly" },
+  { path: "/terms", priority: "0.3", changefreq: "yearly" },
   { path: "/calculator", priority: "0.95", changefreq: "monthly" },
   { path: "/quiz", priority: "0.85", changefreq: "monthly" },
   { path: "/win-rate-quiz", priority: "0.8", changefreq: "monthly" },

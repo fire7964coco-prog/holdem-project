@@ -42,6 +42,8 @@ export const HUB_PAGES = [
   // ★/blog(전체 글 목록)은 여기에도 KO_PAGE_TEASERS에도 없어서 홈에서 도달할 방법이 없었다.
   //   블로그 56편이 사이트의 주력인데 목록으로 가는 길이 끊겨 있던 것.
   { href: "/blog",            icon: "📚", label: "전체 글 보기" },
+  // 검색 진입점 (2026-08-05) — /blog 상단 검색창으로 바로 내려간다
+  { href: "/blog#search",     icon: "🔎", label: "글 검색" },
   { href: "/tournaments",     icon: "🏆", label: "홀덤 대회 일정" },
   { href: "/pub",             icon: "🍺", label: "내 근처 홀덤펍" },
   { href: "/strategy",        icon: "⚡", label: "전략 가이드" },
@@ -53,6 +55,18 @@ export const HUB_PAGES = [
   { href: "/win-rate-quiz",   icon: "📈", label: "승률 시뮬레이터" },
   { href: "/glossary",        icon: "📖", label: "용어 사전" },
   { href: "/holdem-practice", icon: "🎮", label: "홀덤 연습장" },
+] as const;
+
+/**
+ * 정책·신뢰 페이지. 홈 레일 바닥과 모바일 피드 끝에 쓴다.
+ * 그 외 페이지에서는 진짜 푸터(components/footer.tsx)가 같은 링크를 갖는다 — 단일 소스로 두지
+ * 않은 이유는 footer.tsx가 서버 컴포넌트고 이쪽은 "use client"라 색 토큰 계통이 다르기 때문.
+ */
+export const LEGAL_PAGES = [
+  { href: "/about", label: "팀 소개" },
+  { href: "/contact", label: "문의" },
+  { href: "/privacy", label: "개인정보처리방침" },
+  { href: "/terms", label: "이용약관" },
 ] as const;
 
 /**
@@ -181,6 +195,29 @@ export default function SideRail({
               <span>{p.label}</span>
             </Link>
           ))}
+
+          {/* ★정책 링크 — 홈(onSelect 있음)에서만 (2026-08-05).
+              홈은 무한 스크롤 피드라 푸터를 깔 바닥이 없어서 site-chrome의
+              isFooterlessRoute()에서 빠져 있다. 그래서 홈만 개인정보처리방침·이용약관·문의로
+              가는 길이 끊긴다 — 그 구멍을 레일 바닥에서 메운다.
+              홈 밖(블로그 글 좌측 컬럼 등)에서는 아래에 진짜 푸터가 깔리므로 중복이라 뺀다. */}
+          {onSelect && (
+            <>
+              <div style={{ borderTop: `1px solid ${BORDER}`, margin: "10px 0 6px" }} />
+              <div className="flex flex-wrap gap-x-2.5 gap-y-1 px-3 pb-2">
+                {LEGAL_PAGES.map((p) => (
+                  <Link
+                    key={p.href}
+                    href={p.href}
+                    className="text-[11px] hover:underline"
+                    style={{ color: MUTED, fontFamily: FONT_SANS }}
+                  >
+                    {p.label}
+                  </Link>
+                ))}
+              </div>
+            </>
+          )}
         </>
       )}
     </div>

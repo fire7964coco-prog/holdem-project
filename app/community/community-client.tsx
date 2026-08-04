@@ -22,7 +22,7 @@ import EventTab from "./event-tab";
 import ChatTab from "./chat-tab";
 import FeedNavArrows from "@/components/feed-nav-arrows";
 import BottomTabBar from "@/components/bottom-tab-bar";
-import SideRail from "@/components/side-rail";
+import SideRail, { LEGAL_PAGES } from "@/components/side-rail";
 import type { Post } from "@/lib/posts";
 import { isSecondaryLocale } from "@/lib/intl";
 import { getCurrentEventId } from "@/lib/event-config";
@@ -1150,8 +1150,25 @@ export default function CommunityClient({
             <div ref={sentinelRef} style={{ height: 1 }} />
           )}
           {tab === "home" && !hasMore && posts.length > PAGE_SIZE && (
-            <div className="flex justify-center py-5">
+            <div className="flex flex-col items-center gap-2.5 py-5">
               <span style={{ fontSize: 11, color: MUTED, fontFamily: FONT_SANS }}>♠ 모든 글을 다 봤습니다</span>
+              {/* ★모바일 홈의 정책 링크 자리 (2026-08-05).
+                  홈은 무한 스크롤이라 푸터가 없다 — 피드의 진짜 끝이 곧 푸터 자리다.
+                  데스크톱은 좌측 레일 바닥이 같은 역할을 한다(side-rail.tsx). */}
+              {!pageLocale && (
+                <div className="flex flex-wrap justify-center gap-x-3 gap-y-1 px-4">
+                  {LEGAL_PAGES.map((p) => (
+                    <Link
+                      key={p.href}
+                      href={p.href}
+                      className="hover:underline"
+                      style={{ fontSize: 11, color: MUTED, fontFamily: FONT_SANS }}
+                    >
+                      {p.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
             </div>
           )}
         </div>

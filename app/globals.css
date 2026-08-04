@@ -917,3 +917,107 @@ a.brush-link:hover { filter: brightness(0.9); }
   display: inline-block;
   transform: scaleX(-1);
 }
+
+/* ══════════════════════════════════════════════════════════════
+   정책·안내 페이지 본문 (.legal-prose) — /privacy · /terms · /contact
+   ★.blog-prose를 재사용하지 않는 이유: 저쪽은 골드 표 박스·H2 구분선·CJK 분기까지
+     블로그 글 전용 장치가 많이 붙어 있다. 조항·표 위주의 문서에 그 장식이 얹히면
+     오히려 읽기 어렵고, 나중에 블로그 타이포를 손댈 때 정책 페이지가 같이 흔들린다.
+   ══════════════════════════════════════════════════════════════ */
+.legal-prose {
+  font-size: 0.95rem;
+  line-height: 1.85;
+  color: hsl(var(--muted-foreground));
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+@media (min-width: 640px) {
+  .legal-prose { font-size: 1rem; }
+}
+.legal-prose p {
+  margin-bottom: 1em;
+}
+.legal-prose ul {
+  list-style: disc;
+  padding-inline-start: 1.25rem;
+  margin-bottom: 1em;
+}
+.legal-prose li {
+  margin-bottom: 0.4em;
+}
+.legal-prose strong {
+  color: hsl(var(--foreground));
+  font-weight: 700;
+}
+.legal-prose a {
+  color: hsl(var(--primary));
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.legal-prose a:hover {
+  filter: brightness(0.85);
+}
+.legal-prose table {
+  width: 100%;
+  /* separate + spacing 0 — collapse면 border-radius가 먹지 않는다(모서리가 각지게 남는다) */
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 1.25em 0;
+  font-size: 0.875rem;
+  background: hsl(var(--card));
+  border: 1px solid hsl(var(--border));
+  border-radius: 12px;
+  overflow: hidden;
+}
+.legal-prose th,
+.legal-prose td {
+  padding: 10px 12px;
+  border-bottom: 1px solid hsl(var(--border));
+  text-align: start;
+  vertical-align: top;
+}
+.legal-prose thead th {
+  background: hsl(var(--secondary));
+  color: hsl(var(--foreground));
+  font-weight: 700;
+  white-space: nowrap;
+}
+.legal-prose tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   데스크톱 본문 줄 길이 제한 (2026-08-05)
+
+   ★문제: 1440px에서 본문이 928px / 18px / 줄간격 1.63 → **한 줄 52자**였다(실측).
+     한국어 본문 권장은 38~42자다. 줄이 길면 눈이 다음 줄 첫 글자를 찾는 데 실패해
+     같은 줄을 다시 읽게 된다("리딩 리턴 실패") — 체류시간이 아니라 완독률이 깎인다.
+     모바일은 302px·16px·19자로 오히려 좁은 쪽이라 여기 손대지 않는다.
+
+   ★문단·목록·인용에만 건다. 표·이미지·인포그래픽·H2는 그대로 넓게 둔다:
+     - 표는 열이 많아 좁히면 억지 줄바꿈이 생긴다(이미 overflow-x-auto로 감싸져 있다)
+     - .blog-h2는 위쪽에 2px 구분선을 그리는데, 폭을 줄이면 선이 문단 폭에서 끊겨
+       "깨진 것처럼" 보인다. 헤딩은 원래도 짧아서 52자에 닿지 않는다.
+   ★44rem = 704px. 실측(1440px · holdem-hand-rankings): 문단 폭 928 → 704px,
+     본문 16.8px 기준 704/16.8 = **41.9자**로 권장 구간(38~42자) 안에 들어온다.
+     ※ 글자 수는 「문단 폭 ÷ font-size」(전각 1자=1em) 기준이다. 2026-08-04에 "928px = 52자"로
+       잰 것과 같은 방식이라야 비교가 된다(928/18 = 51.6).
+   ══════════════════════════════════════════════════════════════ */
+@media (min-width: 1024px) {
+  .blog-prose p,
+  .blog-prose ul,
+  .blog-prose ol,
+  .blog-prose blockquote {
+    max-width: 44rem;
+  }
+  /* 표·플렉스 안의 문단은 그 칸의 폭을 따라야 한다 — 위 규칙이 칸 안에서 또 704px을
+     들고 있으면 칸 폭 계산이 어긋난다. */
+  .blog-prose td p,
+  .blog-prose th p,
+  .blog-prose li p,
+  .blog-prose td ul,
+  .blog-prose td ol {
+    max-width: none;
+  }
+}
