@@ -341,7 +341,10 @@ export default function BlogPost({
                  음수 마진이 그 패딩과 정확히 같지 않으면 가로 스크롤이 생긴다. (2026-08-01) */
               /* ★top-0: 모바일에선 이 바가 곧 상단 네비다(전역 탑바를 뺐으므로).
                  lg 이상은 BlogTopBar(56px)가 살아 있으므로 그 아래(top-14)로. */
-              className={`xl:hidden sticky top-0 lg:top-14 z-40 -mx-2 px-2 sm:-mx-4 sm:px-4 mb-6 py-1.5 bg-background/95 backdrop-blur-sm border-b border-border/70 shadow-[0_8px_18px_-14px_rgba(0,0,0,0.3)] transition-transform duration-200 ${
+              /* ★하단 전역 탭바와 디자인 통일 (2026-08-04) — 같은 다크 그린 계열에
+                 배경만 한 톤 밝게(#1a3a2a vs 하단 #0d1c14)해 상·하단을 구분한다. */
+              style={{ background: "#1a3a2a", borderBottom: "1px solid rgba(255,255,255,0.10)" }}
+              className={`xl:hidden sticky top-0 lg:top-14 z-40 -mx-2 px-2 sm:-mx-4 sm:px-4 mb-6 py-1.5 shadow-[0_8px_18px_-14px_rgba(0,0,0,0.45)] transition-transform duration-200 ${
                 toolsHidden ? "-translate-y-full lg:-translate-y-[calc(100%+3.5rem)]" : "translate-y-0"
               }`}
             >
@@ -355,36 +358,35 @@ export default function BlogPost({
                   type="button"
                   onClick={goBack}
                   aria-label="뒤로 가기"
-                  className="flex flex-shrink-0 items-center justify-center rounded-xl bg-card border border-border px-2.5 hover:bg-card/70 transition-colors"
+                  className="flex flex-shrink-0 items-center justify-center rounded-lg px-2.5 hover:bg-white/10 transition-colors"
+                  style={{ color: "#f4f0e7" }}
                 >
-                  <ChevronLeft className="w-4 h-4 text-primary" aria-hidden="true" />
+                  <ChevronLeft className="w-4 h-4" aria-hidden="true" />
                 </button>
 
-                {/* 카테고리(= 이 글이 속한 필라) — 펼치면 학습맵 */}
+                {/* 카테고리(= 이 글이 속한 필라) — 펼치면 전체 학습맵(현재 필라는 자동 펼침) */}
                 {showMinimap && cluster && (
                   <details
                     ref={(el) => { navRefs.current[0] = el; }}
                     onToggle={(e) => { if (e.currentTarget.open) closeOtherPanels(e.currentTarget); }}
                     className="group/map flex-1 min-w-0"
                   >
-                    <summary className="flex h-full items-center justify-center gap-1 px-1.5 py-2 cursor-pointer list-none [&::-webkit-details-marker]:hidden rounded-xl bg-card border border-border hover:bg-card/70 transition-colors">
-                      <PillarIcon className="w-3.5 h-3.5 flex-shrink-0 text-primary" aria-hidden="true" />
-                      <span className="min-w-0 truncate text-[11px] font-bold leading-none text-primary">{cluster.pillarLabel}</span>
-                      <ChevronDown className="w-3 h-3 flex-shrink-0 text-primary transition-transform duration-200 group-open/map:rotate-180" aria-hidden="true" />
+                    <summary
+                      className="flex h-full items-center justify-center gap-1 px-1.5 py-2 cursor-pointer list-none [&::-webkit-details-marker]:hidden rounded-lg hover:bg-white/10 group-open/map:bg-white/10 transition-colors"
+                      style={{ color: "#f4f0e7" }}
+                    >
+                      <PillarIcon className="w-3.5 h-3.5 flex-shrink-0" aria-hidden="true" />
+                      <span className="min-w-0 truncate text-[11px] font-bold leading-none">{cluster.pillarLabel}</span>
+                      <ChevronDown className="w-3 h-3 flex-shrink-0 transition-transform duration-200 group-open/map:rotate-180" aria-hidden="true" />
                     </summary>
-                    <div className="absolute inset-x-0 top-full z-10 mt-1.5 rounded-xl bg-card border border-border shadow-xl">
-                      <div ref={trailBoxRef} className="relative max-h-40 overflow-y-auto overscroll-contain px-3 pt-2.5 pb-2.5">
-                        <ClusterMinimap slug={post.slug} clusters={KO_CLUSTERS} hrefBase="/blog" labels={KO_MINIMAP_LABELS} bare currentOnly />
-                      </div>
-                      <details className="group/fullmap border-t border-border/60">
-                        <summary className="flex items-center justify-between gap-2 px-3 py-2 cursor-pointer list-none [&::-webkit-details-marker]:hidden text-[10px] font-semibold uppercase tracking-wider text-muted-foreground/80 hover:text-primary transition-colors">
-                          <span className="flex items-center gap-1.5"><Map className="w-3.5 h-3.5" aria-hidden="true" /> 다른 카테고리 보기</span>
-                          <ChevronDown className="w-3.5 h-3.5 transition-transform duration-200 group-open/fullmap:rotate-180" aria-hidden="true" />
-                        </summary>
-                        <div className="max-h-[55vh] overflow-y-auto overscroll-contain border-t border-border/60 px-3 pt-1.5 pb-2.5">
-                          <ClusterMinimap slug={post.slug} clusters={KO_CLUSTERS} hrefBase="/blog" labels={KO_MINIMAP_LABELS} bare />
-                        </div>
-                      </details>
+                    {/* ★한 번에 전체 학습맵 (2026-08-04) — 전엔 현재 필라 트레일만 보이고
+                        「다른 카테고리 보기」를 또 눌러야 전체가 나왔다. 두 단계를 없앴다.
+                        ClusterMinimap 기본 모드가 전 필라 아코디언 + 현재 필라 자동 펼침이다. */}
+                    <div
+                      ref={trailBoxRef}
+                      className="absolute inset-x-0 top-full z-10 mt-1.5 max-h-[62vh] overflow-y-auto overscroll-contain rounded-xl bg-card border border-border shadow-xl px-3 py-2.5"
+                    >
+                      <ClusterMinimap slug={post.slug} clusters={KO_CLUSTERS} hrefBase="/blog" labels={KO_MINIMAP_LABELS} bare />
                     </div>
                   </details>
                 )}
@@ -397,12 +399,13 @@ export default function BlogPost({
                     className="group/toc flex-1 min-w-0"
                   >
                     <summary
-                      className="flex h-full items-center justify-center gap-1 px-1.5 py-2 cursor-pointer list-none [&::-webkit-details-marker]:hidden rounded-xl bg-card border border-border hover:bg-card/70 transition-colors"
+                      className="flex h-full items-center justify-center gap-1 px-1.5 py-2 cursor-pointer list-none [&::-webkit-details-marker]:hidden rounded-lg hover:bg-white/10 group-open/toc:bg-white/10 transition-colors"
+                      style={{ color: "#f4f0e7" }}
                       aria-label="목차 펼치기/접기"
                     >
-                      <span className="text-[11px] font-bold leading-none text-primary">📚 목차</span>
-                      <span className="text-[10px] leading-none text-muted-foreground/60">{headings.length}</span>
-                      <ChevronDown className="w-3 h-3 flex-shrink-0 text-primary transition-transform duration-200 group-open/toc:rotate-180" aria-hidden="true" />
+                      <span className="text-[11px] font-bold leading-none">📚 목차</span>
+                      <span className="text-[10px] leading-none opacity-60">{headings.length}</span>
+                      <ChevronDown className="w-3 h-3 flex-shrink-0 transition-transform duration-200 group-open/toc:rotate-180" aria-hidden="true" />
                     </summary>
                     <nav
                       className="absolute inset-x-0 top-full z-10 mt-1.5 max-h-[55vh] overflow-y-auto overscroll-contain rounded-xl bg-card border border-border shadow-xl p-4"
@@ -419,10 +422,13 @@ export default function BlogPost({
                   onToggle={(e) => { if (e.currentTarget.open) closeOtherPanels(e.currentTarget); }}
                   className="group/go flex-1 min-w-0"
                 >
-                  <summary className="calc-pulse flex h-full items-center justify-center gap-1 px-1.5 py-2 cursor-pointer list-none [&::-webkit-details-marker]:hidden rounded-xl border-2 border-[#2563eb]/50 bg-gradient-to-br from-primary/15 to-card hover:border-[#2563eb] transition-colors">
-                    <Zap className="w-3.5 h-3.5 flex-shrink-0 text-primary" aria-hidden="true" />
-                    <span className="min-w-0 truncate text-[11px] font-extrabold leading-none text-foreground">바로가기</span>
-                    <ChevronDown className="w-3 h-3 flex-shrink-0 text-primary transition-transform duration-200 group-open/go:rotate-180" aria-hidden="true" />
+                  <summary
+                    className="flex h-full items-center justify-center gap-1 px-1.5 py-2 cursor-pointer list-none [&::-webkit-details-marker]:hidden rounded-lg hover:bg-white/10 group-open/go:bg-white/10 transition-colors"
+                    style={{ color: "#e9c766" }}
+                  >
+                    <Zap className="w-3.5 h-3.5 flex-shrink-0" aria-hidden="true" />
+                    <span className="min-w-0 truncate text-[11px] font-extrabold leading-none">바로가기</span>
+                    <ChevronDown className="w-3 h-3 flex-shrink-0 transition-transform duration-200 group-open/go:rotate-180" aria-hidden="true" />
                   </summary>
                   <div className="absolute inset-x-0 top-full z-10 mt-1.5 rounded-xl bg-card border border-border shadow-xl overflow-hidden">
                     {([

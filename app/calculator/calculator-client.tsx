@@ -1,9 +1,10 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { SEO } from "@/components/seo";
-import { Calculator, TrendingUp, Layers, Target, Trophy, BarChart3, Zap } from "lucide-react";
+import { Calculator, TrendingUp, Layers, Target, Trophy, BarChart3, Zap, ChevronLeft, ChevronRight, ChevronDown, LayoutGrid, BookOpen } from "lucide-react";
+import Link from "next/link";
 import { CALCULATOR_FAQ } from "./faq";
 import { pfLookup, PF_STACK_MIN, PF_STACK_MAX, PF_STACK_STEP } from "@/lib/pushfold-data";
 import { pfLookupMultiway, PF_MW_POSITIONS } from "@/lib/pushfold-multiway-data";
@@ -1248,6 +1249,12 @@ export default function CalculatorPage() {
   const [active, setActive] = useState<typeof TABS[number]["id"]>("outs");
   const tab = TABS.find(t => t.id === active)!;
 
+  // 상단 네비 드롭다운 상호 배타 — 패널이 둘 다 absolute라 동시에 열리면 겹친다
+  const calcNavRefs = useRef<(HTMLDetailsElement | null)[]>([]);
+  const closeCalcPanels = (keep: HTMLDetailsElement | null) => {
+    calcNavRefs.current.forEach((d) => { if (d && d !== keep && d.open) d.open = false; });
+  };
+
   return (
     <>
       <SEO
@@ -1283,6 +1290,99 @@ export default function CalculatorPage() {
           </div>
         </div>
       </section>
+
+      {/* ★모바일 상단 섹션 네비 (2026-08-04) — 블로그 글과 같은 디자인.
+          바로가기로 계산기에 왔는데 상단 네비가 없다는 지적. 하단 전역 탭바와
+          같은 다크 그린 계열에 배경만 한 톤 밝게(#1a3a2a).
+          아래 8개 탭 그리드는 진입 시 한눈에 보라고 남겨 두고, 스크롤로 지나간 뒤에는
+          이 바가 같은 역할을 이어받는다. */}
+      <div
+        className="lg:hidden sticky top-0 z-40 px-3 py-1.5 shadow-[0_8px_18px_-14px_rgba(0,0,0,0.45)]"
+        style={{ background: "#1a3a2a", borderBottom: "1px solid rgba(255,255,255,0.10)" }}
+      >
+        <div className="relative flex items-stretch gap-1.5">
+          <Link
+            href="/"
+            aria-label="홈 피드로"
+            className="flex flex-shrink-0 items-center justify-center rounded-lg px-2.5 no-underline hover:bg-white/10 transition-colors"
+            style={{ color: "#f4f0e7" }}
+          >
+            <ChevronLeft className="w-4 h-4" aria-hidden="true" />
+          </Link>
+
+          {/* 현재 계산기 — 펼치면 8종 전체 */}
+          <details
+            ref={(el) => { calcNavRefs.current[0] = el; }}
+            onToggle={(e) => { if (e.currentTarget.open) closeCalcPanels(e.currentTarget); }}
+            className="group/calc flex-1 min-w-0"
+          >
+            <summary
+              className="flex h-full items-center justify-center gap-1 px-1.5 py-2 cursor-pointer list-none [&::-webkit-details-marker]:hidden rounded-lg hover:bg-white/10 group-open/calc:bg-white/10 transition-colors"
+              style={{ color: "#f4f0e7" }}
+            >
+              <span className="min-w-0 truncate text-[11px] font-bold leading-none">{tab.label}</span>
+              <ChevronDown className="w-3 h-3 flex-shrink-0 transition-transform duration-200 group-open/calc:rotate-180" aria-hidden="true" />
+            </summary>
+            <div className="absolute inset-x-0 top-full z-10 mt-1.5 max-h-[62vh] overflow-y-auto overscroll-contain rounded-xl bg-card border border-border shadow-xl overflow-hidden">
+              {TABS.map(t => (
+                <button
+                  key={t.id}
+                  onClick={(e) => {
+                    setActive(t.id);
+                    (e.currentTarget.closest("details") as HTMLDetailsElement | null)?.removeAttribute("open");
+                  }}
+                  className={`flex w-full items-center gap-2.5 px-3 py-2.5 text-left border-b border-border/50 last:border-0 transition-colors ${
+                    active === t.id ? "bg-primary/10" : "hover:bg-primary/5"
+                  }`}
+                >
+                  <span className="flex-shrink-0 text-primary">{t.icon}</span>
+                  <span className="min-w-0 flex-1">
+                    <span className="block text-[12px] font-bold leading-tight text-foreground">{t.label}</span>
+                    <span className="block text-[10px] leading-tight text-muted-foreground">{t.sub}</span>
+                  </span>
+                </button>
+              ))}
+            </div>
+          </details>
+
+          {/* 바로가기 — 계산기는 현재 페이지라 목록에서 뺀다 */}
+          <details
+            ref={(el) => { calcNavRefs.current[1] = el; }}
+            onToggle={(e) => { if (e.currentTarget.open) closeCalcPanels(e.currentTarget); }}
+            className="group/go flex-1 min-w-0"
+          >
+            <summary
+              className="flex h-full items-center justify-center gap-1 px-1.5 py-2 cursor-pointer list-none [&::-webkit-details-marker]:hidden rounded-lg hover:bg-white/10 group-open/go:bg-white/10 transition-colors"
+              style={{ color: "#e9c766" }}
+            >
+              <Zap className="w-3.5 h-3.5 flex-shrink-0" aria-hidden="true" />
+              <span className="min-w-0 truncate text-[11px] font-extrabold leading-none">바로가기</span>
+              <ChevronDown className="w-3 h-3 flex-shrink-0 transition-transform duration-200 group-open/go:rotate-180" aria-hidden="true" />
+            </summary>
+            <div className="absolute inset-x-0 top-full z-10 mt-1.5 rounded-xl bg-card border border-border shadow-xl overflow-hidden">
+              {([
+                { href: "/tournaments",   Icon: Trophy,     label: "대회 일정",      desc: "국내외 홀덤 대회" },
+                { href: "/win-rate-quiz", Icon: TrendingUp, label: "승률 시뮬레이터", desc: "핸드별 승률 확인" },
+                { href: "/hand-chart",    Icon: LayoutGrid, label: "핸드 차트",      desc: "포지션별 오픈 범위" },
+                { href: "/blog",          Icon: BookOpen,   label: "전체 글",        desc: "홀덤 전략 블로그" },
+              ] as const).map(({ href, Icon, label, desc }) => (
+                <Link
+                  key={href}
+                  href={href}
+                  className="flex items-center gap-2.5 px-3 py-2.5 no-underline border-b border-border/50 last:border-0 hover:bg-primary/5 transition-colors"
+                >
+                  <Icon className="w-4 h-4 flex-shrink-0 text-primary" aria-hidden="true" />
+                  <span className="min-w-0 flex-1">
+                    <span className="block text-[12px] font-bold leading-tight text-foreground">{label}</span>
+                    <span className="block text-[10px] leading-tight text-muted-foreground">{desc}</span>
+                  </span>
+                  <ChevronRight className="w-3.5 h-3.5 flex-shrink-0 text-muted-foreground/50" aria-hidden="true" />
+                </Link>
+              ))}
+            </div>
+          </details>
+        </div>
+      </div>
 
       {/* Calculator Area */}
       <section className="max-w-5xl mx-auto px-4 sm:px-6 py-5 sm:py-10">
