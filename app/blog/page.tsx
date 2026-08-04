@@ -1,5 +1,6 @@
 import BlogIndexClient, { type BlogCardMeta } from "./blog-index-client";
 import { POSTS, CATEGORIES } from "@/lib/posts";
+import HubPage from "@/components/hub-page";
 
 /**
  * 블로그 목록 — 서버에서 카드에 필요한 필드만 뽑아 내려보낸다.
@@ -26,5 +27,9 @@ export default function Page() {
     tags: p.tags,
   }));
 
-  return <BlogIndexClient posts={posts} categories={[...CATEGORIES]} />;
+  return (
+    <HubPage title="블로그">
+      <BlogIndexClient posts={posts} categories={[...CATEGORIES]} />
+    </HubPage>
+  );
 }

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { PUB_REGIONS, REGION_MAP } from "@/lib/pubs";
 import PubRegionClient from "./pub-region-client";
+import HubPage from "@/components/hub-page";
 
 const SITE = "https://www.holdemmaster.com";
 
@@ -44,5 +45,9 @@ export async function generateMetadata({
 export default function Page({ params }: { params: { region: string } }) {
   const region = REGION_MAP[params.region];
   if (!region) notFound();
-  return <PubRegionClient region={region} />;
+  return (
+    <HubPage title="홀덤펍">
+      <PubRegionClient region={region} />
+    </HubPage>
+  );
 }

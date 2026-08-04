@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { SITE } from "@/lib/site";
 import PubIndexClient from "./pub-index-client";
+import HubPage from "@/components/hub-page";
 
 // ★2026-08-02: metadata export가 없어 **루트 레이아웃의 홈 canonical과 홈 제목이 그대로 나갔다.**
 //   components/seo.tsx는 useEffect로만 메타를 바꾸는 클라이언트 컴포넌트라 서버 HTML에 반영되지 않는다
@@ -16,5 +17,9 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <PubIndexClient />;
+  return (
+    <HubPage title="홀덤펍">
+      <PubIndexClient />
+    </HubPage>
+  );
 }

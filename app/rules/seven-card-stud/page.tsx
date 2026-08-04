@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { SITE } from "@/lib/site";
 import RulesSevenCardStudClient from "./rules-seven-card-stud-client";
+import HubPage from "@/components/hub-page";
 
 // ★2026-08-02: metadata export가 없어 홈 canonical·홈 제목이 그대로 나갔다.
 export const metadata: Metadata = {
@@ -12,5 +13,9 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <RulesSevenCardStudClient />;
+  return (
+    <HubPage title="규칙">
+      <RulesSevenCardStudClient />
+    </HubPage>
+  );
 }

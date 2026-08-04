@@ -60,29 +60,22 @@ function translateCategory(category: string, lang: string): string {
   return CATEGORY_I18N[category]?.[lang] ?? category;
 }
 
-// ── 크림 에디토리얼 디자인 토큰 ──────────────────────────────
-export const BG     = "#f4f0e7";   // 크림 배경
-export const CARD   = "#ebe5d6";   // 카드/섹션 배경
-export const BORDER = "#d8d0be";   // 따뜻한 경계선
-export const INK    = "#0d1c14";   // 다크 포레스트 그린 (진한 메인 텍스트)
-export const MUTED  = "#42372a";   // 다크 웜브라운 (보조 텍스트)
-export const RED    = "#7a2e2e";   // 좋아요·액센트
-export const GREEN  = "#3a6b54";   // 온라인 표시
-export const NAV    = "#0d1c14";   // 하단 내비
-export const GOLD   = "#0d1c14";   // 버튼·강조 색상 (= INK)
-
-// ── 이전 토큰명 호환 (event-tab 등에서 사용) ─────────────────
-export const TEXT_PRIMARY   = "#0d1c14";   // 제목·강조
-export const TEXT_BODY      = "#1a2e20";   // 본문
-export const TEXT_SECONDARY = "#42372a";   // 메타·설명
-export const TEXT_MUTED     = "#6a5c44";   // 비활성·데코
-export const DIVIDER        = "#d0c8b8";   // 구분선
-export const SURFACE        = "#e2dccf";   // 프로그레스 배경 등
-
-export const FLAG: Record<string, string> = {
-  ko: "🇰🇷", en: "🇺🇸", ja: "🇯🇵", zh: "🇨🇳", es: "🇪🇸", de: "🇩🇪",
-  pt: "🇧🇷", ar: "🇸🇦", tr: "🇹🇷", vi: "🇻🇳", id: "🇮🇩", ms: "🇲🇾", hi: "🇮🇳",
-};
+/**
+ * ── 크림 에디토리얼 디자인 토큰 ──────────────────────────────
+ * ★정의는 `lib/theme.ts`로 옮겼다(2026-08-04). 이 파일이 "use client"라
+ *   서버 컴포넌트에서 여기 값을 import할 수 없었기 때문이다.
+ *   기존 import 경로(`@/app/community/post-card`)를 그대로 쓰도록 re-export만 남긴다.
+ */
+export {
+  BG, CARD, BORDER, INK, MUTED, RED, GREEN, NAV, GOLD,
+  TEXT_PRIMARY, TEXT_BODY, TEXT_SECONDARY, TEXT_MUTED, DIVIDER, SURFACE,
+  FLAG,
+} from "@/lib/theme";
+import {
+  BG, CARD, BORDER, INK, MUTED, RED, GREEN, NAV, GOLD,
+  TEXT_PRIMARY, TEXT_BODY, TEXT_SECONDARY, TEXT_MUTED, DIVIDER, SURFACE,
+  FLAG,
+} from "@/lib/theme";
 
 const BADGE: Record<string, { label: string; color: string }> = {
   winner: { label: "🏆 우승", color: "#facc15" },

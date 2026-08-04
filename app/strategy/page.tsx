@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { SITE } from "@/lib/site";
 import StrategyClient from "./strategy-client";
+import HubPage from "@/components/hub-page";
 
 // ★2026-08-01: metadata export가 없어 루트 기본 제목("홀덤마스터 — 텍사스 홀덤 완벽 가이드")이
 //   그대로 나갔고, /glossary와 <title>이 완전히 같았다(두 페이지가 서로를 깎아먹음).
@@ -17,5 +18,9 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <StrategyClient />;
+  return (
+    <HubPage title="전략">
+      <StrategyClient />
+    </HubPage>
+  );
 }

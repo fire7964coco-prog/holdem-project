@@ -8,7 +8,6 @@ import Link from "next/link";
 import { CALCULATOR_FAQ } from "./faq";
 import { pfLookup, PF_STACK_MIN, PF_STACK_MAX, PF_STACK_STEP } from "@/lib/pushfold-data";
 import { pfLookupMultiway, PF_MW_POSITIONS } from "@/lib/pushfold-multiway-data";
-import BottomTabBar from "@/components/bottom-tab-bar";
 
 // ─────────────────────────────────────────────
 // Types & Constants
@@ -1702,9 +1701,7 @@ export default function CalculatorPage() {
         </div>
       </section>
 
-      {/* 하단 전역 탭바 — 계산기는 5개 탭 어디에도 속하지 않아 활성 표시 없이 전역 이동만 제공한다 */}
-      <BottomTabBar active="none" locale="ko" />
-      <div className="h-[62px] lg:hidden" aria-hidden />
+      {/* 하단 전역 탭바는 HubShell(components/hub-shell.tsx)이 깐다 — 여기서 또 그리면 2겹이 된다 */}
     </>
   );
 }

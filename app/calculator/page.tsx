@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { SITE } from "@/lib/site";
 import CalculatorClient from "./calculator-client";
 import { CALCULATOR_FAQ } from "./faq";
+import HubPage from "@/components/hub-page";
 
 export const metadata: Metadata = {
   title: "ICM 계산기·홀덤 확률 계산기 — 아웃츠·팟오즈·SPR·M값 무료",
@@ -73,7 +74,9 @@ export default function Page() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <CalculatorClient />
+      <HubPage title="계산기">
+        <CalculatorClient />
+      </HubPage>
     </>
   );
 }

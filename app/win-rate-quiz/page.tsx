@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import WinRateQuizClient from "./win-rate-quiz-client";
+import HubPage from "@/components/hub-page";
 
 const SITE = "https://www.holdemmaster.com";
 
@@ -21,5 +22,9 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <WinRateQuizClient />;
+  return (
+    <HubPage title="승률 시뮬레이터">
+      <WinRateQuizClient />
+    </HubPage>
+  );
 }

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { SITE } from "@/lib/site";
 import RulesTexasHoldemClient from "./rules-texas-holdem-client";
+import HubPage from "@/components/hub-page";
 
 // 카니발 방지: /blog/holdem-rules 필라가 "홀덤 룰" 키워드 소유 → 이 도구는 noindex.
 // ★2026-08-02 canonical 추가: 루트 layout의 홈 canonical을 물려받아 **noindex인데 홈을
@@ -11,5 +12,9 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <RulesTexasHoldemClient />;
+  return (
+    <HubPage title="규칙">
+      <RulesTexasHoldemClient />
+    </HubPage>
+  );
 }

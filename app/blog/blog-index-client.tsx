@@ -7,7 +7,6 @@ import { motion } from "framer-motion";
 import { Clock, ChevronRight, Tag, Search, X } from "lucide-react";
 import { SEO } from "@/components/seo";
 import CardThumb from "@/components/card-thumb";
-import BottomTabBar from "@/components/bottom-tab-bar";
 
 /**
  * 카드가 실제로 그리는 필드만. 본문(content)은 여기 없다 — page.tsx 주석 참조.
@@ -147,37 +146,18 @@ export default function BlogIndex({
         schema={jsonLd}
       />
 
-      {/* Header */}
-      <section className="relative py-16 md:py-20 border-b border-gray-500/40 overflow-hidden bg-gray-500">
-        {/* 로드맵 이미지 — 흑백, 콘트라스트 높여서 필름B&W 질감
-            장식용 배경(decorative)이라 fetchpriority=high·preload 안 함.
-            webp로 교체해 ~80% 용량 절감, eager+동기 디코딩으로 LCP 직전에만 페인트. */}
-        <img
-          src="/images/roadmap-preview.webp"
-          alt=""
-          aria-hidden="true"
-          width={1600}
-          height={900}
-          loading="eager"
-          decoding="async"
-          className="absolute inset-0 w-full h-full object-cover pointer-events-none select-none"
-          style={{
-            opacity: 0.32,
-            filter: "grayscale(100%) invert(1) contrast(1.1) brightness(1.0)",
-            objectPosition: "center 38%",
-          }}
-        />
-        {/* 상단 페이드 — 네비와 자연스럽게 */}
-        <div className="absolute inset-x-0 top-0 h-20 bg-gradient-to-b from-gray-500 to-transparent" />
-        {/* 하단 페이드 */}
-        <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-b from-transparent to-gray-500/80" />
-        {/* 중간 스크림 */}
-        <div className="absolute inset-0 bg-gray-500/25" />
-        <div className="relative max-w-5xl mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-serif font-black text-primary mb-3">
+      {/* Header
+          ★2026-08-04: 회색(bg-gray-500) 풀블리드 히어로 + 흑백 로드맵 배경 이미지를 걷어냈다.
+            허브 셸(components/hub-shell.tsx)이 들어오면서 이 페이지도 크림 3열 안으로
+            들어왔는데, 그 안에서 회색 띠 하나만 튀어 「예전 레이아웃」으로 보였다
+            (사장님 지적). 배경 이미지 위 골드 제목은 대비도 나빴다.
+            제목·설명·검색·로드맵 배너만 크림 배경 위에 그대로 남긴다. */}
+      <section className="pt-8 pb-6 border-b border-border">
+        <div className="px-4 text-center">
+          <h1 className="text-3xl md:text-4xl font-serif font-black text-foreground mb-3">
             홀덤 전략 블로그
           </h1>
-          <p className="max-w-xl mx-auto mb-6" style={{ color: "#fef3c7" }}>
+          <p className="max-w-xl mx-auto mb-6 text-muted-foreground">
             텍사스 홀덤 전략, 초보 가이드, 토너먼트 소식을 2~3일마다 업데이트합니다.
           </p>
 
@@ -286,9 +266,9 @@ export default function BlogIndex({
         </div>
       </section>
 
-      {/* Category Filter */}
-      <div className="sticky top-20 z-30 bg-background/90 backdrop-blur-md border-b border-border">
-        <div className="max-w-5xl mx-auto px-4 py-3 flex items-center gap-2 overflow-x-auto scrollbar-hide">
+      {/* Category Filter — 마스트헤드(56px) 아래에 붙는다 */}
+      <div className="sticky top-[57px] lg:top-[73px] z-30 bg-background/90 backdrop-blur-md border-b border-border">
+        <div className="px-4 py-3 flex items-center gap-2 overflow-x-auto scrollbar-hide">
           {["전체", ...categories].map((cat) => (
             <button
               key={cat}
@@ -305,7 +285,7 @@ export default function BlogIndex({
         </div>
       </div>
 
-      <div className="max-w-5xl mx-auto px-4 py-12">
+      <div className="px-4 py-10">
         {/* 활성 필터 표시 — 지금 무엇으로 걸러진 목록인지 알려주고, 해제 경로를 준다 */}
         {isFiltering && (
           <div className="mb-6 flex flex-wrap items-center gap-2 text-sm">
@@ -384,18 +364,18 @@ export default function BlogIndex({
             </Link>
 
             {/* Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
               {rest.map((post, idx) => (
                 <PostCard key={post.slug} post={post} delay={idx * 0.07} />
               ))}
             </div>
           </>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
             {filtered.length > 0
               ? filtered.map((post, idx) => <PostCard key={post.slug} post={post} delay={idx * 0.07} />)
               : (
-                <div className="md:col-span-3 text-center py-20 text-muted-foreground">
+                <div className="md:col-span-2 xl:col-span-3 text-center py-20 text-muted-foreground">
                   <div className="text-5xl mb-4">—</div>
                   <p className="text-lg font-semibold">일치하는 글이 없습니다</p>
                   <p className="text-sm mt-2">
@@ -416,9 +396,6 @@ export default function BlogIndex({
         )}
       </div>
 
-      {/* 하단 전역 탭바 — 목록도 블로그 섹션이므로 blog 탭 활성 */}
-      <BottomTabBar active="none" locale="ko" />
-      <div className="h-[62px] lg:hidden" aria-hidden />
     </>
   );
 }

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { SITE } from "@/lib/site";
 import RulesClient from "./rules-client";
+import HubPage from "@/components/hub-page";
 
 export const metadata: Metadata = {
   title: "포커 게임 종류별 규칙 — 텍사스 홀덤·오마하·세븐카드 스터드",
@@ -11,5 +12,9 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <RulesClient />;
+  return (
+    <HubPage title="규칙">
+      <RulesClient />
+    </HubPage>
+  );
 }

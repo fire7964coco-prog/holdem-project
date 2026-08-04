@@ -7,6 +7,7 @@ import BlogTopBar from "@/components/blog-top-bar";
 import { hasBottomTabBar } from "@/components/bottom-tab-bar";
 import { FixedSideRail, hasFixedSideRail } from "@/components/side-rail";
 import { Footer } from "@/components/footer";
+import { isHubRoute } from "@/lib/hub-routes";
 import { smoothScrollWindowTo } from "@/lib/smooth-scroll";
 
 /**
@@ -80,7 +81,8 @@ export function ScrollToTopButton() {
 
   // ★하단 탭바가 깔리는 라우트에서는 그 위로 비켜선다.
   //   기본 bottom-6(24px)이면 버튼(44px)이 24~68px를 차지해 탭바(0~62px)와 겹친다.
-  const liftAboveTabBar = hasBottomTabBar(pathname);
+  //   허브 셸도 자체적으로 탭바를 깐다(TAB_BAR_SECTIONS엔 없는 /quiz 등 포함) → 같이 비켜준다.
+  const liftAboveTabBar = hasBottomTabBar(pathname) || isHubRoute(pathname);
 
   return (
     <button
@@ -109,6 +111,9 @@ export function SiteHeader() {
   const locale = localeFromPath(pathname);
   // 피드 앱 라우트(홈·로그인·글상세·블로그)는 자체 헤더 — 탑바 불필요
   if (isFeedAppRoute(pathname)) return null;
+  // ★허브 셸 라우트는 HubShell이 홈과 같은 마스트헤드를 직접 그린다 (2026-08-04).
+  //   여기서 BlogTopBar까지 렌더하면 상단바가 2겹이 된다.
+  if (isHubRoute(pathname)) return null;
   // 나머지 모든 페이지(퀴즈·족보·규칙 등)는 BlogTopBar 공용 컴포넌트
   const homeHref = locale ? `/${locale}` : "/";
   const ctaLabel = locale ? NAV_CTA[locale] : "커뮤니티";
@@ -135,6 +140,8 @@ export function SiteHeader() {
  */
 export function SiteRail() {
   const pathname = usePathname() || "/";
+  // 허브 셸은 자기 레일을 흐름 안에 갖는다(홈과 동일) — 고정 레일까지 깔면 2개가 된다
+  if (isHubRoute(pathname)) return null;
   if (!hasFixedSideRail(pathname)) return null;
   const locale = localeFromPath(pathname);
   return (
@@ -173,8 +180,12 @@ function isFooterlessRoute(pathname: string): boolean {
 export function SiteFooter() {
   const pathname = usePathname() || "/";
   if (isFooterlessRoute(pathname)) return null;
-  const railPad = hasFixedSideRail(pathname) ? " xl:ps-[212px]" : "";
-  const tabPad = hasBottomTabBar(pathname) ? " pb-[62px] lg:pb-0" : "";
+  // 허브 셸은 레일이 흐름 안에 있어 푸터가 비켜설 필요가 없다(위 MainContent와 같은 이유).
+  const railPad = !isHubRoute(pathname) && hasFixedSideRail(pathname) ? " xl:ps-[212px]" : "";
+  // ★허브 셸은 모든 경로에 하단 탭바를 깐다(TAB_BAR_SECTIONS에 없는 /quiz·/glossary 등 포함).
+  //   푸터가 페이지의 마지막 요소이므로 탭바 높이를 여기서 비켜준다.
+  const tabPad =
+    isHubRoute(pathname) || hasBottomTabBar(pathname) ? " pb-[62px] lg:pb-0" : "";
   return <Footer className={`${railPad}${tabPad}`} />;
 }
 
@@ -192,7 +203,9 @@ export function MainContent({ children }: { children: React.ReactNode }) {
   // ★좌측 고정 레일이 깔린 라우트는 그만큼 비켜선다 — 하단 탭바가 fixed일 때
   //   본문에 pb-[62px]을 준 것과 같은 방식이다. 레일 자체는 fixed라 흐름을 안 차지한다.
   //   ps-(padding-inline-start)를 쓰는 이유: 아랍어·히브리어 RTL에서 레일이 오른쪽으로 간다.
-  const railPad = hasFixedSideRail(pathname) ? " xl:ps-[212px]" : "";
+  // ★허브 셸 라우트는 레일이 **흐름 안**(3열 flex)에 있으므로 이 패딩을 주면 안 된다.
+  //   주면 본문이 212px 더 밀려 우측 사이드바가 잘린다.
+  const railPad = !isHubRoute(pathname) && hasFixedSideRail(pathname) ? " xl:ps-[212px]" : "";
   return (
     <main id="main-content" className={`relative z-10${railPad}`}>
       {children}

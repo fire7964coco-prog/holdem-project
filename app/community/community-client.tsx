@@ -556,6 +556,29 @@ export default function CommunityClient({
     if (t === "event" || t === "chat" || t === "profile") setTab(t);
   }, []);
 
+  /**
+   * ?write=1 로 진입하면 작성 모달을 바로 연다 (2026-08-04).
+   * 허브 페이지(계산기·전략·규칙…)의 좌측 레일에도 홈과 똑같이 「글 쓰기」 버튼이 있는데,
+   * 그쪽엔 작성 모달이 없다. 버튼을 지우면 레일이 홈과 달라지고, 그냥 홈으로만 보내면
+   * "눌렀는데 작성창이 안 열리는" 버튼이 된다 → 홈으로 오면서 모달까지 열어 준다.
+   * 비로그인이면 기존 동작대로 로그인 페이지로 보낸다.
+   */
+  const writeParamHandled = useRef(false);
+  useEffect(() => {
+    if (writeParamHandled.current) return;
+    if (new URLSearchParams(window.location.search).get("write") !== "1") return;
+    if (loading) return; // 세션 판별 전엔 대기 — 로그인 상태인데 로그인 페이지로 튕기는 것 방지
+    writeParamHandled.current = true;
+    if (currentUser) setWriteOpen(true);
+    else router.push("/login");
+    // 새로고침·뒤로가기에서 모달이 다시 열리지 않게 파라미터를 지운다
+    try {
+      const url = new URL(window.location.href);
+      url.searchParams.delete("write");
+      window.history.replaceState(window.history.state, "", url.toString());
+    } catch { /* noop */ }
+  }, [loading, currentUser, router]);
+
   // 탭 변경 시 URL(?tab=)에 동기화 → 도구(계산기 등)에 갔다가 뒤로가기 시 직전 탭(예: 채팅) 복원.
   const tabSynced = useRef(false);
   useEffect(() => {

@@ -39,10 +39,14 @@ export const SIDE_RAIL_WIDTH = 200;
  *    블로그 번들로 딸려온다 — bottom-tab-bar에서 라벨을 따로 둔 것과 같은 이유다.)
  */
 export const HUB_PAGES = [
-  // ★/blog(전체 글 목록)은 여기에도 KO_PAGE_TEASERS에도 없어서 홈에서 도달할 방법이 없었다.
-  //   블로그 56편이 사이트의 주력인데 목록으로 가는 길이 끊겨 있던 것.
-  { href: "/blog",            icon: "📚", label: "전체 글 보기" },
-  // 검색 진입점 (2026-08-05) — /blog 상단 검색창으로 바로 내려간다
+  /**
+   * ★「전체 글 보기」(/blog) 제거 — 2026-08-04 사장님 지시.
+   *   "그 안 구성도 예전 레이아웃이고 굳이 필요 없을 듯" — 홈 피드에 블로그 글이 이미
+   *   카드로 전부 들어가 있어서 목록 페이지는 중복 진입점이다. 하단 탭바에서 블로그 탭을
+   *   뺐던 것(2026-08-04)과 같은 판단이다.
+   *   /blog 라우트 자체는 남는다 — 검색(?q=)이 거기 살고, sitemap·canonical 대상이다.
+   */
+  // 검색 진입점 — /blog 상단 검색창으로 바로 내려간다
   { href: "/blog#search",     icon: "🔎", label: "글 검색" },
   { href: "/tournaments",     icon: "🏆", label: "홀덤 대회 일정" },
   { href: "/pub",             icon: "🍺", label: "내 근처 홀덤펍" },
@@ -102,8 +106,13 @@ interface Props {
   locale?: string | null;
   /** 주면 탭이 라우팅 대신 이 콜백으로 처리된다(홈 내부 전환) */
   onSelect?: (key: Exclude<BottomTabKey, "blog">) => void;
-  /** 주면 「글 쓰기」 버튼을 렌더한다(홈 전용 — 밖에서는 작성 모달이 없다) */
+  /** 주면 「글 쓰기」 버튼을 클릭 핸들러로 렌더한다(홈 — 그 자리에서 모달이 열린다) */
   onWrite?: () => void;
+  /**
+   * onWrite 없이 「글 쓰기」 버튼을 보여줄 때의 이동 경로(허브 페이지용).
+   * 홈이 `?write=1`을 읽어 도착과 동시에 작성 모달을 연다(community-client.tsx).
+   */
+  writeHref?: string;
   /** 글 쓰기 버튼 라벨 */
   writeLabel?: string;
 }
@@ -114,6 +123,7 @@ export default function SideRail({
   locale = null,
   onSelect,
   onWrite,
+  writeHref,
   writeLabel = "✏️ 글 쓰기",
 }: Props) {
   const L = tabLabels(locale);
@@ -159,16 +169,27 @@ export default function SideRail({
         );
       })}
 
-      {onWrite && (
+      {(onWrite || writeHref) && (
         <>
           <div style={{ borderTop: `1px solid ${BORDER}`, margin: "10px 0" }} />
-          <button
-            onClick={onWrite}
-            className="w-full py-2.5 rounded-lg text-sm font-semibold"
-            style={{ background: INK, color: BG, fontFamily: FONT_SANS }}
-          >
-            {writeLabel}
-          </button>
+          {onWrite ? (
+            <button
+              onClick={onWrite}
+              className="w-full py-2.5 rounded-lg text-sm font-semibold"
+              style={{ background: INK, color: BG, fontFamily: FONT_SANS }}
+            >
+              {writeLabel}
+            </button>
+          ) : (
+            /* 허브 페이지 — 홈으로 이동하면서 ?write=1 로 작성 모달까지 연다 */
+            <Link
+              href={writeHref!}
+              className="block w-full py-2.5 rounded-lg text-sm font-semibold text-center"
+              style={{ background: INK, color: BG, fontFamily: FONT_SANS }}
+            >
+              {writeLabel}
+            </Link>
+          )}
         </>
       )}
 

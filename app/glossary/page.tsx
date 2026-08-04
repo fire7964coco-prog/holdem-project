@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { SITE } from "@/lib/site";
 import GlossaryClient from "./glossary-client";
+import HubPage from "@/components/hub-page";
 
 // ★2026-08-01: metadata export가 없어 /strategy와 <title>이 완전히 같았다(루트 기본값).
 //   용어집은 경쟁하는 블로그 필라가 없다(holdem-glossary 슬러그는 KO에 존재하지 않음) →
@@ -15,5 +16,9 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <GlossaryClient />;
+  return (
+    <HubPage title="용어사전">
+      <GlossaryClient />
+    </HubPage>
+  );
 }

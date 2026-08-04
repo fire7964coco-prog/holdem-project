@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import HoldemPracticeClient from "./holdem-practice-client";
+import HubPage from "@/components/hub-page";
 
 const SITE = "https://www.holdemmaster.com";
 
@@ -21,5 +22,9 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <HoldemPracticeClient />;
+  return (
+    <HubPage title="연습장">
+      <HoldemPracticeClient />
+    </HubPage>
+  );
 }

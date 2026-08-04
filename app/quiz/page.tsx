@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { SITE } from "@/lib/site";
 import QuizClient from "./quiz-client";
+import HubPage from "@/components/hub-page";
 
 // ★2026-08-02: metadata export가 없어 홈 canonical·홈 제목이 그대로 나갔다.
 //   제목은 클라이언트가 쓰던 문구에서 "| 홀덤마스터"만 뗀다 — 루트 layout의
@@ -14,5 +15,9 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <QuizClient />;
+  return (
+    <HubPage title="퀴즈">
+      <QuizClient />
+    </HubPage>
+  );
 }
