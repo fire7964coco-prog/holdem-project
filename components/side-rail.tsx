@@ -85,10 +85,32 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
     { href: "/en/win-rate-quiz", icon: "📈", label: "Equity Simulator" },
     { href: "/en/glossary",     icon: "📖", label: "Poker Glossary" },
   ],
+  /**
+   * ja·es는 2개뿐 — 이 언어들엔 도구 페이지(calculator·hand-chart·glossary…)가 없다.
+   * 라벨은 **둘 다 리포지토리의 검증된 값에서 축어 복사**했다(지어낸 표현 없음):
+   *   - "ブログ"        = CHROME.ja.blogLabel (lib/intl.ts) · TAB_LABELS.ja.blog와도 일치
+   *   - "トーナメント"   = lib/pillar-clusters.ts ja 클러스터의 pillarLabel
+   *   - "Blog"          = CHROME.es.blogLabel
+   *   - "Torneos"       = lib/pillar-clusters.ts es 클러스터의 pillarLabel
+   * ★en이 h1("Poker Tournament Schedule 2026")을 "Tournaments"로 줄여 쓴 것과 같은 층위다.
+   *   BOARD_STRINGS의 h1은 레일에 넣기엔 너무 길다(ja "ポーカー大会スケジュール 2026").
+   */
+  ja: [
+    { href: "/ja/blog",        icon: "📚", label: "ブログ" },
+    { href: "/ja/tournaments", icon: "🏆", label: "トーナメント" },
+  ],
+  es: [
+    { href: "/es/blog",        icon: "📚", label: "Blog" },
+    { href: "/es/tournaments", icon: "🏆", label: "Torneos" },
+  ],
 };
 
-/** 「홀덤 가이드」 섹션 헤딩 — 로케일별. 없으면 en. */
-const HUB_HEADING: Record<string, string> = { en: "Guides" };
+/**
+ * 「홀덤 가이드」 섹션 헤딩 — 로케일별. 없으면 en.
+ * ja·es는 BOARD_STRINGS(lib/tournaments-i18n.ts)의 guideLink에서 딴 것이다 —
+ * ja "詳細ガイド" → ガイド · es "Guía completa" → Guías(복수). 새로 번역하지 않았다.
+ */
+const HUB_HEADING: Record<string, string> = { en: "Guides", ja: "ガイド", es: "Guías" };
 
 /**
  * 정책·신뢰 페이지. 홈 레일 바닥과 모바일 피드 끝에 쓴다.

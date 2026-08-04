@@ -43,6 +43,14 @@ const LOCALE_HUB_ROUTES: Record<string, readonly string[]> = {
    *   레일 노출과 셸 적용은 별개다.
    */
   en: ["/en/blog", "/en/calculator", "/en/glossary", "/en/hand-chart", "/en/quiz", "/en/ranking", "/en/tournaments", "/en/win-rate-quiz"],
+  /**
+   * ja·es는 2개뿐이다 — en과 달리 **도구 페이지 자체가 없다**
+   * (`app/ja/`·`app/es/`에 있는 건 blog·tournaments 둘뿐).
+   * 없는 라우트를 넣으면 isHubRoute가 참이 되어 site-chrome이 전역 크롬을 비켜주는데
+   * 정작 그 경로에 페이지가 없으니 아무 효과도 없다. 있는 것만 넣는다.
+   */
+  ja: ["/ja/blog", "/ja/tournaments"],
+  es: ["/es/blog", "/es/tournaments"],
 };
 
 /**

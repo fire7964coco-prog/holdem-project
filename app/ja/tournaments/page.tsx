@@ -5,6 +5,7 @@ import { TOURNAMENTS, computeStatus } from "@/lib/tournaments";
 import { BOARD_STRINGS, buildLocaleSchemas, localizedName, nextUpcoming } from "@/lib/tournaments-i18n";
 import { TOURNAMENT_HREFLANG } from "@/lib/tournaments-hreflang";
 import { resolveBlogLinks } from "@/lib/tournaments-blog-links";
+import HubPage from "@/components/hub-page";
 
 const LOCALE = "ja" as const;
 
@@ -67,7 +68,11 @@ export default function Page() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas) }}
       />
-      <TournamentBoard locale={LOCALE} todayISO={todayISO} blogLinks={blogLinks} />
+      {/* title은 마스트헤드의 「지금 여기」 표시(h1 아님 — 보드가 자기 h1을 갖는다).
+          pillar-clusters.ts ja의 pillarLabel과 같은 값이다. */}
+      <HubPage title="トーナメント" locale="ja">
+        <TournamentBoard locale={LOCALE} todayISO={todayISO} blogLinks={blogLinks} />
+      </HubPage>
     </>
   );
 }
