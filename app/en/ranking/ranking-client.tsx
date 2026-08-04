@@ -154,7 +154,7 @@ export default function RankingEn() {
         title="Best Online Poker Sites — How to Choose Safely [2026]"
         description="Before you pick an online poker site, check the safety and legality criteria and scam warning signs. Plus a factual comparison of major poker sites by license, size, and features."
         keywords="best online poker sites, safe online poker, how to choose a poker site, online poker comparison, GGPoker, PokerStars, 888poker, IDNPoker, WPT Global, avoid poker scams"
-        canonical="https://www.holdemmaster.com/en/ranking"
+        path="/en/ranking"
         schema={jsonLd}
       />
 

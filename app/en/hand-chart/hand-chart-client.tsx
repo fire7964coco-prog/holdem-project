@@ -82,7 +82,7 @@ export default function HandChartEn() {
       <SEO
         title="Poker Starting Hand Chart — Open Ranges by Position"
         description="Interactive Texas Hold'em starting-hand chart. Compare all 169 hands across UTG, HJ, CO, Button, and SB with color-coded GTO open ranges."
-        canonical="https://www.holdemmaster.com/en/hand-chart"
+        path="/en/hand-chart"
         keywords={["poker starting hand chart", "preflop range chart", "holdem open ranges", "UTG range", "button range", "GTO starting hands"]}
       />
 

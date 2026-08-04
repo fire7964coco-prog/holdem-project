@@ -147,7 +147,7 @@ export default function WinRateQuizClient() {
   return (
     <>
       <SEO
-        title="홀덤 승률 시뮬레이터 — 카드가 열릴 때마다 승률이 바뀐다 | 홀덤마스터"
+        title="홀덤 승률 시뮬레이터 — 카드가 열릴 때마다 승률이 바뀐다"
         description="두세 명의 핸드를 랜덤으로 돌려, 프리플랍·플랍·턴·리버 카드가 열릴 때마다 각자의 실제 승률이 어떻게 변하는지 눈으로 확인하는 홀덤 승률 시뮬레이터. 정확히 계산된 확률입니다."
         path="/win-rate-quiz"
       />

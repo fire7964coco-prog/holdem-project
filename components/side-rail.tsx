@@ -82,7 +82,6 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
     { href: "/en/tournaments",  icon: "🏆", label: "Tournaments" },
     { href: "/en/calculator",   icon: "🧮", label: "Odds Calculator" },
     { href: "/en/hand-chart",   icon: "📊", label: "Starting Hand Chart" },
-    { href: "/en/quiz",         icon: "🎯", label: "Hand Quiz" },
     { href: "/en/win-rate-quiz", icon: "📈", label: "Equity Simulator" },
     { href: "/en/glossary",     icon: "📖", label: "Poker Glossary" },
   ],

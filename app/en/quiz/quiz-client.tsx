@@ -81,7 +81,7 @@ export default function QuizEn() {
   if (phase === 'done') {
     return (
       <>
-        <SEO title="Hand Quiz Result | HoldemMaster" description={`I scored ${score}/${TOTAL} on the poker hand quiz! Test your hand-ranking skills at HoldemMaster.`} path="/en/quiz" />
+        <SEO title="Hand Quiz Result" description={`I scored ${score}/${TOTAL} on the poker hand quiz! Test your hand-ranking skills at HoldemMaster.`} path="/en/quiz" />
         <div className="min-h-screen flex items-center justify-center px-4 py-16">
           <motion.div initial={false} animate={{ opacity:1, scale:1 }} className="w-full max-w-md text-center">
             <div className="mb-6 inline-flex items-center justify-center w-20 h-20 rounded-full border-2 text-3xl"
@@ -124,7 +124,7 @@ export default function QuizEn() {
   return (
     <>
       <SEO
-        title="Poker Hand Quiz — Spot the Best Hand from 7 Cards | HoldemMaster"
+        title="Poker Hand Quiz — Spot the Best Hand from 7 Cards"
         description="Poker hand quiz! From 7 cards, pick the best 5-card hand. Test your hand-ranking skills with 10 questions and share your score."
         path="/en/quiz"
       />

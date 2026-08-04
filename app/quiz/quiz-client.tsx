@@ -67,7 +67,7 @@ export default function Quiz() {
   if (phase === 'done') {
     return (
       <>
-        <SEO title="족보 퀴즈 결과 | 홀덤마스터" description={`족보 퀴즈 ${score}/${TOTAL}점! 홀덤마스터에서 나의 족보 실력을 확인하세요.`} path="/quiz" />
+        <SEO title="족보 퀴즈 결과" description={`족보 퀴즈 ${score}/${TOTAL}점! 홀덤마스터에서 나의 족보 실력을 확인하세요.`} path="/quiz" />
         <div className="min-h-screen flex items-center justify-center px-4 py-16">
           <motion.div initial={false} animate={{ opacity:1, scale:1 }} className="w-full max-w-md text-center">
             <div className="mb-6 inline-flex items-center justify-center w-20 h-20 rounded-full border-2 text-3xl"
@@ -112,7 +112,7 @@ export default function Quiz() {
   return (
     <>
       <SEO
-        title="홀덤 족보 퀴즈 — 7장에서 최강 패를 맞혀라! | 홀덤마스터"
+        title="홀덤 족보 퀴즈 — 7장에서 최강 패를 맞혀라!"
         description="홀덤 족보 퀴즈! 7장 카드에서 베스트 5장 족보를 맞혀보세요. 10문제로 나의 족보 실력을 테스트하고 결과를 공유하세요."
         path="/quiz"
       />

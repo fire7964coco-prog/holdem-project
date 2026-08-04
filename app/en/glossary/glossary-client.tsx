@@ -120,7 +120,7 @@ export default function GlossaryEn() {
         title="Poker Glossary — Texas Hold'em Terms Explained (A–Z)"
         description="A clear, accurate glossary of Texas Hold'em terms: nuts, outs, pot odds, 3-bet, c-bet, ICM, SPR, kicker, tilt and more. Search or filter 45+ essential poker terms."
         keywords="poker glossary, texas holdem terms, poker terminology, what does nuts mean poker, outs meaning, pot odds definition, 3-bet meaning, c-bet, ICM poker, SPR poker"
-        canonical="https://www.holdemmaster.com/en/glossary"
+        path="/en/glossary"
         schema={jsonLd}
       />
 

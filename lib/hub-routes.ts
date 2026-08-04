@@ -37,9 +37,10 @@ const HUB_SECTIONS = ["/pub", "/rules"] as const;
  */
 const LOCALE_HUB_ROUTES: Record<string, readonly string[]> = {
   /**
-   * ⚠ `/en/ranking`은 좌측 레일 메뉴에서만 뺐다(사장님 요청). **여기서는 빼면 안 된다** —
-   *   page.tsx가 <HubPage>로 감싸져 있어서 이 목록에서 지우면 site-chrome이 BlogTopBar를
-   *   또 그려 상단바가 2겹이 된다. 레일 노출과 셸 적용은 별개다.
+   * ⚠ `/en/ranking`·`/en/quiz`는 좌측 레일 메뉴에서만 뺐다(사장님 요청).
+   *   **여기서는 빼면 안 된다** — page.tsx가 <HubPage>로 감싸져 있어서 이 목록에서 지우면
+   *   site-chrome이 BlogTopBar를 또 그려 상단바가 2겹이 된다.
+   *   레일 노출과 셸 적용은 별개다.
    */
   en: ["/en/blog", "/en/calculator", "/en/glossary", "/en/hand-chart", "/en/quiz", "/en/ranking", "/en/tournaments", "/en/win-rate-quiz"],
 };

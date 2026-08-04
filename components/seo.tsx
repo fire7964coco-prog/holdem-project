@@ -1,7 +1,9 @@
 "use client";
 
 import { useEffect } from "react";
+import { usePathname } from "next/navigation";
 import { SITE } from "@/lib/site";
+import { CHROME, localeFromPath } from "@/lib/intl";
 
 interface SEOProps {
   title: string;
@@ -35,11 +37,29 @@ interface SEOProps {
  *
  * react-helmet-async 는 Node ESM 환경에서 named export 호환성 문제가 있어 자체 구현으로 교체.
  */
-export function SEO({ title, description, path = "" }: SEOProps) {
-  const siteName = "홀덤마스터";
+export function SEO({ title, description, path }: SEOProps) {
+  const pathname = usePathname() || "/";
+  const locale = localeFromPath(pathname);
+
+  /**
+   * ★브랜드명을 로케일에서 뽑는다 (2026-08-04).
+   *   전엔 "홀덤마스터"가 하드코딩돼 있어서, 이 컴포넌트를 쓰는 **영어 페이지의 제목이
+   *   런타임에 "… | 홀덤마스터"로 덮어쓰였다.** 서버 HTML은 "| HoldemMaster"로 옳게
+   *   나가는데 JS가 돌면서 한국어로 바뀌던 것 — 브라우저 탭·SPA 이동 후 표시가 전부 한국어였다.
+   */
+  const siteName = locale ? CHROME[locale].brand : "홀덤마스터";
   const fullTitle = `${title} | ${siteName}`;
   const baseUrl = SITE;
-  const canonical = `${baseUrl}${path}`;
+
+  /**
+   * ★canonical은 path가 없으면 **현재 경로**를 쓴다. 절대 홈으로 떨어뜨리지 않는다.
+   *   기존엔 `path = ""`가 기본이라 `SITE + "" = 홈`이 됐고, 실제로
+   *   `/en/glossary`·`/en/hand-chart`·`/en/ranking`이 (존재하지 않는 `canonical` prop을
+   *   넘기는 바람에 path가 비어) **canonical을 홈으로 덮어쓰고 있었다.**
+   *   서버 metadata는 옳은 canonical을 내보내는데 JS가 그걸 홈으로 바꾸던 상태다.
+   *   이 컴포넌트 상단 주석의 2026-08-02 사고와 같은 종류다.
+   */
+  const canonical = `${baseUrl}${path ?? pathname}`;
 
   useEffect(() => {
     if (typeof document === "undefined") return;
