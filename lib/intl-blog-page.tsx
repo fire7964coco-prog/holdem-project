@@ -100,12 +100,23 @@ export function IntlBlogArticle({ locale, slug }: { locale: SecondaryLocale; slu
     inLanguage: HTML_LANG[locale],
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
   };
+  /**
+   * ★2026-08-04: 홈 단계를 앞에 붙여 **3단**으로 맞췄다(전엔 블로그 → 글 2단).
+   *   같은 날 화면에 그리기 시작한 시각 브레드크럼(intl-blog-post-client.tsx)과
+   *   **정확히 같은 단계**여야 한다 — 구글은 마크업과 화면이 어긋나면 리치결과를 안 준다.
+   *   한국어 글(app/blog/[slug]/page.tsx)도 홈 → 블로그 → 글 3단이라 이제 전 언어가 같다.
+   *
+   *   첫 단계 라벨로 CHROME[locale].brand("HoldemMaster")를 쓴다. 25개 언어에 「홈」을
+   *   새로 번역해 넣는 대신 **이미 검증된 기존 문자열**을 그대로 쓰는 쪽을 택했다
+   *   (지어낸 UI 번역은 원어민이 바로 알아본다).
+   */
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: CHROME[locale].blogLabel, item: `${SITE}/${locale}/blog` },
-      { "@type": "ListItem", position: 2, name: post.title, item: url },
+      { "@type": "ListItem", position: 1, name: CHROME[locale].brand, item: `${SITE}/${locale}` },
+      { "@type": "ListItem", position: 2, name: CHROME[locale].blogLabel, item: `${SITE}/${locale}/blog` },
+      { "@type": "ListItem", position: 3, name: post.title, item: url },
     ],
   };
 

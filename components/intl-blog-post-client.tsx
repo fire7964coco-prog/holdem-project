@@ -8,7 +8,7 @@ import { FaXTwitter, FaFacebookF } from "react-icons/fa6";
 import { useState, useRef, useEffect, useCallback } from "react";
 import type { Post } from "@/lib/posts";
 import { SITE } from "@/lib/site";
-import { POST_LABELS, NAV_CTA, NAV_HOME_FEED, dirForLocale, type SecondaryLocale } from "@/lib/intl";
+import { POST_LABELS, NAV_CTA, NAV_HOME_FEED, CHROME, dirForLocale, type SecondaryLocale } from "@/lib/intl";
 import { clusterForSlug, EN_CLUSTERS, JA_CLUSTERS, ES_CLUSTERS, PT_CLUSTERS, DE_CLUSTERS, ZH_CLUSTERS, ZH_HANT_CLUSTERS, ID_CLUSTERS, type PillarCluster } from "@/lib/pillar-clusters";
 import ClusterMinimap from "@/components/cluster-minimap";
 import CommunityCTA from "@/components/community-cta";
@@ -187,6 +187,38 @@ export default function IntlBlogPostClient({
           </aside>
 
           <div className="min-w-0">
+            {/* ★시각적 브레드크럼 (2026-08-04) — 한국어 글에 넣은 것의 다국어 소급분.
+                `lib/intl-blog-page.tsx`가 BreadcrumbList JSON-LD를 내보내는데 화면엔 없었다.
+                구글은 마크업에 있는 경로가 사람에게도 보이길 요구하므로 반쪽이었다.
+
+                ★단계·라벨은 그 JSON-LD와 **정확히 일치**시킨다(브랜드 → 블로그 → 글 3단).
+                  첫 라벨로 CHROME[locale].brand를 쓰는 이유: 25개 언어에 「홈」을 새로
+                  번역해 넣는 대신 이미 검증된 문자열을 쓴다. blogLabel도 CHROME에 있는 값이다.
+                ★구분자는 `breadcrumb-sep` — RTL(ar·fa·he)에서 globals.css가 좌우를 뒤집는다. */}
+            <nav aria-label={CHROME[locale].blogLabel} className="mb-5">
+              <ol className="flex flex-wrap items-center gap-1.5 text-xs text-muted-foreground">
+                <li>
+                  <Link href={`/${locale}`} className="hover:text-primary transition-colors">
+                    {CHROME[locale].brand}
+                  </Link>
+                </li>
+                <li aria-hidden="true" className="text-muted-foreground/50">
+                  <ChevronRight className="w-3 h-3 breadcrumb-sep" />
+                </li>
+                <li>
+                  <Link href={base} className="hover:text-primary transition-colors">
+                    {CHROME[locale].blogLabel}
+                  </Link>
+                </li>
+                <li aria-hidden="true" className="text-muted-foreground/50">
+                  <ChevronRight className="w-3 h-3 breadcrumb-sep" />
+                </li>
+                <li className="min-w-0 max-w-full truncate font-semibold text-foreground" aria-current="page">
+                  {post.title}
+                </li>
+              </ol>
+            </nav>
+
             <header className="mb-10">
               <div className="flex flex-wrap items-center gap-2 mb-4">
                 <span className="text-xs font-bold px-3 py-1 rounded-full bg-primary/15 text-primary border border-primary/25">

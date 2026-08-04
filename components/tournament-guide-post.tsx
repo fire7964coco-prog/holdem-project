@@ -51,18 +51,24 @@ export default function TournamentGuidePost({
   return (
     <>
       <ReadingProgressBar targetRef={contentRef} />
-      {/* ──── Breadcrumb ──── */}
-      <div className="bg-card border-b border-border">
-        <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-2 text-xs text-muted-foreground">
-          <Link href="/" className="hover:text-primary transition-colors">홈</Link>
-          <span>/</span>
-          <Link href="/blog" className="hover:text-primary transition-colors">블로그</Link>
-          <span>/</span>
-          <Link href="/tournaments" className="hover:text-primary transition-colors">대회 가이드</Link>
-          <span>/</span>
-          <span className="text-foreground truncate max-w-[200px]">{post.title}</span>
-        </div>
-      </div>
+      {/* ──── Breadcrumb ────
+           ★2026-08-04: <div>+<span> 나열이던 것을 <nav>/<ol>/aria-current 로 올렸다.
+             한국어 일반 글·다국어 글이 쓰는 마크업과 같은 모양이라야 스크린리더에서
+             똑같이 「탐색 경로」로 읽히고, 구글도 같은 것으로 인식한다.
+           ★단계는 4단(홈/블로그/대회 가이드/제목)을 그대로 유지하고, 대신
+             `app/blog/[slug]/page.tsx`의 BreadcrumbList JSON-LD를 4단으로 맞췄다.
+             그전까지 화면 4단 ↔ 마크업 3단으로 어긋나 있었다(리치결과 미노출 원인). */}
+      <nav aria-label="현재 위치" className="bg-card border-b border-border">
+        <ol className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-2 text-xs text-muted-foreground">
+          <li><Link href="/" className="hover:text-primary transition-colors">홈</Link></li>
+          <li aria-hidden="true">/</li>
+          <li><Link href="/blog" className="hover:text-primary transition-colors">블로그</Link></li>
+          <li aria-hidden="true">/</li>
+          <li><Link href="/tournaments" className="hover:text-primary transition-colors">대회 가이드</Link></li>
+          <li aria-hidden="true">/</li>
+          <li className="text-foreground truncate max-w-[200px]" aria-current="page">{post.title}</li>
+        </ol>
+      </nav>
 
       {/* ──── Series Banner ──── */}
       <div className="border-b border-primary/20" style={{ background: "rgba(212,175,55,0.06)" }}>

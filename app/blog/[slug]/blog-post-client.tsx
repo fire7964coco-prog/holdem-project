@@ -282,13 +282,13 @@ export default function BlogPost({
                   <Link href="/" className="hover:text-primary transition-colors">홈</Link>
                 </li>
                 <li aria-hidden="true" className="text-muted-foreground/50">
-                  <ChevronRight className="w-3 h-3" />
+                  <ChevronRight className="w-3 h-3 breadcrumb-sep" />
                 </li>
                 <li>
                   <Link href="/blog" className="hover:text-primary transition-colors">블로그</Link>
                 </li>
                 <li aria-hidden="true" className="text-muted-foreground/50">
-                  <ChevronRight className="w-3 h-3" />
+                  <ChevronRight className="w-3 h-3 breadcrumb-sep" />
                 </li>
                 <li className="min-w-0 max-w-full truncate font-semibold text-foreground" aria-current="page">
                   {post.title}

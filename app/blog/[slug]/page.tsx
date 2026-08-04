@@ -115,13 +115,25 @@ export default function Page({ params }: { params: { slug: string } }) {
     inLanguage: "ko-KR",
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
   };
+  /**
+   * ★대회 가이드(layout: "tournament-guide")는 화면에 **4단**을 그린다
+   *   (홈 / 블로그 / 대회 가이드 / 제목 — components/tournament-guide-post.tsx).
+   *   그런데 이 스키마는 3단이라 **화면과 마크업이 어긋나 있었다**(2026-08-04 발견).
+   *   구글은 둘이 다르면 브레드크럼 리치결과를 주지 않는다.
+   *   「대회 가이드」 단계는 실제로 의미가 있으므로(그 글들은 /tournaments 섹션의 일부다)
+   *   화면을 깎는 대신 스키마를 4단으로 맞춘다.
+   */
+  const isTournamentGuide = post.layout === "tournament-guide";
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "홈", item: `${SITE}/` },
       { "@type": "ListItem", position: 2, name: "블로그", item: `${SITE}/blog` },
-      { "@type": "ListItem", position: 3, name: post.title, item: url },
+      ...(isTournamentGuide
+        ? [{ "@type": "ListItem", position: 3, name: "대회 가이드", item: `${SITE}/tournaments` }]
+        : []),
+      { "@type": "ListItem", position: isTournamentGuide ? 4 : 3, name: post.title, item: url },
     ],
   };
 
