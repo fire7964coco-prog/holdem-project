@@ -131,12 +131,15 @@ export default function BlogPost({
   }, []);
 
   /**
-   * 모바일 도구 바 숨김/표시 — 아래로 읽어 내려갈 땐 숨기고, 위로 올릴 때만 보인다.
-   * 왜: 상단바 56px + 도구 바 154px = 832px 화면의 26%를 크롬이 먹고 있었다(2026-08-01 실측).
-   * 읽는 동안은 본문 100%를 주고, 되돌아볼 때(위로 스크롤)만 도구를 꺼낸다.
-   * 임계값 6px — 손떨림·관성 스크롤로 바가 깜빡이지 않게 한다.
+   * 모바일 상단 네비 숨김/표시 — **오직 위로 스크롤할 때만** 나타난다.
+   *
+   * ★2026-08-04 변경: 기본값을 false(보임) → true(숨김)로, 그리고
+   *   `scrolled > 240` 예외를 없앴다. 그 예외 탓에 상단 근처에서는 아래로 내려가도
+   *   바가 계속 떠 있어, 「한 줄 정답」을 지나는 순간 튀어나와 읽기를 방해했다.
+   *   이제 진입 직후엔 아무것도 없고, 되돌아보려고 위로 올릴 때만 꺼내진다.
+   *   임계값 6px — 손떨림·관성 스크롤로 바가 깜빡이지 않게 한다.
    */
-  const [toolsHidden, setToolsHidden] = useState(false);
+  const [toolsHidden, setToolsHidden] = useState(true);
   const lastYRef = useRef(0);
 
   // 스크롤 60% 지나면 모바일 스티키 CTA 표시
@@ -147,8 +150,7 @@ export default function BlogPost({
 
     const dy = scrolled - lastYRef.current;
     if (Math.abs(dy) > 6) {
-      // 최상단 근처에서는 항상 보여준다(진입 직후 도구를 못 찾는 일 방지)
-      setToolsHidden(dy > 0 && scrolled > 240);
+      setToolsHidden(dy > 0); // 내려가면 숨김, 올라가면 표시
       lastYRef.current = scrolled;
     }
   }, []);
@@ -336,16 +338,16 @@ export default function BlogPost({
                 top-14 = BlogTopBar(56px) 바로 아래, z-40 = 상단바(z-50)보다 아래 */}
             <div
               ref={stickyToolsRef}
-              /* 이 바는 article 안이 아니라 div.min-w-0 의 자식이다 — 상쇄 대상은
-                 article 패딩이 아니라 **바깥 컨테이너(max-w-[1440px] px-2 sm:px-4)** 다.
-                 음수 마진이 그 패딩과 정확히 같지 않으면 가로 스크롤이 생긴다. (2026-08-01) */
-              /* ★top-0: 모바일에선 이 바가 곧 상단 네비다(전역 탑바를 뺐으므로).
-                 lg 이상은 BlogTopBar(56px)가 살아 있으므로 그 아래(top-14)로. */
-              /* ★하단 전역 탭바와 디자인 통일 (2026-08-04) — 같은 다크 그린 계열에
-                 배경만 한 톤 밝게(#1a3a2a vs 하단 #0d1c14)해 상·하단을 구분한다. */
+              /* ★fixed (2026-08-04) — 전엔 sticky라 **문서 흐름에 자리를 차지**했다.
+                 그래서 숨김 상태(translate-y-full)여도 스크롤이 그 지점을 지날 때
+                 화면을 통과하며 잠깐 보였다("한 줄 정답 아래부터 떠 있다"는 지적).
+                 fixed로 흐름에서 빼면 toolsHidden일 때 완전히 화면 밖이라,
+                 위로 스크롤할 때만 나타난다.
+                 lg 이상은 BlogTopBar(56px)가 있으므로 그 아래(top-14)에 붙는다.
+                 배경은 하단 전역 탭바와 같은 계열에 한 톤 밝게(#1a3a2a vs #0d1c14). */
               style={{ background: "#1a3a2a", borderBottom: "1px solid rgba(255,255,255,0.10)" }}
-              className={`xl:hidden sticky top-0 lg:top-14 z-40 -mx-2 px-2 sm:-mx-4 sm:px-4 mb-6 py-1.5 shadow-[0_8px_18px_-14px_rgba(0,0,0,0.45)] transition-transform duration-200 ${
-                toolsHidden ? "-translate-y-full lg:-translate-y-[calc(100%+3.5rem)]" : "translate-y-0"
+              className={`xl:hidden fixed inset-x-0 top-0 lg:top-14 z-40 px-2 sm:px-4 py-1.5 shadow-[0_8px_18px_-14px_rgba(0,0,0,0.45)] transition-transform duration-200 ${
+                toolsHidden ? "-translate-y-[calc(100%+1px)] lg:-translate-y-[calc(100%+3.5rem)]" : "translate-y-0"
               }`}
             >
               {/* ★상단 네비 (2026-08-04 재설계)
