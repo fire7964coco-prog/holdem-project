@@ -77,6 +77,38 @@ for (const f of files) {
   }
 }
 
+/**
+ * ── C-5. 사이트맵 ↔ noindex 모순 (2026-08-04 추가) ─────────────────────────
+ *
+ * 사이트맵에 올린 URL이 정작 noindex면 서치콘솔에 "사이트맵에 포함되었지만 noindex" 오류가
+ * 뜨고, 그 사이트맵 전체의 신뢰도가 깎인다. 반대 방향(색인 가능한데 사이트맵에 없음)은
+ * 발견이 늦어질 뿐이라 🟠로 따로 센다.
+ *
+ * ★이 검사는 **다국어도 본다.** 위 C-1~C-4는 KO만 보지만, 사이트맵 누락/모순은 2026-08-04에
+ *   실제로 EN에서 터졌다(EN 도구 페이지가 하나도 사이트맵에 없었다).
+ * ★소스가 아니라 산출물 기준이어야 하는 이유는 이 파일 맨 위 주석과 같다 —
+ *   robots는 page.tsx만 봐서는 확정할 수 없다(레이아웃 상속·클라이언트 덮어쓰기).
+ */
+const SITEMAP = join(ROOT, 'public', 'sitemap.xml');
+if (existsSync(SITEMAP)) {
+  const xml = readFileSync(SITEMAP, 'utf8');
+  const inSitemap = new Set(
+    [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1].replace(SITE, '') || '/')
+  );
+  for (const f of files) {
+    let route = '/' + relative(APP, f).replace(/\\/g, '/').replace(/\.html$/, '');
+    if (route === '/index') route = '/';
+    if (route.startsWith('/_')) continue;
+    const html = readFileSync(f, 'utf8');
+    const noindex = /<meta name="robots" content="[^"]*noindex/.test(html);
+    if (noindex && inSitemap.has(route)) {
+      findings.push({ route, code: 'C-5', msg: 'noindex인데 사이트맵에 있다 — 사이트맵에서 뺄 것' });
+    } else if (!noindex && !inSitemap.has(route) && !route.startsWith('/blog/') && !/\/blog\//.test(route)) {
+      findings.push({ route, code: 'C-6', msg: '색인 가능한데 사이트맵에 없다' });
+    }
+  }
+}
+
 console.log(`\n${'='.repeat(84)}`);
 console.log(`canonical·title 자기참조 검사 (빌드 산출물) · KO 라우트 ${checked}개`);
 console.log('='.repeat(84));
@@ -91,6 +123,8 @@ const LABEL = {
   'C-2': '🔴 canonical 태그 없음',
   'C-3': '🟠 루트 기본 제목 그대로',
   'C-4': '🔴 noindex인데 canonical이 남을 가리킴 (모순 신호)',
+  'C-5': '🔴 noindex인데 사이트맵에 있음 (서치콘솔 오류)',
+  'C-6': '🟠 색인 가능한데 사이트맵에 없음 (발견 지연)',
 };
 for (const code of Object.keys(LABEL)) {
   const list = byCode[code];

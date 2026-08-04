@@ -62,6 +62,52 @@ const STATIC_ROUTES = [
   { path: "/blog", priority: "0.8", changefreq: "weekly" },
   { path: "/blog/roadmap", priority: "0.7", changefreq: "weekly" },
   ...SECONDARY_LOCALES.map((l) => ({ path: `/${l}/blog`, priority: "0.7", changefreq: "weekly" })),
+
+  /**
+   * ── 영어 도구 페이지 (2026-08-04 추가) ──────────────────────────────────
+   *
+   * ★그전까지 EN 도구 페이지는 **하나도 사이트맵에 없었다.** 색인 가능한 페이지인데
+   *   내부링크로만 발견되는 상태였다. `/en/blog`·`/en/tournaments`는 위/아래에서
+   *   따로 들어가고 있었고 나머지는 누락이었다.
+   *
+   * ★★여기 넣기 전에 반드시 그 페이지의 robots를 확인할 것. noindex 페이지를 사이트맵에
+   *   올리면 구글 서치콘솔에 "사이트맵에 있으나 noindex" 오류가 뜬다.
+   *   확인 방법: `.next/server/app/en/<page>.html` 의 <meta name="robots">
+   *
+   *   현재 상태(2026-08-04 실측):
+   *     index    → /en/calculator · /en/quiz · /en/ranking  ← 그래서 여기 넣는다
+   *     noindex  → /en/glossary · /en/hand-chart            ← **넣지 말 것**
+   *                (한국어 /hand-chart도 같은 이유로 이 목록에 없다)
+   */
+  { path: "/en/calculator", priority: "0.7", changefreq: "monthly" },
+  { path: "/en/quiz", priority: "0.6", changefreq: "monthly" },
+  { path: "/en/ranking", priority: "0.7", changefreq: "weekly" },
+
+  /**
+   * ★`/holdem-practice` 누락 복구 (2026-08-04). 색인 가능(index, follow)하고 좌측 레일에도
+   *   있는 한국어 도구 페이지인데 사이트맵에만 빠져 있었다.
+   *   `npm run canonical:check`의 C-6 검사가 잡았다.
+   */
+  { path: "/holdem-practice", priority: "0.75", changefreq: "monthly" },
+];
+
+/**
+ * ── 로케일 홈 피드 (2026-08-04 추가) ────────────────────────────────────────
+ *
+ * ★25개 언어 홈(`/en`·`/ja`·…)이 **전부 사이트맵에 없었다.** 색인 가능한 페이지이고
+ *   각 언어권의 실질적 진입점인데, 구글이 내부링크로만 발견하고 있었다.
+ *   `npm run canonical:check`의 C-6이 잡았다.
+ * ★이 25개 + 한국어 `/`는 같은 페이지의 언어판이므로 hreflang으로 서로를 선언한다
+ *   (토너먼트 일정표를 다루는 방식과 같다).
+ */
+const localeHomeAlts = [
+  { hreflang: "ko", href: `${SITE}/` },
+  ...SECONDARY_LOCALES.map((l) => ({
+    // zh는 간체 → zh-Hans. lib/tournaments-hreflang.ts와 같은 규칙
+    hreflang: l === "zh" ? "zh-Hans" : l === "zh-hant" ? "zh-Hant" : HTML_LANG[l] || l,
+    href: `${SITE}/${l}`,
+  })),
+  { hreflang: "x-default", href: `${SITE}/en` },
 ];
 
 function todayIso() {
@@ -126,6 +172,10 @@ const tournamentAlts = [
   { hreflang: "x-default", href: `${SITE}/en/tournaments` },
 ];
 
+const localeHomeEntries = SECONDARY_LOCALES.map((l) =>
+  entry(`${SITE}/${l}`, siteToday, "daily", "0.8", localeHomeAlts)
+);
+
 const tournamentEntries = TOURNAMENT_LOCALES.map((l) =>
   entry(`${SITE}/${l}/tournaments`, siteToday, "weekly", "0.9", tournamentAlts)
 );
@@ -173,6 +223,10 @@ const xml = `<?xml version="1.0" encoding="UTF-8"?>
 
 ${staticEntries.join("\n\n")}
 
+  <!-- 로케일 홈 피드 (${SECONDARY_LOCALES.length}개 언어) -->
+
+${localeHomeEntries.join("\n\n")}
+
   <!-- 다국어 토너먼트 일정표 (${TOURNAMENT_LOCALES.length}개 로케일) -->
 
 ${tournamentEntries.join("\n\n")}
@@ -191,6 +245,6 @@ ${intlBlogEntries.join("\n\n")}
 const outPath = join(root, "public", "sitemap.xml");
 writeFileSync(outPath, xml, "utf8");
 
-console.log(`sitemap.xml → ${INDEXABLE_POSTS.length} blog posts + ${intlCount} intl posts + ${STATIC_ROUTES.length} static URLs`);
+console.log(`sitemap.xml → ${INDEXABLE_POSTS.length} blog posts + ${intlCount} intl posts + ${STATIC_ROUTES.length} static URLs + ${localeHomeEntries.length} locale homes`);
 console.log(NOINDEX_POSTS.length ? `  ↳ noindex로 제외: ${NOINDEX_POSTS.map(p=>p.slug).join(", ")}` : "");
 console.log(`Latest blog lastmod: ${[...POSTS].map((p) => p.updated || p.date).sort().pop()}`);
