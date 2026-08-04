@@ -1348,7 +1348,9 @@ export default function CommunityClient({
                     );
                   })}
                   <span className="ml-auto text-xs pb-3" style={{ color: MUTED, fontFamily: FONT_SANS }}>
-                    🌏 {Object.keys(FLAG).length}개 언어
+                    {/* ★2026-08-04: "🌏 N개 언어"로 한국어가 박혀 있어 /en·/ja 홈에도 그대로 떴다.
+                        새 번역을 만들지 않고 이미 25개 언어에 있는 L.communityLang을 재사용한다. */}
+                    {L.communityLang} · {Object.keys(FLAG).length}
                   </span>
                 </div>
 
@@ -1411,7 +1413,10 @@ export default function CommunityClient({
                     className="text-[11px] font-bold tracking-widest uppercase mb-3"
                     style={{ color: MUTED, fontFamily: FONT_SANS }}
                   >
-                    🔥 이번 주 인기
+                    {/* ★2026-08-04: 한국어가 하드코딩돼 있어서 /en·/ja 홈에서도 "🔥 이번 주 인기"가
+                        그대로 떴다(사장님 스크린샷으로 발견). LABELS에 trendingTitle이 25개 언어분
+                        이미 있었는데 여기서만 안 쓰고 있었다. */}
+                    {L.trendingTitle}
                   </p>
                   {trending.map((t, i) => (
                     <Link

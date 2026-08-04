@@ -99,6 +99,23 @@ export const LEGAL_PAGES = [
 ] as const;
 
 /**
+ * 다국어 홈의 정책 링크 라벨.
+ *
+ * ★2026-08-04: 전엔 로케일과 무관하게 위 한국어 라벨이 그대로 나갔다
+ *   (/en 홈에 "팀 소개 · 문의 · 개인정보처리방침 · 이용약관"). 사장님 스크린샷으로 발견.
+ * ★대상 페이지 자체는 아직 한국어뿐이다. 그래도 링크를 **숨기지는 않는다** —
+ *   개인정보처리방침은 모든 이용자에게 도달 가능해야 한다. 라벨만 영어로 바꿔
+ *   "한국어 문서로 간다"는 걸 예측 가능하게 한다.
+ * ⚠ TODO: /privacy·/terms·/contact의 다국어판. 그때 이 라벨도 언어별로 나눌 것.
+ */
+const LEGAL_PAGES_INTL = [
+  { href: "/about", label: "About" },
+  { href: "/contact", label: "Contact" },
+  { href: "/privacy", label: "Privacy" },
+  { href: "/terms", label: "Terms" },
+] as const;
+
+/**
  * site-chrome이 **고정 레일을 직접 까는** 경로.
  *
  * 블로그 글(`/blog/<slug>`)은 여기서 빠진다 — 이미 xl에서 「목차 180 + 본문 + 학습맵 210」
@@ -245,28 +262,32 @@ export default function SideRail({
             </Link>
           ))}
 
-          {/* ★정책 링크 — 홈(onSelect 있음)에서만 (2026-08-05).
-              홈은 무한 스크롤 피드라 푸터를 깔 바닥이 없어서 site-chrome의
-              isFooterlessRoute()에서 빠져 있다. 그래서 홈만 개인정보처리방침·이용약관·문의로
-              가는 길이 끊긴다 — 그 구멍을 레일 바닥에서 메운다.
-              홈 밖(블로그 글 좌측 컬럼 등)에서는 아래에 진짜 푸터가 깔리므로 중복이라 뺀다. */}
-          {onSelect && (
-            <>
-              <div style={{ borderTop: `1px solid ${BORDER}`, margin: "10px 0 6px" }} />
-              <div className="flex flex-wrap gap-x-2.5 gap-y-1 px-3 pb-2">
-                {LEGAL_PAGES.map((p) => (
-                  <Link
-                    key={p.href}
-                    href={p.href}
-                    className="text-[11px] hover:underline"
-                    style={{ color: MUTED, fontFamily: FONT_SANS }}
-                  >
-                    {p.label}
-                  </Link>
-                ))}
-              </div>
-            </>
-          )}
+        </>
+      )}
+
+      {/* ★정책 링크 — 홈(onSelect 있음)에서만 (2026-08-05).
+          홈은 무한 스크롤 피드라 푸터를 깔 바닥이 없어서 site-chrome의
+          isFooterlessRoute()에서 빠져 있다. 그래서 홈만 개인정보처리방침·이용약관·문의로
+          가는 길이 끊긴다 — 그 구멍을 레일 바닥에서 메운다.
+          홈 밖(블로그 글 좌측 컬럼 등)에서는 아래에 진짜 푸터가 깔리므로 중복이라 뺀다.
+
+          ★2026-08-04: 이 블록이 「가이드 메뉴」 조건 안에 중첩돼 있었다. 그래서 가이드가 없는
+            로케일(ja·es…) 홈에서는 정책 링크까지 통째로 사라졌다. 밖으로 빼서 분리한다. */}
+      {onSelect && (
+        <>
+          <div style={{ borderTop: `1px solid ${BORDER}`, margin: "10px 0 6px" }} />
+          <div className="flex flex-wrap gap-x-2.5 gap-y-1 px-3 pb-2">
+            {(locale ? LEGAL_PAGES_INTL : LEGAL_PAGES).map((p) => (
+              <Link
+                key={p.href}
+                href={p.href}
+                className="text-[11px] hover:underline"
+                style={{ color: MUTED, fontFamily: FONT_SANS }}
+              >
+                {p.label}
+              </Link>
+            ))}
+          </div>
         </>
       )}
     </div>
