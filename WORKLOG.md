@@ -3,6 +3,81 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-08-04 (6) — 허브 셸 ja·es 확장 (사장님이 정한 범위 완료)
+
+> 커밋 `4c6d59d` · **build 615 · canonical:check ✅ 0건 · 1440/360 Playwright 실측 완료.**
+
+사장님 방침(*"경화가 es까지니 이 작업도 es까지, 언어 하나씩"*)의 **마지막 두 언어**.
+(5)에서 en 배관을 만들면서 셸을 이미 로케일 대응으로 일반화해 둔 덕에,
+`hub-shell`·`hub-page`·`hub-sidebar`·`hub-i18n`은 **한 줄도 고치지 않았다.**
+
+### 적용 범위 — en 8개 vs ja·es 2개씩
+
+| 로케일 | 셸 적용 라우트 |
+|---|---|
+| en | blog · tournaments · calculator · glossary · hand-chart · quiz · ranking · win-rate-quiz (8) |
+| **ja** | **blog · tournaments (2)** |
+| **es** | **blog · tournaments (2)** |
+
+★차이는 실력이 아니라 **실재하는 페이지 수**다. `app/ja/`·`app/es/`에 있는 건 그 둘뿐이고
+도구 페이지는 아직 영어에만 있다. 없는 경로를 `LOCALE_HUB_ROUTES`에 넣으면
+`isHubRoute`만 참이 되어 전역 크롬을 비켜주는데 정작 도착지가 없다.
+
+### 고친 파일 4종 (배관 4단계)
+
+1. `lib/hub-routes.ts` — `LOCALE_HUB_ROUTES`에 ja·es 등록
+2. `app/{ja,es}/{blog,tournaments}/page.tsx` — `<HubPage locale="…">`로 감싸기
+3. blog 쪽은 `<IntlBlogIndex inShell>` — 셸이 마스트헤드를 그리므로 BlogTopBar를 끈다
+4. `components/side-rail.tsx` — `LOCALE_HUB_PAGES.ja`·`.es` + `HUB_HEADING.ja`·`.es`
+
+### ★UI 문자열을 하나도 지어내지 않았다
+
+(5)의 교훈("손으로 옮겨 적으면 EN 이벤트 금액이 $30→$35가 된다")을 그대로 적용해,
+필요한 5개 값을 전부 **리포지토리 안의 검증된 출처에서** 가져왔다.
+
+| 자리 | ja | es | 출처 |
+|---|---|---|---|
+| 레일 Blog | ブログ | Blog | `CHROME[locale].blogLabel` (`lib/intl.ts`) |
+| 레일 Tournaments | トーナメント | Torneos | `lib/pillar-clusters.ts`의 `pillarLabel` |
+| 섹션 헤딩 | ガイド | Guías | `BOARD_STRINGS[locale].guideLink` 축약 |
+| 마스트헤드 「지금 여기」 | ブログ / トーナメント | Blog / Torneos | 위와 동일 |
+
+- 앞의 4개는 **축어 복사**, 헤딩만 축약 파생이다(ja `詳細ガイド` · es `Guía completa`).
+- `BOARD_STRINGS`의 h1은 레일에 못 쓴다 — ja가 `ポーカー大会スケジュール 2026`으로 너무 길다.
+  en이 h1 `Poker Tournament Schedule 2026`을 레일에서 `Tournaments`로 줄인 것과 같은 층위다.
+- ja는 `大会`와 `トーナメント` 두 표기가 공존한다. 레일은 **필라 라벨과 같은 `トーナメント`**,
+  페이지 h1은 기존 `ポーカー大会スケジュール` 그대로 — 각각 이미 검증된 자리를 지켰다.
+
+### 검증
+
+| 층 | 결과 |
+|---|---|
+| `npx tsc --noEmit` | 건드린 6개 파일 **에러 0** (레포 전체 480건은 `ignoreBuildErrors`에 묻힌 기존 상태) |
+| `npm run build` | 성공 · 615 페이지 |
+| `npm run canonical:check` | **0건** — C-5/C-6 포함. 사이트맵 변경 없음(4개 라우트 모두 이미 등재) |
+| 산출물 HTML ×4 | 마스트헤드 1 · BlogTopBar **0** · h1 **1** · 레일 헤딩 해당 언어 |
+| Playwright 1440 | 레일 200 · 본문 760 · **크롬에 한글 0** · 가로스크롤 없음 |
+| Playwright 360 | aside 0 · 하단 탭바 현지어 · 가로스크롤 없음 · ja 글 카드 47개 |
+
+- Trending이 **그 언어 글만** 잡는지 확인: es에 `como-entrar-al-wsop`·`cuanto-dinero-llevar-poker`
+  같은 스페인어 고유 슬러그가 떴다 → (5)에서 없앤 한국어 큐레이션 누수가 재발하지 않았다.
+- 콘솔 에러 4건은 전부 Vercel Analytics·Speed Insights 스크립트다(로컬엔 없는 게 정상).
+
+### ⚠ 이번에 확인한 것 / 남긴 것
+
+- `components/seo.tsx`는 **이 4개 페이지에 안 붙는다**(Next metadata를 쓴다).
+  (5)의 런타임 canonical 덮어쓰기 위험은 여기 해당 없음 — 그래도 브라우저로 확인했다.
+- `visibleHeaders: 2`가 잠깐 걸렸으나 **오탐**이다. 둘째는 `IntlBlogIndex`의 본문
+  `<header class="mb-10">`(h1+리드)이고 `/en/blog`도 같다. 네비 상단바는 1개다.
+- **미해결(범위 밖)**: 마스트헤드 언어 배지가 es에서 🇪🇸 **스페인 국기**다.
+  메모리 「es 트랙 LATAM 재정렬」 기준으로는 메인 독자가 멕시코·US히스패닉·남미라 어긋난다.
+  `lib/theme.ts:32`의 `FLAG` 맵 한 글자라 고치기는 쉽다.
+  ★같은 맵에서 **`pt: "🇧🇷"`(포르투갈 아닌 브라질)** 이다 — 이 프로젝트는 이미
+  "출신국이 아니라 **주 시장**으로 국기를 고른다"는 판단을 한 적이 있다. es만 그 원칙에서 벗어나 있다.
+  다만 LATAM은 pt의 브라질처럼 대표 1개국이 자명하지 않아(멕시코? 🌎?) **사장님 판단이 필요**해 남겼다.
+
+---
+
 ## 2026-08-04 (5) — 허브 셸 영어 적용 + 그 과정에서 드러난 SEO 결함 5종
 
 > 커밋 `a2dd774` · `f030bc9` · `ed89983` · `ac5e041` · `2c7520f` · `95433ef` · `98d791e` · `dbcea38`

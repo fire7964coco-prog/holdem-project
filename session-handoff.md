@@ -7,7 +7,59 @@
 
 ## ▶▶▶▶▶▶▶▶▶ 새 세션 START HERE
 
-### ▶ 0-◉. 2026-08-04 (5) — 허브 셸 en 적용 + SEO 결함 5종 ✅ (여기서 멈춤)
+### ▶ 0-◈. 2026-08-04 (6) — 허브 셸 ja·es 확장 ✅ **사장님이 정한 범위 완료** (여기서 멈춤)
+
+> **작업 트리 깨끗 · build 615 · `npm run canonical:check` ✅ 0건 ·
+> 1440/360 Playwright 실측 완료.** 마지막 커밋 `4c6d59d`.
+> 상세는 `WORKLOG.md` 「2026-08-04 (6)」.
+>
+> ⚠ 작업 시작 전 **`git pull` 먼저.** 포스트 검수는 이 폴더가 아니다(0-◇ 참조).
+
+**「허브 셸 = ko → en → ja → es」 라인은 이걸로 끝났다.** (5)에서 셸을 로케일 대응으로
+일반화해 둔 덕에 `hub-shell`·`hub-page`·`hub-sidebar`·`hub-i18n`은 **한 줄도 안 고쳤다.**
+
+| 로케일 | 셸 라우트 |
+|---|---|
+| en | 8개 (blog·tournaments + 도구 6개) |
+| **ja·es** | **각 2개 (blog·tournaments)** — 이 언어엔 도구 페이지가 **실재하지 않는다** |
+
+고친 건 4종뿐: `lib/hub-routes.ts` 등록 · `page.tsx` 4개 `<HubPage locale>` 감싸기 ·
+blog에 `inShell` · `side-rail.tsx`의 `LOCALE_HUB_PAGES`+`HUB_HEADING`.
+
+**★UI 문자열은 5개 전부 리포지토리의 검증값에서 가져왔다 (지어낸 것 0)**
+`ブログ`/`Blog` = `CHROME[locale].blogLabel` · `トーナメント`/`Torneos` = `pillar-clusters.ts`의
+`pillarLabel` · `ガイド`/`Guías` = `BOARD_STRINGS[locale].guideLink` 축약.
+※ `BOARD_STRINGS.h1`은 레일에 쓰지 말 것 — ja가 `ポーカー大会スケジュール 2026`으로 너무 길다.
+
+**🔴 되돌리면 안 되는 것 (이번 세션분)**
+1. **`LOCALE_HUB_ROUTES`에 없는 라우트를 넣지 말 것.** ja·es에 `/ja/calculator` 같은 걸 적으면
+   `isHubRoute`만 참이 되어 전역 크롬을 비켜주는데 **도착지가 없다.** 페이지를 먼저 만들 것.
+2. **`LOCALE_HUB_PAGES`·`HUB_HEADING`에 새 번역을 쓰지 말 것.** 위 출처에서 복사한다.
+3. 나머지는 (5)의 🔴 4가지가 그대로 유효하다(아래 0-◉).
+
+**⚠ 남긴 것 — 판단이 필요해서 안 건드렸다**
+`lib/theme.ts:32`의 `FLAG`에서 **`es: "🇪🇸"`(스페인 국기)**. 메모리 「es 트랙 LATAM 재정렬」
+기준으로는 메인 독자가 멕시코·US히스패닉·남미라 어긋난다. 같은 맵의 **`pt: "🇧🇷"`** 가
+"출신국이 아니라 주 시장으로 고른다"는 선례다. 다만 LATAM은 대표 1개국이 자명하지 않다.
+
+## 🚀 새 세션은 이 순서로
+
+| 순위 | 할 일 | 메모 |
+|---:|---|---|
+| **1** | **`apt-incheon-2026-guide` 8/7 개막** | ⏰ **사흘 남았다.** 다만 포스트라 검수 폴더 소관일 수 있음 — 착수 전 확인 |
+| 2 | `tournaments-client.tsx:601` 하드코딩 날짜 | "2026년 7월 28일 기준 … 8월 3~5일"이 **오늘(8/4) 기준 이미 낡았다** |
+| 3 | `/holdem-practice` h1 0개 | 기존 결함 |
+| 4 | EN 도구 페이지 `<title>` | `/en/calculator`·`quiz`·`glossary`·`hand-chart`·`ranking`이 제목에 "\| HoldemMaster"를 직접 넣는다. 동작은 하나 `title:{absolute}`가 정석 |
+| 5 | 다국어 정책 페이지 | `/privacy`·`/terms`·`/contact`가 한국어뿐. 링크는 영어 라벨로 걸려 있다 |
+| 6 | `es` 국기 판단 (위 ⚠) | 사장님 결정 필요 |
+
+**허브 셸을 더 넓힐 거라면**: ja·es 다음 언어는 **페이지가 먼저** 있어야 한다.
+지금 zh·pt 등에 있는 건 blog·tournaments뿐이고, 같은 4단계로 붙일 수는 있다.
+다만 사장님 방침이 "경화가 끝난 언어까지"였으므로 **범위 확대는 지시를 받고 할 것.**
+
+---
+
+### ▶ 0-◉. 2026-08-04 (5) — 허브 셸 en 적용 + SEO 결함 5종 ✅
 
 > **작업 트리 깨끗 · build 615 · sitemap 58 static + 25 locale homes ·
 > `npm run canonical:check` ✅ 0건 · 전부 라이브 확인 완료.**
@@ -51,12 +103,15 @@ en 허브 셸을 붙이는 과정에서 **기존 SEO 결함이 줄줄이 나왔�
 **⚠ 서버 띄운 채 재빌드 금지** — `.next`가 깨져 전 페이지 500이 뜬다. 코드 문제로 오인하기 쉽다.
 `rm -rf .next` 후 클린 빌드로 해소.
 
-## 🚀 새 세션은 이 순서로
+## 🚀 새 세션은 이 순서로 — ⛔ **이 목록은 낡았다(2026-08-04 (6)에서 대체)**
+
+> 1·2순위였던 **ja·es 허브 셸은 (6)에서 완료**됐다. 최신 순서는 맨 위 `0-◈`를 볼 것.
+> 아래는 그 시점의 기록으로만 남긴다.
 
 | 순위 | 할 일 | 메모 |
 |---:|---|---|
-| **1** | **ja 허브 셸** (`/ja/blog`·`/ja/tournaments`) | 배관은 en에서 다 만들어 뒀다. `hub-i18n.ts`에 ja 라벨 **이미 있음**. 할 일은 ①`lib/hub-routes.ts`에 ja 2개 등록 ②`page.tsx`를 `<HubPage locale="ja">`로 감싸기 ③`IntlBlogIndex`에 `inShell` ④`LOCALE_HUB_PAGES.ja` 추가(라벨은 `CHROME.ja.blogLabel` = "ブログ") |
-| **2** | **es 허브 셸** (`/es/blog`·`/es/tournaments`) | ja와 동일. 여기까지가 사장님이 정한 범위(경화가 es까지라서) |
+| ~~1~~ ✅ | ~~**ja 허브 셸**~~ (완료) | 배관은 en에서 다 만들어 뒀다. `hub-i18n.ts`에 ja 라벨 **이미 있음**. 할 일은 ①`lib/hub-routes.ts`에 ja 2개 등록 ②`page.tsx`를 `<HubPage locale="ja">`로 감싸기 ③`IntlBlogIndex`에 `inShell` ④`LOCALE_HUB_PAGES.ja` 추가(라벨은 `CHROME.ja.blogLabel` = "ブログ") |
+| ~~2~~ ✅ | ~~**es 허브 셸**~~ (완료) | ja와 동일. 여기까지가 사장님이 정한 범위(경화가 es까지라서) |
 | 3 | `/holdem-practice` h1 0개 | 기존 결함 |
 | 4 | `tournaments-client.tsx:601` 하드코딩 | "2026년 7월 28일 기준 … 8월 3~5일"이 낡았다 |
 | 5 | EN 도구 페이지 `<title>` | `/en/calculator`·`quiz`·`glossary`·`hand-chart`·`ranking`이 자체 제목에 "\| HoldemMaster"를 직접 넣고 있다. 동작은 하지만 `title:{absolute}`가 정석 |
