@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { SITE } from "@/lib/site";
 import GlossaryEn from "./glossary-client";
+import HubPage from "@/components/hub-page";
 
 export const metadata: Metadata = {
   // absolute — 안 쓰면 루트 layout의 title.template("%s | 홀덤마스터")이 붙어
@@ -28,5 +29,9 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <GlossaryEn />;
+  return (
+    <HubPage title="Glossary" locale="en">
+      <GlossaryEn />
+    </HubPage>
+  );
 }

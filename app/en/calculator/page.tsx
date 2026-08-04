@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { SITE } from "@/lib/site";
 import CalculatorClientEn from "./calculator-client";
 import { CALCULATOR_FAQ_EN } from "./faq";
+import HubPage from "@/components/hub-page";
 
 export const metadata: Metadata = {
   // absolute — 안 쓰면 루트 layout의 title.template("%s | 홀덤마스터")이 붙어
@@ -81,7 +82,9 @@ export default function Page() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <CalculatorClientEn />
+      <HubPage title="Calculator" locale="en">
+        <CalculatorClientEn />
+      </HubPage>
     </>
   );
 }

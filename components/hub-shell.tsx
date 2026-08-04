@@ -2,9 +2,11 @@
 
 import { useEffect, useState, type ReactNode } from "react";
 import Link from "next/link";
-import { BG, BORDER, INK, MUTED, FONT_SANS, FONT_SERIF } from "@/lib/theme";
+import { BG, BORDER, INK, MUTED, FLAG, FONT_SANS, FONT_SERIF } from "@/lib/theme";
 import SideRail, { SIDE_RAIL_WIDTH } from "@/components/side-rail";
-import BottomTabBar from "@/components/bottom-tab-bar";
+import BottomTabBar, { tabLabels } from "@/components/bottom-tab-bar";
+import { hubLabels } from "@/lib/hub-i18n";
+import { CHROME, type SecondaryLocale } from "@/lib/intl";
 
 /**
  * 허브 페이지 공용 셸 — 홈(community-client.tsx)과 **같은 3열 구조**.
@@ -46,12 +48,18 @@ import BottomTabBar from "@/components/bottom-tab-bar";
 
 type SessionUser = { nickname: string } | null;
 
-/** 상단 네비 — 홈의 피드/채팅/이벤트 탭과 같은 자리·같은 규격. 허브에서는 홈으로 가는 링크다. */
-const NAV_TABS = [
-  { href: "/", label: "피드" },
-  { href: "/?tab=chat", label: "채팅" },
-  { href: "/?tab=event", label: "이벤트" },
-] as const;
+/**
+ * 상단 네비 — 홈의 피드/채팅/이벤트 탭과 같은 자리·같은 규격. 허브에서는 홈으로 가는 링크다.
+ * 라벨은 `tabLabels(locale)`(bottom-tab-bar)에서 가져온다 — 하단 탭바와 같은 문구를 쓰기 위해서다.
+ */
+function navTabs(base: string, locale: SecondaryLocale | null) {
+  const T = tabLabels(locale);
+  return [
+    { href: base || "/", label: T.home },
+    { href: `${base}/?tab=chat`, label: T.chat },
+    { href: `${base}/?tab=event`, label: T.event },
+  ];
+}
 
 function useSessionNickname(): SessionUser {
   const [user, setUser] = useState<SessionUser>(null);
@@ -80,12 +88,12 @@ function useSessionNickname(): SessionUser {
   return user;
 }
 
-function AuthSlot() {
+function AuthSlot({ base, loginLabel }: { base: string; loginLabel: string }) {
   const user = useSessionNickname();
   if (user) {
     return (
       <Link
-        href="/?tab=profile"
+        href={`${base}/?tab=profile`}
         className="flex items-center gap-2 text-[11px] lg:text-sm"
         style={{ color: MUTED, fontFamily: FONT_SANS }}
       >
@@ -102,10 +110,10 @@ function AuthSlot() {
   return (
     <Link
       href="/login"
-      className="font-semibold rounded-full transition-transform active:scale-95 hover:opacity-90 text-[11px] px-3 py-1 lg:text-sm lg:px-4 lg:py-2"
+      className="font-semibold rounded-full transition-transform active:scale-95 hover:opacity-90 text-[11px] px-3 py-1 lg:text-sm lg:px-4 lg:py-2 whitespace-nowrap"
       style={{ background: INK, color: BG, fontFamily: FONT_SANS }}
     >
-      로그인
+      {loginLabel}
     </Link>
   );
 }
@@ -114,13 +122,22 @@ export default function HubShell({
   title,
   children,
   sidebar,
+  locale = null,
 }: {
   /** 데스크톱 마스트헤드 네비에서 「지금 여기」로 표시될 페이지 이름 (h1이 아니다 — 위 주석 참조) */
   title: string;
   children: ReactNode;
   /** 우측 사이드바 — 서버에서 만든 <HubSidebar trending={...} /> 를 그대로 받는다 */
   sidebar?: ReactNode;
+  /**
+   * 로케일. null이면 한국어(경로 접두어 없음).
+   * ★넘기면 마스트헤드·레일·탭바·로그인 링크가 전부 그 언어의 홈(`/en` 등)을 향한다.
+   *   안 넘기면 영어 페이지에서 「홈피드」를 눌렀을 때 한국어 홈으로 튄다.
+   */
+  locale?: SecondaryLocale | null;
 }) {
+  const base = locale ? `/${locale}` : "";
+  const L = hubLabels(locale);
   return (
     <div style={{ background: BG, fontFamily: FONT_SANS }} className="min-h-screen">
       {/* 마스트헤드 — 홈과 동일 규격. 모바일은 브랜드+로그인 한 줄로 좁아진다. */}
@@ -130,7 +147,7 @@ export default function HubShell({
       >
         <div className="flex items-center gap-4 lg:gap-6 px-4 lg:px-8 max-w-screen-xl mx-auto">
           <Link
-            href="/"
+            href={base || "/"}
             className="flex flex-col justify-center py-2.5 lg:py-3 flex-shrink-0 lg:mr-4 lg:border-e lg:pe-6"
             style={{ borderColor: BORDER }}
           >
@@ -144,13 +161,14 @@ export default function HubShell({
               className="text-[18px] lg:text-[22px] leading-tight"
               style={{ color: INK, fontFamily: FONT_SERIF, fontWeight: 500, letterSpacing: "-0.3px" }}
             >
-              홀덤마스터
+              {/* 다국어는 CHROME[locale].brand("HoldemMaster") — 이미 25개 언어에 있는 검증된 값 */}
+              {locale ? CHROME[locale].brand : "홀덤마스터"}
             </span>
           </Link>
 
           {/* 상단 탭 — 데스크톱만. 모바일은 하단 탭바가 같은 역할을 한다. */}
           <nav className="hidden lg:flex items-center gap-6">
-            {NAV_TABS.map((n) => (
+            {navTabs(base, locale).map((n) => (
               <Link
                 key={n.href}
                 href={n.href}
@@ -181,9 +199,9 @@ export default function HubShell({
             style={{ minHeight: 24, minWidth: 60 }}
           >
             <span className="hidden lg:inline text-sm" style={{ color: MUTED, fontFamily: FONT_SANS }}>
-              🇰🇷 KO
+              {FLAG[locale ?? "ko"] ?? "🌐"} {(locale ?? "ko").toUpperCase()}
             </span>
-            <AuthSlot />
+            <AuthSlot base={base} loginLabel={L.login} />
           </div>
         </div>
       </header>
@@ -195,7 +213,13 @@ export default function HubShell({
           <div className="sticky top-20">
             {/* writeHref — 홈 레일과 같은 자리에 「글 쓰기」를 두되, 여기엔 작성 모달이 없으므로
                 홈으로 보내면서 ?write=1로 모달까지 열어 준다(community-client.tsx) */}
-            <SideRail active="none" writeHref="/?write=1" />
+            <SideRail
+              active="none"
+              base={base}
+              locale={locale}
+              writeHref={`${base}/?write=1`}
+              writeLabel={L.write}
+            />
           </div>
         </aside>
 
@@ -220,7 +244,7 @@ export default function HubShell({
         본문과 푸터 사이에 62px 빈 띠가 생기고 정작 페이지 맨 아래(푸터)는 탭바에 가려진다.
         여백은 페이지의 진짜 마지막 요소인 푸터가 갖는다(site-chrome.tsx SiteFooter).
       */}
-      <BottomTabBar active="none" locale="ko" />
+      <BottomTabBar active="none" base={base} locale={locale ?? "ko"} />
     </div>
   );
 }

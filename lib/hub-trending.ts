@@ -35,21 +35,60 @@ export type TrendingItem = {
   title: string;
 };
 
-/** 홈과 같은 4개. 존재하지 않는 슬러그는 조용히 건너뛴다(글이 지워져도 목록이 비지 않게). */
-export function buildHubTrending(posts: Pick<Post, "slug" | "title">[]): TrendingItem[] {
+/**
+ * 홈과 같은 4개. 존재하지 않는 슬러그는 조용히 건너뛴다(글이 지워져도 목록이 비지 않게).
+ *
+ * @param posts 그 로케일의 글 목록
+ * @param base  로케일 경로 접두어. 한국어는 ""(빈 문자열), 그 외 "/en" 같은 값.
+ *
+ * ★다국어에서는 고정 슬러그가 그 언어에 없는 경우가 많다(예: en엔 bluffing-strategy가 없다).
+ *   그래서 고정 목록으로 4개를 못 채우면 **남은 글로 최신순 채움**을 한다.
+ *   빈 사이드바보다 그 언어의 실제 글이 뜨는 편이 낫다.
+ */
+export function buildHubTrending(
+  posts: Pick<Post, "slug" | "title" | "date" | "updated">[],
+  base = ""
+): TrendingItem[] {
   const bySlug = new Map(posts.map((p) => [p.slug, p.title]));
+  const used = new Set<string>();
   const resolve = (e: { slug?: string; href?: string; title?: string }): TrendingItem | null => {
-    if (e.href) return { href: e.href, title: e.title ?? e.href };
+    /**
+     * 페이지 항목(/tournaments)은 **한국어에서만** 쓴다.
+     * ★2026-08-04 실측에서 잡은 사고: 다국어에도 통과시켰더니 /en/calculator의
+     *   「TRENDING THIS WEEK」 1번이 한국어 "2026 홀덤 대회 일정"으로 떴다.
+     *   제목이 이 파일에 한국어로 박혀 있기 때문이다.
+     *   다국어용 제목을 여기서 새로 지어내는 대신, 페이지 항목을 빼고 **그 언어의 실제 글**로
+     *   채운다(아래 fill). 대회 페이지로 가는 길은 좌측 레일이 이미 갖고 있다.
+     */
+    if (e.href) {
+      if (base) return null;
+      return { href: e.href, title: e.title ?? e.href };
+    }
     if (!e.slug) return null;
     const title = bySlug.get(e.slug);
-    return title ? { href: `/blog/${e.slug}`, title } : null;
+    if (!title) return null;
+    used.add(e.slug);
+    return { href: `${base}/blog/${e.slug}`, title };
   };
 
   const pinnedTitle = bySlug.get(TRENDING_PIN_SLUG);
-  const head: TrendingItem[] = pinnedTitle
-    ? [{ href: `/blog/${TRENDING_PIN_SLUG}`, title: pinnedTitle }]
-    : [];
+  const head: TrendingItem[] = [];
+  if (pinnedTitle) {
+    used.add(TRENDING_PIN_SLUG);
+    head.push({ href: `${base}/blog/${TRENDING_PIN_SLUG}`, title: pinnedTitle });
+  }
 
   const tail = PINNED_AFTER.map(resolve).filter((x): x is TrendingItem => x !== null);
-  return [...head, ...tail].slice(0, 4);
+  const picked = [...head, ...tail];
+
+  if (picked.length < 4) {
+    const fill = [...posts]
+      .filter((p) => !used.has(p.slug))
+      .sort((a, b) => (b.updated || b.date).localeCompare(a.updated || a.date))
+      .slice(0, 4 - picked.length)
+      .map((p) => ({ href: `${base}/blog/${p.slug}`, title: p.title }));
+    picked.push(...fill);
+  }
+  return picked.slice(0, 4);
 }
+

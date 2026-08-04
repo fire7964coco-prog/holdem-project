@@ -34,19 +34,31 @@ export function intlBlogIndexMetadata(locale: SecondaryLocale): Metadata {
   };
 }
 
-export function IntlBlogIndex({ locale }: { locale: SecondaryLocale }) {
+export function IntlBlogIndex({
+  locale,
+  inShell = false,
+}: {
+  locale: SecondaryLocale;
+  /** 허브 셸(<HubPage>) 안에서 렌더되는가 — 상단바·바깥 폭 제한을 셸에 넘긴다 */
+  inShell?: boolean;
+}) {
   const t = POST_LABELS[locale];
   const posts = postsForLocale(locale);
   const base = `/${locale}/blog`;
 
   return (
     <div dir={dirForLocale(locale)}>
-      <BlogTopBar
-        homeHref={`/${locale}`}
-        homeFeedLabel={NAV_HOME_FEED[locale]}
-        communityLabel={NAV_CTA[locale]}
-      />
-      <div className="max-w-4xl mx-auto px-4 py-16">
+      {/* ★허브 셸 안에서는 상단바를 그리지 않는다 (2026-08-04).
+          셸이 홈과 같은 마스트헤드를 이미 그리므로 여기서 또 그리면 상단바가 2겹이 된다.
+          아직 셸을 안 입힌 로케일(ja·zh·es…)은 예전대로 BlogTopBar가 필요하다. */}
+      {!inShell && (
+        <BlogTopBar
+          homeHref={`/${locale}`}
+          homeFeedLabel={NAV_HOME_FEED[locale]}
+          communityLabel={NAV_CTA[locale]}
+        />
+      )}
+      <div className={inShell ? "px-4 py-10" : "max-w-4xl mx-auto px-4 py-16"}>
       <header className="mb-10">
         <h1 className="text-3xl md:text-4xl font-sans font-extrabold text-foreground mb-3">{t.blogTitle}</h1>
         <p className="text-lg text-muted-foreground">{t.blogIntro}</p>

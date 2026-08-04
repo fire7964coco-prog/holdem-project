@@ -5,6 +5,7 @@ import { TOURNAMENTS, computeStatus } from "@/lib/tournaments";
 import { BOARD_STRINGS, buildLocaleSchemas, localizedName, nextUpcoming } from "@/lib/tournaments-i18n";
 import { TOURNAMENT_HREFLANG } from "@/lib/tournaments-hreflang";
 import { resolveBlogLinks } from "@/lib/tournaments-blog-links";
+import HubPage from "@/components/hub-page";
 
 const LOCALE = "en" as const;
 
@@ -68,7 +69,9 @@ export default function Page() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas) }}
       />
-      <TournamentBoard locale={LOCALE} todayISO={todayISO} blogLinks={blogLinks} />
+      <HubPage title="Tournaments" locale="en">
+        <TournamentBoard locale={LOCALE} todayISO={todayISO} blogLinks={blogLinks} />
+      </HubPage>
     </>
   );
 }

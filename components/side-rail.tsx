@@ -62,6 +62,31 @@ export const HUB_PAGES = [
 ] as const;
 
 /**
+ * 로케일별 허브 메뉴.
+ *
+ * ★전엔 `!locale`일 때만 허브 메뉴를 그렸다 — "다국어는 대상 페이지가 한국어라 링크해도
+ *   막다른 길"이라는 이유였고, 그때는 맞았다. 그런데 **영어에는 도구 페이지가 6개 있다**
+ *   (/en/calculator·glossary·hand-chart·quiz·ranking·tournaments). 그래서 en은 예외다.
+ * ★여기 없는 언어는 허브 메뉴가 안 나온다 — 그 언어에 도구 페이지가 실제로 없기 때문이다.
+ *   새로 만들면 여기 추가할 것. 없는 라우트를 넣으면 그게 진짜 막다른 길이 된다.
+ * ★라벨은 각 페이지의 metadata title에서 딴 것이다(지어낸 표현이 아니다).
+ */
+const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; label: string }[]> = {
+  en: [
+    { href: "/en/blog",         icon: "📚", label: "All Articles" },
+    { href: "/en/tournaments",  icon: "🏆", label: "Tournaments" },
+    { href: "/en/calculator",   icon: "🧮", label: "Odds Calculator" },
+    { href: "/en/hand-chart",   icon: "📊", label: "Starting Hand Chart" },
+    { href: "/en/quiz",         icon: "🎯", label: "Hand Quiz" },
+    { href: "/en/ranking",      icon: "⭐", label: "Best Poker Sites" },
+    { href: "/en/glossary",     icon: "📖", label: "Poker Glossary" },
+  ],
+};
+
+/** 「홀덤 가이드」 섹션 헤딩 — 로케일별. 없으면 en. */
+const HUB_HEADING: Record<string, string> = { en: "Guides" };
+
+/**
  * 정책·신뢰 페이지. 홈 레일 바닥과 모바일 피드 끝에 쓴다.
  * 그 외 페이지에서는 진짜 푸터(components/footer.tsx)가 같은 링크를 갖는다 — 단일 소스로 두지
  * 않은 이유는 footer.tsx가 서버 컴포넌트고 이쪽은 "use client"라 색 토큰 계통이 다르기 때문.
@@ -129,6 +154,8 @@ export default function SideRail({
   const L = tabLabels(locale);
   const hrefFor = (key: Exclude<BottomTabKey, "blog">) =>
     key === "home" ? base || "/" : `${base || ""}/?tab=${key}`;
+  /** 이 언어에서 실제로 갈 수 있는 가이드 페이지들 (한국어=전체, 그 외=LOCALE_HUB_PAGES) */
+  const hubPages = locale ? LOCALE_HUB_PAGES[locale] ?? [] : HUB_PAGES;
 
   return (
     <div className="flex flex-col gap-0.5">
@@ -193,17 +220,18 @@ export default function SideRail({
         </>
       )}
 
-      {/* 허브 메뉴 — 한국어에서만 (다국어는 대상 페이지가 한국어라 링크해도 막다른 길이다) */}
-      {!locale && (
+      {/* 허브 메뉴 — 한국어 전체, 그 외에는 도구 페이지가 실제로 있는 언어만(LOCALE_HUB_PAGES).
+          없는 언어는 링크할 곳이 없어 아예 안 그린다(막다른 길 방지). */}
+      {hubPages.length > 0 && (
         <>
           <div style={{ borderTop: `1px solid ${BORDER}`, margin: "10px 0 6px" }} />
           <p
             className="text-[10px] font-bold tracking-widest uppercase px-3 mb-1"
             style={{ color: MUTED, fontFamily: FONT_SANS }}
           >
-            홀덤 가이드
+            {locale ? HUB_HEADING[locale] ?? HUB_HEADING.en : "홀덤 가이드"}
           </p>
-          {HUB_PAGES.map((p) => (
+          {hubPages.map((p) => (
             <Link
               key={p.href}
               href={p.href}

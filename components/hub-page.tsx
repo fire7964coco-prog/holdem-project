@@ -1,8 +1,10 @@
 import type { ReactNode } from "react";
 import { POSTS } from "@/lib/posts";
+import { postsForLocale } from "@/lib/intl-posts";
 import { buildHubTrending } from "@/lib/hub-trending";
 import HubShell from "@/components/hub-shell";
 import HubSidebar from "@/components/hub-sidebar";
+import type { SecondaryLocale } from "@/lib/intl";
 
 /**
  * 허브 페이지 래퍼 — **각 page.tsx가 실제로 쓰는 것은 이것 하나다.**
@@ -13,20 +15,31 @@ import HubSidebar from "@/components/hub-sidebar";
  *
  * 사용법:
  *   export default function Page() {
- *     return <HubPage title="전략">{<StrategyClient />}</HubPage>;
+ *     return <HubPage title="전략"><StrategyClient /></HubPage>;   // 한국어
+ *   }
+ *   export default function Page() {
+ *     return <HubPage title="Calculator" locale="en"><CalcEn /></HubPage>;  // 영어
  *   }
  */
 export default function HubPage({
   title,
+  locale = null,
   children,
 }: {
   /** 데스크톱 마스트헤드에서 「지금 여기」로 표시될 짧은 이름 (h1 아님) */
   title: string;
+  /** null이면 한국어. 넘기면 셸 전체가 그 언어의 홈(`/en` 등)을 향한다. */
+  locale?: SecondaryLocale | null;
   children: ReactNode;
 }) {
-  const trending = buildHubTrending(POSTS.map((p) => ({ slug: p.slug, title: p.title })));
+  // 트렌딩은 그 로케일의 글로 만든다 — 영어 페이지에 한국어 글이 뜨면 막다른 길이다.
+  const pool = locale ? postsForLocale(locale) : POSTS;
+  const trending = buildHubTrending(
+    pool.map((p) => ({ slug: p.slug, title: p.title, date: p.date, updated: p.updated })),
+    locale ? `/${locale}` : ""
+  );
   return (
-    <HubShell title={title} sidebar={<HubSidebar trending={trending} />}>
+    <HubShell title={title} locale={locale} sidebar={<HubSidebar trending={trending} locale={locale} />}>
       {children}
     </HubShell>
   );

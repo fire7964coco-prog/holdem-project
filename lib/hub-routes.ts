@@ -27,12 +27,28 @@ const HUB_ROUTES = [
 const HUB_SECTIONS = ["/pub", "/rules"] as const;
 
 /**
+ * 로케일별로 셸을 적용한 라우트 (2026-08-04 — en부터 하나씩 넓힌다).
+ *
+ * ★한국어 목록(HUB_ROUTES)을 그대로 재사용하지 않는 이유: 그 언어에 **실제로 존재하는
+ *   페이지만** 넣어야 한다. 예컨대 /en/pub·/en/strategy는 없다.
+ *   여기 없는 경로는 예전 크롬(BlogTopBar + 고정 레일)을 그대로 쓴다.
+ * ★page.tsx를 <HubPage locale="…">로 감싸는 것과 **둘 다** 해야 한다. 하나만 하면
+ *   상단바가 2겹이 되거나(등록만 함) 셸이 안 붙는다(감싸기만 함).
+ */
+const LOCALE_HUB_ROUTES: Record<string, readonly string[]> = {
+  en: ["/en/blog", "/en/calculator", "/en/glossary", "/en/hand-chart", "/en/quiz", "/en/ranking", "/en/tournaments"],
+};
+
+/**
  * 이 경로가 허브 셸을 쓰는가.
  * ⚠ `/blog/<slug>`(글 상세)는 **아니다** — 글은 목차·학습맵을 포함한 자기 3열 레이아웃을 갖는다.
  *   그래서 "/blog"는 정확히 일치할 때만 참이고, HUB_SECTIONS에 넣지 않았다.
+ *   다국어도 같다: "/en/blog"는 목록만, "/en/blog/<slug>"는 글 자체 레이아웃이다.
  */
 export function isHubRoute(pathname: string): boolean {
   const p = pathname.replace(/\/+$/, "") || "/";
   if ((HUB_ROUTES as readonly string[]).includes(p)) return true;
-  return (HUB_SECTIONS as readonly string[]).some((s) => p.startsWith(s + "/"));
+  if ((HUB_SECTIONS as readonly string[]).some((s) => p.startsWith(s + "/"))) return true;
+  const locale = p.split("/")[1];
+  return (LOCALE_HUB_ROUTES[locale] ?? []).includes(p);
 }
