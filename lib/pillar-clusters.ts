@@ -125,7 +125,9 @@ export const KO_CLUSTERS: PillarCluster[] = [
   {
     id: "odds",
     pillarSlug: "holdem-probability",
-    pillarLabel: "확률·수학",
+    // 「확률·수학」 → 「확률」 (2026-08-04) — 구분점 + 5자라 상단 네비 버튼에서 빡빡했고,
+    // 허브 글 제목이 「홀덤 확률」이라 한 단어 쪽이 맞다.
+    pillarLabel: "확률",
     nodes: [
       { slug: "holdem-outs-calculation", label: "아웃츠 계산법" },
       { slug: "holdem-pot-odds-calculation", label: "팟오즈 계산" },
