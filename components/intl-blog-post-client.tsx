@@ -121,8 +121,9 @@ export default function IntlBlogPostClient({
     const el = document.getElementById(id);
     if (!el) return;
     tocDetailsRef.current?.removeAttribute("open");
-    const barH = stickyToolsRef.current?.getBoundingClientRect().height ?? 0;
-    const top = el.getBoundingClientRect().top + window.scrollY - barH - 56 - 12;
+    // 도구 바의 아래 모서리를 오프셋으로 — 위에 탑바가 있든 없든(화면폭별) 자동 보정된다
+    const barBottom = stickyToolsRef.current?.getBoundingClientRect().bottom ?? 0;
+    const top = el.getBoundingClientRect().top + window.scrollY - Math.max(barBottom, 0) - 12;
     window.scrollTo({ top: Math.max(top, 0), behavior: "smooth" });
   }, []);
 
@@ -161,11 +162,14 @@ export default function IntlBlogPostClient({
     // pb-[62px]: 하단 고정 탭바가 마지막 콘텐츠를 가리지 않도록. lg 이상은 탭바가 없어 해제.
     <div dir={dir} lang={locale} className="pb-[62px] lg:pb-0">
       <ReadingProgressBar targetRef={contentRef} rtl={dir === "rtl"} />
-      <BlogTopBar
-        homeHref={`/${locale}`}
-        homeFeedLabel={NAV_HOME_FEED[locale]}
-        communityLabel={NAV_CTA[locale]}
-      />
+      {/* ★전역 이동 탑바는 데스크톱에서만 — 모바일은 하단 탭바가 전역, 상단은 도구 바(섹션 네비) */}
+      <div className="hidden lg:block">
+        <BlogTopBar
+          homeHref={`/${locale}`}
+          homeFeedLabel={NAV_HOME_FEED[locale]}
+          communityLabel={NAV_CTA[locale]}
+        />
+      </div>
       <div className="max-w-7xl mx-auto px-4 py-10">
         <div className={gridClass}>
           {hasToc && (
@@ -254,7 +258,7 @@ export default function IntlBlogPostClient({
             {(localeClusters !== null || hasToc || showMinimap) && (
               <div
                 ref={stickyToolsRef}
-                className="xl:hidden sticky top-14 z-40 -mx-4 mb-6 px-4 pt-2 pb-2 bg-background/95 backdrop-blur-sm border-b border-border/70 shadow-[0_8px_18px_-14px_rgba(0,0,0,0.3)]"
+                className="xl:hidden sticky top-0 lg:top-14 z-40 -mx-4 mb-6 px-4 pt-2 pb-2 bg-background/95 backdrop-blur-sm border-b border-border/70 shadow-[0_8px_18px_-14px_rgba(0,0,0,0.3)]"
               >
                 {/* 행1 — 계산기 CTA (슬림: mb·py 축소, .calc-pulse 유지) — 로케일 현지 라벨 */}
                 {localeClusters !== null && CALC_CTA_LABELS[locale] && (
@@ -458,7 +462,7 @@ export default function IntlBlogPostClient({
       </div>
 
       {/* ★하단 전역 탭바 — 한국어 블로그와 동일 (2026-08-04 신설) */}
-      <BottomTabBar active="blog" base={`/${locale}`} locale={locale} />
+      <BottomTabBar active="none" base={`/${locale}`} locale={locale} />
     </div>
   );
 }

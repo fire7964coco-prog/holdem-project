@@ -230,7 +230,7 @@ export default function BlogIndex() {
       </div>
 
       {/* 하단 전역 탭바 — 목록도 블로그 섹션이므로 blog 탭 활성 */}
-      <BottomTabBar active="blog" locale="ko" />
+      <BottomTabBar active="none" locale="ko" />
       <div className="h-[62px] lg:hidden" aria-hidden />
     </>
   );

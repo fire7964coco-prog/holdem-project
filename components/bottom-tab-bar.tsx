@@ -62,9 +62,13 @@ export function tabLabels(locale?: string | null): Record<BottomTabKey, string> 
   return TAB_LABELS[locale ?? "ko"] ?? TAB_LABELS.en;
 }
 
+/**
+ * ★블로그 탭은 두지 않는다 (사장님 지적, 2026-08-04).
+ *   홈 피드에 블로그 글이 이미 카드로 전부 들어가 있어 별도 진입점이 중복이다.
+ *   전역 네비는 피드·채팅·이벤트·프로필 넷으로 충분하고, 블로그는 피드를 통해 들어간다.
+ */
 const TABS: { key: BottomTabKey; icon: string }[] = [
   { key: "home",    icon: "⊞" },
-  { key: "blog",    icon: "📚" },
   { key: "chat",    icon: "💬" },
   { key: "event",   icon: "🎰" },
   { key: "profile", icon: "👤" },

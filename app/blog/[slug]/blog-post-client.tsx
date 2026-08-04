@@ -157,13 +157,19 @@ export default function BlogPost({
     return () => window.removeEventListener("scroll", handleScroll);
   }, [handleScroll]);
 
-  /** 모바일 목차 링크: sticky 바(도구 바 + 상단 헤더 56px) 높이만큼 보정해 스크롤 + 오버레이 패널 닫기 */
+  /**
+   * 모바일 목차 링크: 고정 크롬 높이만큼 보정해 스크롤 + 오버레이 패널 닫기.
+   * ★도구 바의 **아래 모서리(bottom)** 를 그대로 오프셋으로 쓴다.
+   *   전엔 `barH + 56`으로 상단바 56px을 상수로 더했는데, 이제 그 상단바가
+   *   모바일엔 없고 lg 이상에만 있다. sticky인 도구 바의 bottom은 위에 뭐가 있든
+   *   이미 그만큼 밀려 있으므로 화면폭에 따라 분기할 필요가 없다.
+   */
   const handleTocNavigate = useCallback((id: string) => {
     const el = document.getElementById(id);
     if (!el) return;
     tocDetailsRef.current?.removeAttribute("open");
-    const barH = stickyToolsRef.current?.getBoundingClientRect().height ?? 0;
-    const top = el.getBoundingClientRect().top + window.scrollY - barH - 56 - 12;
+    const barBottom = stickyToolsRef.current?.getBoundingClientRect().bottom ?? 0;
+    const top = el.getBoundingClientRect().top + window.scrollY - Math.max(barBottom, 0) - 12;
     window.scrollTo({ top: Math.max(top, 0), behavior: "smooth" });
   }, []);
 
@@ -198,7 +204,12 @@ export default function BlogPost({
     // pb-[62px]: 하단 고정 탭바가 마지막 콘텐츠를 가리지 않도록. lg 이상은 탭바가 없어 해제.
     <div className="min-h-screen pb-[62px] lg:pb-0">
       <ReadingProgressBar targetRef={contentRef} />
-      <BlogTopBar homeHref="/" communityLabel="커뮤니티" />
+      {/* ★전역 이동 탑바는 데스크톱에서만 (2026-08-04).
+          모바일은 「하단=전역 탭바 / 상단=섹션 내부 네비(도구 바)」 표준 구조를 따른다.
+          데스크톱은 하단 탭바가 lg:hidden이라 여기까지 빼면 네비가 0이 된다. */}
+      <div className="hidden lg:block">
+        <BlogTopBar homeHref="/" communityLabel="커뮤니티" />
+      </div>
       {/* 모바일 좌우 여백: px-4(16px) + article p-4(16px) = 한쪽 32px가 겹쳐 있었다.
           384px 화면에서 본문 폭이 318px까지 좁아져 한 줄 21자에 그쳤다(2026-08-01 실측).
           바깥을 px-2로 낮춰 본문 폭을 되찾는다. sm 이상은 기존 그대로. */}
@@ -304,8 +315,10 @@ export default function BlogPost({
               /* 이 바는 article 안이 아니라 div.min-w-0 의 자식이다 — 상쇄 대상은
                  article 패딩이 아니라 **바깥 컨테이너(max-w-[1440px] px-2 sm:px-4)** 다.
                  음수 마진이 그 패딩과 정확히 같지 않으면 가로 스크롤이 생긴다. (2026-08-01) */
-              className={`xl:hidden sticky top-14 z-40 -mx-2 px-2 sm:-mx-4 sm:px-4 mb-6 py-1.5 bg-background/95 backdrop-blur-sm border-b border-border/70 shadow-[0_8px_18px_-14px_rgba(0,0,0,0.3)] transition-transform duration-200 ${
-                toolsHidden ? "-translate-y-[calc(100%+3.5rem)]" : "translate-y-0"
+              /* ★top-0: 모바일에선 이 바가 곧 상단 네비다(전역 탑바를 뺐으므로).
+                 lg 이상은 BlogTopBar(56px)가 살아 있으므로 그 아래(top-14)로. */
+              className={`xl:hidden sticky top-0 lg:top-14 z-40 -mx-2 px-2 sm:-mx-4 sm:px-4 mb-6 py-1.5 bg-background/95 backdrop-blur-sm border-b border-border/70 shadow-[0_8px_18px_-14px_rgba(0,0,0,0.3)] transition-transform duration-200 ${
+                toolsHidden ? "-translate-y-full lg:-translate-y-[calc(100%+3.5rem)]" : "translate-y-0"
               }`}
             >
               <div className="relative flex items-stretch gap-1.5">
@@ -645,7 +658,11 @@ export default function BlogPost({
           ★bottom을 0 → 하단 탭바 높이(62px)로 올렸다. 그대로 두면 탭바와 겹친다. */}
       {nextPost && (
         <div
-          className={`xl:hidden fixed left-0 right-0 z-50 transition-all duration-300 ${showStickyNext ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"}`}
+          /* ★pointer-events-none 필수 — opacity-0은 클릭을 막지 않는다.
+             bottom을 62px(탭바 위)로 올린 뒤 숨김 상태(translate-y-full)가 정확히
+             탭바 자리(-7~62px)에 겹쳤고, z-50이라 탭을 눌러도 이 링크가 먹어
+             엉뚱한 포스트로 이동했다. */
+          className={`xl:hidden fixed left-0 right-0 z-50 transition-all duration-300 ${showStickyNext ? "translate-y-0 opacity-100" : "translate-y-full opacity-0 pointer-events-none"}`}
           style={{ bottom: TAB_BAR_HEIGHT, background: "linear-gradient(135deg,#d4af37,#f0d060)", boxShadow: "0 -4px 24px rgba(212,175,55,0.35)" }}
         >
           <Link href={`/blog/${nextPost.slug}`} className="flex items-center justify-between gap-3 px-5 py-4">
@@ -662,7 +679,7 @@ export default function BlogPost({
 
       {/* ★하단 전역 탭바 (2026-08-04 신설).
           검색으로 이 글에 바로 떨어진 독자가 사이트의 나머지로 갈 길이 상단바뿐이었다. */}
-      <BottomTabBar active="blog" locale="ko" />
+      <BottomTabBar active="none" locale="ko" />
     </div>
   );
 }
