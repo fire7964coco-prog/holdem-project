@@ -7,6 +7,7 @@ import BlogTopBar from "@/components/blog-top-bar";
 import { hasBottomTabBar } from "@/components/bottom-tab-bar";
 import { FixedSideRail, hasFixedSideRail } from "@/components/side-rail";
 import { Footer } from "@/components/footer";
+import { IntlFooter } from "@/components/intl-footer";
 import { isHubRoute } from "@/lib/hub-routes";
 import { smoothScrollWindowTo } from "@/lib/smooth-scroll";
 
@@ -180,13 +181,22 @@ function isFooterlessRoute(pathname: string): boolean {
 export function SiteFooter() {
   const pathname = usePathname() || "/";
   if (isFooterlessRoute(pathname)) return null;
+  /**
+   * ★로케일 경로에는 다국어 푸터 (2026-08-04).
+   *   허브 셸을 /en/* 에 적용하면서 **한국어 푸터가 영어 페이지 바닥에 통째로** 붙었다
+   *   (홀덤 가이드 / 기초 규칙 / 개인정보처리방침 …). 실측으로 발견.
+   *   `components/intl-footer.tsx`는 이미 있었는데 어디서도 import되지 않는 죽은 코드였다
+   *   — CHROME[locale]의 검증된 문자열을 쓰므로 그걸 살려 쓴다(새 번역 0건).
+   */
+  const footerLocale = localeFromPath(pathname);
   // 허브 셸은 레일이 흐름 안에 있어 푸터가 비켜설 필요가 없다(위 MainContent와 같은 이유).
   const railPad = !isHubRoute(pathname) && hasFixedSideRail(pathname) ? " xl:ps-[212px]" : "";
   // ★허브 셸은 모든 경로에 하단 탭바를 깐다(TAB_BAR_SECTIONS에 없는 /quiz·/glossary 등 포함).
   //   푸터가 페이지의 마지막 요소이므로 탭바 높이를 여기서 비켜준다.
   const tabPad =
     isHubRoute(pathname) || hasBottomTabBar(pathname) ? " pb-[62px] lg:pb-0" : "";
-  return <Footer className={`${railPad}${tabPad}`} />;
+  const cls = `${railPad}${tabPad}`;
+  return footerLocale ? <IntlFooter locale={footerLocale} className={cls} /> : <Footer className={cls} />;
 }
 
 /**

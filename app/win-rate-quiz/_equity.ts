@@ -159,11 +159,40 @@ function best7fast(cs: NCard[]): number {
 // 검산 스크립트용 내부 훅 (앱 코드에서 사용 금지)
 export const __test = { score5, score5fast, best7, best7fast };
 
-const CATNAME = ["하이카드", "원페어", "투페어", "트리플", "스트레이트", "플러시", "풀하우스", "포카드", "스트레이트플러시"];
+/**
+ * 족보·드로우 이름. **평가 로직과 완전히 분리**돼 있다.
+ *
+ * ★2026-08-04에 파라미터로 뺐다 — 영어판 승률 시뮬레이터(/en/win-rate-quiz)를 만들면서,
+ *   §13 검증을 통과한 평가기(score5·best7·MC 루프)는 **한 줄도 건드리지 않기 위해서**다.
+ *   언어가 늘어도 바뀌는 건 이 이름표뿐이고 숫자는 전 언어 동일하다.
+ * ★영어 이름은 사이트 자체 EN 콘텐츠(lib/posts-en/holdem-hand-rankings.ts)에서 쓰는
+ *   표기와 맞췄다(High Card / One Pair / … / Straight Flush).
+ */
+export interface HandNames {
+  /** 9개, 하이카드 → 스트레이트플러시 순 (인덱스 = 평가기 카테고리 값) */
+  categories: readonly string[];
+  drawingDead: string;
+  flushDraw: string;
+  straightDraw: string;
+}
+
+export const KO_NAMES: HandNames = {
+  categories: ["하이카드", "원페어", "투페어", "트리플", "스트레이트", "플러시", "풀하우스", "포카드", "스트레이트플러시"],
+  drawingDead: "드로잉 데드",
+  flushDraw: "플러시 드로우",
+  straightDraw: "스트레이트 드로우",
+};
+
+export const EN_NAMES: HandNames = {
+  categories: ["High Card", "One Pair", "Two Pair", "Three of a Kind", "Straight", "Flush", "Full House", "Four of a Kind", "Straight Flush"],
+  drawingDead: "Drawing Dead",
+  flushDraw: "Flush Draw",
+  straightDraw: "Straight Draw",
+};
 
 /** 7장 베스트 핸드의 족보 이름 */
-function categoryOf(cs: NCard[]): string {
-  return CATNAME[Math.floor(best7(cs) / 15 ** 5)];
+function categoryOf(cs: NCard[], names: HandNames = KO_NAMES): string {
+  return names.categories[Math.floor(best7(cs) / 15 ** 5)];
 }
 
 // ── 공개 API ────────────────────────────────────────────────────────────────
@@ -241,8 +270,8 @@ export function equity(hero: Card[], villain: Card[], board: Card[]): number {
 }
 
 /** 홀카드 2장 + 보드 5장 → 베스트 5장 족보의 한국어 이름 */
-export function handCategory(hole: Card[], board: Card[]): string {
-  return categoryOf([...hole.map(toNum), ...board.map(toNum)]);
+export function handCategory(hole: Card[], board: Card[], names: HandNames = KO_NAMES): string {
+  return categoryOf([...hole.map(toNum), ...board.map(toNum)], names);
 }
 
 /** 리버 쇼다운 승자 (7장 풀 비교) */
@@ -365,21 +394,26 @@ function bestCategoryIdx(cs: NCard[]): number {
  * 현재까지 공개된 보드 기준 "현재 족보 + 드로우" 라벨. (§13: 메이드=정확 판정, 드로우=4장 판정)
  * 프리플랍(board 0장)은 빈 문자열. 리버(5장)는 확정 족보만.
  */
-export function describeHand(hole: Card[], board: Card[], drawingDead: boolean): string {
+export function describeHand(
+  hole: Card[],
+  board: Card[],
+  drawingDead: boolean,
+  names: HandNames = KO_NAMES
+): string {
   const cs = [...hole.map(toNum), ...board.map(toNum)];
   const revealed = board.length;
   if (revealed < 3) return ""; // 프리플랍: 라벨 없음
   const catIdx = bestCategoryIdx(cs);
-  const made = catIdx >= 0 ? CATNAME[catIdx] : "하이카드";
+  const made = catIdx >= 0 ? names.categories[catIdx] : names.categories[0];
   if (revealed >= 5) return made; // 리버: 확정 족보
-  if (drawingDead) return "드로잉 데드";
+  if (drawingDead) return names.drawingDead;
 
   const draws: string[] = [];
   // 플러시 드로우: 한 무늬 정확히 4장 (아직 플러시 미완성)
   if (catIdx < 5) {
     const suitCount = [0, 0, 0, 0];
     for (const c of cs) suitCount[c[1]]++;
-    if (suitCount.some((x) => x === 4)) draws.push("플러시 드로우");
+    if (suitCount.some((x) => x === 4)) draws.push(names.flushDraw);
   }
   // 스트레이트 드로우: 5칸 창에 4랭크 존재 (스트레이트 미만일 때만, 휠 포함)
   if (catIdx < 4) {
@@ -388,7 +422,7 @@ export function describeHand(hole: Card[], board: Card[], drawingDead: boolean):
     for (let lo = 1; lo <= 10; lo++) {
       let cnt = 0;
       for (let k = 0; k < 5; k++) if (present.has(lo + k)) cnt++;
-      if (cnt === 4) { draws.push("스트레이트 드로우"); break; }
+      if (cnt === 4) { draws.push(names.straightDraw); break; }
     }
   }
   if (draws.length) return `${made} · ${draws.join(" · ")}`;

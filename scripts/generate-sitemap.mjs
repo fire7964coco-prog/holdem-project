@@ -32,6 +32,13 @@ const STATIC_ROUTES = [
   { path: "/calculator", priority: "0.95", changefreq: "monthly" },
   { path: "/quiz", priority: "0.85", changefreq: "monthly" },
   { path: "/win-rate-quiz", priority: "0.8", changefreq: "monthly" },
+  /**
+   * ★영어판 승률 시뮬레이터 (2026-08-04 신설). 새 페이지라 외부 링크가 0이므로
+   *   사이트맵이 없으면 발견이 늦다. robots는 index:true다(app/en/win-rate-quiz/page.tsx).
+   * ⚠ 참고: 나머지 EN 도구 페이지(/en/calculator·quiz·glossary·hand-chart·ranking)는
+   *   **원래부터 사이트맵에 없다.** 의도인지 누락인지 확인되지 않아 이번엔 건드리지 않았다.
+   */
+  { path: "/en/win-rate-quiz", priority: "0.7", changefreq: "monthly" },
   // /hands · /rules/texas-holdem · /hand-chart 은 noindex(app/.../page.tsx robots index:false) → 사이트맵에서 제외.
   //   블로그 필라(holdem-hand-rankings · holdem-starting-hand-range 등)와 키워드 카니발라이제이션 방지.
   { path: "/glossary", priority: "0.8", changefreq: "monthly" },

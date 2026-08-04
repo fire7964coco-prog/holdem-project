@@ -2,19 +2,15 @@ import Link from "next/link";
 import { Spade } from "lucide-react";
 import { CHROME, type SecondaryLocale } from "@/lib/intl";
 
-export function IntlFooter({ locale }: { locale: SecondaryLocale }) {
+export function IntlFooter({ locale, className = "" }: { locale: SecondaryLocale; className?: string }) {
   const t = CHROME[locale];
   const blogHref = `/${locale}/blog`;
 
+  // ★크림 테마 (2026-08-04). 한국어 푸터(components/footer.tsx)에 2026-08-05에 적용한 것과
+  //   같은 수정이다 — 이 파일은 그때 **아무 데서도 import되지 않는 죽은 코드**라 빠졌었다.
+  //   다국어 허브 페이지에 푸터가 붙으면서 살아났다.
   return (
-    <footer
-      className="relative z-10 mt-16 border-t border-primary/15"
-      style={{
-        background:
-          "linear-gradient(180deg, hsl(152 55% 5% / 0.6) 0%, hsl(152 55% 7%) 30%, hsl(152 60% 4%) 100%)",
-      }}
-      role="contentinfo"
-    >
+    <footer className={`relative z-10 mt-16 border-t border-border bg-card ${className}`} role="contentinfo">
       <div aria-hidden="true" className="h-px bg-gradient-to-r from-transparent via-primary/45 to-transparent" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-14 pb-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
@@ -26,13 +22,13 @@ export function IntlFooter({ locale }: { locale: SecondaryLocale }) {
               >
                 <Spade className="h-4 w-4 text-[#1a0e02] fill-current" aria-hidden="true" />
               </div>
-              <span className="font-serif font-black text-xl text-gold-gradient">{t.brand}</span>
+              <span className="font-black text-xl text-foreground">{t.brand}</span>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed">{t.tagline}</p>
           </div>
 
           <nav aria-label={t.contentHeading}>
-            <h2 className="font-serif text-sm uppercase tracking-[0.18em] text-primary/85 mb-4 font-bold">
+            <h2 className="font-serif text-sm uppercase tracking-[0.18em] text-primary mb-4 font-bold">
               {t.contentHeading}
             </h2>
             <ul className="space-y-2.5 text-sm">
@@ -49,7 +45,7 @@ export function IntlFooter({ locale }: { locale: SecondaryLocale }) {
           </nav>
 
           <nav aria-label={t.languageHeading}>
-            <h2 className="font-serif text-sm uppercase tracking-[0.18em] text-primary/85 mb-4 font-bold">
+            <h2 className="font-serif text-sm uppercase tracking-[0.18em] text-primary mb-4 font-bold">
               {t.languageHeading}
             </h2>
             <ul className="space-y-2.5 text-sm">
@@ -66,7 +62,7 @@ export function IntlFooter({ locale }: { locale: SecondaryLocale }) {
           </nav>
         </div>
 
-        <div className="border-t border-primary/12 pt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-muted-foreground leading-relaxed">
+        <div className="border-t border-border pt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-muted-foreground leading-relaxed">
           <p>&copy; {new Date().getFullYear()} {t.brand}. All rights reserved.</p>
           <p className="text-center md:text-right opacity-80">{t.disclaimer}</p>
         </div>
