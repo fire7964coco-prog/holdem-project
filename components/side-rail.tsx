@@ -73,7 +73,12 @@ export const HUB_PAGES = [
  */
 const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; label: string }[]> = {
   en: [
-    { href: "/en/blog",         icon: "📚", label: "All Articles" },
+    // ★라벨은 CHROME.en.blogLabel("Blog")과 같은 값이다. 「Guides」 목록 안에서
+    //   "All Articles"는 다른 항목(도구 페이지)과 층위가 섞여 읽혔다 — 목적지가
+    //   블로그 목록이므로 그대로 Blog라고 부른다.
+    //   ★새 언어를 추가할 때도 이 자리는 CHROME[locale].blogLabel을 그대로 쓸 것
+    //     (ja "ブログ" · es "Blog" · zh "博客" — 지어내지 말 것).
+    { href: "/en/blog",         icon: "📚", label: "Blog" },
     { href: "/en/tournaments",  icon: "🏆", label: "Tournaments" },
     { href: "/en/calculator",   icon: "🧮", label: "Odds Calculator" },
     { href: "/en/hand-chart",   icon: "📊", label: "Starting Hand Chart" },
