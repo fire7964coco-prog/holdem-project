@@ -32,11 +32,15 @@ export default function HubPage({
   locale?: SecondaryLocale | null;
   children: ReactNode;
 }) {
-  // 트렌딩은 그 로케일의 글로 만든다 — 영어 페이지에 한국어 글이 뜨면 막다른 길이다.
+  /**
+   * 트렌딩은 **그 로케일의 글로만** 만든다.
+   * 각 언어는 한국어 번역본이 아니라 독자적인 포스팅 세트다(사장님, 2026-08-04).
+   * 순서 규칙(필라 2 + 최신 2)은 lib/hub-trending.ts 참조 — 슬러그 하드코딩은 없다.
+   */
   const pool = locale ? postsForLocale(locale) : POSTS;
   const trending = buildHubTrending(
     pool.map((p) => ({ slug: p.slug, title: p.title, date: p.date, updated: p.updated })),
-    locale ? `/${locale}` : ""
+    locale
   );
   return (
     <HubShell title={title} locale={locale} sidebar={<HubSidebar trending={trending} locale={locale} />}>
