@@ -3,7 +3,7 @@
 import type { ReactNode } from "react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
-import { Clock, Tag, ChevronLeft, ChevronRight, ChevronDown, Share2, Link2, Map, Calculator, Trophy, TrendingUp, LayoutGrid, Zap, Book, Search } from "lucide-react";
+import { Clock, ChevronLeft, ChevronRight, ChevronDown, Share2, Link2, Map, Calculator, Trophy, TrendingUp, LayoutGrid, Zap, Book, Search } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { FaXTwitter, FaFacebookF } from "react-icons/fa6";
 import type { Post } from "@/lib/posts";
@@ -351,26 +351,24 @@ export default function BlogPost({
               </aside>
             )}
 
-            {/* 태그 칩 — 2026-08-01 헤더에서 여기로 내림.
-                왜: 모바일 첫 화면(844px)에 본문이 0줄이었다. 태그 8~10개가 4줄(약 150px)을
-                차지해 "한 줄 정답"을 화면 밖으로 밀어내고 있었다.
-                근거: docs/ga4-engagement-report-2026-07-31.md §6
+            {/* ★태그 칩 제거 (2026-08-04, 사장님 지시).
+                경위: 원래 6~10개가 전부 <span>이라 눌러도 무반응이었다 → 같은 날 `/blog?tag=`
+                링크로 바꿨더니 **목적지가 블로그 목록 페이지**여서, 글을 읽던 사람을
+                한 단계 뒤(목록)로 되돌려 보내는 동선이 됐다. 사장님 판단으로 통째로 뺀다.
 
-                ★2026-08-05: <span> → <Link>. 위 주석에 "태그는 링크가 아니라 단순 표시라
-                  독자가 누르지도 않는다"고 적혀 있었는데, 그건 **누를 수 없게 만들어 놨기 때문**이다
-                  (글마다 6~10개가 전부 <span>이라 눌러도 아무 일도 안 일어났다).
-                  같은 태그의 글로 가는 `/blog?tag=` 필터를 붙여 진짜 탐색 경로로 만든다. */}
-            <div className="flex flex-wrap gap-2 mb-8">
-              {post.tags.map(tag => (
-                <Link
-                  key={tag}
-                  href={`/blog?tag=${encodeURIComponent(tag)}`}
-                  className="flex items-center gap-1 text-xs px-2.5 py-1 rounded-full bg-card border border-border text-muted-foreground hover:border-primary/50 hover:text-primary transition-colors"
-                >
-                  <Tag className="w-3 h-3" aria-hidden="true" /> {tag}
-                </Link>
-              ))}
-            </div>
+                왜 이게 이득인가:
+                - 모바일 첫 화면(844px)에서 태그가 3~4줄(약 150px)을 먹고 있었다.
+                  「한 줄 정답」과 본문 첫 문단이 그만큼 위로 올라온다.
+                  (근거: docs/ga4-engagement-report-2026-07-31.md §6 — 원래 이 블록을
+                   헤더에서 여기로 내린 것도 같은 이유였다. 이번엔 아예 없앤 것.)
+                - 같은 주제로 가는 탐색은 이미 더 나은 장치가 셋이나 있다:
+                  학습맵(클러스터 미니맵) · 관련 글 카드 3개 · :::readnext 카드.
+                  태그는 그중 가장 약한 경로였다.
+
+                ★post.tags 필드는 지우지 않았다 — page.tsx의 keywords 메타,
+                  /blog 목록 카드, 검색(`?q=`) 매칭에서 계속 쓰인다.
+                ★`/blog?tag=` 필터도 목록 쪽에 그대로 살려 둔다. 링크를 잠깐 배포했던 터라
+                  이미 수집된 URL이 있으면 그대로 동작하는 편이 낫다. */}
 
             {/* 순위/목록형 글(족보 순위 등) — 최상단 예쁜 순위표 (발췌·AI 인용 최적화) */}
             {post.itemList && (
