@@ -33,6 +33,19 @@ function isFeedAppRoute(pathname: string): boolean {
   return LOCALE_FEED_ROOTS.some((p) => pathname.startsWith(p + "/blog"));
 }
 
+/**
+ * ★자체 섹션 네비를 가진 라우트 — 공용 BlogTopBar를 렌더하지 않는다 (2026-08-04).
+ *
+ * 표준 앱 구조는 「하단 = 전역 네비 / 상단 = 그 섹션 안의 네비」다.
+ * 하단 탭바가 생기면서 BlogTopBar의 ←홈피드·커뮤니티→ 두 버튼은 피드 탭과 완전히 중복이 됐고,
+ * 그 자리를 섹션 자체 네비가 대신하는 편이 낫다.
+ * 계산기는 이미 8개 계산기 탭을 본문 최상단에 갖고 있어 그것이 곧 섹션 네비다.
+ */
+function hasOwnSectionNav(pathname: string): boolean {
+  const p = pathname.replace(/^\/[a-z]{2}(-[a-z]+)?(?=\/|$)/i, "") || "/";
+  return p === "/calculator";
+}
+
 
 /**
  * 「맨 위로」 버튼의 스크린리더 라벨.
@@ -94,11 +107,17 @@ export function SiteHeader() {
   const locale = localeFromPath(pathname);
   // 피드 앱 라우트(홈·로그인·글상세·블로그)는 자체 헤더 — 탑바 불필요
   if (isFeedAppRoute(pathname)) return null;
-  // 나머지 모든 페이지(계산기·퀴즈·족보·규칙 등)는 BlogTopBar 공용 컴포넌트
+  // 나머지 모든 페이지(퀴즈·족보·규칙 등)는 BlogTopBar 공용 컴포넌트
   const homeHref = locale ? `/${locale}` : "/";
   const ctaLabel = locale ? NAV_CTA[locale] : "커뮤니티";
   const homeFeedLabel = locale ? NAV_HOME_FEED[locale] : "홈피드";
-  return <BlogTopBar homeHref={homeHref} homeFeedLabel={homeFeedLabel} communityLabel={ctaLabel} />;
+  const bar = <BlogTopBar homeHref={homeHref} homeFeedLabel={homeFeedLabel} communityLabel={ctaLabel} />;
+
+  // ★자체 섹션 네비가 있는 라우트(계산기)는 **모바일에서만** 전역 탑바를 뺀다.
+  //   모바일은 하단 탭바가 전역 이동을 맡지만, 하단 탭바는 lg:hidden이라
+  //   데스크톱에서 탑바까지 빼면 네비가 0이 된다(실측으로 잡은 회귀).
+  if (hasOwnSectionNav(pathname)) return <div className="hidden lg:block">{bar}</div>;
+  return bar;
 }
 
 /** 옛 사이트 푸터 — 전면 피드 전환으로 완전 제거 */

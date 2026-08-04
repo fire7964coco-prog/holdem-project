@@ -5,6 +5,7 @@ import { SEO } from "@/components/seo";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { Trophy, Globe, MapPin, Calendar, Users, DollarSign, ChevronRight, Star, Info, BookOpen, Target, Zap, ExternalLink } from "lucide-react";
+import BottomTabBar from "@/components/bottom-tab-bar";
 import {
   TOURNAMENTS,
   computeStatus,
@@ -1144,6 +1145,10 @@ export default function Tournaments({
         </motion.div>
 
       </div>
+
+      {/* 하단 전역 탭바 — 대회도 5개 탭 밖이라 활성 표시 없음 */}
+      <BottomTabBar active="none" locale="ko" />
+      <div className="h-[62px] lg:hidden" aria-hidden />
     </>
   );
 }

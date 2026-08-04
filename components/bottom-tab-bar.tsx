@@ -21,11 +21,20 @@ import { BG, NAV } from "@/app/community/post-card";
 
 export type BottomTabKey = "home" | "blog" | "chat" | "event" | "profile";
 
+/**
+ * 활성 표시용 키. "none"은 5개 탭 어디에도 속하지 않는 섹션(계산기·대회)에서 쓴다.
+ * 탭바는 그대로 뜨되 아무것도 강조하지 않는다 — 없는 소속을 지어내지 않기 위해서다.
+ */
+export type BottomTabActive = BottomTabKey | "none";
+
+/** 하단 탭바가 깔리는 섹션 루트 — 로케일 접두어를 뗀 경로 기준 */
+const TAB_BAR_SECTIONS = ["/", "/blog", "/calculator", "/tournaments"];
+
 /** 이 경로에 하단 탭바가 깔리는가 — ScrollToTopButton 등 다른 고정 요소가 비켜설 때 쓴다 */
 export function hasBottomTabBar(pathname: string): boolean {
-  if (pathname === "/" || pathname.startsWith("/blog/")) return true;
-  return /^\/[a-z]{2}(-[a-z]+)?(\/|$)/i.test(pathname) &&
-         (/\/blog\//.test(pathname) || /^\/[a-z]{2}(-[a-z]+)?\/?$/i.test(pathname));
+  // 로케일 접두어 제거: /ja/blog/x → /blog/x
+  const p = pathname.replace(/^\/[a-z]{2}(-[a-z]+)?(?=\/|$)/i, "") || "/";
+  return TAB_BAR_SECTIONS.some((s) => p === s || (s !== "/" && p.startsWith(s + "/")));
 }
 
 export const TAB_BAR_HEIGHT = 62;
@@ -62,7 +71,7 @@ const TABS: { key: BottomTabKey; icon: string }[] = [
 ];
 
 interface Props {
-  active: BottomTabKey;
+  active: BottomTabActive;
   /** 로케일 경로 접두어. 한국어는 생략(""), 그 외 "/en" 같은 값 */
   base?: string;
   /** 로케일 코드 — 라벨 선택용. 한국어는 생략 */

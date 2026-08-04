@@ -7,6 +7,7 @@ import { Clock, ChevronRight, Tag } from "lucide-react";
 import { SEO } from "@/components/seo";
 import { POSTS, CATEGORIES, type Category } from "@/lib/posts";
 import CardThumb from "@/components/card-thumb";
+import BottomTabBar from "@/components/bottom-tab-bar";
 
 
 export default function BlogIndex() {
@@ -227,6 +228,10 @@ export default function BlogIndex() {
           </div>
         )}
       </div>
+
+      {/* 하단 전역 탭바 — 목록도 블로그 섹션이므로 blog 탭 활성 */}
+      <BottomTabBar active="blog" locale="ko" />
+      <div className="h-[62px] lg:hidden" aria-hidden />
     </>
   );
 }
