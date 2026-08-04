@@ -12,7 +12,8 @@ import { EN_CLUSTERS, clusterForSlug, type PillarCluster } from "@/lib/pillar-cl
  * clusters/hrefBase/labels 로 로케일 대응 (기본 EN, KO 등은 인자로 전달).
  */
 
-const ICONS: Record<string, typeof BookOpen> = {
+/** 필라별 아이콘 — 블로그 글 상단 네비(카테고리 버튼)에서도 같은 아이콘을 쓴다 */
+export const PILLAR_ICONS: Record<string, typeof BookOpen> = {
   rules: BookOpen,
   rankings: Crown,
   odds: Percent,
@@ -126,7 +127,7 @@ export default function ClusterMinimap({
 
   // 현재 필라 트레일만 (모바일 sticky 바용) — 전 필라 아코디언 없이 슬림하게
   if (currentOnly) {
-    const Icon = ICONS[cluster.id] ?? Book;
+    const Icon = PILLAR_ICONS[cluster.id] ?? Book;
     return (
       <div>
         <div className="flex items-center gap-2 mb-1.5">
@@ -158,7 +159,7 @@ export default function ClusterMinimap({
 
       <div>
         {clusters.map((pillar) => {
-          const Icon = ICONS[pillar.id] ?? Book;
+          const Icon = PILLAR_ICONS[pillar.id] ?? Book;
           const isCurrentPillar = pillar.id === cluster.id;
           return (
             <details

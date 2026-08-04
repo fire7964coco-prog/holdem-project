@@ -3,7 +3,8 @@
 import type { ReactNode } from "react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
-import { Clock, Tag, ChevronLeft, ChevronRight, ChevronDown, Share2, Link2, Map, Calculator } from "lucide-react";
+import { Clock, Tag, ChevronLeft, ChevronRight, ChevronDown, Share2, Link2, Map, Calculator, Trophy, TrendingUp, LayoutGrid, Zap, Book } from "lucide-react";
+import { useRouter } from "next/navigation";
 import { FaXTwitter, FaFacebookF } from "react-icons/fa6";
 import type { Post } from "@/lib/posts";
 
@@ -19,7 +20,7 @@ import CommunityCTA from "@/components/community-cta";
 import BlogTopBar from "@/components/blog-top-bar";
 import BottomTabBar, { TAB_BAR_HEIGHT } from "@/components/bottom-tab-bar";
 import ReadingProgressBar from "@/components/reading-progress-bar";
-import ClusterMinimap from "@/components/cluster-minimap";
+import ClusterMinimap, { PILLAR_ICONS } from "@/components/cluster-minimap";
 import RankingTable from "@/components/ranking-table";
 import CalcCtaButton from "@/components/calc-cta-button";
 import { KO_CLUSTERS, clusterForSlug } from "@/lib/pillar-clusters";
@@ -190,7 +191,30 @@ export default function BlogPost({
   }
 
   const hasToc = headings.length >= 2;
-  const showMinimap = clusterForSlug(post.slug, KO_CLUSTERS) !== null;
+  /** 이 글이 속한 필라(=블로그 카테고리). 상단 네비의 첫 버튼 라벨이 된다. */
+  const cluster = clusterForSlug(post.slug, KO_CLUSTERS);
+  const showMinimap = cluster !== null;
+  const PillarIcon = (cluster && PILLAR_ICONS[cluster.id]) || Book;
+
+  /**
+   * 상단 네비 드롭다운 상호 배타 — 패널이 전부 `absolute inset-x-0 top-full`이라
+   * 둘이 동시에 열리면 겹쳐서 깨진다. native <details>는 자체 배타 기능이 없다.
+   */
+  const navRefs = useRef<(HTMLDetailsElement | null)[]>([]);
+  const closeOtherPanels = useCallback((keep: HTMLDetailsElement | null) => {
+    navRefs.current.forEach((d) => { if (d && d !== keep && d.open) d.open = false; });
+  }, []);
+
+  /** 뒤로 — 사이트 안에서 왔으면 히스토리, 검색 등 외부 유입이면 피드로 */
+  const router = useRouter();
+  const goBack = useCallback(() => {
+    const cameFromSite =
+      typeof document !== "undefined" &&
+      document.referrer &&
+      document.referrer.includes(window.location.host);
+    if (cameFromSite && window.history.length > 1) router.back();
+    else router.push("/");
+  }, [router]);
   const gridClass =
     hasToc && showMinimap
       ? "xl:grid xl:grid-cols-[180px_1fr_210px] xl:gap-5"
@@ -321,27 +345,64 @@ export default function BlogPost({
                 toolsHidden ? "-translate-y-full lg:-translate-y-[calc(100%+3.5rem)]" : "translate-y-0"
               }`}
             >
+              {/* ★상단 네비 (2026-08-04 재설계)
+                  [←] · 카테고리 ▾ · 목차 ▾ · 바로가기 ▾ — 셋 다 "누르면 열리는" 같은 문법으로
+                  통일해 하단 전역 탭바와 짝을 맞춘다. 전엔 계산기만 바로가는 링크라 성격이 튀었다.
+                  카테고리 버튼은 현재 필라 이름을 그대로 달아 "지금 어느 카테고리인지"를 보여준다. */}
               <div className="relative flex items-stretch gap-1.5">
-                {/* 계산기 — 슬림 아이콘 버튼 (calc-pulse 깜빡임 유지) */}
-                <Link
-                  href="/calculator"
-                  className="calc-pulse flex flex-1 items-center justify-center gap-1.5 rounded-xl border-2 border-[#2563eb]/50 bg-gradient-to-br from-primary/15 to-card px-2 py-2 no-underline transition-colors hover:border-[#2563eb]"
-                  aria-label="홀덤 확률 계산기 열기"
+                {/* 뒤로 */}
+                <button
+                  type="button"
+                  onClick={goBack}
+                  aria-label="뒤로 가기"
+                  className="flex flex-shrink-0 items-center justify-center rounded-xl bg-card border border-border px-2.5 hover:bg-card/70 transition-colors"
                 >
-                  <Calculator className="h-4 w-4 flex-shrink-0 text-primary" aria-hidden="true" />
-                  <span className="text-[12px] font-extrabold leading-none text-foreground">계산기</span>
-                </Link>
+                  <ChevronLeft className="w-4 h-4 text-primary" aria-hidden="true" />
+                </button>
 
-                {/* 목차 — 펼침 패널은 absolute 오버레이 */}
+                {/* 카테고리(= 이 글이 속한 필라) — 펼치면 학습맵 */}
+                {showMinimap && cluster && (
+                  <details
+                    ref={(el) => { navRefs.current[0] = el; }}
+                    onToggle={(e) => { if (e.currentTarget.open) closeOtherPanels(e.currentTarget); }}
+                    className="group/map flex-1 min-w-0"
+                  >
+                    <summary className="flex h-full items-center justify-center gap-1 px-1.5 py-2 cursor-pointer list-none [&::-webkit-details-marker]:hidden rounded-xl bg-card border border-border hover:bg-card/70 transition-colors">
+                      <PillarIcon className="w-3.5 h-3.5 flex-shrink-0 text-primary" aria-hidden="true" />
+                      <span className="min-w-0 truncate text-[11px] font-bold leading-none text-primary">{cluster.pillarLabel}</span>
+                      <ChevronDown className="w-3 h-3 flex-shrink-0 text-primary transition-transform duration-200 group-open/map:rotate-180" aria-hidden="true" />
+                    </summary>
+                    <div className="absolute inset-x-0 top-full z-10 mt-1.5 rounded-xl bg-card border border-border shadow-xl">
+                      <div ref={trailBoxRef} className="relative max-h-40 overflow-y-auto overscroll-contain px-3 pt-2.5 pb-2.5">
+                        <ClusterMinimap slug={post.slug} clusters={KO_CLUSTERS} hrefBase="/blog" labels={KO_MINIMAP_LABELS} bare currentOnly />
+                      </div>
+                      <details className="group/fullmap border-t border-border/60">
+                        <summary className="flex items-center justify-between gap-2 px-3 py-2 cursor-pointer list-none [&::-webkit-details-marker]:hidden text-[10px] font-semibold uppercase tracking-wider text-muted-foreground/80 hover:text-primary transition-colors">
+                          <span className="flex items-center gap-1.5"><Map className="w-3.5 h-3.5" aria-hidden="true" /> 다른 카테고리 보기</span>
+                          <ChevronDown className="w-3.5 h-3.5 transition-transform duration-200 group-open/fullmap:rotate-180" aria-hidden="true" />
+                        </summary>
+                        <div className="max-h-[55vh] overflow-y-auto overscroll-contain border-t border-border/60 px-3 pt-1.5 pb-2.5">
+                          <ClusterMinimap slug={post.slug} clusters={KO_CLUSTERS} hrefBase="/blog" labels={KO_MINIMAP_LABELS} bare />
+                        </div>
+                      </details>
+                    </div>
+                  </details>
+                )}
+
+                {/* 목차 — 이 글 안 */}
                 {hasToc && (
-                  <details ref={tocDetailsRef} className="group/toc flex-1">
+                  <details
+                    ref={(el) => { tocDetailsRef.current = el; navRefs.current[1] = el; }}
+                    onToggle={(e) => { if (e.currentTarget.open) closeOtherPanels(e.currentTarget); }}
+                    className="group/toc flex-1 min-w-0"
+                  >
                     <summary
-                      className="flex h-full items-center justify-center gap-1.5 px-2 py-2 cursor-pointer list-none [&::-webkit-details-marker]:hidden rounded-xl bg-card border border-border hover:bg-card/70 transition-colors"
+                      className="flex h-full items-center justify-center gap-1 px-1.5 py-2 cursor-pointer list-none [&::-webkit-details-marker]:hidden rounded-xl bg-card border border-border hover:bg-card/70 transition-colors"
                       aria-label="목차 펼치기/접기"
                     >
-                      <span className="text-[12px] font-bold leading-none text-primary">📚 목차</span>
-                      <span className="text-[11px] leading-none text-muted-foreground/60">{headings.length}</span>
-                      <ChevronDown className="w-3.5 h-3.5 text-primary transition-transform duration-200 group-open/toc:rotate-180" aria-hidden="true" />
+                      <span className="text-[11px] font-bold leading-none text-primary">📚 목차</span>
+                      <span className="text-[10px] leading-none text-muted-foreground/60">{headings.length}</span>
+                      <ChevronDown className="w-3 h-3 flex-shrink-0 text-primary transition-transform duration-200 group-open/toc:rotate-180" aria-hidden="true" />
                     </summary>
                     <nav
                       className="absolute inset-x-0 top-full z-10 mt-1.5 max-h-[55vh] overflow-y-auto overscroll-contain rounded-xl bg-card border border-border shadow-xl p-4"
@@ -352,33 +413,39 @@ export default function BlogPost({
                   </details>
                 )}
 
-                {/* 학습맵 — 펼침 패널은 absolute 오버레이 */}
-                {showMinimap && (
-                  <details className="group/map flex-1">
-                    <summary className="flex h-full items-center justify-center gap-1.5 px-2 py-2 cursor-pointer list-none [&::-webkit-details-marker]:hidden rounded-xl bg-card border border-border hover:bg-card/70 transition-colors">
-                      <Map className="w-3.5 h-3.5 flex-shrink-0 text-primary" aria-hidden="true" />
-                      <span className="text-[12px] font-bold leading-none text-primary">학습맵</span>
-                      <ChevronDown className="w-3.5 h-3.5 text-primary transition-transform duration-200 group-open/map:rotate-180" aria-hidden="true" />
-                    </summary>
-                    <div className="absolute inset-x-0 top-full z-10 mt-1.5 rounded-xl bg-card border border-border shadow-xl">
-                      <div
-                        ref={trailBoxRef}
-                        className="relative max-h-40 overflow-y-auto overscroll-contain px-3 pt-2.5 pb-2.5"
+                {/* 바로가기 — 대회 일정(GSC 1위)·계산기·승률 시뮬·핸드 차트 */}
+                <details
+                  ref={(el) => { navRefs.current[2] = el; }}
+                  onToggle={(e) => { if (e.currentTarget.open) closeOtherPanels(e.currentTarget); }}
+                  className="group/go flex-1 min-w-0"
+                >
+                  <summary className="calc-pulse flex h-full items-center justify-center gap-1 px-1.5 py-2 cursor-pointer list-none [&::-webkit-details-marker]:hidden rounded-xl border-2 border-[#2563eb]/50 bg-gradient-to-br from-primary/15 to-card hover:border-[#2563eb] transition-colors">
+                    <Zap className="w-3.5 h-3.5 flex-shrink-0 text-primary" aria-hidden="true" />
+                    <span className="min-w-0 truncate text-[11px] font-extrabold leading-none text-foreground">바로가기</span>
+                    <ChevronDown className="w-3 h-3 flex-shrink-0 text-primary transition-transform duration-200 group-open/go:rotate-180" aria-hidden="true" />
+                  </summary>
+                  <div className="absolute inset-x-0 top-full z-10 mt-1.5 rounded-xl bg-card border border-border shadow-xl overflow-hidden">
+                    {([
+                      { href: "/tournaments",   Icon: Trophy,     label: "대회 일정",     desc: "국내외 홀덤 대회" },
+                      { href: "/calculator",    Icon: Calculator, label: "계산기",        desc: "아웃츠·팟오즈·ICM" },
+                      { href: "/win-rate-quiz", Icon: TrendingUp, label: "승률 시뮬레이터", desc: "핸드별 승률 확인" },
+                      { href: "/hand-chart",    Icon: LayoutGrid, label: "핸드 차트",     desc: "포지션별 오픈 범위" },
+                    ] as const).map(({ href, Icon, label, desc }) => (
+                      <Link
+                        key={href}
+                        href={href}
+                        className="flex items-center gap-2.5 px-3 py-2.5 no-underline border-b border-border/50 last:border-0 hover:bg-primary/5 transition-colors"
                       >
-                        <ClusterMinimap slug={post.slug} clusters={KO_CLUSTERS} hrefBase="/blog" labels={KO_MINIMAP_LABELS} bare currentOnly />
-                      </div>
-                      <details className="group/fullmap border-t border-border/60">
-                        <summary className="flex items-center justify-between gap-2 px-3 py-2 cursor-pointer list-none [&::-webkit-details-marker]:hidden text-[10px] font-semibold uppercase tracking-wider text-muted-foreground/80 hover:text-primary transition-colors">
-                          <span className="flex items-center gap-1.5"><Map className="w-3.5 h-3.5" aria-hidden="true" /> 전체 학습맵 보기</span>
-                          <ChevronDown className="w-3.5 h-3.5 transition-transform duration-200 group-open/fullmap:rotate-180" aria-hidden="true" />
-                        </summary>
-                        <div className="max-h-[55vh] overflow-y-auto overscroll-contain border-t border-border/60 px-3 pt-1.5 pb-2.5">
-                          <ClusterMinimap slug={post.slug} clusters={KO_CLUSTERS} hrefBase="/blog" labels={KO_MINIMAP_LABELS} bare />
-                        </div>
-                      </details>
-                    </div>
-                  </details>
-                )}
+                        <Icon className="w-4 h-4 flex-shrink-0 text-primary" aria-hidden="true" />
+                        <span className="min-w-0 flex-1">
+                          <span className="block text-[12px] font-bold leading-tight text-foreground">{label}</span>
+                          <span className="block text-[10px] leading-tight text-muted-foreground">{desc}</span>
+                        </span>
+                        <ChevronRight className="w-3.5 h-3.5 flex-shrink-0 text-muted-foreground/50" aria-hidden="true" />
+                      </Link>
+                    ))}
+                  </div>
+                </details>
               </div>
             </div>
 
