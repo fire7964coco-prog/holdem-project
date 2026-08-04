@@ -291,8 +291,12 @@ export default function BlogPost({
                 )}
               </div>
 
-              <div className="text-6xl mb-6">{post.emoji}</div>
-
+              {/* ★제목 위 대형 이모지(text-6xl) 제거 — 2026-08-04 사장님 지시.
+                  "AI가 생성한 느낌"이 든다는 것. E-E-A-T로 12년 경력·WSOP 취재를 내세우는
+                  사이트에서 첫 화면의 인상이 그 반대로 읽히면 그 자체가 손해다.
+                  post.emoji 필드는 지운 게 아니다 — 관련글 카드·피드 카드·로드맵에서
+                  작은 아이콘으로 계속 쓰인다. 여기 히어로 자리에서만 뺀다.
+                  다국어 글(intl-blog-post-client)에는 원래 이 블록이 없었다. */}
               <h1 className="text-3xl md:text-4xl font-extrabold text-foreground leading-tight mb-4">
                 {post.title}
               </h1>
