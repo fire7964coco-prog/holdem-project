@@ -63,7 +63,7 @@ const PILLARS: Pillar[] = [
   },
   {
     id: "p3",
-    label: "확률·수학",
+    label: "확률",
     emoji: "🎲",
     angle: 100,
     color: "#b91c1c",
