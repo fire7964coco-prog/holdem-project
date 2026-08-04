@@ -13,6 +13,7 @@ import { clusterForSlug, EN_CLUSTERS, JA_CLUSTERS, ES_CLUSTERS, PT_CLUSTERS, DE_
 import ClusterMinimap from "@/components/cluster-minimap";
 import CommunityCTA from "@/components/community-cta";
 import BlogTopBar from "@/components/blog-top-bar";
+import BottomTabBar from "@/components/bottom-tab-bar";
 import ReadingProgressBar from "@/components/reading-progress-bar";
 import CalcCtaButton from "@/components/calc-cta-button";
 
@@ -157,7 +158,8 @@ export default function IntlBlogPostClient({
           : "";
 
   return (
-    <div dir={dir} lang={locale}>
+    // pb-[62px]: 하단 고정 탭바가 마지막 콘텐츠를 가리지 않도록. lg 이상은 탭바가 없어 해제.
+    <div dir={dir} lang={locale} className="pb-[62px] lg:pb-0">
       <ReadingProgressBar targetRef={contentRef} rtl={dir === "rtl"} />
       <BlogTopBar
         homeHref={`/${locale}`}
@@ -454,6 +456,9 @@ export default function IntlBlogPostClient({
           )}
         </div>
       </div>
+
+      {/* ★하단 전역 탭바 — 한국어 블로그와 동일 (2026-08-04 신설) */}
+      <BottomTabBar active="blog" base={`/${locale}`} locale={locale} />
     </div>
   );
 }

@@ -17,6 +17,7 @@ type RelatedCard = Pick<Post, "slug" | "title" | "category" | "image" | "imageAl
 import { SITE } from "@/lib/site";
 import CommunityCTA from "@/components/community-cta";
 import BlogTopBar from "@/components/blog-top-bar";
+import BottomTabBar, { TAB_BAR_HEIGHT } from "@/components/bottom-tab-bar";
 import ReadingProgressBar from "@/components/reading-progress-bar";
 import ClusterMinimap from "@/components/cluster-minimap";
 import RankingTable from "@/components/ranking-table";
@@ -194,7 +195,8 @@ export default function BlogPost({
           : "";
 
   return (
-    <div className="min-h-screen">
+    // pb-[62px]: 하단 고정 탭바가 마지막 콘텐츠를 가리지 않도록. lg 이상은 탭바가 없어 해제.
+    <div className="min-h-screen pb-[62px] lg:pb-0">
       <ReadingProgressBar targetRef={contentRef} />
       <BlogTopBar homeHref="/" communityLabel="커뮤니티" />
       {/* 모바일 좌우 여백: px-4(16px) + article p-4(16px) = 한쪽 32px가 겹쳐 있었다.
@@ -639,11 +641,12 @@ export default function BlogPost({
         </div>
       </div>
 
-      {/* 모바일 스티키 CTA — 스크롤 60% 이후 표시, 다음 글 있을 때만 */}
+      {/* 모바일 스티키 CTA — 스크롤 60% 이후 표시, 다음 글 있을 때만.
+          ★bottom을 0 → 하단 탭바 높이(62px)로 올렸다. 그대로 두면 탭바와 겹친다. */}
       {nextPost && (
         <div
-          className={`xl:hidden fixed bottom-0 left-0 right-0 z-50 transition-all duration-300 ${showStickyNext ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"}`}
-          style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", boxShadow: "0 -4px 24px rgba(212,175,55,0.35)" }}
+          className={`xl:hidden fixed left-0 right-0 z-50 transition-all duration-300 ${showStickyNext ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"}`}
+          style={{ bottom: TAB_BAR_HEIGHT, background: "linear-gradient(135deg,#d4af37,#f0d060)", boxShadow: "0 -4px 24px rgba(212,175,55,0.35)" }}
         >
           <Link href={`/blog/${nextPost.slug}`} className="flex items-center justify-between gap-3 px-5 py-4">
             <div className="min-w-0">
@@ -656,6 +659,10 @@ export default function BlogPost({
           </Link>
         </div>
       )}
+
+      {/* ★하단 전역 탭바 (2026-08-04 신설).
+          검색으로 이 글에 바로 떨어진 독자가 사이트의 나머지로 갈 길이 상단바뿐이었다. */}
+      <BottomTabBar active="blog" locale="ko" />
     </div>
   );
 }

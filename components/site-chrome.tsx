@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { localeFromPath, HTML_LANG, NAV_CTA, NAV_HOME_FEED, dirForLocale, SECONDARY_LOCALES } from "@/lib/intl";
 import BlogTopBar from "@/components/blog-top-bar";
+import { hasBottomTabBar } from "@/components/bottom-tab-bar";
 import { smoothScrollWindowTo } from "@/lib/smooth-scroll";
 
 /**
@@ -52,7 +53,7 @@ const BACK_TO_TOP: Record<string, string> = {
 /** 스크롤 300px 이상 시 나타나는 맨 위로 버튼 */
 export function ScrollToTopButton() {
   const [visible, setVisible] = useState(false);
-  const pathname = usePathname();
+  const pathname = usePathname() || "/";
   const locale = localeFromPath(pathname);
   const label = (locale && BACK_TO_TOP[locale]) || "맨 위로 이동";
 
@@ -62,11 +63,17 @@ export function ScrollToTopButton() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  // ★하단 탭바가 깔리는 라우트에서는 그 위로 비켜선다.
+  //   기본 bottom-6(24px)이면 버튼(44px)이 24~68px를 차지해 탭바(0~62px)와 겹친다.
+  const liftAboveTabBar = hasBottomTabBar(pathname);
+
   return (
     <button
       onClick={() => smoothScrollWindowTo(0)}
       aria-label={label}
-      className="fixed bottom-6 right-4 z-50 w-11 h-11 rounded-full flex items-center justify-center shadow-lg transition-all duration-200 hover:scale-110 active:scale-95"
+      className={`fixed right-4 z-50 w-11 h-11 rounded-full flex items-center justify-center shadow-lg transition-all duration-200 hover:scale-110 active:scale-95 ${
+        liftAboveTabBar ? "bottom-[74px] lg:bottom-6" : "bottom-6"
+      }`}
       style={{
         background: "linear-gradient(135deg,#d4af37,#f0d060)",
         color: "#0b1120",

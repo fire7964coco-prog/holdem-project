@@ -21,6 +21,7 @@ import PostCard, {
 import EventTab from "./event-tab";
 import ChatTab from "./chat-tab";
 import FeedNavArrows from "@/components/feed-nav-arrows";
+import BottomTabBar from "@/components/bottom-tab-bar";
 import type { Post } from "@/lib/posts";
 import { isSecondaryLocale } from "@/lib/intl";
 import { getCurrentEventId } from "@/lib/event-config";
@@ -1185,28 +1186,10 @@ export default function CommunityClient({
           </button>
         )}
 
-        {/* 모바일 하단 네비 (다크그린) */}
-        <nav
-          className="fixed bottom-0 left-0 right-0 flex items-center"
-          style={{ background: NAV, borderTop: `1px solid rgba(255,255,255,0.06)`, height: 62, zIndex: 40 }}
-        >
-          {([
-            { key: "home",    label: L.feed,    icon: "⊞" },
-            { key: "chat",    label: L.chat,    icon: "💬" },
-            { key: "event",   label: L.event,   icon: "🎰" },
-            { key: "profile", label: L.profile, icon: "👤" },
-          ] as const).map((n) => (
-            <button
-              key={n.key}
-              onClick={() => setTab(n.key)}
-              className="flex-1 flex flex-col items-center justify-center gap-0.5 py-2"
-              style={{ color: tab === n.key ? BG : "rgba(244,240,231,0.4)" }}
-            >
-              <span className="text-[16px]">{n.icon}</span>
-              <span className="text-[10px] font-semibold" style={{ fontFamily: FONT_SANS }}>{n.label}</span>
-            </button>
-          ))}
-        </nav>
+        {/* 모바일 하단 네비 — components/bottom-tab-bar.tsx로 추출됨(2026-08-04).
+            여기 인라인으로 박혀 있던 탓에 블로그·계산기 등 다른 라우트엔 전역 네비가 아예 없었다.
+            홈에서는 예전처럼 라우팅 없이 로컬 탭 전환(onSelect)을 유지한다. */}
+        <BottomTabBar active={tab} locale={pageLocale ?? "ko"} onSelect={setTab} />
       </div>
 
       {/* ════════════════════════════════════════════════════════
