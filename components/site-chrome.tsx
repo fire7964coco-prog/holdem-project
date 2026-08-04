@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { localeFromPath, HTML_LANG, NAV_CTA, NAV_HOME_FEED, dirForLocale, SECONDARY_LOCALES } from "@/lib/intl";
 import BlogTopBar from "@/components/blog-top-bar";
 import { hasBottomTabBar } from "@/components/bottom-tab-bar";
+import { FixedSideRail, hasFixedSideRail } from "@/components/side-rail";
 import { smoothScrollWindowTo } from "@/lib/smooth-scroll";
 
 /**
@@ -113,11 +114,35 @@ export function SiteHeader() {
   const homeFeedLabel = locale ? NAV_HOME_FEED[locale] : "홈피드";
   const bar = <BlogTopBar homeHref={homeHref} homeFeedLabel={homeFeedLabel} communityLabel={ctaLabel} />;
 
+  // ★xl 이상에서 좌측 레일이 깔리는 라우트는 탑바를 뺀다 (2026-08-04).
+  //   레일이 전역 이동을 전부 맡으므로 탑바의 「홈피드」·「커뮤니티」는 중복이다
+  //   (게다가 그 둘은 href가 같아 실질 목적지가 하나였다).
+  //   xl 미만에는 레일이 없으므로 탑바가 그대로 그 역할을 맡는다.
+  const railHere = hasFixedSideRail(pathname);
+
   // ★자체 섹션 네비가 있는 라우트(계산기)는 **모바일에서만** 전역 탑바를 뺀다.
   //   모바일은 하단 탭바가 전역 이동을 맡지만, 하단 탭바는 lg:hidden이라
   //   데스크톱에서 탑바까지 빼면 네비가 0이 된다(실측으로 잡은 회귀).
-  if (hasOwnSectionNav(pathname)) return <div className="hidden lg:block">{bar}</div>;
+  if (hasOwnSectionNav(pathname)) return <div className={railHere ? "hidden lg:block xl:hidden" : "hidden lg:block"}>{bar}</div>;
+  if (railHere) return <div className="xl:hidden">{bar}</div>;
   return bar;
+}
+
+/**
+ * 데스크톱 전역 좌측 레일. 모바일 하단 탭바의 짝이며, 깔리는 섹션도 같다.
+ * 홈은 자체 레일(community-client)이 있으므로 hasFixedSideRail에서 빠져 있다.
+ */
+export function SiteRail() {
+  const pathname = usePathname() || "/";
+  if (!hasFixedSideRail(pathname)) return null;
+  const locale = localeFromPath(pathname);
+  return (
+    <FixedSideRail
+      active="none"
+      base={locale ? `/${locale}` : ""}
+      locale={locale}
+    />
+  );
 }
 
 /** 옛 사이트 푸터 — 전면 피드 전환으로 완전 제거 */
@@ -135,8 +160,13 @@ export function SiteFooter() {
  *   44px 빈 공간을 만들고 있었다. 제거한다.
  */
 export function MainContent({ children }: { children: React.ReactNode }) {
+  const pathname = usePathname() || "/";
+  // ★좌측 고정 레일이 깔린 라우트는 그만큼 비켜선다 — 하단 탭바가 fixed일 때
+  //   본문에 pb-[62px]을 준 것과 같은 방식이다. 레일 자체는 fixed라 흐름을 안 차지한다.
+  //   ps-(padding-inline-start)를 쓰는 이유: 아랍어·히브리어 RTL에서 레일이 오른쪽으로 간다.
+  const railPad = hasFixedSideRail(pathname) ? " xl:ps-[212px]" : "";
   return (
-    <main id="main-content" className="relative z-10">
+    <main id="main-content" className={`relative z-10${railPad}`}>
       {children}
     </main>
   );

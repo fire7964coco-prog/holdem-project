@@ -18,6 +18,7 @@ type RelatedCard = Pick<Post, "slug" | "title" | "category" | "image" | "imageAl
 import { SITE } from "@/lib/site";
 import CommunityCTA from "@/components/community-cta";
 import BlogTopBar from "@/components/blog-top-bar";
+import SideRail from "@/components/side-rail";
 import BottomTabBar, { TAB_BAR_HEIGHT } from "@/components/bottom-tab-bar";
 import ReadingProgressBar from "@/components/reading-progress-bar";
 import ClusterMinimap, { PILLAR_ICONS } from "@/components/cluster-minimap";
@@ -226,14 +227,13 @@ export default function BlogPost({
     if (cameFromSite && window.history.length > 1) router.back();
     else router.push("/");
   }, [router]);
-  const gridClass =
-    hasToc && showMinimap
-      ? "xl:grid xl:grid-cols-[180px_1fr_210px] xl:gap-5"
-      : hasToc
-        ? "xl:grid xl:grid-cols-[220px_1fr] xl:gap-10"
-        : showMinimap
-          ? "xl:grid xl:grid-cols-[1fr_240px] xl:gap-8"
-          : "";
+  // ★좌측 컬럼은 이제 **항상** 있다 (2026-08-04) — 전역 레일이 그 안에 얹히기 때문이다.
+  //   목차는 있으면 레일 아래에 붙는다. 예전엔 목차가 없으면 좌측 컬럼 자체가 없었다.
+  //   폭(180/220/210)은 건드리지 않는다 — 고정 레일 방식으로 <main>을 212px 밀면
+  //   본문이 978 → 766px로 좁아져서, 블로그 글만 이 방식을 쓴다(side-rail.tsx 주석 참조).
+  const gridClass = showMinimap
+    ? "xl:grid xl:grid-cols-[180px_1fr_210px] xl:gap-5"
+    : "xl:grid xl:grid-cols-[220px_1fr] xl:gap-10";
 
   return (
     // pb-[62px]: 하단 고정 탭바가 마지막 콘텐츠를 가리지 않도록. lg 이상은 탭바가 없어 해제.
@@ -242,7 +242,7 @@ export default function BlogPost({
       {/* ★전역 이동 탑바는 데스크톱에서만 (2026-08-04).
           모바일은 「하단=전역 탭바 / 상단=섹션 내부 네비(도구 바)」 표준 구조를 따른다.
           데스크톱은 하단 탭바가 lg:hidden이라 여기까지 빼면 네비가 0이 된다. */}
-      <div className="hidden lg:block">
+      <div className="hidden lg:block xl:hidden">
         <BlogTopBar homeHref="/" communityLabel="커뮤니티" />
       </div>
       {/* 모바일 좌우 여백: px-4(16px) + article p-4(16px) = 한쪽 32px가 겹쳐 있었다.
@@ -251,17 +251,20 @@ export default function BlogPost({
       <div className="max-w-[1440px] mx-auto px-2 sm:px-4 py-10">
         <div className={gridClass}>
 
-          {/* 데스크탑 사이드바 TOC — xl 이상에서만 표시 */}
-          {hasToc && (
-            <aside className="hidden xl:block">
-              <div className="sticky top-16">
-                <nav className="bg-card border border-border rounded-2xl p-5" aria-label="목차">
+          {/* 데스크탑 좌측 컬럼 — xl 이상. 전역 레일(위) + 목차(아래).
+              ★모바일이 「하단=전역 / 상단=섹션」이듯, 데스크톱은 「좌측 레일=전역 /
+                목차·학습맵=섹션」이다. 레일을 목차 위에 세로로 얹어 본문 폭은 그대로 둔다. */}
+          <aside className="hidden xl:block">
+            <div className="sticky top-16 max-h-[calc(100vh-5rem)] overflow-y-auto overscroll-contain pe-1">
+              <SideRail active="none" />
+              {hasToc && (
+                <nav className="mt-4 bg-card border border-border rounded-2xl p-5" aria-label="목차">
                   <p className="text-xs font-bold uppercase tracking-widest text-primary mb-4">📚 목차</p>
                   <TocList headings={headings} />
                 </nav>
-              </div>
-            </aside>
-          )}
+              )}
+            </div>
+          </aside>
 
           {/* 메인 콘텐츠 컬럼 */}
           <div className="min-w-0">

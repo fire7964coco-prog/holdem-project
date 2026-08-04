@@ -22,29 +22,12 @@ import EventTab from "./event-tab";
 import ChatTab from "./chat-tab";
 import FeedNavArrows from "@/components/feed-nav-arrows";
 import BottomTabBar from "@/components/bottom-tab-bar";
+import SideRail from "@/components/side-rail";
 import type { Post } from "@/lib/posts";
 import { isSecondaryLocale } from "@/lib/intl";
 import { getCurrentEventId } from "@/lib/event-config";
 
 export type { FeedPost } from "./post-card";
-
-// 허브 페이지 목록 — 데스크탑 왼쪽 사이드바에 표시 (한국어 피드 전용)
-const HUB_PAGES = [
-  // ★/blog(전체 글 목록)은 여기에도 KO_PAGE_TEASERS에도 없어서 홈에서 도달할 방법이 없었다.
-  //   블로그 57편이 사이트의 주력인데 목록으로 가는 길이 끊겨 있던 것.
-  { href: "/blog",            icon: "📚", label: "전체 글 보기" },
-  { href: "/tournaments",     icon: "🏆", label: "홀덤 대회 일정" },
-  { href: "/pub",             icon: "🍺", label: "내 근처 홀덤펍" },
-  { href: "/strategy",        icon: "⚡", label: "전략 가이드" },
-  { href: "/rules",           icon: "📋", label: "홀덤 규칙" },
-  { href: "/calculator",      icon: "🧮", label: "팟오즈 계산기" },
-  { href: "/blog/holdem-hand-rankings", icon: "🃏", label: "족보 정리" },
-  { href: "/hand-chart",      icon: "📊", label: "핸드 차트" },
-  { href: "/quiz",            icon: "🎯", label: "실력 테스트" },
-  { href: "/win-rate-quiz",   icon: "📈", label: "승률 시뮬레이터" },
-  { href: "/glossary",        icon: "📖", label: "용어 사전" },
-  { href: "/holdem-practice", icon: "🎮", label: "홀덤 연습장" },
-] as const;
 
 export type CurrentUser = {
   id: string;
@@ -1280,75 +1263,20 @@ export default function CommunityClient({
         {/* 데스크탑 3컬럼 */}
         <div className="flex max-w-screen-xl mx-auto px-4 py-6 gap-6">
 
-          {/* ── 왼쪽 사이드바 ── */}
+          {/* ── 왼쪽 사이드바(전역 레일) ──
+              ★2026-08-04: 여기 인라인이던 <aside>를 components/side-rail.tsx로 뽑았다.
+              하단 탭바와 같은 결함이었다 — 이 파일이 홈 전용이라 블로그·계산기·대회에서는
+              레일이 존재조차 하지 않았다. 홈은 기존대로 로컬 탭 전환(onSelect)이라 회귀 없음. */}
           <aside style={{ width: 200, flexShrink: 0 }}>
-            <div className="sticky top-20 flex flex-col gap-0.5">
-              {([
-                { key: "home",    icon: "⊞", label: L.feed },
-                { key: "chat",    icon: "💬", label: L.chat },
-                { key: "event",   icon: "🎰", label: L.event, badge: "Soon" },
-                { key: "profile", icon: "👤", label: L.profile },
-              ] as const).map((item) => (
-                <button
-                  key={item.key}
-                  onClick={() => setTab(item.key)}
-                  className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-left transition-all"
-                  style={{
-                    background: tab === item.key ? CARD : "transparent",
-                    color: tab === item.key ? INK : MUTED,
-                    fontWeight: tab === item.key ? 600 : 400,
-                    fontFamily: FONT_SANS,
-                    borderLeft: tab === item.key ? `3px solid ${INK}` : "3px solid transparent",
-                  }}
-                >
-                  <span>{item.icon}</span>
-                  <span>{item.label}</span>
-                  {item.badge && (
-                    <span
-                      className="ml-auto text-[9px] px-1.5 py-0.5 rounded font-bold"
-                      style={{ background: "#7a2e2e", color: "#f4f0e7" }}
-                    >
-                      {item.badge}
-                    </span>
-                  )}
-                </button>
-              ))}
-
-              <div style={{ borderTop: `1px solid ${BORDER}`, margin: "10px 0" }} />
-
-              <button
-                onClick={() => currentUser ? setWriteOpen(true) : router.push("/login")}
-                className="w-full py-2.5 rounded-lg text-sm font-semibold"
-                style={{ background: INK, color: BG, fontFamily: FONT_SANS }}
-              >
-                {L.writePost}
-              </button>
-
-              {/* 허브 메뉴 — 한국어 피드에서만 표시 */}
-              {!pageLocale && (
-                <>
-                  <div style={{ borderTop: `1px solid ${BORDER}`, margin: "10px 0 6px" }} />
-                  <p
-                    className="text-[10px] font-bold tracking-widest uppercase px-3 mb-1"
-                    style={{ color: MUTED, fontFamily: FONT_SANS }}
-                  >
-                    홀덤 가이드
-                  </p>
-                  {HUB_PAGES.map((p) => (
-                    <Link
-                      key={p.href}
-                      href={p.href}
-                      className="flex items-center gap-2.5 px-3 py-2 rounded-lg text-[13px] transition-colors"
-                      style={{ color: MUTED, fontFamily: FONT_SANS }}
-                      onMouseEnter={(e) => (e.currentTarget.style.background = CARD)}
-                      onMouseLeave={(e) => (e.currentTarget.style.background = "transparent")}
-                    >
-                      <span style={{ fontSize: 14 }}>{p.icon}</span>
-                      <span>{p.label}</span>
-                    </Link>
-                  ))}
-                </>
-              )}
+            <div className="sticky top-20">
+              <SideRail
+                active={tab}
+                base={pageLocale ? `/${pageLocale}` : ""}
+                locale={pageLocale ?? null}
+                onSelect={setTab}
+                onWrite={() => (currentUser ? setWriteOpen(true) : router.push("/login"))}
+                writeLabel={L.writePost}
+              />
             </div>
           </aside>
 

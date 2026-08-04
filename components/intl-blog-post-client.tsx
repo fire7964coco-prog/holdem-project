@@ -13,6 +13,7 @@ import { clusterForSlug, EN_CLUSTERS, JA_CLUSTERS, ES_CLUSTERS, PT_CLUSTERS, DE_
 import ClusterMinimap from "@/components/cluster-minimap";
 import CommunityCTA from "@/components/community-cta";
 import BlogTopBar from "@/components/blog-top-bar";
+import SideRail from "@/components/side-rail";
 import BottomTabBar from "@/components/bottom-tab-bar";
 import ReadingProgressBar from "@/components/reading-progress-bar";
 import CalcCtaButton from "@/components/calc-cta-button";
@@ -149,21 +150,20 @@ export default function IntlBlogPostClient({
     locale === "en" ? EN_CLUSTERS : locale === "ja" ? JA_CLUSTERS : locale === "es" ? ES_CLUSTERS : locale === "pt" ? PT_CLUSTERS : locale === "de" ? DE_CLUSTERS : locale === "zh" ? ZH_CLUSTERS : locale === "zh-hant" ? ZH_HANT_CLUSTERS : locale === "id" ? ID_CLUSTERS : null;
   const showMinimap = localeClusters !== null && clusterForSlug(post.slug, localeClusters) !== null;
   // 3단 배치: 목차(좌) · 본문(중앙) · 학습맵(우). 있는 것만 컬럼 생성.
-  const gridClass =
-    hasToc && showMinimap
-      ? "xl:grid xl:grid-cols-[200px_1fr_240px] xl:gap-6"
-      : hasToc
-        ? "xl:grid xl:grid-cols-[220px_1fr] xl:gap-10"
-        : showMinimap
-          ? "xl:grid xl:grid-cols-[1fr_250px] xl:gap-10"
-          : "";
+  // ★좌측 컬럼은 항상 있다 (2026-08-04) — 전역 레일(components/side-rail.tsx)이 그 안에 얹힌다.
+  //   한국어 글과 같은 처리다. 고정 레일로 <main>을 미는 방식이면 본문이 좁아지므로,
+  //   3열 레이아웃을 가진 글은 자기 좌측 컬럼에 레일을 얹어 본문 폭을 지킨다.
+  const gridClass = showMinimap
+    ? "xl:grid xl:grid-cols-[200px_1fr_240px] xl:gap-6"
+    : "xl:grid xl:grid-cols-[220px_1fr] xl:gap-10";
 
   return (
     // pb-[62px]: 하단 고정 탭바가 마지막 콘텐츠를 가리지 않도록. lg 이상은 탭바가 없어 해제.
     <div dir={dir} lang={locale} className="pb-[62px] lg:pb-0">
       <ReadingProgressBar targetRef={contentRef} rtl={dir === "rtl"} />
       {/* ★전역 이동 탑바는 데스크톱에서만 — 모바일은 하단 탭바가 전역, 상단은 도구 바(섹션 네비) */}
-      <div className="hidden lg:block">
+      {/* xl 이상은 좌측 레일이 전역 이동을 맡는다 — 탑바의 홈피드·커뮤니티는 중복이다 */}
+      <div className="hidden lg:block xl:hidden">
         <BlogTopBar
           homeHref={`/${locale}`}
           homeFeedLabel={NAV_HOME_FEED[locale]}
@@ -172,16 +172,19 @@ export default function IntlBlogPostClient({
       </div>
       <div className="max-w-7xl mx-auto px-4 py-10">
         <div className={gridClass}>
-          {hasToc && (
-            <aside className="hidden xl:block">
-              <div className="sticky top-16 max-h-[calc(100vh-5rem)] overflow-y-auto overscroll-contain pe-1">
-                <nav className="bg-card border border-border rounded-2xl p-5" aria-label={t.contents}>
+          {/* 데스크탑 좌측 컬럼 — 전역 레일(위) + 목차(아래).
+              레일은 로케일이 있으므로 한국어 전용 허브 메뉴 없이 탭 4개만 렌더된다. */}
+          <aside className="hidden xl:block">
+            <div className="sticky top-16 max-h-[calc(100vh-5rem)] overflow-y-auto overscroll-contain pe-1">
+              <SideRail active="none" base={`/${locale}`} locale={locale} />
+              {hasToc && (
+                <nav className="mt-4 bg-card border border-border rounded-2xl p-5" aria-label={t.contents}>
                   <p className="text-xs font-bold uppercase tracking-widest text-primary mb-4">{t.contents}</p>
                   <IntlTocList headings={headings} />
                 </nav>
-              </div>
-            </aside>
-          )}
+              )}
+            </div>
+          </aside>
 
           <div className="min-w-0">
             <header className="mb-10">

@@ -3,7 +3,7 @@ import Script from "next/script";
 import { Noto_Sans_KR, Inter, Lora } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
-import { SiteHeader, SiteFooter, HtmlLangSync, MainContent, ScrollToTopButton } from "@/components/site-chrome";
+import { SiteHeader, SiteFooter, HtmlLangSync, MainContent, ScrollToTopButton, SiteRail } from "@/components/site-chrome";
 import { BrushDefs } from "@/components/brush-defs";
 import SitePopup from "@/components/site-popup";
 import "./globals.css";
@@ -206,6 +206,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <BrushDefs />
         <HtmlLangSync />
         <SiteHeader />
+        <SiteRail />
         <MainContent>{children}</MainContent>
         <SiteFooter />
         <ScrollToTopButton />
