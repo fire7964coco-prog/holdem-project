@@ -4,11 +4,11 @@ export const POST: Post = {
   slug: "apt-incheon-2026-guide",
   title: "APT Incheon 2026 — 扑克节 + 韩国旅行全攻略",
   seoTitle: "飞韩国打牌？APT Incheon 2026 在 Paradise City，顺便 3 天玩转首尔",
-  desc: "APT Incheon 2026——8 月 7–16 日，就办在仁川机场旁的 Paradise City Casino，坐免费班车 10 分钟直达。$2.7M 保底，主赛事约 $1,700，$3.50 起从 Natural8 打卫星赛晋级。仅限外籍人士。这篇讲清赛程、买入、场馆，还附上首尔 3 天吃住玩全攻略。",
-  tldr: "APT Incheon 2026 于 8 月 7–16 日在仁川 Paradise City Casino 举办——从 1 号航站楼坐免费班车 10 分钟直达。主赛事：KRW 2,500,000（约 $1,703）买入，$1M 保底。$3.50 起可从 Natural8 阶梯卫星赛晋级。仅限外籍人士（韩国公民不得入场）。首尔约 1 小时车程，是亚洲美食、文化和夜生活最好的城市之一。",
+  desc: "APT Incheon 2026——8 月 7–16 日，就办在仁川机场旁的 Paradise City Casino，坐免费班车 10 分钟直达。$2.7M 保底，主赛事约 $1,700，线上预选只剩 $20 阶梯 → $200 Mega，8 月 7 日截止。仅限外籍人士。这篇讲清赛程、买入、场馆，还附上首尔 3 天吃住玩全攻略。",
+  tldr: "APT Incheon 2026 于 8 月 7–16 日在仁川 Paradise City Casino 举办——从 1 号航站楼坐免费班车 10 分钟直达。主赛事：KRW 2,500,000（约 $1,703）买入，$1M 保底。Natural8 线上预选一共送出 74 个席位，但 $35 Mega 和 OnLive Day 1 都已在 8 月 2 日结束，目前只剩 $20 阶梯 → $200 Mega 这一条路，8 月 7 日截止。仅限外籍人士（无海外永久居留权的韩国公民不得入场）。首尔约 1 小时车程，是亚洲美食、文化和夜生活最好的城市之一。",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-07-28",
+  updated: "2026-08-05",
   masterUpdated: "2026-07-28",
   keepImagesInBody: true,
   readTime: "16 分钟",
@@ -35,7 +35,7 @@ APT Incheon 2026。8 月 7–16 日。Paradise City Casino。总保底奖池 $2.
 ---
 
 > **快速回答**
-> APT Incheon 2026 于 ==**8 月 7–16 日**== 在仁川 Paradise City Casino 举办。度假村 ==g:从仁川机场 1 号航站楼坐免费班车 10 分钟直达==——每 30 分钟一班，免费。主赛事买入：==**KRW 2,500,000（约 $1,703）**==，$1M 保底。阶梯卫星赛 ==g:**$3.50 起，通过 Natural8**== 打起。赌场 ==r:仅限外籍人士==——韩国公民不得入场。
+> APT Incheon 2026 于 ==**8 月 7–16 日**== 在仁川 Paradise City Casino 举办。度假村 ==g:从仁川机场 1 号航站楼坐免费班车 10 分钟直达==——每 30 分钟一班，免费。主赛事买入：==**KRW 2,500,000（约 $1,703）**==，$1M 保底。Natural8 线上预选共送出 74 个席位，但 ==r:$35 Mega 和 OnLive Day 1 已于 8 月 2 日结束==——现在只剩 ==g:**$20 阶梯 → $200 Mega，8 月 7 日截止**==。赌场 ==r:仅限外籍人士==——无海外永久居留权的韩国公民不得入场。
 
 ---
 
@@ -66,9 +66,9 @@ APT Incheon 2026。8 月 7–16 日。Paradise City Casino。总保底奖池 $2.
 | **总保底** | ==g:**超过 KRW 4 billion（约 $2.7M USD）**== |
 | **主赛事买入** | KRW 2,500,000 ==**（$1,703 USD）**== |
 | **主赛事保底** | ==g:KRW 1,500,000,000（约 $1M USD）== |
-| **最低卫星赛入场** | ==g:**$3.50，通过 Natural8**== |
+| **目前仍开放的线上路线** | ==g:**$20 阶梯 → $200 Mega（8 月 7 日截止）**== |
 | **赞助商** | Natural8 |
-| **谁可以入场** | ==r:仅限外籍人士——韩国公民不得入场== |
+| **谁可以入场** | ==r:仅限外籍人士——无海外永久居留权的韩国公民不得入场== |
 | **年龄要求** | 19 岁以上，须持有效证件照 |
 | **报名** | registrations@apt.poker |
 
@@ -86,7 +86,7 @@ APT Incheon 2026。8 月 7–16 日。Paradise City Casino。总保底奖池 $2.
 | Mystery Bounty Hunter | Aug 8–9 | ~$610 | ~$204K |
 | APT Super High Roller | Aug 8–9 | ==r:~$10,200== | ~$340K |
 | ==**APT Main Event**== | ==**Aug 9–15**== | ==**~$1,703**== | ==g:**~$1M**== |
-| Superstar Challenge | Aug 10–11 | ~$23,800 | — |
+| Superstar Challenge | Aug 14–15 | ~$23,800 | — |
 | Zodiac Classic | Aug 13–14 | ~$2,000 | ~$340K |
 | Mini Main Event | Aug 14–16 | ~$610 | ~$272K |
 | APT High Roller | Aug 15–16 | ~$3,400 | ~$340K |
@@ -126,7 +126,7 @@ APT Incheon 2026。8 月 7–16 日。Paradise City Casino。总保底奖池 $2.
 
 **这张票能带你去哪：** APT 冠军赛 2026 于 **11 月 13 日至 29 日在台北 Red Space** 举行。冠军赛主赛是 **11 月 23 至 27 日，$10,000 买入的 freezeout，保证奖金 $5,000,000**——全年最大的 APT 赛事。而且台北不像天堂城，**入场没有国籍限制**。
 
-## 如何通过 Natural8 晋级（$3.50 起）
+## 现在还赶得上吗？——线上只剩 $20 阶梯这一条
 
 Natural8 是 APT 的官方线上合作伙伴，运营 ==**Journey to APT Incheon 2026**== 卫星赛活动。通往主赛事有两条路：
 
@@ -139,15 +139,17 @@ Natural8 是 APT 的官方线上合作伙伴，运营 ==**Journey to APT Incheon
 
 </div>
 
-**阶梯卫星赛路线（最省钱的路）：**
+:::note[**★2026 年 8 月 5 日的截止信息。** **$35 Mega 卫星赛和 OnLive Day 1 预选已于 8 月 2 日结束。** 目前仍在运行的线上路线只有 **$20 阶梯 → $200 Mega**，而且 **8 月 7 日（周五）是最后一天**。上表 52+22=74 个席位是**已经送出的累计数字**，不是还能抢的余位。]:::
+
+**仍然开放的阶梯路线：**
 
 <div style="background:rgba(0,0,0,0.25);border:1px solid rgba(255,255,255,0.10);border-radius:10px;padding:14px 20px;margin:16px 0;font-size:13px;line-height:1.8">
-Step 1（~$3.50）→ 打赢拿到 Step 2 门票（~$15）→ 打赢拿到 Mega Satellite 门票（~$50）→ 打赢主赛事席位（价值 ~$1,703）
+$20 阶梯卫星赛 → 打赢拿到 $200 Mega Satellite 门票 → 打赢主赛事席位（价值 ~$1,703）· 最后一天为 8 月 7 日
 </div>
 
 ==g:Natural8 还为卫星赛晋级者提供 8% 的奖金 bonus==——如果你在线下赛事赢了 $10,000，还能额外拿到 $800。**按这条路线做计划前，先确认一件事。** Natural8 是 GG 网络的**亚太皮肤**，**能不能用取决于你的居住国**——按其条款，注册页国家列表里没有你的居住国，就意味着无法接受你。台湾、香港、澳门、新加坡、马来西亚通常在列，不少国家则会被导向主站 GGPoker。⚠️ 用 VPN 绕开属于违反条款，账号和余额都可能出问题。**对所有人开放的一条路，是直接向主办方报名（registrations@apt.poker）并支付全额买入。**
 
-> **OnLive 小贴士：** OnLive 路线让你在自己的家乡时区打 Day 1，只有活到 Day 3 才需要飞韩国。==g:如果你的旅行预算紧张，这是更聪明的晋级路线。==
+> **OnLive 曾经是什么：** 这条路线让你在自己的家乡时区打 Day 1，只有活到 Day 3 才需要飞韩国——旅行预算紧张时确实更聪明。==r:但它已于 8 月 2 日结束，本届不再是选项。== 留在这里，是因为下一站 APT 值得盯着看。
 
 **还有第三条路线，多数攻略都漏掉了——Country Exclusives（国别专属资格赛）。** Natural8 会开设限定居住国的资格赛，那里送出的是 **6 个现场套餐**。套餐不只是席位——它包含 **主赛资格（约 $1,684）外加约 $500 的差旅费**。普通卫星赛只给你席位，机票自理。⚠️ 但先说清楚门槛：这类赛事**按国籍限定、并要通过 KYC 验证公民身份**，不是按居住地址——目前公开的一场就写明「仅限台湾籍」。所以在硬刷通用路线之前，先去比赛大厅确认有没有你能打的场次，别先把它算进预算。
 
@@ -178,7 +180,7 @@ Step 1（~$3.50）→ 打赢拿到 Step 2 门票（~$15）→ 打赢拿到 Mega 
 
 实际意义有两点。一是**牌桌上遇到讲华语的人概率很高**，赛务对华语选手早就习以为常，换筹、叫 floor 都不会卡住。二是从新马出发的成本，跟已经稳定出现在名单上的泰国、越南差不多——樟宜和吉隆坡到仁川都有直飞，7 小时以内。
 
-**2025 年的数字：** 1,281 人次，但**实际人数只有 754 人**（其余是重复买入）。奖池 **KRW 2,766,660,000（约 $2.0M）**，是当时 APT 在韩国办过的最大主赛。冠军是中国选手 **何俊宇（Junjie He）**，拿下 ₩380,520,000（约 $275,140）和一个 APT 冠军赛席位——那是他与 Kouki Okumiya、Kuroda Kiyoto 三人 ICM 分钱之后的结果。
+**2025 年的数字：** 1,281 人次，但**实际人数只有 754 人**（其余是重复买入）。奖池 **KRW 2,766,960,000（约 $2.0M）**，是当时 APT 在韩国办过的最大主赛。冠军是中国选手 **何俊宇（Junjie He）**，拿下 ₩380,520,000（约 $275,140）和一个 APT 冠军赛席位——那是他与 Kouki Okumiya、Kuroda Kiyoto 三人 ICM 分钱之后的结果。
 
 > **参赛人次要会读。** "1,281 人次"不等于 1,281 个人，而是 754 人加上重复买入。重入赛制的牌局，看起来永远比实际人数大。
 
@@ -404,7 +406,7 @@ A. 都行，但 ==g:推荐提前 2–3 天到==。你可以倒时差、悠闲地
 
 1. **APT Incheon 2026** 于 ==**8 月 7–16 日**== 在 Paradise City Casino 举办——坐免费班车距仁川机场 10 分钟，$2.7M 保底。
 2. **主赛事** 买入：==**~$1,703**==，==g:$1M 保底==。大约是 EPT Barcelona 主赛的三分之一、WPT Australia 冠军赛买入的一半。
-3. **$3.50 起晋级**，通过 Natural8 阶梯卫星赛。OnLive 赛制让你在家就能打 Day 1。
+3. **线上只剩 $20 阶梯 → $200 Mega**，而且只到 8 月 7 日。$35 Mega 和 OnLive 已于 8 月 2 日结束。
 4. **首尔仅 60 分钟车程**，是亚洲最好的旅行目的地之一——==g:古宫、烤肉、夜生活，还有无可匹敌的街头小吃。==
 5. **仅限外籍人士**——这场赛事就是为国际牌手打造的。你的护照就是你的门禁卡。
 
@@ -421,7 +423,7 @@ A. 都行，但 ==g:推荐提前 2–3 天到==。你可以倒时差、悠闲地
 - **APT 冠军赛 2026** — [Full APTC 2026 Schedule](https://www.theasianpokertour.com/news/apt-announces-full-aptc2026-schedule) · 11 月 13–29 日台北；主赛 11 月 23–27 日，$10,000 买入，$5,000,000 保证
 - **二十周年** — [APT Gets Ready to Celebrate 20 Years](https://www.theasianpokertour.com/news/apt-2026-schedule)
 - **卫星赛与套餐** — [Natural8 — Journey to APT Incheon 2026](https://www.natural8.com/en/blog/journey-to-apt-incheon-2026) · [Country Exclusives 2026](https://www.natural8.com/en/poker/tournaments/apt-incheon-country-exclusives-2026)
-- **2025 年参赛构成与结果（主办方官方战报）** — [APT — China's Junjie He Wins APT's Largest Korean Main Event](https://www.theasianpokertour.com/news/china-s-junjie-he-wins-apt-s-largest-korean-main-event-for-krw-380-5-m-usd-275-k-plus-apt-championship-seat-worth-krw-13-8-m-usd-10-k) · 1,281 人次/754 实际人数 · 奖池 KRW 2,766,660,000 · 国别前十名
+- **2025 年参赛构成与结果（主办方官方战报）** — [APT — China's Junjie He Wins APT's Largest Korean Main Event](https://www.theasianpokertour.com/news/china-s-junjie-he-wins-apt-s-largest-korean-main-event-for-krw-380-5-m-usd-275-k-plus-apt-championship-seat-worth-krw-13-8-m-usd-10-k) · 1,281 人次/754 实际人数 · 奖池 KRW 2,766,960,000 · 国别前十名
 - **赌场入场规定** — [天堂城官方](https://www.p-city.com/front/contents/casino/casinoInfo)
 
 > ⚠️ **赛事 8 月 7 日开打。** 卫星赛席位数、补注册截止时间、班车时刻表都还可能变动。**报名当天请再确认 APT 官方赛事页和 Natural8 大厅。**

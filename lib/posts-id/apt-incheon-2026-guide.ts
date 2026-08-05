@@ -4,11 +4,11 @@ export const POST: Post = {
   slug: "apt-incheon-2026-guide",
   title: "APT Incheon 2026 — Festival Poker + Panduan Wisata Korea",
   seoTitle: "Terbang ke Korea demi poker? APT Incheon 2026 di Paradise City + Seoul 3 hari",
-  desc: "APT Incheon 2026 — 7–16 Agustus di Paradise City. GTD $2,7 juta, Main Event ~$1.703. Kualifikasi dari $3,50 via Natural8, plus wisata Seoul.",
-  tldr: "APT Incheon 2026 berlangsung 7–16 Agustus di Paradise City Casino, Incheon — 10 menit dengan shuttle gratis dari Terminal 1. Main Event: buy-in KRW 2.500.000 (~$1.703), GTD $1 juta. Kualifikasi dari $3,50 via satelit berjenjang Natural8. Hanya untuk warga negara asing (warga negara Korea tidak boleh masuk). Seoul berjarak ~1 jam dan merupakan salah satu kota terbaik di Asia untuk kuliner, budaya, dan kehidupan malam.",
+  desc: "APT Incheon 2026 — 7–16 Agustus di Paradise City. GTD $2,7 juta, Main Event ~$1.703. Rute online terakhir: Step $20 → Mega $200, tutup 7 Agustus, plus wisata Seoul.",
+  tldr: "APT Incheon 2026 berlangsung 7–16 Agustus di Paradise City Casino, Incheon — 10 menit dengan shuttle gratis dari Terminal 1. Main Event: buy-in KRW 2.500.000 (~$1.703), GTD $1 juta. Kualifikasi online Natural8 total membagikan 74 kursi, tetapi Mega $35 dan rute OnLive Day 1 sama-sama tutup pada 2 Agustus: satu-satunya jalur yang masih terbuka adalah Step $20 → Mega $200, dan itu berakhir 7 Agustus. Hanya untuk warga negara asing (warga negara Korea tanpa izin tinggal tetap di luar negeri tidak boleh masuk). Seoul berjarak ~1 jam dan merupakan salah satu kota terbaik di Asia untuk kuliner, budaya, dan kehidupan malam.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-07-28",
+  updated: "2026-08-05",
   masterUpdated: "2026-07-28",
   keepImagesInBody: true,
   readTime: "16 mnt",
@@ -35,7 +35,7 @@ Trip poker dan trip Korea adalah trip yang sama. ==g:Paradise City hanya 10 meni
 ---
 
 > **Jawaban singkat**
-> APT Incheon 2026 berlangsung ==**7–16 Agustus**== di Paradise City Casino, Incheon. Resor ini ==g:10 menit dengan shuttle gratis dari Terminal 1 Bandara Incheon== — berangkat setiap 30 menit, tanpa biaya. Buy-in Main Event: ==**KRW 2.500.000 (~$1.703)**==, bergaransi $1 juta. Satelit berjenjang mulai dari ==g:**$3,50 via Natural8**==. Kasino ==r:hanya untuk warga negara asing== — warga negara Korea tidak boleh masuk.
+> APT Incheon 2026 berlangsung ==**7–16 Agustus**== di Paradise City Casino, Incheon. Resor ini ==g:10 menit dengan shuttle gratis dari Terminal 1 Bandara Incheon== — berangkat setiap 30 menit, tanpa biaya. Buy-in Main Event: ==**KRW 2.500.000 (~$1.703)**==, bergaransi $1 juta. Satelit berjenjang mulai dari ==g:**$3,50 via Natural8**==. ==r:Mega $35 dan OnLive tutup pada 2 Agustus== — yang masih terbuka hanya ==g:**Step $20 → Mega $200, sampai 7 Agustus**==. Kasino ==r:hanya untuk warga negara asing== — warga negara Korea tanpa izin tinggal tetap di luar negeri tidak boleh masuk.
 
 ---
 
@@ -66,9 +66,9 @@ Dan untuk pengunjung internasional: ==g:sebagian besar pemegang paspor negara Ba
 | **Total GTD** | ==g:**Lebih dari KRW 4 miliar (~$2,7 juta USD)**== |
 | **Buy-In Main Event** | KRW 2.500.000 ==**($1.703 USD)**== |
 | **GTD Main Event** | ==g:KRW 1.500.000.000 (~$1 juta USD)== |
-| **Entry Satelit Termurah** | ==g:**$3,50 via Natural8**== |
+| **Rute Online yang Masih Terbuka** | ==g:**Step $20 → Mega $200 (tutup 7 Agu)**== |
 | **Sponsor** | Natural8 |
-| **Siapa yang Boleh Masuk** | ==r:Hanya warga negara asing — warga negara Korea tidak boleh masuk== |
+| **Siapa yang Boleh Masuk** | ==r:Hanya warga negara asing — warga negara Korea tanpa izin tinggal tetap di luar negeri tidak boleh masuk== |
 | **Syarat Usia** | 19+ dengan ID foto yang valid |
 | **Registrasi** | registrations@apt.poker |
 
@@ -86,7 +86,7 @@ Dan untuk pengunjung internasional: ==g:sebagian besar pemegang paspor negara Ba
 | Mystery Bounty Hunter | 8–9 Agu | ~$610 | ~$204K |
 | APT Super High Roller | 8–9 Agu | ==r:~$10.200== | ~$340K |
 | ==**APT Main Event**== | ==**9–15 Agu**== | ==**~$1.703**== | ==g:**~$1 juta**== |
-| Superstar Challenge | 10–11 Agu | ~$23.800 | — |
+| Superstar Challenge | 14–15 Agu | ~$23.800 | — |
 | Zodiac Classic | 13–14 Agu | ~$2.000 | ~$340K |
 | Mini Main Event | 14–16 Agu | ~$610 | ~$272K |
 | APT High Roller | 15–16 Agu | ~$3.400 | ~$340K |
@@ -126,7 +126,7 @@ Sepanjang festival ini dibagikan **sembilan seat APT Championship (APTC) Taipei 
 
 **Ke mana tiket itu membawa Anda:** APT Championship 2026 berlangsung **13–29 November di Red Space, Taipei**. Main Event Championship digelar **23–27 November, freezeout $10.000 dengan garansi $5.000.000** — event APT terbesar sepanjang tahun. Dan berbeda dengan Paradise City, **Taipei tidak punya pembatasan kewarganegaraan untuk masuk**.
 
-## Cara Kualifikasi via Natural8 (Mulai dari $3,50)
+## Masih Sempat? — Yang Tersisa Cuma Step $20
 
 Natural8 adalah partner online resmi APT dan menjalankan kampanye satelit ==**Journey to APT Incheon 2026**==. Ada dua jalur menuju Main Event:
 
@@ -139,10 +139,12 @@ Natural8 adalah partner online resmi APT dan menjalankan kampanye satelit ==**Jo
 
 </div>
 
-**Jalur satelit berjenjang (rute termurah):**
+:::note[**★Status per 5 Agustus 2026.** **Mega $35 dan kualifikasi OnLive Day 1 sudah tutup pada 2 Agustus.** Satu-satunya rute online yang masih jalan adalah **Step $20 → Mega $200**, dan **Jumat, 7 Agustus, adalah hari terakhirnya.** Angka 52 + 22 = 74 kursi di tabel itu total yang sudah dibagikan, bukan sisa kursi yang masih bisa direbut.]:::
+
+**Jalur berjenjang yang masih terbuka:**
 
 <div style="background:rgba(0,0,0,0.25);border:1px solid rgba(255,255,255,0.10);border-radius:10px;padding:14px 20px;margin:16px 0;font-size:13px;line-height:1.8">
-Step 1 (~$3,50) → menangkan tiket ke Step 2 (~$15) → menangkan tiket ke Mega Satellite (~$50) → menangkan kursi Main Event (senilai ~$1.703)
+Step $20 → menangkan tiket ke Mega Satellite $200 → menangkan kursi Main Event (senilai ~$1.703) · hari terakhir 7 Agustus
 </div>
 
 ==g:Natural8 juga menjalankan bonus payout 8%== untuk peserta yang lolos lewat satelit — kalau Anda memenangkan $10.000 di event live, Anda dapat tambahan $800 di atasnya. Perlu dicatat: **akses ke platform ini ditentukan negara domisili** dan tidak semua negara termasuk — periksa dulu apakah negara Anda muncul di formulir pendaftaran mereka. ⚠️ **Memakai VPN untuk menembus pembatasan wilayah melanggar ketentuan layanan** dan berisiko akun dibekukan beserta saldonya, jadi itu bukan jalan keluar. **Jalur yang selalu terbuka untuk siapa pun adalah mendaftar langsung ke penyelenggara di registrations@apt.poker** dengan membayar buy-in penuh.
@@ -406,7 +408,7 @@ A. Keduanya bisa, tapi ==g:disarankan tiba 2–3 hari lebih awal==. Anda pulih d
 
 1. **APT Incheon 2026** berlangsung ==**7–16 Agustus**== di Paradise City Casino — 10 menit dari Bandara Incheon dengan shuttle gratis, GTD $2,7 juta.
 2. **Main Event** buy-in: ==**~$1.703**== dengan ==g:garansi $1 juta==. Sekitar sepertiga buy-in Main EPT Barcelona dan separuh buy-in Championship WPT Australia.
-3. **Kualifikasi dari $3,50** via satelit berjenjang Natural8. Format OnLive membuat Day 1 bisa dimulai dari rumah.
+3. **Rute online yang tersisa hanya Step $20 → Mega $200**, dan cuma sampai 7 Agustus. Mega $35 dan OnLive sudah tutup 2 Agustus.
 4. **Seoul berjarak 60 mnt** dan merupakan salah satu destinasi wisata terbaik di Asia — ==g:istana, BBQ, kehidupan malam, dan street food tak tertandingi.==
 5. **Hanya untuk warga negara asing** — turnamen ini dibuat untuk pemain internasional. Paspor Anda adalah kartu akses Anda.
 

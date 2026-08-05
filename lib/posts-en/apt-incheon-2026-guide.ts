@@ -4,11 +4,11 @@ export const POST: Post = {
   slug: "apt-incheon-2026-guide",
   title: "APT Incheon 2026 — Poker Festival + Korea Travel Guide",
   seoTitle: "Flying to Korea for Poker? APT Incheon 2026 at Paradise City + Seoul in 3 Days",
-  desc: "APT Incheon 2026 — Aug 7–16, Paradise City Casino near Incheon Airport. $2.7M GTD, Main Event ~$1,700. Qualify from $3.50 via Natural8. Seoul 3-day guide.",
-  tldr: "APT Incheon 2026 runs Aug 7–16 at Paradise City Casino, Incheon — 10 min by free shuttle from Terminal 1. Main Event: KRW 2,500,000 (~$1,703) buy-in, $1M GTD. Qualify from $3.50 via Natural8 step satellites. Foreign nationals only (Korean citizens cannot enter). Seoul is ~1 hour away and is one of the best cities in Asia for food, culture, and nightlife.",
+  desc: "APT Incheon 2026 — Aug 7–16, Paradise City Casino near Incheon Airport. $2.7M GTD, Main Event ~$1,700. Last online qualifier closes Aug 7. Seoul 3-day guide.",
+  tldr: "APT Incheon 2026 runs Aug 7–16 at Paradise City Casino, Incheon — 10 min by free shuttle from Terminal 1. Main Event: KRW 2,500,000 (~$1,703) buy-in, $1M GTD. Natural8's online qualifiers awarded 74 seats in total, but the $35 Mega and the OnLive Day 1 route both closed on Aug 2 — the only path still open is the $20 Step → $200 Mega, and it ends Aug 7. Foreign nationals only (Korean citizens without overseas residency cannot enter). Seoul is ~1 hour away and is one of the best cities in Asia for food, culture, and nightlife.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-07-28",
+  updated: "2026-08-05",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🇰🇷",
@@ -34,7 +34,7 @@ The poker trip and the Korea trip are the same trip. ==g:Paradise City is 10 min
 ---
 
 > **Quick answer**
-> APT Incheon 2026 runs ==**Aug 7–16**== at Paradise City Casino, Incheon. The resort is ==g:10 min by free shuttle from Incheon Airport Terminal 1== — departs every 30 min, no charge. Main Event buy-in: ==**KRW 2,500,000 (~$1,703)**==, $1M guaranteed. Step satellites start from ==g:**$3.50 via Natural8**==. Casino is ==r:foreign nationals only== — Korean citizens cannot enter.
+> APT Incheon 2026 runs ==**Aug 7–16**== at Paradise City Casino, Incheon. The resort is ==g:10 min by free shuttle from Incheon Airport Terminal 1== — departs every 30 min, no charge. Main Event buy-in: ==**KRW 2,500,000 (~$1,703)**==, $1M guaranteed. Natural8's qualifiers awarded 74 seats in total, but ==r:the $35 Mega and the OnLive Day 1 route both closed on Aug 2== — the only path still open is ==g:**the $20 Step → $200 Mega, and it ends Aug 7**==. Casino is ==r:foreign nationals only== — Korean citizens without overseas residency cannot enter.
 
 ---
 
@@ -65,9 +65,9 @@ And for international visitors: ==g:most Western passport holders (USA, Canada, 
 | **Total Guaranteed** | ==g:**Over KRW 4 billion (~$2.7M USD)**== |
 | **Main Event Buy-In** | KRW 2,500,000 ==**($1,703 USD)**== |
 | **Main Event GTD** | ==g:KRW 1,500,000,000 (~$1M USD)== |
-| **Cheapest Satellite Entry** | ==g:**$3.50 via Natural8**== |
+| **Online Route Still Open** | ==g:**$20 Step → $200 Mega — ends Aug 7**== |
 | **Sponsor** | Natural8 |
-| **Who Can Enter** | ==r:Foreign nationals only — Korean citizens cannot enter== |
+| **Who Can Enter** | ==r:Foreign nationals only — Korean citizens without overseas residency cannot enter== |
 | **Age Requirement** | 19+ with valid photo ID |
 | **Registration** | registrations@apt.poker |
 
@@ -85,7 +85,7 @@ And for international visitors: ==g:most Western passport holders (USA, Canada, 
 | Mystery Bounty Hunter | Aug 8–9 | ~$610 | ~$204K |
 | APT Super High Roller | Aug 8–9 | ==r:~$10,200== | ~$340K |
 | ==**APT Main Event**== | ==**Aug 9–15**== | ==**~$1,703**== | ==g:**~$1M**== |
-| Superstar Challenge | Aug 10–11 | ~$23,800 | — |
+| Superstar Challenge | Aug 14–15 | ~$23,800 | — |
 | Zodiac Classic | Aug 13–14 | ~$2,000 | ~$340K |
 | Mini Main Event | Aug 14–16 | ~$610 | ~$272K |
 | APT High Roller | Aug 15–16 | ~$3,400 | ~$340K |
@@ -125,7 +125,7 @@ Nine seats to the **APT Championship (APTC) Taipei 2026** are given away across 
 
 ---
 
-## How to Qualify via Natural8 (From $3.50)
+## How to Qualify via Natural8 — Which Satellites Are Still Open?
 
 Natural8 is APT's official online partner and runs the ==**Journey to APT Incheon 2026**== satellite campaign. Two paths to the Main Event:
 
@@ -138,15 +138,17 @@ Natural8 is APT's official online partner and runs the ==**Journey to APT Incheo
 
 </div>
 
-**Step satellite path (cheapest route):**
+:::note[**★Status as of Aug 5, 2026.** **The $35 Mega Satellite and the OnLive Day 1 qualifiers closed on Aug 2.** The only online route still running is the **$20 Step → $200 Mega**, and **Friday Aug 7 is the last day for it**. The 52 + 22 = 74 seats above are the totals already awarded, not seats still available.]:::
+
+**The step path that is still open:**
 
 <div style="background:rgba(0,0,0,0.25);border:1px solid rgba(255,255,255,0.10);border-radius:10px;padding:14px 20px;margin:16px 0;font-size:13px;line-height:1.8">
-Step 1 (~$3.50) → win ticket to Step 2 (~$15) → win ticket to Mega Satellite (~$50) → win Main Event seat (~$1,703 value)
+$20 Step Satellite → win ticket to $200 Mega Satellite → win Main Event seat (~$1,703 value) · last running day Aug 7
 </div>
 
 ==g:Natural8 also runs an 8% payout bonus== for satellite qualifiers — if you win $10,000 at the live event, you get an extra $800 on top. **One check before you build a plan around this.** Natural8 is the GGNetwork skin for Asia-Pacific, and access depends on your country of residence — its own terms say that if your country is not in the registration list, it cannot accept you. Some markets are routed to the main GGPoker skin instead. ⚠️ A VPN workaround breaks the terms and risks your account and balance. **The route open to everyone is registering directly with the organiser at registrations@apt.poker and paying the full buy-in.**
 
-> **OnLive tip:** The OnLive route lets you play Day 1 from your home time zone and only fly to Korea if you survive to Day 3. ==g:If your travel budget is tight, this is the smarter qualifier path.==
+> **What OnLive was:** the route let you play Day 1 from your home time zone and only fly to Korea if you survived to Day 3 — the smarter path when the travel budget was tight. ==r:It closed on Aug 2, so for this edition it is no longer an option== — noted here because it is worth watching for at the next APT stop.
 
 **There's a third route most guides skip — Country Exclusives.** Natural8 runs country-restricted qualifiers that award **six live packages**, and a package is not just a seat: it's the **Main Event entry (~$1,684) plus roughly $500 in travel expenses**. Ordinary satellites give you the seat and leave the flight to you. Eligibility is set by country of residence, so check whether your country's bracket is open in the tournament lobby before you grind the general path.
 
@@ -175,7 +177,7 @@ Before you book, it helps to know what table you'll be sitting at. APT publishes
 
 ==r:Japan and China alone are 61% of the field.== Twenty-seven countries were represented, but this is emphatically an **East Asian tournament** — if you're flying in from North America or Europe you'll be a small minority at the table. Practically, that means expect more Japanese and Mandarin at the table than English, and expect the floor to handle it routinely.
 
-**2025 by the numbers:** 1,281 entries from **754 unique players** (the rest were re-entries), building a **KRW 2,766,660,000 (~$2.0M)** prize pool — the largest Main Event APT had ever run in Korea at that point. China's **Junjie He** won it for ₩380,520,000 (~$275,140) plus an APT Championship seat, after a three-way ICM deal with Kouki Okumiya and Kuroda Kiyoto.
+**2025 by the numbers:** 1,281 entries from **754 unique players** (the rest were re-entries), building a **KRW 2,766,960,000 (~$2.0M)** prize pool — the largest Main Event APT had ever run in Korea at that point. China's **Junjie He** won it for ₩380,520,000 (~$275,140) plus an APT Championship seat, after a three-way ICM deal with Kouki Okumiya and Kuroda Kiyoto.
 
 > **Read the entry count correctly.** "1,281 entries" is not 1,281 people — it's 754 players plus re-entries. Re-entry fields look bigger than they are.
 
@@ -395,7 +397,7 @@ A. Both work, but ==g:arriving 2–3 days early is recommended==. You recover fr
 
 1. **APT Incheon 2026** runs ==**Aug 7–16**== at Paradise City Casino — 10 min from Incheon Airport by free shuttle, $2.7M GTD.
 2. **Main Event** buy-in: ==**~$1,703**== with ==g:$1M guaranteed==. Around a third of the EPT Barcelona Main and half the WPT Australia Championship buy-in.
-3. **Qualify from $3.50** via Natural8 step satellites. OnLive format lets you start Day 1 from home.
+3. **The last online route is the $20 Step → $200 Mega**, and it runs only through Aug 7. The $35 Mega and OnLive qualifiers closed on Aug 2.
 4. **Seoul is 60 min away** and is one of Asia's best travel destinations — ==g:palaces, BBQ, nightlife, and unbeatable street food.==
 5. **Foreign nationals only** — this tournament was built for international players. Your passport is your access card.
 
@@ -412,7 +414,7 @@ Every figure above was checked against primary sources. **Verified: July 28, 202
 - **APT Championship 2026** — [Full APTC 2026 Schedule](https://www.theasianpokertour.com/news/apt-announces-full-aptc2026-schedule) · Nov 13–29, Taipei; Main Event Nov 23–27, $10,000 buy-in, $5,000,000 GTD
 - **20th anniversary** — [APT Gets Ready to Celebrate 20 Years](https://www.theasianpokertour.com/news/apt-2026-schedule) · *"with the APT turning twenty in 2026"*
 - **Satellites & packages** — [Natural8 — Journey to APT Incheon 2026](https://www.natural8.com/en/blog/journey-to-apt-incheon-2026) · [Country Exclusives 2026](https://www.natural8.com/en/poker/tournaments/apt-incheon-country-exclusives-2026)
-- **2025 field & result (organizer's own report)** — [APT — China's Junjie He Wins APT's Largest Korean Main Event](https://www.theasianpokertour.com/news/china-s-junjie-he-wins-apt-s-largest-korean-main-event-for-krw-380-5-m-usd-275-k-plus-apt-championship-seat-worth-krw-13-8-m-usd-10-k) · 1,281 entries from 754 unique players · KRW 2,766,660,000 prize pool · full top-10 country breakdown
+- **2025 field & result (organizer's own report)** — [APT — China's Junjie He Wins APT's Largest Korean Main Event](https://www.theasianpokertour.com/news/china-s-junjie-he-wins-apt-s-largest-korean-main-event-for-krw-380-5-m-usd-275-k-plus-apt-championship-seat-worth-krw-13-8-m-usd-10-k) · 1,281 entries from 754 unique players · KRW 2,766,960,000 prize pool · full top-10 country breakdown
 - **Casino entry rules** — [Paradise City official](https://www.p-city.com/front/contents/casino/casinoInfo)
 
 > ⚠️ **The festival starts August 7.** Satellite seat counts, late-registration cutoffs and shuttle timetables can still change. Re-check the APT event page and the Natural8 lobby the day you register.

@@ -4,11 +4,11 @@ export const POST: Post = {
   slug: "apt-incheon-2026-guide",
   title: "APT Incheon 2026 — Festival de Pôquer + Guia de Viagem pela Coreia",
   seoTitle: "Voar pra Coreia pra jogar pôquer? APT Incheon 2026 no Paradise City + Seul em 3 dias",
-  desc: "APT Incheon 2026 — 7 a 16 de ago, Paradise City perto do Aeroporto de Incheon. $2.7M GTD, Main Event ~$1.703. Classifique a partir de $3.50 pela Natural8.",
-  tldr: "O APT Incheon 2026 rola de 7 a 16 de agosto no Paradise City Casino, em Incheon — 10 min de shuttle grátis a partir do Terminal 1. Main Event: buy-in de KRW 2.500.000 (~$1.703), $1M GTD. Classifique a partir de $3.50 pelos step satellites da Natural8. Só estrangeiros (cidadãos coreanos não podem entrar). Seul fica a ~1 hora e é uma das melhores cidades da Ásia para comida, cultura e vida noturna.",
+  desc: "APT Incheon 2026 — 7 a 16 de ago, Paradise City perto do Aeroporto de Incheon. $2.7M GTD, Main Event ~$1.703. Última via online: Step $20 → Mega $200, encerra 7 de ago.",
+  tldr: "O APT Incheon 2026 rola de 7 a 16 de agosto no Paradise City Casino, em Incheon — 10 min de shuttle grátis a partir do Terminal 1. Main Event: buy-in de KRW 2.500.000 (~$1.703), $1M GTD. Os classificatórios online da Natural8 distribuíram 74 vagas no total, mas o Mega de $35 e a rota OnLive Day 1 encerraram em 2 de agosto: a única via ainda aberta é o Step de $20 → Mega de $200, e ela termina em 7 de agosto. Só estrangeiros (cidadãos coreanos sem residência no exterior não podem entrar). Seul fica a ~1 hora e é uma das melhores cidades da Ásia para comida, cultura e vida noturna.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-07-28",
+  updated: "2026-08-05",
   masterUpdated: "2026-07-28",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -35,7 +35,7 @@ A viagem de pôquer e a viagem pela Coreia são a mesma viagem. ==g:O Paradise C
 ---
 
 > **Resposta rápida**
-> O APT Incheon 2026 rola de ==**7 a 16 de ago**== no Paradise City Casino, em Incheon. O resort fica a ==g:10 min de shuttle grátis do Terminal 1 do Aeroporto de Incheon== — sai a cada 30 min, sem custo. Buy-in do Main Event: ==**KRW 2.500.000 (~$1.703)**==, $1M garantido. Os step satellites começam a partir de ==g:**$3.50 pela Natural8**==. O cassino é ==r:só para estrangeiros== — cidadãos coreanos não podem entrar.
+> O APT Incheon 2026 rola de ==**7 a 16 de ago**== no Paradise City Casino, em Incheon. O resort fica a ==g:10 min de shuttle grátis do Terminal 1 do Aeroporto de Incheon== — sai a cada 30 min, sem custo. Buy-in do Main Event: ==**KRW 2.500.000 (~$1.703)**==, $1M garantido. Os step satellites começam a partir de ==g:**$3.50 pela Natural8**==. ==r:O Mega de $35 e o OnLive encerraram em 2 de agosto== — só continua aberto o ==g:**Step de $20 → Mega de $200, até 7 de agosto**==. O cassino é ==r:só para estrangeiros== — cidadãos coreanos sem residência no exterior não podem entrar.
 
 ---
 
@@ -66,9 +66,9 @@ E pra visitantes internacionais: ==g:a maioria dos portadores de passaporte ocid
 | **Total Garantido** | ==g:**Mais de KRW 4 bilhões (~$2.7M USD)**== |
 | **Buy-In do Main Event** | KRW 2.500.000 ==**($1.703 USD)**== |
 | **GTD do Main Event** | ==g:KRW 1.500.000.000 (~$1M USD)== |
-| **Entrada de Satellite Mais Barata** | ==g:**$3.50 pela Natural8**== |
+| **Rota Online Ainda Aberta** | ==g:**Step $20 → Mega $200 (encerra 7 de ago)**== |
 | **Patrocinador** | Natural8 |
-| **Quem Pode Entrar** | ==r:Só estrangeiros — cidadãos coreanos não podem entrar== |
+| **Quem Pode Entrar** | ==r:Só estrangeiros — cidadãos coreanos sem residência no exterior não podem entrar== |
 | **Idade Mínima** | 19+ com documento de foto válido |
 | **Inscrição** | registrations@apt.poker |
 
@@ -86,7 +86,7 @@ E pra visitantes internacionais: ==g:a maioria dos portadores de passaporte ocid
 | Mystery Bounty Hunter | 8–9 de ago | ~$610 | ~$204K |
 | APT Super High Roller | 8–9 de ago | ==r:~$10.200== | ~$340K |
 | ==**APT Main Event**== | ==**9–15 de ago**== | ==**~$1.703**== | ==g:**~$1M**== |
-| Superstar Challenge | 10–11 de ago | ~$23.800 | — |
+| Superstar Challenge | 14–15 de ago | ~$23.800 | — |
 | Zodiac Classic | 13–14 de ago | ~$2.000 | ~$340K |
 | Mini Main Event | 14–16 de ago | ~$610 | ~$272K |
 | APT High Roller | 15–16 de ago | ~$3.400 | ~$340K |
@@ -126,7 +126,7 @@ Ao longo do festival são distribuídos **nove assentos para o APT Championship 
 
 **Pra onde esse ticket te leva:** o APT Championship 2026 acontece de **13 a 29 de novembro no Red Space, em Taipei**. O Main Event do Championship é de **23 a 27 de novembro, um freezeout de $10.000 com $5.000.000 garantidos** — o maior evento do ano da APT. E Taipei, diferente do Paradise City, **não tem restrição de nacionalidade na entrada**.
 
-## Como se Classificar pela Natural8 (A Partir de $3.50)
+## Ainda dá tempo? — Só sobrou o Step de $20
 
 A Natural8 é a parceira online oficial do APT e roda a campanha de satellites ==**Journey to APT Incheon 2026**==. Dois caminhos pro Main Event:
 
@@ -139,10 +139,12 @@ A Natural8 é a parceira online oficial do APT e roda a campanha de satellites =
 
 </div>
 
-**Caminho dos step satellites (rota mais barata):**
+:::note[**★Situação em 5 de agosto de 2026.** **O Mega de $35 e os classificatórios OnLive Day 1 encerraram em 2 de agosto.** A única rota online ainda aberta é o **Step de $20 → Mega de $200**, e a **sexta-feira, 7 de agosto, é o último dia dela**. As 52 + 22 = 74 vagas da tabela são o total já distribuído, não vagas restantes.]:::
+
+**O caminho de steps que continua aberto:**
 
 <div style="background:rgba(0,0,0,0.25);border:1px solid rgba(255,255,255,0.10);border-radius:10px;padding:14px 20px;margin:16px 0;font-size:13px;line-height:1.8">
-Step 1 (~$3.50) → ganhe o ticket pro Step 2 (~$15) → ganhe o ticket pro Mega Satellite (~$50) → ganhe a vaga no Main Event (valor ~$1.703)
+Step de $20 → ganhe o ticket pro Mega Satellite de $200 → ganhe a vaga no Main Event (valor ~$1.703) · último dia: 7 de agosto
 </div>
 
 ==g:A Natural8 também roda um bônus de 8% sobre a premiação== para os classificados via satellite — se você ganhar $10.000 no evento ao vivo, recebe $800 extras por cima. **Uma conferida antes de montar o plano em cima disso.** A Natural8 é o skin Ásia-Pacífico da rede GG e **o acesso depende do seu país de residência** — pelos próprios termos, se o seu país não estiver na lista de cadastro, eles não podem te aceitar. Jogadores do Brasil normalmente são direcionados pro skin principal **GGPoker**, que tem site e suporte em português. ⚠️ Contornar com VPN viola os termos e coloca conta e saldo em risco. **A rota aberta pra todo mundo é se inscrever direto com o organizador em registrations@apt.poker, pagando o buy-in cheio.**
@@ -400,7 +402,7 @@ A. Os dois funcionam, mas ==g:é recomendado chegar 2–3 dias antes==. Você se
 
 1. **APT Incheon 2026** rola de ==**7 a 16 de ago**== no Paradise City Casino — 10 min do Aeroporto de Incheon de shuttle grátis, $2.7M GTD.
 2. **Main Event** buy-in: ==**~$1.703**== com ==g:$1M garantido==. Cerca de um terço do Main do EPT Barcelona e metade do buy-in do Championship do WPT Australia.
-3. **Classifique a partir de $3.50** pelos step satellites da Natural8. O formato OnLive te deixa começar o Day 1 de casa.
+3. **A única rota online que restou é o Step de $20 → Mega de $200**, e só até 7 de agosto. O Mega de $35 e o OnLive encerraram em 2 de agosto.
 4. **Seul fica a 60 min** e é um dos melhores destinos de viagem da Ásia — ==g:palácios, churrasco, vida noturna e comida de rua imbatível.==
 5. **Só estrangeiros** — esse torneio foi feito pra jogadores internacionais. O seu passaporte é o seu cartão de acesso.
 
