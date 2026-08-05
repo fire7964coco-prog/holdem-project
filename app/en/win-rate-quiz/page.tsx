@@ -22,7 +22,7 @@ export const metadata: Metadata = {
    */
   title: { absolute: "Poker Equity Simulator — Watch the Odds Swing Card by Card | HoldemMaster" },
   description:
-    "Deal 2-4 random hands and see exactly how each player's equity moves from preflop to the river. Every percentage is calculated, not estimated.",
+    "Deal a 6-max hand and see exactly how each player's equity moves from preflop to the river. Every percentage is calculated, not estimated.",
   robots: { index: true, follow: true },
   alternates: {
     canonical: `${SITE}/en/win-rate-quiz`,
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     url: `${SITE}/en/win-rate-quiz`,
     title: "Poker Equity Simulator — Watch the Odds Swing Card by Card | HoldemMaster",
     description:
-      "See how one card changes everyone's chances. 2-4 players, exact equity from preflop to river.",
+      "See how one card changes everyone's chances. 6-max table, exact equity from preflop to river.",
     siteName: "HoldemMaster",
     locale: "en_US",
     images: [{ url: "/opengraph.jpg", width: 1200, height: 630 }],
