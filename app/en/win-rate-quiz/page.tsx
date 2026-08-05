@@ -22,7 +22,7 @@ export const metadata: Metadata = {
    */
   title: { absolute: "Poker Equity Simulator — Find Out Where You Should Have Folded | HoldemMaster" },
   description:
-    "Play a 6-max hand blind, like real poker. See your equity and the pot odds you need on every street, then review exactly where folding became the right call.",
+    "Play a 6-max hand blind, like real poker. See your equity on every street and the pot odds you need from the flop on, then review exactly where folding became the right call.",
   robots: { index: true, follow: true },
   alternates: {
     canonical: `${SITE}/en/win-rate-quiz`,
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     url: `${SITE}/en/win-rate-quiz`,
     title: "Poker Equity Simulator — Find Out Where You Should Have Folded | HoldemMaster",
     description:
-      "Their cards stay hidden, just like real poker. Track your equity and pot odds street by street, then review where you should have folded.",
+      "Their cards stay hidden, just like real poker. Track your equity street by street and your pot odds from the flop on, then review where you should have folded.",
     siteName: "HoldemMaster",
     locale: "en_US",
     images: [{ url: "/opengraph.jpg", width: 1200, height: 630 }],

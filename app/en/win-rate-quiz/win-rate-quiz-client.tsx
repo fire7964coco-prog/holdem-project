@@ -26,10 +26,11 @@ const EN_UI: QuizUI = {
   myEquity: "Your equity",
   vsOpponents: (n) => (n === 0 ? "no one left" : `against ${n} opponent${n > 1 ? "s" : ""}`),
   basisRandom: "vs random hands",
-  basisRange: "vs hands that kept going",
+  basisRange: "vs hands matching their actions",
 
   potOddsTitle: "Pot odds — the equity a call needs to break even",
   potLabel: "Pot",
+  potBeforeLabel: "Pot (before betting)",
   toCallLabel: "To call",
   requiredLabel: "Equity needed",
   noBet: "Nobody bet. You see the next card for free.",
@@ -66,9 +67,14 @@ const EN_UI: QuizUI = {
         <li>Anything else → <b className="text-foreground">fold</b> (mucked, just like live play)</li>
       </ul>
       <p className="mb-2">
+        When anyone raises, every player still in — one-pair hands and draws included — calls that pot-sized
+        amount, and a bet bigger than the remaining stack is capped at an all-in.
+      </p>
+      <p className="mb-2">
         <b className="text-foreground">Your equity is calculated as if you cannot see their cards.</b> From the
-        flop on, the range is every hand that would not have folded under the rules above — so the players who
-        fold on screen also drop out of the math. Only preflop treats opponents as fully random.
+        flop on, each opponent&rsquo;s range is every hand that would have taken exactly the actions you saw —
+        after a raise, only two pair or better remains. The players who fold on screen also drop out of the
+        math. Only preflop treats opponents as fully random.
       </p>
       <p className="mb-2">
         <b className="text-foreground">The verdict is pure pot odds.</b> Implied odds, opponent tendencies and

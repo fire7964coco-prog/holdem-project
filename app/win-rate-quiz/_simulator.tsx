@@ -51,6 +51,8 @@ export interface QuizUI {
   /** 팟오즈 박스 */
   potOddsTitle: string;
   potLabel: string;
+  /** 팟오즈 박스의 팟 라벨 — 중앙 팟(potAfter)과 달리 베팅 전 값(potBefore)이라 구분해 부른다 */
+  potBeforeLabel: string;
   toCallLabel: string;
   requiredLabel: string;
   noBet: string;
@@ -348,6 +350,8 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
   }
 
   const liveOpponents = rec.opponentsBefore - rec.foldedSlots.length;
+  /** 판정줄 자릿수 — 1자리 반올림으로 두 값이 같아지면("25.0% < 25.0%") 2자리로 늘린다. 판정 자체는 전정밀 비교 */
+  const oddsDigits = rec.required !== null && rec.equity.toFixed(1) === rec.required.toFixed(1) ? 2 : 1;
 
   return (
     <>
@@ -428,15 +432,15 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
         ) : (
           <>
             <p className="text-xs text-muted-foreground leading-relaxed">
-              {ui.potLabel} <b className="text-foreground tabular-nums">{rec.potBefore.toLocaleString()}</b>
+              {ui.potBeforeLabel} <b className="text-foreground tabular-nums">{rec.potBefore.toLocaleString()}</b>
               {" · "}{ui.toCallLabel} <b className="text-foreground tabular-nums">{rec.toCall.toLocaleString()}</b>
             </p>
             <p className="text-xs mt-1 tabular-nums text-muted-foreground">
               {ui.requiredLabel} = {rec.toCall.toLocaleString()} ÷ {rec.potAfter.toLocaleString()} ={" "}
-              <b className="text-foreground">{rec.required!.toFixed(1)}%</b>
+              <b className="text-foreground">{rec.required!.toFixed(oddsDigits)}%</b>
             </p>
             <p className="text-sm font-black mt-1.5" style={{ color: rec.verdict === "call" ? GOOD : BAD }}>
-              {rec.equity.toFixed(1)}% {rec.verdict === "call" ? "≥" : "<"} {rec.required!.toFixed(1)}% →{" "}
+              {rec.equity.toFixed(oddsDigits)}% {rec.verdict === "call" ? "≥" : "<"} {rec.required!.toFixed(oddsDigits)}% →{" "}
               {rec.verdict === "call" ? ui.verdictCall : ui.verdictFold}
             </p>
             {rec.verdict === "fold" && street < 3 && (

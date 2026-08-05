@@ -29,10 +29,11 @@ const KO_UI: QuizUI = {
   myEquity: "내 승률",
   vsOpponents: (n) => (n === 0 ? "상대 없음" : `상대 ${n}명 상대로`),
   basisRandom: "상대 무작위 기준",
-  basisRange: "안 죽은 패 기준",
+  basisRange: "액션 일치 레인지 기준",
 
   potOddsTitle: "팟오즈 — 콜이 본전이 되는 승률",
   potLabel: "팟",
+  potBeforeLabel: "팟(베팅 전)",
   toCallLabel: "콜",
   requiredLabel: "필요 승률",
   noBet: "아무도 걸지 않았습니다. 공짜로 다음 카드를 봅니다.",
@@ -69,8 +70,13 @@ const KO_UI: QuizUI = {
         <li>그 외 → <b className="text-foreground">폴드</b> (실전처럼 패는 안 보여줍니다)</li>
       </ul>
       <p className="mb-2">
+        누군가 레이즈한 스트리트에서는 남은 상대 전원이(원페어·드로우도) 그 팟 사이즈 금액을 그대로 콜하고,
+        베팅이 남은 스택보다 크면 올인으로 잘립니다.
+      </p>
+      <p className="mb-2">
         <b className="text-foreground">내 승률은 상대 패를 모른다는 전제로 계산합니다.</b> 플랍부터는
-        &ldquo;위 규칙에서 폴드하지 않았을 패&rdquo; 전체를 상대 레인지로 봅니다. 화면에서 폴드한 사람이 계산에서도
+        상대가 보여준 액션(레이즈·콜)을 그대로 했을 패 전체를 그 상대의 레인지로 봅니다 — 레이즈를 봤다면
+        투페어 이상만 남는 식입니다. 화면에서 폴드한 사람이 계산에서도
         빠지므로 보이는 것과 근거가 어긋나지 않습니다. 프리플랍만 상대를 무작위로 봅니다.
       </p>
       <p className="mb-2">
@@ -104,7 +110,7 @@ export default function WinRateQuizClient() {
     <>
       <SEO
         title="홀덤 승률 시뮬레이터 — 어디서 끊었어야 했는지 복기까지"
-        description="상대 패를 모르는 실전 그대로, 프리플랍부터 리버까지 내 승률과 팟오즈 필요 승률을 단계별로 보여주고 마지막에 어디서 폴드했어야 하는지 복기해주는 홀덤 승률 시뮬레이터."
+        description="상대 패를 모르는 실전 그대로, 단계별 내 승률과 플랍부터의 팟오즈 필요 승률을 보여주고 마지막에 어디서 폴드했어야 하는지 복기해주는 홀덤 승률 시뮬레이터."
         path="/win-rate-quiz"
       />
       <div className="min-h-screen max-w-md md:max-w-2xl mx-auto px-3 py-6">
