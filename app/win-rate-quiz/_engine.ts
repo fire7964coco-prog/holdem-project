@@ -84,7 +84,20 @@ export const RULE = {
  * ★이게 이 설계의 핵심이다. 상대를 폴드시키는 그 규칙이 곧 **상대 레인지**가 되므로,
  *   화면에 보이는 폴드와 승률 계산의 근거가 저절로 일치한다. 별도 레인지 표가 필요 없다.
  */
-function eligibleHoles(deadKeys: Set<number>, boards: NCard[][]): NCard[][] {
+export interface ActionStep {
+  board: NCard[];
+  action: Action;
+}
+
+/**
+ * 이 상대가 **관측된 액션을 그대로 했을** 홀카드 조합 전부.
+ *
+ * ★2026-08-05 정정 — 처음엔 "폴드만 안 했으면 통과"로 만들었는데, 그러면
+ *   **상대가 팟사이즈로 레이즈해도(=투페어 이상이라고 말해도) 원페어·드로우가 레인지에 남는다.**
+ *   실측 결과 내 승률이 최대 +65%p 부풀려졌고 콜/폴드 판정이 정반대로 뒤집혔다.
+ *   레이즈·콜은 폴드와 똑같이 **공개된 정보**다. 버리면 안 된다.
+ */
+function eligibleHoles(deadKeys: Set<number>, history: ActionStep[]): NCard[][] {
   const deck: NCard[] = [];
   for (let r = 2; r <= 14; r++)
     for (let s = 0; s < 4; s++) if (!deadKeys.has(r * 4 + s)) deck.push([r, s]);
@@ -93,8 +106,8 @@ function eligibleHoles(deadKeys: Set<number>, boards: NCard[][]): NCard[][] {
     for (let j = i + 1; j < deck.length; j++) {
       const hole = [deck[i], deck[j]];
       let ok = true;
-      for (const b of boards) {
-        if (opponentAction(hole, b) === "fold") { ok = false; break; }
+      for (const step of history) {
+        if (opponentAction(hole, step.board) !== step.action) { ok = false; break; }
       }
       if (ok) out.push(hole);
     }
@@ -102,20 +115,28 @@ function eligibleHoles(deadKeys: Set<number>, boards: NCard[][]): NCard[][] {
   return out;
 }
 
+/** 메인스레드를 잠깐 놓아준다 — 안 하면 계산이 1.6초짜리 long task가 되어 화면이 얼어붙는다 */
+const yieldToMain = () => new Promise<void>((r) => setTimeout(r, 0));
+
+/** 한 번에 돌리는 표본 수 (이 단위마다 메인스레드에 양보한다) */
+const CHUNK = 4000;
+
 // ── 내 승률 (상대 패를 모르는 상태) ───────────────────────────────────────────
 
 /**
- * 상대 `opponents`명의 홀카드가 미지수일 때 내 승률 %. 무승부는 절반으로 센다.
+ * 상대들의 홀카드가 미지수일 때 내 승률 %. 무승부는 절반으로 센다.
  *
- * @param pool  상대 홀카드 후보. null이면 **무작위**(프리플랍), 아니면 규칙을 통과한 레인지
+ * @param pools  **상대별** 홀카드 후보 레인지. null이면 전원 무작위(프리플랍).
+ *               상대마다 액션이 다르므로(한 명은 레이즈, 한 명은 콜) 레인지도 각각이다.
+ * @param onChunk 표본 CHUNK개마다 불린다 — 메인스레드 양보용
  */
-export function heroEquity(
+export async function heroEquity(
   heroCards: Card[],
   boardCards: Card[],
   opponents: number,
-  pool: NCard[][] | null,
+  pools: NCard[][][] | null,
   samples: number
-): number {
+): Promise<number> {
   const h = heroCards.map(toNum);
   const b = boardCards.map(toNum);
   const dead = new Set([...h, ...b].map(keyOf));
@@ -135,15 +156,18 @@ export function heroEquity(
   const bag = [...deck];
 
   for (let k = 0; k < samples; k++) {
+    // 메인스레드 양보 — 이게 없으면 전체가 하나의 long task가 되어 화면이 얼어붙는다
+    if (k > 0 && k % CHUNK === 0) await yieldToMain();
     used.clear();
     let ok = true;
 
-    // 1) 상대 홀카드 배정
-    if (pool) {
+    // 1) 상대 홀카드 배정 — 상대마다 자기 액션에 맞는 레인지에서 뽑는다
+    if (pools) {
       for (let o = 0; o < opponents; o++) {
+        const pool = pools[o];
         let tries = 0;
         let picked: NCard[] | null = null;
-        while (tries++ < 40) {
+        while (tries++ < 200) {
           const cand = pool[(Math.random() * pool.length) | 0];
           const k0 = keyOf(cand[0]), k1 = keyOf(cand[1]);
           if (used.has(k0) || used.has(k1)) continue;
@@ -270,12 +294,14 @@ export const SAMPLES = { preflop: 60000, postflop: 30000 } as const;
  * @param oppSlots   각 상대의 좌석 번호
  * @param board      보드 5장
  */
-export function runHand(
+export async function runHand(
   heroHand: Card[],
   oppHands: Card[][],
   oppSlots: number[],
-  board: Card[]
-): HandResult {
+  board: Card[],
+  /** 스트리트가 하나 끝날 때마다 부른다 — 사용자가 프리플랍을 읽는 동안 나머지가 계산된다 */
+  onStreet?: (streets: StreetRecord[]) => void
+): Promise<HandResult> {
   const hN = heroHand.map(toNum);
   const oppN = oppHands.map((h) => h.map(toNum));
   const bN = board.map(toNum);
@@ -285,7 +311,8 @@ export function runHand(
   let invested = ANTE;
   let remaining = STACK - ANTE; // 살아 있는 사람 모두가 같은 스택을 갖는다
   const streets: StreetRecord[] = [];
-  const boardsSoFar: NCard[][] = [];
+  /** 상대별 액션 이력 — 이게 곧 그 사람의 레인지다 */
+  const history: ActionStep[][] = oppHands.map(() => []);
   let wonByFoldAt: HandResult["wonByFoldAt"] = null;
 
   for (let s = 0 as 0 | 1 | 2 | 3; s <= 3; s = (s + 1) as 0 | 1 | 2 | 3) {
@@ -303,6 +330,7 @@ export function runHand(
       for (const i of live) {
         const a = opponentAction(oppN[i], boardNow);
         actionBySlot[oppSlots[i]] = a;
+        history[i].push({ board: boardNow, action: a });
         if (a === "fold") { foldedSlots.push(oppSlots[i]); continue; }
         stay.push(i);
         if (a === "raise") strongest = "raise";
@@ -316,14 +344,15 @@ export function runHand(
     // ── 내 승률: 상대 패를 모른다는 전제로 계산한다 (실제 딜된 패는 쓰지 않는다)
     let equity = 0;
     const basis: "random" | "range" = s === 0 ? "random" : "range";
-    if (s > 0) boardsSoFar.push(boardNow);
     if (live.length) {
       if (s === 0) {
-        equity = heroEquity(heroHand, [], live.length, null, SAMPLES.preflop);
+        equity = await heroEquity(heroHand, [], live.length, null, SAMPLES.preflop);
       } else {
+        // ★상대마다 자기 액션 이력에 맞는 레인지를 만든다.
+        //   한 명이 레이즈하고 한 명이 콜했으면 두 사람의 레인지는 서로 다르다.
         const dead = new Set([...hN, ...boardNow].map(keyOf));
-        const pool = eligibleHoles(dead, boardsSoFar);
-        equity = heroEquity(heroHand, board.slice(0, shown), live.length, pool, SAMPLES.postflop);
+        const pools = live.map((i) => eligibleHoles(dead, history[i]));
+        equity = await heroEquity(heroHand, board.slice(0, shown), live.length, pools, SAMPLES.postflop);
       }
     } else {
       equity = 100; // 전원 폴드 = 팟은 내 것
@@ -355,6 +384,7 @@ export function runHand(
       basis,
       verdict: required === null ? "free" : equity >= required ? "call" : "fold",
     });
+    onStreet?.([...streets]);
 
     if (!live.length) { wonByFoldAt = s; break; }
   }

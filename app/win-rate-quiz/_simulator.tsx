@@ -4,7 +4,7 @@ import { useState, useMemo, useEffect, useCallback, type ReactNode } from "react
 import { motion } from "framer-motion";
 import { describeHand, handCategory, winnersAt, type Card as QuizCard, type HandNames } from "./_equity";
 import { makeTableSim, positionAt, type TableSim } from "./_table";
-import { runHand, type HandResult, type Action } from "./_engine";
+import { runHand, type HandResult, type StreetRecord, type Action } from "./_engine";
 
 /**
  * 승률 시뮬레이터 — **실전 모드**. 한국어판·영어판이 공유한다.
@@ -185,32 +185,59 @@ function Seat({ pos, isBtn, isHero, heroWord, cards, faceDown, folded, isWinner,
 // ── 본체 ────────────────────────────────────────────────────────────────────
 export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
   const [preflopCount, setPreflopCount] = useState(3);
+  /** 새 판을 돌리는 트리거 — `sim`을 의존성으로 쓰면 계산이 스스로 취소된다(아래 effect 주석) */
+  const [handId, setHandId] = useState(0);
   const [sim, setSim] = useState<TableSim | null>(null);
+  /** 계산이 끝난 스트리트들 (진행 중에는 일부만 차 있다) */
+  const [streets, setStreets] = useState<StreetRecord[]>([]);
+  /** 전부 끝났을 때만 채워진다 — 복기·쇼다운은 이게 있어야 한다 */
   const [result, setResult] = useState<HandResult | null>(null);
   const [street, setStreet] = useState(0);
   const [reveal, setReveal] = useState(false);
   const [showRule, setShowRule] = useState(false);
 
+  /**
+   * ★계산은 스트리트 단위로 흘려보낸다 (2026-08-05 성능 검수에서 고침).
+   *   한 번에 다 돌리면 **1.4~1.6초짜리 단일 long task**가 되어 화면이 통째로 얼어붙었다
+   *   (중저가 모바일이면 4~6초). MC 루프가 표본 CHUNK개마다 메인스레드를 놓아주고,
+   *   프리플랍이 나오는 즉시 화면에 뿌린 뒤 나머지를 이어서 계산한다.
+   *
+   * 🔴 **`sim`을 이 effect의 의존성으로 두지 말 것.** 안에서 `setSim`을 부르므로 의존성이 바뀌고,
+   *   React가 이전 effect를 정리하며 `cancelled = true`를 세워 **계산 결과가 통째로 버려진다**
+   *   (화면이 "계산 중…"에서 영영 멈춘다). 동기 코드일 땐 안 드러나다가 async로 바꾸며 터졌다.
+   *   새 판은 `handId`를 올려서 돌린다.
+   */
   useEffect(() => {
-    if (sim !== null) return;
-    const t = setTimeout(() => {
-      const s = makeTableSim(preflopCount, ui.names);
-      const oppSlots = s.activeSlots.slice(1);
-      const r = runHand(s.hands[0], s.hands.slice(1), oppSlots, s.board);
+    let cancelled = false;
+    const t = setTimeout(async () => {
+      const s = makeTableSim(preflopCount);
+      if (cancelled) return;
       setSim(s);
-      setResult(r);
+      const oppSlots = s.activeSlots.slice(1);
+      const r = await runHand(s.hands[0], s.hands.slice(1), oppSlots, s.board, (partial) => {
+        if (!cancelled) setStreets(partial);
+      });
+      if (!cancelled) { setStreets(r.streets); setResult(r); }
     }, 30);
-    return () => clearTimeout(t);
-  }, [sim, preflopCount, ui.names]);
+    return () => { cancelled = true; clearTimeout(t); };
+  }, [handId, preflopCount]);
 
-  const newHand = useCallback(() => { setStreet(0); setReveal(false); setSim(null); setResult(null); }, []);
-  const changeCount = useCallback((n: number) => { setPreflopCount(n); setStreet(0); setReveal(false); setSim(null); setResult(null); }, []);
+  const newHand = useCallback(() => {
+    setStreet(0); setReveal(false); setSim(null); setResult(null); setStreets([]);
+    setHandId((id) => id + 1);
+  }, []);
+  const changeCount = useCallback((n: number) => {
+    setStreet(0); setReveal(false); setSim(null); setResult(null); setStreets([]);
+    setPreflopCount(n);
+  }, []);
 
-  /** 이 핸드가 실제로 진행된 마지막 스트리트 (전원 폴드면 거기서 끝) */
+  /** 이 핸드가 실제로 진행된 마지막 스트리트 (전원 폴드면 거기서 끝). 계산 중엔 아직 모른다 */
   const lastStreet = result ? result.streets[result.streets.length - 1].street : 3;
-  const rec = result?.streets[Math.min(street, result.streets.length - 1)] ?? null;
+  const rec = streets[Math.min(street, streets.length - 1)] ?? null;
   const boardShown = street === 0 ? 0 : street + 2;
-  const isEnd = street >= lastStreet;
+  /** 다음 스트리트가 아직 계산 중인가 */
+  const waiting = !result && street + 1 >= streets.length;
+  const isEnd = !!result && street >= lastStreet;
   const showdown = isEnd && result?.wonByFoldAt === null;
   const cardsUp = reveal || showdown;
 
@@ -223,14 +250,13 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
 
   /** 현재 스트리트까지 폴드한 좌석 */
   const foldedSlots = useMemo(() => {
-    if (!result) return new Set<number>();
     const s = new Set<number>();
-    for (const r of result.streets) {
+    for (const r of streets) {
       if (r.street > street) break;
       r.foldedSlots.forEach((x) => s.add(x));
     }
     return s;
-  }, [result, street]);
+  }, [streets, street]);
 
   const nameOf = useCallback((slot: number) => {
     if (!sim) return "";
@@ -260,7 +286,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
   }, [sim, result, winnerSlots, nameOf, ui]);
 
   const renderSeat = (slot: number) => {
-    if (!sim || !result) return null;
+    if (!sim) return null;
     const pos = positionAt(sim.heroPos, slot);
     const inHand = slot in slotToIdx;
     const isBtn = pos === "BTN";
@@ -299,7 +325,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
       statusText={statusText} statusColor={act === "raise" ? BAD : "rgba(255,255,255,0.55)"} />;
   };
 
-  if (!sim || !result || !rec) {
+  if (!sim || !rec) {
     return (
       <>
         <p className="text-center text-[11px] text-muted-foreground mb-1.5">{ui.tableNote}</p>
@@ -422,12 +448,13 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
 
       {/* ── 진행 ── */}
       {!isEnd ? (
-        <button onClick={() => setStreet((s) => Math.min(s + 1, lastStreet))}
-          className="w-full py-4 rounded-xl font-black text-base text-black transition-all hover:brightness-110 active:scale-[0.98]"
+        <button onClick={() => setStreet((s) => Math.min(s + 1, streets.length - 1))}
+          disabled={waiting}
+          className="w-full py-4 rounded-xl font-black text-base text-black transition-all hover:brightness-110 active:scale-[0.98] disabled:opacity-50 disabled:cursor-wait"
           style={{ background: GOLD }}>
-          {ui.revealBtn(ui.streets[street + 1])}
+          {waiting ? `⏳ ${ui.loading}` : ui.revealBtn(ui.streets[street + 1])}
         </button>
-      ) : (
+      ) : result && (
         <>
           {/* 결과 */}
           <motion.div initial={false} animate={{ opacity: 1 }} className="rounded-xl p-4 mb-3 border-2 text-center"
@@ -446,7 +473,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
                   </tr>
                 </thead>
                 <tbody>
-                  {result.streets.map((r) => (
+                  {streets.map((r) => (
                     <tr key={r.street} className="border-t" style={{ borderColor: "hsl(var(--border))" }}>
                       <td className="py-1 pr-3 font-bold whitespace-nowrap">{ui.streets[r.street]}</td>
                       <td className="py-1 pr-3">{r.equity.toFixed(1)}%</td>

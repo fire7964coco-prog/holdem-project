@@ -5,10 +5,7 @@
 //   바꾸면서, 좌석 배치·포지션 이름은 한국어판과 영어판이 **완전히 같아야** 하기 때문이다.
 //   UTG·HJ·CO·BTN·SB·BB는 두 언어에서 같은 표기를 쓴다.
 
-import {
-  dealHands, equities, winnersAt, handCategory,
-  type Card, type HandNames,
-} from "./_equity";
+import { dealHands, type Card, type HandNames } from "./_equity";
 
 /**
  * 6맥스 프리플랍 액션 순서 = 물리적 좌석 순서(시계 방향).
@@ -43,9 +40,6 @@ export interface TableSim {
   /** hands[k] ↔ activeSlots[k]. hands[0]은 항상 나 */
   hands: Card[][];
   board: Card[];
-  eq: { preflop: number[]; flop: number[]; turn: number[] };
-  winners: number[];
-  categories: string[];
 }
 
 /** 가중 무작위 추출(비복원) — 뒷자리가 더 자주 뽑힌다 */
@@ -64,25 +58,19 @@ function pickSlots(heroPos: number, count: number): number[] {
 }
 
 /**
- * 6인 테이블 한 판. `showdownCount`는 **끝까지 가는 인원**이지 좌석 수가 아니다.
- * 좌석은 언제나 6개고, 나머지는 폴드로 표시된다.
+ * 6인 테이블 한 판을 **딜만 한다.** `preflopCount`는 프리플랍에 들어오는 인원이고,
+ * 좌석은 언제나 6개다. 나머지는 폴드로 표시된다.
+ *
+ * ★2026-08-05 성능 검수에서 여기서 하던 계산을 전부 걷어냈다.
+ *   6인 테이블 버전이 쓰던 `eq`(프리플랍 MC 10만 + 플랍 990 + 턴 44)·`winners`·`categories`를
+ *   그대로 두고 있었는데, **실전 모드는 그중 무엇도 쓰지 않는다.**
+ *   매 핸드 500~800ms짜리 동기 계산이 아무 이유 없이 돌면서 화면을 얼려 놓고 있었다.
+ *   승률은 `_engine.ts`가, 쇼다운 판정은 `_simulator.tsx`가 §13 평가기로 직접 한다.
  */
-export function makeTableSim(showdownCount: number, names: HandNames): TableSim {
+export function makeTableSim(preflopCount: number, _names?: HandNames): TableSim {
   const heroPos = Math.floor(Math.random() * 6);
-  const activeSlots = [0, ...pickSlots(heroPos, showdownCount - 1)].sort((a, b) => a - b);
+  const activeSlots = [0, ...pickSlots(heroPos, preflopCount - 1)].sort((a, b) => a - b);
   // activeSlots가 0을 포함한 오름차순이므로 인덱스 0 = 나 = hands[0]이 보장된다
-  const { hands, board } = dealHands(showdownCount);
-  return {
-    heroPos,
-    activeSlots,
-    hands,
-    board,
-    eq: {
-      preflop: equities(hands, []),
-      flop: equities(hands, board.slice(0, 3)),
-      turn: equities(hands, board.slice(0, 4)),
-    },
-    winners: winnersAt(hands, board),
-    categories: hands.map((h) => handCategory(h, board, names)),
-  };
+  const { hands, board } = dealHands(preflopCount);
+  return { heroPos, activeSlots, hands, board };
 }
