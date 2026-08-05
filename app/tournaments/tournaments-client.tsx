@@ -13,6 +13,12 @@ import {
   buildEventSchemas,
   STATUS_LABEL,
 } from "@/lib/tournaments";
+/**
+ * 히어로 문장·메타를 만드는 단일 소스. layout.tsx의 generateMetadata도 같은 함수를 쓴다.
+ * ★todayISO는 반드시 서버에서 내려온 prop을 넘긴다 — 여기서 new Date()를 부르면
+ *   하이드레이션 불일치가 난다(page.tsx 주석 참조).
+ */
+import { buildHeroLine, buildMetaTitle, buildMetaDescription } from "@/lib/tournaments-digest";
 
 const DOMESTIC = [
   {
@@ -572,8 +578,14 @@ export default function Tournaments({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedSchema) }}
       />
       <SEO
-        title="⚡ 홀덤 대회 일정 2026 — WSOP 파이널 8/3~5·APT 인천 8/7"
-        description="【홀덤 대회 일정】WSOP 브레이슬릿 시리즈 종료(7/15)·메인 파이널 테이블 8/3~5 ESPN · APT 인천 8/7·EPT 바르셀로나 8/16 예정. ⚡2026 국내외 공식 일정·종료/진행중/예정 표시 — 참가 전 확인하세요."
+        /* ★★layout.tsx의 generateMetadata와 **같은 함수**를 쓴다 — 여기에 문자열을 적으면 안 된다.
+             components/seo.tsx는 받은 props를 useEffect에서 **무조건** document.title·
+             description에 덮어쓴다. 그래서 서버가 layout.tsx로 옳은 제목을 내보내도
+             JS가 돌면서 이 props로 되돌린다. 2026-08-05까지 실제로 그 상태였다:
+             정적 HTML은 "APT 인천 2026 8/7 개막"인데 브라우저에서는
+             "WSOP 파이널 8/3~5"(이미 지난 일정)로 바뀌어 있었다. curl로는 안 잡힌다. */
+        title={buildMetaTitle(todayISO)}
+        description={buildMetaDescription(todayISO)}
         keywords="홀덤 대회, 홀덤대회, 포커 토너먼트, KPT 코리아포커투어, 피망 포커 대회, 한게임 포커 대회, WSOP 참가방법, WPT, EPT, APT 아시아, 홀덤펍 리그, 포커 대회 일정 2026, 홀덤 토너먼트 전략, 포커 대회 참가 방법"
         path="/tournaments"
         schema={combinedSchema}
@@ -598,7 +610,11 @@ export default function Tournaments({
             국내 피망포커·한게임·KPT·홀덤펍 리그부터<br className="hidden md:block" />
             세계 최대 <strong className="text-foreground">WSOP·WPT·EPT·APT</strong>까지.<br />
             홀덤 대회의 모든 것을 한눈에 정리했습니다.
-            <span className="block mt-3 text-sm text-primary/90">2026년 7월 28일 기준 — WSOP 브레이슬릿 시리즈는 7월 15일 종료(역대 최다 251,899 엔트리, 99개 수여). 메인이벤트 파이널 테이블만 8월 3~5일 ESPN 방송으로 남았습니다 · 하반기 APT 인천(8/7)·APPT 코리아(9/3)·EPT 바르셀로나(8/16) 예정</span>
+            {/* ★손으로 적지 말 것 — lib/tournaments-digest.ts가 대회 데이터에서 만든다.
+                2026-08-05까지 이 자리에 "2026년 7월 28일 기준 … 파이널 테이블만 8월 3~5일
+                남았습니다"가 굳어 있었다. 시한폭탄이 셋이었다(기준일·8/3~5 만료·브레이슬릿
+                "99개 수여"는 8/5 이후 100개). 매일 도는 리빌드가 이제 이 줄도 갱신한다. */}
+            <span className="block mt-3 text-sm text-primary/90">{buildHeroLine(todayISO)}</span>
           </p>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-10 max-w-2xl mx-auto">

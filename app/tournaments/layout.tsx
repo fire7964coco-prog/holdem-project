@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { SITE } from "@/lib/site";
-import { TOURNAMENTS, computeStatus } from "@/lib/tournaments";
+import { buildMetaTitle, buildMetaDescription } from "@/lib/tournaments-digest";
 import { TOURNAMENT_HREFLANG } from "@/lib/tournaments-hreflang";
 
 /**
@@ -11,6 +11,11 @@ import { TOURNAMENT_HREFLANG } from "@/lib/tournaments-hreflang";
  * 2026-07-28에 "WSOP 진행중"이 13일간 노출된 사고의 절반이 이것이었다.
  *
  * 이제 lib/tournaments.ts 하나만 고치면 카드·JSON-LD·메타가 함께 갱신된다.
+ *
+ * ★2026-08-05: 문장을 만드는 로직을 `lib/tournaments-digest.ts`로 옮겼다.
+ *   같은 문장이 **화면(히어로)과 <SEO> props에도** 필요한데, 그 두 자리는 여전히
+ *   손으로 적혀 있어서 "사고의 나머지 절반"으로 남아 있었기 때문이다.
+ *   한 곳에서 만들어야 메타와 화면이 갈리지 않는다. 출력 문구는 그대로다.
  */
 function kstToday(): string {
   return new Date(Date.now() + 9 * 60 * 60 * 1000).toISOString().slice(0, 10);
@@ -18,33 +23,8 @@ function kstToday(): string {
 
 export function generateMetadata(): Metadata {
   const today = kstToday();
-  const dot = today.replace(/-/g, ".");
-  const md = (d: string) => `${Number(d.slice(5, 7))}/${Number(d.slice(8, 10))}`;
-
-  // 오늘 이후로 가장 가까운 국내 대회 3개
-  const upcoming = TOURNAMENTS.filter(
-    (t) => t.type === "domestic" && t.startDate && computeStatus(t, today) === "upcoming",
-  )
-    .sort((a, b) => (a.startDate! < b.startDate! ? -1 : 1))
-    .slice(0, 3);
-
-  const ongoing = TOURNAMENTS.filter(
-    (t) => t.startDate && computeStatus(t, today) === "ongoing",
-  ).slice(0, 2);
-
-  const upcomingText = upcoming.map((t) => `${t.name} ${md(t.startDate!)}`).join("·");
-  const ongoingText = ongoing.length
-    ? `진행중 ${ongoing.map((t) => t.name).join("·")} · `
-    : "";
-
-  const title = upcoming.length
-    ? `⚡ 홀덤 대회 일정 2026 — ${upcoming[0].name} ${md(upcoming[0].startDate!)} 개막`
-    : "⚡ 홀덤 대회 일정 2026 — 국내외 공식 일정표";
-
-  const description = (
-    `【홀덤 대회 일정】${dot} 기준 · ${ongoingText}${upcomingText} 예정. ` +
-    `⚡국내외 공식 일정·바이인을 대회별 공식 출처 링크와 함께.`
-  ).slice(0, 158);
+  const title = buildMetaTitle(today);
+  const description = buildMetaDescription(today);
 
   return {
     title,
