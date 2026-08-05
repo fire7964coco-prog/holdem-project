@@ -19,6 +19,16 @@ import { decideAction } from "./_lib/ai";
 const POINTS_KEY = "holdem-practice-points";
 const AI_DELAY_MS = 850;
 
+/**
+ * ★`<SEO>`는 useEffect로 브라우저 제목·description을 **런타임에 덮어쓴다.**
+ *   그래서 page.tsx의 metadata가 옳아도 여기 문자열이 다르면 브라우저에서는 이쪽이 이긴다
+ *   (2026-08-04 `/tournaments`에서 같은 원인으로 사고가 났다). `page.tsx`가 이 상수를 import해
+ *   **두 곳이 같은 문자열을 쓰도록** 묶어 뒀다 — 한쪽만 고쳐지는 사고를 구조적으로 막는다.
+ */
+export const SEO_TITLE = "홀덤 연습장 — 무료 텍사스 홀덤 연습 게임";
+export const SEO_DESC =
+  "가입 없이 무료 연습 포인트로 즐기는 텍사스 홀덤 연습 게임. AI 상대로 프리플랍부터 리버까지 베팅·폴드·레이즈 판단을 마음껏 시험해보세요. 현금 가치 없는 교육·연습용입니다.";
+
 function loadPoints(): number {
   if (typeof window === "undefined") return START_CHIPS;
   const raw = window.localStorage.getItem(POINTS_KEY);
@@ -38,6 +48,112 @@ function rebuyAI(state: GameState): GameState {
     if (!p.isHuman && p.chips < next.bigBlind) p.chips = START_CHIPS;
   }
   return next;
+}
+
+/**
+ * 헤더 — **`ready` 게이트 바깥에서 렌더한다.**
+ *
+ * ★2026-08-05: 원래 게임 상태(`ready`)를 기다린 뒤에야 화면 전체를 그려서,
+ *   정적 HTML에는 "불러오는 중…" 한 줄만 남고 **h1도 본문도 없었다**(빌드 산출물 실측 h1=0).
+ *   그런데 이 페이지는 사이트맵에 priority 0.75로 색인 요청 중이고 robots도 index다.
+ *   → 구글에 "중요하다"고 제출해 놓고 빈 껍데기를 주던 상태. GSC 28일 노출 0이 그 결과다.
+ *   localStorage가 필요한 건 **게임 상태뿐**이므로 헤더·본문은 서버에서 그려도 된다.
+ */
+function PracticeHeader() {
+  return (
+    <header className="text-center mb-6">
+      <h1 className="font-serif font-black text-3xl sm:text-4xl text-gold-gradient mb-2">
+        홀덤 연습장
+      </h1>
+      <p className="text-muted-foreground text-sm sm:text-base">
+        무료 연습 포인트로 AI 상대와 텍사스 홀덤을 연습하세요. 실제 현금 가치가 없는 연습용입니다.
+      </p>
+    </header>
+  );
+}
+
+/**
+ * 게임 아래 본문 — 정적 HTML에 실리는 유일한 고유 콘텐츠다.
+ *
+ * 🔴 **카니발 금지선 (2026-08-05 GSC 실측으로 확정).** 아래 주제는 여기서 **설명하지 않고
+ *    링크로만 보낸다.** 각각 이미 임자가 있고, 여기서 다루면 그 페이지를 갉아먹는다:
+ *      · 룰·하는법·게임 방법·포커 입문 → /rules  ← 28일 208노출 독점. 가장 위험하다
+ *        (⚠ 이 주석에서 경로에 굵게 표시를 붙이지 말 것 — 별표+슬래시가 주석을 조기 종료시킨다)
+ *      · 족보 → /hands + /blog/holdem-hand-rankings (★이 둘은 이미 서로 카니발 중)
+ *      · 게임 진행 순서 → /blog/holdem-game-order
+ *      · 팟오즈·확률 → /calculator · /blog/holdem-pot-odds-calculation
+ *      · 승률 시뮬레이션 → /win-rate-quiz
+ *    이 페이지가 가져갈 영역은 **"연습"뿐**이다 — 사이트 전체에서 제목·설명·태그 어디에도
+ *    "연습"을 노리는 글이 없고 GSC 상위 1,073개 쿼리에도 "연습"이 0건이다(=빈 영역).
+ */
+function PracticeGuide() {
+  return (
+    <section className="mt-10 max-w-3xl mx-auto text-[15px] leading-relaxed text-foreground/90">
+      <h2 className="font-serif font-black text-xl mb-2">이 연습장에서 뭘 연습할 수 있나요?</h2>
+      <p className="mb-4">
+        <strong>판단</strong>입니다. 카드가 뭔지 아는 것과, 그 카드로 얼마를 걸지 정하는 것은 완전히 다른
+        문제예요. 이 연습장은 프리플랍부터 리버까지 폴드·체크·콜·레이즈를 직접 눌러 보면서
+        <strong> 돈이 걸리지 않은 상태로 그 결정을 반복</strong>하게 해줍니다. 실전에서 가장 비싸게 배우는
+        것이 바로 이 부분이라, 여기서 미리 틀려 보는 값이 쌉니다.
+      </p>
+
+      <h2 className="font-serif font-black text-xl mb-2">돈이 드나요? 가입해야 하나요?</h2>
+      <p className="mb-4">
+        둘 다 아닙니다. 로그인 없이 바로 시작되고, 포인트는 브라우저에 저장될 뿐 현금이나 상품으로
+        교환되지 않습니다. 포인트가 떨어지면 새로고침해서 다시 받으면 됩니다. 실제 베팅이 아니라
+        <strong> 전략을 시험해 보는 도구</strong>입니다.
+      </p>
+
+      <h2 className="font-serif font-black text-xl mb-2">AI 상대는 실제 사람과 얼마나 다른가요?</h2>
+      <p className="mb-4">
+        솔직히 말하면 다릅니다. AI는 패의 세기에 따라 비교적 일관되게 움직이기 때문에, 사람이 자주 하는
+        무리한 블러프나 감정적인 콜은 잘 나오지 않아요. 그래서 <strong>이 연습장으로 &ldquo;상대 읽기&rdquo;를
+        훈련할 수는 없습니다.</strong> 대신 자기 판단의 습관 — 약한 패로 끝까지 따라가는지, 좋은 자리에서
+        충분히 압박하는지 — 을 보는 데는 충분합니다. 그 습관이 실전 손실의 대부분을 만듭니다.
+      </p>
+
+      <h2 className="font-serif font-black text-xl mb-2">연습할 때 뭘 보면 실력이 느나요?</h2>
+      <p className="mb-3">
+        아무 생각 없이 여러 판 돌리는 것보다, 판마다 한 가지만 정해 놓고 보는 편이 훨씬 빨리 늡니다.
+      </p>
+      <ul className="list-disc pl-5 space-y-1.5 mb-4">
+        <li><strong>폴드한 판을 세어 보세요.</strong> 열 판에 서너 판도 안 접고 있다면 너무 많이 들어가는 겁니다.</li>
+        <li><strong>같은 패라도 자리에 따라 다르게 쳐보세요.</strong> 늦게 행동하는 자리가 왜 유리한지는 눌러 봐야 몸에 붙습니다.</li>
+        <li><strong>진 판을 그냥 넘기지 마세요.</strong> 어느 시점에 접었어야 했는지 되짚는 게 이기는 판을 복기하는 것보다 남습니다.</li>
+      </ul>
+
+      <div className="rounded-xl border p-4 mb-4" style={{ borderColor: "hsl(var(--border))" }}>
+        <p className="font-bold mb-2 text-sm">📚 이어서 보면 좋은 것</p>
+        <ul className="space-y-1.5 text-sm">
+          <li>
+            규칙부터 다시 보고 싶다면 —{" "}
+            <Link href="/rules" className="text-primary hover:underline">포커 게임 종류별 규칙</Link>
+          </li>
+          <li>
+            어떤 패가 센지 헷갈린다면 —{" "}
+            <Link href="/blog/holdem-hand-rankings" className="text-primary hover:underline">홀덤 족보 순위 10가지</Link>
+          </li>
+          <li>
+            자리에 따라 왜 달라지는지 —{" "}
+            <Link href="/blog/position-is-everything-in-holdem" className="text-primary hover:underline">홀덤 포지션이 왜 중요한가</Link>
+          </li>
+          <li>
+            내 승률이 실제로 몇 %인지 —{" "}
+            <Link href="/win-rate-quiz" className="text-primary hover:underline">승률 시뮬레이터</Link>
+          </li>
+          <li>
+            콜이 이득인지 계산하려면 —{" "}
+            <Link href="/blog/holdem-pot-odds-calculation" className="text-primary hover:underline">팟오즈 계산하는 법</Link>
+          </li>
+        </ul>
+      </div>
+
+      <p className="text-xs text-muted-foreground leading-relaxed">
+        본 연습장은 <strong>연습·교육용</strong>이며 포인트는 현금이나 상품으로 교환되지 않습니다.
+        만 19세 미만은 이용할 수 없습니다.
+      </p>
+    </section>
+  );
 }
 
 function PlayingCard({ card, hidden, small }: { card?: Card; hidden?: boolean; small?: boolean }) {
@@ -150,10 +266,16 @@ export default function HoldemPracticeClient() {
     setRaiseTo(legal.minRaiseTo);
   }, [state]);
 
+  // 🔴 게임 상태만 기다린다. 헤더·본문은 위에서 이미 서버가 그린 상태여야 한다(PracticeHeader 주석).
   if (!ready || !state) {
     return (
-      <div className="min-h-[60vh] flex items-center justify-center text-muted-foreground">
-        불러오는 중...
+      <div className="max-w-5xl mx-auto px-4 py-8 sm:py-10">
+        <SEO title={SEO_TITLE} description={SEO_DESC} path="/holdem-practice" />
+        <PracticeHeader />
+        <div className="min-h-[40vh] flex items-center justify-center text-muted-foreground">
+          불러오는 중...
+        </div>
+        <PracticeGuide />
       </div>
     );
   }
@@ -167,21 +289,8 @@ export default function HoldemPracticeClient() {
 
   return (
     <div className="max-w-5xl mx-auto px-4 py-8 sm:py-10">
-      <SEO
-        title="홀덤 연습장 — 무료 텍사스 홀덤 연습 게임"
-        description="가입 없이 무료 연습 포인트로 즐기는 텍사스 홀덤 연습 게임. AI 상대로 프리플랍부터 리버까지 베팅 전략을 마음껏 시험해보세요."
-        path="/holdem-practice"
-      />
-
-      {/* 헤더 */}
-      <header className="text-center mb-6">
-        <h1 className="font-serif font-black text-3xl sm:text-4xl text-gold-gradient mb-2">
-          홀덤 연습장
-        </h1>
-        <p className="text-muted-foreground text-sm sm:text-base">
-          무료 연습 포인트로 AI 상대와 텍사스 홀덤을 연습하세요. 실제 현금 가치가 없는 연습용입니다.
-        </p>
-      </header>
+      <SEO title={SEO_TITLE} description={SEO_DESC} path="/holdem-practice" />
+      <PracticeHeader />
 
       {/* 포인트 바 */}
       <div className="flex items-center justify-between gap-3 mb-5 rounded-xl border border-primary/25 bg-card/60 px-4 py-3">
@@ -290,17 +399,11 @@ export default function HoldemPracticeClient() {
         )}
       </div>
 
-      {/* 안내 / 면책 */}
       <p className="text-center text-[11px] text-muted-foreground mt-5 leading-relaxed">
-        본 게임은 <strong>연습·교육용</strong>이며 포인트는 현금이나 상품으로 교환되지 않습니다.<br />
-        실제 베팅이 아닌 전략 연습 도구입니다. 진행이 막히면 이 페이지만 새로고침하세요.
+        진행이 막히면 이 페이지만 새로고침하세요.
       </p>
 
-      <div className="text-center mt-4">
-        <Link href="/blog/holdem-button-position" className="text-sm text-primary hover:underline">
-          → 포지션별 전략이 궁금하다면: 홀덤 버튼 포지션 가이드
-        </Link>
-      </div>
+      <PracticeGuide />
     </div>
   );
 }
