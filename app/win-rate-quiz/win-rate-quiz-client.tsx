@@ -3,7 +3,7 @@
 import { SEO } from "@/components/seo";
 import WinRateSimulator, { type QuizUI } from "./_simulator";
 import { KO_NAMES } from "./_equity";
-import { ANTE, STACK, SAMPLES } from "./_engine";
+import { ANTE, STACK, SAMPLES, MIN_SAMPLES } from "./_engine";
 
 /**
  * 한국어판 승률 시뮬레이터.
@@ -89,8 +89,9 @@ const KO_UI: QuizUI = {
       </p>
       <p>
         각자 {ANTE}씩 넣고 시작하며 스택은 {STACK.toLocaleString()}입니다. 나는 폴드하지 않고 끝까지 갑니다 —
-        그래야 리버까지 보고 복기할 수 있기 때문입니다. 승률은 프리플랍 {SAMPLES.preflop.toLocaleString()}회,
-        이후 {SAMPLES.postflop.toLocaleString()}회 시뮬레이션한 근사값입니다(오차 ±0.3%p 안팎).
+        그래야 리버까지 보고 복기할 수 있기 때문입니다. 승률은 시뮬레이션으로 낸 근사값이고,
+        표본은 기기 속도에 맞춰 <b className="text-foreground">{MIN_SAMPLES.toLocaleString()}~{SAMPLES.preflop.toLocaleString()}회</b> 사이에서
+        자동으로 조절됩니다(오차 ±0.2~0.6%p). 느린 기기에서 몇 초씩 멈추지 않게 하기 위해서입니다.
       </p>
     </>
   ),

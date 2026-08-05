@@ -97,13 +97,20 @@ export interface ActionStep {
  *   실측 결과 내 승률이 최대 +65%p 부풀려졌고 콜/폴드 판정이 정반대로 뒤집혔다.
  *   레이즈·콜은 폴드와 똑같이 **공개된 정보**다. 버리면 안 된다.
  */
-function eligibleHoles(deadKeys: Set<number>, history: ActionStep[]): NCard[][] {
+async function eligibleHoles(deadKeys: Set<number>, history: ActionStep[]): Promise<NCard[][]> {
   const deck: NCard[] = [];
   for (let r = 2; r <= 14; r++)
     for (let s = 0; s < 4; s++) if (!deadKeys.has(r * 4 + s)) deck.push([r, s]);
   const out: NCard[][] = [];
+  // 이 루프도 양보해야 한다 — 1,081쌍 × 이력 단계라 6배 느린 기기에선 200ms를 넘긴다
+  let n = 0;
+  let last = performance.now();
   for (let i = 0; i < deck.length; i++) {
     for (let j = i + 1; j < deck.length; j++) {
+      if (++n % CLOCK_EVERY === 0 && performance.now() - last > SLICE_MS) {
+        await yieldToMain();
+        last = performance.now();
+      }
       const hole = [deck[i], deck[j]];
       let ok = true;
       for (const step of history) {
@@ -118,8 +125,19 @@ function eligibleHoles(deadKeys: Set<number>, history: ActionStep[]): NCard[][] 
 /** 메인스레드를 잠깐 놓아준다 — 안 하면 계산이 1.6초짜리 long task가 되어 화면이 얼어붙는다 */
 const yieldToMain = () => new Promise<void>((r) => setTimeout(r, 0));
 
-/** 한 번에 돌리는 표본 수 (이 단위마다 메인스레드에 양보한다) */
-const CHUNK = 4000;
+/**
+ * 한 번에 붙잡고 있어도 되는 시간(ms). 이 시간이 지나면 메인스레드를 놓아준다.
+ *
+ * 🔴 **개수가 아니라 시간으로 자를 것.** 처음엔 "표본 4,000개마다"로 잘랐는데,
+ *   그건 데스크톱에서 한 조각이 30~40ms인 값이라 **기기가 느려지면 그대로 늘어난다.**
+ *   CPU 스로틀링 실측: 4배 느린 기기에서 최악 217ms · 6배에서 **429ms**(총 블로킹 3.9초)로
+ *   long task가 26~36개씩 돌아왔다. 시간 기준이면 느린 기기일수록 자동으로 더 자주 끊긴다.
+ * ★50ms가 long task 기준선이라 그 절반으로 잡았다.
+ */
+const SLICE_MS = 25;
+
+/** 매 반복마다 performance.now()를 부르면 그 자체가 비싸다 — 이 간격으로만 시계를 본다 */
+const CLOCK_EVERY = 128;
 
 // ── 내 승률 (상대 패를 모르는 상태) ───────────────────────────────────────────
 
@@ -155,9 +173,19 @@ export async function heroEquity(
   const used = new Set<number>();
   const bag = [...deck];
 
+  const started = performance.now();
+  let lastYield = started;
   for (let k = 0; k < samples; k++) {
-    // 메인스레드 양보 — 이게 없으면 전체가 하나의 long task가 되어 화면이 얼어붙는다
-    if (k > 0 && k % CHUNK === 0) await yieldToMain();
+    if (k % CLOCK_EVERY === 0) {
+      const now = performance.now();
+      // 메인스레드 양보 — 개수가 아니라 **경과 시간**으로 자른다(SLICE_MS 주석 참조)
+      if (now - lastYield > SLICE_MS) {
+        await yieldToMain();
+        lastYield = performance.now();
+      }
+      // 시간 예산 초과 → 하한만 채웠으면 여기서 멈춘다(BUDGET_MS 주석 참조)
+      if (k >= MIN_SAMPLES && performance.now() - started > BUDGET_MS) break;
+    }
     used.clear();
     let ok = true;
 
@@ -300,10 +328,24 @@ export const ANTE = 20;
 export const STACK = 1000;
 
 /**
- * 표본 수. 화면의 규칙 설명이 이 값을 그대로 인용하므로 **export해서 손으로 적지 않게** 한다
+ * 표본 수의 **상한**. 실제로는 기기 속도에 맞춰 이 아래에서 자동으로 멈춘다(BUDGET_MS 참조).
+ * 화면의 규칙 설명이 이 값을 그대로 인용하므로 **export해서 손으로 적지 않게** 한다
  * (숫자를 문장에 박아 두면 상수를 바꿨을 때 설명만 거짓이 된다 — 이 프로젝트에서 반복된 사고다).
  */
 export const SAMPLES = { preflop: 60000, postflop: 30000 } as const;
+
+/**
+ * 승률 한 번을 계산하는 데 쓸 **시간 예산**과 표본 하한.
+ *
+ * 🔴 **표본 수를 고정하지 말 것.** 6만으로 고정했더니 CPU 4배 느린 기기에서 첫 숫자까지
+ *   **5.6초**, 6배에서 **9.0초**가 걸렸다(실측). 데스크톱은 0.4초였다 —
+ *   같은 상수가 기기에 따라 20배 넘게 벌어진다.
+ * → 예산을 넘기면 **하한만 채우고 멈춘다.** 빠른 기기는 상한까지 돌아 정밀하고,
+ *   느린 기기는 정밀도를 조금 내주고 빨리 답을 준다.
+ * ★하한 8,000이면 표준오차 약 ±0.56%p — 소수 1자리 표시에서 마지막 자리만 흔들리는 수준이다.
+ */
+export const BUDGET_MS = 700;
+export const MIN_SAMPLES = 8000;
 
 /**
  * 한 판을 통째로 계산한다. 클릭할 때마다 계산하면 화면이 멈추므로 미리 다 구해 둔다.
@@ -370,7 +412,7 @@ export async function runHand(
         // ★상대마다 자기 액션 이력에 맞는 레인지를 만든다.
         //   한 명이 레이즈하고 한 명이 콜했으면 두 사람의 레인지는 서로 다르다.
         const dead = new Set([...hN, ...boardNow].map(keyOf));
-        const pools = live.map((i) => eligibleHoles(dead, history[i]));
+        const pools = await Promise.all(live.map((i) => eligibleHoles(dead, history[i])));
         equity = await heroEquity(heroHand, board.slice(0, shown), live.length, pools, SAMPLES.postflop);
       }
     } else {

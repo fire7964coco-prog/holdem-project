@@ -2,7 +2,7 @@
 
 import WinRateSimulator, { type QuizUI } from "../../win-rate-quiz/_simulator";
 import { EN_NAMES } from "../../win-rate-quiz/_equity";
-import { ANTE, STACK, SAMPLES } from "../../win-rate-quiz/_engine";
+import { ANTE, STACK, SAMPLES, MIN_SAMPLES } from "../../win-rate-quiz/_engine";
 
 /**
  * 영어판 승률 시뮬레이터 (2026-08-04 신설 · 2026-08-05 실전 모드로 개편).
@@ -86,8 +86,9 @@ const EN_UI: QuizUI = {
       </p>
       <p>
         Everyone posts {ANTE} to start with a {STACK.toLocaleString()} stack. You never fold — that is the point,
-        so you can see the river and review. Equity runs {SAMPLES.preflop.toLocaleString()} simulations preflop
-        and {SAMPLES.postflop.toLocaleString()} after that (roughly ±0.3%p).
+        so you can see the river and review. Equity is a simulated estimate, and the sample size scales to your
+        device between <b className="text-foreground">{MIN_SAMPLES.toLocaleString()} and {SAMPLES.preflop.toLocaleString()} runs</b>{" "}
+        (roughly ±0.2–0.6%p) so a slower phone never freezes for seconds at a time.
       </p>
     </>
   ),
