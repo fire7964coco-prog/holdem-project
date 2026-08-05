@@ -61,16 +61,22 @@ const KO_UI: QuizUI = {
 
   formulaTitle: "📐 이 승률은 어떻게 나왔나",
   outsLabel: (n) => `완성 카드 ${n}장`,
-  outsBreak: (f, s) =>
-    [f > 0 ? `플러시 ${f}장` : "", s > 0 ? `스트레이트 ${s}장` : ""].filter(Boolean).join(" · "),
+  outsBreak: (f, s, both) =>
+    [
+      f > 0 ? `플러시 ${f}장` : "",
+      s > 0 ? `스트레이트 ${s}장` : "",
+      both > 0 ? `둘 다 되는 ${both}장은 한 번만 셈` : "",
+    ].filter(Boolean).join(" · "),
   hitLabel: "드로우를 맞출 확률 (실전 암산)",
   winLabel2: "팟을 이길 확률 (시뮬레이션)",
   formulaExpr: (outs, toCome) =>
-    toCome === 1 ? `${outs} × 2` : outs > 8 ? `${outs} × 4 − ${outs - 8}` : `${outs} × 4`,
+    toCome === 1 ? `${outs} × 2` : outs > 9 ? `${outs} × 4 − ${outs - 8}` : `${outs} × 4`,
   formulaCaveat:
     "두 숫자는 서로 다른 걸 잽니다. 위는 «맞출» 확률이고 아래는 «이길» 확률이라, 맞춰도 상대가 더 좋아지면 지고 못 맞춰도 이길 때가 있습니다. 콜·폴드 판정에 쓰는 건 아래 숫자입니다.",
-  noDrawNote: (samples) =>
-    `지금은 플러시·스트레이트 드로우가 없어서 «아웃츠 × 2/4» 암산이 쓰이지 않는 자리입니다. 위 승률은 상대가 보여준 액션에 맞는 패 전체를 상대로 ${samples}회 돌려 낸 값입니다.`,
+  noDrawNote: (basis, min, max) =>
+    basis === "random"
+      ? `지금은 플러시·스트레이트 드로우가 없어서 «아웃츠 × 2/4» 암산이 쓰이지 않는 자리입니다. 위 승률은 상대를 무작위 패로 보고 ${min}~${max}회(기기 속도에 맞춰) 돌려 낸 값입니다.`
+      : `지금은 플러시·스트레이트 드로우가 없어서 «아웃츠 × 2/4» 암산이 쓰이지 않는 자리입니다. 위 승률은 상대가 보여준 액션에 맞는 패 전체를 상대로 ${min}~${max}회(기기 속도에 맞춰) 돌려 낸 값입니다.`,
 
   ruleTitle: "이 시뮬레이터가 두는 가정",
   ruleText: (

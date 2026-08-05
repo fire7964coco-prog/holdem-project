@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { describeHand, handCategory, winnersAt, type Card as QuizCard, type HandNames } from "./_equity";
 import { makeTableSim, positionAt, type TableSim } from "./_table";
 import {
-  runHand, heroEquityVsKnown, heroOuts, ruleOf24, SAMPLES,
+  runHand, heroEquityVsKnown, heroOuts, ruleOf24, SAMPLES, MIN_SAMPLES,
   type HandResult, type StreetRecord, type Action,
 } from "./_engine";
 
@@ -84,13 +84,19 @@ export interface QuizUI {
   /** 승률이 어떻게 나왔는지 보여주는 오른쪽 패널 */
   formulaTitle: string;
   outsLabel: (n: number) => string;
-  outsBreak: (flush: number, straight: number) => string;
+  /** both = 플러시·스트레이트를 동시에 완성하는 카드 수 — 합계(f+s)와 총계가 달라 보이는 걸 설명한다 */
+  outsBreak: (flush: number, straight: number, both: number) => string;
   hitLabel: string;
   winLabel2: string;
   /** "9 × 4 − 1" 같은 식 */
   formulaExpr: (outs: number, toCome: number) => string;
   formulaCaveat: string;
-  noDrawNote: (samples: string) => string;
+  /**
+   * 드로우가 없을 때의 대체 설명. 프리플랍은 기준이 "무작위"고 플랍부터는 "액션 일치 레인지"라
+   * basis를 받아 문장을 갈라야 한다 — 표본도 적응형(min~max)이라 고정 숫자를 박으면 안 된다
+   * (2026-08-05 검수 판정 #1).
+   */
+  noDrawNote: (basis: "random" | "range", minSamples: string, maxSamples: string) => string;
   /** 규칙·단서 */
   ruleTitle: string;
   ruleText: ReactNode;
@@ -647,7 +653,9 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
         {outs.total > 0 ? (
           <>
             <p className="text-sm font-black text-foreground">{ui.outsLabel(outs.total)}</p>
-            <p className="text-[11px] text-muted-foreground mb-2.5">{ui.outsBreak(outs.flush, outs.straight)}</p>
+            <p className="text-[11px] text-muted-foreground mb-2.5">
+              {ui.outsBreak(outs.flush, outs.straight, outs.flush + outs.straight - outs.total)}
+            </p>
 
             <div className="rounded-lg px-3 py-2 mb-1.5" style={{ background: "hsl(var(--background))" }}>
               <div className="flex justify-between items-baseline gap-2">
@@ -670,7 +678,8 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
           </>
         ) : (
           <p className="text-[11.5px] text-muted-foreground leading-relaxed">
-            {ui.noDrawNote(SAMPLES.postflop.toLocaleString())}
+            {ui.noDrawNote(rec.basis, MIN_SAMPLES.toLocaleString(),
+              (street === 0 ? SAMPLES.preflop : SAMPLES.postflop).toLocaleString())}
           </p>
         )}
       </div>

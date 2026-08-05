@@ -292,6 +292,8 @@ export interface Outs {
  *   화면에서도 "완성 카드"라고 부르고, 맞아도 이긴다는 보장은 없다고 밝힌다.
  * ★플러시는 **내 홀카드가 그 무늬에 기여할 때만** 센다. 보드에만 4장이면 5번째가 와도
  *   전원이 같은 플러시라 내 아웃츠가 아니다.
+ * ★스트레이트도 같은 원칙 — **보드+그 카드만으로 완성되는 스트레이트는 전원 공유**라 내 아웃츠가
+ *   아니다(보드 4-5-6-7에서 3·8을 "내 완성 카드"로 세면 안 된다. 2026-08-05 검수 판정 #2).
  */
 export function heroOuts(heroCards: Card[], boardCards: Card[]): Outs {
   const h = heroCards.map(toNum);
@@ -306,6 +308,7 @@ export function heroOuts(heroCards: Card[], boardCards: Card[]): Outs {
   for (const c of h) heroSuit[c[1]]++;
 
   const ranksNow = new Set(seen.map((c) => c[0]));
+  const boardRanks = new Set(b.map((c) => c[0]));
   const hasStraight = (set: Set<number>) => {
     const s = new Set(set);
     if (s.has(14)) s.add(1); // 휠(A-2-3-4-5)
@@ -329,6 +332,12 @@ export function heroOuts(heroCards: Card[], boardCards: Card[]): Outs {
         const next = new Set(ranksNow);
         next.add(r);
         makesStraight = hasStraight(next);
+        if (makesStraight) {
+          // 보드+이 카드만으로도 스트레이트면 전원 공유 — 내 아웃츠가 아니다
+          const boardNext = new Set(boardRanks);
+          boardNext.add(r);
+          if (hasStraight(boardNext)) makesStraight = false;
+        }
       } else if (!alreadyStraight && ranksNow.has(r)) {
         makesStraight = false; // 이미 있는 랭크는 스트레이트를 새로 만들지 못한다
       }
@@ -344,13 +353,16 @@ export function heroOuts(heroCards: Card[], boardCards: Card[]): Outs {
  * 실전 암산 — 아웃츠 × 2 / × 4.
  *
  * ★사이트 팟오즈 글(`lib/posts.ts` `holdem-pot-odds-calculation`)이 가르치는 것과 **같은 식**을 쓴다.
- *   두 장 볼 땐 ×4, 한 장이면 ×2, **아웃츠가 8을 넘으면 (아웃츠 − 8)만큼 뺀다.**
- *   9아웃 플러시 드로우 → 36 − 1 = 35% (실제 34.97%)로 잘 맞는다.
+ *   두 장 볼 땐 ×4, 한 장이면 ×2, **아웃츠가 9개를 넘어가면(10부터) (아웃츠 − 8)만큼 뺀다.**
+ *   글의 경계 그대로다 — 9아웃 플러시 드로우는 글처럼 36%(정확 34.97%, "2%p 이내" 범위)로 두고,
+ *   10아웃 38 · 12아웃 44 · 15아웃 53으로 글의 예시와 같은 숫자가 나온다.
+ *   (처음엔 9아웃부터 빼서 35%를 표시했는데, 같은 사이트의 두 화면이 9아웃에서
+ *    다른 숫자를 보여주게 된다 — 2026-08-05 검수 판정 #3)
  */
 export function ruleOf24(outs: number, toCome: number): number {
   if (outs <= 0 || toCome <= 0) return 0;
   if (toCome === 1) return outs * 2;
-  return outs * 4 - Math.max(0, outs - 8);
+  return outs * 4 - (outs > 9 ? outs - 8 : 0);
 }
 
 // ── 한 판 전체 ───────────────────────────────────────────────────────────────

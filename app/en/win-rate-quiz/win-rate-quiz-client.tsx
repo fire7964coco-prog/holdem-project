@@ -58,16 +58,22 @@ const EN_UI: QuizUI = {
 
   formulaTitle: "📐 Where this number comes from",
   outsLabel: (n) => `${n} card${n > 1 ? "s" : ""} complete your draw`,
-  outsBreak: (f, s) =>
-    [f > 0 ? `${f} for the flush` : "", s > 0 ? `${s} for the straight` : ""].filter(Boolean).join(" · "),
+  outsBreak: (f, s, both) =>
+    [
+      f > 0 ? `${f} for the flush` : "",
+      s > 0 ? `${s} for the straight` : "",
+      both > 0 ? `${both} complete both (counted once)` : "",
+    ].filter(Boolean).join(" · "),
   hitLabel: "Chance you hit the draw (table math)",
   winLabel2: "Chance you win the pot (simulated)",
   formulaExpr: (outs, toCome) =>
-    toCome === 1 ? `${outs} × 2` : outs > 8 ? `${outs} × 4 − ${outs - 8}` : `${outs} × 4`,
+    toCome === 1 ? `${outs} × 2` : outs > 9 ? `${outs} × 4 − ${outs - 8}` : `${outs} × 4`,
   formulaCaveat:
     "These measure different things. The top one is the chance you HIT; the bottom is the chance you WIN. You can hit and still lose if an opponent improves further, and you can miss and still win. The verdict uses the bottom number.",
-  noDrawNote: (samples) =>
-    `You have no flush or straight draw right now, so the “outs × 2/4” shortcut does not apply here. The equity above comes from running ${samples} hands against every holding that matches the actions you saw.`,
+  noDrawNote: (basis, min, max) =>
+    basis === "random"
+      ? `You have no flush or straight draw right now, so the “outs × 2/4” shortcut does not apply here. The equity above comes from running ${min}–${max} hands (scaled to your device) against random holdings.`
+      : `You have no flush or straight draw right now, so the “outs × 2/4” shortcut does not apply here. The equity above comes from running ${min}–${max} hands (scaled to your device) against every holding that matches the actions you saw.`,
 
   ruleTitle: "What this simulator assumes",
   ruleText: (
