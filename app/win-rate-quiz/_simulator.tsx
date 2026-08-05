@@ -427,7 +427,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
           ★2026-08-05: 처음엔 테이블을 전체 폭에 두고 **아래 패널만** 2단으로 나눴는데,
             사장님이 원한 건 *"본문칸을 반으로 나눠 왼쪽 테이블·오른쪽 버튼들"* 이었다.
             테이블과 버튼이 위아래로 있으면 결국 스크롤해야 한다. */}
-      <div className="lg:grid lg:grid-cols-[1.62fr_1fr] lg:gap-4 lg:items-start">
+      <div className="lg:grid lg:grid-cols-[404px_minmax(0,1fr)] lg:gap-4 lg:items-start">
 
       {/* ── 좌: 테이블 ──
           ★좌석을 5줄로 쌓아 세로 530px이었다(보드 위 2줄·아래 2줄).
@@ -440,13 +440,16 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
         boxShadow: "0 16px 44px rgba(0,0,0,0.42)",
       }}>
         <div className="relative flex flex-col items-center justify-between" style={{
-          minHeight: 364, borderRadius: "46% / 40%", background: FELT,
+          minHeight: 522, borderRadius: "46% / 40%", background: FELT,
           border: `2px solid ${GOLD}66`, boxShadow: "inset 0 3px 44px rgba(0,0,0,0.5)",
-          padding: "9px 6px",
+          padding: "14px 6px",
         }}>
-          {/* 위 3좌석 */}
-          <div className="flex w-full justify-between items-start px-0.5 md:px-16 lg:px-12">
-            {renderSeat(2)}{renderSeat(3)}{renderSeat(4)}
+          {/* 맞은편 */}
+          {renderSeat(3)}
+
+          {/* 위 양옆 */}
+          <div className="flex w-full justify-between items-start px-3.5 md:px-14 lg:px-4">
+            {renderSeat(2)}{renderSeat(4)}
           </div>
 
           {/* 커뮤니티 카드 */}
@@ -460,10 +463,13 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
             </div>
           </div>
 
-          {/* 아래 3좌석 — 가운데가 나 */}
-          <div className="flex w-full justify-between items-end px-0.5 md:px-16 lg:px-12">
-            {renderSeat(1)}{renderSeat(0)}{renderSeat(5)}
+          {/* 아래 양옆 */}
+          <div className="flex w-full justify-between items-end px-3.5 md:px-14 lg:px-4">
+            {renderSeat(1)}{renderSeat(5)}
           </div>
+
+          {/* 나 */}
+          {renderSeat(0)}
         </div>
       </div>
 
