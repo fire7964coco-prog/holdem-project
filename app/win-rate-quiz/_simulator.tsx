@@ -423,23 +423,29 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
         ))}
       </div>
 
-      {/* ── 테이블 ──
-          ★2026-08-05: 좌석을 5줄로 쌓아 세로 530px이었다(보드 위 2줄·아래 2줄).
-            좌석을 보드 **옆이 아니라 위아래 한 줄씩**으로 모아 3줄로 줄이니 370px가 됐고,
-            가로가 세로보다 길어져 실제 포커 테이블에 가까워졌다. 좌석 순서는 그대로 시계 방향이다
+      {/* ── 넓은 화면(lg↑)에서는 본문을 반으로: 좌 = 테이블 / 우 = 승률·팟오즈·버튼 전부 ──
+          ★2026-08-05: 처음엔 테이블을 전체 폭에 두고 **아래 패널만** 2단으로 나눴는데,
+            사장님이 원한 건 *"본문칸을 반으로 나눠 왼쪽 테이블·오른쪽 버튼들"* 이었다.
+            테이블과 버튼이 위아래로 있으면 결국 스크롤해야 한다. */}
+      <div className="lg:grid lg:grid-cols-[1.62fr_1fr] lg:gap-4 lg:items-start">
+
+      {/* ── 좌: 테이블 ──
+          ★좌석을 5줄로 쌓아 세로 530px이었다(보드 위 2줄·아래 2줄).
+            좌석을 보드 **옆이 아니라 위아래 한 줄씩**으로 모아 3줄로 줄이니 372px가 됐다.
+            좌석 순서는 그대로 시계 방향이다
             (위 왼쪽→오른쪽 = slot 2·3·4 / 아래 왼쪽→오른쪽 = slot 1·나·5). */}
-      <div className="mb-3 mx-auto max-w-[404px] md:max-w-[660px] lg:max-w-[700px]" style={{
+      <div className="mb-3 lg:mb-0 mx-auto w-full max-w-[404px] md:max-w-[660px] lg:max-w-none" style={{
         padding: 9, borderRadius: "47% / 41%",
         background: "linear-gradient(160deg,#6b4a29 0%,#4a3319 55%,#37260f 100%)",
         boxShadow: "0 16px 44px rgba(0,0,0,0.42)",
       }}>
         <div className="relative flex flex-col items-center justify-between" style={{
-          minHeight: 372, borderRadius: "46% / 40%", background: FELT,
+          minHeight: 364, borderRadius: "46% / 40%", background: FELT,
           border: `2px solid ${GOLD}66`, boxShadow: "inset 0 3px 44px rgba(0,0,0,0.5)",
-          padding: "14px 6px",
+          padding: "9px 6px",
         }}>
           {/* 위 3좌석 */}
-          <div className="flex w-full justify-between items-start px-0.5 md:px-16 lg:px-32">
+          <div className="flex w-full justify-between items-start px-0.5 md:px-16 lg:px-12">
             {renderSeat(2)}{renderSeat(3)}{renderSeat(4)}
           </div>
 
@@ -455,14 +461,13 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
           </div>
 
           {/* 아래 3좌석 — 가운데가 나 */}
-          <div className="flex w-full justify-between items-end px-0.5 md:px-16 lg:px-32">
+          <div className="flex w-full justify-between items-end px-0.5 md:px-16 lg:px-12">
             {renderSeat(1)}{renderSeat(0)}{renderSeat(5)}
           </div>
         </div>
       </div>
 
-      {/* ── 아래는 넓은 화면에서 2단: 좌 = 승률·팟오즈·버튼 / 우 = 승률이 어떻게 나왔나 ── */}
-      <div className="lg:grid lg:grid-cols-2 lg:gap-4 lg:items-start">
+      {/* ── 우: 승률·팟오즈·산출근거·버튼 전부 ── */}
       <div>
 
       {/* ── 내 승률 ── */}
@@ -597,13 +602,11 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
         </button>
       )}
 
-      </div>{/* /좌 */}
-
-      {/* ── 우: 이 승률은 어떻게 나왔나 ──
+      {/* 이 승률은 어떻게 나왔나
           ★암산(Rule of 2/4)과 시뮬레이션 승률은 **다른 것을 잰다.**
             앞은 "드로우를 맞출 확률", 뒤는 "팟을 이길 확률"이다. 맞춰도 상대가 더 좋아지면 지고,
             못 맞춰도 이길 때가 있다. 그 차이를 설명 없이 나란히 두면 오히려 틀린 걸 가르치게 된다. */}
-      <div className="rounded-xl px-4 py-3 mt-3 lg:mt-0" style={{ background: "hsl(var(--muted))" }}>
+      <div className="rounded-xl px-4 py-3 mt-3" style={{ background: "hsl(var(--muted))" }}>
         <div className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground mb-2">{ui.formulaTitle}</div>
         {outs.total > 0 ? (
           <>
@@ -636,9 +639,10 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
         )}
       </div>
 
+      </div>{/* /우 */}
       </div>{/* /2단 */}
 
-      {/* 규칙·단서 */}
+      {/* 규칙·단서 — 폭이 넓어야 읽히는 글이라 2단 아래 전체 폭에 둔다 */}
       <button onClick={() => setShowRule((v) => !v)}
         className="w-full mt-2 py-2 text-[11px] font-bold text-muted-foreground underline">
         {ui.ruleTitle} {showRule ? "▲" : "▼"}
