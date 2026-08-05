@@ -119,8 +119,8 @@ const EN_UI: QuizUI = {
 
 export default function WinRateQuizClientEn() {
   return (
-    <div className="min-h-screen max-w-md md:max-w-2xl lg:max-w-3xl mx-auto px-3 py-6">
-      <div className="text-center mb-3">
+    <div className="min-h-screen max-w-md md:max-w-2xl lg:max-w-3xl mx-auto px-3 py-3 lg:py-6">
+      <div className="text-center mb-2 lg:mb-3">
         <h1 className="font-serif text-2xl font-black text-foreground">Equity Simulator 🃏</h1>
         <p className="text-xs text-muted-foreground mt-0.5">Play it blind — then find out where you should have folded</p>
       </div>

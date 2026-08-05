@@ -130,8 +130,8 @@ export default function WinRateQuizClient() {
         description="상대 패를 모르는 실전 그대로, 단계별 내 승률과 플랍부터의 팟오즈 필요 승률을 보여주고 마지막에 어디서 폴드했어야 하는지 복기해주는 홀덤 승률 시뮬레이터."
         path="/win-rate-quiz"
       />
-      <div className="min-h-screen max-w-md md:max-w-2xl lg:max-w-3xl mx-auto px-3 py-6">
-        <div className="text-center mb-3">
+      <div className="min-h-screen max-w-md md:max-w-2xl lg:max-w-3xl mx-auto px-3 py-3 lg:py-6">
+        <div className="text-center mb-2 lg:mb-3">
           <h1 className="font-serif text-2xl font-black text-foreground">승률 시뮬레이터 🃏</h1>
           <p className="text-xs text-muted-foreground mt-0.5">상대 패는 모른 채로 — 끝나고 나서 어디서 끊었어야 했는지 복기합니다</p>
         </div>

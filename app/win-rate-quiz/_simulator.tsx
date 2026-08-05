@@ -99,16 +99,24 @@ export interface QuizUI {
 
 // ── 카드 ────────────────────────────────────────────────────────────────────
 type CardSize = "hero" | "seat" | "fold";
-const CARD_W: Record<CardSize, number> = { hero: 44, seat: 34, fold: 26 };
-const CARD_H: Record<CardSize, number> = { hero: 62, seat: 48, fold: 36 };
+/**
+ * ★모바일에서 한 치수 작다 (2026-08-05).
+ *   모바일은 위아래로 쌓이는 배치라 **세로가 비싸다.** 카드를 한 단계 줄이면 좌석 줄 높이가
+ *   내려가 테이블 전체가 짧아지고, 핵심 루프(테이블→승률→팟오즈→버튼)가 첫 화면에 들어온다.
+ *   숫자로 크기를 넘기면 화면별로 바꿀 수 없어 **클래스로 뺐다.**
+ */
+const CARD_BOX: Record<CardSize, string> = {
+  hero: "w-[38px] h-[54px] lg:w-[44px] lg:h-[62px]",
+  seat: "w-[30px] h-[42px] lg:w-[34px] lg:h-[48px]",
+  fold: "w-[24px] h-[34px] lg:w-[26px] lg:h-[36px]",
+};
 
 function PlayingCard({ card, hidden, size = "seat" }: { card?: QuizCard; hidden?: boolean; size?: CardSize }) {
-  const w = CARD_W[size], h = CARD_H[size];
   if (hidden || !card) {
     const muted = size === "fold";
     return (
-      <div style={{
-        width: w, height: h, borderRadius: 5, flexShrink: 0, opacity: muted ? 0.5 : 1,
+      <div className={CARD_BOX[size]} style={{
+        borderRadius: 5, flexShrink: 0, opacity: muted ? 0.5 : 1,
         background: muted
           ? "linear-gradient(135deg,#4b3535 0%,#584040 50%,#4b3535 100%)"
           : "linear-gradient(135deg,#7f1d1d 0%,#991b1b 50%,#7f1d1d 100%)",
@@ -128,9 +136,10 @@ function PlayingCard({ card, hidden, size = "seat" }: { card?: QuizCard; hidden?
   const color = isRed ? "#dc2626" : "#0f172a";
   const small = size !== "hero";
   return (
-    <motion.div initial={{ rotateY: 90, opacity: 0 }} animate={{ rotateY: 0, opacity: 1 }} transition={{ duration: 0.26 }}
+    <motion.div className={CARD_BOX[size]}
+      initial={{ rotateY: 90, opacity: 0 }} animate={{ rotateY: 0, opacity: 1 }} transition={{ duration: 0.26 }}
       style={{
-        width: w, height: h, background: "linear-gradient(160deg,#fff 0%,#f1f5f9 100%)", borderRadius: 5, flexShrink: 0,
+        background: "linear-gradient(160deg,#fff 0%,#f1f5f9 100%)", borderRadius: 5, flexShrink: 0,
         position: "relative", border: "1px solid #cbd5e1", boxShadow: "0 2px 7px rgba(0,0,0,0.4)",
       }}>
       <div style={{ position: "absolute", top: 2, left: 3, lineHeight: 1, textAlign: "center", color }}>
@@ -410,8 +419,8 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
 
   return (
     <>
-      <p className="text-center text-[11px] text-muted-foreground mb-1.5">{ui.tableNote}</p>
-      <div className="flex justify-center gap-2 mb-4">
+      <p className="hidden lg:block text-center text-[11px] text-muted-foreground mb-1.5">{ui.tableNote}</p>
+      <div className="flex justify-center gap-2 mb-2 lg:mb-4">
         {[2, 3, 4].map((n) => (
           <button key={n} onClick={() => changeCount(n)}
             className="px-4 py-1.5 rounded-full text-sm font-bold border-2 transition-all"
@@ -430,25 +439,34 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
       <div className="lg:grid lg:grid-cols-[404px_minmax(0,1fr)] lg:gap-4 lg:items-start">
 
       {/* ── 좌: 테이블 ──
-          ★좌석을 5줄로 쌓아 세로 530px이었다(보드 위 2줄·아래 2줄).
-            좌석을 보드 **옆이 아니라 위아래 한 줄씩**으로 모아 3줄로 줄이니 372px가 됐다.
-            좌석 순서는 그대로 시계 방향이다
-            (위 왼쪽→오른쪽 = slot 2·3·4 / 아래 왼쪽→오른쪽 = slot 1·나·5). */}
-      <div className="mb-3 lg:mb-0 mx-auto w-full max-w-[404px] md:max-w-[660px] lg:max-w-none" style={{
+          ★좌석 배치가 화면에 따라 다르다. 같은 배치를 양쪽에 쓰면 한쪽이 반드시 망가진다.
+            · **모바일(<lg)**: 위아래로 쌓이니 **세로가 비싸다** → 3줄(한 줄 3석)로 낮고 넓게
+            · **데스크톱(lg↑)**: 좌우로 나뉘어 **가로가 비싸다** → 5줄(한 줄 2석)로 좁고 길게
+            좌석 순서는 둘 다 시계 방향으로 같다(slot 1·2·3·4·5, 0=나).
+            DOM을 두 벌 그리고 CSS로 하나만 보이게 한다 — 미디어쿼리로 JS 분기하면
+            서버 렌더와 첫 클라이언트 렌더가 갈려 하이드레이션이 깨진다. */}
+      <div className="mb-2 lg:mb-0 mx-auto w-full max-w-[404px] md:max-w-[560px] lg:max-w-none" style={{
         padding: 9, borderRadius: "47% / 41%",
         background: "linear-gradient(160deg,#6b4a29 0%,#4a3319 55%,#37260f 100%)",
         boxShadow: "0 16px 44px rgba(0,0,0,0.42)",
       }}>
-        <div className="relative flex flex-col items-center justify-between" style={{
-          minHeight: 522, borderRadius: "46% / 40%", background: FELT,
-          border: `2px solid ${GOLD}66`, boxShadow: "inset 0 3px 44px rgba(0,0,0,0.5)",
-          padding: "14px 6px",
-        }}>
-          {/* 맞은편 */}
-          {renderSeat(3)}
+        <div className="relative flex flex-col items-center justify-between min-h-[318px] lg:min-h-[522px]"
+          style={{
+            borderRadius: "46% / 40%", background: FELT,
+            border: `2px solid ${GOLD}66`, boxShadow: "inset 0 3px 44px rgba(0,0,0,0.5)",
+            padding: "12px 6px",
+          }}>
 
-          {/* 위 양옆 */}
-          <div className="flex w-full justify-between items-start px-3.5 md:px-14 lg:px-4">
+          {/* ── 모바일: 위 3석 ── */}
+          <div className="flex w-full justify-between items-start px-3 sm:px-8 lg:hidden">
+            {renderSeat(2)}{renderSeat(3)}{renderSeat(4)}
+          </div>
+
+          {/* ── 데스크톱: 맞은편 + 위 양옆 ── */}
+          <div className="hidden lg:flex lg:flex-col lg:items-center lg:w-full lg:gap-0">
+            {renderSeat(3)}
+          </div>
+          <div className="hidden lg:flex w-full justify-between items-start px-4">
             {renderSeat(2)}{renderSeat(4)}
           </div>
 
@@ -463,13 +481,18 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
             </div>
           </div>
 
-          {/* 아래 양옆 */}
-          <div className="flex w-full justify-between items-end px-3.5 md:px-14 lg:px-4">
+          {/* ── 데스크톱: 아래 양옆 + 나 ── */}
+          <div className="hidden lg:flex w-full justify-between items-end px-4">
             {renderSeat(1)}{renderSeat(5)}
           </div>
+          <div className="hidden lg:flex lg:flex-col lg:items-center lg:w-full">
+            {renderSeat(0)}
+          </div>
 
-          {/* 나 */}
-          {renderSeat(0)}
+          {/* ── 모바일: 아래 3석 (가운데가 나) ── */}
+          <div className="flex w-full justify-between items-end px-3 sm:px-8 lg:hidden">
+            {renderSeat(1)}{renderSeat(0)}{renderSeat(5)}
+          </div>
         </div>
       </div>
 
@@ -477,7 +500,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
       <div>
 
       {/* ── 내 승률 ── */}
-      <div className="rounded-xl px-4 py-2.5 mb-2.5" style={{ background: "#0f172a", border: "1px solid rgba(255,255,255,0.08)" }}>
+      <div className="rounded-xl px-4 py-2 lg:py-2.5 mb-2" style={{ background: "#0f172a", border: "1px solid rgba(255,255,255,0.08)" }}>
         <div className="flex justify-between items-baseline">
           <span className="text-[10px] font-bold uppercase tracking-wider text-white/40">
             {ui.myEquity} · {ui.streets[street]}
@@ -487,7 +510,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
           </span>
         </div>
         <div className="flex items-end gap-2 mt-1">
-          <span className="text-4xl font-black tabular-nums leading-none" style={{ color: GOLD }}>
+          <span className="text-3xl lg:text-4xl font-black tabular-nums leading-none" style={{ color: GOLD }}>
             {rec.equity.toFixed(1)}<span className="text-2xl">%</span>
           </span>
           <span className="text-[11px] text-white/50 pb-1">{ui.vsOpponents(liveOpponents)}</span>
@@ -525,15 +548,15 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
           <p className="text-sm text-muted-foreground">{ui.noBet}</p>
         ) : (
           <>
-            <p className="text-xs text-muted-foreground leading-relaxed">
-              {ui.potBeforeLabel} <b className="text-foreground tabular-nums">{rec.potBefore.toLocaleString()}</b>
-              {" · "}{ui.toCallLabel} <b className="text-foreground tabular-nums">{rec.toCall.toLocaleString()}</b>
-            </p>
-            <p className="text-xs mt-1 tabular-nums text-muted-foreground">
-              {ui.requiredLabel} = {rec.toCall.toLocaleString()} ÷ {rec.potAfter.toLocaleString()} ={" "}
+            {/* 모바일에서 세로를 아끼려고 「팟·콜」과 「필요 승률 식」을 한 줄로 붙인다.
+                식은 그대로 보여준다 — 공부하러 오는 자리라 계산 과정을 지우면 안 된다 */}
+            <p className="text-xs text-muted-foreground leading-relaxed tabular-nums">
+              {ui.potBeforeLabel} <b className="text-foreground">{rec.potBefore.toLocaleString()}</b>
+              {" · "}{ui.toCallLabel} <b className="text-foreground">{rec.toCall.toLocaleString()}</b>
+              {" → "}{ui.requiredLabel} = {rec.toCall.toLocaleString()} ÷ {rec.potAfter.toLocaleString()} ={" "}
               <b className="text-foreground">{rec.required!.toFixed(oddsDigits)}%</b>
             </p>
-            <p className="text-sm font-black mt-1.5" style={{ color: rec.verdict === "call" ? GOOD : BAD }}>
+            <p className="text-sm font-black mt-1" style={{ color: rec.verdict === "call" ? GOOD : BAD }}>
               {rec.equity.toFixed(oddsDigits)}% {rec.verdict === "call" ? "≥" : "<"} {rec.required!.toFixed(oddsDigits)}% →{" "}
               {rec.verdict === "call" ? ui.verdictCall : ui.verdictFold}
             </p>
@@ -544,14 +567,19 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
         )}
       </div>
 
-      {/* ── 진행 ── */}
+      {/* ── 진행 ──
+          ★모바일에서는 하단 내비(62px) 위에 **고정**한다. 화면이 짧아 버튼이 접히면
+            스트리트를 넘길 때마다 스크롤해야 한다 — 이 도구는 클릭이 본체라 그게 제일 거슬린다.
+            데스크톱(lg↑)은 이미 첫 화면 안에 들어오므로 고정하지 않는다. */}
       {!isEnd ? (
-        <button onClick={() => setStreet((s) => Math.min(s + 1, streets.length - 1))}
-          disabled={waiting}
-          className="w-full py-4 rounded-xl font-black text-base text-black transition-all hover:brightness-110 active:scale-[0.98] disabled:opacity-50 disabled:cursor-wait"
-          style={{ background: GOLD }}>
-          {waiting ? `⏳ ${ui.loading}` : ui.revealBtn(ui.streets[street + 1])}
-        </button>
+        <div className="sticky bottom-[70px] z-20 lg:static lg:bottom-auto lg:z-auto">
+          <button onClick={() => setStreet((s) => Math.min(s + 1, streets.length - 1))}
+            disabled={waiting}
+            className="w-full py-3.5 lg:py-4 rounded-xl font-black text-base text-black transition-all hover:brightness-110 active:scale-[0.98] disabled:opacity-50 disabled:cursor-wait shadow-xl lg:shadow-none"
+            style={{ background: GOLD }}>
+            {waiting ? `⏳ ${ui.loading}` : ui.revealBtn(ui.streets[street + 1])}
+          </button>
+        </div>
       ) : result && (
         <>
           {/* 결과 */}
@@ -591,11 +619,13 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
             <p className="text-[11px] text-muted-foreground mt-1">{ui.reviewInvested(result.invested, result.finalPot)}</p>
           </div>
 
-          <button onClick={newHand}
-            className="w-full py-4 rounded-xl font-black text-base text-black transition-all hover:brightness-110 active:scale-[0.98]"
-            style={{ background: GOLD }}>
-            {ui.newHandBtn}
-          </button>
+          <div className="sticky bottom-[70px] z-20 lg:static lg:bottom-auto lg:z-auto">
+            <button onClick={newHand}
+              className="w-full py-3.5 lg:py-4 rounded-xl font-black text-base text-black transition-all hover:brightness-110 active:scale-[0.98] shadow-xl lg:shadow-none"
+              style={{ background: GOLD }}>
+              {ui.newHandBtn}
+            </button>
+          </div>
         </>
       )}
 
