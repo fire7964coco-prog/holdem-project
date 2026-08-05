@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect, useState, type ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { BG, BORDER, INK, MUTED, FLAG, FONT_SANS, FONT_SERIF } from "@/lib/theme";
-import SideRail, { SIDE_RAIL_WIDTH } from "@/components/side-rail";
+import SideRail, { SIDE_RAIL_WIDTH, hubPagesFor, hubHeadingFor } from "@/components/side-rail";
 import BottomTabBar, { tabLabels } from "@/components/bottom-tab-bar";
 import { hubLabels } from "@/lib/hub-i18n";
 import { CHROME, type SecondaryLocale } from "@/lib/intl";
@@ -118,6 +119,53 @@ function AuthSlot({ base, loginLabel }: { base: string; loginLabel: string }) {
   );
 }
 
+/**
+ * 모바일 상단 가로 탭. 목록은 좌측 레일과 같은 `hubPagesFor(locale)`이다.
+ *
+ * ★활성 표시는 **라벨이 아니라 경로**로 잡는다. `title` prop과 라벨이 다른 페이지가 있고
+ *   (예: 셸 title "연습장" vs 레일 라벨 "홀덤 연습장") 라벨로 맞추면 조용히 어긋난다.
+ * ★활성 칩이 화면 밖에 있으면 스크롤해 보여준다 — 목록 끝쪽 페이지(연습장 등)에 들어오면
+ *   기본 스크롤 위치에서는 자기 칩이 안 보여 "여기가 어디"가 안 읽힌다.
+ */
+function HubTabsMobile({ tabs, heading }: { tabs: readonly { href: string; icon: string; label: string }[]; heading: string }) {
+  const pathname = usePathname();
+  const activeRef = useRef<HTMLAnchorElement | null>(null);
+  useEffect(() => {
+    activeRef.current?.scrollIntoView({ block: "nearest", inline: "center" });
+  }, [pathname]);
+  return (
+    <nav
+      className="lg:hidden overflow-x-auto"
+      style={{ borderTop: `1px solid ${BORDER}`, scrollbarWidth: "none" }}
+      aria-label={heading}
+    >
+      <div className="flex gap-1.5 px-3 py-1.5 w-max">
+        {tabs.map((t) => {
+          const target = t.href.split("#")[0];
+          const active = pathname === target;
+          return (
+            <Link
+              key={t.href}
+              href={t.href}
+              ref={active ? activeRef : undefined}
+              aria-current={active ? "page" : undefined}
+              className="flex-shrink-0 rounded-full px-2.5 py-1 text-[12px] whitespace-nowrap transition-opacity active:opacity-70"
+              style={
+                active
+                  ? { background: INK, color: BG, fontWeight: 700, fontFamily: FONT_SANS }
+                  : { border: `1px solid ${BORDER}`, color: MUTED, fontFamily: FONT_SANS }
+              }
+            >
+              <span aria-hidden className="me-1">{t.icon}</span>
+              {t.label}
+            </Link>
+          );
+        })}
+      </div>
+    </nav>
+  );
+}
+
 export default function HubShell({
   title,
   children,
@@ -138,6 +186,7 @@ export default function HubShell({
 }) {
   const base = locale ? `/${locale}` : "";
   const L = hubLabels(locale);
+  const hubTabs = hubPagesFor(locale);
   return (
     <div style={{ background: BG, fontFamily: FONT_SANS }} className="min-h-screen">
       {/* 마스트헤드 — 홈과 동일 규격. 모바일은 브랜드+로그인 한 줄로 좁아진다. */}
@@ -204,6 +253,16 @@ export default function HubShell({
             <AuthSlot base={base} loginLabel={L.login} />
           </div>
         </div>
+
+        {/* ── 모바일 전용 가로 스크롤 탭 (2026-08-05, 사장님 지적) ──
+            ★위 `navTabs`는 `hidden lg:flex`고, 도구·가이드 링크가 있는 좌측 레일도
+              `hidden lg:block`이다. 그래서 **모바일에서는 둘 다 사라져** 뒤로가기 말고는
+              다른 페이지로 갈 방법이 없었다. 하단 탭바는 커뮤니티 4개뿐이라 대체가 안 된다.
+              실측(2026-08-05): /win-rate-quiz·/glossary 첫 화면의 내부 링크가 홈·로그인·
+              커뮤니티 탭 5개뿐이었고, 도구 링크는 푸터(스크롤 1,254px / 계산기는 **7,768px**)에만 있었다.
+            ★목록은 좌측 레일과 **같은 출처**(`hubPagesFor`)를 쓴다 — 여기 또 적으면 갈라진다.
+            ★sticky 헤더 안에 둔다. 긴 페이지 중간에서 닿지 않으면 고친 의미가 없다. */}
+        {hubTabs.length > 0 && <HubTabsMobile tabs={hubTabs} heading={hubHeadingFor(locale)} />}
       </header>
 
       {/* 3열 — 홈과 동일 (좌 200 / 본문 flex-1 / 우 240 · gap-6 · max-w-screen-xl).

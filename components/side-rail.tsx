@@ -113,6 +113,29 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
 const HUB_HEADING: Record<string, string> = { en: "Guides", ja: "ガイド", es: "Guías" };
 
 /**
+ * 그 로케일의 허브 메뉴 — **좌측 레일과 모바일 상단 탭이 같은 목록을 쓴다.**
+ *
+ * ★2026-08-05: 모바일에서는 이 레일이 `hidden lg:block`으로 사라지는데, 하단 탭바는
+ *   커뮤니티 4개(피드·채팅·이벤트·프로필)뿐이라 도구·가이드로 갈 방법이 **푸터밖에** 없었다.
+ *   `/calculator`에서는 7,700px을 내려가야 링크가 나왔다(실측). 그래서 hub-shell이
+ *   모바일 전용 가로 탭을 그리는데, 목록을 거기 또 적으면 두 벌이 되어 갈라진다.
+ * 🔴 **여기가 단일 출처다.** 없는 라우트를 새로 적지 말 것 — ja·es에 도구 페이지가
+ *   없어서 2개뿐인 것이지 빠뜨린 게 아니다(위 LOCALE_HUB_PAGES 주석).
+ */
+export function hubPagesFor(
+  locale: string | null | undefined
+): readonly { href: string; icon: string; label: string }[] {
+  if (!locale) return HUB_PAGES;
+  return LOCALE_HUB_PAGES[locale] ?? [];
+}
+
+/** 그 메뉴의 이름 — 레일 헤딩과 모바일 탭의 aria-label이 같은 문구를 쓴다(검증된 값만) */
+export function hubHeadingFor(locale: string | null | undefined): string {
+  if (!locale) return "홀덤 가이드";
+  return HUB_HEADING[locale] ?? HUB_HEADING.en;
+}
+
+/**
  * 정책·신뢰 페이지. 홈 레일 바닥과 모바일 피드 끝에 쓴다.
  * 그 외 페이지에서는 진짜 푸터(components/footer.tsx)가 같은 링크를 갖는다 — 단일 소스로 두지
  * 않은 이유는 footer.tsx가 서버 컴포넌트고 이쪽은 "use client"라 색 토큰 계통이 다르기 때문.
