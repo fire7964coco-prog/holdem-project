@@ -27,6 +27,9 @@ const EN_UI: QuizUI = {
   vsOpponents: (n) => (n === 0 ? "no one left" : `against ${n} opponent${n > 1 ? "s" : ""}`),
   basisRandom: "vs random hands",
   basisRange: "vs hands matching their actions",
+  revealedLabel: "👀 Against the exact hands shown",
+  revealedNote: (gap) =>
+    `The number above assumes you cannot see their cards, which is why it is ${gap}%p apart. The top figure is the one you would actually decide on.`,
 
   potOddsTitle: "Pot odds — the equity a call needs to break even",
   potLabel: "Pot",

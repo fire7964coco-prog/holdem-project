@@ -30,6 +30,9 @@ const KO_UI: QuizUI = {
   vsOpponents: (n) => (n === 0 ? "상대 없음" : `상대 ${n}명 상대로`),
   basisRandom: "상대 무작위 기준",
   basisRange: "액션 일치 레인지 기준",
+  revealedLabel: "👀 공개된 저 패들 상대로는",
+  revealedNote: (gap) =>
+    `위 승률은 상대 패를 모른다고 보고 낸 값이라 ${gap}%p 차이가 납니다. 실전에서 판단할 때 쓰는 건 위쪽 숫자입니다.`,
 
   potOddsTitle: "팟오즈 — 콜이 본전이 되는 승률",
   potLabel: "팟",

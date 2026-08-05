@@ -223,6 +223,25 @@ export async function heroEquity(
   return n ? ((win + tie / 2) / n) * 100 : 0;
 }
 
+/**
+ * **공개된 상대 패**를 그대로 놓고 계산한 내 승률.
+ *
+ * ★2026-08-05 신설 — 「상대 패 보기」를 눌러도 화면 승률은 레인지 기준이라
+ *   보이는 카드와 무관한 숫자가 된다(실측 스팟에서 20.1% vs 27.9%, 7.8%p 차이).
+ *   두 값을 나란히 보여주기 위한 것이다.
+ * ★구현은 `heroEquity`를 그대로 쓴다 — 상대마다 **후보가 한 개뿐인 레인지**를 주면
+ *   그 패로 고정된다. 청크 양보도 함께 물려받아 화면이 안 얼어붙는다.
+ */
+export function heroEquityVsKnown(
+  heroCards: Card[],
+  boardCards: Card[],
+  oppHands: Card[][],
+  samples: number
+): Promise<number> {
+  const pools = oppHands.map((h) => [h.map(toNum)]);
+  return heroEquity(heroCards, boardCards, oppHands.length, pools, samples);
+}
+
 // ── 한 판 전체 ───────────────────────────────────────────────────────────────
 
 export interface StreetRecord {

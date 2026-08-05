@@ -4,7 +4,7 @@ import { useState, useMemo, useEffect, useCallback, type ReactNode } from "react
 import { motion } from "framer-motion";
 import { describeHand, handCategory, winnersAt, type Card as QuizCard, type HandNames } from "./_equity";
 import { makeTableSim, positionAt, type TableSim } from "./_table";
-import { runHand, type HandResult, type StreetRecord, type Action } from "./_engine";
+import { runHand, heroEquityVsKnown, SAMPLES, type HandResult, type StreetRecord, type Action } from "./_engine";
 
 /**
  * 승률 시뮬레이터 — **실전 모드**. 한국어판·영어판이 공유한다.
@@ -48,6 +48,10 @@ export interface QuizUI {
   vsOpponents: (n: number) => string;
   basisRandom: string;
   basisRange: string;
+  /** 상대 패를 공개했을 때 나란히 뜨는 "그 패들 상대 승률" */
+  revealedLabel: string;
+  /** 두 값의 차이(%p)를 받아 왜 다른지 한 줄로 설명 */
+  revealedNote: (gapPct: string) => string;
   /** 팟오즈 박스 */
   potOddsTitle: string;
   potLabel: string;
@@ -197,6 +201,15 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
   const [street, setStreet] = useState(0);
   const [reveal, setReveal] = useState(false);
   const [showRule, setShowRule] = useState(false);
+  /**
+   * 상대 패를 공개했을 때 **그 패들 상대로의** 승률.
+   *
+   * ★왜 따로 두나 (2026-08-05, 사장님 지적) — 카드를 까도 화면의 승률은 그대로 레인지 기준이라
+   *   "보이는 카드와 무관한 숫자"가 된다. 실제로 캡처 스팟에서 레인지 20.1% vs 실제 27.9%로
+   *   **7.8%p 벌어졌다.** 두 값을 나란히 보여주면 오해가 사라질 뿐 아니라,
+   *   *"모르고 판단하면 20%, 까보니 28%"* 가 이 도구에서 가장 좋은 교육 장면이 된다.
+   */
+  const [revealedEq, setRevealedEq] = useState<number | null>(null);
 
   /**
    * ★계산은 스트리트 단위로 흘려보낸다 (2026-08-05 성능 검수에서 고침).
@@ -225,11 +238,11 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
   }, [handId, preflopCount]);
 
   const newHand = useCallback(() => {
-    setStreet(0); setReveal(false); setSim(null); setResult(null); setStreets([]);
+    setStreet(0); setReveal(false); setSim(null); setResult(null); setStreets([]); setRevealedEq(null);
     setHandId((id) => id + 1);
   }, []);
   const changeCount = useCallback((n: number) => {
-    setStreet(0); setReveal(false); setSim(null); setResult(null); setStreets([]);
+    setStreet(0); setReveal(false); setSim(null); setResult(null); setStreets([]); setRevealedEq(null);
     setPreflopCount(n);
   }, []);
 
@@ -259,6 +272,32 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
     }
     return s;
   }, [streets, street]);
+
+  /** 지금 살아 있는 상대들의 실제 홀카드 (공개 승률 계산용) */
+  const liveOppHands = useMemo(() => {
+    if (!sim) return [];
+    return sim.activeSlots
+      .filter((slot) => slot !== 0 && !foldedSlots.has(slot))
+      .map((slot) => sim.hands[slotToIdx[slot]]);
+  }, [sim, foldedSlots, slotToIdx]);
+
+  /**
+   * 카드를 공개했을 때만 "그 패들 상대 승률"을 계산한다.
+   * 안 봤으면 계산도 안 한다 — 보지도 않을 값에 표본을 쓸 이유가 없다.
+   */
+  useEffect(() => {
+    if (!cardsUp || !sim || !liveOppHands.length) { setRevealedEq(null); return; }
+    let cancelled = false;
+    setRevealedEq(null);
+    (async () => {
+      const e = await heroEquityVsKnown(
+        sim.hands[0], sim.board.slice(0, boardShown), liveOppHands,
+        boardShown === 0 ? SAMPLES.preflop : SAMPLES.postflop
+      );
+      if (!cancelled) setRevealedEq(e);
+    })();
+    return () => { cancelled = true; };
+  }, [cardsUp, sim, liveOppHands, boardShown]);
 
   const nameOf = useCallback((slot: number) => {
     if (!sim) return "";
@@ -421,6 +460,25 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
           <motion.div className="h-full" style={{ background: GOLD }}
             initial={false} animate={{ width: `${rec.equity}%` }} transition={{ duration: 0.5, ease: "easeOut" }} />
         </div>
+
+        {/* 카드를 공개했을 때만 — 같은 화면의 두 숫자가 왜 다른지가 이 도구의 핵심 교육 장면이다 */}
+        {cardsUp && revealedEq !== null && (
+          <div className="mt-2.5 pt-2.5 border-t border-white/10">
+            <div className="flex items-baseline justify-between gap-2">
+              <span className="text-[11px] text-white/55">{ui.revealedLabel}</span>
+              <span className="text-lg font-black tabular-nums" style={{ color: "#7dd3fc" }}>
+                {revealedEq.toFixed(1)}%
+              </span>
+            </div>
+            <div className="h-1.5 rounded-full overflow-hidden bg-black/40 mt-1.5">
+              <motion.div className="h-full" style={{ background: "#7dd3fc" }}
+                initial={false} animate={{ width: `${revealedEq}%` }} transition={{ duration: 0.5, ease: "easeOut" }} />
+            </div>
+            <p className="text-[10px] text-white/40 mt-1.5 leading-snug">
+              {ui.revealedNote(Math.abs(revealedEq - rec.equity).toFixed(1))}
+            </p>
+          </div>
+        )}
       </div>
 
       {/* ── 팟오즈 ── */}
