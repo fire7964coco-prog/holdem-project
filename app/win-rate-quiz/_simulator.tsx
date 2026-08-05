@@ -4,7 +4,10 @@ import { useState, useMemo, useEffect, useCallback, type ReactNode } from "react
 import { motion } from "framer-motion";
 import { describeHand, handCategory, winnersAt, type Card as QuizCard, type HandNames } from "./_equity";
 import { makeTableSim, positionAt, type TableSim } from "./_table";
-import { runHand, heroEquityVsKnown, SAMPLES, type HandResult, type StreetRecord, type Action } from "./_engine";
+import {
+  runHand, heroEquityVsKnown, heroOuts, ruleOf24, SAMPLES,
+  type HandResult, type StreetRecord, type Action,
+} from "./_engine";
 
 /**
  * 승률 시뮬레이터 — **실전 모드**. 한국어판·영어판이 공유한다.
@@ -78,6 +81,16 @@ export interface QuizUI {
   reviewNoMistake: string;
   reviewMistake: (street: string) => string;
   reviewInvested: (invested: number, pot: number) => string;
+  /** 승률이 어떻게 나왔는지 보여주는 오른쪽 패널 */
+  formulaTitle: string;
+  outsLabel: (n: number) => string;
+  outsBreak: (flush: number, straight: number) => string;
+  hitLabel: string;
+  winLabel2: string;
+  /** "9 × 4 − 1" 같은 식 */
+  formulaExpr: (outs: number, toCome: number) => string;
+  formulaCaveat: string;
+  noDrawNote: (samples: string) => string;
   /** 규칙·단서 */
   ruleTitle: string;
   ruleText: ReactNode;
@@ -389,6 +402,9 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
   }
 
   const liveOpponents = rec.opponentsBefore - rec.foldedSlots.length;
+  /** 내 드로우 완성 카드 수 — 지금 보이는 보드 기준 */
+  const outs = heroOuts(sim.hands[0], sim.board.slice(0, boardShown));
+  const hitPct = ruleOf24(outs.total, outs.toCome);
   /** 판정줄 자릿수 — 1자리 반올림으로 두 값이 같아지면("25.0% < 25.0%") 2자리로 늘린다. 판정 자체는 전정밀 비교 */
   const oddsDigits = rec.required !== null && rec.equity.toFixed(1) === rec.required.toFixed(1) ? 2 : 1;
 
@@ -407,22 +423,27 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
         ))}
       </div>
 
-      {/* ── 테이블 ── */}
-      <div className="mb-4 mx-auto max-w-[404px] md:max-w-[660px]" style={{
+      {/* ── 테이블 ──
+          ★2026-08-05: 좌석을 5줄로 쌓아 세로 530px이었다(보드 위 2줄·아래 2줄).
+            좌석을 보드 **옆이 아니라 위아래 한 줄씩**으로 모아 3줄로 줄이니 370px가 됐고,
+            가로가 세로보다 길어져 실제 포커 테이블에 가까워졌다. 좌석 순서는 그대로 시계 방향이다
+            (위 왼쪽→오른쪽 = slot 2·3·4 / 아래 왼쪽→오른쪽 = slot 1·나·5). */}
+      <div className="mb-3 mx-auto max-w-[404px] md:max-w-[660px] lg:max-w-[700px]" style={{
         padding: 9, borderRadius: "47% / 41%",
         background: "linear-gradient(160deg,#6b4a29 0%,#4a3319 55%,#37260f 100%)",
         boxShadow: "0 16px 44px rgba(0,0,0,0.42)",
       }}>
         <div className="relative flex flex-col items-center justify-between" style={{
-          minHeight: 530, borderRadius: "46% / 40%", background: FELT,
+          minHeight: 372, borderRadius: "46% / 40%", background: FELT,
           border: `2px solid ${GOLD}66`, boxShadow: "inset 0 3px 44px rgba(0,0,0,0.5)",
           padding: "14px 6px",
         }}>
-          {renderSeat(3)}
-          <div className="flex w-full justify-between items-start px-3.5 md:px-14">
-            {renderSeat(2)}{renderSeat(4)}
+          {/* 위 3좌석 */}
+          <div className="flex w-full justify-between items-start px-0.5 md:px-16 lg:px-32">
+            {renderSeat(2)}{renderSeat(3)}{renderSeat(4)}
           </div>
 
+          {/* 커뮤니티 카드 */}
           <div className="flex flex-col items-center gap-1.5">
             <div className="text-[9px] font-bold uppercase tracking-[0.25em] text-white/45">{ui.streets[street]}</div>
             <div className="flex gap-1.5 justify-center">
@@ -433,15 +454,19 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
             </div>
           </div>
 
-          <div className="flex w-full justify-between items-end px-3.5 md:px-14">
-            {renderSeat(1)}{renderSeat(5)}
+          {/* 아래 3좌석 — 가운데가 나 */}
+          <div className="flex w-full justify-between items-end px-0.5 md:px-16 lg:px-32">
+            {renderSeat(1)}{renderSeat(0)}{renderSeat(5)}
           </div>
-          {renderSeat(0)}
         </div>
       </div>
 
+      {/* ── 아래는 넓은 화면에서 2단: 좌 = 승률·팟오즈·버튼 / 우 = 승률이 어떻게 나왔나 ── */}
+      <div className="lg:grid lg:grid-cols-2 lg:gap-4 lg:items-start">
+      <div>
+
       {/* ── 내 승률 ── */}
-      <div className="rounded-xl px-4 py-3 mb-3" style={{ background: "#0f172a", border: "1px solid rgba(255,255,255,0.08)" }}>
+      <div className="rounded-xl px-4 py-2.5 mb-2.5" style={{ background: "#0f172a", border: "1px solid rgba(255,255,255,0.08)" }}>
         <div className="flex justify-between items-baseline">
           <span className="text-[10px] font-bold uppercase tracking-wider text-white/40">
             {ui.myEquity} · {ui.streets[street]}
@@ -571,6 +596,47 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
           {reveal ? ui.hideCards : ui.showCards}
         </button>
       )}
+
+      </div>{/* /좌 */}
+
+      {/* ── 우: 이 승률은 어떻게 나왔나 ──
+          ★암산(Rule of 2/4)과 시뮬레이션 승률은 **다른 것을 잰다.**
+            앞은 "드로우를 맞출 확률", 뒤는 "팟을 이길 확률"이다. 맞춰도 상대가 더 좋아지면 지고,
+            못 맞춰도 이길 때가 있다. 그 차이를 설명 없이 나란히 두면 오히려 틀린 걸 가르치게 된다. */}
+      <div className="rounded-xl px-4 py-3 mt-3 lg:mt-0" style={{ background: "hsl(var(--muted))" }}>
+        <div className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground mb-2">{ui.formulaTitle}</div>
+        {outs.total > 0 ? (
+          <>
+            <p className="text-sm font-black text-foreground">{ui.outsLabel(outs.total)}</p>
+            <p className="text-[11px] text-muted-foreground mb-2.5">{ui.outsBreak(outs.flush, outs.straight)}</p>
+
+            <div className="rounded-lg px-3 py-2 mb-1.5" style={{ background: "hsl(var(--background))" }}>
+              <div className="flex justify-between items-baseline gap-2">
+                <span className="text-[11px] text-muted-foreground">{ui.hitLabel}</span>
+                <span className="text-lg font-black tabular-nums text-foreground">{hitPct}%</span>
+              </div>
+              <p className="text-[10px] text-muted-foreground tabular-nums mt-0.5">
+                {ui.formulaExpr(outs.total, outs.toCome)} = {hitPct}%
+              </p>
+            </div>
+
+            <div className="rounded-lg px-3 py-2 mb-2" style={{ background: "hsl(var(--background))" }}>
+              <div className="flex justify-between items-baseline gap-2">
+                <span className="text-[11px] text-muted-foreground">{ui.winLabel2}</span>
+                <span className="text-lg font-black tabular-nums text-primary">{rec.equity.toFixed(1)}%</span>
+              </div>
+            </div>
+
+            <p className="text-[10.5px] text-muted-foreground leading-snug">{ui.formulaCaveat}</p>
+          </>
+        ) : (
+          <p className="text-[11.5px] text-muted-foreground leading-relaxed">
+            {ui.noDrawNote(SAMPLES.postflop.toLocaleString())}
+          </p>
+        )}
+      </div>
+
+      </div>{/* /2단 */}
 
       {/* 규칙·단서 */}
       <button onClick={() => setShowRule((v) => !v)}

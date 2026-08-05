@@ -270,6 +270,89 @@ export function heroEquityVsKnown(
   return heroEquity(heroCards, boardCards, oppHands.length, pools, samples);
 }
 
+// ── 아웃츠와 실전 암산(Rule of 2 and 4) ──────────────────────────────────────
+
+export interface Outs {
+  /** 플러시를 완성시키는 카드 수 */
+  flush: number;
+  /** 스트레이트를 완성시키는 카드 수 */
+  straight: number;
+  /** 둘 중 하나라도 완성시키는 카드 수 (겹치는 카드는 한 번만 센다) */
+  total: number;
+  /** 아직 볼 카드 수 — 플랍이면 2장, 턴이면 1장 */
+  toCome: number;
+}
+
+/**
+ * 내 드로우를 완성시키는 카드 수.
+ *
+ * ★"이기는 카드"가 아니라 **"드로우를 완성시키는 카드"**를 센다. 상대 패를 모르는 상태에서
+ *   "이 카드가 오면 이긴다"는 셀 수 없고, 그렇게 세면 [[블로커]] 함정에 빠진다
+ *   (내 플러시를 만드는 카드가 보드를 페어시켜 상대에게 풀하우스를 줄 수도 있다).
+ *   화면에서도 "완성 카드"라고 부르고, 맞아도 이긴다는 보장은 없다고 밝힌다.
+ * ★플러시는 **내 홀카드가 그 무늬에 기여할 때만** 센다. 보드에만 4장이면 5번째가 와도
+ *   전원이 같은 플러시라 내 아웃츠가 아니다.
+ */
+export function heroOuts(heroCards: Card[], boardCards: Card[]): Outs {
+  const h = heroCards.map(toNum);
+  const b = boardCards.map(toNum);
+  const seen = [...h, ...b];
+  const toCome = 5 - b.length;
+  if (b.length < 3 || toCome === 0) return { flush: 0, straight: 0, total: 0, toCome };
+
+  const suitCount = [0, 0, 0, 0];
+  const heroSuit = [0, 0, 0, 0];
+  for (const c of seen) suitCount[c[1]]++;
+  for (const c of h) heroSuit[c[1]]++;
+
+  const ranksNow = new Set(seen.map((c) => c[0]));
+  const hasStraight = (set: Set<number>) => {
+    const s = new Set(set);
+    if (s.has(14)) s.add(1); // 휠(A-2-3-4-5)
+    for (let lo = 1; lo <= 10; lo++) {
+      let n = 0;
+      for (let k = 0; k < 5; k++) if (s.has(lo + k)) n++;
+      if (n === 5) return true;
+    }
+    return false;
+  };
+  const alreadyStraight = hasStraight(ranksNow);
+
+  const dead = new Set(seen.map(keyOf));
+  let flush = 0, straight = 0, total = 0;
+  for (let r = 2; r <= 14; r++) {
+    for (let s = 0; s < 4; s++) {
+      if (dead.has(r * 4 + s)) continue;
+      const makesFlush = suitCount[s] === 4 && heroSuit[s] > 0;
+      let makesStraight = false;
+      if (!alreadyStraight && !ranksNow.has(r)) {
+        const next = new Set(ranksNow);
+        next.add(r);
+        makesStraight = hasStraight(next);
+      } else if (!alreadyStraight && ranksNow.has(r)) {
+        makesStraight = false; // 이미 있는 랭크는 스트레이트를 새로 만들지 못한다
+      }
+      if (makesFlush) flush++;
+      if (makesStraight) straight++;
+      if (makesFlush || makesStraight) total++;
+    }
+  }
+  return { flush, straight, total, toCome };
+}
+
+/**
+ * 실전 암산 — 아웃츠 × 2 / × 4.
+ *
+ * ★사이트 팟오즈 글(`lib/posts.ts` `holdem-pot-odds-calculation`)이 가르치는 것과 **같은 식**을 쓴다.
+ *   두 장 볼 땐 ×4, 한 장이면 ×2, **아웃츠가 8을 넘으면 (아웃츠 − 8)만큼 뺀다.**
+ *   9아웃 플러시 드로우 → 36 − 1 = 35% (실제 34.97%)로 잘 맞는다.
+ */
+export function ruleOf24(outs: number, toCome: number): number {
+  if (outs <= 0 || toCome <= 0) return 0;
+  if (toCome === 1) return outs * 2;
+  return outs * 4 - Math.max(0, outs - 8);
+}
+
 // ── 한 판 전체 ───────────────────────────────────────────────────────────────
 
 export interface StreetRecord {

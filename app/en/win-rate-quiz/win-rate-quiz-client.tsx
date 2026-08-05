@@ -56,6 +56,19 @@ const EN_UI: QuizUI = {
   reviewMistake: (street) => `⚠️ By the ${street.toLowerCase()}, folding was already correct. That was your spot to get out.`,
   reviewInvested: (invested, pot) => `You put in ${invested.toLocaleString()} · final pot ${pot.toLocaleString()}`,
 
+  formulaTitle: "📐 Where this number comes from",
+  outsLabel: (n) => `${n} card${n > 1 ? "s" : ""} complete your draw`,
+  outsBreak: (f, s) =>
+    [f > 0 ? `${f} for the flush` : "", s > 0 ? `${s} for the straight` : ""].filter(Boolean).join(" · "),
+  hitLabel: "Chance you hit the draw (table math)",
+  winLabel2: "Chance you win the pot (simulated)",
+  formulaExpr: (outs, toCome) =>
+    toCome === 1 ? `${outs} × 2` : outs > 8 ? `${outs} × 4 − ${outs - 8}` : `${outs} × 4`,
+  formulaCaveat:
+    "These measure different things. The top one is the chance you HIT; the bottom is the chance you WIN. You can hit and still lose if an opponent improves further, and you can miss and still win. The verdict uses the bottom number.",
+  noDrawNote: (samples) =>
+    `You have no flush or straight draw right now, so the “outs × 2/4” shortcut does not apply here. The equity above comes from running ${samples} hands against every holding that matches the actions you saw.`,
+
   ruleTitle: "What this simulator assumes",
   ruleText: (
     <>
@@ -106,7 +119,7 @@ const EN_UI: QuizUI = {
 
 export default function WinRateQuizClientEn() {
   return (
-    <div className="min-h-screen max-w-md md:max-w-2xl mx-auto px-3 py-6">
+    <div className="min-h-screen max-w-md md:max-w-2xl lg:max-w-3xl mx-auto px-3 py-6">
       <div className="text-center mb-3">
         <h1 className="font-serif text-2xl font-black text-foreground">Equity Simulator 🃏</h1>
         <p className="text-xs text-muted-foreground mt-0.5">Play it blind — then find out where you should have folded</p>

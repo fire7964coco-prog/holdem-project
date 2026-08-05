@@ -59,6 +59,19 @@ const KO_UI: QuizUI = {
   reviewMistake: (street) => `⚠️ ${street}에서 이미 폴드가 맞았습니다. 여기서 끊었어야 합니다.`,
   reviewInvested: (invested, pot) => `내가 넣은 돈 ${invested.toLocaleString()} · 최종 팟 ${pot.toLocaleString()}`,
 
+  formulaTitle: "📐 이 승률은 어떻게 나왔나",
+  outsLabel: (n) => `완성 카드 ${n}장`,
+  outsBreak: (f, s) =>
+    [f > 0 ? `플러시 ${f}장` : "", s > 0 ? `스트레이트 ${s}장` : ""].filter(Boolean).join(" · "),
+  hitLabel: "드로우를 맞출 확률 (실전 암산)",
+  winLabel2: "팟을 이길 확률 (시뮬레이션)",
+  formulaExpr: (outs, toCome) =>
+    toCome === 1 ? `${outs} × 2` : outs > 8 ? `${outs} × 4 − ${outs - 8}` : `${outs} × 4`,
+  formulaCaveat:
+    "두 숫자는 서로 다른 걸 잽니다. 위는 «맞출» 확률이고 아래는 «이길» 확률이라, 맞춰도 상대가 더 좋아지면 지고 못 맞춰도 이길 때가 있습니다. 콜·폴드 판정에 쓰는 건 아래 숫자입니다.",
+  noDrawNote: (samples) =>
+    `지금은 플러시·스트레이트 드로우가 없어서 «아웃츠 × 2/4» 암산이 쓰이지 않는 자리입니다. 위 승률은 상대가 보여준 액션에 맞는 패 전체를 상대로 ${samples}회 돌려 낸 값입니다.`,
+
   ruleTitle: "이 시뮬레이터가 두는 가정",
   ruleText: (
     <>
@@ -117,7 +130,7 @@ export default function WinRateQuizClient() {
         description="상대 패를 모르는 실전 그대로, 단계별 내 승률과 플랍부터의 팟오즈 필요 승률을 보여주고 마지막에 어디서 폴드했어야 하는지 복기해주는 홀덤 승률 시뮬레이터."
         path="/win-rate-quiz"
       />
-      <div className="min-h-screen max-w-md md:max-w-2xl mx-auto px-3 py-6">
+      <div className="min-h-screen max-w-md md:max-w-2xl lg:max-w-3xl mx-auto px-3 py-6">
         <div className="text-center mb-3">
           <h1 className="font-serif text-2xl font-black text-foreground">승률 시뮬레이터 🃏</h1>
           <p className="text-xs text-muted-foreground mt-0.5">상대 패는 모른 채로 — 끝나고 나서 어디서 끊었어야 했는지 복기합니다</p>
