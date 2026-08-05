@@ -20,9 +20,9 @@ export const metadata: Metadata = {
    * ⚠ 나머지 EN 도구 페이지(/en/calculator·quiz·glossary·hand-chart·ranking)도 같은 상태다.
    *   이번엔 새로 만든 이 페이지만 바로잡았다 — 나머지는 제목 문구 결정이 필요해 별도 건.
    */
-  title: { absolute: "Poker Equity Simulator — Watch the Odds Swing Card by Card | HoldemMaster" },
+  title: { absolute: "Poker Equity Simulator — Find Out Where You Should Have Folded | HoldemMaster" },
   description:
-    "Deal a 6-max hand and see exactly how each player's equity moves from preflop to the river. Every percentage is calculated, not estimated.",
+    "Play a 6-max hand blind, like real poker. See your equity and the pot odds you need on every street, then review exactly where folding became the right call.",
   robots: { index: true, follow: true },
   alternates: {
     canonical: `${SITE}/en/win-rate-quiz`,
@@ -35,9 +35,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: `${SITE}/en/win-rate-quiz`,
-    title: "Poker Equity Simulator — Watch the Odds Swing Card by Card | HoldemMaster",
+    title: "Poker Equity Simulator — Find Out Where You Should Have Folded | HoldemMaster",
     description:
-      "See how one card changes everyone's chances. 6-max table, exact equity from preflop to river.",
+      "Their cards stay hidden, just like real poker. Track your equity and pot odds street by street, then review where you should have folded.",
     siteName: "HoldemMaster",
     locale: "en_US",
     images: [{ url: "/opengraph.jpg", width: 1200, height: 630 }],

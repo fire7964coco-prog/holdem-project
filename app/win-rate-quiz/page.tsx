@@ -5,16 +5,16 @@ import HubPage from "@/components/hub-page";
 const SITE = "https://www.holdemmaster.com";
 
 export const metadata: Metadata = {
-  title: "홀덤 승률 시뮬레이터 — 카드가 열릴 때마다 승률이 바뀐다",
+  title: "홀덤 승률 시뮬레이터 — 어디서 끊었어야 했는지 복기까지",
   description:
-    "6인 테이블에서 끝까지 붙은 사람들의 승률이 프리플랍·플랍·턴·리버 카드가 열릴 때마다 어떻게 변하는지 눈으로 확인하는 홀덤 승률 시뮬레이터. 정확히 계산된 확률입니다.",
+    "상대 패를 모르는 실전 그대로, 프리플랍부터 리버까지 내 승률과 팟오즈 필요 승률을 단계별로 보여주고 마지막에 어디서 폴드했어야 하는지 복기해주는 홀덤 승률 시뮬레이터.",
   alternates: { canonical: `${SITE}/win-rate-quiz` },
   openGraph: {
     type: "website",
     url: `${SITE}/win-rate-quiz`,
-    title: "홀덤 승률 시뮬레이터 — 카드가 열릴 때마다 승률이 바뀐다 | 홀덤마스터",
+    title: "홀덤 승률 시뮬레이터 — 어디서 끊었어야 했는지 복기까지 | 홀덤마스터",
     description:
-      "프리플랍부터 리버까지, 카드 한 장에 각 플레이어 승률이 어떻게 바뀌는지 눈으로 보는 홀덤 승률 시뮬레이터. 6인 테이블, 정확히 계산된 실제 확률.",
+      "상대 패는 가린 채 프리플랍부터 리버까지 내 승률과 팟오즈를 단계별로 보여주고, 끝나면 어디서 폴드했어야 하는지 복기해주는 홀덤 승률 시뮬레이터.",
     siteName: "홀덤마스터",
     locale: "ko_KR",
     images: [{ url: "/opengraph.jpg", width: 1200, height: 630 }],

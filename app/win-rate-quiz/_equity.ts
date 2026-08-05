@@ -156,8 +156,15 @@ function best7fast(cs: NCard[]): number {
   return best;
 }
 
-// 검산 스크립트용 내부 훅 (앱 코드에서 사용 금지)
-export const __test = { score5, score5fast, best7, best7fast };
+/**
+ * 검증된 평가기를 그대로 노출한다. **로직을 바꾸지 말 것** — 읽어 쓰기만 한다.
+ *
+ * ★2026-08-05: 실전 모드 엔진(`_engine.ts`)이 상대 레인지를 판정하려면 평가기가 필요해서
+ *   정식 export를 열었다. 위 평가 함수들은 한 줄도 고치지 않았다(§13 검증 유지).
+ *   `__test`는 기존 검산 스크립트 호환용 별칭이다.
+ */
+export const EVAL = { score5, score5fast, best7, best7fast };
+export const __test = EVAL;
 
 /**
  * 족보·드로우 이름. **평가 로직과 완전히 분리**돼 있다.
