@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "wsop-2026-tournament-guide",
   seoTitle: "Un joyero de Cancún, US$449.067 y el brazalete: la WSOP 2026",
   title: "WSOP 2026 — guía completa: los brazaletes latinos, la visa desde México y cómo inscribirse",
-  desc: "Ganó Lucas Jumalon (US$10.000.000) y el mejor hispanohablante fue Antonio Galiana, 12.º. Los tres brazaletes hispanos, la visa desde México y cómo clasificar desde US$0,50.",
+  desc: "Ganó Lucas Jumalon (US$10.000.000); el mejor hispanohablante, Antonio Galiana, 12.º. Brazaletes hispanos, visa desde México y cómo clasificar desde US$0,50.",
   tldr: "El Main Event de la 57.ª WSOP se resolvió el 5 de agosto: ganó Lucas Jumalon, estadounidense de 22 años, por US$10.000.000. El mejor clasificado de habla hispana fue Antonio Galiana (España) en el puesto 12.º, con US$510.000 — no hubo hispanohablantes en la mesa final. La serie dejó 251.899 entradas —récord histórico— y US$469.975.059 repartidos en 35.157 puestos pagados, con tres brazaletes hispanohablantes: Ciro González (México, US$449.067), Adrian Mateos (España, US$4.334.411) y Juan Rodriguez (Perú, US$673.011). Ojo con el papeleo: México no está en el Visa Waiver Program, así que con pasaporte mexicano hace falta visa y el ESTA no aplica.",
   category: "tournament",
   date: "2026-06-16",
@@ -168,9 +168,9 @@ Los **vuelos** del Día 1 se repartieron entre el **2 y el 5 de julio**. Y el da
 
 Si vas a jugar un torneo con niveles de dos horas, conviene tener el [ranking de manos](/es/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp") tan interiorizado que no lo pienses: en un freezeout de esta profundidad no hay segunda bala para corregir un error de lectura.
 
-### ¿Quién ganó el Main Event de la WSOP 2026?
+## ¿Quién ganó el Main Event de la WSOP 2026?
 
-**Lo ganó Lucas Jumalon, estadounidense de 22 años, por US$10.000.000.** La mesa final se jugó del 3 al 5 de agosto y terminó el día 5 a la 1:48 de la madrugada, hora de Las Vegas. Ahí se entregó el brazalete número 100 de la serie.
+**Lo ganó Lucas Jumalon, estadounidense de 22 años, por US$10.000.000.** La mesa final se jugó del 3 al 5 de agosto y se resolvió el día 5. Ahí se entregó el brazalete número 100 de la serie.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -190,7 +190,7 @@ Si vas a jugar un torneo con niveles de dos horas, conviene tener el [ranking de
 
 **Sin hispanohablantes en la mesa final.** Revisamos directamente la columna *Country* de los puestos 1 al 50 en la página oficial de resultados: el mejor clasificado de habla hispana fue ==g:**Antonio Galiana (España), 12.º, con US$510.000**==. Ni México, ni Brasil, ni ningún país sudamericano aparece entre los 50 primeros (fecha de consulta: 6 de agosto de 2026; de los puestos 51 en adelante no revisamos país por país).
 
-Duele un poco leerlo junto al conteo de entradas de arriba: Brasil metió 172 jugadores y España 148, y ninguno de los dos llegó a las últimas mesas. El torneo se sigue decidiendo donde hay más volumen.
+Duele un poco leerlo junto al conteo de entradas de arriba: Brasil metió 172 jugadores y España 148, y ninguno de los dos puso una bandera en la mesa final. Galiana se quedó a tres puestos de las últimas nueve sillas (12.º de 9). El torneo se sigue decidiendo donde hay más volumen.
 
 ---
 
@@ -428,13 +428,13 @@ A. La escalera de GGPoker, que arranca en un ==g:Step 0 gratuito== (entrando cad
 
 **Q. ¿Dónde se puede ver la WSOP ahora que PokerGO no emite en directo?**
 
-A. ==g:99 eventos se ven gratis en el canal oficial de YouTube de la WSOP.== La mesa final del Main Event va por televisión: **3 de agosto en ESPN2** y **4 y 5 de agosto en ESPN** (21:00–24:00 ET; el día 5, de 22:30 a 01:30 ET).
+A. ==g:99 eventos se ven gratis en el canal oficial de YouTube de la WSOP.== La mesa final del Main Event se televisó: **3 de agosto en ESPN2** y **4 y 5 de agosto en ESPN** (21:00–24:00 ET; el día 5, de 22:30 a 01:30 ET).
 
 ---
 
 ## Fuentes y aviso
 
-- **★Resultado final del Main Event (Evento #82)** *(consultado el 6 de agosto de 2026)*: [wsop.com/tournaments/result/619](https://www.wsop.com/tournaments/result/619/) — campeón Lucas Jumalon (EE. UU.) US$10.000.000, los nueve puestos con país y premio, **mejor hispanohablante: Antonio Galiana (España), 12.º, US$510.000** (columna *Country* de los puestos 1 al 50 revisada directamente), cierre el 5 de agosto a la 1:48, 9.208 entradas, 1.383 puestos pagados, **pozo US$87.568.080**
+- **★Resultado final del Main Event (Evento #82)** *(consultado el 6 de agosto de 2026)*: [wsop.com/tournaments/result/619](https://www.wsop.com/tournaments/result/619/) — campeón Lucas Jumalon (EE. UU.) US$10.000.000, los nueve puestos con país y premio, **mejor hispanohablante: Antonio Galiana (España), 12.º, US$510.000** (columna *Country* de los puestos 1 al 50 revisada directamente), fecha de cierre 5 de agosto (el campo End Date de la página oficial indica «Aug 05 01:48 AM»), 9.208 entradas, 1.383 puestos pagados, **pozo US$87.568.080**
 - **★Los 100 brazaletes entregados** *(consultado el 6 de agosto de 2026)*: [calendario oficial de la WSOP 2026](https://www.wsop.com/tournaments/2026-57th-annual-world-series-of-poker/) — se revisó la columna *Winner* de los eventos #1 al #100: **los 100 tienen campeón**, sin huecos
 - Reglamento de inscripción, formas de pago e identificación: [wsop.com/registration](https://www.wsop.com/registration/)
 - Retransmisión y cobertura de la serie: [wsop.com/news](https://www.wsop.com/news/)
