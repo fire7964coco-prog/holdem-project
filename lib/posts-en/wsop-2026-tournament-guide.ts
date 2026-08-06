@@ -2,19 +2,19 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "wsop-2026-tournament-guide",
-  title: "WSOP 2026 Final Table — Who's Left, How to Watch, How to Get There",
-  seoTitle: "More Chips Than the Next Three: WSOP 2026 Final Table, Aug 3–5",
-  desc: "The 2026 WSOP Main Event final table plays Aug 3–5 on ESPN. Nine players left, $10,000,000 up top, and a 22-year-old with an unprecedented chip lead.",
-  tldr: "Nine players come back August 3 to finish the 2026 WSOP Main Event: $10,000,000 for first, $1,000,000 already locked up for ninth. Lucas Jumalon, a 22-year-old from Spokane, leads with 194,000,000 chips — more than the next three stacks put together. ESPN2 and ESPN carry all three nights.",
+  title: "WSOP 2026 Main Event — Who Won, Full Payouts, How to Get There",
+  seoTitle: "A $22,945 Best Score, Then $10M: Who Won WSOP 2026",
+  desc: "Lucas Jumalon won the 2026 WSOP Main Event for $10,000,000 — a 22-year-old whose best previous cash was $22,945. Full final table results and payouts.",
+  tldr: "Lucas Jumalon won the 2026 WSOP Main Event on August 5 for $10,000,000. He is 22, from Spokane, and came in with just over $180,000 in career earnings — his best previous score was $22,945. He walked into the final table with 194,000,000 chips, more than the next three stacks put together, and never gave the lead up. Lauri Saaskilahti took second for $6,000,000 after starting seventh in chips. Ninth place still paid $1,000,000.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-07-29",
-  masterUpdated: "2026-07-29",
+  updated: "2026-08-06",
+  masterUpdated: "2026-08-06",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🏆",
   image: "/images/wsop-2026-tournament-guide-hero.webp",
-  imageAlt: "WSOP 2026 summary card on dark green felt — 57th annual series in Las Vegas with 251,899 total entries, 100 bracelet events, and an $85.6M Main Event prize pool",
+  imageAlt: "WSOP 2026 summary card on dark green felt — 57th annual series in Las Vegas with 251,899 total entries, 100 bracelet events, and an $87.6M Main Event prize pool",
   tags: [
     "WSOP 2026 final table",
     "WSOP 2026 Main Event",
@@ -28,9 +28,9 @@ export const POST: Post = {
   content: `
 The 2026 World Series of Poker ended on July 15. The Main Event didn't.
 
-Nine players bagged chips on July 13 and then went home for three weeks. They come back on ==**August 3**==, and over three nights they'll play down to a champion for ==**$10,000,000**== and the last bracelet of the 57th WSOP.
+Nine players bagged chips on July 13 and then went home for three weeks. They came back on ==**August 3**==, and over three nights they played down to a champion for ==**$10,000,000**== and the last bracelet of the 57th WSOP.
 
-That's five days from now. Which means this is not a recap — it's a preview of something you can turn on and watch. Here's who's sitting there, what the ladder is worth, where to find it on TV, and — if you read the seat draw and think *I could be at that table* — what the road there actually looks like from a US address.
+It took until 1:48 a.m. on August 5. Here's who won and what every seat paid, what the ladder looked like from the inside, and — if you read the results and think *I could be at that table* — what the road there actually looks like from a US address.
 
 New to how these events are built? [The tournament guide](/en/blog/holdem-tournament "thumb:/images/holdem-tournament-hero.webp") covers buy-ins, blind levels and Day 1 in one place.
 
@@ -39,59 +39,63 @@ New to how these events are built? [The tournament guide](/en/blog/holdem-tourna
 ### At a Glance
 
 :::stripe
-Aug 3–5 | final table, live on ESPN2 and ESPN
+Lucas Jumalon | 2026 Main Event champion
 $10,000,000 | first place — $1,000,000 for ninth
 9,208 | entries in the 2026 Main Event
 :::
 
 > **Quick answer**
-> The ==**2026 WSOP Main Event final table plays August 3–5**==. Nine players remain from ==**9,208 entries**== and an ==**$85,634,400**== prize pool. ==**Lucas Jumalon**== leads with ==g:**194,000,000 chips (129 big blinds)**==. First place is ==g:**$10,000,000**==; every remaining player has already locked up ==**at least $1,000,000**==. Coverage: ==**ESPN2 August 3, ESPN August 4 and 5**==.
+> ==**Lucas Jumalon won the 2026 WSOP Main Event**== and ==g:**$10,000,000**==, beating a field of ==**9,208 entries**== that built an ==**$87,568,080**== prize pool. He took the title at ==**22 years old**==, having walked into the final table with ==g:**194,000,000 chips (129 big blinds)**== — more than the next three stacks combined — and holding the lead until the last hand. Play ended ==**August 5 at 1:48 a.m. in Las Vegas**==. Runner-up ==**Lauri Saaskilahti**== earned ==**$6,000,000**==, and ninth place still paid ==**$1,000,000**==.
 
 ---
 
-## The Nine Players Left in the 2026 Main Event
+## Who Won the 2026 WSOP Main Event?
 
-Four Americans, two Canadians, a Frenchman, a Finn and a Cypriot. Seats and stacks as they bagged on July 13:
+**Lucas Jumalon won it for $10,000,000.** The final table started August 3 and finished August 5 at 1:48 a.m. Las Vegas time. Below is every finishing position with the payout, next to the chip count each player bagged on July 13 — so you can see how much the chip order actually predicted.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Seat | Player | Country | Chips | Big Blinds |
+| Finish | Player | Country | Payout | Chips (chip rank) |
 |:---:|:---|:---|---:|---:|
-| 1 | ==**Lucas Jumalon**== | United States | ==g:**194,000,000**== | ==g:**129**== |
-| 2 | Rami Hammoud | Canada | 79,000,000 | 53 |
-| 3 | Jamie Shaevel | United States | 56,000,000 | 37 |
-| 4 | Greg Mueller | Canada | 48,500,000 | 32 |
-| 5 | Michael Gagliano | United States | 46,500,000 | 31 |
-| 6 | Mario Boos | France | 44,000,000 | 29 |
-| 7 | Lauri Saaskilahti | Finland | 37,500,000 | 25 |
-| 8 | Han Feng | United States | 25,000,000 | 17 |
-| 9 | Evagoras Evagorou | Cyprus | 22,500,000 | 15 |
+| 🏆 1 | ==**Lucas Jumalon**== | United States | ==g:**$10,000,000**== | ==g:**194,000,000 (1st)**== |
+| 2 | Lauri Saaskilahti | Finland | $6,000,000 | 37,500,000 (7th) |
+| 3 | Gregor Mueller | Canada | $3,750,000 | 48,500,000 (4th) |
+| 4 | Michael Gagliano | United States | $2,750,000 | 46,500,000 (5th) |
+| 5 | Hanming Feng | United States | $2,250,000 | 25,000,000 (8th) |
+| 6 | Rami Hammoud | Canada | $1,750,000 | 79,000,000 (2nd) |
+| 7 | Jamie Shaevel | United States | $1,500,000 | 56,000,000 (3rd) |
+| 8 | Mario Boos | France | $1,250,000 | 44,000,000 (6th) |
+| 9 | Evagoras Evagorou | Cyprus | $1,000,000 | 22,500,000 (9th) |
 
 </div>
 
-Look at the bottom of that table before you look at the top. ==r:Seats 8 and 9 come back with 17 and 15 big blinds== — that's push-or-fold poker from the first hand dealt, with $250,000 between ninth and eighth and nobody able to wait around. Seats 2 through 7 are all between 25 and 53 big blinds, which is playable but not comfortable when one player at the table can put you all in for your tournament life without blinking.
+Read the right-hand column and the story stops being "the chip leader won." ==r:Rami Hammoud came in second in chips with 79,000,000 and finished sixth.== Lauri Saaskilahti came in ==g:seventh in chips with 37,500,000 and finished second== — a $4,250,000 swing in the opposite direction of the stacks. Hanming Feng started eighth of nine with 17 big blinds and laddered to fifth.
+
+Only two seats finished where they started: Jumalon first and Evagoras Evagorou ninth. Everyone in between moved.
+
+Four Americans, two Canadians, a Frenchman, a Finn and a Cypriot made up the nine. Evagoras Evagorou is the first Cypriot to reach a WSOP Main Event final table.
 
 ---
 
-## Lucas Jumalon Has More Chips Than the Next Three Players Combined
+## How Did Lucas Jumalon Build That Stack?
 
-This is the number that makes the 2026 final table different from every other one. PokerNews put it plainly:
+He walked in with more chips than the next three players combined — the number that made the 2026 final table different from every other one. PokerNews put it plainly:
 
 > *"Lucas Jumalon's 194,000,000 chips is more than the next three players combined (183,500,000). This is unprecedented since the official final table expanded to nine players in 2001."*
 
 Twenty-five years of nine-handed WSOP final tables, and nobody has ever walked in holding this much of the table's equity.
 
-Jumalon is ==**22 years old, from Spokane, Washington**==, and graduated from Grand Canyon University with a degree in business administration and data analytics. If he wins, he'd be the ==g:**second-youngest Main Event champion ever**==, behind Joe "The Kid" Cada, who was 21 when he won in 2009.
+Jumalon is ==**22 years old, from Spokane, Washington**==, and graduated from Grand Canyon University with a degree in business administration and data analytics. With the win he becomes the ==g:**second-youngest Main Event champion ever**==, behind Joe "The Kid" Cada, who was 21 when he won in 2009.
 
-The résumé he brought into this is the part that will make you sit up. Per The Hendon Mob, Jumalon had ==**just over $180,000**== in career live earnings before this Main Event. His best previous score was ==**$22,945**==, for winning a $400 PokerNews Daily Deepstacks event at the 2025 WSOP. He is playing for $10,000,000 with a career-best cash smaller than a used car.
+The résumé he brought into this is the part that will make you sit up. Per The Hendon Mob, Jumalon had ==**just over $180,000**== in career live earnings before this Main Event. His best previous score was ==**$22,945**==, for winning a $400 PokerNews Daily Deepstacks event at the 2025 WSOP. He won $10,000,000 with a previous career-best cash smaller than a used car — **roughly 436 times** his best previous result ($10,000,000 ÷ $22,945 = 435.8).
 
 **How he got the stack.** Jumalon started Day 8 third of the 21 players left with 40,800,000 (68 big blinds) — good, not dominant. The hand that changed the tournament came against Malcolm Trayner, the reigning Aussie Millions Main Event champion: Jumalon turned a set of jacks into a full house to crack Trayner's pocket queens. He was up to ==g:**155,000,000 by dinner break**==, and later busted Trayner in ==**10th**== — the hand that set the final table.
 
 ---
 
-## $1,000,000 to $10,000,000 — the Ladder They're Actually Playing
+## What Did Each WSOP 2026 Final Table Place Pay?
 
-Everyone still in has locked up seven figures. That's the floor. Here's the rest of it:
+Every one of the nine cashed for seven figures — $1,000,000 was the floor. Here is the full ladder, with the jump each finish was worth over the one below it:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -109,9 +113,9 @@ Everyone still in has locked up seven figures. That's the floor. Here's the rest
 
 </div>
 
-Read that right column and you're reading the whole strategic story of the next three nights. The jumps from 9th to 6th are $250,000 apiece — real money, but survivable to pass on. The jump from 2nd to 1st is ==g:**$4,000,000 in one hand**==.
+Read that right column and you're reading the whole strategic story of those three nights. The jumps from 9th to 6th were $250,000 apiece — real money, but survivable to pass on. The jump from 2nd to 1st was ==g:**$4,000,000**==, which is what Jumalon and Saaskilahti were playing for heads-up.
 
-That gap between what a chip is worth and what a finish is worth is exactly what [ICM — the Independent Chip Model](/en/blog/holdem-icm "thumb:/images/holdem-icm-hero.webp") measures. It's why the two short stacks can't just fold their way up the ladder even though every pass is worth a quarter million, and why the six players in the middle will hand Jumalon pot after pot rather than flip for their tournament life against the one guy who can bust them. He's the only person at the table who can put everyone else's ladder at risk without risking his own.
+That gap between what a chip is worth and what a finish is worth is exactly what [ICM — the Independent Chip Model](/en/blog/holdem-icm "thumb:/images/holdem-icm-hero.webp") measures. It is why the two short stacks could not simply fold their way up the ladder even though every pass was worth a quarter million, and why a big stack that is not *the* big stack is in an awkward spot: Hammoud's 79,000,000 was second-most at the table and still finished sixth, while Saaskilahti's 37,500,000 finished second. Chips set the odds at a final table; they do not set the payouts.
 
 ---
 
@@ -132,7 +136,7 @@ All three nights are on television in the US, and the times are set:
 
 ESPN Networks carry it in the US and ==g:over 70 countries==. Eurosport and TNT Sports handle the UK and 60-plus countries across Europe and Asia.
 
-**Two things changed this year.** The first is the delay itself: the final nine were confirmed on ==**July 13**== and don't resume until ==**August 3**==, a three-week gap that's new for 2026. The second is behind the camera — ==r:PokerGO is out of live streaming== (it's still involved in production), and the WSOP put ==g:**99 events on its official YouTube channel for free**== instead.
+**Two things changed this year.** The first is the delay itself: the final nine were confirmed on ==**July 13**== and did not resume until ==**August 3**==, a three-week gap that's new for 2026. The second is behind the camera — ==r:PokerGO is out of live streaming== (it's still involved in production), and the WSOP put ==g:**99 events on its official YouTube channel for free**== instead.
 
 ---
 
@@ -147,7 +151,7 @@ Event #82, the $10,000 No-Limit Hold'em World Championship, ran four Day 1 fligh
 | | 2026 Main Event |
 |:---|:---|
 | **Entries** | ==**9,208**== — fourth-largest field ever |
-| **Prize pool** | ==g:**$85,634,400**== |
+| **Prize pool** | ==g:**$87,568,080**== |
 | **Countries represented** | ==**111**== — a record |
 | **Non-American entries** | 3,574 (==**38.8%**==) |
 | **American entries** | ==g:**5,634**== — the largest national contingent |
@@ -188,7 +192,7 @@ The 57th WSOP ran ==**May 26 through July 15**== across the Horseshoe and Paris 
 | **Total entries** | ==g:**251,899**== — an all-time record |
 | **Paid out** | ==**$469,975,059**== |
 | **In-the-money finishes** | 35,157 |
-| **Bracelet events** | 100 (99 awarded — the Main Event is the last one) |
+| **Bracelet events** | 100 (**all 100 awarded** — the Main Event was the last one) |
 | **Biggest single field** | ==**#63 $1,000 Mystery Millions — 22,811 entries**== |
 | **Ladies Championship** | ==g:**1,475 entries — the largest women's event in poker history**== |
 
@@ -297,21 +301,21 @@ Note what the last one rules out: the Main Event is a **freezeout**. One bullet,
 
 ## FAQ
 
-**Q. When is the WSOP 2026 Main Event final table?**
+**Q. Who won the WSOP 2026 Main Event?**
 
-A. August 3–5, 2026. The final nine were determined on July 13 and the table was then delayed three weeks — a new format for 2026. Play resumes August 3 and a champion is crowned on the night of August 5.
+A. Lucas Jumalon, a 22-year-old from Spokane, Washington, for $10,000,000. Play ended August 5, 2026 at 1:48 a.m. Las Vegas time. He led the final table from the first hand to the last, having bagged 194,000,000 chips on July 13.
 
-**Q. How can I watch the WSOP final table in the US?**
+**Q. How can I watch the WSOP 2026 final table?**
 
-A. On ESPN2 on August 3 from 9:00 PM to midnight ET, then on ESPN on August 4 (9:00 PM – midnight ET) and August 5 (10:30 PM – 1:30 AM ET). Edited programs premiere August 10 from 9:00 to 11:00 PM ET on ESPN2. ESPN Networks carry the event in the US and over 70 countries; Eurosport and TNT Sports cover the UK and 60-plus countries across Europe and Asia.
+A. It aired on ESPN2 on August 3 from 9:00 PM to midnight ET, then on ESPN on August 4 (9:00 PM – midnight ET) and August 5 (10:30 PM – 1:30 AM ET). Edited programs premiere August 10 from 9:00 to 11:00 PM ET on ESPN2. ESPN Networks carried the event in the US and over 70 countries; Eurosport and TNT Sports covered the UK and 60-plus countries across Europe and Asia.
 
-**Q. How much does the WSOP Main Event winner get in 2026?**
+**Q. How much did the WSOP Main Event winner get in 2026?**
 
-A. $10,000,000. Second place takes $6,000,000, third $3,750,000, and ninth $1,000,000 — every player at the final table has already locked up at least seven figures. The full prize pool across 9,208 entries was $85,634,400.
+A. $10,000,000. Second place took $6,000,000, third $3,750,000, and ninth $1,000,000 — every player at the final table cashed for at least seven figures. The full prize pool across 9,208 entries was $87,568,080, paid out to the top 1,383 finishers.
 
 **Q. Who is Lucas Jumalon?**
 
-A. A 22-year-old from Spokane, Washington, who graduated from Grand Canyon University with a degree in business administration and data analytics. He came into this Main Event with just over $180,000 in career live earnings per The Hendon Mob, his best previous score being $22,945 in a $400 PokerNews Daily Deepstacks event at the 2025 WSOP. He leads the final table with 194,000,000 chips — more than the next three stacks combined, which PokerNews notes is unprecedented since the nine-handed official final table began in 2001. A win would make him the second-youngest Main Event champion ever, behind Joe Cada at 21 in 2009.
+A. The 2026 WSOP Main Event champion — a 22-year-old from Spokane, Washington, who graduated from Grand Canyon University with a degree in business administration and data analytics. He came into this Main Event with just over $180,000 in career live earnings per The Hendon Mob, his best previous score being $22,945 in a $400 PokerNews Daily Deepstacks event at the 2025 WSOP. He led the final table with 194,000,000 chips — more than the next three stacks combined, which PokerNews notes is unprecedented since the nine-handed official final table began in 2001. The win makes him the second-youngest Main Event champion ever, behind Joe Cada at 21 in 2009.
 
 **Q. Can US players qualify for the WSOP Main Event online?**
 
@@ -329,18 +333,20 @@ A. Card payments are capped at $10,000 per transaction and carry a 3% fee, so a 
 
 ## The Takeaways
 
-1. **Nine players, three nights, August 3–5** — ESPN2 opens it, ESPN closes it, and the last bracelet of the 2026 WSOP is decided on the third night.
-2. **Lucas Jumalon, 22, has 194,000,000 chips** — more than the next three stacks combined, which has never happened at a nine-handed WSOP final table since 2001.
-3. **$1,000,000 is the floor, $10,000,000 is the ceiling**, and the $4,000,000 gap between first and second is what will drive every close decision heads-up.
-4. **9,208 entries from a record 111 countries** built an $85,634,400 prize pool; 5,634 of those entries were American.
+1. **Lucas Jumalon won it at 22 for $10,000,000**, becoming the second-youngest Main Event champion behind Joe Cada.
+2. **He came in with 194,000,000 chips** — more than the next three stacks combined, which had never happened at a nine-handed WSOP final table since 2001 — and never lost the lead.
+3. **The chip order did not hold below him.** The second-biggest stack finished sixth; the seventh-biggest finished second for $6,000,000. Ninth place still paid $1,000,000.
+4. **9,208 entries from a record 111 countries** built an $87,568,080 prize pool paid to the top 1,383; 5,634 of those entries were American.
 5. **The $0.50 qualifying ladder is not open to US players** — that's GGPoker. Americans have WSOP.com in four states, or live satellites in Las Vegas from $150.
 
 ---
 
 ## Sources
 
-Every figure above was checked against primary sources. **Verified: July 29, 2026.**
+Every figure above was checked against primary sources. **Verified: July 29, 2026** — final results and payouts re-verified **August 6, 2026.**
 
+- **★Final results and payouts** *(verified Aug 6, 2026)* — [WSOP official result, Event #82](https://www.wsop.com/tournaments/result/619/) · champion Lucas Jumalon (United States) $10,000,000, all nine finishing positions with country and payout, end time August 5 at 1:48 a.m., 9,208 entries, 1,383 paid, **prize pool $87,568,080**
+- **★All 100 bracelets awarded** *(verified Aug 6, 2026)* — [WSOP official 2026 event schedule](https://www.wsop.com/tournaments/2026-57th-annual-world-series-of-poker/) · the Winner column was read for every row from Event #1 to #100 — **all 100 have a champion**, no gaps
 - **Final table field, seats and stacks** — [WSOP — The 2026 World Series of Poker Main Event Reaches Its Final Table](https://www.wsop.com/news/the-2026-world-series-of-poker-main-event-reaches-it-s-final-table/) · the official nine, chip counts, and the three-week delay
 - **Final table confirmation, remaining payouts, and the Jumalon profile** — [PokerNews](https://www.pokernews.com) · the "more than the next three players combined" stat, Hendon Mob career earnings, the Day 8 run and the Trayner hand
 - **Broadcast schedule** — [ESPN Press Room](https://espnpressroom.com) and [ESPN](https://www.espn.com) · ESPN2/ESPN air times, the August 10 edited programs, and the international carriage
