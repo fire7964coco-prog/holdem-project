@@ -472,7 +472,7 @@ export const POST: Post = {
 
 :::readnext[繼續閱讀]
 /zh-hant/blog/holdem-tournament | 德州撲克錦標賽入門指南 | /images/holdem-tournament-hero.webp
-/zh-hant/blog/holdem-tournament-vs-cash-game | 錦標賽 vs 現金桌差異 | /images/holdem-tournament-vs-cash-game-hero.webp
+/zh-hant/blog/holdem-tournament-vs-cash-game | 錦標賽 vs 現金桌差異 | /images/holdem-tournament-vs-cash-hero.webp
 :::
 
 ## 常見問題 FAQ

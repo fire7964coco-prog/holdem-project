@@ -178,7 +178,7 @@ A가 6으로 오픈해 증가분이 **4**가 되면, 그 뒤 모든 최소 재�
 ---
 
 :::readnext[이어서 읽기]
-/blog/holdem-3bet-strategy | 3벳 전략 — 언제·얼마나 | /images/holdem-3bet-sizing.webp
+/blog/holdem-3bet-strategy | 3벳 전략 — 언제·얼마나 | /images/holdem-3bet-defense.webp
 /blog/holdem-blind-meaning | 홀덤 블라인드 뜻과 SB·BB 차이 | /images/holdem-blind-meaning-hero.webp
 :::
 

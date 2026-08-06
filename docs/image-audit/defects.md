@@ -3,10 +3,15 @@
 > 2026-07-11 Fable5 12+배치 전수 감사. 각 항목: `DEFECT — 파일 — 문제 — PROMPT: 영어 재생성 프롬프트`.
 > 기준: §13 카드결함(불가능카드·중복·오카운트) + 깨진/뒤섞인 텍스트 + 저품질(왜곡·조잡) + 맥락불일치 + 잘못된 게임.
 
-## 🔴 깨진 링크 8개 (파일 자체 없음 — 404)
-KO 글에서 참조하나 파일 부재. 생성 or 참조 제거 필요:
+## ✅ 깨진 링크 8개 — **해소됨 (2026-08-06 확인)**
+> 아래 8개는 2026-07-11 감사 당시 파일이 없어 404였다. **8개 전부 파일이 존재하고
+> 각각 참조 1건씩 정상 연결돼 있음을 실측 확인했다**(16~25KB, 규정 내).
+> 이 섹션은 기록으로만 남긴다 — 할 일이 아니다.
 - `bluffing-bad-situations.webp` / `bluffing-board-texture.webp` / `bluffing-scenarios-practice.webp` / `bluffing-semi-bluff-draw.webp` (블러핑 글)
 - `holdem-position-btn.webp` / `holdem-position-mistakes.webp` / `holdem-position-postflop.webp` / `holdem-position-strategy-core.webp` (포지션 글)
+
+> ⚠️ **이 파일을 할 일 목록으로 쓸 때 주의** — 위 8건처럼 이미 해소된 항목이 섞여 있다.
+> 착수 전 `ls public/images/<파일>.webp`로 **현물을 먼저 확인**할 것.
 
 ## ⚠️ 시스템적 참사: "노트보드" 오염 이미지군
 일부 이미지는 AI가 **무관한 컴퓨터공학 시험노트**(C/S통신·TCP/IP·DevOps·OS·DB 등)를 뒤섞어 완전히 깨짐. flush-vs-straight-c* 계열 다수. 전부 폐기·재생성 대상(아래 배치별 목록).

@@ -410,7 +410,7 @@ A. 都行，但 ==g:建議提早 2–3 天抵達==。你可以倒好時差、用
 4. **首爾只在 60 分鐘外**，是亞洲最棒的旅遊目的地之一——==g:宮殿、烤肉、夜生活，還有無敵的街頭小吃。==（想把跑步也排進這趟韓國行？見[韓國撲克馬拉松行程](/zh-hant/blog/korea-poker-marathon-2026)。）
 5. **僅限外國人**——這場賽事就是為國際牌手而設。你的護照就是入場證。
 
-要飛 APT 仁川？如果你正從現金桌轉戰賽事，[錦標賽與現金桌的差異](/zh-hant/blog/holdem-tournament-vs-cash-game "thumb:/images/holdem-tournament-vs-cash-game-hero.webp") 會幫你搞懂結構上的不同。而賽事後段一旦籌碼變少，[短籌碼怎麼打](/zh-hant/blog/holdem-short-stack) 是你上 Day 1 前值得先讀過的一份參考。
+要飛 APT 仁川？如果你正從現金桌轉戰賽事，[錦標賽與現金桌的差異](/zh-hant/blog/holdem-tournament-vs-cash-game "thumb:/images/holdem-tournament-vs-cash-hero.webp") 會幫你搞懂結構上的不同。而賽事後段一旦籌碼變少，[短籌碼怎麼打](/zh-hant/blog/holdem-short-stack) 是你上 Day 1 前值得先讀過的一份參考。
 
 ---
 
