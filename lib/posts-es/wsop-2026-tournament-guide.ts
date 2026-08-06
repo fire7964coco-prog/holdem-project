@@ -190,7 +190,7 @@ Si vas a jugar un torneo con niveles de dos horas, conviene tener el [ranking de
 
 **Sin hispanohablantes en la mesa final.** Revisamos directamente la columna *Country* de los puestos 1 al 50 en la página oficial de resultados: el mejor clasificado de habla hispana fue ==g:**Antonio Galiana (España), 12.º, con US$510.000**==. Ni México, ni Brasil, ni ningún país sudamericano aparece entre los 50 primeros (fecha de consulta: 6 de agosto de 2026; de los puestos 51 en adelante no revisamos país por país).
 
-Duele un poco leerlo junto al conteo de entradas de arriba: Brasil metió 172 jugadores y España 148, y ninguno de los dos puso una bandera en la mesa final. Galiana se quedó a tres puestos de las últimas nueve sillas (12.º de 9). El torneo se sigue decidiendo donde hay más volumen.
+Duele un poco leerlo junto al conteo de entradas de arriba: Brasil metió 172 jugadores y España 148, y ninguno de los dos puso una bandera en la mesa final. Galiana se quedó a tres puestos de las últimas nueve sillas. El torneo se sigue decidiendo donde hay más volumen.
 
 ---
 

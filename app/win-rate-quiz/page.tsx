@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import WinRateQuizClient from "./win-rate-quiz-client";
 import HubPage from "@/components/hub-page";
+import { WIN_RATE_QUIZ_FAQ } from "./faq";
+import QuizContent from "./_content";
 
 const SITE = "https://www.holdemmaster.com";
 
@@ -21,10 +23,68 @@ export const metadata: Metadata = {
   },
 };
 
+/**
+ * 구조화 데이터 — `app/calculator/page.tsx`와 같은 @graph 구성.
+ * ⚠️ FAQ는 `./faq`의 같은 배열을 본문(`_content.tsx`)에서도 렌더한다.
+ *    스키마에만 있고 본문에 없는 정보는 LLM이 읽지 못한다(posting.mdc §스키마).
+ */
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      name: "홀덤 승률 시뮬레이터",
+      url: `${SITE}/win-rate-quiz`,
+      applicationCategory: "GameApplication",
+      operatingSystem: "Web",
+      browserRequirements: "Requires JavaScript",
+      inLanguage: "ko",
+      offers: { "@type": "Offer", price: "0", priceCurrency: "KRW" },
+      featureList: [
+        "6인 테이블 핸드 시뮬레이션",
+        "스트리트별 내 승률 계산",
+        "팟오즈 필요 승률 병기",
+        "핸드 종료 후 폴드 시점 복기",
+        "상대 액션 기반 레인지 추정",
+      ],
+      publisher: { "@type": "Organization", name: "홀덤마스터", url: SITE },
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "홈", item: SITE },
+        { "@type": "ListItem", position: 2, name: "승률 시뮬레이터", item: `${SITE}/win-rate-quiz` },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: WIN_RATE_QUIZ_FAQ.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
+    },
+  ],
+};
+
 export default function Page() {
   return (
-    <HubPage title="승률 시뮬레이터">
-      <WinRateQuizClient />
-    </HubPage>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <HubPage title="승률 시뮬레이터">
+        <WinRateQuizClient />
+        {/* ★정적 본문은 **서버 컴포넌트로** 여기서 렌더한다.
+            ① 클라이언트 번들에 실리지 않는다(순수 마크업이라 JS가 필요 없다)
+            ② 정적 HTML에 그대로 들어간다 — 2026-08-06 이전엔 이 페이지의 정적 HTML이
+               h1+부제뿐이라 사이트맵 priority 0.8로 색인을 밀면서도 받을 콘텐츠가 없었다
+               (`/holdem-practice`가 같은 상태였다). 클라이언트 안으로 옮기지 말 것. */}
+        <div className="max-w-md md:max-w-2xl lg:max-w-3xl mx-auto px-3 pb-8">
+          <QuizContent />
+        </div>
+      </HubPage>
+    </>
   );
 }

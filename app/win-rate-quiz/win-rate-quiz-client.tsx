@@ -1,6 +1,7 @@
 "use client";
 
 import { SEO } from "@/components/seo";
+
 import WinRateSimulator, { type QuizUI } from "./_simulator";
 import { KO_NAMES } from "./_equity";
 import { ANTE, STACK, SAMPLES, MIN_SAMPLES } from "./_engine";
