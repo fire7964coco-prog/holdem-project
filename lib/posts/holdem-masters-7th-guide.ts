@@ -72,15 +72,15 @@ export const POST: Post = {
 :::note[**총상금 표기 주의 — 웹페이지와 포스터가 다릅니다.** WPL 대회 웹페이지 상단에는 *"상금: 총 10억 원"* 으로 적혀 있지만, **공식 포스터는 "1,500,000,000 TOTAL GUARANTEED"** 를 명시합니다. 그리고 이벤트별 확정 GTD가 챔피언스 10억 + 챌린저스 5억이라 **합계 15억이 맞습니다.** 웹페이지의 "10억"은 챔피언스 메인이벤트만 가리킨 표기로 보입니다. 한국어 글마다 15억/10억이 갈리는 이유가 이것입니다. 2026-07-28 확인]:::
 
 <div style="display:flex;flex-direction:column;gap:0;border-radius:14px;overflow:hidden;margin:24px 0">
-  <img src="/images/wpl-7th-schedule-1.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 1" width="900" height="1270" loading="lazy" sizes="750px" style="width:100%;display:block" />
-  <img src="/images/wpl-7th-schedule-2.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 2" width="900" height="1270" loading="lazy" sizes="750px" style="width:100%;display:block" />
-  <img src="/images/wpl-7th-schedule-3.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 3" width="900" height="1270" loading="lazy" sizes="750px" style="width:100%;display:block" />
-  <img src="/images/wpl-7th-schedule-4.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 4" width="900" height="1270" loading="lazy" sizes="750px" style="width:100%;display:block" />
-  <img src="/images/wpl-7th-schedule-5.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 5" width="900" height="1270" loading="lazy" sizes="750px" style="width:100%;display:block" />
-  <img src="/images/wpl-7th-schedule-6.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 6" width="900" height="1270" loading="lazy" sizes="750px" style="width:100%;display:block" />
-  <img src="/images/wpl-7th-schedule-7.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 7" width="900" height="1270" loading="lazy" sizes="750px" style="width:100%;display:block" />
-  <img src="/images/wpl-7th-schedule-8.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 8" width="900" height="1270" loading="lazy" sizes="750px" style="width:100%;display:block" />
-  <img src="/images/wpl-7th-schedule-9.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 9" width="900" height="1270" loading="lazy" sizes="750px" style="width:100%;display:block" />
+  <img src="/images/wpl-7th-schedule-1.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 1" width="900" height="1270" loading="lazy" sizes="(max-width: 768px) 100vw, 1080px" style="width:100%;display:block" />
+  <img src="/images/wpl-7th-schedule-2.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 2" width="900" height="1270" loading="lazy" sizes="(max-width: 768px) 100vw, 1080px" style="width:100%;display:block" />
+  <img src="/images/wpl-7th-schedule-3.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 3" width="900" height="1270" loading="lazy" sizes="(max-width: 768px) 100vw, 1080px" style="width:100%;display:block" />
+  <img src="/images/wpl-7th-schedule-4.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 4" width="900" height="1270" loading="lazy" sizes="(max-width: 768px) 100vw, 1080px" style="width:100%;display:block" />
+  <img src="/images/wpl-7th-schedule-5.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 5" width="900" height="1270" loading="lazy" sizes="(max-width: 768px) 100vw, 1080px" style="width:100%;display:block" />
+  <img src="/images/wpl-7th-schedule-6.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 6" width="900" height="1270" loading="lazy" sizes="(max-width: 768px) 100vw, 1080px" style="width:100%;display:block" />
+  <img src="/images/wpl-7th-schedule-7.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 7" width="900" height="1270" loading="lazy" sizes="(max-width: 768px) 100vw, 1080px" style="width:100%;display:block" />
+  <img src="/images/wpl-7th-schedule-8.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 8" width="900" height="1270" loading="lazy" sizes="(max-width: 768px) 100vw, 1080px" style="width:100%;display:block" />
+  <img src="/images/wpl-7th-schedule-9.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 9" width="900" height="1270" loading="lazy" sizes="(max-width: 768px) 100vw, 1080px" style="width:100%;display:block" />
 </div>
 <p style="font-size:12px;color:var(--muted-foreground);margin-top:4px">이미지 출처: WPL 공식 (<a href="https://wpl.winjoygame.com" target="_blank" rel="noopener">wpl.winjoygame.com</a>)</p>
 

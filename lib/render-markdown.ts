@@ -522,6 +522,10 @@ export function renderMarkdown(content: string): string {
      *   실측으로 74,688 == 74,688 확인. 그래서 이 글들은 «작은 후보»(128·256·384)가 있어야 의미가 있다.
      * ⚠ 실제 절감은 `sizes`가 정확해야 나온다 — 표시 폭은 포스트의 레이아웃이 정하므로
      *   **각 <img>가 sizes를 직접 들고 있다.** 없으면 전폭(672px)으로 보수적 폴백한다.
+     * ⚠ **표시 폭을 추측하지 말고 재라.** 본문 폭은 레이아웃마다 다르다 —
+     *   일반 블로그는 672px이지만 **대회 가이드(`tournament-guide-post.tsx`)는 906px**다.
+     *   2026-08-07에 906px 자리에 sizes=750px를 넣어 «더 무르게» 만들 뻔했다(라이브 실측으로 잡음).
+     *   `getBoundingClientRect().width`를 Playwright로 재고 나서 sizes를 쓸 것.
      * ⚠ 이미 최적화된 src(/_next/image…)와 외부 호스트는 정규식이 걸러낸다(src="/images/…"만 매치).
      */
     .replace(/<img\b[^>]*\bsrc="\/images\/[^"]+"[^>]*>/g, (tag) => {
