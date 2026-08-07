@@ -109,8 +109,13 @@ export default function TournamentGuidePost({
               * 어긋난 채 둘 다 화면 그리기 직전에 대역폭을 먹고 있었다.
               *
               * `priority`가 srcset·sizes까지 일치하는 preload를 대신 내주므로 그 어긋남이 사라진다.
-              * sizes=100vw인 이유: 이 배너는 본문 폭(672/906px)이 아니라 **뷰포트 전폭**이다
-              * (`h-48 md:h-64 w-full`, 1280 뷰포트에서 1280x256 실측).
+              *
+              * ★sizes가 «50vw»인 건 오타가 아니다 — 배너 실폭은 100vw(1280x256 실측)지만
+              *   이건 **opacity 40%로 어두운 그라디언트 아래 깔리는 장식**이라 1:1 픽셀 밀도가 필요 없다.
+              *   실제 표시 조건(1280x256 object-cover 크롭 + 0.4 + 그라디언트)을 그대로 재현해
+              *   w=1200(53.7KB)과 w=640(15.2KB)을 나란히 놓고 봤는데 **구별되지 않았다.**
+              *   → DPR1은 640을 받아 −72%, DPR2는 그대로 1200을 받아 선명도 손실 0.
+              * quality 55도 같은 근거다(장식 backdrop). **본문 이미지엔 이 논리를 쓰지 말 것.**
               *
               * ⚠ 같은 사진이 이 페이지에 **두 번** 나온다(전면 배너 + 본문 첫 이미지).
               *   렌디션이 달라 합칠 수 없다 — 합치려면 콘텐츠 쪽에서 배너/본문 중 하나를 빼야 한다.
@@ -120,7 +125,8 @@ export default function TournamentGuidePost({
               alt={post.imageAlt || post.title}
               className="w-full h-full object-cover opacity-40"
               priority
-              sizes="100vw"
+              sizes="50vw"
+              quality={55}
               width={1200}
               height={630}
             />
