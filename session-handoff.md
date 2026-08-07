@@ -36,7 +36,8 @@
 
 | 항목 | 메모 |
 |---|---|
-| 80KB 초과 이미지 2장 | `apt-incheon-2026-guide-map`(96.6KB)·`korea-poker-marathon-2026-hangang2`(83.9KB). q=45에서도 초과 → **리사이즈·재제작 판단 필요**. 열화된 채 규정도 못 지키므로 원본으로 되돌려 뒀다 |
+| ~~80KB 초과 이미지 2장~~ | ✅ **마감**(`673c08f`) — hangang2는 정보 없는 하단 38%를 크롭해 **q를 78로 올리면서** 83.9→63.3KB. 지도는 **참조 0의 고아**라 재제작 대신 삭제. 현재 **80KiB 초과 0건** |
+| 🔴 **이미지 용량 기준이 바뀌었다** | 2026-08-07 사장님 지시로 **글당 200KB는 하드리밋이 아니게 됐다**(조금 넘어도 됨). 디스크 합계로 재지 말 것 — 렌더러가 `w=750&q=75`로 줄여 보내고 첫 장 빼고 전부 lazy다. **가독성이 용량보다 위**다. ★진짜 결함은 **폭 750px 미만**(next/image 최적화 우회 → 원본이 그대로 전송, 현재 15장). 반영: `CLAUDE.md` §9-2 · `docs/IMAGE_OPTIMIZATION.md` · `posting.mdc` · `render-infographic.mjs` |
 | `npm run typecheck` 480건 | `lib/posts.ts`의 `Category`가 한국어 전용인데 다국어 포스트는 영어 슬러그를 쓴다. `ignoreBuildErrors: true`라 빌드는 통과. **핸드오프의 "typecheck 0건" 표기는 이 상태와 안 맞는다** |
 | `audit:hard` CLUSTERS에 대회 가이드 없음 | `wsop-2026`·`masters-7th` 둘 다 형제 교차 대조를 **시도조차 못 받는다**(게이트가 스스로 알려준다). 대회 가이드 9편은 날짜·바이인이 겹쳐 클러스터 정의 값어치가 있다 |
 | `lib/tournaments.ts`의 `schemaDescription` | 제8회에서 **검증 안 된 "총상금 20억 GTD 역대 최대"가 JSON-LD로 배포되고 있었다**(우리 합산값). 정정했지만 **다른 대회 항목도 같은 점검이 필요** |
