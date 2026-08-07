@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { SITE } from "@/lib/site";
 import { CHROME, POST_LABELS, OG_LOCALE, NAV_CTA, NAV_HOME_FEED, dirForLocale, type SecondaryLocale } from "@/lib/intl";
 import { postsForLocale } from "@/lib/intl-posts";
@@ -69,11 +70,21 @@ export function IntlBlogIndex({
           <Link key={p.slug} href={`${base}/${p.slug}`}>
             <article className="h-full bg-card border border-border rounded-2xl overflow-hidden hover:border-primary/40 hover:-translate-y-0.5 transition-all cursor-pointer group">
               {p.image ? (
-                <img
+                /**
+                 * ★ 2026-08-07: 생 <img>였다 — 25개 로케일 목록이 전부 최적화를 우회했다.
+                 * 카드는 **160px 높이 자리**인데 1200px 원본을 통째로 받고 있었다.
+                 * /de/blog 실측: 42장 = **1,488,918 bytes**.
+                 *
+                 * sizes를 480px로 잡은 근거(라이브 실측): 비셸 로케일 **420px**(max-w-4xl 864 ÷ 2 − gap),
+                 * 허브 셸 로케일 **352px**. 둘 다 덮으면서 절대 부족하지 않은 값이 480이다.
+                 * ⚠ 추측하지 말 것 — 표시 폭은 `getBoundingClientRect()`로 재고 나서 바꾼다.
+                 */
+                <Image
                   src={p.image}
                   alt={p.imageAlt ?? p.title}
                   width={600}
                   height={338}
+                  sizes="(max-width: 640px) 100vw, 480px"
                   className="w-full h-40 object-cover"
                   loading="lazy"
                 />

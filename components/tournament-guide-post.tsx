@@ -102,12 +102,25 @@ export default function TournamentGuidePost({
       <div className="border-b border-border" style={{ background: "rgba(0,0,0,0.15)" }}>
         {post.image && (
           <div className="relative h-48 md:h-64 w-full overflow-hidden">
-            <img
+            {/**
+              * ★ 2026-08-07: 생 <img>였다 — 전면 배너가 최적화를 우회해 **원본 61,072 bytes**를
+              * 그대로 받고 있었다(라이브 실측). 게다가 `fetchPriority="high"` 생 <img>를 보고
+              * React가 **raw 경로로 preload를 하나 더** 내보내, page.tsx의 최적화본 preload와
+              * 어긋난 채 둘 다 화면 그리기 직전에 대역폭을 먹고 있었다.
+              *
+              * `priority`가 srcset·sizes까지 일치하는 preload를 대신 내주므로 그 어긋남이 사라진다.
+              * sizes=100vw인 이유: 이 배너는 본문 폭(672/906px)이 아니라 **뷰포트 전폭**이다
+              * (`h-48 md:h-64 w-full`, 1280 뷰포트에서 1280x256 실측).
+              *
+              * ⚠ 같은 사진이 이 페이지에 **두 번** 나온다(전면 배너 + 본문 첫 이미지).
+              *   렌디션이 달라 합칠 수 없다 — 합치려면 콘텐츠 쪽에서 배너/본문 중 하나를 빼야 한다.
+              */}
+            <Image
               src={post.image}
               alt={post.imageAlt || post.title}
               className="w-full h-full object-cover opacity-40"
-              loading="eager"
-              fetchPriority="high"
+              priority
+              sizes="100vw"
               width={1200}
               height={630}
             />
