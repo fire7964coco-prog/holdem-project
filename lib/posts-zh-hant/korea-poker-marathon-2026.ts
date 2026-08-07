@@ -33,7 +33,7 @@ export const POST: Post = {
 而韓國，正是這兩件事完美交會的地方。==**世界級的秋季馬拉松、離機場十分鐘的外國人專屬賭場，中間還夾著全亞洲最強的都市美食。**==
 
 <div style="display:flex;align-items:flex-start;gap:16px;margin:20px 0">
-  <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-marathon-record.webp" alt="2026 高陽半程馬拉松官方成績卡——晶片時間 1:51:10，男子半馬組" style="width:160px;flex-shrink:0;border-radius:8px" />
+  <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-marathon-record.webp" alt="2026 高陽半程馬拉松官方成績卡——晶片時間 1:51:10，男子半馬組" width="600" height="899" sizes="160px" style="width:160px;flex-shrink:0;border-radius:8px" />
   <div style="font-size:14px;line-height:1.7;color:var(--muted-foreground)">
     <strong style="display:block;margin-bottom:6px;color:var(--foreground)">個人紀錄——2026 高陽半程馬拉松</strong>
     晶片時間：<strong>1:51:10</strong> · 男子半馬組 · 號碼布 5448<br />
@@ -396,11 +396,11 @@ export const POST: Post = {
 
 <div style="display:flex;gap:12px;margin:18px 0;flex-wrap:wrap">
   <div style="flex:1;min-width:240px">
-    <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-hangang1.webp" alt="漢江公園自行車與跑步步道——前景長椅上的情侶，河濱上的自行車與行人，對岸是首爾天際線" style="width:100%;border-radius:8px;display:block" />
+    <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-hangang1.webp" alt="漢江公園自行車與跑步步道——前景長椅上的情侶，河濱上的自行車與行人，對岸是首爾天際線" width="650" height="867" sizes="(max-width: 520px) 100vw, 330px" style="width:100%;border-radius:8px;display:block" />
     <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">汝矣島漢江公園——跑者最愛的一段。平坦、寬闊、無車、24 小時開放。</p>
   </div>
   <div style="flex:1;min-width:240px">
-    <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-hangang2.webp" alt="漢江公園林蔭跑步步道——河濱步道上的慢跑者與自行車騎士，對岸是公寓高樓" style="width:100%;border-radius:8px;display:block" />
+    <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-hangang2.webp" alt="漢江公園林蔭跑步步道——河濱步道上的慢跑者與自行車騎士，對岸是公寓高樓" width="560" height="700" sizes="(max-width: 520px) 100vw, 330px" style="width:100%;border-radius:8px;display:block" />
     <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">河濱步道往兩個方向都延伸數公里——當地人天天用來跑步、騎車、清晨散步。</p>
   </div>
 </div>
@@ -426,11 +426,11 @@ export const POST: Post = {
 
 <div style="display:flex;gap:12px;margin:18px 0;flex-wrap:wrap">
   <div style="flex:1;min-width:200px">
-    <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-ramen-machine.webp" alt="GS25 便利商店的漢江泡麵烹煮機——為紙碗即食麵自動供應熱水" style="width:100%;height:280px;object-fit:cover;border-radius:8px;display:block" />
+    <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-ramen-machine.webp" alt="GS25 便利商店的漢江泡麵烹煮機——為紙碗即食麵自動供應熱水" width="525" height="700" sizes="(max-width: 520px) 100vw, 330px" style="width:100%;height:280px;object-fit:cover;border-radius:8px;display:block" />
     <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">公園便利商店的機器。掃你的條碼紙碗、按開始——剩下的交給機器。機器免費使用。</p>
   </div>
   <div style="flex:1;min-width:200px">
-    <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-ramen.webp" alt="一碗漢江泡麵——紙碗裡的辛拉麵加一顆蛋，在河邊享用" style="width:100%;height:280px;object-fit:cover;border-radius:8px;display:block" />
+    <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-ramen.webp" alt="一碗漢江泡麵——紙碗裡的辛拉麵加一顆蛋，在河邊享用" width="700" height="525" sizes="(max-width: 520px) 100vw, 330px" style="width:100%;height:280px;object-fit:cover;border-radius:8px;display:block" />
     <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">成品。漢江邊一碗加蛋的熱辛拉麵。總花費 ₩4,000–5,000（約 $3）。大概是首爾最棒的賽後一餐。</p>
   </div>
 </div>

@@ -270,11 +270,11 @@ Berikut yang bisa dilakukan dengan 1–3 hari luang:
 
 <div style="display:flex;gap:6px;margin:14px 0">
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-hongdae.webp" alt="Pintu masuk subway Stasiun Hongik University (Hongdae) — Line 2, Airport Express, dan Gyeongui-Jungang, dengan sepeda sewaan terparkir di luar" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:6px" />
+    <img src="/images/apt-incheon-2026-guide-hongdae.webp" alt="Pintu masuk subway Stasiun Hongik University (Hongdae) — Line 2, Airport Express, dan Gyeongui-Jungang, dengan sepeda sewaan terparkir di luar" loading="lazy" decoding="async" width="600" height="800" sizes="(max-width: 768px) 47vw, 333px" style="width:100%;height:auto;border-radius:6px" />
     <p style="font-size:11px;color:#888;margin:4px 0 0">Stasiun Hongdae — AREX All-Stop langsung dari Bandara Incheon (~60 mnt, tanpa transfer)</p>
   </div>
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-kbeauty.webp" alt="Toko Olive Young di Hongdae — jaringan kesehatan dan kecantikan terbesar Korea dengan ribuan produk K-beauty dan perawatan kulit" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:6px" />
+    <img src="/images/apt-incheon-2026-guide-kbeauty.webp" alt="Toko Olive Young di Hongdae — jaringan kesehatan dan kecantikan terbesar Korea dengan ribuan produk K-beauty dan perawatan kulit" loading="lazy" decoding="async" width="600" height="800" sizes="(max-width: 768px) 47vw, 333px" style="width:100%;height:auto;border-radius:6px" />
     <p style="font-size:11px;color:#888;margin:4px 0 0">Olive Young — setiap brand K-beauty yang Anda lihat di TikTok</p>
   </div>
 </div>
@@ -283,15 +283,15 @@ Berikut yang bisa dilakukan dengan 1–3 hari luang:
 
 <div style="display:flex;gap:6px;margin:14px 0">
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-myeongdong1.webp" alt="Eksterior restoran Myeongdong Kyoja — spot kalguksu dan mandu paling terkenal di Seoul sejak 1966, selalu penuh turis dan warga lokal" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <img src="/images/apt-incheon-2026-guide-myeongdong1.webp" alt="Eksterior restoran Myeongdong Kyoja — spot kalguksu dan mandu paling terkenal di Seoul sejak 1966, selalu penuh turis dan warga lokal" loading="lazy" decoding="async" width="480" height="640" sizes="(max-width: 768px) 31vw, 220px" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
     <p style="font-size:11px;color:#888;margin:4px 0 0">Myeongdong Kyoja — mi potong pisau sejak 1966, selalu antre</p>
   </div>
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-myeongdong2.webp" alt="Halte Bus Bandara di Stasiun Myeongdong — layanan bus langsung ke Bandara Incheon dari pusat Seoul" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <img src="/images/apt-incheon-2026-guide-myeongdong2.webp" alt="Halte Bus Bandara di Stasiun Myeongdong — layanan bus langsung ke Bandara Incheon dari pusat Seoul" loading="lazy" decoding="async" width="480" height="640" sizes="(max-width: 768px) 31vw, 220px" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
     <p style="font-size:11px;color:#888;margin:4px 0 0">Halte bus bandara tepat di Stasiun Myeongdong → Incheon ~60 mnt</p>
   </div>
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-myeongdong3.webp" alt="Jalan belanja Myeongdong dipenuhi toko K-beauty dan apotek berwarna-warni — Holika Holika terlihat di sebelah kanan" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <img src="/images/apt-incheon-2026-guide-myeongdong3.webp" alt="Jalan belanja Myeongdong dipenuhi toko K-beauty dan apotek berwarna-warni — Holika Holika terlihat di sebelah kanan" loading="lazy" decoding="async" width="480" height="640" sizes="(max-width: 768px) 31vw, 220px" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
     <p style="font-size:11px;color:#888;margin:4px 0 0">Myeongdong-gil — 800 m K-beauty, street food, dan papan neon</p>
   </div>
 </div>
@@ -300,15 +300,15 @@ Berikut yang bisa dilakukan dengan 1–3 hari luang:
 
 <div style="display:flex;gap:6px;margin:14px 0">
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-cheonggyecheon1.webp" alt="Pemandangan lebar Cheonggyecheon Stream — jalur setapak dan batu pijakan dengan gedung pencakar langit pusat Seoul terlihat di balik deretan pohon" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <img src="/images/apt-incheon-2026-guide-cheonggyecheon1.webp" alt="Pemandangan lebar Cheonggyecheon Stream — jalur setapak dan batu pijakan dengan gedung pencakar langit pusat Seoul terlihat di balik deretan pohon" loading="lazy" decoding="async" width="480" height="640" sizes="(max-width: 768px) 31vw, 220px" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
     <p style="font-size:11px;color:#888;margin:4px 0 0">Kanal 11 km yang mengalir melintasi pusat Seoul — gratis, 24 jam</p>
   </div>
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-cheonggyecheon2.webp" alt="Close-up Cheonggyecheon Stream — burung kuntul putih berdiri di air yang mengalir, sepasang orang duduk di bebatuan tepi kanal" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <img src="/images/apt-incheon-2026-guide-cheonggyecheon2.webp" alt="Close-up Cheonggyecheon Stream — burung kuntul putih berdiri di air yang mengalir, sepasang orang duduk di bebatuan tepi kanal" loading="lazy" decoding="async" width="480" height="640" sizes="(max-width: 768px) 31vw, 220px" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
     <p style="font-size:11px;color:#888;margin:4px 0 0">Burung kuntul mencari ikan di kanal — di tengah kota besar</p>
   </div>
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-cheonggyecheon3.webp" alt="Jalur setapak Cheonggyecheon Stream — pohon willow menjuntai di sisi kanal, pejalan kaki menyusuri jalur tepi sungai" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <img src="/images/apt-incheon-2026-guide-cheonggyecheon3.webp" alt="Jalur setapak Cheonggyecheon Stream — pohon willow menjuntai di sisi kanal, pejalan kaki menyusuri jalur tepi sungai" loading="lazy" decoding="async" width="480" height="640" sizes="(max-width: 768px) 31vw, 220px" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
     <p style="font-size:11px;color:#888;margin:4px 0 0">Exit subway setiap beberapa menit di sepanjang jalur — berjalan sejauh yang Anda mau</p>
   </div>
 </div>

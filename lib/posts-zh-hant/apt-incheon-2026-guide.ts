@@ -274,11 +274,11 @@ Paradise City 提供自家的機場免費接送：
 
 <div style="display:flex;gap:6px;margin:14px 0">
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-hongdae.webp" alt="弘益大學站（弘大）地鐵出入口——2 號線、機場快線與京義中央線交會，門口停著租借腳踏車" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:6px" />
+    <img src="/images/apt-incheon-2026-guide-hongdae.webp" alt="弘益大學站（弘大）地鐵出入口——2 號線、機場快線與京義中央線交會，門口停著租借腳踏車" loading="lazy" decoding="async" width="600" height="800" sizes="(max-width: 768px) 47vw, 333px" style="width:100%;height:auto;border-radius:6px" />
     <p style="font-size:11px;color:#888;margin:4px 0 0">弘大站——仁川機場 AREX 各站停直達（~60 分鐘，免轉車）</p>
   </div>
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-kbeauty.webp" alt="弘大的 Olive Young 門市——韓國最大的美妝連鎖，架上上千種 K-beauty 保養品" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:6px" />
+    <img src="/images/apt-incheon-2026-guide-kbeauty.webp" alt="弘大的 Olive Young 門市——韓國最大的美妝連鎖，架上上千種 K-beauty 保養品" loading="lazy" decoding="async" width="600" height="800" sizes="(max-width: 768px) 47vw, 333px" style="width:100%;height:auto;border-radius:6px" />
     <p style="font-size:11px;color:#888;margin:4px 0 0">Olive Young——你在 TikTok 上看過的每個 K-beauty 品牌</p>
   </div>
 </div>
@@ -287,15 +287,15 @@ Paradise City 提供自家的機場免費接送：
 
 <div style="display:flex;gap:6px;margin:14px 0">
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-myeongdong1.webp" alt="明洞餃子餐廳外觀——首爾最有名的刀削麵與餃子名店，1966 年創業至今，永遠擠滿觀光客與當地人" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <img src="/images/apt-incheon-2026-guide-myeongdong1.webp" alt="明洞餃子餐廳外觀——首爾最有名的刀削麵與餃子名店，1966 年創業至今，永遠擠滿觀光客與當地人" loading="lazy" decoding="async" width="480" height="640" sizes="(max-width: 768px) 31vw, 220px" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
     <p style="font-size:11px;color:#888;margin:4px 0 0">明洞餃子——1966 年至今的刀削麵，永遠在排隊</p>
   </div>
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-myeongdong2.webp" alt="明洞站的機場巴士站牌——從首爾市中心直達仁川機場的客運服務" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <img src="/images/apt-incheon-2026-guide-myeongdong2.webp" alt="明洞站的機場巴士站牌——從首爾市中心直達仁川機場的客運服務" loading="lazy" decoding="async" width="480" height="640" sizes="(max-width: 768px) 31vw, 220px" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
     <p style="font-size:11px;color:#888;margin:4px 0 0">明洞站正門口的機場巴士站 → 仁川 ~60 分鐘</p>
   </div>
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-myeongdong3.webp" alt="明洞購物街兩側林立的繽紛 K-beauty 店與藥妝店——右側可見 Holika Holika" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <img src="/images/apt-incheon-2026-guide-myeongdong3.webp" alt="明洞購物街兩側林立的繽紛 K-beauty 店與藥妝店——右側可見 Holika Holika" loading="lazy" decoding="async" width="480" height="640" sizes="(max-width: 768px) 31vw, 220px" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
     <p style="font-size:11px;color:#888;margin:4px 0 0">明洞街——800 公尺的 K-beauty、街頭小吃與霓虹招牌</p>
   </div>
 </div>
@@ -304,15 +304,15 @@ Paradise City 提供自家的機場免費接送：
 
 <div style="display:flex;gap:6px;margin:14px 0">
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-cheonggyecheon1.webp" alt="清溪川廣角——架高步道與踏石，樹線後方是首爾市中心的摩天大樓" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <img src="/images/apt-incheon-2026-guide-cheonggyecheon1.webp" alt="清溪川廣角——架高步道與踏石，樹線後方是首爾市中心的摩天大樓" loading="lazy" decoding="async" width="480" height="640" sizes="(max-width: 768px) 31vw, 220px" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
     <p style="font-size:11px;color:#888;margin:4px 0 0">穿越首爾市中心的 11 公里溪流——免費、24 小時</p>
   </div>
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-cheonggyecheon2.webp" alt="清溪川近景——一隻白鷺站在流水中，一對情侶坐在岸邊石頭上" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <img src="/images/apt-incheon-2026-guide-cheonggyecheon2.webp" alt="清溪川近景——一隻白鷺站在流水中，一對情侶坐在岸邊石頭上" loading="lazy" decoding="async" width="480" height="640" sizes="(max-width: 768px) 31vw, 220px" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
     <p style="font-size:11px;color:#888;margin:4px 0 0">白鷺在溪中覓食——就在首都市中心</p>
   </div>
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-cheonggyecheon3.webp" alt="清溪川步道——溪畔垂柳成蔭，行人漫步在河濱小徑上" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <img src="/images/apt-incheon-2026-guide-cheonggyecheon3.webp" alt="清溪川步道——溪畔垂柳成蔭，行人漫步在河濱小徑上" loading="lazy" decoding="async" width="480" height="640" sizes="(max-width: 768px) 31vw, 220px" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
     <p style="font-size:11px;color:#888;margin:4px 0 0">步道沿途每隔幾分鐘就有地鐵出口——想走多遠走多遠</p>
   </div>
 </div>

@@ -280,11 +280,11 @@ $20ステップサテライト → $200メガサテライトのチケットを�
 
 <div style="display:flex;gap:6px;margin:14px 0">
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-hongdae.webp" alt="弘益大入口駅(弘大)の地下鉄入口 — 2号線・空港鉄道・京義中央線が乗り入れ、外にはレンタル自転車が並ぶ" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:6px" />
+    <img src="/images/apt-incheon-2026-guide-hongdae.webp" alt="弘益大入口駅(弘大)の地下鉄入口 — 2号線・空港鉄道・京義中央線が乗り入れ、外にはレンタル自転車が並ぶ" loading="lazy" decoding="async" width="600" height="800" sizes="(max-width: 768px) 47vw, 333px" style="width:100%;height:auto;border-radius:6px" />
     <p style="font-size:11px;color:#888;margin:4px 0 0">弘大駅 — 仁川空港からAREX各駅停車で直通(約60分、乗り換えなし)</p>
   </div>
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-kbeauty.webp" alt="弘大のオリーブヤング店舗 — 韓国最大のヘルス&ビューティーチェーン。K-ビューティーとスキンケア製品が数千点そろう" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:6px" />
+    <img src="/images/apt-incheon-2026-guide-kbeauty.webp" alt="弘大のオリーブヤング店舗 — 韓国最大のヘルス&ビューティーチェーン。K-ビューティーとスキンケア製品が数千点そろう" loading="lazy" decoding="async" width="600" height="800" sizes="(max-width: 768px) 47vw, 333px" style="width:100%;height:auto;border-radius:6px" />
     <p style="font-size:11px;color:#888;margin:4px 0 0">オリーブヤング — TikTokで見たK-ビューティーブランドが勢ぞろい</p>
   </div>
 </div>
@@ -293,15 +293,15 @@ $20ステップサテライト → $200メガサテライトのチケットを�
 
 <div style="display:flex;gap:6px;margin:14px 0">
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-myeongdong1.webp" alt="明洞餃子の外観 — 1966年創業、ソウルで最も有名なカルグクスとマンドゥの店。いつも観光客と地元客で満席" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <img src="/images/apt-incheon-2026-guide-myeongdong1.webp" alt="明洞餃子の外観 — 1966年創業、ソウルで最も有名なカルグクスとマンドゥの店。いつも観光客と地元客で満席" loading="lazy" decoding="async" width="480" height="640" sizes="(max-width: 768px) 31vw, 220px" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
     <p style="font-size:11px;color:#888;margin:4px 0 0">明洞餃子 — 1966年からの手打ち麺、いつも行列</p>
   </div>
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-myeongdong2.webp" alt="明洞駅の空港バス乗り場 — ソウル中心部から仁川空港へ直行するリムジンバス" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <img src="/images/apt-incheon-2026-guide-myeongdong2.webp" alt="明洞駅の空港バス乗り場 — ソウル中心部から仁川空港へ直行するリムジンバス" loading="lazy" decoding="async" width="480" height="640" sizes="(max-width: 768px) 31vw, 220px" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
     <p style="font-size:11px;color:#888;margin:4px 0 0">明洞駅すぐの空港バス乗り場 → 仁川まで約60分</p>
   </div>
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-myeongdong3.webp" alt="明洞のショッピングストリート — カラフルなK-ビューティー店とドラッグストアが並び、右手にホリカホリカが見える" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <img src="/images/apt-incheon-2026-guide-myeongdong3.webp" alt="明洞のショッピングストリート — カラフルなK-ビューティー店とドラッグストアが並び、右手にホリカホリカが見える" loading="lazy" decoding="async" width="480" height="640" sizes="(max-width: 768px) 31vw, 220px" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
     <p style="font-size:11px;color:#888;margin:4px 0 0">明洞キル — 800mにわたるK-ビューティー、屋台、ネオンサイン</p>
   </div>
 </div>
@@ -310,15 +310,15 @@ $20ステップサテライト → $200メガサテライトのチケットを�
 
 <div style="display:flex;gap:6px;margin:14px 0">
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-cheonggyecheon1.webp" alt="清渓川の広い眺め — 高架の遊歩道と飛び石。木立の向こうにソウル中心部の高層ビル群が見える" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <img src="/images/apt-incheon-2026-guide-cheonggyecheon1.webp" alt="清渓川の広い眺め — 高架の遊歩道と飛び石。木立の向こうにソウル中心部の高層ビル群が見える" loading="lazy" decoding="async" width="480" height="640" sizes="(max-width: 768px) 31vw, 220px" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
     <p style="font-size:11px;color:#888;margin:4px 0 0">ソウル都心を貫く全長11kmの河川 — 無料、24時間</p>
   </div>
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-cheonggyecheon2.webp" alt="清渓川のクローズアップ — 流れる水の中に立つ白いサギ、岸辺の岩に座るカップル" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <img src="/images/apt-incheon-2026-guide-cheonggyecheon2.webp" alt="清渓川のクローズアップ — 流れる水の中に立つ白いサギ、岸辺の岩に座るカップル" loading="lazy" decoding="async" width="480" height="640" sizes="(max-width: 768px) 31vw, 220px" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
     <p style="font-size:11px;color:#888;margin:4px 0 0">サギが魚を狙う川 — 首都の真ん中で</p>
   </div>
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-cheonggyecheon3.webp" alt="清渓川の遊歩道 — 川沿いに枝垂れ柳が並び、人々が川辺の小道を散策している" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <img src="/images/apt-incheon-2026-guide-cheonggyecheon3.webp" alt="清渓川の遊歩道 — 川沿いに枝垂れ柳が並び、人々が川辺の小道を散策している" loading="lazy" decoding="async" width="480" height="640" sizes="(max-width: 768px) 31vw, 220px" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
     <p style="font-size:11px;color:#888;margin:4px 0 0">遊歩道沿いに数分おきの地下鉄出口 — 好きなだけ歩ける</p>
   </div>
 </div>

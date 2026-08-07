@@ -509,4 +509,37 @@ export function renderMarkdown(content: string): string {
     .replace(/(<li.*<\/li>\n?)+/g, (m) => `<ul class="my-4 space-y-1">${m}</ul>`)
     .replace(/\n\n/g, '</p><p class="text-muted-foreground text-base leading-relaxed mb-4">')
     .replace(/^(?!<[h|u|t|h|l|d|p|r|b])(.+)$/gm, (m) => m.trim() ? m : '')
+    /**
+     * ★ 마지막 패스 — 포스트 본문에 **손으로 쓴** 생 <img src="/images/…">를 최적화 경로에 태운다.
+     *
+     * 위 fullWidthImg()는 마크다운 `![]()`만 처리한다. 갤러리 그리드처럼 레이아웃이 필요한 자리는
+     * 포스트가 raw HTML로 <img>를 직접 쓰는데(3개 글·18개 파일·114개), 그것들이 **최적화를 통째로
+     * 우회하고 있었다.** 2026-08-07 프로덕션 실측:
+     *   apt-incheon `kbeauty` = 600x800 원본 74,688 bytes가 **표시 폭 333px 자리에 그대로** 전송.
+     *   /_next/image 경유 시 w=384 → 35.7KB · w=256 → 18.2KB (최대 −75%).
+     *
+     * ⚠ 폭 750px 미만 원본은 w≥원본폭 요청에서 **원본 바이트가 그대로 나온다**(withoutEnlargement).
+     *   실측으로 74,688 == 74,688 확인. 그래서 이 글들은 «작은 후보»(128·256·384)가 있어야 의미가 있다.
+     * ⚠ 실제 절감은 `sizes`가 정확해야 나온다 — 표시 폭은 포스트의 레이아웃이 정하므로
+     *   **각 <img>가 sizes를 직접 들고 있다.** 없으면 전폭(672px)으로 보수적 폴백한다.
+     * ⚠ 이미 최적화된 src(/_next/image…)와 외부 호스트는 정규식이 걸러낸다(src="/images/…"만 매치).
+     */
+    .replace(/<img\b[^>]*\bsrc="\/images\/[^"]+"[^>]*>/g, (tag) => {
+      if (/\ssrcset=/.test(tag)) return tag; // 이미 처리됨
+      const src = tag.match(/\bsrc="(\/images\/[^"]+)"/)![1];
+      const sizes = /\ssizes="/.test(tag)
+        ? ''
+        : ` sizes="(max-width: 768px) 100vw, 672px"`;
+      return tag.replace(
+        /\bsrc="\/images\/[^"]+"/,
+        `src="${optSrc(src, 750)}" srcset="${optSet(src, RAW_IMG_WIDTHS)}"${sizes}`
+      );
+    })
 }
+
+/**
+ * 생 <img> 최적화용 후보 폭. next.config.mjs의 deviceSizes ∪ imageSizes 안에 있어야 한다
+ * (그 밖의 값은 이미지 API가 400을 돌려준다).
+ * 작은 값(128·256)은 3단 그리드·160px 고정 썸네일처럼 «좁게 표시되는» 자리를 위해 필요하다.
+ */
+const RAW_IMG_WIDTHS = [128, 256, 384, 480, 640, 750, 1080];

@@ -33,7 +33,7 @@ export const POST: Post = {
 その両方が完璧に交わるのが韓国です。==**世界レベルの秋のマラソン。空港から10分の外国人専用カジノ。そしてその合間には、アジア随一といっていい都市の食文化。**==
 
 <div style="display:flex;align-items:flex-start;gap:16px;margin:20px 0">
-  <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-marathon-record.webp" alt="2026高陽ハーフマラソンの公式リザルトカード — チップタイム1:51:10、男子ハーフ部門" style="width:160px;flex-shrink:0;border-radius:8px" />
+  <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-marathon-record.webp" alt="2026高陽ハーフマラソンの公式リザルトカード — チップタイム1:51:10、男子ハーフ部門" width="600" height="899" sizes="160px" style="width:160px;flex-shrink:0;border-radius:8px" />
   <div style="font-size:14px;line-height:1.7;color:var(--muted-foreground)">
     <strong style="display:block;margin-bottom:6px;color:var(--foreground)">自己記録 — 2026高陽ハーフマラソン</strong>
     チップタイム: <strong>1:51:10</strong> · 男子ハーフ部門 · ゼッケン5448<br />
@@ -425,11 +425,11 @@ export const POST: Post = {
 
 <div style="display:flex;gap:12px;margin:18px 0;flex-wrap:wrap">
   <div style="flex:1;min-width:240px">
-    <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-hangang1.webp" alt="漢江公園のサイクリング・ランニングロード — 手前のベンチにカップル、リバーサイドを走る自転車と歩行者、対岸にソウルのスカイライン" style="width:100%;border-radius:8px;display:block" />
+    <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-hangang1.webp" alt="漢江公園のサイクリング・ランニングロード — 手前のベンチにカップル、リバーサイドを走る自転車と歩行者、対岸にソウルのスカイライン" width="650" height="867" sizes="(max-width: 520px) 100vw, 330px" style="width:100%;border-radius:8px;display:block" />
     <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">汝矣島漢江公園 — ランナーに最も人気の区間。平坦で幅広く、車道と交わらず、24時間開放。</p>
   </div>
   <div style="flex:1;min-width:240px">
-    <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-hangang2.webp" alt="漢江公園の並木のランニングロード — リバーサイドトレイルを走るジョガーとサイクリスト、対岸のマンション群" style="width:100%;border-radius:8px;display:block" />
+    <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-hangang2.webp" alt="漢江公園の並木のランニングロード — リバーサイドトレイルを走るジョガーとサイクリスト、対岸のマンション群" width="560" height="700" sizes="(max-width: 520px) 100vw, 330px" style="width:100%;border-radius:8px;display:block" />
     <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">リバーサイドの道は両方向に何キロも続きます — 地元の人の日々のランニング、サイクリング、早朝の散歩に使われています。</p>
   </div>
 </div>
@@ -455,11 +455,11 @@ export const POST: Post = {
 
 <div style="display:flex;gap:12px;margin:18px 0;flex-wrap:wrap">
   <div style="flex:1;min-width:200px">
-    <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-ramen-machine.webp" alt="GS25コンビニにある漢江ラーメンの調理マシン — 紙容器のインスタント麺用の自動給湯機" style="width:100%;height:280px;object-fit:cover;border-radius:8px;display:block" />
+    <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-ramen-machine.webp" alt="GS25コンビニにある漢江ラーメンの調理マシン — 紙容器のインスタント麺用の自動給湯機" width="525" height="700" sizes="(max-width: 520px) 100vw, 330px" style="width:100%;height:280px;object-fit:cover;border-radius:8px;display:block" />
     <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">公園のコンビニにあるマシン。バーコード付きの容器をスキャンしてスタートを押すだけ、あとはマシンにおまかせ。マシンの使用は無料。</p>
   </div>
   <div style="flex:1;min-width:200px">
-    <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-ramen.webp" alt="漢江ラーメンの一杯 — 紙容器の辛ラーメンに卵をのせて、川辺で食べる" style="width:100%;height:280px;object-fit:cover;border-radius:8px;display:block" />
+    <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-ramen.webp" alt="漢江ラーメンの一杯 — 紙容器の辛ラーメンに卵をのせて、川辺で食べる" width="700" height="525" sizes="(max-width: 520px) 100vw, 330px" style="width:100%;height:280px;object-fit:cover;border-radius:8px;display:block" />
     <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">完成。漢江のほとりで、卵入りの熱々の辛ラーメン。合計₩4,000〜5,000(約$3)。ソウルで最高のラン後の一杯かもしれません。</p>
   </div>
 </div>

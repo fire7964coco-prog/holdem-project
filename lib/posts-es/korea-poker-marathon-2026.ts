@@ -33,7 +33,7 @@ Esa historia caló más allá del fandom ARMY. Caló en un solapamiento que ya e
 Corea es donde ambas encajan a la perfección. ==**Maratones de otoño de talla mundial. Un casino solo para extranjeros a 10 minutos del aeropuerto. Y, entre medias, la mejor escena gastronómica urbana de Asia.**==
 
 <div style="display:flex;align-items:flex-start;gap:16px;margin:20px 0">
-  <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-marathon-record.webp" alt="Tarjeta oficial de resultado del Medio Maratón de Goyang 2026 — chip time 1:51:10, categoría Medio Masculino" style="width:160px;flex-shrink:0;border-radius:8px" />
+  <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-marathon-record.webp" alt="Tarjeta oficial de resultado del Medio Maratón de Goyang 2026 — chip time 1:51:10, categoría Medio Masculino" width="600" height="899" sizes="160px" style="width:160px;flex-shrink:0;border-radius:8px" />
   <div style="font-size:14px;line-height:1.7;color:var(--muted-foreground)">
     <strong style="display:block;margin-bottom:6px;color:var(--foreground)">Marca personal — Medio Maratón de Goyang 2026</strong>
     Chip time: <strong>1:51:10</strong> · categoría Medio Masculino · dorsal 5448<br />
@@ -396,11 +396,11 @@ El río Han cruza el centro de Seúl, y ambas orillas tienen más de ==g:80 kil�
 
 <div style="display:flex;gap:12px;margin:18px 0;flex-wrap:wrap">
   <div style="flex:1;min-width:240px">
-    <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-hangang1.webp" alt="Carril bici y de running del Parque del río Han — pareja en un banco en primer plano, ciclistas y peatones por la ribera, skyline de Seúl al otro lado del río" style="width:100%;border-radius:8px;display:block" />
+    <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-hangang1.webp" alt="Carril bici y de running del Parque del río Han — pareja en un banco en primer plano, ciclistas y peatones por la ribera, skyline de Seúl al otro lado del río" width="650" height="867" sizes="(max-width: 520px) 100vw, 330px" style="width:100%;border-radius:8px;display:block" />
     <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">Parque del Hangang de Yeouido — la sección más popular para corredores. Llana, ancha, sin coches, abierta las 24 horas.</p>
   </div>
   <div style="flex:1;min-width:240px">
-    <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-hangang2.webp" alt="Sendero de running arbolado del Parque del río Han — corredor y ciclista a la vista en la ribera, torres de apartamentos al otro lado del río" style="width:100%;border-radius:8px;display:block" />
+    <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-hangang2.webp" alt="Sendero de running arbolado del Parque del río Han — corredor y ciclista a la vista en la ribera, torres de apartamentos al otro lado del río" width="560" height="700" sizes="(max-width: 520px) 100vw, 330px" style="width:100%;border-radius:8px;display:block" />
     <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">El sendero ribereño continúa durante kilómetros en ambas direcciones — usado por los locales para su carrera diaria, ciclistas y paseos de primera hora.</p>
   </div>
 </div>
@@ -426,11 +426,11 @@ Ya está. Esa es la experiencia que se ha publicado millones de veces en las red
 
 <div style="display:flex;gap:12px;margin:18px 0;flex-wrap:wrap">
   <div style="flex:1;min-width:200px">
-    <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-ramen-machine.webp" alt="Máquina de cocinar ramen del río Han en un GS25 — dispensador automático de agua caliente para fideos instantáneos en cuencos de papel" style="width:100%;height:280px;object-fit:cover;border-radius:8px;display:block" />
+    <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-ramen-machine.webp" alt="Máquina de cocinar ramen del río Han en un GS25 — dispensador automático de agua caliente para fideos instantáneos en cuencos de papel" width="525" height="700" sizes="(max-width: 520px) 100vw, 330px" style="width:100%;height:280px;object-fit:cover;border-radius:8px;display:block" />
     <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">La máquina en el súper del parque. Escanea el cuenco con código de barras, pulsa Start — la máquina hace el resto. Usarla es gratis.</p>
   </div>
   <div style="flex:1;min-width:200px">
-    <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-ramen.webp" alt="Cuenco de ramen del río Han — fideos instantáneos Shin Ramyun en cuenco de papel con huevo encima, comidos en la ribera" style="width:100%;height:280px;object-fit:cover;border-radius:8px;display:block" />
+    <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-ramen.webp" alt="Cuenco de ramen del río Han — fideos instantáneos Shin Ramyun en cuenco de papel con huevo encima, comidos en la ribera" width="700" height="525" sizes="(max-width: 520px) 100vw, 330px" style="width:100%;height:280px;object-fit:cover;border-radius:8px;display:block" />
     <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">El resultado. Shin Ramyun caliente con huevo junto al río Han. Coste total ₩4,000–5,000 (~$3). Posiblemente la mejor comida post-carrera de Seúl.</p>
   </div>
 </div>

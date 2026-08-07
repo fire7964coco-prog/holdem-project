@@ -32,7 +32,7 @@ Kisah itu menggema jauh melampaui fandom ARMY. Ia menggema pada irisan yang mema
 Korea adalah tempat keduanya bertemu dengan sempurna. ==**Maraton musim gugur kelas dunia. Kasino khusus warga asing 10 menit dari bandara. Dan skena kuliner kota terbaik di Asia di antara keduanya.**==
 
 <div style="display:flex;align-items:flex-start;gap:16px;margin:20px 0">
-  <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-marathon-record.webp" alt="Kartu hasil resmi 2026 Goyang Half Marathon — waktu chip 1:51:10, divisi Half Putra" style="width:160px;flex-shrink:0;border-radius:8px" />
+  <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-marathon-record.webp" alt="Kartu hasil resmi 2026 Goyang Half Marathon — waktu chip 1:51:10, divisi Half Putra" width="600" height="899" sizes="160px" style="width:160px;flex-shrink:0;border-radius:8px" />
   <div style="font-size:14px;line-height:1.7;color:var(--muted-foreground)">
     <strong style="display:block;margin-bottom:6px;color:var(--foreground)">Rekor pribadi — 2026 Goyang Half Marathon</strong>
     Waktu chip: <strong>1:51:10</strong> · divisi Half Putra · Bib 5448<br />
@@ -395,11 +395,11 @@ Sungai Han membelah pusat Seoul, dan kedua tepiannya memiliki lebih dari ==g:80 
 
 <div style="display:flex;gap:12px;margin:18px 0;flex-wrap:wrap">
   <div style="flex:1;min-width:240px">
-    <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-hangang1.webp" alt="Jalur sepeda dan lari taman Sungai Han — pasangan di bangku di latar depan, pesepeda dan pejalan kaki di sepanjang tepi sungai, cakrawala Seoul di seberang" style="width:100%;border-radius:8px;display:block" />
+    <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-hangang1.webp" alt="Jalur sepeda dan lari taman Sungai Han — pasangan di bangku di latar depan, pesepeda dan pejalan kaki di sepanjang tepi sungai, cakrawala Seoul di seberang" width="650" height="867" sizes="(max-width: 520px) 100vw, 330px" style="width:100%;border-radius:8px;display:block" />
     <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">Taman Hangang Yeouido — bagian paling populer untuk pelari. Datar, lebar, bebas kendaraan, buka 24 jam.</p>
   </div>
   <div style="flex:1;min-width:240px">
-    <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-hangang2.webp" alt="Jalur lari taman Sungai Han yang dinaungi pepohonan — pelari dan pesepeda terlihat di jalur tepi sungai, menara apartemen di seberang" style="width:100%;border-radius:8px;display:block" />
+    <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-hangang2.webp" alt="Jalur lari taman Sungai Han yang dinaungi pepohonan — pelari dan pesepeda terlihat di jalur tepi sungai, menara apartemen di seberang" width="560" height="700" sizes="(max-width: 520px) 100vw, 330px" style="width:100%;border-radius:8px;display:block" />
     <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">Jalur tepi sungai membentang sejauh berkilo-kilometer ke kedua arah — digunakan warga lokal untuk lari harian, bersepeda, dan jalan pagi.</p>
   </div>
 </div>
@@ -425,11 +425,11 @@ Itu saja. Itulah pengalaman yang telah diposting di media sosial Korea jutaan ka
 
 <div style="display:flex;gap:12px;margin:18px 0;flex-wrap:wrap">
   <div style="flex:1;min-width:200px">
-    <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-ramen-machine.webp" alt="Mesin pemasak ramen Sungai Han di minimarket GS25 — dispenser air panas otomatis untuk mi instan dalam mangkuk kertas" style="width:100%;height:280px;object-fit:cover;border-radius:8px;display:block" />
+    <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-ramen-machine.webp" alt="Mesin pemasak ramen Sungai Han di minimarket GS25 — dispenser air panas otomatis untuk mi instan dalam mangkuk kertas" width="525" height="700" sizes="(max-width: 520px) 100vw, 330px" style="width:100%;height:280px;object-fit:cover;border-radius:8px;display:block" />
     <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">Mesin di minimarket taman. Pindai mangkuk barcode Anda, tekan Start — sisanya diurus mesin. Penggunaan mesin gratis.</p>
   </div>
   <div style="flex:1;min-width:200px">
-    <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-ramen.webp" alt="Semangkuk ramen Sungai Han — mi instan Shin Ramyun dalam mangkuk kertas dengan telur di atasnya, disantap di tepi sungai" style="width:100%;height:280px;object-fit:cover;border-radius:8px;display:block" />
+    <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-ramen.webp" alt="Semangkuk ramen Sungai Han — mi instan Shin Ramyun dalam mangkuk kertas dengan telur di atasnya, disantap di tepi sungai" width="700" height="525" sizes="(max-width: 520px) 100vw, 330px" style="width:100%;height:280px;object-fit:cover;border-radius:8px;display:block" />
     <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">Hasilnya. Shin Ramyun panas dengan telur di tepi Sungai Han. Total biaya ₩4.000–5.000 (~$3). Mungkin santapan pasca-lari terbaik di Seoul.</p>
   </div>
 </div>

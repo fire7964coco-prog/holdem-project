@@ -270,11 +270,11 @@ Esto es lo que puedes hacer con 1–3 días libres:
 
 <div style="display:flex;gap:6px;margin:14px 0">
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-hongdae.webp" alt="Entrada del metro de la estación Universidad Hongik (Hongdae) — Líneas 2, Airport Express y Gyeongui-Jungang, con bicis públicas estacionadas fuera" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:6px" />
+    <img src="/images/apt-incheon-2026-guide-hongdae.webp" alt="Entrada del metro de la estación Universidad Hongik (Hongdae) — Líneas 2, Airport Express y Gyeongui-Jungang, con bicis públicas estacionadas fuera" loading="lazy" decoding="async" width="600" height="800" sizes="(max-width: 768px) 47vw, 333px" style="width:100%;height:auto;border-radius:6px" />
     <p style="font-size:11px;color:#888;margin:4px 0 0">Estación de Hongdae — AREX All-Stop directo desde el Aeropuerto de Incheon (~60 min, sin transbordo)</p>
   </div>
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-kbeauty.webp" alt="Tienda Olive Young en Hongdae — la mayor cadena de salud y belleza de Corea, con miles de productos de K-beauty y cuidado de la piel" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:6px" />
+    <img src="/images/apt-incheon-2026-guide-kbeauty.webp" alt="Tienda Olive Young en Hongdae — la mayor cadena de salud y belleza de Corea, con miles de productos de K-beauty y cuidado de la piel" loading="lazy" decoding="async" width="600" height="800" sizes="(max-width: 768px) 47vw, 333px" style="width:100%;height:auto;border-radius:6px" />
     <p style="font-size:11px;color:#888;margin:4px 0 0">Olive Young — todas las marcas de K-beauty que has visto en TikTok</p>
   </div>
 </div>
@@ -283,15 +283,15 @@ Esto es lo que puedes hacer con 1–3 días libres:
 
 <div style="display:flex;gap:6px;margin:14px 0">
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-myeongdong1.webp" alt="Exterior del restaurante Myeongdong Kyoja — el local de kalguksu y mandu más famoso de Seúl desde 1966, siempre lleno de turistas y locales" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <img src="/images/apt-incheon-2026-guide-myeongdong1.webp" alt="Exterior del restaurante Myeongdong Kyoja — el local de kalguksu y mandu más famoso de Seúl desde 1966, siempre lleno de turistas y locales" loading="lazy" decoding="async" width="480" height="640" sizes="(max-width: 768px) 31vw, 220px" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
     <p style="font-size:11px;color:#888;margin:4px 0 0">Myeongdong Kyoja — fideos cortados a cuchillo desde 1966, siempre con fila</p>
   </div>
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-myeongdong2.webp" alt="Parada del autobús de aeropuerto en la estación de Myeongdong — servicio directo de autocar al Aeropuerto de Incheon desde el centro de Seúl" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <img src="/images/apt-incheon-2026-guide-myeongdong2.webp" alt="Parada del autobús de aeropuerto en la estación de Myeongdong — servicio directo de autocar al Aeropuerto de Incheon desde el centro de Seúl" loading="lazy" decoding="async" width="480" height="640" sizes="(max-width: 768px) 31vw, 220px" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
     <p style="font-size:11px;color:#888;margin:4px 0 0">Parada del autobús de aeropuerto justo en la estación de Myeongdong → Incheon ~60 min</p>
   </div>
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-myeongdong3.webp" alt="Calle comercial de Myeongdong llena de coloridas tiendas de K-beauty y farmacias — Holika Holika a la derecha" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <img src="/images/apt-incheon-2026-guide-myeongdong3.webp" alt="Calle comercial de Myeongdong llena de coloridas tiendas de K-beauty y farmacias — Holika Holika a la derecha" loading="lazy" decoding="async" width="480" height="640" sizes="(max-width: 768px) 31vw, 220px" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
     <p style="font-size:11px;color:#888;margin:4px 0 0">Myeongdong-gil — 800 m de K-beauty, comida callejera y letreros de neón</p>
   </div>
 </div>
@@ -300,15 +300,15 @@ Esto es lo que puedes hacer con 1–3 días libres:
 
 <div style="display:flex;gap:6px;margin:14px 0">
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-cheonggyecheon1.webp" alt="Vista amplia del arroyo Cheonggyecheon — pasarela elevada y pasos de piedra con los rascacielos del centro de Seúl detrás de la línea de árboles" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <img src="/images/apt-incheon-2026-guide-cheonggyecheon1.webp" alt="Vista amplia del arroyo Cheonggyecheon — pasarela elevada y pasos de piedra con los rascacielos del centro de Seúl detrás de la línea de árboles" loading="lazy" decoding="async" width="480" height="640" sizes="(max-width: 768px) 31vw, 220px" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
     <p style="font-size:11px;color:#888;margin:4px 0 0">Arroyo de 11 km que atraviesa el centro de Seúl — gratis, 24 h</p>
   </div>
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-cheonggyecheon2.webp" alt="Primer plano del arroyo Cheonggyecheon — garceta blanca de pie en el agua que fluye, pareja sentada en las rocas junto a la orilla" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <img src="/images/apt-incheon-2026-guide-cheonggyecheon2.webp" alt="Primer plano del arroyo Cheonggyecheon — garceta blanca de pie en el agua que fluye, pareja sentada en las rocas junto a la orilla" loading="lazy" decoding="async" width="480" height="640" sizes="(max-width: 768px) 31vw, 220px" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
     <p style="font-size:11px;color:#888;margin:4px 0 0">Garcetas pescando en el arroyo — en pleno centro de una capital</p>
   </div>
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-cheonggyecheon3.webp" alt="Sendero peatonal del arroyo Cheonggyecheon — sauces llorones junto al agua, peatones paseando por el camino de la ribera" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <img src="/images/apt-incheon-2026-guide-cheonggyecheon3.webp" alt="Sendero peatonal del arroyo Cheonggyecheon — sauces llorones junto al agua, peatones paseando por el camino de la ribera" loading="lazy" decoding="async" width="480" height="640" sizes="(max-width: 768px) 31vw, 220px" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
     <p style="font-size:11px;color:#888;margin:4px 0 0">Salidas de metro cada pocos minutos a lo largo del camino — camina hasta donde quieras</p>
   </div>
 </div>

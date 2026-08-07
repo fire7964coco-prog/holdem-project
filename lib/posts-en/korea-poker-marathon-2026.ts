@@ -32,7 +32,7 @@ That story resonated beyond the ARMY fandom. It resonated with the overlap that 
 Korea is where both come together perfectly. ==**World-class autumn marathons. A foreigner-only casino 10 minutes from the airport. And the best city food scene in Asia in between.**==
 
 <div style="display:flex;align-items:flex-start;gap:16px;margin:20px 0">
-  <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-marathon-record.webp" alt="2026 Goyang Half Marathon official result card — 1:51:10 chip time, Male Half division" style="width:160px;flex-shrink:0;border-radius:8px" />
+  <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-marathon-record.webp" alt="2026 Goyang Half Marathon official result card — 1:51:10 chip time, Male Half division" width="600" height="899" sizes="160px" style="width:160px;flex-shrink:0;border-radius:8px" />
   <div style="font-size:14px;line-height:1.7;color:var(--muted-foreground)">
     <strong style="display:block;margin-bottom:6px;color:var(--foreground)">Personal record — 2026 Goyang Half Marathon</strong>
     Chip time: <strong>1:51:10</strong> · Male Half division · Bib 5448<br />
@@ -395,11 +395,11 @@ The Han River cuts through the center of Seoul, and both banks have over ==g:80 
 
 <div style="display:flex;gap:12px;margin:18px 0;flex-wrap:wrap">
   <div style="flex:1;min-width:240px">
-    <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-hangang1.webp" alt="Han River park cycling and running path — couple on bench in foreground, cyclists and pedestrians along the riverside, Seoul skyline across the river" style="width:100%;border-radius:8px;display:block" />
+    <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-hangang1.webp" alt="Han River park cycling and running path — couple on bench in foreground, cyclists and pedestrians along the riverside, Seoul skyline across the river" width="650" height="867" sizes="(max-width: 520px) 100vw, 330px" style="width:100%;border-radius:8px;display:block" />
     <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">Yeouido Hangang Park — the most popular section for runners. Flat, wide, car-free, open 24 hours.</p>
   </div>
   <div style="flex:1;min-width:240px">
-    <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-hangang2.webp" alt="Han River park tree-lined running path — jogger and cyclist visible on the riverside trail, apartment towers across the river" style="width:100%;border-radius:8px;display:block" />
+    <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-hangang2.webp" alt="Han River park tree-lined running path — jogger and cyclist visible on the riverside trail, apartment towers across the river" width="560" height="700" sizes="(max-width: 520px) 100vw, 330px" style="width:100%;border-radius:8px;display:block" />
     <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">The riverside path continues for kilometres in both directions — used by locals for daily runs, cyclists, and early morning walks.</p>
   </div>
 </div>
@@ -425,11 +425,11 @@ That's it. That's the experience that's been posted on Korean social media milli
 
 <div style="display:flex;gap:12px;margin:18px 0;flex-wrap:wrap">
   <div style="flex:1;min-width:200px">
-    <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-ramen-machine.webp" alt="Han River ramen cooking machine at GS25 convenience store — automatic hot water dispenser for instant noodles in paper bowls" style="width:100%;height:280px;object-fit:cover;border-radius:8px;display:block" />
+    <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-ramen-machine.webp" alt="Han River ramen cooking machine at GS25 convenience store — automatic hot water dispenser for instant noodles in paper bowls" width="525" height="700" sizes="(max-width: 520px) 100vw, 330px" style="width:100%;height:280px;object-fit:cover;border-radius:8px;display:block" />
     <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">The machine at the park convenience store. Scan your barcode bowl, press Start — machine handles the rest. Machine use is free.</p>
   </div>
   <div style="flex:1;min-width:200px">
-    <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-ramen.webp" alt="Bowl of Han River ramen — Shin Ramyun instant noodles in paper bowl with egg on top, eaten at the riverbank" style="width:100%;height:280px;object-fit:cover;border-radius:8px;display:block" />
+    <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-ramen.webp" alt="Bowl of Han River ramen — Shin Ramyun instant noodles in paper bowl with egg on top, eaten at the riverbank" width="700" height="525" sizes="(max-width: 520px) 100vw, 330px" style="width:100%;height:280px;object-fit:cover;border-radius:8px;display:block" />
     <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">The result. Hot Shin Ramyun with egg by the Han River. Total cost ₩4,000–5,000 (~$3). Possibly the best post-run meal in Seoul.</p>
   </div>
 </div>
