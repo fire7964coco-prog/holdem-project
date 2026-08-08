@@ -13,7 +13,7 @@ export const POST: Post = {
   tldr: "처음 홀덤펍: 신분증·참가비 → 음료 → 칩 수령 → 닉네임 → 착석 5단계. 가격은 2~5만원대가 흔하고 음료비까지 총 3~6만원이면 여유 있다. 가격·참가비·바이인은 전부 같은 돈이다.",
   category: "초보 가이드",
   date: "2026-04-13",
-  updated: "2026-08-02",
+  updated: "2026-08-08",
   readTime: "12분",
   emoji: "🍺",
   image: "/images/holdem-pub-players-table.webp",
@@ -309,6 +309,7 @@ A. 처음이라면 저녁 이른 시간대(오후 7~9시)를 권합니다. 참�
 | [홀덤 블라인드 뜻](/blog/holdem-blind-meaning) | 스몰·빅블라인드 완벽 이해 |
 | [홀덤 체크 뜻](/blog/holdem-check-meaning) | 체크·콜·폴드 차이 |
 | [지역별 홀덤펍 찾기](/pub) | 강남·홍대·건대 등 내 근처 홀덤펍 검색 |
+| [홀덤 커뮤니티](/blog/holdem-community-event-guide) | 첫 방문 후기·매장 질문을 나누는 곳 |
 | [홀덤펍 홍보·소개 신청](/blog/holdem-pub-promotion) | (사장님용) 매장 무료 소개 안내 |
 `.trim(),
 };

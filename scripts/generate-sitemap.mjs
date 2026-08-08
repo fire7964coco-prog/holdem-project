@@ -2,7 +2,8 @@
  * POSTS + 정적 경로 → public/sitemap.xml 생성
  * 사용: npm run generate:sitemap (build 전 자동 실행)
  */
-import { writeFileSync } from "node:fs";
+import { writeFileSync, existsSync } from "node:fs";
+import { execFileSync } from "node:child_process";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { createJiti } from "jiti";
@@ -122,6 +123,65 @@ function todayIso() {
   return new Date().toISOString().slice(0, 10);
 }
 
+/**
+ * ★2026-08-08 — 정적 라우트의 lastmod를 «빌드일»에서 «실제 변경일(git)»로 바꿨다.
+ *
+ * 왜: 이전에는 정적 라우트 89개가 **매 배포마다 lastmod가 오늘로** 바뀌었다.
+ *     내용이 안 바뀌었는데 바뀌었다고 말하는 셈이라, 구글이 이 사이트의 lastmod를
+ *     신뢰하지 않게 된다(구글 문서: 부정확하면 무시한다). 그러면 정말 고친 글의
+ *     재크롤 신호까지 같이 죽는다. 블로그 글은 원래부터 `updated || date`를 써서 정확했고,
+ *     망가져 있던 건 정적 라우트뿐이었다.
+ *
+ * 어떻게: 그 라우트를 그리는 소스의 마지막 커밋 날짜를 쓴다.
+ *     ⚠ layout.tsx 같은 «전 페이지 공통» 파일은 일부러 넣지 않는다 —
+ *       넣으면 또 전부 같은 날짜가 되어 원점으로 돌아간다.
+ *     ⚠ Vercel은 vercel.json의 buildCommand(`next build && patch-html-lang`)를 쓰므로
+ *       prebuild가 안 돈다 → 사이트맵은 **로컬에서 생성돼 커밋된다.**
+ *       로컬엔 전체 히스토리가 있으니 git 조회가 안전하다. shallow clone이면 폴백이 뜬다.
+ */
+const gitDateCache = new Map();
+function gitLastModified(paths, fallback) {
+  const key = paths.join("|");
+  if (gitDateCache.has(key)) return gitDateCache.get(key);
+  let out = null;
+  try {
+    const existing = paths.filter((p) => existsSync(join(root, p)));
+    if (existing.length) {
+      const r = execFileSync("git", ["log", "-1", "--format=%cs", "--", ...existing], {
+        cwd: root,
+        encoding: "utf8",
+        stdio: ["ignore", "pipe", "ignore"],
+      }).trim();
+      if (/^\d{4}-\d{2}-\d{2}$/.test(r)) out = r;
+    }
+  } catch {
+    /* git 없음·shallow clone → 폴백 */
+  }
+  const val = out || fallback;
+  gitDateCache.set(key, val);
+  return val;
+}
+
+/** 라우트 → 그 라우트를 그리는 소스 경로. 명시 안 된 건 `app/<path>`로 추론한다. */
+const ROUTE_SOURCES = {
+  "/": ["app/page.tsx", "app/home-client.tsx"],
+  "/blog": ["app/blog/page.tsx"],
+  "/blog/roadmap": ["app/blog/roadmap"],
+  // 데이터가 바뀌면 페이지 내용도 바뀐다 — 데이터 파일을 함께 본다
+  "/tournaments": ["app/tournaments", "lib/tournaments.ts"],
+  "/pub": ["app/pub", "lib/pubs.ts"],
+  "/ranking": ["app/ranking", "lib/posts.ts"],
+};
+function sourcesFor(path) {
+  if (ROUTE_SOURCES[path]) return ROUTE_SOURCES[path];
+  if (path.startsWith("/pub/")) return ["app/pub", "lib/pubs.ts"]; // 동적 라우트 [region]
+  const dir = `app${path}`;
+  if (existsSync(join(root, dir))) return [dir];
+  // /en/calculator 처럼 로케일 하위가 별도 디렉터리로 없으면 한 단계 위로
+  const parent = dir.split("/").slice(0, -1).join("/");
+  return existsSync(join(root, parent)) ? [parent] : [dir];
+}
+
 function entry(loc, lastmod, changefreq, priority, alternates) {
   const altLinks = (alternates || [])
     .map((a) => `\n    <xhtml:link rel="alternate" hreflang="${a.hreflang}" href="${a.href}" />`)
@@ -180,18 +240,26 @@ const tournamentAlts = [
   { hreflang: "x-default", href: `${SITE}/en/tournaments` },
 ];
 
+// ⚠ 로케일은 동적 `[locale]`이 아니라 **언어별 실제 디렉터리**다(app/en · app/ja …).
+//   처음에 `app/[locale]`로 짰다가 경로가 없어 25개가 전부 폴백(=빌드일)으로 떨어졌다.
 const localeHomeEntries = SECONDARY_LOCALES.map((l) =>
-  entry(`${SITE}/${l}`, siteToday, "daily", "0.8", localeHomeAlts)
+  entry(`${SITE}/${l}`, gitLastModified([`app/${l}/page.tsx`, `app/${l}`], siteToday), "daily", "0.8", localeHomeAlts)
 );
 
 const tournamentEntries = TOURNAMENT_LOCALES.map((l) =>
-  entry(`${SITE}/${l}/tournaments`, siteToday, "weekly", "0.9", tournamentAlts)
+  entry(
+    `${SITE}/${l}/tournaments`,
+    gitLastModified([`app/${l}/tournaments`, "lib/tournaments.ts", "lib/tournaments-i18n.ts"], siteToday),
+    "weekly",
+    "0.9",
+    tournamentAlts
+  )
 );
 
 const staticEntries = STATIC_ROUTES.map((r) =>
   entry(
     `${SITE}${r.path}`,
-    siteToday,
+    gitLastModified(sourcesFor(r.path), siteToday),
     r.changefreq,
     r.priority,
     r.path === "/tournaments" ? tournamentAlts : undefined,
