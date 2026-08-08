@@ -1354,7 +1354,14 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/tournaments" />
   </url>
 
-  <!-- 블로그 포스트 (56편) -->
+  <!-- 블로그 포스트 (57편) -->
+
+  <url>
+    <loc>https://www.holdemmaster.com/blog/a-high-board-cbet</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
   <url>
     <loc>https://www.holdemmaster.com/blog/ak-offsuit-strategy</loc>

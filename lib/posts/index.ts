@@ -35,7 +35,10 @@ import { POST as holdemBlindSteal } from "./holdem-blind-steal";
 import { POST as holdemImpliedOdds } from "./holdem-implied-odds";
 import { POST as holdemPubPromotion } from "./holdem-pub-promotion";
 import { POST as holdemPubGuide } from "./holdem-pub-guide";
+// GTO 솔버 스팟 해설 시리즈 (2026-08-08~) — solver.holdemmaster.com 실측 데이터 기반
+import { POST as aHighBoardCbet } from "./a-high-board-cbet";
 export const NEW_POSTS: Post[] = [
+  aHighBoardCbet,
   holdemPubGuide,
   holdemPubPromotion,
   holdemImpliedOdds,
