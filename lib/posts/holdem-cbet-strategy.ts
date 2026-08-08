@@ -150,6 +150,8 @@ C벳 사이즈는 **보드 텍스처**에 따라 달라진다. 정답은 없지�
 
 **보드 유형별로 솔버가 실제로 어떤 빈도를 내놓는지**는 [GTO 솔버 스팟 해설 시리즈](/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop.webp")에서 한 보드씩 숫자로 확인할 수 있다. 드라이 A하이·[K하이](/blog/k-high-board-cbet), 웻한 [브로드웨이 QJT](/blog/broadway-board-strategy), [모노톤 보드](/blog/monotone-board-strategy), 그리고 **C벳을 참아야 하는** [미들 연결 보드](/blog/donk-bet-strategy)까지 우리 솔버로 직접 계산한 값이다.
 
+**3벳팟은 규칙이 통째로 달라진다.** SPR이 17.7에서 4.0으로 떨어지는 [3벳팟 A하이 보드](/blog/3bet-pot-cbet)에서는 3벳터의 체크가 **0.0%**다 — 레인지에 미완성 핸드가 한 콤보도 없기 때문이다. 사이즈 역시 보드가 정한다: 드로우가 깔린 [젖은 보드](/blog/3bet-pot-bet-sizing)와 아무것도 없는 [로우 드라이 보드](/blog/3bet-pot-low-board)가 둘 다 팟 2/3을 98% 가까이 쓰는데, 그 이유는 서로 정반대다.
+
 ---
 
 ## C벳 다음 턴·리버는 어떻게 하나요?

@@ -182,7 +182,7 @@ export const POST: Post = {
 
 :::readnext[시리즈 이어서 보기]
 /blog/monotone-board-strategy | ⑤ 모노톤 보드 — 너트 플러시도 체크하는 이유 | /images/gto-srp-monotone-oop.webp
-/blog/a-high-board-cbet | ① A하이 보드 C벳 — BB가 98% 체크하는 이유 | /images/gto-srp-dry-ace-oop.webp
+/blog/low-board-check-raise | ⑦ 로우 보드 체크레이즈 — 652에서 BB의 계획 | /images/gto-srp-low-rainbow-oop.webp
 :::
 
 ## 직접 확인해보기

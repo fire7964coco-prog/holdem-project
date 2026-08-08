@@ -112,6 +112,8 @@ export const POST: Post = {
 
 위 표의 «왜»를 숫자로 보고 싶다면 [미들 연결 보드에서 BB가 먼저 치는 이유](/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop.webp")를 보세요. 9-8-7 보드에서 BB의 레인지가 어떻게 생겼길래 공격이 가능한지, 반대로 [A하이 드라이 보드](/blog/a-high-board-cbet)에서는 왜 레인지 전체가 체크로 가는지를 솔버 계산값으로 비교해 놨습니다. [페어 보드](/blog/paired-board-strategy)에서 트리플을 체크에 숨기는 이유도 같은 맥락입니다.
 
+**«체크가 곧 체크레이즈 준비»인 자리**를 하나만 고르라면 [6-5-2 로우 보드](/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop.webp")입니다. BB의 에퀴티가 48.3%까지 올라오는데도 리드 벳은 3.2%뿐이고, 대신 거트샷을 18.5%로 상대(13.9%)보다 많이 들고 있어 레이즈에 섞을 재료가 상대보다 두껍습니다.
+
 ---
 
 ## 5. 체크레이즈를 당하면 어떻게 하나요?

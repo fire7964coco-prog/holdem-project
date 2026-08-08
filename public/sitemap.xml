@@ -1354,7 +1354,28 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/tournaments" />
   </url>
 
-  <!-- 블로그 포스트 (62편) -->
+  <!-- 블로그 포스트 (67편) -->
+
+  <url>
+    <loc>https://www.holdemmaster.com/blog/3bet-pot-bet-sizing</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.holdemmaster.com/blog/3bet-pot-cbet</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.holdemmaster.com/blog/3bet-pot-low-board</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
   <url>
     <loc>https://www.holdemmaster.com/blog/a-high-board-cbet</loc>
@@ -1409,6 +1430,13 @@
   </url>
 
   <url>
+    <loc>https://www.holdemmaster.com/blog/blind-battle-cbet</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://www.holdemmaster.com/blog/bluffing-strategy-when-and-how</loc>
     <lastmod>2026-08-03</lastmod>
     <changefreq>monthly</changefreq>
@@ -1438,7 +1466,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/blog/holdem-3bet-strategy</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1875,6 +1903,13 @@
   </url>
 
   <url>
+    <loc>https://www.holdemmaster.com/blog/low-board-check-raise</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://www.holdemmaster.com/blog/monotone-board-strategy</loc>
     <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
@@ -1911,7 +1946,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/blog/position-is-everything-in-holdem</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
