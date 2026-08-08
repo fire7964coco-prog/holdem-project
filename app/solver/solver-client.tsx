@@ -58,6 +58,43 @@ const STEPS = [
   },
 ];
 
+/**
+ * 교육 예제 13개 스팟의 해설 글 목록 (허브-스포크).
+ * 보드·빈도는 docs/gto-solver-series-spec.md §4-B 확정 수치표가 단일 출처다.
+ * ①~⑦ = SRP(BTN 오픈 → BB 콜, OOP는 BB 콜러) / ⑧~⑩ = 3벳팟(OOP는 BB 3벳터) /
+ * ⑪~⑬ = 블라인드전(OOP는 SB 오픈레이저). 빈도는 전부 «OOP의 첫 액션» 기준이다.
+ */
+const SPOT_GROUPS = [
+  {
+    label: "싱글 레이즈 팟 — 먼저 행동하는 쪽은 BB 콜러",
+    items: [
+      { n: "①", slug: "a-high-board-cbet", board: "A♥7♦2♣", note: "BB가 98.2% 체크하는 이유" },
+      { n: "②", slug: "k-high-board-cbet", board: "K♠8♦3♣", note: "체크 99.8% — 드라이 보드의 끝" },
+      { n: "③", slug: "broadway-board-strategy", board: "Q♠J♦T♠", note: "브로드웨이에서도 체크 99.9%" },
+      { n: "④", slug: "donk-bet-strategy", board: "9♥8♥7♣", note: "동크벳 23.7% — 먼저 치는 보드" },
+      { n: "⑤", slug: "monotone-board-strategy", board: "Q♠9♠2♠", note: "모노톤 — 너트 플러시도 체크" },
+      { n: "⑥", slug: "paired-board-strategy", board: "6♣6♦3♥", note: "페어 보드에서 포켓페어의 값" },
+      { n: "⑦", slug: "low-board-check-raise", board: "6♠5♥2♦", note: "로우 보드 체크레이즈 설계" },
+    ],
+  },
+  {
+    label: "3벳 팟 — 먼저 행동하는 쪽은 BB 3벳터 (SPR 4.0)",
+    items: [
+      { n: "⑧", slug: "3bet-pot-cbet", board: "A♦K♠2♥", note: "체크가 0% — 레인지 전체 벳" },
+      { n: "⑨", slug: "3bet-pot-bet-sizing", board: "Q♥T♥7♠", note: "벳 사이즈를 정하는 것은 보드" },
+      { n: "⑩", slug: "3bet-pot-low-board", board: "8♦5♣2♠", note: "페어도 없는데 큰 사이즈" },
+    ],
+  },
+  {
+    label: "블라인드전 — 먼저 행동하는 쪽은 SB 오픈 레이저",
+    items: [
+      { n: "⑪", slug: "blind-battle-cbet", board: "K♥T♦6♠", note: "포지션 없이 67.4%를 치는 이유" },
+      { n: "⑫", slug: "blind-battle-connected-board", board: "7♦6♦5♣", note: "같은 자리인데 9.6%로 급락" },
+      { n: "⑬", slug: "ace-paired-board-strategy", board: "A♠A♥6♦", note: "A 페어 보드에서 80.1% 벳" },
+    ],
+  },
+];
+
 export default function SolverClient() {
   return (
     <div className="mx-auto max-w-3xl px-4 pb-16">
@@ -104,6 +141,32 @@ export default function SolverClient() {
             </li>
           ))}
         </ol>
+      </section>
+
+      {/* 교육 예제 13개 스팟 해설 (허브-스포크 내부링크) */}
+      <section className="mt-12">
+        <h3 className="text-xl font-bold">교육 예제 13개 스팟 — 전편 해설</h3>
+        <p className="mt-2 text-sm text-muted-foreground">
+          솔버의 「결과 바로 보기」에 들어 있는 13개 스팟을 한 편씩 풀어 썼습니다. 계산
+          조건·액션 빈도·레인지 구성·EQR을 전부 이 솔버로 뽑은 1차 데이터로 설명합니다.
+          숫자를 눈으로 확인하고 싶으면 해설을 먼저 읽고 같은 예제를 눌러 보세요.
+        </p>
+        {SPOT_GROUPS.map((g) => (
+          <div key={g.label} className="mt-5">
+            <p className="text-sm font-semibold text-muted-foreground">{g.label}</p>
+            <ul className="mt-2 space-y-1.5">
+              {g.items.map((s) => (
+                <li key={s.slug} className="text-sm">
+                  <span className="text-muted-foreground">{s.n}</span>{" "}
+                  <Link href={`/blog/${s.slug}`} className="font-semibold text-primary hover:underline">
+                    {s.board}
+                  </Link>{" "}
+                  <span className="text-muted-foreground">— {s.note}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </section>
 
       {/* 함께 보면 좋은 도구 (내부링크) */}

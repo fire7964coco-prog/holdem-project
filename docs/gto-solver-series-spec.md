@@ -13,9 +13,17 @@
 | 솔버 본체 | `solver.holdemmaster.com` 배포·**noindex** (검색은 본체 랜딩으로 일원화) |
 | `/solver` 랜딩 | ✅ 발행 (`c00d2af`) |
 | 데이터·이미지 | ✅ **13개 스팟 전부 라이브에서 재추출** (`scripts/capture-solver-spots.mjs`, §3 참조) |
-| 포스팅 | **11 / 13 완료** — ①~⑪ |
+| 포스팅 | ✅ **13 / 13 완료** — ①~⑬ (2026-08-08) |
 
-**남은 2편**은 아래 §4 표의 ⑫⑬.
+**전편 발행 완료.** 남은 것은 §6의 마감 항목뿐이다.
+
+> ★⑫⑬에서 새로 확립한 검산법 — **레인지 전수 검산.**
+> `.solver-captures/<key>-oop.png` · `-ip.png`의 13×13 매트릭스를 텍스트로 옮겨,
+> 보드 블로커를 반영해 콤보를 직접 세면 **솔버가 출력한 등급 비중과 소수점까지 일치**한다.
+> ⑫에서 22개 값, ⑬에서 11개 값이 전부 맞았고, 같은 레인지를 ⑪ 보드에 넣으면 538 / 525가
+> 그대로 재현된다(= 세 블라인드전 스팟은 같은 레인지다). 이 방법이면 「탑 페어 39콤보 대 60콤보」
+> 같은 본문 주장을 **기억이 아니라 계산으로** 쓸 수 있다. 실제로 이 검산이 전사 누락 1건(J5s)을
+> 3콤보 차이로 잡아냈다. 스크립트는 일회용이라 커밋하지 않았지만 재작성은 20줄이면 된다.
 
 > 🔴 **2026-08-08 3차 세션 교훈 — 형제 글을 인용할 땐 «카드·무늬»도 원문에서 복사하라.**
 > ⑦~⑪을 쓰며 형제 글의 **수치**는 전부 대조했는데 **보드 표기를 기억으로 적어 두 건 틀렸다**:
@@ -186,9 +194,16 @@ BB 레인지에 없는 AA·KK가 칠해진 그림이므로 **§13 사실오류**
 | ⑨ | `Q♥T♥7♠` 투톤 | 3벳팟 | 99.1% | 58.3% | 117.8% | 75.1% |
 | ⑩ | `8♦5♣2♠` 레인보우 | 3벳팟 | 98.1% | 58.6% | 106.9% | 90.3% |
 | ⑪ | `K♥T♦6♠` 레인보우 | 블라인드전 · 팟 6 · 스택 97 · SPR 16.2 · **33% 하나** | 67.4% | 55.3% | 103.1% | 96.1% |
+| ⑫ | `7♦6♦5♣` 연결 **투톤** | 블라인드전 · **33% 하나** | **9.6%** | 49.6% | 85.3% | 114.4% |
+| ⑬ | `A♠A♥6♦` 페어 | 블라인드전 · **33%와 75% 두 가지** | **80.1%** | 56.2% | 104.1% | 94.8% |
 
-- ①~⑦의 OOP = **BB 콜러** / ⑧~⑩의 OOP = **BB 3벳터** / ⑪의 OOP = **SB 오픈 레이저**
-- 벳 사이즈: ①~⑥은 33%·75% 두 가지 / **⑦⑪은 33% 하나** / ⑧⑨⑩은 1/3·2/3
+- ①~⑦의 OOP = **BB 콜러** / ⑧~⑩의 OOP = **BB 3벳터** / ⑪⑫⑬의 OOP = **SB 오픈 레이저**
+- 벳 사이즈: ①~⑥은 33%·75% 두 가지 / **⑦⑪⑫는 33% 하나** / ⑧⑨⑩은 1/3·2/3 / **⑬은 33%와 75%**
+- ⑬의 80.1% = 벳45(75%) 0.5% + 벳20(33%) 79.6%. 체크는 19.8%
+- **체크 빈도**(허브·비교표에서 자주 쓴다): ① 98.2 · ② 99.8 · ③ 99.9 · ④ 76.2 · ⑤ 88.8 ·
+  ⑥ 97.0 · ⑦ 96.8 · ⑧ 0.0 · ⑨ 0.8 · ⑩ 2.0 · ⑪ 32.6 · ⑫ 90.4 · ⑬ 19.8
+- **레인지 콤보**(보드 블로커 반영): ⑪ SB 538 / BB 525 · ⑫ SB 572 / BB 534 · ⑬ SB 503 / BB 505.
+  블라인드전 세 편은 **같은 레인지**이고 총계 차이는 전부 보드 블로커 때문이다(전수 검산으로 확인).
 - ⑧⑨⑩의 BB 3벳 레인지는 **14종 고정**: AA·AKs·AQs·AJs·A5s·A4s·AKo·KK·KQs·AQo·QQ·JJ·TT·99
 
 ⚠ **⑫⑬의 `-oop.webp`는 아직 «옛 캡처»다.** 그 편을 쓸 때 `capture-solver-spots.mjs` →
@@ -279,4 +294,16 @@ C1은 «형제 글이 같은 사실을 다르게 적었다»를 잡는 검사인
   srp-middle-connected: https://www.holdemmaster.com/blog/donk-bet-strategy
   srp-monotone:         https://www.holdemmaster.com/blog/monotone-board-strategy
   srp-paired:           https://www.holdemmaster.com/blog/paired-board-strategy
+  srp-low-rainbow:      https://www.holdemmaster.com/blog/low-board-check-raise
+  3bp-ace-king:         https://www.holdemmaster.com/blog/3bet-pot-cbet
+  3bp-dynamic:          https://www.holdemmaster.com/blog/3bet-pot-bet-sizing
+  3bp-low:              https://www.holdemmaster.com/blog/3bet-pot-low-board
+  sb-king-mid:          https://www.holdemmaster.com/blog/blind-battle-cbet
+  sb-connected:         https://www.holdemmaster.com/blog/blind-battle-connected-board
+  sb-paired-ace:        https://www.holdemmaster.com/blog/ace-paired-board-strategy
   ```
+  ✅ **13편 전부 발행 완료(2026-08-08).** 위 목록이 최종본이다.
+
+- **`/solver` 랜딩 허브** — ✅ 완료. `app/solver/solver-client.tsx`의 `SPOT_GROUPS`에 13편이
+  SRP 7 / 3벳팟 3 / 블라인드전 3으로 묶여 들어가 있다. 보드·빈도는 §4-B가 단일 출처다.
+  ⚠ ①의 체크는 **98.2%**다(§4-B의 「리드/벳 1.9%」와 짝). 98.1%로 적지 말 것.

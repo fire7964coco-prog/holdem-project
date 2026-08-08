@@ -47,7 +47,11 @@ import { POST as threeBetPotCbet } from "./3bet-pot-cbet";
 import { POST as threeBetPotBetSizing } from "./3bet-pot-bet-sizing";
 import { POST as threeBetPotLowBoard } from "./3bet-pot-low-board";
 import { POST as blindBattleCbet } from "./blind-battle-cbet";
+import { POST as blindBattleConnectedBoard } from "./blind-battle-connected-board";
+import { POST as acePairedBoardStrategy } from "./ace-paired-board-strategy";
 export const NEW_POSTS: Post[] = [
+  acePairedBoardStrategy,
+  blindBattleConnectedBoard,
   blindBattleCbet,
   threeBetPotLowBoard,
   threeBetPotBetSizing,
