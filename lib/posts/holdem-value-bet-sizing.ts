@@ -85,7 +85,7 @@ export const POST: Post = {
 
 [팟 오즈](/blog/holdem-pot-odds-calculation)는 상대 입장에서 “이 콜이 싼가”를 보는 도구고, 밸류벳 사이즈는 **“상대 2등이 최대 얼마까지 낼까?”** 를 먼저 생각하면 됩니다.
 
-이 원칙이 가장 극단적으로 드러나는 자리가 **무늬 세 장이 같은 보드**입니다. [몬톤 보드에서는 큰 벳이 통째로 사라지고](/blog/monotone-board-strategy "thumb:/images/gto-srp-monotone-oop.webp") 너트 플러시조차 평균 69.9%를 체크합니다 — 우리 GTO 솔버로 직접 계산한 값입니다. 반대로 너트 우위가 확실한 [브로드웨이 보드](/blog/broadway-board-strategy)에서는 사이즈를 키울 수 있습니다.
+이 원칙이 가장 극단적으로 드러나는 자리가 **무늬 세 장이 같은 보드**입니다. [모노톤 보드에서는 큰 벳이 통째로 사라지고](/blog/monotone-board-strategy "thumb:/images/gto-srp-monotone-oop.webp") 너트 플러시조차 평균 69.9%를 체크합니다 — 우리 GTO 솔버로 직접 계산한 값입니다. 반대로 너트 우위가 확실한 [브로드웨이 보드](/blog/broadway-board-strategy)에서는 사이즈를 키울 수 있습니다.
 
 ---
 

@@ -21,7 +21,7 @@ import type { Post } from "../posts";
 export const POST: Post = {
   slug: "a-high-board-cbet",
   title: "A하이 보드 C벳 — BB가 98% 체크하는 이유",
-  seoTitle: "A하이 보드 C벳 — BB 체크 98.2%의 정체",
+  seoTitle: "A하이 보드 C벳 — GTO 솔버가 계산한 체크 98.2%",
   desc: "탑 페어를 맞아도 체크가 정답입니다. A72 레인보우에서 BB의 체크 빈도는 98.2% — 솔버로 직접 계산한 수치와 그 이유를 봅니다.",
   tldr: "BTN 오픈에 BB가 콜한 A72 레인보우 플랍에서, BB의 첫 액션은 체크 98.2%다. 탑 페어를 맞은 핸드까지 포함해 레인지 전체가 체크하는 「레인지 체크」가 나오는 자리다. 이유는 에퀴티 차이(45.1% 대 54.9%)보다 에퀴티 실현율에 있다 — BTN은 113.1%, BB는 84.0%다.",
   category: "전략",
@@ -32,12 +32,14 @@ export const POST: Post = {
   image: "/images/gto-srp-dry-ace-oop.webp",
   imageAlt: "홀덤마스터 GTO 솔버 화면 — A72 레인보우 플랍에서 BB 레인지가 초록색(체크)으로 거의 전부 칠해진 13×13 매트릭스",
   keepImagesInBody: true,
+  // 태그는 2026-08-08 실측(구글 자동완성 + 월간 검색량) 기준으로 정리했다.
+  // 「A하이 보드 C벳」·「드라이 보드 전략」류는 검색량 데이터가 없어 뺐다.
   tags: [
-    "A하이 보드 C벳",
-    "레인지 체크",
-    "드라이 보드 전략",
+    "홀덤 GTO",
     "GTO 솔버",
-    "C벳 빈도",
+    "홀덤 c벳",
+    "A하이 보드",
+    "레인지 체크",
   ],
   content: `
 플랍에 A가 깔렸습니다. 내 손에는 A9. 탑 페어입니다. 여기서 먼저 벳을 넣는 게 맞을까요?
@@ -145,7 +147,7 @@ EQR은 "자기 승률 지분 중 실제로 얼마나 가져갔는가"입니다. 
 
 :::readnext[시리즈 이어서 보기]
 /blog/k-high-board-cbet | ② K하이 보드 C벳 — BB 체크 99.8%의 이유 | /images/gto-srp-dry-king-oop.webp
-/blog/donk-bet-strategy | ④ 돈크벳 — BB가 먼저 치는 보드는 따로 있다 | /images/gto-srp-middle-connected-oop.webp
+/blog/donk-bet-strategy | ④ 동크벳 — BB가 먼저 치는 보드는 따로 있다 | /images/gto-srp-middle-connected-oop.webp
 :::
 
 ## 직접 확인해보기

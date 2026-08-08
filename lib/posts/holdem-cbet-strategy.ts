@@ -148,7 +148,7 @@ C벳 사이즈는 **보드 텍스처**에 따라 달라진다. 정답은 없지�
 
 보드 텍스처 판단은 [포지션이 전부다 — 홀덤 포지션 완전 정복](/blog/position-is-everything-in-holdem)과 함께 적용할 때 효과가 배가된다. IP에서 드라이 보드 C벳은 홀덤 기본기 중 가장 수익성 높은 조합 중 하나다.
 
-**보드 유형별로 솔버가 실제로 어떤 빈도를 내놓는지**는 [GTO 솔버 스팟 해설 시리즈](/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop.webp")에서 한 보드씩 숫자로 확인할 수 있다. 드라이 A하이·[K하이](/blog/k-high-board-cbet), 웻한 [브로드웨이 QJT](/blog/broadway-board-strategy), [몬톤 보드](/blog/monotone-board-strategy), 그리고 **C벳을 참아야 하는** [미들 연결 보드](/blog/donk-bet-strategy)까지 우리 솔버로 직접 계산한 값이다.
+**보드 유형별로 솔버가 실제로 어떤 빈도를 내놓는지**는 [GTO 솔버 스팟 해설 시리즈](/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop.webp")에서 한 보드씩 숫자로 확인할 수 있다. 드라이 A하이·[K하이](/blog/k-high-board-cbet), 웻한 [브로드웨이 QJT](/blog/broadway-board-strategy), [모노톤 보드](/blog/monotone-board-strategy), 그리고 **C벳을 참아야 하는** [미들 연결 보드](/blog/donk-bet-strategy)까지 우리 솔버로 직접 계산한 값이다.
 
 ---
 
