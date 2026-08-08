@@ -21,3 +21,6 @@ docs/gsc-tracking/data/
 
 # 커밋 메시지 임시 파일 (§16 — 한글·여러 줄 메시지는 git commit -F 로 넣는다)
 commit-msg.txt
+
+# 솔버 라이브 캡처 원본(PNG) — webp만 커밋한다
+.solver-captures/

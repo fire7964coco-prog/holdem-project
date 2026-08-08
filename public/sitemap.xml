@@ -1354,7 +1354,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/tournaments" />
   </url>
 
-  <!-- 블로그 포스트 (57편) -->
+  <!-- 블로그 포스트 (62편) -->
 
   <url>
     <loc>https://www.holdemmaster.com/blog/a-high-board-cbet</loc>
@@ -1411,6 +1411,20 @@
   <url>
     <loc>https://www.holdemmaster.com/blog/bluffing-strategy-when-and-how</loc>
     <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.holdemmaster.com/blog/broadway-board-strategy</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.holdemmaster.com/blog/donk-bet-strategy</loc>
+    <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1500,7 +1514,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/blog/holdem-cbet-strategy</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1514,7 +1528,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/blog/holdem-check-raise</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1834,7 +1848,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/blog/holdem-value-bet-sizing</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1849,6 +1863,27 @@
   <url>
     <loc>https://www.holdemmaster.com/blog/icm-poker-meaning</loc>
     <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.holdemmaster.com/blog/k-high-board-cbet</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.holdemmaster.com/blog/monotone-board-strategy</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.holdemmaster.com/blog/paired-board-strategy</loc>
+    <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

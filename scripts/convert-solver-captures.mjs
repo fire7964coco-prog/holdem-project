@@ -1,19 +1,23 @@
 /**
- * 솔버 스팟 캡처(PNG) → 본문용 webp 변환
+ * 솔버 캡처(PNG) → 본문용 webp 변환
  *
- * ■ 왜 크롭하나 (2026-08-08)
- *   원본은 1600x900인데 우측 절반이 통계 패널이다. 본문 렌더러는 이미지를 **w=750으로
- *   줄여 보내므로**, 원본을 그대로 쓰면 13x13 매트릭스의 「A7s」·「99」 같은 글자와
- *   「체크 99.0%」 수치가 뭉개져 **정보 전달이 0이 된다**(모바일은 더하다).
- *   좌측(플랍 정보 + 액션 요약 + 매트릭스)만 잘라내면 같은 750px 안에서 글자가
- *   원본 대비 1.83배로 커진다 — 실제로 잘라 750px로 축소해 육안 확인했고 읽힌다.
- *   우측 통계(EQ·EV·EQR)는 어차피 본문 표로 싣는다. §9-2 「가독성이 용량보다 위」.
+ *   node scripts/capture-solver-spots.mjs        # 라이브에서 캡처 (.solver-captures/)
+ *   node scripts/make-solver-range-charts.mjs    # 레인지 비교 차트 생성
+ *   node scripts/convert-solver-captures.mjs srp-paired srp-monotone   # 필요한 스팟만 webp로
  *
- * ■ 크롭 좌표
- *   모든 캡처가 같은 UI 레이아웃이라 고정 좌표로 일괄 처리된다.
- *   x 0~875 · y 35~900  →  875x865 (폭 750 이상이라 next/image 최적화도 정상적으로 탄다)
+ * <key>-oop.png    → public/images/gto-<key>-oop.webp      (히어로: 첫 액션 플레이어의 전략 화면)
+ * <key>-ranges.png → public/images/gto-<key>-ranges.webp   (본문: 레인지 구성 비교)
+ * <key>-ip.png     → 변환하지 않는다. 아래 이유를 볼 것.
  *
- * 사용: node scripts/convert-solver-captures.mjs [--dry]
+ * ── 🔴 «-ip» 캡처를 쓰지 마라 (2026-08-08 확인) ────────────────────
+ * 「결과 바로 보기」의 IP 화면에는 **전략이 없다**(첫 액션은 OOP다). 거기 보이는 것은
+ * IP의 «프리플랍 레인지»뿐이라 **보드가 달라도 그림이 같다** — 13개 스팟의 -ip 캡처를
+ * 픽셀 비교하니 차이가 0.12~0.21%였다. 이걸 "벳으로 가는 핸드"로 설명하면 §13 사실오류다.
+ * 보드별 정보가 필요하면 -oop(전략)과 -ranges(구성 비교)를 써라.
+ *
+ * ── 용량·화질 ──────────────────────────────────────────────
+ * 글자가 든 이미지다. 렌더러가 w=750으로 줄여 보내므로 원본 폭을 1200으로 맞추고
+ * quality는 보수적으로 잡는다(§9-1). 목표는 80KB 이하지만 **읽히는 것이 우선**이다.
  */
 import { readdirSync, existsSync, mkdirSync, statSync } from "node:fs";
 import { join, dirname } from "node:path";
@@ -21,39 +25,39 @@ import { fileURLToPath } from "node:url";
 import sharp from "sharp";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
-const SRC = "C:/Users/하봄/Downloads/클로드-프로그램만들기/참고자료/스팟캡처";
+const SRC = process.env.SOLVER_CAPTURE_OUT || join(root, ".solver-captures");
 const DST = join(root, "public", "images");
+const only = process.argv.slice(2).filter((a) => !a.startsWith("--"));
 const DRY = process.argv.includes("--dry");
 
-const CROP = { left: 0, top: 35, width: 875, height: 865 };
-const QUALITY = 82; // 글자가 든 이미지라 보수적으로 (§9-1 가드레일)
+const WIDTH = 1200;
+const QUALITY = 76;      // 글자 가독성 우선. 80KB를 넘으면 아래 STEP_DOWN으로 한 단계씩 내린다
+const STEP_DOWN = [76, 70, 64, 58];
+const LIMIT_KB = 80;
 
-if (!existsSync(SRC)) process.exit(console.error("원본 폴더 없음:", SRC) || 1);
+if (!existsSync(SRC)) process.exit(console.error("캡처 폴더 없음:", SRC, "\n먼저 node scripts/capture-solver-spots.mjs") || 1);
 mkdirSync(DST, { recursive: true });
 
-const files = readdirSync(SRC).filter((f) => f.endsWith(".png"));
-let totalIn = 0, totalOut = 0, done = 0;
+const files = readdirSync(SRC)
+  .filter((f) => /-(oop|ranges)\.png$/.test(f))
+  .filter((f) => !only.length || only.some((k) => f.startsWith(k + "-")));
+
+if (!files.length) process.exit(console.error("변환할 파일 없음. 스팟 키를 확인하라.") || 1);
 
 for (const f of files) {
-  const src = join(SRC, f);
-  // 3bp-ace-king_oop.png → gto-3bp-ace-king-oop.webp (본체 이미지 이름 규칙: 평평한 kebab)
-  const out = "gto-" + f.replace(/\.png$/, "").replace(/_/g, "-") + ".webp";
+  const out = "gto-" + f.replace(/\.png$/, "") + ".webp";
   const dst = join(DST, out);
-  const inKb = statSync(src).size / 1024;
-  totalIn += inKb;
   if (DRY) { console.log(`  ${f} → ${out}`); continue; }
-  const meta = await sharp(src).metadata();
-  if (meta.width !== 1600 || meta.height !== 900) {
-    console.log(`  ⚠ ${f} 크기가 ${meta.width}x${meta.height} — 고정 좌표가 안 맞을 수 있다. 육안 확인할 것`);
+
+  const buf = await sharp(join(SRC, f)).resize({ width: WIDTH }).toBuffer();
+  let kb = Infinity, q = QUALITY;
+  for (const step of STEP_DOWN) {
+    q = step;
+    await sharp(buf).webp({ quality: q, effort: 6 }).toFile(dst);
+    kb = statSync(dst).size / 1024;
+    if (kb <= LIMIT_KB) break;
   }
-  await sharp(src).extract(CROP).webp({ quality: QUALITY, effort: 6 }).toFile(dst);
-  const outKb = statSync(dst).size / 1024;
-  totalOut += outKb;
-  done++;
-  console.log(`  ${out.padEnd(32)} ${Math.round(inKb)}KB → ${Math.round(outKb)}KB`);
+  console.log(`  ${out.padEnd(34)} ${Math.round(kb)}KB (q=${q})${kb > LIMIT_KB ? "  ⚠ 80KB 초과 — 가독성 확인 후 판단" : ""}`);
 }
 
-if (!DRY) {
-  console.log(`\n${done}장 변환 · ${Math.round(totalIn)}KB → ${Math.round(totalOut)}KB (${Math.round((1 - totalOut / totalIn) * 100)}% 감소)`);
-  console.log("⚠ 크롭 좌표가 맞는지 대표 1~2장은 반드시 Read로 열어 육안 확인할 것.");
-}
+console.log("\n⚠ 대표 1~2장은 반드시 Read로 열어 육안 확인할 것(매트릭스 글자·수치가 읽히는지).");

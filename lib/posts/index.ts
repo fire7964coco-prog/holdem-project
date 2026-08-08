@@ -37,7 +37,17 @@ import { POST as holdemPubPromotion } from "./holdem-pub-promotion";
 import { POST as holdemPubGuide } from "./holdem-pub-guide";
 // GTO 솔버 스팟 해설 시리즈 (2026-08-08~) — solver.holdemmaster.com 실측 데이터 기반
 import { POST as aHighBoardCbet } from "./a-high-board-cbet";
+import { POST as kHighBoardCbet } from "./k-high-board-cbet";
+import { POST as broadwayBoardStrategy } from "./broadway-board-strategy";
+import { POST as donkBetStrategy } from "./donk-bet-strategy";
+import { POST as monotoneBoardStrategy } from "./monotone-board-strategy";
+import { POST as pairedBoardStrategy } from "./paired-board-strategy";
 export const NEW_POSTS: Post[] = [
+  pairedBoardStrategy,
+  monotoneBoardStrategy,
+  donkBetStrategy,
+  broadwayBoardStrategy,
+  kHighBoardCbet,
   aHighBoardCbet,
   holdemPubGuide,
   holdemPubPromotion,

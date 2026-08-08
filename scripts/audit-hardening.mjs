@@ -84,6 +84,19 @@ export const CLUSTERS = {
   ],
 };
 
+/* 🔴 GTO 솔버 스팟 해설 시리즈(a-high-board-cbet · k-high-board-cbet · broadway-board-strategy ·
+   donk-bet-strategy · monotone-board-strategy · paired-board-strategy …)는 **일부러 넣지 않았다.**
+
+   핸드오프에는 "13편이 수치·용어가 겹치므로 대조 값어치가 크다"고 적혀 있었지만, 2026-08-08에
+   실제로 넣고 돌려보니 편당 🔴 11~12건이 쏟아졌다. 전부 오탐이다 — 이 시리즈는 **편마다 보드가
+   다르고**, 표(레인지 구성·액션 빈도·에퀴티)는 그 보드의 값이라 **달라야 정상**이다.
+   C1은 «형제가 같은 사실을 다르게 적었다»를 잡는 검사이지, «다른 스팟의 다른 값»을 볼 도구가 아니다.
+   위 '토너먼트' 주석의 「개별 대회 후기는 회차마다 달라 섞으면 오탐이 난다」와 같은 이유다.
+
+   대신 이 시리즈의 수치 정합성은 다른 방식으로 보장한다:
+   전 편의 숫자가 `scripts/capture-solver-spots.mjs` 한 번의 추출(.solver-captures/data.json)에서
+   나오므로 출처가 하나다. 편 사이에 인용된 비교값(EQR 표 등)은 손 검산으로 확인한다. */
+
 /**
  * slug → 소속 클러스터. `--slug` 모드에서 형제 글을 끌어오는 데 쓴다.
  *
@@ -730,6 +743,10 @@ function auditHandsIn(post, PE) {
     /* H1 — 보드 한 벌에 같은 카드가 두 번 (덱에 없는 보드) — 확정 오류 */
     for (const run of sc.boardRuns) {
       if (run.length < 3) continue;
+      // ⚠ 2026-08-08 오탐: "3♠3♦ · 3♠3♣ · 3♦3♣"(같은 랭크의 «콤보 열거»)를 한 벌의 보드로 읽고
+      //   같은 카드가 두 번 나왔다며 🔴를 냈다. 보드는 정의상 5장을 넘을 수 없으므로,
+      //   6장 이상 이어진 런은 보드가 아니라 열거다. 보드로 판정하지 않는다.
+      if (run.length > 5) continue;
       const ids = run.map((t) => t.id);
       const dup = ids.filter((x, i) => ids.indexOf(x) !== i);
       if (dup.length) add('ERR', 'H1', `L${line} 보드에 같은 카드 중복: ${[...new Set(dup)].join(', ')}`, [ids.join(' ')]);
@@ -848,37 +865,50 @@ function sentencesOf(c) {
    왜 있는가: 2026-07-31 확률 클러스터에서 팟오즈 분모가 통째로 틀렸는데
    "팟오즈" 키워드 검색으로는 안 걸렸다. position 글의 "팟 오즈 = 2/4 = 33%"(2/4는 50%)는
    적대적 검수가 우연히 발견했다. 산수 자체를 기계가 재계산하면 언어와 무관하게 전부 잡힌다.
-   ──────────────────────────────────────────────────────────────── */
-const DIV_RE = /([\d][\d,]*(?:\.\d+)?)\s*(?:÷|\/)\s*\(?\s*([0-9,.\s+×x*]+?)\s*\)?\s*(?:(?:×|x|\*)\s*100\s*)?=\s*\**\s*(?:약\s*)?([\d.]+)\s*%/g;
 
-/** "10,000 + 5,000 + 5,000" 또는 "20,000 + 10,000 × 2" → 숫자. 못 풀면 null. */
-function evalDenom(s) {
-  const t = s.replace(/,/g, '').trim();
-  if (!/^[\d.\s+×x*]+$/.test(t)) return null;
-  let sum = 0;
-  for (const term of t.split('+')) {
-    const factors = term.split(/[×x*]/).map((x) => parseFloat(x.trim()));
-    if (factors.some((f) => !Number.isFinite(f))) return null;
-    sum += factors.reduce((a, b) => a * b, 1);
-  }
-  return sum;
+   ⚠ 2026-08-08: 예전 구현은 «분자 ÷ 분모» 한 쌍만 봤다. 그래서 분수를 이어 곱한 식
+   ("10/47 × 9/46 = 약 4.2%", 백도어 플러시 완성 확률)에서 뒤쪽 9/46만 떼어 읽고 오탐을 냈다.
+   지금은 «= N%» 왼쪽의 수식 전체를 훑어 올라가 통째로 계산한다.
+   ──────────────────────────────────────────────────────────────── */
+const PCT_RE = /=\s*\**\s*(?:약\s*)?([\d.]+)\s*%/g;
+/** 수식에 쓰일 수 있는 문자만. 한글·%·- 를 빼야 왼쪽 문장까지 삼키지 않는다. */
+const EXPR_CHARS = /[\d.,\s+×x*/÷()]/;
+
+/** "5,000 ÷ (10,000 + 5,000)" · "10/47 × 9/46" → 값. 못 풀면 null. */
+function evalExpr(src) {
+  let t = src.replace(/,/g, '').replace(/[×x]/g, '*').replace(/÷/g, '/').trim();
+  t = t.replace(/^[*/+]+/, '').trim();          // 앞에 남은 연산자 제거
+  if (!/^[\d.\s+*/()]+$/.test(t)) return null;  // 안전 문자만 (Function 실행 전 검증)
+  if (!/[/]/.test(t)) return null;              // 나눗셈이 없으면 F13 대상이 아니다
+  const scaled = /\*\s*100$/.test(t);           // "… × 100 = N%" 꼴이면 이미 퍼센트다
+  if (scaled) t = t.replace(/\*\s*100$/, '').trim();
+  if (!t) return null;
+  try {
+    const v = Function(`"use strict";return (${t});`)();
+    return Number.isFinite(v) ? v : null;
+  } catch { return null; }
 }
 
 function auditArithmetic(post) {
   const out = [];
   const lines = (post.content ?? '').split('\n');
   lines.forEach((raw, i) => {
-    for (const m of raw.matchAll(DIV_RE)) {
-      const num = parseFloat(m[1].replace(/,/g, ''));
-      const den = evalDenom(m[2]);
-      const claimed = parseFloat(m[3]);
-      if (!Number.isFinite(num) || den === null || den === 0 || !Number.isFinite(claimed)) continue;
-      const actual = (num / den) * 100;
+    for (const m of raw.matchAll(PCT_RE)) {
+      const claimed = parseFloat(m[1]);
+      if (!Number.isFinite(claimed)) continue;
+      // '=' 왼쪽으로 «수식 문자»만 훑어 올라가 식의 시작점을 찾는다
+      let j = m.index - 1;
+      while (j >= 0 && EXPR_CHARS.test(raw[j])) j--;
+      const expr = raw.slice(j + 1, m.index).trim();
+      if (!expr) continue;
+      const v = evalExpr(expr);
+      if (v === null) continue;
+      const actual = v * 100;
       // 0.6%p까지는 반올림·어림으로 본다. 그 이상 벌어지면 산수가 틀린 것이다.
       if (Math.abs(actual - claimed) > 0.6) {
         out.push({
           sev: 'ERR', code: 'F13',
-          msg: `L${i + 1} 나눗셈 결과 불일치 — 글은 "${claimed}%", 실제 ${actual.toFixed(1)}% (${m[1]} ÷ ${m[2].trim()})`,
+          msg: `L${i + 1} 나눗셈 결과 불일치 — 글은 "${claimed}%", 실제 ${actual.toFixed(1)}% (${expr})`,
         });
       }
     }
@@ -1189,6 +1219,11 @@ if (argv.includes('--selftest')) {
       '![Infográfico de um par de ases A♠ A♦ contra K♥ K♦ num board K♠ 7♦ 2♣ 8♥ 3♠ — a trinca de reis quebra os ases](/images/x.webp "legenda")'],
     ['라벨 없는 낱장은 보드가 아니다 (오탐 금지)', false,
       'I raise ==A♣K♦== and the big blind calls. Flop: ==K♠ 7♦ 2♣.== my K♦ pairs the K♠, with the ace as the best kicker.'],
+    // 2026-08-08 실제 오탐: 콤보 열거를 보드로 읽고 "같은 카드 중복" 🔴를 냈다. 보드는 5장을 넘지 않는다.
+    ['같은 랭크 콤보 열거는 보드가 아니다 (오탐 금지)', false,
+      '보드에 3♥이 있으니 ==3♠3♦ · 3♠3♣ · 3♦3♣== 세 조합입니다.'],
+    ['보드 5장 안의 진짜 카드 중복은 그대로 잡는다 (잡아야 함)', true,
+      '보드: ==b:K♠ 7♦ 2♣ K♠ 9♥== 에서 상대가 콜했습니다.'],
   ];
   let pass = 0;
   console.log('\n══════ 자가 테스트 ══════');
@@ -1317,6 +1352,10 @@ if (argv.includes('--selftest')) {
     ['반올림 오차는 봐준다 (울리면 안 됨)', false, '팟오즈 = 3,300 ÷ (13,300 + 3,300) × 100 = 20%'],
     ['곱셈이 섞인 분모도 푼다 (울리면 안 됨)', false, '필요 승률 = 10 ÷ (10 + 10 × 2) × 100 = 33.3%'],
     ['분모에 문자가 섞이면 판정하지 않는다 (오탐 금지)', false, '팟오즈 = 콜 ÷ (팟 + 상대 베팅 + 콜) × 100 = 25%'],
+    // 2026-08-08 실제 오탐: 분수를 이어 곱한 식에서 뒤쪽 9/46만 떼어 읽고 🔴를 냈다
+    ['분수 연쇄 곱 — 맞는 계산 (울리면 안 됨)', false, '백도어 플러시 완성 확률은 10/47 × 9/46 = 약 4.2%에 그칩니다.'],
+    ['분수 연쇄 곱 — 틀린 계산 (잡아야 함)', true, '백도어 플러시 완성 확률은 10/47 × 9/46 = 약 12%입니다.'],
+    ['하이라이트 마크(==) 안의 식도 푼다 (울리면 안 됨)', false, '==2.06 ÷ 2.55 = 80.7%=='],
   ];
   for (const [name, shouldFire, content] of AFIX) {
     const found = auditArithmetic({ slug: 'selftest', content });

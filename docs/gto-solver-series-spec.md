@@ -12,10 +12,15 @@
 |---|---|
 | 솔버 본체 | `solver.holdemmaster.com` 배포·**noindex** (검색은 본체 랜딩으로 일원화) |
 | `/solver` 랜딩 | ✅ 발행 (`c00d2af`) |
-| 캡처 26장 | ✅ `public/images/gto-*.webp` 변환 완료 |
-| 포스팅 | **1 / 13 완료** — ① `a-high-board-cbet` (`0624b67`) |
+| 데이터·이미지 | ✅ **13개 스팟 전부 라이브에서 재추출** (`scripts/capture-solver-spots.mjs`, §3 참조) |
+| 포스팅 | **6 / 13 완료** — ①~⑥ |
 
-**남은 12편**은 아래 §4 표의 ②~⑬.
+**남은 7편**은 아래 §4 표의 ⑦~⑬.
+
+> 🔴 **2026-08-08 2차 세션에서 «①편의 전제 두 개»가 틀렸다는 것이 확인됐다.** ①을 그대로 복사하기 전에 §3을 먼저 읽어라.
+> ① 두 번째 이미지(`-ip` 캡처)를 "벳으로 가는 핸드"로 설명한 것은 **사실오류**였다.
+> ② 초판 수치(체크 99.0% 등)는 배포 전 캡처본 기준이라 **라이브 교육 예제와 달랐다**(98.2%).
+> 둘 다 수정해 재발행했다. 원인과 재발 방지는 §3에 있다.
 
 ---
 
@@ -66,21 +71,51 @@
 
 ---
 
-## 3. 🔴 이미지 — 반드시 알아야 할 함정
+## 3. ★데이터와 이미지 — 라이브에서 직접 뽑는다 (2026-08-08 전면 교체)
 
-**파일명의 `_ip` / `_oop`는 «플레이어 구분이 아니다».**
+### 3-1. 파이프라인 (편 쓰기 전에 이것부터)
 
-7개 스팟의 짝을 픽셀 비교했더니 **전부 같은 노드**였다(차이 0.2~0.9%). 다른 것은
-**하이라이트된 액션**뿐이다. 26장 전부 **OOP 전략 화면**이고 **IP 대응 캡처는 한 장도 없다.**
+```bash
+node scripts/capture-solver-spots.mjs                     # 13개 스팟 전부 (약 1분)
+node scripts/capture-solver-spots.mjs srp-monotone        # 특정 스팟만
+node scripts/make-solver-range-charts.mjs                 # 레인지 구성 비교 인포그래픽
+node scripts/convert-solver-captures.mjs <key> [<key>…]   # 쓸 스팟만 webp로
+```
 
-- ❌ "IP(BTN)의 대응은 이렇습니다" + `_ip` 이미지 → **§13 사실오류**
-- ✅ 「체크로 가는 핸드(초록)」 vs 「벳으로 가는 핸드(노랑)」 **액션 대비**로 쓴다
+산출물은 `.solver-captures/`(gitignore)에 쌓이고, webp만 `public/images/`로 들어간다.
 
-**새 편을 쓸 때 그 스팟의 이미지 2장을 반드시 Read로 열어**, 좌상단 패널의 플레이어·액션 빈도와
-매트릭스 색을 확인하고 캡션을 붙여라. 파일명을 믿지 마라.
+| 파일 | 내용 | 용도 |
+|---|---|---|
+| `gto-<key>-oop.webp` | 첫 액션 플레이어의 **전략 화면** — 보드·팟·액션 빈도·매트릭스·핸드/드로우 분류가 한 장에 | **히어로** |
+| `gto-<key>-ranges.webp` | 두 플레이어의 **등급별 레인지 구성 비교**(자체 제작, 1200×675) | 본문 |
+| `.solver-captures/data.json` | 액션 빈도 · 핸드/드로우 분류 · EQ/EV/EQR **양쪽 전부** | 본문 수치의 원천 |
 
-크롭은 이미 끝났다(`scripts/convert-solver-captures.mjs`, 1600×900 → 875×865).
-원본을 그대로 쓰면 안 되는 이유: 렌더러가 **w=750으로 줄여 보내** 매트릭스 글자가 뭉개진다.
+### 3-2. 🔴 예전 `_ip` 캡처 26장은 쓰면 안 된다
+
+핸드오프에는 "26장 전부 OOP 화면이고 차이는 하이라이트된 액션뿐(픽셀 차이 0.2~0.9%)"이라고
+적혀 있었는데 **틀렸다.** 실제로 매트릭스 영역을 픽셀 비교하면
+
+- 같은 스팟의 `-oop` ↔ `-ip` : **54.8% 차이** (완전히 다른 그림)
+- **보드가 다른 스팟끼리의 `-ip` ↔ `-ip` : 0.12~0.21% 차이** ← 여기가 0.x%였던 것
+
+즉 `-ip`는 **보드와 무관한 IP의 «프리플랍 레인지» 화면**이다. AA·KK·AK가 들어 있고 K4s·Q5s는 빠져 있다.
+「결과 바로 보기」는 플랍 첫 액션 노드만 계산해 두는데 **첫 액션은 OOP 차례**라, IP 쪽에는 전략이 없고
+레인지와 EQ/EV/EQR만 있다. 그래서 `-ip` 화면에는 보드별 정보가 **0**이다.
+
+①편이 이걸 "같은 화면에서 벳으로 가는 핸드만 노란색으로 표시한 것"이라고 설명하고 발행돼 있었다.
+BB 레인지에 없는 AA·KK가 칠해진 그림이므로 **§13 사실오류**다. 13장 전부 삭제했다.
+
+> **교훈**: 파일명을 믿지 마라. 그리고 **"차이가 0.x%"라는 비교 결과를 받으면 «무엇과 무엇을 비교했는지»를 먼저 확인하라.**
+> 이번 오진은 비교 대상을 잘못 짝지은 것이었다.
+
+### 3-3. 매 편 지킬 것
+
+- **이미지 2장을 Read로 열어 육안 확인**한 뒤 캡션을 쓴다. 좌상단 패널의 플레이어(OOP/IP)와 액션 빈도가
+  본문 수치와 맞는지 본다.
+- 캡처는 `deviceScaleFactor: 2`로 뽑는다. **`document.documentElement.style.zoom`을 쓰면 안 된다** —
+  앱이 `window.innerWidth`로 매트릭스 셀 폰트를 정해서, 줌을 걸면 글자가 셀보다 커져 서로 겹친다.
+- **가상 스크롤 표는 끝까지 내려서 세라.** ⑤편에서 화면에 보이는 34행만 보고 「너트 플러시 7콤보·평균 체크 68.5%」로
+  적었는데, 전체 469행을 훑으니 **8콤보·69.9%**였다(A♠3♠이 아래 있었다). 보이는 것이 전부가 아니다.
 
 ---
 
@@ -92,11 +127,11 @@
 | # | 원본 파일 | 상태 | slug(제안) | 주 롱테일 키워드 | 보조 |
 |---|---|---|---|---|---|
 | ① | srp-dry-ace | ✅ 완료 | `a-high-board-cbet` | A하이 보드 C벳 | 레인지 체크, 드라이 보드 |
-| ② | srp-dry-king | | `k-high-board-cbet` | K하이 보드 C벳 빈도 | 체크백, EQR |
-| ③ | srp-broadway | | `broadway-board-strategy` | 브로드웨이 보드 전략 | QJT, 너트 우위 |
-| ④ | srp-middle-connected | | `donk-bet-strategy` | 도네이션 벳(리드 벳) | 연결 보드, C벳 금지 보드 |
-| ⑤ | srp-monotone | | `monotone-board-strategy` | 몬톤 보드 전략 | 플러시 보드 벳 사이즈 |
-| ⑥ | srp-paired | | `paired-board-strategy` | 페어 보드 전략 | 포켓페어 플랍 |
+| ② | srp-dry-king | ✅ 완료 | `k-high-board-cbet` | K하이 보드 C벳 빈도 | 체크백, EQR |
+| ③ | srp-broadway | ✅ 완료 | `broadway-board-strategy` | 브로드웨이 보드 전략 | QJT, 너트 우위 |
+| ④ | srp-middle-connected | ✅ 완료 | `donk-bet-strategy` | **돈크벳**(동크벳·리드 벳) | 연결 보드, C벳 금지 보드 |
+| ⑤ | srp-monotone | ✅ 완료 | `monotone-board-strategy` | 몬톤 보드 전략 | 플러시 보드 벳 사이즈 |
+| ⑥ | srp-paired | ✅ 완료 | `paired-board-strategy` | 페어 보드 전략 | 포켓페어 플랍 |
 | ⑦ | srp-low-rainbow | | `low-board-check-raise` | 로우 보드 체크레이즈 | 오버카드 싸움 |
 | ⑧ | 3bp-ace-king | | `3bet-pot-cbet` | 3벳팟 C벳 전략 | 3벳팟 SPR |
 | ⑨ | 3bp-dynamic | | `3bet-pot-bet-sizing` | 3벳팟 벳 사이즈 | 다이나믹 보드, 프로텍션 |
@@ -105,7 +140,19 @@
 | ⑫ | sb-connected | | `blind-battle-connected-board` | 블라인드전 연결 보드 | C벳 포기 |
 | ⑬ | sb-paired-ace | | `ace-paired-board-strategy` | AAx 페어 보드 전략 | 미니벳, 블러프 |
 
-이미지: `/images/gto-<원본파일명>-oop.webp` · `-ip.webp` (밑줄이 하이픈으로 바뀐 규칙)
+이미지: `/images/gto-<원본파일명>-oop.webp`(히어로) · `-ranges.webp`(본문). **`-ip.webp`는 없다 — §3-2 참조.**
+
+🔴 **용어는 원본 md를 믿지 마라.** ④의 원본이 쓴 「도네이션 벳」은 한국 포커판에서 안 쓰는 말이다
+(실제 표기는 **돈크벳·동크벳**, donk=당나귀). 적대적 검수 두 렌즈가 동시에 지적했고 서치로 확인했다.
+원본 md의 용어는 매번 실검색 표기와 대조하고, 애매하면 **병기**하라.
+
+⚠ **⑦~⑬의 `-oop.webp`는 아직 «옛 캡처»다.** 그 편을 쓸 때 `capture-solver-spots.mjs` →
+`make-solver-range-charts.mjs` → `convert-solver-captures.mjs <key>`를 돌려 교체하라(수치도 그때 다시 읽어라).
+
+⚠ **3벳팟(⑧⑨⑩)과 블라인드전(⑪⑫⑬)은 조건이 다르다.** 솔버 교육 예제 화면에 이렇게 적혀 있다.
+- 3벳팟: **OOP = BB(3벳터) · IP = BTN(콜러) · 팟 22.5bb · 스택 89bb**
+- 블라인드전: **OOP = SB(오픈레이저) · IP = BB(콜러) · 팟 6bb · 스택 97bb**
+SRP 6편의 「팟 5.5bb · 유효 스택 97.5bb · BB가 콜러」를 그대로 복사하면 전부 틀린다. **계산 조건 표를 반드시 바꿔라.**
 
 ---
 
@@ -129,17 +176,23 @@
 ## 5. 편당 체크리스트
 
 ```
-1. 원본 md 읽기 → 수치·해석 파악
-2. lib/posts/a-high-board-cbet.ts 복사 → 새 slug로 구조 채우기
+0. node scripts/capture-solver-spots.mjs <key>          # ★라이브 재추출이 먼저다
+   node scripts/make-solver-range-charts.mjs
+   node scripts/convert-solver-captures.mjs <key>
+1. .solver-captures/data.json 에서 그 스팟의 oop/ip 값을 읽는다 (원본 md는 «해석»만 참고)
+2. lib/posts/k-high-board-cbet.ts 복사 → 새 slug로 구조 채우기   ← ①보다 ②가 최신 템플릿이다
 3. 이미지 2장 Read로 육안 확인 → 정확한 캡션
 4. ★§13 손 검산 — 게이트가 이 시리즈를 «미검사»로 흘린다(커버리지 "카드 문단 0개")
-     팟 = 오픈 + 콜 + SB   /   유효스택 = 100 - 오픈
-     액션 빈도 합 = 100%   /   EV 합 = 팟(0.1bb 단위)
+     팟 = 오픈 + 콜 + SB   /   유효스택 = 100 - 오픈   (⑧~⑬은 조건이 다르다, §4 경고 참조)
+     액션 빈도 합 = 100%   /   핸드 분류 합 = 100%   /   EV 합 = 팟(0.1bb 단위)
      EQR 역산 = EV ÷ (에퀴티 × 팟)  → 글의 EQR과 ±0.3%p 안에 들어와야 한다
+     ★콤보 수를 주장하면 «보드 블로커»를 반영해 직접 세라 (보드에 6이 2장이면 66은 1콤보다)
+     ★"이 보드에서 스트레이트를 만드는 핸드는 세 종류"류의 열거는 빠진 것이 없는지 확인
      보드 무늬(레인보우/투톤/몬톤) 표기가 실제 카드와 맞는지
 5. lib/posts/index.ts 에 import + NEW_POSTS 앞에 추가
 6. npm run audit:hard -- --slug=<slug>   → 🔴 0건
-7. 적대적 검수 (사장님 지시: 편당 1회)
+   npm run audit:hard -- --uncovered --slug=<slug>   → 미판정 문단 손 검산
+7. 적대적 검수 (편당 1회 · Agent 툴 · 렌즈를 갈라서)
 8. npm run build → canonical:check
 9. 커밋·배포
 ```
@@ -147,16 +200,37 @@
 **§13 검산을 건너뛰지 마라.** 게이트는 이 시리즈의 카드 표기를 인식하지 못해 0건으로 통과시킨다.
 그 0건은 «검증»이 아니라 «미검사»다(CLAUDE.md §14-A 9).
 
+### 5-1. 🔴 이 시리즈를 `audit-hardening.mjs`의 CLUSTERS에 넣지 마라
+
+이전 판 §6에 "CLUSTERS에 추가하라"고 적혀 있었지만 **실제로 넣어보니 편당 🔴 11~12건이 쏟아졌고 전부 오탐이었다.**
+C1은 «형제 글이 같은 사실을 다르게 적었다»를 잡는 검사인데, 이 시리즈는 **편마다 보드가 달라 표 값이 달라야 정상**이다.
+`scripts/audit-hardening.mjs`의 CLUSTERS 아래에 이 판단을 주석으로 박아 뒀다.
+
+수치 정합성은 대신 **출처를 하나로 묶어** 보장한다 — 전 편의 숫자가 `capture-solver-spots.mjs` 한 번의 추출에서 나온다.
+
+### 5-2. 게이트 오탐 2건을 고쳤다 (2026-08-08)
+
+이 시리즈를 쓰다가 `audit:hard`의 오탐 두 개를 발견해 파서를 고치고 자가 테스트에 픽스처를 넣었다(**69/69 통과**).
+
+| 코드 | 오탐 | 고친 내용 |
+|---|---|---|
+| F13 | `10/47 × 9/46 = 약 4.2%`(분수 연쇄 곱)에서 **뒤쪽 9/46만 떼어 읽고** 🔴 | `= N%` 왼쪽의 수식 전체를 훑어 통째로 계산 |
+| H1 | `3♠3♦ · 3♠3♣ · 3♦3♣`(콤보 열거)를 한 벌의 보드로 읽고 "같은 카드 중복" 🔴 | **6장 이상 이어진 런은 보드가 아니다**(보드는 5장을 넘지 않는다) |
+
 ---
 
 ## 6. 남은 마감 작업 (12편 완료 후)
 
-- **허브-스포크 내부링크** — 13편끼리 시리즈 순서로 연결(① → ② → …), 각 편에서 `/solver` 랜딩으로,
-  랜딩에서 13편 목록으로. 지금은 1편뿐이라 미실행
-- **`:::readnext` 카드** — 각 편 FAQ 앞(메모리 `internal-link-thumbnail-readnext`)
-- **`audit-hardening.mjs`의 CLUSTERS에 이 시리즈 추가** — 지금은 "형제 없음"으로 교차 대조를
-  아예 시도조차 못 한다. 13편은 수치·용어가 겹치므로 대조 값어치가 크다
+- **허브-스포크 내부링크** — ①~⑥은 서로 앞뒤로 연결돼 있다(`:::readnext` 2장씩). ⑦~⑬을 붙일 때
+  체인을 이어가고, 마지막 편이 ①로 돌아오게 닫는다. **`/solver` 랜딩에 13편 목록**을 넣는 것은 아직 미실행
+- **`:::readnext` 카드** — 각 편 FAQ 앞 (①~⑥ 완료)
+- ~~CLUSTERS에 추가~~ → **하지 않는다.** 이유는 §5-1
 - **솔버 세션에 URL 목록 전달** — "파일id: URL" 형식. 솔버 교육 예제에 「해설 보기」 링크로 연결한다
   ```
-  srp-dry-ace: https://www.holdemmaster.com/blog/a-high-board-cbet
+  srp-dry-ace:          https://www.holdemmaster.com/blog/a-high-board-cbet
+  srp-dry-king:         https://www.holdemmaster.com/blog/k-high-board-cbet
+  srp-broadway:         https://www.holdemmaster.com/blog/broadway-board-strategy
+  srp-middle-connected: https://www.holdemmaster.com/blog/donk-bet-strategy
+  srp-monotone:         https://www.holdemmaster.com/blog/monotone-board-strategy
+  srp-paired:           https://www.holdemmaster.com/blog/paired-board-strategy
   ```

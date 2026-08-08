@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "C벳(컨티뉴에이션 벳)은 프리플랍에서 레이즈한 사람이 플랍에서도 이어 거는 베팅이다. 사이즈는 보드에 따라 갈리는데 드로우가 없는 드라이 보드는 팟의 25~40%로 작게, 드로우가 많은 웻 보드는 65~75%로 크게 거는 것이 기준이다. 핵심은 빈도가 아니라 선별 — 상대 레인지에 맞는 보드에서는 쏘고, 내 레인지가 불리한 보드에서는 체크해야 한다.",
   category: "전략",
   date: "2026-04-18",
-  updated: "2026-08-03",
+  updated: "2026-08-08",
   readTime: "11분",
   emoji: "🎯",
   keepImagesInBody: true,
@@ -147,6 +147,8 @@ C벳 사이즈는 **보드 텍스처**에 따라 달라진다. 정답은 없지�
 > 같은 K-9-6이라도 **K♥9♠6♣(레인보우)**면 드라이 쪽에 가깝고, **K♥9♥6♣(투톤)**이면 중간입니다. 무늬가 두 장 겹치는지부터 보는 습관이 텍스처 판단의 출발점입니다.
 
 보드 텍스처 판단은 [포지션이 전부다 — 홀덤 포지션 완전 정복](/blog/position-is-everything-in-holdem)과 함께 적용할 때 효과가 배가된다. IP에서 드라이 보드 C벳은 홀덤 기본기 중 가장 수익성 높은 조합 중 하나다.
+
+**보드 유형별로 솔버가 실제로 어떤 빈도를 내놓는지**는 [GTO 솔버 스팟 해설 시리즈](/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop.webp")에서 한 보드씩 숫자로 확인할 수 있다. 드라이 A하이·[K하이](/blog/k-high-board-cbet), 웻한 [브로드웨이 QJT](/blog/broadway-board-strategy), [몬톤 보드](/blog/monotone-board-strategy), 그리고 **C벳을 참아야 하는** [미들 연결 보드](/blog/donk-bet-strategy)까지 우리 솔버로 직접 계산한 값이다.
 
 ---
 
