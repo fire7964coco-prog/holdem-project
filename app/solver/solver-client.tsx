@@ -14,6 +14,10 @@ const SOLVER_URL = "https://solver.holdemmaster.com";
  */
 const FAQ = [
   {
+    q: "홀덤 GTO 표는 어디서 보나요?",
+    a: "이 솔버를 실행하면 나오는 13×13 매트릭스가 GTO 표입니다. 169개 핸드 각각을 어떤 빈도로 벳·체크·폴드해야 하는지 색으로 표시하고, 핸드별 에퀴티·EV·에퀴티 실현율(EQR)까지 표로 보여줍니다. 교육 예제를 누르면 계산 없이 완성된 표가 바로 뜹니다. 다만 이 솔버는 포스트플랍(플랍 이후) 전용이라, 프리플랍에서 어느 포지션에 어떤 핸드를 오픈할지 정리한 표가 필요하면 홀덤 차트를 보시는 편이 빠릅니다.",
+  },
+  {
     q: "GTO 솔버가 뭔가요?",
     a: "게임이론 최적(GTO) 전략을 계산하는 프로그램입니다. 특정 상황(레인지·보드·벳 사이즈)을 입력하면 내시 균형에 가까운 전략 — 어떤 핸드로 얼마나 자주 벳/체크/폴드해야 하는지 — 을 알려줍니다. PioSolver·GTO Wizard 같은 유료 도구가 유명하지만, 홀덤마스터 솔버는 완전 무료입니다.",
   },
@@ -101,11 +105,12 @@ export default function SolverClient() {
       {/* 히어로 + CTA */}
       <section className="mt-6 text-center">
         <h2 className="text-2xl font-bold">
-          무료 GTO 솔버 — 설치 없이 브라우저에서
+          무료 GTO 솔버 — 홀덤 GTO 표를 브라우저에서
         </h2>
         <p className="mt-3 text-muted-foreground">
-          포스트플랍 레인지·벳 사이즈·EV 분석을 회원가입도, 결제도, 횟수 제한도
-          없이. 홀덤마스터가 한국어로 제공하는 오픈소스 GTO 솔버입니다.
+          169개 핸드의 전략을 13×13 GTO 표로 계산합니다. 레인지 차트·벳 사이즈·EV·
+          에퀴티 실현율까지 회원가입도, 결제도, 횟수 제한도 없이. 홀덤마스터가
+          한국어로 제공하는 오픈소스 GTO 솔버입니다.
         </p>
         <a
           href={SOLVER_URL}
@@ -181,9 +186,10 @@ export default function SolverClient() {
           </li>
           <li>
             <Link href="/hand-chart" className="font-semibold text-primary hover:underline">
-              스타팅 핸드 차트
+              홀덤 차트 (포지션별 오픈 레인지)
             </Link>{" "}
-            — 솔버에 넣을 프리플랍 레인지의 출발점
+            — 이 솔버는 포스트플랍 전용입니다. <strong>프리플랍</strong>에서 어느 자리에 무엇을
+            오픈할지는 이 차트가 담당하고, 솔버에 넣을 레인지의 출발점이 됩니다
           </li>
           <li>
             <Link href="/win-rate-quiz" className="font-semibold text-primary hover:underline">

@@ -52,6 +52,8 @@ const RELATED = [
   { href: "/blog/position-is-everything-in-holdem", tag: "포지션", title: "포지션이 전부다", desc: "자리별 전략과 버튼이 강한 이유" },
   { href: "/blog/holdem-hand-rankings", tag: "족보", title: "홀덤 족보 순위 10가지", desc: "로열플러시부터 하이카드까지" },
   { href: "/calculator", tag: "도구", title: "승률·팟오즈 계산기", desc: "핸드별 정확한 승률을 수치로 확인" },
+  // 역할 분리: 이 차트 = 프리플랍 오픈 레인지 / 솔버 = 플랍 이후 GTO 표 계산
+  { href: "/solver", tag: "도구", title: "무료 GTO 솔버", desc: "플랍 이후 13×13 GTO 표를 직접 계산" },
 ];
 
 function getHandName(row: number, col: number): string {
@@ -79,11 +81,18 @@ export default function HandChart() {
 
   return (
     <>
+      {/*
+        ⚠ 2026-08-09 — 원래 여기 description에 「한국어 GTO 오픈 레인지 기준」, keywords에
+        「GTO 스타팅 핸드」가 들어 있었는데 **근거가 없어 제거했다.** 우리 솔버의 실제 SB
+        오픈 레인지는 46.6%인데 이 차트는 56%다. GTO 계열 키워드는 /solver가 가져간다.
+        (§17 금지어였던 「완전 가이드」도 함께 제거.)
+        ★서버 메타(page.tsx)와 문구를 일치시킬 것 — 이 컴포넌트는 SPA 이동 시 표시 보정용이다.
+      */}
       <SEO
-        title="홀덤 스타팅 핸드 차트 — 포지션별 오픈 레인지 완전 가이드"
-        description="UTG·HJ·CO·버튼·SB 포지션별 스타팅 핸드 169개를 한눈에 비교하는 인터랙티브 차트. 한국어 GTO 오픈 레인지 기준으로 색상 코딩, 버튼 하나로 포지션별 플레이 범위 즉시 확인."
+        title="홀덤 차트 — 포지션별 오픈 레인지 169핸드 한눈에"
+        description="UTG에선 12%, 버튼에선 42%. 169개 프리플랍 핸드를 5개 포지션별로 색칠한 홀덤 차트입니다. 포지션을 누르면 그 자리에서 오픈할 핸드레인지만 골라 보여줍니다."
         path="/hand-chart"
-        keywords={["홀덤 스타팅 핸드", "포지션별 핸드 차트", "홀덤 오픈 레인지", "UTG 레인지", "버튼 레인지", "GTO 스타팅 핸드"]}
+        keywords={["홀덤 차트", "홀덤 오픈 레인지", "홀덤 포지션별 핸드레인지", "홀덤 레인지 차트", "홀덤 프리플랍 레인지", "UTG 레인지", "버튼 레인지"]}
       />
 
       <div className="max-w-5xl mx-auto px-4 py-10 md:py-14 space-y-12">
@@ -100,10 +109,10 @@ export default function HandChart() {
               ♠ 인터랙티브 스타팅 핸드 도구
             </div>
             <h1 className="text-3xl md:text-5xl font-bold text-foreground tracking-tight">
-              홀덤 스타팅 핸드 차트
+              홀덤 차트
             </h1>
             <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
-              169개 핸드를 포지션(UTG → SB)별로 색상 코딩. 버튼을 누르면 해당 포지션에서 오픈할 수 있는 핸드만 강조됩니다.
+              169개 프리플랍 핸드를 포지션(UTG → SB)별로 색상 코딩한 오픈 레인지 차트. 버튼을 누르면 해당 포지션에서 오픈할 수 있는 핸드만 강조됩니다.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 pt-2 text-sm">
               <span className="text-foreground font-bold">169<span className="text-muted-foreground font-normal ml-1">핸드</span></span>
@@ -358,7 +367,11 @@ export default function HandChart() {
             </table>
           </div>
           <p className="text-xs text-muted-foreground">
-            * GTO 기반 근사값 — 실전에서는 테이블 성향, 스택 깊이, 상대방 레인지에 따라 조정 필요
+            * 표준 오픈 레인지의 근사값입니다. 실제 솔버 계산값은 오픈 사이즈·스택·상대 레인지에 따라
+            달라집니다 — 예를 들어{" "}
+            <Link href="/solver" className="text-primary hover:underline">홀덤마스터 GTO 솔버</Link>
+            의 블라인드전 예제에서 SB 오픈은 3bb 기준 46.6%(92종 618콤보)입니다. 실전에서는 테이블
+            성향과 스택 깊이까지 감안해 조정하세요.
           </p>
         </section>
 
