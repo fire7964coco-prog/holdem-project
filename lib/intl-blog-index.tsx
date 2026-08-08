@@ -75,16 +75,21 @@ export function IntlBlogIndex({
                  * 카드는 **160px 높이 자리**인데 1200px 원본을 통째로 받고 있었다.
                  * /de/blog 실측: 42장 = **1,488,918 bytes**.
                  *
-                 * sizes를 480px로 잡은 근거(라이브 실측): 비셸 로케일 **420px**(max-w-4xl 864 ÷ 2 − gap),
-                 * 허브 셸 로케일 **352px**. 둘 다 덮으면서 절대 부족하지 않은 값이 480이다.
+                 * 폭 480은 라이브 실측 근거다: 비셸 로케일 **420px**(max-w-4xl 864 ÷ 2 − gap),
+                 * 허브 셸 로케일 **352px**. 둘 다 덮으면서 부족하지 않은 값.
                  * ⚠ 추측하지 말 것 — 표시 폭은 `getBoundingClientRect()`로 재고 나서 바꾼다.
+                 *
+                 * ★`sizes`를 «일부러» 안 준다 (2026-08-08).
+                 *   `sizes`가 있으면 next/image가 deviceSizes ∪ imageSizes **사다리 전체**를 srcset에 깐다
+                 *   → 이미지 1장이 변형 12종이 되고, 그게 **Vercel 이미지 변환 쿼터**를 그만큼 먹는다.
+                 *   빼면 `1x`/`2x` **2종**만 나온다(480 · 1080). 카드는 420px 고정 박스라 그걸로 충분하고
+                 *   **전송량 절감은 그대로**다. 카드처럼 크기가 고정된 자리엔 sizes를 주지 말 것.
                  */
                 <Image
                   src={p.image}
                   alt={p.imageAlt ?? p.title}
-                  width={600}
-                  height={338}
-                  sizes="(max-width: 640px) 100vw, 480px"
+                  width={480}
+                  height={270}
                   className="w-full h-40 object-cover"
                   loading="lazy"
                 />
