@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
-import { Noto_Sans_KR, Inter, Lora } from "next/font/google";
+import { Inter, Lora } from "next/font/google";
+import localFont from "next/font/local";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
 import { SiteHeader, SiteFooter, HtmlLangSync, MainContent, ScrollToTopButton, SiteRail } from "@/components/site-chrome";
@@ -49,12 +50,33 @@ const LANG_BOOTSTRAP = `(function(){try{var s=location.pathname.split('/')[1];va
  * 실제로 렌더에 쓰이는 400/700/900만 남긴다. 500·600·800은 어차피 다운로드된 적이
  * 없으므로 지워도 화면은 그대로다(라틴은 Inter가 5 weight를 유지하므로 무관).
  *
- * ⚠ 397KB를 진짜로 없애려면 **한글 웹폰트 자체를 포기**해야 한다(본문은 이미 시스템
- *   폰트를 쓰고 있으니 헤딩만 맞추면 된다). 그건 타이포그래피 결정이라 사장님 판단 몫.
+ * ★ 2026-08-08: 여기서 한 걸음 더 갔다 — **next/font/google → 자체 서브셋(next/font/local)**.
+ *
+ *   위 주석이 "397KB를 없애려면 한글 웹폰트를 포기해야 한다"고 적었는데, **그건 사실이 아니었다.**
+ *   구글 CDN 방식이 한글을 unicode-range 124조각으로 쪼개는 게 문제였을 뿐이고,
+ *   **글자를 우리가 직접 골라 한 파일로 만들면 글꼴을 유지한 채 둘 다 없앨 수 있다.**
+ *
+ *   왜 그 선언 더미가 비쌌나 — 라이브 A/B 실측(CPU 4x · Slow 4G · n=4 중앙값):
+ *       현재(@font-face 438개)   FCP 홈 1,980ms · 블로그 1,748ms
+ *       폰트 CSS 제거            FCP 홈 1,300ms · 블로그 1,056ms   (**-34% / -40%**)
+ *   네트워크가 아니라 **메인스레드**였다. 홈은 모든 요청이 576ms에 끝났는데 FCP가 4.05s였고,
+ *   그중 최대 항목이 Style & Layout 761~929ms였다. 브라우저가 페이지의 모든 텍스트를
+ *   438개의 unicode-range와 대조하고 있었던 것이다.
+ *
+ *   결과: **@font-face 373개 → weight당 1개 · 렌더차단 CSS 235KB → ~0 · 전송 397KB → 157KB**
+ *   글꼴은 그대로 Noto Sans KR이다(같은 원본에서 잘라낸 것이라 자형이 동일).
+ *
+ *   ⚠ 커버리지는 **KS X 1001 완성형 2,350자 + 사이트 실사용 글자**다(생성: `scripts/subset-korean-font.py`).
+ *     사이트가 쓰는 1,161자 중 완성형 밖은 **단 2자**였다. 밖의 글자가 나오면
+ *     **그 글자만** 시스템 폰트로 폴백된다(문서 전체가 아니다).
+ *     새 언어·새 글자군(한자·키릴 등)을 도입하면 스크립트를 다시 돌릴 것.
  */
-const notoSansKr = Noto_Sans_KR({
-  subsets: ["latin"],
-  weight: ["400", "700", "900"],
+const notoSansKr = localFont({
+  src: [
+    { path: "./fonts/noto-sans-kr-400.woff2", weight: "400", style: "normal" },
+    { path: "./fonts/noto-sans-kr-700.woff2", weight: "700", style: "normal" },
+    { path: "./fonts/noto-sans-kr-900.woff2", weight: "900", style: "normal" },
+  ],
   /**
    * ★ 2026-08-02: "swap" → "optional" (사장님 승인)
    *
