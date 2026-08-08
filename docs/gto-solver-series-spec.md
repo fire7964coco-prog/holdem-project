@@ -132,19 +132,30 @@ BB 레인지에 없는 AA·KK가 칠해진 그림이므로 **§13 사실오류**
 | ④ | srp-middle-connected | ✅ 완료 | `donk-bet-strategy` | **돈크벳**(동크벳·리드 벳) | 연결 보드, C벳 금지 보드 |
 | ⑤ | srp-monotone | ✅ 완료 | `monotone-board-strategy` | 몬톤 보드 전략 | 플러시 보드 벳 사이즈 |
 | ⑥ | srp-paired | ✅ 완료 | `paired-board-strategy` | 페어 보드 전략 | 포켓페어 플랍 |
-| ⑦ | srp-low-rainbow | | `low-board-check-raise` | 로우 보드 체크레이즈 | 오버카드 싸움 |
-| ⑧ | 3bp-ace-king | | `3bet-pot-cbet` | 3벳팟 C벳 전략 | 3벳팟 SPR |
-| ⑨ | 3bp-dynamic | | `3bet-pot-bet-sizing` | 3벳팟 벳 사이즈 | 다이나믹 보드, 프로텍션 |
-| ⑩ | 3bp-low | | `3bet-pot-low-board` | 3벳팟 AK 하이카드 플레이 | 폴라 레인지 |
-| ⑪ | sb-king-mid | | `blind-battle-cbet` | 블라인드전 C벳 | SB vs BB |
-| ⑫ | sb-connected | | `blind-battle-connected-board` | 블라인드전 연결 보드 | C벳 포기 |
-| ⑬ | sb-paired-ace | | `ace-paired-board-strategy` | AAx 페어 보드 전략 | 미니벳, 블러프 |
+| ⑦ | srp-low-rainbow | | `low-board-check-raise` | **체크레이즈**(30) + 홀덤 GTO | 오버카드 싸움 |
+| ⑧ | 3bp-ace-king | | `3bet-pot-cbet` | **홀덤 SPR**(90) + 홀덤 3벳(20) | 3벳 레인지(30) |
+| ⑨ | 3bp-dynamic | | `3bet-pot-bet-sizing` | **3벳 레인지**(30) + 홀덤 GTO | 다이나믹 보드, 프로텍션 |
+| ⑩ | 3bp-low | | `3bet-pot-low-board` | **홀덤 AK**(10) + 홀덤 GTO | 폴라 레인지 |
+| ⑪ | sb-king-mid | | `blind-battle-cbet` | **홀덤 포지션**(390) + 홀덤 GTO | SB vs BB |
+| ⑫ | sb-connected | | `blind-battle-connected-board` | **홀덤 포지션**(390) + 홀덤 GTO | C벳 포기 |
+| ⑬ | sb-paired-ace | | `ace-paired-board-strategy` | **홀덤 블러프**(10)·**트립스**(10) + 홀덤 GTO | 미니벳 |
+
+> 🔴 **위 «주 키워드»는 2026-08-08에 실측해서 갈아 끼운 것이다.** 원래 이 표에 적혀 있던
+> 「로우 보드 체크레이즈」·「3벳팟 C벳 전략」·「3벳팟 벳 사이즈」·「블라인드전 C벳」·「AAx 페어 보드 전략」은
+> **전부 월간 검색량 0**이었다. 괄호 안 숫자가 실측 월간 검색량이다.
+> 전체 데이터와 재현 명령은 **`docs/keyword-bank/ko-gto-solver.md`**에 있다. ⑦편 착수 전에 그 파일부터 읽어라.
 
 이미지: `/images/gto-<원본파일명>-oop.webp`(히어로) · `-ranges.webp`(본문). **`-ip.webp`는 없다 — §3-2 참조.**
 
-🔴 **용어는 원본 md를 믿지 마라.** ④의 원본이 쓴 「도네이션 벳」은 한국 포커판에서 안 쓰는 말이다
-(실제 표기는 **돈크벳·동크벳**, donk=당나귀). 적대적 검수 두 렌즈가 동시에 지적했고 서치로 확인했다.
-원본 md의 용어는 매번 실검색 표기와 대조하고, 애매하면 **병기**하라.
+🔴 **용어는 원본 md도, 이 문서도 믿지 말고 «실측»하라.** ④에서 두 번 틀렸다 —
+원본의 「도네이션 벳」(0) → 「돈크벳」(0)으로 고쳤다가 → 실측해 보니 **「동크벳」(월 320)**이었다.
+표기 하나가 320 대 0을 가른다. 매 편 제목을 짓기 전에 자동완성 + 월간 검색량을 재라(방법은 키워드 뱅크 §5).
+
+⚠ **「홀덤」을 붙인다고 항상 좋아지지 않는다** — 「체크레이즈」 30인데 「홀덤 체크레이즈」는 0이다.
+반대로 「홀덤 gto」 390이 「gto 솔버」 70보다 크다. **양쪽 다 재고 큰 쪽을 쓴다.**
+
+★**seoTitle에 「GTO」를 반드시 넣는다.** ①~⑥은 처음에 GTO가 한 글자도 없어서
+「홀덤 gto」(390) 계열 쿼리와 아예 매치되지 않았다. 2026-08-08에 6편 전부 소급 수정했다.
 
 ⚠ **⑦~⑬의 `-oop.webp`는 아직 «옛 캡처»다.** 그 편을 쓸 때 `capture-solver-spots.mjs` →
 `make-solver-range-charts.mjs` → `convert-solver-captures.mjs <key>`를 돌려 교체하라(수치도 그때 다시 읽어라).
@@ -176,7 +187,8 @@ SRP 6편의 「팟 5.5bb · 유효 스택 97.5bb · BB가 콜러」를 그대로
 ## 5. 편당 체크리스트
 
 ```
-0. node scripts/capture-solver-spots.mjs <key>          # ★라이브 재추출이 먼저다
+0. docs/keyword-bank/ko-gto-solver.md 를 읽고 이 편의 주 키워드를 고른다  ← ★제목을 짓기 전에
+   node scripts/capture-solver-spots.mjs <key>          # ★라이브 재추출이 먼저다
    node scripts/make-solver-range-charts.mjs
    node scripts/convert-solver-captures.mjs <key>
 1. .solver-captures/data.json 에서 그 스팟의 oop/ip 값을 읽는다 (원본 md는 «해석»만 참고)

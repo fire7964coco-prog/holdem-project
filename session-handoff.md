@@ -7,13 +7,31 @@
 
 ## ▶▶▶▶▶▶▶▶▶ 새 세션 START HERE
 
-### ▶ 0-❹. 2026-08-08 (4) — GTO 시리즈 ②~⑥ 5편 발행 · ①편 사실오류 2건 수정 ✅ (6/13)
+## ▶▶ 다음 세션이 할 일 — GTO 시리즈 ⑦~⑪ 5편
 
-> **커밋 `52c11e0` · build 62 blog posts · 622 페이지 · canonical 0건 · 게이트 6편 🔴 0건 ·
-> 자가테스트 69/69 · 라이브 5편 전부 200 확인.**
+```
+1. git pull
+2. docs/gto-solver-series-spec.md 통독           ← §3(캡처)·§4(키워드)·§5(체크리스트) 전면 개정됨
+3. docs/keyword-bank/ko-gto-solver.md 통독       ← 제목 짓기 전에 여기서 키워드를 고른다
+4. node scripts/capture-solver-spots.mjs srp-low-rainbow 3bp-ace-king 3bp-dynamic 3bp-low sb-king-mid
+   node scripts/make-solver-range-charts.mjs
+   node scripts/convert-solver-captures.mjs srp-low-rainbow 3bp-ace-king 3bp-dynamic 3bp-low sb-king-mid
+5. lib/posts/k-high-board-cbet.ts 를 템플릿으로 복사해 5편 작성
+6. 편당 §13 손 검산 → audit:hard --slug → --uncovered
+7. 적대적 검수 4렌즈 병렬 + 2차 교열 패스
+8. 묶어서 빌드·커밋·배포 → 보고
+```
+
+**⑫⑬(sb-connected · sb-paired-ace)는 그다음 세션.** 13편 완료 후 마감 작업은 spec §6.
+
+---
+
+### ▶ 0-❹. 2026-08-08 (4) — GTO 시리즈 ②~⑥ 5편 발행 · ①편 사실오류 2건 수정 · 키워드 실측 ✅ (6/13)
+
+> **커밋 `52c11e0`(5편) · `fbec6ea`(키워드 실측 반영) · `79a05b1`(키워드 뱅크).**
+> build 62 blog posts · 622 페이지 · canonical 0건 · 게이트 🔴 0건 · 자가테스트 69/69 · 라이브 200 확인.
 > 보고서: <https://claude.ai/code/artifact/280b93d9-f604-47f3-9924-91a9f63825f5>
-> ⚠ 착수 전 **`git pull` 먼저.** 다음 세션은 ⑦~⑬ 중 5편.
-> **`docs/gto-solver-series-spec.md`를 먼저 읽어라 — 이번에 §3·§5를 전면 교체했다.**
+> ⚠ 착수 전 **`git pull` 먼저.**
 
 **한 일** — ② `k-high-board-cbet` · ③ `broadway-board-strategy` · ④ `donk-bet-strategy`(돈크벳) ·
 ⑤ `monotone-board-strategy` · ⑥ `paired-board-strategy` 발행 + ①편 수정 +
@@ -39,9 +57,22 @@
 7. **가상 스크롤 표는 끝까지 내려서 세라.** 화면에 보이는 34행만 보고 「너트 플러시 7콤보」로
    썼는데 전체 469행에는 8콤보였다(A♠3♠). 평균값도 68.5 → 69.9로 바뀐다.
 8. 게이트 오탐 2건(F13 분수 연쇄 곱 · H1 콤보 열거)을 고치고 픽스처를 넣었다 → **69/69**.
+9. 🔴 **키워드는 «실측»해야 한다. 기획 문서에 적힌 키워드를 믿고 쓰다가 두 번 틀렸다.**
+   - 「도네이션 벳」(원본 md) → 「돈크벳」(내 수정, 0) → **「동크벳」(월 320)**이 정답이었다.
+   - ①~⑥ seoTitle에 **GTO가 한 글자도 없었다.** 「홀덤 gto」는 월 390인데 매치가 안 되고 있었다.
+   - 주 키워드로 잡았던 **모노톤/브로드웨이/페어 보드는 전부 검색량 0**이었다.
+   - 전부 소급 수정 완료. 방법·데이터는 **`docs/keyword-bank/ko-gto-solver.md`**.
+   - 도구: 구글 자동완성(`client=chrome`) + **라쿠 MCP `search-volume-history`에
+     `language:"Korean"`, `location:"South Korea"`** — 한국 데이터가 나온다(일본 전용 아님).
 
-**남은 것** — ⑦ `srp-low-rainbow` · ⑧⑨⑩ 3벳팟 · ⑪⑫⑬ 블라인드전. 완료 후
-`/solver` 랜딩에 13편 목록(허브) 추가 · 솔버 세션에 URL 목록 전달(spec §6에 6편분 준비돼 있음).
+**남은 것** — ⑦~⑪ 5편(다음 세션) · ⑫⑬ 2편 · 완료 후 `/solver` 랜딩에 13편 목록(허브) 추가 ·
+솔버 세션에 URL 목록 전달(spec §6에 6편분 준비돼 있음).
+
+**⚠ 별건으로 남긴 기회 (사장님께 보고했고 아직 미착수)**
+`/solver` 랜딩이 **「홀덤 gto 프로그램」(140)·「홀덤 gto 계산기」(20)·「gto 솔버 무료」·「홀덤 솔버 무료」**를
+안 노리고 있다. 자동완성이 「홀덤 솔버 → 사용법·다운로드·**무료**·추천」인데 **랜딩 메타에 «무료»가 없다.**
+우리 솔버는 무료·설치 불필요·회원가입 없음이다. 가장 값싼 개선이다.
+참고로 **「gto wizard」는 월 4,400**으로 이 판에서 압도적이다(브랜드 키워드라 직접 조준은 사장님 판단 필요).
 
 ### ▶ 0-❸. 2026-08-08 (3) — GTO 솔버 통합 · 13편 시리즈 ①편 발행 ✅ (→ 0-❹에서 이어감)
 
