@@ -202,6 +202,21 @@ git add . && git commit -m "feat: 새 포스트 [slug]" && git push
 `holdem-starting-hands` / `holdem-tournament` / `holdem-pub-guide` / `holdem-glossary` /
 `holdem-position-play` / `holdem-pot-odds` / `holdem-bluff-spot`
 
+> 🔴 **위 목록 중 6개는 실제 발행 슬러그가 아니다** (2026-08-08 라이브 대조로 확인).
+> 그대로 `/blog/<slug>`를 쓰면 **404**다. 링크를 걸 땐 아래 오른쪽을 쓸 것.
+>
+> | 문서에 적힌 이름 | 실제 라이브 슬러그 |
+> |---|---|
+> | `holdem-starting-hands` | `holdem-starting-hand-range` |
+> | `holdem-position-play` | `position-is-everything-in-holdem` |
+> | `holdem-pot-odds` | `holdem-pot-odds-calculation` |
+> | `holdem-bluff-spot` | `bluffing-strategy-when-and-how` |
+> | `holdem-tournament` | 단일 글 없음 — `holdem-tournament-how-to-enter` / `-buy-in-cost` / `-vs-cash-game` / `-tax-guide`로 나뉨 |
+> | `holdem-glossary` | **미발행** (용어는 `icm-poker-meaning`·`holdem-range-meaning` 등 개별 글) |
+>
+> 나머지 5개(`hand-rankings`·`rules`·`probability`·`strategy`·`pub-guide`)는 목록 그대로 실재한다.
+> 링크 대상이 헷갈리면 추측하지 말고 `curl -sI https://www.holdemmaster.com/blog/<slug>`로 확인하라.
+
 ### E-E-A-T 원칙
 - 모든 포스트에 **실제 경험담** 필수 (AI 백과사전식 금지)
 - 클러스터는 해당 필라를 첫 번째 내부링크로 연결

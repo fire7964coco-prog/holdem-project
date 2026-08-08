@@ -26,7 +26,7 @@ export function positionAt(heroPos: number, slot: number): Position {
  *   특정 핸드를 폴드하는 게 옳은지는 **판단하지 않는다** — 그래서 폴드한 좌석은
  *   카드를 뽑지도, 보여주지도 않는다(실전에서도 머크된다).
  *   이 구분을 지켜야 잘못된 프리플랍 레인지를 가르치는 사고가 안 난다.
- * ★포지션 우위 자체는 이 사이트의 필라(/blog/holdem-position-play)가 다루는 보편 사실이다.
+ * ★포지션 우위 자체는 이 사이트의 필라(/blog/position-is-everything-in-holdem)가 다루는 보편 사실이다.
  */
 const STAY_WEIGHT: Record<Position, number> = {
   UTG: 1.0, HJ: 1.3, CO: 1.7, BTN: 2.2, SB: 1.2, BB: 2.0,
