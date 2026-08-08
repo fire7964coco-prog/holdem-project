@@ -21,6 +21,9 @@ const HUB_ROUTES = [
   "/win-rate-quiz",
   "/glossary",
   "/holdem-practice",
+  // GTO 솔버 SEO 랜딩 (2026-08-08). 도구 본체는 solver.holdemmaster.com에 따로 있고
+  // 그쪽은 noindex다 — 검색은 이 랜딩으로 일원화한다(서브도메인은 본체 도메인 권위를 못 받는다).
+  "/solver",
 ] as const;
 
 /** 하위 경로까지 셸을 쓰는 섹션 (예: /pub/gangnam, /rules/omaha) */

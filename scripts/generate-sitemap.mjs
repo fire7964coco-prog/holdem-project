@@ -47,6 +47,12 @@ const STATIC_ROUTES = [
    *   ⚠ 4주 뒤 재측정 — 포스팅 노출이 떨어지면 되돌린다(기준선: 포스팅 16 / 차트 0).
    */
   { path: "/hand-chart", priority: "0.85", changefreq: "monthly" },
+  /**
+   * ★2026-08-08 GTO 솔버 랜딩. 도구 본체(solver.holdemmaster.com)는 **noindex**이고
+   *   검색은 이 랜딩으로 일원화했다 — 서브도메인은 구글에게 별도 사이트라 본체가 쌓은
+   *   도메인 권위를 못 받는다. 반대 증거가 `/calculator`에 있다(노출 463 · 6.5위).
+   */
+  { path: "/solver", priority: "0.9", changefreq: "monthly" },
   // /hands · /rules/texas-holdem 은 noindex(app/.../page.tsx robots index:false) → 사이트맵에서 제외.
   //   ★특히 `/hands`는 풀지 말 것 — 상대가 holdem-hand-rankings(내부링크 198회, 사이트 최강 필라)라
   //   거기서의 카니발은 실제 손해다. hand-chart와 사정이 다르다.
