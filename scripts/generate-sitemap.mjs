@@ -39,8 +39,16 @@ const STATIC_ROUTES = [
    *   **원래부터 사이트맵에 없다.** 의도인지 누락인지 확인되지 않아 이번엔 건드리지 않았다.
    */
   { path: "/en/win-rate-quiz", priority: "0.7", changefreq: "monthly" },
-  // /hands · /rules/texas-holdem · /hand-chart 은 noindex(app/.../page.tsx robots index:false) → 사이트맵에서 제외.
-  //   블로그 필라(holdem-hand-rankings · holdem-starting-hand-range 등)와 키워드 카니발라이제이션 방지.
+  /**
+   * ★2026-08-08 `/hand-chart` 색인 개시 (사장님 결정) — 상세 근거는 `app/hand-chart/page.tsx` 주석.
+   *   요약: 몰아준 쪽(holdem-starting-hand-range)이 28일 노출 16·38위로 못 이겼고
+   *   희생한 차트는 0이었다. 반면 같은 성격의 `/calculator`는 노출 463·6.5위다.
+   *   ⚠ 4주 뒤 재측정 — 포스팅 노출이 떨어지면 되돌린다(기준선: 포스팅 16 / 차트 0).
+   */
+  { path: "/hand-chart", priority: "0.85", changefreq: "monthly" },
+  // /hands · /rules/texas-holdem 은 noindex(app/.../page.tsx robots index:false) → 사이트맵에서 제외.
+  //   ★특히 `/hands`는 풀지 말 것 — 상대가 holdem-hand-rankings(내부링크 198회, 사이트 최강 필라)라
+  //   거기서의 카니발은 실제 손해다. hand-chart와 사정이 다르다.
   { path: "/glossary", priority: "0.8", changefreq: "monthly" },
   { path: "/rules", priority: "0.9", changefreq: "monthly" },
   { path: "/rules/omaha", priority: "0.8", changefreq: "monthly" },
