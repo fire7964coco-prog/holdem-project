@@ -4,6 +4,15 @@
  *
  * 사용법: node scripts/psi-check.mjs <URL> [<URL> ...]   (기본 strategy=mobile)
  */
+// .env.local의 PSI_API_KEY 자동 로드 (없으면 무키 쿼터라 429가 바로 난다)
+if (!process.env.PSI_API_KEY) {
+  try {
+    const { readFileSync } = await import('node:fs');
+    const m = readFileSync(new URL('../.env.local', import.meta.url), 'utf8').match(/^PSI_API_KEY=(.*)$/m);
+    if (m) process.env.PSI_API_KEY = m[1].trim();
+  } catch {}
+}
+
 const urls = process.argv.slice(2);
 if (!urls.length) { console.error('사용법: node scripts/psi-check.mjs <URL> ...'); process.exit(1); }
 
@@ -36,8 +45,11 @@ for (const url of urls) {
     const d = await res.json();
     const le = d.loadingExperience, oe = d.originLoadingExperience, lh = d.lighthouseResult;
 
-    console.log(`\n  [실제 유저 · 이 URL]  전체판정: ${CAT[le?.overall_category] || '데이터 부족'}`);
-    console.log(`    ${fld(le?.metrics)}`);
+    // ⚠ origin_fallback=true면 이 URL의 CrUX 표본이 부족해 «사이트 전체» 값을 그대로 돌려준 것이다.
+    //   URL별 값으로 읽으면 모든 페이지가 똑같이 좋아 보이는 착시가 난다.
+    const fb = le?.origin_fallback === true;
+    console.log(`\n  [실제 유저 · 이 URL]  전체판정: ${fb ? '🚫 URL별 표본 부족 → 아래 origin 값이 대신 온 것(페이지 값 아님)' : CAT[le?.overall_category] || '데이터 부족'}`);
+    if (!fb) console.log(`    ${fld(le?.metrics)}`);
     console.log(`  [실제 유저 · 사이트 전체(origin)]  전체판정: ${CAT[oe?.overall_category] || '데이터 부족'}`);
     console.log(`    ${fld(oe?.metrics)}`);
 
