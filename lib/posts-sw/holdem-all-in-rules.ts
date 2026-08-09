@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Kwenda all-in maana yake ni kuweka dau la chipsi zote ulizonazo mbele yako. Unaweza kushinda tu kiasi ulichokilingana kutoka kwa kila mpinzani (main pot); chipsi za ziada za wale wenye stack kubwa hutengeneza side pot ambayo huwezi kuigusa. All-in ya chini ya raise kamili HAIfungui tena dau kwa wale walioshacheza.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-07-13",
+  updated: "2026-08-09",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -166,7 +166,7 @@ Ongezeko lililojumlishwa: $4 + $7 = **$11** — linafikia kizingiti cha raise ya
 |:---|:---:|:---|:---|
 | $14 (+$4) | $18 (+$4) | $8 — chini ya $10 | ❌ Hapana |
 | $14 (+$4) | $21 (+$7) | $11 — linafikia $10 | ✅ Ndiyo |
-| $15 (+$5) | $25 (+$10) | $15 — linafikia $10 | ✅ Ndiyo |
+| $15 (+$5) | $24 (+$9) | $14 — linafikia $10 | ✅ Ndiyo |
 
 </div>
 

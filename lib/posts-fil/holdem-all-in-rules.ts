@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ang all-in ay pagtaya ng lahat ng chips mo. Ang kaya mo lang panalunan ay ang na-match mo sa bawat kalaban (ang main pot). Ang sobrang taya ng mas malalaking stack ay bumubuo ng side pot na hindi mo makukuha. Ang all-in na kulang sa full raise ay HINDI nagbubukas ulit ng betting para sa mga nakakilos na.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-07-13",
+  updated: "2026-08-09",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -166,7 +166,7 @@ Combined increments: $4 + $7 = **$11** — umaabot ito sa $10 minimum raise thre
 |:---|:---:|:---|:---|
 | $14 (+$4) | $18 (+$4) | $8 — mababa sa $10 | ❌ Hindi |
 | $14 (+$4) | $21 (+$7) | $11 — umaabot sa $10 | ✅ Oo |
-| $15 (+$5) | $25 (+$10) | $15 — umaabot sa $10 | ✅ Oo |
+| $15 (+$5) | $24 (+$9) | $14 — umaabot sa $10 | ✅ Oo |
 
 </div>
 

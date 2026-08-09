@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "Hingga river Anda akan membuat one pair 43,8% waktu, two pair 23,5%, flush 3,0%, dan full house 2,6% — sementara royal flush hanya muncul sekali dalam sekitar 31.000 tangan.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-07-03",
+  updated: "2026-08-09",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "13 mnt",
   emoji: "🎲",
@@ -193,7 +194,7 @@ Beberapa angka ada terutama untuk menjelaskan malam terburuk hidup poker Anda.
 | Peluang tipis | Odds |
 |:---|:---:|
 | Dibagikan pocket aces | 1 dari 221 |
-| Nge-flop quads dengan pocket pair | 1 dari 407 |
+| Nge-flop quads dengan pocket pair | 1 dari 408 |
 | Nge-flop straight flush (suited connector) | ~1 dari 4.900 |
 | Membuat royal flush hingga river | 1 dari 30.940 |
 

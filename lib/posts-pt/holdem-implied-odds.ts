@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "Odds implícitas são as fichas extras que você espera ganhar nas próximas ruas quando o seu projeto acerta. Elas deixam você pagar com lucro um projeto que só as pot odds mandariam foldar — mas só se os stacks forem profundos e o adversário realmente for pagar você.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-07-08",
+  updated: "2026-08-09",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💰",
@@ -183,7 +184,7 @@ A. Odds implícitas são as fichas extras que você espera ganhar nas próximas 
 
 **Q. Como se calculam as odds implícitas?**
 
-A. Use: extra necessário = (seu call ÷ sua chance de acertar) − o pote atual. Pagar $50 com um flush draw que acerta 19,6% das vezes significa 50 ÷ 0,196 = $255, menos os $200 já em jogo (o pote de $150 mais seu call de $50) = cerca de $55. Se você consegue realisticamente ganhar $55 a mais quando acerta, o call é lucrativo. Note que é sempre uma estimativa, já que as apostas futuras não são garantidas.
+A. Use: extra necessário = (seu call ÷ sua chance de acertar) − (o pote atual + seu call). Pagar $50 com um flush draw que acerta 19,6% das vezes significa 50 ÷ 0,196 = $255, menos os $200 já em jogo (o pote de $150 mais seu call de $50) = cerca de $55. Se você consegue realisticamente ganhar $55 a mais quando acerta, o call é lucrativo. Note que é sempre uma estimativa, já que as apostas futuras não são garantidas.
 
 **Q. Qual é a diferença entre pot odds e odds implícitas?**
 

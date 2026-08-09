@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "All-in gehen heißt, jeden Chip zu setzen, den du hast. Du kannst von jedem Gegner nur so viel gewinnen, wie du selbst gematcht hast (den Main Pot). Zusätzliche Einsätze größerer Stacks bilden einen Side Pot, den du nicht gewinnen kannst. Ein All-in unterhalb einer vollen Erhöhung öffnet die Setzrunde für Spieler, die bereits gehandelt haben, NICHT neu.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-07-12",
+  updated: "2026-08-09",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 Min.",
@@ -166,7 +166,7 @@ Kombinierte Erhöhungsschritte: $4 + $7 = **$11** — das erreicht die Mindester
 |:---|:---:|:---|:---|
 | $14 (+$4) | $18 (+$4) | $8 — unter $10 | ❌ Nein |
 | $14 (+$4) | $21 (+$7) | $11 — erreicht $10 | ✅ Ja |
-| $15 (+$5) | $25 (+$10) | $15 — erreicht $10 | ✅ Ja |
+| $15 (+$5) | $24 (+$9) | $14 — erreicht $10 | ✅ Ja |
 
 </div>
 

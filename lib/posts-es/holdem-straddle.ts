@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Un straddle es una apuesta ciega voluntaria — normalmente el doble de la ciega grande (2× BB) — que un jugador pone antes de repartir las cartas, casi siempre desde UTG; en España se le llama 'matar la ciega'. Le compra al que lo pone la última acción y la opción de subir en preflop, doblando la apuesta de la mano. Para casi todo el mundo es una jugada -EV, y solo se permite en cash games según las reglas de la casa (casi nunca en torneos).",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-07-24",
+  updated: "2026-08-09",
   masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Un jugador en UTG poniendo una apuesta ciega extra de dos fichas delante de la ciega grande antes de que se repartan las cartas",
   tags: ["straddle", "qué es un straddle en poker", "reglas del straddle poker", "mississippi straddle", "button straddle", "sleeper straddle", "straddle es rentable", "straddle utg"],
   content: `
-La primera vez que alguien puso un straddle en mi mesa de $1/$2, no tenía ni idea de por qué el jugador en UTG soltó $4 antes de que salieran las cartas — ni de por qué el repartidor de repente empezó la acción dos asientos más allá. Durante un mes lo llamé "la apuesta del rico" hasta que aprendí lo que hace de verdad: un straddle ==dobla la apuesta y le compra a un jugador la última palabra==, todo antes de que nadie haya mirado una sola carta.
+La primera vez que alguien puso un straddle en mi mesa de $1/$2, no tenía ni idea de por qué el jugador en UTG soltó $4 antes de que salieran las cartas — ni de por qué el repartidor de repente empezó la acción un asiento más allá. Durante un mes lo llamé "la apuesta del rico" hasta que aprendí lo que hace de verdad: un straddle ==dobla la apuesta y le compra a un jugador la última palabra==, todo antes de que nadie haya mirado una sola carta.
 
 Si has visto una partida en vivo donde aparece una ciega extra de la nada, este es el término que buscas. Abajo tienes exactamente qué es un **straddle**, cada tipo con el que te vas a encontrar, quién actúa primero cuando se pone uno, y la respuesta honesta a la única pregunta que importa: ==g:¿deberías ponerlo de verdad?==
 

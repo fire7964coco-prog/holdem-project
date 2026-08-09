@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "Ein Straddle ist ein optionaler Blind-Einsatz — meist das Doppelte des Big Blinds — der gesetzt wird, bevor die Karten ausgeteilt werden. Er kauft dem Straddler die letzte Action und die Option, preflop zu raisen, und verdoppelt so den Einsatz. In fast jedem Fall ist es ein -EV-Spielzug, erlaubt nur im Cashgame nach Hausregeln.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-07-04",
+  updated: "2026-08-09",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "💰",
@@ -16,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Ein Spieler unter der Pistole setzt vor dem Austeilen einen zusätzlichen Blind-Einsatz aus zwei Chips vor den Big Blind",
   tags: ["straddle", "was ist ein straddle poker", "straddle poker regeln", "mississippi straddle", "button straddle", "sleeper straddle", "lohnt sich straddeln", "utg straddle"],
   content: `
-Als an meinem $1/$2-Tisch das erste Mal jemand gestraddelt hat, hatte ich keine Ahnung, warum der Typ unter der Pistole $4 rauswarf, bevor die Karten kamen — und warum der Dealer die Action plötzlich zwei Plätze weiter eröffnete. Ich nannte es einen Monat lang „den Reiche-Leute-Einsatz“, bevor ich lernte, was er wirklich bewirkt: Ein Straddle ==verdoppelt den Einsatz und kauft einem Spieler das letzte Wort==, alles noch bevor irgendwer auf eine Karte geschaut hat.
+Als an meinem $1/$2-Tisch das erste Mal jemand gestraddelt hat, hatte ich keine Ahnung, warum der Typ unter der Pistole $4 rauswarf, bevor die Karten kamen — und warum der Dealer die Action plötzlich einen Platz weiter eröffnete. Ich nannte es einen Monat lang „den Reiche-Leute-Einsatz“, bevor ich lernte, was er wirklich bewirkt: Ein Straddle ==verdoppelt den Einsatz und kauft einem Spieler das letzte Wort==, alles noch bevor irgendwer auf eine Karte geschaut hat.
 
 Wenn du in einem Live-Spiel schon mal gesehen hast, wie aus dem Nichts ein zusätzlicher Blind auftaucht — das ist der Begriff, den du suchst. Hier steht genau, was ein **Straddle** ist, jeder Typ, dem du begegnen wirst, wer handelt zuerst, wenn einer gesetzt wird, und die ehrliche Antwort auf die einzige Frage, die zählt: ==g:Solltest du ihn wirklich spielen?==
 

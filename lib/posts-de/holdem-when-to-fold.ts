@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "Folden ist die am meisten unterschätzte Fähigkeit im Poker — das schlechteste Ergebnis eines Folds ist null, während ein verlorener Call jedes Mal Chips verblutet. Ein solider Spieler foldet rund 75–85% seiner Hände vor dem Flop, legt nach dem Flop verfehlte Hände und schwache Draws ab, die seine Pot Odds nicht erfüllen, und — am schwersten von allem — gibt starke, aber geschlagene Hände auf, wenn die Linie eines passiven Gegners nach Value schreit. Die meisten Spieler callen nicht zu viel, weil sie Hände nicht lesen können; sie callen, weil sich die Chips im Pot bereits wie ihre eigenen anfühlen. Sind sie aber nicht.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-07-06",
+  updated: "2026-08-09",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "16 Min.",
   emoji: "🛡️",
@@ -45,7 +46,7 @@ Ein präziser Vorbehalt, weil er wichtig ist: Folden ist *nicht kostenlos.* Die 
 
 ## Wann du vor dem Flop foldest
 
-Das größte Leak im Poker ist, zu viele Hände zu spielen, also ist der größte einzelne Fix, die meisten davon zu folden. **Ein solider Tight-Aggressive-Spieler foldet ungefähr 75–85% seiner Hände preflop** — eher 75–80% in 6-max-Spielen und 80–86% in Full-Ring. Falls das extrem klingt, denk daran: Die Hände, die du behältst, sind im Schnitt stärker als die deiner Gegner — genau da kommt dein Edge her.
+Das größte Leak im Poker ist, zu viele Hände zu spielen, also ist der größte einzelne Fix, die meisten davon zu folden. **Ein solider Tight-Aggressive-Spieler foldet ungefähr 75–85% seiner Hände preflop** — eher 75–80% in 6-max-Spielen und 80–85% in Full-Ring. Falls das extrem klingt, denk daran: Die Hände, die du behältst, sind im Schnitt stärker als die deiner Gegner — genau da kommt dein Edge her.
 
 Folde preflop, wenn:
 
@@ -196,7 +197,7 @@ A. Folde immer dann, wenn Callen oder Raisen auf lange Sicht Geld verliert: wenn
 
 **Q. Wie oft sollte man preflop folden?**
 
-A. Ein solider Tight-Aggressive-Spieler foldet ungefähr 75–85% seiner Hände vor dem Flop — eher 75–80% in 6-max-Spielen und 80–86% in Full-Ring. Weniger, stärkere Hände zu spielen, ist der größte einzelne Fix für die meisten verlierenden Spieler. Wenn du weit mehr als ein Fünftel deiner Hände einsteigst, spielst du fast sicher zu viele.
+A. Ein solider Tight-Aggressive-Spieler foldet ungefähr 75–85% seiner Hände vor dem Flop — eher 75–80% in 6-max-Spielen und 80–85% in Full-Ring. Weniger, stärkere Hände zu spielen, ist der größte einzelne Fix für die meisten verlierenden Spieler. Wenn du weit mehr als ein Fünftel deiner Hände einsteigst, spielst du fast sicher zu viele.
 
 **Q. Wann sollte man eine gute Hand folden?**
 

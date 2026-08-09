@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Să dai all-in înseamnă să pariezi toate jetoanele din fața ta. De la fiecare adversar poți câștiga doar cât ai egalat (potul principal); jetoanele în plus ale stack-urilor mari formează un side pot pe care nu-l poți lua. Un all-in mai mic decât o mărire completă NU redeschide pariurile pentru cine a acționat deja.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-07-13",
+  updated: "2026-08-09",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -166,7 +166,7 @@ Incremente combinate: $4 + $7 = **$11** — atinge pragul măririi minime de $10
 |:---|:---:|:---|:---|
 | $14 (+$4) | $18 (+$4) | $8 — sub $10 | ❌ Nu |
 | $14 (+$4) | $21 (+$7) | $11 — atinge $10 | ✅ Da |
-| $15 (+$5) | $25 (+$10) | $15 — atinge $10 | ✅ Da |
+| $15 (+$5) | $24 (+$9) | $14 — atinge $10 | ✅ Da |
 
 </div>
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Para el river ligarás pareja el 43.8% de las veces, doble pareja el 23.5%, color el 3.0% y full el 2.6% — mientras que una escalera real aparece solo una vez cada 31,000 manos.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-07-24",
+  updated: "2026-08-09",
   masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "13 min",
@@ -194,7 +194,7 @@ Algunos números existen sobre todo para explicar la peor noche de tu vida como 
 | Tiro largo | Odds |
 |:---|:---:|
 | Recibir pareja de ases | 1 en 221 |
-| Ligar póker con una pareja servida | 1 en 407 |
+| Ligar póker con una pareja servida | 1 en 408 |
 | Ligar escalera de color en el flop (conectores del mismo palo) | ~1 en 4,900 |
 | Ligar una escalera real para el river | 1 en 30,940 |
 

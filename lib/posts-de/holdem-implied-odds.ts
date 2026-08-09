@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "Implied Odds sind die zusätzlichen Chips, die du auf späteren Streets zu gewinnen erwartest, wenn dein Draw ankommt. Sie erlauben dir, einen Draw profitabel zu callen, den die Pot Odds allein zum Fold verurteilen — aber nur, wenn die Stacks tief sind und dein Gegner dich wirklich auszahlt.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-07-08",
+  updated: "2026-08-09",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "💰",
@@ -183,7 +184,7 @@ A. Implied Odds sind die zusätzlichen Chips, die du auf späteren Streets zu ge
 
 **Q. Wie berechnet man Implied Odds?**
 
-A. Nutze: extra nötig = (dein Call ÷ deine Trefferquote) − der aktuelle Pot. $50 mit einem Flushdraw zu callen, der 19,6% der Zeit trifft, bedeutet 50 ÷ 0,196 = $255, minus die $200, die schon im Spiel sind (der $150-Pot plus dein $50-Call) = etwa $55. Wenn du realistisch $55 mehr gewinnen kannst, wenn du triffst, ist der Call profitabel. Beachte, dass es immer eine Schätzung ist, da zukünftige Bets nicht garantiert sind.
+A. Nutze: extra nötig = (dein Call ÷ deine Trefferquote) − (der aktuelle Pot + dein Call). $50 mit einem Flushdraw zu callen, der 19,6% der Zeit trifft, bedeutet 50 ÷ 0,196 = $255, minus die $200, die schon im Spiel sind (der $150-Pot plus dein $50-Call) = etwa $55. Wenn du realistisch $55 mehr gewinnen kannst, wenn du triffst, ist der Call profitabel. Beachte, dass es immer eine Schätzung ist, da zukünftige Bets nicht garantiert sind.
 
 **Q. Was ist der Unterschied zwischen Pot Odds und Implied Odds?**
 

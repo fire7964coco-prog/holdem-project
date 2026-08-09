@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Los empates se rompen en un orden fijo: primero el tipo de mano, luego las cartas que la forman y por último los kickers de mayor a menor. Misma pareja → gana el primer kicker más alto; cinco cartas idénticas → bote dividido. Los palos nunca deciden un empate.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-07-24",
+  updated: "2026-08-09",
   masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "12 min",
@@ -86,7 +86,7 @@ Escalera Real|Siempre empate (bote dividido)|-Sin kicker
 Escalera de Color|Solo la carta más alta|-Sin kicker
 Póker|Valor del póker → 5.ª carta|+Con kicker
 Full|Valor del trío → de la pareja|-Sin kicker
-Color|Las 5, de mayor a menor|+Con kicker
+Color|Las 5, de mayor a menor|-Sin kicker
 Escalera|Solo la carta más alta|-Sin kicker
 Trío|Valor del trío → 2 kickers|+Con kicker
 Doble Pareja|Pareja alta → baja → kicker|+Con kicker

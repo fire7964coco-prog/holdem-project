@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Andare all-in significa puntare tutte le fiches che hai davanti. Da ogni avversario puoi vincere solo quello che hai pareggiato (il piatto principale); le fiches in più degli stack più grandi formano un side pot che non puoi toccare. Un all-in inferiore a un rilancio completo NON riapre le puntate per chi ha già agito.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-07-13",
+  updated: "2026-08-09",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -166,7 +166,7 @@ Incrementi combinati: $4 + $7 = **$11** — raggiunge la soglia del rilancio min
 |:---|:---:|:---|:---|
 | $14 (+$4) | $18 (+$4) | $8 — sotto i $10 | ❌ No |
 | $14 (+$4) | $21 (+$7) | $11 — raggiunge i $10 | ✅ Sì |
-| $15 (+$5) | $25 (+$10) | $15 — raggiunge i $10 | ✅ Sì |
+| $15 (+$5) | $24 (+$9) | $14 — raggiunge i $10 | ✅ Sì |
 
 </div>
 

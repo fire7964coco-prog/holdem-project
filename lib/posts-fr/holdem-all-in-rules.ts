@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Faire tapis, c'est miser tous les jetons que tu as devant toi. Tu ne peux gagner de chaque adversaire que ce que tu as suivi (le pot principal) ; les jetons en trop des gros tapis forment un side pot auquel tu n'as pas droit. Un tapis inférieur à une relance complète NE rouvre PAS les enchères pour ceux qui ont déjà parlé.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-07-13",
+  updated: "2026-08-09",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -166,7 +166,7 @@ Incréments combinés : $4 + $7 = **$11** — ça atteint le seuil de relance mi
 |:---|:---:|:---|:---|
 | $14 (+$4) | $18 (+$4) | $8 — en dessous de $10 | ❌ Non |
 | $14 (+$4) | $21 (+$7) | $11 — atteint les $10 | ✅ Oui |
-| $15 (+$5) | $25 (+$10) | $15 — atteint les $10 | ✅ Oui |
+| $15 (+$5) | $24 (+$9) | $14 — atteint les $10 | ✅ Oui |
 
 </div>
 

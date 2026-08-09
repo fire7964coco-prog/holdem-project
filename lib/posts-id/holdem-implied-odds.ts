@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "Implied odds adalah chip tambahan yang Anda harapkan menang di street berikutnya saat draw Anda jadi. Ia membuat Anda bisa call sebuah draw yang menurut pot odds saja harus di-fold — tapi hanya jika stack dalam dan lawan benar-benar akan membayar Anda.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-07-08",
+  updated: "2026-08-09",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "11 mnt",
   emoji: "💰",
@@ -183,7 +184,7 @@ A. Implied odds adalah chip tambahan yang Anda harapkan menang di street berikut
 
 **Q. Bagaimana cara menghitung implied odds?**
 
-A. Pakai: ekstra dibutuhkan = (call Anda ÷ peluang jadi Anda) − pot saat ini. Meng-call $50 dengan flush draw yang jadi 19,6% dari waktu berarti 50 ÷ 0,196 = $255, dikurangi $200 yang sudah bermain (pot $150 plus call $50 Anda) = sekitar $55. Jika Anda realistis bisa menang $55 lebih saat Anda jadi, call-nya menguntungkan. Perhatikan bahwa ini selalu perkiraan, karena taruhan masa depan tak terjamin.
+A. Pakai: ekstra dibutuhkan = (call Anda ÷ peluang jadi Anda) − (pot saat ini + call Anda). Meng-call $50 dengan flush draw yang jadi 19,6% dari waktu berarti 50 ÷ 0,196 = $255, dikurangi $200 yang sudah bermain (pot $150 plus call $50 Anda) = sekitar $55. Jika Anda realistis bisa menang $55 lebih saat Anda jadi, call-nya menguntungkan. Perhatikan bahwa ini selalu perkiraan, karena taruhan masa depan tak terjamin.
 
 **Q. Apa perbedaan antara pot odds dan implied odds?**
 

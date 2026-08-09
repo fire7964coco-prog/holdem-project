@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Peringkat tangan poker dari terkuat ke terlemah adalah: Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, Pair, dan High Card.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-06-09",
+  updated: "2026-08-09",
   keepImagesInBody: true,
   readTime: "14 mnt",
   emoji: "🃏",
@@ -176,7 +176,7 @@ Royal Flush|Selalu seri (pot dibagi)|-Tanpa kicker
 Straight Flush|Hanya kartu tertinggi|-Tanpa kicker
 Four of a Kind|Nilai quad → kartu ke-5|+Pakai kicker
 Full House|Nilai trio → pasangan|-Tanpa kicker
-Flush|Kelimanya, tinggi ke rendah|+Pakai kicker
+Flush|Kelimanya, tinggi ke rendah|-Tanpa kicker
 Straight|Hanya kartu tertinggi|-Tanpa kicker
 Three of a Kind|Nilai trio → 2 kicker|+Pakai kicker
 Two Pair|Pasangan tinggi → rendah → kicker|+Pakai kicker

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "straddle 就是发牌前主动补的一个盲注——通常是大盲的 2 倍。它替抓的人买下翻前最后行动权和加注权，把赌注翻倍。绝大多数情况下这是一个 -EV 的打法，而且只在现金局、按房规允许时才能抓。",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-07-24",
+  updated: "2026-08-09",
   masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "10 分钟",
@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "枪口位的牌手在大盲前面补下两枚筹码的额外盲注，此时牌还没发",
   tags: ["straddle", "什么是 straddle", "德州扑克 straddle 规则", "mississippi straddle", "button straddle", "sleeper straddle", "抓 straddle 赚钱吗", "utg straddle"],
   content: `
-第一次在我那张 $1/$2 的桌子上有人抓 straddle 时，我完全不明白枪口位那哥们儿为什么牌还没来就先扔出 $4——也不懂发牌员怎么突然把行动往后挪了两个座位开始。我管它叫「有钱人下的注」叫了差不多一个月，才搞清楚它到底干了什么：一次 straddle ==把赌注翻倍，还替一个人买下了最后说话的权利==，这一切都发生在谁都还没看牌之前。
+第一次在我那张 $1/$2 的桌子上有人抓 straddle 时，我完全不明白枪口位那哥们儿为什么牌还没来就先扔出 $4——也不懂发牌员怎么突然把行动往后挪了一个座位开始。我管它叫「有钱人下的注」叫了差不多一个月，才搞清楚它到底干了什么：一次 straddle ==把赌注翻倍，还替一个人买下了最后说话的权利==，这一切都发生在谁都还没看牌之前。
 
 如果你在现场局见过凭空多出来一个盲注，你要找的就是这个词。straddle 属于强制盲注这一家族——想先把整套黑话过一遍，看[术语大全](/zh/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp")；本文只对 straddle 这一个词做单点深挖。它也是整个扑克术语大全里最容易被误解的词条之一，所以我们把它彻底讲清楚。下面讲清楚 **straddle（抓头注）** 到底是什么、你会碰到的每一种、有人抓了之后谁先说话，以及那个唯一要紧的问题的老实答案：==g:你到底该不该抓？==
 

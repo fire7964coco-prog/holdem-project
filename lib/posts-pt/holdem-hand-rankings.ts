@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "O ranking de mãos de pôquer, da melhor à pior, é: Royal Flush, Straight Flush, Quadra, Full House, Flush, Sequência, Trinca, Dois Pares, Par e Carta Alta.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-06-09",
+  updated: "2026-08-09",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🃏",
@@ -176,7 +176,7 @@ Royal Flush|Sempre empate (pote dividido)|-Sem kicker
 Straight Flush|Só a carta mais alta|-Sem kicker
 Quadra|Valor da quadra → 5ª carta|+Com kicker
 Full House|Valor da trinca → do par|-Sem kicker
-Flush|As 5, da maior à menor|+Com kicker
+Flush|As 5, da maior à menor|-Sem kicker
 Sequência|Só a carta mais alta|-Sem kicker
 Trinca|Valor da trinca → 2 kickers|+Com kicker
 Dois Pares|Par alto → baixo → kicker|+Com kicker

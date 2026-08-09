@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "Fold adalah skill paling diremehkan di poker — hasil terburuk sebuah fold adalah nol, sementara call yang kalah menguras chip setiap kali. Pemain solid fold sekitar 75–85% tangan sebelum flop, melepas tangan yang meleset dan draw lemah yang tak memenuhi pot odds mereka setelahnya, dan — yang paling sulit — melepas tangan kuat-tapi-kalah saat line lawan pasif jelas menunjukkan value. Kebanyakan pemain tidak call terlalu banyak karena tak bisa membaca tangan; mereka call karena chip yang sudah ada di pot terasa milik mereka. Padahal bukan.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-07-06",
+  updated: "2026-08-09",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "16 mnt",
   emoji: "🛡️",
@@ -45,7 +46,7 @@ Satu catatan penting, karena ini krusial: fold *tidaklah gratis.* Chip yang suda
 
 ## Kapan Fold Sebelum Flop
 
-Kebocoran terbesar di poker adalah memainkan terlalu banyak tangan, jadi perbaikan tunggal terbesar adalah fold sebagian besar dari mereka. **Pemain tight-aggressive yang solid fold kira-kira 75–85% tangan mereka preflop** — mendekati 75–80% di permainan 6-max, dan 80–86% di full-ring. Jika itu terdengar ekstrem, ingat: tangan yang Anda simpan rata-rata lebih kuat daripada lawan Anda, dan di situlah edge Anda berasal.
+Kebocoran terbesar di poker adalah memainkan terlalu banyak tangan, jadi perbaikan tunggal terbesar adalah fold sebagian besar dari mereka. **Pemain tight-aggressive yang solid fold kira-kira 75–85% tangan mereka preflop** — mendekati 75–80% di permainan 6-max, dan 80–85% di full-ring. Jika itu terdengar ekstrem, ingat: tangan yang Anda simpan rata-rata lebih kuat daripada lawan Anda, dan di situlah edge Anda berasal.
 
 Fold preflop saat:
 
@@ -196,7 +197,7 @@ A. Fold kapan pun call atau raise kehilangan uang dalam jangka panjang: saat tan
 
 **Q. Seberapa sering Anda harus fold preflop?**
 
-A. Pemain tight-aggressive yang solid fold kira-kira 75–85% tangan mereka sebelum flop — mendekati 75–80% di permainan 6-max dan 80–86% di full-ring. Memainkan lebih sedikit tangan yang lebih kuat adalah perbaikan terbesar bagi kebanyakan pemain yang kalah. Jika Anda masuk jauh lebih dari seperlima tangan Anda, Anda hampir pasti memainkan terlalu banyak.
+A. Pemain tight-aggressive yang solid fold kira-kira 75–85% tangan mereka sebelum flop — mendekati 75–80% di permainan 6-max dan 80–85% di full-ring. Memainkan lebih sedikit tangan yang lebih kuat adalah perbaikan terbesar bagi kebanyakan pemain yang kalah. Jika Anda masuk jauh lebih dari seperlima tangan Anda, Anda hampir pasti memainkan terlalu banyak.
 
 **Q. Kapan Anda harus fold tangan bagus?**
 

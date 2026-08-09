@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "All-in nghĩa là cược toàn bộ chip bạn đang có. Bạn chỉ thắng được từ mỗi đối thủ đúng phần mình đã theo kịp (pot chính). Phần cược dư của những stack lớn hơn tạo thành pot phụ (side pot) mà bạn không được đụng tới. Một cú all-in nhỏ hơn một nước tố đủ mức KHÔNG mở lại vòng cược cho những người đã hành động.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-07-13",
+  updated: "2026-08-09",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 phút",
@@ -166,7 +166,7 @@ Tổng phần tăng: $4 + $7 = **$11** — chạm ngưỡng tố tối thiểu $
 |:---|:---:|:---|:---|
 | $14 (+$4) | $18 (+$4) | $8 — dưới $10 | ❌ Không |
 | $14 (+$4) | $21 (+$7) | $11 — chạm $10 | ✅ Có |
-| $15 (+$5) | $25 (+$10) | $15 — chạm $10 | ✅ Có |
+| $15 (+$5) | $24 (+$9) | $14 — chạm $10 | ✅ Có |
 
 </div>
 

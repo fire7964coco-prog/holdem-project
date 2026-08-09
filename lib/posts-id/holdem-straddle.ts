@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "Straddle adalah taruhan blind opsional — biasanya dua kali big blind — yang dipasang sebelum kartu dibagi. Ia membeli aksi terakhir bagi si straddler dan opsi untuk raise preflop, menggandakan taruhan. Dalam hampir semua kasus ini adalah play -EV, hanya diizinkan di cash game sesuai aturan rumah.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-07-04",
+  updated: "2026-08-09",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "💰",
@@ -16,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Seorang pemain under-the-gun memasang taruhan blind ekstra dua chip di depan big blind sebelum kartu dibagi",
   tags: ["straddle", "apa itu straddle di poker", "aturan straddle poker", "mississippi straddle", "button straddle", "sleeper straddle", "apakah straddle profit", "utg straddle"],
   content: `
-Pertama kali seseorang straddle di meja $1/$2 saya, saya tak tahu kenapa orang di under the gun melempar $4 sebelum kartu keluar — dan kenapa dealer tiba-tiba memulai aksi dua kursi lebih jauh. Saya menyebutnya "taruhan orang kaya" selama sekitar sebulan sebelum akhirnya paham apa fungsinya: sebuah straddle ==menggandakan taruhan dan membeli satu pemain hak bicara terakhir==, semua sebelum siapa pun melihat kartu.
+Pertama kali seseorang straddle di meja $1/$2 saya, saya tak tahu kenapa orang di under the gun melempar $4 sebelum kartu keluar — dan kenapa dealer tiba-tiba memulai aksi satu kursi lebih jauh. Saya menyebutnya "taruhan orang kaya" selama sekitar sebulan sebelum akhirnya paham apa fungsinya: sebuah straddle ==menggandakan taruhan dan membeli satu pemain hak bicara terakhir==, semua sebelum siapa pun melihat kartu.
 
 Jika Anda pernah melihat game live di mana sebuah blind ekstra muncul entah dari mana, inilah istilah yang Anda cari. Di bawah ini persisnya apa itu **straddle**, setiap jenis yang akan Anda temui, siapa yang beraksi lebih dulu saat satu dipasang, dan jawaban jujur atas satu-satunya pertanyaan yang penting: ==g:apakah Anda benar-benar harus melakukannya?==
 

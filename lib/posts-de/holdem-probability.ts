@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "Bis zum River triffst du ein Paar in 43,8% der Fälle, zwei Paare in 23,5%, einen Flush in 3,0% und ein Full House in 2,6% — während ein Royal Flush nur etwa einmal in 31.000 Händen auftaucht.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-07-03",
+  updated: "2026-08-09",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "13 Min.",
   emoji: "🎲",
@@ -193,7 +194,7 @@ Manche Zahlen existieren vor allem, um die schlimmste Nacht deines Pokerlebens z
 | Long Shot | Odds |
 |:---|:---:|
 | Pocket-Asse ausgeteilt bekommen | 1 zu 221 |
-| Quads mit einem Pocket-Paar floppen | 1 zu 407 |
+| Quads mit einem Pocket-Paar floppen | 1 zu 408 |
 | Einen Straight Flush floppen (Suited Connectors) | ~1 zu 4.900 |
 | Einen Royal Flush bis zum River treffen | 1 zu 30.940 |
 

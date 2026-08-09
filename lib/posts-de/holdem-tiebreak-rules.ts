@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "Ties werden in fester Reihenfolge entschieden: zuerst der Handrang, dann die Karten, die die Hand bilden, dann die Kicker von hoch nach niedrig. Gleiches Paar → der höhere erste Kicker gewinnt; identische fünf Karten → geteilter Pot. Farben entscheiden einen Tie niemals.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-07-11",
+  updated: "2026-08-09",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "⚖️",
@@ -85,7 +86,7 @@ Royal Flush|Immer ein Tie (geteilter Pot)|-Kein Kicker
 Straight Flush|Nur die höchste Karte|-Kein Kicker
 Vierling|Vierling-Rang → 5. Karte|+Kicker
 Full House|Drilling-Rang → Paar-Rang|-Kein Kicker
-Flush|Alle 5 vergleichen, hoch nach niedrig|+Kicker
+Flush|Alle 5 vergleichen, hoch nach niedrig|-Kein Kicker
 Straße|Nur die höchste Karte|-Kein Kicker
 Drilling|Drilling-Rang → 2 Kicker|+Kicker
 Zwei Paare|Hohes Paar → tiefes Paar → Kicker|+Kicker

@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "Até o river você faz um par 43,8% das vezes, dois pares 23,5%, um flush 3,0% e um full house 2,6% — enquanto um royal flush aparece só uma vez a cada 31.000 mãos.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-07-03",
+  updated: "2026-08-09",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🎲",
@@ -193,7 +194,7 @@ Alguns números existem principalmente para explicar a pior noite da sua vida no
 | Improvável | Odds |
 |:---|:---:|
 | Receber um par de ases na mão | 1 em 221 |
-| Flopar quadra com um par na mão | 1 em 407 |
+| Flopar quadra com um par na mão | 1 em 408 |
 | Flopar um straight flush (conectores do mesmo naipe) | ~1 em 4.900 |
 | Fazer um royal flush até o river | 1 em 30.940 |
 

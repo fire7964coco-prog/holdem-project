@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Thứ hạng các tay bài poker từ mạnh nhất đến yếu nhất là: Thùng Phá Sảnh Hoàng Gia, Thùng Phá Sảnh, Tứ Quý, Cù Lũ, Thùng, Sảnh, Sám Cô, Hai Đôi, Một Đôi, và Mậu Thầu.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-06-09",
+  updated: "2026-08-09",
   keepImagesInBody: true,
   readTime: "14 phút",
   emoji: "🃏",
@@ -176,7 +176,7 @@ Thùng Phá Sảnh Hoàng Gia|Luôn hòa (chia pot)|-Không kicker
 Thùng Phá Sảnh|Chỉ lá cao nhất|-Không kicker
 Tứ Quý|Giá trị tứ quý → lá thứ 5|+Dùng kicker
 Cù Lũ|Giá trị sám → đôi|-Không kicker
-Thùng|Cả 5 lá, cao xuống thấp|+Dùng kicker
+Thùng|Cả 5 lá, cao xuống thấp|-Không kicker
 Sảnh|Chỉ lá cao nhất|-Không kicker
 Sám Cô|Giá trị sám → 2 kicker|+Dùng kicker
 Hai Đôi|Đôi cao → đôi thấp → kicker|+Dùng kicker

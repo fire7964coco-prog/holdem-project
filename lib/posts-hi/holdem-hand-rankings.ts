@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "सबसे मज़बूत से सबसे कमज़ोर तक पोकर हैंड रैंकिंग है: Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, Pair, और High Card।",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-06-09",
+  updated: "2026-08-09",
   keepImagesInBody: true,
   readTime: "14 मिनट",
   emoji: "🃏",
@@ -176,7 +176,7 @@ Royal Flush|हमेशा टाई (पॉट बँटता है)|-को
 Straight Flush|केवल सबसे ऊँचा कार्ड|-कोई kicker नहीं
 Four of a Kind|quad का मान → 5वाँ कार्ड|+kicker लागू
 Full House|trio का मान → pair का|-कोई kicker नहीं
-Flush|पाँचों, ऊँचे से नीचे|+kicker लागू
+Flush|पाँचों, ऊँचे से नीचे|-कोई kicker नहीं
 Straight|केवल सबसे ऊँचा कार्ड|-कोई kicker नहीं
 Three of a Kind|trio का मान → 2 kicker|+kicker लागू
 Two Pair|ऊँची जोड़ी → नीची → kicker|+kicker लागू

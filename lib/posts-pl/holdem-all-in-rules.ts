@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "All-in to postawienie wszystkich żetonów, jakie masz przed sobą. Od każdego rywala możesz wygrać tylko tyle, ile wyrównałeś (główna pula) — nadwyżka od większych stacków tworzy pulę boczną, której nie tkniesz. All-in mniejszy niż pełne przebicie NIE otwiera na nowo licytacji dla graczy, którzy już zagrali.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-07-13",
+  updated: "2026-08-09",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -166,7 +166,7 @@ To oficjalna reguła TDA o ponownym otwarciu licytacji ("re-opening the bet") i 
 |:---|:---:|:---|:---|
 | $14 (+$4) | $18 (+$4) | $8 — poniżej $10 | ❌ Nie |
 | $14 (+$4) | $21 (+$7) | $11 — osiąga $10 | ✅ Tak |
-| $15 (+$5) | $25 (+$10) | $15 — osiąga $10 | ✅ Tak |
+| $15 (+$5) | $24 (+$9) | $14 — osiąga $10 | ✅ Tak |
 
 </div>
 

@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "O straddle é uma aposta de blind opcional — normalmente o dobro do big blind — postada antes de as cartas serem repartidas. Ela compra pro straddler a última ação e a opção de aumentar no pré-flop, dobrando as paradas. Em quase todo caso é uma jogada -EV, permitida só em cash games conforme as regras da casa.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-07-04",
+  updated: "2026-08-09",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "💰",
@@ -16,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Um jogador under the gun postando uma aposta de blind extra de duas fichas na frente do big blind antes de as cartas serem repartidas",
   tags: ["straddle", "o que é straddle no poker", "regras do straddle no poker", "mississippi straddle", "button straddle", "sleeper straddle", "straddle dá lucro", "utg straddle"],
   content: `
-Na primeira vez que alguém deu um straddle na minha mesa de $1/$2, eu não fazia ideia de por que o cara under the gun jogou $4 antes de as cartas virem — e por que o dealer de repente começou a action duas cadeiras adiante. Chamei aquilo de "a aposta do rico" por uns bons trinta dias antes de aprender o que ela realmente faz: um straddle ==dobra as paradas e compra pra um jogador a última palavra==, tudo antes de qualquer um ter olhado uma carta.
+Na primeira vez que alguém deu um straddle na minha mesa de $1/$2, eu não fazia ideia de por que o cara under the gun jogou $4 antes de as cartas virem — e por que o dealer de repente começou a action uma cadeira adiante. Chamei aquilo de "a aposta do rico" por uns bons trinta dias antes de aprender o que ela realmente faz: um straddle ==dobra as paradas e compra pra um jogador a última palavra==, tudo antes de qualquer um ter olhado uma carta.
 
 Se você já viu um jogo ao vivo em que um blind extra aparece do nada, é esse o termo que você procura. Abaixo está exatamente o que é um **straddle**, cada tipo que você vai encontrar, quem age primeiro quando ele é postado, e a resposta honesta pra única pergunta que importa: ==g:você deveria mesmo fazer isso?==
 

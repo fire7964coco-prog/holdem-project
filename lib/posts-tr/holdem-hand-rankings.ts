@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Poker el sıralaması en güçlüden en zayıfa şöyledir: Royal Flush, Straight Flush, Four of a Kind (Kare), Full House, Flush, Straight (Kent), Three of a Kind (Üçlü), Two Pair (İki Çift), Pair (Çift) ve High Card (Yüksek Kart).",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-06-09",
+  updated: "2026-08-09",
   keepImagesInBody: true,
   readTime: "14 dk",
   emoji: "🃏",
@@ -176,7 +176,7 @@ Royal Flush|Her zaman beraberlik (pot bölünür)|-Kicker yok
 Straight Flush|Yalnızca en yüksek kart|-Kicker yok
 Kare|Karenin değeri → 5. kart|+Kicker geçerli
 Full House|Üçlünün değeri → çiftin|-Kicker yok
-Flush|Beşi de, yüksekten düşüğe|+Kicker geçerli
+Flush|Beşi de, yüksekten düşüğe|-Kicker yok
 Kent|Yalnızca en yüksek kart|-Kicker yok
 Üçlü|Üçlünün değeri → 2 kicker|+Kicker geçerli
 İki Çift|Yüksek çift → düşük → kicker|+Kicker geçerli

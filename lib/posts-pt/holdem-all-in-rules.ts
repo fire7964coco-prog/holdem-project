@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ir de all-in é apostar todas as fichas que você tem. Você só pode ganhar de cada adversário o valor que igualou (o pote principal). O que os stacks maiores apostam além disso vira um pote paralelo (side pot) que você não pode ganhar. Um all-in menor que um aumento completo NÃO reabre a aposta para quem já agiu.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-07-12",
+  updated: "2026-08-09",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -166,7 +166,7 @@ Incrementos combinados: $4 + $7 = **$11** — atinge o mínimo de aumento de $10
 |:---|:---:|:---|:---|
 | $14 (+$4) | $18 (+$4) | $8 — abaixo de $10 | ❌ Não |
 | $14 (+$4) | $21 (+$7) | $11 — atinge $10 | ✅ Sim |
-| $15 (+$5) | $25 (+$10) | $15 — atinge $10 | ✅ Sim |
+| $15 (+$5) | $24 (+$9) | $14 — atinge $10 | ✅ Sim |
 
 </div>
 

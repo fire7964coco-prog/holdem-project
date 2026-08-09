@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "Foldar é a habilidade mais subestimada do pôquer — o pior resultado de um fold é zero, enquanto um call perdedor sangra fichas toda vez. Um bom jogador folda cerca de 75–85% das mãos antes do flop, larga mãos que erraram e projetos fracos que não batem suas pot odds depois dele e — o mais difícil de tudo — abre mão de mãos fortes mas derrotadas quando a linha de um adversário passivo grita valor. A maioria não paga demais porque não sabe ler mãos; paga porque as fichas que já estão no pote parecem suas. Não são.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-07-06",
+  updated: "2026-08-09",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🛡️",
@@ -45,7 +46,7 @@ Uma ressalva precisa, porque importa: foldar *não é de graça.* As fichas que 
 
 ## Quando foldar antes do flop
 
-O maior vazamento do pôquer é jogar mãos demais, então a maior correção individual é foldar a maioria delas. **Um bom jogador tight-aggressive folda cerca de 75–85% das mãos no pré-flop** — mais perto de 75–80% em jogos 6-max e 80–86% em full-ring. Se isso soa extremo, lembre: as mãos que você mantém são, em média, mais fortes que as dos adversários, e é daí que vem sua vantagem.
+O maior vazamento do pôquer é jogar mãos demais, então a maior correção individual é foldar a maioria delas. **Um bom jogador tight-aggressive folda cerca de 75–85% das mãos no pré-flop** — mais perto de 75–80% em jogos 6-max e 80–85% em full-ring. Se isso soa extremo, lembre: as mãos que você mantém são, em média, mais fortes que as dos adversários, e é daí que vem sua vantagem.
 
 Folde no pré-flop quando:
 
@@ -196,7 +197,7 @@ A. Folde sempre que pagar ou aumentar perde dinheiro no longo prazo: quando sua 
 
 **Q. Com que frequência você deve foldar no pré-flop?**
 
-A. Um bom jogador tight-aggressive folda cerca de 75–85% das mãos antes do flop — mais perto de 75–80% em jogos 6-max e 80–86% em full-ring. Jogar menos mãos, mais fortes, é a maior correção individual para a maioria dos jogadores perdedores. Se você está entrando em bem mais de um quinto das mãos, quase certamente está jogando demais.
+A. Um bom jogador tight-aggressive folda cerca de 75–85% das mãos antes do flop — mais perto de 75–80% em jogos 6-max e 80–85% em full-ring. Jogar menos mãos, mais fortes, é a maior correção individual para a maioria dos jogadores perdedores. Se você está entrando em bem mais de um quinto das mãos, quase certamente está jogando demais.
 
 **Q. Quando você deve foldar uma boa mão?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Die Reihenfolge der Pokerhände von der besten zur schlechtesten lautet: Royal Flush, Straight Flush, Vierling, Full House, Flush, Straße, Drilling, Zwei Paare, Paar und High Card.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-07-03",
+  updated: "2026-08-09",
   keepImagesInBody: true,
   readTime: "14 Min.",
   emoji: "🃏",
@@ -182,7 +182,7 @@ Royal Flush|Immer Gleichstand (Split)|-Kein Kicker
 Straight Flush|Nur die höchste Karte|-Kein Kicker
 Vierling|Wert des Vierlings → 5. Karte|+Kicker zählt
 Full House|Wert des Drillings → des Paars|-Kein Kicker
-Flush|Alle 5, von hoch nach niedrig|+Kicker zählt
+Flush|Alle 5, von hoch nach niedrig|-Kein Kicker
 Straße|Nur die höchste Karte|-Kein Kicker
 Drilling|Wert des Drillings → 2 Kicker|+Kicker zählt
 Zwei Paare|Höheres → niedrigeres Paar → Kicker|+Kicker zählt

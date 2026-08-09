@@ -437,22 +437,23 @@ const ROW_LABEL_RE = /^[|\s*]*(홀카드|핸드|패|hand)/i;
  *   - 맨 "pair"는 KO와 같은 이유로 뺀다(two pair·구성 설명 오독)
  */
 const HAND_ALIASES = [
-  ['로열 플러시', /로열\s*(스트레이트\s*)?플러시|\broyal\s+flush\b|ロイヤル(ストレート)?フラッシュ|皇家同花[顺順]|\bescalera\s+real\b/i],
-  ['스트레이트 플러시', /스트레이트\s*플러시|스트플|스티플|\bstraight\s+flush\b|ストレートフラッシュ|同花[顺順]|\bescalera\s+de\s+color\b/i],
-  ['포카드', /포카드|포 ?카드|쿼드|포 ?오브 ?어 ?카인드|\bfour\s+of\s+a\s+kind\b|\bquads?\b|フォーカード|クワッズ|四[条條]|\bvierling\b|\bquadra\b/i],
-  ['풀하우스', /풀\s*하우스|풀하우스|보트|\bfull\s+house\b|\bfull\s+boat\b|フルハウス|葫[芦蘆]/i],
-  // ⚠ 中文 "同花色"는 "같은 무늬"라는 뜻이지 플러시가 아니다 → 뒤에 "色"이 오면 제외.
+  ['로열 플러시', /로열\s*(스트레이트\s*)?플러시|\broyal\s+flush\b|ロイヤル(ストレート)?フラッシュ|皇家同花[顺順]|\bescalera\s+real\b|\bquinte\s+flush\s+royale\b/i],
+  ['스트레이트 플러시', /스트레이트\s*플러시|스트플|스티플|\bstraight\s+flush\b|ストレートフラッシュ|同花[顺順]|\bescalera\s+de\s+color\b|\bquinte\s+flush\b/i],
+  ['포카드', /포카드|포 ?카드|쿼드|포 ?오브 ?어 ?카인드|\bfour\s+of\s+a\s+kind\b|\bquads?\b|フォーカード|クワッズ|四[条條]|\bvierling\b|\bquadra\b|\bcarr[ée]\b/i],
+  // ⚠ fr "full"은 단독으로도 풀하우스지만 "full ring"(9~10인 테이블)과 겹친다 → ring만 제외한다.
+  ['풀하우스', /풀\s*하우스|풀하우스|보트|\bfull\s+house\b|\bfull\s+boat\b|フルハウス|葫[芦蘆]|\bfull\b(?![\s-]*ring)/i],
   // ⚠ 中文 "同花色"는 "같은 무늬"라는 뜻이지 플러시가 아니다 → 뒤에 "色"이 오면 제외.
   // ⚠ es "color"가 곧 flush다(용어파일의 ★★TRAMPAS). 스페인어 글은 무늬를 "palo"라 쓰므로 충돌이 적다.
-  ['플러시', /플러시|\bflush\b|フラッシュ|同花(?!色)|\bcolor(?:es)?\b/i],
+  // ⚠ fr "couleur"도 flush지만 «무늬» 자체를 뜻하기도 한다 → "même couleur"(같은 무늬)는 제외한다.
+  ['플러시', /플러시|\bflush\b|フラッシュ|同花(?!色)|\bcolor(?:es)?\b|(?<!m[êe]me\s)\bcouleurs?\b/i],
   // ⚠ pt "sequência"는 뺐다 — "sem importar a sequência"(순서 상관없이)처럼 일반 명사로 더 자주 쓴다.
   //   같은 이유로 es "orden", de "Reihenfolge"도 넣지 않는다.
-  ['스트레이트', /스트레이트|양차|백도어 ?스트|\bstraight\b|ストレート|[顺順]子|\bescalera\b|\bstra[ßs]e\b/i],
-  ['트리플', /트리플|트립스|쓰리\s*카드|셋(?=[\s)*.,·]|$)|\bthree\s+of\s+a\s+kind\b|\btrips\b|スリーカード|トリップス|三[条條]|\bdrilling\b|\btrinca\b|\btr[íi]o\b/i],
-  ['투페어', /투\s*페어|투페어|\btwo\s+pair\b|ツーペア|[两兩][对對]|\bzwei\s+paare\b|\bdois\s+pares\b|\bdoble\s+pareja\b/i],
+  ['스트레이트', /스트레이트|양차|백도어 ?스트|\bstraight\b|ストレート|[顺順]子|\bescalera\b|\bstra[ßs]e\b|\bquintes?\b/i],
+  ['트리플', /트리플|트립스|쓰리\s*카드|셋(?=[\s)*.,·]|$)|\bthree\s+of\s+a\s+kind\b|\btrips\b|スリーカード|トリップス|三[条條]|\bdrilling\b|\btrinca\b|\btr[íi]o\b|\bbrelan\b/i],
+  ['투페어', /투\s*페어|투페어|\btwo\s+pair\b|ツーペア|[两兩][对對]|\bzwei\s+paare\b|\bdois\s+pares\b|\bdoble\s+pareja\b|\bdouble\s+paire\b/i],
   // 맨 "페어"/"pair"/"par"/"Paar"는 뺀다 — "페어 2쌍"(=투페어) · "트리플 + 페어"(=풀하우스 구성 설명)를 원페어로 오독한다.
   ['원페어', /원\s*페어|오버\s*페어|탑\s*페어|바텀\s*페어|미들\s*페어|포켓\s*페어|\b(one|top|over|bottom|middle|pocket)\s*-?\s*pair\b|ワンペア|オーバーペア|トップペア|ポケットペア|一[对對]/i],
-  ['하이카드', /하이\s*카드|\bhigh\s+card\b|ハイカード|ノーペア|高牌|\bcarta\s+alta\b|\bh[öo]chste\s+karte\b/i],
+  ['하이카드', /하이\s*카드|\bhigh\s+card\b|ハイカード|ノーペア|高牌|\bcarta\s+alta\b|\bh[öo]chste\s+karte\b|\bcarte\s+haute\b/i],
 ];
 
 function tokenizeCards(text) {
@@ -660,7 +661,8 @@ function auditHandsIn(post, PE) {
       // "uma trinca mais um par" · "three of a kind plus sepasang" (전부 풀하우스의 부품 나열).
       // 맨 "pair/pareja/par/paar"를 별칭에서 뺐기 때문에 위 가드에 안 걸려 여기서 따로 거른다.
       // ⚠ id "sepasang"은 se+pasang = "a pair" 자체다 — 수식어가 아니라 명사 쪽에 둔다.
-      if (/(plus|und|and|with|más|mas|mais|\+|と|加)\s*(a|an|one|two|un|una|uma|um|dois|ein(e|em|en)?)?\s*(sepasang|pair|pareja|pares|par|pasang|paare?|ペア|[对對])\b/i.test(ln)) continue;
+      // 2026-08-09 추가: ms "bersama sepasang" · hi "और एक pair" (연결어가 라틴어가 아니라 안 걸렸다).
+      if (/(plus|und|and|with|más|mas|mais|bersama|dengan|और|\+|と|加)\s*(a|an|one|two|un|una|uma|um|dois|एक|ein(e|em|en)?)?\s*(sepasang|pair|pareja|pares|par|pasang|paare?|ペア|[对對])\b/i.test(ln)) continue;
       stat.fiveCard++;
       h5Lines.add(i + 1);
       const ids = runs[0].map((t) => t.id);
@@ -1208,6 +1210,18 @@ if (argv.includes('--selftest')) {
     ['구성 설명 — pt "uma trinca mais um par" (오탐 금지)', false, '**Q♠ Q♥ Q♦ 5♣ 5♠** — uma trinca mais um par.'],
     ['구성 설명 — id "three of a kind plus sepasang" (오탐 금지)', false, '**Q♠ Q♥ Q♦ 5♣ 5♠** — three of a kind plus sepasang.'],
     ['구성 설명 — de "ein Drilling plus ein Paar" (오탐 금지)', false, '**Q♠ Q♥ Q♦ 5♣ 5♠** — ein Drilling plus ein Paar.'],
+    // 2026-08-09 실측 오탐 — 연결어가 라틴 문자가 아니라 구성 설명 가드를 빠져나갔다.
+    ['구성 설명 — ms "three of a kind bersama sepasang" (오탐 금지)', false, '**Q♠ Q♥ Q♦ 5♣ 5♠** — three of a kind bersama sepasang.'],
+    ['구성 설명 — hi "three of a kind और एक pair" (오탐 금지)', false, '**Q♠ Q♥ Q♦ 5♣ 5♠** — एक three of a kind और एक pair।'],
+    // 2026-08-09 실측 오탐 — 프랑스어 족보명이 하나도 등록돼 있지 않아 "Quinte Flush"가 "flush"에 걸려
+    // 로열/스트레이트 플러시를 전부 «플러시»로 오독했다. fr 6편이 원리상 미검사였다.
+    ['fr "Quinte Flush Royale"은 로열 플러시다 (오탐 금지)', false, '| 1 | Quinte Flush Royale | A♠ K♠ Q♠ J♠ 10♠ | Extrêmement rare |'],
+    ['fr "Quinte Flush"는 스트레이트 플러시다 (오탐 금지)', false, '| 2 | Quinte Flush | 5♥ 6♥ 7♥ 8♥ 9♥ | Très rare |'],
+    ['fr "Carré"·"Full"·"Couleur"·"Quinte"·"Brelan" 정상 (오탐 금지)', false,
+      '| 3 | Carré | A♠ A♥ A♦ A♣ K♠ | Rare |\n| 4 | Full | K♠ K♥ K♦ A♠ A♥ | Peu fréquent |\n| 5 | Couleur | A♠ K♠ 8♠ 5♠ 2♠ | Peu fréquent |\n| 6 | Quinte | 5♥ 6♠ 7♦ 8♣ 9♥ | Occasionnel |\n| 7 | Brelan | Q♠ Q♥ Q♦ 5♠ 7♥ | Occasionnel |'],
+    ['fr 족보 오기 (잡아야 함)', true, '| 5 | Couleur | A♠ K♠ 8♠ 5♠ 2♥ | Peu fréquent |'],
+    ['fr "de la même couleur"는 무늬이지 플러시가 아니다 (오탐 금지)', false,
+      'Il faut cinq cartes de la même couleur qui se suivent : **8♥ 7♥ 6♥ Q♠ 3♦** ne suffit pas.'],
     ['대문자 족보명도 잡아야 한다 — de (잡아야 함)', true, '**A♠ K♠ Q♠ J♠ 10♠** — ein Full House im Poker.'],
     ['부정문 — en "no straight or flush" (오탐 금지)', false,
       'Back to my buy-in. Board ==b:A♦ 7♣ 2♥ Q♠ 4♦==, no straight or flush out there.'],

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "All-in bermaksud mempertaruhkan semua cip yang anda ada. Anda hanya boleh menang jumlah yang anda samai daripada setiap lawan (pot utama). Pertaruhan lebihan daripada stack yang lebih besar membentuk side pot yang anda tidak boleh menangi. All-in yang kurang daripada satu raise penuh TIDAK membuka semula pertaruhan bagi pemain yang sudah bertindak.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-07-13",
+  updated: "2026-08-09",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 minit",
@@ -166,7 +166,7 @@ Inkremen gabungan: $4 + $7 = **$11** — mencapai ambang raise minimum $10.
 |:---|:---:|:---|:---|
 | $14 (+$4) | $18 (+$4) | $8 — bawah $10 | ❌ Tidak |
 | $14 (+$4) | $21 (+$7) | $11 — mencapai $10 | ✅ Ya |
-| $15 (+$5) | $25 (+$10) | $15 — mencapai $10 | ✅ Ya |
+| $15 (+$5) | $24 (+$9) | $14 — mencapai $10 | ✅ Ya |
 
 </div>
 

@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "O desempate segue uma ordem fixa: primeiro o tipo de mão, depois as cartas que formam a mão, depois os kickers do mais alto ao mais baixo. Mesmo par → ganha o primeiro kicker mais alto; cinco cartas idênticas → pote dividido. Os naipes nunca desempatam.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-07-11",
+  updated: "2026-08-09",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "⚖️",
@@ -85,7 +86,7 @@ Royal Flush|Sempre empate (pote dividido)|-Sem kicker
 Straight Flush|Só a carta mais alta|-Sem kicker
 Quadra|Valor da quadra → 5ª carta|+Com kicker
 Full House|Valor da trinca → do par|-Sem kicker
-Flush|Compare as 5, da maior à menor|+Com kicker
+Flush|Compare as 5, da maior à menor|-Sem kicker
 Sequência|Só a carta mais alta|-Sem kicker
 Trinca|Valor da trinca → 2 kickers|+Com kicker
 Dois Pares|Par alto → par baixo → kicker|+Com kicker

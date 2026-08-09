@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "All-in gitmek, önündeki tüm çipleri ortaya sürmektir. Her rakipten sadece eşlediğin kadarını kazanabilirsin (ana pot); büyük stack'lerin fazladan koyduğu çipler dokunamayacağın bir yan pot oluşturur. Tam bir yükseltmeden az olan bir all-in, zaten aksiyon almış oyuncular için bahsi YENİDEN açmaz.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-07-13",
+  updated: "2026-08-09",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 dk",
@@ -166,7 +166,7 @@ Birleşik artışlar: $4 + $7 = **$11** — $10'luk minimum yükseltme eşiğini
 |:---|:---:|:---|:---|
 | $14 (+$4) | $18 (+$4) | $8 — $10'un altında | ❌ Hayır |
 | $14 (+$4) | $21 (+$7) | $11 — $10'a ulaşıyor | ✅ Evet |
-| $15 (+$5) | $25 (+$10) | $15 — $10'a ulaşıyor | ✅ Evet |
+| $15 (+$5) | $24 (+$9) | $14 — $10'a ulaşıyor | ✅ Evet |
 
 </div>
 
