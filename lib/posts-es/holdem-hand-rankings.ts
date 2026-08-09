@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "hand-rankings",
   date: "2026-06-09",
   updated: "2026-08-09",
-  masterUpdated: "2026-07-19",
+  masterUpdated: "2026-08-09",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🃏",
@@ -227,7 +227,7 @@ Tienes **6♥ 2♣**. La mesa tiene cuatro corazones.
 
 Tienes **A♥ 3♣**. La mesa ya trae trío de reyes.
 
-→ Tu A♥ empareja con el A♠ de la mesa y te da un **full, KKK + AA** (reyes full de ases). Pero si tu rival también tiene un As suelto —y no el rey que falta—, tiene el *mismo* full y se reparte el bote. Dos manos aún te ganan: una **pareja servida de ases (A-A)** hace un full mayor (ases sobre reyes), y **un As junto al último rey (K♣)** hace **póker de reyes**. Si no tiene As y solo una pareja menor, tu full gana. La lección: cuando la mesa hace casi todo el trabajo, tu mano a menudo vale solo una carta extra.
+→ Tu A♥ empareja con el A♠ de la mesa y te da un **full, KKK + AA** (reyes full de ases). Pero si tu rival también tiene un As suelto —y no el rey que falta—, tiene el *mismo* full y se reparte el bote. Solo dos cosas te ganan: una **pareja servida de ases (A-A)** hace un full mayor (ases sobre reyes), y **el rey que falta (K♣)** hace **póker de reyes** lleve la carta que lleve al lado — el A♠ de la mesa ya le sirve de kicker. Si no tiene ni As ni ese rey, tu full gana. La lección: cuando la mesa hace casi todo el trabajo, tu mano a menudo vale solo una carta extra.
 
 ---
 

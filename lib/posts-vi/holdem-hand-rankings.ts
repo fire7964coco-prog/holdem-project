@@ -9,6 +9,8 @@ export const POST: Post = {
   category: "hand-rankings",
   date: "2026-06-09",
   updated: "2026-08-09",
+
+  masterUpdated: "2026-08-09",
   keepImagesInBody: true,
   readTime: "14 phút",
   emoji: "🃏",
@@ -214,7 +216,7 @@ Bạn cầm **K♥ 2♣**. Bàn có bốn lá cơ.
 
 Bạn cầm **A♥ 3♣**. Bàn đã có sẵn Sám Cô K.
 
-→ A♥ của bạn ghép với A♠ trên bàn và cho bạn **Cù Lũ, KKK + AA**. Nhưng nếu đối thủ cũng cầm một con Át đơn lẻ, họ có *cùng* Cù Lũ và chia pot (chỉ đúng đôi Át trên tay, A-A, mới tạo được Cù Lũ lớn hơn — KKK + AA với Sám Cô là Át). Nếu họ không có Át mà chỉ một đôi nhỏ hơn, Cù Lũ của bạn thắng. Bài học: khi bàn làm gần hết việc, tay của bạn thường chỉ hơn được một lá.
+→ A♥ của bạn ghép với A♠ trên bàn và cho bạn **Cù Lũ, KKK + AA**. Nhưng nếu đối thủ cũng cầm một con Át đơn lẻ — và không phải quân K cuối cùng — họ có *cùng* Cù Lũ và chia pot. Chỉ hai thứ còn thắng được bạn: đôi Át trên tay (A-A) tạo Cù Lũ lớn hơn (AAA + KK), và quân K cuối cùng (K♣) tạo **Tứ Quý K** dù lá còn lại là gì — A♠ trên bàn đã là kicker của họ. Nếu họ không có Át cũng không có quân K đó, Cù Lũ của bạn thắng. Bài học: khi bàn làm gần hết việc, tay của bạn thường chỉ hơn được một lá.
 
 ---
 

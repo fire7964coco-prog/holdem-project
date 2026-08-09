@@ -9,6 +9,8 @@ export const POST: Post = {
   category: "hand-rankings",
   date: "2026-06-09",
   updated: "2026-08-09",
+
+  masterUpdated: "2026-08-09",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🃏",
@@ -214,7 +216,7 @@ Anda pegang **K♥ 2♣**. Meja ada empat heart.
 
 Anda pegang **A♥ 3♣**. Meja sudah membawa three of a kind K.
 
-→ A♥ anda berpasangan dengan A♠ di meja dan memberi **full house, KKK + AA**. Tetapi jika lawan juga memegang satu As tunggal, dia mempunyai full house yang *sama* dan pot dibahagi (hanya pocket A-A yang tepat membentuk full house lebih besar, iaitu aces full). Jika dia tiada As dan cuma pasangan lebih kecil, full house anda menang. Pengajarannya: apabila meja melakukan hampir keseluruhan kerja, tangan anda selalunya hanya bernilai satu kad tambahan.
+→ A♥ anda berpasangan dengan A♠ di meja dan memberi **full house, KKK + AA**. Tetapi jika lawan juga memegang satu As tunggal — dan bukan K terakhir — dia mempunyai full house yang *sama* dan pot dibahagi. Hanya dua perkara yang masih mengalahkan anda: pocket A-A membentuk full house lebih besar (aces full), dan K terakhir (K♣) membentuk **four of a kind K** walau apa pun kad keduanya — A♠ di meja sudah menjadi kickernya. Jika dia tiada As mahupun K itu, full house anda menang. Pengajarannya: apabila meja melakukan hampir keseluruhan kerja, tangan anda selalunya hanya bernilai satu kad tambahan.
 
 ---
 

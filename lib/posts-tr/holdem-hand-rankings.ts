@@ -9,6 +9,8 @@ export const POST: Post = {
   category: "hand-rankings",
   date: "2026-06-09",
   updated: "2026-08-09",
+
+  masterUpdated: "2026-08-09",
   keepImagesInBody: true,
   readTime: "14 dk",
   emoji: "🃏",
@@ -214,7 +216,7 @@ Elinde **K♥ 2♣** var. Board'da dört kupa var.
 
 Elinde **A♥ 3♣** var. Board'da zaten papaz üçlüsü var.
 
-→ A♥ board'daki A♠ ile eşleşir ve sana **full house, KKK + AA** verir. Ama rakipte de tek bir As varsa, *aynı* full house onda da var ve pot bölünür (yalnızca tam olarak As çifti — pocket A-A — daha büyük bir full house, yani "aces full" yapar). As'ı yoksa ve sadece daha küçük bir çift varsa, full house'un kazanır. Ders: board işin neredeyse tamamını yaptığında, elin çoğu zaman sadece bir ekstra kart değerindedir.
+→ A♥ board'daki A♠ ile eşleşir ve sana **full house, KKK + AA** verir. Ama rakipte de tek bir As varsa — ve son papaz yoksa — *aynı* full house onda da var ve pot bölünür. Seni hâlâ yenen yalnızca iki şey var: elde As çifti (pocket A-A) daha büyük bir full house yapar, yani "aces full"; ve son papaz (K♣) yanındaki kart ne olursa olsun **papaz karesi** yapar — board'daki A♠ zaten onun kicker'ı olur. Ne As'ı ne de o papazı varsa, full house'un kazanır. Ders: board işin neredeyse tamamını yaptığında, elin çoğu zaman sadece bir ekstra kart değerindedir.
 
 ---
 

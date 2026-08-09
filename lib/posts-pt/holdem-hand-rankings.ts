@@ -9,6 +9,8 @@ export const POST: Post = {
   category: "hand-rankings",
   date: "2026-06-09",
   updated: "2026-08-09",
+
+  masterUpdated: "2026-08-09",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🃏",
@@ -214,7 +216,7 @@ Você tem **K♥ 2♣**. A mesa tem quatro copas.
 
 Você tem **A♥ 3♣**. A mesa já traz trinca de reis.
 
-→ Seu A♥ pareia com o A♠ da mesa e te dá um **full house, KKK + AA**. Mas se seu adversário também tem um único Ás, ele tem o *mesmo* full house e divide-se (só o par exato de Áses na mão faz um full maior, Áses cheios de Reis). Se ele não tem Ás e só um par menor, seu full house ganha. A lição: quando a mesa faz quase todo o trabalho, sua mão muitas vezes vale só uma carta extra.
+→ Seu A♥ pareia com o A♠ da mesa e te dá um **full house, KKK + AA**. Mas se seu adversário também tem um único Ás — e não o último Rei —, ele tem o *mesmo* full house e o pote é dividido. Só duas coisas ainda te ganham: o par de Áses na mão (A-A) faz um full maior (Áses cheios de Reis), e o último Rei (K♣) faz **quadra de Reis** seja qual for a outra carta — o A♠ da mesa já serve de kicker para ele. Se ele não tem nem Ás nem esse Rei, seu full house ganha. A lição: quando a mesa faz quase todo o trabalho, sua mão muitas vezes vale só uma carta extra.
 
 ---
 

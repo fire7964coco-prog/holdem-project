@@ -9,6 +9,7 @@ export const POST: Post = {
   category: "hand-rankings",
   date: "2026-06-09",
   updated: "2026-08-09",
+  masterUpdated: "2026-08-09",
   keepImagesInBody: true,
   readTime: "14 Min.",
   emoji: "🃏",
@@ -222,7 +223,7 @@ Du hältst **6♥ 2♣**. Das Board hat vier Herz.
 
 Du hältst **A♥ 3♣**. Das Board bringt bereits einen Drilling Könige.
 
-→ Deine A♥ paart sich mit der A♠ auf dem Board und gibt dir ein **Full House, KKK + AA**. Hält dein Gegner aber ebenfalls ein einzelnes Ass, hat er *dasselbe* Full House und ihr teilt (nur das exakte Pocket-Paar A-A macht ein größeres Full House, Asse voll). Hat er kein Ass und nur ein kleineres Paar, gewinnt dein Full House. Die Lektion: Wenn das Board fast die ganze Arbeit macht, ist deine Hand oft nur eine zusätzliche Karte wert.
+→ Deine A♥ paart sich mit der A♠ auf dem Board und gibt dir ein **Full House, KKK + AA**. Hält dein Gegner aber ebenfalls ein einzelnes Ass — und nicht den letzten König —, hat er *dasselbe* Full House und ihr teilt. Nur zwei Dinge schlagen dich noch: das Pocket-Paar A-A macht ein größeres Full House (Asse voll), und der letzte König (K♣) macht **Vierling Könige**, ganz egal welche zweite Karte dabei ist — die A♠ auf dem Board ist bereits sein Kicker. Hat er weder ein Ass noch diesen König, gewinnt dein Full House. Die Lektion: Wenn das Board fast die ganze Arbeit macht, ist deine Hand oft nur eine zusätzliche Karte wert.
 
 ---
 
