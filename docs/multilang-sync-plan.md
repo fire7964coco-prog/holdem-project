@@ -129,9 +129,40 @@ E2·E3·E5도 de·id·pt 중심. **이유는 §1-D 타임라인에 있다** — 
 → **S3의 실질 범위는 «3개 언어»로 좁혀질 가능성이 높다.** 소수 17개 언어는 애초에 이 글들이 없다
 (`implied-odds`·`straddle`·`when-to-fold`·`starting-hands-chart`는 major 7개 로케일에만 존재).
 
+### ✅✅✅ S2-B1 적용 완료 (2026-08-09, 커밋 `3ae4178`) — 기계적 값 교체 7항목 / 54파일
+
+| # | 항목 | 글 | 적용한 로케일 | S1 표와의 차이 |
+|---|---|---|---|---|
+| **E2** | 플러시 = 키커 없음 | `holdem-hand-rankings` | ar de es hi id ms pt tr vi zh **(10)** | 🔴 **+ar es vi zh** |
+| **E3** | 같은 오류 | `holdem-tiebreak-rules` | de es id pt zh **(5)** | 🔴 **+es zh** |
+| **E4** | `$25(+$10)/$15` → `$24(+$9)/$14` | `holdem-all-in-rules` | 20개 | 일치 |
+| **E5** | 「1 in 407」 → 408 | `holdem-probability` | de es id pt zh zh-hant **(6)** | 일치(재확인 2건 확정) |
+| **C1** | 임플라이드 FAQ 공식 `+ 콜` | `holdem-implied-odds` | de id pt **(3)** | 일치 |
+| **C2** | 스트래들 액션 시작 한 자리 | `holdem-straddle` | de es id ja pt zh **(6)** | 일치 |
+| **C4** | 폴드율 `80–86%` → `80–85%` | `holdem-when-to-fold` | de id pt **ja** (4, 편당 2곳) | 🔴 **+ja** |
+
+🔴 **S1 판정표가 7건을 놓쳤다 — 원인은 스캔 정규식이 라틴 표기에 치우친 것이다.**
+`es`의 `+Con kicker`·`zh`의 `+用踢脚`·`ja`의 `80〜86%`(물결표가 `–`가 아니다)가 전부 그렇게 흘렀다.
+**S1 표를 그대로 믿고 적용했으면 7건이 그대로 남았다.** B2·B3에서도 표를 신뢰하지 말고
+**항목마다 전 로케일을 다시 훑을 것**(`node scratchpad/dump-block.mjs` 방식으로 블록을 통째 출력해 눈으로 비교).
+
+**한국어 원본(`lib/posts.ts`·`lib/posts/`)은 7항목 전부 정상**임을 확인했다 — 소급 대상 아님.
+
+**masterUpdated 처리**: `tiebreak-rules`·`probability`·`implied-odds`·`straddle`·`when-to-fold`는
+EN updated(`2026-07-19`)로 갱신. **`hand-rankings`(C7 대기)·`all-in-rules`(E1 대기)는 보류** —
+남은 항목이 있는 채로 동기화 완료 표시를 하면 드리프트 추적이 거짓말을 한다.
+
+**게이트 오탐 2종도 함께 고쳤다**(REVIEW-PROTOCOL: 오탐은 무시 말고 파서를 고친다):
+① 구성 설명 가드가 라틴 연결어만 봐서 ms `bersama sepasang`·hi `और एक pair`를 놓쳤다
+② **프랑스어 족보명이 하나도 등록돼 있지 않아 `fr` 6편이 원리상 미검사였다**(`Quinte Flush`가 `flush`에 걸림).
+자가테스트 픽스처 7개 추가 → **76/76**.
+
+---
+
 ### ✅✅ S1 판정 완료 — 최종 적용 대상 (2026-08-09)
 
 전부 **로케일 원문을 직접 읽고** 판정했다. EN diff는 단서로만 썼다.
+⚠ 아래 「틀린 로케일」 칸은 **B1 실측으로 3항목이 늘었다** — 위 B1 표가 최신이다.
 
 | # | 항목 | 글 | **틀린 로케일** |
 |---|---|---|---|
