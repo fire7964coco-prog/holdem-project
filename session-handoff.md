@@ -8,18 +8,24 @@
 ## ▶▶▶▶▶▶▶▶▶ 새 세션 START HERE
 
 > **현재 상태 (2026-08-09 마감)** · build **69 blog + 457 intl** (총계 불변) · GTO 솔버 ✅ 13/13 완결
-> 오늘 배포 3건: `3ae4178`(다국어 B1) · `c88d567`(APT 인천) · `8474ee8`(KO 잔여 S1)
+> 오늘 배포 5건: `3ae4178`(다국어 B1) · `c88d567`(APT 인천) · `8474ee8`(KO 잔여 S1) ·
+> `e077492`+`4249165`(KO 잔여 **S2** — 포스트플랍 6편 39건)
 
-### ▶▶ 다음 세션은 여기서 시작 — **KO 잔여 수정 S2**
+### ▶▶ 다음 세션은 여기서 시작 — **KO 잔여 수정 S3**
 
 ```
 1. git pull
-2. docs/kr-remediation-spec.md 를 읽는다   ← 이 파일 하나면 이어받는다
-3. S2 = 포스트플랍 전략 6편 39건
-   position · check-raise · cbet · overbet · value-bet-sizing · bluffing
+2. docs/kr-remediation-spec.md 를 읽는다   ← 이 파일 하나면 이어받는다 (§4에 S1·S2 교훈)
+3. S3 = 프리플랍·사이징 8편 38건
+   3bet · raise-how-much · blind-steal · pocket-aces · pocket-kings ·
+   bankroll · button-position · small-blind-role
 4. 편집 → npm run audit:hard 🔴0 → build → 커밋(「잔여분 인계 08-09 후속」) → push
 5. 홀덤검수/reports/fix-done-*.md 로 완료 보고
 ```
+
+🔴 **B층 부록(§6)은 08-03 리포트의 압축 이관이라 그 뒤 수정분이 반영돼 있지 않다.**
+S1은 2건, S2는 1건이 **이미 고쳐진 상태**였다(cbet B#1 = `e6e8229`). **편집 전 현재 본문부터 읽어라.**
+🔴 **편집한 문단의 카드를 다시 읽어라.** S2에서 내가 새로 쓴 폴드 기준이 그 보드에서 틀렸다(K가 이미 톱카드).
 
 🔴 **미러 8종을 건드리지 마라** · 🔴 **자체 검수하지 마라**(수정 세션 분리 규칙 — 재판정은 검수장 몫)
 
@@ -41,8 +47,8 @@
 | 세션 | 묶음 | 편 | 건 | 상태 |
 |---|---|---:|---:|---|
 | S1 | 레인지 % | 5 | 36 | ✅ `8474ee8` (34건 편집 · 2건 기적용) |
-| **S2** | **포스트플랍** — position · check-raise · cbet · overbet · value-bet-sizing · bluffing | 6 | **39** | 🔴 **다음** |
-| S3 | 프리플랍·사이징 — 3bet · raise-how-much · blind-steal · pocket-aces · pocket-kings · bankroll · button-position · small-blind-role | 8 | 38 | 대기 |
+| S2 | 포스트플랍 — position · check-raise · cbet · overbet · value-bet-sizing · bluffing | 6 | 39 | ✅ `e077492`·`4249165` (37건 편집 · 1건 기적용 · STALE 1건 선제처리) |
+| **S3** | **프리플랍·사이징** — 3bet · raise-how-much · blind-steal · pocket-aces · pocket-kings · bankroll · button-position · small-blind-role | 8 | **38** | 🔴 **다음** |
 | S4 | 계산·룰 정의 13편 | 13 | 29 | 대기 (컨텍스트 여유 없을 때 쓰기 좋다) |
 | S5 | tournament-how-to-enter | 1 | 11 | **8/16 이후** — STALE #19가 APT 종료로 만료 |
 
