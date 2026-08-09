@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "APT Incheon 2026 — Festival Poker + Panduan Wisata Korea",
   seoTitle: "Terbang ke Korea demi poker? APT Incheon 2026 di Paradise City + Seoul 3 hari",
   desc: "APT Incheon 2026 — 7–16 Agustus di Paradise City. GTD $2,7 juta, Main Event ~$1.703. Rute online terakhir: Step $20 → Mega $200, tutup 7 Agustus, plus wisata Seoul.",
-  tldr: "APT Incheon 2026 berlangsung 7–16 Agustus di Paradise City Casino, Incheon — 10 menit dengan shuttle gratis dari Terminal 1. Main Event: buy-in KRW 2.500.000 (~$1.703), GTD $1 juta. Kualifikasi online Natural8 total membagikan 74 kursi, tetapi Mega $35 dan rute OnLive Day 1 sama-sama tutup pada 2 Agustus: satu-satunya jalur yang masih terbuka adalah Step $20 → Mega $200, dan itu berakhir 7 Agustus. Hanya untuk warga negara asing (warga negara Korea tanpa izin tinggal tetap di luar negeri tidak boleh masuk). Seoul berjarak ~1 jam dan merupakan salah satu kota terbaik di Asia untuk kuliner, budaya, dan kehidupan malam.",
+  tldr: "APT Incheon 2026 berlangsung 7–16 Agustus di Paradise City Casino, Incheon — 10 menit dengan shuttle gratis dari Terminal 1. Main Event: buy-in KRW 2.500.000 (~$1.703), GTD $1 juta. Kualifikasi online Natural8 total membagikan 74 kursi, tetapi Mega $35 dan rute OnLive Day 1 sama-sama tutup pada 2 Agustus: jalur terakhir, Step $20 → Mega $200, tutup pada 7 Agustus — kualifikasi online sudah selesai. Hanya untuk warga negara asing (warga negara Korea tanpa izin tinggal tetap di luar negeri tidak boleh masuk). Seoul berjarak ~1 jam dan merupakan salah satu kota terbaik di Asia untuk kuliner, budaya, dan kehidupan malam.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-05",
+  updated: "2026-08-09",
   masterUpdated: "2026-07-28",
   keepImagesInBody: true,
   readTime: "16 mnt",
@@ -35,7 +35,7 @@ Trip poker dan trip Korea adalah trip yang sama. ==g:Paradise City hanya 10 meni
 ---
 
 > **Jawaban singkat**
-> APT Incheon 2026 berlangsung ==**7–16 Agustus**== di Paradise City Casino, Incheon. Resor ini ==g:10 menit dengan shuttle gratis dari Terminal 1 Bandara Incheon== — berangkat setiap 30 menit, tanpa biaya. Buy-in Main Event: ==**KRW 2.500.000 (~$1.703)**==, bergaransi $1 juta. Satelit berjenjang mulai dari ==g:**$3,50 via Natural8**==. ==r:Mega $35 dan OnLive tutup pada 2 Agustus== — yang masih terbuka hanya ==g:**Step $20 → Mega $200, sampai 7 Agustus**==. Kasino ==r:hanya untuk warga negara asing== — warga negara Korea tanpa izin tinggal tetap di luar negeri tidak boleh masuk.
+> APT Incheon 2026 berlangsung ==**7–16 Agustus**== di Paradise City Casino, Incheon. Resor ini ==g:10 menit dengan shuttle gratis dari Terminal 1 Bandara Incheon== — berangkat setiap 30 menit, tanpa biaya. Buy-in Main Event: ==**KRW 2.500.000 (~$1.703)**==, bergaransi $1 juta. Satelit berjenjang mulai dari ==g:**$3,50 via Natural8**==. ==r:Mega $35 dan OnLive tutup pada 2 Agustus, dan jalur terakhir (Step $20 → Mega $200) tutup 7 Agustus==. ==g:**Kualifikasi online sudah selesai — sekarang jalan masuknya lewat pendaftaran di lokasi.**== Kasino ==r:hanya untuk warga negara asing== — warga negara Korea tanpa izin tinggal tetap di luar negeri tidak boleh masuk.
 
 ---
 
@@ -66,7 +66,7 @@ Dan untuk pengunjung internasional: ==g:sebagian besar pemegang paspor negara Ba
 | **Total GTD** | ==g:**Lebih dari KRW 4 miliar (~$2,7 juta USD)**== |
 | **Buy-In Main Event** | KRW 2.500.000 ==**($1.703 USD)**== |
 | **GTD Main Event** | ==g:KRW 1.500.000.000 (~$1 juta USD)== |
-| **Rute Online yang Masih Terbuka** | ==g:**Step $20 → Mega $200 (tutup 7 Agu)**== |
+| **Kualifikasi Online** | ==r:**Sudah tutup — jalur terakhir (Step $20 → Mega $200) tutup 7 Agu**== |
 | **Sponsor** | Natural8 |
 | **Siapa yang Boleh Masuk** | ==r:Hanya warga negara asing — warga negara Korea tanpa izin tinggal tetap di luar negeri tidak boleh masuk== |
 | **Syarat Usia** | 19+ dengan ID foto yang valid |
@@ -84,7 +84,7 @@ Dan untuk pengunjung internasional: ==g:sebagian besar pemegang paspor negara Ba
 |:---|:---|:---:|:---:|
 | Korea National Cup | 7–8 Agu | ~$477 | ~$136K |
 | Mystery Bounty Hunter | 8–9 Agu | ~$610 | ~$204K |
-| APT Super High Roller | 8–9 Agu | ==r:~$10.200== | ~$340K |
+| APT Super High Roller | 9–10 Agu | ==r:~$10.200== | ~$340K |
 | ==**APT Main Event**== | ==**9–15 Agu**== | ==**~$1.703**== | ==g:**~$1 juta**== |
 | Superstar Challenge | 14–15 Agu | ~$23.800 | — |
 | Zodiac Classic | 13–14 Agu | ~$2.000 | ~$340K |
@@ -139,17 +139,17 @@ Natural8 adalah partner online resmi APT dan menjalankan kampanye satelit ==**Jo
 
 </div>
 
-:::note[**★Status per 5 Agustus 2026.** **Mega $35 dan kualifikasi OnLive Day 1 sudah tutup pada 2 Agustus.** Satu-satunya rute online yang masih jalan adalah **Step $20 → Mega $200**, dan **Jumat, 7 Agustus, adalah hari terakhirnya.** Angka 52 + 22 = 74 kursi di tabel itu total yang sudah dibagikan, bukan sisa kursi yang masih bisa direbut.]:::
+:::note[**★Status per 9 Agustus 2026 — kualifikasi online sudah selesai.** Mega $35 dan kualifikasi OnLive Day 1 tutup pada 2 Agustus, dan jalur terakhir, **Step $20 → Mega $200**, tutup pada **Jumat, 7 Agustus**, sehari sebelum seri dibuka. Angka 52 + 22 = 74 kursi di tabel itu total yang sudah dibagikan. Rutenya tetap dicatat karena struktur yang sama kembali di stop APT berikutnya.]:::
 
-**Jalur berjenjang yang masih terbuka:**
+**Jalur berjenjang, seperti saat itu berjalan:**
 
 <div style="background:rgba(0,0,0,0.25);border:1px solid rgba(255,255,255,0.10);border-radius:10px;padding:14px 20px;margin:16px 0;font-size:13px;line-height:1.8">
-Step $20 → menangkan tiket ke Mega Satellite $200 → menangkan kursi Main Event (senilai ~$1.703) · hari terakhir 7 Agustus
+Step $20 → menangkan tiket ke Mega Satellite $200 → menangkan kursi Main Event (senilai ~$1.703) · hari terakhirnya 7 Agustus
 </div>
 
 ==g:Natural8 juga menjalankan bonus payout 8%== untuk peserta yang lolos lewat satelit — kalau Anda memenangkan $10.000 di event live, Anda dapat tambahan $800 di atasnya. Perlu dicatat: **akses ke platform ini ditentukan negara domisili** dan tidak semua negara termasuk — periksa dulu apakah negara Anda muncul di formulir pendaftaran mereka. ⚠️ **Memakai VPN untuk menembus pembatasan wilayah melanggar ketentuan layanan** dan berisiko akun dibekukan beserta saldonya, jadi itu bukan jalan keluar. **Jalur yang selalu terbuka untuk siapa pun adalah mendaftar langsung ke penyelenggara di registrations@apt.poker** dengan membayar buy-in penuh.
 
-> **Tip OnLive:** Lewat rute OnLive, Day 1 bisa Anda mainkan dari zona waktu sendiri — terbang ke Korea baru perlu kalau bertahan sampai Day 3. ==g:Kalau anggaran perjalanan Anda ketat, ini jalur kualifikasi yang lebih cerdas.==
+> **Dulu OnLive itu apa:** lewat rute ini Day 1 bisa dimainkan dari zona waktu sendiri — terbang ke Korea baru perlu kalau bertahan sampai Day 3, jalur paling cerdas saat anggaran perjalanan ketat. ==r:Rutenya tutup 2 Agustus, jadi untuk edisi ini sudah bukan pilihan== — dicatat di sini karena layak diincar di stop APT berikutnya.
 
 **Ada jalur ketiga yang hampir tidak pernah disebut panduan lain: Country Exclusives.** Natural8 menjalankan kualifikasi khusus berdasarkan negara domisili yang membagikan **enam paket live** — dan paket bukan sekadar kursi: isinya **tiket Main Event (~$1.684) plus sekitar $500 biaya perjalanan**. Satelit biasa hanya memberi kursi, tiket pesawat urusan Anda sendiri. Kelayakan ditentukan negara domisili, jadi cek dulu di lobby apakah bracket negara Anda dibuka sebelum menggrind jalur umum.
 
@@ -408,7 +408,7 @@ A. Keduanya bisa, tapi ==g:disarankan tiba 2–3 hari lebih awal==. Anda pulih d
 
 1. **APT Incheon 2026** berlangsung ==**7–16 Agustus**== di Paradise City Casino — 10 menit dari Bandara Incheon dengan shuttle gratis, GTD $2,7 juta.
 2. **Main Event** buy-in: ==**~$1.703**== dengan ==g:garansi $1 juta==. Sekitar sepertiga buy-in Main EPT Barcelona dan separuh buy-in Championship WPT Australia.
-3. **Rute online yang tersisa hanya Step $20 → Mega $200**, dan cuma sampai 7 Agustus. Mega $35 dan OnLive sudah tutup 2 Agustus.
+3. **Kualifikasi online sudah selesai** — Mega $35 dan OnLive tutup 2 Agustus, jalur terakhir (Step $20 → Mega $200) tutup 7 Agustus. Sekarang masuknya lewat pendaftaran di lokasi.
 4. **Seoul berjarak 60 mnt** dan merupakan salah satu destinasi wisata terbaik di Asia — ==g:istana, BBQ, kehidupan malam, dan street food tak tertandingi.==
 5. **Hanya untuk warga negara asing** — turnamen ini dibuat untuk pemain internasional. Paspor Anda adalah kartu akses Anda.
 

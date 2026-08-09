@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "APT Incheon 2026 — Poker Festival + Korea Travel Guide",
   seoTitle: "Flying to Korea for Poker? APT Incheon 2026 at Paradise City + Seoul in 3 Days",
   desc: "APT Incheon 2026 — Aug 7–16, Paradise City Casino near Incheon Airport. $2.7M GTD, Main Event ~$1,700. Last online qualifier closes Aug 7. Seoul 3-day guide.",
-  tldr: "APT Incheon 2026 runs Aug 7–16 at Paradise City Casino, Incheon — 10 min by free shuttle from Terminal 1. Main Event: KRW 2,500,000 (~$1,703) buy-in, $1M GTD. Natural8's online qualifiers awarded 74 seats in total, but the $35 Mega and the OnLive Day 1 route both closed on Aug 2 — the only path still open is the $20 Step → $200 Mega, and it ends Aug 7. Foreign nationals only (Korean citizens without overseas residency cannot enter). Seoul is ~1 hour away and is one of the best cities in Asia for food, culture, and nightlife.",
+  tldr: "APT Incheon 2026 runs Aug 7–16 at Paradise City Casino, Incheon — 10 min by free shuttle from Terminal 1. Main Event: KRW 2,500,000 (~$1,703) buy-in, $1M GTD. Natural8's online qualifiers awarded 74 seats in total; the $35 Mega and the OnLive Day 1 route closed on Aug 2, and the last route standing — the $20 Step → $200 Mega — closed on Aug 7, so online qualifying is over for this edition. Foreign nationals only (Korean citizens without overseas residency cannot enter). Seoul is ~1 hour away and is one of the best cities in Asia for food, culture, and nightlife.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-05",
+  updated: "2026-08-09",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🇰🇷",
@@ -34,7 +34,7 @@ The poker trip and the Korea trip are the same trip. ==g:Paradise City is 10 min
 ---
 
 > **Quick answer**
-> APT Incheon 2026 runs ==**Aug 7–16**== at Paradise City Casino, Incheon. The resort is ==g:10 min by free shuttle from Incheon Airport Terminal 1== — departs every 30 min, no charge. Main Event buy-in: ==**KRW 2,500,000 (~$1,703)**==, $1M guaranteed. Natural8's qualifiers awarded 74 seats in total, but ==r:the $35 Mega and the OnLive Day 1 route both closed on Aug 2== — the only path still open is ==g:**the $20 Step → $200 Mega, and it ends Aug 7**==. Casino is ==r:foreign nationals only== — Korean citizens without overseas residency cannot enter.
+> APT Incheon 2026 runs ==**Aug 7–16**== at Paradise City Casino, Incheon. The resort is ==g:10 min by free shuttle from Incheon Airport Terminal 1== — departs every 30 min, no charge. Main Event buy-in: ==**KRW 2,500,000 (~$1,703)**==, $1M guaranteed. Natural8's qualifiers awarded 74 seats in total, but ==r:the $35 Mega and OnLive closed on Aug 2, and the last route — the $20 Step → $200 Mega — closed on Aug 7==. ==g:**Online qualifying is finished for this edition; on-site registration is the way in now.**== Casino is ==r:foreign nationals only== — Korean citizens without overseas residency cannot enter.
 
 ---
 
@@ -65,7 +65,7 @@ And for international visitors: ==g:most Western passport holders (USA, Canada, 
 | **Total Guaranteed** | ==g:**Over KRW 4 billion (~$2.7M USD)**== |
 | **Main Event Buy-In** | KRW 2,500,000 ==**($1,703 USD)**== |
 | **Main Event GTD** | ==g:KRW 1,500,000,000 (~$1M USD)== |
-| **Online Route Still Open** | ==g:**$20 Step → $200 Mega — ends Aug 7**== |
+| **Online Qualifying** | ==r:**Closed — the last route ($20 Step → $200 Mega) ended Aug 7**== |
 | **Sponsor** | Natural8 |
 | **Who Can Enter** | ==r:Foreign nationals only — Korean citizens without overseas residency cannot enter== |
 | **Age Requirement** | 19+ with valid photo ID |
@@ -83,7 +83,7 @@ And for international visitors: ==g:most Western passport holders (USA, Canada, 
 |:---|:---|:---:|:---:|
 | Korea National Cup | Aug 7–8 | ~$477 | ~$136K |
 | Mystery Bounty Hunter | Aug 8–9 | ~$610 | ~$204K |
-| APT Super High Roller | Aug 8–9 | ==r:~$10,200== | ~$340K |
+| APT Super High Roller | Aug 9–10 | ==r:~$10,200== | ~$340K |
 | ==**APT Main Event**== | ==**Aug 9–15**== | ==**~$1,703**== | ==g:**~$1M**== |
 | Superstar Challenge | Aug 14–15 | ~$23,800 | — |
 | Zodiac Classic | Aug 13–14 | ~$2,000 | ~$340K |
@@ -125,7 +125,7 @@ Nine seats to the **APT Championship (APTC) Taipei 2026** are given away across 
 
 ---
 
-## How to Qualify via Natural8 — Which Satellites Are Still Open?
+## How Players Qualified via Natural8 — and When Each Satellite Closed
 
 Natural8 is APT's official online partner and runs the ==**Journey to APT Incheon 2026**== satellite campaign. Two paths to the Main Event:
 
@@ -138,9 +138,9 @@ Natural8 is APT's official online partner and runs the ==**Journey to APT Incheo
 
 </div>
 
-:::note[**★Status as of Aug 5, 2026.** **The $35 Mega Satellite and the OnLive Day 1 qualifiers closed on Aug 2.** The only online route still running is the **$20 Step → $200 Mega**, and **Friday Aug 7 is the last day for it**. The 52 + 22 = 74 seats above are the totals already awarded, not seats still available.]:::
+:::note[**★Status as of Aug 9, 2026 — online qualifying is finished.** The $35 Mega Satellite and the OnLive Day 1 qualifiers closed on Aug 2, and the last route standing, the **$20 Step → $200 Mega**, closed on **Friday Aug 7** — the day before the series opened. The 52 + 22 = 74 seats above are the totals already awarded. The routes are documented here because the same structure returns at the next APT stop.]:::
 
-**The step path that is still open:**
+**The step path, as it ran:**
 
 <div style="background:rgba(0,0,0,0.25);border:1px solid rgba(255,255,255,0.10);border-radius:10px;padding:14px 20px;margin:16px 0;font-size:13px;line-height:1.8">
 $20 Step Satellite → win ticket to $200 Mega Satellite → win Main Event seat (~$1,703 value) · last running day Aug 7
@@ -397,7 +397,7 @@ A. Both work, but ==g:arriving 2–3 days early is recommended==. You recover fr
 
 1. **APT Incheon 2026** runs ==**Aug 7–16**== at Paradise City Casino — 10 min from Incheon Airport by free shuttle, $2.7M GTD.
 2. **Main Event** buy-in: ==**~$1,703**== with ==g:$1M guaranteed==. Around a third of the EPT Barcelona Main and half the WPT Australia Championship buy-in.
-3. **The last online route is the $20 Step → $200 Mega**, and it runs only through Aug 7. The $35 Mega and OnLive qualifiers closed on Aug 2.
+3. **Online qualifying is over** — the $35 Mega and OnLive closed on Aug 2, and the last route ($20 Step → $200 Mega) closed on Aug 7. On-site registration is the only remaining way in.
 4. **Seoul is 60 min away** and is one of Asia's best travel destinations — ==g:palaces, BBQ, nightlife, and unbeatable street food.==
 5. **Foreign nationals only** — this tournament was built for international players. Your passport is your access card.
 
