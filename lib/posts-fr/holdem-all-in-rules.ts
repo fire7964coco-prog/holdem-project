@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Faire tapis, c'est miser tous les jetons que tu as devant toi. Tu ne peux gagner de chaque adversaire que ce que tu as suivi (le pot principal) ; les jetons en trop des gros tapis forment un side pot auquel tu n'as pas droit. Un tapis inférieur à une relance complète NE rouvre PAS les enchères pour ceux qui ont déjà parlé.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-08-09",
-  masterUpdated: "2026-07-12",
+  updated: "2026-08-10",
+  masterUpdated: "2026-07-25",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "♠",
@@ -69,7 +69,7 @@ Deux façons valables :
 
 ## Comment fonctionnent les side pots au poker ? (Pourquoi le joueur à tapis est plafonné)
 
-Le joueur à tapis ne peut gagner que ce qu'il a mis, multiplié par le nombre d'adversaires qui l'ont suivi. Tous les jetons misés au-delà forment un **side pot** qui appartient exclusivement aux joueurs qui l'ont alimenté.
+Le joueur à tapis ne peut gagner que ce qu'il a mis, plus l'équivalent suivi par chaque autre joueur encore dans le coup. Tous les jetons misés au-delà forment un **side pot** qui appartient exclusivement aux joueurs qui l'ont alimenté.
 
 ![Side pot après un tapis au Texas Hold'em — le donneur sépare les jetons en pot principal et side pot pendant que le Joueur A est plafonné](/images/holdem-all-in-side-pot.webp)
 

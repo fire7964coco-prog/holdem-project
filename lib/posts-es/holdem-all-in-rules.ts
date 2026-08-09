@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ir all-in es apostar todas las fichas que tienes delante. Solo puedes ganar de cada rival lo que hayas igualado (el bote principal); las fichas extra de los stacks más grandes forman un side pot que no puedes tocar. Un all-in menor que una subida completa NO reabre la apuesta para quienes ya actuaron.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-07-25",
+  updated: "2026-08-10",
   masterUpdated: "2026-07-25",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -69,7 +69,7 @@ Hay dos formas válidas:
 
 ## ¿Cómo funcionan los side pots en el póker? (Por qué el jugador all-in queda capado)
 
-El jugador all-in solo puede ganar lo que puso multiplicado por el número de rivales que lo igualaron. Todas las fichas apostadas por encima forman un **side pot** que pertenece en exclusiva a los jugadores que lo alimentaron.
+El jugador all-in solo puede ganar lo que puso más la cantidad igualada de cada rival que sigue en el bote. Todas las fichas apostadas por encima forman un **side pot** que pertenece en exclusiva a los jugadores que lo alimentaron.
 
 ![Side pot tras un all-in en Texas Hold'em — el dealer separa las fichas en bote principal y side pot mientras el Jugador A queda capado](/images/holdem-all-in-side-pot.webp)
 
@@ -280,7 +280,7 @@ A. No pasa nada: por table stakes nunca estás obligado a poner más de lo que t
 
 **Q. ¿Cómo se calcula el all-in y el bote secundario (side pot)?**
 
-A. El jugador all-in solo puede ganar lo que puso, multiplicado por cada rival que lo iguale (el bote principal); lo apostado por encima forma el bote secundario o side pot. Ejemplo: el Jugador A va all-in por 100 fichas, y B y C pagan 100 cada uno y luego apuestan 50 más. El bote principal es 100 × 3 = **300 fichas** (lo pueden ganar A, B y C) y el side pot es 50 × 2 = **100 fichas** (solo para B y C). A puede ganar las 300 del bote principal, pero jamás las 100 del side pot.
+A. El jugador all-in solo puede ganar lo que puso más lo igualado por cada rival (el bote principal); lo apostado por encima forma el bote secundario o side pot. Ejemplo: el Jugador A va all-in por 100 fichas, y B y C pagan 100 cada uno y luego apuestan 50 más. El bote principal es 100 × 3 = **300 fichas** (lo pueden ganar A, B y C) y el side pot es 50 × 2 = **100 fichas** (solo para B y C). A puede ganar las 300 del bote principal, pero jamás las 100 del side pot.
 
 ---
 

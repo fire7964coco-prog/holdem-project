@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Să dai all-in înseamnă să pariezi toate jetoanele din fața ta. De la fiecare adversar poți câștiga doar cât ai egalat (potul principal); jetoanele în plus ale stack-urilor mari formează un side pot pe care nu-l poți lua. Un all-in mai mic decât o mărire completă NU redeschide pariurile pentru cine a acționat deja.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-08-09",
-  masterUpdated: "2026-07-12",
+  updated: "2026-08-10",
+  masterUpdated: "2026-07-25",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "♠",
@@ -69,7 +69,7 @@ Sunt două moduri valide:
 
 ## Cum funcționează side pot-urile la poker? (De ce jucătorul all-in este plafonat)
 
-Jucătorul all-in poate câștiga doar cât a băgat, înmulțit cu numărul de adversari care l-au egalat. Toate jetoanele pariate peste suma aceea formează un **side pot** care aparține exclusiv jucătorilor care l-au alimentat.
+Jucătorul all-in poate câștiga doar cât a băgat el, plus suma egalată de la fiecare alt jucător rămas în pot. Toate jetoanele pariate peste suma aceea formează un **side pot** care aparține exclusiv jucătorilor care l-au alimentat.
 
 ![Side pot după un all-in la Texas Hold'em — dealerul separă jetoanele în pot principal și side pot în timp ce Jucătorul A rămâne plafonat](/images/holdem-all-in-side-pot.webp)
 

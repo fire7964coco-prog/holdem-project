@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "All-in nghĩa là cược toàn bộ chip bạn đang có. Bạn chỉ thắng được từ mỗi đối thủ đúng phần mình đã theo kịp (pot chính). Phần cược dư của những stack lớn hơn tạo thành pot phụ (side pot) mà bạn không được đụng tới. Một cú all-in nhỏ hơn một nước tố đủ mức KHÔNG mở lại vòng cược cho những người đã hành động.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-08-09",
-  masterUpdated: "2026-07-12",
+  updated: "2026-08-10",
+  masterUpdated: "2026-07-25",
   keepImagesInBody: true,
   readTime: "10 phút",
   emoji: "♠",
@@ -69,7 +69,7 @@ Có hai cách hợp lệ:
 
 ## Side pot trong poker hoạt động thế nào? (Vì sao người all-in bị giới hạn)
 
-Người all-in chỉ có thể thắng đúng số mình đã bỏ vào nhân với số người theo. Mọi khoản chip cược vượt quá mức đó tạo thành một **pot phụ (side pot)** chỉ thuộc về những người đã góp vào nó.
+Người all-in chỉ có thể thắng số mình đã bỏ vào cộng với phần theo tương ứng từ mỗi người chơi còn lại trong pot. Mọi khoản chip cược vượt quá mức đó tạo thành một **pot phụ (side pot)** chỉ thuộc về những người đã góp vào nó.
 
 ![Side pot sau một cú all-in trong Texas Hold'em — dealer tách chip thành pot chính và pot phụ trong khi Người chơi A bị giới hạn mức thắng](/images/holdem-all-in-side-pot.webp)
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "All-in gehen heißt, jeden Chip zu setzen, den du hast. Du kannst von jedem Gegner nur so viel gewinnen, wie du selbst gematcht hast (den Main Pot). Zusätzliche Einsätze größerer Stacks bilden einen Side Pot, den du nicht gewinnen kannst. Ein All-in unterhalb einer vollen Erhöhung öffnet die Setzrunde für Spieler, die bereits gehandelt haben, NICHT neu.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-08-09",
-  masterUpdated: "2026-07-12",
+  updated: "2026-08-10",
+  masterUpdated: "2026-07-25",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "♠",
@@ -69,7 +69,7 @@ Zwei gültige Wege:
 
 ## Wie funktionieren Side Pots beim Poker? (Warum der All-in-Spieler gedeckelt ist)
 
-Der All-in-Spieler kann nur gewinnen, was er selbst eingezahlt hat, multipliziert mit der Zahl der Caller. Alle Chips, die darüber hinaus gesetzt werden, bilden einen **Side Pot**, der ausschließlich den Spielern gehört, die ihn gefüllt haben.
+Der All-in-Spieler kann nur gewinnen, was er selbst eingezahlt hat, plus den gleichen Betrag von jedem anderen Spieler, der noch im Pot ist. Alle Chips, die darüber hinaus gesetzt werden, bilden einen **Side Pot**, der ausschließlich den Spielern gehört, die ihn gefüllt haben.
 
 ![Texas Hold'em All-in-Side-Pot — der Dealer trennt die Chips in Main Pot und Side Pot, während Spieler A gedeckelt ist](/images/holdem-all-in-side-pot.webp)
 

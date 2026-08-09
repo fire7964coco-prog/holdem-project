@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "No Texas Hold'em você sempre joga a melhor mão de 5 cartas entre 7 (2 cartas na mão + 5 comunitárias) — usando as duas cartas, uma só, ou nenhuma (jogar a mesa). Varra as 7 cartas numa ordem fixa: flush → sequência → valores pareados → carta alta.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-08-09",
-  masterUpdated: "2026-07-19",
+  updated: "2026-08-10",
+  masterUpdated: "2026-08-10",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🃏",
@@ -260,7 +260,7 @@ A. Não. Sequências como K-A-2-3-4 ou Q-K-A-2-3 não são sequências no Texas 
 
 **Q. Como saber se um flush é possível na mesa?**
 
-A. Conte os naipes na mesa. Com 0–2 de um naipe, nenhum flush existe para ninguém. Com 3, o jogador precisa de dois desse naipe na mão; com 4, só um; com todos os 5, a própria mesa é um flush e só uma carta mais alta desse naipe melhora.
+A. Conte os naipes na mesa. Com 0–2 de um naipe, nenhum flush existe para ninguém. Com 3, o jogador precisa de dois desse naipe na mão; com 4, só um; com todos os 5, a própria mesa é um flush e só melhora com uma carta desse naipe mais alta que a mais baixa da mesa.
 
 **Q. Um par na mesa conta como parte da sua mão?**
 

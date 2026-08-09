@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "All-in to postawienie wszystkich żetonów, jakie masz przed sobą. Od każdego rywala możesz wygrać tylko tyle, ile wyrównałeś (główna pula) — nadwyżka od większych stacków tworzy pulę boczną, której nie tkniesz. All-in mniejszy niż pełne przebicie NIE otwiera na nowo licytacji dla graczy, którzy już zagrali.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-08-09",
-  masterUpdated: "2026-07-12",
+  updated: "2026-08-10",
+  masterUpdated: "2026-07-25",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "♠",
@@ -69,7 +69,7 @@ Są dwa poprawne sposoby:
 
 ## Jak działa pula boczna w pokerze? (Dlaczego gracz all-in ma limit)
 
-Gracz all-in może wygrać tylko tyle, ile wrzucił, pomnożone przez liczbę rywali, którzy go sprawdzili. Wszystkie żetony postawione ponad tę kwotę tworzą **pulę boczną (side pot)**, która należy wyłącznie do graczy, którzy ją zasilili.
+Gracz all-in może wygrać tylko tyle, ile wrzucił, plus wyrównaną kwotę od każdego innego gracza, który wciąż jest w puli. Wszystkie żetony postawione ponad tę kwotę tworzą **pulę boczną (side pot)**, która należy wyłącznie do graczy, którzy ją zasilili.
 
 ![Pula boczna po all-inie w Texas Hold'em — rozdający oddziela żetony na główną pulę i pulę boczną, gdy Gracz A ma nałożony limit](/images/holdem-all-in-side-pot.webp)
 

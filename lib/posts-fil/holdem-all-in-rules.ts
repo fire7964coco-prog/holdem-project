@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ang all-in ay pagtaya ng lahat ng chips mo. Ang kaya mo lang panalunan ay ang na-match mo sa bawat kalaban (ang main pot). Ang sobrang taya ng mas malalaking stack ay bumubuo ng side pot na hindi mo makukuha. Ang all-in na kulang sa full raise ay HINDI nagbubukas ulit ng betting para sa mga nakakilos na.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-08-09",
-  masterUpdated: "2026-07-12",
+  updated: "2026-08-10",
+  masterUpdated: "2026-07-25",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "♠",
@@ -69,7 +69,7 @@ Dalawang valid na paraan:
 
 ## Paano Gumagana ang Side Pots sa Poker? (Bakit Naka-cap ang All-In Player)
 
-Ang all-in player ay puwede lang manalo ng inilagay niya, na i-multiply sa bilang ng mga nag-call. Anumang chips na na-bet nang lampas doon ay bumubuo ng **side pot** na pag-aari lang ng mga nagbigay nito.
+Ang all-in player ay puwede lang manalo ng inilagay niya, kasama ang katumbas na halagang na-match ng bawat isa pang player na nasa pot pa. Anumang chips na na-bet nang lampas doon ay bumubuo ng **side pot** na pag-aari lang ng mga nagbigay nito.
 
 ![Side pot pagkatapos ng all-in sa Texas Hold'em — hinihiwalay ng dealer ang chips sa main pot at side pot habang naka-cap si Player A](/images/holdem-all-in-side-pot.webp)
 

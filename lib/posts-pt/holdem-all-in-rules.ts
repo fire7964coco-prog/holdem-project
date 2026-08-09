@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ir de all-in é apostar todas as fichas que você tem. Você só pode ganhar de cada adversário o valor que igualou (o pote principal). O que os stacks maiores apostam além disso vira um pote paralelo (side pot) que você não pode ganhar. Um all-in menor que um aumento completo NÃO reabre a aposta para quem já agiu.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-08-09",
-  masterUpdated: "2026-07-12",
+  updated: "2026-08-10",
+  masterUpdated: "2026-07-25",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "♠",
@@ -69,7 +69,7 @@ Duas formas válidas:
 
 ## Como funcionam os side pots (potes paralelos)? — Por que o jogador de all-in fica limitado
 
-O jogador de all-in só pode ganhar o valor que colocou multiplicado pelo número de pagadores. Qualquer ficha apostada além disso forma um **pote paralelo (side pot)** que pertence exclusivamente aos jogadores que o financiaram.
+O jogador de all-in só pode ganhar o valor que colocou mais o valor igualado de cada jogador que ainda está no pote. Qualquer ficha apostada além disso forma um **pote paralelo (side pot)** que pertence exclusivamente aos jogadores que o financiaram.
 
 ![Pote paralelo em all-in no Texas Hold'em — dealer separando as fichas em pote principal e pote paralelo enquanto o Jogador A fica limitado](/images/holdem-all-in-side-pot.webp)
 

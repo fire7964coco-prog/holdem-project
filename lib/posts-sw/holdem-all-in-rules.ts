@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Kwenda all-in maana yake ni kuweka dau la chipsi zote ulizonazo mbele yako. Unaweza kushinda tu kiasi ulichokilingana kutoka kwa kila mpinzani (main pot); chipsi za ziada za wale wenye stack kubwa hutengeneza side pot ambayo huwezi kuigusa. All-in ya chini ya raise kamili HAIfungui tena dau kwa wale walioshacheza.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-08-09",
-  masterUpdated: "2026-07-12",
+  updated: "2026-08-10",
+  masterUpdated: "2026-07-25",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "♠",
@@ -69,7 +69,7 @@ Kuna njia mbili halali:
 
 ## Side pot zinafanya kazi vipi katika poker? (Kwa nini mchezaji wa all-in anawekewa kikomo)
 
-Mchezaji wa all-in anaweza kushinda tu kile alichokiweka kikizidishwa kwa idadi ya wale walio-call. Chipsi zozote zilizowekwa juu ya kiasi hicho hutengeneza **side pot** inayowamiliki peke yao wale waliochangia.
+Mchezaji wa all-in anaweza kushinda tu kile alichokiweka yeye mwenyewe, pamoja na kiasi kilekile kutoka kwa kila mchezaji mwingine aliyebaki kwenye pot. Chipsi zozote zilizowekwa juu ya kiasi hicho hutengeneza **side pot** inayomilikiwa na wale waliochangia pekee.
 
 ![Side pot baada ya all-in katika Texas Hold'em — dila anatenganisha chipsi kuwa main pot na side pot wakati Mchezaji A amewekewa kikomo](/images/holdem-all-in-side-pot.webp)
 

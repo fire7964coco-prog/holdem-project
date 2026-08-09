@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Andare all-in significa puntare tutte le fiches che hai davanti. Da ogni avversario puoi vincere solo quello che hai pareggiato (il piatto principale); le fiches in più degli stack più grandi formano un side pot che non puoi toccare. Un all-in inferiore a un rilancio completo NON riapre le puntate per chi ha già agito.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-08-09",
-  masterUpdated: "2026-07-12",
+  updated: "2026-08-10",
+  masterUpdated: "2026-07-25",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "♠",
@@ -69,7 +69,7 @@ Ci sono due modi validi:
 
 ## Come funzionano i side pot nel poker? (Perché il giocatore all-in viene limitato)
 
-Il giocatore all-in può vincere solo quello che ha messo dentro moltiplicato per il numero di avversari che lo hanno pareggiato. Tutte le fiches puntate oltre quella cifra formano un **side pot** che appartiene in esclusiva ai giocatori che lo hanno alimentato.
+Il giocatore all-in può vincere solo quello che ha messo dentro più l'importo pareggiato da ciascun altro giocatore ancora nel piatto. Tutte le fiches puntate oltre quella cifra formano un **side pot** che appartiene in esclusiva ai giocatori che lo hanno alimentato.
 
 ![Side pot dopo un all-in nel Texas Hold'em — il dealer separa le fiches in piatto principale e side pot mentre il Giocatore A resta limitato](/images/holdem-all-in-side-pot.webp)
 

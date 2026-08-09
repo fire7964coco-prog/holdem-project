@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "All-in artinya mempertaruhkan seluruh chip yang Anda punya. Anda hanya bisa memenangkan jumlah yang Anda samakan dari tiap lawan (pot utama). Taruhan ekstra dari stack yang lebih besar membentuk side pot yang tidak bisa Anda menangkan. All-in yang kurang dari satu raise penuh TIDAK membuka kembali taruhan bagi pemain yang sudah beraksi.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-08-09",
-  masterUpdated: "2026-07-12",
+  updated: "2026-08-10",
+  masterUpdated: "2026-07-25",
   keepImagesInBody: true,
   readTime: "10 menit",
   emoji: "♠",
@@ -69,7 +69,7 @@ Ada dua cara yang sah:
 
 ## Bagaimana Cara Kerja Side Pot di Poker? (Kenapa Pemain All-In Dibatasi)
 
-Pemain yang all-in hanya bisa memenangkan jumlah yang dia masukkan dikalikan jumlah pemain yang call. Chip apa pun yang dipertaruhkan di atas jumlah itu membentuk **side pot** yang menjadi milik eksklusif para pemain yang mengisinya.
+Pemain yang all-in hanya bisa memenangkan taruhannya sendiri ditambah jumlah yang sama dari tiap pemain lain yang masih di pot. Chip apa pun yang dipertaruhkan di atas jumlah itu membentuk **side pot** yang menjadi milik eksklusif para pemain yang mengisinya.
 
 ![Side pot all-in Texas Hold'em — dealer memisahkan chip menjadi pot utama dan side pot sementara Pemain A dibatasi](/images/holdem-all-in-side-pot.webp)
 

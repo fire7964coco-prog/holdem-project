@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "All-in bermaksud mempertaruhkan semua cip yang anda ada. Anda hanya boleh menang jumlah yang anda samai daripada setiap lawan (pot utama). Pertaruhan lebihan daripada stack yang lebih besar membentuk side pot yang anda tidak boleh menangi. All-in yang kurang daripada satu raise penuh TIDAK membuka semula pertaruhan bagi pemain yang sudah bertindak.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-08-09",
-  masterUpdated: "2026-07-12",
+  updated: "2026-08-10",
+  masterUpdated: "2026-07-25",
   keepImagesInBody: true,
   readTime: "10 minit",
   emoji: "♠",
@@ -69,7 +69,7 @@ Ada dua cara yang sah:
 
 ## Bagaimana Side Pot Berfungsi dalam Poker? (Kenapa Pemain All-In Dihadkan)
 
-Pemain all-in hanya boleh menang jumlah yang dia masukkan didarab dengan bilangan pemain yang call. Mana-mana cip yang dipertaruhkan melebihi itu membentuk **side pot** yang hanya menjadi milik pemain yang membiayainya.
+Pemain all-in hanya boleh menang taruhannya sendiri ditambah jumlah yang sama daripada setiap pemain lain yang masih dalam pot. Mana-mana cip yang dipertaruhkan melebihi itu membentuk **side pot** yang hanya menjadi milik pemain yang membiayainya.
 
 ![Side pot selepas all-in Texas Hold'em — pengedar mengasingkan cip kepada pot utama dan side pot sementara Pemain A dihadkan](/images/holdem-all-in-side-pot.webp)
 

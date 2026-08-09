@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Im Texas Hold'em spielst du immer die beste 5-Karten-Hand aus 7 (2 Hole Cards + 5 Gemeinschaftskarten) — mit beiden Hole Cards, einer oder gar keiner („playing the board“). Scanne alle 7 Karten in fester Reihenfolge: Flush → Straße → gepaarte Ränge → High Card.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-08-09",
-  masterUpdated: "2026-07-19",
+  updated: "2026-08-10",
+  masterUpdated: "2026-08-10",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "🃏",
@@ -260,7 +260,7 @@ A. Nein. Folgen wie K-A-2-3-4 oder Q-K-A-2-3 sind im Texas Hold'em keine Straße
 
 **Q. Wie weißt du, ob ein Flush auf dem Board möglich ist?**
 
-A. Zähl die Farben auf dem Board. Mit 0–2 einer Farbe existiert für niemanden ein Flush. Mit 3 braucht ein Spieler zwei dieser Farbe in der Hand; mit 4 nur eine; mit allen 5 ist das Board selbst ein Flush und nur eine höhere Karte dieser Farbe verbessert ihn.
+A. Zähl die Farben auf dem Board. Mit 0–2 einer Farbe existiert für niemanden ein Flush. Mit 3 braucht ein Spieler zwei dieser Farbe in der Hand; mit 4 nur eine; mit allen 5 ist das Board selbst ein Flush und nur eine Karte dieser Farbe, die höher ist als die niedrigste auf dem Board, verbessert ihn.
 
 **Q. Zählt ein Paar auf dem Board als Teil deiner Hand?**
 
