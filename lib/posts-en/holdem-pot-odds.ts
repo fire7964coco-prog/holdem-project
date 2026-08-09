@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "To calculate pot odds, divide the amount you must call by the total pot after your call. Calling $50 into a $150 pot = 50 ÷ 200 = 25% — so you need at least 25% equity to make the call profitable.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-07-18",
+  updated: "2026-08-09",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🧮",
@@ -112,7 +112,7 @@ Now connect the price to your hand. [Count your **outs**](/en/blog/holdem-outs "
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Your draw | Outs | Equity, 1 card | Equity, 2 cards |
+| Your draw | Outs | Equity, 1 card (turn → river) | Equity, 2 cards (flop → river) |
 |:---|:---:|:---:|:---:|
 | Flush + open-ender | 15 | 32.6% | 54.1% |
 | Flush draw | 9 | 19.6% | 35.0% |
@@ -122,7 +122,7 @@ Now connect the price to your hand. [Count your **outs**](/en/blog/holdem-outs "
 
 </div>
 
-Read it against the bet-size table above. Facing a ==half-pot bet (need 25%)==: with two cards to come, a flush draw (35%) is a clear call — but on a *single* card, that same draw is only 19.6%, which **doesn't** meet the price on its own. That gap is exactly where implied odds come in.
+Read it against the bet-size table above. Facing a ==half-pot bet (need 25%)==: with two cards to come, a flush draw (35%) is a clear call — but on a *single* card, that same draw is only 19.1%, which **doesn't** meet the price on its own. That gap is exactly where implied odds come in.
 
 ---
 
@@ -173,7 +173,7 @@ I made every one of these before they made me broke. Watch for them:
 
 ### A real hand, start to finish
 
-I'm holding ==b:A♥ K♥== on a ==Q♥ 7♥ 2♣== flop — the nut flush draw, 9 outs. Pot is $100, villain bets $50. My pot odds: I'm getting 3-to-1, so I need **25%**. With two cards to come I'm at ~35%, and even counting just the next card (19.6%) my implied odds are huge — if a heart lands I stack a top-pair hand. ==g:Easy call.==
+I'm holding ==b:A♥ K♥== on a ==Q♥ 7♥ 2♣== flop — the nut flush draw, 9 outs. Pot is $100, villain bets $50. My pot odds: I'm getting 3-to-1, so I need **25%**. With two cards to come I'm at ~35%, and even counting just the next card (19.1%) my implied odds are huge — if a heart lands I stack a top-pair hand. ==g:Easy call.==
 
 Turn is the 3♠ — a brick. The pot is $200 and villain jams $200 — a pot-sized bet, so now I'm only getting 2-to-1 and need **33%**. But with **one card left my flush is just 19.6%**. The direct price says fold; my implied odds are now zero because villain is all-in and can't pay me more. ==r:Correct fold== — and the exact spot where "hope" used to cost me a stack.
 

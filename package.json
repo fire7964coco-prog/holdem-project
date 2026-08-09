@@ -7,6 +7,7 @@
     "generate:sitemap": "node scripts/generate-sitemap.mjs",
     "check:intl-links": "node scripts/check-intl-links.mjs",
     "check:stale": "node scripts/check-translation-staleness.mjs",
+    "check:drift": "node scripts/check-mirror-drift.mjs",
     "audit:hard": "node scripts/audit-hardening.mjs",
     "audit:hard:selftest": "node scripts/audit-hardening.mjs --selftest",
     "prebuild": "npm run check:intl-links && npm run generate:sitemap",

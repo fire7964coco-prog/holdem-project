@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "Untuk menghitung pot odds, bagi jumlah yang harus Anda call dengan total pot setelah call Anda. Call $50 ke pot $150 = 50 ÷ 200 = 25% — jadi Anda butuh minimal 25% equity agar call ini profit.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-07-03",
+  updated: "2026-08-09",
+  masterUpdated: "2026-08-09",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "🧮",
@@ -112,7 +113,7 @@ Sekarang hubungkan harga dengan tangan Anda. [Hitung **outs** Anda](/id/blog/hol
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Draw Anda | Outs | Equity, 1 kartu | Equity, 2 kartu |
+| Draw Anda | Outs | Equity, 1 kartu (turn → river) | Equity, 2 kartu (flop → river) |
 |:---|:---:|:---:|:---:|
 | Flush + open-ender | 15 | 32,6% | 54,1% |
 | Flush draw | 9 | 19,6% | 35,0% |
@@ -122,7 +123,7 @@ Sekarang hubungkan harga dengan tangan Anda. [Hitung **outs** Anda](/id/blog/hol
 
 </div>
 
-Bacalah terhadap tabel ukuran taruhan di atas. Menghadapi ==taruhan setengah pot (butuh 25%)==: dengan dua kartu tersisa, flush draw (35%) adalah call jelas — tapi pada *satu* kartu, draw yang sama itu hanya 19,6%, yang **tidak** memenuhi harganya sendiri. Celah itulah tepat di mana implied odds berperan.
+Bacalah terhadap tabel ukuran taruhan di atas. Menghadapi ==taruhan setengah pot (butuh 25%)==: dengan dua kartu tersisa, flush draw (35%) adalah call jelas — tapi pada *satu* kartu, draw yang sama itu hanya 19,1%, yang **tidak** memenuhi harganya sendiri. Celah itulah tepat di mana implied odds berperan.
 
 ---
 
@@ -173,7 +174,7 @@ Saya membuat setiap kesalahan ini sebelum mereka membuat saya bangkrut. Waspadai
 
 ### Sebuah tangan nyata, dari awal sampai akhir
 
-Saya pegang ==b:A♥ K♥== di flop ==Q♥ 7♥ 2♣== — nut flush draw, 9 outs. Pot-nya $100, villain bertaruh $50. Pot odds saya: saya dapat 3:1, jadi saya butuh **25%**. Dengan dua kartu tersisa saya di ~35%, dan bahkan menghitung hanya kartu berikutnya (19,6%) implied odds saya sangat besar — jika hati keluar, saya mengambil seluruh stack tangan top-pair. ==g:Call mudah.==
+Saya pegang ==b:A♥ K♥== di flop ==Q♥ 7♥ 2♣== — nut flush draw, 9 outs. Pot-nya $100, villain bertaruh $50. Pot odds saya: saya dapat 3:1, jadi saya butuh **25%**. Dengan dua kartu tersisa saya di ~35%, dan bahkan menghitung hanya kartu berikutnya (19,1%) implied odds saya sangat besar — jika hati keluar, saya mengambil seluruh stack tangan top-pair. ==g:Call mudah.==
 
 Turn adalah 3♠ — kartu mati. Pot-nya $200 dan villain jam $200 — taruhan sebesar pot, jadi sekarang saya hanya dapat 2:1 dan butuh **33%**. Tapi dengan **satu kartu tersisa flush saya hanya 19,6%**. Harga langsung berkata fold; implied odds saya sekarang nol karena villain all-in dan tak bisa membayar saya lebih. ==r:Fold yang benar== — dan tepat spot di mana "harapan" dulu menghabiskan seluruh stack saya.
 

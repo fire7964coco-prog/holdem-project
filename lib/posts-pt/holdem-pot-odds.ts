@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "Para calcular pot odds, divida o valor que você precisa pagar pelo pote total depois do seu call. Pagar $50 num pote de $150 = 50 ÷ 200 = 25% — então você precisa de pelo menos 25% de equity para o call ser lucrativo.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-07-03",
+  updated: "2026-08-09",
+  masterUpdated: "2026-08-09",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🧮",
@@ -112,7 +113,7 @@ Agora conecte o preço à sua mão. [Conte os seus **outs**](/pt/blog/holdem-out
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Seu projeto | Outs | Equity, 1 carta | Equity, 2 cartas |
+| Seu projeto | Outs | Equity, 1 carta (turn → river) | Equity, 2 cartas (flop → river) |
 |:---|:---:|:---:|:---:|
 | Flush + sequência aberta | 15 | 32,6% | 54,1% |
 | Flush draw | 9 | 19,6% | 35,0% |
@@ -122,7 +123,7 @@ Agora conecte o preço à sua mão. [Conte os seus **outs**](/pt/blog/holdem-out
 
 </div>
 
-Leia contra a tabela por tamanho de aposta acima. Enfrentando uma ==aposta de meio pote (precisa de 25%)==: com duas cartas por vir, um flush draw (35%) é um call claro — mas numa *única* carta, esse mesmo projeto é só 19,6%, o que **não** atinge o preço sozinho. Essa diferença é exatamente onde as implied odds entram.
+Leia contra a tabela por tamanho de aposta acima. Enfrentando uma ==aposta de meio pote (precisa de 25%)==: com duas cartas por vir, um flush draw (35%) é um call claro — mas numa *única* carta, esse mesmo projeto é só 19,1%, o que **não** atinge o preço sozinho. Essa diferença é exatamente onde as implied odds entram.
 
 ---
 
@@ -173,7 +174,7 @@ Cometi cada um deles antes que me quebrassem. Fique de olho:
 
 ### Uma mão real, do início ao fim
 
-Estou com ==b:A♥ K♥== num flop ==Q♥ 7♥ 2♣== — o nut flush draw, 9 outs. O pote é $100, o vilão aposta $50. Minhas pot odds: estou recebendo 3 para 1, então preciso de **25%**. Com duas cartas por vir estou em ~35%, e mesmo contando só a próxima carta (19,6%) minhas implied odds são enormes — se cair uma copas eu estaco uma mão de top pair. ==g:Call fácil.==
+Estou com ==b:A♥ K♥== num flop ==Q♥ 7♥ 2♣== — o nut flush draw, 9 outs. O pote é $100, o vilão aposta $50. Minhas pot odds: estou recebendo 3 para 1, então preciso de **25%**. Com duas cartas por vir estou em ~35%, e mesmo contando só a próxima carta (19,1%) minhas implied odds são enormes — se cair uma copas eu estaco uma mão de top pair. ==g:Call fácil.==
 
 O turn é o 3♠ — um brick. O pote é $200 e o vilão dá all-in de $200 — uma aposta do tamanho do pote, então agora estou recebendo só 2 para 1 e preciso de **33%**. Mas com **uma carta restante meu flush é só 19,6%**. O preço direto diz fold; minhas implied odds agora são zero porque o vilão está all-in e não pode me pagar mais nada. ==r:Fold correto== — e o spot exato onde a "esperança" costumava me custar um stack.
 

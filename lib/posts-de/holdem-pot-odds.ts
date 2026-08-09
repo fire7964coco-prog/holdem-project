@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "Um die Pot Odds zu berechnen, teilst du den Betrag, den du callen musst, durch den gesamten Pot nach deinem Call. Ein $50-Call in einen $150-Pot = 50 ÷ 200 = 25% — du brauchst also mindestens 25% Equity, damit der Call profitabel ist.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-07-03",
+  updated: "2026-08-09",
+  masterUpdated: "2026-08-09",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "🧮",
@@ -112,7 +113,7 @@ Jetzt verbinde den Preis mit deiner Hand. [Zähle deine **Outs**](/de/blog/holde
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Dein Draw | Outs | Equity, 1 Karte | Equity, 2 Karten |
+| Dein Draw | Outs | Equity, 1 Karte (Turn → River) | Equity, 2 Karten (Flop → River) |
 |:---|:---:|:---:|:---:|
 | Flush + Open-Ender | 15 | 32,6% | 54,1% |
 | Flushdraw | 9 | 19,6% | 35,0% |
@@ -122,7 +123,7 @@ Jetzt verbinde den Preis mit deiner Hand. [Zähle deine **Outs**](/de/blog/holde
 
 </div>
 
-Lies sie gegen die Bet-Size-Tabelle oben. Gegen eine ==Half-Pot-Bet (25% nötig)==: mit zwei kommenden Karten ist ein Flushdraw (35%) ein klarer Call — aber auf einer *einzelnen* Karte ist derselbe Draw nur 19,6%, was den Preis für sich genommen **nicht** trifft. Genau diese Lücke ist der Ort, an dem Implied Odds ins Spiel kommen.
+Lies sie gegen die Bet-Size-Tabelle oben. Gegen eine ==Half-Pot-Bet (25% nötig)==: mit zwei kommenden Karten ist ein Flushdraw (35%) ein klarer Call — aber auf einer *einzelnen* Karte ist derselbe Draw nur 19,1%, was den Preis für sich genommen **nicht** trifft. Genau diese Lücke ist der Ort, an dem Implied Odds ins Spiel kommen.
 
 ---
 
@@ -173,7 +174,7 @@ Ich habe jeden einzelnen davon gemacht, bevor sie mich pleitegemacht haben. Acht
 
 ### Eine echte Hand, von Anfang bis Ende
 
-Ich halte ==b:A♥ K♥== auf einem ==Q♥ 7♥ 2♣== Flop — der Nut-Flushdraw, 9 Outs. Der Pot ist $100, Villain bettet $50. Meine Pot Odds: ich bekomme 3:1, also brauche ich **25%**. Mit zwei kommenden Karten liege ich bei ~35%, und selbst wenn ich nur die nächste Karte zähle (19,6%), sind meine Implied Odds riesig — kommt ein Herz, nehme ich einer Top-Pair-Hand den Stack ab. ==g:Easy Call.==
+Ich halte ==b:A♥ K♥== auf einem ==Q♥ 7♥ 2♣== Flop — der Nut-Flushdraw, 9 Outs. Der Pot ist $100, Villain bettet $50. Meine Pot Odds: ich bekomme 3:1, also brauche ich **25%**. Mit zwei kommenden Karten liege ich bei ~35%, und selbst wenn ich nur die nächste Karte zähle (19,1%), sind meine Implied Odds riesig — kommt ein Herz, nehme ich einer Top-Pair-Hand den Stack ab. ==g:Easy Call.==
 
 Der Turn ist die 3♠ — ein Brick. Der Pot ist $200 und Villain jammt $200 — eine Pot-Size-Bet, also bekomme ich jetzt nur noch 2:1 und brauche **33%**. Aber mit **einer verbleibenden Karte ist mein Flush nur 19,6%**. Der direkte Preis sagt Fold; meine Implied Odds sind jetzt null, weil Villain all-in ist und mir nichts mehr zahlen kann. ==r:Korrekter Fold== — und genau der Spot, an dem „Hoffnung“ mich früher einen Stack gekostet hat.
 

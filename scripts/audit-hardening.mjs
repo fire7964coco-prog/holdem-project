@@ -1580,6 +1580,14 @@ if (argv.includes('--schema')) {
   }
 }
 
+/* 미러 드리프트 — EN 마스터가 고쳐졌는데 번역본이 안 따라온 글.
+   로케일 모드로 돌리면 «항상» 같이 본다(그 언어를 손보는 세션이 바로 그때 알아야 하니까).
+   전체 모드에서는 --drift 로 부른다. 판정 로직은 scripts/check-mirror-drift.mjs 한 곳에만 있다. */
+if (oneLocale || argv.includes('--drift')) {
+  const { checkDrift, printDriftSummary } = await import('./check-mirror-drift.mjs');
+  printDriftSummary(checkDrift({ locale: oneLocale ?? null }));
+}
+
 /* --uncovered — 기계가 판정 못 한 카드 문단을 원문 그대로 뽑는다. 사람이 직접 검산할 목록이다. */
 if (argv.includes('--uncovered')) {
   const want = new Set(report.map((r) => r.slug));

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Para calcular las pot odds, divide lo que tienes que igualar entre el bote total después de tu call. Igualar $50 en un bote de $150 = 50 ÷ 200 = 25% — necesitas al menos un 25% de equity para que el call sea rentable.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-07-24",
-  masterUpdated: "2026-07-18",
+  updated: "2026-08-09",
+  masterUpdated: "2026-08-09",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🧮",
@@ -113,7 +113,7 @@ Ahora conecta el precio con tu mano. [Cuenta tus **outs**](/es/blog/holdem-outs 
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Tu proyecto | Outs | Equity, 1 carta | Equity, 2 cartas |
+| Tu proyecto | Outs | Equity, 1 carta (turn → river) | Equity, 2 cartas (flop → river) |
 |:---|:---:|:---:|:---:|
 | Color + escalera abierta | 15 | 32.6% | 54.1% |
 | Proyecto de color | 9 | 19.6% | 35.0% |
@@ -123,7 +123,7 @@ Ahora conecta el precio con tu mano. [Cuenta tus **outs**](/es/blog/holdem-outs 
 
 </div>
 
-Léelo frente a la tabla de tamaños de apuesta de arriba. Frente a una ==apuesta de medio bote (necesitas 25%)==: con dos cartas por venir, un proyecto de color (35%) es un call claro — pero con una *sola* carta, ese mismo proyecto es solo el 19.6%, que **no** cumple el precio por sí solo. Ese hueco es exactamente donde entran las odds implícitas.
+Léelo frente a la tabla de tamaños de apuesta de arriba. Frente a una ==apuesta de medio bote (necesitas 25%)==: con dos cartas por venir, un proyecto de color (35%) es un call claro — pero con una *sola* carta, ese mismo proyecto es solo el 19.1%, que **no** cumple el precio por sí solo. Ese hueco es exactamente donde entran las odds implícitas.
 
 ---
 
@@ -174,7 +174,7 @@ Cometí todos y cada uno de estos antes de que me dejaran sin fichas. Estate ate
 
 ### Una mano real, de principio a fin
 
-Tengo ==b:A♥ K♥== en un flop ==Q♥ 7♥ 2♣== — el proyecto al color nut, 9 outs. El bote es de $100, el villano apuesta $50. Mis pot odds: estoy recibiendo 3 a 1, así que necesito un **25%**. Con dos cartas por venir estoy en ~35%, e incluso contando solo la carta siguiente (19.6%) mis odds implícitas son enormes — si cae un corazón le saco todo el stack a una mano de top pair. ==g:Call fácil.==
+Tengo ==b:A♥ K♥== en un flop ==Q♥ 7♥ 2♣== — el proyecto al color nut, 9 outs. El bote es de $100, el villano apuesta $50. Mis pot odds: estoy recibiendo 3 a 1, así que necesito un **25%**. Con dos cartas por venir estoy en ~35%, e incluso contando solo la carta siguiente (19.1%) mis odds implícitas son enormes — si cae un corazón le saco todo el stack a una mano de top pair. ==g:Call fácil.==
 
 El turn es el 3♠ — un ladrillo. El bote es de $200 y el villano empuja $200 — una apuesta del tamaño del bote, así que ahora solo estoy recibiendo 2 a 1 y necesito un **33%**. Pero con **una sola carta por venir mi color es solo el 19.6%**. El precio directo dice fold; mis odds implícitas ahora son cero porque el villano está all-in y no puede pagarme nada más. ==r:Fold correcto== — y el momento exacto en el que la "esperanza" solía costarme un stack.
 
