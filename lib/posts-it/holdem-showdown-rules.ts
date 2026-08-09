@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Allo showdown mostra per primo l'ultimo giocatore che ha puntato o rilanciato. Se al river hanno fatto tutti check, mostra per primo il primo giocatore attivo alla sinistra del bottone. Se hai perso puoi passare le carte coperte, ma gli avversari possono chiedere di vedere una mano che è stata pagata.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-07-13",
+  updated: "2026-08-09",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -166,7 +166,7 @@ A. L'ultimo giocatore che ha fatto un'azione aggressiva (puntare o rilanciare) n
 
 **Q. Devi mostrare le carte se ti pagano allo showdown?**
 
-A. Sì — se sei stato l'ultimo a puntare o rilanciare al river, devi mostrare per primo quando ti pagano. Se hai pagato la puntata di un altro, puoi passare le carte coperte dopo aver visto la sua mano se hai perso. Detto questo, in gran parte delle sale qualsiasi giocatore al tavolo può chiedere al dealer di rivelare una mano pagata che è stata passata nel muck.
+A. Sì — se sei stato l'ultimo a puntare o rilanciare al river, devi mostrare per primo quando ti pagano. Se hai pagato la puntata di un altro, puoi passare le carte coperte dopo aver visto la sua mano se hai perso. Detto questo, in gran parte delle sale qualsiasi giocatore che ha ricevuto le carte in quella mano può chiedere al dealer di rivelare una mano pagata che è stata passata nel muck.
 
 **Q. Puoi passare le carte allo showdown senza mostrarle?**
 

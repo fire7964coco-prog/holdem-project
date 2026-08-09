@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "En Texas Hold'em siempre juegas la mejor mano de 5 cartas entre 7 (2 cartas propias + 5 cartas comunitarias) — usando las dos, una, o ninguna (jugar con la mesa). Repasa las 7 cartas en un orden fijo: color → escalera → parejas → carta alta.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-07-24",
+  updated: "2026-08-09",
   masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "12 min",
@@ -137,7 +137,7 @@ Un color necesita 5 cartas de un mismo palo entre tus 7. La mesa te dice al inst
 | 0–2 | No hay color posible para nadie |
 | 3 | Quien tenga 2 de ese palo tiene color |
 | 4 | Quien tenga solo 1 de ese palo tiene color |
-| 5 | La propia mesa es color — una carta más alta de ese palo en tu mano lo mejora |
+| 5 | La propia mesa es color — solo lo mejora una carta de ese palo más alta que la más baja de la mesa |
 
 ![NO ES COLOR — tener A♠ con solo 3 picas en la mesa no forma color en Texas Hold'em](/images/holdem-reading-flush-draw-mistake.webp)
 

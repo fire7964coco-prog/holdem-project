@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "德州扑克中每位玩家发 2 张底牌，配合 5 张公共牌，经过四轮下注后，能组成最大 5 张牌型的玩家获胜。",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-07-24",
+  updated: "2026-08-09",
   masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "14 分钟",
@@ -350,7 +350,7 @@ export const POST: Post = {
 | 7 | 三条 | 4.8%——好牌，但要看牌面 |
 | 8 | 两对 | 23.5%——最常见的“强牌” |
 | 9 | 一对 | 43.8%——摊牌时出现最多的牌型 |
-| 10 | 高牌 | 17.4%——摊牌时最弱的牌型；主要靠诈唬取胜 |
+| 10 | 高牌 | 17.4%——摊牌时最弱的牌型；通常只有大家都没中时才赢 |
 
 如果两名玩家牌型相同，就比较各自牌型中最关键的高牌——这就是[踢脚牌与平局判定规则](/zh/blog/holdem-tiebreak-rules)。如果双方最好的五张牌完全一样，[底池平分](/zh/blog/holdem-split-pot-rules)。
 

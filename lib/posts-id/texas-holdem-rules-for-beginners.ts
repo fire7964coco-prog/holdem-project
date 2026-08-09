@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Di Texas Hold'em, setiap pemain menerima 2 hole cards, ada 5 kartu bersama di tengah meja, dan tangan poker 5 kartu terbaik menang setelah empat ronde taruhan.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-07-12",
+  updated: "2026-08-09",
   keepImagesInBody: true,
   readTime: "14 menit",
   emoji: "♠️",
@@ -347,7 +347,7 @@ Peringkat kartu dasar dari terkuat ke terlemah (dengan seberapa sering tiap tang
 | 7 | Three of a Kind | 4,8% — tangan bagus, tapi board menentukan |
 | 8 | Two Pair | 23,5% — tangan "kuat" yang paling umum |
 | 9 | One Pair | 43,8% — tangan paling sering muncul di showdown |
-| 10 | High Card | 17,4% — tangan terlemah di showdown; menang terutama lewat gertakan |
+| 10 | High Card | 17,4% — tangan terlemah di showdown; biasanya menang hanya kalau yang lain juga tidak dapat apa-apa |
 
 Kalau dua pemain punya tipe tangan yang sama, bandingkan kartu tertinggi yang relevan — lihat [aturan kicker dan tie-breaker](/id/blog/holdem-tiebreak-rules). Kalau lima kartu terbaiknya persis sama, pot [dibagi rata (split)](/id/blog/holdem-split-pot-rules).
 

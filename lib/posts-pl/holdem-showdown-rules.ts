@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Przy showdownie karty odkrywa najpierw ten, kto ostatni postawił lub przebił. Jeśli na riverze wszyscy sprawdzili czekiem, pierwszy odkrywa aktywny gracz na lewo od buttona. Możesz zrzucić karty do muck bez pokazywania, gdy przegrałeś, ale rywale mogą poprosić o pokazanie sprawdzonego układu.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-07-13",
+  updated: "2026-08-09",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -59,7 +59,7 @@ Kiedy ostatni agresor pokaże swój układ, reszta graczy może:
 - **Pokazać swój układ**, jeśli myślą, że wygrywają
 - **Zrzucić karty zakryte do muck**, jeśli widzą, że przegrali — nie trzeba odsłaniać swoich kart
 
-==r:Jest jednak jeden ważny wyjątek:== jeśli twój zakład na riverze został sprawdzony, sprawdzający zapłacił pełną cenę za obejrzenie twojego układu. Każdy gracz, który brał udział w rozdaniu, może poprosić rozdającego, by odwrócił zrzucony układ, który był częścią sprawdzonego showdownu — zasada **„I want to see that hand"** w większości pokojów pokerowych. (Nie myl jej z „show one, show all", która mówi, że jeśli dobrowolnie pokażesz karty jednemu graczowi, cały stół ma prawo je zobaczyć.)
+==r:Jest jednak jeden ważny wyjątek:== jeśli twój zakład na riverze został sprawdzony, sprawdzający zapłacił pełną cenę za obejrzenie twojego układu. Każdy gracz, któremu rozdano karty w tym rozdaniu, może poprosić rozdającego, by odwrócił zrzucony układ, który był częścią sprawdzonego showdownu — zasada **„I want to see that hand"** w większości pokojów pokerowych. (Nie myl jej z „show one, show all", która mówi, że jeśli dobrowolnie pokażesz karty jednemu graczowi, cały stół ma prawo je zobaczyć.)
 
 Zasada praktyczna: ==jeśli blefowałeś i cię sprawdzono, zrzucaj karty szybko. Jeśli grałeś na wartość i cię sprawdzono, odkryj je.==
 
@@ -166,7 +166,7 @@ A. Karty musi odkryć najpierw ten gracz, który jako ostatni wykonał akcję ag
 
 **Q. Czy musisz pokazać karty, jeśli zostałeś sprawdzony przy showdownie?**
 
-A. Tak — jeśli byłeś ostatnim, który postawił lub przebił na riverze, musisz odkryć pierwszy, gdy cię sprawdzą. Jeśli sam sprawdziłeś zakład kogoś innego, możesz zrzucić karty zakryte do muck po zobaczeniu jego układu, o ile przegrałeś. Jednak w większości pokojów pokerowych każdy gracz przy stole może poprosić rozdającego o odsłonięcie sprawdzonego układu, który zrzucono do muck.
+A. Tak — jeśli byłeś ostatnim, który postawił lub przebił na riverze, musisz odkryć pierwszy, gdy cię sprawdzą. Jeśli sam sprawdziłeś zakład kogoś innego, możesz zrzucić karty zakryte do muck po zobaczeniu jego układu, o ile przegrałeś. Jednak w większości pokojów pokerowych każdy gracz, któremu rozdano karty w tym rozdaniu, może poprosić rozdającego o odsłonięcie sprawdzonego układu, który zrzucono do muck.
 
 **Q. Czy możesz zrzucić karty przy showdownie bez pokazywania?**
 

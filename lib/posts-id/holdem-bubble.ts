@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "Bubble adalah spot tepat sebelum uang, di mana satu eliminasi lagi membayar semua orang lainnya. Karena bust berarti tidak menang apa-apa, bertahan lebih berharga daripada chip yang bisa Anda dapatkan — jadi calling range mengetat keras sementara shove tetap lebar. Big stack menyerang, medium stack paling terjebak (bukan short stack), dan di bubble satelit Anda fold semuanya, bahkan aces, begitu kursi Anda terkunci.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-07-09",
+  updated: "2026-08-09",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "13 mnt",
   emoji: "🫧",
@@ -134,7 +135,7 @@ Jadi sebuah chip-EV coin flip yang akan Anda ambil pada 50% menjadi ==fold yang 
 
 **Ketika uang sudah dekat, turnamen beralih ke "hand-for-hand" — setiap meja memainkan persis satu tangan pada waktu yang sama, lalu menunggu — khusus untuk menghentikan pemain melakukan stall ke dalam uang.** Tanpa itu, pemain di meja lambat bisa fold tangan demi tangan sementara meja lebih cepat membakar bubble. Hand-for-hand meratakan medan:
 
-- **Cara kerjanya:** tournament director menjeda jam; semua meja membagikan satu tangan, dan tidak ada meja yang memulai tangan berikutnya sampai setiap meja selesai. Jika dua pemain bust pada hand-for-hand yang sama, yang chip-nya lebih sedikit di awal tangan biasanya mendapat finis lebih rendah (bubble).
+- **Cara kerjanya:** tournament director menjeda jam; semua meja membagikan satu tangan, dan tidak ada meja yang memulai tangan berikutnya sampai setiap meja selesai. Jika dua pemain bust pada hand-for-hand yang sama di **meja yang sama**, yang chip-nya lebih sedikit di awal tangan mendapat finis lebih rendah (bubble); kalau mereka bust di **meja berbeda**, keduanya dianggap seri dan membagi dua hadiah untuk posisi tersebut.
 - **Stalling:** memakai seluruh time bank pada setiap keputusan untuk melihat lebih sedikit tangan (dan fold ke dalam uang). Big stack tidak punya alasan untuk stall — mereka ingin lebih banyak tangan untuk menyerang. Short dan medium stack kadang stall untuk bertahan, ==tapi stalling berlebihan bisa mengundang clock call atau penalti==, jadi tank sewajarnya.
 - **Eksploitasi:** karena semua orang lain melambat, big stack yang terus memberi tekanan selama hand-for-hand mengumpulkan blind dan ante hampir tanpa perlawanan.
 

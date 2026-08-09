@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "Dos 169 tipos de mãos iniciais, só uma pequena fatia do topo — cerca de 15–20% das mãos que você recebe — dá lucro pra um iniciante. Pares grandes (AA–TT) e AK aumentam de qualquer assento; quanto mais tarde você age, mais amplo você abre — de ~13% no under the gun a ~43% no button (ainda mais amplo no 6-max). Comece com uma tabela simplificada e adicione as tabelas GTO de preflop quando o aumentar-ou-foldar já for automático.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-07-11",
+  updated: "2026-08-09",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🂡",
@@ -156,7 +157,7 @@ O erro a evitar é jogar uma tabela 9-max num jogo 6-max: você vai foldar mãos
 
 ## Que porcentagem das mãos iniciais você deveria jogar?
 
-Ao longo de uma sessão inteira, ==uma boa meta pra iniciante é jogar mais ou menos 15–20% das mãos que você recebe== — o que significa foldar 80–85% no preflop. Isso não é um número fixo, é a *média* da tabela por posição acima: ~13% do UTG, ~17% do MP, ~27% do cutoff, ~43% do button.
+Ao longo de uma sessão inteira, ==uma boa meta pra iniciante é jogar mais ou menos 15–20% das mãos que você recebe== — o que significa foldar 80–85% no preflop. Isso não é um número fixo: os números por posição acima — ~13% do UTG, ~17% do MP, ~27% do cutoff, ~43% do button — são o quão largo você *abre um pote que ninguém abriu*. Sua média de sessão fica abaixo da média bruta desses números, porque muitas vezes você está encarando um raise (aí você continua com bem menos mãos) e passa muitas órbitas preso nas posições iniciais e nos blinds.
 
 :::stat[15–20%] das mãos recebidas — um range saudável pra iniciante no 9-max:::
 

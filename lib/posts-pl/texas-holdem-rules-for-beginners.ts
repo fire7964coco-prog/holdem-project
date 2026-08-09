@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "W Texas Hold'em każdy gracz dostaje 2 karty zakryte, na stole leży 5 kart wspólnych, a po czterech rundach licytacji wygrywa najlepszy 5-kartowy układ.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-07-13",
+  updated: "2026-08-09",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -348,7 +348,7 @@ Podstawowy ranking układów, od najsilniejszego do najsłabszego (z częstości
 | 7 | Trójka | 4,8% — dobry układ, ale liczy się board |
 | 8 | Dwie pary | 23,5% — najczęstszy „mocny" układ |
 | 9 | Para | 43,8% — najczęstszy układ na showdownie |
-| 10 | Najwyższa karta | 17,4% — najsłabszy układ na showdownie; wygrywa głównie blefem |
+| 10 | Najwyższa karta | 17,4% — najsłabszy układ na showdownie; zwykle wygrywa tylko wtedy, gdy pozostali też nic nie trafili |
 
 Jeśli dwaj gracze mają ten sam typ układu, porównuje się najwyższe istotne karty — to reguły kickera i rozstrzygania remisów. Jeśli najlepsze pięć kart jest dokładnie takich samych, pula zostaje podzielona.
 

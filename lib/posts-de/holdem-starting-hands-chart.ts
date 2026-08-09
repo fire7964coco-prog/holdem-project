@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "Von den 169 Starthand-Typen ist nur eine kleine Spitzengruppe — etwa 15–20% der Hände, die du bekommst — für einen Anfänger profitabel. Große Paare (AA–TT) und AK raist du aus jeder Position; je später du agierst, desto weiter öffnest du — von ~13% unter der Gun bis ~43% am Button (im 6-Max nochmals weiter). Starte mit einem vereinfachten Chart, füge GTO-Preflop-Charts hinzu, sobald Raise-or-Fold automatisch sitzt.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-07-11",
+  updated: "2026-08-09",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🂡",
@@ -156,7 +157,7 @@ Der Fehler, den du vermeiden musst, ist ein 9-Max-Chart in einem 6-Max-Spiel zu 
 
 ## Welchen Prozentsatz der Starthände solltest du spielen?
 
-Über eine ganze Session hinweg ist ==ein solides Anfänger-Ziel, rund 15–20% der Hände zu spielen, die du bekommst== — was bedeutet, 80–85% preflop zu folden. Das ist keine flache Zahl, es ist der *Durchschnitt* des positionsbasierten Charts oben: ~13% von UTG, ~17% von MP, ~27% vom Cutoff, ~43% vom Button.
+Über eine ganze Session hinweg ist ==ein solides Anfänger-Ziel, rund 15–20% der Hände zu spielen, die du bekommst== — was bedeutet, 80–85% preflop zu folden. Das ist keine flache Zahl: Die Zahlen pro Sitz oben — ~13% von UTG, ~17% von MP, ~27% vom Cutoff, ~43% vom Button — geben an, wie weit du einen *noch nicht eröffneten* Pot eröffnest. Dein Session-Schnitt liegt unter dem rohen Mittelwert davon, weil du oft einer Erhöhung gegenüberstehst (dann machst du mit weit weniger Händen weiter) und viele Runden in frühen Positionen und den Blinds feststeckst.
 
 :::stat[15–20%] der ausgeteilten Hände — eine gesunde Anfänger-Range im 9-Max:::
 

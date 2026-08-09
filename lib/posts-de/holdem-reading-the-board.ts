@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "Im Texas Hold'em spielst du immer die beste 5-Karten-Hand aus 7 (2 Hole Cards + 5 Gemeinschaftskarten) — mit beiden Hole Cards, einer oder gar keiner („playing the board“). Scanne alle 7 Karten in fester Reihenfolge: Flush → Straße → gepaarte Ränge → High Card.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-07-11",
+  updated: "2026-08-09",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "🃏",
@@ -136,7 +137,7 @@ Ein Flush braucht 5 Karten einer Farbe unter deinen 7. Das Board sagt dir sofort
 | 0–2 | Kein Flush für irgendjemanden möglich |
 | 3 | Wer 2 dieser Farbe hält, hat einen Flush |
 | 4 | Wer nur 1 dieser Farbe hält, hat einen Flush |
-| 5 | Das Board selbst ist ein Flush — eine höhere Karte dieser Farbe in deiner Hand verbessert ihn |
+| 5 | Das Board selbst ist ein Flush — nur eine Karte dieser Farbe, die höher ist als die niedrigste auf dem Board, verbessert ihn |
 
 ![KEIN FLUSH — A♠ zu halten mit nur 3 Pik auf dem Board macht im Texas Hold'em keinen Flush](/images/holdem-reading-flush-draw-mistake.webp)
 

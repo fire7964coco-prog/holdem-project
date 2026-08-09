@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Trong Texas Hold'em, mỗi người chơi nhận 2 lá bài tẩy, dùng chung 5 lá bài chung, và tay bài poker 5 lá mạnh nhất sẽ thắng sau bốn vòng cược.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-07-13",
+  updated: "2026-08-09",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 phút",
@@ -348,7 +348,7 @@ Thứ hạng bài cơ bản từ mạnh nhất đến yếu nhất (kèm tần s
 | 7 | Xám (Three of a Kind) | 4,8% — tay bài tốt, nhưng còn tùy board |
 | 8 | Hai Đôi (Two Pair) | 23,5% — tay bài "mạnh" phổ biến nhất |
 | 9 | Một Đôi (One Pair) | 43,8% — tay bài xuất hiện nhiều nhất ở showdown |
-| 10 | Mậu Thầu (High Card) | 17,4% — tay bài yếu nhất ở showdown; thắng chủ yếu nhờ bluff |
+| 10 | Mậu Thầu (High Card) | 17,4% — tay bài yếu nhất ở showdown; thường chỉ thắng khi những người khác cũng trượt |
 
 Nếu hai người chơi có cùng loại tay bài, hãy so những lá cao nhất liên quan — đó là luật kicker và luật phân định thắng thua khi bằng nhau. Nếu 5 lá tốt nhất của cả hai giống hệt nhau, pot được chia đôi (split pot).
 

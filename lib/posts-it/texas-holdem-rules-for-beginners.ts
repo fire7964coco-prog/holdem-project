@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Nel Texas Hold'em ogni giocatore riceve 2 carte personali, si usano 5 carte comuni e, dopo quattro giri di puntate, vince la migliore mano di 5 carte.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-07-13",
+  updated: "2026-08-09",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -348,7 +348,7 @@ Classifica base dei punti dal più forte al più debole (con quanto spesso fai o
 | 7 | Tris (Three of a Kind) | 4,8% — buona mano, ma dipende dal board |
 | 8 | Doppia Coppia (Two Pair) | 23,5% — la mano "forte" più comune |
 | 9 | Coppia (One Pair) | 43,8% — la mano più frequente allo showdown |
-| 10 | Carta Alta (High Card) | 17,4% — la mano più debole allo showdown; vince soprattutto con il bluff |
+| 10 | Carta Alta (High Card) | 17,4% — la mano più debole allo showdown; di solito vince solo se anche gli altri non hanno preso nulla |
 
 Se due giocatori hanno lo stesso tipo di mano, si confrontano le carte più alte rilevanti — è la regola del kicker e degli spareggi. Se le migliori cinque carte sono esattamente identiche, il piatto si divide (split).
 

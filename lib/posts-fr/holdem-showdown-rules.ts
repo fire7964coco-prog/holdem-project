@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "À l'abattage, le dernier joueur à avoir misé ou relancé montre en premier. Si tout le monde a checké à la rivière, c'est le premier joueur actif à gauche du bouton qui montre en premier. Tu peux jeter tes cartes sans les montrer si tu as perdu, mais les adversaires peuvent demander à voir une main qui a été payée.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-07-13",
+  updated: "2026-08-09",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -166,7 +166,7 @@ A. Le dernier joueur à avoir fait une action agressive (miser ou relancer) au d
 
 **Q. Es-tu obligé de montrer tes cartes si on te paie à l'abattage ?**
 
-A. Oui — si tu étais le dernier à miser ou relancer à la rivière, tu dois montrer en premier quand on te paie. Si tu as payé la mise d'un autre, tu peux jeter tes cartes face cachée après avoir vu sa main si tu as perdu. Cela dit, dans la plupart des cardrooms, n'importe quel joueur de la table peut demander au donneur de révéler une main payée qui a été jetée au muck.
+A. Oui — si tu étais le dernier à miser ou relancer à la rivière, tu dois montrer en premier quand on te paie. Si tu as payé la mise d'un autre, tu peux jeter tes cartes face cachée après avoir vu sa main si tu as perdu. Cela dit, dans la plupart des cardrooms, tout joueur ayant reçu des cartes dans le coup peut demander au donneur de révéler une main payée qui a été jetée au muck.
 
 **Q. Peux-tu jeter tes cartes à l'abattage sans les montrer ?**
 

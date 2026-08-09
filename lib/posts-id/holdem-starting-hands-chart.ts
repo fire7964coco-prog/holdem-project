@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "Dari 169 tipe starting hand, hanya irisan atas kecil — sekitar 15–20% kartu yang Anda terima — yang profit untuk pemula. Pair besar (AA–TT) dan AK raise dari kursi mana pun; makin belakang Anda beraksi, makin lebar Anda open — dari ~13% di under the gun hingga ~43% di button (lebih lebar lagi di 6-max). Mulai dengan chart sederhana, tambahkan chart preflop GTO setelah raise-or-fold jadi otomatis.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-07-11",
+  updated: "2026-08-09",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "🂡",
@@ -156,7 +157,7 @@ Kesalahan yang harus dihindari adalah memainkan chart 9-max di game 6-max: Anda 
 
 ## Berapa Persen Starting Hand yang Harus Anda Mainkan?
 
-Sepanjang satu sesi penuh, ==target pemula yang solid adalah memainkan kira-kira 15–20% kartu yang Anda terima== — yang berarti fold 80–85% preflop. Itu bukan satu angka rata, itu *rata-rata* dari chart berbasis posisi di atas: ~13% dari UTG, ~17% dari MP, ~27% dari cutoff, ~43% dari button.
+Sepanjang satu sesi penuh, ==target pemula yang solid adalah memainkan kira-kira 15–20% kartu yang Anda terima== — yang berarti fold 80–85% preflop. Itu bukan satu angka rata: angka per posisi di atas — ~13% dari UTG, ~17% dari MP, ~27% dari cutoff, ~43% dari button — adalah seberapa lebar Anda *membuka pot yang belum dibuka siapa pun*. Rata-rata sesi Anda jatuh di bawah rata-rata mentah angka-angka itu, karena Anda sering menghadapi raise (di situ Anda lanjut dengan jauh lebih sedikit tangan) dan banyak orbit Anda tersangkut di posisi awal dan di blind.
 
 :::stat[15–20%] kartu yang dibagi — range pemula yang sehat di 9-max:::
 

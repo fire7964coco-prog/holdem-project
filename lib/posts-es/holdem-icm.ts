@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "El ICM (Independent Chip Model, Modelo de Fichas Independiente) convierte tu stack de fichas de torneo en su valor real en premios, usando los pagos y los stacks de todos. Como solo se gana un primer premio, doblar tus fichas nunca dobla tu dinero — así que el stack del líder vale menos que su porcentaje de fichas, y los stacks cortos valen más. Ese desfase es la razón por la que foldeas en la burbuja manos que serían calls fáciles en un cash game.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-07-24",
+  updated: "2026-08-09",
   masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "13 min",
@@ -173,7 +173,7 @@ Un leak común es sobreaplicar el ICM: foldear hasta quedarte en stack corto "pa
 **El ICM es el mejor modelo simple que tenemos, pero es una aproximación — asume que todos los jugadores tienen la misma habilidad e ignora casi todo salvo los tamaños de los stacks.** Sé honesto sobre lo que deja fuera:
 
 - **Habilidad.** El ICM trata a un campeón del mundo y a un novato con stacks iguales como iguales. Las fichas de un mejor jugador valen más de lo que dice el modelo.
-- **Posición.** Un stack de 3 ciegas grandes en el botón (a punto de ver flops baratos) vale más que el mismo stack en la ciega grande (a punto de verse obligado a entrar). El ICM no ve los asientos.
+- **Posición.** Un stack de 3 ciegas grandes en el botón (que paga las ciegas el último y así se compra unas manos gratis antes de verse obligado a entrar) vale más que el mismo stack en la ciega grande (all-in forzado la mano siguiente). El ICM no ve los asientos.
 - **Ciegas y juego futuro.** El ICM congela el torneo en este instante; ignora las ciegas que suben, los antes y cómo se van a jugar de verdad las próximas manos.
 
 Incluso hay respaldo empírico para su punto ciego: un gran estudio de 2025 que puso a prueba el ICM contra resultados reales de torneos encontró que tiende a ==infravalorar los stacks grandes y sobrevalorar los stacks cortos==, en parte porque un líder en fichas hábil puede aprovechar la presión del ICM para ganar *más* de lo que predice el modelo bruto. Los solvers avanzados añaden una corrección de "juego futuro" precisamente por esta razón. Nada de eso hace que el ICM esté mal — lo convierte en una primera aproximación sólida que ajustas por habilidad y posición, no en una ley de la física.

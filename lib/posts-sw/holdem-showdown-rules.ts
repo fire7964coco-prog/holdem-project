@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Kwenye showdown, mchezaji wa mwisho aliye-bet au ku-raise anaonyesha kwanza. Kama river ilipita kwa check kutoka kwa wote, mchezaji wa kwanza aliye hai upande wa kushoto wa button anaonyesha kwanza. Waweza ku-muck bila kuonyesha kama umeshinda kushindwa, lakini wapinzani wanaweza kuomba kuona mkono uliolipwa (called).",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-07-13",
+  updated: "2026-08-09",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -166,7 +166,7 @@ A. Mchezaji wa mwisho aliyefanya hatua ya kushambulia (bet au raise) kwenye raun
 
 **Q. Je, lazima uonyeshe karata zako ukipewa call kwenye showdown?**
 
-A. Ndiyo — kama ulikuwa wa mwisho ku-bet au ku-raise kwenye river, lazima uonyeshe kwanza unapopewa call. Kama uli-call bet ya mtu mwingine, waweza ku-muck karata zako chali (face-down) baada ya kuona mkono wake kama umeshindwa. Hata hivyo, katika cardroom nyingi mchezaji yeyote mezani anaweza kumwomba dila afichue mkono uliolipwa (called) uliopigwa muck.
+A. Ndiyo — kama ulikuwa wa mwisho ku-bet au ku-raise kwenye river, lazima uonyeshe kwanza unapopewa call. Kama uli-call bet ya mtu mwingine, waweza ku-muck karata zako chali (face-down) baada ya kuona mkono wake kama umeshindwa. Hata hivyo, katika cardroom nyingi mchezaji yeyote aliyegawiwa karata kwenye mkono huo anaweza kumwomba dila afichue mkono uliolipwa (called) uliopigwa muck.
 
 **Q. Waweza ku-muck kwenye showdown bila kuonyesha?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Saat showdown, pemain terakhir yang bet atau raise buka kartu duluan. Kalau river di-cek habis, pemain aktif pertama di kiri tombol dealer yang buka duluan. Anda boleh muck tanpa menunjukkan kartu kalau kalah, tapi lawan boleh minta melihat hand yang sudah di-call.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-07-13",
+  updated: "2026-08-09",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 menit",
@@ -166,7 +166,7 @@ A. Pemain terakhir yang melakukan aksi agresif (bet atau raise) di ronde taruhan
 
 **Q. Apakah Anda wajib menunjukkan kartu kalau di-call saat showdown?**
 
-A. Ya — kalau Anda pemain terakhir yang bet atau raise di river, Anda wajib buka duluan saat di-call. Kalau Anda yang call bet orang lain, Anda boleh muck menghadap ke bawah setelah melihat hand-nya kalau Anda kalah. Tapi di kebanyakan cardroom, setiap pemain di meja bisa minta dealer membuka hand yang di-call tapi di-muck.
+A. Ya — kalau Anda pemain terakhir yang bet atau raise di river, Anda wajib buka duluan saat di-call. Kalau Anda yang call bet orang lain, Anda boleh muck menghadap ke bawah setelah melihat hand-nya kalau Anda kalah. Tapi di kebanyakan cardroom, setiap pemain yang dibagikan kartu di hand itu bisa minta dealer membuka hand yang di-call tapi di-muck.
 
 **Q. Boleh muck saat showdown tanpa menunjukkan kartu?**
 

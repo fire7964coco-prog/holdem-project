@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Regras de showdown no Texas Hold'em: quem mostra primeiro, muck e slow roll",
   seoTitle: "Quem mostra primeiro no showdown? Regras e muck no poker",
   desc: "Pagou o river e ninguém vira as cartas? Veja quem mostra primeiro no showdown, quando dá para dar muck sem mostrar e por que slow roll pega mal no poker.",
-  tldr: "No showdown, o último jogador que apostou ou aumentou mostra primeiro. Se todos deram check no river, o primeiro jogador ativo à esquerda do botão abre o jogo. Quem perdeu pode dar muck sem mostrar, mas qualquer jogador pode pedir para ver uma mão que participou de um showdown pago.",
+  tldr: "No showdown, o último jogador que apostou ou aumentou mostra primeiro. Se todos deram check no river, o primeiro jogador ativo à esquerda do botão abre o jogo. Quem perdeu pode dar muck sem mostrar, mas qualquer jogador que recebeu cartas na mão pode pedir para ver uma mão que participou de um showdown pago.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-07-12",
+  updated: "2026-08-09",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -166,7 +166,7 @@ A. O último jogador que fez uma ação agressiva (aposta ou aumento) na última
 
 **Q. Sou obrigado a mostrar as cartas se pagarem minha aposta no showdown?**
 
-A. Sim — se você foi o último a apostar ou aumentar no river, você mostra primeiro quando é pago. Se foi você quem pagou a aposta de alguém, pode dar muck com as cartas viradas para baixo depois de ver a mão dele, caso tenha perdido. Porém, na maioria dos clubes, qualquer jogador da mesa pode pedir ao dealer para revelar uma mão paga que foi descartada.
+A. Sim — se você foi o último a apostar ou aumentar no river, você mostra primeiro quando é pago. Se foi você quem pagou a aposta de alguém, pode dar muck com as cartas viradas para baixo depois de ver a mão dele, caso tenha perdido. Porém, na maioria dos clubes, qualquer jogador que recebeu cartas na mão pode pedir ao dealer para revelar uma mão paga que foi descartada.
 
 **Q. Dá para dar muck no showdown sem mostrar?**
 

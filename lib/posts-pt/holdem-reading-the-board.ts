@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "No Texas Hold'em você sempre joga a melhor mão de 5 cartas entre 7 (2 cartas na mão + 5 comunitárias) — usando as duas cartas, uma só, ou nenhuma (jogar a mesa). Varra as 7 cartas numa ordem fixa: flush → sequência → valores pareados → carta alta.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-07-11",
+  updated: "2026-08-09",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🃏",
@@ -136,7 +137,7 @@ Um flush precisa de 5 cartas de um mesmo naipe entre suas 7. A mesa te diz na ho
 | 0–2 | Nenhum flush possível para ninguém |
 | 3 | Quem tiver 2 desse naipe tem flush |
 | 4 | Quem tiver só 1 desse naipe tem flush |
-| 5 | A própria mesa é um flush — uma carta mais alta desse naipe na sua mão melhora |
+| 5 | A própria mesa é um flush — só melhora com uma carta desse naipe mais alta que a mais baixa da mesa |
 
 ![NÃO É FLUSH — ter A♠ com só 3 espadas na mesa não forma flush no Texas Hold'em](/images/holdem-reading-flush-draw-mistake.webp)
 

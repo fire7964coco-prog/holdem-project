@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Showdown'da son bahis yapan ya da yükselten oyuncu kartını önce açar. River'da herkes check dediyse, buton'un solundaki ilk aktif oyuncu önce gösterir. Kaybettiysen göstermeden muck yapabilirsin, ama rakipler call edilmiş bir eli görmeyi isteyebilir.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-07-13",
+  updated: "2026-08-09",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 dk",
@@ -166,7 +166,7 @@ A. Son bahis turunda agresif aksiyon yapan (bahis ya da yükseltme) son oyuncu �
 
 **Q. Showdown'da call edilirsen kartlarını göstermek zorunda mısın?**
 
-A. Evet — river'da son bahis yapan ya da yükselten sensen, call edildiğinde önce sen göstermek zorundasın. Başkasının bahsini call ettiysen, elini gördükten sonra kaybettiysen yüzü kapalı muck yapabilirsin. Ancak çoğu casinoda masadaki herhangi bir oyuncu, muck'a atılmış call edilmiş bir eli krupiyenin açmasını isteyebilir.
+A. Evet — river'da son bahis yapan ya da yükselten sensen, call edildiğinde önce sen göstermek zorundasın. Başkasının bahsini call ettiysen, elini gördükten sonra kaybettiysen yüzü kapalı muck yapabilirsin. Ancak çoğu casinoda o ele dağıtılmış olan herhangi bir oyuncu, muck'a atılmış call edilmiş bir eli krupiyenin açmasını isteyebilir.
 
 **Q. Showdown'da göstermeden muck yapabilir misin?**
 

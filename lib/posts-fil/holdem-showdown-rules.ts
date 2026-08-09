@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Sa showdown, ang huling nag-bet o nag-raise ang unang magpapakita. Kung na-check-through ang river, ang unang aktibong player sa kaliwa ng button ang mauuna. Pwede kang mag-muck nang hindi nagpapakita kung talo ka, pero pwedeng hilingin ng kalaban na makita ang called hand.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-07-13",
+  updated: "2026-08-09",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -166,7 +166,7 @@ A. Ang huling player na gumawa ng aggressive action (bet o raise) sa final betti
 
 **Q. Kailangan mo bang ipakita ang cards mo kung na-call ka sa showdown?**
 
-A. Oo — kung ikaw ang huling nag-bet o nag-raise sa river, dapat kang unang magpakita kapag na-call. Kung ikaw ang nag-call sa bet ng iba, pwede kang mag-muck face-down pagkatapos makita ang hand niya kung talo ka. Gayunpaman, sa karamihan ng cardrooms kahit sinong player sa mesa ay pwedeng humiling sa dealer na buksan ang called hand na na-muck.
+A. Oo — kung ikaw ang huling nag-bet o nag-raise sa river, dapat kang unang magpakita kapag na-call. Kung ikaw ang nag-call sa bet ng iba, pwede kang mag-muck face-down pagkatapos makita ang hand niya kung talo ka. Gayunpaman, sa karamihan ng cardrooms kahit sinong player na na-deal sa hand na iyon ay pwedeng humiling sa dealer na buksan ang called hand na na-muck.
 
 **Q. Pwede ka bang mag-muck sa showdown nang hindi nagpapakita?**
 

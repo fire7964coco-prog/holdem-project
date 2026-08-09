@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Katika Texas Hold'em kila mchezaji anapata karata 2 za mkononi, kunatumika karata 5 za pamoja, na baada ya raundi nne za kuweka dau, mkono bora wa karata 5 unashinda.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-07-13",
+  updated: "2026-08-09",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -348,7 +348,7 @@ Daraja la msingi la mikono kutoka imara zaidi hadi dhaifu zaidi (pamoja na jinsi
 | 7 | Three of a kind | 4.8% — mkono mzuri, lakini bodi ni muhimu |
 | 8 | Two pair | 23.5% — mkono "imara" wa kawaida zaidi |
 | 9 | One pair | 43.8% — mkono unaotokea mara nyingi zaidi kwenye showdown |
-| 10 | High card | 17.4% — mkono dhaifu zaidi kwenye showdown; hushinda hasa kupitia bluff |
+| 10 | High card | 17.4% — mkono dhaifu zaidi kwenye showdown; kwa kawaida hushinda tu wakati wengine nao hawakupata chochote |
 
 Ikiwa wachezaji wawili wana aina ileile ya mkono, linganisha karata za juu zinazohusika — ona kanuni za kicker na kuvunja sare. Ikiwa karata bora tano ni sawa kabisa, pot inagawanywa (split).
 

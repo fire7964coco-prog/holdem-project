@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "ICM (Independent Chip Model) rechnet deinen Turnier-Chipstack in seinen echten Preisgeldwert um, anhand der Payouts und aller Stacks. Weil du nur ein einziges erstes Preisgeld gewinnst, verdoppelt das Verdoppeln deiner Chips nie dein Geld — deshalb ist der Stack des Chipleaders weniger wert als sein Chipanteil, und Short Stacks sind mehr wert. Diese Lücke ist der Grund, warum du an der Bubble Hände foldest, die im Cash Game leichte Calls wären.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-07-09",
+  updated: "2026-08-09",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "13 Min.",
   emoji: "🏆",
@@ -172,7 +173,7 @@ Ein häufiges Leak ist das Überanwenden von ICM: sich zu einem Short Stack heru
 **ICM ist das beste einfache Modell, das wir haben, aber es ist eine Näherung — es nimmt an, dass jeder Spieler gleich stark ist, und ignoriert fast alles außer den Stackgrößen.** Sei ehrlich darüber, was es weglässt:
 
 - **Skill.** ICM behandelt einen Weltmeister und einen Erstlingsspieler mit gleichen Stacks als gleich. Die Chips eines besseren Spielers sind mehr wert, als das Modell sagt.
-- **Position.** Ein Stack von 3 Big Blinds am Button (kurz davor, billige Flops zu sehen) ist mehr wert als derselbe Stack im Big Blind (kurz davor, reingezwungen zu werden). ICM kann die Sitzplätze nicht sehen.
+- **Position.** Ein Stack von 3 Big Blinds am Button (der die Blinds zuletzt zahlt und sich damit noch ein paar freie Hände kauft, bevor er reinmuss) ist mehr wert als derselbe Stack im Big Blind (nächste Hand zwangsweise All-in). ICM kann die Sitzplätze nicht sehen.
 - **Blinds und künftiges Spiel.** ICM friert das Turnier in diesem Augenblick ein; es ignoriert steigende Blinds, Antes und wie die nächsten paar Orbits tatsächlich ablaufen werden.
 
 Es gibt sogar empirische Belege für seinen blinden Fleck: eine große Studie von 2025, die ICM gegen echte Turnierergebnisse zurücktestete, fand, dass es dazu neigt, ==Big Stacks zu unterschätzen und Short Stacks zu überschätzen==, teils weil ein starker Chipleader ICM-Druck nutzen kann, um *mehr* zu gewinnen, als das rohe Modell vorhersagt. Fortgeschrittene Solver fügen genau aus diesem Grund eine "Future Game"-Korrektur hinzu. Nichts davon macht ICM falsch — es macht es zu einer starken ersten Näherung, die du für Skill und Position anpasst, nicht zu einem physikalischen Gesetz.

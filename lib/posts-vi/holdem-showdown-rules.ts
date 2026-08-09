@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Khi lật bài (showdown), người cược hoặc tố cuối cùng phải lật trước. Nếu vòng river tất cả đều check, người còn chơi đầu tiên bên trái nút Dealer lật trước. Bạn được bỏ bài úp (muck) không cần lật nếu thua, nhưng đối thủ có quyền yêu cầu xem một tay bài đã bị theo (call).",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-07-13",
+  updated: "2026-08-09",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 phút",
@@ -166,7 +166,7 @@ A. Người thực hiện hành động chủ động cuối cùng (cược ho�
 
 **Q. Bị theo (call) khi showdown thì có bắt buộc lật bài không?**
 
-A. Có — nếu bạn là người cược hoặc tố cuối cùng ở river, bạn phải lật trước khi bị theo. Nếu bạn là người theo cược của người khác, bạn được bỏ bài úp sau khi xem bài họ nếu bạn thua. Tuy nhiên, ở đa số phòng bài, bất kỳ ai ở bàn cũng có thể yêu cầu Dealer lật một tay bài đã bị theo nhưng bỏ úp.
+A. Có — nếu bạn là người cược hoặc tố cuối cùng ở river, bạn phải lật trước khi bị theo. Nếu bạn là người theo cược của người khác, bạn được bỏ bài úp sau khi xem bài họ nếu bạn thua. Tuy nhiên, ở đa số phòng bài, bất kỳ ai được chia bài trong ván đó cũng có thể yêu cầu Dealer lật một tay bài đã bị theo nhưng bỏ úp.
 
 **Q. Có được muck khi showdown mà không lật bài không?**
 

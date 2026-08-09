@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Beim Texas Hold'em bekommt jeder Spieler 2 Hole Cards, dazu kommen 5 Gemeinschaftskarten — nach vier Setzrunden gewinnt die beste Fünf-Karten-Hand.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-07-12",
+  updated: "2026-08-09",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 Min.",
@@ -348,7 +348,7 @@ Die Handreihenfolge von der stärksten zur schwächsten (mit der Häufigkeit, mi
 | 7 | Drilling | 4,8% — gute Hand, aber das Board zählt |
 | 8 | Zwei Paare | 23,5% — die häufigste „starke“ Hand |
 | 9 | Paar | 43,8% — die häufigste Hand beim Showdown |
-| 10 | High Card | 17,4% — schwächste Hand beim Showdown; gewinnt vor allem per Bluff |
+| 10 | High Card | 17,4% — schwächste Hand beim Showdown; gewinnt meist nur, wenn auch alle anderen daneben lagen |
 
 Haben zwei Spieler denselben Handtyp, vergleicht ihr die höchsten relevanten Karten — das regeln die [Kicker- und Tiebreaker-Regeln](/de/blog/holdem-tiebreak-rules). Sind die besten fünf Karten exakt gleich, wird der Pot [geteilt](/de/blog/holdem-split-pot-rules).
 

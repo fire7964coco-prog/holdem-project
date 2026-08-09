@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "O ICM (Independent Chip Model) converte seu stack de fichas de torneio no seu valor real em premiação, usando os payouts e os stacks de todo mundo. Como você só ganha um primeiro prêmio, dobrar suas fichas nunca dobra seu dinheiro — então o stack do chip leader vale menos do que sua fatia de fichas, e os short stacks valem mais. Essa diferença é o motivo de você foldar na bubble mãos que seriam calls fáceis num cash game.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-07-09",
+  updated: "2026-08-09",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🏆",
@@ -172,7 +173,7 @@ Um vazamento comum é aplicar ICM demais: foldar até virar um short stack "para
 **O ICM é o melhor modelo simples que temos, mas é uma aproximação — ele assume que todo jogador tem a mesma habilidade e ignora quase tudo exceto o tamanho dos stacks.** Seja honesto sobre o que ele deixa de fora:
 
 - **Habilidade.** O ICM trata um campeão mundial e um estreante com stacks iguais como iguais. As fichas de um jogador melhor valem mais do que o modelo diz.
-- **Posição.** Um stack de 3 big blinds no button (prestes a ver flops baratos) vale mais do que o mesmo stack no big blind (prestes a ser forçado a entrar). O ICM não enxerga os assentos.
+- **Posição.** Um stack de 3 big blinds no button (que paga os blinds por último e ainda ganha algumas mãos de graça antes de ser forçado a entrar) vale mais do que o mesmo stack no big blind (all-in forçado na mão seguinte). O ICM não enxerga os assentos.
 - **Blinds e jogo futuro.** O ICM congela o torneio neste instante; ele ignora blinds subindo, antes, e como as próximas rodadas vão de fato se desenrolar.
 
 Tem até respaldo empírico para o ponto cego dele: um grande estudo de 2025 que testou o ICM contra resultados reais de torneio descobriu que ele tende a ==subestimar stacks grandes e superestimar short stacks==, em parte porque um chip leader habilidoso consegue alavancar a pressão de ICM para ganhar *mais* do que o modelo bruto prevê. Solvers avançados adicionam uma correção de "jogo futuro" exatamente por isso. Nada disso torna o ICM errado — torna ele uma forte primeira aproximação que você ajusta por habilidade e posição, não uma lei da física.

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Dalam Texas Hold'em, setiap pemain menerima 2 kad pemula, 5 kad komuniti dikongsi bersama, dan tangan poker 5 kad terbaik menang selepas empat pusingan pertaruhan.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-07-13",
+  updated: "2026-08-09",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 minit",
@@ -348,7 +348,7 @@ Kedudukan tangan asas dari paling kuat ke paling lemah (dengan kekerapan anda me
 | 7 | Three of a Kind | 4.8% — tangan bagus, tetapi board penting |
 | 8 | Two Pair | 23.5% — tangan "kuat" paling biasa |
 | 9 | Pair | 43.8% — tangan paling kerap di showdown |
-| 10 | High Card | 17.4% — tangan paling lemah di showdown; menang terutamanya melalui bluff |
+| 10 | High Card | 17.4% — tangan paling lemah di showdown; biasanya menang hanya apabila pemain lain pun tidak dapat apa-apa |
 
 Jika dua pemain mempunyai jenis tangan yang sama, bandingkan kad tertinggi yang berkaitan — itulah peraturan kicker dan pemutus seri. Jika lima kad terbaik betul-betul sama, pot dibahagikan.
 

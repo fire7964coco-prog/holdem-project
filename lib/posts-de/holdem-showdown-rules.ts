@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Beim Showdown zeigt zuerst, wer als Letzter gesetzt oder erhöht hat. Wurde der River durchgecheckt, zeigt der erste aktive Spieler links vom Button zuerst. Verlierst du, darfst du ungezeigt mucken — aber die Gegner können verlangen, eine gecallte Hand zu sehen.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-07-12",
+  updated: "2026-08-09",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 Min.",
@@ -166,7 +166,7 @@ A. Der Spieler, der in der letzten Setzrunde die letzte aggressive Aktion gemach
 
 **Q. Muss man seine Karten zeigen, wenn man beim Showdown gecallt wird?**
 
-A. Ja — warst du am River der letzte, der gesetzt oder erhöht hat, musst du nach dem Call zuerst zeigen. Hast du die Bet eines anderen gecallt, darfst du nach dem Blick auf seine Hand verdeckt mucken, wenn du verloren hast. Allerdings kann in den meisten Cardrooms jeder Spieler am Tisch den Dealer bitten, eine gecallte und gemuckte Hand aufzudecken.
+A. Ja — warst du am River der letzte, der gesetzt oder erhöht hat, musst du nach dem Call zuerst zeigen. Hast du die Bet eines anderen gecallt, darfst du nach dem Blick auf seine Hand verdeckt mucken, wenn du verloren hast. Allerdings kann in den meisten Cardrooms jeder Spieler, der in die Hand gedealt wurde, den Dealer bitten, eine gecallte und gemuckte Hand aufzudecken.
 
 **Q. Darf man beim Showdown mucken, ohne zu zeigen?**
 

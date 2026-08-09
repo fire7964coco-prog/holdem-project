@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "En el showdown, el último jugador que apostó o subió enseña primero. Si en el river todos pasaron, enseña primero el primer jugador activo a la izquierda del botón. Puedes tirar tus cartas sin enseñarlas si has perdido, pero los rivales pueden pedir ver una mano que fue pagada.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-07-24",
+  updated: "2026-08-09",
   masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -176,7 +176,7 @@ A. El último jugador que hizo una acción agresiva (apostar o subir) en la últ
 
 **Q. ¿Tienes que enseñar tus cartas si te pagan en el showdown?**
 
-A. Sí — si fuiste el último en apostar o subir en el river, debes enseñar primero cuando te pagan. Si pagaste la apuesta de otro, puedes tirar tus cartas boca abajo tras ver su mano si has perdido. Eso sí, en la mayoría de los casinos cualquier jugador de la mesa puede pedirle al dealer que revele una mano pagada que fue tirada al muck.
+A. Sí — si fuiste el último en apostar o subir en el river, debes enseñar primero cuando te pagan. Si pagaste la apuesta de otro, puedes tirar tus cartas boca abajo tras ver su mano si has perdido. Eso sí, en la mayoría de los casinos cualquier jugador que recibió cartas en esa mano puede pedirle al dealer que revele una mano pagada que fue tirada al muck.
 
 **Q. ¿Puedes tirar tus cartas en el showdown sin enseñarlas?**
 

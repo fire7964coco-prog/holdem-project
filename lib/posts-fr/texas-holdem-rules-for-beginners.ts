@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Au Texas Hold'em, chaque joueur reçoit 2 cartes fermées, on utilise 5 cartes communes, et la meilleure main de 5 cartes l'emporte après quatre tours d'enchères.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-07-13",
+  updated: "2026-08-09",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -348,7 +348,7 @@ Classement de base des mains, de la plus forte à la plus faible (avec la fréqu
 | 7 | Brelan | 4,8 % — bonne main, mais le tableau compte |
 | 8 | Double paire | 23,5 % — la main « forte » la plus courante |
 | 9 | Paire | 43,8 % — la main la plus fréquente à l'abattage |
-| 10 | Carte haute | 17,4 % — la main la plus faible à l'abattage ; gagne surtout au bluff |
+| 10 | Carte haute | 17,4 % — la main la plus faible à l'abattage ; ne gagne généralement que si les autres n'ont rien touché non plus |
 
 Si deux joueurs ont le même type de main, on compare les cartes les plus hautes pertinentes (les règles du kicker et des départages). Si les cinq meilleures cartes sont exactement identiques, le pot est partagé.
 

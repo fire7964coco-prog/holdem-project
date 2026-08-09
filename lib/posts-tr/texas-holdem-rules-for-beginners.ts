@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em'de her oyuncu 2 kapalı kart alır, 5 ortak kart açılır ve dört bahis turunun sonunda en iyi 5 kartlık poker eli kazanır.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-07-13",
+  updated: "2026-08-09",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 dk",
@@ -348,7 +348,7 @@ En güçlüden en zayıfa temel el sıralaması (7 karttan en iyi 5'ini kullanar
 | 7 | Üçlü (Three of a Kind) | %4,8 — iyi el ama board önemli |
 | 8 | İki Çift (Two Pair) | %23,5 — en yaygın "güçlü" el |
 | 9 | Çift (One Pair) | %43,8 — showdown'da en sık görülen el |
-| 10 | Yüksek Kart (High Card) | %17,4 — showdown'daki en zayıf el; genelde blöfle kazanır |
+| 10 | Yüksek Kart (High Card) | %17,4 — showdown'daki en zayıf el; genelde yalnızca diğerleri de ıskaladığında kazanır |
 
 İki oyuncunun aynı tür eli varsa, ilgili en yüksek kartları karşılaştır — kicker ve beraberlik kurallarına bakabilirsin. En iyi beş kart tamamen aynıysa pot bölünür (split).
 

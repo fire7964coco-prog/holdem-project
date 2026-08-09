@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "En el Texas Hold'em cada jugador recibe 2 cartas propias y comparte 5 cartas comunitarias en la mesa. Se apuesta en cuatro rondas — preflop, flop, turn y river — y gana quien forma la mejor mano de póker de 5 cartas, o el último que quede si todos los demás se retiran. Puedes usar tus dos cartas, una sola o ninguna: lo que forme la mano más fuerte.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-07-24",
+  updated: "2026-08-09",
   masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -350,7 +350,7 @@ Jerarquía básica de manos, de la más fuerte a la más débil (con la frecuenc
 | 7 | Trío | 4.8% — buena mano, pero la mesa importa |
 | 8 | Doble pareja | 23.5% — la mano "fuerte" más común |
 | 9 | Pareja | 43.8% — la mano más frecuente en el showdown |
-| 10 | Carta alta | 17.4% — la mano más débil en el showdown; gana sobre todo con faroles |
+| 10 | Carta alta | 17.4% — la mano más débil en el showdown; suele ganar solo cuando los demás tampoco ligaron |
 
 Si dos jugadores tienen el mismo tipo de mano, se comparan las cartas más altas relevantes — son las [reglas del kicker y los desempates](/es/blog/holdem-tiebreak-rules). Si las mejores cinco cartas son exactamente iguales, el bote se [divide](/es/blog/holdem-split-pot-rules).
 

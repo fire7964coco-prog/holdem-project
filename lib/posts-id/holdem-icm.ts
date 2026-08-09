@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "ICM (Independent Chip Model) mengubah stack chip turnamen Anda menjadi nilai uang hadiah nyata, memakai payout dan stack setiap pemain. Karena Anda hanya memenangkan satu hadiah pertama, menggandakan chip tidak pernah menggandakan uang Anda — jadi stack chip leader bernilai lebih kecil dari porsi chipnya, dan short stack bernilai lebih besar. Celah itulah alasan Anda fold tangan di bubble yang akan jadi call mudah di cash game.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-07-09",
+  updated: "2026-08-09",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "13 mnt",
   emoji: "🏆",
@@ -172,7 +173,7 @@ Kebocoran umum adalah menerapkan ICM secara berlebihan: memfold diri sampai jadi
 **ICM adalah model sederhana terbaik yang kita punya, tapi ia aproksimasi — ia mengasumsikan setiap pemain sama terampil dan mengabaikan hampir segalanya kecuali ukuran stack.** Jujurlah tentang apa yang ia tinggalkan:
 
 - **Skill.** ICM memperlakukan juara dunia dan pemula dengan stack sama sebagai setara. Chip pemain lebih baik bernilai lebih dari yang dikatakan model.
-- **Posisi.** Stack 3-big-blind di button (yang akan segera melihat flop murah) bernilai lebih dari stack sama di big blind (yang akan segera dipaksa masuk). ICM tak bisa melihat kursi.
+- **Posisi.** Stack 3-big-blind di button (yang membayar blind paling akhir, jadi masih dapat beberapa tangan gratis sebelum terpaksa masuk) bernilai lebih dari stack sama di big blind (all-in paksa di tangan berikutnya). ICM tak bisa melihat kursi.
 - **Blind dan permainan mendatang.** ICM membekukan turnamen pada saat ini juga; ia mengabaikan blind yang naik, ante, dan bagaimana beberapa orbit berikutnya akan benar-benar berjalan.
 
 Bahkan ada dukungan empiris untuk titik butanya: sebuah studi besar 2025 yang menguji-mundur ICM terhadap hasil turnamen nyata menemukan ia cenderung ==meremehkan big stack dan melebihkan short stack==, sebagian karena chip leader terampil bisa memanfaatkan tekanan ICM untuk menang *lebih* dari yang diprediksi model mentah. Solver canggih menambahkan koreksi "future game" persis karena alasan ini. Tak satu pun dari itu membuat ICM salah — ia membuatnya aproksimasi awal yang kuat yang Anda sesuaikan untuk skill dan posisi, bukan hukum fisika.

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "La showdown, arată primul ultimul jucător care a pariat sau a mărit. Dacă la river toată lumea a dat check, arată primul primul jucător activ din stânga butonului. Dacă ai pierdut, poți face muck fără să arăți, dar adversarii pot cere să vadă o mână care a fost plătită.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-07-13",
+  updated: "2026-08-09",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -166,7 +166,7 @@ A. Ultimul jucător care a făcut o acțiune agresivă (a pariat sau a mărit) �
 
 **Q. Trebuie să-ți arăți cărțile dacă ești plătit la showdown?**
 
-A. Da — dacă ai fost ultimul care a pariat sau a mărit la river, trebuie să arăți primul când ești plătit. Dacă tu ai plătit pariul altcuiva, poți face muck cu fața în jos după ce i-ai văzut mâna, dacă ai pierdut. Totuși, în majoritatea sălilor, orice jucător de la masă poate cere dealerului să dezvăluie o mână plătită care a fost dată la muck.
+A. Da — dacă ai fost ultimul care a pariat sau a mărit la river, trebuie să arăți primul când ești plătit. Dacă tu ai plătit pariul altcuiva, poți face muck cu fața în jos după ce i-ai văzut mâna, dacă ai pierdut. Totuși, în majoritatea sălilor, orice jucător căruia i s-au împărțit cărți în acea mână poate cere dealerului să dezvăluie o mână plătită care a fost dată la muck.
 
 **Q. Poți face muck la showdown fără să arăți?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "No Texas Hold'em cada jogador recebe 2 cartas fechadas, usa 5 cartas comunitárias, e a melhor mão de 5 cartas ganha depois de quatro rodadas de apostas.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-07-12",
+  updated: "2026-08-09",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -348,7 +348,7 @@ Ranking básico de mãos, da mais forte à mais fraca (com a frequência aproxim
 | 7 | Trinca | 4,8% — boa mão, mas a mesa importa |
 | 8 | Dois pares | 23,5% — a mão "forte" mais comum |
 | 9 | Par | 43,8% — a mão mais frequente no showdown |
-| 10 | Carta alta | 17,4% — a mão mais fraca no showdown; ganha principalmente no blefe |
+| 10 | Carta alta | 17,4% — a mão mais fraca no showdown; costuma ganhar só quando os outros também não acertaram nada |
 
 Se dois jogadores têm o mesmo tipo de mão, comparam-se as cartas relevantes mais altas — são as [regras de kicker e desempate](/pt/blog/holdem-tiebreak-rules). Se as melhores cinco cartas forem exatamente iguais, o pote é [dividido](/pt/blog/holdem-split-pot-rules).
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Sa Texas Hold'em, bawat player ay may 2 hole cards, may 5 community cards, at ang pinakamagandang 5-card poker hand ang panalo pagkatapos ng apat na betting rounds.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-07-13",
+  updated: "2026-08-09",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -348,7 +348,7 @@ Basic hand ranking mula pinakamalakas hanggang pinakamahina (kasama kung gaano k
 | 7 | Three of a kind | 4.8% — magandang hand, pero mahalaga ang board |
 | 8 | Two pair | 23.5% — pinakakaraniwang "malakas" na hand |
 | 9 | One pair | 43.8% — pinakamadalas na hand sa showdown |
-| 10 | High card | 17.4% — pinakamahinang hand sa showdown; nananalo mainly sa bluffing |
+| 10 | High card | 17.4% — pinakamahinang hand sa showdown; karaniwang nananalo lang kapag pumalpak din ang lahat |
 
 Kung dalawang players ang may parehong uri ng hand, ihambing ang pinakamataas na relevant cards — tingnan ang kicker at tie-breaker rules. Kung eksaktong pareho ang best five cards, hinahati ang pot (split).
 

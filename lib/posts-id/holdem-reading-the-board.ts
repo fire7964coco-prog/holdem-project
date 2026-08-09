@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "Di Texas Hold'em Anda selalu memainkan tangan 5-kartu terbaik dari 7 (2 kartu tertutup + 5 kartu komunitas) — memakai kedua kartu tertutup, satu, atau tak satu pun (main dengan board). Pindai ketujuh kartu dengan urutan tetap: flush → straight → nilai berpasangan → kartu tinggi.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-07-11",
+  updated: "2026-08-09",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "11 mnt",
   emoji: "🃏",
@@ -136,7 +137,7 @@ Flush butuh 5 kartu satu jenis di antara 7 kartu Anda. Board langsung memberi ta
 | 0–2 | Tak ada flush yang mungkin bagi siapa pun |
 | 3 | Siapa pun yang memegang 2 kartu jenis itu punya flush |
 | 4 | Siapa pun yang memegang cuma 1 kartu jenis itu punya flush |
-| 5 | Board itu sendiri sebuah flush — satu kartu jenis itu yang lebih tinggi di tangan Anda memperbaikinya |
+| 5 | Board itu sendiri sebuah flush — hanya kartu jenis itu yang lebih tinggi dari kartu terendah di board yang memperbaikinya |
 
 ![BUKAN FLUSH — memegang A♠ dengan hanya 3 sekop di board tidak membentuk flush di Texas Hold'em](/images/holdem-reading-flush-draw-mistake.webp)
 

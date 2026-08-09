@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "La Texas Hold'em fiecare jucător primește 2 cărți din mână, se folosesc 5 cărți comune, iar după patru runde de pariere câștigă cea mai bună mână de 5 cărți.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-07-13",
+  updated: "2026-08-09",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -348,7 +348,7 @@ Clasamentul de bază al mâinilor, de la cea mai puternică la cea mai slabă (c
 | 7 | Trei de un fel (set) | 4,8% — mână bună, dar contează boardul |
 | 8 | Dublă Pereche | 23,5% — cea mai comună mână „puternică" |
 | 9 | Pereche | 43,8% — cea mai frecventă mână la showdown |
-| 10 | Carte Mare (high card) | 17,4% — cea mai slabă mână la showdown; câștigă mai ales prin bluff |
+| 10 | Carte Mare (high card) | 17,4% — cea mai slabă mână la showdown; de obicei câștigă doar când și ceilalți au ratat |
 
 Dacă doi jucători au același tip de mână, se compară cele mai înalte cărți relevante (kickerul). Dacă cele mai bune cinci cărți sunt exact la fel, potul se împarte.
 
