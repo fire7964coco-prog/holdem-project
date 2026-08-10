@@ -167,8 +167,50 @@ tournament · tournament-vs-cash-game · short-stack · ept-barcelona · wpt-aus
 `mit der APT Championship`(핵=Championship·3격) · `das größte Main Event, **das** APT je gespielt hat`(**관계대명사**) ·
 `das APT Incheon Main Event`(핵=Main Event). APT는 거의 항상 수식어라 뒤 명사가 성을 정한다. **정밀도 0/3이라 내렸다.**
 
+## 6-B. 🔴 2차 튜닝 루프 (2026-08-10 · Session 1) — **게이트를 넓히자 결함이 3배로 나왔다**
+
+Session 0의 「🔴 6건」은 **게이트가 볼 수 있는 만큼만 본 값**이었다. Session 1에서 성 검사를 넓히자
+같은 42편에서 **성 오류 24곳 + 인용부호 59곳**이 더 나왔다. 셀프테스트 **61 → 87개**.
+
+### 넓힌 것 4가지 (전부 실측 결함이 근거다)
+
+| # | 넓힌 규칙 | 왜 필요했나 (실측) | 새로 잡은 것 |
+|---|---|---|---|
+| ⑦ | **사격(斜格)** — `einem`·`einen`·`das`·`dem`·`des` + 여성 명사 / `einer`·`die` + 남성·중성 | 원래는 `ein`↔`eine`만 봤다. `bei einem Bet plus drei Raises`가 **두 번 통과**했다 | `einem Bet`×2 · `dem Bet` · `dem River-Bet` · `die Raise` |
+| ⑧ | **형용사 한 칸** — 관사와 명사 사이 소문자 형용사 허용 | 되읽기에서 내가 직접 `eine ganze Orbit`을 새로 써 넣었는데 게이트가 못 봤다 | `eine große Raise`×3 · `eine größere Re-Raise` |
+| ⑨ | **하이픈 합성어의 핵** — 앞 요소를 건너뛰고 마지막 요소로 성을 판정 | `eine River-Raise`가 「합성어라 판정 안 함」으로 통과했다. 독일어는 **마지막 요소가 성을 정한다** | `River-Raise`×3 · `Re-Raise`×8 · `Check-Raise` · `Preflop-Re-Raise`×2 |
+| ⑩ | **D10 독일어 인용부호 짝** — 여는 `„`를 ASCII `"`로 닫음 | 5편이 `„…"`로 **반쪽만 현지화**돼 있었다 | 59곳(bad-beat 12·cooler 25·kicker 16·flush-vs-straight 3·tiebreak 3) |
+
+### 이 확장이 만든 오탐 2종 (역시 픽스처로 박았다)
+
+| 오탐 | 실측 예 | 처방 |
+|---|---|---|
+| ⑪ **`**` 제거가 하이픈을 가린다** | `die **Turn**-Karte` → 세척 후 `die  Turn -Karte` → 핵을 Turn(남성)으로 오판 | `NOT_COMPOUND`에 `(?!\s{0,2}-)` 추가 |
+| ⑫ **한정사를 형용사로 먹음** | `das eine Bet`(관계대명사+eine Bet) · `dem deine Hand` · `das meine Bankroll` — **7편이 잘못 걸렸다** | 형용사 슬롯 앞에 `NOT_DET` 부정선행(eine/deine/die/…) |
+
+### 교훈 (Session 2~6이 그대로 겪을 것)
+
+1. 🔴 **「게이트 0건」은 「게이트가 넓은 만큼만 0건」이다.** Session 0의 6건은 틀린 값이 아니라
+   **좁은 값**이었다. 세션마다 새 결함 유형을 만나면 규칙을 넓히고 셀프테스트를 올려라.
+2. 🔴 **되읽기 패스에서 내가 새로 넣은 오류를 게이트가 못 잡으면, 그건 게이트를 넓히라는 신호다**
+   (`eine ganze Orbit` → `Orbit`을 성 목록에 추가 + 형용사 슬롯 신설).
+3. **규칙을 넓힌 직후 걸린 건은 전건 원문 판정하라.** 이번에도 확장 1회차에서 오탐이 나왔다(⑪⑫).
+4. `Orbit`은 de 코퍼스가 **남성 통일**이다(`in jedem einzelnen Orbit`·`über einen vollen Orbit`·`jeden Orbit`).
+
 ### 의도적 공백 (매 실행 «미판정»으로 출력된다 — 0건이 이 자리를 덮지 않는다)
 - **D5 `prüfen` 16곳** — 같은 줄에 Check가 없으면 명령형과 구별 불가.
 - **D2 천단위 쉼표 2곳** — `42,195`(마라톤 거리, 정상 소수)와 `1,650`(금액 오류)이 **모양이 같다**.
   금액·수량 앵커가 붙은 것만 🔴로 확정한다.
 - 게이트가 **원리상 안 보는 것** = §5-A 실행 항목(H2 국면형·표 신설·Q-A-E)·사실 정확성·톤.
+- 🔴 **`deine`·`keine`·`seine` + 남성 명사**는 여전히 못 잡는다 — 복수와 형태가 같아서다.
+  실제로 `deine Re-Raise`(3bet L8·L237)는 사람이 읽어서 잡았다. 이 자리는 사람의 몫이다.
+- 🔴 **관사 없는 형용사**도 못 잡는다 — `statt als **kleine** Re-Raise`(3bet L281). 관사가 앵커라서다.
+  네이티브 QA가 잡았다.
+- 🔴🔴 **«성»은 보지만 «격»은 안 본다.** 2026-08-10 (7)에 이게 실제 사고를 냈다:
+  여성 `eine Raise`는 1격·4격이 동형이라 **격 오류가 가려져 있었는데**, 게이트 지시대로 남성 `ein Raise`로
+  고치는 순간 1격이 노출돼 **동격(Apposition)의 격이 깨졌다**(`gegen … — besonders ein Raise —` → `einen Raise`).
+  **성을 일괄 정정한 뒤에는 반드시 그 문장의 격을 사람이 다시 읽어라.**
+- 🔴 **생략 명사**도 못 본다 — `dein Re-Raise ist die dritte [Bet]`에서 술어의 성은 **생략된 Bet**이 정한다.
+  주어(Raise)를 보고 `der dritte`로 고치면 문장의 뜻이 바뀐다.
+- 🔴 **ASCII 따옴표 «짝»(`"…"`)은 판정하지 않는다.** D10은 `„`로 열고 `"`로 닫은 «반쪽»만 본다.
+  전부 ASCII인 인용은 독일어로는 어색하나 통일된 상태라 오탐 위험이 커서 뺐다(3bet L241 `"3-Bet"` 등).

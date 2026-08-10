@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Bis zum River triffst du ein Paar in 43,8% der Fälle, zwei Paare in 23,5%, einen Flush in 3,0% und ein Full House in 2,6% — während ein Royal Flush nur etwa einmal in 31.000 Händen auftaucht.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-08-09",
+  updated: "2026-08-10",
   masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "13 Min.",
@@ -159,7 +159,7 @@ Zu wissen, dass du 35% der Zeit triffst, ist nutzlos, bis du es mit dem **Preis*
 **Durchgerechnetes Beispiel.** Der Pot ist $100. Dein Gegner bettet $50, macht ihn zu $150. Du musst $50 callen, um diese $150 zu gewinnen.
 
 :::steps
-Pot nach dem Bet | $100 + $50 = $150
+Pot nach der Bet | $100 + $50 = $150
 Dein Call | $50, um $150 zu gewinnen (finaler Pot $200)
 Pot Odds | 50 ÷ 200 = 25% — du brauchst mindestens 25% Equity
 Deine Equity | Flushdraw ≈ 35% (Regel der 4)

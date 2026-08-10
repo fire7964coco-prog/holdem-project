@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ein Flush (fünf Karten einer Farbe — ~0,197% aller Fünf-Karten-Deals) schlägt im Texas Hold'em immer eine Straße (fünf in Folge, ~0,392%) — weil ein Flush etwa doppelt so schwer zu treffen ist.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-07-11",
+  updated: "2026-08-10",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "⚡",
@@ -137,8 +137,8 @@ Das Ass von Spieler A übertrumpft den König von Spieler B schon auf der allere
 
 Straßen sind noch einfacher: Vergleiche nur die **höchste Karte** — es gibt keinen Kicker.
 
-- **A-K-Q-J-10** (Ass hoch, „Broadway") ist die stärkste Straße.
-- **A-2-3-4-5** (das „Wheel", Ass spielt niedrig) ist die schwächste.
+- **A-K-Q-J-10** (Ass hoch, „Broadway“) ist die stärkste Straße.
+- **A-2-3-4-5** (das „Wheel“, Ass spielt niedrig) ist die schwächste.
 
 | Spieler | Straße | Ergebnis |
 |--------|------|------|
@@ -199,7 +199,7 @@ A. Ein Flush, Full House, Vierling, Straight Flush und Royal Flush schlagen alle
 
 **Q. Kann man einen höheren Flush haben als ein anderer Spieler?**
 
-A. Ja. Zwei Flushes werden Karte für Karte von oben nach unten verglichen, also schlägt ein Ace-High-Flush („Nut"-Flush) einen King-High-Flush. Stimmen die Topkarten überein, entscheidet die zweithöchste, und so weiter durch alle fünf.
+A. Ja. Zwei Flushes werden Karte für Karte von oben nach unten verglichen, also schlägt ein Ace-High-Flush („Nut“-Flush) einen King-High-Flush. Stimmen die Topkarten überein, entscheidet die zweithöchste, und so weiter durch alle fünf.
 
 **Q. Spielt die Farbe eines Flushs eine Rolle?**
 

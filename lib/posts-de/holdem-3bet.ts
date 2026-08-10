@@ -5,15 +5,15 @@ export const POST: Post = {
   title: "3-Betting im Poker: Wann, wie viel und wie du eine 3-Bet konterst",
   seoTitle: "Der 3-Bet-Guide mit der Mathematik — 3-Bet Range & Sizing",
   desc: "Was eine 3-Bet ist, wann du auf Value oder als Light-Bluff 3-bettest, die exakte Sizing-Mathematik und wie du reagierst, wenn dich jemand 3-bettet.",
-  tldr: "Eine 3-Bet ist die erste Re-Raise vor dem Flop — sie heißt 3-Bet, weil der Big Blind die erste Bet ist, der Open-Raise die zweite und deine Re-Raise die dritte. 3-bette auf Value einen engen Kern (QQ+, AK) plus ein paar suited Blocker-Bluffs wie A5s, size sie in Position auf etwa das 3-fache des Opens und out of Position auf das 4-fache, und halte deine gesamte 3-Bet-Frequenz bei 6–10%. Wenn du selbst gegen eine 3-Bet sitzt, 4-bette deine Premiums, calle die Hände, die gut spielen, und folde den Rest — gegen Low-Stakes-Spieler, die nie bluffen, häufiger als \"ausgeglichen\".",
+  tldr: "Eine 3-Bet ist der erste Re-Raise vor dem Flop — sie heißt 3-Bet, weil der Big Blind die erste Bet ist, der Open-Raise die zweite und dein Re-Raise die dritte. 3-bette auf Value einen engen Kern (QQ+, AK) plus ein paar suited Blocker-Bluffs wie A5s, size sie in Position auf etwa das 3-fache des Opens und out of Position auf das 4-fache, und halte deine gesamte 3-Bet-Frequenz bei 6–10%. Wenn du selbst gegen eine 3-Bet sitzt, 4-bette deine Premiums, calle die Hände, die gut spielen, und folde den Rest — gegen Low-Stakes-Spieler, die nie bluffen, häufiger als \"ausgeglichen\".",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-07-06",
+  updated: "2026-08-10",
   keepImagesInBody: true,
   readTime: "16 Min.",
   emoji: "♦️",
   image: "/images/holdem-3bet-hero.webp",
-  imageAlt: "Ein Pokerspieler schiebt einen Stapel Chips für eine Re-Raise nach vorne, während der ursprüngliche Raiser zusieht — eine Preflop-3-Bet-Konfrontation auf grünem Filz",
+  imageAlt: "Ein Pokerspieler schiebt einen Stapel Chips für einen Re-Raise nach vorne, während der ursprüngliche Raiser zusieht — eine Preflop-3-Bet-Konfrontation auf grünem Filz",
   tags: ["3 bet poker", "was ist eine 3-bet", "3-bet sizing", "3-bet range", "light 3-bet", "3-bet bluff", "wann 3-betten", "squeeze play", "3-bet kontern", "linear vs polarisiert range"],
   content: `
 Die Hand, die mir beigebracht hat, wofür eine 3-Bet wirklich *da* ist, lief so: Ein loose Spieler eröffnete, ich schaute auf A-K und habe — wie jeder Anfänger — einfach gecallt. Der Flop kam Ass-hoch, ich bekam kein Geld rein, und er foldete auf eine einzige Bet. Ich hatte die beste Hand in einen winzigen Pot verwandelt. Eine Woche später, dieselbe Situation, habe ich stattdessen *re-geraist*. Er callte mit einem schwächeren Ass, ging auf einem Ass-hohen Flop broke, und ich gewann das Fünffache. Dieselben Karten. Eine Entscheidung — die 3-Bet — machte den ganzen Unterschied.
@@ -35,12 +35,12 @@ QQ+, AK | Der Value-Kern, dem fast jeder zustimmt
 
 ## Was ist eine 3-Bet im Poker?
 
-**Eine 3-Bet ist die erste Re-Raise vor dem Flop** — du re-raist einen Spieler, der bereits open-geraist hat. Wenn jemand auf 3 Big Blinds eröffnet und du es auf 9 machst, ist das eine 3-Bet.
+**Eine 3-Bet ist der erste Re-Raise vor dem Flop** — du re-raist einen Spieler, der bereits open-geraist hat. Wenn jemand auf 3 Big Blinds eröffnet und du es auf 9 machst, ist das eine 3-Bet.
 
-Warum heißt es also *drei*-Bet, obwohl es erst die zweite Raise ist? Weil der Name **Bets in der Sequenz zählt, nicht Raises.** Der Big Blind ist ein Pflichteinsatz — das ist ==Bet eins==. Der Open-Raise ist ==Bet zwei==. Deine Re-Raise ist ==Bet drei== — die 3-Bet. Folge der Kette nach oben und der Rest des Vokabulars fügt sich zusammen:
+Warum heißt es also *drei*-Bet, obwohl es erst der zweite Raise ist? Weil der Name **Bets in der Sequenz zählt, nicht Raises.** Der Big Blind ist ein Pflichteinsatz — das ist ==Bet eins==. Der Open-Raise ist ==Bet zwei==. Dein Re-Raise ist ==Bet drei== — die 3-Bet. Folge der Kette nach oben und der Rest des Vokabulars fügt sich zusammen:
 
-- **4-Bet** — die Re-Raise *über* eine 3-Bet (die vierte Bet). Sehr stark oder polarisiert.
-- **5-Bet** — die Re-Raise über eine 4-Bet. Bei 100 Big Blinds ist das meist All-in.
+- **4-Bet** — der Re-Raise *über* eine 3-Bet (die vierte Bet). Sehr stark oder polarisiert.
+- **5-Bet** — der Re-Raise über eine 4-Bet. Bei 100 Big Blinds ist das meist All-in.
 - **Cold 4-Bet** — eine 4-Bet von jemandem, der noch nicht geraist hatte (z. B. UTG eröffnet, du 3-bettest, der Button 4-bettet "cold"). Sie schreit Stärke.
 
 Das ist die ganze Leiter. Alles andere in diesem Guide dreht sich um die erste Sprosse — wann du sie erklimmst, wie weit, und was du tust, wenn jemand sie bei dir erklimmt. Wenn die grundlegenden [Betting-Aktionen](/de/blog/holdem-betting-actions) Check, Call und Raise noch unklar sind, fang dort an und komm zurück.
@@ -54,7 +54,7 @@ Einen Open-Raise zu callen (genannt **Flatten**) hält dich im Pot, aber eine 3-
 1. **Sie gewinnt den Pot oft sofort.** In einem guten Teil der Fälle foldet der Raiser und du scoopst den Pot vor dem Flop ohne Showdown. Ein Flat tut das nie.
 2. **Sie baut mit deinen besten Händen einen großen Pot.** Wenn du Assen oder Könige hältst, lässt Flatten drei andere Spieler billig rein. 3-Betten isoliert den Raiser und bringt Geld rein, während du ein riesiger Favorit bist.
 3. **Sie ergreift Initiative und Positions-Hebel.** Du wirst zum Aggressor mit der Betting-Führung auf jeder Street — und gegen einen weiten Opener druckt dieser Druck Geld.
-4. **Sie verweigert Equity und Information.** Eine Raise lässt Gegner zum Weiterspielen zahlen, statt sie mit einer Hand, die dich knacken könnte, einen billigen Flop sehen zu lassen.
+4. **Sie verweigert Equity und Information.** Ein Raise lässt Gegner zum Weiterspielen zahlen, statt sie mit einer Hand, die dich knacken könnte, einen billigen Flop sehen zu lassen.
 
 Der Haken: Weil eine 3-Bet mächtig ist, ist es teuer, sie *falsch* zu machen. Zu viele Spieler 3-betten nur ihre Monster, was sie völlig lesbar macht. Der Rest dieses Guides handelt davon, es richtig zu machen.
 
@@ -152,12 +152,12 @@ Die große Erkenntnis: **Flatten ist in Position legitim** — moderne Solver be
 
 ## Der Squeeze Play: Einen Raiser *und* einen Caller 3-betten
 
-![Die Chip-Stacks dreier Spieler in Richtung Mitte des grünen Filzes geschoben, während ein Spieler eine größere Re-Raise nach vorne schiebt und einen Open-Raiser und einen Caller squeezt](/images/holdem-3bet-squeeze.webp "Ein Squeeze bestraft einen Open-Raiser und einen Flat-Caller auf einmal — das extra Dead Money macht selbst eine Light-3-Bet profitabel")
+![Die Chip-Stacks dreier Spieler in Richtung Mitte des grünen Filzes geschoben, während ein Spieler einen größeren Re-Raise nach vorne schiebt und einen Open-Raiser und einen Caller squeezt](/images/holdem-3bet-squeeze.webp "Ein Squeeze bestraft einen Open-Raiser und einen Flat-Caller auf einmal — das extra Dead Money macht selbst eine Light-3-Bet profitabel")
 
 Ein **Squeeze Play** ist eine 3-Bet, die gemacht wird, nachdem es bereits einen Open-Raise *und* mindestens einen Caller gab. Er heißt Squeeze, weil du beide Gegner in einen Schraubstock nimmst: Der ursprüngliche Raiser muss sich nun um den Caller hinter ihm sorgen, und der Caller — der gerade eine Hand gezeigt hat, die nicht stark genug zum Re-Raisen war — will selten gegen deine Aggression weiterspielen.
 
 Zwei Dinge machen den Squeeze besonders:
-- **Es gibt mehr Dead Money.** Der Pot enthält bereits die Raise und den Call, ein erfolgreicher Squeeze gewinnt also mehr, was bedeutet, dass deine Bluffs *seltener* funktionieren müssen, um profitabel zu sein.
+- **Es gibt mehr Dead Money.** Der Pot enthält bereits den Raise und den Call, ein erfolgreicher Squeeze gewinnt also mehr, was bedeutet, dass deine Bluffs *seltener* funktionieren müssen, um profitabel zu sein.
 - **Size ihn größer.** Füge etwa einen zusätzlichen Open-Raise pro Caller hinzu. Gegen einen 3bb-Open plus einen Caller ist ein Squeeze auf etwa **14–15bb** Standard — das extra Size ist es, was beide Spieler rausdrückt.
 
 Gute Squeeze-Bluffs sind dieselben suited Blocker-Hände (A5s und Freunde), die gute 3-Bet-Bluffs abgeben, weil du immer noch die mittleren Hände des Raisers herausfolden und Equity haben willst, wenn du gecallt wirst.
@@ -166,7 +166,7 @@ Gute Squeeze-Bluffs sind dieselben suited Blocker-Hände (A5s und Freunde), die 
 
 ## Eine 3-Bet kontern: Callst du, 4-bettest du oder foldest du?
 
-![Ein Pokerspieler starrt eine Preflop-Re-Raise an, eine Hand auf seinen Chips, und wägt ab, ob er callt, 4-bettet oder gegen eine 3-Bet foldet](/images/holdem-3bet-facing.webp "Die Hälfte des 3-Bettings, die niemand lehrt: Wenn dich jemand re-raist, sollte der Großteil deiner Range einfach folden — besonders gegen Spieler, die nie bluffen")
+![Ein Pokerspieler starrt einen Preflop-Re-Raise an, eine Hand auf seinen Chips, und wägt ab, ob er callt, 4-bettet oder gegen eine 3-Bet foldet](/images/holdem-3bet-facing.webp "Die Hälfte des 3-Bettings, die niemand lehrt: Wenn dich jemand re-raist, sollte der Großteil deiner Range einfach folden — besonders gegen Spieler, die nie bluffen")
 
 Hier die Hälfte des 3-Bettings, die fast jeder Artikel überspringt: **Du wirst weit öfter am empfangenden Ende sein, als du selbst 3-bettest.** Wenn du eröffnest und re-geraist wirst, hast du drei Antworten:
 
@@ -230,15 +230,15 @@ Bemerke den roten Faden durch alle sechs: Eine gute 3-Bet hat einen *Grund* — 
 
 **Q. Was ist eine 3-Bet im Poker?**
 
-A. Eine 3-Bet ist die erste Re-Raise vor dem Flop — du re-raist einen Spieler, der bereits open-geraist hat. Wenn zum Beispiel jemand auf 3 Big Blinds eröffnet und du es auf 9 machst, hast du 3-gebettet. Sie ist das Hauptwerkzeug, um mit starken Händen einen Pot zu bauen und Druck auf Gegner auszuüben, die zu weit eröffnen.
+A. Eine 3-Bet ist der erste Re-Raise vor dem Flop — du re-raist einen Spieler, der bereits open-geraist hat. Wenn zum Beispiel jemand auf 3 Big Blinds eröffnet und du es auf 9 machst, hast du 3-gebettet. Sie ist das Hauptwerkzeug, um mit starken Händen einen Pot zu bauen und Druck auf Gegner auszuüben, die zu weit eröffnen.
 
 **Q. Warum heißt es eine 3-Bet?**
 
-A. Weil der Name Bets in der Sequenz zählt, nicht Raises. Der Big Blind ist eine erzwungene erste Bet, der Open-Raise ist die zweite Bet und deine Re-Raise ist die dritte — die "3-Bet". Deshalb heißt es Three-Bet, obwohl es technisch erst die zweite Raise der Hand ist.
+A. Weil der Name Bets in der Sequenz zählt, nicht Raises. Der Big Blind ist eine erzwungene erste Bet, der Open-Raise ist die zweite Bet und dein Re-Raise ist die dritte — die "3-Bet". Deshalb heißt es Three-Bet, obwohl es technisch erst der zweite Raise der Hand ist.
 
 **Q. Was ist der Unterschied zwischen einer 3-Bet und einer 4-Bet?**
 
-A. Eine 3-Bet ist die erste Re-Raise (über einen Open-Raise); eine 4-Bet ist die nächste Re-Raise, gemacht über eine 3-Bet. Die Leiter geht also: Open-Raise (2. Bet) → 3-Bet (3. Bet) → 4-Bet (4. Bet) → 5-Bet (meist All-in). Eine 4-Bet repräsentiert eine sehr starke, polarisierte Range.
+A. Eine 3-Bet ist der erste Re-Raise (über einen Open-Raise); eine 4-Bet ist der nächste Re-Raise, gemacht über eine 3-Bet. Die Leiter geht also: Open-Raise (2. Bet) → 3-Bet (3. Bet) → 4-Bet (4. Bet) → 5-Bet (meist All-in). Eine 4-Bet repräsentiert eine sehr starke, polarisierte Range.
 
 **Q. Welche Hände solltest du 3-betten?**
 
@@ -278,13 +278,13 @@ A. Etwa 55% ist eine vernünftige, grob ausgeglichene Basislinie — du spielst 
 
 **Q. Solltest du mit einem Short Stack im Turnier 3-betten oder 4-bet-All-in gehen?**
 
-A. Wenn die Stacks short werden — etwa 10–25 Big Blinds — spielen viele Hände am besten als 3-Bet-All-in (ein Shove) statt als kleine Re-Raise, weil kein Platz ist, um zu raisen und dann gegen eine 4-Bet zu folden. Ein Shove realisiert deine ganze Fold-Equity auf einmal. Stärkere Felder kontern reines Jammen mit winzigen 3-Bets, also mische kleine Nicht-All-in-3-Bets ein, wenn du kannst.
+A. Wenn die Stacks short werden — etwa 10–25 Big Blinds — spielen viele Hände am besten als 3-Bet-All-in (ein Shove) statt als kleiner Re-Raise, weil kein Platz ist, um zu raisen und dann gegen eine 4-Bet zu folden. Ein Shove realisiert deine ganze Fold-Equity auf einmal. Stärkere Felder kontern reines Jammen mit winzigen 3-Bets, also mische kleine Nicht-All-in-3-Bets ein, wenn du kannst.
 
 ---
 
 ## Das 3-Bet-Playbook, kurz gefasst
 
-1. **Eine 3-Bet ist die erste Preflop-Re-Raise** — dritte Bet in der Sequenz, weil der Blind als Bet eins zählt.
+1. **Eine 3-Bet ist der erste Preflop-Re-Raise** — dritte Bet in der Sequenz, weil der Blind als Bet eins zählt.
 2. **Baue zwei Ranges:** einen Value-Kern (QQ+, AK), den du gecallt haben willst, und suited Blocker-Bluffs (A5s und Freunde), gewählt wegen Blockern und Playability.
 3. **Size sie ~3x in Position, ~4x out** — und out of Position nie klein.
 4. **Passe die Form zur Situation an:** linear vs. weite/schwache Opens, polarisiert vs. enge Opens und aus den Blinds.

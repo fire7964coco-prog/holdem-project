@@ -205,6 +205,8 @@ Wenn alle Setzrunden abgeschlossen sind und ein Spieler All-in ist, läuft der S
 
 ## Was passiert, wenn du das All-in falsch spielst? — 5 Fehler, die du vermeiden musst
 
+Wenn du genug All-in-Pots gespielt hast, merkst du: Das Chaos kommt fast immer aus fünf ganz bestimmten Missverständnissen — meist nicht aus der Mathematik, sondern aus den Regeln rund um Pot-Berechtigung, Re-Raise-Recht und Table Stakes.
+
 ### Fehler 1: Glauben, der All-in-Spieler könne den Side Pot gewinnen
 Kann er nicht. Sobald der All-in-Spieler gedeckelt ist, gehören alle zusätzlichen Chips der größeren Stacks zu einem Pot, auf den er keinerlei Anspruch hat.
 
@@ -215,7 +217,7 @@ Ein Teil-All-in von Spieler C gibt Spieler A keine zweite Chance zum Re-Raise. W
 Table Stakes. Was auf dem Tisch liegt, ist alles, was du setzen kannst. Bist du für $80 All-in und der Pot beträgt $400, kannst du von jedem Caller trotzdem nur $80 gewinnen.
 
 ### Fehler 4: Die Hand zu schnell mucken
-Du bist für den Main Pot All-in. Zwei andere Spieler kämpfen um den Side Pot. Muck nicht — deine Hand ist für den Main Pot noch live. ==Warte immer, bis der Dealer jeden Pot aufgelöst hat, bevor du deine Karten anfasst.==
+Du bist für den Main Pot All-in. Zwei andere Spieler kämpfen um den Side Pot. Ich habe einmal gesehen, wie ein Shortstack seine Karten wegwarf, sobald der Showdown um den Side Pot gegen ihn lief — er hatte vergessen, dass er in diesem Pot gar nicht drin war und seine Hand für den Main Pot noch live war. Die Chips waren in dem Moment weg, in dem die Karten im Muck landeten. Muck nicht — deine Hand ist für den Main Pot noch live. ==Warte immer, bis der Dealer jeden Pot aufgelöst hat, bevor du deine Karten anfasst.==
 
 ### Fehler 5: Aus Frust All-in gehen
 Das All-in ist der mächtigste Zug am Tisch. Es zwingt Gegner in Alles-oder-nichts-Entscheidungen. Diese Macht verpufft, wenn du wahllos alles reinschiebst. Setz es im richtigen Moment ein — als Shortstack-Druckmittel, mit Value-Händen, die gecallt werden sollen, oder als Bluff mit echter Fold Equity.

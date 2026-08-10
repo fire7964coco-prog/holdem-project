@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ties werden in fester Reihenfolge entschieden: zuerst der Handrang, dann die Karten, die die Hand bilden, dann die Kicker von hoch nach niedrig. Gleiches Paar → der höhere erste Kicker gewinnt; identische fünf Karten → geteilter Pot. Farben entscheiden einen Tie niemals.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-08-09",
+  updated: "2026-08-10",
   masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "12 Min.",
@@ -73,7 +73,7 @@ Nimm die Hand aus dem Foto oben:
 
 Gleiches Ass-Paar, also treten die Kicker der Reihe nach gegeneinander an: ==g:K schlägt Q — Kampf vorbei.== B's Neun ist als zweiter Kicker immer noch *in* der Hand, aber der Vergleich kommt nie so weit.
 
-Beachte, dass B's oberster Kicker die Dame vom **Board** ist, nicht die 9, die er hält. ==r:Ein Kicker zählt nur, wenn er tatsächlich in deinen besten fünf landet== — eine höhere Board-Karte drückt deine Hole Card die Liste hinunter. Deshalb zählt die zweite Karte, mit der du startest, genauso viel wie das Ass selbst: A-K und A-9 sind hier beide „ein Ass-Paar", und nur eine davon gewinnt ([Starthand-Tabelle](/de/blog/holdem-starting-hands-chart)).
+Beachte, dass B's oberster Kicker die Dame vom **Board** ist, nicht die 9, die er hält. ==r:Ein Kicker zählt nur, wenn er tatsächlich in deinen besten fünf landet== — eine höhere Board-Karte drückt deine Hole Card die Liste hinunter. Deshalb zählt die zweite Karte, mit der du startest, genauso viel wie das Ass selbst: A-K und A-9 sind hier beide „ein Ass-Paar“, und nur eine davon gewinnt ([Starthand-Tabelle](/de/blog/holdem-starting-hands-chart)).
 
 ---
 
@@ -159,7 +159,7 @@ Die subtilere Variante ist, wenn deine Hand spielt, dein Kicker aber nicht. Boar
 
 ![Infografik: Auf einem A-K-Q-J-9-Board spielen A-3 und A-2 beide A-A-K-Q-J, also teilen die identischen Hände den Pot](/images/holdem-tiebreak-split.webp "Wenn die besten Fünf Rang für Rang übereinstimmen, wird der Pot geteilt — Farben brechen den Tie niemals")
 
-Solche Runouts vor dem River-Bet zu erkennen, ist eine eigene Fähigkeit — das ist das [Lesen des Boards](/de/blog/holdem-reading-the-board). Und was mit den Chips passiert, sobald Hände unentschieden sind — gleiche Anteile, der ungerade Chip, Three-Way-Chops, All-in-Side-Pots — steht alles im [Guide zu den Split-Pot-Regeln](/de/blog/holdem-split-pot-rules "thumb:/images/holdem-split-pot-hero.webp").
+Solche Runouts vor der River-Bet zu erkennen, ist eine eigene Fähigkeit — das ist das [Lesen des Boards](/de/blog/holdem-reading-the-board). Und was mit den Chips passiert, sobald Hände unentschieden sind — gleiche Anteile, der ungerade Chip, Three-Way-Chops, All-in-Side-Pots — steht alles im [Guide zu den Split-Pot-Regeln](/de/blog/holdem-split-pot-rules "thumb:/images/holdem-split-pot-hero.webp").
 
 ---
 
@@ -188,7 +188,7 @@ A. Ja. Wenn die ersten vier Karten beider Hände identisch sind, entscheidet die
 
 **Q. Kann man beim Poker ein Ass als 1 verwenden?**
 
-A. Ja, aber nur in der Straße A-2-3-4-5 (dem „Wheel"), wo es als niedrigste Karte spielt — was das Wheel zur niedrigsten Straße im Spiel macht. Das Ass kann sich nicht in der Mitte herumwickeln: Q-K-A-2-3 ist keine Straße.
+A. Ja, aber nur in der Straße A-2-3-4-5 (dem „Wheel“), wo es als niedrigste Karte spielt — was das Wheel zur niedrigsten Straße im Spiel macht. Das Ass kann sich nicht in der Mitte herumwickeln: Q-K-A-2-3 ist keine Straße.
 
 **Q. Kann man eine höhere Straße haben als ein anderer Spieler?**
 
@@ -200,7 +200,7 @@ A. Nein. Es gibt beim Hold'em keine Farbwertung — stimmen zwei beste Fünf-Kar
 
 **Q. Was passiert, wenn beide Spieler exakt dieselbe Hand haben?**
 
-A. Der Pot wird gleichmäßig geteilt — ein „Chop". Wie die Chips physisch aufgeteilt werden, wer den ungeraden Chip bekommt und wie Side Pots abgerechnet werden, ist in den [Split-Pot-Regeln](/de/blog/holdem-split-pot-rules) abgedeckt.
+A. Der Pot wird gleichmäßig geteilt — ein „Chop“. Wie die Chips physisch aufgeteilt werden, wer den ungeraden Chip bekommt und wie Side Pots abgerechnet werden, ist in den [Split-Pot-Regeln](/de/blog/holdem-split-pot-rules) abgedeckt.
 
 ---
 

@@ -3,6 +3,110 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-08-10 (7) — **de Session 1 (Regeln 6편) 완료** + 게이트 2차 확장 + 🔴다국어 FAQ 스키마 41편 발견
+
+> build **69 blog + 457 intl** 불변 · 문체 게이트 셀프테스트 **61 → 87** · 42편 🔴 **6 → 1건**(apt-incheon=Session 6)
+> `audit:hard --locale=de` **42/42 🔴 0건** · 미러 드리프트 **5 → 3** (✅ 13 → 15)
+
+### ① Bet·Raise 성을 42편 일괄 확정 — «정본 위반»이 아니라 «오류»였다
+
+핸드오프는 「독일 매체는 `die Raise`도 쓰니 오류 확정이 아니다」라고 유보해 뒀다. **실측했더니 재현되지 않았다.**
+WebFetch 요약이 아니라 **Playwright로 DOM을 긁어 내 정규식으로 직접 셌다**(§12-B).
+
+| | 실측 | 근거 |
+|---|---|---|
+| **die Bet** | 여성 7 : 남성 2 | pokerzeit·888poker.de·start-up-poker.de ↔ de.wikipedia만 남성 |
+| **der Raise** | 남성 5 : 여성 **0** | de.wikipedia·888poker.de·start-up-poker.de |
+
+de 42편 코퍼스도 같은 방향(Bet 여성 ~35 : 6 · Raise 남성 ~35 : 4)이라 **정본·코퍼스·외부 매체가 일치**했다.
+→ 어긋난 **24곳을 5편이 아니라 9편에서** 고쳤다. 근거는 `translation-terms-de.md` **§7-9**에 남겼다(재조사 금지).
+⚠ **pokerolymp 용어집은 근거가 아니다** — 관사를 아예 피한다. 검색 요약은 「Das Raise ist…」라고 답했는데 **원문에 그 문장이 없다**(§12-B 실례 추가).
+
+### ② 게이트를 넓히자 결함이 3배로 나왔다 — Session 0의 「6건」은 «좁은 값»이었다
+
+**셀프테스트 61 → 87.** 넓힌 4가지와 그게 만든 오탐 2종은 `de-style-gate-spec.md` **§6-B**에 표로.
+
+- ⑦ **사격(斜格)** `einem/einen/das/dem/des + 여성` · `einer/die + 남성` → `bei einem Bet`가 **두 번 통과하던** 자리
+- ⑧ **형용사 한 칸** → 되읽기에서 **내가 새로 써 넣은** `eine ganze Orbit`을 게이트가 못 봤다(`Orbit`도 목록에 추가)
+- ⑨ **하이픈 합성어의 핵** — 독일어는 마지막 요소가 성을 정한다 → `eine River-Raise`·`die Re-Raise`×8 검출
+- ⑩ **D10 독일어 인용부호** `„…"` → `„…“` **59곳/5편**(bad-beat 12·cooler 25·kicker 16·flush 3·tiebreak 3)
+- 🔴 확장 1회차에서 **오탐 2종**이 나왔다: `die **Turn**-Karte`(`**` 제거가 하이픈을 가림) · `das eine Bet`(한정사를 형용사로 먹음, **7편 오탐**). 둘 다 픽스처로 박았다.
+
+### ③ 드리프트의 «정체»는 경험담이었다 — EN 07-19가 넣은 문장이 안 왔다
+
+섹션별 줄 수 대조로 찾았다(EN↔DE 섹션 17개 중 어긋난 곳만 펼쳐 읽음).
+
+| 글 | 안 온 것 |
+|---|---|
+| `game-order` | Burn-Card **FAQ 1문항** + 경험담 3곳 |
+| `blind-meaning` | 경험담 2곳(「블라인드에서 가장 조용히 잃는다」) |
+| `texas-…-beginners` | 경험담 **4곳** — 이 글엔 1인칭이 사실상 0이었다(§8 E-E-A-T 직결) |
+| `showdown-rules` | 도입 1줄 + 경험담 1곳 |
+| `all-in-rules` | 도입 1줄 + 경험담 1곳 — 🔴 **B3에서 masterUpdated가 올라간 편인데도 비어 있었다** |
+
+→ `game-order`·`blind-meaning`은 3중 대조(섹션 줄 수·1인칭·FAQ)로 확인 후 **masterUpdated 07-19로 올림**.
+   `showdown-rules`·`texas-…-beginners`는 de 델타를 다 닫았지만 **판 전체 재동기화 보류분이라 올리지 않았다**.
+
+### ④ FAQ 스키마 — de 2편이 0문항이었고, **원인은 de만의 문제가 아니었다**
+
+- `texas-…-beginners`는 FAQ가 `### 헤딩` 꼴이라 **스키마가 원리상 0**이었다 → `**Q./A.`로 전환.
+  이때 **H2와 축어가 같은 3문항을 지우고**(정본 §7-6) 「Kurzversion」 중복을 통합, 대신 독일어 실검색 3문항
+  (`mit wie vielen karten…`·`wie viele karten bekommt man…`·`…aufgedeckt`)을 신설 → **11문항**
+- `game-order`는 `**Q.`는 있는데 **`A.` 접두만 빠져** 0이었다 → 7곳 접두 + Burn-Card 1문항 → **8문항**
+- 검증은 **빌드 산출물**(`.next/server/app/de/blog/*.html`의 `acceptedAnswer`)로 했다
+- 🔴🔴 **그래서 전 로케일을 스캔했더니 EN 마스터 포함 15개 로케일 41편이 같은 상태였다.**
+  `audit:hard --schema`는 **한국어 산출물 디렉터리만** 본다 — 다국어 FAQ 스키마는 **지금껏 어떤 기계 검사도 안 받았다**.
+  전체 목록·처방은 **`docs/faq-schema-audit-2026-08-10.md`** 신규. (hreflang 08-10 (5)와 **같은 병**이다.)
+
+### ⑤ 그 밖에
+
+- **테이블 토크 FAQ 신설**(`betting-actions`) — `darf man beim poker reden` LDA17. 공식 PDF를 pdftotext로 추출해
+  **WSOP Rule 116 「Table Talk / Disclosure」** 원문 인용(키워드뱅크가 추정한 Rule 72~96이 아니라 **116**이다).
+  Rule 119(excessive chatter)까지. `## Quellen` + 확인일 부기.
+- `texas-…-beginners` 본문에 **「52 Karten / 28 im Einsatz」** 신설 — grep으로 확인하니 이 글에 52가 한 번도 없었다.
+- **되읽기 패스가 3건 잡았다**: `„Table Talk"` 닫는 따옴표 · 본문↔FAQ 축어 중복 · `eine ganze Orbit`(내가 만든 성 오류).
+- Regeln 밖 9편도 `updated` 갱신(sitemap lastmod 13줄 반영). typecheck 480건은 **전부 기존분**(HEAD 대조 확인).
+- 이미지 §9-1 육안검수: `holdem-betting-actions-min-raise.webp`는 **영어 인포그래픽**(18언어 공용)이고
+  철자·산수($6+$6=$12 · $6+$4=$10) 정상. alt만 독일어라 성 정정으로 충분.
+
+### ⑥ 적대적 QA 2렌즈 — **내가 만든 오류 3종을 잡았다.** 렌즈 다양성이 또 값을 했다
+
+두 렌즈가 **3건에서 일치**(산수·전략 모순·개수 불일치)했고, 나머지는 각 렌즈만 잡았다.
+
+**🔴 내가 «수정하면서» 새로 만든 것 3종** — [[review-mechanize-not-repeat]]의 「수정이 결함 주입 공정」이 또 맞았다
+1. **산수 오류** — 「28 Karten, also **nicht einmal die Hälfte**」. 52의 절반은 26이고 28은 그보다 **크다**.
+   내가 쓴 문장이 내가 쓴 숫자로 반증됐다. → 「24 Karten bleiben im Stub」으로 재작성.
+2. **격(格) 깨짐 2곳**(when-to-fold) — 성을 여성→남성으로 고치자 **1격이 노출**됐다.
+   `eine Raise`는 1·4격이 동형이라 격 오류가 **가려져 있었고**, `ein Raise`로 바꾸는 순간 드러난 것.
+   → `gegen einen Raise` · `zeigt … einen Check-Raise`. **성만 고치고 격을 안 본 것이 함정이었다.**
+3. **생략 명사를 잘못 짚음**(3bet) — 「der Open-Raise ist die zweite Bet und dein Re-Raise ist **der dritte**」.
+   세고 있는 건 **Bet**(여성)이라 `die dritte`가 맞다. 형제 글 `holdem-glossary` L271이 정답을 갖고 있었다.
+
+**🔴 네이티브 렌즈만 잡은 것**
+- **`mehrstöckige Aggression`(3곳) = 「여러 «층»으로 된」 = 건물 얘기다.** multi-street의 직역이고 독일 포커
+  매체에 없는 용법. 같은 글이 `Double Barrel`·`Scare Card`는 영어로 쓰면서 이것만 억지 독일어화했다.
+  → `Aggression über mehrere Streets`. **기계 게이트가 원리상 못 잡는 D유형이다.**
+- `lebende Hand`(live hand 직역) → 코퍼스 정본은 영어 `live`(all-in-rules L220) · `das Leck` → `das Leak`(코퍼스 15회+)
+- 🔴 **WSOP 인용이 원문보다 넓었다** — 「im Heads-up」은 원문 `In heads-up **Events**`(대회 포맷)라
+  「9핸드 테이블에서 한 핸드가 1대1이 된 상황」으로 오독될 수 있었다. 또 금지 항목 a~e 중 d(외부와 전략 논의)를
+  빠뜨렸고 「Zwei Ausnahmen」이라는 **개수 서술**이 원문(3항목)과 어긋났다. → 개수를 빼고 d를 넣었다.
+  **§12-B의 「열거·개수는 원문으로」가 인용에도 그대로 적용된다.**
+
+**🔴 교열 렌즈만 잡은 것**
+- **개수 불일치** — 「**Zwei** Gewohnheiten」이라 써 놓고 불릿이 **셋**이었다(내가 얹은 리드인이 만든 오류).
+- **논리 과잉 일반화 2건** — 「keiner davon hat mit Strategie zu tun」인데 뒤 3개가 전부 전략 실수 ·
+  all-in-rules의 「wer für welchen Pot spielberechtigt ist」가 5개 중 2개만 덮음. **둘 다 EN 마스터에서 옮겨온 것.**
+- FAQ↔H2 **완전 일치 2건**(showdown·blind-meaning)과 FAQ 답↔본문 **축어 동일 1건**(betting-actions) →
+  삭제가 아니라 **다른 실검색 문형으로 재구성**(「show one, show all」 · 「Wie oft zahlt man Blinds?」).
+
+**두 렌즈 모두 확인해 준 것**: §13 수치 전수(팟오즈 5건·칩 분배 표 전 행·사이드팟 1.300·MDF 33%·
+스트레이트 플러시 검산·1.326/169·번카드 3장 4곳 상호일치)·du체 100%·내부링크 16종 실재·백틱 0.
+
+🔴 **남은 것(사장님 판단)** — 두 렌즈가 공통 지적:
+**① ASCII 따옴표 23편 287쌍**이 아직 `"…"`다(19편만 `„…“`. 파일 내 혼용은 0건).
+**② Gedankenstrich이 영문 em dash** — ` — ` 2,361회 vs ` – ` 9회. 독일 조판은 –(Halbgeviertstrich)다.
+둘 다 «42편 일괄» 성격이라 Bet/Raise처럼 한 번에 정해야 한다.
+
 ## 2026-08-10 (6) — **de Session 0 완료: 문체 게이트 신설** — 🔴 109 → 26 → **6건**
 
 > `npm run check:de-style`(+`:selftest` **61/61**) 신설 · 42편 전수 · 코드·본문 무변경(게이트만 추가).

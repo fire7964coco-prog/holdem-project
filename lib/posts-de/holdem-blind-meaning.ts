@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Blinds sind Zwangseinsätze, die vor dem Austeilen der Karten gesetzt werden. Der Small Blind sitzt direkt links vom Dealer-Button, der Big Blind links daneben; der Big Blind — meist das Doppelte des Small Blinds — ist die Setzeinheit des Tischs.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-07-14",
-  masterUpdated: "2026-07-11",
+  updated: "2026-08-10",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "9 Min.",
   emoji: "💰",
@@ -139,6 +139,8 @@ Setzt du dich an ein Live-Cash-Game, spielst du in der Regel nicht gratis mit: E
 
 ![Chipstapel fällt Richtung Pot auf einem Pokertisch — ein Blind-Steal-Push vom Button](/images/holdem-blind-steal.webp)
 
+In den Blinds sehe ich Anfänger am leisesten Chips verlieren — nicht in einem großen Pot, sondern jede Runde ein bisschen. Zwei Gewohnheiten in den Blinds beheben das meiste davon, ein dritter Zug holt es aus später Position zurück:
+
 - **Small Blind: Halt es simpel.** Preflop Vorletzter, aber nach dem Flop **als Erster dran** — der saubere Anfängeransatz lautet **raisen oder folden**, nicht callen. Zu limpen und dann out of position angespielt zu werden, ist ein stetiges Chip-Leck.
 - **Big Blind: Verteidige mit den Odds.** Du hast bereits einen vollen Einsatz gebracht, deshalb kannst du Raises profitabel weiter callen als jeder andere Sitz. Gegen einen Open-Raise auf 2,5 BB (der Small Blind foldet) callst du 1,5 BB in einen 4-BB-Pot — etwa 2,7:1. Heißt: Rund 27% Equity reichen, damit der Call break-even ist. Diese Mathematik nennt sich [Pot Odds](/de/blog/holdem-pot-odds) — und sie ist der Grund, warum es „Big Blind Defense“ überhaupt gibt.
 - **Late Position: der Steal.** Folden alle bis zum Button oder Cutoff, ist ein Raise, der nur die beiden Blinds abgreifen soll, ein **Blind Steal** — und der Re-Raise dagegen ein **Re-Steal**. Steal-Größen, Ranges je Sitz und wie weit du verteidigen solltest, sind Strategie-Themen und werden ausführlich im [Strategie-Guide zu In Position vs. Out of Position](/de/blog/holdem-position-play) behandelt.
@@ -172,9 +174,9 @@ A. Ja — das ist die „Option“ des Big Blinds. Callen alle nur, kann der Big
 
 A. Ja. Wenn du an der Reihe bist, kannst du wie jeder andere folden; der Small Blind kann aufgeben, statt zum Big Blind aufzufüllen. Gesetzte Blinds gibt es aber nie zurück.
 
-**Q. Wer setzt die Blinds beim Heads-up?**
+**Q. Wie oft zahlt man beim Poker Blinds?**
 
-A. Bei nur zwei Spielern dreht sich die Regel um: Der Dealer-Button setzt den Small Blind und handelt vor dem Flop als Erster, der andere Spieler setzt den Big Blind und handelt preflop als Letzter. Es ist das einzige Mal, dass der Button einen Blind zahlt.
+A. Genau zweimal pro Orbit — einmal den Small Blind, einmal den Big Blind. Der Button rückt nach jeder Hand einen Sitz weiter und die Blind-Sitze wandern mit, also trifft es jeden gleich oft; drücken kann sich niemand. In einer typischen Struktur kostet dich eine volle Runde damit rund 1,5 Big Blinds, bevor du überhaupt eine Karte gespielt hast — genau deshalb kannst du aus den Blinds nicht einfach alles wegfolden.
 
 **Q. Was passiert, wenn du deinen Blind verpasst?**
 

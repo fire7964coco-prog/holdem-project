@@ -25,6 +25,8 @@ export const POST: Post = {
     "poker spickzettel",
     "pokerchips verteilung",
     "wie viele spieler texas holdem",
+    "wie viele karten beim poker",
+    "mit wie vielen karten spielt man poker",
     "no limit texas holdem",
   ],
   content: `
@@ -33,6 +35,8 @@ Wenn du nach ==Texas Hold'em Regeln für Anfänger== gesucht hast, brauchst du v
 Du willst wissen, was die Blinds sind, wann du an der Reihe bist, wie die fünf Gemeinschaftskarten funktionieren, welche Hand gewinnt — und wie viele Chips jeder bekommt, wenn ihr zu Hause spielt.
 
 Dieser Guide erklärt dir ==Texas Hold'em für Anfänger== in klarem Deutsch: die exakte Reihenfolge am Tisch, eine einfache Chip-Verteilung, die Grundlagen des Gebens und ein Spickzettel, den du neben den Tisch legen kannst.
+
+Alles hier unten kommt aus der Praxis — Küchentische, Pokerabende, Cardrooms —, nicht aus dem Regelwerk. Ich zeige dir deshalb genau die Stellen, an denen neue Spieler in echten Runden stolpern.
 
 ### Texas Hold'em in 30 Sekunden
 
@@ -54,6 +58,8 @@ Das Wichtigste:
 ## Texas Hold'em Grundregeln
 
 Die Grundregeln von Texas Hold'em sind simpel, sobald du den Tisch einmal der Reihe nach durchgehst.
+
+Gespielt wird mit ==einem einzigen Blatt zu 52 Karten== — die Joker legst du beiseite. Mehr Material brauchst du nicht: Selbst am vollen Zehnertisch sind nur 20 Hole Cards, 5 Gemeinschaftskarten und 3 Burn Cards im Einsatz, zusammen 28 der 52 Karten.
 
 Jede Hand beginnt mit dem Dealer-Button. Die zwei Spieler links vom Button setzen Pflichteinsätze, den **Small Blind** und den **Big Blind** — wenn dich das verwirrt, lies [was die Blinds sind und wie Small Blind und Big Blind funktionieren](/de/blog/holdem-blind-meaning). Danach bekommt jeder Spieler zwei verdeckte Karten. Das sind deine Hole Cards.
 
@@ -390,13 +396,15 @@ Haben zwei Spieler denselben Handtyp, vergleicht ihr die höchsten relevanten Ka
 
 ## Häufige Anfängerfehler
 
+Nach Jahren, in denen ich Pokerabende ausgerichtet habe, sehe ich an fast jedem Anfängertisch dieselben fünf Fehler. Die ersten beiden sind reine Regelunsicherheit; die anderen drei kosten Chips, lange bevor Strategie überhaupt eine Rolle spielt.
+
 ### Fehler 1: Glauben, du müsstest beide Hole Cards nutzen
 
 Du kannst beide, eine oder keine deiner Hole Cards verwenden. Die beste Fünf-Karten-Hand gewinnt.
 
 ### Fehler 2: Vergessen, dass sich die Reihenfolge ändert
 
-Preflop startet links vom Big Blind. Nach dem Flop startet die Action links vom Button.
+Preflop startet links vom Big Blind. Nach dem Flop startet die Action links vom Button. Beim ersten Pokerabend, den ich gegeben habe, agierten zwei Spieler auf jedem Flop außer der Reihe — wir haben einen echten Dealer-Button auf den Tisch gelegt, und die Verwirrung war innerhalb eines Orbits weg.
 
 ### Fehler 3: Callen, weil „sie ja noch kommen könnte“
 
@@ -404,7 +412,7 @@ Draws brauchen den richtigen Preis. Ist der Pot klein und die Bet riesig, wird d
 
 ### Fehler 4: Jedes Ass spielen
 
-A♣4♦ sieht für Anfänger aufregend aus, aber schwache Asse enden oft als zweitbestes Paar. Große Asse wie AK und AQ sind deutlich stärker.
+A♣4♦ sieht für Anfänger aufregend aus, aber schwache Asse enden oft als zweitbestes Paar. Mit keiner anderen Hand habe ich neue Spieler so viele Chips verlieren sehen. Große Asse wie AK und AQ sind deutlich stärker.
 
 ### Fehler 5: Position ignorieren
 
@@ -419,53 +427,49 @@ Hände spielen sich leichter, wenn du später an der Reihe bist. Bist du als Ers
 
 ## FAQ
 
-### Wie spielt man Texas Hold'em Schritt für Schritt?
+**Q. Wie spielt man Texas Hold'em Schritt für Schritt?**
 
-Blinds setzen, jedem Spieler zwei Hole Cards geben, Preflop-Setzrunde spielen, dann Flop, Turn und River aufdecken — mit einer Setzrunde nach jeder Street — und beim Showdown die besten Fünf-Karten-Hände vergleichen.
+A. Blinds setzen, jedem Spieler zwei Hole Cards geben, Preflop-Setzrunde spielen, dann Flop, Turn und River aufdecken — mit einer Setzrunde nach jeder Street — und beim Showdown die besten Fünf-Karten-Hände vergleichen. Insgesamt: vier Setzrunden, fünf Gemeinschaftskarten, ein Gewinner.
 
-### Wer fängt an beim Texas Hold'em?
+**Q. Mit wie vielen Karten spielt man Texas Hold'em?**
 
-Preflop agiert der Spieler links vom Big Blind zuerst. Nach dem Flop agiert der erste aktive Spieler links vom Dealer-Button zuerst, und der Button ist meist als Letzter dran.
+A. **52 Karten** — ein französisches Blatt ohne Joker. Ausgeteilt wird nie das ganze Deck: Selbst am vollen Zehnertisch bleiben 24 Karten im Stub liegen (die Rechnung steht oben bei den Grundregeln). Mehr als ein Deck brauchst du also nie, egal wie viele mitspielen.
 
-### Mit welchen Chips startet man beim Texas Hold'em?
+**Q. Wie viele Karten bekommt man beim Poker?**
 
-Für eine Anfänger-Heimrunde gib jedem Spieler Chips im Gesamtwert von etwa 200 und spielt mit Blinds von 1/2. Ein einfacher Stack: 20 Chips zu 1, 16 Chips zu 5 und 4 Chips zu 25.
+A. Jeder Spieler bekommt genau **2 verdeckte Karten** — die Hole Cards. Mehr bekommst du die ganze Hand über nicht; alles Weitere sind Gemeinschaftskarten, die allen zugleich gehören. Deine fertige Hand besteht immer aus fünf Karten, die du dir aus deinen zwei und den fünf offenen frei zusammensuchst.
 
-### Mit wie viel Geld startet man beim Texas Hold'em?
+**Q. Wie viele Karten werden beim Poker aufgedeckt?**
 
-Zum Lernen nimm Spielchips. Für kleine Echtgeld-Heimrunden wähle ein Buy-in, dessen Verlust jeder verschmerzen kann — etwa $2 bis $5 bei Blinds von $0,01/$0,02.
+A. Insgesamt **5**, und zwar in drei Schritten: 3 auf einmal (der Flop), dann 1 (der Turn), dann 1 (der River). Vor jedem dieser drei Schritte legt der Dealer zusätzlich eine Burn Card verdeckt beiseite — die wird nicht aufgedeckt und zählt für niemanden.
 
-### Gibt es eine kleine Straße im Texas Hold'em?
+**Q. Gibt es eine kleine Straße im Texas Hold'em?**
 
-Ja. A-2-3-4-5 ist eine gültige Straße und wird oft „Wheel“ genannt. Sie ist die niedrigste mögliche Straße. Das Ass kann aber nicht „herumlaufen“: J-Q-K-A-2 ist keine Straße. Das Ass zählt entweder als höchste Karte (A-K-Q-J-10) oder als niedrigste (A-2-3-4-5) — nie in der Mitte.
+A. Ja. A-2-3-4-5 ist eine gültige Straße und wird oft „Wheel“ genannt. Sie ist die niedrigste mögliche Straße. Das Ass kann aber nicht „herumlaufen“: J-Q-K-A-2 ist keine Straße. Das Ass zählt entweder als höchste Karte (A-K-Q-J-10) oder als niedrigste (A-2-3-4-5) — nie in der Mitte.
 
-### Wie viele mögliche Starthände gibt es beim Texas Hold'em?
+**Q. Wie viele mögliche Starthände gibt es beim Texas Hold'em?**
 
-Es gibt 1.326 exakte Zwei-Karten-Kombinationen, aber Spieler fassen sie meist zu 169 Starthand-Typen zusammen — etwa AA, AK suited oder 76 offsuit.
+A. Es gibt 1.326 exakte Zwei-Karten-Kombinationen, aber Spieler fassen sie meist zu 169 Starthand-Typen zusammen — etwa AA, AK suited oder 76 offsuit.
 
-### Was sind die Texas Hold'em Regeln in der einfachsten Version?
+**Q. Was sind die Texas Hold'em Regeln in der einfachsten Version?**
 
-Die einfachste Version: Jeder Spieler bekommt 2 verdeckte Karten. Fünf gemeinsame Karten werden in drei Stufen aufgedeckt (3, dann 1, dann 1). Nach jeder Stufe wird gesetzt. Die beste Fünf-Karten-Hand aus einer beliebigen Mischung deiner Karten und der gemeinsamen Karten gewinnt. Wenn alle anderen folden, gewinnst du — egal, welche Karten du hältst.
+A. In einem Satz: Aus deinen 2 verdeckten Karten und den 5 offenen in der Tischmitte baust du die beste Fünf-Karten-Hand — die höchste gewinnt. Zwei Dinge überraschen Anfänger dabei: Du darfst beide, eine oder gar keine deiner eigenen Karten benutzen, und du brauchst die beste Hand überhaupt nicht, wenn alle anderen vorher folden — dann gehört dir der Pot, ohne dass du je eine Karte zeigst.
 
-### Was bedeuten die Blinds — einfach erklärt?
+**Q. Was bedeuten die Blinds — einfach erklärt?**
 
-Die zwei Spieler links vom Dealer-Button müssen Pflichteinsätze setzen, bevor Karten gegeben werden. Der erste setzt den Small Blind, der zweite den Big Blind (meist das Doppelte). Diese Einsätze garantieren, dass immer Geld im Pot liegt, um das es sich zu kämpfen lohnt. Jeder andere Spieler muss mindestens den Big Blind mitgehen, um in der Hand zu bleiben.
+A. Die zwei Spieler links vom Dealer-Button müssen Pflichteinsätze setzen, bevor Karten gegeben werden. Der erste setzt den Small Blind, der zweite den Big Blind (meist das Doppelte). Diese Einsätze garantieren, dass immer Geld im Pot liegt, um das es sich zu kämpfen lohnt. Jeder andere Spieler muss mindestens den Big Blind mitgehen, um in der Hand zu bleiben.
 
-### Was ist die Kurzversion der Texas Hold'em Regeln?
+**Q. Kann man Texas Hold'em zu zweit spielen?**
 
-Blinds setzen → 2 Hole Cards geben → Preflop-Setzrunde → 3 Gemeinschaftskarten aufdecken (Flop) + setzen → 1 Karte aufdecken (Turn) + setzen → 1 Karte aufdecken (River) + setzen → beste Hand gewinnt. Insgesamt: vier Setzrunden, fünf Gemeinschaftskarten, ein Gewinner.
+A. Ja — das heißt Heads-up und ist die schnellste Variante überhaupt. Die Regeln bleiben gleich, nur die Blind-Reihenfolge dreht sich um (die Details stehen oben unter „Wie viele Spieler können Texas Hold'em spielen?“). Praktisch heißt das: Du zahlst **jede** Hand einen Blind, sitzt also in jedem Pot und spielst deutlich weiter als am vollen Tisch — Hände, die du zu neunt sofort foldest, sind zu zweit oft ein klarer Raise.
 
-### Wie viele Spieler braucht man für Texas Hold'em?
+**Q. Was bedeutet No-Limit beim Texas Hold'em?**
 
-Du brauchst mindestens 2 Spieler, bis zu 10 passen an einen Tisch. Zu zweit heißt es Heads-up, und die Blinds sind vertauscht — der Button setzt den Small Blind und agiert preflop zuerst, während der Big Blind nach dem Flop zuerst dran ist. Für die erste Heimrunde halten 4 bis 6 Spieler die Action schnell und übersichtlich.
+A. No-Limit heißt, du kannst in jeder Setzrunde jeden Betrag bis zu all deinen Chips setzen — das ist das „All-in“. Es ist das Standard- und beliebteste Format, inklusive WSOP Main Event. Limit Hold'em begrenzt jede Bet auf eine feste Größe, Pot-Limit begrenzt deine Bet auf die aktuelle Potgröße.
 
-### Was bedeutet No-Limit beim Texas Hold'em?
+**Q. Wie lange dauert eine Hand Texas Hold'em?**
 
-No-Limit heißt, du kannst in jeder Setzrunde jeden Betrag bis zu all deinen Chips setzen — das ist das „All-in“. Es ist das Standard- und beliebteste Format, inklusive WSOP Main Event. Limit Hold'em begrenzt jede Bet auf eine feste Größe, Pot-Limit begrenzt deine Bet auf die aktuelle Potgröße.
-
-### Wie lange dauert eine Hand Texas Hold'em?
-
-Eine einzelne Hand dauert meist etwa 10 bis 60 Sekunden; ein großer Multiway-Pot mit schwierigen Entscheidungen kann mehrere Minuten laufen. Eine lockere Heimrunde über ein paar Stunden schafft Dutzende Hände — niemand muss einen ganzen Abend für ein einziges Blatt einplanen.
+A. Eine einzelne Hand dauert meist etwa 10 bis 60 Sekunden; ein großer Multiway-Pot mit schwierigen Entscheidungen kann mehrere Minuten laufen. Eine lockere Heimrunde über ein paar Stunden schafft Dutzende Hände — niemand muss einen ganzen Abend für ein einziges Blatt einplanen.
 
 ---
 

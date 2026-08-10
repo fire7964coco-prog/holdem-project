@@ -9,15 +9,23 @@
 ## ▶▶▶▶▶▶▶▶▶ 새 세션 START HERE
 
 > **상태 (2026-08-10 마감)**
-> build **69 blog + 457 intl**(불변) · 게이트 **25개 로케일 `--locale` 전부 🔴 0건** ·
-> 드리프트 **84** · 추적불가 **84** (✅ 242)
-> ✅ **de 문체 게이트 신설** — `npm run check:de-style` (셀프테스트 61/61 · 42편 🔴 **6건**)
+> build **69 blog + 457 intl**(불변) · 게이트 **25개 로케일 `--locale` 전부 🔴 0건**
+> 드리프트 **82**(84에서 −2, de) · 추적불가 84 (✅ **244**)
+> ✅ **de 문체 게이트** — `npm run check:de-style` (셀프테스트 **87/87** · 42편 🔴 **1건**=apt-incheon)
+> ✅ **de Session 1(Regeln 6편) 완료** — 상세 `WORKLOG.md` 2026-08-10 (7)
 >
 > ✅ KO 잔여 = **S5(11건) 하나, 8/16 이후 잠금**
 > ✅ 다국어 **B1~B4 전부 완료** — B3(E1 23개 언어 + reading-the-board FAQ)는 08-10에 끝났다
 > (B2 재검수도 08-10 승인 — 버벅임 파손 0건). 상세: `WORKLOG.md` 2026-08-10 (1)(2) ·
 > `docs/multilang-sync-plan.md` §0-D 「B3 적용 완료」(교훈 포함 — **올라간 masterUpdated도 증거가 아니다**,
 > es·ja·zh가 07-25로 올라간 채 E1 미수정이었다).
+>
+> ### 🔴🔴 새로 드러난 것 — **다국어 FAQ 스키마 41편 (EN 마스터 8편 포함)**
+> de 게이트 D6이 de 2편을 잡았는데 **파 보니 15개 로케일 41편이 같은 상태**였다. FAQ가 눈엔 멀쩡한데
+> `**Q./A.` 형식이 아니라 **FAQPage 리치결과가 0**이다. `audit:hard --schema`는 **한국어 산출물만** 봐서
+> 다국어는 **지금껏 미검사**였다(hreflang과 같은 병).
+> **목록·처방·판정기준 = `docs/faq-schema-audit-2026-08-10.md`. 착수 전 사장님 판단 필요.**
+> ⚠ **게이트(처방 3번)를 글 수정(1·2번)보다 먼저 만들 것** — 없으면 「고쳤다」가 검증되지 않는다.
 
 ### ▶▶▶ 🔴 지금 트랙 = **de(독일어) 경화** (2026-08-10 사장님 지시로 착수)
 
@@ -27,30 +35,58 @@
 **✅ 오늘 끝난 선행 작업**(커밋 `ca53842`·`0b24362`) — 리서치 4종 + `/de/tournaments` + DACH 대회 13개.
 상세는 `WORKLOG.md` 2026-08-10 (4).
 
-### ✅ Session 0 (문체 게이트) — **2026-08-10 완료**
+### ✅ Session 0 (문체 게이트) · ✅ Session 1 (Regeln 6편) — **2026-08-10 완료**
 
-`npm run check:de-style` 신설(셀프테스트 **61/61**). `--cluster=<이름>`이 곧 세션 단위다.
-결과·근거는 `docs/de-style-gate-spec.md` §5·§6, 경위는 `WORKLOG.md` 2026-08-10 (6).
+`npm run check:de-style`(셀프테스트 **87/87**). `--cluster=<이름>`이 곧 세션 단위다.
+결과·근거는 `docs/de-style-gate-spec.md` §5·§6·**§6-B**, 경위는 `WORKLOG.md` 2026-08-10 (6)(7).
 
-**세션 1~6이 알아야 할 것 딱 세 가지**
+**Session 2~6이 알아야 할 것 — 이번에 값비싸게 배운 것들**
 
-1. **🔴 6건/6편만 남았다** — Regeln 3편(FAQ 0문항 2 + `ein Bet`×3) · Strategie 2편(`eine Raise`×3) ·
-   Turniere 1편(apt-incheon: `im Lobby`·`das Natural8-Lobby`·`gegen Primärquellen geprüft`).
-   ★apt-incheon 3건은 **07-28 검수에서 이미 정정으로 확정된 항목이 미반영**인 것 → 판단 없이 고치면 된다.
-   ★Bet/Raise 성 4건은 «정본 위반»이지 «오류 확정»이 아니다 — 독일 매체는 `die Raise`도 쓴다.
-   **한 편만 바꾸면 형제와 어긋난다. §5 재확인 후 42편 일괄 결정할 것.**
-2. **🔴 이 6건으로 경화 범위를 줄이지 마라.** 게이트는 §7 문체 «지문»만 본다.
+1. ✅ **Bet·Raise 성은 끝났다.** `die Bet` / `der Raise` / `der Re-Raise`로 **42편 일괄 확정**.
+   외부 5개 매체 DOM 실측(die Bet 7:2 · der Raise 5:**0**) + 코퍼스 다수결 + 정본이 전부 일치했다.
+   근거는 `translation-terms-de.md` **§7-9**. 🔴 **다시 조사하지 마라.**
+2. 🔴 **「게이트 🔴 N건」은 «게이트가 넓은 만큼만 N건»이다.** Session 0의 6건은 틀린 값이 아니라 **좁은 값**이었다 —
+   규칙을 넓히자 같은 42편에서 성 오류 **24곳**, 인용부호 **59곳**이 더 나왔다.
+   **세션마다 새 결함 유형을 만나면 규칙을 넓히고 셀프테스트를 올려라**(61→87). 넓힌 4가지·오탐 2종은 §6-B에 있다.
+3. 🔴 **되읽기 패스에서 «내가 새로 만든» 오류를 게이트가 못 잡으면 게이트를 넓히라는 신호다.**
+   이번엔 내가 써 넣은 `eine ganze Orbit`이 그랬다(→ `Orbit` 목록 추가 + 형용사 슬롯 신설).
+4. 🔴 **이 결과로 경화 범위를 줄이지 마라.** 게이트는 §7 문체 «지문»만 본다.
    §5-A의 본체(**H2 국면형 · 「Direkte Duelle」 대결표 · 약어표 · Faustregel · Q-A-E · 톤**)는 **원리상 시야 밖**이다.
-   결과의 뜻은 「범위 축소」가 아니라 **「문체는 이미 깨끗하니 시간을 §5-A에 몰아라」**다.
-   (실제로 **du/Sie 혼용 0편** · 마침표 소수점 0편 · 금지 용어 0건이었다.)
-3. **매 실행 «미판정» 줄을 읽어라** — `prüfen` 16곳 · 천단위 쉼표 2곳은 기계가 **판정을 포기한** 자리다.
+5. **매 실행 «미판정» 줄을 읽어라** — `prüfen` 16곳 · 천단위 쉼표 2곳 · **`deine/keine + 남성 명사`**(복수와 동형이라
+   기계가 못 본다. 실제로 `deine Re-Raise` 2곳은 사람이 읽어서 잡았다).
 
-**게이트를 손대게 되면**: 오탐 원인 6종과 «채택하지 않은 규칙(APT)»이 사양서 §6에 근거와 함께 있다.
-**다시 발견하느라 시간 쓰지 말 것.** 규칙을 바꿨으면 `npm run check:de-style:selftest`가 61/61인지 먼저 본다.
+**게이트를 손대게 되면**: 오탐 원인 **12종**과 «채택하지 않은 규칙(APT)»이 사양서 §6·§6-B에 근거와 함께 있다.
+**다시 발견하느라 시간 쓰지 말 것.** 규칙을 바꿨으면 `npm run check:de-style:selftest`가 87/87인지 먼저 본다.
 
-### ▶▶▶ 새 세션 START — **Session 1: Regeln 클러스터 6편**
+### ▶▶▶ 새 세션 START — **Session 2: Handreihenfolge 클러스터 6편**
 
-`npm run check:de-style -- --cluster=Regeln` + `npm run audit:hard -- --locale=de` 로 시작한다.
+`npm run check:de-style -- --cluster=Handreihenfolge` + `npm run audit:hard -- --locale=de` 로 시작한다.
+
+### 🔴 사장님 판단 대기 — de 코퍼스 «42편 일괄» 2건 (적대 QA 2렌즈가 공통 지적)
+
+| # | 항목 | 실측 | 성격 |
+|---|---|---|---|
+| 1 | **ASCII 따옴표 `"…"` → `„…“`** | **23편 287쌍**이 아직 ASCII(19편만 독일식). ⚠ **파일 안에서 혼용된 건 0편** | 기계적. Session 1이 「반쪽만 현지화된」 5편 59곳만 고쳤다 |
+| 2 | **Gedankenstrich ` — ` → ` – `** | ` — `(Geviertstrich) **2,361회** vs ` – ` 9회. 독일 조판 표준은 **–**(Halbgeviertstrich)이고 정본 §7-1도 –로 적혀 있다 | 기계적. 숫자 범위(`15–25%`)는 이미 –라 치환 대상은 «공백+대시+공백»뿐 |
+
+둘 다 Bet/Raise처럼 **한 번에 정해야** 클러스터끼리 어긋나지 않는다. 지금 상태는 `holdem-cooler`(„…“) ↔
+`holdem-when-to-fold`("…")처럼 **같은 배치 안에서도 갈려 있다.**
+
+### 🔴 성을 일괄 정정할 때의 함정 (Session 1에서 실제로 사고가 났다)
+
+**게이트는 «성»을 보지 그 문장의 «격»을 보지 않는다.** 여성 `eine Raise`는 1격·4격이 동형이라 격 오류가
+**가려져 있었고**, 게이트 지시대로 `ein Raise`로 고치는 순간 1격이 노출돼 동격의 격이 깨졌다.
+→ **성을 고친 문장은 반드시 격까지 사람이 다시 읽어라.** 생략 명사도 같다
+(`dein Re-Raise ist die dritte **[Bet]**` — 주어를 보고 `der dritte`로 고치면 뜻이 바뀐다).
+
+**Session 1이 남긴 이 클러스터 관련 숙제**
+- ✅ 인용부호 `„…“`는 이번에 **59곳 전부 정리**됐다(kicker 16·tiebreak 3·flush-vs-straight 3 포함). 다시 안 해도 된다.
+- 🔴 **§5-A #4 「Direkte Duelle」 대결표**(`holdem-hand-rankings`, 8~10행 + 무늬 서열 없음)가 이 세션의 본체다.
+- 🔴 **`holdem-hand-rankings`는 EN 마스터의 FAQ 스키마가 0**이다(`**Q.` 20개인데 `A.` 접두 없음).
+  de판은 정상이니 de 경화엔 지장 없으나, **EN을 고치기 전엔 다른 번역본에 소급하지 마라**
+  (`docs/faq-schema-audit-2026-08-10.md`).
+- 🟠 **FAQ↔H2 축어 중복**이 `blind-meaning` 1건·`showdown-rules` 2건 남아 있다(EN 마스터에서 상속된 것).
+  정본 §7-6은 중복 금지다 — 해당 클러스터 세션에서 «다른 실검색 문형»으로 재구성할 것(삭제 아님).
 
 ### ▶ Session 1~6 — 클러스터별 (승인된 순서)
 
@@ -70,7 +106,14 @@
 
 **불변**: §13 수치·카드·계산 / slug / 이미지 / 내부링크 구조(EN 1:1)
 **masterUpdated**: 없는 24편은 채운다. 단 **드리프트 보류 2편**(`showdown-rules`·`texas-…-for-beginners`)은
-남은 항목이 있으니 **올리지 마라**(§착수 전 7).
+**올리지 마라**(§착수 전 7). ⚠ **de 쪽 델타는 Session 1에서 이미 다 닫았다** — 안 올리는 건 「판 전체
+재동기화」가 미결이라는 표시일 뿐이다. 그 트랙을 실행할 땐 de는 대상에서 빼도 된다.
+
+🔴 **드리프트의 정체를 찾는 법(Session 1에서 확립)** — 세 가지를 순서대로 돌리면 나온다.
+① **섹션별 줄 수** EN↔DE 대조(어긋난 섹션만 펼쳐 읽는다) ② **1인칭 문장 수** 대조(EN 07-19가 넣은
+경험담이 안 온 게 드리프트의 실체였다) ③ **FAQ 질문 목록** 대조.
+이번엔 이 셋으로 `game-order` 4곳 · `texas-…-beginners` 4곳 · `blind-meaning` 2곳 · `showdown-rules` 2곳 ·
+**`all-in-rules` 2곳(masterUpdated가 이미 올라가 있던 편!)**을 잡았다.
 
 **▶ 착수 전 읽을 것**(순서 고정):
 1. `docs/translation-terms-de.md` ★**정본** — §7에 실측 문체(du 통일·Denglisch 동사·콤마 소수점·**기계번역 지문 8종**)
@@ -80,12 +123,12 @@
 **§5-A 실행 항목 요약**(근거는 그 파일에):
 | 대상 | 할 일 |
 |---|---|
-| ~~texas-holdem-rules-for-beginners~~ | ✅ 칩 분배표·€바이인표 완료(08-10) · 남은 건 카드 수량 FAQ 3문항 |
-| `holdem-glossary` | **토너먼트·온라인 약어 표** 추가 — ATS·ITM·GTD·PLO·Cap·Overlay·Rebuy(전부 LDA 5~35, 현 용어집은 라이브 캐시 편중) |
-| `holdem-hand-rankings` | **「Direkte Duelle」 대결표** 8~10행 + **무늬 서열 없음** 명시 |
-| `holdem-probability` | H2를 **국면형**(nach dem Flop)·**Faustregel형**으로 — 상위어는 LDA27~34 벽, 국면형은 9~15 |
-| 룰 계열 1편 | 테이블 토크 FAQ(`darf man beim poker reden`) — WSOP 룰 원문 자산 사용 |
-| **전 42편** | **§7 문체 적용** — 이게 경화의 본체다. de 베이스는 구조가 이미 강하다 |
+| ~~texas-holdem-rules-for-beginners~~ | ✅ **완료(Session 1)** — 칩 분배표·€바이인표(08-10) + 카드 수량 FAQ 3문항 + 본문 「52 Karten」 + FAQ 스키마 0→11 |
+| ~~룰 계열 1편 — 테이블 토크 FAQ~~ | ✅ **완료(Session 1)** — `betting-actions`에 신설. **WSOP Rule 116**(72~96 아님) 원문 인용 + `## Quellen` |
+| `holdem-glossary` | **토너먼트·온라인 약어 표** 추가 — ATS·ITM·GTD·PLO·Cap·Overlay·Rebuy(전부 LDA 5~35, 현 용어집은 라이브 캐시 편중) → **Session 5** |
+| `holdem-hand-rankings` | **「Direkte Duelle」 대결표** 8~10행 + **무늬 서열 없음** 명시 → **Session 2(다음)** |
+| `holdem-probability` | H2를 **국면형**(nach dem Flop)·**Faustregel형**으로 — 상위어는 LDA27~34 벽, 국면형은 9~15 → **Session 3** |
+| **전 42편** | **§7 문체 적용** — 이게 경화의 본체다. de 베이스는 구조가 이미 강하다 (성·인용부호는 ✅ 42편 완료) |
 
 🔴 **채택 금지**(근거 있음): 합법성 판정 · 봇/RTA · 책 PDF · Würfelpoker/Kniffel · rote Karten(축구) · 소매 · 타언어.
 
@@ -100,7 +143,7 @@
 EN이 07-19에 넣은 경험담·구조 변경이 19~20개 언어에 안 왔다(드리프트 잔존 46건 보류 중).
 «항목 소급»이 아니라 판 전체를 다시 맞추는 작업이라 배치 방식이 다르다 —
 **할지 말지부터 사장님과 정할 것** (노출 미미: 전 언어 클릭 합계 2. 정확성 명분뿐이다).
-나머지 드리프트 84 = 위 2편 + `blind-meaning`·`game-order` 19편씩 + `apt-incheon` 7편(8/16 이후).
+나머지 드리프트 **82** = 위 2편 + `blind-meaning`·`game-order` **18편씩**(de는 Session 1에서 해소) + `apt-incheon` 7편(8/16 이후).
 
 **② 백로그 착수** — 아래 표. (구 #1 `/win-rate-quiz` 본문·구 #4 `/solver` desc는 08-10에 정리 —
 #1은 08-06 `dca284b`가 이미 완료한 낡은 항목이었고 산출물 h2 8·FAQ Question 6으로 재확인,

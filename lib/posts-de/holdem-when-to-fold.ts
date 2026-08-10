@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Folden ist die am meisten unterschätzte Fähigkeit im Poker — das schlechteste Ergebnis eines Folds ist null, während ein verlorener Call jedes Mal Chips verblutet. Ein solider Spieler foldet rund 75–85% seiner Hände vor dem Flop, legt nach dem Flop verfehlte Hände und schwache Draws ab, die seine Pot Odds nicht erfüllen, und — am schwersten von allem — gibt starke, aber geschlagene Hände auf, wenn die Linie eines passiven Gegners nach Value schreit. Die meisten Spieler callen nicht zu viel, weil sie Hände nicht lesen können; sie callen, weil sich die Chips im Pot bereits wie ihre eigenen anfühlen. Sind sie aber nicht.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-08-09",
+  updated: "2026-08-10",
   masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "16 Min.",
@@ -53,7 +53,7 @@ Folde preflop, wenn:
 - **Deine Hand einfach schwach oder Trash ist** — offsuit unverbundene Karten (J‑4, Q‑7, K‑3), schwache Asse (A‑7 offsuit und darunter aus frühen Positionen) und die meisten offsuit "eine hohe Karte"-Hände. Wenn sie für diese Position nicht auf deinem [Starthand-Chart](/de/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") steht, ab in den Muck.
 - **Du in früher Position sitzt** — du handelst auf jeder Street zuerst, also brauchst du eine stärkere Hand zum Einsteigen. K‑J offsuit ist ein Fold Under the Gun und ein Raise auf dem Button.
 - **Du dominiert bist.** A‑9 offsuit gegen einen tighten Raiser aus früher Position ist meist geschlagen von dessen A‑T, A‑J, A‑Q, A‑K — dasselbe Ass, schlechterer Kicker. Domination ist der leise Killer; folde, statt am Kicker unterzugehen.
-- **Du einer [3-Bet](/de/blog/holdem-3bet) mit dem schwächeren Teil deiner Range gegenüberstehst.** Du hast breit geöffnet, also foldet der Großteil dieser Range gegen eine Re-Raise — mach mit deinen besten Händen weiter und lass den Rest gehen. Gegen eine große **4-Bet** foldest du deine kleinen Paare und spekulativen suited Hände; ihre Implied Odds sind kollabiert.
+- **Du einer [3-Bet](/de/blog/holdem-3bet) mit dem schwächeren Teil deiner Range gegenüberstehst.** Du hast breit geöffnet, also foldet der Großteil dieser Range gegen einen Re-Raise — mach mit deinen besten Händen weiter und lass den Rest gehen. Gegen eine große **4-Bet** foldest du deine kleinen Paare und spekulativen suited Hände; ihre Implied Odds sind kollabiert.
 
 Die eine Hand, die du im Cashgame vor dem Flop im Grunde *nie* foldest, ist ein Pocket-Ass-Paar — es ist der Favorit gegen jedes andere Holding. (Die seltenen Ausnahmen leben in Turnier-Bubble- und Satellite-Spots, wo Überleben einen winzigen Edge überwiegen kann. Im Cashgame: niemals.)
 
@@ -101,7 +101,7 @@ Dieselbe Hand, gegensätzliche Entscheidungen — weil sich der *Preis* geänder
 
 Trash zu folden ist einfach. Eine *gute* Hand zu folden — Top Pair, ein Overpair, sogar ein Set — ist das, was gewinnende Spieler vom Rest trennt. Die mentale Falle ist der Gedanke "das ist eine starke Hand", wenn die einzige Frage, die zählt, lautet: "ist sie *gerade jetzt, gegen diese Linie* stark?"
 
-**Top Pair ist nicht die Spitze deiner Range.** In einem geraisten oder re-geraisten Pot sind Top Pair und Overpairs mittelstarke Hände. Gegen schwere, mehrstöckige Aggression — besonders eine Raise auf einem gruseligen River — sind sie oft geschlagen, und die Disziplin, sie loszulassen, ist ein **guter Laydown**, keine Schwäche. Hier sind die Hände, die Spieler heiraten, obwohl sie die Scheidung einreichen sollten:
+**Top Pair ist nicht die Spitze deiner Range.** In einem geraisten oder re-geraisten Pot sind Top Pair und Overpairs mittelstarke Hände. Gegen schwere Aggression über mehrere Streets — besonders gegen einen Raise auf einem River mit Scare Card — sind sie oft geschlagen, und die Disziplin, sie loszulassen, ist ein **guter Laydown**, keine Schwäche. Hier sind die Hände, die Spieler heiraten, obwohl sie die Scheidung einreichen sollten:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -172,7 +172,7 @@ Rechnen wir es aus. Meine besten fünf Karten sind ==K♣ K♦ 9♠ 9♥ A♥== 
 |:---|:---|:---|
 | **Zu viel callen (die Station)** | Du bezahlst jede Value-Bet im ganzen Haus | Standardmäßig folden, wenn du nur einen Bluff schlägst |
 | **Die offensichtliche Value-Bet bezahlen** | Passive große Bets sind fast nie Bluffs | Glaub der Geschichte; folde |
-| **Top Pair / Overpairs heiraten** | Es sind mittlere Hände in großen Pots | Folde gegen schwere mehrstöckige Aggression |
+| **Top Pair / Overpairs heiraten** | Es sind mittlere Hände in großen Pots | Folde gegen schwere Aggression über mehrere Streets |
 | **Draws ohne den Preis chasen** | Die Pot Odds sagen, dein Call verliert langfristig | Übersteige die Grenze oder folde |
 | **Sunk-Cost-Callen** | "Schon drin" ist kein Grund | Beurteile nur die Entscheidung vor dir |
 | **Hero-Callen, "um sie ehrlich zu halten"** | Du fängst einen Bluff, bezahlst zehn Values | Reserviere es für Spieler, die tatsächlich bluffen |
@@ -201,7 +201,7 @@ A. Ein solider Tight-Aggressive-Spieler foldet ungefähr 75–85% seiner Hände 
 
 **Q. Wann sollte man eine gute Hand folden?**
 
-A. Folde eine starke Hand, wenn die Action dir sagt, dass sie geschlagen ist: Top Pair oder ein Overpair gegenüber schwerer, mehrstöckiger Aggression, besonders eine Raise von einem passiven Spieler oder ein gruseliger River, der offensichtliche Draws komplettiert. Top Pair ist nicht die Spitze deiner Range in einem großen Pot. Ein disziplinierter Laydown einer geschlagenen starken Hand ist ein gewinnender Move, kein schwacher.
+A. Folde eine starke Hand, wenn die Action dir sagt, dass sie geschlagen ist: Top Pair oder ein Overpair gegenüber schwerer Aggression über mehrere Streets, besonders gegenüber einem Raise von einem passiven Spieler oder einem River mit Scare Card, der offensichtliche Draws komplettiert. Top Pair ist nicht die Spitze deiner Range in einem großen Pot. Ein disziplinierter Laydown einer geschlagenen starken Hand ist ein gewinnender Move, kein schwacher.
 
 **Q. Sollte man je ein Pocket-Ass-Paar folden?**
 
@@ -219,9 +219,9 @@ A. Es ist der falsche Glaube, dass du, weil du schon Chips in den Pot gelegt has
 
 A. Wenn es wirklich eng ist und du unsicher bist, ist Folden meist der bessere Standard — besonders bei Low Stakes, wo Gegner weit weniger bluffen, als sie sollten. Frag dich, ob du die Pot-Odds-Grenze übersteigst und ob ihre Linie nach Value oder nach einem Bluff aussieht. Wenn du nicht genug schwächere Hände nennen kannst, die sie betten würden, folde und geh weiter zu einem klareren Spot.
 
-**Q. Woher weiß man, wann man auf eine River-Raise foldet?**
+**Q. Woher weiß man, wann man auf einen River-Raise foldet?**
 
-A. Behandle eine River-Raise, besonders von einem passiven Spieler, als Value, bis das Gegenteil bewiesen ist. Die meisten Spieler haben nicht genug Bluffs in ihrer Raising-Range am River, also bedeutet eine große Raise meist eine Hand, die ein Paar oder zwei Paare schlägt. Sofern der Gegner nicht aggressiv und zum Bluff-Raise fähig ist, ist es korrekt, alles außer deinen stärksten Händen zu folden.
+A. Behandle einen River-Raise, besonders von einem passiven Spieler, als Value, bis das Gegenteil bewiesen ist. Die meisten Spieler haben nicht genug Bluffs in ihrer Raising-Range am River, also bedeutet ein großer Raise meist eine Hand, die ein Paar oder zwei Paare schlägt. Sofern der Gegner nicht aggressiv und zum Bluff-Raise fähig ist, ist es korrekt, alles außer deinen stärksten Händen zu folden.
 
 **Q. Ist Folden ein Zeichen von Schwäche?**
 
@@ -233,7 +233,7 @@ A. Ja. Jedes Mal zu folden, wenn du Druck gegenüberstehst, macht dich zum "Nit"
 
 **Q. Wann sollte man ein Overpair folden?**
 
-A. Folde ein Overpair, wenn ein passiver Gegner echte Aggression auf einem koordinierten oder gepaarten Board zeigt — eine Check-Raise oder ein großes Turn-und-River-Barrel. Passive Spieler raisen starke Hände, keine Luft, also liegt dein Overpair meist hinter einem Set, zwei Paaren oder einer Straße. Gegen aggressive Gegner, die bluffen, kannst du mehr weitermachen, aber eine passive Linie, die nach Stärke schreit, ist ein Fold.
+A. Folde ein Overpair, wenn ein passiver Gegner echte Aggression auf einem koordinierten oder gepaarten Board zeigt — einen Check-Raise oder ein großes Turn-und-River-Barrel. Passive Spieler raisen starke Hände, keine Luft, also liegt dein Overpair meist hinter einem Set, zwei Paaren oder einer Straße. Gegen aggressive Gegner, die bluffen, kannst du mehr weitermachen, aber eine passive Linie, die nach Stärke schreit, ist ein Fold.
 
 ---
 
@@ -265,7 +265,7 @@ Meistere den Fold, und du hörst auf, der Spieler zu sein, der "einfach nicht da
   <a href="/de/blog/holdem-3bet" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Strategie</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">3-Betting erklärt</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Wann du auf eine Re-Raise foldest</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Wann du auf einen Re-Raise foldest</div>
   </a>
   <a href="/de/blog/holdem-continuation-bet" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Strategie</div>

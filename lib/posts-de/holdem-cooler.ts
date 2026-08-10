@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ein Cooler ist eine Hand, bei der du einen großen Pot mit einer sehr starken Holding verlierst, die du niemals korrekt folden könntest — wie Pocket Kings, die auf Asse treffen, oder ein Set, das gegen ein größeres Set verliert. Anders als beim Bad Beat lagst du die ganze Zeit hinten und keine Glückskarte hat dich \"ausgesaugt\": Du hast alles richtig gemacht und trotzdem verloren. Es ist die ehrlichste Art von Poker-Katastrophe.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-07-05",
+  updated: "2026-08-10",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🧊",
@@ -18,7 +18,7 @@ export const POST: Post = {
   content: `
 Ich erinnere mich noch an die Hand, die mir das Wort beigebracht hat. Ich habe am Flop ein Set Kings getroffen, bin am Turn all-in gegangen und habe meine Karten schon aufgedeckt, während ich nach dem Pot gegriffen habe — dann sah ich, wie mein Gegner ein Set Asse umdrehte. Ich hatte nichts falsch gemacht. Es gab kein schlechtes Play zu bereuen, keinen Draw, gegen den ich hätte folden müssen. Ich war geschlagen ab dem Moment, in dem die Chips reingingen, und es gab ==nichts, was ich hätte tun können==. Das ist ein Cooler, und sobald du ihn verstehst, hörst du auf, dir selbst die Schuld für Verluste zu geben, die du nie vermeiden konntest.
 
-Ein **Cooler** ist eine Hand, bei der du eine sehr starke Holding baust, einen großen Pot verlierst und ==g:Folden nie eine echte Option war== — die andere Hand war einfach größer. Unten steht genau, was das bedeutet, der entscheidende Unterschied zwischen einem Cooler und einem **Bad Beat** (die meisten verwechseln sie), die klassischen Cooler-Matchups und der ehrliche Teil, den keiner mag: wann *„das war nur ein Cooler"* in Wahrheit eine höfliche Ausrede für einen Fehler ist.
+Ein **Cooler** ist eine Hand, bei der du eine sehr starke Holding baust, einen großen Pot verlierst und ==g:Folden nie eine echte Option war== — die andere Hand war einfach größer. Unten steht genau, was das bedeutet, der entscheidende Unterschied zwischen einem Cooler und einem **Bad Beat** (die meisten verwechseln sie), die klassischen Cooler-Matchups und der ehrliche Teil, den keiner mag: wann *„das war nur ein Cooler“* in Wahrheit eine höfliche Ausrede für einen Fehler ist.
 
 ---
 
@@ -39,7 +39,7 @@ Nicht deine Schuld | Der eine Verlust, über den du nicht tilten solltest
 
 **Ein Cooler ist eine Hand, in der zwei sehr starke Holdings kollidieren und der Verlierer immer hinten lag, aber nicht korrekt folden konnte.** Die Hand ist einfach zu gut, um sie wegzulegen — also gehen die Chips rein, und das zweitbeste Monster bezahlt das beste. Niemand hat falsch gespielt. Der Verlust war kein Fehler; er war der unvermeidbare Preis dafür, eine Premiumhand genau in dem Moment zu halten, in dem jemand anderes eine etwas größere hielt.
 
-Das Wort malt das Bild: Du wurdest „abgekühlt" — deine heiße Hand wurde kalt, ganz ohne dein Verschulden. Du wirst es auch als Verb hören („ich wurde **gecoolert**") und als Beinahe-Synonym, **„Setup"**, weil es sich anfühlt, als wäre das Deck *aufgebaut* worden, um deinen ganzen Stack zu holen. Was einen Cooler von einem gewöhnlichen Verlust unterscheidet, ist, dass ein guter Spieler jedes Mal genau dieselben Chips verlieren würde. Das zu erkennen ist der erste Schritt, um diese Hände nicht deine Session ruinieren zu lassen — dieselbe Disziplin, die einen Gewinnspieler von einem [Fish](/de/blog/holdem-fish "thumb:/images/holdem-fish-hero.webp") trennt.
+Das Wort malt das Bild: Du wurdest „abgekühlt“ — deine heiße Hand wurde kalt, ganz ohne dein Verschulden. Du wirst es auch als Verb hören („ich wurde **gecoolert**“) und als Beinahe-Synonym, **„Setup“**, weil es sich anfühlt, als wäre das Deck *aufgebaut* worden, um deinen ganzen Stack zu holen. Was einen Cooler von einem gewöhnlichen Verlust unterscheidet, ist, dass ein guter Spieler jedes Mal genau dieselben Chips verlieren würde. Das zu erkennen ist der erste Schritt, um diese Hände nicht deine Session ruinieren zu lassen — dieselbe Disziplin, die einen Gewinnspieler von einem [Fish](/de/blog/holdem-fish "thumb:/images/holdem-fish-hero.webp") trennt.
 
 ---
 
@@ -62,7 +62,7 @@ Der sauberste Weg, sie auseinanderzuhalten:
 | **Gab es einen Suckout?** | Nein — Gewinner führte die ganze Zeit | Ja — ein Glücks-Draw traf |
 | **Hättest du folden können?** | Nein — Hand zu stark | Es war richtig, reinzugehen |
 | **Klassisches Beispiel** | KK trifft auf AA | AA gecrackt, wenn 7‑7 ein Set trifft |
-| **Das Gefühl** | „Ich hatte nie eine Chance" | „Die hätte ich gewinnen müssen" |
+| **Das Gefühl** | „Ich hatte nie eine Chance“ | „Die hätte ich gewinnen müssen“ |
 
 </div>
 
@@ -93,13 +93,13 @@ Der ikonischste ist **Set over set.** Sagen wir, du hältst **7♣7♦** und der
 
 ---
 
-## Ist ein Cooler dasselbe wie ein „Setup"? Und was bedeutet „gecoolert"?
+## Ist ein Cooler dasselbe wie ein „Setup“? Und was bedeutet „gecoolert“?
 
 Diese drei Arten, über dieselbe Katastrophe zu reden, bringen viele Spieler durcheinander, also kurz:
 
-- **Setup** — ein informelles Synonym für einen Cooler. Es betont das *gefangene* Gefühl — als wäre das Deck „aufgebaut" worden, damit du deinen ganzen Stack mit einer Hand verlierst, von der du nicht wegkommst. Wenn jemand sagt „das war ein totales Setup", meint er einen Cooler.
-- **Gecoolert (Verb)** — auf der Verliererseite eines Coolers zu stehen. „Ich wurde gecoolert" bedeutet, dass du einen großen Pot mit einer Hand verloren hast, die zu stark zum Folden war. Per Definition ist die korrekte Verwendung ein Eingeständnis, dass du *das richtige Play gemacht* hast und trotzdem verloren hast.
-- **Cold Deck** — ein verwandter Old-School-Begriff für eine Serie unvermeidbarer Verlusthände; historisch bezeichnete er auch einen Betrug (das Einschmuggeln eines vorbereiteten „kalten" Decks), aber umgangssprachlich heißt es einfach, dass die Karten brutal gegen dich laufen.
+- **Setup** — ein informelles Synonym für einen Cooler. Es betont das *gefangene* Gefühl — als wäre das Deck „aufgebaut“ worden, damit du deinen ganzen Stack mit einer Hand verlierst, von der du nicht wegkommst. Wenn jemand sagt „das war ein totales Setup“, meint er einen Cooler.
+- **Gecoolert (Verb)** — auf der Verliererseite eines Coolers zu stehen. „Ich wurde gecoolert“ bedeutet, dass du einen großen Pot mit einer Hand verloren hast, die zu stark zum Folden war. Per Definition ist die korrekte Verwendung ein Eingeständnis, dass du *das richtige Play gemacht* hast und trotzdem verloren hast.
+- **Cold Deck** — ein verwandter Old-School-Begriff für eine Serie unvermeidbarer Verlusthände; historisch bezeichnete er auch einen Betrug (das Einschmuggeln eines vorbereiteten „kalten“ Decks), aber umgangssprachlich heißt es einfach, dass die Karten brutal gegen dich laufen.
 
 Ein wichtiger Mythos, der sterben muss: **Ein Cooler muss nicht all-in sein.** Das entscheidende Merkmal ist die Kollision zweier zu-stark-zum-Folden-Hände, nicht die Größe der Stacks. Du kannst für einen großen Pot gecoolert werden, ohne je deinen letzten Chip reinzulegen — es geht um die Hände, nicht ums All-in.
 
@@ -109,13 +109,13 @@ Ein wichtiger Mythos, der sterben muss: **Ein Cooler muss nicht all-in sein.** D
 
 Meistens nein — und hier ist der Teil, den gute Spieler verstehen und Anfänger nicht: **du solltest es nicht einmal versuchen.** Der Grund, warum Cooler dich Geld kosten, ist derselbe Grund, warum du Geld *gewinnst*: Du bekommst mit Premiumhänden maximale Chips rein. Wenn du anfangen würdest, Sets und Full Houses zu folden, um den seltenen Cooler zu umgehen, würdest du weit mehr Value verbluten bei all den Händen, in denen dein Monster tatsächlich das beste war. Auf lange Sicht ist das Bezahlen des gelegentlichen Coolers einfach der Preis dafür, alle anderen die überwiegende Mehrheit der Zeit abzustacken.
 
-Allerdings hat „unvermeidbar" auf höchstem Niveau ein kleines Sternchen. Erfahrene Spieler *können* gelegentlich die zweitbeste Hand weglegen, wenn die Action nach den Nuts schreit — ein Gegner, der diese Linie nur mit genau einer bestimmten Holding raist, ein Sizing, das keinen Sinn ergibt, außer er hat sie. Eine große Hand in dieser Situation zu folden ist einer der schwersten, fortgeschrittensten Skills im Poker. Aber solche Reads sind selten, und für die überwiegende Mehrheit der Cooler ist das korrekte, profitable Play, das Geld reinzubekommen und weiterzumachen. Deine [Position](/de/blog/holdem-position-play) gut zu spielen hilft dir, diese Situationen zu *lesen* — es lässt dich nicht dem Deck ausweichen.
+Allerdings hat „unvermeidbar“ auf höchstem Niveau ein kleines Sternchen. Erfahrene Spieler *können* gelegentlich die zweitbeste Hand weglegen, wenn die Action nach den Nuts schreit — ein Gegner, der diese Linie nur mit genau einer bestimmten Holding raist, ein Sizing, das keinen Sinn ergibt, außer er hat sie. Eine große Hand in dieser Situation zu folden ist einer der schwersten, fortgeschrittensten Skills im Poker. Aber solche Reads sind selten, und für die überwiegende Mehrheit der Cooler ist das korrekte, profitable Play, das Geld reinzubekommen und weiterzumachen. Deine [Position](/de/blog/holdem-position-play) gut zu spielen hilft dir, diese Situationen zu *lesen* — es lässt dich nicht dem Deck ausweichen.
 
 ---
 
-## Wann „das war ein Cooler" nur eine Ausrede ist
+## Wann „das war ein Cooler“ nur eine Ausrede ist
 
-Jetzt die unbequeme Wahrheit und der Grund, warum dieses Wort für deine Verbesserung wichtig ist. **„Cooler" ist die am meisten missbrauchte Ausrede im Poker.** Es ist weit bequemer, sich einzureden, das Deck habe dich aufgebaut, als zuzugeben, dass du Top Pair überspielt hast, einen River gecallt hast, den du nie hättest callen dürfen, oder deinen Stack schlecht reingebracht hast. Verlierende Spieler stützen sich auf „das war ein Cooler" genau deshalb, weil es das Gespräch beendet und kein Studium erfordert.
+Jetzt die unbequeme Wahrheit und der Grund, warum dieses Wort für deine Verbesserung wichtig ist. **„Cooler“ ist die am meisten missbrauchte Ausrede im Poker.** Es ist weit bequemer, sich einzureden, das Deck habe dich aufgebaut, als zuzugeben, dass du Top Pair überspielt hast, einen River gecallt hast, den du nie hättest callen dürfen, oder deinen Stack schlecht reingebracht hast. Verlierende Spieler stützen sich auf „das war ein Cooler“ genau deshalb, weil es das Gespräch beendet und kein Studium erfordert.
 
 Es gibt einen sauberen Lackmustest, und ehrliche Spieler nutzen ihn nach jedem großen Verlust:
 
@@ -123,7 +123,7 @@ Es gibt einen sauberen Lackmustest, und ehrliche Spieler nutzen ihn nach jedem g
 Würde ich genau dasselbe Play noch einmal machen, mit nur den Informationen, die ich damals hatte? Wenn **ja**, wurdest du gecoolert. Wenn **nein**, hast du falsch gespielt — und das ist ein Leak zum Fixen, kein Pech.
 :::
 
-Ein echter Cooler bedeutet, dass du mit einer starken Hand korrekt gespielt hast und auf eine größere getroffen bist. In dem Moment, in dem dein „Cooler" einen Call beinhaltet, bei dem du dir nicht sicher warst, einen Bluff, in den du dich hineingeredet hast, oder einen Fold, den du hättest machen sollen, hört er auf, ein Cooler zu sein, und wird zu einem **Fehler in Verkleidung.** Gnadenlos ehrlich darüber zu sein, was was ist — statt jeden Verlust unter „Pech" abzulegen — ist genau das, was Spieler, die sich verbessern, von Spielern trennt, die für immer [Fish](/de/blog/holdem-fish) bleiben.
+Ein echter Cooler bedeutet, dass du mit einer starken Hand korrekt gespielt hast und auf eine größere getroffen bist. In dem Moment, in dem dein „Cooler“ einen Call beinhaltet, bei dem du dir nicht sicher warst, einen Bluff, in den du dich hineingeredet hast, oder einen Fold, den du hättest machen sollen, hört er auf, ein Cooler zu sein, und wird zu einem **Fehler in Verkleidung.** Gnadenlos ehrlich darüber zu sein, was was ist — statt jeden Verlust unter „Pech“ abzulegen — ist genau das, was Spieler, die sich verbessern, von Spielern trennt, die für immer [Fish](/de/blog/holdem-fish) bleiben.
 
 ---
 
@@ -151,23 +151,23 @@ A. Ein Cooler ist eine Hand, bei der du einen großen Pot mit einer sehr starken
 
 **Q. Was ist der Unterschied zwischen einem Cooler und einem Bad Beat?**
 
-A. Timing und Suckouts. Bei einem Cooler lagst du die ganze Zeit hinten und hast gegen eine größere Hand verloren — keine Glückskarte hat etwas geändert. Bei einem Bad Beat lagst du vorne (meist großer Favorit) und dein Gegner hat einen Glücks-Draw getroffen, um dich zu überholen. Cooler: „Ich hatte nie eine Chance." Bad Beat: „Die hätte ich gewinnen müssen."
+A. Timing und Suckouts. Bei einem Cooler lagst du die ganze Zeit hinten und hast gegen eine größere Hand verloren — keine Glückskarte hat etwas geändert. Bei einem Bad Beat lagst du vorne (meist großer Favorit) und dein Gegner hat einen Glücks-Draw getroffen, um dich zu überholen. Cooler: „Ich hatte nie eine Chance.“ Bad Beat: „Die hätte ich gewinnen müssen.“
 
 **Q. Ist ein Cooler Pech oder schlechtes Play?**
 
-A. Ein echter Cooler ist reines Pech — du hast korrekt gespielt und trotzdem verloren, weil zwei Premiumhände kollidiert sind. Der Haken ist, dass „Cooler" oft missbraucht wird, um einen echten Fehler zu entschuldigen. Der Test: Würdest du dasselbe Play mit denselben Informationen noch einmal machen? Wenn ja, war es ein Cooler; wenn nein, war es ein Fehlspiel, aus dem du lernen kannst.
+A. Ein echter Cooler ist reines Pech — du hast korrekt gespielt und trotzdem verloren, weil zwei Premiumhände kollidiert sind. Der Haken ist, dass „Cooler“ oft missbraucht wird, um einen echten Fehler zu entschuldigen. Der Test: Würdest du dasselbe Play mit denselben Informationen noch einmal machen? Wenn ja, war es ein Cooler; wenn nein, war es ein Fehlspiel, aus dem du lernen kannst.
 
 **Q. Ist ein Setup dasselbe wie ein Cooler?**
 
-A. Ja — „Setup" ist ein informelles Synonym für einen Cooler. Es betont das Gefühl, dass das Deck arrangiert wurde, um dich in einen Verlust deines ganzen Stacks mit einer Hand zu locken, die zu stark zum Folden ist. Wenn jemand eine Hand „ein Setup" nennt, meint er denselben unvermeidbaren Premium-gegen-Premium-Zusammenstoß.
+A. Ja — „Setup“ ist ein informelles Synonym für einen Cooler. Es betont das Gefühl, dass das Deck arrangiert wurde, um dich in einen Verlust deines ganzen Stacks mit einer Hand zu locken, die zu stark zum Folden ist. Wenn jemand eine Hand „ein Setup“ nennt, meint er denselben unvermeidbaren Premium-gegen-Premium-Zusammenstoß.
 
 **Q. Ist Pocket Kings vs Pocket Asse ein Cooler?**
 
 A. Ja — es ist der klassischste Cooler überhaupt. Kings sind preflop grob ein 4,5:1-Underdog gegen Asse, aber kein vernünftiger Spieler foldet Pocket Kings vor dem Flop. Also geht das Geld rein, du liegst die ganze Zeit hinten und verlierst eine Hand, von der du niemals hättest wegkommen können.
 
-**Q. Was bedeutet es, „gecoolert" zu werden?**
+**Q. Was bedeutet es, „gecoolert“ zu werden?**
 
-A. Gecoolert zu werden heißt, einen großen Pot auf der falschen Seite eines Coolers zu verlieren — du hattest eine Hand, die zu stark zum Folden war, und bist auf eine größere getroffen. Korrekt verwendet ist „ich wurde gecoolert" tatsächlich ein Eingeständnis, dass du die Hand richtig gespielt und einfach gegen das Deck verloren hast, nicht gegen deinen eigenen Fehler.
+A. Gecoolert zu werden heißt, einen großen Pot auf der falschen Seite eines Coolers zu verlieren — du hattest eine Hand, die zu stark zum Folden war, und bist auf eine größere getroffen. Korrekt verwendet ist „ich wurde gecoolert“ tatsächlich ein Eingeständnis, dass du die Hand richtig gespielt und einfach gegen das Deck verloren hast, nicht gegen deinen eigenen Fehler.
 
 **Q. Ist ein Cooler immer all-in?**
 

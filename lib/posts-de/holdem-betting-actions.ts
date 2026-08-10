@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em kennt 5 Setz-Aktionen: Check (kostenlos schieben), Bet (die Runde eröffnen), Call (einen Einsatz mitgehen), Raise (erhöhen — der Mindest-Raise entspricht dem vorherigen Bet oder Raise) und Fold. Checken darfst du nur, solange auf der Street noch niemand gesetzt hat.",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-07-14",
+  updated: "2026-08-10",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 Min.",
@@ -21,6 +21,7 @@ export const POST: Post = {
     "wie oft darf man beim poker erhöhen",
     "check raise erlaubt",
     "string bet",
+    "darf man beim poker reden",
   ],
   image: "/images/holdem-betting-actions-hero.webp",
   imageAlt: "Texas-Hold'em-Tisch mit Chipstapeln für CHECK, CALL, RAISE und FOLD — ein Spieler hält seine Hole Cards und überlegt seine Aktion",
@@ -54,7 +55,7 @@ Jede einzelne Entscheidung am Pokertisch ist eine dieser fünf:
 | Bet | Der erste Einsatz der Runde | Frei wählbarer Betrag (Minimum = 1 Big Blind) |
 | Raise | Nachdem jemand gesetzt hat | Mindestens die Größe des vorherigen Bets oder Raises obendrauf |
 
-==All-in== zu gehen ist keine separate sechste Aktion — es ist ein Bet, Call oder Raise mit allen Chips, die dir noch bleiben. Mehr dazu weiter unten.
+==All-in== zu gehen ist keine separate sechste Aktion — es ist eine Bet, ein Call oder ein Raise mit allen Chips, die dir noch bleiben. Mehr dazu weiter unten.
 
 Die wichtigste Regel, die Anfänger übersehen: ==r:Du kannst nicht mehr checken, sobald jemand gesetzt hat==. In dem Moment, in dem Chips in den Pot wandern, schrumpfen deine Optionen auf Fold, Call oder Raise.
 
@@ -111,7 +112,7 @@ Eine Regel der Live-Etikette: Folde nicht ==außer der Reihe==. Warte, bis die A
 
 ## Was ist ein Min-Raise? Bet- und Raise-Regeln im Texas Hold'em
 
-![Infografik zur Min-Raise-Regel beim Poker: Ein Bet von $6 verlangt einen Raise auf mindestens $12, und ein Preflop-Raise auf $6 verlangt einen Min-Re-Raise auf $10](/images/holdem-betting-actions-min-raise.webp "Die Min-Raise-Regel — jeder Raise muss mindestens die Größe des letzten Bets oder Raises obendrauf legen")
+![Infografik zur Min-Raise-Regel beim Poker: Eine Bet von $6 verlangt einen Raise auf mindestens $12, und ein Preflop-Raise auf $6 verlangt einen Min-Re-Raise auf $10](/images/holdem-betting-actions-min-raise.webp "Die Min-Raise-Regel — jeder Raise muss mindestens die Größe des letzten Bets oder Raises obendrauf legen")
 
 Im No-Limit Hold'em (dem Format, das du fast immer spielen wirst):
 
@@ -146,7 +147,7 @@ Zwei Grenzen gelten trotzdem:
 - Jeder Re-Raise muss die ==Min-Raise-Inkrement-Regel== von oben erfüllen
 - ==r:Du kannst deinen eigenen Einsatz nicht raisen.== Wenn du setzt und alle nur callen, endet die Runde — du darfst nur dann erneut raisen, wenn dich vorher jemand *selbst* raist
 
-In **Fixed-Limit**-Spielen deckeln die meisten Cardrooms jede Runde bei einem Bet plus drei Raises (ein „gecappter“ Pot), oft aufgehoben, wenn nur noch zwei Spieler übrig sind — Hausregeln variieren, frag also den Dealer.
+In **Fixed-Limit**-Spielen deckeln die meisten Cardrooms jede Runde bei einer Bet plus drei Raises (ein „gecappter“ Pot), oft aufgehoben, wenn nur noch zwei Spieler übrig sind — Hausregeln variieren, frag also den Dealer.
 
 ---
 
@@ -178,7 +179,7 @@ Ich spiele ein wöchentliches Low-Stakes-Live-Game, und dieselben Action-Fehler 
 
 ### Fehler 1 — Callen, wenn du checken könntest
 
-Am Flop ist er als Erster dran, niemand hat gesetzt, und ein neuer Spieler wirft Chips rein, „um zu callen“. Da ist nichts zu callen — das ist ein Bet. Wenn die Street noch nicht eröffnet ist: checken und die Karte gratis sehen.
+Am Flop ist er als Erster dran, niemand hat gesetzt, und ein neuer Spieler wirft Chips rein, „um zu callen“. Da ist nichts zu callen — das ist eine Bet. Wenn die Street noch nicht eröffnet ist: checken und die Karte gratis sehen.
 
 ### Fehler 2 — Der String Raise
 
@@ -211,11 +212,15 @@ A. Nein. Wenn du setzt und die Gegner nur callen, kannst du nichts nachlegen —
 
 **Q. Wie oft darf man beim Texas Hold'em erhöhen?**
 
-A. Im No-Limit gibt es keine Obergrenze für die Anzahl der Raises — Re-Raises können weitergehen, bis ein Spieler All-in ist, solange jeder Raise das Mindest-Inkrement erfüllt. Fixed-Limit-Spiele deckeln eine Runde üblicherweise bei einem Bet plus drei Raises.
+A. Im No-Limit gibt es keine Obergrenze für die Anzahl der Raises — Re-Raises können weitergehen, bis ein Spieler All-in ist, solange jeder Raise das Mindest-Inkrement erfüllt. Nur im Fixed Limit gibt es ein hartes Cap — die Zahl und die Ausnahme dazu stehen oben im Min-Raise-Abschnitt.
 
 **Q. Darf man außer der Reihe folden?**
 
 A. Solltest du nicht. Die Action muss im Uhrzeigersinn der Reihe nach ablaufen, und ein Fold außer der Reihe gibt den noch überlegenden Spielern Informationen. Die meisten Cardrooms werten ihn als bindend und können bei Wiederholung verwarnen oder bestrafen. Warte, bis der Spieler rechts von dir gehandelt hat.
+
+**Q. Darf man beim Poker reden?**
+
+A. Reden ja — über die laufende Hand nein. Die offiziellen WSOP-Turnierregeln (**Rule 116, „Table Talk / Disclosure“**) verbieten, den Inhalt einer noch laufenden oder bereits gefoldeten Hand zu verraten, anderen Ratschläge zum Spiel zu geben oder ihr Spiel zu kritisieren, eine noch nicht aufgedeckte Hand zu lesen und bei laufender Turnieruhr mit Außenstehenden Strategie zu besprechen — und das gilt, ==ob du selbst noch in der Hand bist oder nicht==. Ausdrücklich erlaubt ist dagegen: Du darfst deine Handstärke ansprechen, wenn kein anderer Spieler in der Hand noch eine Entscheidung zu treffen hat, und in Heads-up-Events bzw. wenn im Turnier nur noch zwei Spieler übrig sind, darfst du frei über deine Karten reden; ob jemand einem anderen absichtlich geholfen hat, entscheidet im Zweifel die Floor Person. Übermäßiges Gequatsche, das Spieler in einer Hand stört, fällt separat unter Etikette-Verstöße (Rule 119). In der Heimrunde ist der Ton lockerer, aber die Faustregel bleibt: Solange eine Hand läuft, sagst du nichts, was einem anderen die Entscheidung abnimmt.
 
 **Q. Darf man Preflop checken?**
 
@@ -232,6 +237,14 @@ A. Chips in mehreren Bewegungen nachzuschieben oder „Call“ zu sagen und dann
 **Q. Was bedeutet Limpen beim Poker?**
 
 A. Limpen heißt, Preflop nur den Big Blind zu callen, statt zu raisen, um in den Pot einzusteigen. Es ist legal, aber meistens schwaches Spiel — siehe [warum Limpen dich Geld kostet](/de/blog/holdem-limping), wann es tatsächlich in Ordnung ist.
+
+---
+
+## Quellen
+
+- **2026 World Series of Poker Official Tournament Rules** — Table Talk / Disclosure (Rule 116: kein Verraten noch laufender oder bereits gefoldeter Hände, kein Beraten oder Kritisieren fremden Spiels, kein Lesen nicht getablter Hände, keine Strategie mit Außenstehenden bei laufender Uhr, „one participant to a hand“; Ausnahmen in Heads-up-Events, bei den letzten zwei Spielern und wenn niemand mehr eine Entscheidung zu treffen hat) sowie Etikette-Verstöße inkl. „excessive chatter“ (Rule 119) — [wsop.gg-global-cdn.com PDF](https://wsop.gg-global-cdn.com/wsop/pdfs/2026-WSOP-Tournament-Rules.pdf) · geprüft am 10. August 2026
+
+> Die Regeln oben sind Turnierregeln. In Cashgames und Heimrunden gelten teils abweichende Hausregeln — frag im Zweifel den Dealer oder den Gastgeber.
 
 ---
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Beim Showdown zeigt zuerst, wer als Letzter gesetzt oder erhöht hat. Wurde der River durchgecheckt, zeigt der erste aktive Spieler links vom Button zuerst. Verlierst du, darfst du ungezeigt mucken — aber die Gegner können verlangen, eine gecallte Hand zu sehen.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-08-09",
+  updated: "2026-08-10",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 Min.",
@@ -135,9 +135,11 @@ Genau das macht Poker so interessant. Nicht immer gewinnt die beste Hand — son
 
 ## Showdown-Etikette — was Anfänger falsch machen
 
+Nichts verdirbt die Stimmung am Tisch schneller als ein falsch abgewickelter Showdown. Dabei geht es seltener um die Regeln als um Gewohnheiten, die dem neuen Spieler nie jemand beigebracht hat. Hier sind die vier, die ich am häufigsten korrigieren muss.
+
 ### Fehler 1: Darauf warten, dass der Caller zuerst zeigt
 
-Du setzt am River. Jemand callt dich. Du erstarrst und wartest, dass er zeigt. Das ist verkehrt herum. ==Du zeigst zuerst — du warst der letzte Aggressor.== Warten sieht nach Slow Rolling aus, selbst wenn es keins ist.
+Du setzt am River. Jemand callt dich. Du erstarrst und wartest, dass er zeigt. Das ist verkehrt herum. ==Du zeigst zuerst — du warst der letzte Aggressor.== Warten sieht nach Slow Rolling aus, selbst wenn es keins ist — ich habe erlebt, wie eine gemütliche Runde einen ganzen Orbit lang eisig wurde, weil ein Spieler den Caller jedes Mal erst zappeln ließ, bevor er die Gewinnerhand zeigte.
 
 ### Fehler 2: Mucken, bevor der Dealer die Hand gelesen hat
 
@@ -168,9 +170,9 @@ A. Der Spieler, der in der letzten Setzrunde die letzte aggressive Aktion gemach
 
 A. Ja — warst du am River der letzte, der gesetzt oder erhöht hat, musst du nach dem Call zuerst zeigen. Hast du die Bet eines anderen gecallt, darfst du nach dem Blick auf seine Hand verdeckt mucken, wenn du verloren hast. Allerdings kann in den meisten Cardrooms jeder Spieler, der in die Hand gedealt wurde, den Dealer bitten, eine gecallte und gemuckte Hand aufzudecken.
 
-**Q. Darf man beim Showdown mucken, ohne zu zeigen?**
+**Q. Muss ich allen meine Karten zeigen, wenn ich sie einem Spieler zeige?**
 
-A. Ja, aber nur, wenn du klar verloren hast. Sobald die Gewinnerhand gezeigt wurde, dürfen unterlegene Spieler verdeckt mucken. Die Ausnahme: Wurde deine Hand gecallt, können Gegner verlangen, sie zu sehen. Mucke nie, bevor der Dealer beide Hände gelesen hat, wenn irgendein Zweifel besteht, wer gewonnen hat.
+A. Ja — das ist die Regel „show one, show all“, die in praktisch jedem Cardroom gilt. Zeigst du deine Hand freiwillig auch nur einem Spieler oder einem Zuschauer, darf jeder am Tisch sie sehen. Sie existiert, damit niemand selektiv Information verteilt. Verwechsle sie nicht mit „I want to see that hand“: Die betrifft **gemuckte** Hände, die einen gecallten Showdown erreicht haben, und wird beim Dealer beantragt.
 
 **Q. Was ist Slow Rolling beim Poker und warum ist es verpönt?**
 

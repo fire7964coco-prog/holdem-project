@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ein Out ist jede Karte im Deck, die deine Hand zu einem wahrscheinlichen Gewinner verbessert. Zähle sie, dann rechne um: multipliziere die Outs am Flop mit 4 oder am Turn mit 2 für deinen groben Prozentwert. Ein Flushdraw sind 9 Outs ≈ 36% bis zum River.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-07-03",
+  updated: "2026-08-10",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "🎯",
@@ -163,7 +163,7 @@ Drei Situationen, für die du dein Auge trainierst:
 :::card
 ♠ | Der Nicht-Nut-Flush | Hältst du 8♠7♠ auf K♠9♠2♣, hast du 9 Pik-"Outs" — aber wenn eine Pik kommt und ein Gegner eine höhere Pik hält, machst du einen Flush und verlierst trotzdem. Rabattiere deine Outs, wenn du nicht auf den Nut-Flush drawst
 🂮 | Das gepaarte Board | Ein Flushdraw auf einem Board wie J♥8♥8♣ sieht aus wie 9 saubere Outs, aber das Board ist schon gepaart — ein fertiges Full House könnte lauern, also sind manche deiner Flushes tot bei Ankunft
-🃁 | Overcards gegen Stärke | Zwei Overcards (A-K auf Q-8-3) zählen auf dem Papier als 6 Outs, aber wenn eine große Raise nach einem Set oder Zwei Paaren schreit, ist dein Ass zu paaren oft nicht gut — zähle 3, vielleicht 4, nicht 6
+🃁 | Overcards gegen Stärke | Zwei Overcards (A-K auf Q-8-3) zählen auf dem Papier als 6 Outs, aber wenn ein großer Raise nach einem Set oder Zwei Paaren schreit, ist dein Ass zu paaren oft nicht gut — zähle 3, vielleicht 4, nicht 6
 :::
 
 Du kennst den exakten Rabatt selten, und das ist okay. Der Zug ist gerichtet: wenn das Board oder die Action dir sagt, dass ein Out vielleicht nicht gewinnt, kürze die Zahl *nach unten*, bevor du umrechnest. Ein Spieler, der 9 Outs auf einem gepaarten Board zählt und den Pot callt, zahlt vollen Preis für einen Draw, der still nur sechs wert ist. Zu lesen, welche Outs sauber sind, ist eine Board-Textur-Fähigkeit — baue sie mit [das Board lesen](/de/blog/holdem-reading-the-board) auf.

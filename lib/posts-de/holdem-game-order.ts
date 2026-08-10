@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Eine Texas-Hold'em-Hand läuft so ab: Blinds setzen → zwei Hole Cards erhalten → Preflop → Flop (3 Karten) → Turn (1 Karte) → River (1 Karte) → Showdown — mit insgesamt vier Setzrunden.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-07-14",
-  masterUpdated: "2026-07-02",
+  updated: "2026-08-10",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "16 Min.",
   emoji: "🎬",
@@ -295,11 +295,11 @@ Du willst die komplette Aufschlüsselung — inklusive der Frage, wie Kicker und
 
 ## 5 Fehler, die jeder Anfänger vermeiden muss
 
-Du kannst den Spielablauf auswendig können und trotzdem Chips verbluten, wenn du diese Fehler machst.
+Du kannst den Spielablauf auswendig können und trotzdem Chips verbluten, wenn du diese Fehler machst. Ich habe live erlebt, wie jeder einzelne davon jemanden einen Pot gekostet hat — meistens mehr als einmal am selben Abend.
 
 ### 1. Fast jede Hand spielen
 
-„Ich schau mir nur mal den Flop an“ ist auf lange Sicht ein Verlustgeschäft. Starke Spieler spielen nur 15–25% ihrer Hände und folden den Rest ohne Zögern. Wer preflop mit beliebigen zwei Karten callt, zahlt fürs Verlieren.
+„Ich schau mir nur mal den Flop an“ ist auf lange Sicht ein Verlustgeschäft — und es ist das Leak, das ich bei neuen Spielern an ihrem ersten Tisch mit Abstand am häufigsten sehe. Starke Spieler spielen nur 15–25% ihrer Hände und folden den Rest ohne Zögern. Wer preflop mit beliebigen zwei Karten callt, zahlt fürs Verlieren.
 
 ### 2. Die Position ignorieren
 
@@ -315,7 +315,7 @@ Wer die ganze Hand über passiv gecheckt hat und dann am River plötzlich groß 
 
 ### 5. Die eigene Hand im Showdown falsch lesen
 
-Der klassische Anfängerfehler: „Ich hab zwei Paare!“ — dabei ist es nur ein Paar. Übe, aus deinen zwei Hole Cards und den fünf Boardkarten die **besten fünf Karten** herauszupicken, bis es automatisch läuft.
+Der klassische Anfängerfehler: „Ich hab zwei Paare!“ — dabei ist es nur ein Paar. Ich habe schon Spieler stolz eine Hand umdrehen sehen, die sie für eine sichere Straße hielten — in der Reihe fehlte aber eine Karte. Am Tisch wird es still, und der Pot wandert in die andere Richtung. Übe, aus deinen zwei Hole Cards und den fünf Boardkarten die **besten fünf Karten** herauszupicken, bis es automatisch läuft.
 
 ---
 
@@ -341,31 +341,35 @@ Texas Hold'em lernst du in dreißig Minuten — und meisterst es ein Leben lang.
 
 **Q. Wie lautet die genaue Reihenfolge im Texas Hold'em?**
 
-Blinds setzen → zwei Hole Cards erhalten → Preflop-Setzrunde → Flop aufdecken (3 Karten) und setzen → Turn (1 Karte) und setzen → River (letzte Karte) und setzen → Showdown (die besten fünf Karten werden verglichen).
+A. Blinds setzen → zwei Hole Cards erhalten → Preflop-Setzrunde → Flop aufdecken (3 Karten) und setzen → Turn (1 Karte) und setzen → River (letzte Karte) und setzen → Showdown (die besten fünf Karten werden verglichen).
 
 **Q. Was ist der Unterschied zwischen Preflop und Flop?**
 
-Preflop ist die Phase, bevor Gemeinschaftskarten liegen — du entscheidest allein anhand deiner zwei Hole Cards. Der Flop ist die Phase nach dem Aufdecken der ersten drei Gemeinschaftskarten, in der du sowohl deine aktuelle Hand als auch dein Draw-Potenzial liest.
+A. Preflop ist die Phase, bevor Gemeinschaftskarten liegen — du entscheidest allein anhand deiner zwei Hole Cards. Der Flop ist die Phase nach dem Aufdecken der ersten drei Gemeinschaftskarten, in der du sowohl deine aktuelle Hand als auch dein Draw-Potenzial liest.
 
 **Q. Was ist der Unterschied zwischen Check und Call?**
 
-Ein Check gibt die Action ohne Einsatz weiter und ist nur möglich, wenn keine Bet vor dir liegt. Ein Call geht den Einsatz eines Gegners mit. Sobald jemand gesetzt hat, kannst du nicht mehr checken — du musst callen, raisen oder folden.
+A. Ein Check gibt die Action ohne Einsatz weiter und ist nur möglich, wenn keine Bet vor dir liegt. Ein Call geht den Einsatz eines Gegners mit. Sobald jemand gesetzt hat, kannst du nicht mehr checken — du musst callen, raisen oder folden.
 
 **Q. Muss ich im Showdown beide Hole Cards benutzen?**
 
-Nein. Du bildest die beste Fünf-Karten-Hand aus einer beliebigen Kombination deiner zwei Hole Cards und der fünf Gemeinschaftskarten — auch mit nur einer eigenen Karte oder ganz ohne („das Board spielen“).
+A. Nein. Du bildest die beste Fünf-Karten-Hand aus einer beliebigen Kombination deiner zwei Hole Cards und der fünf Gemeinschaftskarten — auch mit nur einer eigenen Karte oder ganz ohne („das Board spielen“).
 
 **Q. Was sind Pot Odds?**
 
-Pot Odds sind das Verhältnis zwischen aktueller Potgröße und dem Betrag, den du callen musst. Liegen 100.000 im Pot und ein Gegner setzt 20.000, riskierst du 20.000, um einen Pot von 120.000 zu gewinnen (6:1). Ist deine Gewinnwahrscheinlichkeit besser als diese Quote, ist der Call profitabel.
+A. Pot Odds sind das Verhältnis zwischen aktueller Potgröße und dem Betrag, den du callen musst. Liegen 100.000 im Pot und ein Gegner setzt 20.000, riskierst du 20.000, um einen Pot von 120.000 zu gewinnen (6:1). Ist deine Gewinnwahrscheinlichkeit besser als diese Quote, ist der Call profitabel.
 
 **Q. Wann sollte ich All-in gehen?**
 
-All-in bedeutet, jeden Chip zu setzen, den du hast. Nutze es mit einer sehr starken Hand (den Nuts) oder als Bluff, um Gegner zum Folden zu bringen. Nach dem All-in kannst du nicht mehr setzen, bleibst aber für den Teil des Pots spielberechtigt, den du gedeckt hast. Bei ungleichen Stacks entstehen dadurch Side Pots — siehe [All-in-Regeln und Side Pots](/de/blog/holdem-all-in-rules).
+A. All-in bedeutet, jeden Chip zu setzen, den du hast. Nutze es mit einer sehr starken Hand (den Nuts) oder als Bluff, um Gegner zum Folden zu bringen. Nach dem All-in kannst du nicht mehr setzen, bleibst aber für den Teil des Pots spielberechtigt, den du gedeckt hast. Bei ungleichen Stacks entstehen dadurch Side Pots — siehe [All-in-Regeln und Side Pots](/de/blog/holdem-all-in-rules).
 
 **Q. Wie viele Setzrunden hat eine Hand?**
 
-Vier: Preflop, Flop, Turn und River. Die Blinds sind Pflichteinsätze, und im Showdown wird nicht mehr gesetzt.
+A. Vier: Preflop, Flop, Turn und River. Die Blinds sind Pflichteinsätze, und im Showdown wird nicht mehr gesetzt.
+
+**Q. Warum verbrennt der Dealer eine Karte — und wie viele sind es?**
+
+A. Vor dem Flop, vor dem Turn und vor dem River legt der Dealer die oberste Karte des Decks verdeckt beiseite: die **Burn Card**. Das sind **drei pro Hand**, eine vor jeder Street mit Gemeinschaftskarten. Der Sinn ist Schutz: Wäre die oberste Karte markiert oder versehentlich kurz sichtbar gewesen, könnte ein Spieler wissen, was als Nächstes kommt — also fliegt sie vorher aus dem Spiel.
 
 ---
 

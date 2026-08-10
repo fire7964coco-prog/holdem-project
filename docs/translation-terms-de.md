@@ -142,6 +142,25 @@ Sources: de.wikipedia(Texas Hold'em·Pokerbegriffe) · pokerfirma.com · pokerol
 | 성 오류 „Dein Spielweise" | „Deine Spielweise" |
 | 한 글 안 Sie/du 혼용 | du 통일 |
 
+## 7-9. ★Bet·Raise 성 — 실측으로 확정 (2026-08-10, 재조사 금지)
+
+§5 치트시트의 **die Bet · der Raise**가 맞다. 착수 전 핸드오프는 「독일 매체는 `die Raise`도 쓴다」고
+의심했으나 **실측에서 재현되지 않았다**. 5개 사이트 DOM을 Playwright로 긁어 내 정규식으로 직접 셌다
+(WebFetch 요약 아님 — §12-B). 아래는 전부 축어다.
+
+| 낱말 | 판정 | 실측 |
+|---|---|---|
+| **die Bet** | 여성 7 : 남성 2 | pokerzeit 「der Größe **der Bet**」·「**eine Bet** in Höhe von」 · 888poker.de 「**eine Bet** auf 20 €」×2 · start-up-poker.de 「**eine Bet** deines Gegners」×3 ↔ de.wikipedia만 「**einen Bet** bzw. einen Reraise」·「der Call **eines Bets**」 |
+| **der Raise** | 남성 5 : 여성 **0** | de.wikipedia 「**einen Raise** … zu callen」 · 888poker.de 「**einen Raise** auf 60 €」×2·「**der Raise** auf 170 €」 · start-up-poker.de 「Wurde **ein Raise** platziert」 |
+
+- **de 42편 코퍼스도 같은 방향이었다** — Bet 여성 약 35 : 비여성 6 · Raise 남성 약 35 : 비남성 4.
+  즉 정본·코퍼스·외부 매체 **셋이 일치**한다. 어긋난 10곳만 고쳤다(2026-08-10 (7)).
+- ⚠ **pokerolymp `/pokerbegriffe/raise`는 근거가 아니다** — 그 페이지는 관사를 아예 피하고 `die Erhöhung`으로만 쓴다.
+  (검색 요약은 「Das Raise ist eine Pokeraktion」이라고 답했는데 **원문에 그 문장이 없다** — §12-B의 실례가 하나 더 늘었다.)
+- 🔴 **합성어는 뒤 명사가 성을 정한다**(§5). 아래는 전부 **정상**이니 고치지 마라:
+  `die Raise-oder-Fold-Regel`(Regel) · `einen Bet-Size-Spickzettel`(Spickzettel) · `das Raise-Cap`(Cap) ·
+  `die **Turn**-Karte`(Karte) · `einem Bet Sizing`(Sizing).
+
 ## 7-8. 헤드라인 관습 (뉴스·유튜브 — seoTitle 참고)
 
 - 구조 = **[브랜드/장소]: [사건] + 질문·감탄 후크**: „King's: Droht das Overlay beim Polish Poker Masters

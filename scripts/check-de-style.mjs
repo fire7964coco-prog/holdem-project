@@ -244,12 +244,22 @@ const FEM_SG = ['Bet', 'Range', 'Equity', 'Bubble', 'C-Bet', '3-Bet', 'Hand', 'K
   'Starthand', 'Setzrunde', 'Wettrunde', 'Bankroll'];
 const MASC_NEUT_SG = ['Flop', 'Turn', 'River', 'Pot', 'Stack', 'Showdown', 'Kicker', 'Flush',
   'Straddle', 'Rake', 'Cooler', 'Draw', 'Call', 'Raise', 'Check', 'Button', 'Dealer', 'Shove',
-  'Fold', 'Spot', 'Board', 'Set', 'Cashgame'];
+  'Fold', 'Spot', 'Board', 'Set', 'Cashgame',
+  // ★2026-08-10 (7) 추가 — 되읽기 패스에서 내가 «eine ganze Orbit»라고 새로 써 넣었다.
+  //   de 42편 코퍼스는 「in jedem einzelnen Orbit」·「über einen vollen Orbit」·「jeden Orbit」로 **남성 통일**이다.
+  'Orbit'];
 const grp = (arr) => arr.map((w) => w.replace(/[-]/g, '\\-')).join('|');
 /* ⚠ 대소문자를 통째로 무시하면 안 된다 — 명사는 «대문자로 쓰였는지»가 D8의 판정 대상이라
    여기서 소문자 명사까지 잡으면 두 규칙이 같은 자리를 두 번 센다.
    → **관사·소유격만** 첫 글자 양쪽을 허용한다(문장 첫머리의 "Dein"·"Ein"). */
-const POSS_M = '[DdMmKkSs]ein|[Ee]in';        // dein/mein/kein/sein/ein — 남성·중성 형태
+const POSS_M = '[DdMmKkSs]ein|[Ee]in';        // dein/mein/kein/sein/ein — 남성·중성 단수 1·4격
+/* ★2026-08-10 확장 — 위 형태만 보면 «사격(斜格)으로 새는 성 오류»를 원리상 못 잡는다.
+   실측: `bei einem Bet plus drei Raises`(betting-actions L149·L214)가 두 번 통과했다.
+   `einem`·`einen`은 여성 단수 앞에 절대 못 온다(여성은 einer/eine) → 격과 무관하게 확정 오류다.
+   복수와도 겹치지 않는다: 여기 쓰이는 여성 명사의 복수는 -s(Bets·Ranges) 또는 -n(Karten)이라
+   단수형과 형태가 다르다. */
+const POSS_M_OBL = '[DdMmKkSs]eine[mn]|[Ee]ine[mn]';   // deinem/deinen/einem/einen
+const DEF_M_N = '[Dd]as|[Dd]em|[Dd]es';                 // 여성 앞에 못 오는 정관사 (der는 3·2격이라 제외)
 
 /* ★튜닝으로 확정된 세 가지 제외 (2026-08-10 · 실측 오탐 19건이 전부 여기서 나왔다)
    ① **띄어쓴 영어 합성어**의 성은 «뒤 명사»가 정한다 —
@@ -259,13 +269,38 @@ const POSS_M = '[DdMmKkSs]ein|[Ee]in';        // dein/mein/kein/sein/ein — 남
       → 남성·중성 검사는 **복수형이 없는 `eine`에만** 건다(deine/keine/meine/seine는 복수일 수 있다).
    ③ `der eine Spot`처럼 **정관사 + eine(=하나의)**는 정상 독일어다. → 앞에 정관사가 있으면 제외. */
 const NEXT_IS_CAPITAL = '(?!\\s+[A-ZÄÖÜ])';
-const NOT_COMPOUND = '(?![\\w\\-äöüß])';
+/* ★`\s{0,2}-`까지 막는 이유 — stripNonProse가 `**`를 «공백»으로 바꾸는 탓에
+   `die **Turn**-Karte`가 `die  Turn -Karte`가 되어 하이픈 합성어가 안 보인다.
+   그러면 핵이 Karte(여성)인데 Turn(남성)으로 판정해 오탐이 난다(2026-08-10 (2) 실측 1건). */
+const NOT_COMPOUND = '(?![\\w\\-äöüß])(?!\\s{0,2}-)';
 const AFTER_DEF_ART = '(?<!\\b[Dd]er\\s)(?<!\\b[Dd]ie\\s)(?<!\\b[Dd]as\\s)(?<!\\b[Dd]en\\s)(?<!\\b[Dd]em\\s)(?<!\\b[Dd]es\\s)';
+/* `die + 남성·중성`은 «복수»와 형태가 겹칠 때만 위험하다. -er로 끝나는 차용어는 복수가 단수와
+   같아(der Kicker → die Kicker) 판정할 수 없다 → **복수가 -s인 낱말에만** 건다. */
+const MASC_NEUT_S_PL = MASC_NEUT_SG.filter((w) => !/er$/.test(w));
+/* 관사와 명사 사이에 «형용사» 하나가 들어가도 성 판정은 그대로다 — `eine ganze Orbit`.
+   대문자 낱말은 넣지 않는다(그건 띄어쓴 영어 합성어라 뒤 명사가 핵이다). 소문자 -e 어미만 허용. */
+/* 🔴 한정사는 형용사가 아니다. 안 막으면 `das eine Bet`(관계대명사 das + eine Bet)·`dem deine Hand`가
+   전부 오탐이 된다 — 2026-08-10 (7) 실측에서 이 한 줄이 없어 7편이 잘못 걸렸다. */
+const NOT_DET = '(?!(?:eine|deine|meine|seine|keine|ihre|die|diese|jede|welche|alle|einer|deiner)\\s)';
+const ADJ = `(?:${NOT_DET}[a-zäöüß]+e\\s+)?`;
+/* ★하이픈 합성어의 성은 «마지막 요소»가 정한다(§5). 그래서 앞 요소는 건너뛰고 **핵만** 본다:
+   `eine River-Raise` → 핵이 Raise(남성)라 오류 · `die Turn-Karte` → 핵이 Karte(여성)라 정상.
+   앞 요소는 대문자로 시작하는 낱말만 인정한다(`3-Bet-`·`All-in-`처럼 소문자·숫자가 섞이면
+   핵을 잘못 짚을 위험이 커서 아예 판정하지 않는다 — 이 공백은 의도적이다). */
+const COMPOUND_HEAD = '(?:[A-ZÄÖÜ][A-Za-zÄÖÜäöüß]{1,20}-)*';
 const GENDER_RULES = [
-  [new RegExp(`\\b(?:${POSS_M})\\s+(?:${grp(FEM_SG)})${NOT_COMPOUND}${NEXT_IS_CAPITAL}`, 'g'),
+  [new RegExp(`\\b(?:${POSS_M})\\s+${ADJ}${COMPOUND_HEAD}(?:${grp(FEM_SG)})${NOT_COMPOUND}${NEXT_IS_CAPITAL}`, 'g'),
     '여성 명사인데 -e가 없다 (dein → deine / ein → eine)'],
-  [new RegExp(`${AFTER_DEF_ART}\\b[Ee]ine\\s+(?:${grp(MASC_NEUT_SG)})${NOT_COMPOUND}${NEXT_IS_CAPITAL}`, 'g'),
+  [new RegExp(`${AFTER_DEF_ART}\\b[Ee]ine\\s+${ADJ}${COMPOUND_HEAD}(?:${grp(MASC_NEUT_SG)})${NOT_COMPOUND}${NEXT_IS_CAPITAL}`, 'g'),
     '남성·중성 단수인데 -e가 붙었다 (eine → ein)'],
+  [new RegExp(`\\b(?:${POSS_M_OBL})\\s+${ADJ}${COMPOUND_HEAD}(?:${grp(FEM_SG)})${NOT_COMPOUND}${NEXT_IS_CAPITAL}`, 'g'),
+    '여성 명사인데 남성·중성 격변화다 (einem → einer / einen → eine)'],
+  [new RegExp(`\\b(?:${DEF_M_N})\\s+${ADJ}${COMPOUND_HEAD}(?:${grp(FEM_SG)})${NOT_COMPOUND}${NEXT_IS_CAPITAL}`, 'g'),
+    '여성 명사인데 남성·중성 정관사다 (das/dem/des → die/der)'],
+  [new RegExp(`\\b[Ee]iner\\s+${ADJ}${COMPOUND_HEAD}(?:${grp(MASC_NEUT_SG)})${NOT_COMPOUND}${NEXT_IS_CAPITAL}`, 'g'),
+    '남성·중성인데 여성 격변화다 (einer → einem/eines)'],
+  [new RegExp(`\\b[Dd]ie\\s+${ADJ}${COMPOUND_HEAD}(?:${grp(MASC_NEUT_S_PL)})${NOT_COMPOUND}${NEXT_IS_CAPITAL}`, 'g'),
+    '남성·중성 단수인데 die다 (die → der/das)'],
 ];
 
 /* ────────────────────────────────────────────────────────────────
@@ -391,6 +426,19 @@ function auditDeStyle(post) {
     add('WARN', 'D7', `퍼센트 표기 혼재 — 붙임 ${pctTight}곳 / 띄움 ${pctSpaced}곳 (§7-5: 어느 쪽인지는 판정하지 않되 한 글 안에서는 통일)`);
   }
 
+  /* ── D10 독일어 인용부호 짝 (§7-5 표기) ──
+     독일어는 „…“ 다. 여는 „ 를 쓰고 ASCII "로 닫으면 **반쪽만 현지화된 상태**가 된다 —
+     2026-08-10 (7) 실측: 42편 중 5편이 „ 228개 중 59개를 ASCII로 닫고 있었다.
+     ⚠ 인라인 HTML의 style="…" 때문에 반드시 stripNonProse 뒤에 검사한다. */
+  const d10 = [];
+  for (const l of lines) {
+    const s = stripNonProse(l.raw);
+    for (const m of s.matchAll(/„[^„“\n]{0,200}?"/g)) {
+      d10.push(`${where(l)} "${m[0].slice(0, 60)}" — 여는 „ 를 ASCII "로 닫았다 (→ „…“)`);
+    }
+  }
+  if (d10.length) add('ERR', 'D10', `독일어 인용부호 짝 어긋남 ${d10.length}곳 (§7-5)`, d10);
+
   /* ── D8 명사 소문자 ── */
   const d8 = [];
   for (const l of lines) {
@@ -448,6 +496,62 @@ const FIXTURES = [
   ['D4', '복수 "deine Outs" 정상 (울리면 안 됨)', false, 'Zähl deine Outs und deine Draws, bevor du callst.'],
   ['D4', '"gegen Primärquellen geprüft" (잡아야 함)', true, 'Alle Zahlen wurden gegen Primärquellen geprüft.'],
   ['D4', '"anhand der Primärquellen geprüft" 정상 (울리면 안 됨)', false, 'Alle Zahlen wurden anhand der Primärquellen geprüft.'],
+
+  /* ══ 2026-08-10 (2) 확장 — 사격(斜格)으로 새던 성 오류. 실측 근거는 §6-B ══
+     Bet=여성 / Raise=남성은 독일 매체 5곳 DOM 실측으로 확정됐다(die Bet 7 : der Bet 2 · der Raise 5 : die Raise 0). */
+  ['D4', '[betting-actions L149] "bei einem Bet" — die Bet의 3격은 einer (잡아야 함)', true,
+    'In Fixed-Limit-Spielen deckeln die meisten Cardrooms jede Runde bei einem Bet plus drei Raises.'],
+  ['D4', '[pot-odds] "gegen einen Bet" — die Bet의 4격은 eine (잡아야 함)', true,
+    'Du entscheidest gegen einen Bet, obwohl die Odds dafür sprechen.'],
+  ['D4', '[3bet L160] "enthält bereits die Raise" — der Raise (잡아야 함)', true,
+    'Der Pot enthält bereits die Raise und den Call, also gewinnt ein Squeeze mehr.'],
+  ['D4', '"nach einer Raise" — der Raise의 3격은 einem (잡아야 함)', true,
+    'Nach einer Raise auf 60 € bist du im Nachteil.'],
+  ['D4', '"Das Bet war zu groß" — die Bet (잡아야 함)', true, 'Das Bet war zu groß für diesen Pot.'],
+  // ★위 확장이 만들 뻔한 오탐 — 전부 lib/posts-de 원문이다
+  ['D4', '[pot-odds L22] "einen Bet-Size-Spickzettel" 핵은 Spickzettel (울리면 안 됨)', false,
+    'Dieser Guide gibt dir die 10-Sekunden-Methode und einen Bet-Size-Spickzettel für den Tisch.'],
+  ['D4', '[limping L95] "die Raise-oder-Fold-Regel" 핵은 Regel (울리면 안 됨)', false,
+    'Nur der Big Blind handelt hinter dir — die Raise-oder-Fold-Regel bricht zum Rabatt zusammen.'],
+  ['D4', '"in der Hand" = 여성 3격, der가 정답 (울리면 안 됨)', false,
+    'Was du in der Hand hältst, zählt weniger als deine Position.'],
+  ['D4', '"die Kicker/Dealer/Cooler" = 복수(단수와 동형) (울리면 안 됨)', false,
+    'Die Kicker entscheiden hier, die Dealer sagen es an, und die Cooler passieren trotzdem.'],
+  ['D4', '"die Pots" 복수 (울리면 안 됨)', false, 'Die Pots werden größer, wenn niemand foldet.'],
+  ['D4', '"einem Bet Sizing" 띄어쓴 합성어의 핵은 Sizing (울리면 안 됨)', false,
+    'Mit einem Bet Sizing von 33% hältst du seine Range breit.'],
+  ['D4', '"einer der Spieler" (울리면 안 됨)', false, 'Einer der Spieler am Tisch hatte den Flush schon getroffen.'],
+  ['D4', '[game-order L28] "die **Turn**-Karte" 핵은 Karte — ** 제거가 하이픈을 가린다 (울리면 안 됨)', false,
+    'drei **Flop**-Karten werden aufgedeckt → setzen → die **Turn**-Karte kommt dazu → die letzte **River**-Karte wird aufgedeckt.'],
+  ['D4', '되읽기에서 내가 쓴 "eine ganze Orbit" — der Orbit (잡아야 함)', true,
+    'Die Runde wurde eine ganze Orbit lang eisig, weil niemand mehr reden wollte.'],
+  ['D4', '[betting-actions L190] "in jedem einzelnen Orbit" 정상 남성 (울리면 안 됨)', false,
+    'Das passiert in jedem einzelnen Orbit, und der Big Blind verschenkt jedes Mal einen gratis Flop.'],
+  // 하이픈 합성어 — 성은 «마지막 요소»가 정한다
+  ['D4', '[when-to-fold L224] "eine River-Raise" 핵은 Raise (잡아야 함)', true,
+    'Behandle eine River-Raise, besonders von einem passiven Spieler, als Value, bis das Gegenteil bewiesen ist.'],
+  ['D4', '[game-order] "die Turn-Karte" 핵은 Karte (울리면 안 됨)', false,
+    'Danach kommt die Turn-Karte dazu, und die letzte River-Karte entscheidet die Hand.'],
+  ['D4', '"ein 3-Bet-Pot" 정상 (울리면 안 됨)', false, 'In einem 3-Bet-Pot ist ein 3-Bet-Pot schnell größer, als du denkst.'],
+  // 한정사를 형용사로 먹으면 안 된다 — 아래 넷은 전부 lib/posts-de 원문이다
+  ['D4', '[pot-odds L256] "das eine Bet" = 관계대명사 das + eine Bet (울리면 안 됨)', false,
+    'Pot Odds sind das eine Stück Mathematik, das eine Bet in eine Rechnung verwandelt.'],
+  ['D4', '[outs L54] "das deine Hand" (울리면 안 됨)', false,
+    'Zähl die Karten, das deine Hand noch verbessern kann, bevor du callst.'],
+  ['D4', '[bankroll L104] "das meine Bankroll" (울리면 안 됨)', false,
+    'Das ist das Limit, das meine Bankroll gerade noch trägt.'],
+  ['D4', '"dem die Hand" (울리면 안 됨)', false,
+    'Der Spieler, dem die Hand gehörte, hatte längst gefoldet.'],
+
+  /* D10 — 독일어 인용부호 짝 */
+  ['D10', '[kicker L?] "„Kicker\\"" ASCII로 닫음 (잡아야 함)', true,
+    'Viele Spieler sagen „mein Kicker war gut" und meinen damit etwas ganz anderes.'],
+  ['D10', '정상 „…“ (울리면 안 됨)', false,
+    'Viele Spieler sagen „mein Kicker war gut“ und meinen damit etwas ganz anderes.'],
+  ['D10', '인라인 HTML의 style="…" (울리면 안 됨)', false,
+    '<div style="background:rgba(255,248,210,0.10);border-radius:14px">„Das Board spielen“ heißt genau das.</div>'],
+  ['D10', 'ASCII 따옴표만 쓴 줄 — 여는 „ 가 없으면 판정 대상 아님 (울리면 안 됨)', false,
+    'Der Dealer sagt "action is on you" und wartet auf deine Entscheidung.'],
 
   /* D5 — 금지 용어 */
   ['D5', '"die Blenden" (잡아야 함)', true, 'Die Blenden steigen alle 20 Minuten.'],
