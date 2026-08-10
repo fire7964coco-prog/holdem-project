@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un 'fish' (pez) es la jerga del póker para el jugador débil y perdedor del que los jugadores fuertes (los 'tiburones') sacan su dinero. El pez juega demasiadas manos, iguala demasiado y no sabe foldear — y la famosa frase avisa: si no ves al pez en tu mesa, el pez eres tú. Es la lectura más importante del juego: encuentra al pez, o conviértete en uno.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-07-24",
-  masterUpdated: "2026-07-19",
+  updated: "2026-08-11",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🐟",
@@ -89,7 +89,8 @@ Ninguna señal por sí sola es prueba — hasta los buenos jugadores limpean de 
 | **Calling station** | Igualador pasivo compulsivo | Iguala cualquier cosa, nunca sube/foldea | Apuesta a valor sin fin, nunca farolees |
 | **Reg / regular** | Un "habitual" de un límite | Varía — no siempre es ganador | Léelo caso por caso |
 | **Grinder** | Pro/semipro de alto volumen | Sólido, constante, baja varianza | Evítalo; busca al recreativo |
-| **LAG / TAG** | Estilos *ganadores* (loose- / tight-agresivo) | Rango amplio o estrecho, siempre agresivo | No son fish — respeta sus apuestas |
+| **TAG** | Un estilo *ganador* (tight-agresivo) | Rango estrecho, pero lo apuesta y lo sube fuerte | No es fish — respeta sus apuestas |
+| **LAG** | Un estilo *ganador* (loose-agresivo) | Rango amplio, presión sin parar, farolea mucho | No foldear demasiado — amplía tus calls y 3-bets y caza faroles |
 
 </div>
 

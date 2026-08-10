@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Sí — en el póker se puede empatar. El bote se divide (un \"split\" o \"chop\") cuando dos o más jugadores muestran las mismas mejores cinco cartas en el showdown. El palo nunca rompe el empate, y la ficha impar que sobra va al primer jugador empatado a la izquierda del botón.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-07-24",
-  masterUpdated: "2026-07-18",
+  updated: "2026-08-11",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🃏",
@@ -89,7 +89,7 @@ Es mi mano 8-8-8-A-K: mi J-10 y su 5-2 jugaban los dos el trío de ochos de la m
 
 > **La comprobación:** ¿*tus* mejores cinco —usando al menos una carta tuya— superan las cinco de la mesa? Si sí, juegas tu mano. Si no, la mesa juega y lo más probable es que partas. El método completo para escanear una mesa así lo tienes en [cómo leer la mesa y encontrar tus mejores cinco](/es/blog/holdem-reading-the-board).
 
-:::tip[Si la mesa juega y alguien apuesta en el river, piensa antes de pagar: cuando lo mejor que puedes hacer es empatar, pagar suele ser solo recomprar parte de tus propias fichas. Paga solo si tus cartas pueden superar de verdad su mano exacta.]:::
+:::tip[Si la mesa juega y alguien apuesta en el river, **el error es foldear en automático**. Cuando nada puede superar la mesa el empate está asegurado, y pagar te devuelve la mitad de todo lo que ya había en el bote — foldear regala esa mitad gratis. Cuando la mesa sí se puede superar, calcula la frecuencia: ante una apuesta del tamaño del bote necesitas que tu rival también esté jugando la mesa unas 2 de cada 3 veces; ante medio bote, la mitad de las veces. Foldear solo es correcto si casi siempre tiene mano de verdad.]:::
 
 ---
 

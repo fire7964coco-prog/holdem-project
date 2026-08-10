@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ein 'Fish' ist Poker-Slang für einen schwachen, verlierenden Spieler, an dem die stärkeren Spieler ('Sharks') ihr Geld verdienen. Fische spielen zu viele Hände, callen zu viel und können nicht folden – und der berühmte Spruch warnt: Wenn du den Fish an deinem Tisch nicht erkennst, bist du es. Es ist der wichtigste Read im ganzen Spiel: Finde den Fish, oder werde selbst einer.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-08-10",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🐟",
@@ -88,7 +88,8 @@ Kein einzelnes Zeichen ist ein Beweis – selbst gute Spieler limpen gelegentlic
 | **Calling Station** | Passiver Over-Caller | Callt alles, raist/foldet nie | Endlos auf Value betten, nie bluffen |
 | **Reg** | Ein „Regular“ an einer Stake | Wechselnd – nicht immer ein Gewinner | Lies sie individuell |
 | **Grinder** | Pro/Semi-Pro mit hohem Volumen | Solide, konstant, geringe Varianz | Meiden; find den Freizeitspieler |
-| **LAG / TAG** | *Gewinnende* Stile (loose- / tight-aggressiv) | Weite oder enge Range, immer aggressiv | Keine Fische – respektiere ihre Bets |
+| **TAG** | Ein *Gewinnstil* (tight-aggressiv) | Enge Range, die er hart bettet und raist | Kein Fisch – respektiere seine Bets |
+| **LAG** | Ein *Gewinnstil* (loose-aggressiv) | Weite Range, ständiger Druck, blufft viel | Nicht zu viel folden – Call- und 3-Bet-Range weiten, Bluffs abfangen |
 
 </div>
 

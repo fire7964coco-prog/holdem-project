@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A 'fish' is poker slang for a weak, losing player the stronger players ('sharks') make their money from. Fish play too many hands, call too much, and can't fold — and the famous line warns that if you can't spot the fish at your table, you're it. It's the single most important read in the game: find the fish, or become one.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-07-19",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🐟",
@@ -88,7 +88,8 @@ No single sign is proof — even good players limp occasionally or chase a big d
 | **Calling station** | Passive over-caller | Calls anything, never raises/folds | Value-bet endlessly, never bluff |
 | **Reg** | A "regular" at a stake | Varies — not always a winner | Read them individually |
 | **Grinder** | Pro/semi-pro playing high volume | Solid, steady, low variance | Avoid; find the recreational player |
-| **LAG / TAG** | *Winning* styles (loose- / tight-aggressive) | Wide or narrow range, always aggressive | Not fish — respect their bets |
+| **TAG** | A *winning* style (tight-aggressive) | Narrow range, but bets and raises it hard | Not a fish — respect their bets |
+| **LAG** | A *winning* style (loose-aggressive) | Wide range, constant pressure, bluffs often | Don't over-fold — widen your calls and 3-bets and catch bluffs |
 
 </div>
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Sim — mãos de pôquer podem empatar. O pote é dividido (um chop) quando dois ou mais jogadores mostram a mesma melhor mão de cinco cartas no showdown. O naipe nunca desempata, e qualquer ficha ímpar que sobra vai para o primeiro empatado à esquerda do botão do dealer.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-07-11",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🃏",
@@ -88,7 +88,7 @@ Sim — e nem precisa de duas mãos monstruosas. Quando as cinco cartas comunit�
 
 > **A verificação:** *a sua* melhor mão de cinco — usando pelo menos uma carta fechada — bate as cinco da própria mesa? Se sim, você joga sua mão. Se não, a mesa joga e você provavelmente vai chopar. O método completo para varrer uma mesa desse jeito está em [como ler a mesa e achar suas melhores 5](/pt/blog/holdem-reading-the-board).
 
-:::tip[Se a mesa joga e alguém aposta no river, pense antes de pagar: quando o melhor que você consegue é empatar, um call geralmente só compra de volta parte das suas próprias fichas. Pague só se suas cartas fechadas puderem realmente bater a mão exata do adversário.]:::
+:::tip[Se a mesa joga e alguém aposta no river, **o erro é dar fold no automático**. Quando nada consegue bater a mesa o empate é certo, e pagar ainda traz de volta metade de tudo que já estava no pote — dar fold entrega essa metade de graça. Quando a mesa pode ser batida, calcule a frequência: contra uma aposta do tamanho do pote você precisa que o adversário também esteja apenas jogando a mesa em cerca de 2 de cada 3 vezes; contra meio pote, metade das vezes. Foldar só é certo quando ele quase sempre tem mão de verdade.]:::
 
 ---
 

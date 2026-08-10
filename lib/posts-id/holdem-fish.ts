@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Fish adalah slang poker untuk pemain lemah yang kalah, sumber uang yang dikeruk pemain kuat (shark). Fish memainkan terlalu banyak tangan, terlalu banyak call, dan tak bisa fold — dan kalimat terkenal itu memperingatkan: kalau Anda tak bisa mengenali fish di meja Anda, Anda-lah fish-nya. Ini read paling penting dalam permainan: temukan fish, atau jadilah fish.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-07-05",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "🐟",
@@ -88,7 +88,8 @@ Tak ada satu tanda pun yang menjadi bukti — bahkan pemain bagus sesekali limp 
 | **Calling station** | Over-caller yang pasif | Call apa saja, tak pernah raise/fold | Value-bet tanpa henti, jangan pernah bluff |
 | **Reg** | "Regular" di sebuah stake | Beragam — tak selalu pemenang | Baca mereka satu per satu |
 | **Grinder** | Pro/semi-pro bervolume tinggi | Solid, stabil, varians rendah | Hindari; cari pemain rekreasional |
-| **LAG / TAG** | Gaya *menang* (loose- / tight-aggressive) | Range lebar atau sempit, selalu agresif | Bukan fish — hormati taruhan mereka |
+| **TAG** | Gaya *menang* (tight-aggressive) | Range sempit, tapi di-bet dan di-raise keras | Bukan fish — hormati taruhan mereka |
+| **LAG** | Gaya *menang* (loose-aggressive) | Range lebar, menekan terus, sering bluff | Jangan fold terlalu banyak — lebarkan call dan 3-bet, tangkap bluff-nya |
 
 </div>
 

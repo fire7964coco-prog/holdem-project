@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Yes — poker hands can tie. A pot is split (a chop) when two or more players show down the identical best five-card hand. Suits never break the tie, and any leftover odd chip goes to the first tied player left of the dealer button.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-07-18",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🃏",
@@ -88,7 +88,7 @@ That's my 8-8-8-A-K hand: my J-10 and his 5-2 both played the board's trip eight
 
 > **The check:** does *your* best five — using at least one hole card — beat the board's own five? If yes, you play your hand. If not, the board plays and you're likely chopping. The full method for scanning a board this way is in [how to read the board and find your best 5](/en/blog/holdem-reading-the-board).
 
-:::tip[If the board plays and someone bets the river, think before calling: when the best you can do is tie, a call usually just buys back part of your own chips. Call only if your hole cards can realistically beat their exact holding.]:::
+:::tip[If the board plays and someone bets the river, **folding on autopilot is the mistake**. When nothing can beat the board the chop is certain, and calling still brings back half of everything that was already in the pot — folding hands that half away for free. When the board *can* be beaten, run the frequency: against a pot-size bet you need your opponent to be playing the board too about 2 times in 3; against a half-pot bet, about half the time. Folding is only right when they almost always have a real hand.]:::
 
 ---
 

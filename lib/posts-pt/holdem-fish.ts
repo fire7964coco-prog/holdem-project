@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "\"Fish\" é a gíria do pôquer para um jogador fraco e perdedor, aquele com quem os jogadores mais fortes (\"sharks\") faturam. Fish jogam mãos demais, pagam demais e não conseguem dar fold — e a frase famosa avisa: se você não consegue identificar o fish na sua mesa, o fish é você. É a leitura mais importante do jogo: ache o fish, ou vire um.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-07-05",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🐟",
@@ -88,7 +88,8 @@ Nenhum sinal isolado é prova — até bons jogadores dão limp de vez em quando
 | **Calling station** | Pagador passivo em excesso | Paga qualquer coisa, nunca aumenta/folda | Value bet sem parar, nunca blefe |
 | **Reg** | Um "regular" de um stake | Varia — nem sempre um vencedor | Leia cada um individualmente |
 | **Grinder** | Pro/semipro jogando alto volume | Sólido, constante, baixa variância | Evite; ache o jogador recreativo |
-| **LAG / TAG** | Estilos *vencedores* (loose- / tight-agressivo) | Range amplo ou estreito, sempre agressivo | Não é fish — respeite as apostas dele |
+| **TAG** | Um estilo *vencedor* (tight-agressivo) | Range estreito, mas aposta e aumenta forte | Não é fish — respeite as apostas dele |
+| **LAG** | Um estilo *vencedor* (loose-agressivo) | Range amplo, pressão sem parar, blefa muito | Não foldar demais — abra seus calls e 3-bets e pegue mais blefes |
 
 </div>
 

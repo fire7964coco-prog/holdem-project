@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ya — tangan poker bisa seri. Pot dibagi (split pot) ketika dua pemain atau lebih menunjukkan lima kartu terbaik yang identik saat showdown. Jenis kartu tak pernah memecah seri, dan sisa odd chip diberikan kepada pemain seri pertama di kiri tombol dealer.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-07-11",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "🃏",
@@ -88,7 +88,7 @@ Itulah tangan 8-8-8-A-K saya: J-10 saya dan 5-2 lawan sama-sama main trip delapa
 
 > **Ceknya:** apakah lima kartu terbaik *Anda* — memakai setidaknya satu kartu tertutup — mengalahkan lima kartu board itu sendiri? Jika ya, Anda main tangan Anda. Jika tidak, board yang main dan Anda kemungkinan akan chop. Metode lengkap untuk memindai board dengan cara ini ada di [cara membaca board dan menemukan 5 kartu terbaik](/id/blog/holdem-reading-the-board).
 
-:::tip[Jika board yang main dan seseorang bet di river, pikirkan sebelum call: ketika yang terbaik yang bisa Anda capai hanyalah seri, sebuah call biasanya cuma membeli kembali sebagian chip Anda sendiri. Call hanya jika kartu tertutup Anda realistis bisa mengalahkan pegangan persis lawan.]:::
+:::tip[Jika board yang main dan seseorang bet di river, **fold secara refleks justru kesalahannya**. Kalau tidak ada tangan yang bisa mengalahkan board, seri sudah pasti, dan call tetap mengembalikan setengah dari semua chip yang sudah ada di pot — fold berarti menyerahkan setengah itu cuma-cuma. Kalau board masih bisa dikalahkan, hitung frekuensinya: melawan bet sebesar pot, Anda butuh lawan juga sekadar memainkan board sekitar 2 dari 3 kali; melawan setengah pot, sekitar separuh waktu. Fold baru benar kalau dia hampir selalu punya tangan sungguhan.]:::
 
 ---
 
