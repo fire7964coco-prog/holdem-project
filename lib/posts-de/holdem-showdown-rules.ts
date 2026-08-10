@@ -162,7 +162,7 @@ Keine Regel verbietet dir, deine Hand umzudrehen, bevor du offiziell an der Reih
 
 ## FAQ
 
-**Q. Wer zeigt beim Poker-Showdown zuerst die Karten?**
+**Q. Was passiert, wenn niemand freiwillig zeigen will?**
 
 A. Der Spieler, der in der letzten Setzrunde die letzte aggressive Aktion gemacht hat (Bet oder Raise), muss zuerst zeigen. Wurde die letzte Runde von allen durchgecheckt, zeigt der erste aktive Spieler links vom Dealer-Button zuerst, und es geht im Uhrzeigersinn weiter.
 
@@ -174,19 +174,19 @@ A. Ja – warst du am River der letzte, der gesetzt oder erhöht hat, musst du n
 
 A. Ja – das ist die Regel „show one, show all“, die in praktisch jedem Cardroom gilt. Zeigst du deine Hand freiwillig auch nur einem Spieler oder einem Zuschauer, darf jeder am Tisch sie sehen. Sie existiert, damit niemand selektiv Information verteilt. Verwechsle sie nicht mit „I want to see that hand“: Die betrifft **gemuckte** Hände, die einen gecallten Showdown erreicht haben, und wird beim Dealer beantragt.
 
-**Q. Was ist Slow Rolling beim Poker und warum ist es verpönt?**
+**Q. Ist Slow Rolling beim Poker verboten?**
 
-A. Slow Rolling bedeutet, das Zeigen einer Gewinnerhand absichtlich hinauszuzögern, obwohl man bereits weiß, dass sie die beste ist. Es ist erlaubt, aber überall verhasst, weil es als bewusste Demütigung des Gegners gilt. Hältst du die Nuts oder einen klaren Gewinner, dreh deine Karten sofort um. Wie schnell du zeigst, sagt am Tisch viel über deinen Charakter aus.
+A. Nein – verboten ist es nicht, aber überall verhasst. Slow Rolling bedeutet, das Zeigen einer Gewinnerhand absichtlich hinauszuzögern, obwohl man bereits weiß, dass sie die beste ist. Es gilt als grober Verstoß gegen die Etikette, weil es als bewusste Demütigung des Gegners gilt. Hältst du die Nuts oder einen klaren Gewinner, dreh deine Karten sofort um. Wie schnell du zeigst, sagt am Tisch viel über deinen Charakter aus.
 
-**Q. Wer zeigt in einer All-in-Situation zuerst die Karten?**
+**Q. Werden die Karten beim All-in sofort aufgedeckt?**
 
 A. Geht ein Spieler All-in und sind keine weiteren Bets möglich, werden alle an diesem Pot beteiligten Hände üblicherweise vor oder während des Austeilens der restlichen Gemeinschaftskarten offen gezeigt. Gibt es einen Side Pot mit weiterlaufenden Bets, zeigt für den Side Pot der letzte Aggressor unter diesen Spielern zuerst. Die Hand des All-in-Spielers wird separat für den Hauptpot gezeigt.
 
-**Q. Was bedeutet „cards speak“ beim Poker?**
+**Q. Kann ich gewinnen, wenn ich meine Hand falsch ansage?**
 
-A. „Cards speak“ – die Karten sprechen – heißt: Die beste Hand gewinnt auf Basis dessen, was die Karten tatsächlich zeigen, nicht auf Basis dessen, was die Spieler sagen. Wer sich verliest und die falsche Hand ansagt, gewinnt trotzdem, wenn seine Karten die beste Hand sind. Umgekehrt hat jemand, der muckt, ohne zu prüfen, ob er verloren hat, keinerlei Anspruch auf den Pot – selbst wenn seine Hand gewonnen hätte.
+A. Ja – dafür sorgt die Regel „cards speak“ (die Karten sprechen). Sie heißt: Die beste Hand gewinnt auf Basis dessen, was die Karten tatsächlich zeigen, nicht auf Basis dessen, was die Spieler sagen. Wer sich verliest und die falsche Hand ansagt, gewinnt trotzdem, wenn seine Karten die beste Hand sind. Umgekehrt hat jemand, der muckt, ohne zu prüfen, ob er verloren hat, keinerlei Anspruch auf den Pot – selbst wenn seine Hand gewonnen hätte.
 
-**Q. Muss man seine Karten zeigen, wenn man ohne Showdown gewinnt?**
+**Q. Muss ich meinen Bluff zeigen, wenn alle folden?**
 
 A. Nein. Folden alle anderen vor dem Showdown, gewinnst du den Pot sofort und musst deine Hole Cards nie aufdecken. Zeigen ist freiwillig – manche drehen einen Bluff um, um Gegner zu ärgern, aber du bist nie verpflichtet, eine Hand zu zeigen, die unangefochten gewonnen hat.
 
