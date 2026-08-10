@@ -18,7 +18,37 @@
 > `docs/multilang-sync-plan.md` §0-D 「B3 적용 완료」(교훈 포함 — **올라간 masterUpdated도 증거가 아니다**,
 > es·ja·zh가 07-25로 올라간 채 E1 미수정이었다).
 
-### ▶▶ 다음 세션 — 남은 것은 두 갈래, 착수 전 판단이 필요하다
+### ▶▶▶ 🔴 지금 트랙 = **de(독일어) 경화** (2026-08-10 사장님 지시로 착수)
+
+**언어별 GEO 경화 현황** — en(마스터)·ja·zh-hant·zh·es는 **완료**(42/42씩). **de·pt·id는 미경화**(EN 07-19 이전 stale).
+**de를 먼저 하는 이유**: 번역본 GSC 노출이 **de 278**로 1위인데 유일하게 미경화였다.
+
+**✅ 오늘 끝난 선행 작업**(커밋 `ca53842`·`0b24362`) — 리서치 4종 + `/de/tournaments` + DACH 대회 13개.
+상세는 `WORKLOG.md` 2026-08-10 (4).
+
+**▶ 다음에 할 것 = de 42편 경화 본체.** 착수 전 읽을 것(순서 고정):
+1. `docs/translation-terms-de.md` ★**정본** — §7에 실측 문체(du 통일·Denglisch 동사·콤마 소수점·**기계번역 지문 8종**)
+2. `docs/keyword-bank/de-core-volumes.md` — 시드 15개 판정 + §5 **실행 항목 표**(어느 글에 뭘 넣을지 이미 정해져 있다)
+3. `docs/local-voice/de-dach.md`(독자·매체) · `docs/market-profile/de.md`(씬·제도·세금 ✅/⚠/❓ 등급)
+
+**§5-A 실행 항목 요약**(근거는 그 파일에):
+| 대상 | 할 일 |
+|---|---|
+| ~~texas-holdem-rules-for-beginners~~ | ✅ 칩 분배표·€바이인표 완료(08-10) · 남은 건 카드 수량 FAQ 3문항 |
+| `holdem-glossary` | **토너먼트·온라인 약어 표** 추가 — ATS·ITM·GTD·PLO·Cap·Overlay·Rebuy(전부 LDA 5~35, 현 용어집은 라이브 캐시 편중) |
+| `holdem-hand-rankings` | **「Direkte Duelle」 대결표** 8~10행 + **무늬 서열 없음** 명시 |
+| `holdem-probability` | H2를 **국면형**(nach dem Flop)·**Faustregel형**으로 — 상위어는 LDA27~34 벽, 국면형은 9~15 |
+| 룰 계열 1편 | 테이블 토크 FAQ(`darf man beim poker reden`) — WSOP 룰 원문 자산 사용 |
+| **전 42편** | **§7 문체 적용** — 이게 경화의 본체다. de 베이스는 구조가 이미 강하다 |
+
+🔴 **채택 금지**(근거 있음): 합법성 판정 · 봇/RTA · 책 PDF · Würfelpoker/Kniffel · rote Karten(축구) · 소매 · 타언어.
+
+**사장님 판단 대기**: 칩 분배 계산기(LDA7·비대체 자산) · 세금 FAQ 흡수(승인됨, 미착수) ·
+툴 브랜드 대응(gto wizard 2,400 · equilab LDA3) → **솔버 다국어화(2주 뒤) 시 함께 결정**.
+
+---
+
+### ▶▶ 다국어 «판 전체 재동기화» — 별도 트랙(보류 중)
 
 **① 다국어 «판 전체 재동기화» 2편** — `holdem-showdown-rules`·`texas-holdem-rules-for-beginners`.
 EN이 07-19에 넣은 경험담·구조 변경이 19~20개 언어에 안 왔다(드리프트 잔존 46건 보류 중).
