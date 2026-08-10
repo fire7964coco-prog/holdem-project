@@ -3,6 +3,34 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-08-10 (12) — **리서치 소급 반영** — 독일어 PDF 신설(A4) + Pokerblätter 표기 + 랩어라운드 변형
+
+> 사장님 지적으로 발견: (11)은 `de-core-volumes.md` **730행 중 ~150행만** 읽고 진행했고,
+> 규정된 **「글마다 WebSearch PAA」를 0회** 돌렸다. 전문 통독 + 6편 PAA 후 소급.
+> 게이트: Handreihenfolge 6/6 · Regeln 6/6 🔴 0 · 🟠 0 · `audit:hard --locale=de` 42/42 🔴 0건.
+
+- 🔴 **가장 큰 누락은 「낱말」이 아니라 「자산」이었다** — 독일 SERP 상위 4곳(poker.de·**PokerOlymp**·
+  TexasSpielen·CasinoVerdiener)이 **전부 인쇄용 PDF를 건다.** PokerOlymp는 우리 문체 참조처인데
+  직링크 PDF 파일까지 있다. 수요도 3개 시드에서 반복 확인됐다(`reihenfolge pdf` 260/LDA11 ·
+  `regeln pdf` 390/LDA11 · `wahrscheinlichkeiten pdf` · `strategie pdf`).
+  ★**그런데 de 글은 「영어 PDF」를 독일어 링크 문구로 걸고 있었고, 본문이 그걸 자백하고 있었다**
+  (「vor der Heimrunde das **englischsprachige** PDF nutzen」).
+- ✅ **파이프라인은 이미 있었다** — `generate-beginner-pdf.mjs`(playwright, 데이터 주도, 언어 키 추가식).
+  신규 빌드가 아니라 **de 키 하나 추가**로 끝났다. → `-de.pdf` 75.7KB · 2페이지.
+  ★**착수 전 `package.json` scripts를 훑는 것만으로 「신규 개발」이 「설정 추가」가 된다.**
+- 🔴 **용지가 Letter로 하드코딩돼 있었다**(`@page { size: Letter }`). 미국 규격이라 독일에서 인쇄하면
+  여백이 어긋난다. 언어별 `pageSize` 도입 · de만 A4 · 기존 4개 산출물 불변.
+  ⚠ **ko·ja·zh도 A4 시장이다** — 재생성은 별도 판단(핸드오프 ④).
+- **표기 소급** — `Pokerblätter`(720/LDA20, **본문 0회였다**) · `Poker-Kombinationen`(4,400/LDA12) ·
+  `Vierling = „Poker“` · `High Card = Höchste Karte` · `Straßen-Regeln`(50/LDA5) · `Flush-Regeln`(70/LDA6) ·
+  **J-Q-K-A-2 랩어라운드**(40/LDA5 — K-A-2-3-4만 다루고 있었다) · 무늬 무순위를 **Skat·Bridge와 대비**(현지 관용).
+- ✅ **PDF 육안 검수** — 생성기와 같은 HTML을 PNG로 렌더해 2페이지 전부 확인(§9-1). poppler가 없어
+  PDF 직접 렌더는 안 되지만, **HTML이 곧 산출물의 원천**이라 같은 것을 본다.
+- ✅ **확인만 하고 넘어간 것**: 키워드 뱅크가 「`texas-…-beginners`는 태그만 있고 칩 분배 답이 없다」고
+  경고했는데, **Session 1이 이미 해결한 상태였다**(칩 표 L168 · 52장 FAQ L436). 추측 대신 원문 확인.
+- ★**교훈**: 인계서의 「실행 항목」은 리서치의 **요약이지 대체물이 아니다.** 그리고 족보 재료가
+  시드③(`poker regeln`)에 들어 있었다 — **클러스터 경계는 시드 경계와 일치하지 않는다.**
+
 ## 2026-08-10 (11) — **de Session 2 (Handreihenfolge 6편) 완료** — 대결표 7→14행 · EN 드리프트 FAQ 18문항 소급
 
 > `check:de-style --cluster=Handreihenfolge` **6/6편 🔴 0 · 🟠 0**(D9 3편 해소) ·

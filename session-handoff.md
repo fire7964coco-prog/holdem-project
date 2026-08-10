@@ -65,6 +65,21 @@ de 표기 42편 일괄(§7-10 확정) · de Session 1~2. 경위는 `WORKLOG.md` 
 **세션당 고정 6단계**: ①정본 재확인 → ②**기계 게이트 먼저** → ③편집
 → ④**되읽기 패스** → ⑤**독일 네이티브 적대 QA**(2렌즈: 네이티브 + 교열) → ⑥빌드·게이트·커밋·WORKLOG
 
+### 🔴🔴 착수 전 «리서치 통독»은 선택이 아니다 (2026-08-10 Session 2에서 대가를 치름)
+
+Session 2는 `de-core-volumes.md` **730행 중 ~150행만** 읽고(핸드오프가 가리킨 곳만) 진행했고,
+규정된 **「글마다 WebSearch PAA」를 한 번도 안 돌렸다.** 결과:
+
+- **`pokerblätter`(720/LDA20, 독일 고유 표기)가 본문에 0회**였다 — 태그에만 있었다. 경쟁사 5곳은 제목에 쓴다.
+- **PDF 어포던스 누락** — `poker reihenfolge pdf` 260/LDA11 등 **3개 시드에서 반복** 확인된 수요인데다,
+  SERP 상위 4곳(PokerOlymp 포함)이 전부 PDF를 걸고 있었다. **de 글은 「영어 PDF」를 걸고 있었다.**
+- `poker kombinationen` **4,400**/LDA12 · `straße bube dame könig as 2` 40/LDA5 등 누락.
+
+★**교훈: 인계서의 「§5-A 실행 항목」은 리서치의 «요약»이지 대체물이 아니다.**
+클러스터 착수 전 **키워드 뱅크를 해당 클러스터 관점에서 통독**하고(다른 클러스터 시드에도 교차 항목이 있다 —
+족보 재료가 시드③ `poker regeln`에 있었다), **글마다 WebSearch로 현지 SERP를 실제로 본다.**
+SERP는 볼륨표가 못 주는 걸 준다 — 경쟁사가 **무엇을 제공하는지**(PDF)와 **어떤 낱말을 쓰는지**(Pokerblätter·„Poker"=Vierling·Skat 대비).
+
 **▶ 착수 전 읽을 것**(순서 고정):
 1. `docs/translation-terms-de.md` ★**정본** — §7 실측 문체 · **§7-9 Bet/Raise 성**(재조사 금지)
 2. `docs/keyword-bank/de-core-volumes.md` — §5 **실행 항목 표**(어느 글에 뭘 넣을지 이미 정해져 있다)
@@ -142,6 +157,19 @@ de 표기 42편 일괄(§7-10 확정) · de Session 1~2. 경위는 `WORKLOG.md` 
 칩 분배 계산기(`verteilung rechner` LDA**7** · 비대체 자산 · KO에도 없어 역수입 가능) ·
 세금 FAQ 흡수(승인됨, 미착수 · BFH X R 8/21 1차출처 확보) ·
 툴 브랜드 대응(gto wizard 2,400 · equilab LDA3) → **솔버 다국어화(2주 뒤) 시 함께 결정**.
+
+### ④ 🪶 PDF 용지 규격 — ko·ja·zh도 A4 시장이다
+
+`generate-beginner-pdf.mjs`는 `@page { size: Letter }`가 하드코딩돼 있었다(미국 규격).
+2026-08-10에 **언어별 `pageSize`를 도입하고 de만 A4**로 했다 — 기존 4개 산출물은 건드리지 않았다.
+ko·ja·zh를 A4로 재생성할지는 판단 사항이다(바이너리 diff · 이미 배포된 파일).
+`node scripts/generate-beginner-pdf.mjs ko ja zh` 한 줄이면 되고, CONTENT에 `pageSize: "A4"`만 추가하면 된다.
+
+### ⑤ 🪶 PDF 수요는 족보 밖에도 있다
+
+`poker wahrscheinlichkeiten pdf`(시드⑨) · `poker strategie pdf` 10/18(시드⑩) · `poker starthände tabelle` 110/**LDA5**.
+확률·전략·스타팅핸드 클러스터를 열 때 **그 글에 맞는 인쇄물**을 붙일지 검토할 것
+(`poker-starting-hands-chart.pdf`는 이미 있고 de 글이 링크한다).
 
 ### ③ 다국어 «판 전체 재동기화» — 할지 말지부터
 
