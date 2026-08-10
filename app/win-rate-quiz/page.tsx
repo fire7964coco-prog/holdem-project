@@ -10,7 +10,22 @@ export const metadata: Metadata = {
   title: "홀덤 승률 시뮬레이터 — 어디서 끊었어야 했는지 복기까지",
   description:
     "상대 패를 모르는 실전 그대로, 단계별 내 승률과 플랍부터의 팟오즈 필요 승률을 보여주고 마지막에 어디서 폴드했어야 하는지 복기해주는 홀덤 승률 시뮬레이터.",
-  alternates: { canonical: `${SITE}/win-rate-quiz` },
+  alternates: {
+    canonical: `${SITE}/win-rate-quiz`,
+    /**
+     * ★2026-08-10 추가 — `/en/win-rate-quiz`는 처음부터 ko를 세트에 넣고 있었는데
+     *   이쪽이 응답을 안 해서 **상호참조가 한쪽만 성립**했다. hreflang은 양쪽이
+     *   서로를 가리켜야 유효하고, 어긋나면 구글은 세트를 통째로 무시한다.
+     *   `scripts/check-hreflang.mjs`(같은 날 신설)가 첫 실행에서 잡았다.
+     * ⚠ 값은 en판(app/en/win-rate-quiz/page.tsx)과 **글자 그대로 같아야** 한다.
+     *   x-default가 en을 가리키는 것도 en판 선언 그대로다.
+     */
+    languages: {
+      ko: `${SITE}/win-rate-quiz`,
+      en: `${SITE}/en/win-rate-quiz`,
+      "x-default": `${SITE}/en/win-rate-quiz`,
+    },
+  },
   openGraph: {
     type: "website",
     url: `${SITE}/win-rate-quiz`,

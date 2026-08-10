@@ -31,7 +31,12 @@ if (!existsSync(APP)) {
   process.exit(1);
 }
 
-/** 다국어는 별도 규칙(hreflang)이 있어 이 검사에서 제외 — KO 라우트만 본다. */
+/**
+ * 다국어는 별도 규칙(hreflang)이 있어 이 검사에서 제외 — KO 라우트만 본다.
+ * ★그 「별도 검사」는 2026-08-10까지 **존재하지 않았다**(이 주석이 없는 검사를 가리키고 있었다).
+ *   이제 `scripts/check-hreflang.mjs`가 그 자리를 맡는다 — `npm run check:hreflang`,
+ *   postbuild에 연결돼 로컬 빌드마다 돈다.
+ */
 const SKIP_LOCALE = /^\/(en|ja|zh|zh-hant|es|de|pt|ar|id|ms|vi|hi|tr|fr|it|ru|pl|th|fil|he|fa|uk|ro|sw|bn)(\/|$)/;
 
 const files = [];
