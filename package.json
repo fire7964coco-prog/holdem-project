@@ -13,6 +13,8 @@
     "audit:hard:selftest": "node scripts/audit-hardening.mjs --selftest",
     "check:de-style": "node scripts/check-de-style.mjs",
     "check:de-style:selftest": "node scripts/check-de-style.mjs --selftest",
+    "check:faq-schema": "node scripts/check-faq-schema.mjs",
+    "check:faq-schema:selftest": "node scripts/check-faq-schema.mjs --selftest",
     "prebuild": "npm run check:intl-links && npm run generate:sitemap",
     "build": "next build",
     "postbuild": "node scripts/patch-html-lang.mjs && npm run check:hreflang",

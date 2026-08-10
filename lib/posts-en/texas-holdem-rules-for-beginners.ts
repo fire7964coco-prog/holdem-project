@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em gives each player 2 hole cards, uses 5 community cards, and the best 5-card poker hand wins after four betting rounds.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-07-19",
+  updated: "2026-08-10",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -388,53 +388,53 @@ Hands are easier to play when you act later. If you are first to act, you need s
 
 ## FAQ
 
-### How do you play Texas Hold'em step by step?
+**Q. How do you play Texas Hold'em step by step?**
 
-Post the blinds, deal two hole cards to each player, run preflop betting, reveal the flop, turn, and river with betting after each street, then compare the best five-card hands at showdown.
+A. Post the blinds, deal two hole cards to each player, run preflop betting, reveal the flop, turn, and river with betting after each street, then compare the best five-card hands at showdown.
 
-### Who goes first in Texas Hold'em?
+**Q. Who goes first in Texas Hold'em?**
 
-Preflop, the player left of the big blind acts first. After the flop, the first active player left of the dealer button acts first, and the button usually acts last.
+A. Preflop, the player left of the big blind acts first. After the flop, the first active player left of the dealer button acts first, and the button usually acts last.
 
-### What chips do you start with in Texas Hold'em?
+**Q. What chips do you start with in Texas Hold'em?**
 
-For a beginner home game, give each player around 200 chips in value and use 1/2 blinds. A simple stack is 20 chips worth 1, 16 chips worth 5, and 4 chips worth 25.
+A. For a beginner home game, give each player around 200 chips in value and use 1/2 blinds. A simple stack is 20 chips worth 1, 16 chips worth 5, and 4 chips worth 25.
 
-### How much money do you start with in Texas Hold'em?
+**Q. How much money do you start with in Texas Hold'em?**
 
-For learning, start with play chips. For tiny real-money home games, use a buy-in everyone is comfortable losing, such as $2 to $5 at $0.01/$0.02 blinds.
+A. For learning, start with play chips. For tiny real-money home games, use a buy-in everyone is comfortable losing, such as $2 to $5 at $0.01/$0.02 blinds.
 
-### Is there a small straight in Texas Hold'em?
+**Q. Is there a small straight in Texas Hold'em?**
 
-Yes. A-2-3-4-5 is a valid straight and is often called the wheel. It is the lowest possible straight. The ace can't wrap around: J-Q-K-A-2 is not a straight. The ace plays either as the highest card (A-K-Q-J-10) or the lowest (A-2-3-4-5), never in the middle.
+A. Yes. A-2-3-4-5 is a valid straight and is often called the wheel. It is the lowest possible straight. The ace can't wrap around: J-Q-K-A-2 is not a straight. The ace plays either as the highest card (A-K-Q-J-10) or the lowest (A-2-3-4-5), never in the middle.
 
-### How many possible starting hands are in Texas Hold'em?
+**Q. How many possible starting hands are in Texas Hold'em?**
 
-There are 1,326 exact two-card combinations, but players usually group them into 169 starting hand types, such as AA, AK suited, or 76 offsuit.
+A. There are 1,326 exact two-card combinations, but players usually group them into 169 starting hand types, such as AA, AK suited, or 76 offsuit.
 
-### What are Texas Hold'em rules for dummies — the simplest version?
+**Q. What are Texas Hold'em rules for dummies — the simplest version?**
 
-The simplest version: each player gets 2 private cards. Five shared cards are revealed in three stages (3, then 1, then 1). You bet after each stage. The best 5-card hand using any mix of your cards and the shared cards wins. If everyone else folds, you win — no matter what cards you hold.
+A. The simplest version: each player gets 2 private cards. Five shared cards are revealed in three stages (3, then 1, then 1). You bet after each stage. The best 5-card hand using any mix of your cards and the shared cards wins. If everyone else folds, you win — no matter what cards you hold.
 
-### Texas Hold'em rules for dummies — what do the blinds mean?
+**Q. Texas Hold'em rules for dummies — what do the blinds mean?**
 
-The two players to the left of the dealer button must post forced bets before cards are dealt. The first player posts the small blind, the second posts the big blind (usually double). These bets guarantee there is always money in the pot to fight for. Every other player must at least match the big blind to stay in the hand.
+A. The two players to the left of the dealer button must post forced bets before cards are dealt. The first player posts the small blind, the second posts the big blind (usually double). These bets guarantee there is always money in the pot to fight for. Every other player must at least match the big blind to stay in the hand.
 
-### What is the quick version of Texas Hold'em rules?
+**Q. What is the quick version of Texas Hold'em rules?**
 
-Post blinds → deal 2 hole cards → preflop betting → reveal 3 community cards (flop) + betting → reveal 1 card (turn) + betting → reveal 1 card (river) + betting → best hand wins. Total: four betting rounds, five community cards, one winner.
+A. Post blinds → deal 2 hole cards → preflop betting → reveal 3 community cards (flop) + betting → reveal 1 card (turn) + betting → reveal 1 card (river) + betting → best hand wins. Total: four betting rounds, five community cards, one winner.
 
-### How many players do you need to play Texas Hold'em?
+**Q. How many players do you need to play Texas Hold'em?**
 
-You need at least 2 players and can seat up to 10. With exactly two players it is called heads-up, and the blinds reverse — the button posts the small blind and acts first preflop, while the big blind acts first after the flop. For a first home game, 4 to 6 players keeps the action fast and easy to follow.
+A. You need at least 2 players and can seat up to 10. With exactly two players it is called heads-up, and the blinds reverse — the button posts the small blind and acts first preflop, while the big blind acts first after the flop. For a first home game, 4 to 6 players keeps the action fast and easy to follow.
 
-### What does no-limit mean in Texas Hold'em?
+**Q. What does no-limit mean in Texas Hold'em?**
 
-No-Limit means you can bet any amount up to all of your chips on any betting round — that is the "all-in" move. It is the default and most popular format, including the WSOP Main Event. Limit Hold'em caps each bet to a fixed size, and Pot-Limit caps your bet to the current pot size.
+A. No-Limit means you can bet any amount up to all of your chips on any betting round — that is the "all-in" move. It is the default and most popular format, including the WSOP Main Event. Limit Hold'em caps each bet to a fixed size, and Pot-Limit caps your bet to the current pot size.
 
-### How long does one hand of Texas Hold'em take?
+**Q. How long does one hand of Texas Hold'em take?**
 
-A single hand usually takes about 10 to 60 seconds, though a big multi-way pot with tough decisions can run several minutes. A casual home session of a few hours will play through dozens of hands, so nobody has to commit a whole evening to one deal.
+A. A single hand usually takes about 10 to 60 seconds, though a big multi-way pot with tough decisions can run several minutes. A casual home session of a few hours will play through dozens of hands, so nobody has to commit a whole evening to one deal.
 
 ---
 

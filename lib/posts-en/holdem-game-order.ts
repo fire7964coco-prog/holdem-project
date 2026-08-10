@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A hand of Texas Hold'em runs: post blinds → deal two hole cards → preflop → flop (3 cards) → turn (1 card) → river (1 card) → showdown, with four betting rounds in total.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-07-19",
+  updated: "2026-08-10",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎬",
@@ -340,35 +340,35 @@ Texas Hold'em takes thirty minutes to learn and a lifetime to master. But the ba
 
 **Q. What is the exact order of play in Texas Hold'em?**
 
-Post blinds → deal two hole cards → preflop betting → reveal the flop (3 cards) and bet → turn (1 card) and bet → river (final card) and bet → showdown (best five cards compared).
+A. Post blinds → deal two hole cards → preflop betting → reveal the flop (3 cards) and bet → turn (1 card) and bet → river (final card) and bet → showdown (best five cards compared).
 
 **Q. What's the difference between preflop and the flop?**
 
-Preflop is before any community cards are out — you decide based on your two hole cards alone. The flop is after three community cards are revealed, where you read both your current hand and your drawing potential.
+A. Preflop is before any community cards are out — you decide based on your two hole cards alone. The flop is after three community cards are revealed, where you read both your current hand and your drawing potential.
 
 **Q. What's the difference between checking and calling?**
 
-A check passes the action with no bet, and is only possible when there's no bet in front of you. A call matches an opponent's bet. If someone has bet, you can't check — you must call, raise, or fold.
+A. A check passes the action with no bet, and is only possible when there's no bet in front of you. A call matches an opponent's bet. If someone has bet, you can't check — you must call, raise, or fold.
 
 **Q. Do I have to use both of my hole cards at showdown?**
 
-No. You make the best five-card hand from any combination of your two hole cards and the five community cards — including using just one, or none at all ("playing the board").
+A. No. You make the best five-card hand from any combination of your two hole cards and the five community cards — including using just one, or none at all ("playing the board").
 
 **Q. What are pot odds?**
 
-Pot odds are the ratio of the current pot size to the amount you must call. If the pot is 100,000 and an opponent bets 20,000, you're risking 20,000 to win a 120,000 pot (6:1). If your chance of winning is better than those odds, calling is profitable.
+A. Pot odds are the ratio of the current pot size to the amount you must call. If the pot is 100,000 and an opponent bets 20,000, you're risking 20,000 to win a 120,000 pot (6:1). If your chance of winning is better than those odds, calling is profitable.
 
 **Q. When should I go all-in?**
 
-All-in means betting every chip you have. Use it with a very strong hand (the nuts), or as a bluff to fold out opponents. Once you're all-in you can't bet again, but you remain eligible for the portion of the pot you matched. When stacks differ, this creates side pots — see [all-in rules and side pots](/en/blog/holdem-all-in-rules).
+A. All-in means betting every chip you have. Use it with a very strong hand (the nuts), or as a bluff to fold out opponents. Once you're all-in you can't bet again, but you remain eligible for the portion of the pot you matched. When stacks differ, this creates side pots — see [all-in rules and side pots](/en/blog/holdem-all-in-rules).
 
 **Q. How many betting rounds are there in a hand?**
 
-Four: preflop, flop, turn, and river. The blinds are forced bets, and the showdown has no betting.
+A. Four: preflop, flop, turn, and river. The blinds are forced bets, and the showdown has no betting.
 
 **Q. Why does the dealer burn a card, and how many are burned?**
 
-Before dealing the flop, the turn, and the river, the dealer discards the top card of the deck face-down — the "burn card." That's three burn cards in a hand, one before each community-card street. Burning protects the game: if the top card were marked or accidentally exposed, a player could gain information about what's coming, so it's removed from play first.
+A. Before dealing the flop, the turn, and the river, the dealer discards the top card of the deck face-down — the "burn card." That's three burn cards in a hand, one before each community-card street. Burning protects the game: if the top card were marked or accidentally exposed, a player could gain information about what's coming, so it's removed from play first.
 
 ---
 
