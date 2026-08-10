@@ -8,7 +8,9 @@ export const POST: Post = {
   tldr: "Beim Texas Hold'em bekommt jeder Spieler 2 Hole Cards, dazu kommen 5 Gemeinschaftskarten — nach vier Setzrunden gewinnt die beste Fünf-Karten-Hand.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-08-09",
+  updated: "2026-08-10",
+  // 🔴 masterUpdated는 07-12 그대로 둔다 — 이 글은 「판 전체 재동기화」 보류분(드리프트 잔존)이다.
+  //    남은 항목이 있는 채로 올리면 드리프트 추적이 거짓말을 한다(session-handoff §착수 전 7).
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 Min.",
@@ -167,6 +169,38 @@ Für die erste Heimrunde funktioniert dieses Setup gut:
 </div>
 
 Mit 200 Chips und Blinds von 1/2 startet ==g:jeder Spieler mit 100 Big Blinds==. Das gibt Anfängern genug Spielraum zum Folden, Callen, Raisen und Flops-Anschauen, ==ohne zu schnell pleitezugehen==.
+
+### Wie viele Chips bekommt jeder — nach Spielerzahl
+
+Ein Hinweis vorweg, weil das Wort „Chips“ hier zwei Dinge meint: Die Verteilung oben sind **40 Chips als Stückzahl**, die zusammen einen **Stack im Wert von 200** ergeben. Für die Koffer-Frage zählt die Stückzahl.
+
+Die Verteilung pro Spieler bleibt gleich — was sich mit der Spielerzahl ändert, ist nur, ob dein Koffer reicht. Bei **40 Chips pro Spieler** rechnet sich das so:
+
+| Spieler | Chips gesamt (Stückzahl) | 200er-Koffer | 300er-Koffer | 500er-Koffer |
+|:---:|:---:|:---:|:---:|:---:|
+| 2 | 80 | ✓ | ✓ | ✓ |
+| 3 | 120 | ✓ | ✓ | ✓ |
+| 4 | 160 | ✓ | ✓ | ✓ |
+| 5 | 200 | ✓ (randvoll) | ✓ | ✓ |
+| 6 | 240 | — | ✓ | ✓ |
+| 7 | 280 | — | ✓ (randvoll) | ✓ |
+| 8 | 320 | — | — | ✓ |
+| 10 | 400 | — | — | ✓ |
+
+Reicht es nicht, gehst du **nicht** auf weniger Spieler runter, sondern auf **weniger Chips pro Spieler** — 30 statt 40 — und passt die Blinds an. Ein 300er-Koffer trägt so auch zehn Leute. ==Wichtig ist das Verhältnis Stack zu Blind, nicht die Stückzahl==: 100 Big Blinds bleiben 100 Big Blinds, egal ob der Stack aus 40 oder 30 Chips besteht.
+
+### Was ist ein Chip wert, wenn ihr um Geld spielt?
+
+In der Heimrunde ist das reine Division: Buy-in geteilt durch den **Stack-Wert**. Bei dem Stack im Wert von 200 von oben sieht das so aus:
+
+| Buy-in pro Spieler | Stack-Wert | Eine Wert-Einheit entspricht |
+|:---:|:---:|:---:|
+| 5 € | 200 | 2,5 Cent |
+| 10 € | 200 | 5 Cent |
+| 20 € | 200 | 10 Cent |
+| 50 € | 200 | 25 Cent |
+
+Bei 10 € Buy-in ist der **weiße** Chip (Wert 1) damit 5 Cent wert, der **rote** (Wert 5) 25 Cent und der **blaue** (Wert 25) 1,25 €. ==r:Rechnet das einmal vor dem ersten Austeilen durch und sagt es laut==— die häufigste Streiterei in Heimrunden entsteht nicht über Regeln, sondern darüber, dass zwei Leute unterschiedliche Chip-Werte im Kopf hatten.
 
 ---
 
