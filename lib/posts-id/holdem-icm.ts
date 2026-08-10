@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "ICM (Independent Chip Model) mengubah stack chip turnamen Anda menjadi nilai uang hadiah nyata, memakai payout dan stack setiap pemain. Karena Anda hanya memenangkan satu hadiah pertama, menggandakan chip tidak pernah menggandakan uang Anda — jadi stack chip leader bernilai lebih kecil dari porsi chipnya, dan short stack bernilai lebih besar. Celah itulah alasan Anda fold tangan di bubble yang akan jadi call mudah di cash game.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-08-09",
-  masterUpdated: "2026-07-19",
+  updated: "2026-08-11",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "13 mnt",
   emoji: "🏆",
@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Chip poker final table ditumpuk di depan tangga payout, menunjukkan bahwa stack chip lebih besar tidak berubah 1:1 menjadi porsi uang hadiah yang lebih besar",
   tags: ["poker icm", "apa itu icm di poker", "arti icm poker", "icm vs chip ev", "icm deal", "chip chop vs icm", "cara menghitung icm", "strategi icm poker"],
   content: `
-Pertama kali ICM merugikan saya, saya bahkan tak tahu ia ada. Tersisa empat orang, tiga dibayar, dan saya melihat pocket jacks dengan stack menengah. Saya shove, chip leader call dengan ace-ten, dan saya bust di bubble tanpa apa-apa. ==Di cash game shove itu benar. Di bubble itu, ia bencana== — dan alasannya adalah gagasan paling penting dalam poker turnamen.
+Pertama kali ICM merugikan saya, saya bahkan tak tahu ia ada. Tersisa empat orang, tiga dibayar, dan saya melihat pocket jacks dengan stack menengah. Saya shove, chip leader call dengan ace-ten, dan saya bust di bubble tanpa apa-apa. ==Bertahun-tahun saya menyimpannya sebagai bukti bahwa shove itu salah. Ternyata tidak== — saya cuma tak tahu *di mana* sebuah bubble sebenarnya menagih Anda, dan itu ternyata gagasan paling penting dalam poker turnamen.
 
 ==Chip di turnamen bukan uang. Anda hanya pernah memenangkan *satu* hadiah pertama, jadi menggandakan stack tak pernah menggandakan nilai Anda sebenarnya.== ICM — Independent Chip Model — adalah matematika yang mengubah tumpukan chip Anda menjadi dolar nyata yang diwakilinya, dan begitu Anda melihatnya, call dan fold yang tadinya terasa salah tiba-tiba masuk akal. Panduan ini membawa Anda dari "apa singkatan ICM" sampai membagi deal final table, dengan setiap angka dihitung agar Anda bisa memeriksanya sendiri.
 
@@ -99,9 +99,9 @@ Itu dia dalam angka: leader punya ==separuh chip tapi hanya 38,4% dari uang==, s
 
 **Chip EV mengukur keputusan dalam chip yang dimenangkan atau hilang; ICM (atau "$EV") mengukurnya dalam uang hadiah nyata. Keduanya sepakat di awal dan berpisah tajam di akhir.** Di awal turnamen, dengan pay jump kecil yang masih jauh, satu chip pada dasarnya adalah satu chip — Anda main [chip EV](/id/blog/holdem-equity "thumb:/images/holdem-equity-hero.webp"), mengumpulkan tanpa henti. Menjelang uang dan final table, ICM mengambil alih.
 
-Benturan klasiknya adalah all-in marginal. Dalam chip EV, coin flip untuk pot besar bisa oke atau bahkan bagus — Anda memperoleh sebanyak chip yang Anda pertaruhkan. Dalam ICM itu bisa jadi ==fold== jelas, karena bust membebani Anda uang hadiah terkunci yang tak bisa Anda ambil kembali, sementara chip yang akan Anda menangkan bernilai lebih kecil dari nominalnya.
+Benturan klasiknya adalah *meng-call* all-in marginal. Dalam chip EV, coin flip untuk pot besar bisa oke atau bahkan bagus — Anda memperoleh sebanyak chip yang Anda pertaruhkan. Dalam ICM itu bisa jadi ==fold== jelas, karena bust membebani Anda uang hadiah terkunci yang tak bisa Anda ambil kembali, sementara chip yang akan Anda menangkan bernilai lebih kecil dari nominalnya.
 
-Itu persis kesalahan yang saya buat dengan jacks itu: shove chip-EV yang oke, shove ICM yang kalah. ==Chip EV bertanya "apakah ini akan membangun stack saya?" ICM bertanya "apakah ini akan membangun bankroll saya?"== — dan hanya yang kedua yang membayar.
+Di situlah saya salah membaca jacks itu. Pajaknya ditagih pada *call*, dan sisi sebaliknya justru yang membuat bubble bisa dimainkan: karena calling range semua orang mengetat, fold equity Anda bernilai **lebih** daripada dalam chip. Shove first-in adalah senjata stack menengah di bubble, bukan kebocorannya — saya kebetulan bertemu satu pemain yang bisa call paling lebar, dan itu varians, bukan kesalahan strategi. ==Chip EV bertanya "apakah ini akan membangun stack saya?" ICM bertanya "apakah ini akan membangun bankroll saya?"== — dan hanya yang kedua yang membayar.
 
 ---
 

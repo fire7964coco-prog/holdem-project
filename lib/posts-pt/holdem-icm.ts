@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "O ICM (Independent Chip Model) converte seu stack de fichas de torneio no seu valor real em premiação, usando os payouts e os stacks de todo mundo. Como você só ganha um primeiro prêmio, dobrar suas fichas nunca dobra seu dinheiro — então o stack do chip leader vale menos do que sua fatia de fichas, e os short stacks valem mais. Essa diferença é o motivo de você foldar na bubble mãos que seriam calls fáceis num cash game.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-08-09",
-  masterUpdated: "2026-07-19",
+  updated: "2026-08-11",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🏆",
@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Fichas de pôquer empilhadas na final table diante de uma escada de payout, mostrando que um stack maior de fichas não se converte um-para-um numa fatia maior da premiação",
   tags: ["poker icm", "o que é icm no poker", "significado de icm no poker", "icm vs chip ev", "icm deal", "chip chop vs icm", "como calcular icm", "estratégia de icm no poker"],
   content: `
-A primeira vez que o ICM me custou dinheiro, eu nem sabia que ele existia. Sobravam quatro de nós, três ganhavam prêmio, e eu olhei para baixo e vi um par de valetes com um stack mediano. Dei shove, o chip leader pagou com ás-dez e eu bustei na bubble sem levar nada. ==Num cash game esse shove tá de boa. Naquela bubble foi um desastre== — e o motivo é a ideia mais importante de todo o pôquer de torneio.
+A primeira vez que o ICM me custou dinheiro, eu nem sabia que ele existia. Sobravam quatro de nós, três ganhavam prêmio, e eu olhei para baixo e vi um par de valetes com um stack mediano. Dei shove, o chip leader pagou com ás-dez e eu bustei na bubble sem levar nada. ==Por anos arquivei aquilo como prova de que o shove estava errado. Não estava== — eu só não fazia ideia de *onde* uma bubble realmente cobra de você, e isso acaba sendo a ideia mais importante de todo o pôquer de torneio.
 
 ==Fichas num torneio não são dinheiro. Você só ganha *um* primeiro prêmio, então dobrar seu stack nunca dobra o quanto você realmente vale.== O ICM — o Independent Chip Model — é a matemática que transforma sua pilha de fichas nos dólares reais que ela representa, e quando você enxerga isso, calls e folds que pareciam errados de repente fazem sentido. Este guia te leva de "o que significa ICM" até a divisão de um deal de final table, com cada número resolvido para você conferir na mão.
 
@@ -99,9 +99,9 @@ Lá está em números: o leader tem ==metade das fichas mas só 38,4% do dinheir
 
 **O chip EV mede uma decisão em fichas ganhas ou perdidas; o ICM (ou "$EV") mede em premiação real. Eles concordam cedo e se separam feio no fim.** Cedo num torneio, com pay jumps pequenos e distantes, uma ficha é basicamente uma ficha — você joga [chip EV](/pt/blog/holdem-equity "thumb:/images/holdem-equity-hero.webp"), acumulando sem parar. Perto do dinheiro e na final table, o ICM assume.
 
-O confronto clássico é um all-in marginal. No chip EV, um cara-ou-coroa por um pote grande pode ser ok ou até bom — você ganha tantas fichas quanto perde. No ICM pode ser um ==fold== claro, porque bustar te custa premiação travada que você não recupera, enquanto as fichas que você ganharia valem menos que o valor de face.
+O confronto clássico é *pagar* um all-in marginal. No chip EV, um cara-ou-coroa por um pote grande pode ser ok ou até bom — você ganha tantas fichas quanto perde. No ICM pode ser um ==fold== claro, porque bustar te custa premiação travada que você não recupera, enquanto as fichas que você ganharia valem menos que o valor de face.
 
-Foi exatamente esse o erro que cometi com aqueles valetes: um shove ótimo em chip EV, um shove perdedor em ICM. ==O chip EV pergunta "isso vai construir meu stack?" O ICM pergunta "isso vai construir minha bankroll?"== — e só o segundo paga de verdade.
+É aqui que eu entendia aqueles valetes ao contrário. O imposto é cobrado no *call*, e o outro lado disso é justamente o que torna uma bubble jogável: como o range de pagar de todo mundo aperta, sua fold equity vale **mais** do que vale em fichas. Dar shove sendo o primeiro é a arma do stack médio na bubble, não o vazamento dele — eu esbarrei no único jogador que podia pagar mais aberto, e isso é variância, não erro de estratégia. ==O chip EV pergunta "isso vai construir meu stack?" O ICM pergunta "isso vai construir minha bankroll?"== — e só o segundo paga de verdade.
 
 ---
 

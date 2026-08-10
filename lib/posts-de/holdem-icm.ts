@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "ICM (Independent Chip Model) rechnet deinen Turnier-Chipstack in seinen echten Preisgeldwert um, anhand der Payouts und aller Stacks. Weil du nur ein einziges erstes Preisgeld gewinnst, verdoppelt das Verdoppeln deiner Chips nie dein Geld – deshalb ist der Stack des Chipleaders weniger wert als sein Chipanteil, und Short Stacks sind mehr wert. Diese Lücke ist der Grund, warum du an der Bubble Hände foldest, die im Cash Game leichte Calls wären.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-08-10",
-  masterUpdated: "2026-07-19",
+  updated: "2026-08-11",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "13 Min.",
   emoji: "🏆",
@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Poker-Chips am Final Table vor einer Payout-Leiter gestapelt, die zeigen, dass ein größerer Chipstack sich nicht eins zu eins in einen größeren Anteil am Preisgeld umrechnet",
   tags: ["poker icm", "was ist icm im poker", "icm poker bedeutung", "icm vs chip ev", "icm deal", "chip chop vs icm", "wie wird icm berechnet", "icm poker strategie"],
   content: `
-Das erste Mal, als ICM mich Geld kostete, wusste ich nicht einmal, dass es existiert. Wir waren noch zu viert, drei wurden bezahlt, und ich schaute auf Pocket Jacks mit einem mittleren Stack herunter. Ich shovte, der Chipleader callte mit Ass-Zehn, und ich bustete an der Bubble für nichts. ==Im Cash Game ist dieser Shove in Ordnung. An dieser Bubble war er eine Katastrophe== – und der Grund dafür ist die einzige wichtigste Idee im Turnierpoker.
+Das erste Mal, als ICM mich Geld kostete, wusste ich nicht einmal, dass es existiert. Wir waren noch zu viert, drei wurden bezahlt, und ich schaute auf Pocket Jacks mit einem mittleren Stack herunter. Ich shovte, der Chipleader callte mit Ass-Zehn, und ich bustete an der Bubble für nichts. ==Jahrelang habe ich das als Beweis abgeheftet, dass der Shove falsch war. War er nicht== – ich hatte nur keine Ahnung, *wo* eine Bubble dich tatsächlich zur Kasse bittet, und genau das ist die einzige wichtigste Idee im Turnierpoker.
 
 ==Chips in einem Turnier sind kein Geld. Du gewinnst immer nur *ein* erstes Preisgeld, also verdoppelt das Verdoppeln deines Stacks nie das, was du tatsächlich wert bist.== ICM – das Independent Chip Model – ist die Mathematik, die deinen Chipberg in die echten Dollar verwandelt, die er repräsentiert, und sobald du es siehst, ergeben Calls und Folds, die sich falsch anfühlten, plötzlich Sinn. Dieser Guide führt dich von „wofür steht ICM“ bis zum Aufteilen eines Final-Table-Deals, mit jeder Zahl durchgerechnet, damit du sie selbst prüfen kannst.
 
@@ -99,9 +99,9 @@ Da steht es in Zahlen: der Leader hat ==die Hälfte der Chips, aber nur 38,4% de
 
 **Chip EV misst eine Entscheidung in gewonnenen oder verlorenen Chips; ICM (oder „$EV“) misst sie in echtem Preisgeld. Sie stimmen früh überein und trennen sich spät hart.** Früh in einem Turnier, mit winzigen Pay Jumps weit weg, ist ein Chip im Grunde ein Chip – du spielst [Chip EV](/de/blog/holdem-equity "thumb:/images/holdem-equity-hero.webp") und akkumulierst unerbittlich. Nahe am Geld und am Final Table übernimmt ICM.
 
-Der klassische Konflikt ist ein marginaler All-in. Im Chip EV kann ein Coinflip um einen großen Pot in Ordnung oder sogar gut sein – du gewinnst so viele Chips, wie du verlierst. Im ICM kann es ein klarer ==Fold== sein, weil Busten dich festgeschriebenes Preisgeld kostet, das du nicht zurückbekommst, während die Chips, die du gewinnen würdest, weniger als den Nennwert wert sind.
+Der klassische Konflikt ist ein marginaler All-in-*Call*. Im Chip EV kann ein Coinflip um einen großen Pot in Ordnung oder sogar gut sein – du gewinnst so viele Chips, wie du verlierst. Im ICM kann es ein klarer ==Fold== sein, weil Busten dich festgeschriebenes Preisgeld kostet, das du nicht zurückbekommst, während die Chips, die du gewinnen würdest, weniger als den Nennwert wert sind.
 
-Das ist genau der Fehler, den ich mit diesen Jacks machte: ein feiner Chip-EV-Shove, ein verlierender ICM-Shove. ==Chip EV fragt „wird das meinen Stack aufbauen?“ ICM fragt „wird das meine Bankroll aufbauen?“== – und nur die zweite zahlt aus.
+Genau hier hatte ich diese Jacks verkehrt herum verstanden. Die Steuer wird auf den *Call* erhoben, und die Kehrseite davon macht eine Bubble überhaupt erst spielbar: Weil die Calling-Ranges aller enger werden, ist deine Fold Equity **mehr** wert als in Chips. First-in zu shoven ist die Waffe des Mittelstacks auf der Bubble, nicht sein Leak – ich bin in den einen Spieler gelaufen, der am weitesten callen konnte, und das ist Varianz, kein Strategiefehler. ==Chip EV fragt „wird das meinen Stack aufbauen?“ ICM fragt „wird das meine Bankroll aufbauen?“== – und nur die zweite zahlt aus.
 
 ---
 

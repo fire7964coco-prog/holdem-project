@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "El ICM (Independent Chip Model, Modelo de Fichas Independiente) convierte tu stack de fichas de torneo en su valor real en premios, usando los pagos y los stacks de todos. Como solo se gana un primer premio, doblar tus fichas nunca dobla tu dinero — así que el stack del líder vale menos que su porcentaje de fichas, y los stacks cortos valen más. Ese desfase es la razón por la que foldeas en la burbuja manos que serían calls fáciles en un cash game.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-08-09",
-  masterUpdated: "2026-07-19",
+  updated: "2026-08-11",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🏆",
@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Fichas de póker de mesa final apiladas frente a una escalera de premios, mostrando que un stack de fichas mayor no se convierte uno a uno en una porción mayor de la bolsa de premios",
   tags: ["icm poker", "que es el icm en poker", "icm poker significado", "icm vs chip ev", "acuerdo icm", "chip chop vs icm", "como se calcula el icm", "estrategia icm poker"],
   content: `
-La primera vez que el ICM me costó dinero, ni siquiera sabía que existía. Quedábamos cuatro, tres cobraban, y me encontré con jotas servidas y un stack mediano. Empujé all-in, el líder me pagó con as-diez y busteé en la burbuja sin cobrar nada. ==En un cash game ese all-in está bien. En esa burbuja fue un desastre== — y el motivo es la idea más importante de todo el póker de torneos.
+La primera vez que el ICM me costó dinero, ni siquiera sabía que existía. Quedábamos cuatro, tres cobraban, y me encontré con jotas servidas y un stack mediano. Empujé all-in, el líder me pagó con as-diez y busteé en la burbuja sin cobrar nada. ==Durante años lo archivé como prueba de que el all-in estaba mal. No lo estaba== — simplemente no tenía ni idea de *dónde* te cobra realmente una burbuja, y eso resulta ser la idea más importante de todo el póker de torneos.
 
 ==Las fichas en un torneo no son dinero. Solo ganas *un* primer premio, así que doblar tu stack nunca dobla lo que realmente vales.== El ICM — el Modelo de Fichas Independiente (Independent Chip Model) — es la matemática que convierte tu montón de fichas en los dólares reales que representa, y una vez lo ves, calls y folds que parecían un error de repente cobran sentido. Esta guía te lleva desde "qué significan las siglas ICM" hasta repartir un acuerdo en la mesa final, con cada número desglosado para que puedas comprobarlo tú mismo.
 
@@ -99,9 +99,9 @@ Ahí lo tienes en números: el líder tiene ==la mitad de las fichas pero solo e
 
 **El chip EV mide una decisión en fichas ganadas o perdidas; el ICM (o "$EV") la mide en premio real. Coinciden pronto y se separan con fuerza al final.** Al principio de un torneo, con saltos de premio minúsculos y lejanos, una ficha es básicamente una ficha — juegas [chip EV](/es/blog/holdem-equity "thumb:/images/holdem-equity-hero.webp"), acumulando sin parar. Cerca de los premios y en la mesa final, el ICM toma el mando.
 
-El choque clásico es un all-in marginal. En chip EV, un coin flip por un bote grande puede estar bien o incluso ser bueno — ganas tantas fichas como pierdes. En ICM puede ser un ==fold== claro, porque bustear te cuesta premio bloqueado que no puedes recuperar, mientras que las fichas que ganarías valen menos que su valor nominal.
+El choque clásico es *pagar* un all-in marginal. En chip EV, un coin flip por un bote grande puede estar bien o incluso ser bueno — ganas tantas fichas como pierdes. En ICM puede ser un ==fold== claro, porque bustear te cuesta premio bloqueado que no puedes recuperar, mientras que las fichas que ganarías valen menos que su valor nominal.
 
-Ese es exactamente el error que cometí con aquellas jotas: un buen all-in en chip EV, un all-in perdedor en ICM. ==El chip EV pregunta "¿esto hará crecer mi stack?" El ICM pregunta "¿esto hará crecer mi bankroll?"== — y solo el segundo paga.
+Ahí es donde yo tenía aquellas jotas al revés. El impuesto se cobra en el *call*, y el reverso de eso es lo que hace jugable una burbuja: como los rangos de pagar de todos se cierran, tu fold equity vale **más** que en fichas. Ir de all-in siendo el primero es el arma del stack medio en la burbuja, no su fuga — me topé con el único jugador que podía pagar más amplio, y eso es varianza, no un error de estrategia. ==El chip EV pregunta "¿esto hará crecer mi stack?" El ICM pregunta "¿esto hará crecer mi bankroll?"== — y solo el segundo paga.
 
 ---
 

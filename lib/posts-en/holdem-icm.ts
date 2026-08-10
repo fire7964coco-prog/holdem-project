@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "ICM (Independent Chip Model) converts your tournament chip stack into its real prize-money value, using the payouts and everyone's stacks. Because you only win one first prize, doubling your chips never doubles your money — so the chip leader's stack is worth less than its chip share, and short stacks are worth more. That gap is why you fold hands on the bubble that would be easy calls in a cash game.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-07-19",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🏆",
@@ -16,7 +16,7 @@ export const POST: Post = {
   imageAlt: "Final-table poker chips stacked in front of a payout ladder, showing that a bigger chip stack does not convert one-to-one into a bigger share of the prize money",
   tags: ["poker icm", "what is icm in poker", "icm poker meaning", "icm vs chip ev", "icm deal", "chip chop vs icm", "how is icm calculated", "icm poker strategy"],
   content: `
-The first time ICM cost me money, I didn't even know it existed. Four of us left, three getting paid, and I looked down at pocket jacks with a middling stack. I shoved, the chip leader called with ace-ten, and I busted on the bubble for nothing. ==In a cash game that shove is fine. On that bubble it was a disaster== — and the reason why is the single most important idea in tournament poker.
+The first time ICM cost me money, I didn't even know it existed. Four of us left, three getting paid, and I looked down at pocket jacks with a middling stack. I shoved, the chip leader called with ace-ten, and I busted on the bubble for nothing. ==For years I filed that away as proof the shove was wrong. It wasn't== — I just had no idea *where* a bubble actually charges you, and that turns out to be the single most important idea in tournament poker.
 
 ==Chips in a tournament are not money. You only ever win *one* first prize, so doubling your stack never doubles what you're actually worth.== ICM — the Independent Chip Model — is the math that turns your pile of chips into the real dollars it represents, and once you see it, calls and folds that felt wrong suddenly make sense. This guide takes you from "what does ICM stand for" all the way to splitting a final-table deal, with every number worked out so you can check it yourself.
 
@@ -98,9 +98,9 @@ There it is in numbers: the leader has ==half the chips but only 38.4% of the mo
 
 **Chip EV measures a decision in chips won or lost; ICM (or "$EV") measures it in real prize money. They agree early and split hard late.** Early in a tournament, with tiny pay jumps far away, a chip is basically a chip — you play [chip EV](/en/blog/holdem-equity "thumb:/images/holdem-equity-hero.webp"), accumulating relentlessly. Near the money and the final table, ICM takes over.
 
-The classic clash is a marginal all-in. In chip EV, a coin flip for a big pot can be fine or even good — you gain as many chips as you lose. In ICM it can be a clear ==fold==, because busting costs you locked-in prize money you can't get back, while the chips you'd win are worth less than face value.
+The classic clash is a marginal all-in *call*. In chip EV, a coin flip for a big pot can be fine or even good — you gain as many chips as you lose. In ICM it can be a clear ==fold==, because busting costs you locked-in prize money you can't get back, while the chips you'd win are worth less than face value.
 
-That is exactly the mistake I made with those jacks: a fine chip-EV shove, a losing ICM shove. ==Chip EV asks "will this build my stack?" ICM asks "will this build my bankroll?"== — and only the second one pays out.
+That is where I had those jacks backwards. The tax is charged on the *call*, and the mirror of that is what makes a bubble playable: because everyone's calling range tightens, your fold equity is worth **more** than it is in chips. First-in shoving is the middle stack's weapon on a bubble, not its leak — I ran into the one player who could call widest, which is variance, not a strategy error. ==Chip EV asks "will this build my stack?" ICM asks "will this build my bankroll?"== — and only the second one pays out.
 
 ---
 
