@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Bis zum River triffst du ein Paar in 43,8% der Fälle, zwei Paare in 23,5%, einen Flush in 3,0% und ein Full House in 2,6% – während ein Royal Flush nur etwa einmal in 31.000 Händen auftaucht.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-08-10",
-  masterUpdated: "2026-07-19",
+  updated: "2026-08-11",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "13 Min.",
   emoji: "🎲",
@@ -182,7 +182,7 @@ Die zwei seltensten Hände sind die, mit denen Spieler jahrelang prahlen – aus
 Warum so selten? Ein Royal Flush ist genau **ein bestimmter Kartenlauf in einer bestimmten Farbe** – vier Wege, ihn im gesamten Deck zu bilden, gegen 1.302.540 Wege, eine schlichte High Card zu bilden. Seltenheit ist der ganze Grund, warum er ganz oben in der Rangfolge steht.
 
 :::note
-Ein häufiger Mythos: „Ein Royal Flush schlägt alles, also kann er *unentschieden* enden.“ Zwei Royal Flushes sind nur in verschiedenen Farben möglich – und da Farben nie den Gleichstand brechen, ist das ein Split Pot. In der Praxis passiert das praktisch nie, außer bei Zufällen mit geteiltem Board.
+Ein häufiger Mythos: „Ein Royal Flush schlägt alles, also kann er *unentschieden* enden.“ Geteilt werden kann der Pot – aber nicht so, wie es meistens erklärt wird. Zwei Royal Flushes in *verschiedenen* Farben bräuchten zehn bestimmte Karten, und zwei Spielern stehen nur neun zur Verfügung – je zwei Hole Cards plus die fünf auf dem Board –, also geht es nicht. Der einzige Fall, in dem beide einen Royal Flush halten, ist ein Board, das selbst der Royal Flush ist: Alle spielen das Board, und der Pot wird geteilt. In der Praxis wirst du das praktisch nie sehen.
 :::
 
 ---

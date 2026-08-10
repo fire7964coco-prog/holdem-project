@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Der Rake ist der kleine Anteil, den der Cardroom aus jedem Pot nimmt, um das Spiel auszurichten – meist 2,5–10% bis zu einem Cap von ein paar Dollar. Die meisten Räume nehmen nichts, wenn vor dem Flop alle folden ('no flop, no drop'). Er trifft Low-Stakes- und Short-handed-Spieler am härtesten, und Rakeback gibt Stammspielern einen Teil zurück.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-08-10",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "🏦",
@@ -75,7 +75,7 @@ Hier kommt der Teil, der geändert hat, wie ich über das Spiel denke. Der Proze
 
 **Ein Live-$1/$2-Game.** Bei 10% Rake gecappt bei $5 und rund 30 ausgeteilten Händen pro Stunde erreichen die meisten umkämpften Pots das Cap oder liegen nah dran. Ein einziger belebter Tisch kann **$100+ pro Stunde** in den Drop zahlen, über alle Spieler zusammen. Dieses Geld kommt direkt aus den gemeinsamen Gewinnen – es ist der Grund, warum ein Tisch voller etwa gleich starker Spieler langsam Chips ans Haus verliert.
 
-**Die Low-Stakes-„Rake-Falle“.** Das ist die Pointe, die jeder Anfänger hören sollte. Weil das Cap kaum steigt, wenn du in den Stakes runtergehst, nimmt der Rake proportional einen *größeren* Bissen, je *niedriger* du spielst. Ein durchgerechnetes Beispiel bei Online-NL50 (illustrativ, und es schwankt damit, wie viele Hände du spielst):
+**Die Low-Stakes-„Rake-Falle“.** Das ist die Pointe, die jeder Anfänger hören sollte. Weil das Cap kaum sinkt, wenn du in den Stakes runtergehst, nimmt der Rake proportional einen *größeren* Bissen, je *niedriger* du spielst. Ein durchgerechnetes Beispiel bei Online-NL50 (illustrativ, und es schwankt damit, wie viele Hände du spielst):
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

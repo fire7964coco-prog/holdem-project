@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Cooler é uma mão em que você perde um pote grande com uma mão fortíssima que jamais poderia foldar corretamente — como um par de reis esbarrando em ases, ou uma trinca perdendo para uma trinca maior. Diferente de um bad beat, você estava atrás o caminho inteiro e nenhuma carta de sorte te \"sugou\": você jogou certo e mesmo assim perdeu. É o tipo de desastre mais honesto do pôquer.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-07-05",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🧊",
@@ -89,7 +89,7 @@ Coolers vêm numa família reconhecível. Em todos, *ambas* as mãos são fortes
 
 </div>
 
-O mais icônico é o **set over set.** Digamos que você tem **7♣7♦** e o flop vem **J♦ 7♥ 2♣** — você flopou bottom set, três setes. É uma mão com a qual você vai colocar as fichas felizes quase sempre. Mas seu adversário tem **J♠J♥** e flopou top set, três valetes. No river, numa mesa **J♦ 7♥ 2♣ 5♠ Q♦**, suas cinco melhores cartas são 7‑7‑7‑Q‑J e as dele são J‑J‑J‑Q‑7 — três valetes batem três setes, e sua única fuga era o único sete restante no baralho. Você não jogou nada errado; simplesmente estava projetando para uma carta o tempo todo. Isso é um cooler na sua forma mais pura, e é por isso que entender [qual mão vence no showdown](/pt/blog/holdem-tiebreak-rules) importa mesmo quando o resultado está fora do seu controle.
+O mais icônico é o **set over set.** Digamos que você tem **7♣7♦** e o flop vem **J♦ 7♥ 2♣** — você flopou middle set, três setes. É uma mão com a qual você vai colocar as fichas felizes quase sempre. Mas seu adversário tem **J♠J♥** e flopou top set, três valetes. No river, numa mesa **J♦ 7♥ 2♣ 5♠ Q♦**, suas cinco melhores cartas são 7‑7‑7‑Q‑J e as dele são J‑J‑J‑Q‑7 — três valetes batem três setes, e sua única fuga era o único sete restante no baralho. Você não jogou nada errado; simplesmente estava projetando para uma carta o tempo todo. Isso é um cooler na sua forma mais pura, e é por isso que entender [qual mão vence no showdown](/pt/blog/holdem-tiebreak-rules) importa mesmo quando o resultado está fora do seu controle.
 
 ---
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A short stack (roughly under 15–20 big blinds) can't play normal postflop poker, so it switches to push/fold: move all-in first-in to keep your fold equity, and never open-limp or min-raise-then-fold. Shove wider from late position, keep your calling range tighter than your shoving range, and don't blind down to nothing 'waiting for a hand' — your fold equity is the weapon, and it fades hard below about 8 big blinds.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-07-19",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "📉",
@@ -91,7 +91,7 @@ The catch is that fold equity ==decays as your stack shrinks==. At 12–15 big b
 **When you're the first player in the pot and short, your decision is shove or fold — and how wide you shove depends on your stack size and, just as much, your position.** The later your position, the fewer players are left behind you to wake up with a big hand, and the more the blinds are worth relative to your stack — so ==your shoving range widens dramatically toward the button==.
 
 - **Early position, 12–15bb:** tightest. You have the whole table behind you, so jam a strong, mostly linear range and fold the rest.
-- **Cutoff and button, 10–15bb:** much wider. With one or two players left to act, you're shoving to steal the blinds and antes, and you can jam many hands that would be an easy fold under the gun.
+- **Cutoff and button, 10–15bb:** much wider. With two or three players left to act, you're shoving to steal the blinds and antes, and you can jam many hands that would be an easy fold under the gun.
 - **Small blind, any short stack:** widest of all first-in — only the big blind can call, and you already have money in the pot. Short-stacked in the small blind, folding is often the mistake.
 - **Under ~6bb:** position matters less. You need to get your chips in against almost anyone before your fold equity vanishes; take the next reasonable spot rather than waiting for a perfect one.
 

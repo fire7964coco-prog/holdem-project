@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un 3-bet es la primera resubida antes del flop — se llama 3-bet porque la ciega grande es la primera apuesta, la subida de apertura la segunda y tu resubida la tercera. Haz un 3-bet de valor con un núcleo cerrado (QQ+, AK) más unos pocos faroles con bloqueadores del mismo palo como A5s, dale un tamaño de unas 3x la apertura en posición y 4x fuera de posición, y mantén tu frecuencia global de 3-bet cerca del 6–10%. Cuando eres tú quien se enfrenta a un 3-bet, resube con un 4-bet tus manos premium, iguala las que se juegan bien y foldea el resto — foldeando más de lo 'balanceado' contra jugadores de stakes bajos que nunca farolean.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-07-24",
-  masterUpdated: "2026-07-19",
+  updated: "2026-08-11",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "♦️",
@@ -147,7 +147,7 @@ Enfrentando una apertura tienes tres opciones, no dos. Este es el mapa que casi 
 
 </div>
 
-La gran conclusión: **hacer flat es legítimo en posición** — los solvers modernos mantienen un rango de flat sano en el botón porque puedes ver flops de forma rentable con las apuestas cerradas detrás de ti. Fuera de posición es más débil, pero con una distinción importante: desde la **ciega pequeña**, prefiere un *3-bet o fold* polarizado, ya que igualar amplio OOP realiza mal tu equity y construye un rango débil y con techo. La **ciega grande** es la excepción — como cierras la acción y ya te dan precio, ahí defiendes *igualando* mucho más amplio, sobre todo contra robos de posición tardía. La posición, otra vez, lo cambia todo — la misma lección del [manual de posición](/es/blog/holdem-position-play).
+La gran conclusión: **hacer flat es legítimo en posición** — los solvers modernos mantienen un rango de flat sano en el botón porque actúas último en cada calle del postflop y detrás de ti solo quedan las dos ciegas, así que el riesgo de squeeze es bajo y ves flops de forma rentable. Fuera de posición es más débil, pero con una distinción importante: desde la **ciega pequeña**, prefiere un *3-bet o fold* polarizado, ya que igualar amplio OOP realiza mal tu equity y construye un rango débil y con techo. La **ciega grande** es la excepción — como cierras la acción y ya te dan precio, ahí defiendes *igualando* mucho más amplio, sobre todo contra robos de posición tardía. La posición, otra vez, lo cambia todo — la misma lección del [manual de posición](/es/blog/holdem-position-play).
 
 ---
 

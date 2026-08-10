@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Poker positions are seat names measured from the dealer button — UTG, lojack, hijack, cutoff, button, and the blinds — and they move one seat clockwise every hand. Preflop, UTG acts first and the big blind last; postflop, the small blind acts first and the button last. Physical seat numbers never move; positions do.",
   category: "strategy",
   date: "2026-06-13",
-  updated: "2026-07-11",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🎯",
@@ -183,7 +183,7 @@ The position names don't change with table size — ==they peel off from early p
 
 **Heads-up is the one that breaks everyone's intuition.** With only two players, ==the button posts the small blind== — the same seat is BTN and SB at once. That means the button acts ==**first** preflop== (the big blind acts last, as always) but still acts ==**last** on every postflop street==, while the big blind acts first postflop. Every other table size follows the normal pattern; heads-up alone fuses the best seat with a blind.
 
-**6-max vs full ring** is purely subtraction: the three extra seats (UTG+1, UTG+2, and one middle seat) don't exist, so 6-max runs UTG → HJ → CO → BTN → SB → BB. The practical consequence is that ==every 6-max seat plays "later" than its full-ring namesake== — 6-max UTG faces five opponents, not eight — which is why ranges widen across the board in short-handed games. The seat-by-seat numbers live in the [position strategy guide](/en/blog/holdem-position-play), and the exact hands that fill each range are mapped in the [starting hands chart](/en/blog/holdem-starting-hands-chart).
+**6-max vs full ring** is purely subtraction: the three extra seats (UTG+1, UTG+2, and one middle seat) don't exist, so 6-max runs UTG → HJ → CO → BTN → SB → BB. The practical consequence is not that a seat plays "later" — a cutoff has the same three players behind it either way. It's that ==with the early seats gone, you sit in the blinds and in late position far more often, and fewer players open in front of you== — 6-max UTG faces five opponents, not eight — which is why ranges widen across the board in short-handed games. The seat-by-seat numbers live in the [position strategy guide](/en/blog/holdem-position-play), and the exact hands that fill each range are mapped in the [starting hands chart](/en/blog/holdem-starting-hands-chart).
 
 > **Naming caveat:** some sites and rooms label the first 6-max seat "LJ" or "MP" instead of UTG, and 10-handed middle seats sometimes appear as "MP1/MP2". Labels vary; the acting order never does.
 
@@ -214,7 +214,7 @@ A. The small blind acts before the big blind on every street. Preflop, both blin
 
 **Q. How many positions are there in 6-max poker?**
 
-A. Six: UTG (also called lojack), hijack, cutoff, button, small blind, and big blind. Compared with a 9-max table, the UTG+1, UTG+2, and one middle seat simply don't exist — the names are removed from early position first, so every remaining seat plays "later" than its full-ring namesake.
+A. Six: UTG (also called lojack), hijack, cutoff, button, small blind, and big blind. Compared with a 9-max table, the UTG+1, UTG+2, and one middle seat simply don't exist — the names are removed from early position first. A seat still has the same number of players behind it as its full-ring namesake, but with the early seats gone you sit in the blinds and in late position far more often, so ranges run wider on average.
 
 **Q. Do poker positions change every hand?**
 

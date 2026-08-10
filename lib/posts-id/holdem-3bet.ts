@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "3-bet adalah re-raise pertama sebelum flop — disebut 3-bet karena big blind adalah taruhan pertama, open-raise yang kedua, dan re-raise Anda yang ketiga. Value-3-bet inti yang ketat (QQ+, AK) plus beberapa bluff blocker suited seperti A5s, ukur sekitar 3x dari open in position dan 4x out of position, dan jaga frekuensi 3-bet keseluruhan Anda dekat 6–10%. Saat Andalah yang menghadapi 3-bet, 4-bet tangan premium Anda, call tangan yang bermain baik, dan fold sisanya — fold lebih banyak daripada 'balanced' melawan pemain stake rendah yang tak pernah bluff.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-07-06",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "16 mnt",
   emoji: "♦️",
@@ -146,7 +146,7 @@ Menghadapi sebuah open, Anda punya tiga pilihan, bukan dua. Inilah peta yang tak
 
 </div>
 
-Poin besarnya: **flatting itu sah in position** — solver modern menjaga range flatting yang sehat di button karena Anda bisa melihat flop secara profit dengan taruhan tertutup di belakang Anda. Out of position ia lebih lemah, tapi dengan satu pembagian penting: dari **small blind**, lebih memilih *3-bet atau fold* yang polarized, karena meng-call lebar OOP merealisasikan equity Anda dengan buruk dan membangun range lemah yang mudah di-cap. **Big blind** adalah pengecualian — karena Anda menutup aksi dan sudah mendapat harga, Anda bertahan dengan *call* jauh lebih lebar di sana, terutama melawan steal posisi-akhir. Posisi, sekali lagi, mengubah segalanya — pelajaran yang sama seperti [playbook posisi](/id/blog/holdem-position-play).
+Poin besarnya: **flatting itu sah in position** — solver modern menjaga range flatting yang sehat di button karena Anda bertindak terakhir di setiap street postflop dan hanya dua blind yang tersisa di belakang Anda, sehingga risiko squeeze kecil dan Anda bisa melihat flop secara profit. Out of position ia lebih lemah, tapi dengan satu pembagian penting: dari **small blind**, lebih memilih *3-bet atau fold* yang polarized, karena meng-call lebar OOP merealisasikan equity Anda dengan buruk dan membangun range lemah yang mudah di-cap. **Big blind** adalah pengecualian — karena Anda menutup aksi dan sudah mendapat harga, Anda bertahan dengan *call* jauh lebih lebar di sana, terutama melawan steal posisi-akhir. Posisi, sekali lagi, mengubah segalanya — pelajaran yang sama seperti [playbook posisi](/id/blog/holdem-position-play).
 
 ---
 

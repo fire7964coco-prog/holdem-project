@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Hingga river Anda akan membuat one pair 43,8% waktu, two pair 23,5%, flush 3,0%, dan full house 2,6% — sementara royal flush hanya muncul sekali dalam sekitar 31.000 tangan.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-08-09",
-  masterUpdated: "2026-07-19",
+  updated: "2026-08-11",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "13 mnt",
   emoji: "🎲",
@@ -182,7 +182,7 @@ Dua tangan paling langka adalah yang dibanggakan pemain bertahun-tahun — denga
 Kenapa begitu langka? Royal flush persis **satu rangkaian kartu spesifik dalam satu jenis spesifik** — empat cara membuatnya di seluruh deck versus 1.302.540 cara membuat high card biasa. Kelangkaan adalah seluruh alasan ia duduk di puncak peringkat.
 
 :::note
-Mitos umum: "royal flush mengalahkan segalanya, jadi ia bisa *seri*." Dua royal flush hanya mungkin dalam jenis berbeda — dan karena jenis tak pernah memecah seri, itu pot dibagi. Dalam praktik ia pada dasarnya tak pernah terjadi di luar keberuntungan board bersama.
+Mitos umum: "royal flush mengalahkan segalanya, jadi ia bisa *seri*." Pot memang bisa dibagi, tapi bukan lewat cara yang biasa dijelaskan. Dua royal flush dalam jenis *berbeda* butuh sepuluh kartu tertentu, sedangkan dua pemain hanya punya sembilan — dua hole card masing-masing plus lima kartu board — jadi itu mustahil. Satu-satunya cara dua pemain sama-sama pegang royal flush adalah kalau board itu sendiri yang menjadi royal flush: semua orang memainkan board, dan pot dibagi. Dalam praktik Anda praktis tak akan pernah melihatnya.
 :::
 
 ---

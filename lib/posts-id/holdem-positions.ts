@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Posisi poker adalah nama kursi yang diukur dari tombol dealer — UTG, lojack, hijack, cutoff, button, dan blind — dan semuanya bergerak satu kursi searah jarum jam setiap tangan. Preflop, UTG aksi lebih dulu dan big blind terakhir; postflop, small blind aksi lebih dulu dan button terakhir. Nomor kursi fisik tak pernah berpindah; posisi berpindah.",
   category: "strategy",
   date: "2026-06-13",
-  updated: "2026-07-11",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "🎯",
@@ -183,7 +183,7 @@ Nama posisi tak berubah menurut ukuran meja — ==mereka terkelupas dari posisi 
 
 **Heads-up adalah yang mematahkan intuisi semua orang.** Dengan hanya dua pemain, ==button memasang small blind== — kursi yang sama menjadi BTN dan SB sekaligus. Itu berarti button aksi ==**pertama** preflop== (big blind aksi terakhir, seperti biasa) tapi tetap aksi ==**terakhir** di setiap street postflop==, sementara big blind aksi pertama postflop. Setiap ukuran meja lain mengikuti pola normal; hanya heads-up yang menyatukan kursi terbaik dengan sebuah blind.
 
-**6-max vs full ring** murni pengurangan: tiga kursi tambahan (UTG+1, UTG+2, dan satu kursi tengah) tidak ada, jadi 6-max berjalan UTG → HJ → CO → BTN → SB → BB. Konsekuensi praktisnya adalah ==setiap kursi 6-max bermain "lebih akhir" daripada kursi senama di full ring== — UTG 6-max menghadapi lima lawan, bukan delapan — itulah kenapa range melebar menyeluruh dalam permainan short-handed. Angka kursi demi kursi ada di [panduan strategi posisi](/id/blog/holdem-position-play), dan tangan persis yang mengisi setiap range dipetakan di [bagan starting hands](/id/blog/holdem-starting-hands-chart).
+**6-max vs full ring** murni pengurangan: tiga kursi tambahan (UTG+1, UTG+2, dan satu kursi tengah) tidak ada, jadi 6-max berjalan UTG → HJ → CO → BTN → SB → BB. Konsekuensi praktisnya bukan bahwa sebuah kursi bermain "lebih akhir" — cutoff punya tiga pemain di belakangnya di kedua meja. Melainkan ==karena kursi-kursi awal hilang, Anda jauh lebih sering duduk di blind dan di posisi akhir, dan lebih sedikit pemain yang open di depan Anda== — UTG 6-max menghadapi lima lawan, bukan delapan — itulah kenapa range melebar menyeluruh dalam permainan short-handed. Angka kursi demi kursi ada di [panduan strategi posisi](/id/blog/holdem-position-play), dan tangan persis yang mengisi setiap range dipetakan di [bagan starting hands](/id/blog/holdem-starting-hands-chart).
 
 > **Catatan penamaan:** sebagian situs dan card room melabeli kursi 6-max pertama sebagai "LJ" atau "MP" alih-alih UTG, dan kursi tengah 10 pemain kadang muncul sebagai "MP1/MP2". Label bervariasi; urutan aksi tak pernah bervariasi.
 
@@ -214,7 +214,7 @@ A. Small blind aksi sebelum big blind di setiap street. Preflop, kedua blind aks
 
 **Q. Ada berapa posisi di poker 6-max?**
 
-A. Enam: UTG (juga disebut lojack), hijack, cutoff, button, small blind, dan big blind. Dibandingkan meja 9-max, UTG+1, UTG+2, dan satu kursi tengah cukup tidak ada — nama dihapus dari posisi awal lebih dulu, jadi setiap kursi yang tersisa bermain "lebih akhir" daripada kursi senama di full ring.
+A. Enam: UTG (juga disebut lojack), hijack, cutoff, button, small blind, dan big blind. Dibandingkan meja 9-max, UTG+1, UTG+2, dan satu kursi tengah cukup tidak ada — nama dihapus dari posisi awal lebih dulu. Jumlah pemain di belakang sebuah kursi sama saja dengan kursi senama di full ring, tapi karena kursi-kursi awal hilang Anda jauh lebih sering duduk di blind dan di posisi akhir, jadi rata-rata range jadi lebih lebar.
 
 **Q. Apakah posisi poker berubah setiap tangan?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Short stack (kira-kira di bawah 15–20 big blind) tak bisa main poker postflop normal, jadi ia beralih ke push/fold: masuk all-in first-in untuk menjaga fold equity Anda, dan jangan pernah open-limp atau min-raise-lalu-fold. Shove lebih lebar dari posisi akhir, jaga calling range lebih ketat daripada shoving range Anda, dan jangan blind down sampai habis 'menunggu tangan bagus' — fold equity adalah senjata Anda, dan ia lenyap di bawah sekitar 8 big blind.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-07-09",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "13 mnt",
   emoji: "📉",
@@ -91,7 +91,7 @@ Jebakannya adalah fold equity ==meluruh saat stack Anda menyusut==. Di 12–15 b
 **Saat Anda pemain pertama di pot dan pendek, keputusan Anda adalah shove atau fold — dan seberapa lebar Anda shove tergantung pada ukuran stack dan, sama pentingnya, posisi Anda.** Makin akhir posisi Anda, makin sedikit pemain tersisa di belakang untuk bangun dengan tangan besar, dan makin berharga blind relatif terhadap stack Anda — jadi ==shoving range Anda melebar drastis menuju button==.
 
 - **Posisi awal, 12–15bb:** paling ketat. Anda punya seluruh meja di belakang, jadi jam range yang kuat, sebagian besar linear, dan fold sisanya.
-- **Cutoff dan button, 10–15bb:** jauh lebih lebar. Dengan satu atau dua pemain tersisa untuk bertindak, Anda shove untuk mencuri blind dan ante, dan Anda bisa jam banyak tangan yang akan jadi fold mudah dari under the gun.
+- **Cutoff dan button, 10–15bb:** jauh lebih lebar. Dengan dua atau tiga pemain tersisa untuk bertindak, Anda shove untuk mencuri blind dan ante, dan Anda bisa jam banyak tangan yang akan jadi fold mudah dari under the gun.
 - **Small blind, short stack apa pun:** paling lebar dari semua first-in — hanya big blind yang bisa call, dan Anda sudah punya uang di pot. Short stack di small blind, fold sering jadi kesalahannya.
 - **Di bawah ~6bb:** posisi kurang penting. Anda perlu memasukkan chip melawan hampir siapa pun sebelum fold equity Anda lenyap; ambil spot yang masuk akal berikutnya daripada menunggu yang sempurna.
 

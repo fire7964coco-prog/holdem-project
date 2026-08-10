@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "O rake é a pequena fatia que a sala de pôquer tira de cada pote para sediar o jogo — geralmente 2,5–10% até um cap de alguns dólares. A maioria das salas não tira nada se todo mundo folda antes do flop ('no flop, no drop'). Ele pesa mais para quem joga stakes baixos e short-handed, e o rakeback devolve uma parte dele aos regulares.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-07-04",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🏦",
@@ -75,7 +75,7 @@ Aqui está a parte que mudou como eu penso o jogo. A porcentagem parece minúscu
 
 **Um jogo ao vivo de $1/$2.** Com 10% de rake com cap de $5 e cerca de 30 mãos distribuídas por hora, a maioria dos potes disputados atinge ou chega perto do cap. Uma única mesa cheia pode pagar **$100+ por hora** para o drop entre todos os jogadores. Esse dinheiro sai direto dos ganhos coletivos — é a razão pela qual uma mesa cheia de jogadores mais ou menos parelhos sangra fichas devagar para a casa.
 
-**A "armadilha do rake" dos stakes baixos.** Essa é a moral que todo iniciante deveria ouvir. Como o cap quase não sobe conforme você desce nos stakes, quanto *mais baixo* você joga, *maior* a mordida que o rake tira proporcionalmente. Um exemplo trabalhado no NL50 online (ilustrativo, e varia conforme quantas mãos você joga):
+**A "armadilha do rake" dos stakes baixos.** Essa é a moral que todo iniciante deveria ouvir. Como o cap quase não desce junto conforme você desce nos stakes, quanto *mais baixo* você joga, *maior* a mordida que o rake tira proporcionalmente. Um exemplo trabalhado no NL50 online (ilustrativo, e varia conforme quantas mãos você joga):
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

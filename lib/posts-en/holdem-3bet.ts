@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A 3-bet is the first re-raise before the flop — called a 3-bet because the big blind is the first bet, the open-raise the second, and your re-raise the third. Value-3-bet a tight core (QQ+, AK) plus a few suited blocker bluffs like A5s, size it around 3x the open in position and 4x out of position, and keep your overall 3-bet frequency near 6–10%. When you're the one facing a 3-bet, 4-bet your premiums, call the hands that play well, and fold the rest — folding more than 'balanced' against low-stakes players who never bluff.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-07-19",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "♦️",
@@ -146,7 +146,7 @@ Facing an open, you have three choices, not two. This is the map most articles n
 
 </div>
 
-The big takeaway: **flatting is legitimate in position** — modern solvers keep a healthy flatting range on the button because you can profitably see flops with the betting closed behind you. Out of position it's weaker, but with one important split: from the **small blind**, prefer a polarized *3-bet or fold*, since calling wide OOP realizes your equity poorly and builds a weak, cappable range. The **big blind** is the exception — because you close the action and are already getting a price, you defend by *calling* far wider there, especially against late-position steals. Position, again, changes everything — the same lesson as the [position playbook](/en/blog/holdem-position-play).
+The big takeaway: **flatting is legitimate in position** — modern solvers keep a healthy flatting range on the button because you act last on every postflop street and only the two blinds are left behind you, so the squeeze risk is small and you can see flops profitably. Out of position it's weaker, but with one important split: from the **small blind**, prefer a polarized *3-bet or fold*, since calling wide OOP realizes your equity poorly and builds a weak, cappable range. The **big blind** is the exception — because you close the action and are already getting a price, you defend by *calling* far wider there, especially against late-position steals. Position, again, changes everything — the same lesson as the [position playbook](/en/blog/holdem-position-play).
 
 ---
 

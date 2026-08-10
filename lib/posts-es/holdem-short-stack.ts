@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un short stack (más o menos por debajo de 15–20 ciegas grandes) no puede jugar póker postflop normal, así que cambia al push/fold: vas all-in siendo el primero en entrar para conservar tu fold equity, y nunca haces open-limp ni min-raise para luego foldear. Vas de shove más amplio desde posición tardía, mantienes tu rango de igualar más cerrado que tu rango de shove, y no te dejas fundir hasta nada 'esperando una mano': tu fold equity es el arma, y desaparece por debajo de unas 8 ciegas grandes.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-07-24",
-  masterUpdated: "2026-07-19",
+  updated: "2026-08-11",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "📉",
@@ -92,7 +92,7 @@ La trampa es que la fold equity ==decae a medida que tu stack encoge==. Con 12�
 **Cuando eres el primer jugador en el bote y vas corto, tu decisión es shove o foldear — y lo amplio que vas de shove depende del tamaño de tu stack y, en igual medida, de tu posición.** Cuanto más tardía es tu posición, menos jugadores quedan detrás de ti que puedan despertar con una gran mano, y más valen las ciegas en relación con tu stack — así que ==tu rango de shove se amplía muchísimo hacia el botón==.
 
 - **Posición temprana, 12–15bb:** lo más cerrado. Tienes toda la mesa detrás, así que ve de jam con un rango fuerte, casi lineal, y foldea el resto.
-- **Cutoff y botón, 10–15bb:** mucho más amplio. Con uno o dos jugadores por actuar, vas de shove para robar las ciegas y los antes, y puedes ir de jam con muchas manos que serían un fold fácil desde UTG.
+- **Cutoff y botón, 10–15bb:** mucho más amplio. Con dos o tres jugadores por actuar, vas de shove para robar las ciegas y los antes, y puedes ir de jam con muchas manos que serían un fold fácil desde UTG.
 - **Ciega pequeña, cualquier short stack:** el más amplio de todos siendo primero — solo la ciega grande puede igualar, y ya tienes dinero en el bote. Corto de fichas en la ciega pequeña, foldear suele ser el error.
 - **Por debajo de ~6bb:** la posición importa menos. Necesitas meter tus fichas contra casi cualquiera antes de que tu fold equity se esfume; toma el próximo spot razonable en vez de esperar a uno perfecto.
 

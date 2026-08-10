@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ein Short Stack (grob unter 15–20 Big Blinds) kann kein normales Postflop-Poker mehr spielen, also wechselt er zu Push/Fold: geh first-in all-in, um deine Fold Equity zu behalten, und limpe oder min-raise-fold nie. Shove von Late Position weiter, halte deine Calling-Range enger als deine Shoving-Range, und blinde nicht auf null herunter, während du „auf eine Hand wartest“ – deine Fold Equity ist die Waffe, und sie verschwindet unter etwa 8 Big Blinds.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-08-10",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "13 Min.",
   emoji: "📉",
@@ -91,7 +91,7 @@ Der Haken ist, dass Fold Equity ==abnimmt, während dein Stack schrumpft==. Bei 
 **Wenn du der erste Spieler im Pot und kurz bist, lautet deine Entscheidung Shove oder Fold – und wie weit du shovst, hängt von deiner Stackgröße und, genauso stark, von deiner Position ab.** Je später deine Position, desto weniger Spieler sind hinter dir übrig, die mit einer großen Hand aufwachen könnten, und desto mehr sind die Blinds relativ zu deinem Stack wert – also ==weitet sich deine Shoving-Range Richtung Button dramatisch==.
 
 - **Early Position, 12–15bb:** am engsten. Du hast den ganzen Tisch hinter dir, also jamme eine starke, meist lineare Range und folde den Rest.
-- **Cutoff und Button, 10–15bb:** viel weiter. Mit einem oder zwei Spielern, die noch handeln, shovst du, um die Blinds und Antes zu stehlen, und kannst viele Hände jammen, die Under the Gun ein leichter Fold wären.
+- **Cutoff und Button, 10–15bb:** viel weiter. Mit zwei oder drei Spielern, die noch handeln, shovst du, um die Blinds und Antes zu stehlen, und kannst viele Hände jammen, die Under the Gun ein leichter Fold wären.
 - **Small Blind, jeder Short Stack:** am weitesten von allen first-in – nur der Big Blind kann callen, und du hast schon Geld im Pot. Als Short Stack im Small Blind ist Folden oft der Fehler.
 - **Unter ~6bb:** Position zählt weniger. Du musst deine Chips gegen fast jeden reinbekommen, bevor deine Fold Equity verschwindet; nimm den nächsten vernünftigen Spot, statt auf einen perfekten zu warten.
 

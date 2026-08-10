@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Eine 3-Bet ist der erste Re-Raise vor dem Flop – sie heißt 3-Bet, weil der Big Blind die erste Bet ist, der Open-Raise die zweite und dein Re-Raise die dritte. 3-bette auf Value einen engen Kern (QQ+, AK) plus ein paar suited Blocker-Bluffs wie A5s, size sie in Position auf etwa das 3-fache des Opens und out of Position auf das 4-fache, und halte deine gesamte 3-Bet-Frequenz bei 6–10%. Wenn du selbst gegen eine 3-Bet sitzt, 4-bette deine Premiums, calle die Hände, die gut spielen, und folde den Rest – gegen Low-Stakes-Spieler, die nie bluffen, häufiger als „ausgeglichen“.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-08-10",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "16 Min.",
   emoji: "♦️",
@@ -146,7 +146,7 @@ Gegen einen Open hast du drei Optionen, nicht zwei. Das ist die Landkarte, die d
 
 </div>
 
-Die große Erkenntnis: **Flatten ist in Position legitim** – moderne Solver behalten am Button eine gesunde Flat-Range, weil du profitabel Flops sehen kannst, wenn die Action hinter dir geschlossen ist. Out of Position ist es schwächer, aber mit einem wichtigen Split: Aus dem **Small Blind** bevorzuge eine polarisierte *3-Bet-oder-Fold*, da weites Callen OOP deine Equity schlecht realisiert und eine schwache, cappbare Range baut. Der **Big Blind** ist die Ausnahme – weil du die Action schließt und ohnehin einen Preis bekommst, verteidigst du dort durch *Callen* weit weiter, besonders gegen Steals aus später Position. Position, wieder einmal, ändert alles – dieselbe Lektion wie im [Positions-Playbook](/de/blog/holdem-position-play).
+Die große Erkenntnis: **Flatten ist in Position legitim** – moderne Solver behalten am Button eine gesunde Flat-Range, weil du postflop auf jeder Street als Letzter handelst und hinter dir nur die beiden Blinds sitzen, sodass das Squeeze-Risiko klein bleibt und du Flops profitabel siehst. Out of Position ist es schwächer, aber mit einem wichtigen Split: Aus dem **Small Blind** bevorzuge eine polarisierte *3-Bet-oder-Fold*, da weites Callen OOP deine Equity schlecht realisiert und eine schwache, cappbare Range baut. Der **Big Blind** ist die Ausnahme – weil du die Action schließt und ohnehin einen Preis bekommst, verteidigst du dort durch *Callen* weit weiter, besonders gegen Steals aus später Position. Position, wieder einmal, ändert alles – dieselbe Lektion wie im [Positions-Playbook](/de/blog/holdem-position-play).
 
 ---
 

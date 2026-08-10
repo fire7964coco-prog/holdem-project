@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Para el river ligarás pareja el 43.8% de las veces, doble pareja el 23.5%, color el 3.0% y full el 2.6% — mientras que una escalera real aparece solo una vez cada 31,000 manos.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-08-09",
-  masterUpdated: "2026-07-19",
+  updated: "2026-08-11",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🎲",
@@ -182,7 +182,7 @@ Las dos manos más raras son de las que los jugadores presumen durante años —
 ¿Por qué tan raras? Una escalera real es exactamente **una secuencia concreta de cartas en un palo concreto** — cuatro formas de hacerla en toda la baraja frente a 1,302,540 formas de hacer una simple carta alta. La rareza es toda la razón por la que se sienta en lo más alto de la jerarquía.
 
 :::note
-Un mito común: "una escalera real gana a todo, así que puede *empatar*". Dos escaleras reales solo son posibles en palos distintos — y como los palos nunca rompen empates, eso es un bote dividido. En la práctica casi nunca pasa fuera de casualidades de mesa compartida.
+Un mito común: "una escalera real gana a todo, así que puede *empatar*". El bote sí puede dividirse, pero no como se suele explicar. Dos escaleras reales en palos *distintos* exigirían diez cartas concretas, y dos jugadores solo disponen de nueve — dos cartas propias cada uno más las cinco de la mesa —, así que no puede pasar. La única forma de que ambos tengan escalera real es que la propia mesa sea la escalera real: todos juegan la mesa y el bote se divide. En la práctica no lo verás casi nunca.
 :::
 
 ---

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ein Cooler ist eine Hand, bei der du einen großen Pot mit einer sehr starken Holding verlierst, die du niemals korrekt folden könntest – wie Pocket Kings, die auf Asse treffen, oder ein Set, das gegen ein größeres Set verliert. Anders als beim Bad Beat lagst du die ganze Zeit hinten und keine Glückskarte hat dich „ausgesaugt“: Du hast alles richtig gemacht und trotzdem verloren. Es ist die ehrlichste Art von Poker-Katastrophe.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-08-10",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🧊",
@@ -89,7 +89,7 @@ Cooler kommen in einer erkennbaren Familie. In jeder davon sind *beide* Hände s
 
 </div>
 
-Der ikonischste ist **Set over set.** Sagen wir, du hältst **7♣7♦** und der Flop kommt **J♦ 7♥ 2♣** – du hast Bottom Set gefloppt, drei Sevens. Es ist eine Hand, mit der du fast immer gerne abstackst. Aber dein Gegner hält **J♠J♥** und hat Top Set gefloppt, drei Jacks. Am River auf einem **J♦ 7♥ 2♣ 5♠ Q♦** Board sind deine besten fünf Karten 7‑7‑7‑Q‑J und seine J‑J‑J‑Q‑7 – drei Jacks schlagen drei Sevens, und dein einziger Ausweg war die letzte verbliebene Seven im Deck. Du hast nichts falsch gespielt; du hast die ganze Zeit einfach auf eine Karte gedrawt. Das ist ein Cooler in seiner reinsten Form, und deshalb ist es wichtig zu verstehen, [welche Hand einen Showdown gewinnt](/de/blog/holdem-tiebreak-rules), selbst wenn das Ergebnis außerhalb deiner Kontrolle liegt.
+Der ikonischste ist **Set over set.** Sagen wir, du hältst **7♣7♦** und der Flop kommt **J♦ 7♥ 2♣** – du hast Middle Set gefloppt, drei Sevens. Es ist eine Hand, mit der du fast immer gerne abstackst. Aber dein Gegner hält **J♠J♥** und hat Top Set gefloppt, drei Jacks. Am River auf einem **J♦ 7♥ 2♣ 5♠ Q♦** Board sind deine besten fünf Karten 7‑7‑7‑Q‑J und seine J‑J‑J‑Q‑7 – drei Jacks schlagen drei Sevens, und dein einziger Ausweg war die letzte verbliebene Seven im Deck. Du hast nichts falsch gespielt; du hast die ganze Zeit einfach auf eine Karte gedrawt. Das ist ein Cooler in seiner reinsten Form, und deshalb ist es wichtig zu verstehen, [welche Hand einen Showdown gewinnt](/de/blog/holdem-tiebreak-rules), selbst wenn das Ergebnis außerhalb deiner Kontrolle liegt.
 
 ---
 

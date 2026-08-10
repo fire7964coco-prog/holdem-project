@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Um short stack (grosso modo abaixo de 15–20 big blinds) não consegue jogar pôquer pós-flop normal, então ele troca para push/fold: vai de all-in first-in para manter a fold equity, e nunca faz open-limp nem min-raise-depois-fold. Dê shove com mais mãos da late position, mantenha seu range de pagar mais fechado que o de shove, e não fique blindando até o zero 'esperando uma mão' — a fold equity é a arma, e ela some abaixo de uns 8 big blinds.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-07-09",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "📉",
@@ -91,7 +91,7 @@ O detalhe é que a fold equity ==decai conforme seu stack encolhe==. Com 12–15
 **Quando você é o primeiro jogador a entrar no pote e está curto, sua decisão é shove ou fold — e quão amplo você dá shove depende do tamanho do seu stack e, na mesma medida, da sua posição.** Quanto mais tarde a sua posição, menos jogadores restam atrás de você para acordar com uma mão grande, e mais os blinds valem em relação ao seu stack — então ==seu range de shove amplia dramaticamente em direção ao button==.
 
 - **Early position, 12–15bb:** o mais fechado. Você tem a mesa inteira atrás de você, então dê jam com um range forte e majoritariamente linear e folde o resto.
-- **Cutoff e button, 10–15bb:** bem mais amplo. Com um ou dois jogadores restando para agir, você está dando shove para roubar os blinds e antes, e pode dar jam com muitas mãos que seriam um fold fácil under the gun.
+- **Cutoff e button, 10–15bb:** bem mais amplo. Com dois ou três jogadores restando para agir, você está dando shove para roubar os blinds e antes, e pode dar jam com muitas mãos que seriam um fold fácil under the gun.
 - **Small blind, qualquer short stack:** o mais amplo de todos os first-in — só o big blind pode pagar, e você já tem dinheiro no pote. Curto no small blind, foldar costuma ser o erro.
 - **Abaixo de ~6bb:** a posição importa menos. Você precisa colocar suas fichas contra quase qualquer um antes que sua fold equity desapareça; pegue o próximo spot razoável em vez de esperar por um perfeito.
 

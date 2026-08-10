@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Cooler adalah tangan di mana Anda kalah pot besar dengan holding sangat kuat yang tak pernah bisa Anda fold dengan benar — seperti pocket kings bertemu aces, atau sebuah set kalah oleh set yang lebih besar. Berbeda dari bad beat, Anda tertinggal sepanjang jalan dan tak ada kartu keberuntungan yang 'suckout' pada Anda: Anda memainkannya dengan benar dan tetap kalah. Inilah jenis bencana poker yang paling jujur.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-07-05",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "🧊",
@@ -89,7 +89,7 @@ Cooler datang dalam satu keluarga yang mudah dikenali. Di setiap kasusnya, *kedu
 
 </div>
 
-Yang paling ikonik adalah **set over set.** Katakan Anda pegang **7♣7♦** dan flop-nya datang **J♦ 7♥ 2♣** — Anda flop bottom set, three sevens. Ini tangan yang akan Anda stack off dengan senang hati hampir selalu. Tapi lawan Anda pegang **J♠J♥** dan flop top set, three jacks. Sampai river pada board **J♦ 7♥ 2♣ 5♠ Q♦**, lima kartu terbaik Anda adalah 7‑7‑7‑Q‑J dan miliknya J‑J‑J‑Q‑7 — three jacks mengalahkan three sevens, dan satu-satunya jalan keluar Anda adalah satu-satunya seven yang tersisa di deck. Anda tak salah main satu pun; Anda sekadar drawing ke satu kartu sepanjang waktu. Itulah cooler dalam bentuknya yang paling murni, dan itulah kenapa memahami [tangan mana yang menang di showdown](/id/blog/holdem-tiebreak-rules) penting bahkan saat hasilnya di luar kendali Anda.
+Yang paling ikonik adalah **set over set.** Katakan Anda pegang **7♣7♦** dan flop-nya datang **J♦ 7♥ 2♣** — Anda flop middle set, three sevens. Ini tangan yang akan Anda stack off dengan senang hati hampir selalu. Tapi lawan Anda pegang **J♠J♥** dan flop top set, three jacks. Sampai river pada board **J♦ 7♥ 2♣ 5♠ Q♦**, lima kartu terbaik Anda adalah 7‑7‑7‑Q‑J dan miliknya J‑J‑J‑Q‑7 — three jacks mengalahkan three sevens, dan satu-satunya jalan keluar Anda adalah satu-satunya seven yang tersisa di deck. Anda tak salah main satu pun; Anda sekadar drawing ke satu kartu sepanjang waktu. Itulah cooler dalam bentuknya yang paling murni, dan itulah kenapa memahami [tangan mana yang menang di showdown](/id/blog/holdem-tiebreak-rules) penting bahkan saat hasilnya di luar kendali Anda.
 
 ---
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "By the river you'll make one pair 43.8% of the time, two pair 23.5%, a flush 3.0%, and a full house 2.6% — while a royal flush shows up just once in about 31,000 hands.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-07-19",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🎲",
@@ -181,7 +181,7 @@ The two rarest hands are the ones players brag about for years — with good rea
 Why so rare? A royal flush is exactly **one specific run of cards in one specific suit** — four ways to make it in the entire deck versus 1,302,540 ways to make a plain high card. Rarity is the whole reason it sits at the top of the rankings.
 
 :::note
-A common myth: "a royal flush beats everything, so it can be *tied*." Two royal flushes are only possible in different suits — and since suits never break ties, that's a split pot. In practice it essentially never happens outside of shared-board flukes.
+A common myth: "a royal flush beats everything, so it can be *tied*." The pot can be split, but not the way it's usually explained. Two royals in *different* suits would take ten specific cards, and two players only ever have nine to work with — two hole cards each plus the five on the board — so it can't happen. The only way both players hold a royal is when the board itself is the royal: everyone plays the board, and the pot is split. In practice you'll essentially never see it.
 :::
 
 ---

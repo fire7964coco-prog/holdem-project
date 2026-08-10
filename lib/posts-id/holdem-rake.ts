@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Rake adalah potongan kecil yang diambil cardroom dari setiap pot untuk menyelenggarakan permainan — biasanya 2,5–10% hingga cap beberapa dolar. Sebagian besar room tidak mengambil apa pun jika semua fold sebelum flop ('no flop, no drop'). Ia paling memukul pemain stake rendah dan short-handed, dan rakeback mengembalikan sebagian kepada regular.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-07-04",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "11 mnt",
   emoji: "🏦",
@@ -75,7 +75,7 @@ Inilah bagian yang mengubah cara saya memandang permainan. Persentasenya terdeng
 
 **Sebuah live game $1/$2.** Dengan rake 10% cap $5 dan kira-kira 30 tangan dibagikan per jam, sebagian besar pot yang diperebutkan mengenai atau mendekati cap. Satu meja sibuk saja bisa membayar **$100+ per jam** ke dalam drop di antara semua pemain. Uang itu keluar langsung dari kemenangan kolektif — itulah alasan sebuah meja penuh pemain yang kurang lebih setara perlahan menguras chip ke house.
 
-**"Jebakan rake" stake rendah.** Inilah intinya yang harus didengar setiap pemula. Karena cap nyaris tak naik saat Anda turun stake, makin *rendah* Anda bermain, makin *besar* gigitan yang diambil rake secara proporsional. Contoh terhitung di NL50 online (ilustratif, dan berayun tergantung berapa banyak tangan Anda mainkan):
+**"Jebakan rake" stake rendah.** Inilah intinya yang harus didengar setiap pemula. Karena cap nyaris tak ikut turun saat Anda turun stake, makin *rendah* Anda bermain, makin *besar* gigitan yang diambil rake secara proporsional. Contoh terhitung di NL50 online (ilustratif, dan berayun tergantung berapa banyak tangan Anda mainkan):
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

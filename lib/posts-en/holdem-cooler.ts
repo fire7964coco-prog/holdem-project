@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A cooler is a hand where you lose a big pot with a very strong holding you could never correctly fold — like pocket kings running into aces, or a set losing to a bigger set. Unlike a bad beat, you were behind the whole way and no lucky card 'sucked out' on you: you played it right and still lost. It's poker's most honest kind of disaster.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-07-19",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🧊",
@@ -89,7 +89,7 @@ Coolers come in a recognizable family. In every one, *both* hands are strong eno
 
 </div>
 
-The most iconic is **set over set.** Say you hold **7♣7♦** and the flop comes **J♦ 7♥ 2♣** — you've flopped bottom set, three sevens. It's a hand you'll happily stack off with almost always. But your opponent holds **J♠J♥** and flopped top set, three jacks. By the river on a **J♦ 7♥ 2♣ 5♠ Q♦** board, your best five cards are 7‑7‑7‑Q‑J and theirs are J‑J‑J‑Q‑7 — three jacks beat three sevens, and your only escape was the single remaining seven in the deck. You didn't misplay a thing; you were simply drawing to one card the whole time. That's a cooler in its purest form, and it's why understanding [which hand wins a showdown](/en/blog/holdem-tiebreak-rules) matters even when the result is out of your hands.
+The most iconic is **set over set.** Say you hold **7♣7♦** and the flop comes **J♦ 7♥ 2♣** — you've flopped middle set, three sevens. It's a hand you'll happily stack off with almost always. But your opponent holds **J♠J♥** and flopped top set, three jacks. By the river on a **J♦ 7♥ 2♣ 5♠ Q♦** board, your best five cards are 7‑7‑7‑Q‑J and theirs are J‑J‑J‑Q‑7 — three jacks beat three sevens, and your only escape was the single remaining seven in the deck. You didn't misplay a thing; you were simply drawing to one card the whole time. That's a cooler in its purest form, and it's why understanding [which hand wins a showdown](/en/blog/holdem-tiebreak-rules) matters even when the result is out of your hands.
 
 ---
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Até o river você faz um par 43,8% das vezes, dois pares 23,5%, um flush 3,0% e um full house 2,6% — enquanto um royal flush aparece só uma vez a cada 31.000 mãos.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-08-09",
-  masterUpdated: "2026-07-19",
+  updated: "2026-08-11",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🎲",
@@ -182,7 +182,7 @@ As duas mãos mais raras são as que os jogadores se gabam por anos — com raz�
 Por que tão raro? Um royal flush é exatamente **uma sequência específica de cartas em um naipe específico** — quatro formas de fazê-lo no baralho inteiro contra 1.302.540 formas de fazer uma carta alta simples. A raridade é toda a razão de ele ficar no topo do ranking.
 
 :::note
-Um mito comum: "um royal flush ganha de tudo, então pode dar *empate*". Dois royal flushes só são possíveis em naipes diferentes — e como os naipes nunca desempatam, isso é um split pot. Na prática, praticamente nunca acontece fora de coincidências de mesa compartilhada.
+Um mito comum: "um royal flush ganha de tudo, então pode dar *empate*". O pote pode ser dividido, sim, mas não do jeito que costumam explicar. Dois royal flushes em naipes *diferentes* exigiriam dez cartas específicas, e dois jogadores só dispõem de nove — duas cartas na mão de cada um mais as cinco da mesa —, então não acontece. A única forma de os dois terem royal flush é a própria mesa ser o royal flush: todo mundo joga a mesa, e o pote é dividido. Na prática, você praticamente nunca vai ver isso.
 :::
 
 ---

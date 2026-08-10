@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un cooler es una mano en la que pierdes un bote grande con una mano muy fuerte que jamás podrías foldear correctamente — como una pareja de reyes que choca con ases, o un trío que pierde ante un trío mayor. A diferencia de un bad beat, ibas por detrás desde el principio y ninguna carta afortunada te 'cazó': jugaste bien y aun así perdiste. Es el desastre más honesto del póker.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-07-24",
-  masterUpdated: "2026-07-19",
+  updated: "2026-08-11",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🧊",
@@ -90,7 +90,7 @@ Los coolers vienen en una familia reconocible. En todos ellos, *ambas* manos son
 
 </div>
 
-El más icónico es el **set over set (trío contra trío).** Digamos que tienes **7♣7♦** y el flop viene **J♦ 7♥ 2♣** — has ligado el trío más bajo, tres sietes. Es una mano con la que te irás de stack encantado casi siempre. Pero tu rival tiene **J♠J♥** y ligó el trío más alto, tres jotas. Para el river en un board **J♦ 7♥ 2♣ 5♠ Q♦**, tus mejores cinco cartas son 7‑7‑7‑Q‑J y las suyas J‑J‑J‑Q‑7 — tres jotas ganan a tres sietes, y tu única salida era el único siete que quedaba en la baraja. No jugaste nada mal; simplemente ibas a una sola carta todo el rato. Eso es un cooler en su forma más pura, y por eso entender [qué mano gana en el showdown](/es/blog/holdem-tiebreak-rules) importa incluso cuando el resultado no está en tus manos.
+El más icónico es el **set over set (trío contra trío).** Digamos que tienes **7♣7♦** y el flop viene **J♦ 7♥ 2♣** — has ligado el trío intermedio, tres sietes. Es una mano con la que te irás de stack encantado casi siempre. Pero tu rival tiene **J♠J♥** y ligó el trío más alto, tres jotas. Para el river en un board **J♦ 7♥ 2♣ 5♠ Q♦**, tus mejores cinco cartas son 7‑7‑7‑Q‑J y las suyas J‑J‑J‑Q‑7 — tres jotas ganan a tres sietes, y tu única salida era el único siete que quedaba en la baraja. No jugaste nada mal; simplemente ibas a una sola carta todo el rato. Eso es un cooler en su forma más pura, y por eso entender [qué mano gana en el showdown](/es/blog/holdem-tiebreak-rules) importa incluso cuando el resultado no está en tus manos.
 
 ---
 

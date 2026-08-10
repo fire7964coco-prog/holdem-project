@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Rake is the small cut the cardroom takes from each pot to host the game — usually 2.5–10% up to a cap of a few dollars. Most rooms take nothing if everyone folds before the flop ('no flop, no drop'). It hits low-stakes and short-handed players hardest, and rakeback returns a slice of it to regulars.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-07-19",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🏦",
@@ -75,7 +75,7 @@ Here's the part that changed how I think about the game. The percentage sounds t
 
 **A live $1/$2 game.** With 10% rake capped at $5 and roughly 30 hands dealt an hour, most contested pots hit or near the cap. A single busy table can pay **$100+ an hour** into the drop between all the players. That money comes straight out of the collective winnings — it's the reason a table full of roughly even players slowly bleeds chips to the house.
 
-**The low-stakes "rake trap."** This is the punchline every beginner should hear. Because the cap barely rises as you move down in stakes, the *lower* you play, the *bigger* a bite the rake takes proportionally. A worked example at online NL50 (illustrative, and it swings with how many hands you play):
+**The low-stakes "rake trap."** This is the punchline every beginner should hear. Because the cap barely falls as you move down in stakes, the *lower* you play, the *bigger* a bite the rake takes proportionally. A worked example at online NL50 (illustrative, and it swings with how many hands you play):
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

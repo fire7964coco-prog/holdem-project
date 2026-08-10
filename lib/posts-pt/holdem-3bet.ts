@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Um 3-bet é o primeiro re-raise antes do flop — chamado de 3-bet porque o big blind é a primeira aposta, o open-raise a segunda, e o seu re-raise a terceira. Value-3-bete um núcleo apertado (QQ+, AK) mais alguns blefes de bloqueio suited como A5s, dimensione em torno de 3x o open in position e 4x out of position, e mantenha sua frequência geral de 3-bet perto de 6–10%. Quando você é quem enfrenta um 3-bet, 4-bete suas mãos premium, pague as mãos que jogam bem, e folde o resto — foldando mais que o \"balanceado\" contra jogadores de stakes baixos que nunca blefam.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-07-06",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "♦️",
@@ -146,7 +146,7 @@ Enfrentando um open, você tem três escolhas, não duas. Este é o mapa que a m
 
 </div>
 
-A grande lição: **flatar é legítimo in position** — solvers modernos mantêm um range saudável de flat no button porque você consegue ver flops lucrativamente com a aposta fechada atrás. Out of position é mais fraco, mas com uma divisão importante: do **small blind**, prefira um *3-bet ou fold* polarizado, já que pagar aberto OOP realiza sua equity mal e constrói um range fraco e capado. O **big blind** é a exceção — porque você fecha a ação e já está recebendo um preço, você defende *pagando* muito mais aberto ali, especialmente contra steals de posição tardia. A posição, de novo, muda tudo — a mesma lição do [manual de posição](/pt/blog/holdem-position-play).
+A grande lição: **flatar é legítimo in position** — solvers modernos mantêm um range saudável de flat no button porque você age por último em todas as streets do pós-flop e só as duas blinds ficam atrás de você, então o risco de squeeze é baixo e você vê flops lucrativamente. Out of position é mais fraco, mas com uma divisão importante: do **small blind**, prefira um *3-bet ou fold* polarizado, já que pagar aberto OOP realiza sua equity mal e constrói um range fraco e capado. O **big blind** é a exceção — porque você fecha a ação e já está recebendo um preço, você defende *pagando* muito mais aberto ali, especialmente contra steals de posição tardia. A posição, de novo, muda tudo — a mesma lição do [manual de posição](/pt/blog/holdem-position-play).
 
 ---
 
