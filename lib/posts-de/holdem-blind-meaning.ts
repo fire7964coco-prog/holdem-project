@@ -93,7 +93,7 @@ Beide Blinds werden **vor dem Austeilen** gesetzt, und der Dealer-Button wandert
 
 ## Wie hoch sind die Blinds? Stakes in Cash Games und Turnieren
 
-Stakes werden als **SB/BB** geschrieben. Ein „$1/$2“-Game bedeutet: $1 Small Blind und $2 Big Blind; der Small Blind ist die kleinere Zahl, der Big Blind die größere.
+Stakes werden als **SB/BB** geschrieben. Ein „$1/$2“-Game bedeutet: $1 Small Blind und $2 Big Blind; der Small Blind ist die kleinere Zahl, der Big Blind die größere. Diese **Blinds-Tabelle** zeigt die Stakes, die dir am häufigsten begegnen:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

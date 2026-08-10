@@ -34,7 +34,7 @@ Wenn du nach ==Texas Hold'em Regeln für Anfänger== gesucht hast, brauchst du v
 
 Du willst wissen, was die Blinds sind, wann du an der Reihe bist, wie die fünf Gemeinschaftskarten funktionieren, welche Hand gewinnt – und wie viele Chips jeder bekommt, wenn ihr zu Hause spielt.
 
-Dieser Guide erklärt dir ==Texas Hold'em für Anfänger== in klarem Deutsch: die exakte Reihenfolge am Tisch, eine einfache Chip-Verteilung, die Grundlagen des Gebens und ein Spickzettel, den du neben den Tisch legen kannst.
+Dieser Guide erklärt dir die ==Spielregeln von Texas Hold'em für Anfänger== in klarem Deutsch: die exakte Reihenfolge am Tisch, eine einfache Chip-Verteilung, die Grundlagen des Gebens und ein Spickzettel, den du neben den Tisch legen kannst.
 
 Alles hier unten kommt aus der Praxis – Küchentische, Pokerabende, Cardrooms –, nicht aus dem Regelwerk. Ich zeige dir deshalb genau die Stellen, an denen neue Spieler in echten Runden stolpern.
 
