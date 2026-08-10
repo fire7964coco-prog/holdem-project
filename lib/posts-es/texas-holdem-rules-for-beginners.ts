@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "En el Texas Hold'em cada jugador recibe 2 cartas propias y comparte 5 cartas comunitarias en la mesa. Se apuesta en cuatro rondas — preflop, flop, turn y river — y gana quien forma la mejor mano de póker de 5 cartas, o el último que quede si todos los demás se retiran. Puedes usar tus dos cartas, una sola o ninguna: lo que forme la mano más fuerte.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-08-09",
+  updated: "2026-08-10",
   masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -393,69 +393,69 @@ Las reglas son las mismas, pero el trámite no: hay lista de espera, las fichas 
 
 ## Preguntas frecuentes
 
-### ¿Cómo se juega al Texas Hold'em paso a paso?
+**Q. ¿Cómo se juega al Texas Hold'em paso a paso?**
 
-Se ponen las ciegas, se reparten dos cartas propias a cada jugador, se juega la ronda preflop, se descubren el flop, el turn y el river con apuestas tras cada calle, y al final se comparan las mejores manos de cinco cartas en el showdown.
+A. Se ponen las ciegas, se reparten dos cartas propias a cada jugador, se juega la ronda preflop, se descubren el flop, el turn y el river con apuestas tras cada calle, y al final se comparan las mejores manos de cinco cartas en el showdown.
 
-### ¿Quién empieza en el Texas Hold'em?
+**Q. ¿Quién empieza en el Texas Hold'em?**
 
-Preflop, habla primero el jugador a la izquierda de la ciega grande. Después del flop, habla primero el primer jugador activo a la izquierda del botón, y el botón normalmente habla el último.
+A. Preflop, habla primero el jugador a la izquierda de la ciega grande. Después del flop, habla primero el primer jugador activo a la izquierda del botón, y el botón normalmente habla el último.
 
-### ¿Con qué fichas se empieza en el Texas Hold'em?
+**Q. ¿Con qué fichas se empieza en el Texas Hold'em?**
 
-Para una partida casera de principiantes, da a cada jugador unas 200 fichas de valor y usa ciegas 1/2. Un stack sencillo son 20 fichas de valor 1, 16 fichas de valor 5 y 4 fichas de valor 25.
+A. Para una partida casera de principiantes, da a cada jugador unas 200 fichas de valor y usa ciegas 1/2. Un stack sencillo son 20 fichas de valor 1, 16 fichas de valor 5 y 4 fichas de valor 25.
 
-### ¿Con cuánto dinero se empieza en el Texas Hold'em?
+**Q. ¿Con cuánto dinero se empieza en el Texas Hold'em?**
 
-Para aprender, empieza con fichas sin valor. Para pequeñas partidas caseras con dinero real, usa un buy-in que todos puedan perder sin problema, como $2 a $5 con ciegas de $0.01/$0.02.
+A. Para aprender, empieza con fichas sin valor. Para pequeñas partidas caseras con dinero real, usa un buy-in que todos puedan perder sin problema, como $2 a $5 con ciegas de $0.01/$0.02.
 
-### ¿Existe una escalera baja en el Texas Hold'em?
+**Q. ¿Existe una escalera baja en el Texas Hold'em?**
 
-Sí. A-2-3-4-5 es una escalera válida y suele llamarse la rueda ("the wheel"). Es la escalera más baja posible. El As no puede hacer de puente: J-Q-K-A-2 no es escalera. El As juega como la carta más alta (A-K-Q-J-10) o la más baja (A-2-3-4-5), nunca en medio.
+A. Sí. A-2-3-4-5 es una escalera válida y suele llamarse la rueda ("the wheel"). Es la escalera más baja posible. El As no puede hacer de puente: J-Q-K-A-2 no es escalera. El As juega como la carta más alta (A-K-Q-J-10) o la más baja (A-2-3-4-5), nunca en medio.
 
-### ¿Cuántas manos iniciales posibles hay en el Texas Hold'em?
+**Q. ¿Cuántas manos iniciales posibles hay en el Texas Hold'em?**
 
-Hay 1,326 combinaciones exactas de dos cartas, pero los jugadores suelen agruparlas en 169 tipos de manos iniciales, como AA, AK del mismo palo (suited) o 76 de palos distintos (offsuit).
+A. Hay 1,326 combinaciones exactas de dos cartas, pero los jugadores suelen agruparlas en 169 tipos de manos iniciales, como AA, AK del mismo palo (suited) o 76 de palos distintos (offsuit).
 
-### ¿Cuál es la versión más simple de las reglas del Texas Hold'em?
+**Q. ¿Cuál es la versión más simple de las reglas del Texas Hold'em?**
 
-La versión más simple: cada jugador recibe 2 cartas privadas. Se descubren cinco cartas compartidas en tres fases (3, luego 1, luego 1). Se apuesta tras cada fase. Gana la mejor mano de 5 cartas usando cualquier combinación de tus cartas y las compartidas. Si todos los demás se retiran, ganas — da igual qué cartas lleves.
+A. La versión más simple: cada jugador recibe 2 cartas privadas. Se descubren cinco cartas compartidas en tres fases (3, luego 1, luego 1). Se apuesta tras cada fase. Gana la mejor mano de 5 cartas usando cualquier combinación de tus cartas y las compartidas. Si todos los demás se retiran, ganas — da igual qué cartas lleves.
 
-### Reglas del Texas Hold'em para novatos — ¿qué significan las ciegas?
+**Q. Reglas del Texas Hold'em para novatos — ¿qué significan las ciegas?**
 
-Los dos jugadores a la izquierda del botón del dealer deben poner apuestas obligatorias antes de repartir. El primero pone la ciega pequeña y el segundo la ciega grande (normalmente el doble). Estas apuestas garantizan que siempre haya dinero en el bote por el que luchar. Los demás jugadores deben al menos igualar la ciega grande para seguir en la mano.
+A. Los dos jugadores a la izquierda del botón del dealer deben poner apuestas obligatorias antes de repartir. El primero pone la ciega pequeña y el segundo la ciega grande (normalmente el doble). Estas apuestas garantizan que siempre haya dinero en el bote por el que luchar. Los demás jugadores deben al menos igualar la ciega grande para seguir en la mano.
 
-### ¿Cuál es la versión rápida de las reglas del Texas Hold'em?
+**Q. ¿Cuál es la versión rápida de las reglas del Texas Hold'em?**
 
-Poner ciegas → repartir 2 cartas propias → apuestas preflop → descubrir 3 comunitarias (flop) + apuestas → descubrir 1 carta (turn) + apuestas → descubrir 1 carta (river) + apuestas → gana la mejor mano. En total: cuatro rondas de apuestas, cinco cartas comunitarias, un ganador.
+A. Poner ciegas → repartir 2 cartas propias → apuestas preflop → descubrir 3 comunitarias (flop) + apuestas → descubrir 1 carta (turn) + apuestas → descubrir 1 carta (river) + apuestas → gana la mejor mano. En total: cuatro rondas de apuestas, cinco cartas comunitarias, un ganador.
 
-### ¿Cuántos jugadores se necesitan para jugar al Texas Hold'em?
+**Q. ¿Cuántos jugadores se necesitan para jugar al Texas Hold'em?**
 
-Se necesitan al menos 2 jugadores y caben hasta 10. Con exactamente dos se llama heads-up y las ciegas se invierten — el botón pone la ciega pequeña y habla primero preflop, mientras que la ciega grande habla primero después del flop. Para una primera partida en casa, de 4 a 6 jugadores mantiene la acción rápida y fácil de seguir.
+A. Se necesitan al menos 2 jugadores y caben hasta 10. Con exactamente dos se llama heads-up y las ciegas se invierten — el botón pone la ciega pequeña y habla primero preflop, mientras que la ciega grande habla primero después del flop. Para una primera partida en casa, de 4 a 6 jugadores mantiene la acción rápida y fácil de seguir.
 
-### ¿Qué significa no-limit en el Texas Hold'em?
+**Q. ¿Qué significa no-limit en el Texas Hold'em?**
 
-No-Limit significa que puedes apostar cualquier cantidad hasta todas tus fichas en cualquier ronda de apuestas — eso es el "all-in". Es el formato por defecto y el más popular, incluido el Main Event de las WSOP. El Limit Hold'em limita cada apuesta a un tamaño fijo y el Pot-Limit la limita al tamaño actual del bote.
+A. No-Limit significa que puedes apostar cualquier cantidad hasta todas tus fichas en cualquier ronda de apuestas — eso es el "all-in". Es el formato por defecto y el más popular, incluido el Main Event de las WSOP. El Limit Hold'em limita cada apuesta a un tamaño fijo y el Pot-Limit la limita al tamaño actual del bote.
 
-### ¿Cuánto dura una mano de Texas Hold'em?
+**Q. ¿Cuánto dura una mano de Texas Hold'em?**
 
-Una sola mano suele durar entre 10 y 60 segundos, aunque un bote grande con varios jugadores y decisiones difíciles puede alargarse varios minutos. En una sesión casera de unas horas se juegan docenas de manos, así que nadie tiene que dedicar toda la noche a un solo reparto.
+A. Una sola mano suele durar entre 10 y 60 segundos, aunque un bote grande con varios jugadores y decisiones difíciles puede alargarse varios minutos. En una sesión casera de unas horas se juegan docenas de manos, así que nadie tiene que dedicar toda la noche a un solo reparto.
 
-### ¿Cuál es la primera regla del póker?
+**Q. ¿Cuál es la primera regla del póker?**
 
-La primera regla es sencilla: gana la mejor mano de cinco cartas — o el último jugador que quede en pie cuando todos los demás se retiran. Todo lo demás (ciegas, posición, apuestas) existe solo para llegar a ese momento. Si aprendes a leer qué mano gana, ya sabes lo esencial.
+A. La primera regla es sencilla: gana la mejor mano de cinco cartas — o el último jugador que quede en pie cuando todos los demás se retiran. Todo lo demás (ciegas, posición, apuestas) existe solo para llegar a ese momento. Si aprendes a leer qué mano gana, ya sabes lo esencial.
 
-### ¿Cuáles son los 4 palos del póker?
+**Q. ¿Cuáles son los 4 palos del póker?**
 
-Los cuatro palos son picas ♠, corazones ♥, diamantes ♦ y tréboles ♣. En el Texas Hold'em ==ningún palo vale más que otro==: dos colores del mismo tamaño se comparan por el número de las cartas, no por el palo. El palo solo importa para formar un color (cinco cartas del mismo palo), nunca para desempatar.
+A. Los cuatro palos son picas ♠, corazones ♥, diamantes ♦ y tréboles ♣. En el Texas Hold'em ==ningún palo vale más que otro==: dos colores del mismo tamaño se comparan por el número de las cartas, no por el palo. El palo solo importa para formar un color (cinco cartas del mismo palo), nunca para desempatar.
 
-### ¿Qué es lo que más gana en el póker?
+**Q. ¿Qué es lo que más gana en el póker?**
 
-La mano más alta es la escalera real (A-K-Q-J-10 del mismo palo), seguida de la escalera de color y el póker (cuatro iguales). En la práctica casi nunca las verás; ganan mucho más a menudo la pareja, la doble pareja y el color. Tienes el orden completo, de la más fuerte a la más débil, en la [jerarquía de manos del Texas Hold'em](/es/blog/holdem-hand-rankings).
+A. La mano más alta es la escalera real (A-K-Q-J-10 del mismo palo), seguida de la escalera de color y el póker (cuatro iguales). En la práctica casi nunca las verás; ganan mucho más a menudo la pareja, la doble pareja y el color. Tienes el orden completo, de la más fuerte a la más débil, en la [jerarquía de manos del Texas Hold'em](/es/blog/holdem-hand-rankings).
 
-### ¿Cuál es la carta que vale más en el póker?
+**Q. ¿Cuál es la carta que vale más en el póker?**
 
-El As es la carta de mayor valor: encabeza las manos altas (A-K-Q-J-10) y también sirve como la más baja en la rueda (A-2-3-4-5). Le siguen K, Q, J y el 10. Puedes ver cómo se usa dentro de cada mano en la [jerarquía de manos del Texas Hold'em](/es/blog/holdem-hand-rankings).
+A. El As es la carta de mayor valor: encabeza las manos altas (A-K-Q-J-10) y también sirve como la más baja en la rueda (A-2-3-4-5). Le siguen K, Q, J y el 10. Puedes ver cómo se usa dentro de cada mano en la [jerarquía de manos del Texas Hold'em](/es/blog/holdem-hand-rankings).
 
 ---
 

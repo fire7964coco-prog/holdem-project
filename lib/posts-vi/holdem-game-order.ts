@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Một ván Texas Hold'em diễn ra: đặt mù → chia hai lá bài tẩy → preflop → flop (3 lá) → turn (1 lá) → river (1 lá) → lật bài, tổng cộng bốn vòng cược.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-07-13",
+  updated: "2026-08-10",
   masterUpdated: "2026-07-02",
   keepImagesInBody: true,
   readTime: "16 phút",
@@ -341,31 +341,31 @@ Texas Hold'em mất ba mươi phút để học và cả đời để thành th�
 
 **Q. Trình tự chơi chính xác trong Texas Hold'em là gì?**
 
-Đặt mù → chia hai lá bài tẩy → cược preflop → lật flop (3 lá) và cược → turn (1 lá) và cược → river (lá cuối) và cược → lật bài (so bộ 5 lá tốt nhất).
+A. Đặt mù → chia hai lá bài tẩy → cược preflop → lật flop (3 lá) và cược → turn (1 lá) và cược → river (lá cuối) và cược → lật bài (so bộ 5 lá tốt nhất).
 
 **Q. Preflop và flop khác nhau thế nào?**
 
-Preflop là trước khi có lá bài chung nào — bạn quyết định chỉ dựa trên hai lá tẩy. Flop là sau khi ba lá bài chung được lật, nơi bạn đọc cả bài hiện có lẫn tiềm năng chờ của mình.
+A. Preflop là trước khi có lá bài chung nào — bạn quyết định chỉ dựa trên hai lá tẩy. Flop là sau khi ba lá bài chung được lật, nơi bạn đọc cả bài hiện có lẫn tiềm năng chờ của mình.
 
 **Q. Check và theo khác nhau thế nào?**
 
-Check nhường lượt mà không cược, và chỉ được khi chưa có cược nào trước mặt bạn. Theo là cân bằng cú cược của đối thủ. Nếu ai đó đã cược, bạn không thể check — phải theo, tố, hoặc bỏ bài.
+A. Check nhường lượt mà không cược, và chỉ được khi chưa có cược nào trước mặt bạn. Theo là cân bằng cú cược của đối thủ. Nếu ai đó đã cược, bạn không thể check — phải theo, tố, hoặc bỏ bài.
 
 **Q. Ở lật bài tôi có bắt buộc dùng cả hai lá bài tẩy không?**
 
-Không. Bạn tạo bộ 5 lá tốt nhất từ bất kỳ tổ hợp nào của hai lá tẩy và năm lá bài chung — kể cả dùng một lá, hoặc không dùng lá nào ("chơi bài trên bàn").
+A. Không. Bạn tạo bộ 5 lá tốt nhất từ bất kỳ tổ hợp nào của hai lá tẩy và năm lá bài chung — kể cả dùng một lá, hoặc không dùng lá nào ("chơi bài trên bàn").
 
 **Q. Tỷ lệ pot (pot odds) là gì?**
 
-Tỷ lệ pot là tỷ số giữa kích thước pot hiện tại và số tiền bạn phải theo. Nếu pot là 100.000 và đối thủ cược 20.000, bạn đang mạo hiểm 20.000 để thắng pot 120.000 (6:1). Nếu cơ hội thắng của bạn tốt hơn tỷ lệ đó, theo là có lời.
+A. Tỷ lệ pot là tỷ số giữa kích thước pot hiện tại và số tiền bạn phải theo. Nếu pot là 100.000 và đối thủ cược 20.000, bạn đang mạo hiểm 20.000 để thắng pot 120.000 (6:1). Nếu cơ hội thắng của bạn tốt hơn tỷ lệ đó, theo là có lời.
 
 **Q. Khi nào tôi nên all-in?**
 
-All-in nghĩa là cược mọi chip bạn có. Dùng với bài rất mạnh (the nuts), hoặc như một cú bluff để ép đối thủ bỏ bài. Một khi đã all-in bạn không thể cược tiếp, nhưng vẫn đủ tư cách nhận phần pot bạn đã cân. Khi các chồng chip lệch nhau, điều này tạo ra side pot — xem [luật all-in và side pot](/vi/blog/holdem-all-in-rules).
+A. All-in nghĩa là cược mọi chip bạn có. Dùng với bài rất mạnh (the nuts), hoặc như một cú bluff để ép đối thủ bỏ bài. Một khi đã all-in bạn không thể cược tiếp, nhưng vẫn đủ tư cách nhận phần pot bạn đã cân. Khi các chồng chip lệch nhau, điều này tạo ra side pot — xem [luật all-in và side pot](/vi/blog/holdem-all-in-rules).
 
 **Q. Một ván có bao nhiêu vòng cược?**
 
-Bốn: preflop, flop, turn, và river. Mù là cược bắt buộc, và lật bài không có cược.
+A. Bốn: preflop, flop, turn, và river. Mù là cược bắt buộc, và lật bài không có cược.
 
 ---
 

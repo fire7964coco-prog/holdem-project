@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "No Texas Hold'em cada jogador recebe 2 cartas fechadas, usa 5 cartas comunitárias, e a melhor mão de 5 cartas ganha depois de quatro rodadas de apostas.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-08-09",
+  updated: "2026-08-10",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -385,53 +385,53 @@ As mãos ficam mais fáceis de jogar quando você age mais tarde. Se você é o 
 
 ## Perguntas frequentes
 
-### Como se joga Texas Hold'em passo a passo?
+**Q. Como se joga Texas Hold'em passo a passo?**
 
-Pague os blinds, distribua duas cartas fechadas para cada jogador, rode as apostas do pré-flop, abra o flop, o turn e o river com apostas depois de cada street, e no showdown compare as melhores mãos de cinco cartas.
+A. Pague os blinds, distribua duas cartas fechadas para cada jogador, rode as apostas do pré-flop, abra o flop, o turn e o river com apostas depois de cada street, e no showdown compare as melhores mãos de cinco cartas.
 
-### Quem age primeiro no Texas Hold'em?
+**Q. Quem age primeiro no Texas Hold'em?**
 
-No pré-flop, o jogador à esquerda do big blind age primeiro. Depois do flop, o primeiro jogador ativo à esquerda do botão do dealer age primeiro, e o botão geralmente age por último.
+A. No pré-flop, o jogador à esquerda do big blind age primeiro. Depois do flop, o primeiro jogador ativo à esquerda do botão do dealer age primeiro, e o botão geralmente age por último.
 
-### Com quantas fichas se começa no Texas Hold'em?
+**Q. Com quantas fichas se começa no Texas Hold'em?**
 
-Para um jogo caseiro de iniciantes, dê a cada jogador cerca de 200 em fichas e use blinds 1/2. Um stack simples: 20 fichas de 1, 16 fichas de 5 e 4 fichas de 25.
+A. Para um jogo caseiro de iniciantes, dê a cada jogador cerca de 200 em fichas e use blinds 1/2. Um stack simples: 20 fichas de 1, 16 fichas de 5 e 4 fichas de 25.
 
-### Com quanto dinheiro se começa no Texas Hold'em?
+**Q. Com quanto dinheiro se começa no Texas Hold'em?**
 
-Para aprender, comece com fichas sem valor. Para jogos caseiros de dinheiro bem baixo, use um buy-in que todo mundo aceite perder, como $2 a $5 com blinds de $0,01/$0,02.
+A. Para aprender, comece com fichas sem valor. Para jogos caseiros de dinheiro bem baixo, use um buy-in que todo mundo aceite perder, como $2 a $5 com blinds de $0,01/$0,02.
 
-### Existe sequência baixa no Texas Hold'em?
+**Q. Existe sequência baixa no Texas Hold'em?**
 
-Sim. A-2-3-4-5 é uma sequência válida, chamada de wheel. É a sequência mais baixa possível. O Ás não dá a volta na sequência: J-Q-K-A-2 (ou Q-K-A-2-3) não vale — o Ás é ou a carta mais alta (A-K-Q-J-10) ou a mais baixa (A-2-3-4-5).
+A. Sim. A-2-3-4-5 é uma sequência válida, chamada de wheel. É a sequência mais baixa possível. O Ás não dá a volta na sequência: J-Q-K-A-2 (ou Q-K-A-2-3) não vale — o Ás é ou a carta mais alta (A-K-Q-J-10) ou a mais baixa (A-2-3-4-5).
 
-### Quantas mãos iniciais existem no Texas Hold'em?
+**Q. Quantas mãos iniciais existem no Texas Hold'em?**
 
-Existem 1.326 combinações exatas de duas cartas, mas os jogadores costumam agrupá-las em 169 tipos de mão inicial, como AA, AK do mesmo naipe ou 76 de naipes diferentes.
+A. Existem 1.326 combinações exatas de duas cartas, mas os jogadores costumam agrupá-las em 169 tipos de mão inicial, como AA, AK do mesmo naipe ou 76 de naipes diferentes.
 
-### Qual é a versão mais simples das regras do Texas Hold'em?
+**Q. Qual é a versão mais simples das regras do Texas Hold'em?**
 
-A versão mais simples: cada jogador recebe 2 cartas privadas. Cinco cartas compartilhadas são reveladas em três etapas (3, depois 1, depois 1). Você aposta depois de cada etapa. A melhor mão de 5 cartas, usando qualquer combinação das suas cartas com as compartilhadas, ganha. Se todos os outros foldarem, você ganha — não importa quais cartas tenha.
+A. A versão mais simples: cada jogador recebe 2 cartas privadas. Cinco cartas compartilhadas são reveladas em três etapas (3, depois 1, depois 1). Você aposta depois de cada etapa. A melhor mão de 5 cartas, usando qualquer combinação das suas cartas com as compartilhadas, ganha. Se todos os outros foldarem, você ganha — não importa quais cartas tenha.
 
-### O que significam os blinds nas regras do Texas Hold'em?
+**Q. O que significam os blinds nas regras do Texas Hold'em?**
 
-Os dois jogadores à esquerda do botão do dealer precisam pagar apostas obrigatórias antes das cartas serem distribuídas. O primeiro paga o small blind, o segundo paga o big blind (geralmente o dobro). Essas apostas garantem que sempre há dinheiro no pote para disputar. Todos os outros jogadores precisam, no mínimo, igualar o big blind para continuar na mão.
+A. Os dois jogadores à esquerda do botão do dealer precisam pagar apostas obrigatórias antes das cartas serem distribuídas. O primeiro paga o small blind, o segundo paga o big blind (geralmente o dobro). Essas apostas garantem que sempre há dinheiro no pote para disputar. Todos os outros jogadores precisam, no mínimo, igualar o big blind para continuar na mão.
 
-### Qual é a versão rápida das regras do Texas Hold'em?
+**Q. Qual é a versão rápida das regras do Texas Hold'em?**
 
-Blinds → 2 cartas fechadas → apostas pré-flop → 3 cartas comunitárias (flop) + apostas → 1 carta (turn) + apostas → 1 carta (river) + apostas → a melhor mão ganha. Total: quatro rodadas de apostas, cinco cartas comunitárias, um vencedor.
+A. Blinds → 2 cartas fechadas → apostas pré-flop → 3 cartas comunitárias (flop) + apostas → 1 carta (turn) + apostas → 1 carta (river) + apostas → a melhor mão ganha. Total: quatro rodadas de apostas, cinco cartas comunitárias, um vencedor.
 
-### Quantos jogadores são necessários para jogar Texas Hold'em?
+**Q. Quantos jogadores são necessários para jogar Texas Hold'em?**
 
-Você precisa de pelo menos 2 jogadores e pode sentar até 10. Com exatamente dois, chama-se heads-up, e os blinds se invertem — o botão paga o small blind e age primeiro no pré-flop, enquanto o big blind age primeiro depois do flop. Para um primeiro jogo em casa, 4 a 6 jogadores mantém a ação rápida e fácil de acompanhar.
+A. Você precisa de pelo menos 2 jogadores e pode sentar até 10. Com exatamente dois, chama-se heads-up, e os blinds se invertem — o botão paga o small blind e age primeiro no pré-flop, enquanto o big blind age primeiro depois do flop. Para um primeiro jogo em casa, 4 a 6 jogadores mantém a ação rápida e fácil de acompanhar.
 
-### O que significa no-limit no Texas Hold'em?
+**Q. O que significa no-limit no Texas Hold'em?**
 
-No-Limit significa que você pode apostar qualquer valor, até todas as suas fichas, em qualquer rodada de apostas — esse é o famoso "all-in". É o formato padrão e mais popular, incluindo o Main Event da WSOP. Já no Limit Hold'em, cada aposta tem um tamanho fixo; e no Pot-Limit, a aposta é limitada ao tamanho atual do pote.
+A. No-Limit significa que você pode apostar qualquer valor, até todas as suas fichas, em qualquer rodada de apostas — esse é o famoso "all-in". É o formato padrão e mais popular, incluindo o Main Event da WSOP. Já no Limit Hold'em, cada aposta tem um tamanho fixo; e no Pot-Limit, a aposta é limitada ao tamanho atual do pote.
 
-### Quanto tempo dura uma mão de Texas Hold'em?
+**Q. Quanto tempo dura uma mão de Texas Hold'em?**
 
-Uma única mão costuma levar de 10 a 60 segundos, embora um pote grande com vários jogadores e decisões difíceis possa levar vários minutos. Uma sessão casual em casa de algumas horas passa por dezenas de mãos, então ninguém precisa dedicar a noite inteira a uma só rodada.
+A. Uma única mão costuma levar de 10 a 60 segundos, embora um pote grande com vários jogadores e decisões difíceis possa levar vários minutos. Uma sessão casual em casa de algumas horas passa por dezenas de mãos, então ninguém precisa dedicar a noite inteira a uma só rodada.
 
 ---
 

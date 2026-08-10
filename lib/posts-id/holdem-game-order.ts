@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Satu hand Texas Hold'em berjalan begini: pasang blinds → bagikan dua kartu tertutup → preflop → flop (3 kartu) → turn (1 kartu) → river (1 kartu) → showdown, dengan total empat ronde taruhan.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-07-02",
+  updated: "2026-08-10",
   keepImagesInBody: true,
   readTime: "16 menit",
   emoji: "🎬",
@@ -340,31 +340,31 @@ Texas Hold'em butuh tiga puluh menit untuk dipelajari dan seumur hidup untuk dik
 
 **Q. Bagaimana urutan main yang persis di Texas Hold'em?**
 
-Pasang blinds → bagikan dua kartu tertutup → taruhan preflop → buka flop (3 kartu) lalu bertaruh → turn (1 kartu) lalu bertaruh → river (kartu terakhir) lalu bertaruh → showdown (lima kartu terbaik dibandingkan).
+A. Pasang blinds → bagikan dua kartu tertutup → taruhan preflop → buka flop (3 kartu) lalu bertaruh → turn (1 kartu) lalu bertaruh → river (kartu terakhir) lalu bertaruh → showdown (lima kartu terbaik dibandingkan).
 
 **Q. Apa bedanya preflop dan flop?**
 
-Preflop adalah sebelum satu pun kartu bersama terbuka — Anda memutuskan hanya berdasarkan dua kartu tertutup Anda. Flop adalah setelah tiga kartu bersama dibuka, saat Anda membaca kartu Anda sekarang sekaligus potensi draw Anda.
+A. Preflop adalah sebelum satu pun kartu bersama terbuka — Anda memutuskan hanya berdasarkan dua kartu tertutup Anda. Flop adalah setelah tiga kartu bersama dibuka, saat Anda membaca kartu Anda sekarang sekaligus potensi draw Anda.
 
 **Q. Apa bedanya cek dan call?**
 
-Cek melewatkan giliran tanpa bertaruh, dan hanya mungkin kalau tidak ada taruhan di depan Anda. Call menyamai taruhan lawan. Kalau ada yang sudah bertaruh, Anda tidak bisa cek — Anda harus call, raise, atau fold.
+A. Cek melewatkan giliran tanpa bertaruh, dan hanya mungkin kalau tidak ada taruhan di depan Anda. Call menyamai taruhan lawan. Kalau ada yang sudah bertaruh, Anda tidak bisa cek — Anda harus call, raise, atau fold.
 
 **Q. Apakah saya wajib memakai kedua kartu tertutup saya di showdown?**
 
-Tidak. Anda membentuk lima kartu terbaik dari kombinasi apa pun antara dua kartu tertutup Anda dan lima kartu bersama — termasuk memakai satu saja, atau tidak sama sekali ("main board").
+A. Tidak. Anda membentuk lima kartu terbaik dari kombinasi apa pun antara dua kartu tertutup Anda dan lima kartu bersama — termasuk memakai satu saja, atau tidak sama sekali ("main board").
 
 **Q. Apa itu pot odds?**
 
-Pot odds adalah perbandingan ukuran pot saat itu dengan jumlah yang harus Anda call. Kalau pot-nya 100.000 dan lawan bertaruh 20.000, Anda mempertaruhkan 20.000 untuk memenangkan pot 120.000 (6:1). Kalau peluang menang Anda lebih baik dari odds itu, call-nya menguntungkan.
+A. Pot odds adalah perbandingan ukuran pot saat itu dengan jumlah yang harus Anda call. Kalau pot-nya 100.000 dan lawan bertaruh 20.000, Anda mempertaruhkan 20.000 untuk memenangkan pot 120.000 (6:1). Kalau peluang menang Anda lebih baik dari odds itu, call-nya menguntungkan.
 
 **Q. Kapan sebaiknya saya all-in?**
 
-All-in berarti mempertaruhkan semua chip yang Anda punya. Pakai dengan kartu yang sangat kuat (the nuts), atau sebagai bluff untuk membuat lawan fold. Begitu Anda all-in, Anda tidak bisa bertaruh lagi, tapi Anda tetap berhak atas bagian pot yang Anda samai. Saat jumlah chip pemain berbeda, terbentuklah side pot — lihat [aturan all-in dan side pot](/id/blog/holdem-all-in-rules).
+A. All-in berarti mempertaruhkan semua chip yang Anda punya. Pakai dengan kartu yang sangat kuat (the nuts), atau sebagai bluff untuk membuat lawan fold. Begitu Anda all-in, Anda tidak bisa bertaruh lagi, tapi Anda tetap berhak atas bagian pot yang Anda samai. Saat jumlah chip pemain berbeda, terbentuklah side pot — lihat [aturan all-in dan side pot](/id/blog/holdem-all-in-rules).
 
 **Q. Ada berapa ronde taruhan dalam satu hand?**
 
-Empat: preflop, flop, turn, dan river. Blinds adalah taruhan wajib, dan di showdown tidak ada taruhan lagi.
+A. Empat: preflop, flop, turn, dan river. Blinds adalah taruhan wajib, dan di showdown tidak ada taruhan lagi.
 
 ---
 

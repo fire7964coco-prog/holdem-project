@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Nel Texas Hold'em ogni giocatore riceve 2 carte personali, si usano 5 carte comuni e, dopo quattro giri di puntate, vince la migliore mano di 5 carte.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-08-09",
+  updated: "2026-08-10",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -384,53 +384,53 @@ Le mani sono più facili da giocare quando parli più tardi. Se sei il primo a p
 
 ## FAQ
 
-### Come si gioca a Texas Hold'em passo dopo passo?
+**Q. Come si gioca a Texas Hold'em passo dopo passo?**
 
-Metti i bui, dai due carte personali a ogni giocatore, svolgi il giro di puntate preflop, scopri flop, turn e river con una puntata dopo ogni strada, poi confronta le migliori mani di cinque carte allo showdown.
+A. Metti i bui, dai due carte personali a ogni giocatore, svolgi il giro di puntate preflop, scopri flop, turn e river con una puntata dopo ogni strada, poi confronta le migliori mani di cinque carte allo showdown.
 
-### Chi parla per primo nel Texas Hold'em?
+**Q. Chi parla per primo nel Texas Hold'em?**
 
-Nel preflop parla per primo il giocatore a sinistra del grande buio. Dopo il flop parla per primo il primo giocatore attivo a sinistra del bottone del mazziere, e il bottone di solito parla per ultimo.
+A. Nel preflop parla per primo il giocatore a sinistra del grande buio. Dopo il flop parla per primo il primo giocatore attivo a sinistra del bottone del mazziere, e il bottone di solito parla per ultimo.
 
-### Con quante fiches si inizia a Texas Hold'em?
+**Q. Con quante fiches si inizia a Texas Hold'em?**
 
-Per una partita casalinga da principianti, dai a ogni giocatore un valore di circa 200 fiches e usa bui 1/2. Uno stack semplice è 20 fiches da 1, 16 fiches da 5 e 4 fiches da 25.
+A. Per una partita casalinga da principianti, dai a ogni giocatore un valore di circa 200 fiches e usa bui 1/2. Uno stack semplice è 20 fiches da 1, 16 fiches da 5 e 4 fiches da 25.
 
-### Con quanti soldi si inizia a Texas Hold'em?
+**Q. Con quanti soldi si inizia a Texas Hold'em?**
 
-Per imparare, parti con le fiches da gioco. Per piccolissimi cash game casalinghi con soldi veri, usa un buy-in che tutti siano tranquilli di perdere, per esempio da $2 a $5 con bui $0,01/$0,02.
+A. Per imparare, parti con le fiches da gioco. Per piccolissimi cash game casalinghi con soldi veri, usa un buy-in che tutti siano tranquilli di perdere, per esempio da $2 a $5 con bui $0,01/$0,02.
 
-### Esiste una scala bassa nel Texas Hold'em?
+**Q. Esiste una scala bassa nel Texas Hold'em?**
 
-Sì. A-2-3-4-5 è una scala valida ed è spesso chiamata "wheel" (la ruota). È la scala più bassa possibile. L'asso non può girare in mezzo: J-Q-K-A-2 non è una scala. L'asso vale o come carta più alta (A-K-Q-J-10) o come la più bassa (A-2-3-4-5), mai nel mezzo.
+A. Sì. A-2-3-4-5 è una scala valida ed è spesso chiamata "wheel" (la ruota). È la scala più bassa possibile. L'asso non può girare in mezzo: J-Q-K-A-2 non è una scala. L'asso vale o come carta più alta (A-K-Q-J-10) o come la più bassa (A-2-3-4-5), mai nel mezzo.
 
-### Quante mani iniziali possibili esistono nel Texas Hold'em?
+**Q. Quante mani iniziali possibili esistono nel Texas Hold'em?**
 
-Esistono 1.326 combinazioni esatte di due carte, ma i giocatori di solito le raggruppano in 169 tipi di mani iniziali, come AA, AK suited o 76 offsuit.
+A. Esistono 1.326 combinazioni esatte di due carte, ma i giocatori di solito le raggruppano in 169 tipi di mani iniziali, come AA, AK suited o 76 offsuit.
 
-### Quali sono le regole del Texas Hold'em spiegate facili — la versione più semplice?
+**Q. Quali sono le regole del Texas Hold'em spiegate facili — la versione più semplice?**
 
-La versione più semplice: ogni giocatore riceve 2 carte private. Cinque carte condivise vengono scoperte in tre fasi (3, poi 1, poi 1). Punti dopo ogni fase. Vince la migliore mano di 5 carte usando qualsiasi mix delle tue carte e di quelle condivise. Se tutti gli altri passano, vinci — a prescindere dalle carte che hai in mano.
+A. La versione più semplice: ogni giocatore riceve 2 carte private. Cinque carte condivise vengono scoperte in tre fasi (3, poi 1, poi 1). Punti dopo ogni fase. Vince la migliore mano di 5 carte usando qualsiasi mix delle tue carte e di quelle condivise. Se tutti gli altri passano, vinci — a prescindere dalle carte che hai in mano.
 
-### Regole del Texas Hold'em spiegate facili — cosa significano i bui?
+**Q. Regole del Texas Hold'em spiegate facili — cosa significano i bui?**
 
-I due giocatori alla sinistra del bottone del mazziere devono mettere puntate obbligate prima che vengano date le carte. Il primo mette il piccolo buio, il secondo il grande buio (di solito il doppio). Queste puntate garantiscono che ci siano sempre soldi nel piatto per cui combattere. Ogni altro giocatore deve almeno pareggiare il grande buio per restare nella mano.
+A. I due giocatori alla sinistra del bottone del mazziere devono mettere puntate obbligate prima che vengano date le carte. Il primo mette il piccolo buio, il secondo il grande buio (di solito il doppio). Queste puntate garantiscono che ci siano sempre soldi nel piatto per cui combattere. Ogni altro giocatore deve almeno pareggiare il grande buio per restare nella mano.
 
-### Qual è la versione rapida delle regole del Texas Hold'em?
+**Q. Qual è la versione rapida delle regole del Texas Hold'em?**
 
-Metti i bui → dai 2 carte personali → puntate preflop → scopri 3 carte comuni (flop) + puntate → scopri 1 carta (turn) + puntate → scopri 1 carta (river) + puntate → vince la mano migliore. In totale: quattro giri di puntate, cinque carte comuni, un vincitore.
+A. Metti i bui → dai 2 carte personali → puntate preflop → scopri 3 carte comuni (flop) + puntate → scopri 1 carta (turn) + puntate → scopri 1 carta (river) + puntate → vince la mano migliore. In totale: quattro giri di puntate, cinque carte comuni, un vincitore.
 
-### Quanti giocatori servono per giocare a Texas Hold'em?
+**Q. Quanti giocatori servono per giocare a Texas Hold'em?**
 
-Servono almeno 2 giocatori e ci si può sedere fino a 10. Con esattamente due giocatori si chiama heads-up e i bui si invertono — il bottone mette il piccolo buio e parla per primo nel preflop, mentre il grande buio parla per primo dopo il flop. Per una prima partita a casa, da 4 a 6 giocatori tiene l'azione veloce e facile da seguire.
+A. Servono almeno 2 giocatori e ci si può sedere fino a 10. Con esattamente due giocatori si chiama heads-up e i bui si invertono — il bottone mette il piccolo buio e parla per primo nel preflop, mentre il grande buio parla per primo dopo il flop. Per una prima partita a casa, da 4 a 6 giocatori tiene l'azione veloce e facile da seguire.
 
-### Cosa significa no-limit nel Texas Hold'em?
+**Q. Cosa significa no-limit nel Texas Hold'em?**
 
-No-Limit significa che puoi puntare qualsiasi importo fino a tutte le tue fiches in ogni giro di puntate — è la mossa "all-in". È il formato predefinito e più popolare, incluso il Main Event delle WSOP. Il Limit Hold'em fissa ogni puntata a una dimensione stabilita, mentre il Pot-Limit limita la tua puntata alla dimensione attuale del piatto.
+A. No-Limit significa che puoi puntare qualsiasi importo fino a tutte le tue fiches in ogni giro di puntate — è la mossa "all-in". È il formato predefinito e più popolare, incluso il Main Event delle WSOP. Il Limit Hold'em fissa ogni puntata a una dimensione stabilita, mentre il Pot-Limit limita la tua puntata alla dimensione attuale del piatto.
 
-### Quanto dura una mano di Texas Hold'em?
+**Q. Quanto dura una mano di Texas Hold'em?**
 
-Una singola mano di solito dura circa dai 10 ai 60 secondi, anche se un grosso piatto multiway con decisioni difficili può durare diversi minuti. Una sessione casalinga rilassata di qualche ora fa giocare decine di mani, quindi nessuno deve dedicare un'intera serata a una sola smazzata.
+A. Una singola mano di solito dura circa dai 10 ai 60 secondi, anche se un grosso piatto multiway con decisioni difficili può durare diversi minuti. Una sessione casalinga rilassata di qualche ora fa giocare decine di mani, quindi nessuno deve dedicare un'intera serata a una sola smazzata.
 
 ---
 

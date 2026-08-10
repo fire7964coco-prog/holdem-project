@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Di Texas Hold'em, setiap pemain menerima 2 hole cards, ada 5 kartu bersama di tengah meja, dan tangan poker 5 kartu terbaik menang setelah empat ronde taruhan.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-08-09",
+  updated: "2026-08-10",
   keepImagesInBody: true,
   readTime: "14 menit",
   emoji: "♠️",
@@ -384,53 +384,53 @@ Tangan lebih mudah dimainkan kalau Anda bertindak belakangan. Kalau Anda yang pe
 
 ## FAQ
 
-### Bagaimana cara main Texas Hold'em langkah demi langkah?
+**Q. Bagaimana cara main Texas Hold'em langkah demi langkah?**
 
-Pasang blind, bagikan dua hole cards ke setiap pemain, jalankan taruhan preflop, buka flop, turn, dan river dengan taruhan setelah tiap street, lalu bandingkan tangan lima kartu terbaik di showdown.
+A. Pasang blind, bagikan dua hole cards ke setiap pemain, jalankan taruhan preflop, buka flop, turn, dan river dengan taruhan setelah tiap street, lalu bandingkan tangan lima kartu terbaik di showdown.
 
-### Siapa yang jalan duluan di Texas Hold'em?
+**Q. Siapa yang jalan duluan di Texas Hold'em?**
 
-Preflop, pemain di kiri big blind bertindak pertama. Setelah flop, pemain aktif pertama di kiri tombol dealer bertindak pertama, dan Button biasanya bertindak terakhir.
+A. Preflop, pemain di kiri big blind bertindak pertama. Setelah flop, pemain aktif pertama di kiri tombol dealer bertindak pertama, dan Button biasanya bertindak terakhir.
 
-### Chip apa yang dipakai untuk mulai main Texas Hold'em?
+**Q. Chip apa yang dipakai untuk mulai main Texas Hold'em?**
 
-Untuk home game pemula, beri setiap pemain chip senilai sekitar 200 dan pakai blind 1/2. Susunan sederhananya: 20 chip bernilai 1, 16 chip bernilai 5, dan 4 chip bernilai 25.
+A. Untuk home game pemula, beri setiap pemain chip senilai sekitar 200 dan pakai blind 1/2. Susunan sederhananya: 20 chip bernilai 1, 16 chip bernilai 5, dan 4 chip bernilai 25.
 
-### Berapa uang yang dipakai untuk mulai main Texas Hold'em?
+**Q. Berapa uang yang dipakai untuk mulai main Texas Hold'em?**
 
-Untuk belajar, mulailah dengan chip mainan. Untuk home game uang sungguhan skala kecil, pakai buy-in yang semua orang rela kehilangannya, misalnya $2 sampai $5 dengan blind $0,01/$0,02.
+A. Untuk belajar, mulailah dengan chip mainan. Untuk home game uang sungguhan skala kecil, pakai buy-in yang semua orang rela kehilangannya, misalnya $2 sampai $5 dengan blind $0,01/$0,02.
 
-### Apakah ada straight kecil di Texas Hold'em?
+**Q. Apakah ada straight kecil di Texas Hold'em?**
 
-Ada. A-2-3-4-5 adalah Straight yang sah dan sering disebut wheel. Ini Straight paling rendah. As tidak bisa "melingkar" (wrap around): J-Q-K-A-2 bukan Straight. As hanya bisa jadi kartu tertinggi (A-K-Q-J-10) atau terendah (A-2-3-4-5), tidak pernah di tengah.
+A. Ada. A-2-3-4-5 adalah Straight yang sah dan sering disebut wheel. Ini Straight paling rendah. As tidak bisa "melingkar" (wrap around): J-Q-K-A-2 bukan Straight. As hanya bisa jadi kartu tertinggi (A-K-Q-J-10) atau terendah (A-2-3-4-5), tidak pernah di tengah.
 
-### Berapa banyak kartu awal yang mungkin di Texas Hold'em?
+**Q. Berapa banyak kartu awal yang mungkin di Texas Hold'em?**
 
-Ada 1.326 kombinasi dua kartu yang persis, tapi pemain biasanya mengelompokkannya jadi 169 tipe kartu awal, seperti AA, AK suited, atau 76 offsuit.
+A. Ada 1.326 kombinasi dua kartu yang persis, tapi pemain biasanya mengelompokkannya jadi 169 tipe kartu awal, seperti AA, AK suited, atau 76 offsuit.
 
-### Apa aturan Texas Hold'em versi paling sederhana untuk pemula total?
+**Q. Apa aturan Texas Hold'em versi paling sederhana untuk pemula total?**
 
-Versi paling sederhana: setiap pemain mendapat 2 kartu pribadi. Lima kartu bersama dibuka dalam tiga tahap (3, lalu 1, lalu 1). Anda bertaruh setelah tiap tahap. Tangan 5 kartu terbaik dari kombinasi apa pun antara kartu Anda dan kartu bersama yang menang. Kalau semua pemain lain fold, Anda menang — apa pun kartu Anda.
+A. Versi paling sederhana: setiap pemain mendapat 2 kartu pribadi. Lima kartu bersama dibuka dalam tiga tahap (3, lalu 1, lalu 1). Anda bertaruh setelah tiap tahap. Tangan 5 kartu terbaik dari kombinasi apa pun antara kartu Anda dan kartu bersama yang menang. Kalau semua pemain lain fold, Anda menang — apa pun kartu Anda.
 
-### Aturan Texas Hold'em untuk pemula total — apa arti blind?
+**Q. Aturan Texas Hold'em untuk pemula total — apa arti blind?**
 
-Dua pemain di kiri tombol dealer wajib memasang taruhan sebelum kartu dibagikan. Pemain pertama memasang small blind, pemain kedua memasang big blind (biasanya dua kali lipatnya). Taruhan ini menjamin selalu ada uang di pot yang diperebutkan. Pemain lain minimal harus menyamai big blind untuk tetap di tangan itu.
+A. Dua pemain di kiri tombol dealer wajib memasang taruhan sebelum kartu dibagikan. Pemain pertama memasang small blind, pemain kedua memasang big blind (biasanya dua kali lipatnya). Taruhan ini menjamin selalu ada uang di pot yang diperebutkan. Pemain lain minimal harus menyamai big blind untuk tetap di tangan itu.
 
-### Apa versi cepat aturan Texas Hold'em?
+**Q. Apa versi cepat aturan Texas Hold'em?**
 
-Pasang blind → bagikan 2 hole cards → taruhan preflop → buka 3 kartu bersama (flop) + taruhan → buka 1 kartu (turn) + taruhan → buka 1 kartu (river) + taruhan → tangan terbaik menang. Total: empat ronde taruhan, lima kartu bersama, satu pemenang.
+A. Pasang blind → bagikan 2 hole cards → taruhan preflop → buka 3 kartu bersama (flop) + taruhan → buka 1 kartu (turn) + taruhan → buka 1 kartu (river) + taruhan → tangan terbaik menang. Total: empat ronde taruhan, lima kartu bersama, satu pemenang.
 
-### Berapa pemain yang dibutuhkan untuk main Texas Hold'em?
+**Q. Berapa pemain yang dibutuhkan untuk main Texas Hold'em?**
 
-Minimal 2 pemain dan maksimal 10. Dengan tepat dua pemain, permainan disebut heads-up dan posisi blind dibalik — Button memasang small blind dan bertindak duluan preflop, sementara big blind bertindak duluan setelah flop. Untuk home game pertama, 4 sampai 6 pemain menjaga aksi tetap cepat dan mudah diikuti.
+A. Minimal 2 pemain dan maksimal 10. Dengan tepat dua pemain, permainan disebut heads-up dan posisi blind dibalik — Button memasang small blind dan bertindak duluan preflop, sementara big blind bertindak duluan setelah flop. Untuk home game pertama, 4 sampai 6 pemain menjaga aksi tetap cepat dan mudah diikuti.
 
-### Apa arti no-limit di Texas Hold'em?
+**Q. Apa arti no-limit di Texas Hold'em?**
 
-No-Limit berarti Anda bisa bertaruh berapa pun sampai seluruh chip Anda di ronde taruhan mana pun — itulah gerakan "all-in". Ini format default dan paling populer, termasuk di Main Event WSOP. Limit Hold'em membatasi tiap taruhan ke ukuran tetap, dan Pot-Limit membatasi taruhan Anda ke ukuran pot saat itu.
+A. No-Limit berarti Anda bisa bertaruh berapa pun sampai seluruh chip Anda di ronde taruhan mana pun — itulah gerakan "all-in". Ini format default dan paling populer, termasuk di Main Event WSOP. Limit Hold'em membatasi tiap taruhan ke ukuran tetap, dan Pot-Limit membatasi taruhan Anda ke ukuran pot saat itu.
 
-### Berapa lama satu tangan Texas Hold'em berlangsung?
+**Q. Berapa lama satu tangan Texas Hold'em berlangsung?**
 
-Satu tangan biasanya memakan waktu sekitar 10 sampai 60 detik, meskipun pot besar dengan banyak pemain dan keputusan sulit bisa berjalan beberapa menit. Sesi santai di rumah selama beberapa jam bisa memainkan puluhan tangan, jadi tidak ada yang harus menghabiskan semalaman untuk satu pembagian kartu.
+A. Satu tangan biasanya memakan waktu sekitar 10 sampai 60 detik, meskipun pot besar dengan banyak pemain dan keputusan sulit bisa berjalan beberapa menit. Sesi santai di rumah selama beberapa jam bisa memainkan puluhan tangan, jadi tidak ada yang harus menghabiskan semalaman untuk satu pembagian kartu.
 
 ---
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Bir Texas Hold'em eli şöyle ilerler: blind koy → 2 kapalı kart dağıt → preflop → flop (3 kart) → turn (1 kart) → river (1 kart) → showdown, toplam 4 bahis turuyla.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-07-13",
+  updated: "2026-08-10",
   masterUpdated: "2026-07-02",
   keepImagesInBody: true,
   readTime: "16 dk",
@@ -339,33 +339,33 @@ Texas Hold'em otuz dakikada öğrenilir ama bir ömür boyu ustalaşılır. Yine
 
 ## Sık sorulan sorular (SSS)
 
-**S. Bir Texas Hold'em elinin sırası tam olarak nasıldır?**
+**Q. Bir Texas Hold'em elinin sırası tam olarak nasıldır?**
 
-Zorunlu blind → 2 hole kart dağıt → preflop turu → flop (3 kart) ve bahis → turn (1 kart) ve bahis → river (son kart) ve bahis → showdown (en iyi 5 kart karşılaştırılır).
+A. Zorunlu blind → 2 hole kart dağıt → preflop turu → flop (3 kart) ve bahis → turn (1 kart) ve bahis → river (son kart) ve bahis → showdown (en iyi 5 kart karşılaştırılır).
 
-**S. Preflop ile flop arasındaki fark nedir?**
+**Q. Preflop ile flop arasındaki fark nedir?**
 
-Preflop, henüz ortak kart yokken olan aşamadır — yalnızca iki hole kartınla karar verirsin. Flop, üç ortak kart açıldıktan sonradır; burada hem mevcut elini hem de çekiş potansiyelini okursun.
+A. Preflop, henüz ortak kart yokken olan aşamadır — yalnızca iki hole kartınla karar verirsin. Flop, üç ortak kart açıldıktan sonradır; burada hem mevcut elini hem de çekiş potansiyelini okursun.
 
-**S. Check ile call arasındaki fark nedir?**
+**Q. Check ile call arasındaki fark nedir?**
 
-Check, önünde bahis yokken bahis yapmadan sırayı geçmektir ve yalnızca önünde bahis yokken mümkündür. Call ise rakibin bahsine eşitlemektir. Biri bahis yaptıysa check diyemezsin — call, raise ya da fold demelisin.
+A. Check, önünde bahis yokken bahis yapmadan sırayı geçmektir ve yalnızca önünde bahis yokken mümkündür. Call ise rakibin bahsine eşitlemektir. Biri bahis yaptıysa check diyemezsin — call, raise ya da fold demelisin.
 
-**S. Showdown'da iki hole kartımı da kullanmak zorunda mıyım?**
+**Q. Showdown'da iki hole kartımı da kullanmak zorunda mıyım?**
 
-Hayır. En iyi beş kartlık eli, iki hole kart ve beş ortak kartın herhangi bir kombinasyonundan oluşturursun — hatta yalnızca birini ya da hiçbirini ("board oynamak") kullanabilirsin.
+A. Hayır. En iyi beş kartlık eli, iki hole kart ve beş ortak kartın herhangi bir kombinasyonundan oluşturursun — hatta yalnızca birini ya da hiçbirini ("board oynamak") kullanabilirsin.
 
-**S. Pot oranı (pot odds) nedir?**
+**Q. Pot oranı (pot odds) nedir?**
 
-Pot oranı, mevcut pot büyüklüğü ile görmen gereken miktarın oranıdır. Pot 100.000 ve rakip 20.000 bahis yaptıysa, 120.000'lik potu kazanmak için 20.000 riske edersin (6:1). Kazanma ihtimalin bu orandan iyiyse call kârlıdır.
+A. Pot oranı, mevcut pot büyüklüğü ile görmen gereken miktarın oranıdır. Pot 100.000 ve rakip 20.000 bahis yaptıysa, 120.000'lik potu kazanmak için 20.000 riske edersin (6:1). Kazanma ihtimalin bu orandan iyiyse call kârlıdır.
 
-**S. Ne zaman all-in gitmeliyim?**
+**Q. Ne zaman all-in gitmeliyim?**
 
-All-in, elindeki tüm çipleri koymak demektir. Çok güçlü bir elin (nuts) varken ya da rakibi fold ettirmek için blöf olarak kullan. All-in'den sonra daha fazla bahis yapamazsın ama eşitlediğin pot payı üzerinde hakkın kalır. Stack'ler farklı olduğunda bu yan pot (side pot) yaratır — [all-in kuralları ve yan potlar](/tr/blog/holdem-all-in-rules) yazısına bak.
+A. All-in, elindeki tüm çipleri koymak demektir. Çok güçlü bir elin (nuts) varken ya da rakibi fold ettirmek için blöf olarak kullan. All-in'den sonra daha fazla bahis yapamazsın ama eşitlediğin pot payı üzerinde hakkın kalır. Stack'ler farklı olduğunda bu yan pot (side pot) yaratır — [all-in kuralları ve yan potlar](/tr/blog/holdem-all-in-rules) yazısına bak.
 
-**S. Bir elde kaç bahis turu vardır?**
+**Q. Bir elde kaç bahis turu vardır?**
 
-Dört: preflop, flop, turn ve river. Blind zorunlu bir bahistir ve showdown'da bahis yoktur.
+A. Dört: preflop, flop, turn ve river. Blind zorunlu bir bahistir ve showdown'da bahis yoktur.
 
 ---
 

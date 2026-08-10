@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Dalam Texas Hold'em, setiap pemain menerima 2 kad pemula, 5 kad komuniti dikongsi bersama, dan tangan poker 5 kad terbaik menang selepas empat pusingan pertaruhan.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-08-09",
+  updated: "2026-08-10",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 minit",
@@ -385,53 +385,53 @@ Tangan lebih mudah dimainkan bila anda bertindak kemudian. Jika anda yang pertam
 
 ## Soalan Lazim
 
-### Bagaimana cara main Texas Hold'em langkah demi langkah?
+**Q. Bagaimana cara main Texas Hold'em langkah demi langkah?**
 
-Letakkan blinds, edar dua kad pemula kepada setiap pemain, jalankan pertaruhan pre-flop, buka flop, turn dan river dengan pertaruhan selepas setiap street, kemudian bandingkan tangan lima kad terbaik semasa showdown.
+A. Letakkan blinds, edar dua kad pemula kepada setiap pemain, jalankan pertaruhan pre-flop, buka flop, turn dan river dengan pertaruhan selepas setiap street, kemudian bandingkan tangan lima kad terbaik semasa showdown.
 
-### Siapa mula dulu dalam Texas Hold'em?
+**Q. Siapa mula dulu dalam Texas Hold'em?**
 
-Pre-flop, pemain di kiri Big Blind bertindak dahulu. Selepas flop, pemain aktif pertama di kiri butang pengedar bertindak dahulu, dan Button biasanya bertindak terakhir.
+A. Pre-flop, pemain di kiri Big Blind bertindak dahulu. Selepas flop, pemain aktif pertama di kiri butang pengedar bertindak dahulu, dan Button biasanya bertindak terakhir.
 
-### Cip apa anda mula dalam Texas Hold'em?
+**Q. Cip apa anda mula dalam Texas Hold'em?**
 
-Untuk permainan rumah pemula, beri setiap pemain cip bernilai sekitar 200 dan guna blinds 1/2. Stack mudah ialah 20 cip bernilai 1, 16 cip bernilai 5, dan 4 cip bernilai 25.
+A. Untuk permainan rumah pemula, beri setiap pemain cip bernilai sekitar 200 dan guna blinds 1/2. Stack mudah ialah 20 cip bernilai 1, 16 cip bernilai 5, dan 4 cip bernilai 25.
 
-### Berapa banyak wang anda mula dalam Texas Hold'em?
+**Q. Berapa banyak wang anda mula dalam Texas Hold'em?**
 
-Untuk belajar, mulakan dengan cip permainan. Untuk permainan rumah wang sebenar yang kecil, guna buy-in yang semua orang selesa untuk kalah, seperti $2 hingga $5 pada blinds $0.01/$0.02.
+A. Untuk belajar, mulakan dengan cip permainan. Untuk permainan rumah wang sebenar yang kecil, guna buy-in yang semua orang selesa untuk kalah, seperti $2 hingga $5 pada blinds $0.01/$0.02.
 
-### Adakah wujud straight kecil dalam Texas Hold'em?
+**Q. Adakah wujud straight kecil dalam Texas Hold'em?**
 
-Ya. A-2-3-4-5 ialah Straight yang sah dan sering dipanggil "wheel". Ia Straight paling rendah yang mungkin. Ace tidak boleh menyambung melepasi King: J-Q-K-A-2 bukan Straight. Ace hanya boleh bermain sebagai kad tertinggi (A-K-Q-J-10) atau terendah (A-2-3-4-5), tidak pernah di tengah.
+A. Ya. A-2-3-4-5 ialah Straight yang sah dan sering dipanggil "wheel". Ia Straight paling rendah yang mungkin. Ace tidak boleh menyambung melepasi King: J-Q-K-A-2 bukan Straight. Ace hanya boleh bermain sebagai kad tertinggi (A-K-Q-J-10) atau terendah (A-2-3-4-5), tidak pernah di tengah.
 
-### Berapa banyak tangan permulaan yang mungkin dalam Texas Hold'em?
+**Q. Berapa banyak tangan permulaan yang mungkin dalam Texas Hold'em?**
 
-Terdapat 1,326 kombinasi tepat dua kad, tetapi pemain biasanya mengumpulkannya kepada 169 jenis tangan permulaan, seperti AA, AK suited, atau 76 offsuit.
+A. Terdapat 1,326 kombinasi tepat dua kad, tetapi pemain biasanya mengumpulkannya kepada 169 jenis tangan permulaan, seperti AA, AK suited, atau 76 offsuit.
 
-### Apakah peraturan Texas Hold'em paling mudah — versi paling ringkas?
+**Q. Apakah peraturan Texas Hold'em paling mudah — versi paling ringkas?**
 
-Versi paling ringkas: setiap pemain dapat 2 kad peribadi. Lima kad kongsi dibuka dalam tiga peringkat (3, kemudian 1, kemudian 1). Anda bertaruh selepas setiap peringkat. Tangan 5 kad terbaik menggunakan apa-apa gabungan kad anda dan kad kongsi menang. Jika semua pemain lain fold, anda menang — tidak kira kad apa yang anda pegang.
+A. Versi paling ringkas: setiap pemain dapat 2 kad peribadi. Lima kad kongsi dibuka dalam tiga peringkat (3, kemudian 1, kemudian 1). Anda bertaruh selepas setiap peringkat. Tangan 5 kad terbaik menggunakan apa-apa gabungan kad anda dan kad kongsi menang. Jika semua pemain lain fold, anda menang — tidak kira kad apa yang anda pegang.
 
-### Peraturan Texas Hold'em untuk pemula — apa maksud blinds?
+**Q. Peraturan Texas Hold'em untuk pemula — apa maksud blinds?**
 
-Dua pemain di kiri butang pengedar mesti meletakkan pertaruhan wajib sebelum kad diedarkan. Pemain pertama meletakkan Small Blind, pemain kedua meletakkan Big Blind (biasanya dua kali ganda). Pertaruhan ini memastikan sentiasa ada wang dalam pot untuk direbut. Setiap pemain lain mesti sekurang-kurangnya menyamai Big Blind untuk kekal dalam tangan.
+A. Dua pemain di kiri butang pengedar mesti meletakkan pertaruhan wajib sebelum kad diedarkan. Pemain pertama meletakkan Small Blind, pemain kedua meletakkan Big Blind (biasanya dua kali ganda). Pertaruhan ini memastikan sentiasa ada wang dalam pot untuk direbut. Setiap pemain lain mesti sekurang-kurangnya menyamai Big Blind untuk kekal dalam tangan.
 
-### Apakah versi pantas peraturan Texas Hold'em?
+**Q. Apakah versi pantas peraturan Texas Hold'em?**
 
-Letak blinds → edar 2 kad pemula → pertaruhan pre-flop → buka 3 kad komuniti (flop) + pertaruhan → buka 1 kad (turn) + pertaruhan → buka 1 kad (river) + pertaruhan → tangan terbaik menang. Jumlah: empat pusingan pertaruhan, lima kad komuniti, satu pemenang.
+A. Letak blinds → edar 2 kad pemula → pertaruhan pre-flop → buka 3 kad komuniti (flop) + pertaruhan → buka 1 kad (turn) + pertaruhan → buka 1 kad (river) + pertaruhan → tangan terbaik menang. Jumlah: empat pusingan pertaruhan, lima kad komuniti, satu pemenang.
 
-### Berapa ramai pemain diperlukan untuk main Texas Hold'em?
+**Q. Berapa ramai pemain diperlukan untuk main Texas Hold'em?**
 
-Anda perlukan sekurang-kurangnya 2 pemain dan boleh muat sehingga 10. Dengan tepat dua pemain ia dipanggil heads-up, dan blinds diterbalikkan — Button meletakkan Small Blind dan bertindak dahulu pre-flop, manakala Big Blind bertindak dahulu selepas flop. Untuk permainan rumah pertama, 4 hingga 6 pemain memastikan permainan pantas dan mudah diikuti.
+A. Anda perlukan sekurang-kurangnya 2 pemain dan boleh muat sehingga 10. Dengan tepat dua pemain ia dipanggil heads-up, dan blinds diterbalikkan — Button meletakkan Small Blind dan bertindak dahulu pre-flop, manakala Big Blind bertindak dahulu selepas flop. Untuk permainan rumah pertama, 4 hingga 6 pemain memastikan permainan pantas dan mudah diikuti.
 
-### Apa maksud no-limit dalam Texas Hold'em?
+**Q. Apa maksud no-limit dalam Texas Hold'em?**
 
-No-Limit bermaksud anda boleh bertaruh apa-apa jumlah sehingga semua cip anda pada mana-mana pusingan pertaruhan — itulah langkah "all-in". Ia format lalai dan paling popular, termasuk WSOP Main Event. Limit Hold'em menghadkan setiap pertaruhan kepada saiz tetap, dan Pot-Limit menghadkan pertaruhan anda kepada saiz pot semasa.
+A. No-Limit bermaksud anda boleh bertaruh apa-apa jumlah sehingga semua cip anda pada mana-mana pusingan pertaruhan — itulah langkah "all-in". Ia format lalai dan paling popular, termasuk WSOP Main Event. Limit Hold'em menghadkan setiap pertaruhan kepada saiz tetap, dan Pot-Limit menghadkan pertaruhan anda kepada saiz pot semasa.
 
-### Berapa lama satu tangan Texas Hold'em?
+**Q. Berapa lama satu tangan Texas Hold'em?**
 
-Satu tangan biasanya mengambil masa kira-kira 10 hingga 60 saat, walaupun pot besar dengan ramai pemain dan keputusan sukar boleh berlarutan beberapa minit. Sesi santai di rumah selama beberapa jam akan melalui berpuluh-puluh tangan, jadi tiada siapa perlu meluangkan satu malam penuh untuk satu edaran sahaja.
+A. Satu tangan biasanya mengambil masa kira-kira 10 hingga 60 saat, walaupun pot besar dengan ramai pemain dan keputusan sukar boleh berlarutan beberapa minit. Sesi santai di rumah selama beberapa jam akan melalui berpuluh-puluh tangan, jadi tiada siapa perlu meluangkan satu malam penuh untuk satu edaran sahaja.
 
 ---
 

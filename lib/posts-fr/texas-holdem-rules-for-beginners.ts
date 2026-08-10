@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Au Texas Hold'em, chaque joueur reçoit 2 cartes fermées, on utilise 5 cartes communes, et la meilleure main de 5 cartes l'emporte après quatre tours d'enchères.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-08-09",
+  updated: "2026-08-10",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -385,53 +385,53 @@ Les mains sont plus faciles à jouer quand tu parles plus tard. Si tu es premier
 
 ## FAQ
 
-### Comment jouer au Texas Hold'em étape par étape ?
+**Q. Comment jouer au Texas Hold'em étape par étape ?**
 
-Pose les blindes, distribue deux cartes fermées à chaque joueur, joue le tour pré-flop, révèle le flop, le tournant et la rivière avec des enchères après chaque rue, puis compare les meilleures mains de cinq cartes à l'abattage.
+A. Pose les blindes, distribue deux cartes fermées à chaque joueur, joue le tour pré-flop, révèle le flop, le tournant et la rivière avec des enchères après chaque rue, puis compare les meilleures mains de cinq cartes à l'abattage.
 
-### Qui commence au Texas Hold'em ?
+**Q. Qui commence au Texas Hold'em ?**
 
-Au pré-flop, le joueur à gauche de la grosse blinde parle en premier. Après le flop, c'est le premier joueur actif à gauche du bouton qui parle en premier, et le bouton parle en général en dernier.
+A. Au pré-flop, le joueur à gauche de la grosse blinde parle en premier. Après le flop, c'est le premier joueur actif à gauche du bouton qui parle en premier, et le bouton parle en général en dernier.
 
-### Avec quels jetons commence-t-on au Texas Hold'em ?
+**Q. Avec quels jetons commence-t-on au Texas Hold'em ?**
 
-Pour une partie maison de débutants, donne à chaque joueur environ 200 jetons de valeur et utilise des blindes 1/2. Un tapis simple : 20 jetons de valeur 1, 16 jetons de valeur 5, et 4 jetons de valeur 25.
+A. Pour une partie maison de débutants, donne à chaque joueur environ 200 jetons de valeur et utilise des blindes 1/2. Un tapis simple : 20 jetons de valeur 1, 16 jetons de valeur 5, et 4 jetons de valeur 25.
 
-### Avec combien d'argent commence-t-on au Texas Hold'em ?
+**Q. Avec combien d'argent commence-t-on au Texas Hold'em ?**
 
-Pour apprendre, commence avec des jetons sans valeur. Pour de petites parties maison en argent réel, utilise une cave que tout le monde peut se permettre de perdre, par exemple $2 à $5 avec des blindes de $0,01/$0,02.
+A. Pour apprendre, commence avec des jetons sans valeur. Pour de petites parties maison en argent réel, utilise une cave que tout le monde peut se permettre de perdre, par exemple $2 à $5 avec des blindes de $0,01/$0,02.
 
-### Existe-t-il une petite quinte au Texas Hold'em ?
+**Q. Existe-t-il une petite quinte au Texas Hold'em ?**
 
-Oui. A-2-3-4-5 est une quinte valide, souvent appelée la « roue » (the wheel). C'est la plus basse quinte possible. L'as ne peut pas faire le tour : J-Q-K-A-2 n'est pas une quinte. L'as joue soit comme carte la plus haute (A-K-Q-J-10), soit comme la plus basse (A-2-3-4-5), jamais au milieu.
+A. Oui. A-2-3-4-5 est une quinte valide, souvent appelée la « roue » (the wheel). C'est la plus basse quinte possible. L'as ne peut pas faire le tour : J-Q-K-A-2 n'est pas une quinte. L'as joue soit comme carte la plus haute (A-K-Q-J-10), soit comme la plus basse (A-2-3-4-5), jamais au milieu.
 
-### Combien de mains de départ possibles existe-t-il au Texas Hold'em ?
+**Q. Combien de mains de départ possibles existe-t-il au Texas Hold'em ?**
 
-Il y a 1 326 combinaisons exactes de deux cartes, mais les joueurs les regroupent en général en 169 types de mains de départ, comme AA, AK assortis (suited) ou 76 dépareillés (offsuit).
+A. Il y a 1 326 combinaisons exactes de deux cartes, mais les joueurs les regroupent en général en 169 types de mains de départ, comme AA, AK assortis (suited) ou 76 dépareillés (offsuit).
 
-### Quelle est la version la plus simple des règles du Texas Hold'em ?
+**Q. Quelle est la version la plus simple des règles du Texas Hold'em ?**
 
-La version la plus simple : chaque joueur reçoit 2 cartes privées. Cinq cartes partagées sont révélées en trois étapes (3, puis 1, puis 1). On mise après chaque étape. La meilleure main de 5 cartes, en combinant tes cartes et les cartes partagées, l'emporte. Si tous les autres se couchent, tu gagnes — quelles que soient tes cartes.
+A. La version la plus simple : chaque joueur reçoit 2 cartes privées. Cinq cartes partagées sont révélées en trois étapes (3, puis 1, puis 1). On mise après chaque étape. La meilleure main de 5 cartes, en combinant tes cartes et les cartes partagées, l'emporte. Si tous les autres se couchent, tu gagnes — quelles que soient tes cartes.
 
-### Que veulent dire les blindes au Texas Hold'em ?
+**Q. Que veulent dire les blindes au Texas Hold'em ?**
 
-Les deux joueurs à gauche du bouton du donneur doivent poser des mises obligatoires avant la distribution. Le premier pose la petite blinde, le second la grosse blinde (en général le double). Ces mises garantissent qu'il y a toujours de l'argent dans le pot à se disputer. Tous les autres joueurs doivent au moins égaler la grosse blinde pour rester dans le coup.
+A. Les deux joueurs à gauche du bouton du donneur doivent poser des mises obligatoires avant la distribution. Le premier pose la petite blinde, le second la grosse blinde (en général le double). Ces mises garantissent qu'il y a toujours de l'argent dans le pot à se disputer. Tous les autres joueurs doivent au moins égaler la grosse blinde pour rester dans le coup.
 
-### Quelle est la version express des règles du Texas Hold'em ?
+**Q. Quelle est la version express des règles du Texas Hold'em ?**
 
-Poser les blindes → distribuer 2 cartes fermées → enchères pré-flop → révéler 3 cartes communes (flop) + enchères → révéler 1 carte (tournant) + enchères → révéler 1 carte (rivière) + enchères → la meilleure main gagne. Au total : quatre tours d'enchères, cinq cartes communes, un vainqueur.
+A. Poser les blindes → distribuer 2 cartes fermées → enchères pré-flop → révéler 3 cartes communes (flop) + enchères → révéler 1 carte (tournant) + enchères → révéler 1 carte (rivière) + enchères → la meilleure main gagne. Au total : quatre tours d'enchères, cinq cartes communes, un vainqueur.
 
-### Combien de joueurs faut-il pour jouer au Texas Hold'em ?
+**Q. Combien de joueurs faut-il pour jouer au Texas Hold'em ?**
 
-Il faut au moins 2 joueurs et on peut être jusqu'à 10. À exactement deux, on parle de heads-up et les blindes s'inversent — le bouton pose la petite blinde et parle en premier pré-flop, tandis que la grosse blinde parle en premier après le flop. Pour une première partie à la maison, 4 à 6 joueurs gardent l'action rapide et facile à suivre.
+A. Il faut au moins 2 joueurs et on peut être jusqu'à 10. À exactement deux, on parle de heads-up et les blindes s'inversent — le bouton pose la petite blinde et parle en premier pré-flop, tandis que la grosse blinde parle en premier après le flop. Pour une première partie à la maison, 4 à 6 joueurs gardent l'action rapide et facile à suivre.
 
-### Que veut dire no-limit au Texas Hold'em ?
+**Q. Que veut dire no-limit au Texas Hold'em ?**
 
-No-Limit veut dire que tu peux miser n'importe quel montant jusqu'à tout ton tapis à chaque tour d'enchères — c'est le coup « tapis » (all-in). C'est le format par défaut et le plus populaire, y compris au Main Event des WSOP. Le Limit Hold'em plafonne chaque mise à une taille fixe, et le Pot-Limit la plafonne à la taille actuelle du pot.
+A. No-Limit veut dire que tu peux miser n'importe quel montant jusqu'à tout ton tapis à chaque tour d'enchères — c'est le coup « tapis » (all-in). C'est le format par défaut et le plus populaire, y compris au Main Event des WSOP. Le Limit Hold'em plafonne chaque mise à une taille fixe, et le Pot-Limit la plafonne à la taille actuelle du pot.
 
-### Combien de temps dure une main de Texas Hold'em ?
+**Q. Combien de temps dure une main de Texas Hold'em ?**
 
-Une seule main dure en général 10 à 60 secondes, même si un gros pot multijoueurs avec des décisions difficiles peut s'étirer sur plusieurs minutes. Une session maison de quelques heures enchaîne des dizaines de mains, donc personne n'a à consacrer toute une soirée à une seule donne.
+A. Une seule main dure en général 10 à 60 secondes, même si un gros pot multijoueurs avec des décisions difficiles peut s'étirer sur plusieurs minutes. Une session maison de quelques heures enchaîne des dizaines de mains, donc personne n'a à consacrer toute une soirée à une seule donne.
 
 ---
 

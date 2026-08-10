@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Une main de Texas Hold'em se déroule ainsi : on pose les blindes → deux cartes fermées par joueur → préflop → flop (3 cartes) → turn (1 carte) → river (1 carte) → abattage, avec quatre tours d'enchères au total.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-07-13",
+  updated: "2026-08-10",
   masterUpdated: "2026-07-02",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -341,31 +341,31 @@ Le Texas Hold'em s'apprend en une demi-heure et demande une vie entière à maî
 
 **Q. Quel est l'ordre exact du jeu au Texas Hold'em ?**
 
-On pose les blindes → on distribue deux cartes fermées → tour d'enchères préflop → on dévoile le flop (3 cartes) et on mise → turn (1 carte) et on mise → river (dernière carte) et on mise → abattage (on compare les cinq meilleures cartes).
+A. On pose les blindes → on distribue deux cartes fermées → tour d'enchères préflop → on dévoile le flop (3 cartes) et on mise → turn (1 carte) et on mise → river (dernière carte) et on mise → abattage (on compare les cinq meilleures cartes).
 
 **Q. Quelle différence entre le préflop et le flop ?**
 
-Le préflop, c'est avant qu'aucune carte commune ne soit sortie — tu décides seulement avec tes deux cartes fermées. Le flop, c'est une fois que trois cartes communes sont dévoilées, où tu lis à la fois ta main actuelle et ton potentiel de tirage.
+A. Le préflop, c'est avant qu'aucune carte commune ne soit sortie — tu décides seulement avec tes deux cartes fermées. Le flop, c'est une fois que trois cartes communes sont dévoilées, où tu lis à la fois ta main actuelle et ton potentiel de tirage.
 
 **Q. Quelle différence entre checker et suivre ?**
 
-Checker passe la parole sans miser, et n'est possible que quand il n'y a aucune mise devant toi. Suivre égale la mise d'un adversaire. Si quelqu'un a misé, tu ne peux pas checker — tu dois suivre, relancer ou te coucher.
+A. Checker passe la parole sans miser, et n'est possible que quand il n'y a aucune mise devant toi. Suivre égale la mise d'un adversaire. Si quelqu'un a misé, tu ne peux pas checker — tu dois suivre, relancer ou te coucher.
 
 **Q. Suis-je obligé d'utiliser mes deux cartes fermées à l'abattage ?**
 
-Non. Tu composes la meilleure main de cinq cartes avec n'importe quelle combinaison de tes deux cartes fermées et des cinq cartes communes — y compris en n'en utilisant qu'une, ou aucune (« jouer le tableau »).
+A. Non. Tu composes la meilleure main de cinq cartes avec n'importe quelle combinaison de tes deux cartes fermées et des cinq cartes communes — y compris en n'en utilisant qu'une, ou aucune (« jouer le tableau »).
 
 **Q. C'est quoi, les cotes du pot (pot odds) ?**
 
-Les cotes du pot sont le rapport entre la taille actuelle du pot et ce qu'il t'en coûte de suivre. Si le pot fait 100 000 et qu'un adversaire mise 20 000, tu risques 20 000 pour gagner un pot de 120 000 (6:1). Si ta probabilité de gagner est meilleure que ces cotes, suivre est rentable.
+A. Les cotes du pot sont le rapport entre la taille actuelle du pot et ce qu'il t'en coûte de suivre. Si le pot fait 100 000 et qu'un adversaire mise 20 000, tu risques 20 000 pour gagner un pot de 120 000 (6:1). Si ta probabilité de gagner est meilleure que ces cotes, suivre est rentable.
 
 **Q. Quand devrais-je faire tapis (all-in) ?**
 
-Faire tapis, c'est miser tous les jetons que tu as. Utilise-le avec une main très forte (les nuts), ou comme bluff pour faire coucher les adversaires. Une fois à tapis, tu ne peux plus miser, mais tu restes éligible à la part du pot que tu as égalée. Quand les tapis diffèrent, ça crée des pots annexes (side pots) — regarde les [règles du tapis et des side pots](/fr/blog/holdem-all-in-rules).
+A. Faire tapis, c'est miser tous les jetons que tu as. Utilise-le avec une main très forte (les nuts), ou comme bluff pour faire coucher les adversaires. Une fois à tapis, tu ne peux plus miser, mais tu restes éligible à la part du pot que tu as égalée. Quand les tapis diffèrent, ça crée des pots annexes (side pots) — regarde les [règles du tapis et des side pots](/fr/blog/holdem-all-in-rules).
 
 **Q. Combien y a-t-il de tours d'enchères dans une main ?**
 
-Quatre : préflop, flop, turn et river. Les blindes sont des mises obligatoires, et à l'abattage on ne mise plus.
+A. Quatre : préflop, flop, turn et river. Les blindes sont des mises obligatoires, et à l'abattage on ne mise plus.
 
 ---
 

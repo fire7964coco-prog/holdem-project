@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Trong Texas Hold'em, mỗi người chơi nhận 2 lá bài tẩy, dùng chung 5 lá bài chung, và tay bài poker 5 lá mạnh nhất sẽ thắng sau bốn vòng cược.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-08-09",
+  updated: "2026-08-10",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 phút",
@@ -385,53 +385,53 @@ Tay bài dễ chơi hơn khi bạn hành động sau. Nếu phải hành động
 
 ## Câu hỏi thường gặp
 
-### Chơi Texas Hold'em từng bước như thế nào?
+**Q. Chơi Texas Hold'em từng bước như thế nào?**
 
-Đặt mù, chia hai lá bài tẩy cho mỗi người, chơi vòng cược preflop, lật flop, turn và river với vòng cược sau mỗi lần lật, rồi so tay bài 5 lá mạnh nhất ở showdown.
+A. Đặt mù, chia hai lá bài tẩy cho mỗi người, chơi vòng cược preflop, lật flop, turn và river với vòng cược sau mỗi lần lật, rồi so tay bài 5 lá mạnh nhất ở showdown.
 
-### Ai đi trước trong Texas Hold'em?
+**Q. Ai đi trước trong Texas Hold'em?**
 
-Ở preflop, người bên trái mù lớn hành động trước. Sau flop, người còn chơi đầu tiên bên trái nút Dealer hành động trước, và nút Dealer thường hành động cuối cùng.
+A. Ở preflop, người bên trái mù lớn hành động trước. Sau flop, người còn chơi đầu tiên bên trái nút Dealer hành động trước, và nút Dealer thường hành động cuối cùng.
 
-### Bắt đầu Texas Hold'em với bao nhiêu chip?
+**Q. Bắt đầu Texas Hold'em với bao nhiêu chip?**
 
-Với ván chơi ở nhà cho người mới, chia cho mỗi người khoảng 200 chip giá trị và dùng mù 1/2. Cách chia đơn giản: 20 chip mệnh giá 1, 16 chip mệnh giá 5 và 4 chip mệnh giá 25.
+A. Với ván chơi ở nhà cho người mới, chia cho mỗi người khoảng 200 chip giá trị và dùng mù 1/2. Cách chia đơn giản: 20 chip mệnh giá 1, 16 chip mệnh giá 5 và 4 chip mệnh giá 25.
 
-### Bắt đầu Texas Hold'em với bao nhiêu tiền?
+**Q. Bắt đầu Texas Hold'em với bao nhiêu tiền?**
 
-Khi học, hãy bắt đầu với chip không quy đổi tiền. Với ván chơi tiền thật nhỏ ở nhà, dùng mức buy-in mà ai thua cũng thoải mái, ví dụ $2 đến $5 với mù $0,01/$0,02.
+A. Khi học, hãy bắt đầu với chip không quy đổi tiền. Với ván chơi tiền thật nhỏ ở nhà, dùng mức buy-in mà ai thua cũng thoải mái, ví dụ $2 đến $5 với mù $0,01/$0,02.
 
-### Texas Hold'em có Sảnh nhỏ không?
+**Q. Texas Hold'em có Sảnh nhỏ không?**
 
-Có. A-2-3-4-5 là một Sảnh hợp lệ và thường được gọi là "bánh xe" (the wheel). Đây là Sảnh thấp nhất có thể. Lá Át không được nối vòng: J-Q-K-A-2 không phải là Sảnh. Át chỉ đóng vai trò lá cao nhất (A-K-Q-J-10) hoặc thấp nhất (A-2-3-4-5), không bao giờ nằm giữa.
+A. Có. A-2-3-4-5 là một Sảnh hợp lệ và thường được gọi là "bánh xe" (the wheel). Đây là Sảnh thấp nhất có thể. Lá Át không được nối vòng: J-Q-K-A-2 không phải là Sảnh. Át chỉ đóng vai trò lá cao nhất (A-K-Q-J-10) hoặc thấp nhất (A-2-3-4-5), không bao giờ nằm giữa.
 
-### Texas Hold'em có bao nhiêu tay bài khởi đầu?
+**Q. Texas Hold'em có bao nhiêu tay bài khởi đầu?**
 
-Có 1.326 tổ hợp hai lá chính xác, nhưng người chơi thường gộp thành 169 loại bài khởi đầu, như AA, AK cùng chất (suited) hoặc 76 khác chất (offsuit).
+A. Có 1.326 tổ hợp hai lá chính xác, nhưng người chơi thường gộp thành 169 loại bài khởi đầu, như AA, AK cùng chất (suited) hoặc 76 khác chất (offsuit).
 
-### Luật Texas Hold'em cho người mới hoàn toàn — phiên bản đơn giản nhất là gì?
+**Q. Luật Texas Hold'em cho người mới hoàn toàn — phiên bản đơn giản nhất là gì?**
 
-Phiên bản đơn giản nhất: mỗi người nhận 2 lá bài riêng. Năm lá bài chung được lật theo ba giai đoạn (3, rồi 1, rồi 1). Bạn cược sau mỗi giai đoạn. Tay bài 5 lá mạnh nhất kết hợp bất kỳ giữa bài của bạn và bài chung sẽ thắng. Nếu tất cả người khác bỏ bài, bạn thắng — bất kể đang cầm bài gì.
+A. Phiên bản đơn giản nhất: mỗi người nhận 2 lá bài riêng. Năm lá bài chung được lật theo ba giai đoạn (3, rồi 1, rồi 1). Bạn cược sau mỗi giai đoạn. Tay bài 5 lá mạnh nhất kết hợp bất kỳ giữa bài của bạn và bài chung sẽ thắng. Nếu tất cả người khác bỏ bài, bạn thắng — bất kể đang cầm bài gì.
 
-### Luật Texas Hold'em cho người mới — mù nghĩa là gì?
+**Q. Luật Texas Hold'em cho người mới — mù nghĩa là gì?**
 
-Hai người chơi bên trái nút Dealer phải đặt cược bắt buộc trước khi chia bài. Người đầu tiên đặt mù nhỏ, người thứ hai đặt mù lớn (thường gấp đôi). Những khoản cược này bảo đảm pot luôn có tiền để tranh. Mọi người chơi khác phải theo ít nhất bằng mù lớn để tiếp tục ván bài.
+A. Hai người chơi bên trái nút Dealer phải đặt cược bắt buộc trước khi chia bài. Người đầu tiên đặt mù nhỏ, người thứ hai đặt mù lớn (thường gấp đôi). Những khoản cược này bảo đảm pot luôn có tiền để tranh. Mọi người chơi khác phải theo ít nhất bằng mù lớn để tiếp tục ván bài.
 
-### Phiên bản rút gọn của luật Texas Hold'em là gì?
+**Q. Phiên bản rút gọn của luật Texas Hold'em là gì?**
 
-Đặt mù → chia 2 lá bài tẩy → cược preflop → lật 3 lá bài chung (flop) + cược → lật 1 lá (turn) + cược → lật 1 lá (river) + cược → tay bài mạnh nhất thắng. Tổng cộng: bốn vòng cược, năm lá bài chung, một người thắng.
+A. Đặt mù → chia 2 lá bài tẩy → cược preflop → lật 3 lá bài chung (flop) + cược → lật 1 lá (turn) + cược → lật 1 lá (river) + cược → tay bài mạnh nhất thắng. Tổng cộng: bốn vòng cược, năm lá bài chung, một người thắng.
 
-### Cần bao nhiêu người để chơi Texas Hold'em?
+**Q. Cần bao nhiêu người để chơi Texas Hold'em?**
 
-Cần ít nhất 2 người và tối đa 10 người. Với đúng hai người thì gọi là heads-up và vị trí mù đảo ngược — nút Dealer đặt mù nhỏ và hành động trước ở preflop, còn mù lớn hành động trước sau flop. Cho ván chơi ở nhà đầu tiên, 4 đến 6 người giúp nhịp chơi nhanh và dễ theo dõi.
+A. Cần ít nhất 2 người và tối đa 10 người. Với đúng hai người thì gọi là heads-up và vị trí mù đảo ngược — nút Dealer đặt mù nhỏ và hành động trước ở preflop, còn mù lớn hành động trước sau flop. Cho ván chơi ở nhà đầu tiên, 4 đến 6 người giúp nhịp chơi nhanh và dễ theo dõi.
 
-### No-limit nghĩa là gì trong Texas Hold'em?
+**Q. No-limit nghĩa là gì trong Texas Hold'em?**
 
-No-Limit nghĩa là bạn có thể cược bất kỳ số nào đến toàn bộ chip của mình ở bất kỳ vòng cược nào — đó chính là nước "all-in". Đây là thể thức mặc định và phổ biến nhất, bao gồm cả Main Event WSOP. Limit Hold'em giới hạn mỗi khoản cược ở mức cố định, còn Pot-Limit giới hạn khoản cược bằng kích thước pot hiện tại.
+A. No-Limit nghĩa là bạn có thể cược bất kỳ số nào đến toàn bộ chip của mình ở bất kỳ vòng cược nào — đó chính là nước "all-in". Đây là thể thức mặc định và phổ biến nhất, bao gồm cả Main Event WSOP. Limit Hold'em giới hạn mỗi khoản cược ở mức cố định, còn Pot-Limit giới hạn khoản cược bằng kích thước pot hiện tại.
 
-### Một ván Texas Hold'em kéo dài bao lâu?
+**Q. Một ván Texas Hold'em kéo dài bao lâu?**
 
-Một ván bài thường mất khoảng 10 đến 60 giây, dù một pot lớn nhiều người chơi với các quyết định khó có thể kéo dài vài phút. Một buổi chơi tại nhà vài tiếng sẽ đi qua hàng chục ván, nên không ai phải dành cả buổi tối cho một lần chia bài.
+A. Một ván bài thường mất khoảng 10 đến 60 giây, dù một pot lớn nhiều người chơi với các quyết định khó có thể kéo dài vài phút. Một buổi chơi tại nhà vài tiếng sẽ đi qua hàng chục ván, nên không ai phải dành cả buổi tối cho một lần chia bài.
 
 ---
 

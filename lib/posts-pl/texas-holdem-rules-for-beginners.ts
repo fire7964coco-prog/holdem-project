@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "W Texas Hold'em każdy gracz dostaje 2 karty zakryte, na stole leży 5 kart wspólnych, a po czterech rundach licytacji wygrywa najlepszy 5-kartowy układ.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-08-09",
+  updated: "2026-08-10",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -384,53 +384,53 @@ Ręce gra się łatwiej, gdy działasz później. Jeśli mówisz pierwszy, potrz
 
 ## Najczęstsze pytania
 
-### Jak grać w Texas Hold'em krok po kroku?
+**Q. Jak grać w Texas Hold'em krok po kroku?**
 
-Wykładasz blindy, rozdajesz każdemu graczowi dwie karty własne, rozgrywasz rundę preflop, odkrywasz flopa, turn i river z licytacją po każdej ulicy, a na końcu porównujesz najlepsze pięciokartowe układy na showdownie.
+A. Wykładasz blindy, rozdajesz każdemu graczowi dwie karty własne, rozgrywasz rundę preflop, odkrywasz flopa, turn i river z licytacją po każdej ulicy, a na końcu porównujesz najlepsze pięciokartowe układy na showdownie.
 
-### Kto zaczyna w Texas Hold'em?
+**Q. Kto zaczyna w Texas Hold'em?**
 
-Preflop pierwszy mówi gracz po lewej od dużego blindu. Po flopie pierwszy mówi pierwszy aktywny gracz po lewej od buttona rozdającego, a button zwykle mówi ostatni.
+A. Preflop pierwszy mówi gracz po lewej od dużego blindu. Po flopie pierwszy mówi pierwszy aktywny gracz po lewej od buttona rozdającego, a button zwykle mówi ostatni.
 
-### Z jakimi żetonami zaczynasz w Texas Hold'em?
+**Q. Z jakimi żetonami zaczynasz w Texas Hold'em?**
 
-Na domówkę dla początkujących daj każdemu graczowi około 200 żetonów wartości i graj z blindami 1/2. Prosty stack to 20 żetonów po 1, 16 żetonów po 5 i 4 żetony po 25.
+A. Na domówkę dla początkujących daj każdemu graczowi około 200 żetonów wartości i graj z blindami 1/2. Prosty stack to 20 żetonów po 1, 16 żetonów po 5 i 4 żetony po 25.
 
-### Z ilu pieniędzmi zaczynasz w Texas Hold'em?
+**Q. Z ilu pieniędzmi zaczynasz w Texas Hold'em?**
 
-Do nauki zacznij od żetonów bez wartości. Na małe domowe gry o prawdziwe pieniądze wybierz buy-in, który każdy jest w stanie stracić bez stresu, na przykład $2 do $5 przy blindach $0,01/$0,02.
+A. Do nauki zacznij od żetonów bez wartości. Na małe domowe gry o prawdziwe pieniądze wybierz buy-in, który każdy jest w stanie stracić bez stresu, na przykład $2 do $5 przy blindach $0,01/$0,02.
 
-### Czy w Texas Hold'em istnieje najniższy strit?
+**Q. Czy w Texas Hold'em istnieje najniższy strit?**
 
-Tak. A-2-3-4-5 to poprawny strit, często nazywany „the wheel" (koło). To najniższy możliwy strit. As nie może się „zawinąć": J-Q-K-A-2 nie jest stritem. As gra albo jako najwyższa karta (A-K-Q-J-10), albo jako najniższa (A-2-3-4-5), nigdy w środku.
+A. Tak. A-2-3-4-5 to poprawny strit, często nazywany „the wheel" (koło). To najniższy możliwy strit. As nie może się „zawinąć": J-Q-K-A-2 nie jest stritem. As gra albo jako najwyższa karta (A-K-Q-J-10), albo jako najniższa (A-2-3-4-5), nigdy w środku.
 
-### Ile jest możliwych rąk startowych w Texas Hold'em?
+**Q. Ile jest możliwych rąk startowych w Texas Hold'em?**
 
-Istnieje 1 326 dokładnych kombinacji dwóch kart, ale gracze zwykle grupują je w 169 typów rąk startowych, takich jak AA, AK w kolorze (suited) czy 76 różnokolorowe (offsuit).
+A. Istnieje 1 326 dokładnych kombinacji dwóch kart, ale gracze zwykle grupują je w 169 typów rąk startowych, takich jak AA, AK w kolorze (suited) czy 76 różnokolorowe (offsuit).
 
-### Jak wyglądają zasady Texas Hold'em w najprostszej wersji?
+**Q. Jak wyglądają zasady Texas Hold'em w najprostszej wersji?**
 
-Najprościej: każdy gracz dostaje 2 prywatne karty. Pięć wspólnych kart odkrywa się w trzech etapach (3, potem 1, potem 1). Licytujesz po każdym etapie. Wygrywa najlepszy 5-kartowy układ z dowolnej kombinacji twoich kart i kart wspólnych. Jeśli wszyscy inni spasują — wygrywasz, niezależnie od tego, co trzymasz.
+A. Najprościej: każdy gracz dostaje 2 prywatne karty. Pięć wspólnych kart odkrywa się w trzech etapach (3, potem 1, potem 1). Licytujesz po każdym etapie. Wygrywa najlepszy 5-kartowy układ z dowolnej kombinacji twoich kart i kart wspólnych. Jeśli wszyscy inni spasują — wygrywasz, niezależnie od tego, co trzymasz.
 
-### Zasady Texas Hold'em dla laika — co oznaczają blindy?
+**Q. Zasady Texas Hold'em dla laika — co oznaczają blindy?**
 
-Dwaj gracze po lewej od buttona rozdającego muszą wyłożyć przymusowe zakłady przed rozdaniem kart. Pierwszy wykłada mały blind, drugi duży blind (zwykle dwa razy większy). Te zakłady gwarantują, że w puli zawsze jest o co walczyć. Każdy pozostały gracz musi przynajmniej dorównać dużemu blindowi, żeby zostać w rozdaniu.
+A. Dwaj gracze po lewej od buttona rozdającego muszą wyłożyć przymusowe zakłady przed rozdaniem kart. Pierwszy wykłada mały blind, drugi duży blind (zwykle dwa razy większy). Te zakłady gwarantują, że w puli zawsze jest o co walczyć. Każdy pozostały gracz musi przynajmniej dorównać dużemu blindowi, żeby zostać w rozdaniu.
 
-### Jaka jest szybka wersja zasad Texas Hold'em?
+**Q. Jaka jest szybka wersja zasad Texas Hold'em?**
 
-Wyłóż blindy → rozdaj 2 karty własne → licytacja preflop → odkryj 3 karty wspólne (flop) + licytacja → odkryj 1 kartę (turn) + licytacja → odkryj 1 kartę (river) + licytacja → wygrywa najlepszy układ. Razem: cztery rundy licytacji, pięć kart wspólnych, jeden zwycięzca.
+A. Wyłóż blindy → rozdaj 2 karty własne → licytacja preflop → odkryj 3 karty wspólne (flop) + licytacja → odkryj 1 kartę (turn) + licytacja → odkryj 1 kartę (river) + licytacja → wygrywa najlepszy układ. Razem: cztery rundy licytacji, pięć kart wspólnych, jeden zwycięzca.
 
-### Ilu graczy potrzeba, żeby zagrać w Texas Hold'em?
+**Q. Ilu graczy potrzeba, żeby zagrać w Texas Hold'em?**
 
-Potrzebujesz co najmniej 2 graczy, a przy stole zmieści się do 10. Dokładnie we dwóch to heads-up, w którym blindy są odwrócone — button wykłada mały blind i mówi pierwszy preflop, a duży blind mówi pierwszy po flopie. Na pierwszą domówkę 4 do 6 graczy utrzymuje akcję szybką i łatwą do śledzenia.
+A. Potrzebujesz co najmniej 2 graczy, a przy stole zmieści się do 10. Dokładnie we dwóch to heads-up, w którym blindy są odwrócone — button wykłada mały blind i mówi pierwszy preflop, a duży blind mówi pierwszy po flopie. Na pierwszą domówkę 4 do 6 graczy utrzymuje akcję szybką i łatwą do śledzenia.
 
-### Co oznacza no-limit w Texas Hold'em?
+**Q. Co oznacza no-limit w Texas Hold'em?**
 
-No-Limit znaczy, że w każdej rundzie licytacji możesz postawić dowolną kwotę aż po wszystkie swoje żetony — to właśnie ruch „all-in". To domyślny i najpopularniejszy format, w tym Main Event WSOP. Limit Hold'em ogranicza każdy zakład do stałego rozmiaru, a Pot-Limit ogranicza go do aktualnego rozmiaru puli.
+A. No-Limit znaczy, że w każdej rundzie licytacji możesz postawić dowolną kwotę aż po wszystkie swoje żetony — to właśnie ruch „all-in". To domyślny i najpopularniejszy format, w tym Main Event WSOP. Limit Hold'em ogranicza każdy zakład do stałego rozmiaru, a Pot-Limit ogranicza go do aktualnego rozmiaru puli.
 
-### Ile trwa jedno rozdanie Texas Hold'em?
+**Q. Ile trwa jedno rozdanie Texas Hold'em?**
 
-Jedno rozdanie zwykle trwa od 10 do 60 sekund, choć duża pula z wieloma graczami i trudnymi decyzjami może się ciągnąć kilka minut. Na luźnej domowej sesji trwającej kilka godzin rozegracie dziesiątki rozdań, więc nikt nie musi poświęcać całego wieczoru na jedno.
+A. Jedno rozdanie zwykle trwa od 10 do 60 sekund, choć duża pula z wieloma graczami i trudnymi decyzjami może się ciągnąć kilka minut. Na luźnej domowej sesji trwającej kilka godzin rozegracie dziesiątki rozdań, więc nikt nie musi poświęcać całego wieczoru na jedno.
 
 ---
 

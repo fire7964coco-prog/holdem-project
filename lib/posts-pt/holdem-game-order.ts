@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Uma mão de Texas Hold'em segue esta ordem: postar os blinds → receber duas cartas fechadas → pré-flop → flop (3 cartas) → turn (1 carta) → river (1 carta) → showdown, com quatro rodadas de apostas no total.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-07-12",
+  updated: "2026-08-10",
   masterUpdated: "2026-07-02",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -341,31 +341,31 @@ Texas Hold'em se aprende em trinta minutos e se domina numa vida inteira. Mas o 
 
 **Q. Qual é a ordem exata do jogo no Texas Hold'em?**
 
-Postar os blinds → distribuir duas cartas fechadas → apostas do pré-flop → revelar o flop (3 cartas) e apostar → turn (1 carta) e apostar → river (última carta) e apostar → showdown (comparam-se as melhores cinco cartas).
+A. Postar os blinds → distribuir duas cartas fechadas → apostas do pré-flop → revelar o flop (3 cartas) e apostar → turn (1 carta) e apostar → river (última carta) e apostar → showdown (comparam-se as melhores cinco cartas).
 
 **Q. Qual é a diferença entre pré-flop e flop?**
 
-O pré-flop é antes de qualquer carta comunitária sair — você decide só com suas duas cartas fechadas. O flop é depois de reveladas três cartas comunitárias, quando você lê tanto a mão que já tem quanto o potencial de draw.
+A. O pré-flop é antes de qualquer carta comunitária sair — você decide só com suas duas cartas fechadas. O flop é depois de reveladas três cartas comunitárias, quando você lê tanto a mão que já tem quanto o potencial de draw.
 
 **Q. Qual é a diferença entre dar check e pagar (call)?**
 
-O check passa a ação sem apostar e só é possível quando não há aposta na sua frente. O call iguala a aposta de um adversário. Se alguém apostou, não dá para dar check — você tem que pagar, aumentar ou foldar.
+A. O check passa a ação sem apostar e só é possível quando não há aposta na sua frente. O call iguala a aposta de um adversário. Se alguém apostou, não dá para dar check — você tem que pagar, aumentar ou foldar.
 
 **Q. Sou obrigado a usar as duas cartas da minha mão no showdown?**
 
-Não. Você forma a melhor mão de cinco cartas com qualquer combinação das suas duas cartas fechadas e das cinco comunitárias — inclusive usando só uma, ou nenhuma ("jogar com a mesa").
+A. Não. Você forma a melhor mão de cinco cartas com qualquer combinação das suas duas cartas fechadas e das cinco comunitárias — inclusive usando só uma, ou nenhuma ("jogar com a mesa").
 
 **Q. O que são pot odds?**
 
-Pot odds são a relação entre o tamanho atual do pote e o valor que você precisa pagar. Se o pote tem 100.000 e um adversário aposta 20.000, você arrisca 20.000 para ganhar um pote de 120.000 (6 para 1). Se sua chance de vencer é melhor que essas odds, pagar é lucrativo.
+A. Pot odds são a relação entre o tamanho atual do pote e o valor que você precisa pagar. Se o pote tem 100.000 e um adversário aposta 20.000, você arrisca 20.000 para ganhar um pote de 120.000 (6 para 1). Se sua chance de vencer é melhor que essas odds, pagar é lucrativo.
 
 **Q. Quando devo ir de all-in?**
 
-All-in significa apostar todas as suas fichas. Use com uma mão muito forte (os nuts) ou como blefe para fazer os adversários foldarem. Depois do all-in você não pode mais apostar, mas continua concorrendo à parte do pote que igualou. Quando os stacks são diferentes, isso cria potes paralelos — veja as [regras do all-in e o pote paralelo](/pt/blog/holdem-all-in-rules).
+A. All-in significa apostar todas as suas fichas. Use com uma mão muito forte (os nuts) ou como blefe para fazer os adversários foldarem. Depois do all-in você não pode mais apostar, mas continua concorrendo à parte do pote que igualou. Quando os stacks são diferentes, isso cria potes paralelos — veja as [regras do all-in e o pote paralelo](/pt/blog/holdem-all-in-rules).
 
 **Q. Quantas rodadas de apostas há em uma mão?**
 
-Quatro: pré-flop, flop, turn e river. Os blinds são apostas obrigatórias, e no showdown não há apostas.
+A. Quatro: pré-flop, flop, turn e river. Os blinds são apostas obrigatórias, e no showdown não há apostas.
 
 ---
 
