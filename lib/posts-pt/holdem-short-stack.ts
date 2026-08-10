@@ -106,7 +106,9 @@ Repare na armadilha que isso evita: ==um short stack que só dá shove com mãos
 Quando você ==dá shove first-in==, você ganha de duas formas: todo mundo folda (fold equity), ou você é pago e sua mão aguenta. Quando você ==paga== um shove, você só ganha de uma forma — sua mão tem que ser boa o bastante, porque não há mais fold equity para recolher. Então:
 
 - **Dando shove first-in:** amplo, especialmente tarde — você está em parte jogando pelo fold.
-- **Pagando um shove:** fechado — você precisa de uma mão que vença o *range* de quem deu shove, não só uma mão qualquer. Pagar com mãos como um ás fraco ou um par pequeno "porque provavelmente é um cara ou coroa" é um leak clássico, já que um cara ou coroa para ser eliminado é um mau negócio num torneio (veja [quando foldar](/pt/blog/holdem-when-to-fold)).
+- **Pagando um shove:** fechado — você precisa de uma mão que vença o *range* de quem deu shove, não só uma mão qualquer.
+
+"Fechado" quer dizer mais fechado que o seu range de shove, não "só quando eu tenho certeza de que estou na frente". Pagar é uma questão de preço: no big blind, diante de um jam de 10bb você arrisca 9bb para ganhar um pote de 20,5bb, então a barra fica em ==43,9%== de equity contra aquele range. É justamente por isso que pares pequenos e ases fracos são o *núcleo* de um range de pagar do big blind, e não um leak: mesmo contra AKo, que está no topo de qualquer range de shove, 22 tem ==52,65%==. O leak não é a classe da mão, e sim supor que "provavelmente é um cara ou coroa" em vez de conferir o número (veja [quando foldar](/pt/blog/holdem-when-to-fold)).
 
 Uma frase para lembrar: ==seja quem dá shove, não quem paga.== A agressão first-in é onde vive o lucro de short stack; dar hero-call em all-ins é onde os short stacks morrem.
 
@@ -144,7 +146,7 @@ A matemática real por trás de "quanto menor é o meu bubble factor" vive no [g
 
 1. **Open-limp.** Ele abre mão da sua fold equity e incha um pote que você não consegue jogar pós-flop. Short stacks aumentam ou foldam — e normalmente esse aumento é um shove.
 2. **Min-raise-depois-fold com lixo.** Aumentar um quarto do seu stack e foldar para um shove é o pior dos dois mundos. Se uma mão não é boa o bastante para ir de all-in, ela não é boa o bastante para aumentar.
-3. **Pagar all-ins com muitas mãos.** Seu range de pagar precisa ser mais fechado que o de shove. "Provavelmente é um cara ou coroa" é como short stacks são eliminados — um cara ou coroa para eliminação é um negócio perdedor.
+3. **Pagar all-ins no palpite.** Seu range de pagar precisa continuar mais fechado que o de shove — mas "provavelmente é um cara ou coroa" é um palpite, não um motivo. Faça a conta do preço: no big blind, o small blind morto faz com que um cara ou coroa de verdade já passe da barra de EV em fichas, e o que transforma isso em fold é a pressão dos saltos de premiação, não o cara ou coroa em si. Chutar vaza fichas nas duas direções.
 4. **Blindar até o zero.** Esperar por ases até ter três big blinds joga fora a fold equity que torna o shove lucrativo. Aja enquanto seu all-in ainda assusta as pessoas (comumente, antes de cair abaixo de ~8–10bb).
 5. **Ignorar a posição.** Dar jam só com premiums do button, ou dar shove amplo demais under the gun, ambos vazam fichas. Amplie tarde, feche cedo.
 
@@ -215,7 +217,7 @@ O jogo de short stack é onde a matemática de torneio vira memória muscular �
   <a href="/pt/blog/holdem-when-to-fold" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Estratégia</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Quando foldar no pôquer</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Por que pagar curto é um leak</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Quando o preço manda foldar</div>
   </a>
   <a href="/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Ferramenta grátis</div>

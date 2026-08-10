@@ -106,7 +106,9 @@ Perhatikan jebakan yang ini hindari: ==short stack yang hanya shove tangan premi
 Saat Anda ==shove first-in==, Anda menang dua cara: semua orang fold (fold equity), atau Anda di-call dan tangan Anda bertahan. Saat Anda ==call== sebuah shove, Anda hanya menang satu cara — tangan Anda harus cukup bagus, karena tak ada fold equity tersisa untuk dikumpulkan. Jadi:
 
 - **Shoving first-in:** lebar, terutama di posisi akhir — Anda sebagian bermain demi fold.
-- **Call sebuah shove:** ketat — Anda butuh tangan yang mengalahkan *range* si penyhove, bukan sekadar tangan acak. Call dengan tangan seperti ace lemah atau pair kecil "karena mungkin coin flip" adalah leak klasik, sebab coin flip untuk bangkrut adalah kesepakatan buruk di turnamen (lihat [kapan harus fold](/id/blog/holdem-when-to-fold)).
+- **Call sebuah shove:** ketat — Anda butuh tangan yang mengalahkan *range* si penyhove, bukan sekadar tangan acak.
+
+"Ketat" berarti lebih ketat daripada shoving range Anda, bukan "hanya kalau saya yakin sedang unggul". Call itu soal harga: di big blind melawan shove 10bb Anda mempertaruhkan 9bb untuk memenangkan pot 20,5bb, jadi ambangnya ada di ==43,9%== ekuitas melawan range itu. Justru karena itu pair kecil dan ace lemah adalah *inti* calling range big blind, bukan leak: bahkan melawan AKo, yang ada di puncak shoving range siapa pun, 22 punya ==52,65%==. Leak-nya bukan jenis tangannya, melainkan menganggap "mungkin ini coin flip" tanpa memeriksa angkanya (lihat [kapan harus fold](/id/blog/holdem-when-to-fold)).
 
 Satu kalimat untuk diingat: ==jadilah yang shove, bukan yang call.== Agresi first-in adalah tempat profit short stack hidup; hero-call all-in adalah tempat short stack mati.
 
@@ -144,7 +146,7 @@ Matematika sebenarnya di balik "seberapa lebih rendah bubble factor saya" ada di
 
 1. **Open-limping.** Ia menyerahkan fold equity Anda dan menggembungkan pot yang tak bisa Anda mainkan postflop. Short stack raise atau fold — dan biasanya raise itu adalah shove.
 2. **Min-raise-lalu-fold dengan tangan sampah.** Raise seperempat stack Anda dan fold ke shove adalah yang terburuk dari kedua dunia. Jika sebuah tangan tak cukup bagus untuk masuk all-in, ia tak cukup bagus untuk di-raise.
-3. **Call all-in terlalu lebar.** Calling range Anda harus lebih ketat daripada shoving range Anda. "Mungkin ini flip" adalah cara short stack bangkrut — flip menuju eliminasi adalah kesepakatan yang merugi.
+3. **Call all-in berdasarkan firasat.** Calling range Anda harus tetap lebih ketat daripada shoving range Anda — tetapi "mungkin ini flip" adalah tebakan, bukan alasan. Hitung harganya: di big blind, small blind yang mati membuat flip sejati sudah melewati ambang EV chip, dan yang mengubahnya jadi fold adalah tekanan lompatan hadiah, bukan flip itu sendiri. Menebak membocorkan chip ke dua arah.
 4. **Blind down sampai habis.** Menunggu ace sampai Anda punya tiga big blind membuang fold equity yang membuat shove profit. Bertindak selagi all-in Anda masih menakuti orang (umumnya, sebelum Anda turun di bawah ~8–10bb).
 5. **Mengabaikan posisi.** Jam hanya premium dari button, atau shove terlalu lebar dari under the gun, keduanya membocorkan chip. Lebarkan di posisi akhir, ketatkan di posisi awal.
 
@@ -215,7 +217,7 @@ Permainan short stack adalah tempat matematika turnamen menjadi memori otot — 
   <a href="/id/blog/holdem-when-to-fold" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Strategi</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Kapan Harus Fold di Poker</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Kenapa call habis-habisan saat pendek adalah leak</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Kapan harganya menyuruh Anda fold</div>
   </a>
   <a href="/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Alat Gratis</div>

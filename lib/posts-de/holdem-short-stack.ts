@@ -106,7 +106,9 @@ Achte auf die Falle, die das vermeidet: ==ein Short Stack, der aus jeder Positio
 Wenn du ==first-in shovst==, gewinnst du auf zwei Wegen: alle folden (Fold Equity), oder du wirst gecallt und deine Hand hält. Wenn du einen Shove ==callst==, gewinnst du nur auf einem Weg – deine Hand muss gut genug sein, weil keine Fold Equity mehr zu holen ist. Also:
 
 - **First-in shoven:** weit, besonders late – du spielst teilweise auf den Fold.
-- **Einen Shove callen:** eng – du brauchst eine Hand, die die *Range* des Shovers schlägt, nicht nur eine zufällige Hand. Mit Händen wie einem schwachen Ass oder einem kleinen Paar zu callen, „weil es wahrscheinlich ein Coinflip ist“, ist ein klassischer Leak, denn ein Coinflip um dein Ausscheiden ist in einem Turnier ein schlechter Deal (siehe [wann folden](/de/blog/holdem-when-to-fold)).
+- **Einen Shove callen:** eng – du brauchst eine Hand, die die *Range* des Shovers schlägt, nicht nur eine zufällige Hand.
+
+„Eng“ heißt enger als deine Shoving-Range, nicht „nur wenn ich sicher vorne bin“. Callen ist eine Preisfrage: Im Big Blind gegen einen Shove über 10bb riskierst du 9bb, um einen Pot von 20,5bb zu gewinnen, sodass die Schwelle bei ==43,9%== Equity gegen diese Range liegt. Genau deshalb sind kleine Paare und schwache Asse der *Kern* einer Big-Blind-Calling-Range und kein Leak: Selbst gegen AKo – eine Hand am oberen Ende jeder Shoving-Range – kommt 22 auf ==52,65%==. Der Leak ist nicht die Handklasse, sondern die Annahme „das ist wahrscheinlich ein Coinflip“, statt die Zahl zu prüfen (siehe [wann folden](/de/blog/holdem-when-to-fold)).
 
 Eine Zeile zum Merken: ==sei der, der shovt, nicht der, der callt.== First-in-Aggression ist, wo der Short-Stack-Profit lebt; das Hero-Callen von All-ins ist, wo Short Stacks sterben.
 
@@ -144,7 +146,7 @@ Die echte Mathematik hinter „wie viel niedriger ist mein Bubble-Faktor“ stec
 
 1. **Open-Limpen.** Es gibt deine Fold Equity auf und bläht einen Pot auf, den du postflop nicht spielen kannst. Short Stacks raisen oder folden – und meist ist dieser Raise ein Shove.
 2. **Min-raise-then-Fold mit Junk.** Ein Viertel deines Stacks zu raisen und auf einen Shove zu folden ist das Schlechteste aus beiden Welten. Wenn eine Hand nicht gut genug ist, um all-in zu gehen, ist sie nicht gut genug, um zu raisen.
-3. **All-ins zu weit callen.** Deine Calling-Range muss enger sein als deine Shoving-Range. „Es ist wahrscheinlich ein Flip“ ist, wie Short Stacks busten – ein Flip ums Ausscheiden ist ein verlierender Deal.
+3. **All-ins aus dem Bauch heraus callen.** Deine Calling-Range muss enger bleiben als deine Shoving-Range – aber „es ist wahrscheinlich ein Flip“ ist eine Vermutung, kein Grund. Rechne stattdessen den Preis nach: Im Big Blind sorgt der tote Small Blind dafür, dass ein echter Flip die Chip-EV-Schwelle bereits überschreitet, und erst der Druck der Preissprünge macht daraus einen Fold, nicht der Flip selbst. Raten kostet Chips in beide Richtungen.
 4. **Auf null herunterblinden.** Auf Asse zu warten, bis du drei Big Blinds hast, wirft die Fold Equity weg, die Shoven profitabel macht. Handle, solange dein All-in Leute noch erschreckt (üblicherweise, bevor du unter ~8–10bb fällst).
 5. **Position ignorieren.** Nur Premiums vom Button zu jammen oder Under the Gun zu weit zu shoven, beide leaken Chips. Weite late, verenge early.
 
@@ -215,7 +217,7 @@ Short-Stack-Play ist, wo Turniermathe zu Muskelgedächtnis wird – kombiniere e
   <a href="/de/blog/holdem-when-to-fold" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Strategie</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Wann im Poker folden</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Warum kurz abzucallen ein Leak ist</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Wann der Preis Fold sagt</div>
   </a>
   <a href="/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Kostenloses Tool</div>

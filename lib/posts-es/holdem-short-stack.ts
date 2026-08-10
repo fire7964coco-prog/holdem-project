@@ -107,7 +107,9 @@ Fíjate en la trampa que esto evita: ==un short stack que solo va de shove con m
 Cuando vas de ==shove siendo primero==, ganas de dos maneras: todos foldean (fold equity), o te pagan y tu mano aguanta. Cuando ==igualas== un shove, solo ganas de una manera — tu mano tiene que ser lo bastante buena, porque no queda fold equity que recoger. Así que:
 
 - **Shove siendo primero:** amplio, sobre todo en posición tardía — en parte estás jugando por el fold.
-- **Igualar un shove:** cerrado — necesitas una mano que le gane al *rango* del que va de shove, no una mano cualquiera. Igualar el all-in con manos como un as débil o una pareja pequeña "porque probablemente sea un coin flip" es un leak clásico, ya que un coin flip para bustear es un mal trato en un torneo (mira [cuándo foldear](/es/blog/holdem-when-to-fold)).
+- **Igualar un shove:** cerrado — necesitas una mano que le gane al *rango* del que va de shove, no una mano cualquiera.
+
+"Cerrado" significa más cerrado que tu rango de shove, no "solo cuando estoy seguro de ir ganando". Igualar es una cuestión de precio: en la ciega grande, frente a un jam de 10bb arriesgas 9bb para ganar un bote de 20.5bb, así que el listón está en ==43.9%== de equity contra ese rango. Por eso mismo las parejas pequeñas y los ases débiles son el *núcleo* de un rango de igualar desde la ciega grande, y no un leak: incluso contra AKo, que está en lo más alto de cualquier rango de shove, 22 tiene ==52.65%==. El leak no es el tipo de mano, sino dar por hecho que "probablemente sea un coin flip" en lugar de comprobar el número (mira [cuándo foldear](/es/blog/holdem-when-to-fold)).
 
 Una frase para recordar: ==sé el que va de shove, no el que iguala.== La agresión siendo primero es donde vive el beneficio del short stack; el hero-call de all-ins es donde mueren los short stacks.
 
@@ -145,7 +147,7 @@ La matemática real detrás de "cuánto más bajo es mi factor de burbuja" vive 
 
 1. **Open-limp.** Renuncia a tu fold equity e infla un bote que no puedes jugar postflop. Los short stacks suben o foldean — y normalmente esa subida es un shove.
 2. **Min-raise para luego foldear con basura.** Subir un cuarto de tu stack y foldear a un shove es lo peor de ambos mundos. Si una mano no es lo bastante buena para ir all-in, no es lo bastante buena para subir.
-3. **Igualar all-ins demasiado amplio.** Tu rango de igualar debe ser más cerrado que tu rango de shove. "Probablemente sea un flip" es como bustean los short stacks — un flip para la eliminación es un trato perdedor.
+3. **Igualar all-ins por corazonada.** Tu rango de igualar debe mantenerse más cerrado que tu rango de shove — pero "probablemente sea un flip" es una suposición, no una razón. Calcula el precio: en la ciega grande, la ciega pequeña muerta hace que un flip de verdad ya supere el listón de EV en fichas, y lo que lo convierte en fold es la presión de los saltos de premio, no el flip en sí. Adivinar cuesta fichas en las dos direcciones.
 4. **Fundirte hasta nada.** Esperar ases hasta tener tres ciegas grandes tira a la basura la fold equity que hace rentable el shove. Actúa mientras tu all-in todavía asuste a la gente (por lo general, antes de bajar de ~8–10bb).
 5. **Ignorar la posición.** Ir de jam solo con premiums desde el botón, o de shove demasiado amplio desde UTG, ambos pierden fichas. Amplía en posición tardía, cierra en temprana.
 
@@ -174,7 +176,7 @@ A. "All-in o fold" es la misma idea que el push/fold: cuando vas corto de fichas
 
 **Q. ¿Cómo respondes a un shove all-in?**
 
-A. Foldea mucho más de lo que irías de shove — tu rango de igualar es mucho más cerrado que tu rango de shove. En cuanto igualas un all-in tu fold equity desaparece, así que tu mano tiene que ganarle de verdad al rango del que va de shove, no solo parecer jugable. Igualar el all-in con un as débil o una pareja pequeña "porque probablemente sea un coin flip" es un leak clásico, ya que un flip para bustear es un trato perdedor en un torneo. Iguala solo cuando tu mano le gane claramente a lo que están metiendo de shove.
+A. Foldea mucho más de lo que irías de shove — tu rango de igualar es mucho más cerrado que tu rango de shove. En cuanto igualas un all-in tu fold equity desaparece, así que tu mano tiene que ganarle de verdad al *rango* del que va de shove, no solo parecer jugable. Ponle número: en la ciega grande, frente a un jam de 10bb arriesgas 9bb para ganar un bote de 20.5bb, así que necesitas ==43.9%== de equity — un listón que las parejas pequeñas y los ases débiles superan a menudo (22 tiene ==52.65%== incluso contra AKo). Iguala cuando tu equity supere ese listón, no solo cuando estés seguro de ir ganando.
 
 **Q. ¿Deberías limpear alguna vez con un short stack?**
 
@@ -228,7 +230,7 @@ El juego de short stack es donde la matemática de torneos se vuelve memoria mus
   <a href="/es/blog/holdem-when-to-fold" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Estrategia</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Cuándo foldear en póker</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Por qué igualar el all-in corto es un leak</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Cuándo el precio dice foldear</div>
   </a>
   <a href="/en/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Herramienta gratis</div>

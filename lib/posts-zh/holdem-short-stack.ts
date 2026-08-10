@@ -107,7 +107,9 @@ first-in 就推 | 保住你的 fold equity
 当你 ==first-in 推== 时，你有两种赢法：所有人都弃（fold equity），或者你被跟、你的牌扛住。当你 ==跟== 一个推时，你只有一种赢法——你的牌得够好才行，因为没有 fold equity 可收了。所以：
 
 - **first-in 推：**宽，尤其在后位——你有一部分是在打对方弃牌。
-- **跟一个推：**紧——你需要一手能打赢推者*范围*的牌，而不只是随便一手牌。拿弱 A 或小对子这种牌「因为大概是掷硬币」就跟下去，是个典型的漏洞，因为在锦标赛里用一次掷硬币去赌出局是笔烂买卖（见 [什么时候弃牌](/zh/blog/holdem-when-to-fold)）。
+- **跟一个推：**紧——你需要一手能打赢推者*范围*的牌，而不只是随便一手牌。
+
+但「紧」是指比你自己的推注范围更紧，而不是「只有确定自己领先时才跟」。跟注是个价格问题：在大盲位面对 10bb 的全下，你押上 9bb 去争一个 20.5bb 的底池，所以门槛是对着那个范围有 ==43.9%== 的胜率。小对子和弱 A 正因为如此才是大盲位跟注范围的*核心*，而不是漏洞——就算对上任何推注范围里都排在最前面的 AKo，22 也有 ==52.65%==。漏洞不在于牌的种类，而在于不去核对这个数字，就认定「大概是掷硬币」（见 [什么时候弃牌](/zh/blog/holdem-when-to-fold)）。
 
 记住一句话：==做那个推的人，别做那个跟的人。== first-in 施压才是短码利润所在；英雄跟 all in 是短码送命的地方。
 
@@ -145,7 +147,7 @@ first-in 就推 | 保住你的 fold equity
 
 1. **开池平跟（open-limp）。**它交出了你的 fold equity，还把一个你翻后没法打的底池吹大。短码要加注或弃牌——而且那个加注通常就是一次推。
 2. **拿垃圾牌 min-raise 之后又弃牌。**加注四分之一的码量再向一个推弃牌，是两头不讨好。如果一手牌不够好到能 all in，它就不够好到能加注。
-3. **跟 all in 跟得太宽。**你的跟注范围必须比推注范围更紧。「大概是个掷硬币」正是短码送命的方式——一次赌出局的掷硬币是笔亏钱买卖。
+3. **凭感觉跟 all in。**你的跟注范围要一直比推注范围更紧——但「大概是个掷硬币」是猜测，不是理由。该算的是价格：在大盲位，死在池里的小盲让一次真正的掷硬币本来就已经越过了筹码 EV 的门槛，把它变成弃牌的是奖金跳级的压力，而不是掷硬币本身。凭猜测决定，筹码会往两个方向漏。
 4. **把筹码盲到见底。**为了等一手 AA 一直等到只剩 3 个大盲，是把那份让推有利可图的 fold equity 扔掉了。趁你的 all in 还吓得住人时就行动（通常，在你跌破约 8–10bb 之前）。
 5. **无视位置。**只在按钮位推超强牌，或在枪口位推得太宽，两种都在漏筹码。后位放宽，前位收紧。
 
@@ -174,7 +176,7 @@ A. 「全下或弃牌」和 push/fold 是同一个意思：当你短码、又是
 
 **Q. 面对别人 all in（一个 shove）该怎么应对？**
 
-A. 弃牌的比例要远高于你会推的比例——你的跟注范围比推注范围紧得多。一旦你跟了一个 all in，你的 fold equity 就没了，所以你的牌得是真的能打赢推者的整个范围，而不只是「看着能玩」。拿弱 A 或小对子「因为大概是掷硬币」就跟下去，是个典型的漏洞，因为在锦标赛里用一次赌出局的掷硬币是笔亏钱买卖。只有当你的牌明显打赢他推的那个范围时才跟。
+A. 弃牌的比例要远高于你会推的比例——你的跟注范围比推注范围紧得多。一旦你跟了一个 all in，你的 fold equity 就没了，所以你的牌得是真的能打赢推者的整个范围，而不只是「看着能玩」。把它算成数字：在大盲位面对 10bb 的全下，你押上 9bb 去争一个 20.5bb 的底池，所以你需要 ==43.9%== 的胜率——小对子和弱 A 常常能越过这条线（22 对上 AKo 也有 ==52.65%==）。当你的胜率高过这条线时就跟，而不是只在确定自己领先时才跟。
 
 **Q. 短码时该不该平跟（limp）？**
 
@@ -228,7 +230,7 @@ A. 是的。在现金局你随时可以补码或加买到满码，而且通常�
   <a href="/zh/blog/holdem-when-to-fold" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">策略</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">什么时候该弃牌</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">为什么短码跟到底是个漏洞</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">什么价格下该弃牌</div>
   </a>
   <a href="/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">免费工具</div>

@@ -106,7 +106,9 @@ Notice the trap this avoids: ==a short stack that only shoves premium hands from
 When you ==shove first-in==, you win two ways: everyone folds (fold equity), or you get called and your hand holds. When you ==call== a shove, you only win one way — your hand has to be good enough, because there's no fold equity left to collect. So:
 
 - **Shoving first-in:** wide, especially late — you're partly playing for the fold.
-- **Calling a shove:** tight — you need a hand that beats the shover's *range*, not just a random hand. Calling off with hands like a weak ace or a small pair "because it's probably a coin flip" is a classic leak, since a coin flip to bust is a bad deal in a tournament (see [when to fold](/en/blog/holdem-when-to-fold)).
+- **Calling a shove:** tight — you need a hand that beats the shover's *range*, not just a random hand.
+
+"Tight" means tighter than your shoving range, not "only when I'm sure I'm ahead." Calling is a price question: in the big blind against a 10bb jam you risk 9bb to win a 20.5bb pot, so the bar is ==43.9%== equity against that range. Small pairs and weak aces are the *core* of a big-blind calling range for exactly that reason — even against AKo, near the top of anyone's jamming range, 22 runs ==52.65%==. The leak isn't the hand class; it's assuming "it's probably a coin flip" instead of checking the number (see [when to fold](/en/blog/holdem-when-to-fold)).
 
 One line to remember: ==be the one who shoves, not the one who calls.== First-in aggression is where short-stack profit lives; hero-calling all-ins is where short stacks die.
 
@@ -144,7 +146,7 @@ The real math behind "how much lower is my bubble factor" lives in the [ICM guid
 
 1. **Open-limping.** It gives up your fold equity and bloats a pot you can't play postflop. Short stacks raise or fold — and usually that raise is a shove.
 2. **Min-raise-then-fold with junk.** Raising a quarter of your stack and folding to a shove is the worst of both worlds. If a hand isn't good enough to get all-in with, it isn't good enough to raise.
-3. **Calling all-ins too wide.** Your calling range must be tighter than your shoving range. "It's probably a flip" is how short stacks bust — a flip to elimination is a losing deal.
+3. **Calling all-ins on a hunch.** Your calling range must stay tighter than your shoving range — but "it's probably a flip" is a guess, not a reason. Run the price instead: in the big blind the dead small blind means a genuine flip already clears the chip-EV bar, and it's pay-jump pressure, not the flip itself, that can turn it into a fold. Guessing leaks chips in both directions.
 4. **Blinding down to nothing.** Waiting for aces until you have three big blinds throws away the fold equity that makes shoving profitable. Act while your all-in still scares people (commonly, before you drop under ~8–10bb).
 5. **Ignoring position.** Jamming only premiums from the button, or shoving too wide under the gun, both leak chips. Widen late, tighten early.
 
@@ -173,7 +175,7 @@ A. "All-in or fold" is the same idea as push/fold: when you're short-stacked and
 
 **Q. How do you respond to an all-in shove?**
 
-A. Fold far more than you'd shove — your calling range is much tighter than your shoving range. Once you call an all-in your fold equity is gone, so your hand has to genuinely beat the shover's range, not just look playable. Calling off with a weak ace or a small pair "because it's probably a coin flip" is a classic leak, since a flip to bust is a losing deal in a tournament. Call only when your hand clearly beats what they're jamming.
+A. Fold far more than you'd shove — your calling range is much tighter than your shoving range. Once you call an all-in your fold equity is gone, so your hand has to genuinely beat the shover's *range*, not just look playable. Put a number on it: in the big blind against a 10bb jam you risk 9bb to win a 20.5bb pot, so you need ==43.9%== equity — a bar that small pairs and weak aces often clear (22 runs ==52.65%== even against AKo). Call when your equity beats that bar, not only when you're certain you're ahead.
 
 **Q. Should you ever limp with a short stack?**
 
@@ -223,7 +225,7 @@ Short-stack play is where tournament math becomes muscle memory — pair it with
   <a href="/en/blog/holdem-when-to-fold" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Strategy</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">When to Fold in Poker</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Why calling off short is a leak</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">When the price says fold</div>
   </a>
   <a href="/en/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Free Tool</div>
