@@ -1,4 +1,9 @@
-# de 문체 게이트 사양서 — `scripts/check-de-style.mjs` (미구현, 2026-08-10 작성)
+# de 문체 게이트 사양서 — `scripts/check-de-style.mjs` (✅ **2026-08-10 구현 완료**)
+
+> **구현 결과 요약** — `npm run check:de-style` · `npm run check:de-style:selftest`(**61/61**)
+> `--cluster=Regeln|Handreihenfolge|Odds|Strategie|Glossar|Turniere|기타` · `--slug=` · `--verbose`
+> 결과는 아래 §5 「구현 결과」. **베이스라인 3개가 그대로 재현**돼(마침표 소수점 0편 · FAQ 0문항 2편 ·
+> masterUpdated 없음 24편) 게이트가 옳은 것을 재고 있음이 확인됐다.
 
 > **왜 사양서만 먼저 있나**: 2026-08-10 세션에서 de 42편 경화 계획을 세우며 지표를 급조해 돌렸는데
 > **오탐이 심했다**. 게이트의 가치는 스크립트가 아니라 **오탐 튜닝 루프**에 있고, 그 루프는 실제 본문을
@@ -94,10 +99,76 @@
 
 ---
 
-## 4. 구현 순서 (다음 세션)
+## 4. 구현 순서 (✅ 2026-08-10 완료)
 
-1. 위 §3 표본으로 **먼저 셀프테스트를 쓴다**(TDD) — 규칙을 짜기 전에 오탐 기준을 고정
-2. 규칙 1~6(🔴)만 구현. ⚠ 항목은 2차
-3. 42편 전수 → **오탐 0이 될 때까지** 튜닝. 이 루프가 본체다
-4. `npm run check:de-style` 등록 · 클러스터별 `--cluster=rules` 옵션
-5. 결과로 **「42편 중 실제로 손댈 N편」** 확정 → 그게 경화 세션들의 범위가 된다
+1. ✅ §3 표본으로 **먼저 셀프테스트**(TDD) — 규칙을 짜기 전에 오탐 기준을 고정
+2. ✅ 규칙 D1~D6(🔴) + D7~D9(⚠) 전부 구현
+3. ✅ 42편 전수 → 오탐 튜닝 (아래 §6)
+4. ✅ `npm run check:de-style` 등록 · `--cluster=` · `--slug=` · `--verbose`
+5. ✅ 「손댈 N편」 확정 (아래 §5)
+
+---
+
+## 5. 구현 결과 (2026-08-10 · 42편 전수)
+
+**🔴 6건 / 6편** — 클러스터 세션이 손댈 확정 목록
+
+| 클러스터 | 글 | 코드 | 내용 |
+|---|---|---|---|
+| Regeln | `texas-holdem-rules-for-beginners` | D6 | FAQPage 리치결과 **0문항** |
+| Regeln | `holdem-game-order` | D6 | FAQPage 리치결과 **0문항** |
+| Regeln | `holdem-betting-actions` | D4 | `ein Bet` ×3 (L57·L114·L181) — §5는 **die** Bet |
+| Strategie | `holdem-3bet` | D4 | `Eine Raise` (L57) — §5는 **der** Raise |
+| Strategie | `holdem-when-to-fold` | D4 | `eine Raise` ×2 (L104·L204) |
+| Turniere | `apt-incheon-2026-guide` | D4 | `im Lobby`(L154) · `das Natural8-Lobby`(L425) · `gegen Primärquellen geprüft`(L415) |
+
+> ⚠ **Bet/Raise 성 4건은 «정본 위반»이지 «오류 확정»이 아니다.** 독일 포커 매체는 `die Raise`도 쓴다.
+> 고치기 전에 `translation-terms-de.md` §5를 한 번 재확인하고 **42편 일괄 결정**할 것 —
+> 한 편만 바꾸면 형제 글과 어긋난다.
+> ★apt-incheon 3건은 다르다: **2026-07-28 검수에서 이미 «정정»으로 확정된 항목이 아직 반영 안 된 것**이다
+> (정본 「대회·여행 글 실전 교정」 §3 표). 판단 없이 고치면 된다.
+
+**🟠 25건** — `masterUpdated` 없음 **24편** + 퍼센트 표기 혼재 1편(`apt-incheon`, 붙임 1 / 띄움 11).
+D9 24편: split-pot-rules · flush-vs-straight · kicker · outs · equity · drawing-odds · strategy · 3bet ·
+continuation-bet · position-play · positions · limping · glossary · bad-beat · cooler · fish · rake ·
+tournament · tournament-vs-cash-game · short-stack · ept-barcelona · wpt-australia · korea-marathon · card-counting
+
+**0건이 나온 검사 — 이건 «통과»다(미검사 아님, 42/42편 실제 검사됨)**
+- **D1 du/Sie 혼용 0편.** 급조 정규식이 24편을 잡았던 그 항목이다 — **de 베이스는 문체가 이미 du로 통일돼 있다.**
+- D3 마침표 소수점 0편 · D5 금지 용어 확정 0건 · D8 관사 뒤 소문자 명사 0곳 · D2 확정 0건.
+
+**🔴 그래서 「손댈 N편」은 얼마인가**
+- **게이트가 잡는 결함 기준 = 6편**(+ masterUpdated 채우기 24편).
+- **하지만 경화 범위는 여전히 42편이다.** 게이트는 §7 문체 «지문»만 본다 —
+  §5-A가 경화의 본체로 지정한 **H2 국면형 전환 · 「Direkte Duelle」 대결표 · 약어표 신설 ·
+  Faustregel 표기 · Q-A-E 골격 · 톤**은 **원리상 이 게이트의 시야 밖**이다.
+- → 세션 1~6은 **범위를 줄이는 근거로 이 게이트를 쓰면 안 된다.** 쓰임새는 반대다:
+  **「문체 지문은 이미 깨끗하니 시간을 §5-A 실행 항목에 몰아라」**가 이 결과의 뜻이다.
+
+---
+
+## 6. 오탐 튜닝 루프 (실측 기록 — 같은 걸 다시 겪지 마라)
+
+첫 실행 🔴 **109건 → 26건 → 6건**. 걸린 26건 중 **20건이 오탐**이었고 원인은 여섯 가지뿐이었다.
+**전부 `--selftest` 픽스처(61개)로 고정**돼 있으므로 규칙을 손대면 즉시 회귀가 잡힌다.
+
+| # | 오탐 원인 | 실측 예 | 처방 |
+|---|---|---|---|
+| ⓪ | **인라인 HTML/CSS** | `rgba(255,255,255,0.12)` · `line-height:1.5` | 태그 통째 제거(안쪽 텍스트는 유지). 이것만으로 109→26 |
+| ① | 띄어쓴 **영어 합성어**의 성은 뒤 명사가 정한다 | `deine Pot Odds`(die Odds) · `Ein Bubble Factor`(der Factor) | 명사 뒤 «공백+대문자»면 판정 안 함 |
+| ② | **복수**가 여성 단수와 동형 | `keine Kicker` · `keine Cooler` | 남성·중성 검사는 복수형이 없는 `eine`에만 |
+| ③ | **정관사 + eine** | `der eine Spot im Poker` | 앞에 정관사면 제외 |
+| ④ | **하이라이트 마커가 문장부호를 가림** | `…trennt.== Sie sind`(3인칭 복수) | `==`·`**`를 지운 뒤 문두 판정 |
+| ⑤ | **독일어 명령형 = 1인칭 단수 동형** | `prüfe auf ein Full House` 등 7건 전부 정상 | 사양서의 「1·2인칭이면 잡는다」를 **폐기**, Check 앵커만 |
+| ⑥ | **평범한 독일어 낱말** | `eine Bank am Fluss`(진짜 강) · `Ein großer Blind-Straddle` | Fluss·Wende·Brett·Topf·anrufen은 포커 문맥 토큰이 같은 줄에 있을 때만 |
+
+### 🔴 채택하지 않은 규칙 — `das/der APT` 성 검사
+정본은 「die APT」를 정정으로 적어 뒀지만 실측 3건이 **전부 오탐**이었다:
+`mit der APT Championship`(핵=Championship·3격) · `das größte Main Event, **das** APT je gespielt hat`(**관계대명사**) ·
+`das APT Incheon Main Event`(핵=Main Event). APT는 거의 항상 수식어라 뒤 명사가 성을 정한다. **정밀도 0/3이라 내렸다.**
+
+### 의도적 공백 (매 실행 «미판정»으로 출력된다 — 0건이 이 자리를 덮지 않는다)
+- **D5 `prüfen` 16곳** — 같은 줄에 Check가 없으면 명령형과 구별 불가.
+- **D2 천단위 쉼표 2곳** — `42,195`(마라톤 거리, 정상 소수)와 `1,650`(금액 오류)이 **모양이 같다**.
+  금액·수량 앵커가 붙은 것만 🔴로 확정한다.
+- 게이트가 **원리상 안 보는 것** = §5-A 실행 항목(H2 국면형·표 신설·Q-A-E)·사실 정확성·톤.
