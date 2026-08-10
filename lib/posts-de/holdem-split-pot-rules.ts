@@ -9,6 +9,7 @@ export const POST: Post = {
   category: "hand-rankings",
   date: "2026-06-13",
   updated: "2026-08-10",
+  masterUpdated: "2026-07-18",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "🃏",
@@ -160,6 +161,14 @@ A. Ein Pot wird geteilt, wenn zwei oder mehr Spieler im Showdown die identische 
 
 A. Nur, wenn die vollständigen besten Fünf unentschieden sind – dasselbe Paar mit denselben Kickern, oder dieselbe Straße, derselbe Flush oder dasselbe Full House. Wenn irgendein Kicker abweicht, gewinnt der höhere Kicker den ganzen Pot, statt zu teilen.
 
+**Q. Wie teilt der Dealer den Pot konkret auf?**
+
+A. Er stapelt die Chips und gibt jedem unentschiedenen Spieler denselben Anteil. Geht die Teilung nicht glatt auf, wandert der übrige Odd Chip an den ersten unentschiedenen Sitz links vom Button. Die Farbe spielt dabei keine Rolle, und wenn jemand All-in ist, wird jeder Pot – Haupt- wie Nebenpot – für sich abgerechnet.
+
+**Q. Wird bei Full House, Straße oder Zwei Paaren geteilt?**
+
+A. Nur wenn die kompletten fünf Karten übereinstimmen. Zwei Full Houses teilen erst, wenn Drilling *und* Paar gleich sind – praktisch fast nur, wenn das Full House auf dem Board liegt. Zwei Straßen teilen nur bei derselben höchsten Karte, zwei Zwei-Paare-Hände nur, wenn beide Paare *und* der Kicker passen. In jedem anderen Fall nimmt die höhere Hand alles.
+
 **Q. Was bedeutet „geteilter Pot“ beim Poker?**
 
 A. Ein geteilter Pot ist im Tischjargon einfach ein Split Pot. „Chop“ sagen die Spieler; „Split Pot“ ist der Begriff aus dem Regelbuch – beides bedeutet, den Pot gleichmäßig unter den unentschiedenen Händen aufzuteilen.
@@ -179,6 +188,18 @@ A. Ja. Wenn drei oder mehr Spieler alle die identische beste Fünf-Karten-Hand h
 **Q. Wie werden Split Pots gehandhabt, wenn jemand All-in ist?**
 
 A. Der Pot bricht in einen Hauptpot und Nebenpots auf; jeder wird separat vergeben oder gechoppt, basierend auf der besten Hand unter den für diesen bestimmten Pot berechtigten Spielern.
+
+**Q. Wie berechnet man einen Nebenpot?**
+
+A. Jeder kann von einem Gegner nur so viel gewinnen, wie er selbst investiert hat. Ist A für 100 All-in und setzen B und C je 300, dann sind die ersten 100 von allen dreien der Hauptpot (100 × 3 = 300), und die restlichen 200 von B und C bilden den Nebenpot (200 × 2 = 400). Jeder Pot geht anschließend an die beste Hand unter den dafür berechtigten Spielern.
+
+**Q. Wer ist für einen Nebenpot berechtigt?**
+
+A. Nur die Spieler, die Chips in genau diesen Nebenpot gelegt haben – also die, die nach dem All-in weitergesetzt haben. Ein All-in-Spieler ist für den Hauptpot berechtigt (plus frühere Nebenpots, zu denen er beigetragen hat), nie für einen Pot aus Chips, die er nicht mitgehen konnte.
+
+**Q. Kann man Hauptpot und Nebenpot zugleich gewinnen?**
+
+A. Ja. Ein tieferer Stack mit der besten Hand kassiert den Hauptpot und jeden Nebenpot, für den er berechtigt ist – er scoopt alles. Der All-in-Short-Stack dagegen kann nur den Hauptpot holen, egal wie stark seine Hand ist: Chips, die er nie mitgehen konnte, kann er auch nicht gewinnen.
 
 **Q. Ist ein Turnier-Chop dasselbe wie ein Split Pot?**
 

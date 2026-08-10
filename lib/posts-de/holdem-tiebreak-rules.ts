@@ -170,29 +170,53 @@ Solche Runouts vor der River-Bet zu erkennen, ist eine eigene Fähigkeit – das
 
 ## FAQ
 
-**Q. Wie werden Ties beim Poker entschieden?**
+**Q. Welche Regeln gelten beim Poker bei gleichen Karten?**
 
-A. In fester Reihenfolge: zuerst der Handrang, dann die Karten, die die Hand bilden (das höhere Paar, der Drilling oder die höchste Karte), dann die Kicker von hoch nach niedrig. Stimmen alle fünf Karten im Rang überein, wird der Pot geteilt – Farben werden nie verwendet.
+A. Bei Gleichstand zählt nur der Rang der Karten, nie die Farbe. Der Dealer arbeitet drei Ebenen ab und stoppt bei der ersten, die einen Unterschied findet: Handkategorie, dann die Karten der Hand selbst, dann die Beikarten. Findet er auf keiner Ebene einen Unterschied, sind die Hände gleichwertig und der Pot wird gechoppt.
 
-**Q. Wer gewinnt, wenn zwei Spieler das gleiche Paar haben?**
+**Q. Beide haben ein Ass-Paar – wer bekommt den Pot?**
 
-A. Der Spieler, dessen beste Fünf den höheren Kicker hat. Ein Paar trägt drei Kicker, die von oben nach unten verglichen werden – der erste Unterschied gewinnt den Pot. Stimmen alle drei überein, ist es ein Split.
+A. Der Spieler mit dem höheren Kicker. Ein Paar trägt drei Beikarten, die von oben nach unten verglichen werden – der erste Unterschied gewinnt den Pot. Achtung: Der Kicker muss auch wirklich in deinen besten fünf landen. Eine hohe Board-Karte kann deine Hole Card aus der Hand drücken, dann spielt sie gar nicht mit.
 
-**Q. Wer gewinnt, wenn beide Spieler Zwei Paare haben?**
+**Q. Zwei Paare gegen Zwei Paare – was wird zuerst verglichen?**
 
-A. Vergleiche zuerst das höhere Paar, dann das tiefere Paar, dann den einzelnen Kicker. Asse-und-Dreien schlagen Könige-und-Damen, weil das obere Paar vor allem anderen geprüft wird.
+A. Das höhere Paar. Erst wenn das identisch ist, kommt das tiefere Paar an die Reihe, und ganz zuletzt der einzelne Kicker. Asse-und-Dreien schlagen deshalb Könige-und-Damen, obwohl die Damen größer sind als die Dreien.
 
-**Q. Zählt die 5. Karte beim Poker?**
+**Q. Wer gewinnt bei zwei gleichen Drillingen?**
 
-A. Ja. Wenn die ersten vier Karten beider Hände identisch sind, entscheidet die fünfte Karte den ganzen Pot – der dritte Kicker eines Paars, die niedrigste Karte eines Flushes, die Beikarte zum Vierling auf dem Board. Sie hört erst auf zu zählen, wenn die Karten des Boards deine Hole Card überragen.
+A. Der Spieler mit dem höheren Kicker. Ein Drilling trägt zwei Beikarten, die von oben verglichen werden: Bei Drillings-Neunen schlägt 9-9-9-A-K das 9-9-9-A-Q, weil der zweite Kicker – der König – die Dame überragt. Stimmen Drilling und beide Kicker überein, wird geteilt. Ein Set aus einem Pocket-Paar landet fast nie im Gleichstand, weil nur ein Spieler genau dieses Paar halten kann.
+
+**Q. Wer gewinnt bei zwei gleichen Straßen?**
+
+A. Die Straße mit der höheren obersten Karte – Q-J-10-9-8 schlägt J-10-9-8-7. Eine Straße wird ausschließlich nach ihrer höchsten Karte gewertet und hat keinen Kicker. Ist die oberste Karte gleich, sind die Hände identisch und der Pot wird geteilt. Das passiert am häufigsten, wenn die Straße überwiegend auf dem Board liegt und beide Spieler dasselbe Ende füllen.
+
+**Q. Wer gewinnt, wenn beide einen Flush haben?**
+
+A. Verglichen wird Karte für Karte von oben: Ein Ass-hoher Flush schlägt einen König-hohen, und bei gleicher oberster Karte geht es zur nächsten – durch alle fünf. Die Farbe bricht nie den Gleichstand, bei identischen Rängen wird geteilt. Im Hold'em haben zwei Flushes ohnehin immer dieselbe Farbe, weil sich alle das Board teilen.
+
+**Q. Wer gewinnt bei zwei gleichen Full Houses?**
+
+A. Zuerst zählt der Drilling: K-K-K-2-2 schlägt Q-Q-Q-A-A, obwohl die Asse größer aussehen. Erst wenn die Drillinge identisch sind, wird das Paar verglichen. Ein Full House hat keinen Kicker – stimmen Drilling und Paar überein, ist es ein Split.
+
+**Q. Was passiert, wenn beide einen Straight Flush haben?**
+
+A. Der höhere gewinnt, entschieden über die oberste Karte: Ein Damen-hoher Straight Flush schlägt einen Neun-hohen. Ein Royal Flush ist schlicht der Ass-hohe Straight Flush und schlägt damit jeden anderen. Gleiche oberste Karte bedeutet identische Hand und geteilten Pot.
+
+**Q. Wie oft kommt ein Split beim Poker überhaupt vor?**
+
+A. Selten – genau dafür gibt es Kicker. Ein echter Gleichstand entsteht nur, wenn die besten fünf Karten Rang für Rang übereinstimmen: meist wenn das Board selbst die beste Hand ist, oder bei einer gemeinsamen Straße oder einem gemeinsamen Flush, den keine Hole Card mehr verbessert. Die Beikarten trennen die allermeisten Hände, bevor es überhaupt so weit kommt.
+
+**Q. Wann entscheidet die fünfte Karte den ganzen Pot?**
+
+A. Immer dann, wenn die ersten vier Karten beider Hände übereinstimmen – der dritte Kicker eines Paars, die niedrigste Karte eines Flushes, die Beikarte zum Vierling auf dem Board. Sie hört erst auf zu zählen, wenn die Karten des Boards deine Hole Card überragen.
 
 **Q. Kann man beim Poker ein Ass als 1 verwenden?**
 
-A. Ja, aber nur in der Straße A-2-3-4-5 (dem „Wheel“), wo es als niedrigste Karte spielt – was das Wheel zur niedrigsten Straße im Spiel macht. Das Ass kann sich nicht in der Mitte herumwickeln: Q-K-A-2-3 ist keine Straße.
+A. Ja, aber nur in der Straße A-2-3-4-5 (dem „Wheel“), wo es als niedrigste Karte spielt. Das Ass kann sich nicht in der Mitte herumwickeln: K-A-2-3-4 ist keine Straße, und Q-K-A-2-3 ebenso wenig.
 
-**Q. Kann man eine höhere Straße haben als ein anderer Spieler?**
+**Q. Welche Straße ist die niedrigste beim Poker?**
 
-A. Ja – Straßen werden rein nach ihrer höchsten Karte gewertet, also schlägt 6-5-4-3-2 das A-5-Wheel, und Broadway (A-K-Q-J-10) schlägt sie alle. Gleiche höchste Karten bedeuten identische Straßen und einen geteilten Pot.
+A. Das Wheel, A-2-3-4-5, weil das Ass darin als Eins spielt. Straßen werden rein nach ihrer höchsten Karte gewertet, also schlägt schon 6-5-4-3-2 das Wheel, und Broadway (A-K-Q-J-10) schlägt sie alle. Gleiche höchste Karten bedeuten identische Straßen und einen geteilten Pot. Um die Ecke geht es nie: K-A-2-3-4 ist keine Straße.
 
 **Q. Entscheiden Farben beim Texas Hold'em jemals einen Tie?**
 

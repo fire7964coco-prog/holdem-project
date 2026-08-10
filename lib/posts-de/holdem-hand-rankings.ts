@@ -61,11 +61,13 @@ Vor den Händen brauchst du die Kartenstärke. Nur zwei Dinge.
 
 **A > K > Q > J > 10 > 9 > 8 > 7 > 6 > 5 > 4 > 3 > 2**
 
-Das Ass ist die stärkste Karte und die einzige, die die Regeln biegt: Es spielt hoch (A-K-Q-J-10) *und* niedrig (A-2-3-4-5, das „Wheel“). Es kann nicht durch die Mitte herumlaufen – Q-K-A-2-3 ist **keine** Straße.
+Das Ass ist die stärkste Karte und die einzige, die die Regeln biegt: Es spielt hoch (A-K-Q-J-10) *und* niedrig (A-2-3-4-5, das „Wheel“). Es kann nicht durch die Mitte herumlaufen – ==r:**K-A-2-3-4 ist keine Straße**==, und Q-K-A-2-3 ebenso wenig.
 
-### Farben haben keinen Wert
+### Farben-Reihenfolge beim Poker: Es gibt keine
 
-Im Standard-Texas-Hold'em **schlägt keine Farbe eine andere**. Pik schlägt nicht Herz. Die Farbe zählt nur, um einen Flush zu *bilden*, nie um einen Gleichstand zu entscheiden. Haben zwei Spieler dieselben fünf Karten in verschiedenen Farben, wird der Pot geteilt – jedes Mal.
+Im Standard-Texas-Hold'em **schlägt keine Farbe eine andere**. Pik, Herz, Karo und Kreuz sind exakt gleichwertig – Pik schlägt nicht Herz, und zwei identische Straßen in verschiedenen Farben teilen den Pot. Die Farbe zählt nur, um einen Flush zu *bilden*, nie um einen Gleichstand zu entscheiden. Haben zwei Spieler dieselben fünf Karten in verschiedenen Farben, wird der Pot geteilt – jedes Mal.
+
+Die Farbe entscheidet im Hold'em nicht einmal über den letzten Chip: Bleibt beim Chop einer übrig, geht er an den ersten Spieler links vom Button. Nur bei Stud und Razz wird dieser Chip über die höhere Farbe vergeben.
 
 ---
 
@@ -227,19 +229,28 @@ Du hältst **A♥ 3♣**. Das Board bringt bereits einen Drilling Könige.
 
 ---
 
-## Schnelle Antworten auf die Duelle, über die alle streiten
+## Direkte Duelle: Was ist höher – Drilling oder Flush?
+
+Der Flush. Bei jedem Duell zwischen zwei *verschiedenen* Handtypen entscheidet allein die Rangnummer: die kleinere Zahl gewinnt, egal wie hoch die einzelnen Karten sind. Ein Flush ist #5, ein Drilling #7 – also nimmt der Flush den Pot. Erst bei *gleichem* Handtyp geht es weiter zu Kartenwert und Kicker. Hier stehen die Duelle, über die am Tisch wirklich gestritten wird.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Duell | Gewinnt | Warum |
+| Was ist höher? | Gewinnt | Warum |
 |------|------|------|
-| Flush vs Straße | **Flush** | #5 schlägt #6 |
-| Full House vs Flush | **Full House** | #4 schlägt #5 |
-| Drilling vs Zwei Paare | **Drilling** | #7 schlägt #8 |
-| Straße vs Drilling | **Straße** | #6 schlägt #7 |
-| A-2-3-4-5 vs 10-J-Q-K-A | **Broadway (Ass hoch)** | Das Wheel ist die niedrigste Straße |
-| Gleiches Paar, Kicker K vs J | **Kicker K** | Höherer Kicker gewinnt |
-| Vierling vs Full House | **Vierling** | #3 schlägt #4 |
+| Drilling oder Flush? | **Flush** | #5 schlägt #7 |
+| Flush oder Straße? | **Flush** | #5 schlägt #6 |
+| Full House oder Flush? | **Full House** | #4 schlägt #5 |
+| Full House oder Straße? | **Full House** | #4 schlägt #6 |
+| Full House oder Vierling? | **Vierling** | #3 schlägt #4 |
+| Flush oder Vierling? | **Vierling** | #3 schlägt #5 |
+| Straight Flush oder Full House? | **Straight Flush** | #2 schlägt #4 |
+| Royal Flush oder Vierling? | **Royal Flush** | #1 schlägt #3 |
+| Drilling oder Zwei Paare? | **Drilling** | #7 schlägt #8 |
+| Straße oder Drilling? | **Straße** | #6 schlägt #7 |
+| Zwei Paare: K-K-9-9 oder Q-Q-J-J? | **K-K-9-9** | Zuerst zählt das höhere Paar, erst danach das zweite |
+| A-2-3-4-5 oder 10-J-Q-K-A? | **10-J-Q-K-A (Broadway)** | Das Wheel ist die niedrigste Straße |
+| Gleiches Paar, Kicker K oder J? | **Kicker K** | Der höhere Kicker gewinnt |
+| **Pik oder Kreuz?** | **Keins von beiden** | Im Hold'em gibt es ==r:**keine Rangfolge der Farben**== – bei identischen Rängen wird geteilt |
 
 </div>
 
@@ -370,6 +381,14 @@ A. Ja. Ein Drilling ist #7 und zwei Paare sind #8, also gewinnt der Drilling. Zw
 **Q. Schlägt ein Straight Flush einen Vierling?**
 
 A. Ja. Ein Straight Flush (#2) schlägt einen Vierling (#3) – fünf Karten in Folge einer Farbe übertreffen Quads. Das Einzige über einem Straight Flush ist ein Royal Flush, der einfach dessen Ass-hoch-Version ist.
+
+**Q. Was schlägt vier Asse?**
+
+A. Nur zwei Hände: ein Straight Flush und ein Royal Flush. Vier Asse sind der höchstmögliche Vierling, also kann dich kein anderer Vierling überholen. Liegen alle vier Asse auf dem Board, entscheidet die höchste fünfte Karte – wer eine Hole Card hält, die höher ist als die fünfte Board-Karte, gewinnt; sonst wird geteilt.
+
+**Q. Was ist höher – Pik oder Kreuz beim Poker?**
+
+A. Weder noch. Alle vier Farben sind im Texas Hold'em gleichwertig und machen eine Hand nie stärker. Zeigen zwei Spieler dieselben fünf Ränge in unterschiedlichen Farben, wird der Pot geteilt. Eine Farb-Rangfolge existiert nur in anderen Varianten wie Stud und Razz – und auch dort nur, um Sitzplätze oder einen übrigen Chip zu vergeben, nie um Hände zu vergleichen.
 
 **Q. Was ist die niedrigste (schlechteste) Hand im Poker?**
 

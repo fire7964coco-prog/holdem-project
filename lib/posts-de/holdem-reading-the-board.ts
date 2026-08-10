@@ -262,6 +262,18 @@ A. Nein. Folgen wie K-A-2-3-4 oder Q-K-A-2-3 sind im Texas Hold'em keine Straße
 
 A. Zähl die Farben auf dem Board. Mit 0–2 einer Farbe existiert für niemanden ein Flush. Mit 3 braucht ein Spieler zwei dieser Farbe in der Hand; mit 4 nur eine; mit allen 5 ist das Board selbst ein Flush und nur eine Karte dieser Farbe, die höher ist als die niedrigste auf dem Board, verbessert ihn.
 
+**Q. Liegt ein Flush auf dem Board – wer gewinnt dann?**
+
+A. Bilden die fünf Gemeinschaftskarten selbst einen Flush, teilen ihn zunächst alle. Verbessern kann ihn nur eine Karte derselben Farbe, die höher ist als die niedrigste auf dem Board – wer die höchste solche Karte hält, nimmt den Pot. Hat sie niemand, spielen alle das Board und es wird geteilt.
+
+**Q. Liegt eine Straße auf dem Board – wer gewinnt dann?**
+
+A. Dann hat jeder mindestens diese Straße, und es gewinnt, wer sie mit einer Hole Card nach oben verlängert. Auf einem Board 5-6-7-8-9 macht ein Spieler mit einer Zehn die 6-7-8-9-10 und schlägt das Board. Kann niemand höher, wird der Pot geteilt.
+
+**Q. Musst du im Texas Hold'em beide Hole Cards benutzen?**
+
+A. Nein. Du baust deine besten fünf Karten aus jeder beliebigen Kombination deiner zwei Hole Cards und der fünf Gemeinschaftskarten – beide, nur eine oder gar keine. Gar keine zu benutzen heißt „das Board spielen“. Omaha ist genau umgekehrt: Dort musst du exakt zwei deiner vier Hole Cards nutzen.
+
 **Q. Zählt ein Paar auf dem Board als Teil deiner Hand?**
 
 A. Ja – Gemeinschaftskarten gehören zur Hand jedes Spielers. Ein Paar auf dem Board zählt zu deinen besten 5, selbst wenn deine Hole Cards komplett verfehlen. Es bedeutet auch, dass Gegner Drillinge oder Full Houses halten können, also bewerte Ein-Paar-Hände an jedem gepaarten Board neu.

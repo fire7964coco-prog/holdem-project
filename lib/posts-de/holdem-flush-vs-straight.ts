@@ -9,6 +9,7 @@ export const POST: Post = {
   category: "hand-rankings",
   date: "2026-06-13",
   updated: "2026-08-10",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "⚡",
@@ -114,7 +115,7 @@ Royal Flush (#1) | Paar & High Card (#9–#10)
 Ein höherer Flush | Jeder niedrigere Flush
 :::
 
-Das Matchup, über das nach Flush vs Straße am meisten gestritten wird, ist **Flush vs Full House** – und das Boat gewinnt. Das Warnzeichen ist ein **gepaartes Board**. Schau dir das an:
+Das Matchup, über das nach Flush vs Straße am meisten gestritten wird, ist **Flush vs Full House** – und das Boat gewinnt. Ich habe mit einem hübschen Nut-Flush mehr gepaarte Boards ausbezahlt, als mir lieb ist; deshalb achte ich heute auf ein einziges Warnzeichen: ein **gepaartes Board**. Schau dir das an:
 
 :::hand[K♠,9♠,9♥,4♠,2♦] Board (5 Karten):::
 

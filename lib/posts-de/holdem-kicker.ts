@@ -9,6 +9,7 @@ export const POST: Post = {
   category: "hand-rankings",
   date: "2026-07-08",
   updated: "2026-08-10",
+  masterUpdated: "2026-07-18",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🃏",
@@ -147,9 +148,9 @@ Die Mathematik ist klar: Vier Karten bilden den Vierling, eine Karte ist der Kic
 
 ## FAQ
 
-**Q. Was ist ein Kicker beim Poker?**
+**Q. Was bedeutet „Beikarte“ beim Poker?**
 
-A. Ein Kicker ist die höchste Beikarte in deiner Fünf-Karten-Hand, die nicht Teil deiner gerankten Kombination ist. Er bricht Gleichstände, wenn zwei Spieler denselben Rang teilen – zum Beispiel schlägt A-K das A-Q, wenn das Board ein Ass pairt, weil der König als Kicker die Dame überragt. Ein Kicker schlägt nie eine höherrangige Hand.
+A. Beikarte ist das deutsche Wort für Kicker: die höchste Karte in deinen besten Fünf, die nicht Teil deiner gerankten Kombination ist. Er bricht Gleichstände, wenn zwei Spieler denselben Rang teilen – zum Beispiel schlägt A-K das A-Q, wenn das Board ein Ass pairt, weil der König als Kicker die Dame überragt. Ein Kicker schlägt nie eine höherrangige Hand.
 
 **Q. Hat ein Flush einen Kicker?**
 
@@ -163,9 +164,25 @@ A. Nein. Eine Straße besteht aus fünf aufeinanderfolgenden Karten, also ist si
 
 A. Nein. Ein Full House ist ein Drilling plus ein Paar – alle fünf Karten. Gleichstände werden zuerst über den Rang des Drillings gebrochen, dann über das Paar, nie über eine Beikarte.
 
-**Q. Hat ein Vierling einen Kicker?**
+**Q. Vierling auf dem Board – wer gewinnt dann?**
 
-A. Ja, ein Vierling hat einen Ein-Karten-Kicker, aber er zählt im Hold'em selten. Er entscheidet eine Hand nur, wenn zwei Spieler auf dem exakt selben Vierling gleichauf sind – was erfordert, dass alle vier Karten auf dem Board liegen – und dann gewinnt die höchste fünfte Karte.
+A. Der Spieler mit der höchsten fünften Karte. Liegen alle vier gleichen Karten offen, hält jeder denselben Vierling, und es bleibt genau ein Kicker-Slot übrig. Wer eine Hole Card hat, die höher ist als die fünfte Board-Karte, nimmt den Pot; kann das niemand, wird geteilt.
+
+**Q. Zählt der Kicker beim Drilling?**
+
+A. Ja – ein Drilling nutzt zwei Kicker. Machen zwei Spieler denselben Drilling, entscheiden die nächsten beiden Karten von oben: K-K-K-A-2 schlägt K-K-K-Q-J, weil das Ass die Dame überragt. Ein echtes *Set* aus einem Pocket-Paar landet dagegen selten im Gleichstand, weil nur ein Spieler genau dieses Paar halten kann.
+
+**Q. Haben Zwei Paare einen Kicker?**
+
+A. Ja, genau einen. Hältst du K-Q und dein Gegner J-Q auf einem Board mit Q-7-7, habt ihr beide Damen und Siebenen – dein König-Kicker schlägt seinen Buben. Der Kicker kommt aber erst ins Spiel, wenn beide Spieler dieselben zwei Paare halten.
+
+**Q. Muss der Kicker auf deiner eigenen Hand liegen?**
+
+A. Nein, er kann auch eine Gemeinschaftskarte sein. Poker bildet immer die besten fünf aus sieben – überragt eine Board-Karte deine Hole Card, rutscht die Board-Karte in den Kicker-Slot und beide Spieler teilen sie sich. Deine Hole Card spielt nur, wenn sie höher ist als die Board-Karte, die sie ersetzen würde.
+
+**Q. Was ist ein Ass-Kicker (oder ein König-Kicker)?**
+
+A. Ein Ass-Kicker heißt, deine höchste Beikarte ist ein Ass – der stärkste Kicker, den es gibt. „Top Pair mit Ass-Kicker“ gewinnt darum fast jeden Showdown gegen dasselbe Paar; der König-Kicker ist der nächstbeste. Genau deshalb schlagen A-K und A-Q ein schwaches Ass wie A-9, sobald das Board allen ihr Ass pairt.
 
 **Q. Wie viele Kicker sind in einer Pokerhand?**
 
