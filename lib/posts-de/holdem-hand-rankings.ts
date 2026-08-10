@@ -69,7 +69,7 @@ Das Ass ist die stärkste Karte und die einzige, die die Regeln biegt: Es spielt
 
 Im Standard-Texas-Hold'em **schlägt keine Farbe eine andere**. Anders als beim Skat oder beim Bridge gibt es keine Farb-Rangfolge: Pik, Herz, Karo und Kreuz sind exakt gleichwertig – Pik schlägt nicht Herz, und zwei identische Straßen in verschiedenen Farben teilen den Pot. Die Farbe zählt nur, um einen Flush zu *bilden*, nie um einen Gleichstand zu entscheiden. Haben zwei Spieler dieselben fünf Karten in verschiedenen Farben, wird der Pot geteilt – jedes Mal.
 
-Die Farbe entscheidet im Hold'em nicht einmal über den letzten Chip: Bleibt beim Chop einer übrig, geht er an den ersten Spieler links vom Button. Nur bei Stud und Razz wird dieser Chip über die höhere Farbe vergeben.
+Die Farbe entscheidet im Hold'em nicht einmal über den letzten Chip: Bleibt beim Chop einer übrig, geht er an den ersten **am Chop beteiligten** Spieler links vom Button – nicht einfach an den nächsten Sitz. In Stud-Spielen entscheidet darüber traditionell die höhere Farbe; ==r:einzelne Häuser handhaben das auch im Hold'em so – im Zweifel den Floor fragen.==
 
 ---
 
@@ -97,7 +97,7 @@ Nur ein höherer Straight Flush oder ein Royal Flush schlägt ihn. Die niedrigst
 
 **8♣ 8♦ 8♥ 8♠ K♥** – alle vier Karten gleichen Werts.
 
-Zwischen zwei Vierlingen gewinnt der höhere Vierling. Liegt der Vierling *auf dem Board* (alle vier geteilt), entscheidet der höchste **Kicker** – und der Ass-Kicker hat das Sagen.
+Zwischen zwei Vierlingen gewinnt der höhere Vierling. Liegt der Vierling *auf dem Board* (alle vier geteilt), entscheidet die höchste fünfte Karte: Wer eine Hole Card hält, die höher ist als die fünfte Board-Karte, gewinnt – ==r:kann das niemand, wird geteilt.==
 
 ### #4 – Full House (Boat)
 
@@ -185,7 +185,7 @@ Das ist der Teil, der echte Pots entscheidet – und den die meisten Tabellen ü
 Das Abzeichen rechts zeigt, ob der **Kicker zur Entscheidung der Hand verwendet wird**.
 
 :::tiebreak
-Royal Flush|Immer Gleichstand (Split)|-Kein Kicker
+Royal Flush|Zwei Royals = immer Split (nur wenn er auf dem Board liegt)|-Kein Kicker
 Straight Flush|Nur die höchste Karte|-Kein Kicker
 Vierling|Wert des Vierlings → 5. Karte|+Kicker zählt
 Full House|Wert des Drillings → des Paars|-Kein Kicker
@@ -221,7 +221,7 @@ Du hältst **Q♥ Q♦**. Was ist deine beste Hand?
 
 Du hältst **6♥ 2♣**. Das Board hat vier Herz.
 
-→ Deine 6♥ ist die fünfte Herz, also denkst du „Flush“. Aber sieh dir die Folge an: **10♥ 9♥ 8♥ 7♥ 6♥** sind fünf Herz *in Folge* – ein **Straight Flush mit Zehn hoch**, Hand #2. (Tausche die 6♥ gegen eine K♥ und die Herz sind 7-8-9-10-K – nicht mehr verbunden, also fällt es auf einen einfachen Flush mit König hoch zurück.) Prüfe immer, ob deine Flush-Karten auch *aufeinanderfolgend* sind, bevor du einen Straight Flush annimmst.
+→ Deine 6♥ ist die fünfte Herzkarte, also denkst du „Flush“. Aber sieh dir die Folge an: **10♥ 9♥ 8♥ 7♥ 6♥** sind fünf Herzkarten *in Folge* – ein **Straight Flush mit Zehn hoch**, Hand #2. (Tausche die 6♥ gegen eine K♥, dann heißen die Herzkarten 7-8-9-10-K – nicht mehr verbunden, also bleibt nur ein Flush mit dem König als höchster Karte.) Prüfe immer, ob deine Flush-Karten auch *aufeinanderfolgend* sind, bevor du einen Straight Flush annimmst.
 
 ### Aufgabe 3 – Wenn geteilt werden muss
 
@@ -388,7 +388,7 @@ A. Ja. Ein Straight Flush (#2) schlägt einen Vierling (#3) – fünf Karten in 
 
 **Q. Was schlägt vier Asse?**
 
-A. Nur zwei Hände: ein Straight Flush und ein Royal Flush. Vier Asse sind der höchstmögliche Vierling, also kann dich kein anderer Vierling überholen. Liegen alle vier Asse auf dem Board, entscheidet die höchste fünfte Karte – wer eine Hole Card hält, die höher ist als die fünfte Board-Karte, gewinnt; sonst wird geteilt.
+A. Nur ein Straight Flush – und der kann hier nie ein Royal Flush sein, weil alle vier Asse schon vergeben sind. Vier Asse sind der höchstmögliche Vierling, also kann dich kein anderer Vierling überholen. Liegen alle vier Asse auf dem Board, entscheidet die höchste fünfte Karte – wer eine Hole Card hält, die höher ist als die fünfte Board-Karte, gewinnt; sonst wird geteilt.
 
 **Q. Was ist höher – Pik oder Kreuz beim Poker?**
 

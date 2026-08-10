@@ -128,7 +128,7 @@ In **Turnieren** tendiere eine Spur kleiner – oft **halber Pot oder weniger** 
 
 ![Ein Pokerspieler, der als Erster out of Position handelt, die Finger auf dem Filz neben seinen Chips, während ein Gegner im Schatten hinter ihm wartet](/images/holdem-cbet-oop.webp "Out of Position handelst du als Erster ohne Information, also checkst du weit öfter und c-bettest eine engere, stärkere Range")
 
-C-betten ist **out of Position** viel schwieriger – wenn du auf jeder Straße als Erster handeln musst, ohne zu wissen, was dein Gegner tun wird. Zwei Anpassungen:
+C-betten ist **out of Position** viel schwieriger – wenn du auf jeder Street als Erster handeln musst, ohne zu wissen, was dein Gegner tun wird. Zwei Anpassungen:
 
 1. **C-bette seltener.** Ohne Position kannst du den Pot nicht so gut kontrollieren oder deine Equity realisieren, also checkst du weit öfter – sogar Hände, die in Position automatische Bets wären. Auf manchen guten Boards c-bettet ein Solver out of Position nur ein Viertel der Zeit.
 2. **Bau eine echte Checking-Range auf.** Wenn du nur bettest, wenn du stark bist, und checkst, wenn du schwach bist, liest dich ein aufmerksamer Gegner wie ein Buch und attackiert jeden Check. Also checkst du bewusst auch *einige* starke Hände, was deine Checks gefährlich hält und dein ganzes Spiel schwerer zu spielen macht. Genau deshalb ist [Position](/de/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp") ein so struktureller Vorteil – C-Bets funktionieren einfach besser, wenn du als Letzter handelst.
@@ -229,7 +229,7 @@ A. Sizing nach dem Board. Auf trockenen, statischen Boards bette klein – etwa 
 
 **Q. Solltest du out of Position c-betten?**
 
-A. Seltener als in Position. Wenn du auf jeder Straße als Erster ohne Information handelst, kannst du deine Equity nicht so gut realisieren, also checkst du weit öfter – sogar einige Hände, die du in Position auto-betten würdest – und du hältst bewusst einige starke Hände in deiner Checking-Range, damit deine Checks nicht automatisch schwach sind. Position lässt C-Bets besser funktionieren, Punkt.
+A. Seltener als in Position. Wenn du auf jeder Street als Erster ohne Information handelst, kannst du deine Equity nicht so gut realisieren, also checkst du weit öfter – sogar einige Hände, die du in Position auto-betten würdest – und du hältst bewusst einige starke Hände in deiner Checking-Range, damit deine Checks nicht automatisch schwach sind. Position lässt C-Bets besser funktionieren, Punkt.
 
 **Q. Solltest du in einem Multiway-Pot c-betten?**
 

@@ -15,7 +15,7 @@ export const POST: Post = {
   emoji: "⚖️",
   image: "/images/holdem-tiebreak-hero.webp",
   imageAlt: "Poker-Showdown: A♠ K♦ gegen A♥ 9♣ mit Board A♦ Q♠ 7♥ 3♣ 2♦ – gleiches Ass-Paar, der Kicker entscheidet den Sieger",
-  tags: ["poker tie breaker regeln", "wie werden ties beim poker entschieden", "wer gewinnt gleiches paar poker", "zwei paare tie poker", "zählt die 5. karte beim poker", "poker kicker", "höhere straße", "texas holdem ties"],
+  tags: ["poker tie breaker regeln", "wie werden ties beim poker entschieden", "wer gewinnt gleiches paar poker", "zwei paare tie poker", "zählt die 5. karte beim poker", "poker regeln bei gleichen karten", "höhere straße", "texas holdem ties"],
   content: `
 Du drehst ein Ass-Paar um. Dein Gegner auch. Der Dealer zählt einen Moment lang die Beikarten – und schiebt dann den ganzen Pot zu *ihm*. ==r:Gleiches Paar. Wie hast du verloren?==
 
@@ -71,7 +71,7 @@ Nimm die Hand aus dem Foto oben:
 
 </div>
 
-Gleiches Ass-Paar, also treten die Kicker der Reihe nach gegeneinander an: ==g:K schlägt Q – Kampf vorbei.== B's Neun ist als zweiter Kicker immer noch *in* der Hand, aber der Vergleich kommt nie so weit.
+Gleiches Ass-Paar, also treten die Kicker der Reihe nach gegeneinander an: ==g:K schlägt Q – damit ist die Sache entschieden.== B's Neun ist als zweiter Kicker immer noch *in* der Hand, aber der Vergleich kommt nie so weit.
 
 Beachte, dass B's oberster Kicker die Dame vom **Board** ist, nicht die 9, die er hält. ==r:Ein Kicker zählt nur, wenn er tatsächlich in deinen besten fünf landet== – eine höhere Board-Karte drückt deine Hole Card die Liste hinunter. Deshalb zählt die zweite Karte, mit der du startest, genauso viel wie das Ass selbst: A-K und A-9 sind hier beide „ein Ass-Paar“, und nur eine davon gewinnt ([Starthand-Tabelle](/de/blog/holdem-starting-hands-chart)).
 
@@ -82,7 +82,7 @@ Beachte, dass B's oberster Kicker die Dame vom **Board** ist, nicht die 9, die e
 **Jeder Handrang hat seine eigene Vergleichsreihenfolge – einige gehen bis zu den Kickern, andere werden komplett durch die Karten entschieden, die sie bilden.** Das Badge zeigt, ob ein Kicker ins Spiel kommt:
 
 :::tiebreak
-Royal Flush|Immer ein Tie (geteilter Pot)|-Kein Kicker
+Royal Flush|Zwei Royals = immer Split (nur wenn er auf dem Board liegt)|-Kein Kicker
 Straight Flush|Nur die höchste Karte|-Kein Kicker
 Vierling|Vierling-Rang → 5. Karte|+Kicker
 Full House|Drilling-Rang → Paar-Rang|-Kein Kicker
@@ -106,9 +106,9 @@ Die drei Zeilen, die am Tisch die meisten Streitereien auslösen:
 
 **Vergleiche das höhere Paar, dann das tiefere Paar, dann den einzelnen Kicker – in dieser Reihenfolge.** Zwei Paare tragen genau einen Kicker, also gibt es nach den Paaren selbst nur noch eine Karte, über die man streiten kann.
 
-Auf einem Board **K♦ 9♣ 9♠ 5♦ 2♥** macht K♠ Q♦ die Hand K♠ K♦ 9♣ 9♠ ==g:Q♦== und K♥ J♥ macht K♥ K♦ 9♣ 9♠ ==r:J♥==. Gleiche Könige-und-Neunen, also entscheidet der einzelne Kicker: ==g:Dame über Bube.==
+Auf einem Board **K♦ 9♣ 9♠ 5♦ 2♥** macht K♠ Q♦ die Hand K♠ K♦ 9♣ 9♠ ==g:Q♦== und K♥ J♥ macht K♥ K♦ 9♣ 9♠ ==r:J♥==. Gleiche Könige-und-Neunen, also entscheidet der einzelne Kicker: ==g:Dame über den Buben.==
 
-Dann gibt es die Falle, die um echtes Geld entscheidet – das ==r:**Counterfeiting**==:
+Dann gibt es die Falle, die echtes Geld kostet – das ==r:**Counterfeiting**==:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:16px 20px;margin:20px 0">
 
@@ -133,7 +133,7 @@ Das gepaarte Neuner-Board hat *beiden* Spielern ein besseres zweites Paar in die
 
 Auf einem Board 4♦ 3♣ 2♠ K♦ Q♥ macht ein Spieler mit A♠ 5♠ das Wheel: 5-4-3-2-A. Ein Spieler mit 6♥ 5♥ macht 6-5-4-3-2. ==r:Das Ass spielt im Wheel *tief*==, also sitzt A-2-3-4-5 ganz unten auf der Straßen-Leiter – ==g:die Sechs-hohe Straße gewinnt.== Zwei Straßen mit derselben höchsten Karte sind identisch, und identische Hände teilen.
 
-Zwei Dinge, die das Wheel *nicht* kann: Das Ass kann sich nicht in der Mitte herumwickeln (Q-K-A-2-3 ist nichts), und es kann nicht gleichzeitig hoch und tief sein. Flushes folgen der parallelen Regel – alle fünf Karten von oben verglichen, Farben irrelevant – mit den Details drüben unter [Flush vs. Straße](/de/blog/holdem-flush-vs-straight).
+Zwei Dinge, die das Wheel *nicht* kann: Das Ass kann nicht um die Ecke spielen (Q-K-A-2-3 ist nichts), und es kann nicht gleichzeitig hoch und tief sein. Flushes folgen der parallelen Regel – alle fünf Karten von oben verglichen, Farben irrelevant – mit den Details drüben unter [Flush vs. Straße](/de/blog/holdem-flush-vs-straight).
 
 ---
 
@@ -176,7 +176,7 @@ A. Bei Gleichstand zählt nur der Rang der Karten, nie die Farbe. Der Dealer arb
 
 **Q. Beide haben ein Ass-Paar – wer bekommt den Pot?**
 
-A. Der Spieler mit dem höheren Kicker. Ein Paar trägt drei Beikarten, die von oben nach unten verglichen werden – der erste Unterschied gewinnt den Pot. Achtung: Der Kicker muss auch wirklich in deinen besten fünf landen. Eine hohe Board-Karte kann deine Hole Card aus der Hand drücken, dann spielt sie gar nicht mit.
+A. Der Spieler mit dem höheren Kicker: **A-K schlägt A-Q**, sobald das Board das Ass pairt. Ein Paar trägt drei Beikarten, die von oben nach unten verglichen werden – der erste Unterschied gewinnt den Pot. Achtung: Der Kicker muss auch wirklich in deinen besten fünf landen. Eine hohe Board-Karte kann deine Hole Card aus der Hand drücken, dann spielt sie gar nicht mit.
 
 **Q. Zwei Paare gegen Zwei Paare – was wird zuerst verglichen?**
 
@@ -212,7 +212,7 @@ A. Immer dann, wenn die ersten vier Karten beider Hände übereinstimmen – der
 
 **Q. Kann man beim Poker ein Ass als 1 verwenden?**
 
-A. Ja, aber nur in der Straße A-2-3-4-5 (dem „Wheel“), wo es als niedrigste Karte spielt. Das Ass kann sich nicht in der Mitte herumwickeln: K-A-2-3-4 ist keine Straße, und Q-K-A-2-3 ebenso wenig.
+A. Ja, aber nur in der Straße A-2-3-4-5 (dem „Wheel“), wo es als niedrigste Karte spielt. Das Ass kann nicht um die Ecke spielen: K-A-2-3-4 ist keine Straße, und Q-K-A-2-3 ebenso wenig.
 
 **Q. Welche Straße ist die niedrigste beim Poker?**
 

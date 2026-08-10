@@ -39,7 +39,7 @@ Dieselbe Hand. Völlig anderes Ergebnis. Das Einzige, was sich änderte, war mei
 
 ## Welche Positionen gibt es am Pokertisch? (Komplette Sitz-Map)
 
-Eine Position ist kein Stuhl – sie ist ein **Name dafür, wo du relativ zum Dealer-Button sitzt**, und sie bestimmt, ==wann du auf jeder Straße handelst==. Weil der Button nach jeder Hand einen Sitz im Uhrzeigersinn weiterrückt, trägt jeder Spieler am Tisch in jeder einzelnen Hand einen anderen Namen.
+Eine Position ist kein Stuhl – sie ist ein **Name dafür, wo du relativ zum Dealer-Button sitzt**, und sie bestimmt, ==wann du auf jeder Street handelst==. Weil der Button nach jeder Hand einen Sitz im Uhrzeigersinn weiterrückt, trägt jeder Spieler am Tisch in jeder einzelnen Hand einen anderen Namen.
 
 Hier ist der komplette 9-Max-Positionen-Chart – jeder Sitzname, seine Abkürzung, seine Zone und genau, wann er vor und nach dem Flop handelt:
 
@@ -161,7 +161,7 @@ Die meistgestellte Frage zu Positionen, in einer Tabelle beantwortet:
 
 Also – **handeln die Blinds zuerst?** ==Preflop nein. Postflop ja.== Vor dem Flop haben die Blinds bereits Geld eingezahlt, also startet die Aktion mit UTG und kommt zuletzt zu ihnen zurück – der Big Blind handelt von allen zuletzt. Nach dem Flop setzt sich die Reihenfolge im Uhrzeigersinn vom Button aus zurück: Der Small Blind spricht zuerst, der Big Blind als zweiter und der Button immer zuletzt.
 
-Und zwischen den beiden Blinds: ==der Small Blind handelt auf jeder Straße vor dem Big Blind==, preflop und postflop gleichermaßen – mit einer Ausnahme, Heads-up, weiter unten behandelt.
+Und zwischen den beiden Blinds: ==der Small Blind handelt auf jeder Street vor dem Big Blind==, preflop und postflop gleichermaßen – mit einer Ausnahme, Heads-up, weiter unten behandelt.
 
 Eine Nachbarfrage ist eine Zeile wert: Beim **Showdown** ist die Vorgabe, dass der letzte Spieler, der gesetzt oder geraist hat, zuerst aufdeckt (wird der River durchgecheckt, zeigt der erste aktive Sitz links vom Button) – die vollständige Etikette steht im [Showdown-Regeln-Leitfaden](/de/blog/holdem-showdown-rules). Für die komplette Straße-für-Straße-Abfolge einer Hand siehe [den Ablauf des Spiels](/de/blog/holdem-game-order).
 
@@ -210,7 +210,7 @@ A. Der Lojack (LJ) ist der Sitz drei rechts vom Button – der frühere der beid
 
 **Q. Wer geht zuerst, der Small Blind oder der Big Blind?**
 
-A. Der Small Blind handelt auf jeder Straße vor dem Big Blind. Preflop handeln beide Blinds zuletzt (der Big Blind ganz zuletzt, mit der Option zu checken oder zu raisen); postflop ist der Small Blind der erste Sitz, der am Tisch handelt. Die eine Ausnahme ist Heads-up, wo der Button den Small Blind setzt und der Big Blind postflop zuerst handelt.
+A. Der Small Blind handelt auf jeder Street vor dem Big Blind. Preflop handeln beide Blinds zuletzt (der Big Blind ganz zuletzt, mit der Option zu checken oder zu raisen); postflop ist der Small Blind der erste Sitz, der am Tisch handelt. Die eine Ausnahme ist Heads-up, wo der Button den Small Blind setzt und der Big Blind postflop zuerst handelt.
 
 **Q. Wie viele Positionen gibt es beim 6-Max-Poker?**
 

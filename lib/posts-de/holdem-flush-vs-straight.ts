@@ -54,7 +54,7 @@ Du willst alle zehn Hände mit Wahrscheinlichkeiten, Beispielen und Board-Rätse
 
 ## Warum schlägt ein Flush eine Straße? Die Mathematik
 
-Handstärke im Poker entscheidet eine einzige Sache: **wie schwer die Hand zu treffen ist**. Je seltener sie ist, desto höher rangiert sie. Nichts an der Reihenfolge ist willkürlich – es ist reine Häufigkeit.
+Über die Handstärke im Poker entscheidet eine einzige Sache: **wie schwer die Hand zu treffen ist**. Je seltener sie ist, desto höher rangiert sie. Nichts an der Reihenfolge ist willkürlich – es ist reine Häufigkeit.
 
 Zähl die 2.598.960 möglichen Fünf-Karten-Hände aus einem 52-Karten-Deck, und die Reihenfolge ergibt sich von selbst:
 
@@ -72,7 +72,7 @@ Eine Straße hat rund ==r:**doppelt** so viele Wege zustande zu kommen wie ein F
 
 Eine Straße braucht nur fünf Ränge in Folge, und ==**die Farben spielen keine Rolle**==. Diese Freiheit erzeugt eine riesige Zahl an Kombinationen. Ein Flush ist das Gegenteil: Jede der fünf Karten muss ==**dieselbe Farbe**== teilen, und nur eine von vier Farben schafft das zur selben Zeit. ==g:Weit weniger Wege dorthin bedeuten, dass der Flush seltener ist – und das Seltenere gewinnt immer.==
 
-:::tip[Wenn du einen Flushdraw hältst und dein Gegner auf eine Straße zieht, bist du in bester Verfassung – selbst wenn **beide** Draws ankommen, schlägt dein Flush seine Straße im Showdown.]:::
+:::tip[Wenn du einen Flushdraw hältst und dein Gegner auf eine Straße zieht, sitzt du bestens – selbst wenn **beide** Draws ankommen, schlägt dein Flush seine Straße im Showdown.]:::
 
 ---
 
@@ -92,7 +92,9 @@ Du hältst **9♠ 10♠** für eine saubere **6-7-8-9-10 Straße**. Fühlt sich 
 
 :::hand[8♥,7♥,6♠,2♣] Board (4 Karten, Turn):::
 
-Du hältst **9♥ 5♥**. Du hast bereits die **5-6-7-8-9 Straße** – warum also weiter auf die Herz-Karten schielen? Weil du außerdem **vier zum Flush** hältst (9♥ 8♥ 7♥ 5♥): Jedes Herz am River upgradet deine Straße zum Flush, und die **6♥ speziell** komplettiert einen **5-6-7-8-9 Straight Flush (#2)**, der alles zermalmt. Wenn du gratis auf eine größere Hand ziehen kannst, spiel mit diesem Upgrade im Hinterkopf.
+Du hältst **9♥ 5♥**. Du hast bereits die **5-6-7-8-9 Straße** – warum also weiter auf die Herz-Karten schielen? Weil du außerdem **vier zum Flush** hältst (9♥ 8♥ 7♥ 5♥): Jedes Herz am River upgradet deine Straße zum Flush, und die **6♥ speziell** komplettiert einen **5-6-7-8-9 Straight Flush (#2)**, der alles schlägt. Wenn du gratis auf eine größere Hand ziehen kannst, spiel mit diesem Upgrade im Hinterkopf.
+
+==r:**Zwei Warnungen, die dazugehören.**== Erstens: Diese Straße ist **nicht die Nuts** – wer T-9 hält, macht bereits die höhere 10-9-8-7-6. Zweitens: Deine eigenen Herz-Karten sind nur **9♥ und 5♥**. Kommt am River ein Herz, teilen es alle – wer zwei höhere Herz-Karten hält, hat denselben Flush mit besseren oberen Karten und schlägt dich. Das Upgrade ist real, aber es ist ==r:kein Freifahrtschein für einen großen Pot==.
 
 ### Situation 3 – Du hast den Flush, er zeigt eine Straße
 
@@ -129,12 +131,16 @@ Wenn zwei Spieler denselben Handtyp halten, entscheidet der Vergleich Karte für
 
 Ja, ein Flush kann absolut höher sein als ein anderer. **Die Farben sind irrelevant** – vergleiche die fünf Karten von oben nach unten, die höchste zuerst:
 
-| Spieler | Flush | Ergebnis |
-|--------|------|------|
-| A | A♠ J♠ 9♠ 6♠ 2♠ | **Gewinnt** |
-| B | K♥ Q♥ 10♥ 8♥ 3♥ | Verliert |
+Board: **J♠ 9♠ 6♠ 2♠ 4♥** – vier Pik liegen offen, beide Spieler halten je ein Pik.
 
-Das Ass von Spieler A übertrumpft den König von Spieler B schon auf der allerersten Karte, also gewinnt A. Ein Pik-Flush schlägt **nicht** einen Herz-Flush – nur die Ränge zählen.
+| Spieler | Hole | Bester Flush | Ergebnis |
+|--------|------|------|------|
+| A | A♠ 7♦ | A♠ J♠ 9♠ 6♠ 2♠ | **Gewinnt** |
+| B | K♠ 3♦ | K♠ J♠ 9♠ 6♠ 2♠ | Verliert |
+
+Das Ass von Spieler A übertrumpft den König von Spieler B schon auf der allerersten Karte, also gewinnt A.
+
+🔴 **Achte auf die Farbe der beiden Hände: Sie ist dieselbe – und das ist kein Zufall.** Im Hold'em teilen sich alle dasselbe Board. Für einen Flush müssen dort mindestens drei Karten einer Farbe liegen, und zwei verschiedene Farben können das nicht gleichzeitig (3 + 3 wären sechs Board-Karten). ==g:**Zwei Flushes haben im Hold'em immer dieselbe Farbe.**== Die Regel „keine Farbe schlägt eine andere“ greift deshalb nicht bei Flushes gegeneinander, sondern bei **identischen Straßen, Full Houses oder High-Card-Händen** – dort wird geteilt.
 
 Straßen sind noch einfacher: Vergleiche nur die **höchste Karte** – es gibt keinen Kicker.
 

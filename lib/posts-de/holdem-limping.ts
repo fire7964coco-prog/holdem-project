@@ -67,7 +67,7 @@ Wenn du open-limpst, gibst du überraschend viel auf. Genau das hier:
 
 1. **Du kannst den Pot präflop nicht gewinnen.** Das ist der große Punkt. Wenn du first-in *raist*, können alle folden und du kassierst die Blinds kampflos – Gratisgeld, und das nennenswert oft. Wenn du limpst, ist diese Zahl **null**. Du hast garantiert, dass du eine Hand treffen oder ihn später gewinnen musst; du hast den saubersten Weg zu gewinnen weggeworfen.
 2. **Du gibst die Initiative ab.** Der Präflop-Raiser ist der „Aggressor“ – er darf auf dem Flop eine [Continuation Bet](/de/blog/holdem-continuation-bet) abfeuern und eine starke Hand repräsentieren, wodurch er den Pot oft ganz ohne alles nimmt. Limpst du, hast du diese Story jemand anderem überlassen. Du reagierst jetzt, statt zu führen.
-3. **Du baust einen aufgeblähten Multiway-Pot – oft aus schlechter Position.** Limpen lädt mehr Caller ein und lässt den Big Blind billig rein. Je mehr Spieler den Flop sehen, desto weniger ist deine Hand wert, und wenn du aus früher Position gelimpt hast, handelst du auf jeder Straße *zuerst* und ohne Initiative. Das ist der schlechteste Platz am Tisch.
+3. **Du baust einen aufgeblähten Multiway-Pot – oft aus schlechter Position.** Limpen lädt mehr Caller ein und lässt den Big Blind billig rein. Je mehr Spieler den Flop sehen, desto weniger ist deine Hand wert, und wenn du aus früher Position gelimpt hast, handelst du auf jeder Street *zuerst* und ohne Initiative. Das ist der schlechteste Platz am Tisch.
 4. **Du machst dich lesbar – und ausbeutbar.** Gewohnheitslimper tauchen mit einer gedeckelten, transparenten Range auf. Gute Spieler greifen sie unerbittlich an (mehr dazu unten), also landest du immer wieder in kniffligen Spots aus schlechter Position. Wie das alte Sprichwort sagt: Chronische Limper „gewinnen kleine Pots und verlieren große“.
 
 ---
@@ -117,7 +117,7 @@ Der Haken ist, dass er **durchschaubar** geworden ist. Weil fast niemand limpt, 
 
 Ja – in den meisten Spielen ist ein Open-Limp ein blinkendes Schild, das sagt: *„Schwacher, passiver Spieler hier.“* Und der Grund, warum es eine so teure Angewohnheit ist: Geübte Spieler notieren es nicht nur, sie **attackieren** es:
 
-- **Der Isolation-Raise.** Wenn ein starker Spieler sieht, dass du open-limpst, raist er groß hinter dir – ein „Iso-Raise“ – um alle anderen rauszufolden und dich heads-up zu bekommen, in Position, mit der Setzführung. Jetzt spielst du einen größeren Pot als gewollt, aus schlechter Position, gegen jemanden, der dir auf jeder Straße überlegen ist.
+- **Der Isolation-Raise.** Wenn ein starker Spieler sieht, dass du open-limpst, raist er groß hinter dir – ein „Iso-Raise“ – um alle anderen rauszufolden und dich heads-up zu bekommen, in Position, mit der Setzführung. Jetzt spielst du einen größeren Pot als gewollt, aus schlechter Position, gegen jemanden, der dir auf jeder Street überlegen ist.
 - **Thin Value und unerbittliche C-Bets.** Gegen eine gedeckelte Limp-Range (wenige oder keine Premium-Hände, da du die meist raisen würdest) betten gute Spieler mehr Straßen für dünneren Value und bluffen freier, sicher, dass du nicht die Nuts haben kannst.
 - **Positions-Missbrauch.** Weil Limper meist loose und passiv sind, überspielen aggressive Spieler sie einfach nach dem Flop, betten sie von marginalen Händen weg und holen Value raus, wenn sie treffen.
 

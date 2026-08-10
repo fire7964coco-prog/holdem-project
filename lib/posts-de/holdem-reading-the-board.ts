@@ -25,7 +25,7 @@ export const POST: Post = {
   image: "/images/holdem-reading-the-board-hero.webp",
   imageAlt: "Texas-Hold'em-Board lesen – 5 Gemeinschaftskarten auf dunklem Filz mit goldenen Pfeilen, die zeigen, welche Karten die beste 5-Karten-Hand bilden",
   content: `
-Als ein Dealer meine Hand zum ersten Mal besser las als ich selbst, tabelte ich, was ich für Ace High hielt. „Straße“, verkündete sie und schob mir einen Pot zu, den ich innerlich schon aufgegeben hatte – meine 8-6 hatte sich klammheimlich mit drei Board-Karten verbunden, während ich noch einem verpassten Flushdraw nachtrauerte.
+Als ein Dealer meine Hand zum ersten Mal besser las als ich selbst, deckte ich auf, was ich für Ace High hielt. „Straße“, verkündete sie und schob mir einen Pot zu, den ich innerlich schon aufgegeben hatte – meine 8-6 hatte sich klammheimlich mit drei Board-Karten verbunden, während ich noch einem verpassten Flushdraw nachtrauerte.
 
 ==Die Karten sprechen, aber nur, wenn du sie lesen kannst.== Auf 7 Karten zu schauen und sofort deine besten 5 zu kennen, ist die praktischste Fähigkeit, die ein neuer Hold'em-Spieler trainieren kann – und es ist eine Methode, kein Talent. Dieser Leitfaden ist genau diese Methode.
 
@@ -122,7 +122,7 @@ Du hältst 8♦ 6♣. Board: 7♥ 5♠ 4♣ K♦ 2♠. Ränge in Reihenfolge: K,
 Zwei Ass-Fragen, über die ständig gestolpert wird:
 
 - **Kann man ein Ass in einer Straße nutzen?** Ja, an beiden Enden: hoch in A-K-Q-J-10 (Broadway) oder niedrig in A-2-3-4-5 (das Wheel – die niedrigste Straße überhaupt).
-- **Kann eine Straße herumreichen (wrap-around)?** ==r:Nein. K-A-2-3-4 ist keine Straße – es ist einfach nur Ace High.== Halte A♦ 2♦ auf K♠ Q♥ 3♣ 4♦ 9♠ und du hast kein Paar, keine Straße, nichts außer A-K-Q-9-4.
+- **Kann eine Straße um die Ecke gehen (Wrap-around)?** ==r:Nein. K-A-2-3-4 ist keine Straße – es ist einfach nur Ace High.== Halte A♦ 2♦ auf K♠ Q♥ 3♣ 4♦ 9♠ und du hast kein Paar, keine Straße, nichts außer A-K-Q-9-4.
 
 Wenn zwei Straßen aufeinandertreffen, gewinnt die höhere oberste Karte – die komplette Leiter, wer wen schlägt, steht in den [Tie-Breaker-Regeln](/de/blog/holdem-tiebreak-rules).
 
@@ -211,7 +211,7 @@ Auf J♥ 10♥ 8♣ ändert jedes Herz, jede 9, jede 7 und jede Q, wer gewinnt. 
 
 ### Fehler 1 – eine bereits gemachte Straße übersehen
 
-Tunnelblick auf dein Paar oder deinen geplatzten Draw. Meine 8-6-Geschichte ganz oben auf dieser Seite ist genau das – ==prüf auf Straßen, auch wenn du glaubst zu wissen, was du hast==. Der Dealer erwischt es am Showdown; dein Stack bevorzugt, dass DU es erwischst, bevor du foldest.
+Tunnelblick auf dein Paar oder deinen geplatzten Draw. Meine 8-6-Geschichte ganz oben auf dieser Seite ist genau das – ==prüf auf Straßen, auch wenn du glaubst zu wissen, was du hast==. Der Dealer erwischt es am Showdown; deinem Stack ist es lieber, wenn DU es erwischst – bevor du foldest.
 
 ### Fehler 2 – vier farbgleiche Karten als Flush zählen
 
@@ -219,7 +219,7 @@ Vier Pik unter deinen 7 sind Ace High, kein Flush. Und das Spiegelbild: Board 9�
 
 ### Fehler 3 – vergessen, dass das Board geteilt wird
 
-Anfänger folden zu „er muss ein Kreuz haben“ an einem Drei-Kreuz-Board – aber diese Kreuze helfen einem Gegner nur, wenn seine HOLE Cards Kreuze sind. Alle mieten dasselbe Board; ==nur Hole Cards machen die Hand von irgendjemandem anders als deine==.
+Anfänger folden zu „er muss ein Kreuz haben“ an einem Drei-Kreuz-Board – aber diese Kreuze helfen einem Gegner nur, wenn **beide** seiner Hole Cards Kreuz sind (bei drei Kreuz auf dem Board reicht **eines nicht**). Alle teilen sich dasselbe Board; ==nur Hole Cards machen die Hand von irgendjemandem anders als deine==.
 
 ### Fehler 4 – das Boat an einem gepaarten Board ignorieren
 
@@ -254,7 +254,7 @@ A. Du kannst beide aus deinen 7 Karten machen, aber eine Pokerhand besteht aus g
 
 A. Ja, an beiden Enden – hoch in A-K-Q-J-10 (Broadway, die beste Straße) oder niedrig in A-2-3-4-5 (das Wheel, die niedrigste Straße). In der Mitte einer Folge kann es nicht sitzen.
 
-**Q. Kann eine Straße im Poker herumreichen (wrap-around)?**
+**Q. Kann eine Straße im Poker um die Ecke gehen (Wrap-around)?**
 
 A. Nein. Folgen wie K-A-2-3-4 oder Q-K-A-2-3 sind im Texas Hold'em keine Straßen – das Ass verbindet nur abwärts ab der 5 oder aufwärts ab der Zehn. Eine „Wrap-around“-Hand ist einfach High Card, außer sie macht etwas anderes.
 
