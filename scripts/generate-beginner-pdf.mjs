@@ -422,7 +422,7 @@ const CONTENT = {
     fontStack: "'Helvetica Neue', Arial, sans-serif",
     brand: "holdemmaster.com",
     title: "Texas Hold'em Regeln für Anfänger",
-    subtitle: "Spickzettel auf einer Seite: Pokerblätter, Spielablauf und die Grundlagen",
+    subtitle: "Spickzettel für den Pokerabend: Pokerblätter, Spielablauf und die Grundlagen",
     page2Title: "Spielen, Setzen, Gewinnen – Referenz für Anfänger",
     footer1: "holdemmaster.com · Texas Hold'em Regeln für Anfänger",
     footer2: "Kompletter Guide: holdemmaster.com/de/blog/texas-holdem-rules-for-beginners",

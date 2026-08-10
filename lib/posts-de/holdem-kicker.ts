@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Zwei Spieler decken beim Showdown A-K und A-Q auf, ein Ass liegt auf dem Board – der König als Kicker entscheidet, wer den Pot gewinnt",
   tags: ["kicker poker", "poker kicker", "was ist ein kicker beim poker", "kicker regeln", "beikarte poker", "hat ein flush einen kicker", "dominiertes ass", "kicker karte", "hat ein vierling einen kicker"],
   content: `
-Die Hand, die mir endlich beigebracht hat, was ein Kicker ist, hat mich ein volles Buy-in gekostet. Ich hielt ==b:A♠ 9♣==, das Board pairte mein Ass, und ich bin all-in gegangen, weil ich dachte, Top Pair sei Gold wert. Er drehte ==b:A♥ K♦== um – dasselbe Paar Asse, aber sein König überragte meine Neun, und der Pot rutschte auf seine Seite. Ich hatte nicht gegen eine bessere *Hand* verloren, sondern gegen eine bessere ==Beikarte.== Diese Beikarte ist der Kicker, und er entscheidet mehr Pots, als jeder Anfänger ahnt.
+Die Hand, die mir endlich beigebracht hat, was ein Kicker ist, hat mich ein volles Buy-in gekostet. Ich hielt ==b:A♠ 9♣==, das Board pairte mein Ass, und ich bin all-in gegangen, weil ich dachte, Top Pair sei Gold wert. Er drehte ==b:A♥ K♦== um – dasselbe Paar Asse, aber sein König schlug meine Neun, und der Pot rutschte auf seine Seite. Ich hatte nicht gegen eine bessere *Hand* verloren, sondern gegen eine bessere ==Beikarte.== Diese Beikarte ist der Kicker, und er entscheidet mehr Pots, als jeder Anfänger ahnt.
 
 ==Ein Kicker ist der Tiebreaker, der im Poker selbst eingebaut ist – wenn zwei Spieler denselben Rang halten, gewinnt die höchste übrige Karte.== Die meisten Leitfäden geben dir eine Ein-Zeilen-Definition und ein AK-gegen-AQ-Beispiel. Dieser hier gibt dir das ganze Bild: genau welche Hände einen Kicker haben (und wie viele), die eine Ausnahme, die alle falsch machen, und warum „das Board spielen“ bedeutet, dass dein Kicker plötzlich überhaupt keine Rolle mehr spielt.
 
@@ -33,6 +33,9 @@ Wo ein Kicker ins größere Bild der [Pokerhände-Reihenfolge](/de/blog/holdem-h
 0 | Kicker bei einer Straße, einem Flush oder Full House
 :::
 
+> **Kurze Antwort**
+> Ein Kicker (deutsch: **Beikarte**) ist die höchste Karte in deinen besten fünf, die nicht zur gewerteten Kombination gehört. Er entscheidet den Pot, wenn zwei Spieler dieselbe Hand halten: ==g:A-K schlägt A-Q, sobald das Board ein Ass pairt==. Ein Paar nutzt drei Kicker, ein Drilling zwei, Zwei Paare und Vierling je einen – **Straße, Flush, Full House und Straight Flush haben keinen**, weil sie bereits alle fünf Karten füllen.
+
 ---
 
 ## Was ist ein Kicker beim Poker?
@@ -45,7 +48,7 @@ Angenommen, du hältst A-K und dein Gegner hält A-Q, und das Board pairt ein As
 
 ---
 
-## Welche Pokerhände haben einen Kicker – und welche nicht
+## Welche Pokerhände haben einen Kicker – und welche nicht?
 
 **Nur Hände, die weniger als fünf Karten für ihre Kombination nutzen, haben Kicker – alles, was alle fünf Karten von allein füllt, hat keinen.** Das ist die Tabelle, die die Konkurrenz in Absätzen vergräbt. Hier ist sie auf einen Blick:
 
@@ -90,7 +93,7 @@ Das ist beim Showdown wichtig, weil Kicker ==der Reihe nach verglichen werden, d
 
 ---
 
-## AK vs AQ: Wie ein Kicker den Sieger entscheidet
+## AK gegen AQ – wer gewinnt, wenn beide ein Ass-Paar haben?
 
 Spielen wir es Karte für Karte durch, damit die Mechanik konkret wird.
 
@@ -105,7 +108,7 @@ Dasselbe Paar, also vergleiche die Kicker von oben nach unten: dein ==g:K schlä
 
 ---
 
-## Das Board spielen: Wenn dein Kicker nicht mitspielt
+## Wann spielt dein Kicker gar nicht mit? Das Board spielen
 
 **Wenn die fünf Gemeinschaftskarten bereits die bestmögliche Hand bilden und deine Hole Cards sie nicht verbessern können, „spielst du das Board“ – und es gibt überhaupt keinen Kicker.** Alle, die noch in der Hand sind, nutzen die identischen fünf Karten, also wird der Pot geteilt.
 
@@ -118,7 +121,7 @@ Keiner von euch kann höher als bis zum Ass gehen, also „spielt ihr beide das 
 
 ---
 
-## Das dominierte Ass: Warum A9 gegen AK verliert
+## Warum verliert A9 gegen AK? Das dominierte Ass
 
 **Eine Hand ist „dominiert“, wenn sie eine Karte mit einer stärkeren Hand teilt und die Kicker-Schlacht fast jedes Mal verliert, wenn sie trifft – die klassische Falle ist ein schwaches Ass wie A9 gegen AK.** Hier hören Kicker auf, Trivialwissen zu sein, und fangen an, Geld zu kosten.
 
@@ -150,7 +153,7 @@ Die Mathematik ist klar: Vier Karten bilden den Vierling, eine Karte ist der Kic
 
 **Q. Was bedeutet „Beikarte“ beim Poker?**
 
-A. Beikarte ist das deutsche Wort für Kicker: die höchste Karte in deinen besten Fünf, die nicht Teil deiner gewerteten Kombination ist. Er bricht Gleichstände, wenn zwei Spieler denselben Rang teilen – zum Beispiel schlägt A-K das A-Q, wenn das Board ein Ass pairt, weil der König als Kicker die Dame überragt. Ein Kicker schlägt nie eine höherrangige Hand.
+A. Beikarte ist das deutsche Wort für Kicker: die höchste Karte in deinen besten Fünf, die nicht Teil deiner gewerteten Kombination ist. Er bricht Gleichstände, wenn zwei Spieler denselben Rang teilen – zum Beispiel schlägt A-K das A-Q, wenn das Board ein Ass pairt, weil der König als Kicker die Dame schlägt. Ein Kicker schlägt nie eine höherrangige Hand.
 
 **Q. Hat ein Flush einen Kicker?**
 

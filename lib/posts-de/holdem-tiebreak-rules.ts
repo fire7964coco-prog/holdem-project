@@ -49,6 +49,8 @@ Die meiste Arbeit erledigt eine einzige Karte: der ==**Kicker**==. Die vollstän
 
 </div>
 
+🔴 **Bevor das Verfahren überhaupt greift: Deine Hand muss offen auf dem Tisch liegen.** Eine gemuckte Hand ist tot, selbst wenn sie gewonnen oder geteilt hätte – die Reihenfolge des Aufdeckens steht in den [Showdown-Regeln](/de/blog/holdem-showdown-rules).
+
 Wenn Schritt 1 es entscheidet, erreichst du Schritt 2 nie. Gehen in Schritt 3 die Karten aus, sind die Hände identisch und ==g:der Pot wird geteilt== – wie die Chips dann aufgeteilt werden (ungerade Chips, Three-Way-Chops, Side Pots) gehört ins Gebiet der [Split-Pot-Regeln](/de/blog/holdem-split-pot-rules). Schritt 2 und 3 sind die Stellen, an denen die Streitereien passieren, also gehen wir genau dorthin.
 
 ---
@@ -77,7 +79,7 @@ Beachte, dass B's oberster Kicker die Dame vom **Board** ist, nicht die 9, die e
 
 ---
 
-## Poker Tie-Breaker Regeln für jede Hand
+## Welche Tie-Breaker-Regel gilt für welche Hand?
 
 **Jeder Handrang hat seine eigene Vergleichsreihenfolge – einige gehen bis zu den Kickern, andere werden komplett durch die Karten entschieden, die sie bilden.** Das Badge zeigt, ob ein Kicker ins Spiel kommt:
 
@@ -96,7 +98,7 @@ High Card|Alle 5 vergleichen, hoch nach niedrig|+Kicker
 
 Die drei Zeilen, die am Tisch die meisten Streitereien auslösen:
 
-- **Drillinge nutzen zwei Kicker, den oberen zuerst.** Auf einem Board A♣ A♥ 7♦ 5♣ 2♠ macht ein Spieler mit A♠ J♠ A-A-A-==g:J==-7 und schlägt A♦ 10♦ mit A-A-A-==r:10==-7 – der Bube überragt die Zehn, und die gemeinsame 7 wird nicht einmal geprüft.
+- **Drillinge nutzen zwei Kicker, den oberen zuerst.** Auf einem Board A♣ A♥ 7♦ 5♣ 2♠ macht ein Spieler mit A♠ J♠ A-A-A-==g:J==-7 und schlägt A♦ 10♦ mit A-A-A-==r:10==-7 – der Bube schlägt die Zehn, und die gemeinsame 7 wird nicht einmal geprüft.
 - **Full Houses haben keinen Kicker.** Zuerst der Drilling-Rang, dann das Paar: K-K-K-A-A schlägt K-K-K-Q-Q beim Paar.
 - **Flushes vergleichen alle fünf Karten – ==r:niemals Farben==.** Ein Ass-hoher Flush schlägt einen König-hohen Flush; identische Ränge teilen. Das komplette Matchup (und die Boards, die die Leute täuschen) findest du unter [schlägt ein Flush eine Straße](/de/blog/holdem-flush-vs-straight).
 
@@ -184,7 +186,7 @@ A. Das höhere Paar. Erst wenn das identisch ist, kommt das tiefere Paar an die 
 
 **Q. Wer gewinnt bei zwei gleichen Drillingen?**
 
-A. Der Spieler mit dem höheren Kicker. Ein Drilling trägt zwei Beikarten, die von oben verglichen werden: Bei Drillings-Neunen schlägt 9-9-9-A-K das 9-9-9-A-Q, weil der zweite Kicker – der König – die Dame überragt. Stimmen Drilling und beide Kicker überein, wird geteilt. Ein Set aus einem Pocket-Paar landet fast nie im Gleichstand, weil nur ein Spieler genau dieses Paar halten kann.
+A. Der Spieler mit dem höheren Kicker. Ein Drilling trägt zwei Beikarten, die von oben verglichen werden: Bei Drillings-Neunen schlägt 9-9-9-A-K das 9-9-9-A-Q, weil der zweite Kicker – der König – die Dame schlägt. Stimmen Drilling und beide Kicker überein, wird geteilt. Ein Set aus einem Pocket-Paar landet fast nie im Gleichstand, weil nur ein Spieler genau dieses Paar halten kann.
 
 **Q. Wer gewinnt bei zwei gleichen Straßen?**
 

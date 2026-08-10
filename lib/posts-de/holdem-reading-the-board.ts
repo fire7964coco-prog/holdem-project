@@ -39,12 +39,12 @@ Als ein Dealer meine Hand zum ersten Mal besser las als ich selbst, deckte ich a
 4 | Scan-Schritte: Flush → Straße → gepaarte Ränge → High Card
 :::
 
-> **Schnelle Antwort**
+> **Kurze Antwort**
 > Deine finale Hand ist die ==beste 5-Karten-Kombination==, die du aus deinen 2 Hole Cards plus den 5 Gemeinschaftskarten bauen kannst. Du darfst beide Hole Cards nutzen, nur eine oder gar keine („playing the board“). Scanne alle 7 Karten in fester Reihenfolge – Flush, Straße, gepaarte Ränge, High Card – und ordne das Gefundene dann auf der Leiter der [Pokerhände-Reihenfolge](/de/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp") ein.
 
 ---
 
-## Wie du die beste 5-Karten-Hand aus 7 Karten machst
+## Welche 5 Karten zählen? So baust du sie aus 7
 
 Im Texas Hold'em bekommst du 2 Hole Cards, und das Board zeigt am Ende 5 Gemeinschaftskarten. Aus diesen 7 ==spielst du genau 5 – die stärksten 5 verfügbaren==. Es gibt nur drei Wege, wie das laufen kann:
 
@@ -66,7 +66,7 @@ Drei schnelle Beispiele, komplett durchgerechnet:
 
 ---
 
-## Das Board in 4 Schritten lesen
+## Wie liest man ein Board? Der Scan in 4 Schritten
 
 Das ist genau der Scan, den ich an jedem River laufen lasse, in dieser Reihenfolge – von der am schwersten zu erkennenden Hand bis zur einfachsten:
 
@@ -110,7 +110,7 @@ Eine Straße sind 5 aufeinanderfolgende Ränge. Die zuverlässige Methode: ==lis
 
 Du hältst 8♦ 6♣. Board: 7♥ 5♠ 4♣ K♦ 2♠. Ränge in Reihenfolge: K, 8, 7, 6, 5, 4, 2. Da ist sie – ==8-7-6-5-4, eine Acht-hohe Straße== – obwohl deine zwei Hole Cards nebeneinander wie Schrott aussehen.
 
-![Acht-hohe Straße im Texas Hold'em – 7 Karten ausgebreitet, mit 8-7-6-5-4 in Gold hervorgehoben, die die fertige Straße zeigen](/images/holdem-reading-straight-example.webp)
+![Acht-hohe Straße im Texas Hold'em – 7 Karten ausgebreitet, mit 8-7-6-5-4 in Gold hervorgehoben, die die fertige Straße zeigen](/images/holdem-reading-straight-example.webp "8-7-6-5-4: Zwei Hole Cards, die einzeln wie Schrott aussehen, bilden mit drei Board-Karten eine fertige Straße")
 
 | Hält | Board | Straße? |
 |------|-------|-----------|
@@ -139,7 +139,7 @@ Ein Flush braucht 5 Karten einer Farbe unter deinen 7. Das Board sagt dir sofort
 | 4 | Wer nur 1 dieser Farbe hält, hat einen Flush |
 | 5 | Das Board selbst ist ein Flush – nur eine Karte dieser Farbe, die höher ist als die niedrigste auf dem Board, verbessert ihn |
 
-![KEIN FLUSH – A♠ zu halten mit nur 3 Pik auf dem Board macht im Texas Hold'em keinen Flush](/images/holdem-reading-flush-draw-mistake.webp)
+![KEIN FLUSH – A♠ zu halten mit nur 3 Pik auf dem Board macht im Texas Hold'em keinen Flush](/images/holdem-reading-flush-draw-mistake.webp "Drei Pik auf dem Board plus ein Pik in der Hand sind vier – ein Flush braucht fünf")
 
 ==r:Der klassische Fehlschluss: A♠ 4♦ auf einem Board von 2♠ 5♠ 9♥ J♥ 10♠ zu halten und einen Flush anzusagen.== Zähl nach: das Board hat drei Pik (2♠ 5♠ 10♠), dein Ass macht vier. ==Vier ist nicht fünf.== Deine tatsächliche Hand ist Ace High – A-J-10-9-5 – und es fühlt sich schrecklich an, das zu erfahren, nachdem du eine River-Bet gecallt hast.
 
@@ -147,7 +147,7 @@ Die umgekehrte Falle zählt genauso: an einem 4-Flush-Board hältst du NULL dies
 
 ---
 
-## Was ein gepaartes Board ändert – Drillinge, Boats und Vierlinge
+## Was ändert ein gepaartes Board? Drillinge, Boats und Vierlinge
 
 In dem Moment, in dem zwei Gemeinschaftskarten denselben Rang teilen, ==springt die Obergrenze der Hand: Drillinge, Full Houses und Vierlinge sind alle möglich==.
 
@@ -190,7 +190,7 @@ Also sind die Nuts ==8-7 – eine Neun-hohe Straße==, und sogar Pocket Damen (T
 
 ---
 
-## Wet Board vs Dry Board: die Textur lesen
+## Wet oder Dry – wie gefährlich ist dieses Board?
 
 Sobald du deine eigene Hand lesen kannst, sagt dir derselbe Scan, wie gefährlich das Board für alle ist – was Spieler die Textur nennen.
 
@@ -201,13 +201,13 @@ Kein Flush- oder Straßendraw existiert | Flushdraws und Straßendraws überall
 Top Pair ist eine echt starke Hand | Top Pair ist fragil – viele River schlagen es
 :::
 
-![Dry Board vs Wet Board im Texas Hold'em – K72 Rainbow (dry) vs JT8 Two-Tone (wet) mit Flush- und Straßendraw-Pfeilen](/images/holdem-reading-dry-vs-wet-board.webp)
+![Dry Board vs Wet Board im Texas Hold'em – K72 Rainbow (dry) vs JT8 Two-Tone (wet) mit Flush- und Straßendraw-Pfeilen](/images/holdem-reading-dry-vs-wet-board.webp "Dry vs Wet: K-7-2 rainbow lässt kaum Draws zu, J-10-8 two-tone bedroht dich mit Flush und Straße")
 
 Auf J♥ 10♥ 8♣ ändert jedes Herz, jede 9, jede 7 und jede Q, wer gewinnt. Auf K♠ 7♦ 2♣ ändert fast nichts etwas. ==Dasselbe Paar, völlig anderer Druck== – deshalb funktioniert die Scan-Reihenfolge (Flush → Straße → Paare) doppelt als dein Gefahren-Radar.
 
 ---
 
-## Board-Lese-Fehler, die echtes Geld kosten
+## Welche Board-Lese-Fehler kosten echtes Geld?
 
 ### Fehler 1 – eine bereits gemachte Straße übersehen
 
@@ -238,7 +238,7 @@ Du triffst am River einen Flush, das Board zeigt zwei Damen, und du stellst die 
 
 A. Scanne alle 7 Karten (2 Hole + 5 Board) in fester Reihenfolge: zuerst Flush (jede Farbe 5+ mal), dann Straße (5 Ränge in Folge), dann gepaarte Ränge (Paare, Drillinge, Full Houses, Vierlinge). Nimm das Stärkste, das du findest, und füll mit deinen höchsten verbleibenden Karten auf genau 5 Karten auf. Du darfst beide Hole Cards, eine oder keine nutzen.
 
-**Q. Was bedeutet „playing the board“ im Texas Hold'em?**
+**Q. Wann spielt das Board für alle – und was heißt das für den Pot?**
 
 A. Es bedeutet, dass die 5 Gemeinschaftskarten bereits deine bestmögliche 5-Karten-Hand sind – keine Hole Card verbessert sie. Da das Board geteilt wird, kann jeder Spieler dieselbe Hand beanspruchen, also führt playing the board meist zu einem Split Pot, außer die Hole Cards eines Gegners verbessern das Board.
 
@@ -246,7 +246,7 @@ A. Es bedeutet, dass die 5 Gemeinschaftskarten bereits deine bestmögliche 5-Kar
 
 A. Ja. Wenn das Board selbst die beste 5-Karten-Hand ist und die Hole Cards keines Spielers es verbessern – sagen wir, das Board zeigt einen Royal Flush – teilen alle verbleibenden Spieler den Pot zu gleichen Teilen. Aber prüf zuerst: an einem Board-Full-House wie A-A-A-7-7 schlägt ein Spieler mit dem letzten Ass (Vierling Asse), den letzten zwei Siebenen (Vierling Siebenen) oder einem großen Pocket Pair (größeres Boat) das Board.
 
-**Q. Kann man gleichzeitig einen Flush und ein Paar haben?**
+**Q. Zählt mein Paar mit, wenn ich schon einen Flush habe?**
 
 A. Du kannst beide aus deinen 7 Karten machen, aber eine Pokerhand besteht aus genau 5 Karten – also spielst du nur die stärkere. Da ein Flush ein Paar überbietet, ist der Flush deine Hand und das Paar wird ignoriert. Dieselbe Regel gilt für eine Straße plus ein Paar: sag die Straße an.
 

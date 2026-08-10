@@ -87,6 +87,8 @@ Ja – und dafür braucht es nicht einmal zwei Monsterhände. Wenn die fünf Gem
 
 Das ist meine 8-8-8-A-K-Hand: meine J-10 und seine 5-2 spielten beide den Drilling Achten des Boards mit Ass-König-Kicker – identische Fünf, automatischer Chop. Der Extremfall ist ein Board wie A♠ K♠ Q♠ J♠ 10♠ (ein Royal Flush): keine Hole Cards können es verbessern, also ==g:choppen alle Verbliebenen==.
 
+🔴 **Und das Wichtigste am Tisch: Deine Hand gewinnt nur, wenn du sie aufdeckst.** Eine gemuckte Hand ist tot, auch wenn sie den Pot geteilt hätte. Wer zuerst zeigen muss und wie der Ablauf genau läuft, steht in den [Showdown-Regeln](/de/blog/holdem-showdown-rules).
+
 > **Der Check:** Schlägt *deine* beste Fünf – mit mindestens einer Hole Card – die eigenen Fünf des Boards? Wenn ja, spielst du deine Hand. Wenn nicht, spielt das Board und du choppst wahrscheinlich. Die vollständige Methode, ein Board so zu scannen, steht in [wie du das Board liest und deine besten 5 findest](/de/blog/holdem-reading-the-board).
 
 :::tip[Wenn das Board spielt und jemand am River bettet: **automatisch zu folden ist hier falsch.** Die Chips im Pot gehören dir nicht mehr – ein Call, der sicher zum Chop führt, holt dir trotzdem die halbe Pot-Größe zurück. Rechne stattdessen mit der Frequenz: Bei einer Pot-Size-Bet lohnt der Call, wenn dein Gegner in etwa 2 von 3 Fällen ebenfalls nur das Board spielt, bei einer halben Pot-Bet reicht rund die Hälfte. Erst wenn er fast immer eine echte Hand hat, ist Folden richtig.]:::
@@ -116,13 +118,13 @@ Manchmal lässt sich ein Pot nicht gleichmäßig teilen – ein Pot aus 101 Chip
 
 > ==Der übrig gebliebene Odd Chip geht an den ersten am Chop beteiligten Spieler **links vom Dealer-Button**== (der früheste gewinnende Sitz im Uhrzeigersinn vom Dealer aus).
 
-Bei einem Drei-Wege-Split mit zwei Odd Chips bekommen die zwei frühesten Sitze im Uhrzeigersinn je einen. ==r:Hausregeln können abweichen== – einige Card Rooms vergeben den Odd Chip stattdessen über die höchste Karte oder die Farbe – wenn also echtes Geld auf dem Spiel steht, frag den Floor. ==g:Online weist die Software ihn automatisch nach Position zu.==
+Bei einem Three-Way-Chop mit zwei Odd Chips bekommen die zwei frühesten Sitze im Uhrzeigersinn je einen. ==r:Hausregeln können abweichen== – einige Card Rooms vergeben den Odd Chip stattdessen über die höchste Karte oder die Farbe – wenn also echtes Geld auf dem Spiel steht, frag den Floor. ==g:Online weist die Software ihn automatisch nach Position zu.==
 
 ---
 
 ## Werden auch Nebenpots geteilt? Unentschieden, wenn jemand All-in ist
 
-Wenn jemand All-in ist, bilden die Chips einen ==**Hauptpot**== (alle sind berechtigt) plus einen oder mehrere ==**Nebenpots**== (nur die tieferen Stacks, die weiter gesetzt haben). Jeder Pot wird ==**separat**== vergeben – oder gechoppt –, basierend auf der besten Hand unter den für diesen Pot berechtigten Spielern.
+Wenn jemand All-in ist, bilden die Chips einen ==**Hauptpot**== (alle sind berechtigt) plus einen oder mehrere ==**Nebenpots**== (nur die größeren Stacks, die weiter gesetzt haben). Jeder Pot wird ==**separat**== vergeben – oder gechoppt –, basierend auf der besten Hand unter den für diesen Pot berechtigten Spielern.
 
 Ein durchgerechnetes Beispiel: A ist All-in mit 100; B und C legen je 300 nach. Das ergibt einen **Hauptpot von 300** (100 × 3) und einen **Nebenpot von 400** (200 + 200, nur B und C). Das Board läuft A♦ J♥ 7♠ 4♣ 2♥ aus:
 

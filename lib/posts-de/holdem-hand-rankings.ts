@@ -15,7 +15,7 @@ export const POST: Post = {
   emoji: "🃏",
   image: "/images/holdem-hand-rankings-hero.webp",
   imageAlt: "Royal Flush – 10 J Q K A in Pik auf einem Pokertisch mit Chip-Stacks und Dealer-Button",
-  tags: ["pokerhände reihenfolge", "poker reihenfolge der hände", "texas holdem hände", "was schlägt was poker", "poker kicker", "poker gleichstand", "beste pokerhände", "poker blätter reihenfolge", "pokerblätter", "poker reihenfolge pdf"],
+  tags: ["pokerhände reihenfolge", "poker reihenfolge der hände", "poker kombinationen", "poker karten reihenfolge", "was schlägt was poker", "poker wertetabelle", "poker gleichstand", "beste pokerhände", "poker blätter reihenfolge", "pokerblätter", "poker reihenfolge pdf"],
   content: `
 Du bist heads-up am River. Dein Flush ist da, du bist dir sicher, dass er der beste ist – und dann ==r:schiebt der Dealer den Pot auf die andere Seite==. Das Board war gepaart, dein Gegner hatte ein Full House, und du hast es überhaupt nicht kommen sehen.
 
@@ -25,9 +25,22 @@ Dieser Leitfaden löst beides. Du bekommst die komplette Reihenfolge mit den ech
 
 ---
 
-## Pokerblätter-Reihenfolge: die komplette Liste auf einen Blick
+### Die Reihenfolge in Zahlen
 
-Fang hier an. Das sind alle zehn **Poker-Kombinationen** in ihrer Rangfolge – von der stärksten zur schwächsten Hand, mit der langfristigen Wahrscheinlichkeit, jede bis zum River im Texas Hold'em zu treffen. „Pokerblatt“, „Pokerhand“ und „Wertigkeit der Karten“ meinen dabei dasselbe.
+:::stripe
+10 | Poker-Kombinationen – von Royal Flush bis Höchste Karte
+61% | aller Sieben-Karten-Hände enden als Paar oder High Card
+0 | Fälle, in denen die Farbe beim Hold'em den Sieger entscheidet
+:::
+
+> **Kurze Antwort**
+> Die Reihenfolge der Pokerblätter lautet von stark nach schwach: **Royal Flush, Straight Flush, Vierling, Full House, Flush, Straße, Drilling, Zwei Paare, Paar, Höchste Karte.** Sie gilt in jeder Standard-Variante. Haben zwei Spieler dieselbe Kombination, entscheidet der höhere Kartenwert und danach die Beikarte (der Kicker) – ==g:die Farbe entscheidet nie==. Sind alle fünf Karten gleich, wird der Pot geteilt.
+
+---
+
+## Pokerblätter-Reihenfolge: Welche Hand schlägt welche?
+
+Fang hier an. Diese **Wertetabelle** zeigt alle zehn **Poker-Kombinationen** in ihrer Rangfolge – von der stärksten zur schwächsten Hand, mit der langfristigen Wahrscheinlichkeit, jede bis zum River im Texas Hold'em zu treffen. „Pokerblatt“, „Pokerhand“ und „Wertigkeit der Karten“ meinen dabei dasselbe.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -55,11 +68,11 @@ Fang hier an. Das sind alle zehn **Poker-Kombinationen** in ihrer Rangfolge – 
 
 ---
 
-## Kartenstärke: die Grundlage in 30 Sekunden
+## Welche Karte ist beim Poker höher? Die Reihenfolge der Karten
 
-Vor den Händen brauchst du die Kartenstärke. Nur zwei Dinge.
+Vor den Händen brauchst du die Kartenwerte. Nur zwei Dinge.
 
-### Wertereihenfolge (von hoch nach niedrig)
+### Reihenfolge der Karten – die Kartenwerte von hoch nach niedrig
 
 **A > K > Q > J > 10 > 9 > 8 > 7 > 6 > 5 > 4 > 3 > 2**
 
@@ -73,7 +86,7 @@ Die Farbe entscheidet im Hold'em nicht einmal über den letzten Chip: Bleibt bei
 
 ---
 
-## Die 10 Pokerhände erklärt
+## Welche Poker-Kombinationen gibt es? Alle 10 erklärt
 
 ### #1 – Royal Flush
 
@@ -171,7 +184,7 @@ Beim Showdown gewinnt die höchste Karte, dann die nächste, und so weiter über
 
 ---
 
-## Wie Kicker und Splits wirklich funktionieren
+## Wer gewinnt bei gleicher Kombination? Kicker und Split
 
 ![Poker-Showdown – die besten fünf Karten zweier Spieler im Vergleich](/images/holdem-kicker-showdown-neutral.webp "Beim Showdown holt die beste Fünf-Karten-Hand den Pot")
 
@@ -182,7 +195,7 @@ Das ist der Teil, der echte Pots entscheidet – und den die meisten Tabellen ü
 3. **Vergleiche die Kicker.** Ist die fertige Hand gleich, entscheiden die übrigen Karten, eine nach der anderen von oben.
 4. **Immer noch identisch? Pot wird geteilt.** Farben brechen niemals den Gleichstand.
 
-Das Abzeichen rechts zeigt, ob der **Kicker zur Entscheidung der Hand verwendet wird**.
+Das Badge rechts zeigt, ob der **Kicker zur Entscheidung der Hand verwendet wird**.
 
 :::tiebreak
 Royal Flush|Zwei Royals = immer Split (nur wenn er auf dem Board liegt)|-Kein Kicker
@@ -201,7 +214,7 @@ Ein **Kicker** ist einfach eine Karte, die nicht Teil deiner fertigen Hand ist, 
 
 ---
 
-## Lies das Board: 3 echte Aufgaben
+## Findest du deine besten fünf Karten? 3 echte Aufgaben
 
 ![K-K-K-A-4-Board auf einem Pokertisch – erkennst du das Full House vor dem Dealer?](/images/holdem-hand-rankings-board-puzzle.webp "Poker-Board-Aufgabe – finde deine besten fünf Karten")
 
@@ -260,7 +273,7 @@ Der Flush. Bei jedem Duell zwischen zwei *verschiedenen* Handtypen entscheidet a
 
 ---
 
-## Warum die Reihenfolge so ist, wie sie ist
+## Warum ist die Reihenfolge der Pokerblätter genau so?
 
 Die Rangfolge ist nicht willkürlich – sie ist ==reine Wahrscheinlichkeit==. ==g:**Je schwerer eine Hand zu treffen ist, desto höher steht sie.**== Ein Flush steht über einer Straße, weil es in einem Deck mit 52 Karten schlicht weniger Wege gibt, fünf Karten einer Farbe zu bilden, als fünf in Folge in beliebigen Farben. Dieses eine Prinzip erklärt die gesamte Rangfolge – sieh dir die genauen Zahlen im [Poker-Odds- und Wahrscheinlichkeits-Chart](/de/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp") an.
 
@@ -268,7 +281,7 @@ Es erklärt auch die große Ausnahme, der du begegnen wirst: Im **Short Deck (6+
 
 ---
 
-## Die 1-Sekunden-Routine zum Board-Lesen
+## Wie liest du ein Board in einer Sekunde?
 
 ![Infografik eines gepaarten Boards 9♥ Q♥ 9♠ 8♣ 7♠ – Paare und mögliche Straßen lesen, um die besten fünf Karten zu finden](/images/holdem-hand-rankings-board-read.webp "Wie man ein Poker-Board schnell liest – Farben, Straßen, Paare der Reihe nach")
 
@@ -284,7 +297,7 @@ Trainierte Spieler lesen das Board in genau dieser Reihenfolge – zuerst die Ge
 
 ---
 
-## In 3 Schritten merken
+## Wie merkst du dir die Reihenfolge? In 3 Schritten
 
 | Schritt | Was tun | Zeit |
 |------|------|------|
@@ -296,7 +309,7 @@ Erst zu gruppieren verhindert, dass die Reihenfolge wie zehn zufällige Dinge wi
 
 ---
 
-## Handreihenfolge je Spielvariante
+## Gilt die Reihenfolge auch für Omaha und Short Deck?
 
 Die Reihenfolge ist in fast allen Poker-Varianten gleich, mit einigen wichtigen Eigenheiten.
 
@@ -316,7 +329,7 @@ Fazit: Lerne die Standard-Reihenfolge einmal und sie trägt dich durch fast jede
 /de/blog/holdem-tiebreak-rules | Kicker- und Tiebreaker-Regeln | /images/holdem-tiebreak-hero.webp
 :::
 
-## Häufige Fragen
+## FAQ
 
 **Q. Was ist ein Flush im Poker?**
 

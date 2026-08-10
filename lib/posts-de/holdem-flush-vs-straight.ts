@@ -31,7 +31,7 @@ Flush > Straße | Keine Ausnahmen im Standard-Texas-Hold'em
 #5 vs #6 | Wo Flush und Straße in der 10-Hand-Rangfolge stehen
 :::
 
-> **Schnelle Antwort**
+> **Kurze Antwort**
 > Ein **Flush schlägt immer eine Straße** im Texas Hold'em – keine Ausnahmen im Standardspiel. Ein Flush (fünf Karten einer Farbe) ist statistisch schwerer zu treffen als eine Straße (fünf Karten in Folge): etwa **5.108** Fünf-Karten-Kombinationen gegenüber **10.200**.
 
 ---
@@ -184,7 +184,7 @@ Im **Short Deck (6+) Hold'em** werden die Zweien bis Fünfen aus dem Deck entfer
 
 ## FAQ
 
-**Q. Schlägt ein Flush eine Straße im Poker?**
+**Q. Ist ein Flush oder eine Straße besser?**
 
 A. Ja. Ein Flush ist die #5-Hand und eine Straße die #6, also gewinnt ein Flush im Standard-Texas-Hold'em immer. Fünf Karten einer Farbe sind statistisch schwerer zu treffen als fünf in Folge, und die seltenere Hand rangiert immer höher.
 
@@ -192,15 +192,15 @@ A. Ja. Ein Flush ist die #5-Hand und eine Straße die #6, also gewinnt ein Flush
 
 A. Nein. Eine Straße (#6) schlägt im Standard-Texas-Hold'em nie einen Flush (#5). Es ist eine häufige Verwechslung, weil sich eine Straße schwerer zu komplettieren anfühlen kann, aber ein Flush ist rund doppelt so selten – der Flush holt also immer den Pot.
 
-**Q. Warum schlägt ein Flush eine Straße?**
+**Q. Wie viel seltener ist ein Flush als eine Straße?**
 
 A. Reine Mathematik. Eine Straße ignoriert die Farben, also gibt es etwa 10.200 Wege, eine zu treffen, gegenüber nur 5.108 Wegen zu einem Flush. Der Flush ist etwa doppelt so selten, und im Poker rangiert die seltenere Hand immer höher.
 
-**Q. Was schlägt einen Flush im Poker?**
+**Q. Welche Hände sind höher als ein Flush?**
 
 A. Ein Full House, ein Vierling, ein Straight Flush und ein Royal Flush schlagen alle einen Flush – und das tut auch ein höherer Flush (bessere Topkarte). Alles darunter (Straße, Drilling, Zwei Paare, Paar, High Card) verliert gegen ihn.
 
-**Q. Was schlägt eine Straße im Poker?**
+**Q. Was schlägt eine Straße beim Poker?**
 
 A. Ein Flush, Full House, Vierling, Straight Flush und Royal Flush schlagen alle eine Straße – plus jede höhere Straße. Eine Straße schlägt weiterhin einen Drilling und alles darunter. Die komplette Reihenfolge von der besten zur schlechtesten steht in der [vollständigen Pokerhände-Reihenfolge](/de/blog/holdem-hand-rankings).
 
