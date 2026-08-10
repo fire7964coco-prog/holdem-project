@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In a poker tournament you pay a fixed buy-in for chips, blinds increase on a timer until one player holds all chips. Top 10–15% of players cash. Formats include freezeout, PKO, satellite, and deepstack — enter via direct buy-in, satellite, or online pre-registration.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-07-19",
+  updated: "2026-08-10",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏆",
@@ -257,8 +257,8 @@ This is what no other guide tells you. Here's a realistic Day 1 timeline for a l
 
 **Real example (WPT Seminole Rock 'N' Roll Poker Open Championship 2024, $3,500 buy-in, 1,435 entries):**
 - Prize pool: $4,592,000 ($3,200 of each buy-in goes to the pool — the rest is the fee)
-- Players paid: 181 (~12.6% of the field)
-- Min-cash: roughly 1.5x the buy-in
+- Players paid: 180 (~12.5% of the field)
+- Min-cash: about 1.83x the buy-in
 - 1st place: $662,200 (~14% of the prize pool)
 
 The payout structure is always announced before the tournament starts. Ask for the **structure sheet** at registration — it lists blind levels, antes, starting stack, and payout schedule.

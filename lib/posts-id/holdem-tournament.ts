@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Di turnamen poker Anda membayar buy-in tetap untuk mendapat chip, blind naik mengikuti timer sampai satu pemain memegang semua chip. 10–15% pemain teratas ITM. Formatnya meliputi freezeout, PKO, satellite, dan deepstack — masuk lewat buy-in langsung, satellite, atau pra-registrasi online.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-07-11",
+  updated: "2026-08-10",
   keepImagesInBody: true,
   readTime: "14 mnt",
   emoji: "🏆",
@@ -257,8 +257,8 @@ Ini yang tidak diberitahukan panduan lain. Inilah timeline Day 1 realistis untuk
 
 **Contoh nyata (WPT Seminole Rock 'N' Roll Poker Open Championship 2024, buy-in $3.500, 1.435 entri):**
 - Prize pool: $4.592.000 ($3.200 dari setiap buy-in masuk ke pool — sisanya adalah fee)
-- Pemain dibayar: 181 (~12,6% dari field)
-- Min-cash: kira-kira 1,5x buy-in
+- Pemain dibayar: 180 (~12,5% dari field)
+- Min-cash: kira-kira 1,83x buy-in
 - Juara 1: $662.200 (~14% dari prize pool)
 
 Payout structure selalu diumumkan sebelum turnamen mulai. Mintalah **structure sheet** saat registrasi — itu memuat blind level, ante, starting stack, dan jadwal payout.

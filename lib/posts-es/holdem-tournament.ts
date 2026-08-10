@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "En un torneo de póker pagas un buy-in fijo por fichas; las ciegas suben con el reloj hasta que un jugador tiene todas las fichas. El 10-15% de arriba cobra. Formatos: freezeout, PKO, satélite y deepstack — entras por buy-in directo, satélite o preinscripción online.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-07-24",
-  masterUpdated: "2026-07-19",
+  updated: "2026-08-10",
+  masterUpdated: "2026-08-10",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏆",
@@ -258,8 +258,8 @@ Esto es lo que ninguna otra guía te cuenta. Aquí tienes una cronología realis
 
 **Ejemplo real (WPT Seminole Rock 'N' Roll Poker Open Championship 2024, buy-in de $3,500, 1,435 inscritos):**
 - Bolsa de premios: $4,592,000 ($3,200 de cada buy-in va a la bolsa — el resto es la comisión)
-- Jugadores pagados: 181 (~12.6% del campo)
-- Min-cash: aproximadamente 1.5x el buy-in
+- Jugadores pagados: 180 (~12.5% del campo)
+- Min-cash: aproximadamente 1.83x el buy-in
 - 1.er puesto: $662,200 (~14% de la bolsa de premios)
 
 La estructura de premios siempre se anuncia antes de que empiece el torneo. Pide la **hoja de estructura** en el registro — lista los niveles de ciegas, los antes, el stack inicial y el calendario de premios.

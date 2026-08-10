@@ -257,8 +257,8 @@ Das erzählt dir kein anderer Guide. Hier ist eine realistische Tag-1-Timeline f
 
 **Echtes Beispiel (WPT Seminole Rock 'N' Roll Poker Open Championship 2024, $3.500-Buy-in, 1.435 Entries):**
 - Prize Pool: $4.592.000 ($3.200 jedes Buy-ins gehen in den Pool – der Rest ist die Fee)
-- Bezahlte Spieler: 181 (~12,6% des Feldes)
-- Min-Cash: rund 1,5× das Buy-in
+- Bezahlte Spieler: 180 (~12,5% des Feldes)
+- Min-Cash: rund 1,83× das Buy-in
 - 1. Platz: $662.200 (~14% des Prize Pools)
 
 Die Payout-Struktur wird immer vor dem Turnierstart bekanntgegeben. Frag am Registrierungstresen nach dem **Structure Sheet** – es listet Blind-Levels, Antes, Startstack und Payout-Schedule.

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "在锦标赛里你交一笔固定买入换取筹码，盲注按计时器不断上涨，直到一名玩家赢下全部筹码。通常前 10–15% 的人进钱。赛制包括 freezeout、PKO、卫星赛和 deepstack——报名方式有直接买入、卫星赛晋级，或线上预注册。",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-07-24",
-  masterUpdated: "2026-07-19",
+  updated: "2026-08-10",
+  masterUpdated: "2026-08-10",
   keepImagesInBody: true,
   readTime: "14 分钟",
   emoji: "🏆",
@@ -258,8 +258,8 @@ deepstack 锦标赛让你带着相对盲注多得多的筹码开局——通常 
 
 **真实案例（WPT Seminole Rock 'N' Roll Poker Open Championship 2024，$3,500 买入，1,435 人参赛）：**
 - 奖池：$4,592,000（每笔买入的 $3,200 进奖池——其余是手续费）
-- 进钱人数：181（约占全场 12.6%）
-- 最低奖：大约 1.5 倍买入
+- 进钱人数：180（约占全场 12.5%）
+- 最低奖：大约 1.83 倍买入
 - 冠军：$662,200（约占奖池的 14%）
 
 奖金结构总会在锦标赛开赛前公布。报名时问一份**结构表（structure sheet）**——它列出盲注级别、前注、起始筹码和奖金分配。

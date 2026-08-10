@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Num torneio de pôquer você paga um buy-in fixo por fichas, e os blinds sobem num relógio até uma pessoa ficar com todas as fichas. Os 10–15% melhores do field entram no dinheiro. Os formatos incluem freezeout, PKO, satellite e deepstack — você entra por buy-in direto, satellite ou pré-registro online.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-07-11",
+  updated: "2026-08-10",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏆",
@@ -257,8 +257,8 @@ Isto é o que nenhum outro guia te conta. Aqui está uma linha do tempo realista
 
 **Exemplo real (WPT Seminole Rock 'N' Roll Poker Open Championship 2024, buy-in de $3.500, 1.435 inscritos):**
 - Prize pool: $4.592.000 ($3.200 de cada buy-in vai pro pool — o resto é a taxa)
-- Jogadores pagos: 181 (~12,6% do field)
-- Min-cash: aproximadamente 1,5x o buy-in
+- Jogadores pagos: 180 (~12,5% do field)
+- Min-cash: aproximadamente 1,83x o buy-in
 - 1º lugar: $662.200 (~14% do prize pool)
 
 A estrutura de payout é sempre anunciada antes de o torneio começar. Peça a **structure sheet** no registro — ela lista os níveis de blind, os antes, o stack inicial e a tabela de payout.
