@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Foldar é a habilidade mais subestimada do pôquer — o pior resultado de um fold é zero, enquanto um call perdedor sangra fichas toda vez. Um bom jogador folda cerca de 75–85% das mãos antes do flop, larga mãos que erraram e projetos fracos que não batem suas pot odds depois dele e — o mais difícil de tudo — abre mão de mãos fortes mas derrotadas quando a linha de um adversário passivo grita valor. A maioria não paga demais porque não sabe ler mãos; paga porque as fichas que já estão no pote parecem suas. Não são.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-08-09",
-  masterUpdated: "2026-07-19",
+  updated: "2026-08-11",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🛡️",
@@ -110,10 +110,12 @@ Foldar lixo é fácil. Foldar uma *boa* mão — top pair, um overpair, até um 
 | **Top pair, kicker fraco** | Enfrentando apostas grandes no turn + river | Você vence blefes e pares piores — mas o value range deles te supera no kicker |
 | **Overpair (JJ/QQ)** | Um jogador passivo dá raise numa mesa coordenada | Passivos dão raise nos nuts, não em ar — você está projetando fino |
 | **Top pair top kicker** | A mesa fecha quatro para flush ou sequência | Seu único par não vence o flush/sequência que ele representa |
-| **Um set** | Mesa monotone ou de quatro em sequência, raise grande | Set-over-set é um cooler, mas o flush fechado não é — leia a textura |
+| **Um set** | Raise grande em mesa monotone ou de quatro em sequência — **no river** | Set-over-set é um cooler; um flush fechado não é. No *flop* esse mesmo set ainda tem ~34% contra um flush feito, então ali é call |
 | **Second pair** | Pagando três streets "pra mantê-lo honesto" | Você está pagando valor três vezes pra pegar um blefe |
 
 </div>
+
+A linha do set é a que precisa ter a street nomeada, porque largá-lo cedo demais custa mais do que largá-lo tarde demais. Segure 9♠9♣ num flop 9♥5♥2♥ contra um flush feito A♥K♥ — o pior caso possível — e o set ainda vence ==34%== das vezes: ele fecha nos sete outs evidentes (o nove restante, três cincos, três dois) *e* também sempre que o turn e o river formam par entre si. No flop isso é call. Só depois que o draw chega é que a linha acima vale.
 
 A imagem espelhada também importa, porque **foldar pode ser um vazamento por si só.** Uma *boa* laydown larga uma mão batida contra uma linha que faz sentido. Uma *má* laydown folda a melhor mão para uma carta assustadora por medo — e se você faz isso com frequência, adversários pensantes vão te blefar sem parar. O objetivo não é foldar mais ou foldar menos; é foldar *quando a evidência está lá.*
 
@@ -144,10 +146,12 @@ Consigo nomear as mãos piores que ele apostaria assim? | Se as únicas mãos qu
 Supero o limite das pot odds? | Se minha equity está abaixo do número na tabela, o preço diz fold.
 Essa linha é uma aposta de valor ou um blefe? | Jogadores passivos e raises grandes no river são valor — acredite neles.
 Estou pagando só pra "ver"? | Curiosidade e ego não são motivos; são a armadilha do sunk cost falando.
-Eu mesmo apostaria essa mão por valor aqui? | Se eu não apostaria, provavelmente também não posso pagar uma aposta com ela.
+Eu mesmo apostaria essa mão por valor aqui? | Se não, tenho um bluff-catcher — a pergunta passa a ser com que frequência ele blefa, não se estou na frente.
 :::
 
 Nada disso leva trinta segundos de verdade quando vira hábito — mas desacelerar nas grandes decisões é exatamente o que a calling station nunca faz.
+
+Repare no que a última pergunta *não* é. Uma aposta de valor precisa vencer o range de **pagar** dele; um call só precisa vencer o range de **apostar**, blefes incluídos. Diante de uma overbet de 1,5 vez o pote no river você precisa de apenas ==37,5%== de equity, então uma mão que você nunca apostaria por valor ainda pode ser um call lucrativo se ele blefar o bastante. "Eu não apostaria" quer dizer *bluff-catcher*, não *fold*.
 
 ---
 

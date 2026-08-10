@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Foldear es la habilidad más infravalorada del póker: en el peor de los casos un fold te cuesta cero, mientras que un call perdedor sangra fichas todas las veces. Un jugador sólido foldea entre el 75 y el 85% de sus manos antes del flop, suelta las manos falladas y los proyectos débiles que no cumplen sus pot odds después, y —lo más difícil de todo— tira manos fuertes pero batidas cuando la línea de un rival pasivo grita valor. La mayoría no paga de más porque no sepa leer manos; paga porque las fichas que ya están en el bote las siente suyas. No lo son.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-07-24",
-  masterUpdated: "2026-07-19",
+  updated: "2026-08-11",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🛡️",
@@ -110,10 +110,12 @@ Foldear basura es fácil. Foldear una *buena* mano — top pair, un sobrepar, in
 | **Top pair, kicker débil** | Encarando apuestas grandes en turn + river | Le ganas a faroles y parejas peores — pero su rango de valor te supera por kicker |
 | **Sobrepar (JJ/QQ)** | Un jugador pasivo sube en una mesa coordinada | Los pasivos suben las nuts, no aire — vas a proyecto muy fino |
 | **Top pair top kicker** | La mesa cierra con cuatro al color o a la escalera | Tu pareja no puede ganarle al color/escalera que representa |
-| **Un trío** | Mesa monocolor o cuatro a la escalera, raise grande | Trío contra trío es un cooler, pero el color completado no lo es — lee la textura |
+| **Un trío** | Raise grande en mesa monocolor o cuatro a la escalera — **en el river** | Trío contra trío es un cooler; un color completado no. En el *flop* ese mismo trío sigue teniendo ~34% contra un color hecho, así que ahí se paga |
 | **Segunda pareja** | Pagar tres calles "para tenerlo honesto" | Estás pagando valor tres veces por atrapar un farol |
 
 </div>
+
+La fila del trío es la que necesita que le pongas calle, porque soltarlo demasiado pronto cuesta más que soltarlo demasiado tarde. Ten 9♠9♣ en un flop 9♥5♥2♥ contra un color hecho A♥K♥ — el peor caso posible — y el trío todavía gana el ==34%== de las veces: liga la casa con los siete outs evidentes (el nueve restante, tres cincos, tres doses) *y* además siempre que el turn y el river se emparejen entre sí. En el flop eso se paga. Solo cuando el proyecto ya ha entrado se aplica la fila de arriba.
 
 El reflejo contrario también importa, porque **foldear puede ser una fuga en sí misma.** Un *buen* laydown suelta una mano batida ante una línea que tiene sentido. Un *mal* laydown foldea la mejor mano ante una carta de miedo por temor — y si lo haces a menudo, contra rivales que piensan te farolearán sin descanso. El objetivo no es foldear más ni foldear menos; es foldear *cuando la evidencia está ahí.*
 
@@ -144,10 +146,12 @@ Antes de cualquier call grande, pasa esta checklist. Si las respuestas honestas 
 ¿Supero el umbral de pot odds? | Si mi equity está por debajo del número de la tabla, el precio dice fold.
 ¿Esta línea es una apuesta de valor o un farol? | Los pasivos y los raises grandes en el river son valor — créetelos.
 ¿Solo estoy pagando por "verlo"? | La curiosidad y el ego no son razones; es la trampa del coste hundido hablando.
-¿Apostaría yo mismo esta mano por valor aquí? | Si no lo haría, probablemente tampoco pueda pagar una apuesta con ella.
+¿Apostaría yo mismo esta mano por valor aquí? | Si no, tengo un bluff-catcher — la pregunta pasa a ser cada cuánto farolea, no si voy ganando.
 :::
 
 Nada de esto lleva treinta segundos reales una vez es un hábito — pero frenar en las decisiones grandes es exactamente lo que la calling station nunca hace.
+
+Fíjate en lo que esa última pregunta *no* es. Una apuesta de valor tiene que ganarle a su rango de **pagar**; una llamada solo tiene que ganarle a su rango de **apostar**, faroles incluidos. Ante una overbet de 1.5 veces el bote en el river solo necesitas ==37.5%== de equity, así que una mano que nunca apostarías por valor puede seguir siendo una llamada rentable si farolea lo suficiente. "No la apostaría" significa *bluff-catcher*, no *fold*.
 
 ---
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Fold adalah skill paling diremehkan di poker — hasil terburuk sebuah fold adalah nol, sementara call yang kalah menguras chip setiap kali. Pemain solid fold sekitar 75–85% tangan sebelum flop, melepas tangan yang meleset dan draw lemah yang tak memenuhi pot odds mereka setelahnya, dan — yang paling sulit — melepas tangan kuat-tapi-kalah saat line lawan pasif jelas menunjukkan value. Kebanyakan pemain tidak call terlalu banyak karena tak bisa membaca tangan; mereka call karena chip yang sudah ada di pot terasa milik mereka. Padahal bukan.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-08-09",
-  masterUpdated: "2026-07-19",
+  updated: "2026-08-11",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "16 mnt",
   emoji: "🛡️",
@@ -110,10 +110,12 @@ Fold sampah itu mudah. Fold tangan yang *bagus* — top pair, overpair, bahkan s
 | **Top pair, kicker lemah** | Menghadapi taruhan besar turn + river | Anda mengalahkan bluff dan pair lebih buruk — tapi range value mereka mengungguli kicker Anda |
 | **Overpair (JJ/QQ)** | Pemain pasif me-raise board terkoordinasi | Pemain pasif me-raise nuts, bukan udara — Anda drawing thin |
 | **Top pair top kicker** | Board berkembang jadi four to a flush atau straight | Satu pair Anda tak bisa mengalahkan flush/straight yang mereka wakili |
-| **Sebuah set** | Board monotone atau four-straight, raise besar | Set-over-set adalah cooler, tapi flush yang lengkap bukan — baca teksturnya |
+| **Sebuah set** | Raise besar di board monotone atau four-straight — **di river** | Set-over-set adalah cooler; flush yang sudah jadi bukan. Di *flop* set yang sama masih ~34% melawan flush jadi, jadi di sana itu call |
 | **Second pair** | Call tiga street "untuk menjaga mereka jujur" | Anda membayar value tiga kali untuk menangkap satu bluff |
 
 </div>
+
+Baris set itulah yang perlu disebut streetnya, karena melepasnya terlalu awal lebih mahal daripada melepasnya terlalu lambat. Pegang 9♠9♣ di flop 9♥5♥2♥ melawan flush jadi A♥K♥ — kasus terburuk yang bisa Anda hadapi — dan set itu masih menang ==34%== dari waktu: ia jadi full house pada tujuh out yang kelihatan (sisa satu sembilan, tiga lima, tiga dua) *dan* setiap kali turn dan river berpasangan satu sama lain. Di flop itu call. Baru setelah drawnya sampai, baris di atas berlaku.
 
 Cermin baliknya juga penting, karena **fold bisa jadi kebocoran tersendiri.** Laydown *bagus* melepas tangan kalah ke line yang masuk akal. Laydown *buruk* fold tangan terbaik ke scare card karena takut — dan jika Anda sering melakukannya, lawan yang berpikir akan bluff Anda tanpa henti. Tujuannya bukan fold lebih banyak atau lebih sedikit; melainkan fold *saat buktinya ada.*
 
@@ -144,10 +146,12 @@ Bisakah saya menyebut tangan lebih buruk yang akan mereka taruhkan begini? | Jik
 Apakah saya melampaui ambang pot odds? | Jika equity saya di bawah angka di tabel, harga berkata fold.
 Apakah line ini taruhan value atau bluff? | Pemain pasif dan raise besar di river adalah value — percayai mereka.
 Apakah saya hanya call untuk "melihatnya"? | Rasa penasaran dan ego bukan alasan; itu jebakan sunk-cost yang berbicara.
-Akankah saya bertaruh tangan ini untuk value di sini sendiri? | Jika tidak, saya mungkin juga tak bisa call sebuah taruhan dengannya.
+Akankah saya bertaruh tangan ini untuk value di sini sendiri? | Jika tidak, saya memegang bluff-catcher — pertanyaannya jadi seberapa sering dia bluff, bukan apakah saya unggul.
 :::
 
 Tak satu pun dari ini butuh tiga puluh detik sungguhan begitu jadi kebiasaan — tapi memperlambat untuk keputusan besar justru yang tak pernah dilakukan calling station.
+
+Perhatikan apa yang pertanyaan terakhir itu *bukan*. Taruhan value harus mengalahkan **calling range** lawan; sebuah call hanya perlu mengalahkan **betting range** lawan, bluff termasuk. Menghadapi overbet 1,5 kali pot di river Anda cuma butuh ==37,5%== ekuitas, jadi tangan yang tak akan pernah Anda taruhkan untuk value tetap bisa jadi call yang menguntungkan kalau dia cukup sering bluff. "Saya tak akan bertaruh dengannya" berarti *bluff-catcher*, bukan *fold*.
 
 ---
 
