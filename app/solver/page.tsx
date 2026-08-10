@@ -15,8 +15,10 @@ export const metadata: Metadata = {
   //   ⚠ 「gto 표」 단독은 조준 금지 — 자동완성이 「gto 표정·표지·표절」로 만화 GTO다.
   //     반면 「gto 차트」는 「홀덤 gto 차트·포커 gto 차트·gto 프리플랍 차트」로 포커가 맞다.
   title: "무료 GTO 솔버 — 홀덤 GTO 표를 직접 계산",
+  // ★2026-08-10 — 「홀덤 gto 프로그램」(140)·「홀덤 gto 계산기」(20) 대응으로
+  //   「프로그램」·「계산기」 두 명사를 desc에 추가(keyword-bank/ko-gto-solver.md §4-1).
   description:
-    "설치·회원가입 없는 100% 무료 GTO 솔버. 홀덤 GTO 표와 레인지 차트를 브라우저에서 직접 계산합니다. 169핸드 전략·벳 사이즈·EV·에퀴티를 한 화면에서 보세요.",
+    "설치·회원가입 없는 100% 무료 GTO 솔버 프로그램. 홀덤 GTO 표와 레인지 차트를 브라우저에서 바로 계산하는 GTO 계산기 — 169핸드 전략·벳 사이즈·EV·에퀴티를 한 화면에서 보세요.",
   alternates: { canonical: `${SITE}/solver` },
 };
 
