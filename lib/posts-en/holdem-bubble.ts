@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "The bubble is the spot right before the money, where one more elimination pays everyone else. Because busting means winning nothing, survival is worth more than the chips you'd gain — so calling ranges tighten hard while shoving stays wide. Big stacks attack, medium stacks are the most trapped (not short stacks), and on a satellite bubble you fold everything, even aces, once your seat is locked.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-07-19",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🫧",
@@ -112,11 +112,11 @@ The short stack's mantra: fold equity is everything. Shove first, and pick your 
 
 **"Bubble factor" measures how much more losing your stack costs you than winning the same pot helps — and it converts directly into the extra equity you need to make a call.** A bubble factor of 1.0 means chips and money move together (early in a tournament). A bubble factor of 1.5 means ==busting hurts 1.5× as much as winning helps==, so you need a much bigger edge to get your chips in.
 
-Here's the useful part: the equity you need to break even on a call is simply ==bubble factor ÷ (1 + bubble factor)==.
+Here's the useful part: the equity you need to break even on a call is ==c · BF ÷ (P + c · BF)==, where **c** is what the call costs you and **P** is the pot you'd win. When you're risking exactly what you stand to win, that collapses to the form you'll usually see quoted — ==BF ÷ (1 + BF)== — which is what the table below uses.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Bubble factor | Losing hurts… | Equity you need to call |
+| Bubble factor | Losing hurts… | Equity you need (no dead money) |
 |:--|:--:|:--:|
 | 1.0 (no pressure) | same as winning helps | 50% |
 | 1.3 | 1.3× | ==57%== |
@@ -126,7 +126,9 @@ Here's the useful part: the equity you need to break even on a call is simply ==
 
 </div>
 
-So a chip-EV coin flip you'd take at 50% becomes a ==clear fold== when your bubble factor is 1.5 and you only have 50% — you now need 60%. Bubble factors typically peak around ==1.5–1.7== on the money and final-table bubbles, then drop back once you're in the money. Plug your own stacks and payouts into the [ICM calculator](/en/calculator) to see your real number for a spot.
+Read that last column as a ceiling, not as your spot: real bubble pots hold dead money, and dead money pushes the requirement **down**. If the small blind jams 10bb and you call 9bb into a pot already holding 12bb, a bubble factor of 1.5 needs ==52.9%==, not 60% — and with no ICM pressure at all it's just pot odds, ==42.9%==.
+
+The other half is that bubble factor tracks **who is across from you**, not the stage. Four-handed with three paid, a middle stack facing the chip leader carries a bubble factor near ==3.0==, while that same middle stack facing the shortest player is barely over ==1.1==; equal stacks sit near ==1.9==, and a six-handed final-table bubble runs ==2.0== and up. Treat 1.5–1.7 as a floor for a serious bubble, not a peak — then drop back once you're in the money. Plug your own stacks and payouts into the [ICM calculator](/en/calculator) for the number that actually applies.
 
 ---
 
@@ -193,7 +195,7 @@ A. No — that's the common misconception. By bubble factor, the medium stack is
 
 **Q. What is the bubble factor in poker?**
 
-A. Bubble factor measures how much more losing a pot costs you than winning the same pot helps, in real-money (ICM) terms. A bubble factor of 1.0 means chips equal money; 1.5 means busting hurts 1.5× as much as winning helps. It converts straight into the equity you need to call: bubble factor ÷ (1 + bubble factor). At a 1.5 bubble factor you need 60% to call, not 50% — which is exactly why a chip-EV coin flip becomes a fold on the bubble.
+A. Bubble factor measures how much more losing a pot costs you than winning the same pot helps, in real-money (ICM) terms. A bubble factor of 1.0 means chips equal money; 1.5 means busting hurts 1.5× as much as winning helps. It converts into the equity you need to call: c · BF ÷ (P + c · BF), for a call of c into a pot of P. Risking exactly what you can win, that's BF ÷ (1 + BF) — 60% at a bubble factor of 1.5 — but real pots carry dead money, so a typical 10bb jam you call for 9bb into a 12bb pot needs about 53%. Either way it's above the 50% a chip-EV coin flip gives you, which is why flips become folds on the bubble.
 
 **Q. What is hand-for-hand play?**
 

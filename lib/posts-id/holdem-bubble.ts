@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Bubble adalah spot tepat sebelum uang, di mana satu eliminasi lagi membayar semua orang lainnya. Karena bust berarti tidak menang apa-apa, bertahan lebih berharga daripada chip yang bisa Anda dapatkan — jadi calling range mengetat keras sementara shove tetap lebar. Big stack menyerang, medium stack paling terjebak (bukan short stack), dan di bubble satelit Anda fold semuanya, bahkan aces, begitu kursi Anda terkunci.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-08-09",
-  masterUpdated: "2026-07-19",
+  updated: "2026-08-11",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "13 mnt",
   emoji: "🫧",
@@ -113,11 +113,11 @@ Mantra short stack: fold equity adalah segalanya. Shove duluan, dan pilih spot A
 
 **"Bubble factor" mengukur seberapa banyak lebih besar biaya kalah dengan stack Anda dibanding menang pot yang sama membantu — dan ini langsung dikonversi menjadi equity tambahan yang Anda butuhkan untuk call.** Bubble factor 1,0 berarti chip dan uang bergerak bersama (di awal turnamen). Bubble factor 1,5 berarti ==bust menyakiti 1,5× lebih dari yang menang bantu==, jadi Anda butuh edge yang jauh lebih besar untuk memasukkan chip Anda.
 
-Inilah bagian yang berguna: equity yang Anda butuhkan untuk break even pada sebuah call cukup ==bubble factor ÷ (1 + bubble factor)==.
+Inilah bagian yang berguna: equity yang Anda butuhkan untuk break even pada sebuah call adalah ==c · BF ÷ (P + c · BF)==, dengan **c** biaya call Anda dan **P** pot yang akan Anda menangkan. Kalau Anda mempertaruhkan persis sebesar yang bisa Anda menangkan, rumus itu menyusut jadi bentuk yang biasa dikutip — ==BF ÷ (1 + BF)== — dan itulah yang dipakai tabel di bawah.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Bubble factor | Kalah menyakiti… | Equity yang Anda butuhkan untuk call |
+| Bubble factor | Kalah menyakiti… | Equity tanpa dead money |
 |:--|:--:|:--:|
 | 1,0 (tanpa tekanan) | sama dengan yang menang bantu | 50% |
 | 1,3 | 1,3× | ==57%== |
@@ -127,7 +127,9 @@ Inilah bagian yang berguna: equity yang Anda butuhkan untuk break even pada sebu
 
 </div>
 
-Jadi sebuah chip-EV coin flip yang akan Anda ambil pada 50% menjadi ==fold yang jelas== ketika bubble factor Anda 1,5 dan Anda hanya punya 50% — Anda kini butuh 60%. Bubble factor biasanya memuncak sekitar ==1,5–1,7== pada money dan final-table bubble, lalu turun kembali begitu Anda masuk uang. Masukkan stack dan pembayaran Anda sendiri ke [kalkulator ICM](/calculator) untuk melihat angka sebenarnya untuk sebuah spot.
+Baca kolom terakhir itu sebagai batas atas, bukan sebagai spot Anda: pot bubble sungguhan berisi dead money, dan dead money justru menekan syaratnya **turun**. Kalau small blind jam 10bb dan Anda call 9bb ke pot yang sudah berisi 12bb, pada bubble factor 1,5 Anda butuh ==52,9%==, bukan 60% — dan tanpa tekanan ICM sama sekali itu cuma pot odds, ==42,9%==.
+
+Separuh lainnya: bubble factor mengikuti **siapa yang duduk di seberang Anda**, bukan fasenya. Empat orang dengan tiga dibayar, stack menengah melawan chip leader membawa bubble factor mendekati ==3,0==, sedangkan stack menengah yang sama melawan pemain terpendek nyaris tak lewat ==1,1==; stack setara ada di sekitar ==1,9==, dan bubble final table enam orang berjalan dari ==2,0== ke atas. Perlakukan 1,5–1,7 sebagai lantai sebuah bubble serius, bukan puncaknya — dan memang turun kembali begitu Anda masuk uang. Masukkan stack dan pembayaran Anda sendiri ke [kalkulator ICM](/calculator) untuk melihat angka sebenarnya untuk sebuah spot.
 
 ---
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Die Bubble ist der Moment kurz vor dem Geld, wo eine weitere Elimination allen anderen auszahlt. Weil ein Bust nichts bringt, ist Überleben mehr wert als die Chips, die du gewinnen würdest – Calling Ranges ziehen sich hart zusammen, während Shoves weit bleiben. Big Stacks attackieren, Medium Stacks sitzen am meisten in der Falle (nicht die Short Stacks), und an einer Satellite-Bubble foldest du alles, sogar Asse, sobald dein Platz gesichert ist.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-08-10",
-  masterUpdated: "2026-07-19",
+  updated: "2026-08-11",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "13 Min.",
   emoji: "🫧",
@@ -113,11 +113,11 @@ Das Mantra des Short Stacks: Fold Equity ist alles. Shove zuerst und wähl deine
 
 **Der „Bubble Factor“ misst, wie viel mehr dich das Verlieren deines Stacks kostet, als dir das Gewinnen desselben Pots hilft – und er übersetzt sich direkt in die zusätzliche Equity, die du für einen Call brauchst.** Ein Bubble Factor von 1,0 bedeutet, Chips und Geld bewegen sich zusammen (früh im Turnier). Ein Bubble Factor von 1,5 bedeutet, dass ==Busten 1,5× so weh tut, wie Gewinnen hilft==, also brauchst du einen viel größeren Edge, um deine Chips reinzukriegen.
 
-Hier der nützliche Teil: Die Equity, die du für einen Break-even-Call brauchst, ist einfach ==Bubble Factor ÷ (1 + Bubble Factor)==.
+Hier der nützliche Teil: Die Equity, die du für einen Break-even-Call brauchst, ist ==c · BF ÷ (P + c · BF)==, wobei **c** der Call kostet und **P** der Pot ist, den du gewinnen würdest. Wenn du genau das riskierst, was du gewinnen kannst, fällt das auf die üblich zitierte Form zusammen – ==BF ÷ (1 + BF)== – und genau die benutzt die Tabelle unten.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Bubble Factor | Verlieren tut weh… | Equity für den Call |
+| Bubble Factor | Verlieren tut weh… | Equity ohne Dead Money |
 |:--|:--:|:--:|
 | 1,0 (kein Druck) | so viel wie Gewinnen hilft | 50% |
 | 1,3 | 1,3× | ==57%== |
@@ -127,7 +127,9 @@ Hier der nützliche Teil: Die Equity, die du für einen Break-even-Call brauchst
 
 </div>
 
-Ein Chip-EV-Coin-Flip, den du bei 50% nehmen würdest, wird also zu einem ==klaren Fold==, wenn dein Bubble Factor 1,5 ist und du nur 50% hast – du brauchst jetzt 60%. Bubble Factors erreichen ihren Höhepunkt typischerweise um ==1,5–1,7== an der Money- und Final-Table-Bubble und fallen dann zurück, sobald du im Geld bist. Gib deine eigenen Stacks und Payouts in den [ICM-Rechner](/calculator) ein, um deine echte Zahl für einen Spot zu sehen.
+Lies die letzte Spalte als Obergrenze, nicht als deinen Spot: In echten Bubble-Pots liegt Dead Money, und Dead Money drückt die Anforderung **nach unten**. Jamt der Small Blind über 10bb und du callst 9bb in einen Pot, in dem schon 12bb liegen, brauchst du bei einem Bubble Factor von 1,5 ==52,9%== statt 60% – und ganz ohne ICM-Druck sind es schlicht Pot Odds, ==42,9%==.
+
+Die andere Hälfte: Der Bubble Factor richtet sich danach, **wer dir gegenübersitzt**, nicht nach der Phase. Zu viert mit drei bezahlten Plätzen trägt ein Mittelstack gegen den Chipleader einen Bubble Factor nahe ==3,0==, während derselbe Mittelstack gegen den kürzesten Spieler kaum über ==1,1== liegt; gleiche Stacks liegen bei etwa ==1,9==, und eine Final-Table-Bubble zu sechst läuft ab ==2,0== aufwärts. Behandle 1,5–1,7 als Untergrenze einer ernsten Bubble, nicht als Höhepunkt – und sie fallen zurück, sobald du im Geld bist. Gib deine eigenen Stacks und Payouts in den [ICM-Rechner](/calculator) ein, um deine echte Zahl für einen Spot zu sehen.
 
 ---
 

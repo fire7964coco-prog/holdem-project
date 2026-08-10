@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "La burbuja es el punto justo antes de premios, donde una eliminación más deja cobrar a todos los demás. Como bustear significa no ganar nada, sobrevivir vale más que las fichas que ganarías: los rangos de call se cierran a lo bestia mientras los shoves siguen amplios. Los stacks grandes atacan, los stacks medios son los más atrapados (no los cortos), y en una burbuja de satélite foldeas todo, incluso ases, una vez que tu asiento está asegurado.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-07-24",
-  masterUpdated: "2026-07-19",
+  updated: "2026-08-11",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🫧",
@@ -113,11 +113,11 @@ El mantra del stack corto: la fold equity lo es todo. Haz shove primero y elige 
 
 **El "bubble factor" mide cuánto más te cuesta perder tu stack de lo que te ayuda ganar el mismo bote — y se traduce directamente en la equity extra que necesitas para pagar.** Un bubble factor de 1.0 significa que fichas y dinero se mueven juntos (al inicio de un torneo). Un bubble factor de 1.5 significa que ==bustear duele 1.5× más de lo que ayuda ganar==, así que necesitas una ventaja mucho mayor para meter tus fichas.
 
-Aquí va la parte útil: la equity que necesitas para quedar break-even en un call es simplemente ==bubble factor ÷ (1 + bubble factor)==.
+Aquí va la parte útil: la equity que necesitas para quedar break-even en un call es ==c · BF ÷ (P + c · BF)==, donde **c** es lo que te cuesta pagar y **P** el bote que te llevarías. Cuando arriesgas exactamente lo que puedes ganar, eso se reduce a la forma que sueles ver citada — ==BF ÷ (1 + BF)== — que es la que usa la tabla de abajo.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Bubble factor | Perder duele… | Equity que necesitas para pagar |
+| Bubble factor | Perder duele… | Equity sin dinero muerto |
 |:--|:--:|:--:|
 | 1.0 (sin presión) | igual que lo que ayuda ganar | 50% |
 | 1.3 | 1.3× | ==57%== |
@@ -127,7 +127,9 @@ Aquí va la parte útil: la equity que necesitas para quedar break-even en un ca
 
 </div>
 
-Así que un coin flip con chip-EV que tomarías al 50% se convierte en un ==fold claro== cuando tu bubble factor es 1.5 y solo tienes 50% — ahora necesitas 60%. Los bubble factors suelen alcanzar su pico en torno a ==1.5–1.7== en las burbujas de premios y de mesa final, y luego bajan una vez que estás en premios. Mete tus propios stacks y premios en la [calculadora de ICM](/en/calculator) para ver tu número real en un spot.
+Lee esa última columna como un techo, no como tu spot: los botes reales de burbuja llevan dinero muerto, y el dinero muerto empuja el requisito **hacia abajo**. Si la ciega pequeña va de jam por 10bb y tú pagas 9bb a un bote que ya tiene 12bb, con un bubble factor de 1.5 necesitas ==52.9%==, no 60% — y sin ninguna presión ICM son simples pot odds, ==42.9%==.
+
+La otra mitad es que el bubble factor depende de **quién tienes enfrente**, no de la fase. A cuatro jugadores con tres premiados, un stack medio frente al chip leader carga un bubble factor cercano a ==3.0==, mientras que ese mismo stack medio frente al jugador más corto apenas pasa de ==1.1==; con stacks iguales ronda ==1.9==, y una burbuja de mesa final a seis va de ==2.0== para arriba. Trata 1.5–1.7 como un suelo de una burbuja seria, no como un pico — y sí, bajan una vez que estás en premios. Mete tus propios stacks y premios en la [calculadora de ICM](/en/calculator) para ver tu número real en un spot.
 
 ---
 
@@ -198,7 +200,7 @@ A. No — ese es el error común. Por bubble factor, el stack medio es el más c
 
 **Q. ¿Qué es el bubble factor en póker?**
 
-A. El bubble factor mide cuánto más te cuesta perder un bote de lo que te ayuda ganar el mismo bote, en términos de dinero real (ICM). Un bubble factor de 1.0 significa que las fichas equivalen a dinero; 1.5 significa que bustear duele 1.5× más de lo que ayuda ganar. Se traduce directamente en la equity que necesitas para pagar: bubble factor ÷ (1 + bubble factor). Con un bubble factor de 1.5 necesitas un 60% para pagar, no un 50% — que es exactamente por qué un coin flip con chip-EV se convierte en un fold en la burbuja.
+A. El bubble factor mide cuánto más te cuesta perder un bote de lo que te ayuda ganar el mismo bote, en términos de dinero real (ICM). Un bubble factor de 1.0 significa que las fichas equivalen a dinero; 1.5 significa que bustear duele 1.5× más de lo que ayuda ganar. Se traduce en la equity que necesitas para pagar: c · BF ÷ (P + c · BF), para un call de c a un bote de P. Arriesgando exactamente lo que puedes ganar eso es BF ÷ (1 + BF) — un 60% con bubble factor de 1.5 — pero los botes reales llevan dinero muerto, así que un jam típico de 10bb que pagas por 9bb a un bote de 12bb pide alrededor del 53%. En ambos casos está por encima del 50% que te da un coin flip en chip-EV, y por eso los flips se convierten en folds en la burbuja.
 
 **Q. ¿Qué es el juego hand-for-hand?**
 

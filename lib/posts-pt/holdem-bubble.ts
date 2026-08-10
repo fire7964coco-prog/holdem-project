@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "A bubble é o momento logo antes do dinheiro, onde mais uma eliminação paga todo mundo. Como quebrar significa não ganhar nada, sobreviver vale mais que as fichas que você ganharia — então os ranges de call apertam muito enquanto os shoves continuam largos. Big stacks atacam, médios são os mais presos (não os short stacks), e numa bubble de satélite você folda tudo, até ases, assim que sua vaga está garantida.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-08-09",
-  masterUpdated: "2026-07-19",
+  updated: "2026-08-11",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🫧",
@@ -113,11 +113,11 @@ O mantra do short stack: fold equity é tudo. Dê shove primeiro, e escolha seu 
 
 **O "bubble factor" mede quanto perder seu stack te custa a mais do que ganhar o mesmo pote te ajuda — e se converte direto na equity extra que você precisa para pagar.** Um bubble factor de 1,0 significa que fichas e dinheiro andam juntos (no começo de um torneio). Um bubble factor de 1,5 significa que ==quebrar dói 1,5× mais do que ganhar ajuda==, então você precisa de uma vantagem muito maior para colocar suas fichas no meio.
 
-Aqui está a parte útil: a equity que você precisa para empatar num call é simplesmente ==bubble factor ÷ (1 + bubble factor)==.
+Aqui está a parte útil: a equity que você precisa para empatar num call é ==c · BF ÷ (P + c · BF)==, onde **c** é o que o call te custa e **P** é o pote que você levaria. Quando você arrisca exatamente o que pode ganhar, isso encolhe para a forma que se costuma citar — ==BF ÷ (1 + BF)== — que é a usada na tabela abaixo.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Bubble factor | Perder dói… | Equity para pagar |
+| Bubble factor | Perder dói… | Equity sem dinheiro morto |
 |:--|:--:|:--:|
 | 1,0 (sem pressão) | igual ao que ganhar ajuda | 50% |
 | 1,3 | 1,3× | ==57%== |
@@ -127,7 +127,9 @@ Aqui está a parte útil: a equity que você precisa para empatar num call é si
 
 </div>
 
-Então um cara ou coroa de chip-EV que você pegaria a 50% vira um ==fold claro== quando seu bubble factor é 1,5 e você tem só 50% — agora você precisa de 60%. Bubble factors costumam chegar ao pico em torno de ==1,5–1,7== nas bubbles do dinheiro e de final table, e depois caem de volta assim que você está no dinheiro. Coloque seus próprios stacks e premiações na [calculadora de ICM](/calculator) para ver seu número real num spot.
+Leia aquela última coluna como um teto, não como o seu spot: potes reais de bubble carregam dinheiro morto, e dinheiro morto empurra a exigência **para baixo**. Se o small blind dá jam de 10bb e você paga 9bb num pote que já tem 12bb, com bubble factor de 1,5 você precisa de ==52,9%==, não de 60% — e sem nenhuma pressão de ICM são simples pot odds, ==42,9%==.
+
+A outra metade é que o bubble factor acompanha **quem está do outro lado**, não a fase. Em quatro jogadores com três pagos, um stack médio contra o chip leader carrega um bubble factor perto de ==3,0==, enquanto esse mesmo stack médio contra o jogador mais curto mal passa de ==1,1==; stacks iguais ficam perto de ==1,9==, e uma bubble de final table com seis roda de ==2,0== para cima. Trate 1,5–1,7 como o piso de uma bubble séria, não como o pico — e sim, caem de volta assim que você está no dinheiro. Coloque seus próprios stacks e premiações na [calculadora de ICM](/calculator) para ver seu número real num spot.
 
 ---
 
