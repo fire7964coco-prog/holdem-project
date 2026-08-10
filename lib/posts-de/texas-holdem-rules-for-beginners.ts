@@ -2,21 +2,21 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "texas-holdem-rules-for-beginners",
-  title: "Texas Hold'em Regeln für Anfänger — Ablauf, Chips, Pokerhände und deine erste Strategie",
-  seoTitle: "Texas Hold'em Regeln für Anfänger — einfach erklärt",
-  desc: "Nie gespielt? So funktioniert Texas Hold'em Schritt für Schritt — Blinds, Chip-Verteilung, Pokerhände und ein Spickzettel für deinen ersten Pokerabend.",
-  tldr: "Beim Texas Hold'em bekommt jeder Spieler 2 Hole Cards, dazu kommen 5 Gemeinschaftskarten — nach vier Setzrunden gewinnt die beste Fünf-Karten-Hand.",
+  title: "Texas Hold'em Regeln für Anfänger – Ablauf, Chips, Pokerhände und deine erste Strategie",
+  seoTitle: "Texas Hold'em Regeln für Anfänger – einfach erklärt",
+  desc: "Nie gespielt? So funktioniert Texas Hold'em Schritt für Schritt – Blinds, Chip-Verteilung, Pokerhände und ein Spickzettel für deinen ersten Pokerabend.",
+  tldr: "Beim Texas Hold'em bekommt jeder Spieler 2 Hole Cards, dazu kommen 5 Gemeinschaftskarten – nach vier Setzrunden gewinnt die beste Fünf-Karten-Hand.",
   category: "rules",
   date: "2026-06-11",
   updated: "2026-08-10",
-  // 🔴 masterUpdated는 07-12 그대로 둔다 — 이 글은 「판 전체 재동기화」 보류분(드리프트 잔존)이다.
+  // 🔴 masterUpdated는 07-12 그대로 둔다 – 이 글은 「판 전체 재동기화」 보류분(드리프트 잔존)이다.
   //    남은 항목이 있는 채로 올리면 드리프트 추적이 거짓말을 한다(session-handoff §착수 전 7).
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 Min.",
   emoji: "♠️",
   image: "/images/rules-texas-holdem.webp",
-  imageAlt: "Texas-Hold'em-Grundlagen-Infografik — Hole Cards A♣ K♦ neben fünf aufgefächerten Gemeinschaftskarten A♠ K♥ Q♦ J♣ 10♠",
+  imageAlt: "Texas-Hold'em-Grundlagen-Infografik – Hole Cards A♣ K♦ neben fünf aufgefächerten Gemeinschaftskarten A♠ K♥ Q♦ J♣ 10♠",
   tags: [
     "texas holdem regeln",
     "poker regeln für anfänger",
@@ -32,26 +32,26 @@ export const POST: Post = {
   content: `
 Wenn du nach ==Texas Hold'em Regeln für Anfänger== gesucht hast, brauchst du vermutlich noch kein Casino-Regelwerk.
 
-Du willst wissen, was die Blinds sind, wann du an der Reihe bist, wie die fünf Gemeinschaftskarten funktionieren, welche Hand gewinnt — und wie viele Chips jeder bekommt, wenn ihr zu Hause spielt.
+Du willst wissen, was die Blinds sind, wann du an der Reihe bist, wie die fünf Gemeinschaftskarten funktionieren, welche Hand gewinnt – und wie viele Chips jeder bekommt, wenn ihr zu Hause spielt.
 
 Dieser Guide erklärt dir ==Texas Hold'em für Anfänger== in klarem Deutsch: die exakte Reihenfolge am Tisch, eine einfache Chip-Verteilung, die Grundlagen des Gebens und ein Spickzettel, den du neben den Tisch legen kannst.
 
-Alles hier unten kommt aus der Praxis — Küchentische, Pokerabende, Cardrooms —, nicht aus dem Regelwerk. Ich zeige dir deshalb genau die Stellen, an denen neue Spieler in echten Runden stolpern.
+Alles hier unten kommt aus der Praxis – Küchentische, Pokerabende, Cardrooms –, nicht aus dem Regelwerk. Ich zeige dir deshalb genau die Stellen, an denen neue Spieler in echten Runden stolpern.
 
 ### Texas Hold'em in 30 Sekunden
 
 1. Zwei Spieler setzen die **Blinds** (Pflichteinsätze)
 2. Jeder bekommt **2 Hole Cards** verdeckt
-3. Setzen, callen, raisen oder folden — **Preflop**
+3. Setzen, callen, raisen oder folden – **Preflop**
 4. Der Dealer deckt **3 Gemeinschaftskarten** auf (den Flop) → wieder setzen
 5. Der Dealer deckt **1 weitere Karte** auf (den Turn) → wieder setzen
 6. Der Dealer deckt **die letzte Karte** auf (den River) → letzte Setzrunde
-7. Die verbliebenen Spieler vergleichen ihre Hände — **die beste Fünf-Karten-Hand gewinnt**
+7. Die verbliebenen Spieler vergleichen ihre Hände – **die beste Fünf-Karten-Hand gewinnt**
 
 Das Wichtigste:
-- Du kannst beide Hole Cards nutzen, nur eine oder sogar keine — was immer die beste Hand ergibt
+- Du kannst beide Hole Cards nutzen, nur eine oder sogar keine – was immer die beste Hand ergibt
 - Der Dealer-Button wandert jede Hand weiter, also verschieben sich Blinds und Reihenfolge jede Runde
-- Du gewinnst ohne Showdown, wenn alle anderen folden — egal an welchem Punkt
+- Du gewinnst ohne Showdown, wenn alle anderen folden – egal an welchem Punkt
 
 ---
 
@@ -59,9 +59,9 @@ Das Wichtigste:
 
 Die Grundregeln von Texas Hold'em sind simpel, sobald du den Tisch einmal der Reihe nach durchgehst.
 
-Gespielt wird mit ==einem einzigen Blatt zu 52 Karten== — die Joker legst du beiseite. Mehr Material brauchst du nicht: Selbst am vollen Zehnertisch sind nur 20 Hole Cards, 5 Gemeinschaftskarten und 3 Burn Cards im Einsatz, zusammen 28 der 52 Karten.
+Gespielt wird mit ==einem einzigen Blatt zu 52 Karten== – die Joker legst du beiseite. Mehr Material brauchst du nicht: Selbst am vollen Zehnertisch sind nur 20 Hole Cards, 5 Gemeinschaftskarten und 3 Burn Cards im Einsatz, zusammen 28 der 52 Karten.
 
-Jede Hand beginnt mit dem Dealer-Button. Die zwei Spieler links vom Button setzen Pflichteinsätze, den **Small Blind** und den **Big Blind** — wenn dich das verwirrt, lies [was die Blinds sind und wie Small Blind und Big Blind funktionieren](/de/blog/holdem-blind-meaning). Danach bekommt jeder Spieler zwei verdeckte Karten. Das sind deine Hole Cards.
+Jede Hand beginnt mit dem Dealer-Button. Die zwei Spieler links vom Button setzen Pflichteinsätze, den **Small Blind** und den **Big Blind** – wenn dich das verwirrt, lies [was die Blinds sind und wie Small Blind und Big Blind funktionieren](/de/blog/holdem-blind-meaning). Danach bekommt jeder Spieler zwei verdeckte Karten. Das sind deine Hole Cards.
 
 Anschließend deckt der Dealer fünf gemeinsame Karten in der Tischmitte auf:
 
@@ -77,7 +77,7 @@ Anschließend deckt der Dealer fünf gemeinsame Karten in der Tischmitte auf:
 
 </div>
 
-==r:Du musst **nicht** beide Hole Cards verwenden.== Du kannst zwei, eine oder sogar null Hole Cards nutzen, wenn das Board selbst die beste Hand bildet — eine Fähigkeit, die man [Board-Lesen](/de/blog/holdem-reading-the-board) nennt.
+==r:Du musst **nicht** beide Hole Cards verwenden.== Du kannst zwei, eine oder sogar null Hole Cards nutzen, wenn das Board selbst die beste Hand bildet – eine Fähigkeit, die man [Board-Lesen](/de/blog/holdem-reading-the-board) nennt.
 
 Zum Beispiel:
 
@@ -91,9 +91,9 @@ Wenn die Pokerhände für dich noch neu sind, öffne zuerst die [Pokerhände-Rei
 
 ---
 
-## Texas Hold'em spielen — der Ablauf für Anfänger
+## Texas Hold'em spielen – der Ablauf für Anfänger
 
-Dieser Artikel gibt dir die **Anfänger-Version des Ablaufs**, damit du dich an den Tisch setzen kannst, ohne einzufrieren. Wenn du den ausführlichen Durchgang Street für Street willst — mit einer kompletten Beispielhand, Setzreihenfolge und Beispielen — lies danach den [Spielablauf beim Texas Hold'em](/de/blog/holdem-game-order "thumb:/images/blog-holdem-game-flow.webp").
+Dieser Artikel gibt dir die **Anfänger-Version des Ablaufs**, damit du dich an den Tisch setzen kannst, ohne einzufrieren. Wenn du den ausführlichen Durchgang Street für Street willst – mit einer kompletten Beispielhand, Setzreihenfolge und Beispielen – lies danach den [Spielablauf beim Texas Hold'em](/de/blog/holdem-game-order "thumb:/images/blog-holdem-game-flow.webp").
 
 | Nr. | Phase | Was Anfänger sich merken sollten |
 |------:|-------|--------------------------------|
@@ -106,15 +106,15 @@ Dieser Artikel gibt dir die **Anfänger-Version des Ablaufs**, damit du dich an 
 
 Für deine erste Session ist die Kernidee simpel: ==**Jedes Mal, wenn eine neue Street erscheint, gibt es eine weitere Setzrunde.**==
 
-![Infografik eines Texas-Hold'em-Tischs von oben vor dem Flop — jeder Spieler hält zwei verdeckte Karten, das Board ist noch leer](/images/rules-step2-preflop.webp "Texas Hold'em Schritt für Schritt — Preflop-Action nach den Blinds")
+![Infografik eines Texas-Hold'em-Tischs von oben vor dem Flop – jeder Spieler hält zwei verdeckte Karten, das Board ist noch leer](/images/rules-step2-preflop.webp "Texas Hold'em Schritt für Schritt – Preflop-Action nach den Blinds")
 
-Die ausführliche Version findest du im [Spielablauf beim Texas Hold'em — von den Blinds bis zum Showdown](/de/blog/holdem-game-order).
+Die ausführliche Version findest du im [Spielablauf beim Texas Hold'em – von den Blinds bis zum Showdown](/de/blog/holdem-game-order).
 
 ---
 
 ## Wie viele Spieler können Texas Hold'em spielen?
 
-Texas Hold'em funktioniert mit **2 bis 10 Spielern** an einem Tisch. Du brauchst keinen vollen Tisch, um anzufangen — zwei Leute reichen.
+Texas Hold'em funktioniert mit **2 bis 10 Spielern** an einem Tisch. Du brauchst keinen vollen Tisch, um anzufangen – zwei Leute reichen.
 
 | Spieler | So heißt es | Hinweise für Anfänger |
 |--------:|------------------|----------------|
@@ -122,11 +122,11 @@ Texas Hold'em funktioniert mit **2 bis 10 Spielern** an einem Tisch. Du brauchst
 | 3–6 | Short-handed (6-max) | Online am verbreitetsten; mehr Hände sind spielbar |
 | 7–10 | Full Ring (9-max) | Klassische Heimrunde/Casino; tighter spielen, öfter folden |
 
-Für die erste Heimrunde sind **4 bis 6 Spieler** der Sweet Spot — genug Action zum Lernen, wenig genug, damit die Hände zügig durchlaufen.
+Für die erste Heimrunde sind **4 bis 6 Spieler** der Sweet Spot – genug Action zum Lernen, wenig genug, damit die Hände zügig durchlaufen.
 
-==g:Wenn nur noch zwei Spieler übrig sind (oder ihr zu zweit startet), nennt man das Heads-up.== Die Regeln sind dieselben, mit einem Dreh: ==Der Button setzt den Small Blind und agiert preflop zuerst — auf Flop, Turn und River agiert dagegen der Big Blind zuerst.== Diese Umkehrung hält das Spiel fair, weil sonst ein Spieler immer als Letzter agieren würde.
+==g:Wenn nur noch zwei Spieler übrig sind (oder ihr zu zweit startet), nennt man das Heads-up.== Die Regeln sind dieselben, mit einem Dreh: ==Der Button setzt den Small Blind und agiert preflop zuerst – auf Flop, Turn und River agiert dagegen der Big Blind zuerst.== Diese Umkehrung hält das Spiel fair, weil sonst ein Spieler immer als Letzter agieren würde.
 
-Die Spielerzahl verändert auch deine Strategie — je mehr Gegner, desto wahrscheinlicher hält jemand eine starke Hand, also foldest du schwächere Blätter. Wenn du dich zwischen lockerer Cash-Game-Runde und kompetitivem Format entscheiden willst, lies [Cash Game vs Turnier](/de/blog/holdem-tournament-vs-cash-game).
+Die Spielerzahl verändert auch deine Strategie – je mehr Gegner, desto wahrscheinlicher hält jemand eine starke Hand, also foldest du schwächere Blätter. Wenn du dich zwischen lockerer Cash-Game-Runde und kompetitivem Format entscheiden willst, lies [Cash Game vs Turnier](/de/blog/holdem-tournament-vs-cash-game).
 
 ---
 
@@ -145,7 +145,7 @@ Die einfache Eselsbrücke:
 
 ==**Vor dem Flop schaust du links vom Big Blind. Nach dem Flop schaust du links vom Button.**==
 
-Genau deshalb ist ==g:der Button eine so starke Position==. ==Der Button agiert auf Flop, Turn und River meist zuletzt== — er sieht also zuerst, was alle anderen tun. Eine komplette Übersicht aller Sitzplätze — von UTG bis zum Button, 6-max vs 9-max und welche Opening-Range jeder Platz erlaubt — findest du im [Guide zu den Pokerpositionen](/de/blog/holdem-positions).
+Genau deshalb ist ==g:der Button eine so starke Position==. ==Der Button agiert auf Flop, Turn und River meist zuletzt== – er sieht also zuerst, was alle anderen tun. Eine komplette Übersicht aller Sitzplätze – von UTG bis zum Button, 6-max vs 9-max und welche Opening-Range jeder Platz erlaubt – findest du im [Guide zu den Pokerpositionen](/de/blog/holdem-positions).
 
 ---
 
@@ -176,11 +176,11 @@ Für die erste Heimrunde funktioniert dieses Setup gut:
 
 Mit 200 Chips und Blinds von 1/2 startet ==g:jeder Spieler mit 100 Big Blinds==. Das gibt Anfängern genug Spielraum zum Folden, Callen, Raisen und Flops-Anschauen, ==ohne zu schnell pleitezugehen==.
 
-### Wie viele Chips bekommt jeder — nach Spielerzahl
+### Wie viele Chips bekommt jeder – nach Spielerzahl
 
 Ein Hinweis vorweg, weil das Wort „Chips“ hier zwei Dinge meint: Die Verteilung oben sind **40 Chips als Stückzahl**, die zusammen einen **Stack im Wert von 200** ergeben. Für die Koffer-Frage zählt die Stückzahl.
 
-Die Verteilung pro Spieler bleibt gleich — was sich mit der Spielerzahl ändert, ist nur, ob dein Koffer reicht. Bei **40 Chips pro Spieler** rechnet sich das so:
+Die Verteilung pro Spieler bleibt gleich – was sich mit der Spielerzahl ändert, ist nur, ob dein Koffer reicht. Bei **40 Chips pro Spieler** rechnet sich das so:
 
 | Spieler | Chips gesamt (Stückzahl) | 200er-Koffer | 300er-Koffer | 500er-Koffer |
 |:---:|:---:|:---:|:---:|:---:|
@@ -188,12 +188,12 @@ Die Verteilung pro Spieler bleibt gleich — was sich mit der Spielerzahl änder
 | 3 | 120 | ✓ | ✓ | ✓ |
 | 4 | 160 | ✓ | ✓ | ✓ |
 | 5 | 200 | ✓ (randvoll) | ✓ | ✓ |
-| 6 | 240 | — | ✓ | ✓ |
-| 7 | 280 | — | ✓ (randvoll) | ✓ |
-| 8 | 320 | — | — | ✓ |
-| 10 | 400 | — | — | ✓ |
+| 6 | 240 | – | ✓ | ✓ |
+| 7 | 280 | – | ✓ (randvoll) | ✓ |
+| 8 | 320 | – | – | ✓ |
+| 10 | 400 | – | – | ✓ |
 
-Reicht es nicht, gehst du **nicht** auf weniger Spieler runter, sondern auf **weniger Chips pro Spieler** — 30 statt 40 — und passt die Blinds an. Ein 300er-Koffer trägt so auch zehn Leute. ==Wichtig ist das Verhältnis Stack zu Blind, nicht die Stückzahl==: 100 Big Blinds bleiben 100 Big Blinds, egal ob der Stack aus 40 oder 30 Chips besteht.
+Reicht es nicht, gehst du **nicht** auf weniger Spieler runter, sondern auf **weniger Chips pro Spieler** – 30 statt 40 – und passt die Blinds an. Ein 300er-Koffer trägt so auch zehn Leute. ==Wichtig ist das Verhältnis Stack zu Blind, nicht die Stückzahl==: 100 Big Blinds bleiben 100 Big Blinds, egal ob der Stack aus 40 oder 30 Chips besteht.
 
 ### Was ist ein Chip wert, wenn ihr um Geld spielt?
 
@@ -206,7 +206,7 @@ In der Heimrunde ist das reine Division: Buy-in geteilt durch den **Stack-Wert**
 | 20 € | 200 | 10 Cent |
 | 50 € | 200 | 25 Cent |
 
-Bei 10 € Buy-in ist der **weiße** Chip (Wert 1) damit 5 Cent wert, der **rote** (Wert 5) 25 Cent und der **blaue** (Wert 25) 1,25 €. ==r:Rechnet das einmal vor dem ersten Austeilen durch und sagt es laut==— die häufigste Streiterei in Heimrunden entsteht nicht über Regeln, sondern darüber, dass zwei Leute unterschiedliche Chip-Werte im Kopf hatten.
+Bei 10 € Buy-in ist der **weiße** Chip (Wert 1) damit 5 Cent wert, der **rote** (Wert 5) 25 Cent und der **blaue** (Wert 25) 1,25 €. ==r:Rechnet das einmal vor dem ersten Austeilen durch und sagt es laut== – die häufigste Streiterei in Heimrunden entsteht nicht über Regeln, sondern darüber, dass zwei Leute unterschiedliche Chip-Werte im Kopf hatten.
 
 ---
 
@@ -214,7 +214,7 @@ Bei 10 € Buy-in ist der **weiße** Chip (Wert 1) damit 5 Cent wert, der **rote
 
 Die Antwort hängt davon ab, ob ihr um echtes Geld spielt oder nur übt.
 
-Wenn du noch lernst, nimm zuerst Spielchips. Ziel ist, den Ablauf des Spiels zu verstehen — nicht, Druck aufzubauen.
+Wenn du noch lernst, nimm zuerst Spielchips. Ziel ist, den Ablauf des Spiels zu verstehen – nicht, Druck aufzubauen.
 
 Wenn ihr ein kleines Heim-Cash-Game spielt, wähle ein Buy-in, dessen Verlust jeder verschmerzen kann. Eine gängige Anfänger-Struktur:
 
@@ -234,15 +234,15 @@ Zum Online-Üben nutze Spielgeldtische, bis du die Setzreihenfolge erklären kan
 
 ## No-Limit, Limit oder Pot-Limit? Welches Texas Hold'em spielst du?
 
-Wenn Leute „Texas Hold'em“ sagen, meinen sie fast immer **No-Limit Hold'em (NLHE)** — das Format des WSOP Main Events und praktisch jeder Heimrunde. Kartengeben, Blinds und Handreihenfolge sind in allen drei Formaten identisch. Das Einzige, was sich ändert, ist, **wie viel du setzen darfst.**
+Wenn Leute „Texas Hold'em“ sagen, meinen sie fast immer **No-Limit Hold'em (NLHE)** – das Format des WSOP Main Events und praktisch jeder Heimrunde. Kartengeben, Blinds und Handreihenfolge sind in allen drei Formaten identisch. Das Einzige, was sich ändert, ist, **wie viel du setzen darfst.**
 
 | Format | Wie viel darfst du setzen? | Wo du es antriffst |
 |--------|-----------------------|---------------------|
-| **No-Limit (NLHE)** | Jeden Betrag bis zu all deinen Chips („All-in“) | Standard — Heimrunden, die meisten Casinos, WSOP |
+| **No-Limit (NLHE)** | Jeden Betrag bis zu all deinen Chips („All-in“) | Standard – Heimrunden, die meisten Casinos, WSOP |
 | **Fixed-Limit** | Nur feste Schritte (eine kleine Bet, auf Turn/River eine doppelte) | Ältere Casinotische; weniger große Swings |
 | **Pot-Limit** | Bis zur aktuellen Potgröße | Selten beim Hold'em; Standard bei Omaha (PLO) |
 
-Für Anfänger gilt: ==g:Geh davon aus, dass ihr No-Limit spielt, sofern niemand etwas anderes sagt.== No-Limit ist am leichtesten zu *verstehen* (setze, so viel du willst), bestraft aber schlechtes *Spiel* am härtesten — ein einziger falscher Call kann deinen ganzen Stack kosten. Genau deshalb sind der Pot-Odds-Abschnitt weiter unten und deine [Setzoptionen — Check, Call, Raise, Fold](/de/blog/holdem-betting-actions) so wichtig.
+Für Anfänger gilt: ==g:Geh davon aus, dass ihr No-Limit spielt, sofern niemand etwas anderes sagt.== No-Limit ist am leichtesten zu *verstehen* (setze, so viel du willst), bestraft aber schlechtes *Spiel* am härtesten – ein einziger falscher Call kann deinen ganzen Stack kosten. Genau deshalb sind der Pot-Odds-Abschnitt weiter unten und deine [Setzoptionen – Check, Call, Raise, Fold](/de/blog/holdem-betting-actions) so wichtig.
 
 ---
 
@@ -265,26 +265,26 @@ Hier die anfängerfreundliche Geber-Sequenz:
 
 Die Burn Card ist die oberste Karte, die vor Flop, Turn und River verdeckt beiseitegelegt wird. Sie schützt das Deck und ist im Live-Poker Standard.
 
-![Infografik eines Texas-Hold'em-Tischs von oben, während der Flop A♠ K♦ 8♥ offen in der Mitte ausgeteilt wird](/images/rules-step3-flop.webp "Kartengeben beim Texas Hold'em — der Flop erscheint nach der Preflop-Setzrunde")
+![Infografik eines Texas-Hold'em-Tischs von oben, während der Flop A♠ K♦ 8♥ offen in der Mitte ausgeteilt wird](/images/rules-step3-flop.webp "Kartengeben beim Texas Hold'em – der Flop erscheint nach der Preflop-Setzrunde")
 
 In einer lockeren Heimrunde zählt vor allem Konsistenz. Sag die Street an, halte das Board übersichtlich und dräng niemanden, während er noch überlegt.
 
 ---
 
-## Position beim Texas Hold'em — warum dein Sitzplatz alles verändert
+## Position beim Texas Hold'em – warum dein Sitzplatz alles verändert
 
-Position bedeutet: **wann du in jeder Setzrunde an der Reihe bist**. Wer später agiert, hat gesehen, was die anderen tun — und diese Information ist mehr wert, als die meisten Anfänger ahnen.
+Position bedeutet: **wann du in jeder Setzrunde an der Reihe bist**. Wer später agiert, hat gesehen, was die anderen tun – und diese Information ist mehr wert, als die meisten Anfänger ahnen.
 
 | Sitz | Name | Preflop-Reihenfolge (9-max) | Kernpunkt |
 |------|------|----------------------|-----------|
-| Frühe Position | UTG (Under the Gun) | 1. | Die meisten Spieler kommen noch — am tightesten spielen |
+| Frühe Position | UTG (Under the Gun) | 1. | Die meisten Spieler kommen noch – am tightesten spielen |
 | Mitte | MP / HJ | 4.–5. | Moderate Range, weiterhin vorsichtig |
-| Rechts neben BTN | CO (Cutoff) | 6. | Zweitbester Platz — Range erweitern |
-| Postflop zuletzt | BTN (Button) | 7. pre; **zuletzt** post | **Bester Platz** — agiert auf jeder Postflop-Street zuletzt |
-| Links vom Dealer | SB (Small Blind) | 8. pre, 1. post | Schlechtester Platz — agiert auf jeder Postflop-Street zuerst |
+| Rechts neben BTN | CO (Cutoff) | 6. | Zweitbester Platz – Range erweitern |
+| Postflop zuletzt | BTN (Button) | 7. pre; **zuletzt** post | **Bester Platz** – agiert auf jeder Postflop-Street zuletzt |
+| Links vom Dealer | SB (Small Blind) | 8. pre, 1. post | Schlechtester Platz – agiert auf jeder Postflop-Street zuerst |
 | Zwei links vom Dealer | BB (Big Blind) | Zuletzt pre (9.), 2. post | Darf preflop noch raisen; postflop out of position |
 
-==g:Der Button ist der profitabelste Platz am Tisch.== Du agierst auf Flop, Turn und River zuletzt — jeder Spieler zeigt dir also seine Handstärke, bevor du entscheiden musst. Einen kompletten Positions-Guide findest du unter [Pokerpositionen: von UTG bis Button](/de/blog/holdem-positions).
+==g:Der Button ist der profitabelste Platz am Tisch.== Du agierst auf Flop, Turn und River zuletzt – jeder Spieler zeigt dir also seine Handstärke, bevor du entscheiden musst. Einen kompletten Positions-Guide findest du unter [Pokerpositionen: von UTG bis Button](/de/blog/holdem-positions).
 
 ---
 
@@ -310,24 +310,24 @@ Gute Starthände für Anfänger:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-**Starthand-Chart für Anfänger — 4 Stufen**
+**Starthand-Chart für Anfänger – 4 Stufen**
 
 | Stufe | Hände | Wann spielen |
 |------|-------|--------------|
-| 🟥 **Premium — immer raisen** | AA, KK, QQ, JJ, AKs, AKo | Jede Position, jeder Stack |
-| 🟧 **Stark — meistens raisen** | TT, 99, AQs, AQo, AJs, KQs | Die meisten Positionen; aus UTG tighter |
-| 🟦 **Spielbar — Position entscheidet** | 88, 77, ATs, AJo, KJs, QJs, JTs | Bevorzugt späte Position (CO, BTN) |
+| 🟥 **Premium – immer raisen** | AA, KK, QQ, JJ, AKs, AKo | Jede Position, jeder Stack |
+| 🟧 **Stark – meistens raisen** | TT, 99, AQs, AQo, AJs, KQs | Die meisten Positionen; aus UTG tighter |
+| 🟦 **Spielbar – Position entscheidet** | 88, 77, ATs, AJo, KJs, QJs, JTs | Bevorzugt späte Position (CO, BTN) |
 | ⬜ **Standardmäßig folden** | Als Anfänger alles andere | Vor allem aus früher Position |
 
 **Einfache Merkregel:** Starte mit Paaren ab TT aufwärts plus AK und AQ. Das sind grob die besten 5% aller Hände. Erweitere langsam, wenn du Erfahrung sammelst.
 
 </div>
 
-Ein vollständiges Chart mit allen 169 Starthänden nach Position (von UTG bis zum Button) findest du in der [Texas-Hold'em-Starthände-Tabelle nach Position](/de/blog/holdem-starting-hands-chart). Und bevor du Starthände richtig einsetzen kannst, musst du deine [Setzoptionen — Check, Call, Raise, Fold](/de/blog/holdem-betting-actions) kennen.
+Ein vollständiges Chart mit allen 169 Starthänden nach Position (von UTG bis zum Button) findest du in der [Texas-Hold'em-Starthände-Tabelle nach Position](/de/blog/holdem-starting-hands-chart). Und bevor du Starthände richtig einsetzen kannst, musst du deine [Setzoptionen – Check, Call, Raise, Fold](/de/blog/holdem-betting-actions) kennen.
 
 ---
 
-## Pot Odds — das eine Mathe-Konzept, das Anfängern Geld spart
+## Pot Odds – das eine Mathe-Konzept, das Anfängern Geld spart
 
 Du musst kein Mathegenie sein. Du musst dir vor jedem Call nur eine Frage stellen: **Ist der Preis, den ich zahle, meine Gewinnchance wert?**
 
@@ -337,9 +337,9 @@ Stell dir vor, im Pot liegen **$100** und dein Gegner setzt **$20**. Um in der H
 
 Deine Pot Odds sind **$120 zu $20**, also **6:1**. Das heißt: Du musst mindestens **1 von 7 Malen** gewinnen (rund 14%), damit sich dieser Call lohnt.
 
-### Die 2-und-4-Regel — Wahrscheinlichkeiten im Kopf
+### Die 2-und-4-Regel – Wahrscheinlichkeiten im Kopf
 
-Wenn du eine Draw-Hand hast (z. B. vier Karten zum Flush), zähle deine **Outs** — die Karten, die deine Hand komplettieren.
+Wenn du eine Draw-Hand hast (z. B. vier Karten zum Flush), zähle deine **Outs** – die Karten, die deine Hand komplettieren.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -379,18 +379,18 @@ Die Handreihenfolge von der stärksten zur schwächsten (mit der Häufigkeit, mi
 
 | Rang | Hand | Ungefähre Häufigkeit |
 |-----:|------|-----------------------|
-| 1 | Royal Flush | 0,003% — kann Jahre auf sich warten lassen |
-| 2 | Straight Flush | 0,03% — extrem selten |
-| 3 | Vierling | 0,17% — selten; setz ihn hart |
-| 4 | Full House | 2,6% — stark und häufig genug, um damit zu rechnen |
-| 5 | Flush | 3,0% — auf den meisten Boards ein solider Gewinner |
-| 6 | Straße | 4,6% — anfällig gegen Flushes/Full Houses |
-| 7 | Drilling | 4,8% — gute Hand, aber das Board zählt |
-| 8 | Zwei Paare | 23,5% — die häufigste „starke“ Hand |
-| 9 | Paar | 43,8% — die häufigste Hand beim Showdown |
-| 10 | High Card | 17,4% — schwächste Hand beim Showdown; gewinnt meist nur, wenn auch alle anderen daneben lagen |
+| 1 | Royal Flush | 0,003% – kann Jahre auf sich warten lassen |
+| 2 | Straight Flush | 0,03% – extrem selten |
+| 3 | Vierling | 0,17% – selten; setz ihn hart |
+| 4 | Full House | 2,6% – stark und häufig genug, um damit zu rechnen |
+| 5 | Flush | 3,0% – auf den meisten Boards ein solider Gewinner |
+| 6 | Straße | 4,6% – anfällig gegen Flushes/Full Houses |
+| 7 | Drilling | 4,8% – gute Hand, aber das Board zählt |
+| 8 | Zwei Paare | 23,5% – die häufigste „starke“ Hand |
+| 9 | Paar | 43,8% – die häufigste Hand beim Showdown |
+| 10 | High Card | 17,4% – schwächste Hand beim Showdown; gewinnt meist nur, wenn auch alle anderen daneben lagen |
 
-Haben zwei Spieler denselben Handtyp, vergleicht ihr die höchsten relevanten Karten — das regeln die [Kicker- und Tiebreaker-Regeln](/de/blog/holdem-tiebreak-rules). Sind die besten fünf Karten exakt gleich, wird der Pot [geteilt](/de/blog/holdem-split-pot-rules).
+Haben zwei Spieler denselben Handtyp, vergleicht ihr die höchsten relevanten Karten – das regeln die [Kicker- und Tiebreaker-Regeln](/de/blog/holdem-tiebreak-rules). Sind die besten fünf Karten exakt gleich, wird der Pot [geteilt](/de/blog/holdem-split-pot-rules).
 
 ---
 
@@ -404,7 +404,7 @@ Du kannst beide, eine oder keine deiner Hole Cards verwenden. Die beste Fünf-Ka
 
 ### Fehler 2: Vergessen, dass sich die Reihenfolge ändert
 
-Preflop startet links vom Big Blind. Nach dem Flop startet die Action links vom Button. Beim ersten Pokerabend, den ich gegeben habe, agierten zwei Spieler auf jedem Flop außer der Reihe — wir haben einen echten Dealer-Button auf den Tisch gelegt, und die Verwirrung war innerhalb eines Orbits weg.
+Preflop startet links vom Big Blind. Nach dem Flop startet die Action links vom Button. Beim ersten Pokerabend, den ich gegeben habe, agierten zwei Spieler auf jedem Flop außer der Reihe – wir haben einen echten Dealer-Button auf den Tisch gelegt, und die Verwirrung war innerhalb eines Orbits weg.
 
 ### Fehler 3: Callen, weil „sie ja noch kommen könnte“
 
@@ -429,47 +429,47 @@ Hände spielen sich leichter, wenn du später an der Reihe bist. Bist du als Ers
 
 **Q. Wie spielt man Texas Hold'em Schritt für Schritt?**
 
-A. Blinds setzen, jedem Spieler zwei Hole Cards geben, Preflop-Setzrunde spielen, dann Flop, Turn und River aufdecken — mit einer Setzrunde nach jeder Street — und beim Showdown die besten Fünf-Karten-Hände vergleichen. Insgesamt: vier Setzrunden, fünf Gemeinschaftskarten, ein Gewinner.
+A. Blinds setzen, jedem Spieler zwei Hole Cards geben, Preflop-Setzrunde spielen, dann Flop, Turn und River aufdecken – mit einer Setzrunde nach jeder Street – und beim Showdown die besten Fünf-Karten-Hände vergleichen. Insgesamt: vier Setzrunden, fünf Gemeinschaftskarten, ein Gewinner.
 
 **Q. Mit wie vielen Karten spielt man Texas Hold'em?**
 
-A. **52 Karten** — ein französisches Blatt ohne Joker. Ausgeteilt wird nie das ganze Deck: Selbst am vollen Zehnertisch bleiben 24 Karten im Stub liegen (die Rechnung steht oben bei den Grundregeln). Mehr als ein Deck brauchst du also nie, egal wie viele mitspielen.
+A. **52 Karten** – ein französisches Blatt ohne Joker. Ausgeteilt wird nie das ganze Deck: Selbst am vollen Zehnertisch bleiben 24 Karten im Stub liegen (die Rechnung steht oben bei den Grundregeln). Mehr als ein Deck brauchst du also nie, egal wie viele mitspielen.
 
 **Q. Wie viele Karten bekommt man beim Poker?**
 
-A. Jeder Spieler bekommt genau **2 verdeckte Karten** — die Hole Cards. Mehr bekommst du die ganze Hand über nicht; alles Weitere sind Gemeinschaftskarten, die allen zugleich gehören. Deine fertige Hand besteht immer aus fünf Karten, die du dir aus deinen zwei und den fünf offenen frei zusammensuchst.
+A. Jeder Spieler bekommt genau **2 verdeckte Karten** – die Hole Cards. Mehr bekommst du die ganze Hand über nicht; alles Weitere sind Gemeinschaftskarten, die allen zugleich gehören. Deine fertige Hand besteht immer aus fünf Karten, die du dir aus deinen zwei und den fünf offenen frei zusammensuchst.
 
 **Q. Wie viele Karten werden beim Poker aufgedeckt?**
 
-A. Insgesamt **5**, und zwar in drei Schritten: 3 auf einmal (der Flop), dann 1 (der Turn), dann 1 (der River). Vor jedem dieser drei Schritte legt der Dealer zusätzlich eine Burn Card verdeckt beiseite — die wird nicht aufgedeckt und zählt für niemanden.
+A. Insgesamt **5**, und zwar in drei Schritten: 3 auf einmal (der Flop), dann 1 (der Turn), dann 1 (der River). Vor jedem dieser drei Schritte legt der Dealer zusätzlich eine Burn Card verdeckt beiseite – die wird nicht aufgedeckt und zählt für niemanden.
 
 **Q. Gibt es eine kleine Straße im Texas Hold'em?**
 
-A. Ja. A-2-3-4-5 ist eine gültige Straße und wird oft „Wheel“ genannt. Sie ist die niedrigste mögliche Straße. Das Ass kann aber nicht „herumlaufen“: J-Q-K-A-2 ist keine Straße. Das Ass zählt entweder als höchste Karte (A-K-Q-J-10) oder als niedrigste (A-2-3-4-5) — nie in der Mitte.
+A. Ja. A-2-3-4-5 ist eine gültige Straße und wird oft „Wheel“ genannt. Sie ist die niedrigste mögliche Straße. Das Ass kann aber nicht „herumlaufen“: J-Q-K-A-2 ist keine Straße. Das Ass zählt entweder als höchste Karte (A-K-Q-J-10) oder als niedrigste (A-2-3-4-5) – nie in der Mitte.
 
 **Q. Wie viele mögliche Starthände gibt es beim Texas Hold'em?**
 
-A. Es gibt 1.326 exakte Zwei-Karten-Kombinationen, aber Spieler fassen sie meist zu 169 Starthand-Typen zusammen — etwa AA, AK suited oder 76 offsuit.
+A. Es gibt 1.326 exakte Zwei-Karten-Kombinationen, aber Spieler fassen sie meist zu 169 Starthand-Typen zusammen – etwa AA, AK suited oder 76 offsuit.
 
 **Q. Was sind die Texas Hold'em Regeln in der einfachsten Version?**
 
-A. In einem Satz: Aus deinen 2 verdeckten Karten und den 5 offenen in der Tischmitte baust du die beste Fünf-Karten-Hand — die höchste gewinnt. Zwei Dinge überraschen Anfänger dabei: Du darfst beide, eine oder gar keine deiner eigenen Karten benutzen, und du brauchst die beste Hand überhaupt nicht, wenn alle anderen vorher folden — dann gehört dir der Pot, ohne dass du je eine Karte zeigst.
+A. In einem Satz: Aus deinen 2 verdeckten Karten und den 5 offenen in der Tischmitte baust du die beste Fünf-Karten-Hand – die höchste gewinnt. Zwei Dinge überraschen Anfänger dabei: Du darfst beide, eine oder gar keine deiner eigenen Karten benutzen, und du brauchst die beste Hand überhaupt nicht, wenn alle anderen vorher folden – dann gehört dir der Pot, ohne dass du je eine Karte zeigst.
 
-**Q. Was bedeuten die Blinds — einfach erklärt?**
+**Q. Was bedeuten die Blinds – einfach erklärt?**
 
 A. Die zwei Spieler links vom Dealer-Button müssen Pflichteinsätze setzen, bevor Karten gegeben werden. Der erste setzt den Small Blind, der zweite den Big Blind (meist das Doppelte). Diese Einsätze garantieren, dass immer Geld im Pot liegt, um das es sich zu kämpfen lohnt. Jeder andere Spieler muss mindestens den Big Blind mitgehen, um in der Hand zu bleiben.
 
 **Q. Kann man Texas Hold'em zu zweit spielen?**
 
-A. Ja — das heißt Heads-up und ist die schnellste Variante überhaupt. Die Regeln bleiben gleich, nur die Blind-Reihenfolge dreht sich um (die Details stehen oben unter „Wie viele Spieler können Texas Hold'em spielen?“). Praktisch heißt das: Du zahlst **jede** Hand einen Blind, sitzt also in jedem Pot und spielst deutlich weiter als am vollen Tisch — Hände, die du zu neunt sofort foldest, sind zu zweit oft ein klarer Raise.
+A. Ja – das heißt Heads-up und ist die schnellste Variante überhaupt. Die Regeln bleiben gleich, nur die Blind-Reihenfolge dreht sich um (die Details stehen oben unter „Wie viele Spieler können Texas Hold'em spielen?“). Praktisch heißt das: Du zahlst **jede** Hand einen Blind, sitzt also in jedem Pot und spielst deutlich weiter als am vollen Tisch – Hände, die du zu neunt sofort foldest, sind zu zweit oft ein klarer Raise.
 
 **Q. Was bedeutet No-Limit beim Texas Hold'em?**
 
-A. No-Limit heißt, du kannst in jeder Setzrunde jeden Betrag bis zu all deinen Chips setzen — das ist das „All-in“. Es ist das Standard- und beliebteste Format, inklusive WSOP Main Event. Limit Hold'em begrenzt jede Bet auf eine feste Größe, Pot-Limit begrenzt deine Bet auf die aktuelle Potgröße.
+A. No-Limit heißt, du kannst in jeder Setzrunde jeden Betrag bis zu all deinen Chips setzen – das ist das „All-in“. Es ist das Standard- und beliebteste Format, inklusive WSOP Main Event. Limit Hold'em begrenzt jede Bet auf eine feste Größe, Pot-Limit begrenzt deine Bet auf die aktuelle Potgröße.
 
 **Q. Wie lange dauert eine Hand Texas Hold'em?**
 
-A. Eine einzelne Hand dauert meist etwa 10 bis 60 Sekunden; ein großer Multiway-Pot mit schwierigen Entscheidungen kann mehrere Minuten laufen. Eine lockere Heimrunde über ein paar Stunden schafft Dutzende Hände — niemand muss einen ganzen Abend für ein einziges Blatt einplanen.
+A. Eine einzelne Hand dauert meist etwa 10 bis 60 Sekunden; ein großer Multiway-Pot mit schwierigen Entscheidungen kann mehrere Minuten laufen. Eine lockere Heimrunde über ein paar Stunden schafft Dutzende Hände – niemand muss einen ganzen Abend für ein einziges Blatt einplanen.
 
 ---
 
@@ -489,17 +489,17 @@ Als nächsten Schritt wiederhole die [Pokerhände-Reihenfolge im Texas Hold'em](
   <a href="/de/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Spielablauf</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Der Spielablauf beim Texas Hold'em</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Kompletter Handverlauf — von Preflop bis Showdown mit echten Beispielen</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Kompletter Handverlauf – von Preflop bis Showdown mit echten Beispielen</div>
   </a>
   <a href="/de/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Pokerhände</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Pokerhände-Reihenfolge — von der besten zur schlechtesten</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Pokerhände-Reihenfolge – von der besten zur schlechtesten</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Alle 10 Hände mit Wahrscheinlichkeiten, Beispielen und Board-Aufgaben</div>
   </a>
   <a href="/de/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Positionen</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Pokerpositionen: von UTG bis Button</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Warum der Button gewinnt — Sitzkarte und Opening-Ranges</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Warum der Button gewinnt – Sitzkarte und Opening-Ranges</div>
   </a>
   <a href="/de/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Setzen</div>

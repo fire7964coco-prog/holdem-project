@@ -3,7 +3,7 @@ import type { Post } from "../posts";
 export const POST: Post = {
   slug: "holdem-all-in-rules",
   title: "Texas Hold'em All-in-Regeln: Side Pots, Re-Raises & Showdown",
-  seoTitle: "All-in gegangen und verwirrt? — All-in-Regeln & Side Pots",
+  seoTitle: "All-in gegangen und verwirrt? – All-in-Regeln & Side Pots",
   desc: "Alle Chips reingeschoben und unsicher, was du gewinnen kannst? Texas Hold'em All-in-Regeln: Table Stakes, Side Pots, Re-Raise-Recht und Showdown-Reihenfolge.",
   tldr: "All-in gehen heißt, jeden Chip zu setzen, den du hast. Du kannst von jedem Gegner nur so viel gewinnen, wie du selbst gematcht hast (den Main Pot). Zusätzliche Einsätze größerer Stacks bilden einen Side Pot, den du nicht gewinnen kannst. Ein All-in unterhalb einer vollen Erhöhung öffnet die Setzrunde für Spieler, die bereits gehandelt haben, NICHT neu.",
   category: "rules",
@@ -21,21 +21,21 @@ export const POST: Post = {
     "poker all in showdown regeln",
   ],
   image: "/images/holdem-all-in-rules-hero.webp",
-  imageAlt: "Texas Hold'em All-in — Spieler schiebt alle Chips in die Mitte, während der Dealer Main Pot und Side Pot auf grünem Filz trennt",
+  imageAlt: "Texas Hold'em All-in – Spieler schiebt alle Chips in die Mitte, während der Dealer Main Pot und Side Pot auf grünem Filz trennt",
   content: `
 Du bist shortstacked. Du schiebst alles rein. Der Spieler hinter dir callt. Ein dritter Spieler re-raist. Der Dealer beginnt, die Chips in zwei Stapel zu trennen.
 
 Und du hast keine Ahnung, was da gerade passiert.
 
-Ich saß selbst schon an diesem Tisch. Bei meinem ersten All-in in einem Live-Cash-Game wusste ich weder, ob ich überhaupt noch etwas gewinnen konnte, noch ob der andere Spieler re-raisen durfte — nicht einmal, welcher Chipstapel eigentlich meiner war. Erklärt hat es mir niemand.
+Ich saß selbst schon an diesem Tisch. Bei meinem ersten All-in in einem Live-Cash-Game wusste ich weder, ob ich überhaupt noch etwas gewinnen konnte, noch ob der andere Spieler re-raisen durfte – nicht einmal, welcher Chipstapel eigentlich meiner war. Erklärt hat es mir niemand.
 
 ==Dieser Guide deckt jede Situation ab: Main Pots, Side Pots, Re-Raise-Recht und Showdown-Reihenfolge.== Nie wieder einfrieren, wenn der Dealer anfängt, Stacks zu zählen. (Falls der grundlegende Setzablauf noch wackelig ist, findest du ihn zuerst im [Regel-Guide für Einsteiger](/de/blog/texas-holdem-rules-for-beginners "thumb:/images/rules-texas-holdem.webp").)
 
 ## Was bedeutet „All-in“ beim Texas Hold'em?
 
-All-in gehen heißt, jeden Chip zu setzen, den du vor dir liegen hast. Sobald du committed bist, kannst du keine Chips mehr nachlegen — und niemand kann dich mehr zum Folden zwingen.
+All-in gehen heißt, jeden Chip zu setzen, den du vor dir liegen hast. Sobald du committed bist, kannst du keine Chips mehr nachlegen – und niemand kann dich mehr zum Folden zwingen.
 
-Die Grundlage ist die **Table-Stakes-Regel**: Du darfst nur die Chips setzen, die zu Beginn der Hand auf dem Tisch lagen. Du kannst nicht in die Tasche greifen, dir Geld von einem Freund leihen oder deine Uhr und die Autoschlüssel drauflegen — das ist Hollywood-Poker.
+Die Grundlage ist die **Table-Stakes-Regel**: Du darfst nur die Chips setzen, die zu Beginn der Hand auf dem Tisch lagen. Du kannst nicht in die Tasche greifen, dir Geld von einem Freund leihen oder deine Uhr und die Autoschlüssel drauflegen – das ist Hollywood-Poker.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -44,7 +44,7 @@ Die Grundlage ist die **Table-Stakes-Regel**: Du darfst nur die Chips setzen, di
 | Push / Shove / Jam | Slang dafür, All-in zu gehen |
 | Table Stakes | Du kannst nur setzen, was zu Handbeginn vor dir lag |
 | Double up | Ein All-in gewinnen und den Stack verdoppeln |
-| Main Pot (Hauptpot) | Der Pot, den jeder gewinnen kann — auch der All-in-Spieler |
+| Main Pot (Hauptpot) | Der Pot, den jeder gewinnen kann – auch der All-in-Spieler |
 | Side Pot (Nebenpot) | Chips, die nur die größeren Stacks gewinnen können; der All-in-Spieler ist ausgeschlossen |
 
 </div>
@@ -57,13 +57,13 @@ Die Grundlage ist die **Table-Stakes-Regel**: Du darfst nur die Chips setzen, di
 
 Zwei gültige Wege:
 
-**1. Mündliche Ansage** — Sag klar und deutlich „All-in“, sodass Dealer und Gegner es hören. Das ist die sicherste Methode. Einmal ausgesprochen, bist du gebunden.
+**1. Mündliche Ansage** – Sag klar und deutlich „All-in“, sodass Dealer und Gegner es hören. Das ist die sicherste Methode. Einmal ausgesprochen, bist du gebunden.
 
-**2. Alle Chips nach vorn schieben** — Schieb deinen kompletten Stack in einer einzigen, sauberen Bewegung Richtung Mitte. Chips häppchenweise nachzuschieben kann wie eine String Bet aussehen, also beweg alles auf einmal.
+**2. Alle Chips nach vorn schieben** – Schieb deinen kompletten Stack in einer einzigen, sauberen Bewegung Richtung Mitte. Chips häppchenweise nachzuschieben kann wie eine String Bet aussehen, also beweg alles auf einmal.
 
-![Texas Hold'em All-in-Showdown — ein Board mit K♠ 10♣ 7♦ 4♥ 2♣, die Chips getrennt in beschrifteten Main Pot und Side Pot](/images/holdem-all-in-declare.webp)
+![Texas Hold'em All-in-Showdown – ein Board mit K♠ 10♣ 7♦ 4♥ 2♣, die Chips getrennt in beschrifteten Main Pot und Side Pot](/images/holdem-all-in-declare.webp)
 
-==r:Schieb niemals wortlos einen einzelnen Chip nach vorn — der Dealer wertet das nur als den Wert dieses Chips, nicht als deinen kompletten Stack.== Sag immer laut „All-in“ oder beweg deinen gesamten Stack auf einmal.
+==r:Schieb niemals wortlos einen einzelnen Chip nach vorn – der Dealer wertet das nur als den Wert dieses Chips, nicht als deinen kompletten Stack.== Sag immer laut „All-in“ oder beweg deinen gesamten Stack auf einmal.
 
 ---
 
@@ -71,7 +71,7 @@ Zwei gültige Wege:
 
 Der All-in-Spieler kann nur gewinnen, was er selbst eingezahlt hat, plus den gleichen Betrag von jedem anderen Spieler, der noch im Pot ist. Alle Chips, die darüber hinaus gesetzt werden, bilden einen **Side Pot**, der ausschließlich den Spielern gehört, die ihn gefüllt haben.
 
-![Texas Hold'em All-in-Side-Pot — der Dealer trennt die Chips in Main Pot und Side Pot, während Spieler A gedeckelt ist](/images/holdem-all-in-side-pot.webp)
+![Texas Hold'em All-in-Side-Pot – der Dealer trennt die Chips in Main Pot und Side Pot, während Spieler A gedeckelt ist](/images/holdem-all-in-side-pot.webp)
 
 ### Beispiel mit 3 Spielern (Standard)
 
@@ -89,7 +89,7 @@ Der All-in-Spieler kann nur gewinnen, was er selbst eingezahlt hat, plus den gle
 
 ### Beispiel mit 4 Spielern und mehreren Stacks
 
-Hier wird es kompliziert — und genau hier steigen die meisten Anfänger aus.
+Hier wird es kompliziert – und genau hier steigen die meisten Anfänger aus.
 
 | Spieler | Stack | Geht All-in für |
 |:---|:---:|:---:|
@@ -105,7 +105,7 @@ Hier wird es kompliziert — und genau hier steigen die meisten Anfänger aus.
 | Main Pot | 100 × 4 = **400** | A, B, C, D |
 | Side Pot 1 | 100 × 3 = **300** | B, C, D (A ist gedeckelt) |
 | Side Pot 2 | 300 × 2 = **600** | C, D (A und B gedeckelt) |
-| **Gesamt** | **1.300** | — |
+| **Gesamt** | **1.300** | – |
 
 </div>
 
@@ -113,50 +113,50 @@ Die Regel: ==Jeder Side Pot entsteht aus der Differenz bis zum nächstkleineren 
 
 ---
 
-## Öffnet ein All-in die Setzrunde neu? — Die Regel, die fast alle falsch verstehen
+## Öffnet ein All-in die Setzrunde neu? – Die Regel, die fast alle falsch verstehen
 
-==r:Das ist die meistdiskutierte All-in-Regel an Live-Tischen — ich habe erlebt, wie zwei Spieler fünf Minuten darüber gestritten haben, während der ganze Tisch wartete. Beide lagen falsch.==
+==r:Das ist die meistdiskutierte All-in-Regel an Live-Tischen – ich habe erlebt, wie zwei Spieler fünf Minuten darüber gestritten haben, während der ganze Tisch wartete. Beide lagen falsch.==
 
 **Die Regel:** Geht ein Spieler für **weniger als eine [volle Erhöhung](/de/blog/holdem-betting-actions)** All-in, öffnet dieses All-in die Setzrunde für Spieler, die in dieser Runde bereits gehandelt haben, NICHT neu.
 
-![Poker-Re-Raise-Regel nach All-in — Spieler C geht für weniger als eine volle Erhöhung All-in, Spieler A kann nur callen oder folden](/images/holdem-all-in-reraise-rule.webp)
+![Poker-Re-Raise-Regel nach All-in – Spieler C geht für weniger als eine volle Erhöhung All-in, Spieler A kann nur callen oder folden](/images/holdem-all-in-reraise-rule.webp)
 
 **Beispiel:**
 
 Blinds $1/$2. Vier Spieler sehen den Flop.
 
 1. Spieler A setzt $10.
-2. Spieler B geht für **$14** All-in (nur $4 mehr als As Einsatz von $10 — keine volle Erhöhung, dafür wären mindestens $20 nötig).
+2. Spieler B geht für **$14** All-in (nur $4 mehr als As Einsatz von $10 – keine volle Erhöhung, dafür wären mindestens $20 nötig).
 
 Was passiert mit Spieler A und mit Spieler C, der noch nicht gehandelt hat?
 
-- Spieler A hat bereits gehandelt ($10 gesetzt) und steht jetzt nur vor einer unvollständigen Erhöhung. Weil Bs All-in von $14 **weniger als eine volle Erhöhung** ist, wird die Setzrunde für Spieler A NICHT neu geöffnet. ==A kann nur callen oder folden — re-raisen ist nicht erlaubt.==
-- Spieler C hat noch nicht gehandelt — **Spieler C darf ganz normal erhöhen**.
+- Spieler A hat bereits gehandelt ($10 gesetzt) und steht jetzt nur vor einer unvollständigen Erhöhung. Weil Bs All-in von $14 **weniger als eine volle Erhöhung** ist, wird die Setzrunde für Spieler A NICHT neu geöffnet. ==A kann nur callen oder folden – re-raisen ist nicht erlaubt.==
+- Spieler C hat noch nicht gehandelt – **Spieler C darf ganz normal erhöhen**.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | All-in-Betrag | Volle Erhöhung? | Öffnet die Setzrunde neu? |
 |--------------|-------------|-----------------|
-| Weniger als eine volle Erhöhung | Nein | Nein — wer bereits gehandelt hat, kann nur callen oder folden |
-| Volle Erhöhung oder mehr | Ja | Ja — alle Spieler dürfen erneut re-raisen |
+| Weniger als eine volle Erhöhung | Nein | Nein – wer bereits gehandelt hat, kann nur callen oder folden |
+| Volle Erhöhung oder mehr | Ja | Ja – alle Spieler dürfen erneut re-raisen |
 
 </div>
 
-Warum gibt es diese Regel? Sie schützt Spieler davor, durch Teil-All-ins in immer größere Erhöhungen gezwungen zu werden. Eine volle Erhöhung signalisiert echte Aggression — ein Shortstack-All-in für ein paar Krümel nicht.
+Warum gibt es diese Regel? Sie schützt Spieler davor, durch Teil-All-ins in immer größere Erhöhungen gezwungen zu werden. Eine volle Erhöhung signalisiert echte Aggression – ein Shortstack-All-in für ein paar Krümel nicht.
 
 ### Fortgeschrittener Fall: Was, wenn mehrere Spieler kurz All-in gehen?
 
-An dieser Variante scheitern selbst Regulars. Mehrere kurze All-ins können sich zu einer vollen Erhöhung **aufsummieren** — und erreichen ihre kombinierten Erhöhungsschritte die Schwelle, wird die Setzrunde für Spieler, die bereits gehandelt haben, neu geöffnet.
+An dieser Variante scheitern selbst Regulars. Mehrere kurze All-ins können sich zu einer vollen Erhöhung **aufsummieren** – und erreichen ihre kombinierten Erhöhungsschritte die Schwelle, wird die Setzrunde für Spieler, die bereits gehandelt haben, neu geöffnet.
 
 Das ist die offizielle TDA-Regel zum „Re-opening the Bet“, und die meisten Kartenräume folgen ihr.
 
 **Beispiel (Blinds $1/$2, am Flop):**
 
 1. Spieler A setzt $10.
-2. Spieler B geht für **$14** All-in (+$4 Erhöhungsschritt — allein keine volle Erhöhung)
-3. Spieler C geht für **$21** All-in (+$7 Erhöhungsschritt — allein keine volle Erhöhung)
+2. Spieler B geht für **$14** All-in (+$4 Erhöhungsschritt – allein keine volle Erhöhung)
+3. Spieler C geht für **$21** All-in (+$7 Erhöhungsschritt – allein keine volle Erhöhung)
 
-Kombinierte Erhöhungsschritte: $4 + $7 = **$11** — das erreicht die Mindesterhöhung von $10.
+Kombinierte Erhöhungsschritte: $4 + $7 = **$11** – das erreicht die Mindesterhöhung von $10.
 
 **Ergebnis: Die Setzrunde wird für Spieler A NEU GEÖFFNET.** A darf folden, callen oder re-raisen, obwohl weder B noch C für sich genommen eine volle Erhöhung gemacht hat.
 
@@ -164,22 +164,22 @@ Kombinierte Erhöhungsschritte: $4 + $7 = **$11** — das erreicht die Mindester
 
 | Bs All-in | Cs All-in | Kombinierter Erhöhungsschritt | Neu geöffnet für A? |
 |:---|:---:|:---|:---|
-| $14 (+$4) | $18 (+$4) | $8 — unter $10 | ❌ Nein |
-| $14 (+$4) | $21 (+$7) | $11 — erreicht $10 | ✅ Ja |
-| $15 (+$5) | $24 (+$9) | $14 — erreicht $10 | ✅ Ja |
+| $14 (+$4) | $18 (+$4) | $8 – unter $10 | ❌ Nein |
+| $14 (+$4) | $21 (+$7) | $11 – erreicht $10 | ✅ Ja |
+| $15 (+$5) | $24 (+$9) | $14 – erreicht $10 | ✅ Ja |
 
 </div>
 
-Die Mindesterhöhung bemisst sich immer an der *letzten vollen gültigen Bet oder Erhöhung* — nicht an irgendeiner kumulierten Gesamtsumme.
+Die Mindesterhöhung bemisst sich immer an der *letzten vollen gültigen Bet oder Erhöhung* – nicht an irgendeiner kumulierten Gesamtsumme.
 
-### Schnelle Entscheidungshilfe — Öffnet dieses All-in die Setzrunde neu?
+### Schnelle Entscheidungshilfe – Öffnet dieses All-in die Setzrunde neu?
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Situation | Neu geöffnet für Spieler, die bereits gehandelt haben? |
 |---|---|
-| Einzelnes All-in < volle Erhöhung | ❌ Nein — nur callen oder folden |
-| Einzelnes All-in ≥ volle Erhöhung | ✅ Ja — alle dürfen re-raisen |
+| Einzelnes All-in < volle Erhöhung | ❌ Nein – nur callen oder folden |
+| Einzelnes All-in ≥ volle Erhöhung | ✅ Ja – alle dürfen re-raisen |
 | Mehrere kurze All-ins, kombiniert < volle Erhöhung | ❌ Nein |
 | Mehrere kurze All-ins, kombiniert ≥ volle Erhöhung | ✅ Ja |
 | Spieler, der noch NICHT gehandelt hat | ✅ Darf immer erhöhen (unabhängig davon) |
@@ -194,18 +194,18 @@ Wenn alle Setzrunden abgeschlossen sind und ein Spieler All-in ist, läuft der S
 
 1. **Die Karten werden aufgedeckt.** In Turnieren werden alle am All-in beteiligten Hände in der Regel offen hingelegt, sobald keine Einsätze mehr möglich sind. In Cash Games gilt zuerst die übliche [Showdown-Regel des letzten Aggressors](/de/blog/holdem-showdown-rules), danach zeigen die All-in-Spieler.
 2. **Side Pots werden zuerst vergeben.** Der Dealer löst den zuletzt entstandenen Side Pot zuerst auf und arbeitet sich dann rückwärts bis zum Main Pot vor.
-3. **Cards speak — die Karten sprechen.** Die beste Hand gewinnt jeden Pot, für den sie berechtigt ist — egal, was die Spieler ansagen.
+3. **Cards speak – die Karten sprechen.** Die beste Hand gewinnt jeden Pot, für den sie berechtigt ist – egal, was die Spieler ansagen.
 4. **Mehrere Gewinner sind möglich.** Spieler A kann den Main Pot gewinnen und Spieler B den Side Pot. Keiner bekommt alles, nur weil er „seinen“ Pot gewonnen hat.
 
 ==g:Ein Spieler kann den Main Pot gewinnen und gleichzeitig den Side Pot verlieren. Beide Ergebnisse sind völlig regulär.==
 
-**Sonderfall:** Bleibt in einem Side Pot nur ein einziger Spieler übrig (alle anderen haben gefoldet), bekommt dieser Spieler die Chips sofort zurück — für diesen Pot ist kein Showdown nötig.
+**Sonderfall:** Bleibt in einem Side Pot nur ein einziger Spieler übrig (alle anderen haben gefoldet), bekommt dieser Spieler die Chips sofort zurück – für diesen Pot ist kein Showdown nötig.
 
 ---
 
-## Was passiert, wenn du das All-in falsch spielst? — 5 Fehler, die du vermeiden musst
+## Was passiert, wenn du das All-in falsch spielst? – 5 Fehler, die du vermeiden musst
 
-Wenn du genug All-in-Pots gespielt hast, merkst du: Das Chaos kommt fast immer aus fünf ganz bestimmten Missverständnissen — meist nicht aus der Mathematik, sondern aus den Regeln rund um Pot-Berechtigung, Re-Raise-Recht und Table Stakes.
+Wenn du genug All-in-Pots gespielt hast, merkst du: Das Chaos kommt fast immer aus fünf ganz bestimmten Missverständnissen – meist nicht aus der Mathematik, sondern aus den Regeln rund um Pot-Berechtigung, Re-Raise-Recht und Table Stakes.
 
 ### Fehler 1: Glauben, der All-in-Spieler könne den Side Pot gewinnen
 Kann er nicht. Sobald der All-in-Spieler gedeckelt ist, gehören alle zusätzlichen Chips der größeren Stacks zu einem Pot, auf den er keinerlei Anspruch hat.
@@ -217,10 +217,10 @@ Ein Teil-All-in von Spieler C gibt Spieler A keine zweite Chance zum Re-Raise. W
 Table Stakes. Was auf dem Tisch liegt, ist alles, was du setzen kannst. Bist du für $80 All-in und der Pot beträgt $400, kannst du von jedem Caller trotzdem nur $80 gewinnen.
 
 ### Fehler 4: Die Hand zu schnell mucken
-Du bist für den Main Pot All-in. Zwei andere Spieler kämpfen um den Side Pot. Ich habe einmal gesehen, wie ein Shortstack seine Karten wegwarf, sobald der Showdown um den Side Pot gegen ihn lief — er hatte vergessen, dass er in diesem Pot gar nicht drin war und seine Hand für den Main Pot noch live war. Die Chips waren in dem Moment weg, in dem die Karten im Muck landeten. Muck nicht — deine Hand ist für den Main Pot noch live. ==Warte immer, bis der Dealer jeden Pot aufgelöst hat, bevor du deine Karten anfasst.==
+Du bist für den Main Pot All-in. Zwei andere Spieler kämpfen um den Side Pot. Ich habe einmal gesehen, wie ein Shortstack seine Karten wegwarf, sobald der Showdown um den Side Pot gegen ihn lief – er hatte vergessen, dass er in diesem Pot gar nicht drin war und seine Hand für den Main Pot noch live war. Die Chips waren in dem Moment weg, in dem die Karten im Muck landeten. Muck nicht – deine Hand ist für den Main Pot noch live. ==Warte immer, bis der Dealer jeden Pot aufgelöst hat, bevor du deine Karten anfasst.==
 
 ### Fehler 5: Aus Frust All-in gehen
-Das All-in ist der mächtigste Zug am Tisch. Es zwingt Gegner in Alles-oder-nichts-Entscheidungen. Diese Macht verpufft, wenn du wahllos alles reinschiebst. Setz es im richtigen Moment ein — als Shortstack-Druckmittel, mit Value-Händen, die gecallt werden sollen, oder als Bluff mit echter Fold Equity.
+Das All-in ist der mächtigste Zug am Tisch. Es zwingt Gegner in Alles-oder-nichts-Entscheidungen. Diese Macht verpufft, wenn du wahllos alles reinschiebst. Setz es im richtigen Moment ein – als Shortstack-Druckmittel, mit Value-Händen, die gecallt werden sollen, oder als Bluff mit echter Fold Equity.
 
 ---
 
@@ -233,7 +233,7 @@ Das All-in ist der mächtigste Zug am Tisch. Es zwingt Gegner in Alles-oder-nich
 
 **Q. Kann man für weniger als den Big Blind All-in gehen?**
 
-A. Ja. Sitzt du mit weniger Chips als dem Big Blind am Tisch, bist du automatisch für alles All-in, was du hast, sobald die Blinds zu dir kommen. Die anderen Spieler zahlen weiterhin den vollen Big Blind — alles über deinem Beitrag wandert in einen Side Pot.
+A. Ja. Sitzt du mit weniger Chips als dem Big Blind am Tisch, bist du automatisch für alles All-in, was du hast, sobald die Blinds zu dir kommen. Die anderen Spieler zahlen weiterhin den vollen Big Blind – alles über deinem Beitrag wandert in einen Side Pot.
 
 **Q. Was passiert, wenn du das All-in gewinnst, aber den Side Pot verlierst?**
 
@@ -241,7 +241,7 @@ A. Du bekommst den Main Pot (das, was du von jedem Spieler gematcht hast), und d
 
 **Q. Müssen beim All-in die Karten gezeigt werden?**
 
-A. In Turnieren ja — sobald mit einem All-in keine Einsätze mehr möglich sind, werden alle beteiligten Hände in der Regel offen hingelegt. In Live-Cash-Games gelten die üblichen Showdown-Regeln: Der letzte Aggressor zeigt zuerst, danach zeigen oder mucken die anderen.
+A. In Turnieren ja – sobald mit einem All-in keine Einsätze mehr möglich sind, werden alle beteiligten Hände in der Regel offen hingelegt. In Live-Cash-Games gelten die üblichen Showdown-Regeln: Der letzte Aggressor zeigt zuerst, danach zeigen oder mucken die anderen.
 
 **Q. Kann man bei einem Poker-All-in „run it twice“ spielen?**
 
@@ -249,15 +249,15 @@ A. Run it twice (die restlichen Gemeinschaftskarten zweimal austeilen und den Po
 
 **Q. Was genau ist die „Table-Stakes“-Regel?**
 
-A. Table Stakes bedeutet: Du darfst nur Chips setzen, die zu Beginn der Hand vor dir lagen. Während einer laufenden Hand kannst du kein Geld nachlegen. Das schützt beide Seiten — du kannst nie gezwungen werden, mehr als deinen Stack zu riskieren, und Gegner können nicht plötzlich mehr setzen, als du abdecken kannst.
+A. Table Stakes bedeutet: Du darfst nur Chips setzen, die zu Beginn der Hand vor dir lagen. Während einer laufenden Hand kannst du kein Geld nachlegen. Das schützt beide Seiten – du kannst nie gezwungen werden, mehr als deinen Stack zu riskieren, und Gegner können nicht plötzlich mehr setzen, als du abdecken kannst.
 
-**Q. Wenn zwei Spieler für unterschiedliche Beträge All-in gehen — wer zeigt zuerst?**
+**Q. Wenn zwei Spieler für unterschiedliche Beträge All-in gehen – wer zeigt zuerst?**
 
-A. Das letzte All-in, das eine Bet oder ein Raise war, gilt als letzte aggressive Aktion und zeigt zuerst. Ein All-in, das für weniger nur callt, ist nicht aggressiv — dann zeigt der ursprüngliche Setzer zuerst. In Cash Games darf der Caller bei einem gecallten All-in ohne weitere Action mucken, wenn er nach dem Aufdecken der All-in-Hand verloren hat (in Turnieren bleiben alle beteiligten Hände offen).
+A. Das letzte All-in, das eine Bet oder ein Raise war, gilt als letzte aggressive Aktion und zeigt zuerst. Ein All-in, das für weniger nur callt, ist nicht aggressiv – dann zeigt der ursprüngliche Setzer zuerst. In Cash Games darf der Caller bei einem gecallten All-in ohne weitere Action mucken, wenn er nach dem Aufdecken der All-in-Hand verloren hat (in Turnieren bleiben alle beteiligten Hände offen).
 
 **Q. Unterscheiden sich die All-in-Regeln zwischen Turnier und Cash Game?**
 
-A. Die Kernregeln sind identisch, aber es gibt zwei praktische Unterschiede. Erstens: In Turnieren werden alle am All-in beteiligten Hände offen hingelegt, sobald keine Einsätze mehr möglich sind (TDA-Regel 16) — mucken vor dem Showdown ist nicht erlaubt. In Cash Games gilt die übliche Showdown-Reihenfolge, und Spieler dürfen mucken. Zweitens: Run it twice ist in Cash Games verbreitet (wenn beide Spieler zustimmen), in Turnieren aber grundsätzlich nicht gestattet.
+A. Die Kernregeln sind identisch, aber es gibt zwei praktische Unterschiede. Erstens: In Turnieren werden alle am All-in beteiligten Hände offen hingelegt, sobald keine Einsätze mehr möglich sind (TDA-Regel 16) – mucken vor dem Showdown ist nicht erlaubt. In Cash Games gilt die übliche Showdown-Reihenfolge, und Spieler dürfen mucken. Zweitens: Run it twice ist in Cash Games verbreitet (wenn beide Spieler zustimmen), in Turnieren aber grundsätzlich nicht gestattet.
 
 ---
 

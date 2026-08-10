@@ -2,19 +2,19 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "apt-incheon-2026-guide",
-  title: "APT Incheon 2026 — Poker-Festival + Korea-Reiseguide",
+  title: "APT Incheon 2026 – Poker-Festival + Korea-Reiseguide",
   seoTitle: "Für Poker nach Korea? APT Incheon 2026 im Paradise City + Seoul in 3 Tagen",
-  desc: "APT Incheon 2026 — 7.–16. Aug, Paradise City Casino nahe Flughafen Incheon. $2,7 Mio. GTD, Main Event ~$1.703. Online-Qualifikation seit 7. Aug beendet — rein kommt man nur noch vor Ort. Seoul-Guide.",
-  tldr: "Die APT Incheon 2026 läuft vom 7.–16. Aug im Paradise City Casino, Incheon — 10 Min mit dem kostenlosen Shuttle vom Terminal 1. Main Event: KRW 2.500.000 (~$1.703) Buy-in, $1M GTD. Natural8s Online-Qualifikationen vergaben insgesamt 74 Seats, doch das $35-Mega und die OnLive-Day-1-Route endeten beide am 2. August: die letzte Route, $20 Step → $200 Mega, lief am 7. August aus — die Online-Qualifikation ist damit beendet. Nur für ausländische Staatsbürger (koreanische Bürger ohne Wohnsitz im Ausland dürfen nicht rein). Seoul ist ~1 Stunde entfernt und eine der besten Städte Asiens für Essen, Kultur und Nachtleben.",
+  desc: "APT Incheon 2026 – 7.–16. Aug, Paradise City Casino nahe Flughafen Incheon. $2,7 Mio. GTD, Main Event ~$1.703. Online-Qualifikation seit 7. Aug beendet – rein kommt man nur noch vor Ort. Seoul-Guide.",
+  tldr: "Die APT Incheon 2026 läuft vom 7.–16. Aug im Paradise City Casino, Incheon – 10 Min mit dem kostenlosen Shuttle vom Terminal 1. Main Event: KRW 2.500.000 (~$1.703) Buy-in, $1M GTD. Natural8s Online-Qualifikationen vergaben insgesamt 74 Seats, doch das $35-Mega und die OnLive-Day-1-Route endeten beide am 2. August: die letzte Route, $20 Step → $200 Mega, lief am 7. August aus – die Online-Qualifikation ist damit beendet. Nur für ausländische Staatsbürger (koreanische Bürger ohne Wohnsitz im Ausland dürfen nicht rein). Seoul ist ~1 Stunde entfernt und eine der besten Städte Asiens für Essen, Kultur und Nachtleben.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-09",
+  updated: "2026-08-10",
   masterUpdated: "2026-07-28",
   keepImagesInBody: true,
   readTime: "16 Min.",
   emoji: "🇰🇷",
   image: "/images/apt-incheon-2026-guide-hero.webp",
-  imageAlt: "APT Incheon 2026 im Paradise City — ein edler Poker-Turniersaal bei Nacht mit grünen Filztischen, Chip-Stacks und der Skyline des Hafens von Incheon durch bodentiefe Fenster",
+  imageAlt: "APT Incheon 2026 im Paradise City – ein edler Poker-Turniersaal bei Nacht mit grünen Filztischen, Chip-Stacks und der Skyline des Hafens von Incheon durch bodentiefe Fenster",
   tags: [
     "APT Incheon 2026",
     "Korea Pokerturnier 2026",
@@ -28,14 +28,14 @@ export const POST: Post = {
   content: `
 Seoul steht auf jeder Reiseliste, seit Parasite den Oscar gewann, Squid Game jedes Gespräch übernahm und BTS zum globalen Phänomen wurde. Jetzt gibt es einen Grund mehr, den Flug zu buchen: ==**eines der größten Poker-Festivals Asiens läuft direkt neben dem Incheon International Airport**==.
 
-APT Incheon 2026. 7.–16. August. Paradise City Casino. $2,7 Millionen an garantierten Preispools. Und wenn die Karten weg sind — Bibimbap, Nächte am Han-Fluss, Palastspaziergänge und koreanisches Fried Chicken bis 4 Uhr morgens.
+APT Incheon 2026. 7.–16. August. Paradise City Casino. $2,7 Millionen an garantierten Preispools. Und wenn die Karten weg sind – Bibimbap, Nächte am Han-Fluss, Palastspaziergänge und koreanisches Fried Chicken bis 4 Uhr morgens.
 
-Die Pokerreise und die Korea-Reise sind dieselbe Reise. ==g:Paradise City ist 10 Minuten vom Flughafen entfernt, und Seoul liegt 1 Stunde weit mit der U-Bahn.== Du kannst nur fürs Casino kommen, nur für die Sightseeing-Tour oder beides machen — die Lage macht es so oder so leicht.
+Die Pokerreise und die Korea-Reise sind dieselbe Reise. ==g:Paradise City ist 10 Minuten vom Flughafen entfernt, und Seoul liegt 1 Stunde weit mit der U-Bahn.== Du kannst nur fürs Casino kommen, nur für die Sightseeing-Tour oder beides machen – die Lage macht es so oder so leicht.
 
 ---
 
 > **Kurze Antwort**
-> Die APT Incheon 2026 läuft ==**7.–16. Aug**== im Paradise City Casino, Incheon. Das Resort liegt ==g:10 Min mit dem kostenlosen Shuttle vom Terminal 1 des Flughafens Incheon== — fährt alle 30 Min, gratis. Main-Event-Buy-in: ==**KRW 2.500.000 (~$1.703)**==, $1M garantiert. Step-Satellites starten ab ==g:**$3,50 via Natural8**==. ==r:Das $35-Mega und OnLive endeten am 2. August, die letzte Route ($20 Step → $200 Mega) am 7. August==. ==g:**Die Online-Qualifikation ist beendet — rein kommt man jetzt nur noch über die Anmeldung vor Ort.**== Das Casino ist ==r:nur für ausländische Staatsbürger== — koreanische Bürger ohne Wohnsitz im Ausland dürfen nicht rein.
+> Die APT Incheon 2026 läuft ==**7.–16. Aug**== im Paradise City Casino, Incheon. Das Resort liegt ==g:10 Min mit dem kostenlosen Shuttle vom Terminal 1 des Flughafens Incheon== – fährt alle 30 Min, gratis. Main-Event-Buy-in: ==**KRW 2.500.000 (~$1.703)**==, $1M garantiert. Step-Satellites starten ab ==g:**$3,50 via Natural8**==. ==r:Das $35-Mega und OnLive endeten am 2. August, die letzte Route ($20 Step → $200 Mega) am 7. August==. ==g:**Die Online-Qualifikation ist beendet – rein kommt man jetzt nur noch über die Anmeldung vor Ort.**== Das Casino ist ==r:nur für ausländische Staatsbürger== – koreanische Bürger ohne Wohnsitz im Ausland dürfen nicht rein.
 
 ---
 
@@ -44,18 +44,18 @@ Die Pokerreise und die Korea-Reise sind dieselbe Reise. ==g:Paradise City ist 10
 Vor dem Poker: Südkorea ist still und leise zu einem der besten Reiseländer Asiens geworden, und der Rest der Welt merkt es schnell.
 
 - **Sicherheit:** Seoul rangiert durchgehend als eine der sichersten Städte weltweit. Um 3 Uhr nachts allein zu laufen ist für Einheimische wie Touristen ganz normal.
-- **Essen:** Seouls Streetfood, BBQ-Kultur und Michelin-Sterne-Restaurants messen sich mit jeder Food-Hauptstadt der Welt — zum halben Preis.
+- **Essen:** Seouls Streetfood, BBQ-Kultur und Michelin-Sterne-Restaurants messen sich mit jeder Food-Hauptstadt der Welt – zum halben Preis.
 - **Nahverkehr:** Das U-Bahn-System ist günstiger, sauberer und zuverlässiger als in den meisten Städten. Eine T-money-Karte regelt alles.
 - **K-Kultur:** Der Gyeongbokgung-Palast, das Bukchon Hanok Village und die Live-Musik-Szene in Hongdae sind echte Weltklasse-Kulturerlebnisse.
-- **Kosten:** Verglichen mit Tokio, Hongkong oder Sydney ist Seoul bemerkenswert erschwinglich — ein komplettes Korean-BBQ-Dinner mit Getränken kostet unter $20 pro Person.
+- **Kosten:** Verglichen mit Tokio, Hongkong oder Sydney ist Seoul bemerkenswert erschwinglich – ein komplettes Korean-BBQ-Dinner mit Getränken kostet unter $20 pro Person.
 
 Und für internationale Besucher: ==g:Die meisten westlichen Passinhaber reisen visumfrei ein oder über ein kostenloses K-ETA (elektronische Reisegenehmigung), das online in Minuten beantragt ist.==
 
-**Und ein Grund, der nur für dieses Jahr gilt.** Die APT-Ankündigung sagt es unmissverständlich: *"with the APT turning twenty in 2026"* — die Tour wird 2026 zwanzig. Gegründet wurde sie 2006, als Antanas "Tony G" Guoga das erste Main Event in Singapur gewann. Die Jubiläumssaison endet mit der APT Championship in Taipeh, und genau deshalb **wiegen die Championship-Seats, die in Incheon vergeben werden, dieses Jahr schwerer als sonst**.
+**Und ein Grund, der nur für dieses Jahr gilt.** Die APT-Ankündigung sagt es unmissverständlich: *„with the APT turning twenty in 2026“* – die Tour wird 2026 zwanzig. Gegründet wurde sie 2006, als Antanas „Tony G“ Guoga das erste Main Event in Singapur gewann. Die Jubiläumssaison endet mit der APT Championship in Taipeh, und genau deshalb **wiegen die Championship-Seats, die in Incheon vergeben werden, dieses Jahr schwerer als sonst**.
 
 ---
 
-## APT Incheon 2026 — Das Turnier auf einen Blick
+## APT Incheon 2026 – Das Turnier auf einen Blick
 
 <div style="overflow-x:auto;margin:20px 0">
 
@@ -66,9 +66,9 @@ Und für internationale Besucher: ==g:Die meisten westlichen Passinhaber reisen 
 | **Gesamtgarantie** | ==g:**Über KRW 4 Milliarden (~$2,7M USD)**== |
 | **Main-Event-Buy-in** | KRW 2.500.000 ==**($1.703 USD)**== |
 | **Main Event GTD** | ==g:KRW 1.500.000.000 (~$1M USD)== |
-| **Online-Qualifikation** | ==r:**Beendet — die letzte Route ($20 Step → $200 Mega) endete am 7. Aug**== |
+| **Online-Qualifikation** | ==r:**Beendet – die letzte Route ($20 Step → $200 Mega) endete am 7. Aug**== |
 | **Sponsor** | Natural8 |
-| **Wer darf spielen** | ==r:Nur ausländische Staatsbürger — koreanische Bürger ohne Wohnsitz im Ausland dürfen nicht rein== |
+| **Wer darf spielen** | ==r:Nur ausländische Staatsbürger – koreanische Bürger ohne Wohnsitz im Ausland dürfen nicht rein== |
 | **Altersvorgabe** | 19+ mit gültigem Lichtbildausweis |
 | **Registrierung** | registrations@apt.poker |
 
@@ -86,16 +86,16 @@ Und für internationale Besucher: ==g:Die meisten westlichen Passinhaber reisen 
 | Mystery Bounty Hunter | 8.–9. Aug | ~$610 | ~$204K |
 | APT Super High Roller | 9.–10. Aug | ==r:~$10.200== | ~$340K |
 | ==**APT Main Event**== | ==**9.–15. Aug**== | ==**~$1.703**== | ==g:**~$1M**== |
-| Superstar Challenge | 14.–15. Aug | ~$23.800 | — |
+| Superstar Challenge | 14.–15. Aug | ~$23.800 | – |
 | Zodiac Classic | 13.–14. Aug | ~$2.000 | ~$340K |
 | Mini Main Event | 14.–16. Aug | ~$610 | ~$272K |
 | APT High Roller | 15.–16. Aug | ~$3.400 | ~$340K |
 | Ultra Stack | 15.–16. Aug | ~$477 | ~$102K |
-| Micro Main Event | 16. Aug | ~$270 | — |
+| Micro Main Event | 16. Aug | ~$270 | – |
 
 </div>
 
-**Was die APT Incheon einzigartig macht:** Der Plan bietet Formate, die du bei WPT oder EPT nicht findest — "Choose Your Own Adventure" (der Big Blind wählt das Spiel), Omaha 21, ein 12-Game-Stud-Mix und ==g:sieben Women's Events inklusive eines eigenen Women's Main Event — mehr, als die meisten großen Touren in einer ganzen Saison anbieten==. Wenn du den ewig gleichen NLHE-Grind satt hast, ist das das Festival dafür.
+**Was die APT Incheon einzigartig macht:** Der Plan bietet Formate, die du bei WPT oder EPT nicht findest – „Choose Your Own Adventure“ (der Big Blind wählt das Spiel), Omaha 21, ein 12-Game-Stud-Mix und ==g:sieben Women's Events inklusive eines eigenen Women's Main Event – mehr, als die meisten großen Touren in einer ganzen Saison anbieten==. Wenn du den ewig gleichen NLHE-Grind satt hast, ist das das Festival dafür.
 
 ---
 
@@ -103,7 +103,7 @@ Und für internationale Besucher: ==g:Die meisten westlichen Passinhaber reisen 
 
 ## Was sind die APT-Championship-Seats wert?
 
-Über das gesamte Festival werden **neun Seats für die APT Championship (APTC) Taipeh 2026** vergeben — jeder im Wert von **$10.000**. Die meisten Berichte erwähnen nur "drei Seats im Main Event". Das ist unvollständig, und der Unterschied entscheidet mit, in welche Events du überhaupt einsteigen solltest.
+Über das gesamte Festival werden **neun Seats für die APT Championship (APTC) Taipeh 2026** vergeben – jeder im Wert von **$10.000**. Die meisten Berichte erwähnen nur „drei Seats im Main Event“. Das ist unvollständig, und der Unterschied entscheidet mit, in welche Events du überhaupt einsteigen solltest.
 
 <div style="overflow-x:auto;margin:20px 0">
 
@@ -120,13 +120,13 @@ Und für internationale Besucher: ==g:Die meisten westlichen Passinhaber reisen 
 
 </div>
 
-==g:Schau dir die günstigste Zeile an.== Im **Mini Main Event für ~$610** steckt ein kompletter $10.000-Seat. Das zu gewinnen ist etwas völlig anderes, als in einem Main Event mit über tausend Entries unter die Top 3 zu kommen — das Ticket am Ende ist dasselbe. Von den neun Seats ist das **die günstigste Tür**.
+==g:Schau dir die günstigste Zeile an.== Im **Mini Main Event für ~$610** steckt ein kompletter $10.000-Seat. Das zu gewinnen ist etwas völlig anderes, als in einem Main Event mit über tausend Entries unter die Top 3 zu kommen – das Ticket am Ende ist dasselbe. Von den neun Seats ist das **die günstigste Tür**.
 
-> ⚠️ **Zwei ähnlich benannte Events — nicht verwechseln.** Den Seat vergibt das **#37 High Roller – Ultra Stack (KRW 4,5 Mio., 10.–11. August)**. Das **#90 Ultra Stack (KRW 700K, 15.–16. August)** aus dem Turnierplan oben vergibt **keinen APTC-Seat**. Die Namen überschneiden sich, die Buy-ins unterscheiden sich um mehr als das Sechsfache.
+> ⚠️ **Zwei ähnlich benannte Events – nicht verwechseln.** Den Seat vergibt das **#37 High Roller – Ultra Stack (KRW 4,5 Mio., 10.–11. August)**. Das **#90 Ultra Stack (KRW 700K, 15.–16. August)** aus dem Turnierplan oben vergibt **keinen APTC-Seat**. Die Namen überschneiden sich, die Buy-ins unterscheiden sich um mehr als das Sechsfache.
 
-**Wohin dich das Ticket bringt:** Die APT Championship 2026 läuft vom **13. bis 29. November im Red Space, Taipeh**. Das Championship Main Event ist vom **23. bis 27. November, ein $10.000-Freezeout mit $5.000.000 garantiert** — das größte APT-Event des Jahres. Und Taipeh hat, anders als Paradise City, **keine Nationalitätsbeschränkung beim Einlass**.
+**Wohin dich das Ticket bringt:** Die APT Championship 2026 läuft vom **13. bis 29. November im Red Space, Taipeh**. Das Championship Main Event ist vom **23. bis 27. November, ein $10.000-Freezeout mit $5.000.000 garantiert** – das größte APT-Event des Jahres. Und Taipeh hat, anders als Paradise City, **keine Nationalitätsbeschränkung beim Einlass**.
 
-## Wie man sich über Natural8 qualifiziert hat — und wann welches Satellite schloss
+## Wie man sich über Natural8 qualifiziert hat – und wann welches Satellite schloss
 
 Natural8 ist APTs offizieller Online-Partner und betreibt die ==**Journey to APT Incheon 2026**==-Satellite-Kampagne. Zwei Wege zum Main Event:
 
@@ -139,7 +139,7 @@ Natural8 ist APTs offizieller Online-Partner und betreibt die ==**Journey to APT
 
 </div>
 
-:::note[**★Stand 9. August 2026 — die Online-Qualifikation ist beendet.** Das $35-Mega und die OnLive-Day-1-Qualifikationen liefen am 2. August aus, die letzte Route **$20 Step → $200 Mega** am **Freitag, dem 7. August** — dem Tag vor Serienstart. Die 52 + 22 = 74 Seats in der Tabelle sind die bereits vergebene Gesamtzahl. Die Wege stehen hier, weil beim nächsten APT-Stopp dieselbe Struktur zurückkommt.]:::
+:::note[**★Stand 9. August 2026 – die Online-Qualifikation ist beendet.** Das $35-Mega und die OnLive-Day-1-Qualifikationen liefen am 2. August aus, die letzte Route **$20 Step → $200 Mega** am **Freitag, dem 7. August** – dem Tag vor Serienstart. Die 52 + 22 = 74 Seats in der Tabelle sind die bereits vergebene Gesamtzahl. Die Wege stehen hier, weil beim nächsten APT-Stopp dieselbe Struktur zurückkommt.]:::
 
 **Der Step-Weg, der noch offen ist:**
 
@@ -147,15 +147,15 @@ Natural8 ist APTs offizieller Online-Partner und betreibt die ==**Journey to APT
 $20 Step Satellite → Ticket für das $200 Mega Satellite gewinnen → Main-Event-Seat gewinnen (~$1.703 Wert) · letzter Tag war der 7. August
 </div>
 
-==g:Natural8 gibt außerdem einen 8% Auszahlungs-Bonus== für Satellite-Qualifikanten — wenn du beim Live-Event $10.000 gewinnst, bekommst du $800 obendrauf. **Eine Prüfung, bevor du darauf planst.** Natural8 ist der Asien-Pazifik-Skin des GG-Netzwerks, und **der Zugang hängt vom Wohnsitzland ab** — laut eigenen AGB kann Natural8 dich nicht aufnehmen, wenn dein Land nicht in der Registrierungsliste steht. Spieler aus Deutschland werden in der Regel auf den lizenzierten Haupt-Skin **GGPoker** geleitet. ⚠️ Ein VPN-Umweg verstößt gegen die AGB und riskiert Konto und Guthaben. **Der Weg, der jedem offensteht: direkt beim Veranstalter anmelden (registrations@apt.poker) und den vollen Buy-in zahlen.**
+==g:Natural8 gibt außerdem einen 8% Auszahlungs-Bonus== für Satellite-Qualifikanten – wenn du beim Live-Event $10.000 gewinnst, bekommst du $800 obendrauf. **Eine Prüfung, bevor du darauf planst.** Natural8 ist der Asien-Pazifik-Skin des GG-Netzwerks, und **der Zugang hängt vom Wohnsitzland ab** – laut eigenen AGB kann Natural8 dich nicht aufnehmen, wenn dein Land nicht in der Registrierungsliste steht. Spieler aus Deutschland werden in der Regel auf den lizenzierten Haupt-Skin **GGPoker** geleitet. ⚠️ Ein VPN-Umweg verstößt gegen die AGB und riskiert Konto und Guthaben. **Der Weg, der jedem offensteht: direkt beim Veranstalter anmelden (registrations@apt.poker) und den vollen Buy-in zahlen.**
 
-> **Was OnLive war:** Die Route ließ dich Day 1 aus deiner heimischen Zeitzone spielen und nur dann nach Korea fliegen, wenn du bis Day 3 überlebtest — der clevere Weg, wenn das Reisebudget knapp war. ==r:Sie endete am 2. August und ist für diese Ausgabe keine Option mehr== — hier notiert, weil sie beim nächsten APT-Stopp einen Blick wert ist.
+> **Was OnLive war:** Die Route ließ dich Day 1 aus deiner heimischen Zeitzone spielen und nur dann nach Korea fliegen, wenn du bis Day 3 überlebtest – der clevere Weg, wenn das Reisebudget knapp war. ==r:Sie endete am 2. August und ist für diese Ausgabe keine Option mehr== – hier notiert, weil sie beim nächsten APT-Stopp einen Blick wert ist.
 
-**Es gibt einen dritten Weg, den fast keine Anleitung erwähnt: die Country Exclusives.** Natural8 fährt nach Wohnsitzland beschränkte Qualifier, die **sechs Live-Pakete** ausschütten — und ein Paket ist nicht nur der Seat: Es enthält **das Main-Event-Ticket (~$1.684) plus rund $500 Reisekosten**. Normale Satellites geben dir den Platz, den Flug zahlst du selbst. Die Teilnahmeberechtigung hängt am Wohnsitzland, also prüf im Lobby, ob dein Bracket offen ist, bevor du den allgemeinen Weg grindest.
+**Es gibt einen dritten Weg, den fast keine Anleitung erwähnt: die Country Exclusives.** Natural8 fährt nach Wohnsitzland beschränkte Qualifier, die **sechs Live-Pakete** ausschütten – und ein Paket ist nicht nur der Seat: Es enthält **das Main-Event-Ticket (~$1.684) plus rund $500 Reisekosten**. Normale Satellites geben dir den Platz, den Flug zahlst du selbst. Die Teilnahmeberechtigung hängt am Wohnsitzland, also prüf im Lobby, ob dein Bracket offen ist, bevor du den allgemeinen Weg grindest.
 
 ---
 
-## Wer spielt dieses Turnier wirklich? — Das Feld 2025 nach Nationalität
+## Wer spielt dieses Turnier wirklich? – Das Feld 2025 nach Nationalität
 
 Bevor du fliegst, lohnt sich ein Blick darauf, an welchem Tisch du landest. APT veröffentlicht die Länderverteilung, und das Incheon Main Event 2025 sah so aus:
 
@@ -176,13 +176,13 @@ Bevor du fliegst, lohnt sich ein Blick darauf, an welchem Tisch du landest. APT 
 
 </div>
 
-==r:Japan und China allein stellen 61 % des Feldes.== 27 Länder waren vertreten, aber das hier ist durch und durch ein **ostasiatisches Turnier** — kein europäisches Land taucht in den Top 10 auf. Wer aus dem deutschsprachigen Raum anreist, sitzt als Exot am Tisch.
+==r:Japan und China allein stellen 61 % des Feldes.== 27 Länder waren vertreten, aber das hier ist durch und durch ein **ostasiatisches Turnier** – kein europäisches Land taucht in den Top 10 auf. Wer aus dem deutschsprachigen Raum anreist, sitzt als Exot am Tisch.
 
-Praktisch heißt das: Am Tisch hörst du mehr Japanisch und Mandarin als Englisch, und der Floor geht damit völlig routiniert um. Der Vorteil dabei — **niemand hat Reads auf dich**. Du kommst ohne Historie in einen Circuit, in dem sich viele Regs seit Jahren kennen.
+Praktisch heißt das: Am Tisch hörst du mehr Japanisch und Mandarin als Englisch, und der Floor geht damit völlig routiniert um. Der Vorteil dabei – **niemand hat Reads auf dich**. Du kommst ohne Historie in einen Circuit, in dem sich viele Regs seit Jahren kennen.
 
-**Die Zahlen von 2025:** 1.281 Entries von **754 einzelnen Spielern** (der Rest waren Re-Entries), daraus ein Preispool von **KRW 2.766.660.000 (~$2,0 Mio.)** — das damals größte Main Event, das APT je in Korea gespielt hat. Gewonnen hat der Chinese **Junjie He** für ₩380.520.000 (~$275.140) plus einen APT-Championship-Seat, nach einem Dreier-ICM-Deal mit Kouki Okumiya und Kuroda Kiyoto.
+**Die Zahlen von 2025:** 1.281 Entries von **754 einzelnen Spielern** (der Rest waren Re-Entries), daraus ein Preispool von **KRW 2.766.660.000 (~$2,0 Mio.)** – das damals größte Main Event, das APT je in Korea gespielt hat. Gewonnen hat der Chinese **Junjie He** für ₩380.520.000 (~$275.140) plus einen APT-Championship-Seat, nach einem Dreier-ICM-Deal mit Kouki Okumiya und Kuroda Kiyoto.
 
-> **Lies die Entry-Zahl richtig.** "1.281 Entries" sind keine 1.281 Personen, sondern 754 Spieler plus Re-Entries. Re-Entry-Felder wirken immer größer, als sie sind.
+> **Lies die Entry-Zahl richtig.** „1.281 Entries“ sind keine 1.281 Personen, sondern 754 Spieler plus Re-Entries. Re-Entry-Felder wirken immer größer, als sie sind.
 
 ---
 
@@ -190,13 +190,13 @@ Praktisch heißt das: Am Tisch hörst du mehr Japanisch und Mandarin als Englisc
 
 ## Die Location: Paradise City Casino
 
-![Paradise City Casino von innen — luxuriöses Resort-Casino verbunden mit dem Incheon International Airport, mit Pokertischen, Spielautomaten und edler Hotellobby](/images/apt-incheon-2026-guide-venue.webp)
+![Paradise City Casino von innen – luxuriöses Resort-Casino verbunden mit dem Incheon International Airport, mit Pokertischen, Spielautomaten und edler Hotellobby](/images/apt-incheon-2026-guide-venue.webp)
 
-Paradise City ist kein alleinstehendes Casino — es ist ein ==**integriertes Resort, das als Teil des Ausbaus des Incheon International Airport gebaut wurde**==, um internationalen Transit- und Ankunftsverkehr abzugreifen.
+Paradise City ist kein alleinstehendes Casino – es ist ein ==**integriertes Resort, das als Teil des Ausbaus des Incheon International Airport gebaut wurde**==, um internationalen Transit- und Ankunftsverkehr abzugreifen.
 
 **Was das für dich bedeutet:**
 
-- ==g:Kostenloser Shuttlebus fährt alle 30 Min vom Terminal 1 (Gates 3C & 14C)== — ~10 Min, gratis, wetterunabhängig
+- ==g:Kostenloser Shuttlebus fährt alle 30 Min vom Terminal 1 (Gates 3C & 14C)== – ~10 Min, gratis, wetterunabhängig
 - 5-Sterne-Hotel (Hotel Paradise) vor Ort mit direktem Casino-Zugang
 - Internationale Food-Hall, Spa und Entertainment-Komplex
 - 45–60 Minuten ins Zentrum von Seoul mit dem AREX-Zug vom Flughafen
@@ -204,7 +204,7 @@ Paradise City ist kein alleinstehendes Casino — es ist ein ==**integriertes Re
 **Location-Regeln, die du kennen solltest:**
 - Dresscode: keine Flip-Flops, keine Schlafanzüge
 - Keine Kameras oder Fotografie im Casino
-- ==r:Koreanische Staatsbürger dürfen nicht rein== — du brauchst deinen nicht-koreanischen Pass an der Tür
+- ==r:Koreanische Staatsbürger dürfen nicht rein== – du brauchst deinen nicht-koreanischen Pass an der Tür
 - Alter: 19+ mit Ausweis
 
 ---
@@ -215,12 +215,12 @@ Paradise City betreibt seinen eigenen kostenlosen Transfer vom Flughafen:
 
 | Option | Fahrt | Kosten | Hinweise |
 |:---|:---:|:---|:---|
-| ==g:**Kostenloser Shuttle (ab T1)**== | ==g:~10 Min== | ==g:Gratis== | Beste Option — Gate 3C oder 14C, alle 30 Min (5–23 Uhr) |
+| ==g:**Kostenloser Shuttle (ab T1)**== | ==g:~10 Min== | ==g:Gratis== | Beste Option – Gate 3C oder 14C, alle 30 Min (5–23 Uhr) |
 | Kostenloser Shuttle (ab T2) | ~20 Min | Gratis | Gate 2A, alle 60 Min |
 | Taxi ab T1 | ~15–20 Min | ~$15–20 | Mit Taxameter, 24/7 verfügbar |
 | AREX bis Unseo Station → Taxi | ~20 Min gesamt | ~$8 | Nützlich, wenn der Fahrplan passt |
 
-Wenn du über Incheon fliegst und ein langes Layover hast: ==g:das Casino ist während eines Transit-Stopps erreichbar== — kläre mit deiner Airline die Visumsvorschriften für deine Nationalität während des Transits.
+Wenn du über Incheon fliegst und ein langes Layover hast: ==g:das Casino ist während eines Transit-Stopps erreichbar== – kläre mit deiner Airline die Visumsvorschriften für deine Nationalität während des Transits.
 
 ---
 
@@ -228,7 +228,7 @@ Wenn du über Incheon fliegst und ein langes Layover hast: ==g:das Casino ist w�
 
 Hier ist das Setup, das die meisten Turnierspieler erst bei der Ankunft realisieren: ==**Paradise City ist deine Basis, und Seoul ist nur 1 Stunde entfernt**==.
 
-Du kannst die ganze Reise über im Casino-Hotel bleiben — deine Sessions spielen, schlafen, wiederholen. Oder du machst, was die meisten Regulars tun: die Vormittags-Session beenden, in die U-Bahn steigen, den Nachmittag in Hongdae oder Myeongdong verbringen und abends wieder am Filz sein. Der Nahverkehr macht das absolut realistisch.
+Du kannst die ganze Reise über im Casino-Hotel bleiben – deine Sessions spielen, schlafen, wiederholen. Oder du machst, was die meisten Regulars tun: die Vormittags-Session beenden, in die U-Bahn steigen, den Nachmittag in Hongdae oder Myeongdong verbringen und abends wieder am Filz sein. Der Nahverkehr macht das absolut realistisch.
 
 **Vom Paradise City nach Seoul:**
 
@@ -244,72 +244,72 @@ Du kannst die ganze Reise über im Casino-Hotel bleiben — deine Sessions spiel
 
 </div>
 
-==g:Zwei AREX-Optionen ab T1==: der **Express** (nonstop zur Seoul Station in 43 Min, ₩11.000 — dann umsteigen in Linie 2 oder 4) oder der **All-Stop** (direkt zur Station Hongdae/Hongik University ohne Umstieg, ~60 Min, ₩4.750). All-Stop-Züge fahren alle 6–10 Minuten, von 5 Uhr bis Mitternacht. Airport-Busse fahren direkt nach Myeongdong und Gangnam, falls du das lieber magst.
+==g:Zwei AREX-Optionen ab T1==: der **Express** (nonstop zur Seoul Station in 43 Min, ₩11.000 – dann umsteigen in Linie 2 oder 4) oder der **All-Stop** (direkt zur Station Hongdae/Hongik University ohne Umstieg, ~60 Min, ₩4.750). All-Stop-Züge fahren alle 6–10 Minuten, von 5 Uhr bis Mitternacht. Airport-Busse fahren direkt nach Myeongdong und Gangnam, falls du das lieber magst.
 
 Hier ist, was du mit 1–3 freien Tagen machst:
 
-![Google-Maps-Übersicht mit Paradise City in Incheon und der Distanz ins Zentrum von Seoul — etwa 50 km westlich der Stadt](/images/apt-incheon-2026-guide-map-wide.webp)
+![Google-Maps-Übersicht mit Paradise City in Incheon und der Distanz ins Zentrum von Seoul – etwa 50 km westlich der Stadt](/images/apt-incheon-2026-guide-map-wide.webp)
 
-![Google Maps herangezoomt auf das Zentrum von Seoul mit markiertem Namsan (N Seoul Tower) — Hongdae im Westen, Han-Fluss im Süden](/images/apt-incheon-2026-guide-map-seoul.webp)
+![Google Maps herangezoomt auf das Zentrum von Seoul mit markiertem Namsan (N Seoul Tower) – Hongdae im Westen, Han-Fluss im Süden](/images/apt-incheon-2026-guide-map-seoul.webp)
 
-### Tag 1 — Altes Seoul: Paläste, Hanoks & Streetfood
+### Tag 1 – Altes Seoul: Paläste, Hanoks & Streetfood
 
-**Vormittag:** Beginne am ==**Gyeongbokgung-Palast**== (Station Gyeongbokgung, Linie 3). 1395 erbaut, das Palastgelände ist riesig. Der Eintritt kostet ~₩3.000 — oder miete einen Hanbok (~₩20.000) in nahen Läden für ==g:freien Palasteintritt==. Plane 2 Stunden ein.
+**Vormittag:** Beginne am ==**Gyeongbokgung-Palast**== (Station Gyeongbokgung, Linie 3). 1395 erbaut, das Palastgelände ist riesig. Der Eintritt kostet ~₩3.000 – oder miete einen Hanbok (~₩20.000) in nahen Läden für ==g:freien Palasteintritt==. Plane 2 Stunden ein.
 
-**Mittag:** Laufe 15 Minuten zum ==**Bukchon Hanok Village**== — ein Wohnviertel am Hang mit über 900 traditionellen koreanischen Häusern (Hanoks) aus der Joseon-Dynastie. Besuche zwischen 10–17 Uhr; es ist noch Wohngebiet, also wird Lärm möglichst leise gehalten. Der Blick von der Spitze von Gahoe-dong ist der meistfotografierte Ort Seouls.
+**Mittag:** Laufe 15 Minuten zum ==**Bukchon Hanok Village**== – ein Wohnviertel am Hang mit über 900 traditionellen koreanischen Häusern (Hanoks) aus der Joseon-Dynastie. Besuche zwischen 10–17 Uhr; es ist noch Wohngebiet, also wird Lärm möglichst leise gehalten. Der Blick von der Spitze von Gahoe-dong ist der meistfotografierte Ort Seouls.
 
-**Abend:** Geh zum ==**Gwangjang Market**== (Station Jongno 5-ga, Linie 1) zum Abendessen. Seouls ältester überdachter Markt hat über 5.000 Stände — die Food-Tour-Runde deckt Bindaetteok (Mungbohnen-Pfannkuchen), Bibimbap, Mayak-Gimbap und Sannakji (lebender Oktopus, optional) ab. ==g:Eines der besten Food-Erlebnisse Asiens für unter $10.==
+**Abend:** Geh zum ==**Gwangjang Market**== (Station Jongno 5-ga, Linie 1) zum Abendessen. Seouls ältester überdachter Markt hat über 5.000 Stände – die Food-Tour-Runde deckt Bindaetteok (Mungbohnen-Pfannkuchen), Bibimbap, Mayak-Gimbap und Sannakji (lebender Oktopus, optional) ab. ==g:Eines der besten Food-Erlebnisse Asiens für unter $10.==
 
 ---
 
-### Tag 2 — Hongdae, Myeongdong & Cheonggyecheon
+### Tag 2 – Hongdae, Myeongdong & Cheonggyecheon
 
-**Vormittag:** ==**Ikseon-dong**== — ein Cluster hundert Jahre alter Hanok-Gebäude, umgebaut zu Brunch-Cafés und Spezialitäten-Coffeeshops, 10 Minuten zu Fuß vom Gyeongbokgung. Kleine Gassen, noch keine Touristen, guter Kaffee. Ein toller Weg, in den Tag zu starten, bevor es voll wird.
+**Vormittag:** ==**Ikseon-dong**== – ein Cluster hundert Jahre alter Hanok-Gebäude, umgebaut zu Brunch-Cafés und Spezialitäten-Coffeeshops, 10 Minuten zu Fuß vom Gyeongbokgung. Kleine Gassen, noch keine Touristen, guter Kaffee. Ein toller Weg, in den Tag zu starten, bevor es voll wird.
 
-**Nachmittag:** Nimm die U-Bahn Richtung Westen nach ==**Hongdae**== (Station Hongik University — Linie 2, auch direkt per AREX ab Incheon). Benannt nach der Hongik University, einer der Top-Kunsthochschulen Koreas, hat das Viertel drei Zonen: die ==**zentrale Fußgängerstraße**==, wo ab dem Nachmittag K-Pop-Tanzcrews und Straßenmusiker auftreten; ==**Yeonnam-dong**== im Norden, ein ruhigerer Cluster unabhängiger Cafés entlang des Gyeongui Line Forest Park (ein Parkstreifen auf alten Bahngleisen); und das ==**Club-Viertel**== zwischen Ausgang 6 und 9 für später. Das ganze Gebiet läuft bis zum Morgengrauen — komm für die Nachmittags-Energie, bleib so lange du willst.
+**Nachmittag:** Nimm die U-Bahn Richtung Westen nach ==**Hongdae**== (Station Hongik University – Linie 2, auch direkt per AREX ab Incheon). Benannt nach der Hongik University, einer der Top-Kunsthochschulen Koreas, hat das Viertel drei Zonen: die ==**zentrale Fußgängerstraße**==, wo ab dem Nachmittag K-Pop-Tanzcrews und Straßenmusiker auftreten; ==**Yeonnam-dong**== im Norden, ein ruhigerer Cluster unabhängiger Cafés entlang des Gyeongui Line Forest Park (ein Parkstreifen auf alten Bahngleisen); und das ==**Club-Viertel**== zwischen Ausgang 6 und 9 für später. Das ganze Gebiet läuft bis zum Morgengrauen – komm für die Nachmittags-Energie, bleib so lange du willst.
 
 <div style="display:flex;gap:6px;margin:14px 0">
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-hongdae.webp" alt="Eingang der U-Bahn-Station Hongik University (Hongdae) — Linie 2, Airport Express und Gyeongui-Jungang, mit Leihrädern davor" loading="lazy" decoding="async" width="600" height="800" sizes="(max-width: 768px) 47vw, 333px" style="width:100%;height:auto;border-radius:6px" />
-    <p style="font-size:11px;color:#888;margin:4px 0 0">Station Hongdae — AREX All-Stop direkt vom Flughafen Incheon (~60 Min, kein Umstieg)</p>
+    <img src="/images/apt-incheon-2026-guide-hongdae.webp" alt="Eingang der U-Bahn-Station Hongik University (Hongdae) – Linie 2, Airport Express und Gyeongui-Jungang, mit Leihrädern davor" loading="lazy" decoding="async" width="600" height="800" sizes="(max-width: 768px) 47vw, 333px" style="width:100%;height:auto;border-radius:6px" />
+    <p style="font-size:11px;color:#888;margin:4px 0 0">Station Hongdae – AREX All-Stop direkt vom Flughafen Incheon (~60 Min, kein Umstieg)</p>
   </div>
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-kbeauty.webp" alt="Olive-Young-Store in Hongdae — Koreas größte Health- und Beauty-Kette mit tausenden K-Beauty- und Skincare-Produkten" loading="lazy" decoding="async" width="600" height="800" sizes="(max-width: 768px) 47vw, 333px" style="width:100%;height:auto;border-radius:6px" />
-    <p style="font-size:11px;color:#888;margin:4px 0 0">Olive Young — jede K-Beauty-Marke, die du auf TikTok gesehen hast</p>
+    <img src="/images/apt-incheon-2026-guide-kbeauty.webp" alt="Olive-Young-Store in Hongdae – Koreas größte Health- und Beauty-Kette mit tausenden K-Beauty- und Skincare-Produkten" loading="lazy" decoding="async" width="600" height="800" sizes="(max-width: 768px) 47vw, 333px" style="width:100%;height:auto;border-radius:6px" />
+    <p style="font-size:11px;color:#888;margin:4px 0 0">Olive Young – jede K-Beauty-Marke, die du auf TikTok gesehen hast</p>
   </div>
 </div>
 
-**Abend:** Mit der U-Bahn nach ==**Myeongdong**== (Linie 4, Ausgang 6). Seouls von ausländischen Touristen meistbesuchtes Viertel — und das aus gutem Grund. Die Haupt-Fußgängerstraße (Myeongdong-gil) zieht sich rund 800 m von Ende zu Ende: K-Beauty-Flagship-Stores (Olive Young, Innisfree, Laneige, Sulwhasoo) auf beiden Seiten, Streetfood-Stände füllen ab 17 Uhr die Lücken. ==g:Bestes Streetfood: Hotteok (Braunzucker-Pfannkuchen), Tteokbokki, Cheese-Corn-Dogs, Hummerspieße.== Für eine richtige Mahlzeit ist ==**Myeongdong Kyoja**== (seit 1966) die eine Adresse, für die sich das Anstehen lohnt — Kalguksu (Messerschnitt-Nudeln) und Mandu (Teigtaschen). Die meisten Läden schließen gegen 22 Uhr; der Airport-Bus zurück nach Incheon hält ==g:direkt vor der Station Myeongdong==. ==g:Nimm deinen Pass mit — K-Beauty-Stores bieten Tax-Refund an Ort und Stelle.==
+**Abend:** Mit der U-Bahn nach ==**Myeongdong**== (Linie 4, Ausgang 6). Seouls von ausländischen Touristen meistbesuchtes Viertel – und das aus gutem Grund. Die Haupt-Fußgängerstraße (Myeongdong-gil) zieht sich rund 800 m von Ende zu Ende: K-Beauty-Flagship-Stores (Olive Young, Innisfree, Laneige, Sulwhasoo) auf beiden Seiten, Streetfood-Stände füllen ab 17 Uhr die Lücken. ==g:Bestes Streetfood: Hotteok (Braunzucker-Pfannkuchen), Tteokbokki, Cheese-Corn-Dogs, Hummerspieße.== Für eine richtige Mahlzeit ist ==**Myeongdong Kyoja**== (seit 1966) die eine Adresse, für die sich das Anstehen lohnt – Kalguksu (Messerschnitt-Nudeln) und Mandu (Teigtaschen). Die meisten Läden schließen gegen 22 Uhr; der Airport-Bus zurück nach Incheon hält ==g:direkt vor der Station Myeongdong==. ==g:Nimm deinen Pass mit – K-Beauty-Stores bieten Tax-Refund an Ort und Stelle.==
 
 <div style="display:flex;gap:6px;margin:14px 0">
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-myeongdong1.webp" alt="Restaurant Myeongdong Kyoja von außen — Seouls berühmteste Adresse für Kalguksu und Mandu seit 1966, immer voller Touristen und Einheimischer" loading="lazy" decoding="async" width="480" height="640" sizes="(max-width: 768px) 31vw, 220px" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
-    <p style="font-size:11px;color:#888;margin:4px 0 0">Myeongdong Kyoja — Messerschnitt-Nudeln seit 1966, immer mit Schlange</p>
+    <img src="/images/apt-incheon-2026-guide-myeongdong1.webp" alt="Restaurant Myeongdong Kyoja von außen – Seouls berühmteste Adresse für Kalguksu und Mandu seit 1966, immer voller Touristen und Einheimischer" loading="lazy" decoding="async" width="480" height="640" sizes="(max-width: 768px) 31vw, 220px" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <p style="font-size:11px;color:#888;margin:4px 0 0">Myeongdong Kyoja – Messerschnitt-Nudeln seit 1966, immer mit Schlange</p>
   </div>
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-myeongdong2.webp" alt="Airport-Bus-Haltestelle an der Station Myeongdong — Direktverbindung zum Flughafen Incheon aus dem Zentrum Seouls" loading="lazy" decoding="async" width="480" height="640" sizes="(max-width: 768px) 31vw, 220px" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <img src="/images/apt-incheon-2026-guide-myeongdong2.webp" alt="Airport-Bus-Haltestelle an der Station Myeongdong – Direktverbindung zum Flughafen Incheon aus dem Zentrum Seouls" loading="lazy" decoding="async" width="480" height="640" sizes="(max-width: 768px) 31vw, 220px" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
     <p style="font-size:11px;color:#888;margin:4px 0 0">Airport-Bus-Haltestelle direkt an der Station Myeongdong → Incheon ~60 Min</p>
   </div>
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-myeongdong3.webp" alt="Einkaufsstraße Myeongdong gesäumt von bunten K-Beauty-Läden und Apotheken — Holika Holika rechts sichtbar" loading="lazy" decoding="async" width="480" height="640" sizes="(max-width: 768px) 31vw, 220px" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
-    <p style="font-size:11px;color:#888;margin:4px 0 0">Myeongdong-gil — 800 m K-Beauty, Streetfood und Neonschilder</p>
+    <img src="/images/apt-incheon-2026-guide-myeongdong3.webp" alt="Einkaufsstraße Myeongdong gesäumt von bunten K-Beauty-Läden und Apotheken – Holika Holika rechts sichtbar" loading="lazy" decoding="async" width="480" height="640" sizes="(max-width: 768px) 31vw, 220px" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <p style="font-size:11px;color:#888;margin:4px 0 0">Myeongdong-gil – 800 m K-Beauty, Streetfood und Neonschilder</p>
   </div>
 </div>
 
-**Nachtspaziergang:** Von Myeongdong läufst du rund 10 Minuten nach Norden und steigst hinab zum ==**Cheonggyecheon Stream**== (청계천). Eine 11 km lange urbane Wasserstraße, die durchs Herz der Innenstadt von Seoul fließt — nach dem Koreakrieg unter einer Autobahn begraben, 2005 freigelegt und restauriert. Der Weg verläuft unter Straßenniveau, gesäumt von Steinmauern, Weiden und Sommerschatten. ==g:Reiher stehen mitten im Wasser und fischen.== Nachts spiegeln sich die Lichtinstallationen auf der Oberfläche und Einheimische sitzen mit Getränken vom Convenience Store an den Ufern. U-Bahn-Ausgänge kommen entlang des gesamten Wegs alle paar Minuten hoch, also kannst du so viel oder so wenig laufen wie du willst und überall auftauchen.
+**Nachtspaziergang:** Von Myeongdong läufst du rund 10 Minuten nach Norden und steigst hinab zum ==**Cheonggyecheon Stream**== (청계천). Eine 11 km lange urbane Wasserstraße, die durchs Herz der Innenstadt von Seoul fließt – nach dem Koreakrieg unter einer Autobahn begraben, 2005 freigelegt und restauriert. Der Weg verläuft unter Straßenniveau, gesäumt von Steinmauern, Weiden und Sommerschatten. ==g:Reiher stehen mitten im Wasser und fischen.== Nachts spiegeln sich die Lichtinstallationen auf der Oberfläche und Einheimische sitzen mit Getränken vom Convenience Store an den Ufern. U-Bahn-Ausgänge kommen entlang des gesamten Wegs alle paar Minuten hoch, also kannst du so viel oder so wenig laufen wie du willst und überall auftauchen.
 
 <div style="display:flex;gap:6px;margin:14px 0">
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-cheonggyecheon1.webp" alt="Cheonggyecheon Stream Weitblick — erhöhter Weg und Trittsteine mit den Wolkenkratzern des Zentrums von Seoul hinter der Baumreihe" loading="lazy" decoding="async" width="480" height="640" sizes="(max-width: 768px) 31vw, 220px" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
-    <p style="font-size:11px;color:#888;margin:4px 0 0">11 km langer Bach durch das Zentrum von Seoul — gratis, 24 h</p>
+    <img src="/images/apt-incheon-2026-guide-cheonggyecheon1.webp" alt="Cheonggyecheon Stream Weitblick – erhöhter Weg und Trittsteine mit den Wolkenkratzern des Zentrums von Seoul hinter der Baumreihe" loading="lazy" decoding="async" width="480" height="640" sizes="(max-width: 768px) 31vw, 220px" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <p style="font-size:11px;color:#888;margin:4px 0 0">11 km langer Bach durch das Zentrum von Seoul – gratis, 24 h</p>
   </div>
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-cheonggyecheon2.webp" alt="Cheonggyecheon Stream Nahaufnahme — weißer Reiher steht im fließenden Wasser, ein Paar sitzt auf Felsen am Ufer" loading="lazy" decoding="async" width="480" height="640" sizes="(max-width: 768px) 31vw, 220px" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
-    <p style="font-size:11px;color:#888;margin:4px 0 0">Reiher fischen im Bach — mitten in einer Hauptstadt</p>
+    <img src="/images/apt-incheon-2026-guide-cheonggyecheon2.webp" alt="Cheonggyecheon Stream Nahaufnahme – weißer Reiher steht im fließenden Wasser, ein Paar sitzt auf Felsen am Ufer" loading="lazy" decoding="async" width="480" height="640" sizes="(max-width: 768px) 31vw, 220px" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <p style="font-size:11px;color:#888;margin:4px 0 0">Reiher fischen im Bach – mitten in einer Hauptstadt</p>
   </div>
   <div style="flex:1;min-width:0;text-align:center">
-    <img src="/images/apt-incheon-2026-guide-cheonggyecheon3.webp" alt="Cheonggyecheon Stream Fußweg — Trauerweiden entlang des Bachs, Spaziergänger auf dem Uferweg" loading="lazy" decoding="async" width="480" height="640" sizes="(max-width: 768px) 31vw, 220px" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
-    <p style="font-size:11px;color:#888;margin:4px 0 0">U-Bahn-Ausgänge alle paar Minuten am Weg — lauf so weit du magst</p>
+    <img src="/images/apt-incheon-2026-guide-cheonggyecheon3.webp" alt="Cheonggyecheon Stream Fußweg – Trauerweiden entlang des Bachs, Spaziergänger auf dem Uferweg" loading="lazy" decoding="async" width="480" height="640" sizes="(max-width: 768px) 31vw, 220px" style="width:100%;height:200px;object-fit:cover;border-radius:6px" />
+    <p style="font-size:11px;color:#888;margin:4px 0 0">U-Bahn-Ausgänge alle paar Minuten am Weg – lauf so weit du magst</p>
   </div>
 </div>
 
@@ -317,13 +317,13 @@ Hier ist, was du mit 1–3 freien Tagen machst:
 
 ---
 
-### Tag 3 — Modernes Seoul: Gangnam, Seongsu & der Han-Fluss
+### Tag 3 – Modernes Seoul: Gangnam, Seongsu & der Han-Fluss
 
-**Vormittag:** Nimm Linie 2 nach ==**Gangnam**==. Das echte Gangnam ist nicht das, was der Song beschrieb — es ist Seouls gehobenes Business- und Entertainment-Viertel, Heimat der COEX Mall (unterirdische Stadt), des buddhistischen Bongeunsa-Tempels und einiger der besten Coffeeshops des Landes.
+**Vormittag:** Nimm Linie 2 nach ==**Gangnam**==. Das echte Gangnam ist nicht das, was der Song beschrieb – es ist Seouls gehobenes Business- und Entertainment-Viertel, Heimat der COEX Mall (unterirdische Stadt), des buddhistischen Bongeunsa-Tempels und einiger der besten Coffeeshops des Landes.
 
-**Nachmittag:** ==**Seongsu-dong**== ("Seouls Brooklyn") ist 10 Minuten mit dem Taxi von Gangnam. Ehemalige Industrielager, umgebaut zu Spezialitäten-Cafés, Design-Studios und Concept-Stores. Es ist in den letzten zwei Jahren zum meist-instagrammten Viertel Seouls geworden. Ein toller Nachmittags-Stopp, bevor es zurück Richtung Incheon geht.
+**Nachmittag:** ==**Seongsu-dong**== („Seouls Brooklyn“) ist 10 Minuten mit dem Taxi von Gangnam. Ehemalige Industrielager, umgebaut zu Spezialitäten-Cafés, Design-Studios und Concept-Stores. Es ist in den letzten zwei Jahren zum meist-instagrammten Viertel Seouls geworden. Ein toller Nachmittags-Stopp, bevor es zurück Richtung Incheon geht.
 
-**Abend:** Wenn dein Flug am nächsten Morgen geht, positioniere dich in ==**Itaewon**== oder nahe der ==**Station Hongik University**== für eine letzte Nacht — beide Viertel haben internationale Bars und Restaurants, die bis 3–5 Uhr offen sind. Dann mit dem AREX zurück zum Flughafen.
+**Abend:** Wenn dein Flug am nächsten Morgen geht, positioniere dich in ==**Itaewon**== oder nahe der ==**Station Hongik University**== für eine letzte Nacht – beide Viertel haben internationale Bars und Restaurants, die bis 3–5 Uhr offen sind. Dann mit dem AREX zurück zum Flughafen.
 
 ---
 
@@ -345,7 +345,7 @@ Hier ist, was du mit 1–3 freien Tagen machst:
 
 </div>
 
-Verglichen mit der EPT Barcelona (~€5.300 Main) oder WPT Australia (~AUD $5.000 Main) gibt dir ==g:die APT Incheon ein $1M-GTD-Turnier zum Buy-in unter $2.000== — und eine der besten Städte Asiens als Kulisse.
+Verglichen mit der EPT Barcelona (~€5.300 Main) oder WPT Australia (~AUD $5.000 Main) gibt dir ==g:die APT Incheon ein $1M-GTD-Turnier zum Buy-in unter $2.000== – und eine der besten Städte Asiens als Kulisse.
 
 ---
 
@@ -355,16 +355,16 @@ Verglichen mit der EPT Barcelona (~€5.300 Main) oder WPT Australia (~AUD $5.00
 
 | Nationalität | Visum nötig? | Wie du einreist |
 |---|---|---|
-| USA, Kanada, UK, Australien, NZ, die meisten EU | **Kein Visum** | **bis 31.12.2026 vom K-ETA befreit** — nur die kostenlose e-Arrival Card |
+| USA, Kanada, UK, Australien, NZ, die meisten EU | **Kein Visum** | **bis 31.12.2026 vom K-ETA befreit** – nur die kostenlose e-Arrival Card |
 | Japan, Singapur, Hongkong, Taiwan | **Kein Visum** | K-ETA |
 | Die meisten anderen Länder | Prüfe [mofa.go.kr](https://www.mofa.go.kr) | Ggf. Touristenvisum nötig |
 
-==g:**Gute Nachricht für DACH: Deutschland, Österreich und die Schweiz stehen auf der 22er-Ausnahmeliste — bis 31.12.2026 brauchst du kein K-ETA.**== Du fliegst visumfrei für bis zu 90 Tage, ohne Gebühr und ohne Wartezeit; vor der Landung reichst du nur die kostenlose e-Arrival Card online ein. Die Ausnahme wird jährlich verlängert — vor der Buchung trotzdem kurz auf [k-eta.go.kr](https://www.k-eta.go.kr) gegenchecken.
+==g:**Gute Nachricht für DACH: Deutschland, Österreich und die Schweiz stehen auf der 22er-Ausnahmeliste – bis 31.12.2026 brauchst du kein K-ETA.**== Du fliegst visumfrei für bis zu 90 Tage, ohne Gebühr und ohne Wartezeit; vor der Landung reichst du nur die kostenlose e-Arrival Card online ein. Die Ausnahme wird jährlich verlängert – vor der Buchung trotzdem kurz auf [k-eta.go.kr](https://www.k-eta.go.kr) gegenchecken.
 
 **Casino-Zutritt (Paradise City):**
 - Gültiger nicht-koreanischer Pass erforderlich
 - Alter 19+
-- ==r:Koreanische Bürger sind gesetzlich ausgeschlossen — keine Ausnahmen==
+- ==r:Koreanische Bürger sind gesetzlich ausgeschlossen – keine Ausnahmen==
 - Auslandskoreaner (Daueraufenthalt im Ausland) dürfen mit koreanischem Pass + Green Card oder Auswanderungsbescheinigung rein
 
 ---
@@ -378,11 +378,11 @@ Verglichen mit der EPT Barcelona (~€5.300 Main) oder WPT Australia (~AUD $5.00
 
 **Q. Ist das Paradise City Casino wirklich vom Flughafen Incheon aus zu Fuß erreichbar?**
 
-A. Sehr nah. Paradise City betreibt einen kostenlosen Shuttle vom Terminal 1 (Gates 3C & 14C) alle 30 Minuten — die Fahrt dauert etwa 10 Minuten. Terminal 2 hat seinen eigenen Shuttle alle 60 Minuten ab Gate 2A. Das Resort ist ein flughafennaher integrierter Komplex, speziell für internationale Ankünfte konzipiert.
+A. Sehr nah. Paradise City betreibt einen kostenlosen Shuttle vom Terminal 1 (Gates 3C & 14C) alle 30 Minuten – die Fahrt dauert etwa 10 Minuten. Terminal 2 hat seinen eigenen Shuttle alle 60 Minuten ab Gate 2A. Das Resort ist ein flughafennaher integrierter Komplex, speziell für internationale Ankünfte konzipiert.
 
 **Q. Kann ich das APT Incheon Main Event spielen, wenn ich noch nie ein Live-Turnier gespielt habe?**
 
-A. Ja. Der Buy-in (~$1.703) ist beträchtlich, aber die Struktur ist anfängerfreundlich — tiefe Starting Stacks und lange Levels. Wenn du mit Home Games oder Online-Poker vertraut bist, ist der Umstieg auf Live gut machbar. Das Mini Main Event (~$610, KRW 900K) und der Ultra Stack (~$477) sind Optionen mit niedrigeren Stakes für den Einstieg.
+A. Ja. Der Buy-in (~$1.703) ist beträchtlich, aber die Struktur ist anfängerfreundlich – tiefe Starting Stacks und lange Levels. Wenn du mit Home Games oder Online-Poker vertraut bist, ist der Umstieg auf Live gut machbar. Das Mini Main Event (~$610, KRW 900K) und der Ultra Stack (~$477) sind Optionen mit niedrigeren Stakes für den Einstieg.
 
 **Q. Wie komme ich vom Paradise City nach Seoul?**
 
@@ -392,7 +392,7 @@ A. Nimm den kostenlosen Shuttle zurück zum Terminal 1 des Flughafens Incheon, d
 
 A. Nein. Seouls U-Bahn-Beschilderung ist komplett zweisprachig (Koreanisch/Englisch), Google Maps funktioniert überall in der Stadt zuverlässig, und die meisten touristischen Betriebe haben englischsprachiges Personal. Die Papago-App (Navers Übersetzer) meistert Menüs und Straßenschilder gut.
 
-**Q. Wann fügt man Seoul-Tage am besten ein — vor oder nach dem Turnier?**
+**Q. Wann fügt man Seoul-Tage am besten ein – vor oder nach dem Turnier?**
 
 A. Beides geht, aber ==g:2–3 Tage früher anzureisen ist empfehlenswert==. Du erholst dich vom Jetlag, erkundest die Stadt in entspanntem Tempo und erscheinst zu Day 1 ausgeruht und akklimatisiert. Nach dem Turnier ist jeder Bustout-Tag automatisch ein freier Seoul-Tag.
 
@@ -400,11 +400,11 @@ A. Beides geht, aber ==g:2–3 Tage früher anzureisen ist empfehlenswert==. Du 
 
 ## Die Kernpunkte
 
-1. **APT Incheon 2026** läuft ==**7.–16. Aug**== im Paradise City Casino — 10 Min vom Flughafen Incheon mit dem kostenlosen Shuttle, $2,7M GTD.
+1. **APT Incheon 2026** läuft ==**7.–16. Aug**== im Paradise City Casino – 10 Min vom Flughafen Incheon mit dem kostenlosen Shuttle, $2,7M GTD.
 2. **Main Event** Buy-in: ==**~$1.703**== mit ==g:$1M garantiert==. Rund ein Drittel des EPT-Barcelona-Main und die Hälfte des WPT-Australia-Championship-Buy-ins.
-3. **Die Online-Qualifikation ist beendet** — $35-Mega und OnLive endeten am 2. August, die letzte Route ($20 Step → $200 Mega) am 7. August. Rein kommt man jetzt nur noch über die Anmeldung vor Ort.
-4. **Seoul ist 60 Min entfernt** und eines der besten Reiseziele Asiens — ==g:Paläste, BBQ, Nachtleben und unschlagbares Streetfood.==
-5. **Nur für ausländische Staatsbürger** — dieses Turnier wurde für internationale Spieler gebaut. Dein Pass ist deine Zutrittskarte.
+3. **Die Online-Qualifikation ist beendet** – $35-Mega und OnLive endeten am 2. August, die letzte Route ($20 Step → $200 Mega) am 7. August. Rein kommt man jetzt nur noch über die Anmeldung vor Ort.
+4. **Seoul ist 60 Min entfernt** und eines der besten Reiseziele Asiens – ==g:Paläste, BBQ, Nachtleben und unschlagbares Streetfood.==
+5. **Nur für ausländische Staatsbürger** – dieses Turnier wurde für internationale Spieler gebaut. Dein Pass ist deine Zutrittskarte.
 
 Auf dem Weg zur APT Incheon? Der [Guide Turnier vs Cash Game](/de/blog/holdem-tournament-vs-cash-game "thumb:/images/tournament-table-action.webp") deckt die strukturellen Unterschiede ab, falls du vom Cashgame umsteigst. Und für die Poker-Formate, die dir jenseits von NLHE begegnen, ist [Setzaktionen im Poker](/de/blog/holdem-betting-actions) eine saubere Referenz, die du vor Day 1 gelesen haben solltest.
 
@@ -414,13 +414,13 @@ Auf dem Weg zur APT Incheon? Der [Guide Turnier vs Cash Game](/de/blog/holdem-to
 
 Alle Zahlen wurden gegen Primärquellen geprüft. **Stand: 28. Juli 2026.**
 
-- **Offizielle Serienseite** — [APT — Incheon, South Korea 2026](https://www.theasianpokertour.com/series/apt-incheon-south-korea-2026) · Termine, Buy-in und Garantie des Main Events #20, Flight-Struktur
-- **Offizielle Preview** — [APT Incheon 2026: The Preview](https://www.theasianpokertour.com/news/apt-incheon-2026-the-preview) · Gesamtgarantie, Startstack 40.000, **die neun APTC-Taipeh-Seats und ihre Verteilung**
-- **APT Championship 2026** — [Full APTC 2026 Schedule](https://www.theasianpokertour.com/news/apt-announces-full-aptc2026-schedule) · 13.–29. November, Taipeh; Main Event 23.–27. Nov, $10.000, $5.000.000 GTD
-- **20-jähriges Jubiläum** — [APT Gets Ready to Celebrate 20 Years](https://www.theasianpokertour.com/news/apt-2026-schedule)
-- **Satellites und Pakete** — [Natural8 — Journey to APT Incheon 2026](https://www.natural8.com/en/blog/journey-to-apt-incheon-2026) · [Country Exclusives 2026](https://www.natural8.com/en/poker/tournaments/apt-incheon-country-exclusives-2026)
-- **Feld und Ergebnis 2025 (offizieller Bericht des Veranstalters)** — [APT — China's Junjie He Wins APT's Largest Korean Main Event](https://www.theasianpokertour.com/news/china-s-junjie-he-wins-apt-s-largest-korean-main-event-for-krw-380-5-m-usd-275-k-plus-apt-championship-seat-worth-krw-13-8-m-usd-10-k) · 1.281 Entries von 754 Spielern · Preispool KRW 2.766.660.000 · Länderverteilung Top 10
-- **Casino-Einlassregeln** — [Paradise City offiziell](https://www.p-city.com/front/contents/casino/casinoInfo)
+- **Offizielle Serienseite** – [APT – Incheon, South Korea 2026](https://www.theasianpokertour.com/series/apt-incheon-south-korea-2026) · Termine, Buy-in und Garantie des Main Events #20, Flight-Struktur
+- **Offizielle Preview** – [APT Incheon 2026: The Preview](https://www.theasianpokertour.com/news/apt-incheon-2026-the-preview) · Gesamtgarantie, Startstack 40.000, **die neun APTC-Taipeh-Seats und ihre Verteilung**
+- **APT Championship 2026** – [Full APTC 2026 Schedule](https://www.theasianpokertour.com/news/apt-announces-full-aptc2026-schedule) · 13.–29. November, Taipeh; Main Event 23.–27. Nov, $10.000, $5.000.000 GTD
+- **20-jähriges Jubiläum** – [APT Gets Ready to Celebrate 20 Years](https://www.theasianpokertour.com/news/apt-2026-schedule)
+- **Satellites und Pakete** – [Natural8 – Journey to APT Incheon 2026](https://www.natural8.com/en/blog/journey-to-apt-incheon-2026) · [Country Exclusives 2026](https://www.natural8.com/en/poker/tournaments/apt-incheon-country-exclusives-2026)
+- **Feld und Ergebnis 2025 (offizieller Bericht des Veranstalters)** – [APT – China's Junjie He Wins APT's Largest Korean Main Event](https://www.theasianpokertour.com/news/china-s-junjie-he-wins-apt-s-largest-korean-main-event-for-krw-380-5-m-usd-275-k-plus-apt-championship-seat-worth-krw-13-8-m-usd-10-k) · 1.281 Entries von 754 Spielern · Preispool KRW 2.766.660.000 · Länderverteilung Top 10
+- **Casino-Einlassregeln** – [Paradise City offiziell](https://www.p-city.com/front/contents/casino/casinoInfo)
 
 > ⚠️ **Das Festival startet am 7. August.** Satellite-Seatzahlen, Late-Reg-Schluss und Shuttle-Zeiten können sich noch ändern. **Prüf am Tag deiner Anmeldung nochmal die APT-Eventseite und das Natural8-Lobby.**
 >
@@ -444,12 +444,12 @@ Alle Zahlen wurden gegen Primärquellen geprüft. **Stand: 28. Juli 2026.**
   <a href="/de/blog/wpt-australia-2026-guide" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Asien-Pazifik</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">WPT Australia 2026 Guide</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">The Star Sydney — 10.–30. Sep, AUD $5.000 Championship</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">The Star Sydney – 10.–30. Sep, AUD $5.000 Championship</div>
   </a>
   <a href="/de/blog/ept-barcelona-2026-guide" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Europa</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">EPT Barcelona 2026 Guide</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Casino Barcelona — 16.–29. Aug, €5.300 Main Event</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Casino Barcelona – 16.–29. Aug, €5.300 Main Event</div>
   </a>
 </div>
 `.trim(),

@@ -161,6 +161,22 @@ Sources: de.wikipedia(Texas Hold'em·Pokerbegriffe) · pokerfirma.com · pokerol
   `die Raise-oder-Fold-Regel`(Regel) · `einen Bet-Size-Spickzettel`(Spickzettel) · `das Raise-Cap`(Cap) ·
   `die **Turn**-Karte`(Karte) · `einem Bet Sizing`(Sizing).
 
+## 7-10. ★인용부호·대시 — 42편 일괄 확정 (2026-08-10, 재조사 금지)
+
+§7-1·§7-5가 이미 독일식으로 적혀 있었는데 **코퍼스가 따라오지 않은 상태**였다. 42편을 일괄 정리했다.
+
+| 항목 | 확정 | 정리 전 실측 |
+|---|---|---|
+| 인용부호 | **`„…“`** (Anführungszeichen unten/oben) | ASCII `"…"` 25편 **294쌍**(+메타 6쌍) ↔ 독일식 18편 218쌍 |
+| 대시 | **` – `** (Halbgeviertstrich) | ` — ` **2,364곳** ↔ ` – ` **9곳** |
+
+- **인용 대상이 영어여도 독일식 부호를 쓴다** — „Don't tap the glass“ · „If you can't spot the sucker…“.
+  독일 조판은 인용문의 언어가 아니라 **본문의 언어**를 따른다.
+- 🔴 **`—,`처럼 뒤에 공백이 없는 자리를 놓치지 마라.** 삽입구를 닫는 대시다(`– … —,`).
+  일괄 치환 후 5곳이 정확히 여기 남아 있었다. 게이트 **D12**가 이제 em dash를 **전부** 잡는다.
+- 마크다운 링크 타이틀(`"thumb:…"`)·인라인 HTML의 `style="…"`는 **산문이 아니다** — 부호를 바꾸지 마라.
+- 게이트: **D11**(ASCII 따옴표) · **D12**(em dash). 셀프테스트 99개. 근거·오탐은 `de-style-gate-spec.md` §6-C.
+
 ## 7-8. 헤드라인 관습 (뉴스·유튜브 — seoTitle 참고)
 
 - 구조 = **[브랜드/장소]: [사건] + 질문·감탄 후크**: „King's: Droht das Overlay beim Polish Poker Masters

@@ -3,17 +3,17 @@ import type { Post } from "../posts";
 export const POST: Post = {
   slug: "holdem-tournament-vs-cash-game",
   title: "Cash Game vs Turnier Poker",
-  seoTitle: "Deine Chips sind kein Geld — Cash Game vs Turnier Poker",
-  desc: "Cash Game vs Turnier Poker — was passt zu dir? Chipwert, steigende Blinds, ICM, Bankroll, was schwerer und profitabler ist und wo Anfänger starten.",
+  seoTitle: "Deine Chips sind kein Geld – Cash Game vs Turnier Poker",
+  desc: "Cash Game vs Turnier Poker – was passt zu dir? Chipwert, steigende Blinds, ICM, Bankroll, was schwerer und profitabler ist und wo Anfänger starten.",
   tldr: "Im Cash Game sind Chips echtes Geld und die Blinds bleiben fest. Im Turnier sind Chips Überlebens-Equity, die Blinds steigen und Auszahlungen hängen von deiner Platzierung ab.",
   category: "tournament",
   date: "2026-06-11",
-  updated: "2026-07-11",
+  updated: "2026-08-10",
   hideSummaryImageSlot: true,
   readTime: "16 Min.",
   emoji: "🏆",
   image: "/images/holdem-tournament-vs-cash-hero.webp",
-  imageAlt: "Nebeneinander gestellte Infografik, die Cash Game und Turnier Poker vergleicht — Chipwert, Blind-Struktur und wann du gehen kannst",
+  imageAlt: "Nebeneinander gestellte Infografik, die Cash Game und Turnier Poker vergleicht – Chipwert, Blind-Struktur und wann du gehen kannst",
   tags: [
     "cash game vs turnier poker",
     "was ist ein cash game beim poker",
@@ -25,15 +25,15 @@ export const POST: Post = {
     "ICM poker",
   ],
   content: `
-Ich erinnere mich noch, wie ich nach meiner ersten Live-Cash-Session meine Chips einsammelte — das war Geld, mit dem ich buchstäblich zur Kasse gehen und es einstecken konnte. Mein erstes Turnier endete ganz anders: vier Stunden sorgfältiges Spiel, ein verlorener Flip und ein Stack Chips, der auf dem Weg nach draußen zu exakt nichts wurde. Genau um diese Lücke geht es in diesem ganzen Artikel.
+Ich erinnere mich noch, wie ich nach meiner ersten Live-Cash-Session meine Chips einsammelte – das war Geld, mit dem ich buchstäblich zur Kasse gehen und es einstecken konnte. Mein erstes Turnier endete ganz anders: vier Stunden sorgfältiges Spiel, ein verlorener Flip und ein Stack Chips, der auf dem Weg nach draußen zu exakt nichts wurde. Genau um diese Lücke geht es in diesem ganzen Artikel.
 
 Fast jeder neue Hold'em-Spieler stellt sich irgendwann dieselbe Frage:
 
-*"Soll ich ==Cash Games== spielen oder ==Turniere==?"*
+*„Soll ich ==Cash Games== spielen oder ==Turniere==?“*
 
 Auf den ersten Blick sieht es nach demselben Spiel aus. Du bekommst weiterhin zwei Hole Cards, fünf Gemeinschaftskarten und vier Setzrunden von Preflop bis River. Strategisch sind es aber fast zwei verschiedene Welten. Im Cash Game sind deine Chips Geld. Im Turnier sind deine Chips dein Turnierleben.
 
-Diese Anleitung erklärt ==Cash Game vs Turnier Poker== so, wie es Anfänger wirklich brauchen: was ein Cash Game ist und wie es funktioniert, Chipwert, Blind-Struktur, wie sich die Strategie ändert, welches Format schwerer ist, welches profitabler ist, Bankroll, ICM und mit welchem du starten solltest. Wenn Turniere selbst noch ein Rätsel sind, lies zuerst [wie Pokerturniere funktionieren — Buy-ins, Blind-Level und der Day-1-Ablauf](/de/blog/holdem-tournament); dieser Artikel vergleicht die beiden Formate, statt jenen Struktur-Guide zu wiederholen.
+Diese Anleitung erklärt ==Cash Game vs Turnier Poker== so, wie es Anfänger wirklich brauchen: was ein Cash Game ist und wie es funktioniert, Chipwert, Blind-Struktur, wie sich die Strategie ändert, welches Format schwerer ist, welches profitabler ist, Bankroll, ICM und mit welchem du starten solltest. Wenn Turniere selbst noch ein Rätsel sind, lies zuerst [wie Pokerturniere funktionieren – Buy-ins, Blind-Level und der Day-1-Ablauf](/de/blog/holdem-tournament); dieser Artikel vergleicht die beiden Formate, statt jenen Struktur-Guide zu wiederholen.
 
 ### Die Antwort in 15 Sekunden
 
@@ -76,19 +76,19 @@ Wenn du diese Tabelle verstehst, ==g:verstehst du bereits die Grundlage des gesa
 
 ## Was ist ein Cash Game beim Poker? (Regeln & wie es funktioniert)
 
-Ein ==Cash Game== (auch Ring Game genannt) ist die ursprüngliche Art, Poker zu spielen: Du setzt dich hin, tauschst dein eigenes Geld gegen Chips, und jeder Chip am Tisch ist genau seinen Nennwert wert. Kein Zeitplan, kein Prize Pool, keine Platzierungen — nur Poker, Hand für Hand.
+Ein ==Cash Game== (auch Ring Game genannt) ist die ursprüngliche Art, Poker zu spielen: Du setzt dich hin, tauschst dein eigenes Geld gegen Chips, und jeder Chip am Tisch ist genau seinen Nennwert wert. Kein Zeitplan, kein Prize Pool, keine Platzierungen – nur Poker, Hand für Hand.
 
 **Wie funktionieren Cash Games?** Du wählst dein eigenes Buy-in innerhalb der ausgeschriebenen Tischlimits. Ein typisches Live-$1/$2-Game erlaubt vielleicht alles von etwa $40 bis $300, und wo du dich einkaufst, macht einen Unterschied: Tiefere Stacks erzeugen mehr Postflop-Spiel, während kürzere Stacks Entscheidungen vereinfachen.
 
-**Chips sind jederzeit Geld.** Gewinnst du einen Pot, gehört dieses Geld sofort dir — es gibt kein "ins Geld kommen" wie in einem Turnier. Deshalb werden Cash-Game-Entscheidungen auch rein danach beurteilt, ob sie langfristig Geld verdienen.
+**Chips sind jederzeit Geld.** Gewinnst du einen Pot, gehört dieses Geld sofort dir – es gibt kein „ins Geld kommen“ wie in einem Turnier. Deshalb werden Cash-Game-Entscheidungen auch rein danach beurteilt, ob sie langfristig Geld verdienen.
 
-**Blinds sind fest.** Ein $1/$2-Game ist fünf Stunden später immer noch $1/$2. Die beiden Pflichteinsätze rotieren einfach jede Hand um den Tisch. Wenn Small Blind, Big Blind oder die "Option" dich noch verwirren — oder du die Regeln für versäumte Blinds und Straddles willst — deckt [was die Blinds beim Poker wirklich sind](/de/blog/holdem-blind-meaning) all das an einem Ort ab.
+**Blinds sind fest.** Ein $1/$2-Game ist fünf Stunden später immer noch $1/$2. Die beiden Pflichteinsätze rotieren einfach jede Hand um den Tisch. Wenn Small Blind, Big Blind oder die „Option“ dich noch verwirren – oder du die Regeln für versäumte Blinds und Straddles willst – deckt [was die Blinds beim Poker wirklich sind](/de/blog/holdem-blind-meaning) all das an einem Ort ab.
 
-**Du kannst frei nachladen und aufstehen.** Verlierst du deinen Stack, kannst du sofort mehr Chips kaufen (bis zum Tischmaximum). Musst du gehen? Sammle deine Chips ein und cashe aus — keine Erlaubnis nötig.
+**Du kannst frei nachladen und aufstehen.** Verlierst du deinen Stack, kannst du sofort mehr Chips kaufen (bis zum Tischmaximum). Musst du gehen? Sammle deine Chips ein und cashe aus – keine Erlaubnis nötig.
 
 **Das Haus nimmt einen Rake.** In den meisten Cash Games nimmt das Haus einen kleinen Anteil aus jedem Pot (oder erhebt zeitbasierte Sitzgebühren). Das prägt still, welche Limits schlagbar sind, weshalb es sich lohnt zu verstehen, [wie das Poker-Rake funktioniert](/de/blog/holdem-rake), bevor du ein Game wählst.
 
-:::note[Dieser Abschnitt deckt die Cash-Game-Grundlagen ab. Wir bauen ihn zu einem eigenen vollständigen Cash-Game-Guide aus — betrachte das als den Ansatz.]:::
+:::note[Dieser Abschnitt deckt die Cash-Game-Grundlagen ab. Wir bauen ihn zu einem eigenen vollständigen Cash-Game-Guide aus – betrachte das als den Ansatz.]:::
 
 ---
 
@@ -100,7 +100,7 @@ Im Cash Game verdoppelt ein doppelter Stack dein Geld. Deshalb können Cash-Game
 
 Im Turnier verdoppelt ein doppelter Chipstack **nicht** deine Geld-Equity. ==r:Auszahlungen hängen von der Platzierung ab==, nicht von der exakten Chipmenge in einem bestimmten Moment.
 
-Stell dir ein Turnier mit 10 Spielern vor, bei dem alle $100 zahlen (die Hausgebühr wird der Einfachheit halber ignoriert — die vollen $1.000 gehen in den Prize Pool).
+Stell dir ein Turnier mit 10 Spielern vor, bei dem alle $100 zahlen (die Hausgebühr wird der Einfachheit halber ignoriert – die vollen $1.000 gehen in den Prize Pool).
 
 | Platz | Preisgeld |
 |:---|:---:|
@@ -132,25 +132,25 @@ In einem Turnier steigen die Blinds nach einem Zeitplan. Ein Stack, der früh 10
 | Spät | Nachladen oder Aufstehen möglich | Short-Stack-All-ins werden häufig |
 | Druck | Niedriger und stabiler | Steigt mit jedem Level |
 
-==r:Darum reicht "einfach auf Premiumhände warten" in Turnieren nicht immer.== Steigende Blinds zwingen dich zu ==Steals, Defends, Reshoves und kontrollierten Risiken==.
+==r:Darum reicht „einfach auf Premiumhände warten“ in Turnieren nicht immer.== Steigende Blinds zwingen dich zu ==Steals, Defends, Reshoves und kontrollierten Risiken==.
 
 ---
 
-## Cash Game vs Turnier Strategie — was sich wirklich ändert
+## Cash Game vs Turnier Strategie – was sich wirklich ändert
 
 Wenn Chips unterschiedliche Dinge bedeuten und Blinds sich anders verhalten, muss sich auch die Strategie ändern. Hier sind die Verschiebungen, die du am Tisch wirklich spürst.
 
 **Cash Games sind ein langes Spiel; Turniere sind viele kurze.** In einem Cash Game wird jede Entscheidung an einer einzigen Frage gemessen: Verdient sie über Tausende Wiederholungen Geld? In einem Turnier muss dieselbe Entscheidung auch eine zweite Frage beantworten: Was macht sie mit meinen Chancen, ins Preisgeld zu überleben?
 
-**Deine Preflop-Basis startet gleich und divergiert dann.** Ein solider [Starthände-Chart](/de/blog/holdem-starting-hands-chart) ist in beiden Formaten die Grundlage — aber Turniere zwingen dich von dieser Basis weg, wenn die Stacks flach werden, Antes ins Spiel kommen und Pay Jumps näher rücken, während dir ein Cash Game erlaubt, die ganze Nacht dieselben disziplinierten Ranges zu spielen.
+**Deine Preflop-Basis startet gleich und divergiert dann.** Ein solider [Starthände-Chart](/de/blog/holdem-starting-hands-chart) ist in beiden Formaten die Grundlage – aber Turniere zwingen dich von dieser Basis weg, wenn die Stacks flach werden, Antes ins Spiel kommen und Pay Jumps näher rücken, während dir ein Cash Game erlaubt, die ganze Nacht dieselben disziplinierten Ranges zu spielen.
 
-**Nachladen verändert, wie Aggression funktioniert.** In einem Cash Game bedeutet ein verlorener Stack, in die Tasche zu greifen, also sind große Bluffs und dünne Calls "nur" Geld. In einem Turnier ist derselbe Fehler das Ausscheiden, weshalb gute Turnierspieler ihre Spots rund um Stackgrößen und Überleben wählen, nicht nur nach Karten.
+**Nachladen verändert, wie Aggression funktioniert.** In einem Cash Game bedeutet ein verlorener Stack, in die Tasche zu greifen, also sind große Bluffs und dünne Calls „nur“ Geld. In einem Turnier ist derselbe Fehler das Ausscheiden, weshalb gute Turnierspieler ihre Spots rund um Stackgrößen und Überleben wählen, nicht nur nach Karten.
 
 ### Deep-Stack-Poker vs Short-Stack Push/Fold
 
 Cash Games belohnen meist Deep-Stack-Skill. Du spielst oft um 100 Big Blinds, also zählen Flop-, Turn- und River-Entscheidungen stark. Du musst Value Bets, Bluffs, Board-Texturen, Position und gegnerische Ranges verstehen.
 
-Turniere starten deep, werden aber oft short-stacked. Bei 25 Big Blinds, 15 Big Blinds oder 10 Big Blinds werden Preflop-Entscheidungen viel wichtiger. Statt drei Streets zu planen, entscheidest du vielleicht, ob du openst, reshovest, callst oder foldest — die genauen Ranges findest du in der [Short-Stack-Strategie: wann pushen oder folden](/de/blog/holdem-short-stack).
+Turniere starten deep, werden aber oft short-stacked. Bei 25 Big Blinds, 15 Big Blinds oder 10 Big Blinds werden Preflop-Entscheidungen viel wichtiger. Statt drei Streets zu planen, entscheidest du vielleicht, ob du openst, reshovest, callst oder foldest – die genauen Ranges findest du in der [Short-Stack-Strategie: wann pushen oder folden](/de/blog/holdem-short-stack).
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -173,7 +173,7 @@ Die größte strategische Trennlinie zwischen Cash Games und Turnieren ist ==ICM
 
 ICM steht für **Independent Chip Model**. Es schätzt den Geldwert deines Turnierstacks anhand von Stackgrößen, verbleibenden Spielern und der Auszahlungsstruktur. Cash Games brauchen kein ICM, weil Chips bereits Geld sind.
 
-Wo beißt es? Vor allem [an der Bubble](/de/blog/holdem-bubble) und an Final Tables. Angenommen, du hältst AKo an der Bubble mit mittlerem Stack und ein anderer Spieler geht all-in. Im Cash Game callst du, wenn der Call nach Pot Odds und Equity profitabel ist. Im Turnier bedeutet Verlieren, mit $0 zu finishen, während Gewinnen deine Preisgeld-Equity nicht verdoppelt — also kann ein Call, der im Cash Game Geld druckt, unter ICM ein klarer Fold sein.
+Wo beißt es? Vor allem [an der Bubble](/de/blog/holdem-bubble) und an Final Tables. Angenommen, du hältst AKo an der Bubble mit mittlerem Stack und ein anderer Spieler geht all-in. Im Cash Game callst du, wenn der Call nach Pot Odds und Equity profitabel ist. Im Turnier bedeutet Verlieren, mit $0 zu finishen, während Gewinnen deine Preisgeld-Equity nicht verdoppelt – also kann ein Call, der im Cash Game Geld druckt, unter ICM ein klarer Fold sein.
 
 | Entscheidungsfaktor | Cash Game | Turnier |
 |------|------|------|
@@ -182,19 +182,19 @@ Wo beißt es? Vor allem [an der Bubble](/de/blog/holdem-bubble) und an Final Tab
 | Wert starker Hände | Stabiler | Ändert sich durch Payout-Druck |
 | Bubble-Druck | Keiner | Enorm |
 
-==g:Wenn du einen starken Turnierspieler eine Hand folden siehst, die zu gut zum Folden aussieht, ist ICM oft der Grund.== Ein Absatz kann der Mathematik nicht gerecht werden — die vollständigen durchgerechneten Beispiele findest du in [ICM erklärt: warum Turnierchips kein Geld sind](/de/blog/holdem-icm).
+==g:Wenn du einen starken Turnierspieler eine Hand folden siehst, die zu gut zum Folden aussieht, ist ICM oft der Grund.== Ein Absatz kann der Mathematik nicht gerecht werden – die vollständigen durchgerechneten Beispiele findest du in [ICM erklärt: warum Turnierchips kein Geld sind](/de/blog/holdem-icm).
 
-![Infografik, die zeigt, dass ein doppelter Turnierstack deine Preisgeld-Equity um weniger als das Doppelte wachsen lässt — der Kern des ICM-Drucks](/images/holdem-tournament-icm-bubble.webp "Turnier-Bubble-Druck und ICM-Entscheidung")
+![Infografik, die zeigt, dass ein doppelter Turnierstack deine Preisgeld-Equity um weniger als das Doppelte wachsen lässt – der Kern des ICM-Drucks](/images/holdem-tournament-icm-bubble.webp "Turnier-Bubble-Druck und ICM-Entscheidung")
 
 ---
 
 ## Sind Cash Games schwerer als Turniere?
 
-Genau diese Frage wird ständig gestellt, und die ehrliche Antwort ist: ==sie sind auf verschiedene Weise schwer==, und "schwerer" hängt davon ab, welche Skills dir fehlen.
+Genau diese Frage wird ständig gestellt, und die ehrliche Antwort ist: ==sie sind auf verschiedene Weise schwer==, und „schwerer“ hängt davon ab, welche Skills dir fehlen.
 
-Cash Games bündeln die Schwierigkeit im **Deep-Stack-Postflop-Spiel**. Du triffst Tag für Tag auf dieselben Stakes — und oft dieselben Regulars — ohne steigende Blinds, die jemanden in Fehler zwingen. Gewinnen erfordert meist eine echte Edge im Hand Reading, Value Betting und in der Disziplin, und viele Spieler empfinden es als härteren Langzeittest, diese Edge herauszuarbeiten.
+Cash Games bündeln die Schwierigkeit im **Deep-Stack-Postflop-Spiel**. Du triffst Tag für Tag auf dieselben Stakes – und oft dieselben Regulars – ohne steigende Blinds, die jemanden in Fehler zwingen. Gewinnen erfordert meist eine echte Edge im Hand Reading, Value Betting und in der Disziplin, und viele Spieler empfinden es als härteren Langzeittest, diese Edge herauszuarbeiten.
 
-Turniere verteilen die Schwierigkeit über **Phasen**. Du brauchst früh Deep-Stack-Skills, spät Push/Fold-Präzision und an der Bubble ICM-Urteilsvermögen — plus die Ausdauer, in Stunde acht gute Entscheidungen zu treffen, und die emotionale Widerstandskraft, lange Strecken ohne Cash zu überstehen. Keine einzelne Phase ist so tief wie Cash-Game-Postflop-Spiel, aber die Bandbreite der Situationen ist größer.
+Turniere verteilen die Schwierigkeit über **Phasen**. Du brauchst früh Deep-Stack-Skills, spät Push/Fold-Präzision und an der Bubble ICM-Urteilsvermögen – plus die Ausdauer, in Stunde acht gute Entscheidungen zu treffen, und die emotionale Widerstandskraft, lange Strecken ohne Cash zu überstehen. Keine einzelne Phase ist so tief wie Cash-Game-Postflop-Spiel, aber die Bandbreite der Situationen ist größer.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -217,7 +217,7 @@ Cash-Game-Ergebnisse werden meist in **bb/100** oder Stunden-Winrate gemessen. G
 
 Turnierergebnisse werden meist über **ROI**, Cashing-Rate, Final-Table-Häufigkeit und große Scores gemessen. Ein gewinnender Turnierspieler kann 20 oder 30 Events in Folge nicht cashen und dann einen Deep Run machen, der alles bezahlt.
 
-Was ist also profitabler? ==Für die meisten Spieler erzeugen Cash Games eine vorhersehbarere Stundenrate, während Turniergewinne in seltenen großen Spitzen ankommen.== Ein starker Turnierspieler kann über ein Jahr absolut mehr verdienen — aber das Geld kommt ungleichmäßig, und du brauchst die Bankroll und das Temperament, um die Lücken zwischen den Scores zu überstehen.
+Was ist also profitabler? ==Für die meisten Spieler erzeugen Cash Games eine vorhersehbarere Stundenrate, während Turniergewinne in seltenen großen Spitzen ankommen.== Ein starker Turnierspieler kann über ein Jahr absolut mehr verdienen – aber das Geld kommt ungleichmäßig, und du brauchst die Bankroll und das Temperament, um die Lücken zwischen den Scores zu überstehen.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -259,14 +259,14 @@ Bankroll ist nicht nur eine Geldfrage. ==Sie schützt deine Entscheidungsfindung
 
 ## Wann ein Cash Game verlassen (und warum du ein Turnier nicht verlassen kannst)
 
-Cash Games sind flexibel. Du kannst dich 30 Minuten hinsetzen, zwei Stunden spielen oder aufstehen, wenn der Tisch schlecht ist. Turniere sind das Gegenteil: Sobald du dich registrierst, spielst du, bis du bustest, cashst oder gewinnst — gehst du mitten im Event, bleiben deine Chips am Tisch und zahlen Blinds, bis sie weg sind.
+Cash Games sind flexibel. Du kannst dich 30 Minuten hinsetzen, zwei Stunden spielen oder aufstehen, wenn der Tisch schlecht ist. Turniere sind das Gegenteil: Sobald du dich registrierst, spielst du, bis du bustest, cashst oder gewinnst – gehst du mitten im Event, bleiben deine Chips am Tisch und zahlen Blinds, bis sie weg sind.
 
-Wann *solltest* du also ein Cash Game verlassen? Die Regeln sagen "wann immer du willst", aber die profitable Antwort ist konkreter:
+Wann *solltest* du also ein Cash Game verlassen? Die Regeln sagen „wann immer du willst“, aber die profitable Antwort ist konkreter:
 
 - **Geh, wenn das Game nicht mehr gut ist.** Die schwächsten Spieler haben aufgehört, das Lineup ist enger geworden, oder die Sitze, die den Tisch profitabel machten, sind weg.
 - **Geh, wenn *du* nicht mehr gut bist.** Tilt, Müdigkeit und Ablenkung zerstören Winrates schneller als schlechte Karten. Wenn du dich beim Callen aus Frust ertappst, sammle deine Chips ein.
 - **Geh nicht nur, weil du eine Zahl erreicht hast.** Ob du ein Buy-in vorn oder hinten liegst, sagt nichts darüber aus, ob die nächste Stunde profitabel ist. In einem tollen Game als Gewinner aufzuhören und in einem miesen Verluste durchzuspielen sind beides Leaks.
-- **Direkt nach einem großen Pot zu gehen ist erlaubt.** Keine Regel zwingt dich, "Action zu geben" — auch wenn eine kurze Abkühlungsrunde vom Umgang her runder ist als ein sofortiger Hit-and-Run.
+- **Direkt nach einem großen Pot zu gehen ist erlaubt.** Keine Regel zwingt dich, „Action zu geben“ – auch wenn eine kurze Abkühlungsrunde vom Umgang her runder ist als ein sofortiger Hit-and-Run.
 
 | Situation | Besser geeignet |
 |------|------|
@@ -297,7 +297,7 @@ Turniere können für Anfänger trotzdem großartig sein, wenn du den Wettbewerb
 | Kurze Sessions spielen | Cash Game |
 | ICM und Bubble-Druck lernen | Turnier |
 
-Wenn du ganz neu bist, lerne zuerst [wie eine Texas-Hold'em-Hand funktioniert](/de/blog/holdem-game-order) und die [Pokerhand-Rangfolge](/de/blog/holdem-hand-rankings). Ein Format zu wählen ist viel einfacher, wenn die Grundregeln automatisch sitzen — und wenn du zu Turnieren tendierst, sieh dir [wie Pokerturniere funktionieren](/de/blog/holdem-tournament "thumb:/images/holdem-tournament-hero.webp") für Buy-ins, Blind-Level und den Day-1-Ablauf an.
+Wenn du ganz neu bist, lerne zuerst [wie eine Texas-Hold'em-Hand funktioniert](/de/blog/holdem-game-order) und die [Pokerhand-Rangfolge](/de/blog/holdem-hand-rankings). Ein Format zu wählen ist viel einfacher, wenn die Grundregeln automatisch sitzen – und wenn du zu Turnieren tendierst, sieh dir [wie Pokerturniere funktionieren](/de/blog/holdem-tournament "thumb:/images/holdem-tournament-hero.webp") für Buy-ins, Blind-Level und den Day-1-Ablauf an.
 
 ### Entscheidungs-Framework für Anfänger
 
@@ -330,7 +330,7 @@ Meine Standardempfehlung für ernsthafte Anfänger ist simpel: Spiele Low-Stakes
 - du bereit bist, ICM, Bubble-Play und Short-Stack-Ranges zu studieren.
 - du lange Phasen ohne Cash aushalten kannst.
 
-Kein Format ist "besser". Sie testen verschiedene Teile desselben Spiels. Viele starke Spieler nutzen Cash Games, um Grundlagen aufzubauen, und Turniere für Chancen mit hohem Upside.
+Kein Format ist „besser“. Sie testen verschiedene Teile desselben Spiels. Viele starke Spieler nutzen Cash Games, um Grundlagen aufzubauen, und Turniere für Chancen mit hohem Upside.
 
 ---
 
@@ -361,7 +361,7 @@ Wenn du die Struktur nicht erklären kannst, kaufe dich noch nicht ein. Erst fra
 
 **Q. Sind Pokerturniere schwerer als Cash Games?**
 
-A. Sie sind auf verschiedene Weise schwer. Turniere verlangen ein breiteres Skillset — früh Deep Stacks, spät Push/Fold, an der Bubble ICM — plus lange Stunden und brutale Varianz. Cash Games bündeln die Schwierigkeit im Deep-Stack-Postflop-Spiel gegen stetigere Lineups. Die meisten Spieler finden Turniere schwerer zu überstehen und Cash Games schwerer zu schlagen.
+A. Sie sind auf verschiedene Weise schwer. Turniere verlangen ein breiteres Skillset – früh Deep Stacks, spät Push/Fold, an der Bubble ICM – plus lange Stunden und brutale Varianz. Cash Games bündeln die Schwierigkeit im Deep-Stack-Postflop-Spiel gegen stetigere Lineups. Die meisten Spieler finden Turniere schwerer zu überstehen und Cash Games schwerer zu schlagen.
 
 **Q. Sind Cash Games für Anfänger profitabel?**
 
@@ -385,7 +385,7 @@ A. Ein Standard-Set mit 300 Chips deckt bequem bis etwa 6-8 Spieler ab. Gib alle
 
 **Q. Spielen Profis Cash Games oder Turniere?**
 
-A. Beides — aber viele Profis spezialisieren sich. Cash-Game-Spezialisten schätzen die stetigere Stunden-Winrate und flexible Zeiten, während Turnierprofis trotz höherer Varianz große Scores und Titel jagen. Viele Top-Spieler machen beides: Cash Games für verlässliches Einkommen, Turniere für Upside und Prestige.
+A. Beides – aber viele Profis spezialisieren sich. Cash-Game-Spezialisten schätzen die stetigere Stunden-Winrate und flexible Zeiten, während Turnierprofis trotz höherer Varianz große Scores und Titel jagen. Viele Top-Spieler machen beides: Cash Games für verlässliches Einkommen, Turniere für Upside und Prestige.
 
 **Q. Ist ein Re-entry-Turnier im Grunde ein Cash Game?**
 
@@ -414,17 +414,17 @@ Beherrsche zuerst die Cash-Grundlagen, füge dann Turniere hinzu, wenn du bereit
   <a href="/de/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Spielablauf</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Texas Hold'em Spielreihenfolge</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Preflop bis Showdown — der komplette Handablauf Schritt für Schritt</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Preflop bis Showdown – der komplette Handablauf Schritt für Schritt</div>
   </a>
   <a href="/de/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Handrangfolge</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Pokerhand-Rangfolge — von Beste bis Schlechteste</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Pokerhand-Rangfolge – von Beste bis Schlechteste</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Alle 10 Hände mit Odds, Beispielen und Board-Rätseln</div>
   </a>
   <a href="/de/blog/holdem-blind-meaning" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Blinds</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Was sind die Blinds beim Poker?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">SB, BB, Blind-Steal und Option — alles erklärt</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">SB, BB, Blind-Steal und Option – alles erklärt</div>
   </a>
 </div>
 `.trim(),

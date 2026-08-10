@@ -162,6 +162,11 @@ const stripNonProse = (s) => s
   .replace(/==([a-zA-Z]{1,2}:)?/g, ' ')
   .replace(/\*\*/g, ' ');
 
+/** 마크다운 링크·이미지의 타깃과 title은 산문이 아니다. stripNonProse의 `\]\([^)]*\)` 는
+ *  **타이틀 안의 괄호**에서 새므로(holdem-straddle L70 실측), 한 겹 중첩까지 허용해 통째로 지운다.
+ *  D11(ASCII 따옴표) 전용 — 새면 `"thumb:…"` 가 산문 인용부호로 오탐된다. */
+const stripLinkTitles = (s) => s.replace(/\]\((?:[^()\n]|\([^()\n]*\))*\)/g, '] ');
+
 /** 날짜·조항 번호는 «마침표 소수점»이 아니다. D3 전용 추가 세척. */
 const stripDates = (s) => s
   .replace(/\b\d{1,2}\.\d{1,2}\.\d{2,4}\b/g, ' ')                       // 31.03.2026
@@ -439,6 +444,38 @@ function auditDeStyle(post) {
   }
   if (d10.length) add('ERR', 'D10', `독일어 인용부호 짝 어긋남 ${d10.length}곳 (§7-5)`, d10);
 
+  /* ── D11 산문 ASCII 따옴표 (§7-1 · 2026-08-10 42편 일괄 확정) ──
+     D10은 «반쪽만 현지화된» „…" 만 봤다. 그래서 처음부터 끝까지 ASCII로 쓴 25편 294쌍은
+     원리상 침묵했다(그 상태를 못 보게 만든 픽스처까지 있었다 — 아래 D10 ⑤).
+     42편을 „…“ 로 통일한 뒤 규칙을 넓힌다. 이제 ASCII 쌍은 «드리프트»다.
+     ⚠ 마크다운 링크 타이틀(`](/x.webp "thumb:…")`)은 산문이 아니다 — stripNonProse의
+       `\]\([^)]*\)` 는 **타이틀에 괄호가 들어가면 새기 때문에**(실측: holdem-straddle L70의
+       "Ein Button- (Mississippi-) Straddle …") 한 겹 중첩까지 허용하는 세척을 먼저 건다. */
+  const d11 = [];
+  for (const l of lines) {
+    const s = stripNonProse(stripLinkTitles(l.raw));
+    for (const m of s.matchAll(/"[^"\n]{1,200}"/g)) {
+      d11.push(`${where(l)} ${m[0].slice(0, 60)} — 독일식 „…“ 로 (§7-1)`);
+    }
+  }
+  if (d11.length) add('ERR', 'D11', `ASCII 인용부호 ${d11.length}곳 — 독일식은 „…“ (§7-1)`, d11);
+
+  /* ── D12 Gedankenstrich (§7-1) ──
+     독일 조판은 Halbgeviertstrich(–)다. EN 마스터에서 상속된 ` — `(em dash)가 2,364곳 있었고
+     ` – `는 9곳뿐이었다 — 즉 «소수가 옳고 다수가 틀린» 상태였다. 2026-08-10에 일괄 정리.
+     🔴 처음엔 «공백 양쪽»만 봤는데, 그러면 삽입구를 닫는 `—,`(뒤에 공백 없음)와
+        하이라이트 마커에 붙은 `==—`가 **원리상 안 걸린다.** 일괄 치환 뒤 5곳이 정확히 그 자리에
+        남아 있었다(hand-rankings·split-pot·strategy·texas ×2). → **em dash 전부**로 넓힌다.
+        독일어 산문에 em dash가 옳은 자리는 없다. 숫자 범위(15–25%)는 이미 –라 대상이 아니다. */
+  const d12 = [];
+  for (const l of lines) {
+    const n = (l.raw.match(/—/g) ?? []).length;
+    if (n) d12.push(`${where(l)} ${n}곳 — '—' → '–' (Halbgeviertstrich)`);
+  }
+  if (d12.length) {
+    add('ERR', 'D12', `em dash ' — ' ${d12.reduce((a, x) => a + Number(x.match(/ (\d+)곳/)[1]), 0)}곳 (§7-1)`, d12);
+  }
+
   /* ── D8 명사 소문자 ── */
   const d8 = [];
   for (const l of lines) {
@@ -631,6 +668,37 @@ const FIXTURES = [
     'Das Rennen: Gegründet 1946 — Koreas zweitältester Marathon. Distanzen: Full 42,195K · 10K.'],
   ['D2', '금액 앵커가 붙은 "€1,650" (잡아야 함)', true, 'Das Main Event kostet €1,650 plus Rake.'],
   ['D2', '수량 앵커가 붙은 "10,000 Chips" (잡아야 함)', true, 'Du startest mit 10,000 Chips.'],
+
+  /* ══ 2026-08-10 (10) 확장 — 표기 42편 일괄 확정 후 «되돌아감»을 막는 두 규칙 ══
+     D10이 「여는 „ 가 있을 때」만 봤기 때문에 **처음부터 ASCII로 쓴 25편 294쌍은 침묵**했다.
+     그 침묵을 고정하던 픽스처(D10 ⑤)가 아래 D11 첫 줄로 뒤집힌다 — 규칙이 넓어졌다는 뜻이다. */
+
+  /* D11 — 산문 ASCII 따옴표 */
+  ['D11', '[fish 원문] ASCII "Fish" (잡아야 함)', true,
+    'Am Tisch nennt man ihn "Fish", und niemand sagt es ihm ins Gesicht.'],
+  ['D11', '독일식 „Fish“ 정상 (울리면 안 됨)', false,
+    'Am Tisch nennt man ihn „Fish“, und niemand sagt es ihm ins Gesicht.'],
+  ['D11', '[straddle L70] 링크 타이틀 속 괄호 — "thumb:…"는 산문이 아니다 (울리면 안 됨)', false,
+    '![Ein Straddle-Einsatz neben dem Dealer-Button](/images/holdem-straddle-button.webp "Ein Button- (Mississippi-) Straddle wird vom Button gesetzt")'],
+  ['D11', '인라인 썸네일 링크 (울리면 안 됨)', false,
+    'Mehr dazu in der [Poker-Reihenfolge](/de/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp").'],
+  ['D11', '인라인 HTML의 style="…" (울리면 안 됨)', false,
+    '<div style="background:rgba(255,248,210,0.10);border-radius:14px">Der Fish zahlt die Rechnung.</div>'],
+  ['D11', '한 줄에 두 쌍 (둘 다 잡아야 함)', true,
+    'Er sagt "ich calle mal" und meint damit "ich habe keinen Plan".'],
+
+  /* D12 — Gedankenstrich */
+  ['D12', "em dash ' — ' (잡아야 함)", true,
+    'Limpen ist fast immer ein Fehler — du kannst den Pot präflop nicht gewinnen.'],
+  ['D12', "Halbgeviertstrich ' – ' 정상 (울리면 안 됨)", false,
+    'Limpen ist fast immer ein Fehler – du kannst den Pot präflop nicht gewinnen.'],
+  ['D12', '숫자 범위 "15–25%" (울리면 안 됨)', false,
+    'Ein Short Stack liegt grob bei 15–25 Big Blinds, und deine Fold Equity trägt dich.'],
+  ['D12', '표 구분선 "|------|" (울리면 안 됨)', false, '| Duell | Gewinnt | Warum |'],
+  ['D12', '삽입구를 닫는 "—," — 뒤에 공백이 없어 «공백 양쪽» 규칙을 빠져나갔다 (잡아야 함)', true,
+    'Hält dein Gegner aber ebenfalls ein einzelnes Ass – und nicht den letzten König —, teilt ihr.'],
+  ['D12', '하이라이트 마커에 붙은 "==—" (잡아야 함)', true,
+    'Rechnet das einmal durch und sagt es laut==— die häufigste Streiterei entsteht über Chip-Werte.'],
 ];
 
 if (argv.includes('--selftest')) {
@@ -752,6 +820,7 @@ for (const [k, n] of [...byCode.entries()].sort((a, b) => b[1] - a[1])) console.
 /* ── 검사 커버리지 — "0건"이 «검증»인지 «미검사»인지 반드시 갈라서 말한다 ── */
 console.log('\n검사 커버리지:');
 console.log(`  D1~D5·D7·D8 (본문 문체): ${report.filter((r) => r.stats.lines).length}/${report.length}편 실제 검사`);
+console.log(`  D10~D12 (표기: „…“ · ASCII 따옴표 · Gedankenstrich): ${report.filter((r) => r.stats.lines).length}/${report.length}편 실제 검사`);
 if (haveBuild) console.log(`  D6 (FAQ 스키마·산출물 기준): ${faqChecked}/${report.length}편 확인${faqMissing ? ` · ⚠ 산출물 없는 글 ${faqMissing}편 = 미검사` : ''}`);
 else console.log(`  ⚠ D6 (FAQ 스키마): .next/server/app/de/blog 없음 → ${report.length}편 전부 **미검사**. \`npm run build\` 후 다시 돌려라.`);
 /* ★기계가 «판정하지 않고 넘긴» 자리 — 여기서 침묵하면 0건이 거짓말이 된다. */

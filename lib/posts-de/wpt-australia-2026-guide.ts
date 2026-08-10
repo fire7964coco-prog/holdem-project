@@ -2,13 +2,13 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "wpt-australia-2026-guide",
-  title: "WPT Australia 2026 — Der komplette Spieler-Guide: Schedule, Satellites & echte Kosten",
+  title: "WPT Australia 2026 – Der komplette Spieler-Guide: Schedule, Satellites & echte Kosten",
   seoTitle: "Zum ersten Mal zur WPT Australia? So spielst du 2026 mit",
-  desc: "WPT Australia 2026 — 10.–30. Sep, The Star Sydney. AUD $1.500 Prime + AUD $5.000 Championship. Satellite ab AUD ~$255. Echte Reisekosten, die andere weglassen.",
+  desc: "WPT Australia 2026 – 10.–30. Sep, The Star Sydney. AUD $1.500 Prime + AUD $5.000 Championship. Satellite ab AUD ~$255. Echte Reisekosten, die andere weglassen.",
   tldr: "WPT Australia 2026: 10.–30. Sep, The Star Sydney. Zwei Flaggschiffe: AUD $1.500 WPT Prime (17.–22. Sep) und AUD $5.000 WPT Championship (24.–30. Sep). On-Site-Satellites ab AUD ~$255. Der Sieger bekommt zusätzlich einen $10.400 WPT-World-Championship-Seat. Mindestalter 18, Star-Club-Mitgliedschaft und Smart-Casual-Dresscode sind Pflicht.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-07-03",
+  updated: "2026-08-10",
   readTime: "14 Min.",
   emoji: "🦘",
   layout: "tournament-guide",
@@ -23,27 +23,27 @@ export const POST: Post = {
     "internationaler Spieler WPT Australia",
   ],
   image: "/images/wpt-australia-2026-guide-hero.webp",
-  imageAlt: "WPT Australia 2026 Poker-Turnier im The Star Sydney — Pokerraum am Darling Harbour mit dem WPT-Championship-Final-Table",
+  imageAlt: "WPT Australia 2026 Poker-Turnier im The Star Sydney – Pokerraum am Darling Harbour mit dem WPT-Championship-Final-Table",
   keepImagesInBody: true,
   content: `
-Drei Wochen Non-Stop-Poker. Zwei Championships, weltweit livestreamt. Sydney im September — besser wird es nicht.
+Drei Wochen Non-Stop-Poker. Zwei Championships, weltweit livestreamt. Sydney im September – besser wird es nicht.
 
-Die WPT Australia 2026 kehrt ins The Star Sydney zurück — zum größten australischen Festival der WPT-Geschichte. Aber wenn du noch nie live ein WPT-Event in Australien gespielt hast, gibt es ==r:einige Dinge, die dich kalt erwischen== — von der Frage, wie du als internationaler Spieler dein Buy-in bezahlst, bis hin dazu, warum dir WPT-Global-Satellites hier nicht weiterhelfen.
+Die WPT Australia 2026 kehrt ins The Star Sydney zurück – zum größten australischen Festival der WPT-Geschichte. Aber wenn du noch nie live ein WPT-Event in Australien gespielt hast, gibt es ==r:einige Dinge, die dich kalt erwischen== – von der Frage, wie du als internationaler Spieler dein Buy-in bezahlst, bis hin dazu, warum dir WPT-Global-Satellites hier nicht weiterhelfen.
 
 Dieser Guide deckt alles ab, was die Konkurrenz auslässt.
 
-Erstes Live-Festival? Fang mit [dem Turnier-Guide](/de/blog/holdem-tournament "thumb:/images/holdem-tournament-hero.webp") an — Buy-ins, Blinds und die Day-1-Checkliste, bevor du fliegst.
+Erstes Live-Festival? Fang mit [dem Turnier-Guide](/de/blog/holdem-tournament "thumb:/images/holdem-tournament-hero.webp") an – Buy-ins, Blinds und die Day-1-Checkliste, bevor du fliegst.
 
 ---
 
 > **Kurze Antwort**
-> Die WPT Australia 2026 läuft ==**vom 10.–30. Sep**== im The Star Sydney, Darling Harbour. Zwei Championship-Events: ==**AUD $1.500 WPT Prime**== (17.–22. Sep) und ==**AUD $5.000 WPT Australia Championship**== (24.–30. Sep). Der Championship-Sieger bekommt außerdem einen ==g:$10.400 Seat für die WPT World Championship im Wynn Las Vegas== im Dezember. ==r:WPT Global ist in Australien NICHT verfügbar — nur On-Site-Satellites.==
+> Die WPT Australia 2026 läuft ==**vom 10.–30. Sep**== im The Star Sydney, Darling Harbour. Zwei Championship-Events: ==**AUD $1.500 WPT Prime**== (17.–22. Sep) und ==**AUD $5.000 WPT Australia Championship**== (24.–30. Sep). Der Championship-Sieger bekommt außerdem einen ==g:$10.400 Seat für die WPT World Championship im Wynn Las Vegas== im Dezember. ==r:WPT Global ist in Australien NICHT verfügbar – nur On-Site-Satellites.==
 
 ---
 
-## WPT Australia 2026 in 30 Sekunden — was neu ist & warum es zählt
+## WPT Australia 2026 in 30 Sekunden – was neu ist & warum es zählt
 
-Das diesjährige Festival kehrt ins ==**The Star Sydney**== zurück und führt ein **Dual-Championship-Format** ein — ein Novum für jeden australischen WPT-Stopp. (Das 2024er-Event fand im The Star Gold Coast statt; der Umzug nach Sydney begann mit der 2025er-Ausgabe.)
+Das diesjährige Festival kehrt ins ==**The Star Sydney**== zurück und führt ein **Dual-Championship-Format** ein – ein Novum für jeden australischen WPT-Stopp. (Das 2024er-Event fand im The Star Gold Coast statt; der Umzug nach Sydney begann mit der 2025er-Ausgabe.)
 
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.25);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -51,10 +51,10 @@ Das diesjährige Festival kehrt ins ==**The Star Sydney**== zurück und führt e
 |:---:|---|---|
 | Termine | ==**10.–30. Sep 2026**== | 18. Sep–1. Okt 2025 |
 | Venue | ==**The Star Sydney**== | The Star Sydney |
-| Championship 1 | WPT Prime AUD $1.500 | — (Single-Champ-Format) |
+| Championship 1 | WPT Prime AUD $1.500 | – (Single-Champ-Format) |
 | Championship 2 | ==**WPT Australia AUD $5.000**== | AUD $5.500 |
-| Prize Pool 2025 | — | ==g:AUD $3.000.000== (600 Entries) |
-| Sieger 2025 | — | Alan Pham (AUD $558.211) |
+| Prize Pool 2025 | – | ==g:AUD $3.000.000== (600 Entries) |
+| Sieger 2025 | – | Alan Pham (AUD $558.211) |
 | Events | ==**36 Events**==, geschätzt AUD $10M+ | ~20 Events |
 | Livestream | Beide Finals weltweit | Nur Main Event |
 | WC-Seat-Bonus | ==g:+$10.400 WPT World Championship== | +$10.400 |
@@ -65,7 +65,7 @@ Das diesjährige Festival kehrt ins ==**The Star Sydney**== zurück und führt e
 
 ---
 
-## WPT Prime vs WPT Australia Championship — welches Event solltest du spielen?
+## WPT Prime vs WPT Australia Championship – welches Event solltest du spielen?
 
 Das ist die Frage, die jeder First-Timer stellt. Hier die ehrliche Aufschlüsselung:
 
@@ -83,7 +83,7 @@ Das ist die Frage, die jeder First-Timer stellt. Hier die ehrliche Aufschlüssel
 
 </div>
 
-**Empfehlung**: Wenn das dein erstes WPT-Event ist, ==g:starte mit dem Prime für AUD $1.500==. Du erlebst die volle WPT-Atmosphäre — livestreamter Final Table, tiefe Struktur, WPT Champions Cup — für etwa ein Drittel des Championship-Buy-ins. Viele Spieler spielen beide.
+**Empfehlung**: Wenn das dein erstes WPT-Event ist, ==g:starte mit dem Prime für AUD $1.500==. Du erlebst die volle WPT-Atmosphäre – livestreamter Final Table, tiefe Struktur, WPT Champions Cup – für etwa ein Drittel des Championship-Buy-ins. Viele Spieler spielen beide.
 
 ---
 
@@ -91,7 +91,7 @@ Das ist die Frage, die jeder First-Timer stellt. Hier die ehrliche Aufschlüssel
 
 ### ⚠️ Kritischer Fakt: WPT Global funktioniert in Australien NICHT
 
-==r:WPT Global, die zentrale Online-Satellite-Plattform für WPT-Events weltweit, ist **in Australien gesperrt**.== Australische Residents können sich nicht über WPT Global qualifizieren. Das erwischt auch internationale Spieler kalt — selbst wenn du aus einem für WPT Global zugelassenen Land anreist, findest du auf der Plattform keine WPT-Australia-spezifischen Satellites.
+==r:WPT Global, die zentrale Online-Satellite-Plattform für WPT-Events weltweit, ist **in Australien gesperrt**.== Australische Residents können sich nicht über WPT Global qualifizieren. Das erwischt auch internationale Spieler kalt – selbst wenn du aus einem für WPT Global zugelassenen Land anreist, findest du auf der Plattform keine WPT-Australia-spezifischen Satellites.
 
 **Deine Satellite-Optionen laufen On-Site im The Star Sydney.**
 
@@ -111,11 +111,11 @@ Das ist die Frage, die jeder First-Timer stellt. Hier die ehrliche Aufschlüssel
 
 ### Können Overseas-Spieler sich online qualifizieren?
 
-Wenn du außerhalb Australiens bist und dich vor dem Abflug mit Online-Satellites warmspielen willst, sind die Optionen begrenzt. Checke WPT.com auf angekündigte Online-Qualifier-Partnerschaften näher am Event — historisch hat die WPT für australische Stopps begrenzte Online-Wege über regionale Partner angeboten.
+Wenn du außerhalb Australiens bist und dich vor dem Abflug mit Online-Satellites warmspielen willst, sind die Optionen begrenzt. Checke WPT.com auf angekündigte Online-Qualifier-Partnerschaften näher am Event – historisch hat die WPT für australische Stopps begrenzte Online-Wege über regionale Partner angeboten.
 
 ---
 
-## WPT Australia 2026 kompletter Schedule — alle Key-Events von AUD $460 bis $10.000
+## WPT Australia 2026 kompletter Schedule – alle Key-Events von AUD $460 bis $10.000
 
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.25);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -154,17 +154,17 @@ Wenn du außerhalb Australiens bist und dich vor dem Abflug mit Online-Satellite
 
 Mit dem auf AUD $5.000 gesenkten 2026er-Buy-in (runter von $5.500 in 2025) und einem neuen Dual-Championship-Format, das mehr Spieler ins Festival bringt, werden die Felder voraussichtlich die größten der Event-Geschichte.
 
-**Der Sieger-Bonus**: Der Erste in der WPT Australia Championship erhält außerdem einen ==g:$10.400 Entry für die WPT World Championship im Wynn Las Vegas== im Dezember 2026 — damit liegt der Paketwert deutlich über dem $5.000-Buy-in.
+**Der Sieger-Bonus**: Der Erste in der WPT Australia Championship erhält außerdem einen ==g:$10.400 Entry für die WPT World Championship im Wynn Las Vegas== im Dezember 2026 – damit liegt der Paketwert deutlich über dem $5.000-Buy-in.
 
 ---
 
-![WPT-Australia-Pokertische im The Star Sydney mit Blick auf den Darling Harbour — Spieler beim 2026er-Championship](/images/wpt-australia-2026-tournament-floor.webp)
+![WPT-Australia-Pokertische im The Star Sydney mit Blick auf den Darling Harbour – Spieler beim 2026er-Championship](/images/wpt-australia-2026-tournament-floor.webp)
 
-*Der Pokerraum des The Star Sydney überblickt den Darling Harbour. Sydney im September: Tageshöchstwerte 19–22 °C, kühle Abende um 11–13 °C — pack eine leichte Jacke für nächtliche Cashgame-Sessions ein.*
+*Der Pokerraum des The Star Sydney überblickt den Darling Harbour. Sydney im September: Tageshöchstwerte 19–22 °C, kühle Abende um 11–13 °C – pack eine leichte Jacke für nächtliche Cashgame-Sessions ein.*
 
 ---
 
-## The Star Sydney — Zutrittsvoraussetzungen, die First-Timer immer falsch machen
+## The Star Sydney – Zutrittsvoraussetzungen, die First-Timer immer falsch machen
 
 ### 1. Du musst dem Star Club beitreten (gratis, aber Pflicht)
 
@@ -182,7 +182,7 @@ Du kannst keine einzige Hand spielen, ohne **Star-Club-Mitglied** zu sein. Die M
 
 </div>
 
-### 2. Smart-Casual-Dresscode — strikt durchgesetzt
+### 2. Smart-Casual-Dresscode – strikt durchgesetzt
 
 Das The Star Sydney setzt einen **Smart-Casual-Dresscode** durch. An der Tür abgewiesen zu werden heißt, dein Turnier-Registrierungsfenster zu verpassen.
 
@@ -190,7 +190,7 @@ Das The Star Sydney setzt einen **Smart-Casual-Dresscode** durch. An der Tür ab
 
 ### 3. So kommst du hin
 
-Das The Star Sydney liegt an der **80 Pyrmont Street, Pyrmont NSW 2009** — direkt am Darling Harbour.
+Das The Star Sydney liegt an der **80 Pyrmont Street, Pyrmont NSW 2009** – direkt am Darling Harbour.
 
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.25);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -203,34 +203,34 @@ Das The Star Sydney liegt an der **80 Pyrmont Street, Pyrmont NSW 2009** — dir
 
 </div>
 
-**Nächstgelegene Hotels**: The Star Grand Hotel (mit dem Casino verbunden, früh buchen — der September ist schnell ausgebucht), Sofitel Sydney Darling Harbour (5 Min. zu Fuß), Novotel Sydney on Darling Harbour (5 Min. zu Fuß).
+**Nächstgelegene Hotels**: The Star Grand Hotel (mit dem Casino verbunden, früh buchen – der September ist schnell ausgebucht), Sofitel Sydney Darling Harbour (5 Min. zu Fuß), Novotel Sydney on Darling Harbour (5 Min. zu Fuß).
 
 ---
 
 ## Wie du als internationaler Spieler die WPT Australia bezahlst
 
-Dieser Abschnitt ist das, was ==r:jeder Guide der Konkurrenz auslässt== — und genau das, woran internationale Spieler am häufigsten scheitern.
+Dieser Abschnitt ist das, was ==r:jeder Guide der Konkurrenz auslässt== – und genau das, woran internationale Spieler am häufigsten scheitern.
 
 ### NSW-Recht: tägliches Bargeld-Limit von AUD $5.000
 
-Nach dem **NSW Casino Control Act** gilt ein **tägliches Bargeld-Limit von AUD $5.000** für das Spiel. Alle Turnier-Entries (inklusive Satellites) müssen mit Gaming-Chips gekauft werden — nicht per Kreditkarte oder Bargeld am Tisch.
+Nach dem **NSW Casino Control Act** gilt ein **tägliches Bargeld-Limit von AUD $5.000** für das Spiel. Alle Turnier-Entries (inklusive Satellites) müssen mit Gaming-Chips gekauft werden – nicht per Kreditkarte oder Bargeld am Tisch.
 
-### Wire-Transfer ans The Star Sydney — bevor du ankommst
+### Wire-Transfer ans The Star Sydney – bevor du ankommst
 
 Für Buy-ins über AUD $5.000 (oder um dir die täglichen Abhebe-Logistiken zu sparen) ist ==g:die einfachste Methode ein Bank-Wire-Transfer, bevor du fliegst==.
 
 <div style="background:rgba(0,0,0,0.25);border:1px solid rgba(255,255,255,0.10);border-radius:10px;padding:16px 22px;margin:16px 0;font-size:13px;line-height:2">
-<strong>The Star Sydney — Zur Banküberweisung</strong><br/>
-⚠️ The Star gibt die Überweisungsdaten <strong>individuell pro Gast</strong> heraus — <strong>überweise nicht an eine online gefundene Kontonummer.</strong><br/>
+<strong>The Star Sydney – Zur Banküberweisung</strong><br/>
+⚠️ The Star gibt die Überweisungsdaten <strong>individuell pro Gast</strong> heraus – <strong>überweise nicht an eine online gefundene Kontonummer.</strong><br/>
 Kontaktiere vor dem Flug Star Poker oder die Kasse (Cage) von The Star Sydney (über starpoker.com.au oder den Guest Service Desk) und fordere die aktuellen, <strong>auf deinen Namen ausgestellten</strong> Überweisungsdaten an.<br/>
 Zu erwarten: NAB-Konto, <strong>nur persönliche Bankkonten</strong> (kein Wise/Revolut/Dritte), dein vollständiger Name + Passnummer im Verwendungszweck, 1–3 Werktage bis zur Gutschrift.
 </div>
 
 ==r:Wichtige Einschränkungen:==
 - Transfers von Wise, Revolut oder anderen Remittance-Anbietern werden **abgelehnt**
-- Keine Drittanbieter-, Geschäfts- oder Treuhandkonten — nur persönliche Bankkonten
+- Keine Drittanbieter-, Geschäfts- oder Treuhandkonten – nur persönliche Bankkonten
 - Gib deinen vollständigen Namen und deine Reisepassnummer im Transfer-Verwendungszweck an
-- Die Gelder brauchen 1–3 Werktage zum Clearing — überweise mindestens eine Woche vor dem Festival
+- Die Gelder brauchen 1–3 Werktage zum Clearing – überweise mindestens eine Woche vor dem Festival
 
 ### Bei der Ankunft
 
@@ -238,7 +238,7 @@ Geh mit deinem Reisepass zum Guest Service Desk. Bestätige, dass dein Wire-Tran
 
 ---
 
-## Australien-Visum — was du vor dem Abflug brauchst
+## Australien-Visum – was du vor dem Abflug brauchst
 
 Die meisten internationalen Besucher brauchen entweder eine **ETA (Electronic Travel Authority)** oder ein Standard-Touristenvisum.
 
@@ -258,7 +258,7 @@ Die meisten internationalen Besucher brauchen entweder eine **ETA (Electronic Tr
 
 ---
 
-## WPT Australia 2026 Budget-Aufschlüsselung — echte Reisekosten
+## WPT Australia 2026 Budget-Aufschlüsselung – echte Reisekosten
 
 Hier ist, was eine komplette WPT-Australia-Reise tatsächlich kostet, basierend auf 2025er-Daten:
 
@@ -281,15 +281,15 @@ Hier ist, was eine komplette WPT-Australia-Reise tatsächlich kostet, basierend 
 /de/blog/ept-barcelona-2026-guide | EPT Barcelona 2026 Guide | /images/ept-barcelona-2026-guide-hero.webp
 :::
 
-## FAQ — WPT Australia 2026
+## FAQ – WPT Australia 2026
 
 **Q. Kann ich mich über WPT Global online für die WPT Australia 2026 qualifizieren?**
 
-A. ==r:Nein.== WPT Global ist in Australien nicht verfügbar — es ist ein gesperrtes Territorium. Deine Qualifikationsoptionen beschränken sich auf On-Site-Satellites im The Star Sydney, die etwa 2 Wochen vor den Championship-Events zu laufen beginnen.
+A. ==r:Nein.== WPT Global ist in Australien nicht verfügbar – es ist ein gesperrtes Territorium. Deine Qualifikationsoptionen beschränken sich auf On-Site-Satellites im The Star Sydney, die etwa 2 Wochen vor den Championship-Events zu laufen beginnen.
 
 **Q. Muss ich die Star-Club-Mitgliedschaft im Voraus buchen?**
 
-A. Du kannst dich vorab online unter thestarclub.com.au/sign-up registrieren, um Zeit zu sparen, aber ==g:du musst die persönliche ID-Prüfung am Guest Service Desk bei der Ankunft mit deinem originalen Reisepass abschließen==. Erledige das, sobald du ankommst — vor dem Turnier-Registrierungsschluss.
+A. Du kannst dich vorab online unter thestarclub.com.au/sign-up registrieren, um Zeit zu sparen, aber ==g:du musst die persönliche ID-Prüfung am Guest Service Desk bei der Ankunft mit deinem originalen Reisepass abschließen==. Erledige das, sobald du ankommst – vor dem Turnier-Registrierungsschluss.
 
 **Q. Was ist der günstigste Weg in die WPT Australia Championship?**
 
@@ -297,7 +297,7 @@ A. Die On-Site-Zweistufen-Satellite-Route gibt dir eine Chance für ==g:rund AUD
 
 **Q. Werden Poker-Gewinne in Australien besteuert?**
 
-A. ==g:Für Recreational-Spieler werden Poker-Gewinne in Australien in der Regel nicht besteuert== — die ATO behandelt Poker typischerweise als Glücksspiel und nicht als Gewerbe. Für Profis kann eine andere Pflicht gelten. Konsultiere für deine konkrete Situation einen Steuerberater.
+A. ==g:Für Recreational-Spieler werden Poker-Gewinne in Australien in der Regel nicht besteuert== – die ATO behandelt Poker typischerweise als Glücksspiel und nicht als Gewerbe. Für Profis kann eine andere Pflicht gelten. Konsultiere für deine konkrete Situation einen Steuerberater.
 
 **Q. Wann öffnet die Turnier-Registrierung jeden Tag?**
 
