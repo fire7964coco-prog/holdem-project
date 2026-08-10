@@ -358,9 +358,9 @@ Ist deine Gewinnwahrscheinlichkeit **höher** als der Prozentsatz, den die Pot O
 
 ## Texas Hold'em Spickzettel zum Ausdrucken
 
-Das ist die Kurzfassung für neben den Tisch. Du kannst sie in deine Notizen kopieren, die Seite ausdrucken oder vor der Heimrunde das englischsprachige PDF nutzen.
+Das ist die Kurzfassung für neben den Tisch. Du kannst sie in deine Notizen kopieren, die Seite ausdrucken oder vor der Pokerrunde das PDF mitnehmen.
 
-[Texas Hold'em Regeln für Anfänger als PDF herunterladen](/downloads/texas-holdem-rules-for-beginners.pdf)
+**[Texas Hold'em Regeln für Anfänger als PDF herunterladen (A4, 2 Seiten)](/downloads/texas-holdem-rules-for-beginners-de.pdf)** – auf Deutsch, mit Pokerblätter-Reihenfolge, Setzrunden und Chip-Setup. Einmal ausdrucken und neben den Tisch legen.
 
 | Thema | Anfänger-Antwort |
 |------|-----------------|

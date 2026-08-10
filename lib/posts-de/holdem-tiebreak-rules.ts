@@ -194,7 +194,7 @@ A. Die Straße mit der höheren obersten Karte – Q-J-10-9-8 schlägt J-10-9-8-
 
 A. Verglichen wird Karte für Karte von oben: Ein Ass-hoher Flush schlägt einen König-hohen, und bei gleicher oberster Karte geht es zur nächsten – durch alle fünf. Die Farbe bricht nie den Gleichstand, bei identischen Rängen wird geteilt. Im Hold'em haben zwei Flushes ohnehin immer dieselbe Farbe, weil sich alle das Board teilen.
 
-**Q. Wer gewinnt bei zwei gleichen Full Houses?**
+**Q. Full House gegen Full House – wer gewinnt?**
 
 A. Zuerst zählt der Drilling: K-K-K-2-2 schlägt Q-Q-Q-A-A, obwohl die Asse größer aussehen. Erst wenn die Drillinge identisch sind, wird das Paar verglichen. Ein Full House hat keinen Kicker – stimmen Drilling und Paar überein, ist es ein Split.
 

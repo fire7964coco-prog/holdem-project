@@ -104,7 +104,7 @@ Du hältst **A♠ 6♠** → **A♠ J♠ 9♠ 7♠ 6♠**, einen Ace-High-Flush.
 
 ## Was schlägt einen Flush im Poker?
 
-Dein Flush ist Favorit gegen den Großteil des Decks – aber genau **vier Handtypen** (plus ein höherer Flush) schlagen ihn:
+Die **Flush-Regeln** sind schnell erzählt: fünf Karten einer Farbe, Reihenfolge egal, verglichen wird von der höchsten Karte abwärts. Dein Flush ist Favorit gegen den Großteil des Decks – aber genau **vier Handtypen** (plus ein höherer Flush) schlagen ihn:
 
 :::compare
 Schlägt deinen Flush | Verliert gegen deinen Flush

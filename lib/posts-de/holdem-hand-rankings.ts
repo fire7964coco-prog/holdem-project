@@ -15,7 +15,7 @@ export const POST: Post = {
   emoji: "🃏",
   image: "/images/holdem-hand-rankings-hero.webp",
   imageAlt: "Royal Flush – 10 J Q K A in Pik auf einem Pokertisch mit Chip-Stacks und Dealer-Button",
-  tags: ["pokerhände reihenfolge", "poker reihenfolge der hände", "texas holdem hände", "was schlägt was poker", "poker kicker", "poker gleichstand", "beste pokerhände", "poker blätter reihenfolge"],
+  tags: ["pokerhände reihenfolge", "poker reihenfolge der hände", "texas holdem hände", "was schlägt was poker", "poker kicker", "poker gleichstand", "beste pokerhände", "poker blätter reihenfolge", "pokerblätter", "poker reihenfolge pdf"],
   content: `
 Du bist heads-up am River. Dein Flush ist da, du bist dir sicher, dass er der beste ist – und dann ==r:schiebt der Dealer den Pot auf die andere Seite==. Das Board war gepaart, dein Gegner hatte ein Full House, und du hast es überhaupt nicht kommen sehen.
 
@@ -25,9 +25,9 @@ Dieser Leitfaden löst beides. Du bekommst die komplette Reihenfolge mit den ech
 
 ---
 
-## Pokerhände-Reihenfolge: die komplette Liste auf einen Blick
+## Pokerblätter-Reihenfolge: die komplette Liste auf einen Blick
 
-Fang hier an. Das ist die gesamte Rangfolge, von der stärksten zur schwächsten Hand, mit der langfristigen Wahrscheinlichkeit, jede Hand bis zum River im Texas Hold'em zu treffen.
+Fang hier an. Das sind alle zehn **Poker-Kombinationen** in ihrer Rangfolge – von der stärksten zur schwächsten Hand, mit der langfristigen Wahrscheinlichkeit, jede bis zum River im Texas Hold'em zu treffen. „Pokerblatt“, „Pokerhand“ und „Wertigkeit der Karten“ meinen dabei dasselbe.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -35,19 +35,21 @@ Fang hier an. Das ist die gesamte Rangfolge, von der stärksten zur schwächsten
 |:---|:---|:---|:---|:---:|
 | **1** | Royal Flush | „Broadway-Flush“ | A-K-Q-J-10 in einer Farbe | 0,0032% |
 | **2** | Straight Flush | „Steel Wheel“ (A-5) | 5 in Folge, eine Farbe | 0,0279% |
-| **3** | Vierling | „Quads“ | Vier Karten gleichen Werts | 0,168% |
+| **3** | Vierling | „Quads“ / „Poker“ | Vier Karten gleichen Werts | 0,168% |
 | **4** | Full House | „Boat“ / „Full Boat“ | Drilling + Paar | 2,60% |
 | **5** | Flush | – | Beliebige 5 einer Farbe | 3,03% |
 | **6** | Straße | – | 5 in Folge, gemischte Farben | 4,62% |
 | **7** | Drilling | „Trips“ / „Set“ | Drei Karten gleichen Werts | 4,83% |
 | **8** | Zwei Paare | – | Zwei verschiedene Paare | 23,5% |
 | **9** | Paar | – | Zwei Karten gleichen Werts | 43,8% |
-| **10** | High Card | „Kein Paar“ | Überhaupt keine Kombination | 17,4% |
+| **10** | High Card | „Höchste Karte“ / „Kein Paar“ | Überhaupt keine Kombination | 17,4% |
 
 </div>
 
 > **Die eine Regel, die Diskussionen beendet**
 > Paar und High Card machen zusammen rund 61% aller Sieben-Karten-Hände bis zum River aus. Große Hände wirken häufig, weil man sie sich merkt – aber die meisten Pots werden mit einem Paar und einem [Kicker](/de/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp") entschieden.
+
+**[Pokerblätter-Reihenfolge als PDF herunterladen (A4, zum Ausdrucken)](/downloads/texas-holdem-rules-for-beginners-de.pdf)** – die komplette Rangfolge plus Setzrunden und Chip-Setup auf zwei Seiten. Für den Pokerabend ausdrucken und neben den Tisch legen.
 
 :::quiz:::
 
@@ -61,11 +63,11 @@ Vor den Händen brauchst du die Kartenstärke. Nur zwei Dinge.
 
 **A > K > Q > J > 10 > 9 > 8 > 7 > 6 > 5 > 4 > 3 > 2**
 
-Das Ass ist die stärkste Karte und die einzige, die die Regeln biegt: Es spielt hoch (A-K-Q-J-10) *und* niedrig (A-2-3-4-5, das „Wheel“). Es kann nicht durch die Mitte herumlaufen – ==r:**K-A-2-3-4 ist keine Straße**==, und Q-K-A-2-3 ebenso wenig.
+Das Ass ist die stärkste Karte und die einzige, die die Regeln biegt: Es spielt hoch (A-K-Q-J-10) *und* niedrig (A-2-3-4-5, das „Wheel“). Es kann nicht durch die Mitte herumlaufen – ==r:**K-A-2-3-4 ist keine Straße**==, und Q-K-A-2-3 oder J-Q-K-A-2 ebenso wenig. Das Ass verbindet nur abwärts ab der 5 oder aufwärts ab der Zehn.
 
 ### Farben-Reihenfolge beim Poker: Es gibt keine
 
-Im Standard-Texas-Hold'em **schlägt keine Farbe eine andere**. Pik, Herz, Karo und Kreuz sind exakt gleichwertig – Pik schlägt nicht Herz, und zwei identische Straßen in verschiedenen Farben teilen den Pot. Die Farbe zählt nur, um einen Flush zu *bilden*, nie um einen Gleichstand zu entscheiden. Haben zwei Spieler dieselben fünf Karten in verschiedenen Farben, wird der Pot geteilt – jedes Mal.
+Im Standard-Texas-Hold'em **schlägt keine Farbe eine andere**. Anders als beim Skat oder beim Bridge gibt es keine Farb-Rangfolge: Pik, Herz, Karo und Kreuz sind exakt gleichwertig – Pik schlägt nicht Herz, und zwei identische Straßen in verschiedenen Farben teilen den Pot. Die Farbe zählt nur, um einen Flush zu *bilden*, nie um einen Gleichstand zu entscheiden. Haben zwei Spieler dieselben fünf Karten in verschiedenen Farben, wird der Pot geteilt – jedes Mal.
 
 Die Farbe entscheidet im Hold'em nicht einmal über den letzten Chip: Bleibt beim Chop einer übrig, geht er an den ersten Spieler links vom Button. Nur bei Stud und Razz wird dieser Chip über die höhere Farbe vergeben.
 
@@ -89,7 +91,7 @@ Sie kann nicht geschlagen werden; der einzige mögliche Gleichstand ist ein Roya
 
 Nur ein höherer Straight Flush oder ein Royal Flush schlägt ihn. Die niedrigste Version, A-2-3-4-5 in einer Farbe, heißt **„Steel Wheel“**. Treffen zwei Straight Flushes aufeinander, gewinnt der mit der höheren obersten Karte.
 
-### #3 – Vierling (Quads)
+### #3 – Vierling (Quads, auch „Poker“ genannt)
 
 :::hand[8♣,8♦,8♥,8♠,K♥] Vierling – vier Achten + Kicker:::
 
@@ -122,9 +124,11 @@ Zwei Flushes werden Karte für Karte von oben verglichen: A-J-8-6-2 schlägt A-J
 
 **7♠ 6♥ 5♣ 4♦ 3♠** – fünf Karten in Folge, Farben gemischt.
 
+Die **Straßen-Regeln** in drei Zeilen:
+
 - **Die Nuts:** A-K-Q-J-10 („Broadway“) ist die höchste Straße.
 - **Das Wheel:** A-2-3-4-5 ist die niedrigste Straße (das Ass spielt niedrig).
-- **Verboten:** Sie kann nicht herumlaufen – K-A-2-3-4 ist keine Straße.
+- **Verboten:** Sie kann nicht herumlaufen – K-A-2-3-4 und J-Q-K-A-2 sind keine Straßen.
 
 Zwischen zwei Straßen gewinnt die mit der höheren obersten Karte.
 

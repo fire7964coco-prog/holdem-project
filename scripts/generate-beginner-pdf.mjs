@@ -409,6 +409,106 @@ const CONTENT = {
     },
     tip: "提示: 前几次可以打印放在牌桌旁，边玩边看。",
   },
+
+  /* de — 2026-08-10 추가. 독일 SERP는 «인쇄용 PDF»가 사실상 기본값이다:
+     poker.de·PokerOlymp·TexasSpielen·CasinoVerdiener가 전부 PDF를 건다(PokerOlymp는 직링크 파일).
+     검색어도 실재한다 — `poker reihenfolge pdf` 260/LDA11 · `poker regeln pdf zum ausdrucken` 70/LDA11 ·
+     `zum ausdrucken` 50/LDA14. ★그전까지 de 글은 **영어 PDF**를 독일어 링크 문구로 걸고 있었다.
+     용지는 A4 — Letter는 미국 규격이라 독일에서 인쇄하면 여백이 어긋난다. */
+  de: {
+    dir: "ltr",
+    pageSize: "A4",
+    fileName: "texas-holdem-rules-for-beginners-de.pdf",
+    fontStack: "'Helvetica Neue', Arial, sans-serif",
+    brand: "holdemmaster.com",
+    title: "Texas Hold'em Regeln für Anfänger",
+    subtitle: "Spickzettel auf einer Seite: Pokerblätter, Spielablauf und die Grundlagen",
+    page2Title: "Spielen, Setzen, Gewinnen – Referenz für Anfänger",
+    footer1: "holdemmaster.com · Texas Hold'em Regeln für Anfänger",
+    footer2: "Kompletter Guide: holdemmaster.com/de/blog/texas-holdem-rules-for-beginners",
+    pageLabel: (n, total) => `Seite ${n} von ${total}`,
+    howItWorks: {
+      heading: "So läuft das Spiel",
+      paras: [
+        "Jeder bekommt 2 verdeckte Startkarten. In der Mitte liegen fünf Gemeinschaftskarten für alle.",
+        "Aus diesen sieben Karten baust du die besten fünf – mit 2, 1 oder sogar 0 deiner eigenen Karten.",
+        "Es gibt 4 Setzrunden: Preflop, Flop, Turn, River. Am Showdown gewinnt die beste Hand den Pot – oder du gewinnst früher, wenn alle anderen folden.",
+      ],
+    },
+    handRankings: {
+      heading: "Pokerblätter – die Reihenfolge",
+      hint: "oben am stärksten",
+      headers: ["", "BLATT", "BEISPIEL", "WAS ES BEDEUTET"],
+      rows: [
+        ["Royal Flush", ["A", "K", "Q", "J", "10"], "spade", "Das bestmögliche Blatt"],
+        ["Straight Flush", ["9", "8", "7", "6", "5"], "heart", "5 in Folge, eine Farbe"],
+        ["Vierling („Poker“)", ["Q", "Q", "Q", "Q"], null, "Vier Karten gleichen Werts"],
+        ["Full House", ["K", "K", "K", "7", "7"], null, "Drilling + Paar"],
+        ["Flush", ["A", "J", "8", "5", "2"], "diamond", "5 einer Farbe, Reihenfolge egal"],
+        ["Straße", ["10", "9", "8", "7", "6"], null, "5 in Folge, gemischte Farben"],
+        ["Drilling (Set / Trips)", ["8", "8", "8"], null, "Drei Karten gleichen Werts"],
+        ["Zwei Paare", ["A", "A", "9", "9"], null, "Zwei verschiedene Paare"],
+        ["Paar", ["J", "J"], null, "Zwei Karten gleichen Werts"],
+        ["High Card (Höchste Karte)", ["A", "K", "7", "4", "2"], null, "Keine Kombination"],
+      ],
+      tiebreak:
+        "Gleichstand: gleiches Blatt? Dann entscheidet die höchste Beikarte (der Kicker). Fünf identische Karten teilen den Pot – Farben entscheiden nie.",
+    },
+    bettingRounds: {
+      heading: "Die vier Setzrunden",
+      steps: [
+        ["PREFLOP", "0 Karten", "Du handelst mit deinen 2 Startkarten"],
+        ["FLOP", "3 Karten", "Die ersten Gemeinschaftskarten"],
+        ["TURN", "+1 Karte", "Vierte Gemeinschaftskarte"],
+        ["RIVER", "+1 Karte", "Fünfte und letzte Karte"],
+      ],
+      showdown:
+        "Showdown: Sind nach dem River noch zwei oder mehr Spieler dabei, gewinnt die beste Fünf-Karten-Hand den Pot.",
+    },
+    whoActsFirst: {
+      heading: "Wer handelt zuerst?",
+      rows: [
+        ["Preflop:", "der Spieler links vom Big Blind beginnt."],
+        ["Nach dem Flop:", "der erste verbliebene Spieler links vom Button (der Button handelt zuletzt)."],
+      ],
+      memory: "Merkhilfe: vor dem Flop links vom BB, nach dem Flop links vom Button.",
+    },
+    bettingActions: {
+      heading: "Die Setzaktionen",
+      hint: "mehr als diese vier gibt es nicht",
+      actions: [
+        ["Folden", "Du gibst deine Hand auf."],
+        ["Checken", "Du gibst ab, ohne zu setzen."],
+        ["Callen", "Du gehst den aktuellen Einsatz mit."],
+        ["Betten / Raisen", "Du setzt Chips oder erhöhst."],
+      ],
+    },
+    startingHands: {
+      heading: "Starke Starthände",
+      hint: "die spielst du mit Selbstvertrauen",
+      line: "AA  KK  QQ  JJ   –   AK  AQ   –   TT-77   –   suited Broadways (KQs, QJs, JTs)",
+    },
+    chipSetup: {
+      heading: "Schnelles Chip-Setup für den Pokerabend",
+      hint: "Chipwert 200 = 100 BB (Blinds 1/2)",
+      headers: ["Chip", "Wert", "Pro Spieler", "Gesamt"],
+      rows: [
+        ["Weiß", "1", "20", "20"],
+        ["Rot", "5", "16", "80"],
+        ["Blau", "25", "4", "100"],
+      ],
+    },
+    mistakes: {
+      heading: "Häufige Anfängerfehler",
+      items: [
+        "Zu glauben, du müsstest beide Startkarten benutzen – es zählen immer die besten fünf.",
+        "Vergessen, dass sich die Reihenfolge nach dem Flop ändert.",
+        "Jedes Ass spielen – ein schwaches Ass macht meist nur das zweitbeste Paar.",
+        "Jedem Draw hinterherlaufen – calle nur, wenn der Preis stimmt.",
+      ],
+    },
+    tip: "Tipp: Einmal ausdrucken und für die ersten Runden neben den Tisch legen.",
+  },
 };
 
 // ── HTML 빌드 ───────────────────────────────────────────
@@ -495,7 +595,7 @@ function renderHtml(c, favicon, langCode = "en") {
 <head>
 <meta charset="utf-8" />
 <style>
-  @page { size: Letter; margin: 0; }
+  @page { size: ${c.pageSize ?? "Letter"}; margin: 0; }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   :root {
     --felt: #0d3d2b;
@@ -680,7 +780,9 @@ async function renderPdf(lang, favicon, browser) {
   const out = join(DOWNLOADS, c.fileName);
   await page.pdf({
     path: out,
-    format: "Letter",
+    // ★용지는 언어별이다. preferCSSPageSize 때문에 CSS의 @page가 최종 결정하지만,
+    //   둘이 어긋나면 디버깅이 어려워지므로 같은 값을 준다. de = A4(유럽 규격).
+    format: c.pageSize ?? "Letter",
     printBackground: true,
     preferCSSPageSize: true,
   });
