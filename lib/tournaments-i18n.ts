@@ -29,7 +29,7 @@ function clamp(text: string, max: number): string {
   return (sp > max - 25 ? cut.slice(0, sp) : cut).trimEnd().replace(/[,、·、]+$/, "");
 }
 
-export type BoardLocale = "en" | "ja" | "zh" | "zh-hant" | "es";
+export type BoardLocale = "en" | "ja" | "zh" | "zh-hant" | "es" | "de";
 
 export interface BoardStrings {
   /** <html lang> 및 og:locale용 */
@@ -598,7 +598,109 @@ const es: BoardStrings = {
   ],
 };
 
-export const BOARD_STRINGS: Partial<Record<BoardLocale, BoardStrings>> = { en, ja, zh, "zh-hant": zhHant, es };
+/* ────────────────────────────────────────────────────────────
+   de — 독일·오스트리아·스위스(DACH). 2026-08-10 신설.
+
+   ★이 로케일의 특수성: **독자에게 가장 가까운 큰 대회가 자국에 없다.**
+     이 표에 DE/AT/CH 개최 대회는 0건이고, 독일 독자의 현실적 목적지는
+     체코(King's·프라하)와 서유럽이다. 그래서 문구를 "우리 나라 대회 목록"이
+     아니라 **"국경 넘어 어디로 갈까"**로 짰다.
+   ★문체: du체 통일 · 포커 동사는 영어차용형 · 소수점 콤마 · 천단위 마침표.
+     상세는 docs/translation-terms-de.md(정본) §1~§7.
+   ★사실 등급: docs/market-profile/de.md의 ✅(1차 출처 축어)만 본문에 썼다.
+   ──────────────────────────────────────────────────────────── */
+const de: BoardStrings = {
+  htmlLang: "de",
+  ogLocale: "de_DE",
+
+  // 독일어는 합성어가 길어 훅이 쉽게 잘린다. es(52)보다 짧게 잡았다.
+  metaTitle: (next, mmdd) => {
+    const hooked = `Poker Turniere 2026 — ${next} ab ${mmdd}`;
+    return next && hooked.length <= 50 ? hooked : "Poker Turnierkalender 2026";
+  },
+  metaDescription: (todayDot, ongoing) =>
+    clamp(
+      `Alle großen Live-Turniere 2026 in einer Tabelle: Termine, Buy-in und die offizielle Quelle zu jedem Turnier. Stand ${todayDot}. ${ongoing}`,
+      158,
+    ),
+
+  h1: "Poker Turniere 2026 — der Kalender",
+  heroLead:
+    "Jedes Turnier in dieser Liste haben wir auf der Seite des Veranstalters selbst nachgelesen, und jede Karte verlinkt genau die Seite, auf der es steht. Der Status rechnet sich aus den Terminen — es bleibt also nichts stehen, während eine Serie längst läuft. Termine ändern sich: im Zweifel gilt immer die offizielle Seite.",
+  asOf: (dot) => `Stand ${dot}`,
+
+  filterAll: "Alle",
+  filterUpcoming: "Kommend",
+  filterOngoing: "Läuft",
+  filterEnded: "Beendet",
+
+  colDates: "Termin",
+  colBuyin: "Buy-in",
+  colVenue: "Ort",
+
+  status: { upcoming: "Kommend", ongoing: "Läuft gerade", ended: "Beendet" },
+  yearRound: "Ganzjährig",
+  datesTba: "Termine offen",
+  officialSite: "Offizielle Seite",
+  guideLink: "Zum Guide",
+  buyinUnlisted: "Nicht veröffentlicht",
+
+  countsLine: (total, countries) => `${total} Turniere · ${countries} Länder`,
+  sourceNote:
+    "Wenn die Seite des Veranstalters selbst noch das Vorjahr anzeigte, haben wir lieber nicht verlinkt, als dich dorthin zu schicken.",
+  emptyState: "Zu diesem Filter passt gerade kein Turnier.",
+  koLink: "Kalender auf Koreanisch",
+
+  faqHeading: "Häufig gestellte Fragen",
+  faqs: [
+    {
+      q: "Welche Poker-Turniere gibt es 2026 in Deutschland?",
+      a: "Keine der großen internationalen Serien in dieser Tabelle wird 2026 in Deutschland ausgetragen — die nächstgelegenen liegen hinter der Grenze und in den Nachbarländern. Für die Reiseplanung sind das die europäischen Fixpunkte: EPT Paris (18.2.–1.3.), WSOP Europe in Prag (31.3.–12.4.), EPT Barcelona (16.–29.8.), WSOP Circuit Madrid (23.10.–2.11.) und EPT Prag (2.–13.12.). Was in Deutschland selbst läuft, sind die Turniere der Spielbanken vor Ort — dafür ist die Turnierseite deiner Spielbank die aktuellere Quelle als jede Jahresübersicht.",
+    },
+    {
+      q: "Wo findet die WSOP Europe 2026 statt?",
+      a: "In Prag, nicht mehr in Rozvadov. Die WSOP hat die Serie vom 31. März bis 12. April 2026 ins Hilton Prague gelegt, in Partnerschaft mit King's Casino Prague. Die Jahre davor lief die WSOPE im King's Resort in Rozvadov — wenn du nach älteren Berichten planst, ist genau das die Änderung, die dir sonst die Anfahrt zerlegt.",
+    },
+    {
+      q: "Wo finde ich ein Pokerturnier in meiner Nähe?",
+      a: "Diese Tabelle deckt die großen Serien ab, nicht das Dienstagsturnier um die Ecke. Für nächste Woche ist die Turnierseite deiner Spielbank die bessere Quelle, weil dort auch kurzfristige Änderungen stehen. Was dir diese Seite abnimmt, ist die Planung mit Vorlauf: Filter auf „Kommend“ zeigt dir, was als Nächstes startet, und jede Karte verlinkt direkt die offizielle Seite mit Struktur und Anmeldung.",
+    },
+    {
+      q: "Was kostet ein Buy-in?",
+      a: "Die Spanne ist groß, und sie ist innerhalb derselben Serie am größten. Ein Main Event einer großen Tour liegt oft im vierstelligen Bereich, während dieselbe Serie Side Events mit deutlich kleineren Buy-ins fährt — deshalb steht bei vielen Einträgen eine Spanne statt einer Zahl. Jede Karte zeigt den Buy-in, den der Veranstalter selbst veröffentlicht hat. Wo nichts steht, hat er ihn noch nicht veröffentlicht: wir schätzen an dieser Stelle nicht.",
+    },
+    {
+      q: "Wie komme ich günstig in ein großes Main Event?",
+      a: "Über Satellites. Fast jede große Serie fährt Qualifier, bei denen ein Bruchteil des Buy-ins reicht, und die laufen sowohl online als auch vor Ort in den Tagen davor. Der praktische Punkt: Satellites stehen meist nicht in der Jahresübersicht, sondern erst im Turnierplan der Serie selbst — deshalb führt jede Karte hier direkt auf die offizielle Seite.",
+    },
+    {
+      q: "Kann ich mich für jedes Turnier hier einfach anmelden?",
+      a: "Für die meisten ja, für drei nicht. Die Triton Super High Roller Series läuft über Empfehlung — es gibt keine Satellites, und Geld allein kauft keinen Platz. Die koreanischen Holdem Masters laufen über Einladungstickets, ohne Buy-in-Weg in bar. Und die APT Championships starten mit einem Tag nur für die Branche, bevor der öffentliche Kalender beginnt. Alles andere ist offen.",
+    },
+    {
+      q: "Muss ich Turniergewinne versteuern?",
+      a: "Das hängt davon ab, wie du spielst — und die Frage ist in Deutschland gerichtlich geklärt worden, nicht pauschal beantwortbar. Der Bundesfinanzhof hat 2023 entschieden, dass auch Gewinne aus dem Online-Pokerspiel (in der Variante Texas Hold'em) als Einkünfte aus Gewerbebetrieb der Einkommensteuer unterliegen können. Maßgeblich ist laut Urteil, ob jemand „private Spielbedürfnisse gleich einem Freizeit- oder Hobbyspieler befriedigt“ oder ob „strukturell-gewerbliche Aspekte entscheidend in den Vordergrund rücken“. Wo du in diesem Spektrum stehst, klärst du mit dem Finanzamt oder einem Steuerberater — eine Turnierliste kann das nicht für dich entscheiden.",
+    },
+  ],
+
+  localHeading: "Bevor du buchst",
+  localBlocks: [
+    {
+      title: "Die WSOP Europe ist 2026 in Prag, nicht in Rozvadov",
+      body: "Vom 31. März bis 12. April 2026 im Hilton Prague, laut WSOP in Partnerschaft mit King's Casino Prague. Das ist die Änderung, die 2026 die meisten Reisepläne trifft: Wer sich an den Vorjahren orientiert, fährt sonst an die falsche Adresse. Rozvadov liegt an der Grenze bei Waidhaus, Prag rund anderthalb Autostunden weiter östlich — Anfahrt, Hotel und Rückfahrt sehen komplett anders aus.",
+    },
+    {
+      title: "Das größte Pokerhaus deiner Umgebung steht in Tschechien",
+      body: "King's Resort in Rozvadov beschreibt sich selbst als „Biggest Poker Room in Europe“ und nennt seine Lage in einem Satz: „On the Main Motorway from Munich to Prague“. Genau darin liegt der Punkt für DACH-Spieler — die Anlage ist an den deutschen Markt angebunden, nicht an den tschechischen Binnenmarkt. Wenn du von Bayern aus planst, ist das eher eine lange Autofahrt als eine Auslandsreise.",
+    },
+    {
+      title: "In Österreich läuft Live-Poker über die Casinos Austria",
+      body: "Seit Januar 2020 ist Poker in Österreich den Spielbanken vorbehalten, also den teilstaatlichen Casinos Austria; die vorher großen privaten Pokerräume haben in diesem Zug geschlossen. Für die Planung heißt das schlicht: In Österreich suchst du nach Casino-Terminen, nicht nach privaten Cardrooms. Wenn du von Süddeutschland aus schaust, sind Bregenz und Salzburg oft näher als die Hälfte der deutschen Spielbanken.",
+    },
+  ],
+};
+
+export const BOARD_STRINGS: Partial<Record<BoardLocale, BoardStrings>> = { en, ja, zh, "zh-hant": zhHant, es, de };
 
 /**
  * 대회명 현지 표기.
@@ -627,6 +729,7 @@ function nameMaps(
   if (locale === "zh") return [CITY_ZH, PAREN_ZH];
   if (locale === "zh-hant") return [CITY_HANT, PAREN_HANT];
   if (locale === "es") return [CITY_ES, PAREN_ES];
+  if (locale === "de") return [CITY_DE, PAREN_DE];
   return null;
 }
 
@@ -1174,6 +1277,119 @@ const SCHEMA_DESC_ES: Record<string, string> = {
     "Parada de Manila 2026 del APPT de PokerStars, en Okada Manila, con ₱132 millones garantizados en la serie.",
 };
 
+/* ────────────────────────────────────────────────────────────
+   de 사전 (2026-08-10 신설).
+
+   ★숫자 표기는 es와 «같다» — 천 단위 마침표, 소수점 콤마.
+     그래서 `€1,650`을 그대로 두면 독일 독자는 "1유로 65센트"로 읽는다.
+   ★단 통화 기호는 es와 다르게 «US$»를 쓰지 않는다. 페소권이 아니라
+     `$`만으로 USD가 명확하고, 독일 포커 매체도 헤드라인에 `$440.000`처럼 쓴다.
+   ★KRW 단위는 독일식 축약 — Mrd.(10억) · Mio.(100만) · Tsd.(1천).
+     수치 자체는 §13대로 불변, 표기만 옮긴다.
+   근거: docs/translation-terms-de.md §3(표기) · §7-5(숫자 실측)
+   ──────────────────────────────────────────────────────────── */
+const FIELD_DE: Record<string, string> = {
+  "€825~€100,000": "€825–€100.000",
+  "€1,650~€250,000": "€1.650–€250.000",
+  "€1,650~€5,300": "€1.650–€5.300",
+  "€150~€1,000": "€150–€1.000",
+  "$2,000~$150,000": "$2.000–$150.000",
+  "$25,000~$200,000": "$25.000–$200.000",
+  "$25,000~$150,000": "$25.000–$150.000",
+  "$15,000~$200,000": "$15.000–$200.000",
+  "$10,400~$50,500": "$10.400–$50.500",
+  "$300~$250,000": "$300–$250.000",
+  "$300~$3,000": "$300–$3.000",
+  "$330~$7,500": "$330–$7.500",
+  "USD 100~1,000": "USD 100–1.000",
+  "£150~£1,000": "£150–£1.000",
+  "TWD 3,000~800,000": "TWD 3.000–800.000",
+  "TWD 3,300~1,500,000": "TWD 3.300–1.500.000",
+  "NT$200~NT$150,000": "NT$200–NT$150.000",
+  "₱11,000~₱682,500": "₱11.000–₱682.500",
+  "₱9,000~₱300,000": "₱9.000–₱300.000",
+  "₱3,500~₱500,000": "₱3.500–₱500.000",
+  "₫2,300,000~₫152,000,000": "₫2.300.000–₫152.000.000",
+  "¥2,000~¥300,000": "¥2.000–¥300.000",
+  "¥3,000~¥200,000": "¥3.000–¥200.000",
+  "R$500~R$100,000": "R$500–R$100.000",
+  "R$500~R$25,000": "R$500–R$25.000",
+  "AUD $1,150~$5,000": "AUD 1.150–5.000",
+  "€400~": "ab €400",
+  "€1,100~": "ab €1.100",
+  "₩350K~₩5M": "350 Tsd. – 5 Mio. KRW",
+  "공식 미기재": "Nicht veröffentlicht",
+  "미발표": "Noch offen",
+  "다양": "Je nach Event",
+  "초대권 전용": "Nur mit Einladung",
+  "초대권 전용 (현금 바이인 없음)": "Nur mit Einladung (kein Buy-in in bar)",
+  "메인 ₩150만": "Main Event 1,5 Mio. KRW",
+  "메인 ₩220만": "Main Event 2,2 Mio. KRW",
+  "메인 ₩230만": "Main Event 2,3 Mio. KRW",
+  "메인 ₩250만": "Main Event 2,5 Mio. KRW",
+  "메인 ₩270만": "Main Event 2,7 Mio. KRW",
+  "₩30만~₩800만": "300 Tsd. – 8 Mio. KRW",
+  "₩90만~": "ab 900 Tsd. KRW",
+  "~₩700만 (하이롤러)": "bis 7 Mio. KRW (High Roller)",
+  "€5,300 (메인)": "€5.300 (Main Event)",
+  "프리롤~NT$120,000": "Freeroll – NT$120.000",
+  "미정 (공식 미기재)": "Offen (nicht veröffentlicht)",
+  "야자수 서울센터": "YAJASU Center Seoul",
+  "Hilton Prague (King's Casino Prague 운영)": "Hilton Prague (betrieben von King's Casino Prague)",
+  "(ME 파이널 8/3~5)": "(Finaltisch 3.–5.8.)",
+  "2026.12 예정 (날짜 미발표)": "Dezember 2026 (Termine offen)",
+};
+
+/** CJK 회장명 — 독일어 페이지에서도 라틴 표기가 정답이다(es와 같은 값). */
+const VENUE_DE: Record<string, string> = {
+  "Red Space 多元商務空間 / Asia Poker Arena": "REDSPACE / Asia Poker Arena",
+  "REDSPACE 多元商務空間 / Asia Poker Arena": "REDSPACE / Asia Poker Arena",
+  "サッポロファクトリーホール": "Sapporo Factory Hall",
+  "ベルサール高田馬場, 新宿区": "Bellesalle Takadanobaba, Shinjuku",
+  "堂島リバーフォーラム": "Dojima River Forum",
+};
+
+const PAREN_DE: Record<string, string> = {
+  "(Fall)": "(Herbst)",
+  "(July)": "(Juli)",
+  "(August)": "(August)",
+  "(November)": "(November)",
+  "(December)": "(Dezember)",
+  "(Ha Long Bay)": "(Ha-Long-Bucht)",
+};
+
+/**
+ * de판 대회 설명. 수치는 원문 그대로 — §13은 언어 불변. 표기만 독일식.
+ * ⚠ WSOP 2026 상금풀 액수는 **의도적으로 뺐다** — ESPN 집계($85,634,400)와
+ *   공식 집계($87,568,080)가 갈린 이력이 있다(WORKLOG 2026-08-06).
+ *   확정 전까지 독일어판에 옮겨 적지 않는다. 엔트리 수·브레이슬릿 수는 안전하다.
+ */
+const SCHEMA_DESC_DE: Record<string, string> = {
+  "holdem-masters-7":
+    "Präsentiert von WPL, ausgerichtet von WeLive mit YAJASU. 1,5 Mrd. KRW garantiert; Teilnahme nur mit Einladungsticket.",
+  "wsop-2026":
+    "Die größte Pokerserie der Welt. 100 Bracelets vom 26. Mai bis 15. Juli; das Main Event kam auf 9.208 Entries, der Finaltisch lief vom 3. bis 5. August auf ESPN.",
+  "kpc-king-july":
+    "17-tägiges Festival im LES A Casino auf der Insel Jeju. 2 Mrd. KRW über die Serie garantiert, 1,1 Mrd. KRW im Main Event des King Poker Cup.",
+  "apt-incheon":
+    "Incheon-Stop 2026 des Asian Poker Tour, der größten Tour Asiens. In der Paradise City, mit über 4 Mrd. KRW Gesamtgarantie und 1,5 Mrd. KRW im Main Event.",
+  "holdem-masters-8":
+    "Achte Auflage der Holdem Masters und bislang die größte der Serie: 2 Mrd. KRW garantiert, davon 1,8 Mrd. KRW im Main Event.",
+  "appt-korea":
+    "Korea-Stop 2026 der PokerStars APPT in der Paradise City Incheon, mit 1 Mrd. KRW Garantie im Main Event.",
+  "triton-jeju-2":
+    "Zweite Triton Super High Roller Series des Jahres auf Jeju: 14 High-Roller-Turniere mit Buy-ins von $15.000 bis $200.000.",
+  "apt-jeju-fall":
+    "Herbst-Stop 2026 des Asian Poker Tour auf Jeju: 136 Events mit 2,2 Mrd. KRW Garantie im Main Event.",
+  "wpt-seoul":
+    "Erstes Event des World Poker Tour im INSPIRE Entertainment Resort: 46 Events mit 1 Mrd. KRW Garantie im Main Event.",
+  "appt-manila":
+    "Manila-Stop 2026 der PokerStars APPT im Okada Manila, mit ₱132 Mio. Gesamtgarantie.",
+};
+
+/** 월 배지 de — "Mai–Aug." (독일어 월 축약은 마침표를 쓴다) */
+const MONTH_DE = ["Jan.","Feb.","März","Apr.","Mai","Juni","Juli","Aug.","Sept.","Okt.","Nov.","Dez."];
+
 /** 월 배지 es — "may–ago" */
 const MONTH_ES = ["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];
 
@@ -1489,8 +1705,15 @@ const NOTE_ES: Record<string, string> = {
   "wpt-world-championship": "Fechas de 2026 sin anunciar: la propia página de poker del Wynn tampoco menciona el WPT",
 };
 
+/**
+ * de 배지 — 비워 둔다. `localizedNote`가 undefined면 보드가 배지를 아예 안 그린다.
+ * ⚠ 한국어·영어로 폴백시키지 말 것(독일어 페이지에 다른 언어가 섞인다).
+ *   독일 독자에게 의미 있는 배지가 생기면 그때 채운다.
+ */
+const NOTE_DE: Record<string, string> = {};
+
 const NOTES: Record<BoardLocale, Record<string, string>> = {
-  en: NOTE_EN, ja: NOTE_JA, zh: NOTE_ZH, "zh-hant": NOTE_HANT, es: NOTE_ES,
+  en: NOTE_EN, ja: NOTE_JA, zh: NOTE_ZH, "zh-hant": NOTE_HANT, es: NOTE_ES, de: NOTE_DE,
 };
 
 /** 없으면 undefined — 보드가 배지를 아예 안 그린다(한국어 폴백 금지) */
@@ -1503,8 +1726,25 @@ export function localizeCity(city: string, locale: BoardLocale): string {
   if (locale === "zh") return CITY_ZH[city] ?? city;
   if (locale === "zh-hant") return CITY_HANT[city] ?? city;
   if (locale === "es") return CITY_ES[city] ?? city;
+  if (locale === "de") return CITY_DE[city] ?? city;
   return city;
 }
+
+/**
+ * 독일어 도시명 — 영어 표기와 «다른 것만» 넣는다.
+ * ⚠ Hanover는 손대지 않는다: 이 데이터의 Hanover는 미국 메릴랜드이고,
+ *   독일 Hannover(n 두 개)와 다른 도시다. 자동 치환하면 미국 대회가 독일에 있는 것처럼 보인다.
+ */
+const CITY_DE: Record<string, string> = {
+  Prague: "Prag",
+  Tokyo: "Tokio",
+  "Mexico City": "Mexiko-Stadt",
+  "Panama City": "Panama-Stadt",
+  Seville: "Sevilla",
+  Cologne: "Köln",
+  Vienna: "Wien",
+  Munich: "München",
+};
 
 /**
  * 사전에 없는 값이 그대로 통과할 때, 범위 물결표만이라도 로케일 기호로 바꾼다.
@@ -1512,7 +1752,7 @@ export function localizeCity(city: string, locale: BoardLocale): string {
  * 숫자 양옆에 붙은 물결표만 건드린다 — "초대권 전용" 같은 문장은 손대지 않는다.
  */
 const RANGE_DASH: Record<BoardLocale, string> = {
-  en: "–", es: "–", ja: "〜", zh: "〜", "zh-hant": "〜",
+  en: "–", es: "–", de: "–", ja: "〜", zh: "〜", "zh-hant": "〜",
 };
 
 function localizeRangeTilde(v: string, locale: BoardLocale): string {
@@ -1528,6 +1768,7 @@ export function localizeField(value: string | undefined, locale: BoardLocale): s
     : locale === "zh" ? VENUE_ZH[value] ?? FIELD_ZH[value]
     : locale === "zh-hant" ? VENUE_HANT[value] ?? FIELD_HANT[value]
     : locale === "es" ? VENUE_ES[value] ?? FIELD_ES[value]
+    : locale === "de" ? VENUE_DE[value] ?? FIELD_DE[value]
     : undefined;
   return hit ?? localizeRangeTilde(value, locale);
 }
@@ -1595,6 +1836,9 @@ export function localizedMonthBadge(t: Tournament, locale: BoardLocale): string 
   if (locale === "es") {
     return sm === em ? MONTH_ES[sm - 1] : `${MONTH_ES[sm - 1]}–${MONTH_ES[em - 1]}`;
   }
+  if (locale === "de") {
+    return sm === em ? MONTH_DE[sm - 1] : `${MONTH_DE[sm - 1]}–${MONTH_DE[em - 1]}`;
+  }
   return sm === em ? `${sm}月` : `${sm}〜${em}月`;   // ja·zh·zh-hant 공통
 }
 
@@ -1634,6 +1878,16 @@ function formatRange(a: Ymd, b: Ymd, locale: BoardLocale): string {
     if (a.y !== b.y) return `${M(a)} ${a.y} – ${M(b)} ${b.y}`;
     if (a.m !== b.m) return `${M(a)} – ${M(b)} ${a.y}`;
     return `${a.d}–${b.d} ${MONTH_ES[a.m - 1]} ${a.y}`;
+  }
+  /**
+   * de — 독일식 「일. 월. 연도」. 날짜 뒤에는 마침표가 붙는다(3. Mai).
+   * 같은 달이면 앞 날짜는 일만 남기고 마침표를 유지한다: `16.–29. Aug. 2026`.
+   */
+  if (locale === "de") {
+    const M = (x: Ymd) => `${x.d}. ${MONTH_DE[x.m - 1]}`;
+    if (a.y !== b.y) return `${M(a)} ${a.y} – ${M(b)} ${b.y}`;
+    if (a.m !== b.m) return `${M(a)} – ${M(b)} ${a.y}`;
+    return `${a.d}.–${b.d}. ${MONTH_DE[a.m - 1]} ${a.y}`;
   }
   // ja·zh·zh-hant — 점 표기 유지, 범위 기호만 전각 물결표
   const p = (n: number) => String(n).padStart(2, "0");
@@ -1680,7 +1934,9 @@ export function buildLocaleSchemas(
               ? SCHEMA_DESC_HANT[t.id]
               : locale === "es"
                 ? SCHEMA_DESC_ES[t.id]
-                : undefined) ??
+                : locale === "de"
+                  ? SCHEMA_DESC_DE[t.id]
+                  : undefined) ??
       t.schemaDescription,
     startDate: t.startDate,
     endDate: t.endDate,
@@ -1737,4 +1993,11 @@ export const HOME_COUNTRY: Record<BoardLocale, string[]> = {
   zh: ["CN", "PH", "KH"],
   "zh-hant": ["TW", "HK", "PH"],
   es: ["MX", "ES", "AR", "BR", "UY"],
+  /**
+   * ★CZ가 DE·AT·CH와 같은 줄에 있는 이유: 독일 독자에게 «가장 가까운 큰 대회»가
+   * 체코에서 열린다. King's Resort는 자기 소개에 "On the Main Motorway from Munich to
+   * Prague"라고 쓸 만큼 독일 시장을 향해 있고, WSOP Europe 2026도 프라하다.
+   * 지리적 자국이 아니라 «이 독자가 실제로 갈 곳» 기준으로 정렬한다.
+   */
+  de: ["DE", "AT", "CH", "CZ"],
 };

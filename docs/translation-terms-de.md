@@ -70,6 +70,86 @@ callen→gecallt · raisen→geraist · folden→gefoldet · shoven→geshovt ·
 
 Sources: de.wikipedia(Texas Hold'em·Pokerbegriffe) · pokerfirma.com · pokerolymp.com · pokerzeit.com · pokerstrategy.de · cardplayer.de · 888poker.de · winamax.de · poker.de · ggpoker.de · germanpokerdays.com
 
+---
+
+# §7 실측 문체·구조 패턴 (2026-08-10 — 5개 사이트 12개 문서 실독, 전부 축어 근거)
+
+> 실독: pokerolymp(족보·ICM·Pokerschule) · 888poker.de 매거진(3-Bet·GTO·ICM·Chop FAQ) ·
+> pokerzeit(Pot-Odds·초보) · start-up-poker.de(Pot Odds) · hochgepokert(Bluffen·Fisch 기사).
+> pokerstrategy.de·poker.de·pokerfirma는 403 — 이들 문체는 근거 없음.
+
+## 7-1. H2 패턴 — 질문형 60~70% + 명사구, 대시(–) 부제 훅
+
+- 질문형 실례: „Was sind Pot Odds?" · „Was ist GTO-Poker?" · „Wie funktioniert das ICM" · „Wozu ist ICM
+  nun gut?" · „Wann solltest du bluffen?" · „Was ist ein Turnierchip wert?"
+- 명사구(적용·계산 자리): „Pot Odds berechnen" · „Pot Odds anwenden" · „Auswahl der Starthände"
+- 팁 항목은 **du 명령형 H3**: „Nutze deine Position" · „Setze den richtigen Betrag" · „Baue eine überzeugende Geschichte auf"
+- 관용 어미 실증: „Schritt für Schritt"(pokerzeit) · „für Anfänger"(pokerolymp 제목) · 대시 부제
+  „Implied Pot Odds – der Blick in die Glaskugel". „einfach erklärt"는 본문 H2보단 **SERP 제목**에서 실증.
+- → 우리 Q-A-E 골격과 정합: 개념 H2=질문형(Was/Wie/Wann/Warum), 계산·적용 H2=동사 명사구, 팁=du 명령형.
+
+## 7-2. 도입부 여는 법 (실례 3유형)
+
+① 구어 형용사 훅: „…vom Royal Flush über das Full House bis zur **lausigen** High Card ist alles dabei."(pokerolymp)
+② 오해 교정형: „Der Begriff „3-Bet" kann vor allem für Poker Anfänger zu Verwirrung führen…"(888poker)
+③ du 직접 호명: „Vermutlich hast du diesen Begriff schon gelesen oder gehört."(start-up-poker)
+화자는 „wir" 병용("Hier wollen wir ausführlich erklären…"). **한 글 안 Sie/du 혼용 = 즉시 번역 티**(pokerzeit에서 실측).
+
+## 7-3. Denglisch 확증 예문 (§1 규칙의 실전 증거)
+
+- „Hat ein Spieler etwa **geraist** und drei andere **gecallt**, kann man … gut **callen**."(pokerolymp)
+- „Hat zum Beispiel alle Spieler vor einem **gefoldet**…" · „zu häufig … zu **limpen**"(pokerolymp)
+- 수동태까지: „falls du **gecallt** wirst"(hochgepokert) · 명사화 대문자: „Beim **Callen** geht das nicht."(pokerzeit)
+- „der **Spot**"(hochgepokert) · „die **Range**" · „**Cold-Call**" · „**Continuation-Bet**"(888poker — 하이픈 복합)
+- 대체 독일어(mitgehen/erhöhen/passen)는 **첫 정의 때만** 병기, 이후 차용형 전환이 관습.
+
+## 7-4. 속어·구어 (실증된 것만 쓸 것)
+
+- ✅ **Fisch/Haie**: 「첫 등장 인용부호 → 이후 맨몸」 관습. 단 면전 사용은 모욕("kann dann wirklich als
+  Beleidigung gesehen werden" — hochgepokert). ✅ **Müll**(쓰레기 핸드): „Ein Großteil der Starthände ist
+  schlicht Müll."(pokerolymp — 전략 매체도 씀) ✅ **verzocken**(뉴스 헤드라인급)
+- ✅ 네이티브 냄새의 핵심 = **소사**(schlicht·eigentlich·nun·mal)와 관용구(„mit Ach und Krach")
+- ❌ zocken/Kohle/abzocken — 이번 실독에서 미확증. **쓰지 말 것.**
+
+## 7-5. 숫자 표기 실태 (§3 보강)
+
+- 실증: „16,67%"(콤마·공백없음) vs „ca. 32 %"(공백) — **같은 사이트 안에서도 혼재.** DIN은 공백이나 실무 반반.
+  → ⚠ §3의 「공백 없이 통일」 규칙과 과거 교정사례(「8 %」 공백 지적)가 **서로 충돌**한다.
+  **권고: 기존 de 발행분과 §13 parity를 깨지 않는 「공백 없음(25%)」 유지** — 단 착수 첫 배치에서 기존 42편 실태를 grep해 다수결로 확정하고 이 줄을 갱신할 것.
+- 오즈: 표=„4,52%"·„5:1", 산문=„7 **zu** 1 **dagegen**"(pokerolymp — dagegen 후치 관용)
+- 2-4법칙: „**4 mal 4 ergibt 16**" · rule of thumb = **Faustregel**(pokerzeit H2 실증)
+- 금액: „$36,44"($ 선행+콤마 소수점) · „24,50 €"(€ 후치) · „1.000 Chips" — §3 규칙 그대로 확증.
+- 헤드라인 숫자 전면 배치가 후크: „$440.000" · „€5.300 EPT Paris" · „1.160 Entries"(hochgepokert·유튜브 공통)
+- 닉네임 관습: **이름 „알리아스" 성** — „Felix „xflixx" Schneiders"(독일식 낫표 „"). PokerZeit만 «».
+
+## 7-6. FAQ 관행
+
+- 현지 전략 글에 **문말 FAQ 블록은 드물다**(12편 중 0) — 질문형 H2가 흡수. FAQ를 글 하나로 만드는 사례는
+  있음(888poker „Poker Chops FAQ").
+- → 우리 FAQ 블록은 SEO상 유지하되 ① 질문은 „Was ist…?"/„Wie berechnet man…?"/„Wann lohnt sich…?" 형
+  ② **H2와 FAQ 질문 중복 금지**(현지 글은 H2가 그 역할이라 중복이 더 어색하다) ③ 라벨 „Häufig gestellte Fragen (FAQ)" 통용.
+
+## 7-7. 🔴 기계번역 지문 금지어 (전부 번역 사이트에서 실제 채집)
+
+| ❌ 번역 티 | ✅ 네이티브 |
+|---|---|
+| 마침표 소수점 „31.5 %" | „31,5 %" |
+| „Ausbeutung"(exploit 직역) | „exploitativ (spielen)" / „Exploit" |
+| „Werthaltige 3-Bet-Range" | „Value-Range" |
+| „Festland Casino" | „landbasiertes Casino" |
+| „Intermediäre Poker Tipps" | „Fortgeschrittene" |
+| 포지션 대비 „BB gegenüber MP" | „BB vs. MP" |
+| 성 오류 „Dein Spielweise" | „Deine Spielweise" |
+| 한 글 안 Sie/du 혼용 | du 통일 |
+
+## 7-8. 헤드라인 관습 (뉴스·유튜브 — seoTitle 참고)
+
+- 구조 = **[브랜드/장소]: [사건] + 질문·감탄 후크**: „King's: Droht das Overlay beim Polish Poker Masters
+  Main Event?" · „WSOP 2026: Genial oder einfach nur dumm?" · „Erreichen wir noch einen Final Table?!"
+- 유튜브 실례: „Poker lernen in 2026: Mein Nummer 1 Tipp!" · „5 Tipps für Multiway Pots, die jeder
+  Pokerspieler kennen muss!" · „Wie Ihr beim Poker IMMER gewinnt"
+- Hero Call·Overlay·Deeprun·Entries·Final Table은 헤드라인에서도 영어 그대로 — 독일어화하면 즉시 비원어민 티.
+
 
 ---
 

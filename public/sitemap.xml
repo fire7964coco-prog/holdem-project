@@ -75,7 +75,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/solver</loc>
-    <lastmod>2026-08-09</lastmod>
+    <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -133,6 +133,7 @@
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/tournaments" />
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/tournaments" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/tournaments" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/tournaments" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/tournaments" />
   </url>
 
@@ -1282,7 +1283,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en" />
   </url>
 
-  <!-- 다국어 토너먼트 일정표 (5개 로케일) -->
+  <!-- 다국어 토너먼트 일정표 (6개 로케일) -->
 
   <url>
     <loc>https://www.holdemmaster.com/en/tournaments</loc>
@@ -1295,6 +1296,7 @@
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/tournaments" />
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/tournaments" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/tournaments" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/tournaments" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/tournaments" />
   </url>
 
@@ -1309,6 +1311,7 @@
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/tournaments" />
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/tournaments" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/tournaments" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/tournaments" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/tournaments" />
   </url>
 
@@ -1323,6 +1326,7 @@
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/tournaments" />
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/tournaments" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/tournaments" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/tournaments" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/tournaments" />
   </url>
 
@@ -1337,6 +1341,7 @@
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/tournaments" />
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/tournaments" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/tournaments" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/tournaments" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/tournaments" />
   </url>
 
@@ -1351,6 +1356,22 @@
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/tournaments" />
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/tournaments" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/tournaments" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/tournaments" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/tournaments" />
+  </url>
+
+  <url>
+    <loc>https://www.holdemmaster.com/de/tournaments</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/tournaments" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/tournaments" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/tournaments" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/tournaments" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/tournaments" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/tournaments" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/tournaments" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/tournaments" />
   </url>
 

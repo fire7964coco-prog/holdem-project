@@ -103,14 +103,25 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
     { href: "/es/blog",        icon: "📚", label: "Blog" },
     { href: "/es/tournaments", icon: "🏆", label: "Torneos" },
   ],
+  /**
+   * de — 2026-08-10 신설. 라벨은 ja·es와 같은 규칙으로 **검증된 값에서 축어 복사**:
+   *   - "Blog"     = CHROME.de.blogLabel (lib/intl.ts L728)
+   *   - "Turniere" = DE_CLUSTERS의 tournament pillarLabel (lib/pillar-clusters.ts L499)
+   * BOARD_STRINGS.de의 h1("Poker Turniere 2026 — der Kalender")은 레일에 넣기엔 길다.
+   */
+  de: [
+    { href: "/de/blog",        icon: "📚", label: "Blog" },
+    { href: "/de/tournaments", icon: "🏆", label: "Turniere" },
+  ],
 };
 
 /**
  * 「홀덤 가이드」 섹션 헤딩 — 로케일별. 없으면 en.
  * ja·es는 BOARD_STRINGS(lib/tournaments-i18n.ts)의 guideLink에서 딴 것이다 —
  * ja "詳細ガイド" → ガイド · es "Guía completa" → Guías(복수). 새로 번역하지 않았다.
+ * de도 같은 규칙: guideLink "Zum Guide" → "Guides"(독일 포커 매체가 실제로 쓰는 차용어).
  */
-const HUB_HEADING: Record<string, string> = { en: "Guides", ja: "ガイド", es: "Guías" };
+const HUB_HEADING: Record<string, string> = { en: "Guides", ja: "ガイド", es: "Guías", de: "Guides" };
 
 /**
  * 그 로케일의 허브 메뉴 — **좌측 레일과 모바일 상단 탭이 같은 목록을 쓴다.**

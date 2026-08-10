@@ -54,6 +54,9 @@ const LOCALE_HUB_ROUTES: Record<string, readonly string[]> = {
    */
   ja: ["/ja/blog", "/ja/tournaments"],
   es: ["/es/blog", "/es/tournaments"],
+  // de — 2026-08-10 신설. 독일어 지역·일정 검색 수요(LDA 4~9)를 받을 랜딩이 없었다.
+  //      근거: docs/keyword-bank/de-core-volumes.md 시드⑫
+  de: ["/de/blog", "/de/tournaments"],
 };
 
 /**
