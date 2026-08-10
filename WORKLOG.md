@@ -3,6 +3,53 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-08-10 (11) — **de Session 2 (Handreihenfolge 6편) 완료** — 대결표 7→14행 · EN 드리프트 FAQ 18문항 소급
+
+> `check:de-style --cluster=Handreihenfolge` **6/6편 🔴 0 · 🟠 0**(D9 3편 해소) ·
+> `audit:hard --locale=de` 42/42 🔴 0건 · 드리프트 ✅ **14 → 17** · 추적불가 **24 → 21** · build 69+457 불변.
+
+- **§5-A #4를 하려고 열었더니 「Direkte Duelle」 표가 이미 7행 있었다.** 핸드오프는 「신설」이라고 적혀 있었다.
+  → 본체가 «신설»에서 **①실검색 문형 커버 ②EN 드리프트 닫기**로 바뀌었다.
+  ★**착수 전에 대상 파일을 열어 보는 것만으로 세션의 정의가 바뀐다.**
+- **대결표 7 → 14행** — 시드 ⑧이 건진 「A oder B」 문형 전부(drilling↔flush · full house↔straße/vierling ·
+  flush↔vierling · royal flush↔vierling · straight flush↔full house · zwei paare 내부 비교).
+  🔴 **pik↔kreuz 행이 없었다** — §13 자산인 「무늬 서열 없음」이 정작 표에 빠져 있었다.
+  H3도 `Farben-Reihenfolge beim Poker: Es gibt keine`로 실검색 문형화(`farben reihenfolge` 90/**LDA5**).
+- 🔴 **EN 마스터 드리프트가 4편에 있었다 — FAQ 18문항이 안 왔다.**
+  split-pot 13:8 · tiebreak 15:8 · kicker 13:9 · reading-the-board 11:8 (전부 EN 07-18/19 추가분).
+  `flush-vs-straight`는 섹션·FAQ가 맞는데 **1인칭 경험담 한 곳만** 빠져 있었다(EN L117).
+  → **드리프트를 닫은 뒤에** masterUpdated 3편을 찍었다. 순서를 바꾸면 그 숫자가 거짓 증거가 된다.
+- ★**드리프트를 찾은 방법 = Session 1이 확립한 3단**(섹션 수 · 1인칭 문장 수 · FAQ 질문 목록).
+  이번엔 **FAQ 목록 대조가 전부를 잡았다** — 섹션 수는 4편 모두 EN과 정확히 일치했다.
+  즉 **「섹션이 맞으니 동기화됐다」는 판정은 틀린다.**
+- **§7-6 위반 6쌍** — H2와 FAQ 질문이 **축어로 완전 일치**(tiebreak 4·kicker 2). 게이트가 안 보는 자리다.
+  삭제가 아니라 «다른 실검색 문형»으로 재구성했다.
+- 🟠 tiebreak만 14:15로 남긴다. EN의 `Do suits matter`는 de의 `Entscheiden Farben … einen Tie?`와
+  준중복이라 §7-6에 따라 **의도적으로 안 넣었다**(개수 맞추려고 준중복을 넣지 않는다).
+- **되읽기 패스에서 내가 만든 것 3건**: 지시대명사 선행사 모호 · `die höhere Farbe zugreift` 어색 ·
+  `Chips, die er nie mitgegangen ist`(자동사 오용). 4연속 세션에 이어 이번에도 나왔다.
+- ⚠ **미이행**: 독일 네이티브 적대 QA 2렌즈(다음 세션 첫 항목) · `hand-rankings` 1인칭 EN 12 : DE 3.
+
+## 2026-08-10 (10) — **de 표기 42편 일괄 확정** — „…“ 300쌍 · Halbgeviertstrich 2,369곳 + 게이트 D11·D12
+
+> 셀프테스트 **87 → 99** · 42편 🔴 1건(apt-incheon D4 = Session 6 몫, 불변) · `audit:hard --locale=de` 🔴 0건.
+> 근거·오탐은 `docs/de-style-gate-spec.md` **§6-C**, 확정 사실은 `translation-terms-de.md` **§7-10**.
+
+- 핸드오프의 「사장님 판단 대기」 2건(ASCII 따옴표 · Gedankenstrich)을 **정본 §7-1 기준으로 확정**했다.
+  클러스터마다 갈리면 경화가 어긋나서 Session 2 착수 **전에** 닫았다 —
+  실제로 Handreihenfolge 6편 중 `split-pot`만 ASCII라 **한 세션 안에서 갈릴 참이었다.**
+- 🔴 **D10은 「여는 „ 가 있을 때」만 봤다.** 그래서 처음부터 끝까지 ASCII로 쓴 **25편 294쌍이 원리상 침묵**했고,
+  **그 침묵을 «정상»으로 고정하는 셀프테스트 픽스처까지 있었다**(`ASCII 따옴표만 쓴 줄 — 판정 대상 아님`).
+  ★규칙이 좁으면 0건이 거짓이 된다. 이번엔 **게이트가 자기 눈가리개를 픽스처로 박아 두고 있었다.**
+- 🔴 **D12를 「공백 양쪽」으로 좁게 잡았더니 5곳이 빠져나갔다** — 삽입구를 닫는 `—,`(뒤에 공백 없음)와
+  하이라이트에 붙은 `==—`. 일괄 치환 직후 정확히 그 자리에 남아 있었다 → **em dash 전부**로 넓혔다.
+- 🔴 **`stripNonProse`의 링크 세척이 타이틀 속 괄호에서 샌다** — `holdem-straddle` L70
+  `"Ein Button- (Mississippi-) Straddle …"`. D11 전용으로 **한 겹 중첩까지 허용하는 세척**을 먼저 건다.
+  안 그러면 `"thumb:…"`가 산문 인용부호로 오탐된다.
+- **절차**: `.mjs` 드라이런 → **변환 300쌍 전문 출력·육안** → 사후조건(링크·HTML 속성 누출 0) → `--apply`.
+  ★사후조건이 없었다면 위 누출은 **빌드는 통과하고 렌더만 깨지는** 결함이 됐다.
+- `updated` 26편 갱신. **masterUpdated는 올리지 않았다** — 형식만 바뀌었고, 올리면 진짜 내용 드리프트를 숨긴다.
+
 ## 2026-08-10 (9) — **다국어 FAQ 스키마 23편 소급 완료** — 455/455편 🔴 0건
 
 > `npm run check:faq-schema` **전 25개 로케일 ✅** · 빌드 산출물로 23/23편 재확인 · build 69+457 불변.

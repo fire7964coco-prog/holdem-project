@@ -8,16 +8,24 @@
 
 ## ▶▶▶▶▶▶▶▶▶ 새 세션 START HERE
 
-### 지금 트랙 = **de(독일어) 경화** · 다음 = **Session 2 (Handreihenfolge 6편)**
+### 지금 트랙 = **de(독일어) 경화** · 다음 = **Session 3 (Odds & Mathe 6편)**
 
 ```
-npm run check:de-style -- --cluster=Handreihenfolge
+npm run check:de-style -- --cluster=Odds
 npm run audit:hard -- --locale=de
 ```
 
-**이 세션의 본체** = §5-A #4 **「Direkte Duelle」 대결표**(`holdem-hand-rankings`, A vs B 8~10행 +
-**무늬 서열 없음** 명시). 근거: `was ist höher A oder B` 문형 29종 · `pik oder kreuz poker`.
-`poker hände` **33,100/월**.
+**이 세션의 본체** = §5-A #5 **`holdem-probability` H2를 국면형·Faustregel형으로 재배치**.
+상위어는 LDA 27~34 벽이고 **국면형(nach dem Flop)·계산형은 LDA 9~15**다.
+`Faustregel`은 15편에 이미 있는데 **최적화만 안 됐다**(정본 §7-5에 실증 있음).
+
+### 🔴 Session 2가 남긴 빚 — Session 3 착수 전에 먼저
+
+1. **독일 네이티브 적대 QA 2렌즈(네이티브 + 교열)를 Handreihenfolge 6편에 미실행.**
+   고정 6단계의 ⑤를 건너뛴 채 커밋했다. **Session 3의 첫 항목으로 돌린다.**
+   교열 렌즈에는 커밋 `1a2d006`의 diff를 준다(§14-A 10 · REVIEW-PROTOCOL 3층).
+2. `holdem-hand-rankings` **1인칭 신호 EN 12 : DE 3** — EN이 넣은 경험담이 미러에 없다.
+   `flush-vs-straight`는 이번에 1곳 복원했다. **소급할지는 판단이 필요**하다(없는 사실을 지어내지 말 것).
 
 ### 상태 (2026-08-10 마감)
 
@@ -25,18 +33,18 @@ npm run audit:hard -- --locale=de
 |---|---|
 | build | **69 blog + 457 intl** (불변) |
 | `audit:hard` | 25개 로케일 `--locale` 전부 🔴 **0건** |
-| `check:de-style` | 셀프테스트 **87/87** · 42편 🔴 **1건** = `apt-incheon`(Session 6 몫) |
+| `check:de-style` | 셀프테스트 **99/99** · 42편 🔴 **1건** = `apt-incheon`(Session 6 몫) |
 | `check:faq-schema` | 셀프테스트 **16/16** · **455/455편 · 25개 로케일 🔴 0건** ✅ |
 | `check:hreflang` | 481페이지 · 50세트 · 🔴 0건 |
-| 미러 드리프트 | **90** · 추적불가 84 (✅ 236) |
+| 미러 드리프트 | **90** · 추적불가 **81** (✅ **239**) |
 
 ⚠ **드리프트 90은 «옳은» 숫자다.** FAQ 스키마 복구로 EN 2편의 `updated`를 올렸는데
-**미러의 masterUpdated는 일부러 안 올렸다** — 이번 변경은 형식(FAQ 마크업)뿐이고
+**미러의 masterUpdated는 일부러 안 올렸다** — 그 변경은 형식(FAQ 마크업)뿐이고
 `texas-…-beginners`의 **내용 재동기화는 미결**이라, 올리면 진짜 드리프트가 숨는다.
 「판 전체 재동기화」 트랙에서 한 번에 정리할 것.
 
-**끝난 트랙**: KO 잔여 = S5 하나(8/16 잠금) · 다국어 B1~B4 · 다국어 FAQ 스키마(25편 전건).
-경위는 `WORKLOG.md` 2026-08-10 (1)~(9).
+**끝난 트랙**: KO 잔여 = S5 하나(8/16 잠금) · 다국어 B1~B4 · 다국어 FAQ 스키마(25편 전건) ·
+de 표기 42편 일괄(§7-10 확정) · de Session 1~2. 경위는 `WORKLOG.md` 2026-08-10 (1)~(11).
 
 ---
 
@@ -48,11 +56,11 @@ npm run audit:hard -- --locale=de
 |---|---|---:|---|---|
 | 0 | 문체 게이트 | — | 검사 없이 42편을 손대면 같은 실수를 반복한다 | ✅ |
 | 1 | **Regeln** | 6 | `poker regeln` 90,500/월 · 필라라 용어가 여기서 확정 | ✅ |
-| **2** | **Handreihenfolge** | **6** | `poker hände` 33,100 · 「Direkte Duelle」 대결표 + 무늬 서열 없음 | ◀ **다음** |
-| 3 | Odds & Mathe | 6 | `Faustregel` 표기 최적화(15편에 이미 있는데 최적화만 안 됨) + 국면형 H2 |
-| 4 | Strategie | 8 | `poker strategie` 1,300/**LDA 6** — 볼륨 대비 SERP 최약 |
-| 5 | Glossar | 6 | 토너먼트·온라인 약어표(ATS·ITM·GTD·PLO·Cap·Overlay) |
-| 6 | Turniere | 9 | `/de/tournaments`와 상호 연결 + 라이브이벤트 4편 · **apt-incheon 🔴 3건이 여기** |
+| 2 | **Handreihenfolge** | 6 | 대결표 7→14행 · FAQ 18문항 소급 · masterUpdated 3편 | ✅ (적대 QA 빚) |
+| **3** | **Odds & Mathe** | **6** | `Faustregel` 표기 최적화(15편에 이미 있는데 최적화만 안 됨) + 국면형 H2 | ◀ **다음** |
+| 4 | Strategie | 8 | `poker strategie` 1,300/**LDA 6** — 볼륨 대비 SERP 최약 | |
+| 5 | Glossar | 6 | 토너먼트·온라인 약어표(ATS·ITM·GTD·PLO·Cap·Overlay) | |
+| 6 | Turniere | 9 | `/de/tournaments`와 상호 연결 + 라이브이벤트 4편 · **apt-incheon 🔴 3건이 여기** | |
 
 **세션당 고정 6단계**: ①정본 재확인 → ②**기계 게이트 먼저** → ③편집
 → ④**되읽기 패스** → ⑤**독일 네이티브 적대 QA**(2렌즈: 네이티브 + 교열) → ⑥빌드·게이트·커밋·WORKLOG
@@ -86,12 +94,23 @@ npm run audit:hard -- --locale=de
 이 셋으로 `game-order` 4곳·`texas-…-beginners` 4곳·`blind-meaning` 2곳·`showdown-rules` 2곳·
 **`all-in-rules` 2곳(masterUpdated가 이미 올라가 있던 편!)**을 잡았다.
 
+### 🔴 Session 2가 값비싸게 배운 것 — Session 3~6이 그대로 겪을 것
+
+1. 🔴 **「신설하라」고 적힌 항목이 이미 있었다.** 대결표는 7행이 이미 있었고, 핸드오프만 「신설」이라고 적혀 있었다.
+   **착수 전 대상 파일을 여는 것만으로 세션의 정의가 바뀐다.** 인계서를 작업 지시서로 읽지 마라.
+2. 🔴 **섹션 수가 EN과 맞아도 동기화된 게 아니다.** 드리프트 4편 모두 **섹션 수는 정확히 일치**했고,
+   **FAQ 질문 목록 대조만이** 18문항 누락을 잡았다. 3단(섹션·1인칭·FAQ) 중 **FAQ 목록이 주력**이다.
+3. 🔴 **masterUpdated는 드리프트를 «닫은 뒤에» 찍는다.** 먼저 찍으면 그 날짜가 거짓 증거가 되고,
+   다음 세션은 그 글을 «최신»으로 믿고 건너뛴다.
+4. **개수를 맞추려고 준중복 FAQ를 넣지 마라.** tiebreak는 14:15로 남겼다 — EN 쪽이 자기 안에서 중복이다.
+5. **H2↔FAQ 축어 중복은 게이트가 안 본다.** 이번에 6쌍이 **완전 일치**였다(tiebreak 4·kicker 2).
+   클러스터를 열 때마다 **H2 목록과 FAQ 목록을 나란히 출력해 눈으로 대조**하라.
+
 ### §5-A 실행 항목 — 남은 것만
 
 | 대상 | 할 일 | 세션 |
 |---|---|---|
-| `holdem-hand-rankings` | **「Direkte Duelle」 대결표** 8~10행 + **무늬 서열 없음** 명시 | **2** |
-| `holdem-probability` | H2를 **국면형**(nach dem Flop)·**Faustregel형**으로 — 상위어는 LDA27~34 벽, 국면형은 9~15 | 3 |
+| `holdem-probability` | H2를 **국면형**(nach dem Flop)·**Faustregel형**으로 — 상위어는 LDA27~34 벽, 국면형은 9~15 | **3** |
 | `holdem-glossary` | **「Turnier- & Online-Abkürzungen」 표** — ATS·ITM·GTD·PLO·Cap·Overlay·Rebuy(전부 LDA 5~35) | 5 |
 | 전 42편 | **§7 문체 적용** — 이게 경화의 본체다 (성·인용부호는 ✅ 42편 완료) | 전 세션 |
 
@@ -105,21 +124,18 @@ npm run audit:hard -- --locale=de
 
 - **FAQ↔H2 축어 중복** — `showdown-rules`에 준일치 5건 남음(EN 마스터에서 상속).
   정본 §7-6은 중복 금지다 → **삭제가 아니라 «다른 실검색 문형»으로 재구성**할 것.
-  (완전 일치 2건 + `blind-meaning` 1건은 Session 1에서 해소)
+  (완전 일치 2건 + `blind-meaning` 1건은 Session 1에서, tiebreak 4·kicker 2는 Session 2에서 해소)
+- **`masterUpdated` 없는 글 21편** — Session 2에서 24 → 21. 클러스터를 열 때 그 6편의 드리프트를
+  3단(섹션·1인칭·**FAQ 목록**)으로 닫고 찍으면 세션마다 자연히 줄어든다.
 
 ---
 
 ## 🔴 사장님 판단 대기
 
-### ① de 코퍼스 «42편 일괄» 2건 (적대 QA 2렌즈가 공통 지적)
+### ① ~~de 코퍼스 «42편 일괄» 2건~~ → **2026-08-10 확정·완료**
 
-| # | 항목 | 실측 | 성격 |
-|---|---|---|---|
-| 1 | **ASCII 따옴표 `"…"` → `„…“`** | **23편 287쌍**이 아직 ASCII(19편만 독일식). ⚠ **파일 안에서 혼용은 0편** | 기계적. Session 1은 「반쪽만 현지화된」 5편 59곳만 고쳤다 |
-| 2 | **Gedankenstrich ` — ` → ` – `** | ` — ` **2,361회** vs ` – ` 9회. 독일 조판 표준은 –(Halbgeviertstrich)이고 정본 §7-1도 –로 적혀 있다 | 기계적. 숫자 범위(`15–25%`)는 이미 –라 대상은 «공백+대시+공백»뿐 |
-
-둘 다 Bet/Raise처럼 **한 번에 정해야** 클러스터끼리 어긋나지 않는다.
-지금은 `holdem-cooler`(„…“) ↔ `holdem-when-to-fold`("…")처럼 **같은 배치 안에서도 갈려 있다.**
+정본 §7-1 기준으로 **`„…“` · ` – `** 확정, 42편 일괄 적용(인용부호 300쌍 · 대시 2,369곳).
+게이트 **D11·D12** 신설로 되돌아감을 막는다. 근거는 `translation-terms-de.md` **§7-10**(재조사 금지).
 
 ### ② de 콘텐츠 신설
 
