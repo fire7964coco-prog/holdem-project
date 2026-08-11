@@ -162,11 +162,11 @@ Tahu Anda akan hit 35% waktu itu percuma sampai Anda membandingkannya dengan **h
 Pot setelah taruhan | $100 + $50 = $150
 Call Anda | $50 untuk menang $150 (pot akhir $200)
 Pot odds | 50 ÷ 200 = 25% — Anda butuh setidaknya 25% equity
-Equity Anda | Flush draw ≈ 35% (Aturan 4)
-Keputusan | 35% > 25% → sebuah ==g:call== yang jelas menguntungkan
+Equity Anda | Flush draw ≈ 35% hingga river (Aturan 4) — angka ini mengandaikan Anda melihat ==kedua== kartu
+Keputusan | Dengan dua kartu tersisa: 35% > 25% → sebuah ==g:call== yang jelas menguntungkan
 :::
 
-Itulah momen semua angka membuahkan hasil: **drawing odds (35%)** Anda mengalahkan **pot odds (25%)** Anda, jadi call memenangkan uang dalam jangka panjang meski Anda akan lebih sering kalah di tangan ini daripada tidak. Saat draw lebih besar dari harga, Anda call; saat lebih kecil, Anda fold — tanpa firasat. Untuk metode lengkap, contekan ukuran taruhan, dan bagaimana implied odds mengubah call, lihat [cara menghitung pot odds](/id/blog/holdem-pot-odds) dan [implied odds](/id/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp").
+Itulah momen semua angka membuahkan hasil — tapi **pakai angka untuk street yang sedang Anda bayar**. Kalau kedua kartu memang akan datang (Anda all-in, atau turn lewat tanpa taruhan lagi), **35%** Anda mengalahkan harga **25%** dan call memenangkan uang dalam jangka panjang meski Anda akan lebih sering kalah di tangan ini daripada tidak. Kalau lawan akan bertaruh lagi di turn, call ini hanya membeli Anda kartu turn: ==9 ÷ 47 = 19,1%==, *di bawah* harga — dan draw itu lalu butuh [implied odds](/id/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp"), yaitu uang yang Anda menangkan di street-street setelah Anda hit, untuk menutup celah itu. Memakai angka ×4 untuk keputusan satu kartu adalah cara paling umum pemula menaksir terlalu tinggi sebuah draw. Untuk metode lengkap dan contekan ukuran taruhan, lihat [cara menghitung pot odds](/id/blog/holdem-pot-odds).
 
 ---
 

@@ -162,11 +162,11 @@ Zu wissen, dass du 35% der Zeit triffst, ist nutzlos, bis du es mit dem **Preis*
 Pot nach der Bet | $100 + $50 = $150
 Dein Call | $50, um $150 zu gewinnen (finaler Pot $200)
 Pot Odds | 50 ÷ 200 = 25% – du brauchst mindestens 25% Equity
-Deine Equity | Flushdraw ≈ 35% (Regel der 4)
-Entscheidung | 35% > 25% → ein klar profitabler ==g:Call==
+Deine Equity | Flushdraw ≈ 35% bis zum River (Regel der 4) – die Zahl setzt voraus, dass du ==beide== Karten siehst
+Entscheidung | Mit zwei kommenden Karten: 35% > 25% → ein klar profitabler ==g:Call==
 :::
 
-Das ist der Moment, in dem sich all die Zahlen auszahlen: deine **Drawing Odds (35%)** schlagen deine **Pot Odds (25%)**, also gewinnt Callen langfristig Geld, obwohl du die Hand öfter verlieren wirst als nicht. Ist der Draw größer als der Preis, callst du; ist er kleiner, foldest du – kein Bauchgefühl nötig. Für die vollständige Methode, den Bet-Size-Spickzettel und wie Implied Odds den Call verändern, siehe [wie man Pot Odds berechnet](/de/blog/holdem-pot-odds) und [Implied Odds](/de/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp").
+Das ist der Moment, in dem sich all die Zahlen auszahlen – aber **nimm die Zahl der Street, die du gerade bezahlst**. Kommen beide Karten (du bist all-in, oder der Turn wird durchgecheckt), schlagen deine **35%** den Preis von **25%**, und Callen gewinnt langfristig Geld, obwohl du die Hand öfter verlieren wirst als nicht. Bettet dein Gegner am Turn erneut, kaufst du dir mit diesem Call nur die Turn-Karte: ==9 ÷ 47 = 19,1%==, *unter* dem Preis – dann braucht der Draw [Implied Odds](/de/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp"), also das Geld, das du auf den Streets nach dem Treffer gewinnst, um die Lücke zu schließen. Die ×4-Zahl für eine Entscheidung über eine einzige Karte auszugeben ist der häufigste Weg, auf dem Anfänger einen Draw überschätzen. Für die vollständige Methode und den Bet-Size-Spickzettel siehe [wie man Pot Odds berechnet](/de/blog/holdem-pot-odds).
 
 ---
 

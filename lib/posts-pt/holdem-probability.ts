@@ -162,11 +162,11 @@ Saber que você vai acertar 35% das vezes é inútil até comparar com o **preç
 Pote depois da aposta | $100 + $50 = $150
 Seu call | $50 para ganhar $150 (pote final $200)
 Pot odds | 50 ÷ 200 = 25% — você precisa de pelo menos 25% de equity
-Sua equity | Projeto de flush ≈ 35% (regra do 4)
-Decisão | 35% > 25% → um ==g:call== claramente lucrativo
+Sua equity | Projeto de flush ≈ 35% até o river (regra do 4) — o número pressupõe que você vê ==as duas== cartas
+Decisão | Com duas cartas por vir: 35% > 25% → um ==g:call== claramente lucrativo
 :::
 
-É esse o momento em que todos os números compensam: suas **drawing odds (35%)** ganham das suas **pot odds (25%)**, então dar call ganha dinheiro no longo prazo mesmo que você vá perder a mão na maioria das vezes. Quando o projeto é maior que o preço, você paga; quando é menor, você folda — sem precisar de feeling. Para o método completo, o resumão de bet sizing e como as implied odds mudam o call, veja [como calcular pot odds](/pt/blog/holdem-pot-odds) e [implied odds](/pt/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp").
+É esse o momento em que todos os números compensam — mas **use o número da street que você está pagando**. Se as duas cartas vêm (você está all-in, ou o turn passa sem mais aposta), seus **35%** superam o preço de **25%** e dar call ganha dinheiro no longo prazo mesmo que você vá perder a mão na maioria das vezes. Se o vilão vai apostar de novo no turn, este call só compra a carta do turn: ==9 ÷ 47 = 19,1%==, *abaixo* do preço — e aí o projeto precisa das [implied odds](/pt/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp"), o dinheiro que você ganha nas streets depois de acertar, para cobrir essa diferença. Gastar o número do ×4 numa decisão de uma carta só é a forma mais comum de o iniciante superestimar um projeto. Para o método completo e o resumão de bet sizing, veja [como calcular pot odds](/pt/blog/holdem-pot-odds).
 
 ---
 

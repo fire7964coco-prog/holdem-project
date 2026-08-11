@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Not the way you do in blackjack — the deck reshuffles every hand and too few cards are exposed, so tracking high and low cards gives you no edge. But poker has its own legal counting: counting outs, using blockers, and tracking dead cards to read what your opponent can't have.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-07-19",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🧮",
@@ -81,7 +81,7 @@ Blackjack rewards memory of what's already gone; poker rewards reading what you 
 
 An ==out== is any unseen card that improves your hand into a likely winner. A flush draw has ==9 outs== (13 of a suit minus the 4 you can see). Convert outs to a rough win chance with the ==Rule of 4 and 2==: multiply by 4 with two cards to come, by 2 with one.
 
-A 9-out flush draw hits by the river about ==g:35%== of the time (9 × 4 = 36% as a quick estimate — the true figure is 35.0%). That single number decides whether a call is profitable. The full method — dirty outs, combo draws, exact percentages — is in the [guide to counting outs](/en/blog/holdem-outs), and the odds behind every draw live in the [probability chart](/en/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
+A 9-out flush draw hits by the river about ==g:35%== of the time (9 × 4 = 36% as a quick estimate — the true figure is 35.0%). That figure counts both remaining cards, so it settles the call only when you'll actually see both — you're all-in on the flop with nothing left to bet. Facing a flop bet you'll have to pay again on the turn, count only the next card: ==9 ÷ 47 = 19.1%==. The full method — dirty outs, combo draws, exact percentages — is in the [guide to counting outs](/en/blog/holdem-outs), and the odds behind every draw live in the [probability chart](/en/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
 ### Blockers (card removal)
 
@@ -122,7 +122,7 @@ Hold'em only exposes the five shared community cards, so this is limited to the 
 **You don't need a system — just three habits that turn visible cards into better decisions.**
 
 :::steps
-Count your outs on every draw | The moment you have a draw, count the cards that complete it and multiply (×4 flop, ×2 turn). Call when your chance beats the price
+Count your outs on every draw | The moment you have a draw, count the cards that complete it and multiply — ×4 only when both cards are coming (you're all-in, or the river is free), otherwise ×2 for the next card alone. Call when that chance beats the price
 Ask what your hand blocks | Before you bluff, check whether you hold a card that makes their strongest calling hand impossible or less likely
 Adjust for what's on the board | Subtract any out that's already showing. Cards you can see are cards your opponent can't have
 :::

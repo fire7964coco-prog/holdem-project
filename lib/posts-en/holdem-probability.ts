@@ -161,11 +161,11 @@ Knowing you'll hit 35% of the time is useless until you compare it to the **pric
 Pot after the bet | $100 + $50 = $150
 Your call | $50 to win $150 (final pot $200)
 Pot odds | 50 ÷ 200 = 25% — you need at least 25% equity
-Your equity | Flush draw ≈ 35% (Rule of 4)
-Decision | 35% > 25% → a clearly profitable ==g:call==
+Your equity | Flush draw ≈ 35% by the river — the Rule of 4 number, which assumes you see ==both== cards
+Decision | With both cards to come: 35% > 25% → a clearly profitable ==g:call==
 :::
 
-That's the moment all the numbers pay off: your **drawing odds (35%)** beat your **pot odds (25%)**, so calling wins money in the long run even though you'll lose the hand more often than not. When the draw is bigger than the price, you call; when it's smaller, you fold — no gut feeling required. For the full method, bet-size cheat sheet, and how implied odds change the call, see [how to calculate pot odds](/en/blog/holdem-pot-odds) and [implied odds](/en/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp").
+That's the moment all the numbers pay off — but **match the number to the street you're paying for**. When both cards are coming (you're all-in, or the turn checks through), your **35%** beats the **25%** price and calling wins money in the long run even though you'll lose the hand more often than not. When your opponent will fire again on the turn, this call only buys you the turn card: ==9 ÷ 47 = 19.1%==, *below* the price — and the draw then needs [implied odds](/en/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp"), the money you win on the streets after you hit, to cover the gap. Spending the ×4 number on a one-card decision is the most common way beginners overrate a draw. For the full method and the bet-size cheat sheet, see [how to calculate pot odds](/en/blog/holdem-pot-odds).
 
 ---
 

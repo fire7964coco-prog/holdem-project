@@ -162,11 +162,11 @@ Saber que ligarás el 35% de las veces no sirve de nada hasta que lo comparas co
 Bote tras la apuesta | $100 + $50 = $150
 Tu call | $50 para ganar $150 (bote final $200)
 Pot odds | 50 ÷ 200 = 25% — necesitas al menos 25% de equity
-Tu equity | Proyecto de color ≈ 35% (regla del 4)
-Decisión | 35% > 25% → un ==g:call== claramente rentable
+Tu equity | Proyecto de color ≈ 35% para el river (regla del 4) — el número asume que ves ==las dos== cartas
+Decisión | Con dos cartas por venir: 35% > 25% → un ==g:call== claramente rentable
 :::
 
-Ese es el momento en que todos los números dan sus frutos: tus **odds de proyecto (35%)** superan tus **pot odds (25%)**, así que pagar gana dinero a largo plazo aunque pierdas la mano más veces que no. Cuando el proyecto es mayor que el precio, pagas; cuando es menor, foldeas — sin corazonadas. Para el método completo, la chuleta de tamaños de apuesta y cómo las odds implícitas cambian el call, mira [cómo calcular las pot odds](/es/blog/holdem-pot-odds) y las [odds implícitas](/es/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp").
+Ese es el momento en que todos los números dan sus frutos — pero **usa el número de la calle que estás pagando**. Si vienen las dos cartas (estás all-in, o el turn pasa sin más apuestas), tu **35%** supera el precio del **25%** y pagar gana dinero a largo plazo aunque pierdas la mano más veces que no. Si tu rival va a volver a apostar en el turn, este call solo te compra la carta del turn: ==9 ÷ 47 = 19.1%==, *por debajo* del precio — y entonces el proyecto necesita [odds implícitas](/es/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp"), el dinero que ganas en las calles siguientes cuando ligas, para cubrir ese hueco. Gastar el número del ×4 en una decisión de una sola carta es la forma más común en que los principiantes sobrevaloran un proyecto. Para el método completo y la chuleta de tamaños de apuesta, mira [cómo calcular las pot odds](/es/blog/holdem-pot-odds).
 
 ---
 

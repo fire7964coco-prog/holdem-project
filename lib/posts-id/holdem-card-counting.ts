@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Tidak seperti di blackjack — dek diacak ulang setiap tangan dan terlalu sedikit kartu terlihat, jadi melacak kartu tinggi dan rendah tak memberi keunggulan. Tapi poker punya penghitungan legalnya sendiri: menghitung outs, memakai blocker, dan melacak dead card untuk membaca apa yang tak mungkin dipegang lawan.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-07-08",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "🧮",
@@ -81,7 +81,7 @@ Blackjack memberi imbalan pada ingatan atas apa yang sudah pergi; poker memberi 
 
 Sebuah ==out== adalah kartu tak terlihat mana pun yang meningkatkan tangan Anda menjadi kemungkinan pemenang. Sebuah flush draw punya ==9 outs== (13 kartu satu jenis dikurangi 4 yang bisa Anda lihat). Ubah outs menjadi peluang menang kasar dengan ==Rule of 4 and 2==: kalikan dengan 4 saat masih dua kartu tersisa, dengan 2 saat satu.
 
-Sebuah flush draw 9 outs jadi pada river sekitar ==g:35%== dari waktu (9 × 4 = 36% sebagai perkiraan cepat — angka sebenarnya 35,0%). Angka tunggal itulah yang menentukan apakah sebuah call profit. Metode lengkapnya — outs kotor, combo draw, persentase persis — ada di [panduan menghitung outs](/id/blog/holdem-outs), dan peluang di balik setiap draw ada di [tabel probabilitas](/id/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
+Sebuah flush draw 9 outs jadi pada river sekitar ==g:35%== dari waktu (9 × 4 = 36% sebagai perkiraan cepat — angka sebenarnya 35,0%). Angka itu menghitung kedua kartu tersisa, jadi ia baru menentukan sebuah call kalau Anda memang melihat keduanya: Anda all-in di flop tanpa taruhan lagi. Kalau ada taruhan di flop yang harus Anda bayar lagi di turn, hitung hanya kartu berikutnya: ==9 ÷ 47 = 19,1%==. Metode lengkapnya — outs kotor, combo draw, persentase persis — ada di [panduan menghitung outs](/id/blog/holdem-outs), dan peluang di balik setiap draw ada di [tabel probabilitas](/id/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
 ### Blocker (card removal)
 
@@ -122,7 +122,7 @@ Hold'em hanya menampilkan lima community card bersama, jadi ini terbatas pada bo
 **Anda tak butuh sistem — hanya tiga kebiasaan yang mengubah kartu terlihat menjadi keputusan lebih baik.**
 
 :::steps
-Hitung outs Anda di setiap draw | Begitu Anda punya draw, hitung kartu yang melengkapinya dan kalikan (×4 flop, ×2 turn). Call saat peluang Anda mengalahkan harganya
+Hitung outs Anda di setiap draw | Begitu Anda punya draw, hitung kartu yang melengkapinya dan kalikan — ×4 hanya kalau kedua kartu memang akan datang (Anda all-in, atau river gratis), selain itu ×2 hanya untuk kartu berikutnya. Call saat peluang itu mengalahkan harganya
 Tanyakan apa yang tangan Anda blokir | Sebelum Anda bluff, cek apakah Anda pegang kartu yang membuat tangan call terkuat mereka mustahil atau lebih kecil kemungkinannya
 Sesuaikan dengan apa yang ada di board | Kurangi out mana pun yang sudah terlihat. Kartu yang bisa Anda lihat adalah kartu yang tak mungkin dipegang lawan
 :::

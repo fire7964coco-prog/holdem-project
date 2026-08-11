@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Nicht so wie im Blackjack – das Deck wird jede Hand neu gemischt und zu wenige Karten liegen offen, also bringt dir das Tracken hoher und niedriger Karten keinen Edge. Aber Poker hat sein eigenes legales Zählen: Outs zählen, Blocker nutzen und tote Karten tracken, um zu lesen, was dein Gegner nicht haben kann.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-08-10",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🧮",
@@ -81,7 +81,7 @@ Blackjack belohnt das Gedächtnis für das, was schon weg ist; Poker belohnt das
 
 Ein ==Out== ist jede unsichtbare Karte, die deine Hand zu einem wahrscheinlichen Gewinner verbessert. Ein Flushdraw hat ==9 Outs== (13 einer Farbe minus die 4, die du sehen kannst). Rechne Outs mit der ==Regel der 4 und 2== in eine grobe Gewinnchance um: multipliziere mit 4 bei zwei kommenden Karten, mit 2 bei einer.
 
-Ein Flushdraw mit 9 Outs trifft bis zum River etwa ==g:35%== der Zeit (9 × 4 = 36% als schnelle Schätzung – der wahre Wert ist 35,0%). Diese eine Zahl entscheidet, ob ein Call profitabel ist. Die vollständige Methode – dirty Outs, Combo-Draws, exakte Prozentwerte – steht im [Guide zum Outs-Zählen](/de/blog/holdem-outs), und die Odds hinter jedem Draw findest du in der [Wahrscheinlichkeitstabelle](/de/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
+Ein Flushdraw mit 9 Outs trifft bis zum River etwa ==g:35%== der Zeit (9 × 4 = 36% als schnelle Schätzung – der wahre Wert ist 35,0%). Diese Zahl rechnet beide verbleibenden Karten – sie entscheidet den Call also nur, wenn du beide wirklich siehst: du bist am Flop all-in und hast nichts mehr zu setzen. Liegt eine Bet vor dir, die du am Turn erneut bezahlen musst, rechne nur die nächste Karte: ==9 ÷ 47 = 19,1%==. Die vollständige Methode – dirty Outs, Combo-Draws, exakte Prozentwerte – steht im [Guide zum Outs-Zählen](/de/blog/holdem-outs), und die Odds hinter jedem Draw findest du in der [Wahrscheinlichkeitstabelle](/de/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
 ### Blocker (Card Removal)
 
@@ -122,7 +122,7 @@ Hold'em legt nur die fünf gemeinsamen Community Cards offen, also ist das hier 
 **Du brauchst kein System – nur drei Gewohnheiten, die sichtbare Karten in bessere Entscheidungen verwandeln.**
 
 :::steps
-Zähle deine Outs bei jedem Draw | Sobald du einen Draw hast, zähle die Karten, die ihn vervollständigen, und multipliziere (×4 Flop, ×2 Turn). Calle, wenn deine Chance den Preis schlägt
+Zähle deine Outs bei jedem Draw | Sobald du einen Draw hast, zähle die Karten, die ihn vervollständigen, und multipliziere – ×4 nur, wenn beide Karten kommen (du bist all-in, oder der River kostet nichts mehr), sonst ×2 nur für die nächste Karte. Calle, wenn diese Chance den Preis schlägt
 Frage, was deine Hand blockt | Bevor du bluffst, prüfe, ob du eine Karte hältst, die ihre stärkste Calling-Hand unmöglich oder unwahrscheinlicher macht
 Passe an das an, was auf dem Board liegt | Ziehe jedes Out ab, das bereits offen liegt. Karten, die du sehen kannst, sind Karten, die dein Gegner nicht haben kann
 :::
