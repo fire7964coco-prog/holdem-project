@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Short Stack spielen im Poker – Push/Fold-Strategie nach Stacktiefe",
   seoTitle: "Short Stack spielen: Push/Fold einfach erklärt",
   desc: "Short Stack im Turnier? Lerne Push/Fold nach Stacktiefe – wann du bei 15, 10 und 5 Big Blinds shovst, die M-Ratio-Zonen und der ICM-Twist an der Bubble.",
-  tldr: "Ein Short Stack (grob unter 15–20 Big Blinds) kann kein normales Postflop-Poker mehr spielen, also wechselt er zu Push/Fold: geh first-in all-in, um deine Fold Equity zu behalten, und limpe oder min-raise-fold nie. Shove von Late Position weiter, halte deine Calling-Range enger als deine Shoving-Range, und blinde nicht auf null herunter, während du „auf eine Hand wartest“ – deine Fold Equity ist die Waffe, und sie verschwindet unter etwa 8 Big Blinds.",
+  tldr: "Ein Short Stack (grob unter 15–20 Big Blinds) kann kein normales Postflop-Poker mehr spielen, also wechselt er zu Push/Fold: geh first-in all-in, um deine Fold Equity zu behalten, und limpe oder min-raise-fold nie. Shove von Late Position weiter, halte deine Calling-Range enger als deine Shoving-Range, und blinde nicht auf null herunter, während du „auf eine Hand wartest“ – deine Fold Equity ist die Waffe, und sie beginnt unter etwa 8 Big Blinds zu schwinden.",
   category: "tournament",
   date: "2026-07-09",
   updated: "2026-08-11",
@@ -88,7 +88,7 @@ Der Haken ist, dass Fold Equity ==abnimmt, während dein Stack schrumpft==. Bei 
 
 ## Wann all-in gehen: First-in-Shoving nach Stacktiefe und Position
 
-**Wenn du der erste Spieler im Pot und kurz bist, lautet deine Entscheidung Shove oder Fold – und wie weit du shovst, hängt von deiner Stackgröße und, genauso stark, von deiner Position ab.** Je später deine Position, desto weniger Spieler sind hinter dir übrig, die mit einer großen Hand aufwachen könnten, und desto mehr sind die Blinds relativ zu deinem Stack wert – also ==weitet sich deine Shoving-Range Richtung Button dramatisch==.
+**Wenn du der erste Spieler im Pot und kurz bist, lautet deine Entscheidung Shove oder Fold – und wie weit du shovst, hängt von deiner Stackgröße und, genauso stark, von deiner Position ab.** Je später deine Position, desto weniger Spieler sind hinter dir übrig, die mit einer großen Hand aufwachen könnten – desto höher ist also die Chance, dass alle folden, und damit die ==Fold Equity==, die den Shove bezahlt. Genau deshalb ==weitet sich deine Shoving-Range Richtung Button dramatisch==.
 
 - **Early Position, 12–15bb:** am engsten. Du hast den ganzen Tisch hinter dir, also jamme eine starke, meist lineare Range und folde den Rest.
 - **Cutoff und Button, 10–15bb:** viel weiter. Mit zwei oder drei Spielern, die noch handeln, shovst du, um die Blinds und Antes zu stehlen, und kannst viele Hände jammen, die Under the Gun ein leichter Fold wären.

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Limpen bedeutet, präflop in einen Pot einzusteigen, indem du nur den Big Blind callst, statt zu raisen oder zu folden. Open-Limpen (als Erster reinzugehen) ist fast immer ein Fehler – du kannst den Pot präflop nicht gewinnen, gibst die Initiative ab und gute Spieler bestrafen dich. Aber Limpen ist nicht immer falsch: den Small Blind zu completen, spekulative Hände hinter anderen Limpern zu over-limpen sowie einige Live- und Short-Stack-Situationen sind legitime Ausnahmen.",
   category: "strategy",
   date: "2026-07-05",
-  updated: "2026-08-10",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "🚶",
@@ -67,7 +67,7 @@ Wenn du open-limpst, gibst du überraschend viel auf. Genau das hier:
 
 1. **Du kannst den Pot präflop nicht gewinnen.** Das ist der große Punkt. Wenn du first-in *raist*, können alle folden und du kassierst die Blinds kampflos – Gratisgeld, und das nennenswert oft. Wenn du limpst, ist diese Zahl **null**. Du hast garantiert, dass du eine Hand treffen oder ihn später gewinnen musst; du hast den saubersten Weg zu gewinnen weggeworfen.
 2. **Du gibst die Initiative ab.** Der Präflop-Raiser ist der „Aggressor“ – er darf auf dem Flop eine [Continuation Bet](/de/blog/holdem-continuation-bet) abfeuern und eine starke Hand repräsentieren, wodurch er den Pot oft ganz ohne alles nimmt. Limpst du, hast du diese Story jemand anderem überlassen. Du reagierst jetzt, statt zu führen.
-3. **Du baust einen aufgeblähten Multiway-Pot – oft aus schlechter Position.** Limpen lädt mehr Caller ein und lässt den Big Blind billig rein. Je mehr Spieler den Flop sehen, desto weniger ist deine Hand wert, und wenn du aus früher Position gelimpt hast, handelst du auf jeder Street *zuerst* und ohne Initiative. Das ist der schlechteste Platz am Tisch.
+3. **Du baust einen aufgeblähten Multiway-Pot – oft aus schlechter Position.** Limpen lädt mehr Caller ein und lässt den Big Blind billig rein. Je mehr Spieler den Flop sehen, desto weniger ist deine Hand wert, und wenn du aus früher Position gelimpt hast, bist du auf jeder Street *out of position* gegenüber fast dem ganzen Feld – und das ohne Initiative. Das ist der schlechteste Platz am Tisch.
 4. **Du machst dich lesbar – und ausbeutbar.** Gewohnheitslimper tauchen mit einer gedeckelten, transparenten Range auf. Gute Spieler greifen sie unerbittlich an (mehr dazu unten), also landest du immer wieder in kniffligen Spots aus schlechter Position. Wie das alte Sprichwort sagt: Chronische Limper „gewinnen kleine Pots und verlieren große“.
 
 ---
@@ -127,7 +127,7 @@ Die Lösung ist erfrischend einfach: **Raisen oder folden als Standard, und Limp
 
 ## Limpen im Live-Low-Stakes vs. Online / GTO
 
-Ein ehrlicher Vorbehalt, denn Kontext ändert alles. In **Online- und härteren Spielen** ist Open-Limpen nahezu unverteidigbar – die Felder sind aggressiv, jemand wird dich fast jedes Mal iso-raisen, und die GTO-Basis lautet im Wesentlichen „open-limpe nicht in einem normalen 100-BB-Spiel“.
+Ein ehrlicher Vorbehalt, denn Kontext ändert alles. In **Online- und härteren Spielen** ist Open-Limpen nahezu unverteidigbar – die Felder sind aggressiv, jemand wird dich fast jedes Mal iso-raisen, und die GTO-Basis lautet im Wesentlichen „open-limpe nicht in einem normalen 100-BB-Spiel“ – den Small Blind ausgenommen, wo das Completen aus den oben genannten Gründen verteidigbar bleibt.
 
 In **sehr passiven Live-Low-Stakes-Spielen** ist es eine andere Welt. Wenn der Tisch Limpern routinemäßig billige Flops gönnt und niemand sie bestraft, ist Open-Limpen spekulativer Hände aus früher Position weit weniger teuer – du wirst nicht isoliert und darfst Equity mit Händen realisieren, die einem Raise lieber aus dem Weg gehen würden. Es ist immer noch nicht *optimal*, aber die Strafe ist klein, und Set-Mining in einem Family Pot kann Geld drucken. Lies deinen Tisch: Je weicher und passiver das Spiel, desto mehr Limpen kannst du dir erlauben; je härter das Spiel, desto strikter solltest du raisen oder folden.
 

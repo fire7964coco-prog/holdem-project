@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Cara memainkan short stack di poker — strategi push/fold berdasarkan kedalaman stack",
   seoTitle: "Cara main short stack di poker (push/fold)",
   desc: "Short stack di turnamen? Pelajari push/fold berdasarkan kedalaman stack — kapan jam di 15, 10, dan 5 big blind, zona M-ratio, plus twist ICM di bubble.",
-  tldr: "Short stack (kira-kira di bawah 15–20 big blind) tak bisa main poker postflop normal, jadi ia beralih ke push/fold: masuk all-in first-in untuk menjaga fold equity Anda, dan jangan pernah open-limp atau min-raise-lalu-fold. Shove lebih lebar dari posisi akhir, jaga calling range lebih ketat daripada shoving range Anda, dan jangan blind down sampai habis 'menunggu tangan bagus' — fold equity adalah senjata Anda, dan ia lenyap di bawah sekitar 8 big blind.",
+  tldr: "Short stack (kira-kira di bawah 15–20 big blind) tak bisa main poker postflop normal, jadi ia beralih ke push/fold: masuk all-in first-in untuk menjaga fold equity Anda, dan jangan pernah open-limp atau min-raise-lalu-fold. Shove lebih lebar dari posisi akhir, jaga calling range lebih ketat daripada shoving range Anda, dan jangan blind down sampai habis 'menunggu tangan bagus' — fold equity adalah senjata Anda, dan ia mulai memudar di bawah sekitar 8 big blind.",
   category: "tournament",
   date: "2026-07-09",
   updated: "2026-08-11",
@@ -88,7 +88,7 @@ Jebakannya adalah fold equity ==meluruh saat stack Anda menyusut==. Di 12–15 b
 
 ## Kapan Masuk All-In: Shoving First-In Berdasarkan Kedalaman Stack dan Posisi
 
-**Saat Anda pemain pertama di pot dan pendek, keputusan Anda adalah shove atau fold — dan seberapa lebar Anda shove tergantung pada ukuran stack dan, sama pentingnya, posisi Anda.** Makin akhir posisi Anda, makin sedikit pemain tersisa di belakang untuk bangun dengan tangan besar, dan makin berharga blind relatif terhadap stack Anda — jadi ==shoving range Anda melebar drastis menuju button==.
+**Saat Anda pemain pertama di pot dan pendek, keputusan Anda adalah shove atau fold — dan seberapa lebar Anda shove tergantung pada ukuran stack dan, sama pentingnya, posisi Anda.** Makin akhir posisi Anda, makin sedikit pemain tersisa di belakang untuk bangun dengan tangan besar — jadi peluang semua orang fold makin tinggi, dan bersamanya ==fold equity== yang membuat shove itu untung. Itulah kenapa ==shoving range Anda melebar drastis menuju button==.
 
 - **Posisi awal, 12–15bb:** paling ketat. Anda punya seluruh meja di belakang, jadi jam range yang kuat, sebagian besar linear, dan fold sisanya.
 - **Cutoff dan button, 10–15bb:** jauh lebih lebar. Dengan dua atau tiga pemain tersisa untuk bertindak, Anda shove untuk mencuri blind dan ante, dan Anda bisa jam banyak tangan yang akan jadi fold mudah dari under the gun.

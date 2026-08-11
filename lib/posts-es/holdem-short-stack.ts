@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Cómo jugar un short stack en póker — estrategia push/fold según la profundidad de stack",
   seoTitle: "Short stack en póker: cómo jugar el push/fold",
   desc: "¿Corto de fichas en un torneo? Aprende el push/fold: cuándo ir all-in con 15, 10 y 5 ciegas grandes, las zonas de la M y el giro del ICM en la burbuja.",
-  tldr: "Un short stack (más o menos por debajo de 15–20 ciegas grandes) no puede jugar póker postflop normal, así que cambia al push/fold: vas all-in siendo el primero en entrar para conservar tu fold equity, y nunca haces open-limp ni min-raise para luego foldear. Vas de shove más amplio desde posición tardía, mantienes tu rango de igualar más cerrado que tu rango de shove, y no te dejas fundir hasta nada 'esperando una mano': tu fold equity es el arma, y desaparece por debajo de unas 8 ciegas grandes.",
+  tldr: "Un short stack (más o menos por debajo de 15–20 ciegas grandes) no puede jugar póker postflop normal, así que cambia al push/fold: vas all-in siendo el primero en entrar para conservar tu fold equity, y nunca haces open-limp ni min-raise para luego foldear. Vas de shove más amplio desde posición tardía, mantienes tu rango de igualar más cerrado que tu rango de shove, y no te dejas fundir hasta nada 'esperando una mano': tu fold equity es el arma, y empieza a apagarse por debajo de unas 8 ciegas grandes.",
   category: "tournament",
   date: "2026-07-09",
   updated: "2026-08-11",
@@ -89,7 +89,7 @@ La trampa es que la fold equity ==decae a medida que tu stack encoge==. Con 12�
 
 ## Cuándo ir all-in: el shove siendo primero según profundidad de stack y posición
 
-**Cuando eres el primer jugador en el bote y vas corto, tu decisión es shove o foldear — y lo amplio que vas de shove depende del tamaño de tu stack y, en igual medida, de tu posición.** Cuanto más tardía es tu posición, menos jugadores quedan detrás de ti que puedan despertar con una gran mano, y más valen las ciegas en relación con tu stack — así que ==tu rango de shove se amplía muchísimo hacia el botón==.
+**Cuando eres el primer jugador en el bote y vas corto, tu decisión es shove o foldear — y lo amplio que vas de shove depende del tamaño de tu stack y, en igual medida, de tu posición.** Cuanto más tardía es tu posición, menos jugadores quedan detrás de ti que puedan despertar con una gran mano — así que sube la probabilidad de que todos foldeen, y con ella la ==fold equity== que hace rentable el shove. Por eso ==tu rango de shove se amplía muchísimo hacia el botón==.
 
 - **Posición temprana, 12–15bb:** lo más cerrado. Tienes toda la mesa detrás, así que ve de jam con un rango fuerte, casi lineal, y foldea el resto.
 - **Cutoff y botón, 10–15bb:** mucho más amplio. Con dos o tres jugadores por actuar, vas de shove para robar las ciegas y los antes, y puedes ir de jam con muchas manos que serían un fold fácil desde UTG.

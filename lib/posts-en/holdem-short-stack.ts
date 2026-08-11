@@ -88,7 +88,7 @@ The catch is that fold equity ==decays as your stack shrinks==. At 12–15 big b
 
 ## When to Go All-In: First-In Shoving by Stack Depth and Position
 
-**When you're the first player in the pot and short, your decision is shove or fold — and how wide you shove depends on your stack size and, just as much, your position.** The later your position, the fewer players are left behind you to wake up with a big hand, and the more the blinds are worth relative to your stack — so ==your shoving range widens dramatically toward the button==.
+**When you're the first player in the pot and short, your decision is shove or fold — and how wide you shove depends on your stack size and, just as much, your position.** The later your position, the fewer players are left behind you to wake up with a big hand — so the chance everyone folds climbs, and with it the ==fold equity== that makes the shove pay. That's why ==your shoving range widens dramatically toward the button==.
 
 - **Early position, 12–15bb:** tightest. You have the whole table behind you, so jam a strong, mostly linear range and fold the rest.
 - **Cutoff and button, 10–15bb:** much wider. With two or three players left to act, you're shoving to steal the blinds and antes, and you can jam many hands that would be an easy fold under the gun.

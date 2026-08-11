@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Limpar é entrar num pote no pré-flop só pagando o big blind em vez de aumentar ou foldar. Open-limpar (ser o primeiro a entrar) é quase sempre um erro — você não consegue ganhar o pote no pré-flop, abre mão da iniciativa, e bons jogadores te punem. Mas limpar nem sempre é errado: completar o small blind, over-limpar mãos especulativas atrás de outros limpers, e alguns spots ao vivo e de stack curto são exceções legítimas.",
   category: "strategy",
   date: "2026-07-05",
-  updated: "2026-07-05",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🚶",
@@ -67,7 +67,7 @@ Quando você open-limpa, abre mão de uma quantidade surpreendente de coisas. Ei
 
 1. **Você não consegue ganhar o pote no pré-flop.** Esse é o grande. Quando você *aumenta* primeiro a entrar, todo mundo pode foldar e você embolsa os blinds sem disputa — dinheiro de graça, numa fatia considerável das vezes. Quando você limpa, esse número é **zero**. Você garantiu que precisa formar uma mão ou ganhar depois; jogou fora o jeito mais limpo de vencer.
 2. **Você entrega a iniciativa.** O agressor do pré-flop é o "aggressor" — ele pode disparar uma [continuation bet](/pt/blog/holdem-continuation-bet) no flop e representar uma mão forte, muitas vezes levando o pote com nada. Limpe, e você entregou essa narrativa para outra pessoa. Agora você reage em vez de liderar.
-3. **Você monta um pote multiway inflado — muitas vezes fora de posição.** Limpar convida mais pagadores e deixa o big blind entrar barato. Quanto mais jogadores veem o flop, menos a sua mão vale, e se você limpou de posição inicial vai estar agindo *primeiro* em toda street sem iniciativa. Essa é a pior cadeira da casa.
+3. **Você monta um pote multiway inflado — muitas vezes fora de posição.** Limpar convida mais pagadores e deixa o big blind entrar barato. Quanto mais jogadores veem o flop, menos a sua mão vale, e se você limpou de posição inicial vai estar *fora de posição* contra quase toda a mesa em toda street, e sem iniciativa. Essa é a pior cadeira da casa.
 4. **Você se torna legível — e explorável.** Limpers habituais aparecem com um range limitado e transparente. Bons jogadores atacam isso sem trégua (mais sobre isso abaixo), então você acaba em spots difíceis fora de posição repetidas vezes. Como diz o ditado antigo, limpers crônicos "ganham potes pequenos e perdem os grandes".
 
 ---
@@ -127,7 +127,7 @@ O conserto é refrescantemente simples: **aumente ou folde como padrão, e reser
 
 ## Limpar ao vivo em stakes baixas vs online / GTO
 
-Uma ressalva honesta, porque o contexto muda tudo. Em **jogos online e mais difíceis**, open-limpar é quase indefensável — os campos são agressivos, alguém vai te dar iso-raise quase toda vez, e a base GTO é essencialmente "não open-limpe num jogo normal de 100bb".
+Uma ressalva honesta, porque o contexto muda tudo. Em **jogos online e mais difíceis**, open-limpar é quase indefensável — os campos são agressivos, alguém vai te dar iso-raise quase toda vez, e a base GTO é essencialmente "não open-limpe num jogo normal de 100bb" — fora do small blind, onde completar continua defensável pelos motivos acima.
 
 Em **jogos ao vivo de stakes muito baixas e passivos**, é um mundo diferente. Se a mesa rotineiramente deixa limpers verem flops baratos e ninguém os pune, open-limpar mãos especulativas de posição inicial é bem menos custoso — você não está sendo isolado, e consegue realizar equity com mãos que preferem não encarar um aumento. Ainda não é *ótimo*, mas a penalidade é pequena, e set-mining num family pot pode imprimir dinheiro. Leia a sua mesa: quanto mais soft e passivo o jogo, mais limp você consegue levar; quanto mais difícil o jogo, mais estritamente você deve aumentar ou foldar.
 

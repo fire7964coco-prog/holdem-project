@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Limping is entering a pot preflop by just calling the big blind instead of raising or folding. Open-limping (being first in) is almost always a mistake — you can't win the pot preflop, you give up initiative, and good players punish you. But limping isn't always wrong: completing the small blind, over-limping speculative hands behind other limpers, and some live and short-stack spots are legitimate exceptions.",
   category: "strategy",
   date: "2026-07-05",
-  updated: "2026-07-19",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🚶",
@@ -67,7 +67,7 @@ When you open-limp, you give up a surprising amount. Here's exactly what:
 
 1. **You can't win the pot preflop.** This is the big one. When you *raise* first-in, everyone can fold and you scoop the blinds uncontested — free money, a meaningful chunk of the time. When you limp, that number is **zero**. You've guaranteed you have to make a hand or win it later; you've thrown away the cleanest way to win.
 2. **You surrender initiative.** The preflop raiser is the "aggressor" — they get to fire a [continuation bet](/en/blog/holdem-continuation-bet) on the flop and represent a strong hand, often taking the pot with nothing. Limp, and you've handed that story to someone else. You're now reacting instead of leading.
-3. **You build a bloated, multiway pot — often out of position.** Limping invites more callers and lets the big blind in cheaply. The more players see the flop, the less your hand is worth, and if you limped from early position you'll be acting *first* on every street with no initiative. That's the worst seat in the house.
+3. **You build a bloated, multiway pot — often out of position.** Limping invites more callers and lets the big blind in cheaply. The more players see the flop, the less your hand is worth, and if you limped from early position you'll be *out of position* to almost the whole field on every street, with no initiative. That's the worst seat in the house.
 4. **You make yourself readable — and exploitable.** Habitual limpers show up with a capped, transparent range. Good players attack it relentlessly (more on that below), so you end up in tricky spots out of position over and over. As the old saying goes, chronic limpers "win small pots and lose big ones."
 
 ---
@@ -127,7 +127,7 @@ The fix is refreshingly simple: **raise or fold as your default, and reserve lim
 
 ## Limping in Live Low-Stakes vs Online / GTO
 
-One honest caveat, because context changes everything. In **online and tougher games**, open-limping is close to indefensible — the fields are aggressive, someone will iso-raise you almost every time, and the GTO baseline is essentially "don't open-limp in a normal 100bb game."
+One honest caveat, because context changes everything. In **online and tougher games**, open-limping is close to indefensible — the fields are aggressive, someone will iso-raise you almost every time, and the GTO baseline is essentially "don't open-limp in a normal 100bb game" — outside the small blind, where completing stays defensible for the reasons above.
 
 In **very passive live low-stakes games**, it's a different world. If the table routinely lets limpers see cheap flops and nobody punishes them, open-limping speculative hands from early position is far less costly — you're not being isolated, and you get to realize equity with hands that would rather not face a raise. It's still not *optimal*, but the penalty is small, and set-mining in a family pot can print money. Read your table: the softer and more passive the game, the more limping you can get away with; the tougher the game, the more strictly you should raise or fold.
 
