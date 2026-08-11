@@ -62,7 +62,7 @@ A few rules govern how pot rake is actually skimmed:
 
 - **No flop, no drop.** In most rooms, if the hand ends before the flop — everyone folds to a preflop raise — the house takes **no rake** at all. (Not universal: a few sites, notably GGPoker, do rake some preflop pots, so check your room.)
 - **The rake cap.** The house never takes the full percentage on a huge pot — it stops at a maximum, commonly **$3–$6 live** and **$1–$3 online**. Caps usually scale with the stakes and often shrink when fewer players are dealt in (a heads-up pot might be capped at $1).
-- **Time charge instead of pot rake.** At higher stakes, rooms often stop raking pots and instead collect a flat fee — say $10–$15 an hour per player, taken every half-hour. This favors players who win big pots, since a $2,000 pot is no longer skimmed.
+- **Time charge instead of pot rake.** At higher stakes, rooms often stop raking pots and instead collect a flat fee — say $10–$15 an hour per player, taken every half-hour. This favors players who win big pots — though what you save is the *capped* rake, not a slice of the pot: against a $3–$6 cap, a $2,000 pot was only ever giving up a few dollars.
 - **Dead drop.** A less common method where only the player on the button pays a set rake each hand, collected before the cards are dealt — designed so big-pot winners aren't taxed more than anyone else.
 
 ---
@@ -101,7 +101,7 @@ Contributed | Dealt
 Based on the rake from pots **you put money into** — the standard modern method | Split evenly among **everyone dealt into** the raked pot, whether they contributed or not — now rare
 :::
 
-For a casual player, rakeback is a minor perk. For a high-volume regular it's enormous: the difference between a 20% and a 40% deal can be worth **tens of thousands a year**, and for many break-even grinders, rakeback *is* their profit. It effectively lowers your true rake, so it's worth checking before you pick where to play. Just be aware that much of the rakeback advice online is affiliate-driven — treat "sign up here" pages with the skepticism you'd give any sales pitch.
+For a casual player, rakeback is a minor perk. For a high-volume regular it's enormous: the gap between a 20% and a 40% deal scales with the rake you actually generate, so it only turns into serious money if you're putting in real volume at meaningful stakes — and for many break-even grinders, rakeback *is* their profit. It effectively lowers your true rake, so it's worth checking before you pick where to play. Just be aware that much of the rakeback advice online is affiliate-driven — treat "sign up here" pages with the skepticism you'd give any sales pitch.
 
 ---
 
@@ -113,7 +113,7 @@ Not the pot kind — but you still pay a fee, and it's hiding in plain sight. A 
 A **$100 + $9** tournament means $100 goes into the prize pool and **$9 is the house's fee.**
 :::
 
-That fee — also called the **juice** or **vig** — is the tournament equivalent of rake. It's usually **5–20% of the buy-in**, and it's flat: you pay it whether you bust first or win the whole thing. Lower buy-ins carry proportionally higher fees (a $3 + $0.30 sit-and-go is 10%), and a common rule of thumb is that fast **turbo formats should be under ~13% fee** to stay beatable long-term. Since a tournament's structure is entirely different from a cash game's, the way you pay to play is too — a distinction worth understanding alongside the [tournament vs cash game](/en/blog/holdem-tournament-vs-cash-game) fundamentals.
+That fee — also called the **juice** or **vig** — is the tournament equivalent of rake. It's usually **5–20% of the buy-in**, and it's flat: you pay it whether you bust first or win the whole thing. Lower buy-ins carry proportionally higher fees (a $3 + $0.30 sit-and-go is 10%), and because fast **turbo formats compress your edge**, the fee bites hardest there — the lower the percentage, the more of your skill survives it. Since a tournament's structure is entirely different from a cash game's, the way you pay to play is too — a distinction worth understanding alongside the [tournament vs cash game](/en/blog/holdem-tournament-vs-cash-game) fundamentals.
 
 ---
 
@@ -161,7 +161,7 @@ A. Rakeback returns a percentage of the rake you personally pay — often 20–4
 
 **Q. How can you pay less rake in poker?**
 
-A. You can't escape rake entirely in a raked game, but you can shrink it. Get the best rakeback deal you can, and choose rooms with player-friendly caps. Moving up in stakes shrinks rake too, since a fixed cap is a smaller share of each pot — but only take that step once your bankroll covers the swings *and* you still hold an edge over the tougher field, or the players will take far more than the rake ever did. Playing fewer, bigger pots rather than a flood of small capped ones, avoiding very short-handed tables where the cap barely drops, and preferring high-stakes time-charge games all lower your effective rake. Home games with no rake at all are the cheapest poker there is.
+A. You can't escape rake entirely in a raked game, but you can shrink it. Get the best rakeback deal you can, and choose rooms with player-friendly caps. Moving up in stakes shrinks rake too, since a fixed cap is a smaller share of each pot — but only take that step once your bankroll covers the swings *and* you still hold an edge over the tougher field, or the players will take far more than the rake ever did. Playing fewer, bigger pots rather than a flood of small capped ones, avoiding very short-handed tables — where you play far more hands per hour and post blinds far more often, so you're in many more raked pots — and preferring high-stakes time-charge games all lower your effective rake. Home games with no rake at all are the cheapest poker there is.
 
 **Q. Is taking a rake illegal? Why is taking a rake in poker illegal?**
 

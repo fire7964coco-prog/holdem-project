@@ -62,7 +62,7 @@ Ein paar Regeln bestimmen, wie der Pot Rake tatsächlich abgeschöpft wird:
 
 - **No flop, no drop.** In den meisten Räumen nimmt das Haus **gar keinen Rake**, wenn die Hand vor dem Flop endet – alle folden auf einen Preflop-Raise. (Nicht überall so: ein paar Seiten, allen voran GGPoker, raken manche Preflop-Pots, prüf also deinen Raum.)
 - **Das Rake-Cap.** Das Haus nimmt auf einem riesigen Pot nie den vollen Prozentsatz – es stoppt bei einem Maximum, meist **$3–$6 live** und **$1–$3 online**. Caps skalieren normalerweise mit den Stakes und schrumpfen oft, wenn weniger Spieler ausgeteilt bekommen (ein Heads-up-Pot ist vielleicht bei $1 gecappt).
-- **Time Charge statt Pot Rake.** Bei höheren Stakes hören Räume oft auf, Pots zu raken, und kassieren stattdessen eine Pauschalgebühr – sagen wir $10–$15 pro Stunde pro Spieler, alle halbe Stunde genommen. Das begünstigt Spieler, die große Pots gewinnen, da ein $2.000-Pot nicht mehr abgeschöpft wird.
+- **Time Charge statt Pot Rake.** Bei höheren Stakes hören Räume oft auf, Pots zu raken, und kassieren stattdessen eine Pauschalgebühr – sagen wir $10–$15 pro Stunde pro Spieler, alle halbe Stunde genommen. Das begünstigt Spieler, die große Pots gewinnen, wobei du das *gedeckelte* Rake sparst und nicht einen Anteil am Pot: gegen ein Cap von $3–$6 hat ein $2.000-Pot ohnehin nur ein paar Dollar abgegeben.
 - **Dead Drop.** Eine seltenere Methode, bei der nur der Spieler am Button jede Hand einen festen Rake zahlt, kassiert bevor die Karten ausgeteilt werden – so konzipiert, dass Gewinner großer Pots nicht stärker besteuert werden als alle anderen.
 
 ---
@@ -101,7 +101,7 @@ Contributed | Dealt
 Basierend auf dem Rake aus Pots, **in die du Geld gesteckt hast** – die moderne Standardmethode | Gleichmäßig aufgeteilt unter **allen, die in den geraketen Pot ausgeteilt wurden**, ob sie beigetragen haben oder nicht – heute selten
 :::
 
-Für einen Gelegenheitsspieler ist Rakeback ein kleiner Bonus. Für einen High-Volume-Regular ist es enorm: Der Unterschied zwischen einem 20%- und einem 40%-Deal kann **Zehntausende pro Jahr** wert sein, und für viele Break-even-Grinder *ist* Rakeback ihr Profit. Es senkt effektiv deinen echten Rake, es lohnt sich also, das zu prüfen, bevor du dir aussuchst wo du spielst. Sei dir nur bewusst, dass viele Rakeback-Tipps online affiliate-getrieben sind – behandle „Hier anmelden“-Seiten mit derselben Skepsis, die du jedem Verkaufspitch geben würdest.
+Für einen Gelegenheitsspieler ist Rakeback ein kleiner Bonus. Für einen High-Volume-Regular ist es enorm: Der Abstand zwischen einem 20%- und einem 40%-Deal skaliert mit dem Rake, den du tatsächlich erzeugst – er wird also nur dann zu echtem Geld, wenn du **hohes Volumen bei relevanten Stakes** spielst, und für viele Break-even-Grinder *ist* Rakeback ihr Profit. Es senkt effektiv deinen echten Rake, es lohnt sich also, das zu prüfen, bevor du dir aussuchst wo du spielst. Sei dir nur bewusst, dass viele Rakeback-Tipps online affiliate-getrieben sind – behandle „Hier anmelden“-Seiten mit derselben Skepsis, die du jedem Verkaufspitch geben würdest.
 
 ---
 
@@ -113,7 +113,7 @@ Nicht die Pot-Variante – aber du zahlst trotzdem eine Gebühr, und sie verstec
 Ein **$100 + $9**-Turnier bedeutet, dass $100 in den Preispool gehen und **$9 die Gebühr des Hauses sind.**
 :::
 
-Diese Gebühr – auch **Juice** oder **Vig** genannt – ist das Turnier-Äquivalent zum Rake. Sie liegt meist bei **5–20% des Buy-ins**, und sie ist pauschal: Du zahlst sie, ob du als Erster bustest oder das Ganze gewinnst. Niedrigere Buy-ins tragen proportional höhere Gebühren (ein $3 + $0,30 Sit-and-Go ist 10%), und eine gängige Faustregel ist, dass schnelle **Turbo-Formate unter ~13% Gebühr** liegen sollten, um langfristig schlagbar zu bleiben. Da die Struktur eines Turniers völlig anders ist als die eines Cashgames, ist auch die Art wie du fürs Spielen zahlst anders – eine Unterscheidung, die es sich lohnt zusammen mit den [Turnier-vs-Cashgame](/de/blog/holdem-tournament-vs-cash-game)-Grundlagen zu verstehen.
+Diese Gebühr – auch **Juice** oder **Vig** genannt – ist das Turnier-Äquivalent zum Rake. Sie liegt meist bei **5–20% des Buy-ins**, und sie ist pauschal: Du zahlst sie, ob du als Erster bustest oder das Ganze gewinnst. Niedrigere Buy-ins tragen proportional höhere Gebühren (ein $3 + $0,30 Sit-and-Go ist 10%), und weil schnelle **Turbo-Formate deinen Edge zusammendrücken**, beißt die Gebühr dort am stärksten – je niedriger der Prozentsatz, desto mehr von deinem Können überlebt sie. Da die Struktur eines Turniers völlig anders ist als die eines Cashgames, ist auch die Art wie du fürs Spielen zahlst anders – eine Unterscheidung, die es sich lohnt zusammen mit den [Turnier-vs-Cashgame](/de/blog/holdem-tournament-vs-cash-game)-Grundlagen zu verstehen.
 
 ---
 

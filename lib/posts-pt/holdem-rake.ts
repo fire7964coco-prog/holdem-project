@@ -62,7 +62,7 @@ Algumas regras governam como o rake do pote é de fato tirado:
 
 - **No flop, no drop.** Na maioria das salas, se a mão acaba antes do flop — todo mundo folda para um aumento no preflop — a casa não tira **nenhum rake**. (Não é universal: alguns sites, notadamente o GGPoker, tiram rake de alguns potes preflop, então cheque a sua sala.)
 - **O cap do rake.** A casa nunca tira a porcentagem cheia num pote gigante — ela para num máximo, comumente **$3–$6 ao vivo** e **$1–$3 online**. Os caps normalmente escalam com os stakes e frequentemente encolhem quando menos jogadores estão na mão (um pote heads-up pode ter cap de $1).
-- **Time charge em vez de rake do pote.** Nos stakes mais altos, as salas frequentemente param de raquear os potes e em vez disso cobram uma taxa fixa — digamos $10–$15 por hora por jogador, tirada a cada meia hora. Isso favorece quem ganha potes grandes, já que um pote de $2.000 não é mais raqueado.
+- **Time charge em vez de rake do pote.** Nos stakes mais altos, as salas frequentemente param de raquear os potes e em vez disso cobram uma taxa fixa — digamos $10–$15 por hora por jogador, tirada a cada meia hora. Isso favorece quem ganha potes grandes, embora o que você economize seja o rake *no cap*, não uma fatia do pote: contra um cap de $3–$6, um pote de $2.000 só deixava alguns dólares.
 - **Dead drop.** Um método menos comum em que só o jogador no botão paga um rake fixo por mão, recolhido antes de as cartas serem distribuídas — feito para que os vencedores de potes grandes não sejam taxados mais do que os outros.
 
 ---
@@ -101,7 +101,7 @@ Contributed | Dealt
 Baseado no rake dos potes **em que você pôs dinheiro** — o método moderno padrão | Dividido igualmente entre **todos que receberam cartas** no pote raqueado, tenham contribuído ou não — hoje raro
 :::
 
-Para um jogador casual, o rakeback é um bônus menor. Para um regular de alto volume ele é enorme: a diferença entre um deal de 20% e um de 40% pode valer **dezenas de milhares por ano**, e para muitos grinders no zero, o rakeback *é* o lucro deles. Ele efetivamente baixa o seu rake real, então vale a pena checar antes de escolher onde jogar. Só fique atento a que boa parte dos conselhos de rakeback online é movida por afiliação — trate as páginas de "cadastre-se aqui" com o ceticismo que você daria a qualquer discurso de venda.
+Para um jogador casual, o rakeback é um bônus menor. Para um regular de alto volume ele é enorme: a distância entre um deal de 20% e um de 40% escala com o rake que você de fato gera, então só vira dinheiro sério se você joga **muito volume em stakes relevantes**, e para muitos grinders no zero, o rakeback *é* o lucro deles. Ele efetivamente baixa o seu rake real, então vale a pena checar antes de escolher onde jogar. Só fique atento a que boa parte dos conselhos de rakeback online é movida por afiliação — trate as páginas de "cadastre-se aqui" com o ceticismo que você daria a qualquer discurso de venda.
 
 ---
 
@@ -113,7 +113,7 @@ Não do tipo do pote — mas você ainda paga uma taxa, e ela está escondida à
 Um torneio de **$100 + $9** significa que $100 vão para a premiação e **$9 são a taxa da casa.**
 :::
 
-Essa taxa — também chamada de **juice** ou **vig** — é o equivalente do rake no torneio. Ela costuma ser **5–20% do buy-in**, e é fixa: você a paga quer estoure em primeiro, quer ganhe o torneio inteiro. Buy-ins menores carregam taxas proporcionalmente mais altas (um sit-and-go de $3 + $0,30 é 10%), e uma regra de bolso comum é que os formatos **turbo rápidos deveriam ter taxa abaixo de ~13%** para continuarem batíveis no longo prazo. Como a estrutura de um torneio é totalmente diferente da de um cash game, a forma como você paga para jogar também é — uma distinção que vale a pena entender junto com os fundamentos de [torneio vs cash game](/pt/blog/holdem-tournament-vs-cash-game).
+Essa taxa — também chamada de **juice** ou **vig** — é o equivalente do rake no torneio. Ela costuma ser **5–20% do buy-in**, e é fixa: você a paga quer estoure em primeiro, quer ganhe o torneio inteiro. Buy-ins menores carregam taxas proporcionalmente mais altas (um sit-and-go de $3 + $0,30 é 10%), e como os formatos **turbo rápidos comprimem a sua vantagem**, é ali que a taxa morde mais — quanto menor a porcentagem, mais da sua habilidade sobrevive. Como a estrutura de um torneio é totalmente diferente da de um cash game, a forma como você paga para jogar também é — uma distinção que vale a pena entender junto com os fundamentos de [torneio vs cash game](/pt/blog/holdem-tournament-vs-cash-game).
 
 ---
 

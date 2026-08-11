@@ -62,7 +62,7 @@ Beberapa aturan mengatur bagaimana pot rake sebenarnya disaring:
 
 - **No flop, no drop.** Di sebagian besar room, jika tangan berakhir sebelum flop — semua fold ke sebuah raise preflop — house **tidak mengambil rake** sama sekali. (Tidak universal: beberapa situs, terutama GGPoker, memang me-rake sebagian pot preflop, jadi periksa room Anda.)
 - **Cap rake.** House tak pernah mengambil persentase penuh pada pot besar — ia berhenti pada maksimum, umumnya **$3–$6 live** dan **$1–$3 online**. Cap biasanya berskala dengan stake dan sering menyusut saat lebih sedikit pemain yang dibagikan kartu (pot heads-up mungkin di-cap pada $1).
-- **Time charge alih-alih pot rake.** Pada stake lebih tinggi, room sering berhenti me-rake pot dan malah menarik biaya rata — katakanlah $10–$15 per jam per pemain, diambil tiap setengah jam. Ini menguntungkan pemain yang memenangkan pot besar, karena pot $2.000 tak lagi disaring.
+- **Time charge alih-alih pot rake.** Pada stake lebih tinggi, room sering berhenti me-rake pot dan malah menarik biaya rata — katakanlah $10–$15 per jam per pemain, diambil tiap setengah jam. Ini menguntungkan pemain yang memenangkan pot besar, walau yang Anda hemat adalah rake yang *sudah kena cap*, bukan sepotong pot: terhadap cap $3–$6, pot $2.000 pun hanya melepas beberapa dolar.
 - **Dead drop.** Metode yang lebih jarang di mana hanya pemain di button yang membayar rake tetap tiap tangan, dikumpulkan sebelum kartu dibagikan — dirancang agar pemenang pot besar tidak dipajaki lebih dari siapa pun.
 
 ---
@@ -101,7 +101,7 @@ Contributed | Dealt
 Berdasarkan rake dari pot **yang Anda masukkan uang** — metode modern standar | Dibagi rata di antara **semua yang dibagikan kartu** ke pot ter-rake, entah mereka berkontribusi atau tidak — kini langka
 :::
 
-Bagi pemain kasual, rakeback adalah perk kecil. Bagi regular bervolume tinggi ia sangat besar: selisih antara deal 20% dan 40% bisa bernilai **puluhan ribu setahun**, dan bagi banyak grinder impas, rakeback *adalah* profit mereka. Ia secara efektif menurunkan rake sejati Anda, jadi layak dicek sebelum Anda memilih tempat bermain. Sadari saja bahwa banyak saran rakeback online digerakkan afiliasi — perlakukan halaman "daftar di sini" dengan skeptisisme yang Anda berikan pada pitch penjualan mana pun.
+Bagi pemain kasual, rakeback adalah perk kecil. Bagi regular bervolume tinggi ia sangat besar: selisih antara deal 20% dan 40% berskala dengan rake yang benar-benar Anda hasilkan, jadi ia baru jadi uang serius kalau Anda main **volume besar di stake yang berarti**, dan bagi banyak grinder impas, rakeback *adalah* profit mereka. Ia secara efektif menurunkan rake sejati Anda, jadi layak dicek sebelum Anda memilih tempat bermain. Sadari saja bahwa banyak saran rakeback online digerakkan afiliasi — perlakukan halaman "daftar di sini" dengan skeptisisme yang Anda berikan pada pitch penjualan mana pun.
 
 ---
 
@@ -113,7 +113,7 @@ Bukan jenis pot — tapi Anda tetap membayar biaya, dan ia bersembunyi di depan 
 Turnamen **$100 + $9** berarti $100 masuk prize pool dan **$9 adalah biaya house.**
 :::
 
-Biaya itu — juga disebut **juice** atau **vig** — adalah padanan rake untuk turnamen. Ia biasanya **5–20% dari buy-in**, dan bersifat rata: Anda membayarnya entah bust pertama atau memenangkan seluruhnya. Buy-in lebih rendah membawa biaya proporsional lebih tinggi (sit-and-go $3 + $0,30 adalah 10%), dan aturan praktis yang lazim adalah format **turbo cepat sebaiknya di bawah ~13% biaya** agar tetap bisa dikalahkan jangka panjang. Karena struktur turnamen sepenuhnya berbeda dari cash game, cara Anda membayar untuk bermain pun berbeda — sebuah pembedaan yang layak dipahami bersama fundamental [turnamen vs cash game](/id/blog/holdem-tournament-vs-cash-game).
+Biaya itu — juga disebut **juice** atau **vig** — adalah padanan rake untuk turnamen. Ia biasanya **5–20% dari buy-in**, dan bersifat rata: Anda membayarnya entah bust pertama atau memenangkan seluruhnya. Buy-in lebih rendah membawa biaya proporsional lebih tinggi (sit-and-go $3 + $0,30 adalah 10%), dan karena format **turbo cepat memampatkan edge Anda**, biaya paling menggigit di sana — makin rendah persentasenya, makin banyak keterampilan Anda yang selamat. Karena struktur turnamen sepenuhnya berbeda dari cash game, cara Anda membayar untuk bermain pun berbeda — sebuah pembedaan yang layak dipahami bersama fundamental [turnamen vs cash game](/id/blog/holdem-tournament-vs-cash-game).
 
 ---
 

@@ -63,7 +63,7 @@ Unas cuantas reglas rigen cómo se recorta realmente el rake por bote:
 
 - **No flop, no drop.** En la mayoría de salas, si la mano termina antes del flop — todos foldean ante una subida preflop — la casa **no cobra rake** en absoluto. (No es universal: unos pocos sitios, sobre todo GGPoker, sí sacan rake de algunos botes preflop, así que comprueba tu sala.)
 - **El tope de rake (cap).** La casa nunca se lleva el porcentaje completo en un bote enorme — se detiene en un máximo, comúnmente **$3–$6 en vivo** y **$1–$3 online**. Los topes suelen escalar con los límites y a menudo se reducen cuando reparten a menos jugadores (un bote mano a mano podría tener un tope de $1).
-- **Rake por tiempo en vez de rake por bote.** En límites más altos, las salas a menudo dejan de rakear los botes y en su lugar cobran una tarifa fija — digamos $10–$15 la hora por jugador, cobrada cada media hora. Esto favorece a los jugadores que ganan botes grandes, ya que un bote de $2,000 deja de recortarse.
+- **Rake por tiempo en vez de rake por bote.** En límites más altos, las salas a menudo dejan de rakear los botes y en su lugar cobran una tarifa fija — digamos $10–$15 la hora por jugador, cobrada cada media hora. Esto favorece a los jugadores que ganan botes grandes, aunque lo que ahorras es el rake *topado*, no un porcentaje del bote: contra un tope de $3–$6, un bote de $2,000 solo dejaba unos pocos dólares.
 - **Dead drop.** Un método menos común en el que solo el jugador en el botón paga un rake fijo cada mano, cobrado antes de repartir las cartas — diseñado para que quien gana botes grandes no tribute más que nadie.
 
 ---
@@ -104,7 +104,7 @@ Basado en el rake de los botes **en los que pones dinero** — el método modern
 
 Cada vez más salas usan además un tercer método, el **rakeback progresivo**: en lugar de un porcentaje fijo, tu tasa de devolución sube por escalones conforme acumulas volumen a lo largo del mes, así que cuanto más juegas, mayor es el porcentaje que recuperas.
 
-Para un jugador casual, el rakeback es un extra menor. Para un regular de mucho volumen es enorme: la diferencia entre un acuerdo del 20% y del 40% puede valer **decenas de miles al año**, y para muchos grinders en tablas, el rakeback *es* su beneficio. En la práctica rebaja tu rake real, así que conviene comprobarlo antes de elegir dónde jugar. Eso sí, ten en cuenta que buena parte de los consejos de rakeback online son de afiliados — trata las páginas de "regístrate aquí" con el escepticismo que le darías a cualquier venta.
+Para un jugador casual, el rakeback es un extra menor. Para un regular de mucho volumen es enorme: la distancia entre un acuerdo del 20% y del 40% escala con el rake que de verdad generas, así que solo se convierte en dinero serio si juegas **mucho volumen en límites relevantes**, y para muchos grinders en tablas, el rakeback *es* su beneficio. En la práctica rebaja tu rake real, así que conviene comprobarlo antes de elegir dónde jugar. Eso sí, ten en cuenta que buena parte de los consejos de rakeback online son de afiliados — trata las páginas de "regístrate aquí" con el escepticismo que le darías a cualquier venta.
 
 ---
 
@@ -116,7 +116,7 @@ Del tipo por bote no — pero aun así pagas una comisión, y está a la vista d
 Un torneo de **$100 + $9** significa que $100 van al bote de premios y **$9 son la comisión de la casa.**
 :::
 
-Esa comisión — también llamada **juice** o **vig** — es el equivalente del rake en torneos. Suele ser el **5–20% del buy-in**, y es fija: la pagas tanto si busteas primero como si ganas el evento entero. Los buy-ins más bajos cargan comisiones proporcionalmente más altas (un sit-and-go de $3 + $0.30 es un 10%), y una regla habitual dice que los formatos **turbo rápidos deberían tener una comisión por debajo del ~13%** para seguir siendo batibles a largo plazo. Como la estructura de un torneo es completamente distinta a la de un cash game, la forma en que pagas por jugar también lo es — una distinción que vale la pena entender junto con los fundamentos de [torneo vs cash game](/es/blog/holdem-tournament-vs-cash-game).
+Esa comisión — también llamada **juice** o **vig** — es el equivalente del rake en torneos. Suele ser el **5–20% del buy-in**, y es fija: la pagas tanto si busteas primero como si ganas el evento entero. Los buy-ins más bajos cargan comisiones proporcionalmente más altas (un sit-and-go de $3 + $0.30 es un 10%), y como los formatos **turbo rápidos comprimen tu ventaja**, la comisión muerde más ahí — cuanto menor es el porcentaje, más de tu habilidad sobrevive. Como la estructura de un torneo es completamente distinta a la de un cash game, la forma en que pagas por jugar también lo es — una distinción que vale la pena entender junto con los fundamentos de [torneo vs cash game](/es/blog/holdem-tournament-vs-cash-game).
 
 ---
 
@@ -174,7 +174,7 @@ A. Varía según la sala, los límites y el formato, así que siempre conviene m
 
 **Q. ¿Cómo puedes pagar menos rake en póker?**
 
-A. No puedes escapar del rake por completo en una partida rakeada, pero sí reducirlo. Consigue el mejor acuerdo de rakeback que puedas y elige salas con topes amables para el jugador. Subir de límites también rebaja el rake, porque un tope fijo es una parte menor de cada bote — pero da ese paso solo cuando tu bankroll aguante las rachas *y* sigas teniendo ventaja sobre un campo más duro; si no, los rivales te quitarán mucho más de lo que te quitaba el rake. Jugar menos botes pero más grandes en lugar de una avalancha de botes pequeños topados, evitar las mesas muy cortas donde el tope apenas baja, y preferir las partidas de límites altos con rake por tiempo también rebajan tu rake efectivo. Las partidas caseras sin rake son el póker más barato que existe.
+A. No puedes escapar del rake por completo en una partida rakeada, pero sí reducirlo. Consigue el mejor acuerdo de rakeback que puedas y elige salas con topes amables para el jugador. Subir de límites también rebaja el rake, porque un tope fijo es una parte menor de cada bote — pero da ese paso solo cuando tu bankroll aguante las rachas *y* sigas teniendo ventaja sobre un campo más duro; si no, los rivales te quitarán mucho más de lo que te quitaba el rake. Jugar menos botes pero más grandes en lugar de una avalancha de botes pequeños topados, evitar las mesas muy cortas — donde juegas muchas más manos por hora y pagas ciegas mucho más a menudo, así que entras en muchos más botes rakeados — y preferir las partidas de límites altos con rake por tiempo también rebajan tu rake efectivo. Las partidas caseras sin rake son el póker más barato que existe.
 
 **Q. ¿Es ilegal cobrar rake?**
 
