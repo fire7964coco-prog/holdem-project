@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Ein fassungsloser Pokerspieler mit der Hand am Kopf, nachdem er einen großen Pot verloren hat, während sein Gegner einen hohen Chipstapel über den grünen Filz zieht",
   tags: ["cooler", "was ist ein cooler beim poker", "cooler vs bad beat", "cooler bedeutung poker", "poker setup", "gecoolert", "set over set", "cooler hand beispiele"],
   content: `
-Ich erinnere mich noch an die Hand, die mir das Wort beigebracht hat. Ich habe am Flop ein Set Kings getroffen, bin am Turn all-in gegangen und habe meine Karten schon aufgedeckt, während ich nach dem Pot gegriffen habe – dann sah ich, wie mein Gegner ein Set Asse umdrehte. Ich hatte nichts falsch gemacht. Es gab kein schlechtes Play zu bereuen, keinen Draw, gegen den ich hätte folden müssen. Ich war geschlagen ab dem Moment, in dem die Chips reingingen, und es gab ==nichts, was ich hätte tun können==. Das ist ein Cooler, und sobald du ihn verstehst, hörst du auf, dir selbst die Schuld für Verluste zu geben, die du nie vermeiden konntest.
+Ich erinnere mich noch an die Hand, die mir das Wort beigebracht hat. Ich habe am Flop ein Set Könige getroffen, bin am Turn all-in gegangen und habe meine Karten schon aufgedeckt, während ich nach dem Pot gegriffen habe – dann sah ich, wie mein Gegner ein Set Asse umdrehte. Ich hatte nichts falsch gemacht. Es gab kein schlechtes Play zu bereuen, keinen Draw, gegen den ich hätte folden müssen. Ich war geschlagen ab dem Moment, in dem die Chips reingingen, und es gab ==nichts, was ich hätte tun können==. Das ist ein Cooler, und sobald du ihn verstehst, hörst du auf, dir selbst die Schuld für Verluste zu geben, die du nie vermeiden konntest.
 
 Ein **Cooler** ist eine Hand, bei der du eine sehr starke Holding baust, einen großen Pot verlierst und ==g:Folden nie eine echte Option war== – die andere Hand war einfach größer. Unten steht genau, was das bedeutet, der entscheidende Unterschied zwischen einem Cooler und einem **Bad Beat** (die meisten verwechseln sie), die klassischen Cooler-Matchups und der ehrliche Teil, den keiner mag: wann *„das war nur ein Cooler“* in Wahrheit eine höfliche Ausrede für einen Fehler ist.
 
@@ -71,7 +71,7 @@ Der sauberste Weg, sie auseinanderzuhalten:
 
 </div>
 
-Hier zeigen dieselben Spieler beides, damit es klick macht. **Bad Beat:** Du hältst A♠A♥, gehst preflop all-in gegen 7♣7♦, und eine **7** trifft das Board – deine Asse waren ein ~4‑zu‑1-Favorit (etwa 80%) und wurden ausgedrawt. **Cooler:** dreh es um – du hältst die **7♣7♦**, floppst ein Set Sevens und stackst gegen ein Set aus einem größeren Paar ab. Du warst die ganze Zeit der Underdog und konntest ein geflopptes Set einfach nicht folden. Dieselben Karten, entgegengesetzte Geschichten. Zu wissen, was gerade passiert ist, sagt dir, ob du [dein Play überprüfen](/de/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") oder es einfach abschütteln solltest.
+Hier zeigen dieselben Spieler beides, damit es klick macht. **Bad Beat:** Du hältst A♠A♥, gehst preflop all-in gegen 7♣7♦, und eine **7** trifft das Board – deine Asse waren ein ~4:1-Favorit (etwa 80%) und wurden ausgedrawt. **Cooler:** dreh es um – du hältst die **7♣7♦**, floppst ein Set Siebenen und stackst gegen ein Set aus einem größeren Paar ab. Du warst die ganze Zeit der Underdog und konntest ein geflopptes Set einfach nicht folden. Dieselben Karten, entgegengesetzte Geschichten. Zu wissen, was gerade passiert ist, sagt dir, ob du [dein Play überprüfen](/de/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") oder es einfach abschütteln solltest.
 
 ---
 
@@ -92,12 +92,12 @@ Cooler kommen in einer erkennbaren Familie:
 | **Set over set** | Dein geflopptes Set vs. ein größeres geflopptes Set | Ein geflopptes Set wird fast nie gefoldet; das niedrigere Set ist so gut wie drawing dead |
 | **Flush over flush** | Dein K‑hoher Flush vs. ein A‑hoher Flush | Ein King-High-Flush sieht riesig aus – du setzt sie selten auf genau den Nut Flush |
 | **Full House over full house** | Dein Full House vs. ein größeres Full House | Ein Full House ist ein Monster; eines wegzulegen ist nahezu unmöglich |
-| **Full House vs. Vierling** | Dein Asse-Full House vs. Four of a Kind | Der ultimative Cooler – ein Full House, das gegen einen Vierling verliert |
-| **Straße über Straße** | Deine Straße vs. eine höhere Straße | Eine fertige Straße auf einem verbundenen Board ist sehr schwer loszulassen |
+| **Full House vs. Vierling** | Dein „Asse voll“ vs. einen Vierling | Der ultimative Cooler – ein Full House, das gegen einen Vierling verliert |
+| **Straße über Straße** | Deine Straße vs. eine höhere Straße | Nur die **obere** Straße ist ein echter Cooler. Mit dem unteren Ende („idiot end“) abzustacken ist meist ein Leak, kein Cooler |
 
 </div>
 
-Der ikonischste ist **Set over set.** Sagen wir, du hältst **7♣7♦** und der Flop kommt **J♦ 7♥ 2♣** – du hast Middle Set gefloppt, drei Sevens. Es ist eine Hand, mit der du fast immer gerne abstackst. Aber dein Gegner hält **J♠J♥** und hat Top Set gefloppt, drei Jacks. Am River auf einem **J♦ 7♥ 2♣ 5♠ Q♦** Board sind deine besten fünf Karten 7‑7‑7‑Q‑J und seine J‑J‑J‑Q‑7 – drei Jacks schlagen drei Sevens, und dein einziger Ausweg war die letzte verbliebene Seven im Deck. Du hast nichts falsch gespielt; du hast die ganze Zeit einfach auf eine Karte gedrawt. Das ist ein Cooler in seiner reinsten Form, und deshalb ist es wichtig zu verstehen, [welche Hand einen Showdown gewinnt](/de/blog/holdem-tiebreak-rules), selbst wenn das Ergebnis außerhalb deiner Kontrolle liegt.
+Der ikonischste ist **Set over set.** Sagen wir, du hältst **7♣7♦** und der Flop kommt **J♦ 7♥ 2♣** – du hast Middle Set gefloppt, drei Siebenen. Es ist eine Hand, mit der du fast immer gerne abstackst. Aber dein Gegner hält **J♠J♥** und hat Top Set gefloppt, drei Buben. Am River auf einem **J♦ 7♥ 2♣ 5♠ Q♦** Board sind deine besten fünf Karten 7‑7‑7‑Q‑J und seine J‑J‑J‑Q‑7 – drei Buben schlagen drei Siebenen, und dein einziger Ausweg war die letzte verbliebene Sieben im Deck. Du hast nichts falsch gespielt; du hast die ganze Zeit einfach auf eine Karte gedrawt. Das ist ein Cooler in seiner reinsten Form, und deshalb ist es wichtig zu verstehen, [welche Hand einen Showdown gewinnt](/de/blog/holdem-tiebreak-rules), selbst wenn das Ergebnis außerhalb deiner Kontrolle liegt.
 
 ---
 
@@ -123,7 +123,7 @@ Ein wichtiger Mythos, der sterben muss: **Ein Cooler muss nicht all-in sein.** D
 
 Hier ist der Teil, den gute Spieler verstehen und Anfänger nicht: Auf lange Sicht ist das Bezahlen des gelegentlichen Coolers schlicht der Preis dafür, dass du alle anderen in der überwiegenden Mehrheit der Fälle abstackst.
 
-Allerdings hat „unvermeidbar“ auf höchstem Niveau ein kleines Sternchen. Erfahrene Spieler *können* gelegentlich die zweitbeste Hand weglegen, wenn die Action nach den Nuts schreit – ein Gegner, der diese Linie nur mit genau einer bestimmten Holding raist, ein Sizing, das keinen Sinn ergibt, außer er hat sie. Eine große Hand in dieser Situation zu folden ist einer der schwersten, fortgeschrittensten Skills im Poker. Aber solche Reads sind selten, und für die überwiegende Mehrheit der Cooler ist das korrekte, profitable Play, das Geld reinzubekommen und weiterzumachen. Deine [Position](/de/blog/holdem-position-play) gut zu spielen hilft dir, diese Situationen zu *lesen* – es lässt dich nicht dem Deck ausweichen.
+Allerdings hat „unvermeidbar“ auf höchstem Niveau ein kleines Sternchen. Erfahrene Spieler *können* gelegentlich die zweitbeste Hand weglegen, wenn die Action nach den Nuts schreit – ein Gegner, der diese Linie nur mit genau einer bestimmten Holding raist, ein Sizing, das keinen Sinn ergibt, außer er hat sie. Eine große Hand in dieser Situation zu folden ist einer der schwersten, fortgeschrittensten Skills im Poker. Aber solche Reads sind selten, und für die überwiegende Mehrheit der Cooler ist das korrekte, profitable Play, das Geld reinzubekommen und weiterzumachen. Deine [Position](/de/blog/holdem-position-play) gut zu spielen hilft dir, diese Situationen zu *lesen* – dem Deck ausweichen kannst du damit trotzdem nicht.
 
 ---
 
@@ -213,7 +213,7 @@ A. Nicht wegen des Coolers selbst – der sagt nichts über die Qualität deines
 2. **Es ist das Gegenteil eines Bad Beat.** Ein Bad Beat ist, vorne zu liegen und ausgedrawt zu werden; ein Cooler ist, hinten zu liegen und nie eine Chance zu haben. Zu wissen, welcher zugeschlagen hat, sagt dir, ob es etwas zu fixen gibt.
 3. **Sei ehrlich über den Unterschied zwischen einem Cooler und einem Fehler.** Wenn du das Play mit denselben Informationen noch einmal machen würdest, schüttel es ab. Wenn nicht, war es kein Cooler – es war ein Leak in Verkleidung.
 
-Die besten Spieler verlieren genau so viele Cooler wie alle anderen; sie lassen sie nur keinen zusätzlichen Schaden anrichten. Verbuche es als Varianz, schütze deine nächsten paar Entscheidungen vor Tilt und geh zurück zum Overplayen des [Tisches](/de/blog/holdem-fish). Das Deck kühlt jeden irgendwann ab – Gewinnen ist das, was du in all den Händen tust, die keine Cooler sind.
+Die besten Spieler verlieren genau so viele Cooler wie alle anderen; sie lassen sie nur keinen zusätzlichen Schaden anrichten. Verbuche es als Varianz, schütze deine nächsten paar Entscheidungen vor Tilt und geh zurück dazu, [den Tisch auszuspielen](/de/blog/holdem-fish). Das Deck kühlt jeden irgendwann ab – Gewinnen ist das, was du in all den Händen tust, die keine Cooler sind.
 
 ---
 

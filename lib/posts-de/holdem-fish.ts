@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Was ist ein Fish beim Poker? So erkennst du einen – und stellst sicher, dass du es nicht bist",
   seoTitle: "Wenn du den Fish nicht erkennst, bist du es – Was ist ein Fish?",
   desc: "Ein Fish ist der schwache Spieler, an dem der ganze Tisch verdient. So erkennst du einen, der Shark/Whale/Nit-Slang erklärt, und wie du nicht selbst einer bist.",
-  tldr: "Ein 'Fish' ist Poker-Slang für einen schwachen, verlierenden Spieler, an dem die stärkeren Spieler ('Sharks') ihr Geld verdienen. Fische spielen zu viele Hände, callen zu viel und können nicht folden – und der berühmte Spruch warnt: Wenn du den Fish an deinem Tisch nicht erkennst, bist du es. Es ist der wichtigste Read im ganzen Spiel: Finde den Fish, oder werde selbst einer.",
+  tldr: "Ein „Fish“ ist Poker-Slang für einen schwachen, verlierenden Spieler, an dem die stärkeren Spieler ('Sharks') ihr Geld verdienen. Fische spielen zu viele Hände, callen zu viel und können nicht folden – und der berühmte Spruch warnt: Wenn du den Fish an deinem Tisch nicht erkennst, bist du es. Es ist der wichtigste Read im ganzen Spiel: Finde den Fish, oder werde selbst einer.",
   category: "glossary",
   date: "2026-07-05",
   updated: "2026-08-11",
@@ -52,7 +52,7 @@ Bei dem Wort geht es nicht darum, wie *nett* jemand ist oder wie sehr er das Spi
 
 ![Infografik von oben auf einen Pub-Pokertisch mit einem K♦ 7♣ 2♠ 9♥ 3♦ Board, Chip-Stacks und dem Dealer Button](/images/holdem-pub-players-table.webp "Jeder Tisch hat eine Nahrungskette: Sharks identifizieren still den Fish und bauen ihren Profit um ihn herum auf")
 
-Es gibt einen Begleitspruch, den du ständig hören wirst: **„Don't tap the glass.“** Er kommt von Aquariumsschildern, die Besucher bitten, nicht ans Becken zu klopfen und die Fische zu erschrecken. Beim Poker bedeutet er: *Kritisiere, belehre oder blamiere niemals einen schwachen Spieler.* Ein verlierender Spieler, der sich dumm vorkommt, steht auf und geht – und nimmt seine Chips mit. Gute Spieler wollen den Fish entspannt, unterhalten und für noch ein Buy-in am Tisch halten. Deshalb bleiben erfahrene Spieler freundlich zu der Person, die sie gerade stackt.
+Es gibt einen Begleitspruch, den du ständig hören wirst: **„Don't tap the glass.“** Er kommt von Aquariumsschildern, die Besucher bitten, nicht ans Becken zu klopfen und die Fische zu erschrecken. Beim Poker bedeutet er: *Kritisiere, belehre oder blamiere niemals einen schwachen Spieler.* Ein verlierender Spieler, der sich dumm vorkommt, steht auf und geht – und nimmt seine Chips mit. Gute Spieler wollen den Fish entspannt, unterhalten und für noch ein Buy-in am Tisch halten. Deshalb bleiben erfahrene Spieler freundlich zu genau der Person, die sie gerade ausnehmen.
 
 ---
 
@@ -67,7 +67,7 @@ Limpt ständig | Callt den Big Blind, statt zu raisen oder zu folden, immer und 
 Callt, raist selten | Passiv – will lieber „abwarten, was passiert“, als die Kontrolle zu übernehmen
 Kann kein Paar folden | Klammert sich bis zum River an Top Pair oder ein Overpair, egal wie die Action läuft
 Jagt jeden Draw | Zahlt jeden Preis für einen Flush oder eine Straße und ignoriert die Odds
-Seltsames Bet Sizing | Min-bettet starke Hände, overbettet schwache – die Sizing sagt dir gar nichts
+Sizing ohne System | Meist face-up in die naheliegende Richtung: große Bets heißen bei schwachen Spielern fast immer eine große Hand, kleine Bets einen Draw oder eine marginale Hand
 Zeigt schwach am Showdown | Deckt Hände auf, die es nie so weit hätten schaffen dürfen
 Spielt emotional | Tiltet nach einem Bad Beat, jagt Verlusten hinterher, spielt ängstlich, wenn er im Minus ist
 :::
@@ -81,7 +81,7 @@ Kein einzelnes Zeichen ist ein Beweis – selbst gute Spieler limpen gelegentlic
 > **Kurze Antwort**
 > Der **Fish** verliert, weil er zu viel und zu passiv spielt. Der **Shark** gewinnt an ihm. Ein **Whale** ist ein Fish mit tiefen Taschen an hohen Stakes. Ein **Donkey** ist ein Fish mit besonders unlogischen Plays – das Wort ist die härtere Beleidigung. Und ein **Nit** ist der Gegenpol: extrem tight, ausbeutbar, aber ==kein Fish==, weil er kaum Chips verschenkt.
 
-![Eine einfache Darstellung der Poker-Nahrungskette mit vier Spielertypen als Poker-Chip-Icons – FISH, SHARK, WHALE und NIT – vom schwächsten zum stärksten](/images/holdem-fish-food-chain.webp "Die Poker-Nahrungskette auf einen Blick: Der Fish füttert die Sharks, der Whale ist der große Preis, und der Nit sitzt einfach nur fest")
+![Eine einfache Darstellung der Poker-Nahrungskette mit vier Spielertypen als Poker-Chip-Icons – FISH, SHARK, WHALE und NIT – die vier Rollen an einem Tisch](/images/holdem-fish-food-chain.webp "Die Poker-Nahrungskette auf einen Blick: Der Fish füttert die Sharks, der Whale ist der große Preis, und der Nit sitzt einfach nur fest")
 
 „Fish“ ist die Schlagzeile, aber der Poker-Slang hat ein ganzes Bestiarium an Spielertypen – und die meisten Lexika definieren nur zwei oder drei davon. Hier ist die eine Tabelle, die sie alle auflegt, damit du genau benennen kannst, gegen wen du antrittst:
 
@@ -92,12 +92,12 @@ Kein einzelnes Zeichen ist ein Beweis – selbst gute Spieler limpen gelegentlic
 | **Fish** | Schwacher, verlierender Spieler (Oberbegriff) | Loose, passiv, kann nicht folden | Dünn auf Value betten, nicht bluffen |
 | **Shark** | Starker, gewinnender Spieler | Tight-aggressiv, anpassungsfähig | Meiden – such dir weichere Tische |
 | **Whale** | Ein *reicher* Fish, der **groß** verliert | Sehr loose, hohe Stakes, ist ihm egal | Wie ein Fish, höhere Belohnung |
-| **Nit** | Extrem tight, risikoscheu | Nur Premiumhände, bluffen nie | Auf ihre Raises folden; Blinds stehlen |
+| **Nit** | Extrem tight, risikoscheu | Nur Premiumhände, bluffen nie | Ohne sehr starke Hand auf ihre Aggression folden; ihre Blinds stehlen |
 | **Donkey (Donk)** | Fish, der besonders *schlechte* Plays macht | Unlogisch, spewy | Wie ein Fish – lass sie sich selbst aufhängen |
 | **Calling Station** | Passiver Over-Caller | Callt alles, raist/foldet nie | Endlos auf Value betten, nie bluffen |
 | **Reg** | Ein „Regular“ an einer Stake | Wechselnd – nicht immer ein Gewinner | Lies sie individuell |
 | **Grinder** | Pro/Semi-Pro mit hohem Volumen | Solide, konstant, geringe Varianz | Meiden; find den Freizeitspieler |
-| **TAG** | Ein *Gewinnstil* (tight-aggressiv) | Enge Range, die er hart bettet und raist | Kein Fisch – respektiere seine Bets |
+| **TAG** | Ein *Gewinnstil* (tight-aggressiv) | Enge Range, die er hart bettet und raist | Kein Fish: seine großen Rivers nicht bezahlen – aber seine engen Ranges angreifen (Blinds stehlen, öfter in Position spielen) |
 | **LAG** | Ein *Gewinnstil* (loose-aggressiv) | Weite Range, ständiger Druck, blufft viel | Nicht zu viel folden – Call- und 3-Bet-Range weiten, Bluffs abfangen |
 
 </div>
@@ -168,18 +168,18 @@ Wenn du nickst, ist das kein Urteil – es ist ein Geschenk. Jedes davon ist ein
 ## Wie hörst du auf, ein Fish zu sein?
 
 > **Kurze Antwort**
-> Indem du **weniger** tust, nicht mehr. Alle sechs großen Fish-Leaks werden behoben, ohne einen einzigen fortgeschrittenen Move zu lernen: weniger Starthände, folden wenn die Action sagt dass du geschlagen bist, Draws nur zum richtigen Preis, raise-or-fold statt limpen, Position nutzen und aufhören, wenn du tiltest. Deshalb sind sie die am schnellsten zu schließenden Lücken im ganzen Spiel.
+> Indem du **weniger** tust, nicht mehr. Alle sechs großen Fish-Leaks werden behoben, ohne einen einzigen fortgeschrittenen Move zu lernen: weniger Starthände, folden, wenn die Action sagt, dass du geschlagen bist, Draws nur zum richtigen Preis, raise-or-fold statt limpen, Position nutzen und aufhören, wenn du tiltest. Deshalb sind sie die am schnellsten zu schließenden Lücken im ganzen Spiel.
 
 Grob nach Wirkung geordnet:
 
 1. **Spiel weniger Hände.** Folde deinen Schrott vor dem Flop. Deine [Starthand-Range](/de/blog/holdem-starting-hands-chart) enger zu machen, verwandelt allein mehr verlierende Spieler in Gewinner als jede andere einzelne Änderung.
 2. **Folde, wenn du geschlagen bist.** Die Fähigkeit, Top Pair abzulegen, wenn die Story nicht aufgeht, ist das, was den Fish von allen anderen trennt. Lerne, der Action zu vertrauen.
-3. **Hör auf, ohne Preis zu jagen.** Lerne die grundlegenden [Pot Odds](/de/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp"), damit du nur draust, wenn die Mathematik zahlt – nicht „weil du vielleicht triffst“.
+3. **Hör auf, ohne Preis zu jagen.** Lerne die grundlegenden [Pot Odds](/de/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp"), damit du Draws nur dann weiterspielst, wenn die Mathematik es hergibt – nicht „weil du vielleicht triffst“.
 4. **Raise oder Fold – limp weniger.** Passives Callen blutet Chips. Wenn eine Hand gut genug zum Spielen ist, ist sie meist gut genug zum Raisen; wenn nicht, folde.
 5. **Spiel deine Position.** Als Letzter zu handeln ist ein riesiger Edge, den Fische verschenken. Mehr Hände [in Position](/de/blog/holdem-position-play) und weniger out of position zu spielen, behebt automatisch einen großen Batzen an Leaks.
 6. **Hör auf, wenn du tiltest.** Die teuerste Fish-Gewohnheit überhaupt ist, nach einem Bad Beat weiterzuspielen. Erkenne es und geh.
 
-Mach diese sechs Dinge und du hörst auf, das Geld zu sein. Du musst nicht über Nacht ein Shark werden – du musst nur aufhören, die Mahlzeit zu sein.
+Mach diese sechs Dinge und du hörst auf, die Geldquelle am Tisch zu sein. Du musst nicht über Nacht ein Shark werden – du musst nur aufhören, die Mahlzeit zu sein.
 
 ---
 
@@ -228,7 +228,7 @@ A. Alle drei meinen dieselbe Person, sie kommen nur aus verschiedenen Ecken. Am 
 
 1. **Ein Fish ist der schwache Spieler, an dem jeder andere verdient** – loose, passiv und sich dessen meist nicht bewusst. Den Fish zu erkennen, ist die erste Aufgabe an jedem Tisch.
 2. **Kenne den ganzen Zoo.** Fish, Whale, Nit, Donkey und Calling Station sind nicht austauschbar – den genauen Typ deines Gegners zu benennen, sagt dir präzise, wie du ihn schlägst.
-3. **Stell sicher, dass du es nicht bist.** Ein weiter VPIP mit niedrigem Raise-Prozentsatz ist die Fish-Signatur. Wenn das du bist, sind die Fixes die einfachsten Gewinne beim Poker: weniger Hände spielen, mehr folden und aufhören zu jagen.
+3. **Stell sicher, dass du es nicht bist.** Ein hoher VPIP bei niedrigem PFR ist die Fish-Signatur. Wenn das du bist, sind die Fixes die einfachsten Gewinne beim Poker: weniger Hände spielen, mehr folden und aufhören zu jagen.
 
 Der alte Spruch stimmt aus gutem Grund. Sieh dich an deinem nächsten Tisch um und finde den Fish in der ersten halben Stunde – und wenn du es ehrlich nicht kannst, ist die wertvollste Lektion, die Poker dir je erteilen wird, dass es Zeit ist, an deinem eigenen Spiel zu arbeiten. Fang mit einer engeren [Starthand-Range](/de/blog/holdem-starting-hands-chart) und einem echten Gespür für [Pot Odds](/de/blog/holdem-pot-odds) an, und lass jemand anderen die Mahlzeit sein.
 

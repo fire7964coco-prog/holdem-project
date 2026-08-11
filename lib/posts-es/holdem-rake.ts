@@ -186,7 +186,7 @@ A. Sí, pero no del bote. La comisión se añade a tu buy-in y se muestra con un
 
 **Q. ¿Cómo afecta el rake a tu win rate?**
 
-A. De forma significativa — sobre todo en límites bajos, donde el tope no baja junto con los límites. En mesa corta se suma un segundo efecto que nada tiene que ver con el tope: en una mesa de seis o mano a mano juegas muchas más manos por hora y pagas las ciegas mucho más seguido, así que el rake te toca con mucha más frecuencia. El rake puede convertir a un pequeño ganador en un perdedor: el mismo jugador de +8 bb/100 puede acabar ligeramente en negativo simplemente pasándose a una sala con un tope de rake más alto. Mide siempre tu win rate después del rake.
+A. De forma significativa — sobre todo en límites bajos, donde el tope no baja junto con los límites. En mesa corta se suma un segundo efecto que nada tiene que ver con el tope: el mismo rake por bote se reparte entre menos jugadores, y pagas las ciegas mucho más seguido cada 100 manos, así que tu parte por mano sube. (Por *hora* además pagas más, simplemente porque se juegan más manos, pero esa es otra pregunta distinta de bb/100.) El rake puede convertir a un pequeño ganador en un perdedor: el mismo jugador de +8 bb/100 puede acabar ligeramente en negativo simplemente pasándose a una sala con un tope de rake más alto. Mide siempre tu win rate después del rake.
 
 **Q. ¿Es más alto el rake en póker online o en vivo?**
 

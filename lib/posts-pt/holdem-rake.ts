@@ -161,7 +161,7 @@ A. Sim, mas não do pote. A taxa é somada ao seu buy-in e mostrada com um "+" �
 
 **Q. Como o rake afeta o seu win rate?**
 
-A. Significativamente — principalmente em stakes baixos, onde o cap não desce junto com os stakes. Short-handed acrescenta um segundo efeito que não tem nada a ver com o cap: numa mesa de seis ou heads-up você joga muito mais mãos por hora e paga os blinds com muito mais frequência, então o rake simplesmente aparece muito mais vezes. O rake pode transformar um pequeno vencedor num perdedor: o mesmo jogador de +8 bb/100 pode acabar levemente negativo simplesmente por mudar para uma sala com um cap de rake mais alto. Sempre meça o seu win rate depois do rake.
+A. Significativamente — principalmente em stakes baixos, onde o cap não desce junto com os stakes. Short-handed acrescenta um segundo efeito que não tem nada a ver com o cap: o mesmo rake por pote é dividido entre menos jogadores, e você paga os blinds com muito mais frequência a cada 100 mãos — então a sua parte por mão sobe. (Por *hora* você também paga mais, simplesmente porque rodam mais mãos, mas essa é uma pergunta diferente de bb/100.) O rake pode transformar um pequeno vencedor num perdedor: o mesmo jogador de +8 bb/100 pode acabar levemente negativo simplesmente por mudar para uma sala com um cap de rake mais alto. Sempre meça o seu win rate depois do rake.
 
 **Q. O rake do pôquer online ou ao vivo é mais alto?**
 

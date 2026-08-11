@@ -39,6 +39,23 @@
 
 **착수 준비는 끝나 있다. 리서치를 다시 하지 마라** — 아래 「▶ de 경화」를 그대로 따르면 된다.
 
+### 🔎 Session 6 사전 실측 (2026-08-11 · 자동완성 20시드) — 착수 시 이걸 먼저 봐라
+
+1. ★**또 이름표다 — `pokerturnier`(붙여쓰기) 계열이 통째로 살아 있다.**
+   `pokerturniere` · `pokerturniere deutschland 2026` · `pokerturniere europa 2026` · `pokerturnier tschechien 2026` ·
+   `pokerturnier berlin/hannover/hamburg/münchen/venlo` · `pokerturnier las vegas 2026`.
+   9편이 「Poker Turnier」만 쓰고 있는지 **grep부터 하라.** Glossar에서 26배가 나온 유형이다.
+2. **연도 접미사가 지배적이다** — `2026`이 거의 모든 지역 변형에 붙는다(`poker turniere 2026`·`poker kalender 2026`).
+   ⚠ 시한성이라 `docs/update-calendar.md` 편입 전제로만 쓸 것.
+3. **`in der nähe`가 3개 시드 전부 상위** — 로컬 인텐트가 KO GSC 1위 패턴 그대로다.
+4. **`poker kalender`는 오스트리아가 지배한다** — `casino austria`·`baden`·`graz`·`salzburg`·`österreich`·`holland casino`.
+   CAPT 자산(market-profile §4)과 정확히 맞물린다.
+5. 🔴 **`wsop europe 2026 venlo` 자동완성은 «검색자의 혼동»이다 — 이미 1차 출처로 갈라 뒀다.**
+   WSOPE 2026 = 브레이슬릿·**Hilton Prague**·3/31~4/12 ↔ WSOP **Circuit** – Holland Casino **Venlo** = 링·**5/8~5/16**.
+   근거·축어는 `docs/market-profile/de.md` §1에 추가했다. **한 문장으로 갈라 주면 그게 차별화 콘텐츠다**
+   (벤로는 독일 국경 옆이라 NRW 독자에게 가깝다). ⚠ 5월 회차는 이미 끝났으니 현재형 금지.
+6. 노이즈: `berlin poker turnier überfall`(강도 사건) · `turnier poker chips/karten/buch`(상거래).
+
 > ✅ **검수장 인계 트랙은 끝났다**(2026-08-11). A층 15 · B층 7+1 · C층 20건 완료·푸시, 마지막 `7f5ae02`.
 > 본체가 할 일 없음 — 검수장 재검수 1회만 남았고 그건 저쪽 몫이다.
 >
@@ -240,6 +257,18 @@ Session 3에 끼워넣을 수 없다.
   ⚠ **이 파일은 18개 언어 공용인데 7번째 표는 de에만 있다** — 다른 로케일엔 6이 맞으므로
   통째로 교체하지 말고 **de 전용 파일을 새로 만들지, 아니면 그냥 둘지부터 판단할 것**
 
+- 🔴🔴 **Session 5 적대 QA가 증명한 것 — Session 6에 그대로 적용:**
+  ① **딜러 렌즈가 「내 정정 자체의 오류」를 잡았다.** C44를 「숏핸드는 시간당 핸드가 많아서」로 썼는데
+     그 FAQ 질문은 **winrate(bb/100)** 였다 — 핸드당 정규화라 시간당 핸드 수와 무관하다.
+     **결론이 맞아도 근거가 틀리면 틀린 문장이다.** 8 로케일 재정정했다.
+     ★검수장 C33 판정도 같은 이유를 적었다 — **원장이 맞아도 그 문장이 어느 질문 밑에 붙는지가 정답을 바꾼다.**
+  ② **D유형 4건은 딜러 렌즈만 잡았다**(네이티브·기계 전부 통과). idiot end 스택오프를 쿨러로 공인 ·
+     피시 사이징 리드 방향 반대 · 「숏핸드 피하라」가 라이브 최고 게임을 버리게 함 · TAG 상대 과폴드 권장.
+     **수학·문체 렌즈를 몇 개 돌려도 안 나온다.**
+  ③ **두 렌즈가 독립적으로 겹친 3건은 확정으로 처리해도 된다**(drawing dead · Overplayen · Donk Bet).
+  ④ **검수자가 3건 틀렸다** — 반려 근거를 WORKLOG(16)에 남겼다. **지적을 그대로 반영하지 마라.**
+  ⑤ 🟠 **사장님 판단 대기 신설**: `rake`·`straddle`이 전부 `$1/$2`로 쓰는데 DACH 독자는 €1/€2 세계다.
+     정본 §3은 「§13 보존 위해 $ 유지」라 지금은 안 바꿨지만, **네이티브 검수자가 이걸 최대 번역 신호로 지목**했다.
 - 🔴 **Session 4 적대 QA의 «중간 확신» 지적 ~40곳이 미반영이다** — 전부 **번역티(어휘·연어)**고
   사실오류는 아니다. 그 글을 열 때 함께 고쳐라. 대표 유형:
   **`X % der Zeit`**(=of the time 직역 → 「in X % der Fälle」, 코퍼스 전반 두 자릿수) ·

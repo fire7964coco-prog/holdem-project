@@ -161,7 +161,7 @@ A. Ya, tapi bukan dari pot. Biayanya ditambahkan ke buy-in Anda dan ditampilkan 
 
 **Q. Bagaimana rake memengaruhi win rate Anda?**
 
-A. Signifikan — paling terasa pada stake rendah, di mana cap tak ikut turun bersama stake. Short-handed menambah efek kedua yang tak ada hubungannya dengan cap: di meja enam pemain atau heads-up Anda memainkan jauh lebih banyak tangan per jam dan membayar blind jauh lebih sering, sehingga rake datang jauh lebih sering pula. Rake bisa mengubah pemenang kecil menjadi pecundang: pemain +8 bb/100 yang sama bisa berakhir sedikit negatif hanya dengan pindah ke room dengan cap rake lebih tinggi. Selalu ukur win rate Anda setelah rake.
+A. Signifikan — paling terasa pada stake rendah, di mana cap tak ikut turun bersama stake. Short-handed menambah efek kedua yang tak ada hubungannya dengan cap: rake yang sama per pot dipikul lebih sedikit pemain, dan Anda membayar blind jauh lebih sering per 100 tangan — jadi porsi Anda per tangan naik. (Per *jam* Anda memang juga membayar lebih, karena lebih banyak tangan berjalan, tetapi itu pertanyaan yang berbeda dari bb/100.) Rake bisa mengubah pemenang kecil menjadi pecundang: pemain +8 bb/100 yang sama bisa berakhir sedikit negatif hanya dengan pindah ke room dengan cap rake lebih tinggi. Selalu ukur win rate Anda setelah rake.
 
 **Q. Rake poker online atau live lebih tinggi?**
 

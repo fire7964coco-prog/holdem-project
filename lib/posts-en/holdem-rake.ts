@@ -173,7 +173,7 @@ A. Yes, but not from the pot. The fee is added to your buy-in and shown with a "
 
 **Q. How does rake affect your win rate?**
 
-A. Significantly — most of all at low stakes, where the cap doesn't scale down with the stakes. Short-handed adds a second effect that has nothing to do with the cap: at a six-max or heads-up table you play far more hands per hour and post the blinds far more often, so the rake simply comes around more frequently. Rake can turn a small winner into a loser: the same +8 bb/100 player can end up slightly negative simply by moving to a room with a higher rake cap. Always measure your win rate after rake.
+A. Significantly — most of all at low stakes, where the cap doesn't scale down with the stakes. Short-handed adds a second effect that has nothing to do with the cap: the same rake per pot is shared by fewer players, and you post the blinds far more often per 100 hands — so your share per hand goes up. (Per *hour* you also pay more, simply because more hands run, but that is a different question from bb/100.) Rake can turn a small winner into a loser: the same +8 bb/100 player can end up slightly negative simply by moving to a room with a higher rake cap. Always measure your win rate after rake.
 
 **Q. Is online or live poker rake higher?**
 

@@ -17,6 +17,17 @@
   — https://www.wsop.com/news/wsop-europe-heads-to-prague-in-2026/
 - → **"WSOPE 개최지 = 로즈바도프"를 현재형으로 쓰면 사실오류.** "2017~2025 로즈바도프, 2026부터 프라하"로.
 
+### 🔴 WSOPE ≠ WSOP Circuit Venlo — 검색자가 실제로 혼동한다 (2026-08-11 실측)
+독일어 자동완성에 **`wsop europe 2026 venlo`** 가 살아 있다. **이건 검색자의 혼동이고, 우리가 풀어 줄 자리다.**
+- ✅ **WSOPE 2026 = 브레이슬릿 15개 · Hilton Prague · 3/31~4/12** (위 항목)
+- ✅ **WSOP Circuit – Holland Casino Venlo = 링 이벤트 · 2026-05-08~05-16 · 네덜란드 벤로**
+  wsop.com 원문 축어(Playwright DOM 추출): `WSOP Circuit - Holland Casino Venlo` / `May 08 2026 - May 16 2026` /
+  `Holland Casino Venlo, Venlo, Netherlands` / `#1: €570 NLH Mini Main Event` / `#3: €1,500 NLH - Main Event 500K GTD`
+  — https://www.wsop.com/tournaments/wsop-circuit-holland-casino-may-2026/
+- **둘은 다른 시리즈다**(브레이슬릿 vs 링). 한 문장으로 갈라 주면 그 자체가 차별화 콘텐츠다.
+- 🪶 벤로는 **독일 국경 바로 옆**이라 NRW 독자에게 실무적으로 가깝다(키워드뱅크 `wsop venlo` 40 · `poker turniere venlo`·`holland casino venlo poker` 90 자동완성 실재).
+- ⚠ 2026-05 회차는 **이미 끝났다**(오늘 2026-08-11). 현재형으로 쓰지 말고, 다음 회차는 착수 시 라이브 재확인할 것.
+
 ## 2. King's Resort Rozvadov — 사실상 독일 시장용 카지노
 
 - ✅ 자기 표기 "King's Resort Biggest Poker Room in Europe" · "On the Main Motorway from Munich to Prague" — kings-resort.com/poker

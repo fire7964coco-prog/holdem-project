@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Texas-Hold'em-Glossar: Jeder Poker-Begriff, den du am Tisch hörst",
   seoTitle: "Von den Nuts bis zum Fish – Poker-Begriffe erklärt",
   desc: "Alle Poker-Begriffe, die du am Tisch hörst, einfach erklärt und nach Situation gruppiert: Setzaktionen, Positionen, Hände, Slang und Turnier-Abkürzungen.",
-  tldr: "Das ist ein Poker-Lexikon in einfachem Deutsch mit den Begriffen, die in einem Texas-Hold'em-Spiel wirklich vorkommen, gruppiert danach, wie du ihnen begegnest – Setzaktionen, Positionen, Hände und Board, Spielertypen, Geld, Tischsituationen und die Turnier- und Online-Abkürzungen. Beginn mit den 'am häufigsten verwechselten' Begriffen unten (Check vs. Call, Set vs. Trips, Cooler vs. Bad Beat), dann stöber nach Kategorie. Begriffe mit einem tieferen Guide verlinken direkt darauf.",
+  tldr: "Das ist ein Poker-Lexikon in einfachem Deutsch mit den Begriffen, die in einem Texas-Hold'em-Spiel wirklich vorkommen, gruppiert danach, wie du ihnen begegnest – Setzaktionen, Positionen, Hände und Board, Spielertypen, Geld, Tischsituationen und die Turnier- und Online-Abkürzungen. Beginn mit den „am häufigsten verwechselten“ Begriffen unten (Check vs. Call, Set vs. Trips, Cooler vs. Bad Beat), dann stöber nach Kategorie. Begriffe mit einem tieferen Guide verlinken direkt darauf.",
   category: "glossary",
   date: "2026-07-05",
   updated: "2026-08-11",
@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Ein Texas-Hold'em-Tisch mit Chips, dem Dealer-Button und Gemeinschaftskarten auf grünem Filz – die Sprache des Pokers",
   tags: ["poker begriffe", "poker begriffe erklärt", "pokerbegriffe", "poker glossar", "poker lexikon", "poker abkürzungen", "texas holdem begriffe", "poker slang", "poker fachbegriffe", "was bedeutet das im poker"],
   content: `
-Als ich das erste Mal in einem Live-Spiel saß, hätte der Tisch genauso gut eine andere Sprache sprechen können. Jemand saß „under the gun“, ein anderer hatte „den Cutoff drei-gebettet“, der Dealer fragte, ob ich „run it twice“ wollte, und als ich mit Kings verlor, hieß es, das sei „nicht mal ein Bad Beat, nur ein [Cooler](/de/blog/holdem-cooler "thumb:/images/holdem-cooler-hero.webp")“. Ich nickte, als hätte ich verstanden. Hatte ich nicht.
+Als ich das erste Mal in einem Live-Spiel saß, hätte der Tisch genauso gut eine andere Sprache sprechen können. Jemand saß „under the gun“, ein anderer hatte „den Cutoff ge-3-bettet“, der Dealer fragte, ob ich „run it twice“ wollte, und als ich mit Kings verlor, hieß es, das sei „nicht mal ein Bad Beat, nur ein [Cooler](/de/blog/holdem-cooler "thumb:/images/holdem-cooler-hero.webp")“. Ich nickte, als hätte ich verstanden. Hatte ich nicht.
 
 Poker hat sein eigenes Vokabular, und es zu kennen bringt zwei Dinge: Es verhindert, dass du wie ein [Fish](/de/blog/holdem-fish "thumb:/images/holdem-fish-hero.webp") aussiehst, und es lässt dich der Strategie folgen, die dir Geld bringt. Dieses Lexikon sammelt die Pokerbegriffe, die an einem Texas-Hold'em-Tisch wirklich vorkommen – gruppiert danach, ==g:wie du ihnen tatsächlich begegnest==, nicht bloß als eine riesige A-bis-Z-Wand hingeworfen. Beginn mit den Begriffen, die am häufigsten verwechselt werden, dann stöber in der Kategorie, die du brauchst. Wo ein Begriff einen ganzen Guide hat, findest du einen Link direkt dorthin.
 
@@ -43,7 +43,7 @@ Poker hat sein eigenes Vokabular, und es zu kennen bringt zwei Dinge: Es verhind
 
 | Diese werden verwechselt | Der Unterschied |
 |:---|:---|
-| **Check vs. Call** | Ein Check riskiert **keine Chips** (nur wenn keine Bet läuft); ein Call **gleicht** eine bestehende Bet aus. |
+| **Check vs. Call** | Ein Check riskiert **keine Chips** – möglich nur, solange keine Bet läuft; ein Call **gleicht** eine bestehende Bet aus. |
 | **Blind vs. Ante** | Blinds sind **positionale** Pflichteinsätze (SB/BB); Antes werden von **allen** gezahlt, um den Pot zu füttern. |
 | **Set vs. Trips** | Beide sind ein Drilling – ein **Set** nutzt ein Pocket Pair; **Trips** nutzt eine Hole Card + ein Paar auf dem Board. |
 | **Cooler vs. Bad Beat** | Ein [Cooler](/de/blog/holdem-cooler) = du lagst hinten und konntest nicht folden; ein [Bad Beat](/de/blog/holdem-bad-beat) = du lagst vorn und wurdest outgedrawt. |
@@ -80,12 +80,12 @@ Die genaue Reihenfolge, in der sie am Tisch fallen, steht in der [Reihenfolge de
 | **3-Bet** | Der Re-Raise nach einem Open (die dritte Bet, wenn man die Blinds als erste zählt). |
 | **4-Bet** | Ein Re-Raise auf eine 3-Bet. |
 | **C-Bet** | Eine „Continuation Bet“ auf dem Flop vom Spieler, der preflop geraist hat. |
-| **Donk Bet** | Aus der Position heraus in den Aggressor der vorherigen Street hineinsetzen (früher als Fehler gesehen, heute ein Tool mit geringer Frequenz). |
+| **Donk Bet** | Out of position in den Aggressor der vorherigen Street hineinsetzen (früher als Fehler gesehen, heute ein Tool mit geringer Frequenz). |
 | **Value Bet** | Eine Bet mit einer starken Hand in der Hoffnung, von einer schwächeren gecallt zu werden. |
 | **Bluff / Semi-Bluff** | Ein Bluff bettet eine schwache Hand, um bessere zum Folden zu bewegen; ein Semi-Bluff tut das mit einem Draw, der sich noch verbessern kann. |
 | **Check-Raise** | Checken, dann raisen, nachdem ein Gegner bettet – eine starke, täuschende Linie (in modernen Cardrooms erlaubt). |
 | **Min-Raise** | Der kleinste legale Raise. |
-| **String Bet** | Ein illegaler, nicht angesagter Griff nach mehr Chips; wird als Call gewertet, nicht als Raise. |
+| **String Bet** | Ein nicht angesagter Einsatz in mehreren Bewegungen. Es gilt nur der Betrag der **ersten Bewegung** – meist ist das ein Call. Vermeidbar, indem du vorher „Raise“ ansagst. |
 | **Jam / Shove** | All-in gehen. |
 | **Snap Call** | Ein sofortiger Call ohne jedes Zögern. |
 | **Hero Call** | Mit einer schwachen Hand callen, weil du den Gegner als Bluffer gelesen hast. |
@@ -146,8 +146,8 @@ Neu im Ablauf der Streets? Beginn mit der [Reihenfolge des Spiels](/de/blog/hold
 | **Trips** | Ein Drilling aus **einer Hole Card** + einem Paar auf dem Board (schwächere Kicker-Kontrolle). |
 | **Two Pair (Zwei Paare)** | Zwei verschiedene Paare. |
 | **Made Hand** | Eine schon fertige Hand, im Gegensatz zu einem Draw. |
-| **Draw** | Eine Hand, die sich verbessern muss – z. B. ein **Flushdraw** (4 zu einem Flush) oder ein Straßendraw. |
-| **Gutshot** | Ein Inside-Straßendraw, der einen mittleren Rang braucht (4 [Outs](/de/blog/holdem-outs)). |
+| **Draw** | Eine Hand, die sich verbessern muss – z. B. ein **Flushdraw** (vier Karten zum Flush) oder ein Straßendraw. |
+| **Gutshot** | Ein Straßendraw mit einer Lücke in der Mitte, der genau einen Rang braucht (4 [Outs](/de/blog/holdem-outs)). |
 | **Open-Ender** | Ein beidseitig offener Straßendraw, an beiden Enden vervollständigbar (8 Outs). |
 | **Backdoor** | Ein Draw, der **zwei** aufeinanderfolgende Karten braucht (Turn *und* River). |
 | **Overcard** | Eine Karte, die höher ist als das Board. |
@@ -203,8 +203,8 @@ Die große Gabelung dahinter ist [Cash Game vs. Turnier](/de/blog/holdem-tournam
 
 | Begriff | Bedeutung |
 |:---|:---|
-| **Blinds** | Die erzwungenen SB/BB-Bets, die die Action starten – auch der Name für Stake-Level ([Blinds erklärt](/de/blog/holdem-blind-meaning)). |
-| **Ante** | Ein kleiner Pflichteinsatz von allen, um den Pot zu füttern, getrennt von den Blinds. |
+| **Blinds** | Die Pflichteinsätze von SB und BB, die die Action starten – auch der Name für Stake-Level ([Blinds erklärt](/de/blog/holdem-blind-meaning)). |
+| **Ante** | Ein kleiner Pflichteinsatz, um den Pot zu füttern, getrennt von den Blinds – im modernen Turnier meist als **Big Blind Ante** von einem einzigen Spieler gezahlt. |
 | **Pot** | Die gesamten Chips, um die gespielt wird. |
 | **Side Pot** | Ein getrennter Pot, der entsteht, wenn ein Spieler all-in ist und andere weiterbetten. |
 | **Stack** | Die Chips vor einem Spieler. |
