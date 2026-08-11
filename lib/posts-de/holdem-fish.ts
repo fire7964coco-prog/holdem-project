@@ -113,7 +113,7 @@ Der Satz, an den sich die meisten erinnern, stammt aus dem Film **Rounders** von
 „If you can't spot the sucker in your first half hour at the table, then you are the sucker.“
 :::
 
-Achte auf das Wort: Es ist **„Sucker“**, nicht „Fish“. Die Fish-Version ist eine volkstümliche Paraphrase, die Pokerspieler über die Jahre eingesetzt haben – dem Sinn nach richtig, aber nicht das eigentliche Zitat. Und die Idee ist **älter als der Film.** Es ist ein Sprichwort aus der Glücksspielwelt mit umstrittenem Ursprung: Der große Road Gambler **Amarillo Slim** nahm eine Version in die überarbeitete Ausgabe seines Buches *Play Poker to Win* von 2005 auf, schrieb sie in derselben Passage aber **Warren Buffett** „und einer Million anderer Kerle“ vor ihm zu. Buffett benutzt dasselbe Bild seit Langem, um Investoren davor zu warnen, in einem manipulierten Spiel der Dumme zu sein.
+Achte auf das Wort: Es ist **„Sucker“**, nicht „Fish“. Die Fish-Version ist eine volkstümliche Paraphrase, die Pokerspieler über die Jahre eingesetzt haben – dem Sinn nach richtig, aber nicht das eigentliche Zitat. Und die Idee ist **älter als der Film.** Es ist ein Sprichwort aus der Glücksspielwelt mit umstrittenem Ursprung: Der große Road Gambler **Amarillo Slim** nahm eine Version in die überarbeitete Ausgabe seines Buches *Play Poker to Win* von 2005 auf, schrieb sie in derselben Passage aber **Warren Buffett** „und einer Million anderer Kerle“ vor ihm zu. Buffett benutzt dasselbe Bild seit Langem, um Investoren davor zu warnen, sich an einen Tisch zu setzen, ohne zu merken, dass sie dort am schlechtesten informiert sind.
 
 Die ehrliche Zuschreibung – die, die eine sorgfältige Quelle von einer faulen trennt – lautet also: Der *Satz, den du gehört hast*, wurde auf der Leinwand durch Rounders bekannt, aber die *Idee* ist ein altes Sprichwort ohne einzelnen überprüfbaren Urheber. So oder so bleibt der Punkt derselbe, und er ist der ganze Grund, warum es diesen Artikel gibt.
 
@@ -133,7 +133,7 @@ Jetzt kommt der unangenehme Teil. Wenn du bis hierher gelesen und still gehofft 
 
 </div>
 
-Die Fish-Signatur ist die **weite VPIP / niedrige PFR-Lücke**: Du spielst 45% der Hände, raist aber nur 5% davon. Das heißt, du *callst* dich in Pots hinein und hoffst – der größte einzelne Leak beim Poker. Über die Stats hinaus frag dich ehrlich:
+Die Fish-Signatur ist die **weite VPIP / niedrige PFR-Lücke**: Du spielst 45% der Hände, raist aber nur 5% aller ausgeteilten Hände. Das heißt, du *callst* dich in Pots hinein und hoffst – der größte einzelne Leak beim Poker. Über die Stats hinaus frag dich ehrlich:
 
 - Callst du Preflop-Raises mit Händen wie K‑7 offsuit oder Q‑9, weil „die sind irgendwie spielbar“?
 - Limpst du rein, callst dann einen Raise und planst, „den Flop zu treffen“?

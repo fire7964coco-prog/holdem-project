@@ -114,7 +114,7 @@ La frase que la mayoría recuerda es de la película de 1998 **Rounders**, dicha
 "Si no ves al primo en tu primera media hora en la mesa, entonces el primo eres tú."
 :::
 
-Fíjate en la palabra: es **"primo/sucker"**, no "fish". La versión con fish es una paráfrasis popular que los jugadores fueron colando con los años — fiel en espíritu, pero no la cita real. Y la idea es **más vieja que la película.** Es un proverbio del mundo del juego con orígenes disputados: el gran jugador de carretera **Amarillo Slim** incluyó una versión en la edición revisada de 2005 de su libro *Play Poker to Win*, pero en ese mismo pasaje se la atribuía a **Warren Buffett** "y un millón de tipos más" antes que a él. Buffett lleva mucho tiempo usando la misma imagen para advertir a los inversores de no ser el primo en un juego amañado.
+Fíjate en la palabra: es **"primo/sucker"**, no "fish". La versión con fish es una paráfrasis popular que los jugadores fueron colando con los años — fiel en espíritu, pero no la cita real. Y la idea es **más vieja que la película.** Es un proverbio del mundo del juego con orígenes disputados: el gran jugador de carretera **Amarillo Slim** incluyó una versión en la edición revisada de 2005 de su libro *Play Poker to Win*, pero en ese mismo pasaje se la atribuía a **Warren Buffett** "y un millón de tipos más" antes que a él. Buffett lleva mucho tiempo usando la misma imagen para advertir a los inversores de no sentarse a la mesa sin darse cuenta de que son los peor informados.
 
 Así que la atribución honesta — la que separa a una fuente cuidadosa de una perezosa — es esta: la *frase que has oído* la popularizó en pantalla Rounders, pero la *idea* es un viejo proverbio sin un único autor verificable. En cualquier caso, el mensaje es el mismo, y es la razón entera de que exista este artículo.
 
@@ -134,7 +134,7 @@ Aquí viene la parte incómoda. Si has llegado hasta aquí esperando en silencio
 
 </div>
 
-La firma del fish es la **diferencia amplia VPIP / bajo PFR**: juegas el 45% de las manos pero solo subes el 5%. Eso significa que te *igualas* el camino hacia los botes y rezas — el mayor leak del póker. Más allá de los stats, pregúntate con honestidad:
+La firma del fish es la **diferencia amplia VPIP / bajo PFR**: juegas el 45% de las manos pero solo subes el 5% de todas las manos repartidas. Eso significa que te *igualas* el camino hacia los botes y rezas — el mayor leak del póker. Más allá de los stats, pregúntate con honestidad:
 
 - ¿Igualas subidas preflop con manos como K‑7 de distinto palo o Q‑9 porque "son medio jugables"?
 - ¿Limpeas, luego igualas una subida, con el plan de "pegar el flop"?
@@ -169,7 +169,7 @@ Haz esas seis cosas y dejas de ser el dinero. No tienes que convertirte en tibur
 
 **Q. ¿Qué significa fish en el póker?**
 
-A. Un fish es la jerga del póker para un jugador débil, inexperto o perdedor — ese del que los jugadores más fuertes (los "tiburones") sacan su dinero. Describe a cualquiera que toma malas decisiones de forma constante y pierde fichas con el tiempo, por muy simpático o seguro de sí mismo que sea. Se define por su opuesto: un fish es, simplemente, todo lo que no es un tiburón.
+A. Un fish es la jerga del póker para un jugador débil, inexperto o perdedor — ese del que los jugadores más fuertes (los "tiburones") sacan su dinero. Describe a cualquiera que toma malas decisiones de forma constante y pierde fichas con el tiempo, por muy simpático o seguro de sí mismo que sea. Se define por su opuesto — aunque no todo el que no es tiburón es un fish: los nits y los grinders quedan en medio.
 
 **Q. ¿Llamar a alguien fish es un insulto?**
 

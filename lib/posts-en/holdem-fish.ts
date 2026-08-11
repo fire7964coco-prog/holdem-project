@@ -113,7 +113,7 @@ The line most people remember is from the 1998 film **Rounders**, spoken by Matt
 "If you can't spot the sucker in your first half hour at the table, then you are the sucker."
 :::
 
-Note the word: it's **"sucker,"** not "fish." The fish version is a folk paraphrase that poker players swapped in over the years — accurate in spirit, but not the actual quote. And the idea is **older than the movie.** It's a gambling-world proverb with contested origins: the great road gambler **Amarillo Slim** included a version in the 2005 revised edition of his book *Play Poker to Win*, but in that same passage credited **Warren Buffett** "and a million other fellows" with it before him. Buffett has long used the same image to warn investors about being the patsy in a rigged game.
+Note the word: it's **"sucker,"** not "fish." The fish version is a folk paraphrase that poker players swapped in over the years — accurate in spirit, but not the actual quote. And the idea is **older than the movie.** It's a gambling-world proverb with contested origins: the great road gambler **Amarillo Slim** included a version in the 2005 revised edition of his book *Play Poker to Win*, but in that same passage credited **Warren Buffett** "and a million other fellows" with it before him. Buffett has long used the same image to warn investors about sitting down without realising you're the least-informed person there.
 
 So the honest attribution — the one that separates a careful source from a lazy one — is this: the *line you've heard* was popularized on screen by Rounders, but the *idea* is an old proverb with no single verifiable author. Either way, the point is the same, and it's the entire reason this article exists.
 
@@ -133,7 +133,7 @@ Here's the uncomfortable part. If you've read this far quietly hoping you're a s
 
 </div>
 
-The fish signature is the **wide VPIP / low PFR gap**: you're playing 45% of hands but only raising 5% of them. That means you're *calling* your way into pots and hoping — the single biggest leak in poker. Beyond the stats, ask yourself honestly:
+The fish signature is the **wide VPIP / low PFR gap**: you're playing 45% of hands but raising only 5% of all hands dealt. That means you're *calling* your way into pots and hoping — the single biggest leak in poker. Beyond the stats, ask yourself honestly:
 
 - Do you call preflop raises with hands like K‑7 offsuit or Q‑9 because "they're sort of playable"?
 - Do you limp in, then call a raise, planning to "hit the flop"?
@@ -168,7 +168,7 @@ Do those six things and you stop being the money. You don't have to become a sha
 
 **Q. What does fish mean in poker?**
 
-A. A fish is poker slang for a weak, inexperienced, or losing player — the one that stronger players ("sharks") make their money from. It describes anyone who consistently makes poor decisions and loses chips over time, regardless of how likeable or confident they are. It's defined by its opposite: a fish is simply not a shark.
+A. A fish is poker slang for a weak, inexperienced, or losing player — the one that stronger players ("sharks") make their money from. It describes anyone who consistently makes poor decisions and loses chips over time, regardless of how likeable or confident they are. It's defined by its opposite — though not everyone who isn't a shark is a fish: nits and grinders sit in between.
 
 **Q. Is calling someone a fish an insult?**
 

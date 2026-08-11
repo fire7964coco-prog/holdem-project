@@ -113,7 +113,7 @@ Kalimat yang paling diingat orang berasal dari film **Rounders** tahun 1998, diu
 "Kalau Anda tak bisa mengenali sucker dalam setengah jam pertama Anda di meja, maka Anda-lah sucker-nya."
 :::
 
-Perhatikan katanya: itu **"sucker,"** bukan "fish." Versi fish adalah parafrase rakyat yang ditukar pemain poker selama bertahun-tahun — akurat secara semangat, tapi bukan kutipan aslinya. Dan gagasannya **lebih tua dari filmnya.** Ini peribahasa dunia judi dengan asal yang diperdebatkan: pejudi jalanan besar **Amarillo Slim** memasukkan sebuah versi dalam edisi revisi 2005 bukunya *Play Poker to Win*, tapi dalam bagian yang sama ia mengkreditkan **Warren Buffett** "dan sejuta orang lain" sebelum dirinya. Buffett sudah lama memakai citra yang sama untuk memperingatkan investor tentang menjadi si patsy dalam permainan yang dicurangi.
+Perhatikan katanya: itu **"sucker,"** bukan "fish." Versi fish adalah parafrase rakyat yang ditukar pemain poker selama bertahun-tahun — akurat secara semangat, tapi bukan kutipan aslinya. Dan gagasannya **lebih tua dari filmnya.** Ini peribahasa dunia judi dengan asal yang diperdebatkan: pejudi jalanan besar **Amarillo Slim** memasukkan sebuah versi dalam edisi revisi 2005 bukunya *Play Poker to Win*, tapi dalam bagian yang sama ia mengkreditkan **Warren Buffett** "dan sejuta orang lain" sebelum dirinya. Buffett sudah lama memakai citra yang sama untuk memperingatkan investor agar tak ikut duduk tanpa sadar bahwa merekalah yang paling minim informasi.
 
 Jadi atribusi yang jujur — yang memisahkan sumber teliti dari sumber malas — adalah ini: *kalimat yang Anda dengar* dipopulerkan di layar oleh Rounders, tapi *gagasannya* adalah peribahasa lama tanpa satu pengarang yang bisa diverifikasi. Bagaimanapun, poinnya sama, dan itulah seluruh alasan artikel ini ada.
 
@@ -133,7 +133,7 @@ Inilah bagian yang tak nyaman. Kalau Anda membaca sejauh ini sambil diam-diam be
 
 </div>
 
-Tanda tangan fish adalah **celah VPIP lebar / PFR rendah**: Anda memainkan 45% tangan tapi hanya me-raise 5% dari itu. Itu berarti Anda *call* untuk masuk ke pot dan berharap — leak terbesar tunggal di poker. Di luar stat, tanyakan pada diri Anda dengan jujur:
+Tanda tangan fish adalah **celah VPIP lebar / PFR rendah**: Anda memainkan 45% tangan tapi hanya me-raise 5% dari seluruh tangan yang dibagikan. Itu berarti Anda *call* untuk masuk ke pot dan berharap — leak terbesar tunggal di poker. Di luar stat, tanyakan pada diri Anda dengan jujur:
 
 - Apakah Anda call raise preflop dengan tangan seperti K‑7 offsuit atau Q‑9 karena "lumayan bisa dimainkan"?
 - Apakah Anda limp masuk, lalu call raise, berencana "hit di flop"?
@@ -168,7 +168,7 @@ Lakukan enam hal itu dan Anda berhenti menjadi uangnya. Anda tak harus menjadi s
 
 **Q. Apa arti fish di poker?**
 
-A. Fish adalah slang poker untuk pemain yang lemah, tak berpengalaman, atau kalah — orang yang chip-nya dikeruk pemain yang lebih kuat ("shark"). Ia menggambarkan siapa pun yang secara konsisten membuat keputusan buruk dan kehilangan chip seiring waktu, tak peduli seberapa disukai atau percaya diri mereka. Ia didefinisikan oleh kebalikannya: fish hanyalah bukan shark.
+A. Fish adalah slang poker untuk pemain yang lemah, tak berpengalaman, atau kalah — orang yang chip-nya dikeruk pemain yang lebih kuat ("shark"). Ia menggambarkan siapa pun yang secara konsisten membuat keputusan buruk dan kehilangan chip seiring waktu, tak peduli seberapa disukai atau percaya diri mereka. Ia didefinisikan oleh kebalikannya — walau tidak semua yang bukan shark itu fish: nit dan grinder ada di antaranya.
 
 **Q. Apakah menyebut seseorang fish itu penghinaan?**
 

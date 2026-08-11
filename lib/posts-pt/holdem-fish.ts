@@ -113,7 +113,7 @@ A frase que a maioria lembra é do filme de 1998 **Rounders**, dita pelo persona
 "Se você não consegue achar o otário na sua primeira meia hora à mesa, então o otário é você."
 :::
 
-Repare na palavra: é **"otário" (sucker)**, não "fish". A versão com fish é uma paráfrase popular que os jogadores foram trocando com os anos — fiel no espírito, mas não é a citação de verdade. E a ideia é **mais antiga que o filme.** É um provérbio do mundo do jogo com origens contestadas: o grande jogador de estrada **Amarillo Slim** incluiu uma versão na edição revisada de 2005 do seu livro *Play Poker to Win*, mas nessa mesma passagem creditou **Warren Buffett** "e um milhão de outros sujeitos" antes dele. Buffett há muito usa a mesma imagem para alertar investidores sobre serem o trouxa num jogo viciado.
+Repare na palavra: é **"otário" (sucker)**, não "fish". A versão com fish é uma paráfrase popular que os jogadores foram trocando com os anos — fiel no espírito, mas não é a citação de verdade. E a ideia é **mais antiga que o filme.** É um provérbio do mundo do jogo com origens contestadas: o grande jogador de estrada **Amarillo Slim** incluiu uma versão na edição revisada de 2005 do seu livro *Play Poker to Win*, mas nessa mesma passagem creditou **Warren Buffett** "e um milhão de outros sujeitos" antes dele. Buffett há muito usa a mesma imagem para alertar investidores sobre sentar à mesa sem perceber que são os menos informados ali.
 
 Então a atribuição honesta — a que separa uma fonte cuidadosa de uma preguiçosa — é esta: a *frase que você ouviu* foi popularizada nas telas por Rounders, mas a *ideia* é um provérbio antigo sem um único autor verificável. De qualquer jeito, o ponto é o mesmo, e é a razão inteira pela qual este artigo existe.
 
@@ -133,7 +133,7 @@ Aqui vem a parte desconfortável. Se você leu até aqui torcendo baixinho para 
 
 </div>
 
-A assinatura do fish é a **diferença VPIP alto / PFR baixo**: você está jogando 45% das mãos mas só aumentando 5% delas. Isso significa que você está *pagando* seu caminho para dentro dos potes e torcendo — o maior leak do pôquer. Além das estatísticas, se pergunte com honestidade:
+A assinatura do fish é a **diferença VPIP alto / PFR baixo**: você está jogando 45% das mãos mas só aumentando 5% de todas as mãos distribuídas. Isso significa que você está *pagando* seu caminho para dentro dos potes e torcendo — o maior leak do pôquer. Além das estatísticas, se pergunte com honestidade:
 
 - Você paga raises no pré-flop com mãos como K‑7 offsuit ou Q‑9 porque "são meio jogáveis"?
 - Você dá limp, depois paga um raise, planejando "acertar o flop"?

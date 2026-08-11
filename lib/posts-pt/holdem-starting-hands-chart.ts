@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Dos 169 tipos de mãos iniciais, só uma pequena fatia do topo — cerca de 15–20% das mãos que você recebe — dá lucro pra um iniciante. Pares grandes (AA–TT) e AK aumentam de qualquer assento; quanto mais tarde você age, mais amplo você abre — de ~13% no under the gun a ~43% no button (ainda mais amplo no 6-max). Comece com uma tabela simplificada e adicione as tabelas GTO de preflop quando o aumentar-ou-foldar já for automático.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-08-09",
-  masterUpdated: "2026-07-19",
+  updated: "2026-08-11",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🂡",
@@ -193,7 +193,7 @@ As piores mãos iniciais do pôquer não são tralha aleatória como 7-2 — nin
 | Tipo de mão | Por que perde | O que os iniciantes pensam |
 |-----------|-------------|---------------------|
 | ==r:Ases fracos (A2o–A8o)== | Faz o segundo melhor par vs. ases melhores | "Eu tenho um ás, deve ser boa" |
-| Connectors offsuit baixos (74o, 85o) | Raramente conecta limpo, e é difícil de jogar quando conecta | "Pode fazer uma sequência" |
+| Connectors offsuit baixos (76o, 65o) | Raramente conecta limpo, e é difícil de jogar quando conecta | "Pode fazer uma sequência" |
 | Rei-carta baixa offsuit (K3o, K4o) | Dominada por todo rei melhor | "Um rei é uma carta grande" |
 | Duas cartas quaisquer do mesmo naipe | Faz flush até o river só ~6,5% das vezes (flopa um em ~0,8%) | "Mas são do mesmo naipe" |
 

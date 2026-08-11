@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Dari 169 tipe starting hand, hanya irisan atas kecil — sekitar 15–20% kartu yang Anda terima — yang profit untuk pemula. Pair besar (AA–TT) dan AK raise dari kursi mana pun; makin belakang Anda beraksi, makin lebar Anda open — dari ~13% di under the gun hingga ~43% di button (lebih lebar lagi di 6-max). Mulai dengan chart sederhana, tambahkan chart preflop GTO setelah raise-or-fold jadi otomatis.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-08-09",
-  masterUpdated: "2026-07-19",
+  updated: "2026-08-11",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "🂡",
@@ -193,7 +193,7 @@ Starting hand terburuk di poker bukan sampah acak seperti 7-2 — tak ada yang b
 | Tipe tangan | Kenapa merugi | Apa yang dipikir pemula |
 |-----------|-------------|---------------------|
 | ==r:Ace lemah (A2o–A8o)== | Membuat pair terbaik-kedua vs. ace lebih baik | "Saya punya ace, pasti bagus" |
-| Connector offsuit rendah (74o, 85o) | Jarang nyambung bersih, sulit dimainkan saat nyambung | "Bisa membuat straight" |
+| Connector offsuit rendah (76o, 65o) | Jarang nyambung bersih, sulit dimainkan saat nyambung | "Bisa membuat straight" |
 | King-rag offsuit (K3o, K4o) | Terdominasi oleh setiap king yang lebih baik | "King itu kartu besar" |
 | Dua kartu suited apa pun | Membuat flush di river hanya ~6,5% dari waktu (flop satu ~0,8%) | "Tapi mereka suit yang sama" |
 

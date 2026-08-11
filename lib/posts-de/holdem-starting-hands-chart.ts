@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Von den 169 Starthand-Typen ist nur eine kleine Spitzengruppe – etwa 15–20% der Hände, die du bekommst – für einen Anfänger profitabel. Große Paare (AA–TT) und AK raist du aus jeder Position; je später du agierst, desto weiter öffnest du – von ~13% unter der Gun bis ~43% am Button (im 6-Max nochmals weiter). Starte mit einem vereinfachten Chart, füge GTO-Preflop-Charts hinzu, sobald Raise-or-Fold automatisch sitzt.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-08-10",
-  masterUpdated: "2026-07-19",
+  updated: "2026-08-11",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🂡",
@@ -193,7 +193,7 @@ Die schlechtesten Starthände im Poker sind nicht zufälliger Müll wie 7-2 – 
 | Handtyp | Warum sie verliert | Was Anfänger denken |
 |-----------|-------------|---------------------|
 | ==r:Schwache Asse (A2o–A8o)== | Macht zweitbestes Paar gegen bessere Asse | „Ich habe ein Ass, das muss gut sein“ |
-| Niedrige Offsuit-Connectors (74o, 85o) | Trifft selten sauber, schwer zu spielen, wenn doch | „Es könnte eine Straße machen“ |
+| Niedrige Offsuit-Connectors (76o, 65o) | Trifft selten sauber, schwer zu spielen, wenn doch | „Es könnte eine Straße machen“ |
 | King-Rag Offsuit (K3o, K4o) | Von jedem besseren König dominiert | „Ein König ist eine große Karte“ |
 | Zwei beliebige suited Karten | Macht bis zum River nur ~6,5% der Zeit einen Flush (floppt einen ~0,8%) | „Aber sie sind dieselbe Farbe“ |
 
