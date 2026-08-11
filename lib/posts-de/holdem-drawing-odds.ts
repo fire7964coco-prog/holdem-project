@@ -9,6 +9,7 @@ export const POST: Post = {
   category: "odds",
   date: "2026-07-04",
   updated: "2026-08-11",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "🎲",
@@ -33,7 +34,9 @@ Genau das sind Drawing Odds in Wahrheit: kein Glück, sondern die ==feste Mathem
 
 ---
 
-## Der Flop-Lebenszyklus: Eine Tabelle, die jede Odds-Seite aufteilt
+## Was floppst du wie oft? Der ganze Lebenszyklus einer Hand
+
+Ein Pocket Pair wird in **11,8%** der Fälle zum Set. Zwei suited Karten werden nur in **0,84%** direkt zum Flush, aber in **10,9%** zum Flushdraw – und der kommt danach in 35% bis zum River an. Connectors floppen in 1,3% eine fertige Straße. Diese drei Ebenen – fertig, Draw, komplettiert – werden ständig vermengt, und genau daraus entstehen die meisten Odds-Fehler.
 
 Hier ist die Tabelle, die niemand an einem Ort baut. Die meisten Seiten nennen dir die Chance, eine Hand zu *floppen*, auf einer Seite und die Chance, einen Draw zu *komplettieren*, auf einer anderen – aber am Tisch ist es eine durchgehende Geschichte. Du bekommst zwei Karten, du floppst etwas Fertiges **oder** einen Draw, und wenn es ein Draw ist, komplettierst du ihn oder eben nicht.
 
@@ -53,7 +56,7 @@ Lies eine Zeile quer und du siehst den ganzen Lebenszyklus einer Hand. Zwei suit
 
 ---
 
-## Chance, ein Set zu floppen (und die Set-Mining-Mathe)
+## Wie hoch ist die Chance, mit einem Pocket Pair ein Set zu floppen?
 
 ![Infografik eines goldenen Dealer Buttons und zweier verdeckter Hole Cards auf einem K♦ 7♣ 2♠ Flop – der Moment, in dem ein Set-Mining-Call entschieden wird](/images/holdem-button-dealer-board.webp "Der Flop entscheidet einen Set-Mining-Call: triff deinen Two-Outer in 11,8% der Fälle, oder folde und warte aufs nächste Paar")
 
@@ -87,7 +90,7 @@ Zwei verwandte Zahlen, nach denen Leute fragen:
 
 ---
 
-## Flush-Odds: Fertig vs. Draw vs. Komplett
+## Wie wahrscheinlich ist ein Flush – gefloppt, als Draw, komplettiert?
 
 ![Ass-König in Herz mit einem Dame-Sieben-Herz-Flop auf grünem Filz, ein gefloppter Neun-Out-Flushdraw neben einem kurzen Chipstack](/images/holdem-drawing-odds-flush-draw.webp "Zwei Herz in der Hand, zwei auf dem Flop – ein Flushdraw, kein fertiger Flush: 10,9% zu floppen, 35% bis zum River zu komplettieren")
 
@@ -115,7 +118,7 @@ Ein **Backdoor** (Runner-Runner) Flush – du floppst nur *eine* zusätzliche Ka
 
 ---
 
-## Straßen-Odds: Eine floppen vs. auf eine drawen
+## Wie oft floppst du eine Straße – und wie oft nur den Draw?
 
 ![Eine Acht-hohe Straße der Reihe nach auf grünem Filz ausgelegt, die fertige Hand, die ein Open-Ended Draw jagt](/images/holdem-reading-straight-example.webp "Ein Open-Ended Straight Draw füllt von beiden Enden – acht Outs, 31,5% bis zum River zu komplettieren")
 
@@ -151,7 +154,9 @@ Die Full-House-Zahl zählt jeden Weg, wie der Flop dir mit einem Pocket Pair ein
 
 ---
 
-## Chance, deine Hand ausgeteilt zu bekommen
+## Wie oft bekommst du überhaupt eine Hand zum Drawen?
+
+Ein bestimmtes Pocket Pair wie Aces kommt alle **221 Hände** (0,45%), irgendein Pocket Pair alle 17 (5,9%), und zwei suited Karten hältst du in **23,5%** aller Hände – fast jede vierte. Bevor du also über Flop-Odds nachdenkst, entscheidet dieses Austeilen, wie oft du überhaupt in die Lage kommst.
 
 Vor all dem oben gibt es das Austeilen. Mit **1.326 möglichen Zwei-Karten-Kombinationen** – so oft kommen die Hände an, nach denen Leute fragen:
 
@@ -177,9 +182,9 @@ Die Zahl, die Leute überrascht: wenn **du** an einem 10-Hand-Tisch Aces hältst
 
 ## FAQ
 
-**Q. Wie hoch ist die Chance, ein Set zu floppen?**
+**Q. Wie tief müssen die Stacks für Set Mining sein?**
 
-A. Etwa 11,8%, oder 1 von 8,5, wenn du ein Pocket Pair hältst – üblicherweise angegeben als „7,5:1 dagegen“. Sie kommt aus 1 − C(48,3)/C(50,3): von den 19.600 möglichen Flops verfehlen 17.296 dein Paar. Diese Zahl ist die gesamte Grundlage dafür, ob das Set-Minen eines kleinen Paars profitabel ist.
+A. Als Richtwert das 15- bis 20-Fache des Preises, den du zahlst. Der reine Break-even läge bei 7,5:1, aber du triffst dein Set nur in 11,8% der Fälle – und selbst dann zahlt dein Gegner nicht immer. Bei 40 Big Blinds effektiv ist das Callen eines Raises mit einem kleinen Paar deshalb meist ein Verlustgeschäft.
 
 **Q. Warum sagt man 7,5:1, aber auch 1 von 8?**
 

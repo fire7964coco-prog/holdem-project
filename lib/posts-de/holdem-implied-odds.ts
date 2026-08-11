@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Implied Odds sind die zusätzlichen Chips, die du auf späteren Streets zu gewinnen erwartest, wenn dein Draw ankommt. Sie erlauben dir, einen Draw profitabel zu callen, den die Pot Odds allein zum Fold verurteilen – aber nur, wenn die Stacks tief sind und dein Gegner dich wirklich auszahlt.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-08-10",
+  updated: "2026-08-11",
   masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "11 Min.",
@@ -45,7 +45,7 @@ Hier ist der Haken, der das ganze Konzept trägt oder bricht: Dieses zukünftige
 
 ---
 
-## Implied Odds vs Pot Odds: Der entscheidende Unterschied
+## Implied Odds oder Pot Odds – womit rechnest du zuerst?
 
 **Pot Odds zählen nur das Geld, das gerade jetzt im Pot liegt; Implied Odds addieren das Geld, das du später zu gewinnen erwartest, wenn du triffst.** Sie sind keine Rivalen – Implied Odds sind Pot Odds, *in die Zukunft verlängert*.
 
@@ -61,14 +61,14 @@ Die praktische Regel: **Fang mit den Pot Odds an.** Wenn deine Equity den Preis 
 
 ---
 
-## Wie man Implied Odds berechnet
+## Wie berechnest du Implied Odds?
 
 **Um Implied Odds zu berechnen, ermittle, wie viel extra du gewinnen musst, wenn du triffst, mit: extra nötig = (dein Call ÷ deine Trefferquote) − (der aktuelle Pot + dein Call).** Wenn du realistisch so viel mehr auf späteren Streets gewinnen kannst, ist der Call profitabel.
 
 Sauber geschrieben, mit ==g:x== als dem zusätzlichen Geld, das du gewinnen musst, wenn du komplettierst:
 
 :::steps
-Finde deine Trefferquote | Zähle Outs, wandle sie in einen Prozentwert um (die [Regel der 4 und 2](/de/blog/holdem-pot-odds) bringt dich nah dran)
+Finde deine Trefferquote | Zähle Outs, wandle sie in einen Prozentwert um (die [Faustregel](/de/blog/holdem-pot-odds) bringt dich nah dran)
 Teile deinen Call durch diese Trefferquote | Das ist der Gesamtbetrag, den du gewinnen musst, um break-even zu sein
 Ziehe den Pot ab, der schon da ist | Was übrig bleibt, ist das Extra, das du später gewinnen musst – das ist dein ==g:x==
 Beurteile, ob es realistisch ist | Tiefe Stacks + ein auszahlfreudiger Gegner = ja. Kurze Stacks oder ein gefährliches Board = nein
@@ -114,7 +114,7 @@ Zwei Kräfte bestimmen die Zahl. **Häufigkeit:** Ein Gutshot trifft halb so oft
 
 ---
 
-## Set Mining: Kleine Pocket Pairs und Implied Odds
+## Warum sind kleine Paare nur mit tiefen Stacks spielbar?
 
 **Du floppst mit einem Pocket Pair nur 11,8% der Zeit ein Set (oder besser) – etwa 7,5:1 dagegen, oder 1 zu 8,5 – Set Mining profitiert also nur, wenn die Stacks dahinter all die Male decken, in denen du verfehlst.** Das ist der reinste Implied-Odds-Play im Poker: Du callst einen Raise mit einem kleinen Paar aus einem einzigen Grund – um einen Drilling zu floppen und jemanden zu stacken.
 
@@ -153,7 +153,7 @@ Die Lektion: Ein Draw zu den ==g:Nuts== ist weit mehr wert als derselbe Draw zu 
 
 ---
 
-## Wann du dich NICHT auf Implied Odds verlassen solltest (häufige Fehler)
+## Wann solltest du dich NICHT auf Implied Odds verlassen?
 
 **In dem Moment, in dem dein Gegner all-in ist, sind deine Implied Odds exakt null – es gibt kein Geld mehr zu gewinnen, also bist du zurück bei reinen Pot Odds.** Das ist das am meisten missbrauchte Konzept im Poker: „Ich hatte doch Implied Odds“ ist die Ausrede, zu der Spieler nach einem Call greifen, der nie gerechtfertigt war.
 
@@ -178,13 +178,13 @@ Ich habe mehr Chips an eingebildete Implied Odds verloren als an jeden Bad Beat.
 
 ## FAQ
 
-**Q. Was sind Implied Odds beim Poker?**
+**Q. Gelten Implied Odds auch am River?**
 
-A. Implied Odds sind die zusätzlichen Chips, die du auf späteren Streets zu gewinnen erwartest, wenn dein Draw komplettiert, addiert zu den Chips, die schon im Pot liegen. Sie erlauben dir, einige Draws profitabel zu callen, die die Pot Odds allein zum Fold verurteilen – solange die Stacks tief genug sind, um dich auszuzahlen, wenn du triffst.
+A. Nein. Am River kommt keine Karte mehr und keine Setzrunde mehr – es gibt nichts, was „später“ noch dazukäme. Deine Entscheidung hängt dort allein am Preis und daran, wie oft du gegen seine Range die beste Hand hast. Implied Odds sind ein Flop- und Turn-Konzept.
 
-**Q. Wie berechnet man Implied Odds?**
+**Q. Wie viel muss ich mit einem Flushdraw am Turn zusätzlich gewinnen?**
 
-A. Nutze: extra nötig = (dein Call ÷ deine Trefferquote) − (der aktuelle Pot + dein Call). $50 mit einem Flushdraw zu callen, der 19,6% der Zeit trifft, bedeutet 50 ÷ 0,196 = $255, minus die $200, die schon im Spiel sind (der $150-Pot plus dein $50-Call) = etwa $55. Wenn du realistisch $55 mehr gewinnen kannst, wenn du triffst, ist der Call profitabel. Beachte, dass es immer eine Schätzung ist, da zukünftige Bets nicht garantiert sind.
+A. Bei einem $50-Call in einen $150-Pot: 50 ÷ 0,196 = $255, minus die $200, die schon im Spiel sind, macht rund **$55**. So viel musst du am River im Schnitt zusätzlich holen, damit der Call aufgeht. Kann dein Gegner das nicht mehr bezahlen, ist es ein Fold.
 
 **Q. Was ist der Unterschied zwischen Pot Odds und Implied Odds?**
 
@@ -194,9 +194,9 @@ A. Pot Odds zählen nur das Geld, das gerade jetzt im Pot liegt, und lassen sich
 
 A. Reverse Implied Odds sind die Chips, die du verlierst, wenn du deinen Draw komplettierst, er aber immer noch zweitbeste ist – etwa einen kleinen Flush gegen einen höheren zu machen, oder das untere Ende einer Straße gegen ein größeres. Sie machen Non-Nut-Draws weniger wert, als ihre Outs vermuten lassen, du brauchst also einen besseren sofortigen Preis, um zu callen.
 
-**Q. Was sind gute Implied Odds – wie viel brauchst du?**
+**Q. Machen Implied Odds einen Gutshot spielbar?**
 
-A. Es kommt auf deinen Draw an. Flush- und Open-Ended-Straßen-Draws brauchen etwa 8–10× den Call an Stacks dahinter; Set Mining braucht etwa 15–20× (die „5%-Regel“). Je schwerer der Draw zu treffen ist, desto tiefer müssen die Stacks sein, um den Call zu rechtfertigen.
+A. Selten. Ein Gutshot trifft auf eine Karte nur in 8,7% der Fälle. Callst du damit $50 in einen $150-Pot, müsstest du am River noch rund $375 zusätzlich gewinnen – das Siebeneinhalbfache deines Calls. Das lohnt praktisch nur mit sehr tiefen Stacks, zu den Nuts und gegen einen Gegner, der wirklich zahlt.
 
 **Q. Gelten Implied Odds, wenn dein Gegner all-in ist?**
 

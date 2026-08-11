@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "Die Equity ist dein Anteil am Pot – der Prozentsatz, zu dem deine Hand gewinnt, wenn alle Karten ausgeteilt werden. Du callst, wenn deine Equity die Pot Odds schlägt, aber Position und Setzen bedeuten, dass du selten deine volle Equity behältst – und die Fold Equity lässt dich Pots gewinnen, selbst wenn deine Hand hinten liegt.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-08-10",
+  updated: "2026-08-11",
+  masterUpdated: "2026-07-18",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "🥧",
@@ -44,11 +45,11 @@ Das ist der ganze Grund, warum die Equity zählt: sie verwandelt „liege ich vo
 
 ---
 
-## Wie du deine Equity schnell schätzt
+## Wie berechnest du deine Equity am Tisch?
 
 **Beim Draw multiplizierst du deine Outs mit 4 auf dem Flop oder mit 2 auf dem Turn; preflop merkst du dir die Handvoll Matchups, die immer wieder vorkommen.** Am Tisch berechnest du fast nie die exakte Equity – du schätzt, und diese zwei Abkürzungen decken 90% der Spots ab.
 
-**Draws (die Regel der 4 und 2):** zähle deine [Outs](/de/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp"), dann multipliziere. Ein Flushdraw hat 9 Outs → ==9 × 4 = 36%== auf dem Flop (echter Wert 35%). Die exakten Zahlen für jeden Draw findest du in den [Draw-Odds](/de/blog/holdem-drawing-odds); hier die Schnellreferenz:
+**Draws (die Faustregel):** zähle deine [Outs](/de/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp"), dann multipliziere. Ein Flushdraw hat 9 Outs → ==9 × 4 = 36%== auf dem Flop (echter Wert 35%). Die exakten Zahlen für jeden Draw findest du in den [Draw-Odds](/de/blog/holdem-drawing-odds); hier die Schnellreferenz:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -114,7 +115,7 @@ Diesen Flushdraw zu betten ist ==+$52== wert gegenüber Check-Folden – und der
 
 ---
 
-## Equity Realization: Warum 40% Equity nicht heißt, dass du 40% gewinnst
+## Warum gewinnst du mit 40% Equity keine 40% der Pots?
 
 **Die Equity Realization ist, wie viel deiner rohen Equity du tatsächlich einsammelst – und es ist meist weniger als 100%, weil Position und Setzen dich kosten.** Deine „40% zu gewinnen“ nimmt an, dass du immer den Showdown erreichst; in der Realität wirst du von Draws gebettet, zum Folden gezwungen und out of position herumgeschubst. Was du behältst, ist:
 
@@ -134,7 +135,7 @@ Das ist die einzelne wichtigste Idee, die die meisten Anfänger-Guides weglassen
 
 ---
 
-## All-in-Equity: Wenn nur die rohe Equity zählt
+## Was ändert sich an deiner Equity, wenn du all-in bist?
 
 **Wenn du all-in bist, gibt es keine weiteren Entscheidungen mehr – also realisierst du 100% deiner Equity, und die rohe Equity wird zum letzten Wort.** Jede Komplikation von oben (Position, Folden, gebettet werden) verschwindet, weil kein weiteres Setzen mehr passieren kann. Was auch immer dein Win-Prozent ist, das ist genau der Anteil am Pot, den du über die Zeit einsammelst.
 
@@ -144,7 +145,7 @@ All-in ist der eine Spot im Poker, wo der Kuchen genau so geschnitten wird, wie 
 
 ---
 
-## Multiway-Equity: Warum deine große Hand gegen eine Menge schrumpft
+## Warum schrumpft deine Equity in Multiway-Pots?
 
 **Deine Equity fällt in Multiway-Pots schnell, weil derselbe 100%-Kuchen jetzt unter mehr Hände aufgeteilt wird.** Pocket Aces sind heads-up um die 85%, aber gegen drei Gegner rutscht das auf ==r:~64%==, und gegen vier auf ~56% – immer noch die beste Hand, aber nicht mehr der Crush, der es sich anfühlt. Three-way beträgt die Equity per Definition im *Schnitt* 33%, weil drei Spieler einen Pot teilen.
 
@@ -159,7 +160,7 @@ Die praktische Erkenntnis: Hände, die einen Multiway-Pot wollen, sind die, die 
 
 ---
 
-## Alles zusammen: Wie Profis Equity am Tisch wirklich nutzen
+## Wie nutzen gute Spieler ihre Equity wirklich?
 
 **Gute Spieler berechnen keine exakte Equity – sie fahren eine schnelle Vier-Schritt-Schätzung, die Realization und Fold Equity auf die rohe Zahl aufschichtet.** Hier der Denkprozess, in der Reihenfolge, in der er tatsächlich passiert:
 
@@ -181,13 +182,13 @@ An dem Abend, den ich oben erwähnte, machte ich Schritt eins und hörte auf –
 
 ## FAQ
 
-**Q. Was ist Equity im Poker?**
+**Q. Was ist der Unterschied zwischen Equity und EV?**
 
-A. Die Equity ist dein Anteil am Pot – der Prozentsatz, zu dem deine Hand gewinnt, wenn die Hand bis zum Showdown geht. Wenn der Pot $100 beträgt und du zu 60% gewinnst, ist deine Equity $60 wert. Es ist die Kernzahl, die du gegen den Preis eines Calls vergleichst, um zu entscheiden, ob du weitermachst.
+A. Die Equity ist dein Anteil an *diesem* Pot, wenn die Hand ausgespielt wird. Der EV (Erwartungswert) ist, was eine *Entscheidung* im Schnitt einbringt – er rechnet die Fold Equity, die Bet-Größen und alles ein, was auf späteren Streets noch passiert. Eine Bet kann positiven EV haben, obwohl deine Equity unter 50% liegt.
 
-**Q. Wie berechnet man Equity im Poker?**
+**Q. Brauche ich einen Equity-Rechner?**
 
-A. Bei Draws nutzt du die Regel der 4 und 2: multipliziere deine Outs mit 4 auf dem Flop (zwei Karten to come) oder mit 2 auf dem Turn. Neun Flush-Outs ≈ 36% auf dem Flop. Preflop merkst du dir gängige Matchups (AA vs KK ist 82/18). Für exakte Zahlen nutzen Spieler Equity-Rechner abseits des Tisches zum Studieren – du schätzt beim Spielen.
+A. Nicht am Tisch. Dort schätzt du mit Outs × 4 bzw. × 2 und den auswendig gelernten Preflop-Matchups; das reicht auf ein bis zwei Prozentpunkte. Equity-Rechner sind Werkzeuge fürs Studieren zwischen den Sessions – dort rechnest du ganze Ranges durch statt einzelner Hände.
 
 **Q. Was ist der Unterschied zwischen Equity und Pot Odds?**
 
@@ -209,9 +210,9 @@ A. Die Equity Realization ist, wie viel deiner rohen Equity du tatsächlich eins
 
 A. Die All-in-Equity ist schlicht dein rohes Win-Prozent, wenn kein weiteres Setzen mehr passieren kann. Weil es keine zukünftigen Entscheidungen gibt, realisierst du 100% davon, sodass die rohe Equity zum exakten Anteil am Pot wird, den du über die Zeit einsammelst. Es ist der eine Spot, wo „Equity ist gleich Pot-Anteil“ wörtlich wahr ist.
 
-**Q. Warum fällt meine Equity in Multiway-Pots?**
+**Q. Welche Hände willst du multiway spielen?**
 
-A. Weil derselbe 100%-Pot jetzt unter mehr Hände aufgeteilt wird – Pocket Aces bei ~85% heads-up fallen auf ~64% gegen drei Spieler und ~56% gegen vier. Multiway kürzt auch deine Fold Equity (alle müssen folden, nicht nur ein Spieler) und deine Realization (mehr Spieler heißt mehr Wege, ausgedrawt zu werden), also schrumpfen sowohl dein roher Anteil als auch das, was du davon behältst.
+A. Die, die die Nuts machen: Sets, suited Asse für den Nut-Flush, verbundene Karten. Große Paare wollen dagegen heads-up gespielt werden – ihre Equity fällt schnell, und in einem Feld aus vier Gegnern ist Top Pair selten noch die beste Hand. Merksatz: Je mehr Spieler im Pot, desto stärker muss deine fertige Hand sein.
 
 ---
 

@@ -60,9 +60,9 @@ Inilah bagan utamanya. Trik yang dilewatkan kebanyakan situs: ada ==dua angka be
 </div>
 
 > **Statistik yang mengejutkan semua orang**
-> High card adalah tangan lima-kartu *paling* umum (50%) tapi salah satu hasil Hold'em *paling jarang* (17%). Kenapa? Tujuh kartu memberi Anda begitu banyak kesempatan untuk berpasangan sehingga "tanpa pair hingga river" justru menjadi langka. Lebih banyak kartu, lebih banyak koneksi.
+> High card adalah tangan lima-kartu *paling* umum (50,1%), tapi di Hold'em turun ke **17,4%** — hasil terbanyak ketiga, di bawah one pair (43,8%) dan two pair (23,5%). Kenapa? Tujuh kartu memberi Anda begitu banyak kesempatan untuk berpasangan sehingga "tanpa pair hingga river" justru menjadi pengecualian. Lebih banyak kartu, lebih banyak koneksi.
 
-Perhatikan bagaimana urutannya tak pernah berubah — makin langka suatu tangan dibentuk, makin tinggi ia menang. Itulah seluruh logika di balik [peringkat tangan poker](/id/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp"): probabilitas *adalah* peringkatnya.
+Urutan peringkat mengikuti **kolom lima kartu**: makin langka suatu tangan di antara lima kartu acak, makin tinggi ia menang — tanpa kecuali, dari high card sampai royal flush. Dengan tujuh kartu, itu berlaku di mana-mana kecuali pada high card: ia lebih langka daripada one pair (43,8%) tapi tetap menjadi tangan terlemah. Itulah logika di balik [peringkat tangan poker](/id/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp"): probabilitas *adalah* peringkatnya — diukur atas lima kartu.
 
 :::quiz:::
 

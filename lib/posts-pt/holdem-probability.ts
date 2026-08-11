@@ -60,9 +60,9 @@ Aqui está a tabela mestra. O truque que a maioria dos sites pula: existem ==doi
 </div>
 
 > **A estatística que surpreende todo mundo**
-> Carta alta é a mão de cinco cartas *mais* comum (50%) mas um dos resultados *menos* comuns no Hold'em (17%). Por quê? Sete cartas te dão tantas chances de parear que "nenhum par até o river" acaba ficando raro. Mais cartas, mais conexões.
+> Carta alta é a mão de cinco cartas *mais* comum (50,1%), mas no Hold'em cai para **17,4%** — o terceiro resultado mais frequente, atrás de um par (43,8%) e dois pares (23,5%). Por quê? Sete cartas te dão tantas chances de parear que "nenhum par até o river" vira a exceção. Mais cartas, mais conexões.
 
-Repare como a ordem nunca muda — quanto mais rara uma mão é de fazer, mais alto ela ganha. Essa é toda a lógica por trás do [ranking de mãos de pôquer](/pt/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp"): a probabilidade *é* o ranking.
+A ordem do ranking segue a **coluna de cinco cartas**: quanto mais rara uma mão é entre cinco cartas aleatórias, mais alto ela ganha — sem exceção, da carta alta até o royal flush. Com sete cartas isso vale em tudo, menos na carta alta: ela é mais rara que um par (43,8%) e ainda assim continua sendo a mão mais fraca. Essa é a lógica por trás do [ranking de mãos de pôquer](/pt/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp"): a probabilidade *é* o ranking — medida sobre cinco cartas.
 
 :::quiz:::
 

@@ -59,9 +59,9 @@ Here's the master chart. The trick most sites skip: there are ==two different nu
 </div>
 
 > **The stat that surprises everyone**
-> High card is the *most* common five-card hand (50%) but one of the *least* common Hold'em results (17%). Why? Seven cards give you so many chances to pair up that "no pair by the river" actually becomes rare. More cards, more connections.
+> High card is the *most* common five-card hand (50.1%), but in Hold'em it drops to **17.4%** — third most common, behind one pair (43.8%) and two pair (23.5%). Why? Seven cards give you so many chances to pair up that "no pair by the river" becomes the exception. More cards, more connections.
 
-Notice how the order never changes — the rarer a hand is to make, the higher it beats. That's the whole logic behind the [poker hand rankings](/en/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp"): probability *is* the ranking.
+The ranking follows the **five-card column**: the rarer a hand is among five random cards, the higher it beats — with no gaps, from high card up to the royal flush. With seven cards that holds everywhere except high card, which is rarer than one pair (43.8%) and still ranks last. That's the logic behind the [poker hand rankings](/en/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp"): probability *is* the ranking — measured over five cards.
 
 :::quiz:::
 

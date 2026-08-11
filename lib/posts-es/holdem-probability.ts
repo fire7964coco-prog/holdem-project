@@ -60,9 +60,9 @@ Aquí tienes la tabla maestra. El truco que casi todas las webs se saltan: hay =
 </div>
 
 > **El dato que sorprende a todo el mundo**
-> La carta alta es la mano de cinco cartas *más* común (50%), pero uno de los resultados *menos* comunes en Hold'em (17%). ¿Por qué? Siete cartas te dan tantas oportunidades de emparejar que "no ligar pareja para el river" se vuelve raro. Más cartas, más conexiones.
+> La carta alta es la mano de cinco cartas *más* común (50.1%), pero en Hold'em cae al **17.4%**: el tercer resultado más frecuente, por detrás de la pareja (43.8%) y las dobles parejas (23.5%). ¿Por qué? Siete cartas te dan tantas oportunidades de emparejar que "no ligar pareja para el river" se vuelve la excepción. Más cartas, más conexiones.
 
-Fíjate en que el orden nunca cambia — cuanto más rara es una mano de ligar, más alto gana. Esa es toda la lógica detrás de la [jerarquía de manos de póker](/es/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp"): la probabilidad *es* la jerarquía.
+El orden de la jerarquía sigue la **columna de cinco cartas**: cuanto más rara es una mano entre cinco cartas al azar, más alto gana — sin excepciones, desde la carta alta hasta la escalera real. Con siete cartas eso se cumple en todo salvo en la carta alta: es más rara que una pareja (43.8%) y aun así sigue siendo la mano más débil. Esa es la lógica detrás de la [jerarquía de manos de póker](/es/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp"): la probabilidad *es* la jerarquía — medida sobre cinco cartas.
 
 :::quiz:::
 

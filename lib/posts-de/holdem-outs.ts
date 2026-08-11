@@ -9,12 +9,13 @@ export const POST: Post = {
   category: "odds",
   date: "2026-07-03",
   updated: "2026-08-11",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "🎯",
   image: "/images/holdem-outs-hero.webp",
   imageAlt: "Infografik zum Zählen von Outs – A♥ K♥ gegen einen Q♠ J♦ 9♥ Flop, bei dem jede Zehn die Nut-Straße vervollständigt",
-  tags: ["outs", "outs poker berechnen", "poker outs tabelle", "flushdraw outs", "straßendraw outs", "outs zu odds", "dirty outs", "regel der 2 und 4"],
+  tags: ["outs", "outs poker berechnen", "poker outs tabelle", "poker outs faustregel", "flushdraw outs", "straßendraw outs", "outs zu odds", "dirty outs"],
   content: `
 In meinem ersten Jahr am Tisch habe ich „meine Draws gespielt“, ohne sie je zu zählen. Ein Flushdraw und ein Gutshot fühlten sich ungefähr gleich an – beides waren „Karten, die kommen könnten“ – also callte ich bei beiden gleich und wunderte mich, warum ich ständig verlor. Die Lösung war kein Strategie-Kurs. Es war eine Fünf-Minuten-Gewohnheit: ==stoppen und tatsächlich die Karten zählen, die mich retten.==
 
@@ -32,9 +33,9 @@ Diese Gewohnheit heißt **Outs** zählen – [Pokers echte Antwort auf „Karten
 
 ---
 
-## Was sind Outs im Poker?
+## Was sind Outs beim Pokern?
 
-**Ein Out ist jede Karte, die noch im Deck steckt und deine Hand in einen wahrscheinlichen Gewinner verwandelt.** Wenn du einen Flushdraw hältst, ist jede verbleibende Karte deiner Farbe ein Out – fange eine und du hast einen Flush.
+**Ein Out ist jede Karte, die noch im Deck steckt und deine Hand in einen wahrscheinlichen Gewinner verwandelt.** Wenn du einen Flushdraw hältst, ist jede verbleibende Karte deiner Farbe ein Out – fange eine und du hast einen Flush. Ein Flushdraw sind neun Outs, ein beidseitig offener Straßendraw acht. Diese Zahl ist der Ausgangspunkt jeder Odds-Entscheidung am Tisch.
 
 Das Wort „wahrscheinlich“ leistet dort leise Arbeit. Ein echtes Out muss die Hand tatsächlich *gewinnen*, nicht bloß deine Karten verbessern. Deine Zehn zu paaren, wenn schon ein Flush auf dem Board liegt, ist kein Out – du hast dich verbessert, verlierst aber weiterhin. Outs zählen zu lernen heißt in Wahrheit, die Karten zu zählen, die gewinnen, und die zu ignorieren, die nur hilfreich *aussehen*.
 
@@ -42,7 +43,9 @@ Alles Nachgelagerte – deine Equity, deine [Pot Odds](/de/blog/holdem-pot-odds)
 
 ---
 
-## Wie du deine Outs zählst (Schritt für Schritt)
+## Wie zählst du deine Outs? Schritt für Schritt
+
+Drei Schritte, immer dieselben: Benenne den Draw, den du jagst. Zähle die Karten, die ihn vervollständigen – 13 pro Farbe, 4 pro Rang, abzüglich der Karten, die du schon siehst. Streiche dann jedes Out, das dich zwar verbessert, aber trotzdem verlieren lässt. Was übrig bleibt, ist deine Zahl.
 
 ![Ein Spieler hält Pik-Ass und Pik-König und studiert einen niedrigen Drei-Karten-Flop auf grünem Filz, während er vor dem Handeln Overcard-Outs zählt](/images/holdem-outs-counting.webp "A-K auf einem niedrigen Flop ist ein Musterbeispiel zum Zählen – sechs Overcard-Outs, plus die Backdoors")
 
@@ -86,13 +89,15 @@ Die zwei Combo-Draws ganz oben sind die Stelle, an der Spieler die Rechnung verh
 
 ---
 
-## Outs zu Odds: Die Umrechnungstabelle
+## Wie viel Prozent ist ein Draw wert? Outs in Odds umrechnen
 
-Outs zählen ist erst nützlich, sobald du sie in einen Prozentwert verwandelst, den du mit dem gebotenen Preis vergleichen kannst. Hier ist die Master-Tabelle – die Odds, bis zum River zu treffen, plus die Ein-Karten-Odds für die nächste Karte nach dem Flop:
+Neun Outs sind bis zum River **35,0%** wert, acht Outs 31,5%, vier Outs 16,5%. Zählst du nur die nächste Karte, bleibt gut die Hälfte davon: neun Outs werden zu 19,1% für den Turn. Welche der beiden Spalten gilt, hängt allein daran, ob nach diesem Call noch gesetzt wird.
+
+Hier ist die Master-Tabelle – die Odds, bis zum River zu treffen, plus die Ein-Karten-Odds für die nächste Karte nach dem Flop:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Outs | Nur Turn (1 Karte) | Bis zum River (2 Karten) | River-Odds |
+| Outs | Nur Turn (1 Karte, vom Flop) | Bis zum River (2 Karten) | River-Odds |
 |:---|:---:|:---:|:---:|
 | 2 | 4,3% | 8,4% | 11:1 |
 | 4 | 8,5% | 16,5% | 5:1 |
@@ -110,7 +115,9 @@ Beachte das 15-Outs-Monster: mit zwei kommenden Karten ist es tatsächlich ein *
 
 ---
 
-## Die Regel der 4 und 2: Outs → Odds im Kopf
+## Outs im Kopf umrechnen: die Faustregel
+
+Die **Faustregel** (auch „Regel der 2 und 4“) macht aus deiner Out-Zahl in einer Sekunde einen Prozentwert: am Flop Outs × **4**, am Turn Outs × **2**. Bis acht Outs liegt sie weniger als einen Punkt daneben, darüber überschätzt sie – und genau das ist der Grund, warum große Draws sich am Tisch besser anfühlen, als sie sind.
 
 Du kannst diese Tabelle nicht mit an den Tisch nehmen, also nutze die Abkürzung, auf die sich jeder Spieler verlässt:
 
@@ -138,7 +145,9 @@ Die saubere Korrektur für große Draws: bei **mehr als 8 Outs am Flop** multipl
 
 ---
 
-## Combo-Draws: Warum 9 + 8 nicht 17 ist
+## Warum sind Flushdraw plus Straßendraw nicht 17 Outs?
+
+Weil zwei Karten Doppeldienst leisten. Ein Flushdraw hat neun Outs, ein beidseitig offener Straßendraw acht – aber zwei der Straßenkarten sind selbst von deiner Farbe und stecken schon in den neun. Gezählt wird jede Karte nur einmal: **15 Outs**, nicht 17. Bei Flush plus Gutshot ist es dieselbe Rechnung mit einer geteilten Karte: 12 statt 13.
 
 Die großen Draws bringen Leute ins Straucheln, weil du die zwei Out-Zahlen nicht einfach addieren kannst – manche Karten leisten Doppeldienst, und sie zweimal zu zählen bläht deine Equity auf.
 
@@ -152,11 +161,13 @@ Dieselbe Logik bei einem **Flush + Gutshot**: 9 Flush-Outs + 4 Gutshot-Karten, a
 
 ---
 
-## Dirty Outs: Die Karten, die nur wie Gewinne aussehen
+## Was sind dirty Outs – und wie erkennst du sie?
+
+Ein **dirty Out** ist eine Karte, die deine Hand vervollständigt und dich trotzdem verlieren lässt: der Flush, der nicht der Nut-Flush ist; die Flushkarte auf einem bereits gepaarten Board; die Overcard gegen einen Gegner, dessen Action nach einem Set schreit. Erkennen tust du sie am Board und an der Aggression – und danach zählst du deine Outs nach unten, nicht nach oben.
 
 ![Infografik eines gepaarten 10♠ 8♥ 4♠ 4♣ 6♦ Boards, das saubere Outs von dirty Outs trennt](/images/holdem-outs-dirty-outs.webp "Auf einem gepaarten Board sind manche deiner Outs dirty – der Flush zu treffen kann trotzdem ein Full House bezahlen")
 
-Das ist der Abschnitt, den die meisten Guides überspringen, und der, der tatsächlich Geld spart. Ein **dirty Out** (oder „verschmutztes“ Out) ist eine Karte, die deine Hand vervollständigt, aber trotzdem verlieren kann – sie zum vollen Wert zu zählen überschätzt deine Equity. Gewinnspieler zählen rohe Outs, dann *rabattieren* sie die dirty Outs, bevor sie zur Regel der 4 und 2 greifen.
+Das ist der Abschnitt, den die meisten Guides überspringen, und der, der tatsächlich Geld spart. Ein dirty Out zum vollen Wert zu zählen überschätzt deine Equity – Gewinnspieler zählen erst die rohen Outs und *rabattieren* dann, bevor sie zur Faustregel greifen.
 
 Drei Situationen, für die du dein Auge trainierst:
 
@@ -177,13 +188,13 @@ Du kennst den exakten Rabatt selten, und das ist okay. Der Zug ist gerichtet: we
 
 ## FAQ
 
-**Q. Was sind Outs im Poker?**
+**Q. Wie viele Outs braucht man, um einen Call zu rechtfertigen?**
 
-A. Outs sind die Karten, die im Deck übrig sind und deine Hand in einen wahrscheinlichen Gewinner verbessern. Ein Flushdraw hat 9 Outs (die 9 ungesehenen Karten deiner Farbe); ein beidseitig offener Straßendraw hat 8. Du zählst sie, um deine Chance zu treffen auszurechnen und ob ein Call profitabel ist.
+A. Das hängt am Preis, nicht an einer festen Zahl. Gegen eine Half-Pot-Bet (25% nötig) reichen mit zwei kommenden Karten schon sieben Outs (27,8%); zahlst du nur für die nächste Karte, brauchst du dafür zwölf (25,5%). Genau deshalb zählst du erst die Outs und schaust dann auf die [Pot Odds](/de/blog/holdem-pot-odds).
 
-**Q. Wie zählt man Outs im Poker?**
+**Q. Zählen Backdoor-Draws als Outs?**
 
-A. Benenne die Hand, die du jagst, zähle, wie viele Karten sie vervollständigen (13 von jeder Farbe, 4 von jedem Rang), ziehe die ab, die du bereits in deiner Hand und auf dem Board siehst, und streiche dann jedes „dirty“ Out, das trotzdem verlieren würde. Ein Flushdraw sind 13 − 4 = 9.
+A. Nur als Bruchteil. Drei Karten einer Farbe am Flop – ein Backdoor-Flushdraw – kommen in 4,2% der Fälle an, das entspricht etwa einem einzigen Out. Rechne sie als kleinen Bonus mit, nie als vollwertigen Draw.
 
 **Q. Wie viele Outs hat ein Flushdraw?**
 
@@ -193,17 +204,13 @@ A. Neun. Es gibt 13 Karten jeder Farbe; mit zwei in deiner Hand und zwei auf dem
 
 A. Acht – vier Karten an jedem Ende füllen die Straße. Ein Gutshot- (Inside-) Straßendraw hat nur 4 Outs, weil nur ein Rang die Lücke füllt. Ein Double Gutshot hat ebenfalls 8, genauso wie ein beidseitig offener.
 
-**Q. Was ist die Regel der 4 und 2?**
+**Q. Rechne ich meine Outs mit ×4 oder mit ×2?**
 
-A. Eine Abkürzung, um Outs in einen Prozentwert zu verwandeln: am Flop multipliziere die Outs mit 4 für deine Chance, bis zum River zu treffen; am Turn multipliziere mit 2 für die River-Karte. Neun Flush-Outs ≈ 36% am Flop, 18% am Turn. Nutze ×4 nur, wenn du beide Karten ohne weiteres Setzen siehst.
+A. Mit ×4 nur dann, wenn du beide Karten ohne weiteres Setzen siehst – praktisch also nur all-in oder wenn der Turn durchgecheckt wird. Steht eine Bet vor dir, kaufst du nur die nächste Karte: ×2. Wer am Turn mit der ×4-Zahl argumentiert, redet sich in verlierende Calls.
 
-**Q. Was sind dirty oder verschmutzte Outs?**
+**Q. Wie viele Outs hat ein Gutshot?**
 
-A. Karten, die deine Hand vervollständigen, aber trotzdem verlieren können – eine Flushkarte, wenn ein höherer Flush möglich ist, eine Straßenkarte, die auch jemandem eine höhere Straße macht, oder Overcards gegen ein wahrscheinliches Set. Rabattiere (oder zähle) dirty Outs nicht, bevor du in Odds umrechnest, sonst überschätzt du deine Equity.
-
-**Q. Wie viele Outs sind ein Flushdraw plus ein Straßendraw?**
-
-A. 15, nicht 17. Ein Flushdraw sind 9 Outs und eine beidseitig offene Straße 8, aber zwei der Straßenkarten sind auch deine Farbe und schon im Flush gezählt – also ziehst du die Überschneidung ab. Fünfzehn Outs ist ein Favorit, bis zum River zu treffen (etwa 54%).
+A. Vier – nur ein einziger Rang füllt die Lücke. Das sind 8,5% auf die nächste Karte und 16,5% bis zum River. Ein Double Gutshot (zwei Lücken, die beide zur Straße führen) hat dagegen acht Outs und ist so stark wie ein beidseitig offener Draw.
 
 **Q. Zählst du die Karten deines Gegners beim Outs zählen mit?**
 
