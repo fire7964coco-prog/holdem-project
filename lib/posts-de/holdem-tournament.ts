@@ -332,7 +332,7 @@ A. In einem Rebuy-Turnier kannst du die Startgebühr nach dem Busten erneut zahl
 
 **Q. Ist es legal, ein Poker-Turnier zu Hause zu veranstalten?**
 
-A. Das hängt von deiner Jurisdiktion ab. Vielerorts sind private soziale Home Games legal, solange der Gastgeber kein Rake, keinen Schnitt von der Startgebühr und keinen Gewinn über das Mitspielen hinaus nimmt – alles Geld geht zurück an die Spieler. Eine Hausgebühr zu verlangen, einen Prozentsatz des Prize Pools zu nehmen oder öffentlich zu werben, macht typischerweise aus einem Home Game illegales Glücksspiel. Die Gesetze variieren stark von Land zu Land und von Bundesland zu Bundesland, also prüf deine lokalen Vorschriften, bevor du veranstaltest.
+A. Das hängt von deiner Jurisdiktion ab. Es gibt keine Faustregel, die das klärt – die Grenze steht im lokalen Gesetz, und Guides, die dir einen Einzeiler als Test anbieten, raten für dich. Die Gesetze variieren stark von Land zu Land und von Bundesland zu Bundesland, also prüf deine lokalen Vorschriften, bevor du veranstaltest.
 
 **Q. Was bedeutet ITM im Poker?**
 

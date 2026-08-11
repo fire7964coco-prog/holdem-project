@@ -336,7 +336,7 @@ A. The venue takes a fee on top of each buy-in — the "+$9" part of a "$100+$9"
 
 **Q. Is it legal to host a poker tournament at home?**
 
-A. It depends on your jurisdiction. In many places, private social home games are legal as long as the host takes no rake, entry fee cut, or profit beyond playing — all money goes back to the players. Charging a house fee, taking a percentage of the prize pool, or advertising publicly is what typically turns a home game into illegal gambling. Laws vary widely by country and by state, so check your local regulations before hosting.
+A. It depends on your jurisdiction. There's no rule of thumb that settles it — the line sits in local statute, and guides that give you a one-line test are guessing on your behalf. Laws vary widely by country and by state, so check your local regulations before hosting.
 
 **Q. What does ITM mean in poker?**
 

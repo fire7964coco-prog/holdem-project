@@ -52,7 +52,7 @@ There isn't just one kind of rake. How the house collects its money depends on t
 | Type | How it's taken | Typical amount | Where you'll see it |
 |:---|:---|:---:|:---|
 | **Pot rake (scaled)** | % of each pot, up to a cap | 2.5–10%, capped $1–$6 | Most low/mid cash games, online |
-| **Time charge** | Flat fee per player, every 30 min | ~$10–$15 per hour | High-stakes live ($10/$20+) |
+| **Time charge** | Flat fee per player, every 30 min | ~$10–$15 per hour | High-stakes live ($10/$20+), and every stake where pot rake isn't an option |
 | **Dead drop** | Button pays a set rake each hand | Fixed per hand | Some live rooms |
 | **Tournament fee** | Added to the buy-in up front | ~5–20% of buy-in | Every tournament |
 
@@ -161,11 +161,11 @@ A. Rakeback returns a percentage of the rake you personally pay — often 20–4
 
 **Q. How can you pay less rake in poker?**
 
-A. You can't escape rake entirely in a raked game, but you can shrink it. Get the best rakeback deal you can, and choose rooms with player-friendly caps. Moving up in stakes shrinks rake too, since a fixed cap is a smaller share of each pot — but only take that step once your bankroll covers the swings *and* you still hold an edge over the tougher field, or the players will take far more than the rake ever did. Playing fewer, bigger pots rather than a flood of small capped ones, avoiding very short-handed tables — where you play far more hands per hour and post blinds far more often, so you're in many more raked pots — and preferring high-stakes time-charge games all lower your effective rake. Home games with no rake at all are the cheapest poker there is.
+A. You can't escape rake entirely in a raked game, but you can shrink it. Get the best rakeback deal you can, and choose rooms with player-friendly caps. Moving up in stakes shrinks rake too, since a fixed cap is a smaller share of each pot — but only take that step once your bankroll covers the swings *and* you still hold an edge over the tougher field, or the players will take far more than the rake ever did. Playing fewer, bigger pots rather than a flood of small capped ones, avoiding very short-handed tables — where you play far more hands per hour and post blinds far more often, so you're in many more raked pots — and preferring high-stakes time-charge games all lower your effective rake. On pure cost, a home game with no rake is the cheapest poker there is — nothing is skimmed from the pot.
 
 **Q. Is taking a rake illegal? Why is taking a rake in poker illegal?**
 
-A. Taking a rake is perfectly legal for a licensed cardroom, casino, or regulated online site — charging a fee to host the game is their entire business model. What's illegal in most U.S. states (and many other places) is a *private* or home-game host taking a rake for personal profit: skimming a cut turns a friendly game into running an unlicensed gambling business, which is what actually crosses the line — not the poker itself. It's why legal home games split costs but never rake the pot, and it's the exact issue behind the film *Molly's Game*, where the host began taking a percentage and lost the protection an amateur game would have had.
+A. Charging a fee to host the game is the entire business model of a licensed cardroom, casino, or regulated online site — how that's regulated varies by jurisdiction. What's illegal in most U.S. states (and many other places) is a *private* or home-game host taking a rake for personal profit: skimming a cut turns a friendly game into running an unlicensed gambling business, which is what actually crosses the line — not the poker itself. It's why legal home games split costs but never rake the pot, and it's the exact issue behind the film *Molly's Game*, where the host began taking a percentage and lost the protection an amateur game would have had.
 
 **Q. Do poker tournaments have rake?**
 

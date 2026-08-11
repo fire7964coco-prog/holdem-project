@@ -52,7 +52,7 @@ Não existe só um tipo de rake. Como a casa recolhe seu dinheiro depende dos st
 | Tipo | Como é tirado | Valor típico | Onde você vai ver |
 |:---|:---|:---:|:---|
 | **Rake do pote (escalonado)** | % de cada pote, até um cap | 2,5–10%, cap $1–$6 | Maioria dos cash games low/mid, online |
-| **Time charge** | Taxa fixa por jogador, a cada 30 min | ~$10–$15 por hora | High-stakes ao vivo ($10/$20+) |
+| **Time charge** | Taxa fixa por jogador, a cada 30 min | ~$10–$15 por hora | High-stakes ao vivo ($10/$20+), e qualquer stake onde o rake do pote não seja possível |
 | **Dead drop** | O botão paga um rake fixo por mão | Fixo por mão | Algumas salas ao vivo |
 | **Taxa de torneio** | Somada ao buy-in lá no começo | ~5–20% do buy-in | Todo torneio |
 

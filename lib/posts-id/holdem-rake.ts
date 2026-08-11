@@ -52,7 +52,7 @@ Rake bukan hanya satu jenis. Bagaimana house mengumpulkan uangnya tergantung pad
 | Jenis | Cara diambil | Jumlah umum | Di mana Anda melihatnya |
 |:---|:---|:---:|:---|
 | **Pot rake (berskala)** | % dari tiap pot, hingga cap | 2,5–10%, cap $1–$6 | Sebagian besar cash game low/mid, online |
-| **Time charge** | Biaya rata per pemain, tiap 30 mnt | ~$10–$15 per jam | Live stake tinggi ($10/$20+) |
+| **Time charge** | Biaya rata per pemain, tiap 30 mnt | ~$10–$15 per jam | Live stake tinggi ($10/$20+), dan semua stake di mana pot rake tidak memungkinkan |
 | **Dead drop** | Button membayar rake tetap tiap tangan | Tetap per tangan | Beberapa room live |
 | **Biaya turnamen** | Ditambahkan ke buy-in di depan | ~5–20% dari buy-in | Setiap turnamen |
 

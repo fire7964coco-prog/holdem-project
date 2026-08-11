@@ -332,7 +332,7 @@ A. Di turnamen rebuy Anda bisa membayar biaya masuk lagi setelah bust (atau kada
 
 **Q. Apakah legal menyelenggarakan turnamen poker di rumah?**
 
-A. Tergantung yurisdiksi Anda. Di banyak tempat, permainan rumahan sosial pribadi legal selama tuan rumah tidak mengambil rake, potongan biaya masuk, atau keuntungan di luar bermain — semua uang kembali ke para pemain. Mengenakan fee rumah, mengambil persentase dari prize pool, atau mengiklankan secara publik adalah yang biasanya mengubah permainan rumahan menjadi perjudian ilegal. Hukum sangat bervariasi antarnegara dan antarwilayah, jadi cek regulasi lokal Anda sebelum menyelenggarakan.
+A. Tergantung yurisdiksi Anda. Tak ada patokan praktis yang menyelesaikan ini — batasnya ada di undang-undang setempat, dan panduan yang menawarkan tes satu kalimat sedang menebak untuk Anda. Hukum sangat bervariasi antarnegara dan antarwilayah, jadi cek regulasi lokal Anda sebelum menyelenggarakan.
 
 **Q. Apa arti ITM di poker?**
 

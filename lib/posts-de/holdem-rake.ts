@@ -52,7 +52,7 @@ Es gibt nicht nur eine Art Rake. Wie das Haus sein Geld kassiert, hängt von den
 | Art | Wie sie genommen wird | Typischer Betrag | Wo du sie siehst |
 |:---|:---|:---:|:---|
 | **Pot Rake (skaliert)** | % jedes Pots, bis zu einem Cap | 2,5–10%, gecappt $1–$6 | Die meisten Low-/Mid-Cashgames, online |
-| **Time Charge** | Pauschalgebühr pro Spieler, alle 30 Min. | ~$10–$15 pro Stunde | High-Stakes live ($10/$20+) |
+| **Time Charge** | Pauschalgebühr pro Spieler, alle 30 Min. | ~$10–$15 pro Stunde | High-Stakes live ($10/$20+) – und jede Stake, wo Pot-Rake nicht möglich ist |
 | **Dead Drop** | Der Button zahlt jede Hand einen festen Rake | Fix pro Hand | Manche Live-Räume |
 | **Turniergebühr** | Vorab aufs Buy-in aufgeschlagen | ~5–20% des Buy-ins | Jedes Turnier |
 

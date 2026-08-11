@@ -332,7 +332,7 @@ A. Num torneio de rebuy você pode pagar a taxa de inscrição de novo depois de
 
 **Q. É legal organizar um torneio de pôquer em casa?**
 
-A. Depende da sua jurisdição. Em muitos lugares, jogos sociais privados em casa são legais desde que o anfitrião não pegue rake, corte da taxa de inscrição ou lucro além de jogar — todo o dinheiro volta pros jogadores. Cobrar uma taxa da casa, tirar uma porcentagem do prize pool ou anunciar publicamente é o que normalmente transforma um jogo caseiro em jogatina ilegal. As leis variam muito por país e por estado, então confira as regulamentações locais antes de organizar.
+A. Depende da sua jurisdição. Não existe regra de bolso que resolva isso — a linha está na legislação local, e guias que te entregam um teste de uma frase estão chutando por você. As leis variam muito por país e por estado, então confira as regulamentações locais antes de organizar.
 
 **Q. O que significa ITM no pôquer?**
 

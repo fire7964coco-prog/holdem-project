@@ -53,7 +53,7 @@ No existe un único tipo de rake. Cómo cobra la casa su dinero depende de los l
 | Tipo | Cómo se cobra | Cantidad típica | Dónde lo verás |
 |:---|:---|:---:|:---|
 | **Rake por bote (escalado)** | % de cada bote, hasta un tope | 2.5–10%, con tope de $1–$6 | La mayoría de cash de límites bajos/medios, online |
-| **Rake por tiempo** | Tarifa fija por jugador, cada 30 min | ~$10–$15 por hora | Límites altos en vivo ($10/$20+) |
+| **Rake por tiempo** | Tarifa fija por jugador, cada 30 min | ~$10–$15 por hora | Límites altos en vivo ($10/$20+), y cualquier límite donde el rake por bote no sea posible |
 | **Dead drop** | El botón paga un rake fijo cada mano | Fijo por mano | Algunas salas en vivo |
 | **Comisión de torneo** | Añadida al buy-in por adelantado | ~5–20% del buy-in | Todos los torneos |
 
@@ -174,11 +174,11 @@ A. Varía según la sala, los límites y el formato, así que siempre conviene m
 
 **Q. ¿Cómo puedes pagar menos rake en póker?**
 
-A. No puedes escapar del rake por completo en una partida rakeada, pero sí reducirlo. Consigue el mejor acuerdo de rakeback que puedas y elige salas con topes amables para el jugador. Subir de límites también rebaja el rake, porque un tope fijo es una parte menor de cada bote — pero da ese paso solo cuando tu bankroll aguante las rachas *y* sigas teniendo ventaja sobre un campo más duro; si no, los rivales te quitarán mucho más de lo que te quitaba el rake. Jugar menos botes pero más grandes en lugar de una avalancha de botes pequeños topados, evitar las mesas muy cortas — donde juegas muchas más manos por hora y pagas ciegas mucho más a menudo, así que entras en muchos más botes rakeados — y preferir las partidas de límites altos con rake por tiempo también rebajan tu rake efectivo. Las partidas caseras sin rake son el póker más barato que existe.
+A. No puedes escapar del rake por completo en una partida rakeada, pero sí reducirlo. Consigue el mejor acuerdo de rakeback que puedas y elige salas con topes amables para el jugador. Subir de límites también rebaja el rake, porque un tope fijo es una parte menor de cada bote — pero da ese paso solo cuando tu bankroll aguante las rachas *y* sigas teniendo ventaja sobre un campo más duro; si no, los rivales te quitarán mucho más de lo que te quitaba el rake. Jugar menos botes pero más grandes en lugar de una avalancha de botes pequeños topados, evitar las mesas muy cortas — donde juegas muchas más manos por hora y pagas ciegas mucho más a menudo, así que entras en muchos más botes rakeados — y preferir las partidas de límites altos con rake por tiempo también rebajan tu rake efectivo. En puro coste, una partida casera sin rake es el póker más barato que existe: no se recorta nada del bote.
 
 **Q. ¿Es ilegal cobrar rake?**
 
-A. Cobrar rake es perfectamente legal para una sala, casino o sitio online con licencia — cobrar una comisión por montar la partida es todo su modelo de negocio. Lo que es ilegal en la mayoría de sitios es que el anfitrión de una partida *privada* o casera se lleve un rake para lucro personal: quedarse una tajada convierte una partida entre amigos en gestionar un negocio de juego sin licencia, y eso es lo que cruza la línea — no el póker en sí. Por eso las partidas caseras legales reparten los gastos pero nunca rakean el bote.
+A. Cobrar una comisión por montar la partida es todo el modelo de negocio de una sala, casino o sitio online con licencia — cómo se regula eso varía según la jurisdicción. Lo que es ilegal en la mayoría de sitios es que el anfitrión de una partida *privada* o casera se lleve un rake para lucro personal: quedarse una tajada convierte una partida entre amigos en gestionar un negocio de juego sin licencia, y eso es lo que cruza la línea — no el póker en sí. Por eso las partidas caseras legales reparten los gastos pero nunca rakean el bote.
 
 **Q. ¿Los torneos de póker tienen rake?**
 

@@ -337,7 +337,7 @@ A. En un torneo con recompra puedes volver a pagar la entrada tras bustear (o a 
 
 **Q. ¿Es legal organizar un torneo de póker en casa?**
 
-A. Depende de tu jurisdicción. En muchos lugares, las partidas privadas y sociales en casa son legales siempre que el anfitrión no se lleve rake, un corte de la entrada ni beneficio más allá de jugar — todo el dinero vuelve a los jugadores. Cobrar una comisión de la casa, quedarse un porcentaje de la bolsa de premios o anunciarlo públicamente es lo que normalmente convierte una partida casera en juego ilegal. Las leyes varían mucho según el país y la región, así que revisa la normativa local antes de organizarla.
+A. Depende de tu jurisdicción. No hay una regla general que lo resuelva: la línea está en la ley local, y las guías que te dan un test de una frase están adivinando por ti. Las leyes varían mucho según el país y la región, así que revisa la normativa local antes de organizarla.
 
 **Q. ¿Qué significa ITM en póker?**
 
