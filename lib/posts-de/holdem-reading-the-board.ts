@@ -143,7 +143,7 @@ Ein Flush braucht 5 Karten einer Farbe unter deinen 7. Das Board sagt dir sofort
 
 ==r:Der klassische Fehlschluss: A♠ 4♦ auf einem Board von 2♠ 5♠ 9♥ J♥ 10♠ zu halten und einen Flush anzusagen.== Zähl nach: das Board hat drei Pik (2♠ 5♠ 10♠), dein Ass macht vier. ==Vier ist nicht fünf.== Deine tatsächliche Hand ist Ace High – A-J-10-9-5 – und es fühlt sich schrecklich an, das zu erfahren, nachdem du eine River-Bet gecallt hast.
 
-Die umgekehrte Falle zählt genauso: an einem 4-Flush-Board hältst du NULL dieser Farbe, aber jeder Gegner mit einer einzigen Karte davon schlägt dich. Und wenn du einen fertigen Flush gegen eine fertige Straße abwägst – [Flush schlägt Straße, immer](/de/blog/holdem-flush-vs-straight).
+Die umgekehrte Falle zählt genauso: an einem 4-Flush-Board hältst du NULL dieser Farbe, und – solange das Board ungepaart ist – schlägt dich jeder Gegner mit einer einzigen Karte davon. Und wenn du einen fertigen Flush gegen eine fertige Straße abwägst – [Flush schlägt Straße, immer](/de/blog/holdem-flush-vs-straight).
 
 ---
 

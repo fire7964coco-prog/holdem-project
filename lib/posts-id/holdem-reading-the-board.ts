@@ -143,7 +143,7 @@ Flush butuh 5 kartu satu jenis di antara 7 kartu Anda. Board langsung memberi ta
 
 ==r:Salah baca klasik: memegang A♠ 4♦ di board 2♠ 5♠ 9♥ J♥ 10♠ lalu menyebut flush.== Hitung: board punya tiga sekop (2♠ 5♠ 10♠), As Anda menjadikannya empat. ==Empat bukan lima.== Tangan Anda yang sebenarnya adalah ace high — A-J-10-9-5 — dan rasanya menyakitkan mengetahuinya setelah Anda call taruhan river.
 
-Jebakan sebaliknya sama pentingnya: di board 4-flush Anda memegang NOL kartu jenis itu, tapi lawan mana pun dengan satu kartu jenis itu mengalahkan Anda. Dan jika Anda menimbang flush jadi melawan straight jadi, [flush mengalahkan straight, selalu](/id/blog/holdem-flush-vs-straight).
+Jebakan sebaliknya sama pentingnya: di board 4-flush Anda memegang NOL kartu jenis itu, dan — selama board tidak berpasangan — lawan mana pun dengan satu kartu jenis itu mengalahkan Anda. Dan jika Anda menimbang flush jadi melawan straight jadi, [flush mengalahkan straight, selalu](/id/blog/holdem-flush-vs-straight).
 
 ---
 

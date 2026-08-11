@@ -143,7 +143,7 @@ Um flush precisa de 5 cartas de um mesmo naipe entre suas 7. A mesa te diz na ho
 
 ==r:A leitura errada clássica: ter A♠ 4♦ numa mesa 2♠ 5♠ 9♥ J♥ 10♠ e anunciar flush.== Conte: a mesa tem três espadas (2♠ 5♠ 10♠), seu ás faz quatro. ==Quatro não é cinco.== Sua mão de verdade é ás alto — A-J-10-9-5 — e é péssimo descobrir isso depois de ter pago uma aposta no river.
 
-A armadilha inversa importa tanto quanto: numa mesa com 4 do mesmo naipe você tem ZERO desse naipe, mas qualquer adversário com uma única carta dele te ganha. E se você está pesando um flush feito contra uma sequência feita, [flush ganha de sequência, sempre](/pt/blog/holdem-flush-vs-straight).
+A armadilha inversa importa tanto quanto: numa mesa com 4 do mesmo naipe você tem ZERO desse naipe, e — desde que a mesa não esteja pareada — qualquer adversário com uma única carta dele te ganha. E se você está pesando um flush feito contra uma sequência feita, [flush ganha de sequência, sempre](/pt/blog/holdem-flush-vs-straight).
 
 ---
 

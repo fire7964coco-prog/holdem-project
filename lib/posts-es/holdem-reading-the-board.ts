@@ -143,7 +143,7 @@ Un color necesita 5 cartas de un mismo palo entre tus 7. La mesa te dice al inst
 
 ==r:La lectura errónea clásica: tener A♠ 4♦ en una mesa de 2♠ 5♠ 9♥ J♥ 10♠ y cantar color.== Cuéntalo: la mesa tiene tres picas (2♠ 5♠ 10♠), tu As hace cuatro. ==Cuatro no son cinco.== Tu mano real es As alto — A-J-10-9-5 — y duele descubrirlo después de haber pagado una apuesta en el river.
 
-La trampa inversa importa igual: en una mesa con 4 del mismo palo tú tienes CERO de ese palo, pero cualquier rival con una sola carta de él te gana. Y si estás sopesando un color hecho contra una escalera hecha, [el color siempre gana a la escalera](/es/blog/holdem-flush-vs-straight).
+La trampa inversa importa igual: en una mesa con 4 del mismo palo tú tienes CERO de ese palo, y — mientras la mesa no esté emparejada — cualquier rival con una sola carta de él te gana. Y si estás sopesando un color hecho contra una escalera hecha, [el color siempre gana a la escalera](/es/blog/holdem-flush-vs-straight).
 
 ---
 

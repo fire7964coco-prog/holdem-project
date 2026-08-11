@@ -142,7 +142,7 @@ A flush needs 5 cards of one suit among your 7. The board tells you instantly wh
 
 ==r:The classic misread: holding A♠ 4♦ on a board of 2♠ 5♠ 9♥ J♥ 10♠ and announcing a flush.== Count it: the board has three spades (2♠ 5♠ 10♠), your ace makes four. ==Four is not five.== Your actual hand is ace high — A-J-10-9-5 — and it feels terrible to learn that after you've called a river bet.
 
-The reverse trap matters just as much: on a 4-flush board you hold ZERO of that suit, but any opponent with a single card of it has you beat. And if you're weighing a made flush against a made straight, [flush beats straight, always](/en/blog/holdem-flush-vs-straight).
+The reverse trap matters just as much: on a 4-flush board you hold ZERO of that suit, and — as long as the board isn't paired — any opponent with a single card of it has you beat. And if you're weighing a made flush against a made straight, [flush beats straight, always](/en/blog/holdem-flush-vs-straight).
 
 ---
 
