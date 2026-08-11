@@ -3,6 +3,100 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-08-11 (17) — **de 경화 Session 6 (Turniere 9편) — 마지막 클러스터 · `d120c05`**
+
+- **대상 9편**: `holdem-tournament`(필라) · `holdem-tournament-vs-cash-game` · `holdem-icm` ·
+  `holdem-bubble` · `holdem-short-stack` + 라이브이벤트 4편(`apt-incheon` `ept-barcelona`
+  `wpt-australia` `korea-poker-marathon`)
+- **질문형 H2**: 착수 시 **16%**(119개 중 19개) → **76~92%**(9편 전부 70% 초과).
+  직답 `> **Kurze Antwort**` **4개 → 47개**
+- **게이트**: `check:de-style --cluster=Turniere` 🔴 **0건** · `audit:hard --locale=de` 42/42 🔴 **0건** ·
+  `check:faq-schema` 455/455 · `check:hreflang` 0건 · 빌드 **69 blog + 457 intl 불변**
+- **미러 드리프트 de: 🔴 4 → 3** (apt-incheon 닫힘)
+
+### ★ 이름표 유형 — 네 번째 반복이고 이번에도 최대 ROI였다
+
+필라가 「**Poker-Turnier**」 하이픈형을 **23회**, 「Pokerturnier」를 **0회** 쓰고 있었다.
+- 라쿠 실측(Germany/German, 2026-08-11): **`pokerturnier` 720/월**(CPC $5.63·competition 7) ·
+  `pokerturniere` 110 · `pokerturnier in der nähe` 140 · `poker turnier deutschland` 170 ·
+  `poker turnier heute` 140 · `pokerturniere deutschland 2026` 70 · `poker kalender 2026` 90
+- **de.wikipedia 표제어 자체가 「Pokerturnier」**(붙여쓰기)다 — SERP가 표기를 확정해 준다
+- ⚠ **바로 `poker turnier`(띄움)는 볼륨 API가 `pokerturnier`로 정규화해 버린다** — 두 표기의
+  우열은 볼륨표로 안 갈린다. **자동완성·SERP 제목·위키 표제어로 판정해야 한다**
+- tvc는 별개 발견: 독일 SERP 상위 3곳(GGPoker·sport1·pokerfirma)이 전부 「**Turnier oder Cashgame?**」
+  어순이다 → seoTitle/title/H2를 그 어순으로. **훅은 유지**(§17)
+
+### 🔴 필라의 진짜 결함은 H2가 아니라 «독일어로 쓴 미국 가이드»였다
+
+`holdem-tournament` de판의 등록 안내가 **Bravo Poker Live · Caesars Rewards · WSOP $10.000**뿐이고
+**DACH 대회 정보가 0**이었다. 독일 검색 수요(`in der nähe`·`deutschland`·`tschechien 2026`)를
+받을 자리가 통째로 없었다.
+→ **`## Wo finde ich Pokerturniere in meiner Nähe?` 신설** — 표 3개:
+① Spielbank Berlin 요일별 상시(€70+10~€200+20) ② King's Rozvadov 독일 브랜드 5종(9~12월)
+③ CAPT 잔여 5스톱 + 스위스(Baden 중단·Luzern CHF 800+80)
+- **전부 `docs/dach-tournaments-2026.md`의 공식 DOM 직접 추출본**(확인일 08-10). 출처 `:::note` 병기
+- 🔴 **CAPT Baden(빈 근교) ↔ Grand Casino Baden(스위스)** 혼동 방지 문장을 명시적으로 넣었다 —
+  같은 절에 두 Baden이 나란히 서는 구조라 안 넣으면 오독이 확정적이었다
+- 휘발성이라 `docs/update-calendar.md`에 **분기 재확인 항목 신설**(12/1이 첫 시한)
+
+### 🔴 C층 3건 — 실측하니 2건이 이미 옳았다 (인계서가 또 «양쪽으로» 틀렸다)
+
+| 항목 | 인계서 | 실측 |
+|---|---|---|
+| `tournament` #11 최대손실=바이인 | 잔여 | ✅ **de 이미 정답**(「in einem Freezeout … mit Re-Entry und Add-on liegt er höher」) |
+| `tvc` #35 300매 6~8인 | 잔여(없음 등급) | ✅ **de 이미 정답**(「bis etwa 6 Spieler … bei 7-8 … 500er-Set」) |
+| `tournament` #13 딥스택 기준선 | 잔여 | 🔴 **진짜 잔여. 정체는 «3중 자기모순»이었다** |
+
+**#13의 정체**: 표 「Deepstack 100–200 BB+」 ↔ 본문 「typischerweise 200 BB oder mehr」 ↔
+일반 토너먼트 「100–300 BB」 — **게다가 이 글 자신의 블라인드 표가 «Level 1에서 10k = 200 BB»**라
+「Deepstack = 200BB+」가 자기 표준 예시와 구별이 안 됐다.
+→ 검수장 판정(「기준선 200BB」)을 **그대로 반영하지 않았다**. 일반을 **100–200 BB**로 좁히고
+Deepstack은 **「genormter Schwellenwert 없음 = 같은 시리즈의 표준 이벤트 대비 상대 개념」**으로 재정의.
+없는 숫자를 만들지 않고 Structure Sheet 확인을 지시하는 형태다.
+- 🔴🔴 **발원지는 EN 마스터다** — `posts-en` L66/L123/L140이 같은 3중 모순이고
+  **7개 로케일(de en es id pt zh zh-hant)에 복제**돼 있다. **de만 닫았다. 나머지 6개는 미처리**
+
+### 🔴 apt-incheon — 게이트가 잡은 1건보다 게이트 밖 결함이 컸다
+
+- **시제**: 「Das Festival **startet** am 7. August」 — 오늘 8/11 기준 **이미 진행 중**이다
+- **자기모순**: 「Der Step-Weg, der **noch offen** ist」 ↔ 같은 글 「Qualifikation ist **beendet**」
+- **사실**: Country Exclusives를 「**Wohnsitzland**」로 서술 — 정본은 **국적**(citizen + KYC 국적 검증)이다.
+  「거주국」으로 쓰면 **주소만 바꾸면 된다는 오해**를 준다. ★**EN 마스터도 같은 오류**
+  ("Eligibility is set by country of residence"). 미러 미처리
+- **환전**: 「Main-Event-Ticket ~$1.684」 ↔ 같은 글 다른 곳 「$1.703」 — 같은 KRW 2.500.000의
+  달러 환산이 두 값이었다. §3-A 기준 1(환전 금지) 위반이라 **환산값을 빼고**
+  1차출처 실값 **NT$53.888 + NT$16.000**(대만 브래킷 공개분)으로 교체
+- D4 3건(`im Lobby`·`das Natural8-Lobby`·`gegen Primärquellen geprüft`) 정본 §3 정정표대로
+- **D7 퍼센트 표기**: de 42편 전체가 **붙임 772 : 띄움 11**인데 **그 11곳이 전부 이 글**이었다
+  (2026-07-28 「8 %로 고쳐라」 지적이 만든 유일한 이탈). 코퍼스 다수로 통일 → 783:0
+- ⚠ 「Stand: 11. August」로 쓰려다 **되돌렸다** — 오늘 수치를 재검증한 게 아니라 텍스트만 고쳤다.
+  **검증하지 않은 날짜를 검증일로 적으면 안 된다** → 실제 검증일 「9. August」 유지
+
+### ⚙ 게이트 확장 — D3 오탐 11곳 (셀프테스트 99 → 104/104)
+
+새 일정표의 **독일식 날짜 범위**(`01.–06.09.` · `16.09.–06.10.` · `07.10.`)를 마침표 소수점으로 오판했다.
+기존 예외는 `dd.mm.yyyy` **완전형만** 처리하고 있었다.
+→ `stripDates`에 ①`dd.mm.–dd.mm.` ②`dd.–dd.mm.` ③무연도 `dd.mm.` 추가(긴 패턴 우선).
+픽스처 5개 추가 — 그중 하나는 **「날짜 범위 뒤에 진짜 소수점」**(잡아야 함) 케이스다.
+
+### 📌 Session 6이 새로 증명한 것
+
+1. 🔴 **`git checkout --`로 한 파일을 되돌리면 그 파일의 «다른» 미커밋 작업도 같이 죽는다.**
+   라벨 스크립트 버그를 되돌리다 같은 파일의 H2 리네임 9건을 날려 재작업했다.
+   **되돌리기 전에 무관한 작업부터 커밋하라.**
+2. ★**「직답이 없다」와 「직답 라벨이 없다」는 다른 진단이다.** `bubble`·`short-stack`·`icm`은
+   **직답이 이미 26편분 있었고 라벨만 없었다**(굵은 첫 문장 형태). 새로 쓰는 게 아니라
+   **라벨 통일이 정답**이었고 스크립트 26건으로 닫혔다. 착수 전 «형태»부터 봐라
+3. 🔴 **질문형 H2로 바꾸면 FAQ와 새 준중복이 생긴다** — 내가 3건 만들었고(bubble 2·tvc 1)
+   되읽기에서 잡아 H2 쪽을 다시 썼다. **H2를 손대면 그 글 FAQ 목록을 반드시 나란히 놓고 봐라**
+4. ⚠ **`holdem-icm`에 H2↔FAQ 중복이 «원래» 5건 있다**(축어 2건 포함: 「Was ist ICM im Poker?」·
+   「Wie wird ICM berechnet?」). 내가 만든 게 아니라 EN 상속분이다. **미처리**
+5. **라쿠 `other-keywords`·`question-search`는 시드 언어를 따라간다** — `icm poker`(영어)를 넣으면
+   **일본 DB로 샌다**(ポーカー…). 독일 PAA를 원하면 **독일어 시드**를 넣어야 한다
+   (`pokerturnier` → 「Wie hoch ist das Startgeld für ein Pokerturnier?」 등 실검색 문형 회수)
+6. **행사 가이드는 명사구 H2를 억지로 질문형으로 바꾸면 손해다** — `korea-poker-marathon`의
+   「Chuncheon Marathon 2026 – 25. Okt」류는 **고유명 자체가 검색어**라 그대로 뒀다(30%에서 멈춤)
+
 ## 2026-08-11 (15) — **de 경화 Session 5 (Glossar 6편) + C층 4건 8로케일**
 
 - **대상 6편**: `holdem-glossary`(필라) · `holdem-rake` · `holdem-fish` · `holdem-straddle` ·
