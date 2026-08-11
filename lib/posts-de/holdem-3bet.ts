@@ -56,7 +56,7 @@ Das ist die ganze Leiter. Alles andere in diesem Guide dreht sich um die erste S
 Einen Open-Raise zu callen (genannt **Flatten**) hält dich im Pot, aber eine 3-Bet macht vier Dinge, die ein Flat nicht kann:
 
 1. **Sie gewinnt den Pot oft sofort.** In einem guten Teil der Fälle foldet der Raiser und du scoopst den Pot vor dem Flop ohne Showdown. Ein Flat tut das nie.
-2. **Sie baut mit deinen besten Händen einen großen Pot.** Wenn du Assen oder Könige hältst, lässt Flatten drei andere Spieler billig rein. 3-Betten isoliert den Raiser und bringt Geld rein, während du ein riesiger Favorit bist.
+2. **Sie baut mit deinen besten Händen einen großen Pot.** Wenn du Asse oder Könige hältst, lässt Flatten drei andere Spieler billig rein. 3-Betten isoliert den Raiser und bringt Geld rein, während du ein riesiger Favorit bist.
 3. **Sie ergreift Initiative und Positions-Hebel.** Du wirst zum Aggressor mit der Betting-Führung auf jeder Street – und gegen einen weiten Opener druckt dieser Druck Geld.
 4. **Sie verweigert Equity und Information.** Ein Raise lässt Gegner zum Weiterspielen zahlen, statt sie mit einer Hand, die dich knacken könnte, einen billigen Flop sehen zu lassen.
 
@@ -69,7 +69,7 @@ Der Haken: Weil eine 3-Bet mächtig ist, ist es teuer, sie *falsch* zu machen. Z
 > **Kurze Antwort**
 > Mit zwei getrennten Gruppen. Der **Value-Kern** ist ==g:QQ+ und AK== – Hände, die gecallt werden wollen. Dazu kommt eine kleinere Zahl **Light-3-Bets**, vor allem suited Wheel-Assen und suited Connectors: Hände, die Premiums blocken, gute Flops treffen und die du gegen eine 4-Bet ohne Schmerz weglegst. Welche Hände genau dazugehören, verschiebt sich mit der Position des Openers.
 
-![Eine dunkle, on-brand Raster-Infografik, die 3-Bet-Hände in zwei Spalten teilt – VALUE 3-BETS wie Pocket Assen, Könige, Damen und Ass-König, und LIGHT 3-BETS wie suited Wheel-Assen und suited Connectors](/images/holdem-3bet-range-grid.webp "Eine gesunde 3-Bet-Range hat zwei Teile: einen Value-Kern, den du gecallt haben willst, und ein paar suited Blocker-Bluffs, die du gerne gegen eine 4-Bet foldest")
+![Eine dunkle, on-brand Raster-Infografik, die 3-Bet-Hände in zwei Spalten teilt – VALUE 3-BETS wie Pocket Asse, Könige, Damen und Ass-König, und LIGHT 3-BETS wie suited Wheel-Assen und suited Connectors](/images/holdem-3bet-range-grid.webp "Eine gesunde 3-Bet-Range hat zwei Teile: einen Value-Kern, den du gecallt haben willst, und ein paar suited Blocker-Bluffs, die du gerne gegen eine 4-Bet foldest")
 
 Eine gewinnende 3-Bet-Range hat **zwei klar getrennte Teile**, und den Split zu verstehen ist der größte Sprung in diesem Thema.
 
@@ -83,13 +83,13 @@ Eine gewinnende 3-Bet-Range hat **zwei klar getrennte Teile**, und den Split zu 
 
 | Light-3-Bet-Hand | Warum sie ein großartiger Bluff ist |
 |:---|:---|
-| **A5s–A2s** (suited Wheel-Assen) | Dein Ass **blockt** ihre Premiums – es senkt ihre Combos von AA von 6 auf 3 und von AK von 16 auf 12 – sie haben also seltener eine Hand, die weiterspielt. Dazu flopt sie Flushes, Straßen und Wheel-Draws. |
+| **A5s–A2s** (suited Wheel-Asse) | Dein Ass **blockt** ihre Premiums – es senkt ihre Combos von AA von 6 auf 3 und von AK von 16 auf 12 – sie haben also seltener eine Hand, die weiterspielt. Dazu flopt sie Flushes, Straßen und Wheel-Draws. |
 | **Suited Connectors** (76s, 65s) | Hervorragende Playability – sie floppen Straßen, Flushes und Draws, gewinnen also viel, selbst wenn der Bluff gecallt wird. |
 | **Suited One-Gapper** (T8s, 97s) | Gleiche Idee, etwas schwächer: getarnt, flexibel und billig zu folden, wenn 4-gebettet wird. |
 
 </div>
 
-Hier die Blocker-Logik in einem Satz: **Ein Ass zu halten macht es mathematisch weniger wahrscheinlich, dass dein Gegner Assen oder Ass-König hält**, also ist A5s ein weit besserer Bluff als etwa A9o – das blockt dieselben Premiums, spielt aber schrecklich, wenn es gecallt wird, und macht nur schwache Paare. Backup-Equity zählt, weil dein Gegner nicht jedes Mal foldet; du willst einen Bluff, der den Pot trotzdem gewinnen kann. Deshalb hat A5s ≈ 30% Equity gegen eine QQ+/AK-Call-Range, während Offsuit-Müll weit darunter liegt. Das ist dieselbe [Starthand](/de/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp")-Disziplin wie immer – nur aufs Re-Raisen angewendet.
+Hier die Blocker-Logik in einem Satz: **Ein Ass zu halten macht es mathematisch weniger wahrscheinlich, dass dein Gegner Asse oder Ass-König hält**, also ist A5s ein weit besserer Bluff als etwa A9o – das blockt dieselben Premiums, spielt aber schrecklich, wenn es gecallt wird, und macht nur schwache Paare. Backup-Equity zählt, weil dein Gegner nicht jedes Mal foldet; du willst einen Bluff, der den Pot trotzdem gewinnen kann. Deshalb hat A5s ≈ 30% Equity gegen eine QQ+/AK-Call-Range, während Offsuit-Müll weit darunter liegt. Das ist dieselbe [Starthand](/de/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp")-Disziplin wie immer – nur aufs Re-Raisen angewendet.
 
 ---
 
@@ -140,7 +140,7 @@ Die Mathematik ist bewusst sichtbar, weil hier Anfänger leaken: **3 × 3bb = 9b
 - **3-bette out of Position nie winzig.** Eine kleine OOP-3-Bet gibt deinem Gegner einen tollen Preis zum Callen und dich mit Position auszuspielen – genau das, was du vermeiden willst. Nutze die vollen 4x+.
 - **Sizing ist kein Gesetz.** Size *runter* gegen Spieler, die zu viel folden (du bluffst billiger), und size *rauf* und geh pure-Value gegen Calling Stations, die nie folden. Rake und Stack-Tiefe verschieben es ebenfalls.
 
-In Turnieren mit flachen Stacks ändert sich die ganze Rechnung: Bei etwa **10–25 Big Blinds** werden viele Hände zu einem **3-Bet-All-in (einem „Shove“)** statt zu einer kleinen Re-Raise, weil kein Platz zum Raisen-und-Folden ist. Hör auf, Min-3-Bets zu machen, und fang an zu jammen, sobald du short wirst.
+In Turnieren mit flachen Stacks ändert sich die ganze Rechnung: Bei etwa **10–25 Big Blinds** werden viele Hände zu einem **3-Bet-All-in (einem „Shove“)** statt zu einem kleinen Re-Raise, weil kein Platz zum Raisen-und-Folden ist. Hör auf, Min-3-Bets zu machen, und fang an zu jammen, sobald du short wirst.
 
 ---
 
@@ -265,7 +265,7 @@ A. Eine 3-Bet ist der erste Re-Raise (über einen Open-Raise); eine 4-Bet ist de
 
 **Q. Mit welchen Händen 4-bettest du – und wie groß?**
 
-A. 4-bette polarisiert: Premiums auf Value (meist AA–KK plus AK) und ein paar Blocker-Bluffs wie A5s, die genau die Assen und Könige deines Gegners blocken. Als Size reichen grob **2,2–2,5x der 3-Bet** in Position und eine Spur mehr out of Position – kleiner, als die meisten erwarten, weil der Pot ohnehin schon groß ist. Als Frequenz 4-betten solide Spieler nur wenige Prozent ihrer Hände; gegen Gegner, die zu oft 3-betten, erweiterst du vor allem den Value-Teil.
+A. 4-bette polarisiert: Premiums auf Value (meist AA–KK plus AK) und ein paar Blocker-Bluffs wie A5s, die genau die Asse und Ass-König deines Gegners blocken. Als Size reichen grob **2,2–2,5x der 3-Bet** in Position und eine Spur mehr out of Position – kleiner, als die meisten erwarten, weil der Pot ohnehin schon groß ist. Als Frequenz 4-betten solide Spieler nur wenige Prozent ihrer Hände; gegen Gegner, die zu oft 3-betten, erweiterst du vor allem den Value-Teil.
 
 **Q. Wann solltest du 5-betten?**
 

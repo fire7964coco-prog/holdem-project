@@ -9,6 +9,7 @@ export const POST: Post = {
   category: "strategy",
   date: "2026-07-06",
   updated: "2026-08-10",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "15 Min.",
   emoji: "🔥",
@@ -33,7 +34,7 @@ Check | Oft der beste Zug, kein Zeichen von Schwäche
 
 ---
 
-## Was ist eine Continuation Bet (C-Bet)?
+## Was ist eine Continuation Bet (C-Bet) – und wer darf sie machen?
 
 **Eine Continuation Bet ist ein Einsatz am Flop von dem Spieler, der vor dem Flop der Aggressor war** – die letzte Person, die geraist hat. Du „setzt“ die Story von Stärke fort, die du preflop begonnen hast. Entscheidend: ==du musst den Flop nicht getroffen haben, um zu c-betten==; ein großer Anteil guter C-Bets wird mit Händen gemacht, die den Flop komplett verfehlt haben.
 
@@ -49,7 +50,7 @@ Wenn die zugrunde liegenden [Betting-Aktionen](/de/blog/holdem-betting-actions) 
 
 ---
 
-## Der alte Rat „jeden Flop c-betten“ ist falsch – das hat sich geändert
+## Warum funktioniert „c-bette einfach jeden Flop“ nicht mehr?
 
 Wenn du Poker vor den Solvern gelernt hast, wurde dir gesagt, auf den *meisten* Flops etwa zwei Drittel Pot zu c-betten. Es funktionierte eine Weile, weil Gegner zu oft foldeten. Dann lernten alle, sich zu wehren – floaten, check-raisen und mitgehen bis zum Showdown – und pauschales C-betten wurde zum Leak.
 
@@ -62,7 +63,10 @@ Das Konzept dahinter ist der ==Range Advantage==: wessen Gesamt-Range auf diesem
 
 ---
 
-## Welche Flops du c-betten solltest: Es geht um die Board-Textur
+## Welche Flops solltest du c-betten? Es geht um die Board-Textur
+
+> **Kurze Antwort**
+> Die Board-Textur entscheidet, nicht deine zwei Karten. Hohe, trockene und unverbundene Flops gehören deiner Range als Raiser – dort bettest du oft und klein. Niedrige, verbundene Flops treffen die Calling-Range deines Gegners; dort checkst du häufiger und bettest nur selektiv groß. Gepaarte Boards liegen leicht auf deiner Seite, monotone Boards deckeln beide Ranges.
 
 ![Ein trockener, unverbundener J-7-2-Rainbow-Flop auf dem grünen Filz mit einem kleinen Stapel Chips davor gesetzt, die Art hoher Kartenboard, das dem Preflop-Raiser gehört](/images/holdem-cbet-dry-board.webp "Hohe, trockene, unverbundene Flops wie dieses J-7-2 favorisieren den Preflop-Raiser – die klassischen kleinen C-Bet-Boards mit hoher Frequenz")
 
@@ -88,7 +92,10 @@ Der subtile Teil: du kannst das eine ohne das andere haben. Auf A‑8‑3 hast d
 
 ---
 
-## Wie oft solltest du c-betten? (Frequenz)
+## Wie oft ist eine C-Bet zu oft? (Frequenz)
+
+> **Kurze Antwort**
+> Zu oft ist sie in dem Moment, in dem dein Gegner sie ausrechnen kann. Über alle Boards hinweg landet ein solider Spieler bei **55–70%** – aber der Durchschnitt ist nicht die Anweisung: Er entsteht daraus, dass du auf manchen Flops fast immer bettest und auf anderen fast nie. Wer stattdessen überall dieselbe Frequenz spielt, wird von aufmerksamen Gegnern geraist.
 
 Es gibt keinen einzelnen „korrekten“ C-Bet-Prozentsatz – wer dir eine Zahl gibt, verkauft dir einen Leak. Die Frequenz schwankt mit Position, Board und wie viele Spieler im Pot sind. Hier die Schnellreferenz:
 
@@ -108,7 +115,7 @@ Als Gesundheitscheck: die Gesamt-C-Bet-Rate am Flop eines soliden Spielers lande
 
 ---
 
-## Wie viel solltest du c-betten? (Sizing)
+## Wie groß sollte eine C-Bet sein? (Sizing)
 
 Das Sizing folgt direkt aus der Board-Textur. Zwei Gänge decken fast alles ab:
 
@@ -124,7 +131,7 @@ In **Turnieren** tendiere eine Spur kleiner – oft **halber Pot oder weniger** 
 
 ---
 
-## C-betten out of Position
+## Wie c-bettest du out of Position?
 
 ![Ein Pokerspieler, der als Erster out of Position handelt, die Finger auf dem Filz neben seinen Chips, während ein Gegner im Schatten hinter ihm wartet](/images/holdem-cbet-oop.webp "Out of Position handelst du als Erster ohne Information, also checkst du weit öfter und c-bettest eine engere, stärkere Range")
 
@@ -135,7 +142,7 @@ C-betten ist **out of Position** viel schwieriger – wenn du auf jeder Street a
 
 ---
 
-## C-betten in Multiway-Pots
+## Wie oft c-bettest du in Multiway-Pots?
 
 Die größte C-Bet-Falle ist, **in mehrere Gegner zu feuern, als wäre es heads-up.** Jeder zusätzliche Spieler im Pot senkt die Chance, dass alle verfehlt haben – also kollabiert deine Fold Equity, der ganze Motor einer Bluff-C-Bet.
 
@@ -143,19 +150,22 @@ Die Regel multiway ist simpel: **bette deine starken fertigen Hände und deine b
 
 ---
 
-## Die Delayed C-Bet
+## Wann lohnt sich eine Delayed C-Bet?
 
 Den Flop zu checken ist nicht das Ende der Hand. Eine **Delayed C-Bet** – als Preflop-Raiser den Flop checken und dann den Turn betten – ist einer der am meisten unterschätzten Züge im Poker. Sie glänzt, wenn:
 
 - Der **Flop deinen Gegner favorisierte** (ein niedriges, verbundenes Board), Betten also schlecht war – der **Turn aber das Bild ändert** (eine Overcard oder eine Karte, die deine Equity anhebt).
-- Du **eine anständige Hand in Position durchgecheckt hast** und jetzt eine Straße Value setzen willst, da das Board sicherer ist.
+- Du **eine anständige Hand in Position durchgecheckt hast** und jetzt eine Street Value setzen willst, da das Board sicherer ist.
 - Du **Floats fangen willst**: Spieler, die planten, deine Flop-C-Bet zu bluff-raisen, bekommen keinen Einsatz zum Angreifen und sehen sich stattdessen deiner Turn-Bet gegenüber.
 
-Verzögern verwandelt einen Spot, in dem eine automatische C-Bet Chips verblutet hätte, in einen kontrollierten, informierten Einsatz eine Straße später.
+Verzögern verwandelt einen Spot, in dem eine automatische C-Bet Chips verblutet hätte, in einen kontrollierten, informierten Einsatz eine Street später.
 
 ---
 
-## Wann du NICHT c-betten solltest (Checken ist eine Waffe, keine weiße Fahne)
+## Wann ist Checken besser als eine C-Bet? (Checken ist eine Waffe, keine weiße Fahne)
+
+> **Kurze Antwort**
+> Immer dann, wenn das Board eher zur Range deines Gegners passt als zu deiner – niedrige, verbundene Flops, mehrere Gegner, oder wenn du selbst nichts hast und auch nichts glaubwürdig repräsentieren kannst. Checken ist dort kein Aufgeben, sondern eine eigene Linie: Du hältst den Pot klein und behältst die Option auf eine spätere Bet.
 
 Machen wir das „Nicht“ explizit, denn hier wird das Geld gespart:
 
@@ -168,7 +178,7 @@ Der Denkwechsel, der dich zum Gewinner macht: **Checken ist keine Kapitulation.*
 
 ---
 
-## Eine echte C-Bet-Hand von Anfang bis Ende
+## Wie sieht eine C-Bet-Hand von Anfang bis Ende aus?
 
 Zwei Spots aus derselben Session zeigen beide Seiten der Entscheidung.
 
@@ -180,7 +190,7 @@ Gleicher Preflop-Raise, entgegengesetzte Flops, entgegengesetzte richtige Züge.
 
 ---
 
-## Die 7 häufigsten C-Bet-Fehler
+## Welche C-Bet-Fehler kosten am meisten? Die häufigsten sieben
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -213,7 +223,7 @@ A. Eine Continuation Bet, oder C-Bet, ist ein Einsatz am Flop von dem Spieler, d
 
 **Q. Warum heißt es Continuation Bet?**
 
-A. Weil du die Aggression fortsetzt, die du vor dem Flop begonnen hast. Du hast preflop geraist, um die Führung zu übernehmen, und der Flop-Einsatz setzt diese Story auf der nächsten Straße fort. Hätte jemand anderes preflop geraist, wäre dein Flop-Einsatz keine C-Bet – der Begriff meint speziell den Preflop-Raiser, der den Flop bettet.
+A. Weil du die Aggression fortsetzt, die du vor dem Flop begonnen hast. Du hast preflop geraist, um die Führung zu übernehmen, und der Flop-Einsatz setzt diese Story auf der nächsten Street fort. Hätte jemand anderes preflop geraist, wäre dein Flop-Einsatz keine C-Bet – der Begriff meint speziell den Preflop-Raiser, der den Flop bettet.
 
 **Q. Solltest du jeden Flop c-betten?**
 

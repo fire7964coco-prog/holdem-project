@@ -35,7 +35,7 @@ Math > fear | The only reason to fold, or not
 
 ## What Folding Really Is (and Why It's the Most Underrated Skill)
 
-Every hand, you have three options: bet/raise, call, or fold. Folding means surrendering the pot and putting no more chips at risk. New players treat it as losing. Winners treat it as ==refusing to lose more.==
+Facing a bet, you have three options: fold, call, or raise. With no bet in front of you, you have two: check or bet. Folding means surrendering the pot and putting no more chips at risk. New players treat it as losing. Winners treat it as ==refusing to lose more.==
 
 Here's the idea that reframes everything: **a fold's expected value, from that decision forward, is zero.** When you're genuinely beaten, every other option is *negative* — calling costs you the call, raising costs you more. Zero beats negative. Folding doesn't win the pot, but it wins the long game by not donating chips to spots you're behind in.
 
@@ -50,7 +50,7 @@ The biggest leak in poker is playing too many hands, so the biggest single fix i
 Fold preflop when:
 
 - **Your hand is simply weak or trashy** — offsuit disconnected cards (J‑4, Q‑7, K‑3), weak aces (A‑7 offsuit and below from early seats), and most offsuit "one big card" hands. If it isn't on your [starting-hand chart](/en/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") for that seat, muck it.
-- **You're in early position** — you'll act first on every street, so you need a stronger hand to enter. K‑J offsuit is a fold under the gun and a raise on the button.
+- **You're in early position** — almost everyone else decides after you, and after the flop only the blinds act before you, so you need a stronger hand to enter. K‑J offsuit is a fold under the gun and a raise on the button.
 - **You're dominated.** A‑9 offsuit against a tight early-position raiser is usually beaten by their A‑T, A‑J, A‑Q, A‑K — same ace, worse kicker. Domination is the quiet killer; fold rather than get out-kicked.
 - **You face a [3-bet](/en/blog/holdem-3bet) with the weaker part of your range.** You opened wide, so most of that range folds to a re-raise — continue with your best hands and let the rest go. Against a big **4-bet**, fold your small pairs and speculative suited hands; their implied odds have collapsed.
 

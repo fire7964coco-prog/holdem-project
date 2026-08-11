@@ -36,7 +36,7 @@ Matemática > miedo | La única razón para foldear, o para no hacerlo
 
 ## Qué es foldear de verdad (y por qué es la habilidad más infravalorada)
 
-En cada mano tienes tres opciones: apostar/subir, igualar o foldear. Foldear significa renunciar al bote y no arriesgar ni una ficha más. Los novatos lo viven como perder. Los ganadores lo viven como ==negarse a perder más.==
+Ante una apuesta tienes tres opciones: foldear, igualar o subir. Si no hay apuesta, tienes dos: pasar o apostar. Foldear significa renunciar al bote y no arriesgar ni una ficha más. Los novatos lo viven como perder. Los ganadores lo viven como ==negarse a perder más.==
 
 Aquí está la idea que lo replantea todo: **el valor esperado de un fold, de esa decisión en adelante, es cero.** Cuando estás genuinamente batido, cualquier otra opción es *negativa* — igualar te cuesta el call, subir te cuesta más. Cero le gana a negativo. Foldear no gana el bote, pero gana la partida a largo plazo al no donar fichas a spots en los que vas por detrás.
 
@@ -51,7 +51,7 @@ La mayor fuga del póker es jugar demasiadas manos, así que el mayor arreglo de
 Foldea preflop cuando:
 
 - **Tu mano es sencillamente débil o basura** — cartas desconectadas de distinto palo (J‑4, Q‑7, K‑3), ases flojos (A‑7 de distinto palo y menos desde posiciones tempranas) y la mayoría de manos de "una carta grande" de distinto palo. Si no está en tu [gráfica de manos iniciales](/es/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") para ese asiento, al muck.
-- **Estás en posición temprana** — hablarás primero en cada calle, así que necesitas una mano más fuerte para entrar. K‑J de distinto palo es un fold en UTG y un raise en el botón.
+- **Estás en posición temprana** — casi todos los demás deciden después de ti, y tras el flop solo las ciegas hablan antes, así que necesitas una mano más fuerte para entrar. K‑J de distinto palo es un fold en UTG y un raise en el botón.
 - **Estás dominado.** A‑9 de distinto palo contra un raise tight de posición temprana suele estar batido por su A‑10, A‑J, A‑Q, A‑K — mismo as, peor kicker. La dominación es el asesino silencioso; foldea antes que perder por kicker.
 - **Te enfrentas a un [3-bet](/es/blog/holdem-3bet) con la parte más débil de tu rango.** Abriste amplio, así que la mayor parte de ese rango foldea a una resubida — continúa con tus mejores manos y suelta el resto. Frente a un **4-bet** grande, foldea tus parejas pequeñas y tus manos suited especulativas; sus odds implícitas se han desplomado.
 

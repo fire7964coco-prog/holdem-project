@@ -44,7 +44,7 @@ Diese Seite ist die All-in-One-Version: die 10 besten Starthände, was eine Hand
 
 ---
 
-## Die 10 besten Starthände im Poker, gerankt
+## Welche sind die 10 besten Starthände im Poker?
 
 Das sind die besten Starthände im Poker – die, die du fast immer preflop raisen solltest, aus jeder Position am Tisch:
 
@@ -69,7 +69,10 @@ Pocket Rockets, Cowboys, Big Slick – falls dir der Tisch-Slang neu ist, das [P
 
 ---
 
-## Was zählt als gute Starthand im Poker?
+## Woran erkennst du eine gute Starthand?
+
+> **Kurze Antwort**
+> An drei Eigenschaften, nicht an einer: **hohe Karten** (sie gewinnen ungepaarte Showdowns), **Paare** (sie sind schon fertig und können sich zum Set verbessern) und **Verbundenheit** – suited oder in der Reihenfolge benachbart, weil daraus Flushes und Straßen entstehen. Entscheidend bleibt aber, aus welchem Sitz du sie spielst: Dieselbe Hand ist aus UTG ein Fold und am Button ein Raise.
 
 Gute Starthände im Poker teilen ein Merkmal: ==sie machen öfter starke *Fünf-Karten*-Hände als die Hände, auf die sie treffen.== Hohe Paare starten vorn. Große suited Karten machen Top Pair mit dem besten Kicker, Nut-Flushes und hohe Straßen. Alles andere braucht Hilfe – und Hände, die Hilfe brauchen, lohnen sich nur, wenn die Hilfe billig ist.
 
@@ -86,7 +89,10 @@ Nach Stufen sortiert sehen gute Starthände im Poker so aus:
 
 ---
 
-## Poker Starthände Chart nach Position (komplettes 9-Max-Chart)
+## Welche Starthände spielst du aus welcher Position? (komplettes 9-Max-Chart)
+
+> **Kurze Antwort**
+> Je später dein Sitz, desto mehr. Aus UTG bleibt im Full Ring nur die Spitze übrig – große Paare, starke Asse, die besten suited Broadways. Ab dem Cutoff kommen kleinere Paare, weitere suited Asse und Suited Connectors dazu, am Button ist die Range am breitesten. Das Chart unten fasst die neun Sitze zu vier Gruppen zusammen: UTG, MP, Cutoff und Button.
 
 ==Deine Position am Tisch ändert, welche Hände profitabel sind.==
 
@@ -138,7 +144,7 @@ Kernregel: ==diese spekulativen Hände brauchen Position, um profitabel zu sein=
 
 ---
 
-## 6-Max Starthände: Wie sich das Chart ändert
+## Wie ändert sich das Starthände-Chart im 6-Max?
 
 Die meisten Online-Cashgames sind 6-Max, und das Chart verschiebt sich in eine Richtung: ==weiter==. Entferne die drei engsten Plätze von einem 9-Max-Tisch, und jede verbleibende Position „rückt effektiv auf“. Der erste Spieler, der im 6-Max agiert, öffnet gegen fünf Gegner, nicht acht – also ==g:spielt UTG im 6-Max ungefähr wie MP im 9-Max== (~15–17% statt ~13%).
 
@@ -167,7 +173,7 @@ Ein Hinweis zum Rahmen: Hier geht es darum, welchen Prozentsatz deiner *Range* d
 
 ---
 
-## GTO-Preflop-Charts vs. Anfänger-Charts: Welches nutzen?
+## Brauchst du ein GTO-Preflop-Chart – oder reicht ein Anfänger-Chart?
 
 Ich halte beim Lernen Solver-Outputs offen, und trotzdem gebe ich jedem Anfänger zuerst ein vereinfachtes Chart. Das sind zwei verschiedene Werkzeuge, und zu wissen, welches man nutzt, ist mehr wert als jedes Chart allein.
 
@@ -186,7 +192,7 @@ Hier ist, warum blindes Auswendiglernen von Solver-Charts nach hinten losgeht: G
 
 ---
 
-## Die schlechtesten Starthände (die spielbar aussehen)
+## Welche Starthände sehen spielbar aus, sind es aber nicht?
 
 Die schlechtesten Starthände im Poker sind nicht zufälliger Müll wie 7-2 – niemand braucht ein Chart, um das zu folden. Die teuren sind die Hände, die spielbar *aussehen* und über Sessions hinweg konstant Chips verlieren:
 
@@ -205,7 +211,7 @@ Der ==r:teuerste Fehler, den Anfänger machen, ist Raises mit schwachen Assen zu
 
 ---
 
-## Druckbares Starthände-Chart (PDF-Cheat-Sheet)
+## Gibt es das Starthände-Chart als PDF zum Ausdrucken?
 
 Charts funktionieren nur, wenn sie vor dir liegen, wenn es zählt. Für Homegames und Study-Sessions haben wir das Ganze druckbar gemacht:
 

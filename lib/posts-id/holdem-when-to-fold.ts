@@ -36,7 +36,7 @@ Matematika > rasa takut | Satu-satunya alasan untuk fold, atau tidak
 
 ## Apa Itu Fold Sebenarnya (dan Kenapa Itu Skill Paling Diremehkan)
 
-Setiap tangan, Anda punya tiga pilihan: bet/raise, call, atau fold. Fold berarti menyerahkan pot dan tidak lagi mempertaruhkan chip. Pemain baru menganggapnya kalah. Pemain pemenang menganggapnya ==menolak untuk kalah lebih banyak.==
+Menghadapi bet, Anda punya tiga pilihan: fold, call, atau raise. Kalau tidak ada bet, pilihannya dua: check atau bet. Fold berarti menyerahkan pot dan tidak lagi mempertaruhkan chip. Pemain baru menganggapnya kalah. Pemain pemenang menganggapnya ==menolak untuk kalah lebih banyak.==
 
 Inilah ide yang membingkai ulang segalanya: **expected value sebuah fold, dari keputusan itu ke depan, adalah nol.** Saat Anda benar-benar kalah, setiap pilihan lain bernilai *negatif* — call membebani Anda sebesar call, raise membebani lebih banyak. Nol mengalahkan negatif. Fold tidak memenangkan pot, tapi ia memenangkan permainan jangka panjang dengan tidak menyumbangkan chip ke spot di mana Anda tertinggal.
 
@@ -51,7 +51,7 @@ Kebocoran terbesar di poker adalah memainkan terlalu banyak tangan, jadi perbaik
 Fold preflop saat:
 
 - **Tangan Anda memang lemah atau sampah** — kartu offsuit yang tak nyambung (J‑4, Q‑7, K‑3), ace lemah (A‑7 offsuit ke bawah dari seat awal), dan sebagian besar tangan offsuit "satu kartu besar". Jika ia tak ada di [chart starting hand](/id/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") Anda untuk seat itu, buang.
-- **Anda di posisi awal** — Anda akan beraksi lebih dulu di setiap street, jadi Anda butuh tangan lebih kuat untuk masuk. K‑J offsuit adalah fold di under the gun dan raise di button.
+- **Anda di posisi awal** — hampir semua orang lain memutuskan setelah Anda, dan setelah flop hanya blind yang beraksi sebelum Anda, jadi Anda butuh tangan lebih kuat untuk masuk. K‑J offsuit adalah fold di under the gun dan raise di button.
 - **Anda ter-dominasi.** A‑9 offsuit melawan raiser posisi awal yang ketat biasanya dikalahkan oleh A‑T, A‑J, A‑Q, A‑K mereka — ace yang sama, kicker lebih buruk. Dominasi adalah pembunuh diam-diam; fold daripada kalah kicker.
 - **Anda menghadapi [3-bet](/id/blog/holdem-3bet) dengan bagian range Anda yang lebih lemah.** Anda open lebar, jadi sebagian besar range itu fold ke re-raise — lanjutkan dengan tangan terbaik Anda dan lepaskan sisanya. Melawan **4-bet** besar, fold pair kecil dan tangan suited spekulatif Anda; implied odds mereka telah runtuh.
 

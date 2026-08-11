@@ -137,7 +137,7 @@ Beim Sizing funktioniert eine kleine **25–35%-Pot**-Bet, wenn du eine weite Ra
 ## Entscheidung 5: Wann solltest du folden?
 
 > **Kurze Antwort**
-> An drei Stellen, und sie sehen völlig unterschiedlich aus: **vor dem Flop** bei schwachen Starthänden, **auf dem Flop und danach**, wenn du verfehlt hast und echter Aggression gegenüberstehst, und **mit einem Draw**, wenn der Preis nicht stimmt. Die ersten beiden sparen kleine Beträge sehr oft; der dritte spart selten, dafür ganze Stacks. Zusammen sind sie der Grund, warum disziplinierte Spieler kleinere Verlusttage haben.
+> An drei Stellen, und sie sehen völlig unterschiedlich aus: **vor dem Flop** bei schwachen Starthänden, **auf dem Flop und danach**, wenn du verfehlt hast und echter Aggression gegenüberstehst, und **mit einem Draw**, wenn der Preis nicht stimmt. Die ersten beiden sparen kleine Beträge sehr oft; die dritte spart selten, dafür ganze Stacks. Zusammen sind sie der Grund, warum disziplinierte Spieler kleinere Verlusttage haben.
 
 ![Top-Down-Infografik eines Hold'em-Tisches mit einem kompletten K♦ 7♣ 2♠ 9♥ 3♦ Board, Chip-Stapeln und dem Dealer-Button](/images/holdem-pub-players-table.webp "Der profitabelste Move im Poker ist der, den niemand bemerkt – eine geschlagene Hand zu folden, bevor sie dich einen Stack kostet")
 

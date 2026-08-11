@@ -36,7 +36,7 @@ Matemática > medo | O único motivo para foldar, ou não
 
 ## O que foldar realmente é (e por que é a habilidade mais subestimada)
 
-Em toda mão você tem três opções: apostar/aumentar, pagar ou foldar. Foldar significa entregar o pote e não arriscar mais nenhuma ficha. Jogadores novos encaram isso como perder. Os vencedores encaram como ==recusar-se a perder mais.==
+Diante de uma aposta você tem três opções: foldar, pagar ou aumentar. Sem aposta na sua frente, são duas: dar check ou apostar. Foldar significa entregar o pote e não arriscar mais nenhuma ficha. Jogadores novos encaram isso como perder. Os vencedores encaram como ==recusar-se a perder mais.==
 
 Aqui está a ideia que reformula tudo: **o valor esperado de um fold, daquela decisão em diante, é zero.** Quando você está genuinamente derrotado, toda outra opção é *negativa* — pagar te custa o call, aumentar te custa mais. Zero vence negativo. Foldar não ganha o pote, mas ganha o jogo de longo prazo ao não doar fichas em spots nos quais você está atrás.
 
@@ -51,7 +51,7 @@ O maior vazamento do pôquer é jogar mãos demais, então a maior correção in
 Folde no pré-flop quando:
 
 - **Sua mão é simplesmente fraca ou lixo** — cartas offsuit desconectadas (J‑4, Q‑7, K‑3), ases fracos (A‑7 offsuit e abaixo em posições iniciais) e a maioria das mãos offsuit de "uma carta grande". Se não está na sua [tabela de starting hands](/pt/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") para aquela posição, jogue no muck.
-- **Você está em posição inicial** — vai agir primeiro em cada street, então precisa de uma mão mais forte para entrar. K‑J offsuit é fold no under the gun e raise no button.
+- **Você está em posição inicial** — quase todos os outros decidem depois de você, e depois do flop só as blinds agem antes, então precisa de uma mão mais forte para entrar. K‑J offsuit é fold no under the gun e raise no button.
 - **Você está dominado.** A‑9 offsuit contra um raise apertado de posição inicial costuma estar batido pelo A‑T, A‑J, A‑Q, A‑K dele — mesmo ás, kicker pior. A dominação é o assassino silencioso; folde em vez de ser superado no kicker.
 - **Você enfrenta um [3-bet](/pt/blog/holdem-3bet) com a parte mais fraca do seu range.** Você abriu largo, então a maior parte desse range folda para um re-raise — continue com suas melhores mãos e deixe o resto ir. Contra um **4-bet** grande, folde seus pares pequenos e suas mãos suited especulativas; suas implied odds desabaram.
 

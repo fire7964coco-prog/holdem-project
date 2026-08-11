@@ -9,6 +9,7 @@ export const POST: Post = {
   category: "strategy",
   date: "2026-06-13",
   updated: "2026-08-10",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "🎯",
@@ -24,7 +25,7 @@ export const POST: Post = {
     "wer ist zuerst dran poker",
   ],
   content: `
-Mein erstes Live-Cashgame: Ich saß auf dem Platz, den ich später als UTG kennenlernen sollte. Ich schaute auf J♥ J♠ und raiste. Der Hijack callte. Der Cutoff callte. Der Button callte. Der Big Blind 3-bettete. Ich hatte keine Ahnung, was ich tun sollte – ich callte und blutete über drei Straßen Chips.
+Mein erstes Live-Cashgame: Ich saß auf dem Platz, den ich später als UTG kennenlernen sollte. Ich schaute auf J♥ J♠ und raiste. Der Hijack callte. Der Cutoff callte. Der Button callte. Der Big Blind 3-bettete. Ich hatte keine Ahnung, was ich tun sollte – ich callte und blutete über drei Streets Chips.
 
 Zwei Orbits später saß ich auf dem Button mit demselben J♥ J♠. Ich raiste. Alle foldeten. Ich gewann $14, ohne je einen Flop zu sehen.
 
@@ -57,13 +58,16 @@ Hier ist der komplette 9-Max-Positionen-Chart – jeder Sitzname, seine Abkürzu
 | Small Blind | **SB** | Blind | 8. | **1.** |
 | Big Blind | **BB** | Blind | 9. (zuletzt) | 2. |
 
-Beachte den Umschwung: ==die Blinds handeln preflop zuletzt, aber postflop zuerst==, während der Button auf jeder Postflop-Straße zuletzt handelt. Diese Reihenfolge – nicht die Karten – ist es, was manche Sitze strukturell besser macht als andere.
+Beachte den Umschwung: ==die Blinds handeln preflop zuletzt, aber postflop zuerst==, während der Button auf jeder Postflop-Street zuletzt handelt. Diese Reihenfolge – nicht die Karten – ist es, was manche Sitze strukturell besser macht als andere.
 
 > **Live-Tisch-Hinweis:** Der Button ist eine physische Scheibe, die jede Hand einen Sitz im Uhrzeigersinn weiterrückt. „UTG“ ist derjenige, der in dem Moment drei Sitze links vom Button sitzt – kein fester Stuhl.
 
 ---
 
-## Poker-Positionsnamen & Abkürzungen: UTG, LJ, HJ, CO, BTN, SB, BB
+## Wie heißen die Poker-Positionen? Namen und Abkürzungen von UTG bis BB
+
+> **Kurze Antwort**
+> In der Reihenfolge, in der sie preflop handeln: **UTG** (Under the Gun), danach die mittleren Plätze **LJ** (Lojack) und **HJ** (Hijack), dann **CO** (Cutoff), der **BTN** (Button) und schließlich die beiden Blinds **SB** und **BB**. Die Abkürzungen sind international identisch – auch in deutschen Foren und Streams wird nicht übersetzt.
 
 Jeder Positionsname, den du am Tisch hörst oder in einem Strategie-Artikel liest, entschlüsselt:
 
@@ -84,7 +88,7 @@ Die Namen zu kennen ist Schritt eins. Was du aus jedem von ihnen tatsächlich *t
 
 ---
 
-## Poker-Sitznummern vs. Positionen – Sitz 1 ist keine Position
+## Ist Sitz 1 eine Position? Sitznummern vs. Positionen
 
 Das bringt fast jeden Live-Neuling durcheinander: Wenn der Floor **„Tisch 12, Sitz 5“** ausruft, hat diese Nummer ==nichts mit Poker-Positionen zu tun==.
 
@@ -114,11 +118,11 @@ Das ist die Definition. *Wie man* UTG *spielt* – warum es die tightste Range a
 
 ---
 
-## Der Hijack und der Lojack – und warum sie so heißen
+## Warum heißen Hijack und Lojack so?
 
 **Der Hijack (HJ)** ist der Sitz zwei rechts vom Button. **Der Lojack (LJ)** ist einen weiter, drei rechts vom Button. Zusammen bilden sie die Middle Position in einem modernen 9-Max-Spiel.
 
-Die Namen haben keinen dokumentierten offiziellen Ursprung – Poker-Slang selten – aber die gängig erzählte Geschichte geht so:
+Die Namen haben keinen dokumentierten offiziellen Ursprung – Poker-Slang hat das selten – aber die gängig erzählte Geschichte geht so:
 
 - **Hijack:** Cutoff und Button sind die klassischen Blind-Steal-Sitze. Wenn der Spieler einen Sitz früher zuerst raist, ==**„hijackt“ er den Steal**==, den die späten Sitze machen wollten – also griff der Sitz selbst den Namen auf.
 - **Lojack:** kam später, als ==spielerische Anspielung auf „Hijack“== – der Sitz eine Stufe „tiefer“ in der Rangordnung. Die meisten Erzählungen hören darin auch ein Echo der Anti-Diebstahl-Marke LoJack: ein Hijack, eine Stufe darunter.
@@ -127,17 +131,20 @@ Behandle beide als Tischfolklore statt als Etymologie. Was keine Folklore ist: H
 
 ---
 
-## Der Cutoff und der Button (Dealer-Position)
+## Was machen Cutoff und Button (Dealer-Position)?
 
 **Der Cutoff (CO)** ist der Sitz ==ein Platz rechts vom Button== – die letzte Position vor dem Dealer. Zwei Ursprungsgeschichten kursieren: Die eine sagt, der Sitz „schneidet“ die Chance des Buttons ab, die Blinds zu stehlen, indem er zuerst raist; eine ältere sagt, dass in selbst gegebenen Homegames der Spieler rechts vom Dealer ==das Deck abhob== nach dem Mischen. So oder so, der Name blieb hängen, und der Cutoff wird durchweg als Late Position gezählt.
 
-**Der Button (BTN)** – auch **Dealer-Position** genannt – ist der Sitz, der durch die physische Dealer-Scheibe markiert ist. In Casino-Spielen handhabt ein professioneller Dealer die Karten, also markiert der Button einfach, ==wer geben *würde*==, was die Setzreihenfolge verankert: Der Button handelt ==auf jeder Postflop-Straße zuletzt==, und alles andere am Tisch wird nach seinem Abstand zu dieser Scheibe benannt.
+**Der Button (BTN)** – auch **Dealer-Position** genannt – ist der Sitz, der durch die physische Dealer-Scheibe markiert ist. In Casino-Spielen handhabt ein professioneller Dealer die Karten, also markiert der Button einfach, ==wer geben *würde*==, was die Setzreihenfolge verankert: Der Button handelt ==auf jeder Postflop-Street zuletzt==, und alles andere am Tisch wird nach seinem Abstand zu dieser Scheibe benannt.
 
 Diese garantierte letzte Aktion ist der Grund, warum der Button als der profitabelste Sitz beim Poker gilt – das vollständige Argument, mit den Zahlen dahinter, steht im [Positionsstrategie-Leitfaden](/de/blog/holdem-position-play).
 
 ---
 
-## Die Blinds: SB- und BB-Sitze
+## Warum sind die Blinds die teuersten Plätze am Tisch?
+
+> **Kurze Antwort**
+> Weil du dort bezahlst, bevor du deine Karten gesehen hast, und nach dem Flop trotzdem als Erster handeln musst. Beides zusammen macht die Blinds zu den einzigen Sitzen, an denen du langfristig Geld verlierst – auch als guter Spieler. Das Ziel dort ist nicht Gewinn, sondern die Verluste klein zu halten.
 
 Die beiden Sitze links vom Button sind Positionen *und* Pflichteinsätze zugleich:
 
@@ -154,7 +161,7 @@ Warum die Blinds existieren, wie viel sie pro Orbit kosten und wie man sie verte
 
 Die meistgestellte Frage zu Positionen, in einer Tabelle beantwortet:
 
-| Straße | Handelt zuerst | Handelt zuletzt |
+| Street | Handelt zuerst | Handelt zuletzt |
 |:---|:---|:---|
 | **Preflop** | **UTG** – erster Sitz links vom Big Blind | **Big Blind** – darf checken oder raisen |
 | **Flop / Turn / River** | **Small Blind** – oder der erste noch aktive Sitz links vom Button | **Button** – oder der nächste aktive Sitz davor |
@@ -163,11 +170,11 @@ Also – **handeln die Blinds zuerst?** ==Preflop nein. Postflop ja.== Vor dem F
 
 Und zwischen den beiden Blinds: ==der Small Blind handelt auf jeder Street vor dem Big Blind==, preflop und postflop gleichermaßen – mit einer Ausnahme, Heads-up, weiter unten behandelt.
 
-Eine Nachbarfrage ist eine Zeile wert: Beim **Showdown** ist die Vorgabe, dass der letzte Spieler, der gesetzt oder geraist hat, zuerst aufdeckt (wird der River durchgecheckt, zeigt der erste aktive Sitz links vom Button) – die vollständige Etikette steht im [Showdown-Regeln-Leitfaden](/de/blog/holdem-showdown-rules). Für die komplette Straße-für-Straße-Abfolge einer Hand siehe [den Ablauf des Spiels](/de/blog/holdem-game-order).
+Eine Nachbarfrage ist eine Zeile wert: Beim **Showdown** ist die Vorgabe, dass der letzte Spieler, der gesetzt oder geraist hat, zuerst aufdeckt (wird der River durchgecheckt, zeigt der erste aktive Sitz links vom Button) – die vollständige Etikette steht im [Showdown-Regeln-Leitfaden](/de/blog/holdem-showdown-rules). Für die komplette Street-für-Street-Abfolge einer Hand siehe [den Ablauf des Spiels](/de/blog/holdem-game-order).
 
 ---
 
-## Poker-Positionen nach Spieleranzahl: Heads-up bis 10-händig (6-Max vs. Full Ring)
+## Wie ändern sich die Positionen am Tisch je nach Spieleranzahl? (6-Max vs. Full Ring)
 
 Die Positionsnamen ändern sich nicht mit der Tischgröße – ==sie fallen zuerst von der Early Position weg==, während Spieler entfernt werden. Button, Blinds, Cutoff und Hijack überleben am längsten; die UTG-Sitze existieren nur, wenn der Tisch voll ist. Hier die Map von 2 Spielern bis 10, in der Preflop-Handlungsreihenfolge aufgelistet:
 
@@ -181,7 +188,7 @@ Die Positionsnamen ändern sich nicht mit der Tischgröße – ==sie fallen zuer
 | **9 (Full Ring)** | UTG → UTG+1 → UTG+2 → LJ → HJ → CO → BTN → SB → BB |
 | **10** | UTG → UTG+1 → UTG+2 → UTG+3 → LJ → HJ → CO → BTN → SB → BB |
 
-**Heads-up ist das, was jedermanns Intuition bricht.** Mit nur zwei Spielern ==setzt der Button den Small Blind== – derselbe Sitz ist BTN und SB zugleich. Das bedeutet, der Button handelt ==preflop **zuerst**== (der Big Blind handelt zuletzt, wie immer), aber immer noch ==auf jeder Postflop-Straße **zuletzt**==, während der Big Blind postflop zuerst handelt. Jede andere Tischgröße folgt dem normalen Muster; einzig Heads-up verschmilzt den besten Sitz mit einem Blind.
+**Heads-up ist das, was jedermanns Intuition bricht.** Mit nur zwei Spielern ==setzt der Button den Small Blind== – derselbe Sitz ist BTN und SB zugleich. Das bedeutet, der Button handelt ==preflop **zuerst**== (der Big Blind handelt zuletzt, wie immer), aber immer noch ==auf jeder Postflop-Street **zuletzt**==, während der Big Blind postflop zuerst handelt. Jede andere Tischgröße folgt dem normalen Muster; einzig Heads-up verschmilzt den besten Sitz mit einem Blind.
 
 **6-Max vs. Full Ring** ist reine Subtraktion: Die drei zusätzlichen Sitze (UTG+1, UTG+2 und ein Middle-Sitz) existieren nicht, also läuft 6-Max UTG → HJ → CO → BTN → SB → BB. Die praktische Konsequenz ist, dass ==jeder 6-Max-Sitz „später“ spielt als sein Full-Ring-Namensvetter== – 6-Max-UTG hat fünf Gegner, nicht acht – weshalb sich die Ranges in Short-handed-Spielen auf ganzer Linie weiten. Die Sitz-für-Sitz-Zahlen stehen im [Positionsstrategie-Leitfaden](/de/blog/holdem-position-play), und die genauen Hände, die jede Range füllen, sind im [Starthände-Chart](/de/blog/holdem-starting-hands-chart) abgebildet.
 

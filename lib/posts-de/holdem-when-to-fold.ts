@@ -34,9 +34,9 @@ Mathe > Angst | Der einzige Grund zu folden – oder nicht
 
 ---
 
-## Was Folden wirklich ist (und warum es die unterschätzteste Fähigkeit ist)
+## Was bedeutet Folden im Poker – und warum ist es die unterschätzteste Fähigkeit?
 
-In jeder Hand hast du drei Optionen: betten/raisen, callen oder folden. Folden heißt, den Pot aufzugeben und keine weiteren Chips zu riskieren. Neue Spieler behandeln es als Verlieren. Gewinner behandeln es als ==Weigerung, mehr zu verlieren.==
+Steht eine Bet, hast du drei Optionen: folden, callen oder raisen. Steht keine an, hast du zwei: checken oder betten. Folden heißt, den Pot aufzugeben und keine weiteren Chips zu riskieren. Neue Spieler behandeln es als Verlieren. Gewinner behandeln es als ==Weigerung, mehr zu verlieren.==
 
 Hier ist die Idee, die alles neu einordnet: **der Erwartungswert eines Folds ist, ab dieser Entscheidung, null.** Wenn du wirklich geschlagen bist, ist jede andere Option *negativ* – callen kostet dich den Call, raisen kostet dich mehr. Null schlägt negativ. Folden gewinnt nicht den Pot, aber es gewinnt das lange Spiel, indem es keine Chips an Spots verschenkt, in denen du hinten liegst.
 
@@ -44,14 +44,17 @@ Ein präziser Vorbehalt, weil er wichtig ist: Folden ist *nicht kostenlos.* Die 
 
 ---
 
-## Wann du vor dem Flop foldest
+## Wann solltest du vor dem Flop folden?
+
+> **Kurze Antwort**
+> Bei der klaren Mehrheit deiner Starthände – ein solider Tight-Aggressive-Spieler legt **75–85%** vor dem Flop weg. Konkret: offsuit unverbundener Müll, schwache Asse aus früher Position, und alles, was auf deinem Chart für diesen Sitz nicht vorgesehen ist. Dazu Hände, die gegen einen tighten Raiser dominiert sind: dasselbe Ass mit dem schlechteren Kicker verliert langfristig Geld.
 
 Das größte Leak im Poker ist, zu viele Hände zu spielen, also ist der größte einzelne Fix, die meisten davon zu folden. **Ein solider Tight-Aggressive-Spieler foldet ungefähr 75–85% seiner Hände preflop** – eher 75–80% in 6-max-Spielen und 80–85% in Full-Ring. Falls das extrem klingt, denk daran: Die Hände, die du behältst, sind im Schnitt stärker als die deiner Gegner – genau da kommt dein Edge her.
 
 Folde preflop, wenn:
 
 - **Deine Hand einfach schwach oder Trash ist** – offsuit unverbundene Karten (J‑4, Q‑7, K‑3), schwache Asse (A‑7 offsuit und darunter aus frühen Positionen) und die meisten offsuit „eine hohe Karte“-Hände. Wenn sie für diese Position nicht auf deinem [Starthand-Chart](/de/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") steht, ab in den Muck.
-- **Du in früher Position sitzt** – du handelst auf jeder Street zuerst, also brauchst du eine stärkere Hand zum Einsteigen. K‑J offsuit ist ein Fold Under the Gun und ein Raise auf dem Button.
+- **Du in früher Position sitzt** – fast alle anderen entscheiden nach dir, und nach dem Flop handeln nur die Blinds vor dir, also brauchst du eine stärkere Hand zum Einsteigen. K‑J offsuit ist ein Fold Under the Gun und ein Raise auf dem Button.
 - **Du dominiert bist.** A‑9 offsuit gegen einen tighten Raiser aus früher Position ist meist geschlagen von dessen A‑T, A‑J, A‑Q, A‑K – dasselbe Ass, schlechterer Kicker. Domination ist der leise Killer; folde, statt am Kicker unterzugehen.
 - **Du einer [3-Bet](/de/blog/holdem-3bet) mit dem schwächeren Teil deiner Range gegenüberstehst.** Du hast breit geöffnet, also foldet der Großteil dieser Range gegen einen Re-Raise – mach mit deinen besten Händen weiter und lass den Rest gehen. Gegen eine große **4-Bet** foldest du deine kleinen Paare und spekulativen suited Hände; ihre Implied Odds sind kollabiert.
 
@@ -59,7 +62,10 @@ Die eine Hand, die du im Cashgame vor dem Flop im Grunde *nie* foldest, ist ein 
 
 ---
 
-## Wann du nach dem Flop foldest – Street für Street
+## Wann solltest du nach dem Flop folden? Street für Street
+
+> **Kurze Antwort**
+> Am Flop foldest du, wenn du nichts getroffen hast und keine Odds für einen Draw bekommst. Am Turn, wenn deine Hand nicht besser geworden ist und die Bets größer werden. Am River gibt es keine Outs mehr – dort zählt nur noch, ob die Geschichte deines Gegners deine Hand schlägt.
 
 Postflop-Folden ist der Ort, an dem echtes Geld gespart wird, und jede Street stellt eine andere Frage.
 
@@ -73,7 +79,10 @@ Postflop-Folden ist der Ort, an dem echtes Geld gespart wird, und jede Street st
 
 ---
 
-## Die Mathematik des Foldens: die Pot-Odds-Grenze
+## Wann sagt dir die Mathematik, dass du folden musst? Die Pot-Odds-Grenze
+
+> **Kurze Antwort**
+> Sobald deine Gewinnchance kleiner ist als der Preis, den du bezahlst. Rechne den Call gegen den **Endpot**: dein Einsatz geteilt durch das, was nach deinem Call in der Mitte liegt. Gegen eine Half-Pot-Bet sind das 25%, gegen eine Pot-Bet rund 33%. Liegt deine tatsächliche Chance darunter, verliert der Call auf Dauer Geld – egal wie stark sich die Hand anfühlt.
 
 Enge Calls sind kein Gefühl – sie sind ein Bruch. Um eine Bet profitabel zu callen, muss deine Gewinnchance den Preis übersteigen, den man dir bietet. Merk dir diese Tabelle, und die Hälfte deiner harten Spots löst sich von selbst:
 
@@ -97,7 +106,10 @@ Dieselbe Hand, gegensätzliche Entscheidungen – weil sich der *Preis* geänder
 
 ---
 
-## Der schwerste Fold: eine gute Hand loslassen
+## Wann lässt du eine gute Hand los? Der schwerste Fold
+
+> **Kurze Antwort**
+> Wenn ihre Stärke nur noch absolut ist und nicht mehr relativ. Der Auslöser liegt fast nie in deinen zwei Karten, sondern im Kontrast: ein Gegner, der die ganze Hand über passiv war und plötzlich groß raist, auf einem Board, das genau seine Calls trifft. Wer nur auf die eigene Handstärke schaut, sieht diesen Wechsel nie.
 
 Trash zu folden ist einfach. Eine *gute* Hand zu folden – Top Pair, ein Overpair, sogar ein Set – ist das, was gewinnende Spieler vom Rest trennt. Die mentale Falle ist der Gedanke „das ist eine starke Hand“, wenn die einzige Frage, die zählt, lautet: „ist sie *gerade jetzt, gegen diese Linie* stark?“
 
@@ -121,7 +133,10 @@ Das Spiegelbild zählt auch, denn **Folden kann selbst ein Leak sein.** Ein *gut
 
 ---
 
-## Die Psychologie des Foldens: Sunk Cost, Ego und Angst
+## Warum fällt Folden so schwer? Sunk Cost, Ego und Angst
+
+> **Kurze Antwort**
+> Weil die Gründe nicht in den Karten liegen. Bereits investierte Chips gehören nicht mehr dir – trotzdem fühlen sie sich wie ein Anspruch an (Sunk Cost). Dazu kommt der Wunsch, nicht als Feigling dazustehen, und die Angst, ausgerechnet diesmal geblufft zu werden. Alle drei kosten weit mehr als der eine Bluff, den du irgendwann durchlässt.
 
 Hier ist das Geheimnis, das die Strategie-Charts dir nicht verraten: **die meisten schlechten Calls sind keine Lesefehler – sie sind emotionale.** Drei Übeltäter richten den Schaden an.
 
@@ -155,7 +170,7 @@ Beachte, was die letzte Frage *nicht* ist. Eine Value-Bet muss die **Calling**-R
 
 ---
 
-## Ein echter Laydown, Hand für Hand
+## Wie sieht ein echter Laydown aus? Hand für Hand
 
 Hier ist ein Fold, auf den ich stolz bin, so ausbuchstabiert, dass du ihn selbst überprüfen kannst. $1/$2 Cashgame, 100bb tief.
 
@@ -168,7 +183,7 @@ Rechnen wir es aus. Meine besten fünf Karten sind ==K♣ K♦ 9♠ 9♥ A♥== 
 
 ---
 
-## Die 7 häufigsten Fold-Fehler
+## Welche Fold-Fehler kosten am meisten? Die häufigsten sieben
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -203,7 +218,7 @@ A. Folde immer dann, wenn Callen oder Raisen auf lange Sicht Geld verliert: wenn
 
 A. Ein solider Tight-Aggressive-Spieler foldet ungefähr 75–85% seiner Hände vor dem Flop – eher 75–80% in 6-max-Spielen und 80–85% in Full-Ring. Weniger, stärkere Hände zu spielen, ist der größte einzelne Fix für die meisten verlierenden Spieler. Wenn du weit mehr als ein Fünftel deiner Hände einsteigst, spielst du fast sicher zu viele.
 
-**Q. Wann sollte man eine gute Hand folden?**
+**Q. Woran erkennst du, dass deine gute Hand geschlagen ist?**
 
 A. Folde eine starke Hand, wenn die Action dir sagt, dass sie geschlagen ist: Top Pair oder ein Overpair gegenüber schwerer Aggression über mehrere Streets, besonders gegenüber einem Raise von einem passiven Spieler oder einem River mit Scare Card, der offensichtliche Draws komplettiert. Top Pair ist nicht die Spitze deiner Range in einem großen Pot. Ein disziplinierter Laydown einer geschlagenen starken Hand ist ein gewinnender Move, kein schwacher.
 

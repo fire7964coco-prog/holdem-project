@@ -9,6 +9,7 @@ export const POST: Post = {
   category: "strategy",
   date: "2026-06-18",
   updated: "2026-08-10",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "16 Min.",
   emoji: "🎯",
@@ -57,7 +58,7 @@ Für jeden Sitznamen, jede Abkürzung und die komplette 6-max- vs. 9-max-Tischka
 
 ---
 
-## Was ist „out of Position“ (OOP) – und warum dich zuerst zu handeln teuer kommt
+## Warum kostet dich „out of Position“ (OOP) so viel?
 
 **Out of Position** bedeutet, dass du auf den Postflop-Streets **vor** deinem Gegner handelst. Jede Entscheidung, die du triffst, liefert ihm Gratis-Information, und jede Entscheidung, die er trifft, kommt nach deiner an – zu spät, um dir zu helfen.
 
@@ -94,11 +95,14 @@ Nimm 8♥7♥ auf einem K♥4♠2♥-Flop. In Position spielt sich dein Flushdra
 
 ---
 
-## Die beste Position im Poker – und die schlechteste
+## Welche ist die beste Position im Poker – und welche die schlechteste?
+
+> **Kurze Antwort**
+> Am besten der **Button**, am schlechtesten der **Small Blind** – und dazwischen steigt der Wert eines Sitzes stetig, je später er handelt. Der Abstand zwischen diesen beiden Plätzen ist größer als der zwischen zwei benachbarten Starthänden: Dieselben Karten sind an einem Sitz profitabel und am anderen ein Verlustgeschäft.
 
 **Die beste Position im Poker ist der Button.** Es ist der einzige Sitz, der garantiert ==**auf jeder Postflop-Street zuletzt handelt**== – Flop, Turn und River, egal wer preflop geraist hat. Diese Garantie ist der Grund, warum der Button profitabel ~43% der Hände öffnen kann, während UTG nur ~13% schafft: Position, nicht Kartenstärke, finanziert den Unterschied.
 
-Hier ist der Button-Vorteil in einer konkreten Hand. Du öffnest A♦9♦ am Button, der Big Blind callt, und der Flop kommt **K♦7♠2♥** – ein trockenes Board, das fast niemanden trifft. Der Big Blind checkt. Du hast komplett verfehlt, aber dieser Check hat dir gerade verraten, dass er wahrscheinlich auch verfehlt hat. ==g:Eine Bet gewinnt hier weit öfter, als sie verliert==, und wenn er foldet, nimmt Ass-hoch den Pot ohne Showdown. Jetzt dreh die Sitze um: OOP mit denselben A♦9♦ checkst du, er bettet, und du foldest einen bedeutsamen Teil der Zeit die beste Hand. Gleiche Karten; der Sitz hat die ganze Arbeit gemacht.
+Hier ist der Button-Vorteil in einer konkreten Hand. Du öffnest A♦9♦ am Button, der Big Blind callt, und der Flop kommt **K♦7♠2♥** – ein trockenes Board, das fast niemanden trifft. Der Big Blind checkt – was hier fast nichts verrät, denn auf diesem Board checkt er praktisch seine ganze Range. Die Information steckt woanders: Ein König trifft deine Open-Range weit häufiger als seine Call-Range. ==g:Eine Bet gewinnt hier weit öfter, als sie verliert==, und wenn er foldet, nimmt Ass-hoch den Pot ohne Showdown. Jetzt dreh die Sitze um: OOP mit denselben A♦9♦ checkst du, er bettet, und du foldest einen bedeutsamen Teil der Zeit die beste Hand. Gleiche Karten; der Sitz hat die ganze Arbeit gemacht.
 
 Der **Cutoff** ist aus einem Grund zweitbester: nur der Button handelt hinter dir, und wenn der Button foldet – was oft passiert – erbst du für den Rest der Hand die letzte Aktion.
 
@@ -119,7 +123,7 @@ Die Unterscheidung zählt: der **Big Blind verliert die meisten reinen Chips pro
 
 ---
 
-## Under the Gun: was es bedeutet und wie man UTG spielt
+## Was ist Under the Gun (UTG) – und wie spielst du dort?
 
 **Under the Gun (UTG)** ist der Sitz unmittelbar links vom Big Blind – der erste Spieler, der preflop handelt, mit null Information über die acht Hände hinter ihm. Der Name ist die Strategie: du stehst *under the Gun*, unter Druck, gezwungen, dich zuerst festzulegen. (Postflop ändert sich die Reihenfolge übrigens: die Blinds handeln zuerst und der Button zuletzt – UTGs Fluch ist es, preflop blind zu öffnen und dann meist OOP gegen Caller aus später Position zu spielen.)
 
@@ -133,7 +137,7 @@ UTG gut zu spielen dreht sich vor allem um Zurückhaltung:
 
 ---
 
-## Ist es besser, aus UTG zu limpen oder zu raisen?
+## Warum ist Limpen aus UTG teurer als Raisen?
 
 **Raisen oder folden – nicht limpen.** Ist eine Hand stark genug, um vom schlechtesten Preflop-Sitz gespielt zu werden, ist sie stark genug zum Raisen; ist sie nicht stark genug zum Raisen, ist es genau die Falle, die der Sitz für dich stellt, sie für den Rest der Hand OOP gegen mehrere Gegner zu spielen.
 
@@ -147,7 +151,7 @@ Es gibt eine schmale Ausnahme in sehr passiven Live-Spielen – hinter anderen L
 
 ---
 
-## Frühe Position vs späte Position (Blinds stehlen)
+## Was ändert sich zwischen früher und später Position? (Blinds stehlen)
 
 Frühe Position ist, wo du verteidigst; späte Position ist, wo du angreifst. Von UTG bis UTG+2 ist die Aufgabe simpel – enge Range, große Karten, keine Fancy Plays. Ab dem Cutoff und Button ändert sich die Aufgabe komplett: du wartest nicht mehr auf Hände, ==g:du erntest totes Geld.==
 
@@ -163,7 +167,10 @@ Die Asymmetrie ist die Lektion: dasselbe K7s, das ein feiner Button-Steal ist, i
 
 ---
 
-## Open-Ranges nach Position: der Strategie-Chart
+## Wie weit solltest du aus jeder Position öffnen? Der Range-Chart
+
+> **Kurze Antwort**
+> Eng aus früher Position, deutlich weiter aus später. Aus UTG öffnest du im Full Ring nur einen kleinen Teil deiner Hände, am Button ein Vielfaches davon – nicht weil die Karten dort besser werden, sondern weil weniger Spieler hinter dir noch eine Hand haben. Das Chart unten macht das Platz für Platz konkret.
 
 Jeder Sitz bekommt seine eigene Open-Range, weil **die Anzahl der noch handelnden Spieler – und deine Postflop-Position gegen sie – das Risiko jeder Hand ändert**. Hier ist die Standard-9-max-Baseline:
 
@@ -187,7 +194,7 @@ Diese Prozente beschreiben *Range-Größen* – welche konkreten Hände sie fül
 
 ---
 
-## Wie man out of Position spielt (wenn du nicht drumherum kommst)
+## Wie spielst du out of Position, wenn es nicht anders geht?
 
 Die meisten Leitfäden hören bei „spiel nicht OOP“ auf. Schön – aber du bist zweimal pro Runde in den Blinds, und manchmal wird dein UTG-Open vom Button gecallt. So verlierst du am wenigsten und drehst gelegentlich den Spieß um:
 
@@ -203,9 +210,9 @@ Die meisten Leitfäden hören bei „spiel nicht OOP“ auf. Schön – aber du 
 
 ---
 
-## Wie beeinflusst Position die C-Bet-Frequenz?
+## Warum c-bettest du in Position häufiger?
 
-Massiv. Die Continuation Bet ist im Grunde ein Informations-Play, und Information ist genau das, was Position liefert:
+Sehr stark – und der Grund ist Information. Die Continuation Bet ist im Grunde ein Informations-Play, und Information ist genau das, was Position liefert:
 
 | Situation | Typische Solver-C-Bet-Frequenz (Flop) |
 |---|---|
@@ -233,7 +240,7 @@ Für die Mechanik der Blinds selbst – warum es sie gibt und wie die Pflichtein
 
 ---
 
-## 6-Max vs Full Ring – und Turniere vs Cash
+## Was ändert sich zwischen 6-Max und Full Ring – und zwischen Turnier und Cash?
 
 **6-Max staucht die Karte zusammen.** Mit drei entfernten frühen Sitzen steht der erste Spieler in 6-Max nur fünf Gegnern gegenüber – also ==**spielt 6-Max-UTG wie Full-Ring-Lojack und öffnet um die ~17%**== statt der ~13% von Full-Ring-UTG. Jeder andere Sitz verbreitert sich ähnlich, Steals kommen öfter, und 3-Bets sind insgesamt häufiger. Das häufigste Leck beim Formatwechsel ist, 9-max-Enge in 6-Max mitzuschleppen – du foldest dich vom Tisch.
 
