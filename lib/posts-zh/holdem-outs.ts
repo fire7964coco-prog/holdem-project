@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "补牌（outs）就是牌堆里剩下、能让你成牌的牌张数。先数出补牌，再用二四法则换算：翻牌圈 ×4、转牌圈 ×2，就是你击中的大致胜率。同花听牌 9 张补牌 ≈ 到河牌 35%、转牌单张 19.1%。",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-07-24",
-  masterUpdated: "2026-07-19",
+  updated: "2026-08-11",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "11 分钟",
   emoji: "🎯",
@@ -89,7 +89,7 @@ export const POST: Post = {
 
 ## 补牌换赔率：换算对照表
 
-数补牌只有在你把它变成一个能跟对手给你的价钱去比的百分比之后，才有用。这是那张总表——到河牌击中的赔率，外加当你已经在转牌圈时的单张赔率：
+数补牌只有在你把它变成一个能跟对手给你的价钱去比的百分比之后，才有用。这是那张总表——到河牌击中的赔率，外加从翻牌圈只看下一张牌时的单张赔率：
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

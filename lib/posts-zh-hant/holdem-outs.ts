@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "補牌就是牌堆裡還能把你這手變成大牌的牌。先數清楚，再換算：翻牌圈補牌 × 4、轉牌圈 × 2，就是你成牌的大概機率。同花聽牌是 9 張補牌，到河牌約 35%。",
   category: "odds",
   date: "2026-07-23",
-  updated: "2026-07-23",
-  masterUpdated: "2026-07-19",
+  updated: "2026-08-11",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "11 分鐘",
   emoji: "🎯",
@@ -89,7 +89,7 @@ export const POST: Post = {
 
 ## outs → 勝率：換算對照表
 
-補牌要換成一個你能拿去跟價錢比的百分比，才真的有用。這是那張主表——到河牌成牌的機率，外加你已經走到轉牌圈時只看一張牌的機率：
+補牌要換成一個你能拿去跟價錢比的百分比，才真的有用。這是那張主表——到河牌成牌的機率，外加從翻牌圈只看下一張牌的機率：
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

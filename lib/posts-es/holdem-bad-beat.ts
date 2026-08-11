@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un bad beat es cuando metes las fichas siendo favorito clarísimo —normalmente 80% o más— y pierdes porque tu rival liga una carta afortunada para 'cazarte' (suck out). A diferencia de un cooler, ibas por delante todo el rato; la baraja simplemente te traicionó al final. Duele, pero los bad beats son en realidad señal de que juegas en una partida rentable.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-07-24",
-  masterUpdated: "2026-07-19",
+  updated: "2026-08-11",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💔",
@@ -88,11 +88,11 @@ Todo bad beat tiene la misma forma: eres el favorito, el desfavorecido necesita 
 
 | El bad beat | Tenías | Ibas | Cómo pasa |
 |:---|:---|:---:|:---|
-| **Ases rotos por un trío** | AA vs una pareja menor (p. ej. 7‑7) | ~80% (4:1) | Su pareja liga trío en flop o river |
+| **Ases rotos por un trío** | AA vs una pareja menor (p. ej. 7‑7) | ~80% (4:1) | Su pareja liga trío en el flop, el turn o el river |
 | **Ases vs una mano cualquiera** | AA all-in preflop | ~85% | Dos cartas cualesquiera te adelantan |
 | **Sobrepar vs proyecto de color** | Sobrepar en el flop | ~65% (2:1) | Su proyecto de color de 9 outs se completa en el river |
 | **Runner-runner** | Una mano hecha por delante en el flop | ~90%+ | Dos cartas perfectas (turn *y* river) completan un proyecto |
-| **El one-outer** | Una mano casi blindada | ~98%+ | La única carta que queda en la baraja te gana |
+| **El one-outer** | Una mano casi blindada | ~96% | La única carta que queda en la baraja te gana |
 
 </div>
 

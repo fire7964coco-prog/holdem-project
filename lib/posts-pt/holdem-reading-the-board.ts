@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "No Texas Hold'em você sempre joga a melhor mão de 5 cartas entre 7 (2 cartas na mão + 5 comunitárias) — usando as duas cartas, uma só, ou nenhuma (jogar a mesa). Varra as 7 cartas numa ordem fixa: flush → sequência → valores pareados → carta alta.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-08-10",
-  masterUpdated: "2026-08-10",
+  updated: "2026-08-11",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🃏",
@@ -50,9 +50,9 @@ No Texas Hold'em você recebe 2 cartas na mão, e a mesa acaba mostrando 5 carta
 
 | Quantas cartas da mão você usa | Como fica | Frequência |
 |------|------|------|
-| **As duas** | Suas duas cartas se conectam com três cartas da mesa | Mais comum |
-| **Uma** | Uma carta pareia ou completa algo; a outra fica de fora | Muito comum |
-| **Nenhuma ("jogar a mesa")** | As 5 cartas comunitárias já são suas melhores 5 | Raro |
+| **As duas** | Suas duas cartas se conectam com três cartas da mesa | 10 das 21 formas |
+| **Uma** | Uma carta pareia ou completa algo; a outra fica de fora | 10 das 21 formas |
+| **Nenhuma ("jogar a mesa")** | As 5 cartas comunitárias já são suas melhores 5 | 1 das 21 formas |
 
 Três exemplos rápidos, todos resolvidos:
 

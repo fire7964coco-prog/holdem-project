@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "En Texas Hold'em siempre juegas la mejor mano de 5 cartas entre 7 (2 cartas propias + 5 cartas comunitarias) — usando las dos, una, o ninguna (jugar con la mesa). Repasa las 7 cartas en un orden fijo: color → escalera → parejas → carta alta.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-08-10",
-  masterUpdated: "2026-08-10",
+  updated: "2026-08-11",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🃏",
@@ -50,9 +50,9 @@ En Texas Hold'em recibes 2 cartas propias, y la mesa acaba mostrando 5 cartas co
 
 | Cuántas cartas propias usas | Cómo se ve | Frecuencia |
 |------|------|------|
-| **Las dos** | Tus dos cartas conectan con tres cartas de la mesa | Lo más común |
-| **Una** | Una carta empareja o completa algo; la otra se queda fuera | Muy común |
-| **Ninguna ("jugar con la mesa")** | Las 5 cartas comunitarias ya son tus mejores 5 | Raro |
+| **Las dos** | Tus dos cartas conectan con tres cartas de la mesa | 10 de las 21 formas |
+| **Una** | Una carta empareja o completa algo; la otra se queda fuera | 10 de las 21 formas |
+| **Ninguna ("jugar con la mesa")** | Las 5 cartas comunitarias ya son tus mejores 5 | 1 de las 21 formas |
 
 Tres ejemplos rápidos, resueltos por completo:
 

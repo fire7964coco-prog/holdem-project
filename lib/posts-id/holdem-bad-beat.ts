@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Bad beat adalah saat uang Anda masuk sebagai favorit berat — biasanya 80% atau lebih — dan Anda kalah karena lawan menangkap kartu beruntung untuk 'suck out' pada Anda. Berbeda dengan cooler, Anda unggul sepanjang tangan; hanya di akhir kartu berkhianat. Perih, tapi bad beat sebenarnya tanda Anda bermain di permainan yang menguntungkan.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-07-05",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "11 mnt",
   emoji: "💔",
@@ -87,11 +87,11 @@ Setiap bad beat punya bentuk yang sama: Anda favorit, underdog butuh bantuan, da
 
 | Kekalahannya | Anda pegang | Anda | Bagaimana terjadinya |
 |:---|:---|:---:|:---|
-| **Aces dihancurkan set** | AA vs pair lebih rendah (mis. 7‑7) | ~80% (4:1) | Pair mereka flop atau river sebuah set |
+| **Aces dihancurkan set** | AA vs pair lebih rendah (mis. 7‑7) | ~80% (4:1) | Pair mereka kena set di flop, turn, atau river |
 | **Aces vs tangan acak** | AA all-in preflop | ~85% | Dua kartu apa pun mengejar Anda |
 | **Overpair vs flush draw** | Overpair di flop | ~65% (2:1) | Flush draw 9-out mereka lengkap di river |
 | **Runner-runner** | Made hand unggul di flop | ~90%+ | Dua kartu sempurna (turn *dan* river) melengkapi draw |
-| **One-outer** | Tangan hampir terkunci | ~98%+ | Satu-satunya kartu tersisa di dek mengalahkan Anda |
+| **One-outer** | Tangan hampir terkunci | ~96% | Satu-satunya kartu tersisa di dek mengalahkan Anda |
 
 </div>
 

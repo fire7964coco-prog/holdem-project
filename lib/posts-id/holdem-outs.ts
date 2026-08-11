@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Sebuah out adalah kartu mana pun yang tersisa di deck yang mengubah tangan Anda menjadi kemungkinan pemenang. Hitung, lalu konversi: kalikan outs dengan 4 di flop atau dengan 2 di turn untuk mendapat persen kasar Anda. Flush draw adalah 9 outs ≈ 36% hingga river.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-07-03",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🎯",
@@ -88,7 +88,7 @@ Dua combo draw di atas adalah tempat pemain gagal berhitung, jadi keduanya menda
 
 ## Outs ke Odds: Chart Konversi
 
-Menghitung outs baru berguna setelah Anda mengubahnya menjadi persentase yang bisa dibandingkan dengan harga yang ditawarkan. Inilah tabel utamanya — odds untuk hit hingga river, plus odds satu-kartu untuk saat Anda sudah di turn:
+Menghitung outs baru berguna setelah Anda mengubahnya menjadi persentase yang bisa dibandingkan dengan harga yang ditawarkan. Inilah tabel utamanya — odds untuk hit hingga river, plus odds satu-kartu untuk kartu berikutnya setelah flop:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

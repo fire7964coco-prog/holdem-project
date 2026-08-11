@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "An out is any card left in the deck that improves your hand to a likely winner. Count them, then convert: multiply outs by 4 on the flop or by 2 on the turn to get your rough % to hit. A flush draw is 9 outs ≈ 36% by the river.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-07-19",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🎯",
@@ -88,7 +88,7 @@ The two combo draws at the top are where players fumble the arithmetic, so they 
 
 ## Outs to Odds: The Conversion Chart
 
-Counting outs is only useful once you turn them into a percentage you can compare to the price you're being offered. Here's the master table — the odds of hitting by the river, plus the one-card odds for when you're already on the turn:
+Counting outs is only useful once you turn them into a percentage you can compare to the price you're being offered. Here's the master table — the odds of hitting by the river, plus the one-card odds for the very next card off the flop:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

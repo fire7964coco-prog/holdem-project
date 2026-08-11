@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Im Texas Hold'em spielst du immer die beste 5-Karten-Hand aus 7 (2 Hole Cards + 5 Gemeinschaftskarten) – mit beiden Hole Cards, einer oder gar keiner („playing the board“). Scanne alle 7 Karten in fester Reihenfolge: Flush → Straße → gepaarte Ränge → High Card.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-08-10",
-  masterUpdated: "2026-08-10",
+  updated: "2026-08-11",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "🃏",
@@ -50,9 +50,9 @@ Im Texas Hold'em bekommst du 2 Hole Cards, und das Board zeigt am Ende 5 Gemeins
 
 | Wie viele Hole Cards du nutzt | Wie es aussieht | Wie häufig |
 |------|------|------|
-| **Beide** | Deine zwei Karten verbinden sich mit drei Board-Karten | Am häufigsten |
-| **Eine** | Eine Karte paart oder komplettiert etwas; die andere bleibt außen vor | Sehr häufig |
-| **Keine („playing the board“)** | Die 5 Gemeinschaftskarten sind bereits deine besten 5 | Selten |
+| **Beide** | Deine zwei Karten verbinden sich mit drei Board-Karten | 10 von 21 Wegen |
+| **Eine** | Eine Karte paart oder komplettiert etwas; die andere bleibt außen vor | 10 von 21 Wegen |
+| **Keine („playing the board“)** | Die 5 Gemeinschaftskarten sind bereits deine besten 5 | 1 von 21 Wegen |
 
 Drei schnelle Beispiele, komplett durchgerechnet:
 

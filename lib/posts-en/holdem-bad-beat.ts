@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A bad beat is when you get your money in as a heavy favorite — usually 80% or more — and lose because your opponent hits a lucky card to 'suck out' on you. Unlike a cooler, you were ahead the whole way; the deck just betrayed you at the end. It stings, but bad beats are actually a sign you're playing in a profitable game.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-07-19",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💔",
@@ -87,11 +87,11 @@ Every bad beat has the same shape: you're the favorite, the underdog needs help,
 
 | The beat | You had | You were | How it happens |
 |:---|:---|:---:|:---|
-| **Aces cracked by a set** | AA vs a lower pair (e.g. 7‑7) | ~80% (4:1) | Their pair flops or rivers a set |
+| **Aces cracked by a set** | AA vs a lower pair (e.g. 7‑7) | ~80% (4:1) | Their pair hits a set on the flop, turn or river |
 | **Aces vs a random hand** | AA all-in preflop | ~85% | Any two cards run you down |
 | **Overpair vs a flush draw** | Overpair on the flop | ~65% (2:1) | Their 9-out flush draw fills on the river |
 | **Runner-runner** | A made hand ahead on the flop | ~90%+ | Two perfect cards (turn *and* river) complete a draw |
-| **The one-outer** | A near-locked hand | ~98%+ | The single card left in the deck beats you |
+| **The one-outer** | A near-locked hand | ~96% | The single card left in the deck beats you |
 
 </div>
 

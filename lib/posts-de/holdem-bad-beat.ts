@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ein Bad Beat ist, wenn du dein Geld als klarer Favorit reinbekommst – meist mit 80% oder mehr – und verlierst, weil dein Gegner eine Glückskarte trifft und auf dich „suckt“. Anders als beim Cooler warst du die ganze Zeit vorne; das Deck hat dich erst am Ende verraten. Es schmerzt, aber Bad Beats sind eigentlich ein Zeichen, dass du in einem profitablen Spiel sitzt.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-08-10",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "💔",
@@ -87,11 +87,11 @@ Jeder Bad Beat hat dieselbe Form: du bist der Favorit, der Underdog braucht Hilf
 
 | Der Beat | Du hattest | Du warst | Wie es passiert |
 |:---|:---|:---:|:---|
-| **Asse geknackt durch ein Set** | AA vs ein kleineres Paar (z.B. 7‑7) | ~80% (4:1) | Ihr Paar floppt oder rivert ein Set |
+| **Asse geknackt durch ein Set** | AA vs ein kleineres Paar (z.B. 7‑7) | ~80% (4:1) | Ihr Paar trifft ein Set am Flop, Turn oder River |
 | **Asse vs eine zufällige Hand** | AA all-in preflop | ~85% | Zwei beliebige Karten überrennen dich |
 | **Overpair vs ein Flushdraw** | Overpair auf dem Flop | ~65% (2:1) | Ihr 9-Out-Flushdraw füllt sich auf dem River |
 | **Runner-Runner** | Eine fertige Hand vorne auf dem Flop | ~90%+ | Zwei perfekte Karten (Turn *und* River) vervollständigen einen Draw |
-| **Der One-Outer** | Eine fast sichere Hand | ~98%+ | Die einzige übrige Karte im Deck schlägt dich |
+| **Der One-Outer** | Eine fast sichere Hand | ~96% | Die einzige übrige Karte im Deck schlägt dich |
 
 </div>
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ein Out ist jede Karte im Deck, die deine Hand zu einem wahrscheinlichen Gewinner verbessert. Zähle sie, dann rechne um: multipliziere die Outs am Flop mit 4 oder am Turn mit 2 für deinen groben Prozentwert. Ein Flushdraw sind 9 Outs ≈ 36% bis zum River.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-08-10",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "🎯",
@@ -88,7 +88,7 @@ Die zwei Combo-Draws ganz oben sind die Stelle, an der Spieler die Rechnung verh
 
 ## Outs zu Odds: Die Umrechnungstabelle
 
-Outs zählen ist erst nützlich, sobald du sie in einen Prozentwert verwandelst, den du mit dem gebotenen Preis vergleichen kannst. Hier ist die Master-Tabelle – die Odds, bis zum River zu treffen, plus die Ein-Karten-Odds, wenn du schon am Turn bist:
+Outs zählen ist erst nützlich, sobald du sie in einen Prozentwert verwandelst, den du mit dem gebotenen Preis vergleichen kannst. Hier ist die Master-Tabelle – die Odds, bis zum River zu treffen, plus die Ein-Karten-Odds für die nächste Karte nach dem Flop:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

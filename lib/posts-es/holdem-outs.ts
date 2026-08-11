@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un out es cualquier carta que queda en la baraja y convierte tu mano en una probable ganadora. Cuéntalos y conviértelos: multiplica los outs por 4 en el flop o por 2 en el turn para tu % aproximado de ligar. Un proyecto de color son 9 outs ≈ 36% para el river.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-07-24",
-  masterUpdated: "2026-07-19",
+  updated: "2026-08-11",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🎯",
@@ -89,7 +89,7 @@ Los dos proyectos combinados de arriba son donde los jugadores se equivocan con 
 
 ## De outs a odds: la tabla de conversión
 
-Contar outs solo sirve cuando lo conviertes en un porcentaje que puedas comparar con el precio que te ofrecen. Aquí tienes la tabla maestra — las odds de ligar para el river, más las odds a una carta para cuando ya estás en el turn:
+Contar outs solo sirve cuando lo conviertes en un porcentaje que puedas comparar con el precio que te ofrecen. Aquí tienes la tabla maestra — las odds de ligar para el river, más las odds a una carta para la siguiente carta después del flop:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

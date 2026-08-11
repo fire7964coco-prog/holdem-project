@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In Texas Hold'em you always play the best 5-card hand from 7 (2 hole cards + 5 community cards) — using both hole cards, one, or none at all (playing the board). Scan all 7 cards in a fixed order: flush → straight → paired ranks → high card.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-08-10",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🃏",
@@ -49,9 +49,9 @@ In Texas Hold'em you are dealt 2 hole cards, and the board eventually shows 5 co
 
 | How many hole cards you use | What it looks like | How common |
 |------|------|------|
-| **Both** | Your two cards connect with three board cards | Most common |
-| **One** | One card pairs or completes something; the other sits out | Very common |
-| **None ("playing the board")** | The 5 community cards are already your best 5 | Rare |
+| **Both** | Your two cards connect with three board cards | 10 of the 21 ways |
+| **One** | One card pairs or completes something; the other sits out | 10 of the 21 ways |
+| **None ("playing the board")** | The 5 community cards are already your best 5 | 1 of the 21 ways |
 
 Three quick examples, fully worked out:
 

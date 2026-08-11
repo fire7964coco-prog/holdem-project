@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Di Texas Hold'em Anda selalu memainkan tangan 5-kartu terbaik dari 7 (2 kartu tertutup + 5 kartu komunitas) — memakai kedua kartu tertutup, satu, atau tak satu pun (main dengan board). Pindai ketujuh kartu dengan urutan tetap: flush → straight → nilai berpasangan → kartu tinggi.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-08-10",
-  masterUpdated: "2026-08-10",
+  updated: "2026-08-11",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "11 mnt",
   emoji: "🃏",
@@ -50,9 +50,9 @@ Di Texas Hold'em Anda dibagikan 2 kartu tertutup, dan board akhirnya menampilkan
 
 | Berapa kartu tertutup yang Anda pakai | Bentuknya | Seberapa umum |
 |------|------|------|
-| **Keduanya** | Dua kartu Anda nyambung dengan tiga kartu board | Paling umum |
-| **Satu** | Satu kartu berpasangan atau melengkapi sesuatu; yang lain tak terpakai | Sangat umum |
-| **Tak satu pun ("main dengan board")** | 5 kartu komunitas sudah jadi 5 terbaik Anda | Jarang |
+| **Keduanya** | Dua kartu Anda nyambung dengan tiga kartu board | 10 dari 21 cara |
+| **Satu** | Satu kartu berpasangan atau melengkapi sesuatu; yang lain tak terpakai | 10 dari 21 cara |
+| **Tak satu pun ("main dengan board")** | 5 kartu komunitas sudah jadi 5 terbaik Anda | 1 dari 21 cara |
 
 Tiga contoh cepat, dihitung tuntas:
 

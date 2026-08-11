@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Um out é qualquer carta que sobrou no baralho e melhora sua mão para uma provável vencedora. Conte-os e converta: multiplique os outs por 4 no flop ou por 2 no turn para a % aproximada de acertar. Um projeto de flush são 9 outs ≈ 36% até o river.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-07-03",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🎯",
@@ -88,7 +88,7 @@ Os dois projetos combinados no topo são onde os jogadores erram a conta, então
 
 ## Outs para odds: a tabela de conversão
 
-Contar outs só é útil depois que você as transforma em uma porcentagem que dá para comparar com o preço que está sendo oferecido. Aqui está a tabela mestra — as odds de acertar até o river, mais as odds de uma carta para quando você já está no turn:
+Contar outs só é útil depois que você as transforma em uma porcentagem que dá para comparar com o preço que está sendo oferecido. Aqui está a tabela mestra — as odds de acertar até o river, mais as odds de uma carta para a próxima carta depois do flop:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

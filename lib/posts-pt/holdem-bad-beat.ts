@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Um bad beat é quando você coloca suas fichas como favorito pesado — geralmente 80% ou mais — e perde porque o adversário pega uma carta de sorte pra dar um 'suck out' em você. Diferente de um cooler, você estava na frente o tempo todo; o baralho só te traiu no fim. Dói, mas bad beats são na verdade um sinal de que você está jogando num jogo lucrativo.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-07-05",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💔",
@@ -87,11 +87,11 @@ Todo bad beat tem a mesma forma: você é o favorito, o azarão precisa de ajuda
 
 | A batida | Você tinha | Você era | Como acontece |
 |:---|:---|:---:|:---|
-| **Ases quebrados por uma trinca** | AA vs um par menor (ex. 7‑7) | ~80% (4:1) | O par deles floppa ou rivera uma trinca |
+| **Ases quebrados por uma trinca** | AA vs um par menor (ex. 7‑7) | ~80% (4:1) | O par deles acerta uma trinca no flop, no turn ou no river |
 | **Ases vs uma mão aleatória** | AA all-in preflop | ~85% | Quaisquer duas cartas te atropelam |
 | **Overpair vs um flush draw** | Overpair no flop | ~65% (2:1) | O flush draw de 9 outs deles fecha no river |
 | **Runner-runner** | Uma mão feita na frente no flop | ~90%+ | Duas cartas perfeitas (turn *e* river) completam um projeto |
-| **O one-outer** | Uma mão quase travada | ~98%+ | A única carta restante no baralho te bate |
+| **O one-outer** | Uma mão quase travada | ~96% | A única carta restante no baralho te bate |
 
 </div>
 
