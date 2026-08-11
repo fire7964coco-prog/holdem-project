@@ -116,10 +116,11 @@ Most guides tell you "3x in position, 4x out of position" and move on. Here's th
 |:---|:---:|:---:|:---|
 | **In position** (you'll act last) | ~3x the open | **9bb** ($18) | Position lets you win with a smaller size, so you risk less. |
 | **Out of position** (you'll act first) | ~4–4.5x | **12–13.5bb** ($24–27) | Bigger charges them more to see a flop and denies your positional disadvantage a cheap ride. |
-| **Squeeze** (open + a caller) | OOP size **+ ~1x per caller** | **~14–15bb** ($30) | Extra dead money and an extra player to push out. |
-| **Isolating a limper** | 3bb **+ 1bb per limper** (add 1 more live) | ~4–5bb | Punish the limp, discourage overcalls, still get called wide. |
+| **Squeeze** (open + a caller) | OOP size **+ ~1x per caller** | **~15–16.5bb** ($30–33) | Extra dead money and an extra player to push out. |
 
 </div>
+
+⚠ **Isolating a limper is not a 3-bet.** If everyone before you limped, your raise is the *first* raise of the round — a 2-bet. The sizing answers the same question, so it sits here: **3bb + 1bb per limper** (add 1 more live), which lands around **4–5bb**. It punishes the limp and discourages overcalls — you will still get called wide.
 
 The math is deliberately visible because it's where beginners leak: **3 × 3bb = 9bb** in position, **4 × 3bb = 12bb** out of position. Two rules that override the multipliers:
 
@@ -158,7 +159,7 @@ A **squeeze play** is a 3-bet made after there's already been an open-raise *and
 
 Two things make the squeeze special:
 - **There's more dead money.** The pot already holds the raise and the call, so a successful squeeze wins more, meaning your bluffs need to work *less* often to profit.
-- **Size it bigger.** Add roughly one extra open-raise for each caller. Against a 3bb open plus one caller, a squeeze to about **14–15bb** is standard — the extra size is what pushes both players out.
+- **Size it bigger.** Add roughly one extra open-raise for each caller. Against a 3bb open plus one caller, a squeeze to about **15–16.5bb** is standard — the extra size is what pushes both players out.
 
 Good squeeze bluffs are the same suited blocker hands (A5s and friends) that make good 3-bet bluffs, because you still want to fold out the raiser's medium hands and have equity when called.
 

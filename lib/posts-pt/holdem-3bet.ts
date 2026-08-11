@@ -116,10 +116,11 @@ A maioria dos guias te diz "3x in position, 4x out of position" e segue em frent
 |:---|:---:|:---:|:---|
 | **In position** (você age por último) | ~3x o open | **9bb** ($18) | A posição te deixa ganhar com um size menor, então você arrisca menos. |
 | **Out of position** (você age primeiro) | ~4–4,5x | **12–13,5bb** ($24–27) | Maior cobra mais deles para ver um flop e nega uma passagem barata à sua desvantagem de posição. |
-| **Squeeze** (open + um caller) | Size OOP **+ ~1x por caller** | **~14–15bb** ($30) | Dinheiro morto extra e um jogador a mais para empurrar para fora. |
-| **Isolar um limper** | 3bb **+ 1bb por limper** (some mais 1 vivo) | ~4–5bb | Puna o limp, desencoraje overcalls, ainda seja pago aberto. |
+| **Squeeze** (open + um caller) | Size OOP **+ ~1x por caller** | **~15–16,5bb** ($30–33) | Dinheiro morto extra e um jogador a mais para empurrar para fora. |
 
 </div>
+
+⚠ **Isolar um limper não é uma 3-bet.** Se antes de você só houve limps, seu raise é o *primeiro* da rodada — uma 2-bet. O sizing responde à mesma pergunta, então fica aqui: **3bb + 1bb por limper** (some mais 1 ao vivo), ou seja, cerca de **4–5bb**. Puna o limp e desencoraje overcalls — você ainda será pago aberto.
 
 A matemática está deliberadamente visível porque é onde iniciantes vazam: **3 × 3bb = 9bb** in position, **4 × 3bb = 12bb** out of position. Duas regras que passam por cima dos multiplicadores:
 
@@ -158,7 +159,7 @@ Um **squeeze play** é um 3-bet feito depois que já houve um open-raise *e* pel
 
 Duas coisas tornam o squeeze especial:
 - **Há mais dinheiro morto.** O pote já contém o aumento e o call, então um squeeze bem-sucedido ganha mais, o que significa que seus blefes precisam funcionar *menos* vezes para dar lucro.
-- **Dimensione maior.** Some grosso modo um open-raise extra para cada caller. Contra um open de 3bb mais um caller, um squeeze para cerca de **14–15bb** é padrão — o size extra é o que empurra os dois jogadores para fora.
+- **Dimensione maior.** Some grosso modo um open-raise extra para cada caller. Contra um open de 3bb mais um caller, um squeeze para cerca de **15–16,5bb** é padrão — o size extra é o que empurra os dois jogadores para fora.
 
 Bons blefes de squeeze são as mesmas mãos de bloqueio suited (A5s e companhia) que fazem bons blefes de 3-bet, porque você ainda quer foldar as mãos médias do raiser e ter equity quando pago.
 

@@ -117,10 +117,11 @@ La mayoría de las guías te sueltan "3x en posición, 4x fuera de posición" y 
 |:---|:---:|:---:|:---|
 | **En posición** (hablas último) | ~3x la apertura | **9bb** ($18) | La posición te deja ganar con un tamaño menor, así que arriesgas menos. |
 | **Fuera de posición** (hablas primero) | ~4–4.5x | **12–13.5bb** ($24–27) | Un tamaño mayor les cobra más por ver un flop y evita que tu desventaja posicional viaje barata. |
-| **Squeeze** (apertura + un pagador) | Tamaño OOP **+ ~1x por pagador** | **~14–15bb** ($30) | Dinero muerto extra y un jugador más al que echar. |
-| **Aislar a un limper** | 3bb **+ 1bb por limper** (en vivo, suma 1bb extra) | ~4–5bb | Castiga el limp, desanima los overcalls, y aun así te pagan amplio. |
+| **Squeeze** (apertura + un pagador) | Tamaño OOP **+ ~1x por pagador** | **~15–16.5bb** ($30–33) | Dinero muerto extra y un jugador más al que echar. |
 
 </div>
+
+⚠ **Aislar a un limper no es una 3-bet.** Si antes de ti solo hubo limps, tu subida es la *primera* de la ronda: una 2-bet. El tamaño responde a la misma pregunta, así que va aquí: **3bb + 1bb por limper** (en vivo, suma 1bb extra), o sea unas **4–5bb**. Castiga el limp y desanima los overcalls — aun así te pagan amplio.
 
 Las cuentas están a la vista a propósito porque es donde los principiantes se filtran: **3 × 3bb = 9bb** en posición, **4 × 3bb = 12bb** fuera de posición. Dos reglas que anulan los multiplicadores:
 
@@ -159,7 +160,7 @@ Un **squeeze** es un 3-bet hecho después de que ya haya habido una subida de ap
 
 Dos cosas hacen especial al squeeze:
 - **Hay más dinero muerto.** El bote ya contiene la subida y el call, así que un squeeze exitoso gana más, lo que significa que tus faroles necesitan funcionar *menos* a menudo para ser rentables.
-- **Dale un tamaño mayor.** Suma más o menos una subida de apertura extra por cada pagador. Contra una apertura de 3bb más un pagador, un squeeze a unas **14–15bb** es lo estándar — ese tamaño extra es lo que echa fuera a ambos jugadores.
+- **Dale un tamaño mayor.** Suma más o menos una subida de apertura extra por cada pagador. Contra una apertura de 3bb más un pagador, un squeeze a unas **15–16.5bb** es lo estándar — ese tamaño extra es lo que echa fuera a ambos jugadores.
 
 Los buenos faroles de squeeze son las mismas manos con bloqueadores del mismo palo (A5s y compañía) que son buenos faroles de 3-bet, porque sigues queriendo foldear fuera las manos medias del subidor y tener equity cuando te pagan.
 

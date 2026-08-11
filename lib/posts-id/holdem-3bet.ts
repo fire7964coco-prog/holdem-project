@@ -116,10 +116,11 @@ Kebanyakan panduan memberi tahu Anda "3x in position, 4x out of position" lalu b
 |:---|:---:|:---:|:---|
 | **In position** (Anda beraksi terakhir) | ~3x dari open | **9bb** ($18) | Posisi membiarkan Anda menang dengan size lebih kecil, jadi Anda mempertaruhkan lebih sedikit. |
 | **Out of position** (Anda beraksi lebih dulu) | ~4–4,5x | **12–13,5bb** ($24–27) | Lebih besar menagih mereka lebih banyak untuk melihat flop dan menyangkal tumpangan murah bagi kelemahan posisi Anda. |
-| **Squeeze** (open + seorang caller) | Size OOP **+ ~1x per caller** | **~14–15bb** ($30) | Dead money ekstra dan pemain ekstra untuk didorong keluar. |
-| **Mengisolasi limper** | 3bb **+ 1bb per limper** (tambah 1 lagi live) | ~4–5bb | Hukum limp, cegah overcall, tetap di-call lebar. |
+| **Squeeze** (open + seorang caller) | Size OOP **+ ~1x per caller** | **~15–16,5bb** ($30–33) | Dead money ekstra dan pemain ekstra untuk didorong keluar. |
 
 </div>
+
+⚠ **Mengisolasi limper bukan 3-bet.** Kalau sebelum Anda semua hanya limp, raise Anda adalah raise *pertama* di ronde itu — sebuah 2-bet. Sizing-nya menjawab pertanyaan yang sama, jadi tempatnya di sini: **3bb + 1bb per limper** (tambah 1 lagi live), kira-kira **4–5bb**. Ini menghukum limp dan mencegah overcall — Anda tetap di-call lebar.
 
 Matematikanya sengaja ditampilkan karena di situlah pemula bocor: **3 × 3bb = 9bb** in position, **4 × 3bb = 12bb** out of position. Dua aturan yang mengesampingkan pengali:
 
@@ -158,7 +159,7 @@ Poin besarnya: **flatting itu sah in position** — solver modern menjaga range 
 
 Dua hal membuat squeeze istimewa:
 - **Ada lebih banyak dead money.** Pot sudah memuat raise dan call, jadi squeeze yang berhasil menang lebih banyak, artinya bluff Anda perlu berhasil *lebih jarang* untuk profit.
-- **Ukur lebih besar.** Tambah kira-kira satu open-raise ekstra untuk tiap caller. Melawan open 3bb plus satu caller, squeeze ke sekitar **14–15bb** itu standar — size ekstra itulah yang mendorong kedua pemain keluar.
+- **Ukur lebih besar.** Tambah kira-kira satu open-raise ekstra untuk tiap caller. Melawan open 3bb plus satu caller, squeeze ke sekitar **15–16,5bb** itu standar — size ekstra itulah yang mendorong kedua pemain keluar.
 
 Bluff squeeze yang bagus adalah tangan blocker suited yang sama (A5s dan kawan-kawan) yang membuat bluff 3-bet yang bagus, karena Anda tetap ingin melipat keluar tangan medium raiser dan punya equity saat di-call.
 
