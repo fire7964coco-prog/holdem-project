@@ -165,7 +165,7 @@ A. You can't escape rake entirely in a raked game, but you can shrink it. Get th
 
 **Q. Is taking a rake illegal? Why is taking a rake in poker illegal?**
 
-A. Charging a fee to host the game is the entire business model of a licensed cardroom, casino, or regulated online site — how that's regulated varies by jurisdiction. What's illegal in most U.S. states (and many other places) is a *private* or home-game host taking a rake for personal profit: skimming a cut turns a friendly game into running an unlicensed gambling business, which is what actually crosses the line — not the poker itself. It's why legal home games split costs but never rake the pot, and it's the exact issue behind the film *Molly's Game*, where the host began taking a percentage and lost the protection an amateur game would have had.
+A. Charging a fee to host the game is the entire business model of a licensed cardroom, casino, or regulated online site — how that's regulated varies by jurisdiction. Home games typically split costs rather than rake the pot: once a host starts taking a percentage, the game stops being a shared expense and becomes a business someone is running — which is the shift at the center of the film *Molly's Game*.
 
 **Q. Do poker tournaments have rake?**
 

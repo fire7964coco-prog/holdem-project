@@ -178,7 +178,7 @@ A. No puedes escapar del rake por completo en una partida rakeada, pero sí redu
 
 **Q. ¿Es ilegal cobrar rake?**
 
-A. Cobrar una comisión por montar la partida es todo el modelo de negocio de una sala, casino o sitio online con licencia — cómo se regula eso varía según la jurisdicción. Lo que es ilegal en la mayoría de sitios es que el anfitrión de una partida *privada* o casera se lleve un rake para lucro personal: quedarse una tajada convierte una partida entre amigos en gestionar un negocio de juego sin licencia, y eso es lo que cruza la línea — no el póker en sí. Por eso las partidas caseras legales reparten los gastos pero nunca rakean el bote.
+A. Cobrar una comisión por montar la partida es todo el modelo de negocio de una sala, casino o sitio online con licencia — cómo se regula eso varía según la jurisdicción. Las partidas caseras suelen repartir los gastos en lugar de rakear el bote: en cuanto el anfitrión empieza a quedarse un porcentaje, la partida deja de ser un gasto compartido y pasa a ser un negocio que alguien gestiona.
 
 **Q. ¿Los torneos de póker tienen rake?**
 
