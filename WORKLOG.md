@@ -3,6 +3,42 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-08-11 (14) — **de 경화 Session 4 (Strategie 8편) + C층 5건 8로케일** (`ac2b0b3` `5c92dab` · 푸시)
+
+- **질문형 H2 목표 70% → 8편 전부 82~92%** 달성. 직답 `> **Kurze Antwort**` 36개 신설 ·
+  masterUpdated 6편 신설(de 추적불가 18→12편)
+- **착수 시 자동완성 de 재실측이 또 클러스터를 갈랐다** — `poker positionen erklärt/namen/am tisch` ·
+  `poker starthände tabelle/pdf/namen` · `poker limpen bedeutung`는 살아 있는데
+  🔴 **`3-Bet`·`C-Bet`은 독일어 자동완성이 아예 없다**(전부 영어 표기). 그 두 편은 자동완성에서
+  롱테일을 얻을 수 없다는 게 실측으로 확인됐다 — Session 3의 `Faustregel` 건과 같은 유형
+- **커버리지 갭 3건 흡수**(`poker range` 320 · `gto poker` 390 · `poker tipps` 210) —
+  `holdem-strategy`에 「Was ist eine Range」 H2 신설 + GTO/Glück-oder-Können FAQ
+- 🔴 **「Turnier vs Cash」 H2 신설은 취소했다** — `tournament-vs-cash-game`을 열어 보니 같은 H2가
+  이미 있었다(자기잠식). **인계서를 작업 지시서로 읽지 마라**의 또 다른 실례
+- **FAQ 드리프트 소급**: strategy EN 14 : DE 12 · 3bet EN 15 : DE 13. **FAQ 목록 대조만이 잡았다**(Session 2와 동일)
+- **C층 5건 8로케일 정정**: 3bet #7(스퀴즈 공식↔결과 불일치 → 15~16,5bb) · #8(리퍼 아이솔=2벳, 표에서 분리) ·
+  when-to-fold #3·#6 · position-play #10. 🔴 **`limping #8·#18`·`positions #49`·`starting-hands #28`은
+  de에 이미 없었다** — 「로케일별 개별 판정」이 또 맞았다
+- 🔴 **핸드오프 C층 표에 없던 항목이 있었다**(`limping #8·#18`·`starting-hands #28`). 지시서를 직접 열어야 나온다
+- 🔴 **zh-hant를 1차 grep이 놓쳤다** — 물결표(`14～15`)를 써서 「7곳」으로 보였다. 실제 8곳.
+  「없다」를 보고하기 전에 탐지 방법부터 의심하라의 재현
+- **§13 2층**: 미검사 6편 카드 문단 전건 손검산 **오류 0건**(셋 vs 완성 플러시 34% = 실측 **34,44%** ·
+  3-Bet 팟 $39 · 베스트5 3곳 · MDF 33% · 팟오즈표 25/29/33/37,5%)
+
+### 🔴 적대 QA 2렌즈가 잡은 것 — **내 편집이 만든 사실오류 2건**
+
+1. 🔴🔴 **C층 #3 정정이 새 사실오류를 만들었다.** 「벳이 없으면 체크가 «추가»된다」로 써서 4개 집합이 됐다
+   (벳이 걸린 상태에서 betten은 불가, 벳이 없으면 raisen/callen이 불가). **8개 언어 전부에 퍼진 뒤 잡혔다.**
+   → 「벳 있으면 3개(fold/call/raise) · 없으면 2개(check/bet)」로 정정
+2. 🔴 **내가 쓴 4-Bet FAQ에 「A5s가 KK를 블록」** — A5s가 블록하는 건 AA·AK뿐이다(K를 안 갖고 있다)
+3. **H2만 바꾸고 절을 안 본 자리 3곳**: 「neun Sitze eine eigene Zeile」인데 표는 4행 ·
+   「버튼 왼쪽부터 UTG」(첫 자리는 SB) · H2 교체가 남긴 고아 문장(「Massiv.」) · FAQ 제목만 바꿔 답과 어긋난 곳
+4. ★**「Straße」는 독일어로 «스트레이트»다.** 스트리트 뜻으로 쓴 9곳을 `Street`로(족보 용법은 유지).
+   같은 글이 「Sets, Straßen」으로 족보를 가리키고 있어 실제 혼동이었다
+5. `limping` 단독 표기 **「präflop」 16곳** → `preflop`(나머지 7편은 이미 preflop) · 3bet 「Assen」 격 오류 5곳
+6. **직답이 만든 축어 중복 7곳**(되읽기 3 + 교열 렌즈 4) — Session 3에 이어 같은 공정에서 또 나왔다.
+   ★교열 렌즈 총평: **「직답을 바로 아래 문단에서 만들면 반드시 중복된다」**
+
 ## 2026-08-11 (13) — **de 경화 Session 3 (Odds & Mathe 6편) + C층 probability #16·#17 8로케일** (`a76b43d` · 푸시)
 
 - **질문형 H2 0~25% → 71~83%** (6편 전부 §14-A 70% 충족). 각 신설 H2 직후 40~75단어 직답.
