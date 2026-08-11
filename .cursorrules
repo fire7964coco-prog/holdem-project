@@ -1,87 +1,66 @@
 # 홀덤마스터 (holdemmaster.com) — Cursor AI 가이드
 
-## 🎯 프로젝트 목표
-**구글 1페이지 달성** — 한국어/영어 블로그를 구글 상위 노출해 커뮤니티 활성화
-- 사이트: holdemmaster.com · 배포: Vercel (git push → 자동)
-- 로컬: `C:\Users\하봄\Downloads\Holdem_Project`
+> 📌 **이 파일은 진입점이다. 규칙 본체를 여기 복사하지 않는다.**
+> 두 곳에 적으면 갈라지고, 갈라진 쪽을 읽는 순간 어제 고친 게 오늘 되살아난다.
+> (2026-08-11 정리 — 원본은 `docs/archive-cursorrules-2026-08-11.md`)
+
+## 🎯 목표
+**롱테일 키워드 구글 1페이지.** 한국어/영어 블로그를 상위 노출해 커뮤니티로 흘려보낸다.
+사이트: holdemmaster.com · 배포: Vercel (git push → 자동) · 로컬: `C:\Users\하봄\Downloads\Holdem_Project`
+
+---
+
+## 📂 규칙은 어디에 있나
+
+| 하려는 일 | 읽을 파일 |
+|---|---|
+| **포스트 작성·검수·수정 (전부)** | ⭐ `.cursor/rules/posting.mdc` ← **단일 마스터.** 포스트 작업 전 **반드시 먼저** |
+| **검수 요청을 받았다** | `REVIEW-PROTOCOL.md` ← 3층 게이트 본체 |
+| 프로젝트 전체 가이드·절대금지·§13 핸드검산 | `CLAUDE.md` |
+| 이미지 규격·압축·전송량 | `docs/IMAGE_OPTIMIZATION.md` |
+| 내부링크 걸 slug 확인 | `docs/pillar-slugs.md` |
+| 다국어 용어 (12개 언어) | `.cursor/rules/multilingual-localization.mdc` |
+| 성능·빌드·GSC 루틴·인프라 | `.cursor/rules/tech.mdc` |
+| 세션 인수인계 / 작업 일지 | `session-handoff.md` / `WORKLOG.md` (**600KB+ 통독 금지, grep만**) |
+
+> ⛔ `.cursor/rules/content.mdc`는 **폐기됐다**(2026-08-11). 열지 마라 — 핸드 검산 오답과
+> 폐기된 이미지 기준을 들고 있었다.
 
 ---
 
 ## ⚙️ 기술 스택
-- Next.js 14.2.18 (App Router, SSG) · TypeScript · TailwindCSS v4
-- DB/Auth: Supabase (Seoul) · 번역: Gemini Flash API
-- 패키지: npm · 설정 파일: `next.config.mjs` (확장자 .mjs 주의)
+Next.js 14.2.18 (App Router, SSG) · TypeScript · TailwindCSS v4 ·
+Supabase(Seoul) · 번역 Gemini Flash · npm · 설정 `next.config.mjs`(확장자 .mjs 주의)
 
----
-
-## 📊 현재 상태 (2026-06-24 기준)
-| 구분 | 수 | 위치 |
-|------|-----|------|
-| 한국어 LEGACY 포스트 | 21개 | `lib/posts.ts` |
-| 한국어 NEW 포스트 | 28개 | `lib/posts/[slug].ts` + `lib/posts/index.ts` |
-| 영어 포스트 | 20개 | `lib/posts-en/[slug].ts` |
-| **한국어 합계** | **49개** | 목표 50개 → 1개 남음 |
-
-> ⚠️ 포스트 수 확인 시 반드시 `posts.ts`와 `lib/posts/index.ts` **두 곳 모두** 확인할 것
-
----
-
-## 🏛️ 11개 필라 슬러그 (URL 절대 변경 금지)
-| 필라 | slug |
-|------|------|
-| 족보 | `holdem-hand-rankings` |
-| 규칙 | `holdem-rules` |
-| 확률 | `holdem-probability` |
-| 전략 | `holdem-strategy` |
-| 스타팅핸드 | `holdem-starting-hands` |
-| 토너먼트 | `holdem-tournament` |
-| 홀덤펍 | `holdem-pub-guide` |
-| 용어사전 | `holdem-glossary` |
-| 포지션 | `holdem-position-play` |
-| 팟오즈 | `holdem-pot-odds` |
-| 블러프 | `holdem-bluff-spot` |
-
----
-
-## ⚠️ 절대 금지 (SEO 초기화 또는 서버 오류 유발)
-1. 기존 포스트 **slug 변경** (URL 바뀌면 구글 색인 초기화)
-2. `lib/posts.ts` LEGACY 포스트 임의 수정/삭제
-3. 이미지를 `.jpg` / `.png` 로 저장 (webp 전용)
-4. URL 끝에 `/` 추가 — `trailingSlash: false` 설정됨, `/` 붙이면 301 발생
-5. `public/sitemap.xml` 수동 수정 (빌드 시 자동 생성)
-6. meta description 160자 초과
-7. 히어로 이미지에 `priority` 누락
-8. `app/blog/[slug]/` 및 다국어 라우트 구조 변경
-
----
-
-## 🔧 핵심 명령어
 ```bash
-npm run build          # 빌드 + sitemap 자동 생성 (배포 전 필수)
-npm run dev            # 개발 서버
-npm run compress:images  # public/images 전체 webp 압축
-git push               # Vercel 자동 배포 트리거
+npm run build                       # 빌드 + sitemap 자동 생성 (배포 전 필수)
+npm run dev                         # 개발 서버
+npm run audit:hard -- --slug=<slug> # 검수 기계 게이트 (🔴 0건까지)
+npm run compress:images             # public/images webp 압축
 ```
 
 ---
 
-## 📂 세부 규칙 위치
-> ⭐ **포스팅·콘텐츠 작업의 단일 마스터 = `.cursor/rules/posting.mdc`** (SEO·형식·이미지·§13 핸드검산·다국어·컴포넌트·배포 통합). 포스트 작업 전 반드시 이 파일부터 읽는다.
+## ⚠️ 절대 금지 (SEO 초기화 또는 빌드 파손)
 
-| 규칙 종류 | 파일 | 적용 방식 |
-|-----------|------|-----------|
-| **포스팅·콘텐츠 (통합 마스터)** | `.cursor/rules/posting.mdc` | `lib/posts/**`·`public/images/**` 작업 시 자동 적용 |
-| 이미지·글쓰기·JSON-LD·다국어 (→posting.mdc로 통합됨) | `.cursor/rules/content.mdc` | 보조 참고용 |
-| 성능·빌드·인프라·보안 | `.cursor/rules/tech.mdc` | 코드 파일 작업 시 자동 적용 |
-| 언어별 상세 용어 | `.cursor/rules/multilingual-localization.mdc` | `lib/posts-*/**` 작업 시 |
+1. 기존 포스트 **slug 변경** (구글 색인 초기화)
+2. `lib/posts.ts` LEGACY 포스트의 **구조/slug** 임의 변경·삭제 (오타·사실오류 수정은 허용·권장)
+3. `app/blog/[slug]/` 및 다국어 라우트 구조 변경
+4. `public/sitemap.xml` 수동 수정 (빌드 시 자동 생성)
+5. 이미지를 `.jpg`/`.png`로 저장 (**webp 전용**)
+6. URL 끝에 `/` 추가 (`trailingSlash: false` — 붙이면 301)
+7. meta description **160자 초과**
+8. 히어로 이미지에 `priority` 누락
+9. **핸드 예시를 베스트 5장 검산 없이 통과** (CLAUDE.md §13 — 이 프로젝트 1순위 규칙)
+10. **포스트 본문에 백틱** — 템플릿 리터럴이 끊겨 빌드가 즉시 깨진다 (CLAUDE.md §12-A)
 
 ---
 
-## 🗒️ 핵심 파일 위치
-| 용도 | 경로 |
-|------|------|
-| 세션 인수인계 | `session-handoff.md` |
-| 작업 일지 | `WORKLOG.md` |
-| 프로젝트 전체 가이드 | `CLAUDE.md` |
-| 커뮤니티 클라이언트 | `app/community/community-client.tsx` |
-| DB 스키마 | `supabase/schema.sql` |
+## 🔢 숫자는 여기 적지 않는다
+
+포스트 개수·필라 슬러그 목록을 문서에 박으면 **적는 순간 낡는다.**
+2026-08-11에 확인했더니 CLAUDE.md·handoff·이 파일·실제 파일이 **넷 다 달랐다**
+(이 파일은 2026-06-24 기준 "합계 49개"에 멈춰 있었고, 필라 목록 11개 중 **6개는 실제로 404**였다).
+
+- **포스트 수** → `npm run build` 출력의 "N blog posts"가 유일한 정답
+- **필라 슬러그** → `docs/pillar-slugs.md`. 헷갈리면 `curl -sI https://www.holdemmaster.com/blog/<slug>`

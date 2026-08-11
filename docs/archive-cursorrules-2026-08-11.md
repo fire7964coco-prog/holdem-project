@@ -1,0 +1,87 @@
+# 홀덤마스터 (holdemmaster.com) — Cursor AI 가이드
+
+## 🎯 프로젝트 목표
+**구글 1페이지 달성** — 한국어/영어 블로그를 구글 상위 노출해 커뮤니티 활성화
+- 사이트: holdemmaster.com · 배포: Vercel (git push → 자동)
+- 로컬: `C:\Users\하봄\Downloads\Holdem_Project`
+
+---
+
+## ⚙️ 기술 스택
+- Next.js 14.2.18 (App Router, SSG) · TypeScript · TailwindCSS v4
+- DB/Auth: Supabase (Seoul) · 번역: Gemini Flash API
+- 패키지: npm · 설정 파일: `next.config.mjs` (확장자 .mjs 주의)
+
+---
+
+## 📊 현재 상태 (2026-06-24 기준)
+| 구분 | 수 | 위치 |
+|------|-----|------|
+| 한국어 LEGACY 포스트 | 21개 | `lib/posts.ts` |
+| 한국어 NEW 포스트 | 28개 | `lib/posts/[slug].ts` + `lib/posts/index.ts` |
+| 영어 포스트 | 20개 | `lib/posts-en/[slug].ts` |
+| **한국어 합계** | **49개** | 목표 50개 → 1개 남음 |
+
+> ⚠️ 포스트 수 확인 시 반드시 `posts.ts`와 `lib/posts/index.ts` **두 곳 모두** 확인할 것
+
+---
+
+## 🏛️ 11개 필라 슬러그 (URL 절대 변경 금지)
+| 필라 | slug |
+|------|------|
+| 족보 | `holdem-hand-rankings` |
+| 규칙 | `holdem-rules` |
+| 확률 | `holdem-probability` |
+| 전략 | `holdem-strategy` |
+| 스타팅핸드 | `holdem-starting-hands` |
+| 토너먼트 | `holdem-tournament` |
+| 홀덤펍 | `holdem-pub-guide` |
+| 용어사전 | `holdem-glossary` |
+| 포지션 | `holdem-position-play` |
+| 팟오즈 | `holdem-pot-odds` |
+| 블러프 | `holdem-bluff-spot` |
+
+---
+
+## ⚠️ 절대 금지 (SEO 초기화 또는 서버 오류 유발)
+1. 기존 포스트 **slug 변경** (URL 바뀌면 구글 색인 초기화)
+2. `lib/posts.ts` LEGACY 포스트 임의 수정/삭제
+3. 이미지를 `.jpg` / `.png` 로 저장 (webp 전용)
+4. URL 끝에 `/` 추가 — `trailingSlash: false` 설정됨, `/` 붙이면 301 발생
+5. `public/sitemap.xml` 수동 수정 (빌드 시 자동 생성)
+6. meta description 160자 초과
+7. 히어로 이미지에 `priority` 누락
+8. `app/blog/[slug]/` 및 다국어 라우트 구조 변경
+
+---
+
+## 🔧 핵심 명령어
+```bash
+npm run build          # 빌드 + sitemap 자동 생성 (배포 전 필수)
+npm run dev            # 개발 서버
+npm run compress:images  # public/images 전체 webp 압축
+git push               # Vercel 자동 배포 트리거
+```
+
+---
+
+## 📂 세부 규칙 위치
+> ⭐ **포스팅·콘텐츠 작업의 단일 마스터 = `.cursor/rules/posting.mdc`** (SEO·형식·이미지·§13 핸드검산·다국어·컴포넌트·배포 통합). 포스트 작업 전 반드시 이 파일부터 읽는다.
+
+| 규칙 종류 | 파일 | 적용 방식 |
+|-----------|------|-----------|
+| **포스팅·콘텐츠 (통합 마스터)** | `.cursor/rules/posting.mdc` | `lib/posts/**`·`public/images/**` 작업 시 자동 적용 |
+| 이미지·글쓰기·JSON-LD·다국어 (→posting.mdc로 통합됨) | `.cursor/rules/content.mdc` | 보조 참고용 |
+| 성능·빌드·인프라·보안 | `.cursor/rules/tech.mdc` | 코드 파일 작업 시 자동 적용 |
+| 언어별 상세 용어 | `.cursor/rules/multilingual-localization.mdc` | `lib/posts-*/**` 작업 시 |
+
+---
+
+## 🗒️ 핵심 파일 위치
+| 용도 | 경로 |
+|------|------|
+| 세션 인수인계 | `session-handoff.md` |
+| 작업 일지 | `WORKLOG.md` |
+| 프로젝트 전체 가이드 | `CLAUDE.md` |
+| 커뮤니티 클라이언트 | `app/community/community-client.tsx` |
+| DB 스키마 | `supabase/schema.sql` |

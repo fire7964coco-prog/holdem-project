@@ -1,0 +1,9 @@
+{
+  "enabledPlugins": {
+    "context7@claude-plugins-official": true,
+    "chrome-devtools-mcp@claude-plugins-official": false,
+    "vercel@claude-plugins-official": true,
+    "exa@claude-plugins-official": true,
+    "firecrawl@claude-plugins-official": true
+  }
+}
