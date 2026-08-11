@@ -17,9 +17,9 @@ export const POST: Post = {
   imageAlt: "Zwei Spieler all-in mit offenen Karten auf grünem Filz, ein Stapel Chips in der Mitte – der Moment, in dem die Equity jeder Hand zu einem echten Anteil am Pot wird",
   tags: ["equity poker", "was ist equity poker", "fold equity", "equity realization", "equity vs pot odds", "all in equity", "equity rechner poker", "equity berechnen poker"],
   content: `
-Ein Jahr lang dachte ich, „Equity“ sei nur ein schickes Wort für „wie wahrscheinlich ich gewinne“. Dann verlor ich an einem Abend drei große Pots, in denen ich als Favorit reingegangen war, und ein besserer Spieler sagte mir den Satz, der das ganze Spiel neu einordnete: ==deine Equity ist das, was dir *zusteht*, nicht das, was du *einsammelst*.== Du kannst zu 40% eine Hand gewinnen und fast nichts davon realisieren – oder hinten liegen und trotzdem Geld drucken. Die Lücke dazwischen zu verstehen macht den größten Teil dessen aus, was gewinnende Spieler von hoffnungsvollen trennt.
+Ein Jahr lang dachte ich, „Equity“ sei nur ein schickes Wort für „wie wahrscheinlich ich gewinne“. Dann verlor ich an einem Abend drei große Pots, in denen ich als Favorit reingegangen war, und ein besserer Spieler sagte mir den Satz, der das ganze Spiel neu einordnete: ==deine Equity ist das, was dir *zusteht*, nicht das, was du *einsammelst*.== Du kannst zu 40% eine Hand gewinnen und fast nichts davon realisieren – oder hinten liegen und trotzdem Geld drucken. Die Lücke dazwischen zu verstehen macht den größten Teil dessen aus, was gewinnende Spieler von denen trennt, die nur hoffen.
 
-==Die Equity ist die eine Zahl, die jedes andere Stück Poker-Mathe zusammenbindet – Outs, Pot Odds, Position und Aggression lösen sich alle in eine Frage auf: welcher Anteil dieses Pots gehört wirklich mir?== Dieser Guide erklärt, was die Equity ist, wie du sie schätzt, und die drei Dinge, die Anfängern niemand sagt: warum du nicht alles davon behältst, wie ein foldender Gegner dir extra beschert, und warum deine große Hand gegen eine Menge schrumpft.
+==Die Equity ist die eine Zahl, die jedes andere Stück Poker-Mathe zusammenbindet – Outs, Pot Odds, Position und Aggression lösen sich alle in eine Frage auf: welcher Anteil dieses Pots gehört wirklich mir?== Dieser Guide erklärt, was die Equity ist, wie du sie schätzt, und die drei Dinge, die Anfängern niemand sagt: warum du nicht alles davon behältst, wie dir ein Gegner, der foldet, zusätzliche Equity schenkt, und warum deine große Hand im Multiway-Pot schrumpft.
 
 Die rohen Win-Prozente hinter jeder Hand kommen aus der [Poker-Odds- und Wahrscheinlichkeitstabelle](/de/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp"); dieser Guide zeigt, wie du diese Prozente in Entscheidungen am Tisch verwandelst.
 
@@ -55,9 +55,9 @@ Das ist der ganze Grund, warum die Equity zählt: sie verwandelt „liege ich vo
 
 | Draw | Outs | Equity (2 Karten) |
 |:---|:---:|:---:|
-| Flush + beidseitige Straße | 15 | 54,1% |
+| Flush + Open-Ender | 15 | 54,1% |
 | Flushdraw | 9 | 35,0% |
-| Beidseitige Straße | 8 | 31,5% |
+| Beidseitig offener Straßendraw | 8 | 31,5% |
 | Gutshot-Straße | 4 | 16,5% |
 
 </div>
@@ -68,25 +68,25 @@ Das ist der ganze Grund, warum die Equity zählt: sie verwandelt „liege ich vo
 
 | Matchup | Equity | Typ |
 |:---|:---:|:---|
-| AA vs KK | 82% / 18% | Overpair dominiert |
-| QQ vs AK | ~57% / ~43% | Paar vorn im „Race“ |
-| 22 vs AK | ~52% / ~48% | Der echte Coinflip |
-| AK vs AQ | ~73% / ~23% | Domination (Rest chopt) |
-| 88 vs A7 | ~70% / ~30% | Paar vs eine Overcard |
+| AA vs. KK | 82% / 18% | Overpair dominiert |
+| QQ vs. AK | ~57% / ~43% | Paar vorn im „Race“ |
+| 22 vs. AK | ~52% / ~48% | Der echte Coinflip |
+| AK vs. AQ | ~73% / ~23% | Domination (Rest chopt) |
+| 88 vs. A7 | ~70% / ~30% | Paar vs. eine Overcard |
 
 </div>
 
-Zwei Dinge bringen Leute hier durcheinander. Ein Paar gegen zwei Overcards (QQ vs AK) ist ==r:kein 50/50== – das Paar ist ein moderater Favorit, etwa 57/43 offsuit (eine Spur enger, ~54/46, wenn AK suited ist). Und der Begriff „Coinflip“ passt wirklich nur auf ein niedriges Paar gegen zwei größere Karten (22 vs AK), wo es echt eng ist.
+Zwei Dinge bringen Leute hier durcheinander. Ein Paar gegen zwei Overcards (QQ vs. AK) ist ==r:kein 50/50== – das Paar ist ein moderater Favorit, etwa 57/43 offsuit (eine Spur enger, ~54/46, wenn AK suited ist). Und der Begriff „Coinflip“ passt wirklich nur auf ein niedriges Paar gegen zwei größere Karten (22 vs. AK), wo es echt eng ist.
 
 ---
 
-## Equity vs Pot Odds: Die eine Regel, die jeden Call entscheidet
+## Equity vs. Pot Odds: Die eine Regel, die jeden Call entscheidet
 
 **Calle, wenn deine Equity größer ist als deine Pot Odds – dieser eine Vergleich entscheidet fast jeden Call im Poker.** Die [Pot Odds](/de/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") sagen dir die Equity, die du *brauchst*, um Break-even zu sein; die Equity sagt dir, was du *hast*. Wenn du mehr hast, als du brauchst, macht der Call Geld.
 
-Gegen eine Half-Pot-Bet verlangen deine Pot Odds ==25%== zum Callen. Ein Flushdraw mit zwei Karten to come hat ~35% Equity – 35 schlägt 25, also ist es ein profitabler Call. Das ist die ganze Entscheidung, ohne Rätselraten.
+Gegen eine Half-Pot-Bet verlangen deine Pot Odds ==25%== zum Callen. Ein Flushdraw mit zwei noch kommenden Karten hat ~35% Equity – 35 schlägt 25, also ist es ein profitabler Call. Das ist die ganze Entscheidung, ohne Rätselraten.
 
-Aber hier der Haken, den fast jeder Guide auslässt: **„deine Equity ist gleich dein Pot-Anteil“ stimmt nur, wenn nicht mehr gesetzt wird.** In dem Moment, in dem auf späteren Streets mehr Geld reingehen kann, übersetzt sich ein rohes 35% nicht automatisch in 35% des finalen Pots – du wirst vielleicht von deinem Draw geblasen oder zahlst ab, wenn du Second-best triffst. Genau in dieser Lücke kommen die [Implied Odds](/de/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp") (Geld, das du später gewinnst) und die Equity Realization (unten) ins Spiel. Die Equity ist, wo die Mathematik *startet*, nicht, wo sie endet.
+Aber hier der Haken, den fast jeder Guide auslässt: **„deine Equity ist gleich dein Pot-Anteil“ stimmt nur, wenn nicht mehr gesetzt wird.** In dem Moment, in dem auf späteren Streets mehr Geld reingehen kann, übersetzt sich ein rohes 35% nicht automatisch in 35% des finalen Pots – du wirst vielleicht von deinem Draw vertrieben oder zahlst ab, wenn du Second-best triffst. Genau in dieser Lücke kommen die [Implied Odds](/de/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp") (Geld, das du später gewinnst) und die Equity Realization (unten) ins Spiel. Die Equity ist, wo die Mathematik *startet*, nicht, wo sie endet.
 
 ---
 
@@ -101,9 +101,9 @@ Er callt und du triffst → du gewinnst | Du triffst → du gewinnst
 ==g:Zwei Wege zu gewinnen== | ==r:Ein Weg zu gewinnen==
 :::
 
-Für einen ==reinen Bluff== ohne Chance auf Verbesserung ist der Break-even einfach: du brauchst deinen Gegner, dass er oft genug foldet, um das Risiko zu decken. Wenn du $50 in einen $100-Pot bettest, ist deine Break-even-Fold-Rate ==Bet ÷ (Pot + Bet) = 50 ÷ 150 = 33%==. Foldet er mehr als ein Drittel der Zeit, profitiert das Betten – sogar mit der schlechtesten Hand am Tisch.
+Für einen ==reinen Bluff== ohne Chance auf Verbesserung ist der Break-even einfach: dein Gegner muss oft genug folden, um das Risiko zu decken. Wenn du $50 in einen $100-Pot bettest, ist deine Break-even-Fold-Rate ==Bet ÷ (Pot + Bet) = 50 ÷ 150 = 33%==. Foldet er öfter als in einem Drittel der Fälle, ist das Betten profitabel – sogar mit der schlechtesten Hand am Tisch.
 
-Füge jetzt einen Draw hinzu, und es wird viel besser. Hier das ganze Bild als ==g:Semi-Bluff==: der Pot ist $100, du bettest $50 mit einem Flushdraw, dein Gegner foldet 40% der Zeit, und wenn er callt, hast du immer noch 35% Equity, um bis zum River zu treffen.
+Füge jetzt einen Draw hinzu, und es wird viel besser. Hier das ganze Bild als ==g:Semi-Bluff==: der Pot ist $100, du bettest $50 mit einem Flushdraw, dein Gegner foldet 40% der Fälle, und wenn er callt, hast du immer noch 35% Equity, um bis zum River zu treffen.
 
 :::note
 EV = (Fold% × Pot) + (Call% × [Equity × (Pot + Bet) − (Miss% × Bet)])
@@ -127,11 +127,11 @@ Was deine Realization hoch oder runter bewegt:
 
 :::card
 🪑 | Position | In Position realisierst du *mehr* als deine rohe Equity (du siehst Freikarten, kontrollierst den Pot); out of position realisierst du weniger. Das ist der größte Faktor
-🎯 | Spielbarkeit | Suited Connectors und Hände, die Draws floppen, realisieren gut; offsuit Clunker realisieren schlecht, selbst mit ordentlicher roher Equity
+🎯 | Spielbarkeit | Suited Connectors und Hände, die Draws floppen, realisieren gut; offsuit Müll realisiert schlecht, selbst mit ordentlicher roher Equity
 📚 | Stacktiefe & Skill | Tiefere Stacks und stärkere Gegner machen marginale Equity schwerer zu realisieren
 :::
 
-Das ist die einzelne wichtigste Idee, die die meisten Anfänger-Guides weglassen, und sie ist der Grund, warum [sich dieselbe Hand je nach Position völlig anders spielt](/de/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp"). Die rohe Equity ist die Decke; die Realization ist, was du nach Hause trägst.
+Das ist die mit Abstand wichtigste Idee, die die meisten Anfänger-Guides weglassen, und sie ist der Grund, warum [sich dieselbe Hand je nach Position völlig anders spielt](/de/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp"). Die rohe Equity ist die Obergrenze; die Realization ist, was du nach Hause trägst.
 
 ---
 
@@ -139,7 +139,7 @@ Das ist die einzelne wichtigste Idee, die die meisten Anfänger-Guides weglassen
 
 **Wenn du all-in bist, gibt es keine weiteren Entscheidungen mehr – also realisierst du 100% deiner Equity, und die rohe Equity wird zum letzten Wort.** Jede Komplikation von oben (Position, Folden, gebettet werden) verschwindet, weil kein weiteres Setzen mehr passieren kann. Was auch immer dein Win-Prozent ist, das ist genau der Anteil am Pot, den du über die Zeit einsammelst.
 
-Deshalb zählen Preflop-All-in-Equities so viel: AA all-in gegen KK bankt seine vollen ==82%== – keine Realization-Steuer, keine Fold Equity, nur die rohe Zahl, die sich ausspielt. Es ist auch der Grund, warum ein „Coinflip“ (22 vs AK bei ~52/48) all-in ein echtes Kopf-an-Kopf ist, obwohl dieselben zwei Hände postflop je nach Board und wer die Position hat wild auseinanderlaufen würden.
+Deshalb zählen Preflop-All-in-Equities so viel: AA all-in gegen KK bankt seine vollen ==82%== – keine Realization-Steuer, keine Fold Equity, nur die rohe Zahl, die sich ausspielt. Es ist auch der Grund, warum ein „Coinflip“ (22 vs. AK bei ~52/48) all-in ein echtes Kopf-an-Kopf ist, obwohl dieselben zwei Hände postflop je nach Board und wer die Position hat wild auseinanderlaufen würden.
 
 All-in ist der eine Spot im Poker, wo der Kuchen genau so geschnitten wird, wie die Mathematik es sagt – was zugleich sein Reiz und seine Gefahr ist.
 
@@ -147,7 +147,7 @@ All-in ist der eine Spot im Poker, wo der Kuchen genau so geschnitten wird, wie 
 
 ## Warum schrumpft deine Equity in Multiway-Pots?
 
-**Deine Equity fällt in Multiway-Pots schnell, weil derselbe 100%-Kuchen jetzt unter mehr Hände aufgeteilt wird.** Pocket Aces sind heads-up um die 85%, aber gegen drei Gegner rutscht das auf ==r:~64%==, und gegen vier auf ~56% – immer noch die beste Hand, aber nicht mehr der Crush, der es sich anfühlt. Three-way beträgt die Equity per Definition im *Schnitt* 33%, weil drei Spieler einen Pot teilen.
+**Deine Equity fällt in Multiway-Pots schnell, weil derselbe 100%-Kuchen jetzt unter mehr Hände aufgeteilt wird.** Pocket Aces sind heads-up um die 85%, aber gegen drei Gegner rutscht das auf ==r:~64%==, und gegen vier auf ~56% – immer noch die beste Hand, aber nicht mehr der Crush, nach dem es sich anfühlt. Im Three-way-Pot beträgt die Equity per Definition im *Schnitt* 33%, weil drei Spieler einen Pot teilen.
 
 ![Infografik eines Q♣ 9♥ 5♦ 3♠ J♦ Boards, die zeigt, wie jeder zusätzliche Spieler im Pot die Equity jeder Hand kürzt](/images/holdem-equity-multiway.webp "Je mehr Spieler noch im Pot sind, desto kleiner das Stück jedes Einzelnen – sogar Pocket Aces")
 
@@ -156,7 +156,7 @@ Zwei Dinge werden multiway schlechter, nicht nur dein roher Anteil:
 - **Die Fold Equity bricht zusammen.** Um einen Pot mit einer Bet zu gewinnen, müssen jetzt *alle* folden – viel unwahrscheinlicher mit drei Gegnern als mit einem. Bluffs und dünne Semi-Bluffs verlieren schnell an Wert.
 - **Die Realization fällt.** Mehr Spieler, die noch handeln, bedeuten mehr Wege, ausgedrawt oder von deiner Hand gebettet zu werden, also realisierst du sogar noch weniger von einem bereits kleineren Stück.
 
-Die praktische Erkenntnis: Hände, die einen Multiway-Pot wollen, sind die, die die Nuts machen (Sets, suited Asse für den Nut-Flush), nicht große Paare, die sich am besten heads-up spielen. Wenn das Feld groß ist, zieh dich zu Händen zusammen, deren Equity hält, wenn der Kuchen fünffach geschnitten wird.
+Die praktische Erkenntnis: Hände, die einen Multiway-Pot wollen, sind die, die die Nuts machen (Sets, suited Asse für den Nut-Flush), nicht große Paare, die sich am besten heads-up spielen. Wenn das Feld groß ist, spiel enger und nimm nur Hände, deren Equity auch dann standhält, wenn der Kuchen fünffach geschnitten wird.
 
 ---
 
@@ -168,7 +168,7 @@ Die praktische Erkenntnis: Hände, die einen Multiway-Pot wollen, sind die, die 
 Rohe Equity schätzen | Outs × 4 oder × 2 bei Draws; das Matchup preflop abrufen
 Für Realization abziehen | Out of position oder schwer zu spielen? Kürze es – 40% roh könnten 30% real sein
 Fold Equity addieren | Wenn du bettest, wie oft foldet der Villain? Das ist extra Equity, die deine Hand allein nicht hat
-Mit dem Preis vergleichen | Realisierte Equity + Fold Equity vs deine Pot Odds → callen, betten oder folden
+Mit dem Preis vergleichen | Realisierte Equity + Fold Equity vs. deine Pot Odds → callen, betten oder folden
 :::
 
 An dem Abend, den ich oben erwähnte, machte ich Schritt eins und hörte auf – zählte meine rohe Equity und ignorierte, dass ich sie out of position, gegen einen guten Spieler, nie realisieren würde. Sobald ich anfing, für die Position abzuziehen und über *seine* Folds statt nur meine Karten nachzudenken, schlossen sich die Leaks. Die Equity ist keine Zahl, die du nachschlägst; sie ist eine Linse, durch die du jede Entscheidung laufen lässt.
@@ -188,7 +188,7 @@ A. Die Equity ist dein Anteil an *diesem* Pot, wenn die Hand ausgespielt wird. D
 
 **Q. Brauche ich einen Equity-Rechner?**
 
-A. Nicht am Tisch. Dort schätzt du mit Outs × 4 bzw. × 2 und den auswendig gelernten Preflop-Matchups; das reicht auf ein bis zwei Prozentpunkte. Equity-Rechner sind Werkzeuge fürs Studieren zwischen den Sessions – dort rechnest du ganze Ranges durch statt einzelner Hände.
+A. Nicht am Tisch. Dort schätzt du mit Outs × 4 bzw. × 2 und den auswendig gelernten Preflop-Matchups; das reicht bis etwa neun Outs auf ein bis zwei Prozentpunkte genau. Equity-Rechner sind Werkzeuge fürs Studieren zwischen den Sessions – dort rechnest du ganze Ranges durch statt einzelner Hände.
 
 **Q. Was ist der Unterschied zwischen Equity und Pot Odds?**
 
@@ -196,11 +196,11 @@ A. Die Equity ist deine Chance zu gewinnen (was du hast); die Pot Odds sind die 
 
 **Q. Sind 50% Equity gut im Poker?**
 
-A. Es ist für sich weder gut noch schlecht – 50% ist ein Coinflip. Ob es ein Call ist, hängt vom Preis ab: gegen eine Half-Pot-Bet brauchst du nur 25%, also sind 50% ein großer Call; aber deinen ganzen Stack als 50/50-Underdog um nichts zu riskieren ist ein Glücksspiel, kein Edge. Die Equity ist nur neben den Pot Odds bedeutsam.
+A. Es ist für sich weder gut noch schlecht – 50% ist ein Coinflip. Ob es ein Call ist, hängt vom Preis ab: gegen eine Half-Pot-Bet brauchst du nur 25%, also sind 50% ein großer Call; aber deinen ganzen Stack in einem 50/50 ohne jeden Edge zu riskieren ist ein Glücksspiel, kein Vorteil. Die Equity ist nur im Verhältnis zu den Pot Odds bedeutsam.
 
 **Q. Wie viel Fold Equity brauche ich, um profitabel zu bluffen?**
 
-A. Für einen reinen Bluff brauchst du deinen Gegner, dass er mindestens Bet ÷ (Pot + Bet) der Zeit foldet. $50 in $100 zu betten heißt 50 ÷ 150 = 33%. Hast du auch einen Draw (einen Semi-Bluff), brauchst du, dass er sogar seltener foldet, weil du auch bei einem Call noch gewinnen kannst. Deshalb ist das Semi-Bluffen von Draws so profitabel.
+A. Für einen reinen Bluff muss dein Gegner mindestens Bet ÷ (Pot + Bet) der Fälle folden. $50 in $100 zu betten heißt 50 ÷ 150 = 33%. Hast du auch einen Draw (einen Semi-Bluff), darf er sogar seltener folden, weil du auch bei einem Call noch gewinnen kannst. Deshalb ist das Semi-Bluffen von Draws so profitabel.
 
 **Q. Was ist Equity Realization?**
 
@@ -210,17 +210,17 @@ A. Die Equity Realization ist, wie viel deiner rohen Equity du tatsächlich eins
 
 A. Die All-in-Equity ist schlicht dein rohes Win-Prozent, wenn kein weiteres Setzen mehr passieren kann. Weil es keine zukünftigen Entscheidungen gibt, realisierst du 100% davon, sodass die rohe Equity zum exakten Anteil am Pot wird, den du über die Zeit einsammelst. Es ist der eine Spot, wo „Equity ist gleich Pot-Anteil“ wörtlich wahr ist.
 
-**Q. Welche Hände willst du multiway spielen?**
+**Q. Was bedeutet 20% Equity?**
 
-A. Die, die die Nuts machen: Sets, suited Asse für den Nut-Flush, verbundene Karten. Große Paare wollen dagegen heads-up gespielt werden – ihre Equity fällt schnell, und in einem Feld aus vier Gegnern ist Top Pair selten noch die beste Hand. Merksatz: Je mehr Spieler im Pot, desto stärker muss deine fertige Hand sein.
+A. Dass dir langfristig ein Fünftel des Pots gehört: In einem $200-Pot sind das $40. Ob du damit callen kannst, entscheidet der Preis – 20% Equity reichen genau bis zu einer Drittel-Pot-Bet (du bekommst 4:1). Alles Größere kostet mehr, als deine Hand wert ist.
 
 ---
 
 ## Die 3 Dinge zum Merken
 
 1. **Die Equity ist dein Anteil am Pot** – Win% × Pot-Größe. Calle, wenn sie deine Pot Odds schlägt. Dieser Vergleich ist das Rückgrat jeder Entscheidung.
-2. **Du behältst selten alles davon.** Realisierte Equity = roh × Realization%, und die Position ist der größte Faktor. Die rohe Equity ist die Decke, nicht die Auszahlung.
-3. **Aggression fertigt Equity.** Die Fold Equity lässt eine Bet Pots gewinnen, die deine Hand verlieren würde – aber sie bricht multiway zusammen, wo du brauchst, dass alle folden.
+2. **Du behältst selten alles davon.** Realisierte Equity = roh × Realization%, und die Position ist der größte Faktor. Die rohe Equity ist die Obergrenze, nicht die Auszahlung.
+3. **Aggression erzeugt Equity.** Die Fold Equity lässt eine Bet Pots gewinnen, die deine Hand verlieren würde – aber sie bricht multiway zusammen, wo alle folden müssen.
 
 Meistere das und der Rest der Poker-Mathematik rastet ein. Von hier aus verwandle die Equity in korrekte Calls mit dem [Pot-Odds-Guide](/de/blog/holdem-pot-odds), oder sieh, wie tiefe Stacks das Bild ändern, mit den [Implied Odds](/de/blog/holdem-implied-odds).
 

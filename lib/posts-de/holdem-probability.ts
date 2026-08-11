@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Blick von oben auf einen aktiven Texas-Hold'em-Tisch mit fünf Gemeinschaftskarten, verstreuten Chip-Stacks und Spielern mitten in der Hand",
   tags: ["poker wahrscheinlichkeiten tabelle", "poker wahrscheinlichkeiten faustregel", "poker wahrscheinlichkeiten berechnen", "poker odds", "poker wahrscheinlichkeit royal flush", "odds set floppen", "pot odds", "poker outs tabelle", "texas holdem odds"],
   content: `
-Als ich zum ersten Mal in einem Live-Game ein Paar Fünfen set-minete und meinen Set am Flop traf, stöhnte der Typ neben mir: „Wie stehen denn *bitte* die Odds?“ – und ich wusste es tatsächlich: etwa ==1 zu 8,5==. Genau diese eine Zahl war der Grund, warum ich überhaupt gecallt hatte.
+Als ich zum ersten Mal in einem Live-Game mit einem Paar Fünfen set-minte und meinen Set am Flop traf, stöhnte der Typ neben mir: „Wie stehen denn *bitte* die Odds?“ – und ich wusste es tatsächlich: etwa ==1 zu 8,5==. Genau diese eine Zahl war der Grund, warum ich überhaupt gecallt hatte.
 
 Poker ist kein Ratespiel. Jeder Call, jeder Fold und jeder Shove ist eine ==als etwas anderes getarnte Wahrscheinlichkeitsfrage==, und die Spieler, die gewinnen, sind die, die „Wie stehen die Odds?“ zum Reflex gemacht haben. Das ist die ==komplette **Poker Wahrscheinlichkeiten Tabelle**== fürs Texas Hold'em – jede fertige Hand, jeder Flop, jeder Draw – mit der ==g:einen mentalen Abkürzung==, mit der du die Mathematik am Tisch in zwei Sekunden erledigst.
 
@@ -73,7 +73,7 @@ Die Rangfolge folgt der **5-Karten-Spalte**: Je seltener eine Hand unter fünf z
 
 ## Wie oft bekommst du Asse? Odds für jede Starthand
 
-Ein bestimmtes Pocket-Paar wie **A-A** bekommst du genau **einmal in 221 Händen** (0,45%). ==Irgendein== Pocket-Paar ist dagegen Alltag: alle **17 Hände** (5,9%), also grob zweimal pro Stunde live. A-K suited liegt bei 1 zu 332, und fast jede vierte Hand besteht aus zwei Karten derselben Farbe (23,5%). Vor dem Flop gibt es insgesamt **1.326 mögliche Starthände**.
+Ein bestimmtes Pocket Pair wie **A-A** bekommst du genau **einmal in 221 Händen** (0,45%). ==Irgendein== Pocket Pair ist dagegen Alltag: alle **17 Hände** (5,9%), also grob zweimal pro Stunde live. A-K suited liegt bei 1 zu 332, und fast jede vierte Hand besteht aus zwei Karten derselben Farbe (23,5%). Vor dem Flop gibt es insgesamt **1.326 mögliche Starthände**.
 
 ![Pocket-Asse – das Pik-Ass und das Herz-Ass frisch ausgeteilt auf grünem Filz neben Poker-Chips](/images/holdem-probability-starting-hands.webp "Pocket-Asse: die beste Starthand, nur einmal in 221 Händen ausgeteilt")
 
@@ -81,8 +81,8 @@ So oft tauchen die Hände auf, nach denen die Leute am Tisch fragen.
 
 | Starthand | Odds | Wie oft |
 |:---|:---:|:---|
-| Ein bestimmtes Pocket-Paar (z. B. A-A) | 1 zu 221 (0,45%) | Etwa einmal alle ~221 Hände |
-| **Irgendein** Pocket-Paar | 1 zu 17 (5,9%) | Grob zweimal pro Stunde live |
+| Ein bestimmtes Pocket Pair (z. B. A-A) | 1 zu 221 (0,45%) | Etwa einmal alle ~221 Hände |
+| **Irgendein** Pocket Pair | 1 zu 17 (5,9%) | Grob zweimal pro Stunde live |
 | A-K suited (bestimmt) | 1 zu 332 (0,30%) | Selten |
 | A-K (suited *oder* offsuit) | 1 zu 83 (1,2%) | – |
 | Beliebige zwei suited Karten | 1 zu 4,3 (23,5%) | Fast jede vierte Hand |
@@ -93,25 +93,25 @@ Wenn also das nächste Mal jemand sagt „Ich kriege nie Asse“, hat er grob re
 
 ## Wie hoch ist die Wahrscheinlichkeit, nach dem Flop zu treffen?
 
-Mit einem Pocket-Paar floppst du in **11,8%** der Fälle einen Set – etwa jede achte Hand. Zwei suited Karten werden nur in **0,84%** direkt zum Flush, aber in **10,9%** zum Flushdraw. Zwei ungepaarte Karten treffen in **2,0%** zwei Paare. Alles andere heißt: Der Flop hat dich verfehlt – und das ist der Normalfall, nicht die Ausnahme.
+Mit einem Pocket Pair floppst du in **11,8%** der Fälle einen Set – etwa jede achte Hand. Zwei suited Karten werden nur in **0,84%** direkt zum Flush, aber in **10,9%** zum Flushdraw. Zwei ungepaarte Karten treffen in **2,0%** zwei Paare. Alles andere heißt: Der Flop hat dich verfehlt – und das ist der Normalfall, nicht die Ausnahme.
 
-Das ist die Tabelle, die die meisten Odds-Seiten vergraben oder auf ein Dutzend Artikel aufteilen. Sie zeigt die Odds, dass der Flop deine Hand *macht*, gegeben die Hole Cards in der linken Spalte.
+Das ist die Tabelle, die die meisten Odds-Seiten vergraben oder auf ein Dutzend Artikel aufteilen. Sie zeigt die Odds, dass der Flop deine Hand *macht*, bei den Hole Cards in der linken Spalte.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Du floppst… | Mit | Odds | Dagegen |
 |:---|:---|:---:|:---:|
-| Einen Set (oder besser) | Ein Pocket-Paar | 11,8% | ~7,5:1 |
+| Einen Set (oder besser) | Ein Pocket Pair | 11,8% | ~7,5:1 |
 | Einen Flush | Zwei suited Karten | 0,84% | ~118:1 |
 | Einen Flushdraw | Zwei suited Karten | 10,9% | ~8:1 |
 | Eine Straße | Suited Connectors (z. B. 8-7) | 1,3% | ~76:1 |
 | Zwei Paare | Zwei ungepaarte Karten | 2,0% | ~49:1 |
-| Ein Full House | Ein Pocket-Paar | 0,98% | ~101:1 |
-| Quads | Ein Pocket-Paar | 0,245% | ~407:1 |
+| Ein Full House | Ein Pocket Pair | 0,98% | ~101:1 |
+| Quads | Ein Pocket Pair | 0,245% | ~407:1 |
 
 </div>
 
-Die Zeile zum Merken ist die oberste – ==**1 zu 8,5** für den Set==. Diese eine Zahl entscheidet, ob es profitabel ist, einen Raise zu callen, um ein kleines Paar zu „set-minen“ – du brauchst den Pot (und den wahrscheinlichen Stack deines Gegners), um dich bei einem Treffer mit mehr als 7,5:1 auszuzahlen. Das ist die Brücke zu den [Pot Odds](#pot-odds) weiter unten. Für die vollständige Herleitung jeder Zeile hier – plus die Set-Mining-Stack-Regel und die Aufteilung fertiger vs. Draw vs. kompletter Flush – siehe die Tiefenanalyse zu [Drawing Odds und den Odds, jede Hand zu floppen](/de/blog/holdem-drawing-odds "thumb:/images/holdem-drawing-odds-hero.webp").
+Die Zeile zum Merken ist die oberste – ==**1 zu 8,5** für den Set==. Diese eine Zahl entscheidet, ob es profitabel ist, einen Raise zu callen, um ein kleines Paar zu „set-minen“ – du brauchst den Pot (und den wahrscheinlichen Stack deines Gegners), um dich bei einem Treffer mit mehr als 7,5:1 auszuzahlen. Das ist die Brücke zu den [Pot Odds](#pot-odds) weiter unten. Für die vollständige Herleitung jeder Zeile hier – plus die Set-Mining-Stack-Regel und die Aufteilung in fertigen Flush, Flushdraw und komplettierten Draw – siehe die Tiefenanalyse zu [Drawing Odds und den Odds, jede Hand zu floppen](/de/blog/holdem-drawing-odds "thumb:/images/holdem-drawing-odds-hero.webp").
 
 ---
 
@@ -161,7 +161,7 @@ Das ist der ganze Trick. Outs → mal vier am Flop → deine [Equity](/de/blog/h
 
 ## Pot Odds anwenden: wann ein Call profitabel ist
 
-Die Pot Odds sind der Anteil am finalen Pot, den du für deinen Call bezahlst: Call ÷ (Pot nach deinem Call). Bettet dein Gegner $25 in einen $100-Pot, zahlst du 25 in einen Endpot von 125 – also **20%**. Ist deine Equity höher als dieser Preis, verdient der Call langfristig Geld. Deine Trefferchance allein sagt dir gar nichts, solange du den Preis nicht daneben legst.
+Die Pot Odds sind der Anteil am finalen Pot, den du für deinen Call bezahlst: Call ÷ (Pot nach deinem Call). Liegen nach der Bet deines Gegners $100 im Pot und kostet dich der Call $25, zahlst du 25 in einen Endpot von 125 – also **20%**. Ist deine Equity höher als dieser Preis, verdient der Call langfristig Geld. Deine Trefferchance allein sagt dir gar nichts, solange du den Preis nicht daneben legst.
 
 ![Pot-Odds-Infografik – ein $100-Pot und ein $25-Call, also 25 ÷ 125 bedeutet, du brauchst 20% Equity](/images/holdem-probability-pot-odds.webp "Ein $25-Call in einen $100-Pot: 25 ÷ 125 = 20% Equity nötig, um die Nulllinie zu treffen")
 
@@ -175,7 +175,7 @@ Deine Equity | Flushdraw ≈ 35% bis zum River (Faustregel: 9 × 4) – die Zahl
 Entscheidung | Mit zwei kommenden Karten: 35% > 25% → ein klar profitabler ==g:Call==
 :::
 
-Das ist der Moment, in dem sich all die Zahlen auszahlen – aber **nimm die Zahl der Street, die du gerade bezahlst**. Kommen beide Karten (du bist all-in, oder der Turn wird durchgecheckt), schlagen deine **35%** den Preis von **25%**, und Callen gewinnt langfristig Geld, obwohl du die Hand öfter verlieren wirst als nicht. Bettet dein Gegner am Turn erneut, kaufst du dir mit diesem Call nur die Turn-Karte – vom Flop aus sind das ==9 ÷ 47 = 19,1%==, *unter* dem Preis – dann braucht der Draw [Implied Odds](/de/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp"), also das Geld, das du auf den Streets nach dem Treffer gewinnst, um die Lücke zu schließen. Die ×4-Zahl für eine Entscheidung über eine einzige Karte auszugeben ist der häufigste Weg, auf dem Anfänger einen Draw überschätzen. Für die vollständige Methode und den Bet-Size-Spickzettel siehe [wie man Pot Odds berechnet](/de/blog/holdem-pot-odds).
+Das ist der Moment, in dem sich all die Zahlen auszahlen – aber **nimm die Zahl der Street, die du gerade bezahlst**. Kommen beide Karten (du bist all-in, oder der Turn wird durchgecheckt), schlagen deine **35%** den Preis von **25%**, und Callen gewinnt langfristig Geld, obwohl du die Hand öfter verlieren wirst als nicht. Bettet dein Gegner am Turn erneut, kaufst du dir mit diesem Call nur die Turn-Karte – vom Flop aus sind das ==9 ÷ 47 = 19,1%==, *unter* dem Preis – dann braucht der Draw [Implied Odds](/de/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp"), also das Geld, das du auf den Streets nach dem Treffer gewinnst, um die Lücke zu schließen. Die ×4-Zahl auf eine Entscheidung über eine einzige Karte anzuwenden ist der häufigste Weg, auf dem Anfänger einen Draw überschätzen. Für die vollständige Methode und den Bet-Size-Spickzettel siehe [wie man Pot Odds berechnet](/de/blog/holdem-pot-odds).
 
 ---
 
@@ -195,16 +195,16 @@ Ein häufiger Mythos: „Ein Royal Flush schlägt alles, also kann er *unentschi
 
 ## Wie selten sind Quads, Cooler und Bad Beats wirklich?
 
-Mit einem Pocket-Paar floppst du Quads **1 zu 408** – rechnest du ein, dass du überhaupt erst alle 17 Hände ein Paar bekommst, sind das rund **einmal alle 6.900 Hände**. Ein Straight Flush am Flop steht ~1 zu 4.900, ein Royal Flush bis zum River 1 zu 30.940. Manche Zahlen existieren eben vor allem, um die schlimmste Nacht deines Pokerlebens zu erklären.
+Mit einem Pocket Pair floppst du Quads **1 zu 408** – rechnest du ein, dass du überhaupt erst alle 17 Hände ein Paar bekommst, sind das rund **einmal alle 6.900 Hände**. Ein Straight Flush am Flop steht ~1 zu 4.900, ein Royal Flush bis zum River 1 zu 30.940. Manche Zahlen existieren eben vor allem, um die schlimmste Nacht deines Pokerlebens zu erklären.
 
 | Long Shot | Odds |
 |:---|:---:|
 | Pocket-Asse ausgeteilt bekommen | 1 zu 221 |
-| Quads mit einem Pocket-Paar floppen | 1 zu 408 |
+| Quads mit einem Pocket Pair floppen | 1 zu 408 |
 | Einen Straight Flush floppen (Suited Connectors) | ~1 zu 4.900 |
 | Einen Royal Flush bis zum River treffen | 1 zu 30.940 |
 
-**Set over Set** – du floppst einen Set und verlierst gegen einen größeren Set – ist der ultimative Cooler. Es gibt keine saubere einzelne Zahl, weil es davon abhängt, wie viele Spieler Paare halten, aber der Anker ist dieser: *du* floppst einen Set nur 11,8% der Zeit, und dass ein Gegner dasselbe auf demselben Board tut, ist selten genug, dass sich die meisten Spieler an jeden einzelnen erinnern. Wenn es passiert, ist es Varianz, kein Fehler – die Mathematik war die ganze Zeit auf deiner Seite. Wenn du genau sehen willst, wie solche Showdowns gewertet werden, decken die [Kicker- und Tiebreaker-Regeln](/de/blog/holdem-tiebreak-rules) jeden Grenzfall ab.
+**Set over Set** – du floppst einen Set und verlierst gegen einen größeren Set – ist der ultimative Cooler. Es gibt keine saubere einzelne Zahl, weil es davon abhängt, wie viele Spieler Paare halten, aber der Anker ist dieser: *du* floppst einen Set nur 11,8% der Fälle, und dass ein Gegner dasselbe auf demselben Board tut, ist selten genug, dass sich die meisten Spieler an jeden einzelnen erinnern. Wenn es passiert, ist es Varianz, kein Fehler – die Mathematik war die ganze Zeit auf deiner Seite. Wenn du genau sehen willst, wie solche Showdowns gewertet werden, decken die [Kicker- und Tiebreaker-Regeln](/de/blog/holdem-tiebreak-rules) jeden Grenzfall ab.
 
 ---
 
@@ -216,11 +216,11 @@ Mit einem Pocket-Paar floppst du Quads **1 zu 408** – rechnest du ein, dass du
 
 **Q. Wie hoch ist die Wahrscheinlichkeit für einen Vierling?**
 
-A. 1 zu 4.165 (0,0240%) als ausgeteilte Fünf-Karten-Hand und 1 zu 595 (0,168%) bis zum River im Hold'em. Direkt am Flop brauchst du dafür ein Pocket-Paar, und selbst dann steht es 1 zu 408.
+A. 1 zu 4.165 (0,0240%) als ausgeteilte Fünf-Karten-Hand und 1 zu 595 (0,168%) bis zum River im Hold'em. Der übliche Weg dorthin führt über ein Pocket Pair – und selbst dann steht es 1 zu 408, die Quads direkt zu floppen.
 
 **Q. Wie hoch ist die Wahrscheinlichkeit für ein Full House?**
 
-A. 2,60% bis zum River, also etwa jede 39. Hand – deutlich häufiger, als die meisten schätzen. Als ausgeteilte Fünf-Karten-Hand ist es dagegen 1 zu 694 (0,144%). Mit einem Pocket-Paar floppst du ein Full House in 0,98% der Fälle.
+A. 2,60% bis zum River, also etwa jede 39. Hand – deutlich häufiger, als die meisten schätzen. Als ausgeteilte Fünf-Karten-Hand ist es dagegen 1 zu 694 (0,144%). Mit einem Pocket Pair floppst du ein Full House in 0,98% der Fälle.
 
 **Q. Wie stehen die Odds für einen Straight Flush?**
 
@@ -228,15 +228,15 @@ A. Grob 1 zu 72.193 als Fünf-Karten-Hand, oder etwa 1 zu 3.590 bis zum River im
 
 **Q. Wie stehen die Odds, einen Flush bis zum River zu treffen?**
 
-A. Wenn du einen Flushdraw floppst (neun Outs), komplettierst du ihn etwa 35% der Zeit bis zum River – besser als eine von drei. Auf eine einzelne Karte (Turn zu River) fällt es auf grob 19,6%.
+A. Wenn du einen Flushdraw floppst (neun Outs), komplettierst du ihn etwa 35% der Fälle bis zum River – besser als eine von drei. Auf eine einzelne Karte (Turn zu River) fällt es auf grob 19,6%.
 
 **Q. Wie stehen die Odds, einen Set zu floppen?**
 
-A. Etwa 11,8%, oder grob 1 zu 8,5, wenn du ein Pocket-Paar hältst. Diese Zahl „7,5:1 dagegen“ ist die Grundlage, um zu entscheiden, ob das Set-Mining eines kleinen Paars profitabel ist.
+A. Etwa 11,8%, oder grob 1 zu 8,5, wenn du ein Pocket Pair hältst. Diese Zahl „7,5:1 dagegen“ ist die Grundlage, um zu entscheiden, ob das Set-Mining eines kleinen Paars profitabel ist.
 
 **Q. Wie stehen die Odds, Pocket-Asse ausgeteilt zu bekommen?**
 
-A. 1 zu 221 (0,45%) speziell für Asse. Irgendein Pocket-Paar kommt allerdings weit häufiger vor – etwa 1 zu 17 Hände (5,9%).
+A. 1 zu 221 (0,45%) speziell für Asse. Irgendein Pocket Pair kommt allerdings weit häufiger vor – etwa 1 zu 17 Hände (5,9%).
 
 **Q. Wie genau ist die Faustregel bei vielen Outs?**
 
@@ -248,7 +248,7 @@ A. Teile den Betrag, den du callen musst, durch den gesamten Pot nach deinem Cal
 
 **Q. Wie stehen die Odds für Set over Set?**
 
-A. Es gibt keine einzelne feste Zahl – es hängt davon ab, wie viele Gegner Pocket-Paare halten – aber es ist selten. Du floppst einen Set von vornherein nur 11,8% der Zeit, also ist es der klassische „Cooler“, der Stacks kostet, wenn zwei Spieler auf demselben Board beide Sets floppen.
+A. Es gibt keine einzelne feste Zahl – es hängt davon ab, wie viele Gegner Pocket Paire halten – aber es ist selten. Du floppst einen Set von vornherein nur 11,8% der Fälle, also ist es der klassische „Cooler“, der Stacks kostet, wenn zwei Spieler auf demselben Board beide Sets floppen.
 
 ---
 

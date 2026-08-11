@@ -41,7 +41,7 @@ Call ÷ (Pot + Call) | Die gesamte Formel
 
 Sagen wir, der Pot ist $150 und du musst $50 callen. Dir werden ==$150 Gewinn für $50 Risiko== angeboten – du „bekommst 3:1“. Je größer der Pot im Verhältnis zum Call, desto besser dein Preis und desto seltener musst du gewinnen, damit sich der Call lohnt.
 
-Diese Zahl – „wie oft du gewinnen musst“ – ist der ganze Punkt. 3:1 zu bekommen bedeutet, dass sich der Call selbst bezahlt, wenn du auch nur **25% der Zeit** oder öfter gewinnst. Pot Odds verwandeln ein schwammiges „soll ich callen?“ in ein hartes Ziel: *gewinne ich oft genug, um diesen Preis zu schlagen?*
+Diese Zahl – „wie oft du gewinnen musst“ – ist der ganze Punkt. 3:1 zu bekommen bedeutet, dass sich der Call selbst bezahlt, wenn du auch nur **25% der Fälle** oder öfter gewinnst. Pot Odds verwandeln ein schwammiges „soll ich callen?“ in ein hartes Ziel: *gewinne ich oft genug, um diesen Preis zu schlagen?*
 
 ---
 
@@ -52,7 +52,7 @@ Vergiss die Verhältnisse für einen Moment – die schnellste brauchbare Form i
 :::steps
 Zähle den finalen Pot zusammen | Aktueller Pot + die Bet + dein Call. Beispiel: $100 Pot + $50 Bet + dein $50 Call = $200
 Teile deinen Call durch diesen finalen Pot | $50 ÷ $200 = 0,25
-Das ist deine benötigte Equity | Du musst mindestens 25% der Zeit gewinnen, um profitabel zu callen
+Das ist deine benötigte Equity | Du musst mindestens 25% der Fälle gewinnen, um profitabel zu callen
 Vergleiche sie mit deiner tatsächlichen Equity | Flushdraw ≈ 35% zum Treffen → 35% schlägt 25% → ==g:call==
 :::
 
@@ -67,9 +67,7 @@ Das war's. **Benötigte Equity = dein Call ÷ der finale Pot.** Wenn deine echte
 
 Das Verhältnis ist, was du *siehst* – Pot gegen Bet, „ich bekomme 3:1“. Der Prozentwert ist, was du *benutzt* – die Equity-Hürde, die du mit deinem Draw vergleichst. Beide beschreiben denselben Spot. Am Tisch rechnest du deshalb in Prozent und benutzt das Verhältnis nur, um den Preis überhaupt abzulesen.
 
-Old-School-Spieler reden in Verhältnissen („ich bekomme 4:1“); moderne Spieler denken in Prozent („ich brauche 20%“). Du solltest sofort zwischen beiden wechseln können.
-
-Die Umrechnung ist ein Schritt: ein Verhältnis von **X:1** bedeutet, dass du **1 ÷ (X + 1)** als Prozentwert brauchst.
+Old-School-Spieler reden in Verhältnissen („ich bekomme 4:1“); moderne Spieler denken in Prozent („ich brauche 20%“). Die Umrechnung ist ein Schritt: ein Verhältnis von **X:1** bedeutet, dass du **1 ÷ (X + 1)** als Prozentwert brauchst.
 
 | Du bekommst… | Equity, die du brauchst |
 |:---|:---:|
@@ -127,7 +125,7 @@ Jetzt verbinde den Preis mit deiner Hand. [Zähle deine **Outs**](/de/blog/holde
 
 </div>
 
-Lies sie gegen die Bet-Size-Tabelle oben. Gegen eine ==Half-Pot-Bet (25% nötig)==: mit zwei kommenden Karten ist ein Flushdraw (35%) ein klarer Call – aber auf einer *einzelnen* Karte ist derselbe Draw nur 19,1%, was den Preis für sich genommen **nicht** trifft. Genau diese Lücke ist der Ort, an dem Implied Odds ins Spiel kommen.
+Lies sie gegen die Bet-Size-Tabelle oben. Gegen eine ==Half-Pot-Bet (25% nötig)==: mit zwei kommenden Karten ist ein Flushdraw (35%) ein klarer Call – aber auf einer *einzelnen* Karte ist derselbe Draw vom Flop aus nur 19,1%, was den Preis für sich genommen **nicht** trifft. Genau diese Lücke ist der Ort, an dem Implied Odds ins Spiel kommen.
 
 ---
 
@@ -146,7 +144,7 @@ Implied Odds | Die *zusätzlichen* Chips, die du auf späteren Streets zu gewinn
 
 **Pot Odds vs. [Equity](/de/blog/holdem-equity "thumb:/images/holdem-equity-hero.webp")** ist die Kernentscheidung: calle, wenn deine Equity deine Pot Odds schlägt. [**Implied Odds**](/de/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp") sind der Tie-Breaker für Draws, die den Preis knapp verfehlen. Wenn dein Flushdraw 25% braucht, aber auf der River-Karte nur 19,6% hat, kannst du trotzdem callen, *wenn* du beim Treffen genug zusätzliche Bets herausholst, um die Differenz zu decken. Deshalb kannst du eine Flop-Bet mit einem Draw profitabel callen, und deshalb machen tiefe Stacks Draws wertvoller.
 
-Der dunkle Spiegel sind die **Reverse Implied Odds** – die Chips, die du *verlierst*, wenn du triffst, aber die Hand trotzdem verlierst (dein Flush kommt an, aber das Board pairt und jemand hat ein Full House). Second-Best-Draws bluten leise Geld, weshalb der [Nut-Flushdraw so viel mehr wert ist als ein kleiner](/de/blog/holdem-starting-hands-chart).
+Der dunkle Spiegel sind die **Reverse Implied Odds** – die Chips, die du *verlierst*, wenn du triffst, aber die Hand trotzdem verlierst (dein Flush kommt an, aber das Board paart und jemand hat ein Full House). Second-Best-Draws bluten leise Geld, weshalb der [Nut-Flushdraw so viel mehr wert ist als ein kleiner](/de/blog/holdem-starting-hands-chart).
 
 ---
 
@@ -159,7 +157,7 @@ Du kannst mitten in der Hand nicht die exakte Equity ausrechnen, also rechne so:
 - **Auf dem Flop, mit zwei noch kommenden Karten:** multipliziere deine Outs mit **4**.
 - **Auf dem Turn, mit einer kommenden Karte:** multipliziere deine Outs mit **2**.
 
-Ein Flushdraw hat 9 Outs. Auf dem Flop: 9 × 4 = **36%** (echter Wert 35,0% – punktgenau). Auf dem Turn: 9 × 2 = **18%** (echter Wert 19,6% – nah genug zum Entscheiden).
+Ein Flushdraw hat 9 Outs. Auf dem Flop: 9 × 4 = **36%** (echter Wert 35,0% – einen Punkt daneben, also brauchbar). Auf dem Turn: 9 × 2 = **18%** (echter Wert 19,6% – nah genug zum Entscheiden).
 
 :::tip[Die ×4-Version nimmt stillschweigend an, dass du *beide* verbleibenden Karten ohne weitere Bets siehst – was nur garantiert ist, wenn du bereits all-in bist. Wenn noch Bets kommen, verlass dich auf die ×2-Zahl (eine Karte) für die Street vor dir und lass Implied Odds den Rest rechtfertigen.]:::
 
@@ -169,11 +167,11 @@ Vollständige Herleitungen für jeden Draw und jede fertige Hand findest du in d
 
 ## Welche Pot-Odds-Fehler machen Anfänger am häufigsten?
 
-Fünf Fehler kosten das meiste Geld: den eigenen Call nicht mitzählen, verunreinigte Outs mitzählen, die ×4 gegen eine Turn-Bet benutzen, Implied und Reverse Implied Odds ignorieren – und aus Hoffnung callen. Ich habe jeden einzelnen davon gemacht, bevor sie mich pleitegemacht haben. Achte auf sie:
+Fast alle teuren Fehler sind Varianten desselben Musters: **Der Preis wird zu günstig gerechnet.** Mal fehlt der eigene Call im Nenner, mal stehen Outs in der Zahl, die gar nicht gewinnen, mal gilt die ×4 für eine Street, die du gar nicht kaufst. Ich habe jeden einzelnen davon gemacht, bevor ich sie mir abgewöhnt habe. Achte auf sie:
 
 :::card
 🧮 | Den Call zu vergessen | Benötigte Equity ist Call ÷ *finaler* Pot – zähle deine eigenen Chips mit, sonst überschätzt du jeden Preis
-🃏 | Verunreinigte Outs zählen | Ein Flush-Out, das auch das Board pairt, kann jemandem ein Full House machen. Rechne „schmutzige“ Outs raus, bevor du der Zahl traust
+🃏 | Dirty Outs mitzählen | Ein Flush-Out, das auch das Board paart, kann jemandem ein Full House machen. Rechne „schmutzige“ Outs raus, bevor du der Zahl traust
 🚀 | Die Faustregel falsch anwenden | ×4 gilt nur, wenn du beide Karten gratis siehst (all-in). Gegen eine Turn-Bet ist es ×2 – mit ×4 redest du dich in verlierende Calls hinein
 💸 | Implied & Reverse Implied Odds ignorieren | Tiefe Stacks belohnen Draw-Hände; ein Non-Nut-Draw, der in eine bessere Hand trifft, ist eine Falle, kein Zahltag
 🎯 | Aus Hoffnung callen | „Es könnte ja ankommen“ ist kein Grund. Wenn deine Equity deine Pot Odds (plus Implied Odds) nicht schlägt, ist es ein Fold
@@ -221,7 +219,7 @@ A. Eine Pot-Size-Bet legt dir 2:1 auf, du brauchst also 33% Equity zum Callen. E
 
 **Q. Gelten Pot Odds auch, wenn noch Spieler hinter mir sitzen?**
 
-A. Nein, nicht unverändert. Solange hinter dir noch jemand raisen kann, ist dein Preis nicht endgültig – ein Squeeze macht aus deinem 3:1-Call einen viel teureren. In Multiway-Pots steigt außerdem die Chance, dass jemand deinen Draw dominiert. Rechne den Preis, aber zieh in solchen Spots einen Sicherheitsabstand ab.
+A. Ja, aber der Preis ist noch nicht endgültig. Callen weitere Spieler, wächst der Pot und dein Preis wird sogar besser. Raist jemand hinter dir, war deine Rechnung dagegen wertlos – aus 3:1 wird ein deutlich teurerer Call. Dazu steigt multiway die Chance, dass jemand deinen Draw dominiert. Rechne also, aber zieh einen Sicherheitsabstand ab, solange noch Spieler zu handeln haben.
 
 **Q. Was sind gute Pot Odds für einen Gutshot?**
 

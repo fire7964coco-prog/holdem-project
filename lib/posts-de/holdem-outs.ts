@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 In meinem ersten Jahr am Tisch habe ich „meine Draws gespielt“, ohne sie je zu zählen. Ein Flushdraw und ein Gutshot fühlten sich ungefähr gleich an – beides waren „Karten, die kommen könnten“ – also callte ich bei beiden gleich und wunderte mich, warum ich ständig verlor. Die Lösung war kein Strategie-Kurs. Es war eine Fünf-Minuten-Gewohnheit: ==stoppen und tatsächlich die Karten zählen, die mich retten.==
 
-Diese Gewohnheit heißt **Outs** zählen – [Pokers echte Antwort auf „Kartenzählen“](/de/blog/holdem-card-counting "thumb:/images/holdem-card-counting-hero.webp") – und es ist die eine Fähigkeit, die unter jeder Odds-Entscheidung im Poker liegt. Bevor du fragen kannst „ist dieser Call profitabel?“, musst du beantworten „wie viele Karten gewinnen mir die Hand?“ Dieser Guide ist die Zähl-Hälfte – die [Poker-Odds-und-Wahrscheinlichkeitstabelle](/de/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp") ist die Referenz dahinter, und [Pot Odds](/de/blog/holdem-pot-odds) ist das, was du mit der Zahl machst, sobald du sie hast.
+Diese Gewohnheit heißt **Outs** zählen – [die echte Antwort des Pokers auf „Kartenzählen“](/de/blog/holdem-card-counting "thumb:/images/holdem-card-counting-hero.webp") – und es ist die eine Fähigkeit, die jeder Odds-Entscheidung im Poker zugrunde liegt. Bevor du fragen kannst „ist dieser Call profitabel?“, musst du beantworten „wie viele Karten machen mir die beste Hand?“ Dieser Guide ist die Zähl-Hälfte – die [Poker-Odds-und-Wahrscheinlichkeitstabelle](/de/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp") ist die Referenz dahinter, und [Pot Odds](/de/blog/holdem-pot-odds) ist das, was du mit der Zahl machst, sobald du sie hast.
 
 ---
 
@@ -37,7 +37,7 @@ Diese Gewohnheit heißt **Outs** zählen – [Pokers echte Antwort auf „Karten
 
 **Ein Out ist jede Karte, die noch im Deck steckt und deine Hand in einen wahrscheinlichen Gewinner verwandelt.** Wenn du einen Flushdraw hältst, ist jede verbleibende Karte deiner Farbe ein Out – fange eine und du hast einen Flush. Ein Flushdraw sind neun Outs, ein beidseitig offener Straßendraw acht. Diese Zahl ist der Ausgangspunkt jeder Odds-Entscheidung am Tisch.
 
-Das Wort „wahrscheinlich“ leistet dort leise Arbeit. Ein echtes Out muss die Hand tatsächlich *gewinnen*, nicht bloß deine Karten verbessern. Deine Zehn zu paaren, wenn schon ein Flush auf dem Board liegt, ist kein Out – du hast dich verbessert, verlierst aber weiterhin. Outs zählen zu lernen heißt in Wahrheit, die Karten zu zählen, die gewinnen, und die zu ignorieren, die nur hilfreich *aussehen*.
+In dem Wort „wahrscheinlich“ steckt der ganze Trick. Ein echtes Out muss die Hand tatsächlich *gewinnen*, nicht bloß deine Karten verbessern. Deine Zehn zu paaren, wenn schon ein Flush auf dem Board liegt, ist kein Out – du hast dich verbessert, verlierst aber weiterhin. Outs zählen zu lernen heißt in Wahrheit, die Karten zu zählen, die gewinnen, und die zu ignorieren, die nur hilfreich *aussehen*.
 
 Alles Nachgelagerte – deine Equity, deine [Pot Odds](/de/blog/holdem-pot-odds), dein Call-oder-Fold – startet von dieser einen Zahl. Zähle die Outs falsch und jede Berechnung danach ist ebenfalls falsch. Und sobald du die Zahl kennst, sagen dir die [Drawing Odds](/de/blog/holdem-drawing-odds "thumb:/images/holdem-drawing-odds-hero.webp") genau, wie oft jeder Draw tatsächlich ankommt.
 
@@ -45,7 +45,7 @@ Alles Nachgelagerte – deine Equity, deine [Pot Odds](/de/blog/holdem-pot-odds)
 
 ## Wie zählst du deine Outs? Schritt für Schritt
 
-Drei Schritte, immer dieselben: Benenne den Draw, den du jagst. Zähle die Karten, die ihn vervollständigen – 13 pro Farbe, 4 pro Rang, abzüglich der Karten, die du schon siehst. Streiche dann jedes Out, das dich zwar verbessert, aber trotzdem verlieren lässt. Was übrig bleibt, ist deine Zahl.
+Zähle nur die Karten, die dich zur **besten** Hand machen – nicht die, die dich bloß verbessern. Das ist der ganze Unterschied zwischen einer Out-Zahl, die stimmt, und einer, die dich in verlierende Calls hineinredet. Am Rechnen scheitert dabei fast niemand; gezählt wird falsch.
 
 ![Ein Spieler hält Pik-Ass und Pik-König und studiert einen niedrigen Drei-Karten-Flop auf grünem Filz, während er vor dem Handeln Overcard-Outs zählt](/images/holdem-outs-counting.webp "A-K auf einem niedrigen Flop ist ein Musterbeispiel zum Zählen – sechs Overcard-Outs, plus die Backdoors")
 
@@ -54,12 +54,12 @@ Outs zählen ist eine Drei-Schritt-Routine, die du bei jedem Draw durchgehst, bi
 :::steps
 Benenne deinen Draw | Welche Hand jagst du? Flush, Straße, ein größeres Paar, ein Set – sei konkret beim Ziel
 Zähle die Karten, die ihn vervollständigen | Es gibt 13 von jeder Farbe und 4 von jedem Rang. Ziehe die ab, die du bereits sehen kannst (deine Karten + das Board)
-Streiche die Fakes raus | Streiche jedes „Out“, das deine Hand vervollständigt, aber trotzdem verliert – eine Flushkarte, die das Board paart, eine Straße, die jemandem eine höhere schenkt
+Streiche die falschen Outs | Streiche jedes „Out“, das deine Hand vervollständigt, aber trotzdem verliert – eine Flushkarte, die das Board paart, eine Straße, die jemandem eine höhere schenkt
 :::
 
 Nimm einen Flushdraw: 13 Karten deiner Farbe existieren, du kannst **vier** davon sehen (zwei in deiner Hand, zwei auf dem Board), also ==g:13 − 4 = 9 Outs==. Diese Subtraktion – die zu zählen, die du *nicht* fangen kannst, weil du sie schon hältst – ist die Stelle, an der Anfänger ausrutschen.
 
-Das Zählen nutzt nur Karten, die du sehen kannst. Du ziehst die unbekannten Karten deines Gegners nicht ab; du behandelst jede ungesehene Karte als noch live. Deshalb halten die Standard-Out-Zahlen unten, egal was irgendjemand sonst hält.
+Das Zählen nutzt nur Karten, die du sehen kannst. Du ziehst die unbekannten Karten deines Gegners nicht ab; du behandelst jede ungesehene Karte als noch live. Deshalb gelten die Standard-Out-Zahlen unten, egal was irgendjemand sonst hält.
 
 ---
 
@@ -74,9 +74,9 @@ Präge dir diese ein und du erkennst deine Out-Zahl auf einen Blick. Das ist die
 | Dein Draw | Outs | Warum |
 |:---|:---:|:---|
 | Flush + beidseitig offene Straße | 15 | Das Monster – zwei Draws auf einmal |
+| Flush + Gutshot | 12 | 9 Flush + 4 Gutshot − 1 geteilte Karte |
 | Flushdraw | 9 | 13 einer Farbe − 4 sichtbare |
 | Beidseitig offener Straßendraw | 8 | Vier Karten an jedem Ende |
-| Flush + Gutshot | 12 | 9 Flush + 4 Gutshot − 1 geteilte Karte |
 | Zwei Overcards | 6 | Drei von jedem Rang zum Paaren |
 | Ein Paar → Zwei Paare oder Drilling | 5 | 3 zum Paaren deines Kickers + 2 zum Drilling |
 | Gutshot (Inside Straight) | 4 | Nur ein Rang füllt die Lücke |
@@ -97,7 +97,7 @@ Hier ist die Master-Tabelle – die Odds, bis zum River zu treffen, plus die Ein
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Outs | Nur Turn (1 Karte, vom Flop) | Bis zum River (2 Karten) | River-Odds |
+| Outs | Nur Turn (1 Karte, vom Flop) | Bis zum River (2 Karten) | Odds dagegen (bis River) |
 |:---|:---:|:---:|:---:|
 | 2 | 4,3% | 8,4% | 11:1 |
 | 4 | 8,5% | 16,5% | 5:1 |
@@ -109,7 +109,7 @@ Hier ist die Master-Tabelle – die Odds, bis zum River zu treffen, plus die Ein
 
 </div>
 
-Zwei Zahlen zählen für jeden Draw. **„Bis zum River“** rechnet beide verbleibenden Karten und gilt, wenn du am Flop all-in bist und nichts mehr zu setzen hast. **„Nur Turn“** rechnet nur die nächste Karte – nutze das, sobald noch weitere Setzrunden kommen, denn dir ist nur garantiert, jeweils eine Karte zu sehen. Anfänger zitieren die fette „bis zum River“-Zahl, während sie eine Turn-Bet vor sich haben, reden sich in einen Call und zahlen dafür.
+Zwei Zahlen zählen für jeden Draw. **„Bis zum River“** rechnet beide verbleibenden Karten und gilt, wenn du am Flop all-in bist und nichts mehr zu setzen hast. **„Nur Turn“** rechnet nur die nächste Karte – nutze das, sobald noch weitere Setzrunden kommen, denn dir ist nur garantiert, jeweils eine Karte zu sehen. Anfänger zitieren die fette „bis zum River“-Zahl, während sie eine Turn-Bet vor sich haben, reden sich in einen Call hinein und zahlen dafür.
 
 Beachte das 15-Outs-Monster: mit zwei kommenden Karten ist es tatsächlich ein **Favorit** (54,1%), der seltene Draw, mit dem du am Flop happy all-in gehen kannst.
 
@@ -124,7 +124,7 @@ Du kannst diese Tabelle nicht mit an den Tisch nehmen, also nutze die Abkürzung
 - **Am Flop (zwei kommende Karten):** Outs ×4 ≈ dein % bis zum River zu treffen.
 - **Am Turn (eine kommende Karte):** Outs ×2 ≈ dein % am River zu treffen.
 
-Ein Flushdraw sind 9 Outs. Am Flop: 9 × 4 = **36%** (wahrer Wert 35,0% – punktgenau). Am Turn: 9 × 2 = **18%** (wahr 19,6% – nah genug, um zu handeln).
+Ein Flushdraw sind 9 Outs. Am Flop: 9 × 4 = **36%** (wahrer Wert 35,0% – einen Punkt daneben, also brauchbar). Am Turn: 9 × 2 = **18%** (wahr 19,6% – nah genug, um zu handeln).
 
 :::tip[Die ×4-Abkürzung setzt still voraus, dass du *beide* Karten ohne weiteres Setzen siehst – nur wahr, wenn du schon all-in bist. Liegt eine Bet vor dir, nutze die ×2-Zahl (eine Karte) für die Street, auf der du wirklich bist.]:::
 
@@ -149,7 +149,7 @@ Die saubere Korrektur für große Draws: bei **mehr als 8 Outs am Flop** multipl
 
 Weil zwei Karten Doppeldienst leisten. Ein Flushdraw hat neun Outs, ein beidseitig offener Straßendraw acht – aber zwei der Straßenkarten sind selbst von deiner Farbe und stecken schon in den neun. Gezählt wird jede Karte nur einmal: **15 Outs**, nicht 17. Bei Flush plus Gutshot ist es dieselbe Rechnung mit einer geteilten Karte: 12 statt 13.
 
-Die großen Draws bringen Leute ins Straucheln, weil du die zwei Out-Zahlen nicht einfach addieren kannst – manche Karten leisten Doppeldienst, und sie zweimal zu zählen bläht deine Equity auf.
+Die großen Draws bringen Leute ins Straucheln, weil eine zu hohe Zahl hier am teuersten ist: Genau in diesen Spots geht der ganze Stack rein.
 
 Sagen wir, du hältst ==b:J♠ 10♠== auf einem ==9♠ 8♣ 2♠== Flop. Du hast zwei gestapelte Draws: einen Flushdraw (Pik) und einen beidseitig offenen Straßendraw (jede Q oder 7 macht die Straße). Addiere sie naiv und du bekommst 9 + 8 = 17. Aber die **Q♠ und 7♠** vervollständigen jeweils *sowohl* den Flush *als auch* die Straße – sie stecken schon in den 9 Flush-Outs. Zähle sie einmal:
 
@@ -163,21 +163,21 @@ Dieselbe Logik bei einem **Flush + Gutshot**: 9 Flush-Outs + 4 Gutshot-Karten, a
 
 ## Was sind dirty Outs – und wie erkennst du sie?
 
-Ein **dirty Out** ist eine Karte, die deine Hand vervollständigt und dich trotzdem verlieren lässt: der Flush, der nicht der Nut-Flush ist; die Flushkarte auf einem bereits gepaarten Board; die Overcard gegen einen Gegner, dessen Action nach einem Set schreit. Erkennen tust du sie am Board und an der Aggression – und danach zählst du deine Outs nach unten, nicht nach oben.
+Ein **dirty Out** ist eine Karte, die deine Hand vervollständigt und dich trotzdem verlieren lässt: der Flush, der nicht der Nut-Flush ist; die Flushkarte auf einem bereits gepaarten Board; die Overcard gegen einen Gegner, dessen Action nach einem Set schreit. Erkennst du sie am Board und an der Aggression – und danach zählst du deine Outs nach unten, nicht nach oben.
 
 ![Infografik eines gepaarten 10♠ 8♥ 4♠ 4♣ 6♦ Boards, das saubere Outs von dirty Outs trennt](/images/holdem-outs-dirty-outs.webp "Auf einem gepaarten Board sind manche deiner Outs dirty – der Flush zu treffen kann trotzdem ein Full House bezahlen")
 
-Das ist der Abschnitt, den die meisten Guides überspringen, und der, der tatsächlich Geld spart. Ein dirty Out zum vollen Wert zu zählen überschätzt deine Equity – Gewinnspieler zählen erst die rohen Outs und *rabattieren* dann, bevor sie zur Faustregel greifen.
+Das ist der Abschnitt, den die meisten Guides überspringen, und der, der tatsächlich Geld spart. Ein dirty Out („verschmutztes“ Out) zum vollen Wert zu zählen überschätzt deine Equity – Gewinnspieler zählen erst die rohen Outs und *rabattieren* dann, bevor sie zur Faustregel greifen.
 
 Drei Situationen, für die du dein Auge trainierst:
 
 :::card
 ♠ | Der Nicht-Nut-Flush | Hältst du 8♠7♠ auf K♠9♠2♣, hast du 9 Pik-„Outs“ – aber wenn eine Pik kommt und ein Gegner eine höhere Pik hält, machst du einen Flush und verlierst trotzdem. Rabattiere deine Outs, wenn du nicht auf den Nut-Flush drawst
-🂮 | Das gepaarte Board | Ein Flushdraw auf einem Board wie J♥8♥8♣ sieht aus wie 9 saubere Outs, aber das Board ist schon gepaart – ein fertiges Full House könnte lauern, also sind manche deiner Flushes tot bei Ankunft
+🂮 | Das gepaarte Board | Ein Flushdraw auf einem Board wie J♥8♥8♣ sieht aus wie 9 saubere Outs, aber das Board ist schon gepaart – ein fertiges Full House könnte lauern, also kommen manche deiner Flushes an und sind trotzdem wertlos
 🃁 | Overcards gegen Stärke | Zwei Overcards (A-K auf Q-8-3) zählen auf dem Papier als 6 Outs, aber wenn ein großer Raise nach einem Set oder Zwei Paaren schreit, ist dein Ass zu paaren oft nicht gut – zähle 3, vielleicht 4, nicht 6
 :::
 
-Du kennst den exakten Rabatt selten, und das ist okay. Der Zug ist gerichtet: wenn das Board oder die Action dir sagt, dass ein Out vielleicht nicht gewinnt, kürze die Zahl *nach unten*, bevor du umrechnest. Ein Spieler, der 9 Outs auf einem gepaarten Board zählt und den Pot callt, zahlt vollen Preis für einen Draw, der still nur sechs wert ist. Zu lesen, welche Outs sauber sind, ist eine Board-Textur-Fähigkeit – baue sie mit [das Board lesen](/de/blog/holdem-reading-the-board) auf.
+Du kennst den exakten Rabatt selten, und das ist okay. Die Richtung stimmt aber immer: wenn das Board oder die Action dir sagt, dass ein Out vielleicht nicht gewinnt, kürze die Zahl *nach unten*, bevor du umrechnest. Ein Spieler, der 9 Outs auf einem gepaarten Board zählt und eine Pot-Size-Bet callt, zahlt vollen Preis für einen Draw, der still nur sechs wert ist. Zu lesen, welche Outs sauber sind, ist eine Board-Textur-Fähigkeit – baue sie mit [das Board lesen](/de/blog/holdem-reading-the-board) auf.
 
 ---
 
@@ -204,9 +204,9 @@ A. Neun. Es gibt 13 Karten jeder Farbe; mit zwei in deiner Hand und zwei auf dem
 
 A. Acht – vier Karten an jedem Ende füllen die Straße. Ein Gutshot- (Inside-) Straßendraw hat nur 4 Outs, weil nur ein Rang die Lücke füllt. Ein Double Gutshot hat ebenfalls 8, genauso wie ein beidseitig offener.
 
-**Q. Rechne ich meine Outs mit ×4 oder mit ×2?**
+**Q. Ändern sich meine Outs, wenn mehrere Gegner im Pot sind?**
 
-A. Mit ×4 nur dann, wenn du beide Karten ohne weiteres Setzen siehst – praktisch also nur all-in oder wenn der Turn durchgecheckt wird. Steht eine Bet vor dir, kaufst du nur die nächste Karte: ×2. Wer am Turn mit der ×4-Zahl argumentiert, redet sich in verlierende Calls.
+A. Die Zahl bleibt gleich, ihr Wert nicht. Je mehr Gegner mitgehen, desto größer die Chance, dass eines deiner Outs jemandem eine bessere Hand gibt – dein kleiner Flush trifft dann auf den höheren. Multiway zählst du dieselben Outs, aber du rabattierst stärker und willst zu den Nuts drawen.
 
 **Q. Wie viele Outs hat ein Gutshot?**
 
@@ -224,7 +224,7 @@ A. Nein. Du ziehst nur Karten ab, die du tatsächlich sehen kannst – deine Hol
 2. **Rechne mit 4 und 2 um.** Outs × 4 am Flop, × 2 am Turn. Trimme die Schätzung für große Draws (über 8 Outs), indem du *(Outs − 8)* abziehst.
 3. **Rabattiere die dirty Outs.** Nicht-Nut-Flushes, gepaarte Boards und Overcards gegen Stärke schrumpfen alle deine echte Out-Zahl. Im Zweifel zähle weniger.
 
-Triff die Zahl und der Rest der Poker-Mathematik fügt sich zusammen. Nimm deine Out-Zahl direkt mit in [Pot Odds berechnen](/de/blog/holdem-pot-odds), um zu sehen, ob der Preis stimmt, oder geh zurück zur vollständigen [Poker-Odds- und Wahrscheinlichkeitstabelle](/de/blog/holdem-probability) für die exakte Zahl hinter jedem Draw.
+Stimmt die Zahl, fügt sich der Rest der Poker-Mathematik von selbst. Nimm deine Out-Zahl direkt mit in [Pot Odds berechnen](/de/blog/holdem-pot-odds), um zu sehen, ob der Preis stimmt, oder geh zurück zur vollständigen [Poker-Odds- und Wahrscheinlichkeitstabelle](/de/blog/holdem-probability) für die exakte Zahl hinter jedem Draw.
 
 ---
 

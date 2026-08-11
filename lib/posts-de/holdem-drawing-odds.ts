@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Ein kleines Pocket Pair neben einem Chipstack auf grünem Filz, während der Flop ausgeteilt wird – der Moment, in dem ein Set-Mining-Call aufgeht oder verfehlt",
   tags: ["drawing odds", "chance ein set zu floppen", "chance einen flush zu floppen", "chance quads zu floppen", "set mining", "chance pocket aces zu bekommen", "poker flop wahrscheinlichkeiten", "texas holdem drawing odds"],
   content: `
-Die Hand, mit der ich das eiskalt gelernt habe: Ich callte einen Raise mit Pocket Fives, floppte mein Set, nahm einem Typen mit Aces den Stack ab, und mein Kumpel fragte, wie ich „wusste“, dass ich callen sollte. Ich *wusste* es nicht – ich kannte die Zahl. ==Du floppst ein Set etwa 1 von 8,5 Versuchen==, und die Stacks waren tief genug, um mich auszuzahlen, wenn es passierte. Dieser einzelne Bruchteil machte aus einem „fühlt sich glücklich an“-Call einen profitablen.
+Die Hand, an der ich es endgültig begriffen habe: Ich callte einen Raise mit Pocket Fives, floppte mein Set, nahm einem Typen mit Aces den Stack ab, und mein Kumpel fragte, wie ich „wusste“, dass ich callen sollte. Ich *wusste* es nicht – ich kannte die Zahl. ==Du floppst ein Set etwa 1 von 8,5 Versuchen==, und die Stacks waren tief genug, um mich auszuzahlen, wenn es passierte. Diese eine Zahl machte aus einem „fühlt sich glücklich an“-Call einen profitablen.
 
 Genau das sind Drawing Odds in Wahrheit: kein Glück, sondern die ==feste Mathematik eines 52-Karten-Decks==. Wie oft du ein Set floppst, einen Flush floppst, einen Draw bis zum River komplettierst – jede dieser Zahlen kannst du herleiten, und die Spieler, die gewinnen, haben sie auswendig. Dieser Guide ist die ==g:Wahrscheinlichkeit hinter dem Flop und dem Draw==, jeweils mit der echten Kombinatorik, damit du siehst, *warum* die Zahl ist, wie sie ist. Er ist der Begleiter zur kompletten [Poker-Odds- und Wahrscheinlichkeitstabelle](/de/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp"); sobald du die Odds hier kennst, verwandeln [Outs zählen](/de/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp") und [Pot Odds](/de/blog/holdem-pot-odds) sie in Entscheidungen.
 
@@ -52,7 +52,7 @@ Hier ist die Tabelle, die niemand an einem Ort baut. Die meisten Seiten nennen d
 
 </div>
 
-Lies eine Zeile quer und du siehst den ganzen Lebenszyklus einer Hand. Zwei suited Karten floppen fast nie einen *fertigen* Flush (0,84%) – aber sie floppen dreizehnmal häufiger einen **Flushdraw** (10,9%), und dieser Draw kommt in 35% der Fälle bis zum River an. Diese drei Zahlen zu vermengen ist der mit Abstand häufigste Odds-Fehler, also ziehen wir jede unten mit gezeigter Mathematik auseinander.
+Lies eine Zeile quer und du siehst den ganzen Lebenszyklus einer Hand: Den Draw floppst du dreizehnmal häufiger als die fertige Hand dahinter. Unten zieht jeder Abschnitt eine Zeile auseinander, mit der Kombinatorik dahinter.
 
 ---
 
@@ -60,7 +60,7 @@ Lies eine Zeile quer und du siehst den ganzen Lebenszyklus einer Hand. Zwei suit
 
 ![Infografik eines goldenen Dealer Buttons und zweier verdeckter Hole Cards auf einem K♦ 7♣ 2♠ Flop – der Moment, in dem ein Set-Mining-Call entschieden wird](/images/holdem-button-dealer-board.webp "Der Flop entscheidet einen Set-Mining-Call: triff deinen Two-Outer in 11,8% der Fälle, oder folde und warte aufs nächste Paar")
 
-**Mit einem Pocket Pair floppst du in 11,8% der Fälle ein Set (oder besser) – etwa 1 von 8,5, oder 7,5:1 dagegen.** Das ist die wichtigste Drawing-Zahl im Spiel, denn sie ist die gesamte Grundlage für *Set Mining*: einen Raise mit einem kleinen Paar rein deshalb zu callen, um Drilling zu floppen.
+**Mit einem Pocket Pair floppst du in 11,8% der Fälle ein Set (oder besser) – etwa 1 von 8,5, oder 7,5:1 dagegen.** Das ist die wichtigste Drawing-Zahl im Spiel, denn sie ist die gesamte Grundlage für *Set Mining*: einen Raise mit einem kleinen Paar rein deshalb zu callen, um ein Set zu floppen.
 
 Woher kommt 11,8%? Halte ein Pocket Pair und es sind zwei Karten im Deck übrig, die dich paaren. Der Flop sind drei Karten, gezogen aus den 50, die du nicht sehen kannst. Der saubere Weg zu zählen ist rückwärts – die Chance, dass du alle drei **verfehlst**:
 
@@ -79,7 +79,7 @@ Woher kommt 11,8%? Halte ein Pocket Pair und es sind zwei Karten im Deck übrig,
 
 Ein Set in 11,8% der Fälle zu floppen heißt, dass du **in 88% der Fälle verfehlst** und foldest. Um zu profitieren, müssen die 12%, die du triffst, für all die Male bezahlen, die du verfehlst. Der Break-even liegt bei 7,5:1 – wenn du also callst, um zu set-minen, willst du, dass der Pot plus das, was du auf späteren Streets gewinnen kannst, **mindestens das 7,5-Fache** deines Calls wert ist, und in der Praxis ==g:15:1 oder besser==, um die Male abzudecken, in denen dein Set nicht ausgezahlt oder überholt wird.
 
-:::tip[Die Faustregel: Calle einen Raise nur zum Set-Minen, wenn die effektiven Stacks etwa das 15-20-Fache des Call-Preises betragen. Tiefe Stacks machen kleine Paare zu Gold; kurze Stacks machen sie zu Müll. Das Paar hat sich nicht geändert – die Implied Odds haben es.]:::
+:::tip[Die Faustregel: Calle einen Raise nur zum Set-Minen, wenn die effektiven Stacks etwa das 15- bis 20-Fache des Call-Preises betragen. Tiefe Stacks machen kleine Paare zu Gold; kurze Stacks machen sie zu Müll. Das Paar hat sich nicht geändert – die Implied Odds schon.]:::
 
 Set Mining ist der pureste [Implied Odds](/de/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp")-Play, den es gibt – eine winzige Chance, später einen großen Pot zu gewinnen. Das komplette Framework – die Formel, die Stack-Vielfachen Draw für Draw und die Reverse Implied Odds – steckt in jenem Guide.
 
@@ -94,7 +94,7 @@ Zwei verwandte Zahlen, nach denen Leute fragen:
 
 ![Ass-König in Herz mit einem Dame-Sieben-Herz-Flop auf grünem Filz, ein gefloppter Neun-Out-Flushdraw neben einem kurzen Chipstack](/images/holdem-drawing-odds-flush-draw.webp "Zwei Herz in der Hand, zwei auf dem Flop – ein Flushdraw, kein fertiger Flush: 10,9% zu floppen, 35% bis zum River zu komplettieren")
 
-Hier verwischen Konkurrenten drei komplett verschiedene Zahlen. Mit zwei suited Karten in deiner Hand gibt es **drei separate Fragen**, und sie liegen eine Größenordnung auseinander:
+Hier verwischen andere Seiten drei komplett verschiedene Zahlen. Mit zwei suited Karten in deiner Hand gibt es **drei separate Fragen**, und sie liegen eine Größenordnung auseinander:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -114,7 +114,7 @@ Die Komplettierungs-Zahl teilt sich nach Street auf, was in dem Moment zählt, i
 - **Flop → Turn (eine Karte):** 9 ÷ 47 = 19,1%.
 - **Turn → River (eine Karte):** 9 ÷ 46 = 19,6%.
 
-Ein **Backdoor** (Runner-Runner) Flush – du floppst nur *eine* zusätzliche Karte deiner Farbe und brauchst sowohl Turn als auch River in deiner Farbe – kommt bei etwa 4,2% herein, ungefähr ein zusätzliches Out an Equity wert. Kein Grund zu callen, aber ein echter Tiebreaker bei knappen Spots. Um irgendeine davon in einen Call-oder-Fold zu verwandeln, jage die Zahl durch [wie man Pot Odds berechnet](/de/blog/holdem-pot-odds).
+Ein **Backdoor** (Runner-Runner) Flush – du floppst nur *eine* zusätzliche Karte deiner Farbe und brauchst sowohl Turn als auch River in deiner Farbe – kommt in etwa 4,2% der Fälle an, ungefähr ein zusätzliches Out an Equity wert. Kein Grund zu callen, aber ein echter Tiebreaker bei knappen Spots. Um irgendeine davon in einen Call-oder-Fold zu verwandeln, jage die Zahl durch [wie man Pot Odds berechnet](/de/blog/holdem-pot-odds).
 
 ---
 
@@ -137,7 +137,7 @@ Das sind die Zahlen hinter den besten (und schlimmsten) Nächten deines Poker-Le
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Das floppen | Holding | Odds | Die Mathematik |
+| Gefloppt | Holding | Odds | Die Mathematik |
 |:---|:---|:---:|:---:|
 | **Quads** | Ein Pocket Pair | 0,245% · 407:1 | 48 ÷ 19.600 |
 | **Full House** | Ein Pocket Pair | 0,98% · 101:1 | 192 ÷ 19.600 |
@@ -146,11 +146,11 @@ Das sind die Zahlen hinter den besten (und schlimmsten) Nächten deines Poker-Le
 
 </div>
 
-Eine entscheidende Unterscheidung, die die Top-Seiten regelmäßig vermasseln: ein **Set** ist ein Pocket Pair plus eine passende Boardkarte (11,8%), während **Drilling** eine *ungepaarte* Hole Card ist, die das Board zweimal paart (1,35%). Auf dem Papier dasselbe Drilling, wild unterschiedliche Odds und Spielbarkeit – ein Set ist getarnt, Drilling ist offensichtlich. Lass dir von niemandem einreden, sie hätten dieselbe Form.
+Eine entscheidende Unterscheidung, die die Top-Seiten regelmäßig vermasseln: ein **Set** ist ein Pocket Pair plus eine passende Boardkarte (11,8%), während **Drilling** eine *ungepaarte* Hole Card ist, die das Board zweimal paart (1,35%). Auf dem Papier dasselbe Drilling, wild unterschiedliche Odds und Spielbarkeit – ein Set ist getarnt, Drilling ist offensichtlich. Lass dir von niemandem einreden, sie wären dasselbe.
 
-Die Straight-Flush-Zahl ist die zum Rahmen: mit Suited Connectors gibt es genau **vier** Flops, die ihn machen (eine Sequenz in deiner Farbe), also 4 ÷ 19.600 ≈ 1 von 4.900. Deshalb sind gefloppte Straight Flushes Geschichten, die Leute ein Jahrzehnt lang erzählen.
+Die Straight-Flush-Zahl ist die, die man sich einrahmen sollte: mit Suited Connectors gibt es genau **vier** Flops, die ihn machen (eine Sequenz in deiner Farbe), also 4 ÷ 19.600 ≈ 1 von 4.900. Deshalb sind gefloppte Straight Flushes Geschichten, die Leute ein Jahrzehnt lang erzählen.
 
-Die Full-House-Zahl zählt jeden Weg, wie der Flop dir mit einem Pocket Pair ein Boat beschert – einschließlich der Flops, die als Drilling eines anderen Rangs auf deinem Paar kommen – weshalb sie 0,98% liest statt der engeren ~0,73%, die manche Tabellen nur für „Set plus ein Board-Paar“ angeben.
+Die Full-House-Zahl zählt jeden Weg, wie der Flop dir mit einem Pocket Pair ein Boat beschert – einschließlich der Flops, die als Drilling eines anderen Rangs auf deinem Paar kommen – weshalb dort 0,98% steht statt der engeren ~0,73%, die manche Tabellen nur für „Set plus ein Board-Paar“ angeben.
 
 ---
 
@@ -162,7 +162,7 @@ Vor all dem oben gibt es das Austeilen. Mit **1.326 möglichen Zwei-Karten-Kombi
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Das ausgeteilt | Odds | Wie oft |
+| Ausgeteilt bekommen | Odds | Wie oft |
 |:---|:---:|:---:|
 | Pocket Aces (bestimmtes Paar) | 220:1 · 0,45% | 6 ÷ 1.326 |
 | Irgendein Pocket Pair | 16:1 · 5,9% | 78 ÷ 1.326 |
@@ -171,7 +171,7 @@ Vor all dem oben gibt es das Austeilen. Mit **1.326 möglichen Zwei-Karten-Kombi
 
 </div>
 
-Die Zahl, die Leute überrascht: wenn **du** an einem 10-Hand-Tisch Aces hältst, liegt die Chance, dass ein *zweiter* Spieler ebenfalls Aces hat, bei etwa **1 zu 136** (neun Gegner, jeder 1 ÷ C(50,2) = 1/1.225). Selten, aber es ist genau der Aces-gegen-Aces-Cooler, der einen Stack leert und der „gezinkten“ Software angelastet wird. Es ist einfach das Deck. Welche dieser 1.326 Hände sich von jedem Platz aus zu spielen lohnen, siehst du in der [Starthand-Tabelle nach Position](/de/blog/holdem-starting-hands-chart).
+Die Zahl, die Leute überrascht: wenn **du** an einem voll besetzten Tisch (zehn Spieler) Aces hältst, liegt die Chance, dass ein *zweiter* Spieler ebenfalls Aces hat, bei etwa **1 zu 136** (neun Gegner, jeder 1 ÷ C(50,2) = 1/1.225). Selten, aber es ist genau der Aces-gegen-Aces-Cooler, der einen Stack leert und der „gezinkten“ Software angelastet wird. Es ist einfach das Deck. Welche dieser 1.326 Hände sich von jedem Platz aus zu spielen lohnen, siehst du in der [Starthand-Tabelle nach Position](/de/blog/holdem-starting-hands-chart).
 
 ---
 
@@ -182,9 +182,9 @@ Die Zahl, die Leute überrascht: wenn **du** an einem 10-Hand-Tisch Aces hältst
 
 ## FAQ
 
-**Q. Wie tief müssen die Stacks für Set Mining sein?**
+**Q. Wie oft floppst du überhaupt zumindest ein Paar?**
 
-A. Als Richtwert das 15- bis 20-Fache des Preises, den du zahlst. Der reine Break-even läge bei 7,5:1, aber du triffst dein Set nur in 11,8% der Fälle – und selbst dann zahlt dein Gegner nicht immer. Bei 40 Big Blinds effektiv ist das Callen eines Raises mit einem kleinen Paar deshalb meist ein Verlustgeschäft.
+A. Mit zwei ungepaarten Karten in rund **32%** der Flops – also etwa jede dritte Hand. In zwei Dritteln der Fälle trifft dich der Flop gar nicht, und genau deshalb gewinnt Poker nicht der, der die meisten Hände trifft, sondern der, der die verfehlten billig wegwirft.
 
 **Q. Warum sagt man 7,5:1, aber auch 1 von 8?**
 

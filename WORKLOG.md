@@ -3,6 +3,28 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-08-11 (13) — **de 경화 Session 3 (Odds & Mathe 6편) + C층 probability #16·#17 8로케일** (`a76b43d` · 푸시)
+
+- **질문형 H2 0~25% → 71~83%** (6편 전부 §14-A 70% 충족). 각 신설 H2 직후 40~75단어 직답.
+  `probability`에 `Kurze Antwort` 블록 신설 — **tldr은 화면에 렌더되지 않아**(JSON-LD 전용) 직답이 없던 상태였다
+- **「Faustregel」로 클러스터 용어 통일.** 착수 시 실측한 구글 자동완성(de)에
+  `poker wahrscheinlichkeiten faustregel`·`poker outs faustregel`·`poker odds faustregel`은 살아 있는데
+  **`regel der 2 und 4`는 자동완성에 없다.** 클러스터 안에서 「2 und 4」(probability) ↔ 「4 und 2」(pot-odds·outs)로
+  **갈라져 있던** 표기를 「Faustregel(auch „Regel der 2 und 4")」로 통일 + 태그 교체
+- **H2↔FAQ 준중복 11문항 재작성** — 정본 §7-6이고 **기계가 안 보는 자리**다. 삭제가 아니라
+  다른 실검색 문형으로 재구성(Vierling·Full House 확률 / Backdoor / ×4냐 ×2냐 / Equity vs EV / River에도 Implied Odds가 있나 …)
+- **C층 probability #16·#17** — #16「하이카드 17%가 가장 적은 부류」는 **같은 표 두 줄 위가 이미 반증**(43,8/23,5/17,4 = 3번째로 흔함).
+  #17「만들기 어려울수록 위」는 **5장 기준에서만 참**(7장에선 High Card가 Paar보다 드문데 최약).
+  🔴 **8개 로케일에 축어로 복제돼 있었다 — EN 마스터 포함.** 전건 정정, 숫자 표기는 각 로케일 자기 표에 맞춤
+- `masterUpdated` 4편 신설(outs·equity·drawing-odds·implied-odds) — EN 3단 대조(섹션 수·1인칭 수·FAQ 목록) 후. de 추적불가 22→18편
+- ⚠ **되읽기 패스가 내가 만든 결함 4건을 잡았다**: 「35%→19,6%는 절반 이하」(실제 56%) ·
+  Gutshot 1장 값을 형제 글 기준(8,7%)으로 써 **그 글 자기 표(8,5%)와 어긋남** ·
+  「12아웃」을 13으로 · 「Alles darunter」(위 항목이 전부 히트인데) — **삽입형 편집은 앞뒤를 다시 읽어야 한다**
+- ⚠ FAQ 라벨을 정본 §7-6의 「Häufig gestellte Fragen (FAQ)」로 바꿨다가 **되돌렸다** —
+  코퍼스 42편 중 36편이 `## FAQ`다. **정본의 «통용» 표기보다 코퍼스 일관성이 우선**
+- 게이트: audit:hard 8개 로케일 🔴0 · de-style 무결 20→**23편**(🔴1=apt-incheon, Session 6) ·
+  faq-schema **455/455** · hreflang 0 · build 69+457 불변
+
 ## 2026-08-11 (12) — **B3-b 4곳 → 검수장 트랙 본체 작업 «완전» 종료** (`7f5ae02` · 푸시)
 
 > 검수장 재검수 `재검수-B층-완결-2026-08-11.md`에서 B층 7건 승인 + 신규 1건(B3-b) 지적.

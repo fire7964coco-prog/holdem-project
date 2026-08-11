@@ -10,16 +10,29 @@
 
 ## ▶▶▶▶▶▶▶▶▶ 새 세션 START HERE
 
-### 이 세션의 본체 = **de 경화 Session 3** (Odds & Mathe 6편)
+### 이 세션의 본체 = **de 경화 Session 4** (Strategie 8편)
+
+> ✅ **Session 3(Odds & Mathe 6편)은 끝났다** — `a76b43d` 푸시. 경위는 `WORKLOG.md` 2026-08-11 (13).
+> C층 `probability #16·#17`도 **8개 로케일 전부** 함께 닫았다(EN 마스터 포함).
+> 🟢 **de 커버리지 갭 11건 패스는 아직 안 했다** — 아래 「커버리지 갭」 절 그대로 남아 있다.
+>
+> 📌 Session 3에서 확립돼 4~6에 그대로 쓰는 것:
+> ① **착수 시 구글 자동완성 de 재실측**(`client=chrome&hl=de&gl=de`)으로 그 클러스터의 표기를 정한다 —
+>    이번에 「Regel der 2 und 4」가 **자동완성에 아예 없다**는 게 드러나 클러스터 용어가 바뀌었다
+> ② **H2↔FAQ 준중복은 삭제가 아니라 «다른 실검색 문형»으로 재구성**(6편에서 11문항)
+> ③ 직답 블록 라벨은 **`> **Kurze Antwort**`**(42편 중 8편이 쓰는 de 표준) · FAQ 제목은 **`## FAQ`**(36/42)
+> ④ 🔴 **되읽기 패스를 빼지 마라** — 이번에도 내가 만든 결함 4건을 여기서 잡았다(비율 서술 2건·형제 글 값 혼입 1건·지시어 1건)
 
 **착수 준비는 끝나 있다. 리서치를 다시 하지 마라** — 아래 「▶ de 경화」를 그대로 따르면 된다.
 
 > ✅ **검수장 인계 트랙은 끝났다**(2026-08-11). A층 15 · B층 7+1 · C층 20건 완료·푸시, 마지막 `7f5ae02`.
 > 본체가 할 일 없음 — 검수장 재검수 1회만 남았고 그건 저쪽 몫이다.
 >
-> 🔴 **C층 잔여 22건 + C43·C44는 별도 트랙을 굴리지 않는다**(사장님 결정 2026-08-11).
+> 🔴 **C층 잔여 20건 + C43·C44는 별도 트랙을 굴리지 않는다**(사장님 결정 2026-08-11).
 > **경화하면서 그 글을 열 때 함께 닫는다.** 같은 파일을 두 번 열 이유가 없다.
-> → **Session 3에서 닫을 것: `holdem-probability` #16·#17** (아래 「C층 잔여」 표)
+> → Session 3에서 `probability` #16·#17 **완료**(8로케일). Session 4(Strategie)에서 열릴 것은
+>   **`holdem-3bet` #7·#8 · `holdem-strategy` · `holdem-when-to-fold` #3·#6 · `holdem-position-play` #10**
+>   — 착수 전 지시서에서 해당 글을 찾아라(아래 「C층 잔여」 표)
 
 ```
 npm run audit:hard -- --locale=<code>     # 편집한 로케일마다 «따로» (전체 초록은 진술이 아니다)
@@ -40,7 +53,7 @@ npm run build && npm run check:hreflang && npm run check:faq-schema && npm run c
 | `check:de-style` | 셀프테스트 **99/99** · 42편 🔴 **1건** = `apt-incheon`(de Session 6 몫) |
 | `check:faq-schema` | **455/455 성립 · 25개 로케일 🔴 0건** ✅ |
 | `check:hreflang` | 481페이지 · 50세트 · 🔴 0건 |
-| 미러 드리프트 | ✅ **239** · 🔴 **90** · 🟠 추적불가 **81** |
+| 미러 드리프트 | ✅ **242** · 🔴 **90** · 🟠 추적불가 **78** (de 22→**18**편) |
 | ja 원장 | **RISKY 22 = C층 잔여뿐 · A·B층 0** |
 
 ⚠ **드리프트 90은 «옳은» 숫자다.** FAQ 스키마 복구로 EN 2편의 `updated`를 올렸는데
@@ -58,7 +71,7 @@ npm run build && npm run check:hreflang && npm run check:faq-schema && npm run c
 
 | 글 | 잔여 번호 | 어느 트랙에서 열리나 |
 |---|---|---|
-| `holdem-probability` | #16 #17 | **de Session 3 (Odds)** ← 지금 |
+| ~~`holdem-probability`~~ | ~~#16 #17~~ | ✅ **완료 2026-08-11** — de Session 3에서 8로케일 정정(`a76b43d`) |
 | `holdem-flush-vs-straight` | #2 #8 #25 | de Session 2 재방문 / 타 언어 경화 |
 | `holdem-game-order` | #31 | 아래 「잔여 2건」 #1과 **같은 파일 — 함께 열어라** |
 | `holdem-betting-actions` | #2 #7 | |
@@ -102,40 +115,34 @@ B3 = 4곳 · B5 = 7곳(**zh-hant는 대만 판례 기반으로 이미 다르게 
 | 0 | 문체 게이트 | — | 검사 없이 42편을 손대면 같은 실수를 반복한다 | ✅ |
 | 1 | **Regeln** | 6 | `poker regeln` 90,500/월 · 필라라 용어가 여기서 확정 | ✅ |
 | 2 | **Handreihenfolge** | 6 | 대결표 7→14행 · FAQ 18문항 소급 · **적대 QA 4렌즈** | ✅ |
-| **3** | **Odds & Mathe** | **6** | `Faustregel` 표기 최적화(15편에 이미 있는데 최적화만 안 됨) + 국면형 H2 | ◀ **다음** |
-| 4 | Strategie | 8 | `poker strategie` 1,300/**LDA 6** — 볼륨 대비 SERP 최약 | |
+| 3 | **Odds & Mathe** | 6 | `Faustregel` 표기 통일 + 국면형 H2 + 질문형 H2 71~83% | ✅ `a76b43d` |
+| **4** | **Strategie** | **8** | `poker strategie` 1,300/**LDA 6** — 볼륨 대비 SERP 최약 | ◀ **다음** |
 | 5 | Glossar | 6 | 토너먼트·온라인 약어표(ATS·ITM·GTD·PLO·Cap·Overlay) | |
 | 6 | Turniere | 9 | `/de/tournaments`와 상호 연결 + 라이브이벤트 4편 · **apt-incheon 🔴 1건이 여기** | |
 
 **세션당 고정 6단계**: ①정본 재확인 → ②**기계 게이트 먼저** → ③편집
 → ④**되읽기 패스** → ⑤**독일 네이티브 적대 QA**(2렌즈: 네이티브 + 교열) → ⑥빌드·게이트·커밋·WORKLOG
 
-### ✅ Session 3 착수 준비는 끝나 있다 (2026-08-11 · **다시 조사하지 마라**)
+### ✅ Session 3 결과 (2026-08-11 · `a76b43d`) — Session 4는 같은 방식으로 간다
 
-필독 4종 통독 완료(`translation-terms-de.md` §7 · `de-core-volumes.md` **727행 전문** ·
-`de-dach.md` · `market-profile/de.md`).
+질문형 H2 **0~25% → 71~83%**(6편 전부) · 직답 40~75단어 · `Faustregel` 통일 ·
+H2↔FAQ 준중복 **11문항 재구성** · `masterUpdated` 4편 신설(de 추적불가 22→18) ·
+C층 `probability #16·#17` 8로케일 정정. 상세는 `WORKLOG.md` 2026-08-11 (13).
 
-**베이스라인 — 2026-08-11 마감 시점 실측(재측정 완료)**: Odds 6편 `check:de-style` **🔴 0 · 🟠 3**
-(D9 `masterUpdated` 없음 = `outs`·`equity`·`drawing-odds`. `probability`·`pot-odds`·`implied-odds`는 ✅) ·
-`audit:hard --locale=de` **42/42 🔴 0**.
+🔴 **Session 3이 새로 증명한 것 — 4~6에 그대로 적용:**
 
-⚠ **이 클러스터 4편은 오늘 A·C층 작업으로 이미 손댔다**(`probability`·`pot-odds`·`outs`·`drawing-odds`).
-편집 내용은 **수치·국면 정정**이고 경화(H2·용어·이름표)와 축이 겹치지 않지만,
-**착수 전 그 문단을 한 번 읽어라** — 오늘 넣은 문장 위에 또 얹으면 중복이 난다.
-특히 `outs` 표 안내문(「플랍에서 다음 1장만 볼 때」)과 `probability` 팟오즈 문단은 오늘 바뀐 자리다.
-
-**대상 6편을 열어 본 결과 — 핸드오프가 적어둔 「Faustregel 표기」보다 손볼 게 더 있다:**
-
-1. 🔴 **질문형 H2 비율이 클러스터 전체에서 낮다** — `probability` **0/8** · `drawing-odds` **0/6** ·
-   `equity` 1/8 · `implied-odds` 2/8 · `pot-odds` 2/9 · `outs` 2/7.
-   Session 2의 `hand-rankings`(10%)와 같은 상태이고, **`audit:hard`는 이 항목을 KO에만 적용**해서 안 걸린다.
-2. 🔴 **클러스터 안에서 용어가 갈라져 있다** — `probability`는 「Regel der **2 und 4**」,
-   `pot-odds`·`outs`는 「Regel der **4 und 2**」. 정작 독일 검색어는 **`Faustregel`**(30/LDA15)이고
-   15편에 그 낱말이 이미 있는데 **H2·FAQ가 안 쓴다.**
-3. **국면형 축이 통째로 비었다** — 상위어 `poker wahrscheinlichkeiten` 480은 **LDA 27~34 벽**인데
-   `nach dem Flop` 계열은 **LDA 9**. `probability`의 H2 8개 중 국면형 **0개**.
-4. **H2↔FAQ 준중복이 3편**(전부 Faustregel 문항). 정본 §7-6 위반이고 기계가 안 본다.
-5. `masterUpdated` 3편은 **드리프트를 닫은 뒤에** 찍는다.
+1. **볼륨표에 적힌 표기를 그대로 믿지 마라. 착수 시 자동완성으로 재실측하라.**
+   인계서는 「`Faustregel` 30/LDA15」만 적어 뒀는데, 실측하니 `poker wahrscheinlichkeiten faustregel` ·
+   `poker outs faustregel` · `poker odds faustregel`이 **전부 살아 있고** 「regel der 2 und 4」는
+   **자동완성에 아예 없었다.** 표기 하나가 클러스터 용어를 바꿨다([[keyword-harvest-wildcard-positions]] 동형).
+2. **H2↔FAQ 준중복은 «지우면» 실검색어를 버린다.** 6편에서 11문항이 걸렸는데 전부
+   **다른 실검색 문형으로 재구성**했다(예: H2가 `Was sind dirty Outs…`를 가져가면 FAQ는
+   `Zählen Backdoor-Draws als Outs?`로). 삭제는 마지막 수단이다.
+3. 🔴 **형제 글의 값을 기억으로 옮겨 적지 마라.** 되읽기에서 `outs`의 Gutshot 1장 값을
+   형제 글 기준(8,7% = 턴→리버)으로 썼다가 **그 글 자기 표(8,5% = 플랍→턴)와 어긋난** 걸 잡았다.
+   [[quote-sibling-posts-verbatim]]의 세 번째 실례다.
+4. **정본과 코퍼스가 어긋나면 코퍼스를 따른다.** FAQ 제목을 정본 §7-6의
+   「Häufig gestellte Fragen (FAQ)」로 바꿨다가 **되돌렸다** — 42편 중 36편이 `## FAQ`다.
 
 ★**「이름표」 유형은 이번이 세 번째 반복이다.** 콘텐츠는 이미 있고 **독일 검색자가 쓰는 낱말만 없는** 상태 말이다.
 실적: Session 1 `blinds tabelle` · Session 2 `Kombinationen` 4,400/LDA12 · `Wertetabelle` 260 ·
@@ -166,7 +173,7 @@ SERP는 볼륨표가 못 주는 걸 준다(경쟁사가 **무엇을 제공하는
 
 | 대상 | 할 일 | 세션 |
 |---|---|---|
-| `holdem-probability` | H2를 **국면형**(nach dem Flop)·**Faustregel형**으로 — 상위어는 LDA27~34 벽, 국면형은 9~15 | **3** |
+| ~~`holdem-probability`~~ | ✅ 완료 — 국면형(`nach dem Flop`)·`Faustregel`·`royal flush` H2 신설 | ~~3~~ |
 | `holdem-glossary` | **「Turnier- & Online-Abkürzungen」 표** — ATS·ITM·GTD·PLO·Cap·Overlay·Rebuy(전부 LDA 5~35) | 5 |
 | 전 42편 | **§7 문체 적용** — 이게 경화의 본체다 (성·인용부호는 ✅ 42편 완료) | 전 세션 |
 
@@ -175,6 +182,25 @@ SERP는 볼륨표가 못 주는 걸 준다(경쟁사가 **무엇을 제공하는
 **불변**: §13 수치·카드·계산 / slug / 이미지 / 내부링크 구조(EN 1:1)
 **masterUpdated**: 없는 21편은 채운다. 단 **`showdown-rules`·`texas-…-for-beginners`는 올리지 마라** —
 「판 전체 재동기화」 미결 표시다. ⚠ **de 쪽 델타는 Session 1에서 이미 다 닫았다**(그 트랙 실행 시 de는 제외 가능).
+
+### 🟢 de 커버리지 갭 11건 — **아직 안 했다.** Session 4 착수 전/후로 짧게 한 패스 (별도 세션 아님)
+
+`docs/keyword-bank/de-gap-2026-08-11.md` (2026-08-11 신설)
+
+**뭔가**: 키워드뱅크 §1 볼륨표를 `posts-de/` **42편 전문과 기계 대조**한 결과.
+본문에 **0회인 키워드 11건 · 합 ~3,720/월**이 남아 있다. 전부 **Session 1·2 클러스터(룰·족보·전략)** 소속이라
+Session 3에 끼워넣을 수 없다.
+
+- 전부 **「이름표」 유형** — 콘텐츠는 이미 있고 **독일 검색자가 쓰는 낱말만 없다.**
+  H2·표 이름·FAQ 문구 교체로 닫힌다. **§13 리스크 0.**
+  (Session 1·2가 같은 방식으로 ≈3,000/월을 열었다 — 이 유형이 ROI 최고다)
+- 주요 건: `wie spielt man poker` 880 · `poker lernen` 880 · `poker reihenfolge karten` 590 ·
+  `gto poker` 390 · `poker range` 320 · `poker tipps` 210 · `pokerchips wert` 170(시드⑦에서 두 번 확인된 수요)
+- 🟠 **`texas holdem regeln` 5,400인데 1편뿐** — 0회는 아니나 볼륨 대비 지나치게 얇다. 함께 검토
+
+> ✅ **Session 1·2 재검수는 불필요하다.** Session 2가 놓쳤던 것으로 기록된 두 건
+> (`pokerblätter` 720 · `poker reihenfolge pdf` 260)은 **이미 메워져 있다**(각 2편·1편 존재, 기계 확인).
+> 남은 건 위 갭 목록뿐이고 그건 «검수»가 아니라 «추가»다.
 
 ### 🟠 de 이월된 자잘한 것 (전용 커밋 금지 — 그 파일을 열 때 함께)
 
