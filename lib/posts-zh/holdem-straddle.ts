@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "straddle 就是发牌前主动补的一个盲注——通常是大盲的 2 倍。它替抓的人买下翻前最后行动权和加注权，把赌注翻倍。绝大多数情况下这是一个 -EV 的打法，而且只在现金局、按房规允许时才能抓。",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-08-09",
-  masterUpdated: "2026-07-19",
+  updated: "2026-08-11",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "10 分钟",
   emoji: "💰",
@@ -76,14 +76,14 @@ straddle 不是通常意义上的加注——它是一个重置价格的盲注�
 | 种类 | 谁来抓 | 行动从哪开始 | 最后行动 | 买下加注权吗？ |
 |------|------|------|------|------|
 | **UTG（标准）** | 枪口位 | straddle 者左边 | 仅翻前 | 是 |
-| **Mississippi** | 任何座位（常是按钮/CO） | straddle 者左边 | 翻前 + 翻后* | 是 |
+| **Mississippi** | 任何座位（常是按钮/CO） | straddle 者左边 | 翻前——翻后只有从按钮位才算 | 是 |
 | **Button** | 按钮位 | 小盲 | 翻前 + 翻后 | 是 |
 | **Sleeper** | 非枪口位的座位 | 正常（枪口位） | 否 | 通常不 |
 | **Re-straddle** | straddle 者左边 | re-straddle 者左边 | 仅翻前 | 是 |
 
 </div>
 
-*翻后最后行动只有在 mississippi straddle 位于按钮位或靠近按钮位时才成立。
+*mississippi straddle 只有下在==按钮位==上，翻后才是最后行动。翻牌之后的顺序完全由按钮位决定，所以从 CO 抓的 straddle 只买到翻前的最后一句话。
 
 - **UTG straddle**——经典款。在枪口位抓，只在翻前最后行动。最常见、但从位置上说最弱。
 - **Mississippi straddle**——可以从 **任何位置** 抓，从按钮位或关煞位抓时威力最大。行动从抓 straddle 者左边开始，所以一次 button 的 mississippi straddle 买下 **翻前和翻后都最后行动**——是唯一一种真有位置理由的 straddle。并非所有牌房都允许。
@@ -202,7 +202,7 @@ A. 对大多数玩家来说，不赚——这是个 -EV 的打法。你盲投了
 ## 要记住的 3 件事
 
 1. **straddle 是一个可选的第三盲注，通常是大盲的 2 倍**，在发牌前补出——它把赌注翻倍，买下翻前最后行动。
-2. **种类决定位置。** UTG straddle 只在翻前最后；mississippi 或 button straddle 连翻后也保持最后行动。一切都取决于房规。
+2. **决定位置的是座位，不是 straddle 的名字。** UTG straddle 只在翻前最后。翻后也能最后行动的，只有==从按钮位下的== straddle——因为翻牌之后的顺序永远跟着按钮位走。一切都取决于房规。
 3. **对几乎所有人它都是 -EV。** 盲投、无位置吹大底池、喂饱抽水，这些盖过了乐趣。为了桌面形象或娱乐去抓 straddle 可以，别为了利润去抓。
 
 现在你懂了这个额外的盲注，那就把它扭曲掉的那些基本功补紧：[盲注到底干什么](/zh/blog/holdem-blind-meaning)、[为什么位置能赢钱](/zh/blog/holdem-position-play)，以及一旦 straddle 重置了价格之后 [下注动作和加注怎么运作](/zh/blog/holdem-betting-actions)。

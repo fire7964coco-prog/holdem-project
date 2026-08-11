@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Straddle adalah taruhan blind opsional — biasanya dua kali big blind — yang dipasang sebelum kartu dibagi. Ia membeli aksi terakhir bagi si straddler dan opsi untuk raise preflop, menggandakan taruhan. Dalam hampir semua kasus ini adalah play -EV, hanya diizinkan di cash game sesuai aturan rumah.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-08-09",
-  masterUpdated: "2026-07-19",
+  updated: "2026-08-11",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "💰",
@@ -76,14 +76,14 @@ Tak semua straddle sama — dan perbedaannya semuanya soal **di mana aksi dimula
 | Jenis | Siapa yang memasang | Aksi dimulai | Terakhir beraksi | Membeli opsi? |
 |------|------|------|------|------|
 | **UTG (standar)** | Under the gun | Kiri si straddler | Preflop saja | Ya |
-| **Mississippi** | Kursi mana pun (sering button/CO) | Kiri si straddler | Pre + postflop* | Ya |
+| **Mississippi** | Kursi mana pun (sering button/CO) | Kiri si straddler | Preflop — postflop hanya dari button* | Ya |
 | **Button** | Button | Small blind | Pre + postflop | Ya |
 | **Sleeper** | Kursi non-UTG | Normal (UTG) | Tidak | Biasanya tidak |
 | **Re-straddle** | Kiri seorang straddler | Kiri si re-straddler | Preflop saja | Ya |
 
 </div>
 
-*Aksi terakhir postflop berlaku saat Mississippi straddle berada di atau dekat button.
+*Mississippi straddle hanya membeli aksi terakhir postflop kalau dipasang ==di button==. Setelah flop, urutan ditentukan semata-mata oleh button, jadi straddle dari cutoff hanya memberi Anda kata terakhir sebelum flop.
 
 - **UTG straddle** — yang klasik. Dipasang di under the gun, aksi terakhir hanya preflop. Paling umum dan, secara posisi, paling lemah.
 - **Mississippi straddle** — bisa dipasang dari **posisi mana pun**, paling kuat dari button atau cutoff. Aksi dimulai dari kiri si straddler, jadi sebuah button Mississippi straddle membeli **aksi terakhir baik preflop maupun postflop** — satu-satunya straddle dengan alasan posisi yang nyata. Tak diizinkan di semua tempat.
@@ -182,7 +182,7 @@ A. Untuk sebagian besar pemain, tidak — ini play -EV. Anda mengeluarkan uang s
 ## 3 Hal yang Harus Diingat
 
 1. **Straddle adalah blind ketiga opsional, biasanya 2× big blind,** yang dipasang sebelum kartu — ia menggandakan taruhan dan membeli aksi terakhir preflop.
-2. **Jenisnya menentukan posisinya.** Sebuah UTG straddle terakhir hanya preflop; sebuah Mississippi atau button straddle mempertahankan aksi terakhir postflop juga. Segalanya tergantung aturan rumah.
+2. **Kursinya yang menentukan posisi, bukan nama straddle-nya.** UTG straddle terakhir hanya di preflop. Satu-satunya straddle yang juga terakhir setelah flop adalah yang dipasang ==dari button== — sebab setelah flop urutan selalu mengikuti button. Semuanya tergantung aturan rumah.
 3. **Ia -EV untuk hampir semua orang.** Mengeluarkan uang secara buta, menggembungkan pot out of position, dan memberi makan rake mengalahkan kesenangannya. Straddle untuk image meja atau hiburan, bukan untuk profit.
 
 Kini setelah Anda tahu tentang blind ekstra ini, perkuat fundamental yang ia distorsi: [apa yang sebenarnya dilakukan blind](/id/blog/holdem-blind-meaning), [kenapa posisi memenangkan uang](/id/blog/holdem-position-play), dan [bagaimana aksi taruhan dan raise bekerja](/id/blog/holdem-betting-actions) begitu straddle mereset harga.

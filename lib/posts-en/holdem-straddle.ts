@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A straddle is an optional blind bet — usually twice the big blind — posted before the cards are dealt. It buys the straddler the last action and the option to raise preflop, doubling the stakes. In almost every case it's a -EV play, allowed only in cash games under house rules.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-07-19",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "💰",
@@ -75,14 +75,14 @@ Not all straddles are the same — and the differences are all about **where the
 | Type | Who posts it | Action starts | Last to act | Buys the option? |
 |------|------|------|------|------|
 | **UTG (standard)** | Under the gun | Left of straddler | Preflop only | Yes |
-| **Mississippi** | Any seat (often button/CO) | Left of straddler | Pre + postflop* | Yes |
+| **Mississippi** | Any seat (often button/CO) | Left of straddler | Preflop — postflop only from the button* | Yes |
 | **Button** | The button | Small blind | Pre + postflop | Yes |
 | **Sleeper** | A non-UTG seat | Normal (UTG) | No | Usually no |
 | **Re-straddle** | Left of a straddler | Left of re-straddler | Preflop only | Yes |
 
 </div>
 
-*Postflop last action applies when the Mississippi straddle is on or near the button.
+*A Mississippi straddle only buys last action postflop when it is posted ==on the button==. After the flop the order is set by the button alone, so a straddle from the cutoff buys you the last word preflop only.
 
 - **UTG straddle** — the classic. Posted under the gun, last action preflop only. The most common and the weakest, positionally.
 - **Mississippi straddle** — can be posted from **any position**, most powerfully from the button or cutoff. Action starts to the straddler's left, so a button Mississippi straddle buys **last action both preflop and postflop** — the one straddle with a real positional case. Not allowed everywhere.
@@ -185,7 +185,7 @@ A. For most players, no — it's a -EV play. You commit money blind, you compres
 ## The 3 Things to Remember
 
 1. **A straddle is an optional third blind, usually 2× the big blind,** posted before the cards — it doubles the stakes and buys the last action preflop.
-2. **The type decides the position.** A UTG straddle is last preflop only; a Mississippi or button straddle keeps last action postflop too. Everything is house-rules dependent.
+2. **The seat decides the position, not the name of the straddle.** A UTG straddle is last preflop only. The only straddle that is also last after the flop is one posted ==from the button== — because postflop the order always follows the button. Everything is house-rules dependent.
 3. **It's -EV for almost everyone.** Committing blind, bloating the pot out of position, and feeding the rake outweigh the fun. Straddle for the table image or the entertainment, not the profit.
 
 Now that you know the extra blind, tighten up the fundamentals it distorts: [what the blinds actually do](/en/blog/holdem-blind-meaning), [why position wins money](/en/blog/holdem-position-play), and [how betting actions and raises work](/en/blog/holdem-betting-actions) once the straddle resets the price.

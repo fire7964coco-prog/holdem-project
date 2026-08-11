@@ -61,7 +61,7 @@ Não existe só um tipo de rake. Como a casa recolhe seu dinheiro depende dos st
 Algumas regras governam como o rake do pote é de fato tirado:
 
 - **No flop, no drop.** Na maioria das salas, se a mão acaba antes do flop — todo mundo folda para um aumento no preflop — a casa não tira **nenhum rake**. (Não é universal: alguns sites, notadamente o GGPoker, tiram rake de alguns potes preflop, então cheque a sua sala.)
-- **O cap do rake.** A casa nunca tira a porcentagem cheia num pote gigante — ela para num máximo, comumente **$3–$6 ao vivo** e **$1–$3 online**. Os caps normalmente escalam com os stakes e frequentemente encolhem quando menos jogadores estão na mão (um pote heads-up pode ter cap de $1).
+- **O cap do rake.** A casa nunca tira a porcentagem cheia num pote gigante — ela para num máximo, comumente **$3–$6 ao vivo** e **$1–$3 online**. Os caps sobem quando os stakes sobem, mas não de forma proporcional — eles se movem em degraus, então vários stakes costumam compartilhar o mesmo cap. Além disso, frequentemente encolhem quando menos jogadores estão na mão (um pote heads-up pode ter cap de $1).
 - **Time charge em vez de rake do pote.** Nos stakes mais altos, as salas frequentemente param de raquear os potes e em vez disso cobram uma taxa fixa — digamos $10–$15 por hora por jogador, tirada a cada meia hora. Isso favorece quem ganha potes grandes, embora o que você economize seja o rake *no cap*, não uma fatia do pote: contra um cap de $3–$6, um pote de $2.000 só deixava alguns dólares.
 - **Dead drop.** Um método menos comum em que só o jogador no botão paga um rake fixo por mão, recolhido antes de as cartas serem distribuídas — feito para que os vencedores de potes grandes não sejam taxados mais do que os outros.
 
@@ -161,7 +161,7 @@ A. Sim, mas não do pote. A taxa é somada ao seu buy-in e mostrada com um "+" �
 
 **Q. Como o rake afeta o seu win rate?**
 
-A. Significativamente — especialmente em stakes baixos e short-handed, onde o cap não escala para baixo junto com os stakes. O rake pode transformar um pequeno vencedor num perdedor: o mesmo jogador de +8 bb/100 pode acabar levemente negativo simplesmente por mudar para uma sala com um cap de rake mais alto. Sempre meça o seu win rate depois do rake.
+A. Significativamente — principalmente em stakes baixos, onde o cap não desce junto com os stakes. Short-handed acrescenta um segundo efeito que não tem nada a ver com o cap: numa mesa de seis ou heads-up você joga muito mais mãos por hora e paga os blinds com muito mais frequência, então o rake simplesmente aparece muito mais vezes. O rake pode transformar um pequeno vencedor num perdedor: o mesmo jogador de +8 bb/100 pode acabar levemente negativo simplesmente por mudar para uma sala com um cap de rake mais alto. Sempre meça o seu win rate depois do rake.
 
 **Q. O rake do pôquer online ou ao vivo é mais alto?**
 

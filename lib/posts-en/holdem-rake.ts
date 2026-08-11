@@ -61,7 +61,7 @@ There isn't just one kind of rake. How the house collects its money depends on t
 A few rules govern how pot rake is actually skimmed:
 
 - **No flop, no drop.** In most rooms, if the hand ends before the flop — everyone folds to a preflop raise — the house takes **no rake** at all. (Not universal: a few sites, notably GGPoker, do rake some preflop pots, so check your room.)
-- **The rake cap.** The house never takes the full percentage on a huge pot — it stops at a maximum, commonly **$3–$6 live** and **$1–$3 online**. Caps usually scale with the stakes and often shrink when fewer players are dealt in (a heads-up pot might be capped at $1).
+- **The rake cap.** The house never takes the full percentage on a huge pot — it stops at a maximum, commonly **$3–$6 live** and **$1–$3 online**. Caps do rise as the stakes rise, but not proportionally — they move in coarse steps, so several stakes often share the same cap. On top of that they often shrink when fewer players are dealt in (a heads-up pot might be capped at $1).
 - **Time charge instead of pot rake.** At higher stakes, rooms often stop raking pots and instead collect a flat fee — say $10–$15 an hour per player, taken every half-hour. This favors players who win big pots — though what you save is the *capped* rake, not a slice of the pot: against a $3–$6 cap, a $2,000 pot was only ever giving up a few dollars.
 - **Dead drop.** A less common method where only the player on the button pays a set rake each hand, collected before the cards are dealt — designed so big-pot winners aren't taxed more than anyone else.
 
@@ -173,7 +173,7 @@ A. Yes, but not from the pot. The fee is added to your buy-in and shown with a "
 
 **Q. How does rake affect your win rate?**
 
-A. Significantly — especially at low stakes and short-handed, where the cap doesn't scale down with the stakes. Rake can turn a small winner into a loser: the same +8 bb/100 player can end up slightly negative simply by moving to a room with a higher rake cap. Always measure your win rate after rake.
+A. Significantly — most of all at low stakes, where the cap doesn't scale down with the stakes. Short-handed adds a second effect that has nothing to do with the cap: at a six-max or heads-up table you play far more hands per hour and post the blinds far more often, so the rake simply comes around more frequently. Rake can turn a small winner into a loser: the same +8 bb/100 player can end up slightly negative simply by moving to a room with a higher rake cap. Always measure your win rate after rake.
 
 **Q. Is online or live poker rake higher?**
 

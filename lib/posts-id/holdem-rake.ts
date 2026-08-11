@@ -61,7 +61,7 @@ Rake bukan hanya satu jenis. Bagaimana house mengumpulkan uangnya tergantung pad
 Beberapa aturan mengatur bagaimana pot rake sebenarnya disaring:
 
 - **No flop, no drop.** Di sebagian besar room, jika tangan berakhir sebelum flop — semua fold ke sebuah raise preflop — house **tidak mengambil rake** sama sekali. (Tidak universal: beberapa situs, terutama GGPoker, memang me-rake sebagian pot preflop, jadi periksa room Anda.)
-- **Cap rake.** House tak pernah mengambil persentase penuh pada pot besar — ia berhenti pada maksimum, umumnya **$3–$6 live** dan **$1–$3 online**. Cap biasanya berskala dengan stake dan sering menyusut saat lebih sedikit pemain yang dibagikan kartu (pot heads-up mungkin di-cap pada $1).
+- **Cap rake.** House tak pernah mengambil persentase penuh pada pot besar — ia berhenti pada maksimum, umumnya **$3–$6 live** dan **$1–$3 online**. Cap memang naik saat stake naik, tetapi tidak proporsional — ia bergerak dalam tingkatan kasar, sehingga beberapa stake sering memakai cap yang sama. Selain itu, cap sering menyusut saat lebih sedikit pemain yang dibagikan kartu (pot heads-up mungkin di-cap pada $1).
 - **Time charge alih-alih pot rake.** Pada stake lebih tinggi, room sering berhenti me-rake pot dan malah menarik biaya rata — katakanlah $10–$15 per jam per pemain, diambil tiap setengah jam. Ini menguntungkan pemain yang memenangkan pot besar, walau yang Anda hemat adalah rake yang *sudah kena cap*, bukan sepotong pot: terhadap cap $3–$6, pot $2.000 pun hanya melepas beberapa dolar.
 - **Dead drop.** Metode yang lebih jarang di mana hanya pemain di button yang membayar rake tetap tiap tangan, dikumpulkan sebelum kartu dibagikan — dirancang agar pemenang pot besar tidak dipajaki lebih dari siapa pun.
 
@@ -161,7 +161,7 @@ A. Ya, tapi bukan dari pot. Biayanya ditambahkan ke buy-in Anda dan ditampilkan 
 
 **Q. Bagaimana rake memengaruhi win rate Anda?**
 
-A. Signifikan — terutama pada stake rendah dan short-handed, di mana cap tak berskala turun bersama stake. Rake bisa mengubah pemenang kecil menjadi pecundang: pemain +8 bb/100 yang sama bisa berakhir sedikit negatif hanya dengan pindah ke room dengan cap rake lebih tinggi. Selalu ukur win rate Anda setelah rake.
+A. Signifikan — paling terasa pada stake rendah, di mana cap tak ikut turun bersama stake. Short-handed menambah efek kedua yang tak ada hubungannya dengan cap: di meja enam pemain atau heads-up Anda memainkan jauh lebih banyak tangan per jam dan membayar blind jauh lebih sering, sehingga rake datang jauh lebih sering pula. Rake bisa mengubah pemenang kecil menjadi pecundang: pemain +8 bb/100 yang sama bisa berakhir sedikit negatif hanya dengan pindah ke room dengan cap rake lebih tinggi. Selalu ukur win rate Anda setelah rake.
 
 **Q. Rake poker online atau live lebih tinggi?**
 

@@ -168,7 +168,7 @@ Faça essas seis coisas e você para de ser o dinheiro. Você não precisa virar
 
 **Q. O que significa fish no pôquer?**
 
-A. Fish é a gíria do pôquer para um jogador fraco, inexperiente ou perdedor — aquele com quem os jogadores mais fortes ("sharks") faturam. Descreve qualquer um que faça decisões ruins de forma consistente e perca fichas com o tempo, não importa o quão simpático ou confiante seja. É definido pelo seu oposto: um fish é simplesmente quem não é shark.
+A. Fish é a gíria do pôquer para um jogador fraco, inexperiente ou perdedor — aquele com quem os jogadores mais fortes ("sharks") faturam. Descreve qualquer um que faça decisões ruins de forma consistente e perca fichas com o tempo, não importa o quão simpático ou confiante seja. É definido pelo seu oposto — embora nem todo mundo que não é shark seja um fish: nits e grinders ficam no meio do caminho.
 
 **Q. Chamar alguém de fish é um insulto?**
 

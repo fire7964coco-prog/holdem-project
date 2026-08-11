@@ -9,6 +9,7 @@ export const POST: Post = {
   category: "glossary",
   date: "2026-07-05",
   updated: "2026-08-11",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🐟",
@@ -35,7 +36,10 @@ Shark | Das Gegenteil – der gewinnende Spieler
 
 ## Was bedeutet „Fish“ beim Poker?
 
-**Ein Fish ist ein schwacher, unerfahrener oder verlierender Spieler – die Geldquelle, die jeder andere am Tisch gewinnen will.** Es ist der Oberbegriff für einen schlechten Spieler, und er ist vollständig über sein Gegenteil definiert: den **Shark**, den starken Spieler, der sich von Fischen „ernährt“. Wenn die Sharks die Räuber sind, dann stehen die Fische auf der Speisekarte.
+> **Kurze Antwort**
+> Ein Fish ist ein schwacher, unerfahrener oder verlierender Spieler – die Geldquelle, die jeder andere am Tisch gewinnen will. Der Begriff meint einen ganz bestimmten Fehlertyp: ==zu viele Hände, zu viele Calls, zu wenig Aggression==. Er ist nicht einfach „jeder, der kein Shark ist“ – ein Nit etwa spielt schwach, aber auf die entgegengesetzte Art und verliert deshalb kaum.
+
+Der Name stammt vom Gegenstück: dem **Shark**, dem starken Spieler, der sich von Fischen „ernährt“. Wenn die Sharks die Räuber sind, dann stehen die Fische auf der Speisekarte.
 
 Bei dem Wort geht es nicht darum, wie *nett* jemand ist oder wie sehr er das Spiel genießt – viele Fische sind die unterhaltsamsten Leute am Tisch. Es geht rein um Ergebnisse und Entscheidungen: Ein Fish trifft konsequent verlierende Plays und übergibt seine Chips mit der Zeit an bessere Spieler. Entscheidend ist: Ein Fish weiß selten, dass er ein Fish ist. Genau dieser blinde Fleck ist der ganze Sinn des Begriffs, und deshalb ist das Konzept weit wichtiger, als es auf den ersten Blick scheint.
 
@@ -43,17 +47,19 @@ Bei dem Wort geht es nicht darum, wie *nett* jemand ist oder wie sehr er das Spi
 
 ## Warum werden schlechte Spieler „Fish“ genannt?
 
-![Infografik von oben auf einen Pub-Pokertisch mit einem K♦ 7♣ 2♠ 9♥ 3♦ Board, Chip-Stacks und dem Dealer Button](/images/holdem-pub-players-table.webp "Jeder Tisch hat eine Nahrungskette: Sharks identifizieren still den Fish und bauen ihren Profit um ihn herum auf")
+> **Kurze Antwort**
+> Weil die Metapher aus der Nahrungskette des Ozeans kommt: **Sharks fressen Fische.** Der starke, aggressive Spieler kreist um den Tisch und sucht den schwachen, passiven, an dem er verdienen kann. Das Bild sitzt so tief in der Pokerkultur, dass eine ganze Familie von Begriffen daraus gewachsen ist – Whale, Minnow, Guppy – alle Abstufungen derselben Sache.
 
-Die Metapher kommt direkt aus der Nahrungskette des Ozeans. **Sharks fressen Fische.** Ein geübter, aggressiver Gewinnspieler kreist um den Tisch und sucht nach dem schwachen, passiven Spieler, an dem er verdienen kann – und dieser Spieler ist der Fish. Das Bild ist so tief in der Pokerkultur verankert, dass ein Dutzend verwandter Begriffe daraus entstanden sind (Whale, Minnow, Guppy), die alle Abstufungen derselben Sache beschreiben.
+![Infografik von oben auf einen Pub-Pokertisch mit einem K♦ 7♣ 2♠ 9♥ 3♦ Board, Chip-Stacks und dem Dealer Button](/images/holdem-pub-players-table.webp "Jeder Tisch hat eine Nahrungskette: Sharks identifizieren still den Fish und bauen ihren Profit um ihn herum auf")
 
 Es gibt einen Begleitspruch, den du ständig hören wirst: **„Don't tap the glass.“** Er kommt von Aquariumsschildern, die Besucher bitten, nicht ans Becken zu klopfen und die Fische zu erschrecken. Beim Poker bedeutet er: *Kritisiere, belehre oder blamiere niemals einen schwachen Spieler.* Ein verlierender Spieler, der sich dumm vorkommt, steht auf und geht – und nimmt seine Chips mit. Gute Spieler wollen den Fish entspannt, unterhalten und für noch ein Buy-in am Tisch halten. Deshalb bleiben erfahrene Spieler freundlich zu der Person, die sie gerade stackt.
 
 ---
 
-## So erkennst du einen Fish: 8 verräterische Zeichen
+## Woran erkennst du einen Fish? 8 verräterische Zeichen
 
-Meistens brauchst du keine ganze Session – ein Fish verrät sich schon innerhalb von ein, zwei Orbits. Achte auf diese Zeichen:
+> **Kurze Antwort**
+> Du brauchst dafür keine ganze Session – ein Fish verrät sich meist innerhalb von ein, zwei Orbits. Der verlässlichste einzelne Hinweis ist ==loose Callen plus Passivität==: Er spielt viel zu viele Hände, geht immer wieder mit und übernimmt fast nie selbst die Führung. Die folgenden acht Zeichen zusammen machen daraus einen sicheren Read.
 
 :::stripe
 Spielt zu viele Hände | Sieht Flops mit zwei beliebigen Karten – ein VPIP von 40–70% gegenüber 15–22% bei einem soliden Spieler
@@ -66,15 +72,18 @@ Zeigt schwach am Showdown | Deckt Hände auf, die es nie so weit hätten schaffe
 Spielt emotional | Tiltet nach einem Bad Beat, jagt Verlusten hinterher, spielt ängstlich, wenn er im Minus ist
 :::
 
-Kein einzelnes Zeichen ist ein Beweis – selbst gute Spieler limpen gelegentlich oder jagen einen großen Draw. Aber wenn du drei oder vier davon beim selben Spieler siehst, hast du den Fish gefunden. Der zuverlässigste einzelne Tell ist **Passivität plus loose Calling**: Ein Spieler, der viel zu viele Hände callt, aber fast nie raist, ist der klassische Fish – und der leichteste Gegner, weil du ihn ohne Angst vor einem Bluff-Raise gnadenlos auf Value betten kannst. Zu wissen, welche Starthände überhaupt spielenswert sind, ist das Erste, was ihn von dir trennt – die [Starthände-Tabelle](/de/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") ist der Ort, an dem diese Lücke beginnt.
+Kein einzelnes Zeichen ist ein Beweis – selbst gute Spieler limpen gelegentlich oder jagen einen großen Draw. Aber wenn du drei oder vier davon beim selben Spieler siehst, hast du den Fish gefunden. Und er ist der leichteste Gegner am Tisch, weil du ihn ohne Angst vor einem Bluff-Raise gnadenlos auf Value betten kannst. Zu wissen, welche Starthände überhaupt spielenswert sind, ist das Erste, was ihn von dir trennt – die [Starthände-Tabelle](/de/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") ist der Ort, an dem diese Lücke beginnt.
 
 ---
 
-## Der Poker-Zoo: Fish vs Shark vs Whale vs Nit vs Donkey
+## Fish, Shark, Whale, Nit oder Donkey – was ist der Unterschied?
+
+> **Kurze Antwort**
+> Der **Fish** verliert, weil er zu viel und zu passiv spielt. Der **Shark** gewinnt an ihm. Ein **Whale** ist ein Fish mit tiefen Taschen an hohen Stakes. Ein **Donkey** ist ein Fish mit besonders unlogischen Plays – das Wort ist die härtere Beleidigung. Und ein **Nit** ist der Gegenpol: extrem tight, ausbeutbar, aber ==kein Fish==, weil er kaum Chips verschenkt.
 
 ![Eine einfache Darstellung der Poker-Nahrungskette mit vier Spielertypen als Poker-Chip-Icons – FISH, SHARK, WHALE und NIT – vom schwächsten zum stärksten](/images/holdem-fish-food-chain.webp "Die Poker-Nahrungskette auf einen Blick: Der Fish füttert die Sharks, der Whale ist der große Preis, und der Nit sitzt einfach nur fest")
 
-„Fish“ ist die Schlagzeile, aber der Poker-Slang hat ein ganzes Bestiarium an Spielertypen – und die meisten Glossare definieren nur zwei oder drei davon. Hier ist die eine Tabelle, die sie alle auflegt, damit du genau benennen kannst, gegen wen du antrittst:
+„Fish“ ist die Schlagzeile, aber der Poker-Slang hat ein ganzes Bestiarium an Spielertypen – und die meisten Lexika definieren nur zwei oder drei davon. Hier ist die eine Tabelle, die sie alle auflegt, damit du genau benennen kannst, gegen wen du antrittst:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -101,7 +110,10 @@ Drei Unterscheidungen, die Konkurrenten ständig verwischen und die es sich lohn
 
 ---
 
-## „Wenn du den Sucker nicht erkennst…“: Der berühmte Spruch, korrigiert
+## Wer hat den Spruch „Wenn du den Fish nicht erkennst, bist du der Fish“ gesagt?
+
+> **Kurze Antwort**
+> Die Fassung, die alle kennen, stammt aus dem Film **Rounders** (1998) – und dort heißt es „Sucker“, nicht „Fish“. Die Idee selbst ist älter und hat keinen belegbaren einzelnen Urheber. Sie kursiert seit Jahrzehnten als Sprichwort unter Spielern, und die bekannteste Zuschreibung führt im Kreis: ==Amarillo Slim schrieb sie Warren Buffett zu – und Buffett schrieb sie den Pokerspielern zu.==
 
 ![Eine schwache, unspielbare Pokerhand über dem Filz gehalten, die die loose Calls und die schlechte Handauswahl illustriert, die einen Fish auszeichnen](/images/holdem-starting-hands-weak-ace-trap.webp "Der Selbstcheck, auf den es ankommt: Wenn du Raises mit Händen wie dieser callst, hat der Tisch dich längst erkannt")
 
@@ -113,15 +125,24 @@ Der Satz, an den sich die meisten erinnern, stammt aus dem Film **Rounders** von
 „If you can't spot the sucker in your first half hour at the table, then you are the sucker.“
 :::
 
-Achte auf das Wort: Es ist **„Sucker“**, nicht „Fish“. Die Fish-Version ist eine volkstümliche Paraphrase, die Pokerspieler über die Jahre eingesetzt haben – dem Sinn nach richtig, aber nicht das eigentliche Zitat. Und die Idee ist **älter als der Film.** Es ist ein Sprichwort aus der Glücksspielwelt mit umstrittenem Ursprung: Der große Road Gambler **Amarillo Slim** nahm eine Version in die überarbeitete Ausgabe seines Buches *Play Poker to Win* von 2005 auf, schrieb sie in derselben Passage aber **Warren Buffett** „und einer Million anderer Kerle“ vor ihm zu. Buffett benutzt dasselbe Bild seit Langem, um Investoren davor zu warnen, sich an einen Tisch zu setzen, ohne zu merken, dass sie dort am schlechtesten informiert sind.
+Achte auf das Wort: Es ist **„Sucker“**, nicht „Fish“. Die Fish-Version ist eine volkstümliche Paraphrase, die Pokerspieler über die Jahre eingesetzt haben – dem Sinn nach richtig, aber nicht das eigentliche Zitat. Und die Idee ist **älter als der Film.** Der große Road Gambler **Amarillo Slim** nahm eine Version in die überarbeitete Ausgabe seines Buches *Play Poker to Win* von 2005 auf, schrieb sie in derselben Passage aber **Warren Buffett** „und einer Million anderer Kerle“ vor ihm zu.
 
-Die ehrliche Zuschreibung – die, die eine sorgfältige Quelle von einer faulen trennt – lautet also: Der *Satz, den du gehört hast*, wurde auf der Leinwand durch Rounders bekannt, aber die *Idee* ist ein altes Sprichwort ohne einzelnen überprüfbaren Urheber. So oder so bleibt der Punkt derselbe, und er ist der ganze Grund, warum es diesen Artikel gibt.
+Nur: Buffett hat sie nie für sich beansprucht. In seinem Aktionärsbrief für Berkshire Hathaway von **1987** leitet er sie ausdrücklich als Pokerweisheit ein – „*As they say in poker*“ – und schreibt dann:
+
+:::pull
+„If you've been in the game 30 minutes and you don't know who the patsy is, you're the patsy.“
+:::
+
+Bei ihm heißt es also **„Patsy“**, bei Rounders „Sucker“, am Tisch „Fish“ – drei Wörter für dieselbe Person. Und die Zuschreibung läuft im Kreis: Der Pokerspieler verweist auf den Investor, der Investor verweist auf die Pokerspieler. Die ehrliche Antwort lautet deshalb: Den *Satz, den du gehört hast*, machte Rounders bekannt; die *Idee* ist ein altes Sprichwort ohne einzelnen überprüfbaren Urheber. Der Punkt bleibt derselbe – und er ist der ganze Grund, warum es diesen Artikel gibt.
 
 ---
 
 ## Bin ich der Fish? Ein ehrlicher Selbstcheck
 
-Jetzt kommt der unangenehme Teil. Wenn du bis hierher gelesen und still gehofft hast, ein Shark zu sein, mach erst diesen Check. Die schnellste Selbstdiagnose nutzt zwei Stats, die du in jedem Tracker verfolgen (oder ehrlich schätzen) kannst:
+> **Kurze Antwort**
+> Zwei Zahlen genügen für die Selbstdiagnose. Ein solider Spieler liegt bei **VPIP 15–22%** und **PFR 12–18%** – die beiden Werte liegen dicht beieinander. Die Fish-Signatur ist die weite Lücke dazwischen: viel gespielt, kaum geraist, etwa **VPIP 40–70% bei PFR unter 10%**. Wer sich in die Pots hineincallt und hofft, hat den größten Leak im Spiel.
+
+Jetzt kommt der unangenehme Teil. Wenn du bis hierher gelesen und still gehofft hast, ein Shark zu sein, mach erst diesen Check – die Stats kannst du in jedem Tracker verfolgen oder ehrlich schätzen:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -133,7 +154,7 @@ Jetzt kommt der unangenehme Teil. Wenn du bis hierher gelesen und still gehofft 
 
 </div>
 
-Die Fish-Signatur ist die **weite VPIP / niedrige PFR-Lücke**: Du spielst 45% der Hände, raist aber nur 5% aller ausgeteilten Hände. Das heißt, du *callst* dich in Pots hinein und hoffst – der größte einzelne Leak beim Poker. Über die Stats hinaus frag dich ehrlich:
+Konkret sieht das so aus: Du spielst 45% der Hände, raist aber nur 5% ==aller ausgeteilten Hände== – nicht 5% der 45%. Beide Zahlen beziehen sich immer auf alle Hände, die du bekommst, und genau deshalb kann der PFR den VPIP nie übersteigen. Über die Stats hinaus frag dich ehrlich:
 
 - Callst du Preflop-Raises mit Händen wie K‑7 offsuit oder Q‑9, weil „die sind irgendwie spielbar“?
 - Limpst du rein, callst dann einen Raise und planst, „den Flop zu treffen“?
@@ -144,9 +165,12 @@ Wenn du nickst, ist das kein Urteil – es ist ein Geschenk. Jedes davon ist ein
 
 ---
 
-## Wie du aufhörst, ein Fish zu sein
+## Wie hörst du auf, ein Fish zu sein?
 
-Die gute Nachricht: Die Fish-Leaks sind die am *einfachsten* zu behebenden beim Poker, denn es geht bei allen darum, **weniger** zu tun, nicht irgendeinen geheimen Move zu lernen. Grob nach Wirkung geordnet:
+> **Kurze Antwort**
+> Indem du **weniger** tust, nicht mehr. Alle sechs großen Fish-Leaks werden behoben, ohne einen einzigen fortgeschrittenen Move zu lernen: weniger Starthände, folden wenn die Action sagt dass du geschlagen bist, Draws nur zum richtigen Preis, raise-or-fold statt limpen, Position nutzen und aufhören, wenn du tiltest. Deshalb sind sie die am schnellsten zu schließenden Lücken im ganzen Spiel.
+
+Grob nach Wirkung geordnet:
 
 1. **Spiel weniger Hände.** Folde deinen Schrott vor dem Flop. Deine [Starthand-Range](/de/blog/holdem-starting-hands-chart) enger zu machen, verwandelt allein mehr verlierende Spieler in Gewinner als jede andere einzelne Änderung.
 2. **Folde, wenn du geschlagen bist.** Die Fähigkeit, Top Pair abzulegen, wenn die Story nicht aufgeht, ist das, was den Fish von allen anderen trennt. Lerne, der Action zu vertrauen.
@@ -166,17 +190,17 @@ Mach diese sechs Dinge und du hörst auf, das Geld zu sein. Du musst nicht über
 
 ## FAQ
 
-**Q. Was bedeutet Fish beim Poker?**
+**Q. Ist ein Fish dasselbe wie ein Anfänger?**
 
-A. Ein Fish ist Poker-Slang für einen schwachen, unerfahrenen oder verlierenden Spieler – den, an dem die stärkeren Spieler („Sharks“) ihr Geld verdienen. Er beschreibt jeden, der konsequent schlechte Entscheidungen trifft und mit der Zeit Chips verliert, egal wie sympathisch oder selbstsicher er ist. Er ist über sein Gegenteil definiert: Ein Fish ist schlicht kein Shark.
+A. Nein, und das ist der am häufigsten missverstandene Punkt an dem Wort. Ein Anfänger ist jemand, der noch nicht lange spielt – der kann in ein paar Monaten ein solider Spieler sein. Ein Fish ist über sein *Spielmuster* definiert: loose und passiv, und deshalb langfristig verlierend. Es gibt Spieler, die seit zehn Jahren jede Woche am Tisch sitzen und immer noch Fische sind, weil sie in dieser Zeit nichts an ihren Entscheidungen geändert haben. Umgekehrt spielt mancher Anfänger von Anfang an tight und diszipliniert und ist damit kein Fish.
 
 **Q. Ist es eine Beleidigung, jemanden einen Fish zu nennen?**
 
 A. Ja, ins Gesicht gesagt ist es unhöflich, und viele Cardrooms behandeln solches Table Talk als beleidigend. Unter Spielern, die *über* das Spiel reden, ist „Fish“ jedoch normaler Branchenjargon für einen schwachen Gegner. Die Etikette-Regel lautet „Don't tap the glass“ – du willst einen verlierenden Spieler nie beleidigen und ihn (und seine Chips) verscheuchen.
 
-**Q. Was ist das Gegenteil eines Fish beim Poker?**
+**Q. Ist jeder, der kein Shark ist, automatisch ein Fish?**
 
-A. Ein Shark – ein starker, gewinnender Spieler, der an schwächeren Gegnern verdient. Die ganze Metapher ist eine Nahrungskette: Sharks fressen Fische. Ein „Reg“ (Regular) oder „Grinder“ ist im Sinne eines kompetenten, disziplinierten Spielers ebenfalls grob das Gegenteil, auch wenn nicht jeder Reg ein Gewinner ist.
+A. Nein. Der Tisch besteht nicht nur aus zwei Sorten Spielern. Ein **Nit** ist zwar ausbeutbar, aber kein Fish – er spielt zu wenige Hände statt zu viele und verliert deshalb kaum etwas. Ein **Reg** ist ein Stammspieler, der mal gewinnt und mal nicht. Ein **Grinder** lebt von kleinen, konstanten Edges. Fish ist keine Restkategorie, sondern ein konkretes Muster: viel spielen, viel callen, kaum raisen, nicht folden können.
 
 **Q. Was ist der Unterschied zwischen einem Fish und einem Whale?**
 
@@ -186,17 +210,17 @@ A. Ein Whale ist ein bestimmter Typ Fish – einer, der *große* Geldbeträge ve
 
 A. Sie sind fast Synonyme, aber der Ton unterscheidet sich. „Fish“ betont Unerfahrenheit und Geldverlieren; „Donkey“ (oder „Donk“) betont besonders schlechte, unlogische Plays und ist offen beleidigender. Jeder Donkey ist ein Fish, aber „Donkey“ nennst du einen Fish, der gerade eine spektakulär schlechte Entscheidung getroffen hat.
 
-**Q. Wie erkennt man, ob jemand ein Fish ist?**
+**Q. Wie viele Hände brauchst du, um einen Fish zu erkennen?**
 
-A. Achte auf ein Bündel an Zeichen: viel zu viele Hände spielen, limpen statt raisen, zu viel callen und selten raisen, nie ein Paar folden, jeden Draw jagen und erratisches Bet Sizing. Kein einzelner Tell ist ein Beweis, aber drei oder vier zusammen – besonders loose Calling kombiniert mit Passivität – identifizieren den Fish zuverlässig innerhalb von ein, zwei Orbits.
+A. In der Praxis reichen ein bis zwei Orbits, also ungefähr zehn bis zwanzig Hände. So lange dauert es, bis du gesehen hast, wie oft jemand freiwillig in den Pot geht und ob er dabei jemals selbst raist. Für einen belastbaren Read auf Basis von Tracker-Stats brauchst du deutlich mehr – VPIP und PFR werden erst nach einigen hundert Händen halbwegs stabil. Fürs Tischverhalten am Abend genügt der Kurzcheck trotzdem.
 
-**Q. Wie hörst du auf, beim Poker ein Fish zu sein?**
+**Q. Welcher Fish-Leak kostet das meiste Geld?**
 
-A. Tu weniger, nicht mehr: Spiel weit weniger Starthände, folde, wenn die Action sagt, dass du geschlagen bist, hör auf, Draws ohne die richtigen Pot Odds zu jagen, raise-or-fold statt zu limpen, nutze deine Position und hör auf, wenn du tiltest. Das sind die sechs größten Leaks im schwachen Spiel, und jeder davon ist behebbar, ohne einen einzigen fortgeschrittenen Move zu lernen.
+A. Zu viele Starthände zu spielen. Er steht am Anfang jeder Hand und vervielfacht alle anderen Fehler: Wer mit schwachen Händen einsteigt, landet häufiger in Situationen, in denen er out of position ist, den zweitbesten Draw hält oder mit Top Pair und schlechtem Kicker feststeckt. Deshalb bringt das Engerstellen der Range mehr als jede andere einzelne Änderung – noch vor Bluffen, Bet Sizing oder irgendeiner fortgeschrittenen Linie.
 
-**Q. Wer hat gesagt „if you can't spot the sucker at the table, you are the sucker“?**
+**Q. Heißt es beim Poker „Fish“, „Sucker“ oder „Patsy“?**
 
-A. Die berühmte Leinwandversion stammt aus dem Film *Rounders* von 1998, gesprochen von Matt Damons Figur – und sie sagt „Sucker“, nicht „Fish“. Aber die Idee ist ein älteres Glücksspiel-Sprichwort ohne einzelnen überprüfbaren Urheber; Amarillo Slim nutzte eine Version und schrieb sie Warren Buffett „und einer Million anderer Kerle“ vor ihm zu. Schreib den Satz Rounders zu, behandle das Konzept aber als altes Sprichwort.
+A. Alle drei meinen dieselbe Person, sie kommen nur aus verschiedenen Ecken. Am Tisch und im Onlinepoker sagt man **Fish**. **Sucker** ist die Wortwahl aus *Rounders* (1998) und stammt aus dem älteren Glücksspiel-Jargon. **Patsy** ist die Variante, die Warren Buffett 1987 in seinem Aktionärsbrief zitiert – ausdrücklich eingeleitet mit „as they say in poker“. Im deutschsprachigen Raum hat sich „Fish“ durchgesetzt; die anderen beiden hörst du fast nur im Zitat.
 
 ---
 

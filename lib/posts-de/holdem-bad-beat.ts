@@ -9,6 +9,7 @@ export const POST: Post = {
   category: "glossary",
   date: "2026-07-05",
   updated: "2026-08-11",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "💔",
@@ -35,15 +36,19 @@ Insgeheim gut | Was es für deinen langfristigen Profit bedeutet
 
 ## Was ist ein Bad Beat beim Poker?
 
-**Ein Bad Beat ist eine Hand, die du verlierst, obwohl du ein starker statistischer Favorit warst, als die Chips reingingen, weil dein Gegner eine unwahrscheinliche Karte getroffen hat, um dich zu überholen.** Du hast sie richtig gespielt – du hast dein Geld „gut“ reinbekommen, in der Mathematik vorne – und das Deck hat einfach den einen Runout produziert, der dich schlägt. Der Verlust ist nicht deine Schuld; es ist Varianz von ihrer schlimmsten Seite.
+> **Kurze Antwort**
+> Ein Bad Beat ist eine Hand, die du verlierst, obwohl du beim Einsetzen der Chips ==ein starker statistischer Favorit== warst – dein Gegner hat eine unwahrscheinliche Karte getroffen und dich überholt. Du hast dein Geld „gut“ reinbekommen, in der Mathematik vorne, und das Deck hat trotzdem den einen Runout geliefert, der dich schlägt. Der Verlust ist nicht dein Fehler, sondern Varianz von ihrer schlimmsten Seite.
 
 Der Mechanismus ist immer ein **Suckout**: eine Karte auf dem Turn oder River, die eine verlierende Hand in eine gewinnende verwandelt. Deine Asse haben ihr Paar Fünfen zerlegt, bis diese dritte Fünf auftauchte. Dein Top Pair hatte ihren Flushdraw drawing dead, bis das letzte Herz fiel. Dieser Moment – der Favorit, der von einem Draw überrannt wird, der es nie hätte schaffen dürfen – ist der Kern des Begriffs. Ihn zu verstehen ist auch der erste Schritt, ihn deine Session nicht ruinieren zu lassen, dieselbe emotionale Disziplin, die einen Profi von einem [Fish](/de/blog/holdem-fish) trennt.
 
 ---
 
-## Bad Beat vs Cooler: Der Unterschied, auf den es ankommt
+## Bad Beat oder Cooler – was ist der Unterschied?
 
 ![Infografik von zwei Assen A♠ A♦ gegen zwei Könige K♥ K♦ auf einem K♠ 7♦ 2♣ 8♥ 3♠ Board – das gefloppte Set Könige knackt die Asse](/images/holdem-cooler-vs-badbeat.webp "Die Asse bekommen das Geld vorne rein und verlieren trotzdem – der König auf dem Flop schenkt den Pot dem Set")
+
+> **Kurze Antwort**
+> Entscheidend ist, **wer vorn lag, als das Geld reinging**. Beim Bad Beat warst du der Favorit und wurdest von einer Glückskarte überholt. Beim Cooler lagst du von Anfang an hinten und konntest die Hand trotzdem nicht folden – es kam gar kein Suckout. ==Set über Set ist deshalb kein Bad Beat==, sondern ein Cooler: Das größere Set führte die ganze Zeit.
 
 Die Leute benutzen „Bad Beat“ und „Cooler“ synonym, aber sie sind Gegensätze – und zu wissen, welcher gerade passiert ist, sagt dir, ob du dich über das Deck ärgern oder von ihm beeindruckt sein solltest. Der ganze Unterschied ist, **wer vorne war, als das Geld reinging, und ob ein Suckout stattfand:**
 
@@ -63,11 +68,14 @@ Ein schneller Lackmustest: **Wenn dein Gegner sich *verbessern* musste, um zu ge
 
 ---
 
-## Wie großer Favorit macht es zu einem „echten“ Bad Beat?
+## Ab wie viel Prozent Favorit ist es ein „echter“ Bad Beat?
 
 ![Eine einfache dreistufige Darstellung eines Bad Beats – ein 80-Prozent-Favorit, dann ein Suckout auf dem River, dann der Verlust](/images/holdem-bad-beat-suckout.webp "Die Form eines Bad Beats: du bist ein ~80%-Favorit, der River liefert einen Suckout, und die Hand, die du hättest gewinnen sollen, ist weg")
 
-Hier trennen sich Gelegenheitsspieler und ernsthafte Spieler: **nicht jeder Verlust als Favorit ist ein Bad Beat.** Es gibt eine ungeschriebene Equity-Grenze, und sie ist wichtig, wenn du den Begriff ehrlich verwenden willst.
+> **Kurze Antwort**
+> Die ungeschriebene Grenze liegt bei etwa **80%** – darunter reden erfahrene Spieler nicht von einem Bad Beat, sondern von Varianz. Wichtiger als die Zahl sind aber die ==zwei Bedingungen==: Du musst klar vorn gelegen haben, **und** der Gegner muss sich verbessert haben. Fehlt eine davon, war es kein Bad Beat, sondern die normale Textur des Spiels.
+
+Hier trennen sich Gelegenheitsspieler und ernsthafte Spieler: **nicht jeder Verlust als Favorit ist ein Bad Beat.**
 
 - **~80% oder mehr, und du verlierst an einen Suckout** – ein echter Bad Beat. Deine Asse (ein ~4:1-Favorit über ein kleineres Paar), die geknackt werden, sind der Lehrbuchfall. Ein **One-Outer** – der Verlust an die einzige verbliebene Karte im Deck – ist der reinste Bad Beat von allen.
 - **60–70%-Favorit, der verliert** – unangenehm, aber wirklich nur Varianz. Du warst nur ein bescheidener Favorit; das andere Ergebnis sollte ohnehin ziemlich oft eintreten.
@@ -77,19 +85,22 @@ Die Faustregel: Ein Bad Beat braucht **beides** – einen großen Vorteil (ein k
 
 ---
 
-## Klassische Bad-Beat-Beispiele (mit den Odds)
+## Welche Bad Beats gibt es? Die Klassiker mit ihren Odds
 
 ![Infografik eines goldenen Dealer Buttons und zweier verdeckter Hole Cards hinter einem K♦ 7♣ 2♠ Flop – der Button agiert nach dem Flop als Letzter](/images/holdem-button-dealer-board.webp "Bei jedem Bad Beat war die Mathematik auf deiner Seite – der Underdog hat nur die Karte gefangen, die er brauchte")
 
-Jeder Bad Beat hat dieselbe Form: du bist der Favorit, der Underdog braucht Hilfe, und die Hilfe kommt an. Die häufigsten Versionen, mit ungefähren Preflop-/Flop-Equities:
+> **Kurze Antwort**
+> Fünf Formen decken fast alles ab: **Asse, die ein Set knackt** (~80%), **Asse gegen eine zufällige Hand** (~85%), ein **Overpair gegen einen Flushdraw** (~65%), ein **Runner-Runner-Draw** (~90%+) und der **One-Outer** (~96%). Das Muster ist immer identisch: Du bist der Favorit, der Underdog braucht Hilfe, und die Hilfe kommt an.
+
+Die häufigsten Versionen, mit ungefähren Preflop- und Flop-Equities:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Der Beat | Du hattest | Du warst | Wie es passiert |
 |:---|:---|:---:|:---|
-| **Asse geknackt durch ein Set** | AA vs ein kleineres Paar (z.B. 7‑7) | ~80% (4:1) | Ihr Paar trifft ein Set am Flop, Turn oder River |
-| **Asse vs eine zufällige Hand** | AA all-in preflop | ~85% | Zwei beliebige Karten überrennen dich |
-| **Overpair vs ein Flushdraw** | Overpair auf dem Flop | ~65% (2:1) | Ihr 9-Out-Flushdraw füllt sich auf dem River |
+| **Asse geknackt durch ein Set** | AA vs. ein kleineres Paar (z. B. 7‑7) | ~80% (4:1) | Ihr Paar trifft ein Set am Flop, Turn oder River |
+| **Asse vs. eine zufällige Hand** | AA all-in preflop | ~85% | Zwei beliebige Karten überrennen dich |
+| **Overpair vs. ein Flushdraw** | Overpair auf dem Flop | ~65% (2:1) | Ihr 9-Out-Flushdraw füllt sich auf dem Turn oder River |
 | **Runner-Runner** | Eine fertige Hand vorne auf dem Flop | ~90%+ | Zwei perfekte Karten (Turn *und* River) vervollständigen einen Draw |
 | **Der One-Outer** | Eine fast sichere Hand | ~96% | Die einzige übrige Karte im Deck schlägt dich |
 
@@ -101,7 +112,10 @@ Am ikonischsten ist **Asse geknackt durch ein Set.** Du bekommst zwei Asse all-i
 
 ## Was ist ein Bad Beat Jackpot?
 
-Manche Cardrooms machen aus dem Schmerz einen Preis. Ein **Bad Beat Jackpot** ist ein progressiver Pot – aufgebaut aus einem kleinen Drop, der aus qualifizierenden Händen genommen wird – der ausgezahlt wird, wenn eine sehr starke Hand am Showdown verliert. Die Idee ist, den Spieler zu belohnen, der einen spektakulären Beat erleidet, und die Auszahlung ist oft lebensverändernd.
+> **Kurze Antwort**
+> Ein Bad Beat Jackpot ist ein progressiver Preistopf, der aus einem kleinen zusätzlichen Drop pro Hand wächst und ausgezahlt wird, wenn eine ==sehr starke Hand am Showdown verliert==. Es ist damit der einzige Verlust beim Poker, über den man sich freut – die Auszahlung übersteigt den verlorenen Pot regelmäßig um ein Vielfaches. Welche Hand genau qualifiziert, legt jeder Room selbst fest.
+
+Manche Cardrooms machen aus dem Schmerz also einen Preis. Die Idee dahinter ist, den Spieler zu belohnen, der einen spektakulären Beat erleidet, und die Auszahlung ist oft lebensverändernd.
 
 Die Regeln **variieren je nach Room**, aber die übliche Struktur sieht so aus:
 
@@ -123,17 +137,23 @@ Ein wichtiger Vorbehalt: **jedes Casino und jede Pokerseite legt ihren eigenen Q
 
 ---
 
-## Der berühmteste Bad Beat der Pokergeschichte
+## Welcher ist der berühmteste Bad Beat der Pokergeschichte?
 
-Wenn du dich über deine eigenen Beats besser fühlen willst, denk daran, dass die schlimmsten auf den größten Bühnen passieren. Der legendärste ereignete sich beim **Main Event der World Series of Poker 2008**, wo **Motoyuki Mabuchi** seine zwei Asse in einen **Vierling – Vierling Asse** verwandelte, eine Hand, die von nur einem einzigen Blatt im ganzen Poker geschlagen wird – und *trotzdem verlor*. Er ging all-in gegen **Justin Phillips** (der K♦ J♦ hielt), und der River **A♦** vervollständigte seinen Vierling, während dieselbe Karte Phillips einen **Royal Flush** bescherte – die 10‑J‑Q‑K‑A in Karo. Die eine Karte, die vier Asse machte, war die eine Karte, die sie schlagen konnte.
+> **Kurze Antwort**
+> Der **Vierling Asse gegen Royal Flush** beim Main Event der World Series of Poker **2008**. Motoyuki Mabuchi hielt A♣ A♠, Justin Phillips K♦ J♦, und das Board endete auf ==A♥ 9♣ Q♦ 10♦ A♦==. Der River A♦ gab Mabuchi seinen vierten Asse – und schenkte Phillips im selben Moment den Royal Flush. Die eine Karte, die den Vierling machte, war die eine Karte, die ihn schlagen konnte.
+
+Wenn du dich über deine eigenen Beats besser fühlen willst, denk daran, dass die schlimmsten auf den größten Bühnen passieren. Mabuchi hielt damit eine Hand, die überhaupt nur noch von einem Straight Flush geschlagen werden kann – und verlor *trotzdem*. Die Kameras erreichten den Tisch erst am River, weil Ray Romano sich dazugesetzt hatte; so wurde einer der berühmtesten Beats der Pokergeschichte überhaupt aufgezeichnet.
 
 Das ist die Obergrenze des Bad-Beat-Schmerzes: nicht ein 80%-Favorit, der untergeht, sondern *vier Asse* – eine Hand, die du ein Leben lang spielen kannst, ohne sie je zu verlieren – geschlagen vom einzigen Blatt, das höher ist. Es lohnt sich, das in der Hinterhand zu haben, wenn das nächste Mal deine Asse geknackt werden: so schlecht das Deck dich auch behandelt hat, jemand hat einmal mit einem Vierling Asse verloren.
 
 ---
 
-## Warum Bad Beats eigentlich gut für dich sind
+## Warum sind Bad Beats eigentlich gut für dich?
 
-Jetzt die Wahrheit, die Bad Beats von Tilt-Treibstoff in eine stille Quelle von Selbstvertrauen verwandelt. **Jeder Bad Beat, den du kassierst, ist der Beweis, dass du in einem schlagbaren Spiel sitzt.**
+> **Kurze Antwort**
+> Weil ein Bad Beat einen Gegner voraussetzt, der ==hinten lag, als er bezahlt hat== – und genau diesen Gegner willst du am Tisch haben. An einem Tisch, an dem dir niemand mehr rausdrawt, spielen alle ihre schwachen Hände korrekt weg, und dann ist dort auch nichts mehr zu verdienen. Jeder Beat, den du kassierst, ist damit eine Quittung dafür, dass dein Spiel schlagbar besetzt ist.
+
+**Jeder Bad Beat, den du kassierst, ist der Beweis, dass du in einem schlagbaren Spiel sitzt.**
 
 Denk darüber nach, was ein Bad Beat braucht: einen Gegner, der sein Geld als mathematischer Underdog *hinten* reingesteckt hat und Glück hatte. Das ist ein Spieler, der **verlierende Entscheidungen** trifft – genau der Gegner, den du willst. Wenn niemand an deinem Tisch je gegen dich rausdrawen würde, hieße das, dass alle ihre schwachen Hände korrekt folden, und es gäbe kein Geld zu gewinnen. Wie eine bekannte Coaching-Maxime es ausdrückt: Ein Suckout von einem schwachen Spieler ist ein *Geschenk* – es ist der Eintrittspreis dafür, die anderen vier Male an seine Chips zu kommen.
 
@@ -141,7 +161,10 @@ Denk darüber nach, was ein Bad Beat braucht: einen Gegner, der sein Geld als ma
 
 ---
 
-## Wie man mit einem Bad Beat umgeht
+## Wie gehst du mit einem Bad Beat um?
+
+> **Kurze Antwort**
+> Indem du die *nächsten* Hände schützt, nicht die verlorene. Ein Bad Beat enthält keine Lektion über dein Spiel – er kann dir nur schaden, wenn er ändert, wie du danach spielst. Benenne ihn kurz, achte scharf auf Tilt, mach notfalls fünf Minuten Pause und vertrau der Bankroll, die genau für diese Schwankungen existiert.
 
 Weil ein Bad Beat keine Lektion über dein Spiel enthält, ist seine einzige echte Gefahr, was er mit deinen *nächsten* paar Händen macht. Schütze sie:
 
@@ -160,33 +183,33 @@ Weil ein Bad Beat keine Lektion über dein Spiel enthält, ist seine einzige ech
 
 ## FAQ
 
-**Q. Was ist ein Bad Beat beim Poker?**
+**Q. Kannst du Bad Beats verhindern?**
 
-A. Ein Bad Beat ist, wenn du eine Hand verlierst, die du als starker statistischer Favorit gewinnen musstest, weil dein Gegner eine unwahrscheinliche Karte getroffen hat, um dich zu überholen. Du hast dein Geld „gut“ reinbekommen – vorne in der Mathematik – und nur ein unwahrscheinlicher Suckout auf dem Turn oder River hat das Ergebnis gedreht. Der klassische Fall sind zwei Asse, die von einem kleineren Paar geknackt werden, das ein Set spikt.
+A. Nein, und du solltest es auch nicht wollen. Ein Bad Beat entsteht dadurch, dass du dein Geld als Favorit reinbekommen hast – also genau dadurch, dass du richtig gespielt hast. Wolltest du Bad Beats vermeiden, müsstest du aufhören, mit starken Händen Chips in die Mitte zu bringen, und damit exakt die Situationen aufgeben, aus denen dein Gewinn kommt. Das Einzige, was du beeinflussen kannst, ist deine Reaktion darauf.
 
-**Q. Was ist der Unterschied zwischen einem Bad Beat und einem Cooler?**
+**Q. Ist Set über Set ein Bad Beat?**
 
-A. Bei einem Bad Beat warst du der Favorit, als das Geld reinging, und wurdest outgedrawt – ein Suckout ist passiert. Bei einem Cooler warst du die ganze Zeit hinten mit einer Hand, die zu stark zum Folden war, und es gab keinen Suckout. Schneller Test: Wenn dein Gegner sich *verbessern* musste, um zu gewinnen, ist es ein Bad Beat; wenn er schon vorne war, ist es ein Cooler. Set über Set zum Beispiel ist ein Cooler, kein Bad Beat.
+A. Nein, das ist ein Cooler. Der Unterschied liegt daran, ob der Gewinner sich verbessern musste. Wenn dein Set Damen gegen ein Set Könige verliert, hatte niemand Glück auf dem River – das größere Set lag von der ersten Sekunde an vorn, und du konntest ein gefloppte Set trotzdem nicht folden. Genau diese Kombination aus „die ganze Zeit hinten“ und „unmöglich zu folden“ definiert den Cooler. Ein Bad Beat wäre es nur, wenn die entscheidende Karte erst später gekommen wäre.
 
 **Q. Ist der Verlust eines Coinflips ein Bad Beat?**
 
 A. Nein. Ein Bad Beat verlangt, dass du ein klarer Favorit bist – meist um die 80% oder mehr – und dann rausgedrawt wirst. Ein fast ausgeglichenes Duell wie A‑K gegen Q‑Q (ungefähr 50/50) zu verlieren ist einfach normale Varianz. Wenn die Hand nahe an einem Münzwurf war, wurdest du nicht schwer geschlagen, du hast einfach einen Flip verloren, der ohnehin ungefähr die Hälfte der Zeit andersherum ausgehen sollte.
 
-**Q. Was ist ein Bad Beat Jackpot und was qualifiziert sich?**
+**Q. Wer bezahlt eigentlich den Bad Beat Jackpot?**
 
-A. Ein Bad Beat Jackpot ist ein progressiver Preis, den manche Cardrooms zahlen, wenn eine außergewöhnlich starke Hand am Showdown verliert. Ein üblicher Qualifier ist „Asse voll mit Buben oder besser, geschlagen von einem Vierling oder besser“, wobei beide Hole Cards des Verlierers spielen müssen. Der Verlierer bekommt meist den größten Anteil, der Gewinner den zweiten, und der Rest des Tisches teilt sich den Rest – aber Qualifier und Splits variieren je nach Room, also prüfe immer die lokalen Regeln.
+A. Die Spieler selbst. Der Jackpot wächst aus einem zusätzlichen Drop, den der Room bei qualifizierenden Händen aus dem Pot nimmt – also aus Geld, das sonst an die Gewinner gegangen wäre. Ein Bad-Beat-Jackpot-Tisch ist damit ein Tisch mit ==höherem effektiven Rake==. Für Freizeitspieler ist der Lotterie-Reiz das trotzdem oft wert; wer viel Volumen spielt, rechnet lieber nach, wie oft der Qualifier überhaupt eintritt.
 
-**Q. Was ist der schlimmste Bad Beat der Pokergeschichte?**
+**Q. Was ist der Unterschied zwischen einem Bad Beat und einem Suckout?**
 
-A. Der berühmteste stammt vom Main Event der WSOP 2008: Motoyuki Mabuchi machte einen Vierling Asse – eine Hand, die nur von einem Straight Flush geschlagen wird – und verlor trotzdem. Er floppte ein Set Asse, dann vervollständigte das letzte Ass auf dem River seinen Vierling und gab, auf derselben Karte, Justin Phillips einen Royal Flush in Karo. Den bestmöglichen Vierling zu machen und auf einen Straight Flush zu treffen – die einzige Handkategorie, die darüber steht – ist ungefähr so schlimm, wie ein Bad Beat nur werden kann.
+A. Ein Suckout ist die *Karte*, ein Bad Beat die *ganze Hand* aus Sicht des Verlierers. Trifft der Underdog auf dem Turn oder River die Karte, die er brauchte, war das ein Suckout – und aus Sicht dessen, der vorn lag, wird daraus ein Bad Beat. Beides beschreibt denselben Moment aus zwei Blickwinkeln: „Ich habe gesuckoutet“ sagt der Gewinner, „ich habe einen Bad Beat kassiert“ der Verlierer.
 
 **Q. Sind Bad Beats online häufiger?**
 
 A. Es kann sich so anfühlen, aber es ist meist eine Illusion des Volumens. Online spielst du weit mehr Hände pro Stunde – oft über mehrere Tische – also *siehst* du in derselben Zeit einfach mehr Bad Beats. Die Karten werden zufällig ausgeteilt; du hast online nicht mehr Pech, du kommst nur durch viel mehr Hände, und mehr Hände bedeuten mehr Suckouts in beide Richtungen.
 
-**Q. Wie geht man beim Poker mit Bad Beats um?**
+**Q. Warum will niemand deine Bad-Beat-Story hören?**
 
-A. Akzeptiere die Hand als Varianz, achte scharf auf Tilt und schütze deine nächsten paar Entscheidungen – der verlorene Pot ist weg, aber die leichtsinnigen Hände, die du spielst, um ihn zurückzugewinnen, sind der eigentliche Preis. Mach eine kurze Pause, wenn du eine brauchst, verlass dich auf eine Bankroll, die dafür gebaut ist, Varianz zu absorbieren, und verzichte darauf, die Bad-Beat-Story zu wiederholen, die dich sie nur noch einmal durchleben lässt.
+A. Weil sie für alle anderen keinerlei Information enthält. Jeder am Tisch hat dieselbe Geschichte schon dutzendfach erlebt, und da du korrekt gespielt hast, gibt es weder etwas zu lernen noch etwas zu diskutieren. Für dich selbst ist das Nacherzählen sogar teuer: Du durchlebst den Ärger ein zweites Mal und hältst damit genau den Zustand aufrecht, der dich die nächsten Hände kostet. Kurz benennen, abhaken, weiterspielen.
 
 **Q. Ist ein Bad Beat dasselbe wie schlecht zu spielen?**
 

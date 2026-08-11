@@ -3,6 +3,69 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-08-11 (15) — **de 경화 Session 5 (Glossar 6편) + C층 4건 8로케일**
+
+- **대상 6편**: `holdem-glossary`(필라) · `holdem-rake` · `holdem-fish` · `holdem-straddle` ·
+  `holdem-cooler` · `holdem-bad-beat`
+- **질문형 H2**: 착수 시 0~67% → **6편 전부 내용 H2 100%**(전체 대비 67~73%).
+  직답 `> **Kurze Antwort**` **42개** 신설(착수 시 이 6편은 0개였다)
+- **masterUpdated 5편 신설** → de 추적불가 **12 → 7편**
+
+### ★ 이름표 유형이 또 최대 ROI였다 — `Glossar`가 아니라 `Begriffe`다
+라쿠 실측(2026-08-11): **`poker begriffe` 260 vs `poker glossar` 10 — 26배.**
+독일어 SERP Top7(pokerstars.de·cardplayer.de·888poker.de·pokerolymp·poker-ratgeber·start-up-poker)도
+전부 제목이 **Pokerbegriffe / Poker Begriffe / Poker Lexikon**이고 「Glossar」 단독은 없다.
+→ seoTitle·desc·도입부·태그를 `Poker-Begriffe`·`Pokerbegriffe`·`Lexikon`으로 교체(slug·구조 불변).
+부수 실측: `poker begriffe erklärt` 40 · `poker fachbegriffe` 20 · `poker begriffe lexikon` 10(12m **+200%**) ·
+**`bad beat jackpot` 90**(bad-beat 글에 H2가 이미 있다) · `plo poker regeln` 20 · `poker mississippi straddle` 10(+140%)
+
+### 신설 — `holdem-glossary` 「Turnier- & Online-Abkürzungen」 표 (16행)
+GTD·Overlay·ITM·FT·Late Reg·Re-Entry·Rebuy·Add-on·Freezeout·KO/PKO·PLO·ATS·ROI·BB/100·Cap·Freeroll.
+용어집이 라이브 캐시 편중이라 이 축이 통째로 비어 있었다. 표제어 80+ → **113**, 카테고리 6 → 7(스트라이프 수치도 갱신).
+FAQ 2문항 추가(`Rebuy/Re-Entry/Add-on 차이` · `Cap의 세 가지 뜻`) — H2와 중복되지 않는 문형으로.
+🔴 **`poker cap`은 자동완성이 CAPT(잘츠부르크·벨덴·제펠트)에 점령돼 있다** — 표에는 넣되 H2로 밀지 말 것.
+
+### C층 — 실측 결과가 인계서와 «양쪽으로» 어긋났다
+| 건 | 인계서 | 실측 | 처리 |
+|---|---|---|---|
+| `rake` **C43**(캡이 레이트에 비례) | de 1곳 | **8 로케일 전부** | 「비례가 아니라 단계적」으로 정정(다른 4곳은 손대지 않음) |
+| `rake` **C44**(숏핸드 부담을 캡 탓으로) | de 1곳 | **8 로케일 전부** | 이유를 #33과 동일하게(시간당 핸드 수·블라인드 빈도) 교체 |
+| `straddle` **#15·#41**(미시시피 「버튼 위 «또는 근처»」) | 2자리 | **8 로케일 × 3자리 = 24곳** | 「버튼 위만」으로. 포스트플랍 순서는 버튼이 정한다 |
+| `fish` **#30**(샤크가 아니면 피시) | 8 로케일 가정 | 🔴 **pt 1곳뿐** — 6개는 이미 정정돼 있었다 | pt만 수정 |
+| `fish` **#25**(분모 오류) | 미정 | **de는 이미 옳았다**(「5% aller ausgeteilten Hände」) | 무변경 + 본문에 분모를 명시 강화 |
+| `bad-beat` **#7·#11** | 미정 | **de는 이미 옳았다**(「Flop, Turn oder River」 · 「~96%」) | 무변경 |
+`rake` #9·#19·#23·#33은 C1 트랙(`1e4223c`)에서 이미 닫힌 것을 de 원문에서 재확인했다.
+
+### 1차 출처로 잡은 사실 2건 (§12-B — 검색 요약은 둘 다 틀렸다)
+1. **버핏 「patsy」** — Berkshire Hathaway **1987년 주주서한** 원문을 Playwright로 긁어 축어 확인:
+   > *As they say in poker, "If you've been in the game 30 minutes and you don't know who the patsy is, you're the patsy."*
+   ★**버핏이 「as they say in poker」로 포커에 귀속시켰다.** 그런데 Amarillo Slim은 그 말을 버핏에게 귀속시켰다 —
+   **귀속이 순환한다.** `fish` #20의 정답이 이것이고, 「Fish/Sucker/Patsy」 3어 대조 FAQ로 흡수했다.
+2. **2008 WSOP Mabuchi 핸드** — 웹서치 요약이 보드를 **두 가지로** 답했다(자기모순).
+   PokerNews 원문 DOM 직접 추출: 보드 **A♥ 9♣ Q♦ 10♦ A♦** · Mabuchi **A♣A♠** · Phillips **K♦J♦**.
+   §13 검산: Mabuchi 베스트5 = A♣A♠A♥A♦+Q♦(포카드) / Phillips = 10♦J♦Q♦K♦A♦(로열). 리버 A♦가
+   동시에 넷째 A이자 로열 완성 카드 ✅. 본문에 검증된 보드를 명시.
+
+### 🔴 내가 만든 결함 — 되읽기·게이트가 전부 잡았다
+- **직답 삽입 축어 중복 5건**(rake 3 · glossary 1 · straddle 1 · bad-beat 1). Session 3 교훈 5가 그대로 재현됐다.
+  → 6단어 shingle 대조 스크립트를 만들어 «직답 ↔ 바로 아래 블록»만 기계 대조했다. 최종 0건
+- **`check:de-style`이 D5를 새로 잡았다** — Bad-Beat-Jackpot을 「Der **Topf**」라고 썼다(§2 false friend).
+  게이트가 없었으면 그대로 나갔다
+- 오탐도 실측했다: H2↔FAQ 대조기가 3건을 「100% 중복」이라 했으나 **전건 원문 판정 결과 전부 오탐**
+  (H2가 짧아 내용어 1개 → 분모가 1이 되는 계산 artifact). 정밀도 개선 없이는 이 검사를 게이트에 넣지 말 것
+
+### 그 밖에
+- **H2↔FAQ 준중복 19문항 재구성**(rake 5 · fish 4 · straddle 5 · cooler 4 · bad-beat 5) — 전부 삭제가 아니라
+  **다른 실검색 문형**으로. 예: `Was ist Rakeback?`(H2) ↔ `Wie viel Rakeback ist ein guter Deal?`(FAQ)
+- **EN→de 미수신 3문항 이식**: rake `Wie zahlst du weniger Rake?` · cooler `Wie oft passiert Set über Set?` ·
+  cooler `Heißt „Cooler" im Casino dasselbe?`. ★확률은 옮겨 적지 않고 **직접 재계산**했다 —
+  P(포켓페어 셋 플랍) = 1 − C(48,3)/C(50,3) = **11,76%**(≈1/8,5) · P(양쪽 다 셋) = 180/17.296 = **1,04%**(≈1/96). EN 수치와 일치
+- 🔴 **의도적 제외**: EN rake FAQ 「Is taking a rake illegal?」는 **de에 넣지 않았다**(합법성 판정 금지 정책)
+- 사실오류 1건 자체 발견: 「포카드 A를 이기는 건 단 한 가지 패」 → **모든 스트레이트 플러시**가 이긴다. 정정
+- 게이트: `audit:hard` **8개 로케일(de·en·es·id·ja·pt·zh·zh-hant) 전부 🔴 0건** ·
+  `check:de-style` 통과 29→**34/42**(🔴 1 = `apt-incheon`, Session 6 몫) · `check:faq-schema` **455/455 · 🔴 0** ·
+  `check:hreflang` 🔴 0 · 빌드 **69 blog + 457 intl**(불변)
+
 ## 2026-08-11 (14) — **de 경화 Session 4 (Strategie 8편) + C층 5건 8로케일** (`ac2b0b3` `5c92dab` · 푸시)
 
 - **질문형 H2 목표 70% → 8편 전부 82~92%** 달성. 직답 `> **Kurze Antwort**` 36개 신설 ·

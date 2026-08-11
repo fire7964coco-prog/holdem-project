@@ -62,7 +62,7 @@ No existe un único tipo de rake. Cómo cobra la casa su dinero depende de los l
 Unas cuantas reglas rigen cómo se recorta realmente el rake por bote:
 
 - **No flop, no drop.** En la mayoría de salas, si la mano termina antes del flop — todos foldean ante una subida preflop — la casa **no cobra rake** en absoluto. (No es universal: unos pocos sitios, sobre todo GGPoker, sí sacan rake de algunos botes preflop, así que comprueba tu sala.)
-- **El tope de rake (cap).** La casa nunca se lleva el porcentaje completo en un bote enorme — se detiene en un máximo, comúnmente **$3–$6 en vivo** y **$1–$3 online**. Los topes suelen escalar con los límites y a menudo se reducen cuando reparten a menos jugadores (un bote mano a mano podría tener un tope de $1).
+- **El tope de rake (cap).** La casa nunca se lleva el porcentaje completo en un bote enorme — se detiene en un máximo, comúnmente **$3–$6 en vivo** y **$1–$3 online**. Los topes suben cuando suben los límites, pero no de forma proporcional: se mueven a saltos, así que varios límites suelen compartir el mismo tope. Además, a menudo se reducen cuando reparten a menos jugadores (un bote mano a mano podría tener un tope de $1).
 - **Rake por tiempo en vez de rake por bote.** En límites más altos, las salas a menudo dejan de rakear los botes y en su lugar cobran una tarifa fija — digamos $10–$15 la hora por jugador, cobrada cada media hora. Esto favorece a los jugadores que ganan botes grandes, aunque lo que ahorras es el rake *topado*, no un porcentaje del bote: contra un tope de $3–$6, un bote de $2,000 solo dejaba unos pocos dólares.
 - **Dead drop.** Un método menos común en el que solo el jugador en el botón paga un rake fijo cada mano, cobrado antes de repartir las cartas — diseñado para que quien gana botes grandes no tribute más que nadie.
 
@@ -186,7 +186,7 @@ A. Sí, pero no del bote. La comisión se añade a tu buy-in y se muestra con un
 
 **Q. ¿Cómo afecta el rake a tu win rate?**
 
-A. De forma significativa — sobre todo en límites bajos y en mesa corta, donde el tope no baja con los límites. El rake puede convertir a un pequeño ganador en un perdedor: el mismo jugador de +8 bb/100 puede acabar ligeramente en negativo simplemente pasándose a una sala con un tope de rake más alto. Mide siempre tu win rate después del rake.
+A. De forma significativa — sobre todo en límites bajos, donde el tope no baja junto con los límites. En mesa corta se suma un segundo efecto que nada tiene que ver con el tope: en una mesa de seis o mano a mano juegas muchas más manos por hora y pagas las ciegas mucho más seguido, así que el rake te toca con mucha más frecuencia. El rake puede convertir a un pequeño ganador en un perdedor: el mismo jugador de +8 bb/100 puede acabar ligeramente en negativo simplemente pasándose a una sala con un tope de rake más alto. Mide siempre tu win rate después del rake.
 
 **Q. ¿Es más alto el rake en póker online o en vivo?**
 
