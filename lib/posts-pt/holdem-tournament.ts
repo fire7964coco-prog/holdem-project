@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Num torneio de pôquer você paga um buy-in fixo por fichas, e os blinds sobem num relógio até uma pessoa ficar com todas as fichas. Os 10–15% melhores do field entram no dinheiro. Os formatos incluem freezeout, PKO, satellite e deepstack — você entra por buy-in direto, satellite ou pré-registro online.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-08-10",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏆",
@@ -46,7 +46,7 @@ $100+$9 | como um buy-in típico se divide — prize pool + taxa
 
 Um torneio de pôquer é uma competição em que todo mundo paga a mesma taxa de inscrição (o **buy-in**), recebe a mesma quantidade de fichas iniciais e joga até uma pessoa ficar com todas as fichas do jogo.
 
-**Resumo em uma frase:** num cash game suas fichas são dinheiro de verdade e você pode sair a qualquer hora. Num torneio, sua perda máxima é exatamente o buy-in — mas você está disputando uma fatia de um prize pool muito maior.
+**Resumo em uma frase:** num cash game suas fichas são dinheiro de verdade e você pode sair a qualquer hora. Num torneio freezeout, sua perda máxima é exatamente o buy-in — com re-entry e add-on ela passa disso — mas você está disputando uma fatia de um prize pool muito maior.
 
 Essa única diferença muda o valor das fichas, a pressão dos blinds e a estratégia da base ao topo. → Detalhamento completo: [Torneio vs Cash Game — qual você deveria jogar?](/pt/blog/holdem-tournament-vs-cash-game "thumb:/images/tournament-table-action.webp")
 
@@ -139,7 +139,7 @@ Um PKO (Progressive Knockout) é um torneio de bounty em que tipicamente cerca d
 
 ### O que é um torneio deepstack?
 
-Um torneio deepstack te dá muito mais fichas em relação aos blinds — normalmente 100 big blinds ou mais, muitas vezes 200BB+ — e em geral vem com níveis de blind mais longos. Mais fichas e um relógio mais lento significam mais jogo pós-flop, mais espaço pra se recuperar de um erro e dias mais longos.
+Um torneio deepstack te dá muito mais fichas em relação aos blinds — normalmente 200 big blinds ou mais — e em geral vem com níveis de blind mais longos. Mais fichas e um relógio mais lento significam mais jogo pós-flop, mais espaço pra se recuperar de um erro e dias mais longos.
 
 **E os rebuys e add-ons?** Num evento de rebuy você pode pagar de novo depois de quebrar durante uma janela inicial definida; um add-on é uma compra opcional única de fichas, geralmente oferecida quando essa janela fecha. Depois disso, o evento segue como um freezeout.
 

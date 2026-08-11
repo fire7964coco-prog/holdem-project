@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "En los cash games las fichas son dinero real y las ciegas se mantienen fijas. En los torneos las fichas son equity de supervivencia, las ciegas suben y los premios dependen de en qué puesto termines.",
   category: "tournament",
   date: "2026-06-11",
-  updated: "2026-07-24",
-  masterUpdated: "2026-07-19",
+  updated: "2026-08-11",
+  masterUpdated: "2026-08-11",
   hideSummaryImageSlot: true,
   readTime: "16 min",
   emoji: "🏆",
@@ -386,7 +386,7 @@ A. En un cash game entras por el máximo de la mesa — normalmente en torno a 1
 
 **Q. ¿Cuántas fichas hacen falta para un cash game en casa?**
 
-A. Un set estándar de 300 fichas cubre cómodamente hasta unos 6-8 jugadores. Dale a todos el mismo stack inicial repartido en 3-4 denominaciones, con la mayoría de las fichas en los valores más pequeños para que se pueda apostar y dar cambio con facilidad. El número exacto importa menos que el hecho de que todos acuerden cuánto vale cada color en dinero real antes de la primera mano.
+A. Un set estándar de 300 fichas cubre cómodamente hasta unos 6 jugadores — con 7-8 son 300 ÷ 8 = menos de 40 fichas por persona, así que conviene un set de 500. Dale a todos el mismo stack inicial repartido en 3-4 denominaciones, con la mayoría de las fichas en los valores más pequeños para que se pueda apostar y dar cambio con facilidad. El número exacto importa menos que el hecho de que todos acuerden cuánto vale cada color en dinero real antes de la primera mano.
 
 **Q. ¿Los jugadores profesionales juegan cash games o torneos?**
 

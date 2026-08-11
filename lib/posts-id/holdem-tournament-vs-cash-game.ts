@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Di cash game, chip adalah uang nyata dan blind tetap. Di turnamen, chip adalah ekuitas bertahan, blind naik, dan hadiah bergantung pada posisi finis Anda.",
   category: "tournament",
   date: "2026-06-11",
-  updated: "2026-07-11",
+  updated: "2026-08-11",
   hideSummaryImageSlot: true,
   readTime: "16 mnt",
   emoji: "🏆",
@@ -381,7 +381,7 @@ A. Panduan umum adalah 20-40 buy-in untuk cash game dan 100+ buy-in untuk turnam
 
 **Q. Berapa chip yang Anda butuhkan untuk cash game di rumah?**
 
-A. Satu set 300 chip standar dengan nyaman mencukupi sampai sekitar 6-8 pemain. Beri semua orang stack awal yang sama dalam 3-4 denominasi, dengan mayoritas chip di nilai terkecil agar pemain bisa bertaruh dan menukar dengan mudah. Jumlah persisnya tidak sepenting semua orang menyepakati nilai uang nyata setiap warna sebelum tangan pertama.
+A. Satu set 300 chip standar dengan nyaman mencukupi sampai sekitar 6 pemain — di 7-8 orang jadinya 300 ÷ 8 = kurang dari 40 chip per orang, jadi set 500 lebih pas. Beri semua orang stack awal yang sama dalam 3-4 denominasi, dengan mayoritas chip di nilai terkecil agar pemain bisa bertaruh dan menukar dengan mudah. Jumlah persisnya tidak sepenting semua orang menyepakati nilai uang nyata setiap warna sebelum tangan pertama.
 
 **Q. Apakah pemain profesional main cash game atau turnamen?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Di turnamen poker Anda membayar buy-in tetap untuk mendapat chip, blind naik mengikuti timer sampai satu pemain memegang semua chip. 10–15% pemain teratas ITM. Formatnya meliputi freezeout, PKO, satellite, dan deepstack — masuk lewat buy-in langsung, satellite, atau pra-registrasi online.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-08-10",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "14 mnt",
   emoji: "🏆",
@@ -46,7 +46,7 @@ $100+$9 | cara buy-in umum terbagi — prize pool + fee
 
 Turnamen poker adalah kompetisi di mana semua orang membayar biaya masuk yang sama (**buy-in**), menerima jumlah chip awal yang sama, dan bermain sampai satu orang memegang setiap chip dalam permainan.
 
-**Ringkasan satu kalimat:** Di cash game, chip Anda adalah uang sungguhan dan Anda bisa pergi kapan saja. Di turnamen, kerugian maksimal Anda persis sebesar buy-in — tapi Anda bermain untuk memperebutkan bagian dari prize pool yang jauh lebih besar.
+**Ringkasan satu kalimat:** Di cash game, chip Anda adalah uang sungguhan dan Anda bisa pergi kapan saja. Di turnamen freezeout, kerugian maksimal Anda persis sebesar buy-in — dengan re-entry dan add-on jadi lebih besar — tapi Anda bermain untuk memperebutkan bagian dari prize pool yang jauh lebih besar.
 
 Satu perbedaan itu mengubah nilai chip, tekanan blind, dan strategi dari akarnya. → Rincian lengkap: [Turnamen vs Cash Game — Mana yang Sebaiknya Anda Mainkan?](/id/blog/holdem-tournament-vs-cash-game "thumb:/images/tournament-table-action.webp")
 
@@ -139,7 +139,7 @@ PKO (Progressive Knockout) adalah turnamen bounty di mana biasanya sekitar separ
 
 ### Apa Itu Turnamen Poker Deepstack?
 
-Turnamen poker deepstack memulai Anda dengan chip yang jauh lebih banyak relatif terhadap blind — biasanya 100 big blind atau lebih, sering 200BB+ — dan biasanya dipadukan dengan blind level yang lebih panjang. Lebih banyak chip dan jam yang lebih lambat berarti lebih banyak permainan postflop, lebih banyak ruang untuk pulih dari kesalahan, dan hari yang lebih panjang.
+Turnamen poker deepstack memulai Anda dengan chip yang jauh lebih banyak relatif terhadap blind — biasanya 200 big blind atau lebih — dan biasanya dipadukan dengan blind level yang lebih panjang. Lebih banyak chip dan jam yang lebih lambat berarti lebih banyak permainan postflop, lebih banyak ruang untuk pulih dari kesalahan, dan hari yang lebih panjang.
 
 **Bagaimana dengan rebuy dan add-on?** Di event rebuy Anda bisa bayar lagi setelah bust selama jendela awal yang ditetapkan; add-on adalah pembelian chip opsional satu kali yang biasanya ditawarkan saat jendela itu ditutup. Setelah itu, event berjalan seperti freezeout.
 

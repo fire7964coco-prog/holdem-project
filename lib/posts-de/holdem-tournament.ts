@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In einem Poker-Turnier zahlst du ein festes Buy-in für Chips, die Blinds steigen auf einem Timer, bis ein Spieler alle Chips hält. Die Top 10–15% des Feldes kommen in die Payouts. Formate sind Freezeout, PKO, Satellite und Deepstack – der Einstieg läuft über direktes Buy-in, Satellite oder Online-Vorregistrierung.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-08-10",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "14 Min.",
   emoji: "🏆",
@@ -46,7 +46,7 @@ $100+$9 | wie sich ein typisches Buy-in aufteilt – Prize Pool + Fee
 
 Ein Poker-Turnier ist ein Wettbewerb, bei dem alle dieselbe Startgebühr zahlen (das **Buy-in**), dieselbe Anzahl Startchips erhalten und spielen, bis eine Person jeden Chip im Spiel hält.
 
-**In einem Satz:** In einem Cash Game sind deine Chips echtes Geld und du kannst jederzeit gehen. In einem Turnier ist dein maximaler Verlust exakt das Buy-in – dafür spielst du um einen Anteil an einem viel größeren Prize Pool.
+**In einem Satz:** In einem Cash Game sind deine Chips echtes Geld und du kannst jederzeit gehen. In einem Turnier ist dein maximaler Verlust in einem Freezeout exakt das Buy-in – mit Re-Entry und Add-on liegt er höher –, dafür spielst du um einen Anteil an einem viel größeren Prize Pool.
 
 Dieser eine Unterschied verändert Chip-Wert, Blind-Druck und Strategie von Grund auf. → Volle Aufschlüsselung: [Poker-Turnier vs. Cash Game – was solltest du spielen?](/de/blog/holdem-tournament-vs-cash-game "thumb:/images/tournament-table-action.webp")
 
@@ -139,7 +139,7 @@ Ein PKO (Progressive Knockout) ist ein Bounty-Turnier, bei dem typischerweise ru
 
 ### Was ist ein Deepstack Poker-Turnier?
 
-Ein Deepstack Poker-Turnier startet dich mit weit mehr Chips im Verhältnis zu den Blinds – typischerweise 100 Big Blinds oder mehr, oft 200 BB+ – und kombiniert das meist mit längeren Blind-Levels. Mehr Chips und eine langsamere Uhr bedeuten mehr Postflop-Spiel, mehr Raum, um einen Fehler zu korrigieren, und längere Tage.
+Ein Deepstack Poker-Turnier startet dich mit weit mehr Chips im Verhältnis zu den Blinds – typischerweise 200 Big Blinds oder mehr – und kombiniert das meist mit längeren Blind-Levels. Mehr Chips und eine langsamere Uhr bedeuten mehr Postflop-Spiel, mehr Raum, um einen Fehler zu korrigieren, und längere Tage.
 
 **Was ist mit Rebuys und Add-ons?** In einem Rebuy-Event kannst du nach dem Busten während eines festgelegten frühen Zeitfensters erneut zahlen; ein Add-on ist ein einmaliger optionaler Chip-Kauf, der meist angeboten wird, wenn dieses Fenster schließt. Danach spielt sich das Event wie ein Freezeout aus.
 

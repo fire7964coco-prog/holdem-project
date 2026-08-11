@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In cash games, chips are real money and blinds stay fixed. In tournaments, chips are survival equity, blinds rise, and payouts depend on where you finish.",
   category: "tournament",
   date: "2026-06-11",
-  updated: "2026-07-19",
+  updated: "2026-08-11",
   hideSummaryImageSlot: true,
   readTime: "16 min",
   emoji: "🏆",
@@ -385,7 +385,7 @@ A. In a cash game, buy in for the table maximum — usually around 100 big blind
 
 **Q. How many chips do you need for a home cash game?**
 
-A. A standard 300-chip set comfortably covers up to about 6-8 players. Give everyone the same starting stack across 3-4 denominations, with most chips in the smallest values so players can bet and make change easily. The exact count matters less than everyone agreeing what each color is worth in real money before the first hand.
+A. A standard 300-chip set comfortably covers up to about 6 players — at 7-8 it's 300 ÷ 8 = under 40 chips each, so a 500-chip set is the better buy. Give everyone the same starting stack across 3-4 denominations, with most chips in the smallest values so players can bet and make change easily. The exact count matters less than everyone agreeing what each color is worth in real money before the first hand.
 
 **Q. Do professional players play cash games or tournaments?**
 

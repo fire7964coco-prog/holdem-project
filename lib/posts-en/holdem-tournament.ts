@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In a poker tournament you pay a fixed buy-in for chips, blinds increase on a timer until one player holds all chips. Top 10–15% of players cash. Formats include freezeout, PKO, satellite, and deepstack — enter via direct buy-in, satellite, or online pre-registration.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-08-10",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏆",
@@ -46,7 +46,7 @@ $100+$9 | how a typical buy-in splits — prize pool + fee
 
 A poker tournament is a competition where everyone pays the same entry fee (the **buy-in**), receives the same number of starting chips, and plays until one person holds every chip in the game.
 
-**One-sentence summary:** In a cash game your chips are real money and you can leave anytime. In a tournament, your maximum loss is exactly the buy-in — but you're playing for a share of a much bigger prize pool.
+**One-sentence summary:** In a cash game your chips are real money and you can leave anytime. In a freezeout tournament, your maximum loss is exactly the buy-in — re-entries and add-ons push it higher — but you're playing for a share of a much bigger prize pool.
 
 That single difference changes chip value, blind pressure, and strategy from the ground up. → Full breakdown: [Poker Tournament vs Cash Game — Which Should You Play?](/en/blog/holdem-tournament-vs-cash-game "thumb:/images/tournament-table-action.webp")
 
@@ -139,7 +139,7 @@ A PKO (Progressive Knockout) is a bounty tournament where typically around half 
 
 ### What Is a Deepstack Poker Tournament?
 
-A deepstack poker tournament starts you with far more chips relative to the blinds — typically 100 big blinds or more, often 200BB+ — and usually pairs that with longer blind levels. More chips and a slower clock mean more postflop play, more room to recover from a mistake, and longer days.
+A deepstack poker tournament starts you with far more chips relative to the blinds — typically 200 big blinds or more — and usually pairs that with longer blind levels. More chips and a slower clock mean more postflop play, more room to recover from a mistake, and longer days.
 
 **What about rebuys and add-ons?** In a rebuy event you can pay again after busting during a set early window; an add-on is a one-time optional chip purchase usually offered when that window closes. After that, the event plays out like a freezeout.
 
