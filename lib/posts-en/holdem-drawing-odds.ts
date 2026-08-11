@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "You flop a set with a pocket pair 11.8% of the time (7.5-to-1 against), flop a flush with two suited cards just 0.84%, and complete a flopped flush draw by the river 35% of the time. Every number below is derived from the deck, not guessed.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-07-18",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🎲",
@@ -103,7 +103,7 @@ This is where competitors blur three completely different numbers. With two suit
 
 </div>
 
-So the honest sentence is: two suited cards flop a **draw** far more than a made flush, and that draw is a coin-flip-ish 35% to get there. Chasing every suited hand "for the flush" ignores that you'll flop the made flush less than once per 100 hands.
+So the honest sentence is: two suited cards flop a **draw** far more than a made flush, and that draw is 35% to get there — 1.9-to-1 against, so closer to one in three than to a coin flip. Chasing every suited hand "for the flush" ignores that you'll flop the made flush less than once per 100 hands.
 
 The completion figure splits by street, which matters the moment there's betting left:
 

@@ -161,7 +161,7 @@ A. Rakeback returns a percentage of the rake you personally pay — often 20–4
 
 **Q. How can you pay less rake in poker?**
 
-A. You can't escape rake entirely in a raked game, but you can shrink it. Get the best rakeback deal you can, choose rooms with player-friendly caps, and move up in stakes where a fixed cap is a smaller share of each pot. Playing fewer, bigger pots rather than a flood of small capped ones, avoiding very short-handed tables where the cap barely drops, and preferring high-stakes time-charge games all lower your effective rake. Home games with no rake at all are the cheapest poker there is.
+A. You can't escape rake entirely in a raked game, but you can shrink it. Get the best rakeback deal you can, and choose rooms with player-friendly caps. Moving up in stakes shrinks rake too, since a fixed cap is a smaller share of each pot — but only take that step once your bankroll covers the swings *and* you still hold an edge over the tougher field, or the players will take far more than the rake ever did. Playing fewer, bigger pots rather than a flood of small capped ones, avoiding very short-handed tables where the cap barely drops, and preferring high-stakes time-charge games all lower your effective rake. Home games with no rake at all are the cheapest poker there is.
 
 **Q. Is taking a rake illegal? Why is taking a rake in poker illegal?**
 

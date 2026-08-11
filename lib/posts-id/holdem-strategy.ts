@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Setiap keputusan Texas Hold'em yang menang menyusut menjadi lima pertanyaan berulang: di mana saya duduk (position), apakah tangan ini layak dimainkan, apakah saya raise atau fold (jangan pernah limp), apakah saya terus bertaruh di flop, dan kapan saya melepasnya? Pemain tight-aggressive yang menjawab lima ini dengan baik akan fold ~80% tangan preflop, memainkannya secara agresif saat main, dan mengalahkan hampir setiap permainan santai — tanpa perlu daftar tips hafalan.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-07-06",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "14 mnt",
   emoji: "♠️",
@@ -100,7 +100,7 @@ Setelah Anda memutuskan sebuah tangan layak dimainkan, ada keputusan kedua yang 
 2. **Anda menyerahkan inisiatif.** Preflop raiser bisa terus menceritakan sebuah kisah di flop (Keputusan 4). Limp, dan Anda menyerahkan kisah itu ke orang lain.
 3. **Anda melukis target di diri sendiri.** Pemain kuat raise besar di belakang limper untuk mengisolasinya, lalu mengalahkannya dalam position sepanjang tangan. Sebuah open-limp mengumumkan "ada pemain lemah dan pasif di sini."
 
-Default yang memperbaikinya blak-blakan: **jika sebuah tangan cukup baik untuk dimainkan, ia cukup baik untuk di-raise; jika tidak, fold.** Dan ketika orang *lain* sudah raise, raise lagi — sebuah [3-bet](/id/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp") — adalah cara Anda menghukum open yang lebar dan membangun pot dengan tangan terbaik Anda. Satu pengecualian umum adalah *over*-limp — call *di belakang* seseorang yang sudah limp, dalam position, dengan tangan spekulatif seperti small pair — di mana Anda mendapat harga murah masuk ke pot multiway. Itu diskon, bukan strategi. Selebihnya? Raise atau fold.
+Default yang memperbaikinya blak-blakan: **jika sebuah tangan cukup baik untuk dimainkan, ia cukup baik untuk di-raise; jika tidak, fold.** Dan ketika orang *lain* sudah raise, raise lagi — sebuah [3-bet](/id/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp") — adalah cara Anda menghukum open yang lebar dan membangun pot dengan tangan terbaik Anda. Pengecualiannya nyata, dan semuanya soal **harga**. *Over*-limp — call *di belakang* seseorang yang sudah limp, dalam position, dengan tangan spekulatif seperti small pair — membelikan Anda kursi murah di pot multiway. Yang lebih besar adalah **big blind defense**: melawan open 2,5bb Anda sudah memasang ==1bb==, jadi Anda call 1,5bb ke pot 4bb dan hanya butuh ==1,5 ÷ 5,5 = 27%== equity — dan call Anda menutup aksi. Itulah kenapa sebagian besar range big blind memilih call ketimbang 3-bet atau fold. Yang ketiga adalah **set-mining** small pair melawan raise saat stack dalam (matematikanya ada di bawah). Itu diskon, bukan strategi — di luar spot seperti itu, raise atau fold.
 
 ---
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Anda flop set dengan pocket pair 11,8% dari waktu (7,5:1 melawan), flop flush dengan dua kartu suited hanya 0,84%, dan menyelesaikan flush draw yang di-flop hingga river 35% dari waktu. Setiap angka di bawah diturunkan dari deck, bukan ditebak.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-07-04",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "🎲",
@@ -103,7 +103,7 @@ Di sinilah para pesaing mengaburkan tiga angka yang sama sekali berbeda. Dengan 
 
 </div>
 
-Jadi kalimat jujurnya: dua kartu suited flop **draw** jauh lebih sering daripada flush jadi, dan draw itu peluang ala lempar-koin 35% untuk sampai di sana. Mengejar setiap tangan suited "demi flush" mengabaikan bahwa Anda akan flop flush jadi kurang dari sekali per 100 tangan.
+Jadi kalimat jujurnya: dua kartu suited flop **draw** jauh lebih sering daripada flush jadi, dan draw itu 35% untuk sampai di sana — 1,9:1 melawan, jadi lebih dekat ke satu dari tiga daripada ke lempar koin. Mengejar setiap tangan suited "demi flush" mengabaikan bahwa Anda akan flop flush jadi kurang dari sekali per 100 tangan.
 
 Angka penyelesaian terpecah per street, yang penting begitu masih ada taruhan tersisa:
 

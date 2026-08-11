@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Mit einem Pocket Pair floppst du in 11,8% der Fälle ein Set (7,5:1 dagegen), mit zwei suited Karten nur 0,84% einen Flush, und einen gefloppten Flushdraw komplettierst du bis zum River in 35% der Fälle. Jede Zahl unten stammt aus dem Deck, nicht aus dem Bauch.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-08-10",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "🎲",
@@ -103,7 +103,7 @@ Hier verwischen Konkurrenten drei komplett verschiedene Zahlen. Mit zwei suited 
 
 </div>
 
-Der ehrliche Satz lautet also: zwei suited Karten floppen weit häufiger einen **Draw** als einen fertigen Flush, und dieser Draw ist mit 35% ungefähr ein Münzwurf, es zu schaffen. Jede suited Hand „wegen des Flushes“ zu chasen ignoriert, dass du den fertigen Flush weniger als einmal pro 100 Hände floppst.
+Der ehrliche Satz lautet also: zwei suited Karten floppen weit häufiger einen **Draw** als einen fertigen Flush, und dieser Draw schafft es zu 35% – 1,9:1 dagegen, also näher an einem von drei als an einem Münzwurf. Jede suited Hand „wegen des Flushes“ zu chasen ignoriert, dass du den fertigen Flush weniger als einmal pro 100 Hände floppst.
 
 Die Komplettierungs-Zahl teilt sich nach Street auf, was in dem Moment zählt, in dem noch Setzrunden übrig sind:
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ligas un set con una pareja servida el 11.8% de las veces (7.5 a 1 en contra), ligas un color con dos cartas del mismo palo apenas un 0.84%, y completas un proyecto de color del flop al river el 35% de las veces. Cada número de abajo sale de la baraja, no se adivina.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-07-24",
-  masterUpdated: "2026-07-18",
+  updated: "2026-08-11",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🎲",
@@ -104,7 +104,7 @@ Aquí es donde la competencia mezcla tres números completamente distintos. Con 
 
 </div>
 
-Así que la frase honesta es: dos cartas del mismo palo ligan un **proyecto** mucho más que un color hecho, y ese proyecto tiene un 35% tipo cara-o-cruz de llegar. Perseguir cada mano del mismo palo "por el color" ignora que ligarás el color hecho menos de una vez cada 100 manos.
+Así que la frase honesta es: dos cartas del mismo palo ligan un **proyecto** mucho más que un color hecho, y ese proyecto llega el 35% de las veces — 1.9 a 1 en contra, así que más cerca de uno de cada tres que de un cara-o-cruz. Perseguir cada mano del mismo palo "por el color" ignora que ligarás el color hecho menos de una vez cada 100 manos.
 
 La cifra de completar se reparte por calle, lo que importa en cuanto queda apuesta por delante:
 

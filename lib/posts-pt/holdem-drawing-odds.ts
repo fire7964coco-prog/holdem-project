@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Você flopa um set com um par na mão 11,8% das vezes (7,5 para 1 contra), flopa um flush com duas cartas do mesmo naipe apenas 0,84%, e completa um flush draw flopado até o river 35% das vezes. Cada número abaixo vem do baralho, não de chute.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-07-04",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🎲",
@@ -103,7 +103,7 @@ Dois números relacionados que as pessoas perguntam:
 
 </div>
 
-Então a frase honesta é: duas cartas do mesmo naipe flopam um **projeto** muito mais do que um flush feito, e esse projeto é um cara-ou-coroa de 35% pra chegar lá. Perseguir toda mão do mesmo naipe "pelo flush" ignora que você vai flopar o flush feito menos de uma vez a cada 100 mãos.
+Então a frase honesta é: duas cartas do mesmo naipe flopam um **projeto** muito mais do que um flush feito, e esse projeto chega a 35% — 1,9 para 1 contra, ou seja, mais perto de um em três do que de um cara-ou-coroa. Perseguir toda mão do mesmo naipe "pelo flush" ignora que você vai flopar o flush feito menos de uma vez a cada 100 mãos.
 
 O número de completar se divide por rua, e isso importa no instante em que ainda há aposta:
 

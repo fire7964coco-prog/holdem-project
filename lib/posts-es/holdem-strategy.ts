@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Cada decisión ganadora en Texas Hold'em se reduce a cinco preguntas repetibles: dónde estoy sentado (posición), ¿vale la pena jugar esta mano?, ¿subo o foldeo? (nunca limpeo), ¿sigo apostando en el flop?, y ¿cuándo suelto la mano? Un jugador tight-aggressive que responde bien esas cinco foldea ~80% de sus manos preflop, las juega con agresividad cuando entra, y le gana a casi cualquier partida casual — sin necesidad de memorizar listas de tips.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-07-24",
-  masterUpdated: "2026-07-19",
+  updated: "2026-08-11",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -101,7 +101,7 @@ Una vez que has decidido que vale la pena jugar una mano, hay una segunda decisi
 2. **Renuncias a la iniciativa.** El que sube preflop puede seguir contando una historia en el flop (Decisión 4). Limpea, y le entregas esa historia a otro.
 3. **Te pintas una diana encima.** Los jugadores fuertes suben grande por detrás de un limper para aislarlo, y luego lo superan jugando en posición toda la mano. Un open-limp anuncia «aquí hay un jugador débil y pasivo».
 
-El default que lo arregla es contundente: **si una mano es lo bastante buena para jugarla, es lo bastante buena para subir; si no lo es, foldea.** Y cuando *otro* ya ha subido, volver a subir — un [3-bet](/es/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp") — es como castigas las aperturas amplias y agrandas los botes con tus mejores manos. La única excepción común es el *over*-limp — igualar *por detrás* de alguien que ya limpeó, en posición, con una mano especulativa como un par pequeño — donde consigues un precio barato para entrar a un bote multiway. Eso es un descuento, no una estrategia. ¿Todo lo demás? Sube o foldea.
+El default que lo arregla es contundente: **si una mano es lo bastante buena para jugarla, es lo bastante buena para subir; si no lo es, foldea.** Y cuando *otro* ya ha subido, volver a subir — un [3-bet](/es/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp") — es como castigas las aperturas amplias y agrandas los botes con tus mejores manos. Las excepciones son reales, y todas van del **precio**. El *over*-limp — igualar *por detrás* de alguien que ya limpeó, en posición, con una mano especulativa como un par pequeño — te compra un asiento barato en un bote multiway. La mayor es **defender la ciega grande**: contra una apertura de 2.5bb ya tienes ==1bb puesto==, así que igualas 1.5bb a un bote de 4bb y necesitas solo ==1.5 ÷ 5.5 = 27%== de equity — y además actúas último, con lo que tu call cierra la ronda. Por eso buena parte del rango de la ciega grande paga en lugar de subir o foldear. La tercera es el **set-mining** con un par pequeño frente a una subida y con stacks profundos (la matemática está más abajo). Eso son descuentos, no estrategias — fuera de sitios así, sube o foldea.
 
 ---
 

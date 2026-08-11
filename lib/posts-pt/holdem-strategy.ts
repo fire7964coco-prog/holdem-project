@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Toda decisão vencedora no Texas Hold'em se resume a cinco perguntas que se repetem: onde estou sentado (posição), essa mão vale a pena jogar, eu aumento ou foldo (nunca dou limp), continuo apostando no flop, e quando eu largo a mão? Um jogador tight-aggressive que responde bem a essas cinco folda ~80% das mãos no pré-flop, joga com agressividade quando entra, e ganha de quase todo jogo casual — sem lista de dicas decorada.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-07-06",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -100,7 +100,7 @@ Dar [limp](/pt/blog/holdem-limping) é só igualar o big blind em vez de aumenta
 2. **Você entrega a iniciativa.** Quem aumentou no pré-flop continua contando uma história no flop (Decisão 4). Dê limp e você entrega essa história para outra pessoa.
 3. **Você pinta um alvo em você mesmo.** Jogadores fortes aumentam grande atrás de um limper para isolá-lo, e depois passam a mão inteira jogando melhor em posição. Um open-limp anuncia "jogador fraco e passivo aqui".
 
-O padrão que corrige isso é direto: **se a mão é boa o suficiente para jogar, é boa o suficiente para aumentar; se não é, folde.** E quando *outra* pessoa já aumentou, aumentar de novo — um [3-bet](/pt/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp") — é como você pune aberturas largas e constrói potes com suas melhores mãos. A única exceção comum é o *over*-limp — pagar *atrás* de alguém que já deu limp, em posição, com uma mão especulativa como um par pequeno — onde você está pegando um preço barato para entrar num pote multiway. Isso é um desconto, não uma estratégia. Todo o resto? Aumentar ou foldar.
+O padrão que corrige isso é direto: **se a mão é boa o suficiente para jogar, é boa o suficiente para aumentar; se não é, folde.** E quando *outra* pessoa já aumentou, aumentar de novo — um [3-bet](/pt/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp") — é como você pune aberturas largas e constrói potes com suas melhores mãos. As exceções são reais, e todas elas são sobre **preço**. O *over*-limp — pagar *atrás* de alguém que já deu limp, em posição, com uma mão especulativa como um par pequeno — compra um lugar barato num pote multiway. A maior é **defender o big blind**: contra uma abertura de 2,5bb você já tem ==1bb postado==, então paga 1,5bb num pote de 4bb e precisa de apenas ==1,5 ÷ 5,5 = 27%== de equity — e o seu call fecha a ação. Por isso boa parte do range do big blind paga em vez de dar 3-bet ou foldar. A terceira é o **set-mining** de um par pequeno contra um aumento com stacks profundos (a matemática está abaixo). Isso são descontos, não estratégias — fora de spots assim, aumentar ou foldar.
 
 ---
 

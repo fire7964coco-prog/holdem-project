@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Every winning Texas Hold'em decision reduces to five repeatable questions: where am I sitting (position), is this hand worth playing, do I raise or fold (never limp), do I keep betting on the flop, and when do I let go? A tight-aggressive player who answers those five well folds ~80% of hands preflop, plays them aggressively when they do, and beats almost every casual game — no memorized tip list required.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-07-19",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -100,7 +100,7 @@ To [limp](/en/blog/holdem-limping) is to just call the big blind instead of rais
 2. **You surrender initiative.** The preflop raiser gets to keep telling a story on the flop (Decision 4). Limp, and you hand that story to someone else.
 3. **You paint a target on yourself.** Strong players raise big behind a limper to isolate them, then out-play them in position all hand. An open-limp announces "weak, passive player here."
 
-The default that fixes it is blunt: **if a hand is good enough to play, it's good enough to raise; if it isn't, fold.** And when someone *else* has already raised, raising again — a [3-bet](/en/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp") — is how you punish wide opens and build pots with your best hands. The one common exception is *over*-limping — calling *behind* someone who already limped, in position, with a speculative hand like a small pair — where you're getting a cheap price into a multiway pot. That's a discount, not a strategy. Everything else? Raise or fold.
+The default that fixes it is blunt: **if a hand is good enough to play, it's good enough to raise; if it isn't, fold.** And when someone *else* has already raised, raising again — a [3-bet](/en/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp") — is how you punish wide opens and build pots with your best hands. The exceptions are real, and every one of them is about **price**. *Over*-limping — calling *behind* someone who already limped, in position, with a speculative hand like a small pair — buys a cheap seat in a multiway pot. **Defending your big blind** is the bigger one: against a 2.5bb open you have ==1bb already posted==, so you're calling 1.5bb into a 4bb pot and need only ==1.5 ÷ 5.5 = 27%== equity — and your call *closes* the action, so a wide slice of the BB range flat-calls rather than 3-bets or folds. **Set-mining** a small pair against a raise with deep stacks is the third (the math is below). Those are discounts, not strategies — outside spots like them, raise or fold.
 
 ---
 

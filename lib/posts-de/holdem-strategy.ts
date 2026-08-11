@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Jede gewinnende Texas-Hold'em-Entscheidung reduziert sich auf fünf wiederholbare Fragen: Wo sitze ich (Position), ist diese Hand spielenswert, raise oder fold ich (nie limpen), bette ich auf dem Flop weiter, und wann lasse ich los? Ein Tight-Aggressive-Spieler, der diese fünf gut beantwortet, foldet ~80% der Hände preflop, spielt sie aggressiv, wenn er sie spielt, und schlägt fast jedes Freizeitspiel – ohne auswendig gelernte Tippliste.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-08-10",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "14 Min.",
   emoji: "♠️",
@@ -100,7 +100,7 @@ Zu [limpen](/de/blog/holdem-limping) heißt, den Big Blind nur zu callen, statt 
 2. **Du gibst die Initiative ab.** Der Preflop-Raiser darf auf dem Flop weiter eine Geschichte erzählen (Entscheidung 4). Limp, und du überreichst diese Geschichte jemand anderem.
 3. **Du malst dir ein Ziel auf den Rücken.** Starke Spieler raisen groß hinter einem Limper, um ihn zu isolieren, und überspielen ihn dann in Position die ganze Hand. Ein Open-Limp verkündet „schwacher, passiver Spieler hier“.
 
-Der Standard, der das behebt, ist unmissverständlich: **ist eine Hand gut genug zum Spielen, ist sie gut genug zum Raisen; ist sie es nicht, folde.** Und wenn jemand *anderes* bereits geraist hat, ist erneut zu raisen – eine [3-Bet](/de/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp") – der Weg, weite Opens zu bestrafen und Pots mit deinen besten Händen aufzubauen. Die eine verbreitete Ausnahme ist das *Over*-Limpen – *hinter* jemandem callen, der bereits gelimpt hat, in Position, mit einer spekulativen Hand wie einem kleinen Pair – wo du einen billigen Preis in einen Multiway-Pot bekommst. Das ist ein Rabatt, keine Strategie. Alles andere? Raise oder fold.
+Der Standard, der das behebt, ist unmissverständlich: **ist eine Hand gut genug zum Spielen, ist sie gut genug zum Raisen; ist sie es nicht, folde.** Und wenn jemand *anderes* bereits geraist hat, ist erneut zu raisen – eine [3-Bet](/de/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp") – der Weg, weite Opens zu bestrafen und Pots mit deinen besten Händen aufzubauen. Die Ausnahmen sind echt, und bei jeder geht es um den **Preis**. Das *Over*-Limpen – *hinter* jemandem callen, der bereits gelimpt hat, in Position, mit einer spekulativen Hand wie einem kleinen Pair – kauft dir einen billigen Platz im Multiway-Pot. Die größere ist die **BB-Defense**: gegen ein 2,5bb-Open hast du ==1bb bereits gepostet==, callst also 1,5bb in einen 4bb-Pot und brauchst nur ==1,5 ÷ 5,5 = 27%== Equity – und du agierst als Letzter, dein Call beendet die Runde. Deshalb callt ein breiter Teil der BB-Range flat, statt zu 3-betten oder zu folden. Die dritte ist **Set-Mining** mit einem kleinen Pair gegen einen Raise bei tiefen Stacks (die Mathematik steht unten). Das sind Rabatte, keine Strategien – außerhalb solcher Spots gilt: Raise oder fold.
 
 ---
 

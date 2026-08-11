@@ -174,7 +174,7 @@ A. Varía según la sala, los límites y el formato, así que siempre conviene m
 
 **Q. ¿Cómo puedes pagar menos rake en póker?**
 
-A. No puedes escapar del rake por completo en una partida rakeada, pero sí reducirlo. Consigue el mejor acuerdo de rakeback que puedas, elige salas con topes amables para el jugador y sube de límites, donde un tope fijo es una parte menor de cada bote. Jugar menos botes pero más grandes en lugar de una avalancha de botes pequeños topados, evitar las mesas muy cortas donde el tope apenas baja, y preferir las partidas de límites altos con rake por tiempo también rebajan tu rake efectivo. Las partidas caseras sin rake son el póker más barato que existe.
+A. No puedes escapar del rake por completo en una partida rakeada, pero sí reducirlo. Consigue el mejor acuerdo de rakeback que puedas y elige salas con topes amables para el jugador. Subir de límites también rebaja el rake, porque un tope fijo es una parte menor de cada bote — pero da ese paso solo cuando tu bankroll aguante las rachas *y* sigas teniendo ventaja sobre un campo más duro; si no, los rivales te quitarán mucho más de lo que te quitaba el rake. Jugar menos botes pero más grandes en lugar de una avalancha de botes pequeños topados, evitar las mesas muy cortas donde el tope apenas baja, y preferir las partidas de límites altos con rake por tiempo también rebajan tu rake efectivo. Las partidas caseras sin rake son el póker más barato que existe.
 
 **Q. ¿Es ilegal cobrar rake?**
 
