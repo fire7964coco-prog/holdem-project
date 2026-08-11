@@ -121,15 +121,15 @@ Eine ehrliche Nuance, die die Hand-Chart-Fraktion übersieht: **Position ist nic
 > **Kurze Antwort**
 > Gegen einen Standard-Open von 3 Big Blinds: etwa **9bb in Position** und **12–13,5bb out of Position**. Der Unterschied ist kein Geschmack, sondern Ausgleich – ohne Position brauchst du ein größeres Size, damit dein Gegner den Flop nicht billig sieht. Beim Squeeze kommt pro Caller rund ein weiterer Open-Raise obendrauf.
 
-Die meisten Guides sagen dir „3x in Position, 4x out of Position“ und ziehen weiter. Hier das *Warum* und die tatsächliche Rechnung, mit einem Standard-Open von **3 Big Blinds** (nenn es einen $6-Open bei $1/$2):
+Die meisten Guides sagen dir „3x in Position, 4x out of Position“ und ziehen weiter. Hier das *Warum* und die tatsächliche Rechnung, mit einem Standard-Open von **3 Big Blinds** (nenn es einen €6-Open bei €1/€2):
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Situation | Size | 3bb-Open wird zu… | Warum |
 |:---|:---:|:---:|:---|
-| **In Position** (du handelst zuletzt) | ~3x des Opens | **9bb** ($18) | Position lässt dich mit kleinerem Size gewinnen, also riskierst du weniger. |
-| **Out of Position** (du handelst zuerst) | ~4–4,5x | **12–13,5bb** ($24–27) | Größer lässt sie mehr zahlen, um einen Flop zu sehen, und verweigert deinem Positionsnachteil eine billige Fahrt. |
-| **Squeeze** (Open + ein Caller) | OOP-Size **+ ~1x pro Caller** | **~15–16,5bb** ($30–33) | Extra Dead Money und ein zusätzlicher Spieler zum Rausdrücken. |
+| **In Position** (du handelst zuletzt) | ~3x des Opens | **9bb** (€18) | Position lässt dich mit kleinerem Size gewinnen, also riskierst du weniger. |
+| **Out of Position** (du handelst zuerst) | ~4–4,5x | **12–13,5bb** (€24–27) | Größer lässt sie mehr zahlen, um einen Flop zu sehen, und verweigert deinem Positionsnachteil eine billige Fahrt. |
+| **Squeeze** (Open + ein Caller) | OOP-Size **+ ~1x pro Caller** | **~15–16,5bb** (€30–33) | Extra Dead Money und ein zusätzlicher Spieler zum Rausdrücken. |
 
 </div>
 
@@ -212,13 +212,13 @@ MDF setzt einen *ausgeglichenen* Gegner voraus. Bei Low Stakes und in Live-Games
 
 ## Eine echte 3-Bet-Hand, von Anfang bis Ende
 
-Genug Theorie – hier eine komplette Hand mit den Zahlen, damit du den ganzen Ablauf siehst. $1/$2 Cash, 100bb tief.
+Genug Theorie – hier eine komplette Hand mit den Zahlen, damit du den ganzen Ablauf siehst. €1/€2 Cash, 100bb tief.
 
-- **Preflop:** Ein loose Cutoff eröffnet auf ==$6== (3bb). Ich bin am Button mit ==A♠Q♠==. Das ist eine klare **Value-3-Bet** gegen einen weiten Open aus später Position, und ich bin in Position, also mache ich es ==$18== (3x). Die Blinds folden; der Cutoff callt. Pot ist $39.
+- **Preflop:** Ein loose Cutoff eröffnet auf ==€6== (3bb). Ich bin am Button mit ==A♠Q♠==. Das ist eine klare **Value-3-Bet** gegen einen weiten Open aus später Position, und ich bin in Position, also mache ich es ==€18== (3x). Die Blinds folden; der Cutoff callt. Pot ist €39.
 - **Flop:** ==Q♦ 8♣ 4♥.== Ich flope **Top Pair, Top Kicker** – mein A♠Q♠ macht ein Paar Damen mit dem bestmöglichen Kicker (dem Ass). Beste fünf Karten: Q♠ Q♦ A♠ 8♣ 4♥ = ein Paar (Damen) mit dem Ass-Kicker. Gegen seine Range aus schwächeren Damen, Achten und Floats liege ich weit vorne.
 - **Der Punkt:** Weil ich preflop 3-gebettet habe, ist der Pot bereits groß und ich habe die Betting-Führung, also bette ich erneut auf Value und werde von schwächeren Damen und Draws bezahlt. Hätte ich preflop nur *geflattet*, hätten vielleicht drei andere Spieler diesen Flop gesehen, meine Hand wäre weit schwerer zu spielen und der Pot wäre ein Bruchteil der Größe. Die 3-Bet ist es, die Top Pair in einen Stack verwandelt hat.
 
-Jetzt dreh es um: Hätte ich dort eine **light** Hand wie A5s 3-gebettet und der Cutoff hätte auf $55 **4-gebettet**, würde ich einfach folden – der Blocker-Bluff hat seinen Job getan, indem er mir einen billigen, sauberen Laydown gab. Das ist die Disziplin, die Light-3-Betting profitabel statt spewy macht.
+Jetzt dreh es um: Hätte ich dort eine **light** Hand wie A5s 3-gebettet und der Cutoff hätte auf €55 **4-gebettet**, würde ich einfach folden – der Blocker-Bluff hat seinen Job getan, indem er mir einen billigen, sauberen Laydown gab. Das ist die Disziplin, die Light-3-Betting profitabel statt spewy macht.
 
 ---
 

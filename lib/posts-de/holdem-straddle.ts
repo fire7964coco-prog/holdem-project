@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Ein Spieler in Under-the-Gun-Position setzt vor dem Austeilen einen zusätzlichen Blind-Einsatz aus zwei Chips vor den Big Blind",
   tags: ["straddle", "was ist ein straddle poker", "straddle poker regeln", "mississippi straddle", "button straddle", "sleeper straddle", "lohnt sich straddeln", "utg straddle"],
   content: `
-Als an meinem $1/$2-Tisch das erste Mal jemand gestraddelt hat, hatte ich keine Ahnung, warum der Typ under the gun $4 rauswarf, bevor die Karten kamen – und warum der Dealer die Action plötzlich einen Platz weiter eröffnete. Ich nannte es einen Monat lang „den Reiche-Leute-Einsatz“, bevor ich lernte, was er wirklich bewirkt: Ein Straddle ==verdoppelt den Einsatz und kauft einem Spieler das letzte Wort==, alles noch bevor irgendwer auf eine Karte geschaut hat.
+Als an meinem €1/€2-Tisch das erste Mal jemand gestraddelt hat, hatte ich keine Ahnung, warum der Typ under the gun €4 rauswarf, bevor die Karten kamen – und warum der Dealer die Action plötzlich einen Platz weiter eröffnete. Ich nannte es einen Monat lang „den Reiche-Leute-Einsatz“, bevor ich lernte, was er wirklich bewirkt: Ein Straddle ==verdoppelt den Einsatz und kauft einem Spieler das letzte Wort==, alles noch bevor irgendwer auf eine Karte geschaut hat.
 
 Wenn du in einem Live-Spiel schon mal gesehen hast, wie aus dem Nichts ein zusätzlicher Blind auftaucht – das ist der Begriff, den du suchst. Hier steht genau, was ein **Straddle** ist, jeder Typ, dem du begegnen wirst, wer zuerst handelt, wenn einer gesetzt wird, und die ehrliche Antwort auf die einzige Frage, die zählt: ==g:Solltest du ihn wirklich spielen?==
 
@@ -37,7 +37,7 @@ Nur Cashgame | Fast nie in Turnieren erlaubt
 ## Was ist ein Straddle beim Poker?
 
 > **Kurze Antwort**
-> Ein Straddle ist ein freiwilliger Blind-Einsatz – normalerweise das Doppelte des Big Blinds – der gesetzt wird, bevor die Karten ausgeteilt werden. In einem $1/$2-Spiel legt meist der UTG-Spieler $4 „auf den Straddle“, und der Tisch läuft für diese eine Hand wie ein $1/$2/$4-Spiel. Der Straddler kauft sich damit die Option zu raisen und das letzte Wort vor dem Flop.
+> Ein Straddle ist ein freiwilliger Blind-Einsatz – normalerweise das Doppelte des Big Blinds – der gesetzt wird, bevor die Karten ausgeteilt werden. In einem €1/€2-Spiel legt meist der UTG-Spieler €4 „auf den Straddle“, und der Tisch läuft für diese eine Hand wie ein €1/€2/€4-Spiel. Der Straddler kauft sich damit die Option zu raisen und das letzte Wort vor dem Flop.
 
 Zwei Dinge machen ihn zu mehr als nur zusätzlichem Geld im Pot:
 
@@ -55,13 +55,13 @@ Ein Straddle ist kein Raise im üblichen Sinn – er ist ein Blind, der den Prei
 
 ![Infografik eines goldenen Dealer-Buttons und zweier verdeckter Hole Cards hinter einem K♦ 7♣ 2♠ Flop, wobei der Button postflop zuletzt handelt](/images/holdem-button-dealer-board.webp "Ein Live-UTG-Straddle macht den Platz links vom Big Blind zu einem dritten Blind – der Straddler handelt jetzt vor dem Flop zuletzt")
 
-Das ist der Teil, den Definitionsseiten überspringen, und genau hier verlieren neue Spieler den Faden. Ein Straddle **ordnet die Preflop-Action-Reihenfolge neu.** Gehen wir ein Standard-$1/$2-Spiel durch, in dem UTG auf $4 straddelt:
+Das ist der Teil, den Definitionsseiten überspringen, und genau hier verlieren neue Spieler den Faden. Ein Straddle **ordnet die Preflop-Action-Reihenfolge neu.** Gehen wir ein Standard-€1/€2-Spiel durch, in dem UTG auf €4 straddelt:
 
 :::steps
-UTG setzt den Straddle | Der UTG-Spieler legt $4 raus (2× den $2 Big Blind), bevor die Karten ausgeteilt werden
+UTG setzt den Straddle | Der UTG-Spieler legt €4 raus (2× den €2 Big Blind), bevor die Karten ausgeteilt werden
 Zuerst am Zug = links vom Straddler | Die Action beginnt jetzt beim Spieler links vom Straddler (UTG+1), nicht bei UTG – der Straddle wirkt wie ein neuer Big Blind
-Rund um den Tisch | Jeder muss $4 callen (nicht $2), um mitzuspielen; er kann folden, callen oder ganz normal raisen
-Die Blinds entscheiden | Small Blind und Big Blind handeln der Reihe nach, dem $4-Preis gegenüber
+Rund um den Tisch | Jeder muss €4 callen (nicht €2), um mitzuspielen; er kann folden, callen oder ganz normal raisen
+Die Blinds entscheiden | Small Blind und Big Blind handeln der Reihe nach, dem €4-Preis gegenüber
 Der Straddler handelt ZULETZT | Wenn niemand geraist hat, kann der Straddler seine Option checken oder raisen – das letzte Wort vor dem Flop
 :::
 
@@ -96,7 +96,7 @@ Nicht alle Straddles sind gleich – und die Unterschiede drehen sich alle darum
 - **Mississippi-Straddle** – kann von **jeder Position** gesetzt werden, am stärksten vom Button oder Cutoff. Die Action beginnt links vom Straddler, also kauft ein Button-Mississippi-Straddle die **letzte Action sowohl preflop als auch postflop** – der einzige Straddle mit einem echten positionellen Argument. Nicht überall erlaubt.
 - **Button-Straddle** – ein Straddle im Mississippi-Stil speziell vom Button; der Button behält die letzte Action bis zum Ende. Der genaue Ablauf (wo der Small Blind hineinpasst) variiert je nach Room – kläre es mit dem Dealer.
 - **Sleeper-Straddle** – ein Blind von einem Nicht-UTG-Platz, der „schlafend“ bleibt: Er ist **inaktiv, es sei denn, die Action foldet ganz bis zu ihm durch**. Wird er dadurch aktiv, wirkt er wie ein normaler Straddle; ob er dann auch die Option zu raisen mitbringt, ist Hausregelsache. Selten und online fast nie zu sehen.
-- **Re-Straddle (Double Straddle)** – ein Spieler links kann *über* einen Straddle straddeln, mindestens für das Doppelte des vorherigen ($4 → $8 → $16). Ob es erlaubt ist und von welchen Plätzen, ist reine Hausregelsache.
+- **Re-Straddle (Double Straddle)** – ein Spieler links kann *über* einen Straddle straddeln, mindestens für das Doppelte des vorherigen (€4 → €8 → €16). Ob es erlaubt ist und von welchen Plätzen, ist reine Hausregelsache.
 
 ⚠️ Jeder einzelne davon ist **hausregelabhängig.** Im Zweifel frag den Floor, bevor du Chips rauswirfst – die Mechanik unterscheidet sich wirklich von Room zu Room.
 
@@ -105,12 +105,12 @@ Nicht alle Straddles sind gleich – und die Unterschiede drehen sich alle darum
 ## Wie hoch ist ein Straddle?
 
 > **Kurze Antwort**
-> Der Standard ist **exakt 2× der Big Blind** – also $4 in einem $1/$2-Spiel und $10 in einem $2/$5-Spiel. So handhabt es nahezu jeder Cardroom. Abweichungen nach oben gibt es nur, wo die Hausregeln sie ausdrücklich erlauben: ungedeckelte Straddles bis zum ganzen Stack und Re-Straddles, die sich jeweils mindestens verdoppeln.
+> Der Standard ist **exakt 2× der Big Blind** – also €4 in einem €1/€2-Spiel und €10 in einem €2/€5-Spiel. So handhabt es nahezu jeder Cardroom. Abweichungen nach oben gibt es nur, wo die Hausregeln sie ausdrücklich erlauben: ungedeckelte Straddles bis zum ganzen Stack und Re-Straddles, die sich jeweils mindestens verdoppeln.
 
 Manche No-Limit-Rooms erlauben mehr:
 
 - **Ungedeckelter / All-in-Straddle** – ein paar Rooms lassen den Straddler jeden Betrag setzen, bis hin zum gesamten Stack, als Blind-Einsatz. Ein großer Blind-Straddle kann ein kleines Spiel für eine einzige Hand in ein sehr großes verwandeln.
-- **Re-Straddle-Progression** – wo Re-Straddeln erlaubt ist, ist jeder mindestens das Doppelte des letzten: $4, dann $8, dann $16 und so weiter. Spiele, in denen der ganze Tisch straddelt und re-straddelt, können den effektiven Einsatz um ein Mehrfaches aufblähen.
+- **Re-Straddle-Progression** – wo Re-Straddeln erlaubt ist, ist jeder mindestens das Doppelte des letzten: €4, dann €8, dann €16 und so weiter. Spiele, in denen der ganze Tisch straddelt und re-straddelt, können den effektiven Einsatz um ein Mehrfaches aufblähen.
 
 Wenn du in einen gestraddelten Pot callst, denk daran, dass deine [Pot Odds](/de/blog/holdem-pot-odds) jetzt gegen einen größeren Blind gemessen werden – der Preis, jede Hand zu spielen, hat sich verdoppelt, was loses Callen leise bestraft.
 
@@ -163,7 +163,7 @@ A. Meist aus drei Gründen, und nur einer davon hat mit Strategie zu tun. Am hä
 
 **Q. Muss ich einen Straddle callen, wenn ich mitspielen will?**
 
-A. Ja. Sobald ein Live-Straddle steht, ist er der aktuelle Einsatz – wer die Hand spielen will, muss den vollen Straddle-Betrag callen, nicht den Big Blind. In einem $1/$2-Spiel mit $4-Straddle kostet dich der Einstieg also $4. Du kannst stattdessen jederzeit folden oder ganz normal raisen, aber der Preis für „einfach mal mitgehen“ hat sich verdoppelt. Genau das bestraft loses Callen an gestraddelten Tischen so still.
+A. Ja. Sobald ein Live-Straddle steht, ist er der aktuelle Einsatz – wer die Hand spielen will, muss den vollen Straddle-Betrag callen, nicht den Big Blind. In einem €1/€2-Spiel mit €4-Straddle kostet dich der Einstieg also €4. Du kannst stattdessen jederzeit folden oder ganz normal raisen, aber der Preis für „einfach mal mitgehen“ hat sich verdoppelt. Genau das bestraft loses Callen an gestraddelten Tischen so still.
 
 **Q. Ändert ein Straddle auch die Reihenfolge nach dem Flop?**
 

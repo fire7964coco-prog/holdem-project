@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em kennt 5 Setz-Aktionen: Check (kostenlos schieben), Bet (die Runde eröffnen), Call (einen Einsatz mitgehen), Raise (erhöhen – der Mindest-Raise entspricht dem vorherigen Bet oder Raise) und Fold. Checken darfst du nur, solange auf der Street noch niemand gesetzt hat.",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-08-10",
+  updated: "2026-08-11",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 Min.",
@@ -86,7 +86,7 @@ Wer wann handelt, Street für Street, findest du im [Spielablauf beim Texas Hold
 
 ## Was bedeutet Call beim Poker? (Check vs. Call)
 
-Ein Call heißt: Du gehst ==den aktuellen Einsatz exakt mit==, um in der Hand zu bleiben. Jemand setzt $10, du callst $10 – nicht mehr, nicht weniger.
+Ein Call heißt: Du gehst ==den aktuellen Einsatz exakt mit==, um in der Hand zu bleiben. Jemand setzt €10, du callst €10 – nicht mehr, nicht weniger.
 
 Check vs. Call ist die häufigste Anfänger-Verwechslung überhaupt, darum hier die saubere Trennung:
 
@@ -96,7 +96,7 @@ Check vs. Call ist die häufigste Anfänger-Verwechslung überhaupt, darum hier 
 | Chip-Kosten | Kostenlos | Du gehst den aktuellen Einsatz mit |
 | Was es aussagt | „Ich schiebe, bin noch dabei“ | „Ich zahle, um weiterzuspielen“ |
 
-Echtes Beispiel: Du bist am Flop mit K♠ 8♦. Niemand hat gesetzt, also ==checkst== du. Der nächste Spieler setzt $10. Jetzt sind deine Optionen: $10 ==callen==, ==raisen== (auf $20 oder mehr) oder ==folden==. Checken ist vom Tisch – dieses Fenster hat sich geschlossen, sobald der Einsatz drin war.
+Echtes Beispiel: Du bist am Flop mit K♠ 8♦. Niemand hat gesetzt, also ==checkst== du. Der nächste Spieler setzt €10. Jetzt sind deine Optionen: €10 ==callen==, ==raisen== (auf €20 oder mehr) oder ==folden==. Checken ist vom Tisch – dieses Fenster hat sich geschlossen, sobald der Einsatz drin war.
 
 ---
 
@@ -112,7 +112,7 @@ Eine Regel der Live-Etikette: Folde nicht ==außer der Reihe==. Warte, bis die A
 
 ## Was ist ein Min-Raise? Bet- und Raise-Regeln im Texas Hold'em
 
-![Infografik zur Min-Raise-Regel beim Poker: Eine Bet von $6 verlangt einen Raise auf mindestens $12, und ein Preflop-Raise auf $6 verlangt einen Min-Re-Raise auf $10](/images/holdem-betting-actions-min-raise.webp "Die Min-Raise-Regel – jeder Raise muss mindestens die Größe des letzten Bets oder Raises obendrauf legen")
+![Infografik zur Min-Raise-Regel beim Poker: Eine Bet von €6 verlangt einen Raise auf mindestens €12, und ein Preflop-Raise auf €6 verlangt einen Min-Re-Raise auf €10](/images/holdem-betting-actions-min-raise.webp "Die Min-Raise-Regel – jeder Raise muss mindestens die Größe des letzten Bets oder Raises obendrauf legen")
 
 Im No-Limit Hold'em (dem Format, das du fast immer spielen wirst):
 
@@ -124,8 +124,8 @@ Zwei durchgerechnete Beispiele:
 
 | Street | Bisherige Action | Mindest-Raise |
 |--------|-----------------|---------------|
-| Flop | Spieler setzt $6 | $6 mehr → $12 gesamt |
-| Preflop (Blinds $1/$2) | Spieler raist auf $6 (ein Raise von $4 über den $2-Blind) | $4 mehr → $10 gesamt |
+| Flop | Spieler setzt €6 | €6 mehr → €12 gesamt |
+| Preflop (Blinds €1/€2) | Spieler raist auf €6 (ein Raise von €4 über den €2-Blind) | €4 mehr → €10 gesamt |
 
 Der entscheidende Punkt: Der Min-Raise richtet sich nach dem ==Inkrement== des letzten Bets oder Raises, nicht nach dem Big Blind. Preflop zählt der Big Blind als Eröffnungsbet – deshalb ist der kleinste Open-Raise ein Raise auf 2 Big Blinds.
 
@@ -191,7 +191,7 @@ Alle limpen nur, die Action erreicht den Big Blind – und er foldet. Das ist ei
 
 ### Fehler 4 – Der stumme einzelne Chip
 
-Ein Spieler steht vor einem $10-Bet und wirft wortlos einen einzelnen $100-Chip rein – in der Erwartung von Wechselgeld *und* einem Raise. In den meisten Cardrooms besagt die ==One-Chip-Regel==: Ein unangesagter, einzelner überdimensionierter Chip ist nur ein Call. Sag „Raise“, wenn du raisen willst.
+Ein Spieler steht vor einem €10-Bet und wirft wortlos einen einzelnen €100-Chip rein – in der Erwartung von Wechselgeld *und* einem Raise. In den meisten Cardrooms besagt die ==One-Chip-Regel==: Ein unangesagter, einzelner überdimensionierter Chip ist nur ein Call. Sag „Raise“, wenn du raisen willst.
 
 ---
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Blinds sind Zwangseinsätze, die vor dem Austeilen der Karten gesetzt werden. Der Small Blind sitzt direkt links vom Dealer-Button, der Big Blind links daneben; der Big Blind – meist das Doppelte des Small Blinds – ist die Setzeinheit des Tischs.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-08-10",
+  updated: "2026-08-11",
   masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "9 Min.",
@@ -48,7 +48,7 @@ Warum überhaupt jemanden zum Zahlen zwingen? Damit das Spiel lebt. ==r:Ohne Bli
 
 ## Was ist der Small Blind?
 
-Der **Small Blind (SB)** ist der kleinere der beiden Zwangseinsätze, gesetzt vom Spieler **direkt links vom Dealer-Button**. Er beträgt meist **die Hälfte des Big Blinds** – in einem $1/$2-Game ist der Small Blind $1.
+Der **Small Blind (SB)** ist der kleinere der beiden Zwangseinsätze, gesetzt vom Spieler **direkt links vom Dealer-Button**. Er beträgt meist **die Hälfte des Big Blinds** – in einem €1/€2-Game ist der Small Blind €1.
 
 Er ist außerdem berüchtigt als der schwierigste Sitz am Tisch: Du hast mit einer zufälligen Hand einen halben Einsatz bezahlt, und ab dem Flop bist du auf jeder Street als **Erster** an der Reihe – mit den wenigsten Informationen. Deshalb verliert praktisch jeder im Small Blind langfristig Geld. Das Ziel dort ist, *weniger* zu verlieren, nicht zu gewinnen.
 
@@ -56,19 +56,19 @@ Er ist außerdem berüchtigt als der schwierigste Sitz am Tisch: Du hast mit ein
 
 ## Was ist der Big Blind?
 
-Der **Big Blind (BB)** ist der **volle Grundeinsatz**, gesetzt vom Spieler direkt **links vom Small Blind**. In einem $1/$2-Game beträgt der Big Blind $2. Raist vor dem Flop niemand, bekommt der Big Blind ein besonderes Privileg – die **„Option“**, zu [checken](/de/blog/holdem-betting-actions) und den Flop gratis zu sehen.
+Der **Big Blind (BB)** ist der **volle Grundeinsatz**, gesetzt vom Spieler direkt **links vom Small Blind**. In einem €1/€2-Game beträgt der Big Blind €2. Raist vor dem Flop niemand, bekommt der Big Blind ein besonderes Privileg – die **„Option“**, zu [checken](/de/blog/holdem-betting-actions) und den Flop gratis zu sehen.
 
 Nicht umsonst suchen Leute gezielt nach „Big Blind“: Er ist nicht nur ein Sitz, sondern ==der **Maßstab** für das ganze Spiel==.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| BB-Ausdruck | Bedeutung | Beispiel ($1/$2-Game) |
+| BB-Ausdruck | Bedeutung | Beispiel (€1/€2-Game) |
 |---------------|---------------|--------------------------|
-| **2-BB-Raise** | Erhöhung auf das Doppelte des Big Blinds | Raise auf $4 |
-| **20-BB-Stack** | 20 × der Big Blind in Chips | $40 Stack |
-| **3-BB-Open** | Standardgröße für den Preflop-Raise | Raise auf $6 |
-| **BB-Defense** | Einen Raise aus dem BB callen | Du hast $2 gesetzt, vor dir ein Raise auf $6 → du callst $4 nach |
-| **100 BB deep** | Voller Stack, Standard im Cash Game | $200 an einem $1/$2-Tisch |
+| **2-BB-Raise** | Erhöhung auf das Doppelte des Big Blinds | Raise auf €4 |
+| **20-BB-Stack** | 20 × der Big Blind in Chips | €40 Stack |
+| **3-BB-Open** | Standardgröße für den Preflop-Raise | Raise auf €6 |
+| **BB-Defense** | Einen Raise aus dem BB callen | Du hast €2 gesetzt, vor dir ein Raise auf €6 → du callst €4 nach |
+| **100 BB deep** | Voller Stack, Standard im Cash Game | €200 an einem €1/€2-Tisch |
 
 </div>
 
@@ -93,24 +93,24 @@ Beide Blinds werden **vor dem Austeilen** gesetzt, und der Dealer-Button wandert
 
 ## Wie hoch sind die Blinds? Stakes in Cash Games und Turnieren
 
-Stakes werden als **SB/BB** geschrieben. Ein „$1/$2“-Game bedeutet: $1 Small Blind und $2 Big Blind; der Small Blind ist die kleinere Zahl, der Big Blind die größere. Diese **Blinds-Tabelle** zeigt die Stakes, die dir am häufigsten begegnen:
+Stakes werden als **SB/BB** geschrieben. Ein „€1/€2“-Game bedeutet: €1 Small Blind und €2 Big Blind; der Small Blind ist die kleinere Zahl, der Big Blind die größere. Diese **Blinds-Tabelle** zeigt die Stakes, die dir am häufigsten begegnen:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Stakes | Small Blind | Big Blind | Typisches Buy-in |
 |:---|:---:|:---:|:---:|
-| $0,50/$1 | $0,50 | $1 | $60–$100 |
-| $1/$2 | $1 | $2 | $100–$300 |
-| $2/$5 | $2 | $5 | $200–$500 |
-| $5/$10 | $5 | $10 | $500–$2.000 |
+| €0,50/€1 | €0,50 | €1 | €60–€100 |
+| €1/€2 | €1 | €2 | €100–€300 |
+| €2/€5 | €2 | €5 | €200–€500 |
+| €5/€10 | €5 | €10 | €500–€2.000 |
 | 25/50 (Turnier) | 25 Chips | 50 Chips | Blind-Level 1 |
 | 100/200 (Turnier) | 100 Chips | 200 Chips | Mittleres Level |
 
-> **Die goldene Regel:** ==Schau immer auf das Stakes-Schild, bevor du dich setzt== – manche Räume fahren unübliche Strukturen wie $1/$3 oder $2/$3.
+> **Die goldene Regel:** ==Schau immer auf das Stakes-Schild, bevor du dich setzt== – manche Räume fahren unübliche Strukturen wie €1/€3 oder €2/€3.
 
 </div>
 
-- **Cash Game:** Die Blinds bleiben ==g:**fix**==. Setzt du dich an ein $1/$2-Game, bleibt es $1/$2, bis du gehst. (Den ausführlichen Vergleich findest du unter [Turnier vs. Cash Game](/de/blog/holdem-tournament-vs-cash-game).)
+- **Cash Game:** Die Blinds bleiben ==g:**fix**==. Setzt du dich an ein €1/€2-Game, bleibt es €1/€2, bis du gehst. (Den ausführlichen Vergleich findest du unter [Turnier vs. Cash Game](/de/blog/holdem-tournament-vs-cash-game).)
 - **Turnier:** Die Blinds ==r:**steigen** nach Zeitplan== (z. B. 25/50 → 50/100 → 100/200) – der Druck wächst also im Lauf des Abends. Blind-Level, Uhr und Struktur-Sheets gehören zum Thema [wie Pokerturniere funktionieren](/de/blog/holdem-tournament).
 
 ---
@@ -164,7 +164,7 @@ A. Vor dem Flop handelt der Small Blind als Vorletzter und der Big Blind als Let
 
 **Q. Ist der Small Blind immer genau die Hälfte des Big Blinds?**
 
-A. Meistens, aber nicht immer – manche Strukturen (wie $1/$3 oder $2/$5) gehen nicht glatt auf. Schau also immer auf die Stakes, bevor du dich setzt.
+A. Meistens, aber nicht immer – manche Strukturen (wie €1/€3 oder €2/€5) gehen nicht glatt auf. Schau also immer auf die Stakes, bevor du dich setzt.
 
 **Q. Kann der Big Blind einfach checken, wenn niemand raist?**
 

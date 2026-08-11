@@ -107,7 +107,7 @@ Wie du diesen Vorteil wirklich in Chips umsetzt, zeigt das [Positionsspiel](/de/
 |:---|:---|
 | **Button (BTN)** | Die Dealer-Position; handelt postflop **zuletzt** – der beste Platz am Tisch. |
 | **Small Blind (SB)** | Pflichteinsatz links vom Button; handelt postflop zuerst (schlechtester Postflop-Platz). |
-| **Big Blind (BB)** | Der größere der beiden Blinds; die Stakes werden nach den Blind-Größen benannt ($1/$2), und ein Big Blind ist die Standardeinheit zum Messen von Stacks. |
+| **Big Blind (BB)** | Der größere der beiden Blinds; die Stakes werden nach den Blind-Größen benannt (€1/€2), und ein Big Blind ist die Standardeinheit zum Messen von Stacks. |
 | **UTG (Under the Gun)** | Handelt preflop als Erster – braucht die engste Opening-Range. |
 | **Cutoff (CO)** | Rechts vom Button; zweitbester Platz, super zum Blindstehlen. |
 | **Hijack (HJ)** | Zwei Plätze rechts vom Button; der Beginn der späten Position. |
@@ -195,7 +195,7 @@ Die vollständige Aufschlüsselung findest du im [Fish-Guide](/de/blog/holdem-fi
 ## Was bedeuten Blinds, Buy-in, Rake und Bankroll?
 
 > **Kurze Antwort**
-> Das sind die Geld-Begriffe. **Blinds** sind die Pflichteinsätze, die die Action starten und dem Spiel seinen Namen geben ($1/$2). Der **Buy-in** ist der Betrag, mit dem du einsteigst, der **Stack** das, was vor dir liegt, und die **Bankroll** dein gesamtes Pokergeld abseits des Tisches. Der **Rake** ist der Anteil, den das Haus aus jedem Pot nimmt.
+> Das sind die Geld-Begriffe. **Blinds** sind die Pflichteinsätze, die die Action starten und dem Spiel seinen Namen geben (€1/€2). Der **Buy-in** ist der Betrag, mit dem du einsteigst, der **Stack** das, was vor dir liegt, und die **Bankroll** dein gesamtes Pokergeld abseits des Tisches. Der **Rake** ist der Anteil, den das Haus aus jedem Pot nimmt.
 
 Die große Gabelung dahinter ist [Cash Game vs. Turnier](/de/blog/holdem-tournament-vs-cash-game "thumb:/images/tournament-table-action.webp").
 

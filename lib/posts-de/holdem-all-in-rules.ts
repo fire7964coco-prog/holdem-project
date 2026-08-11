@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "All-in gehen heißt, jeden Chip zu setzen, den du hast. Du kannst von jedem Gegner nur so viel gewinnen, wie du selbst gematcht hast (den Main Pot). Zusätzliche Einsätze größerer Stacks bilden einen Side Pot, den du nicht gewinnen kannst. Ein All-in unterhalb einer vollen Erhöhung öffnet die Setzrunde für Spieler, die bereits gehandelt haben, NICHT neu.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-08-10",
+  updated: "2026-08-11",
   masterUpdated: "2026-07-25",
   keepImagesInBody: true,
   readTime: "10 Min.",
@@ -123,14 +123,14 @@ Die Regel: ==Jeder Side Pot entsteht aus der Differenz bis zum nächstkleineren 
 
 **Beispiel:**
 
-Blinds $1/$2. Vier Spieler sehen den Flop.
+Blinds €1/€2. Vier Spieler sehen den Flop.
 
-1. Spieler A setzt $10.
-2. Spieler B geht für **$14** All-in (nur $4 mehr als As Einsatz von $10 – keine volle Erhöhung, dafür wären mindestens $20 nötig).
+1. Spieler A setzt €10.
+2. Spieler B geht für **€14** All-in (nur €4 mehr als As Einsatz von €10 – keine volle Erhöhung, dafür wären mindestens €20 nötig).
 
 Was passiert mit Spieler A und mit Spieler C, der noch nicht gehandelt hat?
 
-- Spieler A hat bereits gehandelt ($10 gesetzt) und steht jetzt nur vor einer unvollständigen Erhöhung. Weil Bs All-in von $14 **weniger als eine volle Erhöhung** ist, wird die Setzrunde für Spieler A NICHT neu geöffnet. ==A kann nur callen oder folden – re-raisen ist nicht erlaubt.==
+- Spieler A hat bereits gehandelt (€10 gesetzt) und steht jetzt nur vor einer unvollständigen Erhöhung. Weil Bs All-in von €14 **weniger als eine volle Erhöhung** ist, wird die Setzrunde für Spieler A NICHT neu geöffnet. ==A kann nur callen oder folden – re-raisen ist nicht erlaubt.==
 - Spieler C hat noch nicht gehandelt – **Spieler C darf ganz normal erhöhen**.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
@@ -150,13 +150,13 @@ An dieser Variante scheitern selbst Regulars. Mehrere kurze All-ins können sich
 
 Das ist die offizielle TDA-Regel zum „Re-opening the Bet“, und die meisten Kartenräume folgen ihr.
 
-**Beispiel (Blinds $1/$2, am Flop):**
+**Beispiel (Blinds €1/€2, am Flop):**
 
-1. Spieler A setzt $10.
-2. Spieler B geht für **$14** All-in (+$4 Erhöhungsschritt – allein keine volle Erhöhung)
-3. Spieler C geht für **$21** All-in (+$7 Erhöhungsschritt – allein keine volle Erhöhung)
+1. Spieler A setzt €10.
+2. Spieler B geht für **€14** All-in (+€4 Erhöhungsschritt – allein keine volle Erhöhung)
+3. Spieler C geht für **€21** All-in (+€7 Erhöhungsschritt – allein keine volle Erhöhung)
 
-Kombinierte Erhöhungsschritte: $4 + $7 = **$11** – das erreicht die Mindesterhöhung von $10.
+Kombinierte Erhöhungsschritte: €4 + €7 = **€11** – das erreicht die Mindesterhöhung von €10.
 
 **Ergebnis: Die Setzrunde wird für Spieler A NEU GEÖFFNET.** A darf folden, callen oder re-raisen, obwohl weder B noch C für sich genommen eine volle Erhöhung gemacht hat.
 
@@ -164,9 +164,9 @@ Kombinierte Erhöhungsschritte: $4 + $7 = **$11** – das erreicht die Mindester
 
 | Bs All-in | Cs All-in | Kombinierter Erhöhungsschritt | Neu geöffnet für A? |
 |:---|:---:|:---|:---|
-| $14 (+$4) | $18 (+$4) | $8 – unter $10 | ❌ Nein |
-| $14 (+$4) | $21 (+$7) | $11 – erreicht $10 | ✅ Ja |
-| $15 (+$5) | $24 (+$9) | $14 – erreicht $10 | ✅ Ja |
+| €14 (+€4) | €18 (+€4) | €8 – unter €10 | ❌ Nein |
+| €14 (+€4) | €21 (+€7) | €11 – erreicht €10 | ✅ Ja |
+| €15 (+€5) | €24 (+€9) | €14 – erreicht €10 | ✅ Ja |
 
 </div>
 
@@ -214,7 +214,7 @@ Kann er nicht. Sobald der All-in-Spieler gedeckelt ist, gehören alle zusätzlic
 Ein Teil-All-in von Spieler C gibt Spieler A keine zweite Chance zum Re-Raise. Wer diese Regel sicher beherrscht, erstickt Streit, bevor er entsteht.
 
 ### Fehler 3: Mitten in der Hand Chips aus der Tasche nachlegen
-Table Stakes. Was auf dem Tisch liegt, ist alles, was du setzen kannst. Bist du für $80 All-in und der Pot beträgt $400, kannst du von jedem Caller trotzdem nur $80 gewinnen.
+Table Stakes. Was auf dem Tisch liegt, ist alles, was du setzen kannst. Bist du für €80 All-in und der Pot beträgt €400, kannst du von jedem Caller trotzdem nur €80 gewinnen.
 
 ### Fehler 4: Die Hand zu schnell mucken
 Du bist für den Main Pot All-in. Zwei andere Spieler kämpfen um den Side Pot. Ich habe einmal gesehen, wie ein Shortstack seine Karten wegwarf, sobald der Showdown um den Side Pot gegen ihn lief – er hatte vergessen, dass er in diesem Pot gar nicht drin war und seine Hand für den Main Pot noch live war. Die Chips waren in dem Moment weg, in dem die Karten im Muck landeten. Muck nicht – deine Hand ist für den Main Pot noch live. ==Warte immer, bis der Dealer jeden Pot aufgelöst hat, bevor du deine Karten anfasst.==

@@ -99,8 +99,8 @@ Enge Calls sind kein Gefühl – sie sind ein Bruch. Um eine Bet profitabel zu c
 
 Jetzt in die Praxis. Sagen wir, du hast einen Flushdraw – neun Karten vervollständigen ihn – mit einer Karte, die noch kommt. Neun Outs von den 46 ungesehenen Karten sind ==9 ÷ 46 ≈ 19,6%==, oder etwa **4:1 gegen** ein Treffen. (Schneller Shortcut: die [Regel der 2](/de/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") – Outs × 2 ≈ dein Prozentsatz für eine Karte, also 9 × 2 ≈ 18%.)
 
-- **Der Pot ist $100 und dein Gegner bettet $50 auf dem Turn.** Du callst $50, um $150 zu gewinnen – das sind 3:1, also brauchst du **25%** Equity. Dein Draw ist nur ~19,6%. ==r:Fold.== Der Preis ist falsch.
-- **Derselbe Draw, aber sie betten nur $25 in $100.** Jetzt callst du $25, um $125 zu gewinnen – 5:1, es braucht nur **16,7%**. Deine ~19,6% übersteigen das locker. ==g:Call.==
+- **Der Pot ist €100 und dein Gegner bettet €50 auf dem Turn.** Du callst €50, um €150 zu gewinnen – das sind 3:1, also brauchst du **25%** Equity. Dein Draw ist nur ~19,6%. ==r:Fold.== Der Preis ist falsch.
+- **Derselbe Draw, aber sie betten nur €25 in €100.** Jetzt callst du €25, um €125 zu gewinnen – 5:1, es braucht nur **16,7%**. Deine ~19,6% übersteigen das locker. ==g:Call.==
 
 Dieselbe Hand, gegensätzliche Entscheidungen – weil sich der *Preis* geändert hat, nicht die Karten. Das sind Pot Odds, und das ist der Unterschied zwischen Chasen und Callen. (Implied Odds – Geld, das du *später* gewinnst, wenn du triffst – können manche dünneren Calls rechtfertigen, aber setz sie nie gegen einen kurzen Stack oder ein Board voraus, das deine Action killt.)
 
@@ -172,7 +172,7 @@ Beachte, was die letzte Frage *nicht* ist. Eine Value-Bet muss die **Calling**-R
 
 ## Wie sieht ein echter Laydown aus? Hand für Hand
 
-Hier ist ein Fold, auf den ich stolz bin, so ausbuchstabiert, dass du ihn selbst überprüfen kannst. $1/$2 Cashgame, 100bb tief.
+Hier ist ein Fold, auf den ich stolz bin, so ausbuchstabiert, dass du ihn selbst überprüfen kannst. €1/€2 Cashgame, 100bb tief.
 
 - **Meine Hand:** ==A♥K♣.== Ich raise, der Big Blind – ein tighter, passiver Spieler – callt.
 - **Flop:** ==K♦ 9♠ 4♥.== Ich habe Top Pair, Top Kicker. Ich bette, er callt. Standard.
