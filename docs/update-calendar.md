@@ -96,6 +96,22 @@
 
 ## 9월
 
+### 🆕 ★ 상시(분기 1회) — de `holdem-tournament` 「Wo finde ich Pokerturniere in meiner Nähe?」 절 재확인
+- **신설 2026-08-11** (de 경화 Session 6). **de 42편 중 유일하게 휘발성 일정 데이터를 담은 자리다.**
+- **대상**: `lib/posts-de/holdem-tournament.ts` — 표 3개
+  ① Spielbank Berlin 요일별 상시(€70+10 ~ €200+20) ② King's Rozvadov 독일 브랜드 5종(9~12월)
+  ③ CAPT 잔여 5스톱(9~11월) + 스위스(Baden 중단·Luzern Championship Week 12/16~20)
+- **출처**(전부 공식 DOM 직접 추출, 확인일 2026-08-10 — 근거는 `docs/dach-tournaments-2026.md`):
+  kings-resort.com/poker · casinos.at/spiel/poker/capt · spielbank-berlin.de · casino-sh.de ·
+  grandcasinobaden.ch · grandcasinoluzern.ch
+- 🔴 **먼저 확인할 시한 항목**:
+  **12/1** — King's 12월 German Poker Days(02.–06.12.)가 마지막 항목이다. 지나면 표 전체가 과거형이 된다
+  **11/30** — CAPT Million Baden 종료 = CAPT 2026 시즌 종료. 2027 일정으로 교체
+  **Baden(CH) 포커 재개 시점** — 「Umbau 중 미제공」이라 재개하면 문장을 바꿔야 한다
+- ⚠ **함정 3가지가 그 문서에 적혀 있다**: 10월분 정식명은 German Poker Days **„Mystery Bounty"** ·
+  12월분은 페스티벌 €400.000 ↔ 메인이벤트 €300.000 · 🔴 **CAPT Baden(빈 근교) ≠ Grand Casino Baden(스위스)**
+- 🪶 이 절이 커지면 `/de/tournaments` 허브 신설 판단으로 넘어간다(사장님 판단 대기 #3)
+
 ### ★★ 9/초 (8/29~9/5 사이) — GTO 13편·`/solver` 색인 성과 확인 → **T24(솔버 다국어) 착수 판단**
 
 - **배경**: 2026-08-08에 GTO 솔버 스팟 해설 **13편 발행 + `/solver` 허브 완성 + 색인 요청**을 마쳤다.

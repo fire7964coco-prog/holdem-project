@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Die EPT Barcelona 2026 läuft vom 16.–29. Aug. im Casino Barcelona. Main-Event-Buy-in: €5.300. Günstigster Online-Weg: Power Path ab $0,50 → Gold Pass (€5.300 ME + 8 Nächte Hotel + €690 Spesen). Du brauchst ein PokerStars-Live-Konto und einen gültigen Reisepass. Buch die Hotels früh – der August ist Hochsaison.",
   category: "tournament",
   date: "2026-06-17",
-  updated: "2026-08-10",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "16 Min.",
   emoji: "🃏",
@@ -86,7 +86,7 @@ Das Festival fährt zwei parallele Serien: das **PokerStars Open** (zugängliche
 
 ---
 
-## Online qualifizieren für die EPT Barcelona 2026 – PokerStars Power Path ab $0,50
+## Wie qualifizierst du dich online für die EPT Barcelona 2026?
 
 So kommen die meisten im Feld dorthin – ==r:nicht, indem sie €5.300 an PokerStars überweisen==, sondern indem sie sich eine vierstufige Satellite-Leiter hochgrinden.
 
@@ -126,7 +126,7 @@ Gewinnst du Step 4, erhältst du einen von drei Power Passes:
 
 ---
 
-## Direkte Satellites – überspring die Stufen, wenn du schon bereit bist
+## Wann lohnt sich ein direkter Satellite statt der Stufenleiter?
 
 Keine Lust, vier Stufen zu grinden? PokerStars fährt den ganzen Sommer über auch **direkte Satellites** für die EPT Barcelona.
 
@@ -139,7 +139,7 @@ Keine Lust, vier Stufen zu grinden? PokerStars fährt den ganzen Sommer über au
 
 ---
 
-## EPT Barcelona 2026 Gesamt-Reisekosten – realistische Budget-Aufschlüsselung
+## Was kostet die EPT Barcelona 2026 insgesamt?
 
 ==r:Hier ist, was Konkurrenten dir nicht sagen: das Buy-in ist nur ein Teil der Kosten.== Schlüsseln wir auf, was eine realistische EPT-Barcelona-Reise tatsächlich kostet.
 
@@ -190,7 +190,7 @@ Keine Lust, vier Stufen zu grinden? PokerStars fährt den ganzen Sommer über au
 
 ---
 
-## PokerStars-Live-Konto einrichten & Source-of-Funds-Erklärung
+## Was brauchst du für das PokerStars-Live-Konto und den Herkunftsnachweis?
 
 ==r:Zwei Admin-Aufgaben, die Erstteilnehmer kalt erwischen.== Erledige beide **bevor du in Barcelona landest**.
 
@@ -220,7 +220,7 @@ Das ist die eine, vor der dich fast niemand warnt. Jedes Mal, wenn du ein Turnie
 
 ---
 
-## Casino-Barcelona-Regeln – Dresscode, Zutrittsvoraussetzungen & Location
+## Welche Regeln gelten im Casino Barcelona? Dresscode und Zutritt
 
 ### Location
 
@@ -259,7 +259,7 @@ Das Casino Barcelona ist entspannter als Monte Carlo – aber es gibt echte Rege
 
 ---
 
-## Wo übernachten zur EPT Barcelona 2026 – Hotels beim Casino Barcelona
+## Wo übernachtest du zur EPT Barcelona 2026?
 
 ==r:Der August ist Hochsaison für Touristen in Barcelona. Buch früh.== Die Preise für die Nähe zum Casino verdreifachen sich grob im Vergleich zur Nebensaison.
 
@@ -291,7 +291,7 @@ Das Casino Barcelona ist entspannter als Monte Carlo – aber es gibt echte Rege
 
 ---
 
-## Wie du vom Flughafen Barcelona El Prat zum Casino Barcelona kommst
+## Wie kommst du vom Flughafen El Prat zum Casino Barcelona?
 
 Barcelona El Prat (BCN) ist etwa ==12 km vom Casino entfernt== – je nach Verkehr rund 25–40 Minuten.
 
@@ -316,7 +316,7 @@ Barcelona El Prat (BCN) ist etwa ==12 km vom Casino entfernt== – je nach Verke
 
 ---
 
-## Day 1 des EPT Main Events – was Erstteilnehmer wissen müssen
+## Wie läuft Day 1 des EPT Main Events ab?
 
 Day 1 ist auf mehrere Start-Flights aufgeteilt (Day 1A, 1B, 1C, manchmal 1D). Du wählst einen. Die meisten Spieler wählen ==Day 1B oder 1C== – das sind typischerweise größere Felder, was einschüchternd klingt, aber auch mehr Recreational-Spieler bedeutet.
 

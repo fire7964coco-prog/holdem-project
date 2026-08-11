@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Die APT Incheon 2026 läuft vom 7.–16. Aug im Paradise City Casino, Incheon – 10 Min mit dem kostenlosen Shuttle vom Terminal 1. Main Event: KRW 2.500.000 (~$1.703) Buy-in, $1M GTD. Natural8s Online-Qualifikationen vergaben insgesamt 74 Seats, doch das $35-Mega und die OnLive-Day-1-Route endeten beide am 2. August: die letzte Route, $20 Step → $200 Mega, lief am 7. August aus – die Online-Qualifikation ist damit beendet. Nur für ausländische Staatsbürger (koreanische Bürger ohne Wohnsitz im Ausland dürfen nicht rein). Seoul ist ~1 Stunde entfernt und eine der besten Städte Asiens für Essen, Kultur und Nachtleben.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-10",
-  masterUpdated: "2026-07-28",
+  updated: "2026-08-11",
+  masterUpdated: "2026-08-09",
   keepImagesInBody: true,
   readTime: "16 Min.",
   emoji: "🇰🇷",
@@ -55,7 +55,7 @@ Und für internationale Besucher: ==g:Die meisten westlichen Passinhaber reisen 
 
 ---
 
-## APT Incheon 2026 – Das Turnier auf einen Blick
+## Was musst du über die APT Incheon 2026 wissen?
 
 <div style="overflow-x:auto;margin:20px 0">
 
@@ -76,7 +76,7 @@ Und für internationale Besucher: ==g:Die meisten westlichen Passinhaber reisen 
 
 ---
 
-## Kompletter Turnierplan
+## Wie sieht der komplette Turnierplan aus?
 
 <div style="overflow-x:auto;margin:20px 0">
 
@@ -141,7 +141,7 @@ Natural8 ist APTs offizieller Online-Partner und betreibt die ==**Journey to APT
 
 :::note[**★Stand 9. August 2026 – die Online-Qualifikation ist beendet.** Das $35-Mega und die OnLive-Day-1-Qualifikationen liefen am 2. August aus, die letzte Route **$20 Step → $200 Mega** am **Freitag, dem 7. August** – dem Tag vor Serienstart. Die 52 + 22 = 74 Seats in der Tabelle sind die bereits vergebene Gesamtzahl. Die Wege stehen hier, weil beim nächsten APT-Stopp dieselbe Struktur zurückkommt.]:::
 
-**Der Step-Weg, der noch offen ist:**
+**So sah der Step-Weg aus – dieselbe Struktur kommt beim nächsten APT-Stopp zurück:**
 
 <div style="background:rgba(0,0,0,0.25);border:1px solid rgba(255,255,255,0.10);border-radius:10px;padding:14px 20px;margin:16px 0;font-size:13px;line-height:1.8">
 $20 Step Satellite → Ticket für das $200 Mega Satellite gewinnen → Main-Event-Seat gewinnen (~$1.703 Wert) · letzter Tag war der 7. August
@@ -151,7 +151,7 @@ $20 Step Satellite → Ticket für das $200 Mega Satellite gewinnen → Main-Eve
 
 > **Was OnLive war:** Die Route ließ dich Day 1 aus deiner heimischen Zeitzone spielen und nur dann nach Korea fliegen, wenn du bis Day 3 überlebtest – der clevere Weg, wenn das Reisebudget knapp war. ==r:Sie endete am 2. August und ist für diese Ausgabe keine Option mehr== – hier notiert, weil sie beim nächsten APT-Stopp einen Blick wert ist.
 
-**Es gibt einen dritten Weg, den fast keine Anleitung erwähnt: die Country Exclusives.** Natural8 fährt nach Wohnsitzland beschränkte Qualifier, die **sechs Live-Pakete** ausschütten – und ein Paket ist nicht nur der Seat: Es enthält **das Main-Event-Ticket (~$1.684) plus rund $500 Reisekosten**. Normale Satellites geben dir den Platz, den Flug zahlst du selbst. Die Teilnahmeberechtigung hängt am Wohnsitzland, also prüf im Lobby, ob dein Bracket offen ist, bevor du den allgemeinen Weg grindest.
+**Es gibt einen dritten Weg, den fast keine Anleitung erwähnt: die Country Exclusives.** Natural8 veranstaltet Qualifier, die auf einzelne Länder beschränkt sind, und ein Paket daraus ist nicht nur der Seat, sondern Ticket plus Reisekosten. Der für Incheon 2026 offengelegte Lauf hieß „N8TW x APT Incheon 2026“ – das Paket bestand aus **NT$53.888 für das Ticket plus NT$16.000 Reisekosten**. Normale Satellites geben dir den Platz, den Flug zahlst du selbst. ==r:Entscheidend ist dabei die Staatsangehörigkeit, nicht der Wohnsitz== – dieser Lauf stand ausschließlich taiwanischen Staatsbürgern offen, und Natural8 gleicht das in der KYC-Verifizierung ab. Eine geänderte Meldeadresse bringt dich also nicht hinein. Prüf in der Lobby, ob für dein Land überhaupt ein Bracket läuft, bevor du den allgemeinen Weg gehst.
 
 ---
 
@@ -163,20 +163,20 @@ Bevor du fliegst, lohnt sich ein Blick darauf, an welchem Tisch du landest. APT 
 
 | # | Land | Entries | Anteil |
 |:---:|:---|---:|:---:|
-| 1 | **Japan** | 484 | 37,8 % |
-| 2 | **China** | 299 | 23,3 % |
-| 3 | Thailand | 107 | 8,4 % |
-| 4 | Hongkong | 106 | 8,3 % |
-| 5 | Taiwan | 49 | 3,8 % |
-| 6 | Russland | 40 | 3,1 % |
-| 7 | Singapur | 37 | 2,9 % |
-| 8 | Vietnam | 29 | 2,3 % |
-| 9 | USA | 26 | 2,0 % |
-| 10 | Malaysia | 21 | 1,6 % |
+| 1 | **Japan** | 484 | 37,8% |
+| 2 | **China** | 299 | 23,3% |
+| 3 | Thailand | 107 | 8,4% |
+| 4 | Hongkong | 106 | 8,3% |
+| 5 | Taiwan | 49 | 3,8% |
+| 6 | Russland | 40 | 3,1% |
+| 7 | Singapur | 37 | 2,9% |
+| 8 | Vietnam | 29 | 2,3% |
+| 9 | USA | 26 | 2,0% |
+| 10 | Malaysia | 21 | 1,6% |
 
 </div>
 
-==r:Japan und China allein stellen 61 % des Feldes.== 27 Länder waren vertreten, aber das hier ist durch und durch ein **ostasiatisches Turnier** – kein europäisches Land taucht in den Top 10 auf. Wer aus dem deutschsprachigen Raum anreist, sitzt als Exot am Tisch.
+==r:Japan und China allein stellen 61% des Feldes.== 27 Länder waren vertreten, aber das hier ist durch und durch ein **ostasiatisches Turnier** – kein europäisches Land taucht in den Top 10 auf. Wer aus dem deutschsprachigen Raum anreist, sitzt als Exot am Tisch.
 
 Praktisch heißt das: Am Tisch hörst du mehr Japanisch und Mandarin als Englisch, und der Floor geht damit völlig routiniert um. Der Vorteil dabei – **niemand hat Reads auf dich**. Du kommst ohne Historie in einen Circuit, in dem sich viele Regs seit Jahren kennen.
 
@@ -188,7 +188,7 @@ Praktisch heißt das: Am Tisch hörst du mehr Japanisch und Mandarin als Englisc
 
 ---
 
-## Die Location: Paradise City Casino
+## Wie ist das Paradise City Casino als Spielort?
 
 ![Paradise City Casino von innen – luxuriöses Resort-Casino verbunden mit dem Incheon International Airport, mit Pokertischen, Spielautomaten und edler Hotellobby](/images/apt-incheon-2026-guide-venue.webp)
 
@@ -209,7 +209,7 @@ Paradise City ist kein alleinstehendes Casino – es ist ein ==**integriertes Re
 
 ---
 
-## Anreise: Flughafen Incheon zum Paradise City
+## Wie kommst du vom Flughafen Incheon zum Paradise City?
 
 Paradise City betreibt seinen eigenen kostenlosen Transfer vom Flughafen:
 
@@ -224,7 +224,7 @@ Wenn du über Incheon fliegst und ein langes Layover hast: ==g:das Casino ist w�
 
 ---
 
-## Seoul-Tagesausflüge: 1 Stunde vom Paradise City
+## Was machst du in Seoul, wenn du nicht spielst?
 
 Hier ist das Setup, das die meisten Turnierspieler erst bei der Ankunft realisieren: ==**Paradise City ist deine Basis, und Seoul ist nur 1 Stunde entfernt**==.
 
@@ -327,7 +327,7 @@ Hier ist, was du mit 1–3 freien Tagen machst:
 
 ---
 
-## Korea-Budget-Aufschlüsselung für die Pokerreise
+## Was kostet eine Pokerreise nach Korea?
 
 <div style="overflow-x:auto;margin:20px 0">
 
@@ -349,7 +349,7 @@ Verglichen mit der EPT Barcelona (~€5.300 Main) oder WPT Australia (~AUD $5.00
 
 ---
 
-## Einreisevoraussetzungen: Visa & Casino-Zugang
+## Welche Einreisevoraussetzungen gelten – Visum und Casino-Zugang?
 
 **Korea-Visum:**
 
@@ -412,7 +412,7 @@ Auf dem Weg zur APT Incheon? Der [Guide Turnier vs Cash Game](/de/blog/holdem-to
 
 ## Quellen
 
-Alle Zahlen wurden gegen Primärquellen geprüft. **Stand: 28. Juli 2026.**
+Alle Zahlen wurden anhand der Primärquellen geprüft. **Stand: 9. August 2026.**
 
 - **Offizielle Serienseite** – [APT – Incheon, South Korea 2026](https://www.theasianpokertour.com/series/apt-incheon-south-korea-2026) · Termine, Buy-in und Garantie des Main Events #20, Flight-Struktur
 - **Offizielle Preview** – [APT Incheon 2026: The Preview](https://www.theasianpokertour.com/news/apt-incheon-2026-the-preview) · Gesamtgarantie, Startstack 40.000, **die neun APTC-Taipeh-Seats und ihre Verteilung**
@@ -422,7 +422,7 @@ Alle Zahlen wurden gegen Primärquellen geprüft. **Stand: 28. Juli 2026.**
 - **Feld und Ergebnis 2025 (offizieller Bericht des Veranstalters)** – [APT – China's Junjie He Wins APT's Largest Korean Main Event](https://www.theasianpokertour.com/news/china-s-junjie-he-wins-apt-s-largest-korean-main-event-for-krw-380-5-m-usd-275-k-plus-apt-championship-seat-worth-krw-13-8-m-usd-10-k) · 1.281 Entries von 754 Spielern · Preispool KRW 2.766.660.000 · Länderverteilung Top 10
 - **Casino-Einlassregeln** – [Paradise City offiziell](https://www.p-city.com/front/contents/casino/casinoInfo)
 
-> ⚠️ **Das Festival startet am 7. August.** Satellite-Seatzahlen, Late-Reg-Schluss und Shuttle-Zeiten können sich noch ändern. **Prüf am Tag deiner Anmeldung nochmal die APT-Eventseite und das Natural8-Lobby.**
+> ⚠️ **Das Festival läuft bereits – seit dem 7. August, letzter Spieltag ist der 16. August.** Late-Reg-Schluss und Shuttle-Zeiten können sich kurzfristig ändern. **Prüf am Tag deiner Anmeldung nochmal die APT-Eventseite und die Natural8-Lobby.**
 >
 > 📌 **Quellenprinzip:** Termine, Buy-ins, Seatzahlen und Regeln stammen vom Veranstalter (APT), vom Online-Partner (Natural8) und vom Casino selbst. Fachmedien werden nur für das herangezogen, was diese drei nicht veröffentlichen. Affiliate-Rankings werden nicht zitiert.
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "WPT Australia 2026: 10.–30. Sep, The Star Sydney. Zwei Flaggschiffe: AUD $1.500 WPT Prime (17.–22. Sep) und AUD $5.000 WPT Championship (24.–30. Sep). On-Site-Satellites ab AUD ~$255. Der Sieger bekommt zusätzlich einen $10.400 WPT-World-Championship-Seat. Mindestalter 18, Star-Club-Mitgliedschaft und Smart-Casual-Dresscode sind Pflicht.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-10",
+  updated: "2026-08-11",
   readTime: "14 Min.",
   emoji: "🦘",
   layout: "tournament-guide",
@@ -41,7 +41,7 @@ Erstes Live-Festival? Fang mit [dem Turnier-Guide](/de/blog/holdem-tournament "t
 
 ---
 
-## WPT Australia 2026 in 30 Sekunden – was neu ist & warum es zählt
+## Was ist neu bei der WPT Australia 2026?
 
 Das diesjährige Festival kehrt ins ==**The Star Sydney**== zurück und führt ein **Dual-Championship-Format** ein – ein Novum für jeden australischen WPT-Stopp. (Das 2024er-Event fand im The Star Gold Coast statt; der Umzug nach Sydney begann mit der 2025er-Ausgabe.)
 
@@ -87,7 +87,7 @@ Das ist die Frage, die jeder First-Timer stellt. Hier die ehrliche Aufschlüssel
 
 ---
 
-## Wie du dich für die WPT Australia 2026 ohne volles Buy-in qualifizierst
+## Wie qualifizierst du dich ohne volles Buy-in für die WPT Australia?
 
 ### ⚠️ Kritischer Fakt: WPT Global funktioniert in Australien NICHT
 
@@ -140,7 +140,7 @@ Wenn du außerhalb Australiens bist und dich vor dem Abflug mit Online-Satellite
 
 ---
 
-## Vergangene Champions & was dich 2026 erwartet
+## Wer hat die WPT Australia bisher gewonnen?
 
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.25);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -164,7 +164,7 @@ Mit dem auf AUD $5.000 gesenkten 2026er-Buy-in (runter von $5.500 in 2025) und e
 
 ---
 
-## The Star Sydney – Zutrittsvoraussetzungen, die First-Timer immer falsch machen
+## Welche Zutrittsvoraussetzungen gelten im The Star Sydney?
 
 ### 1. Du musst dem Star Club beitreten (gratis, aber Pflicht)
 
@@ -207,7 +207,7 @@ Das The Star Sydney liegt an der **80 Pyrmont Street, Pyrmont NSW 2009** – dir
 
 ---
 
-## Wie du als internationaler Spieler die WPT Australia bezahlst
+## Wie bezahlst du als internationaler Spieler das Buy-in?
 
 Dieser Abschnitt ist das, was ==r:jeder Guide der Konkurrenz auslässt== – und genau das, woran internationale Spieler am häufigsten scheitern.
 
@@ -238,7 +238,7 @@ Geh mit deinem Reisepass zum Guest Service Desk. Bestätige, dass dein Wire-Tran
 
 ---
 
-## Australien-Visum – was du vor dem Abflug brauchst
+## Welches Visum brauchst du für Australien?
 
 Die meisten internationalen Besucher brauchen entweder eine **ETA (Electronic Travel Authority)** oder ein Standard-Touristenvisum.
 
@@ -258,7 +258,7 @@ Die meisten internationalen Besucher brauchen entweder eine **ETA (Electronic Tr
 
 ---
 
-## WPT Australia 2026 Budget-Aufschlüsselung – echte Reisekosten
+## Was kostet die Reise zur WPT Australia 2026?
 
 Hier ist, was eine komplette WPT-Australia-Reise tatsächlich kostet, basierend auf 2025er-Daten:
 

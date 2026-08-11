@@ -2,9 +2,9 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "holdem-tournament-vs-cash-game",
-  title: "Cash Game vs Turnier Poker",
-  seoTitle: "Deine Chips sind kein Geld – Cash Game vs Turnier Poker",
-  desc: "Cash Game vs Turnier Poker – was passt zu dir? Chipwert, steigende Blinds, ICM, Bankroll, was schwerer und profitabler ist und wo Anfänger starten.",
+  title: "Turnier oder Cash Game? Chipwert, Blinds, ICM & Bankroll",
+  seoTitle: "Deine Chips sind kein Geld – Turnier oder Cash Game?",
+  desc: "Turnier oder Cash Game – was solltest du spielen? Chipwert, steigende Blinds, ICM, Bankroll, was schwerer und profitabler ist und wo Anfänger starten.",
   tldr: "Im Cash Game sind Chips echtes Geld und die Blinds bleiben fest. Im Turnier sind Chips Überlebens-Equity, die Blinds steigen und Auszahlungen hängen von deiner Platzierung ab.",
   category: "tournament",
   date: "2026-06-11",
@@ -45,7 +45,10 @@ Diese Anleitung erklärt ==Cash Game vs Turnier Poker== so, wie es Anfänger wir
 
 ---
 
-## Cash Game vs Turnier Poker: der Kernunterschied
+## Turnier oder Cash Game – was ist der Unterschied?
+
+> **Kurze Antwort**
+> Der Unterschied ist nicht das Spiel, sondern was ein Chip bedeutet. Im Cash Game steht er für Geld, das du jederzeit mitnehmen kannst; im Turnier steht er nur für dein Überleben bis zur nächsten Auszahlungsstufe. Daraus folgt alles Weitere – feste gegen steigende Blinds, Nachladen gegen Bust, Chip-EV gegen ICM.
 
 Am einfachsten lässt es sich so sagen:
 
@@ -92,7 +95,10 @@ Ein ==Cash Game== (auch Ring Game genannt) ist die ursprüngliche Art, Poker zu 
 
 ---
 
-## Turnierchips sind kein Geld
+## Warum sind Turnierchips kein echtes Geld?
+
+> **Kurze Antwort**
+> Weil du sie nicht einlösen kannst. Ein Turnierchip ist keine Forderung auf Geld, sondern ein Werkzeug, um länger im Event zu bleiben als die anderen. Ausgezahlt wird am Ende die Platzierung – und deshalb ist der zweite Chip in deinem Stack immer weniger wert als der erste. Genau das misst ICM.
 
 Das ist der wichtigste Unterschied im ganzen Artikel.
 
@@ -117,7 +123,10 @@ Wenn du von 10% aller Chips auf 20% aller Chips kommst, steigt deine Chance auf 
 
 ---
 
-## Feste Blinds vs steigende Blinds
+## Warum steigen die Blinds im Turnier und im Cash Game nicht?
+
+> **Kurze Antwort**
+> Weil beide Formate ein anderes Ziel haben. Ein Cash Game soll unbegrenzt weiterlaufen, also bleibt der Einsatz konstant. Ein Turnier muss dagegen an einem Tag einen Sieger finden, und der einzige Hebel dafür ist die Uhr: Steigende Blinds fressen jeden Stack, der nicht mitwächst, und erzwingen so die Entscheidungen.
 
 Cash Games und Turniere fühlen sich auch deshalb anders an, weil die Blinds sich anders verhalten.
 
@@ -136,7 +145,10 @@ In einem Turnier steigen die Blinds nach einem Zeitplan. Ein Stack, der früh 10
 
 ---
 
-## Cash Game vs Turnier Strategie – was sich wirklich ändert
+## Was ändert sich strategisch zwischen Cash Game und Turnier?
+
+> **Kurze Antwort**
+> Drei Dinge verschieben sich. Die Handauswahl wird mit sinkender Stacktiefe immer enger und irgendwann reines Push-or-Fold. Die Risikobereitschaft sinkt, weil ein Coinflip, der im Cash Game neutral ist, dich im Turnier Geld-Equity kostet. Und der Zeithorizont dreht sich um: Im Cash Game wartest du auf Spots, im Turnier kommt die Uhr zu dir.
 
 Wenn Chips unterschiedliche Dinge bedeuten und Blinds sich anders verhalten, muss sich auch die Strategie ändern. Hier sind die Verschiebungen, die du am Tisch wirklich spürst.
 
@@ -167,7 +179,10 @@ Cash-Game-Spieler kommen oft gut durch frühe Turnierphasen, weil sie sich deep 
 
 ---
 
-## ICM: das Turnierkonzept, das Cash Games nicht haben
+## Warum gibt es ICM nur im Turnier?
+
+> **Kurze Antwort**
+> Weil ICM einen Chipstack in erwartetes Preisgeld übersetzt – und ein Preisgeld gibt es nur dort, wo eine feste Auszahlungsstruktur existiert. Im Cash Game entspricht jeder Chip bereits Geld, da bleibt nichts umzurechnen. Im Turnier hängt dein Anteil an einem festen Pool dagegen davon ab, wie viele Spieler noch übrig sind.
 
 Die größte strategische Trennlinie zwischen Cash Games und Turnieren ist ==ICM==.
 
@@ -235,9 +250,12 @@ Was ist also profitabler? ==Für die meisten Spieler erzeugen Cash Games eine vo
 
 ---
 
-## Bankroll-Management: Turniere brauchen mehr Puffer
+## Warum brauchen Turniere eine tiefere Bankroll?
 
-Bankroll-Management ist in beiden Formaten wichtig, aber Turniere brauchen meist einen tieferen Puffer, weil die Swings größer sind.
+> **Kurze Antwort**
+> Turniere brauchen den deutlich tieferen Puffer. Der Grund liegt in der Auszahlungsstruktur: Du cashst nur in einem kleinen Teil deiner Turniere, und den Großteil deines Gewinns holst du aus wenigen tiefen Läufen. Im Cash Game verteilt sich dieselbe Edge über viele Hände, deshalb reichen dort weniger Buy-ins.
+
+Was das konkret heißt, zeigt der Vergleich der üblichen Richtwerte:
 
 Eine gängige Anfängerregel für Cash Games sind etwa **20-40 Buy-ins** für das Limit, das du spielst. Wenn dein normales Cash-Game-Buy-in $200 ist, entspricht das grob $4.000-$8.000 als konservative Poker-Bankroll.
 
@@ -257,7 +275,7 @@ Bankroll ist nicht nur eine Geldfrage. ==Sie schützt deine Entscheidungsfindung
 
 ---
 
-## Wann ein Cash Game verlassen (und warum du ein Turnier nicht verlassen kannst)
+## Wann darfst du aufstehen – und warum geht das im Turnier nicht?
 
 Cash Games sind flexibel. Du kannst dich 30 Minuten hinsetzen, zwei Stunden spielen oder aufstehen, wenn der Tisch schlecht ist. Turniere sind das Gegenteil: Sobald du dich registrierst, spielst du, bis du bustest, cashst oder gewinnst – gehst du mitten im Event, bleiben deine Chips am Tisch und zahlen Blinds, bis sie weg sind.
 

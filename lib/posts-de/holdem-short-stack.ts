@@ -34,7 +34,10 @@ calle enger | als du shovst
 
 ## Was ist ein Short Stack im Poker? (Und wie viele Big Blinds)
 
-**Ein Short Stack ist jeder Stack, der zu klein für normales Postflop-Poker ist – grob unter etwa 20–25 Big Blinds, wobei Push/Fold ab rund 15 Big Blinds abwärts übernimmt.** Das sind keine harten Grenzen; es sind die Zonen, in denen deine Optionen zusammenbrechen. Mit 60 Big Blinds kannst du raisen, callen, floaten und Leute nach dem Flop überspielen. Mit 12 verschwindet das meiste davon – du entscheidest, meist schon vor dem Flop, ob du all-in gehst oder foldest.
+> **Kurze Antwort**
+> Ein Short Stack ist jeder Stack, der zu klein für normales Postflop-Poker ist – grob unter etwa 20–25 Big Blinds, wobei Push/Fold ab rund 15 Big Blinds abwärts übernimmt.
+
+Das sind keine harten Grenzen; es sind die Zonen, in denen deine Optionen zusammenbrechen. Mit 60 Big Blinds kannst du raisen, callen, floaten und Leute nach dem Flop überspielen. Mit 12 verschwindet das meiste davon – du entscheidest, meist schon vor dem Flop, ob du all-in gehst oder foldest.
 
 Hier ist die praktische Landkarte nach Stacktiefe (No-Ante-, Full-Ring-Näherungen – Antes drücken jedes Band ein wenig tiefer):
 
@@ -54,9 +57,12 @@ Der mit Abstand größte Fehler ist, nicht zu wissen, in welcher Zeile du bist. 
 
 ---
 
-## Warum Short Stacks Push/Fold spielen: Fold Equity erklärt
+## Warum spielen Short Stacks Push/Fold? (Fold Equity erklärt)
 
-**First-in all-in zu gehen funktioniert, weil es Gegner in eine Alles-oder-nichts-Entscheidung zwingt, sodass sie Hände folden, die sie gegen einen kleinen Raise gern gespielt hätten – und diese Folds gewinnen dir die Blinds und Antes gratis.** Das ist ==Fold Equity==: der Profit, den du jedes Mal machst, wenn alle folden, bevor eine Karte gezeigt wird.
+> **Kurze Antwort**
+> First-in all-in zu gehen funktioniert, weil es Gegner in eine Alles-oder-nichts-Entscheidung zwingt, sodass sie Hände folden, die sie gegen einen kleinen Raise gern gespielt hätten – und diese Folds gewinnen dir die Blinds und Antes gratis.
+
+Das ist ==Fold Equity==: der Profit, den du jedes Mal machst, wenn alle folden, bevor eine Karte gezeigt wird.
 
 Überleg mal, was ein Min-Raise bewirkt, wenn du kurz bist: er committet Chips, lädt zu einem Re-Raise ein, den du nicht callen kannst, und lässt Gegner ihre Equity billig realisieren. Ein ==Shove== macht das Gegenteil. Er sagt „calle um dein Turnier oder folde“, und die meisten Hände folden. Wenn du die Blinds und Antes oft genug ungestört einsammelst, ==machst du sogar dann Profit, wenn du gecallt wirst und verlierst==, weil die freien Pots das mehr als ausgleichen.
 
@@ -66,9 +72,12 @@ Der Haken ist, dass Fold Equity ==abnimmt, während dein Stack schrumpft==. Bei 
 
 ![Ein kleiner Chipstack geht über den Filz all-in, während ein größerer Stack entscheidet, ob er callt, dahinter leuchtet die Turnieruhr](/images/holdem-short-stack-shove.webp "Short-Stack-Push/Fold: das All-in erzwingt eine Ja-oder-Nein-Entscheidung und gewinnt die Blinds, wenn alle folden")
 
-## Die M-Ratio (Harrington-Zonen): Grün, Gelb, Orange, Rot, Tot
+## Was sagt dir die M-Ratio? (Die Harrington-Zonen)
 
-**Die M-Ratio misst, wie viele Orbits du durch Folden überleben kannst – dein Stack geteilt durch die Kosten einer vollen Runde Blinds und Antes – und sie sortiert deinen Stack in fünf Zonen.** Populär gemacht von Dan Harrington, ==M = dein Stack ÷ (Small Blind + Big Blind + alle Antes pro Orbit)==. Sie beantwortet „wie lange kann ich hier sitzen und nichts tun?“ – und je kleiner sie wird, desto mehr musst du handeln.
+> **Kurze Antwort**
+> Die M-Ratio misst, wie viele Orbits du durch Folden überleben kannst – dein Stack geteilt durch die Kosten einer vollen Runde Blinds und Antes – und sie sortiert deinen Stack in fünf Zonen.
+
+Populär gemacht von Dan Harrington, ==M = dein Stack ÷ (Small Blind + Big Blind + alle Antes pro Orbit)==. Sie beantwortet „wie lange kann ich hier sitzen und nichts tun?“ – und je kleiner sie wird, desto mehr musst du handeln.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -86,9 +95,12 @@ Der Haken ist, dass Fold Equity ==abnimmt, während dein Stack schrumpft==. Bei 
 
 ---
 
-## Wann all-in gehen: First-in-Shoving nach Stacktiefe und Position
+## Wann solltest du all-in gehen? First-in-Shoves nach Stacktiefe und Position
 
-**Wenn du der erste Spieler im Pot und kurz bist, lautet deine Entscheidung Shove oder Fold – und wie weit du shovst, hängt von deiner Stackgröße und, genauso stark, von deiner Position ab.** Je später deine Position, desto weniger Spieler sind hinter dir übrig, die mit einer großen Hand aufwachen könnten – desto höher ist also die Chance, dass alle folden, und damit die ==Fold Equity==, die den Shove bezahlt. Genau deshalb ==weitet sich deine Shoving-Range Richtung Button dramatisch==.
+> **Kurze Antwort**
+> Wenn du der erste Spieler im Pot und kurz bist, lautet deine Entscheidung Shove oder Fold – und wie weit du shovst, hängt von deiner Stackgröße und, genauso stark, von deiner Position ab.
+
+Je später deine Position, desto weniger Spieler sind hinter dir übrig, die mit einer großen Hand aufwachen könnten – desto höher ist also die Chance, dass alle folden, und damit die ==Fold Equity==, die den Shove bezahlt. Genau deshalb ==weitet sich deine Shoving-Range Richtung Button dramatisch==.
 
 - **Early Position, 12–15bb:** am engsten. Du hast den ganzen Tisch hinter dir, also jamme eine starke, meist lineare Range und folde den Rest.
 - **Cutoff und Button, 10–15bb:** viel weiter. Mit zwei oder drei Spielern, die noch handeln, shovst du, um die Blinds und Antes zu stehlen, und kannst viele Hände jammen, die Under the Gun ein leichter Fold wären.
@@ -99,9 +111,12 @@ Achte auf die Falle, die das vermeidet: ==ein Short Stack, der aus jeder Positio
 
 ---
 
-## Shoving vs. Calling eines Shoves: Zwei verschiedene Ranges
+## Warum brauchst du zum Callen eine andere Range als zum Shoven?
 
-**Deine First-in-Shoving-Range und deine Range zum Callen des All-ins eines anderen sind nicht dasselbe – und die Calling-Range ist deutlich enger.** Das ist die Unterscheidung, die die meisten Anfänger übersehen, und sie kostet viele Turniere.
+> **Kurze Antwort**
+> Deine First-in-Shoving-Range und deine Range zum Callen des All-ins eines anderen sind nicht dasselbe – und die Calling-Range ist deutlich enger.
+
+Das ist die Unterscheidung, die die meisten Anfänger übersehen, und sie kostet viele Turniere.
 
 Wenn du ==first-in shovst==, gewinnst du auf zwei Wegen: alle folden (Fold Equity), oder du wirst gecallt und deine Hand hält. Wenn du einen Shove ==callst==, gewinnst du nur auf einem Weg – deine Hand muss gut genug sein, weil keine Fold Equity mehr zu holen ist. Also:
 
@@ -114,9 +129,12 @@ Eine Zeile zum Merken: ==sei der, der shovt, nicht der, der callt.== First-in-Ag
 
 ---
 
-## Wie man ein Push/Fold-Chart nutzt (und seine Grenzen)
+## Wie nutzt du ein Push/Fold-Chart – und wo hört es auf?
 
-**Push/Fold-Charts zeigen, welche Hände du bei einer bestimmten Stacktiefe jammst oder callst, basierend auf dem Nash-Gleichgewicht – aber sie sind eine Grundlage, kein Evangelium, und sie verschieben sich mit Antes, Tischgröße und ICM.** Ein Chart kommt meist in zwei Hälften: ein **Pusher**-Chart (was du first-in shovst) und ein **Caller**-Chart (womit du einen Shove callst), passend zum Shove-vs-Call-Split oben.
+> **Kurze Antwort**
+> Push/Fold-Charts zeigen, welche Hände du bei einer bestimmten Stacktiefe jammst oder callst, basierend auf dem Nash-Gleichgewicht – aber sie sind eine Grundlage, kein Evangelium, und sie verschieben sich mit Antes, Tischgröße und ICM.
+
+Ein Chart kommt meist in zwei Hälften: ein **Pusher**-Chart (was du first-in shovst) und ein **Caller**-Chart (womit du einen Shove callst), passend zum Shove-vs-Call-Split oben.
 
 Nutze sie, um Intuition aufzubauen, nicht als Naturgesetz:
 
@@ -128,9 +146,12 @@ Nutze sie, um Intuition aufzubauen, nicht als Naturgesetz:
 
 ---
 
-## Short Stack an der Bubble: Der ICM-Twist
+## Was ändert sich mit einem Short Stack an der Bubble?
 
-**Hier kommt der kontraintuitive Teil: an der Bubble hat ein klarer Short Stack oft einen niedrigeren Bubble-Faktor als ein Medium Stack – du kannst also mehr zocken, aber nur durch Shoven, nicht durch Callen.** Jeder nimmt an, der Short Stack stehe am meisten unter Druck. Laut Mathematik tut er das nicht: du wirst wahrscheinlich ohnehin bald busten, und ein Double-up hilft dir enorm, also ist deine Risikoprämie niedriger als die der eingesperrten Medium Stacks (der [Bubble-Guide](/de/blog/holdem-bubble) erklärt, warum der Medium Stack der wahre Gefangene ist).
+> **Kurze Antwort**
+> Hier kommt der kontraintuitive Teil: an der Bubble hat ein klarer Short Stack oft einen niedrigeren Bubble-Faktor als ein Medium Stack – du kannst also mehr zocken, aber nur durch Shoven, nicht durch Callen.
+
+Jeder nimmt an, der Short Stack stehe am meisten unter Druck. Laut Mathematik tut er das nicht: du wirst wahrscheinlich ohnehin bald busten, und ein Double-up hilft dir enorm, also ist deine Risikoprämie niedriger als die der eingesperrten Medium Stacks (der [Bubble-Guide](/de/blog/holdem-bubble) erklärt, warum der Medium Stack der wahre Gefangene ist).
 
 Was das in der Praxis bedeutet:
 
@@ -142,7 +163,7 @@ Die echte Mathematik hinter „wie viel niedriger ist mein Bubble-Faktor“ stec
 
 ---
 
-## Die 5 Short-Stack-Fehler, die dein Turnier killen
+## Welche fünf Short-Stack-Fehler killen dein Turnier?
 
 1. **Open-Limpen.** Es gibt deine Fold Equity auf und bläht einen Pot auf, den du postflop nicht spielen kannst. Short Stacks raisen oder folden – und meist ist dieser Raise ein Shove.
 2. **Min-raise-then-Fold mit Junk.** Ein Viertel deines Stacks zu raisen und auf einen Shove zu folden ist das Schlechteste aus beiden Welten. Wenn eine Hand nicht gut genug ist, um all-in zu gehen, ist sie nicht gut genug, um zu raisen.

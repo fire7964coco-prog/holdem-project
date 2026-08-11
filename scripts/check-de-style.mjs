@@ -169,7 +169,13 @@ const stripLinkTitles = (s) => s.replace(/\]\((?:[^()\n]|\([^()\n]*\))*\)/g, '] 
 
 /** 날짜·조항 번호는 «마침표 소수점»이 아니다. D3 전용 추가 세척. */
 const stripDates = (s) => s
+  // ★날짜 «범위»가 먼저다 — 긴 패턴을 나중에 두면 짧은 쪽이 앞을 베어 먹는다.
+  //  대회 일정표의 실사용형(2026-08-11 Session 6에서 오탐 11곳으로 드러남):
+  //  "16.09.–06.10." · "01.–06.09." · "22.–27.09.2026" — 전부 날짜지 소수점이 아니다.
+  .replace(/\b\d{1,2}\.\d{1,2}\.\s*[–—-]\s*\d{1,2}\.\d{1,2}\.(?:\d{2,4})?/g, ' ') // 16.09.–06.10.
+  .replace(/\b\d{1,2}\.\s*[–—-]\s*\d{1,2}\.\d{1,2}\.(?:\d{2,4})?/g, ' ')          // 01.–06.09.
   .replace(/\b\d{1,2}\.\d{1,2}\.\d{2,4}\b/g, ' ')                       // 31.03.2026
+  .replace(/\b\d{1,2}\.\d{1,2}\.(?!\d)/g, ' ')                          // 22.09. (Jahr weggelassen)
   .replace(/\b\d{1,2}\.\s*(Jan|Feb|Mär|Apr|Mai|Jun|Jul|Aug|Sep|Okt|Nov|Dez)[a-zä]*/g, ' ') // 12. Apr.
   .replace(/§+\s*\d+[.\d]*/g, ' ')                                       // §7.7
   .replace(/\bv?\d+\.\d+\.\d+\b/g, ' ');                                 // 버전 표기
@@ -519,6 +525,12 @@ const FIXTURES = [
   ['D3', '날짜 "31.03.2026" (울리면 안 됨)', false, 'Das Turnier läuft vom 31.03.2026 bis zum 12.04.2026 in Prag.'],
   ['D3', '독일식 날짜 "12. Apr." (울리면 안 됨)', false, 'Der Start ist am 12. Apr. 2026 um 12 Uhr.'],
   ['D3', '"1.000.000" 천단위 (울리면 안 됨)', false, 'Der Preispool erreichte 1.000.000 Euro.'],
+  // ★날짜 범위 — Session 6 대회 일정표에서 오탐 11곳으로 드러난 실사용형
+  ['D3', '날짜 범위 "01.–06.09." (울리면 안 됨)', false, '| GPT German Poker Tour | 01.–06.09. | €140 + €50 Bounty |'],
+  ['D3', '날짜 범위 "16.09.–06.10." (울리면 안 됨)', false, '| King\'s Million | 16.09.–06.10. | Super ME €1.150 |'],
+  ['D3', '날짜 범위 + 연도 "22.–27.09.2026" (울리면 안 됨)', false, 'Die CAPT Graz läuft vom 22.–27.09.2026 in Graz.'],
+  ['D3', '연도 없는 날짜 "07.10." (울리면 안 됨)', false, 'Late Reg schließt am 07.10. um 20 Uhr.'],
+  ['D3', '날짜 범위 뒤 진짜 소수점 (잡아야 함)', true, 'Vom 01.–06.09. lag die Fee bei 8.3 % des Buy-ins.'],
 
   /* D4 — 기계번역 지문 */
   ['D4', '"Ausbeutung" (잡아야 함)', true, 'Die Ausbeutung schwacher Gegner bringt dir das meiste Geld.'],

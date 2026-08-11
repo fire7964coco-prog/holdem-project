@@ -37,7 +37,10 @@ Medium Stack | am meisten in der Falle, nicht der Short Stack
 
 ## Was ist die Bubble im Poker? (Und „an der Bubble“)
 
-**Die Bubble ist der Moment kurz vor dem Geld – der Punkt, an dem eine weitere Elimination jeden, der noch sitzt, in die bezahlten Plätze bringt.** Zahlt ein Turnier die Top 27, ist die Bubble bei ==28 verbliebenen Spielern== erreicht: Bustest du jetzt, bekommst du nichts; überlebst du eine weitere Elimination, ist dir ein Cash garantiert.
+> **Kurze Antwort**
+> Die Bubble ist der Moment kurz vor dem Geld – der Punkt, an dem eine weitere Elimination jeden, der noch sitzt, in die bezahlten Plätze bringt.
+
+Zahlt ein Turnier die Top 27, ist die Bubble bei ==28 verbliebenen Spielern== erreicht: Bustest du jetzt, bekommst du nichts; überlebst du eine weitere Elimination, ist dir ein Cash garantiert.
 
 Ein paar Begriffe, die du hören wirst:
 
@@ -49,17 +52,23 @@ Die Bubble ist deshalb so wichtig, weil Turnier-Payouts ==top-heavy== sind. Der 
 
 ---
 
-## Warum die Bubble alles ändert: ICM in einem Absatz
+## Warum ändert die Bubble alles? (ICM in einem Absatz)
 
-**Weil Turnierchips kein Geld sind – du gewinnst nur einen ersten Preis, also sind die Chips, die einen garantierten Cash schützen, mehr wert als die Chips, die nach mehr greifen.** Das ist das Independent Chip Model, und nahe eines Pay Jumps bedeutet es, dass ==das Risiko zu busten die Belohnung überwiegt, einen Coin Flip zu gewinnen==. Ein Call, der in Chips break-even ist, kann in echten Dollars ein Verlustzug sein.
+> **Kurze Antwort**
+> Weil Turnierchips kein Geld sind – du gewinnst nur einen ersten Preis, also sind die Chips, die einen garantierten Cash schützen, mehr wert als die Chips, die nach mehr greifen.
+
+Das ist das Independent Chip Model, und nahe eines Pay Jumps bedeutet es, dass ==das Risiko zu busten die Belohnung überwiegt, einen Coin Flip zu gewinnen==. Ein Call, der in Chips break-even ist, kann in echten Dollars ein Verlustzug sein.
 
 Du musst die Mathematik nicht live durchrechnen – dafür ist unser [ICM-Rechner](/calculator) da, und die volle Aufschlüsselung steht im [ICM-Guide](/de/blog/holdem-icm). Was am Tisch zählt, ist die Konsequenz: ==Calls werden viel tighter, aber Shoves bleiben weit==, weil Gewinnen ohne Showdown (Fold Equity) mehr wert ist als je zuvor, wenn alle anderen ängstlich spielen. Merke dir eine Zeile: **ziehe deine Calls zusammen, bevor du deine Shoves zusammenziehst.**
 
 ---
 
-## Die 3 Bubbles, denen du begegnest: Money vs Final-Table vs Satellite
+## Welche drei Bubbles gibt es im Poker?
 
-**Nicht alle Bubbles sind gleich – die Money Bubble, die Final-Table-Bubble und die Satellite-Bubble belohnen völlig verschiedene Strategien.** Sie zu verwechseln ist einer der teuersten Fehler im Turnierpoker.
+> **Kurze Antwort**
+> Nicht alle Bubbles sind gleich – die Money Bubble, die Final-Table-Bubble und die Satellite-Bubble belohnen völlig verschiedene Strategien.
+
+Sie zu verwechseln ist einer der teuersten Fehler im Turnierpoker.
 
 - ==**Money Bubble**== – der Sprung von nichts zu einem Min-Cash. Die Überlebensprämie ist hoch, aber der Min-Cash ist klein, also willst du trotzdem für die Top-Preise *akkumulieren*. Übe Druck aus, versteck dich nicht nur.
 - ==**Final-Table-Bubble**== – ein Platz vom Final Table entfernt. Der ICM-Druck ist hier meist am ==extremsten im gesamten Turnier==, weil jetzt die größten Preise im Spiel sind. Short Stacks haben am meisten von einem Deep Run zu gewinnen; ein Big Stack mit 9 Spielern am Tisch ist wohl der beste Platz im ganzen Event.
@@ -71,9 +80,12 @@ Behalte diese Unterscheidung im Kopf, denn der Rat Stack für Stack, der jetzt f
 
 ![ICM-Druck-Infografik – ein turmhoher Big-Chip-Stack ragt über einem Short Stack an der Money Bubble](/images/holdem-bubble-pressure.webp "An der Bubble lässt der ICM-Druck den Big Stack attackieren – Überleben ist mehr wert als die Chips in der Mitte")
 
-## Wie du einen BIG Stack an der Bubble spielst
+## Wie spielst du einen BIG Stack an der Bubble?
 
-**Attackiere unerbittlich – du hast die niedrigste Risikoprämie am Tisch, und alle anderen müssen deine Chips respektieren.** Der Big Stack ist der größte Profiteur der Bubble. Du kannst jeden busten; niemand kann dich busten. Also mach Druck:
+> **Kurze Antwort**
+> Attackiere unerbittlich – du hast die niedrigste Risikoprämie am Tisch, und alle anderen müssen deine Chips respektieren.
+
+Der Big Stack ist der größte Profiteur der Bubble. Du kannst jeden busten; niemand kann dich busten. Also mach Druck:
 
 - **Open wide und [3-bette](/de/blog/holdem-3bet) light**, besonders gegen die Medium Stacks zu deiner Rechten, die nicht callen können, ohne ihr Turnier zu riskieren.
 - **Ziele auf Medium Stacks, nicht auf die kürzesten Stacks.** Das ist die entscheidende Nuance: Short Stacks callen dich eher (sie haben weniger zu verlieren), und einen zu verdoppeln ist eine Katastrophe. Bully die Spieler, die ==am meisten Angst vorm Busten== haben – die Mediums.
@@ -83,9 +95,12 @@ Richtig gespielt kann ein Big Stack an der Bubble Chips drucken, ohne je eine Ha
 
 ---
 
-## Wie du einen MEDIUM Stack an der Bubble spielst
+## Wie spielst du einen MEDIUM Stack an der Bubble?
 
-**Der Medium Stack ist der Platz mit den meisten Fallen am Tisch – und das ist die Tatsache, die fast jeder Artikel falsch macht.** Die Leute nehmen an, der Short Stack fühle den meisten Druck. Nach der tatsächlichen Mathematik (Bubble Factor) ist es der ==Medium Stack==, der am eingeschränktesten ist: groß genug, um echte Prize Equity zu verlieren, nicht kurz genug, um Zocken zu rechtfertigen.
+> **Kurze Antwort**
+> Der Medium Stack ist der Platz mit den meisten Fallen am Tisch – und das ist die Tatsache, die fast jeder Artikel falsch macht.
+
+Die Leute nehmen an, der Short Stack fühle den meisten Druck. Nach der tatsächlichen Mathematik (Bubble Factor) ist es der ==Medium Stack==, der am eingeschränktesten ist: groß genug, um echte Prize Equity zu verlieren, nicht kurz genug, um Zocken zu rechtfertigen.
 
 Dein Playbook:
 
@@ -97,9 +112,12 @@ Wenn du den Schraubstock an der Bubble zugehen fühlst, bist du wahrscheinlich e
 
 ---
 
-## Wie du einen SHORT Stack an der Bubble spielst
+## Wie spielst du einen SHORT Stack an der Bubble?
 
-**Geh All-in oder folde – limpe oder calle nie off – und nutze die Tatsache, dass dein Bubble Factor tatsächlich niedriger ist als der des Medium Stacks.** Weil du ohnehin wahrscheinlich bustest, hilft dir ein Double-up enorm, also kannst du freier zocken als die Middle Stacks in der Falle. Aber du zockst, indem du ==derjenige bist, der shoved==, nicht derjenige, der callt – das volle [Push/Fold-Playbook für Short Stacks](/de/blog/holdem-short-stack "thumb:/images/holdem-short-stack-hero.webp") deckt die Mechanik ab:
+> **Kurze Antwort**
+> Geh All-in oder folde – limpe oder calle nie off – und nutze die Tatsache, dass dein Bubble Factor tatsächlich niedriger ist als der des Medium Stacks.
+
+Weil du ohnehin wahrscheinlich bustest, hilft dir ein Double-up enorm, also kannst du freier zocken als die Middle Stacks in der Falle. Aber du zockst, indem du ==derjenige bist, der shoved==, nicht derjenige, der callt – das volle [Push/Fold-Playbook für Short Stacks](/de/blog/holdem-short-stack "thumb:/images/holdem-short-stack-hero.webp") deckt die Mechanik ab:
 
 - **Shove oder Fold.** First-in-Aggression erhält deine [Fold Equity](/de/blog/holdem-when-to-fold), deine wertvollste Waffe. Open-Limpen oder Flat-Callen mit einem Short Stack wirft das weg.
 - **Warte, wenn es kürzere Stacks als dich gibt.** Sind zwei Spieler kürzer, kannst du marginale Hände folden und sie zuerst busten lassen – kostenlos hochladdern. Bist *du* der Kürzeste, kannst du nicht warten; finde einen Spot und shove, bevor du ausblinest.
@@ -109,9 +127,12 @@ Das Mantra des Short Stacks: Fold Equity ist alles. Shove zuerst und wähl deine
 
 ---
 
-## Bubble Factor & Risikoprämie: Die Zahl, die dir sagt, wann du folden musst
+## Was ist der Bubble Factor und wie rechnest du ihn aus?
 
-**Der „Bubble Factor“ misst, wie viel mehr dich das Verlieren deines Stacks kostet, als dir das Gewinnen desselben Pots hilft – und er übersetzt sich direkt in die zusätzliche Equity, die du für einen Call brauchst.** Ein Bubble Factor von 1,0 bedeutet, Chips und Geld bewegen sich zusammen (früh im Turnier). Ein Bubble Factor von 1,5 bedeutet, dass ==Busten 1,5× so weh tut, wie Gewinnen hilft==, also brauchst du einen viel größeren Edge, um deine Chips reinzukriegen.
+> **Kurze Antwort**
+> Der „Bubble Factor“ misst, wie viel mehr dich das Verlieren deines Stacks kostet, als dir das Gewinnen desselben Pots hilft – und er übersetzt sich direkt in die zusätzliche Equity, die du für einen Call brauchst.
+
+Ein Bubble Factor von 1,0 bedeutet, Chips und Geld bewegen sich zusammen (früh im Turnier). Ein Bubble Factor von 1,5 bedeutet, dass ==Busten 1,5× so weh tut, wie Gewinnen hilft==, also brauchst du einen viel größeren Edge, um deine Chips reinzukriegen.
 
 Hier der nützliche Teil: Die Equity, die du für einen Break-even-Call brauchst, ist ==c · BF ÷ (P + c · BF)==, wobei **c** der Call kostet und **P** der Pot ist, den du gewinnen würdest. Wenn du genau das riskierst, was du gewinnen kannst, fällt das auf die üblich zitierte Form zusammen – ==BF ÷ (1 + BF)== – und genau die benutzt die Tabelle unten.
 
@@ -133,9 +154,12 @@ Die andere Hälfte: Der Bubble Factor richtet sich danach, **wer dir gegenübers
 
 ---
 
-## Hand for Hand und Stalling: Die Mechanik, die niemand erklärt
+## Warum wird an der Bubble Hand for Hand gespielt?
 
-**Wenn das Geld nah ist, schalten Turniere auf „Hand for Hand“ – jeder Tisch spielt exakt eine Hand zur gleichen Zeit und wartet dann – genau um Spieler davon abzuhalten, sich ins Geld zu stallen.** Ohne das könnten Spieler an langsamen Tischen Hand um Hand folden, während schnellere Tische durch die Bubble brennen. Hand for Hand gleicht das Feld an:
+> **Kurze Antwort**
+> Wenn das Geld nah ist, schalten Turniere auf „Hand for Hand“ – jeder Tisch spielt exakt eine Hand zur gleichen Zeit und wartet dann – genau um Spieler davon abzuhalten, sich ins Geld zu stallen.
+
+Ohne das könnten Spieler an langsamen Tischen Hand um Hand folden, während schnellere Tische durch die Bubble brennen. Hand for Hand gleicht das Feld an:
 
 - **Wie es funktioniert:** Der Turnierdirektor pausiert die Uhr; alle Tische teilen eine Hand aus, und kein Tisch startet die nächste, bis jeder Tisch fertig ist. Busten zwei Spieler in derselben Hand-for-Hand-Runde am **selben Tisch**, nimmt derjenige mit weniger Chips zu Beginn der Hand die niedrigere (Bubble-)Platzierung; busten sie an **verschiedenen Tischen**, werden sie als gleichrangig gewertet und teilen sich die beiden betroffenen Auszahlungen.
 - **Stalling:** die volle Time Bank bei jeder Entscheidung nehmen, um weniger Hände zu sehen (und sich ins Geld zu folden). Big Stacks haben keinen Grund zu stallen – sie wollen mehr Hände zum Attackieren. Short und Medium Stacks stallen manchmal, um zu überleben, ==aber exzessives Stalling kann einen Clock-Call oder eine Penalty einbringen==, also tanke in Maßen.
@@ -143,9 +167,12 @@ Die andere Hälfte: Der Bubble Factor richtet sich danach, **wer dir gegenübers
 
 ---
 
-## Die Satellite-Bubble: Wann du Asse foldest
+## Was macht die Satellite-Bubble so besonders?
 
-**Bei einem Satellite zahlt jeder Platz gleich – also foldest du in dem Moment, in dem dein Stack sicher innerhalb der Bubble ist, alles, inklusive Pocket Aces.** Das ist der kontraintuitivste Spot im Poker, und er ist korrekt. Wenn dir das Gewinnen eines Flips ==denselben Platz gibt, den du bereits gesichert hast==, während das Verlieren dich eliminiert, gibt es keine Belohnung und ein enormes Risiko:
+> **Kurze Antwort**
+> Bei einem Satellite zahlt jeder Platz gleich – also foldest du in dem Moment, in dem dein Stack sicher innerhalb der Bubble ist, alles, inklusive Pocket Aces.
+
+Das ist der kontraintuitivste Spot im Poker, und er ist korrekt. Wenn dir das Gewinnen eines Flips ==denselben Platz gibt, den du bereits gesichert hast==, während das Verlieren dich eliminiert, gibt es keine Belohnung und ein enormes Risiko:
 
 - **Sobald dein Platz mathematisch sicher ist** (du bist weit genug innerhalb der Bubble, dass du nicht mehr eingeholt werden kannst), folde jede Hand – ja, sogar AA und KK – und lass die kürzeren Stacks es ausfechten.
 - **Stalle jede Hand**, um diesen Stack zu bewahren. An einer Satellite-Bubble ist Stalling nicht nur toleriert, es ist optimal.
@@ -155,9 +182,12 @@ Wenn du eine Sache aus diesem Abschnitt mitnimmst: Ein Satellite ist kein normal
 
 ---
 
-## Der größte Bubble-Fehler: Für den Min-Cash spielen
+## Was ist der größte Fehler an der Bubble?
 
-**Sich zum Min-Cash zu folden fühlt sich sicher an, tauscht aber das echte Geld des Turniers gegen seinen kleinsten Preis.** Weil Payouts top-heavy sind, ist der Min-Cash ein Boden, kein Ziel – das Geld ist oben an der Leiter, und du erreichst es nur, indem du Chips hast, wenn die Bubble platzt.
+> **Kurze Antwort**
+> Sich zum Min-Cash zu folden fühlt sich sicher an, tauscht aber das echte Geld des Turniers gegen seinen kleinsten Preis.
+
+Weil Payouts top-heavy sind, ist der Min-Cash ein Boden, kein Ziel – das Geld ist oben an der Leiter, und du erreichst es nur, indem du Chips hast, wenn die Bubble platzt.
 
 Die Spieler, die Turniere gewinnen, behandeln die Bubble als ==Gelegenheit zu akkumulieren==, während alle anderen sich verstecken. Überleben zählt für ein paar Hände rund um den Pay Jump; nachdem die Bubble geplatzt ist, lässt der ICM-Druck nach, und es geht zurück zum Stack-Aufbau für den Sieg. Respektiere die Bubble – und hör auf, ängstlich zu spielen, sobald sie vorbei ist.
 

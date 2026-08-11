@@ -37,7 +37,10 @@ Short Stack | MEHR wert als sein Chipanteil
 
 ## Was ist ICM im Poker?
 
-**ICM (das Independent Chip Model) rechnet einen Chipstack in seinen echten Preisgeldwert um, anhand der verbleibenden Payouts und der Stackgröße jedes Spielers.** Es beantwortet eine Frage: ==wenn das Turnier gerade jetzt mit diesen Stacks endete, wie viel ist mein Anteil am Preispool tatsächlich in Dollar wert?==
+> **Kurze Antwort**
+> ICM (das Independent Chip Model) rechnet einen Chipstack in seinen echten Preisgeldwert um, anhand der verbleibenden Payouts und der Stackgröße jedes Spielers.
+
+Es beantwortet eine Frage: ==wenn das Turnier gerade jetzt mit diesen Stacks endete, wie viel ist mein Anteil am Preispool tatsächlich in Dollar wert?==
 
 Es funktioniert, indem es schätzt, wie oft jeder Spieler auf jeder bezahlten Position landet – erster, zweiter, dritter und so weiter – ausgehend von seinem Chipanteil, und dann diese Wahrscheinlichkeiten mit den Payouts multipliziert. Je größer dein Stack, desto öfter landest du weit oben; aber weil ==das Top-Preisgeld gedeckelt ist, kaufen zusätzliche Chips immer weniger Geld.==
 
@@ -45,9 +48,12 @@ Der entscheidende mentale Wandel: Im Cash Game ist ein Chip ein Dollar, Punkt. I
 
 ---
 
-## Warum deine Chips in Geld nicht ihren Nennwert wert sind
+## Warum sind deine Chips in Geld nicht ihren Nennwert wert?
 
-**Weil Preisgeld „kopflastig“ ist und unter dir festgeschrieben liegt.** Sagen wir, drei Preise zahlen $50 / $30 / $20. In dem Moment, in dem du im Geld bist, sind dir mindestens $20 garantiert – also sind die Chips, die diese $20 schützen, kostbar, während die Chips, die nach dem ersten Platz greifen, ein Preisgeld jagen, das du nur einmal gewinnen kannst.
+> **Kurze Antwort**
+> Weil Preisgeld „kopflastig“ ist und unter dir festgeschrieben liegt.
+
+Sagen wir, drei Preise zahlen $50 / $30 / $20. In dem Moment, in dem du im Geld bist, sind dir mindestens $20 garantiert – also sind die Chips, die diese $20 schützen, kostbar, während die Chips, die nach dem ersten Platz greifen, ein Preisgeld jagen, das du nur einmal gewinnen kannst.
 
 Das lässt die Chip-zu-Geld-Kurve ==knicken==: die ersten Chips (Überleben) sind viel wert, die letzten Chips (der Griff nach dem Sieg) sind weniger wert. Ein Spieler mit der Hälfte der Chips besitzt nicht die Hälfte des Preispools – er besitzt merklich weniger, weil er nicht besser als erster werden kann, aber er *kann* immer noch busten.
 
@@ -57,7 +63,10 @@ Dreh es um, und der Short Stack ist der Gewinner dieser Mathematik. Er hat berei
 
 ## Wie wird ICM berechnet? (Das Malmuth–Harville-Modell)
 
-**ICM ordnet jedem Spieler seine Wahrscheinlichkeit zu, auf jeder Position zu landen, rein basierend auf der Stackgröße, und multipliziert dann mit den Payouts.** Die Methode wird oft Malmuth–Harville-Modell genannt – die Finish-Wahrscheinlichkeits-Mathematik stammt aus David Harvilles Arbeit zu Pferderennquoten aus den 1970ern, die Mason Malmuth auf Poker anwandte.
+> **Kurze Antwort**
+> ICM ordnet jedem Spieler seine Wahrscheinlichkeit zu, auf jeder Position zu landen, rein basierend auf der Stackgröße, und multipliziert dann mit den Payouts.
+
+Die Methode wird oft Malmuth–Harville-Modell genannt – die Finish-Wahrscheinlichkeits-Mathematik stammt aus David Harvilles Arbeit zu Pferderennquoten aus den 1970ern, die Mason Malmuth auf Poker anwandte.
 
 Die Regel ist einfach und rekursiv:
 
@@ -97,7 +106,10 @@ Da steht es in Zahlen: der Leader hat ==die Hälfte der Chips, aber nur 38,4% de
 
 ## ICM vs Chip EV – Was ist der Unterschied?
 
-**Chip EV misst eine Entscheidung in gewonnenen oder verlorenen Chips; ICM (oder „$EV“) misst sie in echtem Preisgeld. Sie stimmen früh überein und trennen sich spät hart.** Früh in einem Turnier, mit winzigen Pay Jumps weit weg, ist ein Chip im Grunde ein Chip – du spielst [Chip EV](/de/blog/holdem-equity "thumb:/images/holdem-equity-hero.webp") und akkumulierst unerbittlich. Nahe am Geld und am Final Table übernimmt ICM.
+> **Kurze Antwort**
+> Chip EV misst eine Entscheidung in gewonnenen oder verlorenen Chips; ICM (oder „$EV“) misst sie in echtem Preisgeld. Sie stimmen früh überein und trennen sich spät hart.
+
+Früh in einem Turnier, mit winzigen Pay Jumps weit weg, ist ein Chip im Grunde ein Chip – du spielst [Chip EV](/de/blog/holdem-equity "thumb:/images/holdem-equity-hero.webp") und akkumulierst unerbittlich. Nahe am Geld und am Final Table übernimmt ICM.
 
 Der klassische Konflikt ist ein marginaler All-in-*Call*. Im Chip EV kann ein Coinflip um einen großen Pot in Ordnung oder sogar gut sein – du gewinnst so viele Chips, wie du verlierst. Im ICM kann es ein klarer ==Fold== sein, weil Busten dich festgeschriebenes Preisgeld kostet, das du nicht zurückbekommst, während die Chips, die du gewinnen würdest, weniger als den Nennwert wert sind.
 
@@ -105,9 +117,12 @@ Genau hier hatte ich diese Jacks verkehrt herum verstanden. Die Steuer wird auf 
 
 ---
 
-## Die „ICM-Steuer“: Warum Chips zu verlieren mehr schmerzt, als zu gewinnen hilft
+## Warum schmerzt ein Chipverlust mehr, als ein Chipgewinn hilft?
 
-**Die „ICM-Steuer“ ist die Lücke zwischen deinem Chipprozentsatz und deinem echten Geldprozentsatz – Wert, der in dem Moment verschwindet, in dem die Stacks kopflastig werden.** Im durchgerechneten Beispiel sagen die Chips des Leaders 50%, aber das Geld sagt 38,4%: eine ==ICM-Steuer von 11,6 Punkten== darauf, der Big Stack zu sein.
+> **Kurze Antwort**
+> Die „ICM-Steuer“ ist die Lücke zwischen deinem Chipprozentsatz und deinem echten Geldprozentsatz – Wert, der in dem Moment verschwindet, in dem die Stacks kopflastig werden.
+
+Im durchgerechneten Beispiel sagen die Chips des Leaders 50%, aber das Geld sagt 38,4%: eine ==ICM-Steuer von 11,6 Punkten== darauf, der Big Stack zu sein.
 
 Die Steuer zeigt sich in jedem All-in als **Risk Premium** – die zusätzliche Equity, die du *über* dem Chip-EV-Break-even brauchst, bevor ein Call in Dollar tatsächlich profitabel ist. Wenn die Chip-Mathematik sagt, du brauchst 40% zum Callen, verlangt ICM vielleicht 48-50%, weil die Kehrseite (Busten, verlorene Pay-Jump-Equity) den Vorteil (Chips weniger als Nennwert wert) überwiegt.
 
@@ -117,9 +132,12 @@ Der Spieler, der das am stärksten spürt, ist der **Medium Stack an der Bubble*
 
 ![Ein mittlerer Turnierstack foldet an der Money-Bubble gegen den Shove eines Big Stacks, Chips und eine Payout-Leiter im Bild – der Moment, in dem ICM-Druck einen normalen Call in einen Fold verwandelt](/images/holdem-icm-pressure.webp "ICM-Druck: der Medium Stack foldet, weil Busten festgeschriebenes Preisgeld kostet, das die Chips nicht zurückkaufen können")
 
-## Bubble Factor & Risk Premium: Wie ICM deine Shoves und Calls verändert
+## Wie verändern Bubble Factor und Risikoprämie deine Shoves und Calls?
 
-**Der „Bubble Factor“ misst, wie viel mehr das Verlieren deiner Chips dich kostet, als das Gewinnen derselben Chips hilft – und er schnellt direkt vor jedem Pay Jump nach oben.** Ein Bubble Factor von 1,0 bedeutet, Chips und Geld bewegen sich zusammen (frühes Spiel). Ein Bubble Factor von 1,5 bedeutet, ein verlorener Pot schmerzt 1,5× so sehr, wie ein identischer gewonnener Pot hilft – also brauchst du einen viel größeren Edge, um dich einzumischen.
+> **Kurze Antwort**
+> Der „Bubble Factor“ misst, wie viel mehr das Verlieren deiner Chips dich kostet, als das Gewinnen derselben Chips hilft – und er schnellt direkt vor jedem Pay Jump nach oben.
+
+Ein Bubble Factor von 1,0 bedeutet, Chips und Geld bewegen sich zusammen (frühes Spiel). Ein Bubble Factor von 1,5 bedeutet, ein verlorener Pot schmerzt 1,5× so sehr, wie ein identischer gewonnener Pot hilft – also brauchst du einen viel größeren Edge, um dich einzumischen.
 
 Zwei praktische Regeln folgen daraus:
 
@@ -130,9 +148,12 @@ Der Albtraum-Sitzplatz ist der Medium Stack, der angeshovt wird – der Hände f
 
 ---
 
-## ICM Deal vs Chip Chop: Wie man einen Final-Table-Preispool aufteilt
+## Wie teilt man am Final Table den Preispool auf? (ICM Deal vs. Chip Chop)
 
-**Ein Chip Chop teilt das verbleibende Geld nach rohem Chipprozentsatz auf; ein ICM Deal teilt es nach dem ICM-Dollarwert jedes Spielers auf. Der Chip Chop begünstigt Big Stacks, der ICM Deal ist fairer gegenüber Short Stacks.** Wenn Spieler sich einigen, ein Turnier früh zu beenden und die Preise aufzuteilen, sind das die zwei Methoden auf dem Tisch – und den Unterschied zu kennen, ist echtes Geld wert.
+> **Kurze Antwort**
+> Ein Chip Chop teilt das verbleibende Geld nach rohem Chipprozentsatz auf; ein ICM Deal teilt es nach dem ICM-Dollarwert jedes Spielers auf. Der Chip Chop begünstigt Big Stacks, der ICM Deal ist fairer gegenüber Short Stacks.
+
+Wenn Spieler sich einigen, ein Turnier früh zu beenden und die Preise aufzuteilen, sind das die zwei Methoden auf dem Tisch – und den Unterschied zu kennen, ist echtes Geld wert.
 
 Sagen wir, drei Spieler mit 50% / 30% / 20% der Chips teilen einen verbleibenden Pool von ==$1.500== auf (der $900 / $400 / $200 zahlt):
 
@@ -152,7 +173,10 @@ Der Short Stack bekommt aus einem ICM Deal ==$97 mehr== als aus einem Chip Chop,
 
 ## Wann zählt ICM am meisten – und wann solltest du es ignorieren?
 
-**ICM zählt am meisten nahe an Pay Jumps und am wenigsten, wenn sie weit weg sind.** Verlass dich auf diese Spots:
+> **Kurze Antwort**
+> ICM zählt am meisten nahe an Pay Jumps und am wenigsten, wenn sie weit weg sind.
+
+Verlass dich auf diese Spots:
 
 - **Die [Money-Bubble](/de/blog/holdem-bubble "thumb:/images/holdem-bubble-hero.webp")** – der größte Sprung von allen ist von $0 zu einer Auszahlung, also erreichen die Risk Premiums ihren Höhepunkt.
 - **Die Final-Table-Bubble und jeder Pay Jump am Final Table** – jede Leiterstufe ist echtes Geld.
@@ -170,7 +194,10 @@ Ein häufiges Leak ist das Überanwenden von ICM: sich zu einem Short Stack heru
 
 ## Wie genau ist ICM? Seine Grenzen
 
-**ICM ist das beste einfache Modell, das wir haben, aber es ist eine Näherung – es nimmt an, dass jeder Spieler gleich stark ist, und ignoriert fast alles außer den Stackgrößen.** Sei ehrlich darüber, was es weglässt:
+> **Kurze Antwort**
+> ICM ist das beste einfache Modell, das wir haben, aber es ist eine Näherung – es nimmt an, dass jeder Spieler gleich stark ist, und ignoriert fast alles außer den Stackgrößen.
+
+Sei ehrlich darüber, was es weglässt:
 
 - **Skill.** ICM behandelt einen Weltmeister und einen Erstlingsspieler mit gleichen Stacks als gleich. Die Chips eines besseren Spielers sind mehr wert, als das Modell sagt.
 - **Position.** Ein Stack von 3 Big Blinds am Button (der die Blinds zuletzt zahlt und sich damit noch ein paar freie Hände kauft, bevor er reinmuss) ist mehr wert als derselbe Stack im Big Blind (nächste Hand zwangsweise All-in). ICM kann die Sitzplätze nicht sehen.

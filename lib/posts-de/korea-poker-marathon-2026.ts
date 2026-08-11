@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Koreas beste Herbstmarathons (Chuncheon 25. Okt, JTBC Seoul 1. Nov, Garmin Run 15. Nov) treffen auf perfektes Laufwetter. Das Paradise City Casino nahe dem Flughafen Incheon bietet ganzjährig Cash Games – nur für Ausländer, 10 Min. vom Terminal. Eine Reise deckt beides ab.",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-08-10",
+  updated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "14 Min.",
   emoji: "🏃",
@@ -47,7 +47,7 @@ Korea ist der Ort, an dem beides perfekt zusammenkommt. ==**Weltklasse-Herbstmar
 
 ---
 
-## Warum Korea das perfekte Run + Play Ziel ist
+## Warum ist Korea das perfekte Ziel für Laufen und Poker?
 
 Der Fall ist nicht kompliziert. Es geht um Timing und Lage.
 
@@ -239,7 +239,7 @@ Im Dezember keine Marathon-Überschneidung, aber die Cash Games in Paradise City
 
 ---
 
-## Paradise City Casino – die Poker-Seite
+## Wie ist die Pokerseite im Paradise City Casino?
 
 Während die Marathons von Okt–Nov laufen, läuft ==**Paradise City Casino**== ganzjährig. Es ist kein reiner Turnier-Austragungsort – Cash-Game-Tische sind täglich für internationale Spieler in Betrieb.
 
@@ -343,7 +343,7 @@ Der sauberste Doppel-Coup: APT Incheon (7.–16. Aug) → in Seoul ausruhen → 
 
 ---
 
-## Beispiel-Reisepläne – so kombinierst du beides
+## Wie kombinierst du Marathon und Poker in einer Reise?
 
 **Option A: APT Incheon + JTBC Seoul (verlängerter Aufenthalt)**
 
@@ -387,7 +387,7 @@ Der sauberste Doppel-Coup: APT Incheon (7.–16. Aug) → in Seoul ausruhen → 
 
 ---
 
-## Han-River-Laufen – Seouls 80 km langer Uferweg
+## Wo läufst du in Seoul? Der 80 km lange Han-Uferweg
 
 Zwischen den Renntagen oder Turnier-Sessions gibt es einen Ort, an dem jeder Läufer in Seoul landet: ==**Hangang (Han-River) Park**==.
 
