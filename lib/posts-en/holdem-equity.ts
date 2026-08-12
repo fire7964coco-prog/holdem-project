@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Poker Equity Explained — Win %, Fold Equity, and Realization",
   seoTitle: "Your Win % Isn't What You Keep — Poker Equity Explained",
   desc: "Equity is your share of the pot — but you don't always keep it. Why 40% equity isn't 40% of wins, plus fold equity, realization, and all-in equity explained.",
-  tldr: "Equity is your share of the pot — the percentage of the time your hand wins if all the cards are dealt. You call when your equity beats the pot odds, but position and betting mean you rarely keep your full equity — and fold equity lets you win pots even when your hand is behind.",
+  tldr: "Equity is your share of the pot — the slice your hand is owed on average once all the cards are dealt, with split pots counted pro rata. You call when your equity beats the pot odds, but position and betting mean you rarely keep your full equity — and fold equity lets you win pots even when your hand is behind.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-07-18",
+  updated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🥧",
@@ -27,7 +27,7 @@ The raw win-percentages behind every hand come from the [poker odds and probabil
 ### Equity at a glance
 
 :::stripe
-pot × win% | What your hand is worth right now
+pot × equity% | What your hand is worth right now
 raw × realization% | What you actually collect
 bet ÷ (pot + bet) | The fold % a pure bluff needs
 :::
@@ -36,7 +36,7 @@ bet ÷ (pot + bet) | The fold % a pure bluff needs
 
 ## What Is Equity in Poker?
 
-**Equity is your share of the pot — the percentage of the time your hand wins if the hand is played all the way to showdown.** If the pot is $100 and you're 60% to win, your hand is worth ==$60 right now==, even though the chips haven't been pushed yet.
+**Equity is your share of the pot — the slice your hand is owed on average when the hand is played all the way to showdown, with split pots counted pro rata.** If the pot is $100 and 60% of it is owed to you, your hand is worth ==$60 right now==, even though the chips haven't been pushed yet.
 
 Think of it as your slice of the pie. Every hand still live has a slice; the slices always add up to 100%. When you're heads-up and 70% to win a $200 pot, ==g:$140 of it is "yours"== in the long run — you won't win *this* pot 70% of the time and lose the rest, but across a thousand identical spots, that's the share you collect.
 
@@ -61,7 +61,7 @@ That's the whole reason equity matters: it turns "am I ahead?" into "how much of
 
 </div>
 
-**Preflop matchups (memorize these):** all-in before the flop, the same fights repeat. Learn these and you'll instantly know your equity in most preflop all-ins.
+**Preflop matchups (memorize these):** all-in before the flop, the same fights repeat. Learn these and you'll instantly know your equity in most preflop all-ins. Every figure below counts split pots pro rata.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -70,7 +70,7 @@ That's the whole reason equity matters: it turns "am I ahead?" into "how much of
 | AA vs KK | 82% / 18% | Overpair dominates |
 | QQ vs AK | ~57% / ~43% | Pair edges the "race" |
 | 22 vs AK | ~52% / ~48% | The true coin flip |
-| AK vs AQ | ~73% / ~23% | Domination (rest chops) |
+| AK vs AQ | ~74% / ~26% | Domination |
 | 88 vs A7 | ~70% / ~30% | Pair vs one overcard |
 
 </div>
@@ -136,7 +136,7 @@ This is the single most important idea most beginner guides leave out, and it's 
 
 ## All-In Equity: When Raw Equity Is All That Matters
 
-**When you're all-in, there are no more decisions — so you realize 100% of your equity, and raw equity becomes the final word.** Every complication above (position, folding, getting bet off) disappears, because no more betting can happen. Whatever your win-percentage is, that's exactly the share of the pot you'll collect over time.
+**When you're all-in, there are no more decisions — so you realize 100% of your equity, and raw equity becomes the final word.** Every complication above (position, folding, getting bet off) disappears, because no more betting can happen. Whatever your raw equity is — your share of the pot, splits counted pro rata — that's exactly what you'll collect over time.
 
 This is why preflop all-in equities matter so much: AA all-in against KK banks its full ==82%== — no realization tax, no fold equity, just the raw number playing out. It's also why a "coin flip" (22 vs AK at ~52/48) is a genuine near-tossup all-in, even though the same two hands played postflop would diverge wildly based on the board and who has position.
 
@@ -183,7 +183,7 @@ The night I mentioned at the top, I was making step one and stopping — countin
 
 **Q. What is equity in poker?**
 
-A. Equity is your share of the pot — the percentage of the time your hand wins if the hand goes to showdown. If the pot is $100 and you're 60% to win, your equity is worth $60. It's the core number you compare against the price of a call to decide whether to continue.
+A. Equity is your share of the pot — the slice your hand is owed on average if the hand goes to showdown, with split pots counted pro rata. If the pot is $100 and 60% of it is owed to you, your equity is worth $60. It's the core number you compare against the price of a call to decide whether to continue.
 
 **Q. How do you calculate equity in poker?**
 
@@ -191,7 +191,7 @@ A. For draws, use the Rule of 4 and 2: multiply your outs by 4 on the flop (two 
 
 **Q. What's the difference between equity and pot odds?**
 
-A. Equity is your chance of winning (what you have); pot odds are the equity you need to break even on a call (what the price demands). The rule is simple: call when your equity is greater than your pot odds. Pot odds come from the bet size; equity comes from your hand and the board.
+A. Equity is your share of the pot (what you have); pot odds are the equity you need to break even on a call (what the price demands). The rule is simple: call when your equity is greater than your pot odds. Pot odds come from the bet size; equity comes from your hand and the board.
 
 **Q. Is 50% equity good in poker?**
 
@@ -199,7 +199,7 @@ A. It's neither good nor bad on its own — 50% is a coin flip. Whether it's a c
 
 **Q. What does 20% equity mean?**
 
-A. It means your hand wins about 20% of the time if the hand is played to showdown — so in a $100 pot your share is worth roughly $20 in the long run. Whether 20% is a call depends on the price: against a quarter-pot bet you need about 17%, so 20% is fine; against a half-pot bet (25% needed) it's a fold. Any equity figure only means something next to the pot odds.
+A. It means a fifth of the pot belongs to your hand in the long run — so in a $100 pot your share is worth roughly $20. Whether 20% is a call depends on the price: against a quarter-pot bet you need about 17%, so 20% is fine; against a half-pot bet (25% needed) it's a fold. Any equity figure only means something next to the pot odds.
 
 **Q. How much fold equity do I need to bluff profitably?**
 
@@ -211,7 +211,7 @@ A. Equity realization is how much of your raw equity you actually collect. Reali
 
 **Q. What is all-in equity?**
 
-A. All-in equity is simply your raw win-percentage when no more betting can happen. Because there are no future decisions, you realize 100% of it, so raw equity becomes the exact share of the pot you collect over time. It's the one spot where "equity equals pot share" is literally true.
+A. All-in equity is simply your raw equity — your share of the pot, splits counted pro rata — when no more betting can happen. Because there are no future decisions, you realize 100% of it, so raw equity becomes the exact share of the pot you collect over time. It's the one spot where "equity equals pot share" is literally true.
 
 **Q. Why does my equity drop in multiway pots?**
 
@@ -223,13 +223,13 @@ A. Expected value is the average amount a decision wins or loses over the long r
 
 **Q. What's the difference between equity and EV?**
 
-A. Equity is your chance of winning the pot (a percentage); EV is whether *acting* on that equity actually makes money (an amount, in chips). You can hold high equity and still make a −EV call if the price is wrong, or low equity and a +EV bluff if your opponent folds often enough. Equity tells you where you stand; EV tells you whether the decision profits.
+A. Equity is your share of *this* pot if the hand is played out (a percentage); EV is whether *acting* on that equity actually makes money (an amount, in chips). You can hold high equity and still make a −EV call if the price is wrong, or low equity and a +EV bluff if your opponent folds often enough. Equity tells you where you stand; EV tells you whether the decision profits.
 
 ---
 
 ## The 3 Things to Remember
 
-1. **Equity is your share of the pot** — win% × pot size. Call when it beats your pot odds. That comparison is the backbone of every decision.
+1. **Equity is your share of the pot** — equity% × pot size. Call when it beats your pot odds. That comparison is the backbone of every decision.
 2. **You rarely keep all of it.** Realized equity = raw × realization%, and position is the biggest factor. Raw equity is the ceiling, not the payout.
 3. **Aggression manufactures equity.** Fold equity lets a bet win pots your hand would lose — but it collapses multiway, where you need everyone to fold.
 

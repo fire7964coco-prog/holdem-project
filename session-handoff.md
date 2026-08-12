@@ -13,17 +13,20 @@
 ### ▶▶ 이 세션의 본체 = **미러 전파 잔여 5편** ← 최우선
 
 de 검수에서 닫은 결함이 **EN 마스터 발원**임이 실증돼, 전 로케일로 옮기는 중이다.
-**4편은 끝났고 5편이 남았다.** 경위·검산치는 `WORKLOG.md` 2026-08-12 (5)~(8).
+**5편은 끝났고 4편이 남았다.** 경위·검산치는 `WORKLOG.md` 2026-08-12 (5)~(9).
 
 | 글 | 로케일 | 남은 결함 |
 |---|---:|---|
-| `holdem-equity` | 8 | 「Equity = Win%」 **6곳**(tldr·stripe 공식·핵심 정의문·FAQ 2·「3가지」) · 매치업 표 `AK vs AQ` **73/23 → 74/26** |
 | `holdem-flush-vs-straight` | 8 | 「2배」 **4곳**(tldr·본문·FAQ 2) — 7장은 **1,53배** · 플러시 스플릿 누락 · 하트 최상단 조건 |
 | `holdem-implied-odds` | 8 | 국면 라벨 3곳(→ `(Turn → River)`) · 「Flop- und Turn-Konzept」(프리플랍 세트마이닝이 반례) |
 | `holdem-outs` | 8 | FAQ 2장 계산 **전제 누락**(그 값은 «더 낼 게 없을 때»만 쓴다) |
 | `holdem-hand-rankings` | **13** | 용어 동일시 · 「대부분의 팟은 원페어」(43,82% < 50%) · 무늬 서열 한정 |
 
-🔴 **순서 = equity → flush-vs-straight → implied-odds/outs → hand-rankings.**
+🔴 **순서 = flush-vs-straight → implied-odds/outs → hand-rankings.**
+
+> ✅ **`holdem-equity` 8 로케일 종료(2026-08-12).** 실측은 원장의 「6곳」이 아니라 **EN 14 · es/ja/zh 13 ·
+> zh-hant 11 · pt/id 11자리**였다. 이번에도 「N곳」이 깨졌다 — 경위는 WORKLOG (9).
+> 🔴 **그 과정에서 형제 글 `holdem-pot-odds`에 같은 등식이 실재함을 확인했다**(아래 「새로 확인된 잔여」).
 
 #### 착수 전에 알아야 할 것
 
@@ -50,6 +53,15 @@ de 검수에서 닫은 결함이 **EN 마스터 발원**임이 실증돼, 전 �
 보드 스트레이트 FAQ **4곳**(id·ja·pt엔 그 FAQ가 없다) · 캡 **25곳** · kicker **8곳**(KO 없음).
 🔴 **한정어를 «덧붙이는» 정정은 금지** — 거짓 주장 문자열이 살아남아 게이트에도 안 잡힌다.
    단 기존 서술이 «참이지만 불완전»하면 덧붙이는 게 맞다(reading-the-board Rule 75가 그 예).
+
+### 🔴 새로 확인된 잔여 — `holdem-pot-odds` 「Equity = Gewinnchance」 (2026-08-12 실측)
+
+de S3 검수장이 **「경계 밖 관찰」**로만 남겨 둔 자리를 equity 미러 중에 직접 열어 확인했다 — **실재한다.**
+
+- `lib/posts-de/holdem-pot-odds.ts:134` — 「**Equity** ist deine tatsächliche **Gewinnchance**」 = equity가 닫은 바로 그 등식
+- 같은 글 **50 · 59 · 198 · 210행**이 비교 대상을 전부 `Gewinnchance`로 부른다(문장은 참이지만 낱말이 같은 오해를 심는다)
+- 🔴 **8 로케일 전부에 있을 가능성이 높다 — 착수 전 로케일별로 직접 grep해 세라.**
+- equity 커밋에 섞지 않았다(글이 다르다). **`holdem-pot-odds`를 여는 트랙에서 함께 닫아라.**
 
 ### ▶ 그다음 트랙 (미러가 끝나면)
 
@@ -126,7 +138,7 @@ de 검수에서 닫은 결함이 **EN 마스터 발원**임이 실증돼, 전 �
 | `check:hreflang` | 481페이지 · 50세트 · 🔴 0건 |
 | 미러 드리프트 | de: 🔴 **3** · 🟠 추적불가 **7**편 (불변) |
 | de 검수 지시서 | ✅ **전 트랙 종료**(§1 WRONG 4 · §2 축 2 · §3 M1~M3 · §4 RISKY 61 · 3층 QA 4렌즈) |
-| 미러 전파 | ✅ showdown-rules(25·9자리) · betting-actions(25·6종) · split-pot(8) · reading-the-board(8) / 🔴 **잔여 5편** |
+| 미러 전파 | ✅ showdown-rules(25·9자리) · betting-actions(25·6종) · split-pot(8) · reading-the-board(8) · **equity(8·EN 14자리)** / 🔴 **잔여 4편** |
 
 > 📚 상시 함정·렌즈 운용 = `REVIEW-PROTOCOL.md` 맨 아래 · 다국어 경화 교훈 = `docs/lessons-i18n-hardening.md`.
 > **트랙 착수 전 둘 다 읽어라.**
@@ -157,8 +169,11 @@ de 검수에서 닫은 결함이 **EN 마스터 발원**임이 실증돼, 전 �
 > 미러 전파로 아래 글들을 **전 로케일에서 열었는데 C층 지시서를 확인하지 않았다**:
 > `flush-vs-straight`(#2 #8 #25) · `betting-actions`(#2 #7) · `split-pot-rules`(#21) ·
 > `texas-…-beginners`(#28 #29) · `game-order`(#31) · `kicker`(#18).
-> **「그 글을 열 때 닫는다」는 이 트랙의 전제가 이번에 깨졌다.** 미러 잔여 5편을 열 때는
+> **「그 글을 열 때 닫는다」는 이 트랙의 전제가 이번에 깨졌다.** 미러 잔여 4편을 열 때는
 > **파일을 열기 전에 지시서부터 찾아라**, 그리고 위 6편은 별도로 한 번 훑어야 한다.
+>
+> 🟢 **08-12 equity 세션은 이 순서를 지켰다** — 착수 전 C층 지시서를 grep해 **`holdem-equity`는 등록 항목 없음**을
+> 확인하고 열었다. `flush-vs-straight`는 **#2 #8 #25가 등록돼 있다**(#8·#25 = 「2배」 = 미러 항목과 같은 자리).
 
 | 글 | 잔여 번호 | 어느 트랙에서 열리나 |
 |---|---|---|

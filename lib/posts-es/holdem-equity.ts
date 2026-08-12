@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "El equity en el póker explicado — % de victoria, fold equity y realización",
   seoTitle: "Tu % de victoria no es lo que te llevas — el equity explicado",
   desc: "El equity es tu parte del bote, pero no siempre te la quedas. Por qué un 40% de equity no es ganar el 40%, más fold equity, realización y equity all-in.",
-  tldr: "El equity es tu parte del bote: el porcentaje de veces que tu mano gana si se reparten todas las cartas. Igualas cuando tu equity supera a tus pot odds, pero la posición y las apuestas hacen que casi nunca te quedes con todo tu equity — y el fold equity te deja ganar botes incluso cuando tu mano va por detrás.",
+  tldr: "El equity es tu parte del bote: la parte que le corresponde a tu mano en promedio cuando se reparten todas las cartas, contando los empates en su parte proporcional. Igualas cuando tu equity supera a tus pot odds, pero la posición y las apuestas hacen que casi nunca te quedes con todo tu equity — y el fold equity te deja ganar botes incluso cuando tu mano va por detrás.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-07-24",
-  masterUpdated: "2026-07-18",
+  updated: "2026-08-12",
+  masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🥧",
@@ -28,7 +28,7 @@ Los porcentajes de victoria en bruto que hay detrás de cada mano salen de la [t
 ### El equity de un vistazo
 
 :::stripe
-bote × %victoria | Lo que vale tu mano ahora mismo
+bote × %equity | Lo que vale tu mano ahora mismo
 bruto × %realización | Lo que de verdad cobras
 apuesta ÷ (bote + apuesta) | El % de fold que necesita un farol puro
 :::
@@ -37,7 +37,7 @@ apuesta ÷ (bote + apuesta) | El % de fold que necesita un farol puro
 
 ## ¿Qué es el equity en el póker?
 
-**El equity es tu parte del bote: el porcentaje de veces que tu mano gana si se juega hasta el showdown.** Si el bote es de $100 y vas un 60% a ganar, tu mano vale ==$60 ahora mismo==, aunque las fichas todavía no se hayan empujado.
+**El equity es tu parte del bote: la parte que le corresponde a tu mano en promedio si se juega hasta el showdown, con los empates contando en su parte proporcional.** Si el bote es de $100 y te corresponde un 60% de él, tu mano vale ==$60 ahora mismo==, aunque las fichas todavía no se hayan empujado.
 
 Piénsalo como tu trozo de la tarta. Toda mano aún viva tiene un trozo; los trozos siempre suman 100%. Cuando vas mano a mano y un 70% a ganar un bote de $200, ==g:$140 de ese bote son "tuyos"== a largo plazo — no ganarás *este* bote el 70% de las veces y perderás el resto, pero a lo largo de mil situaciones idénticas, esa es la parte que cobras.
 
@@ -62,7 +62,7 @@ Esa es toda la razón por la que el equity importa: convierte "¿voy por delante
 
 </div>
 
-**Enfrentamientos preflop (memorízalos):** all-in antes del flop, las mismas peleas se repiten. Apréndete estas y sabrás al instante tu equity en la mayoría de all-ins preflop.
+**Enfrentamientos preflop (memorízalos):** all-in antes del flop, las mismas peleas se repiten. Apréndete estas y sabrás al instante tu equity en la mayoría de all-ins preflop. Todas las cifras cuentan los empates en su parte proporcional.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -71,7 +71,7 @@ Esa es toda la razón por la que el equity importa: convierte "¿voy por delante
 | AA vs KK | 82% / 18% | La sobrepar domina |
 | QQ vs AK | ~57% / ~43% | La pareja gana la "carrera" |
 | 22 vs AK | ~52% / ~48% | El verdadero coin flip |
-| AK vs AQ | ~73% / ~23% | Dominación (el resto divide) |
+| AK vs AQ | ~74% / ~26% | Dominación |
 | 88 vs A7 | ~70% / ~30% | Pareja vs una sobrecarta |
 
 </div>
@@ -137,7 +137,7 @@ Esta es la idea más importante que la mayoría de guías para principiantes dej
 
 ## Equity all-in: cuando el equity bruto es lo único que importa
 
-**Cuando estás all-in ya no hay más decisiones — así que realizas el 100% de tu equity, y el equity bruto tiene la última palabra.** Cada complicación de antes (posición, retirarse, que te echen de la mano) desaparece, porque no puede haber más apuestas. Sea cual sea tu porcentaje de victoria, esa es exactamente la parte del bote que cobrarás a largo plazo.
+**Cuando estás all-in ya no hay más decisiones — así que realizas el 100% de tu equity, y el equity bruto tiene la última palabra.** Cada complicación de antes (posición, retirarse, que te echen de la mano) desaparece, porque no puede haber más apuestas. Sea cual sea tu equity bruto — tu parte del bote, con los empates en su parte proporcional —, eso es exactamente lo que cobrarás a largo plazo.
 
 Por eso los equities de all-in preflop importan tanto: AA all-in contra KK cobra su ==82%== íntegro — sin impuesto de realización, sin fold equity, solo el número bruto desplegándose. También es la razón por la que un "coin flip" (22 vs AK a ~52/48) es un all-in genuinamente al filo, aunque esas mismas dos manos jugadas postflop divergirían muchísimo según la mesa y quién tenga posición.
 
@@ -184,7 +184,7 @@ La noche que mencioné al principio, me quedaba en el paso uno y paraba — cont
 
 **Q. ¿Qué es el equity en el póker?**
 
-A. El equity es tu parte del bote: el porcentaje de veces que tu mano gana si la mano llega al showdown. Si el bote es de $100 y vas un 60% a ganar, tu equity vale $60. Es el número clave que comparas con el precio de un call para decidir si continúas.
+A. El equity es tu parte del bote: la parte que le corresponde a tu mano en promedio si llega al showdown, contando los empates en su parte proporcional. Si el bote es de $100 y te corresponde un 60% de él, tu equity vale $60. Es el número clave que comparas con el precio de un call para decidir si continúas.
 
 **Q. ¿Cómo se calcula el equity en el póker?**
 
@@ -192,7 +192,7 @@ A. Con proyectos, usa la regla del 4 y el 2: multiplica tus outs por 4 en el flo
 
 **Q. ¿Cuál es la diferencia entre equity y pot odds?**
 
-A. El equity es tu probabilidad de ganar (lo que tienes); las pot odds son el equity que necesitas para no perder ni ganar en un call (lo que exige el precio). La regla es simple: iguala cuando tu equity es mayor que tus pot odds. Las pot odds vienen del tamaño de la apuesta; el equity viene de tu mano y de la mesa.
+A. El equity es tu parte del bote (lo que tienes); las pot odds son el equity que necesitas para no perder ni ganar en un call (lo que exige el precio). La regla es simple: iguala cuando tu equity es mayor que tus pot odds. Las pot odds vienen del tamaño de la apuesta; el equity viene de tu mano y de la mesa.
 
 **Q. ¿Un 50% de equity es bueno en el póker?**
 
@@ -200,7 +200,7 @@ A. Por sí solo no es ni bueno ni malo — un 50% es un coin flip. Que sea un ca
 
 **Q. ¿Qué significa un 20% de equity?**
 
-A. Significa que tu mano gana alrededor del 20% de las veces si se juega hasta el showdown — así que en un bote de $100 tu parte vale en torno a $20 a largo plazo. Que un 20% sea un call depende del precio: frente a una apuesta de un cuarto de bote necesitas un 17% aproximadamente, así que un 20% está bien; frente a una apuesta de medio bote (hace falta un 25%) es un fold. Cualquier cifra de equity solo significa algo junto a las pot odds.
+A. Significa que a largo plazo a tu mano le corresponde una quinta parte del bote — así que en un bote de $100 tu parte vale en torno a $20. Que un 20% sea un call depende del precio: frente a una apuesta de un cuarto de bote necesitas un 17% aproximadamente, así que un 20% está bien; frente a una apuesta de medio bote (hace falta un 25%) es un fold. Cualquier cifra de equity solo significa algo junto a las pot odds.
 
 **Q. ¿Qué es el fold equity?**
 
@@ -220,7 +220,7 @@ A. La realización de equity es cuánto de tu equity bruta cobras de verdad. Equ
 
 **Q. ¿Qué es el equity all-in?**
 
-A. El equity all-in es simplemente tu porcentaje de victoria bruto cuando ya no puede haber más apuestas. Como no hay decisiones futuras, realizas el 100%, así que el equity bruto se convierte en la parte exacta del bote que cobras a largo plazo. Es el único punto donde "equity equivale a parte del bote" es literalmente cierto.
+A. El equity all-in es simplemente tu equity bruta — tu parte del bote, con los empates en su parte proporcional — cuando ya no puede haber más apuestas. Como no hay decisiones futuras, realizas el 100%, así que el equity bruto se convierte en la parte exacta del bote que cobras a largo plazo. Es el único punto donde "equity equivale a parte del bote" es literalmente cierto.
 
 **Q. ¿Por qué baja mi equity en botes multiway?**
 
@@ -232,13 +232,13 @@ A. El valor esperado es la cantidad media que una decisión gana o pierde a larg
 
 **Q. ¿Cuál es la diferencia entre el equity y el EV?**
 
-A. El equity es tu probabilidad de ganar el bote (un porcentaje); el EV es si *actuar* sobre ese equity de verdad gana dinero (una cantidad, en fichas). Puedes tener mucho equity y aun así hacer un call −EV si el precio está mal, o tener poco equity y un farol +EV si tu rival se retira lo bastante a menudo. El equity te dice dónde estás; el EV te dice si la decisión es rentable.
+A. El equity es tu parte de *este* bote si la mano se juega hasta el final (un porcentaje); el EV es si *actuar* sobre ese equity de verdad gana dinero (una cantidad, en fichas). Puedes tener mucho equity y aun así hacer un call −EV si el precio está mal, o tener poco equity y un farol +EV si tu rival se retira lo bastante a menudo. El equity te dice dónde estás; el EV te dice si la decisión es rentable.
 
 ---
 
 ## Las 3 cosas que debes recordar
 
-1. **El equity es tu parte del bote** — %victoria × tamaño del bote. Iguala cuando supera a tus pot odds. Esa comparación es la columna vertebral de cada decisión.
+1. **El equity es tu parte del bote** — %equity × tamaño del bote. Iguala cuando supera a tus pot odds. Esa comparación es la columna vertebral de cada decisión.
 2. **Rara vez te quedas con todo.** Equity realizada = bruta × %realización, y la posición es el mayor factor. El equity bruto es el techo, no el pago.
 3. **La agresión fabrica equity.** El fold equity permite que una apuesta gane botes que tu mano perdería — pero se derrumba en multiway, donde necesitas que todos se retiren.
 

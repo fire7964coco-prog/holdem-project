@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Equity poker dijelaskan — persen menang, fold equity, dan realisasi",
   seoTitle: "Persen menang Anda bukan yang Anda simpan — equity poker",
   desc: "Equity adalah bagian Anda dari pot — tapi tak selalu Anda simpan. Kenapa equity 40% bukan 40% kemenangan, plus fold equity, realisasi, dan equity all-in.",
-  tldr: "Equity adalah bagian Anda dari pot — persentase tangan Anda menang jika semua kartu dibagikan. Anda call saat equity mengalahkan pot odds, tapi posisi dan taruhan membuat Anda jarang menyimpan seluruh equity — dan fold equity membuat Anda bisa memenangkan pot bahkan saat tangan Anda tertinggal.",
+  tldr: "Equity adalah bagian Anda dari pot — porsi yang rata-rata jatuh ke tangan Anda saat semua kartu dibagikan, dengan pot seri dihitung proporsional. Anda call saat equity mengalahkan pot odds, tapi posisi dan taruhan membuat Anda jarang menyimpan seluruh equity — dan fold equity membuat Anda bisa memenangkan pot bahkan saat tangan Anda tertinggal.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-07-08",
+  updated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "🥧",
@@ -27,7 +27,7 @@ Persen menang mentah di balik setiap tangan berasal dari [chart odds dan probabi
 ### Equity sekilas
 
 :::stripe
-pot × win% | Berapa nilai tangan Anda saat ini
+pot × equity% | Berapa nilai tangan Anda saat ini
 raw × realization% | Berapa yang benar-benar Anda kumpulkan
 bet ÷ (pot + bet) | Persen fold yang dibutuhkan bluff murni
 :::
@@ -36,7 +36,7 @@ bet ÷ (pot + bet) | Persen fold yang dibutuhkan bluff murni
 
 ## Apa Itu Equity di Poker?
 
-**Equity adalah bagian Anda dari pot — persentase tangan Anda menang jika tangan dimainkan sampai showdown.** Jika pot $100 dan Anda 60% untuk menang, tangan Anda bernilai ==$60 saat ini==, meski chip belum didorong ke mana pun.
+**Equity adalah bagian Anda dari pot — porsi yang rata-rata jatuh ke tangan Anda jika tangan dimainkan sampai showdown, dengan pot seri dihitung proporsional.** Jika pot $100 dan 60% darinya menjadi hak Anda, tangan Anda bernilai ==$60 saat ini==, meski chip belum didorong ke mana pun.
 
 Bayangkan sebagai potongan kue Anda. Setiap tangan yang masih hidup punya potongan; potongan-potongan itu selalu berjumlah 100%. Saat Anda head-up dan 70% untuk menang pot $200, ==g:$140 di antaranya "milik Anda"== dalam jangka panjang — Anda tak akan menang *pot ini* 70% waktu dan kalah sisanya, tapi di seribu situasi identik, itulah bagian yang Anda kumpulkan.
 
@@ -61,7 +61,7 @@ Itulah alasan equity penting: ia mengubah "apakah saya unggul?" menjadi "berapa 
 
 </div>
 
-**Matchup preflop (hafalkan ini):** all-in sebelum flop, pertarungan yang sama berulang. Pelajari ini dan Anda langsung tahu equity Anda di sebagian besar all-in preflop.
+**Matchup preflop (hafalkan ini):** all-in sebelum flop, pertarungan yang sama berulang. Pelajari ini dan Anda langsung tahu equity Anda di sebagian besar all-in preflop. Semua angka menghitung pot seri secara proporsional.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -70,7 +70,7 @@ Itulah alasan equity penting: ia mengubah "apakah saya unggul?" menjadi "berapa 
 | AA vs KK | 82% / 18% | Overpair mendominasi |
 | QQ vs AK | ~57% / ~43% | Pair unggul di "race" |
 | 22 vs AK | ~52% / ~48% | Coin flip sejati |
-| AK vs AQ | ~73% / ~23% | Dominasi (sisanya split) |
+| AK vs AQ | ~74% / ~26% | Dominasi |
 | 88 vs A7 | ~70% / ~30% | Pair vs satu overcard |
 
 </div>
@@ -136,7 +136,7 @@ Ini adalah ide terpenting yang sebagian besar panduan pemula tinggalkan, dan ini
 
 ## Equity All-In: Saat Equity Mentah Adalah Segalanya
 
-**Saat Anda all-in, tak ada keputusan lagi — jadi Anda merealisasi 100% equity Anda, dan equity mentah menjadi kata terakhir.** Setiap komplikasi di atas (posisi, fold, dipaksa lepas) lenyap, karena tak ada taruhan lagi yang bisa terjadi. Berapa pun persen menang Anda, itulah persis bagian pot yang akan Anda kumpulkan seiring waktu.
+**Saat Anda all-in, tak ada keputusan lagi — jadi Anda merealisasi 100% equity Anda, dan equity mentah menjadi kata terakhir.** Setiap komplikasi di atas (posisi, fold, dipaksa lepas) lenyap, karena tak ada taruhan lagi yang bisa terjadi. Berapa pun equity mentah Anda — bagian Anda dari pot, dengan pot seri dihitung proporsional — itulah persis yang akan Anda kumpulkan seiring waktu.
 
 Inilah kenapa equity all-in preflop begitu penting: AA all-in melawan KK menyimpan penuh ==82%==-nya — tanpa pajak realisasi, tanpa fold equity, hanya angka mentah yang terjadi. Ini juga kenapa "coin flip" (22 vs AK di ~52/48) adalah adu untung-untungan yang benar-benar dekat saat all-in, meski dua tangan sama yang dimainkan postflop akan menyimpang liar tergantung board dan siapa yang punya posisi.
 
@@ -183,7 +183,7 @@ Malam yang saya sebut di awal, saya melakukan langkah satu lalu berhenti — men
 
 **Q. Apa itu equity di poker?**
 
-A. Equity adalah bagian Anda dari pot — persentase tangan Anda menang jika tangan berlanjut ke showdown. Jika pot $100 dan Anda 60% untuk menang, equity Anda bernilai $60. Ini angka inti yang Anda bandingkan dengan harga sebuah call untuk memutuskan apakah melanjutkan.
+A. Equity adalah bagian Anda dari pot — porsi yang rata-rata jatuh ke tangan Anda jika tangan berlanjut ke showdown, dengan pot seri dihitung proporsional. Jika pot $100 dan 60% darinya menjadi hak Anda, equity Anda bernilai $60. Ini angka inti yang Anda bandingkan dengan harga sebuah call untuk memutuskan apakah melanjutkan.
 
 **Q. Bagaimana cara menghitung equity di poker?**
 
@@ -191,7 +191,7 @@ A. Untuk draw, gunakan Rule of 4 dan 2: kalikan outs Anda dengan 4 di flop (dua 
 
 **Q. Apa perbedaan antara equity dan pot odds?**
 
-A. Equity adalah peluang menang Anda (apa yang Anda miliki); pot odds adalah equity yang Anda butuhkan untuk impas pada sebuah call (apa yang harga tuntut). Aturannya sederhana: call saat equity Anda lebih besar dari pot odds Anda. Pot odds berasal dari ukuran taruhan; equity berasal dari tangan Anda dan board.
+A. Equity adalah bagian Anda dari pot (apa yang Anda miliki); pot odds adalah equity yang Anda butuhkan untuk impas pada sebuah call (apa yang harga tuntut). Aturannya sederhana: call saat equity Anda lebih besar dari pot odds Anda. Pot odds berasal dari ukuran taruhan; equity berasal dari tangan Anda dan board.
 
 **Q. Apakah equity 50% bagus di poker?**
 
@@ -207,7 +207,7 @@ A. Realisasi equity adalah seberapa banyak equity mentah Anda yang benar-benar A
 
 **Q. Apa itu equity all-in?**
 
-A. Equity all-in hanyalah persen menang mentah Anda saat tak ada taruhan lagi yang bisa terjadi. Karena tak ada keputusan masa depan, Anda merealisasi 100%-nya, jadi equity mentah menjadi bagian pot persis yang Anda kumpulkan seiring waktu. Inilah satu titik di mana "equity sama dengan bagian pot" benar-benar berlaku secara harfiah.
+A. Equity all-in hanyalah equity mentah Anda — bagian Anda dari pot, dengan pot seri dihitung proporsional — saat tak ada taruhan lagi yang bisa terjadi. Karena tak ada keputusan masa depan, Anda merealisasi 100%-nya, jadi equity mentah menjadi bagian pot persis yang Anda kumpulkan seiring waktu. Inilah satu titik di mana "equity sama dengan bagian pot" benar-benar berlaku secara harfiah.
 
 **Q. Kenapa equity saya turun di pot multiway?**
 
@@ -217,7 +217,7 @@ A. Karena pot 100% yang sama kini terbagi di antara lebih banyak tangan — pock
 
 ## 3 Hal yang Harus Diingat
 
-1. **Equity adalah bagian Anda dari pot** — win% × ukuran pot. Call saat ia mengalahkan pot odds Anda. Perbandingan itu adalah tulang punggung setiap keputusan.
+1. **Equity adalah bagian Anda dari pot** — equity% × ukuran pot. Call saat ia mengalahkan pot odds Anda. Perbandingan itu adalah tulang punggung setiap keputusan.
 2. **Anda jarang menyimpan semuanya.** Realized equity = raw × realization%, dan posisi adalah faktor terbesar. Equity mentah adalah plafonnya, bukan bayarannya.
 3. **Agresi memproduksi equity.** Fold equity membuat sebuah taruhan memenangkan pot yang tangan Anda akan kalah — tapi ia runtuh di multiway, di mana Anda butuh semua orang fold.
 

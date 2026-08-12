@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Equity no pôquer explicada — Win %, fold equity e realização",
   seoTitle: "Seu Win % não é o que você fica — Equity no pôquer",
   desc: "Equity é sua fatia do pote — mas você nem sempre fica com ela. Por que 40% de equity não é 40% de vitórias, mais fold equity, realização e equity no all-in.",
-  tldr: "Equity é sua fatia do pote — a porcentagem de vezes que sua mão ganha se todas as cartas forem distribuídas. Você paga quando sua equity supera as pot odds, mas posição e apostas fazem você raramente ficar com toda a sua equity — e a fold equity deixa você ganhar potes mesmo quando sua mão está atrás.",
+  tldr: "Equity é sua fatia do pote — a fatia que cabe à sua mão em média quando todas as cartas são distribuídas, com os empates contando proporcionalmente. Você paga quando sua equity supera as pot odds, mas posição e apostas fazem você raramente ficar com toda a sua equity — e a fold equity deixa você ganhar potes mesmo quando sua mão está atrás.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-07-08",
+  updated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🥧",
@@ -27,7 +27,7 @@ As porcentagens brutas de vitória por trás de cada mão vêm da [tabela de odd
 ### Equity num relance
 
 :::stripe
-pote × win% | Quanto sua mão vale agora
+pote × equity% | Quanto sua mão vale agora
 bruta × realização% | Quanto você de fato coleta
 aposta ÷ (pote + aposta) | O % de fold que um blefe puro precisa
 :::
@@ -36,7 +36,7 @@ aposta ÷ (pote + aposta) | O % de fold que um blefe puro precisa
 
 ## O que é equity no pôquer?
 
-**Equity é sua fatia do pote — a porcentagem de vezes que sua mão ganha se a mão for jogada até o showdown.** Se o pote é $100 e você tem 60% de chance de ganhar, sua mão vale ==$60 agora==, mesmo que as fichas ainda não tenham sido empurradas.
+**Equity é sua fatia do pote — a fatia que cabe à sua mão em média se ela for jogada até o showdown, com os empates contando proporcionalmente.** Se o pote é $100 e 60% dele cabem a você, sua mão vale ==$60 agora==, mesmo que as fichas ainda não tenham sido empurradas.
 
 Pense nela como sua fatia da pizza. Toda mão ainda viva tem uma fatia; as fatias sempre somam 100%. Quando você está heads-up com 70% de chance de ganhar um pote de $200, ==g:$140 dele são "seus"== no longo prazo — você não vai ganhar *este* pote 70% das vezes e perder o resto, mas ao longo de mil situações idênticas, essa é a fatia que você coleta.
 
@@ -61,7 +61,7 @@ Essa é a razão inteira de a equity importar: ela transforma "estou na frente?"
 
 </div>
 
-**Confrontos pré-flop (memorize estes):** no all-in antes do flop, as mesmas brigas se repetem. Aprenda estes e você vai saber na hora sua equity na maioria dos all-ins pré-flop.
+**Confrontos pré-flop (memorize estes):** no all-in antes do flop, as mesmas brigas se repetem. Aprenda estes e você vai saber na hora sua equity na maioria dos all-ins pré-flop. Todos os valores contam os empates proporcionalmente.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -70,7 +70,7 @@ Essa é a razão inteira de a equity importar: ela transforma "estou na frente?"
 | AA vs KK | 82% / 18% | Overpair domina |
 | QQ vs AK | ~57% / ~43% | Par leva a "corrida" |
 | 22 vs AK | ~52% / ~48% | O verdadeiro coin flip |
-| AK vs AQ | ~73% / ~23% | Dominação (resto divide) |
+| AK vs AQ | ~74% / ~26% | Dominação |
 | 88 vs A7 | ~70% / ~30% | Par vs uma overcard |
 
 </div>
@@ -136,7 +136,7 @@ Esta é a ideia mais importante que a maioria dos guias para iniciantes deixa de
 
 ## Equity no all-in: quando a equity bruta é tudo que importa
 
-**Quando você está all-in, não há mais decisões — então você realiza 100% da sua equity, e a equity bruta vira a palavra final.** Toda complicação acima (posição, foldar, ser expulso da mão) desaparece, porque nenhuma aposta a mais pode acontecer. Seja qual for sua porcentagem de vitória, essa é exatamente a fatia do pote que você vai coletar ao longo do tempo.
+**Quando você está all-in, não há mais decisões — então você realiza 100% da sua equity, e a equity bruta vira a palavra final.** Toda complicação acima (posição, foldar, ser expulso da mão) desaparece, porque nenhuma aposta a mais pode acontecer. Seja qual for sua equity bruta — sua fatia do pote, com os empates proporcionais —, é exatamente isso que você vai coletar ao longo do tempo.
 
 É por isso que as equities de all-in pré-flop importam tanto: AA all-in contra KK embolsa seus ==82%== inteiros — sem imposto de realização, sem fold equity, só o número bruto se desenrolando. É também por isso que um "coin flip" (22 vs AK a ~52/48) é um verdadeiro cara-ou-coroa no all-in, mesmo que as mesmas duas mãos jogadas no pós-flop divergissem muito conforme a mesa e quem tem posição.
 
@@ -183,7 +183,7 @@ Naquela noite que mencionei lá no começo, eu estava fazendo o passo um e paran
 
 **Q. O que é equity no pôquer?**
 
-A. Equity é sua fatia do pote — a porcentagem de vezes que sua mão ganha se a mão vai ao showdown. Se o pote é $100 e você tem 60% de chance de ganhar, sua equity vale $60. É o número central que você compara com o preço de um pagamento para decidir se continua.
+A. Equity é sua fatia do pote — a fatia que cabe à sua mão em média se ela vai ao showdown, com os empates contando proporcionalmente. Se o pote é $100 e 60% dele cabem a você, sua equity vale $60. É o número central que você compara com o preço de um pagamento para decidir se continua.
 
 **Q. Como calcular equity no pôquer?**
 
@@ -191,7 +191,7 @@ A. Para projetos, use a Regra do 4 e 2: multiplique seus outs por 4 no flop (dua
 
 **Q. Qual a diferença entre equity e pot odds?**
 
-A. Equity é sua chance de ganhar (o que você tem); pot odds são a equity que você precisa para empatar num pagamento (o que o preço exige). A regra é simples: pague quando sua equity for maior que suas pot odds. As pot odds vêm do tamanho da aposta; a equity vem da sua mão e da mesa.
+A. Equity é sua fatia do pote (o que você tem); pot odds são a equity que você precisa para empatar num pagamento (o que o preço exige). A regra é simples: pague quando sua equity for maior que suas pot odds. As pot odds vêm do tamanho da aposta; a equity vem da sua mão e da mesa.
 
 **Q. 50% de equity é bom no pôquer?**
 
@@ -207,7 +207,7 @@ A. Realização de equity é quanto da sua equity bruta você de fato coleta. Eq
 
 **Q. O que é equity no all-in?**
 
-A. Equity no all-in é simplesmente sua porcentagem bruta de vitória quando nenhuma aposta a mais pode acontecer. Como não há decisões futuras, você realiza 100% dela, então a equity bruta vira a fatia exata do pote que você coleta ao longo do tempo. É o único ponto onde "equity é igual à fatia do pote" é literalmente verdade.
+A. Equity no all-in é simplesmente sua equity bruta — sua fatia do pote, com os empates proporcionais — quando nenhuma aposta a mais pode acontecer. Como não há decisões futuras, você realiza 100% dela, então a equity bruta vira a fatia exata do pote que você coleta ao longo do tempo. É o único ponto onde "equity é igual à fatia do pote" é literalmente verdade.
 
 **Q. Por que minha equity cai em potes multiway?**
 
@@ -217,7 +217,7 @@ A. Porque o mesmo pote de 100% agora é dividido entre mais mãos — um par de 
 
 ## As 3 coisas para lembrar
 
-1. **Equity é sua fatia do pote** — win% × tamanho do pote. Pague quando ela supera suas pot odds. Essa comparação é a espinha dorsal de toda decisão.
+1. **Equity é sua fatia do pote** — equity% × tamanho do pote. Pague quando ela supera suas pot odds. Essa comparação é a espinha dorsal de toda decisão.
 2. **Você raramente fica com tudo.** Equity realizada = bruta × realização%, e posição é o maior fator. Equity bruta é o teto, não o pagamento.
 3. **Agressão fabrica equity.** Fold equity deixa uma aposta ganhar potes que sua mão perderia — mas ela desaba multiway, onde você precisa que todo mundo folde.
 
