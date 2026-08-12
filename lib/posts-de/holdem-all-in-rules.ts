@@ -211,7 +211,7 @@ Wenn du genug All-in-Pots gespielt hast, merkst du: Das Chaos kommt fast immer a
 Kann er nicht. Sobald der All-in-Spieler gedeckelt ist, gehören alle zusätzlichen Chips der größeren Stacks zu einem Pot, auf den er keinerlei Anspruch hat.
 
 ### Fehler 2: Die Re-Raise-Regel nicht kennen
-Ein Teil-All-in von Spieler C gibt Spieler A keine zweite Chance zum Re-Raise. Wer diese Regel sicher beherrscht, erstickt Streit, bevor er entsteht.
+Ein Teil-All-in gibt Spielern, die in dieser Runde **bereits gehandelt haben**, keine zweite Chance zum Re-Raise – wer noch nicht gehandelt hat, darf ganz normal erhöhen. Wer diese Regel sicher beherrscht, erstickt Streit, bevor er entsteht.
 
 ### Fehler 3: Mitten in der Hand Chips aus der Tasche nachlegen
 Table Stakes. Was auf dem Tisch liegt, ist alles, was du setzen kannst. Bist du für €80 All-in und der Pot beträgt €400, kannst du von jedem Caller trotzdem nur €80 gewinnen.
@@ -249,7 +249,7 @@ A. Run it twice (die restlichen Gemeinschaftskarten zweimal austeilen und den Po
 
 **Q. Was genau ist die „Table-Stakes“-Regel?**
 
-A. Table Stakes bedeutet: Du darfst nur Chips setzen, die zu Beginn der Hand vor dir lagen. Während einer laufenden Hand kannst du kein Geld nachlegen. Das schützt beide Seiten – du kannst nie gezwungen werden, mehr als deinen Stack zu riskieren, und Gegner können nicht plötzlich mehr setzen, als du abdecken kannst.
+A. Table Stakes bedeutet: Du darfst nur Chips setzen, die zu Beginn der Hand vor dir lagen. Während einer laufenden Hand kannst du kein Geld nachlegen. Das schützt beide Seiten – du kannst nie gezwungen werden, mehr als deinen Stack zu riskieren, und was Gegner über deinen Stack hinaus setzen, kann dich nichts kosten: Es wandert in einen Side Pot oder geht als ungecallter Einsatz zurück.
 
 **Q. Wenn zwei Spieler für unterschiedliche Beträge All-in gehen – wer zeigt zuerst?**
 

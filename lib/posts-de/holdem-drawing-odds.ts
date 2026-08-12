@@ -52,7 +52,7 @@ Hier ist die Tabelle, die niemand an einem Ort baut. Die meisten Seiten nennen d
 
 </div>
 
-Lies eine Zeile quer und du siehst den ganzen Lebenszyklus einer Hand: Den Draw floppst du dreizehnmal häufiger als die fertige Hand dahinter. Unten zieht jeder Abschnitt eine Zeile auseinander, mit der Kombinatorik dahinter.
+Lies eine Zeile quer und du siehst den ganzen Lebenszyklus einer Hand: Zwei suited Karten floppen einen Draw dreizehnmal häufiger als den fertigen Flush. Unten zieht jeder Abschnitt eine Zeile auseinander, mit der Kombinatorik dahinter.
 
 ---
 
@@ -146,7 +146,7 @@ Das sind die Zahlen hinter den besten (und schlimmsten) Nächten deines Poker-Le
 
 </div>
 
-Eine entscheidende Unterscheidung, die die Top-Seiten regelmäßig vermasseln: ein **Set** ist ein Pocket Pair plus eine passende Boardkarte (11,8%), während **Drilling** eine *ungepaarte* Hole Card ist, die das Board zweimal paart (1,35%). Auf dem Papier dasselbe Drilling, wild unterschiedliche Odds und Spielbarkeit – ein Set ist getarnt, Drilling ist offensichtlich. Lass dir von niemandem einreden, sie wären dasselbe.
+Eine entscheidende Unterscheidung, die die Top-Seiten regelmäßig vermasseln: ein **Set** ist ein Pocket Pair plus eine passende Boardkarte (11,8%), während **Trips** eine *ungepaarte* Hole Card ist, die das Board zweimal paart (1,35%). Auf dem Papier derselbe Drilling, wild unterschiedliche Odds und Spielbarkeit – ein Set ist getarnt, Trips sind offensichtlich. Lass dir von niemandem einreden, sie wären dasselbe.
 
 Die Straight-Flush-Zahl ist die, die man sich einrahmen sollte: mit Suited Connectors gibt es genau **vier** Flops, die ihn machen (eine Sequenz in deiner Farbe), also 4 ÷ 19.600 ≈ 1 von 4.900. Deshalb sind gefloppte Straight Flushes Geschichten, die Leute ein Jahrzehnt lang erzählen.
 
@@ -192,7 +192,7 @@ A. Das sind dieselben Odds, auf zwei Arten ausgedrückt. „7,5:1 dagegen“ zä
 
 **Q. Was ist der Unterschied zwischen einem Set und Drilling?**
 
-A. Ein Set ist ein Pocket Pair plus eine passende Karte auf dem Board – du floppst es in 11,8% der Fälle und es ist gut versteckt. Drilling ist eine ungepaarte Hole Card, die das Board paart (zwei passende Boardkarten) – nur 1,35% am Flop, und für Gegner weit offensichtlicher. Derselbe Drilling-Rang, sehr unterschiedliche Odds und Wert.
+A. Ein Set ist ein Pocket Pair plus eine passende Karte auf dem Board – du floppst es in 11,8% der Fälle und es ist gut versteckt. Trips sind eine ungepaarte Hole Card, die das Board paart (zwei passende Boardkarten) – nur 1,35% am Flop, und für Gegner weit offensichtlicher. Derselbe Drilling im Rang, sehr unterschiedliche Odds und Wert.
 
 **Q. Wie hoch ist die Chance, einen Flush zu floppen?**
 
@@ -212,7 +212,7 @@ A. 220:1 (0,45%) speziell für Aces – 6 der 1.326 Startkombinationen. Irgendei
 
 **Q. Wie hoch ist die Chance auf Set over Set?**
 
-A. Es gibt keine einzelne feste Zahl – sie hängt davon ab, wie viele Gegner Pocket Pairs halten – aber wenn zwei Spieler beide Paare haben und beide Sets floppen, sind es ungefähr 1%. Es ist der ultimative Cooler: du floppst überhaupt nur in 11,8% der Fälle ein Set, also ist es eine Geschichte, kein Fehler, wenn zwei von euch das auf demselben Board tun.
+A. Es gibt keine einzelne feste Zahl – sie hängt davon ab, wie viele Gegner Pocket Pairs halten – aber mit zwei Spielern, die beide ein Pocket Pair halten, landet es bei rund 1%. Es ist der ultimative Cooler: du floppst überhaupt nur in 11,8% der Fälle ein Set, also ist es eine Geschichte, kein Fehler, wenn zwei von euch das auf demselben Board tun.
 
 ---
 

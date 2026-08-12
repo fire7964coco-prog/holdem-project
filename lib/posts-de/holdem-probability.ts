@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Poker Wahrscheinlichkeiten Tabelle – die echten Odds jeder Hand im Hold'em",
   seoTitle: "Wie oft triffst du wirklich? – Poker Wahrscheinlichkeiten Tabelle",
   desc: "Die echten Odds jeder Pokerhand, jedes Flops und jedes Draws im Texas Hold'em – plus Faustregel und Pot Odds einfach erklärt, alles in einer Tabelle.",
-  tldr: "Bis zum River triffst du ein Paar in 43,8% der Fälle, zwei Paare in 23,5%, einen Flush in 3,0% und ein Full House in 2,6% – während ein Royal Flush nur etwa einmal in 31.000 Händen auftaucht.",
+  tldr: "Bis zum River endest du mit einem Paar in 43,8% der Fälle, mit zwei Paaren in 23,5%, mit einem Flush in 3,0% und mit einem Full House in 2,6% – während ein Royal Flush nur etwa einmal in 31.000 Händen auftaucht.",
   category: "odds",
   date: "2026-07-03",
   updated: "2026-08-11",
@@ -196,7 +196,7 @@ Ein häufiger Mythos: „Ein Royal Flush schlägt alles, also kann er *unentschi
 
 ## Wie selten sind Quads, Cooler und Bad Beats wirklich?
 
-Mit einem Pocket Pair floppst du Quads **1 zu 408** – rechnest du ein, dass du überhaupt erst alle 17 Hände ein Paar bekommst, sind das rund **einmal alle 6.900 Hände**. Ein Straight Flush am Flop steht ~1 zu 4.900, ein Royal Flush bis zum River 1 zu 30.940. Manche Zahlen existieren eben vor allem, um die schlimmste Nacht deines Pokerlebens zu erklären.
+Mit einem Pocket Pair floppst du Quads **1 zu 408** – rechnest du ein, dass du überhaupt erst alle 17 Hände ein Paar bekommst, sind das rund **einmal alle 6.900 Hände**. Einen Straight Flush zu floppen steht mit Suited Connectors ~1 zu 4.900, ein Royal Flush bis zum River 1 zu 30.940. Manche Zahlen existieren eben vor allem, um die schlimmste Nacht deines Pokerlebens zu erklären.
 
 | Long Shot | Odds |
 |:---|:---:|
@@ -279,7 +279,7 @@ Poker belohnt die Spieler, die das automatisiert haben. Lerne die Tabelle, drill
   <a href="/de/blog/holdem-flush-vs-straight" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Hand-Duell</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Schlägt ein Flush eine Straße?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Warum die seltenere Hand immer gewinnt</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Warum die seltenere Hand gewinnt (gemessen an fünf Karten)</div>
   </a>
   <a href="/de/blog/holdem-reading-the-board" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Board-Lesen</div>

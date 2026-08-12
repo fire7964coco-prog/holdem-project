@@ -429,7 +429,7 @@ Hände spielen sich leichter, wenn du später an der Reihe bist. Bist du als Ers
 
 **Q. Wie spielt man Texas Hold'em Schritt für Schritt?**
 
-A. Blinds setzen, jedem Spieler zwei Hole Cards geben, Preflop-Setzrunde spielen, dann Flop, Turn und River aufdecken – mit einer Setzrunde nach jeder Street – und beim Showdown die besten Fünf-Karten-Hände vergleichen. Insgesamt: vier Setzrunden, fünf Gemeinschaftskarten, ein Gewinner.
+A. Blinds setzen, jedem Spieler zwei Hole Cards geben, Preflop-Setzrunde spielen, dann Flop, Turn und River aufdecken – mit einer Setzrunde nach jeder Street – und beim Showdown die besten Fünf-Karten-Hände vergleichen. Insgesamt: vier Setzrunden, fünf Gemeinschaftskarten, ein Gewinner – oder ein geteilter Pot, wenn die besten fünf Karten exakt gleich sind.
 
 **Q. Mit wie vielen Karten spielt man Texas Hold'em?**
 
@@ -443,9 +443,9 @@ A. Jeder Spieler bekommt genau **2 verdeckte Karten** – die Hole Cards. Mehr b
 
 A. Insgesamt **5**, und zwar in drei Schritten: 3 auf einmal (der Flop), dann 1 (der Turn), dann 1 (der River). Vor jedem dieser drei Schritte legt der Dealer zusätzlich eine Burn Card verdeckt beiseite – die wird nicht aufgedeckt und zählt für niemanden.
 
-**Q. Gibt es eine kleine Straße im Texas Hold'em?**
+**Q. Gibt es eine niedrige Straße (A-2-3-4-5) im Texas Hold'em?**
 
-A. Ja. A-2-3-4-5 ist eine gültige Straße und wird oft „Wheel“ genannt. Sie ist die niedrigste mögliche Straße. Das Ass kann aber nicht „herumlaufen“: J-Q-K-A-2 ist keine Straße. Das Ass zählt entweder als höchste Karte (A-K-Q-J-10) oder als niedrigste (A-2-3-4-5) – nie in der Mitte.
+A. Ja. Eine Straße besteht beim Poker immer aus genau fünf aufeinanderfolgenden Karten – die niedrigste ist A-2-3-4-5 und wird oft „Wheel“ genannt. Das Ass kann aber nicht „um die Ecke gehen“: J-Q-K-A-2 ist keine Straße. Das Ass zählt entweder als höchste Karte (A-K-Q-J-10) oder als niedrigste (A-2-3-4-5) – nie in der Mitte.
 
 **Q. Wie viele mögliche Starthände gibt es beim Texas Hold'em?**
 
@@ -469,7 +469,7 @@ A. No-Limit heißt, du kannst in jeder Setzrunde jeden Betrag bis zu all deinen 
 
 **Q. Wie lange dauert eine Hand Texas Hold'em?**
 
-A. Eine einzelne Hand dauert meist etwa 10 bis 60 Sekunden; ein großer Multiway-Pot mit schwierigen Entscheidungen kann mehrere Minuten laufen. Eine lockere Heimrunde über ein paar Stunden schafft Dutzende Hände – niemand muss einen ganzen Abend für ein einziges Blatt einplanen.
+A. Eine einzelne Hand dauert live meist etwa 30 Sekunden bis 2 Minuten; ein großer Multiway-Pot mit schwierigen Entscheidungen kann mehrere Minuten laufen. Eine lockere Heimrunde über ein paar Stunden schafft je nach Tempo einige Dutzend bis über hundert Hände – niemand muss einen ganzen Abend für ein einziges Blatt einplanen.
 
 ---
 

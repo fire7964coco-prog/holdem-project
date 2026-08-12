@@ -87,7 +87,7 @@ Das Muster ist intuitiv: je stärker der Pot den Call überragt, desto kleiner d
 
 Gegen eine **Half-Pot-Bet** brauchst du 25%, gegen eine **Pot-Size-Bet** 33%, gegen ein 2×-Pot-Overbet 40%. Deine benötigte Equity hängt **nur von der Größe der Bet im Verhältnis zum Pot** ab – nicht davon, wie viel Geld schon drin liegt und auch nicht davon, wer bettet. Sieben Ankerpunkte reichen, und du brauchst nie wieder einen Taschenrechner.
 
-![Premium-Hole-Cards auf grünem Filz – die Entscheidung, ob der Preis zum Weiterspielen stimmt](/images/holdem-starting-hands-premium.webp "Die benötigte Equity hängt allein von der Größe der Bet ab, der du gegenüberstehst")
+![Premium-Hole-Cards auf grünem Filz – die Entscheidung, ob der Preis zum Weiterspielen stimmt](/images/holdem-starting-hands-premium.webp "Die benötigte Equity hängt allein von der Größe der Bet im Verhältnis zum Pot ab")
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -215,7 +215,7 @@ A. Pot Odds zählen nur die Chips, die jetzt im Pot liegen. Implied Odds addiere
 
 **Q. Welche Pot Odds gibt eine Pot-Size-Bet?**
 
-A. Eine Pot-Size-Bet legt dir 2:1 auf, du brauchst also 33% Equity zum Callen. Eine Half-Pot-Bet legt 3:1 auf (25% nötig); ein 2×-Pot-Overbet legt 1,5:1 auf (40% nötig). Größere Bets verlangen mehr Equity, aber selbst ein riesiger Overbet fragt nur nach 40%.
+A. Eine Pot-Size-Bet legt dir 2:1 auf, du brauchst also 33% Equity zum Callen. Eine Half-Pot-Bet legt 3:1 auf (25% nötig); ein 2×-Pot-Overbet legt 1,5:1 auf (40% nötig). Größere Bets verlangen mehr Equity, aber die Kurve flacht schnell ab: Ein 3×-Pot-Overbet verlangt 42,9%, ein 5×-Pot-Overbet 45,5% – über 50% kommt sie nie.
 
 **Q. Gelten Pot Odds auch, wenn noch Spieler hinter mir sitzen?**
 

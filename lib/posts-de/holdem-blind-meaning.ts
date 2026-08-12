@@ -104,7 +104,7 @@ Stakes werden als **SB/BB** geschrieben. Ein „€1/€2“-Game bedeutet: €1
 | €2/€5 | €2 | €5 | €200–€500 |
 | €5/€10 | €5 | €10 | €500–€2.000 |
 | 25/50 (Turnier) | 25 Chips | 50 Chips | Blind-Level 1 |
-| 100/200 (Turnier) | 100 Chips | 200 Chips | Mittleres Level |
+| 100/200 (Turnier) | 100 Chips | 200 Chips | Drittes Level der Beispielstruktur unten |
 
 > **Die goldene Regel:** ==Schau immer auf das Stakes-Schild, bevor du dich setzt== – manche Räume fahren unübliche Strukturen wie €1/€3 oder €2/€3.
 

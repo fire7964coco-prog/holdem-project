@@ -307,7 +307,7 @@ Je näher du am Button sitzt, desto besser – wer als Letzter handelt, sieht er
 
 ### 3. Draws blind hinterherjagen
 
-Ein Flush- oder Straßen-Draw ist kein automatischer Call. Du musst die **Pot Odds** abwägen – den Preis des Calls gegen die Größe des Pots. Liegen 100.000 im Pot und du musst 50.000 callen, muss dein Draw mindestens rund 33% der Zeit ankommen, damit sich der Call lohnt.
+Ein Flush- oder Straßen-Draw ist kein automatischer Call. Du musst die **Pot Odds** abwägen – den Preis des Calls gegen die Größe des Pots. Setzt ein Gegner 50.000 in einen Pot von 50.000, musst du 50.000 callen – dein Draw muss dann mindestens rund 33% der Zeit ankommen, damit sich der Call lohnt.
 
 ### 4. Aus dem Nichts den River bluffen
 
