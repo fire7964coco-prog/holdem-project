@@ -104,6 +104,10 @@
 - **출처**(전부 공식 DOM 직접 추출, 확인일 2026-08-10 — 근거는 `docs/dach-tournaments-2026.md`):
   kings-resort.com/poker · casinos.at/spiel/poker/capt · spielbank-berlin.de · casino-sh.de ·
   grandcasinobaden.ch · grandcasinoluzern.ch
+- 🆕🔴 **9/6 — SBPM 예선 마감** (2026-08-12 추가). 「Die Qualifikationsturniere … enden **spätestens am 6. September 2026**」
+  · **10/23~25 SBPM 결승** = Spielbank Feuchtwangen(독일 국내 유일한 다일간 시리즈 사례로 본문에 인용했다)
+  · 둘 다 지나면 **「11. Auflage」를 12회로, 100.000 € 개런티·1.000 € 파이널티켓을 새 시즌 값으로** 갱신해야 한다
+  · 출처 spielbanken-bayern.de/spielinfos/pokermeisterschaften
 - 🔴 **먼저 확인할 시한 항목**:
   **12/1** — King's 12월 German Poker Days(02.–06.12.)가 마지막 항목이다. 지나면 표 전체가 과거형이 된다
   **11/30** — CAPT Million Baden 종료 = CAPT 2026 시즌 종료. 2027 일정으로 교체

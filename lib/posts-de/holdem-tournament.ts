@@ -239,7 +239,23 @@ Im Norden setzt das **Casino Schenefeld** bei Hamburg dienstags die Double Chanc
 
 ⚠ **Der Haken:** Alle drei führen Poker, aber **keines der drei veröffentlicht einen Turnierplan auf seiner Website** (geprüft am 12.08.2026). Anders als in Berlin, wo der Wochenplan online steht, musst du hier vor der Anfahrt anrufen oder vor Ort fragen, ob an dem Abend überhaupt ein Turnier läuft – und mit reinem Cash Game rechnen, wenn nicht.
 
-**Was in Deutschland fehlt, sind mehrtägige Festivals.** Wer eine ganze Serie spielen will, fährt über die Grenze – und genau deshalb steht der Rest dieses Abschnitts im Ausland.
+**Bayern: neun Spielbanken – und keine davon steht in München.** Die Staatliche Lotterie- und Spielbankverwaltung betreibt neun Häuser im Freistaat; München ist keines davon. Deshalb heißt die Turnierseite des Betreibers auch „Die besten Pokerturniere **um** München“. Am nächsten liegen **Bad Wiessee** am Tegernsee und **Garmisch-Partenkirchen**.
+
+| Haus | Startgeld | Ablauf |
+|:---|:---|:---|
+| **Bad Wiessee** | **110 €** (90 € + 10 € SBPM + 10 € Taxe) | Check-in 17:15 Uhr, Turnierbeginn 18:00 Uhr |
+| **Garmisch-Partenkirchen** | **110 €** (100 € + 10 €) | Check-in ab 18:30 Uhr, Turnierbeginn 19:30 Uhr |
+
+Beide zählen zur **SBPM, der Spielbanken Bayern Pokermeisterschaft** – und die ist der eigentliche Grund, warum sich die Anfahrt rechnet:
+
+- **11. Auflage**, Ranglistenturniere in **allen neun Häusern**
+- **100.000 € garantiertes Preisgeld**, Finalticket im Wert von 1.000 €
+- **mindestens zwei Ranglistenturniere pro Haus und Monat** · Startstack **mindestens 100 Big Blinds** · **90% Ausschüttung**
+- ==r:**Die Qualifikationsturniere enden spätestens am 6. September 2026.**== Das Finale läuft vom **23. bis 25. Oktober 2026 in der Spielbank Feuchtwangen**
+
+**In München selbst** veranstaltet der **Isar-Poker München e.V.** nach eigenen Angaben „regelmäßig Pokerturniere im Großraum München“ – in der Regel Texas Hold'em No Limit, gelegentlich Omaha Pot Limit.
+
+**Große mehrtägige Festivals sind in Deutschland dagegen die Ausnahme.** Das SBPM-Finale über drei Tage ist eines – wer eine ganze Serie über eine oder zwei Wochen spielen will, fährt über die Grenze. Genau deshalb steht der Rest dieses Abschnitts im Ausland.
 
 ### Tschechien – warum die deutschen Serien in Rozvadov laufen
 
@@ -271,7 +287,7 @@ Die **CAPT Million in Baden** schließt die Saison ab und ist mit **€1.000.000
 
 ⚠ **Nicht verwechseln:** Das Casino Baden der CAPT liegt bei Wien. Das **Grand Casino Baden in der Schweiz** ist ein anderes Haus – und dort fand am 31. Mai 2026 zum letzten Mal ein Turnier statt, während des Umbaus werden keine angeboten. Gespielt wird in der Schweiz stattdessen im **Grand Casino Luzern**, dessen Poker Circle Swiss Masters im Dezember mit der Championship Week endet (Main Event CHF 800 + 80).
 
-:::note[Termine und Buy-ins stammen direkt von den Veranstalterseiten – kings-resort.com/poker, casinos.at, spielbank-berlin.de, casino-sh.de, grandcasinobaden.ch und grandcasinoluzern.ch, abgerufen am 10.08.2026. Die NRW-Angaben stammen von den Häusern selbst: spielbank-hohensyburg.de, spielbank-duisburg.de und spielbank-aachen.de, abgerufen am 12.08.2026. Serientermine verschieben sich: Prüf vor der Anreise die offizielle Seite.]:::
+:::note[Termine und Buy-ins stammen direkt von den Veranstalterseiten – kings-resort.com/poker, casinos.at, spielbank-berlin.de, casino-sh.de, grandcasinobaden.ch und grandcasinoluzern.ch, abgerufen am 10.08.2026. Die NRW-Angaben stammen von den Häusern selbst: spielbank-hohensyburg.de, spielbank-duisburg.de und spielbank-aachen.de. Die bayerischen Zahlen und die SBPM-Eckdaten stehen im Shop und auf der Meisterschaftsseite der Spielbanken Bayern (spielbanken-bayern.de), die Münchner Vereinsangabe auf isar-poker.de – alles abgerufen am 12.08.2026. Serientermine verschieben sich: Prüf vor der Anreise die offizielle Seite.]:::
 
 ---
 
