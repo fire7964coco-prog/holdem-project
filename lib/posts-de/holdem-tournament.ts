@@ -229,6 +229,16 @@ Die dichteste Auswahl hat die **Spielbank Berlin** am Potsdamer Platz: Dort läu
 
 Im Norden setzt das **Casino Schenefeld** bei Hamburg dienstags die Double Chance (€110) und sonntags den Monster Stack (€220) an. Die **Spielbank Hamburg** im Casino Esplanade führt dagegen ausschließlich Cash Games – dort findest du kein Turnier.
 
+**Nordrhein-Westfalen: drei Häuser mit Poker – aber kein veröffentlichter Turnierplan.** Im bevölkerungsreichsten Bundesland betreibt die MERKUR SPIELBANKEN NRW GmbH drei Standorte, die Poker im Spielangebot führen:
+
+| Standort in NRW | Was das Haus selbst dazu sagt |
+|:---|:---|
+| **Dortmund-Hohensyburg** | Hohensyburgstraße 200 – „Roulette, Black Jack und Poker sowie moderne Slots“, So–Do 11–3 Uhr, Fr/Sa bis 4 Uhr |
+| **Duisburg** | Im CityPalais neben der Mercatorhalle – nach eigener Angabe „das mit Abstand besucherstärkste Casino im Land“ |
+| **Aachen** | „Deutschlands einzige Spielbank in einem Fußballstadion“ – mitten im Tivoli |
+
+⚠ **Der Haken:** Alle drei führen Poker, aber **keines der drei veröffentlicht einen Turnierplan auf seiner Website** (geprüft am 12.08.2026). Anders als in Berlin, wo der Wochenplan online steht, musst du hier vor der Anfahrt anrufen oder vor Ort fragen, ob an dem Abend überhaupt ein Turnier läuft – und mit reinem Cash Game rechnen, wenn nicht.
+
 **Was in Deutschland fehlt, sind mehrtägige Festivals.** Wer eine ganze Serie spielen will, fährt über die Grenze – und genau deshalb steht der Rest dieses Abschnitts im Ausland.
 
 ### Tschechien – warum die deutschen Serien in Rozvadov laufen
@@ -261,7 +271,7 @@ Die **CAPT Million in Baden** schließt die Saison ab und ist mit **€1.000.000
 
 ⚠ **Nicht verwechseln:** Das Casino Baden der CAPT liegt bei Wien. Das **Grand Casino Baden in der Schweiz** ist ein anderes Haus – und dort fand am 31. Mai 2026 zum letzten Mal ein Turnier statt, während des Umbaus werden keine angeboten. Gespielt wird in der Schweiz stattdessen im **Grand Casino Luzern**, dessen Poker Circle Swiss Masters im Dezember mit der Championship Week endet (Main Event CHF 800 + 80).
 
-:::note[Termine und Buy-ins stammen direkt von den Veranstalterseiten – kings-resort.com/poker, casinos.at, spielbank-berlin.de, casino-sh.de, grandcasinobaden.ch und grandcasinoluzern.ch, abgerufen am 10.08.2026. Serientermine verschieben sich: Prüf vor der Anreise die offizielle Seite.]:::
+:::note[Termine und Buy-ins stammen direkt von den Veranstalterseiten – kings-resort.com/poker, casinos.at, spielbank-berlin.de, casino-sh.de, grandcasinobaden.ch und grandcasinoluzern.ch, abgerufen am 10.08.2026. Die NRW-Angaben stammen von den Häusern selbst: spielbank-hohensyburg.de, spielbank-duisburg.de und spielbank-aachen.de, abgerufen am 12.08.2026. Serientermine verschieben sich: Prüf vor der Anreise die offizielle Seite.]:::
 
 ---
 
