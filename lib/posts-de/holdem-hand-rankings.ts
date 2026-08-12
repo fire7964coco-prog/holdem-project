@@ -40,7 +40,7 @@ Dieser Leitfaden löst beides. Du bekommst die komplette Reihenfolge mit den ech
 
 ## Pokerblätter-Reihenfolge: Welche Hand schlägt welche?
 
-Fang hier an. Diese **Wertetabelle** zeigt alle zehn **Poker-Kombinationen** in ihrer Rangfolge – von der stärksten zur schwächsten Hand, mit der langfristigen Wahrscheinlichkeit, jede bis zum River im Texas Hold'em zu treffen. „Pokerblatt“, „Pokerhand“ und „Wertigkeit der Karten“ meinen dabei dasselbe.
+Fang hier an. Diese **Wertetabelle** zeigt alle zehn **Poker-Kombinationen** in ihrer Rangfolge – von der stärksten zur schwächsten Hand, mit der langfristigen Wahrscheinlichkeit, jede bis zum River im Texas Hold'em zu treffen. „Pokerblatt“ und „Pokerhand“ meinen dabei dasselbe. Die **Wertigkeit der Karten** ist etwas anderes – die Rangfolge der einzelnen Karten von A bis 2; die steht weiter unten in einem eigenen Abschnitt.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -60,7 +60,7 @@ Fang hier an. Diese **Wertetabelle** zeigt alle zehn **Poker-Kombinationen** in 
 </div>
 
 > **Die eine Regel, die Diskussionen beendet**
-> Paar und High Card machen zusammen rund 61% aller Sieben-Karten-Hände bis zum River aus. Große Hände wirken häufig, weil man sie sich merkt – aber die meisten Pots werden mit einem Paar und einem [Kicker](/de/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp") entschieden.
+> Paar und High Card machen zusammen rund 61% aller Sieben-Karten-Hände bis zum River aus. Große Hände wirken häufig, weil man sie sich merkt – aber die meisten Pots werden mit einem Paar oder einer High Card und dem passenden [Kicker](/de/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp") entschieden.
 
 **[Pokerblätter-Reihenfolge als PDF herunterladen (A4, zum Ausdrucken)](/downloads/texas-holdem-rules-for-beginners-de.pdf)** – die komplette Rangfolge plus Setzrunden und Chip-Setup auf zwei Seiten. Für den Pokerabend ausdrucken und neben den Tisch legen.
 
@@ -405,7 +405,7 @@ A. Nur ein Straight Flush – und der kann hier nie ein Royal Flush sein, weil a
 
 **Q. Was ist höher – Pik oder Kreuz beim Poker?**
 
-A. Weder noch. Alle vier Farben sind im Texas Hold'em gleichwertig und machen eine Hand nie stärker. Zeigen zwei Spieler dieselben fünf Ränge in unterschiedlichen Farben, wird der Pot geteilt. Eine Farb-Rangfolge existiert nur in anderen Varianten wie Stud und Razz – und auch dort nur, um Sitzplätze oder einen übrigen Chip zu vergeben, nie um Hände zu vergleichen.
+A. Weder noch. Alle vier Farben sind im Texas Hold'em gleichwertig und machen eine Hand nie stärker. Zeigen zwei Spieler dieselben fünf Ränge in unterschiedlichen Farben, wird der Pot geteilt. Eine Farb-Rangfolge gibt es zwar, sie entscheidet aber nie über einen Pot – sie regelt nur Formalien. Die offiziellen WSOP-Regeln bestimmen damit zum Beispiel die Startposition des Dealer-Buttons (höchste Karte nach Rang **und Farbe**); den ungeraden Chip nach Farbe zu vergeben, ist dagegen Stud-Praxis.
 
 **Q. Was ist die niedrigste (schlechteste) Hand im Poker?**
 

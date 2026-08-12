@@ -215,7 +215,7 @@ Tunnelblick auf dein Paar oder deinen geplatzten Draw. Meine 8-6-Geschichte ganz
 
 ### Fehler 2 – vier farbgleiche Karten als Flush zählen
 
-Vier Pik unter deinen 7 sind Ace High, kein Flush. Und das Spiegelbild: Board 9♠ 6♠ 3♠ Q♠ J♦ mit A♥ K♥ in der Hand gibt dir A-K-Q-J-9 – nur High Card – während ==jeder Gegner mit einem einzigen Pik einen Flush hat==.
+Vier Pik unter deinen 7 sind **kein** Flush – dafür brauchst du fünf. Und das Spiegelbild: Board 9♠ 6♠ 3♠ Q♠ J♦ mit A♥ K♥ in der Hand gibt dir A-K-Q-J-9 – nur High Card – während ==jeder Gegner mit einem einzigen Pik einen Flush hat==.
 
 ### Fehler 3 – vergessen, dass das Board geteilt wird
 
@@ -268,7 +268,7 @@ A. Bilden die fünf Gemeinschaftskarten selbst einen Flush, teilen ihn zunächst
 
 **Q. Liegt eine Straße auf dem Board – wer gewinnt dann?**
 
-A. Dann hat jeder mindestens diese Straße, und es gewinnt, wer sie mit einer Hole Card nach oben verlängert. Auf einem Board 5-6-7-8-9 macht ein Spieler mit einer Zehn die 6-7-8-9-10 und schlägt das Board. Kann niemand höher, wird der Pot geteilt.
+A. Dann hat jeder mindestens diese Straße, und es gewinnt, wer sie mit einer Hole Card nach oben verlängert. Auf einem Board 5-6-7-8-9 macht ein Spieler mit einer Zehn die 6-7-8-9-10 und schlägt das Board. Kann niemand höher, wird der Pot geteilt – es sei denn, auf dem Board liegen drei Karten derselben Farbe: Dann schlägt ein Gegner mit zwei passenden Karten die Straße mit einem Flush.
 
 **Q. Musst du im Texas Hold'em beide Hole Cards benutzen?**
 

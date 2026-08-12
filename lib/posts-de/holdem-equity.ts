@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Equity im Poker erklärt – Win%, Fold Equity und Realization",
   seoTitle: "Dein Win% ist nicht dein Gewinn – Equity berechnen Poker",
   desc: "Die Equity ist dein Anteil am Pot – den du selten ganz behältst. Warum 40% Equity nicht 40% Gewinne sind, plus Fold Equity und Realization erklärt.",
-  tldr: "Die Equity ist dein Anteil am Pot – der Prozentsatz, zu dem deine Hand gewinnt, wenn alle Karten ausgeteilt werden. Du callst, wenn deine Equity die Pot Odds schlägt, aber Position und Setzen bedeuten, dass du selten deine volle Equity behältst – und die Fold Equity lässt dich Pots gewinnen, selbst wenn deine Hand hinten liegt.",
+  tldr: "Die Equity ist dein Anteil am Pot – der Anteil, der deiner Hand im Schnitt zufällt, wenn alle Karten ausgeteilt werden (Splits zählen anteilig). Du callst, wenn deine Equity die Pot Odds schlägt, aber Position und Setzen bedeuten, dass du selten deine volle Equity behältst – und die Fold Equity lässt dich Pots gewinnen, selbst wenn deine Hand hinten liegt.",
   category: "odds",
   date: "2026-07-08",
   updated: "2026-08-11",
@@ -28,7 +28,7 @@ Die rohen Win-Prozente hinter jeder Hand kommen aus der [Poker-Odds- und Wahrsch
 ### Equity auf einen Blick
 
 :::stripe
-Pot × Win% | Was deine Hand gerade wert ist
+Pot × Equity% | Was deine Hand gerade wert ist
 roh × Realization% | Was du tatsächlich einsammelst
 Bet ÷ (Pot + Bet) | Der Fold%, den ein reiner Bluff braucht
 :::
@@ -37,7 +37,7 @@ Bet ÷ (Pot + Bet) | Der Fold%, den ein reiner Bluff braucht
 
 ## Was ist Equity im Poker?
 
-**Die Equity ist dein Anteil am Pot – der Prozentsatz, zu dem deine Hand gewinnt, wenn die Hand bis zum Showdown durchgespielt wird.** Wenn der Pot $100 beträgt und du zu 60% gewinnst, ist deine Hand gerade ==$60 wert==, auch wenn die Chips noch nicht geschoben wurden.
+**Die Equity ist dein Anteil am Pot – der Anteil, der deiner Hand im Schnitt zufällt, wenn die Hand bis zum Showdown durchgespielt wird; Splits zählen dabei anteilig.** Wenn der Pot $100 beträgt und dir 60% davon zustehen, ist deine Hand gerade ==$60 wert==, auch wenn die Chips noch nicht geschoben wurden.
 
 Sieh es als dein Stück vom Kuchen. Jede noch lebende Hand hat ein Stück; die Stücke ergeben zusammen immer 100%. Wenn du heads-up zu 70% einen $200-Pot gewinnst, gehören ==g:$140 davon „dir“== auf lange Sicht – du wirst *diesen* Pot nicht zu 70% gewinnen und den Rest verlieren, aber über tausend identische Spots ist das der Anteil, den du einsammelst.
 
@@ -71,7 +71,7 @@ Das ist der ganze Grund, warum die Equity zählt: sie verwandelt „liege ich vo
 | AA vs. KK | 82% / 18% | Overpair dominiert |
 | QQ vs. AK | ~57% / ~43% | Paar vorn im „Race“ |
 | 22 vs. AK | ~52% / ~48% | Der echte Coinflip |
-| AK vs. AQ | ~73% / ~23% | Domination (Rest chopt) |
+| AK vs. AQ | ~74% / ~26% | Domination (Splits anteilig) |
 | 88 vs. A7 | ~70% / ~30% | Paar vs. eine Overcard |
 
 </div>
@@ -192,7 +192,7 @@ A. Nicht am Tisch. Dort schätzt du mit Outs × 4 bzw. × 2 und den auswendig ge
 
 **Q. Was ist der Unterschied zwischen Equity und Pot Odds?**
 
-A. Die Equity ist deine Chance zu gewinnen (was du hast); die Pot Odds sind die Equity, die du brauchst, um bei einem Call Break-even zu sein (was der Preis verlangt). Die Regel ist einfach: calle, wenn deine Equity größer ist als deine Pot Odds. Die Pot Odds kommen aus der Bet-Größe; die Equity kommt aus deiner Hand und dem Board.
+A. Die Equity ist dein Anteil am Pot (was du hast); die Pot Odds sind die Equity, die du brauchst, um bei einem Call Break-even zu sein (was der Preis verlangt). Die Regel ist einfach: calle, wenn deine Equity größer ist als deine Pot Odds. Die Pot Odds kommen aus der Bet-Größe; die Equity kommt aus deiner Hand und dem Board.
 
 **Q. Sind 50% Equity gut im Poker?**
 
@@ -208,7 +208,7 @@ A. Die Equity Realization ist, wie viel deiner rohen Equity du tatsächlich eins
 
 **Q. Was ist All-in-Equity?**
 
-A. Die All-in-Equity ist schlicht dein rohes Win-Prozent, wenn kein weiteres Setzen mehr passieren kann. Weil es keine zukünftigen Entscheidungen gibt, realisierst du 100% davon, sodass die rohe Equity zum exakten Anteil am Pot wird, den du über die Zeit einsammelst. Es ist der eine Spot, wo „Equity ist gleich Pot-Anteil“ wörtlich wahr ist.
+A. Die All-in-Equity ist schlicht deine rohe Equity – dein Anteil am Pot, Splits anteilig –, wenn kein weiteres Setzen mehr passieren kann. Weil es keine zukünftigen Entscheidungen gibt, realisierst du 100% davon, sodass die rohe Equity zum exakten Anteil am Pot wird, den du über die Zeit einsammelst. Es ist der eine Spot, wo „Equity ist gleich Pot-Anteil“ wörtlich wahr ist.
 
 **Q. Was bedeutet 20% Equity?**
 
@@ -218,7 +218,7 @@ A. Dass dir langfristig ein Fünftel des Pots gehört: In einem $200-Pot sind da
 
 ## Die 3 Dinge zum Merken
 
-1. **Die Equity ist dein Anteil am Pot** – Win% × Pot-Größe. Calle, wenn sie deine Pot Odds schlägt. Dieser Vergleich ist das Rückgrat jeder Entscheidung.
+1. **Die Equity ist dein Anteil am Pot** – Equity% × Pot-Größe. Calle, wenn sie deine Pot Odds schlägt. Dieser Vergleich ist das Rückgrat jeder Entscheidung.
 2. **Du behältst selten alles davon.** Realisierte Equity = roh × Realization%, und die Position ist der größte Faktor. Die rohe Equity ist die Obergrenze, nicht die Auszahlung.
 3. **Aggression erzeugt Equity.** Die Fold Equity lässt eine Bet Pots gewinnen, die deine Hand verlieren würde – aber sie bricht multiway zusammen, wo alle folden müssen.
 

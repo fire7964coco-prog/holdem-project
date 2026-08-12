@@ -190,7 +190,7 @@ Du kennst den exakten Rabatt selten, und das ist okay. Die Richtung stimmt aber 
 
 **Q. Wie viele Outs braucht man, um einen Call zu rechtfertigen?**
 
-A. Das hängt am Preis, nicht an einer festen Zahl. Gegen eine Half-Pot-Bet (25% nötig) reichen mit zwei kommenden Karten schon sieben Outs (27,8%); zahlst du nur für die nächste Karte, brauchst du dafür zwölf (25,5%). Genau deshalb zählst du erst die Outs und schaust dann auf die [Pot Odds](/de/blog/holdem-pot-odds).
+A. Das hängt am Preis, nicht an einer festen Zahl. Die Zwei-Karten-Zahl darfst du nur ansetzen, wenn danach keine Bet mehr auf dich zukommt – etwa weil du am Flop all-in bist: Dann reichen gegen eine Half-Pot-Bet (25% nötig) schon sieben Outs (27,8%). Musst du damit rechnen, am Turn noch einmal zu zahlen, rechnest du nur für die nächste Karte und brauchst zwölf Outs (25,5%). Genau deshalb zählst du erst die Outs und schaust dann auf die [Pot Odds](/de/blog/holdem-pot-odds).
 
 **Q. Zählen Backdoor-Draws als Outs?**
 

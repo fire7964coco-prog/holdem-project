@@ -97,7 +97,7 @@ Das ist meine 8-8-8-A-K-Hand: meine J-10 und seine 5-2 spielten beide den Drilli
 
 ## 3 Dinge, die ein Unentschieden beim Poker nie brechen
 
-![Pik-Royal-Flush = Herz-Royal-Flush mit einem goldenen Gleichheitszeichen dazwischen – die Farbe entscheidet beim Texas Hold'em nie über einen Gewinner](/images/holdem-split-pot-suit-equals.webp "Identische Ränge werden immer geteilt – keine Rangfolge der Farben beim Texas Hold'em")
+![Board K♦ K♣ Q♥ Q♦ J♠, links K♠ 7♣ und rechts K♥ 2♦, dazwischen ein goldenes Gleichheitszeichen – beide bauen dasselbe Full House K-K-K-Q-Q, die Farbe entscheidet beim Texas Hold'em nie über einen Gewinner](/images/holdem-split-pot-suit-equals.webp "Identische Ränge werden immer geteilt – keine Rangfolge der Farben beim Texas Hold'em")
 
 Das sind die Irrtümer hinter den meisten „Moment, warum ist das ein Split?!“-Diskussionen.
 
@@ -169,7 +169,7 @@ A. Er stapelt die Chips und gibt jedem am Chop beteiligten Spieler denselben Ant
 
 **Q. Wird bei Full House, Straße oder Zwei Paaren geteilt?**
 
-A. Nur wenn die kompletten fünf Karten übereinstimmen. Zwei Full Houses teilen erst, wenn Drilling *und* Paar gleich sind – praktisch fast nur, wenn das Full House auf dem Board liegt. Zwei Straßen teilen nur bei derselben höchsten Karte, zwei Zwei-Paare-Hände nur, wenn beide Paare *und* der Kicker passen. In jedem anderen Fall nimmt die höhere Hand alles.
+A. Nur wenn die kompletten fünf Karten übereinstimmen. Zwei Full Houses teilen erst, wenn Drilling *und* Paar gleich sind – typischerweise auf einem doppelt gepaarten Board, auf dem beide dieselbe Kombination bauen, genau wie in Situation 1 oben. Zwei Straßen teilen nur bei derselben höchsten Karte, zwei Zwei-Paare-Hände nur, wenn beide Paare *und* der Kicker passen. In jedem anderen Fall nimmt die höhere Hand alles.
 
 **Q. Was bedeutet „geteilter Pot“ beim Poker?**
 

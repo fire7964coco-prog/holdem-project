@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Poker-Aktionen im Texas Hold'em: Check, Call, Raise, Fold",
   seoTitle: "Checken, callen oder folden? – Poker-Aktionen & Raise-Regeln",
   desc: "Du bist dran und dein Kopf ist leer? Was Check, Call, Raise und Fold beim Poker bedeuten, die Min-Raise-Regel und wie oft du re-raisen darfst.",
-  tldr: "Texas Hold'em kennt 5 Setz-Aktionen: Check (kostenlos schieben), Bet (die Runde eröffnen), Call (einen Einsatz mitgehen), Raise (erhöhen – der Mindest-Raise entspricht dem vorherigen Bet oder Raise) und Fold. Checken darfst du nur, solange auf der Street noch niemand gesetzt hat.",
+  tldr: "Texas Hold'em kennt 5 Setz-Aktionen: Check (kostenlos schieben), Bet (die Runde eröffnen), Call (einen Einsatz mitgehen), Raise (erhöhen – der Mindest-Raise entspricht dem vorherigen Bet oder Raise) und Fold. Checken darfst du nur, solange vor dir kein offener Einsatz steht – preflop also nur als Big Blind.",
   category: "rules",
   date: "2026-06-14",
   updated: "2026-08-11",
@@ -50,7 +50,7 @@ Jede einzelne Entscheidung am Pokertisch ist eine dieser fünf:
 | Aktion | Wann möglich | Chip-Kosten |
 |--------|-------------|-------------|
 | Fold | Immer, wenn du an der Reihe bist | Kostenlos – aber Chips, die schon im Pot liegen, sind verloren |
-| Check | Nur, wenn in dieser Runde noch niemand gesetzt hat | Kostenlos – du schiebst, ohne Chips zu legen |
+| Check | Nur, wenn vor dir kein offener Einsatz steht (preflop: nur als Big Blind) | Kostenlos – du schiebst, ohne Chips zu legen |
 | Call | Nachdem jemand gesetzt oder erhöht hat | Du gehst den aktuellen Einsatz exakt mit |
 | Bet | Der erste Einsatz der Runde | Frei wählbarer Betrag (Minimum = 1 Big Blind) |
 | Raise | Nachdem jemand gesetzt hat | Mindestens die Größe des vorherigen Bets oder Raises obendrauf |
@@ -92,7 +92,7 @@ Check vs. Call ist die häufigste Anfänger-Verwechslung überhaupt, darum hier 
 
 | | Check | Call |
 |-|-------|------|
-| Wann es existiert | Niemand hat in dieser Runde gesetzt | Jemand hat vor dir gesetzt |
+| Wann es existiert | Vor dir steht kein offener Einsatz (preflop: nur als Big Blind) | Jemand hat vor dir gesetzt |
 | Chip-Kosten | Kostenlos | Du gehst den aktuellen Einsatz mit |
 | Was es aussagt | „Ich schiebe, bin noch dabei“ | „Ich zahle, um weiterzuspielen“ |
 
@@ -104,7 +104,7 @@ Echtes Beispiel: Du bist am Flop mit K♠ 8♦. Niemand hat gesetzt, also ==chec
 
 Folden heißt, dass du deine Karten aufgibst und aus der Hand aussteigst. Du zahlst nichts Neues, aber ==r:jeder Chip, den du bereits gelegt hast, bleibt im Pot==.
 
-Ja – du darfst jederzeit folden, wenn du an der Reihe bist, sogar bevor du irgendetwas gesetzt hast, und sogar dann, wenn Checken kostenlos wäre. Aber Achtung, genau da lauert die Falle: **Zu folden, wenn du gratis checken könntest, heißt eine Hand ohne Grund wegzuwerfen.** Wenn niemand gesetzt hat, check einfach.
+Ja – wenn du an der Reihe bist, kannst du jederzeit folden, sogar bevor du irgendetwas gesetzt hast, und der Fold ist dann bindend. Folgenlos ist er trotzdem nicht: Im Turnier gilt ein Fold, obwohl vor dir gar kein Einsatz steht, nach ==WSOP Rule 84== als „Non-Standard Fold“ und kann verwarnt werden. Und genau da lauert die Falle: **Zu folden, wenn du gratis checken könntest, heißt eine Hand ohne Grund wegzuwerfen.** Wenn niemand gesetzt hat, check einfach.
 
 Eine Regel der Live-Etikette: Folde nicht ==außer der Reihe==. Warte, bis die Action bei dir ankommt – wer zu früh foldet, gibt den noch überlegenden Spielern Informationen, und die meisten Cardrooms verwarnen oder bestrafen das. Zu wissen, *wann* der Fold der richtige Spielzug ist, ist eine eigene Fähigkeit für sich – das behandelt [wann du beim Poker folden solltest](/de/blog/holdem-when-to-fold).
 
@@ -147,7 +147,7 @@ Zwei Grenzen gelten trotzdem:
 - Jeder Re-Raise muss die ==Min-Raise-Inkrement-Regel== von oben erfüllen
 - ==r:Du kannst deinen eigenen Einsatz nicht raisen.== Wenn du setzt und alle nur callen, endet die Runde – du darfst nur dann erneut raisen, wenn dich vorher jemand *selbst* raist
 
-In **Fixed-Limit**-Spielen deckeln die meisten Cardrooms jede Runde bei einer Bet plus drei Raises (ein „gecappter“ Pot), oft aufgehoben, wenn nur noch zwei Spieler übrig sind – Hausregeln variieren, frag also den Dealer.
+In **Fixed-Limit**-Spielen ist jede Runde gedeckelt (ein „gecappter“ Pot). Die WSOP-Turnierregeln setzen den Deckel bei ==einer Bet plus vier Raises== (Rule 100.b) – und die Ausnahme läuft anders, als die meisten erwarten: ==r:Der Deckel bleibt stehen, auch wenn in der Hand nur noch zwei Spieler sitzen==. Er fällt erst, wenn im **ganzen Turnier** nur noch zwei Spieler übrig sind. In Cashgames setzen viele Cardrooms den Deckel niedriger an und heben ihn auf, sobald die Hand heads-up wird – Hausregeln variieren, frag also den Dealer.
 
 ---
 
@@ -179,7 +179,7 @@ Ich spiele ein wöchentliches Low-Stakes-Live-Game, und dieselben Action-Fehler 
 
 ### Fehler 1 – Callen, wenn du checken könntest
 
-Am Flop ist er als Erster dran, niemand hat gesetzt, und ein neuer Spieler wirft Chips rein, „um zu callen“. Da ist nichts zu callen – das ist eine Bet. Wenn die Street noch nicht eröffnet ist: checken und die Karte gratis sehen.
+Am Flop ist er als Erster dran, niemand hat gesetzt, und ein neuer Spieler schiebt Chips rein, „um zu callen“. Da ist nichts zu callen – und wie es ausgeht, hängt davon ab, *wie* er es tut: Wortlos rausgeschobene Chips zählen als ==Bet== (Rule 99), während ein angesagtes „Call“ ohne Einsatz davor nach ==Rule 90.b.1== schlicht als Check gewertet wird. Wenn die Street noch nicht eröffnet ist: checken und die Karte gratis sehen.
 
 ### Fehler 2 – Der String Raise
 
@@ -220,7 +220,7 @@ A. Solltest du nicht. Die Action muss im Uhrzeigersinn der Reihe nach ablaufen, 
 
 **Q. Darf man beim Poker reden?**
 
-A. Reden ja – über die laufende Hand nein. Die offiziellen WSOP-Turnierregeln (**Rule 116, „Table Talk / Disclosure“**) verbieten, den Inhalt einer noch laufenden oder bereits gefoldeten Hand zu verraten, anderen Ratschläge zum Spiel zu geben oder ihr Spiel zu kritisieren, eine noch nicht aufgedeckte Hand zu lesen und bei laufender Turnieruhr mit Außenstehenden Strategie zu besprechen – und das gilt, ==ob du selbst noch in der Hand bist oder nicht==. Ausdrücklich erlaubt ist dagegen: Du darfst deine Handstärke ansprechen, wenn kein anderer Spieler in der Hand noch eine Entscheidung zu treffen hat, und in Heads-up-Events bzw. wenn im Turnier nur noch zwei Spieler übrig sind, darfst du frei über deine Karten reden; ob jemand einem anderen absichtlich geholfen hat, entscheidet im Zweifel die Floor Person. Übermäßiges Gequatsche, das Spieler in einer Hand stört, fällt separat unter Etikette-Verstöße (Rule 119). In der Heimrunde ist der Ton lockerer, aber die Faustregel bleibt: Solange eine Hand läuft, sagst du nichts, was einem anderen die Entscheidung abnimmt.
+A. Reden ja – über die laufende Hand nein. Die offiziellen WSOP-Turnierregeln (**Rule 116, „Table Talk / Disclosure“**) verbieten, den Inhalt einer noch laufenden oder bereits gefoldeten Hand zu verraten, anderen Ratschläge zum Spiel zu geben oder ihr Spiel zu kritisieren, eine noch nicht aufgedeckte Hand zu lesen und bei laufender Turnieruhr außerhalb der Pausen mit Außenstehenden Strategie zu besprechen – und das gilt, ==ob du selbst noch in der Hand bist oder nicht==. Ausdrücklich erlaubt ist dagegen: Du darfst deine Handstärke ansprechen, wenn kein anderer Spieler in der Hand noch eine Entscheidung zu treffen hat, und in Heads-up-Events bzw. wenn im Turnier nur noch zwei Spieler übrig sind, darfst du frei über deine Karten reden; ob jemand einem anderen absichtlich geholfen hat, entscheidet im Zweifel die Floor Person. Übermäßiges Gequatsche, das Spieler in einer Hand stört, fällt separat unter Etikette-Verstöße (Rule 119). In der Heimrunde ist der Ton lockerer, aber die Faustregel bleibt: Solange eine Hand läuft, sagst du nichts, was einem anderen die Entscheidung abnimmt.
 
 **Q. Darf man Preflop checken?**
 
@@ -242,7 +242,7 @@ A. Limpen heißt, Preflop nur den Big Blind zu callen, statt zu raisen, um in de
 
 ## Quellen
 
-- **2026 World Series of Poker Official Tournament Rules** – Table Talk / Disclosure (Rule 116: kein Verraten noch laufender oder bereits gefoldeter Hände, kein Beraten oder Kritisieren fremden Spiels, kein Lesen nicht getablter Hände, keine Strategie mit Außenstehenden bei laufender Uhr, „one participant to a hand“; Ausnahmen in Heads-up-Events, bei den letzten zwei Spielern und wenn niemand mehr eine Entscheidung zu treffen hat) sowie Etikette-Verstöße inkl. „excessive chatter“ (Rule 119) – [wsop.gg-global-cdn.com PDF](https://wsop.gg-global-cdn.com/wsop/pdfs/2026-WSOP-Tournament-Rules.pdf) · geprüft am 10. August 2026
+- **2026 World Series of Poker Official Tournament Rules** – Table Talk / Disclosure (Rule 116: kein Verraten noch laufender oder bereits gefoldeter Hände, kein Beraten oder Kritisieren fremden Spiels, kein Lesen nicht getablter Hände, keine Strategie mit Außenstehenden bei laufender Uhr außerhalb der Pausen, „one participant to a hand“; Ausnahmen in Heads-up-Events, bei den letzten zwei Spielern und wenn niemand mehr eine Entscheidung zu treffen hat), Non-Standard Folds (Rule 84), Setzmethoden und ungültige Ansagen (Rule 90), wortlos rausgeschobene Chips (Rule 99), Anzahl der Raises im Limit (Rule 100) sowie Etikette-Verstöße inkl. „excessive chatter“ (Rule 119) – [wsop.gg-global-cdn.com PDF](https://wsop.gg-global-cdn.com/wsop/pdfs/2026-WSOP-Tournament-Rules.pdf) · geprüft am 10. August 2026
 
 > Die Regeln oben sind Turnierregeln. In Cashgames und Heimrunden gelten teils abweichende Hausregeln – frag im Zweifel den Dealer oder den Gastgeber.
 

@@ -103,10 +103,10 @@ Derselbe $50-Call, gegensätzliche Entscheidungen – und die Karten haben sich 
 
 | Draw | Outs | Treffer % (1 Karte) | Nötiger Stack dahinter |
 |:---|:---:|:---:|:---:|
-| Flushdraw | 9 | 19,6% | ~8–10× den Call |
-| Open-Ended-Straße | 8 | 17,4% | ~8–10× den Call |
+| Flushdraw | 9 | 19,6% (Turn) | ~8–10× den Call |
+| Open-Ended-Straße | 8 | 17,4% (Turn) | ~8–10× den Call |
 | Set (Pocket Pair) | 2→Set | ~11,8% Flop | ~15–20× den Call |
-| Gutshot-Straße | 4 | 8,7% | ~20×+ (selten lohnend) |
+| Gutshot-Straße | 4 | 8,7% (Turn) | ~20×+ (selten lohnend) |
 
 </div>
 
@@ -180,7 +180,7 @@ Ich habe mehr Chips an eingebildete Implied Odds verloren als an alle Bad Beats 
 
 **Q. Gelten Implied Odds auch am River?**
 
-A. Nein. Nach dem River kommt keine Karte mehr und keine Setzrunde mehr – es gibt nichts, was „später“ noch dazukäme. Deine Entscheidung hängt dort allein am Preis und daran, wie oft du gegen seine Range die beste Hand hast. Implied Odds sind ein Flop- und Turn-Konzept.
+A. Nein. Nach dem River kommt keine Karte mehr und keine Setzrunde mehr – es gibt nichts, was „später“ noch dazukäme. Deine Entscheidung hängt dort allein am Preis und daran, wie oft du gegen seine Range die beste Hand hast. Implied Odds sind ein Preflop-, Flop- und Turn-Konzept – überall dort, wo noch eine Setzrunde folgt.
 
 **Q. Wie viel muss ich mit einem Flushdraw am Turn zusätzlich gewinnen?**
 
@@ -196,7 +196,7 @@ A. Reverse Implied Odds sind die Chips, die du verlierst, wenn du deinen Draw ko
 
 **Q. Machen Implied Odds einen Gutshot spielbar?**
 
-A. Selten. Ein Gutshot trifft auf eine Karte nur in 8,7% der Fälle. Callst du damit $50 in einen $150-Pot, müsstest du am River noch rund $375 zusätzlich gewinnen – das Siebeneinhalbfache deines Calls, und zwar zusätzlich zum Pot, nicht als Stack-Vielfaches. Das lohnt praktisch nur mit sehr tiefen Stacks, zu den Nuts und gegen einen Gegner, der wirklich zahlt.
+A. Selten. Ein Gutshot trifft auf eine Karte am Turn nur in 8,7% der Fälle. Callst du damit $50 in einen $150-Pot, müsstest du am River noch rund $375 zusätzlich gewinnen – das Siebeneinhalbfache deines Calls, und zwar zusätzlich zum Pot, nicht als Stack-Vielfaches. Das lohnt praktisch nur mit sehr tiefen Stacks, zu den Nuts und gegen einen Gegner, der wirklich zahlt.
 
 **Q. Gelten Implied Odds, wenn dein Gegner all-in ist?**
 
