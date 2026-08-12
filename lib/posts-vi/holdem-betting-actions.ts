@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Các hành động cược trong Texas Hold'em: Check, Theo, Tố, Bỏ Bài",
   seoTitle: "Check, theo hay bỏ bài? — Các hành động cược trong poker",
   desc: "Đến lượt bạn mà đầu óc trống rỗng? Tìm hiểu check, theo (call), tố (raise) và bỏ bài (fold) là gì, luật tố tối thiểu và bạn được tố lại bao nhiêu lần.",
-  tldr: "Texas Hold'em có 5 hành động cược: check (nhường lượt miễn phí), cược (mở vòng cược), theo (call — trả đúng mức cược), tố (raise — mức tố tối thiểu bằng khoản cược hoặc khoản tố trước đó) và bỏ bài (fold). Bạn chỉ được check khi chưa có ai cược trong vòng đó.",
+  tldr: "Texas Hold'em có 5 hành động cược: check (nhường lượt miễn phí), cược (mở vòng cược), theo (call — trả đúng mức cược), tố (raise — mức tố tối thiểu bằng khoản cược hoặc khoản tố trước đó) và bỏ bài (fold). Bạn chỉ được check khi trước mặt không có khoản cược đang mở — ở preflop điều đó chỉ xảy ra khi bạn là big blind.",
   category: "rules",
   date: "2026-06-14",
   updated: "2026-07-13",
@@ -49,14 +49,14 @@ Mọi quyết định bạn đưa ra trên bàn poker đều là một trong nă
 | Hành động | Khi nào được dùng | Tốn chip |
 |--------|---------------|-----------|
 | Bỏ bài (fold) | Bất cứ lúc nào đến lượt bạn | Miễn phí — nhưng bạn mất số chip đã bỏ vào pot |
-| Check | Chỉ khi chưa có ai cược trong vòng này | Miễn phí — bạn nhường lượt mà không thêm chip |
+| Check | Chỉ khi trước mặt bạn không có khoản cược đang mở (preflop: chỉ khi bạn là big blind) | Miễn phí — bạn nhường lượt mà không thêm chip |
 | Theo (call) | Sau khi có người đã cược hoặc tố | Bạn trả đúng bằng mức cược hiện tại |
 | Cược (bet) | Khoản cược đầu tiên của vòng | Số tiền bạn chọn (tối thiểu = 1 mù lớn) |
 | Tố (raise) | Sau khi có người đã cược | Cộng thêm ít nhất bằng khoản cược hoặc khoản tố trước đó |
 
 ==All-in== không phải là hành động thứ sáu riêng biệt — đó chỉ là một khoản cược, theo hoặc tố bằng toàn bộ số chip bạn còn lại. Chi tiết ở phần dưới.
 
-Luật quan trọng nhất mà người mới hay bỏ sót: ==r:bạn không thể check một khi đã có người cược==. Khoảnh khắc chip được đẩy vào, lựa chọn của bạn thu hẹp còn bỏ bài, theo hoặc tố.
+Luật quan trọng nhất mà người mới hay bỏ sót: ==r:bạn không thể check khi trước mặt có khoản cược đang mở==. Ngay khi trong pot có chip bạn chưa theo, lựa chọn của bạn thu hẹp còn bỏ bài, theo hoặc tố.
 
 ---
 
@@ -91,7 +91,7 @@ Check vs call là nhầm lẫn phổ biến nhất của người mới, nên đ
 
 | | Check | Theo (call) |
 |-|-------|------|
-| Khi nào tồn tại | Chưa ai cược trong vòng này | Đã có người cược trước bạn |
+| Khi nào tồn tại | Trước mặt bạn không có khoản cược đang mở (preflop: chỉ khi bạn là big blind) | Đã có người cược trước bạn |
 | Tốn chip | Miễn phí | Bạn trả bằng mức cược hiện tại |
 | Ý nghĩa | "Tôi nhường lượt, vẫn ở lại" | "Tôi trả tiền để đi tiếp" |
 

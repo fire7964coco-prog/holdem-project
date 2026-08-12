@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Aksi Taruhan di Texas Hold'em: Check, Call, Raise, Fold",
   seoTitle: "Check, Call, atau Fold? — Aksi Taruhan Poker & Aturan Raise",
   desc: "Giliran Anda tiba dan pikiran langsung kosong? Pelajari arti check, call, raise, dan fold di poker, aturan min-raise, dan berapa kali Anda boleh re-raise.",
-  tldr: "Texas Hold'em punya 5 aksi taruhan: check (lewat gratis), bet (membuka ronde), call (menyamai taruhan), raise (menaikkannya — raise minimum sama dengan bet atau raise sebelumnya), dan fold. Anda hanya boleh check kalau belum ada yang bertaruh di street itu.",
+  tldr: "Texas Hold'em punya 5 aksi taruhan: check (lewat gratis), bet (membuka ronde), call (menyamai taruhan), raise (menaikkannya — raise minimum sama dengan bet atau raise sebelumnya), dan fold. Anda hanya boleh check kalau tidak ada taruhan aktif di depan Anda — di preflop itu cuma terjadi kalau Anda big blind.",
   category: "rules",
   date: "2026-06-14",
   updated: "2026-07-15",
@@ -49,14 +49,14 @@ Setiap keputusan yang Anda ambil di meja poker adalah salah satu dari lima ini:
 | Aksi | Kapan tersedia | Biaya chip |
 |--------|---------------|-----------|
 | Fold | Kapan saja giliran Anda | Gratis — tapi chip yang sudah masuk ke pot hangus |
-| Check | Hanya kalau belum ada yang bertaruh di ronde ini | Gratis — Anda lewat tanpa menambah chip |
+| Check | Hanya kalau tidak ada taruhan aktif di depan Anda (preflop: hanya sebagai big blind) | Gratis — Anda lewat tanpa menambah chip |
 | Call | Setelah ada yang bet atau raise | Anda menyamai taruhan berjalan persis |
 | Bet | Taruhan pertama di ronde itu | Jumlah pilihan Anda (minimum = 1 big blind) |
 | Raise | Setelah ada yang bertaruh | Minimal sebesar bet atau raise sebelumnya, di atasnya |
 
 ==All-in== bukan aksi keenam yang terpisah — itu adalah bet, call, atau raise dengan seluruh sisa chip yang Anda punya. Detailnya ada di bawah.
 
-Satu aturan terpenting yang paling sering luput dari pemula: ==r:Anda tidak bisa check begitu ada yang bertaruh==. Begitu chip masuk, pilihan Anda menyempit jadi fold, call, atau raise.
+Satu aturan terpenting yang paling sering luput dari pemula: ==r:Anda tidak bisa check kalau ada taruhan aktif di depan Anda==. Begitu ada chip di pot yang belum Anda samakan, pilihan Anda menyempit jadi fold, call, atau raise.
 
 ---
 
@@ -91,7 +91,7 @@ Check vs call adalah kebingungan pemula yang paling umum, jadi ini pemisahannya 
 
 | | Check | Call |
 |-|-------|------|
-| Kapan ada | Belum ada yang bertaruh di ronde ini | Ada yang bertaruh sebelum Anda |
+| Kapan ada | Tidak ada taruhan aktif di depan Anda (preflop: hanya sebagai big blind) | Ada yang bertaruh sebelum Anda |
 | Biaya chip | Gratis | Anda menyamai taruhan berjalan |
 | Artinya | "Saya lewat, masih ikut" | "Saya bayar untuk lanjut" |
 

@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Betting Actions sa Texas Hold'em: Check, Call, Raise, Fold",
   seoTitle: "Check, Call o Fold? — Poker Betting Actions & Min-Raise",
   desc: "Nasa iyo na ang action pero blangko ang isip? Alamin ang check, call, raise at fold, ang min-raise rule, at kung ilang beses ka pwedeng mag-re-raise.",
-  tldr: "May 5 betting actions ang Texas Hold'em: check (pumasa nang libre), bet (buksan ang round), call (tapatan ang bet), raise (dagdagan — ang min-raise ay katumbas ng huling bet o raise), at fold. Pwede ka lang mag-check kung wala pang nag-bet sa street na iyon.",
+  tldr: "May 5 betting actions ang Texas Hold'em: check (pumasa nang libre), bet (buksan ang round), call (tapatan ang bet), raise (dagdagan — ang min-raise ay katumbas ng huling bet o raise), at fold. Pwede ka lang mag-check kung walang aktibong bet sa harap mo — sa preflop, nangyayari lang iyon kapag ikaw ang big blind.",
   category: "rules",
   date: "2026-06-14",
   updated: "2026-07-13",
@@ -49,14 +49,14 @@ Bawat desisyon mo sa poker table ay isa sa limang ito:
 | Action | Kailan available | Chip cost |
 |--------|---------------|-----------|
 | Fold | Anumang oras na nasa iyo ang action | Libre — pero mawawala sa iyo ang chips na nailagay mo na sa pot |
-| Check | Kapag wala pang nag-bet sa round na ito | Libre — pumapasa ka nang walang dagdag na chips |
+| Check | Kapag walang aktibong bet sa harap mo (preflop: bilang big blind lang) | Libre — pumapasa ka nang walang dagdag na chips |
 | Call | Pagkatapos may nag-bet o nag-raise | Tinutumbasan mo ang current bet nang eksakto |
 | Bet | Unang taya ng round | Ikaw ang pipili ng halaga (minimum = 1 big blind) |
 | Raise | Pagkatapos may nag-bet | Kahit ang laki ng nauna nang bet o raise, dagdag pa sa taas |
 
 Ang pag-all-in ay hindi ikaanim na hiwalay na action — ito ay isang bet, call, o raise gamit ang lahat ng natitira mong chips. Marami pa tungkol dito sa baba.
 
-Ang pinakaimportanteng rule na madalas kaligtaan ng mga baguhan: ==r:hindi ka na pwedeng mag-check kapag may nag-bet na==. Sa sandaling pumasok ang chips, ang options mo ay nagiging fold, call, o raise na lang.
+Ang pinakaimportanteng rule na madalas kaligtaan ng mga baguhan: ==r:hindi ka pwedeng mag-check kapag may aktibong bet sa harap mo==. Sa sandaling may chips sa pot na hindi mo pa natutumbasan, ang options mo ay nagiging fold, call, o raise na lang.
 
 ---
 
@@ -91,7 +91,7 @@ Ang check vs call ang pinakamadalas na pagkalito ng mga baguhan, kaya heto ang m
 
 | | Check | Call |
 |-|-------|------|
-| Kailan meron | Walang nag-bet sa round na ito | May nag-bet na bago ka |
+| Kailan meron | Walang aktibong bet sa harap mo (preflop: bilang big blind lang) | May nag-bet na bago ka |
 | Chip cost | Libre | Tinutumbasan mo ang current bet |
 | Ibig sabihin | "Pumapasa, nasa hand pa rin" | "Nagbabayad para tumuloy" |
 

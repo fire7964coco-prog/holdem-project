@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Ações de aposta no Texas Hold'em: check, call, raise e fold",
   seoTitle: "Check, pagar ou foldar? — Ações de aposta e regras do raise",
   desc: "Chegou a sua vez e deu branco? Entenda o que são check, call, raise e fold no poker, como funciona a regra do min-raise e quantas vezes dá para reaumentar.",
-  tldr: "O Texas Hold'em tem 5 ações de aposta: check (passar de graça), apostar (abrir a rodada), pagar/call (igualar uma aposta), aumentar/raise (o aumento mínimo é igual à aposta ou ao raise anterior) e foldar. Você só pode dar check enquanto ninguém apostou naquela street.",
+  tldr: "O Texas Hold'em tem 5 ações de aposta: check (passar de graça), apostar (abrir a rodada), pagar/call (igualar uma aposta), aumentar/raise (o aumento mínimo é igual à aposta ou ao raise anterior) e foldar. Você só pode dar check quando não há aposta viva à sua frente — no preflop, isso só acontece sendo o big blind.",
   category: "rules",
   date: "2026-06-14",
   updated: "2026-07-12",
@@ -49,14 +49,14 @@ Toda decisão que você toma numa mesa de poker é uma destas cinco:
 | Ação | Quando está disponível | Custo em fichas |
 |--------|---------------|-----------|
 | Fold | Sempre que a ação estiver com você | Grátis — mas as fichas que já foram para o pote ficam lá |
-| Check | Só quando ninguém apostou nesta rodada | Grátis — você passa a vez sem colocar fichas |
+| Check | Só quando não há aposta viva à sua frente (preflop: só como big blind) | Grátis — você passa a vez sem colocar fichas |
 | Call | Depois que alguém apostou ou aumentou | Você iguala exatamente a aposta atual |
 | Bet | Primeira aposta da rodada | O valor que você escolher (mínimo = 1 big blind) |
 | Raise | Depois que alguém apostou | Pelo menos o tamanho da aposta ou do raise anterior por cima |
 
 Ir de ==all-in== não é uma sexta ação separada — é uma aposta, um call ou um raise com todas as fichas que você ainda tem. Falamos disso mais abaixo.
 
-A regra mais importante que os iniciantes deixam passar: ==r:você não pode dar check depois que alguém apostou==. No momento em que fichas entram no pote, suas opções encolhem para foldar, pagar ou aumentar.
+A regra mais importante que os iniciantes deixam passar: ==r:você não pode dar check se há uma aposta viva à sua frente==. No momento em que existem fichas no pote que você ainda não igualou, suas opções encolhem para foldar, pagar ou aumentar.
 
 ---
 
@@ -91,7 +91,7 @@ Check vs call é a confusão mais comum de iniciante, então aqui vai a separaç
 
 | | Check | Call |
 |-|-------|------|
-| Quando existe | Ninguém apostou nesta rodada | Alguém apostou antes de você |
+| Quando existe | Não há aposta viva à sua frente (preflop: só como big blind) | Alguém apostou antes de você |
 | Custo em fichas | Grátis | Você iguala a aposta atual |
 | O que diz | "Passo, mas continuo" | "Pago para continuar" |
 

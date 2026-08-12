@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Aksi Pertaruhan Texas Hold'em: Cek, Call, Raise, Fold",
   seoTitle: "Cek, Call atau Fold? — Aksi Pertaruhan Poker & Peraturan Raise",
   desc: "Giliran anda tiba dan fikiran terus kosong? Ketahui maksud cek, call, raise dan fold dalam poker, peraturan min-raise, dan berapa kali anda boleh re-raise.",
-  tldr: "Texas Hold'em ada 5 aksi pertaruhan: cek (lepas giliran secara percuma), bertaruh (buka pusingan), call (samai pertaruhan), raise (menaikkannya — kenaikan minimum sama dengan saiz pertaruhan atau raise sebelumnya), dan fold. Anda hanya boleh cek apabila belum ada sesiapa bertaruh dalam pusingan itu.",
+  tldr: "Texas Hold'em ada 5 aksi pertaruhan: cek (lepas giliran secara percuma), bertaruh (buka pusingan), call (samai pertaruhan), raise (menaikkannya — kenaikan minimum sama dengan saiz pertaruhan atau raise sebelumnya), dan fold. Anda hanya boleh cek apabila tiada pertaruhan aktif di hadapan anda — pada praflop itu hanya berlaku jika anda big blind.",
   category: "rules",
   date: "2026-06-14",
   updated: "2026-07-13",
@@ -49,14 +49,14 @@ Setiap keputusan yang anda buat di meja poker adalah salah satu daripada lima in
 | Aksi | Bila boleh dibuat | Kos cip |
 |--------|---------------|-----------|
 | Fold | Bila-bila masa giliran anda | Percuma — tetapi anda lepaskan cip yang sudah masuk dalam pot |
-| Cek | Hanya apabila belum ada sesiapa bertaruh dalam pusingan ini | Percuma — anda lepas giliran tanpa menambah cip |
+| Cek | Hanya apabila tiada pertaruhan aktif di hadapan anda (praflop: hanya sebagai big blind) | Percuma — anda lepas giliran tanpa menambah cip |
 | Call | Selepas seseorang bertaruh atau raise | Anda samai pertaruhan semasa dengan tepat |
 | Bertaruh (bet) | Pertaruhan pertama dalam pusingan | Jumlah pilihan anda (minimum = 1 big blind) |
 | Raise | Selepas seseorang bertaruh | Sekurang-kurangnya sebesar pertaruhan atau raise sebelumnya, ditambah di atasnya |
 
 ==All-in== bukan aksi keenam yang berasingan — ia adalah bertaruh, call atau raise dengan semua cip yang anda ada. Kita bincangkan lebih lanjut di bawah.
 
-Peraturan paling penting yang selalu terlepas pandang oleh pemain baharu: ==r:anda tidak boleh cek selepas seseorang bertaruh==. Sebaik sahaja cip masuk, pilihan anda mengecil kepada fold, call atau raise.
+Peraturan paling penting yang selalu terlepas pandang oleh pemain baharu: ==r:anda tidak boleh cek jika ada pertaruhan aktif di hadapan anda==. Sebaik sahaja ada cip dalam pot yang belum anda samakan, pilihan anda mengecil kepada fold, call atau raise.
 
 ---
 
@@ -91,7 +91,7 @@ Cek vs call ialah kekeliruan pemain baharu yang paling kerap, jadi ini pembahagi
 
 | | Cek | Call |
 |-|-------|------|
-| Bila wujud | Belum ada sesiapa bertaruh dalam pusingan ini | Seseorang sudah bertaruh sebelum anda |
+| Bila wujud | Tiada pertaruhan aktif di hadapan anda (praflop: hanya sebagai big blind) | Seseorang sudah bertaruh sebelum anda |
 | Kos cip | Percuma | Anda samai pertaruhan semasa |
 | Maksudnya | "Saya lepas giliran, masih dalam permainan" | "Saya bayar untuk teruskan" |
 

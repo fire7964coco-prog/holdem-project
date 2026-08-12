@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Akcje w Texas Hold'em: czek, sprawdzenie, przebicie i pas",
   seoTitle: "Czek, sprawdzić czy spasować? — akcje w pokerze",
   desc: "Przychodzi twój ruch i pustka w głowie? Zobacz, co znaczą czek, sprawdzenie, przebicie i pas, jak działa min-raise i ile razy można przebijać.",
-  tldr: "W Texas Hold'em jest 5 akcji: czek (spasowanie za darmo — zostajesz w rozdaniu), postawienie (otwierasz rundę), sprawdzenie (dokładasz do stawki), przebicie (podnosisz — minimalne przebicie równa się poprzedniemu zakładowi lub przebiciu) i pas. Czekać możesz tylko wtedy, gdy nikt jeszcze nie postawił na danej ulicy.",
+  tldr: "W Texas Hold'em jest 5 akcji: czek (spasowanie za darmo — zostajesz w rozdaniu), postawienie (otwierasz rundę), sprawdzenie (dokładasz do stawki), przebicie (podnosisz — minimalne przebicie równa się poprzedniemu zakładowi lub przebiciu) i pas. Czekać możesz tylko wtedy, gdy przed tobą nie stoi aktywny zakład — na preflopie wyłącznie jako duża ciemna.",
   category: "rules",
   date: "2026-06-14",
   updated: "2026-07-13",
@@ -49,14 +49,14 @@ Każda pojedyncza decyzja przy stole to jedna z tych pięciu:
 | Akcja | Kiedy dostępna | Koszt w żetonach |
 |--------|---------------|-----------|
 | Pas (fold) | Zawsze, gdy ruch należy do ciebie | Za darmo — ale tracisz żetony już wrzucone do puli |
-| Czek (check) | Tylko gdy nikt jeszcze nie postawił w tej rundzie | Za darmo — oddajesz ruch, nie dokładając żetonów |
+| Czek (check) | Tylko gdy przed tobą nie stoi aktywny zakład (preflop: wyłącznie jako duża ciemna) | Za darmo — oddajesz ruch, nie dokładając żetonów |
 | Sprawdzenie (call) | Po tym, jak ktoś postawił lub przebił | Dokładasz dokładnie do aktualnej stawki |
 | Postawienie (bet) | Pierwszy zakład w rundzie | Kwota, którą wybierzesz (minimum = 1 duży blind) |
 | Przebicie (raise) | Po tym, jak ktoś postawił | Co najmniej rozmiar poprzedniego zakładu lub przebicia na wierzch |
 
 Wejście ==all-in== to nie osobna, szósta akcja — to postawienie, sprawdzenie albo przebicie wszystkimi żetonami, jakie ci zostały. Więcej o tym niżej.
 
-Najważniejsza zasada, którą początkujący przegapiają: ==r:nie możesz czekać, gdy ktoś już postawił==. W chwili, gdy żetony wpadają do puli, twoje opcje kurczą się do pasa, sprawdzenia albo przebicia.
+Najważniejsza zasada, którą początkujący przegapiają: ==r:nie możesz czekać, gdy przed tobą stoi aktywny zakład==. W chwili, gdy w puli są żetony, których nie wyrównałeś, twoje opcje kurczą się do pasa, sprawdzenia albo przebicia.
 
 ---
 
@@ -91,7 +91,7 @@ Czek vs sprawdzenie to najczęstsza pomyłka początkujących, więc oto czysty 
 
 | | Czek (check) | Sprawdzenie (call) |
 |-|-------|------|
-| Kiedy istnieje | Nikt nie postawił w tej rundzie | Ktoś postawił przed tobą |
+| Kiedy istnieje | Przed tobą nie stoi aktywny zakład (preflop: wyłącznie jako duża ciemna) | Ktoś postawił przed tobą |
 | Koszt w żetonach | Za darmo | Dokładasz do aktualnej stawki |
 | Co mówi | "Pasuję słownie, zostaję" | "Płacę, żeby grać dalej" |
 

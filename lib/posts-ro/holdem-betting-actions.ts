@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Acțiunile de pariere la Texas Hold'em: check, call, raise, fold",
   seoTitle: "Check, call sau fold? — Acțiunile de pariere la poker",
   desc: "E rândul tău și rămâi blocat? Iată ce înseamnă check, call, raise și fold la poker, regula min-raise și de câte ori poți relansa într-o mână.",
-  tldr: "La Texas Hold'em ai 5 acțiuni de pariere: check (pasezi gratis), pariu (deschizi runda), call/a plăti (egalezi pariul), raise/a mări (relansarea minimă egalează ultimul pariu sau ultima relansare) și fold/a renunța. Poți da check doar dacă nimeni nu a pariat încă pe strada aceea.",
+  tldr: "La Texas Hold'em ai 5 acțiuni de pariere: check (pasezi gratis), pariu (deschizi runda), call/a plăti (egalezi pariul), raise/a mări (relansarea minimă egalează ultimul pariu sau ultima relansare) și fold/a renunța. Poți da check doar dacă în fața ta nu stă un pariu activ — preflop, asta se întâmplă doar dacă ești big blind.",
   category: "rules",
   date: "2026-06-14",
   updated: "2026-07-13",
@@ -49,14 +49,14 @@ Fiecare decizie pe care o iei la o masă de poker e una dintre acestea cinci:
 | Acțiune | Când e disponibilă | Cost în jetoane |
 |--------|---------------|-----------|
 | Fold (a renunța) | Oricând e rândul tău | Gratis — dar pierzi jetoanele deja puse în pot |
-| Check | Doar dacă nimeni nu a pariat încă în runda asta | Gratis — pasezi fără să adaugi jetoane |
+| Check | Doar dacă în fața ta nu stă un pariu activ (preflop: doar ca big blind) | Gratis — pasezi fără să adaugi jetoane |
 | Call (a plăti) | După ce cineva a pariat sau a relansat | Egalezi exact pariul curent |
 | Pariu (bet) | Primul pariu al rundei | Suma pe care o alegi (minim = 1 big blind) |
 | Raise (a mări) | După ce cineva a pariat | Cel puțin cât ultimul pariu sau ultima relansare, pe deasupra |
 
 A intra ==all-in== nu e o a șasea acțiune separată — e un pariu, un call sau un raise cu toate jetoanele care ți-au rămas. Revenim la asta mai jos.
 
-Regula cea mai importantă pe care o ratează începătorii: ==r:nu poți da check odată ce cineva a pariat==. În clipa în care intră jetoanele, opțiunile tale se reduc la fold, call sau raise.
+Regula cea mai importantă pe care o ratează începătorii: ==r:nu poți da check dacă în fața ta stă un pariu activ==. În clipa în care în pot sunt jetoane pe care nu le-ai egalat, opțiunile tale se reduc la fold, call sau raise.
 
 ---
 
@@ -91,7 +91,7 @@ Check vs call e cea mai frecventă confuzie de începător, așa că iată disti
 
 | | Check | Call |
 |-|-------|------|
-| Când există | Nimeni nu a pariat în runda asta | Cineva a pariat înaintea ta |
+| Când există | În fața ta nu stă un pariu activ (preflop: doar ca big blind) | Cineva a pariat înaintea ta |
 | Cost în jetoane | Gratis | Egalezi pariul curent |
 | Ce spune | "Pasez, rămân în joc" | "Plătesc ca să continui" |
 

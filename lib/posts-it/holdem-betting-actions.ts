@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Azioni di puntata nel Texas Hold'em: check, chiamare, rilanciare, passare",
   seoTitle: "Check, chiamare o passare? — Le azioni del poker",
   desc: "Tocca a te e vai nel pallone? Ecco cosa significano check, chiamare, rilanciare e passare, la regola del min-raise e quante volte puoi rilanciare.",
-  tldr: "Nel Texas Hold'em ci sono 5 azioni di puntata: check (passi gratis), puntare (apri il giro), chiamare (pareggi la puntata), rilanciare (il rilancio minimo è pari all'ultima puntata o rilancio) e passare. Puoi fare check solo quando nessuno ha ancora puntato in quella street.",
+  tldr: "Nel Texas Hold'em ci sono 5 azioni di puntata: check (passi gratis), puntare (apri il giro), chiamare (pareggi la puntata), rilanciare (il rilancio minimo è pari all'ultima puntata o rilancio) e passare. Puoi fare check solo quando davanti a te non c'è una puntata viva — preflop questo vale solo per il big blind.",
   category: "rules",
   date: "2026-06-14",
   updated: "2026-07-13",
@@ -49,14 +49,14 @@ Ogni singola decisione che prendi a un tavolo da poker è una di queste cinque:
 | Azione | Quando è disponibile | Costo in fiches |
 |--------|---------------|-----------|
 | Passare (fold) | Ogni volta che tocca a te | Gratis — ma perdi le fiches già nel piatto |
-| Check | Solo se nessuno ha ancora puntato in questo giro | Gratis — passi senza mettere fiches |
+| Check | Solo se davanti a te non c'è una puntata viva (preflop: solo come big blind) | Gratis — passi senza mettere fiches |
 | Chiamare (call) | Dopo che qualcuno ha puntato o rilanciato | Pareggi esattamente la puntata in corso |
 | Puntare (bet) | Prima puntata del giro | La cifra che scegli (minimo = 1 grande buio) |
 | Rilanciare (raise) | Dopo che qualcuno ha puntato | Almeno la dimensione della puntata o del rilancio precedente in più |
 
 Andare ==all-in== non è una sesta azione a sé: è una puntata, una chiamata o un rilancio con tutte le fiches che ti restano. Più avanti lo vediamo nel dettaglio.
 
-La regola più importante che sfugge ai principianti: ==r:non puoi fare check una volta che qualcuno ha puntato==. Nel momento in cui entrano le fiches, le tue opzioni si riducono a passare, chiamare o rilanciare.
+La regola più importante che sfugge ai principianti: ==r:non puoi fare check se davanti a te c'è una puntata viva==. Nel momento in cui nel piatto ci sono fiches che non hai ancora pareggiato, le tue opzioni si riducono a passare, chiamare o rilanciare.
 
 ---
 
@@ -91,7 +91,7 @@ Check vs chiamare è la confusione da principiante più diffusa in assoluto, qui
 
 | | Check | Chiamare |
 |-|-------|------|
-| Quando esiste | Nessuno ha puntato in questo giro | Qualcuno ha puntato prima di te |
+| Quando esiste | Davanti a te non c'è una puntata viva (preflop: solo come big blind) | Qualcuno ha puntato prima di te |
 | Costo in fiches | Gratis | Pareggi la puntata in corso |
 | Cosa dice | "Passo, resto dentro" | "Pago per continuare" |
 

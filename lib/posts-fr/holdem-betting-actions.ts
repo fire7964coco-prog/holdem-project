@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Les actions au Texas Hold'em : checker, suivre, relancer, se coucher",
   seoTitle: "Checker, suivre ou se coucher ? — Les actions au poker",
   desc: "C'est à toi de parler et ta tête se vide ? Comprends le check, le call, la relance et le fold, la règle du min-raise et combien de fois tu peux surrelancer.",
-  tldr: "Au Texas Hold'em, il y a 5 actions : checker (parole, gratuit), miser (ouvrir le tour), suivre (payer la mise), relancer (le min-raise vaut au moins la mise ou la relance précédente) et se coucher. Tu ne peux checker que si personne n'a encore misé sur cette street.",
+  tldr: "Au Texas Hold'em, il y a 5 actions : checker (parole, gratuit), miser (ouvrir le tour), suivre (payer la mise), relancer (le min-raise vaut au moins la mise ou la relance précédente) et se coucher. Tu ne peux checker que s'il n'y a pas de mise en cours devant toi — au préflop, cela ne concerne que la grosse blinde.",
   category: "rules",
   date: "2026-06-14",
   updated: "2026-07-13",
@@ -49,14 +49,14 @@ Chaque décision que tu prends à une table de poker est l'une de ces cinq :
 | Action | Quand elle est possible | Coût en jetons |
 |--------|---------------|-----------|
 | Se coucher (fold) | À tout moment quand c'est à toi de parler | Gratuit — mais tu abandonnes les jetons déjà dans le pot |
-| Checker (check) | Seulement si personne n'a encore misé ce tour | Gratuit — tu passes la parole sans ajouter de jetons |
+| Checker (check) | Seulement s'il n'y a pas de mise en cours devant toi (préflop : uniquement en grosse blinde) | Gratuit — tu passes la parole sans ajouter de jetons |
 | Suivre (call) | Après que quelqu'un a misé ou relancé | Tu paies exactement la mise en cours |
 | Miser (bet) | Première mise du tour | Le montant de ton choix (minimum = 1 grosse blinde) |
 | Relancer (raise) | Après que quelqu'un a misé | Au moins la taille de la mise ou de la relance précédente par-dessus |
 
 Faire ==tapis (all-in)== n'est pas une sixième action à part : c'est une mise, un call ou une relance avec tous les jetons qu'il te reste. On y revient plus bas.
 
-La règle que les débutants oublient le plus souvent : ==r:tu ne peux plus checker dès que quelqu'un a misé==. Au moment où des jetons entrent, tes options se réduisent à te coucher, suivre ou relancer.
+La règle que les débutants oublient le plus souvent : ==r:tu ne peux plus checker dès qu'il y a une mise en cours devant toi==. Dès qu'il y a dans le pot des jetons que tu n'as pas égalés, tes options se réduisent à te coucher, suivre ou relancer.
 
 ---
 
@@ -91,7 +91,7 @@ Check vs call, c'est la confusion de débutant la plus fréquente, alors voici l
 
 | | Checker (check) | Suivre (call) |
 |-|-------|------|
-| Quand ça existe | Personne n'a misé ce tour | Quelqu'un a misé avant toi |
+| Quand ça existe | Pas de mise en cours devant toi (préflop : uniquement en grosse blinde) | Quelqu'un a misé avant toi |
 | Coût en jetons | Gratuit | Tu paies la mise en cours |
 | Ce que ça dit | « Je parle, je reste » | « Je paie pour continuer » |
 

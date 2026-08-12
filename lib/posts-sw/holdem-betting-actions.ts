@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Betting Actions za Texas Hold'em: Check, Call, Raise na Fold",
   seoTitle: "Check, Call au Fold? — Sheria za Betting Actions za Poker",
   desc: "Zamu imefika kwako na akili inaganda? Jifunze maana ya check, call, raise na fold, sheria ya min-raise, na mara ngapi unaweza kufanya re-raise.",
-  tldr: "Texas Hold'em ina betting actions 5: check (kupitisha bure), bet (kufungua raundi), call (kulingana na dau), raise (kupandisha — min-raise inalingana na dau au raise iliyotangulia), na fold. Unaweza kufanya check tu pale ambapo bado hakuna aliyeweka bet kwenye street hiyo.",
+  tldr: "Texas Hold'em ina betting actions 5: check (kupitisha bure), bet (kufungua raundi), call (kulingana na dau), raise (kupandisha — min-raise inalingana na dau au raise iliyotangulia), na fold. Unaweza kufanya check tu pale ambapo hakuna bet inayoendelea mbele yako — na kwenye preflop hilo hutokea ukiwa big blind pekee.",
   category: "rules",
   date: "2026-06-14",
   updated: "2026-07-13",
@@ -49,14 +49,14 @@ Kila uamuzi mmoja unaoufanya kwenye meza ya poker ni mojawapo ya haya matano:
 | Action | Inapatikana lini | Gharama ya chipsi |
 |--------|---------------|-----------|
 | Fold | Wakati wowote action iko kwako | Bure — lakini unapoteza chipsi ulizoweka tayari kwenye pot |
-| Check | Pale tu bado hakuna aliyeweka bet raundi hii | Bure — unapitisha bila kuongeza chipsi |
+| Check | Pale tu hakuna bet inayoendelea mbele yako (preflop: ukiwa big blind pekee) | Bure — unapitisha bila kuongeza chipsi |
 | Call | Baada ya mtu kuweka bet au kufanya raise | Unalingana na bet ya sasa sawasawa |
 | Bet | Dau la kwanza la raundi | Kiasi unachochagua (kiwango cha chini = 1 big blind) |
 | Raise | Baada ya mtu kuweka bet | Angalau ukubwa wa bet au raise iliyotangulia juu yake |
 
 Kwenda ==all-in== si action ya sita tofauti — ni bet, call, au raise kwa kila chipsi ulizobaki nazo. Zaidi kuhusu hilo hapo chini.
 
-Sheria muhimu zaidi wanaoanza huikosa: ==r:huwezi check pindi mtu ameshaweka bet==. Mara chipsi zinapoingia, chaguo zako zinabana kuwa fold, call, au raise.
+Sheria muhimu zaidi wanaoanza huikosa: ==r:huwezi check kama mbele yako kuna bet inayoendelea==. Mara tu kwenye pot kunapokuwa na chipsi ambazo hujazilinganisha, chaguo zako zinabana kuwa fold, call, au raise.
 
 ---
 
@@ -91,7 +91,7 @@ Check vs call ndiyo mkanganyiko wa kawaida zaidi kwa wanaoanza, hivyo hii hapa t
 
 | | Check | Call |
 |-|-------|------|
-| Inapotokea | Hakuna aliyeweka bet raundi hii | Mtu ameweka bet kabla yako |
+| Inapotokea | Hakuna bet inayoendelea mbele yako (preflop: ukiwa big blind pekee) | Mtu ameweka bet kabla yako |
 | Gharama ya chipsi | Bure | Unalingana na bet ya sasa |
 | Inasema nini | "Napitisha, bado nipo" | "Nalipa kuendelea" |
 

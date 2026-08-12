@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Acciones de apuesta en Texas Hold'em: pasar, igualar, subir y retirarse",
   seoTitle: "¿Pasar, igualar o tirarte? — Acciones de apuesta en el póker",
   desc: "¿Te llega el turno y te quedas en blanco? Aprende qué significan check, call, raise y fold, la regla de la subida mínima y cuántas veces se puede resubir.",
-  tldr: "En Texas Hold'em hay 5 acciones de apuesta: pasar (check, gratis), apostar (abrir la ronda), igualar (call, pagar la apuesta), subir (raise — la subida mínima iguala la apuesta o subida anterior) y retirarse (fold). Solo puedes pasar cuando nadie ha apostado todavía en esa calle.",
+  tldr: "En Texas Hold'em hay 5 acciones de apuesta: pasar (check, gratis), apostar (abrir la ronda), igualar (call, pagar la apuesta), subir (raise — la subida mínima iguala la apuesta o subida anterior) y retirarse (fold). Solo puedes pasar cuando no tienes una apuesta viva por delante — preflop, eso solo pasa siendo la ciega grande.",
   category: "rules",
   date: "2026-06-14",
   updated: "2026-07-24",
@@ -49,14 +49,14 @@ Cada decisión que tomas en una mesa de póker es una de estas cinco:
 | Acción | Cuándo está disponible | Coste en fichas |
 |--------|---------------|-----------|
 | Retirarse (fold) | Siempre que la acción sea tuya | Gratis — pero pierdes las fichas que ya metiste en el bote |
-| Pasar (check) | Solo si nadie ha apostado aún en esta ronda | Gratis — pasas el turno sin poner fichas |
+| Pasar (check) | Solo si no tienes una apuesta viva por delante (preflop: solo como ciega grande) | Gratis — pasas el turno sin poner fichas |
 | Igualar (call) | Después de que alguien haya apostado o subido | Pagas exactamente la apuesta vigente |
 | Apostar (bet) | Primera apuesta de la ronda | La cantidad que elijas (mínimo = 1 ciega grande) |
 | Subir (raise) | Después de que alguien haya apostado | Al menos el tamaño de la apuesta o subida anterior por encima |
 
 Ir ==all-in== no es una sexta acción aparte: es una apuesta, un pago o una subida con todas las fichas que te quedan. Más abajo lo vemos en detalle.
 
-La regla más importante que se les escapa a los principiantes: ==r:no puedes pasar una vez que alguien ha apostado==. En cuanto entran fichas al bote, tus opciones se reducen a retirarte, igualar o subir.
+La regla más importante que se les escapa a los principiantes: ==r:no puedes pasar si tienes una apuesta viva por delante==. En cuanto hay fichas en el bote que aún no has igualado, tus opciones se reducen a retirarte, igualar o subir.
 
 ---
 
@@ -91,7 +91,7 @@ Check vs call es la confusión de principiante más habitual, así que aquí va 
 
 | | Pasar (check) | Igualar (call) |
 |-|-------|------|
-| Cuándo existe | Nadie ha apostado en esta ronda | Alguien ha apostado antes que tú |
+| Cuándo existe | No tienes una apuesta viva por delante (preflop: solo como ciega grande) | Alguien ha apostado antes que tú |
 | Coste en fichas | Gratis | Pagas la apuesta vigente |
 | Qué dice | "Paso palabra, sigo dentro" | "Pago por continuar" |
 

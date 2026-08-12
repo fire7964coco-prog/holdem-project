@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Texas Hold'em bahis hareketleri: check, call, raise, fold",
   seoTitle: "Sıra sende, kilitlendin mi? — Poker bahis hareketleri",
   desc: "Sıra sana geldi, kafan bomboş mu? Pokerde check, call, raise ve fold ne demek, min-raise kuralı nasıl işler ve kaç kez re-raise yapabilirsin — hepsi burada.",
-  tldr: "Texas Hold'em'de 5 bahis hareketi var: check (bedavaya pas), bet (turu açmak), call (bahsi görmek), raise (yükseltmek — minimum yükseltme, önceki bahse ya da yükseltmeye eşittir) ve fold (yatmak). Check'i yalnızca o street'te henüz kimse bahis koymadıysa yapabilirsin.",
+  tldr: "Texas Hold'em'de 5 bahis hareketi var: check (bedavaya pas), bet (turu açmak), call (bahsi görmek), raise (yükseltmek — minimum yükseltme, önceki bahse ya da yükseltmeye eşittir) ve fold (yatmak). Check'i yalnızca önünde açık bir bahis yoksa yapabilirsin — preflopta bu sadece big blind için geçerlidir.",
   category: "rules",
   date: "2026-06-14",
   updated: "2026-07-13",
@@ -49,14 +49,14 @@ Poker masasında verdiğin her karar bu beşinden biridir:
 | Hareket | Ne zaman mümkün | Çip maliyeti |
 |--------|---------------|-----------|
 | Fold (yatmak) | Sıra sende olduğu her an | Bedava — ama pota koyduğun çipleri kaybedersin |
-| Check | Yalnızca bu turda henüz kimse bahis koymadıysa | Bedava — çip eklemeden pas geçersin |
+| Check | Yalnızca önünde açık bir bahis yoksa (preflop: sadece big blind olarak) | Bedava — çip eklemeden pas geçersin |
 | Call (görmek) | Biri bahis koyduktan ya da yükselttikten sonra | Mevcut bahsi birebir görürsün |
 | Bet (bahis) | Turun ilk bahsi | Seçtiğin miktar (minimum = 1 big blind) |
 | Raise (yükseltmek) | Biri bahis koyduktan sonra | Önceki bahsin ya da yükseltmenin en az büyüklüğü kadar üstüne |
 
 ==All-in== gitmek altıncı ayrı bir hareket değildir — kalan tüm çiplerinle yaptığın bir bet, call ya da raise'dir. Aşağıda daha çok var.
 
-Yeni başlayanların kaçırdığı en önemli kural şu: ==r:biri bahis koyduktan sonra artık check yapamazsın==. Pota çip girdiği an seçeneklerin fold, call ya da raise'e daralır.
+Yeni başlayanların kaçırdığı en önemli kural şu: ==r:önünde açık bir bahis varsa artık check yapamazsın==. Potta karşılamadığın çip olduğu an seçeneklerin fold, call ya da raise'e daralır.
 
 ---
 
@@ -91,7 +91,7 @@ Check ile call, yeni başlayanların en sık karıştırdığı ikili, o yüzden
 
 | | Check | Call |
 |-|-------|------|
-| Ne zaman var | Bu turda kimse bahis koymadı | Senden önce biri bahis koydu |
+| Ne zaman var | Önünde açık bir bahis yok (preflop: sadece big blind olarak) | Senden önce biri bahis koydu |
 | Çip maliyeti | Bedava | Mevcut bahsi görürsün |
 | Ne der | "Pas, hâlâ içerideyim" | "Devam etmek için öderim" |
 
