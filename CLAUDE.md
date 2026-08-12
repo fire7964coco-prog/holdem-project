@@ -278,6 +278,7 @@ D유형(전략적 유해 조언)·F유형(사실 오류)에 시간을 쓴다) **
 | 이미지 규격·압축·전송량 | `docs/IMAGE_OPTIMIZATION.md` |
 | 내부링크 걸 slug 확인 | `docs/pillar-slugs.md` ← **문서상 이름 6개가 실제로는 404** |
 | 다국어 용어(12개 언어) | `.cursor/rules/multilingual-localization.mdc` |
+| **로케일마다 «일부러 다른» 자리인지 판정** | `docs/locale-intentional-diffs.md` ← 없으면 «아직 판정 안 함»이다 |
 | 키워드·발행 우선순위 | `docs/keyword-bank/00-SYNTHESIS-roadmap.md` · `docs/en-blog-pillar-cluster-map.md` |
 | 커뮤니티 손댈 때 | `docs/community-status.md` · `supabase/schema.sql` |
 | 성능·빌드·GSC 루틴 | `.cursor/rules/tech.mdc` |
