@@ -146,7 +146,7 @@ Deux limites s'appliquent quand même :
 - Chaque surrelance doit respecter la ==règle de l'incrément minimal== vue plus haut
 - ==r:Tu ne peux pas relancer ta propre mise.== Si tu mises et que tout le monde se contente de suivre, le tour se termine — tu ne peux relancer à nouveau que si quelqu'un te relance *toi* d'abord
 
-Dans les parties en **Fixed-Limit**, la plupart des clubs plafonnent chaque tour à une mise plus trois relances (pot « capé »), plafond souvent levé quand il ne reste que deux joueurs — les règles de la maison varient, alors demande au donneur.
+Dans les parties en **Fixed-Limit**, chaque tour est plafonné (pot « capé »). Les règles de tournoi de la WSOP fixent le plafond à ==une mise plus quatre relances== (règle 100.b) — et l'exception marche à l'inverse de ce que presque tout le monde imagine : ==r:le plafond tient même s'il ne reste que deux joueurs dans le coup==. Il ne tombe que lorsque le **tournoi entier** est en heads-up. En cash game, ce sont les règles de la maison, alors demande au donneur.
 
 ---
 
@@ -206,7 +206,7 @@ A. Non. Si tu mises et que les adversaires se contentent de suivre, tu ne peux r
 
 **Q. Combien de fois peut-on relancer au Texas Hold'em ?**
 
-A. En No-Limit, il n'y a aucun plafond au nombre de relances — on peut surrelancer jusqu'à ce qu'un joueur soit à tapis, tant que chaque relance respecte l'incrément minimal. En Fixed-Limit, on plafonne le plus souvent le tour à une mise plus trois relances.
+A. En No-Limit, il n'y a aucun plafond au nombre de relances — on peut surrelancer jusqu'à ce qu'un joueur soit à tapis, tant que chaque relance respecte l'incrément minimal. En Fixed-Limit, les règles de tournoi de la WSOP plafonnent le tour à une mise plus quatre relances (règle 100.b), et ce plafond tient même s'il ne reste que deux joueurs dans le coup.
 
 **Q. Peut-on se coucher hors de son tour ?**
 

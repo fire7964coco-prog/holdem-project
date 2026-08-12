@@ -146,7 +146,7 @@ Tetap ada dua batasan:
 - Setiap re-raise wajib memenuhi ==aturan inkremen min-raise== di atas
 - ==r:Anda tidak bisa me-raise taruhan Anda sendiri.== Kalau Anda bet dan semua orang hanya call, ronde berakhir — Anda baru bisa raise lagi kalau ada yang me-raise *Anda* lebih dulu
 
-Di permainan **Fixed-Limit**, kebanyakan cardroom membatasi tiap ronde pada satu bet plus tiga raise (pot "capped"), dan batas itu biasanya dicabut saat tersisa dua pemain — aturan rumah berbeda-beda, jadi tanyakan ke dealer.
+Di permainan **Fixed-Limit**, tiap ronde punya batas (pot "capped"). Aturan turnamen WSOP menetapkan batas itu di ==satu bet plus empat raise== (Rule 100.b) — dan pengecualiannya berjalan terbalik dari dugaan kebanyakan orang: ==r:batas itu tetap berlaku sekalipun di hand itu tinggal dua pemain==. Batas baru lepas ketika **seluruh turnamen** tinggal dua orang. Di cash game berlaku aturan rumah, jadi tanyakan ke dealer.
 
 ---
 
@@ -211,7 +211,7 @@ A. Tidak. Kalau Anda bet dan lawan hanya call, Anda tidak bisa menambah lagi —
 
 **Q. Berapa kali boleh raise di Texas Hold'em?**
 
-A. Di No-Limit tidak ada batas jumlah raise — re-raise bisa terus berlanjut sampai ada pemain yang all-in, selama tiap raise memenuhi inkremen minimum. Permainan Fixed-Limit umumnya membatasi satu ronde pada satu bet plus tiga raise.
+A. Di No-Limit tidak ada batas jumlah raise — re-raise bisa terus berlanjut sampai ada pemain yang all-in, selama tiap raise memenuhi inkremen minimum. Di Fixed-Limit, aturan turnamen WSOP membatasi satu ronde pada satu bet plus empat raise (Rule 100.b), dan batas itu tetap berlaku sekalipun tinggal dua pemain di hand tersebut.
 
 **Q. Bisakah fold di luar giliran?**
 

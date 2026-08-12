@@ -146,7 +146,7 @@ Bado kuna mipaka miwili:
 - Kila re-raise lazima itimize ==sheria ya nyongeza ya min-raise== iliyotajwa hapo juu
 - ==r:Huwezi raise bet yako mwenyewe.== Kama ukiweka bet na kila mtu akafanya call tu, raundi inaisha — unapata nafasi ya kuraise tena tu ikiwa mtu atakufanyia raise *wewe* kwanza
 
-Katika michezo ya **Fixed-Limit**, vyumba vingi vya kadi vinaweka kikomo cha bet moja pamoja na raise tatu kwa kila raundi (pot "iliyofungwa"), ambacho mara nyingi huinuliwa pale wachezaji wawili tu wanapobaki — sheria za nyumba hutofautiana, hivyo mwulize dila.
+Katika michezo ya **Fixed-Limit**, kila raundi ina kikomo (pot "iliyofungwa"). Sheria za mashindano za WSOP zinaweka kikomo hicho kwenye ==bet moja pamoja na raise nne== (Rule 100.b) — na kipekee chake kinakwenda kinyume na wanavyodhani wengi: ==r:kikomo kinabaki hata kama kwenye mkono huo wamebaki wachezaji wawili tu==. Kinaondoka pale tu **mashindano yote** yanapobaki na watu wawili. Kwenye cash game sheria za nyumba ndizo hutawala, hivyo mwulize dila.
 
 ---
 
@@ -206,7 +206,7 @@ A. Hapana. Kama ukiweka bet na wapinzani wakafanya call tu, huwezi kuongeza zaid
 
 **Q. Unaweza raise mara ngapi katika Texas Hold'em?**
 
-A. Katika No-Limit hakuna kikomo cha idadi ya raise — re-raise inaweza kuendelea hadi mchezaji awe all-in, mradi kila raise itimize nyongeza ya chini. Michezo ya Fixed-Limit mara nyingi huweka kikomo cha bet moja pamoja na raise tatu kwa raundi.
+A. Katika No-Limit hakuna kikomo cha idadi ya raise — re-raise inaweza kuendelea hadi mchezaji awe all-in, mradi kila raise itimize nyongeza ya chini. Kwenye Fixed-Limit, sheria za mashindano za WSOP zinaweka kikomo cha raundi kwenye bet moja pamoja na raise nne (Rule 100.b), na kikomo hicho kinabaki hata kama kwenye mkono huo wamebaki wawili.
 
 **Q. Unaweza fold nje ya zamu yako?**
 

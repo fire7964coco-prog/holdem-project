@@ -146,7 +146,7 @@ Dalawang hangganan pa rin ang tumatakbo:
 - Bawat re-raise ay dapat matugunan ang ==min-raise increment rule== sa itaas
 - ==r:Hindi mo pwedeng i-raise ang sarili mong bet.== Kung nag-bet ka at basta na-call ka lang ng lahat, tapos na ang round — pwede ka lang mag-raise ulit kung may mag-raise *sa iyo* muna
 
-Sa **Fixed-Limit** na laro, karamihan ng cardroom ay nagki-cap ng bawat round sa isang bet plus tatlong raises (isang "capped" na pot), na kadalasan inaalis kapag dalawang manlalaro na lang ang natira — nag-iiba ang house rules, kaya tanungin mo ang dealer.
+Sa **Fixed-Limit** na laro, naka-cap ang bawat round (isang "capped" na pot). Sa tournament rules ng WSOP, ang cap ay ==isang bet plus apat na raises== (Rule 100.b) — at baligtad ang exception sa inaasahan ng karamihan: ==r:nananatili ang cap kahit dalawa na lang ang natitira sa hand==. Naaalis lang ito kapag ang **buong tournament** na ang heads-up. Sa cash game, house rules ang masusunod, kaya tanungin mo ang dealer.
 
 ---
 
@@ -206,7 +206,7 @@ A. Hindi. Kung nag-bet ka at basta nag-call lang ang mga kalaban, hindi ka na pw
 
 **Q. Ilang beses ka pwedeng mag-raise sa Texas Hold'em?**
 
-A. Sa No-Limit walang cap sa dami ng raise — pwedeng magpatuloy ang re-raise hanggang mag-all-in ang isang manlalaro, basta matugunan ng bawat raise ang minimum increment. Ang Fixed-Limit na laro ay kadalasang nagki-cap ng round sa isang bet plus tatlong raises.
+A. Sa No-Limit walang cap sa dami ng raise — pwedeng magpatuloy ang re-raise hanggang mag-all-in ang isang manlalaro, basta matugunan ng bawat raise ang minimum increment. Sa Fixed-Limit, nagki-cap ang tournament rules ng WSOP sa isang bet plus apat na raises (Rule 100.b), at nananatili ang cap kahit dalawa na lang ang natitira sa hand.
 
 **Q. Pwede ka bang mag-fold out of turn?**
 

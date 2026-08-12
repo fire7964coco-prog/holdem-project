@@ -146,7 +146,7 @@ Wciąż obowiązują dwie granice:
 - Każde re-raise musi spełniać ==zasadę minimalnego przyrostu== z góry
 - ==r:Nie możesz przebić własnego zakładu.== Jeśli postawisz, a wszyscy tylko sprawdzą, runda się kończy — ponownie możesz przebić tylko wtedy, gdy ktoś przebije *ciebie* pierwszy
 
-W grach **Fixed-Limit** większość salonów ogranicza rundę do jednego zakładu plus trzech przebić (pula "capped"), a limit zwykle znika, gdy zostaje dwóch graczy — zasady lokalu bywają różne, więc dopytaj rozdającego.
+W grach **Fixed-Limit** każda runda jest zamknięta limitem (pula "capped"). Turniejowe zasady WSOP ustawiają go na ==jeden zakład plus cztery przebicia== (zasada 100.b) — a wyjątek działa odwrotnie, niż niemal wszyscy zakładają: ==r:limit obowiązuje nawet wtedy, gdy w rozdaniu zostało już tylko dwóch graczy==. Znika dopiero, gdy heads-up jest **cały turniej**. W grach cash decydują zasady lokalu, więc dopytaj rozdającego.
 
 ---
 
@@ -210,7 +210,7 @@ A. Nie. Jeśli postawisz, a przeciwnicy tylko sprawdzą, nie możesz dołożyć 
 
 **Q. Ile razy można przebić w Texas Hold'em?**
 
-A. W No-Limit nie ma limitu liczby przebić — re-raise może trwać, aż gracz wejdzie all-in, o ile każde przebicie spełnia minimalny przyrost. W Fixed-Limit zwykle ogranicza się rundę do jednego zakładu plus trzech przebić.
+A. W No-Limit nie ma limitu liczby przebić — re-raise może trwać, aż gracz wejdzie all-in, o ile każde przebicie spełnia minimalny przyrost. W Fixed-Limit turniejowe zasady WSOP ograniczają rundę do jednego zakładu plus czterech przebić (zasada 100.b), a limit obowiązuje nawet wtedy, gdy w rozdaniu zostało dwóch graczy.
 
 **Q. Czy można spasować poza kolejnością?**
 

@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Texas Hold'em Betting Actions: Check, Call, Raise, Fold",
   seoTitle: "Check, Call or Fold? — Poker Betting Actions & Raise Rules",
   desc: "Action's on you and your mind goes blank? Learn what a check, call, raise and fold mean in poker, the min-raise rule, and how many times you can re-raise.",
-  tldr: "Texas Hold'em has 5 betting actions: check (pass for free), bet (open the round), call (match a bet), raise (increase it — the minimum raise equals the previous bet or raise), and fold. You can only check when no one has bet yet on that street.",
+  tldr: "Texas Hold'em has 5 betting actions: check (pass for free), bet (open the round), call (match a bet), raise (increase it — the minimum raise equals the previous bet or raise), and fold. You can only check when there is no live bet in front of you — preflop that means only the big blind.",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-07-11",
+  updated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "🃏",
@@ -48,14 +48,14 @@ Every single decision you make at a poker table is one of these five:
 | Action | When available | Chip cost |
 |--------|---------------|-----------|
 | Fold | Any time the action is on you | Free — but you forfeit chips already in the pot |
-| Check | Only when no one has bet yet this round | Free — you pass without adding chips |
+| Check | Only when there is no live bet in front of you (preflop: only as the big blind) | Free — you pass without adding chips |
 | Call | After someone has bet or raised | You match the current bet exactly |
 | Bet | First wager of the round | Your chosen amount (minimum = 1 big blind) |
 | Raise | After someone has bet | At least the size of the previous bet or raise on top |
 
 Going ==all-in== is not a separate sixth action — it's a bet, call, or raise for every chip you have left. More on that below.
 
-The single most important rule beginners miss: ==r:you cannot check once someone has bet==. The moment chips go in, your options shrink to fold, call, or raise.
+The single most important rule beginners miss: ==r:you cannot check once there is a live bet in front of you==. The moment there are chips in the pot you haven't matched, your options shrink to fold, call, or raise.
 
 ---
 
@@ -90,7 +90,7 @@ Check vs call is the single most common beginner mix-up, so here's the clean spl
 
 | | Check | Call |
 |-|-------|------|
-| When it exists | No one has bet this round | Someone has bet before you |
+| When it exists | No live bet in front of you (preflop: only as the big blind) | Someone has bet before you |
 | Chip cost | Free | You match the current bet |
 | What it says | "I pass, still in" | "I pay to continue" |
 
@@ -102,7 +102,7 @@ Real example: you're on the flop with K♠ 8♦. Nobody has bet, so you ==check=
 
 Folding means you surrender your cards and quit the hand. You pay nothing new, but ==r:every chip you already put in stays in the pot==.
 
-Yes — you can fold at any time the action is on you, even before betting anything, and even when checking would be free. But note the trap in that last part: **folding when you could check for free is throwing away a hand for no reason**. If nobody has bet, just check.
+Yes — whenever the action is on you, you can fold, even before betting anything, and the fold is binding. It isn't free of consequence, though: in a tournament, folding when there is no bet in front of you counts as a "non-standard fold" under ==WSOP Rule 84== and can draw a warning. And note the trap: **folding when you could check for free is throwing away a hand for no reason**. If nobody has bet, just check.
 
 One rule of live etiquette: don't fold ==out of turn==. Wait until the action reaches you — folding early gives information to players still deciding, and most cardrooms will warn or penalize it. Knowing *when* folding is the right play is its own skill — that's covered in [when to fold in poker](/en/blog/holdem-when-to-fold).
 
@@ -129,7 +129,7 @@ The key insight: the min-raise matches the ==increment== of the last bet or rais
 
 Two live-poker rules that come with raising:
 
-1. **Announce "raise" before moving chips.** Say "call" and then push out more? That extra is a ==string bet== and dealers in most rooms will rule it a call.
+1. **Announce "raise" before moving chips.** Say "call" and then push out more? Your declaration was already binding (==Rule 90.d==) — the extra doesn't count. A real ==string bet== is something else: chips pushed in across multiple motions **without** announcing "raise" first (==Rule 103==).
 2. **One motion.** If you don't announce, your chips must go in as a single forward motion.
 
 How *much* you should raise (2.5x opens, 3x 3-bets, sizing by board texture) is strategy, not rules — that lives in the [Texas Hold'em strategy pillar](/en/blog/holdem-strategy).
@@ -145,7 +145,7 @@ Two boundaries still apply:
 - Each re-raise must meet the ==min-raise increment rule== above
 - ==r:You cannot raise your own bet.== If you bet and everyone just calls, the round ends — you only get to raise again if someone raises *you* first
 
-In **Fixed-Limit** games, most cardrooms cap each round at one bet plus three raises (a "capped" pot), commonly lifted when only two players remain — house rules vary, so ask the dealer.
+In **Fixed-Limit** games every round is capped (a "capped" pot). The WSOP tournament rules set the cap at ==one bet plus four raises== (Rule 100.b) — and the exception runs the other way from what most people expect: ==r:the cap stays in place even when only two players are left in the hand==. It lifts only once the **entire tournament** is heads-up. Cash games run on their own house rules, so ask the dealer.
 
 ---
 
@@ -177,7 +177,7 @@ I play a weekly low-stakes live game, and the same action errors repeat like clo
 
 ### Mistake 1 — Calling when you could check
 
-First to act on the flop, nobody has bet, and a newer player tosses chips in "to call." There's nothing to call — that's a bet. When the street is unopened, check and see the card for free.
+First to act on the flop, nobody has bet, and a newer player pushes chips in **silently**, "to call." There's nothing to call: under ==WSOP Rule 90.a== a bet is made by declaration *or* by pushing out chips — he just bet without meaning to. Had he *said* "call," ==Rule 90.b.1== would have made it a check instead. When the street is unopened, check and see the card for free.
 
 ### Mistake 2 — The string raise
 
@@ -189,7 +189,7 @@ Everyone limps, action reaches the big blind, and they fold. That's a free flop 
 
 ### Mistake 4 — The silent single chip
 
-Facing a $10 bet, a player silently throws in one $100 chip expecting change *and* a raise. In most cardrooms the ==one-chip rule== says an unannounced single oversized chip is just a call. Say "raise" if you mean raise.
+Facing a $10 bet, a player silently throws in one $100 chip expecting change *and* a raise. The ==one-chip rule== is in the WSOP rules verbatim (==Rule 97==): an unannounced single oversized chip is just a call. To raise, "raise" has to come out **before the chip hits the table surface**.
 
 ---
 
@@ -210,7 +210,7 @@ A. No. If you bet and opponents only call, you cannot add more — the betting r
 
 **Q. How many times can you raise in Texas Hold'em?**
 
-A. In No-Limit there is no cap on the number of raises — re-raising can continue until a player is all-in, as long as each raise meets the minimum increment. Fixed-Limit games commonly cap a round at one bet plus three raises.
+A. In No-Limit there is no cap on the number of raises — re-raising can continue until a player is all-in, as long as each raise meets the minimum increment. The WSOP tournament rules cap a Fixed-Limit round at one bet plus four raises (Rule 100.b), and that cap holds even when the hand is down to two players.
 
 **Q. Can you fold out of turn?**
 
@@ -226,7 +226,7 @@ A. It depends on the all-in's size. If the all-in is a full legal raise, action 
 
 **Q. What is a string bet in poker?**
 
-A. Putting chips in across multiple motions, or saying "call" and then adding a raise, without announcing "raise" first. Dealers rule string bets as a call of the original amount. Announce your action verbally or move all chips in one motion.
+A. Putting chips in across multiple motions without announcing "raise" first (==Rule 103==). Dealers rule string bets as a call of the original amount. Saying "call" and then adding is not a string bet but a binding declaration (==Rule 90.d==) — same effect. Announce your action verbally or move all chips in one motion.
 
 **Q. What does it mean to limp in poker?**
 

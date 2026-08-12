@@ -146,7 +146,7 @@ Restano comunque due paletti:
 - Ogni re-rilancio deve rispettare la ==regola dell'incremento minimo== di sopra
 - ==r:Non puoi rilanciare la tua stessa puntata.== Se punti e tutti si limitano a chiamare, il giro finisce — puoi rilanciare di nuovo solo se qualcuno rilancia *te* per primo
 
-Nelle partite **Fixed-Limit**, la maggior parte delle sale limita ogni giro a una puntata più tre rilanci (piatto "cappato"), tetto che di solito si toglie quando restano solo due giocatori — le regole della casa variano, quindi chiedi al mazziere.
+Nelle partite **Fixed-Limit** ogni giro è cappato (piatto "cappato"). Le regole da torneo WSOP fissano il tetto a ==una puntata più quattro rilanci== (regola 100.b) — e l'eccezione funziona al contrario di come quasi tutti se l'aspettano: ==r:il tetto resta anche se nella mano sono rimasti solo due giocatori==. Cade solo quando è l'**intero torneo** a essere heads-up. Nel cash valgono le regole della casa, quindi chiedi al mazziere.
 
 ---
 
@@ -207,7 +207,7 @@ A. No. Se punti e gli avversari si limitano a chiamare, non puoi aggiungere altr
 
 **Q. Quante volte si può rilanciare nel Texas Hold'em?**
 
-A. Nel No-Limit non c'è limite al numero di rilanci — si può re-rilanciare finché un giocatore non va all-in, purché ogni rilancio rispetti l'incremento minimo. Nel Fixed-Limit di solito si limita il giro a una puntata più tre rilanci.
+A. Nel No-Limit non c'è limite al numero di rilanci — si può re-rilanciare finché un giocatore non va all-in, purché ogni rilancio rispetti l'incremento minimo. Nel Fixed-Limit le regole da torneo WSOP cappano il giro a una puntata più quattro rilanci (regola 100.b), e il tetto resta anche se nella mano sono rimasti solo due giocatori.
 
 **Q. Si può passare fuori turno?**
 

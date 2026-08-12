@@ -146,7 +146,7 @@ Rămân totuși două limite:
 - Fiecare re-relansare trebuie să respecte ==regula incrementului minim== de mai sus
 - ==r:Nu îți poți relansa propriul pariu.== Dacă pariezi și toți doar plătesc, runda se încheie — poți relansa din nou doar dacă cineva te relansează *pe tine* mai întâi
 
-În jocurile **Fixed-Limit**, majoritatea cazinourilor plafonează fiecare rundă la un pariu plus trei relansări (pot "plafonat"), plafon care de obicei se ridică atunci când rămân doar doi jucători — regulile casei diferă, așa că întreabă dealerul.
+În jocurile **Fixed-Limit** fiecare rundă e plafonată (pot "plafonat"). Regulile de turneu WSOP fixează plafonul la ==un pariu plus patru relansări== (regula 100.b) — iar excepția merge invers față de ce se așteaptă aproape toată lumea: ==r:plafonul rămâne chiar dacă în mână au mai rămas doar doi jucători==. Cade abia când **întreg turneul** ajunge heads-up. La cash contează regulile casei, așa că întreabă dealerul.
 
 ---
 
@@ -207,7 +207,7 @@ A. Nu. Dacă pariezi și adversarii doar plătesc, nu poți adăuga nimic — ru
 
 **Q. De câte ori poți relansa la Texas Hold'em?**
 
-A. În No-Limit nu există plafon la numărul de relansări — re-relansarea poate continua până când un jucător intră all-in, atâta timp cât fiecare relansare respectă incrementul minim. Jocurile Fixed-Limit plafonează de obicei runda la un pariu plus trei relansări.
+A. În No-Limit nu există plafon la numărul de relansări — re-relansarea poate continua până când un jucător intră all-in, atâta timp cât fiecare relansare respectă incrementul minim. La Fixed-Limit, regulile de turneu WSOP plafonează runda la un pariu plus patru relansări (regula 100.b), iar plafonul rămâne chiar dacă în mână au mai rămas doi jucători.
 
 **Q. Poți da fold în afara rândului?**
 

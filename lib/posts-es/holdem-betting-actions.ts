@@ -146,7 +146,7 @@ Aun así, hay dos límites:
 - Cada resubida debe cumplir la ==regla del incremento mínimo== de arriba
 - ==r:No puedes subir tu propia apuesta.== Si apuestas y todos se limitan a pagar, la ronda termina — solo vuelves a poder subir si alguien te sube *a ti* primero
 
-En las partidas de **Fixed-Limit**, la mayoría de las salas limitan cada ronda a una apuesta más tres subidas (bote "capado"), y ese tope suele levantarse cuando solo quedan dos jugadores — las normas de la casa varían, así que pregunta al crupier.
+En las partidas de **Fixed-Limit** cada ronda está capada (bote "capado"). Las reglas de torneo de la WSOP fijan el tope en ==una apuesta más cuatro subidas== (regla 100.b) — y la excepción funciona al revés de lo que casi todos esperan: ==r:el tope sigue en pie aunque en la mano queden solo dos jugadores==. Solo cae cuando **todo el torneo** se queda heads-up. En cash mandan las normas de la casa, así que pregunta al crupier.
 
 ---
 
@@ -211,7 +211,7 @@ A. No. Si apuestas y los rivales solo pagan, no puedes añadir más — la ronda
 
 **Q. ¿Cuántas veces se puede subir en Texas Hold'em?**
 
-A. En No-Limit no hay tope al número de subidas — se puede resubir hasta que un jugador esté all-in, siempre que cada subida cumpla el incremento mínimo. En Fixed-Limit lo habitual es limitar la ronda a una apuesta más tres subidas.
+A. En No-Limit no hay tope al número de subidas — se puede resubir hasta que un jugador esté all-in, siempre que cada subida cumpla el incremento mínimo. En Fixed-Limit, las reglas de torneo de la WSOP capan la ronda en una apuesta más cuatro subidas (regla 100.b), y ese tope sigue en pie aunque en la mano queden solo dos jugadores.
 
 **Q. ¿Puedes retirarte fuera de turno?**
 

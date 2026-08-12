@@ -146,7 +146,7 @@ Vẫn có hai ranh giới:
 - Mỗi lần tố lại phải tuân thủ ==luật mức tăng tối thiểu== ở trên
 - ==r:Bạn không thể tự tố khoản cược của chính mình.== Nếu bạn cược và tất cả chỉ theo, vòng cược kết thúc — bạn chỉ được tố tiếp nếu có ai đó tố *bạn* trước
 
-Ở các bàn **Fixed-Limit**, hầu hết phòng bài giới hạn mỗi vòng ở một khoản cược cộng ba lần tố (pot bị "cap"), và giới hạn này thường được gỡ khi chỉ còn hai người chơi — luật mỗi nơi mỗi khác, nên hãy hỏi dealer.
+Ở các bàn **Fixed-Limit**, mỗi vòng đều bị giới hạn (pot bị "cap"). Luật giải đấu của WSOP đặt mức trần ở ==một khoản cược cộng bốn lần tố== (Rule 100.b) — và ngoại lệ chạy ngược với điều hầu hết mọi người tưởng: ==r:mức trần vẫn giữ nguyên ngay cả khi ván chỉ còn hai người==. Nó chỉ được gỡ khi **cả giải đấu** còn lại hai người. Ở cash game thì luật nhà quyết định, nên hãy hỏi dealer.
 
 ---
 
@@ -210,7 +210,7 @@ A. Không. Nếu bạn cược và các đối thủ chỉ theo, bạn không đ
 
 **Q. Được tố bao nhiêu lần trong Texas Hold'em?**
 
-A. Trong No-Limit không có giới hạn số lần tố — có thể tố lại cho đến khi một người chơi all-in, miễn là mỗi lần tố đạt mức tăng tối thiểu. Các bàn Fixed-Limit thường giới hạn mỗi vòng ở một khoản cược cộng ba lần tố.
+A. Trong No-Limit không có giới hạn số lần tố — có thể tố lại cho đến khi một người chơi all-in, miễn là mỗi lần tố đạt mức tăng tối thiểu. Ở Fixed-Limit, luật giải đấu của WSOP giới hạn mỗi vòng ở một khoản cược cộng bốn lần tố (Rule 100.b), và mức trần này vẫn giữ ngay cả khi ván chỉ còn hai người.
 
 **Q. Có được bỏ bài trước lượt không?**
 

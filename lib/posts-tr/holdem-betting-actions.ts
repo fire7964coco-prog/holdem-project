@@ -146,7 +146,7 @@ Yine de iki sınır geçerli:
 - Her re-raise, yukarıdaki ==min-raise artış kuralını== karşılamalı
 - ==r:Kendi bahsini yükseltemezsin.== Sen bahis koyarsın ve herkes sadece call yaparsa tur biter — ancak biri *seni* önce yükseltirse tekrar raise yapabilirsin
 
-**Fixed-Limit** oyunlarda çoğu salon her turu bir bahis artı üç yükseltmeyle sınırlar ("capped" pot); genelde sadece iki oyuncu kalınca bu sınır kalkar — salon kuralları değişir, o yüzden krupiyeye sor.
+**Fixed-Limit** oyunlarda her tur sınırlıdır ("capped" pot). WSOP turnuva kuralları sınırı ==bir bahis artı dört yükseltme== olarak koyar (Kural 100.b) — ve istisna çoğu kişinin beklediğinin tam tersi işler: ==r:elde yalnızca iki oyuncu kalsa bile sınır durur==. Sınır ancak **turnuvanın tamamı** heads-up olduğunda kalkar. Cash oyunlarda salon kuralları geçerlidir, o yüzden krupiyeye sor.
 
 ---
 
@@ -211,7 +211,7 @@ A. Hayır. Sen bahis koyarsın ve rakipler sadece call yaparsa fazladan ekleyeme
 
 **Q. Texas Hold'em'de kaç kez raise yapabilirsin?**
 
-A. No-Limit'te yükseltme sayısına sınır yok — her raise minimum artışı karşıladığı sürece, bir oyuncu all-in olana kadar re-raise sürebilir. Fixed-Limit oyunlarda tur genelde bir bahis artı üç yükseltmeyle sınırlanır.
+A. No-Limit'te yükseltme sayısına sınır yok — her raise minimum artışı karşıladığı sürece, bir oyuncu all-in olana kadar re-raise sürebilir. Fixed-Limit oyunlarda WSOP turnuva kuralları turu bir bahis artı dört yükseltmeyle sınırlar (Kural 100.b) ve elde iki oyuncu kalsa bile bu sınır durur.
 
 **Q. Sıran gelmeden fold yapabilir misin?**
 

@@ -146,7 +146,7 @@ Dois limites continuam valendo:
 - Cada reaumento precisa respeitar a ==regra do incremento do min-raise== acima
 - ==r:Você não pode aumentar a própria aposta.== Se você aposta e todo mundo só paga, a rodada acaba — você só volta a aumentar se alguém aumentar *você* primeiro
 
-Nos jogos de **Fixed-Limit**, a maioria dos clubes limita cada rodada a uma aposta mais três raises (pote "capado"), regra em geral suspensa quando restam só dois jogadores — as regras da casa variam, então pergunte ao dealer.
+Nos jogos de **Fixed-Limit** cada rodada é capada (pote "capado"). As regras de torneio da WSOP põem o teto em ==uma aposta mais quatro raises== (regra 100.b) — e a exceção funciona ao contrário do que quase todo mundo espera: ==r:o teto continua de pé mesmo que restem só dois jogadores na mão==. Ele só cai quando o **torneio inteiro** fica heads-up. No cash valem as regras da casa, então pergunte ao dealer.
 
 ---
 
@@ -211,7 +211,7 @@ A. Não. Se você aposta e os adversários apenas pagam, você não pode adicion
 
 **Q. Quantas vezes pode aumentar no Texas Hold'em?**
 
-A. No No-Limit não há limite para o número de raises — o reaumento pode continuar até alguém ficar all-in, desde que cada raise respeite o incremento mínimo. Jogos de Fixed-Limit costumam limitar a rodada a uma aposta mais três raises.
+A. No No-Limit não há limite para o número de raises — o reaumento pode continuar até alguém ficar all-in, desde que cada raise respeite o incremento mínimo. No Fixed-Limit, as regras de torneio da WSOP limitam a rodada a uma aposta mais quatro raises (regra 100.b), e esse teto vale mesmo com só dois jogadores restantes na mão.
 
 **Q. Pode foldar fora da sua vez?**
 
