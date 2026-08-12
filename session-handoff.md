@@ -15,8 +15,7 @@
 Session 6(Turniere 9편)로 마지막 클러스터를 닫았다. 경위는 `WORKLOG.md` 2026-08-11 (17).
 질문형 H2 **16% → 76~92%** · 직답 **4 → 47개** · 게이트 전부 🔴 0건 · 드리프트 de 🔴 4 → **3**.
 
-> 📌 **이 세션의 본체는 「무엇을 할지 고르는 것」이다.** de 42편 경화는 끝났고,
-> 아래 A~D 중 하나를 사장님이 정하면 된다. **A가 가장 싸고 확실하다.**
+> 📌 **경화는 끝났고, 지금 트랙은 «검수장 지시서 반영»이다.** 아래 START HERE 그대로 따르면 된다.
 
 ### 🔴 먼저 알아야 할 것 — Session 6이 남긴 «미러 미처리» 2건
 
@@ -30,50 +29,63 @@ Session 6(Turniere 9편)로 마지막 클러스터를 닫았다. 경위는 `WORK
 🔴 **2번은 8/16과 묶어라** — APT 인천이 8/16에 끝나면 어차피 **미러 7종을 전부 연다**(아래 ⏰).
 그때 한 번에 닫는 게 맞다. **따로 열지 마라.**
 
-### ▶ 다음 트랙 후보 (A가 권장)
+### ▶▶ 이 세션의 본체 = **검수장 지시서 반영 (de S1~S3)** ← 최우선
 
-**A. de 커버리지 갭 8건 — 짧은 패스, ~2,800/월** ← 🟢 **권장**
-`docs/keyword-bank/de-gap-2026-08-11.md`. **전부 「이름표」 유형**(콘텐츠는 있고 독일 검색자가 쓰는
-낱말만 없다) → H2·표 이름·FAQ 문구 교체로 닫힌다. **§13 리스크 0.**
-- `wie spielt man poker` 880 · `poker lernen` 880 · `poker reihenfolge karten` 590 ·
-  `pokerchips wert` 170 · `poker zu zweit` 140 · `vierling poker` 70
-- 🟠 `texas holdem regeln` **5,400인데 1편뿐** — 0회는 아니나 볼륨 대비 지나치게 얇다. 함께 검토
-- 전부 **Session 1·2 클러스터(룰·족보) 소속**이라 경화 세션에 못 끼웠다. 이게 그 별도 패스다
-- ★**이름표 유형은 Session 1·2·5·6에서 네 번 연속 최대 ROI였다.** 실적 ≈3,000/월 + Glossar 26배 + `pokerturnier` 720
+🔴 **`홀덤검수/reports/fix-handoff-de-S1-S3-2026-08-12.md`를 먼저 통독하라.** (검수 대상 `e3fe1b6`)
+검수장이 de 원장 `홀덤검수/ledger/de/` 18편 · 주장 1,028개를 검수해 낸 지시서다.
+**§4 RISKY 61건의 정본은 지시서가 아니라 `홀덤검수/ledger/de/<slug>.md` 의 RISKY 행**이다 — 원문·근거·정정 방향이 거기 있다.
 
-**B. de Session 6 잔여 마감** — 짧다. A와 같은 세션에 얹을 수 있다
-- 🟠 `holdem-icm` **H2↔FAQ 중복 5건**(축어 2건: 「Was ist ICM im Poker?」·「Wie wird ICM berechnet?」).
-  **EN 상속분이라 내가 만든 게 아니다.** §7-6대로 **FAQ를 다른 실검색 문형으로 재구성**(삭제 X)
-- 🟠 **`masterUpdated` 없는 de 6편**(`tournament` `tvc` `short-stack` `ept` `wpt` `korea-marathon`).
-  🔴 **찍기 전에 3단 대조**(섹션 줄수·1인칭 문장수·**FAQ 질문 목록**)를 하라 — 안 하고 찍으면 거짓 초록이다.
-  ⚠ `tournament` de·id·pt는 **필드 자체가 없다** — 「없는 자리에 새로 박지 않는다」
-- ✅ **적대 QA는 3렌즈로 돌았고 반영까지 끝났다**(네이티브 매체 에디터 · 현역 딜러/TD · 교열).
-  경위는 `WORKLOG.md` 2026-08-11 (18). **D유형 3건은 딜러 렌즈만 잡았다** — 다시 확인된 원칙이다
-- 🟠 **잔여 (렌즈가 잡았으나 근거 부족으로 미반영)**:
-  ① `ept-barcelona` Day 1 「12:00 시작 → 20:30 종료, 8–10 Level」이 **산술적으로 안 맞는다**
-     (75분 레벨 8개 = 10시간). 레벨 길이를 1차출처로 확인해야 고칠 수 있다
-  ② 같은 글 「offizielle Pausen sind selten」 ↔ EPT는 2레벨마다 브레이크 — 확인 필요
-  ③ `ept-barcelona`가 Power Path를 축으로 서는데 **독일 독자는 PokerStars.de로 라우팅**된다.
-     APT 글은 Natural8→GGPoker 라우팅을 경고하는데 EPT 글만 비대칭 — 로비 실측 후 한 줄
-  ④ `wpt-australia` 「Ladies Australian Championship … offen für alle」 — 명칭과 충돌, 재확인
-  ⑤ `korea-marathon` 「Paradise City 캐시게임 ganzjährig」 근거 없음(「ganzjährig」는 이미 뺐다)
-- 🟠 Session 4 적대 QA **「중간 확신」 ~40곳 번역티 미반영**(전부 어휘·연어, 사실오류 아님).
-  대표: `X % der Zeit`(→`in X % der Fälle`) · `zieh zusammen` · `stechen` · `Patrone`(→Barrel)
+> ✅ **§1 WRONG 4건 · §2 축 2건 · §3 M1·M2 는 2026-08-12에 반영·푸시했다**(`1d427c6` `d490ee7`).
+> 경위·실측치는 `WORKLOG.md` 2026-08-12.
 
-**C. 다국어 «판 전체 재동기화»** — 🔴 사장님 판단 대기(아래 표 #2). 노출 미미, 정확성 명분뿐
+### 🔴 남은 것 — 미반영분은 «틀린 채로» 살아 있다
 
+| # | 항목 | 남은 로케일 | 앵커(이걸로 grep) |
+|---|---|---:|---|
+| 1 | `texas-…-beginners` 「콜 후 팟 $120」(실제 $140) | **17** | `$120` 직후의 «총 팟 / total pot» 서술 |
+| 2 | `game-order` 족보표 High Card 빈도 라벨 = **5장 50.12%의 잔재**(7장은 17.41%로 투페어 23.50%보다 드물다) | **24** | 표 `\| 10 \|` 행의 **마지막 칸**(「매우 흔함」류) |
+| 3 | `kicker` 「Vierling은 대개 보드에서 공유」(실제 ≈14%) | 미실측 | `Vierling` + 「보드에서 공유」 |
+| 4 | **§4 RISKY 61건** | de | 아래 R1~R9 우선 |
+| 5 | **§6 축 B** | de | **A트랙과 겹친다 — 아래 참조** |
+
+🔴 **1·2번은 25개 로케일짜리다.** 앵커가 명확하고 기계적이니 **한 번에 닫아라.**
+🔴 **로케일별로 개별 판정하라** — W1에서 「de 1곳」이라던 게 실제 **5곳**이었고 **en·es·ja·zh는 이미 옳았다.**
+기계 치환했으면 옳은 글 4개를 되돌릴 뻔했다.
+
+### §4 RISKY — 「한 문장으로 여러 건이 닫히는」 묶음부터
+
+- **R1 `betting-actions` Fixed-Limit 캡 3건**(#32·#33·#45) — 본문 「eine Bet plus **drei** Raises」인데
+  **WSOP Rule 100.b는 「one bet and four raises」**. 해제 조건도 정반대다(핸드 헤즈업 ❌ / **토너먼트** 헤즈업 ⭕)
+  🔴 **검색 요약이 본문 편을 들었다 — 룰북 원문이 정반대다. 요약을 근거로 쓰지 마라**(이 트랙 3회째)
+- **R2 `equity` 「Equity = Win%」 6곳** — 에퀴티는 스플릿 지분이 든 기댓값이다. 🟢 정답이 같은 글 `[desc]`에 있다.
+  매치업 표 `AK vs AQ ~73%/~23%`는 승률/패율(합 96%) — 실측 **에퀴티 73,60 : 26,40**
+- **R3 `showdown-rules` 7건 한 뿌리** — 본문에 `Turnier` 0회·`Cash` 0회라 TDA/Robert's가 갈리는 규칙을 단정.
+  🟢 정정 문구가 같은 글 `[tldr]`의 「die Gegner」에 있다(TDA 18-B)
+- R4 `implied-odds` 라벨 누락 4건 = `(Turn)` 한 단어 · R5 `split-pot` 이미지 alt가 본문을 반박 ·
+  R6 `flush-vs-straight` 「2배」(7장은 **1.53배**) · R7 `outs` FAQ 전제 누락 · R8 `reading-the-board` 플러시 예외 ·
+  R9 `hand-rankings` 자기반박
+
+### §6 축 B = **A트랙과 같은 자리다** (이름표 유형)
+
+- **B2 헤즈업** — `heads-up poker` **260/LDA3** · `poker zu zweit` **140** · `poker zu zweit regeln` 40/11이 **전부 0회**.
+  자산은 이미 있다(`blind-meaning` 113~115행 = de 42편 중 유일한 헤즈업 전용 H2, `game-order` 예제 핸드)
+- **B5 Vierling** — `Vierling` 17회가 **한 번도 `Poker`와 인접하지 않는다.** H2에 「beim Poker」 두 낱말이면 `vierling poker` 70이 닫힌다
+- **B1 `/calculator` 링크** — 허브가 이미 있는데 Odds 클러스터만 끊겼다(`equity`는 태그에 `equity rechner poker`를 달고 본문 링크 0)
+- **B3 족보 PDF 부재** — `hand-rankings` 앵커는 「Pokerblätter als PDF」인데 링크 대상이 **룰 PDF**다. `poker reihenfolge pdf` 260/LDA11
+- **B6 통화 EUR 전환 누락 2편**(`texas-…-beginners` $18 · `pot-odds` $23) — 178곳 전환에서 빠졌다
+- 🟢 **B7 #3: `/de/tournaments`는 이미 이행돼 있다**(`app/de/tournaments` 실재) — **문서만 갱신하면 된다**
+
+> 🟢 **§5 「다시 파지 마라」 13축을 먼저 읽어라** — 검수장이 «찾아봤고 없다»를 근거와 함께 박아 뒀다
+> (FACTS §2 x/46 사건 de 미복제 · Skat 무늬 오염 S2 6편 0곳 · AKs vs 22 통과 · `tiebreak` 65주장 전부 OK …).
+> **재조사에 시간 쓰지 마라.**
+
+### ▶ 그 밖 (검수장 지시서 반영 후)
+
+**C. 다국어 «판 전체 재동기화»** — 🔴 사장님 판단 대기. 노출 미미, 정확성 명분뿐
 **D. KO S5** — 🔒 **8/16 이후**(STALE #19가 APT 인천 종료로 만료)
 
-```
-npm run audit:hard -- --locale=<code>     # 편집한 로케일마다 «따로»
-npm run check:de-style                    # de 편집 시 필수 (셀프테스트 104/104)
-npm run build && npm run check:hreflang && npm run check:faq-schema && npm run check:drift
-```
-⚠ 푸시 커밋에 **`public/sitemap.xml` 반드시 포함**(`vercel.json` buildCommand 때문에 postbuild가 안 돈다).
-🔴 **`git checkout --`로 파일을 되돌리기 전에 그 파일의 무관한 작업부터 커밋하라** — Session 6에서
-라벨 스크립트를 되돌리다 같은 파일의 H2 리네임 9건을 같이 죽여 재작업했다.
 
-### 상태 (2026-08-11 Session 6 마감 · 실측)
+### 상태 (2026-08-12 실측)
 
 | 지표 | 값 |
 |---|---|
