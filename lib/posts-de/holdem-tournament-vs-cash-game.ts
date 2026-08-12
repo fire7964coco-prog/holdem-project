@@ -188,7 +188,7 @@ Die größte strategische Trennlinie zwischen Cash Games und Turnieren ist ==ICM
 
 ICM steht für **Independent Chip Model**. Es schätzt den Geldwert deines Turnierstacks anhand von Stackgrößen, verbleibenden Spielern und der Auszahlungsstruktur. Cash Games brauchen kein ICM, weil Chips bereits Geld sind.
 
-Wo beißt es? Vor allem [an der Bubble](/de/blog/holdem-bubble) und an Final Tables. Angenommen, du hältst AKo an der Bubble mit mittlerem Stack und ein anderer Spieler geht all-in. Im Cash Game callst du, wenn der Call nach Pot Odds und Equity profitabel ist. Im Turnier bedeutet Verlieren, mit $0 zu finishen, während Gewinnen deine Preisgeld-Equity nicht verdoppelt – also kann ein Call, der im Cash Game Geld druckt, unter ICM ein klarer Fold sein.
+Wo beißt es? Vor allem [an der Bubble](/de/blog/holdem-bubble) und an Final Tables. Angenommen, du hältst AKo an der Bubble mit mittlerem Stack und der Chipleader, der dich covert, geht all-in. Im Cash Game callst du, wenn der Call nach Pot Odds und Equity profitabel ist. Im Turnier bedeutet Verlieren, mit $0 zu finishen, während Gewinnen deine Preisgeld-Equity nicht verdoppelt – also kann ein Call, der im Cash Game Geld druckt, unter ICM ein klarer Fold sein.
 
 | Entscheidungsfaktor | Cash Game | Turnier |
 |------|------|------|

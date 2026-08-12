@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Poker-Chips am Final Table vor einer Payout-Leiter gestapelt, die zeigen, dass ein größerer Chipstack sich nicht eins zu eins in einen größeren Anteil am Preisgeld umrechnet",
   tags: ["poker icm", "was ist icm im poker", "icm poker bedeutung", "icm vs chip ev", "icm deal", "chip chop vs icm", "wie wird icm berechnet", "icm poker strategie"],
   content: `
-Das erste Mal, als ICM mich Geld kostete, wusste ich nicht einmal, dass es existiert. Wir waren noch zu viert, drei wurden bezahlt, und ich schaute auf Pocket Jacks mit einem mittleren Stack herunter. Ich shovte, der Chipleader callte mit Ass-Zehn, und ich bustete an der Bubble für nichts. ==Jahrelang habe ich das als Beweis abgeheftet, dass der Shove falsch war. War er nicht== – ich hatte nur keine Ahnung, *wo* eine Bubble dich tatsächlich zur Kasse bittet, und genau das ist die einzige wichtigste Idee im Turnierpoker.
+Das erste Mal, als ICM mich Geld kostete, wusste ich nicht einmal, dass es existiert. Wir waren noch zu viert, drei wurden bezahlt, und mit mittlerem Stack fand ich Pocket Jacks vor. Ich shovte, der Chipleader callte mit Ass-Zehn, und ich bustete an der Bubble für nichts. ==Jahrelang habe ich das als Beweis abgeheftet, dass der Shove falsch war. War er nicht== – ich hatte nur keine Ahnung, *wo* eine Bubble dich tatsächlich zur Kasse bittet, und genau das ist die einzige wichtigste Idee im Turnierpoker.
 
 ==Chips in einem Turnier sind kein Geld. Du gewinnst immer nur *ein* erstes Preisgeld, also verdoppelt das Verdoppeln deines Stacks nie das, was du tatsächlich wert bist.== ICM – das Independent Chip Model – ist die Mathematik, die deinen Chipberg in die echten Dollar verwandelt, die er repräsentiert, und sobald du es siehst, ergeben Calls und Folds, die sich falsch anfühlten, plötzlich Sinn. Dieser Guide führt dich von „wofür steht ICM“ bis zum Aufteilen eines Final-Table-Deals, mit jeder Zahl durchgerechnet, damit du sie selbst prüfen kannst.
 
@@ -74,7 +74,7 @@ Die Regel ist einfach und rekursiv:
 - Deine Chance, **2.** zu werden = die Summe, über jeden anderen Spieler, der 1. werden könnte, aus (seiner Gewinnchance) × (dein Stack ÷ den ohne ihn verbleibenden Chips).
 - Mach so für jede tiefere Position weiter.
 
-Machen wir es echt. Drei Spieler sind übrig, die Preise sind ==$50 / $30 / $20== ($100 Pool), und die Stacks sind:
+Machen wir es konkret. Drei Spieler sind übrig, die Preise sind ==$50 / $30 / $20== ($100 Pool), und die Stacks sind:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -142,7 +142,7 @@ Ein Bubble Factor von 1,0 bedeutet, Chips und Geld bewegen sich zusammen (frühe
 Zwei praktische Regeln folgen daraus:
 
 - **Big Stack: angreifen.** Dein niedriges Risk Premium lässt dich unerbittlich [openen und 3-betten](/de/blog/holdem-3bet) gegen Spieler, die nicht callen können, ohne ihr Turnierleben zu riskieren. Das ist „ICM-Druck ausüben“, und es ist der zuverlässigste Weg, Chips am Final Table zu gewinnen.
-- **Medium und Short Stacks: engt eure Calling Range ein, aber shovt weiterhin zuerst.** Derjenige zu sein, der All-in geht (mit Fold Equity), ist weit besser, als derjenige zu sein, der abcallen muss. Unter Druck sollte eure Calling Range hart schrumpfen, während eure Open-Shoving Range aggressiv bleibt.
+- **Medium und Short Stacks: engst du deine Calling Range ein, shovst aber weiterhin zuerst.** Derjenige zu sein, der All-in geht (mit Fold Equity), ist weit besser, als derjenige zu sein, der abcallen muss. Unter Druck sollte deine Calling Range hart schrumpfen, während eure Open-Shoving Range aggressiv bleibt.
 
 Der Albtraum-Sitzplatz ist der Medium Stack, der angeshovt wird – der Hände foldet, die so stark sind wie manche, die du im Cash Game snap-callen würdest. Das ist keine Schwäche; das ist ICM.
 
@@ -203,7 +203,7 @@ Sei ehrlich darüber, was das Modell weglässt:
 - **Position.** Ein Stack von 3 Big Blinds am Button (der die Blinds zuletzt zahlt und sich damit noch ein paar freie Hände kauft, bevor er reinmuss) ist mehr wert als derselbe Stack im Big Blind (nächste Hand zwangsweise All-in). ICM kann die Sitzplätze nicht sehen.
 - **Blinds und künftiges Spiel.** ICM friert das Turnier in diesem Augenblick ein; es ignoriert steigende Blinds, Antes und wie die nächsten paar Orbits tatsächlich ablaufen werden.
 
-Es gibt sogar empirische Belege für seinen blinden Fleck: eine große Studie von 2025, die ICM gegen echte Turnierergebnisse zurücktestete, fand, dass es dazu neigt, ==Big Stacks zu unterschätzen und Short Stacks zu überschätzen==, teils weil ein starker Chipleader ICM-Druck nutzen kann, um *mehr* zu gewinnen, als das rohe Modell vorhersagt. Fortgeschrittene Solver fügen genau aus diesem Grund eine „Future Game“-Korrektur hinzu. Nichts davon macht ICM falsch – es macht es zu einer starken ersten Näherung, die du für Skill und Position anpasst, nicht zu einem physikalischen Gesetz.
+Es gibt sogar empirische Belege für seinen blinden Fleck: Auswertungen aus der Solver-Praxis zeigen, dass ICM dazu neigt, ==Big Stacks zu unterschätzen und Short Stacks zu überschätzen==, teils weil ein starker Chipleader ICM-Druck nutzen kann, um *mehr* zu gewinnen, als das rohe Modell vorhersagt. Fortgeschrittene Solver fügen genau aus diesem Grund eine „Future Game“-Korrektur hinzu. Nichts davon macht ICM falsch – es macht es zu einer starken ersten Näherung, die du für Skill und Position anpasst, nicht zu einem physikalischen Gesetz.
 
 ---
 
@@ -248,7 +248,7 @@ A. Die Finish-Wahrscheinlichkeits-Mathematik wird meist David Harville (aus der 
 
 1. **Chips sind kein Geld.** Du gewinnst nur ein erstes Preisgeld, also ist der Chipleader weniger wert als sein Chipanteil und der Short Stack mehr. Diese eine Lücke ist ganz ICM.
 2. **Late Game, wechsle von Chip EV zu $EV.** Nahe an Pay Jumps braucht ein Call zusätzliche Equity (ein Risk Premium), um profitabel zu sein. Der Medium Stack foldet Hände, die ein Cash Game snap-callen würde.
-3. **Kenne deine Zahl, bevor du dealst.** Short Stacks wollen einen ICM Deal, Big Stacks wollen einen Chip Chop – jag zuerst den [Rechner](/calculator).
+3. **Kenne deine Zahl, bevor du dealst.** Short Stacks wollen einen ICM Deal, Big Stacks wollen einen Chip Chop – jag deine Zahlen zuerst durch den [Rechner](/calculator).
 
 Von hier aus sieh, wie ICM-Druck in die breitere [Turnierstrategie](/de/blog/holdem-tournament) passt, oder geh zurück zum Fundament mit [Poker Equity](/de/blog/holdem-equity) und [Pot Odds](/de/blog/holdem-pot-odds).
 
@@ -275,7 +275,7 @@ Von hier aus sieh, wie ICM-Druck in die breitere [Turnierstrategie](/de/blog/hol
   <a href="/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Kostenloses Tool</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ICM-Rechner</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Jag deine eigenen Stacks und Deals</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Deine Stacks und Deals durchrechnen</div>
   </a>
 </div>
 `.trim(),

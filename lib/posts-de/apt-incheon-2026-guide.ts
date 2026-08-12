@@ -30,7 +30,7 @@ Seoul steht auf jeder Reiseliste, seit Parasite den Oscar gewann, Squid Game jed
 
 APT Incheon 2026. 7.–16. August. Paradise City Casino. $2,7 Millionen an garantierten Preispools. Und wenn die Karten weg sind – Bibimbap, Nächte am Han-Fluss, Palastspaziergänge und koreanisches Fried Chicken bis 4 Uhr morgens.
 
-Die Pokerreise und die Korea-Reise sind dieselbe Reise. ==g:Paradise City ist 10 Minuten vom Flughafen entfernt, und Seoul liegt 1 Stunde weit mit der U-Bahn.== Du kannst nur fürs Casino kommen, nur für die Sightseeing-Tour oder beides machen – die Lage macht es so oder so leicht.
+Die Pokerreise und die Korea-Reise sind dieselbe Reise. ==g:Paradise City ist 10 Minuten vom Flughafen entfernt, und in Seoul bist du mit dem AREX in gut einer Stunde.== Du kannst nur fürs Casino kommen, nur für die Sightseeing-Tour oder beides machen – die Lage macht es so oder so leicht.
 
 ---
 
@@ -49,9 +49,9 @@ Vor dem Poker: Südkorea ist still und leise zu einem der besten Reiseländer As
 - **K-Kultur:** Der Gyeongbokgung-Palast, das Bukchon Hanok Village und die Live-Musik-Szene in Hongdae sind echte Weltklasse-Kulturerlebnisse.
 - **Kosten:** Verglichen mit Tokio, Hongkong oder Sydney ist Seoul bemerkenswert erschwinglich – ein komplettes Korean-BBQ-Dinner mit Getränken kostet unter $20 pro Person.
 
-Und für internationale Besucher: ==g:Die meisten westlichen Passinhaber reisen visumfrei ein oder über ein kostenloses K-ETA (elektronische Reisegenehmigung), das online in Minuten beantragt ist.==
+Und für internationale Besucher: ==g:Deutschland, Österreich und die Schweiz brauchen bis zum 31.12.2026 **kein K-ETA** – es reicht die kostenlose e-Arrival Card, die du vor dem Abflug online einreichst. Für Pässe außerhalb der Ausnahmeliste kostet das K-ETA ₩10.000.==
 
-**Und ein Grund, der nur für dieses Jahr gilt.** Die APT-Ankündigung sagt es unmissverständlich: *„with the APT turning twenty in 2026“* – die Tour wird 2026 zwanzig. Gegründet wurde sie 2006, als Antanas „Tony G“ Guoga das erste Main Event in Singapur gewann. Die Jubiläumssaison endet mit der APT Championship in Taipeh, und genau deshalb **wiegen die Championship-Seats, die in Incheon vergeben werden, dieses Jahr schwerer als sonst**.
+**Und ein Grund, der nur für dieses Jahr gilt.** Die APT-Ankündigung sagt es unmissverständlich: *„with the APT turning twenty in 2026“* – die Tour wird 2026 zwanzig. Sie startete 2006 und ist damit eine der ältesten Touren Asiens. Die Jubiläumssaison endet mit der APT Championship in Taipeh, und genau deshalb **wiegen die Championship-Seats, die in Incheon vergeben werden, dieses Jahr schwerer als sonst**.
 
 ---
 
@@ -139,7 +139,7 @@ Natural8 ist APTs offizieller Online-Partner und betreibt die ==**Journey to APT
 
 </div>
 
-:::note[**★Stand 9. August 2026 – die Online-Qualifikation ist beendet.** Das $35-Mega und die OnLive-Day-1-Qualifikationen liefen am 2. August aus, die letzte Route **$20 Step → $200 Mega** am **Freitag, dem 7. August** – dem Tag vor Serienstart. Die 52 + 22 = 74 Seats in der Tabelle sind die bereits vergebene Gesamtzahl. Die Wege stehen hier, weil beim nächsten APT-Stopp dieselbe Struktur zurückkommt.]:::
+:::note[**★Stand 9. August 2026 – die Online-Qualifikation ist beendet.** Das $35-Mega und die OnLive-Day-1-Qualifikationen liefen am 2. August aus, die letzte Route **$20 Step → $200 Mega** am **Freitag, dem 7. August** – am Eröffnungstag der Serie selbst. Die 52 + 22 = 74 Seats in der Tabelle sind die bereits vergebene Gesamtzahl. Die Wege stehen hier, weil beim nächsten APT-Stopp dieselbe Struktur zurückkommt.]:::
 
 **So sah der Step-Weg aus – dieselbe Struktur kommt beim nächsten APT-Stopp zurück:**
 
@@ -246,7 +246,7 @@ Du kannst die ganze Reise über im Casino-Hotel bleiben – deine Sessions spiel
 
 ==g:Zwei AREX-Optionen ab T1==: der **Express** (nonstop zur Seoul Station in 43 Min, ₩11.000 – dann umsteigen in Linie 2 oder 4) oder der **All-Stop** (direkt zur Station Hongdae/Hongik University ohne Umstieg, ~60 Min, ₩4.750). All-Stop-Züge fahren alle 6–10 Minuten, von 5 Uhr bis Mitternacht. Airport-Busse fahren direkt nach Myeongdong und Gangnam, falls du das lieber magst.
 
-Hier ist, was du mit 1–3 freien Tagen machst:
+So füllst du 1–3 freie Tage:
 
 ![Google-Maps-Übersicht mit Paradise City in Incheon und der Distanz ins Zentrum von Seoul – etwa 50 km westlich der Stadt](/images/apt-incheon-2026-guide-map-wide.webp)
 

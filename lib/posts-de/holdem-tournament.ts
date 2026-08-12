@@ -68,7 +68,7 @@ Wenn du dich registrierst, zahlst du ein Buy-in. Dieses Geld teilt sich auf zwei
 | **€100** | → Prize Pool, geteilt unter allen Teilnehmern |
 | **€9** | → Hausgebühr (Rake), behält der Veranstaltungsort |
 
-Große Live-Events behalten in der Regel 8–10% des Buy-ins als Fee (kleine Daily-Turniere nehmen oft mehr) – hier €9 von €109, also rund 8,3%. Wie diese Fee funktioniert (und warum Online sich von Live unterscheidet), gehört zum Thema, [wie das Poker-Rake funktioniert](/de/blog/holdem-rake).
+Der Fee-Anteil sinkt, je größer das Buy-in ist: Die Dailies der Spielbank Berlin nehmen bei €70+10 rund 12% und bei €85+15 sogar 15%, ein CAPT-Event mit €500+50 dagegen gut 9%. Hier sind es €9 von €109, also rund 8,3%. Wie diese Fee funktioniert (und warum Online sich von Live unterscheidet), gehört zum Thema, [wie das Poker-Rake funktioniert](/de/blog/holdem-rake).
 
 Im Gegenzug erhältst du einen **Startstack** – üblicherweise 10.000 bis 50.000 Turnierchips, bei einem Standard-Event meist 100–200 Big Blinds tief auf Level 1.
 
@@ -173,7 +173,7 @@ Statt $10.000 auszugeben, trittst du in einem $500-Turnier gegen 19 andere Spiel
 
 **Verkettete Satellites** gehen sogar noch tiefer. Ein $5-Super-Satellite → $55-Qualifier → $215-Event → $1.050-Main-Event. Viele Spieler bei Major-Events sind über eine Satellite-Kette für einen Bruchteil des direkten Buy-ins eingestiegen.
 
-==g:Satellite-Strategie unterscheidet sich vom regulären Turnierspiel – sobald du genug Chips hast, um dir einen Sitzplatz zu sichern, hör auf, Risiken einzugehen. Folde sogar gute Hände, um nicht auf der Bubble zu busten.==
+==g:Satellite-Strategie unterscheidet sich vom regulären Turnierspiel – **aber nur, wenn mehrere Plätze vergeben werden.** Sobald dein Stack in einem Mehrplatz-Satellite für einen Sitzplatz reicht, hör auf, Risiken einzugehen, und folde sogar gute Hände. **Im Beispiel oben mit nur einem Sitzplatz gilt das Gegenteil: Bei Winner-take-all entspricht dein Geldanteil exakt deinem Chipanteil – da musst du bis zum letzten Chip akkumulieren.**==
 
 ---
 
@@ -247,7 +247,7 @@ Das **King's Resort in Rozvadov** liegt direkt hinter der bayerischen Grenze, re
 
 ### Österreich und Schweiz
 
-In Österreich läuft Turnierpoker in den Casinos Austria, deren eigene Tour heißt **CAPT**. Bis Jahresende stehen fünf Stationen an:
+In Österreich läuft Turnierpoker in den Casinos Austria. Ihre eigene Tour heißt **CAPT**. Bis Jahresende stehen fünf Stationen an:
 
 | CAPT-Station 2026 | Termin | Main-Event-Buy-in |
 |:---|:---|:---|
@@ -306,7 +306,7 @@ Das erzählt dir kein anderer Guide. Hier ist eine realistische Tag-1-Timeline f
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
 <div style="color:var(--primary);font-weight:700">~15:30</div>
-<div style="color:var(--foreground)">Late Reg schließt. Endgültige Feldgröße bekanntgegeben. Prize Pool bestätigt. Antes setzen ein.</div>
+<div style="color:var(--foreground)">Late Reg schließt. Endgültige Feldgröße bekanntgegeben. Prize Pool bestätigt.</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
 <div style="color:var(--primary);font-weight:700">~17:00</div>

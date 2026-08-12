@@ -141,7 +141,7 @@ Keine Lust, vier Stufen zu grinden? PokerStars fährt den ganzen Sommer über au
 
 ## Was kostet die EPT Barcelona 2026 insgesamt?
 
-==r:Hier ist, was Konkurrenten dir nicht sagen: das Buy-in ist nur ein Teil der Kosten.== Schlüsseln wir auf, was eine realistische EPT-Barcelona-Reise tatsächlich kostet.
+==r:Was die Konkurrenz weglässt: das Buy-in ist nur ein Teil der Kosten.== Schlüsseln wir auf, was eine realistische EPT-Barcelona-Reise tatsächlich kostet.
 
 ### Budget-Szenario: PokerStars Cup (€825)
 
@@ -346,7 +346,7 @@ Day 1 ist auf mehrere Start-Flights aufgeteilt (Day 1A, 1B, 1C, manchmal 1D). Du
 
 ### Häufige Fehler von Erstteilnehmern
 
-**1. Zur Startzeit ankommen.** ==r:Die Registrierungsschlangen können 30–45 Minuten lang sein.== Komm mindestens 30 Minuten vor Cards in the air an.
+**1. Zur Startzeit ankommen.** ==r:Die Registrierungsschlangen können 30–45 Minuten lang sein.== Komm zur Registrierungsöffnung, nicht 30 Minuten vor Spielbeginn – bei 30–45 Minuten Schlange sitzt du sonst erst in Level 2.
 
 **2. Die Blind-Struktur nicht kennen.** Lad den Zeitplan von der offiziellen PokerStars-Live-Seite herunter, bevor du ankommst. Wisse, wann die erste Pause ist, wie lang die Level sind und wie die Blinds bei deinem Start-Stack aussehen.
 

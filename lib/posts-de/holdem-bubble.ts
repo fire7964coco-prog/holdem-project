@@ -89,7 +89,7 @@ Der Big Stack ist der größte Profiteur der Bubble. Du kannst jeden busten; nie
 
 - **Open wide und [3-bette](/de/blog/holdem-3bet) light**, besonders gegen die Medium Stacks zu deiner Rechten, die nicht callen können, ohne ihr Turnier zu riskieren.
 - **Ziele auf Medium Stacks, nicht auf die kürzesten Stacks.** Das ist die entscheidende Nuance: Short Stacks callen dich eher (sie haben weniger zu verlieren), und einen zu verdoppeln ist eine Katastrophe. Bully die Spieler, die ==am meisten Angst vorm Busten== haben – die Mediums.
-- **Übertreib es nicht.** Druck ausüben heißt stehlen und auf Widerstand folden, nicht deinen Stack in Calls verspewen. Wenn ein tighter Medium Stack endlich shoved, respektiere es.
+- **Übertreib es nicht.** Druck ausüben heißt stehlen und auf Widerstand folden, nicht deinen Stack in Calls verpulvern. Wenn ein tighter Medium Stack endlich shovt, respektiere es.
 
 Richtig gespielt kann ein Big Stack an der Bubble Chips drucken, ohne je eine Hand zum Showdown zu bringen.
 
@@ -100,15 +100,15 @@ Richtig gespielt kann ein Big Stack an der Bubble Chips drucken, ohne je eine Ha
 > **Kurze Antwort**
 > Der Medium Stack ist der Platz mit den meisten Fallen am Tisch – und das ist die Tatsache, die fast jeder Artikel falsch macht.
 
-Die Leute nehmen an, der Short Stack fühle den meisten Druck. Nach der tatsächlichen Mathematik (Bubble Factor) ist es der ==Medium Stack==, der am eingeschränktesten ist: groß genug, um echte Prize Equity zu verlieren, nicht kurz genug, um Zocken zu rechtfertigen.
+Die Leute nehmen an, der Short Stack fühle den meisten Druck. Nach der tatsächlichen Mathematik (Bubble Factor) ist es der ==Medium Stack==, der am eingeschränktesten ist: groß genug, um echte Prize Equity zu verlieren, nicht kurz genug, um das Risiko zu rechtfertigen.
 
 Dein Playbook:
 
 - **Ziehe deine Calling Range härter zusammen als jeder andere.** Du hast am meisten zu verlieren, wenn du off callst und bustest. Folde Hände, die du im Cash Game gern callen würdest – sogar Hände so stark wie manche Paare und große Asse gegen den Shove eines größeren Stacks.
-- **Stiehl weiter von den Stacks unter dir.** Bei Calls in der Falle heißt nicht passiv. Open und übe Druck auf die kürzeren Stacks aus; vermeide nur, dich mit den Big Stacks zu deiner Linken zu verhaken.
+- **Stiehl weiter von den Stacks unter dir.** In der Falle zu sitzen heißt nicht, passiv zu spielen. Open und übe Druck auf die kürzeren Stacks aus; vermeide nur, dich mit den Big Stacks zu deiner Linken zu verhaken.
 - **Ladder-Bewusstsein, keine Angst.** Du navigierst zum Geld, aber folde dich nicht zu einem Short Stack runter und blinde aus – das tauscht eine Falle gegen eine schlimmere.
 
-Wenn du den Schraubstock an der Bubble zugehen fühlst, bist du wahrscheinlich ein Medium Stack. Spiel die kleinstmöglichen Pötte, während du weiter runterstiehlst.
+Wenn du den Schraubstock an der Bubble zugehen fühlst, bist du wahrscheinlich ein Medium Stack. Spiel die kleinstmöglichen Pots, während du weiter runterstiehlst.
 
 ---
 
@@ -117,11 +117,11 @@ Wenn du den Schraubstock an der Bubble zugehen fühlst, bist du wahrscheinlich e
 > **Kurze Antwort**
 > Geh All-in oder folde – limpe oder calle nie off – und nutze die Tatsache, dass dein Bubble Factor tatsächlich niedriger ist als der des Medium Stacks.
 
-Weil du ohnehin wahrscheinlich bustest, hilft dir ein Double-up enorm, also kannst du freier zocken als die Middle Stacks in der Falle. Aber du zockst, indem du ==derjenige bist, der shoved==, nicht derjenige, der callt – das volle [Push/Fold-Playbook für Short Stacks](/de/blog/holdem-short-stack "thumb:/images/holdem-short-stack-hero.webp") deckt die Mechanik ab:
+Weil du ohnehin wahrscheinlich bustest, hilft dir ein Double-up enorm, also kannst du mehr Risiko nehmen als die Middle Stacks in der Falle. Aber du zockst, indem du ==derjenige bist, der shovt==, nicht derjenige, der callt – das volle [Push/Fold-Playbook für Short Stacks](/de/blog/holdem-short-stack "thumb:/images/holdem-short-stack-hero.webp") deckt die Mechanik ab:
 
 - **Shove oder Fold.** First-in-Aggression erhält deine [Fold Equity](/de/blog/holdem-when-to-fold), deine wertvollste Waffe. Open-Limpen oder Flat-Callen mit einem Short Stack wirft das weg.
-- **Warte, wenn es kürzere Stacks als dich gibt.** Sind zwei Spieler kürzer, kannst du marginale Hände folden und sie zuerst busten lassen – kostenlos hochladdern. Bist *du* der Kürzeste, kannst du nicht warten; finde einen Spot und shove, bevor du ausblinest.
-- **Ziel dich nicht ins Nichts.** Auf zwei Big Blinds runterzufolden „um zu überleben“ ist, wie du trotzdem zum Bubble Boy wirst. Wähl eine vernünftige Shoving Range und commit.
+- **Warte, wenn es kürzere Stacks als dich gibt.** Sind zwei Spieler kürzer, kannst du marginale Hände folden und sie zuerst busten lassen – kostenlos hochladdern. Bist *du* der Kürzeste, kannst du nicht warten; finde einen Spot und shove, bevor du ausblindest.
+- **Folde dich nicht ins Nichts.** Auf zwei Big Blinds runterzufolden „um zu überleben“ ist, wie du trotzdem zum Bubble Boy wirst. Wähl eine vernünftige Shoving Range und commit.
 
 Das Mantra des Short Stacks: Fold Equity ist alles. Shove zuerst und wähl deinen Spot, bevor die Blinds ihn für dich wählen.
 
@@ -161,7 +161,7 @@ Die andere Hälfte: Der Bubble Factor richtet sich danach, **wer dir gegenübers
 
 Ohne diese Regel könnten Spieler an langsamen Tischen Hand um Hand folden, während schnellere Tische durch die Bubble brennen. Hand for Hand gleicht das Feld an:
 
-- **Wie es funktioniert:** Der Turnierdirektor pausiert die Uhr; alle Tische teilen eine Hand aus, und kein Tisch startet die nächste, bis jeder Tisch fertig ist. Busten zwei Spieler in derselben Hand-for-Hand-Runde am **selben Tisch**, nimmt derjenige mit weniger Chips zu Beginn der Hand die niedrigere (Bubble-)Platzierung; busten sie an **verschiedenen Tischen**, werden sie als gleichrangig gewertet und teilen sich die beiden betroffenen Auszahlungen.
+- **Wie es funktioniert:** Der Turnierdirektor kündigt Hand for Hand an – die Turnieruhr läuft dabei in den meisten Events weiter, die Blinds steigen also auch während der Bubble. Alle Tische teilen eine Hand aus, und kein Tisch startet die nächste, bis jeder Tisch fertig ist. Busten zwei Spieler in derselben Hand-for-Hand-Runde am **selben Tisch**, nimmt derjenige mit weniger Chips zu Beginn der Hand die niedrigere (Bubble-)Platzierung; busten sie an **verschiedenen Tischen**, werden sie als gleichrangig gewertet und teilen sich die beiden betroffenen Auszahlungen.
 - **Stalling:** die volle Time Bank bei jeder Entscheidung nehmen, um weniger Hände zu sehen (und sich ins Geld zu folden). Big Stacks haben keinen Grund zu stallen – sie wollen mehr Hände zum Attackieren. Short und Medium Stacks stallen manchmal, um zu überleben, ==aber exzessives Stalling kann einen Clock-Call oder eine Penalty einbringen==, also tanke in Maßen.
 - **Nutze es aus:** Weil alle anderen langsamer werden, sammelt ein Big Stack, der während Hand for Hand weiter Druck macht, Blinds und Antes fast unangefochten ein.
 
@@ -175,7 +175,7 @@ Ohne diese Regel könnten Spieler an langsamen Tischen Hand um Hand folden, wäh
 Dieser Fold ist der kontraintuitivste Spot im Poker – und er ist korrekt. Wenn dir das Gewinnen eines Flips ==denselben Platz gibt, den du bereits gesichert hast==, während das Verlieren dich eliminiert, gibt es keine Belohnung und ein enormes Risiko:
 
 - **Sobald dein Platz mathematisch sicher ist** (du bist weit genug innerhalb der Bubble, dass du nicht mehr eingeholt werden kannst), folde jede Hand – ja, sogar AA und KK – und lass die kürzeren Stacks es ausfechten.
-- **Stalle jede Hand**, um diesen Stack zu bewahren. An einer Satellite-Bubble ist Stalling nicht nur toleriert, es ist optimal.
+- **Spiel bewusst langsam, aber bleib innerhalb der Regeln.** An einer Satellite-Bubble schaut der Floor am schärfsten auf Stalling und geht oft früh in Hand for Hand. Exzessives Tanken bringt einen Clock-Call und dann eine Penalty – meist eine ausgesetzte Runde, und die kostet dich an der Sicherheitsschwelle genau den Sitzplatz, den du schützen wolltest.
 - **Die eine Ausnahme:** Calle nur, wenn das Busten des spezifischen Short Stacks, gegen den du antrittst, die Bubble *für dich* platzen ließe – d.h. seine Elimination garantiert deinen Platz.
 
 Wenn du eine Sache aus diesem Abschnitt mitnimmst: Ein Satellite ist kein normales Turnier. Chips über der Sicherheitsschwelle sind wertlos, also spiel entsprechend.
@@ -218,7 +218,7 @@ A. Du solltest *Calls* viel öfter folden als üblich, aber nicht alles – und 
 
 **Q. Fühlen Short Stacks den meisten Bubble-Druck?**
 
-A. Nein – das ist der verbreitete Irrtum. Nach dem Bubble Factor ist der Medium Stack am eingeschränktesten: genug Prize Equity zum Verlieren, nicht kurz genug, um Zocken zu rechtfertigen. Short Stacks haben tatsächlich einen niedrigeren Bubble Factor, weil Busten ohnehin wahrscheinlich ist und ein Double-up viel hilft, also können sie freier zocken (durch Shoven, nicht Callen).
+A. Nein – das ist der verbreitete Irrtum. Nach dem Bubble Factor ist der Medium Stack am eingeschränktesten: genug Prize Equity zum Verlieren, nicht kurz genug, um das Risiko zu rechtfertigen. Short Stacks haben tatsächlich einen niedrigeren Bubble Factor, weil Busten ohnehin wahrscheinlich ist und ein Double-up viel hilft, also können sie mehr Risiko nehmen (durch Shoven, nicht Callen).
 
 **Q. Was ist Hand-for-Hand-Spiel?**
 
@@ -261,7 +261,7 @@ Der Motor hinter allem ist [ICM](/de/blog/holdem-icm); die Disziplin hinter den 
   <a href="/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Kostenloses Tool</div>
     <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ICM-Rechner</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Finde deine echte Bubble-Factor-Zahl</div>
+    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Finde deine echte Bubble Factor-Zahl</div>
   </a>
 </div>
 `.trim(),

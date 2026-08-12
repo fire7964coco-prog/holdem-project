@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Korea Run + Play 2026 – Marathon & Poker auf einer Reise",
   seoTitle: "Korea Poker & Marathon 2026 – Chuncheon, JTBC + Paradise City Guide",
   desc: "Lauf den Chuncheon- oder JTBC-Seoul-Marathon bei perfektem Herbstwetter (Okt–Nov) und spiel danach Poker im Paradise City. Kalender 2026 + Anmeldung für Läufer.",
-  tldr: "Koreas beste Herbstmarathons (Chuncheon 25. Okt, JTBC Seoul 1. Nov, Garmin Run 15. Nov) treffen auf perfektes Laufwetter. Das Paradise City Casino nahe dem Flughafen Incheon bietet ganzjährig Cash Games – nur für Ausländer, 10 Min. vom Terminal. Eine Reise deckt beides ab.",
+  tldr: "Koreas beste Herbstmarathons (Chuncheon 25. Okt, JTBC Seoul 1. Nov, Garmin Run 15. Nov) treffen auf perfektes Laufwetter – für 2026 ist allerdings nur noch der JTBC Seoul offen, Chuncheon und Garmin Run haben im Juli geschlossen. Das Paradise City Casino nahe dem Flughafen Incheon bietet Cash Games – nur für Ausländer, 10 Min. vom Terminal. Eine Reise deckt beides ab.",
   category: "tournament",
   date: "2026-06-19",
   updated: "2026-08-11",
@@ -43,7 +43,7 @@ Korea ist der Ort, an dem beides perfekt zusammenkommt. ==**Weltklasse-Herbstmar
 ---
 
 > **Kurze Antwort**
-> Korea Pokerturniere: ==**APT Incheon 7.–16. Aug**==, ==**APT Jeju 25. Sep–7. Okt**== (beide in Casinos nur für Ausländer). Korea Marathons: ==**Chuncheon 25. Okt**==, ==**JTBC Seoul 1. Nov**==, ==**Garmin Run 15. Nov**==. APT Jeju endet am 7. Okt → Chuncheon startet am 25. Okt – ==g:18 Tage Abstand, eine Reise deckt beides ab.==
+> Korea Pokerturniere: ==**APT Incheon 7.–16. Aug**==, ==**APT Jeju 25. Sep–7. Okt**== (beide in Casinos nur für Ausländer). Korea Marathons: ==**Chuncheon 25. Okt**==, ==**JTBC Seoul 1. Nov**==, ==**Garmin Run 15. Nov**==. ==r:**Für 2026 nimmt nur noch der JTBC Seoul Anmeldungen entgegen** – Chuncheon (14./16. Jul) und Garmin Run (1.–3. Jul) sind geschlossen.== APT Jeju endet am 7. Okt → Chuncheon startet am 25. Okt – ==g:18 Tage Abstand, eine Reise deckt beides ab. Für 2027 gehören diese Anmeldetermine jetzt in deinen Kalender.==
 
 ---
 
@@ -67,9 +67,9 @@ Der Fall ist nicht kompliziert. Es geht um Timing und Lage.
 |---|---|---|---|---|---|
 | Dong-A Seoul International Marathon | März 2026 | Full, 10K | Seoul | [dongamarathon.com](https://www.dongamarathon.com) | 2026 vorbei |
 | ==**YTN Seoul Tour Marathon**== | ==**6. Sep**== | Half, 10K | Seoul Plaza | [run.ytn.co.kr](http://run.ytn.co.kr) | Geschlossen 15. Jul |
-| ==g:**Chuncheon Marathon**== | ==g:**25. Okt**== | ==g:Full, 10K== | ==g:Chuncheon== | ==g:[chuncheonmarathon.com](https://www.chuncheonmarathon.com)== | ==g:Jetzt offen== |
+| **Chuncheon Marathon** | **25. Okt** | Full, 10K | Chuncheon | [chuncheonmarathon.com](https://www.chuncheonmarathon.com) | ==r:**Geschlossen** – Anmeldung war am 14./16. Jul, in unter 3 Min. ausverkauft== |
 | ==**JTBC Seoul Marathon**== | ==**1. Nov**== | Full, 10K | Seoul (Sangam) | [worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon) | Ausländer-Kontingent (früh voll) |
-| Garmin Run Korea | 15. Nov | Half, 10K | Goyang | [runable.me](http://runable.me/product/18977?comp=18962) | Offen 1.–3. Jul |
+| Garmin Run Korea | 15. Nov | Half, 10K | Goyang | [runable.me](http://runable.me/product/18977?comp=18962) | ==r:**Geschlossen** – Losverfahren lief nur 1.–3. Jul== |
 
 </div>
 

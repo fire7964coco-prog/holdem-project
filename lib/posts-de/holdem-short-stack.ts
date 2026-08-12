@@ -125,7 +125,7 @@ Wenn du ==first-in shovst==, gewinnst du auf zwei Wegen: alle folden (Fold Equit
 
 „Eng“ heißt enger als deine Shoving-Range, nicht „nur wenn ich sicher vorne bin“. Callen ist eine Preisfrage: Im Big Blind gegen einen Shove über 10bb riskierst du 9bb, um einen Pot von 20,5bb zu gewinnen, sodass die Schwelle bei ==43,9%== Equity gegen diese Range liegt. Genau deshalb sind kleine Paare und schwache Asse der *Kern* einer Big-Blind-Calling-Range und kein Leak: Selbst gegen AKo – eine Hand am oberen Ende jeder Shoving-Range – kommt 22 auf ==52,65%==. Der Leak ist nicht die Handklasse, sondern die Annahme „das ist wahrscheinlich ein Coinflip“, statt die Zahl zu prüfen (siehe [wann folden](/de/blog/holdem-when-to-fold)).
 
-Eine Zeile zum Merken: ==sei der, der shovt, nicht der, der callt.== First-in-Aggression ist, wo der Short-Stack-Profit lebt; das Hero-Callen von All-ins ist, wo Short Stacks sterben.
+Eine Zeile zum Merken: ==sei der, der shovt, nicht der, der callt.== Mit First-in-Aggression verdient der Short Stack sein Geld; am Hero-Call von All-ins sterben Short Stacks.
 
 ---
 
@@ -149,7 +149,7 @@ Nutze sie, um Intuition aufzubauen, nicht als Naturgesetz:
 ## Was ändert sich mit einem Short Stack an der Bubble?
 
 > **Kurze Antwort**
-> Hier kommt der kontraintuitive Teil: an der Bubble hat ein klarer Short Stack oft einen niedrigeren Bubble-Faktor als ein Medium Stack – du kannst also mehr zocken, aber nur durch Shoven, nicht durch Callen.
+> Hier kommt der kontraintuitive Teil: an der Bubble hat ein klarer Short Stack oft einen niedrigeren Bubble Factor als ein Medium Stack – du kannst also mehr Risiko nehmen, aber nur durch Shoven, nicht durch Callen.
 
 Jeder nimmt an, der Short Stack stehe am meisten unter Druck. Laut Mathematik tut er das nicht: du wirst wahrscheinlich ohnehin bald busten, und ein Double-up hilft dir enorm, also ist deine Risikoprämie niedriger als die der eingesperrten Medium Stacks (der [Bubble-Guide](/de/blog/holdem-bubble) erklärt, warum der Medium Stack der wahre Gefangene ist).
 
@@ -159,7 +159,7 @@ Was das in der Praxis bedeutet:
 - **Du kannst warten, wenn andere kürzer sind.** Wenn zwei Spieler an der Money-Bubble weniger Chips haben als du, kannst du marginale Spots folden und sie zuerst busten lassen, um dich gratis nach oben zu laddern – aber nur, wenn du tatsächlich Chips zum Warten hast, nicht wenn du der Kürzeste bist.
 - **Mach ICM nicht zur Ausrede, alles zu folden.** Auf null Fold Equity herunterzublinden, um „dich in den Min-Cash zu schleichen“, tauscht das Turnier gegen seinen kleinsten Preis ein. Respektiere den Pay Jump, dann geh zurück ans Akkumulieren.
 
-Die echte Mathematik hinter „wie viel niedriger ist mein Bubble-Faktor“ steckt im [ICM-Guide](/de/blog/holdem-icm) – lass deinen genauen Spot durch den [Rechner](/calculator) laufen, wenn es zählt.
+Die echte Mathematik hinter „wie viel niedriger ist mein Bubble Factor“ steckt im [ICM-Guide](/de/blog/holdem-icm) – lass deinen genauen Spot durch den [Rechner](/calculator) laufen, wenn es zählt.
 
 ---
 
@@ -196,7 +196,7 @@ A. Fast nie, wenn du first-in bist. Open-Limpen gibt Fold Equity auf und baut ei
 
 **Q. Ist Min-Raisen jemals richtig als Short Stack?**
 
-A. Als Anfänger-Default nein – min-raise-then-Fold ist ein klassischer Leak. Als fortgeschrittener Move bei 10–15 Big Blinds min-raisen starke Spieler manchmal Premiumhände, um Shoves aus schlechteren zu induzieren. Lerne zuerst verlässliches Push/Fold; füge die Min-Raise-Falte erst hinzu, wenn das automatisch sitzt.
+A. Als Anfänger-Default nein – min-raise-then-Fold ist ein klassischer Leak. Als fortgeschrittener Move bei 10–15 Big Blinds min-raisen starke Spieler manchmal Premiumhände, um Shoves aus schlechteren zu induzieren. Lerne zuerst verlässliches Push/Fold; füge die Min-Raise-Kniff erst hinzu, wenn das automatisch sitzt.
 
 **Q. Was ist die M-Ratio im Poker?**
 
@@ -218,7 +218,7 @@ A. Ja. In einem Cash Game kannst du jederzeit rebuyen oder auf einen vollen Stac
 2. **Calle enger als du shovst.** Zwei verschiedene Ranges – First-in-Shoves sind weit (du gewinnst auch, wenn sie folden); Calls sind eng (du gewinnst nur am Showdown).
 3. **Handle, bevor deine Fold Equity stirbt.** Blinde nicht auf null herunter, während du auf eine Hand wartest. Weite deine Shoves late, verenge early, und bring es rein, solange dein All-in Leute noch erschreckt.
 
-Short-Stack-Play ist, wo Turniermathe zu Muskelgedächtnis wird – kombiniere es mit [ICM](/de/blog/holdem-icm) und [Bubble-Strategie](/de/blog/holdem-bubble), um nicht nur zu wissen, *wie* du shovst, sondern *wann* es am meisten zählt.
+Beim Short-Stack-Play wird Turniermathe zu Muskelgedächtnis – kombiniere es mit [ICM](/de/blog/holdem-icm) und [Bubble-Strategie](/de/blog/holdem-bubble), um nicht nur zu wissen, *wie* du shovst, sondern *wann* es am meisten zählt.
 
 ---
 

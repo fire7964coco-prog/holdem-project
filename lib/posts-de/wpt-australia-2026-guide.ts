@@ -107,7 +107,7 @@ Das ist die Frage, die jeder First-Timer stellt. Hier die ehrliche Aufschlüssel
 
 </div>
 
-> **Wie Step-Satellites im The Star funktionieren**: Step 1 (~AUD $255) → gewinn ein Ticket für den Direct Qualifier → 1 von 8 Spielern gewinnt einen Championship-Seat. Alternativ überspringst du Step 1 und steigst direkt in den Direct Qualifier für ~AUD $1.075 ein. Die genauen 2026er-Buy-ins werden näher am Event auf [starpoker.com.au](https://www.starpoker.com.au) bestätigt.
+> **Wie Step-Satellites im The Star funktionieren**: Step 1 (~AUD $255) → gewinn ein Ticket für den Direct Qualifier. Rechne die Quote selbst nach: Ein Qualifier vergibt grob einen Seat je (Championship-Buy-in ÷ Qualifier-Buy-in) Entries – bei AUD $5.000 und $1.075 also rund 1 von 5, nicht 1 von 8 wie in der $8.000-Ära bis 2024. Alternativ überspringst du Step 1 und steigst direkt in den Direct Qualifier für ~AUD $1.075 ein. Die genauen 2026er-Buy-ins werden näher am Event auf [starpoker.com.au](https://www.starpoker.com.au) bestätigt.
 
 ### Können Overseas-Spieler sich online qualifizieren?
 
@@ -260,7 +260,7 @@ Die meisten internationalen Besucher brauchen entweder eine **ETA (Electronic Tr
 
 ## Was kostet die Reise zur WPT Australia 2026?
 
-Hier ist, was eine komplette WPT-Australia-Reise tatsächlich kostet, basierend auf 2025er-Daten:
+Was eine komplette WPT-Australia-Reise wirklich kostet, basierend auf 2025er-Daten:
 
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.25);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -293,7 +293,7 @@ A. Du kannst dich vorab online unter thestarclub.com.au/sign-up registrieren, um
 
 **Q. Was ist der günstigste Weg in die WPT Australia Championship?**
 
-A. Die On-Site-Zweistufen-Satellite-Route gibt dir eine Chance für ==g:rund AUD $255==. Step 1 (~AUD $255) speist in Step 2 (~AUD $1.075), wo 1 von 8 Spielern einen Championship-Seat gewinnt. Die genauen Satellite-Buy-ins für 2026 werden näher am Festival auf [starpoker.com.au](https://www.starpoker.com.au) bestätigt.
+A. Die On-Site-Zweistufen-Satellite-Route gibt dir eine Chance für ==g:rund AUD $255==. Step 1 (~AUD $255) speist in Step 2 (~AUD $1.075). Wie viele Entries auf einen Seat kommen, ergibt sich aus Championship-Buy-in ÷ Qualifier-Buy-in – bei AUD $5.000 sind das rund fünf, nicht acht wie zur $8.000-Ära bis 2024. Die genauen Satellite-Buy-ins für 2026 werden näher am Festival auf [starpoker.com.au](https://www.starpoker.com.au) bestätigt.
 
 **Q. Werden Poker-Gewinne in Australien besteuert?**
 
