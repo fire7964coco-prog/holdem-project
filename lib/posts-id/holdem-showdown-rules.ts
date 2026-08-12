@@ -57,9 +57,9 @@ Boleh — **kalau Anda kalah**.
 
 Begitu agresor terakhir membuka hand-nya, pemain lain bisa memilih:
 - **Buka hand** kalau merasa menang
-- **Muck menghadap ke bawah** kalau sudah jelas kalah — tidak perlu memperlihatkan kartu Anda
+- **Muck menghadap ke bawah** kalau sudah jelas kalah — tidak perlu memperlihatkan kartu Anda. Ini hanya berlaku selama tidak ada yang all-in: begitu seorang pemain all-in, TDA Rule 16 mewajibkan semua hand di pot itu dibuka dan tidak seorang pun boleh muck
 
-==r:Tapi ada satu pengecualian penting:== kalau bet river Anda di-call, pemain yang call sudah membayar harga penuh untuk melihat hand Anda. Setiap pemain yang dibagikan kartu di hand itu boleh meminta dealer membuka hand yang di-muck padahal terlibat showdown yang di-call — aturan **"I want to see that hand"** di kebanyakan cardroom. (Jangan tertukar dengan "show one, show all", yang artinya kalau Anda sukarela memperlihatkan kartu ke satu pemain, semua orang di meja berhak melihatnya.)
+==r:Tapi ada satu pengecualian penting:== kalau bet river Anda di-call, pemain yang call sudah membayar harga penuh untuk melihat hand Anda. Meminta dealer membuka hand yang sudah di-muck itulah aturan **"I want to see that hand"**. Di turnamen, ==TDA Rule 18== membatasinya ketat: siapa pun yang di showdown sudah tidak memegang kartu, atau sudah muck tertutup, kehilangan hak untuk memintanya. Hak yang tak bisa diganggu gugat hanya milik pemain yang meng-call bet river dan membuka atau masih memegang kartunya — dan hanya atas hand ==agresor terakhir==, yaitu hand yang ia bayar untuk dilihat. Sisanya adalah kewenangan direktur turnamen; di cash game banyak cardroom lebih longgar. (Jangan tertukar dengan "show one, show all", yang artinya kalau Anda sukarela memperlihatkan kartu ke satu pemain, semua orang di meja berhak melihatnya.)
 
 Aturan praktisnya: ==sebagai agresor terakhir Andalah yang membuka kartu — termasuk gertakan yang di-call.== Muck tertutup itu pilihan pemain yang call, setelah ia melihat hand si pembuat bet. Kalau Anda yang bet lalu buru-buru muck, Anda rugi dua kali: pemain yang call tetap boleh meminta melihat hand Anda, dan karena cards speak, banyak pot terbuang oleh pemain yang ace-high-nya justru unggul.
 
@@ -89,7 +89,7 @@ Ketika seorang pemain all-in dan tidak ada taruhan lagi yang mungkin, sisa kartu
 
 </div>
 
-Satu detail penting: kalau ada **side pot** (pemain lain masih punya chip dan terus bertaruh), side pot dibagikan lebih dulu — agresor terakhir di antara pemain yang masih bertaruh itu buka duluan — baru kemudian pot utama, di mana hand pemain yang all-in dibuka.
+Satu detail penting: kalau ada **side pot** (pemain lain masih punya chip dan terus bertaruh), side pot dibagikan lebih dulu, baru pot utama. Itu **urutan pembayaran**, dan tidak ada hubungannya dengan kapan kartu dibuka: hand pemain all-in sudah terbuka sejak tidak ada taruhan lagi yang mungkin. Ilustrasi TDA untuk Rule 16 menyebutnya terang-terangan — jangan menunggu side pot dibagi dulu baru membuka hand pemain all-in.
 
 Untuk cara side pot dibentuk dan dibayarkan saat ada pemain all-in, lihat [aturan all-in dan side pot](/id/blog/holdem-all-in-rules); untuk pot yang dibagi rata, lihat [aturan split pot dan chop](/id/blog/holdem-split-pot-rules).
 
@@ -166,7 +166,7 @@ A. Pemain terakhir yang melakukan aksi agresif (bet atau raise) di ronde taruhan
 
 **Q. Apakah Anda wajib menunjukkan kartu kalau di-call saat showdown?**
 
-A. Ya — kalau Anda pemain terakhir yang bet atau raise di river, Anda wajib buka duluan saat di-call. Kalau Anda yang call bet orang lain, Anda boleh muck menghadap ke bawah setelah melihat hand-nya kalau Anda kalah. Tapi di kebanyakan cardroom, setiap pemain yang dibagikan kartu di hand itu bisa minta dealer membuka hand yang di-call tapi di-muck.
+A. Ya — kalau Anda pemain terakhir yang bet atau raise di river, Anda wajib buka duluan saat di-call. Kalau Anda yang call bet orang lain, Anda boleh muck menghadap ke bawah setelah melihat hand-nya kalau Anda kalah. Pengecualiannya all-in: menurut TDA Rule 16 pemain yang call pun wajib membuka kartunya. Dan di turnamen, hanya pemain yang masih memegang kartu atau sudah membukanya yang boleh minta melihat sebuah hand — tak terbantahkan, hanya hand agresor terakhir.
 
 **Q. Boleh muck saat showdown tanpa menunjukkan kartu?**
 

@@ -57,9 +57,9 @@ Oo — **kung talo ka**.
 
 Pagkatapos magpakita ng last aggressor ng hand niya, ang ibang players ay pwedeng:
 - **Magpakita ng hand nila** kung sa tingin nila panalo sila
-- **Mag-muck face-down** kung nakita nilang talo sila — hindi na kailangang ipakita ang cards mo
+- **Mag-muck face-down** kung nakita nilang talo sila — hindi na kailangang ipakita ang cards mo. Umiiral lang ito habang walang nag-all-in: sa sandaling may all-in, iniuutos ng TDA Rule 16 na ibuka ang lahat ng hand sa pot na iyon at walang sinumang pwedeng mag-muck
 
-==r:Pero may isang mahalagang exception:== kung na-call ang river bet mo, ang caller ay nagbayad ng buong presyo para makita ang hand mo. Kahit sinong player na na-deal sa hand na iyon ay pwedeng hilingin sa dealer na buksan ang mucked hand na kasangkot sa isang called showdown — ang **"I want to see that hand"** rule sa karamihan ng cardrooms. (Huwag itong ipagkamali sa "show one, show all," na ang ibig sabihin ay kung kusa kang magpakita ng cards mo sa isang player, lahat sa mesa ay makikita rin ang mga ito.)
+==r:Pero may isang mahalagang exception:== kung na-call ang river bet mo, ang caller ay nagbayad ng buong presyo para makita ang hand mo. Ang paghiling sa dealer na buksan ang isang mucked hand — iyon ang **"I want to see that hand"** rule. Sa tournament, mahigpit ang guhit ng ==TDA Rule 18==: sinumang wala nang hawak na cards sa showdown, o nag-muck nang nakataob, ay nawawalan ng karapatang humiling. Hindi maaalis ang karapatang iyon sa nag-call lang ng river bet at nagbukas o may hawak pa ng sarili niyang cards — at para lang sa hand ng ==last aggressor==, ang hand na binayaran niyang makita. Ang iba ay nasa pasya ng tournament director; sa cash game mas maluwag ang maraming cardroom. (Huwag itong ipagkamali sa "show one, show all," na ang ibig sabihin ay kung kusa kang magpakita ng cards mo sa isang player, lahat sa mesa ay makikita rin ang mga ito.)
 
 Praktikal na rule: ==bilang last aggressor ikaw ang magbubukas — pati ang bluff na na-call.== Ang pag-muck nang nakataob ay opsyon ng caller, matapos niyang makita ang hand ng nag-bet. Kung ikaw ang nag-bet at mabilis kang nag-muck, doble ang talo mo: puwede pa rin hingin ng caller na makita ang hand mo, at dahil cards speak, marami nang pot ang naitapon ng may ace-high na nangunguna pala.
 
@@ -89,7 +89,7 @@ Kapag nag-all-in ang isang player at wala nang posibleng betting, karaniwang ini
 
 </div>
 
-Isang nuance: kung may **side pot** (may chips pa ang ibang players at patuloy na nagbe-bet), ang side pot ang unang igagawad — ang last aggressor sa mga live bettor na iyon ang unang magpapakita — tapos ang main pot, kung saan ipinapakita ang hand ng all-in player.
+Isang nuance: kung may **side pot** (may chips pa ang ibang players at patuloy na nagbe-bet), ang side pot ang unang igagawad, tapos ang main pot. Iyon ang **pagkakasunod-sunod ng bayad** — walang kinalaman iyon sa kung kailan binubuksan ang cards: nakaharap na pataas ang hand ng all-in player mula pa sa sandaling wala nang posibleng taya. Tahasang sinasabi ng ilustrasyon ng TDA sa Rule 16 — huwag hintaying mahati ang side pot bago buksan ang hand ng all-in.
 
 Para sa kung paano itinatayo at binabayaran ang side pots kapag all-in ang players, tingnan ang [all-in rules at side pots](/fil/blog/holdem-all-in-rules); para sa chopped pots, tingnan ang split pot at chop rules.
 
@@ -166,7 +166,7 @@ A. Ang huling player na gumawa ng aggressive action (bet o raise) sa final betti
 
 **Q. Kailangan mo bang ipakita ang cards mo kung na-call ka sa showdown?**
 
-A. Oo — kung ikaw ang huling nag-bet o nag-raise sa river, dapat kang unang magpakita kapag na-call. Kung ikaw ang nag-call sa bet ng iba, pwede kang mag-muck face-down pagkatapos makita ang hand niya kung talo ka. Gayunpaman, sa karamihan ng cardrooms kahit sinong player na na-deal sa hand na iyon ay pwedeng humiling sa dealer na buksan ang called hand na na-muck.
+A. Oo — kung ikaw ang huling nag-bet o nag-raise sa river, dapat kang unang magpakita kapag na-call. Kung ikaw ang nag-call sa bet ng iba, pwede kang mag-muck face-down pagkatapos makita ang hand niya kung talo ka. Ang exception ay all-in: sa ilalim ng TDA Rule 16 kailangan ding ibuka ng caller ang hand niya. At sa tournament, ang makakahiling lang na makita ang isang hand ay ang may hawak pa ng cards o nagbukas na nito — at hindi maaalis, para lang sa hand ng last aggressor.
 
 **Q. Pwede ka bang mag-muck sa showdown nang hindi nagpapakita?**
 

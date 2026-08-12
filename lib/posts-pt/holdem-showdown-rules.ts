@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Regras de showdown no Texas Hold'em: quem mostra primeiro, muck e slow roll",
   seoTitle: "Quem mostra primeiro no showdown? Regras e muck no poker",
   desc: "Pagou o river e ninguém vira as cartas? Veja quem mostra primeiro no showdown, quando dá para dar muck sem mostrar e por que slow roll pega mal no poker.",
-  tldr: "No showdown, o último jogador que apostou ou aumentou mostra primeiro. Se todos deram check no river, o primeiro jogador ativo à esquerda do botão abre o jogo. Quem perdeu pode dar muck sem mostrar, mas qualquer jogador que recebeu cartas na mão pode pedir para ver uma mão que participou de um showdown pago.",
+  tldr: "No showdown, o último jogador que apostou ou aumentou mostra primeiro. Se todos deram check no river, o primeiro jogador ativo à esquerda do botão abre o jogo. Quem perdeu pode dar muck sem mostrar, mas quem pagou a aposta do river pode pedir para ver a mão de quem apostou.",
   category: "rules",
   date: "2026-06-15",
   updated: "2026-08-09",
@@ -57,9 +57,9 @@ Sim — **se você perdeu**.
 
 Depois que o último agressor mostra a mão, os outros jogadores podem:
 - **Mostrar a mão**, se acharem que ganham
-- **Dar muck com as cartas viradas para baixo**, se virem que perderam — sem precisar revelar nada
+- **Dar muck com as cartas viradas para baixo**, se virem que perderam — sem precisar revelar nada. Isso só vale enquanto ninguém tiver ido all-in: assim que um jogador está all-in, a regra 16 da TDA manda mostrar todas as mãos do pote e ninguém pode dar muck
 
-==r:Mas existe uma exceção importante:== se a sua aposta no river foi paga, quem pagou comprou o direito de ver a sua mão. Qualquer jogador que recebeu cartas na mão pode pedir ao dealer para virar uma mão descartada que participou de um showdown pago — é a regra **"I want to see that hand"** ("quero ver essa mão") na maioria dos clubes. (Não confunda com o "show one, show all", que significa que, se você mostrar suas cartas voluntariamente a um jogador, todo mundo na mesa tem o direito de vê-las.)
+==r:Mas existe uma exceção importante:== se a sua aposta no river foi paga, quem pagou comprou o direito de ver a sua mão. Pedir ao dealer para virar uma mão descartada é a regra **"I want to see that hand"** ("quero ver essa mão"). Em torneio a regra 18 da TDA fecha o cerco: quem não tem mais cartas no showdown, ou deu muck virado para baixo, perde o direito de pedir; o direito é inviolável apenas para quem pagou a aposta do river e mostrou ou manteve as cartas, e só sobre a mão do último agressor. O resto fica a critério do diretor do torneio, e no cash muitos clubes são mais generosos. (Não confunda com o "show one, show all", que significa que, se você mostrar suas cartas voluntariamente a um jogador, todo mundo na mesa tem o direito de vê-las.)
 
 Regra prática: ==como último agressor você vira as cartas, inclusive no blefe que foi pago.== Dar muck é a opção de quem pagou, depois de ver a mão do apostador. Quem aposta e dá muck rápido perde duas vezes: o pagador pode exigir sua mão do mesmo jeito e, como as cartas falam, muito pote já foi jogado fora com um ás alto que estava na frente.
 
@@ -89,7 +89,7 @@ Quando um jogador vai de all-in e não há mais apostas possíveis, as cartas re
 
 </div>
 
-Um detalhe: se existe um **side pot** (pote paralelo — outros jogadores ainda têm fichas e continuam apostando), o side pot é decidido primeiro — o último agressor entre esses jogadores ativos mostra primeiro — e só depois vem o pote principal, onde a mão de quem está all-in é mostrada.
+Um detalhe: se existe um **side pot** (pote paralelo — outros jogadores ainda têm fichas e continuam apostando), o side pot é pago primeiro e o pote principal depois. Essa é a **ordem de pagamento** e não tem nada a ver com a hora de virar as cartas: a mão de quem está all-in já está aberta desde o instante em que nenhuma aposta é mais possível. A ilustração da TDA para a regra 16 diz isso com todas as letras — não se espera o side pot ser dividido para virar a mão do all-in.
 
 Para entender como os side pots são montados e pagos quando alguém está all-in, veja [as regras de all-in e side pots](/pt/blog/holdem-all-in-rules); para potes divididos, veja as [regras de split pot e divisão do pote](/pt/blog/holdem-split-pot-rules).
 
@@ -166,7 +166,7 @@ A. O último jogador que fez uma ação agressiva (aposta ou aumento) na última
 
 **Q. Sou obrigado a mostrar as cartas se pagarem minha aposta no showdown?**
 
-A. Sim — se você foi o último a apostar ou aumentar no river, você mostra primeiro quando é pago. Se foi você quem pagou a aposta de alguém, pode dar muck com as cartas viradas para baixo depois de ver a mão dele, caso tenha perdido. Porém, na maioria dos clubes, qualquer jogador que recebeu cartas na mão pode pedir ao dealer para revelar uma mão paga que foi descartada.
+A. Sim — se você foi o último a apostar ou aumentar no river, você mostra primeiro quando é pago. Se foi você quem pagou a aposta de alguém, pode dar muck com as cartas viradas para baixo depois de ver a mão dele, caso tenha perdido. A exceção é o all-in: pela regra 16 da TDA quem pagou também precisa mostrar. E em torneio só pode pedir para ver uma mão quem ainda tem cartas ou já as mostrou — inviolável, apenas a do último agressor.
 
 **Q. Dá para dar muck no showdown sem mostrar?**
 

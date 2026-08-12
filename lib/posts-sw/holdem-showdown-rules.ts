@@ -57,9 +57,9 @@ Ndiyo — **kama umeshindwa**.
 
 Mara tu last aggressor anapoonyesha mkono wake, wachezaji wengine wanaweza:
 - **Kuonyesha mkono wao** kama wanadhani wanashinda
-- **Ku-muck karata chali (face-down)** kama wanaona wameshindwa — hakuna haja ya kufichua karata zako
+- **Ku-muck karata chali (face-down)** kama wanaona wameshindwa — hakuna haja ya kufichua karata zako. Lakini hii inatumika tu ilimradi hakuna aliye all-in: mara mchezaji anapokuwa all-in, TDA Rule 16 inataka mikono yote iliyo kwenye pot ionyeshwe, na hakuna anayeruhusiwa ku-muck
 
-==r:Lakini kuna kanuni moja muhimu ya kipekee:== kama bet yako ya river ilipewa call, yule aliye-call alilipa bei kamili ili kuona mkono wako. Mchezaji yeyote aliyegawiwa karata kwenye mkono huo anaweza kumwomba dila ageuze mkono uliopigwa muck ambao ulihusika kwenye showdown iliyolipwa (called) — kanuni ya **"I want to see that hand"** katika cardroom nyingi. (Usiichanganye na "show one, show all", inayomaanisha kwamba kama utaonyesha karata zako kwa hiari kwa mchezaji mmoja, kila mtu mezani anapata kuziona.)
+==r:Lakini kuna kanuni moja muhimu ya kipekee:== kama bet yako ya river ilipewa call, yule aliye-call alilipa bei kamili ili kuona mkono wako. Kumwomba dila ageuze mkono uliokwisha pigwa muck — hiyo ndiyo kanuni ya **"I want to see that hand"**. Kwenye mashindano, ==TDA Rule 18== inaichora kwa mipaka finyu: yeyote ambaye wakati wa showdown hana tena karata mkononi, au ali-muck karata zake chali, anapoteza haki ya kuomba. Haki hiyo haiwezi kunyimwa kwa yule tu aliye-call bet ya river na akaonyesha au akashikilia karata zake — na hata hapo, ni kwa mkono wa ==last aggressor== pekee, mkono aliolipia kuuona. Mengine yote ni uamuzi wa mkurugenzi wa mashindano; kwenye cash game cardroom nyingi hulegeza zaidi. (Usiichanganye na "show one, show all", inayomaanisha kwamba kama utaonyesha karata zako kwa hiari kwa mchezaji mmoja, kila mtu mezani anapata kuziona.)
 
 Kanuni ya kivitendo: ==ukiwa last aggressor wewe ndiye unayegeuza karata — hata bluff iliyopewa call.== Ku-muck karata zikiwa chini ni chaguo la aliye-call, baada ya kuona mkono wa aliyeweka bet. Ukiweka bet kisha uka-muck haraka unapoteza mara mbili: aliye-call bado anaweza kudai kuona mkono wako, na kwa kuwa karata ndizo huamua, pot nyingi zimetupwa na wachezaji ambao ace-high yao ilikuwa mbele.
 
@@ -89,7 +89,7 @@ Wakati mchezaji anaenda all-in na hakuna bet zaidi zinazowezekana, kwa kawaida k
 
 </div>
 
-Jambo la kuzingatia: kama kuna **side pot** (wachezaji wengine bado wana chipsi na wanaendelea ku-bet), side pot inatolewa kwanza — last aggressor kati ya hao wanaobeti anaonyesha kwanza — kisha pot kuu, ambapo mkono wa mchezaji wa all-in unaonyeshwa.
+Jambo la kuzingatia: kama kuna **side pot** (wachezaji wengine bado wana chipsi na wanaendelea ku-bet), side pot inalipwa kwanza, kisha pot kuu. Huo ni **mpangilio wa malipo**, hauhusiani na wakati wa kugeuza karata: mkono wa mchezaji wa all-in tayari uko wazi tangu dakika ambayo hakuna bet inayowezekana tena. Mfano wa TDA kwa Rule 16 unasema wazi — usisubiri side pot igawanywe ndipo ugeuze mkono wa aliye all-in.
 
 Kwa jinsi side pot inavyojengwa na kulipwa wachezaji wanapokuwa all-in, angalia [sheria za all-in na side pots](/sw/blog/holdem-all-in-rules); kwa pot zilizogawanywa, angalia sheria za split pot na chop.
 
@@ -166,7 +166,7 @@ A. Mchezaji wa mwisho aliyefanya hatua ya kushambulia (bet au raise) kwenye raun
 
 **Q. Je, lazima uonyeshe karata zako ukipewa call kwenye showdown?**
 
-A. Ndiyo — kama ulikuwa wa mwisho ku-bet au ku-raise kwenye river, lazima uonyeshe kwanza unapopewa call. Kama uli-call bet ya mtu mwingine, waweza ku-muck karata zako chali (face-down) baada ya kuona mkono wake kama umeshindwa. Hata hivyo, katika cardroom nyingi mchezaji yeyote aliyegawiwa karata kwenye mkono huo anaweza kumwomba dila afichue mkono uliolipwa (called) uliopigwa muck.
+A. Ndiyo — kama ulikuwa wa mwisho ku-bet au ku-raise kwenye river, lazima uonyeshe kwanza unapopewa call. Kama uli-call bet ya mtu mwingine, waweza ku-muck karata zako chali (face-down) baada ya kuona mkono wake kama umeshindwa. Kipekee ni all-in: kwa mujibu wa TDA Rule 16 hata aliye-call lazima aonyeshe karata zake. Na kwenye mashindano, anayeweza kuomba kuona mkono ni yule tu ambaye bado ana karata au ameshazionyesha — bila kupingwa, kwa mkono wa last aggressor pekee.
 
 **Q. Waweza ku-muck kwenye showdown bila kuonyesha?**
 

@@ -57,9 +57,9 @@ Da — **dacă ai pierdut**.
 
 Odată ce ultimul agresor își arată mâna, ceilalți jucători pot fie:
 - **Să-și arate mâna** dacă cred că au câștigat
-- **Să facă muck cu fața în jos** dacă văd că au pierdut — nu e nevoie să-ți dezvălui cărțile
+- **Să facă muck cu fața în jos** dacă văd că au pierdut — nu e nevoie să-ți dezvălui cărțile. Asta e valabil doar cât timp nimeni nu a fost all-in: din clipa în care un jucător e all-in, regula 16 TDA cere ca toate mâinile din pot să fie arătate și nimeni nu mai poate face muck
 
-==r:Dar există o excepție importantă:== dacă pariul tău de la river a fost plătit, cel care a plătit a dat prețul întreg ca să-ți vadă mâna. Orice jucător căruia i s-au împărțit cărți în acea mână poate cere dealerului să întoarcă o mână ajunsă în muck, dar implicată într-un showdown plătit — regula **„I want to see that hand"** din majoritatea sălilor. (Să nu o confunzi cu „show one, show all", care înseamnă că, dacă îți arăți cărțile de bunăvoie unui jucător, toată masa are dreptul să le vadă.)
+==r:Dar există o excepție importantă:== dacă pariul tău de la river a fost plătit, cel care a plătit a dat prețul întreg ca să-ți vadă mâna. Să-i ceri dealerului să întoarcă o mână ajunsă în muck este regula **„I want to see that hand"**. În turneu, regula 18 TDA o îngustează: cine nu mai are cărți la showdown, sau le-a dat cu fața în jos, pierde dreptul de a cere; dreptul e de neatins doar pentru cel care a plătit pariul de la river și și-a arătat sau păstrat cărțile, și doar asupra mâinii ultimului agresor. Restul rămâne la latitudinea directorului de turneu, iar la cash multe săli sunt mai permisive. (Să nu o confunzi cu „show one, show all", care înseamnă că, dacă îți arăți cărțile de bunăvoie unui jucător, toată masa are dreptul să le vadă.)
 
 Regulă practică: ==ca ultim agresor tu întorci cărțile, inclusiv la cacealmaua plătită.== Muck-ul cu fața în jos e opțiunea celui care plătește, după ce a văzut mâna celui care a pariat. Dacă ai pariat și faci muck repede pierzi de două ori: cel care a plătit îți poate cere mâna oricum și, pentru că vorbesc cărțile, destule poturi au fost aruncate cu un as mare care era în față.
 
@@ -89,7 +89,7 @@ Când un jucător merge all-in și nu mai sunt posibile pariuri, de obicei se di
 
 </div>
 
-O nuanță: dacă există un **side pot** (alți jucători mai au jetoane și continuă să parieze), side pot-ul se acordă primul — arată primul ultimul agresor dintre acei jucători cu jetoane — și apoi potul principal, unde se arată mâna jucătorului mers all-in.
+O nuanță: dacă există un **side pot** (alți jucători mai au jetoane și continuă să parieze), side pot-ul se acordă primul, apoi potul principal. Asta e **ordinea plății** și nu are legătură cu momentul întoarcerii cărților: mâna celui all-in este descoperită din clipa în care nu mai e posibil niciun pariu. Ilustrația TDA la regula 16 o spune textual — nu se așteaptă împărțirea side pot-ului ca să fie întoarsă mâna celui all-in.
 
 Pentru cum se formează și se plătesc side pot-urile când jucătorii sunt all-in, vezi [regulile all-in-ului și side pot-urile](/ro/blog/holdem-all-in-rules); pentru poturile împărțite se aplică regulile de split pot.
 
@@ -166,7 +166,7 @@ A. Ultimul jucător care a făcut o acțiune agresivă (a pariat sau a mărit) �
 
 **Q. Trebuie să-ți arăți cărțile dacă ești plătit la showdown?**
 
-A. Da — dacă ai fost ultimul care a pariat sau a mărit la river, trebuie să arăți primul când ești plătit. Dacă tu ai plătit pariul altcuiva, poți face muck cu fața în jos după ce i-ai văzut mâna, dacă ai pierdut. Totuși, în majoritatea sălilor, orice jucător căruia i s-au împărțit cărți în acea mână poate cere dealerului să dezvăluie o mână plătită care a fost dată la muck.
+A. Da — dacă ai fost ultimul care a pariat sau a mărit la river, trebuie să arăți primul când ești plătit. Dacă tu ai plătit pariul altcuiva, poți face muck cu fața în jos după ce i-ai văzut mâna, dacă ai pierdut. Excepția e all-in-ul: conform regulii 16 TDA și cel care plătește trebuie să arate. Iar în turneu poate cere să vadă o mână doar cine mai are cărți sau le-a arătat — de neatins, numai mâna ultimului agresor.
 
 **Q. Poți face muck la showdown fără să arăți?**
 

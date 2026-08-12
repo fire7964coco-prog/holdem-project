@@ -57,9 +57,9 @@ Sì — **se hai perso**.
 
 Una volta che l'ultimo aggressore mostra la sua mano, gli altri giocatori possono:
 - **Mostrare la propria mano** se pensano di vincere
-- **Passarla coperta nel muck** se vedono di aver perso — non serve rivelare le tue carte
+- **Passarla coperta nel muck** se vedono di aver perso — non serve rivelare le tue carte. Vale però solo finché nessuno è andato all-in: appena un giocatore è all-in, la regola 16 TDA impone di mostrare tutte le mani del piatto e nessuno può passare
 
-==r:Ma c'è un'eccezione importante:== se la tua puntata al river è stata pagata, chi ha pagato ha versato il prezzo pieno per vedere la tua mano. Qualsiasi giocatore che ha ricevuto le carte in quella mano può chiedere al dealer di girare una mano finita nel muck ma coinvolta in uno showdown pagato — la regola del **"I want to see that hand"** in gran parte delle sale. (Da non confondere con "show one, show all", che significa che se mostri le tue carte volontariamente a un giocatore, tutto il tavolo ha diritto di vederle.)
+==r:Ma c'è un'eccezione importante:== se la tua puntata al river è stata pagata, chi ha pagato ha versato il prezzo pieno per vedere la tua mano. Chiedere al dealer di girare una mano finita nel muck è la regola del **"I want to see that hand"**. Nei tornei la regola 18 TDA la restringe: chi allo showdown non ha più carte, o le ha passate coperte, perde il diritto di chiederlo; il diritto è intoccabile solo per chi ha pagato la puntata al river e ha mostrato o trattenuto le proprie carte, e solo sulla mano dell'ultimo aggressore. Tutto il resto è a discrezione del direttore di torneo, e nel cash molte sale sono più larghe di manica. (Da non confondere con "show one, show all", che significa che se mostri le tue carte volontariamente a un giocatore, tutto il tavolo ha diritto di vederle.)
 
 Regola pratica: ==da ultimo aggressore giri tu le carte, anche sul bluff pagato.== Passare coperto è l'opzione di chi paga, dopo aver visto la mano di chi ha puntato. Se punti e passi in fretta perdi due volte: chi ha pagato può pretendere comunque la tua mano e, dato che parlano le carte, più di un piatto è stato buttato con un asso alto che era avanti.
 
@@ -89,7 +89,7 @@ Quando un giocatore va all-in e non sono più possibili puntate, di solito si di
 
 </div>
 
-Una sfumatura: se c'è un **side pot** (altri giocatori hanno ancora fiches e continuano a puntare), il side pot viene assegnato per primo — mostra per primo l'ultimo aggressore tra quei giocatori con fiches — e poi il piatto principale, dove viene mostrata la mano del giocatore andato all-in.
+Una sfumatura: se c'è un **side pot** (altri giocatori hanno ancora fiches e continuano a puntare), il side pot viene assegnato per primo e poi il piatto principale. Questo è l'**ordine di pagamento** e non c'entra con il momento in cui si girano le carte: la mano di chi è all-in è già scoperta dall'istante in cui nessuno può più puntare. L'illustrazione TDA alla regola 16 lo dice testualmente — non si aspetta la divisione del side pot per girare la mano dell'all-in.
 
 Per capire come si formano e si pagano i side pot quando ci sono giocatori all-in, guarda [le regole dell'all-in e i side pot](/it/blog/holdem-all-in-rules); per i piatti divisi valgono le regole dello split pot.
 
@@ -166,7 +166,7 @@ A. L'ultimo giocatore che ha fatto un'azione aggressiva (puntare o rilanciare) n
 
 **Q. Devi mostrare le carte se ti pagano allo showdown?**
 
-A. Sì — se sei stato l'ultimo a puntare o rilanciare al river, devi mostrare per primo quando ti pagano. Se hai pagato la puntata di un altro, puoi passare le carte coperte dopo aver visto la sua mano se hai perso. Detto questo, in gran parte delle sale qualsiasi giocatore che ha ricevuto le carte in quella mano può chiedere al dealer di rivelare una mano pagata che è stata passata nel muck.
+A. Sì — se sei stato l'ultimo a puntare o rilanciare al river, devi mostrare per primo quando ti pagano. Se hai pagato la puntata di un altro, puoi passare le carte coperte dopo aver visto la sua mano se hai perso. L'eccezione è l'all-in: per la regola 16 TDA anche chi paga deve mostrare. E nei tornei può chiedere di vedere una mano solo chi ha ancora le carte o le ha mostrate — in modo intoccabile, solo quella dell'ultimo aggressore.
 
 **Q. Puoi passare le carte allo showdown senza mostrarle?**
 

@@ -57,9 +57,9 @@ Oui — **si tu as perdu**.
 
 Une fois que le dernier relanceur a montré sa main, les autres joueurs peuvent :
 - **Montrer leur main** s'ils pensent gagner
-- **La jeter face cachée au muck** s'ils voient qu'ils ont perdu — pas besoin de dévoiler tes cartes
+- **La jeter face cachée au muck** s'ils voient qu'ils ont perdu — pas besoin de dévoiler tes cartes. Cela ne vaut toutefois que si personne n'était à tapis : dès qu'un joueur est all-in, la règle 16 de la TDA impose d'étaler toutes les mains du pot et plus personne ne peut jeter
 
-==r:Mais il y a une exception importante :== si ta mise à la rivière a été payée, celui qui a suivi a mis le prix fort pour voir ta main. Tout joueur ayant reçu des cartes dans le coup peut demander au donneur de retourner une main jetée au muck qui a fait partie d'un abattage payé — la règle du **« I want to see that hand »** dans la plupart des cardrooms. (Ne la confonds pas avec « show one, show all » : si tu montres volontairement tes cartes à un joueur, toute la table a le droit de les voir.)
+==r:Mais il y a une exception importante :== si ta mise à la rivière a été payée, celui qui a suivi a mis le prix fort pour voir ta main. Demander au donneur de retourner une main jetée au muck, c'est la règle du **« I want to see that hand »**. En tournoi, la règle 18 de la TDA la resserre : celui qui n'a plus de cartes à l'abattage, ou qui a jeté face cachée, perd le droit de le demander ; ce droit n'est inaliénable que pour celui qui a payé la mise de la rivière et qui a étalé ou conservé ses cartes, et seulement sur la main du dernier relanceur. Le reste relève du directeur de tournoi, et en cash game beaucoup de cardrooms sont plus souples. (Ne la confonds pas avec « show one, show all » : si tu montres volontairement tes cartes à un joueur, toute la table a le droit de les voir.)
 
 Règle pratique : ==en tant que dernier relanceur, c'est toi qui retournes — même sur un bluff payé.== Jeter face cachée, c'est l'option de celui qui paie, une fois qu'il a vu la main du mieur. Si tu as misé et que tu jettes vite, tu perds deux fois : celui qui a payé peut exiger ta main de toute façon et, puisque ce sont les cartes qui parlent, plus d'un pot a été jeté avec un as hauteur qui était devant.
 
@@ -89,7 +89,7 @@ Quand un joueur fait tapis et qu'aucune mise n'est plus possible, on déroule en
 
 </div>
 
-Une nuance : s'il y a un **pot annexe** (d'autres joueurs ont encore des jetons et continuent de miser), le pot annexe est attribué en premier — le dernier relanceur parmi ces joueurs encore en jeu montre en premier — puis vient le pot principal, où la main du joueur à tapis est montrée.
+Une nuance : s'il y a un **pot annexe** (d'autres joueurs ont encore des jetons et continuent de miser), le pot annexe est attribué en premier, puis le pot principal. C'est l'**ordre de paiement** : il n'a rien à voir avec le moment où les cartes sont retournées. La main du joueur à tapis est déjà face visible dès l'instant où plus aucune mise n'est possible. L'illustration de la TDA à la règle 16 le dit mot pour mot : on n'attend pas que le pot annexe soit réparti pour retourner la main du joueur à tapis.
 
 Pour voir comment les pots annexes se forment et se paient quand des joueurs sont à tapis, vois [les règles de l'all-in et des pots annexes](/fr/blog/holdem-all-in-rules) ; pour les pots partagés, il y a les règles du partage du pot.
 
@@ -166,7 +166,7 @@ A. Le dernier joueur à avoir fait une action agressive (miser ou relancer) au d
 
 **Q. Es-tu obligé de montrer tes cartes si on te paie à l'abattage ?**
 
-A. Oui — si tu étais le dernier à miser ou relancer à la rivière, tu dois montrer en premier quand on te paie. Si tu as payé la mise d'un autre, tu peux jeter tes cartes face cachée après avoir vu sa main si tu as perdu. Cela dit, dans la plupart des cardrooms, tout joueur ayant reçu des cartes dans le coup peut demander au donneur de révéler une main payée qui a été jetée au muck.
+A. Oui — si tu étais le dernier à miser ou relancer à la rivière, tu dois montrer en premier quand on te paie. Si tu as payé la mise d'un autre, tu peux jeter tes cartes face cachée après avoir vu sa main si tu as perdu. L'exception, c'est le tapis : selon la règle 16 de la TDA, celui qui paie doit lui aussi étaler sa main. Et en tournoi, seul un joueur qui a encore ses cartes ou les a étalées peut demander à voir une main — de façon inaliénable, uniquement celle du dernier relanceur.
 
 **Q. Peux-tu jeter tes cartes à l'abattage sans les montrer ?**
 

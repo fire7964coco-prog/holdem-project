@@ -57,9 +57,9 @@ Evet — **kaybettiysen**.
 
 Son agresör elini gösterdikten sonra, diğer oyuncular şunlardan birini yapabilir:
 - **Elini gösterir** — kazandığını düşünüyorsa
-- **Yüzü kapalı muck'a atar** — kaybettiğini görüyorsa, kartlarını açmasına gerek yok
+- **Yüzü kapalı muck'a atar** — kaybettiğini görüyorsa, kartlarını açmasına gerek yok. Ama bu yalnızca kimse all-in değilken geçerlidir: bir oyuncu all-in olduğu anda TDA 16. kural potdaki bütün ellerin açılmasını şart koşar ve kimse muck yapamaz
 
-==r:Ama önemli bir istisna var:== river'daki bahsin call edildiyse, call eden senin elini görmek için tam bedeli ödedi. Ele dağıtılmış olan herhangi bir oyuncu, call edilmiş bir showdown'a dahil olan muck'a atılmış bir eli krupiyeye açtırmayı isteyebilir — çoğu casinoda geçen **"o eli görmek istiyorum"** kuralı. (Bunu "birine göster, herkese göster" kuralıyla karıştırma — o kural, kartlarını gönüllü olarak bir oyuncuya gösterirsen masadaki herkesin de görme hakkı kazanması demektir.)
+==r:Ama önemli bir istisna var:== river'daki bahsin call edildiyse, call eden senin elini görmek için tam bedeli ödedi. Muck'a atılmış bir eli krupiyeye açtırmayı istemek, işte bu **"o eli görmek istiyorum"** kuralıdır. Turnuvada ==TDA 18. kural== sınırı dar çizer: showdown'da elinde kart kalmayan ya da kapalı muck yapan kişi isteme hakkını yitirir. Bu hak yalnızca river bahsini call eden ve kartlarını açan ya da elinde tutan oyuncu için dokunulmazdır, o da sadece parasını ödediği ==son agresörün== eli için. Gerisi turnuva direktörünün takdirindedir; cash oyunlarda birçok salon kuralı daha geniş uygular. (Bunu "birine göster, herkese göster" kuralıyla karıştırma — o kural, kartlarını gönüllü olarak bir oyuncuya gösterirsen masadaki herkesin de görme hakkı kazanması demektir.)
 
 Pratik kural: ==son agresörsen kartları sen çevirirsin — call edilen blöfte de.== Kapalı muck, bahisçinin elini gördükten sonra call edenin seçeneğidir. Bahsi sen yapıp hızlıca muck edersen iki kez kaybedersin: call eden zaten elini görmeyi talep edebilir ve kartlar konuştuğu için, as yükseği aslında önde olan nice pot çöpe atılmıştır.
 
@@ -89,7 +89,7 @@ Bir oyuncu all-in gittiğinde ve artık bahis yapmak mümkün olmadığında, ka
 
 </div>
 
-Bir ince nokta: eğer bir **yan pot (side pot)** varsa (diğer oyuncuların hâlâ çipi var ve bahse devam ediyorlar), önce yan pot dağıtılır — o canlı bahisçiler arasındaki son agresör önce gösterir — sonra ana pot gelir, orada da all-in oyuncunun eli gösterilir.
+Bir ince nokta: eğer bir **yan pot (side pot)** varsa (diğer oyuncuların hâlâ çipi var ve bahse devam ediyorlar), önce yan pot, sonra ana pot dağıtılır. Bu **ödeme sırasıdır** ve kartların ne zaman açıldığıyla ilgisi yoktur: all-in oyuncunun eli, artık bahis mümkün olmadığı andan itibaren zaten açıktır. TDA'nın 16. kurala ilişkin örneği bunu açıkça söyler — all-in oyuncunun elini çevirmek için yan potun paylaşılmasını bekleme.
 
 Oyuncular all-in olduğunda yan potların nasıl oluşup nasıl ödendiği için [all-in kuralları ve yan potlar](/tr/blog/holdem-all-in-rules) yazısına bak; bölünen potlar içinse split pot ve chop kurallarına.
 
@@ -166,7 +166,7 @@ A. Son bahis turunda agresif aksiyon yapan (bahis ya da yükseltme) son oyuncu �
 
 **Q. Showdown'da call edilirsen kartlarını göstermek zorunda mısın?**
 
-A. Evet — river'da son bahis yapan ya da yükselten sensen, call edildiğinde önce sen göstermek zorundasın. Başkasının bahsini call ettiysen, elini gördükten sonra kaybettiysen yüzü kapalı muck yapabilirsin. Ancak çoğu casinoda o ele dağıtılmış olan herhangi bir oyuncu, muck'a atılmış call edilmiş bir eli krupiyenin açmasını isteyebilir.
+A. Evet — river'da son bahis yapan ya da yükselten sensen, call edildiğinde önce sen göstermek zorundasın. Başkasının bahsini call ettiysen, elini gördükten sonra kaybettiysen yüzü kapalı muck yapabilirsin. İstisna all-in'dir: TDA 16. kurala göre call eden de elini açmak zorundadır. Turnuvada ise bir eli görmeyi yalnızca hâlâ kartı olan ya da kartlarını açmış oyuncu isteyebilir — dokunulmaz biçimde, sadece son agresörün eli için.
 
 **Q. Showdown'da göstermeden muck yapabilir misin?**
 

@@ -57,9 +57,9 @@ Tak — **jeśli przegrałeś**.
 
 Kiedy ostatni agresor pokaże swój układ, reszta graczy może:
 - **Pokazać swój układ**, jeśli myślą, że wygrywają
-- **Zrzucić karty zakryte do muck**, jeśli widzą, że przegrali — nie trzeba odsłaniać swoich kart
+- **Zrzucić karty zakryte do muck**, jeśli widzą, że przegrali — nie trzeba odsłaniać swoich kart. Dotyczy to jednak tylko sytuacji, gdy nikt nie był all-in: gdy któryś gracz jest all-in, zasada 16 TDA nakazuje odsłonić wszystkie układy w puli i nikt nie może zrzucić
 
-==r:Jest jednak jeden ważny wyjątek:== jeśli twój zakład na riverze został sprawdzony, sprawdzający zapłacił pełną cenę za obejrzenie twojego układu. Każdy gracz, któremu rozdano karty w tym rozdaniu, może poprosić rozdającego, by odwrócił zrzucony układ, który był częścią sprawdzonego showdownu — zasada **„I want to see that hand"** w większości pokojów pokerowych. (Nie myl jej z „show one, show all", która mówi, że jeśli dobrowolnie pokażesz karty jednemu graczowi, cały stół ma prawo je zobaczyć.)
+==r:Jest jednak jeden ważny wyjątek:== jeśli twój zakład na riverze został sprawdzony, sprawdzający zapłacił pełną cenę za obejrzenie twojego układu. Prośba, by rozdający odwrócił zrzucony układ, to zasada **„I want to see that hand"**. W turnieju zasada 18 TDA mocno ją zawęża: kto na showdownie nie ma już kart albo zrzucił je zakryte, traci prawo do takiej prośby; nienaruszalne jest ono tylko dla gracza, który sprawdził zakład na riverze i odsłonił lub zachował swoje karty — i tylko wobec układu ostatniego agresora. O reszcie decyduje dyrektor turnieju, a w grach cash wiele pokojów podchodzi do tego swobodniej. (Nie myl jej z „show one, show all", która mówi, że jeśli dobrowolnie pokażesz karty jednemu graczowi, cały stół ma prawo je zobaczyć.)
 
 Zasada praktyczna: ==jako ostatni agresor to ty odkrywasz — także zblefowany układ, który sprawdzono.== Zrzucenie kart zakrytych to opcja sprawdzającego, już po obejrzeniu układu betującego. Jeśli betowałeś i szybko zrzucasz, tracisz podwójnie: sprawdzający i tak może zażądać twoich kart, a ponieważ liczą się karty, niejedna pula poszła do kosza z asem wysokim, który prowadził.
 
@@ -89,7 +89,7 @@ Kiedy gracz idzie all-in i nie ma już możliwości dalszego betowania, zwykle d
 
 </div>
 
-Jeden niuans: jeśli jest **pula boczna** (inni gracze wciąż mają żetony i dalej betują), pula boczna przyznawana jest pierwsza — najpierw odkrywa ostatni agresor wśród tych aktywnych graczy — a potem główna pula, gdzie pokazuje się układ gracza all-in.
+Jeden niuans: jeśli jest **pula boczna** (inni gracze wciąż mają żetony i dalej betują), pula boczna przyznawana jest pierwsza, a potem główna. To **kolejność wypłaty** i nie ma nic wspólnego z momentem odkrycia kart: układ gracza all-in leży odkryty od chwili, gdy żaden zakład nie jest już możliwy. Ilustracja TDA do zasady 16 mówi to wprost — nie czeka się z odwróceniem układu all-ina na podział puli bocznej.
 
 Jak buduje się i wypłaca pule boczne, gdy gracze są all-in, znajdziesz w [zasadach all-in i pul bocznych](/pl/blog/holdem-all-in-rules); w sprawie dzielonych pul obowiązują zasady split pot.
 
@@ -166,7 +166,7 @@ A. Karty musi odkryć najpierw ten gracz, który jako ostatni wykonał akcję ag
 
 **Q. Czy musisz pokazać karty, jeśli zostałeś sprawdzony przy showdownie?**
 
-A. Tak — jeśli byłeś ostatnim, który postawił lub przebił na riverze, musisz odkryć pierwszy, gdy cię sprawdzą. Jeśli sam sprawdziłeś zakład kogoś innego, możesz zrzucić karty zakryte do muck po zobaczeniu jego układu, o ile przegrałeś. Jednak w większości pokojów pokerowych każdy gracz, któremu rozdano karty w tym rozdaniu, może poprosić rozdającego o odsłonięcie sprawdzonego układu, który zrzucono do muck.
+A. Tak — jeśli byłeś ostatnim, który postawił lub przebił na riverze, musisz odkryć pierwszy, gdy cię sprawdzą. Jeśli sam sprawdziłeś zakład kogoś innego, możesz zrzucić karty zakryte do muck po zobaczeniu jego układu, o ile przegrałeś. Wyjątkiem jest all-in: według zasady 16 TDA sprawdzający również musi odsłonić karty. A w turnieju o pokazanie układu może poprosić tylko ten, kto wciąż ma karty albo je odsłonił — nienaruszalnie wyłącznie o układ ostatniego agresora.
 
 **Q. Czy możesz zrzucić karty przy showdownie bez pokazywania?**
 
