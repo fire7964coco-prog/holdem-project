@@ -3,6 +3,38 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-08-12 (6) — **미러 2탄: split-pot · reading-the-board · betting-actions 캡** (`12d21fd` `97e4657`)
+
+### split-pot (7 로케일 18자리) — D유형 1건
+
+- **:::tip 결론이 앞 두 문장의 계산과 정반대**였다. EV(call) = q·(P/2) − (1−q)·B ≥ 0 → q ≥ 2B/(P+2B)
+  → 팟사이즈 **2/3** · 하프팟 **1/2**. 상대가 «1/3 넘게» 진짜 핸드면 폴드가 맞는데
+  「거의 항상일 때만 폴드」라고 가르쳤다. **리버에서 그 조건은 오히려 흔하다**
+- **이미지 alt** — 「스페이드 로열 = 하트 로열」은 홀덤에서 성립 불가(보드 3+3=6장)이고
+  **이미지를 직접 열어 보니 실제 내용도 다르다**(K♦K♣Q♥Q♦J♠ · K♠7♣ vs K♥2♦).
+  alt만 실제대로 고쳤다 — 18언어 공용 자산이라 재제작 불필요
+- **풀하우스 FAQ** — ⚠ **id·ja·pt는 이미 옳았다**(FAQ 문안이 다름) → 4 로케일만 해당
+
+### reading-the-board (7 로케일 18자리)
+
+- **playing the board 공개 의무 누락**(WSOP 75 / TDA 19) — 「내 홀카드는 쓸모없으니 안 보여줘도
+  된다」가 정확히 초보의 오해다. 기존 서술은 «참이지만 불완전»이라 **덧붙이는 정정이 맞다**
+- **보드 스트레이트 = 스플릿**에 플러시 예외 누락 → 4 로케일(id·ja·pt엔 이 FAQ 없음)
+- **「7장 중 4장 = A하이」** — 참인 건 「4장 ≠ 플러시」뿐. 반례 A♠K♠ + Q♠J♠10♦4♥2♣ = 브로드웨이
+
+### betting-actions Fixed-Limit 캡 (25 로케일 × 2자리)
+
+🔴 **숫자보다 해제 조건이 더 큰 오류였다.** Rule 100.b 축어:
+「…even if there are only two Participants remaining **in the hand**. Once the Tournament
+becomes heads-up (only two Participants remain in the **entire Tournament**), this rule does not apply.」
+→ 글은 「핸드에 둘만 남으면 해제」라고 **룰북이 명시적으로 부정하는 내용**을 적고 있었다.
+「3 raises」 grep **잔존 0**. 캐시 숫자는 단정하지 않았다(RRoP 호스트 문제로 1차 출처 부재).
+
+### 이번에도 「N곳」 가정이 깨졌다
+
+split-pot FAQ **4** · 보드 스트레이트 FAQ **4** · 나머지 **7** · 캡 **25**.
+로케일마다 FAQ 구성이 달라 **개별 판정이 유일한 방법**이다.
+
 ## 2026-08-12 (5) — **showdown-rules 미러 전파 완료** (`ca4a424` `0ad4f95` `3f73442`)
 
 de R1~R9에서 닫은 결함이 **EN 마스터 발원**임을 확인하고 **25 로케일 × 9자리**를 전부 닫았다.

@@ -68,19 +68,22 @@ Session 6(Turniere 9편)로 마지막 클러스터를 닫았다. 경위는 `WORK
 `showdown-rules`에서 **EN 마스터 발원이 실증됐으므로** 나머지도 같다고 보고 접근한다.
 **단 「8곳/25곳」을 가정하지 말 것** — 글마다 존재하는 로케일 수가 다르다.
 
-| 글 | 존재 로케일 | de에서 닫은 결함(= 미러 후보) |
+| 글 | 존재 로케일 | 상태 |
 |---|---:|---|
-| `holdem-betting-actions` | **25** | Fixed-Limit 캡 숫자·해제조건 · Non-Standard Fold · 무언의 칩(Rule 90.a) · String Bet 용어 · One-Chip · BB 체크 표현 3곳 · Rule 95 |
-| `holdem-hand-rankings` | **13** | 용어 동일시 · 「대부분의 팟은 원페어」(43,82% < 50%) · 무늬 서열 한정 |
-| `holdem-equity` | 8 | 「Equity = Win%」 6곳 · AK vs AQ 표행(73/23 → **74/26**) |
-| `holdem-implied-odds` | 8 | 국면 라벨 3곳 · 「Flop- und Turn-Konzept」 |
-| `holdem-flush-vs-straight` | 8 | 「2배」(7장은 **1,53배**) 4곳 · 플러시 스플릿 누락 · 하트 최상단 |
-| `holdem-split-pot-rules` | 8 | **:::tip 빈도 결론(D유형)** · 이미지 alt · 풀하우스 FAQ |
-| `holdem-reading-the-board` | 8 | playing the board **공개 의무 누락**(Rule 75) · 보드 스트레이트 플러시 예외 |
-| `holdem-outs` | 8 | FAQ 2장 계산 전제 누락 |
+| ~~`holdem-split-pot-rules`~~ | 8 | ✅ **완료** — :::tip(D유형) · alt · 풀하우스 FAQ |
+| ~~`holdem-reading-the-board`~~ | 8 | ✅ **완료** — Rule 75 · 보드 스트레이트 플러시 예외 · 「4장=A하이」 |
+| `holdem-betting-actions` | **25** | 🟡 **캡 완료**(본문·FAQ, 「3 raises」 잔존 0) · 🔴 **잔여**: Non-Standard Fold(84) · 무언의 칩(90.a) · One-Chip(97) · String Bet(90.d vs 103) · BB 체크 표현 **4곳** — EN·de는 전부 완료, **로케일 23곳 남음** |
+| `holdem-hand-rankings` | **13** | 🔴 용어 동일시 · 「대부분의 팟은 원페어」(43,82% < 50%) · 무늬 서열 한정(**토너먼트 배제** 주의) |
+| `holdem-equity` | 8 | 🔴 「Equity = Win%」 6곳 · AK vs AQ 표행(73/23 → **74/26**) |
+| `holdem-implied-odds` | 8 | 🔴 국면 라벨 3곳 · 「Flop- und Turn-Konzept」 |
+| `holdem-flush-vs-straight` | 8 | 🔴 「2배」(7장은 **1,53배**) 4곳 · 플러시 스플릿 누락 · 하트 최상단 |
+| `holdem-outs` | 8 | 🔴 FAQ 2장 계산 전제 누락 |
 
-🔴 **다음 우선순위 = `split-pot` :::tip(D유형) → `reading-the-board` Rule 75 → `betting-actions`.**
-앞의 둘은 실전 손해이고, 세 번째는 25 로케일짜리다.
+🔴 **다음 = `betting-actions` 잔여(23 로케일) → `equity`/`flush-vs-straight`(수치라 검산 필요) → `hand-rankings`.**
+
+⚠ **「N곳」을 가정하지 마라 — 이번에도 계속 깨졌다.** split-pot 풀하우스 FAQ는 **4곳**
+(id·ja·pt는 **이미 옳았다**), 보드 스트레이트 FAQ도 **4곳**(id·ja·pt엔 그 FAQ가 없다),
+캡은 **25곳**. 로케일마다 FAQ 구성이 다르다.
 
 ⚙ **미러 작업 방법(이번에 확립)**: ①EN 마스터에서 자리 특정 → ②전 로케일 **동일 상대행**에서
 원문 추출(구조가 평행하다) → ③**로케일별 개별 작성**(기존 어휘 재사용) → ④결함 문자열 **grep 잔존 0** 확인.
