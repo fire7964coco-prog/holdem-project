@@ -55,8 +55,28 @@ Session 6(Turniere 9편)로 마지막 클러스터를 닫았다. 경위는 `WORK
 |---|---|---|---|
 | 1 | **§4 RISKY 잔여 7편** | de | `texas-…-beginners` 3 · `probability` 3 · `all-in-rules` 2 · `pot-odds` 2 · `drawing-odds` 4 · `game-order` 1 · `blind-meaning` 1 |
 | 2 | **§6 축 B** | de | 아래 B1~B7 (이름표 유형 = 최대 ROI) |
-| 3 | **3층 적대 QA** | de 9편 | R1~R9 편집분 미실행 — **에이전트 호출은 사장님 요청 시에만** 돌린다 |
+| 3 | ~~3층 적대 QA~~ | ~~de 9편~~ | ✅ **완료 2026-08-12** (`345373f`) — 4렌즈 · 70자리 반영. 경위 = WORKLOG (3) |
 | 4 | R1~R9 **타 로케일 미러** | 미실측 | de만 닫았다. EN 마스터 발원 결함이면 24 로케일에 살아 있다 |
+| 5 | **적대 QA가 남긴 «코퍼스 전체» 항목** | de 42편 | 아래 표 — 전부 **9편 밖으로 번져 이번 커밋에서 뺐다** |
+
+### 적대 QA 잔여 — 클러스터·코퍼스 단위라 별도 판단 (2026-08-12)
+
+| 항목 | 실측 | 왜 이번에 안 했나 |
+|---|---|---|
+| `rabattieren` / `Rabatt` | **13곳 / 4편**(outs 5 · position-play 4 · limping 3 · strategy 1) | 네이티브: 독일어에서 **상거래 할인 전용어**라 아웃츠에 쓰면 웃긴다(`abwerten`·`discounten`이 실사용). 하우스 표준으로 굳어 있어 **반만 바꾸면 더 나쁘다** |
+| `Gewinnspieler` | **잔여 2곳**(`ept-barcelona-2026-guide` · `holdem-cooler`) | 독일어에 없는 조어(검수장 §6 B6). `outs` 2곳은 「erfolgreiche Spieler」로 정정 완료 |
+| `Side Pot` ↔ `Nebenpot` | betting-actions 4 · showdown 10 vs **split-pot 18** · **readnext 카드 제목까지 갈림** | 독일 실사용은 압도적 `Side Pot`. 첫 등장만 `Side Pot (Nebenpot)` 병기 권고 |
+| 드로 라벨 | `Gutshot-Straße`·`Open-Ended-Straße`(equity·implied-odds) vs `Gutshot (Inside Straight)`·`Beidseitig offener Straßendraw`(outs) | 드로 표에 `-Straße`는 **완성된 족보로 오독**된다. outs 표기가 정답 |
+| `Leaks` ↔ `Lecks` | equity 1곳만 `Leaks`, 나머지 하우스 표준 `Lecks` | 1낱말이지만 어느 쪽으로 통일할지가 판단 |
+| 🔴 `holdem-tiebreak-rules:229` | 「ungerader Chip」 = **오역**(홀수 칩 아님, 나머지 칩) | 9편 밖. `hand-rankings`는 「überzähliger Chip」으로 정정했다 |
+| `outs` 19,1% ↔ 19,6% | 같은 글에 나란히 있고 **둘 다 맞다**(플랍→턴 9/47 · 턴→리버 9/46) | 사실오류 아님. 한 줄 단서를 붙일지가 판단 |
+| WSOP Rule 96.a | 연속 올인 예외가 `betting-actions`에 없다 | 누락이지 오류 아님 |
+
+🔴 **오탐 2건은 기록해 둔다 — 다음 렌즈도 같은 걸 지적한다:**
+① **통화 `€10` → `10 €`**(21곳) — DIN 5008로는 네이티브가 옳지만 **`€` 선행이 정본**이다
+(2026-08-11 확정 · 코퍼스 EPT `€5.300`과 동형). **정본을 모르는 렌즈는 표준을 결함으로 본다** →
+적대 QA 프롬프트의 «의도적 제외 목록»에 **통화 표기**를 넣어라.
+② `equity` 하프팟 flushdraw 35% — 바로 다음 문단이 그 전제를 뒤집는 **의도적 구성**이다.
 
 ### R1~R9에서 남길 교훈 (다음 세션이 같은 함정에 빠진다)
 
@@ -108,7 +128,7 @@ Session 6(Turniere 9편)로 마지막 클러스터를 닫았다. 경위는 `WORK
 | `check:hreflang` | 481페이지 · 50세트 · 🔴 0건 |
 | 미러 드리프트 | de: 🔴 **3** · 🟠 추적불가 **7**편 (불변) |
 | de 질문형 H2 | 42편 전 클러스터 경화 완료 |
-| 적대 QA | ✅ 경화분 3렌즈 완료(`24c1657`) · 🔴 **R1~R9 편집분은 미실행** |
+| 적대 QA | ✅ 경화분 3렌즈(`24c1657`) + ✅ **R1~R9분 4렌즈 완료·반영**(`345373f`) |
 | 지역 커버리지 | ✅ 베를린·NRW 3곳·바이에른 9곳(SBPM)·King's·CAPT·스위스 — 1차출처 + 확인일 병기 |
 
 > 📚 상시 함정·렌즈 운용 = `REVIEW-PROTOCOL.md` 맨 아래 · 다국어 경화 교훈 = `docs/lessons-i18n-hardening.md`.
