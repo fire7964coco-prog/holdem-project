@@ -61,7 +61,7 @@ Una vez que el último agresor enseña su mano, el resto de jugadores puede:
 
 ==r:Pero hay una excepción importante:== si tu apuesta del river fue pagada, el que pagó puso el precio completo por ver tu mano. Cualquier jugador que recibió cartas en esa mano puede pedirle al dealer que dé la vuelta a una mano tirada al muck que estuvo involucrada en un showdown pagado — la regla de **"I want to see that hand"** en la mayoría de los casinos. (No la confundas con "show one, show all", que significa que si enseñas tus cartas voluntariamente a un jugador, toda la mesa tiene derecho a verlas.)
 
-Regla práctica: ==si ibas de farol y te pagaron, tira las cartas rápido. Si apostaste por valor y te pagaron, dales la vuelta.==
+Regla práctica: ==como último agresor enseñas tú, también con el farol pagado.== Tirar boca abajo es la opción del que paga, después de ver la mano del apostador. Si apuestas y tiras rápido pierdes dos veces: el que pagó puede exigir tu mano igualmente y, como mandan las cartas, más de un bote se ha tirado con un as alto que iba ganando.
 
 ---
 
@@ -84,7 +84,7 @@ Cuando un jugador va all-in y ya no hay más apuestas posibles, lo habitual es r
 | Escenario de all-in | Regla del showdown |
 |----------------|---------------|
 | Un jugador va all-in, los demás pagan, no hay más apuestas posibles | Todas las manos boca arriba antes o durante el reparto |
-| Una apuesta all-in en el river es pagada | Showdown normal — el que fue all-in es el último agresor y enseña primero |
+| Una apuesta all-in en el river es pagada | El que fue all-in enseña primero como último agresor — pero ==r:aquí no puede tirar nadie==: por la regla 16 de la TDA el que paga también tiene que enseñar |
 | Varios all-ins que crean varios side pots | Cada bote se resuelve por separado; se enseñan todas las manos implicadas |
 
 </div>
@@ -103,7 +103,7 @@ Para ver cómo se forman y se pagan los side pots cuando hay jugadores all-in, m
 
 Si un jugador lee mal su mano y dice "tengo pareja", pero en realidad tiene escalera — gana la escalera. El dealer lee las cartas y empuja el bote hacia la mejor mano enseñada.
 
-Y funciona en los dos sentidos. Si crees que has perdido y tiras sin enseñar, pero tu mano era la ganadora — ==r:el bote se ha ido==. Tu mano está muerta en cuanto toca el muck. Si no estás seguro al 100% de haber perdido, deja siempre que el dealer lea tu mano antes de tirarla.
+Y funciona en los dos sentidos. Si crees que has perdido y tiras sin enseñar, pero tu mano era la ganadora — ==r:el bote se ha ido==. Tu mano solo está muerta cuando el dealer la ha empujado al muck y ya no se puede identificar con claridad — las cartas puestas boca abajo no mueren automáticamente (regla 14 de la TDA). Aun así, nunca cuentes con ello. Si no estás seguro al 100% de haber perdido, deja siempre que el dealer lea tu mano antes de tirarla.
 
 Situación real: llevas J♥ 10♥ en una mesa Q♥ 9♥ 8♥ 2♣ 5♦. Tienes escalera de color a la reina (Q-J-10-9-8 de corazones). El rival enseña K♣ Q♦ (una pareja de reinas). Ganas de calle. No tires tus cartas solo porque le veas la reina.
 

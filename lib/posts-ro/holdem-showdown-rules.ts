@@ -61,7 +61,7 @@ Odată ce ultimul agresor își arată mâna, ceilalți jucători pot fie:
 
 ==r:Dar există o excepție importantă:== dacă pariul tău de la river a fost plătit, cel care a plătit a dat prețul întreg ca să-ți vadă mâna. Orice jucător căruia i s-au împărțit cărți în acea mână poate cere dealerului să întoarcă o mână ajunsă în muck, dar implicată într-un showdown plătit — regula **„I want to see that hand"** din majoritatea sălilor. (Să nu o confunzi cu „show one, show all", care înseamnă că, dacă îți arăți cărțile de bunăvoie unui jucător, toată masa are dreptul să le vadă.)
 
-Regulă practică: ==dacă ai mers pe cacealma și te-au plătit, fă muck repede. Dacă ai pariat pe valoare și te-au plătit, întoarce-ți cărțile.==
+Regulă practică: ==ca ultim agresor tu întorci cărțile, inclusiv la cacealmaua plătită.== Muck-ul cu fața în jos e opțiunea celui care plătește, după ce a văzut mâna celui care a pariat. Dacă ai pariat și faci muck repede pierzi de două ori: cel care a plătit îți poate cere mâna oricum și, pentru că vorbesc cărțile, destule poturi au fost aruncate cu un as mare care era în față.
 
 ---
 
@@ -84,7 +84,7 @@ Când un jucător merge all-in și nu mai sunt posibile pariuri, de obicei se di
 | Scenariu de all-in | Regula de showdown |
 |----------------|---------------|
 | Un jucător merge all-in, ceilalți plătesc, nu mai e posibil niciun pariu | Toate mâinile se arată cu fața în sus înainte sau în timpul distribuirii |
-| Un pariu all-in la river este plătit | Showdown normal — cel care a mers all-in este ultimul agresor și arată primul |
+| Un pariu all-in la river este plătit | Cel care a mers all-in arată primul, ca ultim agresor — dar ==r:aici nu poate face muck nimeni==: conform regulii 16 TDA și cel care plătește trebuie să arate |
 | Mai multe all-in-uri care creează mai multe side pot-uri | Fiecare pot se rezolvă separat; se arată toate mâinile implicate |
 
 </div>
@@ -103,7 +103,7 @@ Pentru cum se formează și se plătesc side pot-urile când jucătorii sunt all
 
 Dacă un jucător își citește greșit mâna și zice „am o pereche", dar în realitate are o chintă — câștigă chinta. Dealerul citește cărțile și împinge potul spre cea mai bună mână arătată.
 
-Și e valabil în ambele sensuri. Dacă crezi că ai pierdut și faci muck fără să arăți, dar mâna ta era cea câștigătoare — ==r:potul e pierdut==. Mâna ta e moartă în momentul în care atinge muck-ul. Dacă nu ești sigur 100% că ai pierdut, lasă întotdeauna dealerul să-ți citească mâna înainte să o dai la muck.
+Și e valabil în ambele sensuri. Dacă crezi că ai pierdut și faci muck fără să arăți, dar mâna ta era cea câștigătoare — ==r:potul e pierdut==. Mâna ta moare abia când dealerul a împins-o în muck și nu mai poate fi identificată clar — cărțile puse cu fața în jos nu sunt automat moarte (regula 14 TDA). Nu te baza totuși niciodată pe asta. Dacă nu ești sigur 100% că ai pierdut, lasă întotdeauna dealerul să-ți citească mâna înainte să o dai la muck.
 
 Situație reală: ai J♥ 10♥ pe un board Q♥ 9♥ 8♥ 2♣ 5♦. Ai o chintă de culoare la damă (Q-J-10-9-8 de cupă). Adversarul arată K♣ Q♦ (o pereche de dame). Câștigi la mare distanță. Nu da cărțile la muck doar pentru că îi vezi dama.
 

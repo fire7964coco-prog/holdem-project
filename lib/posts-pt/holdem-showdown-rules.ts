@@ -61,7 +61,7 @@ Depois que o último agressor mostra a mão, os outros jogadores podem:
 
 ==r:Mas existe uma exceção importante:== se a sua aposta no river foi paga, quem pagou comprou o direito de ver a sua mão. Qualquer jogador que recebeu cartas na mão pode pedir ao dealer para virar uma mão descartada que participou de um showdown pago — é a regra **"I want to see that hand"** ("quero ver essa mão") na maioria dos clubes. (Não confunda com o "show one, show all", que significa que, se você mostrar suas cartas voluntariamente a um jogador, todo mundo na mesa tem o direito de vê-las.)
 
-Regra prática: ==se você blefou e foi pago, dê muck rápido. Se apostou por valor e foi pago, vire as cartas.==
+Regra prática: ==como último agressor você vira as cartas, inclusive no blefe que foi pago.== Dar muck é a opção de quem pagou, depois de ver a mão do apostador. Quem aposta e dá muck rápido perde duas vezes: o pagador pode exigir sua mão do mesmo jeito e, como as cartas falam, muito pote já foi jogado fora com um ás alto que estava na frente.
 
 ---
 
@@ -84,7 +84,7 @@ Quando um jogador vai de all-in e não há mais apostas possíveis, as cartas re
 | Cenário de all-in | Regra de showdown |
 |----------------|---------------|
 | Jogador vai all-in, os outros pagam, sem mais apostas possíveis | Todas as mãos viradas para cima antes ou durante o runout |
-| Aposta all-in no river é paga | Showdown normal — quem foi all-in é o último agressor e mostra primeiro |
+| Aposta all-in no river é paga | Quem foi all-in mostra primeiro como último agressor — mas ==r:aqui ninguém pode dar muck==: pela regra 16 da TDA quem pagou também precisa mostrar |
 | Vários all-ins criando vários side pots | Cada pote é resolvido separadamente; todas as mãos envolvidas são mostradas |
 
 </div>
@@ -103,7 +103,7 @@ Para entender como os side pots são montados e pagos quando alguém está all-i
 
 Se um jogador lê errado a própria mão e anuncia "tenho um par", mas na verdade tem uma sequência — a sequência ganha. O dealer lê as cartas e entrega o pote à melhor mão mostrada.
 
-Isso vale para os dois lados. Se você acha que perdeu e dá muck sem mostrar, mas a sua mão era a vencedora — ==r:o pote já era==. Sua mão está morta no momento em que encosta no muck. Se não tiver 100% de certeza de que perdeu, sempre deixe o dealer ler a sua mão antes de descartar.
+Isso vale para os dois lados. Se você acha que perdeu e dá muck sem mostrar, mas a sua mão era a vencedora — ==r:o pote já era==. Sua mão só morre quando o dealer a empurra para o muck e ela deixa de ser claramente identificável — cartas viradas para baixo não morrem automaticamente (regra 14 da TDA). Ainda assim, nunca conte com isso. Se não tiver 100% de certeza de que perdeu, sempre deixe o dealer ler a sua mão antes de descartar.
 
 Situação real: você tem J♥ 10♥ em uma mesa Q♥ 9♥ 8♥ 2♣ 5♦. Você tem um straight flush até a dama (Q-J-10-9-8 de copas). O adversário mostra K♣ Q♦ (um par de damas). Você ganha de lavada. Não dê muck só porque viu a dama dele.
 

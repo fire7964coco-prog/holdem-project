@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Texas Hold'em Showdown Rules: Who Shows First, Mucking, and Slow Rolling",
   seoTitle: "Who Flips First? Texas Hold'em Showdown Rules & Mucking",
   desc: "Who shows cards first at showdown? Can you muck without showing? Hold'em showdown rules — last aggressor, cards speak, slow roll, and all-in rules explained.",
-  tldr: "At showdown, the last player to bet or raise shows first. If the river was checked through, the first active player left of the button shows first. You can muck without showing if you lose, but opponents can request to see a called hand.",
+  tldr: "At showdown, the last player to bet or raise shows first. If the river was checked through, the first active player left of the button shows first. You can muck without showing if you lose, but whoever called the river bet can ask to see the bettor's hand.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-07-19",
+  updated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -56,11 +56,11 @@ Yes — **if you lost**.
 
 Once the last aggressor shows their hand, the other players can either:
 - **Show their hand** if they think they win
-- **Muck face-down** if they see they've lost — no need to reveal your cards
+- **Muck face-down** if they see they've lost — no need to reveal your cards. That only holds while nobody was all-in: once a player is all-in, ==TDA Rule 16== requires every hand in the pot to be tabled, and nobody may muck
 
-==r:But there's one important exception:== if your river bet was called, the caller paid full price to see your hand. Any player dealt into the hand can ask the dealer to turn up a mucked hand that was involved in a called showdown — the **"I want to see that hand"** rule in most cardrooms. (Don't confuse it with "show one, show all," which means that if you voluntarily show your cards to one player, everyone at the table gets to see them.)
+==r:But there's one important exception:== if your river bet was called, the caller paid full price to see your hand. That request — asking the dealer to turn up a mucked hand — is the **"I want to see that hand"** rule. In tournaments ==TDA Rule 18== draws it tightly: anyone who no longer holds cards at showdown, or who mucked face-down, forfeits the right to ask. The right is inalienable only for a player who called the river bet and either tabled or retained their cards, and only for the ==last aggressor's== hand — the one they paid to see. Everything else is at the tournament director's discretion, and cash games often read the rule more generously. (Don't confuse it with "show one, show all," which means that if you voluntarily show your cards to one player, everyone at the table gets to see them.)
 
-Practical rule: ==if you bluffed and got called, muck quickly. If you value-bet and got called, flip your cards.==
+Practical rule: ==as the last aggressor you turn your cards over — even on a bluff that got called.== Mucking face-down is the caller's option, taken after seeing the bettor's hand. Muck fast as the bettor and you lose twice: the caller can demand your hand anyway, and because cards speak, plenty of pots have been thrown away by players whose ace-high was actually ahead.
 
 ---
 
@@ -83,12 +83,12 @@ When a player goes all-in and there's no more betting possible, all remaining ca
 | All-in scenario | Showdown rule |
 |----------------|---------------|
 | Player goes all-in, others call, no more betting possible | All hands shown face-up before or during runout |
-| All-in bet on the river gets called | Normal showdown — the all-in bettor is the last aggressor and shows first |
+| All-in bet on the river gets called | The all-in bettor shows first as last aggressor — but ==r:nobody may muck here==: under TDA Rule 16 the caller must table too |
 | Multiple all-ins creating multiple side pots | Each pot resolved separately; all involved hands shown |
 
 </div>
 
-One nuance: if there is a **side pot** (other players still have chips and keep betting), the side pot is awarded first — the last aggressor among those live bettors shows first — and then the main pot, where the all-in player's hand is shown.
+One nuance: if there is a **side pot** (other players still have chips and keep betting), the side pot is awarded first and then the main pot. That is the **payout order** — it has nothing to do with when cards come up. The all-in player's hand is already face-up the moment no further betting is possible; the TDA illustration to Rule 16 says it outright: do *not* wait for the side pot to be divided before turning up the all-in.
 
 For how side pots are built and paid when players are all-in, see [all-in rules and side pots](/en/blog/holdem-all-in-rules); for chopped pots, see [split pot and chop rules](/en/blog/holdem-split-pot-rules).
 
@@ -102,7 +102,7 @@ For how side pots are built and paid when players are all-in, see [all-in rules 
 
 If a player misreads their hand and says "I have a pair," but they actually have a straight — the straight wins. The dealer reads the cards and awards the pot to the best hand shown.
 
-This works both ways. If you think you lost and muck without showing, but your hand would have been the winner — ==r:the pot is gone==. Your hand is dead once it touches the muck. Always let the dealer read your hand before mucking if you're not 100% sure you lost.
+This works both ways. If you think you lost and muck without showing, but your hand would have been the winner — ==r:the pot is gone==. Your hand is dead only once the dealer has pushed it into the muck and it is no longer clearly identifiable — cards laid face-down are ==TDA Rule 14== not automatically dead. Never rely on that, though. Always let the dealer read your hand before mucking if you're not 100% sure you lost.
 
 Real situation: you hold J♥ 10♥ on a board of Q♥ 9♥ 8♥ 2♣ 5♦. You have a queen-high straight flush (Q-J-10-9-8 of hearts). Opponent shows K♣ Q♦ (one pair of queens). You win by a mile. Don't muck just because you see their queen.
 
@@ -150,7 +150,7 @@ In most cardrooms you can ask the dealer to expose a mucked hand — but only a 
 
 ### Mistake 4: Not knowing you can show early
 
-There's no rule against flipping your hand before it's officially your turn. ==g:If you have the nuts or a very strong hand, show immediately.== Other players appreciate it. It speeds up the game. And it's the opposite of slow rolling.
+At showdown — once all betting is complete — there's no rule against flipping your hand before it's officially your turn. While the hand is still live and any action is pending, the opposite applies: exposing cards costs you a penalty under ==WSOP Rule 117==. ==g:If you have the nuts or a very strong hand, show immediately.== Other players appreciate it. It speeds up the game. And it's the opposite of slow rolling.
 
 ---
 
@@ -167,11 +167,11 @@ A. The last player to make an aggressive action (bet or raise) on the final bett
 
 **Q. Do you have to show your cards if you get called at showdown?**
 
-A. Yes — if you were the last bettor or raiser on the river, you must show first when called. If you called someone else's bet, you can muck face-down after seeing their hand if you've lost. However, any player who was dealt into the hand can request the dealer to reveal a called hand that was mucked, in most cardrooms.
+A. Yes — if you were the last bettor or raiser on the river, you must show first when called. If you called someone else's bet, you can muck face-down after seeing their hand if you've lost. The exception is an all-in: under ==TDA Rule 16== the caller has to table as well. And in tournaments only a player who still holds cards or has tabled them may ask to see a hand — inalienably, only the last aggressor's.
 
 **Q. Can you muck at showdown without showing?**
 
-A. Yes, but only if you clearly lost. Once the winner's hand is shown, losing players can muck face-down. The exception is if your hand was called — opponents may request to see it. Never muck before the dealer reads both hands if there's any uncertainty about who won.
+A. Yes, but only if you clearly lost. Once the winner's hand is shown, losing players can muck face-down. The exception is if your hand was called — the caller who paid for it may ask to see it, and if anyone was all-in, nobody may muck at all. Never muck before the dealer reads both hands if there's any uncertainty about who won.
 
 **Q. What is slow rolling in poker and why is it bad?**
 
@@ -179,7 +179,7 @@ A. Slow rolling is deliberately delaying showing a winning hand you already know
 
 **Q. In an all-in situation, who shows their cards first?**
 
-A. When a player goes all-in and no further betting is possible, all hands involved in that pot are typically shown face-up before or during the community card runout. If there is a side pot with continued betting, the last aggressor among those players shows first for the side pot. The all-in player's hand is shown separately for the main pot.
+A. When a player goes all-in and no further betting is possible, all hands involved in that pot are typically shown face-up before or during the community card runout. If there is a side pot, it is awarded first and the main pot after it — but the all-in player's cards are face-up long before that. While the others still have chips and can bet, everything stays face-down.
 
 **Q. What does "cards speak" mean in poker?**
 

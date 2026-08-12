@@ -61,7 +61,7 @@ Pagkatapos magpakita ng last aggressor ng hand niya, ang ibang players ay pweden
 
 ==r:Pero may isang mahalagang exception:== kung na-call ang river bet mo, ang caller ay nagbayad ng buong presyo para makita ang hand mo. Kahit sinong player na na-deal sa hand na iyon ay pwedeng hilingin sa dealer na buksan ang mucked hand na kasangkot sa isang called showdown — ang **"I want to see that hand"** rule sa karamihan ng cardrooms. (Huwag itong ipagkamali sa "show one, show all," na ang ibig sabihin ay kung kusa kang magpakita ng cards mo sa isang player, lahat sa mesa ay makikita rin ang mga ito.)
 
-Praktikal na rule: ==kung nag-bluff ka at na-call, mag-muck agad. Kung nag-value-bet ka at na-call, ibukas mo ang cards mo.==
+Praktikal na rule: ==bilang last aggressor ikaw ang magbubukas — pati ang bluff na na-call.== Ang pag-muck nang nakataob ay opsyon ng caller, matapos niyang makita ang hand ng nag-bet. Kung ikaw ang nag-bet at mabilis kang nag-muck, doble ang talo mo: puwede pa rin hingin ng caller na makita ang hand mo, at dahil cards speak, marami nang pot ang naitapon ng may ace-high na nangunguna pala.
 
 ---
 
@@ -84,7 +84,7 @@ Kapag nag-all-in ang isang player at wala nang posibleng betting, karaniwang ini
 | All-in scenario | Showdown rule |
 |----------------|---------------|
 | Nag-all-in ang player, nag-call ang iba, wala nang posibleng betting | Lahat ng hands nakabukas face-up bago o habang runout |
-| Na-call ang all-in bet sa river | Normal showdown — ang all-in bettor ang last aggressor at unang magpapakita |
+| Na-call ang all-in bet sa river | Unang magpapakita ang all-in bettor bilang last aggressor — pero ==r:walang puwedeng mag-muck dito==: sa ilalim ng TDA Rule 16 kailangan ding ibuka ng caller ang hand niya |
 | Maraming all-ins na gumagawa ng maraming side pots | Bawat pot hiwalay na nireresolba; ipinapakita ang lahat ng involved hands |
 
 </div>
@@ -103,7 +103,7 @@ Ang ibig sabihin ng "cards speak" ay ==panalo ang best hand kahit ano pa ang sab
 
 Kung mali ang pagbasa ng player sa hand niya at sinabing "may pair ako," pero straight pala talaga ang meron siya — panalo ang straight. Binabasa ng dealer ang cards at ibinibigay ang pot sa best hand na ipinakita.
 
-Dalawang-panig ito. Kung akala mong talo ka at nag-muck ka nang hindi nagpapakita, pero ang hand mo pala ang panalo — ==r:wala na ang pot==. Patay na ang hand mo sa sandaling sumagi ito sa muck. Kung hindi ka 100% sigurado na talo ka, palaging hayaang basahin muna ng dealer ang hand mo bago mag-muck.
+Dalawang-panig ito. Kung akala mong talo ka at nag-muck ka nang hindi nagpapakita, pero ang hand mo pala ang panalo — ==r:wala na ang pot==. Patay lang ang hand mo kapag naitulak na ito ng dealer sa muck at hindi na malinaw na matukoy — hindi awtomatikong patay ang cards na inilapag nang nakataob (TDA Rule 14). Huwag pa rin itong asahan kailanman. Kung hindi ka 100% sigurado na talo ka, palaging hayaang basahin muna ng dealer ang hand mo bago mag-muck.
 
 Real na sitwasyon: hawak mo ang J♥ 10♥ sa board na Q♥ 9♥ 8♥ 2♣ 5♦. May queen-high straight flush ka (Q-J-10-9-8 of hearts). Nagpakita ang kalaban ng K♣ Q♦ (one pair of queens). Panalo ka nang malayo. Huwag kang mag-muck dahil lang nakita mo ang queen niya.
 

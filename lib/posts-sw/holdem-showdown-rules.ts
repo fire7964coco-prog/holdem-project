@@ -61,7 +61,7 @@ Mara tu last aggressor anapoonyesha mkono wake, wachezaji wengine wanaweza:
 
 ==r:Lakini kuna kanuni moja muhimu ya kipekee:== kama bet yako ya river ilipewa call, yule aliye-call alilipa bei kamili ili kuona mkono wako. Mchezaji yeyote aliyegawiwa karata kwenye mkono huo anaweza kumwomba dila ageuze mkono uliopigwa muck ambao ulihusika kwenye showdown iliyolipwa (called) — kanuni ya **"I want to see that hand"** katika cardroom nyingi. (Usiichanganye na "show one, show all", inayomaanisha kwamba kama utaonyesha karata zako kwa hiari kwa mchezaji mmoja, kila mtu mezani anapata kuziona.)
 
-Kanuni ya kivitendo: ==kama uli-bluff ukapewa call, muck haraka. Kama uli-value-bet ukapewa call, geuza karata zako.==
+Kanuni ya kivitendo: ==ukiwa last aggressor wewe ndiye unayegeuza karata — hata bluff iliyopewa call.== Ku-muck karata zikiwa chini ni chaguo la aliye-call, baada ya kuona mkono wa aliyeweka bet. Ukiweka bet kisha uka-muck haraka unapoteza mara mbili: aliye-call bado anaweza kudai kuona mkono wako, na kwa kuwa karata ndizo huamua, pot nyingi zimetupwa na wachezaji ambao ace-high yao ilikuwa mbele.
 
 ---
 
@@ -84,7 +84,7 @@ Wakati mchezaji anaenda all-in na hakuna bet zaidi zinazowezekana, kwa kawaida k
 | Hali ya all-in | Sheria ya showdown |
 |----------------|---------------|
 | Mchezaji anaenda all-in, wengine wana-call, hakuna bet zaidi zinazowezekana | Mikono yote wazi (face-up) kabla au wakati wa runout |
-| Bet ya all-in kwenye river inapewa call | Showdown ya kawaida — aliye all-in ndiye last aggressor na anaonyesha kwanza |
+| Bet ya all-in kwenye river inapewa call | Aliye all-in anaonyesha kwanza kama last aggressor — lakini ==r:hapa hakuna anayeruhusiwa ku-muck==: kwa mujibu wa TDA Rule 16 hata aliye-call lazima aonyeshe mkono wake |
 | All-in nyingi zinazounda side pot nyingi | Kila pot inasuluhishwa peke yake; mikono yote inayohusika inaonyeshwa |
 
 </div>
@@ -103,7 +103,7 @@ Kwa jinsi side pot inavyojengwa na kulipwa wachezaji wanapokuwa all-in, angalia 
 
 Kama mchezaji anasoma mkono wake vibaya na kusema "nina pair," lakini kwa kweli ana straight — straight inashinda. Dila anasoma karata na kutoa pot kwa mkono bora ulioonyeshwa.
 
-Hii inafanya kazi pande zote mbili. Kama unadhani umeshindwa ukapiga muck bila kuonyesha, lakini mkono wako ungekuwa mshindi — ==r:pot imekwenda==. Mkono wako umekufa mara tu unapogusa muck. Kama huna uhakika wa asilimia 100 kwamba umeshindwa, muache dila daima asome mkono wako kabla ya ku-muck.
+Hii inafanya kazi pande zote mbili. Kama unadhani umeshindwa ukapiga muck bila kuonyesha, lakini mkono wako ungekuwa mshindi — ==r:pot imekwenda==. Mkono wako hufa pale tu dila anapouingiza kwenye muck na usiweze tena kutambulika waziwazi — karata zilizowekwa chini hazifi zenyewe (TDA Rule 14). Hata hivyo, usiitegemee kamwe hali hiyo. Kama huna uhakika wa asilimia 100 kwamba umeshindwa, muache dila daima asome mkono wako kabla ya ku-muck.
 
 Hali halisi: unashikilia J♥ 10♥ kwenye bodi ya Q♥ 9♥ 8♥ 2♣ 5♦. Una straight flush ya queen-high (Q-J-10-9-8 za hearts). Mpinzani anaonyesha K♣ Q♦ (pair moja ya queens). Unashinda kwa mbali kabisa. Usi-muck tu kwa sababu umeona queen yake.
 

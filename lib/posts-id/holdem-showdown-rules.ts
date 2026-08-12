@@ -61,7 +61,7 @@ Begitu agresor terakhir membuka hand-nya, pemain lain bisa memilih:
 
 ==r:Tapi ada satu pengecualian penting:== kalau bet river Anda di-call, pemain yang call sudah membayar harga penuh untuk melihat hand Anda. Setiap pemain yang dibagikan kartu di hand itu boleh meminta dealer membuka hand yang di-muck padahal terlibat showdown yang di-call — aturan **"I want to see that hand"** di kebanyakan cardroom. (Jangan tertukar dengan "show one, show all", yang artinya kalau Anda sukarela memperlihatkan kartu ke satu pemain, semua orang di meja berhak melihatnya.)
 
-Aturan praktisnya: ==kalau Anda gertak (bluff) dan di-call, muck cepat-cepat. Kalau Anda bet for value dan di-call, buka kartu Anda.==
+Aturan praktisnya: ==sebagai agresor terakhir Andalah yang membuka kartu — termasuk gertakan yang di-call.== Muck tertutup itu pilihan pemain yang call, setelah ia melihat hand si pembuat bet. Kalau Anda yang bet lalu buru-buru muck, Anda rugi dua kali: pemain yang call tetap boleh meminta melihat hand Anda, dan karena cards speak, banyak pot terbuang oleh pemain yang ace-high-nya justru unggul.
 
 ---
 
@@ -84,7 +84,7 @@ Ketika seorang pemain all-in dan tidak ada taruhan lagi yang mungkin, sisa kartu
 | Skenario all-in | Aturan showdown |
 |----------------|---------------|
 | Pemain all-in, yang lain call, tidak ada taruhan lagi | Semua hand dibuka menghadap ke atas sebelum atau saat sisa kartu dibagikan |
-| Bet all-in di river di-call | Showdown normal — pemain yang all-in adalah agresor terakhir dan buka duluan |
+| Bet all-in di river di-call | Pemain yang all-in buka duluan sebagai agresor terakhir — tapi ==r:di sini tidak ada yang boleh muck==: menurut TDA Rule 16 pemain yang call pun wajib membuka hand-nya |
 | Beberapa all-in menciptakan beberapa side pot | Setiap pot diselesaikan terpisah; semua hand yang terlibat dibuka |
 
 </div>
@@ -103,7 +103,7 @@ Untuk cara side pot dibentuk dan dibayarkan saat ada pemain all-in, lihat [atura
 
 Kalau seorang pemain salah membaca hand-nya dan bilang "saya punya pair", padahal sebenarnya dia punya straight — straight-nya yang menang. Dealer membaca kartu dan memberikan pot ke hand terbaik yang dibuka.
 
-Ini berlaku dua arah. Kalau Anda merasa kalah lalu muck tanpa membuka kartu, padahal hand Anda sebenarnya pemenangnya — ==r:pot itu hilang==. Hand Anda mati begitu menyentuh tumpukan muck. Kalau Anda tidak 100% yakin kalah, selalu biarkan dealer membaca hand Anda sebelum muck.
+Ini berlaku dua arah. Kalau Anda merasa kalah lalu muck tanpa membuka kartu, padahal hand Anda sebenarnya pemenangnya — ==r:pot itu hilang==. Hand Anda baru mati setelah dealer mendorongnya ke muck dan kartunya tidak lagi bisa dikenali dengan jelas — kartu yang diletakkan tertutup tidak otomatis mati (TDA Rule 14). Meski begitu, jangan pernah mengandalkan hal itu. Kalau Anda tidak 100% yakin kalah, selalu biarkan dealer membaca hand Anda sebelum muck.
 
 Situasi nyata: Anda pegang J♥ 10♥ di board Q♥ 9♥ 8♥ 2♣ 5♦. Anda punya straight flush queen-high (Q-J-10-9-8 hati). Lawan membuka K♣ Q♦ (satu pair queen). Anda menang telak. Jangan muck cuma karena melihat queen-nya.
 

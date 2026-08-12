@@ -61,7 +61,7 @@ Una volta che l'ultimo aggressore mostra la sua mano, gli altri giocatori posson
 
 ==r:Ma c'è un'eccezione importante:== se la tua puntata al river è stata pagata, chi ha pagato ha versato il prezzo pieno per vedere la tua mano. Qualsiasi giocatore che ha ricevuto le carte in quella mano può chiedere al dealer di girare una mano finita nel muck ma coinvolta in uno showdown pagato — la regola del **"I want to see that hand"** in gran parte delle sale. (Da non confondere con "show one, show all", che significa che se mostri le tue carte volontariamente a un giocatore, tutto il tavolo ha diritto di vederle.)
 
-Regola pratica: ==se andavi di bluff e ti hanno pagato, passa le carte in fretta. Se hai puntato a valore e ti hanno pagato, girale.==
+Regola pratica: ==da ultimo aggressore giri tu le carte, anche sul bluff pagato.== Passare coperto è l'opzione di chi paga, dopo aver visto la mano di chi ha puntato. Se punti e passi in fretta perdi due volte: chi ha pagato può pretendere comunque la tua mano e, dato che parlano le carte, più di un piatto è stato buttato con un asso alto che era avanti.
 
 ---
 
@@ -84,7 +84,7 @@ Quando un giocatore va all-in e non sono più possibili puntate, di solito si di
 | Scenario di all-in | Regola dello showdown |
 |----------------|---------------|
 | Un giocatore va all-in, gli altri pagano, nessuna puntata ulteriore possibile | Tutte le mani scoperte prima o durante la distribuzione |
-| Una puntata all-in al river viene pagata | Showdown normale — chi è andato all-in è l'ultimo aggressore e mostra per primo |
+| Una puntata all-in al river viene pagata | Chi è andato all-in mostra per primo come ultimo aggressore — ma ==r:qui non può passare nessuno==: per la regola 16 TDA anche chi paga deve mostrare |
 | Più all-in che creano più side pot | Ogni piatto si risolve separatamente; si mostrano tutte le mani coinvolte |
 
 </div>
@@ -103,7 +103,7 @@ Per capire come si formano e si pagano i side pot quando ci sono giocatori all-i
 
 Se un giocatore legge male la propria mano e dice "ho coppia", ma in realtà ha una scala — vince la scala. Il dealer legge le carte e spinge il piatto verso la mano migliore mostrata.
 
-E vale in entrambi i sensi. Se pensi di aver perso e passi senza mostrare, ma la tua mano era quella vincente — ==r:il piatto è perso==. La tua mano è morta nel momento in cui tocca il muck. Se non sei sicuro al 100% di aver perso, lascia sempre che il dealer legga la tua mano prima di passarla.
+E vale in entrambi i sensi. Se pensi di aver perso e passi senza mostrare, ma la tua mano era quella vincente — ==r:il piatto è perso==. La tua mano muore solo quando il dealer l'ha spinta nel muck e non è più chiaramente identificabile — le carte messe coperte non sono automaticamente morte (regola 14 TDA). Non contarci comunque mai. Se non sei sicuro al 100% di aver perso, lascia sempre che il dealer legga la tua mano prima di passarla.
 
 Situazione reale: hai J♥ 10♥ su un board Q♥ 9♥ 8♥ 2♣ 5♦. Hai una scala a colore alla donna (Q-J-10-9-8 di cuori). L'avversario mostra K♣ Q♦ (una coppia di donne). Vinci a mani basse. Non passare le carte solo perché gli vedi la donna.
 

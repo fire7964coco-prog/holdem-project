@@ -61,7 +61,7 @@ Son agresör elini gösterdikten sonra, diğer oyuncular şunlardan birini yapab
 
 ==r:Ama önemli bir istisna var:== river'daki bahsin call edildiyse, call eden senin elini görmek için tam bedeli ödedi. Ele dağıtılmış olan herhangi bir oyuncu, call edilmiş bir showdown'a dahil olan muck'a atılmış bir eli krupiyeye açtırmayı isteyebilir — çoğu casinoda geçen **"o eli görmek istiyorum"** kuralı. (Bunu "birine göster, herkese göster" kuralıyla karıştırma — o kural, kartlarını gönüllü olarak bir oyuncuya gösterirsen masadaki herkesin de görme hakkı kazanması demektir.)
 
-Pratik kural: ==blöf yaptın ve call edildin mi, hızlıca muck yap. Value bet yaptın ve call edildin mi, kartlarını çevir.==
+Pratik kural: ==son agresörsen kartları sen çevirirsin — call edilen blöfte de.== Kapalı muck, bahisçinin elini gördükten sonra call edenin seçeneğidir. Bahsi sen yapıp hızlıca muck edersen iki kez kaybedersin: call eden zaten elini görmeyi talep edebilir ve kartlar konuştuğu için, as yükseği aslında önde olan nice pot çöpe atılmıştır.
 
 ---
 
@@ -84,7 +84,7 @@ Bir oyuncu all-in gittiğinde ve artık bahis yapmak mümkün olmadığında, ka
 | All-in senaryosu | Showdown kuralı |
 |----------------|---------------|
 | Bir oyuncu all-in gider, diğerleri call eder, artık bahis mümkün değil | Tüm eller kartlar açılmadan önce/açılırken yüzü açık konur |
-| River'da all-in bahsi call edilir | Normal showdown — all-in giden son agresördür ve önce gösterir |
+| River'da all-in bahsi call edilir | All-in giden son agresör olarak önce gösterir — ama ==r:burada kimse muck yapamaz==: TDA 16. kurala göre call eden de elini açmak zorundadır |
 | Birden fazla side pot yaratan çoklu all-in | Her pot ayrı ayrı çözülür; dahil olan tüm eller gösterilir |
 
 </div>
@@ -103,7 +103,7 @@ Oyuncular all-in olduğunda yan potların nasıl oluşup nasıl ödendiği için
 
 Bir oyuncu elini yanlış okuyup "çiftim var" derse ama aslında kenti varsa — kent kazanır. Krupiye kartları okur ve potu gösterilen en iyi ele iter.
 
-Bu iki yönlü işler. Kaybettiğini sanıp göstermeden muck yaparsan ama elin aslında kazanan olsaydı — ==r:pot gitti==. Elin muck'a değdiği an ölüdür. Kaybettiğinden %100 emin değilsen, muck yapmadan önce her zaman krupiyenin elini okumasına izin ver.
+Bu iki yönlü işler. Kaybettiğini sanıp göstermeden muck yaparsan ama elin aslında kazanan olsaydı — ==r:pot gitti==. Elin ancak krupiye onu muck'a ittiğinde ve artık net olarak seçilemediğinde ölür — kapalı bırakılan kartlar kendiliğinden ölmez (TDA 14. kural). Yine de buna asla güvenme. Kaybettiğinden %100 emin değilsen, muck yapmadan önce her zaman krupiyenin elini okumasına izin ver.
 
 Gerçek durum: elinde **J♥ 10♥** var, board **Q♥ 9♥ 8♥ 2♣ 5♦**. Kız yüksek bir straight flush'ın var (kupa Q-J-10-9-8). Rakip **K♣ Q♦** gösteriyor (bir kız çifti). Farkla kazanırsın. Sırf onun kızını gördün diye muck yapma.
 

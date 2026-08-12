@@ -61,7 +61,7 @@ Sau khi người chủ động cuối cùng lật bài, những người còn l�
 
 ==r:Nhưng có một ngoại lệ quan trọng:== nếu cú cược river của bạn bị theo, người theo đã trả đủ giá để được xem bài bạn. Bất kỳ ai được chia bài trong ván đó đều có thể yêu cầu Dealer lật một tay bài đã bỏ úp nhưng từng liên quan đến showdown có người theo — đây là luật **"I want to see that hand" (tôi muốn xem tay bài đó)** ở đa số các phòng bài. (Đừng nhầm với luật "show one, show all" — cho một người xem thì cho cả bàn xem: nếu bạn tự nguyện cho một người xem bài, cả bàn đều có quyền xem.)
 
-Quy tắc thực chiến: ==nếu bạn bluff và bị theo, muck thật nhanh. Nếu bạn cược ăn giá trị (value bet) và bị theo, lật bài lên.==
+Quy tắc thực chiến: ==là người chủ động cuối cùng thì bạn lật bài — kể cả cú bluff đã bị theo.== Muck úp là lựa chọn của người theo, sau khi đã nhìn bài của người cược. Bạn cược rồi vội muck là thiệt hai lần: người theo vẫn có quyền yêu cầu xem bài bạn, và vì bài mới là thứ quyết định, không ít pot đã bị vứt đi bởi người có ách cao thực ra đang dẫn.
 
 ---
 
@@ -84,7 +84,7 @@ Khi một người all-in và không còn khả năng cược thêm, thông lệ
 | Tình huống all-in | Luật showdown |
 |----------------|---------------|
 | Một người all-in, những người khác theo, không còn cược được nữa | Mọi tay bài lật ngửa trước hoặc trong lúc chia nốt bài |
-| Cú all-in ở river bị theo | Showdown bình thường — người all-in là người chủ động cuối cùng và lật trước |
+| Cú all-in ở river bị theo | Người all-in lật trước với tư cách người chủ động cuối cùng — nhưng ==r:ở đây không ai được muck==: theo TDA Rule 16, người theo cũng phải ngửa bài |
 | Nhiều cú all-in tạo ra nhiều side pot | Mỗi pot được phân xử riêng; mọi tay bài liên quan đều phải lật |
 
 </div>
@@ -103,7 +103,7 @@ Một điểm tinh tế: nếu có **side pot (pot phụ)** — tức những ng
 
 Nếu một người đọc nhầm bài của mình và hô "tôi có một đôi", nhưng thực ra họ có Sảnh (straight) — thì Sảnh thắng. Dealer đọc bài và trao pot cho tay bài mạnh nhất đã được lật.
 
-Luật này có hai mặt. Nếu bạn tưởng mình thua và muck không lật, nhưng tay bài của bạn lẽ ra thắng — ==r:pot coi như mất==. Bài của bạn chết ngay khi chạm vào muck. Nếu chưa chắc chắn 100% mình thua, hãy luôn để Dealer đọc bài của bạn trước khi muck.
+Luật này có hai mặt. Nếu bạn tưởng mình thua và muck không lật, nhưng tay bài của bạn lẽ ra thắng — ==r:pot coi như mất==. Bài của bạn chỉ chết khi Dealer đã đẩy nó vào muck và không còn nhận dạng rõ được nữa — bài chỉ mới úp xuống thì chưa tự động chết (TDA Rule 14). Dù vậy, đừng bao giờ trông cậy vào điều đó. Nếu chưa chắc chắn 100% mình thua, hãy luôn để Dealer đọc bài của bạn trước khi muck.
 
 Tình huống thật: bạn cầm J♥ 10♥ trên board Q♥ 9♥ 8♥ 2♣ 5♦. Bạn có Thùng Phá Sảnh (straight flush) đỉnh Q — Q-J-10-9-8 đồng chất cơ. Đối thủ lật K♣ Q♦ (một đôi Q). Bạn thắng tuyệt đối. Đừng muck chỉ vì thấy họ có con Q.
 

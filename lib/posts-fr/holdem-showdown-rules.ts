@@ -61,7 +61,7 @@ Une fois que le dernier relanceur a montré sa main, les autres joueurs peuvent 
 
 ==r:Mais il y a une exception importante :== si ta mise à la rivière a été payée, celui qui a suivi a mis le prix fort pour voir ta main. Tout joueur ayant reçu des cartes dans le coup peut demander au donneur de retourner une main jetée au muck qui a fait partie d'un abattage payé — la règle du **« I want to see that hand »** dans la plupart des cardrooms. (Ne la confonds pas avec « show one, show all » : si tu montres volontairement tes cartes à un joueur, toute la table a le droit de les voir.)
 
-Règle pratique : ==si tu as bluffé et qu'on t'a payé, jette vite. Si tu as misé pour la valeur et qu'on t'a payé, retourne tes cartes.==
+Règle pratique : ==en tant que dernier relanceur, c'est toi qui retournes — même sur un bluff payé.== Jeter face cachée, c'est l'option de celui qui paie, une fois qu'il a vu la main du mieur. Si tu as misé et que tu jettes vite, tu perds deux fois : celui qui a payé peut exiger ta main de toute façon et, puisque ce sont les cartes qui parlent, plus d'un pot a été jeté avec un as hauteur qui était devant.
 
 ---
 
@@ -84,7 +84,7 @@ Quand un joueur fait tapis et qu'aucune mise n'est plus possible, on déroule en
 | Scénario d'all-in | Règle d'abattage |
 |----------------|---------------|
 | Un joueur fait tapis, les autres suivent, plus aucune mise possible | Toutes les mains face visible avant ou pendant le déroulement |
-| Une mise all-in à la rivière est payée | Abattage normal — le joueur à tapis est le dernier relanceur et montre en premier |
+| Une mise all-in à la rivière est payée | Le joueur à tapis montre en premier comme dernier relanceur — mais ==r:personne ne peut jeter ici== : selon la règle 16 de la TDA, celui qui paie doit lui aussi étaler sa main |
 | Plusieurs all-ins créant plusieurs pots annexes | Chaque pot se résout séparément ; toutes les mains impliquées sont montrées |
 
 </div>
@@ -103,7 +103,7 @@ Pour voir comment les pots annexes se forment et se paient quand des joueurs son
 
 Si un joueur lit mal sa main et annonce « j'ai une paire » alors qu'il a en fait une quinte — c'est la quinte qui gagne. Le donneur lit les cartes et attribue le pot à la meilleure main montrée.
 
-Et ça marche dans les deux sens. Si tu crois avoir perdu et que tu jettes sans montrer, alors que ta main était gagnante — ==r:le pot est perdu==. Ta main est morte dès qu'elle touche le muck. Si tu n'es pas sûr à 100 % d'avoir perdu, laisse toujours le donneur lire ta main avant de la jeter.
+Et ça marche dans les deux sens. Si tu crois avoir perdu et que tu jettes sans montrer, alors que ta main était gagnante — ==r:le pot est perdu==. Ta main n'est morte que lorsque le donneur l'a poussée dans le muck et qu'elle n'est plus clairement identifiable — des cartes posées face cachée ne sont pas automatiquement mortes (règle 14 de la TDA). N'y compte jamais pour autant. Si tu n'es pas sûr à 100 % d'avoir perdu, laisse toujours le donneur lire ta main avant de la jeter.
 
 Situation réelle : tu as J♥ 10♥ sur un tableau Q♥ 9♥ 8♥ 2♣ 5♦. Tu tiens une quinte flush à la dame (Q-J-10-9-8 à cœur). L'adversaire montre K♣ Q♦ (une paire de dames). Tu gagnes haut la main. Ne jette surtout pas juste parce que tu vois sa dame.
 

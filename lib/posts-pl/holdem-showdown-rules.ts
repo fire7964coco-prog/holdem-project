@@ -61,7 +61,7 @@ Kiedy ostatni agresor pokaże swój układ, reszta graczy może:
 
 ==r:Jest jednak jeden ważny wyjątek:== jeśli twój zakład na riverze został sprawdzony, sprawdzający zapłacił pełną cenę za obejrzenie twojego układu. Każdy gracz, któremu rozdano karty w tym rozdaniu, może poprosić rozdającego, by odwrócił zrzucony układ, który był częścią sprawdzonego showdownu — zasada **„I want to see that hand"** w większości pokojów pokerowych. (Nie myl jej z „show one, show all", która mówi, że jeśli dobrowolnie pokażesz karty jednemu graczowi, cały stół ma prawo je zobaczyć.)
 
-Zasada praktyczna: ==jeśli blefowałeś i cię sprawdzono, zrzucaj karty szybko. Jeśli grałeś na wartość i cię sprawdzono, odkryj je.==
+Zasada praktyczna: ==jako ostatni agresor to ty odkrywasz — także zblefowany układ, który sprawdzono.== Zrzucenie kart zakrytych to opcja sprawdzającego, już po obejrzeniu układu betującego. Jeśli betowałeś i szybko zrzucasz, tracisz podwójnie: sprawdzający i tak może zażądać twoich kart, a ponieważ liczą się karty, niejedna pula poszła do kosza z asem wysokim, który prowadził.
 
 ---
 
@@ -84,7 +84,7 @@ Kiedy gracz idzie all-in i nie ma już możliwości dalszego betowania, zwykle d
 | Scenariusz all-in | Zasada showdownu |
 |----------------|---------------|
 | Gracz idzie all-in, inni sprawdzają, nie ma już betowania | Wszystkie układy odkryte przed dobiciem lub w jego trakcie |
-| Zakład all-in na riverze zostaje sprawdzony | Zwykły showdown — grający all-in jest ostatnim agresorem i odkrywa pierwszy |
+| Zakład all-in na riverze zostaje sprawdzony | Grający all-in odkrywa pierwszy jako ostatni agresor — ale ==r:tu nikt nie może zrzucić==: według zasady 16 TDA sprawdzający też musi odsłonić karty |
 | Kilka all-inów tworzących kilka pul bocznych | Każda pula rozstrzygana osobno; odkrywane wszystkie zaangażowane układy |
 
 </div>
@@ -103,7 +103,7 @@ Jak buduje się i wypłaca pule boczne, gdy gracze są all-in, znajdziesz w [zas
 
 Jeśli gracz źle odczyta swój układ i powie „mam parę", a naprawdę ma strita — wygrywa strit. Rozdający odczytuje karty i przyznaje pulę najlepszemu pokazanemu układowi.
 
-To działa w obie strony. Jeśli myślisz, że przegrałeś, i zrzucasz bez pokazywania, a twój układ był wygrywający — ==r:pula przepadła==. Twój układ jest martwy w momencie, gdy dotknie muck. Jeśli nie jesteś w 100% pewien, że przegrałeś, zawsze pozwól rozdającemu odczytać twój układ, zanim go zrzucisz.
+To działa w obie strony. Jeśli myślisz, że przegrałeś, i zrzucasz bez pokazywania, a twój układ był wygrywający — ==r:pula przepadła==. Twój układ jest martwy dopiero wtedy, gdy rozdający wepchnie go do mucka i nie da się go już jednoznacznie zidentyfikować — karty położone zakryte nie są automatycznie martwe (zasada 14 TDA). Mimo to nigdy na tym nie polegaj. Jeśli nie jesteś w 100% pewien, że przegrałeś, zawsze pozwól rozdającemu odczytać twój układ, zanim go zrzucisz.
 
 Realna sytuacja: trzymasz J♥ 10♥ na stole Q♥ 9♥ 8♥ 2♣ 5♦. Masz Pokera (straight flush) do damy — Q-J-10-9-8 w kierach. Rywal pokazuje K♣ Q♦ (para dam). Wygrywasz na spacer. Nie zrzucaj kart tylko dlatego, że widzisz u niego damę.
 
