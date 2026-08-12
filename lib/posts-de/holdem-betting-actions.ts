@@ -212,7 +212,7 @@ A. Nein. Wenn du setzt und die Gegner nur callen, kannst du nichts nachlegen –
 
 **Q. Wie oft darf man beim Texas Hold'em erhöhen?**
 
-A. Im No-Limit gibt es keine Obergrenze für die Anzahl der Raises – Re-Raises können weitergehen, bis ein Spieler All-in ist, solange jeder Raise das Mindest-Inkrement erfüllt. Nur im Fixed Limit gibt es ein hartes Cap – die Zahl und die Ausnahme dazu stehen oben im Min-Raise-Abschnitt.
+A. Im No-Limit gibt es keine Obergrenze für die Anzahl der Raises – Re-Raises können weitergehen, bis ein Spieler All-in ist, solange jeder Raise das Mindest-Inkrement erfüllt. Nur im Fixed Limit gibt es ein hartes Cap – die Zahl und die Ausnahme dazu stehen oben im Abschnitt „Wie oft darfst du beim Poker erhöhen?“.
 
 **Q. Darf man außer der Reihe folden?**
 

@@ -167,7 +167,7 @@ Vollständige Herleitungen für jeden Draw und jede fertige Hand findest du in d
 
 ## Welche Pot-Odds-Fehler machen Anfänger am häufigsten?
 
-Fast alle teuren Fehler sind Varianten desselben Musters: **Der Preis wird zu günstig gerechnet.** Mal fehlt der eigene Call im Nenner, mal stehen Outs in der Zahl, die gar nicht gewinnen, mal gilt die ×4 für eine Street, die du gar nicht kaufst. Ich habe jeden einzelnen davon gemacht, bevor ich sie mir abgewöhnt habe. Achte auf sie:
+Fast alle teuren Fehler sind Varianten desselben Musters: **die Rechnung kippt in eine Richtung, ohne dass du es merkst.** Vergisst du deinen eigenen Call im Nenner, wirkt der Preis **zu teuer** und du foldest richtige Calls. Zählst du dagegen Outs mit, die gar nicht gewinnen, oder wendest die ×4 auf eine Street an, die du gar nicht kaufst, **überschätzt du deine Equity**. Ich habe jeden einzelnen davon gemacht, bevor ich sie mir abgewöhnt habe. Achte auf sie:
 
 :::card
 🧮 | Den Call zu vergessen | Benötigte Equity ist Call ÷ *finaler* Pot – zähle deine eigenen Chips mit, sonst überschätzt du jeden Preis

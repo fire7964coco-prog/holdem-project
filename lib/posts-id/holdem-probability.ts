@@ -122,7 +122,8 @@ Anda punya draw di flop. Seberapa sering Anda menyempurnakannya? Semuanya bermua
 | Open-ended straight | 8 | 31,5% | 17,4% |
 | Dua overcard | 6 | 24,1% | 13,0% |
 | Gutshot (dalam) straight | 4 | 16,5% | 8,7% |
-| Pair → set / set → full house | 2 | 8,4% | 4,3% |
+| Pair → set | 2 | 8,4% | 4,3% |
+| Set → full house | 7 (flop) / 10 (turn) | 33,4% | 21,7% |
 
 </div>
 

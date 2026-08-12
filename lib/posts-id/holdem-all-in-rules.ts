@@ -63,7 +63,7 @@ Ada dua cara yang sah:
 
 ![Showdown all-in Texas Hold'em — board K♠ 10♣ 7♦ 4♥ 2♣ dengan chip yang dipisahkan menjadi pot utama dan side pot berlabel](/images/holdem-all-in-declare.webp)
 
-==r:Jangan pernah mendorong satu chip ke depan tanpa mengatakan apa pun — dealer menghitungnya sebagai nilai chip itu saja, bukan seluruh stack Anda.== Selalu ucapkan "all-in" dengan lantang, atau pindahkan seluruh stack sekaligus.
+==r:Jangan pernah mendorong satu chip ke depan tanpa mengatakan apa pun — jika ada taruhan di depan Anda, dealer menghitungnya sebagai call — dan bila tidak ada taruhan yang berjalan, hanya sebesar nilai chip itu. Bukan pernah seluruh stack Anda.== Selalu ucapkan "all-in" dengan lantang, atau pindahkan seluruh stack sekaligus.
 
 ---
 

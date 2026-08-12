@@ -63,7 +63,7 @@ Duas formas válidas:
 
 ![Showdown de all-in no Texas Hold'em — mesa K♠ 10♣ 7♦ 4♥ 2♣ com as fichas separadas em pote principal e pote paralelo identificados](/images/holdem-all-in-declare.webp)
 
-==r:Nunca empurre uma única ficha sem dizer nada — o dealer conta só o valor daquela ficha, não o seu stack inteiro.== Sempre declare "all-in" em voz alta, ou mova o stack completo de uma vez.
+==r:Nunca empurre uma única ficha sem dizer nada — se houver uma aposta à sua frente, o dealer conta como call — e, se não houver aposta pendente, apenas o valor daquela ficha. Nunca o seu stack inteiro.== Sempre declare "all-in" em voz alta, ou mova o stack completo de uma vez.
 
 ---
 

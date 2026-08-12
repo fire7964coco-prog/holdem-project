@@ -122,7 +122,8 @@ Você tem um projeto no flop. Com que frequência você o completa? Tudo se resu
 | Sequência aberta (open-ended) | 8 | 31,5% | 17,4% |
 | Duas overcards | 6 | 24,1% | 13,0% |
 | Sequência de dentro (gutshot) | 4 | 16,5% | 8,7% |
-| Par → trinca / trinca → full house | 2 | 8,4% | 4,3% |
+| Par → trinca | 2 | 8,4% | 4,3% |
+| Trinca → full house | 7 (flop) / 10 (turn) | 33,4% | 21,7% |
 
 </div>
 

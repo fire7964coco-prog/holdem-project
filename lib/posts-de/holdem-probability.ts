@@ -131,7 +131,8 @@ Alles hängt an den **Outs** – den Karten, die im Deck übrig sind und deine H
 | Open-Ended-Straßendraw | 8 | 31,5% | 17,4% |
 | Zwei Overcards | 6 | 24,1% | 13,0% |
 | Gutshot (Inside) Straße | 4 | 16,5% | 8,7% |
-| Paar → Set / Set → Full House | 2 | 8,4% | 4,3% |
+| Paar → Set | 2 | 8,4% | 4,3% |
+| Set → Full House | 7 (Flop) / 10 (Turn) | 33,4% | 21,7% |
 
 </div>
 

@@ -122,7 +122,8 @@ Tienes un proyecto en el flop. ¿Con qué frecuencia lo completas? Todo se reduc
 | Escalera abierta (open-ended) | 8 | 31.5% | 17.4% |
 | Dos sobrecartas | 6 | 24.1% | 13.0% |
 | Escalera interior (gutshot) | 4 | 16.5% | 8.7% |
-| Pareja → set / set → full | 2 | 8.4% | 4.3% |
+| Pareja → set | 2 | 8.4% | 4.3% |
+| Set → full | 7 (flop) / 10 (turn) | 33.4% | 21.7% |
 
 </div>
 
