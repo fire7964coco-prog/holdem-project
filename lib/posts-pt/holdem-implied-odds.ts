@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Odds implícitas são as fichas extras que você espera ganhar nas próximas ruas quando o seu projeto acerta. Elas deixam você pagar com lucro um projeto que só as pot odds mandariam foldar — mas só se os stacks forem profundos e o adversário realmente for pagar você.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-08-09",
-  masterUpdated: "2026-07-19",
+  updated: "2026-08-12",
+  masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💰",
@@ -101,12 +101,12 @@ O mesmo call de $50, decisões opostas — e as cartas nunca mudaram. O que mudo
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Projeto | Outs | Hit % (1 carta) | Stacks atrás necessários |
+| Projeto | Outs | Hit % (próxima carta) | Stacks atrás necessários |
 |:---|:---:|:---:|:---:|
-| Flush draw | 9 | 19,6% | ~8–10× o call |
-| Sequência aberta dos dois lados | 8 | 17,4% | ~8–10× o call |
-| Set (par na mão) | 2→set | ~11,8% no flop | ~15–20× o call |
-| Gutshot (sequência por dentro) | 4 | 8,7% | ~20×+ (raramente vale a pena) |
+| Flush draw | 9 | 19,6% (turn → river) | ~8–10× o call |
+| Sequência aberta dos dois lados | 8 | 17,4% (turn → river) | ~8–10× o call |
+| Set (par na mão) | 2→set | ~11,8% (no flop) | ~15–20× o call |
+| Gutshot (sequência por dentro) | 4 | 8,7% (turn → river) | ~20×+ (raramente vale a pena) |
 
 </div>
 

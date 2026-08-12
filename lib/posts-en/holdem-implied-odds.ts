@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Implied odds are the extra chips you expect to win on later streets when your draw hits. They let you profitably call a draw that pot odds alone say to fold — but only if stacks are deep and your opponent will actually pay you off.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-07-19",
+  updated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💰",
@@ -100,12 +100,12 @@ Same $50 call, opposite decisions — and the cards never changed. What changed 
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Draw | Outs | Hit % (1 card) | Stacks behind needed |
+| Draw | Outs | Hit % (next card) | Stacks behind needed |
 |:---|:---:|:---:|:---:|
-| Flush draw | 9 | 19.6% | ~8–10× the call |
-| Open-ended straight | 8 | 17.4% | ~8–10× the call |
-| Set (pocket pair) | 2→set | ~11.8% flop | ~15–20× the call |
-| Gutshot straight | 4 | 8.7% | ~20×+ (rarely worth it) |
+| Flush draw | 9 | 19.6% (turn → river) | ~8–10× the call |
+| Open-ended straight | 8 | 17.4% (turn → river) | ~8–10× the call |
+| Set (pocket pair) | 2→set | ~11.8% (on the flop) | ~15–20× the call |
+| Gutshot straight | 4 | 8.7% (turn → river) | ~20×+ (rarely worth it) |
 
 </div>
 

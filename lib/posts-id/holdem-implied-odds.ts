@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Implied odds adalah chip tambahan yang Anda harapkan menang di street berikutnya saat draw Anda jadi. Ia membuat Anda bisa call sebuah draw yang menurut pot odds saja harus di-fold — tapi hanya jika stack dalam dan lawan benar-benar akan membayar Anda.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-08-09",
-  masterUpdated: "2026-07-19",
+  updated: "2026-08-12",
+  masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "11 mnt",
   emoji: "💰",
@@ -101,12 +101,12 @@ Call $50 yang sama, keputusan berlawanan — dan kartunya tak pernah berubah. Ya
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Draw | Outs | Jadi % (1 kartu) | Stack di belakang dibutuhkan |
+| Draw | Outs | Jadi % (kartu berikutnya) | Stack di belakang dibutuhkan |
 |:---|:---:|:---:|:---:|
-| Flush draw | 9 | 19,6% | ~8–10× call |
-| Open-ended straight | 8 | 17,4% | ~8–10× call |
-| Set (pocket pair) | 2→set | ~11,8% flop | ~15–20× call |
-| Gutshot straight | 4 | 8,7% | ~20×+ (jarang sepadan) |
+| Flush draw | 9 | 19,6% (turn → river) | ~8–10× call |
+| Open-ended straight | 8 | 17,4% (turn → river) | ~8–10× call |
+| Set (pocket pair) | 2→set | ~11,8% (di flop) | ~15–20× call |
+| Gutshot straight | 4 | 8,7% (turn → river) | ~20×+ (jarang sepadan) |
 
 </div>
 

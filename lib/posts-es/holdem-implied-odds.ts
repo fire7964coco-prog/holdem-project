@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Las odds implícitas son las fichas extra que esperas ganar en las calles siguientes cuando ligas tu proyecto. Te permiten pagar de forma rentable un proyecto que las pot odds por sí solas dirían foldear — pero solo si los stacks son profundos y tu rival de verdad va a pagarte.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-07-24",
-  masterUpdated: "2026-07-19",
+  updated: "2026-08-12",
+  masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "💰",
@@ -101,12 +101,12 @@ El mismo call de $50, decisiones opuestas — y las cartas nunca cambiaron. Lo q
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Proyecto | Outs | % de ligar (1 carta) | Stack detrás necesario |
+| Proyecto | Outs | % de ligar (siguiente carta) | Stack detrás necesario |
 |:---|:---:|:---:|:---:|
-| Proyecto de color | 9 | 19.6% | ~8–10× el call |
-| Escalera abierta | 8 | 17.4% | ~8–10× el call |
-| Set (pareja servida) | 2→set | ~11.8% en flop | ~15–20× el call |
-| Escalera interior (gutshot) | 4 | 8.7% | ~20×+ (rara vez vale la pena) |
+| Proyecto de color | 9 | 19.6% (turn → river) | ~8–10× el call |
+| Escalera abierta | 8 | 17.4% (turn → river) | ~8–10× el call |
+| Set (pareja servida) | 2→set | ~11.8% (en el flop) | ~15–20× el call |
+| Escalera interior (gutshot) | 4 | 8.7% (turn → river) | ~20×+ (rara vez vale la pena) |
 
 </div>
 

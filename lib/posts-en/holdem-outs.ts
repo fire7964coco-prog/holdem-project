@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "An out is any card left in the deck that improves your hand to a likely winner. Count them, then convert: multiply outs by 4 on the flop or by 2 on the turn to get your rough % to hit. A flush draw is 9 outs ≈ 36% by the river.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-08-11",
+  updated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🎯",
@@ -183,7 +183,7 @@ A. Outs are the cards remaining in the deck that improve your hand into a likely
 
 **Q. What does 9 outs mean in poker?**
 
-A. It means nine cards left in the deck can complete your hand — most often a flush draw (13 of a suit minus the 4 you can see). Nine outs works out to about 35% to hit by the river from the flop, or 19.1% on the single turn card. The rule holds for any count: more outs means a higher chance to hit, and multiplying your outs by 4 on the flop (or 2 on the turn) gives a quick percentage.
+A. It means nine cards left in the deck can complete your hand — most often a flush draw (13 of a suit minus the 4 you can see). Nine outs works out to about 35% to hit by the river from the flop — a two-card number that assumes no more betting comes at you — or 19.1% on the single turn card. The rule holds for any count: more outs means a higher chance to hit, and multiplying your outs by 4 on the flop (or 2 on the turn) gives a quick percentage.
 
 **Q. How do you count outs in poker?**
 
@@ -191,7 +191,7 @@ A. Name the hand you're chasing, count how many cards complete it (13 of each su
 
 **Q. How many outs does a flush draw have?**
 
-A. Nine. There are 13 cards of each suit; with two in your hand and two on the board you can see four, leaving 9 unseen cards that complete your flush. That's roughly 35% to hit by the river from the flop.
+A. Nine. There are 13 cards of each suit; with two in your hand and two on the board you can see four, leaving 9 unseen cards that complete your flush. That's roughly 35% to hit by the river from the flop, or 19.1% on the next card alone if there's still betting to come.
 
 **Q. How many outs does an open-ended straight draw have?**
 
@@ -207,7 +207,7 @@ A. Cards that complete your hand but can still lose — a flush card when a bigg
 
 **Q. How many outs is a flush draw plus a straight draw?**
 
-A. 15, not 17. A flush draw is 9 outs and an open-ended straight is 8, but two of the straight cards are also your suit and are already counted in the flush — so you subtract the overlap. Fifteen outs is a favorite to hit by the river (about 54%).
+A. 15, not 17. A flush draw is 9 outs and an open-ended straight is 8, but two of the straight cards are also your suit and are already counted in the flush — so you subtract the overlap. Fifteen outs is a favorite to hit by the river (about 54%) — but only when you'll see both cards; if a turn bet is still coming, it's the one-card 32% that prices your call.
 
 **Q. Do you count your opponent's cards when counting outs?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Um out é qualquer carta que sobrou no baralho e melhora sua mão para uma provável vencedora. Conte-os e converta: multiplique os outs por 4 no flop ou por 2 no turn para a % aproximada de acertar. Um projeto de flush são 9 outs ≈ 36% até o river.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-08-11",
+  updated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🎯",
@@ -187,7 +187,7 @@ A. Nomeie a mão que você está caçando, conte quantas cartas a completam (13 
 
 **Q. Quantos outs tem um projeto de flush?**
 
-A. Nove. Há 13 cartas de cada naipe; com duas na sua mão e duas na mesa você vê quatro, sobrando 9 cartas não vistas que completam seu flush. Isso é cerca de 35% de acertar até o river a partir do flop.
+A. Nove. Há 13 cartas de cada naipe; com duas na sua mão e duas na mesa você vê quatro, sobrando 9 cartas não vistas que completam seu flush. Isso é cerca de 35% de acertar até o river a partir do flop, ou 19,1% só na próxima carta se ainda vier aposta.
 
 **Q. Quantos outs tem um projeto aberto de sequência?**
 
@@ -203,7 +203,7 @@ A. Cartas que completam sua mão mas ainda podem perder — uma carta de flush q
 
 **Q. Quantos outs tem um projeto de flush mais um projeto de sequência?**
 
-A. 15, não 17. Um projeto de flush são 9 outs e um projeto aberto de sequência são 8, mas duas das cartas de sequência também são do seu naipe e já estão contadas no flush — então você subtrai a sobreposição. Quinze outs é favorito para acertar até o river (cerca de 54%).
+A. 15, não 17. Um projeto de flush são 9 outs e um projeto aberto de sequência são 8, mas duas das cartas de sequência também são do seu naipe e já estão contadas no flush — então você subtrai a sobreposição. Quinze outs é favorito para acertar até o river (cerca de 54%), mas só se você for ver as duas cartas; se ainda vier uma aposta no turn, quem precifica seu call é o número de uma carta, 32%.
 
 **Q. Você conta as cartas do adversário ao contar outs?**
 

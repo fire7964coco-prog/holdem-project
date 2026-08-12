@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un out es cualquier carta que queda en la baraja y convierte tu mano en una probable ganadora. Cuéntalos y conviértelos: multiplica los outs por 4 en el flop o por 2 en el turn para tu % aproximado de ligar. Un proyecto de color son 9 outs ≈ 36% para el river.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-08-11",
-  masterUpdated: "2026-08-11",
+  updated: "2026-08-12",
+  masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🎯",
@@ -184,7 +184,7 @@ A. Los outs son las cartas que quedan en la baraja y mejoran tu mano hasta una p
 
 **Q. ¿Qué significan 9 outs en el póker?**
 
-A. Significa que nueve cartas que quedan en la baraja pueden completar tu mano — casi siempre un proyecto de color (13 de un palo menos las 4 que ves). Nueve outs equivalen a un 35% de ligar para el river desde el flop, o un 19.1% en la única carta del turn. La regla vale para cualquier número: más outs significa más probabilidad de ligar, y multiplicar tus outs por 4 en el flop (o por 2 en el turn) te da un porcentaje rápido.
+A. Significa que nueve cartas que quedan en la baraja pueden completar tu mano — casi siempre un proyecto de color (13 de un palo menos las 4 que ves). Nueve outs equivalen a un 35% de ligar para el river desde el flop — una cifra de dos cartas que da por hecho que no te va a caer otra apuesta — o un 19.1% en la única carta del turn. La regla vale para cualquier número: más outs significa más probabilidad de ligar, y multiplicar tus outs por 4 en el flop (o por 2 en el turn) te da un porcentaje rápido.
 
 **Q. ¿Cómo se cuentan los outs en el póker?**
 
@@ -192,7 +192,7 @@ A. Nombra la mano que persigues, cuenta cuántas cartas la completan (13 de cada
 
 **Q. ¿Cuántos outs tiene un proyecto de color?**
 
-A. Nueve. Hay 13 cartas de cada palo; con dos en tu mano y dos en la mesa ves cuatro, dejando 9 cartas no vistas que completan tu color. Eso es más o menos un 35% de ligar para el river desde el flop.
+A. Nueve. Hay 13 cartas de cada palo; con dos en tu mano y dos en la mesa ves cuatro, dejando 9 cartas no vistas que completan tu color. Eso es más o menos un 35% de ligar para el river desde el flop, o un 19.1% solo con la siguiente carta si todavía queda ronda de apuestas.
 
 **Q. ¿Cuántos outs tiene un proyecto de escalera abierto?**
 
@@ -208,7 +208,7 @@ A. Cartas que completan tu mano pero aun así pueden perder — una carta de col
 
 **Q. ¿Cuántos outs es un proyecto de color más un proyecto de escalera?**
 
-A. 15, no 17. Un proyecto de color son 9 outs y una escalera abierta son 8, pero dos de las cartas de escalera son también de tu palo y ya están contadas en el color — así que restas el solapamiento. Quince outs es favorito para ligar para el river (alrededor del 54%).
+A. 15, no 17. Un proyecto de color son 9 outs y una escalera abierta son 8, pero dos de las cartas de escalera son también de tu palo y ya están contadas en el color — así que restas el solapamiento. Quince outs es favorito para ligar para el river (alrededor del 54%), pero solo si vas a ver las dos cartas; si aún te espera una apuesta en el turn, el que pone precio a tu call es el 32% de una carta.
 
 **Q. ¿Se cuentan las cartas del rival al contar outs?**
 

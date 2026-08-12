@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Sebuah out adalah kartu mana pun yang tersisa di deck yang mengubah tangan Anda menjadi kemungkinan pemenang. Hitung, lalu konversi: kalikan outs dengan 4 di flop atau dengan 2 di turn untuk mendapat persen kasar Anda. Flush draw adalah 9 outs ≈ 36% hingga river.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-08-11",
+  updated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🎯",
@@ -187,7 +187,7 @@ A. Sebutkan tangan yang Anda kejar, hitung berapa kartu yang melengkapinya (13 t
 
 **Q. Berapa outs yang dimiliki flush draw?**
 
-A. Sembilan. Ada 13 kartu tiap jenis; dengan dua di tangan dan dua di meja Anda bisa melihat empat, menyisakan 9 kartu tak terlihat yang melengkapi flush Anda. Itu kira-kira 35% untuk hit hingga river dari flop.
+A. Sembilan. Ada 13 kartu tiap jenis; dengan dua di tangan dan dua di meja Anda bisa melihat empat, menyisakan 9 kartu tak terlihat yang melengkapi flush Anda. Itu kira-kira 35% untuk hit hingga river dari flop, atau 19,1% pada kartu berikutnya saja kalau masih ada taruhan yang menanti.
 
 **Q. Berapa outs yang dimiliki open-ended straight draw?**
 
@@ -203,7 +203,7 @@ A. Kartu yang melengkapi tangan Anda tapi masih bisa kalah — kartu flush saat 
 
 **Q. Berapa outs untuk flush draw plus straight draw?**
 
-A. 15, bukan 17. Flush draw adalah 9 outs dan open-ended straight adalah 8, tapi dua kartu straight juga jenis Anda dan sudah terhitung dalam flush — jadi Anda kurangi tumpang tindihnya. Lima belas outs adalah favorit untuk hit hingga river (sekitar 54%).
+A. 15, bukan 17. Flush draw adalah 9 outs dan open-ended straight adalah 8, tapi dua kartu straight juga jenis Anda dan sudah terhitung dalam flush — jadi Anda kurangi tumpang tindihnya. Lima belas outs adalah favorit untuk hit hingga river (sekitar 54%), tapi hanya kalau Anda akan melihat kedua kartu; kalau taruhan turn masih menanti, yang menentukan harga call Anda adalah angka satu-kartu 32%.
 
 **Q. Apakah Anda menghitung kartu lawan saat menghitung outs?**
 
