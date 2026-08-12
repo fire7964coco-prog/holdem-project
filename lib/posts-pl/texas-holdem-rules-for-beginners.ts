@@ -293,7 +293,7 @@ Nie musisz być matematycznym geniuszem. Wystarczy, że przed sprawdzeniem zakł
 
 ### Jak działają pot odds (jeden przykład)
 
-Wyobraź sobie, że w puli jest **$100**, a rywal stawia **$20**. Żeby zostać w rozdaniu, musisz sprawdzić $20. Cała pula urosłaby wtedy do $120.
+Wyobraź sobie, że w puli jest **$100**, a rywal stawia **$20**. Żeby zostać w rozdaniu, musisz sprawdzić $20. Przed twoim callem w puli jest **$120**, po nim — **$140**.
 
 Twoje pot odds to **$120 do $20**, czyli **6 do 1**. To znaczy, że aby ten call był opłacalny, musisz wygrywać co najmniej **1 raz na 7** (około 14%).
 

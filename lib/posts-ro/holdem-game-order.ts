@@ -285,7 +285,7 @@ Ca să câștigi la showdown, trebuie să știi instantaneu ce mână bate pe ca
 | 7 | Trei de un fel (Three of a Kind) | Q♠ Q♥ Q♦ 5♠ 7♥ | Ocazională |
 | 8 | Dublă Pereche (Two Pair) | J♠ J♥ 8♦ 8♣ A♠ | Comună |
 | 9 | Pereche (One Pair) | K♠ K♥ 7♦ 4♣ 2♠ | Foarte comună |
-| 10 | Carte Mare (High Card) | A♠ Q♥ 8♦ 5♣ 2♠ | Foarte comună |
+| 10 | Carte Mare (High Card) | A♠ Q♥ 8♦ 5♣ 2♠ | Comună – dar mai rară decât dubla pereche |
 
 </div>
 

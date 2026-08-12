@@ -285,7 +285,7 @@ Głębszy przewodnik po tym, kiedy używać którego zagrania — z tabelą decy
 | 7 | Trójka | Q♠ Q♥ Q♦ 5♠ 7♥ | Sporadyczna |
 | 8 | Dwie pary | J♠ J♥ 8♦ 8♣ A♠ | Częste |
 | 9 | Para | K♠ K♥ 7♦ 4♣ 2♠ | Bardzo częsta |
-| 10 | Najwyższa karta | A♠ Q♥ 8♦ 5♣ 2♠ | Bardzo częsta |
+| 10 | Najwyższa karta | A♠ Q♥ 8♦ 5♣ 2♠ | Częsta – ale rzadsza niż dwie pary |
 
 </div>
 

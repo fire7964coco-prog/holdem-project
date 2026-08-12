@@ -134,7 +134,7 @@ Same pair again — and my 9 never even got a vote. It was pushed down to second
 
 ## Does Four of a Kind Have a Kicker?
 
-**Yes — four of a kind has a one-card kicker, but it almost never decides a hand in Hold'em because the quads are usually shared on the board.** This is the exception most guides fumble by lumping quads in with "five-card hands that have no kicker."
+**Yes — four of a kind has a one-card kicker, but it almost never decides a hand in Hold'em: that would take two players tied on the very same quads, which requires all four cards to sit on the board — a rare runout.** This is the exception most guides fumble by lumping quads in with "five-card hands that have no kicker."
 
 The math is clear: four cards make the quad, one card is the kicker. It only matters when two players somehow tie on the *same* four of a kind — which in Hold'em requires all four to sit on the board (since there are only four of each rank). If the board is ==b:5♠ 5♥ 5♦ 5♣ K♦==, everyone has quad fives, and the fifth card is the kicker: a player holding an ace plays ==g:5-5-5-5-A== and beats a player who takes the board's ==5-5-5-5-K.== Rare, but real — and being right about the edge cases is what separates a trustworthy guide from a hand-wavy one.
 

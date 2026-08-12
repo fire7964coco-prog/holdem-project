@@ -285,7 +285,7 @@ Para ganar en el showdown necesitas saber al instante qué mano gana a cuál. Es
 | 7 | Trío | Q♠ Q♥ Q♦ 5♠ 7♥ | Ocasional |
 | 8 | Doble Pareja | J♠ J♥ 8♦ 8♣ A♠ | Común |
 | 9 | Pareja | K♠ K♥ 7♦ 4♣ 2♠ | Muy común |
-| 10 | Carta Alta | A♠ Q♥ 8♦ 5♣ 2♠ | Muy común |
+| 10 | Carta Alta | A♠ Q♥ 8♦ 5♣ 2♠ | Común, pero menos que la doble pareja |
 
 </div>
 

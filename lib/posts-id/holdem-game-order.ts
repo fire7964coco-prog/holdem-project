@@ -284,7 +284,7 @@ Untuk menang di showdown, Anda harus langsung tahu kombinasi mana mengalahkan ma
 | 7 | Three of a Kind | Q♠ Q♥ Q♦ 5♠ 7♥ | Kadang-kadang |
 | 8 | Two Pair | J♠ J♥ 8♦ 8♣ A♠ | Umum |
 | 9 | One Pair | K♠ K♥ 7♦ 4♣ 2♠ | Sangat umum |
-| 10 | High Card | A♠ Q♥ 8♦ 5♣ 2♠ | Sangat umum |
+| 10 | High Card | A♠ Q♥ 8♦ 5♣ 2♠ | Umum – tapi lebih jarang dari Two Pair |
 
 </div>
 

@@ -293,7 +293,7 @@ Bạn không cần giỏi toán. Bạn chỉ cần trả lời một câu hỏi 
 
 ### Pot odds hoạt động thế nào (một ví dụ)
 
-Hình dung pot đang là **$100** và đối thủ cược **$20**. Để tiếp tục ván bài, bạn phải theo $20. Tổng pot sẽ thành $120.
+Hình dung pot đang là **$100** và đối thủ cược **$20**. Để tiếp tục ván bài, bạn phải theo $20. Trước khi bạn theo, pot là **$120**; sau đó là **$140**.
 
 Pot odds của bạn là **$120 so với $20**, tức **6:1**. Nghĩa là bạn cần thắng ít nhất **1 trong 7 lần** (khoảng 14%) thì lần theo bài này mới có lãi.
 

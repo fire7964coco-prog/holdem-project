@@ -285,7 +285,7 @@ Bài học: ==r:khi river ghép bài của A thành Hai Đôi, nó *có cảm gi
 | 7 | Xám / Bộ Ba (Three of a Kind) | Q♠ Q♥ Q♦ 5♠ 7♥ | Thỉnh thoảng |
 | 8 | Hai Đôi (Two Pair) | J♠ J♥ 8♦ 8♣ A♠ | Phổ biến |
 | 9 | Một Đôi (One Pair) | K♠ K♥ 7♦ 4♣ 2♠ | Rất phổ biến |
-| 10 | Mậu Thầu (High Card) | A♠ Q♥ 8♦ 5♣ 2♠ | Rất phổ biến |
+| 10 | Mậu Thầu (High Card) | A♠ Q♥ 8♦ 5♣ 2♠ | Phổ biến – nhưng ít hơn Hai Đôi |
 
 </div>
 

@@ -293,7 +293,7 @@ Hindi mo kailangang maging math expert. Kailangan mo lang maintindihan ang isang
 
 ### Paano gumagana ang pot odds (isang halimbawa)
 
-Isipin mong ang pot ay **$100** at nag-bet ang kalaban mo ng **$20**. Para manatili sa hand, kailangan mong i-call ang $20. Magiging $120 ang total pot.
+Isipin mong ang pot ay **$100** at nag-bet ang kalaban mo ng **$20**. Para manatili sa hand, kailangan mong i-call ang $20. Bago ang call mo ay **$120** ang pot; pagkatapos nito, **$140**.
 
 Ang pot odds mo ay **$120 kontra $20**, o **6 to 1**. Ibig sabihin, kailangan mong manalo nang hindi bababa sa **1 sa 7 na beses** (mga 14%) para maging profitable ang call na ito.
 

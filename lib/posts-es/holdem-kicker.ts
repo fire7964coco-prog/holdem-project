@@ -135,7 +135,7 @@ Misma pareja otra vez — y mi 9 ni siquiera llegó a votar. Quedó relegado a s
 
 ## ¿El póker (cuádruple) tiene kicker?
 
-**Sí — el póker tiene un kicker de una carta, pero casi nunca decide una mano en Hold'em porque las cuatro iguales suelen estar compartidas en la mesa.** Esta es la excepción que la mayoría de las guías estropea al meter el póker en el saco de "manos de cinco cartas sin kicker".
+**Sí — el póker tiene un kicker de una carta, pero casi nunca decide una mano en Hold'em: haría falta que dos jugadores empataran con el mismo póker, y eso exige que las cuatro cartas estén en la mesa — algo poco frecuente.** Esta es la excepción que la mayoría de las guías estropea al meter el póker en el saco de "manos de cinco cartas sin kicker".
 
 La matemática es clara: cuatro cartas forman el póker, una carta es el kicker. Solo importa cuando dos jugadores empatan de algún modo con el *mismo* póker — lo que en Hold'em exige que las cuatro estén en la mesa (ya que solo hay cuatro de cada valor). Si la mesa es ==b:5♠ 5♥ 5♦ 5♣ K♦==, todos tienen póker de cincos, y la quinta carta es el kicker: un jugador con un as juega ==g:5-5-5-5-A== y gana al que se queda con el ==5-5-5-5-K== de la mesa. Raro, pero real — y acertar en los casos límite es lo que separa a una guía fiable de una que va a ojo.
 

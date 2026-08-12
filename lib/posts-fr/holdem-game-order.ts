@@ -285,7 +285,7 @@ Pour gagner à l'abattage, tu dois savoir instantanément quelle main bat quelle
 | 7 | Brelan | Q♠ Q♥ Q♦ 5♠ 7♥ | Occasionnel |
 | 8 | Double Paire | J♠ J♥ 8♦ 8♣ A♠ | Courant |
 | 9 | Paire | K♠ K♥ 7♦ 4♣ 2♠ | Très courant |
-| 10 | Carte Haute | A♠ Q♥ 8♦ 5♣ 2♠ | Très courant |
+| 10 | Carte Haute | A♠ Q♥ 8♦ 5♣ 2♠ | Courant – mais plus rare que la double paire |
 
 </div>
 

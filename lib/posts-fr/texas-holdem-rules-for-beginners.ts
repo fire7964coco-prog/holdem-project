@@ -293,7 +293,7 @@ Pas besoin d'être un génie des maths. Tu as juste besoin de te poser une quest
 
 ### Comment fonctionnent les pot odds (un exemple)
 
-Imagine que le pot est de **$100** et que ton adversaire mise **$20**. Pour rester dans le coup, tu dois suivre $20. Le pot total passerait à $120.
+Imagine que le pot est de **$100** et que ton adversaire mise **$20**. Pour rester dans le coup, tu dois suivre $20. Avant ton call, le pot est de **$120** ; après, de **$140**.
 
 Tes pot odds sont de **$120 contre $20**, soit **6 contre 1**. Ça veut dire que tu dois gagner au moins **1 fois sur 7** (environ 14 %) pour que ce call soit rentable.
 

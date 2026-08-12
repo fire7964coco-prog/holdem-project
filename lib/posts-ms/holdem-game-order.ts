@@ -285,7 +285,7 @@ Untuk menang di showdown, anda perlu tahu serta-merta tangan mana menewaskan tan
 | 7 | Three of a Kind | Q♠ Q♥ Q♦ 5♠ 7♥ | Sekali-sekala |
 | 8 | Two Pair | J♠ J♥ 8♦ 8♣ A♠ | Biasa |
 | 9 | Pair | K♠ K♥ 7♦ 4♣ 2♠ | Sangat biasa |
-| 10 | High Card | A♠ Q♥ 8♦ 5♣ 2♠ | Sangat biasa |
+| 10 | High Card | A♠ Q♥ 8♦ 5♣ 2♠ | Biasa – tetapi lebih jarang daripada Two Pair |
 
 </div>
 

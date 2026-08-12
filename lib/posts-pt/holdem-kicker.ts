@@ -134,7 +134,7 @@ Mesmo par de novo — e meu 9 nem teve direito a voto. Ele foi empurrado para se
 
 ## A quadra tem kicker?
 
-**Sim — a quadra tem um kicker de uma carta, mas ele quase nunca decide uma mão no Hold'em porque a quadra costuma estar compartilhada na mesa.** Esta é a exceção que a maioria dos guias erra ao jogar a quadra no balaio das "mãos de cinco cartas que não têm kicker".
+**Sim — a quadra tem um kicker de uma carta, mas ele quase nunca decide uma mão no Hold'em: seria preciso dois jogadores empatados na mesma quadra, o que exige as quatro cartas na mesa — algo raro.** Esta é a exceção que a maioria dos guias erra ao jogar a quadra no balaio das "mãos de cinco cartas que não têm kicker".
 
 A conta é clara: quatro cartas fazem a quadra, uma carta é o kicker. Ela só importa quando dois jogadores de alguma forma empatam na *mesma* quadra — o que, no Hold'em, exige que as quatro estejam na mesa (já que só há quatro de cada valor). Se a mesa é ==b:5♠ 5♥ 5♦ 5♣ K♦==, todo mundo tem quadra de cincos, e a quinta carta é o kicker: um jogador com um ás joga ==g:5-5-5-5-A== e ganha de quem fica com o ==5-5-5-5-K== da mesa. Raro, mas real — e estar certo nos casos de borda é o que separa um guia confiável de um vago.
 

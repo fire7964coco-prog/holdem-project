@@ -284,7 +284,7 @@ To win at showdown, you need to instantly know which hand beats which. This is t
 | 7 | Three of a Kind | Q♠ Q♥ Q♦ 5♠ 7♥ | Occasional |
 | 8 | Two Pair | J♠ J♥ 8♦ 8♣ A♠ | Common |
 | 9 | One Pair | K♠ K♥ 7♦ 4♣ 2♠ | Very common |
-| 10 | High Card | A♠ Q♥ 8♦ 5♣ 2♠ | Very common |
+| 10 | High Card | A♠ Q♥ 8♦ 5♣ 2♠ | Common — but rarer than two pair |
 
 </div>
 

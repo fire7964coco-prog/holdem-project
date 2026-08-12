@@ -285,7 +285,7 @@ Para vencer no showdown, você precisa saber na hora qual mão ganha de qual. Es
 | 7 | Trinca | Q♠ Q♥ Q♦ 5♠ 7♥ | Ocasional |
 | 8 | Dois Pares | J♠ J♥ 8♦ 8♣ A♠ | Comum |
 | 9 | Par | K♠ K♥ 7♦ 4♣ 2♠ | Muito comum |
-| 10 | Carta Alta | A♠ Q♥ 8♦ 5♣ 2♠ | Muito comum |
+| 10 | Carta Alta | A♠ Q♥ 8♦ 5♣ 2♠ | Comum – mas mais rara que dois pares |
 
 </div>
 

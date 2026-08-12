@@ -285,7 +285,7 @@ Para manalo sa showdown, kailangan mong malaman agad kung aling hand ang tinatal
 | 7 | Three of a Kind | Q♠ Q♥ Q♦ 5♠ 7♥ | Paminsan-minsan |
 | 8 | Two Pair | J♠ J♥ 8♦ 8♣ A♠ | Karaniwan |
 | 9 | One Pair | K♠ K♥ 7♦ 4♣ 2♠ | Sobrang karaniwan |
-| 10 | High Card | A♠ Q♥ 8♦ 5♣ 2♠ | Sobrang karaniwan |
+| 10 | High Card | A♠ Q♥ 8♦ 5♣ 2♠ | Karaniwan – pero mas bihira kaysa Two Pair |
 
 </div>
 

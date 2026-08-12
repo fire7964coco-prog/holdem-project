@@ -293,7 +293,7 @@ Anda tidak perlu jadi pakar matematik. Anda cuma perlu faham satu soalan sebelum
 
 ### Bagaimana pot odds berfungsi (satu contoh)
 
-Bayangkan pot ialah **$100** dan lawan anda bertaruh **$20**. Untuk kekal dalam tangan, anda perlu call $20. Jumlah pot akan menjadi $120.
+Bayangkan pot ialah **$100** dan lawan anda bertaruh **$20**. Untuk kekal dalam tangan, anda perlu call $20. Sebelum call anda, pot ialah **$120**; selepasnya, **$140**.
 
 Pot odds anda ialah **$120 kepada $20**, iaitu **6 kepada 1**. Bermakna anda perlu menang sekurang-kurangnya **1 daripada 7 kali** (kira-kira 14%) untuk call ini menguntungkan.
 

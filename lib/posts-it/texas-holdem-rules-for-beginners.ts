@@ -293,7 +293,7 @@ Non devi essere un genio della matematica. Ti basta capire una domanda prima di 
 
 ### Come funzionano le probabilità del piatto (un esempio)
 
-Immagina che il piatto sia di **$100** e il tuo avversario punti **$20**. Per restare nella mano devi chiamare $20. Il piatto totale diventerebbe $120.
+Immagina che il piatto sia di **$100** e il tuo avversario punti **$20**. Per restare nella mano devi chiamare $20. Prima del tuo call il piatto è di **$120**; dopo, di **$140**.
 
 Le tue probabilità del piatto sono **$120 contro $20**, ovvero **6 a 1**. Significa che devi vincere almeno **1 volta su 7** (circa il 14%) perché questa chiamata sia profittevole.
 

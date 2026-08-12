@@ -285,7 +285,7 @@ Per vincere allo showdown devi sapere all'istante quale mano batte quale. Questo
 | 7 | Tris | Q♠ Q♥ Q♦ 5♠ 7♥ | Occasionale |
 | 8 | Doppia Coppia | J♠ J♥ 8♦ 8♣ A♠ | Comune |
 | 9 | Coppia | K♠ K♥ 7♦ 4♣ 2♠ | Molto comune |
-| 10 | Carta Alta | A♠ Q♥ 8♦ 5♣ 2♠ | Molto comune |
+| 10 | Carta Alta | A♠ Q♥ 8♦ 5♣ 2♠ | Comune – ma più rara della doppia coppia |
 
 </div>
 

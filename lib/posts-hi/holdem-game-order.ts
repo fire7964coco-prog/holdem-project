@@ -285,7 +285,7 @@ Showdown जीतने के लिए आपको तुरंत पता
 | 7 | Three of a Kind | Q♠ Q♥ Q♦ 5♠ 7♥ | यदा-कदा |
 | 8 | Two Pair | J♠ J♥ 8♦ 8♣ A♠ | अक्सर |
 | 9 | One Pair | K♠ K♥ 7♦ 4♣ 2♠ | बहुत अक्सर |
-| 10 | High Card | A♠ Q♥ 8♦ 5♣ 2♠ | बहुत अक्सर |
+| 10 | High Card | A♠ Q♥ 8♦ 5♣ 2♠ | अक्सर – पर Two Pair से कम |
 
 </div>
 

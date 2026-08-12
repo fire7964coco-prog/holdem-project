@@ -285,7 +285,7 @@ Ili kushinda showdown, unahitaji kujua papo hapo mkono upi unashinda upi. Huu nd
 | 7 | Three of a Kind | Q♠ Q♥ Q♦ 5♠ 7♥ | Mara chache |
 | 8 | Two Pair | J♠ J♥ 8♦ 8♣ A♠ | Ya kawaida |
 | 9 | Pair | K♠ K♥ 7♦ 4♣ 2♠ | Ya kawaida sana |
-| 10 | High Card | A♠ Q♥ 8♦ 5♣ 2♠ | Ya kawaida sana |
+| 10 | High Card | A♠ Q♥ 8♦ 5♣ 2♠ | Ya kawaida – lakini nadra kuliko Two Pair |
 
 </div>
 

@@ -293,7 +293,7 @@ Matematik dehası olmana gerek yok. Bir bahsi görmeden önce sadece tek bir sor
 
 ### Pot odds nasıl çalışır (tek örnek)
 
-Diyelim ki pot **$100** ve rakibin **$20** bahis yaptı. Elde kalmak için $20 call yapman gerekiyor. Toplam pot $120 olur.
+Diyelim ki pot **$100** ve rakibin **$20** bahis yaptı. Elde kalmak için $20 call yapman gerekiyor. Call'ından önce potta **$120**, sonrasında **$140** olur.
 
 Pot odds'un **$120'ye $20**, yani **6'ya 1**. Bu, bu call'ın kârlı olması için en az **7'de 1** (yaklaşık %14) kazanman gerektiği anlamına gelir.
 

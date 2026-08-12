@@ -293,7 +293,7 @@ Nu trebuie să fii expert în matematică. Trebuie doar să înțelegi o întreb
 
 ### Cum funcționează pot odds (un exemplu)
 
-Imaginează-ți că potul e de **$100** și adversarul pariază **$20**. Ca să rămâi în mână, trebuie să plătești $20. Potul total ar ajunge la $120.
+Imaginează-ți că potul e de **$100** și adversarul pariază **$20**. Ca să rămâi în mână, trebuie să plătești $20. Înainte de call-ul tău potul e de **$120**, iar după el, de **$140**.
 
 Pot odds-ul tău e **$120 la $20**, adică **6 la 1**. Asta înseamnă că trebuie să câștigi măcar **1 din 7 dăți** (cam 14%) pentru ca plata asta să fie profitabilă.
 

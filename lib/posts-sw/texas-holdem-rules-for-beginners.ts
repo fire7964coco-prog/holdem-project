@@ -293,7 +293,7 @@ Hauhitaji kuwa mtaalamu wa hesabu. Unahitaji tu kuelewa swali moja kabla ya kuit
 
 ### Jinsi pot odds zinavyofanya kazi (mfano mmoja)
 
-Fikiria pot ni **$100** na mpinzani wako anaweka dau la **$20**. Ili kubaki kwenye mkono, lazima u-call $20. Pot jumla itakuwa $120.
+Fikiria pot ni **$100** na mpinzani wako anaweka dau la **$20**. Ili kubaki kwenye mkono, lazima u-call $20. Kabla ya call yako pot ni **$120**, baada yake ni **$140**.
 
 Pot odds zako ni **$120 kwa $20**, au **6 kwa 1**. Hilo linamaanisha unahitaji kushinda angalau **mara 1 kati ya 7** (takribani 14%) ili call hii iwe na faida.
 

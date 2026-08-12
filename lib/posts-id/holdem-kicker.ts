@@ -134,7 +134,7 @@ Pair yang sama lagi — dan 9 saya bahkan tak dapat suara. Ia terdorong ke kicke
 
 ## Apakah Four of a Kind Punya Kicker?
 
-**Ya — four of a kind punya kicker satu-kartu, tapi ia hampir tak pernah menentukan tangan di Hold'em karena quads-nya biasanya dibagi di meja.** Inilah pengecualian yang paling sering diselewengkan banyak panduan dengan menggabungkan quads ke "tangan lima-kartu yang tak punya kicker".
+**Ya — four of a kind punya kicker satu-kartu, tapi ia hampir tak pernah menentukan tangan di Hold'em: itu butuh dua pemain seri di quads yang sama, dan itu mengharuskan keempat kartunya ada di meja — runout yang langka.** Inilah pengecualian yang paling sering diselewengkan banyak panduan dengan menggabungkan quads ke "tangan lima-kartu yang tak punya kicker".
 
 Matematikanya jelas: empat kartu membentuk quad, satu kartu adalah kicker. Ia baru penting saat dua pemain entah bagaimana seri di four of a kind yang *sama* — yang di Hold'em mengharuskan keempatnya ada di meja (karena tiap nilai cuma ada empat). Kalau mejanya ==b:5♠ 5♥ 5♦ 5♣ K♦==, semua orang punya quad five, dan kartu kelima adalah kicker: pemain yang pegang sebuah ace memainkan ==g:5-5-5-5-A== dan mengalahkan pemain yang mengambil ==5-5-5-5-K.== dari meja. Langka, tapi nyata — dan benar soal kasus tepi inilah yang memisahkan panduan tepercaya dari yang asal-asalan.
 

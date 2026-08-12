@@ -285,7 +285,7 @@ Showdown'da kazanmak için hangi elin hangisini yendiğini anında bilmen gereki
 | 7 | Üçlü (Three of a Kind) | Q♠ Q♥ Q♦ 5♠ 7♥ | Bazen |
 | 8 | İki Çift (Two Pair) | J♠ J♥ 8♦ 8♣ A♠ | Sık |
 | 9 | Çift (Pair) | K♠ K♥ 7♦ 4♣ 2♠ | Çok sık |
-| 10 | Yüksek Kart (High Card) | A♠ Q♥ 8♦ 5♣ 2♠ | Çok sık |
+| 10 | Yüksek Kart (High Card) | A♠ Q♥ 8♦ 5♣ 2♠ | Sık – ama iki çiftten daha seyrek |
 
 </div>
 
