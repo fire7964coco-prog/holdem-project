@@ -88,13 +88,13 @@ Itulah tangan 8-8-8-A-K saya: J-10 saya dan 5-2 lawan sama-sama main trip delapa
 
 > **Ceknya:** apakah lima kartu terbaik *Anda* — memakai setidaknya satu kartu tertutup — mengalahkan lima kartu board itu sendiri? Jika ya, Anda main tangan Anda. Jika tidak, board yang main dan Anda kemungkinan akan chop. Metode lengkap untuk memindai board dengan cara ini ada di [cara membaca board dan menemukan 5 kartu terbaik](/id/blog/holdem-reading-the-board).
 
-:::tip[Jika board yang main dan seseorang bet di river, **fold secara refleks justru kesalahannya**. Kalau tidak ada tangan yang bisa mengalahkan board, seri sudah pasti, dan call tetap mengembalikan setengah dari semua chip yang sudah ada di pot — fold berarti menyerahkan setengah itu cuma-cuma. Kalau board masih bisa dikalahkan, hitung frekuensinya: melawan bet sebesar pot, Anda butuh lawan juga sekadar memainkan board sekitar 2 dari 3 kali; melawan setengah pot, sekitar separuh waktu. Fold baru benar kalau dia hampir selalu punya tangan sungguhan.]:::
+:::tip[Jika board yang main dan seseorang bet di river, **fold secara refleks justru kesalahannya**. Kalau tidak ada tangan yang bisa mengalahkan board, seri sudah pasti, dan call tetap mengembalikan setengah dari semua chip yang sudah ada di pot — fold berarti menyerahkan setengah itu cuma-cuma. Kalau board masih bisa dikalahkan, hitung frekuensinya: melawan bet sebesar pot, Anda butuh lawan juga sekadar memainkan board sekitar 2 dari 3 kali; melawan setengah pot, sekitar separuh waktu. Itu ambang yang tinggi: melawan bet sebesar pot, fold baru benar kalau dia punya tangan sungguhan lebih dari **satu dari tiga kali** — dan di board yang bermain sendiri, itulah keadaan normalnya.]:::
 
 ---
 
 ## 3 Hal yang Tak Pernah Memecah Seri di Poker
 
-![Royal flush sekop = royal flush hati dengan tanda sama dengan emas di antaranya — jenis kartu tak pernah menentukan pemenang di Texas Hold'em](/images/holdem-split-pot-suit-equals.webp "Nilai yang identik selalu dibagi — tidak ada peringkat jenis di Texas Hold'em")
+![Board K♦ K♣ Q♥ Q♦ J♠ dengan K♠ 7♣ di kiri dan K♥ 2♦ di kanan serta tanda sama dengan emas di antaranya — keduanya membentuk full house yang sama K-K-K-Q-Q, dan jenis kartu tak pernah menentukan pemenang di Texas Hold'em](/images/holdem-split-pot-suit-equals.webp "Nilai yang identik selalu dibagi — tidak ada peringkat jenis di Texas Hold'em")
 
 Inilah miskonsepsi di balik sebagian besar perdebatan "tunggu, kenapa ini dibagi?!".
 

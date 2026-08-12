@@ -89,13 +89,13 @@ Es mi mano 8-8-8-A-K: mi J-10 y su 5-2 jugaban los dos el trío de ochos de la m
 
 > **La comprobación:** ¿*tus* mejores cinco —usando al menos una carta tuya— superan las cinco de la mesa? Si sí, juegas tu mano. Si no, la mesa juega y lo más probable es que partas. El método completo para escanear una mesa así lo tienes en [cómo leer la mesa y encontrar tus mejores cinco](/es/blog/holdem-reading-the-board).
 
-:::tip[Si la mesa juega y alguien apuesta en el river, **el error es foldear en automático**. Cuando nada puede superar la mesa el empate está asegurado, y pagar te devuelve la mitad de todo lo que ya había en el bote — foldear regala esa mitad gratis. Cuando la mesa sí se puede superar, calcula la frecuencia: ante una apuesta del tamaño del bote necesitas que tu rival también esté jugando la mesa unas 2 de cada 3 veces; ante medio bote, la mitad de las veces. Foldear solo es correcto si casi siempre tiene mano de verdad.]:::
+:::tip[Si la mesa juega y alguien apuesta en el river, **el error es foldear en automático**. Cuando nada puede superar la mesa el empate está asegurado, y pagar te devuelve la mitad de todo lo que ya había en el bote — foldear regala esa mitad gratis. Cuando la mesa sí se puede superar, calcula la frecuencia: ante una apuesta del tamaño del bote necesitas que tu rival también esté jugando la mesa unas 2 de cada 3 veces; ante medio bote, la mitad de las veces. Es un listón alto: ante una apuesta del tamaño del bote, foldear solo es correcto cuando tiene mano de verdad más de **una de cada tres veces** — y en una mesa que se juega sola, eso es lo habitual.]:::
 
 ---
 
 ## 3 cosas que nunca rompen un empate en el póker
 
-![Escalera real de picas = escalera real de corazones con un signo de igual dorado en medio — los palos nunca deciden al ganador en Texas Hold'em](/images/holdem-split-pot-suit-equals.webp "Valores idénticos siempre parten — no hay jerarquía de palos en Texas Hold'em")
+![Mesa K♦ K♣ Q♥ Q♦ J♠ con K♠ 7♣ a la izquierda y K♥ 2♦ a la derecha y un signo de igual dorado en medio — ambos forman el mismo full K-K-K-Q-Q, y los palos nunca deciden al ganador en Texas Hold'em](/images/holdem-split-pot-suit-equals.webp "Valores idénticos siempre parten — no hay jerarquía de palos en Texas Hold'em")
 
 Estos son los malentendidos detrás de casi todas las discusiones de "¿pero por qué es un split?!".
 
@@ -171,7 +171,7 @@ A. Solo si las mejores cinco empatan por completo —la misma pareja con los mis
 
 **Q. ¿Se divide el bote con un full, una escalera o dos parejas?**
 
-A. Solo cuando ambas manos son completamente idénticas. Dos fulls se dividen únicamente si coinciden el trío *y* la pareja —lo normal cuando el full está sobre la mesa—. Dos escaleras se dividen solo con la misma carta alta, y dos dobles parejas se dividen solo cuando coinciden ambas parejas y el kicker. En cualquier otro caso, la mano más alta se lleva todo el bote.
+A. Solo cuando ambas manos son completamente idénticas. Dos fulls se dividen únicamente si coinciden el trío *y* la pareja —lo típico en una mesa con doble pareja donde ambos montan la misma combinación, justo como en la Situación 1 de arriba—. Dos escaleras se dividen solo con la misma carta alta, y dos dobles parejas se dividen solo cuando coinciden ambas parejas y el kicker. En cualquier otro caso, la mano más alta se lleva todo el bote.
 
 **Q. ¿Dos parejas iguales dividen el bote?**
 

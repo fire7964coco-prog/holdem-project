@@ -215,7 +215,7 @@ Visión de túnel en tu pareja o tu proyecto fallido. Mi historia del 8-6 al pri
 
 ### Error 2 — Contar cuatro cartas del mismo palo como color
 
-Cuatro picas entre tus 7 son As alto, no color. Y la imagen espejo: mesa 9♠ 6♠ 3♠ Q♠ J♦ con A♥ K♥ en la mano te da A-K-Q-J-9 — solo carta alta — mientras que ==cualquier rival con una sola pica tiene color==.
+Cuatro picas entre tus 7 **no** son color — hacen falta cinco. Y la imagen espejo: mesa 9♠ 6♠ 3♠ Q♠ J♦ con A♥ K♥ en la mano te da A-K-Q-J-9 — solo carta alta — mientras que ==cualquier rival con una sola pica tiene color==.
 
 ### Error 3 — Olvidar que la mesa es compartida
 
@@ -252,7 +252,7 @@ A. Las cartas comunitarias son las 5 cartas que se reparten boca arriba en el ce
 
 **Q. ¿Qué significa "jugar con la mesa" en Texas Hold'em?**
 
-A. Significa que las 5 cartas comunitarias ya son tu mejor mano posible de 5 cartas — ninguna carta propia las mejora. Como la mesa es compartida, todos los jugadores pueden reclamar esa misma mano, así que jugar con la mesa suele acabar en bote dividido, salvo que las cartas propias de un rival mejoren la mesa.
+A. Significa que las 5 cartas comunitarias ya son tu mejor mano posible de 5 cartas — ninguna carta propia las mejora. Como la mesa es compartida, todos los jugadores pueden reclamar esa misma mano, así que jugar con la mesa suele acabar en bote dividido, salvo que las cartas propias de un rival mejoren la mesa. Hay una formalidad que aun así cuesta botes: aunque juegues con la mesa **tienes que enseñar tus dos cartas** para llevarte tu parte (==regla 75 de la WSOP==, regla 19 de la TDA) — si las tiras al muck sin mostrarlas, no te llevas nada.
 
 **Q. ¿Puede la mesa ser la mejor mano para todos?**
 
@@ -280,7 +280,7 @@ A. Cuando las cinco cartas comunitarias forman un color, todos los jugadores que
 
 **Q. Si hay una escalera en la mesa, ¿quién gana?**
 
-A. Cuando las cinco cartas comunitarias ya forman una escalera, todos tienen al menos esa escalera — así que gana quien la extienda a una escalera más alta con una carta propia. En una mesa 5-6-7-8-9, un jugador con un 10 forma 6-7-8-9-10 y le gana a la mesa. Si nadie puede subir más, el bote se reparte.
+A. Cuando las cinco cartas comunitarias ya forman una escalera, todos tienen al menos esa escalera — así que gana quien la extienda a una escalera más alta con una carta propia. En una mesa 5-6-7-8-9, un jugador con un 10 forma 6-7-8-9-10 y le gana a la mesa. Ojo en cuanto haya tres cartas del mismo palo: un rival con dos cartas de ese palo le gana a todas esas escaleras con un color. Si nadie puede subir más, el bote se reparte.
 
 **Q. ¿Cuál es la función de las cartas comunitarias y cuál es la mejor mano de 5 posible en la mesa?**
 

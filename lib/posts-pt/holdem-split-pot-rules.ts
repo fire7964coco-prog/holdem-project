@@ -88,13 +88,13 @@ Sim — e nem precisa de duas mãos monstruosas. Quando as cinco cartas comunit�
 
 > **A verificação:** *a sua* melhor mão de cinco — usando pelo menos uma carta fechada — bate as cinco da própria mesa? Se sim, você joga sua mão. Se não, a mesa joga e você provavelmente vai chopar. O método completo para varrer uma mesa desse jeito está em [como ler a mesa e achar suas melhores 5](/pt/blog/holdem-reading-the-board).
 
-:::tip[Se a mesa joga e alguém aposta no river, **o erro é dar fold no automático**. Quando nada consegue bater a mesa o empate é certo, e pagar ainda traz de volta metade de tudo que já estava no pote — dar fold entrega essa metade de graça. Quando a mesa pode ser batida, calcule a frequência: contra uma aposta do tamanho do pote você precisa que o adversário também esteja apenas jogando a mesa em cerca de 2 de cada 3 vezes; contra meio pote, metade das vezes. Foldar só é certo quando ele quase sempre tem mão de verdade.]:::
+:::tip[Se a mesa joga e alguém aposta no river, **o erro é dar fold no automático**. Quando nada consegue bater a mesa o empate é certo, e pagar ainda traz de volta metade de tudo que já estava no pote — dar fold entrega essa metade de graça. Quando a mesa pode ser batida, calcule a frequência: contra uma aposta do tamanho do pote você precisa que o adversário também esteja apenas jogando a mesa em cerca de 2 de cada 3 vezes; contra meio pote, metade das vezes. É uma barra alta: contra uma aposta do tamanho do pote, foldar só é certo quando ele tem mão de verdade mais de **uma vez em três** — e numa mesa que joga sozinha, esse é o caso normal.]:::
 
 ---
 
 ## 3 coisas que nunca desempatam no pôquer
 
-![Royal flush de espadas = royal flush de copas com um sinal de igual dourado entre eles — o naipe nunca decide o vencedor no Texas Hold'em](/images/holdem-split-pot-suit-equals.webp "Valores idênticos sempre dividem — não há hierarquia de naipe no Texas Hold'em")
+![Mesa K♦ K♣ Q♥ Q♦ J♠ com K♠ 7♣ à esquerda e K♥ 2♦ à direita e um sinal de igual dourado entre eles — os dois formam o mesmo full house K-K-K-Q-Q, e o naipe nunca decide o vencedor no Texas Hold'em](/images/holdem-split-pot-suit-equals.webp "Valores idênticos sempre dividem — não há hierarquia de naipe no Texas Hold'em")
 
 Estes são os mal-entendidos por trás da maioria das discussões de "espera, por que dividiu?!".
 

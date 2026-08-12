@@ -215,7 +215,7 @@ Terpaku pada pair atau draw yang gagal. Kisah 8-6 saya di awal halaman ini persi
 
 ### Kesalahan 2 — Menghitung empat kartu sejenis sebagai flush
 
-Empat sekop di antara 7 kartu Anda adalah ace high, bukan flush. Dan bayangan cerminnya: board 9♠ 6♠ 3♠ Q♠ J♦ dengan A♥ K♥ di tangan memberi Anda A-K-Q-J-9 — cuma kartu tinggi — sementara ==lawan mana pun yang memegang satu sekop punya flush==.
+Empat sekop di antara 7 kartu Anda **bukan** flush — perlu lima. Dan bayangan cerminnya: board 9♠ 6♠ 3♠ Q♠ J♦ dengan A♥ K♥ di tangan memberi Anda A-K-Q-J-9 — cuma kartu tinggi — sementara ==lawan mana pun yang memegang satu sekop punya flush==.
 
 ### Kesalahan 3 — Lupa board itu bersama
 
@@ -240,7 +240,7 @@ A. Pindai ketujuh kartu (2 tertutup + 5 board) dengan urutan tetap: flush dulu (
 
 **Q. Apa arti "main dengan board" di Texas Hold'em?**
 
-A. Artinya 5 kartu komunitas sudah jadi tangan 5-kartu terbaik Anda — tak ada kartu tertutup yang memperbaikinya. Karena board itu bersama, setiap pemain bisa mengklaim tangan yang sama, jadi main dengan board biasanya berujung pada split pot kecuali kartu tertutup lawan memperbaiki board.
+A. Artinya 5 kartu komunitas sudah jadi tangan 5-kartu terbaik Anda — tak ada kartu tertutup yang memperbaikinya. Karena board itu bersama, setiap pemain bisa mengklaim tangan yang sama, jadi main dengan board biasanya berujung pada split pot kecuali kartu tertutup lawan memperbaiki board. Satu formalitas tetap memakan pot: sekalipun Anda main dengan board, Anda **wajib membuka kedua kartu tertutup** untuk mendapat bagian (==WSOP Rule 75==, TDA Rule 19) — kalau didorong ke muck tanpa dibuka, Anda tidak dapat apa-apa.
 
 **Q. Bisakah board jadi tangan terbaik untuk semua orang?**
 

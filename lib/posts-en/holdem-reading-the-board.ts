@@ -214,7 +214,7 @@ Tunnel vision on your pair or busted draw. My 8-6 story at the top of this page 
 
 ### Mistake 2 — Counting four suited cards as a flush
 
-Four spades among your 7 is ace high, not a flush. And the mirror image: board 9♠ 6♠ 3♠ Q♠ J♦ with A♥ K♥ in hand gives you A-K-Q-J-9 — high card only — while ==any opponent holding a single spade has a flush==.
+Four spades among your 7 is **not** a flush — you need five. And the mirror image: board 9♠ 6♠ 3♠ Q♠ J♦ with A♥ K♥ in hand gives you A-K-Q-J-9 — high card only — while ==any opponent holding a single spade has a flush==.
 
 ### Mistake 3 — Forgetting the board is shared
 
@@ -243,7 +243,7 @@ A. No. You make the best five-card hand from any combination of your two hole ca
 
 **Q. What does "playing the board" mean in Texas Hold'em?**
 
-A. It means the 5 community cards are already your best possible 5-card hand — neither hole card improves on them. Since the board is shared, every player can claim that same hand, so playing the board usually leads to a split pot unless an opponent's hole cards improve on the board.
+A. It means the 5 community cards are already your best possible 5-card hand — neither hole card improves on them. Since the board is shared, every player can claim that same hand, so playing the board usually leads to a split pot unless an opponent's hole cards improve on the board. One formality still costs people pots: even when you play the board you **must table both hole cards** to claim a share (==WSOP Rule 75==, TDA Rule 19) — push them into the muck unseen and you get nothing.
 
 **Q. Can the board be the best hand for everyone?**
 
@@ -271,7 +271,7 @@ A. When the five community cards make a flush, every remaining player shares it.
 
 **Q. If there is a straight on the board, who wins?**
 
-A. When the five community cards already form a straight, everyone has at least that straight — so whoever extends it to a higher straight with a hole card wins. On a 5-6-7-8-9 board, a player holding a 10 makes 6-7-8-9-10 and beats the board. If no one can go higher, the pot is split.
+A. When the five community cards already form a straight, everyone has at least that straight — so whoever extends it to a higher straight with a hole card wins. On a 5-6-7-8-9 board, a player holding a 10 makes 6-7-8-9-10 and beats the board. Watch out the moment three cards of one suit are sitting there: an opponent with two matching cards then beats every one of those straights with a flush. If no one can go higher, the pot is split.
 
 **Q. Does a pair on the board count as part of your hand?**
 

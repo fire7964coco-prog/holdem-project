@@ -215,7 +215,7 @@ Visão de túnel no seu par ou no draw que não veio. Minha história do 8-6 lá
 
 ### Erro 2 — Contar quatro cartas do mesmo naipe como flush
 
-Quatro espadas entre suas 7 é ás alto, não flush. E a imagem espelhada: mesa 9♠ 6♠ 3♠ Q♠ J♦ com A♥ K♥ na mão te dá A-K-Q-J-9 — só carta alta — enquanto ==qualquer adversário com uma única espada tem flush==.
+Quatro espadas entre suas 7 **não** é flush — precisa de cinco. E a imagem espelhada: mesa 9♠ 6♠ 3♠ Q♠ J♦ com A♥ K♥ na mão te dá A-K-Q-J-9 — só carta alta — enquanto ==qualquer adversário com uma única espada tem flush==.
 
 ### Erro 3 — Esquecer que a mesa é compartilhada
 
@@ -240,7 +240,7 @@ A. Varra as 7 cartas (2 na mão + 5 na mesa) numa ordem fixa: flush primeiro (qu
 
 **Q. O que significa "jogar a mesa" no Texas Hold'em?**
 
-A. Significa que as 5 cartas comunitárias já são sua melhor mão possível de 5 cartas — nenhuma carta da mão melhora nada. Como a mesa é compartilhada, todo jogador pode reivindicar essa mesma mão, então jogar a mesa geralmente leva a um split pot, a não ser que as cartas na mão de um adversário melhorem a mesa.
+A. Significa que as 5 cartas comunitárias já são sua melhor mão possível de 5 cartas — nenhuma carta da mão melhora nada. Como a mesa é compartilhada, todo jogador pode reivindicar essa mesma mão, então jogar a mesa geralmente leva a um split pot, a não ser que as cartas na mão de um adversário melhorem a mesa. Uma formalidade ainda custa potes: mesmo jogando a mesa, você **precisa mostrar as duas cartas** para ter direito à sua parte (==regra 75 da WSOP==, regra 19 da TDA) — empurrou para o muck sem mostrar, não leva nada.
 
 **Q. A mesa pode ser a melhor mão para todo mundo?**
 

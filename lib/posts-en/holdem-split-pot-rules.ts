@@ -88,13 +88,13 @@ That's my 8-8-8-A-K hand: my J-10 and his 5-2 both played the board's trip eight
 
 > **The check:** does *your* best five — using at least one hole card — beat the board's own five? If yes, you play your hand. If not, the board plays and you're likely chopping. The full method for scanning a board this way is in [how to read the board and find your best 5](/en/blog/holdem-reading-the-board).
 
-:::tip[If the board plays and someone bets the river, **folding on autopilot is the mistake**. When nothing can beat the board the chop is certain, and calling still brings back half of everything that was already in the pot — folding hands that half away for free. When the board *can* be beaten, run the frequency: against a pot-size bet you need your opponent to be playing the board too about 2 times in 3; against a half-pot bet, about half the time. Folding is only right when they almost always have a real hand.]:::
+:::tip[If the board plays and someone bets the river, **folding on autopilot is the mistake**. When nothing can beat the board the chop is certain, and calling still brings back half of everything that was already in the pot — folding hands that half away for free. When the board *can* be beaten, run the frequency: against a pot-size bet you need your opponent to be playing the board too about 2 times in 3; against a half-pot bet, about half the time. That is a high bar: against a pot-size bet, folding is only right once they have a real hand more than **one time in three** — and on a board that plays, that is the normal case.]:::
 
 ---
 
 ## 3 Things That Never Break a Tie in Poker
 
-![Spade royal flush = Heart royal flush with a golden equals sign between them — suits never decide a winner in Texas Hold'em](/images/holdem-split-pot-suit-equals.webp "Identical ranks always split — no suit ranking in Texas Hold'em")
+![Board K♦ K♣ Q♥ Q♦ J♠ with K♠ 7♣ on the left and K♥ 2♦ on the right, a golden equals sign between them — both make the same full house K-K-K-Q-Q, and suits never decide a winner in Texas Hold'em](/images/holdem-split-pot-suit-equals.webp "Identical ranks always split — no suit ranking in Texas Hold'em")
 
 These are the misconceptions behind most "wait, why is it a split?!" arguments.
 
@@ -166,7 +166,7 @@ A. Only if the full best five ties — same pair with the same kickers, or the s
 
 **Q. Do you split the pot on a full house, a straight, or two pair?**
 
-A. Only when both hands are completely identical. Two full houses split just when the three-of-a-kind *and* the pair match — usually when the full house sits on the board. Two straights split only with the same top card, and two two-pair hands split only when both pairs and the kicker match. In every other case the higher hand wins the whole pot.
+A. Only when both hands are completely identical. Two full houses split just when the three-of-a-kind *and* the pair match — typically on a double-paired board where both players build the same combination, exactly like Situation 1 above. Two straights split only with the same top card, and two two-pair hands split only when both pairs and the kicker match. In every other case the higher hand wins the whole pot.
 
 **Q. What does "chopped pot" mean in poker?**
 
