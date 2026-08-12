@@ -149,7 +149,7 @@ Di kebanyakan bilik kad anda boleh meminta pengedar mendedahkan tangan yang di-m
 
 ### Kesilapan 4: Tidak tahu anda boleh tunjuk lebih awal
 
-Tiada peraturan yang melarang anda membuka tangan sebelum tiba giliran rasmi anda. ==g:Jika anda pegang nuts atau tangan yang sangat kuat, tunjuk serta-merta.== Pemain lain menghargainya. Ia mempercepatkan permainan. Dan ia adalah lawan kepada slow roll.
+Pada showdown — iaitu setelah semua pertaruhan ditutup — tiada peraturan yang melarang anda membuka tangan sebelum tiba giliran rasmi anda. Selagi tangan masih berjalan dan ada tindakan yang belum selesai, sebaliknya yang berlaku: menunjukkan kad dikenakan penalti di bawah ==WSOP Rule 117==. ==g:Jika anda pegang nuts atau tangan yang sangat kuat, tunjuk serta-merta.== Pemain lain menghargainya. Ia mempercepatkan permainan. Dan ia adalah lawan kepada slow roll.
 
 ---
 

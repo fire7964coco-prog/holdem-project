@@ -149,7 +149,7 @@ Bạn khá chắc mình thua. Bạn đẩy bài úp về phía muck. Dealer kéo
 
 ### Lỗi 4: Không biết mình được lật sớm
 
-Không có luật nào cấm bạn lật bài trước khi chính thức đến lượt. ==g:Nếu bạn cầm nuts hoặc một tay bài rất mạnh, hãy lật ngay.== Những người chơi khác sẽ cảm kích. Ván bài nhanh hơn. Và đó là điều ngược lại hoàn toàn với slow roll.
+Ở showdown — tức là khi mọi vòng cược đã khép lại — không có luật nào cấm bạn lật bài trước khi chính thức đến lượt. Còn khi ván vẫn đang chạy và đâu đó còn hành động chưa xong thì ngược lại: để lộ bài sẽ bị phạt theo ==WSOP Rule 117==. ==g:Nếu bạn cầm nuts hoặc một tay bài rất mạnh, hãy lật ngay.== Những người chơi khác sẽ cảm kích. Ván bài nhanh hơn. Và đó là điều ngược lại hoàn toàn với slow roll.
 
 ---
 

@@ -149,7 +149,7 @@ In gran parte delle sale puoi chiedere al dealer di esporre una mano finita nel 
 
 ### Errore 4: non sapere che puoi mostrare in anticipo
 
-Non c'è nessuna regola che vieti di girare la tua mano prima che sia ufficialmente il tuo turno. ==g:Se hai le nuts o una mano molto forte, mostrala subito.== Gli altri giocatori lo apprezzano. Velocizza la partita. Ed è l'esatto contrario dello slow roll.
+Allo showdown — cioè una volta chiuse tutte le puntate — non c'è nessuna regola che vieti di girare la tua mano prima che sia ufficialmente il tuo turno. Finché la mano è ancora viva e c'è un'azione in sospeso vale il contrario: mostrare le carte costa una sanzione secondo la ==regola 117 WSOP==. ==g:Se hai le nuts o una mano molto forte, mostrala subito.== Gli altri giocatori lo apprezzano. Velocizza la partita. Ed è l'esatto contrario dello slow roll.
 
 ---
 

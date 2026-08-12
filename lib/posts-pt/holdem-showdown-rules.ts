@@ -149,7 +149,7 @@ Na maioria dos clubes você pode pedir ao dealer para expor uma mão descartada 
 
 ### Erro 4: não saber que pode mostrar antes da sua vez
 
-Não existe regra contra virar a mão antes de chegar oficialmente a sua vez. ==g:Se você tem os nuts ou uma mão muito forte, mostre na hora.== Os outros jogadores agradecem. Acelera o jogo. E é o oposto do slow roll.
+No showdown — ou seja, quando todas as apostas já se encerraram — não existe regra contra virar a mão antes de chegar oficialmente a sua vez. Enquanto a mão ainda estiver viva e houver ação pendente vale o contrário: mostrar cartas custa uma punição pela ==regra 117 da WSOP==. ==g:Se você tem os nuts ou uma mão muito forte, mostre na hora.== Os outros jogadores agradecem. Acelera o jogo. E é o oposto do slow roll.
 
 ---
 

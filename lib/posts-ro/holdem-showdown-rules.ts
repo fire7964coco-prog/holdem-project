@@ -149,7 +149,7 @@ Ești aproape sigur că ai pierdut. Îți împingi cărțile cu fața în jos sp
 
 ### Greșeala 4: să nu știi că poți arăta mai devreme
 
-Nu există nicio regulă care să interzică să-ți întorci mâna înainte să-ți vină oficial rândul. ==g:Dacă ai nuts-ul sau o mână foarte puternică, arat-o imediat.== Ceilalți jucători apreciază asta. Grăbește partida. Și e exact opusul slow roll-ului.
+La showdown — adică după ce toate pariurile s-au încheiat — nu există nicio regulă care să interzică să-ți întorci mâna înainte să-ți vină oficial rândul. Cât timp mâna e încă în joc și mai există o acțiune în așteptare e exact invers: arătarea cărților costă o penalizare conform ==regulii 117 WSOP==. ==g:Dacă ai nuts-ul sau o mână foarte puternică, arat-o imediat.== Ceilalți jucători apreciază asta. Grăbește partida. Și e exact opusul slow roll-ului.
 
 ---
 

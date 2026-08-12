@@ -149,7 +149,7 @@ Kaybettiğinden neredeyse eminsin. Kartlarını yüzü kapalı muck'a doğru iti
 
 ### Hata 4: Erken gösterebileceğini bilmemek
 
-Resmî sıran gelmeden elini çevirmeni yasaklayan bir kural yok. ==g:Elinde nuts ya da çok güçlü bir el varsa, hemen göster.== Diğer oyuncular bundan memnun olur. Oyunu hızlandırır. Ve slow roll'un tam tersidir.
+Showdown'da — yani bütün bahisler kapandıktan sonra — resmî sıran gelmeden elini çevirmeni yasaklayan bir kural yok. El hâlâ sürüyorsa ve bekleyen bir aksiyon varsa tam tersi geçerlidir: kart göstermek ==WSOP 117. kural== uyarınca ceza getirir. ==g:Elinde nuts ya da çok güçlü bir el varsa, hemen göster.== Diğer oyuncular bundan memnun olur. Oyunu hızlandırır. Ve slow roll'un tam tersidir.
 
 ---
 

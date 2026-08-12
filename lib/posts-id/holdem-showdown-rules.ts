@@ -149,7 +149,7 @@ Di kebanyakan cardroom Anda boleh minta dealer membuka hand yang di-muck — tap
 
 ### Kesalahan 4: Tidak tahu Anda boleh buka lebih awal
 
-Tidak ada aturan yang melarang membuka hand sebelum giliran Anda secara resmi tiba. ==g:Kalau Anda pegang nuts atau hand yang sangat kuat, langsung buka.== Pemain lain akan menghargainya. Permainan jadi lebih cepat. Dan itu kebalikan dari slow roll.
+Di showdown — yaitu setelah semua taruhan ditutup — tidak ada aturan yang melarang membuka hand sebelum giliran Anda secara resmi tiba. Selama hand masih berjalan dan masih ada aksi tertunda, yang berlaku justru sebaliknya: memperlihatkan kartu berbuah penalti menurut ==WSOP Rule 117==. ==g:Kalau Anda pegang nuts atau hand yang sangat kuat, langsung buka.== Pemain lain akan menghargainya. Permainan jadi lebih cepat. Dan itu kebalikan dari slow roll.
 
 ---
 

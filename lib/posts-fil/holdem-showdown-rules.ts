@@ -149,7 +149,7 @@ Sa karamihan ng cardrooms pwede mong hilingin sa dealer na buksan ang mucked han
 
 ### Mistake 4: Hindi alam na pwede kang magpakita nang maaga
 
-Walang rule na nagbabawal na ibukas ang hand mo bago pa opisyal ang turn mo. ==g:Kung hawak mo ang nuts o napakalakas na hand, ipakita agad.== Napapasalamatan ito ng ibang players. Napapabilis nito ang laro. At ito ang kabaligtaran ng slow rolling.
+Sa showdown — ibig sabihin, kapag tapos na ang lahat ng taya — walang rule na nagbabawal na ibukas ang hand mo bago pa opisyal ang turn mo. Habang buhay pa ang hand at may nakabinbing aksyon, kabaligtaran ang umiiral: may parusa ang pagpapakita ng cards sa ilalim ng ==WSOP Rule 117==. ==g:Kung hawak mo ang nuts o napakalakas na hand, ipakita agad.== Napapasalamatan ito ng ibang players. Napapabilis nito ang laro. At ito ang kabaligtaran ng slow rolling.
 
 ---
 

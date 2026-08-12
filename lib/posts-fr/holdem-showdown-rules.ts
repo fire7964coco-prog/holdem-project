@@ -149,7 +149,7 @@ Dans la plupart des cardrooms, tu peux demander au donneur d'exposer une main je
 
 ### Erreur 4 : ne pas savoir qu'on peut montrer plus tôt
 
-Aucune règle n'interdit de retourner ta main avant que ce soit officiellement ton tour. ==g:Si tu tiens les nuts ou une main très forte, montre-la immédiatement.== Les autres joueurs apprécient. Ça accélère la partie. Et c'est tout le contraire du slow roll.
+À l'abattage — c'est-à-dire une fois toutes les mises terminées — aucune règle n'interdit de retourner ta main avant que ce soit officiellement ton tour. Tant que le coup est encore en cours et qu'une action reste en attente, c'est l'inverse : montrer ses cartes coûte une pénalité selon la ==règle 117 de la WSOP==. ==g:Si tu tiens les nuts ou une main très forte, montre-la immédiatement.== Les autres joueurs apprécient. Ça accélère la partie. Et c'est tout le contraire du slow roll.
 
 ---
 

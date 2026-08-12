@@ -149,7 +149,7 @@ Katika cardroom nyingi waweza kumwomba dila afichue mkono uliopigwa muck — lak
 
 ### Kosa la 4: Kutojua kwamba waweza kuonyesha mapema
 
-Hakuna kanuni inayozuia kugeuza mkono wako kabla ya zamu yako rasmi. ==g:Kama una nuts au mkono wenye nguvu sana, onyesha mara moja.== Wachezaji wengine wanashukuru. Inaharakisha mchezo. Na ni kinyume kabisa cha slow rolling.
+Kwenye showdown — yaani baada ya kila bet kufungwa — hakuna kanuni inayozuia kugeuza mkono wako kabla ya zamu yako rasmi. Lakini mradi mkono bado unaendelea na kuna hatua iliyosalia, ni kinyume chake: kuonyesha karata kunagharimu adhabu chini ya ==WSOP Rule 117==. ==g:Kama una nuts au mkono wenye nguvu sana, onyesha mara moja.== Wachezaji wengine wanashukuru. Inaharakisha mchezo. Na ni kinyume kabisa cha slow rolling.
 
 ---
 

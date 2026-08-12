@@ -151,7 +151,7 @@ En la mayoría de los casinos puedes pedirle al dealer que exponga una mano tira
 
 ### Error 4: no saber que puedes enseñar antes de tu turno
 
-No hay ninguna regla que prohíba dar la vuelta a tu mano antes de que sea oficialmente tu turno. ==g:Si llevas las nuts o una mano muy fuerte, enséñala inmediatamente.== El resto de jugadores lo agradece. Agiliza la partida. Y es justo lo contrario del slow roll.
+En el showdown — es decir, una vez cerradas todas las apuestas — no hay ninguna regla que prohíba dar la vuelta a tu mano antes de que sea oficialmente tu turno. Mientras la mano siga viva y quede alguna acción pendiente vale lo contrario: enseñar cartas te cuesta una sanción según la ==regla 117 de la WSOP==. ==g:Si llevas las nuts o una mano muy fuerte, enséñala inmediatamente.== El resto de jugadores lo agradece. Agiliza la partida. Y es justo lo contrario del slow roll.
 
 ---
 

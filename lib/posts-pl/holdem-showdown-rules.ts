@@ -149,7 +149,7 @@ W większości pokojów pokerowych możesz poprosić rozdającego, by odsłonił
 
 ### Błąd 4: brak wiedzy, że możesz pokazać wcześniej
 
-Nie ma żadnej reguły, która zabraniałaby odwrócić karty, zanim oficjalnie przyjdzie twoja kolej. ==g:Jeśli masz nutsa albo bardzo silny układ, pokaż go natychmiast.== Reszta graczy to docenia. Przyspiesza grę. I jest dokładnym przeciwieństwem slow rolla.
+Na showdownie — czyli gdy wszystkie zakłady są już zamknięte — nie ma żadnej reguły, która zabraniałaby odwrócić karty, zanim oficjalnie przyjdzie twoja kolej. Dopóki rozdanie trwa i gdzieś czeka jeszcze akcja, obowiązuje odwrotność: pokazanie kart kosztuje karę według ==zasady 117 WSOP==. ==g:Jeśli masz nutsa albo bardzo silny układ, pokaż go natychmiast.== Reszta graczy to docenia. Przyspiesza grę. I jest dokładnym przeciwieństwem slow rolla.
 
 ---
 
