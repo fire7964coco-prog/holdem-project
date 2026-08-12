@@ -130,7 +130,7 @@ L'idée clé : le min-raise correspond à ==l'incrément== de la dernière mise 
 
 Deux règles du poker en live qui accompagnent la relance :
 
-1. **Annonce « relance » avant de bouger tes jetons.** Tu dis « je suis » puis tu pousses plus de jetons ? Ce surplus est un ==string bet== et le donneur, dans la plupart des clubs, le comptera comme un simple call.
+1. **Annonce « relance » avant de bouger tes jetons.** Tu dis « je suis » puis tu pousses plus de jetons ? Ta déclaration était déjà irrévocable (==règle 90.d==) — le surplus ne compte pas. Le vrai ==string bet== est autre chose : mettre des jetons en plusieurs mouvements **sans** annoncer « relance » d'abord (==règle 103==).
 2. **Un seul mouvement.** Si tu n'annonces rien, tes jetons doivent entrer en un unique mouvement vers l'avant.
 
 *Combien* tu devrais relancer (ouvertures à 2,5x, 3-bets à 3x, tailles selon la texture du board) relève de la stratégie, pas des règles — ça se joue ailleurs.
@@ -174,7 +174,7 @@ Je joue une partie live à petites limites toutes les semaines, et les mêmes er
 
 ### Erreur 1 — Suivre alors qu'on pourrait checker
 
-Premier à parler au flop, personne n'a misé, et un joueur débutant balance des jetons « pour suivre ». Il n'y a rien à suivre — ça, c'est une mise. Quand la street n'est pas ouverte, checke et vois la carte gratuitement.
+Premier à parler au flop, personne n'a misé, et un joueur débutant pousse des jetons **en silence**, « pour suivre ». Il n'y a rien à suivre : selon la ==règle 90.a de la WSOP==, on mise par déclaration *ou* en poussant des jetons — il vient de miser sans le vouloir. S'il avait *dit* « je suis », la ==règle 90.b.1== en aurait fait un check. Quand la street n'est pas ouverte, checke et vois la carte gratuitement.
 
 ### Erreur 2 — Le string raise
 
@@ -186,7 +186,7 @@ Tout le monde limpe, l'action arrive à la grosse blinde… et elle se couche. C
 
 ### Erreur 4 — Le jeton unique silencieux
 
-Face à une mise de $10, un joueur pose en silence un seul jeton de $100 en s'attendant à la monnaie *et* à une relance. Dans la plupart des clubs, la ==règle du jeton unique (one-chip rule)== dit qu'un unique jeton surdimensionné non annoncé n'est qu'un call. Dis « relance » si tu veux relancer.
+Face à une mise de $10, un joueur pose en silence un seul jeton de $100 en s'attendant à la monnaie *et* à une relance. La ==règle du jeton unique (one-chip rule)== figure telle quelle dans les règles de la WSOP (==règle 97==) : un unique jeton surdimensionné non annoncé n'est qu'un call. Pour relancer, « relance » doit sortir **avant que le jeton touche le tapis**.
 
 ---
 
@@ -222,7 +222,7 @@ A. Ça dépend de la taille du tapis. Si le tapis constitue une relance légale 
 
 **Q. C'est quoi un string bet au poker ?**
 
-A. Mettre des jetons en plusieurs mouvements, ou dire « je suis » puis ajouter une relance, sans avoir annoncé « relance » d'abord. Les donneurs tranchent le string bet en simple call du montant initial. Annonce ton action à voix haute ou bouge tous tes jetons en un seul mouvement.
+A. Mettre des jetons en plusieurs mouvements sans avoir annoncé « relance » d'abord (==règle 103==). Les donneurs tranchent le string bet en simple call du montant initial. Dire « je suis » puis ajouter n'est pas un string bet mais une déclaration irrévocable (==règle 90.d==) — même effet. Annonce ton action à voix haute ou bouge tous tes jetons en un seul mouvement.
 
 **Q. Ça veut dire quoi limper au poker ?**
 

@@ -130,7 +130,7 @@ Ufahamu muhimu: min-raise inalingana na ==nyongeza== ya bet au raise ya mwisho, 
 
 Sheria mbili za live poker zinazokuja na raise:
 
-1. **Tangaza "raise" kabla ya kusukuma chipsi.** Ukisema "call" kisha ukasukuma zaidi? Nyongeza hiyo ni ==string bet== na madila katika vyumba vingi wataihukumu kama call.
+1. **Tangaza "raise" kabla ya kusukuma chipsi.** Ukisema "call" kisha ukasukuma zaidi? Tamko lako lilikuwa tayari linafunga (==Rule 90.d==) — nyongeza haihesabiki. ==String bet== halisi ni kitu kingine: kusukuma chipsi kwa mienendo kadhaa **bila** kutangaza "raise" kwanza (==Rule 103==).
 2. **Mwendo mmoja.** Kama hutatangaza, chipsi zako lazima ziingie kwa mwendo mmoja wa mbele.
 
 *Kiasi* gani unatakiwa raise (open za 2.5x, 3-bet za 3x, sizing kulingana na texture ya bodi) ni strategy, si sheria.
@@ -174,7 +174,7 @@ Nacheza mchezo wa live wa stakes ndogo kila wiki, na makosa yale yale ya action 
 
 ### Kosa 1 — Kufanya call pale ungeweza check
 
-Wa kwanza kucheza kwenye flop, hakuna aliyeweka bet, na mchezaji mgeni anatupa chipsi "ili kufanya call". Hakuna kitu cha ku-call — hiyo ni bet. Pale street haijafunguliwa, fanya check na uone karata bure.
+Wa kwanza kucheza kwenye flop, hakuna aliyeweka bet, na mchezaji mgeni anasukuma chipsi **kimyakimya**, "ili kufanya call". Hakuna kitu cha ku-call: kwa mujibu wa ==WSOP Rule 90.a==, bet hufanywa kwa kutamka *au* kwa kusukuma chipsi — ndio kwanza ameweka bet bila kukusudia. Angesema "call" kwa *sauti*, ==Rule 90.b.1== ingeifanya kuwa check tu. Pale street haijafunguliwa, fanya check na uone karata bure.
 
 ### Kosa 2 — String raise
 
@@ -186,7 +186,7 @@ Kila mtu anafanya limp, action inafika kwa big blind, na wanafold. Hiyo ni flop 
 
 ### Kosa 4 — Chipsi moja ya kimya
 
-Akikabiliwa na bet ya $10, mchezaji anatupa kimya chipsi moja ya $100 akitegemea chenji *na* raise. Katika vyumba vingi vya kadi, ==one-chip rule== inasema chipsi moja kubwa isiyotangazwa ni call tu. Sema "raise" kama unamaanisha raise.
+Akikabiliwa na bet ya $10, mchezaji anatupa kimya chipsi moja ya $100 akitegemea chenji *na* raise. ==One-chip rule== imeandikwa hivyo hivyo kwenye sheria za WSOP (==Rule 97==): chipsi moja kubwa isiyotangazwa ni call tu. Ili ku-raise, neno "raise" lazima litoke **kabla chipsi haijagusa meza**.
 
 ---
 

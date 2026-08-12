@@ -130,7 +130,7 @@ La clave: el min-raise iguala el ==incremento== de la última apuesta o subida, 
 
 Dos reglas del póker en vivo que vienen con la subida:
 
-1. **Anuncia "subo" antes de mover las fichas.** ¿Dices "pago" y luego empujas más fichas? Ese extra es un ==string bet== y en la mayoría de las salas el crupier lo dictaminará como un call.
+1. **Anuncia "subo" antes de mover las fichas.** ¿Dices "pago" y luego empujas más fichas? Tu declaración ya era vinculante (==regla 90.d==) — el extra no cuenta. El ==string bet== de verdad es otra cosa: meter fichas en varios movimientos **sin** anunciar antes "subo" (==regla 103==).
 2. **Un solo movimiento.** Si no anuncias, tus fichas deben entrar en un único movimiento hacia delante.
 
 *Cuánto* deberías subir (aperturas de 2.5x, 3-bets de 3x, tamaños según la textura de la mesa) es estrategia, no reglas — eso vive en el [pilar de estrategia de Texas Hold'em](/es/blog/holdem-strategy).
@@ -178,7 +178,7 @@ Juego una partida semanal en vivo de apuestas bajas, y los mismos errores de acc
 
 ### Error 1 — Pagar cuando podrías pasar
 
-Primero en hablar en el flop, nadie ha apostado, y un jugador novato suelta fichas "para pagar". No hay nada que pagar — eso es una apuesta. Cuando la calle está sin abrir, pasa y mira la carta gratis.
+Primero en hablar en el flop, nadie ha apostado, y un jugador novato suelta fichas **en silencio**, "para pagar". No hay nada que pagar: según la ==regla 90.a de la WSOP== se apuesta por declaración *o* empujando fichas — acaba de apostar sin querer. Si hubiera *dicho* "pago", la ==regla 90.b.1== lo habría convertido en un check. Cuando la calle está sin abrir, pasa y mira la carta gratis.
 
 ### Error 2 — El string raise
 
@@ -190,7 +190,7 @@ Todos entran de limp, la acción llega a la ciega grande… y foldea. Eso es tir
 
 ### Error 4 — La ficha grande silenciosa
 
-Ante una apuesta de $10, un jugador lanza en silencio una sola ficha de $100 esperando cambio *y* una subida. En la mayoría de las salas, la ==regla de la ficha única (one-chip rule)== dice que una sola ficha grande sin anunciar es solo un call. Di "subo" si quieres subir.
+Ante una apuesta de $10, un jugador lanza en silencio una sola ficha de $100 esperando cambio *y* una subida. La ==regla de la ficha única (one-chip rule)== está así en las reglas de la WSOP (==regla 97==): una sola ficha grande sin anunciar es solo un call. Para subir, "subo" tiene que salir **antes de que la ficha toque la mesa**.
 
 ---
 
@@ -227,7 +227,7 @@ A. Depende del tamaño del all-in. Si el all-in es una subida legal completa, la
 
 **Q. ¿Qué es un string bet en el póker?**
 
-A. Meter fichas en varios movimientos, o decir "pago" y luego añadir una subida, sin haber anunciado "subo" primero. Los crupieres dictaminan el string bet como un call de la cantidad original. Anuncia tu acción en voz alta o mueve todas las fichas en un solo movimiento.
+A. Meter fichas en varios movimientos sin haber anunciado "subo" primero (==regla 103==). Los crupieres dictaminan el string bet como un call de la cantidad original. Decir "pago" y luego añadir no es un string bet sino una declaración vinculante (==regla 90.d==) — mismo efecto. Anuncia tu acción en voz alta o mueve todas las fichas en un solo movimiento.
 
 **Q. ¿Qué significa limpear en el póker?**
 

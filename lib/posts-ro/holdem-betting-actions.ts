@@ -130,7 +130,7 @@ Ideea-cheie: min-raise-ul egalează ==incrementul== ultimului pariu sau al ultim
 
 Două reguli de poker live care vin la pachet cu relansarea:
 
-1. **Anunță "raise" înainte de a mișca jetoanele.** Spui "call" și apoi împingi mai multe jetoane? Acel plus e un ==string bet== și dealerii, în majoritatea sălilor, îl vor considera un simplu call.
+1. **Anunță "raise" înainte de a mișca jetoanele.** Spui "call" și apoi împingi mai multe jetoane? Declarația ta era deja obligatorie (==regula 90.d==) — plusul nu contează. ==String bet==-ul adevărat e altceva: să pui jetoane în mai multe mișcări **fără** să anunți întâi "raise" (==regula 103==).
 2. **O singură mișcare.** Dacă nu anunți, jetoanele trebuie să intre printr-o unică mișcare înainte.
 
 *Cât* ar trebui să relansezi (deschideri de 2,5x, 3-bet-uri de 3x, sizing în funcție de textura boardului) ține de strategie, nu de reguli — asta e altă discuție.
@@ -174,7 +174,7 @@ Joc săptămânal o partidă live la mize mici, iar aceleași greșeli de acțiu
 
 ### Greșeala 1 — Să plătești când ai putea da check
 
-Primul la vorbă pe flop, nimeni nu a pariat, iar un jucător mai nou aruncă jetoane "ca să dea call". Nu ai ce plăti — asta e un pariu. Când strada e încă nedeschisă, dă check și vezi cartea gratis.
+Primul la vorbă pe flop, nimeni nu a pariat, iar un jucător mai nou împinge jetoane **în tăcere**, "ca să dea call". Nu ai ce plăti: conform ==regulii 90.a WSOP== se pariază prin declarație *sau* împingând jetoane — tocmai a pariat fără să vrea. Dacă ar fi *spus* "call", ==regula 90.b.1== ar fi făcut din asta un check. Când strada e încă nedeschisă, dă check și vezi cartea gratis.
 
 ### Greșeala 2 — String raise-ul
 
@@ -186,7 +186,7 @@ Toți intră la limp, acțiunea ajunge la big blind… și el dă fold. Ăla e u
 
 ### Greșeala 4 — Jetonul singur, tăcut
 
-În fața unui pariu de $10, un jucător aruncă în tăcere un singur jeton de $100 așteptând și rest, *și* un raise. În majoritatea cazinourilor, ==regula jetonului unic (one-chip rule)== spune că un singur jeton mare, nemarcat verbal, e doar un call. Spune "raise" dacă vrei să relansezi.
+În fața unui pariu de $10, un jucător aruncă în tăcere un singur jeton de $100 așteptând și rest, *și* un raise. ==Regula jetonului unic (one-chip rule)== apare exact așa în regulile WSOP (==regula 97==): un singur jeton mare, nemarcat verbal, e doar un call. Ca să relansezi, "raise" trebuie rostit **înainte ca jetonul să atingă masa**.
 
 ---
 
@@ -223,7 +223,7 @@ A. Depinde de mărimea all-in-ului. Dacă all-in-ul e o relansare legală comple
 
 **Q. Ce este un string bet la poker?**
 
-A. Să pui jetoanele în mai multe mișcări, sau să spui "call" și apoi să adaugi o relansare, fără să fi anunțat "raise" înainte. Dealerii judecă string bet-ul drept un call al sumei inițiale. Anunță-ți acțiunea cu voce tare sau mută toate jetoanele într-o singură mișcare.
+A. Să pui jetoanele în mai multe mișcări fără să fi anunțat "raise" înainte (==regula 103==). Dealerii judecă string bet-ul drept un call al sumei inițiale. Să spui "call" și apoi să adaugi nu e string bet, ci o declarație obligatorie (==regula 90.d==) — același efect. Anunță-ți acțiunea cu voce tare sau mută toate jetoanele într-o singură mișcare.
 
 **Q. Ce înseamnă să faci limp la poker?**
 

@@ -130,7 +130,7 @@ No-Limit Hold'em'de (neredeyse her zaman oynayacağın format):
 
 Yükseltmeyle birlikte gelen iki canlı poker kuralı:
 
-1. **Çipleri hareket ettirmeden önce "raise" de.** "Call" deyip sonra fazladan çip mi ittin? O fazlalık bir ==string bet=='tir ve çoğu salonda krupiye bunu call sayar.
+1. **Çipleri hareket ettirmeden önce "raise" de.** "Call" deyip sonra fazladan çip mi ittin? Beyanın o anda zaten bağlayıcı olmuştu (==Kural 90.d==) — fazlalık sayılmaz. Gerçek ==string bet== başka bir şey: önce "raise" demeden çipleri birden fazla hareketle itmek (==Kural 103==).
 2. **Tek hareket.** Söylemezsen çiplerin tek bir ileri hareketle girmeli.
 
 *Ne kadar* yükseltmen gerektiği (2,5x açılışlar, 3x 3-bet'ler, board dokusuna göre sizing) strateji, kural değil — o, Texas Hold'em stratejisinde yaşar.
@@ -178,7 +178,7 @@ Haftalık düşük bahisli canlı bir oyun oynuyorum ve aynı hareket hataları 
 
 ### Hata 1 — Check yapabilecekken call yapmak
 
-Flop'ta ilk oynayan sensin, kimse bahis koymamış ve yeni bir oyuncu "call yapayım" diye çip atıyor. Görülecek bir şey yok — bu bir bahis olur. Street açılmadıysa check yap ve kartı bedavaya gör.
+Flop'ta ilk oynayan sensin, kimse bahis koymamış ve yeni bir oyuncu **sessizce** çip itiyor, "call yapayım" diye. Görülecek bir şey yok: ==WSOP 90.a kuralına== göre bahis, sözle *ya da* çip iterek yapılır — istemeden bahis koymuş oldu. "Call" *deseydi*, ==90.b.1 kuralı== bunu check sayardı. Street açılmadıysa check yap ve kartı bedavaya gör.
 
 ### Hata 2 — String raise
 
@@ -190,7 +190,7 @@ Herkes limp'ler, sıra big blind'e gelir ve o... fold eder. Bu, bedava bir flop'
 
 ### Hata 4 — Sessiz tek çip
 
-$10'lık bir bahis karşısında oyuncu sessizce tek bir $100'lık çip atar, hem para üstü hem raise bekler. Çoğu salonda ==tek çip kuralı (one-chip rule)==, ilan edilmemiş tek büyük çipin sadece call olduğunu söyler. Yükselteceksen "raise" de.
+$10'lık bir bahis karşısında oyuncu sessizce tek bir $100'lık çip atar, hem para üstü hem raise bekler. ==Tek çip kuralı (one-chip rule)== WSOP kurallarında aynen böyle yazar (==Kural 97==): ilan edilmemiş tek büyük çip sadece call'dur. Yükseltmek için "raise" sözü **çip masaya değmeden önce** çıkmalıdır.
 
 ---
 

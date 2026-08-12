@@ -130,7 +130,7 @@ Ang key insight: ang min-raise ay tumutugma sa ==increment== ng huling bet o rai
 
 Dalawang live-poker rules na kasama ng pag-raise:
 
-1. **I-anunsyo ang "raise" bago igalaw ang chips.** Sinabi mong "call" tapos nag-push ka ng mas marami? Ang sobrang iyon ay ==string bet== at iru-rule ito ng dealers sa karamihan ng room bilang call.
+1. **I-anunsyo ang "raise" bago igalaw ang chips.** Sinabi mong "call" tapos nag-push ka ng mas marami? Binding na ang sinabi mo (==Rule 90.d==) — hindi na bibilangin ang sobra. Ibang usapan ang tunay na ==string bet==: paglalagay ng chips sa maraming galaw **nang hindi** muna nag-aanunsyo ng "raise" (==Rule 103==).
 2. **Isang galaw.** Kung hindi ka mag-anunsyo, ang chips mo ay dapat pumasok sa iisang forward na galaw.
 
 Kung *gaano* kalaki ang dapat mong i-raise (2.5x na opens, 3x na 3-bets, sizing base sa board texture) ay strategy, hindi rules.
@@ -174,7 +174,7 @@ May weekly low-stakes na live game ako, at ang parehong action errors ay paulit-
 
 ### Mistake 1 — Nag-call kung pwede namang mag-check
 
-Unang aaksyon sa flop, walang nag-bet, at may bagong manlalaro na naghagis ng chips "para mag-call". Walang ita-call — iyon ay bet. Kapag hindi pa bukas ang street, mag-check ka at tingnan ang card nang libre.
+Unang aaksyon sa flop, walang nag-bet, at may bagong manlalaro na **tahimik** na nagtulak ng chips, "para mag-call". Walang ita-call: sa ilalim ng ==WSOP Rule 90.a==, ang bet ay ginagawa sa pamamagitan ng pagsasabi *o* pagtulak ng chips — nag-bet siya nang hindi sinasadya. Kung *sinabi* niyang "call", gagawin iyong check ng ==Rule 90.b.1==. Kapag hindi pa bukas ang street, mag-check ka at tingnan ang card nang libre.
 
 ### Mistake 2 — Ang string raise
 
@@ -186,7 +186,7 @@ Nag-limp lahat, umabot ang action sa big blind, tapos nag-fold sila. Iyon ay lib
 
 ### Mistake 4 — Ang tahimik na iisang chip
 
-Nasa harap ng $10 na bet, may manlalarong tahimik na naghagis ng iisang $100 na chip na umaasa ng sukli *at* raise. Sa karamihan ng cardroom, ang ==one-chip rule== ay nagsasabi na ang hindi-anunsyadong iisang malaking chip ay call lang. Sabihin mong "raise" kung raise ang ibig mong sabihin.
+Nasa harap ng $10 na bet, may manlalarong tahimik na naghagis ng iisang $100 na chip na umaasa ng sukli *at* raise. Ganito mismo nakasulat ang ==one-chip rule== sa WSOP rules (==Rule 97==): ang hindi-anunsyadong iisang malaking chip ay call lang. Para mag-raise, dapat mabitawan ang "raise" **bago tumama ang chip sa mesa**.
 
 ---
 

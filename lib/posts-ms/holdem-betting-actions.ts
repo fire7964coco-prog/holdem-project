@@ -130,7 +130,7 @@ Perkara utamanya: min-raise mengikut ==inkremen== pertaruhan atau raise terakhir
 
 Dua peraturan poker live yang datang bersama raise:
 
-1. **Umumkan "raise" sebelum menggerakkan cip.** Sebut "call" kemudian tolak cip tambahan? Lebihan itu ialah ==string bet== dan pengedar di kebanyakan bilik akan mengiranya sebagai call sahaja.
+1. **Umumkan "raise" sebelum menggerakkan cip.** Sebut "call" kemudian tolak cip tambahan? Pengumuman anda sudah mengikat sejak saat itu (==Rule 90.d==) — lebihannya tidak dikira. ==String bet== yang sebenar lain: menolak cip dalam beberapa pergerakan **tanpa** mengumumkan "raise" dahulu (==Rule 103==).
 2. **Satu pergerakan.** Jika anda tidak mengumumkan, cip anda mesti masuk dalam satu pergerakan ke hadapan sahaja.
 
 *Berapa banyak* anda patut raise (open 2.5x, 3-bet 3x, saiz mengikut tekstur board) ialah strategi, bukan peraturan — itu topik pilar strategi Texas Hold'em.
@@ -178,7 +178,7 @@ Saya bermain permainan live taruhan rendah setiap minggu, dan kesilapan aksi yan
 
 ### Kesilapan 1 — Call ketika anda boleh cek
 
-Pertama bertindak di flop, tiada sesiapa bertaruh, dan pemain baharu campak cip masuk "untuk call". Tiada apa yang hendak di-call — itu ialah pertaruhan. Apabila pusingan belum dibuka, cek dan lihat kad secara percuma.
+Pertama bertindak di flop, tiada sesiapa bertaruh, dan pemain baharu menolak cip masuk **tanpa bersuara**, "untuk call". Tiada apa yang hendak di-call: menurut ==WSOP Rule 90.a==, pertaruhan dibuat melalui pengumuman *atau* dengan menolak cip — dia baru sahaja bertaruh tanpa sengaja. Kalau dia *menyebut* "call", ==Rule 90.b.1== menjadikannya cek. Apabila pusingan belum dibuka, cek dan lihat kad secara percuma.
 
 ### Kesilapan 2 — String raise
 
@@ -190,7 +190,7 @@ Semua orang limp, aksi sampai kepada big blind, dan dia fold. Itu flop percuma y
 
 ### Kesilapan 4 — Satu cip besar tanpa suara
 
-Berdepan pertaruhan $10, seorang pemain diam-diam campak satu cip $100 sambil mengharapkan baki *dan* raise. Di kebanyakan bilik kad, ==peraturan satu cip (one-chip rule)== menyatakan satu cip besar tanpa pengumuman dikira call sahaja. Sebut "raise" jika anda mahu raise.
+Berdepan pertaruhan $10, seorang pemain diam-diam campak satu cip $100 sambil mengharapkan baki *dan* raise. ==Peraturan satu cip (one-chip rule)== tertulis begitu dalam peraturan WSOP (==Rule 97==): satu cip besar tanpa pengumuman dikira call sahaja. Untuk raise, perkataan "raise" mesti keluar **sebelum cip menyentuh permukaan meja**.
 
 ---
 

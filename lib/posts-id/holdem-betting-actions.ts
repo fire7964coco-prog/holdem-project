@@ -130,7 +130,7 @@ Kuncinya: min-raise mengikuti ==inkremen== dari bet atau raise terakhir, bukan b
 
 Dua aturan poker live yang menyertai raise:
 
-1. **Ucapkan "raise" sebelum menggerakkan chip.** Bilang "call" lalu mendorong chip lebih banyak? Kelebihan itu adalah ==string bet== dan dealer di kebanyakan cardroom akan memutuskannya sebagai call.
+1. **Ucapkan "raise" sebelum menggerakkan chip.** Bilang "call" lalu mendorong chip lebih banyak? Ucapan Anda sudah mengikat sejak saat itu (==Rule 90.d==) — kelebihannya tidak dihitung. ==String bet== yang sebenarnya lain lagi: mendorong chip dalam beberapa gerakan **tanpa** mengucapkan "raise" lebih dulu (==Rule 103==).
 2. **Satu gerakan.** Kalau Anda tidak mengucapkannya, chip Anda harus masuk dalam satu gerakan maju.
 
 *Seberapa besar* Anda sebaiknya raise (open 2,5x, 3-bet 3x, ukuran sesuai tekstur board) adalah strategi, bukan aturan — itu ada di [pilar strategi Texas Hold'em](/id/blog/holdem-strategy).
@@ -178,7 +178,7 @@ Saya main di game live taruhan kecil tiap minggu, dan kesalahan aksi yang sama t
 
 ### Kesalahan 1 — Call padahal bisa check
 
-Bertindak pertama di flop, belum ada yang bertaruh, dan pemain baru melempar chip "untuk call". Tidak ada yang perlu di-call — itu namanya bet. Kalau street belum dibuka, check saja dan lihat kartunya gratis.
+Bertindak pertama di flop, belum ada yang bertaruh, dan pemain baru mendorong chip **tanpa bersuara**, "untuk call". Tidak ada yang perlu di-call: menurut ==WSOP Rule 90.a==, bet dilakukan lewat ucapan *atau* dengan mendorong chip — dia baru saja bertaruh tanpa sengaja. Kalau dia *mengucapkan* "call", ==Rule 90.b.1== menjadikannya check. Kalau street belum dibuka, check saja dan lihat kartunya gratis.
 
 ### Kesalahan 2 — String raise
 
@@ -190,7 +190,7 @@ Semua orang limp, giliran sampai ke big blind, dan dia fold. Itu sama saja membu
 
 ### Kesalahan 4 — Satu chip besar tanpa suara
 
-Menghadapi bet $10, seorang pemain diam-diam melempar satu chip $100 sambil berharap kembalian *dan* raise. Di kebanyakan cardroom, ==aturan satu chip (one-chip rule)== menyatakan satu chip besar tanpa ucapan hanya dihitung sebagai call. Bilang "raise" kalau maksud Anda raise.
+Menghadapi bet $10, seorang pemain diam-diam melempar satu chip $100 sambil berharap kembalian *dan* raise. ==Aturan satu chip (one-chip rule)== tertulis persis begitu di aturan WSOP (==Rule 97==): satu chip besar tanpa ucapan hanya dihitung sebagai call. Untuk raise, kata "raise" harus keluar **sebelum chip menyentuh meja**.
 
 ---
 

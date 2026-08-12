@@ -130,7 +130,7 @@ Il punto chiave: il min-raise è pari all'==incremento== dell'ultima puntata o r
 
 Due regole del poker dal vivo che arrivano insieme al rilancio:
 
-1. **Annuncia "rilancio" prima di muovere le fiches.** Dici "chiamo" e poi spingi altre fiches? Quell'extra è uno ==string bet== e il mazziere, nella maggior parte delle sale, lo giudicherà una semplice chiamata.
+1. **Annuncia "rilancio" prima di muovere le fiches.** Dici "chiamo" e poi spingi altre fiches? La tua dichiarazione era già vincolante (==regola 90.d==) — l'extra non conta. Lo ==string bet== vero è un'altra cosa: mettere fiches in più movimenti **senza** annunciare prima "rilancio" (==regola 103==).
 2. **Un solo movimento.** Se non annunci, le tue fiches devono entrare con un unico gesto in avanti.
 
 *Quanto* dovresti rilanciare (aperture da 2,5x, 3-bet da 3x, sizing in base alla texture del board) è strategia, non regole — quella è un altro discorso.
@@ -174,7 +174,7 @@ Gioco una partita settimanale dal vivo a basse poste, e gli stessi errori di azi
 
 ### Errore 1 — Chiamare quando potresti fare check
 
-Primo a parlare al flop, nessuno ha puntato, e un giocatore alle prime armi butta dentro le fiches "per chiamare". Non c'è niente da chiamare — quella è una puntata. Quando la street è ancora chiusa, fai check e vedi la carta gratis.
+Primo a parlare al flop, nessuno ha puntato, e un giocatore alle prime armi spinge dentro le fiches **in silenzio**, "per chiamare". Non c'è niente da chiamare: per la ==regola 90.a WSOP== si punta per dichiarazione *o* spingendo fiches — ha appena puntato senza volerlo. Se avesse *detto* "chiamo", la ==regola 90.b.1== ne avrebbe fatto un check. Quando la street è ancora chiusa, fai check e vedi la carta gratis.
 
 ### Errore 2 — Lo string raise
 
@@ -186,7 +186,7 @@ Tutti entrano di limp, l'azione arriva al grande buio… e lui passa. Quello è 
 
 ### Errore 4 — La fiche singola silenziosa
 
-Davanti a una puntata di $10, un giocatore lancia in silenzio una singola fiche da $100 aspettandosi il resto *e* un rilancio. Nella maggior parte delle sale, la ==regola della fiche singola (one-chip rule)== dice che una singola fiche di taglio grande, se non annunciata, è solo una chiamata. Di' "rilancio" se vuoi rilanciare.
+Davanti a una puntata di $10, un giocatore lancia in silenzio una singola fiche da $100 aspettandosi il resto *e* un rilancio. La ==regola della fiche singola (one-chip rule)== è così nelle regole WSOP (==regola 97==): una singola fiche di taglio grande, se non annunciata, è solo una chiamata. Per rilanciare, "rilancio" deve uscire **prima che la fiche tocchi il tavolo**.
 
 ---
 
@@ -223,7 +223,7 @@ A. Dipende dalla dimensione dell'all-in. Se l'all-in è un rilancio legale compl
 
 **Q. Cos'è uno string bet nel poker?**
 
-A. Mettere le fiches in più movimenti, oppure dire "chiamo" e poi aggiungere un rilancio, senza aver annunciato "rilancio" prima. I mazzieri giudicano lo string bet come una chiamata della cifra iniziale. Annuncia la tua azione a voce oppure sposta tutte le fiches in un solo movimento.
+A. Mettere le fiches in più movimenti senza aver annunciato "rilancio" prima (==regola 103==). I mazzieri giudicano lo string bet come una chiamata della cifra iniziale. Dire "chiamo" e poi aggiungere non è uno string bet ma una dichiarazione vincolante (==regola 90.d==) — stesso effetto. Annuncia la tua azione a voce oppure sposta tutte le fiches in un solo movimento.
 
 **Q. Cosa significa fare limp nel poker?**
 

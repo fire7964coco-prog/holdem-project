@@ -130,7 +130,7 @@ O insight-chave: o min-raise acompanha o ==incremento== da última aposta ou rai
 
 Duas regras do poker ao vivo que vêm junto com o raise:
 
-1. **Anuncie "raise" antes de mover as fichas.** Disse "call" e depois empurrou mais? Esse extra é um ==string bet==, e o dealer da maioria dos clubes vai considerar apenas um call.
+1. **Anuncie "raise" antes de mover as fichas.** Disse "call" e depois empurrou mais? Sua declaração já era vinculante (==regra 90.d==) — o extra não conta. O ==string bet== de verdade é outra coisa: colocar fichas em vários movimentos **sem** anunciar "raise" antes (==regra 103==).
 2. **Um movimento só.** Se você não anunciar, suas fichas precisam entrar em um único movimento para a frente.
 
 *Quanto* você deve aumentar (opens de 2,5x, 3-bets de 3x, sizing pela textura do board) é estratégia, não regra — isso mora no [pilar de estratégia do Texas Hold'em](/pt/blog/holdem-strategy).
@@ -178,7 +178,7 @@ Jogo um home game ao vivo de apostas baixas toda semana, e os mesmos erros de a�
 
 ### Erro 1 — Pagar quando dava para dar check
 
-Primeiro a agir no flop, ninguém apostou, e um jogador novato joga fichas "para pagar". Não há nada para pagar — isso é uma aposta. Quando a street está sem aposta, dê check e veja a carta de graça.
+Primeiro a agir no flop, ninguém apostou, e um jogador novato empurra fichas **em silêncio**, "para pagar". Não há nada para pagar: pela ==regra 90.a da WSOP== aposta-se por declaração *ou* empurrando fichas — ele acabou de apostar sem querer. Se tivesse *dito* "pago", a ==regra 90.b.1== teria transformado isso num check. Quando a street está sem aposta, dê check e veja a carta de graça.
 
 ### Erro 2 — O string raise
 
@@ -190,7 +190,7 @@ Todo mundo entra pagando só o blind, a ação chega ao big blind, e ele folda. 
 
 ### Erro 4 — A ficha única em silêncio
 
-Diante de uma aposta de $10, um jogador joga em silêncio uma única ficha de $100 esperando troco *e* um raise. Na maioria dos clubes, a ==regra da ficha única== (one-chip rule) diz que uma ficha grande jogada sozinha sem anúncio é só um call. Diga "raise" se a intenção é aumentar.
+Diante de uma aposta de $10, um jogador joga em silêncio uma única ficha de $100 esperando troco *e* um raise. A ==regra da ficha única== (one-chip rule) está assim nas regras da WSOP (==regra 97==): uma ficha grande jogada sozinha sem anúncio é só um call. Para aumentar, o "raise" precisa sair **antes de a ficha tocar a mesa**.
 
 ---
 
@@ -227,7 +227,7 @@ A. Depende do tamanho do all-in. Se o all-in for um raise completo e legal, a a�
 
 **Q. O que é string bet no poker?**
 
-A. É colocar fichas em vários movimentos, ou dizer "call" e depois acrescentar um raise, sem anunciar "raise" antes. O dealer decreta o string bet como um call do valor original. Anuncie sua ação em voz alta ou mova todas as fichas em um único movimento.
+A. É colocar fichas em vários movimentos sem anunciar "raise" antes (==regra 103==). O dealer decreta o string bet como um call do valor original. Dizer "call" e depois acrescentar não é string bet, mas uma declaração vinculante (==regra 90.d==) — mesmo efeito. Anuncie sua ação em voz alta ou mova todas as fichas em um único movimento.
 
 **Q. O que significa dar limp no poker?**
 

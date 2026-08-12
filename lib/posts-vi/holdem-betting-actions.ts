@@ -130,7 +130,7 @@ Hai ví dụ tính sẵn:
 
 Hai luật poker live đi kèm với việc tố:
 
-1. **Hô "raise" trước khi đẩy chip.** Nói "call" rồi mới đẩy thêm chip? Phần thêm đó là ==string bet== và dealer ở hầu hết các phòng bài sẽ xử là một lệnh theo.
+1. **Hô "raise" trước khi đẩy chip.** Nói "call" rồi mới đẩy thêm chip? Lời hô của bạn đã có hiệu lực ràng buộc ngay lúc đó (==Rule 90.d==) — phần thêm không được tính. ==String bet== thật sự lại là chuyện khác: đẩy chip bằng nhiều động tác **mà không** hô "raise" trước (==Rule 103==).
 2. **Một động tác duy nhất.** Nếu không hô, chip của bạn phải được đẩy vào trong một động tác tiến duy nhất.
 
 Nên tố *bao nhiêu* (mở 2,5x, 3-bet 3x, chọn cỡ cược theo cấu trúc bài chung) là chuyện chiến thuật, không phải luật — phần đó thuộc về trụ cột chiến thuật Texas Hold'em.
@@ -178,7 +178,7 @@ Tôi chơi một bàn live cược thấp hàng tuần, và những lỗi hành 
 
 ### Lỗi 1 — Theo khi bạn có thể check
 
-Ngồi đầu lượt ở flop, chưa ai cược, thế mà một người chơi mới ném chip vào "để theo". Chẳng có gì để theo cả — đó là một khoản cược. Khi vòng cược chưa được mở, cứ check và xem lá bài miễn phí.
+Ngồi đầu lượt ở flop, chưa ai cược, thế mà một người chơi mới **lẳng lặng** đẩy chip vào, "để theo". Chẳng có gì để theo cả: theo ==WSOP Rule 90.a==, cược được thực hiện bằng lời hô *hoặc* bằng việc đẩy chip ra — anh ta vừa cược mà không hề định thế. Nếu anh ta *hô* "theo", ==Rule 90.b.1== sẽ tính đó là check. Khi vòng cược chưa được mở, cứ check và xem lá bài miễn phí.
 
 ### Lỗi 2 — String raise
 
@@ -190,7 +190,7 @@ Cả bàn limp, lượt tới mù lớn... và họ bỏ bài. Đó là ném m�
 
 ### Lỗi 4 — Chip mệnh giá lớn im lặng
 
-Đối mặt khoản cược $10, một người chơi lẳng lặng ném vào một chip $100 duy nhất, vừa mong được thối lại *vừa* muốn tính là tố. Ở hầu hết phòng bài, ==luật một chip (one-chip rule)== quy định một chip mệnh giá lớn ném vào mà không hô gì chỉ được tính là theo. Hãy nói "raise" nếu bạn muốn tố.
+Đối mặt khoản cược $10, một người chơi lẳng lặng ném vào một chip $100 duy nhất, vừa mong được thối lại *vừa* muốn tính là tố. ==Luật một chip (one-chip rule)== được ghi đúng như vậy trong luật WSOP (==Rule 97==): một chip mệnh giá lớn ném vào mà không hô gì chỉ được tính là theo. Muốn tố, chữ "tố" phải bật ra **trước khi chip chạm mặt bàn**. Hãy nói "raise" nếu bạn muốn tố.
 
 ---
 

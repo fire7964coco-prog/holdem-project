@@ -130,7 +130,7 @@ Kluczowa rzecz: min-raise równa się ==przyrostowi== ostatniego zakładu lub pr
 
 Dwie zasady pokera na żywo, które idą w parze z przebiciem:
 
-1. **Zapowiedz "raise" (przebijam), zanim ruszysz żetony.** Mówisz "sprawdzam", a potem wypychasz więcej żetonów? Ta nadwyżka to ==string bet== i rozdający w większości salonów uzna to za zwykłe sprawdzenie.
+1. **Zapowiedz "raise" (przebijam), zanim ruszysz żetony.** Mówisz "sprawdzam", a potem wypychasz więcej żetonów? Twoja zapowiedź już była wiążąca (==zasada 90.d==) — nadwyżka się nie liczy. Prawdziwy ==string bet== to co innego: wypychanie żetonów w kilku ruchach **bez** wcześniejszej zapowiedzi "raise" (==zasada 103==).
 2. **Jeden ruch.** Jeśli nic nie zapowiadasz, żetony muszą wjechać jednym ruchem do przodu.
 
 *Ile* powinieneś przebijać (otwarcia 2,5x, 3-bety po 3x, dobór rozmiaru pod fakturę stołu) to strategia, a nie zasady — o tym jest filar strategii Texas Hold'em.
@@ -178,7 +178,7 @@ Gram cotygodniową grę na żywo o niskie stawki i te same błędy w akcjach pow
 
 ### Błąd 1 — sprawdzenie, gdy mógłbyś czeknąć
 
-Pierwszy do ruchu na flopie, nikt nie postawił, a nowy gracz wrzuca żetony "na sprawdzenie". Nie ma czego sprawdzać — to jest postawienie. Gdy ulica jest nieotwarta, czeknij i zobacz kartę za darmo.
+Pierwszy do ruchu na flopie, nikt nie postawił, a nowy gracz **w ciszy** wypycha żetony "na sprawdzenie". Nie ma czego sprawdzać: według ==zasady 90.a WSOP== zakład stawia się deklaracją *albo* wypchnięciem żetonów — właśnie postawił, nie chcąc tego. Gdyby *powiedział* "sprawdzam", ==zasada 90.b.1== zrobiłaby z tego czek. Gdy ulica jest nieotwarta, czeknij i zobacz kartę za darmo.
 
 ### Błąd 2 — string raise
 
@@ -190,7 +190,7 @@ Wszyscy limpują, ruch dochodzi do dużego blinda… i on pasuje. To darmowy flo
 
 ### Błąd 4 — cichy pojedynczy żeton
 
-Przy zakładzie $10 gracz w ciszy wrzuca jeden żeton $100, licząc na resztę *i* przebicie. W większości salonów ==zasada jednego żetonu (one-chip rule)== mówi, że niezapowiedziany pojedynczy duży żeton to tylko sprawdzenie. Powiedz "raise", jeśli chcesz przebić.
+Przy zakładzie $10 gracz w ciszy wrzuca jeden żeton $100, licząc na resztę *i* przebicie. ==Zasada jednego żetonu (one-chip rule)== stoi tak w regulaminie WSOP (==zasada 97==): niezapowiedziany pojedynczy duży żeton to tylko sprawdzenie. Żeby przebić, "raise" musi paść **zanim żeton dotknie stołu**.
 
 ---
 
@@ -226,7 +226,7 @@ A. Zależy od rozmiaru all-inu. Jeśli all-in jest pełnym legalnym przebiciem, 
 
 **Q. Co to jest string bet w pokerze?**
 
-A. Wrzucanie żetonów w kilku ruchach albo powiedzenie "sprawdzam", a potem dołożenie przebicia bez wcześniejszej zapowiedzi "raise". Rozdający uznają string bet za sprawdzenie pierwotnej kwoty. Zapowiedz akcję słownie albo wrzuć wszystkie żetony jednym ruchem.
+A. Wrzucanie żetonów w kilku ruchach bez wcześniejszej zapowiedzi "raise" (==zasada 103==). Rozdający uznają string bet za sprawdzenie pierwotnej kwoty. Powiedzenie "sprawdzam", a potem dołożenie, to nie string bet, tylko wiążąca zapowiedź (==zasada 90.d==) — efekt ten sam. Zapowiedz akcję słownie albo wrzuć wszystkie żetony jednym ruchem.
 
 **Q. Co znaczy limpować w pokerze?**
 
