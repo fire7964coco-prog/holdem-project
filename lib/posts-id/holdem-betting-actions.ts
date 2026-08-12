@@ -103,7 +103,7 @@ Contoh nyata: Anda di flop dengan K♠ 8♦. Belum ada yang bertaruh, jadi Anda 
 
 Fold artinya Anda membuang kartu dan keluar dari hand itu. Anda tidak membayar apa pun lagi, tapi ==r:setiap chip yang sudah Anda masukkan tetap tinggal di pot==.
 
-Ya — Anda boleh fold kapan saja giliran Anda, bahkan sebelum bertaruh apa pun, dan bahkan saat check pun gratis. Tapi awas jebakan di bagian terakhir itu: **fold saat Anda bisa check gratis sama dengan membuang hand tanpa alasan**. Kalau belum ada yang bertaruh, check saja.
+Ya — kapan pun giliran Anda, Anda boleh fold, bahkan sebelum bertaruh apa pun, dan fold itu mengikat. Bebas konsekuensi juga tidak: di turnamen, fold saat tidak ada taruhan di depan Anda dihitung sebagai "non-standard fold" menurut ==WSOP Rule 84== dan bisa berbuah peringatan. Dan awas jebakan ini: **fold saat Anda bisa check gratis sama dengan membuang hand tanpa alasan**. Kalau belum ada yang bertaruh, check saja.
 
 Satu aturan etika di poker live: jangan fold ==di luar giliran==. Tunggu sampai giliran benar-benar sampai pada Anda — fold lebih awal memberi informasi ke pemain yang masih menimbang, dan kebanyakan cardroom akan menegur atau menjatuhkan penalti. Tahu *kapan* fold jadi langkah yang benar adalah keahlian tersendiri — itu dibahas di [kapan harus fold di poker](/id/blog/holdem-when-to-fold).
 

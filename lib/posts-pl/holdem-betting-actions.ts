@@ -103,7 +103,7 @@ Realny przykład: jesteś na flopie z K♠ 8♦. Nikt nie postawił, więc ==cze
 
 Pas znaczy, że oddajesz karty i wychodzisz z rozdania. Nic nowego nie płacisz, ale ==r:wszystkie żetony, które już wrzuciłeś, zostają w puli==.
 
-Tak — możesz spasować w każdej chwili, gdy ruch należy do ciebie, nawet zanim cokolwiek postawisz i nawet wtedy, gdy czek byłby za darmo. Ale uważaj na pułapkę w tej ostatniej części: **pasowanie, gdy mógłbyś czeknąć za darmo, to wyrzucanie rozdania bez powodu**. Jeśli nikt nie postawił, po prostu czeknij.
+Tak — kiedy ruch należy do ciebie, możesz spasować, nawet zanim cokolwiek postawisz, a pas jest wiążący. Zupełnie za darmo to jednak nie jest: w turnieju pas w sytuacji, gdy przed tobą nie stoi żaden zakład, liczy się jako „pas niestandardowy" według ==zasady 84 WSOP== i może skończyć się ostrzeżeniem. I uważaj na pułapkę: **pasowanie, gdy mógłbyś czeknąć za darmo, to wyrzucanie rozdania bez powodu**. Jeśli nikt nie postawił, po prostu czeknij.
 
 Jedna zasada etykiety na żywo: nie pasuj ==poza kolejnością==. Poczekaj, aż ruch dojdzie do ciebie — pas przed czasem daje informację graczom, którzy jeszcze się zastanawiają, i w większości salonów dostaniesz za to ostrzeżenie albo karę. To, *kiedy* pas jest właściwym ruchem, to osobna umiejętność — o tym mówi poradnik o tym, kiedy pasować w pokerze.
 

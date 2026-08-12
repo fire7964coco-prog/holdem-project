@@ -103,7 +103,7 @@ Mfano halisi: uko kwenye flop na K♠ 8♦. Hakuna aliyeweka bet, hivyo unafanya
 
 Fold ina maana unaacha karata zako na kuachana na mkono. Hulipi chochote kipya, lakini ==r:kila chipsi ulizoweka tayari zinabaki kwenye pot==.
 
-Ndiyo — unaweza fold wakati wowote action iko kwako, hata kabla ya kuweka chochote, na hata pale check ingekuwa bure. Lakini angalia mtego kwenye sehemu hiyo ya mwisho: **kufanya fold pale ungeweza check bure ni kutupa mkono bila sababu**. Kama hakuna aliyeweka bet, fanya check tu.
+Ndiyo — wakati wowote action iko kwako unaweza fold, hata kabla ya kuweka chochote, na fold hiyo inashikilia. Lakini si bure kabisa: kwenye mashindano, ku-fold wakati mbele yako hakuna bet yoyote huhesabika kama "non-standard fold" chini ya ==WSOP Rule 84== na kunaweza kukuletea onyo. Na angalia mtego huu: **kufanya fold pale ungeweza check bure ni kutupa mkono bila sababu**. Kama hakuna aliyeweka bet, fanya check tu.
 
 Sheria moja ya adabu ya live: usifanye fold ==nje ya zamu yako==. Subiri hadi action ifike kwako — kufold kabla ya wakati kunatoa taarifa kwa wachezaji ambao bado wanaamua, na vyumba vingi vya kadi vitakuonya au kukuadhibu. Kujua *lini* fold ndiyo hatua sahihi ni ujuzi wa aina yake.
 

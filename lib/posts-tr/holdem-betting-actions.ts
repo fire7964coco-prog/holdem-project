@@ -103,7 +103,7 @@ Gerçek örnek: flop'ta K♠ 8♦ ile oturuyorsun. Kimse bahis koymamış, o yü
 
 Fold yapmak, kartlarını atıp elden çıkmak demektir. Yeni bir şey ödemezsin ama ==r:pota koyduğun her çip potta kalır==.
 
-Evet — sıra sende olduğu her an yatabilirsin, hiç bahis koymadan önce bile, hatta check bedavayken bile. Ama şu son kısımdaki tuzağa dikkat: **bedavaya check yapabilecekken yatmak, elini boşa çöpe atmaktır**. Kimse bahis koymadıysa, sadece check yap.
+Evet — sıra sende olduğu her an yatabilirsin, hiç bahis koymadan önce bile, ve o fold bağlayıcıdır. Tamamen bedava da değildir: turnuvada, önünde hiç bahis yokken yatmak ==WSOP 84. kurala== göre "standart dışı fold" sayılır ve uyarı alabilirsin. Ve şu tuzağa dikkat: **bedavaya check yapabilecekken yatmak, elini boşa çöpe atmaktır**. Kimse bahis koymadıysa, sadece check yap.
 
 Canlı adabından bir kural: ==sırası gelmeden== yatma. Sıra sana ulaşana kadar bekle — erken yatmak hâlâ karar veren oyunculara bilgi sızdırır ve çoğu salon bunu uyarır ya da cezalandırır. Yatmanın *ne zaman* doğru hamle olduğunu bilmek başlı başına bir beceridir.
 

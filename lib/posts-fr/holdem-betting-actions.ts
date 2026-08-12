@@ -103,7 +103,7 @@ Exemple concret : tu es au flop avec K♠ 8♦. Personne n'a misé, donc tu ==ch
 
 Se coucher (jeter ses cartes), ça veut dire abandonner sa main et quitter le coup. Tu ne paies rien de plus, mais ==r:tous les jetons que tu as déjà mis restent dans le pot==.
 
-Oui — tu peux te coucher à tout moment quand c'est à toi de parler, même avant d'avoir misé quoi que ce soit, et même quand checker serait gratuit. Mais attention au piège de cette dernière partie : **se coucher alors que tu pourrais checker gratuitement, c'est jeter une main sans aucune raison**. Si personne n'a misé, contente-toi de checker.
+Oui — dès que c'est à toi de parler tu peux te coucher, même avant d'avoir misé quoi que ce soit, et le fold est irrévocable. Gratuit, il ne l'est pas tout à fait : en tournoi, se coucher alors qu'aucune mise n'est devant toi compte comme un « fold non standard » selon la ==règle 84 de la WSOP== et peut valoir un avertissement. Et attention au piège : **se coucher alors que tu pourrais checker gratuitement, c'est jeter une main sans aucune raison**. Si personne n'a misé, contente-toi de checker.
 
 Une règle d'étiquette en live : ne te couche pas ==hors de ton tour==. Attends que l'action arrive jusqu'à toi — te coucher trop tôt donne de l'information aux joueurs qui hésitent encore, et la plupart des clubs te mettront un avertissement ou une pénalité. Savoir *quand* se coucher est la bonne décision, c'est une compétence à part entière.
 

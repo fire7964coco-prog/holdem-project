@@ -103,7 +103,7 @@ Exemplo real: você está no flop com K♠ 8♦. Ninguém apostou, então você 
 
 Foldar significa entregar suas cartas e desistir da mão. Você não paga nada novo, mas ==r:cada ficha que você já colocou fica no pote==.
 
-Sim — você pode foldar a qualquer momento em que a ação estiver com você, mesmo antes de apostar qualquer coisa, e até quando dar check seria de graça. Mas repare na armadilha dessa última parte: **foldar quando você poderia dar check de graça é jogar uma mão fora sem motivo nenhum**. Se ninguém apostou, apenas dê check.
+Sim — sempre que a ação estiver com você pode foldar, mesmo antes de apostar qualquer coisa, e o fold é vinculante. De graça não é: em torneio, foldar quando não há aposta à sua frente conta como "fold não padrão" pela ==regra 84 da WSOP== e pode render uma advertência. E repare na armadilha: **foldar quando você poderia dar check de graça é jogar uma mão fora sem motivo nenhum**. Se ninguém apostou, apenas dê check.
 
 Uma regra de etiqueta do jogo ao vivo: não folde ==fora da sua vez==. Espere a ação chegar até você — foldar antes entrega informação aos jogadores que ainda estão decidindo, e a maioria dos clubes avisa ou penaliza. Saber *quando* foldar é a jogada certa é uma habilidade à parte — é o tema de [quando foldar no poker](/pt/blog/holdem-when-to-fold).
 

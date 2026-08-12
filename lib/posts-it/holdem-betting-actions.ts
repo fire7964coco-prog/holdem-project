@@ -103,7 +103,7 @@ Esempio concreto: sei al flop con K♠ 8♦. Nessuno ha puntato, quindi fai ==ch
 
 Passare (foldare) significa buttare le tue carte e abbandonare la mano. Non paghi nulla di nuovo, ma ==r:tutte le fiches che hai già messo restano nel piatto==.
 
-Sì — puoi passare in qualsiasi momento in cui l'azione tocca a te, anche prima di aver puntato qualcosa e persino quando il check sarebbe gratis. Ma attento alla trappola di quest'ultima parte: **passare quando potresti fare check gratis è buttare via una mano senza motivo**. Se nessuno ha puntato, fai semplicemente check.
+Sì — ogni volta che l'azione tocca a te puoi passare, anche prima di aver puntato qualcosa, e il fold è vincolante. Gratis però non è: in torneo, passare quando davanti a te non c'è alcuna puntata conta come "fold non standard" secondo la ==regola 84 WSOP== e può costarti un richiamo. E attento alla trappola: **passare quando potresti fare check gratis è buttare via una mano senza motivo**. Se nessuno ha puntato, fai semplicemente check.
 
 Una regola di etiquette dal vivo: non passare ==fuori turno==. Aspetta che l'azione arrivi a te — passare in anticipo dà informazioni ai giocatori che stanno ancora decidendo, e nella maggior parte delle sale ti becchi un avviso o una penalità. Sapere *quando* passare è la giocata giusta è un'abilità a parte, un capitolo di strategia tutto suo.
 

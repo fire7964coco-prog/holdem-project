@@ -103,7 +103,7 @@ Halimbawa: nasa flop ka na may K♠ 8♦. Walang nag-bet, kaya ==check== ka. Nag
 
 Ang fold ay ibig sabihin isusuko mo ang cards mo at aalis sa hand. Wala kang bagong babayaran, pero ==r:mananatili sa pot ang bawat chip na nailagay mo na==.
 
-Oo — pwede kang mag-fold anumang oras na nasa iyo ang action, kahit bago ka pa mag-lagay ng kahit ano, at kahit libre lang naman sana ang check. Pero ingat sa bitag sa huling bahaging iyon: **ang pag-fold kung pwede ka namang mag-check nang libre ay pagtapon ng hand nang walang dahilan**. Kung walang nag-bet, mag-check ka na lang.
+Oo — tuwing nasa iyo ang action, pwede kang mag-fold, kahit bago ka pa mag-lagay ng kahit ano, at binding ang fold na iyon. Hindi naman ito walang bayad: sa tournament, ang pag-fold kahit walang bet sa harap mo ay itinuturing na "non-standard fold" sa ilalim ng ==WSOP Rule 84== at pwedeng abutan ng babala. At ingat sa bitag: **ang pag-fold kung pwede ka namang mag-check nang libre ay pagtapon ng hand nang walang dahilan**. Kung walang nag-bet, mag-check ka na lang.
 
 Isang rule ng live etiquette: huwag mag-fold ==out of turn== (hindi pa turn mo). Hintayin mong dumating ang action sa iyo — ang maagang pag-fold ay nagbibigay ng info sa mga manlalarong nagdedesisyon pa, at karamihan ng cardroom ay mag-wa-warning o magpaparusa. Ang malaman *kung kailan* tama ang mag-fold ay sarili nitong skill — iyan ang tinatalakay sa kung kailan dapat mag-fold sa poker.
 

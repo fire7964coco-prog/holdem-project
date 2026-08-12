@@ -103,7 +103,7 @@ Ví dụ thực tế: bạn ở flop với K♠ 8♦. Chưa ai cược, nên b�
 
 Bỏ bài (fold) nghĩa là bạn úp bài xuống và rời khỏi ván. Bạn không phải trả thêm gì, nhưng ==r:mọi chip bạn đã bỏ vào sẽ ở lại trong pot==.
 
-Có — bạn có thể bỏ bài bất cứ lúc nào đến lượt mình, kể cả trước khi cược gì, và kể cả khi check đang miễn phí. Nhưng hãy để ý cái bẫy ở vế cuối: **bỏ bài khi bạn có thể check miễn phí là vứt đi một ván bài vô cớ**. Nếu chưa ai cược, cứ check.
+Có — mỗi khi đến lượt, bạn đều có thể bỏ bài, kể cả trước khi cược gì, và cú bỏ bài đó có hiệu lực ràng buộc. Nhưng không phải là vô hại: trong giải đấu, bỏ bài khi trước mặt không có khoản cược nào bị tính là "non-standard fold" theo ==WSOP Rule 84== và có thể bị nhắc nhở. Và hãy để ý cái bẫy: **bỏ bài khi bạn có thể check miễn phí là vứt đi một ván bài vô cớ**. Nếu chưa ai cược, cứ check.
 
 Một quy tắc ứng xử ở bàn live: đừng bỏ bài ==trước lượt==. Hãy đợi đến khi lượt hành động tới bạn — bỏ bài sớm sẽ để lộ thông tin cho những người chơi còn đang cân nhắc, và hầu hết các phòng bài sẽ nhắc nhở hoặc phạt. Biết *khi nào* bỏ bài mới là nước đi đúng lại là một kỹ năng riêng — chủ đề đó được bàn trong bài khi nào nên bỏ bài trong poker.
 

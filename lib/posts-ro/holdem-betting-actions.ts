@@ -103,7 +103,7 @@ Exemplu concret: ești pe flop cu K♠ 8♦. Nimeni nu a pariat, așa că dai ==
 
 A da fold (a renunța) înseamnă să arunci cărțile și să părăsești mâna. Nu plătești nimic nou, dar ==r:toate jetoanele puse deja de tine rămân în pot==.
 
-Da — poți renunța oricând e rândul tău, chiar și înainte de a paria ceva și chiar și atunci când check-ul ar fi gratis. Dar atenție la capcana din ultima parte: **să dai fold când ai putea da check gratis înseamnă să arunci o mână fără motiv**. Dacă nimeni nu a pariat, dă pur și simplu check.
+Da — ori de câte ori e rândul tău poți renunța, chiar și înainte de a paria ceva, iar fold-ul e obligatoriu. Gratis chiar nu e: în turneu, să dai fold când în fața ta nu stă niciun pariu contează drept "fold nestandard" conform ==regulii 84 WSOP== și poate atrage un avertisment. Și atenție la capcană: **să dai fold când ai putea da check gratis înseamnă să arunci o mână fără motiv**. Dacă nimeni nu a pariat, dă pur și simplu check.
 
 O regulă de etichetă live: nu da fold ==în afara rândului==. Așteaptă ca acțiunea să ajungă la tine — renunțarea în avans oferă informații jucătorilor care încă se hotărăsc, iar majoritatea cazinourilor te avertizează sau te penalizează. A ști *când* fold-ul e mutarea corectă e o pricepere aparte — ține de strategie.
 

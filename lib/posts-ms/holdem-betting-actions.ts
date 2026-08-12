@@ -103,7 +103,7 @@ Contoh sebenar: anda di flop dengan K♠ 8♦. Tiada sesiapa bertaruh, jadi anda
 
 Fold bermaksud anda serahkan kad anda dan keluar daripada hand itu. Anda tidak bayar apa-apa yang baharu, tetapi ==r:setiap cip yang sudah anda masukkan kekal dalam pot==.
 
-Ya — anda boleh fold bila-bila masa giliran anda, walaupun sebelum bertaruh apa-apa, dan walaupun ketika cek adalah percuma. Tetapi awas dengan perangkap pada bahagian akhir itu: **fold ketika anda boleh cek secara percuma bermakna membuang hand tanpa sebab**. Kalau tiada sesiapa bertaruh, cek sahaja.
+Ya — bila-bila masa giliran anda, anda boleh fold, walaupun sebelum bertaruh apa-apa, dan fold itu mengikat. Namun ia bukan tanpa akibat: dalam kejohanan, fold sedangkan tiada pertaruhan di hadapan anda dikira "non-standard fold" di bawah ==WSOP Rule 84== dan boleh menerima amaran. Dan awas perangkap ini: **fold ketika anda boleh cek secara percuma bermakna membuang hand tanpa sebab**. Kalau tiada sesiapa bertaruh, cek sahaja.
 
 Satu adab poker live: jangan fold ==di luar giliran==. Tunggu sehingga aksi sampai kepada anda — fold awal memberi maklumat kepada pemain yang masih membuat keputusan, dan kebanyakan bilik kad akan memberi amaran atau penalti. Mengetahui *bila* fold adalah langkah yang betul ialah kemahiran tersendiri — itu dibincangkan dalam panduan bila masa untuk fold dalam poker.
 

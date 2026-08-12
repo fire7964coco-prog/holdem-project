@@ -103,7 +103,7 @@ Ejemplo real: estás en el flop con K♠ 8♦. Nadie ha apostado, así que ==pas
 
 Retirarse (foldear) significa tirar tus cartas y abandonar la mano. No pagas nada nuevo, pero ==r:todas las fichas que ya pusiste se quedan en el bote==.
 
-Sí — puedes retirarte en cualquier momento en que la acción sea tuya, incluso antes de apostar nada y hasta cuando pasar sería gratis. Pero ojo con la trampa de esa última parte: **tirarte cuando podrías pasar gratis es regalar una mano sin motivo**. Si nadie ha apostado, simplemente pasa.
+Sí — siempre que la acción sea tuya puedes retirarte, incluso antes de apostar nada, y el fold es vinculante. Gratis del todo no es: en torneo, retirarte cuando no hay ninguna apuesta por delante cuenta como "fold no estándar" según la ==regla 84 de la WSOP== y puede costarte un aviso. Y ojo con la trampa: **tirarte cuando podrías pasar gratis es regalar una mano sin motivo**. Si nadie ha apostado, simplemente pasa.
 
 Una regla de etiqueta en vivo: no te tires ==fuera de turno==. Espera a que la acción llegue a ti — tirarte antes de tiempo da información a los jugadores que aún están decidiendo, y en la mayoría de las salas te caerá un aviso o una sanción. Saber *cuándo* retirarse es la jugada correcta es una habilidad en sí misma — eso se trata en [cuándo foldear en el póker](/es/blog/holdem-when-to-fold).
 
