@@ -3,6 +3,30 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-08-12 (8) — **betting-actions 미러 종료 — 6종 전부 25 로케일** (`e200f14`)
+
+남은 3종은 **«조항 귀속» 정정**이다 — 결론은 맞는데 근거 번호·메커니즘이 틀린 유형.
+룰 번호를 다는 글에서는 이게 곧 E-E-A-T 손실이다.
+
+| 종 | 결함 | 1차 출처 |
+|---|---|---|
+| One-Chip | ①헤지를 룰 인용으로 승격 ②**타이밍 요건이 통째로 누락**(칩이 테이블에 닿기 전) | Rule 97 |
+| 무언의 칩 | 일화가 「call이라 **말하며** 칩을 던진다」인데, 그대로면 실은 **Check**다(90.b.1). 벳이 되는 건 **무언의 칩**(90.a) — 두 갈래를 갈라야 판정이 선다 | 90.a / 90.b.1 |
+| String Bet | 「Call 선언 후 추가」는 다중 동작 문제가 아니라 **선언이 이미 구속력**을 가졌기 때문(90.d). 진짜 String Bet은 «선언 없이 여러 동작»(103) | 90.d / 103 |
+
+**betting-actions 6종 완료**: 캡 · BB 체크 · Non-Standard Fold · One-Chip · 무언의 칩 · String Bet.
+게이트 25 로케일 전수 🔴 0건 · 빌드 69 blog + 457 intl(불변).
+
+### 미러 트랙 누계 (2026-08-12)
+
+| 글 | 로케일 | 상태 |
+|---|---:|---|
+| `holdem-showdown-rules` | 25 | ✅ 9자리 |
+| `holdem-betting-actions` | 25 | ✅ 6종 |
+| `holdem-split-pot-rules` | 8 | ✅ 3자리 |
+| `holdem-reading-the-board` | 8 | ✅ 3자리 |
+| 잔여 4편 | 8~13 | 🔴 equity · implied-odds · flush-vs-straight · outs · hand-rankings |
+
 ## 2026-08-12 (7) — **betting-actions 미러 3탄: BB 체크 + Non-Standard Fold** (`3b09d59` `e8f8402`)
 
 ### BB 체크 표현 — 25 로케일 × 4자리

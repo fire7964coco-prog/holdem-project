@@ -72,14 +72,18 @@ Session 6(Turniere 9편)로 마지막 클러스터를 닫았다. 경위는 `WORK
 |---|---:|---|
 | ~~`holdem-split-pot-rules`~~ | 8 | ✅ **완료** — :::tip(D유형) · alt · 풀하우스 FAQ |
 | ~~`holdem-reading-the-board`~~ | 8 | ✅ **완료** — Rule 75 · 보드 스트레이트 플러시 예외 · 「4장=A하이」 |
-| `holdem-betting-actions` | **25** | 🟡 ✅캡(본문·FAQ) ✅BB 체크 4자리 ✅Non-Standard Fold(84) · 🔴 **잔여 3종**: 무언의 칩(**90.a**) · One-Chip(**97**) · String Bet(**90.d vs 103**) — EN·de는 완료, **로케일 23곳 남음**. 자리는 「\"to call\"이라며 칩을 던지는 Fehler 문단」·「$10 벳 앞 $100 칩 One-Chip 문단」·「\"Call\" 후 추가 = String Bet 본문 + 같은 FAQ」 |
+| ~~`holdem-betting-actions`~~ | **25** | ✅ **완료 — 6종 전부**(캡 · BB 체크 · Fold 84 · One-Chip 97 · 무언의 칩 90.a · String Bet 90.d/103) |
 | `holdem-hand-rankings` | **13** | 🔴 용어 동일시 · 「대부분의 팟은 원페어」(43,82% < 50%) · 무늬 서열 한정(**토너먼트 배제** 주의) |
 | `holdem-equity` | 8 | 🔴 「Equity = Win%」 6곳 · AK vs AQ 표행(73/23 → **74/26**) |
 | `holdem-implied-odds` | 8 | 🔴 국면 라벨 3곳 · 「Flop- und Turn-Konzept」 |
 | `holdem-flush-vs-straight` | 8 | 🔴 「2배」(7장은 **1,53배**) 4곳 · 플러시 스플릿 누락 · 하트 최상단 |
 | `holdem-outs` | 8 | 🔴 FAQ 2장 계산 전제 누락 |
 
-🔴 **다음 = `betting-actions` 잔여(23 로케일) → `equity`/`flush-vs-straight`(수치라 검산 필요) → `hand-rankings`.**
+🔴 **다음 = `equity` → `flush-vs-straight` → `implied-odds`/`outs` → `hand-rankings`.**
+앞의 셋은 **수치가 걸려 있어 반영 전 직접 검산이 필요하다**(이번 세션 검산치는 WORKLOG (4)에 있다:
+AK vs AQ 에퀴티 **73,60 : 26,40** · 7장 플러시:스트레이트 배수 **1,5268** · 셋 플랍 11,755% ·
+트립스 1,347% · 「둘 다 셋」 1,018% · 필요 에퀴티 3×팟 42,9 / 5×팟 45,5, 상한 50%).
+`hand-rankings`는 13 로케일이고, 무늬 서열은 **토너먼트 배제**(Rule 85) 주의.
 
 ⚠ **「N곳」을 가정하지 마라 — 이번에도 계속 깨졌다.** split-pot 풀하우스 FAQ는 **4곳**
 (id·ja·pt는 **이미 옳았다**), 보드 스트레이트 FAQ도 **4곳**(id·ja·pt엔 그 FAQ가 없다),
