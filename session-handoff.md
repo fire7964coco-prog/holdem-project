@@ -47,8 +47,16 @@ Session 6(Turniere 9편)로 마지막 클러스터를 닫았다. 경위는 `WORK
 - 🟠 **`masterUpdated` 없는 de 6편**(`tournament` `tvc` `short-stack` `ept` `wpt` `korea-marathon`).
   🔴 **찍기 전에 3단 대조**(섹션 줄수·1인칭 문장수·**FAQ 질문 목록**)를 하라 — 안 하고 찍으면 거짓 초록이다.
   ⚠ `tournament` de·id·pt는 **필드 자체가 없다** — 「없는 자리에 새로 박지 않는다」
-- 🟠 **적대 QA 2렌즈가 이번 세션에 안 돌았다**(에이전트 사용을 지시받지 않아 생략). Turniere 9편 대상.
-  **D유형(전략적 유해 조언)은 딜러 렌즈만 잡는다** — Session 5에서 4건이 그렇게 나왔다
+- ✅ **적대 QA는 3렌즈로 돌았고 반영까지 끝났다**(네이티브 매체 에디터 · 현역 딜러/TD · 교열).
+  경위는 `WORKLOG.md` 2026-08-11 (18). **D유형 3건은 딜러 렌즈만 잡았다** — 다시 확인된 원칙이다
+- 🟠 **잔여 (렌즈가 잡았으나 근거 부족으로 미반영)**:
+  ① `ept-barcelona` Day 1 「12:00 시작 → 20:30 종료, 8–10 Level」이 **산술적으로 안 맞는다**
+     (75분 레벨 8개 = 10시간). 레벨 길이를 1차출처로 확인해야 고칠 수 있다
+  ② 같은 글 「offizielle Pausen sind selten」 ↔ EPT는 2레벨마다 브레이크 — 확인 필요
+  ③ `ept-barcelona`가 Power Path를 축으로 서는데 **독일 독자는 PokerStars.de로 라우팅**된다.
+     APT 글은 Natural8→GGPoker 라우팅을 경고하는데 EPT 글만 비대칭 — 로비 실측 후 한 줄
+  ④ `wpt-australia` 「Ladies Australian Championship … offen für alle」 — 명칭과 충돌, 재확인
+  ⑤ `korea-marathon` 「Paradise City 캐시게임 ganzjährig」 근거 없음(「ganzjährig」는 이미 뺐다)
 - 🟠 Session 4 적대 QA **「중간 확신」 ~40곳 번역티 미반영**(전부 어휘·연어, 사실오류 아님).
   대표: `X % der Zeit`(→`in X % der Fälle`) · `zieh zusammen` · `stechen` · `Patrone`(→Barrel)
 
@@ -76,6 +84,8 @@ npm run build && npm run check:hreflang && npm run check:faq-schema && npm run c
 | `check:hreflang` | 481페이지 · 50세트 · 🔴 0건 |
 | 미러 드리프트 | de: 🔴 **3**(4에서 −1) · 🟠 추적불가 **7**편 |
 | de 질문형 H2 | 42편 전 클러스터 경화 완료 |
+| 적대 QA | ✅ **3렌즈 완료·반영**(교열 21건 · 딜러 D유형 3건 · 네이티브 14곳) — 마지막 커밋 `24c1657` |
+| 지역 커버리지 | ✅ 베를린·NRW 3곳·바이에른 9곳(SBPM)·King's·CAPT·스위스 — 1차출처 + 확인일 병기 |
 
 > 📚 상시 함정·렌즈 운용 = `REVIEW-PROTOCOL.md` 맨 아래 · 다국어 경화 교훈 = `docs/lessons-i18n-hardening.md`.
 > **트랙 착수 전 둘 다 읽어라.**
