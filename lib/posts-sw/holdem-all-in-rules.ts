@@ -119,7 +119,7 @@ Sheria: ==kila side pot hujengwa kwa kuchukua tofauti hadi stack ndogo inayofuat
 
 **Sheria:** Kama mchezaji anaenda all-in kwa **chini ya [raise kamili](/sw/blog/holdem-betting-actions)**, all-in hiyo HAIfungui tena dau kwa wachezaji ambao tayari wamecheza katika raundi hiyo.
 
-![Sheria ya re-raise baada ya all-in katika poker — Mchezaji C anaenda all-in kwa chini ya raise kamili, Mchezaji A anaweza ku-call au ku-fold tu](/images/holdem-all-in-reraise-rule.webp)
+![Sheria ya re-raise baada ya all-in katika poker — all-in fupi chini ya raise kamili, hivyo Mchezaji A ambaye tayari amecheza anaweza ku-call au ku-fold tu](/images/holdem-all-in-reraise-rule.webp)
 
 **Mfano:**
 
@@ -209,7 +209,7 @@ Wakati dau lote limekamilika na kuna mchezaji wa all-in, hivi ndivyo kinachotoke
 Hawezi. Ukishawekewa kikomo mchezaji wa all-in, chipsi zozote za ziada zilizowekwa na wenye stack kubwa zinamilikiwa na pot ambayo mchezaji wa all-in hana haki nayo.
 
 ### Kosa la 2: Kutojua sheria ya nani anaruhusiwa ku-re-raise
-All-in ya sehemu kutoka kwa Mchezaji C haimpi Mchezaji A nafasi ya pili ya ku-re-raise. Kuijua hii vizuri kunakomesha migogoro kabla haijaanza.
+All-in ya sehemu haiwapi nafasi ya pili ya ku-re-raise wale ambao **tayari wamecheza** raundi hiyo — ambaye bado hajacheza anaweza ku-raise kama kawaida. Kuijua hii vizuri kunakomesha migogoro kabla haijaanza.
 
 ### Kosa la 3: Kuongeza chipsi kutoka mfukoni katikati ya mkono
 Table stakes. Kilichopo mezani ndicho chote unachoweza kuweka dau. Kama uko all-in kwa $80 na pot ni $400, unaweza kushinda tu $80 kutoka kwa kila aliye-call.

@@ -119,7 +119,7 @@ All-in खिलाड़ी केवल अपना डाला हुआ, �
 
 **नियम:** अगर कोई खिलाड़ी **एक [full raise](/hi/blog/holdem-betting-actions) से कम** में all-in जाता है, तो वह all-in उन खिलाड़ियों के लिए betting दोबारा नहीं खोलता जो उस round में पहले ही act कर चुके हैं।
 
-![पोकर re-raise नियम all-in के बाद — Player C एक full raise से कम में all-in जाता है, Player A केवल call या fold कर सकता है](/images/holdem-all-in-reraise-rule.webp)
+![पोकर re-raise नियम all-in के बाद — full raise से कम का एक छोटा all-in, इसलिए पहले ही एक्ट कर चुका Player A केवल call या fold कर सकता है](/images/holdem-all-in-reraise-rule.webp)
 
 **उदाहरण:**
 
@@ -209,7 +209,7 @@ Minimum raise threshold हमेशा *आख़िरी full valid bet य�
 वह नहीं जीत सकता। एक बार all-in खिलाड़ी की सीमा बँध गई, तो बड़े stack के लगाए किसी भी अतिरिक्त chip पर उसका कोई हक़ नहीं रहता।
 
 ### ग़लती 2: re-raise eligibility नियम न जानना
-Player C का partial all-in Player A को दोबारा re-raise करने का मौक़ा नहीं देता। इसे पक्का याद रखना बहस शुरू होने से पहले ही रोक देता है।
+partial all-in उन खिलाड़ियों को दोबारा re-raise का मौक़ा नहीं देता जो उस राउंड में **पहले ही एक्ट कर चुके** हैं — जिसकी बारी अभी आई नहीं, वह सामान्य रूप से raise कर सकता है। इसे पक्का याद रखना बहस शुरू होने से पहले ही रोक देता है।
 
 ### ग़लती 3: हैंड के बीच में जेब से chips जोड़ना
 Table stakes। टेबल पर जो है, बस उतना ही आप दांव पर लगा सकते हैं। अगर आप $80 में all-in हैं और pot $400 का है, तो हर caller से आप केवल $80 जीत सकते हैं।

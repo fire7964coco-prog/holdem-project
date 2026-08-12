@@ -119,7 +119,7 @@ Quy tắc: ==mỗi pot phụ được tạo bằng cách lấy phần chênh l�
 
 **Luật như sau:** nếu một người all-in với số chip **ít hơn một [nước tố đủ mức](/vi/blog/holdem-betting-actions)** (full raise), cú all-in đó KHÔNG mở lại vòng cược cho những người đã hành động trong vòng đó.
 
-![Luật tố lại sau all-in trong poker — Người chơi C all-in ít hơn một nước tố đủ mức, Người chơi A chỉ được theo hoặc bỏ bài](/images/holdem-all-in-reraise-rule.webp)
+![Luật tố lại sau all-in trong poker — một cú all-in ngắn ít hơn một nước tố đủ mức, nên Người chơi A đã hành động rồi chỉ được theo hoặc bỏ bài](/images/holdem-all-in-reraise-rule.webp)
 
 **Ví dụ:**
 
@@ -211,7 +211,7 @@ Không thể. Một khi người all-in đã bị giới hạn mức thắng, m�
 
 ### Sai lầm 2: không nắm luật ai được quyền tố lại
 
-Cú all-in lẻ của Người chơi C không cho Người chơi A cơ hội thứ hai để tố lại. Thuộc lòng điều này giúp dập tắt tranh cãi trước cả khi nó bắt đầu.
+Cú all-in lẻ không cho cơ hội tố lại với những người **đã hành động** trong vòng đó — ai chưa tới lượt vẫn được tố bình thường. Thuộc lòng điều này giúp dập tắt tranh cãi trước cả khi nó bắt đầu.
 
 ### Sai lầm 3: móc thêm chip từ túi giữa ván
 

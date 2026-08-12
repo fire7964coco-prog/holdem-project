@@ -119,7 +119,7 @@ Die Regel: ==Jeder Side Pot entsteht aus der Differenz bis zum nächstkleineren 
 
 **Die Regel:** Geht ein Spieler für **weniger als eine [volle Erhöhung](/de/blog/holdem-betting-actions)** All-in, öffnet dieses All-in die Setzrunde für Spieler, die in dieser Runde bereits gehandelt haben, NICHT neu.
 
-![Poker-Re-Raise-Regel nach All-in – Spieler C geht für weniger als eine volle Erhöhung All-in, Spieler A kann nur callen oder folden](/images/holdem-all-in-reraise-rule.webp)
+![Poker-Re-Raise-Regel nach All-in – ein kurzes All-in unter einer vollen Erhöhung, deshalb kann Spieler A, der bereits gehandelt hat, nur callen oder folden](/images/holdem-all-in-reraise-rule.webp)
 
 **Beispiel:**
 

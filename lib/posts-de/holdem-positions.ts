@@ -190,7 +190,7 @@ Die Positionsnamen ändern sich nicht mit der Tischgröße – ==sie fallen zuer
 
 **Heads-up ist das, was jedermanns Intuition bricht.** Mit nur zwei Spielern ==setzt der Button den Small Blind== – derselbe Sitz ist BTN und SB zugleich. Das bedeutet, der Button handelt ==preflop **zuerst**== (der Big Blind handelt zuletzt, wie immer), aber immer noch ==auf jeder Postflop-Street **zuletzt**==, während der Big Blind postflop zuerst handelt. Jede andere Tischgröße folgt dem normalen Muster; einzig Heads-up verschmilzt den besten Sitz mit einem Blind.
 
-**6-Max vs. Full Ring** ist reine Subtraktion: Die drei zusätzlichen Sitze (UTG+1, UTG+2 und ein Middle-Sitz) existieren nicht, also läuft 6-Max UTG → HJ → CO → BTN → SB → BB. Die praktische Konsequenz ist, dass ==jeder 6-Max-Sitz „später“ spielt als sein Full-Ring-Namensvetter== – 6-Max-UTG hat fünf Gegner, nicht acht – weshalb sich die Ranges in Short-handed-Spielen auf ganzer Linie weiten. Die Sitz-für-Sitz-Zahlen stehen im [Positionsstrategie-Leitfaden](/de/blog/holdem-position-play), und die genauen Hände, die jede Range füllen, sind im [Starthände-Chart](/de/blog/holdem-starting-hands-chart) abgebildet.
+**6-Max vs. Full Ring** ist reine Subtraktion: Die drei zusätzlichen Sitze (UTG+1, UTG+2 und ein Middle-Sitz) existieren nicht, also läuft 6-Max UTG → HJ → CO → BTN → SB → BB. Die praktische Konsequenz ist, dass ==du häufiger in den Blinds und in Late Position sitzt und seltener jemanden vor dir eröffnen siehst== – 6-Max-UTG hat fünf Gegner, nicht acht – weshalb sich die Ranges in Short-handed-Spielen auf ganzer Linie weiten. Die Sitz-für-Sitz-Zahlen stehen im [Positionsstrategie-Leitfaden](/de/blog/holdem-position-play), und die genauen Hände, die jede Range füllen, sind im [Starthände-Chart](/de/blog/holdem-starting-hands-chart) abgebildet.
 
 > **Benennungs-Vorbehalt:** Manche Seiten und Card Rooms labeln den ersten 6-Max-Sitz als „LJ“ oder „MP“ statt UTG, und 10-händige Middle-Sitze erscheinen manchmal als „MP1/MP2“. Labels variieren; die Handlungsreihenfolge nie.
 
@@ -221,7 +221,7 @@ A. Der Small Blind handelt auf jeder Street vor dem Big Blind. Preflop handeln b
 
 **Q. Wie viele Positionen gibt es beim 6-Max-Poker?**
 
-A. Sechs: UTG (auch Lojack genannt), Hijack, Cutoff, Button, Small Blind und Big Blind. Verglichen mit einem 9-Max-Tisch existieren UTG+1, UTG+2 und ein Middle-Sitz schlicht nicht – die Namen werden zuerst von der Early Position entfernt, also spielt jeder verbleibende Sitz „später“ als sein Full-Ring-Namensvetter.
+A. Sechs: UTG (auch Lojack genannt), Hijack, Cutoff, Button, Small Blind und Big Blind. Verglichen mit einem 9-Max-Tisch existieren UTG+1, UTG+2 und ein Middle-Sitz schlicht nicht – gestrichen wird zuerst die Early Position, also hat jeder verbleibende Sitz vor den Blinds weniger Gegner hinter sich als sein Full-Ring-Namensvetter – Button, Small Blind und Big Blind bleiben unverändert.
 
 **Q. Ändern sich Poker-Positionen jede Hand?**
 

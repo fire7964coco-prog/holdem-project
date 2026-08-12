@@ -119,7 +119,7 @@ Ang patakaran: ==bawat side pot ay binubuo sa pamamagitan ng pagkuha ng differen
 
 **Ang patakaran:** Kung ang isang player ay nag-all-in ng **kulang sa [full raise](/fil/blog/holdem-betting-actions)**, ang all-in na iyon ay HINDI nagbubukas ulit ng betting para sa mga player na nakakilos na sa round na iyon.
 
-![Re-raise rule pagkatapos ng all-in sa poker — nag-all-in si Player B ng kulang sa full raise, puwede lang mag-call o mag-fold si Player A](/images/holdem-all-in-reraise-rule.webp)
+![Re-raise rule pagkatapos ng all-in sa poker — maikling all-in na kulang sa full raise, kaya si Player A na nakakilos na ay puwede lang mag-call o mag-fold](/images/holdem-all-in-reraise-rule.webp)
 
 **Halimbawa:**
 
@@ -209,7 +209,7 @@ Kapag kumpleto na ang lahat ng betting at may all-in na player, ganito ang nangy
 Hindi nila kaya. Kapag naka-cap na ang all-in player, anumang dagdag na chips na na-bet ng mas malalaking stack ay pag-aari ng pot na walang karapatan ang all-in player.
 
 ### Pagkakamali 2: Hindi alam ang re-raise eligibility rule
-Ang partial all-in ni Player C ay hindi nagbibigay kay Player A ng pangalawang pagkakataon na mag-re-raise. Ang pag-alam nito nang husto ay pumipigil sa mga away bago pa man magsimula.
+Ang partial all-in ay hindi nagbibigay ng pangalawang pagkakataon na mag-re-raise sa mga **nakakilos na** sa round na iyon — ang hindi pa nakakilos ay puwede pa ring mag-raise nang normal. Ang pag-alam nito nang husto ay pumipigil sa mga away bago pa man magsimula.
 
 ### Pagkakamali 3: Pagdagdag ng chips mula sa bulsa habang nasa gitna ng hand
 Table stakes. Ang nasa mesa ang tanging kaya mong itaya. Kung all-in ka ng $80 at ang pot ay $400, $80 lang ang kaya mong panalunan sa bawat nag-call.

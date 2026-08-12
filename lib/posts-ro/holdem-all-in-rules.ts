@@ -119,7 +119,7 @@ Regula: ==fiecare side pot se construiește luând diferența până la următor
 
 **Regula:** dacă un jucător dă all-in pentru **mai puțin de o [mărire completă](/ro/blog/holdem-betting-actions)**, acel all-in NU redeschide pariurile pentru jucătorii care au acționat deja în runda respectivă.
 
-![Regula re-raise-ului după un all-in la poker — Jucătorul C dă all-in pentru mai puțin de o mărire completă, iar Jucătorul A poate doar să plătească sau să renunțe](/images/holdem-all-in-reraise-rule.webp)
+![Regula re-raise-ului după un all-in la poker — un all-in scurt, sub o mărire completă, așa că Jucătorul A, care a acționat deja, poate doar să plătească sau să renunțe](/images/holdem-all-in-reraise-rule.webp)
 
 **Exemplu:**
 
@@ -211,7 +211,7 @@ Nu poate. Odată ce jucătorul all-in este plafonat, orice jeton în plus pariat
 
 ### Greșeala 2: să nu știi regula despre cine poate re-mări
 
-Un all-in parțial al Jucătorului C nu îi dă Jucătorului A o a doua șansă de a mări. Dacă știi asta pe de rost, tai certurile înainte să înceapă.
+Un all-in parțial nu le dă o a doua șansă de a mări celor care **au acționat deja** în runda respectivă — cine încă nu a acționat poate mări normal. Dacă știi asta pe de rost, tai certurile înainte să înceapă.
 
 ### Greșeala 3: să adaugi jetoane din buzunar în timpul mâinii
 

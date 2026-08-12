@@ -119,7 +119,7 @@ La regla: ==cada side pot se construye tomando la diferencia hasta el siguiente 
 
 **La regla:** si un jugador va all-in por **menos de una [subida completa](/es/blog/holdem-betting-actions)**, ese all-in NO reabre la apuesta para los jugadores que ya han actuado en esa ronda.
 
-![Regla de la resubida tras un all-in en póker — el Jugador C va all-in por menos de una subida completa y el Jugador A solo puede pagar o retirarse](/images/holdem-all-in-reraise-rule.webp)
+![Regla de la resubida tras un all-in en póker — un all-in corto por menos de una subida completa, así que el Jugador A, que ya actuó, solo puede pagar o retirarse](/images/holdem-all-in-reraise-rule.webp)
 
 **Ejemplo:**
 
@@ -211,7 +211,7 @@ No puede. Una vez el jugador all-in queda capado, cualquier ficha extra apostada
 
 ### Error 2: no saberse la regla de quién puede resubir
 
-Un all-in parcial del Jugador C no le da al Jugador A una segunda oportunidad de resubir. Sabértelo de memoria corta las discusiones antes de que empiecen.
+Un all-in parcial no le da una segunda oportunidad de resubir a quien **ya actuó** en esa ronda — quien todavía no ha actuado sí puede subir con normalidad. Sabértelo de memoria corta las discusiones antes de que empiecen.
 
 ### Error 3: añadir fichas del bolsillo a mitad de mano
 

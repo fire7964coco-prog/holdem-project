@@ -119,7 +119,7 @@ All-in খেলোয়াড় কেবল নিজের বাজি, �
 
 **নিয়ম:** যদি কোনো খেলোয়াড় **একটা [full raise](/bn/blog/holdem-betting-actions)-এর কম**-এ all-in যান, তাহলে সেই all-in ওই খেলোয়াড়দের জন্য betting আবার খোলে না, যারা সেই round-এ আগেই act করে ফেলেছেন।
 
-![পোকার re-raise নিয়ম all-in-এর পর — Player C একটা full raise-এর কম-এ all-in যায়, Player A কেবল call বা fold করতে পারে](/images/holdem-all-in-reraise-rule.webp)
+![পোকার re-raise নিয়ম all-in-এর পর — full raise-এর কম একটা ছোট all-in, তাই আগেই অ্যাকশন নেওয়া Player A কেবল call বা fold করতে পারে](/images/holdem-all-in-reraise-rule.webp)
 
 **উদাহরণ:**
 
@@ -209,7 +209,7 @@ Minimum raise threshold সবসময় *শেষ full valid bet বা rais
 সে পারে না। একবার all-in খেলোয়াড়ের সীমা বাঁধা পড়লে, বড় stack-এর বাজি ধরা যেকোনো অতিরিক্ত chip-এ তার কোনো দাবি থাকে না।
 
 ### ভুল 2: re-raise eligibility নিয়ম না জানা
-Player C-র partial all-in Player A-কে আবার re-raise করার সুযোগ দেয় না। এটা পাকাপাকিভাবে মনে রাখা তর্ক শুরু হওয়ার আগেই থামিয়ে দেয়।
+partial all-in সেই খেলোয়াড়দের আবার re-raise করার সুযোগ দেয় না যাঁরা ওই রাউন্ডে **আগেই অ্যাকশন নিয়েছেন** — যাঁর পালা এখনও আসেনি, তিনি স্বাভাবিকভাবেই raise করতে পারেন। এটা পাকাপাকিভাবে মনে রাখা তর্ক শুরু হওয়ার আগেই থামিয়ে দেয়।
 
 ### ভুল 3: হ্যান্ডের মাঝপথে পকেট থেকে chips যোগ করা
 Table stakes। টেবিলে যা আছে, কেবল ততটাই আপনি বাজি ধরতে পারবেন। আপনি $80-এ all-in থাকলে আর pot $400-এর হলে, প্রতিটা caller-এর কাছ থেকে আপনি কেবল $80 জিততে পারবেন।

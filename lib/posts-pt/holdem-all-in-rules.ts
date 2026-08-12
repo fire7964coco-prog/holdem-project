@@ -119,7 +119,7 @@ A regra: ==cada pote paralelo é montado pegando a diferença até o próximo st
 
 **A regra:** se um jogador vai de all-in por **menos que um [aumento completo](/pt/blog/holdem-betting-actions)**, esse all-in NÃO reabre a aposta para quem já agiu naquela rodada.
 
-![Regra de re-raise após all-in no pôquer — Jogador C vai de all-in por menos que um aumento completo e o Jogador A só pode pagar ou foldar](/images/holdem-all-in-reraise-rule.webp)
+![Regra de re-raise após all-in no pôquer — um all-in curto por menos que um aumento completo, então o Jogador A, que já agiu, só pode pagar ou foldar](/images/holdem-all-in-reraise-rule.webp)
 
 **Exemplo:**
 
@@ -209,7 +209,7 @@ Quando todas as apostas terminam e há um jogador de all-in, o showdown funciona
 Não pode. Uma vez que o jogador de all-in está limitado, qualquer ficha extra apostada pelos stacks maiores pertence a um pote sobre o qual ele não tem nenhum direito.
 
 ### Erro 2: não conhecer a regra de reabertura do re-raise
-Um all-in parcial do Jogador C não dá ao Jogador A uma segunda chance de aumentar. Saber isso de cor encerra a discussão antes de ela começar.
+Um all-in parcial não dá segunda chance de aumentar a quem **já agiu** naquela rodada — quem ainda não agiu pode aumentar normalmente. Saber isso de cor encerra a discussão antes de ela começar.
 
 ### Erro 3: adicionar fichas do bolso no meio da mão
 Table stakes. O que está na mesa é tudo o que você pode apostar. Se você está de all-in por $80 e o pote é de $400, você só pode ganhar $80 de cada pagador.

@@ -118,7 +118,7 @@ The rule: ==each side pot is built by taking the difference up to the next-small
 
 **The rule:** If a player goes all-in for **less than a [full raise](/en/blog/holdem-betting-actions)**, that all-in does NOT reopen the betting for players who have already acted in that round.
 
-![Poker re-raise rule after all-in — Player C goes all-in for less than a full raise, Player A can only call or fold](/images/holdem-all-in-reraise-rule.webp)
+![Poker re-raise rule after all-in — a short all-in of less than a full raise, so Player A, who has already acted, can only call or fold](/images/holdem-all-in-reraise-rule.webp)
 
 **Example:**
 
@@ -210,7 +210,7 @@ After enough all-in pots, you learn the chaos almost always comes from five spec
 They cannot. Once the all-in player is capped, any additional chips bet by larger stacks belong to a pot the all-in player has no claim to.
 
 ### Mistake 2: Not knowing the re-raise eligibility rule
-A partial all-in from Player C does not give Player A a second chance to re-raise. Knowing this cold stops arguments before they start.
+A partial all-in gives players who have **already acted** this round no second chance to re-raise — anyone still to act may raise normally. Knowing this cold stops arguments before they start.
 
 ### Mistake 3: Adding chips from your pocket mid-hand
 Table stakes. What's on the table is all you can bet. If you're all-in for $80 and the pot is $400, you can only win $80 from each caller.

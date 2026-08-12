@@ -119,7 +119,7 @@ Peraturannya: ==setiap side pot dibina dengan mengambil beza sehingga stack terk
 
 **Peraturannya:** Jika seorang pemain all-in dengan jumlah **kurang daripada satu [raise penuh](/ms/blog/holdem-betting-actions)**, all-in itu TIDAK membuka semula pertaruhan bagi pemain yang sudah bertindak dalam pusingan itu.
 
-![Peraturan re-raise selepas all-in dalam poker — Pemain C all-in kurang daripada satu raise penuh, Pemain A hanya boleh call atau fold](/images/holdem-all-in-reraise-rule.webp)
+![Peraturan re-raise selepas all-in dalam poker — all-in pendek yang kurang daripada satu raise penuh, jadi Pemain A yang sudah bertindak hanya boleh call atau fold](/images/holdem-all-in-reraise-rule.webp)
 
 **Contoh:**
 
@@ -211,7 +211,7 @@ Tidak boleh. Sebaik sahaja pemain all-in dihadkan, sebarang cip tambahan yang di
 
 ### Kesilapan 2: Tidak tahu peraturan hak re-raise
 
-All-in separa daripada Pemain C tidak memberi Pemain A peluang kedua untuk re-raise. Faham betul-betul peraturan ini dan pertikaman lidah dapat dielakkan sebelum ia bermula.
+All-in separa tidak memberi peluang kedua untuk re-raise kepada pemain yang **sudah bertindak** dalam pusingan itu — sesiapa yang belum bertindak masih boleh raise seperti biasa. Faham betul-betul peraturan ini dan pertikaman lidah dapat dielakkan sebelum ia bermula.
 
 ### Kesilapan 3: Menambah cip dari poket di tengah hand
 

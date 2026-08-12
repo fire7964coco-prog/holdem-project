@@ -119,7 +119,7 @@ La règle : ==chaque side pot se construit en prenant la différence jusqu'au ta
 
 **La règle :** si un joueur fait tapis pour **moins qu'une [relance complète](/fr/blog/holdem-betting-actions)**, ce tapis NE rouvre PAS les enchères pour les joueurs qui ont déjà parlé dans ce tour.
 
-![Règle de la relance après un tapis au poker — le Joueur C fait tapis pour moins qu'une relance complète et le Joueur A ne peut que suivre ou se coucher](/images/holdem-all-in-reraise-rule.webp)
+![Règle de la relance après un tapis au poker — un tapis court, inférieur à une relance complète, donc le Joueur A, qui a déjà parlé, ne peut que suivre ou se coucher](/images/holdem-all-in-reraise-rule.webp)
 
 **Exemple :**
 
@@ -211,7 +211,7 @@ Il ne peut pas. Une fois le joueur à tapis plafonné, tout jeton supplémentair
 
 ### Erreur 2 : ne pas connaître la règle de qui peut relancer
 
-Un tapis partiel du Joueur C ne donne pas au Joueur A une seconde chance de relancer. La connaître par cœur coupe court aux disputes avant qu'elles ne commencent.
+Un tapis partiel ne donne pas de seconde chance de relancer à ceux qui **ont déjà parlé** dans ce tour — ceux qui n'ont pas encore parlé peuvent relancer normalement. La connaître par cœur coupe court aux disputes avant qu'elles ne commencent.
 
 ### Erreur 3 : ajouter des jetons de sa poche en plein coup
 

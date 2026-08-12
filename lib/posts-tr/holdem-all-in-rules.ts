@@ -119,7 +119,7 @@ Kural şu: ==her yan pot, bir sonraki en küçük stack'e kadarki farkı × onu 
 
 **Kural:** Bir oyuncu **tam bir [yükseltmeden](/tr/blog/holdem-betting-actions) az** bir miktara all-in giderse, o all-in, o turda zaten aksiyon almış oyuncular için bahsi YENİDEN açmaz.
 
-![Poker'de all-in sonrası yeniden yükseltme kuralı — C Oyuncusu tam bir yükseltmeden az all-in gidiyor, A Oyuncusu sadece görebilir veya pas geçebilir](/images/holdem-all-in-reraise-rule.webp)
+![Poker'de all-in sonrası yeniden yükseltme kuralı — tam bir yükseltmeden az kalan kısa bir all-in, bu yüzden zaten aksiyon almış olan A Oyuncusu sadece görebilir veya pas geçebilir](/images/holdem-all-in-reraise-rule.webp)
 
 **Örnek:**
 
@@ -211,7 +211,7 @@ Kazanamaz. All-in oyuncu bir kez sınırlandı mı, büyük stack'lerin koyduğu
 
 ### Hata 2: Kimin yeniden yükseltebileceği kuralını bilmemek
 
-C Oyuncusundan gelen kısmi bir all-in, A Oyuncusuna yeniden yükseltmek için ikinci bir şans vermez. Bunu ezbere bilmek, tartışmaları daha başlamadan bitirir.
+Kısmi bir all-in, o turda **zaten aksiyon almış** oyunculara yeniden yükseltme şansı vermez — henüz aksiyon almamış olan normal şekilde yükseltebilir. Bunu ezbere bilmek, tartışmaları daha başlamadan bitirir.
 
 ### Hata 3: El ortasında cepten çip eklemek
 

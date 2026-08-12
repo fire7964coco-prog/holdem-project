@@ -119,7 +119,7 @@ Aturannya: ==setiap side pot dibentuk dengan mengambil selisih sampai stack terk
 
 **Aturannya:** kalau seorang pemain all-in **kurang dari satu [raise penuh](/id/blog/holdem-betting-actions)**, all-in itu TIDAK membuka kembali taruhan bagi pemain yang sudah beraksi di ronde tersebut.
 
-![Aturan re-raise setelah all-in di poker — Pemain C all-in kurang dari satu raise penuh, Pemain A hanya bisa call atau fold](/images/holdem-all-in-reraise-rule.webp)
+![Aturan re-raise setelah all-in di poker — all-in pendek yang kurang dari satu raise penuh, sehingga Pemain A yang sudah beraksi hanya bisa call atau fold](/images/holdem-all-in-reraise-rule.webp)
 
 **Contoh:**
 
@@ -211,7 +211,7 @@ Tidak bisa. Begitu pemain all-in dibatasi, chip tambahan apa pun yang dipertaruh
 
 ### Kesalahan 2: Tidak tahu aturan hak re-raise
 
-All-in parsial dari Pemain C tidak memberi Pemain A kesempatan kedua untuk re-raise. Hafal aturan ini di luar kepala dan perdebatan selesai sebelum dimulai.
+All-in parsial tidak memberi kesempatan kedua untuk re-raise kepada pemain yang **sudah beraksi** di ronde itu — yang belum beraksi tetap boleh raise seperti biasa. Hafal aturan ini di luar kepala dan perdebatan selesai sebelum dimulai.
 
 ### Kesalahan 3: Menambah chip dari kantong di tengah hand
 

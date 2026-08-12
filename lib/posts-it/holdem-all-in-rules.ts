@@ -119,7 +119,7 @@ La regola: ==ogni side pot si costruisce prendendo la differenza fino allo stack
 
 **La regola:** se un giocatore va all-in per **meno di un [rilancio completo](/it/blog/holdem-betting-actions)**, quell'all-in NON riapre le puntate per i giocatori che hanno già agito in quel giro.
 
-![Regola del rilancio dopo un all-in nel poker — il Giocatore C va all-in per meno di un rilancio completo e il Giocatore A può solo chiamare o passare](/images/holdem-all-in-reraise-rule.webp)
+![Regola del rilancio dopo un all-in nel poker — un all-in corto, inferiore a un rilancio completo, quindi il Giocatore A, che ha già agito, può solo chiamare o passare](/images/holdem-all-in-reraise-rule.webp)
 
 **Esempio:**
 
@@ -211,7 +211,7 @@ Non può. Una volta che il giocatore all-in è limitato, ogni fiche in più punt
 
 ### Errore 2: non sapere la regola su chi può rilanciare
 
-Un all-in parziale del Giocatore C non dà al Giocatore A una seconda occasione per rilanciare. Saperlo a memoria taglia le discussioni prima ancora che inizino.
+Un all-in parziale non dà una seconda occasione di rilanciare a chi **ha già agito** in quel giro — chi non ha ancora agito può rilanciare normalmente. Saperlo a memoria taglia le discussioni prima ancora che inizino.
 
 ### Errore 3: aggiungere fiches dalla tasca a metà mano
 

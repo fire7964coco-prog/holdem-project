@@ -75,6 +75,26 @@ de 검수에서 닫은 결함이 **EN 마스터 발원**임이 실증돼, 전 �
 
 </details>
 
+### 📬 검수장 회신 반영 현황 (`회신-미러검증-2026-08-12.md` · `85d2660`)
+
+✅ **1차 반영 완료**(WORKLOG (13)): `all-in-rules` 인물 혼동 **25 로케일 × 2자리** · de `implied-odds` FAQ 갓샷 국면 ·
+de `positions` 6맥스 「모든 자리」 2자리.
+
+🔴 **남은 항목 — 1차 출처가 필요해 별도 세션에서 연다:**
+
+| # | 항목 | 왜 아직인가 |
+|---|---|---|
+| 1 | `holdem-bubble` 핸드포홀드 — **WSOP 126.a만 있고 126.c·e 누락**(EN·ja) · de는 「시계가 계속 간다」가 틀림 | **세 로케일이 각각 다르게 틀렸다.** 룰북 PDF를 다시 받아 126 전문을 축어로 확인해야 한다 |
+| 2 | `hand-rankings` #65 「토너먼트는 딜러 오른쪽 첫 좌석에서 시작」 | 내가 **WSOP Rule 85**를 근거로 박았는데 검수장은 「TDA 2024·RRoP 어디에도 없다」고 했다. **출처가 서로 다르니 WSOP 원문으로 재확인**할 것 |
+| 3 | `position-play` #10 대체 근거(de·ja) | 검수장 검산: BTN 43% 레인지의 K 조합 **126/558 = 22,6%** vs 덱 14,9% = **1.5배뿐**. 「weit häufiger」는 과장 → **레인지 어드밴티지(강한 Kx 편중)** 프레임으로 재작성하거나 근거를 뺄 것 |
+| 4 | `rake` C44 de | 검수장이 인용한 문자열(`Zusätzlich schrumpft es oft…`)이 **현재 de 파일에 없다** — 이미 고쳐졌거나 인용이 낡았다. **재확인 후 판단** |
+| 5 | `straddle` tldr(de·ja) · `short-stack` tldr(ja) · `drawing-odds` Drilling→Trips 잔여(de) | §5-A 부분 정정 3건. 기계적이라 다음 배치에 묶는다 |
+| 6 | `docs/keyword-bank/de-core-volumes.md` 시드⑫ B절 · `de-gap-2026-08-11.md` | 문서 2곳이 낡았다(`/de/tournaments` 실재 · 3건 이미 메워짐) |
+
+🔴 **검수장 §5-D 질의에 대한 본체 답 — 「의도적 로케일 차이」 목록은 «없다».**
+현재는 `masterUpdated`와 커밋 메시지에만 흩어져 있다. **만들 값이 있다**(de엔 `positions` 6맥스 단락이 없고
+`rake` 합법성 FAQ도 없다 — 미러가 매번 그 자리에서 헛돈다). 🔴 **사장님 판단 대기**로 아래 표에 올렸다.
+
 ### 🔴 새로 확인된 잔여 — `holdem-pot-odds` 「Equity = Gewinnchance」 (2026-08-12 실측)
 
 de S3 검수장이 **「경계 밖 관찰」**로만 남겨 둔 자리를 equity 미러 중에 직접 열어 확인했다 — **실재한다.**
@@ -273,6 +293,7 @@ de 경화는 ✅ 종료됐다(경위·교훈 = `WORKLOG.md` 2026-08-11 (13)~(17)
 | 4 | 🪶 PDF 용지 규격 — ko·ja·zh도 A4 시장이다 | `generate-beginner-pdf.mjs`가 `@page { size: Letter }` 하드코딩이었다. 08-10에 언어별 `pageSize`를 도입하고 **de만 A4**로 했다. 재생성은 `node scripts/generate-beginner-pdf.mjs ko ja zh` + CONTENT에 `pageSize: "A4"` 한 줄. 바이너리 diff · 이미 배포된 파일이라 판단 사항 |
 | 5 | 🪶 PDF 수요는 족보 밖에도 있다 | `poker wahrscheinlichkeiten pdf` · `poker strategie pdf` 10/18 · `poker starthände tabelle` 110/**LDA5**. 확률·전략·스타팅핸드 클러스터를 열 때 그 글에 맞는 인쇄물을 붙일지 검토 |
 | 6 | `es` 국기 판단 | |
+| 7 | 🔴 **「의도적 로케일 차이」 목록을 만들 것인가** (검수장 §5-D 질의) | 지금은 **판정 기준이 «결함 문자열이 실재하는가»뿐**이라 «현지 맥락으로 재작성된 자리»와 «누락»을 못 가른다. 실측: **de엔 `positions` 6맥스 단락이 없고 `rake` 합법성 FAQ도 통째로 없다**(ja엔 있어 B층 정정을 받았다). 목록을 만들면 미러 4단계에 「목록에 있으면 건드리지 않는다」를 넣을 수 있다. **비용 = 42편 × 25로케일 훑기 1회** |
 
 > 📚 **「판 전체 재동기화 B1~B3의 대가 7가지」는 `docs/lessons-i18n-hardening.md`로 옮겼다**(2026-08-11). 트랙 착수 전 그 파일을 읽어라.
 

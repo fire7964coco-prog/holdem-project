@@ -119,7 +119,7 @@ Zasada: ==każdą pulę boczną tworzy się, biorąc różnicę do następnego n
 
 **Reguła:** jeśli gracz wchodzi all-in za **mniej niż pełne [przebicie](/pl/blog/holdem-betting-actions)**, ten all-in NIE otwiera na nowo licytacji dla graczy, którzy już zagrali w tej rundzie.
 
-![Reguła przebicia po all-inie w pokerze — Gracz C wchodzi all-in za mniej niż pełne przebicie, a Gracz A może tylko sprawdzić lub spasować](/images/holdem-all-in-reraise-rule.webp)
+![Reguła przebicia po all-inie w pokerze — krótki all-in za mniej niż pełne przebicie, więc Gracz A, który już zagrał, może tylko sprawdzić lub spasować](/images/holdem-all-in-reraise-rule.webp)
 
 **Przykład:**
 
@@ -211,7 +211,7 @@ Nie może. Gdy gracz all-in ma już nałożony limit, każdy dodatkowy żeton po
 
 ### Błąd 2: nieznajomość reguły, kto może przebić
 
-Częściowy all-in Gracza C nie daje Graczowi A drugiej szansy na przebicie. Znajomość tego na wylot ucina kłótnie, zanim się zaczną.
+Częściowy all-in nie daje drugiej szansy na przebicie tym, którzy **już zagrali** w tej rundzie — kto jeszcze nie zagrał, może przebijać normalnie. Znajomość tego na wylot ucina kłótnie, zanim się zaczną.
 
 ### Błąd 3: dokładanie żetonów z kieszeni w środku rozdania
 
