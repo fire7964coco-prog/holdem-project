@@ -8,9 +8,9 @@ export const POST: Post = {
   tldr: "सबसे मज़बूत से सबसे कमज़ोर तक पोकर हैंड रैंकिंग है: Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, Pair, और High Card।",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-08-09",
+  updated: "2026-08-12",
 
-  masterUpdated: "2026-08-09",
+  masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "14 मिनट",
   emoji: "🃏",
@@ -42,7 +42,7 @@ export const POST: Post = {
 | **10** | High Card | "कुछ नहीं" | कोई कॉम्बिनेशन नहीं | 17.4% |
 
 > **बहस ख़त्म करने वाला नियम**
-> Pair और High Card मिलकर river तक के सभी सात-कार्ड हैंड का लगभग 61% बनाते हैं। बड़े हैंड आम लगते हैं क्योंकि वे याद रह जाते हैं — पर ज़्यादातर पॉट एक pair और एक kicker से तय होते हैं।
+> Pair और High Card मिलकर river तक के सभी सात-कार्ड हैंड का लगभग 61% बनाते हैं। बड़े हैंड आम लगते हैं क्योंकि वे याद रह जाते हैं — पर ज़्यादातर पॉट एक pair या एक high card और उसके साथ आने वाले kicker से तय होते हैं।
 
 :::quiz:::
 

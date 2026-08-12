@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "La jerarquía de manos de póker, de la mejor a la peor, es: Escalera Real, Escalera de Color, Póker, Full, Color, Escalera, Trío, Doble Pareja, Pareja y Carta Alta. La regla básica: cuanto más rara es una mano de ligar, más alto está — por eso el color gana a la escalera y el full gana al color. Cuando dos jugadores tienen el mismo tipo de mano, decide el kicker; si las cinco cartas coinciden, el bote se divide.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-08-09",
-  masterUpdated: "2026-08-09",
+  updated: "2026-08-12",
+  masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🃏",
@@ -49,7 +49,7 @@ De la mejor a la peor, las diez manos del Texas Hold'em son: Escalera Real, Esca
 *Estas son las frecuencias estándar de manos de siete cartas para una baraja completa de 52 — las mismas probabilidades que usan todos los solvers y sitios de entrenamiento de póker.*
 
 > **La regla que gana discusiones**
-> La Pareja y la Carta Alta juntas suman alrededor del 61% de todas las manos de siete cartas al river. Las manos grandes parecen comunes porque se recuerdan, pero la mayoría de los botes se deciden con una pareja y un [kicker](/es/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp").
+> La Pareja y la Carta Alta juntas suman alrededor del 61% de todas las manos de siete cartas al river. Las manos grandes parecen comunes porque se recuerdan, pero la mayoría de los botes se deciden con una pareja o una carta alta y el [kicker](/es/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp").
 
 :::quiz:::
 

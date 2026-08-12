@@ -8,9 +8,9 @@ export const POST: Post = {
   tldr: "Thứ hạng các tay bài poker từ mạnh nhất đến yếu nhất là: Thùng Phá Sảnh Hoàng Gia, Thùng Phá Sảnh, Tứ Quý, Cù Lũ, Thùng, Sảnh, Sám Cô, Hai Đôi, Một Đôi, và Mậu Thầu.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-08-09",
+  updated: "2026-08-12",
 
-  masterUpdated: "2026-08-09",
+  masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "14 phút",
   emoji: "🃏",
@@ -42,7 +42,7 @@ Bắt đầu từ đây. Đây là toàn bộ thứ hạng, từ mạnh nhất �
 | **10** | Mậu Thầu | "Bài cao" | Không có gì cả | 17,4% |
 
 > **Quy tắc kết thúc mọi tranh cãi**
-> Một Đôi và Mậu Thầu cộng lại chiếm khoảng 61% tất cả các tay bảy lá tính đến river. Các tay lớn có vẻ phổ biến vì chúng đáng nhớ — nhưng phần lớn pot được định đoạt bởi một đôi và một kicker.
+> Một Đôi và Mậu Thầu cộng lại chiếm khoảng 61% tất cả các tay bảy lá tính đến river. Các tay lớn có vẻ phổ biến vì chúng đáng nhớ — nhưng phần lớn pot được định đoạt bởi một đôi hoặc mậu thầu cùng lá kicker đi kèm.
 
 :::quiz:::
 

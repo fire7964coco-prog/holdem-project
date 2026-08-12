@@ -8,9 +8,9 @@ export const POST: Post = {
   tldr: "Peringkat tangan poker dari terkuat ke terlemah adalah: Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, Pair, dan High Card.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-08-09",
+  updated: "2026-08-12",
 
-  masterUpdated: "2026-08-09",
+  masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "14 mnt",
   emoji: "🃏",
@@ -42,7 +42,7 @@ Mulai dari sini. Inilah seluruh peringkat, dari terkuat ke terlemah, dengan pelu
 | **10** | High Card | "Tanpa apa-apa" | Tidak ada kombinasi | 17,4% |
 
 > **Aturan yang mengakhiri perdebatan**
-> Pair dan High Card bersama-sama mencakup sekitar 61% dari semua tangan tujuh-kartu hingga river. Tangan besar terasa umum karena mudah diingat — tapi sebagian besar pot ditentukan oleh sepasang kartu dan sebuah [kicker](/id/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp").
+> Pair dan High Card bersama-sama mencakup sekitar 61% dari semua tangan tujuh-kartu hingga river. Tangan besar terasa umum karena mudah diingat — tapi sebagian besar pot ditentukan oleh sepasang kartu atau high card berikut [kicker](/id/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp").
 
 :::quiz:::
 

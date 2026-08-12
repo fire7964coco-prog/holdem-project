@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "ポーカーの役の強さは上から、ロイヤルフラッシュ → ストレートフラッシュ → フォーカード → フルハウス → フラッシュ → ストレート → スリーカード → ツーペア → ワンペア → ハイカードの10種類です。",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-08-09",
-  masterUpdated: "2026-08-09",
+  updated: "2026-08-12",
+  masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "14分",
   emoji: "🃏",
@@ -47,7 +47,7 @@ export const POST: Post = {
 </div>
 
 > **言い争いを終わらせる一つの事実**
-> ワンペアとハイカードを合わせると、リバーまでに完成する7枚の手の約61%を占めます。強い役が身近に感じるのは印象に残るからで、実際のポットの大半はペアと[キッカー](/ja/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp")で決まります。
+> ワンペアとハイカードを合わせると、リバーまでに完成する7枚の手の約61%を占めます。強い役が身近に感じるのは印象に残るからで、実際のポットの大半はペアかハイカード、そしてそれに付く[キッカー](/ja/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp")で決まります。
 
 :::quiz:::
 

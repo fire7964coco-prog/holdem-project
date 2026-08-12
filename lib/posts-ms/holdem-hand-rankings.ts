@@ -8,9 +8,9 @@ export const POST: Post = {
   tldr: "Susunan tangan poker daripada terkuat ke terlemah ialah: Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, Pair, dan High Card.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-08-09",
+  updated: "2026-08-12",
 
-  masterUpdated: "2026-08-09",
+  masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🃏",
@@ -42,7 +42,7 @@ Mulakan di sini. Inilah keseluruhan susunan, daripada paling kuat ke paling lema
 | **10** | High Card | "Tiada apa-apa" | Tiada kombinasi | 17.4% |
 
 > **Peraturan yang menamatkan pertikaian**
-> Pair dan High Card jika digabung meliputi kira-kira 61% daripada semua tangan tujuh-kad menjelang river. Tangan besar nampak biasa kerana ia mudah diingati — tetapi kebanyakan pot ditentukan oleh sepasang kad dan satu kicker.
+> Pair dan High Card jika digabung meliputi kira-kira 61% daripada semua tangan tujuh-kad menjelang river. Tangan besar nampak biasa kerana ia mudah diingati — tetapi kebanyakan pot ditentukan oleh sepasang kad atau high card berserta kicker yang mengiringinya.
 
 :::quiz:::
 

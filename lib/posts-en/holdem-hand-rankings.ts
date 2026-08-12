@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Poker hand rankings from best to worst are: Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, One Pair, and High Card.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-08-09",
+  updated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🃏",
@@ -48,7 +48,7 @@ From best to worst, the ten Texas Hold'em hands rank: Royal Flush, Straight Flus
 *These are the standard seven-card hand frequencies for a full 52-card deck — the same probabilities every poker solver and training site uses.*
 
 > **The one rule that wins arguments**
-> One Pair and High Card together make up roughly 61% of all seven-card hands by the river. Big hands feel common because they're memorable — but most pots are decided by a pair and a [kicker](/en/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp").
+> One Pair and High Card together make up roughly 61% of all seven-card hands by the river. Big hands feel common because they're memorable — but most pots are decided by a pair or a high card and the [kicker](/en/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp").
 
 :::quiz:::
 

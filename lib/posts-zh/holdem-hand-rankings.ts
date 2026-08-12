@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "德州扑克牌型从大到小依次为：皇家同花顺、同花顺、四条、葫芦、同花、顺子、三条、两对、一对、高牌。",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-08-09",
-  masterUpdated: "2026-08-09",
+  updated: "2026-08-12",
+  masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "14 分钟",
   emoji: "🃏",
@@ -49,7 +49,7 @@ export const POST: Post = {
 *这些是标准 52 张牌、七张成牌的牌型频率——和每一款扑克解算器、每一个训练网站用的是同一套概率。*
 
 > **能终结争论的一条规则**
-> 一对和高牌加起来，约占河牌时所有七张牌组合的61%。大牌之所以让人觉得常见，是因为它们令人印象深刻——但大多数底池其实是靠一对加一张[踢脚牌](/zh/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp")定胜负的。
+> 一对和高牌加起来，约占河牌时所有七张牌组合的61%。大牌之所以让人觉得常见，是因为它们令人印象深刻——但大多数底池其实是靠一对或高牌，再加上那张[踢脚牌](/zh/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp")定胜负的。
 
 :::quiz:::
 

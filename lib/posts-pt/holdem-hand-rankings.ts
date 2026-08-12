@@ -8,9 +8,9 @@ export const POST: Post = {
   tldr: "O ranking de mãos de pôquer, da melhor à pior, é: Royal Flush, Straight Flush, Quadra, Full House, Flush, Sequência, Trinca, Dois Pares, Par e Carta Alta.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-08-09",
+  updated: "2026-08-12",
 
-  masterUpdated: "2026-08-09",
+  masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🃏",
@@ -42,7 +42,7 @@ Comece por aqui. Este é o ranking inteiro, da mais forte à mais fraca, com a p
 | **10** | Carta Alta | "Sem nada" | Nenhuma combinação | 17,4% |
 
 > **A regra que encerra discussões**
-> Par e Carta Alta juntos somam cerca de 61% de todas as mãos de sete cartas até o river. As mãos grandes parecem comuns porque ficam na memória — mas a maioria dos potes é decidida por um par e um [kicker](/pt/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp").
+> Par e Carta Alta juntos somam cerca de 61% de todas as mãos de sete cartas até o river. As mãos grandes parecem comuns porque ficam na memória — mas a maioria dos potes é decidida por um par ou uma carta alta e o [kicker](/pt/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp").
 
 :::quiz:::
 
