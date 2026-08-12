@@ -3,8 +3,8 @@ import type { Post } from "../posts";
 export const POST: Post = {
   slug: "apt-incheon-2026-guide",
   title: "APT Incheon 2026 – Poker-Festival + Korea-Reiseguide",
-  seoTitle: "Für Poker nach Korea? APT Incheon 2026 im Paradise City + Seoul in 3 Tagen",
-  desc: "APT Incheon 2026 – 7.–16. Aug, Paradise City Casino nahe Flughafen Incheon. $2,7 Mio. GTD, Main Event ~$1.703. Online-Qualifikation seit 7. Aug beendet – rein kommt man nur noch vor Ort. Seoul-Guide.",
+  seoTitle: "Für Poker nach Korea? APT Incheon 2026 + Seoul in 3 Tagen",
+  desc: "APT Incheon 2026 – 7.–16. Aug, Paradise City nahe Flughafen Incheon. $2,7 Mio. GTD, Main Event ~$1.703. Online-Quali beendet – Anmeldung nur noch vor Ort.",
   tldr: "Die APT Incheon 2026 läuft vom 7.–16. Aug im Paradise City Casino, Incheon – 10 Min mit dem kostenlosen Shuttle vom Terminal 1. Main Event: KRW 2.500.000 (~$1.703) Buy-in, $1M GTD. Natural8s Online-Qualifikationen vergaben insgesamt 74 Seats, doch das $35-Mega und die OnLive-Day-1-Route endeten beide am 2. August: die letzte Route, $20 Step → $200 Mega, lief am 7. August aus – die Online-Qualifikation ist damit beendet. Nur für ausländische Staatsbürger (koreanische Bürger ohne Wohnsitz im Ausland dürfen nicht rein). Seoul ist ~1 Stunde entfernt und eine der besten Städte Asiens für Essen, Kultur und Nachtleben.",
   category: "tournament",
   date: "2026-06-18",
@@ -14,7 +14,7 @@ export const POST: Post = {
   readTime: "16 Min.",
   emoji: "🇰🇷",
   image: "/images/apt-incheon-2026-guide-hero.webp",
-  imageAlt: "APT Incheon 2026 im Paradise City – ein edler Poker-Turniersaal bei Nacht mit grünen Filztischen, Chip-Stacks und der Skyline des Hafens von Incheon durch bodentiefe Fenster",
+  imageAlt: "APT Incheon 2026 im Paradise City – ein edler Pokerturniersaal bei Nacht mit grünen Filztischen, Chip-Stacks und der Skyline des Hafens von Incheon durch bodentiefe Fenster",
   tags: [
     "APT Incheon 2026",
     "Korea Pokerturnier 2026",
@@ -151,7 +151,7 @@ $20 Step Satellite → Ticket für das $200 Mega Satellite gewinnen → Main-Eve
 
 > **Was OnLive war:** Die Route ließ dich Day 1 aus deiner heimischen Zeitzone spielen und nur dann nach Korea fliegen, wenn du bis Day 3 überlebtest – der clevere Weg, wenn das Reisebudget knapp war. ==r:Sie endete am 2. August und ist für diese Ausgabe keine Option mehr== – hier notiert, weil sie beim nächsten APT-Stopp einen Blick wert ist.
 
-**Es gibt einen dritten Weg, den fast keine Anleitung erwähnt: die Country Exclusives.** Natural8 veranstaltet Qualifier, die auf einzelne Länder beschränkt sind, und ein Paket daraus ist nicht nur der Seat, sondern Ticket plus Reisekosten. Der für Incheon 2026 offengelegte Lauf hieß „N8TW x APT Incheon 2026“ – das Paket bestand aus **NT$53.888 für das Ticket plus NT$16.000 Reisekosten**. Normale Satellites geben dir den Platz, den Flug zahlst du selbst. ==r:Entscheidend ist dabei die Staatsangehörigkeit, nicht der Wohnsitz== – dieser Lauf stand ausschließlich taiwanischen Staatsbürgern offen, und Natural8 gleicht das in der KYC-Verifizierung ab. Eine geänderte Meldeadresse bringt dich also nicht hinein. Prüf in der Lobby, ob für dein Land überhaupt ein Bracket läuft, bevor du den allgemeinen Weg gehst.
+**Es gibt einen dritten Weg, den fast keine Anleitung erwähnt: die Country Exclusives.** Natural8 veranstaltet Qualifier, die auf einzelne Länder beschränkt sind, und ein Paket daraus ist nicht nur der Seat, sondern Ticket plus Reisekosten. Der für Incheon 2026 offengelegte Lauf hieß „N8TW x APT Incheon 2026“ – das Paket bestand aus **NT$53.888 für das Ticket plus NT$16.000 Reisekosten**. Normale Satellites geben dir den Platz, den Flug zahlst du selbst. ==r:Für diese Brackets zählt die Staatsangehörigkeit – anders als beim Kontozugang, der am Wohnsitzland hängt== – dieser Lauf stand ausschließlich taiwanischen Staatsbürgern offen, und Natural8 gleicht das in der KYC-Verifizierung ab. Eine geänderte Meldeadresse bringt dich hier also nicht hinein. Prüf in der Lobby, ob für dein Land überhaupt ein Bracket läuft, bevor du den allgemeinen Weg gehst.
 
 ---
 

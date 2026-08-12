@@ -126,7 +126,7 @@ Wenn du von 10% aller Chips auf 20% aller Chips kommst, steigt deine Chance auf 
 ## Warum steigen die Blinds im Turnier und im Cash Game nicht?
 
 > **Kurze Antwort**
-> Weil beide Formate ein anderes Ziel haben. Ein Cash Game soll unbegrenzt weiterlaufen, also bleibt der Einsatz konstant. Ein Turnier muss dagegen an einem Tag einen Sieger finden, und der einzige Hebel dafür ist die Uhr: Steigende Blinds fressen jeden Stack, der nicht mitwächst, und erzwingen so die Entscheidungen.
+> Weil beide Formate ein anderes Ziel haben. Ein Cash Game soll unbegrenzt weiterlaufen, also bleibt der Einsatz konstant. Ein Turnier muss dagegen in endlicher Zeit zu einem Sieger führen, und der Hebel dafür ist die Uhr: Steigende Blinds fressen jeden Stack, der nicht mitwächst, und erzwingen so die Entscheidungen.
 
 Cash Games und Turniere fühlen sich auch deshalb anders an, weil die Blinds sich anders verhalten.
 
@@ -179,7 +179,7 @@ Cash-Game-Spieler kommen oft gut durch frühe Turnierphasen, weil sie sich deep 
 
 ---
 
-## Warum gibt es ICM nur im Turnier?
+## ICM – das Turnierkonzept, das Cash Games nicht haben
 
 > **Kurze Antwort**
 > Weil ICM einen Chipstack in erwartetes Preisgeld übersetzt – und ein Preisgeld gibt es nur dort, wo eine feste Auszahlungsstruktur existiert. Im Cash Game entspricht jeder Chip bereits Geld, da bleibt nichts umzurechnen. Im Turnier hängt dein Anteil an einem festen Pool dagegen davon ab, wie viele Spieler noch übrig sind.

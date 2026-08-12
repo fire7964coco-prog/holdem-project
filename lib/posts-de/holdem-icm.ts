@@ -40,7 +40,7 @@ Short Stack | MEHR wert als sein Chipanteil
 > **Kurze Antwort**
 > ICM (das Independent Chip Model) rechnet einen Chipstack in seinen echten Preisgeldwert um, anhand der verbleibenden Payouts und der Stackgröße jedes Spielers.
 
-Es beantwortet eine Frage: ==wenn das Turnier gerade jetzt mit diesen Stacks endete, wie viel ist mein Anteil am Preispool tatsächlich in Dollar wert?==
+ICM beantwortet eine Frage: ==wenn das Turnier gerade jetzt mit diesen Stacks endete, wie viel ist mein Anteil am Preispool tatsächlich in Dollar wert?==
 
 Es funktioniert, indem es schätzt, wie oft jeder Spieler auf jeder bezahlten Position landet – erster, zweiter, dritter und so weiter – ausgehend von seinem Chipanteil, und dann diese Wahrscheinlichkeiten mit den Payouts multipliziert. Je größer dein Stack, desto öfter landest du weit oben; aber weil ==das Top-Preisgeld gedeckelt ist, kaufen zusätzliche Chips immer weniger Geld.==
 
@@ -66,7 +66,7 @@ Dreh es um, und der Short Stack ist der Gewinner dieser Mathematik. Er hat berei
 > **Kurze Antwort**
 > ICM ordnet jedem Spieler seine Wahrscheinlichkeit zu, auf jeder Position zu landen, rein basierend auf der Stackgröße, und multipliziert dann mit den Payouts.
 
-Die Methode wird oft Malmuth–Harville-Modell genannt – die Finish-Wahrscheinlichkeits-Mathematik stammt aus David Harvilles Arbeit zu Pferderennquoten aus den 1970ern, die Mason Malmuth auf Poker anwandte.
+Diese Rechenmethode wird oft Malmuth–Harville-Modell genannt – die Finish-Wahrscheinlichkeits-Mathematik stammt aus David Harvilles Arbeit zu Pferderennquoten aus den 1970ern, die Mason Malmuth auf Poker anwandte.
 
 Die Regel ist einfach und rekursiv:
 
@@ -148,7 +148,7 @@ Der Albtraum-Sitzplatz ist der Medium Stack, der angeshovt wird – der Hände f
 
 ---
 
-## Wie teilt man am Final Table den Preispool auf? (ICM Deal vs. Chip Chop)
+## Lohnt sich ein Deal am Final Table?
 
 > **Kurze Antwort**
 > Ein Chip Chop teilt das verbleibende Geld nach rohem Chipprozentsatz auf; ein ICM Deal teilt es nach dem ICM-Dollarwert jedes Spielers auf. Der Chip Chop begünstigt Big Stacks, der ICM Deal ist fairer gegenüber Short Stacks.
@@ -197,7 +197,7 @@ Ein häufiges Leak ist das Überanwenden von ICM: sich zu einem Short Stack heru
 > **Kurze Antwort**
 > ICM ist das beste einfache Modell, das wir haben, aber es ist eine Näherung – es nimmt an, dass jeder Spieler gleich stark ist, und ignoriert fast alles außer den Stackgrößen.
 
-Sei ehrlich darüber, was es weglässt:
+Sei ehrlich darüber, was das Modell weglässt:
 
 - **Skill.** ICM behandelt einen Weltmeister und einen Erstlingsspieler mit gleichen Stacks als gleich. Die Chips eines besseren Spielers sind mehr wert, als das Modell sagt.
 - **Position.** Ein Stack von 3 Big Blinds am Button (der die Blinds zuletzt zahlt und sich damit noch ein paar freie Hände kauft, bevor er reinmuss) ist mehr wert als derselbe Stack im Big Blind (nächste Hand zwangsweise All-in). ICM kann die Sitzplätze nicht sehen.

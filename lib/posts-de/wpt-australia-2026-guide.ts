@@ -23,7 +23,7 @@ export const POST: Post = {
     "internationaler Spieler WPT Australia",
   ],
   image: "/images/wpt-australia-2026-guide-hero.webp",
-  imageAlt: "WPT Australia 2026 Poker-Turnier im The Star Sydney – Pokerraum am Darling Harbour mit dem WPT-Championship-Final-Table",
+  imageAlt: "WPT Australia 2026 Pokerturnier im The Star Sydney – Pokerraum am Darling Harbour mit dem WPT-Championship-Final-Table",
   keepImagesInBody: true,
   content: `
 Drei Wochen Non-Stop-Poker. Zwei Championships, weltweit livestreamt. Sydney im September – besser wird es nicht.
@@ -140,7 +140,7 @@ Wenn du außerhalb Australiens bist und dich vor dem Abflug mit Online-Satellite
 
 ---
 
-## Wer hat die WPT Australia bisher gewonnen?
+## Wer hat die WPT Australia gewonnen – und was ändert sich 2026?
 
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.25);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -314,7 +314,7 @@ A. Ja. Der Star-Poker-Raum bietet täglich Cashgames ==g:von 10 AM – 4 AM==, S
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/de/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Pflichtlektüre</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Wie Poker-Turniere funktionieren</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Wie Pokerturniere funktionieren</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Buy-ins, Blinds, Satellites & Day-1-Checkliste</div>
   </a>
   <a href="/de/blog/ept-barcelona-2026-guide" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">

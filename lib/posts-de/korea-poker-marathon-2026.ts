@@ -43,7 +43,7 @@ Korea ist der Ort, an dem beides perfekt zusammenkommt. ==**Weltklasse-Herbstmar
 ---
 
 > **Kurze Antwort**
-> Korea Poker-Turniere: ==**APT Incheon 7.–16. Aug**==, ==**APT Jeju 25. Sep–7. Okt**== (beide in Casinos nur für Ausländer). Korea Marathons: ==**Chuncheon 25. Okt**==, ==**JTBC Seoul 1. Nov**==, ==**Garmin Run 15. Nov**==. APT Jeju endet am 7. Okt → Chuncheon startet am 25. Okt – ==g:18 Tage Abstand, eine Reise deckt beides ab.==
+> Korea Pokerturniere: ==**APT Incheon 7.–16. Aug**==, ==**APT Jeju 25. Sep–7. Okt**== (beide in Casinos nur für Ausländer). Korea Marathons: ==**Chuncheon 25. Okt**==, ==**JTBC Seoul 1. Nov**==, ==**Garmin Run 15. Nov**==. APT Jeju endet am 7. Okt → Chuncheon startet am 25. Okt – ==g:18 Tage Abstand, eine Reise deckt beides ab.==
 
 ---
 
@@ -162,7 +162,7 @@ Hinweis: Koreas Sommerhitze erreicht im August ihren Höhepunkt. Der September i
 
 ---
 
-## Korea Poker-Turniere: Okt–Dez 2026
+## Korea Pokerturniere: Okt–Dez 2026
 
 Hier wird der Kalender interessant. Drei Poker-Festivals laufen an koreanischen Austragungsorten im exakt gleichen Herbstfenster wie die Marathons – und eines überschneidet sich direkt mit JTBC Seoul.
 
@@ -239,7 +239,7 @@ Im Dezember keine Marathon-Überschneidung, aber die Cash Games in Paradise City
 
 ---
 
-## Wie ist die Pokerseite im Paradise City Casino?
+## Wie sieht das Pokerangebot im Paradise City Casino aus?
 
 Während die Marathons von Okt–Nov laufen, läuft ==**Paradise City Casino**== ganzjährig. Es ist kein reiner Turnier-Austragungsort – Cash-Game-Tische sind täglich für internationale Spieler in Betrieb.
 
@@ -506,7 +506,7 @@ Die Community der Menschen, die sowohl eine Poker-Bankroll als auch ein Marathon
 
 Daten zum Vormerken: ==**Chuncheon 25. Okt**==, ==**JTBC Seoul 1. Nov**==, Garmin Run 15. Nov. Paradise City ganzjährig geöffnet.
 
-Für das vollständige Poker-Turnier-Bild (APT Incheon, $2,7M GTD, 7.–16. August): [APT Incheon 2026 Guide](/de/blog/apt-incheon-2026-guide). Für die strategischen Unterschiede zwischen Turnier und Cash Game: [Turnier vs Cash Game](/de/blog/holdem-tournament-vs-cash-game).
+Für das vollständige Pokerturnier-Bild (APT Incheon, $2,7M GTD, 7.–16. August): [APT Incheon 2026 Guide](/de/blog/apt-incheon-2026-guide). Für die strategischen Unterschiede zwischen Turnier und Cash Game: [Turnier vs Cash Game](/de/blog/holdem-tournament-vs-cash-game).
 
 ---
 
@@ -520,7 +520,7 @@ Für das vollständige Poker-Turnier-Bild (APT Incheon, $2,7M GTD, 7.–16. Augu
   </a>
   <a href="/de/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Grundlagen</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">So funktionieren Poker-Turniere</div>
+    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">So funktionieren Pokerturniere</div>
     <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Buy-ins, Blinds, Satellites & Checkliste für Einsteiger</div>
   </a>
   <a href="/de/blog/wpt-australia-2026-guide" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">

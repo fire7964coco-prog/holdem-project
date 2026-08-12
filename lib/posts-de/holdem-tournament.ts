@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "holdem-tournament",
   seoTitle: "Nie ein Pokerturnier gespielt? So läuft Tag 1 ab",
   title: "Wie funktioniert ein Pokerturnier? Buy-in, Blinds & Ablauf",
-  desc: "Wie funktioniert ein Pokerturnier? Startgeld, Blind-Struktur, Preisgeld-Verteilung, Freezeout vs. PKO vs. Satellite – plus der Tag-1-Ablauf Stunde für Stunde.",
+  desc: "Wie funktioniert ein Pokerturnier? Startgeld, Blind-Struktur, Preisgeld-Verteilung, Freezeout vs. PKO vs. Satellite – plus der Tag-1-Ablauf.",
   tldr: "In einem Pokerturnier zahlst du ein festes Buy-in für Chips, die Blinds steigen auf einem Timer, bis ein Spieler alle Chips hält. Die Top 10–15% des Feldes kommen in die Payouts. Formate sind Freezeout, PKO, Satellite und Deepstack – der Einstieg läuft über direktes Buy-in, Satellite oder Online-Vorregistrierung.",
   category: "tournament",
   date: "2026-06-16",
@@ -48,7 +48,7 @@ Dieser Guide ist alles, was ich mir vor jenem Tag gewünscht hätte zu wissen �
 ## Was ist ein Pokerturnier? (Antwort in 30 Sekunden)
 
 > **Kurze Antwort**
-> Ein Pokerturnier ist ein Wettbewerb mit festem Startgeld: Alle zahlen dasselbe **Buy-in**, bekommen denselben Startstack und spielen, bis eine Person jeden Chip im Spiel hält. Die Blinds steigen auf einem Timer, deine Chips haben keinen Bargeldwert, und bezahlt werden am Ende nur die vordersten 10–15% des Feldes.
+> Ein Pokerturnier ist ein Wettbewerb mit festem Startgeld: Alle zahlen dasselbe **Buy-in**, bekommen denselben Startstack und spielen, bis eine Person jeden Chip im Spiel hält. Eine Uhr hebt die Blinds an, deine Chips lassen sich mitten im Event nicht auszahlen, und am Ende bezahlt wird nur die Spitze des Feldes.
 
 **In einem Satz:** In einem Cash Game sind deine Chips echtes Geld und du kannst jederzeit gehen. In einem Turnier ist dein maximaler Verlust in einem Freezeout exakt das Buy-in – mit Re-Entry und Add-on liegt er höher –, dafür spielst du um einen Anteil an einem viel größeren Prize Pool.
 
@@ -59,7 +59,7 @@ Dieser eine Unterschied verändert Chip-Wert, Blind-Druck und Strategie von Grun
 ## Wie hoch ist das Startgeld für ein Pokerturnier?
 
 > **Kurze Antwort**
-> Das Startgeld heißt **Buy-in** und ist immer zweigeteilt: Der größere Teil wandert in den Prize Pool, ein kleinerer Aufschlag bleibt als Gebühr beim Veranstaltungsort. Im DACH-Raum reicht die Spanne von rund €70+10 für ein Daily in der Spielbank Berlin bis €10.350 für das WSOP-Europe-Main-Event 2025 – dasselbe Spiel, zwei völlig verschiedene Preisklassen.
+> Das Startgeld heißt **Buy-in** und ist immer zweigeteilt: Der größere Teil wandert in den Prize Pool, ein kleinerer Aufschlag bleibt als Gebühr beim Veranstaltungsort. Im DACH-Raum reicht die Spanne von rund €70+10 für ein Daily in der Spielbank Berlin bis €1.100 für ein CAPT-Main-Event in Österreich – dasselbe Spiel, zwei völlig verschiedene Preisklassen.
 
 Wenn du dich registrierst, zahlst du ein Buy-in. Dieses Geld teilt sich auf zwei Wege auf:
 
@@ -126,7 +126,7 @@ Meist bleiben 6–9 Spieler übrig. Die Payouts steigen mit jeder Eliminierung s
 ## Welche Arten von Pokerturnieren gibt es?
 
 > **Kurze Antwort**
-> Die acht Formate, die auf jedem Turnier-Schedule auftauchen, unterscheiden sich in nur zwei Punkten: ob du nach dem Busten nachkaufen darfst (Freezeout gegen Rebuy und Re-entry) und ob der Preis Bargeld oder ein Sitzplatz in einem größeren Event ist (regulär gegen Satellite). Alles andere – PKO, Deepstack, MTT, SNG – beschreibt nur Bounty, Stacktiefe oder Tischzahl.
+> Die acht Formate auf einem Turnier-Schedule unterscheiden sich in vier Punkten: ob du nach dem Busten nachkaufen darfst (Freezeout gegen Rebuy und Re-entry), ob es Kopfgelder gibt (regulär gegen Bounty und PKO), ob der Preis Bargeld oder ein Sitzplatz ist (regulär gegen Satellite) und wie tief die Startstacks sind (Standard gegen Deepstack). MTT und SNG sagen dagegen nur, wie viele Tische laufen und ob es eine feste Startzeit gibt.
 
 | Format | Wie es funktioniert | Am besten für |
 |:---|:---|:---|
@@ -162,7 +162,7 @@ Ein Deepstack-Pokerturnier startet dich mit deutlich mehr Chips im Verhältnis z
 ## Was ist ein Satellite-Pokerturnier?
 
 > **Kurze Antwort**
-> Ein Satellite ist ein kleineres Turnier, dessen Preis kein Bargeld ist, sondern **ein Eintrittsticket** in ein größeres, teureres Event. Du zahlst einen Bruchteil des eigentlichen Buy-ins und spielst um Sitzplätze statt um Auszahlungsränge. Wie viele Plätze vergeben werden, hängt davon ab, wie viel Geld im Satellite zusammenkommt – bekanntgegeben wird das vor dem Start.
+> Ein Satellite ist ein kleineres Turnier, dessen Preis kein Bargeld ist, sondern **ein Eintrittsticket** in ein größeres, teureres Event. Du zahlst einen Bruchteil des eigentlichen Buy-ins und spielst um Sitzplätze statt um Auszahlungsränge. Wie viele Plätze vergeben werden, ergibt sich am Ende der Anmeldung aus der Teilnehmerzahl – manche Satellites garantieren die Sitze aber schon vorab.
 
 **Beispiel:**
 - WSOP-Main-Event-Buy-in: **$10.000**
@@ -211,11 +211,11 @@ Du spielst in Asien? Sieh dir den [APT Incheon 2026 Guide](/de/blog/apt-incheon-
 ## Wo finde ich Pokerturniere in meiner Nähe?
 
 > **Kurze Antwort**
-> Regelmäßige Turniere laufen in Deutschland vor allem in den Spielbanken – Berlin spielt an jedem Wochentag, Schenefeld bei Hamburg wöchentlich. Mehrtägige Festivals gibt es hierzulande dagegen kaum: Die großen Serien mit deutschem Namen finden über der Grenze im tschechischen Rozvadov statt, dazu kommt die CAPT in Österreich.
+> Regelmäßige Turniere laufen in Deutschland vor allem in den Spielbanken – Berlin spielt täglich, Schenefeld bei Hamburg zweimal die Woche. Mehrtägige Festivals gibt es hierzulande dagegen kaum: Die großen Serien mit deutschem Namen finden über der Grenze im tschechischen Rozvadov statt, dazu kommt die CAPT in Österreich.
 
 ### Deutschland – die Spielbanken spielen, die Festivals fehlen
 
-Die dichteste Auswahl hat die **Spielbank Berlin** am Potsdamer Platz: Dort läuft an jedem Wochentag ein Turnier, das günstigste am Dienstag.
+Die dichteste Auswahl hat die **Spielbank Berlin** am Potsdamer Platz: Dort läuft an jedem Tag der Woche ein Turnier, das günstigste am Dienstag.
 
 | Tag | Turnier (Spielbank Berlin) | Buy-in |
 |:---|:---|:---|
@@ -255,7 +255,9 @@ In Österreich läuft Turnierpoker in den Casinos Austria, deren eigene Tour hei
 | Seefeld | 07.–11.10. | €1.000 + 100 |
 | Bregenz | 15.–25.10. | €1.100 |
 | Innsbruck | 02.–08.11. | €1.000 + 100 |
-| CAPT Million Baden | 19.–30.11. | €500 + 50, €1.000.000 garantiert |
+| CAPT Million Baden | 19.–30.11. | €500 + 50 |
+
+Die **CAPT Million in Baden** schließt die Saison ab und ist mit **€1.000.000 garantiert** das größte Event der Tour – bei einem der niedrigsten Buy-ins.
 
 ⚠ **Nicht verwechseln:** Das Casino Baden der CAPT liegt bei Wien. Das **Grand Casino Baden in der Schweiz** ist ein anderes Haus – und dort fand am 31. Mai 2026 zum letzten Mal ein Turnier statt, während des Umbaus werden keine angeboten. Gespielt wird in der Schweiz stattdessen im **Grand Casino Luzern**, dessen Poker Circle Swiss Masters im Dezember mit der Championship Week endet (Main Event CHF 800 + 80).
 
@@ -283,7 +285,7 @@ Ein Beitrag kann keine vollständige Turnierstrategie lehren – dafür gibt es 
 ## Wie läuft Tag 1 eines Pokerturniers ab?
 
 > **Kurze Antwort**
-> Rechne mit einem langen Tag. Zwischen Registrierungsöffnung und dem Platzen der Money-Bubble liegen bei einem typischen Daily rund zwölf Stunden, unterbrochen von einer Dinner-Pause. Die entscheidenden Marken sind der Schluss der Late Registration – erst dann steht die Feldgröße fest – und der Beginn des Hand-for-Hand-Spiels kurz vor den Geldrängen.
+> Rechne mit einem langen Tag. Zwischen Registrierungsöffnung und dem Platzen der Money-Bubble liegen im Beispiel unten rund zwölf Stunden, unterbrochen von einer Dinner-Pause. Die entscheidenden Marken sind der Schluss der Late Registration – erst dann steht die Feldgröße fest – und der Beginn des Hand-for-Hand-Spiels kurz vor den Geldrängen.
 
 Das erzählt dir kein anderer Guide. Hier ist eine realistische Tag-1-Timeline für einen Live-€300-Freezeout mit 12-Uhr-Startzeit:
 
@@ -326,7 +328,7 @@ Das erzählt dir kein anderer Guide. Hier ist eine realistische Tag-1-Timeline f
 ## Wie wird das Preisgeld im Pokerturnier verteilt?
 
 > **Kurze Antwort**
-> Bezahlt wird nur die Spitze des Feldes, und die Verteilung ist stark kopflastig. Wer als Letzter ins Geld kommt, nimmt meist das Ein- bis Zweifache seines Buy-ins mit; der Sieger holt je nach Feldgröße einen zweistelligen Prozentsatz des gesamten Prize Pools. Genau dieses Gefälle macht die letzten Plätze so viel wertvoller als den Min-Cash.
+> Bezahlt wird nur die Spitze des Feldes, und die Verteilung ist stark kopflastig. Wer als Letzter ins Geld kommt, nimmt meist das Anderthalb- bis Zweifache seines Buy-ins mit; der Sieger holt je nach Feldgröße 8 bis 30% des gesamten Prize Pools. Genau dieses Gefälle macht die letzten Plätze so viel wertvoller als den Min-Cash.
 
 **Typische Struktur:** Die Top 10–15% des Feldes werden bezahlt.
 

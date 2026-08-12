@@ -57,7 +57,7 @@ Die Bubble ist deshalb so wichtig, weil Turnier-Payouts ==top-heavy== sind. Der 
 > **Kurze Antwort**
 > Weil Turnierchips kein Geld sind – du gewinnst nur einen ersten Preis, also sind die Chips, die einen garantierten Cash schützen, mehr wert als die Chips, die nach mehr greifen.
 
-Das ist das Independent Chip Model, und nahe eines Pay Jumps bedeutet es, dass ==das Risiko zu busten die Belohnung überwiegt, einen Coin Flip zu gewinnen==. Ein Call, der in Chips break-even ist, kann in echten Dollars ein Verlustzug sein.
+Dieser Effekt ist das Independent Chip Model (ICM), und nahe eines Pay Jumps bedeutet er, dass ==das Risiko zu busten die Belohnung überwiegt, einen Coin Flip zu gewinnen==. Ein Call, der in Chips break-even ist, kann in echten Dollars ein Verlustzug sein.
 
 Du musst die Mathematik nicht live durchrechnen – dafür ist unser [ICM-Rechner](/calculator) da, und die volle Aufschlüsselung steht im [ICM-Guide](/de/blog/holdem-icm). Was am Tisch zählt, ist die Konsequenz: ==Calls werden viel tighter, aber Shoves bleiben weit==, weil Gewinnen ohne Showdown (Fold Equity) mehr wert ist als je zuvor, wenn alle anderen ängstlich spielen. Merke dir eine Zeile: **ziehe deine Calls zusammen, bevor du deine Shoves zusammenziehst.**
 
@@ -68,7 +68,7 @@ Du musst die Mathematik nicht live durchrechnen – dafür ist unser [ICM-Rechne
 > **Kurze Antwort**
 > Nicht alle Bubbles sind gleich – die Money Bubble, die Final-Table-Bubble und die Satellite-Bubble belohnen völlig verschiedene Strategien.
 
-Sie zu verwechseln ist einer der teuersten Fehler im Turnierpoker.
+Diese drei Bubbles zu verwechseln ist einer der teuersten Fehler im Turnierpoker.
 
 - ==**Money Bubble**== – der Sprung von nichts zu einem Min-Cash. Die Überlebensprämie ist hoch, aber der Min-Cash ist klein, also willst du trotzdem für die Top-Preise *akkumulieren*. Übe Druck aus, versteck dich nicht nur.
 - ==**Final-Table-Bubble**== – ein Platz vom Final Table entfernt. Der ICM-Druck ist hier meist am ==extremsten im gesamten Turnier==, weil jetzt die größten Preise im Spiel sind. Short Stacks haben am meisten von einem Deep Run zu gewinnen; ein Big Stack mit 9 Spielern am Tisch ist wohl der beste Platz im ganzen Event.
@@ -159,7 +159,7 @@ Die andere Hälfte: Der Bubble Factor richtet sich danach, **wer dir gegenübers
 > **Kurze Antwort**
 > Wenn das Geld nah ist, schalten Turniere auf „Hand for Hand“ – jeder Tisch spielt exakt eine Hand zur gleichen Zeit und wartet dann – genau um Spieler davon abzuhalten, sich ins Geld zu stallen.
 
-Ohne das könnten Spieler an langsamen Tischen Hand um Hand folden, während schnellere Tische durch die Bubble brennen. Hand for Hand gleicht das Feld an:
+Ohne diese Regel könnten Spieler an langsamen Tischen Hand um Hand folden, während schnellere Tische durch die Bubble brennen. Hand for Hand gleicht das Feld an:
 
 - **Wie es funktioniert:** Der Turnierdirektor pausiert die Uhr; alle Tische teilen eine Hand aus, und kein Tisch startet die nächste, bis jeder Tisch fertig ist. Busten zwei Spieler in derselben Hand-for-Hand-Runde am **selben Tisch**, nimmt derjenige mit weniger Chips zu Beginn der Hand die niedrigere (Bubble-)Platzierung; busten sie an **verschiedenen Tischen**, werden sie als gleichrangig gewertet und teilen sich die beiden betroffenen Auszahlungen.
 - **Stalling:** die volle Time Bank bei jeder Entscheidung nehmen, um weniger Hände zu sehen (und sich ins Geld zu folden). Big Stacks haben keinen Grund zu stallen – sie wollen mehr Hände zum Attackieren. Short und Medium Stacks stallen manchmal, um zu überleben, ==aber exzessives Stalling kann einen Clock-Call oder eine Penalty einbringen==, also tanke in Maßen.
@@ -172,7 +172,7 @@ Ohne das könnten Spieler an langsamen Tischen Hand um Hand folden, während sch
 > **Kurze Antwort**
 > Bei einem Satellite zahlt jeder Platz gleich – also foldest du in dem Moment, in dem dein Stack sicher innerhalb der Bubble ist, alles, inklusive Pocket Aces.
 
-Das ist der kontraintuitivste Spot im Poker, und er ist korrekt. Wenn dir das Gewinnen eines Flips ==denselben Platz gibt, den du bereits gesichert hast==, während das Verlieren dich eliminiert, gibt es keine Belohnung und ein enormes Risiko:
+Dieser Fold ist der kontraintuitivste Spot im Poker – und er ist korrekt. Wenn dir das Gewinnen eines Flips ==denselben Platz gibt, den du bereits gesichert hast==, während das Verlieren dich eliminiert, gibt es keine Belohnung und ein enormes Risiko:
 
 - **Sobald dein Platz mathematisch sicher ist** (du bist weit genug innerhalb der Bubble, dass du nicht mehr eingeholt werden kannst), folde jede Hand – ja, sogar AA und KK – und lass die kürzeren Stacks es ausfechten.
 - **Stalle jede Hand**, um diesen Stack zu bewahren. An einer Satellite-Bubble ist Stalling nicht nur toleriert, es ist optimal.

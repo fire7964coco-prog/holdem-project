@@ -37,7 +37,7 @@ calle enger | als du shovst
 > **Kurze Antwort**
 > Ein Short Stack ist jeder Stack, der zu klein für normales Postflop-Poker ist – grob unter etwa 20–25 Big Blinds, wobei Push/Fold ab rund 15 Big Blinds abwärts übernimmt.
 
-Das sind keine harten Grenzen; es sind die Zonen, in denen deine Optionen zusammenbrechen. Mit 60 Big Blinds kannst du raisen, callen, floaten und Leute nach dem Flop überspielen. Mit 12 verschwindet das meiste davon – du entscheidest, meist schon vor dem Flop, ob du all-in gehst oder foldest.
+Diese Zahlen sind keine harten Grenzen; es sind die Zonen, in denen deine Optionen zusammenbrechen. Mit 60 Big Blinds kannst du raisen, callen, floaten und Leute nach dem Flop überspielen. Mit 12 verschwindet das meiste davon – du entscheidest, meist schon vor dem Flop, ob du all-in gehst oder foldest.
 
 Hier ist die praktische Landkarte nach Stacktiefe (No-Ante-, Full-Ring-Näherungen – Antes drücken jedes Band ein wenig tiefer):
 
@@ -62,7 +62,7 @@ Der mit Abstand größte Fehler ist, nicht zu wissen, in welcher Zeile du bist. 
 > **Kurze Antwort**
 > First-in all-in zu gehen funktioniert, weil es Gegner in eine Alles-oder-nichts-Entscheidung zwingt, sodass sie Hände folden, die sie gegen einen kleinen Raise gern gespielt hätten – und diese Folds gewinnen dir die Blinds und Antes gratis.
 
-Das ist ==Fold Equity==: der Profit, den du jedes Mal machst, wenn alle folden, bevor eine Karte gezeigt wird.
+Dieser Gratisgewinn ist ==Fold Equity==: der Profit, den du jedes Mal machst, wenn alle folden, bevor eine Karte gezeigt wird.
 
 Überleg mal, was ein Min-Raise bewirkt, wenn du kurz bist: er committet Chips, lädt zu einem Re-Raise ein, den du nicht callen kannst, und lässt Gegner ihre Equity billig realisieren. Ein ==Shove== macht das Gegenteil. Er sagt „calle um dein Turnier oder folde“, und die meisten Hände folden. Wenn du die Blinds und Antes oft genug ungestört einsammelst, ==machst du sogar dann Profit, wenn du gecallt wirst und verlierst==, weil die freien Pots das mehr als ausgleichen.
 
@@ -72,12 +72,12 @@ Der Haken ist, dass Fold Equity ==abnimmt, während dein Stack schrumpft==. Bei 
 
 ![Ein kleiner Chipstack geht über den Filz all-in, während ein größerer Stack entscheidet, ob er callt, dahinter leuchtet die Turnieruhr](/images/holdem-short-stack-shove.webp "Short-Stack-Push/Fold: das All-in erzwingt eine Ja-oder-Nein-Entscheidung und gewinnt die Blinds, wenn alle folden")
 
-## Was sagt dir die M-Ratio? (Die Harrington-Zonen)
+## In welcher Harrington-Zone steckt dein Stack?
 
 > **Kurze Antwort**
 > Die M-Ratio misst, wie viele Orbits du durch Folden überleben kannst – dein Stack geteilt durch die Kosten einer vollen Runde Blinds und Antes – und sie sortiert deinen Stack in fünf Zonen.
 
-Populär gemacht von Dan Harrington, ==M = dein Stack ÷ (Small Blind + Big Blind + alle Antes pro Orbit)==. Sie beantwortet „wie lange kann ich hier sitzen und nichts tun?“ – und je kleiner sie wird, desto mehr musst du handeln.
+Die Kennzahl geht auf Dan Harrington zurück: ==M = dein Stack ÷ (Small Blind + Big Blind + alle Antes pro Orbit)==. Sie beantwortet „wie lange kann ich hier sitzen und nichts tun?“ – und je kleiner sie wird, desto mehr musst du handeln.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -116,7 +116,7 @@ Achte auf die Falle, die das vermeidet: ==ein Short Stack, der aus jeder Positio
 > **Kurze Antwort**
 > Deine First-in-Shoving-Range und deine Range zum Callen des All-ins eines anderen sind nicht dasselbe – und die Calling-Range ist deutlich enger.
 
-Das ist die Unterscheidung, die die meisten Anfänger übersehen, und sie kostet viele Turniere.
+Genau diese Trennung übersehen die meisten Anfänger, und sie kostet viele Turniere.
 
 Wenn du ==first-in shovst==, gewinnst du auf zwei Wegen: alle folden (Fold Equity), oder du wirst gecallt und deine Hand hält. Wenn du einen Shove ==callst==, gewinnst du nur auf einem Weg – deine Hand muss gut genug sein, weil keine Fold Equity mehr zu holen ist. Also:
 
