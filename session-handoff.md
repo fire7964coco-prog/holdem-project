@@ -72,7 +72,7 @@ Session 6(Turniere 9편)로 마지막 클러스터를 닫았다. 경위는 `WORK
 |---|---:|---|
 | ~~`holdem-split-pot-rules`~~ | 8 | ✅ **완료** — :::tip(D유형) · alt · 풀하우스 FAQ |
 | ~~`holdem-reading-the-board`~~ | 8 | ✅ **완료** — Rule 75 · 보드 스트레이트 플러시 예외 · 「4장=A하이」 |
-| `holdem-betting-actions` | **25** | 🟡 **캡 완료**(본문·FAQ, 「3 raises」 잔존 0) · 🔴 **잔여**: Non-Standard Fold(84) · 무언의 칩(90.a) · One-Chip(97) · String Bet(90.d vs 103) · BB 체크 표현 **4곳** — EN·de는 전부 완료, **로케일 23곳 남음** |
+| `holdem-betting-actions` | **25** | 🟡 ✅캡(본문·FAQ) ✅BB 체크 4자리 ✅Non-Standard Fold(84) · 🔴 **잔여 3종**: 무언의 칩(**90.a**) · One-Chip(**97**) · String Bet(**90.d vs 103**) — EN·de는 완료, **로케일 23곳 남음**. 자리는 「\"to call\"이라며 칩을 던지는 Fehler 문단」·「$10 벳 앞 $100 칩 One-Chip 문단」·「\"Call\" 후 추가 = String Bet 본문 + 같은 FAQ」 |
 | `holdem-hand-rankings` | **13** | 🔴 용어 동일시 · 「대부분의 팟은 원페어」(43,82% < 50%) · 무늬 서열 한정(**토너먼트 배제** 주의) |
 | `holdem-equity` | 8 | 🔴 「Equity = Win%」 6곳 · AK vs AQ 표행(73/23 → **74/26**) |
 | `holdem-implied-odds` | 8 | 🔴 국면 라벨 3곳 · 「Flop- und Turn-Konzept」 |

@@ -3,6 +3,33 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-08-12 (7) — **betting-actions 미러 3탄: BB 체크 + Non-Standard Fold** (`3b09d59` `e8f8402`)
+
+### BB 체크 표현 — 25 로케일 × 4자리
+
+「이 스트리트에서 아무도 벳하지 않았을 때만 체크할 수 있다」는 **배타 서술**이라
+프리플랍 BB의 체크 옵션을 배제한다. 블라인드는 이미 놓인 «벳»이므로 프리플랍은
+「아직 아무도 안 걸었다」가 아닌데 BB는 체크할 수 있다.
+🔴 **같은 글이 스스로 반박하고 있었다** — 본문 「翻牌前的大盲位、而且沒人加注…可以過牌」과
+FAQ 「프리플랍 체크는 BB만, 그것도 아무도 레이즈 안 했을 때」가 정확한 두 조건을 이미 적어 둔다.
+
+→ 「내 앞에 아직 갚지 않은(활성) 벳이 없을 때 — 프리플랍은 BB만」으로 통일.
+자리: `tldr` · 5액션 표 · 빨간 강조문 · Check↔Call 대조표.
+
+### Non-Standard Fold — 23 로케일 (WSOP Rule 84)
+
+축어: *"folding in turn when there's been no bet to you … are both **binding folds and
+may be subject to penalty**"*. 기존 문장은 「내 차례면 언제든, 체크가 공짜인 상황에도 자유」로
+읽혀 **벳이 없는데 하는 인턴 폴드도 페널티 대상**이라는 사실이 빠져 있었다.
+DACH·라이브 토너먼트에서 실제로 경고가 나오는 자리다.
+
+### betting-actions 진행률
+
+✅ Fixed-Limit 캡(본문·FAQ) · ✅ BB 체크 4자리 · ✅ Non-Standard Fold
+🔴 잔여 3종: Rule 90.a(무언의 칩) · 97(One-Chip) · 90.d/103(String Bet) — **EN·de는 완료**
+
+게이트: 25 로케일 전수 🔴 0건 · 빌드 69 blog + 457 intl(불변)
+
 ## 2026-08-12 (6) — **미러 2탄: split-pot · reading-the-board · betting-actions 캡** (`12d21fd` `97e4657`)
 
 ### split-pot (7 로케일 18자리) — D유형 1건
