@@ -3,23 +3,30 @@
 > **사용법**: 작업 마칠 때 이 파일 업데이트 → 다음 세션 시작 시 AI가 읽고 바로 이어받음
 > 작업 시작 전 `CLAUDE.md` → `session-handoff.md` → `WORKLOG.md` 순서로 읽을 것.
 > 🔴 **이 파일은 «지금 할 일»만 담는다.** 완료분은 `WORKLOG.md`에 적고 여기서 지운다 — 로그를 쌓지 마라.
-> (2026-08-12 정리: **de 검수 지시서 트랙이 전부 끝나** 그 절들을 걷어내고 START HERE를
-> «미러 전파 잔여 5편»으로 교체했다. 완료 경위는 `WORKLOG.md` 2026-08-12 (1)~(8).)
+> (2026-08-12 정리: **미러 전파 트랙 9편이 전부 끝났다.** START HERE를 «§6 축 B + 검수장 회신 잔여»로
+> 교체하고 미러 절은 접었다. 완료 경위는 `WORKLOG.md` 2026-08-12 (1)~(14).
+> 검수장 회신 원본 = `홀덤검수/reports/회신-미러검증-2026-08-12.md`, **본체 회신 = 같은 폴더
+> `fix-done-미러검증회신-2026-08-12.md`**(`ecd49a6`).)
 
 ---
 
 ## ▶▶▶▶▶▶▶▶▶ 새 세션 START HERE
 
-### 🏁 미러 전파 트랙 = **2026-08-12 종료** (아래는 기록)
+### ▶▶ 이 세션의 본체 = **§6 축 B (de 키워드 배치)** ← 최우선
 
-**9편 전부 닫혔다** — showdown-rules(25) · betting-actions(25) · split-pot(8) · reading-the-board(8) ·
-equity(8) · flush-vs-straight(8) · implied-odds(8) · outs(8) · hand-rankings(13).
-경위·검산치는 `WORKLOG.md` 2026-08-12 (5)~(12).
+**미러 전파 트랙은 2026-08-12에 9편 전부 종료됐다**(showdown-rules 25 · betting-actions 25 · split-pot 8 ·
+reading-the-board 8 · equity 8 · flush-vs-straight 8 · implied-odds 8 · outs 8 · hand-rankings 13).
+**이제 de에 남은 유일한 «본체» 작업이 §6 축 B다** — 상세는 아래 「§6 축 B」 절(B1~B7).
+★**이름표 유형 = 최대 ROI**(콘텐츠는 이미 있고 현지 검색어만 없다 · §13 리스크 0).
 
-### ▶▶ **다음 세션의 본체 = 아래 「그다음 트랙」 1순위(§6 축 B)** — 미러가 아니다
+#### 착수 순서 제안
 
-🔴 **다만 미러에서 새로 확인된 잔여 1건**(`holdem-pot-odds` 「Equity = Gewinnchance」)이 아래에 있다.
-그리고 **8/16에 함께 여는 2건**은 그대로 남아 있다.
+1. **§6 축 B** — B5 `Vierling`(H2에 「beim Poker」 두 낱말) → B2 헤즈업 → B1 `/calculator` 링크 → B3 족보 PDF → B6 통화 2편
+2. 그 사이 **가벼운 잔여**를 끼워 넣는다 — 아래 📬 표 #4·#5(부분 정정 3건 · 뱅크 문서 2곳)는 **기계적**이라 묶기 좋다
+3. **`holdem-pot-odds` 「Equity = Gewinnchance」**(아래 절)는 그 글을 여는 트랙에서 함께 닫는다
+
+🔒 **8/16 이후로 묶인 것**(지금 열지 마라): KO S5 · `apt-incheon` 미러 7종 + 검수장 S6 §1-B 6건 ·
+`holdem-tournament` 딥스택 3중 자기모순.
 
 <details>
 <summary>미러 트랙 원문 (닫힌 뒤에도 방법론은 유효 — 접어 둔다)</summary>
@@ -103,7 +110,10 @@ de `positions` 6맥스 「모든 자리」 2자리.
 대신 **`docs/locale-intentional-diffs.md`**(판정한 것만 쌓는 append-only)를 신설했고,
 미러 4단계에 **0단계(정본 로케일 먼저 찾기)** 와 **「부재 ≠ 누락」** 규율을 박았다.
 재동기화를 실제로 열 때는 **단방향 대조 스크립트**로 «EN에 있는데 현지에 없는 항목»만 계산해 쓴다.
-🔴 **회신에 함께 적을 것: §5-D 예시 2건 중 `positions` 6맥스는 실측에서 성립하지 않았다**(de에 있다. `rake`는 정확했다).
+✅ **본체 회신 발송됨** — `홀덤검수/reports/fix-done-미러검증회신-2026-08-12.md`(`ecd49a6`).
+거기에 **실측에서 깨진 검수장 주장 2건**(§5-D `positions` 6맥스는 de에 **있다** · §3 `rake` 인용 문자열이
+**현재 파일에 없다**)과 **오탐 판정 2건**(C층 `outs #16` · `implied-odds` 「Flop- und Turn-Konzept」)을 함께 적었다.
+🔴 **검수장 재확인 요청 2건이 걸려 있다**: `hand-rankings` #65의 **WSOP Rule 85 축어** · `rake` C44 인용 출처.
 
 ### 🔴 새로 확인된 잔여 — `holdem-pot-odds` 「Equity = Gewinnchance」 (2026-08-12 실측)
 
@@ -165,7 +175,7 @@ de S3 검수장이 **「경계 밖 관찰」**로만 남겨 둔 자리를 equity
   «저자 원본»이 아니다. 내용은 축어로 읽었으나 **본문 인용은 보류**했다. 깨끗한 호스트를 찾으면
   캐시 캡 「a bet and three raises」를 출처와 함께 되살릴 수 있다.
 
-### 🔴 이번 트랙이 남긴 규율 (다음 세션이 같은 함정에 빠진다)
+### 🔴 미러 트랙(종료)이 남긴 규율 — **트랙과 무관하게 계속 유효하다**
 
 - **원장·지시서를 그대로 기계 치환하면 옳은 서술을 망가뜨린다.** 두 번 겪었다 —
   **R1** 「3 raises → 4」는 **캐시게임에선 3이 맞다**(해제 조건도 캐시는 «핸드» 헤즈업이라 WSOP와 정반대).
@@ -187,7 +197,8 @@ de S3 검수장이 **「경계 밖 관찰」**로만 남겨 둔 자리를 equity
 | `audit:hard:selftest` | **76/76** |
 | `check:faq-schema` | **455/455 성립 · 🔴 0건** |
 | `check:hreflang` | 481페이지 · 50세트 · 🔴 0건 |
-| 미러 드리프트 | de: 🔴 **3** · 🟠 추적불가 **7**편 (불변) |
+| 미러 드리프트 | 🟢 미러 9편은 `masterUpdated`를 **08-12로 올렸다**(equity 5 · flush 5 · implied-odds 7 · outs 5 · hand-rankings 12). 나머지 드리프트는 **판 전체 재동기화 트랙 소관**(판단 대기 #2) |
+| 검수장 회신 | ✅ 1차 반영(`dad961c`) · §5-D 결정(`fe86f80`) · **본체 회신 발송**(검수 폴더 `ecd49a6`) / 🔴 잔여 6항목은 위 📬 표 |
 | de 검수 지시서 | ✅ **전 트랙 종료**(§1 WRONG 4 · §2 축 2 · §3 M1~M3 · §4 RISKY 61 · 3층 QA 4렌즈) |
 | 미러 전파 | ✅ showdown-rules(25·9자리) · betting-actions(25·6종) · split-pot(8) · reading-the-board(8) · **equity(8)** · **flush-vs-straight(8)** · **implied-odds(8)** · **outs(8)** · **hand-rankings(13)** / 🏁 **트랙 종료** |
 
