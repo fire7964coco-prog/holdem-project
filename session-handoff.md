@@ -35,35 +35,46 @@ Session 6(Turniere 9편)로 마지막 클러스터를 닫았다. 경위는 `WORK
 검수장이 de 원장 `홀덤검수/ledger/de/` 18편 · 주장 1,028개를 검수해 낸 지시서다.
 **§4 RISKY 61건의 정본은 지시서가 아니라 `홀덤검수/ledger/de/<slug>.md` 의 RISKY 행**이다 — 원문·근거·정정 방향이 거기 있다.
 
-> ✅ **§1 WRONG 4건 · §2 축 2건 · §3 M1·M2 는 2026-08-12에 반영·푸시했다**(`1d427c6` `d490ee7`).
-> 경위·실측치는 `WORKLOG.md` 2026-08-12.
+> ✅ **§1 WRONG 4건 · §2 축 2건 · §3 M1·M2** 반영·푸시(`1d427c6` `d490ee7`) —
+> **그 미러 전수(48곳)와 §4 RISKY R1~R9(de 9편 43자리)도 완료**(`777bf60` `b4ee458`).
+> 경위·실측치는 `WORKLOG.md` 2026-08-12 및 2026-08-12 (2).
 
-### 🔴 남은 것 — 미반영분은 «틀린 채로» 살아 있다
+### ✅ A트랙 3건 + §4 RISKY R1~R9 완료 (2026-08-12, `777bf60` `b4ee458`)
 
-| # | 항목 | 남은 로케일 | 앵커(이걸로 grep) |
-|---|---|---:|---|
-| 1 | `texas-…-beginners` 「콜 후 팟 $120」(실제 $140) | **17** | `$120` 직후의 «총 팟 / total pot» 서술 |
-| 2 | `game-order` 족보표 High Card 빈도 라벨 = **5장 50.12%의 잔재**(7장은 17.41%로 투페어 23.50%보다 드물다) | **24** | 표 `\| 10 \|` 행의 **마지막 칸**(「매우 흔함」류) |
-| 3 | `kicker` 「Vierling은 대개 보드에서 공유」(실제 ≈14%) | 미실측 | `Vierling` + 「보드에서 공유」 |
-| 4 | **§4 RISKY 61건** | de | 아래 R1~R9 우선 |
-| 5 | **§6 축 B** | de | **A트랙과 겹친다 — 아래 참조** |
+경위·실측치·1차 출처는 `WORKLOG.md` 2026-08-12 (2). 요점만:
 
-🔴 **1·2번은 25개 로케일짜리다.** 앵커가 명확하고 기계적이니 **한 번에 닫아라.**
-🔴 **로케일별로 개별 판정하라** — W1에서 「de 1곳」이라던 게 실제 **5곳**이었고 **en·es·ja·zh는 이미 옳았다.**
-기계 치환했으면 옳은 글 4개를 되돌릴 뻔했다.
+- **A트랙 48곳** — `texas-…-beginners` **17** · `game-order` **24** · `kicker` **7** 로케일.
+  🔴 **「25개」를 가정했으면 셋 다 틀렸다.** KO는 game-order에서 **이미 7장 %를 써서 옳았고**
+  texas-…-beginners엔 그 예시가 아예 없다. kicker는 **8 로케일에만 존재**한다.
+- **§4 RISKY R1~R9 = de 9편 43자리** — betting-actions 9 · showdown 7 · equity 7 · implied-odds 5 ·
+  flush-vs-straight 5 · hand-rankings 3 · split-pot 2 · reading-the-board 2 · outs 1
 
-### §4 RISKY — 「한 문장으로 여러 건이 닫히는」 묶음부터
+### 🔴 남은 것
 
-- **R1 `betting-actions` Fixed-Limit 캡 3건**(#32·#33·#45) — 본문 「eine Bet plus **drei** Raises」인데
-  **WSOP Rule 100.b는 「one bet and four raises」**. 해제 조건도 정반대다(핸드 헤즈업 ❌ / **토너먼트** 헤즈업 ⭕)
-  🔴 **검색 요약이 본문 편을 들었다 — 룰북 원문이 정반대다. 요약을 근거로 쓰지 마라**(이 트랙 3회째)
-- **R2 `equity` 「Equity = Win%」 6곳** — 에퀴티는 스플릿 지분이 든 기댓값이다. 🟢 정답이 같은 글 `[desc]`에 있다.
-  매치업 표 `AK vs AQ ~73%/~23%`는 승률/패율(합 96%) — 실측 **에퀴티 73,60 : 26,40**
-- **R3 `showdown-rules` 7건 한 뿌리** — 본문에 `Turnier` 0회·`Cash` 0회라 TDA/Robert's가 갈리는 규칙을 단정.
-  🟢 정정 문구가 같은 글 `[tldr]`의 「die Gegner」에 있다(TDA 18-B)
-- R4 `implied-odds` 라벨 누락 4건 = `(Turn)` 한 단어 · R5 `split-pot` 이미지 alt가 본문을 반박 ·
-  R6 `flush-vs-straight` 「2배」(7장은 **1.53배**) · R7 `outs` FAQ 전제 누락 · R8 `reading-the-board` 플러시 예외 ·
-  R9 `hand-rankings` 자기반박
+| # | 항목 | 범위 | 메모 |
+|---|---|---|---|
+| 1 | **§4 RISKY 잔여 7편** | de | `texas-…-beginners` 3 · `probability` 3 · `all-in-rules` 2 · `pot-odds` 2 · `drawing-odds` 4 · `game-order` 1 · `blind-meaning` 1 |
+| 2 | **§6 축 B** | de | 아래 B1~B7 (이름표 유형 = 최대 ROI) |
+| 3 | **3층 적대 QA** | de 9편 | R1~R9 편집분 미실행 — **에이전트 호출은 사장님 요청 시에만** 돌린다 |
+| 4 | R1~R9 **타 로케일 미러** | 미실측 | de만 닫았다. EN 마스터 발원 결함이면 24 로케일에 살아 있다 |
+
+### R1~R9에서 남길 교훈 (다음 세션이 같은 함정에 빠진다)
+
+- 🔴 **원장 지시를 그대로 기계 치환하면 옳은 서술을 망가뜨린다.** 두 번 겪었다 —
+  **R1** 「3 raises → 4」는 **캐시게임에서 3이 맞다**(Robert's Rules: 베팅 라운드 3개 이상 게임 =
+  a bet and three raises · 해제도 캐시는 **핸드** 헤즈업이라 WSOP와 정반대). 본문이 스스로
+  「위는 토너먼트 규칙」이라 선언해 있으므로 **두 판을 갈라 쓰는 것**이 정답이었다.
+  **R5** 「이미지 alt가 본문을 반박」 → **이미지를 열어 보니 로열플러시가 아니었다**(K♦K♣Q♥Q♦J♠ ·
+  K♠7♣ vs K♥2♦ = 양쪽 K-K-K-Q-Q, 홀덤에서 가능하고 옳다). **틀린 건 alt 문구뿐**이었다.
+- ⚠ **`pokertda.com`은 이 환경에서 접속 불가**(curl·Playwright·WebFetch 전부 ECONNREFUSED).
+  TDA 원문은 **버지니아 주 규제기관이 공개한 공식 PDF**로 확보했다 —
+  `ris.dls.virginia.gov/uploads/11VAC20/dibr/Poker Tournament Directors Assoc_2019 Rules-20221228170122.pdf`
+  (2019 Longform, Illustration Addendum 포함). Rule 12·16·18-A/B·68 축어 확인.
+- ⚠ **Robert's Rules는 1차 출처로 쓰지 않았다** — 전문을 실은 `pokercoach.us`가 지금은
+  **Betsperts Media 소유**라 «저자 원본»이 아니다. 내용은 축어로 읽었으나 **본문 인용은 보류**했다.
+  깨끗한 호스트를 찾으면 캐시 캡 「a bet and three raises」를 출처와 함께 되살릴 수 있다.
+- 🟢 **WSOP 2026 룰북 용어집 DEALER BUTTON**이 「highest card by rank **and suit**」로 버튼을 정한다 —
+  **무늬 서열이 스터드 전용이 아니라는 1차 근거**다(`hand-rankings` #65에 사용).
 
 ### §6 축 B = **A트랙과 같은 자리다** (이름표 유형)
 
@@ -92,11 +103,12 @@ Session 6(Turniere 9편)로 마지막 클러스터를 닫았다. 경위는 `WORK
 | build | **69 blog + 457 intl** (불변) |
 | `audit:hard --locale=de` | 42/42 무결 · 🔴 **0건** |
 | `check:de-style` | 셀프테스트 **104/104**(99에서 +5, D3 날짜범위) · 🔴 **0건** · 🟠 D9 7편 |
+| `audit:hard --locale=<24개>` | A트랙 손댄 24 로케일 전수 · 🔴 **0건** |
 | `check:faq-schema` | **455/455 성립 · 🔴 0건** |
 | `check:hreflang` | 481페이지 · 50세트 · 🔴 0건 |
-| 미러 드리프트 | de: 🔴 **3**(4에서 −1) · 🟠 추적불가 **7**편 |
+| 미러 드리프트 | de: 🔴 **3** · 🟠 추적불가 **7**편 (불변) |
 | de 질문형 H2 | 42편 전 클러스터 경화 완료 |
-| 적대 QA | ✅ **3렌즈 완료·반영**(교열 21건 · 딜러 D유형 3건 · 네이티브 14곳) — 마지막 커밋 `24c1657` |
+| 적대 QA | ✅ 경화분 3렌즈 완료(`24c1657`) · 🔴 **R1~R9 편집분은 미실행** |
 | 지역 커버리지 | ✅ 베를린·NRW 3곳·바이에른 9곳(SBPM)·King's·CAPT·스위스 — 1차출처 + 확인일 병기 |
 
 > 📚 상시 함정·렌즈 운용 = `REVIEW-PROTOCOL.md` 맨 아래 · 다국어 경화 교훈 = `docs/lessons-i18n-hardening.md`.
