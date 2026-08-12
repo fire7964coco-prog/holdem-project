@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "hand-rankings",
   date: "2026-06-13",
   updated: "2026-08-10",
-  masterUpdated: "2026-07-19",
+  masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "⚡",
@@ -94,7 +94,7 @@ Du hältst **9♠ 10♠** für eine saubere **6-7-8-9-10 Straße**. Fühlt sich 
 
 Du hältst **9♥ 5♥**. Du hast bereits die **5-6-7-8-9 Straße** – warum also weiter auf die Herz-Karten schielen? Weil du außerdem **vier zum Flush** hältst (9♥ 8♥ 7♥ 5♥): Jedes Herz am River upgradet deine Straße zum Flush, und die **6♥ speziell** komplettiert einen **5-6-7-8-9 Straight Flush (#2)**, der alles schlägt. Wenn du gratis auf eine größere Hand ziehen kannst, spiel mit diesem Upgrade im Hinterkopf.
 
-==r:**Zwei Warnungen, die dazugehören.**== Erstens: Diese Straße ist **nicht die Nuts** – wer T-9 hält, macht bereits die höhere 10-9-8-7-6. Zweitens: Deine höchste eigene Herz-Karte ist die ==9♥==. Kommt am River ein Herz, hat jeder Gegner mit zwei Herz-Karten denselben Flush – und schon ein einziges Herz über der Neun reicht ihm zum Sieg: A♥ 2♥ genügt. Das Upgrade ist real, aber es ist ==r:kein Freifahrtschein für einen großen Pot==.
+==r:**Zwei Warnungen, die dazugehören.**== Erstens: Diese Straße ist **nicht die Nuts** – wer T-9 hält, macht bereits die höhere 10-9-8-7-6. Zweitens: Deine höchste eigene Herz-Karte ist die ==9♥==. Kommt am River ein Herz außer der 6♥, hat auch jeder Gegner mit zwei Herz-Karten einen Flush – und schon ein einziges Herz über der Neun reicht ihm zum Sieg: A♥ 2♥ genügt. Das Upgrade ist real, aber es ist ==r:kein Freifahrtschein für einen großen Pot==.
 
 ### Situation 3 – Du hast den Flush, er zeigt eine Straße
 

@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Does a Flush Beat a Straight? The Math and the Misreads",
   seoTitle: "Does a Flush Beat a Straight? Yes — and What Beats a Flush",
   desc: "Slid a straight forward — and a flush took the pot? A flush always beats a straight. Here's the math, what beats a flush, and 3 boards that fool players.",
-  tldr: "A flush (five cards of one suit — ~0.197% of five-card deals) always beats a straight (five in sequence, ~0.392%) in Texas Hold'em — because a flush is about twice as hard to make.",
+  tldr: "A flush (five cards of one suit — ~0.197% of five-card deals) always beats a straight (five in sequence, ~0.392%) in Texas Hold'em — because a flush is rarer: across all seven cards to the river, 3.03% versus 4.62% for the straight.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-07-19",
+  updated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "⚡",
@@ -65,7 +65,7 @@ Count the 2,598,960 possible five-card hands from a 52-card deck and the order f
 | **Straight** | **10,200** | **0.392%** | **Loses to flush ❌** |
 | Three of a Kind | 54,912 | 2.11% | Loses to straight |
 
-A straight has roughly ==r:**twice** as many ways to come together as a flush==, so it shows up twice as often — which makes it the weaker hand. The same frequency rule explains the entire ladder; the exact numbers for every hand are in the [poker odds and probability chart](/en/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
+A straight has roughly ==r:**twice** as many ways to come together as a flush== — 10,200 against 5,108 among the 2,598,960 five-card hands. Across all seven cards to the river the gap narrows to about ==1.5×== (4.62% versus 3.03%), but the direction never changes: the straight shows up more often, and that is exactly what makes it the weaker hand. The same frequency rule explains the entire ladder; the exact numbers for every hand are in the [poker odds and probability chart](/en/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
 ### Why this feels backwards
 
@@ -92,6 +92,8 @@ You hold **9♠ 10♠** for a clean **6-7-8-9-10 straight**. Feels strong — bu
 :::hand[8♥,7♥,6♠,2♣] Board (4 cards, turn):::
 
 You hold **9♥ 5♥**. You've already got the **5-6-7-8-9 straight** — so why keep eyeing the hearts? Because you also hold **four to a flush** (9♥ 8♥ 7♥ 5♥): any heart on the river upgrades your straight to a flush, and the **6♥ specifically** completes a **5-6-7-8-9 straight flush (#2)** that crushes everything. When you can draw to a bigger hand for free, play with that upgrade in mind.
+
+==r:**Two warnings that belong with it.**== First, this straight is **not the nuts** — anyone holding T-9 already has the higher 10-9-8-7-6. Second, the highest heart you own is the ==9♥==. Any river heart except the 6♥ also hands a flush to every opponent holding two hearts, and a single heart above the nine is enough to beat you — A♥ 2♥ does it. The upgrade is real, but it is ==r:no licence to build a big pot==.
 
 ### Spot 3 — You have the flush, they table a straight
 
@@ -183,11 +185,11 @@ A. Yes. A flush is the #5 hand and a straight is #6, so a flush always wins in s
 
 **Q. Does a straight beat a flush?**
 
-A. No. A straight (#6) never beats a flush (#5) in standard Texas Hold'em. It's a common mix-up because a straight can feel harder to complete, but a flush is roughly twice as rare — so the flush always takes the pot.
+A. No. A straight (#6) never beats a flush (#5) in standard Texas Hold'em. It's a common mix-up because a straight can feel harder to complete, but a flush is rarer — 5,108 against 10,200 ways among five-card hands, and 3.03% against 4.62% across seven cards — so the flush always takes the pot.
 
 **Q. Why does a flush beat a straight?**
 
-A. Pure math. A straight ignores suits, so there are about 10,200 ways to make one, versus only 5,108 ways to make a flush. The flush is about twice as rare, and in poker the rarer hand always ranks higher.
+A. Pure math. A straight ignores suits, so there are about 10,200 ways to make one, versus only 5,108 ways to make a flush. That makes the flush about twice as rare among five-card hands; across all seven cards to the river a factor of roughly 1.5 remains (3.03% versus 4.62%). In poker the rarer hand always ranks higher.
 
 **Q. What beats a flush in poker?**
 
@@ -214,7 +216,7 @@ A. No. One hand is always ranked above the other, so the flush simply wins. A sp
 ## The Takeaways
 
 1. **Flush (#5) beats straight (#6)** — no exceptions in standard Hold'em.
-2. It wins because it's about **twice as rare**: 5,108 flush combos vs 10,200 straight combos.
+2. It wins because it's rarer: **5,108** flush combos against **10,200** straight combos among five-card hands — and 3.03% against 4.62% across all seven cards to the river.
 3. Watch the board: **three of one suit** means a flush is live, a **paired board** means a full house can beat your flush, and suited *plus* connected is a straight flush.
 
 Lock in the full order with the [complete hand rankings](/en/blog/holdem-hand-rankings), learn how close hands are decided in the [tie-breaker and kicker guide](/en/blog/holdem-tiebreak-rules), and if you're brand new, the [beginner's guide to Texas Hold'em rules](/en/blog/texas-holdem-rules-for-beginners) ties it all together.

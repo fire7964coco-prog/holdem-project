@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Apakah Flush Mengalahkan Straight? Matematika dan Salah Bacanya",
   seoTitle: "Apakah Flush Mengalahkan Straight? Ya — dan Apa yang Mengalahkan Flush",
   desc: "Menyodorkan straight lalu flush yang ambil pot? Flush selalu mengalahkan straight. Inilah matematikanya, apa yang mengalahkan flush, dan 3 meja pengecoh.",
-  tldr: "Flush (lima kartu satu jenis — sekitar 0,197% dari pembagian lima kartu) selalu mengalahkan straight (lima kartu berurutan, sekitar 0,392%) di Texas Hold'em — karena flush kira-kira dua kali lebih sulit dibentuk.",
+  tldr: "Flush (lima kartu satu jenis — sekitar 0,197% dari pembagian lima kartu) selalu mengalahkan straight (lima kartu berurutan, sekitar 0,392%) di Texas Hold'em — karena flush lebih langka: sepanjang tujuh kartu sampai river, 3,03% berbanding 4,62% untuk straight.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-07-11",
+  updated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "⚡",
@@ -65,7 +65,7 @@ Hitung 2.598.960 kemungkinan tangan lima-kartu dari satu deck 52 kartu, dan urut
 | **Straight** | **10.200** | **0,392%** | **Kalah dari flush ❌** |
 | Three of a Kind | 54.912 | 2,11% | Kalah dari straight |
 
-Straight punya kira-kira ==r:**dua kali** lebih banyak cara terbentuk dibanding flush==, jadi ia muncul dua kali lebih sering — dan itulah yang membuatnya jadi tangan lebih lemah. Aturan frekuensi yang sama menjelaskan seluruh tangganya; angka pasti untuk tiap tangan ada di [grafik peluang dan probabilitas poker](/id/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
+Straight punya kira-kira ==r:**dua kali** lebih banyak cara terbentuk dibanding flush== — 10.200 berbanding 5.108 di antara 2.598.960 tangan lima-kartu. Sepanjang tujuh kartu sampai river jaraknya menyusut jadi sekitar ==1,5 kali== (4,62% berbanding 3,03%), tapi arahnya tak berubah: straight muncul lebih sering — dan itulah yang membuatnya jadi tangan lebih lemah. Aturan frekuensi yang sama menjelaskan seluruh tangganya; angka pasti untuk tiap tangan ada di [grafik peluang dan probabilitas poker](/id/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
 ### Kenapa ini terasa terbalik
 
@@ -92,6 +92,8 @@ Anda pegang **9♠ 10♠** untuk **straight 6-7-8-9-10** yang bersih. Terasa kua
 :::hand[8♥,7♥,6♠,2♣] Meja (4 kartu, turn):::
 
 Anda pegang **9♥ 5♥**. Anda sudah punya **straight 5-6-7-8-9** — jadi kenapa masih mengincar hati? Karena Anda juga pegang **empat kartu menuju flush** (9♥ 8♥ 7♥ 5♥): hati apa pun di river meng-upgrade straight Anda jadi flush, dan **6♥ secara spesifik** menyempurnakan **straight flush 5-6-7-8-9 (#2)** yang menghancurkan segalanya. Ketika Anda bisa menarik ke tangan lebih besar secara gratis, mainkan dengan upgrade itu dalam pikiran.
+
+==r:**Dua peringatan yang menyertainya.**== Pertama: straight ini **bukan nuts** — siapa pun yang pegang T-9 sudah punya 10-9-8-7-6 yang lebih tinggi. Kedua: kartu hati tertinggi milik Anda sendiri adalah ==9♥==. Hati apa pun di river selain 6♥ juga memberi flush kepada setiap lawan yang pegang dua hati, dan satu kartu hati di atas sembilan sudah cukup untuk mengalahkan Anda — A♥ 2♥ pun jadi. Upgrade-nya nyata, tapi itu ==r:bukan izin untuk membesarkan pot==.
 
 ### Situasi 3 — Anda punya flush, mereka membuka straight
 
@@ -183,11 +185,11 @@ A. Ya. Flush adalah tangan #5 dan straight #6, jadi flush selalu menang di Texas
 
 **Q. Apakah straight mengalahkan flush?**
 
-A. Tidak. Straight (#6) tak pernah mengalahkan flush (#5) di Texas Hold'em standar. Ini kesalahpahaman umum karena straight bisa terasa lebih sulit dijadikan, tapi flush kira-kira dua kali lebih langka — jadi flush selalu mengambil pot.
+A. Tidak. Straight (#6) tak pernah mengalahkan flush (#5) di Texas Hold'em standar. Ini kesalahpahaman umum karena straight bisa terasa lebih sulit dijadikan, tapi flush lebih langka — 5.108 berbanding 10.200 cara di antara tangan lima-kartu, dan 3,03% berbanding 4,62% sepanjang tujuh kartu — jadi flush selalu mengambil pot.
 
 **Q. Kenapa flush mengalahkan straight?**
 
-A. Murni matematika. Straight mengabaikan jenis, jadi ada sekitar 10.200 cara membentuknya, berbanding hanya 5.108 cara membentuk flush. Flush kira-kira dua kali lebih langka, dan di poker tangan yang lebih langka selalu berperingkat lebih tinggi.
+A. Murni matematika. Straight mengabaikan jenis, jadi ada sekitar 10.200 cara membentuknya, berbanding hanya 5.108 cara membentuk flush. Itu membuat flush kira-kira dua kali lebih langka di antara tangan lima-kartu; sepanjang tujuh kartu sampai river tersisa faktor sekitar 1,5 (3,03% berbanding 4,62%). Di poker tanganyang lebih langka selalu berperingkat lebih tinggi.
 
 **Q. Apa yang mengalahkan flush di poker?**
 
@@ -214,7 +216,7 @@ A. Tidak. Salah satu tangan selalu berperingkat di atas yang lain, jadi flush cu
 ## Poin Penting
 
 1. **Flush (#5) mengalahkan straight (#6)** — tanpa pengecualian di Hold'em standar.
-2. Ia menang karena kira-kira **dua kali lebih langka**: 5.108 kombinasi flush vs 10.200 kombinasi straight.
+2. Ia menang karena lebih langka: **5.108** kombinasi flush berbanding **10.200** kombinasi straight di antara tangan lima-kartu — dan 3,03% berbanding 4,62% sepanjang tujuh kartu sampai river.
 3. Perhatikan meja: **tiga kartu satu jenis** berarti flush hidup, **meja yang berpasangan** berarti full house bisa mengalahkan flush Anda, dan satu jenis *plus* berurutan adalah straight flush.
 
 Kunci urutan lengkapnya dengan [peringkat tangan lengkap](/id/blog/holdem-hand-rankings), pelajari bagaimana tangan-tangan berdekatan diputuskan di [panduan seri dan kicker](/id/blog/holdem-tiebreak-rules), dan kalau Anda benar-benar baru, [panduan pemula aturan Texas Hold'em](/id/blog/texas-holdem-rules-for-beginners) merangkai semuanya jadi satu.

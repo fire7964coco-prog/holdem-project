@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Flush ganha de sequência? A matemática e as leituras erradas",
   seoTitle: "Flush ganha de sequência? Sim — e o que ganha do flush",
   desc: "Empurrou a sequência e o flush levou o pote? O flush sempre ganha da sequência. Veja a matemática, o que ganha do flush e 3 mesas que enganam jogadores.",
-  tldr: "Um flush (cinco cartas do mesmo naipe — cerca de 0,197% das mãos de cinco cartas) sempre ganha de uma sequência (cinco em sequência, cerca de 0,392%) no Texas Hold'em — porque um flush é quase duas vezes mais difícil de fechar.",
+  tldr: "Um flush (cinco cartas do mesmo naipe — cerca de 0,197% das mãos de cinco cartas) sempre ganha de uma sequência (cinco em sequência, cerca de 0,392%) no Texas Hold'em — porque o flush é mais raro: ao longo das sete cartas até o river, 3,03% contra 4,62% da sequência.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-07-11",
+  updated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "⚡",
@@ -65,7 +65,7 @@ Conte as 2.598.960 mãos possíveis de cinco cartas de um baralho de 52 e a orde
 | **Sequência** | **10.200** | **0,392%** | **Perde para o flush ❌** |
 | Trinca | 54.912 | 2,11% | Perde para a sequência |
 
-Uma sequência tem mais ou menos ==r:o **dobro** de formas de se montar do que um flush==, então aparece duas vezes mais — o que a torna a mão mais fraca. A mesma regra de frequência explica a escada inteira; os números exatos de cada mão estão no [gráfico de odds e probabilidade do pôquer](/pt/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
+Uma sequência tem mais ou menos ==r:o **dobro** de formas de se montar do que um flush== — 10.200 contra 5.108 entre as 2.598.960 mãos de cinco cartas. Ao longo das sete cartas até o river a distância encolhe para cerca de ==1,5 vez== (4,62% contra 3,03%), mas a direção não muda: a sequência aparece mais vezes — o que a torna a mão mais fraca. A mesma regra de frequência explica a escada inteira; os números exatos de cada mão estão no [gráfico de odds e probabilidade do pôquer](/pt/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
 ### Por que isso parece invertido
 
@@ -92,6 +92,8 @@ Você tem **9♠ 10♠** para uma **sequência 6-7-8-9-10** limpa. Parece forte 
 :::hand[8♥,7♥,6♠,2♣] Mesa (4 cartas, turn):::
 
 Você tem **9♥ 5♥**. Já fechou a **sequência 5-6-7-8-9** — então por que continuar de olho nas copas? Porque você também tem **quatro para o flush** (9♥ 8♥ 7♥ 5♥): qualquer copas no river melhora sua sequência para flush, e o **6♥ especificamente** completa um **straight flush 5-6-7-8-9 (#2)** que esmaga tudo. Quando dá para buscar uma mão maior de graça, jogue com essa melhora em mente.
+
+==r:**Dois avisos que vêm junto.**== Primeiro: essa sequência **não é o nuts** — quem tiver T-9 já fecha a 10-9-8-7-6, que é maior. Segundo: a sua copas mais alta é o ==9♥==. Qualquer copas no river que não seja o 6♥ também dá flush a todo adversário com duas copas, e uma única copas acima do nove já basta para te vencer — A♥ 2♥ resolve. A melhora é real, mas ==r:não é licença para inflar o pote==.
 
 ### Situação 3 — Você tem o flush, ele mostra uma sequência
 
@@ -183,11 +185,11 @@ A. Sim. O flush é a mão #5 e a sequência é a #6, então o flush sempre ganha
 
 **Q. A sequência ganha do flush?**
 
-A. Não. Uma sequência (#6) nunca ganha de um flush (#5) no Texas Hold'em padrão. É uma confusão comum porque a sequência pode parecer mais difícil de fechar, mas o flush é cerca de duas vezes mais raro — então o flush sempre leva o pote.
+A. Não. Uma sequência (#6) nunca ganha de um flush (#5) no Texas Hold'em padrão. É uma confusão comum porque a sequência pode parecer mais difícil de fechar, mas o flush é mais raro — 5.108 contra 10.200 formas entre as mãos de cinco cartas, e 3,03% contra 4,62% ao longo das sete cartas — então o flush sempre leva o pote.
 
 **Q. Por que o flush ganha da sequência?**
 
-A. Matemática pura. A sequência ignora os naipes, então há cerca de 10.200 formas de fechar uma, contra apenas 5.108 formas de fechar um flush. O flush é cerca de duas vezes mais raro, e no pôquer a mão mais rara sempre fica acima.
+A. Matemática pura. A sequência ignora os naipes, então há cerca de 10.200 formas de fechar uma, contra apenas 5.108 formas de fechar um flush. Isso deixa o flush cerca de duas vezes mais raro entre as mãos de cinco cartas; ao longo das sete cartas até o river sobra um fator de aproximadamente 1,5 (3,03% contra 4,62%). No pôquer a mão mais rara sempre fica acima.
 
 **Q. O que ganha do flush no pôquer?**
 
@@ -214,7 +216,7 @@ A. Não. Uma mão está sempre acima da outra, então o flush simplesmente ganha
 ## As conclusões
 
 1. **Flush (#5) ganha de sequência (#6)** — sem exceção no Hold'em padrão.
-2. Ele ganha porque é cerca de **duas vezes mais raro**: 5.108 combinações de flush contra 10.200 de sequência.
+2. Ele ganha porque é mais raro: **5.108** combinações de flush contra **10.200** de sequência entre as mãos de cinco cartas — e 3,03% contra 4,62% ao longo das sete cartas até o river.
 3. Fique de olho na mesa: **três de um naipe** significa que um flush está vivo, uma **mesa pareada** significa que um full house pode ganhar do seu flush, e do mesmo naipe *mais* conectado é um straight flush.
 
 Fixe a ordem completa com o [ranking completo de mãos](/pt/blog/holdem-hand-rankings), aprenda como as mãos apertadas são decididas no [guia de desempate e kicker](/pt/blog/holdem-tiebreak-rules) e, se você é totalmente novo, o [guia para iniciantes das regras do Texas Hold'em](/pt/blog/texas-holdem-rules-for-beginners) amarra tudo.

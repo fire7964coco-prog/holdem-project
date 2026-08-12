@@ -13,19 +13,23 @@
 ### ▶▶ 이 세션의 본체 = **미러 전파 잔여 5편** ← 최우선
 
 de 검수에서 닫은 결함이 **EN 마스터 발원**임이 실증돼, 전 로케일로 옮기는 중이다.
-**5편은 끝났고 4편이 남았다.** 경위·검산치는 `WORKLOG.md` 2026-08-12 (5)~(9).
+**6편은 끝났고 3편이 남았다.** 경위·검산치는 `WORKLOG.md` 2026-08-12 (5)~(10).
 
 | 글 | 로케일 | 남은 결함 |
 |---|---:|---|
-| `holdem-flush-vs-straight` | 8 | 「2배」 **4곳**(tldr·본문·FAQ 2) — 7장은 **1,53배** · 플러시 스플릿 누락 · 하트 최상단 조건 |
 | `holdem-implied-odds` | 8 | 국면 라벨 3곳(→ `(Turn → River)`) · 「Flop- und Turn-Konzept」(프리플랍 세트마이닝이 반례) |
 | `holdem-outs` | 8 | FAQ 2장 계산 **전제 누락**(그 값은 «더 낼 게 없을 때»만 쓴다) |
 | `holdem-hand-rankings` | **13** | 용어 동일시 · 「대부분의 팟은 원페어」(43,82% < 50%) · 무늬 서열 한정 |
 
-🔴 **순서 = flush-vs-straight → implied-odds/outs → hand-rankings.**
+🔴 **순서 = implied-odds/outs → hand-rankings.**
 
 > ✅ **`holdem-equity` 8 로케일 종료(2026-08-12).** 실측은 원장의 「6곳」이 아니라 **EN 14 · es/ja/zh 13 ·
 > zh-hant 11 · pt/id 11자리**였다. 이번에도 「N곳」이 깨졌다 — 경위는 WORKLOG (9).
+>
+> ✅ **`holdem-flush-vs-straight` 8 로케일 종료(2026-08-12).** 「2배」는 **지우지 않고 기준을 명시**했다
+> (5장 1.997배는 참 · 7장 1.53배 병기) — **C층 #2·#8·#25가 이 한 번에 같이 닫혔다.**
+> EN에 통째로 없던 **Spot 2 경고 문단**(너츠 아님 · 내 최고 하트 9♥)도 8 로케일에 넣었고,
+> **de 원문의 「리버에 하트가 오면」이 6♥일 때 거짓**이라 「6♥ 외의 하트」로 한정해 **de에도 되먹였다**.
 > 🔴 **그 과정에서 형제 글 `holdem-pot-odds`에 같은 등식이 실재함을 확인했다**(아래 「새로 확인된 잔여」).
 
 #### 착수 전에 알아야 할 것
@@ -138,7 +142,7 @@ de S3 검수장이 **「경계 밖 관찰」**로만 남겨 둔 자리를 equity
 | `check:hreflang` | 481페이지 · 50세트 · 🔴 0건 |
 | 미러 드리프트 | de: 🔴 **3** · 🟠 추적불가 **7**편 (불변) |
 | de 검수 지시서 | ✅ **전 트랙 종료**(§1 WRONG 4 · §2 축 2 · §3 M1~M3 · §4 RISKY 61 · 3층 QA 4렌즈) |
-| 미러 전파 | ✅ showdown-rules(25·9자리) · betting-actions(25·6종) · split-pot(8) · reading-the-board(8) · **equity(8·EN 14자리)** / 🔴 **잔여 4편** |
+| 미러 전파 | ✅ showdown-rules(25·9자리) · betting-actions(25·6종) · split-pot(8) · reading-the-board(8) · **equity(8)** · **flush-vs-straight(8)** / 🔴 **잔여 3편** |
 
 > 📚 상시 함정·렌즈 운용 = `REVIEW-PROTOCOL.md` 맨 아래 · 다국어 경화 교훈 = `docs/lessons-i18n-hardening.md`.
 > **트랙 착수 전 둘 다 읽어라.**
@@ -167,7 +171,7 @@ de S3 검수장이 **「경계 밖 관찰」**로만 남겨 둔 자리를 equity
 
 > 🔴 **2026-08-12 미이행 고백 — 다음 세션이 반드시 메꿔야 한다.**
 > 미러 전파로 아래 글들을 **전 로케일에서 열었는데 C층 지시서를 확인하지 않았다**:
-> `flush-vs-straight`(#2 #8 #25) · `betting-actions`(#2 #7) · `split-pot-rules`(#21) ·
+> ~~`flush-vs-straight`(#2 #8 #25)~~ ✅ **08-12 종료** · `betting-actions`(#2 #7) · `split-pot-rules`(#21) ·
 > `texas-…-beginners`(#28 #29) · `game-order`(#31) · `kicker`(#18).
 > **「그 글을 열 때 닫는다」는 이 트랙의 전제가 이번에 깨졌다.** 미러 잔여 4편을 열 때는
 > **파일을 열기 전에 지시서부터 찾아라**, 그리고 위 6편은 별도로 한 번 훑어야 한다.
@@ -178,7 +182,7 @@ de S3 검수장이 **「경계 밖 관찰」**로만 남겨 둔 자리를 equity
 | 글 | 잔여 번호 | 어느 트랙에서 열리나 |
 |---|---|---|
 | ~~`holdem-probability`~~ | ~~#16 #17~~ | ✅ **완료 2026-08-11** — de Session 3에서 8로케일 정정(`a76b43d`) |
-| `holdem-flush-vs-straight` | #2 #8 #25 | de Session 2 재방문 / 타 언어 경화 |
+| ~~`holdem-flush-vs-straight`~~ | ~~#2 #8 #25~~ | ✅ **완료 2026-08-12** — 미러 트랙에서 8 로케일 정정(WORKLOG (10)) |
 | `holdem-game-order` | #31 | 아래 「잔여 2건」 #1과 **같은 파일 — 함께 열어라** |
 | `holdem-betting-actions` | #2 #7 | |
 | ~~`holdem-when-to-fold`~~ | ~~#3 #6~~ | ✅ **완료** — Session 4에서 8로케일 정정

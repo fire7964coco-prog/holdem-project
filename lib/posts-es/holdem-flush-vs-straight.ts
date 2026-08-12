@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "¿El color gana a la escalera? La matemática y los errores de lectura",
   seoTitle: "¿El color gana a la escalera? Sí — y qué le gana al color",
   desc: "¿Empujaste tu escalera y el color se llevó el bote? El color siempre gana a la escalera. Aquí tienes la matemática, qué le gana al color y 3 mesas que engañan.",
-  tldr: "En el Texas Hold'em, un color (cinco cartas del mismo palo) siempre gana a una escalera (cinco cartas en secuencia), sin excepciones. La razón es pura frecuencia: hay unas 5,108 formas de ligar un color frente a 10,200 de armar una escalera, así que el color es casi el doble de raro. Al color solo le ganan el full, el póker, la escalera de color, la escalera real y un color más alto.",
+  tldr: "En el Texas Hold'em, un color (cinco cartas del mismo palo) siempre gana a una escalera (cinco cartas en secuencia), sin excepciones. La razón es pura frecuencia: hay unas 5,108 formas de ligar un color frente a 10,200 de armar una escalera, así que el color es casi el doble de raro entre las manos de cinco cartas; sobre las siete cartas hasta el river son 3.03% frente a 4.62%. Al color solo le ganan el full, el póker, la escalera de color, la escalera real y un color más alto.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-07-24",
-  masterUpdated: "2026-07-19",
+  updated: "2026-08-12",
+  masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "⚡",
@@ -66,7 +66,7 @@ Cuenta las 2,598,960 manos posibles de cinco cartas de una baraja de 52 y el ord
 | **Escalera** | **10,200** | **0.392%** | **Pierde contra el color ❌** |
 | Trío | 54,912 | 2.11% | Pierde contra la escalera |
 
-Una escalera tiene aproximadamente ==r:**el doble** de formas de armarse que un color==, así que aparece el doble de veces — lo que la convierte en la mano más débil. La misma regla de frecuencia explica toda la jerarquía; los números exactos de cada mano están en la [tabla de probabilidades y odds del póker](/es/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
+Una escalera tiene aproximadamente ==r:**el doble** de formas de armarse que un color== — 10,200 frente a 5,108 entre las 2,598,960 manos de cinco cartas. Sobre las siete cartas hasta el river la distancia se reduce a ==1.5 veces== (4.62% frente a 3.03%), pero la dirección no cambia: la escalera aparece más a menudo, y eso es justo lo que la convierte en la mano más débil. La misma regla de frecuencia explica toda la jerarquía; los números exactos de cada mano están en la [tabla de probabilidades y odds del póker](/es/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
 ### Por qué esto parece al revés
 
@@ -93,6 +93,8 @@ Tienes **9♠ 10♠** para una **escalera limpia 6-7-8-9-10**. Se siente fuerte 
 :::hand[8♥,7♥,6♠,2♣] Mesa (4 cartas, turn):::
 
 Tienes **9♥ 5♥**. Ya tienes la **escalera 5-6-7-8-9** — ¿entonces por qué seguir mirando los corazones? Porque también tienes **cuatro cartas para el color** (9♥ 8♥ 7♥ 5♥): cualquier corazón en el river mejora tu escalera a color, y el **6♥ en concreto** completa una **escalera de color 5-6-7-8-9 (#2)** que aplasta todo lo demás. Cuando puedes proyectar a una mano mayor gratis, juega con esa mejora en mente.
+
+==r:**Dos avisos que van con esto.**== Primero: esta escalera **no son las nuts** — quien tenga T-9 ya tiene la 10-9-8-7-6, que es mayor. Segundo: tu corazón más alto es el ==9♥==. Cualquier corazón en el river que no sea el 6♥ también le da color a todo rival con dos corazones, y le basta un solo corazón por encima del nueve para ganarte: con A♥ 2♥ le sobra. La mejora es real, pero ==r:no es un permiso para inflar el bote==.
 
 ### Situación 3 — Tú tienes el color, ellos enseñan una escalera
 
@@ -184,11 +186,11 @@ A. Sí. El color es la mano #5 y la escalera la #6, así que el color siempre ga
 
 **Q. ¿La escalera gana al color?**
 
-A. No. Una escalera (#6) nunca gana a un color (#5) en el Texas Hold'em estándar. Es una confusión común porque una escalera puede parecer más difícil de completar, pero un color es casi el doble de raro — así que el color siempre se lleva el bote.
+A. No. Una escalera (#6) nunca gana a un color (#5) en el Texas Hold'em estándar. Es una confusión común porque una escalera puede parecer más difícil de completar, pero un color es más raro — 5,108 frente a 10,200 formas entre las manos de cinco cartas, y 3.03% frente a 4.62% sobre las siete cartas — así que el color siempre se lleva el bote.
 
 **Q. ¿Por qué el color gana a la escalera?**
 
-A. Matemática pura. Una escalera ignora los palos, así que hay unas 10,200 formas de hacerla, frente a solo 5,108 de hacer un color. El color es casi el doble de raro, y en el póker la mano más rara siempre está más arriba.
+A. Matemática pura. Una escalera ignora los palos, así que hay unas 10,200 formas de hacerla, frente a solo 5,108 de hacer un color. Eso hace que el color sea casi el doble de raro entre las manos de cinco cartas; sobre las siete cartas hasta el river queda un factor de aproximadamente 1.5 (3.03% frente a 4.62%). En el póker la mano más rara siempre está más arriba.
 
 **Q. ¿Qué le gana al color en el póker?**
 
@@ -216,7 +218,7 @@ A. Gana el color. En el Texas Hold'em el color (#5) siempre gana a la escalera (
 
 **Q. ¿Qué es más probable, un color o una escalera?**
 
-A. Una escalera es más frecuente. Hay unas 10,200 formas de armar una escalera frente a solo 5,108 de ligar un color, así que la escalera aparece casi el doble de veces. Precisamente por ser más común vale menos: en el póker, cuanto más rara es una mano, más alto está.
+A. Una escalera es más frecuente. Hay unas 10,200 formas de armar una escalera frente a solo 5,108 de ligar un color, así que entre las manos de cinco cartas la escalera aparece casi el doble de veces (sobre las siete cartas, 4.62% frente a 3.03%). Precisamente por ser más común vale menos: en el póker, cuanto más rara es una mano, más alto está.
 
 **Q. ¿Qué es mejor, una escalera de color o un full?**
 
@@ -235,7 +237,7 @@ A. No, es al revés: el full gana al color. En una mesa emparejada, un rival con
 ## Lo que hay que recordar
 
 1. **El color (#5) gana a la escalera (#6)** — sin excepciones en el Hold'em estándar.
-2. Gana porque es casi **el doble de raro**: 5,108 combinaciones de color vs 10,200 de escalera.
+2. Gana porque es más raro: **5,108** combinaciones de color frente a **10,200** de escalera entre las manos de cinco cartas — y 3.03% frente a 4.62% sobre las siete cartas hasta el river.
 3. Vigila la mesa: **tres de un palo** significa que un color está vivo, una **mesa emparejada** significa que un full puede ganar a tu color, y del mismo palo *más* conectadas es una escalera de color.
 
 Fija el orden completo con la [jerarquía de manos completa](/es/blog/holdem-hand-rankings), aprende cómo se deciden las manos ajustadas en la [guía de desempate y kicker](/es/blog/holdem-tiebreak-rules), y si eres nuevo del todo, la [guía de reglas del Texas Hold'em para principiantes](/es/blog/texas-holdem-rules-for-beginners) lo ata todo.
