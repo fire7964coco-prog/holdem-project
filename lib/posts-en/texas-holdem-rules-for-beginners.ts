@@ -294,7 +294,7 @@ You do not need to be a math expert. You just need to understand one question be
 
 ### How pot odds work (one example)
 
-Imagine the pot is **$100** and your opponent bets **$20**. To stay in the hand, you must call $20. The total pot would become $120.
+Imagine the pot is **$100** and your opponent bets **$20**. To stay in the hand, you must call $20. Before your call the pot is **$120** — after it, **$140**.
 
 Your pot odds are **$120 to $20**, or **6 to 1**. That means you need to win at least **1 in 7 times** (about 14%) for this call to be profitable.
 

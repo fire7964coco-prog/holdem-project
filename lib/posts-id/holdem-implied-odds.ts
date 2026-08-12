@@ -70,7 +70,7 @@ Ditulis rapi, dengan ==g:x== sebagai uang ekstra yang harus Anda menangkan saat 
 :::steps
 Cari peluang jadi Anda | Hitung outs, ubah ke persentase ([Aturan 4 dan 2](/id/blog/holdem-pot-odds) mendekatkan Anda)
 Bagi call Anda dengan peluang jadi itu | Ini total yang Anda butuhkan untuk menang agar impas
-Kurangi pot yang sudah ada di sana | Sisanya adalah ekstra yang harus Anda menangkan nanti — itulah ==g:x==
+Kurangi pot saat ini **ditambah call Anda sendiri** | Sisanya adalah ekstra yang harus Anda menangkan nanti — itulah ==g:x==
 Nilai apakah realistis | Stack dalam + lawan yang senang membayar = ya. Stack pendek atau board menakutkan = tidak
 :::
 

@@ -293,7 +293,7 @@ Você não precisa ser especialista em matemática. Só precisa entender uma per
 
 ### Como as pot odds funcionam (um exemplo)
 
-Imagine que o pote tem **$100** e o adversário aposta **$20**. Para continuar na mão, você precisa pagar $20. O pote total ficaria em $120.
+Imagine que o pote tem **$100** e o adversário aposta **$20**. Para continuar na mão, você precisa pagar $20. Antes do seu call o pote é de **$120**; depois, de **$140**.
 
 Suas pot odds são **$120 para $20**, ou seja, **6 para 1**. Isso significa que você precisa ganhar pelo menos **1 vez em 7** (cerca de 14%) para esse call ser lucrativo.
 

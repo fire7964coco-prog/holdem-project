@@ -69,7 +69,7 @@ Written cleanly, with ==g:x== as the extra money you must win when you complete:
 :::steps
 Find your hit chance | Count outs, convert to a percentage (the [Rule of 4 and 2](/en/blog/holdem-pot-odds) gets you close)
 Divide your call by that hit chance | This is the total you need to win to break even
-Subtract the pot that's already there | What's left is the extra you must win later — that's your ==g:x==
+Subtract the current pot **plus your own call** | What's left is the extra you must win later — that's your ==g:x==
 Judge if it's realistic | Deep stacks + a payoff-happy opponent = yes. Short stacks or a scary board = no
 :::
 

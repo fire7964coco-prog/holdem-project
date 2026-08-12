@@ -138,7 +138,7 @@ Wieder dasselbe Paar – und meine 9 bekam nicht einmal eine Stimme. Sie wurde d
 
 ## Hat ein Vierling einen Kicker?
 
-**Ja – ein Vierling hat einen Ein-Karten-Kicker, aber er entscheidet im Hold'em fast nie eine Hand, weil der Vierling meistens auf dem Board geteilt wird.** Das ist die Ausnahme, die die meisten Leitfäden vermasseln, indem sie den Vierling zu den „Fünf-Karten-Händen ohne Kicker“ zählen.
+**Ja – ein Vierling hat einen Ein-Karten-Kicker, aber er entscheidet im Hold’em fast nie eine Hand: Dafür müssten zwei Spieler denselben Vierling halten, und das setzt voraus, dass alle vier Karten auf dem Board liegen – ein seltener Fall.** Das ist die Ausnahme, die die meisten Leitfäden vermasseln, indem sie den Vierling zu den „Fünf-Karten-Händen ohne Kicker“ zählen.
 
 Die Mathematik ist klar: Vier Karten bilden den Vierling, eine Karte ist der Kicker. Er zählt nur, wenn zwei Spieler irgendwie auf demselben Vierling gleichauf sind – was im Hold'em erfordert, dass alle vier auf dem Board liegen (da es von jedem Rang nur vier gibt). Wenn das Board ==b:5♠ 5♥ 5♦ 5♣ K♦== ist, hat jeder einen Vierling Fünfen, und die fünfte Karte ist der Kicker: Ein Spieler mit einem Ass spielt ==g:5-5-5-5-A== und schlägt einen Spieler, der die ==5-5-5-5-K== vom Board nimmt. Selten, aber real – und bei den Grenzfällen recht zu haben, ist das, was einen vertrauenswürdigen Leitfaden von einem schwammigen unterscheidet.
 

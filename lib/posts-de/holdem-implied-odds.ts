@@ -70,7 +70,7 @@ Sauber geschrieben, mit ==g:x== als dem zusätzlichen Geld, das du gewinnen muss
 :::steps
 Finde deine Trefferquote | Zähle Outs, wandle sie in einen Prozentwert um (die [Faustregel](/de/blog/holdem-pot-odds) bringt dich nah dran)
 Teile deinen Call durch diese Trefferquote | Das ist der Gesamtbetrag, den du gewinnen musst, um break-even zu sein
-Ziehe den Pot ab, der schon da ist | Was übrig bleibt, ist das Extra, das du später gewinnen musst – das ist dein ==g:x==
+ Ziehe den aktuellen Pot **plus deinen eigenen Call** ab | Was übrig bleibt, ist das Extra, das du später gewinnen musst – das ist dein ==g:x==
 Beurteile, ob es realistisch ist | Tiefe Stacks + ein auszahlfreudiger Gegner = ja. Kurze Stacks oder ein gefährliches Board = nein
 :::
 

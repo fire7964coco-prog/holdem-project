@@ -285,7 +285,7 @@ Um im Showdown zu gewinnen, musst du sofort wissen, welche Hand welche schlägt.
 | 7 | Drilling | Q♠ Q♥ Q♦ 5♠ 7♥ | Gelegentlich |
 | 8 | Zwei Paare | J♠ J♥ 8♦ 8♣ A♠ | Häufig |
 | 9 | Paar | K♠ K♥ 7♦ 4♣ 2♠ | Sehr häufig |
-| 10 | High Card | A♠ Q♥ 8♦ 5♣ 2♠ | Sehr häufig |
+| 10 | High Card | A♠ Q♥ 8♦ 5♣ 2♠ | Häufig – aber seltener als zwei Paare |
 
 </div>
 

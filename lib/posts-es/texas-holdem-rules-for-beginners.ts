@@ -295,7 +295,7 @@ No necesitas ser un genio de las mates. Solo necesitas hacerte una pregunta ante
 
 ### Cómo funcionan las pot odds (un ejemplo)
 
-Imagina que el bote es de **$100** y tu rival apuesta **$20**. Para seguir en la mano, debes igualar $20. El bote total pasaría a ser de $120.
+Imagina que el bote es de **$100** y tu rival apuesta **$20**. Para seguir en la mano, debes igualar $20. Antes de tu call el bote es de **$120**; después, de **$140**.
 
 Tus pot odds son **$120 contra $20**, es decir, **6 contra 1**. Eso significa que necesitas ganar al menos **1 de cada 7 veces** (alrededor del 14%) para que igualar sea rentable.
 

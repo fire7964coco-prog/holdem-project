@@ -70,7 +70,7 @@ Escrito de forma limpa, com ==g:x== sendo o dinheiro extra que você precisa gan
 :::steps
 Encontre sua chance de acertar | Conte os outs, converta em porcentagem (a [Regra do 4 e 2](/pt/blog/holdem-pot-odds) te aproxima)
 Divida seu call por essa chance de acertar | Esse é o total que você precisa ganhar para empatar
-Subtraia o pote que já está ali | O que sobra é o extra que você precisa ganhar depois — esse é o seu ==g:x==
+Subtraia o pote atual **mais o seu próprio call** | O que sobra é o extra que você precisa ganhar depois — esse é o seu ==g:x==
 Julgue se é realista | Stacks profundos + um adversário que adora pagar = sim. Stacks curtos ou uma mesa assustadora = não
 :::
 

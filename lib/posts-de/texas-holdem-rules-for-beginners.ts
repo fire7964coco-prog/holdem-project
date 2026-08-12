@@ -333,7 +333,7 @@ Du musst kein Mathegenie sein. Du musst dir vor jedem Call nur eine Frage stelle
 
 ### Wie Pot Odds funktionieren (ein Beispiel)
 
-Stell dir vor, im Pot liegen **$100** und dein Gegner setzt **$20**. Um in der Hand zu bleiben, musst du $20 callen. Der Pot würde damit auf $120 wachsen.
+Stell dir vor, im Pot liegen **$100** und dein Gegner setzt **$20**. Um in der Hand zu bleiben, musst du $20 callen. Vor deinem Call liegen damit **$120** im Pot – nach deinem Call sind es **$140**.
 
 Deine Pot Odds sind **$120 zu $20**, also **6:1**. Das heißt: Du musst mindestens **1 von 7 Malen** gewinnen (rund 14%), damit sich dieser Call lohnt.
 

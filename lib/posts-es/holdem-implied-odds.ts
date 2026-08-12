@@ -70,7 +70,7 @@ Escrito limpio, con ==g:x== como el dinero extra que debes ganar cuando completa
 :::steps
 Halla tu probabilidad de ligar | Cuenta outs, conviértelas a porcentaje (la [regla del 4 y 2](/es/blog/holdem-pot-odds) te acerca)
 Divide tu call entre esa probabilidad | Este es el total que necesitas ganar para quedar en tablas
-Resta el bote que ya está ahí | Lo que queda es el extra que debes ganar después — esa es tu ==g:x==
+Resta el bote actual **más tu propio call** | Lo que queda es el extra que debes ganar después — esa es tu ==g:x==
 Juzga si es realista | Stacks profundos + un rival que paga a gusto = sí. Stacks cortos o una mesa peligrosa = no
 :::
 
