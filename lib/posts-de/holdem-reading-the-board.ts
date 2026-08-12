@@ -178,7 +178,7 @@ Dieselbe Logik beantwortet „kann man drei Paare haben?“ – du hältst viell
 
 ## Was ist die bestmögliche Hand? Die Nuts lesen
 
-Starke Spieler laufen noch einen Scan: nicht „was habe ich?“, sondern ==**„was ist die beste Hand, die IRGENDJEMAND an diesem Board haben könnte?“**== Diese Hand heißt die Nuts (mehr solcher Tischsprache im [Poker-Glossar](/de/blog/holdem-glossary)).
+Starke Spieler machen noch einen zweiten Scan: nicht „was habe ich?“, sondern ==**„was ist die beste Hand, die IRGENDJEMAND an diesem Board haben könnte?“**== Diese Hand heißt die Nuts (mehr solcher Tischsprache im [Poker-Glossar](/de/blog/holdem-glossary)).
 
 Board: Q♣ 9♥ 6♣ 5♦ 2♠
 
@@ -217,7 +217,7 @@ Tunnelblick auf dein Paar oder deinen geplatzten Draw. Meine 8-6-Geschichte ganz
 
 Vier Pik unter deinen 7 sind **kein** Flush – dafür brauchst du fünf. Und das Spiegelbild: Board 9♠ 6♠ 3♠ Q♠ J♦ mit A♥ K♥ in der Hand gibt dir A-K-Q-J-9 – nur High Card – während ==jeder Gegner mit einem einzigen Pik einen Flush hat==.
 
-### Fehler 3 – vergessen, dass das Board geteilt wird
+### Fehler 3 – vergessen, dass sich alle dasselbe Board teilen
 
 Anfänger folden zu „er muss ein Kreuz haben“ an einem Drei-Kreuz-Board – aber diese Kreuze helfen einem Gegner nur, wenn **beide** seiner Hole Cards Kreuz sind (bei drei Kreuz auf dem Board reicht **eines nicht**). Alle teilen sich dasselbe Board; ==nur Hole Cards machen die Hand von irgendjemandem anders als deine==.
 
@@ -240,7 +240,7 @@ A. Scanne alle 7 Karten (2 Hole + 5 Board) in fester Reihenfolge: zuerst Flush (
 
 **Q. Wann spielt das Board für alle – und was heißt das für den Pot?**
 
-A. Es bedeutet, dass die 5 Gemeinschaftskarten bereits deine bestmögliche 5-Karten-Hand sind – keine Hole Card verbessert sie. Da das Board geteilt wird, kann jeder Spieler dieselbe Hand beanspruchen, also führt playing the board meist zu einem Split Pot, außer die Hole Cards eines Gegners verbessern das Board.
+A. Es bedeutet, dass die 5 Gemeinschaftskarten bereits deine bestmögliche 5-Karten-Hand sind – keine Hole Card verbessert sie. Da sich alle dasselbe Board teilen, kann jeder Spieler dieselbe Hand beanspruchen, also führt playing the board meist zu einem Split Pot, außer die Hole Cards eines Gegners verbessern das Board.
 
 **Q. Kann das Board für alle die beste Hand sein?**
 
@@ -268,11 +268,11 @@ A. Bilden die fünf Gemeinschaftskarten selbst einen Flush, teilen ihn zunächst
 
 **Q. Liegt eine Straße auf dem Board – wer gewinnt dann?**
 
-A. Dann hat jeder mindestens diese Straße, und es gewinnt, wer sie mit einer Hole Card nach oben verlängert. Auf einem Board 5-6-7-8-9 macht ein Spieler mit einer Zehn die 6-7-8-9-10 und schlägt das Board. Kann niemand höher, wird der Pot geteilt – es sei denn, auf dem Board liegen drei Karten derselben Farbe: Dann schlägt ein Gegner mit zwei passenden Karten die Straße mit einem Flush.
+A. Dann hat jeder mindestens diese Straße. Es gewinnt, wer sie mit einer Hole Card nach oben verlängert – auf einem Board 5-6-7-8-9 macht ein Spieler mit einer Zehn die 6-7-8-9-10 und schlägt das Board. Vorsicht, sobald dort drei Karten derselben Farbe liegen: Ein Gegner mit zwei passenden Karten schlägt dann jede dieser Straßen mit seinem Flush. Kann niemand höher, wird der Pot geteilt.
 
 **Q. Musst du im Texas Hold'em beide Hole Cards benutzen?**
 
-A. Nein. Du baust deine besten fünf Karten aus jeder beliebigen Kombination deiner zwei Hole Cards und der fünf Gemeinschaftskarten – beide, nur eine oder gar keine. Gar keine zu benutzen heißt „das Board spielen“. Omaha ist genau umgekehrt: Dort musst du exakt zwei deiner vier Hole Cards nutzen.
+A. Nein. Du baust deine besten fünf Karten aus jeder beliebigen Kombination deiner zwei Hole Cards und der fünf Gemeinschaftskarten – beide, nur eine oder gar keine. Gar keine zu benutzen heißt „das Board spielen“ – und dabei gilt eine Formalie, die immer wieder Pots kostet: Wer das Board spielt, muss beim Showdown **beide Hole Cards aufdecken**, um überhaupt einen Anteil zu bekommen (==WSOP Rule 75==, TDA-Regel 19). Omaha ist genau umgekehrt: Dort musst du exakt zwei deiner vier Hole Cards nutzen.
 
 **Q. Zählt ein Paar auf dem Board als Teil deiner Hand?**
 

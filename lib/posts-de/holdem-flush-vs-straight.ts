@@ -94,7 +94,7 @@ Du hältst **9♠ 10♠** für eine saubere **6-7-8-9-10 Straße**. Fühlt sich 
 
 Du hältst **9♥ 5♥**. Du hast bereits die **5-6-7-8-9 Straße** – warum also weiter auf die Herz-Karten schielen? Weil du außerdem **vier zum Flush** hältst (9♥ 8♥ 7♥ 5♥): Jedes Herz am River upgradet deine Straße zum Flush, und die **6♥ speziell** komplettiert einen **5-6-7-8-9 Straight Flush (#2)**, der alles schlägt. Wenn du gratis auf eine größere Hand ziehen kannst, spiel mit diesem Upgrade im Hinterkopf.
 
-==r:**Zwei Warnungen, die dazugehören.**== Erstens: Diese Straße ist **nicht die Nuts** – wer T-9 hält, macht bereits die höhere 10-9-8-7-6. Zweitens: Deine eigenen Herz-Karten sind nur **9♥ und 5♥**. Kommt am River ein Herz, teilen es alle – und wer zwei Herz-Karten mit einer höheren Spitze als deiner ==9♥== hält, schlägt dich mit demselben Flush. Dafür reicht schon ein einziges höheres Herz: A♥ 2♥ genügt. Das Upgrade ist real, aber es ist ==r:kein Freifahrtschein für einen großen Pot==.
+==r:**Zwei Warnungen, die dazugehören.**== Erstens: Diese Straße ist **nicht die Nuts** – wer T-9 hält, macht bereits die höhere 10-9-8-7-6. Zweitens: Deine höchste eigene Herz-Karte ist die ==9♥==. Kommt am River ein Herz, hat jeder Gegner mit zwei Herz-Karten denselben Flush – und schon ein einziges Herz über der Neun reicht ihm zum Sieg: A♥ 2♥ genügt. Das Upgrade ist real, aber es ist ==r:kein Freifahrtschein für einen großen Pot==.
 
 ### Situation 3 – Du hast den Flush, er zeigt eine Straße
 
@@ -121,7 +121,7 @@ Das Matchup, über das nach Flush vs Straße am meisten gestritten wird, ist **F
 
 :::hand[K♠,9♠,9♥,4♠,2♦] Board (5 Karten):::
 
-Du hältst **A♠ 5♠** für den Nut-Flush: **A♠ K♠ 9♠ 5♠ 4♠**. Dein Gegner hält **K♦ 9♦** und zeigt **9♦ 9♠ 9♥ K♦ K♠** – Neunen full of Kings. ==r:Full House schlägt Flush==, und kein Flush überlebt das. Auf einem ungepaarten Board wird dein Ace-High-Flush nur von einem Straight Flush geschlagen; in dem Moment, in dem das Board paart, kommen Full Houses und Vierlinge ins Spiel.
+Du hältst **A♠ 5♠** für den Nut-Flush: **A♠ K♠ 9♠ 5♠ 4♠**. Dein Gegner hält **K♦ 9♦** und zeigt **9♦ 9♠ 9♥ K♦ K♠** – Neunen über Könige. ==r:Full House schlägt Flush==, und kein Flush überlebt das. Auf einem ungepaarten Board wird dein Ace-High-Flush nur von einem Straight Flush geschlagen; in dem Moment, in dem das Board paart, kommen Full Houses und Vierlinge ins Spiel.
 
 Wenn zwei Spieler denselben Handtyp halten, entscheidet der Vergleich Karte für Karte über den Gewinner – das komplette System steht in den [Poker-Tie-Breaker- und Kicker-Regeln](/de/blog/holdem-tiebreak-rules).
 
@@ -186,7 +186,7 @@ Im **Short Deck (6+) Hold'em** werden die Zweien bis Fünfen aus dem Deck entfer
 
 **Q. Ist ein Flush oder eine Straße besser?**
 
-A. Ja. Ein Flush ist die #5-Hand und eine Straße die #6, also gewinnt ein Flush im Standard-Texas-Hold'em immer. Fünf Karten einer Farbe sind statistisch schwerer zu treffen als fünf in Folge, und die seltenere Hand rangiert immer höher.
+A. Der Flush. Er ist die #5-Hand und die Straße die #6, also gewinnt ein Flush im Standard-Texas-Hold'em immer. Fünf Karten einer Farbe sind statistisch schwerer zu treffen als fünf in Folge, und die seltenere Hand rangiert immer höher.
 
 **Q. Schlägt eine Straße einen Flush?**
 
@@ -194,7 +194,7 @@ A. Nein. Eine Straße (#6) schlägt im Standard-Texas-Hold'em nie einen Flush (#
 
 **Q. Wie viel seltener ist ein Flush als eine Straße?**
 
-A. Reine Mathematik. Eine Straße ignoriert die Farben, also gibt es etwa 10.200 Wege, eine zu treffen, gegenüber nur 5.108 Wegen zu einem Flush. Der Flush ist etwa doppelt so selten, und im Poker rangiert die seltenere Hand immer höher.
+A. Reine Mathematik. Eine Straße ignoriert die Farben, also gibt es etwa 10.200 Wege, eine zu treffen, gegenüber nur 5.108 Wegen zu einem Flush. Der Flush ist damit etwa doppelt so selten; über alle sieben Karten bis zum River bleibt ein Faktor von rund 1,5 (3,03% gegenüber 4,62%). Im Poker rangiert die seltenere Hand immer höher.
 
 **Q. Welche Hände sind höher als ein Flush?**
 
@@ -221,7 +221,7 @@ A. Nein. Eine Hand ist immer über der anderen eingestuft, also gewinnt der Flus
 ## Die Kernpunkte zum Mitnehmen
 
 1. **Flush (#5) schlägt Straße (#6)** – keine Ausnahmen im Standard-Hold'em.
-2. Er gewinnt, weil er etwa **doppelt so selten** ist: 5.108 Flush-Kombinationen vs 10.200 Straßen-Kombinationen.
+2. Er gewinnt, weil er seltener ist: **5.108** Flush- gegen **10.200** Straßen-Kombinationen unter den Fünf-Karten-Händen – über alle sieben Karten bis zum River 3,03% gegen 4,62%.
 3. Achte auf das Board: **drei einer Farbe** bedeuten, dass ein Flush möglich ist, ein **gepaartes Board** bedeutet, dass ein Full House deinen Flush schlagen kann, und suited *plus* verbunden ist ein Straight Flush.
 
 Zementiere die komplette Reihenfolge mit der [vollständigen Pokerhände-Reihenfolge](/de/blog/holdem-hand-rankings), lern im [Tie-Breaker- und Kicker-Guide](/de/blog/holdem-tiebreak-rules), wie knappe Hände entschieden werden, und wenn du ganz neu bist, verbindet der [Anfänger-Guide zu den Texas Hold'em Regeln](/de/blog/texas-holdem-rules-for-beginners) alles miteinander.

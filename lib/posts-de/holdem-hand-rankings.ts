@@ -76,13 +76,13 @@ Vor den Händen brauchst du die Kartenwerte. Nur zwei Dinge.
 
 **A > K > Q > J > 10 > 9 > 8 > 7 > 6 > 5 > 4 > 3 > 2**
 
-Das Ass ist die stärkste Karte und die einzige, die die Regeln biegt: Es spielt hoch (A-K-Q-J-10) *und* niedrig (A-2-3-4-5, das „Wheel“). Es kann nicht durch die Mitte herumlaufen – ==r:**K-A-2-3-4 ist keine Straße**==, und Q-K-A-2-3 oder J-Q-K-A-2 ebenso wenig. Das Ass verbindet nur abwärts ab der 5 oder aufwärts ab der Zehn.
+Das Ass ist die stärkste Karte und die einzige, die die Regeln beugt: Es spielt hoch (A-K-Q-J-10) *und* niedrig (A-2-3-4-5, das „Wheel“). Es kann nicht um die Ecke laufen – ==r:**K-A-2-3-4 ist keine Straße**==, und Q-K-A-2-3 oder J-Q-K-A-2 ebenso wenig. Das Ass verbindet nur abwärts ab der 5 oder aufwärts ab der Zehn.
 
 ### Farben-Reihenfolge beim Poker: Es gibt keine
 
 Im Standard-Texas-Hold'em **schlägt keine Farbe eine andere**. Anders als beim Skat oder beim Bridge gibt es keine Farb-Rangfolge: Pik, Herz, Karo und Kreuz sind exakt gleichwertig – Pik schlägt nicht Herz, und zwei identische Straßen in verschiedenen Farben teilen den Pot. Die Farbe zählt nur, um einen Flush zu *bilden*, nie um einen Gleichstand zu entscheiden. Haben zwei Spieler dieselben fünf Karten in verschiedenen Farben, wird der Pot geteilt – jedes Mal.
 
-Die Farbe entscheidet im Hold'em nicht einmal über den letzten Chip: Bleibt beim Chop einer übrig, geht er an den ersten **am Chop beteiligten** Spieler links vom Button – nicht einfach an den nächsten Sitz. In Stud-Spielen entscheidet darüber traditionell die höhere Farbe; ==r:einzelne Häuser handhaben das auch im Hold'em so – im Zweifel den Floor fragen.==
+Die Farbe entscheidet im Hold'em nicht einmal über den letzten Chip: Bleibt beim Chop einer übrig, geht er an den ersten **am Chop beteiligten** Spieler links vom Button – nicht einfach an den nächsten Sitz. In Stud-Spielen entscheidet darüber traditionell die höhere Farbe; ==r:einzelne Cardrooms handhaben das auch im Hold'em so – im Zweifel den Floor fragen.==
 
 ---
 
@@ -141,7 +141,7 @@ Die **Straßen-Regeln** in drei Zeilen:
 
 - **Die Nuts:** A-K-Q-J-10 („Broadway“) ist die höchste Straße.
 - **Das Wheel:** A-2-3-4-5 ist die niedrigste Straße (das Ass spielt niedrig).
-- **Verboten:** Sie kann nicht herumlaufen – K-A-2-3-4 und J-Q-K-A-2 sind keine Straßen.
+- **Verboten:** Sie kann nicht um die Ecke gehen – K-A-2-3-4 und J-Q-K-A-2 sind keine Straßen.
 
 Zwischen zwei Straßen gewinnt die mit der höheren obersten Karte.
 
@@ -234,7 +234,7 @@ Du hältst **Q♥ Q♦**. Was ist deine beste Hand?
 
 Du hältst **6♥ 2♣**. Das Board hat vier Herz.
 
-→ Deine 6♥ ist die fünfte Herzkarte, also denkst du „Flush“. Aber sieh dir die Folge an: **10♥ 9♥ 8♥ 7♥ 6♥** sind fünf Herzkarten *in Folge* – ein **Straight Flush mit Zehn hoch**, Hand #2. (Tausche die 6♥ gegen eine K♥, dann heißen die Herzkarten 7-8-9-10-K – nicht mehr verbunden, also bleibt nur ein Flush mit dem König als höchster Karte.) Prüfe immer, ob deine Flush-Karten auch *aufeinanderfolgend* sind, bevor du einen Straight Flush annimmst.
+→ Deine 6♥ ist die fünfte Herzkarte, also denkst du „Flush“. Aber sieh dir die Folge an: **10♥ 9♥ 8♥ 7♥ 6♥** sind fünf Herzkarten *in Folge* – ein **Straight Flush mit Zehn hoch**, Hand #2. (Tausche die 6♥ gegen eine K♥, dann sind deine fünf Herz 7-8-9-10-K – nicht mehr verbunden, also bleibt nur ein Flush mit dem König als höchster Karte.) Prüfe immer, ob deine Flush-Karten auch *aufeinanderfolgend* sind, bevor du einen Straight Flush annimmst.
 
 ### Aufgabe 3 – Wenn geteilt werden muss
 
@@ -277,7 +277,7 @@ Der Flush. Bei jedem Duell zwischen zwei *verschiedenen* Handtypen entscheidet a
 
 Die Rangfolge ist nicht willkürlich – sie ist ==reine Wahrscheinlichkeit==. ==g:**Je schwerer eine Hand zu treffen ist, desto höher steht sie.**== Ein Flush steht über einer Straße, weil es in einem Deck mit 52 Karten schlicht weniger Wege gibt, fünf Karten einer Farbe zu bilden, als fünf in Folge in beliebigen Farben. Dieses eine Prinzip erklärt die gesamte Rangfolge – sieh dir die genauen Zahlen im [Poker-Odds- und Wahrscheinlichkeits-Chart](/de/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp") an.
 
-Es erklärt auch die große Ausnahme, der du begegnen wirst: Im **Short Deck (6+) Hold'em**, wo die 2en bis 5en entfernt werden, werden Flushes schwerer als Full Houses – also schlägt dort ein ==r:**Flush ein Full House**==. Die Mathematik hat sich geändert, also hat sich die Reihenfolge geändert. Mehr zu den Unterschieden je Variante unten.
+Es erklärt auch die große Ausnahme, der du begegnen wirst: Im **Short Deck (6+) Hold'em**, wo die Zweien bis Fünfen entfernt werden, werden Flushes schwerer als Full Houses – also schlägt dort ein ==r:**Flush ein Full House**==. Die Mathematik hat sich geändert, also hat sich die Reihenfolge geändert. Mehr zu den Unterschieden je Variante unten.
 
 ---
 
@@ -405,7 +405,7 @@ A. Nur ein Straight Flush – und der kann hier nie ein Royal Flush sein, weil a
 
 **Q. Was ist höher – Pik oder Kreuz beim Poker?**
 
-A. Weder noch. Alle vier Farben sind im Texas Hold'em gleichwertig und machen eine Hand nie stärker. Zeigen zwei Spieler dieselben fünf Ränge in unterschiedlichen Farben, wird der Pot geteilt. Eine Farb-Rangfolge gibt es zwar, sie entscheidet aber nie über einen Pot – sie regelt nur Formalien. Die offiziellen WSOP-Regeln bestimmen damit zum Beispiel die Startposition des Dealer-Buttons (höchste Karte nach Rang **und Farbe**); den ungeraden Chip nach Farbe zu vergeben, ist dagegen Stud-Praxis.
+A. Weder noch. Alle vier Farben sind im Texas Hold'em gleichwertig und machen eine Hand nie stärker. Zeigen zwei Spieler dieselben fünf Ränge in unterschiedlichen Farben, wird der Pot geteilt. Für den Vergleich von Händen kennt Hold'em keine Farb-Rangfolge. Eine Reihenfolge der Farben taucht nur bei Formalien abseits des Pots auf: Wird ein **neuer Cash-Tisch** eröffnet, zieht jeder eine Karte, und die höchste nach Rang **und Farbe** bekommt den Button – im Turnier startet er dagegen im ersten Sitz rechts vom Dealer. Und den überzähligen Chip nach Farbe zu vergeben, ist Stud-Praxis.
 
 **Q. Was ist die niedrigste (schlechteste) Hand im Poker?**
 

@@ -101,12 +101,12 @@ Derselbe $50-Call, gegensätzliche Entscheidungen – und die Karten haben sich 
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Draw | Outs | Treffer % (1 Karte) | Nötiger Stack dahinter |
+| Draw | Outs | Treffer % (nächste Karte) | Nötiger Stack dahinter |
 |:---|:---:|:---:|:---:|
-| Flushdraw | 9 | 19,6% (Turn) | ~8–10× den Call |
-| Open-Ended-Straße | 8 | 17,4% (Turn) | ~8–10× den Call |
-| Set (Pocket Pair) | 2→Set | ~11,8% Flop | ~15–20× den Call |
-| Gutshot-Straße | 4 | 8,7% (Turn) | ~20×+ (selten lohnend) |
+| Flushdraw | 9 | 19,6% (Turn → River) | ~8–10× den Call |
+| Open-Ended-Straße | 8 | 17,4% (Turn → River) | ~8–10× den Call |
+| Set (Pocket Pair) | 2→Set | ~11,8% (Flop) | ~15–20× den Call |
+| Gutshot-Straße | 4 | 8,7% (Turn → River) | ~20×+ (selten lohnend) |
 
 </div>
 
@@ -196,7 +196,7 @@ A. Reverse Implied Odds sind die Chips, die du verlierst, wenn du deinen Draw ko
 
 **Q. Machen Implied Odds einen Gutshot spielbar?**
 
-A. Selten. Ein Gutshot trifft auf eine Karte am Turn nur in 8,7% der Fälle. Callst du damit $50 in einen $150-Pot, müsstest du am River noch rund $375 zusätzlich gewinnen – das Siebeneinhalbfache deines Calls, und zwar zusätzlich zum Pot, nicht als Stack-Vielfaches. Das lohnt praktisch nur mit sehr tiefen Stacks, zu den Nuts und gegen einen Gegner, der wirklich zahlt.
+A. Selten. Ein Gutshot trifft mit der nächsten Karte nur in 8,7% der Fälle. Callst du damit $50 in einen $150-Pot, müsstest du am River noch rund $375 zusätzlich gewinnen – das Siebeneinhalbfache deines Calls, und zwar zusätzlich zum Pot, nicht als Stack-Vielfaches. Das lohnt praktisch nur mit sehr tiefen Stacks, zu den Nuts und gegen einen Gegner, der wirklich zahlt.
 
 **Q. Gelten Implied Odds, wenn dein Gegner all-in ist?**
 

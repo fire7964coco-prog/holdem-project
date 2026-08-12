@@ -32,7 +32,7 @@ Die Hälfte eines Pots zu bekommen, von dem du sicher warst, ihn gewonnen zu hab
 
 :::stripe
 5 | Situationen, in denen ein Hold'em-Pot geteilt wird
-0 | Unentschieden, das beim Texas Hold'em je über die Farbe entschieden wurde
+0 | Unentschieden, die beim Texas Hold'em je über die Farbe entschieden wurden
 1 | Odd Chip – geht an den ersten am Chop beteiligten Sitz links vom Button
 :::
 
@@ -91,7 +91,7 @@ Das ist meine 8-8-8-A-K-Hand: meine J-10 und seine 5-2 spielten beide den Drilli
 
 > **Der Check:** Schlägt *deine* beste Fünf – mit mindestens einer Hole Card – die eigenen Fünf des Boards? Wenn ja, spielst du deine Hand. Wenn nicht, spielt das Board und du choppst wahrscheinlich. Die vollständige Methode, ein Board so zu scannen, steht in [wie du das Board liest und deine besten 5 findest](/de/blog/holdem-reading-the-board).
 
-:::tip[Wenn das Board spielt und jemand am River bettet: **automatisch zu folden ist hier falsch.** Die Chips im Pot gehören dir nicht mehr – ein Call, der sicher zum Chop führt, holt dir trotzdem die halbe Pot-Größe zurück. Rechne stattdessen mit der Frequenz: Bei einer Pot-Size-Bet lohnt der Call, wenn dein Gegner in etwa 2 von 3 Fällen ebenfalls nur das Board spielt, bei einer halben Pot-Bet reicht rund die Hälfte. Erst wenn er fast immer eine echte Hand hat, ist Folden richtig.]:::
+:::tip[Wenn das Board spielt und jemand am River bettet: **automatisch zu folden ist hier falsch.** Die Chips im Pot gehören dir nicht mehr – ein Call, der sicher zum Chop führt, holt dir trotzdem die halbe Pot-Größe zurück. Rechne stattdessen mit der Frequenz: Bei einer Pot-Size-Bet lohnt der Call, wenn dein Gegner in etwa 2 von 3 Fällen ebenfalls nur das Board spielt, bei einer halben Pot-Bet reicht rund die Hälfte. Das ist eine hohe Hürde: Hat dein Gegner bei einer Pot-Size-Bet öfter als in **einem Drittel** der Fälle eine echte Hand, ist Folden richtig – und genau das ist am River der Normalfall.]:::
 
 ---
 
@@ -126,7 +126,7 @@ Bei einem Three-Way-Chop mit zwei Odd Chips bekommen die zwei frühesten Sitze i
 
 Wenn jemand All-in ist, bilden die Chips einen ==**Hauptpot**== (alle sind berechtigt) plus einen oder mehrere ==**Nebenpots**== (nur die größeren Stacks, die weiter gesetzt haben). Jeder Pot wird ==**separat**== vergeben – oder gechoppt –, basierend auf der besten Hand unter den für diesen Pot berechtigten Spielern.
 
-Ein durchgerechnetes Beispiel: A ist All-in mit 100; B und C legen je 300 nach. Das ergibt einen **Hauptpot von 300** (100 × 3) und einen **Nebenpot von 400** (200 + 200, nur B und C). Das Board läuft A♦ J♥ 7♠ 4♣ 2♥ aus:
+Ein durchgerechnetes Beispiel: A ist All-in mit 100; B und C legen je 300 nach. Das ergibt einen **Hauptpot von 300** (100 × 3) und einen **Nebenpot von 400** (200 + 200, nur B und C). Das Board kommt A♦ J♥ 7♠ 4♣ 2♥:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:20px 0">
 

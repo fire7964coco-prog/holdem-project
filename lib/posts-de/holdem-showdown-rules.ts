@@ -4,8 +4,8 @@ export const POST: Post = {
   slug: "holdem-showdown-rules",
   title: "Showdown-Regeln beim Texas Hold'em: Wer zeigt zuerst, Mucken und Slow Rolling",
   seoTitle: "Wer dreht zuerst um? Showdown-Regeln & Mucken beim Hold'em",
-  desc: "Wer zeigt beim Showdown zuerst die Karten? Darf man ungezeigt mucken? Showdown-Regeln beim Hold'em – letzter Aggressor, Cards Speak, Slow Roll und All-in.",
-  tldr: "Beim Showdown zeigt zuerst, wer als Letzter gesetzt oder erhöht hat. Wurde der River durchgecheckt, zeigt der erste aktive Spieler links vom Button zuerst. Verlierst du, darfst du ungezeigt mucken – aber die Gegner können verlangen, eine gecallte Hand zu sehen.",
+  desc: "Wer zeigt beim Showdown zuerst die Karten? Darf man verdeckt mucken? Showdown-Regeln beim Hold'em – letzter Aggressor, Cards Speak, Slow Roll und All-in.",
+  tldr: "Beim Showdown zeigt zuerst, wer als Letzter gesetzt oder erhöht hat. Wurde der River durchgecheckt, zeigt der erste aktive Spieler links vom Button zuerst. Verlierst du, darfst du verdeckt mucken – aber wer die River-Bet gecallt hat, darf die Hand des Bettors sehen.",
   category: "rules",
   date: "2026-06-15",
   updated: "2026-08-10",
@@ -41,7 +41,7 @@ Die Regel hängt davon ab, wie die letzte Setzrunde geendet hat (den kompletten 
 |--------------------|-----------------|
 | Jemand hat am River gesetzt oder erhöht | ==Der Spieler, der zuletzt gesetzt oder erhöht hat==, zeigt zuerst |
 | Alle haben den River durchgecheckt | Der erste aktive Spieler links vom Dealer-Button zeigt zuerst |
-| All-in auf einer früheren Street, **und niemand kann mehr setzen** | Alle Hände werden ab diesem Moment offen hingelegt, dann läuft das Board aus. Können Mitspieler dagegen noch setzen, bleibt bis dahin alles verdeckt |
+| All-in auf einer früheren Street | Sobald niemand mehr setzen kann, werden alle Hände offen hingelegt und die restlichen Karten ausgeteilt – können Mitspieler noch setzen, bleibt bis dahin alles verdeckt |
 
 </div>
 
@@ -57,11 +57,11 @@ Ja – **wenn du verloren hast**.
 
 Sobald der letzte Aggressor seine Hand gezeigt hat, können die übrigen Spieler entweder:
 - **Ihre Hand zeigen**, wenn sie glauben zu gewinnen
-- **Verdeckt mucken**, wenn sie sehen, dass sie verloren haben – du musst deine Karten nicht aufdecken
+- **Verdeckt mucken**, wenn sie sehen, dass sie verloren haben – du musst deine Karten nicht aufdecken. Das gilt aber nur, solange niemand all-in war: Sobald ein Spieler all-in ist, werden nach ==TDA-Regel 16== alle beteiligten Hände getablet, und mucken darf dort niemand
 
-==r:Aber es gibt eine wichtige Ausnahme:== Wurde deine River-Bet gecallt, hat der Caller den vollen Preis bezahlt, um deine Hand zu sehen. Im Turnier zieht ==TDA-Regel 18== die Grenze eng: Wer am Showdown keine Karten mehr hat oder verdeckt gemuckt hat, verliert jedes Recht, eine fremde Hand sehen zu wollen. Ein unantastbares Recht hat nur, wer die River-Bet gecallt und seine Karten getablet oder behalten hat – und zwar auf die Hand des ==letzten Aggressors==, also auf die Hand, für die er bezahlt hat. Über alles Weitere entscheidet der Turnierleiter. In Cashgames legen viele Cardrooms die **„I want to see that hand“-Regel** großzügiger aus. (Nicht zu verwechseln mit „show one, show all“: Die besagt, dass jeder am Tisch deine Karten sehen darf, wenn du sie freiwillig einem einzelnen Spieler zeigst.)
+==r:Aber es gibt eine wichtige Ausnahme:== Wurde deine River-Bet gecallt, hat der Caller den vollen Preis bezahlt, um deine Hand zu sehen – er kann den Dealer bitten, eine schon gemuckte Hand aufzudecken. Das ist die **„I want to see that hand“-Regel**. Im Turnier zieht ==TDA-Regel 18== ihre Grenzen eng: Wer am Showdown keine Karten mehr hält oder verdeckt gemuckt hat, verliert das Recht, eine fremde Hand einzufordern. Unantastbar ist der Anspruch nur für den, der die River-Bet gecallt und seine Karten getablet oder behalten hat – und auch dann nur auf die Hand des ==letzten Aggressors==, also auf die Hand, für die er bezahlt hat. Über alles Weitere entscheidet der Turnierleiter. In Cashgames legen viele Cardrooms die Regel großzügiger aus. (Nicht zu verwechseln mit „show one, show all“: Die besagt, dass jeder am Tisch deine Karten sehen darf, wenn du sie freiwillig einem einzelnen Spieler zeigst.)
 
-Praktische Faustregel: ==Wurde dein Bluff gecallt, mucke schnell. Wurde deine Value-Bet gecallt, dreh deine Karten um.==
+Praktische Faustregel: ==Als letzter Aggressor drehst du um – auch den gecallten Bluff.== Verdeckt mucken ist die Option des **Callers**, der die Hand des Bettors schon gesehen hat. Wer selbst gesetzt hat und schnell muckt, verliert doppelt: Der Caller kann deine Hand ohnehin einfordern, und weil „cards speak“ gilt, ist schon mancher Pot weggeworfen worden, dessen Ass-hoch am Ende vorne lag.
 
 ---
 
@@ -103,7 +103,7 @@ Wie Side Pots entstehen und ausbezahlt werden, wenn Spieler All-in sind, liest d
 
 Verliest sich ein Spieler und sagt „Ich habe ein Paar“, obwohl er in Wirklichkeit eine Straße hält – dann gewinnt die Straße. Der Dealer liest die Karten und vergibt den Pot an die beste gezeigte Hand.
 
-Das gilt in beide Richtungen. Wenn du glaubst, verloren zu haben, und ungezeigt muckst, obwohl deine Hand gewonnen hätte – ==r:ist der Pot weg==. Deine Hand ist tot, sobald sie den Muck berührt. Lass den Dealer immer deine Hand lesen, bevor du muckst, wenn du nicht zu 100% sicher bist, dass du verloren hast.
+Das gilt in beide Richtungen. Wenn du glaubst, verloren zu haben, und verdeckt muckst, obwohl deine Hand gewonnen hätte – ==r:ist der Pot weg==. Tot ist deine Hand erst, wenn der Dealer sie in den Muck geschoben hat und sie nicht mehr eindeutig identifizierbar ist – verdeckt abgelegte Karten sind nach ==TDA-Regel 14== nicht automatisch tot. Verlass dich trotzdem nie darauf. Lass den Dealer immer deine Hand lesen, bevor du muckst, wenn du nicht zu 100% sicher bist, dass du verloren hast.
 
 Echte Situation: Du hältst J♥ 10♥ auf einem Board mit Q♥ 9♥ 8♥ 2♣ 5♦. Du hast einen Straight Flush bis zur Dame (Q-J-10-9-8 in Herz). Dein Gegner zeigt K♣ Q♦ (ein Paar Damen). Du gewinnst haushoch. Mucke nicht, nur weil du seine Dame siehst.
 
@@ -151,7 +151,7 @@ In den meisten Cardrooms kannst du den Dealer bitten, eine gemuckte Hand aufzude
 
 ### Fehler 4: Nicht wissen, dass man früher zeigen darf
 
-Keine Regel verbietet dir, deine Hand umzudrehen, bevor du offiziell an der Reihe bist. ==g:Hast du die Nuts oder eine sehr starke Hand, zeig sofort.== Die anderen Spieler wissen das zu schätzen. Es beschleunigt das Spiel. Und es ist das Gegenteil von Slow Rolling.
+Beim Showdown – also sobald alle Einsätze abgeschlossen sind – verbietet dir keine Regel, deine Hand umzudrehen, bevor du offiziell an der Reihe bist. Läuft die Hand dagegen noch und steht irgendwo eine Aktion aus, gilt das Gegenteil: Karten zu zeigen kostet nach ==WSOP Rule 117== eine Strafe. ==g:Hast du die Nuts oder eine sehr starke Hand, zeig sofort.== Die anderen Spieler wissen das zu schätzen. Es beschleunigt das Spiel. Und es ist das Gegenteil von Slow Rolling.
 
 ---
 
@@ -168,7 +168,7 @@ A. Der Spieler, der in der letzten Setzrunde die letzte aggressive Aktion gemach
 
 **Q. Muss man seine Karten zeigen, wenn man beim Showdown gecallt wird?**
 
-A. Ja – warst du am River der letzte, der gesetzt oder erhöht hat, musst du nach dem Call zuerst zeigen. Hast du die Bet eines anderen gecallt, darfst du nach dem Blick auf seine Hand verdeckt mucken, wenn du verloren hast. Allerdings darf im Turnier nach ==TDA-Regel 18== nur derjenige eine Hand sehen wollen, der selbst noch Karten hält oder sie getablet hat – und das unantastbare Recht gilt allein der Hand des letzten Aggressors am River. In Cashgames sind viele Cardrooms großzügiger.
+A. Ja – warst du am River der Letzte, der gesetzt oder erhöht hat, musst du nach dem Call zuerst zeigen. Hast du die Bet eines anderen gecallt, darfst du nach dem Blick auf seine Hand verdeckt mucken, wenn du verloren hast – es sei denn, jemand war all-in: Dann muss nach ==TDA-Regel 16== auch der Caller tablen. Allerdings darf im Turnier nach ==TDA-Regel 18== nur derjenige verlangen, eine Hand zu sehen, der selbst noch Karten hält oder sie getablet hat – und das unantastbare Recht gilt allein der Hand des letzten Aggressors am River. In Cashgames sind viele Cardrooms großzügiger.
 
 **Q. Muss ich allen meine Karten zeigen, wenn ich sie einem Spieler zeige?**
 

@@ -53,11 +53,11 @@ Jede einzelne Entscheidung am Pokertisch ist eine dieser fünf:
 | Check | Nur, wenn vor dir kein offener Einsatz steht (preflop: nur als Big Blind) | Kostenlos – du schiebst, ohne Chips zu legen |
 | Call | Nachdem jemand gesetzt oder erhöht hat | Du gehst den aktuellen Einsatz exakt mit |
 | Bet | Der erste Einsatz der Runde | Frei wählbarer Betrag (Minimum = 1 Big Blind) |
-| Raise | Nachdem jemand gesetzt hat | Mindestens die Größe des vorherigen Bets oder Raises obendrauf |
+| Raise | Nachdem jemand gesetzt hat | Mindestens die Größe der vorherigen Bet oder des vorherigen Raises obendrauf |
 
 ==All-in== zu gehen ist keine separate sechste Aktion – es ist eine Bet, ein Call oder ein Raise mit allen Chips, die dir noch bleiben. Mehr dazu weiter unten.
 
-Die wichtigste Regel, die Anfänger übersehen: ==r:Du kannst nicht mehr checken, sobald jemand gesetzt hat==. In dem Moment, in dem Chips in den Pot wandern, schrumpfen deine Optionen auf Fold, Call oder Raise.
+Die wichtigste Regel, die Anfänger übersehen: ==r:Du kannst nicht mehr checken, sobald vor dir ein offener Einsatz steht==. In dem Moment, in dem Chips im Pot liegen, die du noch nicht bezahlt hast, schrumpfen deine Optionen auf Fold, Call oder Raise.
 
 ---
 
@@ -104,7 +104,7 @@ Echtes Beispiel: Du bist am Flop mit K♠ 8♦. Niemand hat gesetzt, also ==chec
 
 Folden heißt, dass du deine Karten aufgibst und aus der Hand aussteigst. Du zahlst nichts Neues, aber ==r:jeder Chip, den du bereits gelegt hast, bleibt im Pot==.
 
-Ja – wenn du an der Reihe bist, kannst du jederzeit folden, sogar bevor du irgendetwas gesetzt hast, und der Fold ist dann bindend. Folgenlos ist er trotzdem nicht: Im Turnier gilt ein Fold, obwohl vor dir gar kein Einsatz steht, nach ==WSOP Rule 84== als „Non-Standard Fold“ und kann verwarnt werden. Und genau da lauert die Falle: **Zu folden, wenn du gratis checken könntest, heißt eine Hand ohne Grund wegzuwerfen.** Wenn niemand gesetzt hat, check einfach.
+Ja – wenn du an der Reihe bist, kannst du jederzeit folden, sogar bevor du irgendetwas gesetzt hast, und der Fold ist dann bindend. Folgenlos ist er trotzdem nicht: Im Turnier gilt ein Fold, obwohl vor dir gar kein Einsatz steht, nach ==WSOP Rule 84== als „Non-Standard Fold“ – und dafür kannst du verwarnt werden. Und genau da lauert die Falle: **Zu folden, wenn du gratis checken könntest, heißt eine Hand ohne Grund wegzuwerfen.** Wenn niemand gesetzt hat, check einfach.
 
 Eine Regel der Live-Etikette: Folde nicht ==außer der Reihe==. Warte, bis die Action bei dir ankommt – wer zu früh foldet, gibt den noch überlegenden Spielern Informationen, und die meisten Cardrooms verwarnen oder bestrafen das. Zu wissen, *wann* der Fold der richtige Spielzug ist, ist eine eigene Fähigkeit für sich – das behandelt [wann du beim Poker folden solltest](/de/blog/holdem-when-to-fold).
 
@@ -112,12 +112,12 @@ Eine Regel der Live-Etikette: Folde nicht ==außer der Reihe==. Warte, bis die A
 
 ## Was ist ein Min-Raise? Bet- und Raise-Regeln im Texas Hold'em
 
-![Infografik zur Min-Raise-Regel beim Poker: Eine Bet von €6 verlangt einen Raise auf mindestens €12, und ein Preflop-Raise auf €6 verlangt einen Min-Re-Raise auf €10](/images/holdem-betting-actions-min-raise.webp "Die Min-Raise-Regel – jeder Raise muss mindestens die Größe des letzten Bets oder Raises obendrauf legen")
+![Infografik zur Min-Raise-Regel beim Poker: Eine Bet von €6 verlangt einen Raise auf mindestens €12, und ein Preflop-Raise auf €6 verlangt einen Min-Re-Raise auf €10](/images/holdem-betting-actions-min-raise.webp "Die Min-Raise-Regel – jeder Raise muss mindestens die Größe der letzten Bet oder des letzten Raises obendrauf legen")
 
 Im No-Limit Hold'em (dem Format, das du fast immer spielen wirst):
 
 - **Mindest-Bet**: 1 Big Blind
-- **Mindest-Raise (der Min-Raise)**: mindestens ==die Größe des vorherigen Bets oder Raises== obendrauf
+- **Mindest-Raise (der Min-Raise)**: mindestens ==die Größe der vorherigen Bet oder des vorherigen Raises== obendrauf
 - **Maximum**: dein gesamter Stack – das ist das „No Limit“
 
 Zwei durchgerechnete Beispiele:
@@ -127,11 +127,13 @@ Zwei durchgerechnete Beispiele:
 | Flop | Spieler setzt €6 | €6 mehr → €12 gesamt |
 | Preflop (Blinds €1/€2) | Spieler raist auf €6 (ein Raise von €4 über den €2-Blind) | €4 mehr → €10 gesamt |
 
-Der entscheidende Punkt: Der Min-Raise richtet sich nach dem ==Inkrement== des letzten Bets oder Raises, nicht nach dem Big Blind. Preflop zählt der Big Blind als Eröffnungsbet – deshalb ist der kleinste Open-Raise ein Raise auf 2 Big Blinds.
+Verschätzt du dich, entscheidet die 50-Prozent-Marke: Ein Raise von ==50% oder mehr== der vorherigen Bet, der den Min-Raise trotzdem verfehlt, wird im Turnier nach ==Rule 95== auf den vollen Min-Raise **aufgestockt** – du zahlst also mehr, als du wolltest. Unter 50% wird daraus schlicht ein Call.
+
+Der entscheidende Punkt: Der Min-Raise richtet sich nach dem ==Inkrement== der letzten Bet oder des letzten Raises, nicht nach dem Big Blind. Preflop zählt der Big Blind als Eröffnungsbet – deshalb ist der kleinste Open-Raise ein Raise auf 2 Big Blinds.
 
 Zwei Live-Poker-Regeln, die zum Raisen dazugehören:
 
-1. **Sag „Raise“, bevor du Chips bewegst.** Erst „Call“ sagen und dann mehr nachschieben? Das Extra ist ein ==String Bet==, und die Dealer in den meisten Cardrooms werten es als Call.
+1. **Sag „Raise“, bevor du Chips bewegst.** Erst „Call“ sagen und dann mehr nachschieben? Deine Ansage war in dem Moment schon bindend (==Rule 90.d==) – das Extra zählt nicht. Der echte ==String Bet== ist etwas anderes: Chips in mehreren Bewegungen nachschieben, **ohne** vorher „Raise“ anzusagen (==Rule 103==).
 2. **Eine Bewegung.** Wenn du nichts ansagst, müssen deine Chips in einer einzigen Vorwärtsbewegung in den Pot.
 
 Wie *viel* du raisen solltest (2,5x-Opens, 3x bei 3-Bets, Sizing nach Board-Textur), ist Strategie, keine Regelkunde – das gehört in die [Strategie-Säule zum Texas Hold'em](/de/blog/holdem-strategy).
@@ -147,7 +149,7 @@ Zwei Grenzen gelten trotzdem:
 - Jeder Re-Raise muss die ==Min-Raise-Inkrement-Regel== von oben erfüllen
 - ==r:Du kannst deinen eigenen Einsatz nicht raisen.== Wenn du setzt und alle nur callen, endet die Runde – du darfst nur dann erneut raisen, wenn dich vorher jemand *selbst* raist
 
-In **Fixed-Limit**-Spielen ist jede Runde gedeckelt (ein „gecappter“ Pot). Die WSOP-Turnierregeln setzen den Deckel bei ==einer Bet plus vier Raises== (Rule 100.b) – und die Ausnahme läuft anders, als die meisten erwarten: ==r:Der Deckel bleibt stehen, auch wenn in der Hand nur noch zwei Spieler sitzen==. Er fällt erst, wenn im **ganzen Turnier** nur noch zwei Spieler übrig sind. In Cashgames setzen viele Cardrooms den Deckel niedriger an und heben ihn auf, sobald die Hand heads-up wird – Hausregeln variieren, frag also den Dealer.
+In **Fixed-Limit**-Spielen ist jede Runde gedeckelt (ein „gecappter“ Pot). Die WSOP-Turnierregeln setzen den Deckel bei ==einer Bet plus vier Raises== (Rule 100.b) – und die Ausnahme läuft anders, als die meisten erwarten: ==r:Der Deckel bleibt stehen, auch wenn in der Hand nur noch zwei Spieler sitzen==. Er fällt erst, wenn im **ganzen Turnier** nur noch zwei Spieler übrig sind. In Cashgames gelten oft andere Hausregeln – manche Räume deckeln früher, andere heben den Deckel auf, sobald die Hand heads-up wird. Frag im Zweifel den Dealer.
 
 ---
 
@@ -179,7 +181,7 @@ Ich spiele ein wöchentliches Low-Stakes-Live-Game, und dieselben Action-Fehler 
 
 ### Fehler 1 – Callen, wenn du checken könntest
 
-Am Flop ist er als Erster dran, niemand hat gesetzt, und ein neuer Spieler schiebt Chips rein, „um zu callen“. Da ist nichts zu callen – und wie es ausgeht, hängt davon ab, *wie* er es tut: Wortlos rausgeschobene Chips zählen als ==Bet== (Rule 99), während ein angesagtes „Call“ ohne Einsatz davor nach ==Rule 90.b.1== schlicht als Check gewertet wird. Wenn die Street noch nicht eröffnet ist: checken und die Karte gratis sehen.
+Am Flop ist er als Erster dran, niemand hat gesetzt, und ein neuer Spieler schiebt **wortlos** Chips rein, „um zu callen“. Da ist nichts zu callen: Einsätze erfolgen nach ==WSOP Rule 90.a== durch Ansage *oder* durch Herausschieben von Chips – er hat also gerade gesetzt, ohne es zu wollen. Hätte er „Call“ *angesagt*, wäre daraus nach ==Rule 90.b.1== schlicht ein Check geworden. Wenn die Street noch nicht eröffnet ist: checken und die Karte gratis sehen.
 
 ### Fehler 2 – Der String Raise
 
@@ -191,7 +193,7 @@ Alle limpen nur, die Action erreicht den Big Blind – und er foldet. Das ist ei
 
 ### Fehler 4 – Der stumme einzelne Chip
 
-Ein Spieler steht vor einem €10-Bet und wirft wortlos einen einzelnen €100-Chip rein – in der Erwartung von Wechselgeld *und* einem Raise. In den meisten Cardrooms besagt die ==One-Chip-Regel==: Ein unangesagter, einzelner überdimensionierter Chip ist nur ein Call. Sag „Raise“, wenn du raisen willst.
+Ein Spieler steht vor einem €10-Bet und wirft wortlos einen einzelnen €100-Chip rein – in der Erwartung von Wechselgeld *und* einem Raise. Die ==One-Chip-Regel== steht so in den WSOP-Regeln (==Rule 97==): Ein unangesagter, einzelner überdimensionierter Chip ist nur ein Call. Willst du raisen, muss „Raise“ fallen, **bevor der Chip die Tischfläche berührt**. Und Wechselgeld über die Setzaktion zu holen, ist ohnehin unerwünscht (==Rule 99==).
 
 ---
 
@@ -232,7 +234,7 @@ A. Das hängt von der Größe des All-ins ab. Ist das All-in ein voller, legaler
 
 **Q. Was ist ein String Bet beim Poker?**
 
-A. Chips in mehreren Bewegungen nachzuschieben oder „Call“ zu sagen und dann einen Raise draufzulegen, ohne vorher „Raise“ anzusagen. Dealer werten String Bets als Call des ursprünglichen Betrags. Sag deine Aktion laut an oder beweg alle Chips in einer Bewegung.
+A. Chips in mehreren Bewegungen nachzuschieben, ohne vorher „Raise“ anzusagen (==Rule 103==). Dealer werten String Bets als Call des ursprünglichen Betrags. Sagst du dagegen erst „Call“ und legst dann nach, ist das kein String Bet, sondern eine bindende Ansage (==Rule 90.d==) – der Effekt ist derselbe. Sag deine Aktion laut an oder beweg alle Chips in einer Bewegung.
 
 **Q. Was bedeutet Limpen beim Poker?**
 
