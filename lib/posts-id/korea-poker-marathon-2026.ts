@@ -4,11 +4,11 @@ export const POST: Post = {
   slug: "korea-poker-marathon-2026",
   title: "Korea Run + Play 2026 — Maraton & Poker dalam Satu Perjalanan",
   seoTitle: "Poker & Maraton Korea 2026 — Panduan Chuncheon, JTBC + Paradise City",
-  desc: "Lari di Chuncheon atau JTBC Seoul saat cuaca sempurna Okt–Nov, lalu main poker di Paradise City. Kalender 2026 lengkap + panduan registrasi pelari asing.",
+  desc: "Untuk 2026 hanya JTBC Seoul yang masih membuka pendaftaran — Chuncheon dan YTN sudah tutup. Kalender lomba, jendela registrasi, dan poker di Paradise City sekaligus.",
   tldr: "Maraton musim gugur terbaik Korea (Chuncheon 25 Okt, JTBC Seoul 1 Nov, Garmin Run 15 Nov) berpadu dengan cuaca lari yang sempurna. Paradise City Casino dekat Bandara Incheon menggelar cash game sepanjang tahun — khusus warga asing, 10 menit dari terminal. Satu perjalanan mencakup keduanya.",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-07-03",
+  updated: "2026-08-13",
   keepImagesInBody: true,
   readTime: "14 mnt",
   emoji: "🏃",
@@ -66,9 +66,9 @@ Alasannya tidak rumit. Ini soal waktu dan lokasi.
 | Lomba | Tanggal | Jarak | Lokasi | Registrasi Asing | Status |
 |---|---|---|---|---|---|
 | Dong-A Seoul International Marathon | Mar 2026 | Full, 10K | Seoul | [dongamarathon.com](https://www.dongamarathon.com) | Selesai untuk 2026 |
-| ==**YTN Seoul Tour Marathon**== | ==**6 Sep**== | Half, 10K | Seoul Plaza | [run.ytn.co.kr](http://run.ytn.co.kr) | Tutup 15 Jul |
+| ==**YTN Seoul Tour Marathon**== | ==**6 Sep**== | ==**11KM**==, Half | Seoul Plaza | [run.ytn.co.kr](http://run.ytn.co.kr) | Tutup — penuh lebih awal, 26 Jun |
 | ==g:**Chuncheon Marathon**== | ==g:**25 Okt**== | ==g:Full, 10K== | ==g:Chuncheon== | ==g:[chuncheonmarathon.com](https://www.chuncheonmarathon.com)== | ==g:Dibuka sekarang== |
-| ==**JTBC Seoul Marathon**== | ==**1 Nov**== | Full, 10K | Seoul (Sangam) | [worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon) | Kuota asing (cepat penuh) |
+| ==**JTBC Seoul Marathon**== | ==**1 Nov**== | Full, 10K | Seoul (Sangam) | [worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon) | ==g:Buka== — kuota asing terbatas, daftar lebih awal |
 | Garmin Run Korea | 15 Nov | Half, 10K | Goyang | [runable.me](http://runable.me/product/18977?comp=18962) | Dibuka 1–3 Jul |
 
 </div>
@@ -85,7 +85,7 @@ Alasannya tidak rumit. Ini soal waktu dan lokasi.
 
 ==**Chuncheon**== (춘천) adalah kota kecil ~80–90 menit di timur Seoul dengan kereta ekspres, terletak di pertemuan dua sungai di sebuah lembah pegunungan di Provinsi Gangwon. Orang Korea menyebutnya "romantis". Maraton yang digelarnya adalah salah satu yang paling dihormati di Asia.
 
-**Lombanya:** Didirikan pada 1946 — maraton tertua kedua di Korea. ==g:Lintasan internasional bersertifikat AIMS== — standar global di bawah World Marathon Majors. Full 42.195K + 10K. Start di Gongjicheon Bridge, pukul 9:00 pagi. Lintasan mengelilingi ==**Danau Uiam**== (의암호), sebuah waduk yang dikelilingi pegunungan yang berganti warna di akhir Oktober. Suhu di hari lomba biasanya berkisar 8–14°C — kondisi yang melahirkan rekor pribadi.
+**Lombanya:** Didirikan pada 1946 — maraton tertua kedua di Korea. ==g:lintasan yang diukur dan disertifikasi secara internasional== (AIMS). Full 42.195K + 10K. Start di Gongjicheon Bridge, pukul 9:00 pagi. Lintasan mengelilingi ==**Danau Uiam**== (의암호), sebuah waduk yang dikelilingi pegunungan yang berganti warna di akhir Oktober. Suhu di hari lomba biasanya berkisar 8–14°C — kondisi yang melahirkan rekor pribadi.
 
 ![Pelari dengan bib lomba di taman Korea musim gugur — dedaunan oranye dan merah membentang di sepanjang lintasan, cahaya pagi](/images/korea-poker-marathon-2026-marathon-race.webp)
 
@@ -100,7 +100,7 @@ Alasannya tidak rumit. Ini soal waktu dan lokasi.
 4. Registrasi lintasan Full: 14 Jul, pukul 2 siang KST. Jendela pembayaran: 20–21 Jul
 5. Registrasi 10K: 16 Jul, pukul 2 siang KST. Jendela pembayaran: 22–23 Jul
 
-==r:Slot terjual habis dalam kurang dari 3 menit tahun lalu. Siapkan nomor paspor dan metode pembayaran Anda sebelum jendela dibuka.==
+==r:Pada 2026 slot terjual habis dalam kurang dari 3 menit. Untuk 2027: siapkan nomor paspor dan metode pembayaran sebelum jendela dibuka — jendela 2026 sudah ditutup pada Juli.==
 
 **Cara menuju ke sana dari Seoul:** Kereta ekspres ITX-Cheongchun dari Stasiun Yongsan → Chuncheon, ~80–90 menit, ~₩8.800. Atau subway 경의중앙선 ke Cheongnyangni, lalu jalur Chuncheon (~100 menit total, lebih murah). Terjangkau, indah, tanpa perlu mobil.
 
@@ -126,7 +126,7 @@ Pelari asing yang tinggal di luar Korea mendaftar khusus melalui ==**[worldsmara
 
 ==g:Kuota asing JTBC terbatas — daftar lebih awal sebelum penuh.==
 
-**Setelah lomba → poker:** Lintasan JTBC berakhir di pusat Seoul. Dari Stasiun Seoul (atau Hongdae), naik AREX All-Stop → antar-jemput Paradise City dari T1. ~1 jam total. Sebagian besar pelari finis jauh sebelum tengah hari — sesi cash game sore hari sangat realistis.
+**Setelah lomba → poker:** Full marathon finis di ==Olympic Park== (Songpa, Jalur 5/8). Dari sana naik subway ke Stasiun Seoul atau Hongdae, lalu AREX All-Stop → antar-jemput Paradise City dari T1. Siapkan ==**1,5–2 jam**== dari garis finis, belum termasuk mandi dan ganti baju. Sebagian besar peserta finis antara pukul 12 dan 1 — sesi cash game sore menjelang malam realistis; kalau tengah hari, tidak.
 
 ---
 
@@ -152,11 +152,12 @@ Goyang berjarak ~50 menit dari pusat Seoul dengan subway (Jalur 3, arah Daehwa m
 Bagi yang tiba pada September, ==**YTN Seoul Tour Marathon**== berlangsung dari ==**Seoul Plaza**== (서울광장) — tepat di depan Balai Kota, dengan Istana Deoksugung dan cakrawala pusat kota sebagai latar.
 
 - Tanggal: 6 September 2026, start pukul 7:30 pagi
-- Jarak: Half · 10K
+- Jarak: ==**11KM**== · Half — ==r:di sini tidak ada nomor 10K==
+- Biaya: 11KM ₩70.000 · Half ₩80.000
 - Start: Seoul Plaza (area Balai Kota)
 - Penyelenggara: YTN
 - Situs web: [run.ytn.co.kr](http://run.ytn.co.kr)
-- Registrasi: 17 Jun – 15 Jul (tutup)
+- Registrasi: 17 Jun – 10 Jul di atas kertas, tapi ==r:sudah penuh dan ditutup lebih awal pada 26 Jun== (siapa cepat dia dapat)
 
 Catatan: Panas musim panas Korea memuncak pada Agustus. September masih hangat (20–28°C), dengan kelembapan mereda menjelang akhir bulan. Jarak Half lebih mudah ditangani daripada Full dalam kondisi ini.
 
@@ -203,7 +204,7 @@ Di sinilah kalendernya jadi menarik. Tiga festival poker berlangsung di venue-ve
 
 ==**Pulau Jeju**== adalah destinasi resor domestik paling populer di Korea — garis pantai vulkanik, iklim subtropis, tanpa visa untuk sebagian besar kewarganegaraan. Turnamen ini berlangsung di ==**LES A Casino**== di dalam Jeju Shinhwa World.
 
-- **Garansi:** ==g:$3.5M+ total GTD di 136 event trofi== (buy-in Main Event TBA)
+- **Garansi:** ==g:$3.5M+ total GTD di 136 event trofi== (Main Event: buy-in ==**KRW 2,7 juta**== ≈ $1.800, ==g:KRW 2,2 miliar GTD==)
 - **Jadwal lengkap:** Sudah dirilis — 136 event selama 13 hari · [theasianpokertour.com](https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/info)
 - Khusus warga asing · 19+ · paspor non-Korea yang berlaku
 
@@ -217,7 +218,7 @@ Di sinilah kalendernya jadi menarik. Tiga festival poker berlangsung di venue-ve
 
 ==**1 Nov adalah hari lomba JTBC sekaligus Day 3 dari festival GOP.**==
 
-Bagi pemain yang sudah berada di Korea untuk turnamen: pagi lomba adalah alarm pukul 7, 42K melewati pusat Seoul, finis di Olympic Park menjelang tengah hari. Kembali ke Paradise City pukul 2 siang. Meja poker masih berjalan. Ini benar-benar bisa dilakukan — dan praktis tidak ada yang menulis soal tumpang tindih ini.
+Bagi pemain yang sudah berada di Korea untuk turnamen: pagi lomba berarti alarm pukul 6 (start pukul 8, kumpul sekitar sejam sebelumnya), 42K melewati pusat Seoul, finis di Olympic Park. ==r:Kalau Anda finis di bawah 4 jam==, tengah hari sudah selesai dan sore menjelang malam bisa duduk di meja Paradise City. Dengan 4:30–5:00 — dan batas waktunya 5 jam — ini jadi acara malam. Mejanya buka 24 jam, jadi keduanya tetap muat dalam satu hari. Praktis tidak ada yang menulis soal tumpang tindih ini.
 
 - **Tanggal:** 30 Oktober – 8 November 2026
 - **Venue:** Paradise City Casino, Incheon (antar-jemput gratis dari ICN Terminal 1)
@@ -289,7 +290,7 @@ Untuk gambaran turnamen lengkap (APT Incheon berlangsung 7–16 Agustus dengan G
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">6 Sep</td>
       <td style="padding:9px 12px">🏃 YTN Seoul Tour Marathon</td>
       <td style="padding:9px 12px">Seoul Plaza</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">Half · 10K · 7:30 pagi · Reg. tutup</td>
+      <td style="padding:9px 12px;color:var(--muted-foreground)">11KM · Half · 7:30 pagi · Reg. tutup</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">25 Sep–7 Okt</td>
@@ -345,7 +346,7 @@ Rangkaian ganda paling mulus: APT Incheon (7–16 Agu) → istirahat di Seoul �
 
 ## Contoh Itinerari — Cara Menggabungkan Keduanya
 
-**Opsi A: APT Incheon + JTBC Seoul (menginap lama)**
+**Opsi A: APT Incheon + JTBC Seoul (menginap lama) — ==r:rencanakan untuk 2027==, start 7 Agu sudah lewat**
 
 | Hari | Rencana |
 |---|---|

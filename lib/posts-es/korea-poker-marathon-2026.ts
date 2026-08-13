@@ -4,12 +4,12 @@ export const POST: Post = {
   slug: "korea-poker-marathon-2026",
   title: "Corre y juega en Corea 2026 — maratones y póker en un solo viaje",
   seoTitle: "Póker y maratón Corea 2026 — Chuncheon, JTBC y Paradise City",
-  desc: "Corre el maratón de Chuncheon o el JTBC de Seúl con el clima perfecto de oct–nov y juega al póker en Paradise City. Calendario 2026 + registro extranjeros.",
+  desc: "En 2026 solo el JTBC de Seúl sigue aceptando inscripciones — Chuncheon y YTN ya cerraron. Calendario, plazos de registro y póker en Paradise City en un solo viaje.",
   tldr: "Los grandes maratones de otoño de Corea (Chuncheon 25 oct, JTBC Seúl 1 nov, Garmin Run 15 nov) coinciden con el clima ideal para correr. El casino Paradise City, junto al aeropuerto de Incheon, ofrece cash games todo el año — solo extranjeros, a 10 min de la terminal. Un viaje cubre ambas cosas.",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-07-25",
-  masterUpdated: "2026-07-25",
+  updated: "2026-08-13",
+  masterUpdated: "2026-08-13",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏃",
@@ -67,9 +67,9 @@ El argumento no es complicado. Es cuestión de fechas y ubicación.
 | Carrera | Fecha | Distancia | Ubicación | Registro extranjeros | Estado |
 |---|---|---|---|---|---|
 | Maratón Internacional Dong-A de Seúl | Mar 2026 | Completo, 10K | Seúl | [dongamarathon.com](https://www.dongamarathon.com) | Finalizado en 2026 |
-| ==**YTN Seoul Tour Marathon**== | ==**6 sep**== | Medio, 11K | Seoul Plaza | [run.ytn.co.kr](http://run.ytn.co.kr) | Cerrado el 10 jul |
+| ==**YTN Seoul Tour Marathon**== | ==**6 sep**== | ==**11KM**==, Medio | Seoul Plaza | [run.ytn.co.kr](http://run.ytn.co.kr) | Cerrado — se llenó el 26 jun |
 | ==g:**Maratón de Chuncheon**== | ==g:**25 oct**== | ==g:Completo, 10K== | ==g:Chuncheon== | ==g:[chuncheonmarathon.com](https://www.chuncheonmarathon.com)== | ==g:Inscripción cerrada (agotado)== |
-| ==**JTBC Seoul Marathon**== | ==**1 nov**== | Completo, 10K | Seúl (Sangam) | [worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon) | Cupo extranjeros (se llena pronto — consulta) |
+| ==**JTBC Seoul Marathon**== | ==**1 nov**== | Completo, 10K | Seúl (Sangam) | [worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon) | ==g:Abierto== — cupo de extranjeros limitado, inscríbete pronto |
 | Garmin Run Korea | 15 nov | Medio, 10K | Goyang | [runable.me](http://runable.me/product/18977?comp=18962) | Cerrado (reg. fue 1–3 jul) |
 
 </div>
@@ -86,7 +86,7 @@ El argumento no es complicado. Es cuestión de fechas y ubicación.
 
 ==**Chuncheon**== (춘천) es una pequeña ciudad a ~80–90 minutos al este de Seúl en tren exprés, ubicada en la confluencia de dos ríos, en un valle montañoso de la provincia de Gangwon. Los coreanos la llaman "romántica". El maratón que acoge es uno de los más respetados de Asia.
 
-**La carrera:** fundada en 1946 — el segundo maratón más antiguo de Corea. ==g:Recorrido internacional certificado por AIMS== — el estándar global justo por debajo de los World Marathon Majors. Completo de 42.195K + 10K. Salida en el puente de Gongjicheon, 9:00. El recorrido rodea el ==**lago Uiam**== (의암호), un embalse rodeado de montañas que cambian de color a finales de octubre. La temperatura el día de carrera suele rondar los 8–14 °C — condiciones que producen marcas personales.
+**La carrera:** fundada en 1946 — el segundo maratón más antiguo de Corea. ==g:recorrido medido y certificado internacionalmente== (AIMS). Completo de 42.195K + 10K. Salida en el puente de Gongjicheon, 9:00. El recorrido rodea el ==**lago Uiam**== (의암호), un embalse rodeado de montañas que cambian de color a finales de octubre. La temperatura el día de carrera suele rondar los 8–14 °C — condiciones que producen marcas personales.
 
 ![Corredores con dorsales en un parque coreano en otoño — follaje naranja y rojo bordeando el recorrido, luz de la mañana](/images/korea-poker-marathon-2026-marathon-race.webp)
 
@@ -101,7 +101,7 @@ El argumento no es complicado. Es cuestión de fechas y ubicación.
 4. Inscripción al recorrido completo: 14 jul, 14:00 KST. Ventana de pago: 20–21 jul
 5. Inscripción al 10K: 16 jul, 14:00 KST. Ventana de pago: 22–23 jul
 
-==r:El año pasado las plazas se agotaron en menos de 3 minutos. Ten a mano tu número de pasaporte y el pago antes de que abra la ventana.==
+==r:En 2026 las plazas se agotaron en menos de 3 minutos. Para 2027: ten a mano tu número de pasaporte y el pago antes de que abra la ventana — la de 2026 se cerró en julio.==
 
 **Cómo llegar desde Seúl:** tren exprés ITX-Cheongchun desde la estación de Yongsan → Chuncheon, ~80–90 min, ~₩8,800. O la línea Gyeongui-Jungang (경의중앙선) hasta Cheongnyangni y luego la línea de Chuncheon (~100 min en total, más barato). Asequible, escénico y sin coche.
 
@@ -127,7 +127,7 @@ Los corredores extranjeros residentes fuera de Corea se inscriben exclusivamente
 
 ==g:El cupo de extranjeros del JTBC es limitado — inscríbete pronto antes de que se agote.==
 
-**Tras la carrera → póker:** el recorrido del JTBC termina en el centro de Seúl. Desde la estación de Seúl (u Hongdae), coge el AREX con todas las paradas → lanzadera de Paradise City desde la T1. ~1 hora en total. La mayoría de corredores termina bastante antes del mediodía — una sesión de cash game por la tarde es realista.
+**Tras la carrera → póker:** el maratón completo termina en el ==Parque Olímpico== (Songpa, líneas 5/8). Desde ahí, metro hasta la estación de Seúl u Hongdae, luego el AREX con todas las paradas → lanzadera de Paradise City desde la T1. Cuenta con ==**1,5–2 horas**== desde la meta, sin contar ducha y cambio de ropa. El grueso del pelotón entra entre las 12 y la 1 — una sesión de cash game a última hora de la tarde es realista; a mediodía, no.
 
 ---
 
@@ -153,11 +153,12 @@ Goyang está a ~50 min del centro de Seúl en metro (línea 3, dirección Daehwa
 Para quienes lleguen en septiembre, el ==**YTN Seoul Tour Marathon**== sale de ==**Seoul Plaza**== (서울광장) — justo enfrente del Ayuntamiento, con el palacio de Deoksugung y el skyline del centro como telón de fondo.
 
 - Fecha: 6 de septiembre de 2026, salida a las 7:30
-- Distancias: Medio · 11K
+- Distancias: ==**11KM**== · Medio — ==r:aquí no hay 10K==
+- Inscripción: 11KM ₩70.000 · Medio ₩80.000
 - Salida: Seoul Plaza (zona del Ayuntamiento)
 - Organizador: YTN
 - Web: [run.ytn.co.kr](http://run.ytn.co.kr)
-- Registro: 17 jun – 10 jul (cerrado — el 15 jul era la fecha límite de reembolso, no el cierre de inscripción)
+- Registro: 17 jun – 10 jul sobre el papel, pero ==r:se llenó y cerró antes, el 26 jun== (por orden de llegada)
 
 Nota: el calor del verano coreano toca techo en agosto. Septiembre sigue siendo caluroso (20–28 °C), con la humedad aflojando hacia final de mes. La distancia de medio es más manejable que un completo en estas condiciones.
 
@@ -204,7 +205,7 @@ Aquí es donde el calendario se pone interesante. Tres festivales de póker se c
 
 ==**La isla de Jeju**== es el destino de resort nacional más popular de Corea — costa volcánica, clima subtropical, sin visado para la mayoría de nacionalidades. El torneo se disputa en el ==**LES A Casino**== dentro de Jeju Shinhwa World.
 
-- **Garantizado:** ==g:$3.5M+ garantizado total (GTD) repartido en 136 eventos con trofeo== (buy-in del Main Event por confirmar)
+- **Garantizado:** ==g:$3.5M+ garantizado total (GTD) repartido en 136 eventos con trofeo== (Main Event: buy-in de ==**KRW 2,7M**== ≈ $1.800, ==g:KRW 2.200M GTD==)
 - **Calendario completo:** publicado — 136 eventos en 13 días · [theasianpokertour.com](https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/info)
 - Solo extranjeros · +19 · pasaporte no coreano válido
 
@@ -218,7 +219,7 @@ Los ==**Gods of Poker (GOP)**== regresan a Paradise City para su segunda parada 
 
 ==**El 1 nov es a la vez día de carrera del JTBC y Día 3 del festival GOP.**==
 
-Para un jugador que ya está en Corea por el torneo: mañana de carrera con despertador a las 7, 42K por el centro de Seúl, meta en el Parque Olímpico antes del mediodía. De vuelta a Paradise City hacia las 14:00. Las mesas de póker siguen en marcha. Esto es genuinamente factible — y prácticamente nadie escribe sobre este solapamiento.
+Para un jugador que ya está en Corea por el torneo: mañana de carrera con despertador a las 6 (la salida es a las 8 y se queda una hora antes), 42K por el centro de Seúl, meta en el Parque Olímpico. ==r:Si bajas de 4 horas==, acabas cerca del mediodía y puedes estar en una mesa de Paradise City a última hora de la tarde. Con 4:30–5:00 — y el corte está en 5 horas — se convierte en plan de noche. Las mesas funcionan las 24 horas, así que de un modo u otro las dos cosas caben en un día. Prácticamente nadie escribe sobre este solapamiento.
 
 - **Fechas:** 30 de octubre – 8 de noviembre de 2026
 - **Sede:** Casino Paradise City, Incheon (lanzadera gratuita desde la Terminal 1 de ICN)
@@ -290,7 +291,7 @@ Para el panorama completo de torneos (el APT Incheon se disputa del 7 al 16 de a
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">6 sep</td>
       <td style="padding:9px 12px">🏃 YTN Seoul Tour Marathon</td>
       <td style="padding:9px 12px">Seoul Plaza</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">Medio · 11K · 7:30 · Reg. cerrado</td>
+      <td style="padding:9px 12px;color:var(--muted-foreground)">11KM · Medio · 7:30 · Reg. cerrado</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">25 sep–7 oct</td>
@@ -346,7 +347,7 @@ El doblete más limpio: APT Incheon (7–16 ago) → descanso en Seúl → Marat
 
 ## Itinerarios de ejemplo — cómo combinar ambas cosas
 
-**Opción A: APT Incheon + JTBC Seúl (estancia prolongada)**
+**Opción A: APT Incheon + JTBC Seúl (estancia prolongada) — ==r:planifícala para 2027==, la salida del 7 ago ya pasó**
 
 | Día | Plan |
 |---|---|

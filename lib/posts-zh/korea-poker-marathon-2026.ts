@@ -4,12 +4,12 @@ export const POST: Post = {
   slug: "korea-poker-marathon-2026",
   title: "2026 韩国跑步 + 打牌 — 一趟行程搞定马拉松和扑克",
   seoTitle: "2026 韩国扑克 + 马拉松 — 春川、JTBC 首尔 + Paradise City 指南",
-  desc: "在 10 月到 11 月完美的秋季天气里跑春川或 JTBC 首尔马拉松，然后到仁川机场旁的 Paradise City 打扑克现金局。这里给你完整的 2026 韩国赛程表、外国跑者报名步骤，以及一趟行程串起两样的路线。",
+  desc: "2026 年只剩 JTBC 首尔还在收报名——春川和 YTN 都已截止。完整赛程表、报名窗口，以及仁川机场旁 Paradise City 的扑克，一趟行程串起来。",
   tldr: "韩国最好的秋季马拉松（春川 10 月 25 日、JTBC 首尔 11 月 1 日、Garmin Run 11 月 15 日）正好赶上完美的跑步天气。仁川机场旁的 Paradise City Casino 全年开放现金局——只对外国人开放，离航站楼 10 分钟。一趟行程两样都能拿下。",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-07-25",
-  masterUpdated: "2026-07-25",
+  updated: "2026-08-13",
+  masterUpdated: "2026-08-13",
   keepImagesInBody: true,
   readTime: "14 分钟",
   emoji: "🏃",
@@ -67,9 +67,9 @@ export const POST: Post = {
 | 赛事 | 日期 | 距离 | 地点 | 外国人报名 | 状态 |
 |---|---|---|---|---|---|
 | Dong-A 首尔国际马拉松 | 2026 年 3 月 | 全程、10K | 首尔 | [dongamarathon.com](https://www.dongamarathon.com) | 2026 已结束 |
-| ==**YTN 首尔 Tour Marathon**== | ==**9 月 6 日**== | 半程、11K | Seoul Plaza | [run.ytn.co.kr](http://run.ytn.co.kr) | 7 月 10 日截止 |
+| ==**YTN 首尔 Tour Marathon**== | ==**9 月 6 日**== | ==**11KM**==、半程 | Seoul Plaza | [run.ytn.co.kr](http://run.ytn.co.kr) | 已截止——6 月 26 日提前额满 |
 | ==g:**春川马拉松**== | ==g:**10 月 25 日**== | ==g:全程、10K== | ==g:春川== | ==g:[chuncheonmarathon.com](https://www.chuncheonmarathon.com)== | ==g:报名截止（售罄）== |
-| ==**JTBC 首尔马拉松**== | ==**11 月 1 日**== | 全程、10K | 首尔（上岩） | [worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon) | 外国人名额（早满·请确认） |
+| ==**JTBC 首尔马拉松**== | ==**11 月 1 日**== | 全程、10K | 首尔（上岩） | [worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon) | ==g:开放中==——外国人名额有限，请趁早 |
 | Garmin Run Korea | 11 月 15 日 | 半程、10K | 高阳 | [runable.me](http://runable.me/product/18977?comp=18962) | 已截止（报名为 7 月 1–3 日） |
 
 </div>
@@ -86,7 +86,7 @@ export const POST: Post = {
 
 ==**春川**==（춘천）是首尔以东坐快速列车约 80–90 分钟的一座小城，位于江原道两条河交汇处的山谷之中。韩国人称它"浪漫"。它举办的这场马拉松，是亚洲最受尊敬的赛事之一。
 
-**这场比赛：** 创办于 1946 年——韩国第二古老的马拉松。==g:AIMS 认证的国际赛道==——是仅次于世界马拉松大满贯（World Marathon Majors）的全球标准。全程 42.195K + 10K。9:00 从孔之川桥（Gongjicheon Bridge）出发。赛道绕着 ==**衣岩湖**==（의암호）跑一圈，那是一座被群山环抱的水库，10 月底山色正在变。比赛当天气温通常在 8–14°C——正是能跑出个人最好成绩的条件。
+**这场比赛：** 创办于 1946 年——韩国第二古老的马拉松。==g:经国际丈量与认证的赛道==（AIMS）。全程 42.195K + 10K。9:00 从孔之川桥（Gongjicheon Bridge）出发。赛道绕着 ==**衣岩湖**==（의암호）跑一圈，那是一座被群山环抱的水库，10 月底山色正在变。比赛当天气温通常在 8–14°C——正是能跑出个人最好成绩的条件。
 
 ![秋日韩国公园里挂着号码布的跑者——橙红落叶铺满赛道两侧，晨光斜照](/images/korea-poker-marathon-2026-marathon-race.webp)
 
@@ -101,7 +101,7 @@ export const POST: Post = {
 4. 全程报名：7 月 14 日下午 2 点（KST）。缴费窗口：7 月 20–21 日
 5. 10K 报名：7 月 16 日下午 2 点（KST）。缴费窗口：7 月 22–23 日
 
-==r:去年名额不到 3 分钟就抢光。窗口一开之前，先把护照号码和付款方式准备好。==
+==r:2026 年名额不到 3 分钟就抢光。为 2027 年做准备：窗口一开之前，先把护照号码和付款方式备好——2026 年的窗口 7 月就关了。==
 
 **从首尔怎么去：** 从龙山站坐 ITX-青春（ITX-Cheongchun）快速列车 → 春川，约 80–90 分钟，约 ₩8,800。或者坐地铁经义中央线到清凉里，再转春川线（总共约 100 分钟，更便宜）。便宜、有风景、不用开车。
 
@@ -113,7 +113,7 @@ export const POST: Post = {
 
 ==**JTBC 首尔马拉松**== 是韩国头号城市赛事——25,000–50,000 名跑者，八成是二三十岁的人，穿过首尔市中心的地标。如果说春川是风景乡野，JTBC 就是橱窗展示。
 
-**赛道：** 从 ==上岩世界杯体育场==（6 号线，上岩世界杯体育场站）出发。穿过德寿宫、光化门广场和东大门——首尔历史与现代身份的完整扫描。全程终点在 ==奥林匹克公园==；10K 终点在 ==汝矣岛公园==。关门时间：全程 5 小时。
+**赛道：** 从 ==上岩世界杯体育场==（6 号线，上岩世界杯体育场站）出发。经过德寿宫外围、穿过光化门广场和东大门——首尔历史与现代身份的完整扫描。全程终点在 ==奥林匹克公园==；10K 终点在 ==汝矣岛公园==。关门时间：全程 5 小时。
 
 **赛事细节：**
 - 日期：==**2026 年 11 月 1 日（周日）**==，8:00 出发
@@ -127,7 +127,7 @@ export const POST: Post = {
 
 ==g:JTBC 的外国人名额有限——请趁早报名，以免满员。==
 
-**赛后 → 打牌：** JTBC 赛道终点在首尔市中心。从首尔站（或弘大）搭 AREX 普通车（All-Stop）→ 从 1 号航站楼坐 Paradise City 摆渡车。总共约 1 小时。多数跑者中午前就完赛了——下午打一场现金局是现实的。
+**赛后 → 打牌：** 全程终点在 ==奥林匹克公园==（松坡，5/8 号线）。从那里搭地铁到首尔站或弘大，再换 AREX 普通车（All-Stop）→ 从 1 号航站楼坐 Paradise City 摆渡车。从冲线算起要留 ==**1.5–2 小时**==，还不含洗澡换衣。大多数跑者在 12 点到 13 点之间完赛——傍晚打一场现金局是现实的，中午则不行。
 
 ---
 
@@ -153,11 +153,12 @@ export const POST: Post = {
 对 9 月抵达的人来说，==**YTN 首尔 Tour Marathon**== 从 ==**Seoul Plaza**==（서울광장）出发——就在市政厅正前方，背景是德寿宫和市中心天际线。
 
 - 日期：2026 年 9 月 6 日，7:30 出发
-- 距离：半程 · 11K
+- 距离：==**11KM**== · 半程 —— ==r:这场比赛没有 10K 组别==
+- 报名费：11KM ₩70,000 · 半程 ₩80,000
 - 起点：Seoul Plaza（市政厅一带）
 - 主办方：YTN
 - 网站：[run.ytn.co.kr](http://run.ytn.co.kr)
-- 报名：6 月 17 日 – 7 月 10 日（已截止——7 月 15 日是退款截止日，并非报名截止日）
+- 报名：原定 6 月 17 日 – 7 月 10 日，但==r:先到先得，6 月 26 日就提前额满截止==
 
 注意：韩国的暑热在 8 月达到顶峰。9 月仍然偏热（20–28°C），湿度到月底才缓下来。在这种条件下，半程比全程更好扛。
 
@@ -204,7 +205,7 @@ export const POST: Post = {
 
 ==**济州岛**== 是韩国最受欢迎的本土度假胜地——火山海岸、亚热带气候、多数国籍免签。赛事在济州新华世界（Jeju Shinhwa World）内的 ==**LES A Casino**== 举办。
 
-- **保底：** ==g:136 项奖杯赛事总保底 $3.5M+==（主赛事买入待定）
+- **保底：** ==g:136 项奖杯赛事总保底 $3.5M+==（主赛事：买入 ==**KRW 270 万**== ≈ $1,800，==g:KRW 22 亿保底==）
 - **完整赛程：** 已公布——13 天内 136 项赛事 · [theasianpokertour.com](https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/info)
 - 仅限外国人 · 19+ · 持有效的非韩国护照
 
@@ -218,7 +219,7 @@ export const POST: Post = {
 
 ==**11 月 1 日既是 JTBC 比赛日，也是 GOP 扑克节的 Day 3。**==
 
-对一个已经在韩国参赛的牌手来说：比赛当天早上 7 点闹钟响，42K 穿过首尔市中心，中午前在奥林匹克公园完赛。下午 2 点回到 Paradise City。扑克桌还在开着。这真的做得到——而且基本没人在写这个重叠。
+对一个已经在韩国参赛的牌手来说：比赛当天早上 6 点闹钟（8 点起跑，提前一小时左右集合），42K 穿过首尔市中心，在奥林匹克公园完赛。==r:如果你跑进 4 小时==，中午就结束，傍晚能坐上 Paradise City 的牌桌。若是 4:30–5:00（关门时间正是 5 小时），那就变成晚上的安排。牌桌 24 小时开着，所以两件事总归能塞进同一天。基本没人在写这个重叠。
 
 - **日期：** 2026 年 10 月 30 日 – 11 月 8 日
 - **场馆：** Paradise City Casino, Incheon（从仁川 1 号航站楼免费摆渡）
@@ -290,7 +291,7 @@ export const POST: Post = {
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">9 月 6 日</td>
       <td style="padding:9px 12px">🏃 YTN 首尔 Tour Marathon</td>
       <td style="padding:9px 12px">Seoul Plaza</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">半程 · 11K · 7:30 · 报名已截止</td>
+      <td style="padding:9px 12px;color:var(--muted-foreground)">11KM · 半程 · 7:30 · 报名已截止</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">9 月 25 日–10 月 7 日</td>
@@ -346,7 +347,7 @@ export const POST: Post = {
 
 ## 行程样例——两样怎么串起来
 
-**方案 A：APT Incheon + JTBC 首尔（长住）**
+**方案 A：APT Incheon + JTBC 首尔（长住）—— ==r:请按 2027 年规划==，8/7 的起点已经过了**
 
 | 日 | 计划 |
 |---|---|
