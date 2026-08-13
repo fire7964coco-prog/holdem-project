@@ -5,12 +5,27 @@ import { usePathname } from "next/navigation";
 import { SITE } from "@/lib/site";
 import { CHROME, localeFromPath } from "@/lib/intl";
 
+/**
+ * 🔴 **이 컴포넌트가 실제로 쓰는 건 `title`·`description`·`path` 셋뿐이다.**
+ *
+ * ★2026-08-13에 `schema` prop을 **인터페이스에서 제거**했다. 이유:
+ *   타입에는 있는데 구현이 구조분해에서 받지도 않아, `<SEO schema={...}>`를 쓰는
+ *   **13개 파일이 전부 죽은 코드**였다 — 타입체크는 통과하니 아무도 몰랐고,
+ *   `/ranking`(사이트 최대 노출 쿼리)을 포함한 허브 전부가 구조화 데이터 0인 채로 나갔다.
+ *   **선언만 있고 구현이 없는 prop은 «조용히 버려지는 인자»다.** 다시 만들지 마라.
+ *   → JSON-LD가 필요하면 **서버 `page.tsx`에서** `<script type="application/ld+json">`로 직접 렌더한다.
+ *     최신 예시: `app/ranking/page.tsx` · `app/hands/page.tsx`.
+ *
+ * ⚠ 아래 `keywords`·`type`·`image`·`seoTitle`도 **현재 구현이 쓰지 않는다.** 다만 이쪽은
+ *   버려져도 손실이 구조화 데이터만큼 크지 않아 호출부를 건드리지 않고 남겨 뒀다.
+ *   메타를 진짜로 바꾸려면 서버 `metadata` export를 고쳐라(위 주석 참조).
+ */
 interface SEOProps {
   title: string;
   description: string;
-  keywords?: string | string[];
   path?: string;
-  schema?: object | object[];
+  /** ⚠ 아래 넷은 현재 구현이 읽지 않는다 (위 주석 참조). */
+  keywords?: string | string[];
   type?: "website" | "article";
   image?: string;
   seoTitle?: string;

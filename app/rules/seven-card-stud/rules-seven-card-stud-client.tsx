@@ -1,5 +1,7 @@
 "use client";
 
+import { FAQ_ITEMS } from "./faq-data";
+
 import { SEO } from "@/components/seo";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -80,48 +82,12 @@ const STUD_TIPS = [
   { title: "앤티 도둑질", desc: "다른 플레이어의 업카드가 약할 때, 강한 업카드로 공격적으로 베팅해 앤티를 쓸어가는 전술이 효과적입니다.", icon: "💰" },
 ];
 
-const FAQ_ITEMS = [
-  { q: "세븐 카드 스터드에서 딜러 버튼이 없는 이유는?", a: "스터드에서는 업카드(공개 카드)로 패 강도를 어느 정도 파악할 수 있기 때문에 별도의 포지션 버튼이 필요 없습니다. 대신 매 라운드마다 가장 강한 업카드를 가진 플레이어가 먼저 액션합니다." },
-  { q: "브링인(Bring-in)이란 무엇인가요?", a: "서드 스트리트에서 가장 낮은 업카드를 가진 플레이어가 강제로 내야 하는 소액 베팅입니다. 블라인드 역할과 비슷합니다. 브링인 플레이어는 대신 컴플리트(풀 사이즈 베팅)를 선택할 수도 있습니다." },
-  { q: "세븐 카드 스터드는 몇 명이 플레이할 수 있나요?", a: "보통 2~8명이 플레이합니다. 8명이 7장씩 받으면 56장이 필요하지만 덱은 52장이라 7번째 카드가 부족할 수 있습니다. 이 경우 마지막 카드를 1장 공개 카드로 대체합니다." },
-  { q: "세븐 카드 스터드가 노 리밋으로 진행되나요?", a: "아닙니다. 스터드는 주로 리밋(고정 베팅) 방식으로 진행됩니다. 피프스 스트리트부터 베팅 사이즈가 두 배로 올라가는 구조입니다. 노 리밋 스터드는 거의 없습니다." },
-  { q: "폴드된 카드를 반드시 기억해야 하나요?", a: "필수는 아니지만 강력히 권장됩니다. 내가 원하는 카드가 이미 폴드됐는지 알아야 드로우 가능성을 정확히 계산할 수 있습니다. 이것이 스터드와 홀덤의 가장 큰 기술 차이입니다." },
-  { q: "세븐 카드 스터드 족보는 홀덤과 동일한가요?", a: "네, 동일합니다. 로열 플러시 > 스트레이트 플러시 > 포카드 > 풀하우스 > 플러시 > 스트레이트 > 트리플 > 투페어 > 원페어 > 하이카드 순서입니다. 7장 중 최강 5장 조합으로 승자를 결정합니다." },
-];
+
 
 export default function SevenCardStud() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
-  const jsonLd = [
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "세븐 카드 스터드 포커 규칙 완벽 가이드",
-      "description": "세븐 카드 스터드 포커 기초 규칙을 완벽하게 정리했습니다. 앤티, 브링인, 서드~세븐스 스트리트 5단계 베팅, 업카드 전략까지 한 페이지에서 마스터.",
-      "author": { "@type": "Organization", "name": "홀덤마스터" },
-      "publisher": { "@type": "Organization", "name": "홀덤마스터", "url": "https://www.holdemmaster.com" },
-      "dateModified": "2026-03-24",
-      "keywords": "세븐 카드 스터드, 7카드 스터드, 스터드 포커 규칙, 스터드 하는법, 포커 규칙, 스터드 전략",
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": FAQ_ITEMS.map(f => ({
-        "@type": "Question",
-        "name": f.q,
-        "acceptedAnswer": { "@type": "Answer", "text": f.a },
-      })),
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://www.holdemmaster.com/" },
-        { "@type": "ListItem", "position": 2, "name": "게임 방법", "item": "https://www.holdemmaster.com/rules" },
-        { "@type": "ListItem", "position": 3, "name": "세븐 카드 스터드", "item": "https://www.holdemmaster.com/rules/seven-card-stud" },
-      ],
-    },
-  ];
+
 
   return (
     <>
@@ -129,8 +95,7 @@ export default function SevenCardStud() {
         title="세븐 카드 스터드 포커 규칙 완벽 가이드 — 7장 포커 하는법"
         description="⚡세븐 카드 스터드⚡ 포커 기초 규칙 완벽 가이드. 앤티·브링인부터 서드~세븐스 스트리트 5단계 베팅, 업카드 전략, 라이브 카드 개념까지 한 페이지에서 마스터."
         keywords="세븐 카드 스터드, 7카드 스터드, 스터드 포커 규칙, 스터드 포커 하는법, 스터드 전략, 포커 규칙"
-        path="/rules/seven-card-stud"
-        schema={jsonLd}
+        path="/rules/seven-card-stud"
       />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-16">
@@ -328,9 +293,10 @@ export default function SevenCardStud() {
                   <span className="font-semibold text-foreground pr-4">{item.q}</span>
                   <ChevronRight className={`w-4 h-4 text-primary shrink-0 transition-transform duration-200 ${openFaq === i ? "rotate-90" : ""}`} />
                 </button>
-                {openFaq === i && (
-                  <div className="px-5 pb-5 text-sm text-muted-foreground leading-relaxed border-t border-border pt-4">{item.a}</div>
-                )}
+                {/* 🔴 2026-08-13: 전엔 조건부 렌더라 **답변이 서버 HTML에 한 글자도 없었다.**
+                      크롤러·LLM은 클릭하지 않으므로 FAQ 답변이 통째로 안 보였고, FAQPage 스키마를 붙이면
+                      «페이지에 없는 답변»을 주장하게 된다. → DOM엔 항상 넣고 CSS로만 접는다. */}
+                  <div className={`px-5 pb-5 text-sm text-muted-foreground leading-relaxed border-t border-border pt-4 ${openFaq === i ? "" : "hidden"}`}>{item.a}</div>
               </motion.div>
             ))}
           </div>

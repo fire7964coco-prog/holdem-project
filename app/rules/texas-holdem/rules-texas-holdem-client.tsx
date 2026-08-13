@@ -7,6 +7,7 @@ import { Clock, Calendar, ChevronRight } from "lucide-react";
 import { useState } from "react";
 import PokerTableDiagram from "@/components/PokerTableDiagram";
 import { TableOfContents } from "@/components/table-of-contents";
+import { FAQ_ITEMS } from "./faq-data";
 
 const STAGES = [
   {
@@ -100,50 +101,12 @@ const HANDS = [
   { rank: 10, name: "하이카드", korean: "High Card", example: "A♠ Q♥ 8♦ 5♣ 2♠", desc: "아무 조합 없음, 최고 카드로 비교", freq: "매우 자주", color: "text-muted-foreground" },
 ];
 
-const FAQ_ITEMS = [
-  { q: "텍사스 홀덤에서 블라인드는 왜 있나요?", a: "블라인드는 판에 돈을 강제로 넣어 게임이 활발하게 진행되도록 만드는 장치입니다. 블라인드가 없으면 플레이어들이 강한 패가 들어올 때까지 계속 체크만 반복할 수 있기 때문입니다." },
-  { q: "프리플랍에서 체크를 할 수 있나요?", a: "아니요. 프리플랍에서는 빅 블라인드가 이미 베팅된 상태이므로 체크를 할 수 없습니다. 폴드·콜·레이즈 중 하나를 선택해야 합니다. 체크는 플랍부터 사용 가능합니다." },
-  { q: "쇼다운에서 홀 카드 2장을 반드시 다 써야 하나요?", a: "아닙니다. 개인 홀 카드 2장과 공용 카드 5장 중에서 가장 강한 5장 조합을 자유롭게 선택합니다. 필요에 따라 홀 카드 1장만 쓰거나, 심지어 공용 카드 5장만으로 족보를 만들 수도 있습니다." },
-  { q: "올인(All-in)을 하면 어떻게 되나요?", a: "올인 이후에는 추가 베팅을 할 수 없습니다. 그러나 올인한 금액까지의 팟(메인 팟)은 계속 경쟁합니다. 상대가 올인 금액보다 더 베팅하면 사이드 팟이 생성되어 올인하지 않은 플레이어들끼리 별도로 경쟁합니다." },
-  { q: "노 리밋과 리밋 홀덤의 차이는 무엇인가요?", a: "노 리밋(No-Limit)은 언제든 원하는 만큼 베팅·레이즈·올인이 가능합니다. 리밋(Limit)은 베팅과 레이즈 금액이 미리 정해진 한도로 제한됩니다. 온라인홀덤에서는 대부분 노 리밋 방식이 사용됩니다." },
-  { q: "팟 오즈(Pot Odds)란 무엇인가요?", a: "팟 오즈는 현재 팟 크기 대비 내가 콜해야 하는 금액의 비율입니다. 예를 들어 팟이 10만원이고 콜 금액이 2만원이라면 5:1 오즈입니다. 내 드로우 완성 확률이 이 비율보다 높으면 콜이 수익적입니다." },
-  { q: "딜러 포지션이 왜 유리한가요?", a: "딜러(버튼)는 매 베팅 라운드에서 마지막으로 액션을 취합니다. 상대방의 체크·벳·레이즈를 모두 보고 결정할 수 있기 때문에 정보 우위를 가집니다. 포지션이 좋을수록 더 많은 핸드를 수익적으로 플레이할 수 있습니다." },
-  { q: "테이블 스테이크(Table Stakes)가 무엇인가요?", a: "게임 시작 시 테이블에 올린 금액 이상은 베팅할 수 없다는 규칙입니다. 게임 도중 지갑에서 돈을 꺼내 추가할 수 없으며, 처음 가지고 있던 칩만으로 끝까지 플레이해야 합니다." },
-];
+
 
 export default function TexasHoldem() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
-  const jsonLd = [
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "텍사스 홀덤 포커 규칙 완벽 가이드",
-      "description": "텍사스 홀덤 기초 규칙을 처음 배우는 사람도 이해할 수 있도록 완벽하게 정리한 가이드. 블라인드·프리플랍·플랍·턴·리버·쇼다운 6단계, 베팅 옵션 7가지, 족보 순위 10가지, FAQ 8개.",
-      "author": { "@type": "Organization", "name": "홀덤마스터" },
-      "publisher": { "@type": "Organization", "name": "홀덤마스터", "url": "https://www.holdemmaster.com" },
-      "dateModified": "2026-03-24",
-      "keywords": "텍사스 홀덤 규칙, 홀덤 하는법, 홀덤 베팅, 홀덤 족보, 블라인드, 프리플랍, 플랍, 턴, 리버, 쇼다운",
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": FAQ_ITEMS.map(f => ({
-        "@type": "Question",
-        "name": f.q,
-        "acceptedAnswer": { "@type": "Answer", "text": f.a },
-      })),
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://www.holdemmaster.com/" },
-        { "@type": "ListItem", "position": 2, "name": "게임 방법", "item": "https://www.holdemmaster.com/rules" },
-        { "@type": "ListItem", "position": 3, "name": "텍사스 홀덤 규칙", "item": "https://www.holdemmaster.com/rules/texas-holdem" },
-      ],
-    },
-  ];
+
 
   return (
     <>
@@ -151,8 +114,7 @@ export default function TexasHoldem() {
         title="텍사스 홀덤 포커 규칙 완벽 가이드 — 블라인드·베팅·족보 총정리"
         description="⚡텍사스 홀덤⚡ 기초 규칙을 처음부터 끝까지 정리했습니다. 블라인드·프리플랍·플랍·턴·리버·쇼다운 6단계 + 베팅 옵션 7가지 + 족보 10가지 + FAQ 8개."
         keywords="텍사스 홀덤 규칙, 홀덤 하는법, 홀덤 룰, 포커 기초 규칙, 블라인드, 프리플랍, 플랍, 홀덤 족보, 홀덤 베팅"
-        path="/rules/texas-holdem"
-        schema={jsonLd}
+        path="/rules/texas-holdem"
       />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-16">
@@ -456,11 +418,12 @@ export default function TexasHoldem() {
                   <span className="font-semibold text-foreground pr-4">{item.q}</span>
                   <ChevronRight className={`w-4 h-4 text-primary shrink-0 transition-transform duration-200 ${openFaq === i ? "rotate-90" : ""}`} />
                 </button>
-                {openFaq === i && (
-                  <div className="px-5 pb-5 text-sm text-muted-foreground leading-relaxed border-t border-border pt-4">
+                {/* 🔴 2026-08-13: 전엔 조건부 렌더라 **답변이 서버 HTML에 한 글자도 없었다.**
+                      크롤러·LLM은 클릭하지 않으므로 FAQ 답변이 통째로 안 보였고, FAQPage 스키마를 붙이면
+                      «페이지에 없는 답변»을 주장하게 된다. → DOM엔 항상 넣고 CSS로만 접는다. */}
+                  <div className={`px-5 pb-5 text-sm text-muted-foreground leading-relaxed border-t border-border pt-4 ${openFaq === i ? "" : "hidden"}`}>
                     {item.a}
                   </div>
-                )}
               </motion.div>
             ))}
           </div>

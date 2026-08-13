@@ -7,22 +7,7 @@ import { ShieldAlert, Crosshair, Target, BookOpen, TrendingUp, Brain } from "luc
 import Link from "next/link";
 
 export default function Strategy() {
-  const jsonLd = [
-    {
-      "@type": "Article",
-      "headline": "텍사스 홀덤 전략 가이드 — 초급부터 고급까지 승률 올리는 법",
-      "description": "텍사스 홀덤에서 승률을 높이는 실전 전략. 포지션 활용법, 스타팅 핸드 선택, 팟 오즈 계산, 블러핑 타이밍, GTO 전략까지 초급·중급·고급으로 구분해 설명합니다.",
-      "author": { "@type": "Organization", "name": "홀덤마스터" },
-      "publisher": { "@type": "Organization", "name": "홀덤마스터", "url": "https://www.holdemmaster.com" },
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://www.holdemmaster.com/" },
-        { "@type": "ListItem", "position": 2, "name": "홀덤 전략 가이드", "item": "https://www.holdemmaster.com/strategy" },
-      ],
-    },
-  ];
+
 
   return (
     <>
@@ -30,8 +15,7 @@ export default function Strategy() {
         title="⚡ 온라인홀덤 이기는 법 — 초·중·고급 실전 전략 완벽 가이드"
         description="⚡온라인홀덤 전략⚡ 매번 잃고 있다면? 포지션·스타팅핸드·팟오즈·블러핑 타이밍까지 실전 검증된 전략만 모았습니다. 초급부터 고급 GTO 전략까지 이것만 알면 승률이 달라집니다."
         keywords="텍사스 홀덤 전략, 홀덤 이기는 법, 포커 포지션 전략, 홀덤 블러핑 전략, 팟 오즈 계산법, 홀덤 스타팅 핸드 추천, 포커 타이트 어그레시브, 홀덤 베팅 전략, 홀덤 승률 높이기, 포커 GTO 전략"
-        path="/strategy"
-        schema={jsonLd}
+        path="/strategy"
       />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24">
@@ -275,7 +259,7 @@ export default function Strategy() {
             {[
               { href: "/rules", label: "기초 규칙", desc: "블라인드·쇼다운 6단계" },
               { href: "/blog/holdem-hand-rankings", label: "핸드 랭킹", desc: "족보 순위 완벽 정리" },
-              { href: "/glossary", label: "용어 사전", desc: "필수 홀덤 용어 27개" },
+              { href: "/glossary", label: "용어 사전", desc: "필수 홀덤 용어 29개" },
               { href: "/ranking", label: "추천 사이트", desc: "TOP5 홀덤 사이트" },
               { href: "/blog", label: "전략 블로그", desc: "실전 전략 칼럼" },
               // ★탭(중급·고급) 안의 링크는 활성 탭만 렌더돼 HTML에 안 실린다(2026-08-01 확인).

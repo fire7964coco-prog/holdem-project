@@ -121,20 +121,6 @@ export default function BlogIndex({
     router.replace("/blog", { scroll: false });
   }
 
-  const jsonLd = [
-    {
-      "@type": "Blog",
-      "name": "홀덤마스터 블로그",
-      "description": "텍사스 홀덤 전략, 포커 팁, 토너먼트 정보를 정기적으로 업데이트합니다.",
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://www.holdemmaster.com/" },
-        { "@type": "ListItem", "position": 2, "name": "홀덤 전략 블로그", "item": "https://www.holdemmaster.com/blog" },
-      ],
-    },
-  ];
 
   return (
     <>
@@ -143,7 +129,6 @@ export default function BlogIndex({
         description="⚡홀덤 전략⚡ 실력 올리는 가장 빠른 법. 블러핑·포지션 플레이·토너먼트 공략 등 실전 검증된 칼럼을 2~3일마다 업데이트합니다."
         keywords="홀덤 블로그, 포커 전략 칼럼, 텍사스 홀덤 팁, 홀덤 뉴스, 포커 토너먼트 정보, 홀덤 초보 팁, 블러핑 전략, 홀덤 포지션"
         path="/blog"
-        schema={jsonLd}
       />
 
       {/* Header

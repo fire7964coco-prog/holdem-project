@@ -243,8 +243,7 @@ export default function Home() {
         description="【홀덤 초보】블라인드·족보 헷갈림·체크·스몰블라인드 인기 가이드 TOP5. ⚡2026 대회 일정 링크 — 테이블 앉기 전 5분 무료 허브."
         keywords="텍사스 홀덤, 홀덤 규칙, 포커 족보, 홀덤 전략, 홀덤 포지션, 스타팅 핸드, 팟 오즈, 온라인 홀덤 추천, 홀덤 초보 가이드, 포커 배우기, 홀덤 사이트 순위"
         path="/"
-        type="website"
-        schema={combinedSchema}
+        type="website"
       />
 
       {/* ── 1. HERO ── 프리미엄 다크그린·골드 / SSR-LCP 안전 */}

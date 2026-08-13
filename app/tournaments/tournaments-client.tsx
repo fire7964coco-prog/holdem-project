@@ -588,7 +588,10 @@ export default function Tournaments({
         description={buildMetaDescription(todayISO)}
         keywords="홀덤 대회, 홀덤대회, 포커 토너먼트, KPT 코리아포커투어, 피망 포커 대회, 한게임 포커 대회, WSOP 참가방법, WPT, EPT, APT 아시아, 홀덤펍 리그, 포커 대회 일정 2026, 홀덤 토너먼트 전략, 포커 대회 참가 방법"
         path="/tournaments"
-        schema={combinedSchema}
+        /* ★2026-08-13: `schema={combinedSchema}` prop을 뺐다. `components/seo.tsx`는 `schema`를
+             구조분해에서 받지도 않아 **아무 일도 하지 않는 인자**였고, 실제 출력은 바로 위
+             `<script type="application/ld+json">`가 이미 하고 있다. 남겨 두면 «여기가 스키마를
+             내보낸다»고 오해하게 만든다 — 이 오해가 다른 13개 파일에서 죽은 코드를 낳았다. */
         type="article"
       />
 

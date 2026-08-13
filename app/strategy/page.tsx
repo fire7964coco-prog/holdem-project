@@ -17,9 +17,42 @@ export const metadata: Metadata = {
   alternates: { canonical: `${SITE}/strategy` },
 };
 
+/**
+ * JSON-LD는 **서버에서** 내보낸다 (2026-08-13 — 구 `<SEO schema={jsonLd}>`는 죽은 코드였다).
+ *
+ * ⚠ 타입을 **Article → CollectionPage**로 바꿨다. 이 페이지의 정체는 위 metadata 주석대로
+ *   «주제별 색인 허브»이고, 깊이·학습 순서는 `/blog/holdem-strategy` 필라가 갖는다.
+ *   Article로 선언하면 필라와 같은 성격을 주장하게 되어 스스로 카니발을 만든다.
+ * ⚠ `headline`/이름도 서버 metadata title에 맞췄다 — 구 코드 문구는 클라이언트 SEO의 옛 제목이라
+ *   구글이 보는 `<title>`과 어긋났다.
+ */
 export default function Page() {
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      name: "홀덤 전략 주제별 모아보기 — TAG·포지션·레인지·팟오즈",
+      description:
+        "타이트 어그레시브부터 포지션·스타팅 핸드·레인지 리딩·세미 블러핑·팟오즈까지, 홀덤 전략 주제를 한 화면에 모았습니다. 각 주제의 상세 가이드로 바로 이동하세요.",
+      url: `${SITE}/strategy`,
+      isPartOf: { "@type": "WebSite", name: "홀덤마스터", url: SITE },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "홈", item: `${SITE}/` },
+        { "@type": "ListItem", position: 2, name: "홀덤 전략 가이드", item: `${SITE}/strategy` },
+      ],
+    },
+  ];
+
   return (
     <HubPage title="전략">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <StrategyClient />
     </HubPage>
   );

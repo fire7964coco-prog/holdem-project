@@ -3,67 +3,12 @@
 import { motion } from "framer-motion";
 import { CheckCircle, ChevronRight, Shield, AlertTriangle, Scale, BookOpen, BookText, Info, Calculator, LayoutGrid, HelpCircle, ExternalLink } from "lucide-react";
 import { SEO } from "@/components/seo";
+// ★SITES·FAQS는 `ranking-data.ts`로 옮겼다 — 서버 page.tsx의 JSON-LD와 **같은 배열**을 써야 한다.
+import { SITES, FAQS } from "./ranking-data";
 
 // Public information (official URL, license jurisdiction, founding, notable facts) about
 // widely known online poker sites. This is a factual summary — not a ranking or endorsement.
 // Legality and availability must be verified by the reader. (As of 2026-07)
-const SITES = [
-  {
-    name: "GGPoker",
-    logo: "GG",
-    logoColor: "from-blue-600 to-blue-800",
-    tag: "World's largest traffic",
-    url: "https://ggpoker.com",
-    license: "Isle of Man, etc.",
-    founded: "2014",
-    features: ["WSOP online partner", "Rush & Cash fast-fold", "Slick mobile app"],
-    note: "Operated by GG International Limited under an Isle of Man license (among others). Currently the highest-traffic online poker network in the world and the WSOP's online bracelet partner.",
-  },
-  {
-    name: "PokerStars",
-    logo: "PS",
-    logoColor: "from-red-600 to-red-800",
-    tag: "Longest-running · biggest history",
-    url: "https://www.pokerstars.com",
-    license: "Malta (MGA), others",
-    founded: "2001",
-    features: ["WCOOP & SCOOP major series", "Owned by Flutter", "Rock-solid software"],
-    note: "Founded in 2001 and now part of Flutter Entertainment. It surrendered its Isle of Man license in 2025 and operates under Malta (MGA) and other jurisdictions. Runs multi-million-dollar series like WCOOP and SCOOP every year.",
-  },
-  {
-    name: "888poker",
-    logo: "888",
-    logoColor: "from-orange-500 to-orange-700",
-    tag: "Listed operator · beginner-friendly",
-    url: "https://www.888poker.com",
-    license: "Malta (MGA), UK (UKGC)",
-    founded: "2002",
-    features: ["Run by Evoke plc (ex-888 Holdings)", "Separate beginner tables", "888poker LIVE events"],
-    note: "Founded in 2002 and run by the publicly listed Evoke plc (formerly 888 Holdings), headquartered in Gibraltar. Holds respected MGA and UK licenses and is known for running separate tables for beginners.",
-  },
-  {
-    name: "IDNPoker",
-    logo: "IDN",
-    logoColor: "from-purple-600 to-purple-800",
-    tag: "Asia's largest network",
-    url: "https://www.idnpoker.com",
-    license: "PAGCOR (Philippines)",
-    founded: "2010",
-    features: ["HQ in Makati, Philippines", "BMM fairness audit · RNG certified", "Skin/agent-based access"],
-    note: "Asia's largest network, headquartered in Makati, Philippines, with a PAGCOR license and BMM fairness audits. It isn't a single site but a network accessed through 200+ skins (agents) — safety varies a lot depending on which skin/agent you use, so extra caution is needed.",
-  },
-  {
-    name: "WPT Global",
-    logo: "WPT",
-    logoColor: "from-emerald-600 to-emerald-800",
-    tag: "WPT official · fast-growing",
-    url: "https://www.wptglobal.com",
-    license: "Costa Rica / Curaçao",
-    founded: "2022",
-    features: ["Official World Poker Tour online", "Live satellite tournaments", "130+ countries"],
-    note: "The official online platform of the World Poker Tour, launched in April 2022. It runs under Costa Rica/Curaçao licensing and serves 130+ countries, with online satellites that feed into live WPT events. A fast-growing, newer platform.",
-  },
-];
 
 const CRITERIA = [
   {
@@ -98,55 +43,6 @@ const RED_FLAGS = [
 ];
 
 export default function RankingEn() {
-  const jsonLd = [
-    {
-      "@type": "ItemList",
-      "name": "Widely known online poker sites (informational)",
-      "description": "A factual summary of widely known online Texas Hold'em sites by founding, license jurisdiction, and notable features (for information only, not a ranking or endorsement)",
-      "itemListElement": SITES.map((s, i) => ({
-        "@type": "ListItem",
-        "position": i + 1,
-        "name": s.name,
-        "url": s.url,
-      })),
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How do I choose a safe online poker site?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Look for a license from a credible regulator (Malta MGA, UK UKGC, Isle of Man), RNG fairness audits, segregated player funds, real withdrawal reports, and a long, transparent track record. Avoid sites with unclear company information, unrealistic bonuses, or that operate only through messaging apps.",
-          },
-        },
-        {
-          "@type": "Question",
-          "name": "Is online poker legal?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "It depends entirely on where you live. Online poker is licensed and regulated in some jurisdictions and restricted or prohibited in others, so you must check your local laws. You must also be of legal age (18+/21+ depending on jurisdiction).",
-          },
-        },
-        {
-          "@type": "Question",
-          "name": "How can I avoid scam poker sites?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The main warning signs are missing or unverifiable licensing, repeated reports of delayed or refused withdrawals, guarantees of profit, aggressive deposit pressure, and operations that have no official site and run only through messaging apps.",
-          },
-        },
-      ],
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.holdemmaster.com/en/" },
-        { "@type": "ListItem", "position": 2, "name": "Online Poker Sites Guide", "item": "https://www.holdemmaster.com/en/ranking" },
-      ],
-    },
-  ];
 
   return (
     <>
@@ -155,7 +51,6 @@ export default function RankingEn() {
         description="Before you pick an online poker site, check the safety and legality criteria and scam warning signs. Plus a factual comparison of major poker sites by license, size, and features."
         keywords="best online poker sites, safe online poker, how to choose a poker site, online poker comparison, GGPoker, PokerStars, 888poker, IDNPoker, WPT Global, avoid poker scams"
         path="/en/ranking"
-        schema={jsonLd}
       />
 
       {/* Header */}
@@ -299,6 +194,28 @@ export default function RankingEn() {
               <div key={flag} className="flex items-start gap-2.5 bg-card border border-border rounded-xl p-4">
                 <span className="text-red-400 font-bold flex-shrink-0 mt-0.5">✕</span>
                 <span className="text-sm text-foreground leading-relaxed">{flag}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ — ★서버 page.tsx의 FAQPage 스키마와 **같은 FAQS 배열**을 쓴다.
+          스키마에만 있고 화면에 없으면 구글 FAQPage 스펙 위반이고, LLM도 읽지 못한다. */}
+      <section className="py-12 bg-background">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="flex items-center gap-3 mb-6">
+            <HelpCircle className="w-6 h-6 text-primary flex-shrink-0" />
+            <h2 className="text-2xl font-serif font-bold text-foreground">Online poker sites — FAQ</h2>
+          </div>
+          <div className="flex flex-col gap-3">
+            {FAQS.map(faq => (
+              <div key={faq.q} className="bg-card border border-border rounded-xl p-5">
+                <h3 className="font-bold text-foreground text-sm mb-2 flex items-start gap-2">
+                  <span className="text-primary font-serif text-base flex-shrink-0">Q.</span>
+                  {faq.q}
+                </h3>
+                <p className="text-sm text-muted-foreground leading-relaxed pl-5">{faq.a}</p>
               </div>
             ))}
           </div>

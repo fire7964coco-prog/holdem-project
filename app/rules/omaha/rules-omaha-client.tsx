@@ -1,5 +1,7 @@
 "use client";
 
+import { FAQ_ITEMS } from "./faq-data";
+
 import { SEO } from "@/components/seo";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -81,48 +83,12 @@ const PLO_TIPS = [
   { title: "너트 핸드 집착하기", desc: "오마하에서는 최강 핸드(너트)가 자주 나옵니다. 두 번째로 강한 핸드로는 큰 팟을 이기기 어렵습니다.", icon: "🎯" },
 ];
 
-const FAQ_ITEMS = [
-  { q: "오마하와 텍사스 홀덤의 가장 큰 차이점은?", a: "홀 카드 수가 다릅니다. 홀덤은 2장, 오마하는 4장입니다. 또한 오마하는 홀 카드 중 반드시 정확히 2장을 사용해야 합니다. 이 규칙 때문에 패 조합이 훨씬 복잡해집니다." },
-  { q: "오마하에서 홀 카드 4장 중 원하는 만큼 쓸 수 있나요?", a: "아닙니다. 오마하의 핵심 규칙은 홀 카드 정확히 2장 + 커뮤니티 카드 정확히 3장으로 5장을 만들어야 한다는 것입니다. 1장만 쓰거나, 3장을 쓰거나, 커뮤니티 카드만 5장 쓰는 것은 모두 불가능합니다." },
-  { q: "팟 리밋(PLO)에서 최대 베팅액은 어떻게 계산하나요?", a: "레이즈 최대액 = 현재 팟 크기 + 상대의 베팅 + 내가 콜해야 할 금액입니다. 예를 들어 팟이 10만원이고 상대가 5만원을 베팅했다면, 최대 레이즈는 25만원(10+5+10)입니다." },
-  { q: "오마하 하이로(Hi-Lo)란 무엇인가요?", a: "오마하 8 또는 베터라고도 합니다. 한 판에서 가장 강한 패(하이)와 가장 약한 패(로우)가 팟을 나눕니다. 로우 핸드는 8 이하 서로 다른 숫자 5장으로 만들어야 합니다." },
-  { q: "오마하가 홀덤보다 어려운가요?", a: "더 복잡합니다. 홀 카드 4장의 조합이 훨씬 많고, 너트 핸드가 자주 등장해 두 번째 강한 패로 큰 팟을 잃는 일이 많습니다. 홀덤을 충분히 익힌 후 오마하로 넘어오길 권장합니다." },
-  { q: "오마하에서 블러핑이 효과적인가요?", a: "홀덤보다 블러핑이 어렵습니다. 오마하는 드로우가 많아 많은 플레이어가 끝까지 콜하는 경향이 있습니다. 더 강한 메이드 핸드를 중심으로 전략을 짜는 것이 좋습니다." },
-];
+
 
 export default function Omaha() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
-  const jsonLd = [
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "오마하 포커 규칙 완벽 가이드 — PLO 홀 카드 4장 사용법",
-      "description": "오마하 포커 기초 규칙을 초보자도 이해할 수 있게 정리했습니다. 홀 카드 4장 규칙, 팟 리밋 베팅, 텍사스 홀덤과의 차이점까지 한 페이지에서 완성.",
-      "author": { "@type": "Organization", "name": "홀덤마스터" },
-      "publisher": { "@type": "Organization", "name": "홀덤마스터", "url": "https://www.holdemmaster.com" },
-      "dateModified": "2026-03-24",
-      "keywords": "오마하 포커, 오마하 규칙, PLO, 팟 리밋 오마하, 오마하 하이로, 포커 규칙",
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": FAQ_ITEMS.map(f => ({
-        "@type": "Question",
-        "name": f.q,
-        "acceptedAnswer": { "@type": "Answer", "text": f.a },
-      })),
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://www.holdemmaster.com/" },
-        { "@type": "ListItem", "position": 2, "name": "게임 방법", "item": "https://www.holdemmaster.com/rules" },
-        { "@type": "ListItem", "position": 3, "name": "오마하 포커 규칙", "item": "https://www.holdemmaster.com/rules/omaha" },
-      ],
-    },
-  ];
+
 
   return (
     <>
@@ -130,8 +96,7 @@ export default function Omaha() {
         title="오마하 포커 규칙 완벽 가이드 — PLO 홀 카드 4장, 팟 리밋 완전 정리"
         description="⚡오마하 포커⚡ 기초 규칙 완벽 가이드. 홀 카드 4장 사용법, 팟 리밋 베팅 방식, 텍사스 홀덤과의 차이점, PLO 핵심 전략 팁까지 한 페이지에서 마스터하세요."
         keywords="오마하 포커 규칙, PLO, 팟 리밋 오마하, 오마하 하이로, 오마하 홀 카드 4장, 오마하 하는법"
-        path="/rules/omaha"
-        schema={jsonLd}
+        path="/rules/omaha"
       />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-16">
@@ -269,9 +234,10 @@ export default function Omaha() {
                   <span className="font-semibold text-foreground pr-4">{item.q}</span>
                   <ChevronRight className={`w-4 h-4 text-primary shrink-0 transition-transform duration-200 ${openFaq === i ? "rotate-90" : ""}`} />
                 </button>
-                {openFaq === i && (
-                  <div className="px-5 pb-5 text-sm text-muted-foreground leading-relaxed border-t border-border pt-4">{item.a}</div>
-                )}
+                {/* 🔴 2026-08-13: 전엔 조건부 렌더라 **답변이 서버 HTML에 한 글자도 없었다.**
+                      크롤러·LLM은 클릭하지 않으므로 FAQ 답변이 통째로 안 보였고, FAQPage 스키마를 붙이면
+                      «페이지에 없는 답변»을 주장하게 된다. → DOM엔 항상 넣고 CSS로만 접는다. */}
+                  <div className={`px-5 pb-5 text-sm text-muted-foreground leading-relaxed border-t border-border pt-4 ${openFaq === i ? "" : "hidden"}`}>{item.a}</div>
               </motion.div>
             ))}
           </div>
