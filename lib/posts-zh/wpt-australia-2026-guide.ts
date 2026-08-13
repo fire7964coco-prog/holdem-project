@@ -4,11 +4,11 @@ export const POST: Post = {
   slug: "wpt-australia-2026-guide",
   title: "WPT Australia 2026 完整参赛指南：赛程、卫星赛与真实花费",
   seoTitle: "第一次打 WPT Australia？2026 参赛你要知道的一切",
-  desc: "WPT Australia 2026 于 9 月 10–30 日在 The Star Sydney 举行，两大旗舰赛买入分别为 AUD $1,500 Prime 与 AUD $5,000 Championship，现场卫星赛 AUD 约 $255 起。这篇讲清怎么打入资格、国际牌手如何支付买入，以及对手不会告诉你的真实行程花费。",
-  tldr: "WPT Australia 2026：9 月 10–30 日，The Star Sydney。两个旗舰赛：AUD $1,500 WPT Prime（9 月 17–22 日）和 AUD $5,000 WPT Championship（9 月 24–30 日）。现场卫星赛 AUD 约 $255 起。冠军额外获得 $10,400 WPT World Championship 席位。必须年满 18 岁、成为 Star Club 会员，并遵守 smart-casual 着装要求。",
+  desc: "WPT Australia 2026 于 9 月 10–30 日在 The Star Sydney 举行，两大旗舰赛买入分别为 AUD $1,500 Prime 与 AUD $5,000 Championship，现场卫星赛 AUD $270 起。这篇讲清怎么打入资格、国际牌手如何支付买入，以及对手不会告诉你的真实行程花费。",
+  tldr: "WPT Australia 2026：9 月 10–30 日，The Star Sydney。两个旗舰赛：AUD $1,500 WPT Prime（9 月 17–22 日）和 AUD $5,000 WPT Championship（9 月 24–30 日）。现场卫星赛 AUD $270 起，主赛资格赛为 $290 与 $550。冠军的头名奖金里包含一个 $15,000 的 WPT World Championship 席位。必须年满 18 岁、成为 Star Club 会员，并遵守 smart-casual 着装要求。",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-07-25",
+  updated: "2026-08-13",
   masterUpdated: "2026-07-25",
   readTime: "14 分钟",
   emoji: "🦘",
@@ -38,7 +38,7 @@ WPT Australia 2026 重回 The Star Sydney，规模是 WPT 历史上最大的一�
 ---
 
 > **快速回答**
-> WPT Australia 2026 于 ==**9 月 10–30 日**== 在 The Star Sydney（达令港）举行。两场冠军赛：==**AUD $1,500 WPT Prime**==（9 月 17–22 日）和 ==**AUD $5,000 WPT Australia Championship**==（9 月 24–30 日）。冠军赛冠军还会获得 ==g:12 月 WPT World Championship（Wynn Las Vegas）的 $10,400 席位==。==r:WPT Global 不在澳大利亚运营——只能打现场卫星赛。==
+> WPT Australia 2026 于 ==**9 月 10–30 日**== 在 The Star Sydney（达令港）举行。两场冠军赛：==**AUD $1,500 WPT Prime**==（9 月 17–22 日）和 ==**AUD $5,000 WPT Australia Championship**==（9 月 24–30 日）。冠军赛冠军的头名奖金里包含 ==g:一个 $15,000 的 WPT World Championship 席位==——注意：==r:这笔席位是从奖池里扣除的，并非额外加发==。==r:WPT Global 不在澳大利亚运营——只能打现场卫星赛。==
 
 ---
 
@@ -58,7 +58,7 @@ WPT Australia 2026 重回 The Star Sydney，规模是 WPT 历史上最大的一�
 | 2025 冠军 | —— | Alan Pham（AUD $558,211） |
 | 赛事数 | ==**36 场赛事**==，预计 AUD $10M+ | 约 20 场赛事 |
 | 直播 | 两场决赛全球直播 | 仅主赛事 |
-| WC 席位奖励 | ==g:+$10,400 WPT World Championship== | +$10,400 |
+| WC 席位 | ==g:$15,000 席位，从奖池扣除== | +$10,400 |
 
 </div>
 
@@ -102,13 +102,16 @@ WPT Australia 2026 重回 The Star Sydney，规模是 WPT 历史上最大的一�
 
 | 路径 | 形式 | 买入 | 赢得 |
 |:---:|---|---|---|
-| **Step 1 → Step 2** | 两阶段资格赛 | ==g:AUD 共约 $255== | WPT Championship 席位 |
-| **直接资格赛** | 1/8 卫星赛 | AUD 约 $1,075 | WPT Championship 席位 |
-| **赛事期间现场** | 每日卫星赛，9 月 10–22 日 | 不等（AUD $200–600） | Prime 或 Championship 席位 |
+| **主赛直接资格赛** | 赛前阶段，==**7 月 24 日**==起 | ==g:$290 或 $550== | Championship 席位 |
+| **主赛直接资格赛** | 赛事期间，==**至 9 月 25 日**== | $550 | Championship 席位 |
+| **Prime Championship** | 1/6 卫星赛 | ==g:$290== | Prime 席位 |
+| **Australian Poker Cup** | 1/5 卫星赛 | $270 | Poker Cup 席位 |
+| **Mini-Championship** | 1/8 卫星赛 | $290 | Mini-Championship 席位 |
+| **赛事期间其他卫星赛** | 每日开赛，==**至 9 月 28 日**== | $270–550 | 对应赛事席位 |
 
 </div>
 
-> **The Star 的阶梯卫星赛怎么运作**：Step 1（约 AUD $255）→ 赢得一张直接资格赛门票 → 每 8 人中有 1 人赢得 Championship 席位。或者跳过 Step 1，直接以约 AUD $1,075 报名直接资格赛。2026 年确切买入会在赛事临近时于 [starpoker.com.au](https://www.starpoker.com.au) 公布。
+> **The Star 没有阶梯式卫星赛**——通往主赛的每条路都是==**直接资格赛**==。你只交一次 $290 或 $550，就直接打席位；不存在「先打便宜的一级、再进贵的一级」这种结构。==r:卫星赛早就开打了==——赛前赛程从 **7 月 24 日**（主赛前两个月）就开始。也就是说，等着 9 月「卫星赛季」的人，已经白白错过了好几周最便宜的 $290 资格赛。主赛资格赛一直打到 **9 月 25 日**（Day 1A 开赛之后仍有），其余卫星赛则到 **9 月 28 日**。
 
 ### 海外牌手能在线上打入资格吗？
 
@@ -137,7 +140,7 @@ WPT Australia 2026 重回 The Star Sydney，规模是 WPT 历史上最大的一�
 
 </div>
 
-> **以上 12 场为重点赛事——完整赛程共 36 场赛事**（见 [starpoker.com.au](https://www.starpoker.com.au/wpt-australia)）。根据 NSW 法规，GTD 保证奖池不对外公布，但根据历史人数，整个赛事预计总额在 AUD $10M+。仅 2025 年冠军赛就产生了 AUD $3,000,000。
+> **以上 12 场为重点赛事——完整赛程共 36 场赛事**（见 [starpoker.com.au](https://www.starpoker.com.au/wpt-australia)）。本届赛事没有公布保证奖池——官方赛程保证的是卫星赛的**席位数**。所以任何「赛事总额」都只能当作估算：按历史人数看，AUD $10M+ 是合理预期，仅 2025 年冠军赛就产生了 AUD $3,000,000。
 
 ---
 
@@ -155,7 +158,7 @@ WPT Australia 2026 重回 The Star Sydney，规模是 WPT 历史上最大的一�
 
 2026 年买入降到 AUD $5,000（从 2025 年的 $5,500 下调），加上新的双冠军赛制把更多牌手带进赛事，参赛规模预计将是赛事史上最大。
 
-**冠军奖励**：WPT Australia Championship 的冠军还会获得 ==g:2026 年 12 月 WPT World Championship（Wynn Las Vegas）的 $10,400 门票==——让整个套餐价值远超 $5,000 的买入。
+**冠军的席位**：WPT Australia Championship 头名奖金里包含 ==g:2026 年 12 月 WPT World Championship 的 $15,000 席位==。官方措辞要读仔细——这个席位是==r:头名奖金的一部分，会从总奖池里扣除==，而不是在现金之外另加的奖励。Prime Championship 的冠军同样条件下获得 $1,500 的 Prime 席位。
 
 ---
 
@@ -222,20 +225,23 @@ The Star Sydney 位于 **80 Pyrmont Street, Pyrmont NSW 2009**——就在达令
 
 <div style="background:rgba(0,0,0,0.25);border:1px solid rgba(255,255,255,0.10);border-radius:10px;padding:16px 22px;margin:16px 0;font-size:13px;line-height:2">
 <strong>The Star Sydney——关于电汇</strong><br/>
-⚠️ The Star 会<strong>按每位客人单独发放</strong>汇款信息——<strong>请勿汇款至任何网上找到的账号。</strong><br/>
-出发前，请通过 starpoker.com.au 或 Guest Service Desk 联系 Star Poker 或 The Star Sydney 出纳（cage），索取<strong>以你本人名义开具</strong>的最新汇款信息。<br/>
-预期：NAB 账户、<strong>仅限个人银行账户</strong>（不接受 Wise/Revolut/第三方）、汇款附言填写你的全名 + 护照号，1–3 个工作日到账。
+⚠️ 请<strong>先加入 Star Club</strong>。汇款附言要填<strong>会员号（Member ID）+ 姓氏</strong>，没有会员号就没法正确汇款。<br/>
+账户信息<strong>公开发布在 starpoker.com.au 的官方 Funds Management Sheet 上</strong>——并非按客人单独发放。只从这份文件上取账户信息，绝不要用别人发给你的账号。<br/>
+预期：NAB 账户、<strong>仅限个人银行账户</strong>（不接受 Wise/Revolut/第三方），到账需要几个工作日。
 </div>
 
 ==r:重要限制：==
 - 来自 Wise、Revolut 或任何汇款服务商的转账都会被 **拒收**
 - 不接受第三方、公司或信托账户——仅限个人银行账户
-- 在转账备注中写上你的全名和护照号
-- 资金到账需要 1–3 个工作日——至少在赛事前一周转出
+- 转账备注必须是 ==r:会员号 + 姓氏==——不是护照号
+- 至少在赛事前一周转出，确保落地时资金已到账
 
-### 抵达之后
+### 抵达之后——两个柜台不是同一个
 
-带上护照到 Guest Service Desk。在尝试报名前，确认你的电汇已到账，且资金已划入你的账户。
+几乎所有人都栽在这一步：给你办登记的柜台，==r:并不是==放款给你的柜台。
+
+1. **Guest Service Desk**（主赌场层）——完成登记，用==r:护照原件==核验身份，领取会员卡。
+2. **Cashier / 出纳（cage）**（主赌场层）——带上==g:会员卡、护照，以及汇款凭证==（手机银行界面、对账单或回单，需能证明款项来自你本人名下的个人账户）。资金要在这里才会划入你的 Star 账户。
 
 ---
 
@@ -267,13 +273,13 @@ The Star Sydney 位于 **80 Pyrmont Street, Pyrmont NSW 2009**——就在达令
 
 | 方案 | 买入 | 酒店（10 晚） | 机票（亚太） | 餐饮与交通 | **总计** |
 |:---:|---|---|---|---|---|
-| **省钱** | AUD $255（卫星赛 step） | AUD $1,200（经济酒店） | 约 AUD $800 | AUD $600 | ==g:约 AUD $2,855== |
+| **省钱** | AUD $290（卫星赛） | AUD $1,200（经济酒店） | 约 AUD $800 | AUD $600 | ==g:约 AUD $2,890== |
 | **标准** | AUD $1,500（Prime） | AUD $2,500（三星） | 约 AUD $1,200 | AUD $900 | ==**约 AUD $6,100**== |
 | **完整体验** | AUD $1,500 + $5,000（两场） | AUD $5,000（The Star Grand） | 约 AUD $1,500 | AUD $1,200 | 约 AUD $14,200 |
 
 </div>
 
-> **注**：省钱方案假设你通过现场阶梯资格赛（约 AUD $255）赢得了 Prime 卫星赛席位。标准和完整体验方案包含直接买入。往返东亚/东南亚的机票通常在 AUD $700–1,500 之间。
+> **注**：省钱方案假设你用一场 AUD $290 的直接资格赛赢下席位——这是能通往主赛席位的最便宜单场买入。标准和完整体验方案包含直接买入。往返东亚/东南亚的机票通常在 AUD $700–1,500 之间。
 
 ---
 
@@ -286,7 +292,7 @@ The Star Sydney 位于 **80 Pyrmont Street, Pyrmont NSW 2009**——就在达令
 
 **Q. 我能用 WPT Global 线上打入 WPT Australia 2026 的资格吗？**
 
-A. ==r:不能。== WPT Global 不在澳大利亚运营——它是受限地区。你的打入选项仅限于 The Star Sydney 的现场卫星赛，这些卫星赛大约在冠军赛开始前 2 周开跑。
+A. ==r:不能。== WPT Global 不在澳大利亚运营——它是受限地区。你的打入选项仅限于 The Star Sydney 的现场卫星赛。这些卫星赛从 ==g:7 月 24 日== 就开跑了——是冠军赛前两个月，不是两周——而且会一路办到赛事结束。
 
 **Q. 我需要提前办好 The Star Club 会员吗？**
 
@@ -294,19 +300,19 @@ A. 你可以在 thestarclub.com.au/sign-up 在线预注册以节省时间，但 
 
 **Q. 进入 WPT Australia Championship 最便宜的方式是什么？**
 
-A. 现场的两阶段卫星赛路径能让你以 ==g:约 AUD $255== 搏一个机会。Step 1（约 AUD $255）通向 Step 2（约 AUD $1,075），每 8 人中有 1 人赢得 Championship 席位。2026 年确切的卫星赛买入会在赛事临近时于 [starpoker.com.au](https://www.starpoker.com.au) 公布。
+A. ==g:AUD $290 的主赛直接资格赛==是最便宜的路径——单场卫星赛直接打 $5,000 主赛席位，没有阶梯结构。$290 这档在赛前赛程里（7 月 24 日起）；赛事一开打，主赛资格赛就变成 $550。完整卫星赛列表见 [starpoker.com.au](https://www.starpoker.com.au/wpt-australia)。
 
 **Q. 在澳大利亚，扑克奖金要交税吗？**
 
 A. ==g:对于休闲牌手，扑克奖金在澳大利亚一般不征税==——ATO 通常把扑克视为运气游戏而非生意。职业牌手可能有不同的纳税义务。请就你的具体情况咨询税务顾问。
 
-**Q. 每天锦标赛报名什么时候开始？**
+**Q. 打 WPT Australia 的 Day 1，该提前多久到场？**
 
-A. ==g:报名在每场赛事开始前 1 小时开放。== 对于人多的冠军赛起始单日赛，请至少提前 90 分钟到场，以免排队耽误。
+A. 按公布的开赛时间来安排：The Star 公布的是赛事开赛时间，不是报名柜台的开放时间，所以把开赛时间当成截止线而不是目标。人多的冠军赛起始单日赛，==g:留 90 分钟==比较稳——真正的瓶颈是报名排队，以及你还没入会时的 Star Club 排队。万一来不及，==g:无限次 re-entry 开放到 Day 1A、1B、1C 的第 10 级开始==，所以迟到还有救。
 
 **Q. 如果我早早出局，能在 The Star Sydney 打现金局吗？**
 
-A. 能。The Star Poker 室每天开现金局 ==g:上午 10 点至凌晨 4 点==，注额从 $2/$3 NLH（AUD $200–500 买入）到 $25/$50 NLH。使用短信候补系统：从上午 9 点起，发送 **Game [Code] [首字母 + 会员号后 3 位]** 到 **0480 049 257**。
+A. 能。The Star Poker 室每天开现金局 ==g:上午 10 点至凌晨 4 点==，注额从 $2/$3 NLH（AUD $200–500 买入）到 $25/$50 NLH。候补名单从上午 9 点起通过短信登记，发送到 **0480 049 257**，格式为 **Game 020 xxx**。==r:这个 xxx 不是你的会员号==——它是牌室左侧屏幕下方显示的验证码，每 40 秒变一次。也就是说，==r:你必须人在牌室里才能排上候补==，在酒店发短信是登记不了的。
 
 ---
 

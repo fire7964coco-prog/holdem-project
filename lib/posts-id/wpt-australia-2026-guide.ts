@@ -4,11 +4,11 @@ export const POST: Post = {
   slug: "wpt-australia-2026-guide",
   title: "WPT Australia 2026 — Panduan Pemain Lengkap: Jadwal, Satelit & Biaya Nyata",
   seoTitle: "Pertama Kali di WPT Australia? Semua yang Perlu Anda Tahu 2026",
-  desc: "WPT Australia 2026 — 10–30 Sep, The Star Sydney. AUD $1.500 Prime + AUD $5.000 Championship. Satelit dari AUD ~$255. Biaya perjalanan nyata.",
-  tldr: "WPT Australia 2026: 10–30 Sep, The Star Sydney. Dua flagship: AUD $1.500 WPT Prime (17–22 Sep) dan AUD $5.000 WPT Championship (24–30 Sep). Satelit on-site dari AUD ~$255. Juara mendapat kursi tambahan $10.400 WPT World Championship. Wajib 18+, anggota Star Club, dan dress code smart-casual ditegakkan.",
+  desc: "WPT Australia 2026 — 10–30 Sep, The Star Sydney. AUD $1.500 Prime + AUD $5.000 Championship. Satelit dari AUD $270. Biaya perjalanan nyata.",
+  tldr: "WPT Australia 2026: 10–30 Sep, The Star Sydney. Dua flagship: AUD $1.500 WPT Prime (17–22 Sep) dan AUD $5.000 WPT Championship (24–30 Sep). Satelit on-site dari AUD $270, dengan qualifier Championship $290 dan $550. Hadiah juara pertama Championship sudah termasuk kursi $15.000 ke WPT World Championship. Wajib 18+, anggota Star Club, dan dress code smart-casual ditegakkan.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-07-03",
+  updated: "2026-08-13",
   readTime: "14 mnt",
   emoji: "🦘",
   layout: "tournament-guide",
@@ -37,7 +37,7 @@ Festival live pertama Anda? Mulai dengan [panduan turnamen](/id/blog/holdem-tour
 ---
 
 > **Jawaban Cepat**
-> WPT Australia 2026 berlangsung ==**10–30 Sep**== di The Star Sydney, Darling Harbour. Dua event championship: ==**AUD $1.500 WPT Prime**== (17–22 Sep) dan ==**AUD $5.000 WPT Australia Championship**== (24–30 Sep). Juara Championship juga menerima ==g:kursi $10.400 ke WPT World Championship di Wynn Las Vegas== pada bulan Desember. ==r:WPT Global TIDAK beroperasi di Australia — satelit hanya on-site.==
+> WPT Australia 2026 berlangsung ==**10–30 Sep**== di The Star Sydney, Darling Harbour. Dua event championship: ==**AUD $1.500 WPT Prime**== (17–22 Sep) dan ==**AUD $5.000 WPT Australia Championship**== (24–30 Sep). Hadiah juara pertama Championship sudah termasuk ==g:kursi $15.000 ke WPT World Championship== — perhatikan: ==r:kursi itu dipotong dari prize pool, bukan bonus tambahan==. ==r:WPT Global TIDAK beroperasi di Australia — satelit hanya on-site.==
 
 ---
 
@@ -57,7 +57,7 @@ Festival tahun ini kembali ke ==**The Star Sydney**== dan memperkenalkan **forma
 | Juara 2025 | — | Alan Pham (AUD $558.211) |
 | Event | ==**36 event**==, est. AUD $10 juta+ | ~20 event |
 | Livestream | Kedua final global | Hanya main event |
-| Bonus Kursi WC | ==g:+$10.400 WPT World Championship== | +$10.400 |
+| Kursi WC | ==g:$15.000, dipotong dari prize pool== | +$10.400 |
 
 </div>
 
@@ -101,13 +101,15 @@ Ini pertanyaan yang ditanyakan setiap pemula. Berikut penjelasan jujurnya:
 
 | Jalur | Format | Buy-In | Menang |
 |:---:|---|---|---|
-| **Step 1 → Step 2** | Kualifikasi dua langkah | ==g:total AUD ~$255== | Kursi WPT Championship |
-| **Direct Qualifier** | Satelit 1-dari-8 | AUD ~$1.075 | Kursi WPT Championship |
-| **On-Site Selama Festival** | Satelit harian, 10–22 Sep | Beragam (AUD $200–600) | Kursi Prime atau Championship |
+| **Championship Direct Qualifier** | pra-festival, mulai ==**24 Juli**== | ==g:$290 atau $550== | Kursi Championship |
+| **Championship Direct Qualifier** | selama festival, ==**sampai 25 Sep**== | $550 | Kursi Championship |
+| **Prime Championship** | Satelit 1-dari-6 | ==g:$290== | Kursi Prime |
+| **Australian Poker Cup** | Satelit 1-dari-5 | $270 | Kursi Poker Cup |
+| **Mini-Championship** | Satelit 1-dari-8 | $290 | Kursi Mini-Championship |
 
 </div>
 
-> **Cara Kerja Step Satellite di The Star**: Step 1 (~AUD $255) → menangkan tiket ke Direct Qualifier → 1 dari 8 pemain memenangkan kursi Championship. Alternatifnya, lewati Step 1 dan langsung masuk Direct Qualifier seharga ~AUD $1.075. Buy-in 2026 yang persis akan dikonfirmasi di [starpoker.com.au](https://www.starpoker.com.au) menjelang event.
+> **Di The Star tidak ada tangga step satellite** — setiap jalur ke Championship adalah ==**direct qualifier**==. Anda bayar $290 atau $550 sekali, lalu langsung main memperebutkan kursi; tidak ada anak tangga murah yang menyambung ke tangga yang lebih mahal. ==r:Satelitnya sudah berjalan== — jadwal pra-festival dibuka **24 Juli, dua bulan sebelum Championship**. Jadi siapa pun yang menunggu "musim satelit" di bulan September sudah melewatkan berminggu-minggu qualifier $290 yang paling murah. Qualifier Championship berlanjut sampai **25 Sep** (setelah Day 1A dimulai), dan satelit lain sampai **28 Sep**.
 
 ### Bisakah Pemain Luar Negeri Kualifikasi Secara Online?
 
@@ -136,7 +138,7 @@ Kalau Anda di luar Australia dan ingin pemanasan dengan satelit online sebelum t
 
 </div>
 
-> **Total 36 event.** Prize pool GTD tidak diiklankan sesuai regulasi NSW, tapi seluruh festival diperkirakan mencapai AUD $10 juta+ berdasarkan jumlah peserta historis. Championship 2025 saja menghasilkan AUD $3.000.000.
+> **Total 36 event.** Festival ini tidak mengiklankan prize pool bergaransi — jadwal resminya justru menggaransi **kursi** di satelit — jadi perlakukan angka total festival sebagai perkiraan. Berdasarkan jumlah peserta historis, AUD $10 juta+ masih wajar: Championship 2025 saja menghasilkan AUD $3.000.000.
 
 ---
 
@@ -154,7 +156,7 @@ Kalau Anda di luar Australia dan ingin pemanasan dengan satelit online sebelum t
 
 Dengan buy-in 2026 diturunkan menjadi AUD $5.000 (dari $5.500 pada 2025) dan format dual-championship baru yang membawa lebih banyak pemain ke festival, field diperkirakan menjadi yang terbesar dalam sejarah event.
 
-**Bonus juara**: Peringkat pertama di WPT Australia Championship juga menerima ==g:kursi $10.400 ke WPT World Championship di Wynn Las Vegas== pada Desember 2026 — membuat nilai paket jauh di atas buy-in $5.000.
+**Kursi sang juara**: Hadiah peringkat pertama di WPT Australia Championship sudah termasuk ==g:kursi $15.000 ke WPT World Championship== Desember 2026. Baca teliti kalimat resminya — kursi itu ==r:bagian dari hadiah juara pertama dan dipotong dari prize pool==, bukan bonus yang dibayar terpisah di luar uang tunai. Juara Prime Championship menerima kursi Prime $1.500 dengan ketentuan yang sama.
 
 ---
 
@@ -221,20 +223,24 @@ Untuk buy-in di atas AUD $5.000 (atau untuk menghindari logistik penarikan haria
 
 <div style="background:rgba(0,0,0,0.25);border:1px solid rgba(255,255,255,0.10);border-radius:10px;padding:16px 22px;margin:16px 0;font-size:13px;line-height:2">
 <strong>The Star Sydney — Tentang Transfer Bank</strong><br/>
-⚠️ The Star menerbitkan detail transfer <strong>secara individual per tamu</strong> — <strong>jangan transfer ke nomor rekening mana pun yang ditemukan online.</strong><br/>
+⚠️ Gabung Star Club <strong>lebih dulu</strong>. Berita transfernya adalah <strong>Member ID dan nama belakang</strong> Anda, jadi tanpa nomor anggota Anda tidak bisa mengirim dana dengan benar.<br/>
+Detail rekeningnya <strong>dipublikasikan di Funds Management Sheet resmi</strong> di starpoker.com.au — bukan diterbitkan individual per tamu. Ambil detailnya hanya dari lembar itu, jangan pernah dari nomor rekening yang dikirim orang lain.<br/>
 Sebelum terbang, hubungi Star Poker atau kasir (cage) The Star Sydney (via starpoker.com.au atau Guest Service Desk) untuk meminta detail transfer terkini yang <strong>diterbitkan atas nama Anda</strong>.<br/>
-Perkiraan: rekening NAB, <strong>hanya rekening bank pribadi</strong> (bukan Wise/Revolut/pihak ketiga), nama lengkap + nomor paspor Anda di berita transfer, dan 1–3 hari kerja untuk masuk.
+Perkiraan: rekening NAB, <strong>hanya rekening bank pribadi</strong> (bukan Wise/Revolut/pihak ketiga), dan beberapa hari kerja untuk masuk.
 </div>
 
 ==r:Batasan penting:==
 - Transfer dari Wise, Revolut, atau penyedia remitansi mana pun akan **ditolak**
 - Tidak boleh rekening pihak ketiga, bisnis, atau trust — hanya rekening bank pribadi
-- Sertakan nama lengkap dan nomor paspor Anda dalam referensi transfer
+- Berita transfer harus berisi ==r:Member ID dan nama belakang Anda== — bukan nomor paspor
 - Dana butuh 1–3 hari kerja untuk masuk — transfer setidaknya seminggu sebelum festival
 
 ### Saat Tiba
 
-Kunjungi Guest Service Desk dengan paspor Anda. Pastikan transfer bank Anda sudah masuk dan dana telah dialokasikan ke akun Anda sebelum mencoba mendaftar.
+Ini yang membuat hampir semua orang tersandung: meja yang mendaftarkan Anda ==r:bukan== meja yang mencairkan dana Anda.
+
+1. **Guest Service Desk** (Main Casino Floor) — selesaikan registrasi, verifikasi identitas dengan ==r:paspor asli==, ambil kartu keanggotaan.
+2. **Cashier / Kasir** (Main Casino Floor) — bawa ==g:kartu keanggotaan, paspor, dan bukti transfer== (aplikasi bank, rekening koran, atau resi yang menunjukkan dana berasal dari rekening pribadi atas nama Anda). Baru di sinilah dana dialokasikan ke akun Star Anda.
 
 ---
 
@@ -266,13 +272,13 @@ Berikut biaya perjalanan WPT Australia lengkap yang sebenarnya, berdasarkan data
 
 | Skenario | Buy-In | Hotel (10 malam) | Penerbangan (Asia/Pasifik) | Makan & Transportasi | **Total** |
 |:---:|---|---|---|---|---|
-| **Hemat** | AUD $255 (step satelit) | AUD $1.200 (hotel budget) | ~AUD $800 | AUD $600 | ==g:~AUD $2.855== |
+| **Hemat** | AUD $290 (satelit) | AUD $1.200 (hotel budget) | ~AUD $800 | AUD $600 | ==g:~AUD $2.890== |
 | **Standar** | AUD $1.500 (Prime) | AUD $2.500 (bintang 3) | ~AUD $1.200 | AUD $900 | ==**~AUD $6.100**== |
 | **Pengalaman Penuh** | AUD $1.500 + $5.000 (keduanya) | AUD $5.000 (The Star Grand) | ~AUD $1.500 | AUD $1.200 | ~AUD $14.200 |
 
 </div>
 
-> **Catatan**: Skenario hemat mengasumsikan Anda memenangkan satelit Prime melalui step qualifier on-site (~AUD $255). Skenario standar dan pengalaman penuh mencakup buy-in langsung. Penerbangan dari Asia Timur/Asia Tenggara biasanya berkisar AUD $700–1.500 pulang-pergi.
+> **Catatan**: Skenario hemat mengasumsikan Anda memenangkan kursi lewat satu direct qualifier AUD $290 — entry tunggal termurah yang berujung ke kursi championship. Skenario standar dan pengalaman penuh mencakup buy-in langsung. Penerbangan dari Asia Timur/Asia Tenggara biasanya berkisar AUD $700–1.500 pulang-pergi.
 
 ---
 
@@ -285,7 +291,7 @@ Berikut biaya perjalanan WPT Australia lengkap yang sebenarnya, berdasarkan data
 
 **Q. Bisakah saya kualifikasi ke WPT Australia 2026 lewat WPT Global online?**
 
-A. ==r:Tidak bisa.== WPT Global tidak beroperasi di Australia — ini adalah wilayah yang dibatasi. Opsi kualifikasi Anda terbatas pada satelit on-site di The Star Sydney, yang mulai berjalan sekitar 2 minggu sebelum event championship.
+A. ==r:Tidak bisa.== WPT Global tidak beroperasi di Australia — ini adalah wilayah yang dibatasi. Opsi kualifikasi Anda terbatas pada satelit on-site di The Star Sydney. Satelit itu dimulai ==g:24 Juli== — dua bulan sebelum Championship, bukan dua minggu — dan berjalan terus sepanjang festival.
 
 **Q. Apakah saya perlu memesan keanggotaan The Star Club terlebih dahulu?**
 
@@ -293,7 +299,7 @@ A. Anda bisa pra-registrasi online di thestarclub.com.au/sign-up untuk menghemat
 
 **Q. Apa cara termurah untuk masuk ke WPT Australia Championship?**
 
-A. Rute satelit dua langkah on-site memberi Anda peluang seharga ==g:sekitar AUD $255==. Step 1 (~AUD $255) mengalir ke Step 2 (~AUD $1.075), di mana 1 dari 8 pemain memenangkan kursi Championship. Buy-in satelit yang persis untuk 2026 akan dikonfirmasi di [starpoker.com.au](https://www.starpoker.com.au) menjelang festival.
+A. ==g:Championship Direct Qualifier AUD $290== adalah jalur termurah — satu satelit yang langsung memperebutkan kursi Championship $5.000, tanpa tangga step. Versi $290 ada di jadwal pra-festival (mulai 24 Juli); begitu festival berjalan, qualifier Championship menjadi $550. Daftar satelit lengkap: [starpoker.com.au](https://www.starpoker.com.au/wpt-australia).
 
 **Q. Apakah kemenangan poker dikenai pajak di Australia?**
 
@@ -301,11 +307,11 @@ A. ==g:Untuk pemain rekreasional, kemenangan poker umumnya tidak dikenai pajak d
 
 **Q. Kapan registrasi turnamen dibuka setiap hari?**
 
-A. ==g:Registrasi dibuka 1 jam sebelum dimulainya setiap event.== Untuk starting flight championship yang ramai, datang setidaknya 90 menit lebih awal untuk menghindari keterlambatan antrean.
+A. Berpatokanlah pada jam mulai yang diumumkan — The Star mengumumkan jam mulai event, bukan jam buka loket, jadi perlakukan jam mulai sebagai tenggat, bukan target. Untuk starting flight Championship yang ramai, ==g:sediakan 90 menit==: hambatan sebenarnya adalah antrean pendaftaran, dan antrean Star Club kalau Anda belum jadi anggota. Kalaupun terlambat, ==g:re-entry tanpa batas masih terbuka sampai awal level 10== di Day 1A, 1B, dan 1C — jadi datang telat masih bisa diselamatkan.
 
 **Q. Bisakah saya bermain cash game di The Star Sydney kalau saya bust lebih awal?**
 
-A. Bisa. Ruang poker The Star menjalankan cash game setiap hari ==g:pukul 10 pagi – 4 pagi==, taruhan dari $2/$3 NLH (buy-in AUD $200–500) sampai $25/$50 NLH. Gunakan sistem waitlist SMS: kirim teks **Game [Code] [Inisial + 3 digit terakhir keanggotaan]** ke **0480 049 257** mulai pukul 9 pagi.
+A. Bisa. Ruang poker The Star menjalankan cash game setiap hari ==g:pukul 10 pagi – 4 pagi==, taruhan dari $2/$3 NLH (buy-in AUD $200–500) sampai $25/$50 NLH. Waitlist dibuka pukul 9 pagi lewat SMS ke **0480 049 257**, dengan format **Game 020 xxx**. ==r:xxx itu bukan nomor keanggotaan Anda== — itu kode yang muncul di bagian bawah layar kiri ruang poker, dan berubah setiap 40 detik. Artinya ==r:Anda harus berada di dalam ruangan untuk masuk waitlist==; tidak bisa dikirim dari hotel.
 
 ---
 

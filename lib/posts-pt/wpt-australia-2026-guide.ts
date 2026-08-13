@@ -4,11 +4,11 @@ export const POST: Post = {
   slug: "wpt-australia-2026-guide",
   title: "WPT Australia 2026 — Guia completo do jogador: agenda, satellites e custos reais",
   seoTitle: "Primeira vez no WPT Australia? Tudo pra jogar em 2026",
-  desc: "WPT Australia 2026 — 10 a 30 de set, The Star Sydney. AUD $1.500 Prime + AUD $5.000 Championship. Satellite desde AUD ~$255 e os custos reais da viagem.",
-  tldr: "WPT Australia 2026: 10 a 30 de set, The Star Sydney. Dois flagships: AUD $1.500 WPT Prime (17 a 22 de set) e AUD $5.000 WPT Championship (24 a 30 de set). Satellites on-site a partir de AUD ~$255. O campeão ganha um assento extra de $10.400 no WPT World Championship. Precisa ser 18+, membro do Star Club, e o dress code smart-casual é cobrado.",
+  desc: "WPT Australia 2026 — 10 a 30 de set, The Star Sydney. AUD $1.500 Prime + AUD $5.000 Championship. Satellite desde AUD $270 e os custos reais da viagem.",
+  tldr: "WPT Australia 2026: 10 a 30 de set, The Star Sydney. Dois flagships: AUD $1.500 WPT Prime (17 a 22 de set) e AUD $5.000 WPT Championship (24 a 30 de set). Satellites on-site a partir de AUD $270, com qualifiers do Championship a $290 e $550. A premiação de primeiro lugar do Championship inclui um assento de $15.000 no WPT World Championship. Precisa ser 18+, membro do Star Club, e o dress code smart-casual é cobrado.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-07-03",
+  updated: "2026-08-13",
   readTime: "14 min",
   emoji: "🦘",
   layout: "tournament-guide",
@@ -37,7 +37,7 @@ Primeiro festival ao vivo? Comece pelo [guia de torneios](/pt/blog/holdem-tourna
 ---
 
 > **Resposta rápida**
-> O WPT Australia 2026 vai de ==**10 a 30 de set**== no The Star Sydney, Darling Harbour. Dois eventos championship: ==**AUD $1.500 WPT Prime**== (17 a 22 de set) e ==**AUD $5.000 WPT Australia Championship**== (24 a 30 de set). O campeão do Championship também ganha um ==g:assento de $10.400 no WPT World Championship no Wynn Las Vegas== em dezembro. ==r:O WPT Global NÃO opera na Austrália — só satellites on-site.==
+> O WPT Australia 2026 vai de ==**10 a 30 de set**== no The Star Sydney, Darling Harbour. Dois eventos championship: ==**AUD $1.500 WPT Prime**== (17 a 22 de set) e ==**AUD $5.000 WPT Australia Championship**== (24 a 30 de set). A premiação de primeiro lugar do Championship inclui um ==g:assento de $15.000 no WPT World Championship== — atenção: ==r:ele é descontado do prize pool, não pago por fora==. ==r:O WPT Global NÃO opera na Austrália — só satellites on-site.==
 
 ---
 
@@ -57,7 +57,7 @@ O festival deste ano volta pro ==**The Star Sydney**== e estreia um **formato de
 | Campeão 2025 | — | Alan Pham (AUD $558.211) |
 | Eventos | ==**36 eventos**==, AUD $10M+ est. | ~20 eventos |
 | Livestream | Ambas as finais globalmente | Só o main event |
-| Bônus assento WC | ==g:+$10.400 WPT World Championship== | +$10.400 |
+| Assento WC | ==g:$15.000, descontado do prize pool== | +$10.400 |
 
 </div>
 
@@ -101,13 +101,16 @@ Essa é a pergunta que todo estreante faz. Aqui vai o resumo honesto:
 
 | Caminho | Formato | Buy-In | Ganha |
 |:---:|---|---|---|
-| **Step 1 → Step 2** | Qualifier de dois passos | ==g:AUD ~$255 no total== | Assento WPT Championship |
-| **Direct Qualifier** | Satellite 1-em-8 | AUD ~$1.075 | Assento WPT Championship |
-| **On-Site Durante o Festival** | Satellites diários, 10 a 22 de set | Variados (AUD $200–600) | Assento Prime ou Championship |
+| **Championship Direct Qualifier** | pré-festival, a partir de ==**24 de julho**== | ==g:$290 ou $550== | Assento Championship |
+| **Championship Direct Qualifier** | durante o festival, ==**até 25 de set**== | $550 | Assento Championship |
+| **Prime Championship** | Satellite 1-em-6 | ==g:$290== | Assento Prime |
+| **Australian Poker Cup** | Satellite 1-em-5 | $270 | Assento Poker Cup |
+| **Mini-Championship** | Satellite 1-em-8 | $290 | Assento Mini-Championship |
+| **Outros satellites do festival** | diários, ==**até 28 de set**== | $270–550 | Assento do respectivo evento |
 
 </div>
 
-> **Como funcionam os Step Satellites no The Star**: Step 1 (~AUD $255) → ganhe um tíquete pro Direct Qualifier → 1-em-8 jogadores levam um assento no Championship. Como alternativa, pule o Step 1 e entre direto no Direct Qualifier por ~AUD $1.075. Os buy-ins exatos de 2026 serão confirmados em [starpoker.com.au](https://www.starpoker.com.au) mais perto do evento.
+> **No The Star não existe escada de steps** — todo caminho pro Championship é um ==**direct qualifier**==. Você paga $290 ou $550 uma vez e já joga pelo assento; não há um degrau mais barato que alimente outro mais caro. ==r:Os satellites já estão rolando== — o calendário pré-festival abriu em **24 de julho, dois meses antes do Championship**. Ou seja, quem está esperando a "temporada de satellites" de setembro já perdeu semanas dos qualifiers de $290, os mais baratos. Os qualifiers do Championship seguem até **25 de setembro** (já com o Dia 1A em andamento) e os demais satellites, até **28 de setembro**.
 
 ### Jogadores de fora conseguem se classificar online?
 
@@ -136,7 +139,7 @@ Se você está fora da Austrália e quer esquentar com satellites online antes d
 
 </div>
 
-> **36 eventos no total.** Os prize pools GTD não são anunciados sob a regulação de NSW, mas o festival completo é estimado em AUD $10M+ com base nos comparecimentos históricos. Só o Championship de 2025 gerou AUD $3.000.000.
+> **36 eventos no total.** Este festival não anuncia prize pools garantidos — o calendário oficial garante **assentos** nos satellites — então trate qualquer número do festival inteiro como estimativa. Pelos comparecimentos históricos, AUD $10M+ é uma expectativa razoável: só o Championship de 2025 gerou AUD $3.000.000.
 
 ---
 
@@ -154,7 +157,7 @@ Se você está fora da Austrália e quer esquentar com satellites online antes d
 
 Com o buy-in de 2026 reduzido pra AUD $5.000 (abaixo dos $5.500 de 2025) e um novo formato de dupla championship trazendo mais gente pro festival, os fields devem ser os maiores da história do evento.
 
-**O bônus do campeão**: o primeiro lugar no WPT Australia Championship também recebe uma ==g:entrada de $10.400 no WPT World Championship no Wynn Las Vegas== em dezembro de 2026 — o que faz o valor do pacote passar bem além do buy-in de $5.000.
+**O assento do campeão**: a premiação de primeiro lugar do WPT Australia Championship inclui um ==g:assento de $15.000 no WPT World Championship== de dezembro de 2026. Leia com atenção o texto oficial: o assento é ==r:parte do prêmio de primeiro lugar e sai descontado do prize pool geral==, não é um extra pago por cima do dinheiro. O campeão do Prime Championship recebe, nas mesmas condições, um assento Prime de $1.500.
 
 ---
 
@@ -221,20 +224,24 @@ Pra buy-ins acima de AUD $5.000 (ou pra evitar a logística de saques diários),
 
 <div style="background:rgba(0,0,0,0.25);border:1px solid rgba(255,255,255,0.10);border-radius:10px;padding:16px 22px;margin:16px 0;font-size:13px;line-height:2">
 <strong>The Star Sydney — Sobre a transferência bancária</strong><br/>
-⚠️ O The Star emite os dados de envio <strong>individualmente por hóspede</strong> — <strong>não transfira pra nenhum número de conta encontrado online.</strong><br/>
+⚠️ Vire membro do Star Club <strong>primeiro</strong>. A referência da transferência é o seu <strong>Member ID e sobrenome</strong>, então sem número de membro você nem consegue enviar direito.<br/>
+Os dados da conta estão <strong>publicados no Funds Management Sheet oficial</strong> em starpoker.com.au — não são emitidos individualmente por hóspede. Pegue os dados só nessa folha, nunca de um número de conta que alguém te mandar.<br/>
 Antes de embarcar, escreva pro Star Poker ou pra caixa do The Star Sydney (via starpoker.com.au ou o Guest Service Desk) pra solicitar os dados de transferência atuais <strong>emitidos no seu nome</strong>.<br/>
-Considere: conta NAB, <strong>somente contas bancárias pessoais</strong> (sem Wise/Revolut/terceiros), seu nome completo + número do passaporte na referência, e 1–3 dias úteis pra compensar.
+Considere: conta NAB, <strong>somente contas bancárias pessoais</strong> (sem Wise/Revolut/terceiros) e alguns dias úteis pra compensar.
 </div>
 
 ==r:Restrições importantes:==
 - Transferências de Wise, Revolut ou qualquer provedor de remessa serão **rejeitadas**
 - Nada de contas de terceiros, empresas ou trusts — só contas bancárias pessoais
-- Inclua o seu nome completo e número do passaporte na referência da transferência
+- A referência da transferência tem que ser o seu ==r:Member ID e sobrenome== — não o número do passaporte
 - Os fundos levam de 1 a 3 dias úteis pra compensar — transfira pelo menos uma semana antes do festival
 
 ### Na chegada
 
-Vá até o Guest Service Desk com o seu passaporte. Confirme que a sua transferência compensou e que os fundos estão alocados na sua conta antes de tentar se registrar.
+É aqui que quase todo mundo tropeça: o balcão que faz o seu cadastro ==r:não== é o que libera o seu dinheiro.
+
+1. **Guest Service Desk** (Main Casino Floor) — conclua o cadastro, verifique a identidade com o ==r:passaporte original== e retire o cartão de membro.
+2. **Cashier / caixa** (Main Casino Floor) — leve ==g:cartão de membro, passaporte e comprovante da transferência== (app do banco, extrato ou recibo mostrando que o dinheiro saiu de uma conta pessoal no seu nome). É só aqui que os fundos entram na sua conta Star.
 
 ---
 
@@ -266,13 +273,13 @@ Aqui está quanto uma viagem completa ao WPT Australia realmente custa, com base
 
 | Cenário | Buy-In | Hotel (10 diárias) | Voos (Ásia/Pacífico) | Comida e transporte | **Total** |
 |:---:|---|---|---|---|---|
-| **Econômico** | AUD $255 (step de satellite) | AUD $1.200 (hotel econômico) | ~AUD $800 | AUD $600 | ==g:~AUD $2.855== |
+| **Econômico** | AUD $290 (satellite) | AUD $1.200 (hotel econômico) | ~AUD $800 | AUD $600 | ==g:~AUD $2.890== |
 | **Padrão** | AUD $1.500 (Prime) | AUD $2.500 (3 estrelas) | ~AUD $1.200 | AUD $900 | ==**~AUD $6.100**== |
 | **Experiência completa** | AUD $1.500 + $5.000 (os dois) | AUD $5.000 (The Star Grand) | ~AUD $1.500 | AUD $1.200 | ~AUD $14.200 |
 
 </div>
 
-> **Nota**: o cenário econômico assume que você ganhou o seu satellite do Prime via step qualifier on-site (~AUD $255). Os cenários Padrão e Experiência completa incluem buy-in direto. Voos do Leste da Ásia/Sudeste Asiático normalmente variam de AUD $700–1.500 ida e volta.
+> **Nota**: o cenário econômico assume que você ganhou o assento em um único direct qualifier de AUD $290 — a entrada avulsa mais barata que leva a um assento de championship. Os cenários Padrão e Experiência completa incluem buy-in direto. Voos do Leste da Ásia/Sudeste Asiático normalmente variam de AUD $700–1.500 ida e volta.
 
 ---
 
@@ -285,7 +292,7 @@ Aqui está quanto uma viagem completa ao WPT Australia realmente custa, com base
 
 **Q. Posso me classificar pro WPT Australia 2026 usando o WPT Global online?**
 
-A. ==r:Não.== O WPT Global não opera na Austrália — é um território restrito. Suas opções de classificação se limitam aos satellites on-site no The Star Sydney, que começam a rodar cerca de 2 semanas antes dos eventos championship.
+A. ==r:Não.== O WPT Global não opera na Austrália — é um território restrito. Suas opções de classificação se limitam aos satellites on-site no The Star Sydney. Eles começaram em ==g:24 de julho== — dois meses antes do Championship, não duas semanas — e seguem por todo o festival.
 
 **Q. Preciso agendar a associação ao The Star Club com antecedência?**
 
@@ -293,7 +300,7 @@ A. Você pode pré-cadastrar online em thestarclub.com.au/sign-up pra economizar
 
 **Q. Qual o jeito mais barato de entrar no WPT Australia Championship?**
 
-A. A rota de satellite on-site de dois passos te dá uma chance por ==g:cerca de AUD $255==. O Step 1 (~AUD $255) alimenta o Step 2 (~AUD $1.075), onde 1-em-8 jogadores levam um assento no Championship. Os buy-ins exatos dos satellites de 2026 serão confirmados em [starpoker.com.au](https://www.starpoker.com.au) mais perto do festival.
+A. O ==g:Championship Direct Qualifier de AUD $290== é a rota mais barata — um satellite único que joga direto por um assento de $5.000, sem escada de steps. A versão de $290 está no calendário pré-festival (a partir de 24 de julho); com o festival em andamento, os qualifiers do Championship passam a $550. Lista completa de satellites: [starpoker.com.au](https://www.starpoker.com.au/wpt-australia).
 
 **Q. Os ganhos no pôquer são taxados na Austrália?**
 
@@ -301,11 +308,11 @@ A. ==g:Pra jogadores recreativos, os ganhos no pôquer geralmente não são taxa
 
 **Q. Quando abre o registro do torneio a cada dia?**
 
-A. ==g:O registro abre 1 hora antes do início de cada evento.== Pros flights iniciais de championship movimentados, chegue pelo menos 90 minutos antes pra evitar atraso na fila.
+A. Se guie pelo horário de início publicado: o The Star divulga horário de início, não de abertura do balcão, então trate o início como prazo final e não como meta. Pros flights de championship movimentados, ==g:reserve 90 minutos==: o gargalo real é a fila das inscrições, e a do Star Club se você ainda não for membro. E se apertar, ==g:o re-entry ilimitado fica aberto até o início do nível 10== nos Dias 1A, 1B e 1C — chegar atrasado tem conserto.
 
 **Q. Posso jogar cash game no The Star Sydney se eu quebrar cedo?**
 
-A. Sim. A sala The Star Poker roda cash games diariamente ==g:das 10h às 4h==, stakes a partir de $2/$3 NLH (AUD $200–500 de buy-in) até $25/$50 NLH. Use o sistema de waitlist por SMS: mande **Game [Código] [Inicial + últimos 3 dígitos da associação]** pro **0480 049 257** a partir das 9h.
+A. Sim. A sala The Star Poker roda cash games diariamente ==g:das 10h às 4h==, stakes a partir de $2/$3 NLH (AUD $200–500 de buy-in) até $25/$50 NLH. A waitlist abre às 9h por SMS pro **0480 049 257**, no formato **Game 020 xxx**. ==r:O xxx não é o seu número de membro== — é um código que aparece na parte de baixo da tela da esquerda na sala e muda a cada 40 segundos. Ou seja, ==r:você precisa estar na sala pra entrar na waitlist==; não dá pra mandar do hotel.
 
 ---
 

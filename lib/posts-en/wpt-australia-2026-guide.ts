@@ -4,11 +4,11 @@ export const POST: Post = {
   slug: "wpt-australia-2026-guide",
   title: "WPT Australia 2026 — Complete Player Guide: Schedule, Satellites & Real Costs",
   seoTitle: "First Time at WPT Australia? Everything You Need to Play in 2026",
-  desc: "WPT Australia 2026 — Sep 10–30, The Star Sydney. AUD $1,500 Prime + AUD $5,000 Championship. Satellite from AUD ~$255. Real trip costs rivals don't publish.",
-  tldr: "WPT Australia 2026: Sep 10–30, The Star Sydney. Two flagships: AUD $1,500 WPT Prime (Sep 17–22) and AUD $5,000 WPT Championship (Sep 24–30). On-site satellites from AUD ~$255. Winner gets extra $10,400 WPT World Championship seat. Must be 18+, Star Club member, and smart-casual dress enforced.",
+  desc: "WPT Australia 2026 — Sep 10–30, The Star Sydney. AUD $1,500 Prime + AUD $5,000 Championship. Satellites from AUD $270. Real trip costs rivals don't publish.",
+  tldr: "WPT Australia 2026: Sep 10–30, The Star Sydney. Two flagships: AUD $1,500 WPT Prime (Sep 17–22) and AUD $5,000 WPT Championship (Sep 24–30). On-site satellites from AUD $270, with Championship qualifiers at $290 and $550. The Championship winner's first-place prize includes a $15,000 WPT World Championship seat. Must be 18+, Star Club member, and smart-casual dress enforced.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-07-25",
+  updated: "2026-08-13",
   readTime: "14 min",
   emoji: "🦘",
   layout: "tournament-guide",
@@ -37,7 +37,7 @@ First live festival? Start with [the tournament guide](/en/blog/holdem-tournamen
 ---
 
 > **Quick Answer**
-> WPT Australia 2026 is ==**Sep 10–30**== at The Star Sydney, Darling Harbour. Two championship events: ==**AUD $1,500 WPT Prime**== (Sep 17–22) and ==**AUD $5,000 WPT Australia Championship**== (Sep 24–30). Championship winner also receives a ==g:$10,400 seat to WPT World Championship at Wynn Las Vegas== in December. ==r:WPT Global does NOT operate in Australia — on-site satellites only.==
+> WPT Australia 2026 is ==**Sep 10–30**== at The Star Sydney, Darling Harbour. Two championship events: ==**AUD $1,500 WPT Prime**== (Sep 17–22) and ==**AUD $5,000 WPT Australia Championship**== (Sep 24–30). The Championship winner's first-place prize includes a ==g:$15,000 seat to the WPT World Championship== — note it is ==r:deducted from the overall prize pool, not paid on top==. ==r:WPT Global does NOT operate in Australia — on-site satellites only.==
 
 ---
 
@@ -55,9 +55,9 @@ This year's festival returns to ==**The Star Sydney**== and introduces a **dual-
 | Championship 2 | ==**WPT Australia AUD $5,000**== | AUD $5,500 |
 | 2025 Prize Pool | — | ==g:AUD $3,000,000== (600 entries) |
 | 2025 Winner | — | Alan Pham (AUD $558,211) |
-| Events | ==**36 events**==, AUD $10M+ est. | ~20 events |
+| Events | ==**36 events**== (AUD $10M+ estimated, not guaranteed) | ~20 events |
 | Livestream | Both finals globally | Main event only |
-| WC Seat Bonus | ==g:+$10,400 WPT World Championship== | +$10,400 |
+| WC Seat | ==g:$15,000 seat, deducted from prize pool== | +$10,400 |
 
 </div>
 
@@ -95,19 +95,21 @@ This is the question every first-timer asks. Here's the honest breakdown:
 
 **Your satellite options are on-site at The Star Sydney.**
 
-### On-Site Satellite Paths (Based on 2024/2025 Structure)
+### On-Site Satellite Paths (2026 Official Schedule)
 
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.25);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Path | Format | Buy-In | Win |
+| Path | Format | Buy-In (AUD) | Win |
 |:---:|---|---|---|
-| **Step 1 → Step 2** | Two-step qualifier | ==g:AUD ~$255 total== | WPT Championship seat |
-| **Direct Qualifier** | 1-in-8 satellite | AUD ~$1,075 | WPT Championship seat |
-| **On-Site During Festival** | Daily satellites, Sep 10–22 | Various (AUD $200–600) | Prime or Championship seat |
+| **Championship Direct Qualifier** | Pre-festival, from ==**Jul 24**== | ==g:$290 or $550== | Championship seat |
+| **Championship Direct Qualifier** | During festival, ==**to Sep 25**== | $550 | Championship seat |
+| **Prime Championship** | 1-in-6 satellite | ==g:$290== | Prime seat |
+| **Australian Poker Cup** | 1-in-5 satellite | $270 | Poker Cup seat |
+| **Mini-Championship** | 1-in-8 satellite | $290 | Mini-Championship seat |
 
 </div>
 
-> **How Step Satellites Work at The Star**: Step 1 (~AUD $255) → win a ticket to the Direct Qualifier → 1-in-8 players win a Championship seat. Alternatively, skip Step 1 and enter the Direct Qualifier straight for ~AUD $1,075. Exact 2026 buy-ins confirmed at [starpoker.com.au](https://www.starpoker.com.au) closer to the event.
+> **There is no step-satellite ladder at The Star** — every Championship path is a ==**direct qualifier**==. You pay $290 or $550 once and play for a seat; there is no cheaper first rung that feeds into a more expensive second one. ==r:The satellites are already running== — the pre-festival schedule opened on **Jul 24, two months before the Championship**, so anyone waiting for "satellite season" in September has already missed weeks of the cheapest $290 qualifiers. Championship qualifiers continue to **Sep 25** (after Day 1A has begun), and other satellites run to **Sep 28**.
 
 ### Can Overseas Players Qualify Online?
 
@@ -136,7 +138,7 @@ If you're outside Australia and want to warm up with online satellites before fl
 
 </div>
 
-> **The 12 events above are festival highlights — the full schedule runs 36 events total** (see [starpoker.com.au](https://www.starpoker.com.au/wpt-australia)). GTD prize pools are not advertised under NSW regulations, but the full festival is estimated at AUD $10M+ based on historical turnouts. The 2025 Championship alone generated AUD $3,000,000.
+> **The 12 events above are festival highlights — the full schedule runs 36 events total** (see [starpoker.com.au](https://www.starpoker.com.au/wpt-australia)). No guaranteed prize pools are advertised for this festival — the official schedule guarantees **seats** in satellites instead — so treat any festival-wide figure as an estimate. On historical turnouts AUD $10M+ is a reasonable expectation: the 2025 Championship alone generated AUD $3,000,000.
 
 ---
 
@@ -154,7 +156,7 @@ If you're outside Australia and want to warm up with online satellites before fl
 
 With the 2026 buy-in reduced to AUD $5,000 (down from $5,500 in 2025) and a new dual-championship format bringing more players into the festival, fields are expected to be the largest in event history.
 
-**The winner bonus**: First place in the WPT Australia Championship also receives a ==g:$10,400 entry to the WPT World Championship at Wynn Las Vegas== in December 2026 — making the package value well above the $5,000 buy-in.
+**The winner's seat**: First place in the WPT Australia Championship includes a ==g:$15,000 seat to the WPT World Championship== in December 2026. Read the official wording carefully — the seat is ==r:part of the first-place prize and is deducted from the overall prize pool==, not an extra bonus paid on top of the cash. The Prime Championship winner receives a $1,500 WPT World Championship Prime seat on the same terms.
 
 ---
 
@@ -221,20 +223,23 @@ For buy-ins above AUD $5,000 (or to avoid daily withdrawal logistics), ==g:the s
 
 <div style="background:rgba(0,0,0,0.25);border:1px solid rgba(255,255,255,0.10);border-radius:10px;padding:16px 22px;margin:16px 0;font-size:13px;line-height:2">
 <strong>The Star Sydney — Wire Transfer Details</strong><br/>
-⚠️ The Star issues remittance details individually per guest — <strong>do not wire to any account number found online.</strong><br/>
-Email Star Poker or the Star Sydney cage (via starpoker.com.au or the Guest Service Desk) to request current telegraphic-transfer details <strong>issued in your name</strong> before you fly.<br/>
-Expect: a NAB account, <strong>personal bank accounts only</strong> (no Wise/Revolut/third-party), your full name + passport number in the payment reference, and 1–3 business days to clear.
+⚠️ Join The Star Club <strong>first</strong>. The transfer reference is your <strong>Member ID and surname</strong>, so you cannot send funds correctly until you have a member number.<br/>
+The account details are <strong>published on the official Funds Management Sheet</strong> at starpoker.com.au — they are not issued individually per guest. Take the details from that sheet only, never from an account number someone sends you.<br/>
+Expect: a NAB account, <strong>personal bank accounts only</strong> (no Wise/Revolut/third-party), and several business days to clear.
 </div>
 
 ==r:Important restrictions:==
 - Transfers from Wise, Revolut, or any remittance provider will be **rejected**
 - No third-party, business, or trust accounts — personal bank accounts only
-- Include your full name and passport number in the transfer reference
-- Funds take 1–3 business days to clear — transfer at least a week before the festival
+- The transfer reference must be your ==r:Member ID and surname== — not your passport number
+- Transfer at least a week before the festival so the funds have cleared when you land
 
-### On Arrival
+### On Arrival — Two Different Desks
 
-Visit the Guest Service Desk with your passport. Confirm your wire transfer has cleared and the funds are allocated to your account before attempting to register.
+This trips up almost everyone: the desk that signs you up is ==r:not== the desk that releases your money.
+
+1. **Guest Service Desk** (Main Casino Floor) — complete registration, verify your identity with your ==r:original passport==, collect your membership card.
+2. **Cashier** (Main Casino Floor) — bring your ==g:membership card, passport, and proof of transfer== (banking app screen, bank statement, or receipt showing the funds left a personal account in your name). Only here are the funds released to your Star account.
 
 ---
 
@@ -266,13 +271,13 @@ Here's what a full WPT Australia trip actually costs, based on 2025 data:
 
 | Scenario | Buy-In | Hotel (10 nights) | Flights (Asia/Pacific) | Food & Transport | **Total** |
 |:---:|---|---|---|---|---|
-| **Budget** | AUD $255 (satellite step) | AUD $1,200 (budget hotel) | ~AUD $800 | AUD $600 | ==g:~AUD $2,855== |
+| **Budget** | AUD $290 (satellite) | AUD $1,200 (budget hotel) | ~AUD $800 | AUD $600 | ==g:~AUD $2,890== |
 | **Standard** | AUD $1,500 (Prime) | AUD $2,500 (3-star) | ~AUD $1,200 | AUD $900 | ==**~AUD $6,100**== |
 | **Full Experience** | AUD $1,500 + $5,000 (both) | AUD $5,000 (The Star Grand) | ~AUD $1,500 | AUD $1,200 | ~AUD $14,200 |
 
 </div>
 
-> **Note**: Budget scenario assumes you won a Championship seat via the on-site step qualifier (~AUD $255 total if you win through both steps). Standard and Full Experience scenarios include direct buy-in. Flights from East Asia/Southeast Asia typically range AUD $700–1,500 return.
+> **Note**: Budget scenario assumes you won a seat through one AUD $290 direct qualifier — the cheapest single entry that leads to a championship seat. Standard and Full Experience scenarios include direct buy-in. Flights from East Asia/Southeast Asia typically range AUD $700–1,500 return.
 
 ---
 
@@ -285,7 +290,7 @@ Here's what a full WPT Australia trip actually costs, based on 2025 data:
 
 **Q. Can I qualify for WPT Australia 2026 using WPT Global online?**
 
-A. ==r:No.== WPT Global does not operate in Australia — it is a restricted territory. Your qualification options are limited to on-site satellites at The Star Sydney, which begin running approximately 2 weeks before the championship events.
+A. ==r:No.== WPT Global does not operate in Australia — it is a restricted territory. Your qualification options are limited to on-site satellites at The Star Sydney. Those started on ==g:Jul 24== — two months before the Championship, not a fortnight — and run right through the festival.
 
 **Q. Do I need to book The Star Club membership in advance?**
 
@@ -293,19 +298,19 @@ A. You can pre-register online at thestarclub.com.au/sign-up to save time, but =
 
 **Q. What's the cheapest way to get into the WPT Australia Championship?**
 
-A. The on-site two-step satellite route gives you a shot for ==g:around AUD $255==. Step 1 (~AUD $255) feeds into Step 2 (~AUD $1,075), where 1-in-8 players win a Championship seat. Exact satellite buy-ins for 2026 will be confirmed on [starpoker.com.au](https://www.starpoker.com.au) closer to the festival.
+A. The ==g:AUD $290 Championship Direct Qualifier== is the cheapest route — a single satellite that plays directly for a $5,000 Championship seat, no step ladder involved. The $290 version runs in the pre-festival schedule (from Jul 24); once the festival is under way the Championship qualifiers are $550. Full satellite list: [starpoker.com.au](https://www.starpoker.com.au/wpt-australia).
 
 **Q. Is poker winnings taxed in Australia?**
 
 A. ==g:For recreational players, poker winnings are generally not taxed in Australia== — the ATO typically treats poker as a game of chance rather than a business. Professional players may have a different obligation. Consult a tax advisor for your specific situation.
 
-**Q. When does tournament registration open each day?**
+**Q. How early should I arrive for a WPT Australia Day 1 flight?**
 
-A. ==g:Registration opens 1 hour before the start of each event.== For busy championship starting flights, arrive at least 90 minutes early to avoid queue delays.
+A. Plan around the published start time — The Star lists start times, not counter-opening times, so treat the start as your deadline rather than your target. For busy Championship flights, ==g:give yourself 90 minutes==: the queue for entries, and for Star Club sign-ups if you have not joined yet, is the real bottleneck. If you are held up, ==g:unlimited re-entry stays open until the start of level 10== on Day 1A, 1B and 1C, so arriving late is recoverable.
 
 **Q. Can I play cash games at The Star Sydney if I bust early?**
 
-A. Yes. The Star Poker room runs cash games daily ==g:10 AM – 4 AM==, stakes from $2/$3 NLH (AUD $200–500 buy-in) up to $25/$50 NLH. Use the SMS waitlist system: text **Game [Code] [Initial + last 3 digits of membership]** to **0480 049 257** from 9 AM.
+A. Yes. The Star Poker room runs cash games daily ==g:10 AM – 4 AM==, stakes from $2/$3 NLH (AUD $200–500 buy-in) up to $25/$50 NLH. The waitlist opens at 9 AM by SMS to **0480 049 257**, in the format **Game 020 xxx**. ==r:The xxx is not your membership number== — it is a code displayed at the bottom of the left screen in the poker room, and it changes every 40 seconds. That means ==r:you have to be in the room to join the waitlist==; you cannot text ahead from your hotel.
 
 ---
 
