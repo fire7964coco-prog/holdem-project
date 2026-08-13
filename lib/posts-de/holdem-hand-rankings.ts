@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Die Reihenfolge der Pokerhände von der besten zur schlechtesten lautet: Royal Flush, Straight Flush, Vierling, Full House, Flush, Straße, Drilling, Zwei Paare, Paar und High Card.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-08-10",
+  updated: "2026-08-13",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "14 Min.",
@@ -62,7 +62,7 @@ Fang hier an. Diese **Wertetabelle** zeigt alle zehn **Poker-Kombinationen** in 
 > **Die eine Regel, die Diskussionen beendet**
 > Paar und High Card machen zusammen rund 61% aller Sieben-Karten-Hände bis zum River aus. Große Hände wirken häufig, weil man sie sich merkt – aber die meisten Pots werden mit einem Paar oder einer High Card und dem passenden [Kicker](/de/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp") entschieden.
 
-**[Pokerblätter-Reihenfolge als PDF herunterladen (A4, zum Ausdrucken)](/downloads/texas-holdem-rules-for-beginners-de.pdf)** – die komplette Rangfolge plus Setzrunden und Chip-Setup auf zwei Seiten. Für den Pokerabend ausdrucken und neben den Tisch legen.
+**[Pokerblätter-Reihenfolge als PDF herunterladen (A4, zum Ausdrucken)](/downloads/poker-hand-rankings-de.pdf)** – alle 10 Hände mit Beispielkarten und den Wahrscheinlichkeiten aus 7 Karten, auf einer Seite. Für den Pokerabend ausdrucken und neben den Tisch legen. Wenn du zusätzlich Setzrunden und Chip-Setup brauchst, steht beides im [Regel-PDF für Anfänger](/downloads/texas-holdem-rules-for-beginners-de.pdf).
 
 :::quiz:::
 
