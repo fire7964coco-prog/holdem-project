@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Mit einem Pocket Pair floppst du in 11,8% der Fälle ein Set (7,5:1 dagegen), mit zwei suited Karten nur 0,84% einen Flush, und einen gefloppten Flushdraw komplettierst du bis zum River in 35% der Fälle. Jede Zahl unten stammt aus dem Deck, nicht aus dem Bauch.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-08-11",
+  updated: "2026-08-13",
   masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "12 Min.",
@@ -38,7 +38,7 @@ Genau das sind Drawing Odds in Wahrheit: kein Glück, sondern die ==feste Mathem
 
 Ein Pocket Pair wird in **11,8%** der Fälle zum Set. Zwei suited Karten werden nur in **0,84%** direkt zum Flush, aber in **10,9%** zum Flushdraw – und der kommt danach in 35% bis zum River an. Connectors floppen in 1,3% eine fertige Straße. Diese drei Ebenen – fertig, Draw, komplettiert – werden ständig vermengt, und genau daraus entstehen die meisten Odds-Fehler.
 
-Hier ist die Tabelle, die niemand an einem Ort baut. Die meisten Seiten nennen dir die Chance, eine Hand zu *floppen*, auf einer Seite und die Chance, einen Draw zu *komplettieren*, auf einer anderen – aber am Tisch ist es eine durchgehende Geschichte. Du bekommst zwei Karten, du floppst etwas Fertiges **oder** einen Draw, und wenn es ein Draw ist, komplettierst du ihn oder eben nicht.
+Hier ist die Tabelle, die niemand an einem Ort baut. Die meisten Seiten nennen dir die Chance, eine Hand zu *floppen*, auf einer Seite und die Chance, einen Draw zu *komplettieren*, auf einer anderen – aber am Tisch ist es eine durchgehende Geschichte. (Für einen konkreten Spot statt der Übersicht: [Poker-Rechner](/calculator).) Du bekommst zwei Karten, du floppst etwas Fertiges **oder** einen Draw, und wenn es ein Draw ist, komplettierst du ihn oder eben nicht.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Beim Texas Hold'em bekommt jeder Spieler 2 Hole Cards, dazu kommen 5 Gemeinschaftskarten – nach vier Setzrunden gewinnt die beste Fünf-Karten-Hand.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-08-10",
+  updated: "2026-08-13",
   // 🔴 masterUpdated는 07-12 그대로 둔다 – 이 글은 「판 전체 재동기화」 보류분(드리프트 잔존)이다.
   //    남은 항목이 있는 채로 올리면 드리프트 추적이 거짓말을 한다(session-handoff §착수 전 7).
   masterUpdated: "2026-07-12",
@@ -461,7 +461,7 @@ A. Die zwei Spieler links vom Dealer-Button müssen Pflichteinsätze setzen, bev
 
 **Q. Kann man Texas Hold'em zu zweit spielen?**
 
-A. Ja – das heißt Heads-up und ist die schnellste Variante überhaupt. Die Regeln bleiben gleich, nur die Blind-Reihenfolge dreht sich um (die Details stehen oben unter „Wie viele Spieler können Texas Hold'em spielen?“). Praktisch heißt das: Du zahlst **jede** Hand einen Blind, sitzt also in jedem Pot und spielst deutlich weiter als am vollen Tisch – Hände, die du zu neunt sofort foldest, sind zu zweit oft ein klarer Raise.
+A. Ja – **Poker zu zweit** heißt Heads-up und ist die schnellste Variante überhaupt. Die Regeln bleiben gleich, nur die Blind-Reihenfolge dreht sich um (die Details stehen oben unter „Wie viele Spieler können Texas Hold'em spielen?“). Praktisch heißt das: Du zahlst **jede** Hand einen Blind, sitzt also in jedem Pot und spielst deutlich weiter als am vollen Tisch – Hände, die du zu neunt sofort foldest, sind zu zweit oft ein klarer Raise.
 
 **Q. Was bedeutet No-Limit beim Texas Hold'em?**
 

@@ -8,14 +8,16 @@ export const POST: Post = {
   tldr: "Blinds sind Zwangseinsätze, die vor dem Austeilen der Karten gesetzt werden. Der Small Blind sitzt direkt links vom Dealer-Button, der Big Blind links daneben; der Big Blind – meist das Doppelte des Small Blinds – ist die Setzeinheit des Tischs.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-08-11",
+  updated: "2026-08-13",
   masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "9 Min.",
   emoji: "💰",
   image: "/images/holdem-blind-meaning-hero.webp",
   imageAlt: "Small-Blind- und Big-Blind-Chipstapel mit Beschriftung neben einem goldenen Dealer-Button auf einem Pokertisch",
-  tags: ["was bedeutet blind poker", "big blind bedeutung", "small blind bedeutung", "small blind vs big blind", "big blind ante", "poker blinds regeln", "texas holdem blinds"],
+  // ★2026-08-13 §6 축 B2: „poker zu zweit" 140/Monat이 de 42편 전체에서 0회였다.
+  //   콘텐츠는 이미 있다(아래 Heads-up H2) — 이름표만 없던 자리다.
+  tags: ["was bedeutet blind poker", "big blind bedeutung", "small blind bedeutung", "small blind vs big blind", "big blind ante", "poker blinds regeln", "texas holdem blinds", "poker zu zweit", "heads-up poker"],
   content: `
 Meine allererste Live-Pokerhand: Der Dealer tippte auf den Filz vor mir, bevor ich auch nur eine Karte gesehen hatte – „Small Blind, bitte.“ Ich erstarrte. Zahlen? *Wofür denn?* Zwölf Jahre und tausende Stunden später sehe ich fast in jeder Session jemanden Neues in genau diesem Moment erstarren.
 
@@ -123,9 +125,9 @@ Einen weiteren Verwandten der Zwangseinsätze siehst du in Cash Games: den **Str
 
 ---
 
-## Wer setzt die Blinds beim Heads-up?
+## Wer setzt die Blinds beim Heads-up (Poker zu zweit)?
 
-Sind nur noch zwei Spieler übrig (oder in einem Heads-up-Match), ==r:dreht sich== die übliche Regel um. Der **Dealer-Button setzt den Small Blind** und handelt vor dem Flop ==als **Erster**==, während der andere Spieler den Big Blind setzt und preflop ==als **Letzter**== handelt – auf allen späteren Streets dann als Erster. Es ist das einzige Mal, dass der Button einen Blind zahlt, und es erwischt beim ersten Mal fast jeden.
+Sind nur noch zwei Spieler übrig – beim **Poker zu zweit** also von der ersten Hand an –, ==r:dreht sich== die übliche Regel um. Der **Dealer-Button setzt den Small Blind** und handelt vor dem Flop ==als **Erster**==, während der andere Spieler den Big Blind setzt und preflop ==als **Letzter**== handelt – auf allen späteren Streets dann als Erster. Es ist das einzige Mal, dass der Button einen Blind zahlt, und es erwischt beim ersten Mal fast jeden.
 
 ---
 

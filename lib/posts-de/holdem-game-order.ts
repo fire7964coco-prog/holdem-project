@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Eine Texas-Hold'em-Hand läuft so ab: Blinds setzen → zwei Hole Cards erhalten → Preflop → Flop (3 Karten) → Turn (1 Karte) → River (1 Karte) → Showdown – mit insgesamt vier Setzrunden.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-08-10",
+  updated: "2026-08-13",
   masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "16 Min.",
@@ -190,11 +190,11 @@ Die Eselsbrücke: ==**Vor dem Flop schaust du links vom Big Blind – nach dem F
 
 ---
 
-## Eine komplette Hand, Schritt für Schritt
+## Eine komplette Hand, Schritt für Schritt (Heads-up, Poker zu zweit)
 
 ![Eine komplette Texas-Hold'em-Beispielhand – von Preflop bis zum Showdown](/images/holdem-game-example-fullhand.webp "Eine ganze Hand über alle Streets bis zum Showdown verfolgt")
 
-Über Streets zu lesen bleibt abstrakt. Also spielen wir eine einzelne Heads-up-Hand von der ersten bis zur letzten Karte durch – mit echten Karten und echten Chipbeträgen.
+Über Streets zu lesen bleibt abstrakt. Also spielen wir eine einzelne Hand **Poker zu zweit** (Heads-up) von der ersten bis zur letzten Karte durch – mit echten Karten und echten Chipbeträgen.
 
 **Setup:** Heads-up. Blinds SB 1.000 / BB 2.000.
 

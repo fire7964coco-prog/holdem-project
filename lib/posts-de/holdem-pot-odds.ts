@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Um die Pot Odds zu berechnen, teilst du den Betrag, den du callen musst, durch den gesamten Pot nach deinem Call. Ein $50-Call in einen $150-Pot = 50 ÷ 200 = 25% – du brauchst also mindestens 25% Equity, damit der Call profitabel ist.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-08-11",
+  updated: "2026-08-13",
   masterUpdated: "2026-08-09",
   keepImagesInBody: true,
   readTime: "12 Min.",
@@ -125,7 +125,7 @@ Jetzt verbinde den Preis mit deiner Hand. [Zähle deine **Outs**](/de/blog/holde
 
 </div>
 
-Lies sie gegen die Bet-Size-Tabelle oben. Gegen eine ==Half-Pot-Bet (25% nötig)==: mit zwei kommenden Karten ist ein Flushdraw (35%) ein klarer Call – aber auf einer *einzelnen* Karte ist derselbe Draw vom Flop aus nur 19,1%, was den Preis für sich genommen **nicht** trifft. Genau diese Lücke ist der Ort, an dem Implied Odds ins Spiel kommen.
+Lies sie gegen die Bet-Size-Tabelle oben. Für Spots, die nicht in der Tabelle stehen – krumme Bet-Sizes, mehrere Gegner –, rechnet der [Poker-Rechner](/calculator) Pot Odds und benötigte Equity direkt aus. Gegen eine ==Half-Pot-Bet (25% nötig)==: mit zwei kommenden Karten ist ein Flushdraw (35%) ein klarer Call – aber auf einer *einzelnen* Karte ist derselbe Draw vom Flop aus nur 19,1%, was den Preis für sich genommen **nicht** trifft. Genau diese Lücke ist der Ort, an dem Implied Odds ins Spiel kommen.
 
 ---
 

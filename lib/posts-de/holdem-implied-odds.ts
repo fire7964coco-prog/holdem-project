@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Implied Odds sind die zusätzlichen Chips, die du auf späteren Streets zu gewinnen erwartest, wenn dein Draw ankommt. Sie erlauben dir, einen Draw profitabel zu callen, den die Pot Odds allein zum Fold verurteilen – aber nur, wenn die Stacks tief sind und dein Gegner dich wirklich auszahlt.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-08-11",
+  updated: "2026-08-13",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "11 Min.",
@@ -74,7 +74,7 @@ Teile deinen Call durch diese Trefferquote | Das ist der Gesamtbetrag, den du ge
 Beurteile, ob es realistisch ist | Tiefe Stacks + ein auszahlfreudiger Gegner = ja. Kurze Stacks oder ein gefährliches Board = nein
 :::
 
-Die Formel in einer Zeile: ==b:x = (Call ÷ Trefferquote) − (aktueller Pot + Call).== Wenn das Extra-Geld, das du realistisch auf späteren Streets herausholst, *größer* ist als x, ist der Call profitabel, selbst wenn die sofortigen Pot Odds Fold sagen.
+Die Formel in einer Zeile: ==b:x = (Call ÷ Trefferquote) − (aktueller Pot + Call).== Die Trefferquote dafür holst du dir aus der Outs-Tabelle oben oder aus dem [Poker-Rechner](/calculator). Wenn das Extra-Geld, das du realistisch auf späteren Streets herausholst, *größer* ist als x, ist der Call profitabel, selbst wenn die sofortigen Pot Odds Fold sagen.
 
 ---
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ein Kicker ist die höchste Beikarte, die nicht zu deiner eigentlichen Hand gehört – er bricht den Gleichstand, wenn zwei Spieler denselben Rang teilen. Ein Paar nutzt 3 Kicker, Zwei Paare 1, Drilling 2; Straße, Flush und Full House haben keinen. Deshalb schlägt AK das AQ, wenn das Board ein Ass pairt.",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-08-10",
+  updated: "2026-08-13",
   masterUpdated: "2026-07-18",
   keepImagesInBody: true,
   readTime: "10 Min.",
@@ -136,7 +136,7 @@ Wieder dasselbe Paar – und meine 9 bekam nicht einmal eine Stimme. Sie wurde d
 
 ---
 
-## Hat ein Vierling einen Kicker?
+## Hat ein Vierling beim Poker einen Kicker?
 
 **Ja – ein Vierling hat einen Ein-Karten-Kicker, aber er entscheidet im Hold’em fast nie eine Hand: Dafür müssten zwei Spieler denselben Vierling halten, und das setzt voraus, dass alle vier Karten auf dem Board liegen – ein seltener Fall.** Das ist die Ausnahme, die die meisten Leitfäden vermasseln, indem sie den Vierling zu den „Fünf-Karten-Händen ohne Kicker“ zählen.
 
