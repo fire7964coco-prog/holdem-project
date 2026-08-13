@@ -1,5 +1,7 @@
 "use client";
 
+import { HAND_CHART_FAQ } from "./faq";
+
 import { useState } from "react";
 import Link from "next/link";
 import { SEO } from "@/components/seo";
@@ -401,28 +403,7 @@ export default function HandChartEn() {
         {/* FAQ */}
         <section className="space-y-3">
           <h2 className="text-xl font-bold text-foreground border-l-4 border-primary pl-3">Frequently asked questions</h2>
-          {[
-            {
-              q: "Do I have to follow the starting hand chart exactly?",
-              a: "The chart is a starting point. At a 6-max table, shift positions one or two spots looser than 9-max. With antes, widen the whole range by 5–8%. At tables full of weak players, playing tighter to maximize value tends to be more profitable.",
-            },
-            {
-              q: "Is 169 hands the exact number?",
-              a: "Yes. Ignoring suits, there are exactly 169 hand types: 13 pocket pairs, 78 suited hands, and 78 offsuit hands. In the actual deck the total number of combinations is 1,326.",
-            },
-            {
-              q: "Why isn't the big blind on the chart?",
-              a: "The BB has already invested 1 big blind, so it plays a 'defense' (call/re-raise) game rather than open-raising. A BB defense range depends entirely on the opener's position and sizing, so it needs its own chart.",
-            },
-            {
-              q: "Is it okay to open a 42% range on the button?",
-              a: "In GTO terms, a button opening range really does reach 40–50%. But if opponents are tight or inexperienced, focusing more on premiums can be more profitable in practice. The chart is a balanced baseline.",
-            },
-            {
-              q: "What do I do if I get 3-bet?",
-              a: "Your opening range and your 3-bet-calling range are different. Generally you respond to a 3-bet with premiums like AA-JJ and AKs-AQs, plus some bluffs — suited wheel aces like A5s and A4s that block AA/AK and can make the nut flush. Fold the rest.",
-            },
-          ].map((item) => (
+          {HAND_CHART_FAQ.map((item) => (
             <details
               key={item.q}
               className="group rounded-2xl border border-border/40 bg-card/30 overflow-hidden"

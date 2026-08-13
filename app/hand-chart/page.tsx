@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { SITE } from "@/lib/site";
 import HandChartClient from "./hand-chart-client";
 import HubPage from "@/components/hub-page";
+import { HAND_CHART_FAQ } from "./faq";
 
 /**
  * ★2026-08-08 noindex 해제 (사장님 결정) — 몰아주기가 성과로 회수되지 않았다.
@@ -57,10 +58,61 @@ export const metadata: Metadata = {
   alternates: { canonical: `${SITE}/hand-chart` },
 };
 
+/**
+ * JSON-LD는 **서버에서** 내보낸다 — 정본 = `app/calculator/page.tsx`.
+ * ★2026-08-13 신설. 그 전까지 이 페이지는 자기 구조화 데이터가 **0**이었다
+ *   (루트 layout의 WebSite·Organization만 있었다).
+ * 🟢 FAQPage는 화면 `<details>`와 **같은 배열**을 쓴다 — `<details>`는 접혀 있어도 답변이 DOM에 남는다.
+ */
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      name: "홀덤 스타팅 핸드 차트 — 포지션별 오픈 레인지",
+      description: "UTG에선 12%, 버튼에선 42%. 169개 프리플랍 핸드를 5개 포지션별로 색칠한 홀덤 차트입니다. 포지션을 누르면 그 자리에서 오픈할 핸드레인지만 골라 보여줍니다.",
+      url: `${SITE}/hand-chart`,
+      applicationCategory: "ReferenceApplication",
+      operatingSystem: "Web",
+      browserRequirements: "Requires JavaScript",
+      inLanguage: "ko",
+      offers: { "@type": "Offer", price: "0", priceCurrency: "KRW" },
+      featureList: [
+        "169개 프리플랍 핸드 전수 표시",
+        "UTG·HJ·CO·BTN·SB 5개 포지션별 오픈 레인지",
+        "포지션 선택 시 해당 레인지만 하이라이트",
+        "포켓페어·수티드·오프수트 구분 색상"
+      ],
+      publisher: { "@type": "Organization", name: "홀덤마스터", url: SITE },
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: HAND_CHART_FAQ.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "홈", item: SITE },
+        { "@type": "ListItem", position: 2, name: "핸드 차트", item: `${SITE}/hand-chart` },
+      ],
+    },
+  ],
+};
+
 export default function Page() {
   return (
-    <HubPage title="핸드 차트">
-      <HandChartClient />
-    </HubPage>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <HubPage title="핸드 차트">
+        <HandChartClient />
+      </HubPage>
+    </>
   );
 }

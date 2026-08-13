@@ -1,5 +1,7 @@
 "use client";
 
+import { HAND_CHART_FAQ } from "./faq";
+
 import { useState } from "react";
 import Link from "next/link";
 import { SEO } from "@/components/seo";
@@ -413,28 +415,7 @@ export default function HandChart() {
         {/* FAQ */}
         <section className="space-y-3">
           <h2 className="text-xl font-bold text-foreground border-l-4 border-primary pl-3">자주 묻는 질문</h2>
-          {[
-            {
-              q: "스타팅 핸드 차트를 무조건 따라야 하나요?",
-              a: "차트는 시작점입니다. 6맥스 테이블에서는 9맥스 대비 1~2단계 포지션을 당겨서 적용합니다. 앤티가 있으면 전체 레인지를 5~8% 넓힙니다. 피쉬가 많은 테이블에선 더 타이트하게 밸류를 극대화하는 것이 유리합니다.",
-            },
-            {
-              q: "169개 핸드가 정확히 맞나요?",
-              a: "네. 포커 핸드의 종류는 수트를 구분하지 않을 때 정확히 169가지입니다: 포켓페어 13개, 수티드 핸드 78개, 오프수트 핸드 78개. 실제 덱에서 콤보 수는 총 1326개입니다.",
-            },
-            {
-              q: "BB는 왜 차트에 없나요?",
-              a: "BB는 이미 1BB를 투자한 상태라 오픈 레이즈가 아닌 '디펜스'(콜/리레이즈) 개념이 적용됩니다. BB 디펜스 레인지는 상대의 오픈 포지션·사이즈에 따라 완전히 달라져 별도 차트가 필요합니다.",
-            },
-            {
-              q: "버튼에서 42% 레인지를 오픈해도 괜찮나요?",
-              a: "GTO상 버튼 오픈 레인지는 실제로 40~50%에 달합니다. 하지만 상대가 타이트하거나 초보라면 프리미엄에 더 집중하는 것도 실전에서 수익률이 높습니다. 차트는 균형 잡힌 전략의 기준점입니다.",
-            },
-            {
-              q: "리레이즈(3벳)가 들어오면 어떻게 하나요?",
-              a: "오픈 레인지와 3벳 콜 레인지는 다릅니다. 일반적으로 3벳에는 AA-JJ, AKs-AQs 같은 프리미엄과 일부 블러프(AA·AK를 블로킹하고 넛 플러시가 가능한 A5s·A4s 같은 수티드 휠 에이스)로 응답합니다. 나머지는 폴드입니다.",
-            },
-          ].map((item) => (
+          {HAND_CHART_FAQ.map((item) => (
             <details
               key={item.q}
               className="group rounded-2xl border border-border/40 bg-card/30 overflow-hidden"
