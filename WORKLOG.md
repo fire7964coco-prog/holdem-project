@@ -3,6 +3,31 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-08-13 (13) — **§6 축 B 이름표 배치 B1·B2·B5** (`ab991c3`)
+
+착수 전 **라쿠 볼륨 API(German/Germany, 12개월 평균)로 지시서 수치를 전수 재확인**했다.
+**이번엔 지시서가 맞았다** — `poker im casino` 390 · `poker reihenfolge pdf` 260 ·
+`heads-up poker` 260 · `poker zu zweit` 140 · `vierling poker` 70 · `poker zu zweit regeln` 40.
+
+- **B2 헤즈업** — 「poker zu zweit」 140이 de 42편에서 **정확 표현 0회**였다. 콘텐츠는 이미 있었다:
+  `blind-meaning` H2·본문·tags · `game-order` H2·예제 도입부 · `texas-…-beginners` 기존 FAQ 답변.
+- **B1 `/calculator`** — Odds 클러스터 **5편 전부 링크 0**이었다(허브는 있고 icm·bubble·short-stack만 연결).
+  5편에 문맥 맞는 인라인 링크 1개씩. ⚠ **`pot-odds`는 「du brauchst nie wieder einen Taschenrechner」**라
+  적혀 있어 **그 자리를 피했다** — 표 밖 스팟(크룸 벳사이즈·멀티웨이) 문맥에 넣어 카피와 충돌시키지 않았다.
+- **B5 Vierling** — `kicker` H2에 「beim Poker」 두 낱말.
+
+🔴 **지시서와 실측이 갈린 것 2건**(검수장 회신 거리):
+① 「Vierling 17회가 **한 번도** Poker와 인접하지 않는다」 → **실측 58회·7줄 인접.**
+   `hand-rankings`는 이미 표(51행)·H3(107행)에 인접 표기를 갖고 있다.
+② 「`equity` 태그의 `equity rechner poker`」 → **그 키워드는 볼륨 데이터가 아예 없다.**
+   「`vierling beim poker`」도 데이터 없음(실재하는 건 `vierling poker` 70 / `poker vierling` 30).
+
+🪶 **라쿠 서제스트는 시드 언어를 못 따라갔다** — `vierling` 시드가 **미국 DB로 새서** 미시간 식당·
+야구선수·산탄총이 나왔다(포커 의도 0). **지역·언어를 명시하는 `search-volume-history`가 정답**이다.
+🪶 조회한 독일 포커 키워드가 **12개월 -23~-69%로 전부 하락** 추세다 — 배치 판단에 참고할 것.
+
+- **검증**: `audit:hard --locale=de` 42/42 🔴 0건 · build 69+457+60 · `check:hreflang` 481페이지 0건.
+
 ## 2026-08-13 (12) — **도구 6종 스키마 신설 · 스키마 트랙 정리 완료** (`baa715e`)
 
 정본 `app/calculator/page.tsx`의 `@graph` 패턴을 복제했다.

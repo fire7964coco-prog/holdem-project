@@ -16,16 +16,22 @@
 >
 > ⏰ **8/16(일)이 사흘 뒤다** — 그날 락이 풀리는 게 4건 있다(맨 아래 「8/16에 열 것」).
 
-### ▶▶ 🔴 이 세션의 본체 = **§6 축 B (de 키워드 배치)** — 아래 「§6 축 B」 절이 본체
+### ▶▶ 🔴 이 세션의 본체 = **§6 축 B 잔여 (B3 족보 PDF · B6 통화)**
 
-> **8/13에 두 트랙이 종료됐다.** 검수장 조치목록 **순위1~5**(남은 건 🔒8/16 순위6뿐) ·
-> **구조화 데이터 66페이지**(허브 10 + 로케일 50 + 도구 6). 이제 8/16까지 열 수 있는 본체는
-> **§6 축 B**다 — de에 남은 유일한 «본체» 작업이고, ★**이름표 유형 = 최대 ROI**
-> (콘텐츠는 이미 있고 현지 검색어만 없다 · **§13 리스크 0**).
-> 착수 순서 제안은 아래 「§6 축 B」 절에 그대로 있다(B5 → B2 → B1 → B3 → B6).
+> **8/13에 세 트랙이 종료됐다.** 검수장 조치목록 **순위1~5**(남은 건 🔒8/16 순위6뿐) ·
+> **구조화 데이터 66페이지** · **§6 축 B의 B1·B2·B5**(`ab991c3`).
 >
-> 🪶 그보다 짧게 끊고 싶으면 **「🔴 1차 확인이 필요한 잔여」 3건**(apt `$3.50` · GGPoker 고유명 ·
-> `holdem-tournament` `:::note` 접근불가 출처)이 있다 — 전부 **1차 출처 확인이 선행**돼야 한다.
+> 남은 축 B는 **둘 다 «이름표»가 아니라 실작업**이다 — 아래 「§6 축 B」 절 참조:
+> **B3** = 족보 PDF **자산 신설**(`poker reihenfolge pdf` 260 실측) ·
+> **B6** = 통화 전환, **지시서의 「2편」이 실측 9편으로 깨졌고 일괄 치환이 금지**된 자리다.
+>
+> 🪶 짧게 끊고 싶으면 **「🔴 1차 확인이 필요한 잔여」 3건**(apt `$3.50` · GGPoker 고유명 ·
+> `holdem-tournament` `:::note` 접근불가 출처) — 전부 **1차 출처 확인이 선행**돼야 한다.
+>
+> 🔴 **de 키워드 조사 도구 주의**: 라쿠 **서제스트는 시드 언어를 못 따라간다**
+> (`vierling` → 미국 DB로 새서 미시간 식당·야구선수가 나왔다). **지역·언어를 명시하는
+> `search-volume-history`(German/Germany)가 정답이다.** 그리고 조회한 독일 포커 키워드가
+> **12개월 -23~-69%로 전부 하락 추세**다 — 신규 투자 판단 시 감안할 것.
 
 <details>
 <summary>✅ 종료된 두 트랙의 교훈 (접어 둔다 — 규율은 계속 유효)</summary>
@@ -165,7 +171,7 @@ reading-the-board 8 · equity 8 · flush-vs-straight 8 · implied-odds 8 · outs
 
 #### 착수 순서 제안
 
-1. **§6 축 B** — B5 `Vierling`(H2에 「beim Poker」 두 낱말) → B2 헤즈업 → B1 `/calculator` 링크 → B3 족보 PDF → B6 통화 2편
+1. ~~**§6 축 B** — B5 → B2 → B1~~ ✅ **셋 다 2026-08-13 종료**(`ab991c3`). **남은 건 B3(족보 PDF 신설) · B6(통화, 글별 판정)**
 2. 그 사이 **가벼운 잔여**를 끼워 넣는다 — 아래 📬 표 #4·#5(부분 정정 3건 · 뱅크 문서 2곳)는 **기계적**이라 묶기 좋다
 3. **`holdem-pot-odds` 「Equity = Gewinnchance」**(아래 절)는 그 글을 여는 트랙에서 함께 닫는다
 
@@ -381,12 +387,17 @@ APT 인천이 그날 끝난다. 같은 글·같은 로케일을 여러 번 열�
 
 ### §6 축 B — de에 남은 유일한 본체 작업 (이름표 유형)
 
-- **B2 헤즈업** — `heads-up poker` **260/LDA3** · `poker zu zweit` **140** · `poker zu zweit regeln` 40/11이 **전부 0회**.
-  자산은 이미 있다(`blind-meaning` 113~115행 = de 42편 중 유일한 헤즈업 전용 H2, `game-order` 예제 핸드)
-- **B5 Vierling** — `Vierling` 17회가 **한 번도 `Poker`와 인접하지 않는다.** H2에 「beim Poker」 두 낱말이면 `vierling poker` 70이 닫힌다
-- **B1 `/calculator` 링크** — 허브가 이미 있는데 Odds 클러스터만 끊겼다(`equity`는 태그에 `equity rechner poker`를 달고 본문 링크 0)
-- **B3 족보 PDF 부재** — `hand-rankings` 앵커는 「Pokerblätter als PDF」인데 링크 대상이 **룰 PDF**다. `poker reihenfolge pdf` 260/LDA11
-- **B6 통화 EUR 전환 누락 2편**(`texas-…-beginners` $18 · `pot-odds` $23) — 178곳 전환에서 빠졌다
+- ~~**B2 헤즈업**~~ ✅ **완료 2026-08-13**(`ab991c3`) — `blind-meaning`·`game-order`·`texas-…-beginners` 3편에 「Poker zu zweit」 정확 표현 배치(이전 0회)
+- ~~**B5 Vierling**~~ ✅ **완료** — `kicker` H2에 「beim Poker」. ⚠ **지시서의 「17회·한 번도 인접 안 함」은 틀렸다** — 실측 58회·7줄 인접이고 `hand-rankings`는 이미 표·H3에 인접 표기 보유
+- ~~**B1 `/calculator` 링크**~~ ✅ **완료** — Odds 5편 전수(equity·outs·pot-odds·implied-odds·drawing-odds). ⚠`equity` 태그의 `equity rechner poker`는 **볼륨 데이터가 아예 없는 키워드**다
+- 🔴 **B3 족보 PDF 부재 — 남은 것 중 최대 볼륨** — `hand-rankings` 앵커는 「Pokerblätter als PDF」인데
+  링크 대상이 **룰 PDF**다. `poker reihenfolge pdf` **260 실측 확인** + `poker regeln pdf zum ausdrucken` **70**.
+  ⚠ **자산 신설이 필요하다**(생성 스크립트 = `scripts/generate-beginner-pdf.mjs`, de는 A4).
+- 🟠 **B6 통화 EUR 전환 — 지시서의 「2편」이 실측에서 깨졌다.** `$`:`€` 비율로 세면
+  **€0인 개념글이 9편**이다(rake 43 · tvc 39 · icm 27 · pot-odds 23 · equity 22 · probability 19 ·
+  implied-odds 17 · continuation-bet 3 · positions 1). 🔴 **일괄 치환 금지** —
+  `rake`의 캡 금액은 **[PS] 1차 출처의 실제 USD**라 €로 바꾸면 사실 왜곡이고, 이벤트 가이드
+  (wpt/apt/korea)의 통화도 **실제 바이인 통화**다. **예시 금액만** 골라 바꿔야 한다(글별 판정 필요).
 - 🟢 **B7 #3: `/de/tournaments`는 이미 이행돼 있다**(`app/de/tournaments` 실재) — **문서만 갱신하면 된다**
 
 > 🟢 **§5 「다시 파지 마라」 13축을 먼저 읽어라**(`홀덤검수/reports/fix-handoff-de-S1-S3-2026-08-12.md`) —
