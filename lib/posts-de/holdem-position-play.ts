@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In Position zu sein bedeutet, dass du zuletzt handelst – du siehst jede Entscheidung deiner Gegner, bevor du einen Chip ausgibst. Solver- und Datenbank-Studien legen nahe, dass In-Position-Spieler rund 85–100% ihrer Equity realisieren, während Out-of-Position-Spieler nur etwa 60–85% mitnehmen. Deshalb öffnet UTG ~13% der Hände und der Button ~43% – und deshalb schreibt Position postflop jede C-Bet, jeden Bluff und jede Pot-Control-Entscheidung neu.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-08-10",
+  updated: "2026-08-13",
   masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "16 Min.",
@@ -102,7 +102,7 @@ Nimm 8♥7♥ auf einem K♥4♠2♥-Flop. In Position spielt sich dein Flushdra
 
 **Die beste Position im Poker ist der Button.** Es ist der einzige Sitz, der garantiert ==**auf jeder Postflop-Street zuletzt handelt**== – Flop, Turn und River, egal wer preflop geraist hat. Diese Garantie ist der Grund, warum der Button profitabel ~43% der Hände öffnen kann, während UTG nur ~13% schafft: Position, nicht Kartenstärke, finanziert den Unterschied.
 
-Hier ist der Button-Vorteil in einer konkreten Hand. Du öffnest A♦9♦ am Button, der Big Blind callt, und der Flop kommt **K♦7♠2♥** – ein trockenes Board, das fast niemanden trifft. Der Big Blind checkt – was hier fast nichts verrät, denn auf diesem Board checkt er praktisch seine ganze Range. Die Information steckt woanders: Ein König trifft deine Open-Range weit häufiger als seine Call-Range. ==g:Eine Bet gewinnt hier weit öfter, als sie verliert==, und wenn er foldet, nimmt Ass-hoch den Pot ohne Showdown. Jetzt dreh die Sitze um: OOP mit denselben A♦9♦ checkst du, er bettet, und du foldest einen bedeutsamen Teil der Zeit die beste Hand. Gleiche Karten; der Sitz hat die ganze Arbeit gemacht.
+Hier ist der Button-Vorteil in einer konkreten Hand. Du öffnest A♦9♦ am Button, der Big Blind callt, und der Flop kommt **K♦7♠2♥** – ein trockenes Board, das fast niemanden trifft. Der Big Blind checkt – was hier fast nichts verrät, denn auf diesem Board checkt er praktisch seine ganze Range. Die Information steckt woanders – im Sitz: Du entscheidest erst, nachdem er gehandelt hat. ==g:Eine Bet gewinnt hier weit öfter, als sie verliert==, und wenn er foldet, nimmt Ass-hoch den Pot ohne Showdown. Jetzt dreh die Sitze um: OOP mit denselben A♦9♦ checkst du, er bettet, und du foldest einen bedeutsamen Teil der Zeit die beste Hand. Gleiche Karten; der Sitz hat die ganze Arbeit gemacht.
 
 Der **Cutoff** ist aus einem Grund zweitbester: nur der Button handelt hinter dir, und wenn der Button foldet – was oft passiert – erbst du für den Rest der Hand die letzte Aktion.
 
