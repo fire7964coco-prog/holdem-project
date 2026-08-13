@@ -3,6 +3,31 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-08-13 (12) — **도구 6종 스키마 신설 · 스키마 트랙 정리 완료** (`baa715e`)
+
+정본 `app/calculator/page.tsx`의 `@graph` 패턴을 복제했다.
+
+| 페이지 | 타입 |
+|---|---|
+| `/hand-chart` · `/en/hand-chart` | `WebApplication`(ReferenceApplication) + **FAQPage(5)** + Breadcrumb |
+| `/quiz` · `/en/quiz` · `/holdem-practice` · `/en/win-rate-quiz` | `SoftwareApplication`(GameApplication) + Breadcrumb |
+
+- 🔴 **FAQPage는 화면에 실제 문답이 있는 `hand-chart` 2종에만 붙였다.** 나머지 4종엔 FAQ가
+  없으므로 **만들지 않았다** — 스키마에만 있는 FAQ는 구글 스펙 위반이고 LLM도 읽지 못한다.
+  (허브 트랙에서 걷어낸 결함을 여기서 재생산하지 않기 위한 규율. **없으면 안 붙이는 게 맞다.**)
+- `hand-chart` FAQ는 **JSX 인라인 배열이라 서버가 쓸 수 없었다** → `faq.ts`로 분리해
+  화면 `<details>`와 스키마가 같은 배열을 쓰게 했다.
+  🟢 **`<details>`는 접혀 있어도 답변이 DOM에 남는다**(산출물 5/5 확인) —
+  rules 하위 3편의 `{조건 && …}`와 **결정적으로 다른 점**이다. 아코디언이라고 다 같지 않다.
+- **타입을 갈랐다**: 차트 = `ReferenceApplication`(참조 자료) · 퀴즈·연습장 = `GameApplication`.
+- 🪶 `publisher`를 언어별로 갈랐다(KO 「홀덤마스터」 / EN 「HoldemMaster」) — 주입 직후
+  KO 3종이 「HoldemMaster」로 들어간 걸 되읽기에서 잡아 정정했다(정본 calculator와 일치시킴).
+- **검증**: build 69+457+60 · ld+json 파싱 실패 0 · FAQ 답변 HTML 노출 **10/10** ·
+  `canonical:check` 0건 · `check:hreflang` 481페이지 0건.
+
+**스키마 트랙 누계 = 66페이지** (허브 10 + 로케일 50 + 도구 6).
+남은 스키마 0 페이지는 `/about` `/contact` `/privacy` `/terms` `/login`과 ⏸`/pub/*` 11개뿐이다.
+
 ## 2026-08-13 (11) — **로케일 홈·목록 50페이지 스키마 신설** (`85ef76b`)
 
 허브 트랙(10)에 이어, 자기 스키마가 0이던 **로케일 페이지 50종**을 덮었다.
