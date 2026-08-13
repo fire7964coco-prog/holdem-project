@@ -37,10 +37,17 @@ import { HANDS, FAQS } from "./hands-data";
  * canonical은 자기 자신을 가리킨다 — 루트 layout의 canonical은 절대주소라
  * 상속되면 항상 홈이 된다(components/seo.tsx 주석의 2026-08-02 사고 참조).
  */
+/**
+ * ★2026-08-13 2차 조정 (적대 검수 반영):
+ *   - title이 34자라 뒤가 잘릴 위험이 있었다 → 「10단계」를 덜어 29자로. 훅과 최대어 2개는 보존.
+ *   - desc에 「포커 족보」·「홀덤족보」가 **완전 일치 문자열로 없었다** — SERP 볼드 처리에서 불리하다.
+ *     ⚠ 「홀덤족보」는 **붙여쓰기**가 8,100이다. 띄어쓰면 그 축을 놓친다.
+ *   🔴 이 두 값은 hands-client.tsx의 SEO 컴포넌트와 **한 글자도 다르면 안 된다**(한쪽만 고치면 탭과 SERP가 갈린다).
+ */
 export const metadata: Metadata = {
-  title: "족보 헷갈릴 때 여는 표 — 포커 족보·홀덤족보 순위 10단계",
+  title: "족보 헷갈릴 때 여는 표 — 포커 족보·홀덤족보 순위",
   description:
-    "로열플러시부터 하이카드까지 10단계를 예시 카드와 함께 한 장에 담았습니다. 홀덤 7장 기준 실제 확률까지 붙여, 게임 중 족보가 헷갈릴 때 바로 확인하는 표입니다.",
+    "로열플러시부터 하이카드까지 포커 족보 10단계를 예시 카드와 7장 기준 확률로 한 장에 담았습니다. 게임 중 홀덤족보가 헷갈릴 때 바로 열어 확인하는 표입니다.",
   robots: { index: true, follow: true },
   alternates: { canonical: `${SITE}/hands` },
 };
@@ -62,9 +69,15 @@ export default function Page() {
     {
       "@context": "https://schema.org",
       "@type": "ItemList",
-      name: "포커·홀덤 족보 순위 (텍사스 홀덤 7장 기준, 강→약 10단계)",
+      /**
+       * 🔴 name이 필라 itemList와 괄호 안까지 동일했다(「(텍사스 홀덤 7장 기준, 강→약 10단계)」).
+       *   10개 아이템의 이름·설명·확률까지 같은 검산본이라, 구조화 데이터 레벨에서 두 페이지가
+       *   사실상 같은 문서로 보였다. 확률이 같은 건 옳다(§13) — 갈라야 할 건 name·description이다.
+       *   그 문구는 필라에 양보하고 여기는 «예시 카드·한 화면»이라는 도구 고유값을 적는다.
+       */
+      name: "포커 족보 10단계 표 — 예시 카드와 7장 기준 확률",
       description:
-        "로열 플러시부터 하이카드까지 10단계. 확률은 홀카드 2장 + 보드 5장, 총 7장에서 최강 5장을 고른 기준입니다.",
+        "각 족보가 실제 카드 다섯 장으로 어떻게 생겼는지 한 화면에서 확인하는 표입니다.",
       itemListOrder: "https://schema.org/ItemListOrderDescending",
       numberOfItems: HANDS.length,
       itemListElement: HANDS.map((h) => ({
@@ -79,7 +92,10 @@ export default function Page() {
       "@type": "BreadcrumbList",
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "홈", item: `${SITE}/` },
-        { "@type": "ListItem", position: 2, name: "포커 족보 순위표", item: `${SITE}/hands` },
+        // ⚠ H1에서 「포커 족보 순위」 축어를 비운 근거가 여기에도 적용된다 —
+        //   빵부스러기는 SERP에 노출되므로 같은 기준으로 맞춘다(교열 렌즈 적발).
+        //   푸터 링크 라벨만 「족보 순위표」로 두는데, 그쪽은 사용자가 메뉴에서 찾는 이름이라 명료성이 우선이다.
+        { "@type": "ListItem", position: 2, name: "포커 족보 10단계 표", item: `${SITE}/hands` },
       ],
     },
     /**

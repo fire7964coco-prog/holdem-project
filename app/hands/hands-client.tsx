@@ -24,8 +24,8 @@ export default function Hands() {
         (「포커 족보 카드」·「홀덤 핸드 랭킹 카드」)가 들어 있어 조준을 흐린다.
       */}
       <SEO
-        title="족보 헷갈릴 때 여는 표 — 포커 족보·홀덤족보 순위 10단계"
-        description="로열플러시부터 하이카드까지 10단계를 예시 카드와 함께 한 장에 담았습니다. 홀덤 7장 기준 실제 확률까지 붙여, 게임 중 족보가 헷갈릴 때 바로 확인하는 표입니다."
+        title="족보 헷갈릴 때 여는 표 — 포커 족보·홀덤족보 순위"
+        description="로열플러시부터 하이카드까지 포커 족보 10단계를 예시 카드와 7장 기준 확률로 한 장에 담았습니다. 게임 중 홀덤족보가 헷갈릴 때 바로 열어 확인하는 표입니다."
         path="/hands"
       />
 
@@ -39,13 +39,27 @@ export default function Hands() {
           ⚠ 리드에서 「온라인홀덤」 3회 반복을 걷어냈다 — 키워드 억지삽입은 posting.mdc §DON'T다.
         */}
         <div className="text-center mb-8">
+          {/*
+            🔴 H1에서 「포커 족보 순위」 축어를 비웠다 (2026-08-13 카니발 렌즈 적발).
+              필라가 desc·tldr·H2·정리 H2 **네 자리**에서 「포커 족보 순위 …10단계」를 쓰고 있어
+              H1이 그걸 글자 그대로 반복하면 패시지 단위에서 두 페이지가 같은 질의로 붙는다.
+              최대어 「포커 족보」(18,100)는 그대로 두고 꼬리만 «표»로 돌려 의도를 갈랐다.
+            ⚠ 「텍사스 홀덤 족보」(2,400)는 두 페이지 어디에도 연속 문자열이 없어 비어 있었다 —
+              리드 첫 문장에 **1회만** 자연스럽게 넣는다(반복은 §DON'T).
+          */}
           <h1 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-4">
-            포커 족보 순위 10단계
+            포커 족보 10단계 표 — 강한 순서대로
           </h1>
+          {/*
+            ⚠ 한 문장에 주어를 두 번 갈지 말 것 — 「…표이고, 홀덤은 … 때문에 실었습니다」로 이어 붙였다가
+              주어가 세 번 바뀌는 비문이 됐다(2026-08-13 교열 렌즈). 마침표로 끊는다.
+              「강한 순서」는 H1이 이미 말하므로 리드에서 되풀이하지 않는다.
+          */}
           <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            로열플러시부터 하이카드까지 <strong className="text-foreground">강한 순서 그대로</strong> 정리한 홀덤족보 표입니다.
-            홀덤은 홀 카드 2장 + 보드 5장, <strong className="text-foreground">총 7장에서 가장 좋은 5장</strong>을 골라 겨루기 때문에
-            아래 확률도 7장 기준으로 실었습니다. 게임 중 헷갈릴 때 이 페이지만 열어 확인하세요.
+            텍사스 홀덤 족보는 로열플러시부터 하이카드까지 10단계입니다. 아래 홀덤족보 표가 그 순서입니다.
+            홀덤은 홀 카드 2장 + 보드 5장, {" "}
+            <strong className="text-foreground">총 7장에서 가장 좋은 5장</strong>을 골라 겨루기 때문에
+            확률도 7장 기준으로 실었습니다. 게임 중 헷갈릴 때 이 페이지만 열어 확인하세요.
           </p>
         </div>
 
@@ -169,10 +183,18 @@ export default function Hands() {
           aria-label="관련 가이드"
           className="mt-8"
         >
+          {/*
+            🔴 앵커를 «질의»가 아니라 «역할»로 바꿨다 (2026-08-13 카니발 렌즈).
+              전 문구는 「홀덤 족보 순위 완전 정리」였는데 두 문제가 있었다 —
+              ① 이 페이지의 title이 「…홀덤족보 순위」인데 본문 앵커로 같은 질의를 필라에 넘겨
+                 구글에 서로 반대되는 신호를 동시에 줬다
+              ② 「완전 정리」는 §17 금지어(「완벽 정리」·「총정리」)와 같은 계열이다.
+              필라의 차별화 단어(왜·근거·확률)를 앵커에 실어 역할 분리를 링크 신호로도 강화한다.
+          */}
           <div className="mb-5 p-4 bg-primary/5 border border-primary/20 rounded-xl">
-            <p className="text-sm text-muted-foreground mb-2">📖 족보 순서를 <strong className="text-foreground">왜 그렇게 외워야 하는지</strong> 확률과 함께 더 깊이 알고 싶다면</p>
+            <p className="text-sm text-muted-foreground mb-2">📖 표만으로 부족하고 <strong className="text-foreground">순서의 근거</strong>까지 알고 싶다면</p>
             <Link href="/blog/holdem-hand-rankings" className="text-primary font-bold text-sm hover:underline">
-              → 홀덤 족보 순위 완전 정리 — 확률·보드 판단까지 한 번에 읽기
+              → 족보 순서가 왜 이 순서인지 — 7장 기준 확률로 보는 근거
             </Link>
           </div>
           <h2 className="text-base font-bold text-muted-foreground mb-4">다음으로 읽어보세요</h2>
