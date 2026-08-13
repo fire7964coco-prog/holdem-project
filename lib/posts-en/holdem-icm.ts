@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "ICM (Independent Chip Model) converts your tournament chip stack into its real prize-money value, using the payouts and everyone's stacks. Because you only win one first prize, doubling your chips never doubles your money — so the chip leader's stack is worth less than its chip share, and short stacks are worth more. That gap is why you fold hands on the bubble that would be easy calls in a cash game.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-08-11",
+  updated: "2026-08-13",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🏆",
@@ -131,7 +131,7 @@ The nightmare seat is the medium stack getting shoved on — folding hands as st
 
 ## ICM Deal vs Chip Chop: How to Split a Final-Table Prize Pool
 
-**A chip chop splits the remaining money by raw chip percentage; an ICM deal splits it by each player's ICM dollar value. The chip chop favors big stacks, the ICM deal is fairer to short stacks.** When players agree to end a tournament early and divide the prizes, these are the two methods on the table — and knowing the difference is worth real money.
+**In its simplest form a chip chop splits the remaining money by raw chip percentage; an ICM deal splits it by each player's ICM dollar value. The chip chop favors big stacks, the ICM deal is fairer to short stacks.** When players agree to end a tournament early and divide the prizes, these are the two methods on the table — and knowing the difference is worth real money.
 
 Say three players with 50% / 30% / 20% of the chips are dividing a ==$1,500== remaining pool (paying $900 / $400 / $200):
 
@@ -200,7 +200,7 @@ A. Chip EV measures a decision in chips won or lost; ICM measures it in real mon
 
 **Q. What is an ICM deal, and how is it different from a chip chop?**
 
-A. Both split a prize pool when players agree to end early. A chip chop divides the money by raw chip percentage (favoring big stacks); an ICM deal divides it by each player's ICM dollar value (fairer to short stacks). If you're short, ask for an ICM deal; if you're the chip leader, a chip chop pays you more.
+A. Both split a prize pool when players agree to end early. In its simplest form a chip chop divides the money by raw chip percentage (favoring big stacks); an ICM deal divides it by each player's ICM dollar value (fairer to short stacks). There is also a middle version that first sets aside the payout each player has already locked up and chops only the money above it. If you're short, ask for an ICM deal; if you're the chip leader, a chip chop pays you more.
 
 **Q. Does ICM apply to cash games?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "The bubble is the spot right before the money, where one more elimination pays everyone else. Because busting means winning nothing, survival is worth more than the chips you'd gain — so calling ranges tighten hard while shoving stays wide. Big stacks attack, medium stacks are the most trapped (not short stacks), and on a satellite bubble you fold everything, even aces, once your seat is locked.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-08-11",
+  updated: "2026-08-13",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🫧",
@@ -136,8 +136,8 @@ The other half is that bubble factor tracks **who is across from you**, not the 
 
 **When the money is close, tournaments switch to "hand-for-hand" — every table plays exactly one hand at the same time, then waits — specifically to stop players from stalling into the money.** Without it, players at slow tables could fold hand after hand while faster tables burned through the bubble. Hand-for-hand levels the field:
 
-- **How it works:** the tournament director pauses the clock; all tables deal one hand, and no table starts the next until every table has finished. If two players bust on the same hand-for-hand at the same table, the one who started the hand with fewer chips takes the lower (bubble) finish; if they bust at different tables, they are ranked as a tie and split the two payouts involved.
-- **Stalling:** taking the full time bank on every decision to see fewer hands (and fold into the money). Big stacks have no reason to stall — they want more hands to attack. Short and medium stacks sometimes stall to survive, ==but excessive stalling can earn a clock call or a penalty==, so tank within reason.
+- **How it works:** the tournament director pauses the clock, and from then on every hand runs a fixed ==2 minutes== off the level no matter how long it actually takes (WSOP Rule 126.a and 126.c; TDA RP-8) — so blinds keep climbing through the bubble, just per hand instead of per real minute. All tables deal one hand, and no table starts the next until every table has finished. If two players bust on the same hand-for-hand at the same table, the one who started the hand with fewer chips takes the lower (bubble) finish; if they bust at different tables, they are ranked as a tie and split the two payouts involved.
+- **Stalling:** taking the full time bank on every decision to see fewer hands (and fold into the money). It works precisely because tanking is free on the clock — the hand costs its 2 minutes whether you snap-fold or burn the whole time bank. Big stacks have no reason to stall — they want more hands to attack. Short and medium stacks sometimes stall to survive, ==but excessive stalling can earn a clock call or a penalty==, so tank within reason.
 - **Exploit it:** because everyone else slows down, a big stack that keeps applying pressure during hand-for-hand racks up blinds and antes almost uncontested.
 
 ---

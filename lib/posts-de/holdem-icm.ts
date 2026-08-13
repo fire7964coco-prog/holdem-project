@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "ICM (Independent Chip Model) rechnet deinen Turnier-Chipstack in seinen echten Preisgeldwert um, anhand der Payouts und aller Stacks. Weil du nur ein einziges erstes Preisgeld gewinnst, verdoppelt das Verdoppeln deiner Chips nie dein Geld – deshalb ist der Stack des Chipleaders weniger wert als sein Chipanteil, und Short Stacks sind mehr wert. Diese Lücke ist der Grund, warum du an der Bubble Hände foldest, die im Cash Game leichte Calls wären.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-08-11",
-  masterUpdated: "2026-08-11",
+  updated: "2026-08-13",
+  masterUpdated: "2026-08-13",
   keepImagesInBody: true,
   readTime: "13 Min.",
   emoji: "🏆",
@@ -151,7 +151,7 @@ Der Albtraum-Sitzplatz ist der Medium Stack, der angeshovt wird – der Hände f
 ## Lohnt sich ein Deal am Final Table?
 
 > **Kurze Antwort**
-> Ein Chip Chop teilt das verbleibende Geld nach rohem Chipprozentsatz auf; ein ICM Deal teilt es nach dem ICM-Dollarwert jedes Spielers auf. Der Chip Chop begünstigt Big Stacks, der ICM Deal ist fairer gegenüber Short Stacks.
+> Ein Chip Chop teilt das verbleibende Geld in seiner einfachsten Form nach rohem Chipprozentsatz auf; ein ICM Deal teilt es nach dem ICM-Dollarwert jedes Spielers auf. Der Chip Chop begünstigt Big Stacks, der ICM Deal ist fairer gegenüber Short Stacks.
 
 Wenn Spieler sich einigen, ein Turnier früh zu beenden und die Preise aufzuteilen, sind das die zwei Methoden auf dem Tisch – und den Unterschied zu kennen, ist echtes Geld wert.
 
@@ -228,7 +228,7 @@ A. Chip EV misst eine Entscheidung in gewonnenen oder verlorenen Chips; ICM miss
 
 **Q. Was ist ein ICM Deal, und wie unterscheidet er sich von einem Chip Chop?**
 
-A. Beide teilen einen Preispool auf, wenn Spieler sich einigen, früh zu beenden. Ein Chip Chop teilt das Geld nach rohem Chipprozentsatz auf (begünstigt Big Stacks); ein ICM Deal teilt es nach dem ICM-Dollarwert jedes Spielers auf (fairer für Short Stacks). Bist du short, verlange einen ICM Deal; bist du der Chipleader, zahlt dir ein Chip Chop mehr.
+A. Beide teilen einen Preispool auf, wenn Spieler sich einigen, früh zu beenden. Ein Chip Chop teilt das Geld in seiner einfachsten Form nach rohem Chipprozentsatz auf (begünstigt Big Stacks); ein ICM Deal teilt es nach dem ICM-Dollarwert jedes Spielers auf (fairer für Short Stacks). Es gibt auch eine Zwischenform, die jedem Spieler zuerst die bereits gesicherte Auszahlung zur Seite legt und nur das Geld darüber nach Chips aufteilt. Bist du short, verlange einen ICM Deal; bist du der Chipleader, zahlt dir ein Chip Chop mehr.
 
 **Q. Gilt ICM für Cash Games?**
 

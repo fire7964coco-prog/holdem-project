@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "ICM（独立筹码模型）用奖金结构和所有人的码量，把你锦标赛的筹码换算成它真正值多少奖金。因为冠军只有一个，把筹码翻倍永远不会把你的钱翻倍——所以 chip leader 的码量价值低于它的筹码占比，而 short stack 的价值高于筹码占比。这个差距，正是你在 bubble 上会弃掉那些在现金局里轻松跟的牌的原因。",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-08-11",
-  masterUpdated: "2026-08-11",
+  updated: "2026-08-13",
+  masterUpdated: "2026-08-13",
   keepImagesInBody: true,
   readTime: "13 分钟",
   emoji: "🏆",
@@ -132,7 +132,7 @@ short stack | 值得比他的筹码占比**更多**
 
 ## ICM deal vs chip chop：怎么分掉一个 final table 的奖池
 
-**chip chop 按纯筹码占比来分剩下的钱；ICM deal 按每个人的 ICM 美元价值来分。chip chop 偏袒大码量，ICM deal 对 short stack 更公平。** 当玩家们同意提前结束锦标赛、把奖金分掉时，桌面上就是这两种方法——而懂得两者的区别，值真金白银。
+**最简单的形式下，chip chop 按纯筹码占比来分剩下的钱；ICM deal 按每个人的 ICM 美元价值来分。chip chop 偏袒大码量，ICM deal 对 short stack 更公平。** 当玩家们同意提前结束锦标赛、把奖金分掉时，桌面上就是这两种方法——而懂得两者的区别，值真金白银。
 
 假设三个玩家分别握着 50% / 30% / 20% 的筹码，要分一个 ==$1,500== 的剩余奖池（付 $900 / $400 / $200）：
 
@@ -201,7 +201,7 @@ A. chip EV 用赢来或输掉的筹码衡量一个决策；ICM 用真实的钱�
 
 **Q. 什么是 ICM deal，它和 chip chop 有什么不同？**
 
-A. 两者都是在玩家同意提前结束时分掉奖池。chip chop 按纯筹码占比来分钱（偏袒大码量）；ICM deal 按每个玩家的 ICM 美元价值来分（对 short stack 更公平）。如果你是 short，就要求 ICM deal；如果你是 chip leader，chip chop 给你分得更多。
+A. 两者都是在玩家同意提前结束时分掉奖池。最简单的形式下，chip chop 按纯筹码占比来分钱（偏袒大码量）；ICM deal 按每个玩家的 ICM 美元价值来分（对 short stack 更公平）。还有一种折中版本：先把每个人已经锁定的奖金留出来，只把超出那部分的钱按筹码比例分。如果你是 short，就要求 ICM deal；如果你是 chip leader，chip chop 给你分得更多。
 
 **Q. ICM 适用于现金局吗？**
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "ICM (Independent Chip Model) mengubah stack chip turnamen Anda menjadi nilai uang hadiah nyata, memakai payout dan stack setiap pemain. Karena Anda hanya memenangkan satu hadiah pertama, menggandakan chip tidak pernah menggandakan uang Anda — jadi stack chip leader bernilai lebih kecil dari porsi chipnya, dan short stack bernilai lebih besar. Celah itulah alasan Anda fold tangan di bubble yang akan jadi call mudah di cash game.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-08-11",
-  masterUpdated: "2026-08-11",
+  updated: "2026-08-13",
+  masterUpdated: "2026-08-13",
   keepImagesInBody: true,
   readTime: "13 mnt",
   emoji: "🏆",
@@ -132,7 +132,7 @@ Kursi mimpi buruknya adalah medium stack yang di-shove — memfold tangan sekuat
 
 ## ICM Deal vs Chip Chop: Cara Membagi Prize Pool Final Table
 
-**Chip chop membagi sisa uang berdasarkan persentase chip mentah; ICM deal membaginya berdasarkan nilai dolar ICM tiap pemain. Chip chop menguntungkan big stack, ICM deal lebih adil bagi short stack.** Saat pemain sepakat mengakhiri turnamen lebih awal dan membagi hadiah, ini dua metode yang tersedia — dan mengetahui bedanya bernilai uang nyata.
+**Dalam bentuk paling sederhananya, chip chop membagi sisa uang berdasarkan persentase chip mentah; ICM deal membaginya berdasarkan nilai dolar ICM tiap pemain. Chip chop menguntungkan big stack, ICM deal lebih adil bagi short stack.** Saat pemain sepakat mengakhiri turnamen lebih awal dan membagi hadiah, ini dua metode yang tersedia — dan mengetahui bedanya bernilai uang nyata.
 
 Misalkan tiga pemain dengan 50% / 30% / 20% chip membagi sisa pool ==$1.500== (membayar $900 / $400 / $200):
 
@@ -201,7 +201,7 @@ A. Chip EV mengukur keputusan dalam chip yang dimenangkan atau hilang; ICM mengu
 
 **Q. Apa itu ICM deal, dan apa bedanya dari chip chop?**
 
-A. Keduanya membagi prize pool saat pemain sepakat mengakhiri lebih awal. Chip chop membagi uang berdasarkan persentase chip mentah (menguntungkan big stack); ICM deal membaginya berdasarkan nilai dolar ICM tiap pemain (lebih adil bagi short stack). Jika Anda short, minta ICM deal; jika Anda chip leader, chip chop membayar Anda lebih banyak.
+A. Keduanya membagi prize pool saat pemain sepakat mengakhiri lebih awal. Dalam bentuk paling sederhananya, chip chop membagi uang berdasarkan persentase chip mentah (menguntungkan big stack); ICM deal membaginya berdasarkan nilai dolar ICM tiap pemain (lebih adil bagi short stack). Ada juga versi tengah yang lebih dulu menyisihkan hadiah yang sudah dikunci tiap pemain, lalu hanya membagi sisa di atasnya berdasarkan chip. Jika Anda short, minta ICM deal; jika Anda chip leader, chip chop membayar Anda lebih banyak.
 
 **Q. Apakah ICM berlaku untuk cash game?**
 

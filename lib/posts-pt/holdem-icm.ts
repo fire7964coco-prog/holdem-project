@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "O ICM (Independent Chip Model) converte seu stack de fichas de torneio no seu valor real em premiação, usando os payouts e os stacks de todo mundo. Como você só ganha um primeiro prêmio, dobrar suas fichas nunca dobra seu dinheiro — então o stack do chip leader vale menos do que sua fatia de fichas, e os short stacks valem mais. Essa diferença é o motivo de você foldar na bubble mãos que seriam calls fáceis num cash game.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-08-11",
-  masterUpdated: "2026-08-11",
+  updated: "2026-08-13",
+  masterUpdated: "2026-08-13",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🏆",
@@ -132,7 +132,7 @@ O assento pesadelo é o stack médio recebendo o shove — foldando mãos tão f
 
 ## ICM deal vs chip chop: como dividir a premiação de uma final table
 
-**Um chip chop divide o dinheiro restante pela porcentagem bruta de fichas; um ICM deal divide pelo valor em dólares de ICM de cada jogador. O chip chop favorece stacks grandes, o ICM deal é mais justo com os short stacks.** Quando os jogadores concordam em encerrar um torneio cedo e dividir os prêmios, esses são os dois métodos na mesa — e saber a diferença vale dinheiro de verdade.
+**Na sua forma mais simples, um chip chop divide o dinheiro restante pela porcentagem bruta de fichas; um ICM deal divide pelo valor em dólares de ICM de cada jogador. O chip chop favorece stacks grandes, o ICM deal é mais justo com os short stacks.** Quando os jogadores concordam em encerrar um torneio cedo e dividir os prêmios, esses são os dois métodos na mesa — e saber a diferença vale dinheiro de verdade.
 
 Digamos que três jogadores com 50% / 30% / 20% das fichas estão dividindo um pool restante de ==$1.500== (pagando $900 / $400 / $200):
 
@@ -201,7 +201,7 @@ A. O chip EV mede uma decisão em fichas ganhas ou perdidas; o ICM mede em dinhe
 
 **Q. O que é um ICM deal, e como ele difere de um chip chop?**
 
-A. Ambos dividem uma premiação quando os jogadores concordam em encerrar cedo. Um chip chop divide o dinheiro pela porcentagem bruta de fichas (favorecendo stacks grandes); um ICM deal divide pelo valor em dólares de ICM de cada jogador (mais justo com os short stacks). Se você está short, peça um ICM deal; se você é o chip leader, um chip chop te paga mais.
+A. Ambos dividem uma premiação quando os jogadores concordam em encerrar cedo. Na sua forma mais simples, um chip chop divide o dinheiro pela porcentagem bruta de fichas (favorecendo stacks grandes); um ICM deal divide pelo valor em dólares de ICM de cada jogador (mais justo com os short stacks). Também existe uma versão intermediária que primeiro separa o prêmio que cada jogador já tem garantido e só divide por fichas o dinheiro acima disso. Se você está short, peça um ICM deal; se você é o chip leader, um chip chop te paga mais.
 
 **Q. O ICM se aplica a cash games?**
 

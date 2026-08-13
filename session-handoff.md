@@ -4,8 +4,8 @@
 > 작업 시작 전 `CLAUDE.md` → `session-handoff.md` → `WORKLOG.md` 순서로 읽을 것.
 > 🔴 **이 파일은 «지금 할 일»만 담는다.** 완료분은 `WORKLOG.md`에 적고 여기서 지운다 — 로그를 쌓지 마라.
 > (2026-08-13 정리: **검수장이 de 42편을 Fable 5로 전면 재검수**해 조치목록 6단계를 보냈다.
-> **순위 1~4를 그날 전부 닫았고 남은 건 순위5(개념권 RISKY)와 🔒순위6(8/16 국적축)뿐이다.**
-> 경위는 `WORKLOG.md` 2026-08-13 (1)~(8). `/hands` 트랙은 **열었다가 같은 날 되돌려 종료**됐다.)
+> **순위 1~5를 그날 전부 닫았다. 검수장 트랙에 남은 건 🔒순위6(8/16 국적축)뿐이다.**
+> 경위는 `WORKLOG.md` 2026-08-13 (1)~(9). `/hands` 트랙은 **열었다가 같은 날 되돌려 종료**됐다.)
 
 ---
 
@@ -15,43 +15,17 @@
 > 배치별 상세는 같은 폴더 `재검수-de-*.md` 7개. **착수 전 `git pull`**(검수장이 동시 작업 중, 읽기만 할 것).
 >
 > ⏰ **8/16(일)이 사흘 뒤다** — 그날 락이 풀리는 게 4건 있다(맨 아래 「8/16에 열 것」).
-> **그 전에 닫을 수 있는 건 순위5뿐이다**(순위1~4는 종료).
+> **검수장 조치목록은 순위1~5가 전부 닫혔다.** 8/16까지는 아래 «허브 스키마» 트랙을 연다.
 
-### ▶▶ 🔴 이 세션의 본체 = **검수장 조치목록 순위5 — 개념권 RISKY 상위**
+### ▶▶ 🔴 이 세션의 본체 = **허브 페이지 구조화 데이터 (schema prop 죽은 코드)**
 
-> ✅ **순위3·4가 2026-08-13에 종료됐다**(`af6c77c` · `dccd183`) — 경위·교훈은 `WORKLOG.md`
-> 2026-08-13 (7)·(8). **순위3은 8로케일, 순위4는 3로케일**이었다 — 분모는 매번 직접 세라.
-
-- **순위5 개념권 RISKY 상위** — `bubble` #72 핸드포핸드 시계(WSOP 126.a·c: **정지 + 핸드당 2분 차감**,
-  인접 Stalling 절의 손익 전제가 뒤집힌다) · `short-stack` tldr **3중 이탈**(한 문장 정정으로 3건 종결,
-  ⚠**tldr 필드 + 본문 인용구 2자리에 복제**돼 있다) · `icm` Chip Chop 단정 2자리 · `tvc` #45 핸드선택 방향 반대.
-
-#### 착수 준비 (순위5)
-
-1. **원장 4개를 먼저 연다** — `홀덤검수/ledger/de/holdem-bubble.md`(50KB) · `holdem-short-stack.md`(48KB)
-   · `holdem-icm.md`(42KB) · `holdem-tournament-vs-cash-game.md`(48KB). ⚠ **원장은 파일당 25K 토큰 상한에
-   걸린다** — `offset`으로 나눠 읽거나 해당 항목번호를 grep해라.
-2. **WSOP 룰북은 이미 경로가 확보돼 있다**(아래 「1차 출처 — 확보해 둔 경로」 절) —
-   `wsop.gg-global-cdn.com/wsop/pdfs/2026-WSOP-Tournament-Rules.pdf` → `pdftotext -layout`.
-   **126조 전문을 축어로** 읽어라(126.a·c·e). ⚠ 검수장이 `bubble #27` 정정안을 **룰 중립안으로 교체**했다 —
-   구안 「마지막 두 테이블」은 TDA에만 맞고 **WSOP Rule 68.a(10인 한 테이블)와 충돌**한다.
-3. `pokertda.com`은 이 환경에서 **접속 불가** — TDA 원문은 버지니아 주 공개 PDF로 확보돼 있다(같은 절).
-
-🔴 **분모를 지시서대로 믿지 마라 — 4연속 깨졌다.** 순위1·2는 «더 많았고»(1곳 지시 → 7~8로케일),
-순위4는 «더 적었다»(de 지시 → 실측 3로케일, EN 계열이 이미 정본). **매번 전 로케일 grep으로 직접 세라.**
-그리고 **grep 0건을 「전부 고쳤다」로 읽지 마라** — 순위3에서 패턴이 두 번 미탐했다
-(es 비용표 «각주» · zh FAQ 「2 周」는 공백 때문에 「两周」와 안 걸렸다). **FAQ·각주는 직접 열어라.**
-
-🔴 **검사기 히트는 «근거»가 아니라 «후보»다.** 순위3에서 13건, 순위4에서 13건이 걸렸는데 **양쪽 다
-전건 원문 판정 결과 대부분 오탐**이었다(내가 쓴 부정문 / GOP·AJPC의 «정당한» 미정 서술).
-순위4에선 원장이 **OK로 판정한 자리**를 고칠 뻔했다. **새 검사기는 규칙보다 셀프테스트를 먼저 돌려라** —
-순위3에선 셀프테스트가 «진짜 결함을 놓치는 구멍»까지 잡아냈다.
-
-🟢 **참고**: `starpoker.com.au` 200 · `worldpokertour.com` 403 · `pokercalendar.asia` 접속 실패
-(AJPC 날짜는 그래서 **미확보로 남겨 뒀다** — 원장의 「04~13 Dec」를 옮겨쓰지 말 것).
-이미지형 PDF는 `pdftoppm` 렌더 → Read로 판독. **표의 날짜 귀속을 `pdftotext`로 판정하지 마라**(병합셀).
-
-### 🟠 별도 트랙 (시한 없음 · 위가 끝나면)
+> ✅ **순위5가 2026-08-13에 종료됐다** — 경위·교훈은 `WORKLOG.md` 2026-08-13 (9).
+> 실측 분모는 **bubble·tvc = de 1곳 / icm·short-stack = 8로케일(EN 발원지)**로 **양방향으로 갈렸다.**
+> 🔴 그 세션이 남긴 규율 둘: ① **「지시가 de면 de만」도 「어차피 8곳」도 둘 다 틀린 가정**이다
+> ② **부분 정정은 «고친 자리»가 아니라 «안 고친 절반»에서 다시 터진다**(short-stack #6이
+> 07월 미러 정정에서 「hard」를 흘려 본문과 충돌 상태로 한 달을 버텼다).
+> 🪶 검수장 회신 거리 2건: **TDA RP-8 B 원문은 「2-minutes per hand」**(지시서의 「최대 3분」과 다름) ·
+> `bubble`은 **어느 로케일도 정답 전체를 갖고 있지 않았다**(de=결론만, 나머지 7=기전만).
 
 **허브 페이지 구조화 데이터가 0이다.** `components/seo.tsx`가 `schema` prop을 **구조분해에서 받지도 않아**
 `<SEO schema={...}>`를 쓰는 **13개 파일이 전부 죽은 코드**였다(2026-08-13 발견). 산출물 실측:
@@ -230,7 +204,7 @@ WRONG 증가분 25/30은 **가이드 4편에서 구 검수가 못 연 1차를 �
 | 2 | 🔴 `holdem-tournament` **A층 WRONG 2** — Bravo Poker Live · GGPoker SuperSatellites | ✅ **2026-08-13 완료**(`68fa9ae`) — ⚠지시는 de 1곳이었으나 **실측 7로케일·EN 발원지**. Bravo는 1차 확인 후 **WSOP LIVE**로, GGPoker는 1차 실패라 **주장 제거**(위 「1차 확인 필요」 #2) |
 | 3 | 🔴 `wpt-australia` **WRONG 14** — WC시트 · 새틀 구조 · 송금 참조란 · SMS 포맷 | ✅ **2026-08-13 완료**(`af6c77c`) — ⚠지시는 de 14건이었으나 **실측 8로케일 전수·EN 발원지**. 공식 PDF 4종을 직접 재실사(Player Guide는 이미지형이라 렌더 판독). 같은 자리 RISKY 5건(#91 등록시각 모순·#49 GTD 규제 인과·#18·de #21 #27 #28 Champions Cup)도 동시 종결 |
 | 4 | `korea-poker-marathon` 러닝 실측 4 + desc RISKY #1 | ✅ **2026-08-13 완료**(`dccd183`) — ⚠지시는 de였으나 실측은 **de·id·pt 3로케일뿐**(en·es·ja·zh·zh-hant는 **이미 옳았다**). YTN 공식 재확인(11KM·7/10·공지 6/26 조기마감) + APT Jeju ME KRW 2.7M. 내부모순 #19·#33·#39·#61·#24·#29·#82도 동시 종결. 🔒국적 축은 8/16으로 남김 |
-| 5 | 개념권 RISKY 상위 — `bubble` #72 · `short-stack` tldr **3중 이탈**(한 문장으로 3건 종결, ⚠tldr 필드+본문 인용구 **2자리 복제**) · `icm` Chip Chop 단정 2 · `tvc` #45 방향 반대 | ⬜ |
+| 5 | 개념권 RISKY 상위 — `bubble` #72 · `short-stack` tldr · `icm` Chip Chop · `tvc` #45 | ✅ **2026-08-13 완료** — ⚠분모가 **양방향으로** 깨졌다: bubble #72·tvc #45는 **de 1곳뿐**(나머지 7은 이미 옳음), icm Chip Chop은 **8로케일×2자리**, short-stack tldr은 **8로케일**(둘 다 EN 발원지). WSOP 126.a·c·d·e + TDA RP-8 B 축어 확보 후 반영. ⚠**「tldr+본문 2자리 복제」는 실측에서 1자리**였다(assert-claims의 2는 「Open-limpe…」가 부분문자열로 걸린 것) |
 | 6 | 🔒 국적·비자 축(apt #105·#100 · korea #57·#68·#69) | **8/16 일괄** — 이번 발신에 미포함 |
 
 🔴 **알아둘 것**: 1차 접근이 여럿 막혀 판정이 제한됐다(worldpokertour 403 · pokerstars 404 · casinos.at 403 등).
@@ -247,11 +221,11 @@ de `positions` 6맥스 「모든 자리」 2자리.
 
 | # | 항목 | 왜 아직인가 |
 |---|---|---|
-| 1 | `holdem-bubble` 핸드포홀드 — **WSOP 126.a만 있고 126.c·e 누락**(EN·ja) · de는 「시계가 계속 간다」가 틀림 | **세 로케일이 각각 다르게 틀렸다.** 룰북 PDF를 다시 받아 126 전문을 축어로 확인해야 한다. ⚠ **2026-08-13 갱신**: 검수장이 `bubble #27` 정정안을 **룰 중립안으로 교체**했다 — 구안 「an den letzten zwei Tischen」은 TDA에만 맞고 **WSOP Rule 68.a(10인 한 테이블)와 충돌**한다. 그리고 `#72` 핸드포핸드 시계(126.a·c: **정지 + 핸드당 2분 차감**)가 인접 Stalling 절의 손익 전제를 뒤집는다 |
+| ~~1~~ | ~~`holdem-bubble` 핸드포핸드 시계~~ | ✅ **완료 2026-08-13** — 126.a·c·d·e + TDA RP-8 축어로 **8로케일 전부** 완전문 반영(정지 + 핸드당 고정 2분 + 블라인드 상승) + Stalling 손익 전제. ⚠ **`bubble #27`(FT버블 테이블 구성)은 아직 남았다** — 검수장이 룰 중립안으로 교체했다(구안 「an den letzten zwei Tischen」은 TDA에만 맞고 **WSOP Rule 68.a(10인 한 테이블)와 충돌**). 그 글을 다시 열 때 닫아라 |
 | 2 | `hand-rankings` #65 「토너먼트는 딜러 오른쪽 첫 좌석에서 시작」 | 내가 **WSOP Rule 85**를 근거로 박았는데 검수장은 「TDA 2024·RRoP 어디에도 없다」고 했다. **출처가 서로 다르니 WSOP 원문으로 재확인**할 것 |
 | 3 | `position-play` #10 대체 근거(de·ja) | 검수장 검산: BTN 43% 레인지의 K 조합 **126/558 = 22,6%** vs 덱 14,9% = **1.5배뿐**. 「weit häufiger」는 과장 → **레인지 어드밴티지(강한 Kx 편중)** 프레임으로 재작성하거나 근거를 뺄 것 |
 | ~~4~~ | ~~`rake` C44 de~~ | ✅ **철회 확정 (2026-08-13 검수장 재검수)** — [PS] 1차 출처가 **인원별 캡 실재**를 확인했다(2인 $1,25 vs 5인+ $2,75). 59행↔175행 모순은 **불성립**이다. 더 볼 것 없음 |
-| 5 | `straddle` tldr(de·ja) · `short-stack` tldr(ja) · `drawing-odds` Drilling→Trips 잔여(de) | §5-A 부분 정정 3건. 기계적이라 다음 배치에 묶는다 |
+| 5 | `straddle` tldr(de·ja) · ~~`short-stack` tldr(ja)~~ · `drawing-odds` Drilling→Trips 잔여(de) | §5-A 부분 정정. **`short-stack` tldr은 08-13에 8로케일 전수로 닫혔다.** 나머지 2건은 기계적이라 다음 배치에 묶는다 |
 | 6 | `docs/keyword-bank/de-core-volumes.md` 시드⑫ B절 · `de-gap-2026-08-11.md` | 문서 2곳이 낡았다(`/de/tournaments` 실재 · 3건 이미 메워짐) |
 
 ✅ **§5-D 회신 — 「전수 목록은 만들지 않는다」로 결정**(2026-08-12 사장님 승인).
@@ -319,10 +293,16 @@ APT 인천이 그날 끝난다. 같은 글·같은 로케일을 여러 번 열�
 
 - **WSOP 2026 공식 룰북**: `wsop.gg-global-cdn.com/wsop/pdfs/2026-WSOP-Tournament-Rules.pdf`
   → `pdftotext -layout`. 이번 트랙에 쓴 조항: 72·75·84·85·90(a/b.1/d)·95·96·97·99·100.b·103·116·117·119 + 용어집 DEALER BUTTON
+  · **126 전문(08-13 추출)**: 126.a 「the clock being **paused**」 · 126.c 「each hand will run **2 minutes** off
+  the clock, **regardless of how long the hand actually takes**」(예시 17:30:00→17:28:00) · 126.d 배치 아닌 **매 핸드** ·
+  126.e 「Blinds will **continue to increase**」 · 126.b 동일핸드 동시탈락 순위(같은 테이블=시작 칩 적은 쪽이 하위)
 - ⚠ **`pokertda.com`은 이 환경에서 접속 불가**(curl·Playwright·WebFetch 전부 ECONNREFUSED).
   TDA 원문은 **버지니아 주 규제기관 공개 PDF**로 확보했다 —
   `ris.dls.virginia.gov/uploads/11VAC20/dibr/Poker Tournament Directors Assoc_2019 Rules-20221228170122.pdf`
   (2019 Longform + Illustration Addendum). 쓴 조항: 12·14·16·17·18-A/B·19·20·68 + Addendum 16/18
+  · **RP-8(08-13 추출)**: B 「each hand will run the same pre-determined amount of time off the clock…
+  **The TDA standard is 2-minutes per hand**」 · C 배치 아닌 매 핸드 · D 블라인드 상승.
+  🔴 **검수장 지시서의 「TDA RP-8 = 핸드당 최대 3분」은 원문과 다르다**(2분). 회신 거리.
 - ⚠ **Robert's Rules는 1차 출처로 쓰지 않았다** — 전문 호스트 `pokercoach.us`가 **Betsperts Media 소유**라
   «저자 원본»이 아니다. 내용은 축어로 읽었으나 **본문 인용은 보류**했다. 깨끗한 호스트를 찾으면
   캐시 캡 「a bet and three raises」를 출처와 함께 되살릴 수 있다.
@@ -349,7 +329,7 @@ APT 인천이 그날 끝난다. 같은 글·같은 로케일을 여러 번 열�
 | `check:hreflang` | 481페이지 · 50세트 · 🔴 0건 |
 | `canonical:check` | KO 104 라우트 · 🔴 0건 |
 | `audit:hard:selftest` | **76/76** · `check:de-style` 셀프테스트 104/104 |
-| **검수장 재검수 원장** | 42편 2,988주장 · OK 2,558 · **WRONG 30 · RISKY 116 · 미해결 146** — **순위1~4가 닫혔다**(WRONG 24/30 · 남은 WRONG은 🔒8/16 국적축 5건뿐). 다음은 **순위5 개념권 RISKY** |
+| **검수장 재검수 원장** | 42편 2,988주장 · OK 2,558 · **WRONG 30 · RISKY 116 · 미해결 146** — **순위1~5가 닫혔다**(WRONG 24/30 · 남은 WRONG은 🔒8/16 국적축 5건뿐). 검수장 트랙은 **8/16 순위6만 남았다** |
 | de 구 검수(S1~S6) | ✅ 종료. 단 재검수가 **WRONG을 17→30으로 늘렸다**(구 검수가 못 연 1차를 열어서) |
 | 미러 전파(구 트랙) | ✅ 9편 종료 — 경위는 WORKLOG 2026-08-12 |
 

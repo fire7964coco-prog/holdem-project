@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Bubble adalah spot tepat sebelum uang, di mana satu eliminasi lagi membayar semua orang lainnya. Karena bust berarti tidak menang apa-apa, bertahan lebih berharga daripada chip yang bisa Anda dapatkan — jadi calling range mengetat keras sementara shove tetap lebar. Big stack menyerang, medium stack paling terjebak (bukan short stack), dan di bubble satelit Anda fold semuanya, bahkan aces, begitu kursi Anda terkunci.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-08-11",
-  masterUpdated: "2026-08-11",
+  updated: "2026-08-13",
+  masterUpdated: "2026-08-13",
   keepImagesInBody: true,
   readTime: "13 mnt",
   emoji: "🫧",
@@ -137,8 +137,8 @@ Separuh lainnya: bubble factor mengikuti **siapa yang duduk di seberang Anda**, 
 
 **Ketika uang sudah dekat, turnamen beralih ke "hand-for-hand" — setiap meja memainkan persis satu tangan pada waktu yang sama, lalu menunggu — khusus untuk menghentikan pemain melakukan stall ke dalam uang.** Tanpa itu, pemain di meja lambat bisa fold tangan demi tangan sementara meja lebih cepat membakar bubble. Hand-for-hand meratakan medan:
 
-- **Cara kerjanya:** tournament director menjeda jam; semua meja membagikan satu tangan, dan tidak ada meja yang memulai tangan berikutnya sampai setiap meja selesai. Jika dua pemain bust pada hand-for-hand yang sama di **meja yang sama**, yang chip-nya lebih sedikit di awal tangan mendapat finis lebih rendah (bubble); kalau mereka bust di **meja berbeda**, keduanya dianggap seri dan membagi dua hadiah untuk posisi tersebut.
-- **Stalling:** memakai seluruh time bank pada setiap keputusan untuk melihat lebih sedikit tangan (dan fold ke dalam uang). Big stack tidak punya alasan untuk stall — mereka ingin lebih banyak tangan untuk menyerang. Short dan medium stack kadang stall untuk bertahan, ==tapi stalling berlebihan bisa mengundang clock call atau penalti==, jadi tank sewajarnya.
+- **Cara kerjanya:** tournament director menjeda jam, dan sejak itu setiap tangan memotong ==2 menit== tetap dari level, tak peduli berapa lama tangan itu sebenarnya berlangsung (WSOP Rule 126.a dan 126.c; TDA RP-8) — jadi blind tetap naik sepanjang bubble, hanya saja per tangan, bukan per menit nyata. Semua meja membagikan satu tangan, dan tidak ada meja yang memulai tangan berikutnya sampai setiap meja selesai. Jika dua pemain bust pada hand-for-hand yang sama di **meja yang sama**, yang chip-nya lebih sedikit di awal tangan mendapat finis lebih rendah (bubble); kalau mereka bust di **meja berbeda**, keduanya dianggap seri dan membagi dua hadiah untuk posisi tersebut.
+- **Stalling:** memakai seluruh time bank pada setiap keputusan untuk melihat lebih sedikit tangan (dan fold ke dalam uang). Justru itu yang membuatnya berhasil: tank tidak memakan jam sama sekali — tangan itu tetap memotong 2 menitnya, mau Anda fold seketika atau menghabiskan seluruh time bank. Big stack tidak punya alasan untuk stall — mereka ingin lebih banyak tangan untuk menyerang. Short dan medium stack kadang stall untuk bertahan, ==tapi stalling berlebihan bisa mengundang clock call atau penalti==, jadi tank sewajarnya.
 - **Eksploitasi:** karena semua orang lain melambat, big stack yang terus memberi tekanan selama hand-for-hand mengumpulkan blind dan ante hampir tanpa perlawanan.
 
 ---

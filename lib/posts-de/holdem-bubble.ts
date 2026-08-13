@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Die Bubble ist der Moment kurz vor dem Geld, wo eine weitere Elimination allen anderen auszahlt. Weil ein Bust nichts bringt, ist Überleben mehr wert als die Chips, die du gewinnen würdest – Calling Ranges ziehen sich hart zusammen, während Shoves weit bleiben. Big Stacks attackieren, Medium Stacks sitzen am meisten in der Falle (nicht die Short Stacks), und an einer Satellite-Bubble foldest du alles, sogar Asse, sobald dein Platz gesichert ist.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-08-11",
-  masterUpdated: "2026-08-11",
+  updated: "2026-08-13",
+  masterUpdated: "2026-08-13",
   keepImagesInBody: true,
   readTime: "13 Min.",
   emoji: "🫧",
@@ -161,8 +161,8 @@ Die andere Hälfte: Der Bubble Factor richtet sich danach, **wer dir gegenübers
 
 Ohne diese Regel könnten Spieler an langsamen Tischen Hand um Hand folden, während schnellere Tische durch die Bubble brennen. Hand for Hand gleicht das Feld an:
 
-- **Wie es funktioniert:** Der Turnierdirektor kündigt Hand for Hand an – die Turnieruhr läuft dabei in den meisten Events weiter, die Blinds steigen also auch während der Bubble. Alle Tische teilen eine Hand aus, und kein Tisch startet die nächste, bis jeder Tisch fertig ist. Busten zwei Spieler in derselben Hand-for-Hand-Runde am **selben Tisch**, nimmt derjenige mit weniger Chips zu Beginn der Hand die niedrigere (Bubble-)Platzierung; busten sie an **verschiedenen Tischen**, werden sie als gleichrangig gewertet und teilen sich die beiden betroffenen Auszahlungen.
-- **Stalling:** die volle Time Bank bei jeder Entscheidung nehmen, um weniger Hände zu sehen (und sich ins Geld zu folden). Big Stacks haben keinen Grund zu stallen – sie wollen mehr Hände zum Attackieren. Short und Medium Stacks stallen manchmal, um zu überleben, ==aber exzessives Stalling kann einen Clock-Call oder eine Penalty einbringen==, also tanke in Maßen.
+- **Wie es funktioniert:** Der Turnierdirektor kündigt Hand for Hand an – die Turnieruhr wird dabei angehalten, und stattdessen laufen pro gespielter Hand feste ==2 Minuten== vom Level ab, egal wie lange die Hand tatsächlich dauert (WSOP-Regel 126.a und 126.c; TDA RP-8). Die Blinds steigen also auch während der Bubble weiter – nur eben pro Hand statt pro Echtzeitminute. Alle Tische teilen eine Hand aus, und kein Tisch startet die nächste, bis jeder Tisch fertig ist. Busten zwei Spieler in derselben Hand-for-Hand-Runde am **selben Tisch**, nimmt derjenige mit weniger Chips zu Beginn der Hand die niedrigere (Bubble-)Platzierung; busten sie an **verschiedenen Tischen**, werden sie als gleichrangig gewertet und teilen sich die beiden betroffenen Auszahlungen.
+- **Stalling:** die volle Time Bank bei jeder Entscheidung nehmen, um weniger Hände zu sehen (und sich ins Geld zu folden). Es funktioniert genau deshalb, weil Tanken auf der Uhr nichts kostet – die Hand zieht ihre 2 Minuten ab, ob du sofort foldest oder die ganze Time Bank verbrennst. Big Stacks haben keinen Grund zu stallen – sie wollen mehr Hände zum Attackieren. Short und Medium Stacks stallen manchmal, um zu überleben, ==aber exzessives Stalling kann einen Clock-Call oder eine Penalty einbringen==, also tanke in Maßen.
 - **Nutze es aus:** Weil alle anderen langsamer werden, sammelt ein Big Stack, der während Hand for Hand weiter Druck macht, Blinds und Antes fast unangefochten ein.
 
 ---

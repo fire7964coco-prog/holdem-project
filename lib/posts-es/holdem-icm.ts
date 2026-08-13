@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "El ICM (Independent Chip Model, Modelo de Fichas Independiente) convierte tu stack de fichas de torneo en su valor real en premios, usando los pagos y los stacks de todos. Como solo se gana un primer premio, doblar tus fichas nunca dobla tu dinero — así que el stack del líder vale menos que su porcentaje de fichas, y los stacks cortos valen más. Ese desfase es la razón por la que foldeas en la burbuja manos que serían calls fáciles en un cash game.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-08-11",
-  masterUpdated: "2026-08-11",
+  updated: "2026-08-13",
+  masterUpdated: "2026-08-13",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🏆",
@@ -132,7 +132,7 @@ El asiento de pesadilla es el stack medio al que le empujan encima — foldeando
 
 ## Acuerdo por ICM vs chip chop: cómo repartir la bolsa de una mesa final
 
-**Un chip chop reparte el dinero restante según el porcentaje bruto de fichas; un acuerdo por ICM lo reparte según el valor en dólares del ICM de cada jugador. El chip chop favorece a los stacks grandes, el acuerdo por ICM es más justo con los stacks cortos.** Cuando los jugadores acuerdan terminar un torneo antes y repartirse los premios, estos son los dos métodos sobre la mesa — y saber la diferencia vale dinero de verdad.
+**En su forma más simple, un chip chop reparte el dinero restante según el porcentaje bruto de fichas; un acuerdo por ICM lo reparte según el valor en dólares del ICM de cada jugador. El chip chop favorece a los stacks grandes, el acuerdo por ICM es más justo con los stacks cortos.** Cuando los jugadores acuerdan terminar un torneo antes y repartirse los premios, estos son los dos métodos sobre la mesa — y saber la diferencia vale dinero de verdad.
 
 Digamos que tres jugadores con el 50% / 30% / 20% de las fichas se reparten una bolsa restante de ==$1,500== (que paga $900 / $400 / $200):
 
@@ -201,7 +201,7 @@ A. El chip EV mide una decisión en fichas ganadas o perdidas; el ICM la mide en
 
 **Q. ¿Qué es un acuerdo por ICM, y en qué se diferencia de un chip chop?**
 
-A. Ambos reparten una bolsa de premios cuando los jugadores acuerdan terminar antes. Un chip chop divide el dinero por el porcentaje bruto de fichas (favoreciendo a los stacks grandes); un acuerdo por ICM lo divide por el valor en dólares del ICM de cada jugador (más justo con los stacks cortos). Si vas corto, pide un acuerdo por ICM; si eres el líder en fichas, un chip chop te paga más.
+A. Ambos reparten una bolsa de premios cuando los jugadores acuerdan terminar antes. En su forma más simple, un chip chop divide el dinero por el porcentaje bruto de fichas (favoreciendo a los stacks grandes); un acuerdo por ICM lo divide por el valor en dólares del ICM de cada jugador (más justo con los stacks cortos). También existe una versión intermedia que primero aparta el premio que cada jugador ya tiene asegurado y solo reparte por fichas el dinero por encima de eso. Si vas corto, pide un acuerdo por ICM; si eres el líder en fichas, un chip chop te paga más.
 
 **Q. ¿El ICM se aplica a los cash games?**
 

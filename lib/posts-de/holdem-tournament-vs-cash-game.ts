@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Im Cash Game sind Chips echtes Geld und die Blinds bleiben fest. Im Turnier sind Chips Überlebens-Equity, die Blinds steigen und Auszahlungen hängen von deiner Platzierung ab.",
   category: "tournament",
   date: "2026-06-11",
-  updated: "2026-08-11",
+  updated: "2026-08-13",
   hideSummaryImageSlot: true,
   readTime: "16 Min.",
   emoji: "🏆",
@@ -148,7 +148,7 @@ In einem Turnier steigen die Blinds nach einem Zeitplan. Ein Stack, der früh 10
 ## Was ändert sich strategisch zwischen Cash Game und Turnier?
 
 > **Kurze Antwort**
-> Drei Dinge verschieben sich. Die Handauswahl wird mit sinkender Stacktiefe immer enger und irgendwann reines Push-or-Fold. Die Risikobereitschaft sinkt, weil ein Coinflip, der im Cash Game neutral ist, dich im Turnier Geld-Equity kostet. Und der Zeithorizont dreht sich um: Im Cash Game wartest du auf Spots, im Turnier kommt die Uhr zu dir.
+> Drei Dinge verschieben sich. Die Handauswahl kippt mit sinkender Stacktiefe zu reinem Push-or-Fold – und deine Shove-Range wird dabei weiter, nicht enger: Eine Runde kostet dich 1,5 Big Blinds (mit Antes mehr), also rund 1,5 % deines Stacks bei 100 BB, aber schon 15 % bei 10 BB. Nur die Calling-Range zieht sich zusammen. Die Risikobereitschaft sinkt, weil ein Coinflip, der im Cash Game neutral ist, dich im Turnier Geld-Equity kostet. Und der Zeithorizont dreht sich um: Im Cash Game wartest du auf Spots, im Turnier kommt die Uhr zu dir.
 
 Wenn Chips unterschiedliche Dinge bedeuten und Blinds sich anders verhalten, muss sich auch die Strategie ändern. Hier sind die Verschiebungen, die du am Tisch wirklich spürst.
 
