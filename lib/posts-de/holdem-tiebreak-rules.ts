@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ties werden in fester Reihenfolge entschieden: zuerst der Handrang, dann die Karten, die die Hand bilden, dann die Kicker von hoch nach niedrig. Gleiches Paar → der höhere erste Kicker gewinnt; identische fünf Karten → geteilter Pot. Farben entscheiden einen Tie niemals.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-08-10",
+  updated: "2026-08-13",
   masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "12 Min.",
@@ -73,9 +73,9 @@ Nimm die Hand aus dem Foto oben:
 
 </div>
 
-Gleiches Ass-Paar, also treten die Kicker der Reihe nach gegeneinander an: ==g:K schlägt Q – damit ist die Sache entschieden.== B's Neun ist als zweiter Kicker immer noch *in* der Hand, aber der Vergleich kommt nie so weit.
+Gleiches Ass-Paar, also treten die Kicker der Reihe nach gegeneinander an: ==g:K schlägt Q – damit ist die Sache entschieden.== Bs Neun ist als zweiter Kicker immer noch *in* der Hand, aber der Vergleich kommt nie so weit.
 
-Beachte, dass B's oberster Kicker die Dame vom **Board** ist, nicht die 9, die er hält. ==r:Ein Kicker zählt nur, wenn er tatsächlich in deinen besten fünf landet== – eine höhere Board-Karte drückt deine Hole Card die Liste hinunter. Deshalb zählt die zweite Karte, mit der du startest, genauso viel wie das Ass selbst: A-K und A-9 sind hier beide „ein Ass-Paar“, und nur eine davon gewinnt ([Starthand-Tabelle](/de/blog/holdem-starting-hands-chart)).
+Beachte, dass Bs oberster Kicker die Dame vom **Board** ist, nicht die 9, die er hält. ==r:Ein Kicker zählt nur, wenn er tatsächlich in deinen besten fünf landet== – eine höhere Board-Karte drückt deine Hole Card die Liste hinunter. Deshalb zählt die zweite Karte, mit der du startest, genauso viel wie das Ass selbst: A-K und A-9 sind hier beide „ein Ass-Paar“, und nur eine davon gewinnt ([Starthand-Tabelle](/de/blog/holdem-starting-hands-chart)).
 
 ---
 

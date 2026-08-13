@@ -91,8 +91,29 @@ callen→gecallt · raisen→geraist · folden→gefoldet · shoven→geshovt ·
 - **$ 유지(기준 3번 = 추상·온라인·토너먼트)**: `pot-odds` `equity` `probability` `implied-odds` `icm`
   `continuation-bet` `positions` `texas-…-beginners`(온라인 마이크로)
 - **$ 유지(기준 1번 = 실제 대회)**: `apt-incheon` `wpt-australia` `ept-barcelona` `korea-poker-marathon` `holdem-tournament`
-- 🪶 **미결**: `texas-…-beginners`의 온라인 마이크로 스테이크(`$0,01/$0,02`)는 독일 라이선스 사이트가 €로 운영하므로
-  €가 맞을 여지가 있다. **온라인 독일 사이트 실측 후 판단**할 것.
+- ~~🪶 **미결**: `texas-…-beginners`의 온라인 마이크로 스테이크(`$0,01/$0,02`)~~ → ✅ **2026-08-13 종결. 단 전제가 틀렸다.**
+
+### 2026-08-13 §6 축 B6 정산 — 「전환 누락」은 대부분 «의도적 유지»였다
+
+🔴 **미결 항목의 전제가 실측에서 깨졌다.** 그 표는 **온라인 마이크로가 아니라 Heimrunde(홈 게임)**였다 —
+바로 위 문장이 「Wenn ihr ein kleines **Heim-Cash-Game** spielt … Eine gängige Anfänger-Struktur:」다.
+그래서 판정 근거는 **기준 3(온라인)이 아니라 기준 2(독일 독자가 실제로 마주하는 자리)**이고, 답은 **€**다.
+⚠ 메모의 「온라인」을 믿고 독일 온라인 사이트만 재면 **정반대 결론**이 나온다 —
+실제로 2026-08-13에 재봤더니 **pokerstars.de(GGL 라이선스·`lang=de`) 교육 페이지가 `$1/$2`·`$2/$4`·`$15/$30`
+= $29 : €0**였다. 기준 3의 근거는 오늘도 재현됐다. **틀린 건 그 표의 분류였다.**
+
+🔴 **그리고 같은 글 안에 «진짜 결함»이 있었다** — 200~209행(Heimrunde 칩 값)이 **€**인데 14줄 뒤 223~225행이
+**$**였다. **한 시나리오 안에서 통화가 갈린 것 = 제1원칙 위반.** 이번에 €로 통일해 닫았다(숫자 불변).
+- 함께 처리: 같은 글의 **€ 후치 6곳 → 선행**(코퍼스 실측 **선행 313 : 후치 16**, 이 글이 유일하게 0:6이었다)
+- **$ 유지**: 336~338행 팟오즈 예시는 **기준 3**(「ein Beispiel」·스테이크 앵커 없음).
+  형제 글 `holdem-pot-odds`가 **같은 예시를 $로** 쓴다 — 여기만 €로 바꾸면 형제 대조가 깨진다
+
+✅ **검수장 지시서의 「전환 누락 2편」 중 `holdem-pot-odds`는 오탐**이다(기준 3 = 의도적 $ 유지).
+핸드오프가 세어 둔 **「€0인 개념글 9편」도 전부 이 표의 기준 3·4에 따라 «의도적»**이다 —
+`rake`·`tournament-vs-cash-game`(기준 4 비교) · `pot-odds` `equity` `probability` `implied-odds` `icm`
+`continuation-bet` `positions`(기준 3). **$:€ 비율만 세면 정본이 결함으로 보인다.**
+이벤트 가이드 `ept`(\$23:€86) · `holdem-tournament`(\$14:€56) · `apt`의 혼용도 **서로 다른 실제 대회의
+원화폐**라 기준 1대로다(EPT €5.300 · Power Path $0,50은 둘 다 진짜다).
 
 ## 4. 문체 = du (informell)
 - **du**체 사용(deine Hand, du callst, wenn du im Big Blind sitzt). pokerstrategy.de·pokerolymp·유튜브 코치 전부 du.

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ein Cooler ist eine Hand, bei der du einen großen Pot mit einer sehr starken Holding verlierst, die du niemals korrekt folden könntest – wie Pocket Kings, die auf Asse treffen, oder ein Set, das gegen ein größeres Set verliert. Anders als beim Bad Beat lagst du die ganze Zeit hinten und keine Glückskarte hat dich „ausgesaugt“: Du hast alles richtig gemacht und trotzdem verloren. Es ist die ehrlichste Art von Poker-Katastrophe.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-08-11",
+  updated: "2026-08-13",
   masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "10 Min.",
@@ -41,7 +41,7 @@ Nicht deine Schuld | Der eine Verlust, über den du nicht tilten solltest
 > **Kurze Antwort**
 > Ein Cooler ist eine Hand, in der zwei sehr starke Holdings kollidieren und der Verlierer ==die ganze Zeit hinten lag==, aber nicht korrekt folden konnte. Die Hand ist schlicht zu gut zum Weglegen – also gehen die Chips rein, und das zweitbeste Monster bezahlt das beste. Niemand hat falsch gespielt. Der Verlust war kein Fehler, sondern der Preis dafür, eine Premiumhand genau dann zu halten, wenn jemand anderes eine etwas größere hält.
 
-Das Wort malt das Bild: Du wurdest „abgekühlt“ – deine heiße Hand wurde kalt, ganz ohne dein Verschulden. Du wirst es auch als Verb hören („ich wurde **gecoolert**“) und als Beinahe-Synonym, **„Setup“**, weil es sich anfühlt, als wäre das Deck *aufgebaut* worden, um deinen ganzen Stack zu holen. Was einen Cooler von einem gewöhnlichen Verlust unterscheidet, ist, dass ein guter Spieler jedes Mal genau dieselben Chips verlieren würde. Das zu erkennen ist der erste Schritt, um diese Hände nicht deine Session ruinieren zu lassen – dieselbe Disziplin, die einen Gewinnspieler von einem [Fish](/de/blog/holdem-fish "thumb:/images/holdem-fish-hero.webp") trennt.
+Das Wort malt das Bild: Du wurdest „abgekühlt“ – deine heiße Hand wurde kalt, ganz ohne dein Verschulden. Du wirst es auch als Verb hören („ich wurde **gecoolert**“) und als Beinahe-Synonym, **„Setup“**, weil es sich anfühlt, als wäre das Deck *aufgebaut* worden, um deinen ganzen Stack zu holen. Was einen Cooler von einem gewöhnlichen Verlust unterscheidet, ist, dass ein guter Spieler jedes Mal genau dieselben Chips verlieren würde. Das zu erkennen ist der erste Schritt, um diese Hände nicht deine Session ruinieren zu lassen – dieselbe Disziplin, die einen erfolgreichen Spieler von einem [Fish](/de/blog/holdem-fish "thumb:/images/holdem-fish-hero.webp") trennt.
 
 ---
 

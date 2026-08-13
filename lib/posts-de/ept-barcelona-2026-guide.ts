@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Die EPT Barcelona 2026 läuft vom 16.–29. Aug. im Casino Barcelona. Main-Event-Buy-in: €5.300. Günstigster Online-Weg: Power Path ab $0,50 → Gold Pass (€5.300 ME + 8 Nächte Hotel + €690 Spesen). Du brauchst ein PokerStars-Live-Konto und einen gültigen Reisepass. Buch die Hotels früh – der August ist Hochsaison.",
   category: "tournament",
   date: "2026-06-17",
-  updated: "2026-08-11",
+  updated: "2026-08-13",
   keepImagesInBody: true,
   readTime: "16 Min.",
   emoji: "🃏",
@@ -135,7 +135,7 @@ Keine Lust, vier Stufen zu grinden? PokerStars fährt den ganzen Sommer über au
 - Zu finden unter **Events → Live Events → EPT Barcelona** in der PokerStars-Lobby
 - Verfügbar im Vorlauf zum Festival – ==die Frequenz steigt ab Ende Juli==
 
-> **Die Rechnung:** Ein €109-Direktsatellite schickt typischerweise etwa 1 von 50 Spielern ins Main Event (ein €530-Satellite liegt näher bei 1 von 10). Wenn du ein Gewinnspieler bist, kann diese Route Sinn ergeben. ==r:Für Casual-Spieler bringt der Power Path mehr Schüsse pro Dollar.==
+> **Die Rechnung:** Ein €109-Direktsatellite schickt typischerweise etwa 1 von 50 Spielern ins Main Event (ein €530-Satellite liegt näher bei 1 von 10). Wenn du ein erfolgreicher Spieler bist, kann diese Route Sinn ergeben. ==r:Für Casual-Spieler bringt der Power Path mehr Schüsse pro Dollar.==
 
 ---
 

@@ -201,12 +201,12 @@ In der Heimrunde ist das reine Division: Buy-in geteilt durch den **Stack-Wert**
 
 | Buy-in pro Spieler | Stack-Wert | Eine Wert-Einheit entspricht |
 |:---:|:---:|:---:|
-| 5 € | 200 | 2,5 Cent |
-| 10 € | 200 | 5 Cent |
-| 20 € | 200 | 10 Cent |
-| 50 € | 200 | 25 Cent |
+| €5 | 200 | 2,5 Cent |
+| €10 | 200 | 5 Cent |
+| €20 | 200 | 10 Cent |
+| €50 | 200 | 25 Cent |
 
-Bei 10 € Buy-in ist der **weiße** Chip (Wert 1) damit 5 Cent wert, der **rote** (Wert 5) 25 Cent und der **blaue** (Wert 25) 1,25 €. ==r:Rechnet das einmal vor dem ersten Austeilen durch und sagt es laut== – die häufigste Streiterei in Heimrunden entsteht nicht über Regeln, sondern darüber, dass zwei Leute unterschiedliche Chip-Werte im Kopf hatten.
+Bei €10 Buy-in ist der **weiße** Chip (Wert 1) damit 5 Cent wert, der **rote** (Wert 5) 25 Cent und der **blaue** (Wert 25) €1,25. ==r:Rechnet das einmal vor dem ersten Austeilen durch und sagt es laut== – die häufigste Streiterei in Heimrunden entsteht nicht über Regeln, sondern darüber, dass zwei Leute unterschiedliche Chip-Werte im Kopf hatten.
 
 ---
 
@@ -220,9 +220,9 @@ Wenn ihr ein kleines Heim-Cash-Game spielt, wähle ein Buy-in, dessen Verlust je
 
 | Blind-Level | Anfänger-Buy-in | Hinweise |
 |:---|:---:|:---|
-| $0,01 / $0,02 | $2 bis $5 | Ideal zum Lernen mit echtem Einsatz |
-| $0,05 / $0,10 | $10 bis $20 | Immer noch klein, aber die Entscheidungen fühlen sich echt an |
-| $0,10 / $0,25 | $25 bis $50 | Besser, wenn alle die Regeln schon kennen |
+| €0,01 / €0,02 | €2 bis €5 | Ideal zum Lernen mit echtem Einsatz |
+| €0,05 / €0,10 | €10 bis €20 | Immer noch klein, aber die Entscheidungen fühlen sich echt an |
+| €0,10 / €0,25 | €25 bis €50 | Besser, wenn alle die Regeln schon kennen |
 
 ==r:Startet nicht mit Einsätzen, die jemanden nervös machen.== Nervöse Anfänger lernen nicht schneller. Sie folden nur zu viel, callen zu emotional oder streiten über die Regeln.
 

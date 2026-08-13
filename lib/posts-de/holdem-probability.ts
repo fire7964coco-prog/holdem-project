@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Bis zum River endest du mit einem Paar in 43,8% der Fälle, mit zwei Paaren in 23,5%, mit einem Flush in 3,0% und mit einem Full House in 2,6% – während ein Royal Flush nur etwa einmal in 31.000 Händen auftaucht.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-08-11",
+  updated: "2026-08-13",
   masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "13 Min.",
@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Blick von oben auf einen aktiven Texas-Hold'em-Tisch mit fünf Gemeinschaftskarten, verstreuten Chip-Stacks und Spielern mitten in der Hand",
   tags: ["poker wahrscheinlichkeiten tabelle", "poker wahrscheinlichkeiten faustregel", "poker wahrscheinlichkeiten berechnen", "poker odds", "poker wahrscheinlichkeit royal flush", "odds set floppen", "pot odds", "poker outs tabelle", "texas holdem odds"],
   content: `
-Als ich zum ersten Mal in einem Live-Game mit einem Paar Fünfen set-minte und meinen Set am Flop traf, stöhnte der Typ neben mir: „Wie stehen denn *bitte* die Odds?“ – und ich wusste es tatsächlich: etwa ==1 zu 8,5==. Genau diese eine Zahl war der Grund, warum ich überhaupt gecallt hatte.
+Als ich zum ersten Mal in einem Live-Game mit einem Paar Fünfen set-minte und mein Set am Flop traf, stöhnte der Typ neben mir: „Wie stehen denn *bitte* die Odds?“ – und ich wusste es tatsächlich: etwa ==1 zu 8,5==. Genau diese eine Zahl war der Grund, warum ich überhaupt gecallt hatte.
 
 Poker ist kein Ratespiel. Jeder Call, jeder Fold und jeder Shove ist eine ==als etwas anderes getarnte Wahrscheinlichkeitsfrage==, und die Spieler, die gewinnen, sind die, die „Wie stehen die Odds?“ zum Reflex gemacht haben. Das ist die ==komplette **Poker Wahrscheinlichkeiten Tabelle**== fürs Texas Hold'em – jede fertige Hand, jeder Flop, jeder Draw – mit der ==g:einen mentalen Abkürzung==, mit der du die Mathematik am Tisch in zwei Sekunden erledigst.
 
@@ -93,7 +93,7 @@ Wenn also das nächste Mal jemand sagt „Ich kriege nie Asse“, hat er grob re
 
 ## Wie hoch ist die Wahrscheinlichkeit, nach dem Flop zu treffen?
 
-Mit einem Pocket Pair floppst du in **11,8%** der Fälle einen Set – etwa jede achte Hand. Zwei suited Karten werden nur in **0,84%** direkt zum Flush, aber in **10,9%** zum Flushdraw. Zwei ungepaarte Karten treffen in **2,0%** zwei Paare. Alles andere heißt: Der Flop hat dich verfehlt – und das ist der Normalfall, nicht die Ausnahme.
+Mit einem Pocket Pair floppst du in **11,8%** der Fälle ein Set – etwa jede achte Hand. Zwei suited Karten werden nur in **0,84%** direkt zum Flush, aber in **10,9%** zum Flushdraw. Zwei ungepaarte Karten treffen in **2,0%** zwei Paare. Alles andere heißt: Der Flop hat dich verfehlt – und das ist der Normalfall, nicht die Ausnahme.
 
 Das ist die Tabelle, die die meisten Odds-Seiten vergraben oder auf ein Dutzend Artikel aufteilen. Sie zeigt die Odds, dass der Flop deine Hand *macht*, bei den Hole Cards in der linken Spalte.
 
@@ -101,7 +101,7 @@ Das ist die Tabelle, die die meisten Odds-Seiten vergraben oder auf ein Dutzend 
 
 | Du floppst… | Mit | Odds | Dagegen |
 |:---|:---|:---:|:---:|
-| Einen Set (oder besser) | Ein Pocket Pair | 11,8% | ~7,5:1 |
+| Ein Set (oder besser) | Ein Pocket Pair | 11,8% | ~7,5:1 |
 | Einen Flush | Zwei suited Karten | 0,84% | ~118:1 |
 | Einen Flushdraw | Zwei suited Karten | 10,9% | ~8:1 |
 | Eine Straße | Suited Connectors (z. B. 8-7) | 1,3% | ~76:1 |
@@ -111,7 +111,7 @@ Das ist die Tabelle, die die meisten Odds-Seiten vergraben oder auf ein Dutzend 
 
 </div>
 
-Die Zeile zum Merken ist die oberste – ==**1 zu 8,5** für den Set==. Diese eine Zahl entscheidet, ob es profitabel ist, einen Raise zu callen, um ein kleines Paar zu „set-minen“ – du brauchst den Pot (und den wahrscheinlichen Stack deines Gegners), um dich bei einem Treffer mit mehr als 7,5:1 auszuzahlen. Das ist die Brücke zu den [Pot Odds](#pot-odds) weiter unten. Für die vollständige Herleitung jeder Zeile hier – plus die Set-Mining-Stack-Regel und die Aufteilung in fertigen Flush, Flushdraw und komplettierten Draw – siehe die Tiefenanalyse zu [Drawing Odds und den Odds, jede Hand zu floppen](/de/blog/holdem-drawing-odds "thumb:/images/holdem-drawing-odds-hero.webp").
+Die Zeile zum Merken ist die oberste – ==**1 zu 8,5** für das Set==. Diese eine Zahl entscheidet, ob es profitabel ist, einen Raise zu callen, um ein kleines Paar zu „set-minen“ – du brauchst den Pot (und den wahrscheinlichen Stack deines Gegners), um dich bei einem Treffer mit mehr als 7,5:1 auszuzahlen. Das ist die Brücke zu den [Pot Odds](#pot-odds) weiter unten. Für die vollständige Herleitung jeder Zeile hier – plus die Set-Mining-Stack-Regel und die Aufteilung in fertigen Flush, Flushdraw und komplettierten Draw – siehe die Tiefenanalyse zu [Drawing Odds und den Odds, jede Hand zu floppen](/de/blog/holdem-drawing-odds "thumb:/images/holdem-drawing-odds-hero.webp").
 
 ---
 
@@ -205,7 +205,7 @@ Mit einem Pocket Pair floppst du Quads **1 zu 408** – rechnest du ein, dass du
 | Einen Straight Flush floppen (Suited Connectors) | ~1 zu 4.900 |
 | Einen Royal Flush bis zum River treffen | 1 zu 30.940 |
 
-**Set over Set** – du floppst einen Set und verlierst gegen einen größeren Set – ist der ultimative Cooler. Es gibt keine saubere einzelne Zahl, weil es davon abhängt, wie viele Spieler Paare halten, aber der Anker ist dieser: *du* floppst einen Set nur 11,8% der Fälle, und dass ein Gegner dasselbe auf demselben Board tut, ist selten genug, dass sich die meisten Spieler an jeden einzelnen erinnern. Wenn es passiert, ist es Varianz, kein Fehler – die Mathematik war die ganze Zeit auf deiner Seite. Wenn du genau sehen willst, wie solche Showdowns gewertet werden, decken die [Kicker- und Tiebreaker-Regeln](/de/blog/holdem-tiebreak-rules) jeden Grenzfall ab.
+**Set over Set** – du floppst ein Set und verlierst gegen ein größeres Set – ist der ultimative Cooler. Es gibt keine saubere einzelne Zahl, weil es davon abhängt, wie viele Spieler Paare halten, aber der Anker ist dieser: *du* floppst ein Set nur 11,8% der Fälle, und dass ein Gegner dasselbe auf demselben Board tut, ist selten genug, dass sich die meisten Spieler an jeden einzelnen erinnern. Wenn es passiert, ist es Varianz, kein Fehler – die Mathematik war die ganze Zeit auf deiner Seite. Wenn du genau sehen willst, wie solche Showdowns gewertet werden, decken die [Kicker- und Tiebreaker-Regeln](/de/blog/holdem-tiebreak-rules) jeden Grenzfall ab.
 
 ---
 
@@ -231,7 +231,7 @@ A. Grob 1 zu 72.193 als Fünf-Karten-Hand, oder etwa 1 zu 3.590 bis zum River im
 
 A. Wenn du einen Flushdraw floppst (neun Outs), komplettierst du ihn etwa 35% der Fälle bis zum River – besser als eine von drei. Auf eine einzelne Karte (Turn zu River) fällt es auf grob 19,6%.
 
-**Q. Wie stehen die Odds, einen Set zu floppen?**
+**Q. Wie stehen die Odds, ein Set zu floppen?**
 
 A. Etwa 11,8%, oder grob 1 zu 8,5, wenn du ein Pocket Pair hältst. Diese Zahl „7,5:1 dagegen“ ist die Grundlage, um zu entscheiden, ob das Set-Mining eines kleinen Paars profitabel ist.
 
@@ -249,13 +249,13 @@ A. Teile den Betrag, den du callen musst, durch den gesamten Pot nach deinem Cal
 
 **Q. Wie stehen die Odds für Set over Set?**
 
-A. Es gibt keine einzelne feste Zahl – es hängt davon ab, wie viele Gegner Pocket Paire halten – aber es ist selten. Du floppst einen Set von vornherein nur 11,8% der Fälle, also ist es der klassische „Cooler“, der Stacks kostet, wenn zwei Spieler auf demselben Board beide Sets floppen.
+A. Es gibt keine einzelne feste Zahl – es hängt davon ab, wie viele Gegner Pocket Paire halten – aber es ist selten. Du floppst ein Set von vornherein nur 11,8% der Fälle, also ist es der klassische „Cooler“, der Stacks kostet, wenn zwei Spieler auf demselben Board beide Sets floppen.
 
 ---
 
 ## Die 3 Zahlen, die du dir einbrennen solltest
 
-1. **Einen Set floppen: ~12% (1 zu 8,5).** Entscheidet jeden Set-Mining-Call.
+1. **Ein Set floppen: ~12% (1 zu 8,5).** Entscheidet jeden Set-Mining-Call.
 2. **Flushdraw bis zum River: 35%.** Neun Outs, Faustregel → 9 × 4 = 36%.
 3. **Pot Odds schlagen das Bauchgefühl.** Ist deine Trefferchance größer als der Preis des Calls, callst du – jedes Mal.
 
