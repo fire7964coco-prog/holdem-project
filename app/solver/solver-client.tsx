@@ -34,6 +34,16 @@ const FAQ = [
     a: "GTO Wizard는 미리 계산해 둔 솔루션을 열람하는 방식이라 빠르고 편하지만, 무료로 볼 수 있는 범위가 정해져 있습니다. 홀덤마스터 솔버는 레인지와 트리를 직접 입력해 그 자리에서 계산하는 방식이라 자유도가 높고 횟수 제한이 없습니다. 대신 프리플랍은 지원하지 않고 포스트플랍(플랍 이후) 전용입니다.",
   },
   {
+    // ★2026-08-13 — GTO 트레이너 문항 2개 추가. 서술은 라이브 번들 축어 확인분만 썼다
+    //   (「결정 지점 33곳」·「유효 핸드 13,743개」는 번들에 없어 제외).
+    q: "GTO 트레이너는 뭔가요?",
+    a: "교육 예제 13개 스팟의 결정 지점에서 문제를 내주는 연습 모드입니다. 핸드는 실제 GTO 레인지 비중대로 무작위로 뽑히기 때문에, 실전에서 그 상황에 그 핸드를 들고 있을 확률 그대로 문제가 나옵니다. 액션을 고르면 그 선택이 GTO 대비 몇 bb 손해였는지 채점하고, 액션별 혼합 빈도와 EV를 전부 보여줍니다. 연속 정답 기록·상황별 약점 분석·손실이 컸던 문제 복습도 됩니다. 기록은 이 기기 안에만 저장되고 로그인은 필요 없습니다.",
+  },
+  {
+    q: "왜 정답·오답이 아니라 EV 손실로 채점하나요?",
+    a: "GTO는 같은 핸드도 액션을 섞기 때문입니다. 어떤 핸드를 70% 벳·30% 체크로 플레이하는 것이 최적이라면, 체크를 골랐다고 해서 틀린 것이 아닙니다. 그래서 기준을 «맞았나»가 아니라 «얼마나 손해였나»로 둡니다. 0.01bb 이하면 최적 선택, 0.05bb 이하면 허용 가능, 그보다 크면 다시 볼 스팟입니다.",
+  },
+  {
     q: "어떤 상황을 분석할 수 있나요?",
     a: "헤즈업(2명) 포스트플랍 상황 전부입니다. 양쪽 레인지, 보드, 스택, 팟, 스트리트별 벳/레이즈 사이즈를 자유롭게 설정하고 각 핸드의 전략·EV·에퀴티를 확인할 수 있습니다. 토너먼트/캐시 모두 활용 가능합니다.",
   },
@@ -104,9 +114,16 @@ export default function SolverClient() {
     <div className="mx-auto max-w-3xl px-4 pb-16">
       {/* 히어로 + CTA */}
       <section className="mt-6 text-center">
-        <h2 className="text-2xl font-bold">
+        {/*
+          ★2026-08-13 — h2 → h1. 형제 허브 7개(/ranking /rules /strategy /glossary /blog
+          /hand-chart /calculator)는 **전부 h1이 정확히 1개**인데 이 페이지만 **0개**였다
+          (빌드 산출물 실측). `HubPage`의 `title` prop은 마스트헤드 라벨이지 h1이 아니다
+          (components/hub-page.tsx 주석). 문구는 그대로 두고 태그만 올렸다.
+          아래 섹션들도 h3 → h2로 맞춰 h1 → h3 건너뜀을 만들지 않는다.
+        */}
+        <h1 className="text-2xl font-bold">
           무료 GTO 솔버 — 홀덤 GTO 표를 브라우저에서
-        </h2>
+        </h1>
         <p className="mt-3 text-muted-foreground">
           169개 핸드의 전략을 13×13 GTO 표로 계산합니다. 레인지 차트·벳 사이즈·EV·
           에퀴티 실현율까지 회원가입도, 결제도, 횟수 제한도 없이. 홀덤마스터가
@@ -132,7 +149,7 @@ export default function SolverClient() {
 
       {/* 사용법 4단계 */}
       <section className="mt-12">
-        <h3 className="text-xl font-bold">사용법 — 4단계면 끝</h3>
+        <h2 className="text-xl font-bold">사용법 — 4단계면 끝</h2>
         <ol className="mt-4 space-y-4">
           {STEPS.map((s) => (
             <li key={s.n} className="flex gap-4">
@@ -148,9 +165,59 @@ export default function SolverClient() {
         </ol>
       </section>
 
+      {/*
+        GTO 트레이너 — ★새 랜딩을 만들지 않고 이 랜딩에 «흡수»한다 (2026-08-13 판단).
+        솔버 세션은 `/trainer` 신설을 제안했으나 **라쿠 실측에서 노릴 키워드 10개가 전부
+        볼륨 데이터 없음**이었다(gto 트레이너 · 홀덤 gto 트레이너 · 홀덤 gto 문제 ·
+        포커 gto 문제풀이 · 홀덤 포스트플랍 연습 · 포커 트레이닝 프로그램 무료 …).
+        반면 이 랜딩이 이미 노리는 축은 실재한다 — 홀덤 gto 390(12m +9.9%) ·
+        홀덤 gto 표 210 · 홀덤 gto 프로그램 140(+27.5%) · gto 솔버 70.
+        게다가 `/solver`는 28일 GSC가 **노출 1 · 32위**라 아직 아무것도 못 잡았다.
+        → 진입로를 늘리기 전에 있는 진입로를 두껍게 한다(얇은 글 대신 리치 글 흡수).
+        ⚠ 아래 서술은 전부 **라이브 번들에서 축어로 확인한 것만** 적었다.
+          요청서의 「결정 지점 33곳」·「유효 핸드 13,743개」는 번들에서 확인되지 않아 뺐다.
+      */}
+      <section className="mt-12">
+        <h2 className="text-xl font-bold">GTO 트레이너 — 내 선택이 GTO에서 몇 bb 벗어났나</h2>
+        <p className="mt-2 text-sm text-muted-foreground">
+          솔버가 표를 «보여주는» 도구라면, 트레이너는 그 표를 «몸에 익히는» 쪽입니다. 아래 교육
+          예제 13개 스팟의 결정 지점에서 문제가 나오고, 핸드는 실제 GTO 레인지 비중대로 뽑힙니다
+          — 실전에서 그 상황에 그 핸드를 들고 있을 확률 그대로입니다.
+        </p>
+        <p className="mt-3 text-sm text-muted-foreground">
+          채점은 <strong className="text-foreground">정답·오답이 아니라 EV 손실(bb)</strong>입니다.
+          GTO는 같은 핸드도 액션을 섞기 때문에 빈도가 낮은 선택이 곧 오답은 아닙니다 — 기준은
+          «얼마나 손해였나»입니다.
+        </p>
+        <ul className="mt-4 space-y-1.5 text-sm">
+          <li>
+            <span className="font-semibold text-emerald-500">0.01bb 이하</span> = 최적 선택 ·{" "}
+            <span className="font-semibold text-blue-500">0.05bb 이하</span> = 허용 가능 ·{" "}
+            <span className="font-semibold text-orange-500">그 이상</span> = 다시 볼 스팟
+          </li>
+          <li className="text-muted-foreground">
+            선택하면 <strong className="text-foreground">액션별 혼합 빈도와 EV를 전부 공개</strong>합니다 — 왜 그런지 눈으로 확인
+          </li>
+          <li className="text-muted-foreground">
+            연속 정답 기록 · 상황별 약점 분석 · 손실이 컸던 문제는 <strong className="text-foreground">복습</strong> 버튼으로 다시 출제
+          </li>
+          <li className="text-muted-foreground">
+            기록은 <strong className="text-foreground">이 기기 안에만</strong> 저장됩니다 — 로그인·회원가입 없음
+          </li>
+        </ul>
+        <a
+          href={SOLVER_URL}
+          target="_blank"
+          rel="noopener"
+          className="mt-5 inline-block rounded-xl border border-primary px-6 py-2.5 font-bold text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
+        >
+          GTO 트레이너 열기 → (사이드바에서 「GTO 트레이너」 선택)
+        </a>
+      </section>
+
       {/* 교육 예제 13개 스팟 해설 (허브-스포크 내부링크) */}
       <section className="mt-12">
-        <h3 className="text-xl font-bold">교육 예제 13개 스팟 — 전편 해설</h3>
+        <h2 className="text-xl font-bold">교육 예제 13개 스팟 — 전편 해설</h2>
         <p className="mt-2 text-sm text-muted-foreground">
           솔버의 「결과 바로 보기」에 들어 있는 13개 스팟을 한 편씩 풀어 썼습니다. 계산
           조건·액션 빈도·레인지 구성·EQR을 전부 이 솔버로 뽑은 1차 데이터로 설명합니다.
@@ -176,7 +243,7 @@ export default function SolverClient() {
 
       {/* 함께 보면 좋은 도구 (내부링크) */}
       <section className="mt-12">
-        <h3 className="text-xl font-bold">함께 쓰면 좋은 홀덤마스터 도구</h3>
+        <h2 className="text-xl font-bold">함께 쓰면 좋은 홀덤마스터 도구</h2>
         <ul className="mt-4 list-disc space-y-2 pl-6">
           <li>
             <Link href="/calculator" className="font-semibold text-primary hover:underline">
@@ -202,7 +269,7 @@ export default function SolverClient() {
 
       {/* FAQ */}
       <section className="mt-12">
-        <h3 className="text-xl font-bold">자주 묻는 질문</h3>
+        <h2 className="text-xl font-bold">자주 묻는 질문</h2>
         <div className="mt-4 space-y-5">
           {FAQ.map((f) => (
             <div key={f.q}>
