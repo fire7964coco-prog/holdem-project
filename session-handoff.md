@@ -39,19 +39,29 @@
    `{조건 && (…)}`는 크롤러·LLM에게 **존재하지 않는다.** CSS로 접어라.
 3. **선언만 있고 구현이 없는 prop은 조용히 버려진다.** 타입체크가 통과하니 아무도 모른다.
 
+✅ **로케일 50종도 닫혔다**(2026-08-13 `85ef76b`) — `/{locale}/` 25 = CollectionPage ·
+`/{locale}/blog` 25 = Blog+ItemList+BreadcrumbList. 공용 모듈 **`lib/intl-jsonld.tsx`**가 단일 출처다
+(블로그 목록은 `IntlBlogIndex` 한 곳이 25종을 덮는다). 경위 = `WORKLOG.md` 2026-08-13 (11).
+
 ### ▶▶ 🔴 다음 세션의 본체 — **아직 스키마가 0인 나머지**
 
-이번엔 «허브»만 닫았다. 산출물 실측 기준 **자기 스키마가 없는 정적 페이지가 아직 남아 있다**:
+허브 10 + 로케일 50 = **60페이지가 닫혔다.** 산출물 실측 기준 남은 것:
 
 | 묶음 | 페이지 | 메모 |
 |---|---|---|
-| 도구·기타 | `/hand-chart` · `/quiz` · `/holdem-practice` · `/en/hand-chart` · `/en/quiz` · `/en/win-rate-quiz` | `/calculator`·`/win-rate-quiz`(KO)는 **이미 있다** — 패턴 복제 |
-| 정책·정보 | `/about` · `/contact` · `/privacy` · `/terms` | WebPage 정도면 충분 |
-| 로케일 홈·목록 | `/{locale}` 25종 · `/{locale}/blog` 25종 | **한 번에 되는 자리다** — 공통 컴포넌트로 CollectionPage/Blog 주입 검토 |
-| ⏸ **`/pub/*` 9개** | — | 🔴 **사장님 지시로 보류 — 건드리지 말 것** |
+| 도구 | `/hand-chart` · `/quiz` · `/holdem-practice` · `/en/hand-chart` · `/en/quiz` · `/en/win-rate-quiz` | `/calculator`·`/win-rate-quiz`(KO)·`/hands`는 **이미 있다** — 패턴 복제. 도구는 `SoftwareApplication`/`WebApplication`(calculator 참조) |
+| 정책·정보 | `/about` · `/contact` · `/privacy` · `/terms` | WebPage 정도면 충분 · 우선순위 낮음 |
+| ⏸ **`/pub/*` 10개** | — | 🔴 **사장님 지시로 보류 — 건드리지 말 것** |
+
+🔴 **착수 전에 반드시 확인할 것 — 허브 트랙에서 세 번 걸린 함정이다**:
+① **죽은 코드를 «그대로» 옮기지 마라.** 스키마에만 있고 화면엔 없는 문답, 합성된 질문이 흔하다.
+② **「화면에 있나」는 소스가 아니라 산출물로 확인하라.** `{조건 && (…)}`는 크롤러·LLM에게 **없는 것**이다
+   (rules 3편에서 답변 20개가 그 상태였다). CSS로 접어라.
+③ **스키마에서 문장을 새로 짓지 마라.** 이름·설명은 그 페이지의 `metadata`를 그대로 재사용한다.
 
 > 🪶 판정법: `.next/server/app/**/*.html`에서 `"@type"`을 세되 **루트 layout의
 > `WebSite`·`Organization`·`SearchAction`·`ImageObject`는 빼고** 세라 — 안 빼면 전부 «있음»으로 보인다.
+> `/index`(KO 홈)는 **결손이 아니다** — 그 WebSite+Organization이 홈 스키마 역할을 한다.
 
 ### 🔴 1차 확인이 필요한 잔여 (오늘 발견 · 미처리)
 
@@ -341,7 +351,7 @@ APT 인천이 그날 끝난다. 같은 글·같은 로케일을 여러 번 열�
 | `check:hreflang` | 481페이지 · 50세트 · 🔴 0건 |
 | `canonical:check` | KO 104 라우트 · 🔴 0건 |
 | `audit:hard:selftest` | **76/76** · `check:de-style` 셀프테스트 104/104 |
-| **허브 구조화 데이터** | ✅ 10페이지 서버 렌더 완료(08-13 `083fadb`) · ld+json 파싱 실패 0 · FAQ 답변 HTML 노출 26/26 · 실제 `schema={}` prop 잔존 **0건** |
+| **구조화 데이터** | ✅ **60페이지 완료** — 허브 10(`083fadb`) + 로케일 50(`85ef76b`). ld+json 파싱 실패 0 · FAQ 답변 HTML 노출 26/26 · 로케일 홈 25/25 · 목록 25/25 · 실제 `schema={}` prop 잔존 **0건** |
 | **검수장 재검수 원장** | 42편 2,988주장 · OK 2,558 · **WRONG 30 · RISKY 116 · 미해결 146** — **순위1~5가 닫혔다**(WRONG 24/30 · 남은 WRONG은 🔒8/16 국적축 5건뿐). 검수장 트랙은 **8/16 순위6만 남았다** |
 | de 구 검수(S1~S6) | ✅ 종료. 단 재검수가 **WRONG을 17→30으로 늘렸다**(구 검수가 못 연 1차를 열어서) |
 | 미러 전파(구 트랙) | ✅ 9편 종료 — 경위는 WORKLOG 2026-08-12 |

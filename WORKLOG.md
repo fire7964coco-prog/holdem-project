@@ -3,6 +3,28 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-08-13 (11) — **로케일 홈·목록 50페이지 스키마 신설** (`85ef76b`)
+
+허브 트랙(10)에 이어, 자기 스키마가 0이던 **로케일 페이지 50종**을 덮었다.
+
+- `/{locale}/` **25종** → `CollectionPage`(+`inLanguage`·`isPartOf` WebSite)
+- `/{locale}/blog` **25종** → `Blog` + `ItemList`(최신 12) + `BreadcrumbList`
+
+- ★**공용 모듈 `lib/intl-jsonld.tsx`를 만들었다.** 50페이지를 손으로 적으면 **반드시 갈라진다** —
+  허브 트랙에서 그 갈라짐(클라이언트 SEO 문구 ≠ 서버 title)을 여러 건 치웠다.
+  블로그 목록은 **`IntlBlogIndex`(서버 컴포넌트) 한 곳**만 고쳐 25종에 전파됐다.
+- 🔴 **스키마에서 문장을 새로 짓지 않았다.** 로케일 홈의 이름·설명은 각 `page.tsx`가 이미
+  내보내는 `metadata.title`·`description`을 **그대로 넘긴다**. 새로 지으면 허브 트랙에서
+  걷어낸 결함(「합성된 FAQ 질문」·「화면에 없는 답변」)을 그대로 재생산하는 것이다.
+- `ItemList`는 **최신 12편만**. 로케일당 40편 넘는 곳이 있고 각 글은 자기 페이지에서 이미
+  Article을 낸다(KO `/blog`와 같은 판단 — 산출물 크기 대비 이득이 없다).
+- 🪶 **`zh-hant`는 BCP-47 표기가 다르다** → `inLanguage: "zh-Hant"`(`bcp47` 헬퍼).
+  디렉터리명을 그대로 쓰면 틀린 언어 태그가 나간다.
+- **검증**: build 69+457+60 · 홈 `CollectionPage` **25/25** · 목록 3노드 **25/25** ·
+  ld+json 파싱 실패 0 · `canonical:check` 0건 · `check:hreflang` 481페이지 0건 ·
+  샘플 실측(ja·zh-Hant·he) 이름이 metadata와 일치.
+- 🪶 `/index`(KO 홈)는 **결손이 아니다** — 루트 layout의 `WebSite`+`Organization`이 홈 스키마 역할을 한다.
+
 ## 2026-08-13 (10) — **허브 스키마 죽은 코드 해소 · 10페이지 서버 렌더** (`083fadb`)
 
 `components/seo.tsx`가 `schema` prop을 **구조분해에서 받지도 않아** `<SEO schema={...}>`를 쓰던
