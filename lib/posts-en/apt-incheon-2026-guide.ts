@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "APT Incheon 2026 runs Aug 7–16 at Paradise City Casino, Incheon — 10 min by free shuttle from Terminal 1. Main Event: KRW 2,500,000 (~$1,703) buy-in, $1M GTD. Natural8's online qualifiers awarded 74 seats in total; the $35 Mega and the OnLive Day 1 route closed on Aug 2, and the last route standing — the $20 Step → $200 Mega — closed on Aug 7, so online qualifying is over for this edition. Foreign nationals only (Korean citizens without overseas residency cannot enter). Seoul is ~1 hour away and is one of the best cities in Asia for food, culture, and nightlife.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-09",
+  updated: "2026-08-13",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🇰🇷",
@@ -87,7 +87,7 @@ And for international visitors: ==g:most Western passport holders (USA, Canada, 
 | ==**APT Main Event**== | ==**Aug 9–15**== | ==**~$1,703**== | ==g:**~$1M**== |
 | Superstar Challenge | Aug 14–15 | ~$23,800 | — |
 | Zodiac Classic | Aug 13–14 | ~$2,000 | ~$340K |
-| Mini Main Event | Aug 14–16 | ~$610 | ~$272K |
+| Mini Main Event | Aug 14–15 | ~$610 | ~$272K |
 | APT High Roller | Aug 15–16 | ~$3,400 | ~$340K |
 | Ultra Stack | Aug 15–16 | ~$477 | ~$102K |
 | Micro Main Event | Aug 16 | ~$270 | — |

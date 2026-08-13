@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "APT 仁川 2026 於 8 月 7–16 日在仁川 Paradise City 賭場舉行——距第一航廈免費接駁車僅 10 分鐘。主賽事（Main Event）買入 KRW 2,500,000（約 $1,703），$1M GTD。Natural8 線上預選共送出 74 個席次，但 $35 Mega 與 OnLive Day 1 都已在 8 月 2 日結束，最後一條 $20 階梯 → $200 Mega 也已在 8 月 7 日結束，線上預選全部收官。僅限外國人參加（無海外永久居留權的韓國公民不得進入）。首爾距離約 1 小時，是全亞洲美食、文化與夜生活最頂尖的城市之一。",
   category: "tournament",
   date: "2026-07-23",
-  updated: "2026-08-09",
+  updated: "2026-08-13",
   masterUpdated: "2026-07-28",
   keepImagesInBody: true,
   readTime: "16 分鐘",
@@ -90,7 +90,7 @@ APT 仁川 2026（亞洲撲克巡迴賽 Asian Poker Tour）。8 月 7–16 日�
 | ==**APT 主賽事（Main Event）**== | ==**8/9–15**== | ==**~$1,703**== | ==g:**~$1M**== |
 | Superstar Challenge | 8/14–15 | ~$23,800 | — |
 | Zodiac Classic | 8/13–14 | ~$2,000 | ~$340K |
-| Mini Main Event | 8/14–16 | ~$610 | ~$272K |
+| Mini Main Event | 8/14–15 | ~$610 | ~$272K |
 | APT High Roller | 8/15–16 | ~$3,400 | ~$340K |
 | Ultra Stack | 8/15–16 | ~$477 | ~$102K |
 | Micro Main Event | 8/16 | ~$270 | — |

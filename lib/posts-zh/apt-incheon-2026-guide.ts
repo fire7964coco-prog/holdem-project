@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "APT Incheon 2026 于 8 月 7–16 日在仁川 Paradise City Casino 举办——从 1 号航站楼坐免费班车 10 分钟直达。主赛事：KRW 2,500,000（约 $1,703）买入，$1M 保底。Natural8 线上预选一共送出 74 个席位，但 $35 Mega 和 OnLive Day 1 都已在 8 月 2 日结束，最后一条 $20 阶梯 → $200 Mega 也已在 8 月 7 日结束，线上预选全部收官。仅限外籍人士（无海外永久居留权的韩国公民不得入场）。首尔约 1 小时车程，是亚洲美食、文化和夜生活最好的城市之一。",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-09",
+  updated: "2026-08-13",
   masterUpdated: "2026-07-28",
   keepImagesInBody: true,
   readTime: "16 分钟",
@@ -88,7 +88,7 @@ APT Incheon 2026。8 月 7–16 日。Paradise City Casino。总保底奖池 $2.
 | ==**APT Main Event**== | ==**Aug 9–15**== | ==**~$1,703**== | ==g:**~$1M**== |
 | Superstar Challenge | Aug 14–15 | ~$23,800 | — |
 | Zodiac Classic | Aug 13–14 | ~$2,000 | ~$340K |
-| Mini Main Event | Aug 14–16 | ~$610 | ~$272K |
+| Mini Main Event | Aug 14–15 | ~$610 | ~$272K |
 | APT High Roller | Aug 15–16 | ~$3,400 | ~$340K |
 | Ultra Stack | Aug 15–16 | ~$477 | ~$102K |
 | Micro Main Event | Aug 16 | ~$270 | — |

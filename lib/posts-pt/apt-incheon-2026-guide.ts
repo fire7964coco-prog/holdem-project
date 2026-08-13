@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "O APT Incheon 2026 rola de 7 a 16 de agosto no Paradise City Casino, em Incheon — 10 min de shuttle grátis a partir do Terminal 1. Main Event: buy-in de KRW 2.500.000 (~$1.703), $1M GTD. Os classificatórios online da Natural8 distribuíram 74 vagas no total, mas o Mega de $35 e a rota OnLive Day 1 encerraram em 2 de agosto: a última via, o Step de $20 → Mega de $200, encerrou em 7 de agosto: a classificação online acabou. Só estrangeiros (cidadãos coreanos sem residência no exterior não podem entrar). Seul fica a ~1 hora e é uma das melhores cidades da Ásia para comida, cultura e vida noturna.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-09",
+  updated: "2026-08-13",
   masterUpdated: "2026-07-28",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -35,7 +35,7 @@ A viagem de pôquer e a viagem pela Coreia são a mesma viagem. ==g:O Paradise C
 ---
 
 > **Resposta rápida**
-> O APT Incheon 2026 rola de ==**7 a 16 de ago**== no Paradise City Casino, em Incheon. O resort fica a ==g:10 min de shuttle grátis do Terminal 1 do Aeroporto de Incheon== — sai a cada 30 min, sem custo. Buy-in do Main Event: ==**KRW 2.500.000 (~$1.703)**==, $1M garantido. Os step satellites começam a partir de ==g:**$3.50 pela Natural8**==. ==r:O Mega de $35 e o OnLive encerraram em 2 de agosto, e a última via (Step de $20 → Mega de $200) em 7 de agosto==. ==g:**A classificação online acabou; agora só dá pra entrar pelo registro presencial.**== O cassino é ==r:só para estrangeiros== — cidadãos coreanos sem residência no exterior não podem entrar.
+> O APT Incheon 2026 rola de ==**7 a 16 de ago**== no Paradise City Casino, em Incheon. O resort fica a ==g:10 min de shuttle grátis do Terminal 1 do Aeroporto de Incheon== — sai a cada 30 min, sem custo. Buy-in do Main Event: ==**KRW 2.500.000 (~$1.703)**==, $1M garantido. Os classificatórios online da Natural8 distribuíram ==g:**74 vagas no total**==. ==r:O Mega de $35 e o OnLive encerraram em 2 de agosto, e a última via (Step de $20 → Mega de $200) em 7 de agosto==. ==g:**A classificação online acabou; agora só dá pra entrar pelo registro presencial.**== O cassino é ==r:só para estrangeiros== — cidadãos coreanos sem residência no exterior não podem entrar.
 
 ---
 
@@ -88,7 +88,7 @@ E pra visitantes internacionais: ==g:a maioria dos portadores de passaporte ocid
 | ==**APT Main Event**== | ==**9–15 de ago**== | ==**~$1.703**== | ==g:**~$1M**== |
 | Superstar Challenge | 14–15 de ago | ~$23.800 | — |
 | Zodiac Classic | 13–14 de ago | ~$2.000 | ~$340K |
-| Mini Main Event | 14–16 de ago | ~$610 | ~$272K |
+| Mini Main Event | 14–15 de ago | ~$610 | ~$272K |
 | APT High Roller | 15–16 de ago | ~$3.400 | ~$340K |
 | Ultra Stack | 15–16 de ago | ~$477 | ~$102K |
 | Micro Main Event | 16 de ago | ~$270 | — |

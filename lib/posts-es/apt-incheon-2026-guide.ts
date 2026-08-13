@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "El APT Incheon 2026 se juega del 7 al 16 de agosto en el Paradise City Casino, Incheon — a 10 min en shuttle gratuito desde la Terminal 1. Main Event: entrada de KRW 2,500,000 (~$1,703), $1M GTD. Los clasificatorios online de Natural8 repartieron 74 asientos en total, pero el Mega de $35 y la vía OnLive Día 1 cerraron el 2 de agosto: la última vía, el Step de $20 → Mega de $200, cerró el 7 de agosto: la clasificación online ya terminó. Solo para extranjeros (los ciudadanos coreanos sin residencia en el extranjero no pueden entrar). Seúl está a ~1 hora y es una de las mejores ciudades de Asia para comer, cultura y vida nocturna.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-09",
+  updated: "2026-08-13",
   masterUpdated: "2026-07-28",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -35,7 +35,7 @@ El viaje de póker y el viaje a Corea son el mismo viaje. ==g:Paradise City est�
 ---
 
 > **Respuesta rápida**
-> El APT Incheon 2026 se juega del ==**7 al 16 de agosto**== en el Paradise City Casino, Incheon. El resort está a ==g:10 min en shuttle gratuito desde la Terminal 1 del Aeropuerto de Incheon== — sale cada 30 min, gratis. Entrada del Main Event: ==**KRW 2,500,000 (~$1,703)**==, $1M garantizado. Los satélites por pasos arrancan desde ==g:**$3.50 en Natural8**==. ==r:El Mega de $35 y OnLive cerraron el 2 de agosto, y la última vía (Step de $20 → Mega de $200) el 7 de agosto==. ==g:**La clasificación online ya terminó; ahora se entra por el registro presencial.**== El casino es ==r:solo para extranjeros== — los ciudadanos coreanos sin residencia en el extranjero no pueden entrar.
+> El APT Incheon 2026 se juega del ==**7 al 16 de agosto**== en el Paradise City Casino, Incheon. El resort está a ==g:10 min en shuttle gratuito desde la Terminal 1 del Aeropuerto de Incheon== — sale cada 30 min, gratis. Entrada del Main Event: ==**KRW 2,500,000 (~$1,703)**==, $1M garantizado. Los clasificatorios online de Natural8 repartieron ==g:**74 asientos en total**==. ==r:El Mega de $35 y OnLive cerraron el 2 de agosto, y la última vía (Step de $20 → Mega de $200) el 7 de agosto==. ==g:**La clasificación online ya terminó; ahora se entra por el registro presencial.**== El casino es ==r:solo para extranjeros== — los ciudadanos coreanos sin residencia en el extranjero no pueden entrar.
 
 ---
 
@@ -88,7 +88,7 @@ Y para el visitante internacional: ==g:la mayoría de los pasaportes occidentale
 | ==**APT Main Event**== | ==**9–15 ago**== | ==**~$1,703**== | ==g:**~$1M**== |
 | Superstar Challenge | 14–15 ago | ~$23,800 | — |
 | Zodiac Classic | 13–14 ago | ~$2,000 | ~$340K |
-| Mini Main Event | 14–16 ago | ~$610 | ~$272K |
+| Mini Main Event | 14–15 ago | ~$610 | ~$272K |
 | APT High Roller | 15–16 ago | ~$3,400 | ~$340K |
 | Ultra Stack | 15–16 ago | ~$477 | ~$102K |
 | Micro Main Event | 16 ago | ~$270 | — |
