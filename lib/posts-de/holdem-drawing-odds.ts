@@ -141,7 +141,7 @@ Das sind die Zahlen hinter den besten (und schlimmsten) Nächten deines Poker-Le
 |:---|:---|:---:|:---:|
 | **Quads** | Ein Pocket Pair | 0,245% · 407:1 | 48 ÷ 19.600 |
 | **Full House** | Ein Pocket Pair | 0,98% · 101:1 | 192 ÷ 19.600 |
-| **Drilling** | Zwei ungepaarte Karten | 1,35% · 73:1 | 264 ÷ 19.600 |
+| **Trips** | Zwei ungepaarte Karten | 1,35% · 73:1 | 264 ÷ 19.600 |
 | **Straight Flush** | Suited Connectors | 0,02% · ~4.900:1 | 4 ÷ 19.600 |
 
 </div>

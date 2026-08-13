@@ -3,6 +3,33 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-08-13 (18) — **잔여 3건 배치 — 「8 로케일 전부」가 또 실측에서 1곳으로 깨졌다**
+
+핸드오프의 「새로 확인된 잔여」 + 검수장 회신 §5-A 잔여를 한 배치로 닫았다. **세 건 다 분모가 틀렸다.**
+
+- 🔴 **`holdem-pot-odds` 「Equity = Gewinnchance」 — 인계서는 「8 로케일 전부에 있을 가능성이 높다」**고 했다.
+  **실측: de 1곳뿐이다.** 문제의 문장(H2 직후 직답 문단 「Pot Odds sind der Preis, **Equity ist deine
+  tatsächliche Gewinnchance**, Implied Odds …」)은 **de에만 있고**, 나머지 7로케일은 H2에서 곧장
+  `:::compare` 표로 간다. → 형제 `holdem-equity`의 정의(「dein **Anteil am Pot**」·Splits 안분)로 맞췄다.
+  ★**형제 글이 근거였다**: `holdem-equity`(de)는 `Gewinnchance`를 **0회**로 이미 걷어냈는데
+  `pot-odds`만 5회 쓰며 **그중 하나가 등식**이었다 = equity 트랙이 형제를 안 따라가 생긴 모순.
+  🔴 **zh·zh-hant는 «해당 없음»이다 — 고쳤으면 대형 사고였다.** 그쪽은 `胜率/勝率`가 **equity의 현지 역어**다
+  (zh-hant는 아예 「**勝率（Equity）**」로 병기 · 사용량 pot-odds 49 : equity 120). **낱말이 같다고 결함이 아니다.**
+  🪶 남긴 것: `:::compare` 표의 「Equity \| 실제로 이길 확률」 행은 **EN 마스터 문형이라 8로케일 공통**이다.
+  검수장도 «경계 밖 관찰»로만 뒀다 → 미러 트랙 후보로 기록만 하고 손대지 않았다.
+- 🟠 **`straddle` tldr(de·ja)** — 회신은 「tldr·**도입부**」라 했으나 **실측에서 도입부는 이미 한정돼 있었다**
+  (de 68행 「die letzte Action **nur preflop**」 · ja 64행 「最後のアクション権は**プリフロップだけ**」).
+  「letzte Action」 11자리·「最後のアクション」 11자리를 전수로 훑어 **한정 없는 자리는 tldr 딱 2곳**이었다.
+  → 본문 문구를 그대로 복사해 `die letzte Action **preflop**` · `**プリフロップの**最後のアクション権`.
+- 🟠 **`drawing-odds` de 「Drilling→Trips 5자리 중 2자리만」 — 일괄 치환했으면 옳은 서술을 3개 망가뜨렸다.**
+  이 글은 **Set ≠ Trips를 스스로 가르치는 글**이라 `Drilling`이 **상위어(랭크상 같은 트리플)**로 쓰인 자리가 있다:
+  149행 「Auf dem Papier **derselbe Drilling**」 · 195행 「**Derselbe Drilling** im Rang」 ·
+  153행 「als **Drilling eines anderen Rangs** auf deinem Paar」(= 보드의 트리플). **셋 다 Drilling이 맞다.**
+  → **고친 건 144행 표 라벨 하나**다(정의 칸이 「Zwei ungepaarte Karten」·1,35% = 이 글 기준 Trips인데
+  라벨만 Drilling이라 **제 표가 제 정의와 어긋났다**). 193행 FAQ 질문 「Set과 Drilling의 차이」는
+  **검색 진입 문구**라 유지했다(답이 Set/Trips로 정확히 갈라 준다).
+- **검증**: `audit:hard --locale=de` **42/42 🔴 0건** · `--locale=ja` **43/43 🔴 0건** · build 69+457+60.
+
 ## 2026-08-13 (17) — **솔버 세션 2차 요청 처리 — `/solver` h1 신설 + 트레이너 «흡수»(랜딩 신설 기각)**
 
 요청서 = `클로드-프로그램만들기\본체세션_전달메시지.txt` + `요청_트레이너랜딩_및_랜딩점검.md`(읽기 전용).

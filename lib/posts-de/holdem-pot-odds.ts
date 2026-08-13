@@ -131,7 +131,7 @@ Lies sie gegen die Bet-Size-Tabelle oben. Für Spots, die nicht in der Tabelle s
 
 ## Pot Odds, Equity oder Implied Odds – was gilt wann?
 
-**Pot Odds** sind der Preis, **Equity** ist deine tatsächliche Gewinnchance, **Implied Odds** sind das Geld, das nach dem Treffer noch dazukommt. Die Grundentscheidung fällt immer zwischen den ersten beiden: Equity über Pot Odds = Call. Implied Odds kommen erst ins Spiel, wenn deine Equity den Preis *knapp* verfehlt – und nur bei tiefen Stacks.
+**Pot Odds** sind der Preis, **Equity** ist dein Anteil am Pot, **Implied Odds** sind das Geld, das nach dem Treffer noch dazukommt. Die Grundentscheidung fällt immer zwischen den ersten beiden: Equity über Pot Odds = Call. Implied Odds kommen erst ins Spiel, wenn deine Equity den Preis *knapp* verfehlt – und nur bei tiefen Stacks.
 
 Diese drei werden ständig durcheinandergeworfen, und die Verwirrung kostet Geld. Hier die saubere Aufteilung:
 
