@@ -568,7 +568,15 @@ regeln österreich 10/15·würfel tabelle 10/5 — 주사위 게임) · `was ist
 **CAPT 시리즈**(seefeld 2026 110 · innsbruck/linz/million baden/velden/bregenz ergebnisse 각 10) ·
 förde deepstack kiel 2026 · triple a series berlin 2025 · the festival malta · palasino(excalibur city).
 
-#### 🔴 B. 구조적 공백 — `/de/tournaments`가 없다
+#### ~~🔴 B. 구조적 공백 — `/de/tournaments`가 없다~~ → ✅ **이미 이행됐다 (2026-08-13 실측으로 정정)**
+
+> 🔴 **이 절은 낡았다.** `app/de/tournaments/page.tsx`가 **실재한다.**
+> 아래 「없어서 그릇이 없다」는 서술은 리서치 시점(2026-08-11) 기준이고 **그 뒤에 메워졌다.**
+> 인텐트 분석(LDA 4~9 · KO GSC 1위 패턴)은 **그대로 유효**하니 남긴다 — 바뀐 건 «그릇이 없다»뿐이다.
+> ⚠ **다음 사람이 이 절을 근거로 신설을 제안하지 마라.** 남은 판단은 «허브를 두껍게 할 것인가»다.
+
+<details>
+<summary>리서치 시점 서술 (2026-08-11 · 접어 둔다)</summary>
 
 실측: 토너먼트 허브는 **zh · zh-hant · en · ja · es 5개 로케일에만** 존재한다(`app/*/tournaments/page.tsx`).
 **독일어 랜딩이 없어서 이 클러스터 전체를 받을 그릇이 없다.**
@@ -577,6 +585,8 @@ förde deepstack kiel 2026 · triple a series berlin 2025 · the festival malta 
 - 이미 `/tournaments`에 107개 대회 데이터가 있고, 독일 독자용 핵심(King's·CAPT·WSOPE 프라하·German Poker Days)은
   `docs/market-profile/de.md`에 정리돼 있다.
 - ⚠ 단 **일정 데이터는 휘발성**이다. 만들면 갱신 부담이 생긴다 — `docs/update-calendar.md`에 편입 전제.
+
+</details>
 
 **→ 이 리서치에서 나온 가장 큰 실행 항목이다.** de 블로그 42편 경화와는 별개 트랙이니 사장님 판단이 필요하다.
 
@@ -693,7 +703,7 @@ sportsbar 계열이다. → 「Freizeit(여가)」 인접성으로 딸려온 것
 
 | # | 항목 | 규모 | 메모 |
 |---|---|---|---|
-| 1 | 🔴 **`/de/tournaments` 신설** | 큼 | 지역·일정 LDA **4~9**가 통째로 열려 있는데 그릇이 없다(현재 zh·zh-hant·en·ja·es만). 데이터는 이미 107개 보유. **단 휘발성 = 갱신 부담** |
+| ~~1~~ | ~~🔴 `/de/tournaments` 신설~~ | — | ✅ **이미 이행됐다**(2026-08-13 실측 — `app/de/tournaments/page.tsx` 실재). 인텐트(LDA 4~9)는 유효하니 남은 판단은 «신설»이 아니라 **«그 허브를 두껍게 할 것인가»**다 |
 | 2 | **칩 분배 계산기** `/de` | 중 | `verteilung rechner` LDA**7**. 비대체 자산. KO에도 없어 역수입 가능 |
 | 3 | 세금 글/FAQ | 작음 | de 42편에 세금 0. BFH 1차출처 확보됨. 볼륨 30/월 → **FAQ 흡수 권장** |
 | 4 | 툴 브랜드 대응(gto wizard 2,400 · equilab LDA3) | 중 | 브랜드 검색자 전환 나쁨 + 자사 솔버와 경쟁. **equilab·gto wizard 묶어서 한 번에 결정** |
