@@ -3,7 +3,7 @@
 import { SEO } from "@/components/seo";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { HANDS } from "./hands-data";
+import { HANDS, FAQS } from "./hands-data";
 
 
 export default function Hands() {
@@ -30,16 +30,22 @@ export default function Hands() {
       />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24">
-        <div className="text-center mb-10">
-          <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-5">
-            텍사스 홀덤 족보 순위
+        {/*
+          ★H1 조준 (2026-08-13 라쿠 실측): 「포커 족보」 18,100 · 「홀덤족보」 8,100 ·
+            텍사스 홀덤 족보 2,400 · 홀덤 족보 순위 390.
+            원래 H1이 「텍사스 홀덤 족보 순위」라 이 판 최대어(포커 족보)를 비켜 있었다.
+          🔴 카니발 방지 — 필라(blog/holdem-hand-rankings)의 H1은 「홀덤 족보 순위 10가지」다.
+            이 페이지는 «표»를, 필라는 «설명»을 맡는다. 리드도 그 역할대로 썼다.
+          ⚠ 리드에서 「온라인홀덤」 3회 반복을 걷어냈다 — 키워드 억지삽입은 posting.mdc §DON'T다.
+        */}
+        <div className="text-center mb-8">
+          <h1 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-4">
+            포커 족보 순위 10단계
           </h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            <strong className="text-foreground">온라인홀덤</strong>이든 오프라인이든, 텍사스 홀덤에서 승패는
-            <strong className="text-foreground"> 포커 족보(핸드 랭킹, 포커 패 순위)</strong>로 결정됩니다.
-            자신의 홀 카드 2장 + 커뮤니티 카드 5장, 총 7장 중 최고의 5장 조합을 만들어야 합니다.
-            <strong className="text-foreground"> 온라인 포커</strong>를 시작하기 전에 아래
-            <strong className="text-foreground"> 홀덤 족보 순위 10가지</strong>를 반드시 암기하세요.
+          <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            로열플러시부터 하이카드까지 <strong className="text-foreground">강한 순서 그대로</strong> 정리한 홀덤족보 표입니다.
+            홀덤은 홀 카드 2장 + 보드 5장, <strong className="text-foreground">총 7장에서 가장 좋은 5장</strong>을 골라 겨루기 때문에
+            아래 확률도 7장 기준으로 실었습니다. 게임 중 헷갈릴 때 이 페이지만 열어 확인하세요.
           </p>
         </div>
 
@@ -75,44 +81,56 @@ export default function Hands() {
           </table>
         </motion.div>
 
-        {/* Detailed Cards */}
-        <div className="grid gap-6">
-          {HANDS.map((hand, index) => (
-            <motion.div
-              key={hand.rank}
-              initial={false}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: index * 0.04 }}
-              className={`border rounded-xl p-6 md:p-8 flex flex-col md:flex-row items-center gap-6 md:gap-12 transition-all ${hand.color}`}
-            >
-              <div className="flex flex-col items-center md:items-start text-center md:text-left md:w-1/3">
-                <span className="text-primary/60 text-sm font-bold tracking-widest uppercase mb-1">
-                  Rank {hand.rank}
-                </span>
-                <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mb-2">
-                  {hand.name}
-                </h2>
-                <p className="text-muted-foreground text-sm leading-relaxed">{hand.description}</p>
-                <p className="mt-2 text-xs text-muted-foreground">
-                  홀덤 7장 기준 출현 확률{" "}
-                  <strong className="text-foreground tabular-nums">{hand.prob}</strong>
-                </p>
-              </div>
-              <div className="flex flex-wrap justify-center gap-2 md:gap-4 md:w-2/3 md:justify-end">
-                {hand.example.map((card, i) => (
-                  <div
-                    key={i}
-                    className="w-12 h-16 md:w-16 md:h-24 bg-white rounded-md flex items-center justify-center border border-gray-300 shadow-md transform hover:-translate-y-2 transition-transform cursor-default"
-                  >
-                    <span className={`text-xl md:text-3xl font-bold font-sans tracking-tighter ${getSuitColor(card)}`}>
-                      {card}
+        {/*
+          Detailed Cards — ★2026-08-13 압축 (사장님 지시).
+          실측: 이 구간이 2,431px로 **문서의 53.4%**를 먹고 있었다(데스크톱 1440×900).
+          카드당 204~262px · 패딩 32px · 제목 30px가 왼쪽 컬럼 282px를 넘겨 **2줄로 깨졌다.**
+          → 패딩·간격·글자를 줄이고, 한글명과 영문명을 한 줄에 크기 차이로 배치해 줄바꿈을 없앴다.
+          카드 그림 자체는 남긴다 — 초보가 «무엇이 그 족보인지»를 눈으로 확인하는 장치이고,
+          그게 위쪽 표에 없는 이 구간의 존재 이유다.
+        */}
+        <div className="grid gap-3">
+          {HANDS.map((hand, index) => {
+            const ko = hand.name.split(" (")[0];
+            const en = hand.name.split(" (")[1]?.replace(")", "") ?? "";
+            return (
+              <motion.div
+                key={hand.rank}
+                initial={false}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.35, delay: index * 0.03 }}
+                className={`border rounded-xl p-4 md:p-5 flex flex-col md:flex-row md:items-center gap-3 md:gap-6 transition-all ${hand.color}`}
+              >
+                <div className="flex flex-col items-center md:items-start text-center md:text-left md:w-[46%] md:flex-shrink-0">
+                  <h2 className="font-serif font-bold text-foreground leading-snug text-base md:text-lg">
+                    <span className="mr-1.5 font-sans text-xs font-bold tracking-wider text-primary/70">
+                      {hand.rank}위
                     </span>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
-          ))}
+                    {ko}
+                    <span className="ml-1.5 font-sans text-xs font-normal text-muted-foreground">{en}</span>
+                  </h2>
+                  <p className="mt-1 text-xs leading-relaxed text-muted-foreground">{hand.description}</p>
+                  <p className="mt-1 text-xs text-muted-foreground">
+                    홀덤 7장 기준{" "}
+                    <strong className="text-foreground tabular-nums">{hand.prob}</strong>
+                  </p>
+                </div>
+                <div className="flex flex-wrap justify-center gap-1.5 md:gap-2 md:flex-1 md:justify-end">
+                  {hand.example.map((card, i) => (
+                    <div
+                      key={i}
+                      className="flex h-14 w-10 items-center justify-center rounded border border-gray-300 bg-white shadow-sm transition-transform hover:-translate-y-1 md:h-16 md:w-11"
+                    >
+                      <span className={`font-sans text-sm font-bold tracking-tighter md:text-base ${getSuitColor(card)}`}>
+                        {card}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </motion.div>
+            );
+          })}
         </div>
 
         {/* SEO Summary */}
@@ -122,18 +140,22 @@ export default function Hands() {
           viewport={{ once: true }}
           className="mt-14 bg-card border border-border rounded-xl p-6"
         >
-          <h2 className="text-xl font-serif font-bold text-foreground mb-3">홀덤 족보 — 자주 묻는 질문</h2>
+          <h2 className="text-xl font-serif font-bold text-foreground mb-3">포커 족보 — 자주 묻는 질문</h2>
           <dl className="space-y-3 text-sm">
-            {[
-              { q: "플러시와 풀하우스 중 어느 것이 강한가요?", a: "풀하우스(4위)가 플러시(5위)보다 강합니다." },
-              { q: "포커에서 스트레이트에서 A는 어떻게 사용하나요?", a: "A는 A-K-Q-J-10 (최강 스트레이트) 또는 A-2-3-4-5 (휠, 가장 약한 스트레이트) 양쪽으로 사용 가능합니다." },
-              { q: "텍사스 홀덤 족보가 동일하면 어떻게 되나요?", a: "키커(kicker, 나머지 높은 카드)로 비교하고, 그것도 같으면 팟을 나눕니다(스플릿 팟)." },
-              { q: "홀덤 족보를 가장 빠르게 외우는 방법은?", a: "로플포풀플스트투원하 — '로·플·포·풀·플·스·트·투·원·하' 로 10가지를 순서대로 외우세요." },
-              { q: "온라인 포커에서도 오프라인과 같은 족보를 사용하나요?", a: "네, GGPoker·PokerStars 등 모든 온라인홀덤 사이트에서 동일한 족보 순위가 적용됩니다." },
-            ].map(({ q, a }) => (
+            {FAQS.map(({ q, a, href, linkLabel }) => (
               <div key={q}>
                 <dt className="font-semibold text-foreground">{q}</dt>
-                <dd className="text-muted-foreground mt-0.5 pl-2">{a}</dd>
+                <dd className="text-muted-foreground mt-0.5 pl-2">
+                  {a}
+                  {href && (
+                    <>
+                      {" "}
+                      <Link href={href} className="text-primary font-semibold hover:underline">
+                        {linkLabel} →
+                      </Link>
+                    </>
+                  )}
+                </dd>
               </div>
             ))}
           </dl>

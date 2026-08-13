@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { SITE } from "@/lib/site";
 import HandsClient from "./hands-client";
-import { HANDS } from "./hands-data";
+import { HANDS, FAQS } from "./hands-data";
 
 /**
  * ★2026-08-13 색인 개시 (사장님 결정) — hand-chart 선례(2026-08-08)와 같은 논리다.
@@ -81,6 +81,21 @@ export default function Page() {
         { "@type": "ListItem", position: 1, name: "홈", item: `${SITE}/` },
         { "@type": "ListItem", position: 2, name: "포커 족보 순위표", item: `${SITE}/hands` },
       ],
+    },
+    /**
+     * FAQPage — 화면의 FAQ와 **같은 배열**에서 만든다.
+     * ⚠ 구글 FAQ 리치결과는 2026-05-07에 종료됐지만 마크업 자체는 유효하다
+     *   (Bing·Perplexity·RAG가 파싱한다). 본문에도 같은 문장이 있어야 LLM이 읽는다 —
+     *   스키마에만 있는 정보는 못 읽는다(posting.mdc §GEO).
+     */
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: FAQS.map(({ q, a }) => ({
+        "@type": "Question",
+        name: q,
+        acceptedAnswer: { "@type": "Answer", text: a },
+      })),
     },
   ];
 
