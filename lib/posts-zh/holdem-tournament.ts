@@ -175,13 +175,13 @@ deepstack 锦标赛让你带着相对盲注多得多的筹码开局——通常 
 
 ### 方式 B：线上预注册
 大多数大型现场赛事让你提前在线报名：
-- 在赛事平台上开个账号（比如 WSOP 用 Bravo Poker Live，EPT/APPT 赛事用 PokerStars Live app）
+- 在赛事平台上开个账号（比如 WSOP 用 WSOP LIVE app，EPT/APPT 赛事用 PokerStars Live app）
 - 在线支付买入
 - 到场馆 → 核验证件 → 在自助机上打印座位卡或到台前领取
 - 省掉排队报名——大型赛事值得这么做
 
 ### 方式 C：卫星赛晋级
-- 在线上（PokerStars Power Path、GGPoker SuperSatellites）或现场找卫星赛
+- 在线上（PokerStars Power Path、GGPoker 的 WSOP 卫星赛）或现场找卫星赛
 - 赢下卫星赛 → 拿到目标赛事的席位券
 - 到主赛报名台 → 出示席位券 + 证件 → 领取座位卡
 

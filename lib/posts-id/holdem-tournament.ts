@@ -174,13 +174,13 @@ Alih-alih mengeluarkan $10.000, Anda berkompetisi di turnamen $500 melawan 19 pe
 
 ### Opsi B: Pra-Registrasi Online
 Kebanyakan festival live besar memungkinkan Anda mendaftar online lebih awal:
-- Buat akun di platform event (mis. Bravo Poker Live untuk WSOP, aplikasi PokerStars Live untuk event EPT/APPT)
+- Buat akun di platform event (mis. aplikasi WSOP LIVE untuk WSOP, aplikasi PokerStars Live untuk event EPT/APPT)
 - Bayar buy-in secara online
 - Tiba di venue → verifikasi ID → cetak kartu kursi di kios atau ambil di meja
 - Melewati antrean registrasi — layak dilakukan untuk event besar
 
 ### Opsi C: Qualifier Satellite
-- Cari turnamen satellite online (PokerStars Power Path, GGPoker SuperSatellites) atau di lokasi
+- Cari turnamen satellite online (PokerStars Power Path, satelit WSOP GGPoker) atau di lokasi
 - Menangkan satellite → terima tiket kursi untuk event target
 - Tiba di meja registrasi main event → tunjukkan tiket + ID → terima kartu kursi
 

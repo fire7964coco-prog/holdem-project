@@ -175,13 +175,13 @@ En lugar de gastar $10,000, compites en un torneo de $500 contra otros 19 jugado
 
 ### Opción B: Preinscripción online
 La mayoría de grandes festivales en vivo te dejan registrarte online por adelantado:
-- Crea una cuenta en la plataforma del evento (p. ej., Bravo Poker Live para la WSOP, la app PokerStars Live para eventos EPT/APPT)
+- Crea una cuenta en la plataforma del evento (p. ej., la app WSOP LIVE para la WSOP, la app PokerStars Live para eventos EPT/APPT)
 - Paga el buy-in online
 - Llega a la sede → verificación de identidad → imprime el ticket de asiento en un kiosco o recógelo en el mostrador
 - Te saltas la cola de registro — vale la pena para eventos grandes
 
 ### Opción C: Clasificatorio por satélite
-- Busca torneos satélite online (PokerStars Power Path, GGPoker SuperSatellites) o presenciales
+- Busca torneos satélite online (PokerStars Power Path, satélites WSOP de GGPoker) o presenciales
 - Gana el satélite → recibe un ticket de asiento para el evento objetivo
 - Llega al mostrador de registro del evento principal → presenta el ticket + documento → recibe el ticket de asiento
 

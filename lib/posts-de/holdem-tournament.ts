@@ -192,13 +192,13 @@ Statt $10.000 auszugeben, trittst du in einem $500-Turnier gegen 19 andere Spiel
 
 ### Option B: Online-Vorregistrierung
 Die meisten großen Live-Festivals lassen dich vorab online registrieren:
-- Richte ein Konto auf der Plattform des Events ein (z. B. Bravo Poker Live für die WSOP, die PokerStars Live App für EPT/APPT-Events)
+- Richte ein Konto auf der Plattform des Events ein (z. B. die WSOP-LIVE-App für die WSOP, die PokerStars Live App für EPT/APPT-Events)
 - Zahle das Buy-in online
 - Komm zum Veranstaltungsort → Ausweisprüfung → Seat Card an einem Kiosk drucken oder am Tresen abholen
 - Spart die Registrierungsschlange – lohnt sich für große Events
 
 ### Option C: Satellite-Qualifier
-- Finde Satellite-Turniere online (PokerStars Power Path, GGPoker SuperSatellites) oder vor Ort
+- Finde Satellite-Turniere online (PokerStars Power Path, GGPoker WSOP-Satellites) oder vor Ort
 - Gewinne das Satellite → erhalte ein Seat-Ticket für das Zielevent
 - Komm zum Registrierungstresen des Main Events → zeige Ticket + Ausweis → erhalte die Seat Card
 
