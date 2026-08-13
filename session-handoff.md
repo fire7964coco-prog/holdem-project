@@ -27,19 +27,31 @@
 > 🪶 검수장 회신 거리 2건: **TDA RP-8 B 원문은 「2-minutes per hand」**(지시서의 「최대 3분」과 다름) ·
 > `bubble`은 **어느 로케일도 정답 전체를 갖고 있지 않았다**(de=결론만, 나머지 7=기전만).
 
-**허브 페이지 구조화 데이터가 0이다.** `components/seo.tsx`가 `schema` prop을 **구조분해에서 받지도 않아**
-`<SEO schema={...}>`를 쓰는 **13개 파일이 전부 죽은 코드**였다(2026-08-13 발견). 산출물 실측:
+✅ **허브 스키마 트랙은 2026-08-13에 종료됐다**(`083fadb`) — 경위·교훈은 `WORKLOG.md` 2026-08-13 (10).
+10페이지(`/ranking` `/rules` `/strategy` `/glossary` `/blog` `/rules/{texas-holdem,omaha,seven-card-stud}`
+`/en/ranking` `/en/glossary`)를 서버 렌더로 옮기고, `SEOProps`에서 `schema`를 제거해 재발을 막았다.
 
-| 페이지 | 자기 스키마 |
-|---|---|
-| `/ranking` | **없음** — 🔴 보고서의 「사이트 최대 볼륨 레버」(「홀덤사이트」 ~4,600노출·r14) |
-| `/rules` · `/strategy` · `/glossary` · `/blog` | **없음** |
-| `/tournaments` | ✅ Article·FAQPage·Event 6 — **이 패턴을 복제하면 된다** |
+🔴 **그 트랙이 남긴 규율 셋** (다음에 스키마를 손댈 때 그대로 유효):
+1. **죽은 코드를 «그대로» 옮기지 마라.** 셋이 옮기면 안 되는 상태였다 —
+   FAQ가 스키마에만 있고 화면엔 없었고(`/ranking`·`/en/ranking`), rules 3편은 **아코디언
+   조건부 렌더라 답변이 서버 HTML에 0개**였으며, 용어집은 **질문을 합성**하고 있었다.
+2. ★**「화면에 있나」를 산출물로 확인하라.** 소스에 배열이 있다고 HTML에 있는 게 아니다 —
+   `{조건 && (…)}`는 크롤러·LLM에게 **존재하지 않는다.** CSS로 접어라.
+3. **선언만 있고 구현이 없는 prop은 조용히 버려진다.** 타입체크가 통과하니 아무도 모른다.
 
-- 처방: `jsonLd`를 **서버 `page.tsx`로 옮겨** `<script type="application/ld+json">`로 직접 렌더.
-  **최신 예시 = `app/hands/page.tsx`**(ItemList + BreadcrumbList + FAQPage).
-- 타입은 페이지마다 다르다(순위형 ItemList / Q&A 있으면 FAQPage / 허브 WebPage+ItemList) —
-  한 페이지씩 열고 **산출물 `@type` 개수로 검증**할 것. ⚠ 클라이언트의 죽은 `jsonLd`는 **지우고** 옮겨라.
+### ▶▶ 🔴 다음 세션의 본체 — **아직 스키마가 0인 나머지**
+
+이번엔 «허브»만 닫았다. 산출물 실측 기준 **자기 스키마가 없는 정적 페이지가 아직 남아 있다**:
+
+| 묶음 | 페이지 | 메모 |
+|---|---|---|
+| 도구·기타 | `/hand-chart` · `/quiz` · `/holdem-practice` · `/en/hand-chart` · `/en/quiz` · `/en/win-rate-quiz` | `/calculator`·`/win-rate-quiz`(KO)는 **이미 있다** — 패턴 복제 |
+| 정책·정보 | `/about` · `/contact` · `/privacy` · `/terms` | WebPage 정도면 충분 |
+| 로케일 홈·목록 | `/{locale}` 25종 · `/{locale}/blog` 25종 | **한 번에 되는 자리다** — 공통 컴포넌트로 CollectionPage/Blog 주입 검토 |
+| ⏸ **`/pub/*` 9개** | — | 🔴 **사장님 지시로 보류 — 건드리지 말 것** |
+
+> 🪶 판정법: `.next/server/app/**/*.html`에서 `"@type"`을 세되 **루트 layout의
+> `WebSite`·`Organization`·`SearchAction`·`ImageObject`는 빼고** 세라 — 안 빼면 전부 «있음»으로 보인다.
 
 ### 🔴 1차 확인이 필요한 잔여 (오늘 발견 · 미처리)
 
@@ -48,8 +60,8 @@
 | 1 | **KO `apt-incheon` 295행 「$3.50 Step Satellite」** | 같은 글 「바로 답」은 「$20 스텝 → $200 메가」로 옳다 — **한 글 안에서 값이 갈린다.** KO 표는 `$3.50 → $35 Mega` 경로를, EN 정본은 `$20 Step → $200 Mega`를 「마지막 경로」라 한다. **Natural8 1차 확인 후** 판단(오늘 다국어 4곳은 EN 정본 문형으로 이미 닫았다) |
 | 2 | **`GGPoker SuperSatellites` 고유명** | 오늘 «주장 제거»로 중립화만 했다. ggpoker.com 404로 1차 실패 — **검수장에 근거 URL 요청** 후 고유명 승격 여부 결정 |
 | 3 | `holdem-tournament`의 `:::note` 출처 표기 | **casinos.at·spielbanken-bayern.de를 「abgerufen」(열람함)으로 적어 뒀는데 접근 불가 출처**다(검수장 실측 403). 열람 주장을 뺄지 다른 출처로 바꿀지 판단 |
-| 4 | 🪶 `/glossary` 용어 개수 불일치 | `/hands`·실제 배열은 **26개**인데 `app/glossary/page.tsx`·`app/strategy/strategy-client.tsx`가 **27개**라 적었다(딜러 렌즈 부수 발견) |
-| 5 | 🪶 `app/home-client.tsx`가 **죽은 파일** | 어디서도 import 안 된다(현재 홈 = `community-home`). 2026-08-01에 이 파일의 족보 링크를 필라로 옮긴 작업이 **실효가 없었다.** 삭제할지 판단 |
+| ~~4~~ | ~~🪶 `/glossary` 용어 개수 불일치~~ | ✅ **완료 2026-08-13**(`083fadb`) — 실측 26 vs 표기 27이었고 **화면은 `TERMS.length`를 렌더해 SERP 제목과 갈려 있었다.** 게다가 제목이 약속한 **턴·리버·ICM이 배열에 아예 없었다** → 셋을 채워 **29로 통일**(page.tsx·strategy-client) |
+| 5 | 🪶 `app/home-client.tsx`가 **죽은 파일** | 어디서도 import 안 된다(현재 홈 = `community-home`). 2026-08-01에 이 파일의 족보 링크를 필라로 옮긴 작업이 **실효가 없었다.** 삭제할지 판단. 🪶 08-13에 죽은 `schema` prop만 걷어냈다(삭제는 보류) |
 
 ### 🔴 `/hands` 색인 — **열었다가 같은 날 되돌렸다. 다시 열지 마라(새 근거 없이는)**
 
@@ -329,6 +341,7 @@ APT 인천이 그날 끝난다. 같은 글·같은 로케일을 여러 번 열�
 | `check:hreflang` | 481페이지 · 50세트 · 🔴 0건 |
 | `canonical:check` | KO 104 라우트 · 🔴 0건 |
 | `audit:hard:selftest` | **76/76** · `check:de-style` 셀프테스트 104/104 |
+| **허브 구조화 데이터** | ✅ 10페이지 서버 렌더 완료(08-13 `083fadb`) · ld+json 파싱 실패 0 · FAQ 답변 HTML 노출 26/26 · 실제 `schema={}` prop 잔존 **0건** |
 | **검수장 재검수 원장** | 42편 2,988주장 · OK 2,558 · **WRONG 30 · RISKY 116 · 미해결 146** — **순위1~5가 닫혔다**(WRONG 24/30 · 남은 WRONG은 🔒8/16 국적축 5건뿐). 검수장 트랙은 **8/16 순위6만 남았다** |
 | de 구 검수(S1~S6) | ✅ 종료. 단 재검수가 **WRONG을 17→30으로 늘렸다**(구 검수가 못 연 1차를 열어서) |
 | 미러 전파(구 트랙) | ✅ 9편 종료 — 경위는 WORKLOG 2026-08-12 |

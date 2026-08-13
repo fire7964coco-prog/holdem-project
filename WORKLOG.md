@@ -3,6 +3,37 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-08-13 (10) — **허브 스키마 죽은 코드 해소 · 10페이지 서버 렌더** (`083fadb`)
+
+`components/seo.tsx`가 `schema` prop을 **구조분해에서 받지도 않아** `<SEO schema={...}>`를 쓰던
+파일이 전부 죽은 코드였다. 산출물 실측: **정적 60개 중 자기 스키마가 있는 건 12개뿐**이었고
+사이트 최대 노출을 받는 `/ranking`을 포함한 허브가 전부 0이었다.
+
+- **10페이지를 서버 `page.tsx`로 옮겼다** — `/ranking` `/rules` `/strategy` `/glossary` `/blog`
+  `/rules/texas-holdem` `/rules/omaha` `/rules/seven-card-stud` `/en/ranking` `/en/glossary`.
+  데이터는 `*-data.ts`로 분리해 **화면과 스키마가 같은 배열**을 쓰게 했다(`hands-data` 패턴).
+- 🔴 **옮기다 보니 «그대로 옮기면 안 되는» 것이 셋 있었다** — 이게 이번 작업의 본체다:
+  ① **FAQ가 스키마에만 있고 화면엔 없었다**(`/ranking`·`/en/ranking`). 그대로 옮겼으면
+     «페이지에 없는 답변»을 주장하는 구글 스펙 위반이 된다 → 화면 섹션을 만들었다.
+  ② **rules 하위 3편은 FAQ 답변이 서버 HTML에 한 글자도 없었다.** 아코디언이
+     `{openFaq === i && (…)}` **조건부 렌더**라 크롤러·LLM은 클릭하지 않으니 통째로 못 본다.
+     DOM엔 항상 넣고 CSS로만 접게 바꿔 **답변 20개가 HTML에 들어왔다**(색인·인용 양쪽 이득).
+  ③ **용어집 FAQPage가 질문을 «합성»하고 있었다**(`홀덤에서 {용어}이란 무엇인가요?` — 화면에 없는 문장).
+     용어집의 정확한 타입인 **DefinedTermSet/DefinedTerm**으로 교체. `slice(0,8)` 제한도 전수로.
+- **handoff 잔여 #4(용어 개수 불일치)를 함께 닫았다** — metadata는 27, 배열은 26, 화면은
+  `TERMS.length`를 렌더해 **SERP 제목과 페이지가 갈려 있었다.** 게다가 제목이 약속한
+  **턴·리버·ICM이 배열에 아예 없었다**(검색해 들어온 사람이 찾는 말이 없는 상태) →
+  셋을 채워 **29개로 통일**(page.tsx·strategy-client 표기 포함).
+- **근본 원인 차단**: `SEOProps`에서 `schema`를 제거하고 「**선언만 있고 구현이 없는 prop은
+  «조용히 버려지는 인자»다**」를 주석으로 박았다. 타입체크는 통과하니 아무도 모른다 —
+  이 한 줄이 13개 파일에 죽은 코드를 낳았다. `tournaments-client`의 중복 dead prop도 제거
+  (거긴 이미 자체 `<script>`로 출력 중이라 **prop이 있는데도 동작하던 유일한 페이지**였다).
+- **검증**: build 69+457+60 · ld+json 파싱 실패 0 · FAQ 답변 HTML 노출 **26/26** ·
+  `canonical:check` KO 104라우트 🔴 0건 · `check:hreflang` 481페이지 🔴 0건 ·
+  `/tournaments` 38노드 **무회귀**.
+- 🪶 `app/home-client.tsx`는 **여전히 죽은 파일**이다(어디서도 import 안 됨). dead prop만 걷어냈고
+  **삭제 여부는 사장님 판단**으로 남겼다(handoff 잔여 #5).
+
 ## 2026-08-13 (9) — **순위5 개념권 RISKY 4축 종결** (`bubble`·`tvc`·`icm`·`short-stack`)
 
 🔴 **분모가 이번엔 «양방향»으로 깨졌다** — 지시는 넷 다 de인데 실측은 **2건이 de 1곳, 2건이 8로케일 전수**였다.
