@@ -204,7 +204,7 @@ export const POST: Post = {
 | 9위 | 원페어 | A-A + 나머지 3장 |
 | 10위 | 하이카드 | A-K-Q-J-9 무늬 제각각 |
 
-족보가 헷갈린다면 [홀덤 족보 순서 완전 정복](/blog/holdem-hand-rankings)을 먼저 읽어보세요. 특히 7포커 경험자는 [홀덤과 7포커의 족보 차이](/blog/holdem-vs-7poker-hand-rankings)를 꼭 확인하세요. 비슷해 보이지만 결정적인 차이가 있습니다.
+족보가 헷갈린다면 [홀덤족보 순서](/blog/holdem-hand-rankings)을 먼저 읽어보세요. 특히 7포커 경험자는 [홀덤과 7포커의 족보 차이](/blog/holdem-vs-7poker-hand-rankings)를 꼭 확인하세요. 비슷해 보이지만 결정적인 차이가 있습니다.
 
 ### 핵심 베팅 용어
 
@@ -302,7 +302,7 @@ A. 처음이라면 저녁 이른 시간대(오후 7~9시)를 권합니다. 참�
 |------|------|
 | [홀덤펍 완전 가이드](/blog/holdem-pub-guide) | 첫방문·비용·합법·지역을 잇는 관문 |
 | [홀덤 게임 진행 순서](/blog/holdem-game-order) | 프리플랍→플랍→턴→리버 흐름 파악 |
-| [홀덤 족보 완전 정복](/blog/holdem-hand-rankings) | 10가지 족보 순위 암기 |
+| [홀덤족보 순위 10단계](/blog/holdem-hand-rankings) | 10가지 족보 순위 암기 |
 | [초보 실수 10가지](/blog/holdem-beginner-mistakes-10) | 첫 방문 전 꼭 읽어야 할 실수 예방법 |
 | [스타팅 핸드 레인지](/blog/holdem-starting-hand-range) | 어떤 패를 플레이할지 기준 잡기 |
 | [프리플랍 폴드 기준](/blog/when-to-fold-preflop-holdem) | 언제 버려야 하는지 명확한 기준 |

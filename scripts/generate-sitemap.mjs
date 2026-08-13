@@ -54,17 +54,16 @@ const STATIC_ROUTES = [
    */
   { path: "/solver", priority: "0.9", changefreq: "monthly" },
   /**
-   * ★2026-08-13 `/hands` 색인 개시 (사장님 결정) — 상세 근거는 `app/hands/page.tsx` 주석.
-   *   여기 원래 "★특히 `/hands`는 풀지 말 것 — 상대가 최강 필라라 카니발은 실제 손해다"라고
-   *   적혀 있었는데, 그 전제가 28일 GSC 실측으로 무너졌다. 「홀덤 족보 순위」를 누가 받았나:
-   *       이 도구(noindex·제목 없음)  노출 111 · 9.4위
-   *       필라 holdem-hand-rankings   노출 117 · 15.0위
-   *   구글이 «표» 쪽을 6계단 높게 봤고, 디인덱스 뒤 필라는 12.1위까지만 올라 그 자리를 못 메웠다.
-   *   ⚠ 4주 뒤(2026-09-10경) 재측정 — 필라 노출이 떨어지면 되돌린다
-   *     (기준선 2026-08-09 7일: 필라 「홀덤 족보 순위」 63노출 12.1위 / 이 도구 0).
+   * 🔴 `/hands` · `/rules/texas-holdem` 은 noindex(app/.../page.tsx robots index:false)
+   *   → 사이트맵에서 제외한다. noindex 페이지를 사이트맵에 올리면 서치콘솔에
+   *   "사이트맵에 있으나 noindex" 오류가 뜬다.
+   *
+   * ⚠ `/hands`는 2026-08-13에 **하루 동안 색인을 열었다가 같은 날 되돌렸다.**
+   *   근거·경위는 `app/hands/page.tsx` 상단 주석에 전부 남아 있다(양쪽 논거 보존).
+   *   요약: 도구가 「홀덤 족보 순위」에서 9.4위로 필라(15.0위)를 앞섰던 건 사실이나,
+   *   필라가 경화 후 17계단 오른 것(29.4→12.1)은 **실측된 성과**이고 도구 회복은 **가설**이다.
+   *   사장님 판단 — 실측된 성과를 가설에 걸지 않는다. **재론하려면 새 근거를 가져올 것.**
    */
-  { path: "/hands", priority: "0.85", changefreq: "monthly" },
-  // /rules/texas-holdem 은 noindex(app/.../page.tsx robots index:false) → 사이트맵에서 제외.
   { path: "/glossary", priority: "0.8", changefreq: "monthly" },
   { path: "/rules", priority: "0.9", changefreq: "monthly" },
   { path: "/rules/omaha", priority: "0.8", changefreq: "monthly" },

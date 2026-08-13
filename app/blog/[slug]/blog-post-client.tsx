@@ -499,11 +499,9 @@ export default function BlogPost({
                       { href: "/calculator",    Icon: Calculator, label: "계산기",        desc: "아웃츠·팟오즈·ICM" },
                       { href: "/win-rate-quiz", Icon: TrendingUp, label: "승률 시뮬레이터", desc: "핸드별 승률 확인" },
                       { href: "/hand-chart",    Icon: LayoutGrid, label: "핸드 차트",     desc: "포지션별 오픈 범위" },
-                      // ★2026-08-13 «/hands» 색인 개시와 함께 도구 목록에 넣는다(app/hands/page.tsx 주석).
-                      //   그전엔 noindex라 도구 네비에서 빠져 있었고, 그 결과 색인을 열었을 때
-                      //   **라이브 내부링크가 0**이었다. hand-chart는 같은 성격인데 10곳에서 링크를 받는다.
-                      //   역할 분리상 이 자리가 정확하다 — 글(설명)을 읽다가 표가 필요할 때 여는 문이다.
-                      { href: "/hands",         Icon: Book,       label: "족보 순위표",   desc: "10단계·7장 기준 확률" },
+                      // ⚠ 여기에 «/hands»를 넣지 마라 (2026-08-13에 넣었다가 같은 날 뺐다 — footer도 동일).
+                      //   그 페이지는 noindex다. 블로그 글마다 「족보는 저기」라고 가리키면
+                      //   색인 신호와 내부링크가 서로 반대를 말한다. 족보는 필라가 받는다.
                     ] as const).map(({ href, Icon, label, desc }) => (
                       <Link
                         key={href}

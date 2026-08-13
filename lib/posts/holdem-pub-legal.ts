@@ -147,7 +147,7 @@ A. 아닙니다. 칩이 현금 가치를 갖지 않으니 '딴다'는 개념 자
 | [홀덤펍 완전 가이드](/blog/holdem-pub-guide) | 첫방문·비용·합법·지역을 잇는 관문 |
 | [홀덤펍 처음 가는 법](/blog/holdem-pub-first-visit-guide) | 입장 절차·바이인·에티켓 총정리 |
 | [홀덤 게임 진행 순서](/blog/holdem-game-order) | 프리플랍→리버 흐름 완전 이해 |
-| [홀덤 족보 완전 정복](/blog/holdem-hand-rankings) | 10가지 족보 순위 암기 |
+| [홀덤족보 순위](/blog/holdem-hand-rankings) | 10가지 족보 순위 암기 |
 | [초보 실수 10가지](/blog/holdem-beginner-mistakes-10) | 첫 방문 전 꼭 읽어야 할 실수 예방법 |
 | [지역별 홀덤펍 찾기](/pub) | 강남·홍대·건대 등 내 근처 홀덤펍 검색 |
 | [홀덤펍 홍보·소개 신청](/blog/holdem-pub-promotion) | 홀덤펍 사장님을 위한 무료 소개 안내 |

@@ -240,7 +240,7 @@ A. 합법 홀덤펍에서는 현금을 딸 수 없습니다. 칩이나 상금을
 | [홀덤펍 합법 기준](/blog/holdem-pub-legal) | 환전이라는 행위로 갈리는 기준과 조문 |
 | [지역별 홀덤펍 찾기](/pub) | 강남·홍대·부산 등 내 근처 매장 |
 | [홀덤 게임 진행 순서](/blog/holdem-game-order) | 프리플랍→리버 흐름 이해 |
-| [홀덤 족보 완전 정복](/blog/holdem-hand-rankings) | 10가지 족보 순위 암기 |
+| [홀덤족보 강약 순서](/blog/holdem-hand-rankings) | 10가지 족보 순위 암기 |
 | [홀덤펍 홍보·소개 신청](/blog/holdem-pub-promotion) | (사장님용) 매장 무료 소개 안내 |
 `.trim(),
 };
