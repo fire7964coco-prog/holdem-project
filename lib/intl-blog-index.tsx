@@ -5,6 +5,7 @@ import { SITE } from "@/lib/site";
 import { CHROME, POST_LABELS, OG_LOCALE, NAV_CTA, NAV_HOME_FEED, dirForLocale, type SecondaryLocale } from "@/lib/intl";
 import { postsForLocale } from "@/lib/intl-posts";
 import BlogTopBar from "@/components/blog-top-bar";
+import { LocaleBlogIndexJsonLd } from "@/lib/intl-jsonld";
 
 export function intlBlogIndexMetadata(locale: SecondaryLocale): Metadata {
   const t = POST_LABELS[locale];
@@ -49,6 +50,10 @@ export function IntlBlogIndex({
 
   return (
     <div dir={dirForLocale(locale)}>
+      {/* 구조화 데이터 — 이 컴포넌트가 **25개 로케일 목록의 단일 출처**다.
+          ★2026-08-13 신설. 그 전엔 `/{locale}/blog` 25종 전부 자기 스키마가 0이었다
+          (루트 layout의 WebSite·Organization만 있었다). 여기 한 곳이 25종을 덮는다. */}
+      <LocaleBlogIndexJsonLd locale={locale} />
       {/* ★허브 셸 안에서는 상단바를 그리지 않는다 (2026-08-04).
           셸이 홈과 같은 마스트헤드를 이미 그리므로 여기서 또 그리면 상단바가 2겹이 된다.
           아직 셸을 안 입힌 로케일(ja·zh·es…)은 예전대로 BlogTopBar가 필요하다. */}
