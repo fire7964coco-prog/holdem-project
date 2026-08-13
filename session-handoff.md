@@ -12,7 +12,41 @@
 
 ## ▶▶▶▶▶▶▶▶▶ 새 세션 START HERE
 
-### ▶▶ 이 세션의 본체 = **§6 축 B (de 키워드 배치)** ← 최우선
+### ▶▶ 🔴 이 세션의 본체 = **허브 페이지 구조화 데이터 복구** (2026-08-13 발견 · KO SEO 트랙)
+
+`/hands` 작업 중에 **`components/seo.tsx`가 `schema` prop을 구조분해에서 받지도 않는다**는 걸 찾았다.
+`<SEO schema={...}>`로 JSON-LD를 넘기는 **13개 파일 전부가 죽은 코드**다. 산출물 실측:
+
+| 페이지 | 자기 스키마 | 비고 |
+|---|---|---|
+| `/ranking` | **없음** | 🔴 보고서가 「사이트 최대 볼륨 레버」라 한 페이지(「홀덤사이트」 ~4,600노출·r14) |
+| `/rules` · `/strategy` · `/glossary` · `/blog` | **없음** | 필라 허브들 |
+| `/tournaments` | ✅ Article·FAQPage·Event 6·BreadcrumbList | **이 패턴을 복제하면 된다** |
+
+- 처방: 각 페이지의 `jsonLd`를 **서버 `page.tsx`로 옮겨** `<script type="application/ld+json">`로 직접 렌더.
+  `app/hands/page.tsx`가 2026-08-13에 그 작업을 한 **최신 예시**다(ItemList + BreadcrumbList).
+- 페이지마다 맞는 타입이 다르다(순위형 = ItemList / Q&A 있으면 FAQPage / 허브 = WebPage+ItemList).
+  **타입 선택은 판단이 필요하니 한 페이지씩 열고, 산출물 `@type` 개수로 검증**할 것.
+- ⚠ 클라이언트의 죽은 `jsonLd`는 **지우고** 옮겨라. 두 곳에 남기면 다음 사람이 또 속는다.
+
+### ⏰ 2026-09-10경 — `/hands` 4주 재측정 (놓치면 판단 근거가 사라진다)
+
+08-13에 `/hands`를 **색인 개시**했다(사장님 결정 · 근거는 `app/hands/page.tsx` 주석 + WORKLOG 08-13).
+**기준선(2026-08-09 GSC 7일): 필라 「홀덤 족보 순위」 63노출 12.1위 / `/hands` 0.**
+→ `node scripts/gsc-query-pages.mjs "홀덤 족보 순위" --days 7`로 재측정.
+**필라 노출이 떨어지면 진짜 카니발이니 되돌린다.** hand-chart도 같은 시한(09-05경)이 걸려 있다.
+
+> 🔴 **사장님이 GSC에서 «/hands» 색인 요청**을 눌러야 한다(hand-chart는 그렇게 당일 색인됐다).
+
+### ▶ 족보 필라 P0-1 — **남은 것만** (2개는 이미 끝나 있었다)
+
+보고서 `docs/seo-report-2026-08-12.md` §6 P0-1의 4개 지시 중 **2개는 실측 결과 이미 완료**였다:
+✅ 첫 화면 순위표(`RankingTable` y=767px < 844px) · ✅ CTR 훅(이미 훅형 30자·desc 91자).
+**남은 것**: ① 내부링크 앵커 24건이 9종으로 산발(정확히 「홀덤 족보」인 앵커는 0개) —
+단 exact-match 과다는 역효과니 **비중만 조정**할 것 ② `updated` 갱신은 **실제 내용 수정과 함께**.
+🔴 **주의: 필라의 진짜 병목은 CTR이 아니라 순위다**(「홀덤 족보 순위」 r12.1 = 2페이지).
+
+### ▶▶ (보류) **§6 축 B (de 키워드 배치)**
 
 **미러 전파 트랙은 2026-08-12에 9편 전부 종료됐다**(showdown-rules 25 · betting-actions 25 · split-pot 8 ·
 reading-the-board 8 · equity 8 · flush-vs-straight 8 · implied-odds 8 · outs 8 · hand-rankings 13).

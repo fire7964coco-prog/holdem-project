@@ -53,9 +53,18 @@ const STATIC_ROUTES = [
    *   도메인 권위를 못 받는다. 반대 증거가 `/calculator`에 있다(노출 463 · 6.5위).
    */
   { path: "/solver", priority: "0.9", changefreq: "monthly" },
-  // /hands · /rules/texas-holdem 은 noindex(app/.../page.tsx robots index:false) → 사이트맵에서 제외.
-  //   ★특히 `/hands`는 풀지 말 것 — 상대가 holdem-hand-rankings(내부링크 198회, 사이트 최강 필라)라
-  //   거기서의 카니발은 실제 손해다. hand-chart와 사정이 다르다.
+  /**
+   * ★2026-08-13 `/hands` 색인 개시 (사장님 결정) — 상세 근거는 `app/hands/page.tsx` 주석.
+   *   여기 원래 "★특히 `/hands`는 풀지 말 것 — 상대가 최강 필라라 카니발은 실제 손해다"라고
+   *   적혀 있었는데, 그 전제가 28일 GSC 실측으로 무너졌다. 「홀덤 족보 순위」를 누가 받았나:
+   *       이 도구(noindex·제목 없음)  노출 111 · 9.4위
+   *       필라 holdem-hand-rankings   노출 117 · 15.0위
+   *   구글이 «표» 쪽을 6계단 높게 봤고, 디인덱스 뒤 필라는 12.1위까지만 올라 그 자리를 못 메웠다.
+   *   ⚠ 4주 뒤(2026-09-10경) 재측정 — 필라 노출이 떨어지면 되돌린다
+   *     (기준선 2026-08-09 7일: 필라 「홀덤 족보 순위」 63노출 12.1위 / 이 도구 0).
+   */
+  { path: "/hands", priority: "0.85", changefreq: "monthly" },
+  // /rules/texas-holdem 은 noindex(app/.../page.tsx robots index:false) → 사이트맵에서 제외.
   { path: "/glossary", priority: "0.8", changefreq: "monthly" },
   { path: "/rules", priority: "0.9", changefreq: "monthly" },
   { path: "/rules/omaha", priority: "0.8", changefreq: "monthly" },

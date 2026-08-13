@@ -3,97 +3,10 @@
 import { SEO } from "@/components/seo";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { HANDS } from "./hands-data";
 
-const HANDS = [
-  {
-    rank: 1,
-    name: "로열 플러시 (Royal Flush)",
-    description: "같은 무늬의 10, J, Q, K, A — 포커 최강의 패. 확률 약 0.000154%.",
-    example: ["A♠", "K♠", "Q♠", "J♠", "10♠"],
-    color: "border-primary shadow-[0_0_30px_rgba(212,175,55,0.4)] bg-primary/10",
-  },
-  {
-    rank: 2,
-    name: "스트레이트 플러시 (Straight Flush)",
-    description: "같은 무늬의 연속된 카드 5장. 로열 플러시 다음으로 강한 패.",
-    example: ["9♥", "8♥", "7♥", "6♥", "5♥"],
-    color: "border-primary/70 bg-card",
-  },
-  {
-    rank: 3,
-    name: "포카드 (Four of a Kind)",
-    description: "동일한 숫자 4장. 포카드 중에선 숫자가 높을수록 강합니다.",
-    example: ["8♣", "8♦", "8♥", "8♠", "K♥"],
-    color: "border-border bg-card",
-  },
-  {
-    rank: 4,
-    name: "풀하우스 (Full House)",
-    description: "트리플(3장)과 원페어(2장)의 결합. 트리플 숫자가 높을수록 강합니다.",
-    example: ["Q♠", "Q♥", "Q♦", "5♣", "5♠"],
-    color: "border-border bg-card",
-  },
-  {
-    rank: 5,
-    name: "플러시 (Flush)",
-    description: "숫자 무관, 같은 무늬 5장. 최고 카드 숫자가 높을수록 강합니다.",
-    example: ["A♦", "J♦", "8♦", "6♦", "2♦"],
-    color: "border-border bg-card",
-  },
-  {
-    rank: 6,
-    name: "스트레이트 (Straight)",
-    description: "무늬 무관, 연속된 숫자 5장. A는 최고(A-K-Q-J-10) 또는 최저(A-2-3-4-5)로 사용 가능.",
-    example: ["7♠", "6♥", "5♣", "4♦", "3♠"],
-    color: "border-border bg-card",
-  },
-  {
-    rank: 7,
-    name: "트리플 / 쓰리카드 (Three of a Kind)",
-    description: "동일한 숫자 3장. 세트(포켓페어+커뮤니티 1장)와 트립스(커뮤니티 페어+홀카드 1장)로 나뉩니다.",
-    example: ["J♣", "J♠", "J♥", "A♦", "4♠"],
-    color: "border-border bg-card",
-  },
-  {
-    rank: 8,
-    name: "투페어 (Two Pair)",
-    description: "서로 다른 숫자의 페어 2개. 높은 페어 → 낮은 페어 → 키커 순으로 비교합니다.",
-    example: ["10♠", "10♥", "8♣", "8♦", "A♠"],
-    color: "border-border bg-card",
-  },
-  {
-    rank: 9,
-    name: "원페어 (One Pair)",
-    description: "동일한 숫자 2장. 페어 숫자 → 키커(나머지 카드) 순으로 우열을 가립니다.",
-    example: ["K♠", "K♦", "9♥", "6♣", "2♠"],
-    color: "border-border bg-card",
-  },
-  {
-    rank: 10,
-    name: "하이카드 (High Card)",
-    description: "아무런 족보도 없을 때, 가장 높은 숫자의 카드로 비교합니다. 에이스 하이카드가 최강.",
-    example: ["A♣", "Q♠", "9♥", "5♦", "3♣"],
-    color: "border-border bg-card",
-  },
-];
 
 export default function Hands() {
-  const jsonLd = [
-    {
-      "@type": "Article",
-      "headline": "텍사스 홀덤 족보 순위 — 포커 핸드 랭킹 완벽 정리 2026",
-      "description": "로열 플러시부터 하이카드까지 텍사스 홀덤 포커 족보 순위를 예시 카드와 함께 정리했습니다.",
-      "author": { "@type": "Organization", "name": "홀덤마스터" },
-      "publisher": { "@type": "Organization", "name": "홀덤마스터", "url": "https://www.holdemmaster.com" },
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://www.holdemmaster.com/" },
-        { "@type": "ListItem", "position": 2, "name": "홀덤 족보 순위", "item": "https://www.holdemmaster.com/hands" },
-      ],
-    },
-  ];
 
   const getSuitColor = (card: string) => {
     if (card.includes("♥") || card.includes("♦")) return "text-red-500";
@@ -102,12 +15,18 @@ export default function Hands() {
 
   return (
     <>
+      {/*
+        🔴 title·description은 서버 page.tsx의 metadata가 정본이다 — 이 컴포넌트는 SPA 이동 시
+        표시를 맞추는 보조 장치일 뿐이라 크롤러가 받는 HTML에는 안 들어간다(components/seo.tsx 주석).
+        그래서 여기 값은 metadata와 **한 글자도 다르지 않게** 유지한다. 한쪽만 고치면
+        브라우저 탭과 검색 결과가 갈린다.
+        keywords는 뺐다 — 구글이 2009년부터 무시하는 신호이고, 실측 볼륨 0인 어구
+        (「포커 족보 카드」·「홀덤 핸드 랭킹 카드」)가 들어 있어 조준을 흐린다.
+      */}
       <SEO
-        title="홀덤 족보 카드 — 로열플러시~하이카드 예시·확률 한눈에 [2026]"
-        description="텍사스 홀덤 족보 10가지를 예시 카드·확률과 함께 한눈에 보는 레퍼런스 카드. 게임 중 빠르게 확인할 때 사용하세요."
-        keywords="포커 족보 카드, 텍사스 홀덤 족보 예시, 홀덤 핸드 랭킹 카드, 포커 핸드 확률, 로열 플러시 확률, 풀하우스 플러시 비교, 포커 패 순서 카드"
+        title="족보 헷갈릴 때 여는 표 — 포커 족보·홀덤족보 순위 10단계"
+        description="로열플러시부터 하이카드까지 10단계를 예시 카드와 함께 한 장에 담았습니다. 홀덤 7장 기준 실제 확률까지 붙여, 게임 중 족보가 헷갈릴 때 바로 확인하는 표입니다."
         path="/hands"
-        schema={jsonLd}
       />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24">
@@ -131,10 +50,15 @@ export default function Hands() {
           className="mb-10 bg-card border border-primary/20 rounded-xl p-5 overflow-x-auto"
         >
           <table className="w-full text-sm">
+            <caption className="caption-top text-left text-xs text-muted-foreground pb-3">
+              확률은 홀덤 실제 조건인 <strong className="text-foreground">7장 기준</strong>입니다(홀카드 2장 + 보드 5장에서 최강 5장).
+              카드 5장만 뽑는 교과서 확률과는 다릅니다 — 하이카드가 투페어보다 드문 이유가 여기 있습니다.
+            </caption>
             <thead>
               <tr className="border-b border-border">
                 <th className="text-left py-2 pr-4 text-muted-foreground font-medium">순위</th>
                 <th className="text-left py-2 pr-4 text-muted-foreground font-medium">족보</th>
+                <th className="text-right py-2 pr-4 text-muted-foreground font-medium whitespace-nowrap">확률(7장)</th>
                 <th className="text-left py-2 text-muted-foreground font-medium">설명</th>
               </tr>
             </thead>
@@ -143,6 +67,7 @@ export default function Hands() {
                 <tr key={h.rank} className="border-b border-border/50 hover:bg-background/50 transition-colors">
                   <td className="py-2 pr-4 font-bold text-primary">{h.rank}위</td>
                   <td className="py-2 pr-4 font-semibold text-foreground whitespace-nowrap">{h.name.split(" (")[0]}</td>
+                  <td className="py-2 pr-4 text-right font-semibold text-foreground tabular-nums whitespace-nowrap">{h.prob}</td>
                   <td className="py-2 text-muted-foreground">{h.description.split(". ")[0]}</td>
                 </tr>
               ))}
@@ -169,6 +94,10 @@ export default function Hands() {
                   {hand.name}
                 </h2>
                 <p className="text-muted-foreground text-sm leading-relaxed">{hand.description}</p>
+                <p className="mt-2 text-xs text-muted-foreground">
+                  홀덤 7장 기준 출현 확률{" "}
+                  <strong className="text-foreground tabular-nums">{hand.prob}</strong>
+                </p>
               </div>
               <div className="flex flex-wrap justify-center gap-2 md:gap-4 md:w-2/3 md:justify-end">
                 {hand.example.map((card, i) => (
