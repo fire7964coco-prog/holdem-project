@@ -1,6 +1,14 @@
 import { POSTS } from "@/lib/posts";
-
-const SITE = "https://holdemmaster.com";
+/**
+ * 🔴 호스트는 반드시 `@/lib/site`에서 가져온다 — 여기에 다시 적지 마라.
+ *   2026-08-15까지 이 파일은 `const SITE = "https://holdemmaster.com"`으로 **non-www를
+ *   따로 하드코딩**하고 있었다. canonical·sitemap·JSON-LD는 전부 www인데 RSS만 apex라,
+ *   피드가 뿌리는 70개 URL이 전부 307 리다이렉트를 타야 했다.
+ *   ★네이버 서치어드바이저는 이걸 반려한다 — 가이드 원문:
+ *     「RSS 피드내 모든 URL의 도메인은 **소유확인 된 사이트와 동일한 도메인**이어야 합니다.」
+ *   두 곳에 적으면 갈라진다는 이 레포의 규율이 그대로 재현된 자리다.
+ */
+import { SITE } from "@/lib/site";
 
 // 빌드 시 정적 생성 (사이트맵과 동일 — 배포마다 갱신)
 export const dynamic = "force-static";
