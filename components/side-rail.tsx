@@ -55,6 +55,13 @@ export const HUB_PAGES = [
   { href: "/calculator",      icon: "🧮", label: "팟오즈 계산기" },
   { href: "/blog/holdem-hand-rankings", icon: "🃏", label: "족보 정리" },
   { href: "/hand-chart",      icon: "📊", label: "핸드 차트" },
+  /**
+   * ★2026-08-14 추가 (사장님 지시) — `/solver`가 이 레일에 **없었다.**
+   *   상단 마스트헤드의 「GTO 솔버」는 `hub-shell`의 `title` prop, 즉 «지금 여기» 표시일 뿐이라
+   *   솔버 페이지에 이미 도착한 사람에게만 보였다. 홈·다른 허브에는 진입점이 0이었다.
+   *   이 레일은 홈과 모든 허브에 함께 깔리므로 여기 한 줄이 곧 전역 진입점이다.
+   */
+  { href: "/solver",          icon: "🧠", label: "GTO 솔버" },
   { href: "/quiz",            icon: "🎯", label: "실력 테스트" },
   { href: "/win-rate-quiz",   icon: "📈", label: "승률 시뮬레이터" },
   { href: "/glossary",        icon: "📖", label: "용어 사전" },

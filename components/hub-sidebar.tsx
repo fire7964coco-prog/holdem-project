@@ -9,6 +9,7 @@ import { BG, CARD, BORDER, INK, MUTED, RED, FLAG, FONT_SANS, FONT_SERIF } from "
 import type { TrendingItem } from "@/lib/hub-trending";
 import { hubLabels } from "@/lib/hub-i18n";
 import type { SecondaryLocale } from "@/lib/intl";
+import SolverPromo from "@/components/solver-promo";
 
 /**
  * 허브 페이지 우측 사이드바 — 홈(community-client.tsx)의 오른쪽 <aside>와 같은 구성·같은 규격.
@@ -38,6 +39,13 @@ export default function HubSidebar({
 
   return (
     <div className="sticky top-20 flex flex-col gap-5">
+      {/*
+        GTO 솔버 버튼 — ★2026-08-14 사장님 지시. 사이드바 맨 위(트렌딩보다 먼저)에 둔다.
+        🔴 한국어에서만 — `/solver`는 한국어 전용 페이지다. 마크업은 `components/solver-promo.tsx`
+           한 곳에 있고 홈의 <aside>도 같은 것을 쓴다(양쪽에 복사하면 갈라진다).
+      */}
+      {!locale && <SolverPromo />}
+
       {/* 트렌딩 */}
       {trending.length > 0 && (
         <div>
