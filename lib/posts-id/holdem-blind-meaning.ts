@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "Blinds adalah taruhan wajib yang dipasang sebelum kartu dibagikan. Small Blind duduk di kiri tombol dealer dan Big Blind di kirinya lagi; Big Blind — biasanya dua kali lipat Small Blind — adalah satuan taruhan di meja.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-07-11",
+  updated: "2026-08-14",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "9 menit",
   emoji: "💰",
@@ -96,7 +97,7 @@ Stakes ditulis **SB/BB**. Game "$1/$2" berarti Small Blind $1 dan Big Blind $2; 
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Stakes | Small Blind | Big Blind | Buy-in umum |
+| Stakes | Small Blind | Big Blind | Buy-in umum / level |
 |:---|:---:|:---:|:---:|
 | $0,5/$1 | $0,50 | $1 | $60–$100 |
 | $1/$2 | $1 | $2 | $100–$300 |

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Blinds sind Zwangseinsätze, die vor dem Austeilen der Karten gesetzt werden. Der Small Blind sitzt direkt links vom Dealer-Button, der Big Blind links daneben; der Big Blind – meist das Doppelte des Small Blinds – ist die Setzeinheit des Tischs.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-08-13",
+  updated: "2026-08-14",
   masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "9 Min.",
@@ -99,7 +99,7 @@ Stakes werden als **SB/BB** geschrieben. Ein „€1/€2“-Game bedeutet: €1
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Stakes | Small Blind | Big Blind | Typisches Buy-in |
+| Stakes | Small Blind | Big Blind | Typisches Buy-in / Level |
 |:---|:---:|:---:|:---:|
 | €0,50/€1 | €0,50 | €1 | €60–€100 |
 | €1/€2 | €1 | €2 | €100–€300 |

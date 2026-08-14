@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "ブラインドはカードが配られる前に出す強制ベット。ディーラーボタンの左隣がスモールブラインド、その左がビッグブラインドで、ビッグブラインドは通常スモールブラインドの2倍。テーブルのベット単位になります。",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-07-12",
+  updated: "2026-08-14",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "9分",
   emoji: "💰",
@@ -96,7 +97,7 @@ export const POST: Post = {
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| ステークス | スモールブラインド | ビッグブラインド | 一般的なバイイン |
+| ステークス | スモールブラインド | ビッグブラインド | 一般的なバイイン／レベル |
 |:---|:---:|:---:|:---:|
 | $0.5/$1 | $0.50 | $1 | $60–$100 |
 | $1/$2 | $1 | $2 | $100–$300 |

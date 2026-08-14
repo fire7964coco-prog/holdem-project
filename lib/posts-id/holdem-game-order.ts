@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "Satu hand Texas Hold'em berjalan begini: pasang blinds → bagikan dua kartu tertutup → preflop → flop (3 kartu) → turn (1 kartu) → river (1 kartu) → showdown, dengan total empat ronde taruhan.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-08-10",
+  updated: "2026-08-14",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "16 menit",
   emoji: "🎬",
@@ -365,6 +366,10 @@ A. All-in berarti mempertaruhkan semua chip yang Anda punya. Pakai dengan kartu 
 **Q. Ada berapa ronde taruhan dalam satu hand?**
 
 A. Empat: preflop, flop, turn, dan river. Blinds adalah taruhan wajib, dan di showdown tidak ada taruhan lagi.
+
+**Q. Kenapa dealer membuang satu kartu, dan berapa yang dibuang dalam satu hand?**
+
+A. Tepat sebelum membagikan flop, turn, dan river, dealer menyingkirkan kartu paling atas dari dek dalam keadaan tertutup — inilah **burn card**. Karena dilakukan sekali sebelum setiap street kartu bersama, totalnya ==tiga kartu per hand==. Tujuannya melindungi permainan: kalau kartu teratas ternyata bertanda atau sempat terlihat tanpa sengaja, ada pemain yang jadi tahu kartu apa yang akan keluar berikutnya, jadi kartu itu dikeluarkan dulu dari permainan.
 
 ---
 

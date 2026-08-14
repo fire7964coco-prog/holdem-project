@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "盲注是发牌前必须下的强制注。小盲注坐在庄家按钮左边第一个位置，大盲注在小盲注左边；大盲注通常是小盲注的两倍，也是整张牌桌的下注计量单位。",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-07-24",
+  updated: "2026-08-14",
   masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "9 分钟",
@@ -97,7 +97,7 @@ export const POST: Post = {
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| 级别 | 小盲注 | 大盲注 | 常见买入 |
+| 级别 | 小盲注 | 大盲注 | 常见买入／级别 |
 |:---|:---:|:---:|:---:|
 | $0.5/$1 | $0.50 | $1 | $60–$100 |
 | $1/$2 | $1 | $2 | $100–$300 |

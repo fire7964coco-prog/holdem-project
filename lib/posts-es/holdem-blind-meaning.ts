@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Las ciegas son apuestas obligatorias que se ponen antes de repartir las cartas. La ciega pequeña se sienta a la izquierda del botón y la ciega grande a su izquierda; la ciega grande — normalmente el doble de la pequeña — es la unidad de apuesta de la mesa.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-07-24",
+  updated: "2026-08-14",
   masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -97,7 +97,7 @@ Los niveles se escriben **SB/BB**. Una partida "$1/$2" significa ciega pequeña 
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Nivel | Ciega pequeña | Ciega grande | Buy-in habitual |
+| Nivel | Ciega pequeña | Ciega grande | Buy-in habitual / nivel |
 |:---|:---:|:---:|:---:|
 | $0.5/$1 | $0.50 | $1 | $60–$100 |
 | $1/$2 | $1 | $2 | $100–$300 |
