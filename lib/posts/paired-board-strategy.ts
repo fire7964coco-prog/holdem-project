@@ -18,13 +18,13 @@ import type { Post } from "../posts";
  */
 export const POST: Post = {
   slug: "paired-board-strategy",
-  title: "페어 보드 전략 — 663에서 포켓페어의 값",
-  seoTitle: "페어 보드 663 — GTO 솔버가 본 포켓페어의 값",
+  title: "포켓페어가 투 페어가 되는 플랍 — 663 페어 보드",
+  seoTitle: "포켓페어가 투 페어가 되는 플랍 — 홀덤 GTO 솔버",
   desc: "6♣6♦3♥에서 BB의 체크는 97.0%입니다. 트리플을 더 많이 갖고도 체크하는 이유와, TT가 에퀴티 76%짜리 밸류 핸드가 되는 구조를 솔버 수치로 봅니다.",
   tldr: "낮은 페어 보드 6♣6♦3♥에서 BB의 첫 액션은 체크 97.0%다. 흥미로운 것은 BB가 트리플(6x)을 26콤보로 BTN의 20콤보보다 더 많이 갖고 있는데도 체크한다는 점이다. 보드 페어 위에 무언가를 얹은 핸드가 18.4%뿐이고 나머지 80%는 하이카드 싸움인데, 그 하이카드의 질은 오픈 레이저인 BTN이 앞서기 때문이다. 대신 6보다 높은 포켓페어의 값이 크게 오른다 — TT는 에퀴티 76.0%, EQR 159.4%다.",
   category: "전략",
   date: "2026-08-08",
-  updated: "2026-08-13",
+  updated: "2026-08-15",
   readTime: "10분",
   emoji: "👯",
   image: "/images/gto-srp-paired-oop.webp",

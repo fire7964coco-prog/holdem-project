@@ -15,13 +15,13 @@ import type { Post } from "../posts";
  */
 export const POST: Post = {
   slug: "broadway-board-strategy",
-  title: "브로드웨이 보드 전략 — QJT에서도 BB는 체크",
-  seoTitle: "브로드웨이 보드 QJT — GTO 솔버의 체크 99.9%",
+  title: "벳이 0.1%인 플랍도 있다 — QJT 브로드웨이",
+  seoTitle: "벳이 0.1%인 플랍도 있다 — 홀덤 GTO 솔버 QJT",
   desc: "레인지의 68%가 드로우인데도 BB의 체크는 99.9%입니다. QJT 브로드웨이 보드에서 리드 벳이 사라지는 이유를, 솔버로 계산한 너트 우위와 EQR로 봅니다.",
   tldr: "BTN 오픈에 BB가 콜한 Q♠J♦T♠ 플랍에서 BB의 첫 액션은 체크 99.9%다. 레인지의 68.4%가 드로우를 들고 있는 격렬한 보드인데도 리드 벳이 없다. 이유는 «너트 우위»다 — 스트레이트 10.5% 대 7.1%, 셋 2.0% 대 0.7%, 오버페어 2.6% 대 0%로 레인지의 꼭대기가 전부 BTN 쪽이다. 에퀴티 실현율 격차도 77.9% 대 119.4%로 시리즈 중 가장 크다.",
   category: "전략",
   date: "2026-08-08",
-  updated: "2026-08-13",
+  updated: "2026-08-15",
   readTime: "10분",
   emoji: "🎴",
   image: "/images/gto-srp-broadway-oop.webp",

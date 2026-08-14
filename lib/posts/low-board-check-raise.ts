@@ -26,13 +26,13 @@ import type { Post } from "../posts";
  */
 export const POST: Post = {
   slug: "low-board-check-raise",
-  title: "로우 보드 체크레이즈 — 652에서 BB의 계획",
-  seoTitle: "로우 보드는 왜 체크레이즈인가 — 홀덤 GTO 솔버",
+  title: "체크레이즈는 어디서 만드나 — 652 로우 보드",
+  seoTitle: "체크레이즈는 어디서 만드나 — 홀덤 GTO 솔버 로우 보드",
   desc: "652 로우 보드에서 BB의 에퀴티는 48.3%까지 올라옵니다. 그런데도 리드 벳은 3.2%뿐입니다. 987과 무엇이 다른지 솔버 계산값으로 확인합니다.",
   tldr: "BTN 오픈에 BB가 콜한 6♠5♥2♦ 플랍에서 BB의 첫 액션은 체크 96.8% · 리드 벳(프리플랍 콜러가 레이저보다 먼저 치는 벳) 3.2%다. 에퀴티는 48.3%로 BB가 콜러였던 일곱 편 중 두 번째로 높은데도 리드가 거의 없다. 이유는 하나다 — 987에서 BB에게 리드를 허락했던 스트레이트가 이 보드에는 0콤보다. 에퀴티의 크기가 아니라 «꼭대기가 있느냐»가 먼저 칠 자격을 정한다.",
   category: "전략",
   date: "2026-08-08",
-  updated: "2026-08-13",
+  updated: "2026-08-15",
   readTime: "10분",
   emoji: "🌊",
   image: "/images/gto-srp-low-rainbow-oop.webp",

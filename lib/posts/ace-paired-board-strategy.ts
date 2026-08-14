@@ -32,13 +32,13 @@ import type { Post } from "../posts";
  */
 export const POST: Post = {
   slug: "ace-paired-board-strategy",
-  title: "A 페어 보드 — 같은 페어 보드인데 벳이 80%인 이유",
-  seoTitle: "A 페어 보드 80% 벳 — 홀덤 트립스와 GTO 솔버",
+  title: "A가 두 장 깔리면 80% 벳 — AA6 페어 보드",
+  seoTitle: "A가 두 장 깔리면 80% 벳 — 홀덤 트립스 GTO 솔버",
   desc: "SB가 오픈하고 BB가 콜한 AA6 플랍에서 SB는 80.1%를 칩니다. 앞선 페어 보드에서 벳이 3.0%였던 것과 정반대인 이유를 콤보 단위로 봅니다.",
   tldr: "SB가 3bb 오픈하고 BB가 콜한 A♠A♥6♦ 플랍에서 SB는 80.1%를 칩니다(팟 33% 벳이 79.6% · 팟 75% 벳이 0.5% · 체크 19.8%). 같은 «페어 보드»인 6♣6♦3♥에서 벳이 3.0%였던 것과 정반대인데, 갈린 것은 보드에 페어가 깔렸다는 사실이 아니라 그 페어가 «누구의 카드인가»입니다. A로 트립스를 만드는 조합은 SB 88콤보 대 BB 66콤보이고, 그중 AK·AQ 16콤보는 BB의 콜 레인지에 아예 없습니다.",
   category: "전략",
   date: "2026-08-08",
-  updated: "2026-08-13",
+  updated: "2026-08-15",
   readTime: "10분",
   emoji: "🅰️",
   image: "/images/gto-sb-paired-ace-oop.webp",

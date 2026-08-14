@@ -22,13 +22,13 @@ import type { Post } from "../posts";
  */
 export const POST: Post = {
   slug: "a-high-board-cbet",
-  title: "A하이 보드 C벳 — BB가 98% 체크하는 이유",
-  seoTitle: "A하이 보드 C벳 — GTO 솔버가 계산한 체크 98.2%",
+  title: "탑 페어를 맞아도 체크한다 — A72 보드 C벳",
+  seoTitle: "탑 페어를 맞아도 체크한다 — 홀덤 GTO 솔버 C벳",
   desc: "탑 페어를 맞아도 체크가 정답입니다. A72 레인보우에서 BB의 체크 빈도는 98.2% — 솔버로 직접 계산한 수치와 그 이유를 봅니다.",
   tldr: "BTN 오픈에 BB가 콜한 A72 레인보우 플랍에서, BB의 첫 액션은 체크 98.2%다. 탑 페어를 맞은 핸드까지 포함해 레인지 전체가 체크하는 「레인지 체크」가 나오는 자리다. 이유는 에퀴티 차이(45.1% 대 54.9%)보다 에퀴티 실현율에 있다 — BTN은 113.1%, BB는 84.0%다.",
   category: "전략",
   date: "2026-08-08",
-  updated: "2026-08-13",
+  updated: "2026-08-15",
   readTime: "9분",
   emoji: "🅰️",
   image: "/images/gto-srp-dry-ace-oop.webp",

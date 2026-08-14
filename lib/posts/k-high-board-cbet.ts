@@ -10,13 +10,13 @@ import type { Post } from "../posts";
  */
 export const POST: Post = {
   slug: "k-high-board-cbet",
-  title: "K하이 보드 C벳 — BB 체크 99.8%의 이유",
-  seoTitle: "K하이 보드 C벳 — GTO 솔버로 본 체크 99.8%",
+  title: "K 보드에선 왜 체크가 더 늘까 — K83 C벳",
+  seoTitle: "K 보드에선 왜 체크가 더 늘까 — 홀덤 GTO 솔버 C벳",
   desc: "K83 레인보우에서 BB의 체크는 99.8%입니다. A하이 보드보다 더 완전한 레인지 체크가 나오는 이유를 솔버로 직접 계산한 레인지 구성과 EQR로 봅니다.",
   tldr: "BTN 오픈에 BB가 콜한 K♠8♦3♣ 플랍에서 BB의 첫 액션은 체크 99.8%다. A하이 보드(98.2%)보다 오히려 더 완전한 레인지 체크가 나온다. 이유는 BB의 콜 레인지에 이 보드의 오버페어(AA)가 아예 없다는 것, 그리고 에퀴티 실현율이 80.7% 대 116.7%로 벌어진다는 것 두 가지다.",
   category: "전략",
   date: "2026-08-08",
-  updated: "2026-08-13",
+  updated: "2026-08-15",
   readTime: "9분",
   emoji: "👑",
   image: "/images/gto-srp-dry-king-oop.webp",
