@@ -71,11 +71,33 @@ GA4 랜딩 기준(28일): `/solver` 유입 **19세션 전부 네이버** — 모
 미색인 5편도 사이트맵 포함 ✅ · 라이브 200 + `index, follow` ✅.
 **GTO 13편 네이버 색인 = 8/13.** 미색인 5편(①②③⑤⑥)은 **결함이 아니라 크롤 대기**다(발행 08-08).
 
-> 🔴 **사장님만 할 수 있는 것 (서치어드바이저 로그인)**
-> ① **사이트맵 제출 상태 확인** — 인증은 돼 있지만 제출 여부는 밖에서 확인 불가
-> ② **미색인 5편 「웹 페이지 수집 요청」** — `a-high-board-cbet` · `k-high-board-cbet` ·
->    `broadway-board-strategy` · `monotone-board-strategy` · `paired-board-strategy`
-> 🪶 솔버 세션에 넘길 것: **솔버에 `G-CHSBJJDC14` + 교차 도메인 측정** (지금은 체류가 0으로 잡힌다)
+> 🔴🔴 **2026-08-15 발견 — 네이버에 등록된 호스트가 우리 정본과 다르다**
+> 서치어드바이저 사이트 목록에 등록된 것은 **`https://holdemmaster.com`(www 없음)**인데
+> 우리 정본은 canonical·사이트맵 전부 **`https://www.holdemmaster.com`(www)**이다.
+> 웹마스터도구의 「요청」은 **등록된 호스트 하위 URL만** 받으므로, 지금 상태로 www URL을
+> 넣으면 거부될 수 있다. **미색인 5편의 유력한 원인이다.**
+> → **`https://www.holdemmaster.com`을 사이트로 추가 등록**하고 거기서 수집 요청·사이트맵 제출.
+>   소유 확인은 「HTML 태그」로 즉시 통과한다(www 페이지에 인증 메타가 이미 있다:
+>   `naver-site-verification` = `b978aa0f38cbfd49ce7e06253e0bcb6f9e2efd18`).
+>
+> 🔴 **사장님만 할 수 있는 것**
+> ① **네이버에 www 호스트 추가 등록** (위 건. 이게 먼저다)
+> ② **미색인 6개 「웹 페이지 수집 요청」** — GTO 5편 + **`/hand-chart`**
+>    (`a-high-board-cbet` · `k-high-board-cbet` · `broadway-board-strategy` ·
+>     `monotone-board-strategy` · `paired-board-strategy` · `/hand-chart`)
+>    🪶 `/hand-chart`도 네이버 미색인이다 — 「홀덤 차트」 480을 노리는 페이지인데 빠져 있었다.
+>    ⚠ 공식 가이드 원문: 「최소 1일에서 몇 주」 소요 · **같은 URL 반복 요청 불필요** · 노출 보장 아님.
+> ③ **사이트맵 제출** — `https://www.holdemmaster.com/sitemap.xml`
+>    (가이드 원문: 「노출량이 적다면 사이트맵 피드 제출을 권장」. RSS는 불필요 — 가이드도 사이트맵 권장)
+> ④ 🟠 **Vercel 도메인 리다이렉트 307 → 308(Permanent)**
+>    실측: `holdemmaster.com` → `www` 가 **307 Temporary**다(Server: Vercel).
+>    `vercel.json`에는 `permanent: true`(=308)로 적혀 있는데 **도메인 설정이 먼저 이긴다** —
+>    [[vercel-buildcommand-skips-npm-hooks]]와 같은 계열의 함정이다.
+>    → Vercel → 프로젝트 → Settings → Domains → `holdemmaster.com` → Redirect를 **Permanent**로.
+>    급하진 않다(canonical이 www를 가리켜 실무 영향은 작다). 다만 정본 이전 신호가 «임시»로 남는다.
+>
+> 🪶 **GA4 교차 도메인은 하지 않기로 했다**(2026-08-15 사장님 판단) — SEO 영향이 없기 때문이다.
+>   대가: 「랜딩이 몇 %를 솔버로 보내는가」는 영영 측정 불가로 남는다. 필요해지면 그때 붙인다.
 
 #### ✅✅ GEO 경화까지 완료 (2026-08-14) — 경위는 `WORKLOG.md` 「2026-08-14 (4)」
 
