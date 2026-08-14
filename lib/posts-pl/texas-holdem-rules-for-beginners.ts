@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "W Texas Hold'em każdy gracz dostaje 2 karty zakryte, na stole leży 5 kart wspólnych, a po czterech rundach licytacji wygrywa najlepszy 5-kartowy układ.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-08-10",
+  updated: "2026-08-14",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -418,7 +418,7 @@ A. Dwaj gracze po lewej od buttona rozdającego muszą wyłożyć przymusowe zak
 
 **Q. Jaka jest szybka wersja zasad Texas Hold'em?**
 
-A. Wyłóż blindy → rozdaj 2 karty własne → licytacja preflop → odkryj 3 karty wspólne (flop) + licytacja → odkryj 1 kartę (turn) + licytacja → odkryj 1 kartę (river) + licytacja → wygrywa najlepszy układ. Razem: cztery rundy licytacji, pięć kart wspólnych, jeden zwycięzca.
+A. Wyłóż blindy → rozdaj 2 karty własne → licytacja preflop → odkryj 3 karty wspólne (flop) + licytacja → odkryj 1 kartę (turn) + licytacja → odkryj 1 kartę (river) + licytacja → wygrywa najlepszy układ. Razem: cztery rundy licytacji, pięć kart wspólnych, jeden zwycięzca — albo podzielona pula, jeśli najlepsze pięć kart jest dokładnie takie samo.
 
 **Q. Ilu graczy potrzeba, żeby zagrać w Texas Hold'em?**
 
@@ -430,7 +430,7 @@ A. No-Limit znaczy, że w każdej rundzie licytacji możesz postawić dowolną k
 
 **Q. Ile trwa jedno rozdanie Texas Hold'em?**
 
-A. Jedno rozdanie zwykle trwa od 10 do 60 sekund, choć duża pula z wieloma graczami i trudnymi decyzjami może się ciągnąć kilka minut. Na luźnej domowej sesji trwającej kilka godzin rozegracie dziesiątki rozdań, więc nikt nie musi poświęcać całego wieczoru na jedno.
+A. Przy stole na żywo jedno rozdanie zwykle trwa od 30 sekund do 2 minut, choć duża pula z wieloma graczami i trudnymi decyzjami może się ciągnąć kilka minut. Na luźnej domowej sesji trwającej kilka godzin rozegracie dziesiątki rozdań, więc nikt nie musi poświęcać całego wieczoru na jedno.
 
 ---
 

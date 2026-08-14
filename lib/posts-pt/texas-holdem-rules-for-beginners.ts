@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "No Texas Hold'em cada jogador recebe 2 cartas fechadas, usa 5 cartas comunitárias, e a melhor mão de 5 cartas ganha depois de quatro rodadas de apostas.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-08-10",
+  updated: "2026-08-14",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -419,7 +419,7 @@ A. Os dois jogadores à esquerda do botão do dealer precisam pagar apostas obri
 
 **Q. Qual é a versão rápida das regras do Texas Hold'em?**
 
-A. Blinds → 2 cartas fechadas → apostas pré-flop → 3 cartas comunitárias (flop) + apostas → 1 carta (turn) + apostas → 1 carta (river) + apostas → a melhor mão ganha. Total: quatro rodadas de apostas, cinco cartas comunitárias, um vencedor.
+A. Blinds → 2 cartas fechadas → apostas pré-flop → 3 cartas comunitárias (flop) + apostas → 1 carta (turn) + apostas → 1 carta (river) + apostas → a melhor mão ganha. Total: quatro rodadas de apostas, cinco cartas comunitárias, um vencedor — ou um pote dividido, se as melhores cinco cartas forem exatamente iguais.
 
 **Q. Quantos jogadores são necessários para jogar Texas Hold'em?**
 
@@ -431,7 +431,7 @@ A. No-Limit significa que você pode apostar qualquer valor, até todas as suas 
 
 **Q. Quanto tempo dura uma mão de Texas Hold'em?**
 
-A. Uma única mão costuma levar de 10 a 60 segundos, embora um pote grande com vários jogadores e decisões difíceis possa levar vários minutos. Uma sessão casual em casa de algumas horas passa por dezenas de mãos, então ninguém precisa dedicar a noite inteira a uma só rodada.
+A. Ao vivo, uma única mão costuma levar de 30 segundos a 2 minutos, embora um pote grande com vários jogadores e decisões difíceis possa levar vários minutos. Uma sessão casual em casa de algumas horas passa por dezenas de mãos, então ninguém precisa dedicar a noite inteira a uma só rodada.
 
 ---
 

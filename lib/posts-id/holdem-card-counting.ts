@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Tidak seperti di blackjack — dek diacak ulang setiap tangan dan terlalu sedikit kartu terlihat, jadi melacak kartu tinggi dan rendah tak memberi keunggulan. Tapi poker punya penghitungan legalnya sendiri: menghitung outs, memakai blocker, dan melacak dead card untuk membaca apa yang tak mungkin dipegang lawan.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-08-11",
+  updated: "2026-08-14",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "🧮",
@@ -18,7 +18,7 @@ export const POST: Post = {
   content: `
 Setiap pemain poker yang datang dari blackjack menanyakan pertanyaan yang sama di sesi pertamanya: "bisakah saya menghitung kartu di sini?" Saya juga begitu — saya habiskan sebulan mencoba menjaga running count di meja Hold'em sebelum seorang dealer tertawa dan bilang saya membuang tenaga otak untuk matematika yang salah. Dia benar. Card counting blackjack tak berguna di poker, tapi itu bukan berarti menghitung juga sia-sia. Itu hanya berarti Anda menghitung ==hal yang berbeda.==
 
-==Ya, Anda "menghitung kartu" di poker — hanya saja bukan deknya. Anda menghitung outs, blocker, dan dead card, dan semuanya sepenuhnya legal.== Panduan ini menjelaskan persis kenapa metode blackjack mati di meja poker, apa sebenarnya versi poker itu, apakah ada bagian yang melanggar aturan, dan satu game poker di mana penghitungan gaya lama benar-benar bekerja.
+==Ya, Anda "menghitung kartu" di poker — hanya saja bukan deknya. Anda menghitung outs, blocker, dan dead card, dan semuanya sepenuhnya legal.== Panduan ini menjelaskan persis kenapa metode blackjack mati di meja poker, apa sebenarnya versi poker itu, apakah ada bagian yang melanggar aturan, dan keluarga poker di mana penghitungan gaya lama benar-benar bekerja.
 
 Sisi hitung-menghitungnya — mengubah kartu yang bisa Anda lihat menjadi keputusan nyata — dimulai dengan [menghitung outs Anda](/id/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp"), yang merupakan keterampilan "menghitung" sejati di poker.
 
@@ -109,11 +109,11 @@ Garis yang tak boleh dilanggar adalah kecurangan fisik atau informasi — kartu 
 
 ---
 
-## Satu Game Poker di Mana Penghitungan Tradisional Bekerja: Seven Card Stud
+## Keluarga Poker di Mana Penghitungan Tradisional Bekerja: Seven Card Stud
 
 **Di Seven Card Stud, sebagian besar kartu setiap pemain dibagikan menghadap ke atas — jadi Anda benar-benar bisa menghitung dek dengan cara kuno.** Jika Anda butuh kartu tertentu untuk melengkapi tangan, Anda bisa memandang sekeliling meja dan secara harfiah menghitung berapa banyak outs Anda yang sudah terlihat di up-card lawan. Setiap yang Anda temukan adalah dead out.
 
-Hold'em hanya menampilkan lima community card bersama, jadi ini terbatas pada board. Tapi Stud memberi imbalan tepat pada jenis pelacakan kartu yang dikuasai penghitung blackjack — inilah yang paling dekat poker mendekati versi film.
+Hold'em hanya menampilkan lima community card bersama, jadi ini terbatas pada board. Tapi Stud — dan kerabatnya, Razz dan Stud Hi-Lo, yang membagikan kartu terbuka dengan cara yang sama — memberi imbalan tepat pada jenis pelacakan kartu yang dikuasai penghitung blackjack. Inilah yang paling dekat poker mendekati versi film.
 
 ---
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Di Texas Hold'em, setiap pemain menerima 2 hole cards, ada 5 kartu bersama di tengah meja, dan tangan poker 5 kartu terbaik menang setelah empat ronde taruhan.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-08-10",
+  updated: "2026-08-14",
   keepImagesInBody: true,
   readTime: "14 menit",
   emoji: "♠️",
@@ -418,7 +418,7 @@ A. Dua pemain di kiri tombol dealer wajib memasang taruhan sebelum kartu dibagik
 
 **Q. Apa versi cepat aturan Texas Hold'em?**
 
-A. Pasang blind → bagikan 2 hole cards → taruhan preflop → buka 3 kartu bersama (flop) + taruhan → buka 1 kartu (turn) + taruhan → buka 1 kartu (river) + taruhan → tangan terbaik menang. Total: empat ronde taruhan, lima kartu bersama, satu pemenang.
+A. Pasang blind → bagikan 2 hole cards → taruhan preflop → buka 3 kartu bersama (flop) + taruhan → buka 1 kartu (turn) + taruhan → buka 1 kartu (river) + taruhan → tangan terbaik menang. Total: empat ronde taruhan, lima kartu bersama, satu pemenang — atau pot dibagi, kalau lima kartu terbaiknya persis sama.
 
 **Q. Berapa pemain yang dibutuhkan untuk main Texas Hold'em?**
 
@@ -430,7 +430,7 @@ A. No-Limit berarti Anda bisa bertaruh berapa pun sampai seluruh chip Anda di ro
 
 **Q. Berapa lama satu tangan Texas Hold'em berlangsung?**
 
-A. Satu tangan biasanya memakan waktu sekitar 10 sampai 60 detik, meskipun pot besar dengan banyak pemain dan keputusan sulit bisa berjalan beberapa menit. Sesi santai di rumah selama beberapa jam bisa memainkan puluhan tangan, jadi tidak ada yang harus menghabiskan semalaman untuk satu pembagian kartu.
+A. Di meja live, satu tangan biasanya memakan waktu sekitar 30 detik sampai 2 menit, meskipun pot besar dengan banyak pemain dan keputusan sulit bisa berjalan beberapa menit. Sesi santai di rumah selama beberapa jam bisa memainkan puluhan tangan, jadi tidak ada yang harus menghabiskan semalaman untuk satu pembagian kartu.
 
 ---
 

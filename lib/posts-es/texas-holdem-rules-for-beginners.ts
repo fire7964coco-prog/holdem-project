@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "En el Texas Hold'em cada jugador recibe 2 cartas propias y comparte 5 cartas comunitarias en la mesa. Se apuesta en cuatro rondas — preflop, flop, turn y river — y gana quien forma la mejor mano de póker de 5 cartas, o el último que quede si todos los demás se retiran. Puedes usar tus dos cartas, una sola o ninguna: lo que forme la mano más fuerte.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-08-10",
+  updated: "2026-08-14",
   masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -427,7 +427,7 @@ A. Los dos jugadores a la izquierda del botón del dealer deben poner apuestas o
 
 **Q. ¿Cuál es la versión rápida de las reglas del Texas Hold'em?**
 
-A. Poner ciegas → repartir 2 cartas propias → apuestas preflop → descubrir 3 comunitarias (flop) + apuestas → descubrir 1 carta (turn) + apuestas → descubrir 1 carta (river) + apuestas → gana la mejor mano. En total: cuatro rondas de apuestas, cinco cartas comunitarias, un ganador.
+A. Poner ciegas → repartir 2 cartas propias → apuestas preflop → descubrir 3 comunitarias (flop) + apuestas → descubrir 1 carta (turn) + apuestas → descubrir 1 carta (river) + apuestas → gana la mejor mano. En total: cuatro rondas de apuestas, cinco cartas comunitarias, un ganador — o un bote dividido, si las mejores cinco cartas son exactamente iguales.
 
 **Q. ¿Cuántos jugadores se necesitan para jugar al Texas Hold'em?**
 
@@ -439,7 +439,7 @@ A. No-Limit significa que puedes apostar cualquier cantidad hasta todas tus fich
 
 **Q. ¿Cuánto dura una mano de Texas Hold'em?**
 
-A. Una sola mano suele durar entre 10 y 60 segundos, aunque un bote grande con varios jugadores y decisiones difíciles puede alargarse varios minutos. En una sesión casera de unas horas se juegan docenas de manos, así que nadie tiene que dedicar toda la noche a un solo reparto.
+A. En vivo, una sola mano suele durar entre 30 segundos y 2 minutos, aunque un bote grande con varios jugadores y decisiones difíciles puede alargarse varios minutos. En una sesión casera de unas horas se juegan docenas de manos, así que nadie tiene que dedicar toda la noche a un solo reparto.
 
 **Q. ¿Cuál es la primera regla del póker?**
 

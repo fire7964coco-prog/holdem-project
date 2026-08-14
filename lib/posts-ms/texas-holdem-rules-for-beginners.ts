@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Dalam Texas Hold'em, setiap pemain menerima 2 kad pemula, 5 kad komuniti dikongsi bersama, dan tangan poker 5 kad terbaik menang selepas empat pusingan pertaruhan.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-08-10",
+  updated: "2026-08-14",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 minit",
@@ -419,7 +419,7 @@ A. Dua pemain di kiri butang pengedar mesti meletakkan pertaruhan wajib sebelum 
 
 **Q. Apakah versi pantas peraturan Texas Hold'em?**
 
-A. Letak blinds → edar 2 kad pemula → pertaruhan pre-flop → buka 3 kad komuniti (flop) + pertaruhan → buka 1 kad (turn) + pertaruhan → buka 1 kad (river) + pertaruhan → tangan terbaik menang. Jumlah: empat pusingan pertaruhan, lima kad komuniti, satu pemenang.
+A. Letak blinds → edar 2 kad pemula → pertaruhan pre-flop → buka 3 kad komuniti (flop) + pertaruhan → buka 1 kad (turn) + pertaruhan → buka 1 kad (river) + pertaruhan → tangan terbaik menang. Jumlah: empat pusingan pertaruhan, lima kad komuniti, satu pemenang — atau pot dikongsi, kalau lima kad terbaik betul-betul sama.
 
 **Q. Berapa ramai pemain diperlukan untuk main Texas Hold'em?**
 
@@ -431,7 +431,7 @@ A. No-Limit bermaksud anda boleh bertaruh apa-apa jumlah sehingga semua cip anda
 
 **Q. Berapa lama satu tangan Texas Hold'em?**
 
-A. Satu tangan biasanya mengambil masa kira-kira 10 hingga 60 saat, walaupun pot besar dengan ramai pemain dan keputusan sukar boleh berlarutan beberapa minit. Sesi santai di rumah selama beberapa jam akan melalui berpuluh-puluh tangan, jadi tiada siapa perlu meluangkan satu malam penuh untuk satu edaran sahaja.
+A. Di meja live, satu tangan biasanya mengambil masa kira-kira 30 saat hingga 2 minit, walaupun pot besar dengan ramai pemain dan keputusan sukar boleh berlarutan beberapa minit. Sesi santai di rumah selama beberapa jam akan melalui berpuluh-puluh tangan, jadi tiada siapa perlu meluangkan satu malam penuh untuk satu edaran sahaja.
 
 ---
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Au Texas Hold'em, chaque joueur reçoit 2 cartes fermées, on utilise 5 cartes communes, et la meilleure main de 5 cartes l'emporte après quatre tours d'enchères.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-08-10",
+  updated: "2026-08-14",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -419,7 +419,7 @@ A. Les deux joueurs à gauche du bouton du donneur doivent poser des mises oblig
 
 **Q. Quelle est la version express des règles du Texas Hold'em ?**
 
-A. Poser les blindes → distribuer 2 cartes fermées → enchères pré-flop → révéler 3 cartes communes (flop) + enchères → révéler 1 carte (tournant) + enchères → révéler 1 carte (rivière) + enchères → la meilleure main gagne. Au total : quatre tours d'enchères, cinq cartes communes, un vainqueur.
+A. Poser les blindes → distribuer 2 cartes fermées → enchères pré-flop → révéler 3 cartes communes (flop) + enchères → révéler 1 carte (tournant) + enchères → révéler 1 carte (rivière) + enchères → la meilleure main gagne. Au total : quatre tours d'enchères, cinq cartes communes, un vainqueur — ou un pot partagé, si les cinq meilleures cartes sont exactement identiques.
 
 **Q. Combien de joueurs faut-il pour jouer au Texas Hold'em ?**
 
@@ -431,7 +431,7 @@ A. No-Limit veut dire que tu peux miser n'importe quel montant jusqu'à tout ton
 
 **Q. Combien de temps dure une main de Texas Hold'em ?**
 
-A. Une seule main dure en général 10 à 60 secondes, même si un gros pot multijoueurs avec des décisions difficiles peut s'étirer sur plusieurs minutes. Une session maison de quelques heures enchaîne des dizaines de mains, donc personne n'a à consacrer toute une soirée à une seule donne.
+A. En live, une seule main dure en général 30 secondes à 2 minutes, même si un gros pot multijoueurs avec des décisions difficiles peut s'étirer sur plusieurs minutes. Une session maison de quelques heures enchaîne des dizaines de mains, donc personne n'a à consacrer toute une soirée à une seule donne.
 
 ---
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "La Texas Hold'em fiecare jucător primește 2 cărți din mână, se folosesc 5 cărți comune, iar după patru runde de pariere câștigă cea mai bună mână de 5 cărți.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-08-09",
+  updated: "2026-08-14",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -419,7 +419,7 @@ A. Cei doi jucători din stânga butonului de dealer trebuie să pună pariuri o
 
 **Q. Care e versiunea rapidă a regulilor de Texas Hold'em?**
 
-A. Pui blind-urile → împarți 2 cărți din mână → pariere preflop → întorci 3 cărți comune (flop) + pariere → întorci 1 carte (turn) + pariere → întorci 1 carte (river) + pariere → câștigă cea mai bună mână. Total: patru runde de pariere, cinci cărți comune, un câștigător.
+A. Pui blind-urile → împarți 2 cărți din mână → pariere preflop → întorci 3 cărți comune (flop) + pariere → întorci 1 carte (turn) + pariere → întorci 1 carte (river) + pariere → câștigă cea mai bună mână. Total: patru runde de pariere, cinci cărți comune, un câștigător — sau un pot împărțit, dacă cele mai bune cinci cărți sunt exact la fel.
 
 **Q. De câți jucători ai nevoie ca să joci Texas Hold'em?**
 
@@ -431,7 +431,7 @@ A. No-Limit înseamnă că poți paria orice sumă până la toate jetoanele tal
 
 **Q. Cât durează o mână de Texas Hold'em?**
 
-A. O singură mână durează de obicei cam 10 până la 60 de secunde, deși un pot mare cu mulți jucători și decizii grele poate ține câteva minute. O sesiune relaxată de acasă de câteva ore va derula zeci de mâini, așa că nimeni nu trebuie să dedice o seară întreagă unei singure împărțiri.
+A. La masa live, o singură mână durează de obicei cam 30 de secunde până la 2 minute, deși un pot mare cu mulți jucători și decizii grele poate ține câteva minute. O sesiune relaxată de acasă de câteva ore va derula zeci de mâini, așa că nimeni nu trebuie să dedice o seară întreagă unei singure împărțiri.
 
 ---
 

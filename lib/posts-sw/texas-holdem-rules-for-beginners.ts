@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Katika Texas Hold'em kila mchezaji anapata karata 2 za mkononi, kunatumika karata 5 za pamoja, na baada ya raundi nne za kuweka dau, mkono bora wa karata 5 unashinda.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-08-09",
+  updated: "2026-08-14",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -419,7 +419,7 @@ A. Wachezaji wawili walio upande wa kushoto wa dealer button lazima waweke dau l
 
 **Q. Toleo la haraka la sheria za Texas Hold'em ni lipi?**
 
-A. Weka blinds → gawa karata 2 za mkononi → kuweka dau ya preflop → funua karata 3 za pamoja (flop) + kuweka dau → funua karata 1 (turn) + kuweka dau → funua karata 1 (river) + kuweka dau → mkono bora unashinda. Jumla: raundi nne za kuweka dau, karata tano za pamoja, mshindi mmoja.
+A. Weka blinds → gawa karata 2 za mkononi → kuweka dau ya preflop → funua karata 3 za pamoja (flop) + kuweka dau → funua karata 1 (turn) + kuweka dau → funua karata 1 (river) + kuweka dau → mkono bora unashinda. Jumla: raundi nne za kuweka dau, karata tano za pamoja, mshindi mmoja — au pot iliyogawanywa, kama karata tano bora zinafanana kabisa.
 
 **Q. Unahitaji wachezaji wangapi kucheza Texas Hold'em?**
 
@@ -431,7 +431,7 @@ A. No-Limit inamaanisha unaweza kuweka dau kiasi chochote hadi chipsi zako zote 
 
 **Q. Mkono mmoja wa Texas Hold'em unachukua muda gani?**
 
-A. Mkono mmoja kwa kawaida unachukua takribani sekunde 10 hadi 60, ingawa pot kubwa yenye wachezaji wengi na maamuzi magumu inaweza kudumu dakika kadhaa. Kikao cha kawaida cha nyumbani cha saa chache kitacheza mikono kadhaa, kwa hivyo hakuna anayehitaji kutumia jioni nzima kwa mgawo mmoja.
+A. Kwenye meza ya ana kwa ana, mkono mmoja kwa kawaida unachukua takribani sekunde 30 hadi dakika 2, ingawa pot kubwa yenye wachezaji wengi na maamuzi magumu inaweza kudumu dakika kadhaa. Kikao cha kawaida cha nyumbani cha saa chache kitacheza mikono kadhaa, kwa hivyo hakuna anayehitaji kutumia jioni nzima kwa mgawo mmoja.
 
 ---
 

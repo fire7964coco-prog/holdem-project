@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Nel Texas Hold'em ogni giocatore riceve 2 carte personali, si usano 5 carte comuni e, dopo quattro giri di puntate, vince la migliore mano di 5 carte.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-08-10",
+  updated: "2026-08-14",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -418,7 +418,7 @@ A. I due giocatori alla sinistra del bottone del mazziere devono mettere puntate
 
 **Q. Qual è la versione rapida delle regole del Texas Hold'em?**
 
-A. Metti i bui → dai 2 carte personali → puntate preflop → scopri 3 carte comuni (flop) + puntate → scopri 1 carta (turn) + puntate → scopri 1 carta (river) + puntate → vince la mano migliore. In totale: quattro giri di puntate, cinque carte comuni, un vincitore.
+A. Metti i bui → dai 2 carte personali → puntate preflop → scopri 3 carte comuni (flop) + puntate → scopri 1 carta (turn) + puntate → scopri 1 carta (river) + puntate → vince la mano migliore. In totale: quattro giri di puntate, cinque carte comuni, un vincitore — o un piatto diviso, se le migliori cinque carte sono esattamente uguali.
 
 **Q. Quanti giocatori servono per giocare a Texas Hold'em?**
 
@@ -430,7 +430,7 @@ A. No-Limit significa che puoi puntare qualsiasi importo fino a tutte le tue fic
 
 **Q. Quanto dura una mano di Texas Hold'em?**
 
-A. Una singola mano di solito dura circa dai 10 ai 60 secondi, anche se un grosso piatto multiway con decisioni difficili può durare diversi minuti. Una sessione casalinga rilassata di qualche ora fa giocare decine di mani, quindi nessuno deve dedicare un'intera serata a una sola smazzata.
+A. Dal vivo, una singola mano di solito dura circa dai 30 secondi ai 2 minuti, anche se un grosso piatto multiway con decisioni difficili può durare diversi minuti. Una sessione casalinga rilassata di qualche ora fa giocare decine di mani, quindi nessuno deve dedicare un'intera serata a una sola smazzata.
 
 ---
 

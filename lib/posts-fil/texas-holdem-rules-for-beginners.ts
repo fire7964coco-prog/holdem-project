@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Sa Texas Hold'em, bawat player ay may 2 hole cards, may 5 community cards, at ang pinakamagandang 5-card poker hand ang panalo pagkatapos ng apat na betting rounds.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-08-09",
+  updated: "2026-08-14",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -419,7 +419,7 @@ A. Ang dalawang players sa kaliwa ng dealer button ay dapat maglagay ng forced b
 
 **Q. Ano ang quick version ng Texas Hold'em rules?**
 
-A. Ilagay ang blinds → magdeal ng 2 hole cards → preflop betting → bunyagin ang 3 community cards (flop) + betting → bunyagin ang 1 card (turn) + betting → bunyagin ang 1 card (river) + betting → panalo ang pinakamagandang hand. Total: apat na betting rounds, limang community cards, isang panalo.
+A. Ilagay ang blinds → magdeal ng 2 hole cards → preflop betting → bunyagin ang 3 community cards (flop) + betting → bunyagin ang 1 card (turn) + betting → bunyagin ang 1 card (river) + betting → panalo ang pinakamagandang hand. Total: apat na betting rounds, limang community cards, isang panalo — o hating pot, kung eksaktong pareho ang pinakamagandang limang baraha.
 
 **Q. Ilang players ang kailangan para maglaro ng Texas Hold'em?**
 
@@ -431,7 +431,7 @@ A. Ang No-Limit ay nangangahulugang puwede kang mag-bet ng kahit anong halaga ha
 
 **Q. Gaano katagal ang isang hand ng Texas Hold'em?**
 
-A. Ang isang hand ay kadalasang tumatagal ng mga 10 hanggang 60 segundo, kahit na ang malaking multi-way pot na may mahihirap na desisyon ay puwedeng umabot ng ilang minuto. Ang casual home session na ilang oras ay makakapaglaro ng dose-dosenang hands, kaya walang kailangang mag-commit ng buong gabi para sa isang deal.
+A. Sa live na mesa, ang isang hand ay kadalasang tumatagal ng mga 30 segundo hanggang 2 minuto, kahit na ang malaking multi-way pot na may mahihirap na desisyon ay puwedeng umabot ng ilang minuto. Ang casual home session na ilang oras ay makakapaglaro ng dose-dosenang hands, kaya walang kailangang mag-commit ng buong gabi para sa isang deal.
 
 ---
 

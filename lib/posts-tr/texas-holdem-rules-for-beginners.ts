@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em'de her oyuncu 2 kapalı kart alır, 5 ortak kart açılır ve dört bahis turunun sonunda en iyi 5 kartlık poker eli kazanır.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-08-09",
+  updated: "2026-08-14",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 dk",
@@ -419,7 +419,7 @@ Dağıtıcı butonunun solundaki iki oyuncu, kartlar dağıtılmadan önce zorun
 
 ### Texas Hold'em kurallarının hızlı sürümü nedir?
 
-Blindleri koy → 2 hole kart dağıt → preflop bahsi → 3 ortak kart aç (flop) + bahis → 1 kart aç (turn) + bahis → 1 kart aç (river) + bahis → en iyi el kazanır. Toplam: dört bahis turu, beş ortak kart, tek kazanan.
+Blindleri koy → 2 hole kart dağıt → preflop bahsi → 3 ortak kart aç (flop) + bahis → 1 kart aç (turn) + bahis → 1 kart aç (river) + bahis → en iyi el kazanır. Toplam: dört bahis turu, beş ortak kart, tek kazanan — ya da en iyi beş kart tamamen aynıysa paylaşılan pot.
 
 ### Texas Hold'em oynamak için kaç kişi gerekir?
 
@@ -431,7 +431,7 @@ No-Limit, herhangi bir bahis turunda tüm çiplerine kadar istediğin miktarda b
 
 ### Bir Texas Hold'em eli ne kadar sürer?
 
-Tek bir el genelde yaklaşık 10 ila 60 saniye sürer, ama zorlu kararlarla dolu büyük çok kişili bir pot birkaç dakika sürebilir. Birkaç saatlik rahat bir ev seansında düzinelerce el oynanır, yani kimse tek bir ele bütün akşamını adamak zorunda kalmaz.
+Canlı masada tek bir el genelde yaklaşık 30 saniye ila 2 dakika sürer, ama zorlu kararlarla dolu büyük çok kişili bir pot birkaç dakika sürebilir. Birkaç saatlik rahat bir ev seansında düzinelerce el oynanır, yani kimse tek bir ele bütün akşamını adamak zorunda kalmaz.
 
 ---
 

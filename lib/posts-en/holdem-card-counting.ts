@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Not the way you do in blackjack — the deck reshuffles every hand and too few cards are exposed, so tracking high and low cards gives you no edge. But poker has its own legal counting: counting outs, using blockers, and tracking dead cards to read what your opponent can't have.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-08-11",
+  updated: "2026-08-14",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🧮",
@@ -18,7 +18,7 @@ export const POST: Post = {
   content: `
 Every poker player who came from blackjack asks the same question in their first session: "can I just count cards here?" I did too — I spent a month trying to keep a running count at a Hold'em table before a dealer laughed and told me I was wasting my brainpower on the wrong math. He was right. Blackjack counting is useless in poker, but that doesn't mean counting is. It just means you count ==different things.==
 
-==Yes, you "count cards" in poker — just not the deck. You count outs, blockers, and dead cards, and it's completely legal.== This guide explains exactly why the blackjack method dies at a poker table, what the poker version actually is, whether any of it is against the rules, and the one poker game where old-school counting genuinely works.
+==Yes, you "count cards" in poker — just not the deck. You count outs, blockers, and dead cards, and it's completely legal.== This guide explains exactly why the blackjack method dies at a poker table, what the poker version actually is, whether any of it is against the rules, and the poker family where old-school counting genuinely works.
 
 The number-crunching side of this — turning cards you can see into a real decision — starts with [counting your outs](/en/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp"), which is the true "counting" skill in poker.
 
@@ -109,11 +109,11 @@ The line to never cross is physical or informational cheating — marked cards, 
 
 ---
 
-## The One Poker Game Where Traditional Counting Works: Seven Card Stud
+## The Poker Family Where Traditional Counting Works: Seven Card Stud
 
 **In Seven Card Stud, a big chunk of every player's cards are dealt face up — so you genuinely can count the deck the old-fashioned way.** If you need a specific card to complete your hand, you can look around the table and literally count how many of your outs are already showing in opponents' up-cards. Every one you spot is a dead out.
 
-Hold'em only exposes the five shared community cards, so this is limited to the board. But Stud rewards exactly the kind of card-tracking that blackjack counters are good at — it's the closest poker gets to the movie version.
+Hold'em only exposes the five shared community cards, so this is limited to the board. But Stud — and its relatives Razz and Stud Hi-Lo, which deal the same face-up cards — rewards exactly the kind of card-tracking that blackjack counters are good at. It's the closest poker gets to the movie version.
 
 ---
 

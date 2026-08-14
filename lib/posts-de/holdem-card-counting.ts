@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Nicht so wie im Blackjack – das Deck wird jede Hand neu gemischt und zu wenige Karten liegen offen, also bringt dir das Tracken hoher und niedriger Karten keinen Edge. Aber Poker hat sein eigenes legales Zählen: Outs zählen, Blocker nutzen und tote Karten tracken, um zu lesen, was dein Gegner nicht haben kann.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-08-11",
+  updated: "2026-08-14",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🧮",
@@ -18,7 +18,7 @@ export const POST: Post = {
   content: `
 Jeder Pokerspieler, der vom Blackjack kommt, stellt in seiner ersten Session dieselbe Frage: „Kann ich hier einfach Karten zählen?“ Ich auch – ich habe einen Monat lang versucht, an einem Hold'em-Tisch einen Running Count zu halten, bis ein Dealer lachte und mir sagte, dass ich meine Hirnleistung an der falschen Mathematik verschwende. Er hatte recht. Blackjack-Zählen ist im Poker nutzlos, aber das heißt nicht, dass Zählen es ist. Es heißt nur, dass du ==andere Dinge zählst.==
 
-==Ja, du „zählst Karten“ im Poker – nur nicht das Deck. Du zählst Outs, Blocker und tote Karten, und es ist völlig legal.== Dieser Guide erklärt genau, warum die Blackjack-Methode an einem Pokertisch stirbt, was die Poker-Version tatsächlich ist, ob irgendetwas davon gegen die Regeln verstößt, und das eine Pokerspiel, in dem klassisches Zählen wirklich funktioniert.
+==Ja, du „zählst Karten“ im Poker – nur nicht das Deck. Du zählst Outs, Blocker und tote Karten, und es ist völlig legal.== Dieser Guide erklärt genau, warum die Blackjack-Methode an einem Pokertisch stirbt, was die Poker-Version tatsächlich ist, ob irgendetwas davon gegen die Regeln verstößt, und die Poker-Familie, in der klassisches Zählen wirklich funktioniert.
 
 Die rechnerische Seite davon – sichtbare Karten in eine echte Entscheidung zu verwandeln – beginnt damit, [deine Outs zu zählen](/de/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp"), was die wahre „Zähl“-Fähigkeit im Poker ist.
 
@@ -109,11 +109,11 @@ Die Linie, die du nie überschreiten darfst, ist physisches oder informationelle
 
 ---
 
-## Das eine Pokerspiel, in dem klassisches Zählen funktioniert: Seven Card Stud
+## Die Poker-Familie, in der klassisches Zählen funktioniert: Seven Card Stud
 
 **Bei Seven Card Stud wird ein großer Teil der Karten jedes Spielers offen ausgeteilt – also kannst du das Deck tatsächlich auf die altmodische Art zählen.** Wenn du eine bestimmte Karte brauchst, um deine Hand zu vervollständigen, kannst du dich am Tisch umsehen und buchstäblich zählen, wie viele deiner Outs bereits offen in den Up-Cards der Gegner liegen. Jedes, das du entdeckst, ist ein totes Out.
 
-Hold'em legt nur die fünf gemeinsamen Community Cards offen, also ist das hier auf das Board begrenzt. Aber Stud belohnt genau die Art von Karten-Tracking, in der Blackjack-Zähler gut sind – es ist das, was der Filmversion am nächsten kommt, was Poker bietet.
+Hold'em legt nur die fünf gemeinsamen Community Cards offen, also ist das hier auf das Board begrenzt. Aber Stud – und seine Verwandten Razz und Stud Hi-Lo, die genauso offen austeilen – belohnt genau die Art von Karten-Tracking, in der Blackjack-Zähler gut sind. Das ist das, was der Filmversion am nächsten kommt, was Poker bietet.
 
 ---
 

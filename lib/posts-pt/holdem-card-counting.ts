@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Não do jeito que você faz no blackjack — o baralho é reembaralhado toda mão e poucas cartas ficam expostas, então rastrear cartas altas e baixas não te dá vantagem nenhuma. Mas o pôquer tem a sua própria contagem legal: contar outs, usar blockers e rastrear cartas mortas para ler o que o seu adversário não pode ter.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-08-11",
+  updated: "2026-08-14",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🧮",
@@ -18,7 +18,7 @@ export const POST: Post = {
   content: `
 Todo jogador de pôquer que veio do blackjack faz a mesma pergunta na primeira sessão: "será que eu consigo só contar cartas aqui?" Eu também fiz — passei um mês tentando manter um running count numa mesa de Hold'em antes de um dealer rir e me dizer que eu estava desperdiçando meu cérebro na matemática errada. Ele estava certo. A contagem de blackjack é inútil no pôquer, mas isso não quer dizer que contar seja. Só quer dizer que você conta ==coisas diferentes.==
 
-==Sim, você "conta cartas" no pôquer — só não o baralho. Você conta outs, blockers e cartas mortas, e é totalmente legal.== Este guia explica exatamente por que o método do blackjack morre numa mesa de pôquer, o que é de fato a versão do pôquer, se algo disso é contra as regras, e o único jogo de pôquer em que a contagem à moda antiga realmente funciona.
+==Sim, você "conta cartas" no pôquer — só não o baralho. Você conta outs, blockers e cartas mortas, e é totalmente legal.== Este guia explica exatamente por que o método do blackjack morre numa mesa de pôquer, o que é de fato a versão do pôquer, se algo disso é contra as regras, e a família de pôquer em que a contagem à moda antiga realmente funciona.
 
 O lado de crunchar números disso — transformar cartas que você enxerga numa decisão de verdade — começa com [contar os seus outs](/pt/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp"), que é a verdadeira habilidade de "contagem" no pôquer.
 
@@ -109,11 +109,11 @@ A linha que você nunca deve cruzar é a trapaça física ou informacional — c
 
 ---
 
-## O único jogo de pôquer em que a contagem tradicional funciona: Seven Card Stud
+## A família de pôquer em que a contagem tradicional funciona: Seven Card Stud
 
 **No Seven Card Stud, uma boa parte das cartas de cada jogador é distribuída virada para cima — então você genuinamente consegue contar o baralho à moda antiga.** Se você precisa de uma carta específica para completar a sua mão, dá para olhar em volta da mesa e literalmente contar quantos dos seus outs já estão aparecendo nas up-cards dos adversários. Cada um que você identifica é um out morto.
 
-O Hold'em só expõe as cinco cartas comunitárias compartilhadas, então isso fica limitado ao board. Mas o Stud recompensa exatamente o tipo de rastreamento de cartas em que os contadores de blackjack são bons — é o mais perto que o pôquer chega da versão do filme.
+O Hold'em só expõe as cinco cartas comunitárias compartilhadas, então isso fica limitado ao board. Mas o Stud — e os seus parentes, o Razz e o Stud Hi-Lo, que distribuem as mesmas cartas viradas para cima — recompensa exatamente o tipo de rastreamento de cartas em que os contadores de blackjack são bons. É o mais perto que o pôquer chega da versão do filme.
 
 ---
 

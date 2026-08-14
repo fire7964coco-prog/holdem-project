@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Trong Texas Hold'em, mỗi người chơi nhận 2 lá bài tẩy, dùng chung 5 lá bài chung, và tay bài poker 5 lá mạnh nhất sẽ thắng sau bốn vòng cược.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-08-10",
+  updated: "2026-08-14",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 phút",
@@ -419,7 +419,7 @@ A. Hai người chơi bên trái nút Dealer phải đặt cược bắt buộc 
 
 **Q. Phiên bản rút gọn của luật Texas Hold'em là gì?**
 
-A. Đặt mù → chia 2 lá bài tẩy → cược preflop → lật 3 lá bài chung (flop) + cược → lật 1 lá (turn) + cược → lật 1 lá (river) + cược → tay bài mạnh nhất thắng. Tổng cộng: bốn vòng cược, năm lá bài chung, một người thắng.
+A. Đặt mù → chia 2 lá bài tẩy → cược preflop → lật 3 lá bài chung (flop) + cược → lật 1 lá (turn) + cược → lật 1 lá (river) + cược → tay bài mạnh nhất thắng. Tổng cộng: bốn vòng cược, năm lá bài chung, một người thắng — hoặc chia pot, nếu năm lá bài tốt nhất giống hệt nhau.
 
 **Q. Cần bao nhiêu người để chơi Texas Hold'em?**
 
@@ -431,7 +431,7 @@ A. No-Limit nghĩa là bạn có thể cược bất kỳ số nào đến toàn
 
 **Q. Một ván Texas Hold'em kéo dài bao lâu?**
 
-A. Một ván bài thường mất khoảng 10 đến 60 giây, dù một pot lớn nhiều người chơi với các quyết định khó có thể kéo dài vài phút. Một buổi chơi tại nhà vài tiếng sẽ đi qua hàng chục ván, nên không ai phải dành cả buổi tối cho một lần chia bài.
+A. Ở bàn trực tiếp, một ván bài thường mất khoảng 30 giây đến 2 phút, dù một pot lớn nhiều người chơi với các quyết định khó có thể kéo dài vài phút. Một buổi chơi tại nhà vài tiếng sẽ đi qua hàng chục ván, nên không ai phải dành cả buổi tối cho một lần chia bài.
 
 ---
 

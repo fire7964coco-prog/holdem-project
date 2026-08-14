@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em gives each player 2 hole cards, uses 5 community cards, and the best 5-card poker hand wins after four betting rounds.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-08-10",
+  updated: "2026-08-14",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -422,7 +422,7 @@ A. The two players to the left of the dealer button must post forced bets before
 
 **Q. What is the quick version of Texas Hold'em rules?**
 
-A. Post blinds → deal 2 hole cards → preflop betting → reveal 3 community cards (flop) + betting → reveal 1 card (turn) + betting → reveal 1 card (river) + betting → best hand wins. Total: four betting rounds, five community cards, one winner.
+A. Post blinds → deal 2 hole cards → preflop betting → reveal 3 community cards (flop) + betting → reveal 1 card (turn) + betting → reveal 1 card (river) + betting → best hand wins. Total: four betting rounds, five community cards, one winner — or a split pot, if the best five cards are exactly equal.
 
 **Q. How many players do you need to play Texas Hold'em?**
 
@@ -434,7 +434,7 @@ A. No-Limit means you can bet any amount up to all of your chips on any betting 
 
 **Q. How long does one hand of Texas Hold'em take?**
 
-A. A single hand usually takes about 10 to 60 seconds, though a big multi-way pot with tough decisions can run several minutes. A casual home session of a few hours will play through dozens of hands, so nobody has to commit a whole evening to one deal.
+A. A single hand at a live table usually takes about 30 seconds to 2 minutes, though a big multi-way pot with tough decisions can run several minutes. A casual home session of a few hours will play through dozens of hands, so nobody has to commit a whole evening to one deal.
 
 ---
 

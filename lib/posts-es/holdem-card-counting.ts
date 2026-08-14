@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "No como en el blackjack — la baraja se rebaraja cada mano y se ven muy pocas cartas, así que rastrear cartas altas y bajas no te da ninguna ventaja. Pero el póker tiene su propio conteo legal: contar outs, usar bloqueadores y rastrear cartas muertas para leer lo que tu rival no puede tener.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-08-11",
+  updated: "2026-08-14",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🧮",
@@ -18,7 +18,7 @@ export const POST: Post = {
   content: `
 Todo jugador de póker que viene del blackjack se hace la misma pregunta en su primera sesión: "¿puedo contar cartas aquí sin más?". Yo también lo hice — me pasé un mes intentando llevar un conteo corrido en una mesa de Hold'em hasta que un repartidor se rió y me dijo que estaba malgastando neuronas en la matemática equivocada. Tenía razón. El conteo del blackjack no sirve de nada en el póker, pero eso no significa que contar no sirva. Solo significa que cuentas ==cosas distintas.==
 
-==Sí, en el póker "cuentas cartas" — pero no la baraja. Cuentas outs, bloqueadores y cartas muertas, y es completamente legal.== Esta guía explica exactamente por qué el método del blackjack muere en una mesa de póker, en qué consiste de verdad la versión del póker, si algo de eso va contra las reglas, y el único juego de póker donde el conteo de toda la vida sí funciona.
+==Sí, en el póker "cuentas cartas" — pero no la baraja. Cuentas outs, bloqueadores y cartas muertas, y es completamente legal.== Esta guía explica exactamente por qué el método del blackjack muere en una mesa de póker, en qué consiste de verdad la versión del póker, si algo de eso va contra las reglas, y la familia de póker donde el conteo de toda la vida sí funciona.
 
 El lado numérico de esto — convertir las cartas que ves en una decisión real — empieza por [contar tus outs](/es/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp"), que es la verdadera habilidad de "conteo" en el póker.
 
@@ -109,11 +109,11 @@ La línea que nunca hay que cruzar es la trampa física o de información — ca
 
 ---
 
-## El único juego de póker donde el conteo tradicional funciona: Seven Card Stud
+## La familia de póker donde el conteo tradicional funciona: Seven Card Stud
 
 **En Seven Card Stud, buena parte de las cartas de cada jugador se reparten boca arriba — así que de verdad puedes contar la baraja a la vieja usanza.** Si necesitas una carta concreta para completar tu mano, puedes mirar alrededor de la mesa y contar literalmente cuántas de tus outs ya están a la vista en las cartas descubiertas de los rivales. Cada una que detectas es una out muerta.
 
-El Hold'em solo expone las cinco cartas comunitarias compartidas, así que esto se limita a la mesa. Pero el Stud premia justo el tipo de rastreo de cartas en el que los contadores de blackjack son buenos — es lo más cerca que el póker llega a la versión de película.
+El Hold'em solo expone las cinco cartas comunitarias compartidas, así que esto se limita a la mesa. Pero el Stud — y sus parientes, el Razz y el Stud Hi-Lo, que reparten las mismas cartas boca arriba — premia justo el tipo de rastreo de cartas en el que los contadores de blackjack son buenos. Es lo más cerca que el póker llega a la versión de película.
 
 ---
 
