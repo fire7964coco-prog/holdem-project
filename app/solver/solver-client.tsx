@@ -1,53 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import { SOLVER_FAQ } from "./faq";
 
 const SOLVER_URL = "https://solver.holdemmaster.com";
-
-/**
- * ⚠ 2026-08-08 — 경쟁 도구의 **구체적 가격·무료 티어 제한 수치를 뺐다.**
- *   원본에는 "PioSolver($275+)", "GTO Wizard(월 $39+)", "무료 티어는 하루 1개 제한"이
- *   적혀 있었는데 **1차 출처로 확인이 안 됐다**(GTO Wizard 가격은 로그인 뒤, PioSolver
- *   구매 페이지는 404). CLAUDE.md §12-B — 확인 안 된 수치는 쓰지 않는다.
- *   게다가 가격은 자주 바뀌어 몇 달 뒤 틀린 정보가 된다. "우리는 무료"라는 메시지는
- *   액수 없이도 성립한다. ★다시 넣으려면 공식 가격 페이지를 축어 인용으로 확인할 것.
- */
-const FAQ = [
-  {
-    q: "홀덤 GTO 표는 어디서 보나요?",
-    a: "이 솔버를 실행하면 나오는 13×13 매트릭스가 GTO 표입니다. 169개 핸드 각각을 어떤 빈도로 벳·체크·폴드해야 하는지 색으로 표시하고, 핸드별 에퀴티·EV·에퀴티 실현율(EQR)까지 표로 보여줍니다. 교육 예제를 누르면 계산 없이 완성된 표가 바로 뜹니다. 다만 이 솔버는 포스트플랍(플랍 이후) 전용이라, 프리플랍에서 어느 포지션에 어떤 핸드를 오픈할지 정리한 표가 필요하면 홀덤 차트를 보시는 편이 빠릅니다.",
-  },
-  {
-    q: "GTO 솔버가 뭔가요?",
-    a: "게임이론 최적(GTO) 전략을 계산하는 프로그램입니다. 특정 상황(레인지·보드·벳 사이즈)을 입력하면 내시 균형에 가까운 전략 — 어떤 핸드로 얼마나 자주 벳/체크/폴드해야 하는지 — 을 알려줍니다. PioSolver·GTO Wizard 같은 유료 도구가 유명하지만, 홀덤마스터 솔버는 완전 무료입니다.",
-  },
-  {
-    q: "정말 무료인가요? 제한은 없나요?",
-    a: "네, 100% 무료이고 하루 사용 횟수 제한도 없습니다. 오픈소스 솔버 엔진(AGPL-3.0)을 기반으로 만들어 소스코드까지 공개되어 있습니다. 회원가입도 필요 없습니다.",
-  },
-  {
-    q: "설치해야 하나요?",
-    a: "아니요. WebAssembly 기술로 만들어져 크롬 등 브라우저에서 바로 실행됩니다. 계산도 서버가 아닌 내 컴퓨터에서 이루어져 입력한 핸드 정보가 외부로 전송되지 않습니다.",
-  },
-  {
-    q: "GTO Wizard와 뭐가 다른가요?",
-    a: "GTO Wizard는 미리 계산해 둔 솔루션을 열람하는 방식이라 빠르고 편하지만, 무료로 볼 수 있는 범위가 정해져 있습니다. 홀덤마스터 솔버는 레인지와 트리를 직접 입력해 그 자리에서 계산하는 방식이라 자유도가 높고 횟수 제한이 없습니다. 대신 프리플랍은 지원하지 않고 포스트플랍(플랍 이후) 전용입니다.",
-  },
-  {
-    // ★2026-08-13 — GTO 트레이너 문항 2개 추가. 서술은 라이브 번들 축어 확인분만 썼다
-    //   (「결정 지점 33곳」·「유효 핸드 13,743개」는 번들에 없어 제외).
-    q: "GTO 트레이너는 뭔가요?",
-    a: "교육 예제 13개 스팟의 결정 지점에서 문제를 내주는 연습 모드입니다. 핸드는 실제 GTO 레인지 비중대로 무작위로 뽑히기 때문에, 실전에서 그 상황에 그 핸드를 들고 있을 확률 그대로 문제가 나옵니다. 액션을 고르면 그 선택이 GTO 대비 몇 bb 손해였는지 채점하고, 액션별 혼합 빈도와 EV를 전부 보여줍니다. 연속 정답 기록·상황별 약점 분석·손실이 컸던 문제 복습도 됩니다. 기록은 이 기기 안에만 저장되고 로그인은 필요 없습니다.",
-  },
-  {
-    q: "왜 정답·오답이 아니라 EV 손실로 채점하나요?",
-    a: "GTO는 같은 핸드도 액션을 섞기 때문입니다. 어떤 핸드를 70% 벳·30% 체크로 플레이하는 것이 최적이라면, 체크를 골랐다고 해서 틀린 것이 아닙니다. 그래서 기준을 «맞았나»가 아니라 «얼마나 손해였나»로 둡니다. 0.01bb 이하면 최적 선택, 0.05bb 이하면 허용 가능, 그보다 크면 다시 볼 스팟입니다.",
-  },
-  {
-    q: "어떤 상황을 분석할 수 있나요?",
-    a: "헤즈업(2명) 포스트플랍 상황 전부입니다. 양쪽 레인지, 보드, 스택, 팟, 스트리트별 벳/레이즈 사이즈를 자유롭게 설정하고 각 핸드의 전략·EV·에퀴티를 확인할 수 있습니다. 토너먼트/캐시 모두 활용 가능합니다.",
-  },
-];
 
 const STEPS = [
   {
@@ -77,34 +33,40 @@ const STEPS = [
  * 보드·빈도는 docs/gto-solver-series-spec.md §4-B 확정 수치표가 단일 출처다.
  * ①~⑦ = SRP(BTN 오픈 → BB 콜, OOP는 BB 콜러) / ⑧~⑩ = 3벳팟(OOP는 BB 3벳터) /
  * ⑪~⑬ = 블라인드전(OOP는 SB 오픈레이저). 빈도는 전부 «OOP의 첫 액션» 기준이다.
+ *
+ * ★2026-08-14 — `anchor`를 신설했다. 그 전까지 13개 링크의 앵커 텍스트가 **보드 문자열
+ *   뿐**이었다(「A♥7♦2♣」). 앵커는 링크 대상이 무엇에 관한 글인지 알리는 자리인데
+ *   무늬 기호에는 키워드가 하나도 없다. 그래서 각 글이 실제로 노리는 낱말을 앵커로 올리고
+ *   보드는 시각 라벨로 남겼다. ⚠ 앵커 문구는 **각 글의 seoTitle에서 뽑았다** — 새로 짓지 않는다.
+ *   ⚠ `note`의 수치는 §4-B 확정표 값이라 **건드리지 말 것**(앵커와 겹치는 낱말만 덜어냈다).
  */
 const SPOT_GROUPS = [
   {
     label: "싱글 레이즈 팟 — 먼저 행동하는 쪽은 BB 콜러",
     items: [
-      { n: "①", slug: "a-high-board-cbet", board: "A♥7♦2♣", note: "BB가 98.2% 체크하는 이유" },
-      { n: "②", slug: "k-high-board-cbet", board: "K♠8♦3♣", note: "체크 99.8% — 드라이 보드의 끝" },
-      { n: "③", slug: "broadway-board-strategy", board: "Q♠J♦T♠", note: "브로드웨이에서도 체크 99.9%" },
-      { n: "④", slug: "donk-bet-strategy", board: "9♥8♥7♣", note: "동크벳 23.7% — 먼저 치는 보드" },
-      { n: "⑤", slug: "monotone-board-strategy", board: "Q♠9♠2♠", note: "모노톤 — 너트 플러시도 체크" },
-      { n: "⑥", slug: "paired-board-strategy", board: "6♣6♦3♥", note: "페어 보드에서 포켓페어의 값" },
-      { n: "⑦", slug: "low-board-check-raise", board: "6♠5♥2♦", note: "로우 보드 체크레이즈 설계" },
+      { n: "①", slug: "a-high-board-cbet", board: "A♥7♦2♣", anchor: "A하이 보드 C벳", note: "BB가 98.2% 체크하는 이유" },
+      { n: "②", slug: "k-high-board-cbet", board: "K♠8♦3♣", anchor: "K하이 보드 C벳", note: "체크 99.8% — 드라이 보드의 끝" },
+      { n: "③", slug: "broadway-board-strategy", board: "Q♠J♦T♠", anchor: "브로드웨이 보드 전략", note: "체크 99.9%" },
+      { n: "④", slug: "donk-bet-strategy", board: "9♥8♥7♣", anchor: "동크벳 레인지", note: "23.7% — 먼저 치는 보드" },
+      { n: "⑤", slug: "monotone-board-strategy", board: "Q♠9♠2♠", anchor: "모노톤 보드 전략", note: "너트 플러시도 체크" },
+      { n: "⑥", slug: "paired-board-strategy", board: "6♣6♦3♥", anchor: "페어 보드 전략", note: "포켓페어의 값" },
+      { n: "⑦", slug: "low-board-check-raise", board: "6♠5♥2♦", anchor: "로우 보드 전략", note: "체크레이즈 설계" },
     ],
   },
   {
     label: "3벳 팟 — 먼저 행동하는 쪽은 BB 3벳터 (SPR 4.0)",
     items: [
-      { n: "⑧", slug: "3bet-pot-cbet", board: "A♦K♠2♥", note: "체크가 0% — 레인지 전체 벳" },
-      { n: "⑨", slug: "3bet-pot-bet-sizing", board: "Q♥T♥7♠", note: "벳 사이즈를 정하는 것은 보드" },
-      { n: "⑩", slug: "3bet-pot-low-board", board: "8♦5♣2♠", note: "페어도 없는데 큰 사이즈" },
+      { n: "⑧", slug: "3bet-pot-cbet", board: "A♦K♠2♥", anchor: "3벳팟 C벳과 SPR", note: "체크가 0% — 레인지 전체 벳" },
+      { n: "⑨", slug: "3bet-pot-bet-sizing", board: "Q♥T♥7♠", anchor: "3벳팟 벳 사이즈", note: "사이즈를 정하는 것은 보드" },
+      { n: "⑩", slug: "3bet-pot-low-board", board: "8♦5♣2♠", anchor: "3벳팟 로우 보드", note: "페어도 없는데 큰 사이즈" },
     ],
   },
   {
     label: "블라인드전 — 먼저 행동하는 쪽은 SB 오픈 레이저",
     items: [
-      { n: "⑪", slug: "blind-battle-cbet", board: "K♥T♦6♠", note: "포지션 없이 67.4%를 치는 이유" },
-      { n: "⑫", slug: "blind-battle-connected-board", board: "7♦6♦5♣", note: "같은 자리인데 9.6%로 급락" },
-      { n: "⑬", slug: "ace-paired-board-strategy", board: "A♠A♥6♦", note: "A 페어 보드에서 80.1% 벳" },
+      { n: "⑪", slug: "blind-battle-cbet", board: "K♥T♦6♠", anchor: "블라인드전 C벳", note: "포지션 없이 67.4%를 치는 이유" },
+      { n: "⑫", slug: "blind-battle-connected-board", board: "7♦6♦5♣", anchor: "홀덤 포지션별 핸드레인지", note: "같은 자리인데 9.6%로 급락" },
+      { n: "⑬", slug: "ace-paired-board-strategy", board: "A♠A♥6♦", anchor: "A 페어 보드 트립스", note: "80.1% 벳" },
     ],
   },
 ];
@@ -124,10 +86,20 @@ export default function SolverClient() {
         <h1 className="text-2xl font-bold">
           무료 GTO 솔버 — 홀덤 GTO 표를 브라우저에서
         </h1>
-        <p className="mt-3 text-muted-foreground">
-          169개 핸드의 전략을 13×13 GTO 표로 계산합니다. 레인지 차트·벳 사이즈·EV·
-          에퀴티 실현율까지 회원가입도, 결제도, 횟수 제한도 없이. 홀덤마스터가
-          한국어로 제공하는 오픈소스 GTO 솔버입니다.
+        {/*
+          ★2026-08-14 — h1 직후에 **직답 단락**을 넣었다.
+          이 페이지의 28일 GSC는 쿼리 1·노출 1·32위였다. 병목은 CTR이 아니라 순위인데,
+          h1 다음 문단이 «기능 나열»이라 「홀덤 gto 표」(210)·「홀덤 gto」(390)로 들어오는
+          검색자의 질문에 답하는 문장이 페이지 첫 화면에 **하나도 없었다**(답은 FAQ까지 내려가야 나왔다).
+          🔴 서술은 전부 아래 FAQ·형제 섹션에 이미 있는 사실만 옮겼다 — 새 주장 없음.
+        */}
+        <p className="mt-3 text-left text-muted-foreground">
+          <strong className="text-foreground">홀덤 GTO 표</strong>는 169개 핸드 각각을 어떤
+          빈도로 벳·체크·폴드해야 하는지 13×13 격자에 색으로 정리한 표입니다. 이 페이지의
+          솔버에 내 상황(양쪽 레인지·보드·스택)을 넣으면 그 표를 그 자리에서 계산해 줍니다 —
+          <strong className="text-foreground"> 다운로드도 회원가입도 결제도 없는 무료 웹 프로그램</strong>
+          입니다. 플랍 이후(포스트플랍) 헤즈업 상황 전용이고, 핸드별 EV·에퀴티·에퀴티
+          실현율까지 같은 화면에서 봅니다.
         </p>
         <a
           href={SOLVER_URL}
@@ -147,9 +119,16 @@ export default function SolverClient() {
         </p>
       </section>
 
-      {/* 사용법 4단계 */}
+      {/*
+        사용법 4단계
+        ★2026-08-14 H2 재조준 — 「사용법 — 4단계면 끝」에는 조준할 낱말이 없었다.
+        「홀덤 솔버」(70)의 구글 자동완성 1번이 **사용법**이다(사용법·다운로드·무료·뜻·추천).
+        ⚠ 여기 H2들을 «질문형 70%»(§14-A)로 기계 변환하지 마라 — 이 페이지는 블로그 글이
+          아니라 도구 허브다(`/pub-promotion`이 같은 이유로 게이트 예외 승인돼 있다).
+          질문형이 맞는 자리는 아래 FAQ 8문항이고, 실제로 거기에 몰아 뒀다.
+      */}
       <section className="mt-12">
-        <h2 className="text-xl font-bold">사용법 — 4단계면 끝</h2>
+        <h2 className="text-xl font-bold">홀덤 솔버 사용법 — 4단계면 끝</h2>
         <ol className="mt-4 space-y-4">
           {STEPS.map((s) => (
             <li key={s.n} className="flex gap-4">
@@ -217,7 +196,7 @@ export default function SolverClient() {
 
       {/* 교육 예제 13개 스팟 해설 (허브-스포크 내부링크) */}
       <section className="mt-12">
-        <h2 className="text-xl font-bold">교육 예제 13개 스팟 — 전편 해설</h2>
+        <h2 className="text-xl font-bold">교육 예제 13개 스팟 — 홀덤 GTO 전략 전편 해설</h2>
         <p className="mt-2 text-sm text-muted-foreground">
           솔버의 「결과 바로 보기」에 들어 있는 13개 스팟을 한 편씩 풀어 썼습니다. 계산
           조건·액션 빈도·레인지 구성·EQR을 전부 이 솔버로 뽑은 1차 데이터로 설명합니다.
@@ -230,8 +209,10 @@ export default function SolverClient() {
               {g.items.map((s) => (
                 <li key={s.slug} className="text-sm">
                   <span className="text-muted-foreground">{s.n}</span>{" "}
+                  <span className="font-semibold">{s.board}</span>
+                  <span className="mx-1.5 text-muted-foreground">·</span>
                   <Link href={`/blog/${s.slug}`} className="font-semibold text-primary hover:underline">
-                    {s.board}
+                    {s.anchor}
                   </Link>{" "}
                   <span className="text-muted-foreground">— {s.note}</span>
                 </li>
@@ -267,11 +248,14 @@ export default function SolverClient() {
         </ul>
       </section>
 
-      {/* FAQ */}
+      {/*
+        FAQ — 배열은 `./faq.ts`가 단일 출처다(서버 `page.tsx`의 FAQPage 스키마와 공유).
+        ★2026-08-14 분리 전에는 이 파일에 인라인으로 있었고 JSON-LD도 여기서 나갔다.
+      */}
       <section className="mt-12">
         <h2 className="text-xl font-bold">자주 묻는 질문</h2>
         <div className="mt-4 space-y-5">
-          {FAQ.map((f) => (
+          {SOLVER_FAQ.map((f) => (
             <div key={f.q}>
               <p className="font-semibold">Q. {f.q}</p>
               <p className="mt-1 text-sm text-muted-foreground">A. {f.a}</p>
@@ -285,22 +269,6 @@ export default function SolverClient() {
         이 솔버는 오픈소스 WASM Postflop(AGPL-3.0)을 기반으로 홀덤마스터가
         한국어화·개선한 버전이며, 수정된 소스코드 전체가 공개되어 있습니다.
       </p>
-
-      {/* FAQ 구조화 데이터 */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: FAQ.map((f) => ({
-              "@type": "Question",
-              name: f.q,
-              acceptedAnswer: { "@type": "Answer", text: f.a },
-            })),
-          }),
-        }}
-      />
     </div>
   );
 }
