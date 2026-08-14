@@ -279,3 +279,64 @@ create policy "popups_read" on public.popups for select using (
   and (starts_at is null or starts_at <= now())
   and (ends_at is null or ends_at >= now())
 );
+
+-- ============================================================
+-- 10. trainer_attempts — GTO 트레이너 학습 기록 (솔버 하위도메인이 쓴다)
+-- ============================================================
+-- ★2026-08-15 편입. 이 테이블은 **실제 DB에는 이미 있었는데 이 파일에는 없었다** —
+--   솔버 세션이 `handoff-to-main-site/supabase_trainer_attempts.sql`로 넘긴 것을
+--   대시보드에서 직접 실행했기 때문이다(REST로 존재 확인: 200).
+--   스키마 파일과 실제 DB가 갈린 상태였고, 이 파일만 보고 재구축하면 **RLS까지 통째로 빠진다.**
+--   🔴 이 표의 RLS가 빠지면 **남의 학습 기록이 그대로 노출된다.** 지우지 말 것.
+--
+-- 쓰는 곳: solver.holdemmaster.com(별도 배포)의 GTO 트레이너.
+--   본체와 **같은 Supabase 프로젝트**에 직접 붙는 방식이라 본체 코드는 손대지 않는다.
+--   로그인하지 않으면 기록은 기기(localStorage)에만 남고 아무것도 전송되지 않는다.
+--   → `/solver` 랜딩 FAQ 「학습 기록은 어디에 저장되나요」가 이 동작을 설명한다.
+--     **기능을 바꾸면 그 FAQ도 같이 고쳐야 한다.**
+
+create table if not exists public.trainer_attempts (
+  id           uuid primary key default gen_random_uuid(),
+  user_id      uuid not null references auth.users(id) on delete cascade,
+
+  -- 기기에서 만든 고유값. 같은 기록을 여러 번 올려도 중복되지 않게 하는 열쇠
+  client_id    text not null,
+
+  question_id  text not null,          -- "프리셋:노드:핸드"
+  preset_id    text not null,          -- 예: srp-dry-ace
+  category     text not null,          -- srp | 3bp | blind
+  hand_pair    int  not null,          -- 내 핸드 (두 장을 정수로 인코딩)
+  selected_action int not null,        -- 내가 고른 액션 번호
+  best_action     int not null,        -- EV가 가장 높았던 액션 번호
+  ev_loss_bb   numeric(10, 4) not null,-- 내 선택의 EV 손실 (bb)
+  played_at    timestamptz not null,   -- 기기에서 푼 시각
+  created_at   timestamptz not null default now(),
+
+  unique (user_id, client_id)
+);
+
+create index if not exists trainer_attempts_user_played_idx
+  on public.trainer_attempts (user_id, played_at desc);
+
+alter table public.trainer_attempts enable row level security;
+
+drop policy if exists "본인 기록 조회" on public.trainer_attempts;
+create policy "본인 기록 조회"
+  on public.trainer_attempts for select
+  using (auth.uid() = user_id);
+
+drop policy if exists "본인 기록 저장" on public.trainer_attempts;
+create policy "본인 기록 저장"
+  on public.trainer_attempts for insert
+  with check (auth.uid() = user_id);
+
+drop policy if exists "본인 기록 수정" on public.trainer_attempts;
+create policy "본인 기록 수정"
+  on public.trainer_attempts for update
+  using (auth.uid() = user_id)
+  with check (auth.uid() = user_id);
+
+drop policy if exists "본인 기록 삭제" on public.trainer_attempts;
+create policy "본인 기록 삭제"
+  on public.trainer_attempts for delete
+  using (auth.uid() = user_id);
