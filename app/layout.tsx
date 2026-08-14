@@ -159,7 +159,24 @@ export const metadata: Metadata = {
   formatDetection: { email: false, telephone: false, address: false },
   robots: { index: true, follow: true },
   verification: {
-    other: { "naver-site-verification": "b978aa0f38cbfd49ce7e06253e0bcb6f9e2efd18" },
+    /**
+     * 네이버 서치어드바이저 소유확인 — **값이 두 개다. 하나도 지우지 말 것.**
+     * 서치어드바이저는 **호스트 단위로 사이트를 등록**하고 각 사이트마다 다른 값을 준다.
+     *   b978… = `https://holdemmaster.com`   (www 없음 · 2026-07-08 등록)
+     *   ad6b… = `https://www.holdemmaster.com` (www · 2026-08-15 등록)
+     * ★www를 뒤늦게 추가한 이유: 우리 정본은 canonical·사이트맵 전부 **www**인데
+     *   등록은 non-www 하나뿐이었다. 웹마스터도구의 「요청(수집·사이트맵)」은
+     *   **등록된 호스트 하위 URL만** 받으므로 www URL을 넣을 수가 없었다 —
+     *   GTO 13편 중 5편과 `/hand-chart`가 네이버 미색인이던 유력한 원인이다(2026-08-15 실측).
+     * ⚠ Next의 `verification.other`는 값에 배열을 주면 같은 name의 meta를 **여러 개** 렌더한다.
+     *   네이버는 각 사이트의 값을 각자 찾으므로 둘 다 있어야 양쪽 소유확인이 유지된다.
+     */
+    other: {
+      "naver-site-verification": [
+        "b978aa0f38cbfd49ce7e06253e0bcb6f9e2efd18",
+        "ad6bd8de7952760de5147c6755301779d0b9b4ac",
+      ],
+    },
   },
   icons: {
     icon: [
