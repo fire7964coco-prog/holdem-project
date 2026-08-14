@@ -31,7 +31,7 @@ export default function GtoSeriesNav({ slug }: { slug: string }) {
       </div>
 
       <p className="mt-2 text-sm text-muted-foreground">
-        홀덤마스터 GTO 솔버의 교육 예제 13개 스팟을 한 편씩 풀어 쓴 시리즈입니다. 계산 조건과
+        홀덤마스터 GTO 솔버의 교육 예제 스팟을 한 편씩 풀어 쓴 시리즈입니다. 계산 조건과
         전체 목차는{" "}
         <Link href="/solver" className="font-semibold text-primary hover:underline">
           무료 GTO 솔버
@@ -78,7 +78,7 @@ export default function GtoSeriesNav({ slug }: { slug: string }) {
             <div className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
               시리즈 끝 →
             </div>
-            <div className="mt-0.5 text-sm font-semibold">13개 스팟 전체 목차 보기</div>
+            <div className="mt-0.5 text-sm font-semibold">스팟 전체 목차 보기</div>
           </Link>
         )}
       </div>

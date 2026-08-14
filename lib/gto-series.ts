@@ -44,6 +44,13 @@ export const GTO_SERIES: GtoSeriesItem[] = [
   { n: 13, mark: "⑬", slug: "ace-paired-board-strategy", label: "AA6 A 페어 보드", group: "블라인드전" },
 ];
 
+/**
+ * 🔴 **개수는 반드시 여기서 «계산»해 쓴다. 문장에 숫자를 박지 마라.**
+ *   CLAUDE.md §1 — 「발행 개수를 문서에 적지 마라. 적는 순간 낡는다」.
+ *   2026-08-15에 랜딩·FAQ·스키마에 「13개」가 하드코딩돼 있던 것을 사장님이 잡았다
+ *   (「나는 주기적으로 포스팅을 계속 할 건데 13개보다 예시가 더 많을 거 아니야」).
+ *   시리즈에 글을 추가하면 위 배열에 한 줄 넣는 것만으로 화면·스키마가 전부 따라온다.
+ */
 export const GTO_SERIES_TOTAL = GTO_SERIES.length;
 
 /** 이 slug가 시리즈에 속하면 그 항목을, 아니면 null. */
