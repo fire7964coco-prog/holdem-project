@@ -392,9 +392,18 @@ export default function SolverClient() {
             <span className="font-semibold text-blue-500">0.05bb 이하</span> = 허용 가능 ·{" "}
             <span className="font-semibold text-orange-500">그 이상</span> = 다시 볼 스팟
           </li>
+          {/*
+            ★2026-08-15 — 「문제가 13개뿐인가?」라는 오해가 실제로 나왔다(사장님).
+            13은 «스팟» 수이고 문제 수가 아니다. 라이브 데이터(trainer-decisions.json, 1.61MB)를
+            받아 33개 노드마다 «행동할 차례인 플레이어의 레인지에서 가중치가 0이 아닌 핸드»를
+            직접 세었더니 **13,743**이다(SRP 7종 각 1,364~1,477 · 3벳팟 3종 각 193~227 ·
+            블라인드전 3종 각 1,008~1,106). 요청서의 「유효 핸드 13,743개」와 정확히 일치한다.
+            ⚠ 08-13엔 번들에서 확인이 안 돼 뺐던 수치다. 데이터 파일이 바뀌면 다시 세라.
+          */}
           <li className="text-muted-foreground">
-            출제 범위는 <strong className="text-foreground">13개 교육 프리셋 · 33개 결정 노드</strong>
-            (계산 목표 오차 0.5%) — 싱글레이즈팟·3벳팟·블라인드전으로 좁혀 풀 수도 있습니다
+            출제 범위는 13개 스팟 · 33개 결정 노드에서 뽑는{" "}
+            <strong className="text-foreground">문제 13,743가지</strong>입니다(계산 목표 오차 0.5%)
+            — 싱글레이즈팟·3벳팟·블라인드전으로 좁혀 풀 수도 있습니다
           </li>
           <li className="text-muted-foreground">
             핸드는 <strong className="text-foreground">실제 GTO 레인지 비중대로</strong> 뽑힙니다 —
