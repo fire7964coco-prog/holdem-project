@@ -24,6 +24,7 @@ import ReadingProgressBar from "@/components/reading-progress-bar";
 import ClusterMinimap, { PILLAR_ICONS } from "@/components/cluster-minimap";
 import RankingTable from "@/components/ranking-table";
 import CalcCtaButton from "@/components/calc-cta-button";
+import GtoSeriesNav from "@/components/gto-series-nav";
 import { KO_CLUSTERS, clusterForSlug } from "@/lib/pillar-clusters";
 import Image from "next/image";
 import { useState, useRef, useEffect, useCallback } from "react";
@@ -560,6 +561,13 @@ export default function BlogPost({
                 )
               }
             </article>
+
+            {/*
+              GTO 솔버 시리즈 내비 — 시리즈 13편에서만 렌더된다(그 외에는 null).
+              ★2026-08-15 신설. 아래 「이전 글 / 다음 글」은 **날짜순**인데 시리즈 13편이
+              전부 같은 날 발행이라 순서가 사실상 임의였다. 시리즈 순서를 따로 준다.
+            */}
+            <GtoSeriesNav slug={post.slug} />
 
             {/* Prev / Next Navigation — 강조형 CTA 버튼 */}
             <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-4">
