@@ -192,7 +192,7 @@ Statt $10.000 auszugeben, trittst du in einem $500-Turnier gegen 19 andere Spiel
 
 ### Option B: Online-Vorregistrierung
 Die meisten großen Live-Festivals lassen dich vorab online registrieren:
-- Richte ein Konto auf der Plattform des Events ein (z. B. die WSOP-LIVE-App für die WSOP, die "Events"- und "Live"-Tabs in der PokerStars-Lobby für EPT/APPT-Events)
+- Richte ein Konto auf der Plattform des Events ein (z. B. die WSOP-LIVE-App für die WSOP, die „Events“- und „Live“-Tabs in der PokerStars-Lobby für EPT/APPT-Events)
 - Zahle das Buy-in online
 - Komm zum Veranstaltungsort → Ausweisprüfung → Seat Card an einem Kiosk drucken oder am Tresen abholen
 - Spart die Registrierungsschlange – lohnt sich für große Events

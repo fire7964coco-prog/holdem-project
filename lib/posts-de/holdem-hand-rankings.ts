@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Die Reihenfolge der Pokerhände von der besten zur schlechtesten lautet: Royal Flush, Straight Flush, Vierling, Full House, Flush, Straße, Drilling, Zwei Paare, Paar und High Card.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-08-13",
+  updated: "2026-08-16",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "14 Min.",
@@ -405,7 +405,7 @@ A. Nur ein Straight Flush – und der kann hier nie ein Royal Flush sein, weil a
 
 **Q. Was ist höher – Pik oder Kreuz beim Poker?**
 
-A. Weder noch. Alle vier Farben sind im Texas Hold'em gleichwertig und machen eine Hand nie stärker. Zeigen zwei Spieler dieselben fünf Ränge in unterschiedlichen Farben, wird der Pot geteilt. Für den Vergleich von Händen kennt Hold'em keine Farb-Rangfolge. Eine Reihenfolge der Farben taucht nur bei Formalien abseits des Pots auf: Wird ein **neuer Cash-Tisch** eröffnet, zieht jeder eine Karte, und die höchste nach Rang **und Farbe** bekommt den Button – im Turnier startet er dagegen im ersten Sitz rechts vom Dealer. Und den überzähligen Chip nach Farbe zu vergeben, ist Stud-Praxis.
+A. Weder noch. Alle vier Farben sind im Texas Hold'em gleichwertig und machen eine Hand nie stärker. Zeigen zwei Spieler dieselben fünf Ränge in unterschiedlichen Farben, wird der Pot geteilt. Für den Vergleich von Händen kennt Hold'em keine Farb-Rangfolge. Eine Reihenfolge der Farben taucht nur bei Formalien abseits des Pots auf: Wird ein **neuer Cash-Tisch** eröffnet, zieht jeder eine Karte, und die höchste nach Rang **und Farbe** bekommt den Button – im Turnier startet er dagegen beim ersten Chipstack rechts vom Dealer. Und den überzähligen Chip nach Farbe zu vergeben, ist Stud-Praxis.
 
 **Q. Was ist die niedrigste (schlechteste) Hand im Poker?**
 

@@ -220,7 +220,7 @@ Die ==**Gods of Poker (GOP)**== kehren für ihren zweiten Incheon-Stopp 2026 nac
 
 Für einen Spieler, der ohnehin fürs Turnier in Korea ist: Renn-Morgen bedeutet 6-Uhr-Wecker (Start ist um 8, Sammeln rund eine Stunde vorher), 42K durch das Zentrum von Seoul, Ziel im Olympiapark. ==r:Wer unter 4 Stunden läuft==, ist gegen Mittag durch und kann am späten Nachmittag in Paradise City am Tisch sitzen. Bei 4:30–5:00 – und das Zeitlimit liegt bei 5 Stunden – wird daraus ein Abendprogramm. Die Tische laufen rund um die Uhr, insofern geht beides an einem Tag. Praktisch niemand schreibt über diese Überschneidung.
 
-🪶 **Ein ehrlicher Vorbehalt: Es geht — aber es wird nicht dein bestes Poker.** Nach 42K ist dein Glykogen leer, du bist dehydriert und hast schlecht geschlafen — genau der Zustand, in dem Spieler zu weit callen und zu lange sitzen bleiben. Wenn du dich an dem Abend doch setzt, leg dir vorher eine kurze Session und ein Stop-Loss fest, oder schieb das Poker auf den nächsten Tag. Die Tische laufen das ganze Jahr; der Marathon ist ein einziger Morgen.
+🪶 **Ein ehrlicher Vorbehalt: Es geht – aber es wird nicht dein bestes Poker.** Nach 42K ist dein Glykogen leer, du bist dehydriert und hast schlecht geschlafen – genau der Zustand, in dem Spieler zu weit callen und zu lange sitzen bleiben. Wenn du dich an dem Abend doch setzt, leg dir vorher eine kurze Session und ein Stop-Loss fest, oder schieb das Poker auf den nächsten Tag. Die Tische laufen das ganze Jahr; der Marathon ist ein einziger Morgen.
 
 - **Daten:** 30. Oktober – 8. November 2026
 - **Austragungsort:** Paradise City Casino, Incheon (kostenloser Shuttle ab ICN Terminal 1)
