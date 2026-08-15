@@ -5,9 +5,12 @@ import { CALCULATOR_FAQ } from "./faq";
 import HubPage from "@/components/hub-page";
 
 export const metadata: Metadata = {
-  title: "ICM 계산기·홀덤 확률 계산기 — 아웃츠·팟오즈·SPR·M값 무료",
+  // ★2026-08-16 CTR 재조준: 28일 GSC에서 이 페이지가 받는 최대 쿼리는 「홀덤 spr」(138노출·9.7위)인데
+  //   구 제목은 SPR이 맨 뒤에 묻혀 있었고 45자라 SERP에서 잘렸다. 클릭은 3개 쿼리 합계 0이었다.
+  //   → 최대 노출 키워드를 앞으로 빼고 32자 안으로. 훅 수치는 SPRCalc의 「SPR < 4 = 커밋 구간」과 동일 기준.
+  title: "SPR·팟오즈·ICM을 3초에 — 홀덤 계산기 8종 무료",
   description:
-    "칩 리더인데 왜 그 콜이 손해일까? ICM 계산기로 토너먼트 칩의 진짜 상금 가치를 즉시 확인하세요. 아웃츠·팟오즈·족보·스타팅핸드·SPR·M값·푸시폴드까지 홀덤 계산기 8종 무료.",
+    "SPR이 4 미만이면 이미 커밋 구간입니다. 스택 ÷ 팟만 넣으면 바로 나옵니다. 아웃츠·팟오즈·ICM·M값·푸시폴드까지 홀덤 계산기 8종 무료.",
   alternates: {
     canonical: `${SITE}/calculator`,
     languages: {

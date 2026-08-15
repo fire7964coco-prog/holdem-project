@@ -7,11 +7,19 @@ import { FAQ_ITEMS } from "./faq-data";
 // ★2026-08-02: metadata export가 없어 홈 canonical·홈 제목이 그대로 나갔다.
 //   28일 「오마하 룰」 24노출 9.0위로 실제 수요를 받는 페이지다.
 export const metadata: Metadata = {
-  title: "오마하 포커 규칙 완벽 가이드 — PLO 홀 카드 4장, 팟 리밋 완전 정리",
+  title: "4장 받고 2장만 씁니다 — 오마하 규칙과 팟리밋 베팅",
   description:
-    "⚡오마하 포커⚡ 기초 규칙 완벽 가이드. 홀 카드 4장 사용법, 팟 리밋 베팅 방식, 텍사스 홀덤과의 차이점, PLO 핵심 전략 팁까지 한 페이지에서 마스터하세요.",
+    "홀 카드가 4장이니 좋은 걸 골라 쓰면 된다고 생각하면 팟을 잃습니다. 반드시 2장만 쓰는 규칙, 팟 크기가 상한인 팟리밋 베팅, 홀덤과 갈리는 지점을 정리했습니다.",
   robots: { index: true, follow: true },
   alternates: { canonical: `${SITE}/rules/omaha` },
+  // ★2026-08-16: og:title이 루트 기본값(「홀덤마스터 — 텍사스 홀덤 완벽 가이드」)으로 나가
+  //   SNS 공유 시 페이지와 무관한 제목이 붙었다. 페이지 고유값으로 고정한다.
+  openGraph: {
+    title: "4장 받고 2장만 씁니다 — 오마하 규칙과 팟리밋 베팅",
+    description: "홀 카드 4장 중 반드시 2장만 쓰는 오마하 핵심 규칙과, 팟 크기가 상한인 팟리밋 베팅을 홀덤과 비교해 정리했습니다.",
+    url: `${SITE}/rules/omaha`,
+    type: "article",
+  },
 };
 
 /**
@@ -27,8 +35,8 @@ export default function Page() {
     {
       "@context": "https://schema.org",
       "@type": "Article",
-      headline: "오마하 포커 규칙 완벽 가이드 — PLO 홀 카드 4장, 팟 리밋 완전 정리",
-      description: "오마하 포커 기초 규칙 가이드. 홀 카드 4장 사용법, 팟 리밋 베팅 방식, 텍사스 홀덤과의 차이점, PLO 핵심 전략 팁까지 한 페이지에 정리했습니다.",
+      headline: "4장 받고 2장만 씁니다 — 오마하 규칙과 팟리밋 베팅",
+      description: "홀 카드 4장 중 반드시 2장만 쓰는 오마하 핵심 규칙, 팟 크기가 상한인 팟리밋 베팅, 텍사스 홀덤과 갈리는 지점을 한 페이지에 정리했습니다.",
       author: { "@type": "Organization", name: "홀덤마스터", url: SITE },
       publisher: { "@type": "Organization", name: "홀덤마스터", url: SITE },
       mainEntityOfPage: `${SITE}/rules/omaha`,

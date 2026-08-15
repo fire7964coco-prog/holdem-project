@@ -93,10 +93,10 @@ export default function Omaha() {
   return (
     <>
       <SEO
-        title="오마하 포커 규칙 완벽 가이드 — PLO 홀 카드 4장, 팟 리밋 완전 정리"
-        description="⚡오마하 포커⚡ 기초 규칙 완벽 가이드. 홀 카드 4장 사용법, 팟 리밋 베팅 방식, 텍사스 홀덤과의 차이점, PLO 핵심 전략 팁까지 한 페이지에서 마스터하세요."
+        title="4장 받고 2장만 씁니다 — 오마하 규칙과 팟리밋 베팅"
+        description="홀 카드가 4장이니 좋은 걸 골라 쓰면 된다고 생각하면 팟을 잃습니다. 반드시 2장만 쓰는 규칙, 팟 크기가 상한인 팟리밋 베팅, 홀덤과 갈리는 지점을 정리했습니다."
         keywords="오마하 포커 규칙, PLO, 팟 리밋 오마하, 오마하 하이로, 오마하 홀 카드 4장, 오마하 하는법"
-        path="/rules/omaha"
+        path="/rules/omaha"
       />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-16">
@@ -113,7 +113,7 @@ export default function Omaha() {
         {/* Hero */}
         <motion.div initial={false} animate={{ opacity: 1, y: 0 }} className="mb-8">
           <h1 className="text-3xl md:text-5xl font-serif font-bold text-foreground leading-tight mb-4">
-            오마하 포커 규칙 완벽 가이드
+            오마하 포커 규칙 — 4장 받고 2장만 쓴다
           </h1>
           <p className="text-lg text-muted-foreground mb-4 leading-relaxed">
             오마하는 텍사스 홀덤 다음으로 세계에서 가장 인기 있는 포커 게임입니다.
