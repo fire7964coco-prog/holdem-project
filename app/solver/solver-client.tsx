@@ -530,9 +530,25 @@ export default function SolverClient() {
         </div>
       </section>
 
-      {/* ── 마지막 CTA + 오픈소스 고지 (AGPL) ────────────────────────── */}
+      {/* ── 마지막 CTA + 설치 안내 + 오픈소스 고지 (AGPL) ─────────────── */}
       <section className="mt-12 text-center">
         <Cta label="무료 GTO 솔버 실행하기 →" />
+        {/*
+          설치 안내 — ★2026-08-15. 솔버가 PWA로 배포됐다(라이브 확인:
+          `manifest.webmanifest` `start_url: "/?view=trainer"` · `sw.js` 헤더 `Cache-Control: no-cache`).
+          🔴 **「오프라인으로 GTO 계산 가능」이라고 쓰지 마라 — 사실과 다르다.**
+             오프라인에서 되는 것은 **교육 예제 열람과 트레이너 풀이**뿐이고,
+             커스텀 스팟 직접 계산은 계산 엔진을 한 번 내려받은 뒤에만 돈다.
+             **라이브를 열어봐도 확인되지 않는 종류의 오류**라 주석으로 못박아 둔다(솔버 세션 회신 경고).
+          🪶 자리를 하단에 둔 이유: 설치는 «쓸 마음이 이미 있는 사람»에게만 의미가 있다.
+             솔버 앱 자체도 첫 진입엔 배너를 띄우지 않고 «예제 2개 열람 / 트레이너 3문제» 뒤에 띄운다.
+          🔴 개수를 쓰지 않는다(CLAUDE.md §1) — 「교육 예제 13종」처럼 박으면 낡는다.
+        */}
+        <p className="mt-3 text-xs text-muted-foreground">
+          홈 화면에 설치하면 교육 예제와 트레이너가 기기에 저장돼{" "}
+          <strong className="text-foreground">인터넷이 끊겨도</strong> 문제를 풀 수 있습니다 —
+          크롬·엣지는 주소창의 설치 아이콘, 아이폰은 공유 → 「홈 화면에 추가」.
+        </p>
       </section>
       <p className="mt-8 text-xs text-muted-foreground">
         이 솔버는 오픈소스 WASM Postflop(AGPL-3.0)을 기반으로 홀덤마스터가
