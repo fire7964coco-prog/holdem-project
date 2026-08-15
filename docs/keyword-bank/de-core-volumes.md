@@ -762,3 +762,47 @@ Würfelpoker·Kniffel(다른 게임) · rote Karten(축구) · Bridgerton rake �
    zh는 「다음해 3/1~6/30 신고 + 완납증명」, es는 원천징수 존재만 알리고 **퍼센트는 일부러 안 준다**(§12-B).
    de는 독일 세법·EU 거주자 기준으로 **새로 조사해야** 한다.
 3. **`wsop 2026` CPC $18.21**은 이 사이트에서 본 가장 높은 축에 속한다 — 상업 가치가 크다는 신호다.
+
+## de 대회 포스팅 후보 — 전수 실측 (2026-08-15)
+
+> 사장님 질문 「de에 들어갈 홀덤대회 포스팅은 뭐 없을까?」에 답하려 30개를 더 쟀다.
+> 라쿠 · German / Germany · 12개월 평균. **필라(`holdem-tournament`)가 이미 가진 것과 갈라 적는다.**
+
+### ★후보 ① de 전용 WSOP 가이드 — 이 축 최대 (~9,800/월)
+
+| 키워드 | 월간 | 메모 |
+|---|---:|---|
+| wsop / world series of poker | **4,400 / 4,400** | 약어와 풀네임이 **같은 크기** — 둘 다 제목에 넣을 값이 있다 |
+| wsop 2026 | 720 | 12개월 **+514%** · CPC **$18.21** |
+| wsop main event | 260 | CPC $11.38 · **2025-07에 2,900**(시즌 10배) |
+| poker bracelet | 260 | +22% · 「브레이슬릿이 뭔가」 = **H2로 흡수**(별도 글은 과함) |
+| poker las vegas | 170 | −40% · 여행 의도 · **H2로 흡수** |
+| poker steuern deutschland / poker steuern | 30 / 20 | 🔴 **단독 글은 비효율** — 핸드오프에 「세금 FAQ 흡수(승인·미착수, BFH X R 8/21 확보)」로 올라와 있는데 볼륨이 50이다. **WSOP 글의 세금 절로 흡수**하는 게 맞다(ja·zh·zh-hant가 전부 그 구조다) |
+
+### 후보 ② WSOP Europe / King's Rozvadov — 「독일인이 실제로 갈 수 있는 WSOP」 (~740/월)
+
+| 키워드 | 월간 | 메모 |
+|---|---:|---|
+| wsop europe | 480 | 2025-09에 **1,900**. WSOPE는 가을 |
+| wsop europe 2026 | 260 | **2025-08 0 → 2026-04 880** = 신규 발생 |
+| kings resort poker / king's resort rozvadov | 30 / 170 | |
+
+★ **라스베이거스는 멀지만 Rozvadov는 뮌헨에서 2시간**이다. 필라가 이미 King's Resort와
+「왜 독일 시리즈가 체코에서 열리나」를 다뤄 **근거 자산이 있다.**
+⚠ 후보 ①과 카니발 위험 — ①은 「라스베이거스 본대회」, ②는 「유럽에서 치는 WSOP」로 **역할을 갈라야** 한다.
+
+### 후보 ③ Spielbank 포커 — 도시별 로컬 (~480/월)
+
+`spielbank berlin poker` **210** · `casino schenefeld poker` **210** · `spielbank poker` 40 · `casino baden poker` 20(오스트리아)
+
+⚠ **필라가 이미 Berlin·Schenefeld·Bayern을 다룬다.** 별도 글을 만들면 자기 카니발이다.
+→ 판단: «도시별 개별 검색 의도»라 분리 가치는 있지만, **한국의 `/pub`(내 근처 홀덤펍) 같은 도구형**이
+   글보다 나을 수 있다. 착수 전에 필라의 해당 절이 이미 몇 위인지 먼저 볼 것.
+
+### 🔴 만들지 말 것 (볼륨 0 또는 필라가 흡수)
+
+`ggpoker turnier` · `poker urlaub las vegas` · `wie funktioniert ein pokerturnier` · `pokerturnier ablauf` ·
+`pokergewinne steuern` · `sind pokergewinne steuerpflichtig` · `wsop qualifier online` ·
+`poker gewinn versteuern österreich` → **전부 데이터 없음**
+`pokerturnier regeln` 20 · `poker turnier tipps` 10 · `pokerturniere kalender` 10 · `poker turnierplan` 10 ·
+`poker preisgeld` 10 · `ept 2026` 90 · `wpt 2026` 10 → 필라가 이미 덮거나 볼륨이 없다
