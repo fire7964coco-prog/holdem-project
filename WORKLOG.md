@@ -3,6 +3,68 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-08-16 (2) — **검수장 지시 2건 반영 15자리 + Rule 85 종결** (`3fb3af6d`·`89c39b15`·`9b57aa8d`)
+
+수신: `발신-본체-wpt재판정-2026-08-16.md`(검수장 `4690709`) + 지시서 `fix-handoff-wpt91-eptappt-2026-08-16.md`.
+회신: **`docs/reply-to-review-2026-08-16.md`**.
+
+| 정정 | 규모 | 내용 |
+|---|---|---|
+| ① `wpt-australia` FAQ | **8로케일** | 「The Star는 시작 시각만 공표」(거짓) → 「공식 Championship 페이지가 등록 개시를 게시: **시작 1시간 전**」 |
+| ② `holdem-tournament` | **7로케일** | 「PokerStars Live 앱」 → 「PokerStars 로비의 'Events'·'Live' 탭」 |
+| ③ `hand-rankings` #65 | de 1곳 | 「첫 **좌석**」 → 「첫 **Chipstack**」 (Rule 85 축어 대조) |
+
+### 🔴 이번 세션 최대 성과 — **검수장 대체안에서 오류를 잡았다**
+
+지시서는 창구를 「PokerStars **데스크톱 클라이언트**」로 특정했다. 1차 출처 축어는 다르다:
+
+> `pokerstarslive.com/qualify/` — "Open the PokerStars software on your device, then head to the
+> 'Events' and 'Live' tabs in the game lobby" / "installed PokerStars on your **PC, Mac, iOS or Android** device"
+
+**데스크톱 한정이 아니다.** 지시서를 그대로 옮겼으면 **새 결함을 7로케일에 심을 뻔했다.**
+→ [[review-mechanize-not-repeat]]의 「검수장이 준 대체 수치도 검산하라」가 정확히 값을 했다.
+
+🪶 부수: 「PokerStars LIVE App」은 **실재한다** — 공식 문구가 「**Follow** our Live events with the
+PokerStars Live app」이다. **앱이 없는 게 아니라 용도가 «팔로우»이지 «등록»이 아니었다.**
+「그런 앱은 없다」로 굳지 않도록 회신에 남겼다.
+
+### 우리가 틀렸던 것 — 참인 문장을 지우고 거짓을 넣었다
+
+`af6c77c8`(08-13)이 「등록은 시작 1시간 전 개시」를 **내부 모순으로 보고 지우면서** 그 자리에
+「The Star는 시작 시각만 공표한다」는 **메타 주장**을 넣었다. 1차 출처 축어는 정반대다:
+
+> `starpoker.com.au/tournaments/wpt-australia-2026/14031`
+> **"Tournament registration opens 1 hour before the start of the event."**
+
+🟢 검수장의 「보일러플레이트가 아니라 페이지별 실데이터」도 **우리가 재실측해 확인**했다 —
+Event #1(`/13736`)엔 같은 conditions 블록이 있는데 **그 한 문장만 없다.**
+
+### Rule 85 — 「없다」가 아니라 「룰북마다 다르다」였다
+
+```
+85. Button: At the start of an Event, the button will begin in the seat with the
+first chip stack to the dealer's right.
+```
+
+검수장은 「TDA 2024·RRoP 어디에도 없다」고 했고 그건 맞다 — **우리 근거는 처음부터 WSOP였다.**
+🔴 **출처가 다르면 둘 다 참일 수 있다.** 원장엔 「부재」가 아니라 「룰북별 상이」로 적어 달라고 회신했다.
+그리고 원문 대조에서 **우리 서술이 «참이지만 불완전»한 걸 찾았다**(빈 좌석은 건너뛴다).
+
+### 🪶 「수정이 새 결함을 만든다」가 또 나왔다
+
+`check:de-style` 🔴 2건이 떴는데 **둘 다 내가 만든 것**이었다 —
+① 직전 커밋 `3fb3af6d`가 ASCII 따옴표(독일식은 `„…“`) ②`33562294`가 D12를 닫은 **직후**
+`ec9b3c69`(D유형 경고 문장)가 em dash 2개를 새로 들여왔다. → de 43편 다시 🔴 0건.
+
+### 검증
+
+`assert-claims` **결함 15개 실측 0 · 자산 2건 1 유지**(지시서 합격 기준) · `audit:hard` 8로케일 **전수 🔴 0건**
+(드리프트 zh **6→5**) · 빌드 **631페이지** · 산출물 직접 판정 **15/15** · `check:de-style` **🔴 0건**
+
+🔴 **남은 회신 대기 1건** — GOP 메인 바이인 `KRW 2,7 Mio.` 출처 귀속(de `korea-marathon` #55). 미착수.
+
+---
+
 ## 2026-08-16 — **GSC 동영상 구조화 데이터 2건 해결** (커밋 `8c079ba2` · 배포 확인 완료)
 
 GSC 「동영상 항목 표시 개선」 2건(각 1항목)의 원인은 **한 자리**였다 —
