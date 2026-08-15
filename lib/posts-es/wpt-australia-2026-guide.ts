@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "WPT Australia 2026: 10–30 sep, The Star Sydney. Dos eventos estrella: AUD $1,500 WPT Prime (17–22 sep) y AUD $5,000 WPT Championship (24–30 sep). Satélites presenciales desde AUD $270, con clasificatorios al Championship por $290 y $550. El premio de primer puesto del Championship incluye un asiento de $15,000 al WPT World Championship. Obligatorio ser mayor de 18 años, socio del Star Club y respetar el código de vestimenta smart-casual.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-13",
-  masterUpdated: "2026-07-25",
+  updated: "2026-08-15",
+  masterUpdated: "2026-08-13",
   readTime: "14 min",
   emoji: "🦘",
   layout: "tournament-guide",
@@ -96,7 +96,7 @@ Es la pregunta que hace todo debutante. Aquí va el desglose honesto:
 
 **Tus satélites se juegan en vivo, en The Star Sydney.**
 
-### Vías de satélite presencial (según la estructura de 2024/2025)
+### Vías de satélite presencial (calendario oficial 2026)
 
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.25);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -233,7 +233,7 @@ Ten en cuenta: cuenta NAB, <strong>solo cuentas bancarias personales</strong> (n
 - Las transferencias desde Wise, Revolut o cualquier proveedor de remesas serán **rechazadas**
 - Nada de cuentas de terceros, de empresa ni fiduciarias — solo cuentas bancarias personales
 - El concepto de la transferencia debe ser tu ==r:Member ID y tu apellido==, no tu número de pasaporte
-- Los fondos tardan de 1 a 3 días hábiles en acreditarse — transfiere al menos una semana antes del festival
+- Transfiere al menos una semana antes del festival, para que el dinero ya esté acreditado cuando aterrices
 
 ### A la llegada
 

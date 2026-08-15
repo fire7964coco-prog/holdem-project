@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "WPT Australia 2026: 10–30 Sep, The Star Sydney. Dua flagship: AUD $1.500 WPT Prime (17–22 Sep) dan AUD $5.000 WPT Championship (24–30 Sep). Satelit on-site dari AUD $270, dengan qualifier Championship $290 dan $550. Hadiah juara pertama Championship sudah termasuk kursi $15.000 ke WPT World Championship. Wajib 18+, anggota Star Club, dan dress code smart-casual ditegakkan.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-13",
+  updated: "2026-08-15",
   readTime: "14 mnt",
   emoji: "🦘",
   layout: "tournament-guide",
@@ -95,7 +95,7 @@ Ini pertanyaan yang ditanyakan setiap pemula. Berikut penjelasan jujurnya:
 
 **Opsi satelit Anda ada on-site di The Star Sydney.**
 
-### Jalur Satelit On-Site (Berdasarkan Struktur 2024/2025)
+### Jalur Satelit On-Site (Jadwal Resmi 2026)
 
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.25);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -233,7 +233,7 @@ Perkiraan: rekening NAB, <strong>hanya rekening bank pribadi</strong> (bukan Wis
 - Transfer dari Wise, Revolut, atau penyedia remitansi mana pun akan **ditolak**
 - Tidak boleh rekening pihak ketiga, bisnis, atau trust — hanya rekening bank pribadi
 - Berita transfer harus berisi ==r:Member ID dan nama belakang Anda== — bukan nomor paspor
-- Dana butuh 1–3 hari kerja untuk masuk — transfer setidaknya seminggu sebelum festival
+- Transfer setidaknya seminggu sebelum festival, supaya dananya sudah masuk begitu Anda mendarat
 
 ### Saat Tiba
 

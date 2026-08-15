@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "WPT 澳洲 2026：9 月 10–30 日，雪梨 The Star。兩場旗艦賽——AUD $1,500 WPT Prime（9/17–22）與 AUD $5,000 WPT 澳洲冠軍賽（9/24–30）。現場衛星賽從 AUD $270 起，冠軍賽資格賽為 $290 與 $550。冠軍的頭獎獎金中含一個價值 $15,000 的 WPT 世界冠軍賽席位。須年滿 18 歲、加入 Star Club、遵守 smart-casual 著裝規定。",
   category: "tournament",
   date: "2026-07-23",
-  updated: "2026-08-13",
+  updated: "2026-08-15",
   masterUpdated: "2026-07-25",
   keepImagesInBody: true,
   readTime: "14 分鐘",
@@ -97,7 +97,7 @@ WPT 澳洲 2026 重回雪梨 The Star，這是 WPT 史上規模最大的一屆�
 
 **你的衛星賽選項，都在雪梨 The Star 現場。**
 
-### 現場衛星賽路徑（依 2024/2025 結構）
+### 現場衛星賽路徑（2026 官方賽程）
 
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.25);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
