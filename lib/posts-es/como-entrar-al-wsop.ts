@@ -90,7 +90,7 @@ Esta es la parte donde más guías en español están desactualizadas — alguna
 
 :::steps
 Dos cuentas, las dos gratis | Necesitas una cuenta de **Caesars Rewards** y otra de **WSOP LIVE**. El reglamento dice que ambas son obligatorias para participar en **cualquier evento** —no solo si te inscribes por internet— y que registrarse en las dos no cuesta nada.
-Puedes inscribirte por internet | Desde la app, con tarjeta de crédito o débito, PayPal o MoonPay. Dos métodos van por residencia y conviene no confundirlos: ==**ACH es solo para quien vive en Estados Unidos**==, y al revés, ==g:**Luxon Pay es solo para participantes de fuera del país**== — o sea, la vía pensada para ti si vienes de México o Latinoamérica. Y un dato que vale dinero: el reglamento cobra un ==r:**2 % extra**== si pagas con **tarjeta de crédito o PayPal**, y ==g:**nada si usas tarjeta de débito**==.
+Puedes inscribirte por internet | Desde la app, con tarjeta de crédito o débito, PayPal o MoonPay. Dos métodos van por residencia y conviene no confundirlos: ==**ACH es solo para quien vive en Estados Unidos**==, y al revés, ==g:**Luxon Pay es solo para participantes de fuera del país**== — o sea, la vía pensada para ti si vienes de México o Latinoamérica. Eso sí: **Luxon no publica la lista de países donde se puede abrir cuenta** y lo resuelve en el alta pidiéndote el país de residencia, así que ábrela antes de viajar y no el mismo día. Y un dato que vale dinero: el reglamento cobra un ==r:**2 % extra**== si pagas con **tarjeta de crédito o PayPal**, y ==g:**nada si usas tarjeta de débito**==.
 ★ Pero la inscripción online **no te da el asiento** | Aunque pagues por app, tienes que presentarte **en persona** en el área de registro del WSOP con tu identificación para completar el proceso y acceder a tu mesa.
 Y que sea una tarjeta física a tu nombre | El reglamento **no acepta tarjetas virtuales** (Apple Pay, tarjetas digitales) como prueba en la verificación, y el nombre de tu identificación **debe coincidir** con el de la tarjeta. Con la tarjeta de otra persona no juegas.
 :::
@@ -131,7 +131,7 @@ Sobre el teléfono, el reglamento es concreto: va **en silencio**, y **no puede 
 
 ## ¿Dónde y cuándo se juega?
 
-En Las Vegas, cada verano. En 2026 se juega entre el **Horseshoe y el Paris Las Vegas** — son propiedades vecinas, y el área de registro y verificación está del lado del Paris, en el **Versailles Ballroom**. El reglamento fija la temporada del **26 de mayo al 5 de agosto de 2026**, con **100 eventos de brazalete**.
+En Las Vegas, cada verano. En 2026 se juega entre el **Horseshoe y el Paris Las Vegas** — son propiedades vecinas, y el área de registro y verificación está del lado del Paris, en el **Versailles Ballroom**. El reglamento fija la temporada oficial del **26 de mayo al 5 de agosto de 2026**, y el calendario trae **100 eventos de brazalete** que se juegan hasta el **15 de julio**.
 
 Ese cierre en agosto no es un error: **la mesa final del Main Event se juega aparte, del 3 al 5 de agosto**, con televisión. Es la parte que la mayoría ve por pantalla. Este año el Main Event reunió **9,208 entradas**.
 

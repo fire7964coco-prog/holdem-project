@@ -408,7 +408,7 @@ A. Ambos funcionan, pero ==g:se recomienda llegar 2–3 días antes==. Te recupe
 
 ## Fuentes
 
-Todas las cifras se contrastaron con fuentes primarias. **Verificado: 28 de julio de 2026.**
+Todas las cifras se contrastaron con fuentes primarias. **Verificado: 28 de julio de 2026** — el prize pool de 2025 y la elegibilidad de los Country Exclusives se re-verificaron el **15 de agosto de 2026**.
 
 - **Página oficial de la serie** — [APT — Incheon, South Korea 2026](https://www.theasianpokertour.com/series/apt-incheon-south-korea-2026) · fechas, buy-in y garantizado del Main Event #20, estructura de flights
 - **Preview oficial** — [APT Incheon 2026: The Preview](https://www.theasianpokertour.com/news/apt-incheon-2026-the-preview) · garantizado total, stack inicial de 40.000, **los nueve asientos APTC Taipéi y cómo se reparten**

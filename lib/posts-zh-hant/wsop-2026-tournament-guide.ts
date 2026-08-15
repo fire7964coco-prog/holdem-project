@@ -270,7 +270,7 @@ WSOP 官方網站也有介紹這條路，寫的是 ==g:「Qualify for as Little 
 :::steps
 虛擬卡不能用 | 規定明文**不承認虛擬卡、數位卡作為確認手段**。只存在於手機裡的卡在櫃檯會被擋。要帶實體卡。
 卡片姓名要跟護照一致 | 證件上的姓名與卡片姓名必須相同。家人的附卡、公司的法人卡都不行。
-手續費看卡別 | 收 2% 的只有**信用卡與 PayPal**，==g:**簽帳金融卡免手續費**==。主賽事刷信用卡 **$10,200**，刷簽帳金融卡 **$10,000**。單筆 $10,000 上限按買入計，規定舉例說主賽事可以刷、$50,000 的賽事不行。
+手續費看卡別 | 收 2% 的只有**信用卡與 PayPal**，==g:**簽帳金融卡免手續費**==。主賽事刷信用卡 **$10,200**，刷簽帳金融卡 **$10,000**。🪶 但簽帳金融卡有銀行設的**單日消費上限**，$10,000 一筆可能刷不過去——出發前先把額度調高。單筆 $10,000 上限按買入計，規定舉例說主賽事可以刷、$50,000 的賽事不行。⚠️ **報名說明頁至今仍寫「3%」** —— 正本是賽季規程，但規程本身也寫明「可能變動」，請在結帳頁確認最終金額。
 現金派可以開 Paris TA | 用現金或籌碼在 **Paris 開立賽事帳戶（TA）**，之後報名會順很多。賽季結束時餘額會以原本存入的形式退回。
 ACH 只限美國居民 | 台港澳讀者用不到。非美國居民可以用 **Luxon Pay**，信用卡與 PayPal 也可以。
 電匯要 $100,000 起 | 而且需要事前核准。只打一場主賽事的人用不上這個。
@@ -371,9 +371,10 @@ A. 滿 21 歲、有有效證件就可以，沒有國籍限制。但台港澳的�
 
 ## 資料來源
 
-這篇的數字與規定都直接查證過一次原始出處。**查證日：2026 年 7 月 28 日**（華人金手鍊與美國入境要件於 **7 月 29 日**、**主賽事最終結果與華人最高名次於 8 月 6 日**再次確認）。
+這篇的數字與規定都直接查證過一次原始出處。**查證日：2026 年 7 月 28 日**（華人金手鍊與美國入境要件於 **7 月 29 日**、**主賽事最終結果與華人最高名次於 8 月 6 日**、**刷卡手續費一項於 8 月 15 日**依官方規則手冊 PDF 再次確認）。
 
-- **WSOP 官方報名規定** — [wsop.com/registration](https://www.wsop.com/registration/)：必要帳號（Caesars Rewards ＋ WSOP LIVE）、Versailles Ballroom 確認區、刷卡單筆 $10,000 上限與信用卡／PayPal 的 2% 手續費（簽帳金融卡免費）、電匯 $100,000 起、證件無地址時的第二文件、第一次報名提早一小時
+- **WSOP 官方報名規定** — [wsop.com/registration](https://www.wsop.com/registration/)：必要帳號（Caesars Rewards ＋ WSOP LIVE）、Versailles Ballroom 確認區、刷卡單筆 $10,000 上限、電匯 $100,000 起、證件無地址時的第二文件、第一次報名提早一小時
+- **★2026 WSOP 官方規則手冊（PDF）— 手續費的正本** *(2026-08-15 查證)* — [2026-WSOP-Tournament-Rules.pdf](https://wsop.gg-global-cdn.com/wsop/pdfs/2026-WSOP-Tournament-Rules.pdf)：Rule 5 逐字「Visa／Mastercard／Discover／Amex **或 PayPal 加收 2% 手續費** · **簽帳金融卡不收費** · Fees are subject to change」。⚠️ **報名說明頁至今仍寫「3%」，也沒有 PayPal 與簽帳金融卡的條款** — 本文以賽季規程手冊為正本。付款前請在結帳頁面確認最終金額
 - **★WSOP 官方結果 — Event #82 主賽事最終名次**（2026-08-06 確認）— [wsop.com/tournaments/result/619](https://www.wsop.com/tournaments/result/619/)：冠軍 Lucas Jumalon（United States）$10,000,000、第 1～9 名的名次·國籍·獎金、**第 1～50 名無台港澳籍**、華人最高為中國籍第 28 名 Tianle Wang $265,000、收官日 8 月 5 日（官方頁面 End Date 欄寫的是「Aug 05 01:48 AM」）、9,208 人次、錢圈 1,383 名、**獎池 $87,568,080**
 - **★WSOP 官方賽事日程表 — 100 條金手鍊全部頒出**（2026-08-06 確認）— [wsop.com/tournaments/2026-57th-annual-world-series-of-poker](https://www.wsop.com/tournaments/2026-57th-annual-world-series-of-poker/)：逐行核對 Event #1～#100 的 Winner 欄，**100 條全部產生冠軍**（無缺號）
 - **WSOP 官方轉播公告** — [wsop.com/news](https://www.wsop.com/news/world-series-of-poker-begins-main-event-broadcast/)：國際轉播網、決賽桌 8 月 3～5 日

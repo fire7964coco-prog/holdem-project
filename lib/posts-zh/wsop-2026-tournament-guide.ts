@@ -300,7 +300,7 @@ WSOP 官网上也介绍了这条路，写的是 ==g:「Qualify for as Little as 
 :::steps
 虚拟卡不行 | 规定明文**不承认虚拟卡、数字卡作为确认手段**。只存在手机里的卡在柜台会被拦。要带实体卡。
 卡上的名字要和护照一致 | 证件姓名和卡片姓名必须相同。家人的附属卡、公司的对公卡都不行。
-手续费看卡种 | 收 2% 的只有**信用卡和 PayPal**，==g:**借记卡免手续费**==。主赛事刷信用卡 **$10,200**，刷借记卡 **$10,000**。单笔 $10,000 上限按买入计，规定举例说主赛事可以刷、$50,000 的赛事不行。
+手续费看卡种 | 收 2% 的只有**信用卡和 PayPal**，==g:**借记卡免手续费**==。主赛事刷信用卡 **$10,200**，刷借记卡 **$10,000**。🪶 但借记卡有银行设的**单日消费上限**，$10,000 一笔可能刷不过去——出发前先把额度调高。单笔 $10,000 上限按买入计，规定举例说主赛事可以刷、$50,000 的赛事不行。⚠️ **报名说明页至今仍写「3%」** —— 正本是赛季规程，但规程本身也写明「可能变动」，请在结算页确认最终金额。
 习惯用现金的话可以开 Paris TA | 用现金或筹码在 **Paris 开一个赛事账户（TA）**，之后报名会顺很多。赛季结束时余额按存入的形式退回。
 ACH 只限美国居民 | 国内读者用不上。非美国居民可以用 **Luxon Pay**，信用卡和 PayPal 也行。
 电汇 $100,000 起 | 而且要事先核准。只打一场主赛事的人用不着。
@@ -388,9 +388,10 @@ A. 满 21 岁、有有效证件就行，没有国籍限制。但中国护照上�
 
 ## 资料来源
 
-这篇的数字和规定都直接查过原始出处。**查证日：2026 年 7 月 28 日**（中国选手金手链与美国入境要件在 **7 月 29 日**、**主赛事最终结果与中国籍最高名次在 8 月 6 日**再次确认）。
+这篇的数字和规定都直接查过原始出处。**查证日：2026 年 7 月 28 日**（中国选手金手链与美国入境要件在 **7 月 29 日**、**主赛事最终结果与中国籍最高名次在 8 月 6 日**、**刷卡手续费一项在 8 月 15 日**依官方规则手册 PDF 再次确认）。
 
-- **WSOP 官方报名规定** — [wsop.com/registration](https://www.wsop.com/registration/)：必需账号（Caesars Rewards ＋ WSOP LIVE）、Versailles Ballroom 确认区、刷卡单笔 $10,000 上限与信用卡／PayPal 的 2% 手续费（借记卡免费）、电汇 $100,000 起、证件无地址时的第二份材料、第一次报名提早一小时
+- **WSOP 官方报名规定** — [wsop.com/registration](https://www.wsop.com/registration/)：必需账号（Caesars Rewards ＋ WSOP LIVE）、Versailles Ballroom 确认区、刷卡单笔 $10,000 上限、电汇 $100,000 起、证件无地址时的第二份材料、第一次报名提早一小时
+- **★2026 WSOP 官方规则手册（PDF）— 手续费的正本** *(2026-08-15 查证)* — [2026-WSOP-Tournament-Rules.pdf](https://wsop.gg-global-cdn.com/wsop/pdfs/2026-WSOP-Tournament-Rules.pdf)：Rule 5 逐字「Visa／Mastercard／Discover／Amex **或 PayPal 加收 2% 手续费** · **借记卡不收费** · Fees are subject to change」。⚠️ **报名说明页至今仍写「3%」，也没有 PayPal 与借记卡的条款** — 本文以赛季规程手册为正本。付款前请在结算页面确认最终金额
 - **★WSOP 官方结果 — Event #82 主赛事最终名次**（2026-08-06 确认）— [wsop.com/tournaments/result/619](https://www.wsop.com/tournaments/result/619/)：冠军 Lucas Jumalon（United States）$10,000,000、第 1～9 名的名次·国籍·奖金、**中国籍最高名次第 28 名 Tianle Wang $265,000**（直接查看第 1～50 名的 Country 栏）、收官日 8 月 5 日（官方页面 End Date 栏写的是「Aug 05 01:48 AM」）、9,208 人次、钱圈 1,383 名、**奖池 $87,568,080**
 - **★WSOP 官方赛事日程表 — 100 条金手链全部发出**（2026-08-06 确认）— [wsop.com/tournaments/2026-57th-annual-world-series-of-poker](https://www.wsop.com/tournaments/2026-57th-annual-world-series-of-poker/)：逐行核对 Event #1～#100 的 Winner 栏，**100 条全部产生冠军**（无缺号）
 - **WSOP 官方转播公告** — [wsop.com/news](https://www.wsop.com/news/world-series-of-poker-begins-main-event-broadcast/)：国际转播网、决赛桌 8 月 3～5 日

@@ -39,7 +39,7 @@ Esa es, para nosotros, la portada de la 57.ª World Series of Poker. Y no fue la
 ---
 
 > **Respuesta rápida**
-> La 57.ª WSOP se jugó del ==**26 de mayo al 15 de julio de 2026**== en el Horseshoe y el Paris de Las Vegas. ==**251.899 entradas**== (récord histórico) y ==**US$469.975.059**== repartidos en 35.157 puestos pagados. Tres brazaletes hispanohablantes: ==g:Ciro González (México), Adrian Mateos (España) y Juan Rodriguez (Perú)==. El Main Event lo ganó ==**Lucas Jumalon**== el ==**5 de agosto**== (US$10.000.000) y el mejor de habla hispana fue ==r:**Antonio Galiana (España), 12.º**==. ==r:Con pasaporte mexicano necesitas visa: México no está en el Visa Waiver Program.==
+> Los eventos de brazalete de la 57.ª WSOP se jugaron del ==**26 de mayo al 15 de julio de 2026**== en el Horseshoe y el Paris de Las Vegas, y la mesa final del Main Event se disputó tres semanas después, del 3 al 5 de agosto. ==**251.899 entradas**== (récord histórico) y ==**US$469.975.059**== repartidos en 35.157 puestos pagados. Tres brazaletes hispanohablantes: ==g:Ciro González (México), Adrian Mateos (España) y Juan Rodriguez (Perú)==. El Main Event lo ganó ==**Lucas Jumalon**== el ==**5 de agosto**== (US$10.000.000) y el mejor de habla hispana fue ==r:**Antonio Galiana (España), 12.º**==. ==r:Con pasaporte mexicano necesitas visa: México no está en el Visa Waiver Program.==
 
 ---
 
@@ -302,9 +302,9 @@ Llega una hora antes, pero solo la primera vez | La organización recomienda ese
 
 </div>
 
-Haz la cuenta del Main Event: la entrada de US$10.000 con **tarjeta de crédito o PayPal** lleva un **2 % de comisión**, así que ==r:**salen US$10.200**==. Con ==g:**tarjeta de débito no hay comisión**==: US$10.000 exactos. Es la diferencia más barata de este artículo — US$200 por elegir bien el plástico.
+Haz la cuenta del Main Event: la entrada de US$10.000 con **tarjeta de crédito o PayPal** lleva un **2 % de comisión**, así que ==r:**salen US$10.200**==. Con ==g:**tarjeta de débito no hay comisión**==: US$10.000 exactos. Es la diferencia más barata de este artículo — US$200 por elegir bien el plástico. 🪶 Un detalle: las tarjetas de débito llevan **límite diario de consumo** puesto por tu banco, así que un cargo único de US$10.000 puede rebotar. Súbelo antes de viajar.
 
-Y el tope de US$10.000 por transacción se mide **por evento, no por día**: el propio reglamento pone de ejemplo que el Main Event **sí** se puede pagar con tarjeta, pero el Poker Player's Championship de US$50.000 **no**.
+Y el tope de US$10.000 por transacción ==g:**se mide sobre el buy-in del evento, no sobre lo que acabas pagando**==: el reglamento pone de ejemplo que con una misma tarjeta puedes inscribirte al Main Event de US$10.000 **y además** al Monster Stack de US$1.500, pero no a un evento de US$50.000. Es decir, el 2 % no te deja fuera del tope. ⚠️ **La página de inscripción sigue publicando «3 %»** — aquí manda el reglamento de la temporada, pero él mismo avisa de que las comisiones pueden cambiar: mira el importe final en la pantalla de pago.
 
 Tres reglas más que cuestan disgustos:
 
@@ -419,7 +419,7 @@ A. Sí. El reglamento oficial acepta ==g:"Consular ID or Matrícula Consular Car
 
 **Q. ¿Cuánto cuesta de verdad inscribirse al Main Event con tarjeta?**
 
-A. Depende del plástico. Con **tarjeta de crédito o PayPal** la casa cobra un **2 %**, así que son ==r:**US$10.200**==; con ==g:**tarjeta de débito no hay comisión**== y pagas US$10.000 exactos. Hay un tope de **US$10.000 por transacción** — el reglamento aclara que el Main Event sí entra, y que un evento de US$50.000 no. Y ==r:no aceptan tarjetas virtuales ni digitales==: el nombre de la tarjeta debe coincidir con el de tu documento.
+A. Depende del plástico. Con **tarjeta de crédito o PayPal** la casa cobra un **2 %**, así que son ==r:**US$10.200**==; con ==g:**tarjeta de débito no hay comisión**== y pagas US$10.000 exactos. Hay un tope de **US$10.000 por transacción**, medido sobre el buy-in del evento y no sobre el total cobrado — el reglamento pone de ejemplo que una misma tarjeta cubre el Main Event de US$10.000 **y** el Monster Stack de US$1.500, pero no un evento de US$50.000. Y ==r:no aceptan tarjetas virtuales ni digitales==: el nombre de la tarjeta debe coincidir con el de tu documento.
 
 **Q. No hablo inglés. ¿Puedo jugar igual?**
 
@@ -440,6 +440,7 @@ A. ==g:99 eventos se ven gratis en el canal oficial de YouTube de la WSOP.== La 
 - **★Resultado final del Main Event (Evento #82)** *(consultado el 6 de agosto de 2026)*: [wsop.com/tournaments/result/619](https://www.wsop.com/tournaments/result/619/) — campeón Lucas Jumalon (EE. UU.) US$10.000.000, los nueve puestos con país y premio, **mejor hispanohablante: Antonio Galiana (España), 12.º, US$510.000** (columna *Country* de los puestos 1 al 50 revisada directamente), fecha de cierre 5 de agosto (el campo End Date de la página oficial indica «Aug 05 01:48 AM»), 9.208 entradas, 1.383 puestos pagados, **pozo US$87.568.080**
 - **★Los 100 brazaletes entregados** *(consultado el 6 de agosto de 2026)*: [calendario oficial de la WSOP 2026](https://www.wsop.com/tournaments/2026-57th-annual-world-series-of-poker/) — se revisó la columna *Winner* de los eventos #1 al #100: **los 100 tienen campeón**, sin huecos
 - Reglamento de inscripción, formas de pago e identificación: [wsop.com/registration](https://www.wsop.com/registration/)
+- **★Reglamento oficial 2026 en PDF — la fuente de la comisión** *(consultado el 15 de agosto de 2026)*: [2026-WSOP-Tournament-Rules.pdf](https://wsop.gg-global-cdn.com/wsop/pdfs/2026-WSOP-Tournament-Rules.pdf) · Regla 5, textual: **2 % de comisión** con Visa, Mastercard, Discover, American Express **o PayPal**, **sin comisión en tarjeta de débito**, y "Fees are subject to change". ⚠️ **La página de inscripción sigue publicando «3 %» y no menciona PayPal ni débito** — tomamos el reglamento de la temporada como fuente. Comprueba el importe final en la pantalla de pago
 - Retransmisión y cobertura de la serie: [wsop.com/news](https://www.wsop.com/news/)
 - Calendario de emisión de la mesa final: [espnpressroom.com](https://espnpressroom.com/) · [espn.com](https://www.espn.com/)
 - Análisis del Main Event por países: [pokerfuse.com](https://pokerfuse.com/)

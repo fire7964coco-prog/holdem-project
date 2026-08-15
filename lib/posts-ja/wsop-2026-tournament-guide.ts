@@ -290,7 +290,7 @@ Step 4に$150で直接バイインしても構いませんし、$1,000のBracele
 :::steps
 バーチャルカードは使えません | 規定は**バーチャルカード・デジタルカードを確認手段として認めない**と明記しています。Apple Payやアプリ上にしか存在しないカードで決済すると窓口で止まります。物理カードを持っていってください。
 カード名義がパスポートと一致している必要があります | 身分証の名前とカードの名前が一致していなければなりません。家族カードや法人カードでは登録できません。
-手数料はカードの種類で変わる | 規定が**2%の手数料**を課すのは**クレジットカードとPayPal**だけで、==g:**デビットカードは無料**==です。メインイベントはクレジットで**$10,200**、デビットで**$10,000**。1取引$10,000の上限はバイイン基準で、規定は**メインイベントは可・$50,000のイベントは不可**と例示しています。
+手数料はカードの種類で変わる | 規定が**2%の手数料**を課すのは**クレジットカードとPayPal**だけで、==g:**デビットカードは無料**==です。メインイベントはクレジットで**$10,200**、デビットで**$10,000**。🪶 ただしデビットカードには銀行が設定する**1日の利用限度額**があり、$10,000の一括決済が通らないことがあります。渡航前に上限を上げておいてください。1取引$10,000の上限はバイイン基準で、規定は**メインイベントは可・$50,000のイベントは不可**と例示しています。⚠️ **登録案内ページには今も「3%」とあります** — 正本はシーズン規程ですが、規程自体が「変更あり」と明記しているので決済画面で最終確認を。
 現金派はParis TA | 現金やチップで**Parisのトーナメントアカウント(TA)** を作っておくと以降の登録が楽になります。シリーズ終了時、残高は入れた方法と同じ形で返ってきます。
 ACHはアメリカ居住者専用 | 日本在住者には使えません。非米国居住者は**Luxon Pay**が使えます。カードとPayPalも利用可能です。
 電信送金は$100,000から | ワイヤートランスファーは**$100,000以上**で、かつ事前承認が必要です。メインイベント1つに出る人が使う手段ではありません。
@@ -408,7 +408,8 @@ A. 日本は源泉徴収ではなく確定申告の仕組みです。一時的�
 - **★WSOP公式 結果 — Event #82 メインイベント最終順位** *(2026-08-06確認)* — [wsop.com/tournaments/result/619](https://www.wsop.com/tournaments/result/619/) · 優勝Lucas Jumalon(United States)$10,000,000、1〜9位の順位・国籍・賞金、**日本人最高位は23位Kyosuke Nagami $325,000**(1〜50位のCountry欄を直接確認)、終了日8月5日(公式ページのEnd Date表記は「Aug 05 01:48 AM」)、9,208エントリー、ITM 1,383人、**賞金総額$87,568,080**
 - **WSOP公式 イベント日程表 — ブレスレット100本の授与確認** *(2026-08-06確認)* — [wsop.com/tournaments/2026-57th-annual-world-series-of-poker](https://www.wsop.com/tournaments/2026-57th-annual-world-series-of-poker/) · Event #1〜#100の全行のWinner欄を直接照合し、**100本すべて優勝者確定**(欠番なし)
 
-- **WSOP公式 登録規定** — [wsop.com/registration](https://www.wsop.com/registration/) · 必須アカウント(Caesars Rewards + WSOP LIVE)、Versailles Ballroomの確認エリア、カード1取引$10,000上限およびクレジット・PayPalの2%手数料(デビットは無料)、ワイヤー$100,000最低、住所のない身分証の場合の2つ目の書類、初回登録1時間前到着の推奨
+- **WSOP公式 登録規定** — [wsop.com/registration](https://www.wsop.com/registration/) · 必須アカウント(Caesars Rewards + WSOP LIVE)、Versailles Ballroomの確認エリア、カード1取引$10,000上限、ワイヤー$100,000最低、住所のない身分証の場合の2つ目の書類、初回登録1時間前到着の推奨
+- **★2026 WSOP公式ルールブック(PDF) — 決済手数料の正本** *(2026-08-15確認)* — [2026-WSOP-Tournament-Rules.pdf](https://wsop.gg-global-cdn.com/wsop/pdfs/2026-WSOP-Tournament-Rules.pdf) · Rule 5の逐語「Visa・Mastercard・Discover・Amex **またはPayPalに2%の手数料** · **デビットカードには手数料をかけない** · Fees are subject to change」。⚠️ **登録案内ページには今も「3%」とあり、PayPalとデビットの記載がありません** — シーズン規程であるルールブックを正本としました。決済直前の画面で最終金額を確認してください
 - **WSOP公式 放送案内** — [wsop.com/news](https://www.wsop.com/news/world-series-of-poker-begins-main-event-broadcast/) · 国際中継網、ファイナルテーブル8月3〜5日
 - **ESPNプレスルーム公式編成表** — [espnpressroom.com](https://espnpressroom.com/press-release/espn-and-world-series-of-poker-announce-programming-schedule-for-2026-main-event/) · 8/3 ESPN2、8/4 ESPN、8/5 ESPNおよび正確な放送時間
 - **ESPNファイナルテーブル記事** — [espn.com](https://www.espn.com/espn/betting/story/_/id/49247958/world-series-poker-main-event-wsop-2026) · 9,208エントリー、歴代4番目のフィールド(2024年10,112 / 2023年10,043 / 2025年9,735)。⚠️ **この記事は賞金総額を$85,634,400と記載していますが、大会終了後のWSOP公式結果ページは$87,568,080です** — 本記事は公式の数値を採用しています
