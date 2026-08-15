@@ -52,10 +52,13 @@ export const CLUSTERS = {
   '포지션': [
     'position-is-everything-in-holdem', 'holdem-button-position', 'holdem-blind-steal',
   ],
+  // holdem-spr 추가(2026-08-16): 발행 당일 게이트가 「CLUSTERS에 없어 형제 대조를 시도조차
+  //   안 했다」를 출력해 넣었다. 이 글은 3bet-pot-cbet과 SPR 값(4.0·17.7)·팟 구성(22.5·5.5bb)을
+  //   공유하므로 한쪽이 바뀌면 다른 쪽이 거짓이 된다 — 교차 대조가 필요한 전형이다.
   '전략': [
     'holdem-strategy', 'holdem-range-meaning', 'holdem-3bet-strategy', 'holdem-check-raise',
     'holdem-cbet-strategy', 'bluffing-strategy-when-and-how', 'holdem-value-bet-sizing',
-    'holdem-overbet-strategy', 'holdem-bankroll-management',
+    'holdem-overbet-strategy', 'holdem-bankroll-management', 'holdem-spr',
   ],
   // 멤버는 필라 holdem-pub-guide의 :::pillarhub 선언 그대로(디렉토리 /pub은 포스트가 아니라 제외).
   '홀덤펍': [

@@ -1,4 +1,5 @@
 import type { Post } from "../posts";
+import { POST as holdemSpr } from "./holdem-spr";
 import { POST as pokerstarsApptSatelliteGuide } from "./pokerstars-appt-satellite-guide";
 import { POST as ggpokerWsopExpressSatelliteGuide } from "./ggpoker-wsop-express-satellite-guide";
 import { POST as apptKorea2026Guide } from "./appt-korea-2026-guide";
@@ -50,6 +51,7 @@ import { POST as blindBattleCbet } from "./blind-battle-cbet";
 import { POST as blindBattleConnectedBoard } from "./blind-battle-connected-board";
 import { POST as acePairedBoardStrategy } from "./ace-paired-board-strategy";
 export const NEW_POSTS: Post[] = [
+  holdemSpr,
   acePairedBoardStrategy,
   blindBattleConnectedBoard,
   blindBattleCbet,
