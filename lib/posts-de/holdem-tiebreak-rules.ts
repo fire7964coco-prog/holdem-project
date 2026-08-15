@@ -51,7 +51,7 @@ Die meiste Arbeit erledigt eine einzige Karte: der ==**Kicker**==. Die vollstän
 
 🔴 **Bevor das Verfahren überhaupt greift: Deine Hand muss offen auf dem Tisch liegen.** Eine gemuckte Hand ist tot, selbst wenn sie gewonnen oder geteilt hätte – die Reihenfolge des Aufdeckens steht in den [Showdown-Regeln](/de/blog/holdem-showdown-rules).
 
-Wenn Schritt 1 es entscheidet, erreichst du Schritt 2 nie. Gehen in Schritt 3 die Karten aus, sind die Hände identisch und ==g:der Pot wird geteilt== – wie die Chips dann aufgeteilt werden (ungerade Chips, Three-Way-Chops, Side Pots) gehört ins Gebiet der [Split-Pot-Regeln](/de/blog/holdem-split-pot-rules). Schritt 2 und 3 sind die Stellen, an denen die Streitereien passieren, also gehen wir genau dorthin.
+Wenn Schritt 1 es entscheidet, erreichst du Schritt 2 nie. Gehen in Schritt 3 die Karten aus, sind die Hände identisch und ==g:der Pot wird geteilt== – wie die Chips dann aufgeteilt werden (Odd Chips, Three-Way-Chops, Side Pots) gehört ins Gebiet der [Split-Pot-Regeln](/de/blog/holdem-split-pot-rules). Schritt 2 und 3 sind die Stellen, an denen die Streitereien passieren, also gehen wir genau dorthin.
 
 ---
 
@@ -161,7 +161,7 @@ Die subtilere Variante ist, wenn deine Hand spielt, dein Kicker aber nicht. Boar
 
 ![Infografik: Auf einem A-K-Q-J-9-Board spielen A-3 und A-2 beide A-A-K-Q-J, also teilen die identischen Hände den Pot](/images/holdem-tiebreak-split.webp "Wenn die besten Fünf Rang für Rang übereinstimmen, wird der Pot geteilt – Farben brechen den Tie niemals")
 
-Solche Runouts vor der River-Bet zu erkennen, ist eine eigene Fähigkeit – das ist das [Lesen des Boards](/de/blog/holdem-reading-the-board). Und was mit den Chips passiert, sobald Hände unentschieden sind – gleiche Anteile, der ungerade Chip, Three-Way-Chops, All-in-Side-Pots – steht alles im [Guide zu den Split-Pot-Regeln](/de/blog/holdem-split-pot-rules "thumb:/images/holdem-split-pot-hero.webp").
+Solche Runouts vor der River-Bet zu erkennen, ist eine eigene Fähigkeit – das ist das [Lesen des Boards](/de/blog/holdem-reading-the-board). Und was mit den Chips passiert, sobald Hände unentschieden sind – gleiche Anteile, der Odd Chip, Three-Way-Chops, All-in-Side-Pots – steht alles im [Guide zu den Split-Pot-Regeln](/de/blog/holdem-split-pot-rules "thumb:/images/holdem-split-pot-hero.webp").
 
 ---
 
@@ -226,7 +226,7 @@ A. Nein. Es gibt beim Hold'em keine Farbwertung – stimmen zwei beste Fünf-Kar
 
 **Q. Was passiert, wenn beide Spieler exakt dieselbe Hand haben?**
 
-A. Der Pot wird gleichmäßig geteilt – ein „Chop“. Wie die Chips physisch aufgeteilt werden, wer den ungeraden Chip bekommt und wie Side Pots abgerechnet werden, ist in den [Split-Pot-Regeln](/de/blog/holdem-split-pot-rules) abgedeckt.
+A. Der Pot wird gleichmäßig geteilt – ein „Chop“. Wie die Chips physisch aufgeteilt werden, wer den übrig gebliebenen Odd Chip bekommt und wie Side Pots abgerechnet werden, ist in den [Split-Pot-Regeln](/de/blog/holdem-split-pot-rules) abgedeckt.
 
 ---
 
