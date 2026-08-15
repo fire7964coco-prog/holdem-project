@@ -734,3 +734,31 @@ Würfelpoker·Kniffel(다른 게임) · rote Karten(축구) · Bridgerton rake �
 - [ ] 볼륨 null인 롱테일은 SERP 실측으로 보완 · 경화 착수 시 글마다 WebSearch PAA 병행
 
 원자료: 자동완성 49시드 JSON·볼륨 134건·lowfruits 판정 3건 → 세션 스크래치패드(휘발). 재실측 방법은 §맨위.
+
+---
+
+## WSOP 축 실측 (2026-08-15) — de 전용 WSOP 가이드 착수용
+
+> 사장님이 **de WSOP 가이드를 따로 정밀 작성**하기로 판정했다(`docs/locale-intentional-diffs.md` 2026-08-15).
+> 착수할 때 이 표부터 본다. 라쿠 · German / Germany · 12개월 평균.
+
+| 키워드 | 월간 | CPC | 추세 | 메모 |
+|---|---:|---:|---:|---|
+| **wsop** | **4,400** | $2.97 | 12m **+28%** · 3m +45% | 헤드텀 |
+| **world series of poker** | **4,400** | $3.94 | 동일 곡선 | 풀네임 수요가 약어와 **같다** — 둘 다 제목에 넣을 값이 있다 |
+| **wsop 2026** | **720** | **$18.21** | 12m **+514%** | 2025-07 110 → 2026-06 **4,400**. 연도형이 폭등한다 |
+| wsop europe | 480 | — | 12m −89% | 시즌성. 2025-09에 1,900이었다 |
+| **pokerturnier** | 720 | $5.63 | −37% | 기존 필라(`holdem-tournament`)가 보유 |
+| german poker tour | 320 | — | −34% | 필라가 일정표로 보유 |
+| wsop main event | 260 | **$11.38** | — | **2025-07에 2,900**이었다 → 시즌 편차 10배 |
+| poker turnier deutschland / king's resort rozvadov / sbpm | 각 170 | — | — | 필라가 전부 보유 |
+| spielbank poker 40 · wsop qualifikation 10 · wsop satellite 10 · deutsche poker meisterschaft 10 · poker festival 10 · wsop gewinner 10 | | | | 보조 |
+
+### 🔴 착수 전 주의 셋
+
+1. **시즌을 앞질러라.** WSOP는 5~7월이고 `wsop main event`가 그때 **10배**로 뛴다(210 → 2,900).
+   색인·순위에 시간이 걸리므로 **봄에 올라가 있어야** 여름 수요를 받는다.
+2. **다른 로케일 글을 옮겨오지 마라.** 나라마다 다른 것이 실재한다 — ja는 「一時所得 vs 雑所得」(50만엔 특별공제·÷2),
+   zh는 「다음해 3/1~6/30 신고 + 완납증명」, es는 원천징수 존재만 알리고 **퍼센트는 일부러 안 준다**(§12-B).
+   de는 독일 세법·EU 거주자 기준으로 **새로 조사해야** 한다.
+3. **`wsop 2026` CPC $18.21**은 이 사이트에서 본 가장 높은 축에 속한다 — 상업 가치가 크다는 신호다.
