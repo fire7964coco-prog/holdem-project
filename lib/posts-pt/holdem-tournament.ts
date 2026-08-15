@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Num torneio de pôquer você paga um buy-in fixo por fichas, e os blinds sobem num relógio até uma pessoa ficar com todas as fichas. Os 10–15% melhores do field entram no dinheiro. Os formatos incluem freezeout, PKO, satellite e deepstack — você entra por buy-in direto, satellite ou pré-registro online.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-08-15",
+  updated: "2026-08-16",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏆",
@@ -174,7 +174,7 @@ Em vez de gastar $10.000, você disputa um torneio de $500 contra outros 19 joga
 
 ### Opção B: pré-registro online
 A maioria dos grandes festivais ao vivo deixa você se registrar online com antecedência:
-- Crie uma conta na plataforma do evento (ex.: o app WSOP LIVE pro WSOP, o app PokerStars Live pra eventos EPT/APPT)
+- Crie uma conta na plataforma do evento (ex.: o app WSOP LIVE pro WSOP, as abas "Events" e "Live" no lobby do PokerStars pra eventos EPT/APPT)
 - Pague o buy-in online
 - Chegue ao local → verificação de documento → imprima o seat card num totem ou pegue no balcão
 - Pula a fila de registro — vale a pena em eventos grandes

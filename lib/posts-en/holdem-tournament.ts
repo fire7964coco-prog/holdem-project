@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In a poker tournament you pay a fixed buy-in for chips, blinds increase on a timer until one player holds all chips. Top 10–15% of players cash. Formats include freezeout, PKO, satellite, and deepstack — enter via direct buy-in, satellite, or online pre-registration.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-08-15",
+  updated: "2026-08-16",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏆",
@@ -174,7 +174,7 @@ Instead of spending $10,000, you compete in a $500 tournament against 19 other p
 
 ### Option B: Online Pre-Registration
 Most major live festivals let you register online in advance:
-- Set up an account on the event's platform (e.g., the WSOP LIVE app for WSOP, the PokerStars Live app for EPT/APPT events)
+- Set up an account on the event's platform (e.g., the WSOP LIVE app for WSOP, the "Events" and "Live" tabs in the PokerStars lobby for EPT/APPT events)
 - Pay the buy-in online
 - Arrive at the venue → ID verification → print seat card at a kiosk or pick up at desk
 - Skips the registration line — worth doing for large events

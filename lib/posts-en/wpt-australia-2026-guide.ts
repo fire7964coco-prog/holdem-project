@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "WPT Australia 2026: Sep 10–30, The Star Sydney. Two flagships: AUD $1,500 WPT Prime (Sep 17–22) and AUD $5,000 WPT Championship (Sep 24–30). On-site satellites from AUD $270, with Championship qualifiers at $290 and $550. The Championship winner's first-place prize includes a $15,000 WPT World Championship seat. Must be 18+, Star Club member, and smart-casual dress enforced.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-13",
+  updated: "2026-08-16",
   readTime: "14 min",
   emoji: "🦘",
   layout: "tournament-guide",
@@ -306,7 +306,7 @@ A. ==g:For recreational players, poker winnings are generally not taxed in Austr
 
 **Q. How early should I arrive for a WPT Australia Day 1 flight?**
 
-A. Plan around the published start time — The Star lists start times, not counter-opening times, so treat the start as your deadline rather than your target. For busy Championship flights, ==g:give yourself 90 minutes==: the queue for entries, and for Star Club sign-ups if you have not joined yet, is the real bottleneck. If you are held up, ==g:unlimited re-entry stays open until the start of level 10== on Day 1A, 1B and 1C, so arriving late is recoverable.
+A. Plan around the published start time — the official Championship event page lists tournament registration as opening ==g:1 hour before the start==. For busy Championship flights, still give yourself 90 minutes: the queue for entries, and for Star Club sign-ups if you have not joined yet, is the real bottleneck. If you are held up, ==g:unlimited re-entry stays open until the start of level 10== on Day 1A, 1B and 1C, so arriving late is recoverable.
 
 **Q. Can I play cash games at The Star Sydney if I bust early?**
 

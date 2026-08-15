@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "WPT Australia 2026: 10–30 sep, The Star Sydney. Dos eventos estrella: AUD $1,500 WPT Prime (17–22 sep) y AUD $5,000 WPT Championship (24–30 sep). Satélites presenciales desde AUD $270, con clasificatorios al Championship por $290 y $550. El premio de primer puesto del Championship incluye un asiento de $15,000 al WPT World Championship. Obligatorio ser mayor de 18 años, socio del Star Club y respetar el código de vestimenta smart-casual.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-15",
-  masterUpdated: "2026-08-13",
+  updated: "2026-08-16",
+  masterUpdated: "2026-08-16",
   readTime: "14 min",
   emoji: "🦘",
   layout: "tournament-guide",
@@ -307,7 +307,7 @@ A. ==g:Para los jugadores recreativos, las ganancias de póker por lo general no
 
 **Q. ¿A qué hora abre el registro del torneo cada día?**
 
-A. Organízate según la hora de inicio publicada: The Star publica horas de inicio, no de apertura de mostrador, así que trata el inicio como tu límite y no como tu objetivo. Para los flights de campeonato concurridos, ==g:date 90 minutos==: el cuello de botella real es la cola de inscripciones y la del Star Club si aún no eres socio. Y si se te complica, ==g:el re-entry ilimitado sigue abierto hasta el inicio del nivel 10== en los Días 1A, 1B y 1C, así que llegar tarde tiene arreglo.
+A. Organízate según la hora de inicio publicada: la página oficial del evento Championship indica que el registro abre ==g:1 hora antes del inicio==. Para los flights de campeonato concurridos, date igualmente 90 minutos: el cuello de botella real es la cola de inscripciones y la del Star Club si aún no eres socio. Y si se te complica, ==g:el re-entry ilimitado sigue abierto hasta el inicio del nivel 10== en los Días 1A, 1B y 1C, así que llegar tarde tiene arreglo.
 
 **Q. ¿Puedo jugar cash games en The Star Sydney si me eliminan pronto?**
 

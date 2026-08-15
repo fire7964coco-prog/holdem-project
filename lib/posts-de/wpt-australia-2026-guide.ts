@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "WPT Australia 2026: 10.–30. Sep, The Star Sydney. Zwei Flaggschiffe: AUD $1.500 WPT Prime (17.–22. Sep) und AUD $5.000 WPT Championship (24.–30. Sep). On-Site-Satellites ab AUD $270, Championship-Qualifier ab $290. Im Preisgeld für Platz 1 steckt ein $15.000 WPT-World-Championship-Seat. Mindestalter 18, Star-Club-Mitgliedschaft und Smart-Casual-Dresscode sind Pflicht.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-13",
+  updated: "2026-08-16",
   readTime: "14 Min.",
   emoji: "🦘",
   layout: "tournament-guide",
@@ -306,7 +306,7 @@ A. ==g:Für Recreational-Spieler werden Poker-Gewinne in Australien in der Regel
 
 **Q. Wie früh solltest du zu einem Day-1-Flight der WPT Australia da sein?**
 
-A. Plane nach der veröffentlichten Startzeit – The Star gibt Startzeiten an, keine Schalter-Öffnungszeiten. Behandle den Start also als Deadline, nicht als Ziel. Für stark besuchte Championship-Flights ==g:nimm dir 90 Minuten==: Der Engpass ist die Schlange an der Anmeldung, und beim Star Club, falls du noch kein Mitglied bist. Wenn es doch knapp wird: ==g:Unlimited Re-Entry läuft bis zum Start von Level 10== an Day 1A, 1B und 1C – zu spät zu kommen ist also reparierbar.
+A. Plane nach der veröffentlichten Startzeit – die offizielle Championship-Eventseite gibt an, dass die Anmeldung ==g:1 Stunde vor dem Start== öffnet. Für stark besuchte Championship-Flights nimm dir trotzdem 90 Minuten: Der Engpass ist die Schlange an der Anmeldung, und beim Star Club, falls du noch kein Mitglied bist. Wenn es doch knapp wird: ==g:Unlimited Re-Entry läuft bis zum Start von Level 10== an Day 1A, 1B und 1C – zu spät zu kommen ist also reparierbar.
 
 **Q. Kann ich im The Star Sydney Cashgames spielen, wenn ich früh ausscheide?**
 

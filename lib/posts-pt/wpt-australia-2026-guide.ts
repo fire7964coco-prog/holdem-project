@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "WPT Australia 2026: 10 a 30 de set, The Star Sydney. Dois flagships: AUD $1.500 WPT Prime (17 a 22 de set) e AUD $5.000 WPT Championship (24 a 30 de set). Satellites on-site a partir de AUD $270, com qualifiers do Championship a $290 e $550. A premiação de primeiro lugar do Championship inclui um assento de $15.000 no WPT World Championship. Precisa ser 18+, membro do Star Club, e o dress code smart-casual é cobrado.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-15",
+  updated: "2026-08-16",
   readTime: "14 min",
   emoji: "🦘",
   layout: "tournament-guide",
@@ -308,7 +308,7 @@ A. ==g:Pra jogadores recreativos, os ganhos no pôquer geralmente não são taxa
 
 **Q. Quando abre o registro do torneio a cada dia?**
 
-A. Se guie pelo horário de início publicado: o The Star divulga horário de início, não de abertura do balcão, então trate o início como prazo final e não como meta. Pros flights de championship movimentados, ==g:reserve 90 minutos==: o gargalo real é a fila das inscrições, e a do Star Club se você ainda não for membro. E se apertar, ==g:o re-entry ilimitado fica aberto até o início do nível 10== nos Dias 1A, 1B e 1C — chegar atrasado tem conserto.
+A. Se guie pelo horário de início publicado: a página oficial do evento Championship informa que o registro abre ==g:1 hora antes do início==. Pros flights de championship movimentados, mesmo assim reserve 90 minutos: o gargalo real é a fila das inscrições, e a do Star Club se você ainda não for membro. E se apertar, ==g:o re-entry ilimitado fica aberto até o início do nível 10== nos Dias 1A, 1B e 1C — chegar atrasado tem conserto.
 
 **Q. Posso jogar cash game no The Star Sydney se eu quebrar cedo?**
 

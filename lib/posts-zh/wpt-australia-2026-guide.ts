@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "WPT Australia 2026：9 月 10–30 日，The Star Sydney。两个旗舰赛：AUD $1,500 WPT Prime（9 月 17–22 日）和 AUD $5,000 WPT Championship（9 月 24–30 日）。现场卫星赛 AUD $270 起，主赛资格赛为 $290 与 $550。冠军的头名奖金里包含一个 $15,000 的 WPT World Championship 席位。必须年满 18 岁、成为 Star Club 会员，并遵守 smart-casual 着装要求。",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-15",
-  masterUpdated: "2026-07-25",
+  updated: "2026-08-16",
+  masterUpdated: "2026-08-16",
   readTime: "14 分钟",
   emoji: "🦘",
   layout: "tournament-guide",
@@ -308,7 +308,7 @@ A. ==g:对于休闲牌手，扑克奖金在澳大利亚一般不征税==——AT
 
 **Q. 打 WPT Australia 的 Day 1，该提前多久到场？**
 
-A. 按公布的开赛时间来安排：The Star 公布的是赛事开赛时间，不是报名柜台的开放时间，所以把开赛时间当成截止线而不是目标。人多的冠军赛起始单日赛，==g:留 90 分钟==比较稳——真正的瓶颈是报名排队，以及你还没入会时的 Star Club 排队。万一来不及，==g:无限次 re-entry 开放到 Day 1A、1B、1C 的第 10 级开始==，所以迟到还有救。
+A. 按公布的开赛时间来安排：官方冠军赛事页面写明报名==g:在开赛前 1 小时开放==。人多的冠军赛起始单日赛，仍然留 90 分钟比较稳——真正的瓶颈是报名排队，以及你还没入会时的 Star Club 排队。万一来不及，==g:无限次 re-entry 开放到 Day 1A、1B、1C 的第 10 级开始==，所以迟到还有救。
 
 **Q. 如果我早早出局，能在 The Star Sydney 打现金局吗？**
 

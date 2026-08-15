@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "在锦标赛里你交一笔固定买入换取筹码，盲注按计时器不断上涨，直到一名玩家赢下全部筹码。通常前 10–15% 的人进钱。赛制包括 freezeout、PKO、卫星赛和 deepstack——报名方式有直接买入、卫星赛晋级，或线上预注册。",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-08-15",
-  masterUpdated: "2026-08-15",
+  updated: "2026-08-16",
+  masterUpdated: "2026-08-16",
   keepImagesInBody: true,
   readTime: "14 分钟",
   emoji: "🏆",
@@ -175,7 +175,7 @@ deepstack 锦标赛让你的起始筹码相对盲注明显高于同系列的标�
 
 ### 方式 B：线上预注册
 大多数大型现场赛事让你提前在线报名：
-- 在赛事平台上开个账号（比如 WSOP 用 WSOP LIVE app，EPT/APPT 赛事用 PokerStars Live app）
+- 在赛事平台上开个账号（比如 WSOP 用 WSOP LIVE app，EPT/APPT 赛事用 PokerStars 软件大厅里的 "Events"、"Live" 标签页）
 - 在线支付买入
 - 到场馆 → 核验证件 → 在自助机上打印座位卡或到台前领取
 - 省掉排队报名——大型赛事值得这么做

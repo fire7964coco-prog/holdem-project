@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Di turnamen poker Anda membayar buy-in tetap untuk mendapat chip, blind naik mengikuti timer sampai satu pemain memegang semua chip. 10–15% pemain teratas ITM. Formatnya meliputi freezeout, PKO, satellite, dan deepstack — masuk lewat buy-in langsung, satellite, atau pra-registrasi online.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-08-15",
+  updated: "2026-08-16",
   keepImagesInBody: true,
   readTime: "14 mnt",
   emoji: "🏆",
@@ -174,7 +174,7 @@ Alih-alih mengeluarkan $10.000, Anda berkompetisi di turnamen $500 melawan 19 pe
 
 ### Opsi B: Pra-Registrasi Online
 Kebanyakan festival live besar memungkinkan Anda mendaftar online lebih awal:
-- Buat akun di platform event (mis. aplikasi WSOP LIVE untuk WSOP, aplikasi PokerStars Live untuk event EPT/APPT)
+- Buat akun di platform event (mis. aplikasi WSOP LIVE untuk WSOP, tab "Events" dan "Live" di lobi PokerStars untuk event EPT/APPT)
 - Bayar buy-in secara online
 - Tiba di venue → verifikasi ID → cetak kartu kursi di kios atau ambil di meja
 - Melewati antrean registrasi — layak dilakukan untuk event besar

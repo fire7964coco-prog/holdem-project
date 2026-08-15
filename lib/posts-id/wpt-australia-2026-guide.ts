@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "WPT Australia 2026: 10–30 Sep, The Star Sydney. Dua flagship: AUD $1.500 WPT Prime (17–22 Sep) dan AUD $5.000 WPT Championship (24–30 Sep). Satelit on-site dari AUD $270, dengan qualifier Championship $290 dan $550. Hadiah juara pertama Championship sudah termasuk kursi $15.000 ke WPT World Championship. Wajib 18+, anggota Star Club, dan dress code smart-casual ditegakkan.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-15",
+  updated: "2026-08-16",
   readTime: "14 mnt",
   emoji: "🦘",
   layout: "tournament-guide",
@@ -307,7 +307,7 @@ A. ==g:Untuk pemain rekreasional, kemenangan poker umumnya tidak dikenai pajak d
 
 **Q. Kapan registrasi turnamen dibuka setiap hari?**
 
-A. Berpatokanlah pada jam mulai yang diumumkan — The Star mengumumkan jam mulai event, bukan jam buka loket, jadi perlakukan jam mulai sebagai tenggat, bukan target. Untuk starting flight Championship yang ramai, ==g:sediakan 90 menit==: hambatan sebenarnya adalah antrean pendaftaran, dan antrean Star Club kalau Anda belum jadi anggota. Kalaupun terlambat, ==g:re-entry tanpa batas masih terbuka sampai awal level 10== di Day 1A, 1B, dan 1C — jadi datang telat masih bisa diselamatkan.
+A. Berpatokanlah pada jam mulai yang diumumkan — halaman resmi event Championship menyebut pendaftaran dibuka ==g:1 jam sebelum jam mulai==. Untuk starting flight Championship yang ramai, tetap sediakan 90 menit: hambatan sebenarnya adalah antrean pendaftaran, dan antrean Star Club kalau Anda belum jadi anggota. Kalaupun terlambat, ==g:re-entry tanpa batas masih terbuka sampai awal level 10== di Day 1A, 1B, dan 1C — jadi datang telat masih bisa diselamatkan.
 
 **Q. Bisakah saya bermain cash game di The Star Sydney kalau saya bust lebih awal?**
 
