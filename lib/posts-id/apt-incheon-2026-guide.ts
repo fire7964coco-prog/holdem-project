@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "APT Incheon 2026 berlangsung 7–16 Agustus di Paradise City Casino, Incheon — 10 menit dengan shuttle gratis dari Terminal 1. Main Event: buy-in KRW 2.500.000 (~$1.703), GTD $1 juta. Kualifikasi online Natural8 total membagikan 74 kursi, tetapi Mega $35 dan rute OnLive Day 1 sama-sama tutup pada 2 Agustus: jalur terakhir, Step $20 → Mega $200, tutup pada 7 Agustus — kualifikasi online sudah selesai. Hanya untuk warga negara asing (warga negara Korea tanpa izin tinggal tetap di luar negeri tidak boleh masuk). Seoul berjarak ~1 jam dan merupakan salah satu kota terbaik di Asia untuk kuliner, budaya, dan kehidupan malam.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-13",
+  updated: "2026-08-15",
   masterUpdated: "2026-07-28",
   keepImagesInBody: true,
   readTime: "16 mnt",
@@ -99,8 +99,6 @@ Dan untuk pengunjung internasional: ==g:sebagian besar pemegang paspor negara Ba
 
 ---
 
----
-
 ## Berapa nilai seat APT Championship?
 
 Sepanjang festival ini dibagikan **sembilan seat APT Championship (APTC) Taipei 2026** — masing-masing bernilai **$10.000**. Hampir semua liputan hanya menyebut "tiga kursi di Main Event". Itu tidak lengkap, dan selisihnya menentukan event mana yang sebaiknya Anda ikuti.
@@ -151,7 +149,7 @@ Step $20 → menangkan tiket ke Mega Satellite $200 → menangkan kursi Main Eve
 
 > **Dulu OnLive itu apa:** lewat rute ini Day 1 bisa dimainkan dari zona waktu sendiri — terbang ke Korea baru perlu kalau bertahan sampai Day 3, jalur paling cerdas saat anggaran perjalanan ketat. ==r:Rutenya tutup 2 Agustus, jadi untuk edisi ini sudah bukan pilihan== — dicatat di sini karena layak diincar di stop APT berikutnya.
 
-**Ada jalur ketiga yang hampir tidak pernah disebut panduan lain: Country Exclusives.** Natural8 menjalankan kualifikasi khusus berdasarkan negara domisili yang membagikan **enam paket live** — dan paket bukan sekadar kursi: isinya **tiket Main Event (~$1.684) plus sekitar $500 biaya perjalanan**. Satelit biasa hanya memberi kursi, tiket pesawat urusan Anda sendiri. Kelayakan ditentukan negara domisili, jadi cek dulu di lobby apakah bracket negara Anda dibuka sebelum menggrind jalur umum.
+**Ada jalur ketiga yang hampir tidak pernah disebut panduan lain: Country Exclusives.** Natural8 menjalankan kualifikasi khusus berdasarkan kewarganegaraan yang membagikan **enam paket live** — dan paket bukan sekadar kursi: isinya **tiket Main Event (~$1.684) plus sekitar $500 biaya perjalanan**. Satelit biasa hanya memberi kursi, tiket pesawat urusan Anda sendiri. ==r:Kelayakan di sini ditentukan **kewarganegaraan dan dicek lewat KYC** — bukan alamat domisili yang Anda daftarkan, berbeda dengan akses akun yang memang bergantung pada negara domisili.== Satu-satunya bracket yang diumumkan untuk Incheon 2026, "N8TW x APT Incheon 2026", **hanya untuk warga negara Taiwan**. Cek dulu di lobby apakah ada edisi yang benar-benar bisa Anda ikuti sebelum menghitung jalur ini.
 
 ---
 
@@ -180,11 +178,9 @@ Sebelum memesan tiket pesawat, ada baiknya tahu meja seperti apa yang menanti. A
 
 Itu justru kabar bagus buat pemain Indonesia. Secara jarak Indonesia tidak lebih jauh dari negara-negara yang sudah rutin datang: **Jakarta–Incheon sekitar 7 jam penerbangan langsung** (Garuda, Korean Air, Asiana, dan T'way Air sejak April 2026), dibanding ~5,5 jam dari Bangkok dan ~6,5 jam dari Kuala Lumpur. ==g:Zona waktunya pun cuma **2 jam di depan WIB**, jadi jadwal Day 1 OnLive yang mengikuti waktu Korea masih jam manusiawi buat pemain Indonesia== — keunggulan nyata dibanding pemain Eropa yang harus mundur 7 jam. Dan dan ==g:Anda datang tanpa jejak sama sekali — tidak ada reg yang punya read atas Anda==, sementara banyak reguler di sirkuit ini sudah saling kenal bertahun-tahun.
 
-**Angka 2025:** 1.281 entri dari **754 pemain unik** (sisanya re-entry), membentuk prize pool **KRW 2.766.660.000 (~$2,0 juta)** — Main Event terbesar yang pernah digelar APT di Korea sampai saat itu. Juaranya pemain Tiongkok **Junjie He** dengan ₩380.520.000 (~$275.140) plus satu kursi APT Championship, setelah kesepakatan ICM tiga arah bersama Kouki Okumiya dan Kuroda Kiyoto.
+**Angka 2025:** 1.281 entri dari **754 pemain unik** (sisanya re-entry), membentuk prize pool **KRW 2.766.960.000 (~$2,0 juta)** — Main Event terbesar yang pernah digelar APT di Korea sampai saat itu. Juaranya pemain Tiongkok **Junjie He** dengan ₩380.520.000 (~$275.140) plus satu kursi APT Championship, setelah kesepakatan ICM tiga arah bersama Kouki Okumiya dan Kuroda Kiyoto.
 
 > **Baca angka entri dengan benar.** "1.281 entri" bukan 1.281 orang, melainkan 754 pemain plus re-entry. Field dengan re-entry selalu terlihat lebih besar dari kenyataannya.
-
----
 
 ---
 
@@ -425,7 +421,7 @@ Semua angka dicocokkan dengan sumber primer. **Diverifikasi: 28 Juli 2026.**
 - **APT Championship 2026** — [Full APTC 2026 Schedule](https://www.theasianpokertour.com/news/apt-announces-full-aptc2026-schedule) · 13–29 November, Taipei; Main Event 23–27 Nov, $10.000, garansi $5.000.000
 - **Ulang tahun ke-20** — [APT Gets Ready to Celebrate 20 Years](https://www.theasianpokertour.com/news/apt-2026-schedule)
 - **Satelit dan paket** — [Natural8 — Journey to APT Incheon 2026](https://www.natural8.com/en/blog/journey-to-apt-incheon-2026) · [Country Exclusives 2026](https://www.natural8.com/en/poker/tournaments/apt-incheon-country-exclusives-2026)
-- **Field dan hasil 2025 (laporan resmi penyelenggara)** — [APT — China's Junjie He Wins APT's Largest Korean Main Event](https://www.theasianpokertour.com/news/china-s-junjie-he-wins-apt-s-largest-korean-main-event-for-krw-380-5-m-usd-275-k-plus-apt-championship-seat-worth-krw-13-8-m-usd-10-k) · 1.281 entri dari 754 pemain · prize pool KRW 2.766.660.000 · rincian per negara
+- **Field dan hasil 2025 (laporan resmi penyelenggara)** — [APT — China's Junjie He Wins APT's Largest Korean Main Event](https://www.theasianpokertour.com/news/china-s-junjie-he-wins-apt-s-largest-korean-main-event-for-krw-380-5-m-usd-275-k-plus-apt-championship-seat-worth-krw-13-8-m-usd-10-k) · 1.281 entri dari 754 pemain · prize pool KRW 2.766.960.000 · rincian per negara
 - **Aturan masuk kasino** — [Paradise City resmi](https://www.p-city.com/front/contents/casino/casinoInfo)
 
 > ⚠️ **Festival dimulai 7 Agustus.** Jumlah kursi satelit, batas late reg, dan jadwal shuttle masih bisa berubah. **Cek ulang halaman event APT dan lobby Natural8 pada hari Anda mendaftar.**

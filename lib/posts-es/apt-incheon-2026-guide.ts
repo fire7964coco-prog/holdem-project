@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "El APT Incheon 2026 se juega del 7 al 16 de agosto en el Paradise City Casino, Incheon — a 10 min en shuttle gratuito desde la Terminal 1. Main Event: entrada de KRW 2,500,000 (~$1,703), $1M GTD. Los clasificatorios online de Natural8 repartieron 74 asientos en total, pero el Mega de $35 y la vía OnLive Día 1 cerraron el 2 de agosto: la última vía, el Step de $20 → Mega de $200, cerró el 7 de agosto: la clasificación online ya terminó. Solo para extranjeros (los ciudadanos coreanos sin residencia en el extranjero no pueden entrar). Seúl está a ~1 hora y es una de las mejores ciudades de Asia para comer, cultura y vida nocturna.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-13",
-  masterUpdated: "2026-07-28",
+  updated: "2026-08-15",
+  masterUpdated: "2026-08-15",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🇰🇷",
@@ -99,8 +99,6 @@ Y para el visitante internacional: ==g:la mayoría de los pasaportes occidentale
 
 ---
 
----
-
 ## ¿Cuánto valen los asientos al APT Championship?
 
 En todo el festival se reparten **nueve asientos al APT Championship (APTC) Taipéi 2026**, cada uno valorado en **$10.000**. Casi toda la cobertura menciona solo "tres asientos en el Main Event". Está incompleto, y la diferencia importa a la hora de elegir en qué torneos entrar.
@@ -151,7 +149,7 @@ Step de $20 → ganas ticket para el Mega Satélite de $200 → ganas asiento pa
 
 > **Qué era OnLive:** la ruta te dejaba jugar el Día 1 desde tu propia zona horaria y solo volar a Corea si sobrevivías hasta el Día 3 — la vía más inteligente cuando el presupuesto de viaje iba justo. ==r:Cerró el 2 de agosto, así que en esta edición ya no es una opción== — queda anotada porque merece la pena vigilarla en la próxima parada del APT.
 
-**Hay una tercera vía que casi ninguna guía menciona: los Country Exclusives.** Natural8 organiza clasificatorios restringidos por país de residencia que reparten **seis paquetes en vivo**, y un paquete no es solo el asiento: incluye **la entrada al Main Event (~$1.684) más unos $500 en gastos de viaje**. Los satélites normales te dan el asiento y el vuelo corre de tu cuenta. La elegibilidad depende del país de residencia, así que comprueba en el lobby si tu país tiene bracket abierto antes de grindear la vía general.
+**Hay una tercera vía que casi ninguna guía menciona: los Country Exclusives.** Natural8 organiza clasificatorios restringidos por nacionalidad que reparten **seis paquetes en vivo**, y un paquete no es solo el asiento: incluye **la entrada al Main Event (~$1.684) más unos $500 en gastos de viaje**. Los satélites normales te dan el asiento y el vuelo corre de tu cuenta. ==r:Aquí la elegibilidad va por **nacionalidad y se verifica en el KYC** — no por la dirección que tengas registrada, al contrario que el acceso a la cuenta, que ese sí depende del país de residencia.== El único bracket publicado para Incheon 2026, "N8TW x APT Incheon 2026", era **solo para nacionalidad taiwanesa**. Mira en el lobby si hay alguna edición que puedas jugar de verdad antes de contar con esta vía.
 
 ---
 
@@ -180,11 +178,9 @@ Antes de comprar el vuelo conviene saber en qué mesa te vas a sentar. APT publi
 
 En la práctica eso significa dos cosas. Primera: en la mesa se habla más japonés y mandarín que inglés, y el floor lo gestiona con total normalidad. Segunda — y esta juega a tu favor — **nadie va a tener reads previos sobre ti**. Llegas sin historial en un circuito donde muchos regulares se conocen entre ellos.
 
-**Los números de 2025:** 1.281 entradas de **754 jugadores únicos** (el resto fueron re-entradas), con un prize pool de **KRW 2.766.660.000 (~$2,0M)** — el Main Event más grande que APT había montado en Corea hasta entonces. Ganó el chino **Junjie He** por ₩380.520.000 (~$275.140) más un asiento al APT Championship, tras un deal por ICM a tres manos con Kouki Okumiya y Kuroda Kiyoto.
+**Los números de 2025:** 1.281 entradas de **754 jugadores únicos** (el resto fueron re-entradas), con un prize pool de **KRW 2.766.960.000 (~$2,0M)** — el Main Event más grande que APT había montado en Corea hasta entonces. Ganó el chino **Junjie He** por ₩380.520.000 (~$275.140) más un asiento al APT Championship, tras un deal por ICM a tres manos con Kouki Okumiya y Kuroda Kiyoto.
 
 > **Lee bien el número de entradas.** "1.281 entradas" no son 1.281 personas: son 754 jugadores más re-entries. Un field con re-entry siempre se ve más grande de lo que son.
-
----
 
 ---
 
@@ -419,7 +415,7 @@ Todas las cifras se contrastaron con fuentes primarias. **Verificado: 28 de juli
 - **APT Championship 2026** — [Full APTC 2026 Schedule](https://www.theasianpokertour.com/news/apt-announces-full-aptc2026-schedule) · 13–29 de noviembre, Taipéi; Main Event 23–27 nov, $10.000, $5.000.000 GTD
 - **20º aniversario** — [APT Gets Ready to Celebrate 20 Years](https://www.theasianpokertour.com/news/apt-2026-schedule)
 - **Satélites y paquetes** — [Natural8 — Journey to APT Incheon 2026](https://www.natural8.com/en/blog/journey-to-apt-incheon-2026) · [Country Exclusives 2026](https://www.natural8.com/en/poker/tournaments/apt-incheon-country-exclusives-2026)
-- **Field y resultado 2025 (reporte oficial del organizador)** — [APT — China's Junjie He Wins APT's Largest Korean Main Event](https://www.theasianpokertour.com/news/china-s-junjie-he-wins-apt-s-largest-korean-main-event-for-krw-380-5-m-usd-275-k-plus-apt-championship-seat-worth-krw-13-8-m-usd-10-k) · 1.281 entradas de 754 jugadores únicos · prize pool KRW 2.766.660.000 · desglose por país
+- **Field y resultado 2025 (reporte oficial del organizador)** — [APT — China's Junjie He Wins APT's Largest Korean Main Event](https://www.theasianpokertour.com/news/china-s-junjie-he-wins-apt-s-largest-korean-main-event-for-krw-380-5-m-usd-275-k-plus-apt-championship-seat-worth-krw-13-8-m-usd-10-k) · 1.281 entradas de 754 jugadores únicos · prize pool KRW 2.766.960.000 · desglose por país
 - **Normas de acceso al casino** — [Paradise City oficial](https://www.p-city.com/front/contents/casino/casinoInfo)
 
 > ⚠️ **El festival arranca el 7 de agosto.** El número de asientos de los satélites, los cierres de late reg y los horarios del shuttle todavía pueden cambiar. **Vuelve a comprobarlo en la página de APT y en el lobby de Natural8 el mismo día que te registres.**

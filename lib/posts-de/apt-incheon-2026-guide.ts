@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Die APT Incheon 2026 läuft vom 7.–16. Aug im Paradise City Casino, Incheon – 10 Min mit dem kostenlosen Shuttle vom Terminal 1. Main Event: KRW 2.500.000 (~$1.703) Buy-in, $1M GTD. Natural8s Online-Qualifikationen vergaben insgesamt 74 Seats, doch das $35-Mega und die OnLive-Day-1-Route endeten beide am 2. August: die letzte Route, $20 Step → $200 Mega, lief am 7. August aus – die Online-Qualifikation ist damit beendet. Nur für ausländische Staatsbürger (koreanische Bürger ohne Wohnsitz im Ausland dürfen nicht rein). Seoul ist ~1 Stunde entfernt und eine der besten Städte Asiens für Essen, Kultur und Nachtleben.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-13",
+  updated: "2026-08-15",
   masterUpdated: "2026-08-09",
   keepImagesInBody: true,
   readTime: "16 Min.",
@@ -99,8 +99,6 @@ Und für internationale Besucher: ==g:Deutschland, Österreich und die Schweiz b
 
 ---
 
----
-
 ## Was sind die APT-Championship-Seats wert?
 
 Über das gesamte Festival werden **neun Seats für die APT Championship (APTC) Taipeh 2026** vergeben – jeder im Wert von **$10.000**. Die meisten Berichte erwähnen nur „drei Seats im Main Event“. Das ist unvollständig, und der Unterschied entscheidet mit, in welche Events du überhaupt einsteigen solltest.
@@ -180,11 +178,9 @@ Bevor du fliegst, lohnt sich ein Blick darauf, an welchem Tisch du landest. APT 
 
 Praktisch heißt das: Am Tisch hörst du mehr Japanisch und Mandarin als Englisch, und der Floor geht damit völlig routiniert um. Der Vorteil dabei – **niemand hat Reads auf dich**. Du kommst ohne Historie in einen Circuit, in dem sich viele Regs seit Jahren kennen.
 
-**Die Zahlen von 2025:** 1.281 Entries von **754 einzelnen Spielern** (der Rest waren Re-Entries), daraus ein Preispool von **KRW 2.766.660.000 (~$2,0 Mio.)** – das damals größte Main Event, das APT je in Korea gespielt hat. Gewonnen hat der Chinese **Junjie He** für ₩380.520.000 (~$275.140) plus einen APT-Championship-Seat, nach einem Dreier-ICM-Deal mit Kouki Okumiya und Kuroda Kiyoto.
+**Die Zahlen von 2025:** 1.281 Entries von **754 einzelnen Spielern** (der Rest waren Re-Entries), daraus ein Preispool von **KRW 2.766.960.000 (~$2,0 Mio.)** – das damals größte Main Event, das APT je in Korea gespielt hat. Gewonnen hat der Chinese **Junjie He** für ₩380.520.000 (~$275.140) plus einen APT-Championship-Seat, nach einem Dreier-ICM-Deal mit Kouki Okumiya und Kuroda Kiyoto.
 
 > **Lies die Entry-Zahl richtig.** „1.281 Entries“ sind keine 1.281 Personen, sondern 754 Spieler plus Re-Entries. Re-Entry-Felder wirken immer größer, als sie sind.
-
----
 
 ---
 
@@ -419,7 +415,7 @@ Alle Zahlen wurden anhand der Primärquellen geprüft. **Stand: 9. August 2026.*
 - **APT Championship 2026** – [Full APTC 2026 Schedule](https://www.theasianpokertour.com/news/apt-announces-full-aptc2026-schedule) · 13.–29. November, Taipeh; Main Event 23.–27. Nov, $10.000, $5.000.000 GTD
 - **20-jähriges Jubiläum** – [APT Gets Ready to Celebrate 20 Years](https://www.theasianpokertour.com/news/apt-2026-schedule)
 - **Satellites und Pakete** – [Natural8 – Journey to APT Incheon 2026](https://www.natural8.com/en/blog/journey-to-apt-incheon-2026) · [Country Exclusives 2026](https://www.natural8.com/en/poker/tournaments/apt-incheon-country-exclusives-2026)
-- **Feld und Ergebnis 2025 (offizieller Bericht des Veranstalters)** – [APT – China's Junjie He Wins APT's Largest Korean Main Event](https://www.theasianpokertour.com/news/china-s-junjie-he-wins-apt-s-largest-korean-main-event-for-krw-380-5-m-usd-275-k-plus-apt-championship-seat-worth-krw-13-8-m-usd-10-k) · 1.281 Entries von 754 Spielern · Preispool KRW 2.766.660.000 · Länderverteilung Top 10
+- **Feld und Ergebnis 2025 (offizieller Bericht des Veranstalters)** – [APT – China's Junjie He Wins APT's Largest Korean Main Event](https://www.theasianpokertour.com/news/china-s-junjie-he-wins-apt-s-largest-korean-main-event-for-krw-380-5-m-usd-275-k-plus-apt-championship-seat-worth-krw-13-8-m-usd-10-k) · 1.281 Entries von 754 Spielern · Preispool KRW 2.766.960.000 · Länderverteilung Top 10
 - **Casino-Einlassregeln** – [Paradise City offiziell](https://www.p-city.com/front/contents/casino/casinoInfo)
 
 > ⚠️ **Das Festival läuft bereits – seit dem 7. August, letzter Spieltag ist der 16. August.** Late-Reg-Schluss und Shuttle-Zeiten können sich kurzfristig ändern. **Prüf am Tag deiner Anmeldung nochmal die APT-Eventseite und die Natural8-Lobby.**

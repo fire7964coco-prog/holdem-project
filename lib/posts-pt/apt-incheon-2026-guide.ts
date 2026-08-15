@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "O APT Incheon 2026 rola de 7 a 16 de agosto no Paradise City Casino, em Incheon — 10 min de shuttle grátis a partir do Terminal 1. Main Event: buy-in de KRW 2.500.000 (~$1.703), $1M GTD. Os classificatórios online da Natural8 distribuíram 74 vagas no total, mas o Mega de $35 e a rota OnLive Day 1 encerraram em 2 de agosto: a última via, o Step de $20 → Mega de $200, encerrou em 7 de agosto: a classificação online acabou. Só estrangeiros (cidadãos coreanos sem residência no exterior não podem entrar). Seul fica a ~1 hora e é uma das melhores cidades da Ásia para comida, cultura e vida noturna.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-13",
+  updated: "2026-08-15",
   masterUpdated: "2026-07-28",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -99,8 +99,6 @@ E pra visitantes internacionais: ==g:a maioria dos portadores de passaporte ocid
 
 ---
 
----
-
 ## Quanto valem os assentos do APT Championship?
 
 Ao longo do festival são distribuídos **nove assentos para o APT Championship (APTC) Taipei 2026** — cada um avaliado em **$10.000**. A maior parte da cobertura menciona só "três assentos no Main Event". É incompleto, e essa diferença pesa na hora de escolher em quais torneios entrar.
@@ -151,7 +149,7 @@ Step de $20 → ganhe o ticket pro Mega Satellite de $200 → ganhe a vaga no Ma
 
 > **O que era o OnLive:** a rota deixava você jogar o Day 1 do seu próprio fuso horário e só voar pra Coreia se sobrevivesse até o Day 3 — o caminho mais esperto quando o orçamento de viagem estava apertado. ==r:Ela encerrou em 2 de agosto, então nesta edição já não é uma opção== — fica anotada porque vale ficar de olho na próxima parada do APT.
 
-**Existe uma terceira rota que quase nenhum guia cita: os Country Exclusives.** A Natural8 roda classificatórios restritos por país de residência que distribuem **seis pacotes live** — e pacote não é só o assento: inclui **a entrada do Main Event (~$1.684) mais cerca de $500 em despesas de viagem**. Satélites normais te dão a vaga e o voo fica por sua conta. A elegibilidade depende do país de residência, então confere no lobby se o seu país tem bracket aberto antes de grindar a rota geral.
+**Existe uma terceira rota que quase nenhum guia cita: os Country Exclusives.** A Natural8 roda classificatórios restritos por nacionalidade que distribuem **seis pacotes live** — e pacote não é só o assento: inclui **a entrada do Main Event (~$1.684) mais cerca de $500 em despesas de viagem**. Satélites normais te dão a vaga e o voo fica por sua conta. ==r:Aqui a elegibilidade vai por **nacionalidade e é conferida no KYC** — não pelo endereço que você cadastrou, diferente do acesso à conta, que esse sim depende do país de residência.== O único bracket divulgado para Incheon 2026, "N8TW x APT Incheon 2026", era **só para nacionalidade taiwanesa**. Confere no lobby se existe alguma edição que você realmente possa jogar antes de contar com essa rota.
 
 ---
 
@@ -180,11 +178,9 @@ Antes de comprar a passagem, vale saber em que mesa você vai sentar. A APT publ
 
 Na prática isso significa duas coisas. Primeira: na mesa se ouve mais japonês e mandarim do que inglês, e o floor lida com isso com naturalidade. Segunda — e essa joga a seu favor — **ninguém tem read nenhum sobre você**. Você chega sem histórico num circuito onde muitos regs se conhecem há anos.
 
-**Os números de 2025:** 1.281 entradas de **754 jogadores únicos** (o resto foram re-entries), formando um prize pool de **KRW 2.766.660.000 (~$2,0 mi)** — o maior Main Event que a APT já tinha rodado na Coreia até ali. Quem levou foi o chinês **Junjie He**, por ₩380.520.000 (~$275.140) mais um assento do APT Championship, depois de um acordo ICM a três com Kouki Okumiya e Kuroda Kiyoto.
+**Os números de 2025:** 1.281 entradas de **754 jogadores únicos** (o resto foram re-entries), formando um prize pool de **KRW 2.766.960.000 (~$2,0 mi)** — o maior Main Event que a APT já tinha rodado na Coreia até ali. Quem levou foi o chinês **Junjie He**, por ₩380.520.000 (~$275.140) mais um assento do APT Championship, depois de um acordo ICM a três com Kouki Okumiya e Kuroda Kiyoto.
 
 > **Leia o número de entradas direito.** "1.281 entradas" não são 1.281 pessoas: são 754 jogadores mais re-entries. Field com re-entry sempre parece maior do que é.
-
----
 
 ---
 
@@ -419,7 +415,7 @@ Todos os números foram checados contra fontes primárias. **Verificado em: 28 d
 - **APT Championship 2026** — [Full APTC 2026 Schedule](https://www.theasianpokertour.com/news/apt-announces-full-aptc2026-schedule) · 13–29 de novembro, Taipei; Main Event 23–27 nov, $10.000, $5.000.000 GTD
 - **20º aniversário** — [APT Gets Ready to Celebrate 20 Years](https://www.theasianpokertour.com/news/apt-2026-schedule)
 - **Satélites e pacotes** — [Natural8 — Journey to APT Incheon 2026](https://www.natural8.com/en/blog/journey-to-apt-incheon-2026) · [Country Exclusives 2026](https://www.natural8.com/en/poker/tournaments/apt-incheon-country-exclusives-2026)
-- **Field e resultado 2025 (relatório oficial do organizador)** — [APT — China's Junjie He Wins APT's Largest Korean Main Event](https://www.theasianpokertour.com/news/china-s-junjie-he-wins-apt-s-largest-korean-main-event-for-krw-380-5-m-usd-275-k-plus-apt-championship-seat-worth-krw-13-8-m-usd-10-k) · 1.281 entradas de 754 jogadores · prize pool KRW 2.766.660.000 · divisão por país
+- **Field e resultado 2025 (relatório oficial do organizador)** — [APT — China's Junjie He Wins APT's Largest Korean Main Event](https://www.theasianpokertour.com/news/china-s-junjie-he-wins-apt-s-largest-korean-main-event-for-krw-380-5-m-usd-275-k-plus-apt-championship-seat-worth-krw-13-8-m-usd-10-k) · 1.281 entradas de 754 jogadores · prize pool KRW 2.766.960.000 · divisão por país
 - **Regras de entrada no cassino** — [Paradise City oficial](https://www.p-city.com/front/contents/casino/casinoInfo)
 
 > ⚠️ **O festival começa em 7 de agosto.** Número de assentos dos satélites, prazos de late reg e horários do shuttle ainda podem mudar. **Confere de novo a página da APT e o lobby da Natural8 no dia em que for se registrar.**

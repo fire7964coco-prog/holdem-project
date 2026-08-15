@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "APT Incheon 2026 runs Aug 7–16 at Paradise City Casino, Incheon — 10 min by free shuttle from Terminal 1. Main Event: KRW 2,500,000 (~$1,703) buy-in, $1M GTD. Natural8's online qualifiers awarded 74 seats in total; the $35 Mega and the OnLive Day 1 route closed on Aug 2, and the last route standing — the $20 Step → $200 Mega — closed on Aug 7, so online qualifying is over for this edition. Foreign nationals only (Korean citizens without overseas residency cannot enter). Seoul is ~1 hour away and is one of the best cities in Asia for food, culture, and nightlife.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-13",
+  updated: "2026-08-15",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🇰🇷",
@@ -150,7 +150,7 @@ $20 Step Satellite → win ticket to $200 Mega Satellite → win Main Event seat
 
 > **What OnLive was:** the route let you play Day 1 from your home time zone and only fly to Korea if you survived to Day 3 — the smarter path when the travel budget was tight. ==r:It closed on Aug 2, so for this edition it is no longer an option== — noted here because it is worth watching for at the next APT stop.
 
-**There's a third route most guides skip — Country Exclusives.** Natural8 runs country-restricted qualifiers that award **six live packages**, and a package is not just a seat: it's the **Main Event entry (~$1,684) plus roughly $500 in travel expenses**. Ordinary satellites give you the seat and leave the flight to you. Eligibility is set by country of residence, so check whether your country's bracket is open in the tournament lobby before you grind the general path.
+**There's a third route most guides skip — Country Exclusives.** Natural8 runs country-restricted qualifiers that award **six live packages**, and a package is not just a seat: it's the **Main Event entry (~$1,684) plus roughly $500 in travel expenses**. Ordinary satellites give you the seat and leave the flight to you. ==r:Eligibility here runs on **nationality, checked at KYC** — not on your registered address, unlike account access, which does depend on your country of residence.== The one bracket published for Incheon 2026, "N8TW x APT Incheon 2026", was open to **Taiwanese nationals only**. Check the tournament lobby for a bracket you can actually enter before you build a plan around this route.
 
 ---
 
@@ -377,7 +377,7 @@ A. Very close. Paradise City runs a free shuttle from Terminal 1 (Gates 3C & 14C
 
 **Q. Can I play the APT Incheon Main Event if I've never played a live tournament?**
 
-A. Yes. The buy-in (~$1,703) is significant but the structure is beginner-friendly — deep starting stacks and long levels. If you're comfortable with home games or online poker, the transition to live is manageable. The Mini Main Event (~$610, KRW 900K) and Ultra Stack (~$475) are lower stakes options to start.
+A. Yes. The buy-in (~$1,703) is significant but the structure is beginner-friendly — deep starting stacks and long levels. If you're comfortable with home games or online poker, the transition to live is manageable. The Mini Main Event (~$610, KRW 900K) and Ultra Stack (~$477) are lower stakes options to start.
 
 **Q. How do I get from Paradise City to Seoul?**
 
