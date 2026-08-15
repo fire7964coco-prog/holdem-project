@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Para entrar al WSOP solo hacen falta dos cosas: 21 años cumplidos y una identificación válida. El reglamento no pide ciudadanía estadounidense ni visa de ningún tipo, y para quien no es ciudadano acepta pasaporte, licencia extranjera, tarjeta de residencia y — si eres mexicano — la matrícula consular. Sobre el precio: el Main Event son $10,000, pero el brazalete más barato del calendario cuesta $300. Y ojo con el registro, porque cambió: ahora hacen falta dos cuentas y una verificación en persona.",
   category: "tournament",
   date: "2026-07-27",
-  updated: "2026-07-27",
+  updated: "2026-08-15",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🏆",
@@ -90,7 +90,7 @@ Esta es la parte donde más guías en español están desactualizadas — alguna
 
 :::steps
 Dos cuentas, las dos gratis | Necesitas una cuenta de **Caesars Rewards** y otra de **WSOP LIVE**. El reglamento dice que ambas son obligatorias para participar en **cualquier evento** —no solo si te inscribes por internet— y que registrarse en las dos no cuesta nada.
-Puedes inscribirte por internet | Desde la app, con tarjeta de crédito o débito — y si vives en Estados Unidos, también por ACH o PayPal.
+Puedes inscribirte por internet | Desde la app, con tarjeta de crédito o débito, PayPal o MoonPay. Dos métodos van por residencia y conviene no confundirlos: ==**ACH es solo para quien vive en Estados Unidos**==, y al revés, ==g:**Luxon Pay es solo para participantes de fuera del país**== — o sea, la vía pensada para ti si vienes de México o Latinoamérica. El reglamento avisa además que según el método de pago pueden aplicarte cargos adicionales.
 ★ Pero la inscripción online **no te da el asiento** | Aunque pagues por app, tienes que presentarte **en persona** en el área de registro del WSOP con tu identificación para completar el proceso y acceder a tu mesa.
 Y que sea una tarjeta física a tu nombre | El reglamento **no acepta tarjetas virtuales** (Apple Pay, tarjetas digitales) como prueba en la verificación, y el nombre de tu identificación **debe coincidir** con el de la tarjeta. Con la tarjeta de otra persona no juegas.
 :::
@@ -154,7 +154,9 @@ El reglamento lo dice sin adornos: **los impuestos corren por cuenta del jugador
 
 Si vives y tributas en Estados Unidos, el casino entrega el formulario **W-2G** y necesita un número fiscal — sirve el Seguro Social o el **ITIN**, que es el número para quien no puede tener Seguro Social.
 
-Si vienes de fuera del país, la regla general del IRS retiene el **30%** de lo ganado. Existen convenios que eximen, pero conviene mirar la lista real: **de los países hispanohablantes, solo España está en ella.** México, Colombia, Argentina y el resto de Latinoamérica no.
+Si vienes de fuera del país, la regla general del IRS retiene el **30%** de lo ganado. Existen convenios que eximen — la lista del IRS tiene **25 países** — pero conviene mirarla de verdad: **de los hispanohablantes solo está España.** México, Colombia, Argentina y el resto de Latinoamérica no.
+
+:::note[Un detalle que sorprende: el IRS **no** grava las ganancias de blackjack, bacará, craps, ruleta ni big-6 de un no residente — pero el póker no está en esa lista. Y dos convenios que antes eximían, los de Hungría y Rusia, **dejaron de aplicarse** (Rusia desde el 16 de agosto de 2024, Hungría desde el 1 de enero de 2024).]:::
 
 ## Preguntas frecuentes
 
@@ -202,7 +204,8 @@ A. El WSOP Circuit recorre el país todo el año. Entre las paradas que anuncian
 
 ## Fuentes oficiales
 
-- **Reglamento del torneo 2026** — requisitos de edad, documentos aceptados, registro, re-entry, teléfonos e impuestos: [WSOP Tournament Rules (PDF)](https://wsop.gg-global-cdn.com/wsop/pdfs/2026-WSOP-Tournament-Rules.pdf)
+- **Reglamento del torneo 2026** — requisitos de edad, documentos aceptados, registro, re-entry, teléfonos y la regla de que los impuestos corren por cuenta del jugador: [WSOP Tournament Rules (PDF)](https://wsop.gg-global-cdn.com/wsop/pdfs/2026-WSOP-Tournament-Rules.pdf)
+- **Retención del 30% y lista de convenios** — [IRS, Publication 515](https://www.irs.gov/pub/irs-pdf/p515.pdf), apartado *Gambling winnings (income code 28)*: los residentes de 25 países quedan exentos por convenio, y España es el único hispanohablante de esa lista
 - **Calendario de eventos de brazalete y precios**: [WSOP](https://www.wsop.com/news/2026-world-series-of-poker/)
 - **Paradas del Circuit** (páginas oficiales de cada casino): [Choctaw Durant](https://www.choctawcasinos.com/Durant/) · [Hard Rock Tulsa](https://www.hardrockcasinotulsa.com/casino/poker) · [Horseshoe Indianapolis](https://www.caesars.com/horseshoe-indianapolis/casino/wsop-poker-room) · [Caesars Southern Indiana](https://www.caesars.com/caesars-southern-indiana/casino)
 
