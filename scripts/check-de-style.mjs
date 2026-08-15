@@ -70,6 +70,8 @@ export const DE_CLUSTERS = {
     'holdem-short-stack', 'apt-incheon-2026-guide', 'ept-barcelona-2026-guide',
     'wpt-australia-2026-guide', 'korea-poker-marathon-2026',
   ],
+  // de 전용 로컬 가이드 (다른 언어에 대응 slug 없음 — 2026-08-15 신설)
+  Lokal: ['poker-turnier-muenchen'],
   기타: ['holdem-card-counting'],
 };
 
@@ -787,8 +789,11 @@ for (const [cluster, slugs] of targets) {
     }
 
     // D9 masterUpdated — 드리프트 추적에 안 잡히는 글. 소스 원문에서 본다.
+    // ⚠ 예외: de 전용 글(다른 언어에 대응 slug가 없다)은 EN 마스터 자체가 없다.
+    //    masterUpdated의 부재가 «결함»이 아니라 «해당 없음»이므로 경고하지 않는다.
+    //    (2026-08-15 poker-turnier-muenchen 신설 시 판정 — 부재가 정본인 자리다)
     const src = path.join(ROOT, 'lib', 'posts-de', `${slug}.ts`);
-    if (fs.existsSync(src) && !/masterUpdated\s*:/.test(fs.readFileSync(src, 'utf8'))) {
+    if (cluster !== 'Lokal' && fs.existsSync(src) && !/masterUpdated\s*:/.test(fs.readFileSync(src, 'utf8'))) {
       findings.push({ sev: 'WARN', code: 'D9', msg: 'masterUpdated 없음 — 미러 드리프트 추적에 안 잡힌다(경화하며 채울 것)' });
     }
 

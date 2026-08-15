@@ -1,0 +1,83 @@
+<meta charset="utf-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    width:1200px; height:675px; overflow:hidden;
+    background:linear-gradient(160deg,#faf7ef 0%,#f2ece0 100%);
+    font-family:"Segoe UI",Roboto,Arial,sans-serif; position:relative;
+  }
+  .title { position:absolute; top:44px; left:60px; }
+  .title h1 { font-size:38px; font-weight:800; color:#1d3b31; letter-spacing:-.4px; }
+  .title .accent { color:#b8912a; }
+  .title p { margin-top:9px; font-size:19px; color:#5d6b64; font-weight:500; }
+
+  .track { position:absolute; left:92px; top:340px; width:1016px; height:4px; background:#ded5c2; border-radius:2px; }
+  .fill { position:absolute; left:0; top:0; height:4px; background:#1d3b31; border-radius:2px; }
+
+  .stop { position:absolute; top:340px; transform:translateX(-50%); text-align:center; }
+  .stop .pin { width:17px; height:17px; border-radius:50%; background:#1d3b31; border:3px solid #faf7ef; margin:-7px auto 0; }
+  .stop .t { margin-top:12px; font-size:23px; font-weight:800; color:#1d3b31; }
+  .stop .l { margin-top:4px; font-size:16px; color:#6c7a72; font-weight:600; white-space:nowrap; }
+
+  .above { position:absolute; transform:translateX(-50%); text-align:center; }
+  .above .t { font-size:23px; font-weight:800; }
+  .above .l { margin-top:4px; font-size:16px; font-weight:600; white-space:nowrap; }
+  .above .pin { width:17px; height:17px; border-radius:50%; border:3px solid #faf7ef; margin:10px auto -7px; }
+
+  .good { color:#2f6b4f; } .good .pin { background:#2f6b4f; }
+  .bad  { color:#a5342f; } .bad  .pin { background:#a5342f; }
+
+  .gap {
+    position:absolute; left:790px; top:444px; width:206px;
+    border-top:2px dashed #a5342f; text-align:center;
+  }
+  .gap span {
+    display:inline-block; margin-top:-15px; padding:4px 16px;
+    background:#a5342f; color:#fff; border-radius:20px;
+    font-size:17px; font-weight:800;
+  }
+  .note {
+    position:absolute; left:60px; bottom:74px; right:60px;
+    font-size:19px; color:#5d6b64; font-weight:600;
+  }
+  .note b { color:#a5342f; }
+
+  .wm { position:absolute; right:30px; bottom:24px; display:flex; align-items:center; gap:9px; opacity:.62; }
+  .wm svg { width:21px; height:21px; }
+  .wm span { font-size:17px; font-weight:700; color:#8a7a4e; }
+</style>
+
+<div class="title">
+  <h1>Casino-Blitz: <span class="accent">hin passt es, zurück nicht</span></h1>
+  <p>Shuttle München Hbf – Spielbank Garmisch-Partenkirchen, täglich</p>
+</div>
+
+<div class="track"><div class="fill" style="width:512px"></div></div>
+
+<div class="stop" style="left:92px;">
+  <div class="pin"></div><div class="t">17:00</div><div class="l">Abfahrt Hbf München</div>
+</div>
+
+<div class="above good" style="left:604px; top:236px;">
+  <div class="t">18:25</div><div class="l">Ankunft · Check-in 18:30</div><div class="pin"></div>
+</div>
+
+<div class="stop" style="left:790px;">
+  <div class="pin"></div><div class="t">19:30</div><div class="l">Turnierbeginn</div>
+</div>
+
+<div class="above bad" style="left:996px; top:236px;">
+  <div class="t">22:45</div><div class="l">letzte Rückfahrt</div><div class="pin"></div>
+</div>
+
+<div class="gap"><span>3 Std. 15 Min.</span></div>
+
+<div class="note">
+  Die Hinfahrt ist perfekt getaktet – fünf Minuten vor dem Check-in.
+  <b>Wer tief läuft, verpasst den letzten Bus.</b>
+</div>
+
+<div class="wm">
+  <svg viewBox="0 0 24 24" fill="#b8912a"><path d="M12 2C9 6.5 4 9.5 4 13.5A4.5 4.5 0 0 0 11 17c0 1.8-.7 3.2-2 4h6c-1.3-.8-2-2.2-2-4a4.5 4.5 0 0 0 7-3.5C20 9.5 15 6.5 12 2z"/></svg>
+  <span>holdemmaster.com</span>
+</div>
