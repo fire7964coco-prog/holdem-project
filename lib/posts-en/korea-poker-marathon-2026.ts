@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Korea's top autumn marathons (Chuncheon Oct 25, JTBC Seoul Nov 1, Garmin Run Nov 15) align with perfect running weather. Paradise City Casino near Incheon Airport runs year-round cash games — foreigners only, 10 min from the terminal. One trip covers both.",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-08-13",
+  updated: "2026-08-15",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏃",
@@ -122,7 +122,7 @@ The ==**JTBC Seoul Marathon**== is Korea's premier urban race — 25,000–50,00
 - Passport required at pickup (no proxy collection)
 
 **How to register (foreigners):**
-Foreign runners residing outside Korea register exclusively through ==**[worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon)**==. ==r:Spots are limited and fill early==, so check the official page for current availability — note that September 4, 2026 is the cancellation/refund deadline, not the registration close. Korean passport holders are ineligible via this channel.
+Foreign runners residing outside Korea register exclusively through ==**[worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon)**==. ==r:Spots are limited and fill early==, so check the official page for current availability — ==r:**registration closes on September 4, 2026**==, and that same date (23:59 KST) is also the cancellation/refund cutoff. Korean passport holders are ineligible via this channel.
 
 ==g:JTBC's foreign quota is limited — apply early before it fills.==
 
@@ -219,6 +219,8 @@ The ==**Gods of Poker (GOP)**== returns to Paradise City for its second 2026 Inc
 ==**Nov 1 is both JTBC race day and Day 3 of the GOP festival.**==
 
 For a player already in Korea for the tournament: race morning is a 6am alarm (the gun is at 8, and you gather about an hour before), 42K through central Seoul, finish at Olympic Park. ==r:If you run under 4 hours==, you are done by midday and can be at a Paradise City table by late afternoon. At 4:30–5:00 — and the cutoff is 5 hours — it becomes an evening plan instead. The tables run around the clock, so either way both fit in one day. Essentially no one is writing about this overlap.
+
+🪶 **One honest caveat: you can, but it will not be your best poker.** After 42K your glycogen is gone, you are dehydrated and you slept badly — precisely the state in which players call too wide and sit too long. If you do play that evening, set a short session and a stop-loss in advance, or move the poker to the next day. The tables are open all year; the marathon is one morning.
 
 - **Dates:** October 30 – November 8, 2026
 - **Venue:** Paradise City Casino, Incheon (free shuttle from ICN Terminal 1)

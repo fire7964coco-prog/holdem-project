@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "韩国最好的秋季马拉松（春川 10 月 25 日、JTBC 首尔 11 月 1 日、Garmin Run 11 月 15 日）正好赶上完美的跑步天气。仁川机场旁的 Paradise City Casino 全年开放现金局——只对外国人开放，离航站楼 10 分钟。一趟行程两样都能拿下。",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-08-13",
-  masterUpdated: "2026-08-13",
+  updated: "2026-08-15",
+  masterUpdated: "2026-08-15",
   keepImagesInBody: true,
   readTime: "14 分钟",
   emoji: "🏃",
@@ -123,7 +123,7 @@ export const POST: Post = {
 - 领包时需出示护照（不能代领）
 
 **怎么报名（外国人）：**
-居住在韩国境外的外国跑者，只能通过 ==**[worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon)**== 报名。==r:名额有限且常常很早满员==，请以官方页面的最新状态为准——2026 年 9 月 4 日是取消/退款截止日，并非报名截止日。持韩国护照者无法通过这个渠道报名。
+居住在韩国境外的外国跑者，只能通过 ==**[worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon)**== 报名。==r:名额有限且常常很早满员==，请以官方页面的最新状态为准——==r:**报名截止日就是 2026 年 9 月 4 日**==，同一天 23:59（KST）也是取消／退款的截止时间。持韩国护照者无法通过这个渠道报名。
 
 ==g:JTBC 的外国人名额有限——请趁早报名，以免满员。==
 
@@ -220,6 +220,8 @@ export const POST: Post = {
 ==**11 月 1 日既是 JTBC 比赛日，也是 GOP 扑克节的 Day 3。**==
 
 对一个已经在韩国参赛的牌手来说：比赛当天早上 6 点闹钟（8 点起跑，提前一小时左右集合），42K 穿过首尔市中心，在奥林匹克公园完赛。==r:如果你跑进 4 小时==，中午就结束，傍晚能坐上 Paradise City 的牌桌。若是 4:30–5:00（关门时间正是 5 小时），那就变成晚上的安排。牌桌 24 小时开着，所以两件事总归能塞进同一天。基本没人在写这个重叠。
+
+🪶 **但要说句实在话：能打，不代表打得好。** 跑完 42K 之后，糖原耗尽、身体脱水、前一晚也没睡够——这恰好是牌手 call 得过宽、坐得过久的状态。如果那晚还是要坐下，就先定好一个短时段和止损线，或者干脆把牌局挪到第二天。牌桌全年都开，马拉松只有那一个早上。
 
 - **日期：** 2026 年 10 月 30 日 – 11 月 8 日
 - **场馆：** Paradise City Casino, Incheon（从仁川 1 号航站楼免费摆渡）

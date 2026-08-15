@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Koreas beste Herbstmarathons (Chuncheon 25. Okt, JTBC Seoul 1. Nov, Garmin Run 15. Nov) treffen auf perfektes Laufwetter – für 2026 ist allerdings nur noch der JTBC Seoul offen, Chuncheon und Garmin Run haben im Juli geschlossen. Das Paradise City Casino nahe dem Flughafen Incheon bietet Cash Games – nur für Ausländer, 10 Min. vom Terminal. Eine Reise deckt beides ab.",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-08-13",
+  updated: "2026-08-15",
   keepImagesInBody: true,
   readTime: "14 Min.",
   emoji: "🏃",
@@ -122,7 +122,7 @@ Der ==**JTBC Seoul Marathon**== ist Koreas führendes Stadtrennen – 25.000–5
 - Reisepass bei der Abholung erforderlich (keine Abholung durch Dritte)
 
 **So meldest du dich an (Ausländer):**
-Ausländische Läufer mit Wohnsitz außerhalb Koreas melden sich ausschließlich über ==**[worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon)**== an. ==r:Die Plätze sind begrenzt und früh ausgebucht== – prüfe die offizielle Seite für die aktuelle Verfügbarkeit; der 4. September 2026 ist die Stornierungs-/Rückerstattungsfrist, nicht der Anmeldeschluss. Inhaber eines koreanischen Passes sind über diesen Kanal nicht teilnahmeberechtigt.
+Ausländische Läufer mit Wohnsitz außerhalb Koreas melden sich ausschließlich über ==**[worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon)**== an. ==r:Die Plätze sind begrenzt und früh ausgebucht== – prüfe die offizielle Seite für die aktuelle Verfügbarkeit; ==r:**die Anmeldung schließt am 4. September 2026**== – am selben Tag (23:59 KST) endet auch die Storno-/Rückerstattungsfrist. Inhaber eines koreanischen Passes sind über diesen Kanal nicht teilnahmeberechtigt.
 
 ==g:Das Ausländer-Kontingent der JTBC ist begrenzt – melde dich früh an, bevor es ausgebucht ist.==
 
@@ -219,6 +219,8 @@ Die ==**Gods of Poker (GOP)**== kehren für ihren zweiten Incheon-Stopp 2026 nac
 ==**Der 1. Nov ist zugleich JTBC-Renntag und Day 3 des GOP-Festivals.**==
 
 Für einen Spieler, der ohnehin fürs Turnier in Korea ist: Renn-Morgen bedeutet 6-Uhr-Wecker (Start ist um 8, Sammeln rund eine Stunde vorher), 42K durch das Zentrum von Seoul, Ziel im Olympiapark. ==r:Wer unter 4 Stunden läuft==, ist gegen Mittag durch und kann am späten Nachmittag in Paradise City am Tisch sitzen. Bei 4:30–5:00 – und das Zeitlimit liegt bei 5 Stunden – wird daraus ein Abendprogramm. Die Tische laufen rund um die Uhr, insofern geht beides an einem Tag. Praktisch niemand schreibt über diese Überschneidung.
+
+🪶 **Ein ehrlicher Vorbehalt: Es geht — aber es wird nicht dein bestes Poker.** Nach 42K ist dein Glykogen leer, du bist dehydriert und hast schlecht geschlafen — genau der Zustand, in dem Spieler zu weit callen und zu lange sitzen bleiben. Wenn du dich an dem Abend doch setzt, leg dir vorher eine kurze Session und ein Stop-Loss fest, oder schieb das Poker auf den nächsten Tag. Die Tische laufen das ganze Jahr; der Marathon ist ein einziger Morgen.
 
 - **Daten:** 30. Oktober – 8. November 2026
 - **Austragungsort:** Paradise City Casino, Incheon (kostenloser Shuttle ab ICN Terminal 1)

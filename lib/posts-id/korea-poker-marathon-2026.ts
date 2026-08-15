@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Maraton musim gugur terbaik Korea (Chuncheon 25 Okt, JTBC Seoul 1 Nov, Garmin Run 15 Nov) berpadu dengan cuaca lari yang sempurna. Paradise City Casino dekat Bandara Incheon menggelar cash game sepanjang tahun — khusus warga asing, 10 menit dari terminal. Satu perjalanan mencakup keduanya.",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-08-13",
+  updated: "2026-08-15",
   keepImagesInBody: true,
   readTime: "14 mnt",
   emoji: "🏃",
@@ -122,7 +122,7 @@ Alasannya tidak rumit. Ini soal waktu dan lokasi.
 - Paspor diperlukan saat pengambilan (tidak boleh diwakilkan)
 
 **Cara registrasi (warga asing):**
-Pelari asing yang tinggal di luar Korea mendaftar khusus melalui ==**[worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon)**==. ==r:Kuota terbatas dan cepat penuh==, jadi cek halaman resmi untuk ketersediaan terkini — 4 September 2026 adalah batas pembatalan/refund, bukan penutupan pendaftaran. Pemegang paspor Korea tidak memenuhi syarat melalui kanal ini.
+Pelari asing yang tinggal di luar Korea mendaftar khusus melalui ==**[worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon)**==. ==r:Kuota terbatas dan cepat penuh==, jadi cek halaman resmi untuk ketersediaan terkini — ==r:**pendaftaran ditutup 4 September 2026**==, dan tanggal yang sama (23:59 KST) juga batas pembatalan/refund. Pemegang paspor Korea tidak memenuhi syarat melalui kanal ini.
 
 ==g:Kuota asing JTBC terbatas — daftar lebih awal sebelum penuh.==
 
@@ -219,6 +219,8 @@ Di sinilah kalendernya jadi menarik. Tiga festival poker berlangsung di venue-ve
 ==**1 Nov adalah hari lomba JTBC sekaligus Day 3 dari festival GOP.**==
 
 Bagi pemain yang sudah berada di Korea untuk turnamen: pagi lomba berarti alarm pukul 6 (start pukul 8, kumpul sekitar sejam sebelumnya), 42K melewati pusat Seoul, finis di Olympic Park. ==r:Kalau Anda finis di bawah 4 jam==, tengah hari sudah selesai dan sore menjelang malam bisa duduk di meja Paradise City. Dengan 4:30–5:00 — dan batas waktunya 5 jam — ini jadi acara malam. Mejanya buka 24 jam, jadi keduanya tetap muat dalam satu hari. Praktis tidak ada yang menulis soal tumpang tindih ini.
+
+🪶 **Satu peringatan jujur: bisa, tapi itu bukan poker terbaik Anda.** Setelah 42K glikogen Anda habis, tubuh dehidrasi, dan tidur Anda kurang — persis kondisi saat pemain call terlalu longgar dan duduk terlalu lama. Kalau tetap main malam itu, tetapkan sesi pendek dan stop-loss dari awal, atau geser pokernya ke hari berikutnya. Mejanya buka sepanjang tahun; maratonnya cuma satu pagi.
 
 - **Tanggal:** 30 Oktober – 8 November 2026
 - **Venue:** Paradise City Casino, Incheon (antar-jemput gratis dari ICN Terminal 1)

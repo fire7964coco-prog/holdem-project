@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "As melhores maratonas de outono da Coreia (Chuncheon 25 out, JTBC Seoul 1 nov, Garmin Run 15 nov) coincidem com o clima perfeito para correr. O Paradise City Casino, perto do Aeroporto de Incheon, tem cash games o ano todo — só para estrangeiros, a 10 min do terminal. Uma viagem cobre tudo.",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-08-13",
+  updated: "2026-08-15",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏃",
@@ -122,7 +122,7 @@ A ==**JTBC Seoul Marathon**== é a principal prova urbana da Coreia — 25.000�
 - Passaporte obrigatório na retirada (sem retirada por terceiros)
 
 **Como se inscrever (estrangeiros):**
-Corredores estrangeiros que moram fora da Coreia se inscrevem exclusivamente pelo ==**[worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon)**==. ==r:As vagas são limitadas e esgotam cedo==, então confira a página oficial para a disponibilidade atual — o 4 de setembro de 2026 é o prazo de cancelamento/reembolso, não o fim das inscrições. Portadores de passaporte coreano não são elegíveis por esse canal.
+Corredores estrangeiros que moram fora da Coreia se inscrevem exclusivamente pelo ==**[worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon)**==. ==r:As vagas são limitadas e esgotam cedo==, então confira a página oficial para a disponibilidade atual — ==r:**as inscrições fecham em 4 de setembro de 2026**==, e essa mesma data (23:59 KST) é também o prazo de cancelamento/reembolso. Portadores de passaporte coreano não são elegíveis por esse canal.
 
 ==g:A cota de estrangeiros da JTBC é limitada — inscreva-se cedo antes de esgotar.==
 
@@ -219,6 +219,8 @@ O ==**Gods of Poker (GOP)**== volta ao Paradise City para sua segunda parada em 
 ==**1 nov é ao mesmo tempo o dia da prova da JTBC e o Dia 3 do festival GOP.**==
 
 Para um jogador já na Coreia pelo torneio: manhã de prova é despertador às 6h (a largada é às 8h e a concentração cerca de uma hora antes), 42K pelo centro de Seul, chegada no Parque Olímpico. ==r:Se você fizer abaixo de 4 horas==, termina perto do meio-dia e pode estar numa mesa do Paradise City no fim da tarde. Com 4:30–5:00 — e o limite é de 5 horas — vira programa de noite. As mesas rodam 24 horas, então de um jeito ou de outro as duas coisas cabem no mesmo dia. Basicamente ninguém está escrevendo sobre essa sobreposição.
+
+🪶 **Um aviso honesto: dá pra fazer, mas não vai ser o seu melhor pôquer.** Depois de 42K você está sem glicogênio, desidratado e dormiu mal — exatamente o estado em que a pessoa paga demais e fica tempo demais. Se for sentar naquela noite, defina antes uma sessão curta e um stop-loss, ou empurre o pôquer pro dia seguinte. As mesas abrem o ano inteiro; a maratona é uma manhã só.
 
 - **Datas:** 30 de outubro – 8 de novembro de 2026
 - **Sede:** Paradise City Casino, Incheon (shuttle gratuito do Terminal 1 do ICN)
