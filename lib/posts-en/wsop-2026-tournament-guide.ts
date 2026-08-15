@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Lucas Jumalon won the 2026 WSOP Main Event on August 5 for $10,000,000. He is 22, from Spokane, and came in with just over $180,000 in career earnings — his best previous score was $22,945. He walked into the final table with 194,000,000 chips, more than the next three stacks put together, and never gave the lead up. Lauri Saaskilahti took second for $6,000,000 after starting seventh in chips. Ninth place still paid $1,000,000.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-08-06",
-  masterUpdated: "2026-08-06",
+  updated: "2026-08-15",
+  masterUpdated: "2026-08-15",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🏆",
@@ -257,7 +257,7 @@ The WSOP recommends arriving ==**an hour early**== for that first verification. 
 
 **Paying for a $10,000 seat is its own obstacle course:**
 
-- ==r:**Card payments are capped at $10,000 per transaction and carry a 3% fee.**== A $10,000 Main Event entry on a card comes to ==**$10,300**== — which is over the cap, so it won't go through in one swipe. Plan a different method or plan two transactions.
+- ==r:**Credit cards and PayPal carry a 2% fee — debit cards carry none.**== A $10,000 Main Event entry comes to ==**$10,200**== on credit or PayPal, and exactly ==g:**$10,000 on debit**==: a $200 swing for picking the right piece of plastic. Card payments are capped at $10,000 per transaction, and the rules spell out that the Main Event **does** clear on a card while a $50,000 event does not.
 - ==r:**Virtual and digital cards are not accepted.**== The name on the card has to match the name on your ID.
 - ==g:**ACH is available to US residents only**== — one of the very few places American players have it easier than everyone else. Non-US players use Luxon Pay.
 - Wires start at **$100,000** and need pre-approval. Cashier's checks need pre-approval too.
@@ -327,7 +327,7 @@ A. Two accounts — Caesars Rewards and WSOP LIVE (it is no longer Bravo Poker L
 
 **Q. Why can't I just put a $10,000 buy-in on a credit card?**
 
-A. Card payments are capped at $10,000 per transaction and carry a 3% fee, so a $10,000 entry comes to $10,300 — over the cap, meaning it won't clear in a single swipe. Virtual and digital cards aren't accepted at all, and the name on the card has to match your ID. US residents can use ACH; wires start at $100,000 and need pre-approval. The simplest fix for a long trip is opening a tournament account at the Paris with cash or chips.
+A. It depends on the card. Credit cards and PayPal carry a 2% fee, so a $10,000 entry comes to $10,200; a debit card carries no fee at all and you pay exactly $10,000. Payments are capped at $10,000 per transaction — the rules give the Main Event as an example that clears on a card, and a $50,000 event as one that does not. Virtual and digital cards aren't accepted at all, and the name on the card has to match your ID. US residents can use ACH; wires start at $100,000 and need pre-approval. The simplest fix for a long trip is opening a tournament account at the Paris with cash or chips.
 
 ---
 
@@ -350,7 +350,7 @@ Every figure above was checked against primary sources. **Verified: July 29, 202
 - **Final table field, seats and stacks** — [WSOP — The 2026 World Series of Poker Main Event Reaches Its Final Table](https://www.wsop.com/news/the-2026-world-series-of-poker-main-event-reaches-it-s-final-table/) · the official nine, chip counts, and the three-week delay
 - **Final table confirmation, remaining payouts, and the Jumalon profile** — [PokerNews](https://www.pokernews.com) · the "more than the next three players combined" stat, Hendon Mob career earnings, the Day 8 run and the Trayner hand
 - **Broadcast schedule** — [ESPN Press Room](https://espnpressroom.com) and [ESPN](https://www.espn.com) · ESPN2/ESPN air times, the August 10 edited programs, and the international carriage
-- **Registration, payment and table rules** — [WSOP official registration page](https://www.wsop.com/registration/) · Caesars Rewards + WSOP LIVE accounts, Versailles Ballroom verification, card cap and 3% fee, ACH and Luxon Pay, the seven official words and conduct rules
+- **Registration, payment and table rules** — [WSOP official registration page](https://www.wsop.com/registration/) · Caesars Rewards + WSOP LIVE accounts, Versailles Ballroom verification, card cap and the 2% credit/PayPal fee (debit free), ACH and Luxon Pay, the seven official words and conduct rules
 - **Full bracelet winners list** — [poker.org](https://www.poker.org) · used to count bracelets by country
 - **Main Event country breakdown** — [pokerfuse](https://pokerfuse.com) · 111 countries, 3,574 non-American entries, top-10 nations by entries
 - **Series totals** — [Card Player](https://www.cardplayer.com) · 251,899 entries, $469,975,059 paid out, 35,157 in-the-money finishes

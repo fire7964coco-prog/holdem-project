@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "El Main Event de la 57.ª WSOP se resolvió el 5 de agosto: ganó Lucas Jumalon, estadounidense de 22 años, por US$10.000.000. El mejor clasificado de habla hispana fue Antonio Galiana (España) en el puesto 12.º, con US$510.000 — no hubo hispanohablantes en la mesa final. La serie dejó 251.899 entradas —récord histórico— y US$469.975.059 repartidos en 35.157 puestos pagados, con tres brazaletes hispanohablantes: Ciro González (México, US$449.067), Adrian Mateos (España, US$4.334.411) y Juan Rodriguez (Perú, US$673.011). Ojo con el papeleo: México no está en el Visa Waiver Program, así que con pasaporte mexicano hace falta visa y el ESTA no aplica.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-08-06",
-  masterUpdated: "2026-08-06",
+  updated: "2026-08-15",
+  masterUpdated: "2026-08-15",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🏆",
@@ -291,8 +291,9 @@ Llega una hora antes, pero solo la primera vez | La organización recomienda ese
 
 | Método | Límite / condición | ¿Para no residentes? |
 |:---|:---|:---:|
-| Tarjeta | ==r:máx. **US$10.000** por transacción + **3 %** de comisión== | ✅ |
-| PayPal | — | ✅ |
+| Tarjeta de crédito | ==r:**2 %** de comisión== · máx. US$10.000 por transacción | ✅ |
+| ==g:**Tarjeta de débito**== | ==g:**sin comisión**== · mismo tope por transacción | ✅ |
+| PayPal | ==r:**2 %** de comisión== (igual que el crédito) | ✅ |
 | **Luxon Pay** | — | ✅ |
 | ACH | ==r:solo residentes en EE. UU.== | ❌ |
 | Transferencia bancaria | desde **US$100.000**, con aprobación previa | ✅ |
@@ -301,7 +302,9 @@ Llega una hora antes, pero solo la primera vez | La organización recomienda ese
 
 </div>
 
-Haz la cuenta del Main Event: entrada de US$10.000 con tarjeta, más el 3 % de comisión, ==r:**salen US$10.300**==. Y el tope por transacción es exactamente de US$10.000, así que la operación no entra de una sola pasada.
+Haz la cuenta del Main Event: la entrada de US$10.000 con **tarjeta de crédito o PayPal** lleva un **2 % de comisión**, así que ==r:**salen US$10.200**==. Con ==g:**tarjeta de débito no hay comisión**==: US$10.000 exactos. Es la diferencia más barata de este artículo — US$200 por elegir bien el plástico.
+
+Y el tope de US$10.000 por transacción se mide **por evento, no por día**: el propio reglamento pone de ejemplo que el Main Event **sí** se puede pagar con tarjeta, pero el Poker Player's Championship de US$50.000 **no**.
 
 Tres reglas más que cuestan disgustos:
 
@@ -416,7 +419,7 @@ A. Sí. El reglamento oficial acepta ==g:"Consular ID or Matrícula Consular Car
 
 **Q. ¿Cuánto cuesta de verdad inscribirse al Main Event con tarjeta?**
 
-A. ==r:**US$10.300**==. La entrada son US$10.000 y la casa cobra un **3 %** de comisión por pago con tarjeta. Además hay un tope de **US$10.000 por transacción**, y ==r:no aceptan tarjetas virtuales ni digitales==. El nombre de la tarjeta debe coincidir con el de tu documento.
+A. Depende del plástico. Con **tarjeta de crédito o PayPal** la casa cobra un **2 %**, así que son ==r:**US$10.200**==; con ==g:**tarjeta de débito no hay comisión**== y pagas US$10.000 exactos. Hay un tope de **US$10.000 por transacción** — el reglamento aclara que el Main Event sí entra, y que un evento de US$50.000 no. Y ==r:no aceptan tarjetas virtuales ni digitales==: el nombre de la tarjeta debe coincidir con el de tu documento.
 
 **Q. No hablo inglés. ¿Puedo jugar igual?**
 
