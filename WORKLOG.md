@@ -67,9 +67,24 @@ hero=뮌헨 중심 방사형(요일·바이인) 21KB · shuttle=막차 타임라
 
 - `check-de-style` 전체 실행에 **기존 🔴 2건**: `wpt-australia-2026-guide` D11 1곳 ·
   `korea-poker-marathon-2026` D12 2곳. 그 글을 열 때 함께 닫으면 된다
-- `lib/intl-blog-page.tsx:18` x-default가 **`${SITE}\en\blog\${slug}`** — 백슬래시라
-  JS에서 `\b`가 백스페이스(U+0008)로 해석된다. **en 번역이 있는 글에서만 발현**한다.
-  `check:hreflang`이 0건인데 왜 못 잡는지부터 봐야 한다(탐지방법 의심)
+
+### ❌ 같은 날 철회 — x-default 「버그」는 내 오독이었다
+
+발행 직후 `lib/intl-blog-page.tsx:18`이 `` `${SITE}\en\blog\${slug}` ``라 **`\b`가 백스페이스로
+깨진다**고 보고했다. **틀렸다.** 파일 원문은 `` `${SITE}/en/blog/${slug}` ``이고
+**바이트 수준에서 백슬래시가 0개**다. **Grep 도구 출력의 이스케이프를 원문으로 읽은 것**이다.
+
+산출물도 정상이다 — `hrefLang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-tournament"`.
+**`check:hreflang`의 0건은 옳았다.** 게이트는 아무 잘못이 없었다.
+
+🔴 **교훈 = [[review-mechanize-not-repeat]]의 거울상.** 그 규율은 「없다」 보고 전에 탐지방법을
+의심하라는 것인데, **「있다」 보고 전에도 똑같이 의심해야 한다.** 도구 출력은 원문이 아니다 —
+§12-B가 WebFetch 요약에 대해 말하는 것과 **정확히 같은 유형**이고, 공교롭게 이 세션은
+그 규율 덕에 서치에서 3건을 잡아 놓고 **코드 읽기에서 같은 함정에 빠졌다.**
+
+🪶 부수 사고 하나 더: 산출물을 `hreflang="` 소문자로 grep해 0건이 나왔다.
+Next.js는 **`hrefLang` 카멜케이스**로 렌더한다 — 하마터면 「hreflang이 아예 없다」로
+**두 번째 오판**을 할 뻔했다. 확인은 결국 **정규식이 아니라 x-default 주변 원문을 그대로 떠서** 끝냈다.
 
 ---
 

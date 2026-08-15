@@ -91,12 +91,23 @@ APT 인천 메인이벤트 최종일이 **2026-08-15**라 그날 우승자가 �
 | 2 | **`GGPoker SuperSatellites` 고유명** | 08-13에 «주장 제거»로 중립화만 했다. ggpoker.com 404로 1차 실패 — **검수장에 근거 URL 요청** 후 고유명 승격 여부 결정 |
 | 3 | `holdem-tournament`의 `:::note` 출처 표기 | **casinos.at·spielbanken-bayern.de를 「abgerufen」(열람함)으로 적어 뒀는데 접근 불가 출처**다(검수장 실측 403). 열람 주장을 뺄지 다른 출처로 바꿀지 판단. 🪶 위 딥스택 건과 **같은 파일** |
 
-### 🪶 뮌헨 발행에서 딸려 나온 잔여 2건 (급하지 않음)
+### 🪶 뮌헨 발행에서 딸려 나온 잔여 1건 (급하지 않음)
 
 | # | 무엇 | 메모 |
 |---|---|---|
 | 1 | `check-de-style` 기존 🔴 2건 | `wpt-australia-2026-guide` **D11** 1곳(ASCII 인용부호) · `korea-poker-marathon-2026` **D12** 2곳(em dash). **그 글을 열 때 함께 닫아라** — 표기 건이라 §13 리스크 0 |
-| 2 | 🔴 `lib/intl-blog-page.tsx:18` x-default가 깨져 있다 | `` `${SITE}\en\blog\${slug}` `` — 백슬래시라 JS에서 **`\b`가 백스페이스(U+0008)**로 해석된다. **en 번역이 있는 글에서만 발현**. 🔴 `check:hreflang`이 0건인데 왜 못 잡는지부터 의심하라([[review-mechanize-not-repeat]]: 「없다」 보고 전 탐지방법부터) |
+
+> ❌ **오탐 폐기 — `intl-blog-page.tsx` x-default 「버그」는 없다** (2026-08-15 확인 후 철회)
+> 내가 「18행이 `${SITE}\en\blog\` 백슬래시라 `\b`가 백스페이스로 깨진다」고 적었는데 **틀렸다.**
+> 파일 원문은 `${SITE}/en/blog/${slug}` — **바이트 수준에서 백슬래시 0개**다.
+> **Grep 도구 출력의 이스케이프를 원문으로 착각**한 것이다.
+> 산출물도 정상: `hrefLang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-tournament"`.
+> 🔴 **`check:hreflang`의 0건은 옳았다 — 게이트를 의심할 이유가 없었다.**
+> 🪶 교훈은 [[review-mechanize-not-repeat]]의 **거울상**이다:
+> 「없다」 보고 전에 탐지방법을 의심하듯, **「있다」 보고 전에도 탐지방법을 의심하라.**
+> 도구 출력은 원문이 아니다(§12-B가 WebFetch에 대해 말하는 것과 같은 유형).
+> 부수 확인: 산출물 정규식이 처음에 0건이었던 것도 탐지 문제였다 — Next.js는 소문자 `hreflang`이
+> 아니라 **`hrefLang` 카멜케이스**로 렌더한다. **하마터면 「hreflang이 아예 없다」로 두 번째 오판을 할 뻔했다.**
 
 ### 📬 검수장 회신 잔여 — **#2 하나만 남았다**
 
