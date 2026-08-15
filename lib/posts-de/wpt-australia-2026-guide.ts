@@ -109,7 +109,7 @@ Das ist die Frage, die jeder First-Timer stellt. Hier die ehrliche Aufschlüssel
 
 </div>
 
-> **Es gibt im The Star keine Step-Leiter** – jeder Championship-Weg ist ein ==**Direct Qualifier**==. Du zahlst einmal $290 oder $550 und spielst direkt um einen Seat; es gibt keine billigere erste Stufe, die in eine teurere zweite mündet. ==r:Die Satellites laufen längst== – der Vor-Festival-Schedule startete am **24. Juli, zwei Monate vor der Championship**. Wer auf eine "Satellite-Saison" im September wartet, hat die günstigen $290-Qualifier also schon wochenlang verpasst. Championship-Qualifier laufen bis zum **25. Sep** (also noch nach dem Start von Day 1A), weitere Satellites bis zum **28. Sep**.
+> **Es gibt im The Star keine Step-Leiter** – jeder Championship-Weg ist ein ==**Direct Qualifier**==. Du zahlst einmal $290 oder $550 und spielst direkt um einen Seat; es gibt keine billigere erste Stufe, die in eine teurere zweite mündet. ==r:Die Satellites laufen längst== – der Vor-Festival-Schedule startete am **24. Juli, zwei Monate vor der Championship**. Wer auf eine „Satellite-Saison“ im September wartet, hat die günstigen $290-Qualifier also schon wochenlang verpasst. Championship-Qualifier laufen bis zum **25. Sep** (also noch nach dem Start von Day 1A), weitere Satellites bis zum **28. Sep**.
 
 ### Können Overseas-Spieler sich online qualifizieren?
 

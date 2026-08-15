@@ -152,7 +152,7 @@ Goyang ist ~50 Min. vom Zentrum Seouls mit der U-Bahn entfernt (Linie 3, Richtun
 Für alle, die im September ankommen, startet der ==**YTN Seoul Tour Marathon**== am ==**Seoul Plaza**== (서울광장) – direkt vor dem Rathaus, mit dem Deoksugung-Palast und der Skyline der Innenstadt als Kulisse.
 
 - Datum: 6. September 2026, Start 7:30 Uhr
-- Distanzen: ==**11KM**== · Half — ==r:einen 10K gibt es hier nicht==
+- Distanzen: ==**11KM**== · Half – ==r:einen 10K gibt es hier nicht==
 - Startgebühr: 11KM ₩70.000 · Half ₩80.000
 - Start: Seoul Plaza (Bereich Rathaus)
 - Veranstalter: YTN
@@ -346,7 +346,7 @@ Der sauberste Doppel-Coup: APT Incheon (7.–16. Aug) → in Seoul ausruhen → 
 
 ## Wie kombinierst du Marathon und Poker in einer Reise?
 
-**Option A: APT Incheon + JTBC Seoul (verlängerter Aufenthalt) — ==r:für 2027 planen==, der Start am 7. Aug ist vorbei**
+**Option A: APT Incheon + JTBC Seoul (verlängerter Aufenthalt) – ==r:für 2027 planen==, der Start am 7. Aug ist vorbei**
 
 | Tag | Plan |
 |---|---|
