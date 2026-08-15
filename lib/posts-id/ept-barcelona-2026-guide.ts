@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "EPT Barcelona 2026 berlangsung 16–29 Agu di Casino Barcelona. Buy-in Main Event: €5.300. Jalur online termurah: Power Path dari $0,50 → Gold Pass (Main Event €5.300 + hotel 8 malam + biaya €690). Anda butuh akun PokerStars Live dan paspor yang berlaku. Pesan hotel lebih awal — Agustus adalah musim puncak.",
   category: "tournament",
   date: "2026-06-17",
-  updated: "2026-07-03",
+  updated: "2026-08-15",
   keepImagesInBody: true,
   readTime: "16 mnt",
   emoji: "🃏",
@@ -113,7 +113,7 @@ Menangkan Step 4 dan Anda menerima salah satu dari tiga Power Pass:
 |:---|:---:|:---|
 | Bronze Pass | ~$530 | Kredit turnamen online |
 | Silver Pass | ~$2.300 | Entri event live tingkat menengah |
-| ==**Gold Pass**== | ==g:**~€10.300**== | ==g:Main Event €5.300 + side event €1.100 + hotel 8 malam + biaya== |
+| ==**Gold Pass**== | ==g:**~$10.300** (USD)== | ==g:Main Event €5.300 + side event €1.100 + hotel 8 malam + biaya== |
 
 ==g:**Gold Pass** adalah yang Anda inginkan.== PokerStars menargetkan setidaknya 25% field Main Event berasal dari kualifikasi satelit — jadi kursinya nyata.
 
@@ -179,7 +179,7 @@ Tidak mau grind empat langkah? PokerStars juga menjalankan **satelit langsung** 
 | Item | Perkiraan Biaya |
 |:---|:---:|
 | Buy-in Power Path untuk mencapai Step 4 | **$11–$55** |
-| Gold Pass mencakup: entri Main Event + side event + hotel 8 malam | ==g:✅ Termasuk (nilai ~€10.300)== |
+| Gold Pass mencakup: entri Main Event + side event + hotel 8 malam | ==g:✅ Termasuk (nilai ~$10.300 USD)== |
 | Penerbangan (tidak selalu termasuk) | €150–€400 |
 | Makan & hari tambahan | €400–€600 |
 | ==**Total pengeluaran pribadi**== | ==g:**~€550–€1.000**== |
