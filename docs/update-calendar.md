@@ -175,6 +175,57 @@
 - **근거**: 7/30 시점 삿포로(9/18 개막) 미공개. 후쿠오카는 개막 당일 공개돼 있었다
 - **할 일**: 공개되면 **바이인 구조(티켓 몇 장 + 얼마)**를 기록. JOPT 오사카 글의 참조값이 된다
 
+### 🆕 ★ 9/12 (토) — **de 43편 색인 재조회** (기준선 2026-08-15에서 4주)
+
+- **왜**: 8/15 GA4 논의에서 「번역본 참여율이 KO보다 낮다」의 원인을 팠더니 **품질이 아니라 크롤이었다.**
+  de 43편을 전수 경화(🔴 0건)해 뒀는데 **36편은 구글이 URL만 알고 크롤조차 안 한 상태**다
+  (판정 `Discovered – currently not indexed` · **마지막 크롤 시각이 비어 있다**).
+  사장님 판단 = **샌드박스 구간이라 노출이 적은 건 걱정하지 않는다.** 이 항목은 «걱정»이 아니라
+  **크롤 속도를 숫자로 잡아 두는 것**이 목적이다 → [[translation-low-engagement-is-not-quality]]
+
+- **기준선 (2026-08-15 URL Inspection API 전수 실측 · 43편)**
+
+  | 구글 판정 | 편수 | 뜻 |
+  |---|---:|---|
+  | ✅ Submitted and indexed | **4** | `blind-meaning`(7/21 크롤) · `tiebreak-rules`(7/23) · `game-order`(7/28) · `hand-rankings`(7/28) |
+  | Discovered – currently not indexed | **36** | URL은 아는데 **크롤 안 함**(크롤 시각 없음) |
+  | URL is unknown to Google | **1** | `poker-turnier-muenchen` 하나뿐 — **8/15 발행분이라 정상** |
+  | Crawled – currently not indexed | 1 | `holdem-tournament-vs-cash-game`(7/8 크롤) |
+  | Duplicate without user-selected canonical | 1 | `apt-incheon-2026-guide`(7/27 크롤) — 아래 ⚠ |
+
+  → **뮌헨(당일 발행) 한 편을 빼면 42편 전부 구글이 URL을 알고 있다.** 발견은 끝났고 **크롤이 병목**이다.
+
+- 🔴 **조회 함정 — «unknown»은 1회 조회로 결론 내지 마라** (8/15 실증).
+  43편 전수 스캔에서 `holdem-icm`·`implied-odds`·`position-play`·`positions` **4편이 `URL is unknown to Google`**로
+  나와 「사이트맵 누락/고아 페이지」를 의심했는데, **20분 뒤 같은 URL을 개별 재조회하니 전부 `Discovered`**였고
+  사이트맵·참조 페이지(`/de/blog/holdem-blind-meaning`)까지 정상으로 딸려 나왔다.
+  (원인 미확정 — 전수 스캔의 연속 호출이 준 저하된 응답이거나, 조회 행위 자체가 등재를 유발했을 수 있다.)
+  → **다음 조회에서 `unknown`이 나오면 그 URL만 개별로 한 번 더 조회해 확정하라.**
+
+- **재조회 명령** (Git Bash · 출력이 43블록이라 길다)
+  ```bash
+  node scripts/gsc-inspect.mjs $(ls lib/posts-de/*.ts | xargs -n1 basename | sed 's/\.ts$//' \
+    | grep -v '^index$' | sed 's|^|https://www.holdemmaster.com/de/blog/|')
+  ```
+
+- **볼 것 둘**
+  1. **36편 중 몇 편이 크롤됐나**(= 판정이 `Crawled`/`Submitted and indexed`로 이동) → **크롤 속도**
+  2. 색인 4편이 몇 편으로 늘었나
+- **판정**
+  - **이동이 있으면** → 정상 진행. 그대로 두고 다음 분기에 다시 본다
+  - **36편이 그대로면** → 크롤 유도를 검토(사이트맵 재제출 · de 글 간 내부링크 보강 · 색인 요청).
+    🔴 **단 우리 쪽 배관은 8/15에 이미 결백이 확인됐다** — 라이브 사이트맵 618 URL에 de 43편 전부
+    자기 `<loc>` 보유(누락 0) · canonical 자기참조 정상 · **hreflang 43 slug 라이브 전수 비대칭 0건.**
+    **같은 데를 다시 파지 마라.**
+- 🪶 **확장 판단의 신호로 쓴다**: 크롤 예산이 618 URL에 나뉘고 있다. de 36편이 미크롤인 채로
+  언어를 더 늘리면(다국어 12→18 트랙) 예산이 더 얇아진다. **이 수치가 그 판단의 근거다.**
+- ⚠ **`apt-incheon` 1건은 여기서 빼고 본다.** canonical·hreflang이 정상인데 구글이 **자체적으로 다른
+  로케일을 정본으로 골랐다**(대회 글은 고유명·숫자·표가 많아 언어 간 유사도가 높다).
+  **8/16 결과·우승자 전환으로 de판 고유 문장이 늘면 자연히 해소될 수 있는 자리**라 별도 작업을 만들지 않는다.
+- 🔴 **오탐 기록 — 다시 만들지 마라.** 8/15에 「de만 hreflang 6개 언어, pt·zh·zh-hant 누락」이라고
+  결함을 보고했다가 철회했다. 원인은 `hrefLang="[a-z-]*"` **정규식이 대문자를 배제**한 것
+  (실제 값은 **`pt-BR`·`zh-Hans`·`zh-Hant`**). `check:hreflang`의 0건은 옳았다.
+
 ### 9/14 (월) — APPT 코리아 2026 종료
 - **대상**: `lib/posts/appt-korea-2026-guide.ts` (**ko 1편**)
 - **할 일**: 결과 아카이브 전환
