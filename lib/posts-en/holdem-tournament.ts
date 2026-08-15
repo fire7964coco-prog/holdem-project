@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In a poker tournament you pay a fixed buy-in for chips, blinds increase on a timer until one player holds all chips. Top 10–15% of players cash. Formats include freezeout, PKO, satellite, and deepstack — enter via direct buy-in, satellite, or online pre-registration.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-08-11",
+  updated: "2026-08-15",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏆",
@@ -120,7 +120,7 @@ Usually 6–9 players left. Payouts increase sharply with each elimination. [ICM
 | **Rebuy / Re-entry** | Pay again after busting (during early levels) | Aggressive players with a bigger bankroll |
 | **Bounty / KO** | Win a fixed cash bounty for each player you eliminate | Action players — extra income per knockout |
 | **PKO (Progressive KO)** | Bounties grow with each knockout — part paid to you, part added to your head | High-variance, big-upside players |
-| **Deepstack** | Bigger starting stacks (typically 100–200BB+) with slower levels | Players who want more postflop play |
+| **Deepstack** | Starting stack well above the standard event in the same series, plus slower levels | Players who want more postflop play |
 | **Satellite** | Prize = entry into a bigger tournament, not cash | Budget players targeting major events |
 | **MTT** | Multi-Table Tournament — large field across many tables | Any — the most common format |
 | **SNG (Sit & Go)** | Starts when seats fill (no set start time) — usually 6–9 players | Quick game, no scheduling needed |
@@ -139,7 +139,7 @@ A PKO (Progressive Knockout) is a bounty tournament where typically around half 
 
 ### What Is a Deepstack Poker Tournament?
 
-A deepstack poker tournament starts you with far more chips relative to the blinds — typically 200 big blinds or more — and usually pairs that with longer blind levels. More chips and a slower clock mean more postflop play, more room to recover from a mistake, and longer days.
+A deepstack poker tournament starts you with far more chips relative to the blinds than the standard event in the same series, and usually pairs that with longer blind levels. **There is no standardised threshold for it** — "deepstack" is always a relative label. Work out from the structure sheet how many big blinds your Level 1 stack is worth, then compare that against the 100–200 BB of a standard event. More chips and a slower clock mean more postflop play, more room to recover from a mistake, and longer days.
 
 **What about rebuys and add-ons?** In a rebuy event you can pay again after busting during a set early window; an add-on is a one-time optional chip purchase usually offered when that window closes. After that, the event plays out like a freezeout.
 

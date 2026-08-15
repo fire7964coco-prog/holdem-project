@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "En un torneo de póker pagas un buy-in fijo por fichas; las ciegas suben con el reloj hasta que un jugador tiene todas las fichas. El 10-15% de arriba cobra. Formatos: freezeout, PKO, satélite y deepstack — entras por buy-in directo, satélite o preinscripción online.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-08-11",
-  masterUpdated: "2026-08-11",
+  updated: "2026-08-15",
+  masterUpdated: "2026-08-15",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏆",
@@ -121,7 +121,7 @@ Suelen quedar 6-9 jugadores. Los premios suben con fuerza en cada eliminación. 
 | **Recompra (rebuy) / Re-entry** | Vuelves a pagar tras bustear (durante los niveles tempranos) | Jugadores agresivos con más bankroll |
 | **Bounty / KO** | Ganas una recompensa fija por cada jugador que eliminas | Jugadores de acción — ingreso extra por knockout |
 | **PKO (KO Progresivo)** | Los bounties crecen con cada knockout — parte se te paga, parte se suma a tu cabeza | Jugadores de alta varianza y gran upside |
-| **Deepstack** | Stacks iniciales más grandes (normalmente 100-200BB+) con niveles más lentos | Jugadores que quieren más juego postflop |
+| **Deepstack** | Stack inicial muy por encima del evento estándar de la misma serie, con niveles más lentos | Jugadores que quieren más juego postflop |
 | **Satélite** | El premio = una entrada a un torneo mayor, no dinero | Jugadores con presupuesto que apuntan a grandes eventos |
 | **MTT** | Multi-Table Tournament — campo grande repartido en muchas mesas | Cualquiera — el formato más común |
 | **SNG (Sit & Go)** | Arranca cuando se llenan los asientos (sin hora fija) — normalmente 6-9 jugadores | Partida rápida, sin depender del horario |
@@ -140,7 +140,7 @@ Un PKO (Progressive Knockout) es un torneo de bounty donde normalmente alrededor
 
 ### ¿Qué es un torneo deepstack de póker?
 
-Un torneo deepstack te arranca con muchas más fichas en relación con las ciegas — normalmente 200 ciegas grandes o más — y suele acompañarlo con niveles de ciegas más largos. Más fichas y un reloj más lento significan más juego postflop, más margen para recuperarte de un error y jornadas más largas.
+Un torneo deepstack te arranca con muchas más fichas en relación con las ciegas que el evento estándar de la misma serie, y suele acompañarlo con niveles de ciegas más largos. **No existe un umbral estandarizado** — "deepstack" es siempre una etiqueta relativa. Saca del structure sheet cuántas ciegas grandes vale tu stack en el Nivel 1 y compáralo con las 100-200 BB de un evento estándar. Más fichas y un reloj más lento significan más juego postflop, más margen para recuperarte de un error y jornadas más largas.
 
 **¿Y las recompras y los add-ons?** En un evento con recompra puedes volver a pagar tras bustear durante una ventana temprana fijada; un add-on es una compra de fichas opcional única que suele ofrecerse cuando esa ventana se cierra. Después de eso, el evento se juega como un freezeout.
 

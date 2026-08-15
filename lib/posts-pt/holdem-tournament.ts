@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Num torneio de pôquer você paga um buy-in fixo por fichas, e os blinds sobem num relógio até uma pessoa ficar com todas as fichas. Os 10–15% melhores do field entram no dinheiro. Os formatos incluem freezeout, PKO, satellite e deepstack — você entra por buy-in direto, satellite ou pré-registro online.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-08-11",
+  updated: "2026-08-15",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏆",
@@ -120,7 +120,7 @@ Normalmente sobram 6–9 jogadores. Os payouts sobem forte a cada eliminação. 
 | **Rebuy / Re-entry** | Paga de novo depois de quebrar (durante os níveis iniciais) | Jogadores agressivos com bankroll maior |
 | **Bounty / KO** | Ganha um bounty fixo em dinheiro por cada jogador que eliminar | Jogadores de ação — renda extra por knockout |
 | **PKO (Progressive KO)** | Os bounties crescem a cada knockout — parte vem pra você, parte é somada à sua cabeça | Jogadores de alta variância e grande upside |
-| **Deepstack** | Stacks iniciais maiores (normalmente 100–200BB+) com níveis mais lentos | Quem quer mais jogo pós-flop |
+| **Deepstack** | Stack inicial bem acima do evento padrão da mesma série, com níveis mais lentos | Quem quer mais jogo pós-flop |
 | **Satellite** | Prêmio = entrada num torneio maior, não dinheiro | Jogadores com orçamento mirando grandes eventos |
 | **MTT** | Multi-Table Tournament — field grande em várias mesas | Qualquer um — o formato mais comum |
 | **SNG (Sit & Go)** | Começa quando as cadeiras enchem (sem horário fixo) — normalmente 6–9 jogadores | Jogo rápido, sem depender de agenda |
@@ -139,7 +139,7 @@ Um PKO (Progressive Knockout) é um torneio de bounty em que tipicamente cerca d
 
 ### O que é um torneio deepstack?
 
-Um torneio deepstack te dá muito mais fichas em relação aos blinds — normalmente 200 big blinds ou mais — e em geral vem com níveis de blind mais longos. Mais fichas e um relógio mais lento significam mais jogo pós-flop, mais espaço pra se recuperar de um erro e dias mais longos.
+Um torneio deepstack te dá muito mais fichas em relação aos blinds do que o evento padrão da mesma série, e em geral vem com níveis de blind mais longos. **Não existe um limiar padronizado** — "deepstack" é sempre um rótulo relativo. Tire do structure sheet quantos big blinds vale o seu stack no Nível 1 e compare com os 100–200 BB de um evento padrão. Mais fichas e um relógio mais lento significam mais jogo pós-flop, mais espaço pra se recuperar de um erro e dias mais longos.
 
 **E os rebuys e add-ons?** Num evento de rebuy você pode pagar de novo depois de quebrar durante uma janela inicial definida; um add-on é uma compra opcional única de fichas, geralmente oferecida quando essa janela fecha. Depois disso, o evento segue como um freezeout.
 

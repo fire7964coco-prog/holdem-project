@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In einem Pokerturnier zahlst du ein festes Buy-in für Chips, die Blinds steigen auf einem Timer, bis ein Spieler alle Chips hält. Die Top 10–15% des Feldes kommen in die Payouts. Formate sind Freezeout, PKO, Satellite und Deepstack – der Einstieg läuft über direktes Buy-in, Satellite oder Online-Vorregistrierung.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-08-11",
+  updated: "2026-08-15",
   keepImagesInBody: true,
   readTime: "14 Min.",
   emoji: "🏆",
@@ -287,7 +287,7 @@ Die **CAPT Million in Baden** schließt die Saison ab und ist mit **€1.000.000
 
 ⚠ **Nicht verwechseln:** Das Casino Baden der CAPT liegt bei Wien. Das **Grand Casino Baden in der Schweiz** ist ein anderes Haus – und dort fand am 31. Mai 2026 zum letzten Mal ein Turnier statt, während des Umbaus werden keine angeboten. Gespielt wird in der Schweiz stattdessen im **Grand Casino Luzern**, dessen Poker Circle Swiss Masters im Dezember mit der Championship Week endet (Main Event CHF 800 + 80).
 
-:::note[Termine und Buy-ins stammen direkt von den Veranstalterseiten – kings-resort.com/poker, casinos.at, spielbank-berlin.de, casino-sh.de, grandcasinobaden.ch und grandcasinoluzern.ch, abgerufen am 10.08.2026. Die NRW-Angaben stammen von den Häusern selbst: spielbank-hohensyburg.de, spielbank-duisburg.de und spielbank-aachen.de. Die bayerischen Zahlen und die SBPM-Eckdaten stehen im Shop und auf der Meisterschaftsseite der Spielbanken Bayern (spielbanken-bayern.de), die Münchner Vereinsangabe auf isar-poker.de – alles abgerufen am 12.08.2026. Serientermine verschieben sich: Prüf vor der Anreise die offizielle Seite.]:::
+:::note[Termine und Buy-ins stammen direkt von den Veranstalterseiten – kings-resort.com/poker, spielbank-berlin.de, casino-sh.de, grandcasinobaden.ch und grandcasinoluzern.ch, abgerufen am 10.08.2026. Die CAPT-Angaben geben die offizielle Ankündigung von Casinos Austria wieder; casinos.at blockt automatisierte Abrufe, eine Gegenprüfung war zuletzt nicht möglich – prüf die Station deshalb vor der Anreise direkt auf der Casinos-Austria-Seite. Die NRW-Angaben stammen von den Häusern selbst: spielbank-hohensyburg.de, spielbank-duisburg.de und spielbank-aachen.de. Die bayerischen Zahlen und die SBPM-Eckdaten stehen im Shop und auf der Meisterschaftsseite der Spielbanken Bayern (spielbanken-bayern.de), die Münchner Vereinsangabe auf isar-poker.de – alles abgerufen am 12.08.2026. Serientermine verschieben sich: Prüf vor der Anreise die offizielle Seite.]:::
 
 ---
 
