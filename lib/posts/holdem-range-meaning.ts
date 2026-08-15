@@ -16,12 +16,15 @@ export const POST: Post = {
   imageAlt: "어두운 포커 테이블에서 잭·퀸·킹·에이스 스페이드 카드를 펼쳐 든 손을 흑백으로 담은 장면",
   tags: ["핸드 레인지", "레인지 차트", "포지션별 핸드 레인지", "오픈 레인지", "레인지 리딩", "폴라라이즈드 레인지", "GTO 레인지", "익스플로잇 전략"],
   video: {
-    name: "홀덤 뭉카 잡는 법 | 프로는 상대의 눈에서 무엇을 보나 (레인지 읽기)",
+    name: "홀덤 뻥카 잡는 법 | 프로는 상대의 눈에서 무엇을 보나 (레인지 읽기)",
     description: "안토니우스가 바텀페어로 상대의 리버 올인을 받아낸 레인지 읽기 실전 해설. 스트리트마다 상대 레인지에서 강한 패를 하나씩 지워 나가는 3단계 소거를 실제 하이스테이크 핸드로 보여준다.",
-    thumbnailUrl: "https://i.ytimg.com/vi/BdHjSUDoBow/hqdefault.jpg",
-    uploadDate: "2026-07-23",
+    thumbnailUrl: "https://i.ytimg.com/vi/BdHjSUDoBow/maxresdefault.jpg",
+    // 유튜브 원문 축어: meta[itemprop="uploadDate"] = 2026-07-23T00:15:10-07:00 (= KST 16:15:10)
+    // 🔴 날짜만 적으면 GSC가 「시간대 누락」·「datetime 값 잘못됨」 2건을 낸다. 오프셋까지 반드시 붙일 것.
+    uploadDate: "2026-07-23T16:15:10+09:00",
     embedUrl: "https://www.youtube.com/embed/BdHjSUDoBow",
     contentUrl: "https://www.youtube.com/watch?v=BdHjSUDoBow",
+    duration: "PT4M55S",
   },
   content: `
 ![어두운 포커 테이블에서 J·Q·K·A 스페이드 카드를 펼쳐 든 손을 흑백으로 담은 장면](/images/holdem-range-hand-notation.webp "레인지 = 상대가 들 수 있는 패의 '범위' — 한 장이 아니라 묶음으로 생각한다")
