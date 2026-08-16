@@ -50,9 +50,11 @@ GOP 메인 바이인 `KRW 2,7 Mio.` 출처 귀속(de `korea-marathon` #55) — G
 
 > 🔴 **9/13경 판정까지 관련글 로직(`lib/related-posts.ts`)·클러스터 구성을 재변경 금지**(측정 오염).
 >    기준선·측정법·반증 조건은 전부 audit 문서 §2·§6에 있다.
-> 🔜 **P2~P4는 8/30 이후 순차 배포**(귀인 보호): ①대회 가이드 5편 전역 네비 0 복구
->    ②고아 25편 편입 + `check:clusters` 게이트(**vercel.json buildCommand에도** 걸 것 — npm 훅 안 탐)
->    ③intl-footer 링크 2개 → `hubPagesFor` (`lib/hub-pages.ts`로 데이터 분리 필요). 상세는 audit §4.
+> ✅ **P2 완료 (08-17 · `395b6a60` · 사장님 지시로 앞당김)** — 대회 가이드 5편+roadmap에
+>    모바일 탭바 복구, 시리즈 칩 `hidden sm:flex` 해제. pv 목표 없음(구조 정합 복구).
+> 🔜 **P3·P4는 8/30 이후**: ②고아 25편 편입 + `check:clusters` 게이트(**vercel.json
+>    buildCommand에도** 걸 것 — npm 훅 안 탐) ③intl-footer 링크 2개 → `hubPagesFor`
+>    (`lib/hub-pages.ts`로 데이터 분리 필요). 상세는 audit §4.
 > 🪶 `holdem-spr`은 관련글 목적지에서 **9/13까지 자동 제외**돼 있다(`until` 만료 시 자동 복귀).
 > 🪶 P3 착수 시 `apt-incheon-2026-guide`가 ①-1(훅 전환)과 같은 파일이다 — 같은 날 묶어라.
 
