@@ -43,6 +43,19 @@ GOP 메인 바이인 `KRW 2,7 Mio.` 출처 귀속(de `korea-marathon` #55) — G
 
 ---
 
+### 🆕 **08-16 내비·동선 진단 + 관련글 로직 교체 배포** (`f5a3d847`·`f727b515`) · 본체 = `docs/nav-flow-audit-2026-08-16.md`
+
+사장님 지시 「사이트 구조 논의」로 GA4 28일 + 코드 전수 진단 → **P1(관련글·이전/다음을
+클러스터 커리큘럼 기준으로) 배포 완료.** 관련 카드 유니크 목적지 **6편 → 56편**(산출물 실측).
+
+> 🔴 **9/13경 판정까지 관련글 로직(`lib/related-posts.ts`)·클러스터 구성을 재변경 금지**(측정 오염).
+>    기준선·측정법·반증 조건은 전부 audit 문서 §2·§6에 있다.
+> 🔜 **P2~P4는 8/30 이후 순차 배포**(귀인 보호): ①대회 가이드 5편 전역 네비 0 복구
+>    ②고아 25편 편입 + `check:clusters` 게이트(**vercel.json buildCommand에도** 걸 것 — npm 훅 안 탐)
+>    ③intl-footer 링크 2개 → `hubPagesFor` (`lib/hub-pages.ts`로 데이터 분리 필요). 상세는 audit §4.
+> 🪶 `holdem-spr`은 관련글 목적지에서 **9/13까지 자동 제외**돼 있다(`until` 만료 시 자동 복귀).
+> 🪶 P3 착수 시 `apt-incheon-2026-guide`가 ①-1(훅 전환)과 같은 파일이다 — 같은 날 묶어라.
+
 ### ✅ **08-16 검수장 왕복 2바퀴 — 지시 2건 반영 완료** (`3fb3af6d`·`89c39b15`·`9b57aa8d`) · 경위는 `WORKLOG.md`
 
 `wpt-australia` 등록 문구 **8로케일** + `holdem-tournament` EPT/APPT 창구 **7로케일** + `hand-rankings` Rule 85.
