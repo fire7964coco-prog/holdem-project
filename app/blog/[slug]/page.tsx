@@ -392,6 +392,7 @@ export default function Page({ params }: { params: { slug: string } }) {
           prevPost={prevPost}
           nextPost={nextPost}
           related={relatedPosts}
+          totalPosts={POSTS.length}
         />
       )}
     </>

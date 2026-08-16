@@ -242,6 +242,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body>
+        {/*
+         * ★접근성 skip-link (2026-08-16 이식). 원래 components/header.tsx에 있었지만
+         *   그 컴포넌트는 어디서도 import되지 않는 죽은 코드여서 **사이트에 skip-link가
+         *   0개**였다. 대상 앵커 #main-content는 site-chrome.tsx의 <main>에 이미 있다.
+         *   한국어 하드코딩이 아니라 시각적으로 숨겨진 요소라 다국어 페이지에도 무해하다
+         *   (포커스 시에만 노출 — 스크린리더·키보드 사용자용).
+         */}
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-primary focus:text-primary-foreground focus:px-4 focus:py-2 focus:rounded-md"
+        >
+          본문 바로가기
+        </a>
         <BrushDefs />
         <HtmlLangSync />
         <SiteHeader />

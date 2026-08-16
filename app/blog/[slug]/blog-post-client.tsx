@@ -94,6 +94,7 @@ export default function BlogPost({
   prevPost,
   nextPost,
   related,
+  totalPosts,
 }: {
   /**
    * ★ content가 없다. 본문은 서버에서 이미 렌더돼 bodyParts로 온다.
@@ -115,8 +116,15 @@ export default function BlogPost({
   /** 이전/다음 글 — /blog 피드와 같은 순서(날짜 내림차순)로 **서버에서** 고른 것. */
   prevPost: NavLink | null;
   nextPost: NavLink | null;
-  /** 같은 카테고리 관련글 3개 — 서버에서 선별. */
+  /** 관련글 3개 — 서버에서 클러스터 1순위로 선별(lib/related-posts.ts). */
   related: RelatedCard[];
+  /**
+   * 발행 글 수 — 서버에서 POSTS.length로 계산해 전달.
+   * 🔴 여기(클라이언트)에 숫자를 하드코딩하지 마라 — 「56편」·「57편」이 박혀 있다가
+   *   실제 71편과 어긋난 채 낡아 있었다(CLAUDE.md §1 「개수를 문장에 박지 마라」).
+   *   POSTS를 직접 import하는 것도 금지 — 본문 ~9.5MB가 번들에 실린다.
+   */
+  totalPosts: number;
 }) {
 
   const [copied, setCopied] = useState(false);
@@ -495,7 +503,7 @@ export default function BlogPost({
                     {([
                       // ★검색 진입점 (2026-08-05). 사이트에 검색 입력이 0개였다 — 그 첫 관문을
                       //   여기 맨 위에 둔다(블로그 글이 검색 유입의 착지점이라 가장 자주 열리는 메뉴다).
-                      { href: "/blog#search",   Icon: Search,     label: "글 검색",       desc: "56편에서 주제 찾기" },
+                      { href: "/blog#search",   Icon: Search,     label: "글 검색",       desc: `${totalPosts}편에서 주제 찾기` },
                       { href: "/tournaments",   Icon: Trophy,     label: "대회 일정",     desc: "국내외 홀덤 대회" },
                       { href: "/calculator",    Icon: Calculator, label: "계산기",        desc: "아웃츠·팟오즈·ICM" },
                       { href: "/win-rate-quiz", Icon: TrendingUp, label: "승률 시뮬레이터", desc: "핸드별 승률 확인" },
@@ -704,7 +712,7 @@ export default function BlogPost({
               <dl className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 border-t border-border">
                 {[
                   { label: "운영 경력", value: "12년+" },
-                  { label: "발행 글 수", value: "57편" },
+                  { label: "발행 글 수", value: `${totalPosts}편` },
                   { label: "현장 취재", value: "WSOP·APT" },
                   { label: "솔버 분석", value: "Pio · GTO+" },
                 ].map(({ label, value }) => (
