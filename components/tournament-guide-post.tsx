@@ -14,6 +14,7 @@ type RelatedCard = Pick<Post, "slug" | "title" | "category" | "image" | "imageAl
 import { SITE } from "@/lib/site";
 import { useState, useRef } from "react";
 import ReadingProgressBar from "./reading-progress-bar";
+import BottomTabBar from "./bottom-tab-bar";
 
 export default function TournamentGuidePost({
   post,
@@ -80,7 +81,10 @@ export default function TournamentGuidePost({
             <BookOpen className="w-3.5 h-3.5" />
             처음부터 끝까지 — 단계별 실전 신청 가이드
           </span>
-          <div className="ml-auto hidden sm:flex gap-2">
+          {/* ★2026-08-17: `hidden sm:flex` → 모바일에도 노출. 이 칩 2개가 이 레이아웃의
+              유일한 시리즈 형제 링크인데 오가닉의 68%인 모바일에서만 사라지고 있었다
+              (docs/nav-flow-audit-2026-08-16.md §4 P2). */}
+          <div className="ml-auto flex flex-wrap gap-2">
             {[
               { label: "APT 인천", href: "/blog/apt-incheon-2026-guide" },
               { label: "APPT 코리아", href: "/blog/appt-korea-2026-guide" },
@@ -375,6 +379,13 @@ export default function TournamentGuidePost({
           </div>
         </div>
       </div>
+
+      {/* ★2026-08-17 모바일 하단 전역 탭바 (docs/nav-flow-audit-2026-08-16.md §4 P2).
+          이 레이아웃 5편은 전역 헤더도 null(/blog/*)이라 모바일 전역 네비가 **0개**였다 —
+          그런데 site-chrome의 hasBottomTabBar()는 /blog/* 접두어로 참이어서 푸터가
+          pb-[62px], ScrollToTop이 bottom-[74px]로 **없는 탭바 몫을 이미 비워 두고 있었다.**
+          일반 글(blog-post-client.tsx)과 동일 호출로 그 공백을 실제 탭바로 채운다. */}
+      <BottomTabBar active="none" locale="ko" />
     </>
   );
 }

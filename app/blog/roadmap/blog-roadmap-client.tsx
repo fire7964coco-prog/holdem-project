@@ -4,6 +4,7 @@ import { useRef, useState } from "react";
 import Link from "next/link";
 import { SEO } from "@/components/seo";
 import BlogTopBar from "@/components/blog-top-bar";
+import BottomTabBar from "@/components/bottom-tab-bar";
 import { Home, BookOpen } from "lucide-react";
 
 /* ── 타입 ─────────────────────────────────────────────────────── */
@@ -488,6 +489,11 @@ export default function BlogRoadmap() {
           </div>
         </div>
       </div>
+
+      {/* ★2026-08-17 모바일 하단 전역 탭바 (docs/nav-flow-audit-2026-08-16.md §4 P2).
+          이 페이지는 자체 BlogTopBar만 있고 탭바가 없어 모바일 전역 네비가 상단 2버튼뿐이었다.
+          hasBottomTabBar("/blog/roadmap")는 이미 참이라 푸터 pb-[62px]는 준비돼 있었다. */}
+      <BottomTabBar active="none" locale="ko" />
     </>
   );
 }
