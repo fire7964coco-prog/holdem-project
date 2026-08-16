@@ -10,6 +10,8 @@ import BlogPostClient from "./blog-post-client";
 import TournamentGuidePost from "@/components/tournament-guide-post";
 import { extractHeadings } from "@/lib/blog-headings";
 import { renderMarkdown } from "@/lib/render-markdown";
+import { relatedFor, courseNeighbors } from "@/lib/related-posts";
+import { KO_CLUSTERS } from "@/lib/pillar-clusters";
 
 /**
  * 빌드 타임에 모든 블로그 포스트(29개) URL 정적 생성
@@ -322,10 +324,23 @@ export default function Page({ params }: { params: { slug: string } }) {
   const feedIndex = feed.findIndex((p) => p.slug === post.slug);
   const navLink = (p: (typeof POSTS)[number] | undefined | null) =>
     p ? { slug: p.slug, title: p.title } : null;
-  const prevPost = feedIndex > 0 ? navLink(feed[feedIndex - 1]) : null;
-  const nextPost = feedIndex >= 0 && feedIndex < feed.length - 1 ? navLink(feed[feedIndex + 1]) : null;
-  const relatedPosts = POSTS.filter((p) => p.slug !== post.slug && p.category === post.category)
-    .slice(0, 3)
+  // ★2026-08-16: 이전·다음을 «커리큘럼 순서»(클러스터)로 바꿨다. 기존 날짜순 이웃은
+  //   주제 정합이 0이었다 — 모바일 sticky 「다음 글」이 이걸 그대로 쓰는데, 모바일이
+  //   오가닉의 68%다(1.57p vs 데스크톱 2.06p). 클러스터에 없는 글은 기존 날짜순 폴백.
+  const course = courseNeighbors(post.slug, POSTS, KO_CLUSTERS);
+  const bySlug = (s: string | null) => (s ? POSTS.find((p) => p.slug === s) ?? null : null);
+  const prevPost =
+    navLink(bySlug(course.prevSlug)) ?? (feedIndex > 0 ? navLink(feed[feedIndex - 1]) : null);
+  const nextPost =
+    navLink(bySlug(course.nextSlug)) ??
+    (feedIndex >= 0 && feedIndex < feed.length - 1 ? navLink(feed[feedIndex + 1]) : null);
+  // ★2026-08-16: 관련글을 클러스터 1순위 + 카테고리 원형 회전 폴백으로 교체(lib/related-posts.ts).
+  //   기존 `filter(같은 category).slice(0,3)`은 배열 앞 3편 고정이라 전략 30편이 전부
+  //   같은 3편을 띄웠고, 그 상수 목적지 9편이 내부 유입 125세션/28일을 독식했다.
+  //   🔴 카드 셰이프(아래 6필드)는 성능 계약이다 — 필드를 늘리면 플라이트가 다시 분다.
+  const relatedPosts = relatedFor(post.slug, POSTS, KO_CLUSTERS)
+    .map((s) => POSTS.find((p) => p.slug === s))
+    .filter((p): p is (typeof POSTS)[number] => !!p)
     .map((p) => ({
       slug: p.slug,
       title: p.title,

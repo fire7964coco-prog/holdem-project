@@ -8,6 +8,8 @@ import { getPostByLocale, secondaryLocalesForSlug, postsForLocale } from "@/lib/
 import IntlBlogPostClient from "@/components/intl-blog-post-client";
 import { extractHeadings } from "@/lib/blog-headings";
 import { renderMarkdown } from "@/lib/render-markdown";
+import { relatedFor, courseNeighbors } from "@/lib/related-posts";
+import { clustersForLocale } from "@/lib/pillar-clusters";
 
 /** 해당 슬러그의 모든 언어 대체 링크 (ko + 번역된 보조 언어 + x-default) */
 function hreflangLanguages(slug: string): Record<string, string> {
@@ -144,11 +146,23 @@ export function IntlBlogArticle({ locale, slug }: { locale: SecondaryLocale; slu
   const idx = localePosts.findIndex((p) => p.slug === post.slug);
   const navLink = (p: (typeof localePosts)[number] | undefined | null) =>
     p ? { slug: p.slug, title: p.title } : null;
-  const prevPost = idx > 0 ? navLink(localePosts[idx - 1]) : null;
-  const nextPost = idx >= 0 && idx < localePosts.length - 1 ? navLink(localePosts[idx + 1]) : null;
-  const related = localePosts
-    .filter((p) => p.slug !== post.slug)
-    .slice(0, 3)
+  // ★2026-08-16: 관련글·이전/다음을 클러스터 1순위 + 카테고리 원형 회전으로 교체.
+  //   기존은 `filter(자기 제외).slice(0,3)` — 카테고리 필터조차 없어서 **그 로케일의
+  //   모든 글이 배열 앞 3편**을 관련글로 가졌다(EN 43편 전부 동일 3편). 다국어 블로그
+  //   상세의 세션당 페이지 1.27(전 그룹 최하)의 유력한 원인이었다.
+  //   클러스터 맵이 없는 17개 로케일은 relatedFor가 자동으로 카테고리 회전 폴백을 쓴다.
+  const clusters = clustersForLocale(locale);
+  const course = courseNeighbors(post.slug, localePosts, clusters);
+  const bySlug = (s: string | null) =>
+    s ? localePosts.find((p) => p.slug === s) ?? null : null;
+  const prevPost =
+    navLink(bySlug(course.prevSlug)) ?? (idx > 0 ? navLink(localePosts[idx - 1]) : null);
+  const nextPost =
+    navLink(bySlug(course.nextSlug)) ??
+    (idx >= 0 && idx < localePosts.length - 1 ? navLink(localePosts[idx + 1]) : null);
+  const related = relatedFor(post.slug, localePosts, clusters)
+    .map((s) => localePosts.find((p) => p.slug === s))
+    .filter((p): p is (typeof localePosts)[number] => !!p)
     .map((p) => ({ slug: p.slug, title: p.title, emoji: p.emoji }));
 
   // ★ 마크다운 렌더링은 서버에서. 클라이언트에는 content를 넘기지 않는다(원문+HTML 이중 적재 방지).

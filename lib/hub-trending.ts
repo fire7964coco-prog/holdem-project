@@ -1,10 +1,6 @@
 import type { Post } from "./posts";
 import type { SecondaryLocale } from "./intl";
-import {
-  KO_CLUSTERS, EN_CLUSTERS, JA_CLUSTERS, ES_CLUSTERS,
-  PT_CLUSTERS, DE_CLUSTERS, ZH_CLUSTERS, ZH_HANT_CLUSTERS, ID_CLUSTERS,
-  type PillarCluster,
-} from "./pillar-clusters";
+import { clustersForLocale, type PillarCluster } from "./pillar-clusters";
 
 /**
  * 「이번 주 인기 / Trending」 목록 — **필라 2개 + 최신 2개**.
@@ -26,7 +22,8 @@ import {
  *   필라만 4개면 영영 안 바뀌어 죽은 영역이 되고, 최신만 4개면 대회 글로 도배된다
  *   (JA 실측: 최신 4개가 전부 2026-07-30 대회 글이라 기초 글이 하나도 안 보였다).
  *
- * ⚠ 새 언어를 추가하면 `CLUSTERS_BY_LOCALE`에 항목을 넣을 것. 없으면 필라 자리가 비고
+ * ⚠ 새 언어를 추가하면 `lib/pillar-clusters.ts`의 `CLUSTERS_BY_LOCALE`에 항목을 넣을 것
+ *   (2026-08-16에 그쪽으로 단일화 — 여기 있던 사본은 제거). 없으면 필라 자리가 비고
  *   최신 4개로 채워진다(동작은 하지만 기초 진입로가 사라진다).
  */
 
@@ -40,19 +37,8 @@ const PILLAR_COUNT = 2;
 /** 전체 몇 개를 보여줄지 */
 const TOTAL = 4;
 
-const CLUSTERS_BY_LOCALE: Partial<Record<SecondaryLocale, PillarCluster[]>> = {
-  en: EN_CLUSTERS,
-  ja: JA_CLUSTERS,
-  es: ES_CLUSTERS,
-  pt: PT_CLUSTERS,
-  de: DE_CLUSTERS,
-  zh: ZH_CLUSTERS,
-  "zh-hant": ZH_HANT_CLUSTERS,
-  id: ID_CLUSTERS,
-};
-
 function clustersFor(locale: SecondaryLocale | null): PillarCluster[] {
-  return locale ? CLUSTERS_BY_LOCALE[locale] ?? [] : KO_CLUSTERS;
+  return clustersForLocale(locale);
 }
 
 type PostMeta = Pick<Post, "slug" | "title" | "date" | "updated">;

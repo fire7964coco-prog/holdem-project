@@ -770,3 +770,34 @@ export function clusterForSlug(slug: string, clusters: PillarCluster[] = EN_CLUS
   }
   return null;
 }
+
+/**
+ * 로케일 → 클러스터 표. **이 파일이 단일 출처다.**
+ *
+ * ★2026-08-16에 `lib/hub-trending.ts`가 갖고 있던 `CLUSTERS_BY_LOCALE`을 여기로 올렸다.
+ *   같은 매핑을 두 벌 두면 언어를 추가할 때 한쪽만 갱신되고, 그게 이 레포가
+ *   반복해서 맞은 드리프트 유형이다(`components/site-chrome.tsx:14-22`의
+ *   LOCALE_FEED_ROOTS 사고가 정확히 그것 — 12개 대 25개로 갈려 상단바가 2겹이 됐다).
+ *   **새 언어에 클러스터를 만들면 여기 한 곳만 고친다.**
+ *
+ * 여기 없는 로케일은 빈 배열을 받는다 — 클러스터 맵이 아직 없는 17개 언어다.
+ * 호출부는 «없음»을 정상 상태로 다뤄야 한다(미니맵 미표시, 관련글은 카테고리 폴백).
+ *
+ * locale 타입을 `SecondaryLocale`로 좁히지 않은 이유: `lib/intl.ts`를 import하면
+ * 데이터 모듈이 로케일 레지스트리에 의존하게 된다. 값 자체는 문자열 키라 좁힐 실익이 없다.
+ */
+const CLUSTERS_BY_LOCALE: Record<string, PillarCluster[]> = {
+  en: EN_CLUSTERS,
+  ja: JA_CLUSTERS,
+  es: ES_CLUSTERS,
+  pt: PT_CLUSTERS,
+  de: DE_CLUSTERS,
+  zh: ZH_CLUSTERS,
+  "zh-hant": ZH_HANT_CLUSTERS,
+  id: ID_CLUSTERS,
+};
+
+/** 로케일별 클러스터. `null`(= 한국어)이면 KO_CLUSTERS. 맵이 없는 언어는 빈 배열. */
+export function clustersForLocale(locale: string | null): PillarCluster[] {
+  return locale ? CLUSTERS_BY_LOCALE[locale] ?? [] : KO_CLUSTERS;
+}
