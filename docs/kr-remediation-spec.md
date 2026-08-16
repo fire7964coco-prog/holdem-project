@@ -21,7 +21,7 @@
 | **S2** | 포스트플랍 전략 — position · check-raise · cbet · overbet · value-bet-sizing · bluffing | 6 | 39 | ✅ **완료 (2026-08-09)** — 37건 편집 · 1건 기적용 · 1건(STALE) 선제처리 |
 | **S3** | 프리플랍·사이징 — 3bet · raise-how-much · blind-steal · pocket-aces · pocket-kings · bankroll · button-position · small-blind-role | 8 | 38 | ✅ **완료 (2026-08-09)** — 38건 전부 편집 · 기적용 0건 |
 | **S4** | 계산·룰 정의 13편 | 13 | 29 | ✅ **완료 (2026-08-09)** — 29건 전부 편집 · 기적용 0건 |
-| **S5** | tournament-how-to-enter | 1 | 11 | **8/16 이후** — STALE #19가 APT 인천 종료로 만료된다 |
+| **S5** | tournament-how-to-enter | 1 | 11 | ✅ **완료 (2026-08-17 · `3aa55086`)** — RISKY 6 편집 · STALE 2 편집 · 3 유효확인(#21·#23·#28). 회신 M-007 |
 
 **A층(RISKY) + B층(유해조언 높음) + STALE을 «편 단위»로 합쳐서 한 번에 끝낸다.**
 따로 돌리면 같은 문장을 두 번 열게 되고, 두 번째 편집이 첫 번째를 깨뜨린다.
