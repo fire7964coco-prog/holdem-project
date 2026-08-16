@@ -3,6 +3,19 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-08-17 (2) — **apt-incheon 2차 훅 전환: 결과·우승자 아카이브 9로케일** (`82e18b0f`)
+
+APT 인천 종료(8/16) 처리. 준비 문서(`docs/prep-2026-08-16-apt-incheon.md`)의 자리 특정 덕에 «찾기» 없이 진행.
+- **출처 전부 APT 공식 원문 축어**(Playwright DOM 직접 추출): 우승 **홍콩 Stephen Pang(San Hon Pang)**
+  KRW 411,180,000(3인 ICM 딜) · 준우승 Shoumin Zhang(중국) · 3위 Yifu He(미국) ·
+  **1,393엔트리(역대 최대)** · 상금풀 **KRW 3,008,880,000**.
+  ⚠ 유통되던 상금풀 «3,008,540,000»은 채택 안 함 — Final Day 공식 축어는 «880» ([[search-primary-source-never-summary]]).
+- **로케일별 훅 유지**: ko 「한국 여권으론」 앞머리 보존(CTR 10.6% 자산·꼬리만) · **ja = 파이널 9명 중
+  일본인 5명**(공식 결과표에서 직접 셈 — Kotani 4위·Koyama 5위·Kano 6위·Endo 8위·Fujita 9위) ·
+  zh = 중국 준우승 · zh-hant = 홍콩 우승 각도.
+- 게이트: audit:hard 9로케일 🔴 0 · de-style 🔴 0 · 빌드 632p · 산출물 9로케일 수치 렌더 전수 확인.
+- 🪶 남은 미결: `$3.50` 스텝 위성 실재 여부(취소선 행 유지) — Natural8 페이지 다운으로 계속 판정 불가.
+
 ## 2026-08-17 — **P2: 대회 가이드 5편·roadmap 모바일 전역 탭바 복구** (`395b6a60`)
 
 사장님 지시로 8/30 예정을 앞당김. `tournament-guide-post.tsx`는 전역 헤더 null + 탭바 미import라
