@@ -2,14 +2,14 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "apt-incheon-2026-guide",
-  title: "APT Incheon 2026 — Festival de Pôquer + Guia de Viagem pela Coreia",
-  seoTitle: "Voar pra Coreia pra jogar pôquer? APT Incheon 2026 no Paradise City + Seul em 3 dias",
-  desc: "APT Incheon 2026 — 7 a 16 de ago, Paradise City perto do Aeroporto de Incheon. $2.7M GTD, Main Event ~$1.703. Classificação online encerrada desde 7 de ago — agora só registro presencial.",
-  tldr: "O APT Incheon 2026 rola de 7 a 16 de agosto no Paradise City Casino, em Incheon — 10 min de shuttle grátis a partir do Terminal 1. Main Event: buy-in de KRW 2.500.000 (~$1.703), $1M GTD. Os classificatórios online da Natural8 distribuíram 74 vagas no total, mas o Mega de $35 e a rota OnLive Day 1 encerraram em 2 de agosto: a última via, o Step de $20 → Mega de $200, encerrou em 7 de agosto: a classificação online acabou. Só estrangeiros (cidadãos coreanos sem residência no exterior não podem entrar). Seul fica a ~1 hora e é uma das melhores cidades da Ásia para comida, cultura e vida noturna.",
+  title: "APT Incheon 2026 — Resultados, Campeão e Recorde de Entradas",
+  seoTitle: "Quem venceu o APT Incheon 2026? Resultados e recorde",
+  desc: "O APT Incheon 2026 acabou com recorde: 1.393 entradas no Main Event. O campeão Stephen Pang (Hong Kong) levou KRW 411.180.000 (~$293.700). Resultados + guia da Coreia.",
+  tldr: "O Main Event do APT Incheon 2026 foi vencido por Stephen Pang, de Hong Kong, que levou KRW 411.180.000 (~$293.700) após um acordo ICM a três, além do troféu do Leão em ouro 24K. O field marcou recorde com 1.393 entradas e premiação total de KRW 3.008.880.000. O vice foi Shoumin Zhang (China, KRW 366.500.000 / ~$261.785) e o terceiro Yifu He (EUA). O top 3 também ganhou vagas para o Main Event do APT Championship 2026 em Taipé (~$10.000 cada). Só estrangeiros (cidadãos coreanos sem residência no exterior não podem entrar). Seul fica a ~1 hora — na próxima parada, a viagem de pôquer e a viagem pela Coreia continuam sendo a mesma viagem.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-15",
-  masterUpdated: "2026-07-28",
+  updated: "2026-08-17",
+  masterUpdated: "2026-08-17",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🇰🇷",
@@ -31,6 +31,8 @@ Seul entrou na lista de viagem de todo mundo desde que Parasita ganhou o Oscar, 
 APT Incheon 2026. 7 a 16 de agosto. Paradise City Casino. $2.7 milhões em premiações garantidas. E quando as cartas descansam — bibimbap, noites à beira do Rio Han, passeios por palácios e frango frito coreano até as 4 da manhã.
 
 A viagem de pôquer e a viagem pela Coreia são a mesma viagem. ==g:O Paradise City fica a 10 minutos do aeroporto, e Seul fica a 1 hora de metrô.== Você pode vir só pelo cassino, só pelo turismo, ou fazer os dois — a localização deixa fácil de qualquer jeito.
+
+:::note[**★Resultado final (16 de agosto de 2026) — o festival acabou.** O Main Event foi vencido por **Stephen Pang**, de Hong Kong, com **KRW 411.180.000 (~$293.700)** após um acordo ICM a três, superando um field **recorde de 1.393 entradas** com premiação total de **KRW 3.008.880.000**. Vice: Shoumin Zhang (China, KRW 366.500.000 / ~$261.785); terceiro: Yifu He (EUA, KRW 257.000.000 / ~$183.570). O top 3 também ganhou vagas para o Main Event do APT Championship 2026 em Taipé (~$10.000 cada). O cronograma e o registro abaixo ficam como referência para a próxima parada do APT. — Fonte: relatório oficial do APT, *Stephen Pang Wins APT Incheon Main Event After Wild Heads-Up Battle* (verificado em 17/08/2026)]:::
 
 ---
 

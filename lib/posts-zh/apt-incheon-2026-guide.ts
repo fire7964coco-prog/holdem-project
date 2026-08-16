@@ -2,14 +2,14 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "apt-incheon-2026-guide",
-  title: "APT Incheon 2026 — 扑克节 + 韩国旅行全攻略",
-  seoTitle: "飞韩国打牌？APT Incheon 2026 在 Paradise City，顺便 3 天玩转首尔",
-  desc: "APT Incheon 2026——8 月 7–16 日，就办在仁川机场旁的 Paradise City Casino，坐免费班车 10 分钟直达。$2.7M 保底，主赛事约 $1,700，线上预选已于 8 月 7 日全部结束，现在只能现场报名。仅限外籍人士。这篇讲清赛程、买入、场馆，还附上首尔 3 天吃住玩全攻略。",
-  tldr: "APT Incheon 2026 于 8 月 7–16 日在仁川 Paradise City Casino 举办——从 1 号航站楼坐免费班车 10 分钟直达。主赛事：KRW 2,500,000（约 $1,703）买入，$1M 保底。Natural8 线上预选一共送出 74 个席位，但 $35 Mega 和 OnLive Day 1 都已在 8 月 2 日结束，最后一条 $20 阶梯 → $200 Mega 也已在 8 月 7 日结束，线上预选全部收官。仅限外籍人士（无海外永久居留权的韩国公民不得入场）。首尔约 1 小时车程，是亚洲美食、文化和夜生活最好的城市之一。",
+  title: "APT Incheon 2026 结果 — 冠军、中国亚军与破纪录战场",
+  seoTitle: "中国牌手 Shoumin Zhang 获亚军 — APT Incheon 2026 结果",
+  desc: "APT Incheon 2026 落幕：主赛事创纪录 1,393 人参赛，香港的 Stephen Pang 夺冠（KRW 411,180,000），中国牌手 Shoumin Zhang 获亚军（KRW 366,500,000）。完整结果 + 首尔攻略。",
+  tldr: "APT Incheon 2026 主赛事由香港的 Stephen Pang 夺冠，在三人 ICM 协议后赢得 KRW 411,180,000（约 $293,700）和 24K 金狮子奖杯。1,393 人参赛创历史纪录，总奖池 KRW 3,008,880,000。中国牌手 Shoumin Zhang 获亚军（KRW 366,500,000，约 $261,785），美国的 Yifu He 第三。前三名还各获 11 月台北 APT 锦标赛主赛事门票（约 $10,000）。仅限外籍人士入场（无海外永久居留权的韩国公民不得入场）。首尔约 1 小时车程——下一站，打牌之旅和韩国之旅依然是同一趟旅行。",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-15",
-  masterUpdated: "2026-07-28",
+  updated: "2026-08-17",
+  masterUpdated: "2026-08-17",
   keepImagesInBody: true,
   readTime: "16 分钟",
   emoji: "🇰🇷",
@@ -31,6 +31,8 @@ export const POST: Post = {
 APT Incheon 2026。8 月 7–16 日。Paradise City Casino。总保底奖池 $2.7 million。等牌局结束，还有石锅拌饭、汉江之夜、古宫漫步，和撑到凌晨 4 点的韩式炸鸡。
 
 打牌之旅和韩国之旅，就是同一趟旅行。==g:Paradise City 距离机场 10 分钟，首尔坐地铁 1 小时就到。== 你可以只来赌场、只来观光，或者两样都干——凭这个位置，怎么安排都轻松。
+
+:::note[**★最终结果（2026 年 8 月 16 日）——本届已落幕。** 主赛事由香港的 **Stephen Pang** 夺冠，在三人 ICM 协议后赢得 **KRW 411,180,000（约 $293,700）** 和 24K 金狮子奖杯。**1,393 人参赛创历史纪录**，总奖池 **KRW 3,008,880,000**。亚军是中国牌手 Shoumin Zhang（KRW 366,500,000，约 $261,785），第三名为美国的 Yifu He（KRW 257,000,000，约 $183,570）。前三名还各获 11 月台北 APT 锦标赛主赛事门票（约 $10,000）。下方赛程与报名信息保留，供下一站 APT 参考。—— 出处：APT 官方赛报 *Stephen Pang Wins APT Incheon Main Event After Wild Heads-Up Battle*（2026-08-17 核对）]:::
 
 ---
 

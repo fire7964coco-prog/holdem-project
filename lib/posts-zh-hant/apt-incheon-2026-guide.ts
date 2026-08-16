@@ -2,14 +2,14 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "apt-incheon-2026-guide",
-  title: "APT 仁川 2026 完整攻略——賽程、買入、場館與韓國行程",
-  seoTitle: "飛韓國打牌？APT 仁川 2026 全攻略",
-  desc: "APT 仁川 2026：8/7–8/16 於仁川機場旁 Paradise City 舉行，$2.7M GTD，主賽事約 $1,700，線上預選已於 8/7 全部結束，附首爾 3 日行程。",
-  tldr: "APT 仁川 2026 於 8 月 7–16 日在仁川 Paradise City 賭場舉行——距第一航廈免費接駁車僅 10 分鐘。主賽事（Main Event）買入 KRW 2,500,000（約 $1,703），$1M GTD。Natural8 線上預選共送出 74 個席次，但 $35 Mega 與 OnLive Day 1 都已在 8 月 2 日結束，最後一條 $20 階梯 → $200 Mega 也已在 8 月 7 日結束，線上預選全部收官。僅限外國人參加（無海外永久居留權的韓國公民不得進入）。首爾距離約 1 小時，是全亞洲美食、文化與夜生活最頂尖的城市之一。",
+  title: "APT 仁川 2026 結果——香港的 Stephen Pang 奪冠",
+  seoTitle: "香港牌手 Stephen Pang 奪冠 — APT 仁川 2026 結果",
+  desc: "APT 仁川 2026 落幕：主賽事創紀錄 1,393 人參賽，香港的 Stephen Pang 在三人 ICM 協議後奪冠，抱走 KRW 411,180,000（約 $293,700）與金獅獎盃。完整結果與下一站攻略。",
+  tldr: "APT 仁川 2026 主賽事由香港的 Stephen Pang 奪冠，在三人 ICM 協議後贏得 KRW 411,180,000（約 $293,700）與 24K 金獅獎盃。1,393 人參賽創歷史紀錄，總獎池 KRW 3,008,880,000。亞軍為中國的 Shoumin Zhang（KRW 366,500,000，約 $261,785），第三名是美國的 Yifu He。前三名還各獲 11 月台北 APT 錦標賽主賽事席次（約 $10,000）——冠軍將帶著金獅獎盃來台北衛冕。僅限外國人參加（無海外永久居留權的韓國公民不得進入）。首爾距離約 1 小時，下一站的撲克之旅和韓國之旅依然是同一趟旅程。",
   category: "tournament",
   date: "2026-07-23",
-  updated: "2026-08-15",
-  masterUpdated: "2026-07-28",
+  updated: "2026-08-17",
+  masterUpdated: "2026-08-17",
   keepImagesInBody: true,
   readTime: "16 分鐘",
   emoji: "🇰🇷",
@@ -31,6 +31,8 @@ export const POST: Post = {
 APT 仁川 2026（亞洲撲克巡迴賽 Asian Poker Tour）。8 月 7–16 日。Paradise City 賭場。保證獎池（GTD）合計 270 萬美元。牌局收工的時候——石鍋拌飯、漢江夜色、宮殿散步，還有炸到凌晨四點的韓式炸雞。
 
 撲克之旅和韓國之旅，本來就是同一趟旅程。==g:Paradise City 距機場 10 分鐘，首爾搭地鐵 1 小時就到。== 你可以只為賭場而來、只為觀光而來，或兩者都要——這個地點怎麼安排都方便。
+
+:::note[**★最終結果（2026 年 8 月 16 日）——本屆已落幕。** 主賽事由==**香港的 Stephen Pang**==奪冠，在三人 ICM 協議後贏得 **KRW 411,180,000（約 $293,700）** 與 24K 金獅獎盃。**1,393 人參賽創歷史紀錄**，總獎池 **KRW 3,008,880,000**。亞軍為中國的 Shoumin Zhang（KRW 366,500,000，約 $261,785），第三名是美國的 Yifu He（KRW 257,000,000，約 $183,570）。前三名還各獲 11 月台北 APT 錦標賽主賽事席次（約 $10,000）——冠軍將帶著金獅獎盃來台北衛冕。下方賽程與報名資訊保留，供下一站 APT 參考。—— 出處：APT 官方賽報 *Stephen Pang Wins APT Incheon Main Event After Wild Heads-Up Battle*（2026-08-17 核對）]:::
 
 ---
 
