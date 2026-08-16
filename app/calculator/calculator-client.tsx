@@ -1,10 +1,9 @@
 "use client";
 
-import { useState, useMemo, useRef } from "react";
+import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { SEO } from "@/components/seo";
-import { Calculator, TrendingUp, Layers, Target, Trophy, BarChart3, Zap, ChevronLeft, ChevronRight, ChevronDown, LayoutGrid, BookOpen } from "lucide-react";
-import Link from "next/link";
+import { Calculator, TrendingUp, Layers, Target, Trophy, BarChart3, Zap } from "lucide-react";
 import { CALCULATOR_FAQ } from "./faq";
 import { pfLookup, PF_STACK_MIN, PF_STACK_MAX, PF_STACK_STEP } from "@/lib/pushfold-data";
 import { pfLookupMultiway, PF_MW_POSITIONS } from "@/lib/pushfold-multiway-data";
@@ -1248,12 +1247,6 @@ export default function CalculatorPage() {
   const [active, setActive] = useState<typeof TABS[number]["id"]>("outs");
   const tab = TABS.find(t => t.id === active)!;
 
-  // 상단 네비 드롭다운 상호 배타 — 패널이 둘 다 absolute라 동시에 열리면 겹친다
-  const calcNavRefs = useRef<(HTMLDetailsElement | null)[]>([]);
-  const closeCalcPanels = (keep: HTMLDetailsElement | null) => {
-    calcNavRefs.current.forEach((d) => { if (d && d !== keep && d.open) d.open = false; });
-  };
-
   return (
     <>
       <SEO
@@ -1262,13 +1255,21 @@ export default function CalculatorPage() {
         path="/calculator"
       />
 
-      {/* Hero */}
-      <section className="relative pt-9 sm:pt-16 pb-7 sm:pb-12 overflow-hidden border-b border-border/60">
+      {/* Hero
+          ★2026-08-17 모바일 압축 — 실측 처방(docs/ux-layout-brief-2026-08-17.md).
+            모바일 참여율 51.7%(데스크톱 75.0%) · 세션당 56초의 원인이 「계산기에 닿기까지
+            첫 화면을 다 쓴다」였다. 390×844 실측(하단 탭바가 782px부터 덮는다):
+              전: 콘솔 상단 547px → 계산기가 **235px만 걸쳐** 보였다 · 첫 입력 586px
+              후: 콘솔 상단 399px → **383px 보인다**(+63%) · 첫 입력 438px
+            → 모바일에서만 배지·나열 문단·상하 패딩을 걷는다. 데스크톱(sm↑)은 무변경. */}
+      <section className="relative pt-5 sm:pt-16 pb-4 sm:pb-12 overflow-hidden border-b border-border/60">
         <div className="absolute inset-0 opacity-70 pointer-events-none" style={{
           backgroundImage:`radial-gradient(ellipse 900px 380px at 28% -10%, hsl(43 55% 82% / 0.55) 0%, transparent 60%), radial-gradient(ellipse 700px 340px at 92% 8%, hsl(152 35% 84% / 0.4) 0%, transparent 60%)`
         }} />
         <div className="max-w-5xl mx-auto px-4 sm:px-6 relative">
-          <div className="flex items-center gap-2 mb-2.5 sm:mb-4">
+          {/* ★배지는 모바일에서 숨긴다 — 「무료 도구」·「실시간 계산」은 정보를 더하지 않는데
+              30px를 먹는다. 같은 사실은 h1 아래 문단과 SEO 섹션에 이미 있다. */}
+          <div className="hidden sm:flex items-center gap-2 mb-2.5 sm:mb-4">
             <span className="badge-gold">무료 도구</span>
             <span className="badge-gold">실시간 계산</span>
           </div>
@@ -1276,9 +1277,15 @@ export default function CalculatorPage() {
             포커 확률 계산기<br />
             <span className="text-gold-gradient">홀덤 모든 계산 한 곳에</span>
           </h1>
-          <p className="text-muted-foreground text-sm sm:text-lg max-w-2xl leading-relaxed">
+          {/* ★8종 나열은 모바일에서 숨긴다 — 바로 아래 탭 버튼 8개가 **같은 목록**이라
+              화면만 두 번 먹었다. 아래 `hidden sm:flex` 칩 목록을 2026-08-04에 같은 이유로
+              숨겼는데 이 문단만 남아 있었다. DOM에는 남으므로 색인 영향 없다. */}
+          <p className="hidden sm:block text-muted-foreground text-sm sm:text-lg max-w-2xl leading-relaxed">
             아웃츠·팟 오즈·핸드 족보 판별·스타팅 핸드 강도·SPR·토너먼트 M값·ICM·푸시/폴드 내시 차트 —
             실전에서 필요한 계산을 즉시 확인하세요.
+          </p>
+          <p className="sm:hidden text-muted-foreground text-sm leading-relaxed">
+            숫자만 넣으면 바로 나옵니다. 아래에서 계산기를 고르세요.
           </p>
           {/* ★모바일에서는 숨긴다 — 바로 아래 탭 버튼이 똑같은 8개 항목이라 화면만 두 번 먹었다.
               DOM에는 남으므로 색인에는 영향 없고, 같은 키워드가 위 문단·탭 라벨에도 있다. */}
@@ -1290,104 +1297,24 @@ export default function CalculatorPage() {
         </div>
       </section>
 
-      {/* ★모바일 상단 섹션 네비 (2026-08-04) — 블로그 글과 같은 디자인.
-          바로가기로 계산기에 왔는데 상단 네비가 없다는 지적. 하단 전역 탭바와
-          같은 다크 그린 계열에 배경만 한 톤 밝게(#1a3a2a).
-          아래 8개 탭 그리드는 진입 시 한눈에 보라고 남겨 두고, 스크롤로 지나간 뒤에는
-          이 바가 같은 역할을 이어받는다. */}
-      <div
-        className="lg:hidden sticky top-0 z-40 px-2 flex items-stretch shadow-[0_8px_18px_-14px_rgba(0,0,0,0.45)]"
-        style={{ background: "#1a3a2a", borderBottom: "1px solid rgba(255,255,255,0.10)", height: 62 }}
-      >
-        <div className="relative flex w-full items-stretch">
-          <Link
-            href="/"
-            aria-label="홈 피드로"
-            className="flex flex-1 flex-col items-center justify-center gap-0.5 py-2 no-underline hover:bg-white/10 transition-colors"
-            style={{ color: "#f4f0e7" }}
-          >
-            <ChevronLeft className="w-4 h-4" aria-hidden="true" />
-            <span className="text-[10px] font-semibold leading-tight">뒤로</span>
-          </Link>
+      {/* 🔴 여기 있던 「모바일 상단 섹션 네비」(다크 그린 #1a3a2a · 62px · sticky top-0 z-40)는
+          2026-08-17에 **제거했다. 되살리지 마라 — 근거는 실측이다.**
 
-          {/* 현재 계산기 — 펼치면 8종 전체 */}
-          <details
-            ref={(el) => { calcNavRefs.current[0] = el; }}
-            onToggle={(e) => { if (e.currentTarget.open) closeCalcPanels(e.currentTarget); }}
-            className="group/calc flex-1 min-w-0"
-          >
-            <summary
-              className="flex h-full flex-col items-center justify-center gap-0.5 px-1 py-2 cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-white/10 group-open/calc:bg-white/10 transition-colors"
-              style={{ color: "#f4f0e7" }}
-            >
-              <Calculator className="w-4 h-4 flex-shrink-0" aria-hidden="true" />
-              <span className="flex max-w-full items-center gap-0.5 text-[10px] font-semibold leading-tight">
-                <span className="min-w-0 truncate">{tab.label}</span>
-                <ChevronDown className="w-2.5 h-2.5 flex-shrink-0 transition-transform duration-200 group-open/calc:rotate-180" aria-hidden="true" />
-              </span>
-            </summary>
-            <div className="absolute inset-x-0 top-full z-10 mt-1.5 max-h-[62vh] overflow-y-auto overscroll-contain rounded-xl bg-card border border-border shadow-xl overflow-hidden">
-              {TABS.map(t => (
-                <button
-                  key={t.id}
-                  onClick={(e) => {
-                    setActive(t.id);
-                    (e.currentTarget.closest("details") as HTMLDetailsElement | null)?.removeAttribute("open");
-                  }}
-                  className={`flex w-full items-center gap-2.5 px-3 py-2.5 text-left border-b border-border/50 last:border-0 transition-colors ${
-                    active === t.id ? "bg-primary/10" : "hover:bg-primary/5"
-                  }`}
-                >
-                  <span className="flex-shrink-0 text-primary">{t.icon}</span>
-                  <span className="min-w-0 flex-1">
-                    <span className="block text-[12px] font-bold leading-tight text-foreground">{t.label}</span>
-                    <span className="block text-[10px] leading-tight text-muted-foreground">{t.sub}</span>
-                  </span>
-                </button>
-              ))}
-            </div>
-          </details>
+          그 바는 2026-08-04(`0b3f311b`)에 「바로가기로 계산기에 왔는데 상단 네비가 없다」는
+          지적으로 만들었고, 그날 검증은 옳았다("스크롤 후 top=0 고정").
+          그런데 **2026-08-05(`31689bd4`)에 hub-shell 헤더에 모바일 가로 칩바가 들어가면서
+          헤더가 68px → 100px가 됐다.** 헤더도 sticky top-0이고 z-50이라,
+          이 바(z-40)는 그 뒤로 완전히 숨었다. 아무도 재검증하지 않았다.
 
-          {/* 바로가기 — 계산기는 현재 페이지라 목록에서 뺀다 */}
-          <details
-            ref={(el) => { calcNavRefs.current[1] = el; }}
-            onToggle={(e) => { if (e.currentTarget.open) closeCalcPanels(e.currentTarget); }}
-            className="group/go flex-1 min-w-0"
-          >
-            <summary
-              className="flex h-full flex-col items-center justify-center gap-0.5 px-1 py-2 cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-white/10 group-open/go:bg-white/10 transition-colors"
-              style={{ color: "#e9c766" }}
-            >
-              <Zap className="w-4 h-4 flex-shrink-0" aria-hidden="true" />
-              <span className="flex max-w-full items-center gap-0.5 text-[10px] font-semibold leading-tight">
-                <span className="min-w-0 truncate">바로가기</span>
-                <ChevronDown className="w-2.5 h-2.5 flex-shrink-0 transition-transform duration-200 group-open/go:rotate-180" aria-hidden="true" />
-              </span>
-            </summary>
-            <div className="absolute inset-x-0 top-full z-10 mt-1.5 rounded-xl bg-card border border-border shadow-xl overflow-hidden">
-              {([
-                { href: "/tournaments",   Icon: Trophy,     label: "대회 일정",      desc: "국내외 홀덤 대회" },
-                { href: "/win-rate-quiz", Icon: TrendingUp, label: "승률 시뮬레이터", desc: "핸드별 승률 확인" },
-                { href: "/hand-chart",    Icon: LayoutGrid, label: "핸드 차트",      desc: "포지션별 오픈 범위" },
-                { href: "/blog",          Icon: BookOpen,   label: "전체 글",        desc: "홀덤 전략 블로그" },
-              ] as const).map(({ href, Icon, label, desc }) => (
-                <Link
-                  key={href}
-                  href={href}
-                  className="flex items-center gap-2.5 px-3 py-2.5 no-underline border-b border-border/50 last:border-0 hover:bg-primary/5 transition-colors"
-                >
-                  <Icon className="w-4 h-4 flex-shrink-0 text-primary" aria-hidden="true" />
-                  <span className="min-w-0 flex-1">
-                    <span className="block text-[12px] font-bold leading-tight text-foreground">{label}</span>
-                    <span className="block text-[10px] leading-tight text-muted-foreground">{desc}</span>
-                  </span>
-                  <ChevronRight className="w-3.5 h-3.5 flex-shrink-0 text-muted-foreground/50" aria-hidden="true" />
-                </Link>
-              ))}
-            </div>
-          </details>
-        </div>
-      </div>
+          2026-08-17 라이브 실측(390×844) — scrollY=1200에서:
+            헤더 top 0~100 (z-50) · 이 바 top 0~62 (z-40) → **가시 0px**
+          즉 진입 시 62px를 먹고 톤(크림 라이트)을 깨면서, 의도한 sticky 네비 역할은
+          **한 번도 못 하고 있었다.**
+
+          기능은 이미 3중으로 대체돼 있다:
+            「뒤로」·「바로가기」 → 헤더 가로 칩바(`hubPagesFor` 12링크) + 하단 전역 탭바
+            「현재 계산기 ▾」   → 바로 아래 8탭 그리드(진입 시 한눈에 보인다)
+          → 잃는 기능 0. 되살리려면 **먼저 헤더 높이와 z-index부터 다시 재라.** */}
 
       {/* Calculator Area */}
       <section className="max-w-5xl mx-auto px-4 sm:px-6 py-5 sm:py-10">
