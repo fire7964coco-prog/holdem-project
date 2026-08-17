@@ -202,7 +202,7 @@ Paradise City bukan kasino yang berdiri sendiri — ini adalah ==**resor terpadu
 **Aturan venue yang perlu diketahui:**
 - Dress code: dilarang sandal jepit, dilarang piyama
 - Dilarang membawa kamera atau memotret di dalam kasino
-- ==r:Warga negara Korea tidak boleh masuk== — Anda perlu paspor non-Korea di pintu masuk
+- ==r:Warga negara Korea tanpa izin tinggal tetap di luar negeri tidak boleh masuk== — yang lain cukup menunjukkan paspor di pintu masuk
 - Usia: 19+ dengan ID
 
 ---
@@ -366,9 +366,9 @@ Dibanding EPT Barcelona (Main ~€5.300) atau WPT Australia (Main ~AUD $5.000), 
 ==r:Ajukan K-ETA sebelum Anda memesan tiket.== Biasanya instan tapi cek 2 minggu sebelumnya di [k-eta.go.kr](https://www.k-eta.go.kr).
 
 **Masuk kasino (Paradise City):**
-- Wajib paspor non-Korea yang valid
+- Wajib paspor yang valid
 - Usia 19+
-- ==r:Warga negara Korea dilarang secara hukum — tanpa pengecualian==
+- ==r:Warga negara Korea tanpa izin tinggal tetap di luar negeri tidak boleh masuk==
 - Warga Korea perantauan (penduduk tetap di luar negeri) boleh masuk dengan paspor Korea + green card atau surat keterangan emigrasi
 
 ---

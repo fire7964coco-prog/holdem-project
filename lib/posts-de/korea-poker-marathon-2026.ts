@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Koreas beste Herbstmarathons (Chuncheon 25. Okt, JTBC Seoul 1. Nov, Garmin Run 15. Nov) treffen auf perfektes Laufwetter – für 2026 ist allerdings nur noch der JTBC Seoul offen, Chuncheon und Garmin Run haben im Juli geschlossen. Das Paradise City Casino nahe dem Flughafen Incheon bietet Cash Games – nur für Ausländer, 10 Min. vom Terminal. Eine Reise deckt beides ab.",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-08-15",
+  updated: "2026-08-17",
   keepImagesInBody: true,
   readTime: "14 Min.",
   emoji: "🏃",
@@ -206,7 +206,7 @@ Hier wird der Kalender interessant. Drei Poker-Festivals laufen an koreanischen 
 
 - **Garantie:** ==g:$3,5M+ GTD gesamt über 136 Trophy-Events== (Main Event: Buy-in ==**KRW 2,7 Mio.**== ≈ $1.800, ==g:KRW 2,2 Mrd. GTD==)
 - **Vollständiger Zeitplan:** Veröffentlicht – 136 Events über 13 Tage · [theasianpokertour.com](https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/info)
-- Nur Ausländer · 19+ · gültiger nicht-koreanischer Reisepass
+- Nur Ausländer · 19+ · gültiger Reisepass (Auslandskoreaner: koreanischer Pass + Green Card oder Auswanderungsbescheinigung)
 
 ==g:APT Jeju endet am 7. Okt – der Chuncheon Marathon ist am 25. Okt. 18 Tage dazwischen.== Von Jeju nach Seoul fliegen, ausruhen und erkunden, dann laufen.
 
@@ -250,8 +250,9 @@ Während die Marathons von Okt–Nov laufen, läuft ==**Paradise City Casino**==
 - Lage: Incheon, direkt neben dem Flughafen Incheon International
 - Kostenloser Shuttle: Terminal 1 (Gates 3C & 14C), alle 30 Min., ~10 Min. Fahrt
 - Hotel: Hotel Paradise, 5 Sterne, vor Ort
-- ==r:Nur Ausländer – koreanische Staatsbürger dürfen nicht rein, keine Ausnahmen==
-- Alter: 19+ mit gültigem nicht-koreanischem Reisepass
+- ==r:Nur Ausländer – koreanische Staatsbürger ohne Wohnsitz im Ausland dürfen nicht rein==
+- Auslandskoreaner (Daueraufenthalt im Ausland) dürfen mit koreanischem Pass + Green Card oder Auswanderungsbescheinigung rein
+- Alter: 19+ mit gültigem Reisepass
 - Spiele: No-Limit Hold'em Cash, andere Tischspiele, Slots
 - Spa und Sauna vor Ort – relevant, wenn du gerade 42K gelaufen bist
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Poker-Positionen sind Sitznamen, gemessen vom Dealer-Button – UTG, Lojack, Hijack, Cutoff, Button und die Blinds – und sie wandern jede Hand einen Sitz im Uhrzeigersinn. Preflop handelt UTG zuerst und der Big Blind zuletzt; postflop handelt der Small Blind zuerst und der Button zuletzt. Physische Sitznummern bewegen sich nie; Positionen schon.",
   category: "strategy",
   date: "2026-06-13",
-  updated: "2026-08-10",
+  updated: "2026-08-17",
   masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "12 Min.",
@@ -221,7 +221,7 @@ A. Der Small Blind handelt auf jeder Street vor dem Big Blind. Preflop handeln b
 
 **Q. Wie viele Positionen gibt es beim 6-Max-Poker?**
 
-A. Sechs: UTG (auch Lojack genannt), Hijack, Cutoff, Button, Small Blind und Big Blind. Verglichen mit einem 9-Max-Tisch existieren UTG+1, UTG+2 und ein Middle-Sitz schlicht nicht – gestrichen wird zuerst die Early Position, also hat jeder verbleibende Sitz vor den Blinds weniger Gegner hinter sich als sein Full-Ring-Namensvetter – Button, Small Blind und Big Blind bleiben unverändert.
+A. Sechs: UTG (auch Lojack genannt), Hijack, Cutoff, Button, Small Blind und Big Blind. Verglichen mit einem 9-Max-Tisch existieren UTG+1, UTG+2 und ein Middle-Sitz schlicht nicht – gestrichen wird zuerst die Early Position. Hijack, Cutoff, Button, Small Blind und Big Blind behalten dabei ihren Abstand zum Button und damit exakt gleich viele Gegner hinter sich wie im Full Ring. Was sich verschiebt, ist der erste Sitz: 6-Max-UTG sitzt dort, wo im Full Ring der Lojack sitzt, und hat fünf Gegner statt acht.
 
 **Q. Ändern sich Poker-Positionen jede Hand?**
 

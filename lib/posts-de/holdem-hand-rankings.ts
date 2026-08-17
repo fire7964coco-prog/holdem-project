@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Die Reihenfolge der Pokerhände von der besten zur schlechtesten lautet: Royal Flush, Straight Flush, Vierling, Full House, Flush, Straße, Drilling, Zwei Paare, Paar und High Card.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-08-16",
+  updated: "2026-08-17",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "14 Min.",
@@ -401,7 +401,7 @@ A. Ja. Ein Straight Flush (#2) schlägt einen Vierling (#3) – fünf Karten in 
 
 **Q. Was schlägt vier Asse?**
 
-A. Nur ein Straight Flush – und der kann hier nie ein Royal Flush sein, weil alle vier Asse schon vergeben sind. Vier Asse sind der höchstmögliche Vierling, also kann dich kein anderer Vierling überholen. Liegen alle vier Asse auf dem Board, entscheidet die höchste fünfte Karte – wer eine Hole Card hält, die höher ist als die fünfte Board-Karte, gewinnt; sonst wird geteilt.
+A. Nur ein Straight Flush – und der kann sehr wohl ein Royal Flush sein. In Hold'em gehört das Board allen, dein Gegner darf also dasselbe Ass benutzen, das deinen Vierling vollmacht: Auf A♠ A♥ A♦ K♠ Q♠ hältst du A♣ und hast vier Asse – J♠ 10♠ schlägt dich trotzdem mit A♠ K♠ Q♠ J♠ 10♠. Ein anderer Vierling holt dich dagegen nie ein, denn vier Asse sind der höchstmögliche. Liegen alle vier Asse auf dem Board, entscheidet die höchste fünfte Karte – wer eine Hole Card hält, die höher ist als die fünfte Board-Karte, gewinnt; sonst wird geteilt.
 
 **Q. Was ist höher – Pik oder Kreuz beim Poker?**
 

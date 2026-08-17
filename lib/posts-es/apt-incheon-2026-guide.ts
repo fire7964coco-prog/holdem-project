@@ -202,7 +202,7 @@ Paradise City no es un casino independiente — es un ==**resort integrado const
 **Normas de la sede que conviene saber:**
 - Código de vestimenta: nada de chanclas, nada de pijamas
 - Prohibido hacer fotos o vídeos dentro del casino
-- ==r:Los ciudadanos coreanos no pueden entrar== — necesitarás tu pasaporte no coreano en la puerta
+- ==r:Los ciudadanos coreanos sin residencia en el extranjero no pueden entrar== — los demás muestran su pasaporte en la puerta
 - Edad: 19+ con documento
 
 ---
@@ -360,9 +360,9 @@ Comparado con el EPT Barcelona (~€5,300 el Main) o el WPT Australia (~AUD $5,0
 ==r:Comprueba tu situación de K-ETA antes de reservar.== 22 países (EE. UU., Reino Unido, UE, Australia, Japón y más) están exentos hasta el 31 de diciembre de 2026 y solo presentan la e-Arrival Card gratuita antes de aterrizar; el resto la solicita en [k-eta.go.kr](https://www.k-eta.go.kr) (₩10,000, normalmente instantánea — deja 2 semanas de margen por seguridad).
 
 **Entrada al casino (Paradise City):**
-- Pasaporte no coreano válido obligatorio
+- Pasaporte válido obligatorio
 - Edad 19+
-- ==r:Los ciudadanos coreanos tienen la entrada legalmente prohibida — sin excepciones==
+- ==r:Los ciudadanos coreanos sin residencia en el extranjero no pueden entrar==
 - Los coreanos residentes en el extranjero (residentes permanentes fuera) pueden entrar con pasaporte coreano + green card o certificado de emigración
 
 ---

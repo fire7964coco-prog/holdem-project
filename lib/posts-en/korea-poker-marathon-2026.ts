@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Korea's top autumn marathons (Chuncheon Oct 25, JTBC Seoul Nov 1, Garmin Run Nov 15) align with perfect running weather. Paradise City Casino near Incheon Airport runs year-round cash games — foreigners only, 10 min from the terminal. One trip covers both.",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-08-15",
+  updated: "2026-08-17",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏃",
@@ -206,7 +206,7 @@ This is where the calendar gets interesting. Three poker festivals run at Korean
 
 - **Guarantee:** ==g:$3.5M+ total GTD across 136 trophy events== (Main Event: ==**KRW 2.7M**== buy-in ≈ $1,800, ==g:KRW 2.2B GTD==)
 - **Full schedule:** Released — 136 events over 13 days · [theasianpokertour.com](https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/info)
-- Foreigners only · 19+ · valid non-Korean passport
+- Foreigners only · 19+ · valid passport (overseas Koreans: Korean passport + green card or emigration certificate)
 
 ==g:APT Jeju ends Oct 7 — Chuncheon Marathon is Oct 25. 18 days between them.== Fly Jeju → Seoul, rest and explore, then race.
 
@@ -250,8 +250,9 @@ While the marathons run Oct–Nov, ==**Paradise City Casino**== runs year-round.
 - Location: Incheon, directly adjacent to Incheon International Airport
 - Free shuttle: Terminal 1 (Gates 3C & 14C), every 30 min, ~10 min ride
 - Hotel: Hotel Paradise, 5-star, on-site
-- ==r:Foreigners only — Korean nationals cannot enter, no exceptions==
-- Age: 19+ with valid non-Korean passport
+- ==r:Foreigners only — Korean nationals without overseas residency cannot enter==
+- Overseas Koreans (permanent residents abroad) may enter with Korean passport + green card or emigration certificate
+- Age: 19+ with valid passport
 - Games: No-Limit Hold'em cash, other table games, slots
 - Spa and sauna on-site — relevant if you've just run 42K
 

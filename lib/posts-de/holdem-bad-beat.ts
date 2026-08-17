@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ein Bad Beat ist, wenn du dein Geld als klarer Favorit reinbekommst – meist mit 80% oder mehr – und verlierst, weil dein Gegner eine Glückskarte trifft und dich aussaugt. Anders als beim Cooler warst du die ganze Zeit vorne; das Deck hat dich erst am Ende verraten. Es schmerzt, aber Bad Beats sind eigentlich ein Zeichen, dass du in einem profitablen Spiel sitzt.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-08-11",
+  updated: "2026-08-17",
   masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "11 Min.",
@@ -141,11 +141,11 @@ Ein wichtiger Vorbehalt: **jedes Casino und jede Pokerseite legt ihren eigenen Q
 ## Welcher ist der berühmteste Bad Beat der Pokergeschichte?
 
 > **Kurze Antwort**
-> Der **Vierling Asse gegen Royal Flush** beim Main Event der World Series of Poker **2008**. Motoyuki Mabuchi hielt A♣ A♠, Justin Phillips K♦ J♦, und das Board endete auf ==A♥ 9♣ Q♦ 10♦ A♦==. Der River A♦ gab Mabuchi sein viertes Ass – und schenkte Phillips im selben Moment den Royal Flush. Die eine Karte, die den Vierling machte, war die eine Karte, die ihn schlagen konnte.
+> Der **Vierling Asse gegen Royal Flush** beim Main Event der World Series of Poker **2008**. Motoyuki Mabuchi hielt A♣ A♠, Justin Phillips K♦ J♦, und das Board endete auf ==A♥ 9♣ Q♦ 10♦ A♦==. Der River A♦ gab Mabuchi sein viertes Ass – und schenkte Phillips im selben Moment den Royal Flush. Die eine Karte, die diesen Vierling vollendete, war zugleich die Karte, die ihn schlug.
 
 Wenn du dich über deine eigenen Beats besser fühlen willst, denk daran, dass die schlimmsten auf den größten Bühnen passieren. Mabuchi hielt damit eine Hand, die überhaupt nur noch von einem Straight Flush geschlagen werden kann – und verlor *trotzdem*. Die Kameras erreichten den Tisch erst am River, weil Ray Romano sich dazugesetzt hatte; so wurde einer der berühmtesten Beats der Pokergeschichte überhaupt aufgezeichnet.
 
-Das ist die Obergrenze des Bad-Beat-Schmerzes: nicht ein 80%-Favorit, der untergeht, sondern *vier Asse* – eine Hand, die du ein Leben lang spielen kannst, ohne sie je zu verlieren – geschlagen vom einzigen Blatt, das höher ist. Es lohnt sich, das in der Hinterhand zu haben, wenn das nächste Mal deine Asse geknackt werden: so schlecht das Deck dich auch behandelt hat, jemand hat einmal mit einem Vierling Asse verloren.
+Das ist die Obergrenze des Bad-Beat-Schmerzes: nicht ein 80%-Favorit, der untergeht, sondern *vier Asse* – eine Hand, die du ein Leben lang spielen kannst, ohne sie je zu verlieren – geschlagen vom höchsten Blatt, das es gibt. Es lohnt sich, das in der Hinterhand zu haben, wenn das nächste Mal deine Asse geknackt werden: so schlecht das Deck dich auch behandelt hat, jemand hat einmal mit einem Vierling Asse verloren.
 
 ---
 

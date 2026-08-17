@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "As melhores maratonas de outono da Coreia (Chuncheon 25 out, JTBC Seoul 1 nov, Garmin Run 15 nov) coincidem com o clima perfeito para correr. O Paradise City Casino, perto do Aeroporto de Incheon, tem cash games o ano todo — só para estrangeiros, a 10 min do terminal. Uma viagem cobre tudo.",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-08-15",
+  updated: "2026-08-17",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏃",
@@ -206,7 +206,7 @@ Nota: o calor do verão coreano atinge o pico em agosto. Setembro ainda é quent
 
 - **Garantido:** ==g:$3.5M+ total GTD ao longo de 136 eventos com troféu== (Main Event: buy-in de ==**KRW 2,7 mi**== ≈ $1.800, ==g:KRW 2,2 bi GTD==)
 - **Programação completa:** já divulgada — 136 eventos em 13 dias · [theasianpokertour.com](https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/info)
-- Só para estrangeiros · 19+ · passaporte não coreano válido
+- Só para estrangeiros · 19+ · passaporte válido (coreanos no exterior: passaporte coreano + green card ou certificado de emigração)
 
 ==g:O APT Jeju termina em 7 out — a Maratona de Chuncheon é em 25 out. 18 dias entre eles.== Voe de Jeju → Seul, descanse e explore, depois corra.
 
@@ -250,8 +250,9 @@ Enquanto as maratonas rolam entre out–nov, o ==**Paradise City Casino**== func
 - Localização: Incheon, diretamente colado ao Aeroporto Internacional de Incheon
 - Shuttle gratuito: Terminal 1 (Portões 3C e 14C), a cada 30 min, ~10 min de viagem
 - Hotel: Hotel Paradise, 5 estrelas, no local
-- ==r:Só para estrangeiros — cidadãos coreanos não podem entrar, sem exceções==
-- Idade: 19+ com passaporte não coreano válido
+- ==r:Só para estrangeiros — cidadãos coreanos sem residência no exterior não podem entrar==
+- Coreanos no exterior (residentes permanentes fora do país) podem entrar com passaporte coreano + green card ou certificado de emigração
+- Idade: 19+ com passaporte válido
 - Jogos: cash de No-Limit Hold'em, outros jogos de mesa, slots
 - Spa e sauna no local — relevante se você acabou de correr 42K
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Maraton musim gugur terbaik Korea (Chuncheon 25 Okt, JTBC Seoul 1 Nov, Garmin Run 15 Nov) berpadu dengan cuaca lari yang sempurna. Paradise City Casino dekat Bandara Incheon menggelar cash game sepanjang tahun — khusus warga asing, 10 menit dari terminal. Satu perjalanan mencakup keduanya.",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-08-15",
+  updated: "2026-08-17",
   keepImagesInBody: true,
   readTime: "14 mnt",
   emoji: "🏃",
@@ -206,7 +206,7 @@ Di sinilah kalendernya jadi menarik. Tiga festival poker berlangsung di venue-ve
 
 - **Garansi:** ==g:$3.5M+ total GTD di 136 event trofi== (Main Event: buy-in ==**KRW 2,7 juta**== ≈ $1.800, ==g:KRW 2,2 miliar GTD==)
 - **Jadwal lengkap:** Sudah dirilis — 136 event selama 13 hari · [theasianpokertour.com](https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/info)
-- Khusus warga asing · 19+ · paspor non-Korea yang berlaku
+- Khusus warga asing · 19+ · paspor yang berlaku (warga Korea perantauan: paspor Korea + green card atau surat keterangan emigrasi)
 
 ==g:APT Jeju berakhir 7 Okt — Chuncheon Marathon adalah 25 Okt. Ada jeda 18 hari di antara keduanya.== Terbang Jeju → Seoul, istirahat dan berkeliling, lalu berlomba.
 
@@ -250,8 +250,9 @@ Sementara maraton berlangsung Okt–Nov, ==**Paradise City Casino**== beroperasi
 - Lokasi: Incheon, tepat bersebelahan dengan Bandara Internasional Incheon
 - Antar-jemput gratis: Terminal 1 (Gerbang 3C & 14C), setiap 30 menit, perjalanan ~10 menit
 - Hotel: Hotel Paradise, bintang 5, di lokasi
-- ==r:Khusus warga asing — warga negara Korea tidak dapat masuk, tanpa pengecualian==
-- Usia: 19+ dengan paspor non-Korea yang berlaku
+- ==r:Khusus warga asing — warga negara Korea tanpa izin tinggal tetap di luar negeri tidak boleh masuk==
+- Warga Korea perantauan (penduduk tetap di luar negeri) boleh masuk dengan paspor Korea + green card atau surat keterangan emigrasi
+- Usia: 19+ dengan paspor yang berlaku
 - Permainan: cash game No-Limit Hold'em, permainan meja lain, slot
 - Spa dan sauna di lokasi — relevan jika Anda baru saja berlari 42K
 

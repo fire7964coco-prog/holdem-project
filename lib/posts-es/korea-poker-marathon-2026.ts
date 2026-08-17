@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Los grandes maratones de otoño de Corea (Chuncheon 25 oct, JTBC Seúl 1 nov, Garmin Run 15 nov) coinciden con el clima ideal para correr. El casino Paradise City, junto al aeropuerto de Incheon, ofrece cash games todo el año — solo extranjeros, a 10 min de la terminal. Un viaje cubre ambas cosas.",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-08-15",
-  masterUpdated: "2026-08-15",
+  updated: "2026-08-17",
+  masterUpdated: "2026-08-17",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏃",
@@ -207,7 +207,7 @@ Aquí es donde el calendario se pone interesante. Tres festivales de póker se c
 
 - **Garantizado:** ==g:$3.5M+ garantizado total (GTD) repartido en 136 eventos con trofeo== (Main Event: buy-in de ==**KRW 2,7M**== ≈ $1.800, ==g:KRW 2.200M GTD==)
 - **Calendario completo:** publicado — 136 eventos en 13 días · [theasianpokertour.com](https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/info)
-- Solo extranjeros · +19 · pasaporte no coreano válido
+- Solo extranjeros · +19 · pasaporte válido (coreanos residentes en el extranjero: pasaporte coreano + green card o certificado de emigración)
 
 ==g:El APT Jeju acaba el 7 oct — el Maratón de Chuncheon es el 25 oct. 18 días entre ambos.== Vuela de Jeju a Seúl, descansa y explora, y luego corre.
 
@@ -251,8 +251,9 @@ Mientras los maratones se corren en oct–nov, ==**el casino Paradise City**== a
 - Ubicación: Incheon, pegado directamente al Aeropuerto Internacional de Incheon
 - Shuttle gratuito: Terminal 1 (puertas 3C y 14C), cada 30 min, ~10 min de trayecto
 - Hotel: Hotel Paradise, 5 estrellas, en el propio complejo
-- ==r:Solo extranjeros — los ciudadanos coreanos no pueden entrar, sin excepciones==
-- Edad: +19 con pasaporte no coreano válido
+- ==r:Solo extranjeros — los ciudadanos coreanos sin residencia en el extranjero no pueden entrar==
+- Los coreanos residentes en el extranjero (residentes permanentes fuera) pueden entrar con pasaporte coreano + green card o certificado de emigración
+- Edad: +19 con pasaporte válido
 - Juegos: cash de No-Limit Hold'em, otras mesas de casino, tragaperras
 - Spa y sauna en el complejo — relevante si acabas de correr 42K
 

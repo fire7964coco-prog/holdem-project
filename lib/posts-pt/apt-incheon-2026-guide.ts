@@ -202,7 +202,7 @@ O Paradise City não é um cassino isolado — é um ==**resort integrado constr
 **Regras do local pra você saber:**
 - Dress code: sem chinelo, sem pijama
 - Sem câmeras ou fotografia dentro do cassino
-- ==r:Cidadãos coreanos não podem entrar== — você vai precisar do seu passaporte não coreano na porta
+- ==r:Cidadãos coreanos sem residência no exterior não podem entrar== — os demais mostram o passaporte na porta
 - Idade: 19+ com documento
 
 ---
@@ -360,9 +360,9 @@ Comparado ao EPT Barcelona (Main ~€5.300) ou ao WPT Australia (Main ~AUD $5.00
 ==r:Solicite o K-ETA antes de fechar as passagens.== Costuma ser instantâneo, mas confira com 2 semanas de antecedência em [k-eta.go.kr](https://www.k-eta.go.kr).
 
 **Entrada no cassino (Paradise City):**
-- Passaporte não coreano válido obrigatório
+- Passaporte válido obrigatório
 - Idade 19+
-- ==r:Cidadãos coreanos são legalmente barrados — sem exceções==
+- ==r:Cidadãos coreanos sem residência no exterior não podem entrar==
 - Coreanos no exterior (residentes permanentes fora do país) podem entrar com passaporte coreano + green card ou certificado de emigração
 
 ---
