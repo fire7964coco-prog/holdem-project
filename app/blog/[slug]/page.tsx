@@ -362,8 +362,10 @@ export default function Page({ params }: { params: { slug: string } }) {
   // 토너먼트 레이아웃은 예나 지금이나 본문을 쪼개지 않는다(퀴즈 위젯이 없다) → 통째로 렌더.
   const bodyParts =
     post.layout !== "tournament-guide" && contentForClient.includes(":::quiz:::")
-      ? contentForClient.split(/^:::quiz:::$/m).map(renderMarkdown)
-      : [renderMarkdown(contentForClient)];
+      // 🔴 `.map(renderMarkdown)` 로 쓰지 마라 — map 이 2번째 인자로 인덱스를 넘겨
+      //    renderMarkdown 의 locale 자리에 0·1 이 들어간다. 반드시 화살표로 감싼다.
+      ? contentForClient.split(/^:::quiz:::$/m).map((c) => renderMarkdown(c, "ko"))
+      : [renderMarkdown(contentForClient, "ko")];
 
   return (
     <>

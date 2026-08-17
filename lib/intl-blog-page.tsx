@@ -168,7 +168,8 @@ export function IntlBlogArticle({ locale, slug }: { locale: SecondaryLocale; slu
   // ★ 마크다운 렌더링은 서버에서. 클라이언트에는 content를 넘기지 않는다(원문+HTML 이중 적재 방지).
   const { content: _rawContent, ...postMeta } = post;
   const headings = extractHeadings(post.content);
-  const bodyHtml = renderMarkdown(post.content.replace(/^:::quiz:::$/m, ""));
+  // locale 은 `:::rangechart:::` 의 라벨·주석 선택에만 쓰인다(lib/range-chart.ts).
+  const bodyHtml = renderMarkdown(post.content.replace(/^:::quiz:::$/m, ""), locale);
 
   return (
     <>

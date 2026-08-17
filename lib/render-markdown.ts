@@ -11,8 +11,14 @@
  * 2026-08-02 blog-post-client.tsx(93~590행)에서 **한 글자도 바꾸지 않고** 옮겨왔다.
  */
 import { slugify } from "./blog-headings";
+import { RANGE_CHART_SEATS, rangeChartCopy } from "./range-chart";
 
-export function renderMarkdown(content: string): string {
+/**
+ * @param locale `:::rangechart:::` 의 라벨·주석을 고르는 데만 쓴다. 생략하면 EN.
+ *   🔴 **`.map(renderMarkdown)` 로 호출하지 마라** — map 이 2번째 인자로 «배열 인덱스»를
+ *      넘기므로 locale 자리에 0, 1 이 들어간다. 반드시 `.map((c) => renderMarkdown(c, locale))`.
+ */
+export function renderMarkdown(content: string, locale?: string): string {
   /**
    * 첫 번째 이미지(LCP 후보)는 eager + fetchpriority="high"로 우선 로드,
    * 그 이후 이미지는 모두 loading="lazy" 처리.
@@ -341,32 +347,24 @@ export function renderMarkdown(content: string): string {
     .replace(
       /^:::rangechart:::$/gm,
       () => {
-        const positions = [
-          { name: 'BTN',  pct: 40, note: 'Best seat — acts last every street', color: 'rgba(212,175,55,1)',   bg: 'rgba(212,175,55,0.18)' },
-          { name: 'SB',   pct: 35, note: 'Wide range, but first to act postflop', color: 'rgba(139,92,246,0.9)', bg: 'rgba(139,92,246,0.14)' },
-          { name: 'BB',   pct: 40, note: 'Defend wide — already has equity in pot', color: 'rgba(99,179,237,0.9)',  bg: 'rgba(99,179,237,0.14)', label: '~40% def' },
-          { name: 'CO',   pct: 28, note: 'Only BTN behind — attack freely', color: 'rgba(212,175,55,0.8)',   bg: 'rgba(212,175,55,0.12)' },
-          { name: 'HJ',   pct: 20, note: 'Steal when early seats fold', color: 'rgba(212,175,55,0.6)',   bg: 'rgba(212,175,55,0.09)' },
-          { name: 'LJ',   pct: 16, note: 'Solid range; add suited connectors', color: 'rgba(212,175,55,0.45)',  bg: 'rgba(212,175,55,0.07)' },
-          { name: 'UTG',  pct: 12, note: 'Tightest seat — 8 players behind preflop', color: 'rgba(255,255,255,0.35)', bg: 'rgba(255,255,255,0.05)' },
-        ];
-        const rows = positions.map(p => {
-          const barW = `${p.pct}%`;
-          const label = (p as {label?: string}).label ?? `~${p.pct}%`;
+        // 값·문구의 단일 출처 = lib/range-chart.ts. 여기서 하드코딩하지 마라(그래서 본문과 갈라졌다).
+        const copy = rangeChartCopy(locale);
+        const rows = RANGE_CHART_SEATS.map(p => {
+          const seat = copy.seats[p.id];
           return (
             `<div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">` +
-            `<span style="width:36px;font-size:12px;font-weight:800;color:var(--foreground);flex-shrink:0">${p.name}</span>` +
+            `<span style="width:64px;font-size:12px;font-weight:800;color:var(--foreground);flex-shrink:0">${p.id}</span>` +
             `<div style="flex:1;background:rgba(255,255,255,0.06);border-radius:6px;height:24px;overflow:hidden;position:relative">` +
-            `<div style="width:${barW};height:100%;background:linear-gradient(90deg,${p.color},${p.bg});border-radius:6px;transition:width 0.3s"></div>` +
+            `<div style="width:${p.pct}%;height:100%;background:linear-gradient(90deg,${p.color},${p.bg});border-radius:6px;transition:width 0.3s"></div>` +
             `</div>` +
-            `<span style="width:52px;font-size:12px;font-weight:700;color:${p.color};text-align:right;flex-shrink:0">${label}</span>` +
-            `<span style="flex:1.2;font-size:11px;color:var(--muted-foreground);display:none" class="sm:inline">${p.note}</span>` +
+            `<span style="width:52px;font-size:12px;font-weight:700;color:${p.color};text-align:right;flex-shrink:0">~${p.pct}%</span>` +
+            `<span style="flex:1.2;font-size:11px;color:var(--muted-foreground);display:none" class="sm:inline">${seat.label} · ${seat.note}</span>` +
             `</div>`
           );
         }).join('');
         return (
           `<div style="margin:24px 0;padding:18px 20px 14px;background:rgba(255,248,210,0.06);border:1px solid rgba(255,240,180,0.25);border-radius:14px">` +
-          `<p style="font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--primary);margin:0 0 14px">Opening Range by Position — action folds to you</p>` +
+          `<p style="font-size:11px;font-weight:700;letter-spacing:0.1em;color:var(--primary);margin:0 0 14px">${copy.title}</p>` +
           rows +
           `</div>`
         );
