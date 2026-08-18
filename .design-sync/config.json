@@ -1,0 +1,65 @@
+{
+  "projectId": "69940ac5-3b13-4f4c-8b05-9431e175189a",
+  "pkg": "holdemmaster",
+  "globalName": "HoldemMaster",
+  "shape": "package",
+  "srcDir": "components",
+  "tsconfig": "./tsconfig.json",
+  "cssEntry": ".design-sync/.cache/compiled.css",
+  "componentSrcMap": {
+    "BrushDefs": "components/brush-defs.tsx",
+    "CardThumb": "components/card-thumb.tsx",
+    "LegalPage": "components/legal-page.tsx",
+    "OmahaTableDiagram": "components/OmahaTableDiagram.tsx",
+    "PokerOddsCalculator": "components/poker-odds-calculator.tsx",
+    "PokerTableDiagram": "components/PokerTableDiagram.tsx",
+    "RankingTable": "components/ranking-table.tsx",
+    "ReadingProgressBar": "components/reading-progress-bar.tsx",
+    "SevenCardStudDiagram": "components/SevenCardStudDiagram.tsx",
+    "TableOfContents": "components/table-of-contents.tsx"
+  },
+  "guidelinesGlob": [
+    "docs/ux-layout-brief-2026-08-17.md"
+  ],
+  "extraFonts": [
+    ".design-sync/.cache/fonts.css"
+  ],
+  "runtimeFontPrefixes": [
+    "Apple SD Gothic Neo",
+    "Yu Gothic UI",
+    "Malgun Gothic",
+    "Segoe UI"
+  ],
+  "dtsPropsFor": {
+    "BrushDefs": "/* props 없음 — 본문 링크 붓칠에 쓰는 SVG <defs> 를 문서에 한 번 심는다 */",
+    "CardThumb": "/** 카드 그림을 고르는 포스트 slug. CARD_MAP 에 없으면 slug 해시로 폴백한다 */\n  slug: string;\n  /** 크게(90px) 그릴지 — 목록 히어로용 */\n  featured?: boolean;",
+    "LegalPage": "eyebrow: React.ReactNode;\n  title: string;\n  lead: string;\n  /** 최종 수정일 (YYYY-MM-DD) */\n  updated: string;\n  /** 조항 위에 놓이는 자유 블록. `.legal-prose` 밖에 렌더된다 */\n  intro?: React.ReactNode;\n  children?: React.ReactNode;",
+    "LegalSection": "id: string;\n  title: string;\n  children?: React.ReactNode;",
+    "OmahaTableDiagram": "/** 보여 줄 스트리트 */\n  stage: \"blinds\" | \"preflop\" | \"flop\" | \"turn\" | \"river\" | \"showdown\";",
+    "PokerOddsCalculator": "/* props 없음 — 아웃츠/팟오즈 탭과 상태를 스스로 들고 있다 */",
+    "PokerTableDiagram": "/** 보여 줄 스트리트 */\n  stage: \"blinds\" | \"preflop\" | \"flop\" | \"turn\" | \"river\" | \"showdown\";",
+    "RankingTable": "/** 표의 접근성 라벨 겸 제목 */\n  name: string;\n  items: { name: string; description?: string }[];\n  /** 기본 Descending — 1위가 위 */\n  order?: \"Ascending\" | \"Descending\";",
+    "ReadingProgressBar": "/** 진행률을 잴 대상. 없으면 문서 전체 */\n  targetRef?: React.RefObject<HTMLElement>;\n  /** 아랍어 등 RTL 로케일에서 진행 방향을 뒤집는다 */\n  rtl?: boolean;",
+    "SevenCardStudDiagram": "/** 보여 줄 스트리트 */\n  stage: \"ante\" | \"third-street\" | \"fourth-street\" | \"fifth-street\" | \"sixth-street\" | \"seventh-street\";",
+    "TableOfContents": "/** 2개 미만이면 렌더하지 않는다 */\n  sections: { id: string; title: string; level?: 2 | 3 }[];"
+  },
+  "overrides": {
+    "PokerTableDiagram": {
+      "cardMode": "column"
+    },
+    "OmahaTableDiagram": {
+      "cardMode": "column"
+    },
+    "SevenCardStudDiagram": {
+      "cardMode": "column"
+    },
+    "RankingTable": {
+      "cardMode": "column"
+    },
+    "PokerOddsCalculator": {
+      "cardMode": "single",
+      "primaryStory": "Default"
+    }
+  },
+  "readmeHeader": ".design-sync/conventions.md"
+}

@@ -27,3 +27,8 @@ commit-msg.txt
 
 # hookify 로컬 규칙 (.local = 커밋하지 않는다)
 .claude/*.local.md
+.ds-sync/
+ds-bundle/
+.design-sync/.cache/
+.design-sync/learnings/
+.design-sync/node_modules
