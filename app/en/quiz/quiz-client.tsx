@@ -27,8 +27,8 @@ function CardTile({ card, highlight, dim }: { card: Card; highlight?: boolean; d
     <div style={{
       width:48, height:68, background: dim ? '#111' : 'white',
       borderRadius:8, display:'inline-flex', alignItems:'center', justifyContent:'center', flexShrink:0,
-      border: highlight ? '2px solid #d4af37' : `1px solid ${dim ? '#333' : '#d1d5db'}`,
-      boxShadow: highlight ? '0 0 14px rgba(212,175,55,0.55)' : '0 2px 8px rgba(0,0,0,0.45)',
+      border: highlight ? '2px solid rgb(var(--gold-dark-rgb))' : `1px solid ${dim ? '#333' : '#d1d5db'}`,
+      boxShadow: highlight ? '0 0 14px rgba(var(--gold-dark-rgb),0.55)' : '0 2px 8px rgba(0,0,0,0.45)',
       opacity: dim ? 0.3 : 1, transition:'all 0.25s',
     }}>
       <span style={{ fontSize:13, fontWeight:800, color: dim?'#444': isRed?'#dc2626':'#111827', lineHeight:1, letterSpacing:'-0.5px' }}>
@@ -39,7 +39,7 @@ function CardTile({ card, highlight, dim }: { card: Card; highlight?: boolean; d
 }
 
 function getGrade(s: number) {
-  if (s===10) return { label:"🏆 Perfect! Hand-ranking master", color:"#d4af37" };
+  if (s===10) return { label:"🏆 Perfect! Hand-ranking master", color:"rgb(var(--gold-dark-rgb))" };
   if (s>=8)   return { label:"🔥 Expert — great job",           color:"#22c55e" };
   if (s>=6)   return { label:"👍 Solid — almost there!",         color:"#60a5fa" };
   if (s>=4)   return { label:"📚 Keep practicing — try again",   color:"#f59e0b" };
@@ -102,12 +102,12 @@ export default function QuizEn() {
             <div className="flex gap-3 justify-center">
               <button onClick={handleCopy}
                 className="flex-1 py-3 rounded-xl font-bold text-sm border transition-all"
-                style={{ borderColor:'rgba(212,175,55,0.5)', color:'#d4af37', background:'rgba(212,175,55,0.08)' }}>
+                style={{ borderColor:'rgba(var(--gold-dark-rgb),0.5)', color:'rgb(var(--gold-dark-rgb))', background:'rgba(var(--gold-dark-rgb),0.08)' }}>
                 {copied ? 'Copied ✓' : 'Copy result 📋'}
               </button>
               <button onClick={restart}
                 className="flex-1 py-3 rounded-xl font-bold text-sm text-black hover:brightness-110 transition-all"
-                style={{ background:'#d4af37' }}>
+                style={{ background:'rgb(var(--gold-dark-rgb))' }}>
                 Try again 🔄
               </button>
             </div>
@@ -212,7 +212,7 @@ export default function QuizEn() {
             {phase==='answered' && (
               <motion.button initial={false} animate={{ opacity:1, y:0 }} onClick={next}
                 className="w-full py-4 rounded-xl font-black text-base text-black transition-all hover:brightness-110 active:scale-[0.98]"
-                style={{ background:'#d4af37' }}>
+                style={{ background:'rgb(var(--gold-dark-rgb))' }}>
                 {qNum>=TOTAL ? 'See results 🏆' : `Next → (${qNum+1}/${TOTAL})`}
               </motion.button>
             )}

@@ -38,8 +38,8 @@ function ProgressBar({ value, max, label }: { value: number; max: number; label:
           style={{
             width: `${pct}%`,
             background: value >= max
-              ? "linear-gradient(90deg,#d4af37,#f0d060)"
-              : "rgba(212,175,55,0.35)",
+              ? "linear-gradient(90deg,rgb(var(--gold-dark-rgb)),#f0d060)"
+              : "rgba(var(--gold-dark-rgb),0.35)",
           }}
         />
       </div>
@@ -73,17 +73,17 @@ function NumberBall({
         flexShrink: 0,
         cursor: disabled ? "default" : "pointer",
         background: isMatch
-          ? "linear-gradient(135deg,#d4af37,#f0d060)"
+          ? "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)"
           : selected
-          ? "rgba(212,175,55,0.85)"
+          ? "rgba(var(--gold-dark-rgb),0.85)"
           : SURFACE,
         color: isMatch || selected ? BG : TEXT_SECONDARY,
         border: winning && !selected
-          ? "2px solid rgba(212,175,55,0.6)"
+          ? "2px solid rgba(var(--gold-dark-rgb),0.6)"
           : selected
-          ? "2px solid rgba(212,175,55,0.9)"
+          ? "2px solid rgba(var(--gold-dark-rgb),0.9)"
           : "2px solid transparent",
-        boxShadow: isMatch ? "0 0 10px rgba(212,175,55,0.5)" : "none",
+        boxShadow: isMatch ? "0 0 10px rgba(var(--gold-dark-rgb),0.5)" : "none",
         transform: isMatch ? "scale(1.1)" : "none",
       }}
     >
@@ -407,15 +407,15 @@ export default function EventTab({
       <div
         className="rounded-2xl overflow-hidden"
         style={{
-          background: "linear-gradient(135deg, rgba(212,175,55,0.1), rgba(212,175,55,0.04))",
-          border: "1px solid rgba(212,175,55,0.25)",
+          background: "linear-gradient(135deg, rgba(var(--gold-dark-rgb),0.1), rgba(var(--gold-dark-rgb),0.04))",
+          border: "1px solid rgba(var(--gold-dark-rgb),0.25)",
         }}
       >
-        <div className="h-1" style={{ background: "linear-gradient(90deg,#d4af37,#f0d060,transparent)" }} />
+        <div className="h-1" style={{ background: "linear-gradient(90deg,rgb(var(--gold-dark-rgb)),#f0d060,transparent)" }} />
         <div className="p-5">
           <div className="flex items-center gap-2 mb-2">
             <span className="text-xl">🎰</span>
-            <span className="text-xs font-black px-2 py-0.5 rounded-full" style={{ background: "rgba(212,175,55,0.15)", color: GOLD }}>
+            <span className="text-xs font-black px-2 py-0.5 rounded-full" style={{ background: "rgba(var(--gold-dark-rgb),0.15)", color: GOLD }}>
               {EL.eventBadge}
             </span>
           </div>
@@ -434,7 +434,7 @@ export default function EventTab({
               <div
                 key={r.match}
                 className="rounded-xl py-2 px-1"
-                style={{ background: "rgba(212,175,55,0.08)", border: "1px solid rgba(212,175,55,0.15)" }}
+                style={{ background: "rgba(var(--gold-dark-rgb),0.08)", border: "1px solid rgba(var(--gold-dark-rgb),0.15)" }}
               >
                 <p className="font-bold" style={{ color: GOLD }}>{r.prize}</p>
                 <p className="font-medium" style={{ color: TEXT_SECONDARY }}>{r.match}</p>
@@ -445,7 +445,7 @@ export default function EventTab({
           {/* 추첨 일정 안내 */}
           <div
             className="mt-3 px-3 py-2.5 rounded-xl"
-            style={{ background: "rgba(212,175,55,0.06)", border: "1px solid rgba(212,175,55,0.15)" }}
+            style={{ background: "rgba(var(--gold-dark-rgb),0.06)", border: "1px solid rgba(var(--gold-dark-rgb),0.15)" }}
           >
             <p className="text-[11px] leading-relaxed font-medium" style={{ color: TEXT_SECONDARY }}>
               {EL.drawSchedule}
@@ -469,7 +469,7 @@ export default function EventTab({
           <Link
             href="/login"
             className="inline-block px-5 py-2.5 rounded-xl text-sm font-bold"
-            style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: BG }}
+            style={{ background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)", color: BG }}
           >
             {EL.loginBtn}
           </Link>
@@ -518,7 +518,7 @@ export default function EventTab({
                 {prize && (
                   <span
                     className="ml-2 text-xs px-2 py-0.5 rounded-full font-black"
-                    style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: BG }}
+                    style={{ background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)", color: BG }}
                   >
                     {prize}
                   </span>
@@ -583,7 +583,7 @@ export default function EventTab({
               </div>
               <div
                 className="rounded-xl px-4 py-3 text-center"
-                style={{ background: "rgba(212,175,55,0.06)", border: "1px solid rgba(212,175,55,0.15)" }}
+                style={{ background: "rgba(var(--gold-dark-rgb),0.06)", border: "1px solid rgba(var(--gold-dark-rgb),0.15)" }}
               >
                 <p className="text-xs font-bold" style={{ color: GOLD }}>{EL.pending}</p>
                 <p className="text-xs mt-1 font-medium" style={{ color: TEXT_BODY }}>
@@ -634,7 +634,7 @@ export default function EventTab({
 
           {/* 선택된 번호 미리보기 */}
           {picked.length > 0 && (
-            <div className="flex flex-wrap gap-2 mb-4 px-3 py-2.5 rounded-xl" style={{ background: "rgba(212,175,55,0.06)", border: "1px solid rgba(212,175,55,0.12)" }}>
+            <div className="flex flex-wrap gap-2 mb-4 px-3 py-2.5 rounded-xl" style={{ background: "rgba(var(--gold-dark-rgb),0.06)", border: "1px solid rgba(var(--gold-dark-rgb),0.12)" }}>
               {picked
                 .slice()
                 .sort((a, b) => a - b)
@@ -642,7 +642,7 @@ export default function EventTab({
                   <span
                     key={n}
                     className="text-xs font-black px-2 py-1 rounded-lg"
-                    style={{ background: "rgba(212,175,55,0.2)", color: GOLD }}
+                    style={{ background: "rgba(var(--gold-dark-rgb),0.2)", color: GOLD }}
                   >
                     {n}
                   </span>
@@ -663,7 +663,7 @@ export default function EventTab({
             className="w-full py-3 rounded-xl text-sm font-black transition-all disabled:opacity-40"
             style={{
               background: picked.length === 6
-                ? "linear-gradient(135deg,#d4af37,#f0d060)"
+                ? "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)"
                 : SURFACE,
               color: picked.length === 6 ? BG : TEXT_MUTED,
             }}

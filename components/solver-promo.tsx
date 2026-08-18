@@ -20,7 +20,7 @@ import { BG, INK, FONT_SANS, FONT_SERIF } from "@/lib/theme";
  */
 
 /** 골드 액센트 — 이벤트 카드가 쓰는 rgba(212,175,55,…)와 같은 색. */
-const GOLD_ACCENT = "#d4af37";
+const GOLD_ACCENT = "rgb(var(--gold-dark-rgb))";
 
 export default function SolverPromo() {
   return (

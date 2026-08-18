@@ -230,7 +230,7 @@ export default function SevenCardStud() {
               <motion.div key={stage.id} initial={false} whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, margin: "-80px" }} transition={{ duration: 0.4, delay: index * 0.06 }}
                 className="relative pl-8 md:pl-12">
-                <div className="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-primary shadow-[0_0_10px_rgba(212,175,55,0.6)] border-2 border-background" />
+                <div className="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-primary shadow-[0_0_10px_rgba(var(--gold-dark-rgb),0.6)] border-2 border-background" />
                 <div className="bg-card border border-border rounded-xl p-5 md:p-7 hover:border-primary/40 transition-colors">
                   <div className="text-xs font-bold text-primary/60 tracking-widest mb-1">{stage.step}</div>
                   <h3 className="text-xl font-serif font-bold text-foreground mb-2">{stage.title}</h3>

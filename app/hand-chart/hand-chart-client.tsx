@@ -104,7 +104,7 @@ export default function HandChart() {
           <div
             aria-hidden
             className="pointer-events-none absolute -top-24 left-1/2 -translate-x-1/2 h-56 w-56 rounded-full blur-3xl"
-            style={{ background: "radial-gradient(circle, rgba(212,175,55,0.18), transparent 70%)" }}
+            style={{ background: "radial-gradient(circle, rgba(var(--gold-dark-rgb),0.18), transparent 70%)" }}
           />
           <div className="relative space-y-4">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/30 text-primary text-xs font-bold tracking-wide">
@@ -232,7 +232,7 @@ export default function HandChart() {
                         style={{
                           backgroundColor: bgColor,
                           opacity,
-                          outline: isHovered ? "2px solid #d4af37" : undefined,
+                          outline: isHovered ? "2px solid rgb(var(--gold-dark-rgb))" : undefined,
                           outlineOffset: "-2px",
                           zIndex: isHovered ? 10 : undefined,
                         }}

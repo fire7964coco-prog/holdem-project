@@ -72,7 +72,7 @@ export default function TournamentGuidePost({
       </nav>
 
       {/* ──── Series Banner ──── */}
-      <div className="border-b border-primary/20" style={{ background: "rgba(212,175,55,0.06)" }}>
+      <div className="border-b border-primary/20" style={{ background: "rgba(var(--gold-dark-rgb),0.06)" }}>
         <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-3 flex-wrap">
           <span className="text-[10px] font-bold uppercase tracking-widest text-primary border border-primary/30 bg-primary/10 px-2.5 py-1 rounded-full">
             대회 참가 완전 가이드 시리즈
@@ -183,7 +183,7 @@ export default function TournamentGuidePost({
 
         {post.tldr && (
           <aside className="mb-8 p-5 md:p-6 border-l-4 border-primary rounded-r-2xl"
-            style={{ background: "rgba(212,175,55,0.07)" }}>
+            style={{ background: "rgba(var(--gold-dark-rgb),0.07)" }}>
             <p className="text-[11px] font-bold uppercase tracking-widest text-primary mb-2">한 줄 요약</p>
             <p className="text-base text-foreground font-medium leading-relaxed">{post.tldr}</p>
           </aside>
@@ -204,7 +204,7 @@ export default function TournamentGuidePost({
                     {headings.map((h, i) => (
                       <li key={h.id} className="flex items-start gap-2.5">
                         <span className="flex-shrink-0 w-5 h-5 rounded-full text-[10px] font-bold flex items-center justify-center mt-0.5"
-                          style={{ background: "rgba(212,175,55,0.15)", color: "#d4af37", border: "1px solid rgba(212,175,55,0.35)" }}>
+                          style={{ background: "rgba(var(--gold-dark-rgb),0.15)", color: "rgb(var(--gold-dark-rgb))", border: "1px solid rgba(var(--gold-dark-rgb),0.35)" }}>
                           {i + 1}
                         </span>
                         <a href={`#${h.id}`}
@@ -252,7 +252,7 @@ export default function TournamentGuidePost({
                     {headings.map((h, i) => (
                       <li key={h.id} className="flex items-start gap-2.5">
                         <span className="flex-shrink-0 w-5 h-5 rounded-full text-[10px] font-bold flex items-center justify-center mt-0.5"
-                          style={{ background: "rgba(212,175,55,0.15)", color: "#d4af37", border: "1px solid rgba(212,175,55,0.35)" }}>
+                          style={{ background: "rgba(var(--gold-dark-rgb),0.15)", color: "rgb(var(--gold-dark-rgb))", border: "1px solid rgba(var(--gold-dark-rgb),0.35)" }}>
                           {i + 1}
                         </span>
                         <a href={`#${h.id}`} className="text-sm text-muted-foreground hover:text-primary transition-colors leading-snug"
@@ -280,7 +280,7 @@ export default function TournamentGuidePost({
             {nextTourPost && (
               <Link href={`/blog/${nextTourPost.slug}`}>
                 <div className="mt-10 p-5 border border-primary/30 rounded-2xl hover:border-primary/60 transition-colors cursor-pointer"
-                  style={{ background: "rgba(212,175,55,0.05)" }}>
+                  style={{ background: "rgba(var(--gold-dark-rgb),0.05)" }}>
                   <p className="text-xs text-primary font-bold uppercase tracking-widest mb-1">시리즈 다음 글</p>
                   <p className="font-bold text-foreground text-sm leading-snug">{nextTourPost.title}</p>
                   <p className="text-xs text-muted-foreground mt-1 flex items-center gap-1">

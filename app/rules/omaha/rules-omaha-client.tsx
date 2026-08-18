@@ -173,7 +173,7 @@ export default function Omaha() {
                 initial={false} whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, margin: "-80px" }} transition={{ duration: 0.4, delay: index * 0.06 }}
                 className="relative pl-8 md:pl-12 scroll-mt-24">
-                <div className="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-primary shadow-[0_0_10px_rgba(212,175,55,0.6)] border-2 border-background" />
+                <div className="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-primary shadow-[0_0_10px_rgba(var(--gold-dark-rgb),0.6)] border-2 border-background" />
                 <div className="bg-card border border-border rounded-xl overflow-hidden hover:border-primary/40 transition-colors">
                   <OmahaTableDiagram stage={stage.diagramStage} />
                   <div className="p-5 md:p-7">

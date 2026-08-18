@@ -94,7 +94,7 @@ export default function HubSidebar({
         </p>
         <div
           className="rounded px-3 py-2 mb-3 whitespace-pre-line"
-          style={{ background: "rgba(212,175,55,0.07)", border: "1px solid rgba(212,175,55,0.18)" }}
+          style={{ background: "rgba(var(--gold-dark-rgb),0.07)", border: "1px solid rgba(var(--gold-dark-rgb),0.18)" }}
         >
           <p className="text-[11px] leading-relaxed" style={{ color: MUTED, fontFamily: FONT_SANS }}>
             {L.eventSchedule}

@@ -273,7 +273,7 @@ export default function Home() {
         </div>
 
         <div className="relative z-10 max-w-5xl mx-auto px-4 text-center mt-12">
-          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/45 text-primary text-[12px] tracking-[0.18em] uppercase font-bold bg-primary/8 backdrop-blur-sm mb-7 shadow-[0_0_24px_-8px_rgba(212,175,55,0.45)]">
+          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/45 text-primary text-[12px] tracking-[0.18em] uppercase font-bold bg-primary/8 backdrop-blur-sm mb-7 shadow-[0_0_24px_-8px_rgba(var(--gold-dark-rgb),0.45)]">
             <Shield className="w-3.5 h-3.5" aria-hidden="true" /> 12년 경력 포커 전문가 검증
           </span>
 
@@ -333,7 +333,7 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             {TRUST_STATS.map(({ icon: Icon, value, label }) => (
               <div key={label} className="flex flex-col items-center text-center gap-2 px-3 py-2 rounded-xl border border-primary/12 bg-primary/4 backdrop-blur-sm transition-all duration-300 hover:border-primary/35 hover:bg-primary/8">
-                <div className="w-11 h-11 rounded-full flex items-center justify-center shadow-[0_4px_14px_-4px_rgba(212,175,55,0.4)]" style={{background:'linear-gradient(135deg, hsl(43 70% 22% / 0.6), hsl(43 70% 16% / 0.6))', border:'1px solid hsl(43 60% 35% / 0.4)'}}>
+                <div className="w-11 h-11 rounded-full flex items-center justify-center shadow-[0_4px_14px_-4px_rgba(var(--gold-dark-rgb),0.4)]" style={{background:'linear-gradient(135deg, hsl(43 70% 22% / 0.6), hsl(43 70% 16% / 0.6))', border:'1px solid hsl(43 60% 35% / 0.4)'}}>
                   <Icon className="w-[18px] h-[18px] text-primary" aria-hidden="true" />
                 </div>
                 <div className="text-2xl font-serif font-black text-gold-gradient leading-none">{value}</div>
@@ -360,7 +360,7 @@ export default function Home() {
             </p>
 
             {/* 실제 온라인 홀덤 테이블 이미지 */}
-            <div className="mb-8 rounded-2xl overflow-hidden border border-primary/20 shadow-[0_0_30px_rgba(212,175,55,0.1)]">
+            <div className="mb-8 rounded-2xl overflow-hidden border border-primary/20 shadow-[0_0_30px_rgba(var(--gold-dark-rgb),0.1)]">
               <img
                 src="/poker-table-online.webp"
                 alt="온라인 홀덤 포커 테이블 — 텍사스 홀덤 플랍(커뮤니티 카드 3장) 공개 후 6명의 플레이어가 베팅 중인 실제 온라인 포커 게임 화면"
@@ -469,7 +469,7 @@ export default function Home() {
                       <div className="text-xs text-muted-foreground mb-1">🎁 보너스</div>
                       <div className="text-sm font-bold text-primary leading-tight">{site.bonus}</div>
                     </div>
-                    <a href={site.href} className="w-full text-center px-6 py-2.5 rounded-lg bg-primary text-primary-foreground font-bold text-sm hover:brightness-110 transition-all shadow-[0_0_12px_rgba(212,175,55,0.25)]">
+                    <a href={site.href} className="w-full text-center px-6 py-2.5 rounded-lg bg-primary text-primary-foreground font-bold text-sm hover:brightness-110 transition-all shadow-[0_0_12px_rgba(var(--gold-dark-rgb),0.25)]">
                       상세 리뷰 보기
                     </a>
                     <a href={site.href} className="text-xs text-muted-foreground hover:text-primary transition-colors underline underline-offset-2">공식 사이트 →</a>
@@ -711,7 +711,7 @@ export default function Home() {
       <section className="py-12 bg-card border-b border-border">
         <div className="max-w-4xl mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center gap-8 bg-background border border-primary/20 rounded-2xl p-8">
-            <div className="w-24 h-24 rounded-full bg-gradient-to-br from-primary to-yellow-600 flex items-center justify-center text-4xl flex-shrink-0 shadow-[0_0_20px_rgba(212,175,55,0.3)]">
+            <div className="w-24 h-24 rounded-full bg-gradient-to-br from-primary to-yellow-600 flex items-center justify-center text-4xl flex-shrink-0 shadow-[0_0_20px_rgba(var(--gold-dark-rgb),0.3)]">
               ♠
             </div>
             <div>

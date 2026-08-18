@@ -130,7 +130,7 @@ export default function PostDetailClient({
 
       {/* 댓글 입력 */}
       {currentUserId ? (
-        <div className="fixed bottom-0 left-0 right-0 flex items-center gap-2 px-3 py-3" style={{ background: "rgba(11,17,32,0.97)", borderTop: "1px solid rgba(212,175,55,0.15)", backdropFilter: "blur(10px)" }}>
+        <div className="fixed bottom-0 left-0 right-0 flex items-center gap-2 px-3 py-3" style={{ background: "rgba(11,17,32,0.97)", borderTop: "1px solid rgba(var(--gold-dark-rgb),0.15)", backdropFilter: "blur(10px)" }}>
           <input
             value={draft}
             onChange={(e) => setDraft(e.target.value)}
@@ -139,14 +139,14 @@ export default function PostDetailClient({
             className="flex-1 px-4 py-2.5 rounded-full text-sm outline-none"
             style={{ background: SURFACE, color: TEXT_PRIMARY, border: `1px solid ${DIVIDER}` }}
           />
-          <button onClick={onSubmitComment} disabled={isPending || !draft.trim()} className="px-4 py-2.5 rounded-full text-sm font-bold disabled:opacity-50 flex-shrink-0" style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: BG }}>
+          <button onClick={onSubmitComment} disabled={isPending || !draft.trim()} className="px-4 py-2.5 rounded-full text-sm font-bold disabled:opacity-50 flex-shrink-0" style={{ background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)", color: BG }}>
             등록
           </button>
         </div>
       ) : (
-        <div className="fixed bottom-0 left-0 right-0 px-4 py-3 flex items-center gap-3" style={{ background: "rgba(11,17,32,0.97)", borderTop: "1px solid rgba(212,175,55,0.15)", backdropFilter: "blur(10px)" }}>
+        <div className="fixed bottom-0 left-0 right-0 px-4 py-3 flex items-center gap-3" style={{ background: "rgba(11,17,32,0.97)", borderTop: "1px solid rgba(var(--gold-dark-rgb),0.15)", backdropFilter: "blur(10px)" }}>
           <p className="text-xs flex-1 font-medium" style={{ color: TEXT_SECONDARY }}>댓글을 남기려면 로그인하세요</p>
-          <Link href="/login" className="px-4 py-2.5 rounded-xl text-xs font-bold flex-shrink-0" style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: BG }}>
+          <Link href="/login" className="px-4 py-2.5 rounded-xl text-xs font-bold flex-shrink-0" style={{ background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)", color: BG }}>
             로그인 →
           </Link>
         </div>

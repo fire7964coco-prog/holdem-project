@@ -79,23 +79,23 @@ export default function CommunityCTA({ locale = "ko" }: { locale?: Locale }) {
       className="mt-10 rounded-2xl overflow-hidden"
       style={{
         background: "linear-gradient(135deg, #0b1120 0%, #111827 100%)",
-        border: "1px solid rgba(212,175,55,0.25)",
+        border: "1px solid rgba(var(--gold-dark-rgb),0.25)",
       }}
     >
       <div
         className="h-1 w-full"
-        style={{ background: "linear-gradient(90deg,#d4af37,#f0d060,transparent)" }}
+        style={{ background: "linear-gradient(90deg,rgb(var(--gold-dark-rgb)),#f0d060,transparent)" }}
       />
       <div className="px-6 py-5 flex flex-col sm:flex-row items-start sm:items-center gap-4">
         <div className="flex-1">
           <div className="flex items-center gap-2 mb-1.5">
             <div
               className="w-6 h-6 rounded-lg flex items-center justify-center flex-shrink-0"
-              style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)" }}
+              style={{ background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)" }}
             >
               <span className="font-black text-[10px]" style={{ color: "#0b1120" }}>HM</span>
             </div>
-            <span className="text-xs font-bold" style={{ color: "rgba(212,175,55,0.7)" }}>
+            <span className="text-xs font-bold" style={{ color: "rgba(var(--gold-dark-rgb),0.7)" }}>
               HoldemMaster Community
             </span>
           </div>
@@ -110,7 +110,7 @@ export default function CommunityCTA({ locale = "ko" }: { locale?: Locale }) {
           href={href}
           className="flex-shrink-0 px-5 py-2.5 rounded-xl text-sm font-bold transition-opacity hover:opacity-90"
           style={{
-            background: "linear-gradient(135deg,#d4af37,#f0d060)",
+            background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)",
             color: "#0b1120",
             whiteSpace: "nowrap",
           }}

@@ -6,7 +6,7 @@ import { createClient } from "@/lib/supabase/client";
 
 type Mode = "login" | "signup";
 
-const GOLD = "#d4af37";
+const GOLD = "rgb(var(--gold-dark-rgb))";
 const BG = "#0b1120";
 
 function LoginForm() {
@@ -106,13 +106,13 @@ function LoginForm() {
     >
       <div
         className="w-full max-w-sm rounded-2xl p-7"
-        style={{ background: "#0f1a2e", border: "1px solid rgba(212,175,55,0.2)" }}
+        style={{ background: "#0f1a2e", border: "1px solid rgba(var(--gold-dark-rgb),0.2)" }}
       >
         {/* 로고 */}
         <div className="flex flex-col items-center mb-6">
           <div
             className="w-11 h-11 rounded-xl flex items-center justify-center mb-3"
-            style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)" }}
+            style={{ background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)" }}
           >
             <span className="font-black text-sm" style={{ color: BG }}>HM</span>
           </div>
@@ -217,7 +217,7 @@ function LoginForm() {
             type="submit"
             disabled={loading}
             className="w-full py-3 rounded-xl font-bold text-sm active:scale-[0.98] transition-transform disabled:opacity-50"
-            style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: BG }}
+            style={{ background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)", color: BG }}
           >
             {loading ? "처리 중..." : mode === "login" ? "로그인" : "가입하기"}
           </button>

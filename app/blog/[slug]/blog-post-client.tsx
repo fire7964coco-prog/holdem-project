@@ -613,7 +613,7 @@ export default function BlogPost({
                 <Link href={`/blog/${nextPost.slug}`} className="group">
                   <div
                     className="flex items-center justify-between gap-4 p-5 rounded-2xl cursor-pointer transition-all hover:-translate-y-0.5 hover:shadow-lg"
-                    style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", boxShadow: "0 2px 12px rgba(212,175,55,0.25)" }}
+                    style={{ background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)", boxShadow: "0 2px 12px rgba(var(--gold-dark-rgb),0.25)" }}
                   >
                     <div className="min-w-0">
                       <div className="text-[10px] font-bold uppercase tracking-widest mb-1" style={{ color: "rgba(13,28,20,0.6)" }}>다음 글 읽기 →</div>
@@ -818,7 +818,7 @@ export default function BlogPost({
              탭바 자리(-7~62px)에 겹쳤고, z-50이라 탭을 눌러도 이 링크가 먹어
              엉뚱한 포스트로 이동했다. */
           className={`xl:hidden fixed left-0 right-0 z-50 transition-all duration-300 ${showStickyNext ? "translate-y-0 opacity-100" : "translate-y-full opacity-0 pointer-events-none"}`}
-          style={{ bottom: TAB_BAR_HEIGHT, background: "linear-gradient(135deg,#d4af37,#f0d060)", boxShadow: "0 -4px 24px rgba(212,175,55,0.35)" }}
+          style={{ bottom: TAB_BAR_HEIGHT, background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)", boxShadow: "0 -4px 24px rgba(var(--gold-dark-rgb),0.35)" }}
         >
           <Link href={`/blog/${nextPost.slug}`} className="flex items-center justify-between gap-3 px-5 py-4">
             <div className="min-w-0">

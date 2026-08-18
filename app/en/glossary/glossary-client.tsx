@@ -11,7 +11,7 @@ import Link from "next/link";
 type Cat = "Action" | "Hand" | "Position" | "Math" | "Board" | "Slang";
 const CATS: { key: Cat; color: string }[] = [
   { key: "Action", color: "#60a5fa" },
-  { key: "Hand", color: "#d4af37" },
+  { key: "Hand", color: "rgb(var(--gold-dark-rgb))" },
   { key: "Position", color: "#22c55e" },
   { key: "Math", color: "#a78bfa" },
   { key: "Board", color: "#22d3ee" },

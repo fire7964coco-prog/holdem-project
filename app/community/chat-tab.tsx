@@ -283,7 +283,7 @@ export default function ChatTab({
               key={href}
               href={href}
               className="flex items-center gap-1 px-3 py-1 rounded-full text-[11px] font-semibold flex-shrink-0 transition-opacity active:opacity-70 whitespace-nowrap"
-              style={{ background: "rgba(212,175,55,0.1)", color: GOLD, border: "1px solid rgba(212,175,55,0.2)" }}
+              style={{ background: "rgba(var(--gold-dark-rgb),0.1)", color: GOLD, border: "1px solid rgba(var(--gold-dark-rgb),0.2)" }}
             >
               {L.tools[i]}
             </Link>
@@ -296,7 +296,7 @@ export default function ChatTab({
         className="flex-1 overflow-y-auto px-3 py-3 space-y-2"
         style={{
           scrollbarWidth: "thin",
-          scrollbarColor: "rgba(212,175,55,0.15) transparent",
+          scrollbarColor: "rgba(var(--gold-dark-rgb),0.15) transparent",
         }}
       >
         {messages.length === 0 ? (
@@ -324,7 +324,7 @@ export default function ChatTab({
                 <div
                   className="max-w-[75%] px-3.5 py-2 text-sm leading-relaxed break-words"
                   style={isMe ? {
-                    background: "linear-gradient(135deg,#d4af37,#f0d060)",
+                    background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)",
                     color: "#0b1120",
                     borderRadius: "18px 18px 4px 18px",
                     fontWeight: 600,
@@ -376,7 +376,7 @@ export default function ChatTab({
                 disabled={!input.trim() || sending}
                 className="px-4 py-2 rounded-xl text-sm font-bold flex-shrink-0 disabled:opacity-40 transition-opacity"
                 style={{
-                  background: "linear-gradient(135deg,#d4af37,#f0d060)",
+                  background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)",
                   color: BG,
                 }}
               >
@@ -404,7 +404,7 @@ export default function ChatTab({
               href="/login"
               className="text-sm font-bold px-3 py-1.5 rounded-lg flex-shrink-0"
               style={{
-                background: "linear-gradient(135deg,#d4af37,#f0d060)",
+                background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)",
                 color: BG,
               }}
             >

@@ -105,7 +105,7 @@ export function Avatar({
     return (
       <div
         className="rounded-full flex items-center justify-center flex-shrink-0"
-        style={{ width: size, height: size, background: "linear-gradient(135deg,#d4af37,#f0d060)" }}
+        style={{ width: size, height: size, background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)" }}
       >
         <span style={{ fontSize: size * 0.52, color: "#0d1c14", lineHeight: 1 }}>♠</span>
       </div>
@@ -164,13 +164,13 @@ export default function PostCard({
       <article
         data-feed-card
         className="mx-3 mb-3 rounded-2xl overflow-hidden lg:hidden"
-        style={{ background: CARD, border: "1px solid rgba(212,175,55,0.25)" }}
+        style={{ background: CARD, border: "1px solid rgba(var(--gold-dark-rgb),0.25)" }}
       >
         <Link href={post.pageHref!} className="block">
           <div className="flex items-center gap-2.5 px-4 pt-3.5 pb-2">
             <div
               className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0"
-              style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)" }}
+              style={{ background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)" }}
             >
               <span style={{ fontSize: 14, lineHeight: 1 }}>{post.pageIcon ?? "📄"}</span>
             </div>
@@ -190,7 +190,7 @@ export default function PostCard({
           <Link
             href={post.pageHref!}
             className="inline-flex items-center gap-1.5 text-sm font-bold px-4 py-2 rounded-xl active:scale-95 transition-transform"
-            style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: BG }}
+            style={{ background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)", color: BG }}
           >
             {CL.goTo}
           </Link>
@@ -227,7 +227,7 @@ export default function PostCard({
   }
 
   const adminBorder = post.type === "admin"
-    ? "1px solid rgba(212,175,55,0.25)"
+    ? "1px solid rgba(var(--gold-dark-rgb),0.25)"
     : "1px solid rgba(52,211,153,0.18)";
 
   if (isBlogTeaser) {
@@ -237,9 +237,9 @@ export default function PostCard({
       <article
         data-feed-card
         className="mx-3 lg:mx-0 mb-3 rounded-2xl overflow-hidden"
-        style={{ background: CARD, border: "1px solid rgba(212,175,55,0.25)" }}
+        style={{ background: CARD, border: "1px solid rgba(var(--gold-dark-rgb),0.25)" }}
       >
-        <div className="hidden lg:block" style={{ height: 3, background: "linear-gradient(90deg,#d4af37,#f0d060,transparent)" }} />
+        <div className="hidden lg:block" style={{ height: 3, background: "linear-gradient(90deg,rgb(var(--gold-dark-rgb)),#f0d060,transparent)" }} />
         <Link href={blogHref} className="block">
           <div className="flex items-center gap-2.5 px-4 lg:px-5 pt-3.5 lg:pt-4 pb-2">
             <div className="w-8 h-8 lg:w-10 lg:h-10 flex-shrink-0">
@@ -249,7 +249,7 @@ export default function PostCard({
               <div className="flex items-center gap-1.5 flex-wrap">
                 <p className="text-[13px] lg:text-sm font-bold" style={{ color: GOLD }}>HoldemMaster</p>
                 {post.category && (
-                  <span className="text-[10px] px-2 py-0.5 rounded-full font-bold flex-shrink-0" style={{ background: "rgba(212,175,55,0.12)", color: GOLD, border: "1px solid rgba(212,175,55,0.3)" }}>
+                  <span className="text-[10px] px-2 py-0.5 rounded-full font-bold flex-shrink-0" style={{ background: "rgba(var(--gold-dark-rgb),0.12)", color: GOLD, border: "1px solid rgba(var(--gold-dark-rgb),0.3)" }}>
                     {translateCategory(post.category, cardLang)}
                   </span>
                 )}
@@ -272,7 +272,7 @@ export default function PostCard({
                블로그 히어로는 원본이 1200×675(16:9)라 크롭 없음. */
             <div
               className="w-full overflow-hidden"
-              style={{ aspectRatio: "16 / 9", maxHeight: 340, background: "rgba(212,175,55,0.06)" }}
+              style={{ aspectRatio: "16 / 9", maxHeight: 340, background: "rgba(var(--gold-dark-rgb),0.06)" }}
             >
               <img
                 src={post.imageUrl}
@@ -287,7 +287,7 @@ export default function PostCard({
           )}
         </Link>
         <div className="px-4 lg:px-5 py-3" style={{ borderTop: `1px solid ${DIVIDER}` }}>
-          <Link href={blogHref} className="inline-flex items-center gap-1.5 text-sm font-bold px-4 py-2 rounded-xl active:scale-95 transition-transform" style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: BG }}>
+          <Link href={blogHref} className="inline-flex items-center gap-1.5 text-sm font-bold px-4 py-2 rounded-xl active:scale-95 transition-transform" style={{ background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)", color: BG }}>
             {CL.readMore}
           </Link>
         </div>
@@ -302,7 +302,7 @@ export default function PostCard({
       style={{ background: CARD, border: adminBorder }}
     >
       {post.type === "admin" && (
-        <div className="hidden lg:block" style={{ height: 3, background: "linear-gradient(90deg,#d4af37,#f0d060,transparent)" }} />
+        <div className="hidden lg:block" style={{ height: 3, background: "linear-gradient(90deg,rgb(var(--gold-dark-rgb)),#f0d060,transparent)" }} />
       )}
 
       <div className="flex items-center gap-2.5 px-4 lg:px-5 pt-3.5 lg:pt-4 pb-2">
@@ -316,7 +316,7 @@ export default function PostCard({
               {post.type === "admin" ? "HoldemMaster" : post.authorNickname}
             </p>
             {post.type === "admin" && (
-              <span className="hidden lg:inline text-[10px] px-2 py-0.5 rounded-full font-bold flex-shrink-0" style={{ background: "rgba(212,175,55,0.12)", color: GOLD, border: "1px solid rgba(212,175,55,0.3)" }}>
+              <span className="hidden lg:inline text-[10px] px-2 py-0.5 rounded-full font-bold flex-shrink-0" style={{ background: "rgba(var(--gold-dark-rgb),0.12)", color: GOLD, border: "1px solid rgba(var(--gold-dark-rgb),0.3)" }}>
                 OFFICIAL
               </span>
             )}
@@ -340,7 +340,7 @@ export default function PostCard({
         )}
         <div className="px-4 lg:px-5 pb-3">
           {!isMyLang && translated && !showOriginal ? (
-            <div className="rounded-lg p-3 mb-1" style={{ background: "rgba(212,175,55,0.06)", border: "1px solid rgba(212,175,55,0.15)" }}>
+            <div className="rounded-lg p-3 mb-1" style={{ background: "rgba(var(--gold-dark-rgb),0.06)", border: "1px solid rgba(var(--gold-dark-rgb),0.15)" }}>
               <p className="text-[11px] font-semibold mb-1" style={{ color: GOLD }}>🌐 Translated</p>
               <p className="text-[13.5px] lg:text-sm leading-relaxed" style={{ color: TEXT_BODY }}>{bodyText}</p>
             </div>
@@ -379,9 +379,9 @@ export default function PostCard({
             disabled={translating}
             className="text-[11px] lg:text-xs font-semibold px-2.5 py-1 rounded-lg active:scale-95 transition-all disabled:opacity-50"
             style={{
-              background: translated && !showOriginal ? "rgba(212,175,55,0.15)" : SURFACE,
+              background: translated && !showOriginal ? "rgba(var(--gold-dark-rgb),0.15)" : SURFACE,
               color: translated && !showOriginal ? GOLD : TEXT_SECONDARY,
-              border: `1px solid ${translated && !showOriginal ? "rgba(212,175,55,0.3)" : DIVIDER}`,
+              border: `1px solid ${translated && !showOriginal ? "rgba(var(--gold-dark-rgb),0.3)" : DIVIDER}`,
             }}
           >
             {translating ? "번역 중..." : translated ? (showOriginal ? "🌐 번역 보기" : "↩ 원문 보기") : `🌐 ${FLAG[myLanguage] ?? ""} 번역`}

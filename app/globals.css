@@ -75,6 +75,18 @@
   --accent: 43 65% 44%;
   --accent-foreground: 152 75% 4%;
 
+  /* ── 다크 표면용 골드 = 24K 원색 #d4af37 (2026-08-18 신설) ──
+     🔴 --primary(#b99027)와 «다른 색인 게 의도다. 통일하지 마라.»
+        primary 는 위 주석대로 «밝은 배경용으로 채도를 낮춘» 값이고, 이 값은
+        다크 그린 바·팝오버·썸네일 위에서 대비를 내는 원색이다.
+        근거: components/blog-top-bar.tsx 가 BG="#1a3a2a" 위에 GOLD="#d4af37" 을 쓴다
+              — 배경별로 갈린 쌍이지 부채가 아니다. 하나로 합치면 다크 바의 골드가 탁해진다.
+     🔴 신설 이유는 «색을 바꾸려고»가 아니라 «톤을 바꿀 때 이 골드도 따라오게» 하려는 것이다.
+        이전엔 33개 파일에 173자리로 흩어져 있어 토큰을 바꿔도 그 자리만 옛 톤으로 남았다.
+     rgb()·rgba() 양쪽에 쓰려고 «트리플릿»으로 둔다 (알파가 39종이라 hex 로는 못 덮는다):
+        rgb(var(--gold-dark-rgb))  ·  rgba(var(--gold-dark-rgb),0.25) */
+  --gold-dark-rgb: 212,175,55;
+
   --destructive: 0 72% 50%;
   --destructive-foreground: 0 0% 100%;
 
@@ -292,11 +304,11 @@
 
 /* ── 골드 그라디언트 텍스트 (헤드라인용) ──────────── */
 .text-gold-gradient {
-  background: linear-gradient(135deg, #ffe18a 0%, #d4af37 38%, #f3d073 70%, #b8862a 100%);
+  background: linear-gradient(135deg, #ffe18a 0%, rgb(var(--gold-dark-rgb)) 38%, #f3d073 70%, #b8862a 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 2px 8px rgba(212, 175, 55, 0.18));
+  filter: drop-shadow(0 2px 8px rgba(var(--gold-dark-rgb),0.18));
 }
 
 /* ── 카드: 크림 배경 + 따뜻한 탄 보더 ────────── */
@@ -358,12 +370,12 @@
   font-weight: 700;
   letter-spacing: -0.01em;
   color: hsl(var(--primary-foreground));
-  background: linear-gradient(135deg, #f5d36a 0%, #d4af37 50%, #b8862a 100%);
+  background: linear-gradient(135deg, #f5d36a 0%, rgb(var(--gold-dark-rgb)) 50%, #b8862a 100%);
   border: 1px solid hsl(43 70% 38%);
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.4),
     inset 0 -1px 0 rgba(0, 0, 0, 0.2),
-    0 8px 22px -6px rgba(212, 175, 55, 0.45);
+    0 8px 22px -6px rgba(var(--gold-dark-rgb),0.45);
   transition: filter 0.18s ease, transform 0.18s ease, box-shadow 0.28s ease;
 }
 .btn-gold:hover {
@@ -371,7 +383,7 @@
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.5),
     inset 0 -1px 0 rgba(0, 0, 0, 0.2),
-    0 12px 28px -6px rgba(212, 175, 55, 0.6);
+    0 12px 28px -6px rgba(var(--gold-dark-rgb),0.6);
   transform: translateY(-1px);
 }
 .btn-gold:active {
@@ -415,7 +427,7 @@
   position: absolute;
   inset: -1px;
   border-radius: inherit;
-  border: 1px solid rgba(212, 175, 55, 0.65);
+  border: 1px solid rgba(var(--gold-dark-rgb),0.65);
   opacity: 0;
   /* 무한 반복은 Lighthouse가 페이지 '안정'을 판정 못 해 LCP 지표를 폭증시킴 → 유한(3회)으로 */
   animation: summary-border-pulse 2.8s ease-in-out 3;
@@ -697,7 +709,7 @@ a.brush-link:hover { filter: brightness(0.9); }
   padding: 20px 18px 12px;
   background: linear-gradient(180deg, hsl(40 45% 98%) 0%, hsl(38 38% 95%) 100%);
   border: 1px solid #d8d0be;
-  border-top: 3px solid #d4af37;
+  border-top: 3px solid rgb(var(--gold-dark-rgb));
   border-radius: 16px;
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.8),
@@ -746,7 +758,7 @@ a.brush-link:hover { filter: brightness(0.9); }
   transition: background 0.18s ease;
 }
 .pillar-hub-step:hover {
-  background: rgba(212, 175, 55, 0.06);
+  background: rgba(var(--gold-dark-rgb),0.06);
 }
 /* 스텝을 잇는 세로 연결선(타임라인) — 배지 중심(8px + 17px)에 정렬 */
 .pillar-hub-step:not(:last-child)::before {
@@ -756,7 +768,7 @@ a.brush-link:hover { filter: brightness(0.9); }
   top: 44px;
   bottom: -10px;
   width: 2px;
-  background: linear-gradient(#d4af37, rgba(26, 58, 42, 0.18));
+  background: linear-gradient(rgb(var(--gold-dark-rgb)), rgba(26, 58, 42, 0.18));
 }
 .pillar-hub-num {
   position: relative;
@@ -765,14 +777,14 @@ a.brush-link:hover { filter: brightness(0.9); }
   width: 34px;
   height: 34px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #d4af37, #f0d060);
+  background: linear-gradient(135deg, rgb(var(--gold-dark-rgb)), #f0d060);
   color: #1a3a2a;
   font-size: 15px;
   font-weight: 900;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 6px rgba(212, 175, 55, 0.35);
+  box-shadow: 0 2px 6px rgba(var(--gold-dark-rgb),0.35);
 }
 .pillar-hub-body {
   flex: 1;
@@ -800,7 +812,7 @@ a.brush-link:hover { filter: brightness(0.9); }
 .pillar-hub-arrow {
   flex-shrink: 0;
   align-self: center;
-  color: #d4af37;
+  color: rgb(var(--gold-dark-rgb));
   font-weight: 900;
   font-size: 16px;
   opacity: 0.35;
@@ -825,7 +837,7 @@ a.brush-link:hover { filter: brightness(0.9); }
 /* 1. H3 제목 골드 액센트 바: 좌측 → 우측 */
 [dir="rtl"] .blog-prose h3 {
   border-left: 0 !important;
-  border-right: 3px solid rgba(212, 175, 55, 0.6) !important;
+  border-right: 3px solid rgba(var(--gold-dark-rgb),0.6) !important;
   border-radius: 8px 0 0 8px !important;
 }
 

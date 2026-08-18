@@ -26,7 +26,7 @@ import {
  * ★확률 계산은 이 파일에 한 줄도 없다. `_engine.ts`(레인지·팟오즈) + `_equity.ts`(§13 평가기).
  */
 
-const GOLD = "#d4af37";
+const GOLD = "rgb(var(--gold-dark-rgb))";
 const FELT = "radial-gradient(ellipse 120% 90% at 50% 42%, #1f7a52 0%, #12603f 45%, #0b4229 78%, #08331f 100%)";
 const MUTED = "rgba(255,255,255,0.3)";
 const LIVE = "#e0555e";
@@ -126,14 +126,14 @@ function PlayingCard({ card, hidden, size = "seat" }: { card?: QuizCard; hidden?
         background: muted
           ? "linear-gradient(135deg,#4b3535 0%,#584040 50%,#4b3535 100%)"
           : "linear-gradient(135deg,#7f1d1d 0%,#991b1b 50%,#7f1d1d 100%)",
-        border: `2px solid ${muted ? "rgba(255,255,255,0.18)" : "rgba(212,175,55,0.5)"}`,
+        border: `2px solid ${muted ? "rgba(255,255,255,0.18)" : "rgba(var(--gold-dark-rgb),0.5)"}`,
         boxShadow: "0 2px 6px rgba(0,0,0,0.45)",
         display: "flex", alignItems: "center", justifyContent: "center",
       }}>
         <div style={{
           width: "60%", height: "70%", borderRadius: 2,
-          border: `1px solid ${muted ? "rgba(255,255,255,0.14)" : "rgba(212,175,55,0.45)"}`,
-          background: `repeating-linear-gradient(45deg,transparent,transparent 2.5px,${muted ? "rgba(255,255,255,0.08)" : "rgba(212,175,55,0.16)"} 2.5px,${muted ? "rgba(255,255,255,0.08)" : "rgba(212,175,55,0.16)"} 5px)`,
+          border: `1px solid ${muted ? "rgba(255,255,255,0.14)" : "rgba(var(--gold-dark-rgb),0.45)"}`,
+          background: `repeating-linear-gradient(45deg,transparent,transparent 2.5px,${muted ? "rgba(255,255,255,0.08)" : "rgba(var(--gold-dark-rgb),0.16)"} 2.5px,${muted ? "rgba(255,255,255,0.08)" : "rgba(var(--gold-dark-rgb),0.16)"} 5px)`,
         }} />
       </div>
     );

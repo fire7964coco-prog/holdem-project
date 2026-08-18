@@ -135,10 +135,10 @@ function ArrowButton({
       className="w-11 h-11 rounded-full flex items-center justify-center shadow-md transition-all duration-150 active:scale-90"
       style={{
         background: lit
-          ? "linear-gradient(135deg,#d4af37,#f0d060)" // 브랜드 골드 (맨위로 버튼과 통일)
+          ? "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)" // 브랜드 골드 (맨위로 버튼과 통일)
           : "rgba(13,28,20,0.85)", // 다크 포레스트 그린 반투명
         color: lit ? "#0d1c14" : "#f4f0e7",
-        border: "1px solid rgba(212,175,55,0.4)",
+        border: "1px solid rgba(var(--gold-dark-rgb),0.4)",
         opacity: disabled ? 0.35 : 1,
         cursor: disabled ? "default" : "pointer",
         backdropFilter: "blur(2px)",

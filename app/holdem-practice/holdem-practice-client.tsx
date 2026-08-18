@@ -164,7 +164,7 @@ function PlayingCard({ card, hidden, small }: { card?: Card; hidden?: boolean; s
         className={`${w} rounded-md flex items-center justify-center font-black select-none`}
         style={{
           background: "repeating-linear-gradient(45deg,#3b1d12,#3b1d12 6px,#4a2417 6px,#4a2417 12px)",
-          border: "1px solid rgba(212,175,55,0.35)",
+          border: "1px solid rgba(var(--gold-dark-rgb),0.35)",
         }}
         aria-hidden="true"
       >
@@ -176,7 +176,7 @@ function PlayingCard({ card, hidden, small }: { card?: Card; hidden?: boolean; s
   return (
     <div
       className={`${w} rounded-md bg-[#fdf8ee] flex flex-col items-center justify-center font-black leading-none select-none shadow-md`}
-      style={{ border: "1px solid #d4af37", color: red ? "#c0392b" : "#0f172a" }}
+      style={{ border: "1px solid rgb(var(--gold-dark-rgb))", color: red ? "#c0392b" : "#0f172a" }}
     >
       <span>{RANK_LABELS[card.rank]}</span>
       <span>{SUIT_SYMBOLS[card.suit]}</span>
@@ -487,7 +487,7 @@ function HumanControls({
             value={Math.min(Math.max(raiseTo, legal.minRaiseTo), legal.maxRaiseTo)}
             onChange={(e) => setRaiseTo(Number(e.target.value))}
             disabled={!canSlide}
-            className="w-full accent-[#d4af37]"
+            className="w-full accent-[rgb(var(--gold-dark-rgb))]"
           />
           <div className="flex gap-2 flex-wrap">
             <button

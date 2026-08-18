@@ -3,7 +3,7 @@
 import Link from "next/link";
 
 const BG = "#1a3a2a";       // 커뮤니티 하단 네비와 동일 색상
-const GOLD = "#d4af37";
+const GOLD = "rgb(var(--gold-dark-rgb))";
 
 interface BlogTopBarProps {
   homeHref?: string;         // 홈피드 링크 (기본: "/")
@@ -21,7 +21,7 @@ export default function BlogTopBar({
       className="sticky top-0 z-50 flex items-center justify-between px-5"
       style={{
         background: BG,
-        borderBottom: "1px solid rgba(212,175,55,0.25)",
+        borderBottom: "1px solid rgba(var(--gold-dark-rgb),0.25)",
         height: "56px",
       }}
     >
@@ -31,8 +31,8 @@ export default function BlogTopBar({
         className="flex items-center gap-2 px-4 py-2 rounded-lg font-bold text-sm transition-all hover:opacity-80 active:scale-95"
         style={{
           color: GOLD,
-          background: "rgba(212,175,55,0.12)",
-          border: "1px solid rgba(212,175,55,0.30)",
+          background: "rgba(var(--gold-dark-rgb),0.12)",
+          border: "1px solid rgba(var(--gold-dark-rgb),0.30)",
           letterSpacing: "-0.01em",
         }}
       >
@@ -55,7 +55,7 @@ export default function BlogTopBar({
         href={homeHref}
         className="flex items-center gap-1.5 px-4 py-2 rounded-lg font-bold text-sm transition-all hover:opacity-90 active:scale-95"
         style={{
-          background: "linear-gradient(135deg,#d4af37,#f0d060)",
+          background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)",
           color: "#0d1c14",
           letterSpacing: "-0.01em",
         }}

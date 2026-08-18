@@ -12,7 +12,11 @@ const HEX6 = /#[0-9a-fA-F]{8}\b|#[0-9a-fA-F]{6}\b/g;
 const HEX3 = /#[0-9a-fA-F]{3,4}\b/g;
 const PALETTE = /\b(?:bg|text|border|from|to|via|ring|fill|stroke|shadow|decoration|outline|divide)-(?:red|orange|amber|yellow|lime|green|emerald|teal|cyan|sky|blue|indigo|violet|purple|fuchsia|pink|rose|slate|gray|zinc|neutral|stone)-\d{2,3}\b/g;
 const ARBITRARY = /\b(?:bg|text|border|from|to|via|ring|fill|stroke)-\[(?:#[0-9a-fA-F]{3,8}|rgba?\([^\]]*\)|hsla?\([^\]]*\))\]/g;
-const RGBA = /\brgba?\(\s*\d+\s*,\s*\d+\s*,\s*\d+/g;
+// 🔴 `\b` 를 뺐다 (2026-08-18). 앞에 `\b` 가 있으면 Tailwind arbitrary 값 안의 rgba 를 통째로 놓친다 —
+// `shadow-[0_0_10px_rgba(212,175,55,0.3)]` 는 `_` 가 word 문자라 `_` 와 `r` 사이에 경계가 없다.
+// 실측: 이 한 글자 때문에 components/app 에서 **26자리**가 안 세이고 있었다(그중 12가 골드).
+// 즉 브리프의 「UI 1,322」는 처음부터 과소집계였다. 되돌리지 마라.
+const RGBA = /rgba?\(\s*\d+\s*,\s*\d+\s*,\s*\d+/g;
 
 function area(rel) {
   if (/^lib\/posts(-[\w-]+)?\//.test(rel) || rel === 'lib/posts.ts') return 'content';
@@ -36,6 +40,7 @@ function walk(dir, out = []) {
 const files = DIRS.flatMap(d => walk(join(ROOT, d)));
 const rows = [];
 let rejectedHex3 = 0;
+let tokenRefs = 0;   // var(--토큰) 참조 = 이미 회수된 자리 (부채 아님)
 
 for (const f of files) {
   const rel = relative(ROOT, f).replace(/\\/g, '/');
@@ -52,7 +57,14 @@ for (const f of files) {
       else rejectedHex3++;
     }
     for (const m of line.matchAll(PALETTE)) hits.push({ kind: 'palette', v: m[0] });
-    for (const m of line.matchAll(ARBITRARY)) hits.push({ kind: 'arbitrary', v: m[0] });
+    // 🔴 var(--토큰) 참조는 부채가 아니라 «회수된 자리»다 (2026-08-18).
+    // ARBITRARY 는 bg-[rgb(var(--gold-dark-rgb))] 처럼 토큰을 감싼 형태도 매칭한다 —
+    // 그대로 세면 회수를 해도 숫자가 안 줄어 «진척이 안 보이는» 오탐이 된다.
+    // (RGBA/HEX/PALETTE 는 숫자·# 를 직접 요구해서 애초에 var() 를 안 잡는다.)
+    for (const m of line.matchAll(ARBITRARY)) {
+      if (m[0].includes('var(--')) { tokenRefs++; continue; }
+      hits.push({ kind: 'arbitrary', v: m[0] });
+    }
     for (const m of line.matchAll(RGBA)) hits.push({ kind: 'rgba', v: m[0] + '...)' });
     if (!hits.length) return;
     rows.push({ file: rel, area: area(rel), line: i + 1, hits, text: line.trim().slice(0, 100) });
@@ -82,6 +94,7 @@ out.push('');
 out.push('> `node scripts/scan-color-debt.mjs`로 재생성. 대상 = `components/` `app/` `lib/` (tsx·ts·css).');
 out.push('> 제외 = `app/globals.css`(토큰 정의처) · `*Diagram.tsx`(SVG 일러스트).');
 out.push(`> 오탐 제거 = 색 문맥 없는 3~4자리 \`#XXX\` **${rejectedHex3}건**(「#1000」 같은 순위·수량 표기).`);
+out.push(`> ✅ **이미 회수돼 제외된 자리 = ${tokenRefs}건** (\`var(--토큰)\` 참조 — 부채가 아니다).`);
 out.push('');
 out.push('## 한눈에');
 out.push('');
@@ -123,4 +136,4 @@ for (const f of ui) {
   out.push('');
 }
 writeFileSync(join(ROOT, 'docs/color-token-debt.md'), out.join('\n'), 'utf8');
-console.log(`UI ${sum(ui)}/${ui.length} · 본문 ${sum(content)}/${content.length} · 데이터 ${sum(data)}/${data.length} · 합계 ${sum(all)} · hex3오탐제거 ${rejectedHex3}`);
+console.log(`회수됨(var) ${tokenRefs} · UI ${sum(ui)}/${ui.length} · 본문 ${sum(content)}/${content.length} · 데이터 ${sum(data)}/${data.length} · 합계 ${sum(all)} · hex3오탐제거 ${rejectedHex3}`);

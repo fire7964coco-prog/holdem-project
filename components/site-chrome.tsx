@@ -93,7 +93,7 @@ export function ScrollToTopButton() {
         liftAboveTabBar ? "bottom-[74px] lg:bottom-6" : "bottom-6"
       }`}
       style={{
-        background: "linear-gradient(135deg,#d4af37,#f0d060)",
+        background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)",
         color: "#0b1120",
         opacity: visible ? 1 : 0,
         pointerEvents: visible ? "auto" : "none",

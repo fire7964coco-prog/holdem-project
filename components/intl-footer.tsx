@@ -17,8 +17,8 @@ export function IntlFooter({ locale, className = "" }: { locale: SecondaryLocale
           <div className="md:col-span-1">
             <div className="flex items-center gap-2.5 mb-4">
               <div
-                className="w-8 h-8 rounded-lg flex items-center justify-center shadow-[0_4px_12px_-4px_rgba(212,175,55,0.45)]"
-                style={{ background: "linear-gradient(135deg, #f5d36a 0%, #d4af37 50%, #b8862a 100%)" }}
+                className="w-8 h-8 rounded-lg flex items-center justify-center shadow-[0_4px_12px_-4px_rgba(var(--gold-dark-rgb),0.45)]"
+                style={{ background: "linear-gradient(135deg, #f5d36a 0%, rgb(var(--gold-dark-rgb)) 50%, #b8862a 100%)" }}
               >
                 <Spade className="h-4 w-4 text-[#1a0e02] fill-current" aria-hidden="true" />
               </div>

@@ -17,9 +17,9 @@ function PokerCard({ card, highlight, dim }: { card: Card; highlight?: boolean; 
       borderRadius: 8,
       display: 'inline-flex', flexDirection: 'column',
       alignItems: 'center', justifyContent: 'center', flexShrink: 0,
-      border: highlight ? '2px solid #d4af37' : `1px solid ${dim ? '#1f1f1f' : '#c8c8c8'}`,
+      border: highlight ? '2px solid rgb(var(--gold-dark-rgb))' : `1px solid ${dim ? '#1f1f1f' : '#c8c8c8'}`,
       boxShadow: highlight
-        ? '0 0 14px rgba(212,175,55,0.6), 0 4px 10px rgba(0,0,0,0.4)'
+        ? '0 0 14px rgba(var(--gold-dark-rgb),0.6), 0 4px 10px rgba(0,0,0,0.4)'
         : dim ? 'none' : '0 3px 8px rgba(0,0,0,0.45)',
       opacity: dim ? 0.2 : 1,
       /* CSS transition → GPU-composited transform + opacity only */
@@ -47,7 +47,7 @@ function StepDots({ current, total }: { current: number; total: number }) {
           style={{
             height: 6, borderRadius: 3,
             width: i === current - 1 ? 20 : 6,
-            background: i < current ? '#d4af37' : 'rgba(255,255,255,0.15)',
+            background: i < current ? 'rgb(var(--gold-dark-rgb))' : 'rgba(255,255,255,0.15)',
             transition: 'width 0.3s, background 0.3s',
           }}
         />
@@ -80,8 +80,8 @@ function ChoiceButton({
   const isSel  = selected?.rank === choice.rank;
   const isCorr = choice.rank === correct.rank;
 
-  let bg = hov && phase === 'playing' ? 'rgba(212,175,55,0.1)' : 'rgba(255,255,255,0.04)';
-  let borderCol = hov && phase === 'playing' ? 'rgba(212,175,55,0.45)' : 'rgba(255,255,255,0.1)';
+  let bg = hov && phase === 'playing' ? 'rgba(var(--gold-dark-rgb),0.1)' : 'rgba(255,255,255,0.04)';
+  let borderCol = hov && phase === 'playing' ? 'rgba(var(--gold-dark-rgb),0.45)' : 'rgba(255,255,255,0.1)';
   let textCol = '#fff';
 
   if (phase === 'answered') {
@@ -157,9 +157,9 @@ export function QuizWidget() {
         position: 'absolute', top: -14, left: 20, zIndex: 2,
         display: 'inline-flex', alignItems: 'center', gap: 6,
         padding: '5px 14px',
-        background: 'linear-gradient(90deg,#b8960c,#d4af37,#b8960c)',
+        background: 'linear-gradient(90deg,#b8960c,rgb(var(--gold-dark-rgb)),#b8960c)',
         borderRadius: 20,
-        boxShadow: '0 2px 10px rgba(212,175,55,0.4)',
+        boxShadow: '0 2px 10px rgba(var(--gold-dark-rgb),0.4)',
         fontSize: 11, fontWeight: 800, color: '#000', letterSpacing: 0.5,
         textTransform: 'uppercase',
       }}>
@@ -169,9 +169,9 @@ export function QuizWidget() {
       {/* Main widget — 블러 반경 40px→16px으로 축소 (GPU 부담 절반) */}
       <div style={{
         borderRadius: 16,
-        border: '1.5px solid rgba(212,175,55,0.55)',
+        border: '1.5px solid rgba(var(--gold-dark-rgb),0.55)',
         background: 'linear-gradient(160deg,rgba(18,24,16,0.95) 0%,rgba(10,18,10,0.98) 100%)',
-        boxShadow: '0 0 0 1px rgba(212,175,55,0.1), 0 0 16px rgba(212,175,55,0.14), 0 6px 24px rgba(0,0,0,0.55)',
+        boxShadow: '0 0 0 1px rgba(var(--gold-dark-rgb),0.1), 0 0 16px rgba(var(--gold-dark-rgb),0.14), 0 6px 24px rgba(0,0,0,0.55)',
         overflow: 'hidden',
       }}>
 
@@ -179,7 +179,7 @@ export function QuizWidget() {
         <div style={{
           padding: '16px 22px 14px',
           background: 'linear-gradient(90deg,rgba(22,63,32,0.8) 0%,rgba(14,40,20,0.9) 100%)',
-          borderBottom: '1px solid rgba(212,175,55,0.25)',
+          borderBottom: '1px solid rgba(var(--gold-dark-rgb),0.25)',
           display: 'flex', alignItems: 'center', justifyContent: 'space-between',
         }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
@@ -205,20 +205,20 @@ export function QuizWidget() {
               <motion.div key="done" initial={false} animate={{ opacity: 1, scale: 1 }}
                 style={{ textAlign: 'center', padding: '10px 0 6px' }}>
                 <div style={{ fontSize: 52, marginBottom: 12 }}>{getGradeEmoji(score)}</div>
-                <div style={{ fontSize: 36, fontWeight: 900, color: '#d4af37', letterSpacing: '-1px', marginBottom: 4 }}>
+                <div style={{ fontSize: 36, fontWeight: 900, color: 'rgb(var(--gold-dark-rgb))', letterSpacing: '-1px', marginBottom: 4 }}>
                   {score}<span style={{ fontSize: 20, color: 'rgba(255,255,255,0.4)', fontWeight: 600 }}>/{TOTAL}</span>
                 </div>
                 <div style={{ fontSize: 14, color: 'rgba(255,255,255,0.65)', marginBottom: 22 }}>{getGradeText(score)}</div>
                 <div style={{ display: 'flex', gap: 10, justifyContent: 'center' }}>
                   <button onClick={restart} style={{
                     padding: '11px 22px', borderRadius: 12, fontSize: 13, fontWeight: 700, cursor: 'pointer',
-                    background: 'rgba(212,175,55,0.1)', border: '1.5px solid rgba(212,175,55,0.4)', color: '#d4af37',
+                    background: 'rgba(var(--gold-dark-rgb),0.1)', border: '1.5px solid rgba(var(--gold-dark-rgb),0.4)', color: 'rgb(var(--gold-dark-rgb))',
                   }}>
                     다시 도전 🔄
                   </button>
                   <Link href="/quiz" style={{
                     padding: '11px 22px', borderRadius: 12, fontSize: 13, fontWeight: 800,
-                    background: 'linear-gradient(90deg,#b8960c,#d4af37)',
+                    background: 'linear-gradient(90deg,#b8960c,rgb(var(--gold-dark-rgb)))',
                     color: '#000', textDecoration: 'none', display: 'inline-block',
                   }}>
                     10문제 전체 퀴즈 →
@@ -257,7 +257,7 @@ export function QuizWidget() {
                     <div style={{ width: 1, height: 24, background: 'rgba(255,255,255,0.1)' }} />
                   </div>
                   <div>
-                    <div style={{ fontSize: 9, fontWeight: 800, textTransform: 'uppercase', letterSpacing: 1.5, color: '#d4af37', marginBottom: 8 }}>
+                    <div style={{ fontSize: 9, fontWeight: 800, textTransform: 'uppercase', letterSpacing: 1.5, color: 'rgb(var(--gold-dark-rgb))', marginBottom: 8 }}>
                       내 홀카드 ★
                     </div>
                     <div style={{ display: 'flex', gap: 6 }}>
@@ -320,9 +320,9 @@ export function QuizWidget() {
                   <motion.button initial={false} animate={{ opacity: 1, y: 0 }} onClick={next}
                     style={{
                       width: '100%', padding: '14px', borderRadius: 12, fontSize: 14, fontWeight: 900,
-                      background: 'linear-gradient(90deg,#b8960c,#d4af37,#c9a227)',
+                      background: 'linear-gradient(90deg,#b8960c,rgb(var(--gold-dark-rgb)),#c9a227)',
                       color: '#000', cursor: 'pointer', border: 'none', letterSpacing: '-0.2px',
-                      boxShadow: '0 3px 14px rgba(212,175,55,0.28)',
+                      boxShadow: '0 3px 14px rgba(var(--gold-dark-rgb),0.28)',
                       /* opacity hover → no repaint (compositor-only) */
                       transition: 'opacity 0.15s, transform 0.1s',
                     }}
@@ -335,7 +335,7 @@ export function QuizWidget() {
                 {phase === 'playing' && (
                   <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 6, marginTop: 4 }}>
                     <span style={{ fontSize: 11, color: 'rgba(255,255,255,0.3)' }}>현재 점수</span>
-                    <span style={{ fontSize: 13, fontWeight: 800, color: '#d4af37' }}>{score} / {qNum - 1}</span>
+                    <span style={{ fontSize: 13, fontWeight: 800, color: 'rgb(var(--gold-dark-rgb))' }}>{score} / {qNum - 1}</span>
                   </div>
                 )}
               </motion.div>

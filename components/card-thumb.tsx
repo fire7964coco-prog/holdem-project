@@ -71,7 +71,7 @@ function PokerCard({ rank, suit, w, h, tilt = 0, shadow = true }:
   return (
     <g transform={`rotate(${tilt})`} style={{ filter: shadow ? "drop-shadow(0 3px 8px rgba(0,0,0,0.45))" : "none" }}>
       <rect x={-w / 2} y={-h / 2} width={w} height={h} rx={Math.round(w * 0.1)}
-        fill="#fdf8ee" stroke="#d4af37" strokeWidth={1.2} />
+        fill="#fdf8ee" style={{ stroke: "rgb(var(--gold-dark-rgb))" }} strokeWidth={1.2} />
       <text x={-w / 2 + 4} y={-h / 2 + cornerFontSize + 2}
         fontSize={cornerFontSize} fill={color} fontFamily="Georgia,Times New Roman,serif" fontWeight="bold">{rank}</text>
       <text x={-w / 2 + 4} y={-h / 2 + cornerFontSize * 2 + 4}

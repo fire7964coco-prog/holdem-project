@@ -193,7 +193,7 @@ export default function BlogIndex({
             >
               {/* 배경 */}
               <div className="absolute inset-0 bg-gradient-to-br from-[#1c0b35] via-[#0d1f3a] to-[#071a0e]" />
-              <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_50%,rgba(212,175,55,0.18)_0%,transparent_65%)]" />
+              <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_50%,rgba(var(--gold-dark-rgb),0.18)_0%,transparent_65%)]" />
 
               {/* shimmer 광택 */}
               <motion.div
@@ -206,7 +206,7 @@ export default function BlogIndex({
               {/* 박동 테두리 */}
               <motion.div
                 className="absolute inset-0 rounded-2xl border-2 pointer-events-none"
-                animate={{ borderColor: ["rgba(212,175,55,0.35)", "rgba(212,175,55,0.75)", "rgba(212,175,55,0.35)"] }}
+                animate={{ borderColor: ["rgba(var(--gold-dark-rgb),0.35)", "rgba(var(--gold-dark-rgb),0.75)", "rgba(var(--gold-dark-rgb),0.35)"] }}
                 transition={{ repeat: Infinity, duration: 2.2, ease: "easeInOut" }}
               />
 
@@ -260,7 +260,7 @@ export default function BlogIndex({
               onClick={() => setActiveCategory(cat)}
               className={`flex-shrink-0 px-4 py-1.5 rounded-full text-sm font-semibold transition-all ${
                 activeCategory === cat
-                  ? "bg-primary text-primary-foreground shadow-[0_0_10px_rgba(212,175,55,0.3)]"
+                  ? "bg-primary text-primary-foreground shadow-[0_0_10px_rgba(var(--gold-dark-rgb),0.3)]"
                   : "bg-card border border-border text-muted-foreground hover:border-primary/50 hover:text-foreground"
               }`}
             >

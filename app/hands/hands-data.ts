@@ -123,7 +123,7 @@ export const HANDS: HandRank[] = [
     description: "같은 무늬의 10, J, Q, K, A — 포커 최강의 패.",
     prob: "0.0032%",
     example: ["A♠", "K♠", "Q♠", "J♠", "10♠"],
-    color: "border-primary shadow-[0_0_30px_rgba(212,175,55,0.4)] bg-primary/10",
+    color: "border-primary shadow-[0_0_30px_rgba(var(--gold-dark-rgb),0.4)] bg-primary/10",
   },
   {
     rank: 2,

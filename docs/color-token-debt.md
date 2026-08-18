@@ -3,17 +3,18 @@
 > `node scripts/scan-color-debt.mjs`로 재생성. 대상 = `components/` `app/` `lib/` (tsx·ts·css).
 > 제외 = `app/globals.css`(토큰 정의처) · `*Diagram.tsx`(SVG 일러스트).
 > 오탐 제거 = 색 문맥 없는 3~4자리 `#XXX` **34건**(「#1000」 같은 순위·수량 표기).
+> ✅ **이미 회수돼 제외된 자리 = 0건** (`var(--토큰)` 참조 — 부채가 아니다).
 
 ## 한눈에
 
 | 구역 | 자리 | 파일 | 성격 |
 |---|---:|---:|---|
-| **UI (components·app)** | **1322** | 57 | 🔴 토큰 회수 대상 — 톤 변경이 여기서 갈린다 |
+| **UI (components·app)** | **1188** | 57 | 🔴 토큰 회수 대상 — 톤 변경이 여기서 갈린다 |
 | **포스트 본문 인라인 스타일** | **9784** | 453 | 🟠 콘텐츠 편집 필요 · 다국어라 파급 큼 |
-| 데이터·기타 | 485 | 3 | 🟡 의미색(등급·상태)일 수 있음 — 개별 판정 |
-| **합계** | **11591** | 513 | |
+| 데이터·기타 | 481 | 4 | 🟡 의미색(등급·상태)일 수 있음 — 개별 판정 |
+| **합계** | **11453** | 514 | |
 
-**종류별**: hex 706 · rgba 9799 · arbitrary 96 · palette 990
+**종류별**: hex 642 · rgba 9725 · arbitrary 96 · palette 990
 
 ## 🔴 UI — 회수 대상
 
@@ -21,62 +22,62 @@
 
 | 파일 | 자리 | 내역 |
 |---|---:|---|
-| `app/calculator/calculator-client.tsx` | 146 | palette 139 · hex 6 · rgba 1 |
+| `app/calculator/calculator-client.tsx` | 141 | palette 139 · hex 2 |
 | `app/en/calculator/calculator-client.tsx` | 140 | palette 139 · hex 1 |
-| `components/quiz-widget.tsx` | 71 | hex 28 · rgba 43 |
+| `app/_archive/home-client.tsx` | 68 | palette 62 · rgba 6 |
 | `app/home-client.tsx` | 63 | palette 62 · rgba 1 |
-| `app/_archive/home-client.tsx` | 63 | palette 62 · rgba 1 |
 | `app/blog/roadmap/blog-roadmap-client.tsx` | 59 | hex 33 · arbitrary 1 · palette 25 |
 | `app/tournaments/tournaments-client.tsx` | 54 | palette 54 |
-| `app/win-rate-quiz/_simulator.tsx` | 45 | hex 27 · rgba 18 |
-| `app/blog/[slug]/blog-post-client.tsx` | 41 | hex 25 · rgba 7 · arbitrary 8 · palette 1 |
-| `components/tournament-guide-post.tsx` | 35 | rgba 10 · hex 13 · arbitrary 11 · palette 1 |
+| `components/quiz-widget.tsx` | 51 | hex 19 · rgba 32 |
+| `app/win-rate-quiz/_simulator.tsx` | 40 | hex 26 · rgba 14 |
+| `app/blog/[slug]/blog-post-client.tsx` | 38 | hex 23 · rgba 6 · arbitrary 8 · palette 1 |
 | `app/rules/rules-client.tsx` | 35 | hex 9 · arbitrary 9 · palette 17 |
-| `app/community/post-card.tsx` | 34 | hex 21 · rgba 13 |
-| `app/login/page.tsx` | 33 | hex 21 · rgba 12 |
-| `app/community/event-tab.tsx` | 31 | hex 12 · rgba 18 · palette 1 |
 | `app/pub/[region]/pub-region-client.tsx` | 31 | hex 13 · palette 5 · arbitrary 13 |
-| `app/blog/blog-index-client.tsx` | 30 | palette 6 · hex 10 · arbitrary 9 · rgba 5 |
-| `app/en/quiz/quiz-client.tsx` | 30 | hex 12 · rgba 4 · palette 14 |
-| `app/quiz/quiz-client.tsx` | 30 | hex 12 · rgba 4 · palette 14 |
+| `app/login/page.tsx` | 29 | hex 18 · rgba 11 |
+| `components/tournament-guide-post.tsx` | 26 | rgba 3 · hex 11 · arbitrary 11 · palette 1 |
+| `app/blog/blog-index-client.tsx` | 26 | palette 6 · hex 10 · arbitrary 9 · rgba 1 |
 | `app/rules/texas-holdem/rules-texas-holdem-client.tsx` | 25 | palette 25 |
-| `components/cluster-minimap.tsx` | 22 | hex 11 · arbitrary 11 |
-| `app/holdem-practice/holdem-practice-client.tsx` | 18 | hex 11 · rgba 2 · arbitrary 3 · palette 2 |
-| `components/intl-blog-post-client.tsx` | 17 | hex 8 · arbitrary 8 · palette 1 |
+| `components/cluster-minimap.tsx` | 24 | hex 11 · arbitrary 11 · rgba 2 |
+| `app/en/quiz/quiz-client.tsx` | 22 | hex 7 · rgba 1 · palette 14 |
+| `app/quiz/quiz-client.tsx` | 22 | hex 7 · rgba 1 · palette 14 |
+| `components/intl-blog-post-client.tsx` | 18 | rgba 1 · hex 8 · arbitrary 8 · palette 1 |
 | `app/admin/admin-client.tsx` | 17 | hex 17 |
-| `app/en/hand-chart/hand-chart-client.tsx` | 17 | hex 15 · rgba 1 · arbitrary 1 |
-| `app/hand-chart/hand-chart-client.tsx` | 17 | hex 15 · rgba 1 · arbitrary 1 |
 | `components/poker-odds-calculator.tsx` | 16 | palette 12 · hex 2 · arbitrary 2 |
-| `components/community-cta.tsx` | 14 | hex 11 · rgba 3 |
-| `app/community/chat-tab.tsx` | 14 | hex 11 · rgba 3 |
+| `app/community/post-card.tsx` | 16 | hex 15 · rgba 1 |
+| `app/en/hand-chart/hand-chart-client.tsx` | 15 | hex 14 · arbitrary 1 |
+| `app/hand-chart/hand-chart-client.tsx` | 15 | hex 14 · arbitrary 1 |
+| `app/holdem-practice/holdem-practice-client.tsx` | 15 | hex 9 · arbitrary 3 · rgba 1 · palette 2 |
 | `app/pub/pub-index-client.tsx` | 12 | hex 5 · palette 2 · arbitrary 5 |
+| `components/ranking-table.tsx` | 10 | rgba 1 · hex 4 · arbitrary 4 · palette 1 |
 | `components/site-popup.tsx` | 10 | rgba 2 · hex 8 |
 | `app/en/ranking/ranking-data.ts` | 10 | palette 10 |
-| `app/post/[id]/post-detail-client.tsx` | 10 | rgba 6 · hex 4 |
 | `app/ranking/ranking-data.ts` | 10 | palette 10 |
 | `app/rules/omaha/rules-omaha-client.tsx` | 10 | hex 3 · palette 4 · arbitrary 3 |
 | `app/strategy/strategy-client.tsx` | 10 | palette 10 |
-| `components/ranking-table.tsx` | 9 | hex 4 · arbitrary 4 · palette 1 |
+| `components/community-cta.tsx` | 9 | hex 8 · rgba 1 |
 | `app/rules/seven-card-stud/rules-seven-card-stud-client.tsx` | 9 | hex 3 · palette 3 · arbitrary 3 |
-| `components/blog-top-bar.tsx` | 8 | hex 5 · rgba 3 |
 | `components/reading-progress-bar.tsx` | 8 | hex 6 · rgba 2 |
-| `app/en/glossary/glossary-client.tsx` | 7 | hex 7 |
-| `components/feed-nav-arrows.tsx` | 6 | hex 4 · rgba 2 |
-| `components/card-thumb.tsx` | 5 | hex 4 · rgba 1 |
-| `components/footer.tsx` | 5 | hex 4 · arbitrary 1 |
-| `components/intl-footer.tsx` | 5 | hex 4 · arbitrary 1 |
-| `components/calc-cta-button.tsx` | 4 | hex 2 · arbitrary 2 |
+| `app/community/chat-tab.tsx` | 8 | hex 8 |
+| `app/community/event-tab.tsx` | 7 | hex 6 · palette 1 |
+| `app/en/glossary/glossary-client.tsx` | 7 | hex 6 · rgba 1 |
+| `components/calc-cta-button.tsx` | 6 | hex 2 · arbitrary 2 · rgba 2 |
+| `app/post/[id]/post-detail-client.tsx` | 6 | rgba 4 · hex 2 |
+| `components/card-thumb.tsx` | 4 | hex 3 · rgba 1 |
+| `components/feed-nav-arrows.tsx` | 4 | hex 3 · rgba 1 |
+| `components/footer.tsx` | 4 | hex 3 · arbitrary 1 |
+| `components/intl-footer.tsx` | 4 | hex 3 · arbitrary 1 |
 | `components/tournament-board.tsx` | 4 | palette 4 |
-| `app/community/community-client.tsx` | 4 | rgba 4 |
 | `app/en/ranking/ranking-client.tsx` | 4 | palette 4 |
 | `app/ranking/ranking-client.tsx` | 4 | palette 4 |
 | `app/solver/solver-client.tsx` | 4 | palette 4 |
-| `components/site-chrome.tsx` | 3 | hex 3 |
-| `components/solver-promo.tsx` | 3 | rgba 2 · hex 1 |
+| `components/blog-top-bar.tsx` | 3 | hex 3 |
 | `app/hands/hands-client.tsx` | 3 | palette 3 |
 | `components/bottom-tab-bar.tsx` | 2 | rgba 2 |
-| `components/hub-sidebar.tsx` | 2 | rgba 2 |
 | `components/side-rail.tsx` | 2 | hex 2 |
+| `components/site-chrome.tsx` | 2 | hex 2 |
+| `components/solver-promo.tsx` | 2 | rgba 2 |
+| `app/community/community-client.tsx` | 2 | rgba 2 |
+| `app/glossary/glossary-client.tsx` | 1 | rgba 1 |
 | `app/layout.tsx` | 1 | hex 1 |
 
 ## 🟠 포스트 본문 인라인 스타일
@@ -546,148 +547,141 @@
 | 파일 | 자리 | 내역 |
 |---|---:|---|
 | `lib/tournaments.ts` | 351 | palette 351 |
-| `lib/render-markdown.ts` | 119 | hex 64 · rgba 55 |
+| `lib/render-markdown.ts` | 107 | hex 64 · rgba 43 |
 | `lib/theme.ts` | 15 | hex 15 |
+| `lib/range-chart.ts` | 8 | rgba 8 |
 
 ## 🔴 UI — 자리별 전체 목록
 
-### `app/calculator/calculator-client.tsx` (146)
+### `app/calculator/calculator-client.tsx` (141)
 
-- **L19** — `text-slate-300` · `text-red-400` · `text-red-400` · `text-slate-300`
+- **L18** — `text-slate-300` · `text-red-400` · `text-red-400` · `text-slate-300`
   <br/>`const SUIT_COLORS = ["text-slate-300","text-red-400","text-red-400","text-slate-300"];`
-- **L20** — `bg-slate-800` · `bg-red-950` · `bg-red-950` · `bg-slate-800`
+- **L19** — `bg-slate-800` · `bg-red-950` · `bg-red-950` · `bg-slate-800`
   <br/>`const SUIT_BG    = ["bg-slate-800","bg-red-950","bg-red-950","bg-slate-800"];`
-- **L46** — `text-yellow-300`
+- **L45** — `text-yellow-300`
   <br/>`if (isFlush && isStraight && !isWheel && uniq[0]===12) return { rank:9, name:"로열 플러시 👑", color:"tex`
-- **L47** — `text-yellow-400`
+- **L46** — `text-yellow-400`
   <br/>`if (isFlush && isStraight) return { rank:8, name:"스트레이트 플러시 🌟", color:"text-yellow-400" };`
-- **L48** — `text-purple-400`
+- **L47** — `text-purple-400`
   <br/>`if (cnts[0]===4) return { rank:7, name:"포 오브 어 카인드 💎", color:"text-purple-400" };`
-- **L49** — `text-blue-400`
+- **L48** — `text-blue-400`
   <br/>`if (cnts[0]===3 && cnts[1]===2) return { rank:6, name:"풀 하우스 🏠", color:"text-blue-400" };`
-- **L50** — `text-cyan-400`
+- **L49** — `text-cyan-400`
   <br/>`if (isFlush) return { rank:5, name:"플러시 🌊", color:"text-cyan-400" };`
-- **L51** — `text-green-400`
+- **L50** — `text-green-400`
   <br/>`if (isStraight) return { rank:4, name:"스트레이트 ➡️", color:"text-green-400" };`
-- **L52** — `text-green-500`
+- **L51** — `text-green-500`
   <br/>`if (cnts[0]===3) return { rank:3, name:"트리플 3️⃣", color:"text-green-500" };`
-- **L53** — `text-lime-400`
+- **L52** — `text-lime-400`
   <br/>`if (cnts[0]===2 && cnts[1]===2) return { rank:2, name:"투 페어 ✌️", color:"text-lime-400" };`
-- **L70** — `text-yellow-300` · `bg-yellow-300` · `border-yellow-300`
+- **L69** — `text-yellow-300` · `bg-yellow-300` · `border-yellow-300`
   <br/>`1: { color:"text-yellow-300", bg:"bg-yellow-300/10 border-yellow-300/40" },`
-- **L71** — `text-green-400` · `bg-green-400` · `border-green-400`
+- **L70** — `text-green-400` · `bg-green-400` · `border-green-400`
   <br/>`2: { color:"text-green-400",  bg:"bg-green-400/10 border-green-400/40" },`
-- **L72** — `text-blue-400` · `bg-blue-400` · `border-blue-400`
+- **L71** — `text-blue-400` · `bg-blue-400` · `border-blue-400`
   <br/>`3: { color:"text-blue-400",   bg:"bg-blue-400/10 border-blue-400/40" },`
-- **L73** — `text-orange-400` · `bg-orange-400` · `border-orange-400`
+- **L72** — `text-orange-400` · `bg-orange-400` · `border-orange-400`
   <br/>`4: { color:"text-orange-400", bg:"bg-orange-400/10 border-orange-400/40" },`
-- **L74** — `text-red-400` · `bg-red-400` · `border-red-400`
+- **L73** — `text-red-400` · `bg-red-400` · `border-red-400`
   <br/>`5: { color:"text-red-400",    bg:"bg-red-400/10 border-red-400/40" },`
-- **L79** — `bg-yellow-300` · `bg-green-400` · `bg-blue-400` · `bg-orange-400` · `bg-red-400`
+- **L78** — `bg-yellow-300` · `bg-green-400` · `bg-blue-400` · `bg-orange-400` · `bg-red-400`
   <br/>`1: "bg-yellow-300", 2: "bg-green-400", 3: "bg-blue-400", 4: "bg-orange-400", 5: "bg-red-400",`
-- **L251** — `text-green-400` · `text-yellow-400` · `text-red-400`
+- **L250** — `text-green-400` · `text-yellow-400` · `text-red-400`
   <br/>`function pcolor(p: number) { return p>=35?"text-green-400":p>=20?"text-yellow-400":"text-red-400"; }`
-- **L252** — `bg-green-400` · `bg-yellow-400` · `bg-red-400`
+- **L251** — `bg-green-400` · `bg-yellow-400` · `bg-red-400`
   <br/>`function pbg(p: number) { return p>=35?"bg-green-400":p>=20?"bg-yellow-400":"bg-red-400"; }`
-- **L411** — `text-blue-400`
+- **L410** — `text-blue-400`
   <br/>`예상 추가 수익 (핸드 완성 시): <span className="text-blue-400">{implied.toLocaleString()}원</span>`
-- **L414** — `#60a5fa`
+- **L413** — `#60a5fa`
   <br/>`className="w-full h-2 rounded-full" style={{ accentColor: "#60a5fa" }} />`
-- **L419** — `bg-blue-400` · `border-blue-400`
+- **L418** — `bg-blue-400` · `border-blue-400`
   <br/>`<div className="mt-3 rounded-xl bg-blue-400/5 border border-blue-400/20 p-3">`
-- **L421** — `text-blue-400`
+- **L420** — `text-blue-400`
   <br/>`<p className="text-2xl font-black text-blue-400 mt-1">{impliedOdds}%</p>`
-- **L434** — `border-green-500` · `bg-green-500` · `text-green-400`
+- **L433** — `border-green-500` · `bg-green-500` · `text-green-400`
   <br/>`call: { box:"border-green-500/50 bg-green-500/10", text:"text-green-400", icon:"✅", title:"콜 (수익적)",`
-- **L436** — `border-yellow-500` · `bg-yellow-500` · `text-yellow-400`
+- **L435** — `border-yellow-500` · `bg-yellow-500` · `text-yellow-400`
   <br/>`even: { box:"border-yellow-500/50 bg-yellow-500/10", text:"text-yellow-400", icon:"⚖️", title:"손익분기 `
-- **L438** — `border-red-500` · `bg-red-500` · `text-red-400`
+- **L437** — `border-red-500` · `bg-red-500` · `text-red-400`
   <br/>`fold: { box:"border-red-500/50 bg-red-500/10", text:"text-red-400", icon:"❌", title:"폴드 권장",`
-- **L510** — `text-yellow-300`
+- **L509** — `text-yellow-300`
   <br/>`{ name:"로열 플러시", color:"text-yellow-300", ex:"A♠K♠Q♠J♠T♠" },`
-- **L511** — `text-yellow-400`
+- **L510** — `text-yellow-400`
   <br/>`{ name:"스트레이트 플러시", color:"text-yellow-400", ex:"9♥8♥7♥6♥5♥" },`
-- **L512** — `text-purple-400`
+- **L511** — `text-purple-400`
   <br/>`{ name:"포 오브 어 카인드", color:"text-purple-400", ex:"A♠A♥A♦A♣K♠" },`
-- **L513** — `text-blue-400`
+- **L512** — `text-blue-400`
   <br/>`{ name:"풀 하우스", color:"text-blue-400", ex:"K♠K♥K♦Q♠Q♥" },`
-- **L514** — `text-cyan-400`
+- **L513** — `text-cyan-400`
   <br/>`{ name:"플러시", color:"text-cyan-400", ex:"A♠J♠8♠5♠2♠" },`
-- **L515** — `text-green-400`
+- **L514** — `text-green-400`
   <br/>`{ name:"스트레이트", color:"text-green-400", ex:"T♠9♥8♦7♣6♠" },`
-- **L516** — `text-green-500`
+- **L515** — `text-green-500`
   <br/>`{ name:"트리플", color:"text-green-500", ex:"Q♠Q♥Q♦K♠A♥" },`
-- **L517** — `text-lime-400`
+- **L516** — `text-lime-400`
   <br/>`{ name:"투 페어", color:"text-lime-400", ex:"A♠A♥K♠K♥Q♦" },`
-- **L626** — `text-red-400` · `bg-red-400` · `border-red-400`
+- **L625** — `text-red-400` · `bg-red-400` · `border-red-400`
   <br/>`: spr < 4   ? { label:"낮은 SPR (커밋 구간)", color:"text-red-400", bg:"bg-red-400/10 border-red-400/40",`
-- **L628** — `text-red-400` · `text-yellow-400`
+- **L627** — `text-red-400` · `text-yellow-400`
   <br/>`actions:[["TPTK+","올인 고려","text-red-400"],["드로우","팟 오즈 계산 필수","text-yellow-400"],["약한 핸드","신중하게 폴드",`
-- **L629** — `text-yellow-400` · `bg-yellow-400` · `border-yellow-400`
+- **L628** — `text-yellow-400` · `bg-yellow-400` · `border-yellow-400`
   <br/>`: spr < 8   ? { label:"중간 SPR (유연 구간)", color:"text-yellow-400", bg:"bg-yellow-400/10 border-yellow-`
-- **L631** — `text-green-400` · `text-yellow-400`
+- **L630** — `text-green-400` · `text-yellow-400`
   <br/>`actions:[["투페어+","밸류 베팅","text-green-400"],["원페어","상황 봐서","text-yellow-400"],["드로우","위험 대비 수익 계산","t`
-- **L632** — `text-blue-400` · `bg-blue-400` · `border-blue-400`
+- **L631** — `text-blue-400` · `bg-blue-400` · `border-blue-400`
   <br/>`: spr < 15  ? { label:"높은 SPR (딥스택 시작)", color:"text-blue-400", bg:"bg-blue-400/10 border-blue-400/4`
-- **L634** — `text-green-400` · `text-blue-400` · `text-yellow-400`
+- **L633** — `text-green-400` · `text-blue-400` · `text-yellow-400`
   <br/>`actions:[["셋+","강하게 플레이","text-green-400"],["드로우","임플라이드 오즈 상승","text-blue-400"],["원페어/TPTK","신중하게",`
-- **L635** — `text-green-400` · `bg-green-400` · `border-green-400`
+- **L634** — `text-green-400` · `bg-green-400` · `border-green-400`
   <br/>`: { label:"매우 높은 SPR (딥스택)", color:"text-green-400", bg:"bg-green-400/10 border-green-400/40",`
-- **L637** — `text-green-400` · `text-blue-400` · `text-red-400`
+- **L636** — `text-green-400` · `text-blue-400` · `text-red-400`
   <br/>`actions:[["너트 핸드","크게 베팅 가능","text-green-400"],["드로우","매우 높은 임플라이드 오즈","text-blue-400"],["약한 메이드","조`
-- **L687** — `bg-red-400` · `border-red-400` · `text-red-400`
+- **L686** — `bg-red-400` · `border-red-400` · `text-red-400`
   <br/>`{ r:"SPR < 4", l:"커밋", c:"bg-red-400/20 border-red-400/40 text-red-400" },`
-- **L688** — `bg-yellow-400` · `border-yellow-400` · `text-yellow-400`
+- **L687** — `bg-yellow-400` · `border-yellow-400` · `text-yellow-400`
   <br/>`{ r:"4 ≤ SPR < 8", l:"유연", c:"bg-yellow-400/20 border-yellow-400/40 text-yellow-400" },`
-- **L689** — `bg-blue-400` · `border-blue-400` · `text-blue-400`
+- **L688** — `bg-blue-400` · `border-blue-400` · `text-blue-400`
   <br/>`{ r:"8 ≤ SPR < 15", l:"딥스택 시작", c:"bg-blue-400/20 border-blue-400/40 text-blue-400" },`
-- **L690** — `bg-green-400` · `border-green-400` · `text-green-400`
+- **L689** — `bg-green-400` · `border-green-400` · `text-green-400`
   <br/>`{ r:"SPR ≥ 15", l:"딥스택", c:"bg-green-400/20 border-green-400/40 text-green-400" },`
-- **L716** — `text-red-500` · `bg-red-900` · `border-red-500`
+- **L715** — `text-red-500` · `bg-red-900` · `border-red-500`
   <br/>`: M < 1  ? { name:"💀 데드 존", color:"text-red-500", bg:"bg-red-900/30 border-red-500/40",`
-- **L718** — `text-red-400` · `bg-red-500` · `border-red-500`
+- **L717** — `text-red-400` · `bg-red-500` · `border-red-500`
   <br/>`: M < 6  ? { name:"🔴 레드 존", color:"text-red-400", bg:"bg-red-500/10 border-red-500/40",`
-- **L720** — `text-orange-400` · `bg-orange-500` · `border-orange-500`
+- **L719** — `text-orange-400` · `bg-orange-500` · `border-orange-500`
   <br/>`: M < 10 ? { name:"🟠 오렌지 존", color:"text-orange-400", bg:"bg-orange-500/10 border-orange-500/40",`
-- **L722** — `text-yellow-400` · `bg-yellow-500` · `border-yellow-500`
+- **L721** — `text-yellow-400` · `bg-yellow-500` · `border-yellow-500`
   <br/>`: M < 20 ? { name:"🟡 옐로우 존", color:"text-yellow-400", bg:"bg-yellow-500/10 border-yellow-500/40",`
-- **L724** — `text-green-400` · `bg-green-500` · `border-green-500`
+- **L723** — `text-green-400` · `bg-green-500` · `border-green-500`
   <br/>`: { name:"🟢 그린 존", color:"text-green-400", bg:"bg-green-500/10 border-green-500/40",`
-- **L782** — `text-red-500` · `bg-red-900` · `border-red-500`
+- **L781** — `text-red-500` · `bg-red-900` · `border-red-500`
   <br/>`["💀 데드 존",  "< 1",  "text-red-500",   "bg-red-900/20 border-red-500/30",   "즉시 올인"],`
-- **L783** — `text-red-400` · `bg-red-500` · `border-red-500`
+- **L782** — `text-red-400` · `bg-red-500` · `border-red-500`
   <br/>`["🔴 레드 존",  "1–5",  "text-red-400",   "bg-red-500/10 border-red-500/30",   "푸시/폴드"],`
-- **L784** — `text-orange-400` · `bg-orange-500` · `border-orange-500`
+- **L783** — `text-orange-400` · `bg-orange-500` · `border-orange-500`
   <br/>`["🟠 오렌지 존","6–9",  "text-orange-400","bg-orange-500/10 border-orange-500/30","좁은 레인지"],`
-- **L785** — `text-yellow-400` · `bg-yellow-500` · `border-yellow-500`
+- **L784** — `text-yellow-400` · `bg-yellow-500` · `border-yellow-500`
   <br/>`["🟡 옐로우 존","10–19","text-yellow-400","bg-yellow-500/10 border-yellow-500/30","어그레시브 플레이"],`
-- **L786** — `text-green-400` · `bg-green-500` · `border-green-500`
+- **L785** — `text-green-400` · `bg-green-500` · `border-green-500`
   <br/>`["🟢 그린 존",  "20+",  "text-green-400", "bg-green-500/10 border-green-500/30", "자유로운 전략"],`
-- **L981** — `text-green-400` · `text-red-400`
+- **L980** — `text-green-400` · `text-red-400`
   <br/>`<td className={'px-3 py-1.5 text-right font-mono font-bold ${diff > 0.1 ? "text-green-400" : diff < `
-- **L992** — `text-green-400`
+- **L991** — `text-green-400`
   <br/>`<span className="text-green-400 font-bold flex-shrink-0">+차이</span>`
-- **L996** — `text-red-400`
+- **L995** — `text-red-400`
   <br/>`<span className="text-red-400 font-bold flex-shrink-0">−차이</span>`
-- **L1135** — `text-green-400`
+- **L1134** — `text-green-400`
   <br/>`<span className={'text-[26px] sm:text-4xl leading-none font-black tabular-nums ${isCall ? "text-gree`
-- **L1160** — `bg-green-500`
+- **L1159** — `bg-green-500`
   <br/>`<span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded-[3px] bg-green-500/90 i`
-- **L1187** — `bg-green-500` · `text-green-950`
+- **L1186** — `bg-green-500` · `text-green-950`
   <br/>`? "bg-green-500/90 text-green-950"`
-- **L1295** — `#1a3a2a`
-  <br/>`같은 다크 그린 계열에 배경만 한 톤 밝게(#1a3a2a).`
-- **L1300** — `#1a3a2a` · `rgba(255,255,255...)`
-  <br/>`style={{ background: "#1a3a2a", borderBottom: "1px solid rgba(255,255,255,0.10)", height: 62 }}`
-- **L1307** — `#f4f0e7`
-  <br/>`style={{ color: "#f4f0e7" }}`
-- **L1321** — `#f4f0e7`
-  <br/>`style={{ color: "#f4f0e7" }}`
-- **L1359** — `#e9c766`
-  <br/>`style={{ color: "#e9c766" }}`
-- **L1473** — `text-green-600` · `text-red-500`
+- **L1300** — `#1a3a2a`
+  <br/>`{/* 🔴 여기 있던 「모바일 상단 섹션 네비」(다크 그린 #1a3a2a · 62px · sticky top-0 z-40)는`
+- **L1400** — `text-green-600` · `text-red-500`
   <br/>`<td className={'px-3 py-2.5 text-right font-mono font-bold ${up ? "text-green-600" : "text-red-500"}`
-- **L1511** — `text-green-600` · `text-red-500`
+- **L1438** — `text-green-600` · `text-red-500`
   <br/>`<td className={'px-3 py-2.5 text-right font-mono font-bold ${up ? "text-green-600" : "text-red-500"}`
 
 ### `app/en/calculator/calculator-client.tsx` (140)
@@ -819,94 +813,92 @@
 - **L1357** — `text-green-600` · `text-red-500`
   <br/>`<td className={'px-3 py-2.5 text-right font-mono font-bold ${up ? "text-green-600" : "text-red-500"}`
 
-### `components/quiz-widget.tsx` (71)
+### `app/_archive/home-client.tsx` (68)
 
-- **L16** — `#0a0a0a` · `#f3f3f3`
-  <br/>`background: dim ? '#0a0a0a' : 'linear-gradient(145deg,#fff 0%,#f3f3f3 100%)',`
-- **L20** — `#d4af37` · `#1f1f1f` · `#c8c8c8`
-  <br/>`border: highlight ? '2px solid #d4af37' : '1px solid ${dim ? '#1f1f1f' : '#c8c8c8'}',`
-- **L22** — `rgba(212,175,55...)` · `rgba(0,0,0...)`
-  <br/>`? '0 0 14px rgba(212,175,55,0.6), 0 4px 10px rgba(0,0,0,0.4)'`
-- **L23** — `rgba(0,0,0...)`
-  <br/>`: dim ? 'none' : '0 3px 8px rgba(0,0,0,0.45)',`
-- **L30** — `#dc2626` · `#111827`
-  <br/>`<span style={{ fontSize: 13, fontWeight: 900, color: dim ? '#222' : isRed ? '#dc2626' : '#111827', l`
-- **L33** — `#dc2626` · `#111827`
-  <br/>`<span style={{ fontSize: 15, lineHeight: 1, marginTop: 2, color: dim ? '#222' : isRed ? '#dc2626' : `
-- **L50** — `#d4af37` · `rgba(255,255,255...)`
-  <br/>`background: i < current ? '#d4af37' : 'rgba(255,255,255,0.15)',`
-- **L83** — `rgba(212,175,55...)` · `rgba(255,255,255...)`
-  <br/>`let bg = hov && phase === 'playing' ? 'rgba(212,175,55,0.1)' : 'rgba(255,255,255,0.04)';`
-- **L84** — `rgba(212,175,55...)` · `rgba(255,255,255...)`
-  <br/>`let borderCol = hov && phase === 'playing' ? 'rgba(212,175,55,0.45)' : 'rgba(255,255,255,0.1)';`
-- **L88** — `#4ade80` · `rgba(34,197,94...)` · `rgba(34,197,94...)`
-  <br/>`if (isCorr)      { bg = 'rgba(34,197,94,0.12)';  borderCol = 'rgba(34,197,94,0.6)';  textCol = '#4ad`
-- **L89** — `#f87171` · `rgba(239,68,68...)` · `rgba(239,68,68...)`
-  <br/>`else if (isSel)  { bg = 'rgba(239,68,68,0.12)';  borderCol = 'rgba(239,68,68,0.6)';  textCol = '#f87`
-- **L111** — `rgba(255,255,255...)`
-  <br/>`<div style={{ fontSize: 10, color: 'rgba(255,255,255,0.35)', marginTop: 2 }}>{choice.engName}</div>`
-- **L112** — `#4ade80`
-  <br/>`{phase === 'answered' && isCorr && <div style={{ fontSize: 11, color: '#4ade80', fontWeight: 800, ma`
-- **L113** — `#f87171`
-  <br/>`{phase === 'answered' && isSel && !isCorr && <div style={{ fontSize: 11, color: '#f87171', fontWeigh`
-- **L160** — `#b8960c` · `#d4af37` · `#b8960c`
-  <br/>`background: 'linear-gradient(90deg,#b8960c,#d4af37,#b8960c)',`
-- **L162** — `rgba(212,175,55...)`
-  <br/>`boxShadow: '0 2px 10px rgba(212,175,55,0.4)',`
-- **L172** — `rgba(212,175,55...)`
-  <br/>`border: '1.5px solid rgba(212,175,55,0.55)',`
-- **L173** — `rgba(18,24,16...)` · `rgba(10,18,10...)`
-  <br/>`background: 'linear-gradient(160deg,rgba(18,24,16,0.95) 0%,rgba(10,18,10,0.98) 100%)',`
-- **L174** — `rgba(212,175,55...)` · `rgba(212,175,55...)` · `rgba(0,0,0...)`
-  <br/>`boxShadow: '0 0 0 1px rgba(212,175,55,0.1), 0 0 16px rgba(212,175,55,0.14), 0 6px 24px rgba(0,0,0,0.`
-- **L181** — `rgba(22,63,32...)` · `rgba(14,40,20...)`
-  <br/>`background: 'linear-gradient(90deg,rgba(22,63,32,0.8) 0%,rgba(14,40,20,0.9) 100%)',`
-- **L182** — `rgba(212,175,55...)`
-  <br/>`borderBottom: '1px solid rgba(212,175,55,0.25)',`
-- **L189** — `rgba(255,255,255...)`
-  <br/>`<div style={{ fontSize: 11, color: 'rgba(255,255,255,0.45)', marginTop: 1 }}>7장 카드에서 최강 족보를 맞혀보세요</d`
-- **L194** — `rgba(255,255,255...)`
-  <br/>`<div style={{ fontSize: 11, color: 'rgba(255,255,255,0.4)', marginBottom: 4 }}>진행</div>`
-- **L208** — `#d4af37`
-  <br/>`<div style={{ fontSize: 36, fontWeight: 900, color: '#d4af37', letterSpacing: '-1px', marginBottom: `
-- **L209** — `rgba(255,255,255...)`
-  <br/>`{score}<span style={{ fontSize: 20, color: 'rgba(255,255,255,0.4)', fontWeight: 600 }}>/{TOTAL}</spa`
-- **L211** — `rgba(255,255,255...)`
-  <br/>`<div style={{ fontSize: 14, color: 'rgba(255,255,255,0.65)', marginBottom: 22 }}>{getGradeText(score`
-- **L215** — `#d4af37` · `rgba(212,175,55...)` · `rgba(212,175,55...)`
-  <br/>`background: 'rgba(212,175,55,0.1)', border: '1.5px solid rgba(212,175,55,0.4)', color: '#d4af37',`
-- **L221** — `#b8960c` · `#d4af37`
-  <br/>`background: 'linear-gradient(90deg,#b8960c,#d4af37)',`
-- **L238** — `rgba(255,255,255...)` · `rgba(255,255,255...)`
-  <br/>`background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)',`
-- **L243** — `rgba(255,255,255...)`
-  <br/>`<div style={{ fontSize: 9, fontWeight: 800, textTransform: 'uppercase', letterSpacing: 1.5, color: '`
-- **L255** — `rgba(255,255,255...)`
-  <br/>`<div style={{ width: 1, height: 24, background: 'rgba(255,255,255,0.1)' }} />`
-- **L256** — `rgba(255,255,255...)`
-  <br/>`<span style={{ fontSize: 9, color: 'rgba(255,255,255,0.2)', fontWeight: 700 }}>+</span>`
-- **L257** — `rgba(255,255,255...)`
-  <br/>`<div style={{ width: 1, height: 24, background: 'rgba(255,255,255,0.1)' }} />`
-- **L260** — `#d4af37`
-  <br/>`<div style={{ fontSize: 9, fontWeight: 800, textTransform: 'uppercase', letterSpacing: 1.5, color: '`
-- **L297** — `rgba(34,197,94...)` · `rgba(239,68,68...)`
-  <br/>`background: isRight ? 'rgba(34,197,94,0.08)' : 'rgba(239,68,68,0.08)',`
-- **L298** — `rgba(34,197,94...)` · `rgba(239,68,68...)`
-  <br/>`border: '1.5px solid ${isRight ? 'rgba(34,197,94,0.35)' : 'rgba(239,68,68,0.35)'}',`
-- **L303** — `#4ade80` · `#f87171`
-  <br/>`<div style={{ fontSize: 13, fontWeight: 800, color: isRight ? '#4ade80' : '#f87171' }}>`
-- **L307** — `rgba(255,255,255...)`
-  <br/>`<div style={{ fontSize: 12, color: 'rgba(255,255,255,0.5)', marginTop: 3, lineHeight: 1.5 }}>`
-- **L311** — `rgba(255,255,255...)`
-  <br/>`<div style={{ fontSize: 11, color: 'rgba(255,255,255,0.3)', marginTop: 4 }}>`
-- **L323** — `#b8960c` · `#d4af37` · `#c9a227`
-  <br/>`background: 'linear-gradient(90deg,#b8960c,#d4af37,#c9a227)',`
-- **L325** — `rgba(212,175,55...)`
-  <br/>`boxShadow: '0 3px 14px rgba(212,175,55,0.28)',`
-- **L337** — `rgba(255,255,255...)`
-  <br/>`<span style={{ fontSize: 11, color: 'rgba(255,255,255,0.3)' }}>현재 점수</span>`
-- **L338** — `#d4af37`
-  <br/>`<span style={{ fontSize: 13, fontWeight: 800, color: '#d4af37' }}>{score} / {qNum - 1}</span>`
+- **L31** — `bg-yellow-500`
+  <br/>`badgeColor: "bg-yellow-500",`
+- **L42** — `bg-red-600`
+  <br/>`badgeColor: "bg-red-600",`
+- **L53** — `bg-green-600`
+  <br/>`badgeColor: "bg-green-600",`
+- **L64** — `bg-blue-600`
+  <br/>`badgeColor: "bg-blue-600",`
+- **L75** — `bg-purple-600`
+  <br/>`badgeColor: "bg-purple-600",`
+- **L142** — `text-red-400` · `bg-red-500` · `border-red-500`
+  <br/>`{ name: "얼리 포지션 (EP)", seats: "UTG, UTG+1", strategy: "프리미엄 핸드만 플레이. AA, KK, QQ, AK 위주로 타이트하게.", col`
+- **L143** — `text-yellow-400` · `bg-yellow-500` · `border-yellow-500`
+  <br/>`{ name: "미들 포지션 (MP)", seats: "MP1, MP2, MP3", strategy: "EP보다 약간 넓게. JJ, TT, AQ, AJ 추가 가능.", color:`
+- **L144** — `text-green-400` · `bg-green-500` · `border-green-500`
+  <br/>`{ name: "레이트 포지션 (LP)", seats: "CO, BTN", strategy: "가장 유리한 자리. 더 넓은 핸드 레인지로 공격적 플레이 가능.", color: "t`
+- **L145** — `text-blue-400` · `bg-blue-500` · `border-blue-500`
+  <br/>`{ name: "블라인드 (SB/BB)", seats: "스몰·빅 블라인드", strategy: "강제로 베팅. BB는 수비적, SB는 가장 불리한 포지션.", color: "te`
+- **L149** — `bg-yellow-500` · `border-yellow-500` · `text-yellow-300`
+  <br/>`{ tier: "S급 (항상 플레이)", hands: ["AA", "KK", "QQ", "AKs"], color: "bg-yellow-500/20 border-yellow-500/`
+- **L150** — `bg-green-500` · `border-green-500` · `text-green-300`
+  <br/>`{ tier: "A급 (강력 추천)", hands: ["JJ", "TT", "AQs", "AKo", "KQs"], color: "bg-green-500/20 border-green`
+- **L151** — `bg-blue-500` · `border-blue-500` · `text-blue-300`
+  <br/>`{ tier: "B급 (포지션에 따라)", hands: ["99", "88", "AJs", "AQo", "KJs", "QJs"], color: "bg-blue-500/20 bord`
+- **L180** — `fill-yellow-400` · `text-yellow-400` · `fill-yellow-400` · `text-yellow-400` · `text-gray-600`
+  <br/>`className={'w-4 h-4 ${i <= Math.floor(rating) ? "fill-yellow-400 text-yellow-400" : i - 0.5 <= ratin`
+- **L183** — `text-yellow-400`
+  <br/>`<span className="ml-1.5 text-sm font-bold text-yellow-400">{rating}/5</span>`
+- **L274** — `rgba(212,175,55...)`
+  <br/>`<span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/45 te`
+- **L281** — `rgba(0,0,0...)`
+  <br/>`style={{ textShadow: "0 4px 32px rgba(0,0,0,0.55)" }}`
+- **L334** — `rgba(212,175,55...)`
+  <br/>`<div className="w-11 h-11 rounded-full flex items-center justify-center shadow-[0_4px_14px_-4px_rgba`
+- **L361** — `rgba(212,175,55...)`
+  <br/>`<div className="mb-8 rounded-2xl overflow-hidden border border-primary/20 shadow-[0_0_30px_rgba(212,`
+- **L396** — `border-yellow-500` · `bg-yellow-500`
+  <br/>`{ step: "1단계", name: "프리플랍 (Pre-Flop)", desc: "각 플레이어에게 홀 카드 2장을 배분합니다. 스몰 블라인드·빅 블라인드 강제 베팅 후, 왼쪽부터`
+- **L397** — `border-green-500` · `bg-green-500`
+  <br/>`{ step: "2단계", name: "플랍 (Flop)", desc: "공용 카드 3장을 테이블 중앙에 공개합니다. 본격적인 핸드 강도 판단 시작. 가장 많은 정보가 나오는 단계`
+- **L398** — `border-blue-500` · `bg-blue-500`
+  <br/>`{ step: "3단계", name: "턴 (Turn)", desc: "4번째 공용 카드를 공개합니다. 팟이 커지고 베팅 압박이 높아지는 단계. 드로우 핸드의 완성 여부가 중요해집`
+- **L399** — `border-purple-500` · `bg-purple-500`
+  <br/>`{ step: "4단계", name: "리버 (River)", desc: "마지막 5번째 공용 카드 공개. 최종 베팅 라운드 후 쇼다운. 남은 플레이어 중 가장 강한 패를 가진 사`
+- **L414** — `text-yellow-400`
+  <br/>`<Link href="/rules" className="inline-flex items-center gap-2 text-primary font-semibold hover:text-`
+- **L431** — `text-green-400`
+  <br/>`<CheckCircle className="w-3.5 h-3.5 text-green-400" />`
+- **L443** — `bg-yellow-500` · `bg-gray-500`
+  <br/>`<div className={'flex items-center justify-center md:w-20 py-4 md:py-0 ${idx === 0 ? "bg-yellow-500/`
+- **L444** — `text-yellow-400` · `text-gray-400`
+  <br/>`<span className={'text-3xl font-black ${idx === 0 ? "text-yellow-400" : idx === 1 ? "text-gray-400" `
+- **L460** — `text-green-400`
+  <br/>`<CheckCircle className="w-3 h-3 text-green-400 flex-shrink-0" /> {pro}`
+- **L470** — `rgba(212,175,55...)`
+  <br/>`<a href={site.href} className="w-full text-center px-6 py-2.5 rounded-lg bg-primary text-primary-for`
+- **L481** — `text-yellow-400`
+  <br/>`<Link href="/ranking" className="inline-flex items-center gap-2 text-primary font-semibold hover:tex`
+- **L510** — `bg-yellow-500`
+  <br/>`<tr key={hand.rank} className={'border-b border-border/50 ${idx === 0 ? "bg-yellow-500/5" : ""}'}>`
+- **L512** — `text-yellow-400`
+  <br/>`<span className={'font-black text-lg ${idx === 0 ? "text-yellow-400" : idx <= 2 ? "text-primary" : "`
+- **L525** — `text-yellow-400`
+  <br/>`<Link href="/hands" className="inline-flex items-center gap-2 text-primary font-semibold hover:text-`
+- **L553** — `text-yellow-400`
+  <br/>`<Link href="/strategy" className="inline-flex items-center gap-2 text-primary font-semibold hover:te`
+- **L585** — `text-yellow-400`
+  <br/>`<Link href="/strategy" className="inline-flex items-center gap-2 text-primary font-semibold hover:te`
+- **L638** — `text-yellow-400`
+  <br/>`<Link href="/strategy" className="inline-flex items-center gap-2 text-primary font-semibold hover:te`
+- **L653** — `bg-red-500` · `border-red-500`
+  <br/>`<div className="flex-shrink-0 w-12 h-12 rounded-full bg-red-500/10 border border-red-500/20 flex ite`
+- **L654** — `text-red-400`
+  <br/>`<AlertTriangle className="w-5 h-5 text-red-400" />`
+- **L667** — `text-yellow-400`
+  <br/>`<Link href="/strategy" className="inline-flex items-center gap-2 text-primary font-semibold hover:te`
+- **L712** — `to-yellow-600` · `rgba(212,175,55...)`
+  <br/>`<div className="w-24 h-24 rounded-full bg-gradient-to-br from-primary to-yellow-600 flex items-cente`
+- **L718** — `text-green-400`
+  <br/>`<CheckCircle className="w-4 h-4 text-green-400" />`
+- **L743** — `text-yellow-400`
+  <br/>`<Link href="/blog" className="hidden md:flex items-center gap-1 text-primary text-sm font-semibold h`
+- **L790** — `text-yellow-400`
+  <br/>`<Link href="/glossary" className="inline-flex items-center gap-2 text-primary font-semibold hover:te`
 
 ### `app/home-client.tsx` (63)
 
@@ -985,85 +977,6 @@
 - **L745** — `text-yellow-400`
   <br/>`<Link href="/blog" className="hidden md:flex items-center gap-1 text-primary text-sm font-semibold h`
 - **L792** — `text-yellow-400`
-  <br/>`<Link href="/glossary" className="inline-flex items-center gap-2 text-primary font-semibold hover:te`
-
-### `app/_archive/home-client.tsx` (63)
-
-- **L31** — `bg-yellow-500`
-  <br/>`badgeColor: "bg-yellow-500",`
-- **L42** — `bg-red-600`
-  <br/>`badgeColor: "bg-red-600",`
-- **L53** — `bg-green-600`
-  <br/>`badgeColor: "bg-green-600",`
-- **L64** — `bg-blue-600`
-  <br/>`badgeColor: "bg-blue-600",`
-- **L75** — `bg-purple-600`
-  <br/>`badgeColor: "bg-purple-600",`
-- **L142** — `text-red-400` · `bg-red-500` · `border-red-500`
-  <br/>`{ name: "얼리 포지션 (EP)", seats: "UTG, UTG+1", strategy: "프리미엄 핸드만 플레이. AA, KK, QQ, AK 위주로 타이트하게.", col`
-- **L143** — `text-yellow-400` · `bg-yellow-500` · `border-yellow-500`
-  <br/>`{ name: "미들 포지션 (MP)", seats: "MP1, MP2, MP3", strategy: "EP보다 약간 넓게. JJ, TT, AQ, AJ 추가 가능.", color:`
-- **L144** — `text-green-400` · `bg-green-500` · `border-green-500`
-  <br/>`{ name: "레이트 포지션 (LP)", seats: "CO, BTN", strategy: "가장 유리한 자리. 더 넓은 핸드 레인지로 공격적 플레이 가능.", color: "t`
-- **L145** — `text-blue-400` · `bg-blue-500` · `border-blue-500`
-  <br/>`{ name: "블라인드 (SB/BB)", seats: "스몰·빅 블라인드", strategy: "강제로 베팅. BB는 수비적, SB는 가장 불리한 포지션.", color: "te`
-- **L149** — `bg-yellow-500` · `border-yellow-500` · `text-yellow-300`
-  <br/>`{ tier: "S급 (항상 플레이)", hands: ["AA", "KK", "QQ", "AKs"], color: "bg-yellow-500/20 border-yellow-500/`
-- **L150** — `bg-green-500` · `border-green-500` · `text-green-300`
-  <br/>`{ tier: "A급 (강력 추천)", hands: ["JJ", "TT", "AQs", "AKo", "KQs"], color: "bg-green-500/20 border-green`
-- **L151** — `bg-blue-500` · `border-blue-500` · `text-blue-300`
-  <br/>`{ tier: "B급 (포지션에 따라)", hands: ["99", "88", "AJs", "AQo", "KJs", "QJs"], color: "bg-blue-500/20 bord`
-- **L180** — `fill-yellow-400` · `text-yellow-400` · `fill-yellow-400` · `text-yellow-400` · `text-gray-600`
-  <br/>`className={'w-4 h-4 ${i <= Math.floor(rating) ? "fill-yellow-400 text-yellow-400" : i - 0.5 <= ratin`
-- **L183** — `text-yellow-400`
-  <br/>`<span className="ml-1.5 text-sm font-bold text-yellow-400">{rating}/5</span>`
-- **L281** — `rgba(0,0,0...)`
-  <br/>`style={{ textShadow: "0 4px 32px rgba(0,0,0,0.55)" }}`
-- **L396** — `border-yellow-500` · `bg-yellow-500`
-  <br/>`{ step: "1단계", name: "프리플랍 (Pre-Flop)", desc: "각 플레이어에게 홀 카드 2장을 배분합니다. 스몰 블라인드·빅 블라인드 강제 베팅 후, 왼쪽부터`
-- **L397** — `border-green-500` · `bg-green-500`
-  <br/>`{ step: "2단계", name: "플랍 (Flop)", desc: "공용 카드 3장을 테이블 중앙에 공개합니다. 본격적인 핸드 강도 판단 시작. 가장 많은 정보가 나오는 단계`
-- **L398** — `border-blue-500` · `bg-blue-500`
-  <br/>`{ step: "3단계", name: "턴 (Turn)", desc: "4번째 공용 카드를 공개합니다. 팟이 커지고 베팅 압박이 높아지는 단계. 드로우 핸드의 완성 여부가 중요해집`
-- **L399** — `border-purple-500` · `bg-purple-500`
-  <br/>`{ step: "4단계", name: "리버 (River)", desc: "마지막 5번째 공용 카드 공개. 최종 베팅 라운드 후 쇼다운. 남은 플레이어 중 가장 강한 패를 가진 사`
-- **L414** — `text-yellow-400`
-  <br/>`<Link href="/rules" className="inline-flex items-center gap-2 text-primary font-semibold hover:text-`
-- **L431** — `text-green-400`
-  <br/>`<CheckCircle className="w-3.5 h-3.5 text-green-400" />`
-- **L443** — `bg-yellow-500` · `bg-gray-500`
-  <br/>`<div className={'flex items-center justify-center md:w-20 py-4 md:py-0 ${idx === 0 ? "bg-yellow-500/`
-- **L444** — `text-yellow-400` · `text-gray-400`
-  <br/>`<span className={'text-3xl font-black ${idx === 0 ? "text-yellow-400" : idx === 1 ? "text-gray-400" `
-- **L460** — `text-green-400`
-  <br/>`<CheckCircle className="w-3 h-3 text-green-400 flex-shrink-0" /> {pro}`
-- **L481** — `text-yellow-400`
-  <br/>`<Link href="/ranking" className="inline-flex items-center gap-2 text-primary font-semibold hover:tex`
-- **L510** — `bg-yellow-500`
-  <br/>`<tr key={hand.rank} className={'border-b border-border/50 ${idx === 0 ? "bg-yellow-500/5" : ""}'}>`
-- **L512** — `text-yellow-400`
-  <br/>`<span className={'font-black text-lg ${idx === 0 ? "text-yellow-400" : idx <= 2 ? "text-primary" : "`
-- **L525** — `text-yellow-400`
-  <br/>`<Link href="/hands" className="inline-flex items-center gap-2 text-primary font-semibold hover:text-`
-- **L553** — `text-yellow-400`
-  <br/>`<Link href="/strategy" className="inline-flex items-center gap-2 text-primary font-semibold hover:te`
-- **L585** — `text-yellow-400`
-  <br/>`<Link href="/strategy" className="inline-flex items-center gap-2 text-primary font-semibold hover:te`
-- **L638** — `text-yellow-400`
-  <br/>`<Link href="/strategy" className="inline-flex items-center gap-2 text-primary font-semibold hover:te`
-- **L653** — `bg-red-500` · `border-red-500`
-  <br/>`<div className="flex-shrink-0 w-12 h-12 rounded-full bg-red-500/10 border border-red-500/20 flex ite`
-- **L654** — `text-red-400`
-  <br/>`<AlertTriangle className="w-5 h-5 text-red-400" />`
-- **L667** — `text-yellow-400`
-  <br/>`<Link href="/strategy" className="inline-flex items-center gap-2 text-primary font-semibold hover:te`
-- **L712** — `to-yellow-600`
-  <br/>`<div className="w-24 h-24 rounded-full bg-gradient-to-br from-primary to-yellow-600 flex items-cente`
-- **L718** — `text-green-400`
-  <br/>`<CheckCircle className="w-4 h-4 text-green-400" />`
-- **L743** — `text-yellow-400`
-  <br/>`<Link href="/blog" className="hidden md:flex items-center gap-1 text-primary text-sm font-semibold h`
-- **L790** — `text-yellow-400`
   <br/>`<Link href="/glossary" className="inline-flex items-center gap-2 text-primary font-semibold hover:te`
 
 ### `app/blog/roadmap/blog-roadmap-client.tsx` (59)
@@ -1216,10 +1129,81 @@
 - **L1102** — `text-yellow-400`
   <br/>`<div className="text-[11px] font-bold text-yellow-400 uppercase tracking-widest mb-1">WSOP 2026 · 메인`
 
-### `app/win-rate-quiz/_simulator.tsx` (45)
+### `components/quiz-widget.tsx` (51)
 
-- **L29** — `#d4af37`
-  <br/>`const GOLD = "#d4af37";`
+- **L16** — `#0a0a0a` · `#f3f3f3`
+  <br/>`background: dim ? '#0a0a0a' : 'linear-gradient(145deg,#fff 0%,#f3f3f3 100%)',`
+- **L20** — `#1f1f1f` · `#c8c8c8`
+  <br/>`border: highlight ? '2px solid rgb(var(--gold-dark-rgb))' : '1px solid ${dim ? '#1f1f1f' : '#c8c8c8'`
+- **L22** — `rgba(0,0,0...)`
+  <br/>`? '0 0 14px rgba(var(--gold-dark-rgb),0.6), 0 4px 10px rgba(0,0,0,0.4)'`
+- **L23** — `rgba(0,0,0...)`
+  <br/>`: dim ? 'none' : '0 3px 8px rgba(0,0,0,0.45)',`
+- **L30** — `#dc2626` · `#111827`
+  <br/>`<span style={{ fontSize: 13, fontWeight: 900, color: dim ? '#222' : isRed ? '#dc2626' : '#111827', l`
+- **L33** — `#dc2626` · `#111827`
+  <br/>`<span style={{ fontSize: 15, lineHeight: 1, marginTop: 2, color: dim ? '#222' : isRed ? '#dc2626' : `
+- **L50** — `rgba(255,255,255...)`
+  <br/>`background: i < current ? 'rgb(var(--gold-dark-rgb))' : 'rgba(255,255,255,0.15)',`
+- **L83** — `rgba(255,255,255...)`
+  <br/>`let bg = hov && phase === 'playing' ? 'rgba(var(--gold-dark-rgb),0.1)' : 'rgba(255,255,255,0.04)';`
+- **L84** — `rgba(255,255,255...)`
+  <br/>`let borderCol = hov && phase === 'playing' ? 'rgba(var(--gold-dark-rgb),0.45)' : 'rgba(255,255,255,0`
+- **L88** — `#4ade80` · `rgba(34,197,94...)` · `rgba(34,197,94...)`
+  <br/>`if (isCorr)      { bg = 'rgba(34,197,94,0.12)';  borderCol = 'rgba(34,197,94,0.6)';  textCol = '#4ad`
+- **L89** — `#f87171` · `rgba(239,68,68...)` · `rgba(239,68,68...)`
+  <br/>`else if (isSel)  { bg = 'rgba(239,68,68,0.12)';  borderCol = 'rgba(239,68,68,0.6)';  textCol = '#f87`
+- **L111** — `rgba(255,255,255...)`
+  <br/>`<div style={{ fontSize: 10, color: 'rgba(255,255,255,0.35)', marginTop: 2 }}>{choice.engName}</div>`
+- **L112** — `#4ade80`
+  <br/>`{phase === 'answered' && isCorr && <div style={{ fontSize: 11, color: '#4ade80', fontWeight: 800, ma`
+- **L113** — `#f87171`
+  <br/>`{phase === 'answered' && isSel && !isCorr && <div style={{ fontSize: 11, color: '#f87171', fontWeigh`
+- **L160** — `#b8960c` · `#b8960c`
+  <br/>`background: 'linear-gradient(90deg,#b8960c,rgb(var(--gold-dark-rgb)),#b8960c)',`
+- **L173** — `rgba(18,24,16...)` · `rgba(10,18,10...)`
+  <br/>`background: 'linear-gradient(160deg,rgba(18,24,16,0.95) 0%,rgba(10,18,10,0.98) 100%)',`
+- **L174** — `rgba(0,0,0...)`
+  <br/>`boxShadow: '0 0 0 1px rgba(var(--gold-dark-rgb),0.1), 0 0 16px rgba(var(--gold-dark-rgb),0.14), 0 6p`
+- **L181** — `rgba(22,63,32...)` · `rgba(14,40,20...)`
+  <br/>`background: 'linear-gradient(90deg,rgba(22,63,32,0.8) 0%,rgba(14,40,20,0.9) 100%)',`
+- **L189** — `rgba(255,255,255...)`
+  <br/>`<div style={{ fontSize: 11, color: 'rgba(255,255,255,0.45)', marginTop: 1 }}>7장 카드에서 최강 족보를 맞혀보세요</d`
+- **L194** — `rgba(255,255,255...)`
+  <br/>`<div style={{ fontSize: 11, color: 'rgba(255,255,255,0.4)', marginBottom: 4 }}>진행</div>`
+- **L209** — `rgba(255,255,255...)`
+  <br/>`{score}<span style={{ fontSize: 20, color: 'rgba(255,255,255,0.4)', fontWeight: 600 }}>/{TOTAL}</spa`
+- **L211** — `rgba(255,255,255...)`
+  <br/>`<div style={{ fontSize: 14, color: 'rgba(255,255,255,0.65)', marginBottom: 22 }}>{getGradeText(score`
+- **L221** — `#b8960c`
+  <br/>`background: 'linear-gradient(90deg,#b8960c,rgb(var(--gold-dark-rgb)))',`
+- **L238** — `rgba(255,255,255...)` · `rgba(255,255,255...)`
+  <br/>`background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)',`
+- **L243** — `rgba(255,255,255...)`
+  <br/>`<div style={{ fontSize: 9, fontWeight: 800, textTransform: 'uppercase', letterSpacing: 1.5, color: '`
+- **L255** — `rgba(255,255,255...)`
+  <br/>`<div style={{ width: 1, height: 24, background: 'rgba(255,255,255,0.1)' }} />`
+- **L256** — `rgba(255,255,255...)`
+  <br/>`<span style={{ fontSize: 9, color: 'rgba(255,255,255,0.2)', fontWeight: 700 }}>+</span>`
+- **L257** — `rgba(255,255,255...)`
+  <br/>`<div style={{ width: 1, height: 24, background: 'rgba(255,255,255,0.1)' }} />`
+- **L297** — `rgba(34,197,94...)` · `rgba(239,68,68...)`
+  <br/>`background: isRight ? 'rgba(34,197,94,0.08)' : 'rgba(239,68,68,0.08)',`
+- **L298** — `rgba(34,197,94...)` · `rgba(239,68,68...)`
+  <br/>`border: '1.5px solid ${isRight ? 'rgba(34,197,94,0.35)' : 'rgba(239,68,68,0.35)'}',`
+- **L303** — `#4ade80` · `#f87171`
+  <br/>`<div style={{ fontSize: 13, fontWeight: 800, color: isRight ? '#4ade80' : '#f87171' }}>`
+- **L307** — `rgba(255,255,255...)`
+  <br/>`<div style={{ fontSize: 12, color: 'rgba(255,255,255,0.5)', marginTop: 3, lineHeight: 1.5 }}>`
+- **L311** — `rgba(255,255,255...)`
+  <br/>`<div style={{ fontSize: 11, color: 'rgba(255,255,255,0.3)', marginTop: 4 }}>`
+- **L323** — `#b8960c` · `#c9a227`
+  <br/>`background: 'linear-gradient(90deg,#b8960c,rgb(var(--gold-dark-rgb)),#c9a227)',`
+- **L337** — `rgba(255,255,255...)`
+  <br/>`<span style={{ fontSize: 11, color: 'rgba(255,255,255,0.3)' }}>현재 점수</span>`
+
+### `app/win-rate-quiz/_simulator.tsx` (40)
+
 - **L30** — `#1f7a52` · `#12603f` · `#0b4229` · `#08331f`
   <br/>`const FELT = "radial-gradient(ellipse 120% 90% at 50% 42%, #1f7a52 0%, #12603f 45%, #0b4229 78%, #08`
 - **L31** — `rgba(255,255,255...)`
@@ -1234,13 +1218,13 @@
   <br/>`? "linear-gradient(135deg,#4b3535 0%,#584040 50%,#4b3535 100%)"`
 - **L128** — `#7f1d1d` · `#991b1b` · `#7f1d1d`
   <br/>`: "linear-gradient(135deg,#7f1d1d 0%,#991b1b 50%,#7f1d1d 100%)",`
-- **L129** — `rgba(255,255,255...)` · `rgba(212,175,55...)`
-  <br/>`border: '2px solid ${muted ? "rgba(255,255,255,0.18)" : "rgba(212,175,55,0.5)"}',`
+- **L129** — `rgba(255,255,255...)`
+  <br/>`border: '2px solid ${muted ? "rgba(255,255,255,0.18)" : "rgba(var(--gold-dark-rgb),0.5)"}',`
 - **L130** — `rgba(0,0,0...)`
   <br/>`boxShadow: "0 2px 6px rgba(0,0,0,0.45)",`
-- **L135** — `rgba(255,255,255...)` · `rgba(212,175,55...)`
-  <br/>`border: '1px solid ${muted ? "rgba(255,255,255,0.14)" : "rgba(212,175,55,0.45)"}',`
-- **L136** — `rgba(255,255,255...)` · `rgba(212,175,55...)` · `rgba(255,255,255...)` · `rgba(212,175,55...)`
+- **L135** — `rgba(255,255,255...)`
+  <br/>`border: '1px solid ${muted ? "rgba(255,255,255,0.14)" : "rgba(var(--gold-dark-rgb),0.45)"}',`
+- **L136** — `rgba(255,255,255...)` · `rgba(255,255,255...)`
   <br/>`background: 'repeating-linear-gradient(45deg,transparent,transparent 2.5px,${muted ? "rgba(255,255,2`
 - **L142** — `#dc2626` · `#0f172a`
   <br/>`const color = isRed ? "#dc2626" : "#0f172a";`
@@ -1271,7 +1255,7 @@
 - **L539** — `#7dd3fc`
   <br/>`<motion.div className="h-full" style={{ background: "#7dd3fc" }}`
 
-### `app/blog/[slug]/blog-post-client.tsx` (41)
+### `app/blog/[slug]/blog-post-client.tsx` (38)
 
 - **L405** — `#1a3a2a` · `#0d1c14`
   <br/>`배경은 하단 전역 탭바와 같은 계열에 한 톤 밝게(#1a3a2a vs #0d1c14). */`
@@ -1279,6 +1263,8 @@
   <br/>`배경만 한 톤 밝게(#1a3a2a vs 하단 #0d1c14)해 상·하단을 구분한다. */`
 - **L408** — `#1a3a2a` · `rgba(255,255,255...)`
   <br/>`style={{ background: "#1a3a2a", borderBottom: "1px solid rgba(255,255,255,0.10)", height: 62 }}`
+- **L409** — `rgba(0,0,0...)`
+  <br/>`className={'xl:hidden fixed inset-x-0 top-0 lg:top-14 z-40 px-2 sm:px-4 flex items-stretch shadow-[0`
 - **L424** — `#f4f0e7`
   <br/>`style={{ color: "#f4f0e7" }}`
 - **L439** — `#f4f0e7`
@@ -1287,8 +1273,8 @@
   <br/>`style={{ color: "#f4f0e7" }}`
 - **L494** — `#e9c766`
   <br/>`style={{ color: "#e9c766" }}`
-- **L616** — `#d4af37` · `#f0d060` · `rgba(212,175,55...)`
-  <br/>`style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", boxShadow: "0 2px 12px rgba(212,175,`
+- **L616** — `#f0d060`
+  <br/>`style={{ background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)", boxShadow: "0 2px `
 - **L619** — `rgba(13,28,20...)`
   <br/>`<div className="text-[10px] font-bold uppercase tracking-widest mb-1" style={{ color: "rgba(13,28,20`
 - **L620** — `#0d1c14`
@@ -1303,8 +1289,8 @@
   <br/>`className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#1877f2]/10 border border-[#1877f2]/`
 - **L794** — `text-yellow-400`
   <br/>`<Link href="/blog" className="inline-flex items-center gap-2 text-primary font-semibold hover:text-y`
-- **L821** — `#d4af37` · `#f0d060` · `rgba(212,175,55...)`
-  <br/>`style={{ bottom: TAB_BAR_HEIGHT, background: "linear-gradient(135deg,#d4af37,#f0d060)", boxShadow: "`
+- **L821** — `#f0d060`
+  <br/>`style={{ bottom: TAB_BAR_HEIGHT, background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d0`
 - **L825** — `rgba(13,28,20...)`
   <br/>`<div className="text-[10px] font-bold uppercase tracking-widest mb-0.5" style={{ color: "rgba(13,28,`
 - **L826** — `#0d1c14`
@@ -1313,31 +1299,6 @@
   <br/>`<div className="w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0" style={{ backgr`
 - **L829** — `#0d1c14`
   <br/>`<ChevronRight className="w-5 h-5" style={{ color: "#0d1c14" }} />`
-
-### `components/tournament-guide-post.tsx` (35)
-
-- **L75** — `rgba(212,175,55...)`
-  <br/>`<div className="border-b border-primary/20" style={{ background: "rgba(212,175,55,0.06)" }}>`
-- **L106** — `rgba(0,0,0...)`
-  <br/>`<div className="border-b border-border" style={{ background: "rgba(0,0,0,0.15)" }}>`
-- **L137** — `rgba(0,0,0...)` · `rgba(0,0,0...)`
-  <br/>`<div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(0,0,0,0.85) 0%,`
-- **L186** — `rgba(212,175,55...)`
-  <br/>`style={{ background: "rgba(212,175,55,0.07)" }}>`
-- **L207** — `#d4af37` · `rgba(212,175,55...)` · `rgba(212,175,55...)`
-  <br/>`style={{ background: "rgba(212,175,55,0.15)", color: "#d4af37", border: "1px solid rgba(212,175,55,0`
-- **L255** — `#d4af37` · `rgba(212,175,55...)` · `rgba(212,175,55...)`
-  <br/>`style={{ background: "rgba(212,175,55,0.15)", color: "#d4af37", border: "1px solid rgba(212,175,55,0`
-- **L283** — `rgba(212,175,55...)`
-  <br/>`style={{ background: "rgba(212,175,55,0.05)" }}>`
-- **L312** — `#0d2618` · `#0a3320` · `#071a10` · `from-[#0d2618]` · `via-[#0a3320]` · `to-[#071a10]`
-  <br/>`<div className="h-36 bg-gradient-to-br from-[#0d2618] via-[#0a3320] to-[#071a10] flex items-center j`
-- **L357** — `#1da1f2` · `#1da1f2` · `#1da1f2` · `#1da1f2` · `bg-[#1da1f2]` · `border-[#1da1f2]` · `text-[#1da1f2]` · `bg-[#1da1f2]`
-  <br/>`className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#1da1f2]/10 border border-[#1da1f2]/`
-- **L362** — `#1877f2` · `#1877f2` · `#1877f2` · `#1877f2` · `bg-[#1877f2]` · `border-[#1877f2]` · `text-[#1877f2]` · `bg-[#1877f2]`
-  <br/>`className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#1877f2]/10 border border-[#1877f2]/`
-- **L374** — `text-yellow-400`
-  <br/>`<Link href="/blog" className="inline-flex items-center gap-2 text-primary font-semibold hover:text-y`
 
 ### `app/rules/rules-client.tsx` (35)
 
@@ -1370,67 +1331,31 @@
 - **L409** — `border-blue-500` · `bg-blue-500`
   <br/>`{ name: "고정 리밋 (Fixed-Limit)", desc: "베팅과 레이즈 금액이 미리 정해진 고정액으로 제한됩니다. 세븐 카드 스터드에서 일반적입니다.", color: "`
 
-### `app/community/post-card.tsx` (34)
+### `app/pub/[region]/pub-region-client.tsx` (31)
 
-- **L81** — `#facc15`
-  <br/>`winner: { label: "🏆 우승", color: "#facc15" },`
-- **L82** — `#f87171`
-  <br/>`hot: { label: "🔥 인기", color: "#f87171" },`
-- **L83** — `#60a5fa`
-  <br/>`top: { label: "⭐ TOP", color: "#60a5fa" },`
-- **L84** — `#34d399`
-  <br/>`participant: { label: "🎟️ 참여", color: "#34d399" },`
-- **L108** — `#d4af37` · `#f0d060`
-  <br/>`style={{ width: size, height: size, background: "linear-gradient(135deg,#d4af37,#f0d060)" }}`
-- **L110** — `#0d1c14`
-  <br/>`<span style={{ fontSize: size * 0.52, color: "#0d1c14", lineHeight: 1 }}>♠</span>`
-- **L167** — `rgba(212,175,55...)`
-  <br/>`style={{ background: CARD, border: "1px solid rgba(212,175,55,0.25)" }}`
-- **L173** — `#d4af37` · `#f0d060`
-  <br/>`style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)" }}`
-- **L193** — `#d4af37` · `#f0d060`
-  <br/>`style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: BG }}`
-- **L230** — `rgba(212,175,55...)`
-  <br/>`? "1px solid rgba(212,175,55,0.25)"`
-- **L231** — `rgba(52,211,153...)`
-  <br/>`: "1px solid rgba(52,211,153,0.18)";`
-- **L240** — `rgba(212,175,55...)`
-  <br/>`style={{ background: CARD, border: "1px solid rgba(212,175,55,0.25)" }}`
-- **L242** — `#d4af37` · `#f0d060`
-  <br/>`<div className="hidden lg:block" style={{ height: 3, background: "linear-gradient(90deg,#d4af37,#f0d`
-- **L252** — `rgba(212,175,55...)` · `rgba(212,175,55...)`
-  <br/>`<span className="text-[10px] px-2 py-0.5 rounded-full font-bold flex-shrink-0" style={{ background: `
-- **L275** — `rgba(212,175,55...)`
-  <br/>`style={{ aspectRatio: "16 / 9", maxHeight: 340, background: "rgba(212,175,55,0.06)" }}`
-- **L290** — `#d4af37` · `#f0d060`
-  <br/>`<Link href={blogHref} className="inline-flex items-center gap-1.5 text-sm font-bold px-4 py-2 rounde`
-- **L305** — `#d4af37` · `#f0d060`
-  <br/>`<div className="hidden lg:block" style={{ height: 3, background: "linear-gradient(90deg,#d4af37,#f0d`
-- **L319** — `rgba(212,175,55...)` · `rgba(212,175,55...)`
-  <br/>`<span className="hidden lg:inline text-[10px] px-2 py-0.5 rounded-full font-bold flex-shrink-0" styl`
-- **L343** — `rgba(212,175,55...)` · `rgba(212,175,55...)`
-  <br/>`<div className="rounded-lg p-3 mb-1" style={{ background: "rgba(212,175,55,0.06)", border: "1px soli`
-- **L382** — `rgba(212,175,55...)`
-  <br/>`background: translated && !showOriginal ? "rgba(212,175,55,0.15)" : SURFACE,`
-- **L384** — `rgba(212,175,55...)`
-  <br/>`border: '1px solid ${translated && !showOriginal ? "rgba(212,175,55,0.3)" : DIVIDER}',`
-- **L389** — `#f87171`
-  <br/>`{transErr && <span className="text-[11px] ml-2" style={{ color: "#f87171" }}>번역 실패</span>}`
-- **L401** — `#f87171` · `#f87171`
-  <br/>`<svg className="w-[18px] h-[18px] lg:w-5 lg:h-5" fill={post.liked ? "#f87171" : "none"} viewBox="0 0`
-- **L404** — `#f87171`
-  <br/>`<span className="text-xs lg:text-sm font-semibold" style={{ color: post.liked ? "#f87171" : TEXT_SEC`
+- **L94** — `#03C75A` · `#02b050` · `shadow-green-900` · `bg-[#03C75A]` · `bg-[#02b050]`
+  <br/>`className="flex-1 inline-flex items-center justify-center gap-2.5 bg-[#03C75A] hover:bg-[#02b050] te`
+- **L104** — `#FEE500` · `#f0d800` · `#191919` · `shadow-yellow-900` · `bg-[#FEE500]` · `bg-[#f0d800]` · `text-[#191919]`
+  <br/>`className="flex-1 inline-flex items-center justify-center gap-2.5 bg-[#FEE500] hover:bg-[#f0d800] te`
+- **L158** — `bg-amber-500` · `text-amber-400` · `border-amber-500`
+  <br/>`<span className="text-xs bg-amber-500/10 text-amber-400 border border-amber-500/30 rounded-full px-3`
+- **L190** — `#03C75A` · `text-[#03C75A]`
+  <br/>`className="inline-flex items-center gap-1 text-xs text-[#03C75A] hover:underline flex-shrink-0 mt-1"`
+- **L217** — `#03C75A` · `#02b050` · `bg-[#03C75A]` · `bg-[#02b050]`
+  <br/>`className="flex-1 inline-flex items-center justify-center gap-2 bg-[#03C75A] hover:bg-[#02b050] text`
+- **L247** — `#03C75A` · `#02b050` · `bg-[#03C75A]` · `bg-[#02b050]`
+  <br/>`className="inline-flex items-center justify-center gap-2 bg-[#03C75A] hover:bg-[#02b050] text-white `
+- **L256** — `#FEE500` · `#f0d800` · `#191919` · `bg-[#FEE500]` · `bg-[#f0d800]` · `text-[#191919]`
+  <br/>`className="inline-flex items-center justify-center gap-2 bg-[#FEE500] hover:bg-[#f0d800] text-[#1919`
 
-### `app/login/page.tsx` (33)
+### `app/login/page.tsx` (29)
 
-- **L9** — `#d4af37`
-  <br/>`const GOLD = "#d4af37";`
 - **L10** — `#0b1120`
   <br/>`const BG = "#0b1120";`
-- **L109** — `#0f1a2e` · `rgba(212,175,55...)`
-  <br/>`style={{ background: "#0f1a2e", border: "1px solid rgba(212,175,55,0.2)" }}`
-- **L115** — `#d4af37` · `#f0d060`
-  <br/>`style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)" }}`
+- **L109** — `#0f1a2e`
+  <br/>`style={{ background: "#0f1a2e", border: "1px solid rgba(var(--gold-dark-rgb),0.2)" }}`
+- **L115** — `#f0d060`
+  <br/>`style={{ background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)" }}`
 - **L119** — `#f0e8c8`
   <br/>`<h1 className="text-lg font-bold" style={{ color: "#f0e8c8" }}>`
 - **L122** — `rgba(255,255,255...)`
@@ -1465,83 +1390,34 @@
   <br/>`{err && <p className="text-xs" style={{ color: "#f87171" }}>{err}</p>}`
 - **L214** — `#34d399`
   <br/>`{msg && <p className="text-xs" style={{ color: "#34d399" }}>{msg}</p>}`
-- **L220** — `#d4af37` · `#f0d060`
-  <br/>`style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: BG }}`
+- **L220** — `#f0d060`
+  <br/>`style={{ background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)", color: BG }}`
 - **L234** — `rgba(255,255,255...)`
   <br/>`style={{ color: "rgba(255,255,255,0.5)" }}`
 
-### `app/community/event-tab.tsx` (31)
+### `components/tournament-guide-post.tsx` (26)
 
-- **L41** — `#d4af37` · `#f0d060`
-  <br/>`? "linear-gradient(90deg,#d4af37,#f0d060)"`
-- **L42** — `rgba(212,175,55...)`
-  <br/>`: "rgba(212,175,55,0.35)",`
-- **L76** — `#d4af37` · `#f0d060`
-  <br/>`? "linear-gradient(135deg,#d4af37,#f0d060)"`
-- **L78** — `rgba(212,175,55...)`
-  <br/>`? "rgba(212,175,55,0.85)"`
-- **L82** — `rgba(212,175,55...)`
-  <br/>`? "2px solid rgba(212,175,55,0.6)"`
-- **L84** — `rgba(212,175,55...)`
-  <br/>`? "2px solid rgba(212,175,55,0.9)"`
-- **L86** — `rgba(212,175,55...)`
-  <br/>`boxShadow: isMatch ? "0 0 10px rgba(212,175,55,0.5)" : "none",`
-- **L410** — `rgba(212,175,55...)` · `rgba(212,175,55...)`
-  <br/>`background: "linear-gradient(135deg, rgba(212,175,55,0.1), rgba(212,175,55,0.04))",`
-- **L411** — `rgba(212,175,55...)`
-  <br/>`border: "1px solid rgba(212,175,55,0.25)",`
-- **L414** — `#d4af37` · `#f0d060`
-  <br/>`<div className="h-1" style={{ background: "linear-gradient(90deg,#d4af37,#f0d060,transparent)" }} />`
-- **L418** — `rgba(212,175,55...)`
-  <br/>`<span className="text-xs font-black px-2 py-0.5 rounded-full" style={{ background: "rgba(212,175,55,`
-- **L437** — `rgba(212,175,55...)` · `rgba(212,175,55...)`
-  <br/>`style={{ background: "rgba(212,175,55,0.08)", border: "1px solid rgba(212,175,55,0.15)" }}`
-- **L448** — `rgba(212,175,55...)` · `rgba(212,175,55...)`
-  <br/>`style={{ background: "rgba(212,175,55,0.06)", border: "1px solid rgba(212,175,55,0.15)" }}`
-- **L472** — `#d4af37` · `#f0d060`
-  <br/>`style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: BG }}`
-- **L521** — `#d4af37` · `#f0d060`
-  <br/>`style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)", color: BG }}`
-- **L586** — `rgba(212,175,55...)` · `rgba(212,175,55...)`
-  <br/>`style={{ background: "rgba(212,175,55,0.06)", border: "1px solid rgba(212,175,55,0.15)" }}`
-- **L637** — `rgba(212,175,55...)` · `rgba(212,175,55...)`
-  <br/>`<div className="flex flex-wrap gap-2 mb-4 px-3 py-2.5 rounded-xl" style={{ background: "rgba(212,175`
-- **L645** — `rgba(212,175,55...)`
-  <br/>`style={{ background: "rgba(212,175,55,0.2)", color: GOLD }}`
-- **L657** — `text-red-400`
-  <br/>`<p className="text-xs text-red-400 mb-3 text-center">{submitError}</p>`
-- **L666** — `#d4af37` · `#f0d060`
-  <br/>`? "linear-gradient(135deg,#d4af37,#f0d060)"`
+- **L106** — `rgba(0,0,0...)`
+  <br/>`<div className="border-b border-border" style={{ background: "rgba(0,0,0,0.15)" }}>`
+- **L137** — `rgba(0,0,0...)` · `rgba(0,0,0...)`
+  <br/>`<div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(0,0,0,0.85) 0%,`
+- **L312** — `#0d2618` · `#0a3320` · `#071a10` · `from-[#0d2618]` · `via-[#0a3320]` · `to-[#071a10]`
+  <br/>`<div className="h-36 bg-gradient-to-br from-[#0d2618] via-[#0a3320] to-[#071a10] flex items-center j`
+- **L357** — `#1da1f2` · `#1da1f2` · `#1da1f2` · `#1da1f2` · `bg-[#1da1f2]` · `border-[#1da1f2]` · `text-[#1da1f2]` · `bg-[#1da1f2]`
+  <br/>`className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#1da1f2]/10 border border-[#1da1f2]/`
+- **L362** — `#1877f2` · `#1877f2` · `#1877f2` · `#1877f2` · `bg-[#1877f2]` · `border-[#1877f2]` · `text-[#1877f2]` · `bg-[#1877f2]`
+  <br/>`className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#1877f2]/10 border border-[#1877f2]/`
+- **L374** — `text-yellow-400`
+  <br/>`<Link href="/blog" className="inline-flex items-center gap-2 text-primary font-semibold hover:text-y`
 
-### `app/pub/[region]/pub-region-client.tsx` (31)
-
-- **L94** — `#03C75A` · `#02b050` · `shadow-green-900` · `bg-[#03C75A]` · `bg-[#02b050]`
-  <br/>`className="flex-1 inline-flex items-center justify-center gap-2.5 bg-[#03C75A] hover:bg-[#02b050] te`
-- **L104** — `#FEE500` · `#f0d800` · `#191919` · `shadow-yellow-900` · `bg-[#FEE500]` · `bg-[#f0d800]` · `text-[#191919]`
-  <br/>`className="flex-1 inline-flex items-center justify-center gap-2.5 bg-[#FEE500] hover:bg-[#f0d800] te`
-- **L158** — `bg-amber-500` · `text-amber-400` · `border-amber-500`
-  <br/>`<span className="text-xs bg-amber-500/10 text-amber-400 border border-amber-500/30 rounded-full px-3`
-- **L190** — `#03C75A` · `text-[#03C75A]`
-  <br/>`className="inline-flex items-center gap-1 text-xs text-[#03C75A] hover:underline flex-shrink-0 mt-1"`
-- **L217** — `#03C75A` · `#02b050` · `bg-[#03C75A]` · `bg-[#02b050]`
-  <br/>`className="flex-1 inline-flex items-center justify-center gap-2 bg-[#03C75A] hover:bg-[#02b050] text`
-- **L247** — `#03C75A` · `#02b050` · `bg-[#03C75A]` · `bg-[#02b050]`
-  <br/>`className="inline-flex items-center justify-center gap-2 bg-[#03C75A] hover:bg-[#02b050] text-white `
-- **L256** — `#FEE500` · `#f0d800` · `#191919` · `bg-[#FEE500]` · `bg-[#f0d800]` · `text-[#191919]`
-  <br/>`className="inline-flex items-center justify-center gap-2 bg-[#FEE500] hover:bg-[#f0d800] text-[#1919`
-
-### `app/blog/blog-index-client.tsx` (30)
+### `app/blog/blog-index-client.tsx` (26)
 
 - **L135** — `bg-gray-500`
   <br/>`★2026-08-04: 회색(bg-gray-500) 풀블리드 히어로 + 흑백 로드맵 배경 이미지를 걷어냈다.`
 - **L195** — `#1c0b35` · `#0d1f3a` · `#071a0e` · `from-[#1c0b35]` · `via-[#0d1f3a]` · `to-[#071a0e]`
   <br/>`<div className="absolute inset-0 bg-gradient-to-br from-[#1c0b35] via-[#0d1f3a] to-[#071a0e]" />`
-- **L196** — `rgba(212,175,55...)`
-  <br/>`<div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_50%,rgba(212,175,55,0.18)_0%,tra`
 - **L201** — `rgba(255,220,80...)`
   <br/>`style={{ background: "linear-gradient(105deg, transparent 40%, rgba(255,220,80,0.13) 50%, transparen`
-- **L209** — `rgba(212,175,55...)` · `rgba(212,175,55...)` · `rgba(212,175,55...)`
-  <br/>`animate={{ borderColor: ["rgba(212,175,55,0.35)", "rgba(212,175,55,0.75)", "rgba(212,175,55,0.35)"] `
 - **L215** — `bg-yellow-500` · `border-yellow-400`
   <br/>`<div className="flex-shrink-0 w-14 h-14 rounded-xl bg-yellow-500/15 border border-yellow-400/40 flex`
 - **L222** — `bg-yellow-400`
@@ -1556,84 +1432,6 @@
   <br/>`<div className="h-52 md:h-auto md:w-72 bg-gradient-to-br from-[#0d2618] via-[#0a3320] to-[#071a10] f`
 - **L398** — `#0d2618` · `#0a3320` · `#071a10` · `from-[#0d2618]` · `via-[#0a3320]` · `to-[#071a10]`
   <br/>`<div className="h-36 bg-gradient-to-br from-[#0d2618] via-[#0a3320] to-[#071a10] flex items-center j`
-
-### `app/en/quiz/quiz-client.tsx` (30)
-
-- **L30** — `#d4af37` · `#d1d5db`
-  <br/>`border: highlight ? '2px solid #d4af37' : '1px solid ${dim ? '#333' : '#d1d5db'}',`
-- **L31** — `rgba(212,175,55...)` · `rgba(0,0,0...)`
-  <br/>`boxShadow: highlight ? '0 0 14px rgba(212,175,55,0.55)' : '0 2px 8px rgba(0,0,0,0.45)',`
-- **L34** — `#dc2626` · `#111827`
-  <br/>`<span style={{ fontSize:13, fontWeight:800, color: dim?'#444': isRed?'#dc2626':'#111827', lineHeight`
-- **L42** — `#d4af37`
-  <br/>`if (s===10) return { label:"🏆 Perfect! Hand-ranking master", color:"#d4af37" };`
-- **L43** — `#22c55e`
-  <br/>`if (s>=8)   return { label:"🔥 Expert — great job",           color:"#22c55e" };`
-- **L44** — `#60a5fa`
-  <br/>`if (s>=6)   return { label:"👍 Solid — almost there!",         color:"#60a5fa" };`
-- **L45** — `#f59e0b`
-  <br/>`if (s>=4)   return { label:"📚 Keep practicing — try again",   color:"#f59e0b" };`
-- **L46** — `#ef4444`
-  <br/>`return       { label:"💪 Beginner — review the rankings!",      color:"#ef4444" };`
-- **L105** — `#d4af37` · `rgba(212,175,55...)` · `rgba(212,175,55...)`
-  <br/>`style={{ borderColor:'rgba(212,175,55,0.5)', color:'#d4af37', background:'rgba(212,175,55,0.08)' }}>`
-- **L110** — `#d4af37`
-  <br/>`style={{ background:'#d4af37' }}>`
-- **L178** — `bg-green-900` · `border-green-500`
-  <br/>`if (isCorr)     { bg='bg-green-900/25'; border='border-green-500'; }`
-- **L179** — `bg-red-900` · `border-red-500`
-  <br/>`else if (isSel) { bg='bg-red-900/25';   border='border-red-500'; }`
-- **L185** — `text-green-400` · `text-red-400`
-  <br/>`<div className={'font-bold text-sm ${isCorr&&phase==='answered'?'text-green-400':isSel&&phase==='ans`
-- **L188** — `text-green-400`
-  <br/>`{phase==='answered' && isCorr && <div className="text-[11px] font-bold mt-1.5 text-green-400">✓ Corr`
-- **L189** — `text-red-400`
-  <br/>`{phase==='answered' && isSel && !isCorr && <div className="text-[11px] font-bold mt-1.5 text-red-400`
-- **L197** — `bg-green-900` · `border-green-500` · `bg-red-900` · `border-red-500`
-  <br/>`className={'rounded-xl p-4 mb-5 border-2 ${isRight?'bg-green-900/20 border-green-500/40':'bg-red-900`
-- **L201** — `text-green-400` · `text-red-400`
-  <br/>`<div className={'font-bold text-sm ${isRight?'text-green-400':'text-red-400'}'}>`
-- **L215** — `#d4af37`
-  <br/>`style={{ background:'#d4af37' }}>`
-
-### `app/quiz/quiz-client.tsx` (30)
-
-- **L16** — `#d4af37` · `#d1d5db`
-  <br/>`border: highlight ? '2px solid #d4af37' : '1px solid ${dim ? '#333' : '#d1d5db'}',`
-- **L17** — `rgba(212,175,55...)` · `rgba(0,0,0...)`
-  <br/>`boxShadow: highlight ? '0 0 14px rgba(212,175,55,0.55)' : '0 2px 8px rgba(0,0,0,0.45)',`
-- **L20** — `#dc2626` · `#111827`
-  <br/>`<span style={{ fontSize:13, fontWeight:800, color: dim?'#444': isRed?'#dc2626':'#111827', lineHeight`
-- **L28** — `#d4af37`
-  <br/>`if (s===10) return { label:"🏆 만점! 족보 마스터",    color:"#d4af37" };`
-- **L29** — `#22c55e`
-  <br/>`if (s>=8)   return { label:"🔥 고수 — 아주 잘했어요", color:"#22c55e" };`
-- **L30** — `#60a5fa`
-  <br/>`if (s>=6)   return { label:"👍 준수 — 조금만 더!",    color:"#60a5fa" };`
-- **L31** — `#f59e0b`
-  <br/>`if (s>=4)   return { label:"📚 연습 필요 — 다시 도전", color:"#f59e0b" };`
-- **L32** — `#ef4444`
-  <br/>`return       { label:"💪 초보 — 족보부터 다시!",       color:"#ef4444" };`
-- **L91** — `#d4af37` · `rgba(212,175,55...)` · `rgba(212,175,55...)`
-  <br/>`style={{ borderColor:'rgba(212,175,55,0.5)', color:'#d4af37', background:'rgba(212,175,55,0.08)' }}>`
-- **L96** — `#d4af37`
-  <br/>`style={{ background:'#d4af37' }}>`
-- **L166** — `bg-green-900` · `border-green-500`
-  <br/>`if (isCorr)     { bg='bg-green-900/25'; border='border-green-500'; }`
-- **L167** — `bg-red-900` · `border-red-500`
-  <br/>`else if (isSel) { bg='bg-red-900/25';   border='border-red-500'; }`
-- **L173** — `text-green-400` · `text-red-400`
-  <br/>`<div className={'font-bold text-sm ${isCorr&&phase==='answered'?'text-green-400':isSel&&phase==='ans`
-- **L177** — `text-green-400`
-  <br/>`{phase==='answered' && isCorr && <div className="text-[11px] font-bold mt-1.5 text-green-400">✓ 정답</`
-- **L178** — `text-red-400`
-  <br/>`{phase==='answered' && isSel && !isCorr && <div className="text-[11px] font-bold mt-1.5 text-red-400`
-- **L186** — `bg-green-900` · `border-green-500` · `bg-red-900` · `border-red-500`
-  <br/>`className={'rounded-xl p-4 mb-5 border-2 ${isRight?'bg-green-900/20 border-green-500/40':'bg-red-900`
-- **L190** — `text-green-400` · `text-red-400`
-  <br/>`<div className={'font-bold text-sm ${isRight?'text-green-400':'text-red-400'}'}>`
-- **L204** — `#d4af37`
-  <br/>`style={{ background:'#d4af37' }}>`
 
 ### `app/rules/texas-holdem/rules-texas-holdem-client.tsx` (25)
 
@@ -1684,11 +1482,11 @@
 - **L338** — `text-yellow-400`
   <br/>`<strong className="text-yellow-400">⚠️ 레이크가 수익성에 미치는 영향:</strong> 장기적으로 승리하려면 레이크를 이기고도 남는 승률이 필요합니다`
 
-### `components/cluster-minimap.tsx` (22)
+### `components/cluster-minimap.tsx` (24)
 
-- **L63** — `#2563eb` · `#2563eb` · `fill-[#2563eb]` · `text-[#2563eb]`
+- **L63** — `#2563eb` · `#2563eb` · `fill-[#2563eb]` · `text-[#2563eb]` · `rgba(37,99,235...)`
   <br/>`<MapPin className="w-4 h-4 fill-[#2563eb] text-[#2563eb] drop-shadow-[0_0_7px_rgba(37,99,235,0.8)]" `
-- **L83** — `#2563eb` · `#2563eb` · `bg-[#2563eb]` · `border-[#2563eb]`
+- **L83** — `#2563eb` · `#2563eb` · `bg-[#2563eb]` · `border-[#2563eb]` · `rgba(37,99,235...)`
   <br/>`<div className="-mt-0.5 rounded-lg bg-[#2563eb]/10 border border-[#2563eb]/45 px-2 py-1 shadow-[0_0_`
 - **L85** — `#2563eb` · `text-[#2563eb]`
   <br/>`<div className="text-[9px] font-semibold text-[#2563eb] uppercase tracking-wider mt-0.5">{labels.you`
@@ -1697,29 +1495,72 @@
 - **L155** — `#2563eb` · `#2563eb` · `#2563eb` · `text-[#2563eb]` · `bg-[#2563eb]` · `border-[#2563eb]`
   <br/>`<span className="ml-auto text-[10px] font-semibold text-[#2563eb] bg-[#2563eb]/10 border border-[#25`
 
-### `app/holdem-practice/holdem-practice-client.tsx` (18)
+### `app/en/quiz/quiz-client.tsx` (22)
 
-- **L166** — `#3b1d12` · `#3b1d12` · `#4a2417` · `#4a2417`
-  <br/>`background: "repeating-linear-gradient(45deg,#3b1d12,#3b1d12 6px,#4a2417 6px,#4a2417 12px)",`
-- **L167** — `rgba(212,175,55...)`
-  <br/>`border: "1px solid rgba(212,175,55,0.35)",`
-- **L178** — `#fdf8ee` · `bg-[#fdf8ee]`
-  <br/>`className={'${w} rounded-md bg-[#fdf8ee] flex flex-col items-center justify-center font-black leadin`
-- **L179** — `#d4af37` · `#c0392b` · `#0f172a`
-  <br/>`style={{ border: "1px solid #d4af37", color: red ? "#c0392b" : "#0f172a" }}`
-- **L313** — `rgba(0,0,0...)`
-  <br/>`boxShadow: "inset 0 0 60px rgba(0,0,0,0.5)",`
-- **L427** — `#fdf8ee` · `#0f172a` · `bg-[#fdf8ee]` · `text-[#0f172a]`
-  <br/>`<span className="w-5 h-5 rounded-full bg-[#fdf8ee] text-[#0f172a] text-[10px] font-black flex items-`
-- **L444** — `text-amber-300`
-  <br/>`<div className="text-[11px] text-amber-300">베팅 {p.bet.toLocaleString()}</div>`
-- **L449** — `text-emerald-300`
-  <br/>`<div className="text-[11px] text-emerald-300 font-semibold">{revealName}</div>`
-- **L490** — `#d4af37`
-  <br/>`className="w-full accent-[#d4af37]"`
+- **L30** — `#d1d5db`
+  <br/>`border: highlight ? '2px solid rgb(var(--gold-dark-rgb))' : '1px solid ${dim ? '#333' : '#d1d5db'}',`
+- **L31** — `rgba(0,0,0...)`
+  <br/>`boxShadow: highlight ? '0 0 14px rgba(var(--gold-dark-rgb),0.55)' : '0 2px 8px rgba(0,0,0,0.45)',`
+- **L34** — `#dc2626` · `#111827`
+  <br/>`<span style={{ fontSize:13, fontWeight:800, color: dim?'#444': isRed?'#dc2626':'#111827', lineHeight`
+- **L43** — `#22c55e`
+  <br/>`if (s>=8)   return { label:"🔥 Expert — great job",           color:"#22c55e" };`
+- **L44** — `#60a5fa`
+  <br/>`if (s>=6)   return { label:"👍 Solid — almost there!",         color:"#60a5fa" };`
+- **L45** — `#f59e0b`
+  <br/>`if (s>=4)   return { label:"📚 Keep practicing — try again",   color:"#f59e0b" };`
+- **L46** — `#ef4444`
+  <br/>`return       { label:"💪 Beginner — review the rankings!",      color:"#ef4444" };`
+- **L178** — `bg-green-900` · `border-green-500`
+  <br/>`if (isCorr)     { bg='bg-green-900/25'; border='border-green-500'; }`
+- **L179** — `bg-red-900` · `border-red-500`
+  <br/>`else if (isSel) { bg='bg-red-900/25';   border='border-red-500'; }`
+- **L185** — `text-green-400` · `text-red-400`
+  <br/>`<div className={'font-bold text-sm ${isCorr&&phase==='answered'?'text-green-400':isSel&&phase==='ans`
+- **L188** — `text-green-400`
+  <br/>`{phase==='answered' && isCorr && <div className="text-[11px] font-bold mt-1.5 text-green-400">✓ Corr`
+- **L189** — `text-red-400`
+  <br/>`{phase==='answered' && isSel && !isCorr && <div className="text-[11px] font-bold mt-1.5 text-red-400`
+- **L197** — `bg-green-900` · `border-green-500` · `bg-red-900` · `border-red-500`
+  <br/>`className={'rounded-xl p-4 mb-5 border-2 ${isRight?'bg-green-900/20 border-green-500/40':'bg-red-900`
+- **L201** — `text-green-400` · `text-red-400`
+  <br/>`<div className={'font-bold text-sm ${isRight?'text-green-400':'text-red-400'}'}>`
 
-### `components/intl-blog-post-client.tsx` (17)
+### `app/quiz/quiz-client.tsx` (22)
 
+- **L16** — `#d1d5db`
+  <br/>`border: highlight ? '2px solid rgb(var(--gold-dark-rgb))' : '1px solid ${dim ? '#333' : '#d1d5db'}',`
+- **L17** — `rgba(0,0,0...)`
+  <br/>`boxShadow: highlight ? '0 0 14px rgba(var(--gold-dark-rgb),0.55)' : '0 2px 8px rgba(0,0,0,0.45)',`
+- **L20** — `#dc2626` · `#111827`
+  <br/>`<span style={{ fontSize:13, fontWeight:800, color: dim?'#444': isRed?'#dc2626':'#111827', lineHeight`
+- **L29** — `#22c55e`
+  <br/>`if (s>=8)   return { label:"🔥 고수 — 아주 잘했어요", color:"#22c55e" };`
+- **L30** — `#60a5fa`
+  <br/>`if (s>=6)   return { label:"👍 준수 — 조금만 더!",    color:"#60a5fa" };`
+- **L31** — `#f59e0b`
+  <br/>`if (s>=4)   return { label:"📚 연습 필요 — 다시 도전", color:"#f59e0b" };`
+- **L32** — `#ef4444`
+  <br/>`return       { label:"💪 초보 — 족보부터 다시!",       color:"#ef4444" };`
+- **L166** — `bg-green-900` · `border-green-500`
+  <br/>`if (isCorr)     { bg='bg-green-900/25'; border='border-green-500'; }`
+- **L167** — `bg-red-900` · `border-red-500`
+  <br/>`else if (isSel) { bg='bg-red-900/25';   border='border-red-500'; }`
+- **L173** — `text-green-400` · `text-red-400`
+  <br/>`<div className={'font-bold text-sm ${isCorr&&phase==='answered'?'text-green-400':isSel&&phase==='ans`
+- **L177** — `text-green-400`
+  <br/>`{phase==='answered' && isCorr && <div className="text-[11px] font-bold mt-1.5 text-green-400">✓ 정답</`
+- **L178** — `text-red-400`
+  <br/>`{phase==='answered' && isSel && !isCorr && <div className="text-[11px] font-bold mt-1.5 text-red-400`
+- **L186** — `bg-green-900` · `border-green-500` · `bg-red-900` · `border-red-500`
+  <br/>`className={'rounded-xl p-4 mb-5 border-2 ${isRight?'bg-green-900/20 border-green-500/40':'bg-red-900`
+- **L190** — `text-green-400` · `text-red-400`
+  <br/>`<div className={'font-bold text-sm ${isRight?'text-green-400':'text-red-400'}'}>`
+
+### `components/intl-blog-post-client.tsx` (18)
+
+- **L296** — `rgba(0,0,0...)`
+  <br/>`className="xl:hidden sticky top-0 lg:top-14 z-40 -mx-4 mb-6 px-4 pt-2 pb-2 bg-background/95 backdrop`
 - **L456** — `#1da1f2` · `#1da1f2` · `#1da1f2` · `#1da1f2` · `bg-[#1da1f2]` · `border-[#1da1f2]` · `text-[#1da1f2]` · `bg-[#1da1f2]`
   <br/>`className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#1da1f2]/10 border border-[#1da1f2]/`
 - **L464** — `#1877f2` · `#1877f2` · `#1877f2` · `#1877f2` · `bg-[#1877f2]` · `border-[#1877f2]` · `text-[#1877f2]` · `bg-[#1877f2]`
@@ -1764,76 +1605,6 @@
 - **L322** — `#1a1508`
   <br/>`<span key={n} style={{ width: 26, height: 26, borderRadius: "50%", background: GOLD, color: "#1a1508`
 
-### `app/en/hand-chart/hand-chart-client.tsx` (17)
-
-- **L33** — `#dc2626`
-  <br/>`{ id: 1, label: "UTG", full: "Under the Gun (UTG)", color: "#dc2626", pct: "~12%" },`
-- **L34** — `#ea580c`
-  <br/>`{ id: 2, label: "HJ", full: "Hijack (HJ)", color: "#ea580c", pct: "~20%" },`
-- **L35** — `#ca8a04`
-  <br/>`{ id: 3, label: "CO", full: "Cutoff (CO)", color: "#ca8a04", pct: "~29%" },`
-- **L36** — `#16a34a`
-  <br/>`{ id: 4, label: "BTN", full: "Button (BTN)", color: "#16a34a", pct: "~42%" },`
-- **L37** — `#2563eb`
-  <br/>`{ id: 5, label: "SB", full: "Small Blind (SB)", color: "#2563eb", pct: "~56%" },`
-- **L42** — `#dc2626`
-  <br/>`"#dc2626",`
-- **L43** — `#ea580c`
-  <br/>`"#ea580c",`
-- **L44** — `#ca8a04`
-  <br/>`"#ca8a04",`
-- **L45** — `#16a34a`
-  <br/>`"#16a34a",`
-- **L46** — `#2563eb`
-  <br/>`"#2563eb",`
-- **L98** — `rgba(212,175,55...)`
-  <br/>`style={{ background: "radial-gradient(circle, rgba(212,175,55,0.18), transparent 70%)" }}`
-- **L210** — `#1a1a1a`
-  <br/>`const bgColor = TIER_COLORS[tier] || "#1a1a1a";`
-- **L226** — `#d4af37`
-  <br/>`outline: isHovered ? "2px solid #d4af37" : undefined,`
-- **L254** — `#0d0d0d`
-  <br/>`backgroundColor: "#0d0d0d",`
-- **L255** — `#f0f0f0`
-  <br/>`color: "#f0f0f0",`
-- **L306** — `#1a1a1a` · `bg-[#1a1a1a]`
-  <br/>`<div className="w-8 h-8 rounded-lg shrink-0 bg-[#1a1a1a] border border-border" />`
-
-### `app/hand-chart/hand-chart-client.tsx` (17)
-
-- **L33** — `#dc2626`
-  <br/>`{ id: 1, label: "UTG", full: "언더더건 (UTG)", color: "#dc2626", pct: "약 12%" },`
-- **L34** — `#ea580c`
-  <br/>`{ id: 2, label: "HJ", full: "하이잭 (HJ)", color: "#ea580c", pct: "약 20%" },`
-- **L35** — `#ca8a04`
-  <br/>`{ id: 3, label: "CO", full: "컷오프 (CO)", color: "#ca8a04", pct: "약 29%" },`
-- **L36** — `#16a34a`
-  <br/>`{ id: 4, label: "BTN", full: "버튼 (BTN)", color: "#16a34a", pct: "약 42%" },`
-- **L37** — `#2563eb`
-  <br/>`{ id: 5, label: "SB", full: "스몰블라인드 (SB)", color: "#2563eb", pct: "약 56%" },`
-- **L42** — `#dc2626`
-  <br/>`"#dc2626",`
-- **L43** — `#ea580c`
-  <br/>`"#ea580c",`
-- **L44** — `#ca8a04`
-  <br/>`"#ca8a04",`
-- **L45** — `#16a34a`
-  <br/>`"#16a34a",`
-- **L46** — `#2563eb`
-  <br/>`"#2563eb",`
-- **L107** — `rgba(212,175,55...)`
-  <br/>`style={{ background: "radial-gradient(circle, rgba(212,175,55,0.18), transparent 70%)" }}`
-- **L219** — `#1a1a1a`
-  <br/>`const bgColor = TIER_COLORS[tier] || "#1a1a1a";`
-- **L235** — `#d4af37`
-  <br/>`outline: isHovered ? "2px solid #d4af37" : undefined,`
-- **L263** — `#0d0d0d`
-  <br/>`backgroundColor: "#0d0d0d",`
-- **L264** — `#f0f0f0`
-  <br/>`color: "#f0f0f0",`
-- **L314** — `#1a1a1a` · `bg-[#1a1a1a]`
-  <br/>`<div className="w-8 h-8 rounded-lg shrink-0 bg-[#1a1a1a] border border-border" />`
-
 ### `components/poker-odds-calculator.tsx` (16)
 
 - **L19** — `text-green-400`
@@ -1857,51 +1628,117 @@
 - **L291** — `text-green-400` · `text-red-400`
   <br/>`<div className={'text-2xl font-black mb-2 ${potDecision ? "text-green-400" : "text-red-400"}'}>`
 
-### `components/community-cta.tsx` (14)
+### `app/community/post-card.tsx` (16)
 
-- **L81** — `#0b1120` · `#111827`
-  <br/>`background: "linear-gradient(135deg, #0b1120 0%, #111827 100%)",`
-- **L82** — `rgba(212,175,55...)`
-  <br/>`border: "1px solid rgba(212,175,55,0.25)",`
-- **L87** — `#d4af37` · `#f0d060`
-  <br/>`style={{ background: "linear-gradient(90deg,#d4af37,#f0d060,transparent)" }}`
-- **L94** — `#d4af37` · `#f0d060`
-  <br/>`style={{ background: "linear-gradient(135deg,#d4af37,#f0d060)" }}`
-- **L96** — `#0b1120`
-  <br/>`<span className="font-black text-[10px]" style={{ color: "#0b1120" }}>HM</span>`
-- **L98** — `rgba(212,175,55...)`
-  <br/>`<span className="text-xs font-bold" style={{ color: "rgba(212,175,55,0.7)" }}>`
-- **L102** — `#f0e8c8`
-  <br/>`<p className="text-sm font-bold leading-snug" style={{ color: "#f0e8c8" }}>`
-- **L105** — `rgba(255,255,255...)`
-  <br/>`<p className="text-xs mt-1" style={{ color: "rgba(255,255,255,0.45)" }}>`
-- **L113** — `#d4af37` · `#f0d060`
-  <br/>`background: "linear-gradient(135deg,#d4af37,#f0d060)",`
-- **L114** — `#0b1120`
-  <br/>`color: "#0b1120",`
-
-### `app/community/chat-tab.tsx` (14)
-
-- **L257** — `#22c55e`
-  <br/>`style={{ background: "#22c55e" }}`
-- **L261** — `#22c55e`
-  <br/>`style={{ background: "#22c55e" }}`
-- **L266** — `#22c55e`
-  <br/>`style={{ color: "#22c55e" }}`
-- **L286** — `rgba(212,175,55...)` · `rgba(212,175,55...)`
-  <br/>`style={{ background: "rgba(212,175,55,0.1)", color: GOLD, border: "1px solid rgba(212,175,55,0.2)" }`
-- **L299** — `rgba(212,175,55...)`
-  <br/>`scrollbarColor: "rgba(212,175,55,0.15) transparent",`
-- **L327** — `#d4af37` · `#f0d060`
-  <br/>`background: "linear-gradient(135deg,#d4af37,#f0d060)",`
-- **L328** — `#0b1120`
-  <br/>`color: "#0b1120",`
-- **L379** — `#d4af37` · `#f0d060`
-  <br/>`background: "linear-gradient(135deg,#d4af37,#f0d060)",`
+- **L81** — `#facc15`
+  <br/>`winner: { label: "🏆 우승", color: "#facc15" },`
+- **L82** — `#f87171`
+  <br/>`hot: { label: "🔥 인기", color: "#f87171" },`
+- **L83** — `#60a5fa`
+  <br/>`top: { label: "⭐ TOP", color: "#60a5fa" },`
+- **L84** — `#34d399`
+  <br/>`participant: { label: "🎟️ 참여", color: "#34d399" },`
+- **L108** — `#f0d060`
+  <br/>`style={{ width: size, height: size, background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f`
+- **L110** — `#0d1c14`
+  <br/>`<span style={{ fontSize: size * 0.52, color: "#0d1c14", lineHeight: 1 }}>♠</span>`
+- **L173** — `#f0d060`
+  <br/>`style={{ background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)" }}`
+- **L193** — `#f0d060`
+  <br/>`style={{ background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)", color: BG }}`
+- **L231** — `rgba(52,211,153...)`
+  <br/>`: "1px solid rgba(52,211,153,0.18)";`
+- **L242** — `#f0d060`
+  <br/>`<div className="hidden lg:block" style={{ height: 3, background: "linear-gradient(90deg,rgb(var(--go`
+- **L290** — `#f0d060`
+  <br/>`<Link href={blogHref} className="inline-flex items-center gap-1.5 text-sm font-bold px-4 py-2 rounde`
+- **L305** — `#f0d060`
+  <br/>`<div className="hidden lg:block" style={{ height: 3, background: "linear-gradient(90deg,rgb(var(--go`
 - **L389** — `#f87171`
-  <br/>`style={{ color: "#f87171" }}`
-- **L407** — `#d4af37` · `#f0d060`
-  <br/>`background: "linear-gradient(135deg,#d4af37,#f0d060)",`
+  <br/>`{transErr && <span className="text-[11px] ml-2" style={{ color: "#f87171" }}>번역 실패</span>}`
+- **L401** — `#f87171` · `#f87171`
+  <br/>`<svg className="w-[18px] h-[18px] lg:w-5 lg:h-5" fill={post.liked ? "#f87171" : "none"} viewBox="0 0`
+- **L404** — `#f87171`
+  <br/>`<span className="text-xs lg:text-sm font-semibold" style={{ color: post.liked ? "#f87171" : TEXT_SEC`
+
+### `app/en/hand-chart/hand-chart-client.tsx` (15)
+
+- **L33** — `#dc2626`
+  <br/>`{ id: 1, label: "UTG", full: "Under the Gun (UTG)", color: "#dc2626", pct: "~12%" },`
+- **L34** — `#ea580c`
+  <br/>`{ id: 2, label: "HJ", full: "Hijack (HJ)", color: "#ea580c", pct: "~20%" },`
+- **L35** — `#ca8a04`
+  <br/>`{ id: 3, label: "CO", full: "Cutoff (CO)", color: "#ca8a04", pct: "~29%" },`
+- **L36** — `#16a34a`
+  <br/>`{ id: 4, label: "BTN", full: "Button (BTN)", color: "#16a34a", pct: "~42%" },`
+- **L37** — `#2563eb`
+  <br/>`{ id: 5, label: "SB", full: "Small Blind (SB)", color: "#2563eb", pct: "~56%" },`
+- **L42** — `#dc2626`
+  <br/>`"#dc2626",`
+- **L43** — `#ea580c`
+  <br/>`"#ea580c",`
+- **L44** — `#ca8a04`
+  <br/>`"#ca8a04",`
+- **L45** — `#16a34a`
+  <br/>`"#16a34a",`
+- **L46** — `#2563eb`
+  <br/>`"#2563eb",`
+- **L210** — `#1a1a1a`
+  <br/>`const bgColor = TIER_COLORS[tier] || "#1a1a1a";`
+- **L254** — `#0d0d0d`
+  <br/>`backgroundColor: "#0d0d0d",`
+- **L255** — `#f0f0f0`
+  <br/>`color: "#f0f0f0",`
+- **L306** — `#1a1a1a` · `bg-[#1a1a1a]`
+  <br/>`<div className="w-8 h-8 rounded-lg shrink-0 bg-[#1a1a1a] border border-border" />`
+
+### `app/hand-chart/hand-chart-client.tsx` (15)
+
+- **L33** — `#dc2626`
+  <br/>`{ id: 1, label: "UTG", full: "언더더건 (UTG)", color: "#dc2626", pct: "약 12%" },`
+- **L34** — `#ea580c`
+  <br/>`{ id: 2, label: "HJ", full: "하이잭 (HJ)", color: "#ea580c", pct: "약 20%" },`
+- **L35** — `#ca8a04`
+  <br/>`{ id: 3, label: "CO", full: "컷오프 (CO)", color: "#ca8a04", pct: "약 29%" },`
+- **L36** — `#16a34a`
+  <br/>`{ id: 4, label: "BTN", full: "버튼 (BTN)", color: "#16a34a", pct: "약 42%" },`
+- **L37** — `#2563eb`
+  <br/>`{ id: 5, label: "SB", full: "스몰블라인드 (SB)", color: "#2563eb", pct: "약 56%" },`
+- **L42** — `#dc2626`
+  <br/>`"#dc2626",`
+- **L43** — `#ea580c`
+  <br/>`"#ea580c",`
+- **L44** — `#ca8a04`
+  <br/>`"#ca8a04",`
+- **L45** — `#16a34a`
+  <br/>`"#16a34a",`
+- **L46** — `#2563eb`
+  <br/>`"#2563eb",`
+- **L219** — `#1a1a1a`
+  <br/>`const bgColor = TIER_COLORS[tier] || "#1a1a1a";`
+- **L263** — `#0d0d0d`
+  <br/>`backgroundColor: "#0d0d0d",`
+- **L264** — `#f0f0f0`
+  <br/>`color: "#f0f0f0",`
+- **L314** — `#1a1a1a` · `bg-[#1a1a1a]`
+  <br/>`<div className="w-8 h-8 rounded-lg shrink-0 bg-[#1a1a1a] border border-border" />`
+
+### `app/holdem-practice/holdem-practice-client.tsx` (15)
+
+- **L166** — `#3b1d12` · `#3b1d12` · `#4a2417` · `#4a2417`
+  <br/>`background: "repeating-linear-gradient(45deg,#3b1d12,#3b1d12 6px,#4a2417 6px,#4a2417 12px)",`
+- **L178** — `#fdf8ee` · `bg-[#fdf8ee]`
+  <br/>`className={'${w} rounded-md bg-[#fdf8ee] flex flex-col items-center justify-center font-black leadin`
+- **L179** — `#c0392b` · `#0f172a`
+  <br/>`style={{ border: "1px solid rgb(var(--gold-dark-rgb))", color: red ? "#c0392b" : "#0f172a" }}`
+- **L313** — `rgba(0,0,0...)`
+  <br/>`boxShadow: "inset 0 0 60px rgba(0,0,0,0.5)",`
+- **L427** — `#fdf8ee` · `#0f172a` · `bg-[#fdf8ee]` · `text-[#0f172a]`
+  <br/>`<span className="w-5 h-5 rounded-full bg-[#fdf8ee] text-[#0f172a] text-[10px] font-black flex items-`
+- **L444** — `text-amber-300`
+  <br/>`<div className="text-[11px] text-amber-300">베팅 {p.bet.toLocaleString()}</div>`
+- **L449** — `text-emerald-300`
+  <br/>`<div className="text-[11px] text-emerald-300 font-semibold">{revealName}</div>`
 
 ### `app/pub/pub-index-client.tsx` (12)
 
@@ -1909,6 +1746,21 @@
   <br/>`className="inline-flex items-center justify-center gap-2 bg-[#03C75A] hover:bg-[#02b050] text-white `
 - **L98** — `#FEE500` · `#f0d800` · `#191919` · `shadow-yellow-900` · `bg-[#FEE500]` · `bg-[#f0d800]` · `text-[#191919]`
   <br/>`className="inline-flex items-center justify-center gap-2 bg-[#FEE500] hover:bg-[#f0d800] text-[#1919`
+
+### `components/ranking-table.tsx` (10)
+
+- **L21** — `rgba(0,0,0...)`
+  <br/>`className="mb-8 rounded-2xl border border-primary/30 bg-gradient-to-b from-primary/[0.07] to-card ov`
+- **L24** — `#141414` · `text-[#141414]`
+  <br/>`<h2 className="m-0 text-sm sm:text-base font-extrabold text-[#141414] tracking-tight">{name}</h2>`
+- **L35** — `to-yellow-500`
+  <br/>`? "bg-gradient-to-br from-primary to-yellow-500 text-black shadow-sm"`
+- **L52** — `#141414` · `text-[#141414]`
+  <br/>`<b className="text-[15px] font-bold text-[#141414] sm:text-base">{it.name}</b>`
+- **L53** — `#5b5b5b` · `text-[#5b5b5b]`
+  <br/>`{eng && <span className="text-xs text-[#5b5b5b]">{eng}</span>}`
+- **L56** — `#333333` · `text-[#333333]`
+  <br/>`<span className="mt-0.5 block text-xs text-[#333333] sm:text-[13px]">{compo}</span>`
 
 ### `components/site-popup.tsx` (10)
 
@@ -1937,21 +1789,6 @@
   <br/>`logoColor: "from-purple-600 to-purple-800",`
 - **L63** — `from-emerald-600` · `to-emerald-800`
   <br/>`logoColor: "from-emerald-600 to-emerald-800",`
-
-### `app/post/[id]/post-detail-client.tsx` (10)
-
-- **L74** — `rgba(11,17,32...)`
-  <br/>`<header className="sticky top-0 z-40 flex items-center gap-3 px-4 py-3" style={{ background: "rgba(1`
-- **L119** — `rgba(248,113,113...)`
-  <br/>`<button onClick={() => onDeleteComment(c.id)} className="text-[10px] mt-1 ml-1" style={{ color: "rgb`
-- **L133** — `rgba(11,17,32...)` · `rgba(212,175,55...)`
-  <br/>`<div className="fixed bottom-0 left-0 right-0 flex items-center gap-2 px-3 py-3" style={{ background`
-- **L142** — `#d4af37` · `#f0d060`
-  <br/>`<button onClick={onSubmitComment} disabled={isPending || !draft.trim()} className="px-4 py-2.5 round`
-- **L147** — `rgba(11,17,32...)` · `rgba(212,175,55...)`
-  <br/>`<div className="fixed bottom-0 left-0 right-0 px-4 py-3 flex items-center gap-3" style={{ background`
-- **L149** — `#d4af37` · `#f0d060`
-  <br/>`<Link href="/login" className="px-4 py-2.5 rounded-xl text-xs font-bold flex-shrink-0" style={{ back`
 
 ### `app/ranking/ranking-data.ts` (10)
 
@@ -1992,18 +1829,24 @@
 - **L211** — `border-red-500` · `bg-red-500`
   <br/>`{ size: "팟의 100%+", use: "너트 핸드, 풀 블러프", color: "border-red-500/30 bg-red-500/5" },`
 
-### `components/ranking-table.tsx` (9)
+### `components/community-cta.tsx` (9)
 
-- **L24** — `#141414` · `text-[#141414]`
-  <br/>`<h2 className="m-0 text-sm sm:text-base font-extrabold text-[#141414] tracking-tight">{name}</h2>`
-- **L35** — `to-yellow-500`
-  <br/>`? "bg-gradient-to-br from-primary to-yellow-500 text-black shadow-sm"`
-- **L52** — `#141414` · `text-[#141414]`
-  <br/>`<b className="text-[15px] font-bold text-[#141414] sm:text-base">{it.name}</b>`
-- **L53** — `#5b5b5b` · `text-[#5b5b5b]`
-  <br/>`{eng && <span className="text-xs text-[#5b5b5b]">{eng}</span>}`
-- **L56** — `#333333` · `text-[#333333]`
-  <br/>`<span className="mt-0.5 block text-xs text-[#333333] sm:text-[13px]">{compo}</span>`
+- **L81** — `#0b1120` · `#111827`
+  <br/>`background: "linear-gradient(135deg, #0b1120 0%, #111827 100%)",`
+- **L87** — `#f0d060`
+  <br/>`style={{ background: "linear-gradient(90deg,rgb(var(--gold-dark-rgb)),#f0d060,transparent)" }}`
+- **L94** — `#f0d060`
+  <br/>`style={{ background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)" }}`
+- **L96** — `#0b1120`
+  <br/>`<span className="font-black text-[10px]" style={{ color: "#0b1120" }}>HM</span>`
+- **L102** — `#f0e8c8`
+  <br/>`<p className="text-sm font-bold leading-snug" style={{ color: "#f0e8c8" }}>`
+- **L105** — `rgba(255,255,255...)`
+  <br/>`<p className="text-xs mt-1" style={{ color: "rgba(255,255,255,0.45)" }}>`
+- **L113** — `#f0d060`
+  <br/>`background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)",`
+- **L114** — `#0b1120`
+  <br/>`color: "#0b1120",`
 
 ### `app/rules/seven-card-stud/rules-seven-card-stud-client.tsx` (9)
 
@@ -2014,23 +1857,6 @@
 - **L146** — `text-red-400`
   <br/>`<div className="text-sm font-bold text-red-400 mb-2">{item.label}</div>`
 
-### `components/blog-top-bar.tsx` (8)
-
-- **L5** — `#1a3a2a`
-  <br/>`const BG = "#1a3a2a";       // 커뮤니티 하단 네비와 동일 색상`
-- **L6** — `#d4af37`
-  <br/>`const GOLD = "#d4af37";`
-- **L24** — `rgba(212,175,55...)`
-  <br/>`borderBottom: "1px solid rgba(212,175,55,0.25)",`
-- **L34** — `rgba(212,175,55...)`
-  <br/>`background: "rgba(212,175,55,0.12)",`
-- **L35** — `rgba(212,175,55...)`
-  <br/>`border: "1px solid rgba(212,175,55,0.30)",`
-- **L58** — `#d4af37` · `#f0d060`
-  <br/>`background: "linear-gradient(135deg,#d4af37,#f0d060)",`
-- **L59** — `#0d1c14`
-  <br/>`color: "#0d1c14",`
-
 ### `components/reading-progress-bar.tsx` (8)
 
 - **L79** — `#ff0080` · `#ff6a00` · `#ffe600` · `#00e676` · `#00b8ff` · `#c400ff`
@@ -2038,12 +1864,46 @@
 - **L80** — `rgba(255,255,255...)` · `rgba(0,0,0...)`
   <br/>`boxShadow: "0 0 8px rgba(255,255,255,0.35), 0 1px 2px rgba(0,0,0,0.3)",`
 
+### `app/community/chat-tab.tsx` (8)
+
+- **L257** — `#22c55e`
+  <br/>`style={{ background: "#22c55e" }}`
+- **L261** — `#22c55e`
+  <br/>`style={{ background: "#22c55e" }}`
+- **L266** — `#22c55e`
+  <br/>`style={{ color: "#22c55e" }}`
+- **L327** — `#f0d060`
+  <br/>`background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)",`
+- **L328** — `#0b1120`
+  <br/>`color: "#0b1120",`
+- **L379** — `#f0d060`
+  <br/>`background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)",`
+- **L389** — `#f87171`
+  <br/>`style={{ color: "#f87171" }}`
+- **L407** — `#f0d060`
+  <br/>`background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)",`
+
+### `app/community/event-tab.tsx` (7)
+
+- **L41** — `#f0d060`
+  <br/>`? "linear-gradient(90deg,rgb(var(--gold-dark-rgb)),#f0d060)"`
+- **L76** — `#f0d060`
+  <br/>`? "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)"`
+- **L414** — `#f0d060`
+  <br/>`<div className="h-1" style={{ background: "linear-gradient(90deg,rgb(var(--gold-dark-rgb)),#f0d060,t`
+- **L472** — `#f0d060`
+  <br/>`style={{ background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)", color: BG }}`
+- **L521** — `#f0d060`
+  <br/>`style={{ background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)", color: BG }}`
+- **L657** — `text-red-400`
+  <br/>`<p className="text-xs text-red-400 mb-3 text-center">{submitError}</p>`
+- **L666** — `#f0d060`
+  <br/>`? "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)"`
+
 ### `app/en/glossary/glossary-client.tsx` (7)
 
 - **L13** — `#60a5fa`
   <br/>`{ key: "Action", color: "#60a5fa" },`
-- **L14** — `#d4af37`
-  <br/>`{ key: "Hand", color: "#d4af37" },`
 - **L15** — `#22c55e`
   <br/>`{ key: "Position", color: "#22c55e" },`
 - **L16** — `#a78bfa`
@@ -2052,47 +1912,62 @@
   <br/>`{ key: "Board", color: "#22d3ee" },`
 - **L18** — `#fb923c`
   <br/>`{ key: "Slang", color: "#fb923c" },`
+- **L85** — `rgba(0,0,0...)`
+  <br/>`className="block w-full pl-12 pr-4 py-4 border border-primary/30 rounded-xl bg-card text-foreground `
 - **L113** — `#0a0a0a`
   <br/>`? { backgroundColor: c.color, borderColor: c.color, color: "#0a0a0a" }`
 
-### `components/feed-nav-arrows.tsx` (6)
+### `components/calc-cta-button.tsx` (6)
 
-- **L138** — `#d4af37` · `#f0d060`
-  <br/>`? "linear-gradient(135deg,#d4af37,#f0d060)" // 브랜드 골드 (맨위로 버튼과 통일)`
-- **L139** — `rgba(13,28,20...)`
-  <br/>`: "rgba(13,28,20,0.85)", // 다크 포레스트 그린 반투명`
-- **L140** — `#0d1c14` · `#f4f0e7`
-  <br/>`color: lit ? "#0d1c14" : "#f4f0e7",`
-- **L141** — `rgba(212,175,55...)`
-  <br/>`border: "1px solid rgba(212,175,55,0.4)",`
+- **L21** — `#2563eb` · `#2563eb` · `border-[#2563eb]` · `border-[#2563eb]` · `rgba(37,99,235...)` · `rgba(37,99,235...)`
+  <br/>`className="calc-pulse group mb-4 flex items-center gap-2.5 rounded-xl border-2 border-[#2563eb]/50 b`
 
-### `components/card-thumb.tsx` (5)
+### `app/post/[id]/post-detail-client.tsx` (6)
+
+- **L74** — `rgba(11,17,32...)`
+  <br/>`<header className="sticky top-0 z-40 flex items-center gap-3 px-4 py-3" style={{ background: "rgba(1`
+- **L119** — `rgba(248,113,113...)`
+  <br/>`<button onClick={() => onDeleteComment(c.id)} className="text-[10px] mt-1 ml-1" style={{ color: "rgb`
+- **L133** — `rgba(11,17,32...)`
+  <br/>`<div className="fixed bottom-0 left-0 right-0 flex items-center gap-2 px-3 py-3" style={{ background`
+- **L142** — `#f0d060`
+  <br/>`<button onClick={onSubmitComment} disabled={isPending || !draft.trim()} className="px-4 py-2.5 round`
+- **L147** — `rgba(11,17,32...)`
+  <br/>`<div className="fixed bottom-0 left-0 right-0 px-4 py-3 flex items-center gap-3" style={{ background`
+- **L149** — `#f0d060`
+  <br/>`<Link href="/login" className="px-4 py-2.5 rounded-xl text-xs font-bold flex-shrink-0" style={{ back`
+
+### `components/card-thumb.tsx` (4)
 
 - **L64** — `#c0392b` · `#0f172a`
   <br/>`const color = isRed(suit) ? "#c0392b" : "#0f172a";`
 - **L72** — `rgba(0,0,0...)`
   <br/>`<g transform={'rotate(${tilt})'} style={{ filter: shadow ? "drop-shadow(0 3px 8px rgba(0,0,0,0.45))"`
-- **L74** — `#fdf8ee` · `#d4af37`
-  <br/>`fill="#fdf8ee" stroke="#d4af37" strokeWidth={1.2} />`
+- **L74** — `#fdf8ee`
+  <br/>`fill="#fdf8ee" style={{ stroke: "rgb(var(--gold-dark-rgb))" }} strokeWidth={1.2} />`
 
-### `components/footer.tsx` (5)
+### `components/feed-nav-arrows.tsx` (4)
 
-- **L100** — `#f5d36a` · `#d4af37` · `#b8862a`
-  <br/>`background: "linear-gradient(135deg, #f5d36a 0%, #d4af37 50%, #b8862a 100%)",`
+- **L138** — `#f0d060`
+  <br/>`? "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)" // 브랜드 골드 (맨위로 버튼과 통일)`
+- **L139** — `rgba(13,28,20...)`
+  <br/>`: "rgba(13,28,20,0.85)", // 다크 포레스트 그린 반투명`
+- **L140** — `#0d1c14` · `#f4f0e7`
+  <br/>`color: lit ? "#0d1c14" : "#f4f0e7",`
+
+### `components/footer.tsx` (4)
+
+- **L100** — `#f5d36a` · `#b8862a`
+  <br/>`background: "linear-gradient(135deg, #f5d36a 0%, rgb(var(--gold-dark-rgb)) 50%, #b8862a 100%)",`
 - **L103** — `#1a0e02` · `text-[#1a0e02]`
   <br/>`<Spade className="h-4 w-4 text-[#1a0e02] fill-current" aria-hidden="true" />`
 
-### `components/intl-footer.tsx` (5)
+### `components/intl-footer.tsx` (4)
 
-- **L21** — `#f5d36a` · `#d4af37` · `#b8862a`
-  <br/>`style={{ background: "linear-gradient(135deg, #f5d36a 0%, #d4af37 50%, #b8862a 100%)" }}`
+- **L21** — `#f5d36a` · `#b8862a`
+  <br/>`style={{ background: "linear-gradient(135deg, #f5d36a 0%, rgb(var(--gold-dark-rgb)) 50%, #b8862a 100`
 - **L23** — `#1a0e02` · `text-[#1a0e02]`
   <br/>`<Spade className="h-4 w-4 text-[#1a0e02] fill-current" aria-hidden="true" />`
-
-### `components/calc-cta-button.tsx` (4)
-
-- **L21** — `#2563eb` · `#2563eb` · `border-[#2563eb]` · `border-[#2563eb]`
-  <br/>`className="calc-pulse group mb-4 flex items-center gap-2.5 rounded-xl border-2 border-[#2563eb]/50 b`
 
 ### `components/tournament-board.tsx` (4)
 
@@ -2100,15 +1975,6 @@
   <br/>`t.highlight ? "border-yellow-500/40" : "border-border"`
 - **L144** — `bg-green-500` · `text-green-400` · `border-green-500`
   <br/>`? "bg-green-500/15 text-green-400 border-green-500/30"`
-
-### `app/community/community-client.tsx` (4)
-
-- **L1052** — `rgba(32,49,42...)`
-  <br/>`style={{ background: "rgba(32,49,42,0.5)", backdropFilter: "blur(4px)" }}`
-- **L1218** — `rgba(32,49,42...)`
-  <br/>`style={{ bottom: 80, right: 20, width: 48, height: 48, background: INK, boxShadow: "0 4px 16px rgba(`
-- **L1490** — `rgba(212,175,55...)` · `rgba(212,175,55...)`
-  <br/>`style={{ background: "rgba(212,175,55,0.07)", border: "1px solid rgba(212,175,55,0.18)" }}`
 
 ### `app/en/ranking/ranking-client.tsx` (4)
 
@@ -2143,21 +2009,14 @@
 - **L402** — `text-orange-500`
   <br/>`<span className="font-semibold text-orange-500">그 이상</span> = 다시 볼 스팟`
 
-### `components/site-chrome.tsx` (3)
+### `components/blog-top-bar.tsx` (3)
 
-- **L96** — `#d4af37` · `#f0d060`
-  <br/>`background: "linear-gradient(135deg,#d4af37,#f0d060)",`
-- **L97** — `#0b1120`
-  <br/>`color: "#0b1120",`
-
-### `components/solver-promo.tsx` (3)
-
-- **L22** — `rgba(212,175,55...)`
-  <br/>`/** 골드 액센트 — 이벤트 카드가 쓰는 rgba(212,175,55,…)와 같은 색. */`
-- **L23** — `#d4af37`
-  <br/>`const GOLD_ACCENT = "#d4af37";`
-- **L43** — `rgba(244,240,231...)`
-  <br/>`style={{ color: "rgba(244,240,231,0.72)", fontFamily: FONT_SANS }}`
+- **L5** — `#1a3a2a`
+  <br/>`const BG = "#1a3a2a";       // 커뮤니티 하단 네비와 동일 색상`
+- **L58** — `#f0d060`
+  <br/>`background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)",`
+- **L59** — `#0d1c14`
+  <br/>`color: "#0d1c14",`
 
 ### `app/hands/hands-client.tsx` (3)
 
@@ -2175,15 +2034,36 @@
 - **L115** — `rgba(244,240,231...)`
   <br/>`const color = active === t.key ? BG : "rgba(244,240,231,0.4)";`
 
-### `components/hub-sidebar.tsx` (2)
-
-- **L97** — `rgba(212,175,55...)` · `rgba(212,175,55...)`
-  <br/>`style={{ background: "rgba(212,175,55,0.07)", border: "1px solid rgba(212,175,55,0.18)" }}`
-
 ### `components/side-rail.tsx` (2)
 
 - **L263** — `#7a2e2e` · `#f4f0e7`
   <br/>`style={{ background: "#7a2e2e", color: "#f4f0e7" }}`
+
+### `components/site-chrome.tsx` (2)
+
+- **L96** — `#f0d060`
+  <br/>`background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)",`
+- **L97** — `#0b1120`
+  <br/>`color: "#0b1120",`
+
+### `components/solver-promo.tsx` (2)
+
+- **L22** — `rgba(212,175,55...)`
+  <br/>`/** 골드 액센트 — 이벤트 카드가 쓰는 rgba(212,175,55,…)와 같은 색. */`
+- **L43** — `rgba(244,240,231...)`
+  <br/>`style={{ color: "rgba(244,240,231,0.72)", fontFamily: FONT_SANS }}`
+
+### `app/community/community-client.tsx` (2)
+
+- **L1052** — `rgba(32,49,42...)`
+  <br/>`style={{ background: "rgba(32,49,42,0.5)", backdropFilter: "blur(4px)" }}`
+- **L1218** — `rgba(32,49,42...)`
+  <br/>`style={{ bottom: 80, right: 20, width: 48, height: 48, background: INK, boxShadow: "0 4px 16px rgba(`
+
+### `app/glossary/glossary-client.tsx` (1)
+
+- **L51** — `rgba(0,0,0...)`
+  <br/>`className="block w-full pl-12 pr-4 py-4 border border-primary/30 rounded-xl bg-card text-foreground `
 
 ### `app/layout.tsx` (1)
 
