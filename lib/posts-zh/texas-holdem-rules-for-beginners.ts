@@ -465,34 +465,34 @@ A. 这要看你在哪、怎么玩。在新加坡、马来西亚等地，持牌�
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/zh/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">牌局流程</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">德州扑克行动顺序</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">一手牌的完整流程——从翻牌前到摊牌，附真实示例</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">牌局流程</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">德州扑克行动顺序</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">一手牌的完整流程——从翻牌前到摊牌，附真实示例</div>
   </a>
   <a href="/zh/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">牌型大小</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">扑克牌型排名——从最大到最小</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">全部 10 种牌型，附概率、示例和牌面练习题</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">牌型大小</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">扑克牌型排名——从最大到最小</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">全部 10 种牌型，附概率、示例和牌面练习题</div>
   </a>
   <a href="/zh/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">位置</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">扑克位置：从枪口位到按钮位</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">按钮为何最赚——座位图与开局范围</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">位置</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">扑克位置：从枪口位到按钮位</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">按钮为何最赚——座位图与开局范围</div>
   </a>
   <a href="/zh/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">下注动作</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">过牌、跟注、加注、弃牌详解</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">每个动作的使用时机 + 决策表</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">下注动作</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">过牌、跟注、加注、弃牌详解</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">每个动作的使用时机 + 决策表</div>
   </a>
   <a href="/zh/blog/holdem-showdown-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">摊牌</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">摊牌规则：谁先亮牌？</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">最后加注者、盖牌（muck）、slow roll 与全押规则</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">摊牌</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">摊牌规则：谁先亮牌？</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">最后加注者、盖牌（muck）、slow roll 与全押规则</div>
   </a>
   <a href="/zh/blog/holdem-all-in-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">全押</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">全押规则：边池与再加注</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">主池、边池，以及谁有资格再加注</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">全押</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">全押规则：边池与再加注</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">主池、边池，以及谁有资格再加注</div>
   </a>
 </div>
 `.trim(),

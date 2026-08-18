@@ -238,19 +238,19 @@ A. limp করা মানে preflop-এ raise না করে শুধু b
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/bn/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Pillar</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">নতুনদের জন্য টেক্সাস হোল্ডেমের নিয়ম</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">পুরো নিয়ম গাইড — blinds থেকে showdown</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Pillar</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">নতুনদের জন্য টেক্সাস হোল্ডেমের নিয়ম</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">পুরো নিয়ম গাইড — blinds থেকে showdown</div>
   </a>
   <a href="/bn/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Game Flow</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">টেক্সাস হোল্ডেমের খেলার ক্রম</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">আসল হ্যান্ড উদাহরণ নিয়ে preflop থেকে river</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Game Flow</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">টেক্সাস হোল্ডেমের খেলার ক্রম</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">আসল হ্যান্ড উদাহরণ নিয়ে preflop থেকে river</div>
   </a>
   <a href="/bn/blog/holdem-blind-meaning" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Blinds</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">small blind vs big blind</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">কার্ড দেখার আগেই কেন টাকা দেন</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Blinds</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">small blind vs big blind</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">কার্ড দেখার আগেই কেন টাকা দেন</div>
   </a>
 </div>
 `.trim(),

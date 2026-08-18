@@ -238,24 +238,24 @@ A. 不。你只减掉你真正看得见的牌——你的底牌和公共牌面�
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/zh/blog/holdem-pot-odds" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">赔率与数学</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">底池赔率怎么算</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">把你的补牌数变成跟或弃</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">赔率与数学</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">底池赔率怎么算</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">把你的补牌数变成跟或弃</div>
   </a>
   <a href="/zh/blog/holdem-probability" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">赔率与数学</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">德扑赔率与概率对照表</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">每种听牌背后的完整参考</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">赔率与数学</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">德扑赔率与概率对照表</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">每种听牌背后的完整参考</div>
   </a>
   <a href="/zh/blog/holdem-reading-the-board" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">读公共牌</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">德州扑克怎么读公共牌</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">认出每一个听牌，才能数出干净补牌</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">读公共牌</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">德州扑克怎么读公共牌</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">认出每一个听牌，才能数出干净补牌</div>
   </a>
   <a href="/zh/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">起手牌</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">按位置划分的起手牌表</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">带着值得听牌的牌进池</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">起手牌</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">按位置划分的起手牌表</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">带着值得听牌的牌进池</div>
   </a>
 </div>
 `.trim(),

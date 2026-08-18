@@ -225,24 +225,24 @@ Cada número aqui vem direto do baralho, não de um palpite. Leve isso pra [como
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/pt/blog/holdem-probability" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Odds e Matemática</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Tabela de odds e probabilidade do pôquer</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Todo número de mão feita e de tiro longo num lugar só</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Odds e Matemática</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Tabela de odds e probabilidade do pôquer</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Todo número de mão feita e de tiro longo num lugar só</div>
   </a>
   <a href="/pt/blog/holdem-outs" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Odds e Matemática</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Como contar outs no pôquer</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Transforme essas odds numa contagem de outs ao vivo</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Odds e Matemática</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Como contar outs no pôquer</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Transforme essas odds numa contagem de outs ao vivo</div>
   </a>
   <a href="/pt/blog/holdem-pot-odds" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Odds e Matemática</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Como calcular pot odds</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">O preço está certo pro seu projeto?</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Odds e Matemática</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Como calcular pot odds</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">O preço está certo pro seu projeto?</div>
   </a>
   <a href="/pt/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Mãos Iniciais</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Tabela de mãos iniciais por posição</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Com quais pares e mãos do mesmo naipe vale a pena projetar</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Mãos Iniciais</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Tabela de mãos iniciais por posição</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Com quais pares e mãos do mesmo naipe vale a pena projetar</div>
   </a>
 </div>
 `.trim(),

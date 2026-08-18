@@ -473,34 +473,34 @@ Como siguiente paso, repasa la [jerarquía de manos del Texas Hold'em](/es/blog/
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/es/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Flujo del juego</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">El orden de juego del Texas Hold'em</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">El flujo completo de una mano — del preflop al showdown con ejemplos reales</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Flujo del juego</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">El orden de juego del Texas Hold'em</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">El flujo completo de una mano — del preflop al showdown con ejemplos reales</div>
   </a>
   <a href="/es/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Jerarquía de manos</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Manos de póker — de la mejor a la peor</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Las 10 manos con probabilidades, ejemplos y problemas de mesa</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Jerarquía de manos</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Manos de póker — de la mejor a la peor</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Las 10 manos con probabilidades, ejemplos y problemas de mesa</div>
   </a>
   <a href="/es/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Posiciones</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Posiciones en el póker: de UTG al botón</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Por qué el botón gana — mapa de asientos y rangos de apertura</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Posiciones</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Posiciones en el póker: de UTG al botón</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Por qué el botón gana — mapa de asientos y rangos de apertura</div>
   </a>
   <a href="/es/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Apuestas</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Pasar, igualar, subir y retirarse explicados</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Cuándo usar cada acción + tabla de decisiones</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Apuestas</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Pasar, igualar, subir y retirarse explicados</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Cuándo usar cada acción + tabla de decisiones</div>
   </a>
   <a href="/es/blog/holdem-showdown-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Showdown</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Reglas del showdown: ¿quién enseña primero?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Último agresor, muck, slow roll y reglas del all-in</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Showdown</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Reglas del showdown: ¿quién enseña primero?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Último agresor, muck, slow roll y reglas del all-in</div>
   </a>
   <a href="/es/blog/holdem-all-in-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">All-In</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Reglas del all-in: botes secundarios y resubidas</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Bote principal, side pot y quién puede resubir</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">All-In</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Reglas del all-in: botes secundarios y resubidas</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Bote principal, side pot y quién puede resubir</div>
   </a>
 </div>
 `.trim(),

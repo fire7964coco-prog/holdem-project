@@ -400,19 +400,19 @@ A. 滿 21 歲、有有效證件就可以，沒有國籍限制。但台港澳的�
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/zh-hant/tournaments" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">賽程</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.5">2026 德州撲克賽事賽程</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:6px;line-height:1.5">全球 107 場賽事，附日期、買入與官方連結</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">賽程</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.5">2026 德州撲克賽事賽程</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:6px;line-height:1.5">全球 107 場賽事，附日期、買入與官方連結</div>
   </a>
   <a href="/zh-hant/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">基礎</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.5">德州撲克錦標賽完整指南</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:6px;line-height:1.5">買入、獎金結構與錢圈的觀念</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">基礎</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.5">德州撲克錦標賽完整指南</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:6px;line-height:1.5">買入、獎金結構與錢圈的觀念</div>
   </a>
   <a href="/zh-hant/blog/apt-incheon-2026-guide" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">亞洲</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.5">APT 仁川 2026</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:6px;line-height:1.5">離台港澳最近的大型賽事</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">亞洲</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.5">APT 仁川 2026</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:6px;line-height:1.5">離台港澳最近的大型賽事</div>
   </a>
 </div>
 `,

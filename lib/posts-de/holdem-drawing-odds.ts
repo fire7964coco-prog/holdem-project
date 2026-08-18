@@ -230,24 +230,24 @@ Jede Zahl hier kommt direkt aus dem Deck, nicht aus dem Bauchgefühl. Nimm sie m
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/de/blog/holdem-probability" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Odds &amp; Mathe</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Poker-Odds- und Wahrscheinlichkeitstabelle</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Jede Made-Hand- und Long-Shot-Zahl an einem Ort</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Odds &amp; Mathe</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Poker-Odds- und Wahrscheinlichkeitstabelle</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Jede Made-Hand- und Long-Shot-Zahl an einem Ort</div>
   </a>
   <a href="/de/blog/holdem-outs" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Odds &amp; Mathe</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Wie man Outs im Poker zählt</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Verwandle diese Odds in einen Live-Out-Count</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Odds &amp; Mathe</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Wie man Outs im Poker zählt</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Verwandle diese Odds in einen Live-Out-Count</div>
   </a>
   <a href="/de/blog/holdem-pot-odds" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Odds &amp; Mathe</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Wie man Pot Odds berechnet</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Stimmt der Preis für deinen Draw?</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Odds &amp; Mathe</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Wie man Pot Odds berechnet</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Stimmt der Preis für deinen Draw?</div>
   </a>
   <a href="/de/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Starthände</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Starthand-Tabelle nach Position</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Mit welchen Paaren und suited Händen du drawst</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Starthände</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Starthand-Tabelle nach Position</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Mit welchen Paaren und suited Händen du drawst</div>
   </a>
 </div>
 `.trim(),

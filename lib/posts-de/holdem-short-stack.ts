@@ -226,24 +226,24 @@ Beim Short-Stack-Play wird Turniermathe zu Muskelgedächtnis – kombiniere es m
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/de/blog/holdem-bubble" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Turnier</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Wie du die Bubble spielst</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Wo deine Short-Stack-Shoves am meisten zählen</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Turnier</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Wie du die Bubble spielst</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Wo deine Short-Stack-Shoves am meisten zählen</div>
   </a>
   <a href="/de/blog/holdem-icm" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Turnier</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ICM erklärt</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Warum Überleben Chips schlagen kann</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Turnier</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ICM erklärt</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Warum Überleben Chips schlagen kann</div>
   </a>
   <a href="/de/blog/holdem-when-to-fold" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Strategie</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Wann im Poker folden</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Wann der Preis Fold sagt</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Strategie</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Wann im Poker folden</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Wann der Preis Fold sagt</div>
   </a>
   <a href="/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Kostenloses Tool</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ICM-Rechner</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Berechne deinen echten Shove/Call-Spot</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Kostenloses Tool</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ICM-Rechner</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Berechne deinen echten Shove/Call-Spot</div>
   </a>
 </div>
 `.trim(),

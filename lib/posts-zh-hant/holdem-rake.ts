@@ -210,24 +210,24 @@ A. 實體抽水是較高的百分比加較高的封頂，但你一小時打的�
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/zh-hant/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">錦標賽</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">現金桌與錦標賽差在哪</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">為什麼兩者收你的錢完全不同</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">錦標賽</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">現金桌與錦標賽差在哪</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">為什麼兩者收你的錢完全不同</div>
   </a>
   <a href="/zh-hant/blog/holdem-pot-odds" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">機率與數學</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">底池賠率怎麼算</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">在撲克室抽完之後讀你的底池</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">機率與數學</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">底池賠率怎麼算</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">在撲克室抽完之後讀你的底池</div>
   </a>
   <a href="/zh-hant/blog/holdem-strategy" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">策略</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">德州撲克策略</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">把選桌避開爛抽水變成固定習慣</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">策略</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">德州撲克策略</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">把選桌避開爛抽水變成固定習慣</div>
   </a>
   <a href="/zh-hant/blog/holdem-glossary" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">術語</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">德州撲克術語表</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">把現場俚語跟國際標準對起來</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">術語</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">德州撲克術語表</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">把現場俚語跟國際標準對起來</div>
   </a>
 </div>
 `.trim(),

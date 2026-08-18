@@ -200,19 +200,19 @@ Masih baru dengan game ini secara keseluruhan? [Panduan aturan Texas Hold'em unt
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/id/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Posisi</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Penjelasan Posisi di Meja Poker</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Dari UTG sampai button, 6-max vs 9-max, opening range</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Posisi</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Penjelasan Posisi di Meja Poker</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Dari UTG sampai button, 6-max vs 9-max, opening range</div>
   </a>
   <a href="/id/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Urutan Main</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Urutan Main di Texas Hold'em</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Urutan aksi: preflop → flop → turn → river</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Urutan Main</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Urutan Main di Texas Hold'em</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Urutan aksi: preflop → flop → turn → river</div>
   </a>
   <a href="/id/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Turnamen</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Cara Kerja Turnamen Poker</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Level blind, ante, payout, dan format</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Turnamen</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Cara Kerja Turnamen Poker</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Level blind, ante, payout, dan format</div>
   </a>
 </div>
 `.trim(),

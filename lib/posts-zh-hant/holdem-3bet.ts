@@ -308,24 +308,24 @@ A. 隨著籌碼變短——大約 10～25 個大盲——很多牌最好打成 3
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/zh-hant/blog/holdem-strategy" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">策略</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">贏家撲克的 5 個決策框架</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">3bet 在一套會贏的遊戲裡的位置</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">策略</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">贏家撲克的 5 個決策框架</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">3bet 在一套會贏的遊戲裡的位置</div>
   </a>
   <a href="/zh-hant/blog/holdem-position-play" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">位置</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">德州撲克位置怎麼打</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">為什麼 3bet 在有利位置更好使</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">位置</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">德州撲克位置怎麼打</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">為什麼 3bet 在有利位置更好使</div>
   </a>
   <a href="/zh-hant/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">起手牌</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">按位置劃分的起手牌表</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">哪些牌才值得再加注</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">起手牌</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">按位置劃分的起手牌表</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">哪些牌才值得再加注</div>
   </a>
   <a href="/zh-hant/blog/holdem-pot-odds" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">機率與數學</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">德州撲克底池賠率怎麼算</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">面對 4bet 該蓋還是跟，價錢說了算</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">機率與數學</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">德州撲克底池賠率怎麼算</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">面對 4bet 該蓋還是跟，價錢說了算</div>
   </a>
 </div>
 `.trim(),

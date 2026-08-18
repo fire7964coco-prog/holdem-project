@@ -102,12 +102,12 @@ export function renderMarkdown(content: string, locale?: string): string {
           const kickerLabel = kickerRaw.replace(/^[+-]\s*/, '');
           const pill = applies
             ? 'background:rgba(34,197,94,0.14);color:#16803c;border:1px solid rgba(34,197,94,0.35)'
-            : 'background:rgba(0,0,0,0.05);color:var(--muted-foreground);border:1px solid rgba(0,0,0,0.10)';
+            : 'background:rgba(0,0,0,0.05);color:hsl(var(--muted-foreground));border:1px solid rgba(0,0,0,0.10)';
           return (
             `<div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;padding:8px 12px;border-radius:8px;background:#f0ebe0;border:1px solid #d8d0be;margin-bottom:5px">` +
             `<div style="width:22px;height:22px;border-radius:50%;background:rgba(196,154,24,0.15);border:1px solid rgba(196,154,24,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#b8820a;flex-shrink:0">${i + 1}</div>` +
-            `<div style="font-weight:700;color:var(--foreground);font-size:13px;min-width:96px;flex-shrink:0">${name}</div>` +
-            `<div style="flex:1;min-width:140px;color:var(--muted-foreground);font-size:12.5px;line-height:1.45">${rule}</div>` +
+            `<div style="font-weight:700;color:hsl(var(--foreground));font-size:13px;min-width:96px;flex-shrink:0">${name}</div>` +
+            `<div style="flex:1;min-width:140px;color:hsl(var(--muted-foreground));font-size:12.5px;line-height:1.45">${rule}</div>` +
             (kickerLabel ? `<div style="font-size:11px;font-weight:700;padding:2px 9px;border-radius:999px;flex-shrink:0;${pill}">${kickerLabel}</div>` : '') +
             `</div>`
           );
@@ -144,10 +144,10 @@ export function renderMarkdown(content: string, locale?: string): string {
     .replace(/^\*\*(\d+)\. (.+?)\*\*\s*[—–]?\s*(.+)$/gm, (_, num, title, desc) =>
       `<div style="display:flex;gap:12px;align-items:flex-start;margin:10px 0;padding:14px 16px;background:#f0ebe0;border-radius:10px;border:1px solid #d8d0be">` +
       `<div style="width:26px;height:26px;border-radius:50%;background:rgba(196,154,24,0.15);border:1px solid rgba(196,154,24,0.4);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:#b8820a;flex-shrink:0;margin-top:2px">${num}</div>` +
-      `<div><div style="font-size:14px;font-weight:700;color:var(--foreground);margin-bottom:4px">${title.replace(/:$/, '')}</div>` +
-      `<div style="font-size:13px;color:var(--muted-foreground);line-height:1.65">${desc}</div></div></div>`)
+      `<div><div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));margin-bottom:4px">${title.replace(/:$/, '')}</div>` +
+      `<div style="font-size:13px;color:hsl(var(--muted-foreground));line-height:1.65">${desc}</div></div></div>`)
     .replace(/^### (.+)$/gm, (_, text) =>
-      `<h3 id="${slugify(text)}" style="font-size:15px;font-weight:800;margin:20px 0 10px;padding:10px 16px;background:rgba(212,175,55,0.07);border-left:3px solid rgba(212,175,55,0.6);border-radius:0 8px 8px 0;color:var(--foreground);word-break:keep-all;overflow-wrap:break-word;line-height:1.45;letter-spacing:-0.01em">${text}</h3>`)
+      `<h3 id="${slugify(text)}" style="font-size:15px;font-weight:800;margin:20px 0 10px;padding:10px 16px;background:rgba(212,175,55,0.07);border-left:3px solid rgba(212,175,55,0.6);border-radius:0 8px 8px 0;color:hsl(var(--foreground));word-break:keep-all;overflow-wrap:break-word;line-height:1.45;letter-spacing:-0.01em">${text}</h3>`)
     .replace(/^## (.+)$/gm, (_, text) => `<h2 id="${slugify(text)}" class="blog-h2 text-xl sm:text-2xl font-extrabold text-foreground mt-8 sm:mt-10 mb-3 pb-2 border-b-2 border-primary/30">${text}</h2>`)
     .replace(/^# (.+)$/gm, '<h1 class="text-3xl font-extrabold text-foreground mt-6 mb-5">$1</h1>')
     // FAQ cards — MUST run before **bold** processing (bold would consume the ** markers first)
@@ -157,11 +157,11 @@ export function renderMarkdown(content: string, locale?: string): string {
         `<div style="margin-bottom:12px;border:2px solid rgba(234,88,12,0.55);border-radius:12px;overflow:hidden">` +
         `<div style="padding:11px 16px;background:rgba(234,88,12,0.10);border-bottom:2px solid rgba(234,88,12,0.30);display:flex;gap:10px;align-items:flex-start">` +
         `<span style="flex-shrink:0;width:22px;height:22px;border-radius:50%;background:rgba(234,88,12,0.20);border:1.5px solid rgba(234,88,12,0.70);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#ea580c;margin-top:1px">Q</span>` +
-        `<span style="font-size:15.5px;font-weight:700;color:var(--foreground);line-height:1.5">${q.trim()}</span>` +
+        `<span style="font-size:15.5px;font-weight:700;color:hsl(var(--foreground));line-height:1.5">${q.trim()}</span>` +
         `</div>` +
         // FAQ 답변은 본문 글자의 약 11%를 차지한다 — 13.5px는 모바일에서 너무 작았다.
         // 15px로 올린다(본문 16px보다 살짝 작아 위계는 유지). 2026-08-01 실측 근거.
-        `<div class="blog-faq-answer" style="padding:12px 16px 12px 48px;font-size:15px;color:var(--muted-foreground);line-height:1.75">${a.trim()}</div>` +
+        `<div class="blog-faq-answer" style="padding:12px 16px 12px 48px;font-size:15px;color:hsl(var(--muted-foreground));line-height:1.75">${a.trim()}</div>` +
         `</div>`
     )
     .replace(/==r:(.+?)==/g, '<mark class="brush-hl brush-hl-red">$1</mark>')
@@ -226,7 +226,7 @@ export function renderMarkdown(content: string, locale?: string): string {
     .replace(/^:::note\[(.+)\]:::$/gm, (_, text) => editorialNote(text))
     // :::tip[text]::: — 팁 콜아웃
     .replace(/^:::tip\[(.+)\]:::$/gm, (_, text) =>
-      `<div style="display:flex;gap:10px;align-items:center;margin:14px 0;padding:12px 16px;background:rgba(59,130,246,0.07);border-radius:10px;border:1px solid rgba(59,130,246,0.2);font-size:13px;color:var(--foreground)">` +
+      `<div style="display:flex;gap:10px;align-items:center;margin:14px 0;padding:12px 16px;background:rgba(59,130,246,0.07);border-radius:10px;border:1px solid rgba(59,130,246,0.2);font-size:13px;color:hsl(var(--foreground))">` +
       `<span style="font-size:16px;flex-shrink:0">💡</span><span>${text}</span></div>`)
     // 인라인 썸네일 링크: [텍스트](/url "thumb:/images/x.webp") — 앵커 앞 미니 썸네일(핵심 링크 1~2개만 선택적 사용, 남발 금지)
     .replace(/\[([^\]]+)\]\((?!https?:\/\/)([^)\s"]+)\s+"thumb:([^"]+)"\)/g, (_m, t, u, img) =>
@@ -304,17 +304,17 @@ export function renderMarkdown(content: string, locale?: string): string {
           ? `<img src="${optSrc(img, 128)}" srcset="${optSet(img, [64, 128])}" sizes="64px" alt="" loading="lazy" style="width:64px;height:64px;object-fit:cover;border-radius:10px;flex-shrink:0"/>`
           : '';
         return (
-          `<a href="${href}" style="display:flex;align-items:center;gap:14px;padding:12px 14px;background:var(--card);border:2px solid #ffd23f;border-radius:12px;text-decoration:none;flex:1 1 260px;min-width:0;transition:box-shadow .2s,transform .2s;box-shadow:0 0 10px rgba(255,210,63,0.40)" onmouseover="this.style.boxShadow='0 0 16px rgba(255,210,63,0.70)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='0 0 10px rgba(255,210,63,0.40)';this.style.transform='none'">` +
+          `<a href="${href}" style="display:flex;align-items:center;gap:14px;padding:12px 14px;background:hsl(var(--card));border:2px solid #ffd23f;border-radius:12px;text-decoration:none;flex:1 1 260px;min-width:0;transition:box-shadow .2s,transform .2s;box-shadow:0 0 10px rgba(255,210,63,0.40)" onmouseover="this.style.boxShadow='0 0 16px rgba(255,210,63,0.70)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='0 0 10px rgba(255,210,63,0.40)';this.style.transform='none'">` +
           thumb +
           `<span style="min-width:0;display:flex;align-items:center;gap:8px">` +
-          `<span style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.35">${title}</span>` +
-          `<span class="blog-readnext-arrow" style="color:var(--primary);font-weight:800;flex-shrink:0">&rarr;</span>` +
+          `<span style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.35">${title}</span>` +
+          `<span class="blog-readnext-arrow" style="color:hsl(var(--primary));font-weight:800;flex-shrink:0">&rarr;</span>` +
           `</span></a>`
         );
       }).join('');
       return (
-        `<div style="margin:30px 0;padding:14px 16px 16px;background:linear-gradient(rgba(28,74,52,0.14),rgba(28,74,52,0.05)),var(--card);border:1px solid var(--border);border-radius:16px">` +
-        `<div class="blog-readnext-label" style="font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--primary);margin:2px 0 12px;padding-left:2px">${heading}</div>` +
+        `<div style="margin:30px 0;padding:14px 16px 16px;background:linear-gradient(rgba(28,74,52,0.14),rgba(28,74,52,0.05)),hsl(var(--card));border:1px solid hsl(var(--border));border-radius:16px">` +
+        `<div class="blog-readnext-label" style="font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:hsl(var(--primary));margin:2px 0 12px;padding-left:2px">${heading}</div>` +
         `<div style="display:flex;gap:12px;flex-wrap:wrap">${cards}</div>` +
         `</div>`
       );
@@ -410,18 +410,18 @@ export function renderMarkdown(content: string, locale?: string): string {
           const seat = copy.seats[p.id];
           return (
             `<div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">` +
-            `<span style="width:64px;font-size:12px;font-weight:800;color:var(--foreground);flex-shrink:0">${p.id}</span>` +
+            `<span style="width:64px;font-size:12px;font-weight:800;color:hsl(var(--foreground));flex-shrink:0">${p.id}</span>` +
             `<div style="flex:1;background:rgba(255,255,255,0.06);border-radius:6px;height:24px;overflow:hidden;position:relative">` +
             `<div style="width:${p.pct}%;height:100%;background:linear-gradient(90deg,${p.color},${p.bg});border-radius:6px;transition:width 0.3s"></div>` +
             `</div>` +
             `<span style="width:52px;font-size:12px;font-weight:700;color:${p.color};text-align:right;flex-shrink:0">~${p.pct}%</span>` +
-            `<span style="flex:1.2;font-size:11px;color:var(--muted-foreground);display:none" class="sm:inline">${seat.label} · ${seat.note}</span>` +
+            `<span style="flex:1.2;font-size:11px;color:hsl(var(--muted-foreground));display:none" class="sm:inline">${seat.label} · ${seat.note}</span>` +
             `</div>`
           );
         }).join('');
         return (
           `<div style="margin:24px 0;padding:18px 20px 14px;background:rgba(255,248,210,0.06);border:1px solid rgba(255,240,180,0.25);border-radius:14px">` +
-          `<p style="font-size:11px;font-weight:700;letter-spacing:0.1em;color:var(--primary);margin:0 0 14px">${copy.title}</p>` +
+          `<p style="font-size:11px;font-weight:700;letter-spacing:0.1em;color:hsl(var(--primary));margin:0 0 14px">${copy.title}</p>` +
           rows +
           `</div>`
         );
@@ -451,11 +451,11 @@ export function renderMarkdown(content: string, locale?: string): string {
           const isTop = rank <= 3;
           const rankColor = rank === 1 ? '#b8820a' : rank <= 3 ? '#c49a18' : '#6b5040';
           const bg = isTop ? 'rgba(212,175,55,0.10)' : 'rgba(0,0,0,0.02)';
-          return `<div style="display:flex;align-items:center;gap:6px;padding:4px 8px;border-radius:6px;background:${bg};margin-bottom:3px"><div style="font-size:11px;font-weight:800;color:${rankColor};width:16px;text-align:right;flex-shrink:0">${rank}</div><div style="font-size:10px;font-weight:600;color:var(--foreground);width:84px;flex-shrink:0;line-height:1.2">${kr}</div><div style="display:flex;gap:2px;flex-wrap:nowrap;direction:ltr">${cardHtml}</div></div>`;
+          return `<div style="display:flex;align-items:center;gap:6px;padding:4px 8px;border-radius:6px;background:${bg};margin-bottom:3px"><div style="font-size:11px;font-weight:800;color:${rankColor};width:16px;text-align:right;flex-shrink:0">${rank}</div><div style="font-size:10px;font-weight:600;color:hsl(var(--foreground));width:84px;flex-shrink:0;line-height:1.2">${kr}</div><div style="display:flex;gap:2px;flex-wrap:nowrap;direction:ltr">${cardHtml}</div></div>`;
         };
         const left  = ranks.slice(0, 5).map(makeRow).join('');
         const right = ranks.slice(5).map(makeRow).join('');
-        return `<div class="blog-scroll-x" style="margin:16px 0"><div style="background:#f0ebe0;border:1px solid #d8d0be;border-radius:14px;padding:14px 16px;min-width:420px"><div style="font-size:11px;font-weight:700;color:#c49a18;text-align:center;margin-bottom:10px;letter-spacing:0.4px">홀덤족보 순위 10가지 완전 정리표</div><div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 14px">${left}${right}</div><div style="font-size:9px;color:var(--muted-foreground);text-align:center;margin-top:8px">1위(강함) → 10위(약함) · 카드는 예시</div></div></div>`;
+        return `<div class="blog-scroll-x" style="margin:16px 0"><div style="background:#f0ebe0;border:1px solid #d8d0be;border-radius:14px;padding:14px 16px;min-width:420px"><div style="font-size:11px;font-weight:700;color:#c49a18;text-align:center;margin-bottom:10px;letter-spacing:0.4px">홀덤족보 순위 10가지 완전 정리표</div><div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 14px">${left}${right}</div><div style="font-size:9px;color:hsl(var(--muted-foreground));text-align:center;margin-top:8px">1위(강함) → 10위(약함) · 카드는 예시</div></div></div>`;
       }
     )
     .replace(
@@ -467,7 +467,7 @@ export function renderMarkdown(content: string, locale?: string): string {
           const color = isRed ? '#dc2626' : '#111827';
           return `<div style="width:32px;height:46px;background:white;border-radius:5px;display:inline-flex;align-items:center;justify-content:center;border:1px solid #d1d5db;box-shadow:0 1px 3px rgba(0,0,0,0.35);flex-shrink:0"><span style="font-size:11px;font-weight:800;color:${color};line-height:1;letter-spacing:-0.5px">${card}</span></div>`;
         }).join('');
-        const captionHtml = caption ? `<span style="font-size:11px;color:var(--muted-foreground);align-self:flex-end;padding-bottom:2px">${caption}</span>` : '';
+        const captionHtml = caption ? `<span style="font-size:11px;color:hsl(var(--muted-foreground));align-self:flex-end;padding-bottom:2px">${caption}</span>` : '';
         // 카드 시퀀스는 항상 LTR 유지(RTL 언어에서 A-K-Q-J-10 순서가 뒤집히지 않도록).
         return `<div style="display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:12px 0;padding:12px 16px;background:#f0ebe0;border-radius:10px;border:1px solid #d8d0be"><span style="display:inline-flex;flex-wrap:wrap;gap:6px;align-items:center;direction:ltr">${cardHtml}</span>${captionHtml}</div>`;
       }
@@ -481,8 +481,8 @@ export function renderMarkdown(content: string, locale?: string): string {
   <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px">
     <div style="width:44px;height:44px;border-radius:12px;background:rgba(212,175,55,0.15);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:20px">🗺️</div>
     <div>
-      <div style="font-weight:700;font-size:15px;color:var(--foreground)">${label} — 위치 확인</div>
-      <div style="font-size:12px;color:var(--muted-foreground);margin-top:2px">네이버·카카오 지도에서 실시간 위치·리뷰·사진을 확인하세요</div>
+      <div style="font-weight:700;font-size:15px;color:hsl(var(--foreground))">${label} — 위치 확인</div>
+      <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:2px">네이버·카카오 지도에서 실시간 위치·리뷰·사진을 확인하세요</div>
     </div>
   </div>
   <div style="display:flex;gap:10px;flex-wrap:wrap">
@@ -505,7 +505,7 @@ export function renderMarkdown(content: string, locale?: string): string {
     .replace(/^→ (.+)$/gm, (_, text) =>
       `<div class="blog-callout" style="display:flex;gap:10px;align-items:flex-start;margin:10px 0;padding:14px 16px;background:rgba(212,175,55,0.10);border-left:3px solid rgba(196,154,24,0.7);border-radius:0 10px 10px 0">` +
       `<span class="blog-callout-arrow" style="color:#d4af37;font-weight:900;font-size:17px;flex-shrink:0;line-height:1.5">→</span>` +
-      `<div style="font-size:14px;line-height:1.7;color:var(--foreground)">${text}</div></div>`)
+      `<div style="font-size:14px;line-height:1.7;color:hsl(var(--foreground))">${text}</div></div>`)
     // :::faqcard[/path/img.webp][alt][caption]::: — notebook-style FAQ visual card
     // LCP 후보(보통 글 첫머리)면 eager+fetchpriority=high, 아니면 lazy
     .replace(/^:::faqcard\[([^\]]+)\]\[([^\]]*)\]\[([^\]]*)\]:::$/gm, (_, src, alt, caption) => {
@@ -524,7 +524,7 @@ export function renderMarkdown(content: string, locale?: string): string {
     .replace(/^:::stat\[([^\]]+)\] (.+):::$/gm, (_, num, label) =>
       `<div style="display:inline-flex;align-items:center;gap:10px;margin:8px 8px 8px 0;padding:8px 18px;background:rgba(212,175,55,0.1);border:1px solid rgba(212,175,55,0.3);border-radius:100px">` +
       `<span style="font-size:20px;font-weight:800;color:#d4af37">${num}</span>` +
-      `<span style="font-size:12px;color:var(--muted-foreground)">${label}</span></div>`)
+      `<span style="font-size:12px;color:hsl(var(--muted-foreground))">${label}</span></div>`)
     // :::eventcta::: — 본문 중간 이벤트 참여 유도 소형 CTA (클릭 시 홈 커뮤니티 이벤트 탭)
     // 색: 프로젝트 팔레트(웜 크림 bg + 다크그린 텍스트 + 골드 액센트) 기준, 네이비 미사용
     .replace(/^:::eventcta:::$/gm, () =>

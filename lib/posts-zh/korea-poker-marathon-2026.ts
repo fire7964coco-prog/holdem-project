@@ -34,8 +34,8 @@ export const POST: Post = {
 
 <div style="display:flex;align-items:flex-start;gap:16px;margin:20px 0">
   <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-marathon-record.webp" alt="2026 高阳半程马拉松官方成绩卡——芯片计时 1:51:10，男子半程组" width="600" height="899" sizes="160px" style="width:160px;flex-shrink:0;border-radius:8px" />
-  <div style="font-size:14px;line-height:1.7;color:var(--muted-foreground)">
-    <strong style="display:block;margin-bottom:6px;color:var(--foreground)">个人成绩——2026 高阳半程马拉松</strong>
+  <div style="font-size:14px;line-height:1.7;color:hsl(var(--muted-foreground))">
+    <strong style="display:block;margin-bottom:6px;color:hsl(var(--foreground))">个人成绩——2026 高阳半程马拉松</strong>
     芯片计时：<strong>1:51:10</strong> · 男子半程组 · 号码布 5448<br />
     韩国的赛事组织意外地精细——官方芯片计时、即时电子成绩卡、实时追踪。外国跑者拿到的体验和本地人完全一样。
   </div>
@@ -172,10 +172,10 @@ export const POST: Post = {
 <table style="width:100%;border-collapse:collapse;font-size:14px;line-height:1.5">
   <thead>
     <tr style="border-bottom:2px solid rgba(255,255,255,0.12)">
-      <th style="text-align:left;padding:10px 14px;color:var(--muted-foreground);font-weight:600;white-space:nowrap;width:160px">日期</th>
-      <th style="text-align:left;padding:10px 14px;color:var(--muted-foreground);font-weight:600">赛事</th>
-      <th style="text-align:left;padding:10px 14px;color:var(--muted-foreground);font-weight:600">场馆</th>
-      <th style="text-align:left;padding:10px 14px;color:var(--muted-foreground);font-weight:600">关键信息</th>
+      <th style="text-align:left;padding:10px 14px;color:hsl(var(--muted-foreground));font-weight:600;white-space:nowrap;width:160px">日期</th>
+      <th style="text-align:left;padding:10px 14px;color:hsl(var(--muted-foreground));font-weight:600">赛事</th>
+      <th style="text-align:left;padding:10px 14px;color:hsl(var(--muted-foreground));font-weight:600">场馆</th>
+      <th style="text-align:left;padding:10px 14px;color:hsl(var(--muted-foreground));font-weight:600">关键信息</th>
     </tr>
   </thead>
   <tbody>
@@ -183,19 +183,19 @@ export const POST: Post = {
       <td style="padding:10px 14px;font-weight:700;white-space:nowrap">9 月 25 日 – 10 月 7 日</td>
       <td style="padding:10px 14px"><strong>APT Jeju 2026</strong></td>
       <td style="padding:10px 14px">LES A Casino, Jeju</td>
-      <td style="padding:10px 14px;color:var(--muted-foreground)">$3.5M+ 总保底 · 136 项赛事 · 春川马拉松前 18 天结束</td>
+      <td style="padding:10px 14px;color:hsl(var(--muted-foreground))">$3.5M+ 总保底 · 136 项赛事 · 春川马拉松前 18 天结束</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.07);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:10px 14px;font-weight:700;white-space:nowrap">10 月 30 日 – 11 月 8 日</td>
-      <td style="padding:10px 14px"><strong>GOP Incheon<br/><span style="font-size:12px;color:var(--muted-foreground)">The Labyrinth Trail</span></strong></td>
+      <td style="padding:10px 14px"><strong>GOP Incheon<br/><span style="font-size:12px;color:hsl(var(--muted-foreground))">The Labyrinth Trail</span></strong></td>
       <td style="padding:10px 14px">Paradise City, Incheon</td>
       <td style="padding:10px 14px"><span style="background:rgba(239,68,68,0.15);color:#f87171;padding:2px 7px;border-radius:4px;font-size:12px;font-weight:600">⚡ JTBC 马拉松 11 月 1 日 = 这场赛事的 Day 3</span></td>
     </tr>
     <tr style="background:rgba(212,175,55,0.07);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:10px 14px;font-weight:700;white-space:nowrap">2026 年 12 月（待定）</td>
-      <td style="padding:10px 14px"><strong>AJPC Samurai Circuit<br/><span style="font-size:12px;color:var(--muted-foreground)">Incheon 2026 III</span></strong></td>
+      <td style="padding:10px 14px"><strong>AJPC Samurai Circuit<br/><span style="font-size:12px;color:hsl(var(--muted-foreground))">Incheon 2026 III</span></strong></td>
       <td style="padding:10px 14px">Paradise City, Incheon</td>
-      <td style="padding:10px 14px;color:var(--muted-foreground)">年末之选 · 赛程待定</td>
+      <td style="padding:10px 14px;color:hsl(var(--muted-foreground))">年末之选 · 赛程待定</td>
     </tr>
   </tbody>
 </table>
@@ -265,10 +265,10 @@ export const POST: Post = {
 <table style="width:100%;border-collapse:collapse;font-size:13px;line-height:1.5">
   <thead>
     <tr style="border-bottom:2px solid rgba(255,255,255,0.12)">
-      <th style="text-align:left;padding:9px 12px;color:var(--muted-foreground);font-weight:600;white-space:nowrap">日期</th>
-      <th style="text-align:left;padding:9px 12px;color:var(--muted-foreground);font-weight:600">活动</th>
-      <th style="text-align:left;padding:9px 12px;color:var(--muted-foreground);font-weight:600">场馆</th>
-      <th style="text-align:left;padding:9px 12px;color:var(--muted-foreground);font-weight:600">详情</th>
+      <th style="text-align:left;padding:9px 12px;color:hsl(var(--muted-foreground));font-weight:600;white-space:nowrap">日期</th>
+      <th style="text-align:left;padding:9px 12px;color:hsl(var(--muted-foreground));font-weight:600">活动</th>
+      <th style="text-align:left;padding:9px 12px;color:hsl(var(--muted-foreground));font-weight:600">场馆</th>
+      <th style="text-align:left;padding:9px 12px;color:hsl(var(--muted-foreground));font-weight:600">详情</th>
     </tr>
   </thead>
   <tbody>
@@ -276,37 +276,37 @@ export const POST: Post = {
       <td style="padding:8px 12px;white-space:nowrap">5 月 15–24 日</td>
       <td style="padding:8px 12px">🃏 GOP Incheon 2026 <em>（已结束）</em></td>
       <td style="padding:8px 12px">Paradise City, Incheon</td>
-      <td style="padding:8px 12px;color:var(--muted-foreground)">已完成</td>
+      <td style="padding:8px 12px;color:hsl(var(--muted-foreground))">已完成</td>
     </tr>
     <tr style="opacity:0.5;border-bottom:1px solid rgba(255,255,255,0.05)">
       <td style="padding:8px 12px;white-space:nowrap">5 月 15–25 日</td>
       <td style="padding:8px 12px">🃏 TLPT Jeju 2026 <em>（已结束）</em></td>
       <td style="padding:8px 12px">LES A Casino, Jeju</td>
-      <td style="padding:8px 12px;color:var(--muted-foreground)">已完成</td>
+      <td style="padding:8px 12px;color:hsl(var(--muted-foreground))">已完成</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">8 月 7–16 日</td>
       <td style="padding:9px 12px">🃏 <strong>APT Incheon 2026</strong></td>
       <td style="padding:9px 12px">Paradise City, Incheon</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">$2.7M GTD · 主赛事 $1M GTD</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">$2.7M GTD · 主赛事 $1M GTD</td>
     </tr>
     <tr style="background:rgba(34,197,94,0.05);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">9 月 6 日</td>
       <td style="padding:9px 12px">🏃 YTN 首尔 Tour Marathon</td>
       <td style="padding:9px 12px">Seoul Plaza</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">11KM · 半程 · 7:30 · 报名已截止</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">11KM · 半程 · 7:30 · 报名已截止</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">9 月 25 日–10 月 7 日</td>
       <td style="padding:9px 12px">🃏 <strong>APT Jeju 2026</strong></td>
       <td style="padding:9px 12px">LES A Casino, Jeju</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">$3.5M+ GTD · 136 项赛事 · 距春川 18 天</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">$3.5M+ GTD · 136 项赛事 · 距春川 18 天</td>
     </tr>
     <tr style="background:rgba(34,197,94,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">10 月 25 日（周日）</td>
       <td style="padding:9px 12px">🏃 <strong>春川马拉松</strong></td>
       <td style="padding:9px 12px">孔之川，春川</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">全程 · 10K · 9:00 · 7 月 14 日报名</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">全程 · 10K · 9:00 · 7 月 14 日报名</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">10 月 30 日–11 月 8 日</td>
@@ -324,19 +324,19 @@ export const POST: Post = {
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">11 月 15 日（周日）</td>
       <td style="padding:9px 12px">🏃 Garmin Run Korea</td>
       <td style="padding:9px 12px">高阳综合运动场</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">半程 · 10K · 8:00 · 7 月 1–3 日报名</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">半程 · 10K · 8:00 · 7 月 1–3 日报名</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">12 月（待定）</td>
       <td style="padding:9px 12px">🃏 AJPC Samurai Circuit III</td>
       <td style="padding:9px 12px">Paradise City, Incheon</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">赛程待定</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">赛程待定</td>
     </tr>
     <tr style="border-top:1px solid rgba(255,255,255,0.08)">
-      <td style="padding:9px 12px;color:var(--muted-foreground)">全年</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">全年</td>
       <td style="padding:9px 12px">🃏 现金局（NLHE）</td>
       <td style="padding:9px 12px">Paradise City, Incheon</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">24/7 开放 · 仅限外国人</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">24/7 开放 · 仅限外国人</td>
     </tr>
   </tbody>
 </table>
@@ -401,11 +401,11 @@ export const POST: Post = {
 <div style="display:flex;gap:12px;margin:18px 0;flex-wrap:wrap">
   <div style="flex:1;min-width:240px">
     <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-hangang1.webp" alt="汉江公园的骑行跑步道——前景一对情侣坐在长椅上，江边有骑行者和行人，对岸是首尔天际线" width="650" height="867" sizes="(max-width: 520px) 100vw, 330px" style="width:100%;border-radius:8px;display:block" />
-    <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">汝矣岛汉江公园——跑者最爱的一段。平坦、宽阔、无车、24 小时开放。</p>
+    <p style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:6px;text-align:center">汝矣岛汉江公园——跑者最爱的一段。平坦、宽阔、无车、24 小时开放。</p>
   </div>
   <div style="flex:1;min-width:240px">
     <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-hangang2.webp" alt="汉江公园两旁绿树的跑道——江边步道上有一名慢跑者和一名骑行者，对岸是公寓高楼" width="560" height="700" sizes="(max-width: 520px) 100vw, 330px" style="width:100%;border-radius:8px;display:block" />
-    <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">江边步道向两个方向延伸好几公里——本地人日常跑步、骑行和清晨散步都在这里。</p>
+    <p style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:6px;text-align:center">江边步道向两个方向延伸好几公里——本地人日常跑步、骑行和清晨散步都在这里。</p>
   </div>
 </div>
 
@@ -431,11 +431,11 @@ export const POST: Post = {
 <div style="display:flex;gap:12px;margin:18px 0;flex-wrap:wrap">
   <div style="flex:1;min-width:200px">
     <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-ramen-machine.webp" alt="GS25 便利店里的汉江拉面煮面机——为纸碗泡面自动出热水" width="525" height="700" sizes="(max-width: 520px) 100vw, 330px" style="width:100%;height:280px;object-fit:cover;border-radius:8px;display:block" />
-    <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">公园便利店里的机器。扫你带条形码的碗，按启动——剩下的机器搞定。用机器免费。</p>
+    <p style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:6px;text-align:center">公园便利店里的机器。扫你带条形码的碗，按启动——剩下的机器搞定。用机器免费。</p>
   </div>
   <div style="flex:1;min-width:200px">
     <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-ramen.webp" alt="一碗汉江拉面——纸碗里的辛拉面加一个蛋，在江边吃" width="700" height="525" sizes="(max-width: 520px) 100vw, 330px" style="width:100%;height:280px;object-fit:cover;border-radius:8px;display:block" />
-    <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">成品。热腾腾的辛拉面加蛋，在汉江边吃。总花费 ₩4,000–5,000（约 $3）。可能是首尔最好的赛后一餐。</p>
+    <p style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:6px;text-align:center">成品。热腾腾的辛拉面加蛋，在汉江边吃。总花费 ₩4,000–5,000（约 $3）。可能是首尔最好的赛后一餐。</p>
   </div>
 </div>
 
@@ -519,19 +519,19 @@ A. 高阳综合运动场是韩国最大的演唱会体育场之一——BTS、BL
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/zh/blog/apt-incheon-2026-guide" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">锦标赛</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">2026 APT Incheon 指南</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">8 月 7–16 日，Paradise City Casino · $2.7M GTD</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">锦标赛</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">2026 APT Incheon 指南</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">8 月 7–16 日，Paradise City Casino · $2.7M GTD</div>
   </a>
   <a href="/zh/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">基础</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">扑克锦标赛怎么打</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">买入、盲注、卫星赛和新手清单</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">基础</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">扑克锦标赛怎么打</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">买入、盲注、卫星赛和新手清单</div>
   </a>
   <a href="/zh/blog/wpt-australia-2026-guide" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">亚太</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">2026 WPT Australia 指南</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">The Star Sydney — 9 月 10–30 日</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">亚太</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">2026 WPT Australia 指南</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">The Star Sydney — 9 月 10–30 日</div>
   </a>
 </div>
 `.trim(),

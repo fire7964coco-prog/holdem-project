@@ -268,14 +268,14 @@ A. R. Le cœur est le même, avec deux différences pratiques. Un : en tournoi, 
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/fr/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Guide pilier</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Les règles du Texas Hold'em pour débutants</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Toutes les règles, des blindes à l'abattage</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Guide pilier</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Les règles du Texas Hold'em pour débutants</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Toutes les règles, des blindes à l'abattage</div>
   </a>
   <a href="/fr/blog/holdem-showdown-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Abattage</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Les règles de l'abattage</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Qui montre en premier et quand tu peux jeter tes cartes</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Abattage</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Les règles de l'abattage</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Qui montre en premier et quand tu peux jeter tes cartes</div>
   </a>
 </div>
 `.trim(),

@@ -238,24 +238,24 @@ Clava el conteo y el resto de la matemática del póker encaja sola. Lleva tu n�
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/es/blog/holdem-pot-odds" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Odds y matemática</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Cómo calcular las pot odds</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Convierte tu número de outs en un call-or-fold</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Odds y matemática</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Cómo calcular las pot odds</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Convierte tu número de outs en un call-or-fold</div>
   </a>
   <a href="/es/blog/holdem-probability" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Odds y matemática</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Tabla de odds y probabilidades del póker</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">La referencia completa detrás de cada proyecto</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Odds y matemática</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Tabla de odds y probabilidades del póker</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">La referencia completa detrás de cada proyecto</div>
   </a>
   <a href="/es/blog/holdem-reading-the-board" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Lectura de mesa</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Cómo leer la mesa</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Detecta cada proyecto para contar outs limpios</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Lectura de mesa</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Cómo leer la mesa</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Detecta cada proyecto para contar outs limpios</div>
   </a>
   <a href="/es/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Manos iniciales</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Tabla de manos iniciales por posición</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Entra a los botes con manos que merezcan proyectarse</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Manos iniciales</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Tabla de manos iniciales por posición</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Entra a los botes con manos que merezcan proyectarse</div>
   </a>
 </div>
 `.trim(),

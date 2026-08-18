@@ -434,24 +434,24 @@ A. 都行，但 ==g:推荐提前 2–3 天到==。你可以倒时差、悠闲地
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/zh/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">锦标赛基础</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">扑克锦标赛怎么运作</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">买入、盲注、卫星赛与新手清单</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">锦标赛基础</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">扑克锦标赛怎么运作</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">买入、盲注、卫星赛与新手清单</div>
   </a>
   <a href="/zh/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">策略</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">锦标赛 vs 现金局</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">ICM 介入时策略如何变化</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">策略</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">锦标赛 vs 现金局</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">ICM 介入时策略如何变化</div>
   </a>
   <a href="/zh/blog/wpt-australia-2026-guide" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">亚太</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">WPT Australia 2026 指南</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">The Star Sydney — Sep 10–30，AUD $5,000 冠军赛</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">亚太</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">WPT Australia 2026 指南</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">The Star Sydney — Sep 10–30，AUD $5,000 冠军赛</div>
   </a>
   <a href="/zh/blog/ept-barcelona-2026-guide" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">欧洲</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">EPT Barcelona 2026 指南</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Casino Barcelona — Aug 16–29，€5,300 主赛事</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">欧洲</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">EPT Barcelona 2026 指南</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Casino Barcelona — Aug 16–29，€5,300 主赛事</div>
   </a>
 </div>
 `.trim(),

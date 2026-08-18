@@ -432,19 +432,19 @@ A. 日本は源泉徴収ではなく確定申告の仕組みです。一時的�
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/ja/tournaments" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">スケジュール</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.5">ポーカー大会スケジュール 2026</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:6px;line-height:1.5">世界107大会を日程・バイイン・公式リンク付きで一覧に</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">スケジュール</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.5">ポーカー大会スケジュール 2026</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:6px;line-height:1.5">世界107大会を日程・バイイン・公式リンク付きで一覧に</div>
   </a>
   <a href="/ja/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">基礎</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.5">ポーカートーナメントの基本</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:6px;line-height:1.5">バイイン・賞金構造・ITMの考え方</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">基礎</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.5">ポーカートーナメントの基本</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:6px;line-height:1.5">バイイン・賞金構造・ITMの考え方</div>
   </a>
   <a href="/ja/blog/apt-incheon-2026-guide" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">アジア</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.5">APT仁川2026</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:6px;line-height:1.5">日本から一番近い大型フェスティバル</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">アジア</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.5">APT仁川2026</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:6px;line-height:1.5">日本から一番近い大型フェスティバル</div>
   </a>
 </div>
 `,

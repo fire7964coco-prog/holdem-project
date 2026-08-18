@@ -223,19 +223,19 @@ Frisch die Reihenfolge in der [kompletten Reihenfolge der Hände](/de/blog/holde
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/de/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Reihenfolge der Hände</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Poker-Reihenfolge der Hände – von der besten zur schlechtesten</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Alle 10 Hände mit Wahrscheinlichkeiten, Beispielen und Board-Rätseln</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Reihenfolge der Hände</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Poker-Reihenfolge der Hände – von der besten zur schlechtesten</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Alle 10 Hände mit Wahrscheinlichkeiten, Beispielen und Board-Rätseln</div>
   </a>
   <a href="/de/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Tie-Breaker</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Kicker- & Tie-Breaker-Regeln</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Wie Kicker Showdowns mit gleicher Hand entscheiden</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Tie-Breaker</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Kicker- & Tie-Breaker-Regeln</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Wie Kicker Showdowns mit gleicher Hand entscheiden</div>
   </a>
   <a href="/de/blog/holdem-flush-vs-straight" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Hand-Duell</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Schlägt ein Flush eine Straße?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Mathematik und Board-Spots für die häufigste Verwirrung</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Hand-Duell</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Schlägt ein Flush eine Straße?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Mathematik und Board-Spots für die häufigste Verwirrung</div>
   </a>
 </div>
 `.trim(),

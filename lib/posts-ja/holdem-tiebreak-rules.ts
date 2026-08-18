@@ -218,24 +218,24 @@ A. ポットを均等に分けます——「チョップ」です。チップ�
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/ja/blog/holdem-kicker" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">キッカー</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ポーカーのキッカーとは?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">サイドカードそのもの——どの役にあって何枚使うか</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">キッカー</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ポーカーのキッカーとは?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">サイドカードそのもの——どの役にあって何枚使うか</div>
   </a>
   <a href="/ja/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">役の強さ</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ポーカーの役の強さ — 一番強い役から弱い役まで</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">10種類の役を確率・例・ボード問題つきで</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">役の強さ</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ポーカーの役の強さ — 一番強い役から弱い役まで</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">10種類の役を確率・例・ボード問題つきで</div>
   </a>
   <a href="/ja/blog/holdem-flush-vs-straight" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">役の対決</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">フラッシュとストレート どっちが強い?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">最大の混乱ポイントを確率・ボード・引き分けで解説</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">役の対決</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">フラッシュとストレート どっちが強い?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">最大の混乱ポイントを確率・ボード・引き分けで解説</div>
   </a>
   <a href="/ja/blog/holdem-split-pot-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">チョップ</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ポットはいつ分けられる?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">5つのチョップ場面と、勝つと勘違いされがちな3つ</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">チョップ</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ポットはいつ分けられる?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">5つのチョップ場面と、勝つと勘違いされがちな3つ</div>
   </a>
 </div>
 `.trim(),

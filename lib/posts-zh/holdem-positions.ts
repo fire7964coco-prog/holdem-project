@@ -247,24 +247,24 @@ A. 现场里「几号座」（1 号座、5 号座）说的是钉在椅子上的�
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/zh/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">新手指南</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">德州扑克新手规则</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">一手牌从发牌到摊牌是怎么走的</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">新手指南</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">德州扑克新手规则</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">一手牌从发牌到摊牌是怎么走的</div>
   </a>
   <a href="/zh/blog/holdem-position-play" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">位置策略</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">有位置 vs 没位置策略</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">开池范围以及每个座位该做什么</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">位置策略</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">有位置 vs 没位置策略</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">开池范围以及每个座位该做什么</div>
   </a>
   <a href="/zh/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">行动顺序</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">德州扑克的牌局行动顺序</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">翻前 → 翻牌 → 转牌 → 河牌 行动序列</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">行动顺序</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">德州扑克的牌局行动顺序</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">翻前 → 翻牌 → 转牌 → 河牌 行动序列</div>
   </a>
   <a href="/zh/blog/holdem-blind-meaning" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">盲注</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">小盲和大盲详解</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">它们为什么存在、以及怎么正确打</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">盲注</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">小盲和大盲详解</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">它们为什么存在、以及怎么正确打</div>
   </a>
 </div>
 `.trim(),

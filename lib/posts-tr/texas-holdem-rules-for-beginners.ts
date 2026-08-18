@@ -449,29 +449,29 @@ Bir sonraki adımın için [Texas Hold'em el sıralamasını](/tr/blog/holdem-ha
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/tr/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Oyun akışı</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Texas Hold'em oyun sırası</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Tam el akışı — preflop'tan showdown'a gerçek örneklerle</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Oyun akışı</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Texas Hold'em oyun sırası</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Tam el akışı — preflop'tan showdown'a gerçek örneklerle</div>
   </a>
   <a href="/tr/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">El sıralaması</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Poker el sıralaması — en iyiden en kötüye</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">10 elin tamamı olasılıklar, örnekler ve board bulmacalarıyla</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">El sıralaması</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Poker el sıralaması — en iyiden en kötüye</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">10 elin tamamı olasılıklar, örnekler ve board bulmacalarıyla</div>
   </a>
   <a href="/tr/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Bahis</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Check, Call, Raise, Fold açıklaması</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Her aksiyonu ne zaman kullanmalı + karar tablosu</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Bahis</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Check, Call, Raise, Fold açıklaması</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Her aksiyonu ne zaman kullanmalı + karar tablosu</div>
   </a>
   <a href="/tr/blog/holdem-showdown-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Showdown</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Showdown kuralları: kim önce açar?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Son agresör, mucking, slow roll ve all-in kuralları</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Showdown</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Showdown kuralları: kim önce açar?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Son agresör, mucking, slow roll ve all-in kuralları</div>
   </a>
   <a href="/tr/blog/holdem-all-in-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">All-In</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">All-in kuralları: yan potlar ve reraise'ler</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Ana pot, yan pot ve reraise hakkı</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">All-In</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">All-in kuralları: yan potlar ve reraise'ler</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Ana pot, yan pot ve reraise hakkı</div>
   </a>
 </div>
 `.trim(),

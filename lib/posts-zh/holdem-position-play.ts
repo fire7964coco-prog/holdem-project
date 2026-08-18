@@ -312,24 +312,24 @@ A. 当你要入池时，多数情况是的——小盲位的现代默认是 3bet
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/zh/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">位置</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">扑克座位名称与牌桌图</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">UTG、Lojack、Hijack、关煞位、按钮位——每个座位讲清楚</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">位置</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">扑克座位名称与牌桌图</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">UTG、Lojack、Hijack、关煞位、按钮位——每个座位讲清楚</div>
   </a>
   <a href="/zh/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">起手牌</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">按位置划分的起手牌图表</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">每个座位该打哪些牌——可打印的参考图表</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">起手牌</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">按位置划分的起手牌图表</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">每个座位该打哪些牌——可打印的参考图表</div>
   </a>
   <a href="/zh/blog/holdem-blind-meaning" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">盲注</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">小盲位与大盲位策略</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">为什么打折的座位反而最难盈利</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">盲注</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">小盲位与大盲位策略</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">为什么打折的座位反而最难盈利</div>
   </a>
   <a href="/zh/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">锦标赛</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">锦标赛 vs 现金局策略</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">当 ICM 生效时位置决策如何改变</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">锦标赛</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">锦标赛 vs 现金局策略</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">当 ICM 生效时位置决策如何改变</div>
   </a>
 </div>
 `.trim(),

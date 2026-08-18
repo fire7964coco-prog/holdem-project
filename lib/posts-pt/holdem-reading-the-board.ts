@@ -282,19 +282,19 @@ Se você ainda está aprendendo o fluxo do jogo em si, comece pelo [guia inician
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/pt/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Pilar</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Ranking de mãos do Texas Hold'em</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Ranking completo do royal flush à carta alta</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Pilar</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Ranking de mãos do Texas Hold'em</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Ranking completo do royal flush à carta alta</div>
   </a>
   <a href="/pt/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Desempate</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Regras de kicker e desempate</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Mesmo ranking de mão — quem ganha de verdade?</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Desempate</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Regras de kicker e desempate</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Mesmo ranking de mão — quem ganha de verdade?</div>
   </a>
   <a href="/pt/blog/holdem-split-pot-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Pote Dividido</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Quando o pote é dividido?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Splits, a ficha ímpar, e quando a mesa joga</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Pote Dividido</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Quando o pote é dividido?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Splits, a ficha ímpar, e quando a mesa joga</div>
   </a>
 </div>
 `.trim(),

@@ -208,19 +208,19 @@ A. Si dos o más jugadores enseñan exactamente la misma mejor mano de cinco car
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/es/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Pilar</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Reglas del Texas Hold'em para principiantes</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Las reglas completas — de las ciegas al showdown</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Pilar</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Reglas del Texas Hold'em para principiantes</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Las reglas completas — de las ciegas al showdown</div>
   </a>
   <a href="/es/blog/holdem-split-pot-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Split Pot</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Reglas del split pot y del side pot</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Cuándo se reparte el bote y cómo funcionan los side pots</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Split Pot</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Reglas del split pot y del side pot</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Cuándo se reparte el bote y cómo funcionan los side pots</div>
   </a>
   <a href="/es/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Desempate</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Reglas del kicker y del desempate</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Misma mano — ¿quién gana en el showdown?</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Desempate</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Reglas del kicker y del desempate</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Misma mano — ¿quién gana en el showdown?</div>
   </a>
 </div>
 `.trim(),

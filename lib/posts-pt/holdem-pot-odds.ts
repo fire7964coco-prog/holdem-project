@@ -235,24 +235,24 @@ Faça isso algumas centenas de vezes e deixa de ser matemática e vira instinto.
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/pt/blog/holdem-probability" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Odds & Matemática</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Tabela de odds e probabilidade do pôquer</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Cada mão, flop e projeto — os números por trás do preço</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Odds & Matemática</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Tabela de odds e probabilidade do pôquer</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Cada mão, flop e projeto — os números por trás do preço</div>
   </a>
   <a href="/pt/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Mãos Iniciais</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Tabela de mãos iniciais por posição</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Entre em potes com mãos que valem a pena projetar</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Mãos Iniciais</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Tabela de mãos iniciais por posição</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Entre em potes com mãos que valem a pena projetar</div>
   </a>
   <a href="/pt/blog/holdem-reading-the-board" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Leitura de Mesa</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Como ler a mesa no Hold'em</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Conte seus outs enxergando cada projeto</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Leitura de Mesa</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Como ler a mesa no Hold'em</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Conte seus outs enxergando cada projeto</div>
   </a>
   <a href="/pt/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Cash vs Torneio</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Torneio vs Cash Game</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Por que as implied odds correm mais fundo em cash games</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Cash vs Torneio</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Torneio vs Cash Game</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Por que as implied odds correm mais fundo em cash games</div>
   </a>
 </div>
 `.trim(),

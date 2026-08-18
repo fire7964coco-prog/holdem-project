@@ -61,18 +61,18 @@ APT 인천 2026이 8월 16일 막을 내렸습니다. 우승은 홍콩의 스티
 <div style="flex-shrink:0;width:36px;height:36px;border-radius:50%;background:rgba(239,68,68,0.2);display:flex;align-items:center;justify-content:center;font-size:18px;margin-top:2px">⚠️</div>
 <div>
 <div style="font-size:15px;font-weight:800;color:#ef4444;margin-bottom:10px">국내 거주 한국 국적자는 파라다이스 시티 카지노 입장 불가</div>
-<p style="font-size:14px;color:var(--foreground);line-height:1.7;margin:0 0 12px">파라다이스 시티(인천)는 관광진흥법에 따라 <strong>외국인 전용 카지노</strong>입니다. 해외 영주권이 없는 국내 거주 대한민국 국적자는 법적으로 입장이 금지되어 있습니다.</p>
+<p style="font-size:14px;color:hsl(var(--foreground));line-height:1.7;margin:0 0 12px">파라다이스 시티(인천)는 관광진흥법에 따라 <strong>외국인 전용 카지노</strong>입니다. 해외 영주권이 없는 국내 거주 대한민국 국적자는 법적으로 입장이 금지되어 있습니다.</p>
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:13px">
 <div style="padding:10px 14px;background:rgba(239,68,68,0.10);border-radius:8px;border:1px solid rgba(239,68,68,0.25)">
 <div style="font-weight:700;color:#ef4444;margin-bottom:4px">입장 불가</div>
-<div style="color:var(--muted-foreground)">대한민국 국적자 (국내 거주)</div>
+<div style="color:hsl(var(--muted-foreground))">대한민국 국적자 (국내 거주)</div>
 </div>
 <div style="padding:10px 14px;background:rgba(34,197,94,0.07);border-radius:8px;border:1px solid rgba(34,197,94,0.25)">
 <div style="font-weight:700;color:#22c55e;margin-bottom:4px">입장 가능</div>
-<div style="color:var(--muted-foreground)">외국 국적자 / 재외교포</div>
+<div style="color:hsl(var(--muted-foreground))">외국 국적자 / 재외교포</div>
 </div>
 </div>
-<p style="font-size:12px;color:var(--muted-foreground);margin:10px 0 0;line-height:1.6">재외교포(해외영주권자)는 한국 여권 + 영주권 카드(또는 이민확인서) 두 가지 모두 제시 시 입장 가능합니다.</p>
+<p style="font-size:12px;color:hsl(var(--muted-foreground));margin:10px 0 0;line-height:1.6">재외교포(해외영주권자)는 한국 여권 + 영주권 카드(또는 이민확인서) 두 가지 모두 제시 시 입장 가능합니다.</p>
 </div>
 </div>
 </div>
@@ -277,12 +277,12 @@ $35 또는 $200 메가 위성 → 메인이벤트 시트 직행
 **4. KYC(본인 인증) 완료 — 가장 중요** — 위성 시트를 따더라도 KYC가 미완료면 현장에서 시트를 못 받습니다.
 
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.3);border-radius:14px;padding:16px 20px;margin:16px 0">
-<div style="font-size:13px;font-weight:700;color:var(--primary);margin-bottom:10px">KYC 진행 방법 (PC 기준)</div>
-<div style="font-size:13px;color:var(--muted-foreground);line-height:1.7">
-① 로그인 후 우측 상단 프로필 아이콘 → <strong style="color:var(--foreground)">My Account</strong><br/>
-② <strong style="color:var(--foreground)">My Documents</strong> 선택<br/>
+<div style="font-size:13px;font-weight:700;color:hsl(var(--primary));margin-bottom:10px">KYC 진행 방법 (PC 기준)</div>
+<div style="font-size:13px;color:hsl(var(--muted-foreground));line-height:1.7">
+① 로그인 후 우측 상단 프로필 아이콘 → <strong style="color:hsl(var(--foreground))">My Account</strong><br/>
+② <strong style="color:hsl(var(--foreground))">My Documents</strong> 선택<br/>
 ③ 여권·운전면허증·국가 ID 중 하나의 앞면 사진 업로드 (글자 선명하게)<br/>
-④ 제출 후 심사 완료까지 <strong style="color:var(--foreground)">최대 5 영업일</strong> 소요 (보통 1~3일)<br/>
+④ 제출 후 심사 완료까지 <strong style="color:hsl(var(--foreground))">최대 5 영업일</strong> 소요 (보통 1~3일)<br/>
 → 모바일은: Me 아이콘(하단 왼쪽) → My Info → My Documents<br/>
 → 심사 결과는 이메일로 통보. 스팸함도 확인할 것.
 </div>
@@ -418,15 +418,15 @@ Natural8은 시트 외에 **Country Exclusives(국가별 독점 예선)** 도 �
 대회 출발 전 이 목록을 모두 확인하세요.
 
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.3);border-radius:14px;padding:20px 24px;margin:24px 0">
-<div style="font-size:13px;font-weight:700;color:var(--primary);margin-bottom:14px">필수 서류</div>
+<div style="font-size:13px;font-weight:700;color:hsl(var(--primary));margin-bottom:14px">필수 서류</div>
 <div style="display:grid;gap:8px;font-size:13px">
-<div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.15);border:1.5px solid rgba(34,197,94,0.5);flex-shrink:0;display:flex;align-items:center;justify-content:center;color:#22c55e;font-size:11px">✓</span><span><strong style="color:var(--foreground)">여권 실물</strong> — 사진 사본 절대 불가. 반드시 원본 지참</span></div>
-<div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.15);border:1.5px solid rgba(34,197,94,0.5);flex-shrink:0;display:flex;align-items:center;justify-content:center;color:#22c55e;font-size:11px">✓</span><span><strong style="color:var(--foreground)">만 19세 이상</strong> — 카지노 입장 나이 기준 (한국은 21세 아님)</span></div>
-<div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.15);border:1.5px solid rgba(34,197,94,0.5);flex-shrink:0;display:flex;align-items:center;justify-content:center;color:#22c55e;font-size:11px">✓</span><span><strong style="color:var(--foreground)">Natural8 Digital Seat Coupon</strong> (이메일 또는 앱에서 확인)</span></div>
-<div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(255,150,0,0.15);border:1.5px solid rgba(255,150,0,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;color:#ff9600;font-size:11px">!</span><span><strong style="color:var(--foreground)">재외교포인 경우</strong> — 영주권 카드 또는 이민확인서 추가 지참</span></div>
+<div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.15);border:1.5px solid rgba(34,197,94,0.5);flex-shrink:0;display:flex;align-items:center;justify-content:center;color:#22c55e;font-size:11px">✓</span><span><strong style="color:hsl(var(--foreground))">여권 실물</strong> — 사진 사본 절대 불가. 반드시 원본 지참</span></div>
+<div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.15);border:1.5px solid rgba(34,197,94,0.5);flex-shrink:0;display:flex;align-items:center;justify-content:center;color:#22c55e;font-size:11px">✓</span><span><strong style="color:hsl(var(--foreground))">만 19세 이상</strong> — 카지노 입장 나이 기준 (한국은 21세 아님)</span></div>
+<div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.15);border:1.5px solid rgba(34,197,94,0.5);flex-shrink:0;display:flex;align-items:center;justify-content:center;color:#22c55e;font-size:11px">✓</span><span><strong style="color:hsl(var(--foreground))">Natural8 Digital Seat Coupon</strong> (이메일 또는 앱에서 확인)</span></div>
+<div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(255,150,0,0.15);border:1.5px solid rgba(255,150,0,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;color:#ff9600;font-size:11px">!</span><span><strong style="color:hsl(var(--foreground))">재외교포인 경우</strong> — 영주권 카드 또는 이민확인서 추가 지참</span></div>
 </div>
 
-<div style="font-size:13px;font-weight:700;color:var(--primary);margin:18px 0 14px">현장 준비물</div>
+<div style="font-size:13px;font-weight:700;color:hsl(var(--primary));margin:18px 0 14px">현장 준비물</div>
 <div style="display:grid;gap:8px;font-size:13px">
 <div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.15);border:1.5px solid rgba(34,197,94,0.5);flex-shrink:0;display:flex;align-items:center;justify-content:center;color:#22c55e;font-size:11px">✓</span><span>현금 또는 신용카드 (추가 이벤트 바이인, 숙소, 식사)</span></div>
 <div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.15);border:1.5px solid rgba(34,197,94,0.5);flex-shrink:0;display:flex;align-items:center;justify-content:center;color:#22c55e;font-size:11px">✓</span><span>편한 복장 — 슬리퍼, 잠옷은 입장 불가</span></div>
@@ -434,9 +434,9 @@ Natural8은 시트 외에 **Country Exclusives(국가별 독점 예선)** 도 �
 <div style="display:flex;align-items:center;gap:10px;padding:8px 0"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.15);border:1.5px solid rgba(34,197,94,0.5);flex-shrink:0;display:flex;align-items:center;justify-content:center;color:#22c55e;font-size:11px">✓</span><span>포커칩 계산기/노트는 가능 — 전화 통화는 테이블 이석 후</span></div>
 </div>
 
-<div style="font-size:13px;font-weight:700;color:var(--primary);margin:18px 0 14px">숙소 (선택)</div>
+<div style="font-size:13px;font-weight:700;color:hsl(var(--primary));margin:18px 0 14px">숙소 (선택)</div>
 <div style="display:grid;gap:8px;font-size:13px">
-<div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(59,130,246,0.15);border:1.5px solid rgba(59,130,246,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;color:#3b82f6;font-size:11px">i</span><span><strong style="color:var(--foreground)">Hyatt Regency Incheon Paradise City</strong> — 카지노 건물 내, 도보 0분</span></div>
+<div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(59,130,246,0.15);border:1.5px solid rgba(59,130,246,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;color:#3b82f6;font-size:11px">i</span><span><strong style="color:hsl(var(--foreground))">Hyatt Regency Incheon Paradise City</strong> — 카지노 건물 내, 도보 0분</span></div>
 <div style="display:flex;align-items:center;gap:10px;padding:8px 0"><span style="width:18px;height:18px;border-radius:4px;background:rgba(59,130,246,0.15);border:1.5px solid rgba(59,130,246,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;color:#3b82f6;font-size:11px">i</span><span>인천공항 인근 영종도 호텔도 셔틀로 5~10분 거리</span></div>
 </div>
 </div>
@@ -515,19 +515,19 @@ A. APT 공식 문의: registrations@apt.poker / Natural8 위성 문의: support@
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/tournaments" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">필라</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">2026 홀덤 대회 일정 전체</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">국내외 20개+ 일정 한눈에</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">필라</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">2026 홀덤 대회 일정 전체</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">국내외 20개+ 일정 한눈에</div>
   </a>
   <a href="/blog/holdem-tournament-how-to-enter" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">참가 가이드</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">홀덤 대회 참가 방법</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">온라인 무료 → WSOP 단계별</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">참가 가이드</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">홀덤 대회 참가 방법</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">온라인 무료 → WSOP 단계별</div>
   </a>
   <a href="/blog/holdem-tournament-tax-guide" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">세금</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">대회 상금 세금·신고</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">원천징수·기타소득 완전 정리</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">세금</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">대회 상금 세금·신고</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">원천징수·기타소득 완전 정리</div>
   </a>
 </div>
 `.trim(),

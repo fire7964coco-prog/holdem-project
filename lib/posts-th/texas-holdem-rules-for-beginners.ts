@@ -449,29 +449,29 @@ A. ที่โต๊ะจริง มือหนึ่งมักใช้�
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/th/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">การไหลของเกม</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ลำดับการเล่นเท็กซัสโฮลเด็ม</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">การไหลของมือเต็มมือ — จากพรีฟลอปถึงโชว์ดาวน์พร้อมตัวอย่างจริง</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">การไหลของเกม</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ลำดับการเล่นเท็กซัสโฮลเด็ม</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">การไหลของมือเต็มมือ — จากพรีฟลอปถึงโชว์ดาวน์พร้อมตัวอย่างจริง</div>
   </a>
   <a href="/th/blog/holdem-blind-meaning" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">บลายด์</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">บลายด์คืออะไร — SB กับ BB</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">ทำไมชิปถึงหายไปทุกมือ และสมอลบลายด์กับบิ๊กบลายด์ต่างกันยังไง</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">บลายด์</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">บลายด์คืออะไร — SB กับ BB</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">ทำไมชิปถึงหายไปทุกมือ และสมอลบลายด์กับบิ๊กบลายด์ต่างกันยังไง</div>
   </a>
   <a href="/th/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">การเดิมพัน</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">เช็ค เรียก เพิ่มเดิมพัน หมอบ อธิบายครบ</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">ใช้แต่ละแอ็กชันเมื่อไหร่ + ตารางตัดสินใจ</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">การเดิมพัน</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">เช็ค เรียก เพิ่มเดิมพัน หมอบ อธิบายครบ</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">ใช้แต่ละแอ็กชันเมื่อไหร่ + ตารางตัดสินใจ</div>
   </a>
   <a href="/th/blog/holdem-showdown-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">โชว์ดาวน์</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">กติกาโชว์ดาวน์: ใครเปิดไพ่ก่อน?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">ผู้เดิมพันคนสุดท้าย การมัค การสโลว์โรล และกติกาออลอิน</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">โชว์ดาวน์</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">กติกาโชว์ดาวน์: ใครเปิดไพ่ก่อน?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">ผู้เดิมพันคนสุดท้าย การมัค การสโลว์โรล และกติกาออลอิน</div>
   </a>
   <a href="/th/blog/holdem-all-in-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">ออลอิน</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">กติกาออลอิน: ไซด์พอตและการรีเรซ</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">พอตหลัก ไซด์พอต และใครมีสิทธิ์รีเรซ</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">ออลอิน</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">กติกาออลอิน: ไซด์พอตและการรีเรซ</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">พอตหลัก ไซด์พอต และใครมีสิทธิ์รีเรซ</div>
   </a>
 </div>
 `.trim(),

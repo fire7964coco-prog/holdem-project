@@ -210,35 +210,35 @@ $10,000を使う代わりに、$500のトーナメントで他の19人と競い�
 これはどの他のガイドも教えてくれないことです。12時開始の$300フリーズアウト(ライブ)の、現実的なDay1のタイムラインです。
 
 <div style="background:rgba(255,248,210,0.06);border:1px solid rgba(255,240,180,0.25);border-radius:12px;padding:20px 24px;margin:20px 0">
-<div style="font-size:13px;font-weight:700;color:var(--primary);margin-bottom:14px">Day1タイムライン — $300フリーズアウト、スタートチップ10,000</div>
+<div style="font-size:13px;font-weight:700;color:hsl(var(--primary));margin-bottom:14px">Day1タイムライン — $300フリーズアウト、スタートチップ10,000</div>
 <div style="display:grid;gap:10px;font-size:13px">
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="color:var(--primary);font-weight:700">10:30</div>
-<div style="color:var(--foreground)">登録開始。身分証を見せ、支払い、シートカードを受け取る。自分のテーブルを探す。</div>
+<div style="color:hsl(var(--primary));font-weight:700">10:30</div>
+<div style="color:hsl(var(--foreground))">登録開始。身分証を見せ、支払い、シートカードを受け取る。自分のテーブルを探す。</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="color:var(--primary);font-weight:700">12:00</div>
-<div style="color:var(--foreground)">カードが配られる。レベル1:ブラインド25/50。あなたは200BB。探りを入れるプレーを。</div>
+<div style="color:hsl(var(--primary));font-weight:700">12:00</div>
+<div style="color:hsl(var(--foreground))">カードが配られる。レベル1:ブラインド25/50。あなたは200BB。探りを入れるプレーを。</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="color:var(--primary);font-weight:700">13:00〜15:00</div>
-<div style="color:var(--foreground)">レベル2〜4。レイトレジはまだ開いている。フィールドが増える。すでに飛ぶ人も。</div>
+<div style="color:hsl(var(--primary));font-weight:700">13:00〜15:00</div>
+<div style="color:hsl(var(--foreground))">レベル2〜4。レイトレジはまだ開いている。フィールドが増える。すでに飛ぶ人も。</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="color:var(--primary);font-weight:700">15:30頃</div>
-<div style="color:var(--foreground)">レイトレジ締切。最終フィールド数が発表。プライズプール確定。アンティが入る。</div>
+<div style="color:hsl(var(--primary));font-weight:700">15:30頃</div>
+<div style="color:hsl(var(--foreground))">レイトレジ締切。最終フィールド数が発表。プライズプール確定。アンティが入る。</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="color:var(--primary);font-weight:700">17:00頃</div>
-<div style="color:var(--foreground)">ディナーブレイク(通常1時間)。フィールドの約40%が脱落。テーブルが集約される。</div>
+<div style="color:hsl(var(--primary));font-weight:700">17:00頃</div>
+<div style="color:hsl(var(--foreground))">ディナーブレイク(通常1時間)。フィールドの約40%が脱落。テーブルが集約される。</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="color:var(--primary);font-weight:700">18:00〜21:00</div>
-<div style="color:var(--foreground)">バブルが近づく。ハンド・フォー・ハンドが始まる。プレッシャーが頂点に。1人飛べば全員入賞。</div>
+<div style="color:hsl(var(--primary));font-weight:700">18:00〜21:00</div>
+<div style="color:hsl(var(--foreground))">バブルが近づく。ハンド・フォー・ハンドが始まる。プレッシャーが頂点に。1人飛べば全員入賞。</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0">
 <div style="color:#22c55e;font-weight:700">21:00〜23:00</div>
-<div style="color:var(--foreground)">ITM — 賞金圏のバブルが弾ける。残ったプレイヤーはチップを袋詰め、または今夜ファイナルテーブルまで。</div>
+<div style="color:hsl(var(--foreground))">ITM — 賞金圏のバブルが弾ける。残ったプレイヤーはチップを袋詰め、または今夜ファイナルテーブルまで。</div>
 </div>
 </div>
 </div>
@@ -291,7 +291,7 @@ $10,000を使う代わりに、$500のトーナメントで他の19人と競い�
 ## 初トーナメント チェックリスト
 
 <div style="background:rgba(255,248,210,0.06);border:1px solid rgba(255,240,180,0.25);border-radius:12px;padding:20px 24px;margin:20px 0">
-<div style="font-size:13px;font-weight:700;color:var(--primary);margin-bottom:14px">家を出る前に</div>
+<div style="font-size:13px;font-weight:700;color:hsl(var(--primary));margin-bottom:14px">家を出る前に</div>
 <div style="display:grid;gap:8px;font-size:13px">
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span><strong>有効な写真付き身分証</strong> — パスポートか運転免許証。例外なし。</span></div>
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span><strong>バイイン + 2割の余裕</strong>を現金で — カード不可の会場もある</span></div>
@@ -300,7 +300,7 @@ $10,000を使う代わりに、$500のトーナメントで他の19人と競い�
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span>動きやすい服装 — トーナメントは6〜12時間続きます。上着も持参を(カードルームは寒い)。</span></div>
 </div>
 
-<div style="font-size:13px;font-weight:700;color:var(--primary);margin:16px 0 10px">会場で</div>
+<div style="font-size:13px;font-weight:700;color:hsl(var(--primary));margin:16px 0 10px">会場で</div>
 <div style="display:grid;gap:8px;font-size:13px">
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span>開始の30〜45分前に到着。登録の列は長いことがある。</span></div>
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span>最初のハンドをプレーする前にスタートチップを数える。足りなければすぐディーラーに伝える。</span></div>
@@ -361,34 +361,34 @@ A. どちらもですが、長期的に勝者を決めるのは実力です。1�
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/ja/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">じっくり読む</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">トーナメント vs キャッシュゲーム</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">チップ価値・上がるブラインド・ICM — どっちが自分向き?</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">じっくり読む</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">トーナメント vs キャッシュゲーム</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">チップ価値・上がるブラインド・ICM — どっちが自分向き?</div>
   </a>
   <a href="/ja/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">戦略</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">スターティングハンド表</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">序盤でプレーすべき手はどれか</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">戦略</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">スターティングハンド表</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">序盤でプレーすべき手はどれか</div>
   </a>
   <a href="/ja/blog/holdem-short-stack" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">ショートスタック</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ショートスタック戦略</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">ブラインドが迫るときのプッシュ・オア・フォールド</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">ショートスタック</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ショートスタック戦略</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">ブラインドが迫るときのプッシュ・オア・フォールド</div>
   </a>
   <a href="/ja/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">まずここから</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">テキサスホールデムのルール(初心者向け)</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">まずは基本をマスター</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">まずここから</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">テキサスホールデムのルール(初心者向け)</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">まずは基本をマスター</div>
   </a>
   <a href="/ja/blog/holdem-blind-meaning" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">ブラインド</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ポーカーのブラインドとは?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">ブラインドレベルの起点 — SB・BB・アンティ</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">ブラインド</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ポーカーのブラインドとは?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">ブラインドレベルの起点 — SB・BB・アンティ</div>
   </a>
   <a href="/ja/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">ポジション</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ポーカーのポジション徹底解説</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">なぜ席順がトーナメントの全判断を左右するのか</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">ポジション</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ポーカーのポジション徹底解説</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">なぜ席順がトーナメントの全判断を左右するのか</div>
   </a>
 </div>
 `.trim(),

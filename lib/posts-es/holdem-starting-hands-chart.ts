@@ -300,19 +300,19 @@ A. Sí. El 7-2 de distinto palo se considera la peor mano inicial del póker: la
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/es/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Pilar</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Jerarquías de manos de póker — de la mejor a la peor</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Las 10 manos explicadas con odds y ejemplos</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Pilar</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Jerarquías de manos de póker — de la mejor a la peor</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Las 10 manos explicadas con odds y ejemplos</div>
   </a>
   <a href="/es/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Posiciones</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Posiciones de póker: de UTG al botón</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Por qué la posición cambia qué manos jugar</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Posiciones</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Posiciones de póker: de UTG al botón</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Por qué la posición cambia qué manos jugar</div>
   </a>
   <a href="/es/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Jerarquía de manos</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Reglas del kicker y del desempate en el póker</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Misma pareja pero distinto resultado — decide el kicker</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Jerarquía de manos</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Reglas del kicker y del desempate en el póker</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Misma pareja pero distinto resultado — decide el kicker</div>
   </a>
 </div>
 `.trim(),

@@ -261,24 +261,24 @@ A. 當一個被動對手在協調或成對的牌面上展現真正的攻擊—�
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/zh-hant/blog/holdem-strategy" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">策略</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">贏牌的 5 個決策骨架</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">蓋牌在贏錢打法裡的位置</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">策略</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">贏牌的 5 個決策骨架</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">蓋牌在贏錢打法裡的位置</div>
   </a>
   <a href="/zh-hant/blog/holdem-pot-odds" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">機率與數學</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">底池賠率怎麼算</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">每一個蓋牌背後的那道門檻</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">機率與數學</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">底池賠率怎麼算</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">每一個蓋牌背後的那道門檻</div>
   </a>
   <a href="/zh-hant/blog/holdem-implied-odds" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">機率與數學</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">隱含賠率</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">哪些差一點的聽牌值得不蓋</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">機率與數學</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">隱含賠率</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">哪些差一點的聽牌值得不蓋</div>
   </a>
   <a href="/zh-hant/blog/holdem-position-play" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">位置</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">德州撲克位置怎麼打</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">位置讓你更容易做出漂亮的蓋牌</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">位置</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">德州撲克位置怎麼打</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">位置讓你更容易做出漂亮的蓋牌</div>
   </a>
 </div>
 `.trim(),

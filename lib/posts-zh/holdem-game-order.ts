@@ -403,19 +403,19 @@ A. 每次发翻牌、转牌、河牌这三条街的公共牌之前，荷官都�
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/zh/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">新手指南</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">德州扑克新手规则</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">完整规则、筹码、牌型大小 + 可打印 PDF</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">新手指南</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">德州扑克新手规则</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">完整规则、筹码、牌型大小 + 可打印 PDF</div>
   </a>
   <a href="/zh/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">牌型大小</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">德州扑克牌型大小 —— 从最大到最小</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">全部 10 种牌型的概率、示例和牌面练习题</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">牌型大小</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">德州扑克牌型大小 —— 从最大到最小</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">全部 10 种牌型的概率、示例和牌面练习题</div>
   </a>
   <a href="/zh/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">位置</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">扑克位置：从枪口位到按钮位</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">座位图、开局范围，以及位置为何制胜</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">位置</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">扑克位置：从枪口位到按钮位</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">座位图、开局范围，以及位置为何制胜</div>
   </a>
 </div>
 `.trim(),

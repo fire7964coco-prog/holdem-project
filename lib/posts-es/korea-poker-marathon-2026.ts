@@ -34,8 +34,8 @@ Corea es donde ambas encajan a la perfección. ==**Maratones de otoño de talla 
 
 <div style="display:flex;align-items:flex-start;gap:16px;margin:20px 0">
   <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-marathon-record.webp" alt="Tarjeta oficial de resultado del Medio Maratón de Goyang 2026 — chip time 1:51:10, categoría Medio Masculino" width="600" height="899" sizes="160px" style="width:160px;flex-shrink:0;border-radius:8px" />
-  <div style="font-size:14px;line-height:1.7;color:var(--muted-foreground)">
-    <strong style="display:block;margin-bottom:6px;color:var(--foreground)">Marca personal — Medio Maratón de Goyang 2026</strong>
+  <div style="font-size:14px;line-height:1.7;color:hsl(var(--muted-foreground))">
+    <strong style="display:block;margin-bottom:6px;color:hsl(var(--foreground))">Marca personal — Medio Maratón de Goyang 2026</strong>
     Chip time: <strong>1:51:10</strong> · categoría Medio Masculino · dorsal 5448<br />
     La organización de carreras en Corea es sorprendentemente pulida — tiempos oficiales por chip, tarjetas de resultado digitales al instante y seguimiento en tiempo real. Los corredores extranjeros viven la misma experiencia que los locales.
   </div>
@@ -172,10 +172,10 @@ Aquí es donde el calendario se pone interesante. Tres festivales de póker se c
 <table style="width:100%;border-collapse:collapse;font-size:14px;line-height:1.5">
   <thead>
     <tr style="border-bottom:2px solid rgba(255,255,255,0.12)">
-      <th style="text-align:left;padding:10px 14px;color:var(--muted-foreground);font-weight:600;white-space:nowrap;width:160px">Fechas</th>
-      <th style="text-align:left;padding:10px 14px;color:var(--muted-foreground);font-weight:600">Torneo</th>
-      <th style="text-align:left;padding:10px 14px;color:var(--muted-foreground);font-weight:600">Sede</th>
-      <th style="text-align:left;padding:10px 14px;color:var(--muted-foreground);font-weight:600">Info clave</th>
+      <th style="text-align:left;padding:10px 14px;color:hsl(var(--muted-foreground));font-weight:600;white-space:nowrap;width:160px">Fechas</th>
+      <th style="text-align:left;padding:10px 14px;color:hsl(var(--muted-foreground));font-weight:600">Torneo</th>
+      <th style="text-align:left;padding:10px 14px;color:hsl(var(--muted-foreground));font-weight:600">Sede</th>
+      <th style="text-align:left;padding:10px 14px;color:hsl(var(--muted-foreground));font-weight:600">Info clave</th>
     </tr>
   </thead>
   <tbody>
@@ -183,19 +183,19 @@ Aquí es donde el calendario se pone interesante. Tres festivales de póker se c
       <td style="padding:10px 14px;font-weight:700;white-space:nowrap">25 sep – 7 oct</td>
       <td style="padding:10px 14px"><strong>APT Jeju 2026</strong></td>
       <td style="padding:10px 14px">LES A Casino, Jeju</td>
-      <td style="padding:10px 14px;color:var(--muted-foreground)">$3.5M+ garantizado total (GTD) · 136 eventos · termina 18 días antes del Maratón de Chuncheon</td>
+      <td style="padding:10px 14px;color:hsl(var(--muted-foreground))">$3.5M+ garantizado total (GTD) · 136 eventos · termina 18 días antes del Maratón de Chuncheon</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.07);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:10px 14px;font-weight:700;white-space:nowrap">30 oct – 8 nov</td>
-      <td style="padding:10px 14px"><strong>GOP Incheon<br/><span style="font-size:12px;color:var(--muted-foreground)">The Labyrinth Trail</span></strong></td>
+      <td style="padding:10px 14px"><strong>GOP Incheon<br/><span style="font-size:12px;color:hsl(var(--muted-foreground))">The Labyrinth Trail</span></strong></td>
       <td style="padding:10px 14px">Paradise City, Incheon</td>
       <td style="padding:10px 14px"><span style="background:rgba(239,68,68,0.15);color:#f87171;padding:2px 7px;border-radius:4px;font-size:12px;font-weight:600">⚡ Maratón JTBC 1 nov = Día 3 de este torneo</span></td>
     </tr>
     <tr style="background:rgba(212,175,55,0.07);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:10px 14px;font-weight:700;white-space:nowrap">Dic 2026 (por confirmar)</td>
-      <td style="padding:10px 14px"><strong>AJPC Samurai Circuit<br/><span style="font-size:12px;color:var(--muted-foreground)">Incheon 2026 III</span></strong></td>
+      <td style="padding:10px 14px"><strong>AJPC Samurai Circuit<br/><span style="font-size:12px;color:hsl(var(--muted-foreground))">Incheon 2026 III</span></strong></td>
       <td style="padding:10px 14px">Paradise City, Incheon</td>
-      <td style="padding:10px 14px;color:var(--muted-foreground)">Opción de fin de año · calendario por confirmar</td>
+      <td style="padding:10px 14px;color:hsl(var(--muted-foreground))">Opción de fin de año · calendario por confirmar</td>
     </tr>
   </tbody>
 </table>
@@ -265,10 +265,10 @@ Para el panorama completo de torneos (el APT Incheon se disputó del 7 al 16 de 
 <table style="width:100%;border-collapse:collapse;font-size:13px;line-height:1.5">
   <thead>
     <tr style="border-bottom:2px solid rgba(255,255,255,0.12)">
-      <th style="text-align:left;padding:9px 12px;color:var(--muted-foreground);font-weight:600;white-space:nowrap">Fecha</th>
-      <th style="text-align:left;padding:9px 12px;color:var(--muted-foreground);font-weight:600">Evento</th>
-      <th style="text-align:left;padding:9px 12px;color:var(--muted-foreground);font-weight:600">Sede</th>
-      <th style="text-align:left;padding:9px 12px;color:var(--muted-foreground);font-weight:600">Detalles</th>
+      <th style="text-align:left;padding:9px 12px;color:hsl(var(--muted-foreground));font-weight:600;white-space:nowrap">Fecha</th>
+      <th style="text-align:left;padding:9px 12px;color:hsl(var(--muted-foreground));font-weight:600">Evento</th>
+      <th style="text-align:left;padding:9px 12px;color:hsl(var(--muted-foreground));font-weight:600">Sede</th>
+      <th style="text-align:left;padding:9px 12px;color:hsl(var(--muted-foreground));font-weight:600">Detalles</th>
     </tr>
   </thead>
   <tbody>
@@ -276,37 +276,37 @@ Para el panorama completo de torneos (el APT Incheon se disputó del 7 al 16 de 
       <td style="padding:8px 12px;white-space:nowrap">15–24 may</td>
       <td style="padding:8px 12px">🃏 GOP Incheon 2026 <em>(finalizado)</em></td>
       <td style="padding:8px 12px">Paradise City, Incheon</td>
-      <td style="padding:8px 12px;color:var(--muted-foreground)">Completado</td>
+      <td style="padding:8px 12px;color:hsl(var(--muted-foreground))">Completado</td>
     </tr>
     <tr style="opacity:0.5;border-bottom:1px solid rgba(255,255,255,0.05)">
       <td style="padding:8px 12px;white-space:nowrap">15–25 may</td>
       <td style="padding:8px 12px">🃏 TLPT Jeju 2026 <em>(finalizado)</em></td>
       <td style="padding:8px 12px">LES A Casino, Jeju</td>
-      <td style="padding:8px 12px;color:var(--muted-foreground)">Completado</td>
+      <td style="padding:8px 12px;color:hsl(var(--muted-foreground))">Completado</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">7–16 ago</td>
       <td style="padding:9px 12px">🃏 <strong>APT Incheon 2026</strong></td>
       <td style="padding:9px 12px">Paradise City, Incheon</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">$2.7M GTD · Main Event $1M GTD</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">$2.7M GTD · Main Event $1M GTD</td>
     </tr>
     <tr style="background:rgba(34,197,94,0.05);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">6 sep</td>
       <td style="padding:9px 12px">🏃 YTN Seoul Tour Marathon</td>
       <td style="padding:9px 12px">Seoul Plaza</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">11KM · Medio · 7:30 · Reg. cerrado</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">11KM · Medio · 7:30 · Reg. cerrado</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">25 sep–7 oct</td>
       <td style="padding:9px 12px">🃏 <strong>APT Jeju 2026</strong></td>
       <td style="padding:9px 12px">LES A Casino, Jeju</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">$3.5M+ GTD · 136 eventos · 18 días hasta Chuncheon</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">$3.5M+ GTD · 136 eventos · 18 días hasta Chuncheon</td>
     </tr>
     <tr style="background:rgba(34,197,94,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">25 oct (dom)</td>
       <td style="padding:9px 12px">🏃 <strong>Maratón de Chuncheon</strong></td>
       <td style="padding:9px 12px">Gongjicheon, Chuncheon</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">Completo · 10K · 9:00 · Reg. 14 jul</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">Completo · 10K · 9:00 · Reg. 14 jul</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">30 oct–8 nov</td>
@@ -324,19 +324,19 @@ Para el panorama completo de torneos (el APT Incheon se disputó del 7 al 16 de 
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">15 nov (dom)</td>
       <td style="padding:9px 12px">🏃 Garmin Run Korea</td>
       <td style="padding:9px 12px">Goyang Sports Complex</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">Medio · 10K · 8:00 · Reg. 1–3 jul</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">Medio · 10K · 8:00 · Reg. 1–3 jul</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">Dic (por confirmar)</td>
       <td style="padding:9px 12px">🃏 AJPC Samurai Circuit III</td>
       <td style="padding:9px 12px">Paradise City, Incheon</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">Calendario por confirmar</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">Calendario por confirmar</td>
     </tr>
     <tr style="border-top:1px solid rgba(255,255,255,0.08)">
-      <td style="padding:9px 12px;color:var(--muted-foreground)">Todo el año</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">Todo el año</td>
       <td style="padding:9px 12px">🃏 Cash games (NLHE)</td>
       <td style="padding:9px 12px">Paradise City, Incheon</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">Abierto 24/7 · solo extranjeros</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">Abierto 24/7 · solo extranjeros</td>
     </tr>
   </tbody>
 </table>
@@ -401,11 +401,11 @@ El río Han cruza el centro de Seúl, y ambas orillas tienen más de ==g:80 kil�
 <div style="display:flex;gap:12px;margin:18px 0;flex-wrap:wrap">
   <div style="flex:1;min-width:240px">
     <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-hangang1.webp" alt="Carril bici y de running del Parque del río Han — pareja en un banco en primer plano, ciclistas y peatones por la ribera, skyline de Seúl al otro lado del río" width="650" height="867" sizes="(max-width: 520px) 100vw, 330px" style="width:100%;border-radius:8px;display:block" />
-    <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">Parque del Hangang de Yeouido — la sección más popular para corredores. Llana, ancha, sin coches, abierta las 24 horas.</p>
+    <p style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:6px;text-align:center">Parque del Hangang de Yeouido — la sección más popular para corredores. Llana, ancha, sin coches, abierta las 24 horas.</p>
   </div>
   <div style="flex:1;min-width:240px">
     <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-hangang2.webp" alt="Sendero de running arbolado del Parque del río Han — corredor y ciclista a la vista en la ribera, torres de apartamentos al otro lado del río" width="560" height="700" sizes="(max-width: 520px) 100vw, 330px" style="width:100%;border-radius:8px;display:block" />
-    <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">El sendero ribereño continúa durante kilómetros en ambas direcciones — usado por los locales para su carrera diaria, ciclistas y paseos de primera hora.</p>
+    <p style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:6px;text-align:center">El sendero ribereño continúa durante kilómetros en ambas direcciones — usado por los locales para su carrera diaria, ciclistas y paseos de primera hora.</p>
   </div>
 </div>
 
@@ -431,11 +431,11 @@ Ya está. Esa es la experiencia que se ha publicado millones de veces en las red
 <div style="display:flex;gap:12px;margin:18px 0;flex-wrap:wrap">
   <div style="flex:1;min-width:200px">
     <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-ramen-machine.webp" alt="Máquina de cocinar ramen del río Han en un GS25 — dispensador automático de agua caliente para fideos instantáneos en cuencos de papel" width="525" height="700" sizes="(max-width: 520px) 100vw, 330px" style="width:100%;height:280px;object-fit:cover;border-radius:8px;display:block" />
-    <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">La máquina en el súper del parque. Escanea el cuenco con código de barras, pulsa Start — la máquina hace el resto. Usarla es gratis.</p>
+    <p style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:6px;text-align:center">La máquina en el súper del parque. Escanea el cuenco con código de barras, pulsa Start — la máquina hace el resto. Usarla es gratis.</p>
   </div>
   <div style="flex:1;min-width:200px">
     <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-ramen.webp" alt="Cuenco de ramen del río Han — fideos instantáneos Shin Ramyun en cuenco de papel con huevo encima, comidos en la ribera" width="700" height="525" sizes="(max-width: 520px) 100vw, 330px" style="width:100%;height:280px;object-fit:cover;border-radius:8px;display:block" />
-    <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">El resultado. Shin Ramyun caliente con huevo junto al río Han. Coste total ₩4,000–5,000 (~$3). Posiblemente la mejor comida post-carrera de Seúl.</p>
+    <p style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:6px;text-align:center">El resultado. Shin Ramyun caliente con huevo junto al río Han. Coste total ₩4,000–5,000 (~$3). Posiblemente la mejor comida post-carrera de Seúl.</p>
   </div>
 </div>
 
@@ -519,19 +519,19 @@ Para el panorama completo del torneo de póker (APT Incheon, $2.7M GTD, del 7 al
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/es/blog/apt-incheon-2026-guide" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Torneo</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Guía del APT Incheon 2026</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">7–16 ago, Casino Paradise City · $2.7M GTD</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Torneo</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Guía del APT Incheon 2026</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">7–16 ago, Casino Paradise City · $2.7M GTD</div>
   </a>
   <a href="/es/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Básicos</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Cómo funcionan los torneos de póker</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Buy-ins, ciegas, satélites y checklist para novatos</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Básicos</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Cómo funcionan los torneos de póker</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Buy-ins, ciegas, satélites y checklist para novatos</div>
   </a>
   <a href="/es/blog/wpt-australia-2026-guide" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Asia-Pacífico</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Guía del WPT Australia 2026</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">The Star Sydney — 10–30 sep</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Asia-Pacífico</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Guía del WPT Australia 2026</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">The Star Sydney — 10–30 sep</div>
   </a>
 </div>
 `.trim(),

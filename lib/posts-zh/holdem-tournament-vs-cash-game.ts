@@ -428,24 +428,24 @@ A. 在大多数国家，要——扑克奖金算作应税收入，大额的线�
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/zh/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">锦标赛</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">扑克锦标赛怎么打</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">买入、盲注级别、赛制，和一份 Day-1 清单</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">锦标赛</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">扑克锦标赛怎么打</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">买入、盲注级别、赛制，和一份 Day-1 清单</div>
   </a>
   <a href="/zh/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">牌局流程</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">德州扑克的行动顺序</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">从翻前到摊牌——完整的一手牌流程，一步步讲</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">牌局流程</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">德州扑克的行动顺序</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">从翻前到摊牌——完整的一手牌流程，一步步讲</div>
   </a>
   <a href="/zh/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">牌型大小</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">扑克牌型大小——从最大到最小</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">全部 10 种牌型，附概率、示例和牌面谜题</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">牌型大小</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">扑克牌型大小——从最大到最小</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">全部 10 种牌型，附概率、示例和牌面谜题</div>
   </a>
   <a href="/zh/blog/holdem-blind-meaning" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">盲注</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">扑克里的盲注是什么？</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">小盲、大盲、偷盲和 option——全都讲清楚</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">盲注</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">扑克里的盲注是什么？</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">小盲、大盲、偷盲和 option——全都讲清楚</div>
   </a>
 </div>
 `.trim(),

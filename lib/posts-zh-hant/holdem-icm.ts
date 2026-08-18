@@ -235,24 +235,24 @@ A. 名次機率的數學通常歸功於 David Harville（來自 1970 年代的�
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/zh-hant/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">錦標賽</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">德州撲克錦標賽策略</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">ICM 所屬的支柱主題</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">錦標賽</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">德州撲克錦標賽策略</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">ICM 所屬的支柱主題</div>
   </a>
   <a href="/zh-hant/blog/holdem-equity" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">策略</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">德州撲克勝率（Equity）講解</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">籌碼EV 不過是用籌碼算的勝率</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">策略</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">德州撲克勝率（Equity）講解</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">籌碼EV 不過是用籌碼算的勝率</div>
   </a>
   <a href="/zh-hant/blog/holdem-pot-odds" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">機率與數學</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">德州撲克底池賠率怎麼算</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">後期每個跟注背後的價錢</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">機率與數學</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">德州撲克底池賠率怎麼算</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">後期每個跟注背後的價錢</div>
   </a>
   <a href="/zh-hant/blog/holdem-when-to-fold" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">決策</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">德州撲克何時該蓋牌</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">泡沫期蓋掉現金桌會跟的牌</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">決策</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">德州撲克何時該蓋牌</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">泡沫期蓋掉現金桌會跟的牌</div>
   </a>
 </div>
 `.trim(),

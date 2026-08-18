@@ -238,24 +238,24 @@ Der alte Spruch stimmt aus gutem Grund. Sieh dich an deinem nächsten Tisch um u
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/de/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Strategie</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Starthände-Tabelle</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Der schnellste Weg, nicht mehr der Fish zu sein</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Strategie</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Starthände-Tabelle</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Der schnellste Weg, nicht mehr der Fish zu sein</div>
   </a>
   <a href="/de/blog/holdem-pot-odds" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Odds &amp; Mathe</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">So berechnest du Pot Odds</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Hör auf, Draws ohne Preis zu jagen</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Odds &amp; Mathe</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">So berechnest du Pot Odds</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Hör auf, Draws ohne Preis zu jagen</div>
   </a>
   <a href="/de/blog/holdem-position-play" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Strategie</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Deine Position spielen</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Der Edge, den Fische jede Hand verschenken</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Strategie</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Deine Position spielen</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Der Edge, den Fische jede Hand verschenken</div>
   </a>
   <a href="/de/blog/holdem-straddle" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Glossar</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Was ist ein Straddle?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Die Bet, die den Pot für den Fish aufbläht</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Glossar</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Was ist ein Straddle?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Die Bet, die den Pot für den Fish aufbläht</div>
   </a>
 </div>
 `.trim(),

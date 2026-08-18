@@ -444,24 +444,24 @@ A. یک دست روی میز حضوری معمولاً بین 30 ثانیه تا
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/fa/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">روند بازی</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ترتیب بازی در تگزاس هولدم</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">روند کامل یک دست — از پری‌فلاپ تا شودان با مثال‌های واقعی</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">روند بازی</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ترتیب بازی در تگزاس هولدم</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">روند کامل یک دست — از پری‌فلاپ تا شودان با مثال‌های واقعی</div>
   </a>
   <a href="/fa/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">شرط‌بندی</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">شرح چک، کال, رِیز و فولد</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">چه زمانی از هر اکشن استفاده کنیم + جدول تصمیم</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">شرط‌بندی</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">شرح چک، کال, رِیز و فولد</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">چه زمانی از هر اکشن استفاده کنیم + جدول تصمیم</div>
   </a>
   <a href="/fa/blog/holdem-showdown-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">شودان</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">قواعد شودان: چه کسی اول کارت رو می‌کند؟</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">آخرین مهاجم، ماک کردن، اسلو رول و قواعد آل‌این</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">شودان</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">قواعد شودان: چه کسی اول کارت رو می‌کند؟</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">آخرین مهاجم، ماک کردن، اسلو رول و قواعد آل‌این</div>
   </a>
   <a href="/fa/blog/holdem-all-in-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">آل‌این</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">قواعد آل‌این: ساید پات و ری‌رِیز</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">پات اصلی، ساید پات و شرایط ری‌رِیز</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">آل‌این</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">قواعد آل‌این: ساید پات و ری‌رِیز</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">پات اصلی، ساید پات و شرایط ری‌رِیز</div>
   </a>
 </div>
 `.trim(),

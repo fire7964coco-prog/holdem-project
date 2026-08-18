@@ -226,24 +226,24 @@ El motor detrás de todo esto es el [ICM](/es/blog/holdem-icm); la disciplina de
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/es/blog/holdem-icm" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Torneos</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">El ICM explicado</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Las matemáticas de por qué la burbuja importa</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Torneos</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">El ICM explicado</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Las matemáticas de por qué la burbuja importa</div>
   </a>
   <a href="/es/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Torneos</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Estrategia de torneo</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">El pilar al que pertenece la burbuja</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Torneos</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Estrategia de torneo</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">El pilar al que pertenece la burbuja</div>
   </a>
   <a href="/es/blog/holdem-when-to-fold" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Estrategia</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Cuándo foldear en póker</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">La disciplina que exige la burbuja</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Estrategia</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Cuándo foldear en póker</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">La disciplina que exige la burbuja</div>
   </a>
   <a href="/en/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Herramienta gratis</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Calculadora de ICM</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Encuentra tu número real de bubble factor</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Herramienta gratis</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Calculadora de ICM</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Encuentra tu número real de bubble factor</div>
   </a>
 </div>
 `.trim(),

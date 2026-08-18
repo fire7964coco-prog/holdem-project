@@ -299,24 +299,24 @@ Para cada nome de cadeira e o mapa completo da mesa, veja o [guia de nomes de po
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/pt/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Posições</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Nomes de posição e mapa da mesa</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">UTG, Lojack, Hijack, Cutoff, Button — cada cadeira explicada</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Posições</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Nomes de posição e mapa da mesa</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">UTG, Lojack, Hijack, Cutoff, Button — cada cadeira explicada</div>
   </a>
   <a href="/pt/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Starting Hands</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Tabela de starting hands por posição</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Quais mãos jogar de cada cadeira — tabela de referência imprimível</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Starting Hands</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Tabela de starting hands por posição</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Quais mãos jogar de cada cadeira — tabela de referência imprimível</div>
   </a>
   <a href="/pt/blog/holdem-blind-meaning" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Blinds</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Estratégia de small blind e big blind</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Por que as cadeiras com desconto são as mais difíceis de lucrar</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Blinds</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Estratégia de small blind e big blind</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Por que as cadeiras com desconto são as mais difíceis de lucrar</div>
   </a>
   <a href="/pt/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Torneio</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Torneio vs Cash Game</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Como as decisões de posição mudam quando o ICM entra</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Torneio</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Torneio vs Cash Game</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Como as decisões de posição mudam quando o ICM entra</div>
   </a>
 </div>
 `.trim(),

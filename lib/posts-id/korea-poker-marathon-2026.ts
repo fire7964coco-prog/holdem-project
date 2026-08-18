@@ -33,8 +33,8 @@ Korea adalah tempat keduanya bertemu dengan sempurna. ==**Maraton musim gugur ke
 
 <div style="display:flex;align-items:flex-start;gap:16px;margin:20px 0">
   <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-marathon-record.webp" alt="Kartu hasil resmi 2026 Goyang Half Marathon — waktu chip 1:51:10, divisi Half Putra" width="600" height="899" sizes="160px" style="width:160px;flex-shrink:0;border-radius:8px" />
-  <div style="font-size:14px;line-height:1.7;color:var(--muted-foreground)">
-    <strong style="display:block;margin-bottom:6px;color:var(--foreground)">Rekor pribadi — 2026 Goyang Half Marathon</strong>
+  <div style="font-size:14px;line-height:1.7;color:hsl(var(--muted-foreground))">
+    <strong style="display:block;margin-bottom:6px;color:hsl(var(--foreground))">Rekor pribadi — 2026 Goyang Half Marathon</strong>
     Waktu chip: <strong>1:51:10</strong> · divisi Half Putra · Bib 5448<br />
     Penyelenggaraan lomba di Korea sangat rapi — waktu chip resmi, kartu hasil digital instan, dan pelacakan real-time. Pelari asing mendapat pengalaman yang sama seperti warga lokal.
   </div>
@@ -171,10 +171,10 @@ Di sinilah kalendernya jadi menarik. Tiga festival poker berlangsung di venue-ve
 <table style="width:100%;border-collapse:collapse;font-size:14px;line-height:1.5">
   <thead>
     <tr style="border-bottom:2px solid rgba(255,255,255,0.12)">
-      <th style="text-align:left;padding:10px 14px;color:var(--muted-foreground);font-weight:600;white-space:nowrap;width:160px">Tanggal</th>
-      <th style="text-align:left;padding:10px 14px;color:var(--muted-foreground);font-weight:600">Turnamen</th>
-      <th style="text-align:left;padding:10px 14px;color:var(--muted-foreground);font-weight:600">Venue</th>
-      <th style="text-align:left;padding:10px 14px;color:var(--muted-foreground);font-weight:600">Info Penting</th>
+      <th style="text-align:left;padding:10px 14px;color:hsl(var(--muted-foreground));font-weight:600;white-space:nowrap;width:160px">Tanggal</th>
+      <th style="text-align:left;padding:10px 14px;color:hsl(var(--muted-foreground));font-weight:600">Turnamen</th>
+      <th style="text-align:left;padding:10px 14px;color:hsl(var(--muted-foreground));font-weight:600">Venue</th>
+      <th style="text-align:left;padding:10px 14px;color:hsl(var(--muted-foreground));font-weight:600">Info Penting</th>
     </tr>
   </thead>
   <tbody>
@@ -182,19 +182,19 @@ Di sinilah kalendernya jadi menarik. Tiga festival poker berlangsung di venue-ve
       <td style="padding:10px 14px;font-weight:700;white-space:nowrap">25 Sep – 7 Okt</td>
       <td style="padding:10px 14px"><strong>APT Jeju 2026</strong></td>
       <td style="padding:10px 14px">LES A Casino, Jeju</td>
-      <td style="padding:10px 14px;color:var(--muted-foreground)">$3.5M+ total GTD · 136 event · berakhir 18 hari sebelum Chuncheon Marathon</td>
+      <td style="padding:10px 14px;color:hsl(var(--muted-foreground))">$3.5M+ total GTD · 136 event · berakhir 18 hari sebelum Chuncheon Marathon</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.07);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:10px 14px;font-weight:700;white-space:nowrap">30 Okt – 8 Nov</td>
-      <td style="padding:10px 14px"><strong>GOP Incheon<br/><span style="font-size:12px;color:var(--muted-foreground)">The Labyrinth Trail</span></strong></td>
+      <td style="padding:10px 14px"><strong>GOP Incheon<br/><span style="font-size:12px;color:hsl(var(--muted-foreground))">The Labyrinth Trail</span></strong></td>
       <td style="padding:10px 14px">Paradise City, Incheon</td>
       <td style="padding:10px 14px"><span style="background:rgba(239,68,68,0.15);color:#f87171;padding:2px 7px;border-radius:4px;font-size:12px;font-weight:600">⚡ JTBC Marathon 1 Nov = Day 3 turnamen ini</span></td>
     </tr>
     <tr style="background:rgba(212,175,55,0.07);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:10px 14px;font-weight:700;white-space:nowrap">Des 2026 (TBD)</td>
-      <td style="padding:10px 14px"><strong>AJPC Samurai Circuit<br/><span style="font-size:12px;color:var(--muted-foreground)">Incheon 2026 III</span></strong></td>
+      <td style="padding:10px 14px"><strong>AJPC Samurai Circuit<br/><span style="font-size:12px;color:hsl(var(--muted-foreground))">Incheon 2026 III</span></strong></td>
       <td style="padding:10px 14px">Paradise City, Incheon</td>
-      <td style="padding:10px 14px;color:var(--muted-foreground)">Opsi akhir tahun · jadwal TBA</td>
+      <td style="padding:10px 14px;color:hsl(var(--muted-foreground))">Opsi akhir tahun · jadwal TBA</td>
     </tr>
   </tbody>
 </table>
@@ -264,10 +264,10 @@ Untuk gambaran turnamen lengkap (APT Incheon sudah berlangsung 7–16 Agustus de
 <table style="width:100%;border-collapse:collapse;font-size:13px;line-height:1.5">
   <thead>
     <tr style="border-bottom:2px solid rgba(255,255,255,0.12)">
-      <th style="text-align:left;padding:9px 12px;color:var(--muted-foreground);font-weight:600;white-space:nowrap">Tanggal</th>
-      <th style="text-align:left;padding:9px 12px;color:var(--muted-foreground);font-weight:600">Acara</th>
-      <th style="text-align:left;padding:9px 12px;color:var(--muted-foreground);font-weight:600">Venue</th>
-      <th style="text-align:left;padding:9px 12px;color:var(--muted-foreground);font-weight:600">Detail</th>
+      <th style="text-align:left;padding:9px 12px;color:hsl(var(--muted-foreground));font-weight:600;white-space:nowrap">Tanggal</th>
+      <th style="text-align:left;padding:9px 12px;color:hsl(var(--muted-foreground));font-weight:600">Acara</th>
+      <th style="text-align:left;padding:9px 12px;color:hsl(var(--muted-foreground));font-weight:600">Venue</th>
+      <th style="text-align:left;padding:9px 12px;color:hsl(var(--muted-foreground));font-weight:600">Detail</th>
     </tr>
   </thead>
   <tbody>
@@ -275,37 +275,37 @@ Untuk gambaran turnamen lengkap (APT Incheon sudah berlangsung 7–16 Agustus de
       <td style="padding:8px 12px;white-space:nowrap">15–24 Mei</td>
       <td style="padding:8px 12px">🃏 GOP Incheon 2026 <em>(selesai)</em></td>
       <td style="padding:8px 12px">Paradise City, Incheon</td>
-      <td style="padding:8px 12px;color:var(--muted-foreground)">Selesai</td>
+      <td style="padding:8px 12px;color:hsl(var(--muted-foreground))">Selesai</td>
     </tr>
     <tr style="opacity:0.5;border-bottom:1px solid rgba(255,255,255,0.05)">
       <td style="padding:8px 12px;white-space:nowrap">15–25 Mei</td>
       <td style="padding:8px 12px">🃏 TLPT Jeju 2026 <em>(selesai)</em></td>
       <td style="padding:8px 12px">LES A Casino, Jeju</td>
-      <td style="padding:8px 12px;color:var(--muted-foreground)">Selesai</td>
+      <td style="padding:8px 12px;color:hsl(var(--muted-foreground))">Selesai</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">7–16 Agu</td>
       <td style="padding:9px 12px">🃏 <strong>APT Incheon 2026</strong></td>
       <td style="padding:9px 12px">Paradise City, Incheon</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">$2.7M GTD · Main Event $1M GTD</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">$2.7M GTD · Main Event $1M GTD</td>
     </tr>
     <tr style="background:rgba(34,197,94,0.05);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">6 Sep</td>
       <td style="padding:9px 12px">🏃 YTN Seoul Tour Marathon</td>
       <td style="padding:9px 12px">Seoul Plaza</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">11KM · Half · 7:30 pagi · Reg. tutup</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">11KM · Half · 7:30 pagi · Reg. tutup</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">25 Sep–7 Okt</td>
       <td style="padding:9px 12px">🃏 <strong>APT Jeju 2026</strong></td>
       <td style="padding:9px 12px">LES A Casino, Jeju</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">$3.5M+ GTD · 136 event · 18 hari ke Chuncheon</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">$3.5M+ GTD · 136 event · 18 hari ke Chuncheon</td>
     </tr>
     <tr style="background:rgba(34,197,94,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">25 Okt (Min)</td>
       <td style="padding:9px 12px">🏃 <strong>Chuncheon Marathon</strong></td>
       <td style="padding:9px 12px">Gongjicheon, Chuncheon</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">Full · 10K · 9:00 pagi · Reg. 14 Jul</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">Full · 10K · 9:00 pagi · Reg. 14 Jul</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">30 Okt–8 Nov</td>
@@ -323,19 +323,19 @@ Untuk gambaran turnamen lengkap (APT Incheon sudah berlangsung 7–16 Agustus de
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">15 Nov (Min)</td>
       <td style="padding:9px 12px">🏃 Garmin Run Korea</td>
       <td style="padding:9px 12px">Goyang Sports Complex</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">Half · 10K · 8:00 pagi · Reg. 1–3 Jul</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">Half · 10K · 8:00 pagi · Reg. 1–3 Jul</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">Des (TBD)</td>
       <td style="padding:9px 12px">🃏 AJPC Samurai Circuit III</td>
       <td style="padding:9px 12px">Paradise City, Incheon</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">Jadwal TBA</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">Jadwal TBA</td>
     </tr>
     <tr style="border-top:1px solid rgba(255,255,255,0.08)">
-      <td style="padding:9px 12px;color:var(--muted-foreground)">Sepanjang tahun</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">Sepanjang tahun</td>
       <td style="padding:9px 12px">🃏 Cash game (NLHE)</td>
       <td style="padding:9px 12px">Paradise City, Incheon</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">Buka 24/7 · khusus warga asing</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">Buka 24/7 · khusus warga asing</td>
     </tr>
   </tbody>
 </table>
@@ -400,11 +400,11 @@ Sungai Han membelah pusat Seoul, dan kedua tepiannya memiliki lebih dari ==g:80 
 <div style="display:flex;gap:12px;margin:18px 0;flex-wrap:wrap">
   <div style="flex:1;min-width:240px">
     <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-hangang1.webp" alt="Jalur sepeda dan lari taman Sungai Han — pasangan di bangku di latar depan, pesepeda dan pejalan kaki di sepanjang tepi sungai, cakrawala Seoul di seberang" width="650" height="867" sizes="(max-width: 520px) 100vw, 330px" style="width:100%;border-radius:8px;display:block" />
-    <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">Taman Hangang Yeouido — bagian paling populer untuk pelari. Datar, lebar, bebas kendaraan, buka 24 jam.</p>
+    <p style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:6px;text-align:center">Taman Hangang Yeouido — bagian paling populer untuk pelari. Datar, lebar, bebas kendaraan, buka 24 jam.</p>
   </div>
   <div style="flex:1;min-width:240px">
     <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-hangang2.webp" alt="Jalur lari taman Sungai Han yang dinaungi pepohonan — pelari dan pesepeda terlihat di jalur tepi sungai, menara apartemen di seberang" width="560" height="700" sizes="(max-width: 520px) 100vw, 330px" style="width:100%;border-radius:8px;display:block" />
-    <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">Jalur tepi sungai membentang sejauh berkilo-kilometer ke kedua arah — digunakan warga lokal untuk lari harian, bersepeda, dan jalan pagi.</p>
+    <p style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:6px;text-align:center">Jalur tepi sungai membentang sejauh berkilo-kilometer ke kedua arah — digunakan warga lokal untuk lari harian, bersepeda, dan jalan pagi.</p>
   </div>
 </div>
 
@@ -430,11 +430,11 @@ Itu saja. Itulah pengalaman yang telah diposting di media sosial Korea jutaan ka
 <div style="display:flex;gap:12px;margin:18px 0;flex-wrap:wrap">
   <div style="flex:1;min-width:200px">
     <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-ramen-machine.webp" alt="Mesin pemasak ramen Sungai Han di minimarket GS25 — dispenser air panas otomatis untuk mi instan dalam mangkuk kertas" width="525" height="700" sizes="(max-width: 520px) 100vw, 330px" style="width:100%;height:280px;object-fit:cover;border-radius:8px;display:block" />
-    <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">Mesin di minimarket taman. Pindai mangkuk barcode Anda, tekan Start — sisanya diurus mesin. Penggunaan mesin gratis.</p>
+    <p style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:6px;text-align:center">Mesin di minimarket taman. Pindai mangkuk barcode Anda, tekan Start — sisanya diurus mesin. Penggunaan mesin gratis.</p>
   </div>
   <div style="flex:1;min-width:200px">
     <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-ramen.webp" alt="Semangkuk ramen Sungai Han — mi instan Shin Ramyun dalam mangkuk kertas dengan telur di atasnya, disantap di tepi sungai" width="700" height="525" sizes="(max-width: 520px) 100vw, 330px" style="width:100%;height:280px;object-fit:cover;border-radius:8px;display:block" />
-    <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">Hasilnya. Shin Ramyun panas dengan telur di tepi Sungai Han. Total biaya ₩4.000–5.000 (~$3). Mungkin santapan pasca-lari terbaik di Seoul.</p>
+    <p style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:6px;text-align:center">Hasilnya. Shin Ramyun panas dengan telur di tepi Sungai Han. Total biaya ₩4.000–5.000 (~$3). Mungkin santapan pasca-lari terbaik di Seoul.</p>
   </div>
 </div>
 
@@ -518,19 +518,19 @@ Untuk gambaran turnamen poker lengkap (APT Incheon, GTD $2,7 juta, 7–16 Agustu
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/id/blog/apt-incheon-2026-guide" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Turnamen</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Panduan APT Incheon 2026</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">7–16 Agu, Paradise City Casino · GTD $2,7 juta</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Turnamen</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Panduan APT Incheon 2026</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">7–16 Agu, Paradise City Casino · GTD $2,7 juta</div>
   </a>
   <a href="/id/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Dasar</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Cara Kerja Turnamen Poker</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Buy-in, blind, satelit & checklist pemula</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Dasar</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Cara Kerja Turnamen Poker</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Buy-in, blind, satelit & checklist pemula</div>
   </a>
   <a href="/id/blog/wpt-australia-2026-guide" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Asia-Pasifik</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Panduan WPT Australia 2026</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">The Star Sydney — 10–30 Sep</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Asia-Pasifik</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Panduan WPT Australia 2026</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">The Star Sydney — 10–30 Sep</div>
   </a>
 </div>
 `.trim(),

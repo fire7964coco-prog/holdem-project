@@ -209,35 +209,35 @@ Satu postingan tidak bisa mengajarkan strategi turnamen lengkap — itu tugas pa
 Ini yang tidak diberitahukan panduan lain. Inilah timeline Day 1 realistis untuk freezeout live $300 dengan waktu mulai jam 12 siang:
 
 <div style="background:rgba(255,248,210,0.06);border:1px solid rgba(255,240,180,0.25);border-radius:12px;padding:20px 24px;margin:20px 0">
-<div style="font-size:13px;font-weight:700;color:var(--primary);margin-bottom:14px">Timeline Day 1 — Freezeout $300, 10.000 Chip Awal</div>
+<div style="font-size:13px;font-weight:700;color:hsl(var(--primary));margin-bottom:14px">Timeline Day 1 — Freezeout $300, 10.000 Chip Awal</div>
 <div style="display:grid;gap:10px;font-size:13px">
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="color:var(--primary);font-weight:700">10:30</div>
-<div style="color:var(--foreground)">Registrasi buka. Tunjukkan ID, bayar, ambil kartu kursi. Cari meja Anda.</div>
+<div style="color:hsl(var(--primary));font-weight:700">10:30</div>
+<div style="color:hsl(var(--foreground))">Registrasi buka. Tunjukkan ID, bayar, ambil kartu kursi. Cari meja Anda.</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="color:var(--primary);font-weight:700">12:00</div>
-<div style="color:var(--foreground)">Kartu dibagikan. Level 1: blind 25/50. Anda punya 200BB. Mainkan poker eksploratif.</div>
+<div style="color:hsl(var(--primary));font-weight:700">12:00</div>
+<div style="color:hsl(var(--foreground))">Kartu dibagikan. Level 1: blind 25/50. Anda punya 200BB. Mainkan poker eksploratif.</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="color:var(--primary);font-weight:700">13:00–15:00</div>
-<div style="color:var(--foreground)">Level 2–4. Late registration masih buka. Field bertambah. Beberapa pemain sudah bust.</div>
+<div style="color:hsl(var(--primary));font-weight:700">13:00–15:00</div>
+<div style="color:hsl(var(--foreground))">Level 2–4. Late registration masih buka. Field bertambah. Beberapa pemain sudah bust.</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="color:var(--primary);font-weight:700">~15:30</div>
-<div style="color:var(--foreground)">Late reg tutup. Ukuran field final diumumkan. Prize pool dikonfirmasi. Ante mulai berlaku.</div>
+<div style="color:hsl(var(--primary));font-weight:700">~15:30</div>
+<div style="color:hsl(var(--foreground))">Late reg tutup. Ukuran field final diumumkan. Prize pool dikonfirmasi. Ante mulai berlaku.</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="color:var(--primary);font-weight:700">~17:00</div>
-<div style="color:var(--foreground)">Dinner break (biasanya 1 jam). ~40% field tereliminasi. Meja dikonsolidasikan.</div>
+<div style="color:hsl(var(--primary));font-weight:700">~17:00</div>
+<div style="color:hsl(var(--foreground))">Dinner break (biasanya 1 jam). ~40% field tereliminasi. Meja dikonsolidasikan.</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="color:var(--primary);font-weight:700">18:00–21:00</div>
-<div style="color:var(--foreground)">Bubble mendekat. Permainan hand-for-hand dimulai. Tekanan memuncak. Satu bust = semua orang dibayar.</div>
+<div style="color:hsl(var(--primary));font-weight:700">18:00–21:00</div>
+<div style="color:hsl(var(--foreground))">Bubble mendekat. Permainan hand-for-hand dimulai. Tekanan memuncak. Satu bust = semua orang dibayar.</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0">
 <div style="color:#22c55e;font-weight:700">21:00–23:00</div>
-<div style="color:var(--foreground)">ITM — money bubble pecah. Pemain yang tersisa bag chip atau bermain sampai final table malam ini.</div>
+<div style="color:hsl(var(--foreground))">ITM — money bubble pecah. Pemain yang tersisa bag chip atau bermain sampai final table malam ini.</div>
 </div>
 </div>
 </div>
@@ -290,7 +290,7 @@ Payout structure selalu diumumkan sebelum turnamen mulai. Mintalah **structure s
 ## Checklist Turnamen Pertama
 
 <div style="background:rgba(255,248,210,0.06);border:1px solid rgba(255,240,180,0.25);border-radius:12px;padding:20px 24px;margin:20px 0">
-<div style="font-size:13px;font-weight:700;color:var(--primary);margin-bottom:14px">Sebelum Berangkat dari Rumah</div>
+<div style="font-size:13px;font-weight:700;color:hsl(var(--primary));margin-bottom:14px">Sebelum Berangkat dari Rumah</div>
 <div style="display:grid;gap:8px;font-size:13px">
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span><strong>ID foto yang valid</strong> — paspor atau SIM. Tanpa pengecualian.</span></div>
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span><strong>Buy-in + 20% ekstra</strong> dalam bentuk tunai — beberapa venue tidak menerima kartu</span></div>
@@ -299,7 +299,7 @@ Payout structure selalu diumumkan sebelum turnamen mulai. Mintalah **structure s
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span>Pakaian nyaman — turnamen berjalan 6–12 jam. Bawa jaket (card room dingin).</span></div>
 </div>
 
-<div style="font-size:13px;font-weight:700;color:var(--primary);margin:16px 0 10px">Di Venue</div>
+<div style="font-size:13px;font-weight:700;color:hsl(var(--primary));margin:16px 0 10px">Di Venue</div>
 <div style="display:grid;gap:8px;font-size:13px">
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span>Tiba 30–45 mnt sebelum mulai. Antrean registrasi bisa panjang.</span></div>
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span>Hitung chip awal Anda sebelum memainkan tangan pertama. Beri tahu dealer segera jika kurang.</span></div>
@@ -352,34 +352,34 @@ A. Tidak. Berbeda dari cash game, chip turnamen tidak punya nilai uang tunai dan
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/id/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Bahasan Mendalam</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Turnamen vs Cash Game</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Nilai chip, blind naik, ICM — format mana yang cocok untuk Anda</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Bahasan Mendalam</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Turnamen vs Cash Game</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Nilai chip, blind naik, ICM — format mana yang cocok untuk Anda</div>
   </a>
   <a href="/id/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Strategi</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Starting Hands Chart</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Tangan mana yang dimainkan di level awal</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Strategi</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Starting Hands Chart</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Tangan mana yang dimainkan di level awal</div>
   </a>
   <a href="/id/blog/holdem-short-stack" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Short Stack</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Short-Stack Strategy</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Push-or-fold saat blind menekan</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Short Stack</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Short-Stack Strategy</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Push-or-fold saat blind menekan</div>
   </a>
   <a href="/id/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Mulai di Sini</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Aturan Texas Hold'em untuk Pemula</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Kuasai dasarnya lebih dulu</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Mulai di Sini</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Aturan Texas Hold'em untuk Pemula</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Kuasai dasarnya lebih dulu</div>
   </a>
   <a href="/id/blog/holdem-blind-meaning" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Blind</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Apa Itu Blind di Poker?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Blind level mulai di sini — SB, BB, dan ante</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Blind</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Apa Itu Blind di Poker?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Blind level mulai di sini — SB, BB, dan ante</div>
   </a>
   <a href="/id/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Posisi</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Posisi Meja Poker Dijelaskan</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Kenapa kursi Anda mengarahkan setiap keputusan turnamen</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Posisi</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Posisi Meja Poker Dijelaskan</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Kenapa kursi Anda mengarahkan setiap keputusan turnamen</div>
   </a>
 </div>
 `.trim(),

@@ -449,29 +449,29 @@ Kwa hatua yako inayofuata, pitia madaraja ya mikono ya Texas Hold'em, fanya mazo
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/sw/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Mtiririko wa Mchezo</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Mpangilio wa Mchezo wa Texas Hold'em</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Mtiririko kamili wa mkono — preflop hadi showdown na mifano halisi</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Mtiririko wa Mchezo</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Mpangilio wa Mchezo wa Texas Hold'em</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Mtiririko kamili wa mkono — preflop hadi showdown na mifano halisi</div>
   </a>
   <a href="/sw/blog/holdem-blind-meaning" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Blinds</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Small Blind na Big Blind ni Nini</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Dau la lazima linavyofanya kazi na kwa nini lipo</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Blinds</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Small Blind na Big Blind ni Nini</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Dau la lazima linavyofanya kazi na kwa nini lipo</div>
   </a>
   <a href="/sw/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Kuweka Dau</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Check, Call, Raise, Fold Zimeelezwa</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Wakati wa kutumia kila action + jedwali la maamuzi</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Kuweka Dau</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Check, Call, Raise, Fold Zimeelezwa</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Wakati wa kutumia kila action + jedwali la maamuzi</div>
   </a>
   <a href="/sw/blog/holdem-showdown-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Showdown</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Sheria za Showdown: Nani Anaonyesha Kwanza?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Mwekaji dau wa mwisho, mucking, slow rolling, na sheria za all-in</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Showdown</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Sheria za Showdown: Nani Anaonyesha Kwanza?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Mwekaji dau wa mwisho, mucking, slow rolling, na sheria za all-in</div>
   </a>
   <a href="/sw/blog/holdem-all-in-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">All-In</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Sheria za All-In: Side Pots na Reraises</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Pot kuu, side pot, na sifa ya kufanya re-raise</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">All-In</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Sheria za All-In: Side Pots na Reraises</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Pot kuu, side pot, na sifa ya kufanya re-raise</div>
   </a>
 </div>
 `.trim(),

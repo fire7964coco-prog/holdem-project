@@ -195,19 +195,19 @@ Dopiero zaczynasz z pokerem? [Przewodnik po zasadach Texas Hold'em dla początku
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/pl/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Akcje</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Check, bet, call, raise i fold — akcje w pokerze</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Pięć akcji zakładowych i kiedy używać każdej z nich</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Akcje</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Check, bet, call, raise i fold — akcje w pokerze</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Pięć akcji zakładowych i kiedy używać każdej z nich</div>
   </a>
   <a href="/pl/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Kolejność gry</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Kolejność rozgrywki w Texas Hold'em</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Sekwencja akcji: preflop → flop → turn → river</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Kolejność gry</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Kolejność rozgrywki w Texas Hold'em</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Sekwencja akcji: preflop → flop → turn → river</div>
   </a>
   <a href="/pl/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Zasady</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Zasady Texas Hold'em dla początkujących</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Od rozdania do showdownu — wszystko, co musisz wiedzieć na start</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Zasady</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Zasady Texas Hold'em dla początkujących</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Od rozdania do showdownu — wszystko, co musisz wiedzieć na start</div>
   </a>
 </div>
 `.trim(),

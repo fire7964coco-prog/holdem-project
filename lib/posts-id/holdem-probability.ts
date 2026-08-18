@@ -258,29 +258,29 @@ Poker memberi imbalan pada pemain yang telah menjadikan ini otomatis. Pelajari b
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/id/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Peringkat Tangan</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Peringkat Tangan Poker, Terbaik ke Terburuk</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Urutan yang diciptakan odds ini — tiap tangan diperingkat</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Peringkat Tangan</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Peringkat Tangan Poker, Terbaik ke Terburuk</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Urutan yang diciptakan odds ini — tiap tangan diperingkat</div>
   </a>
   <a href="/id/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Tangan Awal</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Bagan Tangan Awal per Posisi</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Mana dari 1.326 tangan itu yang benar-benar dimainkan</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Tangan Awal</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Bagan Tangan Awal per Posisi</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Mana dari 1.326 tangan itu yang benar-benar dimainkan</div>
   </a>
   <a href="/id/blog/holdem-flush-vs-straight" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Duel Tangan</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Apakah Flush Mengalahkan Straight?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Kenapa tangan yang lebih langka selalu menang</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Duel Tangan</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Apakah Flush Mengalahkan Straight?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Kenapa tangan yang lebih langka selalu menang</div>
   </a>
   <a href="/id/blog/holdem-reading-the-board" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Membaca Board</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Cara Membaca Board di Hold'em</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Hitung outs Anda dengan melihat tiap draw</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Membaca Board</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Cara Membaca Board di Hold'em</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Hitung outs Anda dengan melihat tiap draw</div>
   </a>
   <a href="/id/blog/holdem-position-play" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Strategi</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Bagaimana Posisi Mengubah Segalanya</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Kapan odds membenarkan call — dan kapan posisi yang membenarkannya</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Strategi</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Bagaimana Posisi Mengubah Segalanya</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Kapan odds membenarkan call — dan kapan posisi yang membenarkannya</div>
   </a>
 </div>
 `.trim(),

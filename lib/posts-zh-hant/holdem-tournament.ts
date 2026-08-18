@@ -190,35 +190,35 @@ deepstack 讓你的起始籌碼相對盲注明顯高於同系列的標準賽事�
 這是別的指南不會告訴你的。以一場中午 12 點開賽的 $300 現場 freezeout 為例，一個實際的 Day 1 時間軸：
 
 <div style="background:rgba(255,248,210,0.06);border:1px solid rgba(255,240,180,0.25);border-radius:12px;padding:20px 24px;margin:20px 0">
-<div style="font-size:13px;font-weight:700;color:var(--primary);margin-bottom:14px">Day 1 時間軸——$300 freezeout，10,000 起始籌碼</div>
+<div style="font-size:13px;font-weight:700;color:hsl(var(--primary));margin-bottom:14px">Day 1 時間軸——$300 freezeout，10,000 起始籌碼</div>
 <div style="display:grid;gap:10px;font-size:13px">
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="color:var(--primary);font-weight:700">10:30</div>
-<div style="color:var(--foreground)">報名開放。出示證件、付款、拿座位卡。找到你的桌子。</div>
+<div style="color:hsl(var(--primary));font-weight:700">10:30</div>
+<div style="color:hsl(var(--foreground))">報名開放。出示證件、付款、拿座位卡。找到你的桌子。</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="color:var(--primary);font-weight:700">12:00</div>
-<div style="color:var(--foreground)">發牌開打。第 1 級：盲注 25/50。你有 200BB。打探索性的牌。</div>
+<div style="color:hsl(var(--primary));font-weight:700">12:00</div>
+<div style="color:hsl(var(--foreground))">發牌開打。第 1 級：盲注 25/50。你有 200BB。打探索性的牌。</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="color:var(--primary);font-weight:700">13:00–15:00</div>
-<div style="color:var(--foreground)">第 2–4 級。晚報名還開著。人數增加。有些玩家已經出局。</div>
+<div style="color:hsl(var(--primary));font-weight:700">13:00–15:00</div>
+<div style="color:hsl(var(--foreground))">第 2–4 級。晚報名還開著。人數增加。有些玩家已經出局。</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="color:var(--primary);font-weight:700">約 15:30</div>
-<div style="color:var(--foreground)">晚報名截止。公布最終人數、確認獎池。底注進場。</div>
+<div style="color:hsl(var(--primary));font-weight:700">約 15:30</div>
+<div style="color:hsl(var(--foreground))">晚報名截止。公布最終人數、確認獎池。底注進場。</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="color:var(--primary);font-weight:700">約 17:00</div>
-<div style="color:var(--foreground)">晚餐休息（通常 1 小時）。約 40% 的人已被淘汰。開始併桌。</div>
+<div style="color:hsl(var(--primary));font-weight:700">約 17:00</div>
+<div style="color:hsl(var(--foreground))">晚餐休息（通常 1 小時）。約 40% 的人已被淘汰。開始併桌。</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="color:var(--primary);font-weight:700">18:00–21:00</div>
-<div style="color:var(--foreground)">泡泡圈逼近。開始手手制。壓力達到頂點。再一個出局，大家就都有獎金。</div>
+<div style="color:hsl(var(--primary));font-weight:700">18:00–21:00</div>
+<div style="color:hsl(var(--foreground))">泡泡圈逼近。開始手手制。壓力達到頂點。再一個出局，大家就都有獎金。</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0">
 <div style="color:#22c55e;font-weight:700">21:00–23:00</div>
-<div style="color:var(--foreground)">進錢圈——泡泡破了。剩下的玩家封存籌碼，或今晚打到決賽桌。</div>
+<div style="color:hsl(var(--foreground))">進錢圈——泡泡破了。剩下的玩家封存籌碼，或今晚打到決賽桌。</div>
 </div>
 </div>
 </div>
@@ -271,7 +271,7 @@ deepstack 讓你的起始籌碼相對盲注明顯高於同系列的標準賽事�
 ## 第一次參賽檢查清單
 
 <div style="background:rgba(255,248,210,0.06);border:1px solid rgba(255,240,180,0.25);border-radius:12px;padding:20px 24px;margin:20px 0">
-<div style="font-size:13px;font-weight:700;color:var(--primary);margin-bottom:14px">出門前</div>
+<div style="font-size:13px;font-weight:700;color:hsl(var(--primary));margin-bottom:14px">出門前</div>
 <div style="display:grid;gap:8px;font-size:13px">
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span><strong>有效證件</strong>——身分證或護照。沒有例外。</span></div>
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span><strong>買入 + 多帶 20%</strong> 的現金——有些場地不收卡</span></div>
@@ -280,7 +280,7 @@ deepstack 讓你的起始籌碼相對盲注明顯高於同系列的標準賽事�
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span>舒適的衣服——比賽會打 6–12 小時。帶件外套（牌房很冷）。</span></div>
 </div>
 
-<div style="font-size:13px;font-weight:700;color:var(--primary);margin:16px 0 10px">到場後</div>
+<div style="font-size:13px;font-weight:700;color:hsl(var(--primary));margin:16px 0 10px">到場後</div>
 <div style="display:grid;gap:8px;font-size:13px">
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span>開賽前 30–45 分鐘到。報名可能排很長。</span></div>
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span>打第一手前先數起始籌碼。少了立刻告訴荷官。</span></div>
@@ -344,24 +344,24 @@ A. 兩者都有——但長期是實力決定誰贏。單一一場錦標賽波�
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/zh-hant/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">策略</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">起手牌表</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">前期級別該打哪些牌</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">策略</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">起手牌表</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">前期級別該打哪些牌</div>
   </a>
   <a href="/zh-hant/blog/holdem-strategy" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">策略</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">德州撲克策略：5 個決策</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">贏家每一手都在做的事</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">策略</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">德州撲克策略：5 個決策</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">贏家每一手都在做的事</div>
   </a>
   <a href="/zh-hant/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">新手</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">德州撲克規則怎麼玩</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">先把基礎打好</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">新手</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">德州撲克規則怎麼玩</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">先把基礎打好</div>
   </a>
   <a href="/zh-hant/blog/holdem-glossary" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">術語</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">德州撲克術語大全</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">泡泡圈、ICM、衛星賽是什麼</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">術語</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">德州撲克術語大全</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">泡泡圈、ICM、衛星賽是什麼</div>
   </a>
 </div>
 `.trim(),

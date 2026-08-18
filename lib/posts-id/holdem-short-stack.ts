@@ -205,24 +205,24 @@ Permainan short stack adalah tempat matematika turnamen menjadi memori otot — 
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/id/blog/holdem-bubble" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Turnamen</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Cara Bermain di Bubble</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Di mana shove short-stack Anda paling penting</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Turnamen</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Cara Bermain di Bubble</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Di mana shove short-stack Anda paling penting</div>
   </a>
   <a href="/id/blog/holdem-icm" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Turnamen</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ICM Dijelaskan</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Kenapa bertahan bisa mengalahkan chip</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Turnamen</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ICM Dijelaskan</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Kenapa bertahan bisa mengalahkan chip</div>
   </a>
   <a href="/id/blog/holdem-when-to-fold" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Strategi</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Kapan Harus Fold di Poker</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Kapan harganya menyuruh Anda fold</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Strategi</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Kapan Harus Fold di Poker</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Kapan harganya menyuruh Anda fold</div>
   </a>
   <a href="/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Alat Gratis</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Kalkulator ICM</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Hitung spot shove/call Anda yang sebenarnya</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Alat Gratis</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Kalkulator ICM</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Hitung spot shove/call Anda yang sebenarnya</div>
   </a>
 </div>
 `.trim(),

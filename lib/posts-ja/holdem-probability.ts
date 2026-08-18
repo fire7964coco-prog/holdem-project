@@ -258,29 +258,29 @@ A. 相手が何人ポケットペアを持つかで変わるので、決まっ�
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/ja/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">役の強さ</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ポーカーの役の強さ — 上から下まで</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">これらの確率が作る順番 — 全役を強い順に</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">役の強さ</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ポーカーの役の強さ — 上から下まで</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">これらの確率が作る順番 — 全役を強い順に</div>
   </a>
   <a href="/ja/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">スターティングハンド</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ポジション別スターティングハンド表</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">1,326通りのうち実際に打つべき手はどれか</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">スターティングハンド</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ポジション別スターティングハンド表</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">1,326通りのうち実際に打つべき手はどれか</div>
   </a>
   <a href="/ja/blog/holdem-flush-vs-straight" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">役の対決</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">フラッシュはストレートに勝つ?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">なぜレアな役がいつも勝つのか</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">役の対決</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">フラッシュはストレートに勝つ?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">なぜレアな役がいつも勝つのか</div>
   </a>
   <a href="/ja/blog/holdem-reading-the-board" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">ボードの読み方</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ホールデムでボードを読む方法</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">すべてのドローを見てアウツを数える</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">ボードの読み方</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ホールデムでボードを読む方法</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">すべてのドローを見てアウツを数える</div>
   </a>
   <a href="/ja/blog/holdem-position-play" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">戦略</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ポジションがすべてを変える</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">オッズがコールを正当化するとき、そしてポジションがそうするとき</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">戦略</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ポジションがすべてを変える</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">オッズがコールを正当化するとき、そしてポジションがそうするとき</div>
   </a>
 </div>
 `.trim(),

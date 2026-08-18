@@ -246,24 +246,24 @@ Fija el orden completo con la [jerarquía de manos completa](/es/blog/holdem-han
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/es/blog/holdem-kicker" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Kicker</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">¿Qué es el kicker en el póker?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">La carta lateral en sí — qué manos la llevan y cuántas</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Kicker</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">¿Qué es el kicker en el póker?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">La carta lateral en sí — qué manos la llevan y cuántas</div>
   </a>
   <a href="/es/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Jerarquía de manos</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Jerarquía de manos de póker — de la mejor a la peor</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Las 10 manos con probabilidades, ejemplos y retos de mesa</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Jerarquía de manos</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Jerarquía de manos de póker — de la mejor a la peor</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Las 10 manos con probabilidades, ejemplos y retos de mesa</div>
   </a>
   <a href="/es/blog/holdem-flush-vs-straight" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Duelo de manos</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">¿El color gana a la escalera?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Matemática, situaciones de mesa y empates de la confusión #1</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Duelo de manos</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">¿El color gana a la escalera?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Matemática, situaciones de mesa y empates de la confusión #1</div>
   </a>
   <a href="/es/blog/holdem-split-pot-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Bote dividido</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">¿Cuándo se divide un bote?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">5 situaciones de empate y 3 cosas que los jugadores creen que ganan</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Bote dividido</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">¿Cuándo se divide un bote?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">5 situaciones de empate y 3 cosas que los jugadores creen que ganan</div>
   </a>
 </div>
 `.trim(),

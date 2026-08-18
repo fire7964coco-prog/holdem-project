@@ -186,24 +186,24 @@ Comece pelo número que decide a maioria das mãos: os seus outs. Veja o método
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/pt/blog/holdem-outs" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Odds & Matemática</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Como contar os seus outs</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">A verdadeira habilidade de contagem no pôquer</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Odds & Matemática</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Como contar os seus outs</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">A verdadeira habilidade de contagem no pôquer</div>
   </a>
   <a href="/pt/blog/holdem-3bet" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Estratégia</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">3-bet e blockers</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Usar card removal para escolher blefes</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Estratégia</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">3-bet e blockers</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Usar card removal para escolher blefes</div>
   </a>
   <a href="/pt/blog/holdem-probability" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Odds & Matemática</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Tabela de odds e probabilidade do pôquer</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Transforme a sua contagem de outs numa porcentagem</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Odds & Matemática</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Tabela de odds e probabilidade do pôquer</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Transforme a sua contagem de outs numa porcentagem</div>
   </a>
   <a href="/pt/blog/holdem-pot-odds" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Odds & Matemática</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Como calcular pot odds</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Se os seus outs valem o preço</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Odds & Matemática</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Como calcular pot odds</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Se os seus outs valem o preço</div>
   </a>
 </div>
 `.trim(),

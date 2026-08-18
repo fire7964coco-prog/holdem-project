@@ -193,24 +193,24 @@ A. limper 是翻前只跟大盲进入未加注底池的人——说的是他怎�
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/zh/blog/holdem-position-play" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">策略</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">打好你的位置</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">为什么在不利位置 limp 伤得最重</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">策略</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">打好你的位置</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">为什么在不利位置 limp 伤得最重</div>
   </a>
   <a href="/zh/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">策略</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">起手牌对照表</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">一开始到底哪些牌值得加注</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">策略</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">起手牌对照表</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">一开始到底哪些牌值得加注</div>
   </a>
   <a href="/zh/blog/holdem-fish" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">术语</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">什么是 fish（鱼）？</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">标记弱玩家的那些被动习惯</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">术语</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">什么是 fish（鱼）？</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">标记弱玩家的那些被动习惯</div>
   </a>
   <a href="/zh/blog/holdem-glossary" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">术语</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">扑克术语 A–Z</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">桌上每一句行话，全部讲明白</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">术语</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">扑克术语 A–Z</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">桌上每一句行话，全部讲明白</div>
   </a>
 </div>
 `.trim(),

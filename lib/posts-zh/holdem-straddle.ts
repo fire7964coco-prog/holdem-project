@@ -213,24 +213,24 @@ A. 对大多数玩家来说，不赚——这是个 -EV 的打法。你盲投了
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/zh/blog/holdem-blind-meaning" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">规则</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">德州扑克里的盲注是什么？</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">straddle 就建立在小盲和大盲之上</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">规则</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">德州扑克里的盲注是什么？</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">straddle 就建立在小盲和大盲之上</div>
   </a>
   <a href="/zh/blog/holdem-position-play" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">策略</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">位置如何改变一切</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">为什么 straddle 的位置比它的尺寸更要紧</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">策略</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">位置如何改变一切</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">为什么 straddle 的位置比它的尺寸更要紧</div>
   </a>
   <a href="/zh/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">规则</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">下注动作：过牌、跟注、加注</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">straddle 之后价格怎么重置</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">规则</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">下注动作：过牌、跟注、加注</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">straddle 之后价格怎么重置</div>
   </a>
   <a href="/zh/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">锦标赛</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">锦标赛 vs 现金局</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">为什么 straddle 是只属于现金局的东西</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">锦标赛</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">锦标赛 vs 现金局</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">为什么 straddle 是只属于现金局的东西</div>
   </a>
 </div>
 `.trim(),

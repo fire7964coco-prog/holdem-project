@@ -210,24 +210,24 @@ A. 它是撲克版的算牌。你不是像 21 點算牌者那樣去追蹤整副�
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/zh-hant/blog/holdem-outs" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">機率與數學</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">算補牌（Outs）完全教學</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">撲克裡真正的算牌本領</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">機率與數學</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">算補牌（Outs）完全教學</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">撲克裡真正的算牌本領</div>
   </a>
   <a href="/zh-hant/blog/holdem-drawing-odds" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">機率與數學</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">聽牌成牌機率</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">把你的補牌數換成一個百分比</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">機率與數學</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">聽牌成牌機率</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">把你的補牌數換成一個百分比</div>
   </a>
   <a href="/zh-hant/blog/holdem-pot-odds" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">機率與數學</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">底池賠率怎麼算</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">你的補牌到底值不值這個價錢</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">機率與數學</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">底池賠率怎麼算</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">你的補牌到底值不值這個價錢</div>
   </a>
   <a href="/zh-hant/blog/holdem-glossary" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">術語</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">德州撲克術語大全</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">補牌、阻擋牌、範圍——名詞一次對齊</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">術語</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">德州撲克術語大全</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">補牌、阻擋牌、範圍——名詞一次對齊</div>
   </a>
 </div>
 `.trim(),

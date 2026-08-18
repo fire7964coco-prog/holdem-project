@@ -200,19 +200,19 @@ A. ليس تماماً — «البلايندز» تشير إلى الرهاني
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/ar/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">أفعال الرهان</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">التمرير والرهان والمجاراة والزيادة والطي</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">أفعال الرهان الخمسة ومتى تستخدم كلاً منها</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">أفعال الرهان</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">التمرير والرهان والمجاراة والزيادة والطي</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">أفعال الرهان الخمسة ومتى تستخدم كلاً منها</div>
   </a>
   <a href="/ar/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">ترتيب اللعب</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ترتيب اللعب في تكساس هولدم</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">تسلسل الدور: ما قبل الفلوب → الفلوب → التيرن → النهر</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">ترتيب اللعب</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ترتيب اللعب في تكساس هولدم</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">تسلسل الدور: ما قبل الفلوب → الفلوب → التيرن → النهر</div>
   </a>
   <a href="/ar/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">صيغ اللعب</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">البطولات مقابل ألعاب الكاش</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">بلايندز ثابتة أو متصاعدة، الباي إن، وأي صيغة تناسبك</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">صيغ اللعب</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">البطولات مقابل ألعاب الكاش</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">بلايندز ثابتة أو متصاعدة، الباي إن، وأي صيغة تناسبك</div>
   </a>
 </div>
 `.trim(),

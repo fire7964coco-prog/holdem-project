@@ -230,24 +230,24 @@ Mach das richtig, und du hörst auf, Chips für hoffnungsvolle Calls zu verbrenn
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/de/blog/holdem-probability" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Odds & Mathematik</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Poker-Odds- & Wahrscheinlichkeitstabelle</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Jede Hand, jeder Flop, jeder Draw – die Zahlen hinter dem Call</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Odds & Mathematik</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Poker-Odds- & Wahrscheinlichkeitstabelle</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Jede Hand, jeder Flop, jeder Draw – die Zahlen hinter dem Call</div>
   </a>
   <a href="/de/blog/holdem-pot-odds" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Odds & Mathematik</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Wie man Pot Odds berechnet</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Der sofortige Preis – wo Implied Odds beginnen</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Odds & Mathematik</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Wie man Pot Odds berechnet</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Der sofortige Preis – wo Implied Odds beginnen</div>
   </a>
   <a href="/de/blog/holdem-drawing-odds" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Odds & Mathematik</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Drawing Odds & Odds, X zu floppen</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Wie oft ein Set, Flush oder eine Straße tatsächlich ankommt</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Odds & Mathematik</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Drawing Odds & Odds, X zu floppen</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Wie oft ein Set, Flush oder eine Straße tatsächlich ankommt</div>
   </a>
   <a href="/de/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Starthände</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Starthand-Tabelle nach Position</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Welche spekulativen Hände sich zum Drawen lohnen</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Starthände</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Starthand-Tabelle nach Position</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Welche spekulativen Hände sich zum Drawen lohnen</div>
   </a>
 </div>
 `.trim(),

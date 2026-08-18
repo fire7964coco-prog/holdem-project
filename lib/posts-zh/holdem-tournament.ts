@@ -210,35 +210,35 @@ deepstack 锦标赛让你的起始筹码相对盲注明显高于同系列的标�
 这是别的指南不会告诉你的。这里是一场现场 $300 freezeout、中午 12 点开赛的、真实的 Day 1 时间线：
 
 <div style="background:rgba(255,248,210,0.06);border:1px solid rgba(255,240,180,0.25);border-radius:12px;padding:20px 24px;margin:20px 0">
-<div style="font-size:13px;font-weight:700;color:var(--primary);margin-bottom:14px">Day 1 时间线 — $300 Freezeout，10,000 起始筹码</div>
+<div style="font-size:13px;font-weight:700;color:hsl(var(--primary));margin-bottom:14px">Day 1 时间线 — $300 Freezeout，10,000 起始筹码</div>
 <div style="display:grid;gap:10px;font-size:13px">
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="color:var(--primary);font-weight:700">10:30am</div>
-<div style="color:var(--foreground)">报名开放。出示证件、付钱、领座位卡。找到你那桌。</div>
+<div style="color:hsl(var(--primary));font-weight:700">10:30am</div>
+<div style="color:hsl(var(--foreground))">报名开放。出示证件、付钱、领座位卡。找到你那桌。</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="color:var(--primary);font-weight:700">12:00pm</div>
-<div style="color:var(--foreground)">发牌开打。Level 1：盲注 25/50。你有 200BB。打探索性的牌。</div>
+<div style="color:hsl(var(--primary));font-weight:700">12:00pm</div>
+<div style="color:hsl(var(--foreground))">发牌开打。Level 1：盲注 25/50。你有 200BB。打探索性的牌。</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="color:var(--primary);font-weight:700">1:00–3pm</div>
-<div style="color:var(--foreground)">Level 2–4。迟到报名仍开放。人数增长。有些玩家已经破产。</div>
+<div style="color:hsl(var(--primary));font-weight:700">1:00–3pm</div>
+<div style="color:hsl(var(--foreground))">Level 2–4。迟到报名仍开放。人数增长。有些玩家已经破产。</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="color:var(--primary);font-weight:700">~3:30pm</div>
-<div style="color:var(--foreground)">迟到报名关闭。公布最终参赛人数。确认奖池。前注上场。</div>
+<div style="color:hsl(var(--primary));font-weight:700">~3:30pm</div>
+<div style="color:hsl(var(--foreground))">迟到报名关闭。公布最终参赛人数。确认奖池。前注上场。</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="color:var(--primary);font-weight:700">~5:00pm</div>
-<div style="color:var(--foreground)">晚餐休息（通常 1 小时）。约 40% 的人已被淘汰。合桌。</div>
+<div style="color:hsl(var(--primary));font-weight:700">~5:00pm</div>
+<div style="color:hsl(var(--foreground))">晚餐休息（通常 1 小时）。约 40% 的人已被淘汰。合桌。</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="color:var(--primary);font-weight:700">6–9pm</div>
-<div style="color:var(--foreground)">Bubble 临近。开始 hand-for-hand（逐手同步）打法。压力到顶。一破产 = 所有人进钱。</div>
+<div style="color:hsl(var(--primary));font-weight:700">6–9pm</div>
+<div style="color:hsl(var(--foreground))">Bubble 临近。开始 hand-for-hand（逐手同步）打法。压力到顶。一破产 = 所有人进钱。</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0">
 <div style="color:#22c55e;font-weight:700">9–11pm</div>
-<div style="color:var(--foreground)">ITM——钱圈泡沫破裂。剩下的玩家装袋封存筹码，或今晚就打到决赛桌。</div>
+<div style="color:hsl(var(--foreground))">ITM——钱圈泡沫破裂。剩下的玩家装袋封存筹码，或今晚就打到决赛桌。</div>
 </div>
 </div>
 </div>
@@ -291,7 +291,7 @@ deepstack 锦标赛让你的起始筹码相对盲注明显高于同系列的标�
 ## 第一次锦标赛清单
 
 <div style="background:rgba(255,248,210,0.06);border:1px solid rgba(255,240,180,0.25);border-radius:12px;padding:20px 24px;margin:20px 0">
-<div style="font-size:13px;font-weight:700;color:var(--primary);margin-bottom:14px">出门之前</div>
+<div style="font-size:13px;font-weight:700;color:hsl(var(--primary));margin-bottom:14px">出门之前</div>
 <div style="display:grid;gap:8px;font-size:13px">
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span><strong>有效带照片证件</strong>——护照或驾照。没有例外。</span></div>
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span><strong>买入 + 额外 20%</strong> 现金——有些场馆不收卡</span></div>
@@ -300,7 +300,7 @@ deepstack 锦标赛让你的起始筹码相对盲注明显高于同系列的标�
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span>穿舒服的衣服——锦标赛要打 6–12 小时。带件外套（牌室很冷）。</span></div>
 </div>
 
-<div style="font-size:13px;font-weight:700;color:var(--primary);margin:16px 0 10px">到了场馆</div>
+<div style="font-size:13px;font-weight:700;color:hsl(var(--primary));margin:16px 0 10px">到了场馆</div>
 <div style="display:grid;gap:8px;font-size:13px">
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span>提前 30–45 分钟到场。报名队伍可能很长。</span></div>
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span>打第一手牌之前先数你的起始筹码。少了立刻告诉荷官。</span></div>
@@ -365,34 +365,34 @@ A. 两者都有——但决定谁笑到最后的，长期来看是实力。单�
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/zh/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">深度对比</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">锦标赛 vs 现金局</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">筹码价值、上涨的盲注、ICM——哪种赛制适合你</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">深度对比</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">锦标赛 vs 现金局</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">筹码价值、上涨的盲注、ICM——哪种赛制适合你</div>
   </a>
   <a href="/zh/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">策略</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">起手牌表</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">早期级别该打哪些牌</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">策略</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">起手牌表</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">早期级别该打哪些牌</div>
   </a>
   <a href="/zh/blog/holdem-short-stack" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">短码</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">短码策略</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">盲注逼近时的 push-or-fold</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">短码</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">短码策略</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">盲注逼近时的 push-or-fold</div>
   </a>
   <a href="/zh/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">从这里开始</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">德州扑克新手规则</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">先把基础打牢</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">从这里开始</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">德州扑克新手规则</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">先把基础打牢</div>
   </a>
   <a href="/zh/blog/holdem-blind-meaning" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">盲注</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">扑克里的盲注是什么？</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">盲注级别从这里开始——SB、BB 和前注</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">盲注</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">扑克里的盲注是什么？</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">盲注级别从这里开始——SB、BB 和前注</div>
   </a>
   <a href="/zh/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">位置</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">扑克桌位置详解</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">为什么你的座位主宰每个锦标赛决策</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">位置</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">扑克桌位置详解</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">为什么你的座位主宰每个锦标赛决策</div>
   </a>
 </div>
 `.trim(),

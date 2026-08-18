@@ -235,19 +235,19 @@ A. Fare limp è entrare nel piatto preflop limitandosi a chiamare il grande buio
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/it/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Pilastro</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Regole del Texas Hold'em per principianti</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">La guida completa alle regole — dai bui allo showdown</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Pilastro</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Regole del Texas Hold'em per principianti</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">La guida completa alle regole — dai bui allo showdown</div>
   </a>
   <a href="/it/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Flusso di gioco</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Ordine di gioco nel Texas Hold'em</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Dal preflop al river con mani di esempio reali</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Flusso di gioco</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Ordine di gioco nel Texas Hold'em</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Dal preflop al river con mani di esempio reali</div>
   </a>
   <a href="/it/blog/holdem-blind-meaning" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Bui</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Piccolo buio vs grande buio</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Perché paghi prima ancora di vedere le carte</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Bui</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Piccolo buio vs grande buio</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Perché paghi prima ancora di vedere le carte</div>
   </a>
 </div>
 `.trim(),

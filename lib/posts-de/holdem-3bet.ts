@@ -329,24 +329,24 @@ Bring das 3-Betting richtig hin und du hörst auf, der Spieler zu sein, der mit 
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/de/blog/holdem-strategy" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Strategie</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Das Framework der 5 Entscheidungen</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Wo 3-Betting in ein gewinnendes Spiel passt</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Strategie</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Das Framework der 5 Entscheidungen</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Wo 3-Betting in ein gewinnendes Spiel passt</div>
   </a>
   <a href="/de/blog/holdem-limping" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Strategie</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Warum Limpen dich kostet</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Raise oder Fold – nicht einfach callen</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Strategie</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Warum Limpen dich kostet</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Raise oder Fold – nicht einfach callen</div>
   </a>
   <a href="/de/blog/holdem-position-play" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Strategie</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Deine Position spielen</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Warum 3-Bets in Position besser funktionieren</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Strategie</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Deine Position spielen</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Warum 3-Bets in Position besser funktionieren</div>
   </a>
   <a href="/de/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Strategie</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Starthand-Chart</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Welche Hände es überhaupt wert sind zu raisen</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Strategie</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Starthand-Chart</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Welche Hände es überhaupt wert sind zu raisen</div>
   </a>
 </div>
 `.trim(),

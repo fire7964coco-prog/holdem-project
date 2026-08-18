@@ -299,24 +299,24 @@ Untuk setiap nama kursi dan peta meja lengkap, lihat [panduan nama kursi dan pos
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/id/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Positions</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Nama Kursi Poker & Peta Meja</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">UTG, Lojack, Hijack, Cutoff, Button — setiap kursi dijelaskan</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Positions</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Nama Kursi Poker & Peta Meja</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">UTG, Lojack, Hijack, Cutoff, Button — setiap kursi dijelaskan</div>
   </a>
   <a href="/id/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Starting Hands</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Starting Hands Chart menurut Posisi</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Tangan mana yang dimainkan dari tiap kursi — bagan referensi cetak</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Starting Hands</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Starting Hands Chart menurut Posisi</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Tangan mana yang dimainkan dari tiap kursi — bagan referensi cetak</div>
   </a>
   <a href="/id/blog/holdem-blind-meaning" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Blinds</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Strategi Small Blind & Big Blind</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Kenapa kursi berdiskon paling sulit untuk menghasilkan profit</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Blinds</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Strategi Small Blind & Big Blind</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Kenapa kursi berdiskon paling sulit untuk menghasilkan profit</div>
   </a>
   <a href="/id/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Tournament</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Strategi Turnamen vs Cash Game</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Bagaimana keputusan posisi berubah saat ICM berlaku</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Tournament</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Strategi Turnamen vs Cash Game</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Bagaimana keputusan posisi berubah saat ICM berlaku</div>
   </a>
 </div>
 `.trim(),

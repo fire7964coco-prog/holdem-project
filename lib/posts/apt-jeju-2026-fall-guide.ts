@@ -45,18 +45,18 @@ APT 제주 2026 가을에 참가하고 싶은데 어디서부터 시작해야 �
 <div style="flex-shrink:0;width:36px;height:36px;border-radius:50%;background:rgba(239,68,68,0.2);display:flex;align-items:center;justify-content:center;font-size:18px;margin-top:2px">⚠️</div>
 <div>
 <div style="font-size:15px;font-weight:800;color:#ef4444;margin-bottom:10px">한국 국적자는 LES A 카지노(제주 신화월드) 입장 불가</div>
-<p style="font-size:14px;color:var(--foreground);line-height:1.7;margin:0 0 12px">제주 신화월드 내 LES A 카지노(랜딩카지노)는 관광진흥법에 따라 <strong>외국인 전용 카지노</strong>입니다. APT 제주도 동일 장소에서 열리므로 대한민국 국적자는 참가할 수 없습니다.</p>
+<p style="font-size:14px;color:hsl(var(--foreground));line-height:1.7;margin:0 0 12px">제주 신화월드 내 LES A 카지노(랜딩카지노)는 관광진흥법에 따라 <strong>외국인 전용 카지노</strong>입니다. APT 제주도 동일 장소에서 열리므로 대한민국 국적자는 참가할 수 없습니다.</p>
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:13px">
 <div style="padding:10px 14px;background:rgba(239,68,68,0.10);border-radius:8px;border:1px solid rgba(239,68,68,0.25)">
 <div style="font-weight:700;color:#ef4444;margin-bottom:4px">입장 불가</div>
-<div style="color:var(--muted-foreground)">대한민국 국적자 (국내 거주)</div>
+<div style="color:hsl(var(--muted-foreground))">대한민국 국적자 (국내 거주)</div>
 </div>
 <div style="padding:10px 14px;background:rgba(34,197,94,0.07);border-radius:8px;border:1px solid rgba(34,197,94,0.25)">
 <div style="font-weight:700;color:#22c55e;margin-bottom:4px">입장 가능</div>
-<div style="color:var(--muted-foreground)">외국 국적자 / 재외교포</div>
+<div style="color:hsl(var(--muted-foreground))">외국 국적자 / 재외교포</div>
 </div>
 </div>
-<p style="font-size:12px;color:var(--muted-foreground);margin:10px 0 0;line-height:1.6">재외교포는 한국 여권 + 영주권 카드(또는 이민확인서) 두 가지 모두 필요합니다.</p>
+<p style="font-size:12px;color:hsl(var(--muted-foreground));margin:10px 0 0;line-height:1.6">재외교포는 한국 여권 + 영주권 카드(또는 이민확인서) 두 가지 모두 필요합니다.</p>
 </div>
 </div>
 </div>
@@ -210,10 +210,10 @@ $3.50 스텝 위성 → Mega Satellite → 메인이벤트 시트
 **4. KYC(본인 인증) — 위성 시트 수령 전 필수 완료**
 
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.3);border-radius:14px;padding:16px 20px;margin:16px 0">
-<div style="font-size:13px;font-weight:700;color:var(--primary);margin-bottom:10px">KYC 진행 방법</div>
-<div style="font-size:13px;color:var(--muted-foreground);line-height:1.7">
-<strong style="color:var(--foreground)">PC:</strong> 로그인 → 우측 상단 프로필 아이콘 → <strong style="color:var(--foreground)">My Account</strong> → <strong style="color:var(--foreground)">My Documents</strong><br/>
-<strong style="color:var(--foreground)">모바일:</strong> Me 아이콘(하단 왼쪽) → <strong style="color:var(--foreground)">My Info</strong> → <strong style="color:var(--foreground)">My Documents</strong><br/><br/>
+<div style="font-size:13px;font-weight:700;color:hsl(var(--primary));margin-bottom:10px">KYC 진행 방법</div>
+<div style="font-size:13px;color:hsl(var(--muted-foreground));line-height:1.7">
+<strong style="color:hsl(var(--foreground))">PC:</strong> 로그인 → 우측 상단 프로필 아이콘 → <strong style="color:hsl(var(--foreground))">My Account</strong> → <strong style="color:hsl(var(--foreground))">My Documents</strong><br/>
+<strong style="color:hsl(var(--foreground))">모바일:</strong> Me 아이콘(하단 왼쪽) → <strong style="color:hsl(var(--foreground))">My Info</strong> → <strong style="color:hsl(var(--foreground))">My Documents</strong><br/><br/>
 ① 여권·운전면허증·국가 ID 중 하나의 앞면 사진 업로드 (글자 선명하게)<br/>
 ② 주소 증명 서류 — 최근 90일 이내 은행 명세서 또는 공과금 고지서<br/>
 ③ 처리까지 최대 5 영업일 (보통 1~3일)<br/>
@@ -283,8 +283,8 @@ $20 Step 위성 → OnLive Day 1 → **집에서 Day 1 플레이** → ITM 생�
 ## STEP 5 — 시트 카드는 어디서 받나요?
 
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.3);border-radius:14px;padding:16px 20px;margin:16px 0">
-<div style="font-size:13px;font-weight:700;color:var(--primary);margin-bottom:8px">💳 현장 결제 수단</div>
-<div style="font-size:13px;color:var(--muted-foreground);line-height:1.7">
+<div style="font-size:13px;font-weight:700;color:hsl(var(--primary));margin-bottom:8px">💳 현장 결제 수단</div>
+<div style="font-size:13px;color:hsl(var(--muted-foreground));line-height:1.7">
 ✅ 현금(KRW) — 가능<br/>
 ✅ 카지노 칩 — 가능<br/>
 ✅ Natural8 Digital Seat Coupon (사전 위성 통과자) — 가능<br/>
@@ -354,15 +354,15 @@ LES A 카지노는 제주국제공항에서 서쪽으로 약 35km 거리입니�
 ## 뭘 챙겨가야 하나요? — 준비물 체크리스트
 
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.3);border-radius:14px;padding:20px 24px;margin:24px 0">
-<div style="font-size:13px;font-weight:700;color:var(--primary);margin-bottom:14px">필수 서류</div>
+<div style="font-size:13px;font-weight:700;color:hsl(var(--primary));margin-bottom:14px">필수 서류</div>
 <div style="display:grid;gap:8px;font-size:13px">
-<div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.15);border:1.5px solid rgba(34,197,94,0.5);flex-shrink:0;display:flex;align-items:center;justify-content:center;color:#22c55e;font-size:11px">✓</span><span><strong style="color:var(--foreground)">여권 실물</strong> — 사진·사본 절대 불가. 반드시 원본</span></div>
-<div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.15);border:1.5px solid rgba(34,197,94,0.5);flex-shrink:0;display:flex;align-items:center;justify-content:center;color:#22c55e;font-size:11px">✓</span><span><strong style="color:var(--foreground)">만 19세 이상</strong> — 카지노 입장 나이 기준</span></div>
+<div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.15);border:1.5px solid rgba(34,197,94,0.5);flex-shrink:0;display:flex;align-items:center;justify-content:center;color:#22c55e;font-size:11px">✓</span><span><strong style="color:hsl(var(--foreground))">여권 실물</strong> — 사진·사본 절대 불가. 반드시 원본</span></div>
+<div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.15);border:1.5px solid rgba(34,197,94,0.5);flex-shrink:0;display:flex;align-items:center;justify-content:center;color:#22c55e;font-size:11px">✓</span><span><strong style="color:hsl(var(--foreground))">만 19세 이상</strong> — 카지노 입장 나이 기준</span></div>
 <div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.15);border:1.5px solid rgba(34,197,94,0.5);flex-shrink:0;display:flex;align-items:center;justify-content:center;color:#22c55e;font-size:11px">✓</span><span>Natural8 사전 등록 확인 이메일 (사전 등록자)</span></div>
-<div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(255,150,0,0.15);border:1.5px solid rgba(255,150,0,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;color:#ff9600;font-size:11px">!</span><span><strong style="color:var(--foreground)">재외교포인 경우</strong> — 영주권 카드 또는 이민확인서 추가 지참</span></div>
+<div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(255,150,0,0.15);border:1.5px solid rgba(255,150,0,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;color:#ff9600;font-size:11px">!</span><span><strong style="color:hsl(var(--foreground))">재외교포인 경우</strong> — 영주권 카드 또는 이민확인서 추가 지참</span></div>
 </div>
 
-<div style="font-size:13px;font-weight:700;color:var(--primary);margin:18px 0 14px">제주행 준비</div>
+<div style="font-size:13px;font-weight:700;color:hsl(var(--primary));margin:18px 0 14px">제주행 준비</div>
 <div style="display:grid;gap:8px;font-size:13px">
 <div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.15);border:1.5px solid rgba(34,197,94,0.5);flex-shrink:0;display:flex;align-items:center;justify-content:center;color:#22c55e;font-size:11px">✓</span><span>항공권 — 제주국제공항(CJU)으로 예약</span></div>
 <div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.15);border:1.5px solid rgba(34,197,94,0.5);flex-shrink:0;display:flex;align-items:center;justify-content:center;color:#22c55e;font-size:11px">✓</span><span>숙소 — 제주 신화월드 리조트 내 숙박 추천 (이동 편리)</span></div>
@@ -423,19 +423,19 @@ A. **시리즈 전체 보장 상금이 $350만 이상**입니다. 단일 이벤�
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/blog/apt-incheon-2026-guide" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">시리즈 1편</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">APT 인천 2026 참가 가이드</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Natural8 위성 · 8월 7~16일</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">시리즈 1편</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">APT 인천 2026 참가 가이드</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Natural8 위성 · 8월 7~16일</div>
   </a>
   <a href="/blog/appt-korea-2026-guide" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">시리즈 2편</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">APPT 코리아 2026 참가 가이드</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">PokerStars Power Path · 9월 3~14일</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">시리즈 2편</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">APPT 코리아 2026 참가 가이드</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">PokerStars Power Path · 9월 3~14일</div>
   </a>
   <a href="/tournaments" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">필라</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">2026 홀덤 대회 일정 전체</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">국내외 20개+ 일정 한눈에</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">필라</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">2026 홀덤 대회 일정 전체</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">국내외 20개+ 일정 한눈에</div>
   </a>
 </div>
 `.trim(),

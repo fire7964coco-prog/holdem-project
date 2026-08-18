@@ -429,24 +429,24 @@ Every figure above was checked against primary sources. **Verified: July 28, 202
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/en/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Tournament Basics</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">How Poker Tournaments Work</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Buy-ins, blinds, satellites & first-timer checklist</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Tournament Basics</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">How Poker Tournaments Work</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Buy-ins, blinds, satellites & first-timer checklist</div>
   </a>
   <a href="/en/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Strategy</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Tournament vs Cash Game</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">How strategy shifts when ICM applies</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Strategy</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Tournament vs Cash Game</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">How strategy shifts when ICM applies</div>
   </a>
   <a href="/en/blog/wpt-australia-2026-guide" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Asia-Pacific</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">WPT Australia 2026 Guide</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">The Star Sydney — Sep 10–30, AUD $5,000 Championship</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Asia-Pacific</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">WPT Australia 2026 Guide</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">The Star Sydney — Sep 10–30, AUD $5,000 Championship</div>
   </a>
   <a href="/en/blog/ept-barcelona-2026-guide" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Europe</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">EPT Barcelona 2026 Guide</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Casino Barcelona — Aug 16–29, €5,300 Main Event</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Europe</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">EPT Barcelona 2026 Guide</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Casino Barcelona — Aug 16–29, €5,300 Main Event</div>
   </a>
 </div>
 `.trim(),

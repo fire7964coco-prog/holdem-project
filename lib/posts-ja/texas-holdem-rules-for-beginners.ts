@@ -475,34 +475,34 @@ A. ライブの1ハンドは通常30秒〜2分程度です。難しい判断が�
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/ja/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">進行の流れ</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">テキサスホールデムの進行順</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">プリフロップからショーダウンまで実例つきで解説</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">進行の流れ</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">テキサスホールデムの進行順</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">プリフロップからショーダウンまで実例つきで解説</div>
   </a>
   <a href="/ja/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">役の強さ</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ポーカーの役の強さ一覧</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">全10役の確率・実例・ボードの読み方クイズ</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">役の強さ</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ポーカーの役の強さ一覧</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">全10役の確率・実例・ボードの読み方クイズ</div>
   </a>
   <a href="/ja/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">ポジション</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ポーカーのポジション：UTGからボタンまで</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">なぜボタンが勝つのか — 席順マップとオープンレンジ</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">ポジション</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ポーカーのポジション：UTGからボタンまで</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">なぜボタンが勝つのか — 席順マップとオープンレンジ</div>
   </a>
   <a href="/ja/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">ベット</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">チェック・コール・レイズ・フォールド解説</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">各アクションの使いどころ＋判断テーブル</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">ベット</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">チェック・コール・レイズ・フォールド解説</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">各アクションの使いどころ＋判断テーブル</div>
   </a>
   <a href="/ja/blog/holdem-showdown-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">ショーダウン</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ショーダウンのルール：誰から見せる？</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">ラストアグレッサー、マック、スローロール、オールイン時の開示</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">ショーダウン</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ショーダウンのルール：誰から見せる？</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">ラストアグレッサー、マック、スローロール、オールイン時の開示</div>
   </a>
   <a href="/ja/blog/holdem-all-in-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">オールイン</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">オールインのルール：サイドポットとリレイズ</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">メインポット、サイドポット、リレイズ権の条件</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">オールイン</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">オールインのルール：サイドポットとリレイズ</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">メインポット、サイドポット、リレイズ権の条件</div>
   </a>
 </div>
 `.trim(),

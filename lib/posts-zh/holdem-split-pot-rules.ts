@@ -277,19 +277,19 @@ A. 不是——同一个词，两件不同的事。摊牌时的平分底池是�
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/zh/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">牌型大小</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">德州扑克牌型大小——从大到小</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">全部 10 种牌型，带概率、例子和牌面谜题</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">牌型大小</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">德州扑克牌型大小——从大到小</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">全部 10 种牌型，带概率、例子和牌面谜题</div>
   </a>
   <a href="/zh/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">平局规则</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">踢脚与平局规则</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">踢脚如何决定同牌型摊牌</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">平局规则</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">踢脚与平局规则</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">踢脚如何决定同牌型摊牌</div>
   </a>
   <a href="/zh/blog/holdem-flush-vs-straight" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">牌力对决</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">同花和顺子哪个大？</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">头号困惑的数学与牌面场景</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">牌力对决</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">同花和顺子哪个大？</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">头号困惑的数学与牌面场景</div>
   </a>
 </div>
 `.trim(),

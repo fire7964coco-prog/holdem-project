@@ -242,24 +242,24 @@ A. 隐含赔率讲的全是还剩多少钱可赢，而深筹码意味着有更�
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/zh/blog/holdem-probability" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">赔率与数学</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">扑克概率与赔率表</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">每种牌、每种翻牌、每种听牌——跟注背后的数字</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">赔率与数学</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">扑克概率与赔率表</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">每种牌、每种翻牌、每种听牌——跟注背后的数字</div>
   </a>
   <a href="/zh/blog/holdem-pot-odds" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">赔率与数学</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">底池赔率怎么算</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">即时价格——隐含赔率从这里开始</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">赔率与数学</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">底池赔率怎么算</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">即时价格——隐含赔率从这里开始</div>
   </a>
   <a href="/zh/blog/holdem-drawing-odds" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">赔率与数学</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">听牌赔率与翻中 X 的概率</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">暗三条、同花或顺子到底多久成一次</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">赔率与数学</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">听牌赔率与翻中 X 的概率</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">暗三条、同花或顺子到底多久成一次</div>
   </a>
   <a href="/zh/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">起手牌</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">按位置划分的起手牌表</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">哪些投机牌值得拿去听牌</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">起手牌</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">按位置划分的起手牌表</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">哪些投机牌值得拿去听牌</div>
   </a>
 </div>
 `.trim(),

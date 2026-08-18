@@ -307,24 +307,24 @@ Bookmark this page and check back whenever a word trips you up. Speak the langua
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/en/blog/holdem-fish" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Glossary</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">What Is a Fish?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">The player types, decoded</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Glossary</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">What Is a Fish?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">The player types, decoded</div>
   </a>
   <a href="/en/blog/holdem-cooler" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Glossary</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Cooler vs Bad Beat</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">The two losses everyone confuses</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Glossary</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Cooler vs Bad Beat</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">The two losses everyone confuses</div>
   </a>
   <a href="/en/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Rules</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Betting Actions</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Check, bet, call, raise, fold</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Rules</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Betting Actions</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Check, bet, call, raise, fold</div>
   </a>
   <a href="/en/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Hand Rankings</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">What Beats What</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">The full hand ranking order</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Hand Rankings</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">What Beats What</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">The full hand ranking order</div>
   </a>
 </div>
 `.trim(),

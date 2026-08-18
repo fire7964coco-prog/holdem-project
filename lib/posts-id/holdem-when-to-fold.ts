@@ -257,24 +257,24 @@ Kuasai fold dan Anda berhenti menjadi pemain yang "tak bisa melepasnya." Padukan
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/id/blog/holdem-strategy" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Strategi</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Kerangka 5 Keputusan</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Di mana fold cocok dalam permainan yang menang</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Strategi</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Kerangka 5 Keputusan</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Di mana fold cocok dalam permainan yang menang</div>
   </a>
   <a href="/id/blog/holdem-pot-odds" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Peluang</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Cara Menghitung Pot Odds</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Ambang di balik setiap fold</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Peluang</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Cara Menghitung Pot Odds</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Ambang di balik setiap fold</div>
   </a>
   <a href="/id/blog/holdem-3bet" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Strategi</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">3-Betting Dijelaskan</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Kapan fold ke re-raise</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Strategi</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">3-Betting Dijelaskan</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Kapan fold ke re-raise</div>
   </a>
   <a href="/id/blog/holdem-continuation-bet" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Strategi</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Continuation Bet</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Kapan fold ke c-bet</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Strategi</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Continuation Bet</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Kapan fold ke c-bet</div>
   </a>
 </div>
 `.trim(),

@@ -238,19 +238,19 @@ A. Лімп — це вхід у банк на префлопі простим �
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/uk/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Основа</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Правила техаського холдему для новачків</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Повний гайд з правил — від блайндів до розкриття</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Основа</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Правила техаського холдему для новачків</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Повний гайд з правил — від блайндів до розкриття</div>
   </a>
   <a href="/uk/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Порядок гри</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Порядок гри в техаському холдемі</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Від префлопу до рівера на реальних прикладах рук</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Порядок гри</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Порядок гри в техаському холдемі</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Від префлопу до рівера на реальних прикладах рук</div>
   </a>
   <a href="/uk/blog/holdem-blind-meaning" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Блайнди</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Малий блайнд vs великий блайнд</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Чому ти платиш до того, як побачив карти</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Блайнди</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Малий блайнд vs великий блайнд</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Чому ти платиш до того, як побачив карти</div>
   </a>
 </div>
 `.trim(),

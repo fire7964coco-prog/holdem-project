@@ -32,18 +32,18 @@ APPT(Asia Pacific Poker Tour)가 2019년 4월 이후 처음으로 한국에 돌�
 <div style="flex-shrink:0;width:36px;height:36px;border-radius:50%;background:rgba(239,68,68,0.2);display:flex;align-items:center;justify-content:center;font-size:18px;margin-top:2px">⚠️</div>
 <div>
 <div style="font-size:15px;font-weight:800;color:#ef4444;margin-bottom:10px">한국 국적자는 파라다이스 시티 카지노 입장 불가</div>
-<p style="font-size:14px;color:var(--foreground);line-height:1.7;margin:0 0 12px">파라다이스 시티(인천)는 관광진흥법에 따라 <strong>외국인 전용 카지노</strong>입니다. APPT 코리아도 동일 장소에서 열리므로 대한민국 국적자는 참가할 수 없습니다.</p>
+<p style="font-size:14px;color:hsl(var(--foreground));line-height:1.7;margin:0 0 12px">파라다이스 시티(인천)는 관광진흥법에 따라 <strong>외국인 전용 카지노</strong>입니다. APPT 코리아도 동일 장소에서 열리므로 대한민국 국적자는 참가할 수 없습니다.</p>
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:13px">
 <div style="padding:10px 14px;background:rgba(239,68,68,0.10);border-radius:8px;border:1px solid rgba(239,68,68,0.25)">
 <div style="font-weight:700;color:#ef4444;margin-bottom:4px">입장 불가</div>
-<div style="color:var(--muted-foreground)">대한민국 국적자 (국내 거주)</div>
+<div style="color:hsl(var(--muted-foreground))">대한민국 국적자 (국내 거주)</div>
 </div>
 <div style="padding:10px 14px;background:rgba(34,197,94,0.07);border-radius:8px;border:1px solid rgba(34,197,94,0.25)">
 <div style="font-weight:700;color:#22c55e;margin-bottom:4px">입장 가능</div>
-<div style="color:var(--muted-foreground)">외국 국적자 / 재외교포</div>
+<div style="color:hsl(var(--muted-foreground))">외국 국적자 / 재외교포</div>
 </div>
 </div>
-<p style="font-size:12px;color:var(--muted-foreground);margin:10px 0 0;line-height:1.6">재외교포는 한국 여권 + 영주권 카드(또는 이민확인서) 두 가지 모두 필요합니다. 자세한 입장 규정은 <a href="/blog/apt-incheon-2026-guide" style="color:var(--primary)">APT 인천 2026 가이드</a>를 참고하세요.</p>
+<p style="font-size:12px;color:hsl(var(--muted-foreground));margin:10px 0 0;line-height:1.6">재외교포는 한국 여권 + 영주권 카드(또는 이민확인서) 두 가지 모두 필요합니다. 자세한 입장 규정은 <a href="/blog/apt-incheon-2026-guide" style="color:hsl(var(--primary))">APT 인천 2026 가이드</a>를 참고하세요.</p>
 </div>
 </div>
 </div>
@@ -158,8 +158,8 @@ $0.50 Spin & Go(Step 1) → $1~$1.50(Step 2) → $11(Step 3) → Step 4 → Pass
 Power Path 위성 경로를 선택했다면 먼저 PokerStars 계정이 필요합니다.
 
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.3);border-radius:14px;padding:16px 20px;margin:16px 0">
-<div style="font-size:13px;font-weight:700;color:var(--primary);margin-bottom:8px">⚠️ 한국 거주자의 경우</div>
-<div style="font-size:13px;color:var(--muted-foreground);line-height:1.7">한국은 온라인 도박 규제 국가입니다. PokerStars는 한국에서 공식적으로 서비스를 제공하지 않으며, 접속이 제한될 수 있습니다. 한국 거주 외국인 또는 해외 거주자 기준으로 설명합니다.</div>
+<div style="font-size:13px;font-weight:700;color:hsl(var(--primary));margin-bottom:8px">⚠️ 한국 거주자의 경우</div>
+<div style="font-size:13px;color:hsl(var(--muted-foreground));line-height:1.7">한국은 온라인 도박 규제 국가입니다. PokerStars는 한국에서 공식적으로 서비스를 제공하지 않으며, 접속이 제한될 수 있습니다. 한국 거주 외국인 또는 해외 거주자 기준으로 설명합니다.</div>
 </div>
 
 **1. 공식 사이트 접속** — [www.pokerstars.com](https://www.pokerstars.com) → **"Create Account"** 클릭
@@ -176,10 +176,10 @@ Power Path 위성 경로를 선택했다면 먼저 PokerStars 계정이 필요�
 **4. KYC(본인 인증) — APPT 현장 수령 전 필수**
 
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.3);border-radius:14px;padding:16px 20px;margin:16px 0">
-<div style="font-size:13px;font-weight:700;color:var(--primary);margin-bottom:10px">KYC 진행 방법</div>
-<div style="font-size:13px;color:var(--muted-foreground);line-height:1.7">
-① 로그인 후 상단 <strong style="color:var(--foreground)">본인 아이디(username) 클릭</strong><br/>
-② <strong style="color:var(--foreground)">Stars Account Details</strong> 섹션 펼치기 → <strong style="color:var(--foreground)">Verify My Account</strong> 선택<br/>
+<div style="font-size:13px;font-weight:700;color:hsl(var(--primary));margin-bottom:10px">KYC 진행 방법</div>
+<div style="font-size:13px;color:hsl(var(--muted-foreground));line-height:1.7">
+① 로그인 후 상단 <strong style="color:hsl(var(--foreground))">본인 아이디(username) 클릭</strong><br/>
+② <strong style="color:hsl(var(--foreground))">Stars Account Details</strong> 섹션 펼치기 → <strong style="color:hsl(var(--foreground))">Verify My Account</strong> 선택<br/>
 ③ 여권, 운전면허증, 국가 ID 중 하나의 앞면 사진 업로드<br/>
 ④ 주소 증명 서류 (최근 3개월 이내 은행 명세서 또는 공과금 고지서)<br/>
 ⑤ 처리까지 보통 24~72시간 소요<br/>
@@ -251,8 +251,8 @@ APPT Korea 전용 위성이 로비에 언제 열리는지는 **PokerStars가 공
 - 사전 등록 플레이어는 등록 데스크에서 실물 티켓 수령 후 착석
 
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.3);border-radius:14px;padding:16px 20px;margin:16px 0">
-<div style="font-size:13px;font-weight:700;color:var(--primary);margin-bottom:8px">💳 현장 결제 수단 (APPT Korea 기준)</div>
-<div style="font-size:13px;color:var(--muted-foreground);line-height:1.7">
+<div style="font-size:13px;font-weight:700;color:hsl(var(--primary));margin-bottom:8px">💳 현장 결제 수단 (APPT Korea 기준)</div>
+<div style="font-size:13px;color:hsl(var(--muted-foreground));line-height:1.7">
 ✅ 현금(KRW) — 가능<br/>
 ✅ 카지노 칩 — 가능<br/>
 ✅ Stars Account 잔액 — 온라인 사전 등록 시 사용<br/>
@@ -307,15 +307,15 @@ APT 인천 2026 가이드에서 설명한 파라다이스 시티 체크인과 �
 ## 무엇을 챙겨가야 하나요?
 
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.3);border-radius:14px;padding:20px 24px;margin:24px 0">
-<div style="font-size:13px;font-weight:700;color:var(--primary);margin-bottom:14px">필수 서류</div>
+<div style="font-size:13px;font-weight:700;color:hsl(var(--primary));margin-bottom:14px">필수 서류</div>
 <div style="display:grid;gap:8px;font-size:13px">
-<div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.15);border:1.5px solid rgba(34,197,94,0.5);flex-shrink:0;display:flex;align-items:center;justify-content:center;color:#22c55e;font-size:11px">✓</span><span><strong style="color:var(--foreground)">여권 실물</strong> — 사진·사본 절대 불가. 반드시 원본</span></div>
-<div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.15);border:1.5px solid rgba(34,197,94,0.5);flex-shrink:0;display:flex;align-items:center;justify-content:center;color:#22c55e;font-size:11px">✓</span><span><strong style="color:var(--foreground)">만 19세 이상</strong> — 카지노 입장 나이 기준</span></div>
+<div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.15);border:1.5px solid rgba(34,197,94,0.5);flex-shrink:0;display:flex;align-items:center;justify-content:center;color:#22c55e;font-size:11px">✓</span><span><strong style="color:hsl(var(--foreground))">여권 실물</strong> — 사진·사본 절대 불가. 반드시 원본</span></div>
+<div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.15);border:1.5px solid rgba(34,197,94,0.5);flex-shrink:0;display:flex;align-items:center;justify-content:center;color:#22c55e;font-size:11px">✓</span><span><strong style="color:hsl(var(--foreground))">만 19세 이상</strong> — 카지노 입장 나이 기준</span></div>
 <div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.15);border:1.5px solid rgba(34,197,94,0.5);flex-shrink:0;display:flex;align-items:center;justify-content:center;color:#22c55e;font-size:11px">✓</span><span>PokerStars 사전 등록 확인 이메일 (사전 등록자)</span></div>
-<div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(255,150,0,0.15);border:1.5px solid rgba(255,150,0,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;color:#ff9600;font-size:11px">!</span><span><strong style="color:var(--foreground)">재외교포인 경우</strong> — 영주권 카드 또는 이민확인서 추가 지참</span></div>
+<div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(255,150,0,0.15);border:1.5px solid rgba(255,150,0,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;color:#ff9600;font-size:11px">!</span><span><strong style="color:hsl(var(--foreground))">재외교포인 경우</strong> — 영주권 카드 또는 이민확인서 추가 지참</span></div>
 </div>
 
-<div style="font-size:13px;font-weight:700;color:var(--primary);margin:18px 0 14px">현장 준비물</div>
+<div style="font-size:13px;font-weight:700;color:hsl(var(--primary));margin:18px 0 14px">현장 준비물</div>
 <div style="display:grid;gap:8px;font-size:13px">
 <div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.15);border:1.5px solid rgba(34,197,94,0.5);flex-shrink:0;display:flex;align-items:center;justify-content:center;color:#22c55e;font-size:11px">✓</span><span>현금(KRW) 또는 Stars Account 충전 확인</span></div>
 <div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.15);border:1.5px solid rgba(34,197,94,0.5);flex-shrink:0;display:flex;align-items:center;justify-content:center;color:#22c55e;font-size:11px">✓</span><span>편한 복장 — 슬리퍼, 잠옷 입장 불가</span></div>
@@ -370,24 +370,24 @@ A. PokerStars Live 현장 문의: +82-10-4194-6121 / 이메일: manila@pokerstar
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/blog/pokerstars-appt-satellite-guide" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">심화</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">PokerStars APPT 위성 단계별 가이드</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Power Path $0.50 → APPT 시트 실전 경로</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">심화</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">PokerStars APPT 위성 단계별 가이드</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Power Path $0.50 → APPT 시트 실전 경로</div>
   </a>
   <a href="/blog/apt-incheon-2026-guide" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">시리즈 1편</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">APT 인천 2026 참가 가이드</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Natural8 위성 · 8월 7~16일</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">시리즈 1편</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">APT 인천 2026 참가 가이드</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Natural8 위성 · 8월 7~16일</div>
   </a>
   <a href="/tournaments" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">필라</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">2026 홀덤 대회 일정 전체</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">국내외 20개+ 일정 한눈에</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">필라</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">2026 홀덤 대회 일정 전체</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">국내외 20개+ 일정 한눈에</div>
   </a>
   <a href="/blog/holdem-tournament-how-to-enter" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">가이드</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">홀덤 대회 참가 방법</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">온라인 무료 → WSOP 단계별</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">가이드</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">홀덤 대회 참가 방법</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">온라인 무료 → WSOP 단계별</div>
   </a>
 </div>
 `.trim(),

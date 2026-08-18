@@ -200,19 +200,19 @@ Bago sa laro sa kabuuan? Ang [beginner's guide sa Texas Hold'em rules](/fil/blog
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/fil/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Betting Actions</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Check, bet, call, raise at fold, ipinaliwanag</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Ang limang betting action at kung kailan gamitin ang bawat isa</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Betting Actions</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Check, bet, call, raise at fold, ipinaliwanag</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Ang limang betting action at kung kailan gamitin ang bawat isa</div>
   </a>
   <a href="/fil/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Order of Play</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Order of Play sa Texas Hold'em</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Action sequence: preflop → flop → turn → river</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Order of Play</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Order of Play sa Texas Hold'em</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Action sequence: preflop → flop → turn → river</div>
   </a>
   <a href="/fil/blog/holdem-showdown-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Showdown</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Showdown rules at sino ang unang magpapakita</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Sino ang unang magpapakita at paano hinahati ang pot</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Showdown</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Showdown rules at sino ang unang magpapakita</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Sino ang unang magpapakita at paano hinahati ang pot</div>
   </a>
 </div>
 `.trim(),

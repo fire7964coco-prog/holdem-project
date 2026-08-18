@@ -317,24 +317,24 @@ Guarda esta página en marcadores y vuelve siempre que una palabra te haga trope
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/es/blog/holdem-fish" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Glosario</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">¿Qué es un fish?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Los tipos de jugador, descifrados</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Glosario</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">¿Qué es un fish?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Los tipos de jugador, descifrados</div>
   </a>
   <a href="/es/blog/holdem-cooler" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Glosario</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Cooler vs Bad Beat</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Las dos derrotas que todos confunden</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Glosario</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Cooler vs Bad Beat</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Las dos derrotas que todos confunden</div>
   </a>
   <a href="/es/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Reglas</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Acciones de apuesta</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Pasar, apostar, igualar, subir, retirarse</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Reglas</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Acciones de apuesta</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Pasar, apostar, igualar, subir, retirarse</div>
   </a>
   <a href="/es/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Jerarquía de manos</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Qué gana a qué</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">El orden completo de las manos</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Jerarquía de manos</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Qué gana a qué</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">El orden completo de las manos</div>
   </a>
 </div>
 `.trim(),

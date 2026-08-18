@@ -197,24 +197,24 @@ A. 對多數牌手來說，不划算——它是一個 -EV 的打法。你盲投
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/zh-hant/blog/holdem-blind-meaning" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">規則</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">德州撲克大盲小盲是什麼？</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">盲抓就是疊在大小盲上的那注</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">規則</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">德州撲克大盲小盲是什麼？</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">盲抓就是疊在大小盲上的那注</div>
   </a>
   <a href="/zh-hant/blog/holdem-position-play" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">策略</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">位置怎麼改變整場牌局</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">盲抓的位置比它的大小更重要</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">策略</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">位置怎麼改變整場牌局</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">盲抓的位置比它的大小更重要</div>
   </a>
   <a href="/zh-hant/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">規則</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">下注動作：過牌、跟注、加注</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">盲抓重設價錢後，動作怎麼走</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">規則</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">下注動作：過牌、跟注、加注</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">盲抓重設價錢後，動作怎麼走</div>
   </a>
   <a href="/zh-hant/blog/holdem-3bet" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">策略</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">3-bet 隔離加注施壓</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">盲抓者範圍偏鬆，用隔離加注反制</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">策略</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">3-bet 隔離加注施壓</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">盲抓者範圍偏鬆，用隔離加注反制</div>
   </a>
 </div>
 `.trim(),

@@ -409,34 +409,34 @@ A. はい。エースは高くも低くも使えるので、A-2-3-4-5(「ホイ�
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/ja/blog/holdem-flush-vs-straight" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">役の対決</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">フラッシュとストレート、どっちが強い?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">確率・誤読・すべての引き分けルール</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">役の対決</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">フラッシュとストレート、どっちが強い?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">確率・誤読・すべての引き分けルール</div>
   </a>
   <a href="/ja/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">引き分け</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">キッカーと引き分けのルール</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">同じペア、勝つのはどっち? キッカーとスプリット</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">引き分け</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">キッカーと引き分けのルール</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">同じペア、勝つのはどっち? キッカーとスプリット</div>
   </a>
   <a href="/ja/blog/holdem-split-pot-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">スプリットポット</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ポットを分けるのはどんなとき?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">チョップのルールと引き分け5パターン</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">スプリットポット</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ポットを分けるのはどんなとき?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">チョップのルールと引き分け5パターン</div>
   </a>
   <a href="/ja/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">初心者ガイド</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">テキサスホールデムのルール(初心者向け)</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">配りからショーダウンまでの完全ルール</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">初心者ガイド</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">テキサスホールデムのルール(初心者向け)</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">配りからショーダウンまでの完全ルール</div>
   </a>
   <a href="/ja/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">スターティングハンド</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ポジション別スターティングハンド表</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">UTGからボタンまで、どのホールカードを打つか</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">スターティングハンド</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ポジション別スターティングハンド表</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">UTGからボタンまで、どのホールカードを打つか</div>
   </a>
   <a href="/ja/blog/holdem-reading-the-board" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">ボードの読み方</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ホールデムでボードを読む方法</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">7枚からベスト5枚を探す — ウェット vs ドライ</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">ボードの読み方</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ホールデムでボードを読む方法</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">7枚からベスト5枚を探す — ウェット vs ドライ</div>
   </a>
 </div>
 `.trim(),

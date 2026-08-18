@@ -449,29 +449,29 @@ A. יד אחת בשולחן חי לוקחת בדרך כלל בערך 30 שניו
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/he/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">מהלך המשחק</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">סדר מהלך המשחק בטקסס הולדם</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">מהלך יד שלם — מהפרה-פלופ ועד השואודאון עם דוגמאות אמיתיות</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">מהלך המשחק</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">סדר מהלך המשחק בטקסס הולדם</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">מהלך יד שלם — מהפרה-פלופ ועד השואודאון עם דוגמאות אמיתיות</div>
   </a>
   <a href="/he/blog/holdem-blind-meaning" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">בליינדים</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">סמול בליינד וביג בליינד — למה משלמים לפני הקלפים</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">כל 10 הידיים עם הסתברויות, דוגמאות וחידות בורד</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">בליינדים</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">סמול בליינד וביג בליינד — למה משלמים לפני הקלפים</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">כל 10 הידיים עם הסתברויות, דוגמאות וחידות בורד</div>
   </a>
   <a href="/he/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">הימורים</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">צ'ק, קול, רייז, פולד — הסבר</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">מתי להשתמש בכל פעולה + טבלת החלטות</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">הימורים</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">צ'ק, קול, רייז, פולד — הסבר</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">מתי להשתמש בכל פעולה + טבלת החלטות</div>
   </a>
   <a href="/he/blog/holdem-showdown-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">שואודאון</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">חוקי שואודאון: מי חושף קלפים ראשון?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">התוקף האחרון, זריקת קלפים בלי חשיפה, סלואו רול וחוקי אול-אין</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">שואודאון</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">חוקי שואודאון: מי חושף קלפים ראשון?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">התוקף האחרון, זריקת קלפים בלי חשיפה, סלואו רול וחוקי אול-אין</div>
   </a>
   <a href="/he/blog/holdem-all-in-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">אול-אין</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">חוקי אול-אין: קופות צדדיות והעלאות חוזרות</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">קופה ראשית, קופה צדדית וזכאות להעלאה חוזרת</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">אול-אין</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">חוקי אול-אין: קופות צדדיות והעלאות חוזרות</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">קופה ראשית, קופה צדדית וזכאות להעלאה חוזרת</div>
   </a>
 </div>
 `.trim(),

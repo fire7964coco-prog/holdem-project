@@ -449,29 +449,29 @@ A. اليد الواحدة على طاولة حية تستغرق عادةً من
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/ar/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">سير اللعب</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ترتيب سير اللعب في تكساس هولدم</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">سير اليد كاملاً — من ما قبل الفلوب إلى المواجهة مع أمثلة حقيقية</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">سير اللعب</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ترتيب سير اللعب في تكساس هولدم</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">سير اليد كاملاً — من ما قبل الفلوب إلى المواجهة مع أمثلة حقيقية</div>
   </a>
   <a href="/ar/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">ترتيب الأيدي</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ترتيب أيدي البوكر — من الأفضل إلى الأسوأ</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">الأيدي العشر كلها مع الاحتمالات والأمثلة وألغاز البورد</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">ترتيب الأيدي</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ترتيب أيدي البوكر — من الأفضل إلى الأسوأ</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">الأيدي العشر كلها مع الاحتمالات والأمثلة وألغاز البورد</div>
   </a>
   <a href="/ar/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">الرهان</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">شرح التمرير والمجاراة والرفع والطي</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">متى تستخدم كل إجراء + جدول قرارات</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">الرهان</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">شرح التمرير والمجاراة والرفع والطي</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">متى تستخدم كل إجراء + جدول قرارات</div>
   </a>
   <a href="/ar/blog/holdem-showdown-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">المواجهة</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">قواعد المواجهة: من يكشف أوراقه أولاً؟</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">آخر مهاجم، وطي الأوراق دون كشفها، والكشف البطيء، وقواعد الأول إن</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">المواجهة</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">قواعد المواجهة: من يكشف أوراقه أولاً؟</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">آخر مهاجم، وطي الأوراق دون كشفها، والكشف البطيء، وقواعد الأول إن</div>
   </a>
   <a href="/ar/blog/holdem-all-in-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">أول إن</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">قواعد الأول إن: البوتات الجانبية وإعادة الرفع</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">البوت الرئيسي والبوت الجانبي وأهلية إعادة الرفع</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">أول إن</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">قواعد الأول إن: البوتات الجانبية وإعادة الرفع</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">البوت الرئيسي والبوت الجانبي وأهلية إعادة الرفع</div>
   </a>
 </div>
 `.trim(),

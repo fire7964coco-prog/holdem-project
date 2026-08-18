@@ -200,19 +200,19 @@ A. نه دقیقاً — «بلایندها» به بلایند کوچک و بز
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/fa/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">اکشن‌های شرط</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">چک، بت، کال، ریز و فولد</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">پنج اکشن شرط‌بندی و اینکه هرکدام را کِی به‌کار ببرید</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">اکشن‌های شرط</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">چک، بت، کال، ریز و فولد</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">پنج اکشن شرط‌بندی و اینکه هرکدام را کِی به‌کار ببرید</div>
   </a>
   <a href="/fa/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">ترتیب بازی</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ترتیب بازی در تگزاس هولدم</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">توالی دور: پری‌فلاپ ← فلاپ ← ترن ← ریور</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">ترتیب بازی</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ترتیب بازی در تگزاس هولدم</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">توالی دور: پری‌فلاپ ← فلاپ ← ترن ← ریور</div>
   </a>
   <a href="/fa/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">قوانین پایه</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">قوانین تگزاس هولدم برای مبتدیان</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">از پخش کارت تا شودان، همه‌چیز از صفر</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">قوانین پایه</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">قوانین تگزاس هولدم برای مبتدیان</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">از پخش کارت تا شودان، همه‌چیز از صفر</div>
   </a>
 </div>
 `.trim(),

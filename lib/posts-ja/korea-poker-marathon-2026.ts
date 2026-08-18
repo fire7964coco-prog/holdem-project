@@ -34,8 +34,8 @@ export const POST: Post = {
 
 <div style="display:flex;align-items:flex-start;gap:16px;margin:20px 0">
   <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-marathon-record.webp" alt="2026高陽ハーフマラソンの公式リザルトカード — チップタイム1:51:10、男子ハーフ部門" width="600" height="899" sizes="160px" style="width:160px;flex-shrink:0;border-radius:8px" />
-  <div style="font-size:14px;line-height:1.7;color:var(--muted-foreground)">
-    <strong style="display:block;margin-bottom:6px;color:var(--foreground)">自己記録 — 2026高陽ハーフマラソン</strong>
+  <div style="font-size:14px;line-height:1.7;color:hsl(var(--muted-foreground))">
+    <strong style="display:block;margin-bottom:6px;color:hsl(var(--foreground))">自己記録 — 2026高陽ハーフマラソン</strong>
     チップタイム: <strong>1:51:10</strong> · 男子ハーフ部門 · ゼッケン5448<br />
     韓国のレース運営は驚くほど洗練されています——公式チップタイム、その場で発行されるデジタルのリザルトカード、リアルタイムのトラッキング。外国人ランナーも地元選手とまったく同じ体験ができます。
   </div>
@@ -201,10 +201,10 @@ export const POST: Post = {
 <table style="width:100%;border-collapse:collapse;font-size:14px;line-height:1.5">
   <thead>
     <tr style="border-bottom:2px solid rgba(255,255,255,0.12)">
-      <th style="text-align:left;padding:10px 14px;color:var(--muted-foreground);font-weight:600;white-space:nowrap;width:160px">日程</th>
-      <th style="text-align:left;padding:10px 14px;color:var(--muted-foreground);font-weight:600">トーナメント</th>
-      <th style="text-align:left;padding:10px 14px;color:var(--muted-foreground);font-weight:600">会場</th>
-      <th style="text-align:left;padding:10px 14px;color:var(--muted-foreground);font-weight:600">主な情報</th>
+      <th style="text-align:left;padding:10px 14px;color:hsl(var(--muted-foreground));font-weight:600;white-space:nowrap;width:160px">日程</th>
+      <th style="text-align:left;padding:10px 14px;color:hsl(var(--muted-foreground));font-weight:600">トーナメント</th>
+      <th style="text-align:left;padding:10px 14px;color:hsl(var(--muted-foreground));font-weight:600">会場</th>
+      <th style="text-align:left;padding:10px 14px;color:hsl(var(--muted-foreground));font-weight:600">主な情報</th>
     </tr>
   </thead>
   <tbody>
@@ -212,19 +212,19 @@ export const POST: Post = {
       <td style="padding:10px 14px;font-weight:700;white-space:nowrap">9/25 – 10/7</td>
       <td style="padding:10px 14px"><strong>APT済州 2026</strong></td>
       <td style="padding:10px 14px">LES A カジノ、済州</td>
-      <td style="padding:10px 14px;color:var(--muted-foreground)">$3.5M+ 総GTD · 136イベント · 春川マラソンの18日前に終了</td>
+      <td style="padding:10px 14px;color:hsl(var(--muted-foreground))">$3.5M+ 総GTD · 136イベント · 春川マラソンの18日前に終了</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.07);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:10px 14px;font-weight:700;white-space:nowrap">10/30 – 11/8</td>
-      <td style="padding:10px 14px"><strong>GOP仁川<br/><span style="font-size:12px;color:var(--muted-foreground)">The Labyrinth Trail</span></strong></td>
+      <td style="padding:10px 14px"><strong>GOP仁川<br/><span style="font-size:12px;color:hsl(var(--muted-foreground))">The Labyrinth Trail</span></strong></td>
       <td style="padding:10px 14px">パラダイスシティ、仁川</td>
       <td style="padding:10px 14px"><span style="background:rgba(239,68,68,0.15);color:#f87171;padding:2px 7px;border-radius:4px;font-size:12px;font-weight:600">⚡ JTBCマラソン11/1 = この大会のDay 3</span></td>
     </tr>
     <tr style="background:rgba(212,175,55,0.07);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:10px 14px;font-weight:700;white-space:nowrap">12月 2026(未定)</td>
-      <td style="padding:10px 14px"><strong>AJPC サムライサーキット<br/><span style="font-size:12px;color:var(--muted-foreground)">仁川 2026 III</span></strong></td>
+      <td style="padding:10px 14px"><strong>AJPC サムライサーキット<br/><span style="font-size:12px;color:hsl(var(--muted-foreground))">仁川 2026 III</span></strong></td>
       <td style="padding:10px 14px">パラダイスシティ、仁川</td>
-      <td style="padding:10px 14px;color:var(--muted-foreground)">年末の選択肢 · スケジュール未定(TBA)</td>
+      <td style="padding:10px 14px;color:hsl(var(--muted-foreground))">年末の選択肢 · スケジュール未定(TBA)</td>
     </tr>
   </tbody>
 </table>
@@ -293,10 +293,10 @@ export const POST: Post = {
 <table style="width:100%;border-collapse:collapse;font-size:13px;line-height:1.5">
   <thead>
     <tr style="border-bottom:2px solid rgba(255,255,255,0.12)">
-      <th style="text-align:left;padding:9px 12px;color:var(--muted-foreground);font-weight:600;white-space:nowrap">日程</th>
-      <th style="text-align:left;padding:9px 12px;color:var(--muted-foreground);font-weight:600">イベント</th>
-      <th style="text-align:left;padding:9px 12px;color:var(--muted-foreground);font-weight:600">会場</th>
-      <th style="text-align:left;padding:9px 12px;color:var(--muted-foreground);font-weight:600">詳細</th>
+      <th style="text-align:left;padding:9px 12px;color:hsl(var(--muted-foreground));font-weight:600;white-space:nowrap">日程</th>
+      <th style="text-align:left;padding:9px 12px;color:hsl(var(--muted-foreground));font-weight:600">イベント</th>
+      <th style="text-align:left;padding:9px 12px;color:hsl(var(--muted-foreground));font-weight:600">会場</th>
+      <th style="text-align:left;padding:9px 12px;color:hsl(var(--muted-foreground));font-weight:600">詳細</th>
     </tr>
   </thead>
   <tbody>
@@ -304,37 +304,37 @@ export const POST: Post = {
       <td style="padding:8px 12px;white-space:nowrap">5/15–24</td>
       <td style="padding:8px 12px">🃏 GOP仁川 2026 <em>(終了)</em></td>
       <td style="padding:8px 12px">パラダイスシティ、仁川</td>
-      <td style="padding:8px 12px;color:var(--muted-foreground)">終了済み</td>
+      <td style="padding:8px 12px;color:hsl(var(--muted-foreground))">終了済み</td>
     </tr>
     <tr style="opacity:0.5;border-bottom:1px solid rgba(255,255,255,0.05)">
       <td style="padding:8px 12px;white-space:nowrap">5/15–25</td>
       <td style="padding:8px 12px">🃏 TLPT済州 2026 <em>(終了)</em></td>
       <td style="padding:8px 12px">LES A カジノ、済州</td>
-      <td style="padding:8px 12px;color:var(--muted-foreground)">終了済み</td>
+      <td style="padding:8px 12px;color:hsl(var(--muted-foreground))">終了済み</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">8/7–16</td>
       <td style="padding:9px 12px">🃏 <strong>APT仁川 2026</strong></td>
       <td style="padding:9px 12px">パラダイスシティ、仁川</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">$2.7M GTD · メインイベント $1M GTD</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">$2.7M GTD · メインイベント $1M GTD</td>
     </tr>
     <tr style="background:rgba(34,197,94,0.05);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">9/6</td>
       <td style="padding:9px 12px">🏃 YTNソウルツアーマラソン</td>
       <td style="padding:9px 12px">ソウル広場</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">11KM · ハーフ · 7:30 · 受付終了</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">11KM · ハーフ · 7:30 · 受付終了</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">9/25–10/7</td>
       <td style="padding:9px 12px">🃏 <strong>APT済州 2026</strong></td>
       <td style="padding:9px 12px">LES A カジノ、済州</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">$3.5M+ GTD · 136イベント · 春川まで18日</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">$3.5M+ GTD · 136イベント · 春川まで18日</td>
     </tr>
     <tr style="background:rgba(34,197,94,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">10/25(日)</td>
       <td style="padding:9px 12px">🏃 <strong>春川マラソン</strong></td>
       <td style="padding:9px 12px">孔之川、春川</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">フル · 10K · 9:00 · 受付7/14</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">フル · 10K · 9:00 · 受付7/14</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">10/30–11/8</td>
@@ -352,19 +352,19 @@ export const POST: Post = {
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">11/15(日)</td>
       <td style="padding:9px 12px">🏃 ガーミンラン韓国</td>
       <td style="padding:9px 12px">高陽総合運動場</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">ハーフ · 10K · 8:00 · 受付7/1〜3</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">ハーフ · 10K · 8:00 · 受付7/1〜3</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">12月(未定)</td>
       <td style="padding:9px 12px">🃏 AJPC サムライサーキット III</td>
       <td style="padding:9px 12px">パラダイスシティ、仁川</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">スケジュール未定(TBA)</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">スケジュール未定(TBA)</td>
     </tr>
     <tr style="border-top:1px solid rgba(255,255,255,0.08)">
-      <td style="padding:9px 12px;color:var(--muted-foreground)">通年</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">通年</td>
       <td style="padding:9px 12px">🃏 キャッシュゲーム(NLHE)</td>
       <td style="padding:9px 12px">パラダイスシティ、仁川</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">24時間営業 · 外国人専用</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">24時間営業 · 外国人専用</td>
     </tr>
   </tbody>
 </table>
@@ -429,11 +429,11 @@ export const POST: Post = {
 <div style="display:flex;gap:12px;margin:18px 0;flex-wrap:wrap">
   <div style="flex:1;min-width:240px">
     <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-hangang1.webp" alt="漢江公園のサイクリング・ランニングロード — 手前のベンチにカップル、リバーサイドを走る自転車と歩行者、対岸にソウルのスカイライン" width="650" height="867" sizes="(max-width: 520px) 100vw, 330px" style="width:100%;border-radius:8px;display:block" />
-    <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">汝矣島漢江公園 — ランナーに最も人気の区間。平坦で幅広く、車道と交わらず、24時間開放。</p>
+    <p style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:6px;text-align:center">汝矣島漢江公園 — ランナーに最も人気の区間。平坦で幅広く、車道と交わらず、24時間開放。</p>
   </div>
   <div style="flex:1;min-width:240px">
     <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-hangang2.webp" alt="漢江公園の並木のランニングロード — リバーサイドトレイルを走るジョガーとサイクリスト、対岸のマンション群" width="560" height="700" sizes="(max-width: 520px) 100vw, 330px" style="width:100%;border-radius:8px;display:block" />
-    <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">リバーサイドの道は両方向に何キロも続きます — 地元の人の日々のランニング、サイクリング、早朝の散歩に使われています。</p>
+    <p style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:6px;text-align:center">リバーサイドの道は両方向に何キロも続きます — 地元の人の日々のランニング、サイクリング、早朝の散歩に使われています。</p>
   </div>
 </div>
 
@@ -459,11 +459,11 @@ export const POST: Post = {
 <div style="display:flex;gap:12px;margin:18px 0;flex-wrap:wrap">
   <div style="flex:1;min-width:200px">
     <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-ramen-machine.webp" alt="GS25コンビニにある漢江ラーメンの調理マシン — 紙容器のインスタント麺用の自動給湯機" width="525" height="700" sizes="(max-width: 520px) 100vw, 330px" style="width:100%;height:280px;object-fit:cover;border-radius:8px;display:block" />
-    <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">公園のコンビニにあるマシン。バーコード付きの容器をスキャンしてスタートを押すだけ、あとはマシンにおまかせ。マシンの使用は無料。</p>
+    <p style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:6px;text-align:center">公園のコンビニにあるマシン。バーコード付きの容器をスキャンしてスタートを押すだけ、あとはマシンにおまかせ。マシンの使用は無料。</p>
   </div>
   <div style="flex:1;min-width:200px">
     <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-ramen.webp" alt="漢江ラーメンの一杯 — 紙容器の辛ラーメンに卵をのせて、川辺で食べる" width="700" height="525" sizes="(max-width: 520px) 100vw, 330px" style="width:100%;height:280px;object-fit:cover;border-radius:8px;display:block" />
-    <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">完成。漢江のほとりで、卵入りの熱々の辛ラーメン。合計₩4,000〜5,000(約$3)。ソウルで最高のラン後の一杯かもしれません。</p>
+    <p style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:6px;text-align:center">完成。漢江のほとりで、卵入りの熱々の辛ラーメン。合計₩4,000〜5,000(約$3)。ソウルで最高のラン後の一杯かもしれません。</p>
   </div>
 </div>
 
@@ -547,19 +547,19 @@ A. 高陽総合運動場は韓国最大級のコンサート会場の一つで�
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/ja/blog/apt-incheon-2026-guide" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">トーナメント</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">APT仁川2026ガイド</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">8/7〜16、パラダイスシティ・カジノ · $2.7M GTD</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">トーナメント</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">APT仁川2026ガイド</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">8/7〜16、パラダイスシティ・カジノ · $2.7M GTD</div>
   </a>
   <a href="/ja/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">基礎</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ポーカートーナメントの仕組み</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">バイイン、ブラインド、サテライトと初参加チェックリスト</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">基礎</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ポーカートーナメントの仕組み</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">バイイン、ブラインド、サテライトと初参加チェックリスト</div>
   </a>
   <a href="/ja/blog/wpt-australia-2026-guide" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">アジア太平洋</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">WPTオーストラリア2026ガイド</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">The Star Sydney — 9/10〜30</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">アジア太平洋</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">WPTオーストラリア2026ガイド</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">The Star Sydney — 9/10〜30</div>
   </a>
 </div>
 `.trim(),

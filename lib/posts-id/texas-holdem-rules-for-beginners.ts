@@ -448,34 +448,34 @@ Sebagai langkah berikutnya, ulas [peringkat kartu Texas Hold'em](/id/blog/holdem
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/id/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Alur Permainan</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Urutan Main Texas Hold'em</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Alur tangan lengkap — dari preflop sampai showdown dengan contoh nyata</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Alur Permainan</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Urutan Main Texas Hold'em</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Alur tangan lengkap — dari preflop sampai showdown dengan contoh nyata</div>
   </a>
   <a href="/id/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Peringkat Kartu</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Peringkat Kartu Poker — Terbaik sampai Terburuk</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Semua 10 tangan dengan peluang, contoh, dan teka-teki board</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Peringkat Kartu</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Peringkat Kartu Poker — Terbaik sampai Terburuk</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Semua 10 tangan dengan peluang, contoh, dan teka-teki board</div>
   </a>
   <a href="/id/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Posisi</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Posisi Poker: UTG sampai Button</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Kenapa button menang — peta kursi dan opening range</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Posisi</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Posisi Poker: UTG sampai Button</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Kenapa button menang — peta kursi dan opening range</div>
   </a>
   <a href="/id/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Taruhan</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Cek, Call, Raise, Fold Dijelaskan</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Kapan memakai tiap aksi + tabel keputusan</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Taruhan</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Cek, Call, Raise, Fold Dijelaskan</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Kapan memakai tiap aksi + tabel keputusan</div>
   </a>
   <a href="/id/blog/holdem-showdown-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Showdown</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Aturan Showdown: Siapa Buka Kartu Duluan?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Agresor terakhir, muck, slow roll, dan aturan all-in</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Showdown</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Aturan Showdown: Siapa Buka Kartu Duluan?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Agresor terakhir, muck, slow roll, dan aturan all-in</div>
   </a>
   <a href="/id/blog/holdem-all-in-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">All-In</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Aturan All-In: Side Pot & Re-raise</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Pot utama, side pot, dan siapa yang boleh re-raise</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">All-In</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Aturan All-In: Side Pot & Re-raise</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Pot utama, side pot, dan siapa yang boleh re-raise</div>
   </a>
 </div>
 `.trim(),

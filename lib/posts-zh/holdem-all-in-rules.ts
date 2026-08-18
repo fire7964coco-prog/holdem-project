@@ -285,19 +285,19 @@ A. 核心规则相同，但有两个实际差异。第一，锦标赛中，全�
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/zh/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">支柱指南</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">德州扑克新手规则入门</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">从盲注到摊牌的完整规则</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">支柱指南</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">德州扑克新手规则入门</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">从盲注到摊牌的完整规则</div>
   </a>
   <a href="/zh/blog/holdem-split-pot-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">分池</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">分池与平分规则</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">底池什么时候平分、为什么</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">分池</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">分池与平分规则</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">底池什么时候平分、为什么</div>
   </a>
   <a href="/zh/blog/holdem-showdown-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">摊牌</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">摊牌规则</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">谁先亮牌、什么时候可以不亮</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">摊牌</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">摊牌规则</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">谁先亮牌、什么时候可以不亮</div>
   </a>
 </div>
 `.trim(),

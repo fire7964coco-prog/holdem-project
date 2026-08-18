@@ -218,24 +218,24 @@ A. 是的。在现金局你随时可以补码或加买到满码，而且通常�
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/zh/blog/holdem-bubble" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">锦标赛</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">泡沫圈该怎么打</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">你的短码推在哪里最要紧</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">锦标赛</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">泡沫圈该怎么打</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">你的短码推在哪里最要紧</div>
   </a>
   <a href="/zh/blog/holdem-icm" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">锦标赛</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ICM 详解</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">为什么生存能胜过筹码</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">锦标赛</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ICM 详解</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">为什么生存能胜过筹码</div>
   </a>
   <a href="/zh/blog/holdem-when-to-fold" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">策略</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">什么时候该弃牌</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">什么价格下该弃牌</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">策略</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">什么时候该弃牌</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">什么价格下该弃牌</div>
   </a>
   <a href="/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">免费工具</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ICM 计算器</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">算出你真实的推/跟位置</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">免费工具</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ICM 计算器</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">算出你真实的推/跟位置</div>
   </a>
 </div>
 `.trim(),

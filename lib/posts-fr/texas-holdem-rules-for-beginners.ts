@@ -449,24 +449,24 @@ Pour la suite, entraîne-toi avec le [tableau des mains de départ](/hand-chart)
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/fr/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Déroulé du jeu</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">L'ordre de jeu au Texas Hold'em</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Le déroulé complet d'une main — du pré-flop à l'abattage avec de vrais exemples</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Déroulé du jeu</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">L'ordre de jeu au Texas Hold'em</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Le déroulé complet d'une main — du pré-flop à l'abattage avec de vrais exemples</div>
   </a>
   <a href="/fr/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Enchères</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Checker, suivre, relancer, se coucher expliqués</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Quand utiliser chaque action + tableau de décisions</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Enchères</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Checker, suivre, relancer, se coucher expliqués</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Quand utiliser chaque action + tableau de décisions</div>
   </a>
   <a href="/fr/blog/holdem-showdown-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Abattage</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Règles de l'abattage : qui montre en premier ?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Dernier agresseur, muck, slow roll et règles du tapis</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Abattage</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Règles de l'abattage : qui montre en premier ?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Dernier agresseur, muck, slow roll et règles du tapis</div>
   </a>
   <a href="/fr/blog/holdem-all-in-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Tapis</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Règles du tapis : pots annexes et sur-relances</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Pot principal, pot annexe et qui peut sur-relancer</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Tapis</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Règles du tapis : pots annexes et sur-relances</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Pot principal, pot annexe et qui peut sur-relancer</div>
   </a>
 </div>
 `.trim(),

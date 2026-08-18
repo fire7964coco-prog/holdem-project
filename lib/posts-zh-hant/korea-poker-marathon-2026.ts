@@ -34,8 +34,8 @@ export const POST: Post = {
 
 <div style="display:flex;align-items:flex-start;gap:16px;margin:20px 0">
   <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-marathon-record.webp" alt="2026 高陽半程馬拉松官方成績卡——晶片時間 1:51:10，男子半馬組" width="600" height="899" sizes="160px" style="width:160px;flex-shrink:0;border-radius:8px" />
-  <div style="font-size:14px;line-height:1.7;color:var(--muted-foreground)">
-    <strong style="display:block;margin-bottom:6px;color:var(--foreground)">個人紀錄——2026 高陽半程馬拉松</strong>
+  <div style="font-size:14px;line-height:1.7;color:hsl(var(--muted-foreground))">
+    <strong style="display:block;margin-bottom:6px;color:hsl(var(--foreground))">個人紀錄——2026 高陽半程馬拉松</strong>
     晶片時間：<strong>1:51:10</strong> · 男子半馬組 · 號碼布 5448<br />
     韓國的賽事籌辦意外地精緻——官方晶片時間、即時發放的數位成績卡、還有實時追蹤。外國跑者拿到的體驗和當地人完全一樣。
   </div>
@@ -172,10 +172,10 @@ export const POST: Post = {
 <table style="width:100%;border-collapse:collapse;font-size:14px;line-height:1.5">
   <thead>
     <tr style="border-bottom:2px solid rgba(255,255,255,0.12)">
-      <th style="text-align:left;padding:10px 14px;color:var(--muted-foreground);font-weight:600;white-space:nowrap;width:160px">日期</th>
-      <th style="text-align:left;padding:10px 14px;color:var(--muted-foreground);font-weight:600">錦標賽</th>
-      <th style="text-align:left;padding:10px 14px;color:var(--muted-foreground);font-weight:600">場館</th>
-      <th style="text-align:left;padding:10px 14px;color:var(--muted-foreground);font-weight:600">重點資訊</th>
+      <th style="text-align:left;padding:10px 14px;color:hsl(var(--muted-foreground));font-weight:600;white-space:nowrap;width:160px">日期</th>
+      <th style="text-align:left;padding:10px 14px;color:hsl(var(--muted-foreground));font-weight:600">錦標賽</th>
+      <th style="text-align:left;padding:10px 14px;color:hsl(var(--muted-foreground));font-weight:600">場館</th>
+      <th style="text-align:left;padding:10px 14px;color:hsl(var(--muted-foreground));font-weight:600">重點資訊</th>
     </tr>
   </thead>
   <tbody>
@@ -183,19 +183,19 @@ export const POST: Post = {
       <td style="padding:10px 14px;font-weight:700;white-space:nowrap">9/25 – 10/7</td>
       <td style="padding:10px 14px"><strong>APT 濟州 2026</strong></td>
       <td style="padding:10px 14px">LES A Casino，濟州</td>
-      <td style="padding:10px 14px;color:var(--muted-foreground)">總保證獎池 $3.5M+ · 136 場賽事 · 距春川馬拉松 18 天</td>
+      <td style="padding:10px 14px;color:hsl(var(--muted-foreground))">總保證獎池 $3.5M+ · 136 場賽事 · 距春川馬拉松 18 天</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.07);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:10px 14px;font-weight:700;white-space:nowrap">10/30 – 11/8</td>
-      <td style="padding:10px 14px"><strong>GOP 仁川<br/><span style="font-size:12px;color:var(--muted-foreground)">The Labyrinth Trail</span></strong></td>
+      <td style="padding:10px 14px"><strong>GOP 仁川<br/><span style="font-size:12px;color:hsl(var(--muted-foreground))">The Labyrinth Trail</span></strong></td>
       <td style="padding:10px 14px">Paradise City，仁川</td>
       <td style="padding:10px 14px"><span style="background:rgba(239,68,68,0.15);color:#f87171;padding:2px 7px;border-radius:4px;font-size:12px;font-weight:600">⚡ JTBC 馬拉松 11/1 = 本賽事第 3 天</span></td>
     </tr>
     <tr style="background:rgba(212,175,55,0.07);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:10px 14px;font-weight:700;white-space:nowrap">2026 年 12 月（待定）</td>
-      <td style="padding:10px 14px"><strong>AJPC Samurai Circuit<br/><span style="font-size:12px;color:var(--muted-foreground)">Incheon 2026 III</span></strong></td>
+      <td style="padding:10px 14px"><strong>AJPC Samurai Circuit<br/><span style="font-size:12px;color:hsl(var(--muted-foreground))">Incheon 2026 III</span></strong></td>
       <td style="padding:10px 14px">Paradise City，仁川</td>
-      <td style="padding:10px 14px;color:var(--muted-foreground)">年末選項 · 賽程未定</td>
+      <td style="padding:10px 14px;color:hsl(var(--muted-foreground))">年末選項 · 賽程未定</td>
     </tr>
   </tbody>
 </table>
@@ -265,10 +265,10 @@ export const POST: Post = {
 <table style="width:100%;border-collapse:collapse;font-size:13px;line-height:1.5">
   <thead>
     <tr style="border-bottom:2px solid rgba(255,255,255,0.12)">
-      <th style="text-align:left;padding:9px 12px;color:var(--muted-foreground);font-weight:600;white-space:nowrap">日期</th>
-      <th style="text-align:left;padding:9px 12px;color:var(--muted-foreground);font-weight:600">活動</th>
-      <th style="text-align:left;padding:9px 12px;color:var(--muted-foreground);font-weight:600">場館</th>
-      <th style="text-align:left;padding:9px 12px;color:var(--muted-foreground);font-weight:600">細節</th>
+      <th style="text-align:left;padding:9px 12px;color:hsl(var(--muted-foreground));font-weight:600;white-space:nowrap">日期</th>
+      <th style="text-align:left;padding:9px 12px;color:hsl(var(--muted-foreground));font-weight:600">活動</th>
+      <th style="text-align:left;padding:9px 12px;color:hsl(var(--muted-foreground));font-weight:600">場館</th>
+      <th style="text-align:left;padding:9px 12px;color:hsl(var(--muted-foreground));font-weight:600">細節</th>
     </tr>
   </thead>
   <tbody>
@@ -276,37 +276,37 @@ export const POST: Post = {
       <td style="padding:8px 12px;white-space:nowrap">5/15–24</td>
       <td style="padding:8px 12px">🃏 GOP 仁川 2026 <em>（已結束）</em></td>
       <td style="padding:8px 12px">Paradise City，仁川</td>
-      <td style="padding:8px 12px;color:var(--muted-foreground)">已完賽</td>
+      <td style="padding:8px 12px;color:hsl(var(--muted-foreground))">已完賽</td>
     </tr>
     <tr style="opacity:0.5;border-bottom:1px solid rgba(255,255,255,0.05)">
       <td style="padding:8px 12px;white-space:nowrap">5/15–25</td>
       <td style="padding:8px 12px">🃏 TLPT 濟州 2026 <em>（已結束）</em></td>
       <td style="padding:8px 12px">LES A Casino，濟州</td>
-      <td style="padding:8px 12px;color:var(--muted-foreground)">已完賽</td>
+      <td style="padding:8px 12px;color:hsl(var(--muted-foreground))">已完賽</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">8/7–16</td>
       <td style="padding:9px 12px">🃏 <strong>APT 仁川 2026</strong></td>
       <td style="padding:9px 12px">Paradise City，仁川</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">保證獎池 $2.7M · 主賽事 $1M GTD</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">保證獎池 $2.7M · 主賽事 $1M GTD</td>
     </tr>
     <tr style="background:rgba(34,197,94,0.05);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">9/6</td>
       <td style="padding:9px 12px">🏃 YTN 首爾旅遊馬拉松</td>
       <td style="padding:9px 12px">首爾廣場</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">11KM · 半馬 · 7:30 · 報名已截止</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">11KM · 半馬 · 7:30 · 報名已截止</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">9/25–10/7</td>
       <td style="padding:9px 12px">🃏 <strong>APT 濟州 2026</strong></td>
       <td style="padding:9px 12px">LES A Casino，濟州</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">$3.5M+ GTD · 136 場賽事 · 距春川 18 天</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">$3.5M+ GTD · 136 場賽事 · 距春川 18 天</td>
     </tr>
     <tr style="background:rgba(34,197,94,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">10/25（日）</td>
       <td style="padding:9px 12px">🏃 <strong>春川馬拉松</strong></td>
       <td style="padding:9px 12px">孔之川，春川</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">全馬 · 10K · 9:00 · 報名 7/14</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">全馬 · 10K · 9:00 · 報名 7/14</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">10/30–11/8</td>
@@ -324,19 +324,19 @@ export const POST: Post = {
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">11/15（日）</td>
       <td style="padding:9px 12px">🏃 Garmin Run 韓國</td>
       <td style="padding:9px 12px">高陽綜合運動場</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">半馬 · 10K · 8:00 · 報名 7/1–3</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">半馬 · 10K · 8:00 · 報名 7/1–3</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">12 月（待定）</td>
       <td style="padding:9px 12px">🃏 AJPC Samurai Circuit III</td>
       <td style="padding:9px 12px">Paradise City，仁川</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">賽程待公布</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">賽程待公布</td>
     </tr>
     <tr style="border-top:1px solid rgba(255,255,255,0.08)">
-      <td style="padding:9px 12px;color:var(--muted-foreground)">全年</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">全年</td>
       <td style="padding:9px 12px">🃏 現金桌（NLHE）</td>
       <td style="padding:9px 12px">Paradise City，仁川</td>
-      <td style="padding:9px 12px;color:var(--muted-foreground)">24 小時營業 · 僅限外國人</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">24 小時營業 · 僅限外國人</td>
     </tr>
   </tbody>
 </table>
@@ -401,11 +401,11 @@ export const POST: Post = {
 <div style="display:flex;gap:12px;margin:18px 0;flex-wrap:wrap">
   <div style="flex:1;min-width:240px">
     <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-hangang1.webp" alt="漢江公園自行車與跑步步道——前景長椅上的情侶，河濱上的自行車與行人，對岸是首爾天際線" width="650" height="867" sizes="(max-width: 520px) 100vw, 330px" style="width:100%;border-radius:8px;display:block" />
-    <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">汝矣島漢江公園——跑者最愛的一段。平坦、寬闊、無車、24 小時開放。</p>
+    <p style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:6px;text-align:center">汝矣島漢江公園——跑者最愛的一段。平坦、寬闊、無車、24 小時開放。</p>
   </div>
   <div style="flex:1;min-width:240px">
     <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-hangang2.webp" alt="漢江公園林蔭跑步步道——河濱步道上的慢跑者與自行車騎士，對岸是公寓高樓" width="560" height="700" sizes="(max-width: 520px) 100vw, 330px" style="width:100%;border-radius:8px;display:block" />
-    <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">河濱步道往兩個方向都延伸數公里——當地人天天用來跑步、騎車、清晨散步。</p>
+    <p style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:6px;text-align:center">河濱步道往兩個方向都延伸數公里——當地人天天用來跑步、騎車、清晨散步。</p>
   </div>
 </div>
 
@@ -431,11 +431,11 @@ export const POST: Post = {
 <div style="display:flex;gap:12px;margin:18px 0;flex-wrap:wrap">
   <div style="flex:1;min-width:200px">
     <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-ramen-machine.webp" alt="GS25 便利商店的漢江泡麵烹煮機——為紙碗即食麵自動供應熱水" width="525" height="700" sizes="(max-width: 520px) 100vw, 330px" style="width:100%;height:280px;object-fit:cover;border-radius:8px;display:block" />
-    <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">公園便利商店的機器。掃你的條碼紙碗、按開始——剩下的交給機器。機器免費使用。</p>
+    <p style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:6px;text-align:center">公園便利商店的機器。掃你的條碼紙碗、按開始——剩下的交給機器。機器免費使用。</p>
   </div>
   <div style="flex:1;min-width:200px">
     <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-ramen.webp" alt="一碗漢江泡麵——紙碗裡的辛拉麵加一顆蛋，在河邊享用" width="700" height="525" sizes="(max-width: 520px) 100vw, 330px" style="width:100%;height:280px;object-fit:cover;border-radius:8px;display:block" />
-    <p style="font-size:12px;color:var(--muted-foreground);margin-top:6px;text-align:center">成品。漢江邊一碗加蛋的熱辛拉麵。總花費 ₩4,000–5,000（約 $3）。大概是首爾最棒的賽後一餐。</p>
+    <p style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:6px;text-align:center">成品。漢江邊一碗加蛋的熱辛拉麵。總花費 ₩4,000–5,000（約 $3）。大概是首爾最棒的賽後一餐。</p>
   </div>
 </div>
 
@@ -523,19 +523,19 @@ A. 帶好護照（無海外永久居留權的韓國公民不得進入）、年�
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/zh-hant/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">錦標賽</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">德州撲克錦標賽入門指南</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">買入、盲注結構、衛星賽與新手清單</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">錦標賽</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">德州撲克錦標賽入門指南</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">買入、盲注結構、衛星賽與新手清單</div>
   </a>
   <a href="/zh-hant/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">賽制</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">錦標賽 vs 現金桌</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">兩種賽制的策略與心態差在哪</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">賽制</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">錦標賽 vs 現金桌</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">兩種賽制的策略與心態差在哪</div>
   </a>
   <a href="/zh-hant/blog/holdem-short-stack" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">策略</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">短籌碼怎麼打</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">錦標賽後段活下來的 push-fold 心法</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">策略</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">短籌碼怎麼打</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">錦標賽後段活下來的 push-fold 心法</div>
   </a>
 </div>
 `.trim(),

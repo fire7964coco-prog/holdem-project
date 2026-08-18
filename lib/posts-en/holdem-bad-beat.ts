@@ -208,24 +208,24 @@ Bad beats are the tax you pay for playing a winning game. The best players take 
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/en/blog/holdem-cooler" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Glossary</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">What Is a Cooler?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">The loss with no suckout — and no bad beat</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Glossary</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">What Is a Cooler?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">The loss with no suckout — and no bad beat</div>
   </a>
   <a href="/en/blog/holdem-fish" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Glossary</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">What Is a Fish?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">The player whose suckouts pay your bills</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Glossary</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">What Is a Fish?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">The player whose suckouts pay your bills</div>
   </a>
   <a href="/en/blog/holdem-pot-odds" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Odds &amp; Math</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">How to Calculate Pot Odds</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Know when you're the favorite in the first place</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Odds &amp; Math</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">How to Calculate Pot Odds</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Know when you're the favorite in the first place</div>
   </a>
   <a href="/en/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Hand Rankings</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Who Wins at Showdown</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">How the winning hand is actually decided</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Hand Rankings</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Who Wins at Showdown</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">How the winning hand is actually decided</div>
   </a>
 </div>
 `.trim(),

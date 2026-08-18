@@ -193,24 +193,24 @@ Agora que você conhece o blind extra, aperte os fundamentos que ele distorce: [
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/pt/blog/holdem-blind-meaning" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Regras</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">O que são os blinds no pôquer?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">O small e o big blind sobre os quais um straddle é construído</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Regras</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">O que são os blinds no pôquer?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">O small e o big blind sobre os quais um straddle é construído</div>
   </a>
   <a href="/pt/blog/holdem-position-play" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Estratégia</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Como a posição muda tudo</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Por que a posição de um straddle importa mais que o tamanho dele</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Estratégia</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Como a posição muda tudo</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Por que a posição de um straddle importa mais que o tamanho dele</div>
   </a>
   <a href="/pt/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Regras</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Ações de aposta: check, call, raise</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Como o preço reseta depois de um straddle</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Regras</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Ações de aposta: check, call, raise</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Como o preço reseta depois de um straddle</div>
   </a>
   <a href="/pt/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Torneio</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Torneio vs Cash Game</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Por que straddles são coisa só de cash game</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Torneio</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Torneio vs Cash Game</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Por que straddles são coisa só de cash game</div>
   </a>
 </div>
 `.trim(),

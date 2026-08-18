@@ -200,19 +200,19 @@ A. ঠিক নয় — "the blinds" বলতে small আর big blind দ�
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/bn/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Actions</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Check, bet, call, raise আর fold, বোঝানো</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">পাঁচটি betting action আর প্রতিটি কখন ব্যবহার করবেন</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Actions</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Check, bet, call, raise আর fold, বোঝানো</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">পাঁচটি betting action আর প্রতিটি কখন ব্যবহার করবেন</div>
   </a>
   <a href="/bn/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Order of Play</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Texas Hold'em-এ খেলার ক্রম</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">action-এর ক্রম: preflop → flop → turn → river</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Order of Play</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Texas Hold'em-এ খেলার ক্রম</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">action-এর ক্রম: preflop → flop → turn → river</div>
   </a>
   <a href="/bn/blog/holdem-showdown-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Showdown</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Showdown-এ কে জেতে আর pot কীভাবে ভাগ হয়</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">কার্ড খোলার ক্রম, best পাঁচ কার্ড, split pot</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Showdown</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Showdown-এ কে জেতে আর pot কীভাবে ভাগ হয়</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">কার্ড খোলার ক্রম, best পাঁচ কার্ড, split pot</div>
   </a>
 </div>
 `.trim(),

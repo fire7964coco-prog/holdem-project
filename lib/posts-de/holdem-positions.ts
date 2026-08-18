@@ -248,24 +248,24 @@ Sobald die Namen in Fleisch und Blut übergegangen sind, kommt der echte Edge au
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/de/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Anfänger-Leitfaden</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Texas Hold'em Regeln für Anfänger</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Wie eine komplette Hand vom Geben bis zum Showdown abläuft</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Anfänger-Leitfaden</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Texas Hold'em Regeln für Anfänger</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Wie eine komplette Hand vom Geben bis zum Showdown abläuft</div>
   </a>
   <a href="/de/blog/holdem-position-play" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Positionsstrategie</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">In vs. Out of Position Strategie</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Opening-Ranges und was du aus jedem Sitz tust</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Positionsstrategie</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">In vs. Out of Position Strategie</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Opening-Ranges und was du aus jedem Sitz tust</div>
   </a>
   <a href="/de/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Ablauf des Spiels</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Ablauf des Spiels bei Texas Hold'em</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Preflop → Flop → Turn → River Handlungsabfolge</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Ablauf des Spiels</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Ablauf des Spiels bei Texas Hold'em</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Preflop → Flop → Turn → River Handlungsabfolge</div>
   </a>
   <a href="/de/blog/holdem-blind-meaning" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Blinds</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Small Blind & Big Blind erklärt</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Warum es sie gibt und wie du sie richtig spielst</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Blinds</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Small Blind & Big Blind erklärt</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Warum es sie gibt und wie du sie richtig spielst</div>
   </a>
 </div>
 `.trim(),

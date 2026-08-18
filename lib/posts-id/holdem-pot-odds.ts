@@ -235,24 +235,24 @@ Lakukan ini beberapa ratus kali dan ia berhenti menjadi matematika dan menjadi i
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/id/blog/holdem-probability" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Peluang & Matematika</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Tabel Peluang & Probabilitas Poker</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Setiap tangan, flop, dan draw — angka di balik harga</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Peluang & Matematika</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Tabel Peluang & Probabilitas Poker</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Setiap tangan, flop, dan draw — angka di balik harga</div>
   </a>
   <a href="/id/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Tangan Awal</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Bagan Tangan Awal per Posisi</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Masuk pot dengan tangan yang layak di-draw</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Tangan Awal</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Bagan Tangan Awal per Posisi</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Masuk pot dengan tangan yang layak di-draw</div>
   </a>
   <a href="/id/blog/holdem-reading-the-board" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Membaca Meja</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Cara Membaca Meja di Hold'em</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Hitung outs Anda dengan mengenali setiap draw</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Membaca Meja</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Cara Membaca Meja di Hold'em</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Hitung outs Anda dengan mengenali setiap draw</div>
   </a>
   <a href="/id/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Cash vs Turnamen</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Turnamen vs Cash Game</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Kenapa implied odds lebih dalam di cash game</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Cash vs Turnamen</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Turnamen vs Cash Game</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Kenapa implied odds lebih dalam di cash game</div>
   </a>
 </div>
 `.trim(),

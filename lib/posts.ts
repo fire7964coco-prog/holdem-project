@@ -3006,7 +3006,7 @@ A. BB 수비 범위는 **팟 오즈**를 기반으로 결정합니다. 상대가
  tags: ["WSOP 2025 결과", "WSOP 우승자", "WSOP", "포커 토너먼트", "WSOP 한국인 참가", "세계 대회"],
  content: `
 <div style="background:rgba(212,175,55,0.12);border:1px solid rgba(212,175,55,0.4);border-radius:12px;padding:14px 20px;margin:0 0 28px">
-📅 <strong>이 글은 2025년 대회 기록입니다</strong> — 2026 시리즈도 7월 15일에 종료됐고 메인이벤트 파이널 테이블만 8월 3~5일에 남아 있습니다. 최신 결과·등록 규정·위성 경로는 <a href="/blog/wsop-2026-tournament-guide" style="color:var(--primary);font-weight:700">WSOP 2026 완전 가이드</a>에서 확인하세요.
+📅 <strong>이 글은 2025년 대회 기록입니다</strong> — 2026 시리즈도 7월 15일에 종료됐고 메인이벤트 파이널 테이블만 8월 3~5일에 남아 있습니다. 최신 결과·등록 규정·위성 경로는 <a href="/blog/wsop-2026-tournament-guide" style="color:hsl(var(--primary));font-weight:700">WSOP 2026 완전 가이드</a>에서 확인하세요.
 </div>
 
 ## WSOP 2025는 어떤 대회였나요?

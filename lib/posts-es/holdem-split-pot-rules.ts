@@ -233,19 +233,19 @@ Repasa el orden en la [jerarquía completa de manos](/es/blog/holdem-hand-rankin
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/es/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Jerarquía de manos</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Jerarquía de manos de póker — de la mejor a la peor</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Las 10 manos con probabilidades, ejemplos y problemas de mesa</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Jerarquía de manos</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Jerarquía de manos de póker — de la mejor a la peor</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Las 10 manos con probabilidades, ejemplos y problemas de mesa</div>
   </a>
   <a href="/es/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Desempate</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Reglas de kicker y desempate</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Cómo deciden los kickers los showdowns con la misma mano</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Desempate</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Reglas de kicker y desempate</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Cómo deciden los kickers los showdowns con la misma mano</div>
   </a>
   <a href="/es/blog/holdem-flush-vs-straight" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Duelo de manos</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">¿El color gana a la escalera?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Matemáticas y situaciones de mesa para la confusión #1</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Duelo de manos</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">¿El color gana a la escalera?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Matemáticas y situaciones de mesa para la confusión #1</div>
   </a>
 </div>
 `.trim(),

@@ -415,24 +415,24 @@ A. 巴塞隆納的奧林匹克港區普遍安全。==r:但在遊客密集的區�
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/zh-hant/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">必讀</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">德州撲克錦標賽怎麼運作</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">買入、盲注、衛星賽與 Day 1 清單</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">必讀</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">德州撲克錦標賽怎麼運作</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">買入、盲注、衛星賽與 Day 1 清單</div>
   </a>
   <a href="/zh-hant/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">比較</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">錦標賽 vs 現金桌</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">改變一切的 8 個差異</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">比較</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">錦標賽 vs 現金桌</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">改變一切的 8 個差異</div>
   </a>
   <a href="/zh-hant/blog/holdem-short-stack" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">短籌碼</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">短籌碼全下策略</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">籌碼變薄時，push-fold 怎麼打</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">短籌碼</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">短籌碼全下策略</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">籌碼變薄時，push-fold 怎麼打</div>
   </a>
   <a href="/zh-hant/blog/holdem-bubble" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">泡泡圈</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">泡泡圈與錢圈（ITM）</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">撐進錢圈前最關鍵的一段</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">泡泡圈</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">泡泡圈與錢圈（ITM）</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">撐進錢圈前最關鍵的一段</div>
   </a>
 </div>
 `.trim(),

@@ -242,24 +242,24 @@ A. シート1はポジションではなく、物理的な椅子です——多�
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/ja/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">初心者ガイド</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">テキサスホールデムのルール(初心者向け)</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">配りからショーダウンまで1ハンドの流れ</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">初心者ガイド</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">テキサスホールデムのルール(初心者向け)</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">配りからショーダウンまで1ハンドの流れ</div>
   </a>
   <a href="/ja/blog/holdem-position-play" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">ポジション戦略</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">インポジション vs アウトオブポジション</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">オープンレンジと、各席での打ち方</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">ポジション戦略</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">インポジション vs アウトオブポジション</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">オープンレンジと、各席での打ち方</div>
   </a>
   <a href="/ja/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">アクションの順番</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">テキサスホールデムのアクション順</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">プリフロップ → フロップ → ターン → リバーの流れ</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">アクションの順番</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">テキサスホールデムのアクション順</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">プリフロップ → フロップ → ターン → リバーの流れ</div>
   </a>
   <a href="/ja/blog/holdem-blind-meaning" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">ブラインド</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">スモールブラインドとビッグブラインドの解説</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">なぜ存在し、どう正しく打つか</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">ブラインド</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">スモールブラインドとビッグブラインドの解説</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">なぜ存在し、どう正しく打つか</div>
   </a>
 </div>
 `.trim(),

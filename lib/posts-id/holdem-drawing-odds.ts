@@ -225,24 +225,24 @@ Setiap angka di sini datang langsung dari deck, bukan firasat. Bawa ini ke [cara
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/id/blog/holdem-probability" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Odds &amp; Matematika</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Tabel odds &amp; probabilitas poker</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Setiap angka tangan-jadi dan long-shot di satu tempat</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Odds &amp; Matematika</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Tabel odds &amp; probabilitas poker</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Setiap angka tangan-jadi dan long-shot di satu tempat</div>
   </a>
   <a href="/id/blog/holdem-outs" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Odds &amp; Matematika</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Cara menghitung outs di poker</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Ubah peluang ini jadi hitungan out langsung</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Odds &amp; Matematika</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Cara menghitung outs di poker</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Ubah peluang ini jadi hitungan out langsung</div>
   </a>
   <a href="/id/blog/holdem-pot-odds" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Odds &amp; Matematika</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Cara menghitung pot odds</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Apakah harganya pas untuk draw Anda?</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Odds &amp; Matematika</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Cara menghitung pot odds</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Apakah harganya pas untuk draw Anda?</div>
   </a>
   <a href="/id/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Tangan Awal</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Bagan Tangan Awal per Posisi</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Pair dan tangan suited mana yang layak di-draw</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Tangan Awal</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Bagan Tangan Awal per Posisi</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Pair dan tangan suited mana yang layak di-draw</div>
   </a>
 </div>
 `.trim(),

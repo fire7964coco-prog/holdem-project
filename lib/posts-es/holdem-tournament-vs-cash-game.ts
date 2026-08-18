@@ -428,24 +428,24 @@ Domina primero los fundamentos del cash game, y luego añade torneos cuando est�
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/es/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Torneos</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Cómo funcionan los torneos de póker</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Buy-ins, niveles de ciegas, formatos y un checklist de Día 1</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Torneos</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Cómo funcionan los torneos de póker</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Buy-ins, niveles de ciegas, formatos y un checklist de Día 1</div>
   </a>
   <a href="/es/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Flujo de juego</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Orden de juego en Texas Hold'em</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">De preflop al showdown — el flujo completo de la mano paso a paso</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Flujo de juego</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Orden de juego en Texas Hold'em</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">De preflop al showdown — el flujo completo de la mano paso a paso</div>
   </a>
   <a href="/es/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Ranking de manos</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Ranking de manos de póker — de mejor a peor</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Las 10 manos con odds, ejemplos y puzles de mesa</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Ranking de manos</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Ranking de manos de póker — de mejor a peor</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Las 10 manos con odds, ejemplos y puzles de mesa</div>
   </a>
   <a href="/es/blog/holdem-blind-meaning" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Ciegas</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">¿Qué son las ciegas en el póker?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">SB, BB, robo de ciegas y la opción — todo explicado</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Ciegas</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">¿Qué son las ciegas en el póker?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">SB, BB, robo de ciegas y la opción — todo explicado</div>
   </a>
 </div>
 `.trim(),

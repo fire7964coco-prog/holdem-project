@@ -316,35 +316,35 @@ Ein Beitrag kann keine vollständige Turnierstrategie lehren – dafür gibt es 
 Das erzählt dir kein anderer Guide. Hier ist eine realistische Tag-1-Timeline für einen Live-€300-Freezeout mit 12-Uhr-Startzeit:
 
 <div style="background:rgba(255,248,210,0.06);border:1px solid rgba(255,240,180,0.25);border-radius:12px;padding:20px 24px;margin:20px 0">
-<div style="font-size:13px;font-weight:700;color:var(--primary);margin-bottom:14px">Tag-1-Timeline – €300-Freezeout, 10.000 Startchips</div>
+<div style="font-size:13px;font-weight:700;color:hsl(var(--primary));margin-bottom:14px">Tag-1-Timeline – €300-Freezeout, 10.000 Startchips</div>
 <div style="display:grid;gap:10px;font-size:13px">
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="color:var(--primary);font-weight:700">10:30</div>
-<div style="color:var(--foreground)">Registrierung öffnet. Ausweis zeigen, zahlen, Seat Card holen. Finde deinen Tisch.</div>
+<div style="color:hsl(var(--primary));font-weight:700">10:30</div>
+<div style="color:hsl(var(--foreground))">Registrierung öffnet. Ausweis zeigen, zahlen, Seat Card holen. Finde deinen Tisch.</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="color:var(--primary);font-weight:700">12:00</div>
-<div style="color:var(--foreground)">Karten in der Luft. Level 1: Blinds 25/50. Du hast 200 BB. Spiele exploratives Poker.</div>
+<div style="color:hsl(var(--primary));font-weight:700">12:00</div>
+<div style="color:hsl(var(--foreground))">Karten in der Luft. Level 1: Blinds 25/50. Du hast 200 BB. Spiele exploratives Poker.</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="color:var(--primary);font-weight:700">13:00–15:00</div>
-<div style="color:var(--foreground)">Levels 2–4. Late Registration noch offen. Das Feld wächst. Einige Spieler busten bereits.</div>
+<div style="color:hsl(var(--primary));font-weight:700">13:00–15:00</div>
+<div style="color:hsl(var(--foreground))">Levels 2–4. Late Registration noch offen. Das Feld wächst. Einige Spieler busten bereits.</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="color:var(--primary);font-weight:700">~15:30</div>
-<div style="color:var(--foreground)">Late Reg schließt. Endgültige Feldgröße bekanntgegeben. Prize Pool bestätigt.</div>
+<div style="color:hsl(var(--primary));font-weight:700">~15:30</div>
+<div style="color:hsl(var(--foreground))">Late Reg schließt. Endgültige Feldgröße bekanntgegeben. Prize Pool bestätigt.</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="color:var(--primary);font-weight:700">~17:00</div>
-<div style="color:var(--foreground)">Dinner Break (meist 1 Stunde). ~40% des Feldes eliminiert. Tische werden zusammengelegt.</div>
+<div style="color:hsl(var(--primary));font-weight:700">~17:00</div>
+<div style="color:hsl(var(--foreground))">Dinner Break (meist 1 Stunde). ~40% des Feldes eliminiert. Tische werden zusammengelegt.</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="color:var(--primary);font-weight:700">18:00–21:00</div>
-<div style="color:var(--foreground)">Die Bubble naht. Hand-for-Hand-Spiel beginnt. Der Druck erreicht seinen Höhepunkt. Ein Bust = alle werden bezahlt.</div>
+<div style="color:hsl(var(--primary));font-weight:700">18:00–21:00</div>
+<div style="color:hsl(var(--foreground))">Die Bubble naht. Hand-for-Hand-Spiel beginnt. Der Druck erreicht seinen Höhepunkt. Ein Bust = alle werden bezahlt.</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0">
 <div style="color:#22c55e;font-weight:700">21:00–23:00</div>
-<div style="color:var(--foreground)">ITM – die Money Bubble platzt. Die verbleibenden Spieler baggen ihre Chips oder spielen heute Abend bis zum Final Table.</div>
+<div style="color:hsl(var(--foreground))">ITM – die Money Bubble platzt. Die verbleibenden Spieler baggen ihre Chips oder spielen heute Abend bis zum Final Table.</div>
 </div>
 </div>
 </div>
@@ -400,7 +400,7 @@ Diese 13 Begriffe decken das meiste ab, was du am Tisch hörst. Für das vollst�
 ## Checkliste fürs erste Turnier
 
 <div style="background:rgba(255,248,210,0.06);border:1px solid rgba(255,240,180,0.25);border-radius:12px;padding:20px 24px;margin:20px 0">
-<div style="font-size:13px;font-weight:700;color:var(--primary);margin-bottom:14px">Bevor du das Haus verlässt</div>
+<div style="font-size:13px;font-weight:700;color:hsl(var(--primary));margin-bottom:14px">Bevor du das Haus verlässt</div>
 <div style="display:grid;gap:8px;font-size:13px">
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span><strong>Gültiger Lichtbildausweis</strong> – Reisepass oder Führerschein. Keine Ausnahmen.</span></div>
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span><strong>Buy-in + 20% extra</strong> in bar – manche Veranstaltungsorte nehmen keine Karten</span></div>
@@ -409,7 +409,7 @@ Diese 13 Begriffe decken das meiste ab, was du am Tisch hörst. Für das vollst�
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span>Bequeme Kleidung – Turniere laufen 6–12 Stunden. Bring eine Jacke mit (Card Rooms sind kalt).</span></div>
 </div>
 
-<div style="font-size:13px;font-weight:700;color:var(--primary);margin:16px 0 10px">Am Veranstaltungsort</div>
+<div style="font-size:13px;font-weight:700;color:hsl(var(--primary));margin:16px 0 10px">Am Veranstaltungsort</div>
 <div style="display:grid;gap:8px;font-size:13px">
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span>Komm 30–45 Min. vor Start. Registrierungsschlangen können lang sein.</span></div>
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span>Zähle deine Startchips, bevor du deine erste Hand spielst. Sag dem Dealer sofort Bescheid, falls es zu wenige sind.</span></div>
@@ -462,34 +462,34 @@ A. Nein. Anders als in einem Cash Game haben Turnierchips keinen Bargeldwert und
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/de/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Deep Dive</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Turnier vs. Cash Game</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Chip-Wert, steigende Blinds, ICM – welches Format zu dir passt</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Deep Dive</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Turnier vs. Cash Game</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Chip-Wert, steigende Blinds, ICM – welches Format zu dir passt</div>
   </a>
   <a href="/de/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Strategie</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Starthand-Chart</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Welche Hände du in den frühen Levels spielst</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Strategie</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Starthand-Chart</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Welche Hände du in den frühen Levels spielst</div>
   </a>
   <a href="/de/blog/holdem-short-stack" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Short Stack</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Short-Stack-Strategie</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Push-or-Fold, wenn die Blinds näher rücken</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Short Stack</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Short-Stack-Strategie</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Push-or-Fold, wenn die Blinds näher rücken</div>
   </a>
   <a href="/de/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Hier starten</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Texas Hold'em Regeln für Anfänger</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Beherrsche zuerst die Grundlagen</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Hier starten</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Texas Hold'em Regeln für Anfänger</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Beherrsche zuerst die Grundlagen</div>
   </a>
   <a href="/de/blog/holdem-blind-meaning" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Blinds</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Was sind die Blinds im Poker?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Blind-Levels starten hier – SB, BB und Antes</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Blinds</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Was sind die Blinds im Poker?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Blind-Levels starten hier – SB, BB und Antes</div>
   </a>
   <a href="/de/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Positionen</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Poker-Tischpositionen erklärt</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Warum dein Sitzplatz jede Turnierentscheidung lenkt</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Positionen</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Poker-Tischpositionen erklärt</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Warum dein Sitzplatz jede Turnierentscheidung lenkt</div>
   </a>
 </div>
 `.trim(),

@@ -207,24 +207,24 @@ Jetzt, wo du den Anteil des Hauses siehst, ergeben die Zahlen, die du überall s
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/de/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Turnier</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Turnier vs. Cashgame</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Warum dich die beiden völlig unterschiedlich zur Kasse bitten</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Turnier</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Turnier vs. Cashgame</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Warum dich die beiden völlig unterschiedlich zur Kasse bitten</div>
   </a>
   <a href="/de/blog/holdem-straddle" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Glossar</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Was ist ein Straddle?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Der zusätzliche Blind, der den Pot aufbläht – und den Rake</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Glossar</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Was ist ein Straddle?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Der zusätzliche Blind, der den Pot aufbläht – und den Rake</div>
   </a>
   <a href="/de/blog/holdem-pot-odds" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Odds &amp; Mathe</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Pot Odds berechnen</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Lies deinen Pot, nachdem das Haus seinen Anteil genommen hat</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Odds &amp; Mathe</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Pot Odds berechnen</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Lies deinen Pot, nachdem das Haus seinen Anteil genommen hat</div>
   </a>
   <a href="/de/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Turnier</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Wie Pokerturniere funktionieren</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Wohin die Buy-in-Gebühr wirklich geht</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Turnier</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Wie Pokerturniere funktionieren</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Wohin die Buy-in-Gebühr wirklich geht</div>
   </a>
 </div>
 `.trim(),

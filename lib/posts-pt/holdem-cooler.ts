@@ -193,24 +193,24 @@ Os melhores jogadores perdem exatamente tantos coolers quanto todo mundo; eles s
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/pt/blog/holdem-fish" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Glossário</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">O que é um fish?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">O jogador que chama um cooler de bad beat</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Glossário</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">O que é um fish?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">O jogador que chama um cooler de bad beat</div>
   </a>
   <a href="/pt/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Ranking de Mãos</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Quem vence no showdown</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Como empates e segundas melhores mãos são decididos</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Ranking de Mãos</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Quem vence no showdown</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Como empates e segundas melhores mãos são decididos</div>
   </a>
   <a href="/pt/blog/holdem-straddle" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Glossário</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">O que é um straddle?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">A aposta que cria potes maiores e mais propensos a cooler</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Glossário</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">O que é um straddle?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">A aposta que cria potes maiores e mais propensos a cooler</div>
   </a>
   <a href="/pt/blog/holdem-pot-odds" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Odds & Matemática</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Como calcular pot odds</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Diferencie um cooler de um call que você devia foldar</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Odds & Matemática</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Como calcular pot odds</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Diferencie um cooler de um call que você devia foldar</div>
   </a>
 </div>
 `.trim(),

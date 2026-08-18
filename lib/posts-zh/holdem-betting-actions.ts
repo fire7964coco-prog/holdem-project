@@ -239,19 +239,19 @@ A. 平跟就是翻前不加注、只跟大盲注入池。它合法，但通常�
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/zh/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">支柱指南</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">德州扑克新手规则全指南</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">从盲注到摊牌的完整规则</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">支柱指南</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">德州扑克新手规则全指南</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">从盲注到摊牌的完整规则</div>
   </a>
   <a href="/zh/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">游戏流程</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">德州扑克行动顺序详解</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">用真实牌例走一遍翻前到河牌</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">游戏流程</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">德州扑克行动顺序详解</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">用真实牌例走一遍翻前到河牌</div>
   </a>
   <a href="/zh/blog/holdem-blind-meaning" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">盲注</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">小盲注与大盲注是什么</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">为什么看牌之前就要先掏钱</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">盲注</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">小盲注与大盲注是什么</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">为什么看牌之前就要先掏钱</div>
   </a>
 </div>
 `.trim(),

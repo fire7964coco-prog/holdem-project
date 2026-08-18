@@ -186,24 +186,24 @@ Beginne mit der Zahl, die die meisten Hände entscheidet: deine Outs. Sieh dir d
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/de/blog/holdem-outs" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Odds & Mathematik</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Wie du deine Outs zählst</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Die echte Zähl-Fähigkeit im Poker</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Odds & Mathematik</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Wie du deine Outs zählst</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Die echte Zähl-Fähigkeit im Poker</div>
   </a>
   <a href="/de/blog/holdem-3bet" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Strategie</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">3-Betting & Blocker</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Card Removal nutzen, um Bluffs auszuwählen</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Strategie</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">3-Betting & Blocker</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Card Removal nutzen, um Bluffs auszuwählen</div>
   </a>
   <a href="/de/blog/holdem-probability" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Odds & Mathematik</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Poker-Odds- und Wahrscheinlichkeitstabelle</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Verwandle deine Out-Zählung in einen Prozentwert</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Odds & Mathematik</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Poker-Odds- und Wahrscheinlichkeitstabelle</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Verwandle deine Out-Zählung in einen Prozentwert</div>
   </a>
   <a href="/de/blog/holdem-pot-odds" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Odds & Mathematik</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Wie du Pot Odds berechnest</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Ob deine Outs den Preis wert sind</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Odds & Mathematik</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Wie du Pot Odds berechnest</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Ob deine Outs den Preis wert sind</div>
   </a>
 </div>
 `.trim(),

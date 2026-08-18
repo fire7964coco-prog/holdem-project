@@ -425,24 +425,24 @@ Beherrsche zuerst die Cash-Grundlagen, füge dann Turniere hinzu, wenn du bereit
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/de/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Turniere</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Wie Pokerturniere funktionieren</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Buy-ins, Blind-Level, Formate und eine Day-1-Checkliste</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Turniere</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Wie Pokerturniere funktionieren</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Buy-ins, Blind-Level, Formate und eine Day-1-Checkliste</div>
   </a>
   <a href="/de/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Spielablauf</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Texas Hold'em Spielreihenfolge</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Preflop bis Showdown – der komplette Handablauf Schritt für Schritt</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Spielablauf</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Texas Hold'em Spielreihenfolge</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Preflop bis Showdown – der komplette Handablauf Schritt für Schritt</div>
   </a>
   <a href="/de/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Handrangfolge</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Pokerhand-Rangfolge – von Beste bis Schlechteste</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Alle 10 Hände mit Odds, Beispielen und Board-Rätseln</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Handrangfolge</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Pokerhand-Rangfolge – von Beste bis Schlechteste</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Alle 10 Hände mit Odds, Beispielen und Board-Rätseln</div>
   </a>
   <a href="/de/blog/holdem-blind-meaning" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Blinds</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Was sind die Blinds beim Poker?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">SB, BB, Blind-Steal und Option – alles erklärt</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Blinds</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Was sind die Blinds beim Poker?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">SB, BB, Blind-Steal und Option – alles erklärt</div>
   </a>
 </div>
 `.trim(),

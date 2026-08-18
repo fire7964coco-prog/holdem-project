@@ -425,24 +425,24 @@ A. 이전 대회 결과가 궁금하다면 [WSOP 2025 완전 가이드](/blog/ws
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/tournaments" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">필라</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">홀덤 대회 완벽 가이드</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">국내외 토너먼트·2026 일정 전체</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">필라</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">홀덤 대회 완벽 가이드</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">국내외 토너먼트·2026 일정 전체</div>
   </a>
   <a href="/blog/holdem-tournament-how-to-enter" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">참가 가이드</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">홀덤 대회 참가 방법</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">온라인 무료 → WSOP 단계별</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">참가 가이드</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">홀덤 대회 참가 방법</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">온라인 무료 → WSOP 단계별</div>
   </a>
   <a href="/blog/holdem-bubble-strategy" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">전략</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">홀덤 버블 전략</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">WSOP 인마니 노리는 법</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">전략</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">홀덤 버블 전략</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">WSOP 인마니 노리는 법</div>
   </a>
   <a href="/blog/wsop-2025-tournament-guide" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">아카이브</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">WSOP 2025 결과 보기</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">지난 대회 결과·우승자</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">아카이브</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">WSOP 2025 결과 보기</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">지난 대회 결과·우승자</div>
   </a>
 </div>
 `.trim(),

@@ -279,7 +279,7 @@ If you've only played online or in a local card room, the floor rules at a WSOP 
 Here's the reassuring part: ==g:**you don't have to call your hand in English.**== A verbal declaration of hand value isn't binding — the cards decide at showdown. Table your hand face up and the dealer reads it. If you're not fully confident announcing a hand out loud in a room full of pros, that's fine; just know [what beats what](/en/blog/holdem-hand-rankings) so you know when to turn your cards over.
 
 <div style="background:rgba(255,248,210,0.06);border:1px solid rgba(255,240,180,0.25);border-radius:12px;padding:20px 24px;margin:20px 0">
-<div style="font-size:13px;font-weight:700;color:var(--primary);margin-bottom:14px">Table Conduct — the Short Version</div>
+<div style="font-size:13px;font-weight:700;color:hsl(var(--primary));margin-bottom:14px">Table Conduct — the Short Version</div>
 <div style="display:grid;gap:8px;font-size:13px">
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span><strong>Texting at the table is fine</strong> — as long as you're not in the hand</span></div>
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(255,150,0,0.12);border:1.5px solid rgba(255,150,0,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#ff9600">!</span><span><strong>Phone calls mean moving at least one table away</strong></span></div>
@@ -364,19 +364,19 @@ Every figure above was checked against primary sources. **Verified: July 29, 202
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/en/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Start Here</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">How Poker Tournaments Work</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Buy-ins, blind levels, satellites and the Day 1 flow</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Start Here</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">How Poker Tournaments Work</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Buy-ins, blind levels, satellites and the Day 1 flow</div>
   </a>
   <a href="/en/blog/holdem-icm" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Final Table Math</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ICM Explained</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Why a $250,000 pay jump changes which hands you can play</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Final Table Math</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ICM Explained</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Why a $250,000 pay jump changes which hands you can play</div>
   </a>
   <a href="/en/tournaments" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Schedule</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Live Tournament Calendar</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">What's running next, and where to find a satellite</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Schedule</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Live Tournament Calendar</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">What's running next, and where to find a satellite</div>
   </a>
 </div>
 `.trim(),

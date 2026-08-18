@@ -234,19 +234,19 @@ A. Limp ni kuingia kwenye pot kabla ya flop kwa kufanya call ya big blind tu bad
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/sw/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Pillar</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Sheria za Texas Hold'em kwa Wanaoanza</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Mwongozo kamili wa sheria — kutoka blinds hadi showdown</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Pillar</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Sheria za Texas Hold'em kwa Wanaoanza</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Mwongozo kamili wa sheria — kutoka blinds hadi showdown</div>
   </a>
   <a href="/sw/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Game Flow</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Mpangilio wa Kucheza Texas Hold'em</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Kutoka preflop hadi river na mifano halisi ya mikono</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Game Flow</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Mpangilio wa Kucheza Texas Hold'em</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Kutoka preflop hadi river na mifano halisi ya mikono</div>
   </a>
   <a href="/sw/blog/holdem-blind-meaning" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Blinds</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Small Blind vs Big Blind Zaelezwa</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Kwa nini unalipa kabla ya kuona karata zako</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Blinds</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Small Blind vs Big Blind Zaelezwa</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Kwa nini unalipa kabla ya kuona karata zako</div>
   </a>
 </div>
 `.trim(),

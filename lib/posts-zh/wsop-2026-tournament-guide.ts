@@ -416,19 +416,19 @@ A. 满 21 岁、有有效证件就行，没有国籍限制。但中国护照上�
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/zh/tournaments" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">赛程</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.5">2026 德州扑克赛事日程</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:6px;line-height:1.5">全球 107 场赛事，附日期、买入与官方链接</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">赛程</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.5">2026 德州扑克赛事日程</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:6px;line-height:1.5">全球 107 场赛事，附日期、买入与官方链接</div>
   </a>
   <a href="/zh/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">基础</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.5">德州扑克锦标赛完全指南</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:6px;line-height:1.5">买入、奖金结构和钱圈的概念</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">基础</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.5">德州扑克锦标赛完全指南</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:6px;line-height:1.5">买入、奖金结构和钱圈的概念</div>
   </a>
   <a href="/zh/blog/apt-incheon-2026-guide" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">亚洲</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.5">APT 仁川 2026</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:6px;line-height:1.5">亚洲最近的大型赛事</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">亚洲</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.5">APT 仁川 2026</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:6px;line-height:1.5">亚洲最近的大型赛事</div>
   </a>
 </div>
 `,

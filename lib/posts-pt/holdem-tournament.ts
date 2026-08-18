@@ -209,35 +209,35 @@ Um post só não ensina estratégia completa de torneio — é pra isso que serv
 Isto é o que nenhum outro guia te conta. Aqui está uma linha do tempo realista de Day 1 pra um freezeout ao vivo de $300 com início às 12h:
 
 <div style="background:rgba(255,248,210,0.06);border:1px solid rgba(255,240,180,0.25);border-radius:12px;padding:20px 24px;margin:20px 0">
-<div style="font-size:13px;font-weight:700;color:var(--primary);margin-bottom:14px">Linha do tempo do Day 1 — freezeout de $300, 10.000 fichas iniciais</div>
+<div style="font-size:13px;font-weight:700;color:hsl(var(--primary));margin-bottom:14px">Linha do tempo do Day 1 — freezeout de $300, 10.000 fichas iniciais</div>
 <div style="display:grid;gap:10px;font-size:13px">
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="color:var(--primary);font-weight:700">10h30</div>
-<div style="color:var(--foreground)">Registro abre. Mostre o documento, pague, pegue o seat card. Ache sua mesa.</div>
+<div style="color:hsl(var(--primary));font-weight:700">10h30</div>
+<div style="color:hsl(var(--foreground))">Registro abre. Mostre o documento, pague, pegue o seat card. Ache sua mesa.</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="color:var(--primary);font-weight:700">12h00</div>
-<div style="color:var(--foreground)">Cartas na mesa. Nível 1: blinds 25/50. Você tem 200BB. Jogue um pôquer exploratório.</div>
+<div style="color:hsl(var(--primary));font-weight:700">12h00</div>
+<div style="color:hsl(var(--foreground))">Cartas na mesa. Nível 1: blinds 25/50. Você tem 200BB. Jogue um pôquer exploratório.</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="color:var(--primary);font-weight:700">13h–15h</div>
-<div style="color:var(--foreground)">Níveis 2–4. Late registration ainda aberto. O field cresce. Alguns jogadores já quebram.</div>
+<div style="color:hsl(var(--primary));font-weight:700">13h–15h</div>
+<div style="color:hsl(var(--foreground))">Níveis 2–4. Late registration ainda aberto. O field cresce. Alguns jogadores já quebram.</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="color:var(--primary);font-weight:700">~15h30</div>
-<div style="color:var(--foreground)">Late reg fecha. Tamanho final do field anunciado. Prize pool confirmado. Antes entram.</div>
+<div style="color:hsl(var(--primary));font-weight:700">~15h30</div>
+<div style="color:hsl(var(--foreground))">Late reg fecha. Tamanho final do field anunciado. Prize pool confirmado. Antes entram.</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="color:var(--primary);font-weight:700">~17h00</div>
-<div style="color:var(--foreground)">Pausa pro jantar (normalmente 1 hora). ~40% do field eliminado. As mesas são consolidadas.</div>
+<div style="color:hsl(var(--primary));font-weight:700">~17h00</div>
+<div style="color:hsl(var(--foreground))">Pausa pro jantar (normalmente 1 hora). ~40% do field eliminado. As mesas são consolidadas.</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="color:var(--primary);font-weight:700">18h–21h</div>
-<div style="color:var(--foreground)">A bubble se aproxima. Começa o jogo hand-for-hand. A pressão atinge o pico. Um quebra = todo mundo entra no dinheiro.</div>
+<div style="color:hsl(var(--primary));font-weight:700">18h–21h</div>
+<div style="color:hsl(var(--foreground))">A bubble se aproxima. Começa o jogo hand-for-hand. A pressão atinge o pico. Um quebra = todo mundo entra no dinheiro.</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0">
 <div style="color:#22c55e;font-weight:700">21h–23h</div>
-<div style="color:var(--foreground)">ITM — a money bubble estoura. Os jogadores restantes ensacam fichas ou jogam até um final table hoje à noite.</div>
+<div style="color:hsl(var(--foreground))">ITM — a money bubble estoura. Os jogadores restantes ensacam fichas ou jogam até um final table hoje à noite.</div>
 </div>
 </div>
 </div>
@@ -290,7 +290,7 @@ Estes 13 termos cobrem a maior parte do que você vai ouvir na mesa. Pra ver o A
 ## Checklist do primeiro torneio
 
 <div style="background:rgba(255,248,210,0.06);border:1px solid rgba(255,240,180,0.25);border-radius:12px;padding:20px 24px;margin:20px 0">
-<div style="font-size:13px;font-weight:700;color:var(--primary);margin-bottom:14px">Antes de sair de casa</div>
+<div style="font-size:13px;font-weight:700;color:hsl(var(--primary));margin-bottom:14px">Antes de sair de casa</div>
 <div style="display:grid;gap:8px;font-size:13px">
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span><strong>Documento com foto válido</strong> — passaporte ou carteira de motorista. Sem exceção.</span></div>
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span><strong>Buy-in + 20% extra</strong> em dinheiro — alguns locais não aceitam cartão</span></div>
@@ -299,7 +299,7 @@ Estes 13 termos cobrem a maior parte do que você vai ouvir na mesa. Pra ver o A
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span>Roupa confortável — torneios rolam por 6–12 horas. Leve uma jaqueta (as salas são frias).</span></div>
 </div>
 
-<div style="font-size:13px;font-weight:700;color:var(--primary);margin:16px 0 10px">No local</div>
+<div style="font-size:13px;font-weight:700;color:hsl(var(--primary));margin:16px 0 10px">No local</div>
 <div style="display:grid;gap:8px;font-size:13px">
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span>Chegue 30–45 min antes do início. As filas de registro podem ser longas.</span></div>
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span>Conte suas fichas iniciais antes de jogar a primeira mão. Avise o dealer na hora se estiver faltando.</span></div>
@@ -352,34 +352,34 @@ A. Não. Diferente de um cash game, as fichas de torneio não têm valor em dinh
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/pt/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Aprofundamento</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Torneio vs Cash Game</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Valor das fichas, blinds subindo, ICM — qual formato combina com você</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Aprofundamento</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Torneio vs Cash Game</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Valor das fichas, blinds subindo, ICM — qual formato combina com você</div>
   </a>
   <a href="/pt/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Estratégia</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Tabela de Starting Hands</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Quais mãos jogar nos níveis iniciais</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Estratégia</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Tabela de Starting Hands</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Quais mãos jogar nos níveis iniciais</div>
   </a>
   <a href="/pt/blog/holdem-short-stack" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Short Stack</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Estratégia de Short Stack</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Push-or-fold quando os blinds se aproximam</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Short Stack</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Estratégia de Short Stack</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Push-or-fold quando os blinds se aproximam</div>
   </a>
   <a href="/pt/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Comece Aqui</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Regras do Texas Hold'em pra iniciantes</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Domine o básico primeiro</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Comece Aqui</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Regras do Texas Hold'em pra iniciantes</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Domine o básico primeiro</div>
   </a>
   <a href="/pt/blog/holdem-blind-meaning" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Blinds</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">O que são os blinds no pôquer?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Os níveis de blind começam aqui — SB, BB e antes</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Blinds</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">O que são os blinds no pôquer?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Os níveis de blind começam aqui — SB, BB e antes</div>
   </a>
   <a href="/pt/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Posições</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Posições na mesa de pôquer explicadas</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Por que a sua cadeira comanda cada decisão no torneio</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Posições</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Posições na mesa de pôquer explicadas</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Por que a sua cadeira comanda cada decisão no torneio</div>
   </a>
 </div>
 `.trim(),

@@ -268,14 +268,14 @@ A. Luật cốt lõi giống nhau, nhưng có hai khác biệt thực tế. Th�
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/vi/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Bài trụ cột</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Luật Texas Hold'em cho người mới</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Trọn bộ luật từ blind tới showdown</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Bài trụ cột</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Luật Texas Hold'em cho người mới</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Trọn bộ luật từ blind tới showdown</div>
   </a>
   <a href="/vi/blog/holdem-showdown-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Showdown</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Luật showdown</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Ai lật bài trước và khi nào được úp bài bỏ</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Showdown</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Luật showdown</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Ai lật bài trước và khi nào được úp bài bỏ</div>
   </a>
 </div>
 `.trim(),

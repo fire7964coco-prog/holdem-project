@@ -449,29 +449,29 @@ A. लाइव टेबल पर एक हैंड आम तौर पर 
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/hi/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Game Flow</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">टेक्सस होल्डम खेलने का क्रम</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">पूरी हैंड का फ़्लो — preflop से showdown तक, असली उदाहरणों के साथ</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Game Flow</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">टेक्सस होल्डम खेलने का क्रम</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">पूरी हैंड का फ़्लो — preflop से showdown तक, असली उदाहरणों के साथ</div>
   </a>
   <a href="/hi/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Hand Rankings</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">पोकर हैंड रैंकिंग — सबसे अच्छे से सबसे कमज़ोर तक</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">सभी 10 हैंड — odds, उदाहरण और बोर्ड पहेलियों के साथ</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Hand Rankings</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">पोकर हैंड रैंकिंग — सबसे अच्छे से सबसे कमज़ोर तक</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">सभी 10 हैंड — odds, उदाहरण और बोर्ड पहेलियों के साथ</div>
   </a>
   <a href="/hi/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Betting</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Check, Call, Raise, Fold समझें</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">हर एक्शन कब इस्तेमाल करें + फ़ैसले की टेबल</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Betting</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Check, Call, Raise, Fold समझें</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">हर एक्शन कब इस्तेमाल करें + फ़ैसले की टेबल</div>
   </a>
   <a href="/hi/blog/holdem-showdown-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Showdown</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Showdown नियम: कौन पहले दिखाता है?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">आख़िरी aggressor, mucking, slow rolling और all-in नियम</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Showdown</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Showdown नियम: कौन पहले दिखाता है?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">आख़िरी aggressor, mucking, slow rolling और all-in नियम</div>
   </a>
   <a href="/hi/blog/holdem-all-in-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">All-In</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">All-In नियम: Side Pots और Reraises</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Main pot, side pot और re-raise की पात्रता</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">All-In</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">All-In नियम: Side Pots और Reraises</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Main pot, side pot और re-raise की पात्रता</div>
   </a>
 </div>
 `.trim(),

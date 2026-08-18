@@ -258,29 +258,29 @@ O pôquer recompensa os jogadores que tornaram isso automático. Aprenda a tabel
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/pt/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Ranking de Mãos</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Ranking de mãos de pôquer, do melhor ao pior</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">A ordem que essas odds criam — cada mão no ranking</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Ranking de Mãos</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Ranking de mãos de pôquer, do melhor ao pior</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">A ordem que essas odds criam — cada mão no ranking</div>
   </a>
   <a href="/pt/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Mãos Iniciais</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Tabela de mãos iniciais por posição</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Quais dessas 1.326 mãos realmente jogar</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Mãos Iniciais</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Tabela de mãos iniciais por posição</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Quais dessas 1.326 mãos realmente jogar</div>
   </a>
   <a href="/pt/blog/holdem-flush-vs-straight" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Confronto de Mãos</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Um flush ganha de uma sequência?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Por que a mão mais rara sempre ganha</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Confronto de Mãos</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Um flush ganha de uma sequência?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Por que a mão mais rara sempre ganha</div>
   </a>
   <a href="/pt/blog/holdem-reading-the-board" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Leitura de Mesa</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Como ler a mesa no Hold'em</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Conte seus outs enxergando cada projeto</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Leitura de Mesa</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Como ler a mesa no Hold'em</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Conte seus outs enxergando cada projeto</div>
   </a>
   <a href="/pt/blog/holdem-position-play" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Estratégia</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Como a posição muda tudo</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Quando as odds justificam um call — e quando a posição justifica</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Estratégia</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Como a posição muda tudo</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Quando as odds justificam um call — e quando a posição justifica</div>
   </a>
 </div>
 `.trim(),

@@ -230,24 +230,24 @@ A. いいえ。実際に見えるカードだけを引きます——自分の�
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/ja/blog/holdem-pot-odds" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">オッズと計算</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ポットオッズの計算方法</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">数えたアウツをコールかフォールドの判断に変える</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">オッズと計算</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ポットオッズの計算方法</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">数えたアウツをコールかフォールドの判断に変える</div>
   </a>
   <a href="/ja/blog/holdem-probability" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">オッズと計算</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ポーカーのオッズ・確率の一覧</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">すべてのドローの元になる完全リファレンス</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">オッズと計算</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ポーカーのオッズ・確率の一覧</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">すべてのドローの元になる完全リファレンス</div>
   </a>
   <a href="/ja/blog/holdem-reading-the-board" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">ボードの読み方</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ホールデムでボードを読む方法</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">すべてのドローを見抜いて、きれいなアウツを数える</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">ボードの読み方</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ホールデムでボードを読む方法</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">すべてのドローを見抜いて、きれいなアウツを数える</div>
   </a>
   <a href="/ja/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">スターティングハンド</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ポジション別スターティングハンド表</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">そもそもドローする価値のある手でポットに入る</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">スターティングハンド</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ポジション別スターティングハンド表</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">そもそもドローする価値のある手でポットに入る</div>
   </a>
 </div>
 `.trim(),

@@ -241,24 +241,24 @@ Mach das ein paar hundert Mal und es hört auf, Mathematik zu sein, und wird zum
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/de/blog/holdem-probability" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Odds & Mathematik</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Tabelle für Poker-Odds und Wahrscheinlichkeiten</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Jede Hand, jeder Flop, jeder Draw – die Zahlen hinter dem Preis</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Odds & Mathematik</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Tabelle für Poker-Odds und Wahrscheinlichkeiten</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Jede Hand, jeder Flop, jeder Draw – die Zahlen hinter dem Preis</div>
   </a>
   <a href="/de/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Starthände</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Starthand-Tabelle nach Position</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Steig in Pots mit Händen ein, die sich zum Drawen lohnen</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Starthände</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Starthand-Tabelle nach Position</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Steig in Pots mit Händen ein, die sich zum Drawen lohnen</div>
   </a>
   <a href="/de/blog/holdem-reading-the-board" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Board lesen</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Das Board lesen im Hold'em</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Zähle deine Outs, indem du jeden Draw erkennst</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Board lesen</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Das Board lesen im Hold'em</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Zähle deine Outs, indem du jeden Draw erkennst</div>
   </a>
   <a href="/de/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Cash vs. Turnier</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Turnier vs. Cash Game</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Warum Implied Odds im Cash Game tiefer reichen</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Cash vs. Turnier</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Turnier vs. Cash Game</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Warum Implied Odds im Cash Game tiefer reichen</div>
   </a>
 </div>
 `.trim(),

@@ -340,34 +340,34 @@ Depois de saber o ranking, o próximo passo natural é saber com quais mãos com
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/pt/blog/holdem-flush-vs-straight" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Duelo de Mãos</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">O flush ganha da sequência?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">A matemática, as leituras erradas e todas as regras de empate</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Duelo de Mãos</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">O flush ganha da sequência?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">A matemática, as leituras erradas e todas as regras de empate</div>
   </a>
   <a href="/pt/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Desempate</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Regras de kicker e desempate</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Mesmo par — quem ganha? Regras de kicker e pote dividido</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Desempate</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Regras de kicker e desempate</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Mesmo par — quem ganha? Regras de kicker e pote dividido</div>
   </a>
   <a href="/pt/blog/holdem-split-pot-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Pote Dividido</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Quando o pote é dividido?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Regras de chop e as 5 situações de empate explicadas</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Pote Dividido</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Quando o pote é dividido?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Regras de chop e as 5 situações de empate explicadas</div>
   </a>
   <a href="/pt/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Guia Iniciante</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Regras do Texas Hold'em para iniciantes</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Regras completas do deal ao showdown</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Guia Iniciante</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Regras do Texas Hold'em para iniciantes</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Regras completas do deal ao showdown</div>
   </a>
   <a href="/pt/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Mãos Iniciais</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Tabela de mãos iniciais por posição</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Quais cartas jogar do UTG ao button</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Mãos Iniciais</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Tabela de mãos iniciais por posição</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Quais cartas jogar do UTG ao button</div>
   </a>
   <a href="/pt/blog/holdem-reading-the-board" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Leitura da Mesa</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Como ler a mesa no Hold'em</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Ache suas melhores 5 cartas entre 7 — mesa molhada vs seca</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Leitura da Mesa</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Como ler a mesa no Hold'em</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Ache suas melhores 5 cartas entre 7 — mesa molhada vs seca</div>
   </a>
 </div>
 `.trim(),

@@ -448,24 +448,24 @@ Come passo successivo, ripassa la classifica delle mani del Texas Hold'em, allen
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/it/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Flusso di gioco</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">L'ordine di gioco del Texas Hold'em</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Il flusso di una mano intera — dal preflop allo showdown con esempi reali</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Flusso di gioco</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">L'ordine di gioco del Texas Hold'em</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Il flusso di una mano intera — dal preflop allo showdown con esempi reali</div>
   </a>
   <a href="/it/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Puntate</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Check, chiamare, rilanciare, passare</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Quando usare ogni azione + tabella decisionale</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Puntate</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Check, chiamare, rilanciare, passare</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Quando usare ogni azione + tabella decisionale</div>
   </a>
   <a href="/it/blog/holdem-showdown-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Showdown</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Regole dello showdown: chi scopre per primo?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Ultimo aggressore, muck, slow roll e regole dell'all-in</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Showdown</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Regole dello showdown: chi scopre per primo?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Ultimo aggressore, muck, slow roll e regole dell'all-in</div>
   </a>
   <a href="/it/blog/holdem-all-in-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">All-In</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Regole dell'all-in: side pot e rilanci</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Piatto principale, side pot e diritto al rilancio</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">All-In</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Regole dell'all-in: side pot e rilanci</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Piatto principale, side pot e diritto al rilancio</div>
   </a>
 </div>
 `.trim(),

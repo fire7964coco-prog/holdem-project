@@ -263,14 +263,14 @@ A. बुनियादी नियम एक ही हैं, पर दो 
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/hi/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Pillar</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">शुरुआती के लिए टेक्सस होल्डम नियम</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">blinds से showdown तक पूरे नियम</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Pillar</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">शुरुआती के लिए टेक्सस होल्डम नियम</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">blinds से showdown तक पूरे नियम</div>
   </a>
   <a href="/hi/blog/holdem-showdown-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Showdown</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Showdown नियम</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">पहले कौन दिखाता है और कब muck कर सकते हैं</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Showdown</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Showdown नियम</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">पहले कौन दिखाता है और कब muck कर सकते हैं</div>
   </a>
 </div>
 `.trim(),

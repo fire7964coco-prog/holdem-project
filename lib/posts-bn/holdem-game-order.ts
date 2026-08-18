@@ -383,14 +383,14 @@ A. চারটা: preflop, flop, turn আর river। Blind হলো বা�
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/bn/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">শুরুর গাইড</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">শুরুর জন্য টেক্সাস হোল্ডেমের নিয়ম</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">পুরো নিয়ম, chips, হ্যান্ড র‍্যাঙ্কিং + প্রিন্ট করার মতো PDF</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">শুরুর গাইড</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">শুরুর জন্য টেক্সাস হোল্ডেমের নিয়ম</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">পুরো নিয়ম, chips, হ্যান্ড র‍্যাঙ্কিং + প্রিন্ট করার মতো PDF</div>
   </a>
   <a href="/bn/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Betting অ্যাকশন</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Betting অ্যাকশন ব্যাখ্যা</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">check-call-raise-fold decision টেবিল সহ পূর্ণ গাইড</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Betting অ্যাকশন</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Betting অ্যাকশন ব্যাখ্যা</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">check-call-raise-fold decision টেবিল সহ পূর্ণ গাইড</div>
   </a>
 </div>
 `.trim(),

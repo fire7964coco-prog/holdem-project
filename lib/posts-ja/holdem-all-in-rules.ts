@@ -267,19 +267,19 @@ A. 自分の残りチップ全部でコール（オールインでコール）�
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/ja/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Pillar</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">テキサスホールデム初心者ルール</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">ブラインドからショーダウンまでの完全ガイド</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Pillar</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">テキサスホールデム初心者ルール</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">ブラインドからショーダウンまでの完全ガイド</div>
   </a>
   <a href="/ja/blog/holdem-split-pot-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">スプリットポット</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">スプリットポットとチョップのルール</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">ポットが分割されるのはどんな時か、その理由</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">スプリットポット</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">スプリットポットとチョップのルール</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">ポットが分割されるのはどんな時か、その理由</div>
   </a>
   <a href="/ja/blog/holdem-showdown-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Showdown</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ショーダウンのルール</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">誰が先に見せるか、いつマックできるか</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Showdown</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ショーダウンのルール</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">誰が先に見せるか、いつマックできるか</div>
   </a>
 </div>
 `.trim(),

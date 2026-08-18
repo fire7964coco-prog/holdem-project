@@ -383,19 +383,19 @@ Decore a sequência, treine em mesas grátis e você nunca mais vai travar sem s
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/pt/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Guia para iniciantes</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Regras do Texas Hold'em para iniciantes</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Regras completas, fichas, ranking de mãos + PDF para imprimir</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Guia para iniciantes</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Regras do Texas Hold'em para iniciantes</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Regras completas, fichas, ranking de mãos + PDF para imprimir</div>
   </a>
   <a href="/pt/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Ranking de mãos</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Ranking de mãos de poker — da melhor à pior</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">As 10 mãos com probabilidades, exemplos e problemas de mesa</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Ranking de mãos</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Ranking de mãos de poker — da melhor à pior</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">As 10 mãos com probabilidades, exemplos e problemas de mesa</div>
   </a>
   <a href="/pt/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Posições</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Posições no pôquer: do UTG ao botão</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Mapa de assentos, ranges de abertura e por que a posição vence</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Posições</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Posições no pôquer: do UTG ao botão</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Mapa de assentos, ranges de abertura e por que a posição vence</div>
   </a>
 </div>
 `.trim(),

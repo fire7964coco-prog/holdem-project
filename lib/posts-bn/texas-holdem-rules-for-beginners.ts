@@ -449,29 +449,29 @@ A. সরাসরি টেবিলে একটা হ্যান্ডে �
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/bn/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Game Flow</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">টেক্সাস হোল্ডেম খেলার ক্রম</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">পুরো হ্যান্ডের ফ্লো — preflop থেকে showdown পর্যন্ত, আসল উদাহরণসহ</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Game Flow</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">টেক্সাস হোল্ডেম খেলার ক্রম</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">পুরো হ্যান্ডের ফ্লো — preflop থেকে showdown পর্যন্ত, আসল উদাহরণসহ</div>
   </a>
   <a href="/bn/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Betting</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Check, Call, Raise, Fold বুঝুন</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">প্রতিটি অ্যাকশন কখন ব্যবহার করবেন + সিদ্ধান্তের টেবিল</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Betting</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Check, Call, Raise, Fold বুঝুন</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">প্রতিটি অ্যাকশন কখন ব্যবহার করবেন + সিদ্ধান্তের টেবিল</div>
   </a>
   <a href="/bn/blog/holdem-showdown-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Showdown</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Showdown নিয়ম: কে আগে দেখায়?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">শেষ aggressor, mucking, slow rolling আর all-in নিয়ম</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Showdown</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Showdown নিয়ম: কে আগে দেখায়?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">শেষ aggressor, mucking, slow rolling আর all-in নিয়ম</div>
   </a>
   <a href="/bn/blog/holdem-all-in-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">All-In</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">All-In নিয়ম: Side Pots আর Reraises</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Main pot, side pot আর re-raise-এর যোগ্যতা</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">All-In</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">All-In নিয়ম: Side Pots আর Reraises</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Main pot, side pot আর re-raise-এর যোগ্যতা</div>
   </a>
   <a href="/bn/blog/holdem-blind-meaning" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Blinds</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Small Blind আর Big Blind মানে কী</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">blinds কেন থাকে আর কীভাবে ঘোরে</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Blinds</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Small Blind আর Big Blind মানে কী</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">blinds কেন থাকে আর কীভাবে ঘোরে</div>
   </a>
 </div>
 `.trim(),

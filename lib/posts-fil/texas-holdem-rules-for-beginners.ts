@@ -449,29 +449,29 @@ Para sa susunod mong hakbang, i-review ang Texas Hold'em hand rankings, mag-prac
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/fil/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Game Flow</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Texas Hold'em Order of Play</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Buong hand flow — preflop hanggang showdown na may totoong examples</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Game Flow</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Texas Hold'em Order of Play</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Buong hand flow — preflop hanggang showdown na may totoong examples</div>
   </a>
   <a href="/fil/blog/holdem-blind-meaning" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Blinds</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Ano ang Small Blind at Big Blind</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Paano gumagana ang forced bets at bakit ito umiiral</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Blinds</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Ano ang Small Blind at Big Blind</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Paano gumagana ang forced bets at bakit ito umiiral</div>
   </a>
   <a href="/fil/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Betting</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Check, Call, Raise, Fold Ipinaliwanag</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Kailan gamitin ang bawat action + decision table</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Betting</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Check, Call, Raise, Fold Ipinaliwanag</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Kailan gamitin ang bawat action + decision table</div>
   </a>
   <a href="/fil/blog/holdem-showdown-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Showdown</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Showdown Rules: Sino ang Unang Magpapakita?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Last aggressor, mucking, slow rolling, at all-in rules</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Showdown</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Showdown Rules: Sino ang Unang Magpapakita?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Last aggressor, mucking, slow rolling, at all-in rules</div>
   </a>
   <a href="/fil/blog/holdem-all-in-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">All-In</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">All-In Rules: Side Pots at Reraises</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Main pot, side pot, at re-raise eligibility</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">All-In</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">All-In Rules: Side Pots at Reraises</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Main pot, side pot, at re-raise eligibility</div>
   </a>
 </div>
 `.trim(),

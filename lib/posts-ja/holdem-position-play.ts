@@ -308,24 +308,24 @@ A. ポットに参加するなら、たいていイエス——SBからの現代
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/ja/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">ポジション</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ポーカーのポジション名とテーブル図</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">UTG・ロージャック・ハイジャック・カットオフ・ボタン——全席を解説</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">ポジション</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ポーカーのポジション名とテーブル図</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">UTG・ロージャック・ハイジャック・カットオフ・ボタン——全席を解説</div>
   </a>
   <a href="/ja/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">スターティングハンド</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ポジション別スターティングハンド表</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">各席でどのハンドをプレーするか——印刷できる早見表</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">スターティングハンド</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ポジション別スターティングハンド表</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">各席でどのハンドをプレーするか——印刷できる早見表</div>
   </a>
   <a href="/ja/blog/holdem-blind-meaning" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">ブラインド</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">スモールブラインドとビッグブラインド戦略</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">「割引された」席が、なぜ最も利益を出しにくいのか</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">ブラインド</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">スモールブラインドとビッグブラインド戦略</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">「割引された」席が、なぜ最も利益を出しにくいのか</div>
   </a>
   <a href="/ja/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">トーナメント</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">トーナメント vs キャッシュゲーム戦略</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">ICMが効くとき、ポジションの判断がどう変わるか</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">トーナメント</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">トーナメント vs キャッシュゲーム戦略</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">ICMが効くとき、ポジションの判断がどう変わるか</div>
   </a>
 </div>
 `.trim(),

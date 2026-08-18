@@ -193,24 +193,24 @@ Pemain terbaik kalah cooler persis sebanyak orang lain; mereka hanya tak membiar
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/id/blog/holdem-fish" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Glosarium</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Apa Itu Fish?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Pemain yang menyebut cooler sebagai bad beat</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Glosarium</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Apa Itu Fish?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Pemain yang menyebut cooler sebagai bad beat</div>
   </a>
   <a href="/id/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Peringkat Kartu</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Siapa Menang di Showdown</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Bagaimana seri dan tangan kedua-terbaik ditentukan</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Peringkat Kartu</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Siapa Menang di Showdown</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Bagaimana seri dan tangan kedua-terbaik ditentukan</div>
   </a>
   <a href="/id/blog/holdem-straddle" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Glosarium</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Apa Itu Straddle?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Taruhan yang membangun pot lebih besar dan rawan cooler</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Glosarium</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Apa Itu Straddle?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Taruhan yang membangun pot lebih besar dan rawan cooler</div>
   </a>
   <a href="/id/blog/holdem-pot-odds" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">Peluang &amp; Matematika</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">Cara Menghitung Pot Odds</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">Bedakan cooler dari call yang seharusnya Anda fold</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Peluang &amp; Matematika</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Cara Menghitung Pot Odds</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Bedakan cooler dari call yang seharusnya Anda fold</div>
   </a>
 </div>
 `.trim(),

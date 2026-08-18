@@ -66,15 +66,15 @@ WSOP 메인이벤트 바이인은 $10,000입니다. 한화로 약 1,400만 원.
 <div style="flex-shrink:0;width:36px;height:36px;border-radius:50%;background:rgba(234,179,8,0.2);display:flex;align-items:center;justify-content:center;font-size:18px;margin-top:2px">⚠️</div>
 <div>
 <div style="font-size:15px;font-weight:800;color:#ca8a04;margin-bottom:10px">GGPoker 이용 가능 지역 확인 필수</div>
-<p style="font-size:14px;color:var(--foreground);line-height:1.7;margin:0 0 12px">GGPoker는 영국·캐나다·호주·뉴질랜드·유럽·남미 등에서 정식 서비스 중입니다. 본인 거주지의 온라인 포커 관련 법령을 반드시 확인하고, 합법적으로 이용 가능한 환경에서만 참가하세요.</p>
+<p style="font-size:14px;color:hsl(var(--foreground));line-height:1.7;margin:0 0 12px">GGPoker는 영국·캐나다·호주·뉴질랜드·유럽·남미 등에서 정식 서비스 중입니다. 본인 거주지의 온라인 포커 관련 법령을 반드시 확인하고, 합법적으로 이용 가능한 환경에서만 참가하세요.</p>
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:13px">
 <div style="padding:10px 14px;background:rgba(34,197,94,0.07);border-radius:8px;border:1px solid rgba(34,197,94,0.25)">
 <div style="font-weight:700;color:#22c55e;margin-bottom:4px">이용 가능</div>
-<div style="color:var(--muted-foreground)">영국·캐나다·호주·유럽·남미 등</div>
+<div style="color:hsl(var(--muted-foreground))">영국·캐나다·호주·유럽·남미 등</div>
 </div>
 <div style="padding:10px 14px;background:rgba(239,68,68,0.08);border-radius:8px;border:1px solid rgba(239,68,68,0.25)">
 <div style="font-weight:700;color:#ef4444;margin-bottom:4px">가입 전 확인</div>
-<div style="color:var(--muted-foreground)">거주지 법령 확인 후 가입 (ggpoker.com 가입 화면에서 국가 목록 직접 확인)</div>
+<div style="color:hsl(var(--muted-foreground))">거주지 법령 확인 후 가입 (ggpoker.com 가입 화면에서 국가 목록 직접 확인)</div>
 </div>
 </div>
 </div>

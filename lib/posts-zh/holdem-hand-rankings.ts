@@ -411,34 +411,34 @@ A. 主要就一处翻转。标准德州里牌型从大到小是**葫芦 > 同花
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/zh/blog/holdem-flush-vs-straight" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">牌型对决</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">同花赢顺子吗？</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">背后的数学、常见误读，以及每条平局规则</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">牌型对决</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">同花赢顺子吗？</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">背后的数学、常见误读，以及每条平局规则</div>
   </a>
   <a href="/zh/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">比牌规则</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">踢脚牌与比牌规则</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">同样的对子——谁赢？踢脚牌与分池规则</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">比牌规则</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">踢脚牌与比牌规则</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">同样的对子——谁赢？踢脚牌与分池规则</div>
   </a>
   <a href="/zh/blog/holdem-split-pot-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">分池</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">什么时候平分底池？</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">平分规则与5种平局情形详解</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">分池</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">什么时候平分底池？</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">平分规则与5种平局情形详解</div>
   </a>
   <a href="/zh/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">新手指南</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">德州扑克新手规则</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">从发牌到摊牌的完整规则</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">新手指南</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">德州扑克新手规则</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">从发牌到摊牌的完整规则</div>
   </a>
   <a href="/zh/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">起手牌</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">按位置排的起手牌图表</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">从 UTG 到按钮位该玩哪些底牌</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">起手牌</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">按位置排的起手牌图表</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">从 UTG 到按钮位该玩哪些底牌</div>
   </a>
   <a href="/zh/blog/holdem-reading-the-board" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">读牌</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">德州扑克怎么读牌面</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">从7张里找出最好的5张——湿面 vs 干面</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">读牌</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">德州扑克怎么读牌面</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">从7张里找出最好的5张——湿面 vs 干面</div>
   </a>
 </div>
 `.trim(),

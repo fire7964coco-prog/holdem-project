@@ -308,24 +308,24 @@ A. VPIP(Voluntarily Put money In Pot)は、プレイヤーがプリフロップ�
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/ja/blog/holdem-fish" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">用語集</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">カモ(フィッシュ)とは?</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">プレイヤーのタイプを読み解く</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">用語集</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">カモ(フィッシュ)とは?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">プレイヤーのタイプを読み解く</div>
   </a>
   <a href="/ja/blog/holdem-cooler" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">用語集</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">クーラー vs バッドビート</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">誰もが混同する2つの負け方</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">用語集</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">クーラー vs バッドビート</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">誰もが混同する2つの負け方</div>
   </a>
   <a href="/ja/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">ルール</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ベットのアクション</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">チェック・ベット・コール・レイズ・フォールド</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">ルール</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ベットのアクション</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">チェック・ベット・コール・レイズ・フォールド</div>
   </a>
   <a href="/ja/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">役の強さ</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">何が何に勝つか</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">役の強さの全順位</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">役の強さ</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">何が何に勝つか</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">役の強さの全順位</div>
   </a>
 </div>
 `.trim(),

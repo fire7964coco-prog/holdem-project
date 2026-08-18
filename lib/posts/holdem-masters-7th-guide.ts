@@ -34,13 +34,13 @@ export const POST: Post = {
 
 <div style="background:rgba(212,175,55,0.10);border:2px solid rgba(212,175,55,0.50);border-radius:14px;padding:20px 24px;margin:24px 0">
 <div style="font-size:15px;font-weight:800;color:#b8912a;margin-bottom:10px">🏆 제7회 최종 결과 — 그리고 제8회는 지금 진행 중입니다</div>
-<div style="font-size:13px;color:var(--muted-foreground);line-height:1.9">
-▸ <strong style="color:var(--foreground)">챔피언스 메인이벤트 우승 — 강경식</strong> · 우승 상금 <strong style="color:var(--foreground)">2억 원</strong> (8월 2일)<br/>
-▸ <strong style="color:var(--foreground)">챌린저스 메인이벤트 우승 — 이준우</strong> · 우승 상금 <strong style="color:var(--foreground)">1억 원</strong> (8월 1일)<br/>
-▸ <strong style="color:var(--foreground)">제8회 진행 중</strong> — 8월 3일 개막 ~ 10월 5일 · DAY1 플라이트 28회 공개
+<div style="font-size:13px;color:hsl(var(--muted-foreground));line-height:1.9">
+▸ <strong style="color:hsl(var(--foreground))">챔피언스 메인이벤트 우승 — 강경식</strong> · 우승 상금 <strong style="color:hsl(var(--foreground))">2억 원</strong> (8월 2일)<br/>
+▸ <strong style="color:hsl(var(--foreground))">챌린저스 메인이벤트 우승 — 이준우</strong> · 우승 상금 <strong style="color:hsl(var(--foreground))">1억 원</strong> (8월 1일)<br/>
+▸ <strong style="color:hsl(var(--foreground))">제8회 진행 중</strong> — 8월 3일 개막 ~ 10월 5일 · DAY1 플라이트 28회 공개
 </div>
-<p style="font-size:14px;color:var(--foreground);line-height:1.7;margin:14px 0 0"><strong>제7회 초대권 경로는 모두 마감됐습니다.</strong> 지금 초대권을 딸 수 있는 대회는 <strong>제8회</strong>이고, 새틀라이트는 10월 1일까지 열려 있습니다.</p>
-<p style="font-size:12px;color:var(--muted-foreground);margin:12px 0 0;line-height:1.6">※ 일정은 주최 측 공지로 변경될 수 있습니다. 참가 직전 WPL 앱 토너먼트 탭에서 당일 기준으로 다시 확인하세요. 2026-08-06 공식 페이지 확인.</p>
+<p style="font-size:14px;color:hsl(var(--foreground));line-height:1.7;margin:14px 0 0"><strong>제7회 초대권 경로는 모두 마감됐습니다.</strong> 지금 초대권을 딸 수 있는 대회는 <strong>제8회</strong>이고, 새틀라이트는 10월 1일까지 열려 있습니다.</p>
+<p style="font-size:12px;color:hsl(var(--muted-foreground));margin:12px 0 0;line-height:1.6">※ 일정은 주최 측 공지로 변경될 수 있습니다. 참가 직전 WPL 앱 토너먼트 탭에서 당일 기준으로 다시 확인하세요. 2026-08-06 공식 페이지 확인.</p>
 </div>
 
 ==g:우승 상금이 제6회의 두 배가 됐습니다.== 제6회 메인이벤트 우승 상금은 1억 원(이성기)이었는데, 제7회는 **챔피언스 2억 원**입니다. 다만 이건 대회 구조가 바뀐 결과이기도 합니다 — 제7회부터 메인이벤트가 **챔피언스·챌린저스 두 갈래**로 나뉘었고, 챌린저스 우승 상금 1억 원은 제6회와 같습니다. 상위 트랙이 하나 얹힌 셈입니다.
@@ -82,7 +82,7 @@ export const POST: Post = {
   <img src="/images/wpl-7th-schedule-8.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 8" width="900" height="1270" loading="lazy" sizes="(max-width: 768px) 100vw, 1080px" style="width:100%;display:block" />
   <img src="/images/wpl-7th-schedule-9.webp" alt="WPL 제7회 홀덤 마스터스 공식 일정표 9" width="900" height="1270" loading="lazy" sizes="(max-width: 768px) 100vw, 1080px" style="width:100%;display:block" />
 </div>
-<p style="font-size:12px;color:var(--muted-foreground);margin-top:4px">이미지 출처: WPL 공식 (<a href="https://wpl.winjoygame.com" target="_blank" rel="noopener">wpl.winjoygame.com</a>)</p>
+<p style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">이미지 출처: WPL 공식 (<a href="https://wpl.winjoygame.com" target="_blank" rel="noopener">wpl.winjoygame.com</a>)</p>
 
 6회 대비 가장 크게 바뀐 점은 ==g:참가 구조 단순화==입니다. 이전에는 초대권 종류가 여럿 있었지만, 이번 7회는 **초대권 1장으로 메인 이벤트 DAY1 직행**. 복잡하게 생각할 필요 없이 새틀라이트만 통과하면 됩니다.
 
@@ -417,24 +417,24 @@ A. 충분히 가능합니다. 홀덤 마스터스는 아마추어부터 프로�
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/blog/holdem-tournament-how-to-enter" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">참가 가이드</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">홀덤 대회 참가 방법 단계별 가이드</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">온라인 무료부터 WSOP까지</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">참가 가이드</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">홀덤 대회 참가 방법 단계별 가이드</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">온라인 무료부터 WSOP까지</div>
   </a>
   <a href="/blog/holdem-bubble-strategy" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">버블 전략</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">홀덤 버블 전략 실전 분석</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">빅·미들·숏스택 버블 생존법</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">버블 전략</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">홀덤 버블 전략 실전 분석</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">빅·미들·숏스택 버블 생존법</div>
   </a>
   <a href="/blog/icm-poker-meaning" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">ICM</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">ICM이란? 토너먼트 필수 개념</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">칩이 돈이 아닌 이유</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">ICM</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ICM이란? 토너먼트 필수 개념</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">칩이 돈이 아닌 이유</div>
   </a>
   <a href="/tournaments" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px">대회 목록</div>
-    <div style="font-size:14px;font-weight:700;color:var(--foreground);line-height:1.4">국내외 홀덤 대회 목록</div>
-    <div style="font-size:12px;color:var(--muted-foreground);margin-top:4px">KPT, WPL, APT, WSOP 한눈에</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">대회 목록</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">국내외 홀덤 대회 목록</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">KPT, WPL, APT, WSOP 한눈에</div>
   </a>
 </div>
 `.trim(),
