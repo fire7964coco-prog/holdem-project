@@ -3,7 +3,7 @@ import type { Post } from "../posts";
 export const POST: Post = {
   slug: "holdem-position-play",
   title: "Positions-Strategie: In Position vs Out of Position",
-  seoTitle: "Position schlägt Karten – In vs Out of Position",
+  seoTitle: "Position im Poker: warum sie Karten schlägt (IP vs OOP)",
   desc: "Zwei Spieler, gleiche Karten, gegensätzliche Ergebnisse – der Sitz hat's gemacht. In vs out of Position, warum Position zählt und Open-Ranges von UTG bis BTN.",
   tldr: "In Position zu sein bedeutet, dass du zuletzt handelst – du siehst jede Entscheidung deiner Gegner, bevor du einen Chip ausgibst. Solver- und Datenbank-Studien legen nahe, dass Out-of-Position-Spieler nur etwa 60–85% ihrer Equity mitnehmen – in Position liegst du dann zwangsläufig über 100%. Deshalb öffnet UTG ~13% der Hände und der Button ~43% – und deshalb schreibt Position postflop jede C-Bet, jeden Bluff und jede Pot-Control-Entscheidung neu.",
   category: "strategy",

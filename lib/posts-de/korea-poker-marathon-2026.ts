@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "korea-poker-marathon-2026",
   title: "Korea Run + Play 2026 – Marathon & Poker auf einer Reise",
   seoTitle: "Korea Poker & Marathon 2026 – Chuncheon, JTBC + Paradise City Guide",
-  desc: "Für 2026 nimmt nur noch der JTBC Seoul Anmeldungen entgegen – Chuncheon und YTN sind zu. Renn-Kalender, Anmeldefenster und Poker im Paradise City auf einer Reise.",
+  desc: "Für 2026 nimmt nur der JTBC Seoul noch Anmeldungen an – Chuncheon und YTN sind zu. Renn-Kalender, Anmeldefenster und Poker im Paradise City auf einer Reise.",
   tldr: "Koreas beste Herbstmarathons (Chuncheon 25. Okt, JTBC Seoul 1. Nov, Garmin Run 15. Nov) treffen auf perfektes Laufwetter – für 2026 ist allerdings nur noch der JTBC Seoul offen, Chuncheon und Garmin Run haben im Juli geschlossen. Das Paradise City Casino nahe dem Flughafen Incheon bietet Cash Games – nur für Ausländer, 10 Min. vom Terminal. Eine Reise deckt beides ab.",
   category: "tournament",
   date: "2026-06-19",
