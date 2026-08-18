@@ -404,7 +404,7 @@ A. Keduanya bisa, tapi ==g:disarankan tiba 2–3 hari lebih awal==. Anda pulih d
 
 ## Poin Penting
 
-1. **APT Incheon 2026** berlangsung ==**7–16 Agustus**== di Paradise City Casino — 10 menit dari Bandara Incheon dengan shuttle gratis, GTD $2,7 juta.
+1. **APT Incheon 2026** sudah berlangsung ==**7–16 Agustus**== di Paradise City Casino — 10 menit dari Bandara Incheon dengan shuttle gratis, GTD $2,7 juta.
 2. **Main Event** buy-in: ==**~$1.703**== dengan ==g:garansi $1 juta==. Sekitar sepertiga buy-in Main EPT Barcelona dan separuh buy-in Championship WPT Australia.
 3. **Kualifikasi online sudah selesai** — Mega $35 dan OnLive tutup 2 Agustus, jalur terakhir (Step $20 → Mega $200) tutup 7 Agustus. Sekarang masuknya lewat pendaftaran di lokasi.
 4. **Seoul berjarak 60 mnt** dan merupakan salah satu destinasi wisata terbaik di Asia — ==g:istana, BBQ, kehidupan malam, dan street food tak tertandingi.==

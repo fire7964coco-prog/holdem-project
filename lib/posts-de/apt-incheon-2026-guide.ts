@@ -400,7 +400,7 @@ A. Beides geht, aber ==g:2–3 Tage früher anzureisen ist empfehlenswert==. Du 
 
 ## Die Kernpunkte
 
-1. **APT Incheon 2026** läuft ==**7.–16. Aug**== im Paradise City Casino – 10 Min vom Flughafen Incheon mit dem kostenlosen Shuttle, $2,7M GTD.
+1. **APT Incheon 2026** lief ==**7.–16. Aug**== im Paradise City Casino – 10 Min vom Flughafen Incheon mit dem kostenlosen Shuttle, $2,7M GTD.
 2. **Main Event** Buy-in: ==**~$1.703**== mit ==g:$1M garantiert==. Rund ein Drittel des EPT-Barcelona-Main und die Hälfte des WPT-Australia-Championship-Buy-ins.
 3. **Die Online-Qualifikation war schon vor dem ersten Spieltag beendet** – $35-Mega und OnLive endeten am 2. August, die letzte Route ($20 Step → $200 Mega) am 7. August.
 4. **Seoul ist 60 Min entfernt** und eines der besten Reiseziele Asiens – ==g:Paläste, BBQ, Nachtleben und unschlagbares Streetfood.==
