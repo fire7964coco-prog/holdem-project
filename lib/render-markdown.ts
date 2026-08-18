@@ -234,6 +234,14 @@ export function renderMarkdown(content: string, locale?: string): string {
     )
     .replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, (_m, t, u) => `<a href="${u}" target="_blank" rel="noopener noreferrer" class="brush-link" style="--hl:${LINK_HL[hlIdx++ % LINK_HL.length]}">${t} ↗</a>`)
     .replace(/\[([^\]]+)\]\((?!https?:\/\/)([^)]+)\)/g, (_m, t, u) => `<a href="${u}" class="brush-link" style="--hl:${LINK_HL[hlIdx++ % LINK_HL.length]}">${t}</a>`)
+    // 🔴 H2 «직전»의 --- 는 hr 로 그리지 않는다 (2026-08-18 · UX 브리프 §3 #1).
+    // 이유: 위 151행의 h2 가 이미 border-b-2 로 «자기 밑줄»을 갖는다. hr 을 같이 그리면
+    // 40px 안에 회색 선 + 골드 밑줄이 겹쳐 «구분 신호가 중복»된다(브리프 §0 ②).
+    // 실측 근거: `---` 6,528개 중 5,393개(82.6%)가 H2 직전이고, KO 72편의 hr 712 ↔ h2 743 이 거의 1:1.
+    // 🔴 전부 지우면 안 된다 — 나머지 1,135개는 :::readnext 카드·:::stripe·:::note 앞이라
+    //    «진짜» 구분자다(그 블록들은 자기 밑줄이 없다). 조건 없이 지운 판본으로 되돌리지 마라.
+    // 이 자리는 h2 변환(151행) «뒤»여야 성립한다 — 순서를 올리면 <h2 가 아직 '## ' 라 매칭이 깨진다.
+    .replace(/^---$\n+(?=<h2 )/gm, '')
     .replace(/^---$/gm, '<hr class="border-border my-8" />')
     // 마크다운 표를 블록 단위(헤더+구분행+본문)로 파싱 — 구분행의 열 정렬(:---: 가운데 / ---: 오른쪽 / 기본 왼쪽) 반영 + 첫 행을 헤더로 확정(한글 대소문자 휴리스틱 제거)
     .replace(
