@@ -3,6 +3,58 @@
 > 목표: holdemmaster.com 구글 1페이지 달성
 > 전략: 기술 SEO(SSG) + 블로그 50편 + 필라-클러스터 내부링크 구조
 
+## 2026-08-18 (3) — **de 축A 회차⑤: G1 seoTitle 축 15편 — 실제 `<title>`에 앵커 복구** (`6d9f42a5`)
+
+지시서 G1(S4·S5 10편) + S6 §2-A(5편). 실제 `<title>`은 `title`이 아니라 **`seoTitle`**인데
+(`lib/intl-blog-page.tsx` 41행) 그 필드에 포커 앵커가 통째로 없었다.
+
+### 결함의 모양 — 내부 `title`은 완벽한데 노출되는 `seoTitle`이 앵커를 버렸다
+
+용어집 5편이 전형: `title`은 전부 `Was ist ein X **beim Poker**?`인데 `seoTitle`은 훅만 남겼다.
+**SERP에 나가는 문자열엔 「Poker」가 0회.**
+
+뱅크 근거 — 시드⑥ **「용어 시드는 `beim poker`를 반드시 붙여야 한다」**: `was ist ein rake` 계열이
+**드라마 브리저튼(rake=난봉꾼)**에 잠식돼 있다는 실측이 근거다. `straddle`(금융 옵션)·`cooler`
+(위키 동음이의 SERP 6위)도 같은 축. 시드⑬ **「약어 단독 = 전량 폐기」**: `icm` 단독은
+**폴란드 기상청·프라모델 브랜드**가 점령했다.
+
+### 🔴 지시서에 없던 제약 — 브랜드 접미 때문에 «앵커 위치»가 중요하다
+
+실제 `<title>` = `${seoTitle} | HoldemMaster` — **접미 15자가 붙는다.** 앵커를 뒤에 두면
+잘려서 SERP에 안 보인다. → **앵커를 앞쪽 45자 안**, seoTitle 자체 **≤55자**로 잡았다.
+15편 평균 **56 → 51자**로 오히려 짧아졌다(훅은 유지 · §17).
+
+**눈대중하지 않았다** — 적용 전 길이·앵커 위치·§17 금지어·**도입구 중복**을 기계로 검증했고
+3건이 1자 초과로 걸려 다듬었다. 도입구 중복 검사는 지시서가 짚은 「icm ↔ tournament-vs-cash-game이
+둘 다 "Deine Chips sind…"로 시작」을 잡기 위한 것 → icm을 **「ICM Poker erklärt…」**로 갈랐다
+(`icm poker` 140/월 완전일치).
+
+### 🔴 부수 발견 — desc 160자 하드리밋을 **전 로케일 29편**이 위반 중
+
+de 2편(`apt-incheon` 163 · `korea-poker-marathon` 162)은 **이번에 고쳤다**(157·156, 앵커 동시 삽입).
+전 로케일로 넓히니 **29편**이 §11-7 「160자 초과 절대 금지」 위반이다 —
+en 7 · tr 4 · id 3 · pt 3 · es 2 · zh 2 · ms 2 · ar·fa·hi·ro·vi 각 1. 최악 **ms/hand-rankings 235자**.
+
+> 🔴 **원인은 커버리지 구멍이다.** `audit:hard --locale`은 «언어 불변 항목»만 봐서
+> **메타 길이를 아예 안 본다**(REVIEW-PROTOCOL에 그렇게 명시돼 있다).
+> **이번 회차에서 안 고쳤다** — 29편 다국어 재작성은 별건이고, 게이트를 지금 빌드에 걸면
+> **배포가 곧바로 깨진다.** 다음 회차 후보로 올린다(고치기 → 게이트 순서로).
+
+### 남은 8편 (지시서 범위 밖 · 판정하고 안 건드림)
+
+앵커 없는 de seoTitle 8편(ept-barcelona · all-in-rules · flush-vs-straight · implied-odds ·
+pot-odds · short-stack · split-pot-rules · starting-hands-chart) — 전부 **포커 전용어·브랜드·완전
+질문구**라 rake/cooler급 동음이의 위험이 없다고 판정했다.
+
+> 🪶 처음 스캔은 23편이라 했는데 **내 탐지기가 `Hold'em` 단독을 앵커로 안 세서** 오탐 2건이
+> 섞여 있었다(reading-the-board · showdown-rules). **앵커 목록을 좁게 잡으면 「없다」가 거짓이 된다
+> — 오늘 네 번째다**(ausgeschlossen/barrados · 無例外 · 85〜100% · Hold'em).
+
+**검증**: `check:de-style` 🔴 0건(🟠 8은 전부 기존 D9/D7) · `audit:hard --locale=de` 43/43 🔴 0건 ·
+build 632페이지 · 게이트 2종 통과 · 산출물 `<title>` 실측.
+
+---
+
 ## 2026-08-18 (2) — **de 축A 회차④: 에퀴티 실현율 밴드 정정 — 산술적으로 불가능한 값이었다** (`6e9c734f`)
 
 지시서 W5~W10. 회신 = `docs/reply-to-review-2026-08-18-de.md`(우편함 **M-009** = 회차 ②③④ 통합).
