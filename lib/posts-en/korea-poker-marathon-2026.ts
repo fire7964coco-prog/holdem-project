@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Korea's top autumn marathons (Chuncheon Oct 25, JTBC Seoul Nov 1, Garmin Run Nov 15) align with perfect running weather. Paradise City Casino near Incheon Airport runs year-round cash games — foreigners only, 10 min from the terminal. One trip covers both.",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-08-17",
+  updated: "2026-08-18",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏃",
@@ -256,7 +256,7 @@ While the marathons run Oct–Nov, ==**Paradise City Casino**== runs year-round.
 - Games: No-Limit Hold'em cash, other table games, slots
 - Spa and sauna on-site — relevant if you've just run 42K
 
-For the full tournament picture (APT Incheon runs August 7–16 with $2.7M GTD), see the [APT Incheon 2026 guide](/en/blog/apt-incheon-2026-guide "thumb:/images/apt-incheon-2026-guide-hero.webp").
+For the full tournament picture (APT Incheon ran August 7–16 with $2.7M GTD), see the [APT Incheon 2026 guide](/en/blog/apt-incheon-2026-guide "thumb:/images/apt-incheon-2026-guide-hero.webp").
 
 **Full 2026 Korea poker + marathon calendar:**
 

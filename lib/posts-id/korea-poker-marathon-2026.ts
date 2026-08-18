@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Maraton musim gugur terbaik Korea (Chuncheon 25 Okt, JTBC Seoul 1 Nov, Garmin Run 15 Nov) berpadu dengan cuaca lari yang sempurna. Paradise City Casino dekat Bandara Incheon menggelar cash game sepanjang tahun — khusus warga asing, 10 menit dari terminal. Satu perjalanan mencakup keduanya.",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-08-17",
+  updated: "2026-08-18",
   keepImagesInBody: true,
   readTime: "14 mnt",
   emoji: "🏃",
@@ -256,7 +256,7 @@ Sementara maraton berlangsung Okt–Nov, ==**Paradise City Casino**== beroperasi
 - Permainan: cash game No-Limit Hold'em, permainan meja lain, slot
 - Spa dan sauna di lokasi — relevan jika Anda baru saja berlari 42K
 
-Untuk gambaran turnamen lengkap (APT Incheon berlangsung 7–16 Agustus dengan GTD $2,7 juta), lihat [panduan APT Incheon 2026](/id/blog/apt-incheon-2026-guide "thumb:/images/apt-incheon-2026-guide-hero.webp").
+Untuk gambaran turnamen lengkap (APT Incheon sudah berlangsung 7–16 Agustus dengan GTD $2,7 juta), lihat [panduan APT Incheon 2026](/id/blog/apt-incheon-2026-guide "thumb:/images/apt-incheon-2026-guide-hero.webp").
 
 **Kalender poker + maraton Korea 2026 lengkap:**
 

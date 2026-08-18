@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "O Main Event do APT Incheon 2026 foi vencido por Stephen Pang, de Hong Kong, que levou KRW 411.180.000 (~$293.700) após um acordo ICM a três, além do troféu do Leão em ouro 24K. O field marcou recorde com 1.393 entradas e premiação total de KRW 3.008.880.000. O vice foi Shoumin Zhang (China, KRW 366.500.000 / ~$261.785) e o terceiro Yifu He (EUA). O top 3 também ganhou vagas para o Main Event do APT Championship 2026 em Taipé (~$10.000 cada). Só estrangeiros (cidadãos coreanos sem residência no exterior não podem entrar). Seul fica a ~1 hora — na próxima parada, a viagem de pôquer e a viagem pela Coreia continuam sendo a mesma viagem.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-17",
+  updated: "2026-08-18",
   masterUpdated: "2026-08-17",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -37,7 +37,7 @@ A viagem de pôquer e a viagem pela Coreia são a mesma viagem. ==g:O Paradise C
 ---
 
 > **Resposta rápida**
-> O APT Incheon 2026 rola de ==**7 a 16 de ago**== no Paradise City Casino, em Incheon. O resort fica a ==g:10 min de shuttle grátis do Terminal 1 do Aeroporto de Incheon== — sai a cada 30 min, sem custo. Buy-in do Main Event: ==**KRW 2.500.000 (~$1.703)**==, $1M garantido. Os classificatórios online da Natural8 distribuíram ==g:**74 vagas no total**==. ==r:O Mega de $35 e o OnLive encerraram em 2 de agosto, e a última via (Step de $20 → Mega de $200) em 7 de agosto==. ==g:**A classificação online acabou; agora só dá pra entrar pelo registro presencial.**== O cassino é ==r:só para estrangeiros== — cidadãos coreanos sem residência no exterior não podem entrar.
+> O APT Incheon 2026 rolou de ==**7 a 16 de ago**== no Paradise City Casino, em Incheon. O resort fica a ==g:10 min de shuttle grátis do Terminal 1 do Aeroporto de Incheon== — sai a cada 30 min, sem custo. Buy-in do Main Event: ==**KRW 2.500.000 (~$1.703)**==, $1M garantido. Os classificatórios online da Natural8 distribuíram ==g:**74 vagas no total**==. ==r:O Mega de $35 e o OnLive encerraram em 2 de agosto, e a última via (Step de $20 → Mega de $200) em 7 de agosto==. ==g:**A classificação online já tinha acabado antes do primeiro dia.**== O cassino é ==r:só para estrangeiros== — cidadãos coreanos sem residência no exterior não podem entrar.
 
 ---
 
@@ -402,7 +402,7 @@ A. Os dois funcionam, mas ==g:é recomendado chegar 2–3 dias antes==. Você se
 2. **Main Event** buy-in: ==**~$1.703**== com ==g:$1M garantido==. Cerca de um terço do Main do EPT Barcelona e metade do buy-in do Championship do WPT Australia.
 3. **A classificação online acabou** — o Mega de $35 e o OnLive encerraram em 2 de agosto, e a última via (Step de $20 → Mega de $200) em 7 de agosto. Agora só dá pra entrar pelo registro presencial.
 4. **Seul fica a 60 min** e é um dos melhores destinos de viagem da Ásia — ==g:palácios, churrasco, vida noturna e comida de rua imbatível.==
-5. **Só estrangeiros** — esse torneio foi feito pra jogadores internacionais. O seu passaporte é o seu cartão de acesso.
+5. **Com passaporte estrangeiro você entra** — esse torneio foi feito pra jogadores internacionais. O seu passaporte é o seu cartão de acesso.
 
 Indo pro APT Incheon? O [guia de torneio vs cash game](/pt/blog/holdem-tournament-vs-cash-game "thumb:/images/tournament-table-action.webp") cobre as diferenças estruturais se você está migrando do cash. E pros formatos de pôquer que você vai encontrar além do NLHE, [as ações de aposta no pôquer](/pt/blog/holdem-betting-actions) são uma referência limpa pra ter lido antes do Day 1.
 
@@ -420,7 +420,7 @@ Todos os números foram checados contra fontes primárias. **Verificado em: 28 d
 - **Field e resultado 2025 (relatório oficial do organizador)** — [APT — China's Junjie He Wins APT's Largest Korean Main Event](https://www.theasianpokertour.com/news/china-s-junjie-he-wins-apt-s-largest-korean-main-event-for-krw-380-5-m-usd-275-k-plus-apt-championship-seat-worth-krw-13-8-m-usd-10-k) · 1.281 entradas de 754 jogadores · prize pool KRW 2.766.960.000 · divisão por país
 - **Regras de entrada no cassino** — [Paradise City oficial](https://www.p-city.com/front/contents/casino/casinoInfo)
 
-> ⚠️ **O festival começa em 7 de agosto.** Número de assentos dos satélites, prazos de late reg e horários do shuttle ainda podem mudar. **Confere de novo a página da APT e o lobby da Natural8 no dia em que for se registrar.**
+> ⚠️ **Este festival terminou em 16 de agosto de 2026.** O calendário, o registro e os horários do shuttle acima são o registro da edição 2026 — confira a página oficial da APT para as condições da próxima temporada.
 >
 > 📌 **Critério de fontes:** calendário, buy-ins, número de assentos e regras vêm do organizador (APT), do parceiro online (Natural8) e do próprio cassino. Mídia especializada é usada só para o que esses três não publicam. Rankings de afiliados não são citados.
 

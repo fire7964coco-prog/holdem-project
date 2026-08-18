@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "APT Incheon 2026 wrapped on Aug 16 at Paradise City Casino, Incheon. Hong Kong's Stephen Pang won the Main Event for KRW 411,180,000 (~$293,700) after a three-handed ICM deal, topping a record 1,393-entry field with a KRW 3,008,880,000 prize pool. Runner-up Shoumin Zhang (China) took KRW 366,500,000 (~$261,785), and the top three also earned APT Championship 2026 Main Event seats (~$10,000 each). Foreign nationals only (Korean citizens without overseas residency cannot enter). Seoul is ~1 hour away — for the next stop, the poker trip and the Korea trip are still the same trip.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-17",
+  updated: "2026-08-18",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🇰🇷",
@@ -36,7 +36,7 @@ The poker trip and the Korea trip are the same trip. ==g:Paradise City is 10 min
 ---
 
 > **Quick answer**
-> APT Incheon 2026 runs ==**Aug 7–16**== at Paradise City Casino, Incheon. The resort is ==g:10 min by free shuttle from Incheon Airport Terminal 1== — departs every 30 min, no charge. Main Event buy-in: ==**KRW 2,500,000 (~$1,703)**==, $1M guaranteed. Natural8's qualifiers awarded 74 seats in total, but ==r:the $35 Mega and OnLive closed on Aug 2, and the last route — the $20 Step → $200 Mega — closed on Aug 7==. ==g:**Online qualifying is finished for this edition; on-site registration is the way in now.**== Casino is ==r:foreign nationals only== — Korean citizens without overseas residency cannot enter.
+> APT Incheon 2026 ran ==**Aug 7–16**== at Paradise City Casino, Incheon. The resort is ==g:10 min by free shuttle from Incheon Airport Terminal 1== — departs every 30 min, no charge. Main Event buy-in: ==**KRW 2,500,000 (~$1,703)**==, $1M guaranteed. Natural8's qualifiers awarded 74 seats in total, but ==r:the $35 Mega and OnLive closed on Aug 2, and the last route — the $20 Step → $200 Mega — closed on Aug 7==. ==g:**Online qualifying was already finished before day one.**== Casino is ==r:foreign nationals only== — Korean citizens without overseas residency cannot enter.
 
 ---
 
@@ -401,7 +401,7 @@ A. Both work, but ==g:arriving 2–3 days early is recommended==. You recover fr
 2. **Main Event** buy-in: ==**~$1,703**== with ==g:$1M guaranteed==. Around a third of the EPT Barcelona Main and half the WPT Australia Championship buy-in.
 3. **Online qualifying is over** — the $35 Mega and OnLive closed on Aug 2, and the last route ($20 Step → $200 Mega) closed on Aug 7. On-site registration is the only remaining way in.
 4. **Seoul is 60 min away** and is one of Asia's best travel destinations — ==g:palaces, BBQ, nightlife, and unbeatable street food.==
-5. **Foreign nationals only** — this tournament was built for international players. Your passport is your access card.
+5. **A foreign passport gets you in** — this tournament was built for international players. Your passport is your access card.
 
 Heading to APT Incheon? The [tournament vs cash game guide](/en/blog/holdem-tournament-vs-cash-game "thumb:/images/tournament-table-action.webp") covers the structural differences if you're transitioning from cash. And for the poker formats you'll encounter beyond NLHE, [betting actions in poker](/en/blog/holdem-betting-actions) is a clean reference to have read before Day 1.
 
@@ -419,7 +419,7 @@ Every figure above was checked against primary sources. **Verified: July 28, 202
 - **2025 field & result (organizer's own report)** — [APT — China's Junjie He Wins APT's Largest Korean Main Event](https://www.theasianpokertour.com/news/china-s-junjie-he-wins-apt-s-largest-korean-main-event-for-krw-380-5-m-usd-275-k-plus-apt-championship-seat-worth-krw-13-8-m-usd-10-k) · 1,281 entries from 754 unique players · KRW 2,766,960,000 prize pool · full top-10 country breakdown
 - **Casino entry rules** — [Paradise City official](https://www.p-city.com/front/contents/casino/casinoInfo)
 
-> ⚠️ **The festival starts August 7.** Satellite seat counts, late-registration cutoffs and shuttle timetables can still change. Re-check the APT event page and the Natural8 lobby the day you register.
+> ⚠️ **This festival ended on August 16, 2026.** The schedule, registration and shuttle details above are the 2026 edition on record — check the official APT event page for next season's terms.
 >
 > 📌 **Source policy:** schedules, buy-ins, seat counts and rules come from the organizer (APT), the online partner (Natural8) and the venue. Trade media is used only for what those three don't publish. No affiliate rankings are cited.
 

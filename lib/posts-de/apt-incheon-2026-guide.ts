@@ -37,7 +37,7 @@ Die Pokerreise und die Korea-Reise sind dieselbe Reise. ==g:Paradise City ist 10
 ---
 
 > **Kurze Antwort**
-> Die APT Incheon 2026 läuft ==**7.–16. Aug**== im Paradise City Casino, Incheon. Das Resort liegt ==g:10 Min mit dem kostenlosen Shuttle vom Terminal 1 des Flughafens Incheon== – fährt alle 30 Min, gratis. Main-Event-Buy-in: ==**KRW 2.500.000 (~$1.703)**==, $1M garantiert. Natural8s Online-Qualifikationen vergaben insgesamt ==g:**74 Seats**==. ==r:Das $35-Mega und OnLive endeten am 2. August, die letzte Route ($20 Step → $200 Mega) am 7. August==. ==g:**Die Online-Qualifikation ist beendet – rein kommt man jetzt nur noch über die Anmeldung vor Ort.**== Das Casino ist ==r:nur für ausländische Staatsbürger== – koreanische Bürger ohne Wohnsitz im Ausland dürfen nicht rein.
+> Die APT Incheon 2026 lief ==**7.–16. Aug**== im Paradise City Casino, Incheon. Das Resort liegt ==g:10 Min mit dem kostenlosen Shuttle vom Terminal 1 des Flughafens Incheon== – fährt alle 30 Min, gratis. Main-Event-Buy-in: ==**KRW 2.500.000 (~$1.703)**==, $1M garantiert. Natural8s Online-Qualifikationen vergaben insgesamt ==g:**74 Seats**==. ==r:Das $35-Mega und OnLive endeten am 2. August, die letzte Route ($20 Step → $200 Mega) am 7. August==. ==g:**Die Online-Qualifikation war schon vor dem ersten Spieltag beendet.**== Das Casino ist ==r:nur für ausländische Staatsbürger== – koreanische Bürger ohne Wohnsitz im Ausland dürfen nicht rein.
 
 ---
 
@@ -75,6 +75,8 @@ Und für internationale Besucher: ==g:Deutschland, Österreich und die Schweiz b
 | **Registrierung** | registrations@apt.poker |
 
 </div>
+
+:::note[**★Zu den USD-Angaben:** Buy-ins und Preisgelder in diesem Artikel sind mit **unterschiedlichen Kursen** umgerechnet – Buy-in rund **1.468 KRW/USD**, die Preisgelder der Endergebnisse rund **1.400 KRW/USD** (so hat der Veranstalter sie bekannt gegeben). Verbindlich ist jeweils der **KRW-Betrag**.]:::
 
 ---
 
@@ -400,9 +402,9 @@ A. Beides geht, aber ==g:2–3 Tage früher anzureisen ist empfehlenswert==. Du 
 
 1. **APT Incheon 2026** läuft ==**7.–16. Aug**== im Paradise City Casino – 10 Min vom Flughafen Incheon mit dem kostenlosen Shuttle, $2,7M GTD.
 2. **Main Event** Buy-in: ==**~$1.703**== mit ==g:$1M garantiert==. Rund ein Drittel des EPT-Barcelona-Main und die Hälfte des WPT-Australia-Championship-Buy-ins.
-3. **Die Online-Qualifikation ist beendet** – $35-Mega und OnLive endeten am 2. August, die letzte Route ($20 Step → $200 Mega) am 7. August. Rein kommt man jetzt nur noch über die Anmeldung vor Ort.
+3. **Die Online-Qualifikation war schon vor dem ersten Spieltag beendet** – $35-Mega und OnLive endeten am 2. August, die letzte Route ($20 Step → $200 Mega) am 7. August.
 4. **Seoul ist 60 Min entfernt** und eines der besten Reiseziele Asiens – ==g:Paläste, BBQ, Nachtleben und unschlagbares Streetfood.==
-5. **Nur für ausländische Staatsbürger** – dieses Turnier wurde für internationale Spieler gebaut. Dein Pass ist deine Zutrittskarte.
+5. **Mit einem ausländischen Pass kommst du rein** – dieses Turnier wurde für internationale Spieler gebaut. Dein Pass ist deine Zutrittskarte.
 
 Auf dem Weg zur APT Incheon? Der [Guide Turnier vs Cash Game](/de/blog/holdem-tournament-vs-cash-game "thumb:/images/tournament-table-action.webp") deckt die strukturellen Unterschiede ab, falls du vom Cashgame umsteigst. Und für die Poker-Formate, die dir jenseits von NLHE begegnen, ist [Setzaktionen im Poker](/de/blog/holdem-betting-actions) eine saubere Referenz, die du vor Day 1 gelesen haben solltest.
 
@@ -420,7 +422,7 @@ Alle Zahlen wurden anhand der Primärquellen geprüft. **Stand: 9. August 2026.*
 - **Feld und Ergebnis 2025 (offizieller Bericht des Veranstalters)** – [APT – China's Junjie He Wins APT's Largest Korean Main Event](https://www.theasianpokertour.com/news/china-s-junjie-he-wins-apt-s-largest-korean-main-event-for-krw-380-5-m-usd-275-k-plus-apt-championship-seat-worth-krw-13-8-m-usd-10-k) · 1.281 Entries von 754 Spielern · Preispool KRW 2.766.960.000 · Länderverteilung Top 10
 - **Casino-Einlassregeln** – [Paradise City offiziell](https://www.p-city.com/front/contents/casino/casinoInfo)
 
-> ⚠️ **Das Festival läuft bereits – seit dem 7. August, letzter Spieltag ist der 16. August.** Late-Reg-Schluss und Shuttle-Zeiten können sich kurzfristig ändern. **Prüf am Tag deiner Anmeldung nochmal die APT-Eventseite und die Natural8-Lobby.**
+> ⚠️ **Dieses Festival endete am 16. August 2026.** Zeitplan, Anmeldung und Shuttle-Angaben oben sind der Stand der Ausgabe 2026 – die Bedingungen der nächsten Saison prüfst du neu auf der offiziellen APT-Eventseite.
 >
 > 📌 **Quellenprinzip:** Termine, Buy-ins, Seatzahlen und Regeln stammen vom Veranstalter (APT), vom Online-Partner (Natural8) und vom Casino selbst. Fachmedien werden nur für das herangezogen, was diese drei nicht veröffentlichen. Affiliate-Rankings werden nicht zitiert.
 

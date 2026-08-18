@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Los grandes maratones de otoño de Corea (Chuncheon 25 oct, JTBC Seúl 1 nov, Garmin Run 15 nov) coinciden con el clima ideal para correr. El casino Paradise City, junto al aeropuerto de Incheon, ofrece cash games todo el año — solo extranjeros, a 10 min de la terminal. Un viaje cubre ambas cosas.",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-08-17",
+  updated: "2026-08-18",
   masterUpdated: "2026-08-17",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -257,7 +257,7 @@ Mientras los maratones se corren en oct–nov, ==**el casino Paradise City**== a
 - Juegos: cash de No-Limit Hold'em, otras mesas de casino, tragaperras
 - Spa y sauna en el complejo — relevante si acabas de correr 42K
 
-Para el panorama completo de torneos (el APT Incheon se disputa del 7 al 16 de agosto con $2.7M GTD), consulta la [guía del APT Incheon 2026](/es/blog/apt-incheon-2026-guide "thumb:/images/apt-incheon-2026-guide-hero.webp").
+Para el panorama completo de torneos (el APT Incheon se disputó del 7 al 16 de agosto con $2.7M GTD), consulta la [guía del APT Incheon 2026](/es/blog/apt-incheon-2026-guide "thumb:/images/apt-incheon-2026-guide-hero.webp").
 
 **Calendario completo de póker + maratón en Corea 2026:**
 

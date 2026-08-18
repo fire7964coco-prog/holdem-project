@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "韓国と日本は時差0時間、サマータイムもないので、土曜に着いて日曜の朝に走れます。海外マラソンで前泊1泊で済むのは韓国くらいです。韓国の秋の主要マラソン(春川10/25、JTBCソウル11/1、ガーミンラン11/15)は、走るのに最高の気候と重なります。仁川空港すぐそばのパラダイスシティ・カジノは通年でキャッシュゲームを開催(外国人専用・ターミナルから10分)。一度の旅で両方を味わえます。",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-08-17",
+  updated: "2026-08-18",
   masterUpdated: "2026-08-17",
   keepImagesInBody: true,
   readTime: "14分",
@@ -285,7 +285,7 @@ export const POST: Post = {
 - ゲーム: ノーリミット・ホールデムのキャッシュ、その他のテーブルゲーム、スロット
 - スパとサウナも施設内 — 42Kを走った直後なら、これはありがたい
 
-トーナメント全体像(APT仁川は8月7〜16日開催、$2.7M GTD)については、[APT仁川2026ガイド](/ja/blog/apt-incheon-2026-guide "thumb:/images/apt-incheon-2026-guide-hero.webp")をどうぞ。
+トーナメント全体像(APT仁川は8月7〜16日に開催済み、$2.7M GTD)については、[APT仁川2026ガイド](/ja/blog/apt-incheon-2026-guide "thumb:/images/apt-incheon-2026-guide-hero.webp")をどうぞ。
 
 **韓国2026 ポーカー+マラソン 完全カレンダー:**
 

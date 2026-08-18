@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Main Event APT Incheon 2026 dimenangkan Stephen Pang dari Hong Kong, yang membawa pulang KRW 411.180.000 (~$293.700) setelah deal ICM tiga pemain, plus trofi Singa emas 24K. Field mencetak rekor 1.393 entri dengan total prize pool KRW 3.008.880.000. Runner-up Shoumin Zhang (Tiongkok, KRW 366.500.000 / ~$261.785), posisi ketiga Yifu He (AS). Tiga besar juga mendapat kursi Main Event APT Championship 2026 di Taipei (~$10.000 per kursi). Hanya untuk warga negara asing (warga negara Korea tanpa izin tinggal tetap di luar negeri tidak boleh masuk). Seoul berjarak ~1 jam — untuk stop berikutnya, trip poker dan trip Korea tetap trip yang sama.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-17",
+  updated: "2026-08-18",
   masterUpdated: "2026-08-17",
   keepImagesInBody: true,
   readTime: "16 mnt",
@@ -37,7 +37,7 @@ Trip poker dan trip Korea adalah trip yang sama. ==g:Paradise City hanya 10 meni
 ---
 
 > **Jawaban singkat**
-> APT Incheon 2026 berlangsung ==**7–16 Agustus**== di Paradise City Casino, Incheon. Resor ini ==g:10 menit dengan shuttle gratis dari Terminal 1 Bandara Incheon== — berangkat setiap 30 menit, tanpa biaya. Buy-in Main Event: ==**KRW 2.500.000 (~$1.703)**==, bergaransi $1 juta. Kualifikasi online Natural8 total membagikan ==g:**74 kursi**==. ==r:Mega $35 dan OnLive tutup pada 2 Agustus, dan jalur terakhir (Step $20 → Mega $200) tutup 7 Agustus==. ==g:**Kualifikasi online sudah selesai — sekarang jalan masuknya lewat pendaftaran di lokasi.**== Kasino ==r:hanya untuk warga negara asing== — warga negara Korea tanpa izin tinggal tetap di luar negeri tidak boleh masuk.
+> APT Incheon 2026 sudah berlangsung ==**7–16 Agustus**== di Paradise City Casino, Incheon. Resor ini ==g:10 menit dengan shuttle gratis dari Terminal 1 Bandara Incheon== — berangkat setiap 30 menit, tanpa biaya. Buy-in Main Event: ==**KRW 2.500.000 (~$1.703)**==, bergaransi $1 juta. Kualifikasi online Natural8 total membagikan ==g:**74 kursi**==. ==r:Mega $35 dan OnLive tutup pada 2 Agustus, dan jalur terakhir (Step $20 → Mega $200) tutup 7 Agustus==. ==g:**Kualifikasi online sudah selesai sebelum hari pertama.**== Kasino ==r:hanya untuk warga negara asing== — warga negara Korea tanpa izin tinggal tetap di luar negeri tidak boleh masuk.
 
 ---
 
@@ -408,7 +408,7 @@ A. Keduanya bisa, tapi ==g:disarankan tiba 2–3 hari lebih awal==. Anda pulih d
 2. **Main Event** buy-in: ==**~$1.703**== dengan ==g:garansi $1 juta==. Sekitar sepertiga buy-in Main EPT Barcelona dan separuh buy-in Championship WPT Australia.
 3. **Kualifikasi online sudah selesai** — Mega $35 dan OnLive tutup 2 Agustus, jalur terakhir (Step $20 → Mega $200) tutup 7 Agustus. Sekarang masuknya lewat pendaftaran di lokasi.
 4. **Seoul berjarak 60 mnt** dan merupakan salah satu destinasi wisata terbaik di Asia — ==g:istana, BBQ, kehidupan malam, dan street food tak tertandingi.==
-5. **Hanya untuk warga negara asing** — turnamen ini dibuat untuk pemain internasional. Paspor Anda adalah kartu akses Anda.
+5. **Dengan paspor asing Anda bisa masuk** — turnamen ini dibuat untuk pemain internasional. Paspor Anda adalah kartu akses Anda.
 
 Menuju APT Incheon? [Panduan turnamen vs cash game](/id/blog/holdem-tournament-vs-cash-game "thumb:/images/tournament-table-action.webp") membahas perbedaan strukturalnya kalau Anda beralih dari cash. Dan untuk format poker yang akan Anda temui di luar NLHE, [aksi taruhan dalam poker](/id/blog/holdem-betting-actions) adalah referensi rapi untuk dibaca sebelum Day 1.
 
@@ -426,7 +426,7 @@ Semua angka dicocokkan dengan sumber primer. **Diverifikasi: 28 Juli 2026.**
 - **Field dan hasil 2025 (laporan resmi penyelenggara)** — [APT — China's Junjie He Wins APT's Largest Korean Main Event](https://www.theasianpokertour.com/news/china-s-junjie-he-wins-apt-s-largest-korean-main-event-for-krw-380-5-m-usd-275-k-plus-apt-championship-seat-worth-krw-13-8-m-usd-10-k) · 1.281 entri dari 754 pemain · prize pool KRW 2.766.960.000 · rincian per negara
 - **Aturan masuk kasino** — [Paradise City resmi](https://www.p-city.com/front/contents/casino/casinoInfo)
 
-> ⚠️ **Festival dimulai 7 Agustus.** Jumlah kursi satelit, batas late reg, dan jadwal shuttle masih bisa berubah. **Cek ulang halaman event APT dan lobby Natural8 pada hari Anda mendaftar.**
+> ⚠️ **Festival ini berakhir pada 16 Agustus 2026.** Jadwal, pendaftaran, dan info shuttle di atas adalah catatan edisi 2026 — cek halaman event resmi APT untuk ketentuan musim berikutnya.
 >
 > 📌 **Prinsip sumber:** jadwal, buy-in, jumlah kursi, dan aturan diambil dari penyelenggara (APT), mitra online (Natural8), dan pihak kasino. Media industri hanya dipakai untuk hal yang tidak dipublikasikan ketiganya. Ranking afiliasi tidak dikutip.
 

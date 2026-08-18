@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "韩国最好的秋季马拉松（春川 10 月 25 日、JTBC 首尔 11 月 1 日、Garmin Run 11 月 15 日）正好赶上完美的跑步天气。仁川机场旁的 Paradise City Casino 全年开放现金局——只对外国人开放，离航站楼 10 分钟。一趟行程两样都能拿下。",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-08-17",
+  updated: "2026-08-18",
   masterUpdated: "2026-08-17",
   keepImagesInBody: true,
   readTime: "14 分钟",
@@ -257,7 +257,7 @@ export const POST: Post = {
 - 牌局：无限注德州扑克现金局、其他桌上游戏、老虎机
 - 场内有水疗和桑拿——刚跑完 42K 的话，这一点很实用
 
-想看完整的锦标赛情况（APT Incheon 8 月 7–16 日举办，$2.7M GTD），见 [2026 APT Incheon 指南](/zh/blog/apt-incheon-2026-guide "thumb:/images/apt-incheon-2026-guide-hero.webp")。
+想看完整的锦标赛情况（APT Incheon 已于 8 月 7–16 日举办，$2.7M GTD），见 [2026 APT Incheon 指南](/zh/blog/apt-incheon-2026-guide "thumb:/images/apt-incheon-2026-guide-hero.webp")。
 
 **完整的 2026 韩国扑克 + 马拉松赛程表：**
 

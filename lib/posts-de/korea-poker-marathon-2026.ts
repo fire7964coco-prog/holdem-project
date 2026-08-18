@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Koreas beste Herbstmarathons (Chuncheon 25. Okt, JTBC Seoul 1. Nov, Garmin Run 15. Nov) treffen auf perfektes Laufwetter – für 2026 ist allerdings nur noch der JTBC Seoul offen, Chuncheon und Garmin Run haben im Juli geschlossen. Das Paradise City Casino nahe dem Flughafen Incheon bietet Cash Games – nur für Ausländer, 10 Min. vom Terminal. Eine Reise deckt beides ab.",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-08-17",
+  updated: "2026-08-18",
   keepImagesInBody: true,
   readTime: "14 Min.",
   emoji: "🏃",
@@ -256,7 +256,7 @@ Während die Marathons von Okt–Nov laufen, läuft ==**Paradise City Casino**==
 - Spiele: No-Limit Hold'em Cash, andere Tischspiele, Slots
 - Spa und Sauna vor Ort – relevant, wenn du gerade 42K gelaufen bist
 
-Für das vollständige Turnier-Bild (APT Incheon läuft vom 7.–16. August mit $2,7M GTD) siehe den [APT Incheon 2026 Guide](/de/blog/apt-incheon-2026-guide "thumb:/images/apt-incheon-2026-guide-hero.webp").
+Für das vollständige Turnier-Bild (APT Incheon lief vom 7.–16. August mit $2,7M GTD) siehe den [APT Incheon 2026 Guide](/de/blog/apt-incheon-2026-guide "thumb:/images/apt-incheon-2026-guide-hero.webp").
 
 **Vollständiger Korea Poker + Marathon Kalender 2026:**
 
