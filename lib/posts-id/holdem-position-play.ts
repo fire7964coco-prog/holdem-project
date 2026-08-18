@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Strategi Posisi: In vs Out of Position",
   seoTitle: "Posisi Mengalahkan Kartu — Strategi In vs Out of Position",
   desc: "Kartu sama, hasil berlawanan — kursinya penyebabnya. In position vs out of position, kenapa posisi penting, dan opening range dari UTG sampai button.",
-  tldr: "Berada in position berarti Anda beraksi terakhir — Anda melihat setiap keputusan lawan sebelum mengeluarkan satu chip pun. Studi solver dan database menunjukkan pemain in position merealisasikan kira-kira 85–100% dari equity mereka, sementara pemain out of position hanya menangkap sekitar 60–85%. Itulah kenapa UTG membuka ~13% tangan dan button ~43% — dan kenapa posisi menulis ulang setiap keputusan c-bet, bluff, dan pot control di postflop.",
+  tldr: "Berada in position berarti Anda beraksi terakhir — Anda melihat setiap keputusan lawan sebelum mengeluarkan satu chip pun. Studi solver dan database menunjukkan pemain out of position hanya menangkap sekitar 60–85% dari equity mereka — yang berarti in position Anda berada di atas 100%. Itulah kenapa UTG membuka ~13% tangan dan button ~43% — dan kenapa posisi menulis ulang setiap keputusan c-bet, bluff, dan pot control di postflop.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-07-11",
+  updated: "2026-08-18",
   keepImagesInBody: true,
   readTime: "16 mnt",
   emoji: "🎯",
@@ -34,7 +34,7 @@ Satu jam kemudian, K♥Q♥ yang sama, kali ini di button. Saya raise, big blind
 ---
 
 > **Jawaban singkat**
-> **In position (IP)** berarti Anda beraksi terakhir; **out of position (OOP)** berarti Anda beraksi lebih dulu. Studi solver dan database menunjukkan pemain IP merealisasikan kira-kira ==g:**85–100% dari equity mereka**== sementara pemain OOP hanya menangkap sekitar ==r:60–85%== — kesenjangan yang datang dari informasi, bukan kartu. Itulah kenapa UTG membuka ~13% tangan, button ~43%, dan kenapa setiap keputusan c-bet, bluff, dan pot control berubah bersama kursi Anda.
+> **In position (IP)** berarti Anda beraksi terakhir; **out of position (OOP)** berarti Anda beraksi lebih dulu. Studi solver dan database menunjukkan pemain OOP hanya menangkap sekitar ==r:60–85%== dari equity mereka; in position Anda dengan sendirinya berada ==g:**di atas 100%**==. Itu bukan kontradiksi, melainkan aritmetika: pot tidak bertambah, jadi kelebihan realisasi satu kursi persis sama dengan yang ditinggalkan kursi lain — kesenjangan yang datang dari informasi, bukan kartu. Itulah kenapa UTG membuka ~13% tangan, button ~43%, dan kenapa setiap keputusan c-bet, bluff, dan pot control berubah bersama kursi Anda.
 
 ---
 
@@ -81,12 +81,12 @@ Karena posisi mengubah kartu yang sama menjadi lebih banyak uang. Cara paling je
 
 | Situasi | Equity terealisasi (kira-kira) | Kenapa |
 |:---|:---:|:---|
-| **In position** | ==g:**~85–100%**== | Beraksi terakhir → lihat semuanya → value-bet dan bluff di momen yang tepat |
+| **In position** | ==g:**di atas 100%**== | Beraksi terakhir → lihat semuanya → value-bet dan bluff di momen yang tepat |
 | **Out of position** | ==r:~60–85%== | Beraksi lebih dulu → fold tangan menang, membayar tangan kalah, menyerahkan kartu gratis |
 
 Angka-angka ini kira-kira — output solver dan studi database bervariasi menurut kedalaman stack dan matchup — tapi arahnya universal: ==**pemain in position secara sistematis over-realize, pemain out of position secara sistematis under-realize.**==
 
-![Perbandingan IP vs OOP — Button (IP) beraksi terakhir dan merealisasikan kira-kira equity 85–100%; UTG (OOP) beraksi lebih dulu dan hanya merealisasikan sekitar equity 60–85%](/images/holdem-position-play-ip-vs-oop.webp)
+![Perbandingan IP vs OOP — Button (IP) beraksi terakhir dan merealisasikan equity di atas 100%; UTG (OOP) beraksi lebih dulu dan hanya merealisasikan sekitar equity 60–85%](/images/holdem-position-play-ip-vs-oop.webp)
 
 Ambil 8♥7♥ di flop K♥4♠2♥. In position, flush draw Anda dimainkan dengan indah: call bet dengan murah, ambil kartu gratis saat di-check kepada Anda, atau bluff saat mereka menunjukkan kelemahan dua kali. Out of position, draw yang sama bocor: bet dan hadapi raise, atau check dan lihat mereka menagih Anda maksimal — atau lebih buruk, check dan fold kartu yang justru akan menyempurnakan tangan Anda. Sembilan outs sama, harga sangat berbeda.
 
@@ -254,7 +254,7 @@ A. Out of position (OOP) berarti Anda harus beraksi sebelum lawan di street post
 
 **Q. Kenapa posisi begitu penting di poker?**
 
-A. Karena beraksi terakhir mengubah kartu yang sama menjadi lebih banyak uang. Studi solver dan database menunjukkan pemain in position merealisasikan kira-kira 85–100% dari equity teoretis mereka sementara pemain out of position hanya menangkap sekitar 60–85% — pemain in position melihat setiap keputusan lawan sebelum membuat keputusan mereka sendiri, jadi mereka value-bet, bluff, dan fold di momen yang lebih baik dengan tangan identik.
+A. Karena beraksi terakhir mengubah kartu yang sama menjadi lebih banyak uang. Studi solver dan database menunjukkan pemain out of position hanya menangkap sekitar 60–85% dari equity teoretis mereka; in position Anda dengan sendirinya berada di atas 100% — pemain in position melihat setiap keputusan lawan sebelum membuat keputusan mereka sendiri, jadi mereka value-bet, bluff, dan fold di momen yang lebih baik dengan tangan identik.
 
 **Q. Apa posisi paling profit di poker?**
 
@@ -284,7 +284,7 @@ A. Ketika Anda masuk pot, sebagian besar ya — default modern dari SB adalah 3-
 
 ## Poin Penting
 
-1. **Posisi = equity realization.** ==g:In position, studi menunjukkan Anda menangkap kira-kira 85–100% dari equity Anda==; ==r:out of position, hanya sekitar 60–85%==. Kesenjangannya datang dari beraksi terakhir, bukan dari kartu lebih baik.
+1. **Posisi = equity realization.** ==g:In position Anda menangkap di atas 100% dari equity Anda==; ==r:out of position, studi menunjukkan hanya sekitar 60–85%==. Kesenjangannya datang dari beraksi terakhir, bukan dari kartu lebih baik.
 2. **Range bergeser bersama posisi.** UTG membuka ~13%, button ==g:~43%== — dan setiap kursi di antaranya mendapat satu anak tangga. ==r:Memainkan tangan button dari UTG menguras chip.==
 3. **Button adalah kursi terbaik; blind adalah yang terburuk.** BB kehilangan chip mentah terbanyak (taruhan paksa); SB adalah kursi terburuk untuk benar-benar dimainkan (pertama beraksi setiap street). Lindungi button Anda, dan 3-bet-atau-fold small blind Anda.
 4. **OOP bukan tanpa harapan — ia soal disiplin.** Check-raise sebagai penyeimbang Anda, perbesar sizing saat bet, kendalikan pot dengan tangan sedang, dan fold river lebih sering daripada yang terasa alami.

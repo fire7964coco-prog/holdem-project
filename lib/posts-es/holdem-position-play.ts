@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Estrategia de posición: en posición vs fuera de posición",
   seoTitle: "La posición gana a las cartas — en posición vs fuera de posición",
   desc: "Mismas cartas, resultados opuestos: lo hizo el asiento. En posición vs fuera de posición, por qué importa y rangos de apertura de UTG al botón.",
-  tldr: "Estar en posición significa que hablas último — ves la decisión de cada rival antes de gastar una ficha. Los estudios de solver y de bases de datos sugieren que en posición realizas más o menos el 85–100% de tu equity, mientras que fuera de posición solo capturas alrededor del 60–85%. Por eso UTG abre ~13% de las manos y el botón ~43% — y por eso la posición reescribe cada c-bet, cada farol y cada decisión de control del bote en el postflop.",
+  tldr: "Estar en posición significa que hablas último — ves la decisión de cada rival antes de gastar una ficha. Los estudios de solver y de bases de datos sugieren que fuera de posición solo capturas alrededor del 60–85% de tu equity — lo que en posición te deja por encima del 100%. Por eso UTG abre ~13% de las manos y el botón ~43% — y por eso la posición reescribe cada c-bet, cada farol y cada decisión de control del bote en el postflop.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-07-24",
-  masterUpdated: "2026-07-19",
+  updated: "2026-08-18",
+  masterUpdated: "2026-08-18",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎯",
@@ -35,7 +35,7 @@ Una hora más tarde, la misma K♥Q♥, esta vez en el botón. Subí, la ciega g
 ---
 
 > **Respuesta rápida**
-> **En posición (IP)** significa que hablas último; **fuera de posición (OOP)** significa que hablas primero. Los estudios de solver y de bases de datos sugieren que en posición realizas más o menos el ==g:**85–100% de tu equity**== mientras que fuera de posición solo capturas alrededor del ==r:60–85%== — una brecha que viene de la información, no de las cartas. Por eso UTG abre ~13% de las manos, el botón ~43%, y por eso cada c-bet, cada farol y cada decisión de control del bote cambia con tu asiento.
+> **En posición (IP)** significa que hablas último; **fuera de posición (OOP)** significa que hablas primero. Los estudios de solver y de bases de datos sugieren que fuera de posición solo capturas alrededor del ==r:60–85%== de tu equity; en posición estás entonces necesariamente ==g:**por encima del 100%**==. No es una contradicción, es aritmética: el bote no crece, así que lo que un asiento sobre-realiza es exactamente lo que el otro deja atrás — una brecha que viene de la información, no de las cartas. Por eso UTG abre ~13% de las manos, el botón ~43%, y por eso cada c-bet, cada farol y cada decisión de control del bote cambia con tu asiento.
 
 ---
 
@@ -82,12 +82,12 @@ Porque la posición convierte las mismas cartas en más dinero. La forma más li
 
 | Situación | Equity realizada (aprox.) | Por qué |
 |:---|:---:|:---|
-| **En posición** | ==g:**~85–100%**== | Hablas último → lo ves todo → apuestas por valor y faroleas en el momento justo |
+| **En posición** | ==g:**por encima del 100%**== | Hablas último → lo ves todo → apuestas por valor y faroleas en el momento justo |
 | **Fuera de posición** | ==r:~60–85%== | Hablas primero → foldeas manos ganadoras, pagas con perdedoras, regalas cartas gratis |
 
 Estas cifras son aproximadas — los resultados de solver y los estudios de bases de datos varían según la profundidad de stack y el enfrentamiento — pero la dirección es universal: ==**el jugador en posición sobre-realiza sistemáticamente, el jugador fuera de posición infra-realiza sistemáticamente.**==
 
-![Comparación IP vs OOP — el botón (IP) habla último y realiza más o menos el 85–100% de la equity; UTG (OOP) habla primero y solo realiza alrededor del 60–85% de la equity](/images/holdem-position-play-ip-vs-oop.webp)
+![Comparación IP vs OOP — el botón (IP) habla último y realiza por encima del 100% de su equity; UTG (OOP) habla primero y solo realiza alrededor del 60–85% de la equity](/images/holdem-position-play-ip-vs-oop.webp)
 
 Toma 8♥7♥ en un flop K♥4♠2♥. En posición, tu proyecto de color se juega de maravilla: igualas una apuesta barata, tomas una carta gratis cuando te pasan, o faroleas cuando muestran debilidad dos veces. Fuera de posición, el mismo proyecto se filtra: apuestas y te enfrentas a una subida, o pasas y les ves cobrarte el máximo — o peor, pasas y foldeas justo la carta que te habría completado. Los mismos nueve outs, un precio muy distinto.
 
@@ -263,11 +263,11 @@ A. En posición (IP) significa que hablas el último en el flop, el turn y el ri
 
 **Q. ¿Por qué es una ventaja actuar el último (tener posición)?**
 
-A. Porque tener posición sobre alguien te deja llevar las riendas de la mano: ves cada decisión suya antes de tomar la tuya. Puedes tomar una carta gratis pasando detrás, controlar el tamaño del bote y elegir el momento justo para apostar por valor o farolear. Esa información es la razón por la que en posición realizas alrededor del 85–100% de tu equity y fuera de posición solo el 60–85%, con las mismas cartas.
+A. Porque tener posición sobre alguien te deja llevar las riendas de la mano: ves cada decisión suya antes de tomar la tuya. Puedes tomar una carta gratis pasando detrás, controlar el tamaño del bote y elegir el momento justo para apostar por valor o farolear. Esa información es la razón por la que fuera de posición solo realizas alrededor del 60–85% de tu equity y en posición te sitúas por encima del 100%, con las mismas cartas.
 
 **Q. ¿Por qué importa tanto la posición en el póker?**
 
-A. Porque hablar último convierte las mismas cartas en más dinero. Los estudios de solver y de bases de datos sugieren que en posición realizas más o menos el 85–100% de tu equity teórica mientras que fuera de posición solo capturas alrededor del 60–85% — el jugador en posición ve la decisión de cada rival antes de tomar la suya, así que apuesta por valor, farolea y foldea en mejores momentos con las mismas manos.
+A. Porque hablar último convierte las mismas cartas en más dinero. Los estudios de solver y de bases de datos sugieren que fuera de posición solo capturas alrededor del 60–85% de tu equity teórica; en posición estás entonces necesariamente por encima del 100% — el jugador en posición ve la decisión de cada rival antes de tomar la suya, así que apuesta por valor, farolea y foldea en mejores momentos con las mismas manos.
 
 **Q. ¿Cuál es la posición más rentable en el póker?**
 
@@ -305,7 +305,7 @@ A. Cuando entras al bote, casi siempre sí — el estándar moderno desde la SB 
 
 ## Las conclusiones
 
-1. **Posición = realización de equity.** ==g:En posición, los estudios sugieren que capturas más o menos el 85–100% de tu equity==; ==r:fuera de posición, solo alrededor del 60–85%==. La brecha viene de hablar último, no de mejores cartas.
+1. **Posición = realización de equity.** ==g:En posición capturas por encima del 100% de tu equity==; ==r:fuera de posición, los estudios sugieren solo alrededor del 60–85%==. La brecha viene de hablar último, no de mejores cartas.
 2. **Los rangos se deslizan con la posición.** UTG abre ~13%, el botón ==g:~43%== — y cada asiento intermedio sube un peldaño en la escalera. ==r:Jugar manos de botón desde UTG sangra fichas.==
 3. **El botón es el mejor asiento; las ciegas son las peores.** La BB pierde más fichas brutas (apuesta obligada); la SB es el peor asiento para jugar de verdad (primero en actuar en cada calle). Protege tu botón, y haz 3-bet-o-fold con tu ciega pequeña.
 4. **OOP no es una causa perdida — es disciplina.** El check-raise como igualador, sube el tamaño al apostar, controla botes con manos medias y foldea rivers más de lo que parece natural.

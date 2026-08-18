@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Position Strategy: In vs Out of Position",
   seoTitle: "Position Beats Cards — In vs Out of Position Poker Strategy",
   desc: "Two players, same cards, opposite results — the seat did it. In position vs out of position, why position matters, and opening ranges from UTG to the button.",
-  tldr: "Being in position means you act last — you see every opponent's decision before spending a chip. Solver and database studies suggest in-position players realize roughly 85–100% of their equity, while out-of-position players capture only about 60–85%. That's why UTG opens ~13% of hands and the button ~43% — and why position rewrites every c-bet, bluff, and pot-control decision postflop.",
+  tldr: "Being in position means you act last — you see every opponent's decision before spending a chip. Solver and database studies suggest out-of-position players capture only about 60–85% of their equity — which puts you above 100% when you're in position. That's why UTG opens ~13% of hands and the button ~43% — and why position rewrites every c-bet, bluff, and pot-control decision postflop.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-07-19",
+  updated: "2026-08-18",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎯",
@@ -34,7 +34,7 @@ An hour later, same K♥Q♥, this time on the button. I raised, the big blind c
 ---
 
 > **Quick answer**
-> **In position (IP)** means you act last; **out of position (OOP)** means you act first. Solver and database studies suggest IP players realize roughly ==g:**85–100% of their equity**== while OOP players capture only about ==r:60–85%== — a gap that comes from information, not cards. It's why UTG opens ~13% of hands, the button ~43%, and why every c-bet, bluff, and pot-control decision changes with your seat.
+> **In position (IP)** means you act last; **out of position (OOP)** means you act first. Solver and database studies suggest OOP players capture only about ==r:60–85%== of their equity; in position you are therefore necessarily ==g:**above 100%**==. That isn't a contradiction, it's arithmetic: the pot doesn't grow, so one seat's over-realization is exactly what the other seat leaves behind — a gap that comes from information, not cards. It's why UTG opens ~13% of hands, the button ~43%, and why every c-bet, bluff, and pot-control decision changes with your seat.
 
 ---
 
@@ -81,12 +81,12 @@ Because position converts the same cards into more money. The cleanest way to se
 
 | Situation | Equity realized (approx.) | Why |
 |:---|:---:|:---|
-| **In position** | ==g:**~85–100%**== | Act last → see everything → value-bet and bluff at the right moments |
+| **In position** | ==g:**above 100%**== | Act last → see everything → value-bet and bluff at the right moments |
 | **Out of position** | ==r:~60–85%== | Act first → fold winners, pay off losers, surrender free cards |
 
 These figures are approximate — solver outputs and database studies vary by stack depth and matchup — but the direction is universal: ==**the in-position player systematically over-realizes, the out-of-position player systematically under-realizes.**==
 
-![IP vs OOP comparison — Button (IP) acts last and realizes roughly 85–100% equity; UTG (OOP) acts first and realizes only about 60–85% equity](/images/holdem-position-play-ip-vs-oop.webp)
+![IP vs OOP comparison — Button (IP) acts last and realizes above 100% of its equity; UTG (OOP) acts first and realizes only about 60–85% equity](/images/holdem-position-play-ip-vs-oop.webp)
 
 Take 8♥7♥ on a K♥4♠2♥ flop. In position, your flush draw plays beautifully: call a bet cheaply, take a free card when checked to, or bluff when they show weakness twice. Out of position, the same draw leaks: bet and face a raise, or check and watch them charge you the maximum — or worse, check and fold the very card that would have completed you. Same nine outs, very different price.
 
@@ -258,7 +258,7 @@ A. It depends on the street. *Preflop*, the small blind acts before the big blin
 
 **Q. Why does position matter so much in poker?**
 
-A. Because acting last converts the same cards into more money. Solver and database studies suggest in-position players realize roughly 85–100% of their theoretical equity while out-of-position players capture only about 60–85% — the in-position player sees every opponent decision before making their own, so they value-bet, bluff, and fold at better moments with identical holdings.
+A. Because acting last converts the same cards into more money. Solver and database studies suggest out-of-position players capture only about 60–85% of their theoretical equity; in position you are therefore necessarily above 100% — the in-position player sees every opponent decision before making their own, so they value-bet, bluff, and fold at better moments with identical holdings.
 
 **Q. What is the most profitable position in poker?**
 
@@ -292,7 +292,7 @@ A. When you enter the pot, mostly yes — the modern default from the SB is 3-be
 
 ## The Takeaways
 
-1. **Position = equity realization.** ==g:In position, studies suggest you capture roughly 85–100% of your equity==; ==r:out of position, only about 60–85%==. The gap comes from acting last, not from better cards.
+1. **Position = equity realization.** ==g:In position you capture above 100% of your equity==; ==r:out of position, studies suggest only about 60–85%==. The gap comes from acting last, not from better cards.
 2. **Ranges slide with position.** UTG opens ~13%, the button ==g:~43%== — and every seat between gets a step on the ladder. ==r:Playing button hands from UTG bleeds chips.==
 3. **The button is the best seat; the blinds are the worst.** The BB loses the most raw chips (forced bet); the SB is the worst seat to actually play (first to act every street). Protect your button, and 3-bet-or-fold your small blind.
 4. **OOP isn't hopeless — it's disciplined.** Check-raise as your equalizer, size up when betting, control pots with medium hands, and fold rivers more than feels natural.

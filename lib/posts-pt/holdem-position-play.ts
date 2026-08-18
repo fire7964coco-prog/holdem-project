@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Estratégia de posição: in position vs out of position",
   seoTitle: "Posição vence cartas — in vs out of position no pôquer",
   desc: "Dois jogadores, mesmas cartas, resultados opostos — a cadeira fez tudo. In vs out of position, por que posição importa e ranges de abertura do UTG ao button.",
-  tldr: "Estar in position significa agir por último — você vê a decisão de cada adversário antes de gastar uma ficha. Estudos de solver e de banco de dados sugerem que jogadores in position realizam algo em torno de 85–100% da sua equity, enquanto jogadores out of position capturam só cerca de 60–85%. É por isso que o UTG abre ~13% das mãos e o button ~43% — e por que posição reescreve cada c-bet, bluff e decisão de controle de pote no pós-flop.",
+  tldr: "Estar in position significa agir por último — você vê a decisão de cada adversário antes de gastar uma ficha. Estudos de solver e de banco de dados sugerem que jogadores out of position capturam só cerca de 60–85% da sua equity — o que deixa você acima de 100% quando está in position. É por isso que o UTG abre ~13% das mãos e o button ~43% — e por que posição reescreve cada c-bet, bluff e decisão de controle de pote no pós-flop.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-07-11",
+  updated: "2026-08-18",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎯",
@@ -34,7 +34,7 @@ Uma hora depois, mesmíssimo K♥Q♥, dessa vez no button. Aumentei, o big blin
 ---
 
 > **Resposta rápida**
-> **In position (IP)** significa agir por último; **out of position (OOP)** significa agir primeiro. Estudos de solver e de banco de dados sugerem que jogadores IP realizam algo em torno de ==g:**85–100% da sua equity**== enquanto jogadores OOP capturam só cerca de ==r:60–85%== — uma diferença que vem de informação, não de cartas. É por isso que o UTG abre ~13% das mãos, o button ~43%, e por que cada c-bet, bluff e decisão de controle de pote muda com a sua cadeira.
+> **In position (IP)** significa agir por último; **out of position (OOP)** significa agir primeiro. Estudos de solver e de banco de dados sugerem que jogadores OOP capturam só cerca de ==r:60–85%== da sua equity; in position você fica então necessariamente ==g:**acima de 100%**==. Não é contradição, é aritmética: o pote não cresce, então o que um assento super-realiza é exatamente o que o outro deixa para trás — uma diferença que vem de informação, não de cartas. É por isso que o UTG abre ~13% das mãos, o button ~43%, e por que cada c-bet, bluff e decisão de controle de pote muda com a sua cadeira.
 
 ---
 
@@ -81,12 +81,12 @@ Porque posição converte as mesmas cartas em mais dinheiro. A forma mais limpa 
 
 | Situação | Equity realizada (aprox.) | Por quê |
 |:---|:---:|:---|
-| **In position** | ==g:**~85–100%**== | Age por último → vê tudo → aposta valor e blefa nos momentos certos |
+| **In position** | ==g:**acima de 100%**== | Age por último → vê tudo → aposta valor e blefa nos momentos certos |
 | **Out of position** | ==r:~60–85%== | Age primeiro → folda vencedoras, paga perdedoras, entrega cartas grátis |
 
 Esses números são aproximados — outputs de solver e estudos de banco de dados variam conforme a profundidade de stack e o matchup — mas a direção é universal: ==**o jogador in position sistematicamente super-realiza, o jogador out of position sistematicamente sub-realiza.**==
 
-![Comparação IP vs OOP — o Button (IP) age por último e realiza cerca de 85–100% de equity; o UTG (OOP) age primeiro e realiza só cerca de 60–85% de equity](/images/holdem-position-play-ip-vs-oop.webp)
+![Comparação IP vs OOP — o Button (IP) age por último e realiza acima de 100% da sua equity; o UTG (OOP) age primeiro e realiza só cerca de 60–85% de equity](/images/holdem-position-play-ip-vs-oop.webp)
 
 Pega um 8♥7♥ num flop K♥4♠2♥. In position, seu flush draw joga lindamente: paga uma aposta barato, pega uma carta grátis quando te dão check, ou blefa quando ele mostra fraqueza duas vezes. Out of position, o mesmo projeto vaza: aposta e leva um aumento, ou dá check e vê ele te cobrar o máximo — ou pior, dá check e folda justo a carta que teria fechado a sua mão. Os mesmos nove outs, um preço bem diferente.
 
@@ -254,7 +254,7 @@ A. Out of position (OOP) significa que você precisa agir antes do seu adversár
 
 **Q. Por que posição importa tanto no pôquer?**
 
-A. Porque agir por último converte as mesmas cartas em mais dinheiro. Estudos de solver e de banco de dados sugerem que jogadores in position realizam algo em torno de 85–100% da sua equity teórica enquanto jogadores out of position capturam só cerca de 60–85% — o jogador in position vê cada decisão do adversário antes de tomar a sua, então aposta valor, blefa e folda em momentos melhores com as mesmíssimas cartas.
+A. Porque agir por último converte as mesmas cartas em mais dinheiro. Estudos de solver e de banco de dados sugerem que jogadores out of position capturam só cerca de 60–85% da sua equity teórica; in position você fica então necessariamente acima de 100% — o jogador in position vê cada decisão do adversário antes de tomar a sua, então aposta valor, blefa e folda em momentos melhores com as mesmíssimas cartas.
 
 **Q. Qual a posição mais lucrativa no pôquer?**
 
@@ -284,7 +284,7 @@ A. Quando você entra no pote, na maioria das vezes sim — o padrão moderno do
 
 ## Os pontos-chave
 
-1. **Posição = realização de equity.** ==g:In position, estudos sugerem que você captura algo em torno de 85–100% da sua equity==; ==r:out of position, só cerca de 60–85%==. A diferença vem de agir por último, não de cartas melhores.
+1. **Posição = realização de equity.** ==g:In position você captura acima de 100% da sua equity==; ==r:out of position, estudos sugerem só cerca de 60–85%==. A diferença vem de agir por último, não de cartas melhores.
 2. **Ranges deslizam com a posição.** O UTG abre ~13%, o button ==g:~43%== — e cada cadeira no meio ganha um degrau na escada. ==r:Jogar mãos de button do UTG sangra fichas.==
 3. **O button é a melhor cadeira; os blinds são as piores.** O BB perde mais fichas brutas (aposta forçada); o SB é a pior cadeira para de fato jogar (primeiro a agir em toda rua). Proteja o seu button e faça 3-bet-ou-fold do seu small blind.
 4. **OOP não é caso perdido — é disciplina.** Check-raise como equalizador, aumente o tamanho ao apostar, controle potes com mãos médias e folde rivers mais do que parece natural.
