@@ -14,6 +14,20 @@ import { slugify } from "./blog-headings";
 import { RANGE_CHART_SEATS, rangeChartCopy } from "./range-chart";
 
 /**
+ * 풀쿼트 마크업 — 한 줄형과 블록형이 **같은 HTML** 을 내도록 한 곳에 둔다.
+ * 두 곳에 적으면 갈라진다(`:::rangechart:::` 가 정확히 그렇게 본문과 갈렸다).
+ */
+const pullQuote = (text: string) =>
+  `<figure style="margin:34px 0;text-align:center">` +
+  `<div style="font-size:46px;line-height:0.4;color:hsl(43 78% 58%);opacity:0.5;margin-bottom:14px">&ldquo;</div>` +
+  `<p style="font-size:22px;font-weight:800;line-height:1.55;color:hsl(152 45% 8%);margin:0;letter-spacing:-0.01em">${text}</p>` +
+  `</figure>`;
+
+/** 에디토리얼 노트 — 한 줄형·블록형 공용(위 pullQuote 와 같은 이유로 한 곳에 둔다). */
+const editorialNote = (text: string) =>
+  `<div class="blog-note" style="margin:26px 0;padding:16px 20px;border-left:3px solid hsl(43 65% 44%);font-size:15px;color:hsl(30 22% 36%);font-style:italic;line-height:1.7">${text}</div>`;
+
+/**
  * @param locale `:::rangechart:::` 의 라벨·주석을 고르는 데만 쓴다. 생략하면 EN.
  *   🔴 **`.map(renderMarkdown)` 로 호출하지 마라** — map 이 2번째 인자로 «배열 인덱스»를
  *      넘기므로 locale 자리에 0, 1 이 들어간다. 반드시 `.map((c) => renderMarkdown(c, locale))`.
@@ -179,6 +193,41 @@ export function renderMarkdown(content: string, locale?: string): string {
         `<span class="inline-flex shrink-0 items-center justify-center rounded-full bg-primary px-5 py-3 text-sm font-black text-black transition-transform group-hover:scale-105">PDF ↓</span>` +
         `</a>`
     )
+    /* ══ 프로즈를 담는 디렉티브 4종(kicker·pull·note·tip) ══════════════════════════════
+       🔴 **반드시 링크 변환(바로 아래)보다 «먼저» 돌아야 한다. 순서를 내리지 마라.**
+          이 디렉티브들은 본문을 `[…]` 로 감싸는데, 그 안에 마크다운 링크 `[텍스트](/주소)` 가
+          들어가면 **링크 정규식이 디렉티브의 여는 `[` 를 링크의 `[` 로 먹는다.**
+          그러면 `:::note[…]:::` 은 `:::note<a …>…</a>.]:::` 이 되어 매치가 실패하고,
+          **마커가 문자 그대로 독자 화면에 노출된다.** 2026-08-18에 실측으로 확인했다 —
+          KO `paired-board-strategy`·`appt-korea-2026-guide`, es `poker-casino-primera-vez`,
+          KO 레거시 `holdem-hand-rankings`(`[홀덤 확률 계산기](/calculator)`).
+       🪶 굵게·하이라이트(위 167~172행)는 이보다 앞이라 본문에 이미 적용돼 있고,
+          링크는 이 뒤에 돌면서 «생성된 HTML 안의» 마크다운 링크까지 정상 변환한다.
+       🪶 본문 캡처가 `[^\]]+` 가 아니라 `.+`(탐욕 + 줄끝 `]:::$` 앵커)인 것도 같은 이유다.
+          ⚠ `hand`·`map-search`·`faqcard`·`stat` 은 `]` 로 «칸을 나누는» 구조라 제외한다 —
+            그쪽을 `.+` 로 바꾸면 칸 분리가 깨진다.
+       ══════════════════════════════════════════════════════════════════════════════ */
+    // :::kicker[text]::: — H2 바로 위 아이브로우. 음수 margin 으로 다음 ##에 바짝 붙인다.
+    .replace(/^:::kicker\[(.+)\]:::$/gm, (_, text) =>
+      `<div class="blog-kicker" style="font-size:11px;font-weight:800;letter-spacing:0.16em;text-transform:uppercase;color:hsl(43 65% 40%);margin:2.6rem 0 -1.9rem">${text}</div>`)
+    /* :::pull ── 풀쿼트. **두 형태를 받는다**: ①블록형 `:::pull ⏎ 본문 ⏎ :::` ②한 줄형 `:::pull[본문]:::`
+       🔴 ①은 2026-08-18까지 아예 처리되지 않아 마커가 그대로 노출됐다 — 실측 **27곳·9로케일**
+          (de 5 · 나머지 8로케일 각 3 · **KO `holdem-implied-odds` 포함**).
+          de 지시서 G2 는 「de·en·ja × 3편 = 10곳」으로 적었으나 실제는 2.7배였다.
+       ★ 다른 블록 디렉티브(stripe·steps·compare·card·readnext)는 전부
+         `/^:::NAME\n([\s\S]*?)\n:::$/gm` 관용구를 쓴다 — pull·note 만 빠져 있었다. */
+    .replace(/^:::pull\n([\s\S]*?)\n:::$/gm, (_, text) =>
+      pullQuote(text.trim().replace(/\n/g, '<br>')))
+    .replace(/^:::pull\[(.+)\]:::$/gm, (_, text) => pullQuote(text))
+    /* :::note ── 여백형 에디토리얼 노트. pull 과 같은 이유로 블록형도 받는다 —
+       실측 **31곳·8로케일**이 블록형이었고 전부 새고 있었다. */
+    .replace(/^:::note\n([\s\S]*?)\n:::$/gm, (_, text) =>
+      editorialNote(text.trim().replace(/\n/g, '<br>')))
+    .replace(/^:::note\[(.+)\]:::$/gm, (_, text) => editorialNote(text))
+    // :::tip[text]::: — 팁 콜아웃
+    .replace(/^:::tip\[(.+)\]:::$/gm, (_, text) =>
+      `<div style="display:flex;gap:10px;align-items:center;margin:14px 0;padding:12px 16px;background:rgba(59,130,246,0.07);border-radius:10px;border:1px solid rgba(59,130,246,0.2);font-size:13px;color:var(--foreground)">` +
+      `<span style="font-size:16px;flex-shrink:0">💡</span><span>${text}</span></div>`)
     // 인라인 썸네일 링크: [텍스트](/url "thumb:/images/x.webp") — 앵커 앞 미니 썸네일(핵심 링크 1~2개만 선택적 사용, 남발 금지)
     .replace(/\[([^\]]+)\]\((?!https?:\/\/)([^)\s"]+)\s+"thumb:([^"]+)"\)/g, (_m, t, u, img) =>
       `<a href="${u}" class="brush-link" style="--hl:${LINK_HL[hlIdx++ % LINK_HL.length]}"><img src="${optSrc(img, 64)}" alt="" loading="lazy" style="display:inline-block;width:1.3em;height:1.3em;object-fit:cover;border-radius:4px;vertical-align:-0.32em;margin-right:5px;border:1.5px solid #ffd23f" />${t}</a>`
@@ -462,21 +511,7 @@ export function renderMarkdown(content: string, locale?: string): string {
     })
     // ── 매거진 컴포넌트: :::kicker[text]::: ── H2 바로 위 아이브로우(소제목 라벨).
     // 아래 음수 margin 으로 다음 ## 제목에 바짝 붙인다(제목은 TOC 유지를 위해 ##로 둠).
-    .replace(/^:::kicker\[([^\]]+)\]:::$/gm, (_, text) =>
-      `<div class="blog-kicker" style="font-size:11px;font-weight:800;letter-spacing:0.16em;text-transform:uppercase;color:hsl(43 65% 40%);margin:2.6rem 0 -1.9rem">${text}</div>`)
-    // ── 매거진 컴포넌트: :::pull[text]::: ── 풀쿼트(큰 인용). <br> 줄바꿈 허용.
-    .replace(/^:::pull\[([^\]]+)\]:::$/gm, (_, text) =>
-      `<figure style="margin:34px 0;text-align:center">` +
-      `<div style="font-size:46px;line-height:0.4;color:hsl(43 78% 58%);opacity:0.5;margin-bottom:14px">&ldquo;</div>` +
-      `<p style="font-size:22px;font-weight:800;line-height:1.55;color:hsl(152 45% 8%);margin:0;letter-spacing:-0.01em">${text}</p>` +
-      `</figure>`)
-    // ── 매거진 컴포넌트: :::note[text]::: ── 여백형 에디토리얼 노트(이탤릭 + 골드 좌측선)
-    .replace(/^:::note\[([^\]]+)\]:::$/gm, (_, text) =>
-      `<div class="blog-note" style="margin:26px 0;padding:16px 20px;border-left:3px solid hsl(43 65% 44%);font-size:15px;color:hsl(30 22% 36%);font-style:italic;line-height:1.7">${text}</div>`)
-    // :::tip[text]::: single-line tip callout
-    .replace(/^:::tip\[([^\]]+)\]:::$/gm, (_, text) =>
-      `<div style="display:flex;gap:10px;align-items:center;margin:14px 0;padding:12px 16px;background:rgba(59,130,246,0.07);border-radius:10px;border:1px solid rgba(59,130,246,0.2);font-size:13px;color:var(--foreground)">` +
-      `<span style="font-size:16px;flex-shrink:0">💡</span><span>${text}</span></div>`)
+    // 🪶 프로즈 디렉티브 4종(kicker·pull·note·tip)은 **링크 변환 앞**으로 옮겼다 — 위쪽 참조.
     // :::stat[number] label::: — big stat pill
     .replace(/^:::stat\[([^\]]+)\] (.+):::$/gm, (_, num, label) =>
       `<div style="display:inline-flex;align-items:center;gap:10px;margin:8px 8px 8px 0;padding:8px 18px;background:rgba(212,175,55,0.1);border:1px solid rgba(212,175,55,0.3);border-radius:100px">` +
