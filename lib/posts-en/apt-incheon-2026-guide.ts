@@ -31,7 +31,7 @@ APT Incheon 2026. August 7–16. Paradise City Casino. $2.7 million in guarantee
 
 The poker trip and the Korea trip are the same trip. ==g:Paradise City is 10 minutes from the airport, and Seoul is 1 hour away by subway.== You can come just for the casino, just for sightseeing, or do both — the location makes it easy either way.
 
-:::note[**★Final result (Aug 16, 2026) — the festival is over.** Hong Kong's **Stephen Pang** won the Main Event for **KRW 411,180,000 (~$293,700)** after a three-handed ICM deal, topping a **record 1,393-entry** field with a **KRW 3,008,880,000** prize pool. Runner-up: Shoumin Zhang (China, KRW 366,500,000 / ~$261,785); 3rd: Yifu He (USA, KRW 257,000,000 / ~$183,570). The top three also earned APT Championship 2026 Main Event seats in Taipei (~$10,000 each). The schedule and registration details below stay up as a reference for the next APT stop. — Source: APT official report, *Stephen Pang Wins APT Incheon Main Event After Wild Heads-Up Battle* (checked Aug 17, 2026)]:::
+:::note[**★Final result (Aug 16, 2026) — the festival is over.** Hong Kong's **Stephen Pang** won the Main Event for **KRW 411,180,000 (~$293,700)** after a three-handed ICM deal, topping a **record 1,393-entry** field with a **KRW 3,008,880,000** prize pool. Runner-up: Shoumin Zhang (China, KRW 366,500,000 / ~$261,785); 3rd: Yifu He (USA, KRW 257,000,000 / ~$183,570). The top three also earned APT Championship 2026 Main Event seats in Taipei (~$10,000 each). The schedule and registration details below stay up as a reference for the next APT stop. — Source: APT official report, *Hong Kong’s Stephen Pang Wins Record APT Incheon Main Event for KRW 411M (~USD 293K) After 3-Way Deal* (checked Aug 17, 2026)]:::
 
 ---
 
