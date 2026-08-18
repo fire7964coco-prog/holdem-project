@@ -110,8 +110,8 @@ Wie du diesen Vorteil wirklich in Chips umsetzt, zeigt das [Positionsspiel](/de/
 | **Big Blind (BB)** | Der größere der beiden Blinds; die Stakes werden nach den Blind-Größen benannt (€1/€2), und ein Big Blind ist die Standardeinheit zum Messen von Stacks. |
 | **UTG (Under the Gun)** | Handelt preflop als Erster – braucht die engste Opening-Range. |
 | **Cutoff (CO)** | Rechts vom Button; zweitbester Platz, super zum Blindstehlen. |
-| **Hijack (HJ)** | Zwei Plätze rechts vom Button; der Beginn der späten Position. |
-| **Lojack (LJ)** | Rechts vom Hijack; spät-mittlere Position (die Bezeichnungen verschieben sich mit der Tischgröße). |
+| **Hijack (HJ)** | Zwei Plätze rechts vom Button; Middle Position (MP), direkt vor dem Cutoff. |
+| **Lojack (LJ)** | Rechts vom Hijack; ebenfalls Middle Position (MP) – die Bezeichnungen verschieben sich mit der Tischgröße. |
 | **Early / Middle / Late** | Gruppierungen danach, wie früh du handelst – Early = am engsten, Late = am weitesten und profitabelsten. |
 | **In / Out of Position** | Du bist *in Position*, wenn du nach deinem Gegner handelst, *out of Position*, wenn du zuerst handelst. |
 

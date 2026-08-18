@@ -101,7 +101,7 @@ Die [Starthände-Tabelle](/de/blog/holdem-starting-hands-chart) verwandelt das i
 ## Entscheidung 3: Raise oder Fold – warum solltest du nie limpen?
 
 > **Kurze Antwort**
-> Weil ein Limp den Pot vor dem Flop **nie** gewinnen kann. Ein First-in-Raise gewinnt die Blinds sofort, wenn alle folden; ein Limp wirft genau diesen Weg weg, gibt die Initiative ab und lädt starke Spieler ein, dich zu isolieren. Echte Ausnahmen gibt es – Over-Limpen in Position, die BB-Defense und Set-Mining bei tiefen Stacks –, aber bei allen dreien geht es um den **Preis**, nicht um Bequemlichkeit.
+> Weil ein Limp den Pot vor dem Flop **nie** gewinnen kann. Ein First-in-Raise gewinnt die Blinds sofort, wenn alle folden; ein Limp wirft genau diesen Weg weg, gibt die Initiative ab und lädt starke Spieler ein, dich zu isolieren. Echte Ausnahmen von dieser Raise-oder-Fold-Grundregel gibt es – Over-Limpen in Position, die BB-Defense und Set-Mining bei tiefen Stacks –, aber bei allen dreien geht es um den **Preis**, nicht um Bequemlichkeit.
 
 ![Infografik eines goldenen Dealer-Buttons, zweier verdeckter Hole Cards und eines K♦ 7♣ 2♠ Flops – der Button handelt postflop zuletzt](/images/holdem-button-dealer-board.webp "Open-Limpen lädt zu einem aufgeblähten Multiway-Pot ohne Initiative ein – raise, um ihn jetzt zu gewinnen, oder fold und warte auf einen besseren Spot")
 
@@ -126,7 +126,7 @@ Du hast preflop geraist, jemand hat gecallt, und jetzt ist der Flop draußen. Hi
 
 Die C-Bet funktioniert, weil *du* derjenige bist, der preflop Stärke repräsentiert hat, sodass das Board „dir gehört“. Aber hier der Fehler, den du vermeiden musst: **es gibt keinen einzelnen richtigen C-Bet-Prozentsatz.** Alte Ratschläge sagten „bette fast jeden Flop“. Moderne Strategie sagt, es hängt von drei Dingen ab:
 
-- **Position** – in Position auf einem trockenen High-Card-Board (sagen wir K‑7‑2) kannst du oft C-betten, vielleicht **60–80%** der Zeit. Out of Position sinkt das Richtung **40–50%**, weil du weniger Informationen und weniger Fold Equity hast.
+- **Position** – in Position auf einem trockenen High-Card-Board (sagen wir K‑7‑2) kannst du oft C-betten; out of Position sinkt die Frequenz deutlich, weil du weniger Informationen und weniger Fold Equity hast. Die konkreten Bandbreiten stehen im [C-Bet-Guide](/de/blog/holdem-continuation-bet).
 - **Board-Textur** – trockene Boards, die deinen Gegner verfehlen, begünstigen das Betten; wet, connected Boards (9‑8‑7 mit zwei einer Farbe), die Calling Ranges treffen, verlangen Vorsicht.
 - **Anzahl der Gegner** – heads-up kannst du frei betten; gegen zwei oder mehr Caller C-bette **weniger als die Hälfte** der Zeit, denn jemand hat sich mit *irgendwas* verbunden.
 
@@ -274,7 +274,7 @@ A. Nicht über Videos oder Tipplisten, sondern über Wiederholung an wenigen Ste
 
 **Q. Wie oft sollte man Continuation betten (C-Bet)?**
 
-A. Es gibt keine einzelne Zahl – es hängt von Position, Board und der Anzahl der Gegner ab, denen du gegenüberstehst. In Position gegen einen Spieler auf einem trockenen Board könntest du 60–80% der Zeit C-betten; out of position oder gegen zwei-plus Gegner sinkt es Richtung 40–50% oder tiefer. Bette mehr auf Boards, die die Range deines Gegners verfehlen, weniger auf nassen Boards, die sich mit ihr verbinden, und wähle das Sizing klein (25–35% Pot), wenn du weit bettest, größer (65%+), wenn polarisiert.
+A. Es gibt keine einzelne Zahl – es hängt von Position, Board und der Anzahl der Gegner ab, denen du gegenüberstehst. In Position gegen einen Spieler auf einem trockenen Board c-bettest du am häufigsten; out of position oder gegen zwei-plus Gegner deutlich seltener – die konkreten Bandbreiten stehen im [C-Bet-Guide](/de/blog/holdem-continuation-bet). Bette mehr auf Boards, die die Range deines Gegners verfehlen, weniger auf nassen Boards, die sich mit ihr verbinden, und wähle das Sizing klein (25–35% Pot), wenn du weit bettest, größer (65%+), wenn polarisiert.
 
 ---
 

@@ -103,8 +103,8 @@ Dónde te sientas decide cuándo actúas — y actuar el último es una ventaja 
 | **Ciega grande (BB)** | La mayor de las dos ciegas; los niveles se nombran por el tamaño de las ciegas ($1/$2), y una ciega grande es la unidad estándar para medir stacks. |
 | **UTG (under the gun)** | El primero en actuar preflop — necesita el rango de apertura más cerrado. |
 | **Cutoff (CO)** | A la derecha del botón; segundo mejor asiento, ideal para robar ciegas. |
-| **Hijack (HJ)** | Dos asientos a la derecha del botón; el comienzo de la posición tardía. |
-| **Lojack (LJ)** | A la derecha del hijack; posición media-tardía (las etiquetas varían según el tamaño de la mesa). |
+| **Hijack (HJ)** | Dos asientos a la derecha del botón; posición media (MP), justo antes del cutoff. |
+| **Lojack (LJ)** | A la derecha del hijack; también posición media (MP) — las etiquetas varían según el tamaño de la mesa. |
 | **Temprana / Media / Tardía** | Agrupaciones según lo pronto que actúas — temprana = la más cerrada, tardía = la más amplia y rentable. |
 | **En / Fuera de posición** | Estás *en posición* si actúas después de tu rival, *fuera de posición* si actúas primero. |
 

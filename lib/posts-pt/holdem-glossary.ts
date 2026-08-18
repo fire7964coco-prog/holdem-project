@@ -102,8 +102,8 @@ Onde você senta decide quando você age — e agir por último é uma vantagem 
 | **Big blind (BB)** | O maior dos dois blinds; os stakes recebem o nome dos tamanhos dos blinds ($1/$2), e um big blind é a unidade padrão pra medir stacks. |
 | **UTG (under the gun)** | Primeiro a agir no pré-flop — precisa do range de abertura mais fechado. |
 | **Cutoff (CO)** | À direita do button; o segundo melhor lugar, ótimo pra roubar blinds. |
-| **Hijack (HJ)** | Dois lugares à direita do button; o começo da posição tardia. |
-| **Lojack (LJ)** | À direita do hijack; posição tardia-média (os rótulos mudam com o tamanho da mesa). |
+| **Hijack (HJ)** | Dois lugares à direita do button; posição média (MP), logo antes do cutoff. |
+| **Lojack (LJ)** | À direita do hijack; também posição média (MP) — os rótulos mudam com o tamanho da mesa. |
 | **Early / Middle / Late** | Agrupamentos por quão cedo você age — early = mais fechado, late = mais aberto e mais lucrativo. |
 | **In / Out of position** | Você está *in position* se age depois do oponente, *out of position* se age primeiro. |
 

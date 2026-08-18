@@ -100,7 +100,7 @@ Dar [limp](/pt/blog/holdem-limping) é só igualar o big blind em vez de aumenta
 2. **Você entrega a iniciativa.** Quem aumentou no pré-flop continua contando uma história no flop (Decisão 4). Dê limp e você entrega essa história para outra pessoa.
 3. **Você pinta um alvo em você mesmo.** Jogadores fortes aumentam grande atrás de um limper para isolá-lo, e depois passam a mão inteira jogando melhor em posição. Um open-limp anuncia "jogador fraco e passivo aqui".
 
-O padrão que corrige isso é direto: **se a mão é boa o suficiente para jogar, é boa o suficiente para aumentar; se não é, folde.** E quando *outra* pessoa já aumentou, aumentar de novo — um [3-bet](/pt/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp") — é como você pune aberturas largas e constrói potes com suas melhores mãos. As exceções são reais, e todas elas são sobre **preço**. O *over*-limp — pagar *atrás* de alguém que já deu limp, em posição, com uma mão especulativa como um par pequeno — compra um lugar barato num pote multiway. A maior é **defender o big blind**: contra uma abertura de 2,5bb você já tem ==1bb postado==, então paga 1,5bb num pote de 4bb e precisa de apenas ==1,5 ÷ 5,5 = 27%== de equity — e o seu call fecha a ação. Por isso boa parte do range do big blind paga em vez de dar 3-bet ou foldar. A terceira é o **set-mining** de um par pequeno contra um aumento com stacks profundos (a matemática está abaixo). Isso são descontos, não estratégias — fora de spots assim, aumentar ou foldar.
+O padrão que corrige isso é direto: **se a mão é boa o suficiente para jogar, é boa o suficiente para aumentar; se não é, folde.** E quando *outra* pessoa já aumentou, aumentar de novo — um [3-bet](/pt/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp") — é como você pune aberturas largas e constrói potes com suas melhores mãos. As exceções a esse padrão de aumentar-ou-foldar são reais, e todas elas são sobre **preço**. O *over*-limp — pagar *atrás* de alguém que já deu limp, em posição, com uma mão especulativa como um par pequeno — compra um lugar barato num pote multiway. A maior é **defender o big blind**: contra uma abertura de 2,5bb você já tem ==1bb postado==, então paga 1,5bb num pote de 4bb e precisa de apenas ==1,5 ÷ 5,5 = 27%== de equity — e o seu call fecha a ação. Por isso boa parte do range do big blind paga em vez de dar 3-bet ou foldar. A terceira é o **set-mining** de um par pequeno contra um aumento com stacks profundos (a matemática está abaixo). Isso são descontos, não estratégias — fora de spots assim, aumentar ou foldar.
 
 ---
 
@@ -110,7 +110,7 @@ Você aumentou no pré-flop, alguém pagou, e agora o flop está aberto. É aqui
 
 O c-bet funciona porque *você* é quem representou força no pré-flop, então o board "pertence" a você. Mas eis o erro a evitar: **não existe uma única porcentagem de c-bet correta.** O conselho antigo dizia "aposte quase todo flop". A estratégia moderna diz que depende de três coisas:
 
-- **Posição** — em posição num board seco de carta alta (digamos K‑7‑2), você pode dar c-bet com frequência, talvez **60–80%** das vezes. Fora de posição, isso cai para **40–50%** porque você tem menos informação e menos fold equity.
+- **Posição** — em posição num board seco de carta alta (digamos K‑7‑2), você pode dar c-bet com frequência; fora de posição a frequência cai bastante porque você tem menos informação e menos fold equity. As faixas concretas estão no [guia de c-bet](/pt/blog/holdem-continuation-bet).
 - **Textura do board** — boards secos que erram o adversário favorecem apostar; boards molhados e conectados (9‑8‑7 com duas do mesmo naipe) que acertam ranges de pagador pedem cautela.
 - **Número de adversários** — heads-up você pode apostar livremente; contra dois ou mais pagadores, dê c-bet **menos da metade** das vezes, porque alguém conectou com *alguma coisa*.
 
@@ -221,7 +221,7 @@ A. Tight-aggressive descreve jogar um range estreito de mãos fortes (tight) mas
 
 **Q. Com que frequência você deve dar continuation bet (c-bet)?**
 
-A. Não há um número único — depende da posição, do board e de quantos adversários você enfrenta. Em posição contra um jogador num board seco você pode dar c-bet 60–80% das vezes; fora de posição ou contra dois ou mais adversários cai para 40–50% ou menos. Aposte mais em boards que erram o range do adversário, menos em boards molhados que conectam com ele, e faça sizing pequeno (25–35% do pote) quando aposta largo, maior (65%+) quando polarizado.
+A. Não há um número único — depende da posição, do board e de quantos adversários você enfrenta. Em posição contra um jogador num board seco você dá c-bet com mais frequência; fora de posição ou contra dois ou mais adversários, bem menos — as faixas concretas estão no [guia de c-bet](/pt/blog/holdem-continuation-bet). Aposte mais em boards que erram o range do adversário, menos em boards molhados que conectam com ele, e faça sizing pequeno (25–35% do pote) quando aposta largo, maior (65%+) quando polarizado.
 
 ---
 

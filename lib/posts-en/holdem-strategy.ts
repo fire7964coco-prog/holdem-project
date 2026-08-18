@@ -100,7 +100,7 @@ To [limp](/en/blog/holdem-limping) is to just call the big blind instead of rais
 2. **You surrender initiative.** The preflop raiser gets to keep telling a story on the flop (Decision 4). Limp, and you hand that story to someone else.
 3. **You paint a target on yourself.** Strong players raise big behind a limper to isolate them, then out-play them in position all hand. An open-limp announces "weak, passive player here."
 
-The default that fixes it is blunt: **if a hand is good enough to play, it's good enough to raise; if it isn't, fold.** And when someone *else* has already raised, raising again — a [3-bet](/en/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp") — is how you punish wide opens and build pots with your best hands. The exceptions are real, and every one of them is about **price**. *Over*-limping — calling *behind* someone who already limped, in position, with a speculative hand like a small pair — buys a cheap seat in a multiway pot. **Defending your big blind** is the bigger one: against a 2.5bb open you have ==1bb already posted==, so you're calling 1.5bb into a 4bb pot and need only ==1.5 ÷ 5.5 = 27%== equity — and your call *closes* the action, so a wide slice of the BB range flat-calls rather than 3-bets or folds. **Set-mining** a small pair against a raise with deep stacks is the third (the math is below). Those are discounts, not strategies — outside spots like them, raise or fold.
+The default that fixes it is blunt: **if a hand is good enough to play, it's good enough to raise; if it isn't, fold.** And when someone *else* has already raised, raising again — a [3-bet](/en/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp") — is how you punish wide opens and build pots with your best hands. The exceptions to that raise-or-fold default are real, and every one of them is about **price**. *Over*-limping — calling *behind* someone who already limped, in position, with a speculative hand like a small pair — buys a cheap seat in a multiway pot. **Defending your big blind** is the bigger one: against a 2.5bb open you have ==1bb already posted==, so you're calling 1.5bb into a 4bb pot and need only ==1.5 ÷ 5.5 = 27%== equity — and your call *closes* the action, so a wide slice of the BB range flat-calls rather than 3-bets or folds. **Set-mining** a small pair against a raise with deep stacks is the third (the math is below). Those are discounts, not strategies — outside spots like them, raise or fold.
 
 ---
 
@@ -110,7 +110,7 @@ You raised preflop, someone called, and now the flop is out. This is where most 
 
 The c-bet works because *you* are the one who represented strength preflop, so the board "belongs" to you. But here's the mistake to avoid: **there is no single correct c-bet percentage.** Old advice said "bet almost every flop." Modern strategy says it depends on three things:
 
-- **Position** — in position on a dry, high-card board (say K‑7‑2), you can c-bet often, maybe **60–80%** of the time. Out of position, that drops toward **40–50%** because you have less information and less fold equity.
+- **Position** — in position on a dry, high-card board (say K‑7‑2), you can c-bet often; out of position the frequency drops sharply because you have less information and less fold equity. The exact bands live in the [c-bet guide](/en/blog/holdem-continuation-bet).
 - **Board texture** — dry boards that miss your opponent favor betting; wet, connected boards (9‑8‑7 with two of a suit) that hit calling ranges call for caution.
 - **Number of opponents** — heads-up you can bet freely; into two or more callers, c-bet **less than half** the time, because someone connected with *something*.
 
@@ -221,7 +221,7 @@ A. Tight-aggressive describes playing a narrow range of strong hands (tight) but
 
 **Q. How often should you continuation bet (c-bet)?**
 
-A. There's no single number — it depends on position, board, and how many opponents you face. In position against one player on a dry board you might c-bet 60–80% of the time; out of position or into two-plus opponents it drops toward 40–50% or lower. Bet more on boards that miss your opponent's range, less on wet boards that connect with it, and size small (25–35% pot) when betting wide, larger (65%+) when polarized.
+A. There's no single number — it depends on position, board, and how many opponents you face. In position against one player on a dry board you c-bet most often; out of position or into two-plus opponents much less — the exact bands are in the [c-bet guide](/en/blog/holdem-continuation-bet). Bet more on boards that miss your opponent's range, less on wet boards that connect with it, and size small (25–35% pot) when betting wide, larger (65%+) when polarized.
 
 **Q. Is poker a game of skill or luck?**
 

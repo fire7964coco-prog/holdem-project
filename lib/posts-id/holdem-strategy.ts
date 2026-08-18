@@ -100,7 +100,7 @@ Setelah Anda memutuskan sebuah tangan layak dimainkan, ada keputusan kedua yang 
 2. **Anda menyerahkan inisiatif.** Preflop raiser bisa terus menceritakan sebuah kisah di flop (Keputusan 4). Limp, dan Anda menyerahkan kisah itu ke orang lain.
 3. **Anda melukis target di diri sendiri.** Pemain kuat raise besar di belakang limper untuk mengisolasinya, lalu mengalahkannya dalam position sepanjang tangan. Sebuah open-limp mengumumkan "ada pemain lemah dan pasif di sini."
 
-Default yang memperbaikinya blak-blakan: **jika sebuah tangan cukup baik untuk dimainkan, ia cukup baik untuk di-raise; jika tidak, fold.** Dan ketika orang *lain* sudah raise, raise lagi — sebuah [3-bet](/id/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp") — adalah cara Anda menghukum open yang lebar dan membangun pot dengan tangan terbaik Anda. Pengecualiannya nyata, dan semuanya soal **harga**. *Over*-limp — call *di belakang* seseorang yang sudah limp, dalam position, dengan tangan spekulatif seperti small pair — membelikan Anda kursi murah di pot multiway. Yang lebih besar adalah **big blind defense**: melawan open 2,5bb Anda sudah memasang ==1bb==, jadi Anda call 1,5bb ke pot 4bb dan hanya butuh ==1,5 ÷ 5,5 = 27%== equity — dan call Anda menutup aksi. Itulah kenapa sebagian besar range big blind memilih call ketimbang 3-bet atau fold. Yang ketiga adalah **set-mining** small pair melawan raise saat stack dalam (matematikanya ada di bawah). Itu diskon, bukan strategi — di luar spot seperti itu, raise atau fold.
+Default yang memperbaikinya blak-blakan: **jika sebuah tangan cukup baik untuk dimainkan, ia cukup baik untuk di-raise; jika tidak, fold.** Dan ketika orang *lain* sudah raise, raise lagi — sebuah [3-bet](/id/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp") — adalah cara Anda menghukum open yang lebar dan membangun pot dengan tangan terbaik Anda. Pengecualian terhadap default raise-atau-fold itu nyata, dan semuanya soal **harga**. *Over*-limp — call *di belakang* seseorang yang sudah limp, dalam position, dengan tangan spekulatif seperti small pair — membelikan Anda kursi murah di pot multiway. Yang lebih besar adalah **big blind defense**: melawan open 2,5bb Anda sudah memasang ==1bb==, jadi Anda call 1,5bb ke pot 4bb dan hanya butuh ==1,5 ÷ 5,5 = 27%== equity — dan call Anda menutup aksi. Itulah kenapa sebagian besar range big blind memilih call ketimbang 3-bet atau fold. Yang ketiga adalah **set-mining** small pair melawan raise saat stack dalam (matematikanya ada di bawah). Itu diskon, bukan strategi — di luar spot seperti itu, raise atau fold.
 
 ---
 
@@ -110,7 +110,7 @@ Anda raise di preflop, seseorang call, dan sekarang flop keluar. Di sinilah seba
 
 C-bet bekerja karena *Anda*-lah yang merepresentasikan kekuatan di preflop, jadi board "milik" Anda. Tapi inilah kesalahan yang harus dihindari: **tidak ada satu persentase c-bet yang benar.** Nasihat lama berkata "bet hampir setiap flop." Strategi modern berkata itu tergantung pada tiga hal:
 
-- **Position** — dalam position di board kering dan tinggi (misalnya K‑7‑2), Anda bisa c-bet sering, mungkin **60–80%** dari waktu. Di luar position, itu turun ke arah **40–50%** karena Anda punya lebih sedikit informasi dan lebih sedikit fold equity.
+- **Position** — dalam position di board kering dan tinggi (misalnya K‑7‑2), Anda bisa c-bet sering; di luar position frekuensinya turun tajam karena Anda punya lebih sedikit informasi dan lebih sedikit fold equity. Angka rentangnya ada di [panduan c-bet](/id/blog/holdem-continuation-bet).
 - **Tekstur board** — board kering yang meleset dari lawan menguntungkan bertaruh; board basah dan terhubung (9‑8‑7 dengan dua kartu sejenis) yang mengenai range call menuntut kehati-hatian.
 - **Jumlah lawan** — heads-up Anda bisa bet bebas; menghadapi dua caller atau lebih, c-bet **kurang dari separuh** waktu, karena seseorang terhubung dengan *sesuatu*.
 
@@ -221,7 +221,7 @@ A. Tight-aggressive menggambarkan memainkan range sempit berisi tangan kuat (tig
 
 **Q. Seberapa sering Anda harus continuation bet (c-bet)?**
 
-A. Tak ada satu angka — ia tergantung pada position, board, dan berapa banyak lawan yang Anda hadapi. Dalam position melawan satu pemain di board kering Anda mungkin c-bet 60–80% dari waktu; di luar position atau menghadapi dua lawan atau lebih ia turun ke arah 40–50% atau lebih rendah. Bet lebih banyak di board yang meleset dari range lawan, lebih sedikit di board basah yang terhubung dengannya, dan ukuran kecil (25–35% pot) saat bertaruh lebar, lebih besar (65%+) saat terpolarisasi.
+A. Tak ada satu angka — ia tergantung pada position, board, dan berapa banyak lawan yang Anda hadapi. Dalam position melawan satu pemain di board kering Anda c-bet paling sering; di luar position atau menghadapi dua lawan atau lebih jauh lebih jarang — angka rentangnya ada di [panduan c-bet](/id/blog/holdem-continuation-bet). Bet lebih banyak di board yang meleset dari range lawan, lebih sedikit di board basah yang terhubung dengannya, dan ukuran kecil (25–35% pot) saat bertaruh lebar, lebih besar (65%+) saat terpolarisasi.
 
 ---
 

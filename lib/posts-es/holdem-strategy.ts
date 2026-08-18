@@ -101,7 +101,7 @@ Una vez que has decidido que vale la pena jugar una mano, hay una segunda decisi
 2. **Renuncias a la iniciativa.** El que sube preflop puede seguir contando una historia en el flop (Decisión 4). Limpea, y le entregas esa historia a otro.
 3. **Te pintas una diana encima.** Los jugadores fuertes suben grande por detrás de un limper para aislarlo, y luego lo superan jugando en posición toda la mano. Un open-limp anuncia «aquí hay un jugador débil y pasivo».
 
-El default que lo arregla es contundente: **si una mano es lo bastante buena para jugarla, es lo bastante buena para subir; si no lo es, foldea.** Y cuando *otro* ya ha subido, volver a subir — un [3-bet](/es/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp") — es como castigas las aperturas amplias y agrandas los botes con tus mejores manos. Las excepciones son reales, y todas van del **precio**. El *over*-limp — igualar *por detrás* de alguien que ya limpeó, en posición, con una mano especulativa como un par pequeño — te compra un asiento barato en un bote multiway. La mayor es **defender la ciega grande**: contra una apertura de 2.5bb ya tienes ==1bb puesto==, así que igualas 1.5bb a un bote de 4bb y necesitas solo ==1.5 ÷ 5.5 = 27%== de equity — y además actúas último, con lo que tu call cierra la ronda. Por eso buena parte del rango de la ciega grande paga en lugar de subir o foldear. La tercera es el **set-mining** con un par pequeño frente a una subida y con stacks profundos (la matemática está más abajo). Eso son descuentos, no estrategias — fuera de sitios así, sube o foldea.
+El default que lo arregla es contundente: **si una mano es lo bastante buena para jugarla, es lo bastante buena para subir; si no lo es, foldea.** Y cuando *otro* ya ha subido, volver a subir — un [3-bet](/es/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp") — es como castigas las aperturas amplias y agrandas los botes con tus mejores manos. Las excepciones a ese default de subir-o-foldear son reales, y todas van del **precio**. El *over*-limp — igualar *por detrás* de alguien que ya limpeó, en posición, con una mano especulativa como un par pequeño — te compra un asiento barato en un bote multiway. La mayor es **defender la ciega grande**: contra una apertura de 2.5bb ya tienes ==1bb puesto==, así que igualas 1.5bb a un bote de 4bb y necesitas solo ==1.5 ÷ 5.5 = 27%== de equity — y además actúas último, con lo que tu call cierra la ronda. Por eso buena parte del rango de la ciega grande paga en lugar de subir o foldear. La tercera es el **set-mining** con un par pequeño frente a una subida y con stacks profundos (la matemática está más abajo). Eso son descuentos, no estrategias — fuera de sitios así, sube o foldea.
 
 ---
 
@@ -111,7 +111,7 @@ Subiste preflop, alguien igualó, y ahora sale el flop. Aquí es donde de verdad
 
 El c-bet funciona porque *tú* eres el que representó fuerza preflop, así que el board «te pertenece». Pero aquí está el error a evitar: **no hay un único porcentaje correcto de c-bet.** El consejo antiguo decía «apuesta casi todos los flops». La estrategia moderna dice que depende de tres cosas:
 
-- **Posición** — en posición sobre un board seco de carta alta (digamos K‑7‑2), puedes cbetear a menudo, quizá el **60–80%** de las veces. Fuera de posición, eso baja hacia el **40–50%** porque tienes menos información y menos fold equity.
+- **Posición** — en posición sobre un board seco de carta alta (digamos K‑7‑2), puedes cbetear a menudo; fuera de posición la frecuencia baja bastante porque tienes menos información y menos fold equity. Los rangos concretos están en la [guía de c-bet](/es/blog/holdem-continuation-bet).
 - **Textura del board** — los boards secos que fallan a tu rival favorecen apostar; los boards húmedos y conectados (9‑8‑7 con dos del mismo palo) que conectan con los rangos que pagan piden cautela.
 - **Número de rivales** — mano a mano puedes apostar con libertad; contra dos o más que pagan, cbetea **menos de la mitad** de las veces, porque alguien ha conectado con *algo*.
 
@@ -222,7 +222,7 @@ A. Tight-aggressive describe jugar un rango estrecho de manos fuertes (tight) pe
 
 **Q. ¿Con qué frecuencia deberías hacer c-bet?**
 
-A. No hay un único número — depende de la posición, del board y de cuántos rivales enfrentas. En posición contra un solo jugador en un board seco podrías cbetear el 60–80% de las veces; fuera de posición o contra dos o más rivales baja hacia el 40–50% o menos. Apuesta más en boards que fallan al rango de tu rival, menos en boards húmedos que conectan con él, y usa un tamaño pequeño (25–35% del bote) cuando apuestas amplio, y mayor (65%+) cuando vas polarizado.
+A. No hay un único número — depende de la posición, del board y de cuántos rivales enfrentas. En posición contra un solo jugador en un board seco cbeteas con más frecuencia; fuera de posición o contra dos o más rivales, bastante menos — los rangos concretos están en la [guía de c-bet](/es/blog/holdem-continuation-bet). Apuesta más en boards que fallan al rango de tu rival, menos en boards húmedos que conectan con él, y usa un tamaño pequeño (25–35% del bote) cuando apuestas amplio, y mayor (65%+) cuando vas polarizado.
 
 **Q. ¿El póker es un juego de habilidad o de suerte?**
 

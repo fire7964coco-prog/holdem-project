@@ -102,8 +102,8 @@ Where you sit decides when you act — and acting last is a permanent edge. For 
 | **Big blind (BB)** | The larger of the two blinds; stakes are named by the blind sizes ($1/$2), and one big blind is the standard unit for measuring stacks. |
 | **UTG (under the gun)** | First to act preflop — needs the tightest opening range. |
 | **Cutoff (CO)** | Right of the button; second-best seat, great for stealing blinds. |
-| **Hijack (HJ)** | Two seats right of the button; the start of late position. |
-| **Lojack (LJ)** | Right of the hijack; late-middle position (labels shift with table size). |
+| **Hijack (HJ)** | Two seats right of the button; middle position (MP), just before the cutoff. |
+| **Lojack (LJ)** | Right of the hijack; also middle position (MP) — labels shift with table size. |
 | **Early / Middle / Late** | Groupings by how soon you act — early = tightest, late = widest and most profitable. |
 | **In / Out of position** | You're *in position* if you act after your opponent, *out of position* if you act first. |
 

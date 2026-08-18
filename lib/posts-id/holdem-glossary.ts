@@ -102,8 +102,8 @@ Tempat Anda duduk menentukan kapan Anda beraksi — dan beraksi terakhir adalah 
 | **Big blind (BB)** | Yang lebih besar dari dua blind; level stake dinamai berdasarkan ukuran blind ($1/$2), dan satu big blind adalah satuan standar untuk mengukur stack. |
 | **UTG (under the gun)** | Beraksi pertama preflop — butuh opening range paling ketat. |
 | **Cutoff (CO)** | Di kanan button; kursi terbaik kedua, bagus untuk mencuri blind. |
-| **Hijack (HJ)** | Dua kursi di kanan button; awal dari late position. |
-| **Lojack (LJ)** | Di kanan hijack; posisi late-middle (label bergeser sesuai jumlah kursi di meja). |
+| **Hijack (HJ)** | Dua kursi di kanan button; posisi tengah (MP), tepat sebelum cutoff. |
+| **Lojack (LJ)** | Di kanan hijack; juga posisi tengah (MP) — label bergeser sesuai jumlah kursi di meja. |
 | **Early / Middle / Late** | Pengelompokan berdasarkan seberapa cepat Anda beraksi — early = paling ketat, late = paling luas dan paling menguntungkan. |
 | **In / Out of position** | Anda *in position* jika beraksi setelah lawan, *out of position* jika beraksi lebih dulu. |
 
