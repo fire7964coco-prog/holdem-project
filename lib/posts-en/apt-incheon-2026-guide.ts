@@ -352,11 +352,11 @@ Compared to EPT Barcelona (~€5,300 Main) or WPT Australia (~AUD $5,000 Main), 
 
 | Nationality | Visa required? | How to enter |
 |---|---|---|
-| USA, Canada, UK, Australia, NZ, most EU | **No visa** | K-ETA-exempt through Dec 31, 2026 (submit free e-Arrival Card); non-exempt countries: K-ETA ₩10,000 at k-eta.go.kr |
-| Japan, Singapore, Hong Kong, Taiwan | **No visa** | K-ETA |
+| USA, Canada, UK, Australia, NZ, eleven EU states (incl. DE, FR, IT, NL, ES) | **No visa** | K-ETA-exempt through Dec 31, 2026 (submit free e-Arrival Card); non-exempt countries: K-ETA ₩10,000 at k-eta.go.kr |
+| Japan, Singapore, Hong Kong, Macao, Taiwan | **No visa** | Also K-ETA-exempt through Dec 31, 2026 — submit the free e-Arrival Card |
 | Most other countries | Check [mofa.go.kr](https://www.mofa.go.kr) | May need tourist visa |
 
-==r:Check your K-ETA status before booking.== 22 countries (US, UK, EU, Australia, Japan and more) are exempt through Dec 31, 2026 and just submit the free e-Arrival Card before landing; everyone else applies at [k-eta.go.kr](https://www.k-eta.go.kr) (₩10,000, usually instant — allow 2 weeks to be safe).
+==r:Check your K-ETA status before booking.== The exemption list (US, UK, eleven EU states, Australia, Japan and more) runs through Dec 31, 2026 and just submit the free e-Arrival Card before landing; everyone else applies at [k-eta.go.kr](https://www.k-eta.go.kr) (₩10,000, usually instant — allow 2 weeks to be safe).
 
 **Casino entry (Paradise City):**
 - Valid passport required

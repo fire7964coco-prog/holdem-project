@@ -353,11 +353,11 @@ Comparado con el EPT Barcelona (~€5,300 el Main) o el WPT Australia (~AUD $5,0
 
 | Nacionalidad | ¿Visado? | Cómo entrar |
 |---|---|---|
-| EE. UU., Canadá, Reino Unido, Australia, NZ, la mayor parte de la UE | **Sin visado** | Exentos de K-ETA hasta el 31 de diciembre de 2026 (presenta la e-Arrival Card gratuita); países no exentos: K-ETA de ₩10,000 en k-eta.go.kr |
-| Japón, Singapur, Hong Kong, Taiwán | **Sin visado** | K-ETA |
+| EE. UU., Canadá, Reino Unido, Australia, NZ, once países de la UE (entre ellos ES, DE, FR, IT, NL) | **Sin visado** | Exentos de K-ETA hasta el 31 de diciembre de 2026 (presenta la e-Arrival Card gratuita); países no exentos: K-ETA de ₩10,000 en k-eta.go.kr |
+| Japón, Singapur, Hong Kong, Macao, Taiwán | **Sin visado** | También exentos de K-ETA hasta el 31 de diciembre de 2026 — presenta la e-Arrival Card gratuita |
 | La mayoría del resto de países | Consulta [mofa.go.kr](https://www.mofa.go.kr) | Puede que necesites visado de turista |
 
-==r:Comprueba tu situación de K-ETA antes de reservar.== 22 países (EE. UU., Reino Unido, UE, Australia, Japón y más) están exentos hasta el 31 de diciembre de 2026 y solo presentan la e-Arrival Card gratuita antes de aterrizar; el resto la solicita en [k-eta.go.kr](https://www.k-eta.go.kr) (₩10,000, normalmente instantánea — deja 2 semanas de margen por seguridad).
+==r:Comprueba tu situación de K-ETA antes de reservar.== La lista de exención (EE. UU., Reino Unido, once países de la UE, Australia, Japón y más) rige hasta el 31 de diciembre de 2026 y solo presentan la e-Arrival Card gratuita antes de aterrizar; el resto la solicita en [k-eta.go.kr](https://www.k-eta.go.kr) (₩10,000, normalmente instantánea — deja 2 semanas de margen por seguridad).
 
 **Entrada al casino (Paradise City):**
 - Pasaporte válido obligatorio

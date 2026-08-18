@@ -51,7 +51,7 @@ Antes do pôquer: a Coreia do Sul virou silenciosamente um dos melhores países 
 - **Cultura K:** o Palácio Gyeongbokgung, a Bukchon Hanok Village e a cena de música ao vivo de Hongdae são experiências culturais legitimamente de nível mundial.
 - **Custo:** comparada a Tóquio, Hong Kong ou Sydney, Seul é notavelmente acessível — um jantar completo de churrasco coreano com bebidas sai por menos de $20 por pessoa.
 
-E pra visitantes internacionais: ==g:a maioria dos portadores de passaporte ocidental entra na Coreia sem visto ou via um K-ETA (autorização eletrônica de viagem). **Atenção, brasileiro: o Brasil não está na lista de 22 países isentos** — você entra sem visto por 90 dias, mas **precisa do K-ETA: ₩10.000 (~$7)**, em k-eta.go.kr, válido por 3 anos.==
+E pra visitantes internacionais: ==g:a maioria dos portadores de passaporte ocidental entra na Coreia sem visto ou via um K-ETA (autorização eletrônica de viagem). **Atenção, brasileiro: o Brasil não está na lista de isenção** — você entra sem visto por 90 dias, mas **precisa do K-ETA: ₩10.000 (~$7)**, em k-eta.go.kr, válido por 3 anos.==
 
 **E tem um motivo que vale só pra este ano.** O próprio anúncio da APT diz sem rodeios: *"with the APT turning twenty in 2026"* — o tour completa vinte anos em 2026. Ele nasceu em 2006, quando Antanas "Tony G" Guoga venceu o Main Event inaugural em Singapura. A temporada de aniversário fecha com o APT Championship em Taipei, e é por isso que **os assentos para o Championship distribuídos em Incheon valem mais que o normal neste ano**.
 
@@ -353,8 +353,8 @@ Comparado ao EPT Barcelona (Main ~€5.300) ou ao WPT Australia (Main ~AUD $5.00
 
 | Nacionalidade | Precisa de visto? | Como entrar |
 |---|---|---|
-| EUA, Canadá, Reino Unido, Austrália, Nova Zelândia, maioria da UE | **Sem visto** | **K-ETA obrigatório** — ₩10.000, em k-eta.go.kr, peça 72h+ antes |
-| Japão, Singapura, Hong Kong, Taiwan | **Sem visto** | K-ETA |
+| EUA, Canadá, Reino Unido, Austrália, Nova Zelândia, onze países da UE | **Sem visto** | **Isentos de K-ETA até 31 de dezembro de 2026** — basta a e-Arrival Card gratuita; países não isentos: K-ETA ₩10.000 em k-eta.go.kr |
+| Japão, Singapura, Hong Kong, Macau, Taiwan | **Sem visto** | Também isentos de K-ETA até 31 de dezembro de 2026 — basta o e-Arrival Card gratuito |
 | Maioria dos outros países | Confira [mofa.go.kr](https://www.mofa.go.kr) | Pode precisar de visto de turista |
 
 ==r:Solicite o K-ETA antes de fechar as passagens.== Costuma ser instantâneo, mas confira com 2 semanas de antecedência em [k-eta.go.kr](https://www.k-eta.go.kr).

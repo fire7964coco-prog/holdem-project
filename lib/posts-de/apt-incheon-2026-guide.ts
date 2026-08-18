@@ -355,11 +355,11 @@ Verglichen mit der EPT Barcelona (~€5.300 Main) oder WPT Australia (~AUD $5.00
 
 | Nationalität | Visum nötig? | Wie du einreist |
 |---|---|---|
-| USA, Kanada, UK, Australien, NZ, die meisten EU | **Kein Visum** | **bis 31.12.2026 vom K-ETA befreit** – nur die kostenlose e-Arrival Card |
-| Japan, Singapur, Hongkong, Taiwan | **Kein Visum** | K-ETA |
+| USA, Kanada, UK, Australien, NZ, elf EU-Staaten (u. a. DE, AT, FR, IT, ES) | **Kein Visum** | **bis 31.12.2026 vom K-ETA befreit** – nur die kostenlose e-Arrival Card |
+| Japan, Singapur, Hongkong, Macau, Taiwan | **Kein Visum** | **ebenfalls bis 31.12.2026 vom K-ETA befreit** – nur die kostenlose e-Arrival Card |
 | Die meisten anderen Länder | Prüfe [mofa.go.kr](https://www.mofa.go.kr) | Ggf. Touristenvisum nötig |
 
-==g:**Gute Nachricht für DACH: Deutschland, Österreich und die Schweiz stehen auf der 22er-Ausnahmeliste – bis 31.12.2026 brauchst du kein K-ETA.**== Du fliegst visumfrei für bis zu 90 Tage, ohne Gebühr und ohne Wartezeit; vor der Landung reichst du nur die kostenlose e-Arrival Card online ein. Die Ausnahme wird jährlich verlängert – vor der Buchung trotzdem kurz auf [k-eta.go.kr](https://www.k-eta.go.kr) gegenchecken.
+==g:**Gute Nachricht für DACH: Deutschland, Österreich und die Schweiz stehen auf der Ausnahmeliste – bis 31.12.2026 brauchst du kein K-ETA.**== Du fliegst visumfrei für bis zu 90 Tage, ohne Gebühr und ohne Wartezeit; vor der Landung reichst du nur die kostenlose e-Arrival Card online ein. Die Ausnahme wird jährlich verlängert – vor der Buchung trotzdem kurz auf [k-eta.go.kr](https://www.k-eta.go.kr) gegenchecken.
 
 **Casino-Zutritt (Paradise City):**
 - Gültiger Reisepass erforderlich
