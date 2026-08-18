@@ -3,6 +3,8 @@
 // docs/en-blog-pillar-cluster-map.md 기준. 슬러그는 전 언어 공유(hreflang) — 전부 실존 확인됨.
 // 향후 KO·18언어 라벨 현지화로 확장.
 
+import { GTO_SERIES } from "./gto-series";
+
 export type ClusterNode = {
   slug: string;
   label: string; // 미니맵에 표시할 짧은 라벨
@@ -14,6 +16,16 @@ export type PillarCluster = {
   pillarSlug: string; // 필라 허브 slug (아코디언 헤더 = 허브)
   pillarLabel: string; // 필라 이름
   nodes: ClusterNode[]; // 클러스터 글 (허브 제외, 학습 순서)
+  /**
+   * 허브가 **블로그 글이 아닌** 필라만 쓴다(예: GTO 솔버 → `/solver` 랜딩).
+   * 지정하면 미니맵의 허브 링크가 `${hrefBase}/${pillarSlug}` 대신 이 경로로 간다.
+   *
+   * 🔴 이때 `pillarSlug`는 «포스트 slug가 아니다». 관련글·코스 이웃·허브 트렌딩은
+   *    전부 `posts` 배열에서 slug를 찾아 없으면 조용히 건너뛰므로 안전하다
+   *    (lib/related-posts.ts push()·ok() · lib/hub-trending.ts L70). 새 소비자를 만들 땐
+   *    「pillarSlug가 항상 포스트다」를 전제하지 마라.
+   */
+  pillarHref?: string;
 };
 
 export const EN_CLUSTERS: PillarCluster[] = [
@@ -194,6 +206,31 @@ export const KO_CLUSTERS: PillarCluster[] = [
       { slug: "holdem-pub-legal", label: "합법인가요?" },
       { slug: "holdem-pub-promotion", label: "(사장님) 무료 소개" },
     ],
+  },
+  /**
+   * GTO 솔버 스팟 해설 시리즈 — 2026-08-18 신설 (사장님 지시: 「솔버 예제 포스팅에
+   * 오른쪽 사이드바가 안 달려 있다 · 러닝맵에 GTO 관련 포스팅도 넣어야겠다」).
+   *
+   * ★왜 필라로 넣었나: 이 13편은 KO_CLUSTERS 어디에도 없어서 `clusterForSlug`가 null을
+   *   돌려줬고, 그 결과 **우측 사이드바(계산기 CTA + 러닝맵) 자체가 안 그려졌다**
+   *   (blog-post-client.tsx의 `showMinimap` 게이트). 상단 카테고리 버튼도 같이 없었다.
+   *
+   * ★허브는 `/solver` 랜딩이다 — 얇은 카테고리 페이지를 새로 만들지 않는다는 결정은
+   *   그대로다(lib/gto-series.ts 상단 주석 ①②③). 그래서 `pillarHref`를 쓴다.
+   *
+   * ★목록은 `lib/gto-series.ts`가 단일 출처다. 여기에 슬러그를 다시 적지 마라 —
+   *   시리즈에 글을 더하면 그 파일 한 줄만 고치면 러닝맵까지 따라온다.
+   *
+   * 🔴 「13×13 링크 금지」(gto-series.ts)와 충돌하지 않는다: 러닝맵은 **접힌 아코디언**
+   *    전역 네비고, 관련글 3개는 여전히 전략 필라로 내보낸다
+   *    (lib/related-posts.ts의 시리즈 가드 — 그 가드를 지우면 규율이 깨진다).
+   */
+  {
+    id: "solver",
+    pillarSlug: "solver",
+    pillarHref: "/solver",
+    pillarLabel: "GTO 솔버",
+    nodes: GTO_SERIES.map((s) => ({ slug: s.slug, label: `${s.mark} ${s.label}`, group: s.group })),
   },
 ];
 

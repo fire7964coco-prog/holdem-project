@@ -3,7 +3,7 @@
 import type { ReactNode } from "react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
-import { Clock, ChevronLeft, ChevronRight, ChevronDown, Share2, Link2, Map, Calculator, Trophy, TrendingUp, LayoutGrid, Zap, Book, Search } from "lucide-react";
+import { Clock, ChevronLeft, ChevronRight, ChevronDown, Share2, Link2, Map, Calculator, Trophy, TrendingUp, LayoutGrid, Zap, Book, Search, BrainCircuit } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { FaXTwitter, FaFacebookF } from "react-icons/fa6";
 import type { Post } from "@/lib/posts";
@@ -802,6 +802,17 @@ export default function BlogPost({
             <aside className="hidden xl:block">
               <div className="sticky top-16 max-h-[calc(100vh-5rem)] overflow-y-auto overscroll-contain pe-1">
                 <CalcCtaButton />
+                {/* ★2026-08-18 (사장님 지시) — 계산기 바로 아래 «같은 크기»의 GTO 솔버 버튼.
+                    두 번째라 pulse는 끈다(펄스가 둘이면 서로를 지운다 — calc-cta-button.tsx 주석).
+                    문구는 지어내지 않았다: 「무료 GTO 솔버」·「13×13 GTO 표」는
+                    app/solver/page.tsx의 TITLE·DESCRIPTION에서 그대로 딴 것이다. */}
+                <CalcCtaButton
+                  href="/solver"
+                  title="무료 GTO 솔버"
+                  subtitle="13×13 GTO 표·EV 즉시"
+                  Icon={BrainCircuit}
+                  pulse={false}
+                />
                 <ClusterMinimap slug={post.slug} clusters={KO_CLUSTERS} hrefBase="/blog" labels={KO_MINIMAP_LABELS} />
               </div>
             </aside>

@@ -27,7 +27,7 @@
  */
 import type { Post } from "./posts";
 import { clusterForSlug, type PillarCluster } from "./pillar-clusters";
-import { gtoSeriesItem } from "./gto-series";
+import { gtoSeriesItem, gtoSeriesNeighbors } from "./gto-series";
 
 /**
  * 관련글 «목적지»로 쓰지 않는 slug. 반드시 사유를 적는다.
@@ -97,8 +97,17 @@ export function relatedFor(
     out.push(s);
   };
 
+  /**
+   * 🔴 GTO 시리즈 글은 ①을 **건너뛴다** — 2026-08-18에 KO_CLUSTERS에 「GTO 솔버」 필라가
+   *    생기면서(러닝맵·우측 사이드바 목적) 이 글들도 `clusterForSlug`에 잡히게 됐다.
+   *    그대로 두면 ①이 먼저 걸려 **관련글 3개가 전부 시리즈 형제**가 된다 —
+   *    lib/gto-series.ts의 「13×13 링크 금지」와 아래 ②의 설계가 조용히 뒤집힌다.
+   *    시리즈 내부 이동은 GtoSeriesNav + 러닝맵이 이미 담당한다.
+   */
+  const inGtoSeries = gtoSeriesItem(slug) !== null;
+
   // ① 클러스터 — 학습 순서상 다음 → 그다음 → 이전 → 허브
-  const cluster = clusterForSlug(slug, clusters);
+  const cluster = inGtoSeries ? null : clusterForSlug(slug, clusters);
   if (cluster) {
     const seq = clusterSequence(cluster, slug);
     const i = seq.indexOf(slug);
@@ -113,7 +122,7 @@ export function relatedFor(
   }
 
   // ② GTO 시리즈 글 → 전략 필라로 내보낸다 (시리즈 형제는 GtoSeriesNav 소관)
-  if (out.length < limit && !cluster && gtoSeriesItem(slug)) {
+  if (out.length < limit && inGtoSeries) {
     const strategy = clusters.find((c) => c.id === "strategy");
     if (strategy) {
       push(strategy.pillarSlug);
@@ -164,6 +173,21 @@ export function courseNeighbors(
     const p = bySlug.get(s);
     return !!p && !p.noindex && !excluded.has(s);
   };
+
+  /**
+   * GTO 시리즈는 **시리즈 순서**(lib/gto-series.ts)를 그대로 쓴다.
+   * clusterSequence()에 맡기면 `group`(싱글 레이즈 팟·3벳 팟·블라인드전)이 붙어 있어
+   * 「현재 글의 group을 앞으로」 정렬이 걸리고, 그 결과 ⑧의 이전이 ⑦이 아니게 된다.
+   * 화면의 GtoSeriesNav(이전·다음)와 모바일 스티키 「다음 글」이 서로 다른 곳을 가리키면
+   * 그게 곧 독자가 보는 모순이다 — 한 출처에서 뽑는다.
+   */
+  if (gtoSeriesItem(slug)) {
+    const { prev, next } = gtoSeriesNeighbors(slug);
+    return {
+      prevSlug: ok(prev?.slug) ? prev!.slug : null,
+      nextSlug: ok(next?.slug) ? next!.slug : null,
+    };
+  }
   const seq = clusterSequence(cluster, slug).filter((s) => s === slug || ok(s));
   const i = seq.indexOf(slug);
   if (i < 0) return { prevSlug: null, nextSlug: null };

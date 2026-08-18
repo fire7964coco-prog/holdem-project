@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BookOpen, Crown, Percent, Target, Trophy, Book, Map, MapPin, ChevronDown, Store, Layers, Navigation } from "lucide-react";
+import { BookOpen, Crown, Percent, Target, Trophy, Book, Map, MapPin, ChevronDown, Store, Layers, Navigation, BrainCircuit } from "lucide-react";
 import { EN_CLUSTERS, clusterForSlug, type PillarCluster } from "@/lib/pillar-clusters";
 
 /**
@@ -23,18 +23,21 @@ export const PILLAR_ICONS: Record<string, typeof BookOpen> = {
   pub: Store,
   starting: Layers,
   position: Navigation,
+  // GTO 솔버 시리즈 — 좌측 레일의 「🧠 GTO 솔버」와 같은 은유를 lucide로 맞춘 것
+  solver: BrainCircuit,
 };
 
 type MinimapLabels = { learningMap: string; overview: string; youAreHere: string; hub: string };
 const EN_LABELS: MinimapLabels = { learningMap: "Learning Map", overview: "Overview", youAreHere: "You are here", hub: "Hub" };
 
-type Stop = { slug: string; label: string; hub?: boolean; group?: string; state: "past" | "current" | "future" | "neutral" };
+/** href — 허브가 블로그 글이 아닌 필라(예: GTO 솔버 → `/solver`)만 채운다. 없으면 `${hrefBase}/${slug}`. */
+type Stop = { slug: string; label: string; hub?: boolean; group?: string; href?: string; state: "past" | "current" | "future" | "neutral" };
 
 function stopsFor(pillar: PillarCluster, slug: string, isCurrentPillar: boolean, overviewLabel: string): Stop[] {
   const currentIdx = pillar.nodes.findIndex((n) => n.slug === slug);
   const hubCurrent = slug === pillar.pillarSlug;
   const hubState: Stop["state"] = !isCurrentPillar ? "neutral" : hubCurrent ? "current" : "past";
-  const stops: Stop[] = [{ slug: pillar.pillarSlug, label: overviewLabel, hub: true, state: hubState }];
+  const stops: Stop[] = [{ slug: pillar.pillarSlug, label: overviewLabel, hub: true, href: pillar.pillarHref, state: hubState }];
   pillar.nodes.forEach((n, i) => {
     let state: Stop["state"];
     if (!isCurrentPillar) state = "neutral";
@@ -85,7 +88,7 @@ function Trail({ pillar, slug, isCurrentPillar, hrefBase, labels }: { pillar: Pi
                   <div className="text-[9px] font-semibold text-[#2563eb] uppercase tracking-wider mt-0.5">{labels.youAreHere}</div>
                 </div>
               ) : (
-                <Link href={`${hrefBase}/${s.slug}`} className="group inline-block leading-snug">
+                <Link href={s.href ?? `${hrefBase}/${s.slug}`} className="group inline-block leading-snug">
                   <span
                     className={`text-[13px] transition-colors ${
                       s.hub ? "font-semibold text-foreground/90 group-hover:text-primary" : "text-muted-foreground group-hover:text-primary"
