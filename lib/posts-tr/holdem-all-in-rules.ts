@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "holdem-all-in-rules",
   title: "Texas Hold'em all-in kuralları: yan potlar, yeniden yükseltme ve showdown",
   seoTitle: "All-in gittin ama ne kazanırsın? — All-in ve yan pot kuralları",
-  desc: "Tüm çiplerini ortaya sürdün ve krupiye çipleri iki yığına ayırıyor. Texas Hold'em all-in kuralları: table stakes, ana pot, yan pot, yeniden yükseltme ve showdown.",
+  desc: "Tüm çiplerini ortaya sürdün ve krupiye çipleri iki yığına ayırıyor. Texas Hold'em all-in kuralları: table stakes, ana pot, yan pot ve showdown.",
   tldr: "All-in gitmek, önündeki tüm çipleri ortaya sürmektir. Her rakipten sadece eşlediğin kadarını kazanabilirsin (ana pot); büyük stack'lerin fazladan koyduğu çipler dokunamayacağın bir yan pot oluşturur. Tam bir yükseltmeden az olan bir all-in, zaten aksiyon almış oyuncular için bahsi YENİDEN açmaz.",
   category: "rules",
   date: "2026-06-15",

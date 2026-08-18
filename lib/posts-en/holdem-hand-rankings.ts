@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "holdem-hand-rankings",
   title: "Poker Hand Rankings in Texas Hold'em — Best to Worst, With the Odds",
   seoTitle: "Thought You Won but Lost the Pot? — Poker Hand Rankings & Ties",
-  desc: "Flopped a flush and still lost the pot? It's almost always one missed rule. Here are all 10 poker hand rankings from best to worst, the real odds behind each, and exactly how kickers and ties decide the winner.",
+  desc: "Flopped a flush and still lost the pot? Here are all 10 poker hand rankings best to worst, the real odds behind each, and how kickers and ties decide it.",
   tldr: "Poker hand rankings from best to worst are: Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, One Pair, and High Card.",
   category: "hand-rankings",
   date: "2026-06-09",

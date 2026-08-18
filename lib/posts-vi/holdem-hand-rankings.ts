@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "holdem-hand-rankings",
   title: "Thứ hạng các tay bài poker trong Texas Hold'em — từ mạnh nhất đến yếu nhất, kèm xác suất",
   seoTitle: "Tưởng thắng mà lại thua pot? — Thứ hạng tay bài poker",
-  desc: "Đã có Thùng (flush) mà vẫn thua pot? Gần như luôn vì một quy tắc bị bỏ sót. Đây là 10 tay bài poker từ mạnh nhất đến yếu nhất, xác suất thực của từng tay, và cách kicker cùng thế hòa quyết định người thắng.",
+  desc: "Đã có Thùng (flush) mà vẫn thua pot? Đây là 10 tay bài poker từ mạnh nhất đến yếu nhất, xác suất thực của từng tay, và cách kicker quyết định người thắng.",
   tldr: "Thứ hạng các tay bài poker từ mạnh nhất đến yếu nhất là: Thùng Phá Sảnh Hoàng Gia, Thùng Phá Sảnh, Tứ Quý, Cù Lũ, Thùng, Sảnh, Sám Cô, Hai Đôi, Một Đôi, và Mậu Thầu.",
   category: "hand-rankings",
   date: "2026-06-09",

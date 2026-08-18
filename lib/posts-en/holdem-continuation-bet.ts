@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "holdem-continuation-bet",
   title: "Continuation Bet (C-Bet): When to Fire the Flop, How Much, and When to Check",
   seoTitle: "Why 'C-Bet Every Flop' Bleeds Chips — Continuation Bet Strategy",
-  desc: "What a continuation bet is, which flops to c-bet and which to check, exact sizing — small on dry boards, big on wet — and how often to fire in and out of position.",
+  desc: "What a continuation bet is, which flops to c-bet and which to check, exact sizing — small on dry boards, big on wet — and how often to fire in position.",
   tldr: "A continuation bet (c-bet) is a bet on the flop by the player who raised preflop. The modern rule isn't 'c-bet every flop' — it's to bet the flops that favor your range (high, dry boards like K-7-2) small and often, and check the ones that favor your opponent (low, connected boards like 7-6-5). Size small — about one-third pot — on dry boards, big — two-thirds or more — on wet ones, c-bet less out of position, and much less multiway.",
   category: "strategy",
   date: "2026-07-06",

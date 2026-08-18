@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "holdem-hand-rankings",
   title: "Ranking de mãos de pôquer no Texas Hold'em — da melhor à pior, com probabilidades",
   seoTitle: "Achou que tinha ganhado e perdeu o pote? — Mãos de pôquer",
-  desc: "Fez flush e mesmo assim perdeu o pote? Quase sempre é uma única regra que passou despercebida. Aqui estão as 10 mãos de pôquer da melhor à pior, as probabilidades reais de cada uma e como o kicker e os empates decidem o vencedor.",
+  desc: "Fez flush e mesmo assim perdeu o pote? Aqui estão as 10 mãos de pôquer da melhor à pior, as probabilidades reais de cada uma e como o kicker decide o vencedor.",
   tldr: "O ranking de mãos de pôquer, da melhor à pior, é: Royal Flush, Straight Flush, Quadra, Full House, Flush, Sequência, Trinca, Dois Pares, Par e Carta Alta.",
   category: "hand-rankings",
   date: "2026-06-09",

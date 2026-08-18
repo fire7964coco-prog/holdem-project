@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "wpt-australia-2026-guide",
   title: "WPT Australia 2026 完整参赛指南：赛程、卫星赛与真实花费",
   seoTitle: "第一次打 WPT Australia？2026 参赛你要知道的一切",
-  desc: "WPT Australia 2026 于 9 月 10–30 日在 The Star Sydney 举行，两大旗舰赛买入分别为 AUD $1,500 Prime 与 AUD $5,000 Championship，现场卫星赛 AUD $270 起。这篇讲清怎么打入资格、国际牌手如何支付买入，以及对手不会告诉你的真实行程花费。",
+  desc: "WPT Australia 2026 于 9 月 10–30 日在 The Star Sydney 举行，AUD $1,500 Prime 与 AUD $5,000 Championship 两大旗舰赛，现场卫星赛 AUD $270 起。资格、付款与真实行程花费都在这里。",
   tldr: "WPT Australia 2026：9 月 10–30 日，The Star Sydney。两个旗舰赛：AUD $1,500 WPT Prime（9 月 17–22 日）和 AUD $5,000 WPT Championship（9 月 24–30 日）。现场卫星赛 AUD $270 起，主赛资格赛为 $290 与 $550。冠军的头名奖金里包含一个 $15,000 的 WPT World Championship 席位。必须年满 18 岁、成为 Star Club 会员，并遵守 smart-casual 着装要求。",
   category: "tournament",
   date: "2026-06-18",

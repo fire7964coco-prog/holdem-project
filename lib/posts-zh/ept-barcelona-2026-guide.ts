@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "ept-barcelona-2026-guide",
   seoTitle: "打不起 EPT 巴塞罗那？从 $0.50 冲上 €5,300 主赛的路线",
   title: "EPT Barcelona 2026 完全参赛指南 — 赛程、买入与线上打包资格全攻略",
-  desc: "EPT Barcelona 2026 于 8 月 16–29 日在 Casino Barcelona 举行，主赛事买入 €5,300。最便宜的线上路线是从 $0.50 起步的 Power Path 阶梯，一路冲上覆盖主赛席位和酒店的 Gold Pass。完整赛程、各档买入、赌场附近酒店和新手参赛攻略，都在这篇里讲清楚了。",
+  desc: "EPT Barcelona 2026 于 8 月 16–29 日在 Casino Barcelona 举行，主赛事买入 €5,300。最便宜的线上路线是 $0.50 起步的 Power Path 阶梯，一路冲上 Gold Pass。完整赛程与新手攻略都在这里。",
   tldr: "EPT Barcelona 2026 是 8 月 16–29 日，地点 Casino Barcelona。主赛事买入 €5,300。最便宜的线上路线：Power Path 从 $0.50 起步 → Gold Pass（€5,300 主赛 + €1,100 副赛 + 8 晚酒店 + €690 花销）。你需要一个 PokerStars Live 账号和一本有效护照。酒店要早订——8 月是旺季。",
   category: "tournament",
   date: "2026-06-17",

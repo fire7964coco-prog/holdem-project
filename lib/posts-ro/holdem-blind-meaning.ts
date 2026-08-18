@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "holdem-blind-meaning",
   title: "Ce sunt blind-urile la poker? Small blind și big blind, pe înțelesul tuturor",
   seoTitle: "Plătești înainte să vezi cărțile? — Small blind și big blind",
-  desc: "Doi jucători plătesc înainte să primească vreo carte — de ce? Ce sunt small blind și big blind, cine le pune, cât valorează, big blind ante și regula de heads-up.",
+  desc: "Doi jucători plătesc înainte să primească vreo carte — de ce? Ce sunt small blind și big blind, cine le pune, cât valorează și big blind ante.",
   tldr: "Blind-urile sunt pariuri forțate puse înainte de împărțirea cărților. Small blind-ul stă la stânga butonului de dealer, iar big blind-ul la stânga lui; big blind-ul — de obicei dublul small blind-ului — este unitatea de pariere a mesei.",
   category: "rules",
   date: "2026-06-13",

@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "holdem-hand-rankings",
   title: "Peringkat tangan poker di Texas Hold'em — dari terkuat ke terlemah, lengkap dengan peluang",
   seoTitle: "Mengira menang tapi kalah pot? — Peringkat tangan poker",
-  desc: "Sudah dapat flush tapi tetap kalah pot? Hampir selalu karena satu aturan yang terlewat. Inilah 10 tangan poker dari terkuat ke terlemah, peluang nyata tiap tangan, dan bagaimana kicker serta seri menentukan pemenang.",
+  desc: "Sudah dapat flush tapi tetap kalah pot? Inilah 10 tangan poker dari terkuat ke terlemah, peluang nyata tiap tangan, dan bagaimana kicker menentukan pemenang.",
   tldr: "Peringkat tangan poker dari terkuat ke terlemah adalah: Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, Pair, dan High Card.",
   category: "hand-rankings",
   date: "2026-06-09",

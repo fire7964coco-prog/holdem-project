@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "holdem-tournament-vs-cash-game",
   title: "Poker tournament या cash game: शुरुआती क्या खेलें?",
   seoTitle: "आपकी chips हमेशा पैसा नहीं होतीं — Tournament या cash game?",
-  desc: "Cash game और tournament दोनों Texas Hold'em जैसे दिखते हैं, लेकिन chip value, blinds, bankroll, variance और ICM pressure बिल्कुल अलग होते हैं। शुरुआती के लिए साफ़ तुलना।",
+  desc: "Cash game और tournament दोनों Texas Hold'em जैसे दिखते हैं, लेकिन chip value, blinds, bankroll और ICM pressure बिल्कुल अलग होते हैं। शुरुआती के लिए साफ़ तुलना।",
   tldr: "Cash game में chips असली पैसे जैसी होती हैं और blinds आमतौर पर fixed रहते हैं। Tournament में chips आपकी tournament life हैं, blinds बढ़ते हैं और payout आपकी final position पर निर्भर करता है।",
   category: "tournament",
   date: "2026-06-11",

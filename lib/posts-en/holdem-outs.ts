@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "holdem-outs",
   title: "How to Count Outs in Poker — The Skill Behind Every Odds Call",
   seoTitle: "How Many Cards Actually Save You? — Counting Outs in Poker",
-  desc: "Counting outs is the skill nobody teaches first. Learn to count outs in poker fast — a draw-by-draw outs chart, the outs-to-odds table, and the dirty outs that quietly cost you money.",
+  desc: "Counting outs is the skill nobody teaches first. Learn to count outs fast — a draw-by-draw outs chart, the outs-to-odds table, and the dirty outs that cost you.",
   tldr: "An out is any card left in the deck that improves your hand to a likely winner. Count them, then convert: multiply outs by 4 on the flop or by 2 on the turn to get your rough % to hit. A flush draw is 9 outs ≈ 36% by the river.",
   category: "odds",
   date: "2026-07-03",

@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "texas-holdem-rules-for-beginners",
   title: "Yeni başlayanlar için Texas Hold'em nasıl oynanır — kurallar, çipler, eller ve ilk strateji",
   seoTitle: "Texas Hold'em nasıl oynanır? Sıfırdan kurallar ve çip düzeni",
-  desc: "İlk kez mi oynayacaksın? Texas Hold'em'i adım adım anlatıyoruz: blindler, çip dağıtımı, el sıralaması ve masanın yanına koyabileceğin yazdırılabilir hile kağıdı.",
+  desc: "İlk kez mi oynayacaksın? Texas Hold'em'i adım adım anlatıyoruz: blindler, çip dağıtımı, el sıralaması ve yazdırılabilir hile kağıdı.",
   tldr: "Texas Hold'em'de her oyuncu 2 kapalı kart alır, 5 ortak kart açılır ve dört bahis turunun sonunda en iyi 5 kartlık poker eli kazanır.",
   category: "rules",
   date: "2026-06-11",

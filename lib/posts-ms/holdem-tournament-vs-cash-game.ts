@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "holdem-tournament-vs-cash-game",
   title: "Poker tournament atau cash game: mana patut pemula main?",
   seoTitle: "Cip bukan selalu duit — Tournament atau cash game?",
-  desc: "Cash game dan tournament nampak macam Texas Hold'em yang sama, tetapi nilai cip, blind, bankroll, variance dan tekanan ICM sangat berbeza. Ini perbandingan ringkas untuk pemula.",
+  desc: "Cash game dan tournament nampak macam Texas Hold'em yang sama, tetapi nilai cip, blind, bankroll dan tekanan ICM sangat berbeza. Perbandingan untuk pemula.",
   tldr: "Dalam cash game, cip hampir sama dengan duit sebenar dan blind biasanya kekal. Dalam tournament, cip ialah nyawa kejohanan, blind meningkat, dan bayaran bergantung pada kedudukan akhir.",
   category: "tournament",
   date: "2026-06-11",

@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "apt-incheon-2026-guide",
   title: "APT Incheon 2026 — Resultados, Campeão e Recorde de Entradas",
   seoTitle: "Quem venceu o APT Incheon 2026? Resultados e recorde",
-  desc: "O APT Incheon 2026 acabou com recorde: 1.393 entradas no Main Event. O campeão Stephen Pang (Hong Kong) levou KRW 411.180.000 (~$293.700). Resultados + guia da Coreia.",
+  desc: "O APT Incheon 2026 acabou com recorde: 1.393 entradas. O campeão Stephen Pang (Hong Kong) levou KRW 411.180.000 (~$293.700). Resultados + guia da Coreia.",
   tldr: "O Main Event do APT Incheon 2026 foi vencido por Stephen Pang, de Hong Kong, que levou KRW 411.180.000 (~$293.700) após um acordo ICM a três, além do troféu do Leão em ouro 24K. O field marcou recorde com 1.393 entradas e premiação total de KRW 3.008.880.000. O vice foi Shoumin Zhang (China, KRW 366.500.000 / ~$261.785) e o terceiro Yifu He (EUA). O top 3 também ganhou vagas para o Main Event do APT Championship 2026 em Taipé (~$10.000 cada). Só estrangeiros (cidadãos coreanos sem residência no exterior não podem entrar). Seul fica a ~1 hora — na próxima parada, a viagem de pôquer e a viagem pela Coreia continuam sendo a mesma viagem.",
   category: "tournament",
   date: "2026-06-18",

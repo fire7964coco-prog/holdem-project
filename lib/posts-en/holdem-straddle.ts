@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "holdem-straddle",
   title: "What Is a Straddle in Poker? Rules, Types, and Whether You Should",
   seoTitle: "The Bet That Doubles the Stakes — What Is a Poker Straddle?",
-  desc: "A straddle is a voluntary blind that doubles the stakes before cards are dealt. Here are the rules, every straddle type, who acts first, and whether straddling is actually profitable.",
+  desc: "A straddle is a voluntary blind that doubles the stakes before cards are dealt. The rules, every straddle type, who acts first, and whether it's profitable.",
   tldr: "A straddle is an optional blind bet — usually twice the big blind — posted before the cards are dealt. It buys the straddler the last action and the option to raise preflop, doubling the stakes. In almost every case it's a -EV play, allowed only in cash games under house rules.",
   category: "glossary",
   date: "2026-07-04",

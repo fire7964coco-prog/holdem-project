@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "holdem-tournament-vs-cash-game",
   title: "Poker turnuvası mı cash game mi? Yeni başlayanlar için seçim",
   seoTitle: "Fişlerin her zaman para değildir — Turnuva mı cash game mi?",
-  desc: "Cash game ve poker turnuvası aynı Texas Hold'em gibi görünür; ama fiş değeri, blind yapısı, bankroll, varyans ve ICM baskısı tamamen farklıdır. Yeni başlayanlar için net karşılaştırma.",
+  desc: "Cash game ve poker turnuvası aynı Texas Hold'em gibi görünür; ama fiş değeri, blind yapısı, bankroll ve ICM baskısı tamamen farklıdır. Yeni başlayanlar için.",
   tldr: "Cash game'de fişler gerçek parayı temsil eder ve blind'lar genellikle sabittir. Turnuvada fişler turnuva hayatındır; blind'lar yükselir ve kazanç, bitirdiğin sıraya bağlıdır.",
   category: "tournament",
   date: "2026-06-11",

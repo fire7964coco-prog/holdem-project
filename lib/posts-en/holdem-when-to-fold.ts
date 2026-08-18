@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "holdem-when-to-fold",
   title: "When to Fold in Poker: The Skill That Quietly Wins the Most",
   seoTitle: "Why You Can't Lay Down a Good Hand — When to Fold in Poker",
-  desc: "Folding is the most underrated winning skill. When to fold preflop and on every street, the pot-odds threshold, how to lay down a big hand, and how to beat the urge to call.",
+  desc: "Folding is the most underrated winning skill. When to fold preflop and on every street, the pot-odds threshold, and how to lay down a big hand without tilting.",
   tldr: "Folding is the most underrated skill in poker — a fold's worst outcome is zero, while a losing call bleeds chips every time. A solid player folds around 75–85% of hands before the flop, releases missed hands and weak draws that don't meet their pot odds after it, and — hardest of all — lays down strong-but-beaten hands when a passive opponent's line screams value. Most players don't call too much because they can't read hands; they call because the chips already in the pot feel like theirs. They aren't.",
   category: "strategy",
   date: "2026-07-06",

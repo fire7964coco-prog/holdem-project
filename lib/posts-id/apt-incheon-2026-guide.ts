@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "apt-incheon-2026-guide",
   title: "APT Incheon 2026 — Hasil, Juara, dan Rekor Entri",
   seoTitle: "Siapa juara APT Incheon 2026? Hasil & rekor 1.393 entri",
-  desc: "APT Incheon 2026 usai dengan rekor: 1.393 entri di Main Event. Sang juara, Stephen Pang (Hong Kong), membawa pulang KRW 411.180.000 (~$293.700). Hasil lengkap + panduan Korea.",
+  desc: "APT Incheon 2026 usai dengan rekor 1.393 entri. Juaranya Stephen Pang (Hong Kong) membawa pulang KRW 411.180.000 (~$293.700). Hasil lengkap + panduan Korea.",
   tldr: "Main Event APT Incheon 2026 dimenangkan Stephen Pang dari Hong Kong, yang membawa pulang KRW 411.180.000 (~$293.700) setelah deal ICM tiga pemain, plus trofi Singa emas 24K. Field mencetak rekor 1.393 entri dengan total prize pool KRW 3.008.880.000. Runner-up Shoumin Zhang (Tiongkok, KRW 366.500.000 / ~$261.785), posisi ketiga Yifu He (AS). Tiga besar juga mendapat kursi Main Event APT Championship 2026 di Taipei (~$10.000 per kursi). Hanya untuk warga negara asing (warga negara Korea tanpa izin tinggal tetap di luar negeri tidak boleh masuk). Seoul berjarak ~1 jam — untuk stop berikutnya, trip poker dan trip Korea tetap trip yang sama.",
   category: "tournament",
   date: "2026-06-18",

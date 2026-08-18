@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "holdem-hand-rankings",
   title: "Texas Hold'em'de poker el sıralaması — en güçlüden en zayıfa, olasılıklarla",
   seoTitle: "Kazandın sandın ama potu mu kaybettin? — Poker elleri",
-  desc: "Flush yaptın ama yine de potu mu kaybettin? Neredeyse her zaman gözden kaçan tek bir kural yüzündendir. İşte en güçlüden en zayıfa 10 poker eli, her birinin gerçek olasılığı ve kicker ile beraberliklerin kazananı nasıl belirlediği.",
+  desc: "Flush yaptın ama yine de potu mu kaybettin? En güçlüden en zayıfa 10 poker eli, her birinin gerçek olasılığı ve kicker ile beraberliklerin kazananı belirlemesi.",
   tldr: "Poker el sıralaması en güçlüden en zayıfa şöyledir: Royal Flush, Straight Flush, Four of a Kind (Kare), Full House, Flush, Straight (Kent), Three of a Kind (Üçlü), Two Pair (İki Çift), Pair (Çift) ve High Card (Yüksek Kart).",
   category: "hand-rankings",
   date: "2026-06-09",
