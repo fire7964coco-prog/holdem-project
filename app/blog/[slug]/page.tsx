@@ -11,7 +11,7 @@ import TournamentGuidePost from "@/components/tournament-guide-post";
 import { extractHeadings } from "@/lib/blog-headings";
 import { renderMarkdown } from "@/lib/render-markdown";
 import { relatedFor, courseNeighbors, linkedSlugsIn } from "@/lib/related-posts";
-import { KO_CLUSTERS } from "@/lib/pillar-clusters";
+import { KO_CLUSTERS, STICKY_HUB, clusterForSlug } from "@/lib/pillar-clusters";
 
 /**
  * 빌드 타임에 모든 블로그 포스트(29개) URL 정적 생성
@@ -328,6 +328,13 @@ export default function Page({ params }: { params: { slug: string } }) {
   //   주제 정합이 0이었다 — 모바일 sticky 「다음 글」이 이걸 그대로 쓰는데, 모바일이
   //   오가닉의 68%다(1.57p vs 데스크톱 2.06p). 클러스터에 없는 글은 기존 날짜순 폴백.
   const course = courseNeighbors(post.slug, POSTS, KO_CLUSTERS);
+  // ★2026-08-19: 모바일 스티키 CTA 의 목적지 — 「다음 글」이 아니라 **그 글이 속한 필라 허브**.
+  //   글 끝에 내부 링크 제안이 이미 15개라 「다음 글」을 한 번 더 미는 게 값을 못 했다.
+  //   매핑 없는 클러스터·고아 글은 null → 클라이언트가 기존 「다음 글」 스티키로 폴백한다.
+  const stickyHub = (() => {
+    const c = clusterForSlug(post.slug, KO_CLUSTERS);
+    return c ? STICKY_HUB[c.id] ?? null : null;
+  })();
   const bySlug = (s: string | null) => (s ? POSTS.find((p) => p.slug === s) ?? null : null);
   const prevPost =
     navLink(bySlug(course.prevSlug)) ?? (feedIndex > 0 ? navLink(feed[feedIndex - 1]) : null);
@@ -402,6 +409,10 @@ export default function Page({ params }: { params: { slug: string } }) {
           summarySlot={summarySlot}
           prevPost={prevPost}
           nextPost={nextPost}
+          stickyHub={stickyHub}
+          /* 🔴 「이전 강 / 다음 강」이라고 부를 수 있는 건 **커리큘럼에서 온 이웃일 때만**이다.
+             날짜순 폴백(고아 글)에 「강」을 붙이면 없는 학습 순서를 있다고 말하는 셈이다. */
+          isCourseNav={!!(course.prevSlug || course.nextSlug)}
           related={relatedPosts}
           totalPosts={POSTS.length}
         />

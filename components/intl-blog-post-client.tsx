@@ -14,7 +14,7 @@ import ClusterMinimap from "@/components/cluster-minimap";
 import CommunityCTA from "@/components/community-cta";
 import BlogTopBar from "@/components/blog-top-bar";
 import SideRail from "@/components/side-rail";
-import BottomTabBar from "@/components/bottom-tab-bar";
+import BottomTabBar, { useHideBottomChrome } from "@/components/bottom-tab-bar";
 import ReadingProgressBar from "@/components/reading-progress-bar";
 import CalcCtaButton from "@/components/calc-cta-button";
 
@@ -106,6 +106,8 @@ export default function IntlBlogPostClient({
   const base = `/${locale}/blog`;
 
   const [copied, setCopied] = useState(false);
+  /* 읽는 중(스크롤 다운)엔 하단 탭바를 비운다 — KO 와 같은 처리 */
+  const chromeHidden = useHideBottomChrome();
   const contentRef = useRef<HTMLDivElement>(null);
   const stickyToolsRef = useRef<HTMLDivElement>(null); // 모바일 sticky 도구 바
   const tocDetailsRef = useRef<HTMLDetailsElement>(null); // 모바일 목차 <details>
@@ -219,7 +221,7 @@ export default function IntlBlogPostClient({
               </ol>
             </nav>
 
-            <header className="mb-10">
+            <header className="mb-6">
               <div className="flex flex-wrap items-center gap-2 mb-4">
                 <span className="text-xs font-bold px-3 py-1 rounded-full bg-primary/15 text-primary border border-primary/25">
                   {t.category}
@@ -227,24 +229,34 @@ export default function IntlBlogPostClient({
                 <span className="flex items-center gap-1 text-xs text-muted-foreground">
                   <Clock className="w-3.5 h-3.5" /> {post.readTime} {t.readSuffix}
                 </span>
-                <time dateTime={post.date} className="text-xs text-muted-foreground">
-                  {t.published} {post.date}
-                </time>
-                {post.updated && post.updated !== post.date && (
+                {/* ★2026-08-19 구간A 압축(KO 와 동일): 작성일은 «업데이트일이 없을 때만».
+                    둘 다 있으면 독자가 신선도 판단에 쓰는 건 업데이트일 하나뿐이다. */}
+                {post.updated && post.updated !== post.date ? (
                   <time
                     dateTime={post.updated}
                     className="text-xs px-2 py-0.5 rounded-full bg-primary/10 text-primary border border-primary/20"
+                    title={`${t.published} ${post.date}`}
                   >
                     {t.updated} {post.updated}
+                  </time>
+                ) : (
+                  <time dateTime={post.date} className="text-xs text-muted-foreground">
+                    {t.published} {post.date}
                   </time>
                 )}
               </div>
 
               {/* H1 ?? ?? ? ??? LCP ?? (??? LCP?? ??) */}
-              <h1 className="text-3xl md:text-4xl font-extrabold text-foreground leading-tight mb-4">
+              <h1 className="text-3xl md:text-4xl font-extrabold text-foreground leading-tight mb-3">
                 {post.title}
               </h1>
-              <p className="text-lg text-muted-foreground leading-relaxed">{post.desc}</p>
+              {/* ★desc 는 「한 줄 정답」(아래 tldr)이 없을 때만 — KO 와 동일한 규칙.
+                  둘은 같은 일(요약)을 하고 바로 붙어 있어 첫 화면에서 요약이 두 번 나왔다.
+                  🔴 tldr 없는 글에선 desc 가 유일한 도입부라 반드시 남긴다.
+                  🪶 `<meta name="description">` 은 영향 없다. */}
+              {!post.tldr && (
+                <p className="text-lg text-muted-foreground leading-relaxed">{post.desc}</p>
+              )}
 
               {post.image && (
                 <div className="mt-6 rounded-2xl overflow-hidden">
@@ -497,7 +509,8 @@ export default function IntlBlogPostClient({
       </div>
 
       {/* ★하단 전역 탭바 — 한국어 블로그와 동일 (2026-08-04 신설) */}
-      <BottomTabBar active="none" base={`/${locale}`} locale={locale} />
+      {/* 🪶 여기엔 「다음 글 읽기」 스티키 바가 없어서 함께 움직일 짝이 없다(KO 만 있는 요소). */}
+      <BottomTabBar active="none" base={`/${locale}`} locale={locale} hidden={chromeHidden} />
     </div>
   );
 }

@@ -59,8 +59,8 @@ function FooterNav({
 }) {
   return (
     <nav aria-label={title}>
-      <h2 className="text-xs uppercase tracking-[0.18em] text-primary mb-4 font-bold">{title}</h2>
-      <ul className="space-y-2.5 text-sm">
+      <h2 className="text-xs uppercase tracking-[0.18em] text-primary mb-3 font-bold">{title}</h2>
+      <ul className="space-y-2 text-sm">
         {links.map((link) => (
           <li key={link.href}>
             <Link
@@ -90,8 +90,12 @@ export function Footer({ className = "" }: { className?: string }) {
         aria-hidden="true"
         className="h-px bg-gradient-to-r from-transparent via-primary/45 to-transparent"
       />
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-8">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-10 mb-10">
+      {/* ★2026-08-19 구간C: 모바일 푸터가 844px = 정확히 한 화면이었다. 여백만 줄인다.
+          🔴 **링크 그룹을 접거나 지우지 않았다** — 이 푸터는 전역이라 홈·계산기·대회까지 같이 바뀐다.
+             이번 회차는 「블로그 상세」로 범위를 못박았고, 홈은 실측상 문제 축이 아니었다
+             (오가닉 랜딩 5.2% · 모바일 격차 17.9p 로 최하위권). 접기는 별도 판단으로 남긴다. */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 mb-6">
           <div className="col-span-2 md:col-span-1">
             <div className="flex items-center gap-2.5 mb-4">
               <div

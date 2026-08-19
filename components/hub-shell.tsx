@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Home, ChevronRight } from "lucide-react";
 import { BG, BORDER, INK, MUTED, FLAG, FONT_SANS, FONT_SERIF } from "@/lib/theme";
 import SideRail, { SIDE_RAIL_WIDTH, hubPagesFor, hubHeadingFor } from "@/components/side-rail";
 import BottomTabBar, { tabLabels } from "@/components/bottom-tab-bar";
@@ -215,6 +216,24 @@ export default function HubShell({
             </span>
           </Link>
 
+          {/* ★모바일 «현재 위치» (2026-08-19 · 사장님 지적)
+              데스크톱은 아래 `hidden lg:flex` nav 안의 `{title}` 이 언더라인으로 현재 위치를 표시한다.
+              그런데 **모바일에서는 그 nav 가 사라져** 스크롤을 내리면 sticky 헤더에 「홀덤마스터」만 남았다
+              — 블로그 상단 바는 스크롤 중에도 「토너먼트 Hub」로 맥락을 유지하는데 허브는 못 했다.
+              빵부스러기는 sticky 밖(스크롤로 지나감)이라 이 자리를 대신할 수 없다.
+
+              🔴 **브랜드 링크 «밖»에 둔다.** 안에 넣으면 「대회 일정」을 눌렀을 때 홈으로 가서
+                 빵부스러기의 «홈» 단계와 뜻이 겹치고 어긋난다. 여기는 링크가 아니라 **표시**다.
+              🪶 블로그 상단 바를 그대로 옮기지는 않았다 — 거기 든 「목차」는 긴 글을 위한 장치라
+                 목록 페이지에선 무의미하고, 「바로가기」는 허브의 가로 칩 바가 이미 하는 일이다. */}
+          <span
+            className="lg:hidden flex items-center gap-2 min-w-0 text-[13px] font-semibold truncate"
+            style={{ color: INK, fontFamily: FONT_SERIF }}
+          >
+            <span aria-hidden="true" style={{ color: MUTED, opacity: 0.6 }}>·</span>
+            <span className="truncate">{title}</span>
+          </span>
+
           {/* 상단 탭 — 데스크톱만. 모바일은 하단 탭바가 같은 역할을 한다. */}
           <nav className="hidden lg:flex items-center gap-6">
             {navTabs(base, locale).map((n) => (
@@ -283,7 +302,47 @@ export default function HubShell({
         </aside>
 
         {/* <main> 랜드마크는 layout.tsx의 MainContent가 이미 갖고 있다 — 중첩하지 않는다 */}
-        <div className="flex-1 min-w-0">{children}</div>
+        <div className="flex-1 min-w-0">
+          {/* ★시각적 빵부스러기 (2026-08-19 신설 · 사장님 지적)
+              허브에 오면 **여기가 어디인지 알 길이 없었다.** 상단엔 마스트헤드와 가로 칩 바만 있어
+              「갈 방법」은 있는데 「현재 위치」와 「상위로 가는 길」이 없었다.
+
+              🔴 **블로그가 2026-08-05에 이미 고친 것과 같은 상태였다** — 산출물 실측:
+                 `/tournaments`·`/rules`·`/solver` 등 **12개 허브가 BreadcrumbList JSON-LD 를
+                 내보내면서 화면에는 경로가 없었다**(`/pub` 만 JSON-LD 도 없음).
+                 블로그 주석의 표현 그대로 «구조화 데이터만 있고 사람이 볼 경로가 없는 상태».
+
+              ★단계 수와 URL 은 JSON-LD 와 **정확히 같은 2단**(홈 → 이 페이지)이다.
+                🪶 표기는 JSON-LD 쪽이 더 길다(예: JSON-LD 「홀덤 포커 용어 사전」 ↔ 화면 「용어사전」).
+                   8/5 주석이 금지한 것은 «마크업에 없는 **단계**를 화면에만 만드는 것»이고,
+                   표기 길이는 그 대상이 아니다 — 단계 수·순서·URL 이 일치하면 된다.
+
+              🔴 첫 단계는 **집 아이콘**이다. `CHROME` 에 「홈」 라벨이 없고 허브는 25개 로케일을
+                 타므로, 사전에 25줄을 새로 넣는 대신 언어 중립 아이콘을 쓴다(`aria-label` 로 보조).
+
+              🪶 sticky 헤더 **밖**에 둔다 — 허브 상단 크롬이 이미 100px 이라 여기에 더하면
+                 첫 화면을 또 먹는다. 스크롤하면 지나가야 맞다. */}
+          <nav aria-label={locale ? "Breadcrumb" : "현재 위치"} className="px-4 lg:px-0 pt-3 pb-1">
+            <ol className="flex flex-wrap items-center gap-1.5 text-xs" style={{ color: MUTED }}>
+              <li className="flex items-center">
+                <Link
+                  href={base || "/"}
+                  aria-label={locale ? "Home" : "홈"}
+                  className="inline-flex items-center hover:opacity-70 transition-opacity"
+                >
+                  <Home className="w-3.5 h-3.5" aria-hidden="true" />
+                </Link>
+              </li>
+              <li aria-hidden="true" className="opacity-50">
+                <ChevronRight className="w-3 h-3" />
+              </li>
+              <li className="min-w-0 max-w-full truncate font-semibold" style={{ color: INK }} aria-current="page">
+                {title}
+              </li>
+            </ol>
+          </nav>
+          {children}
+        </div>
 
         {/* ★우측 사이드바는 xl(1280) 이상에서만 (2026-08-04 실측 후 결정).
             lg(1024)에서 셋 다 띄우면 가운데가 1024−32−200−240−48 = **504px**까지 좁아져

@@ -19,7 +19,7 @@ import { SITE } from "@/lib/site";
 import CommunityCTA from "@/components/community-cta";
 import BlogTopBar from "@/components/blog-top-bar";
 import SideRail from "@/components/side-rail";
-import BottomTabBar, { TAB_BAR_HEIGHT } from "@/components/bottom-tab-bar";
+import BottomTabBar, { TAB_BAR_HEIGHT, useHideBottomChrome } from "@/components/bottom-tab-bar";
 import ReadingProgressBar from "@/components/reading-progress-bar";
 import ClusterMinimap, { PILLAR_ICONS } from "@/components/cluster-minimap";
 import RankingTable from "@/components/ranking-table";
@@ -93,6 +93,8 @@ export default function BlogPost({
   summarySlot,
   prevPost,
   nextPost,
+  stickyHub = null,
+  isCourseNav = false,
   related,
   totalPosts,
 }: {
@@ -116,6 +118,16 @@ export default function BlogPost({
   /** 이전/다음 글 — /blog 피드와 같은 순서(날짜 내림차순)로 **서버에서** 고른 것. */
   prevPost: NavLink | null;
   nextPost: NavLink | null;
+  /**
+   * 모바일 스티키 CTA 목적지 — 그 글이 속한 **필라 허브**(`lib/pillar-clusters.ts` STICKY_HUB).
+   * null 이면 기존 「다음 글」 스티키로 폴백한다.
+   */
+  stickyHub?: { href: string; label: string } | null;
+  /**
+   * 이전/다음이 **커리큘럼(클러스터 학습 순서)** 에서 왔는가. false 면 날짜순 폴백이다.
+   * 🔴 라벨을 「이전 강 / 다음 강」으로 부를 수 있는 건 true 일 때만 — 없는 학습 순서를 지어내지 않는다.
+   */
+  isCourseNav?: boolean;
   /** 관련글 3개 — 서버에서 클러스터 1순위로 선별(lib/related-posts.ts). */
   related: RelatedCard[];
   /**
@@ -129,6 +141,9 @@ export default function BlogPost({
 
   const [copied, setCopied] = useState(false);
   const [showStickyNext, setShowStickyNext] = useState(false);
+  /* 읽는 중(스크롤 다운)엔 하단 크롬을 비운다 — 탭바와 「다음 글 읽기」 바가 **같은 값**으로 움직인다.
+     따로 판정하면 탭바만 내려가고 CTA 가 62px 허공에 남는다. */
+  const chromeHidden = useHideBottomChrome();
   const contentRef = useRef<HTMLDivElement>(null);
   const stickyToolsRef = useRef<HTMLDivElement>(null); // 모바일 sticky 도구 바
   const tocDetailsRef = useRef<HTMLDetailsElement>(null); // 모바일 목차 <details>
@@ -285,7 +300,7 @@ export default function BlogPost({
                 ★단계는 JSON-LD와 **정확히 같은 3단**(홈 → 블로그 → 이 글)으로 맞춘다.
                   카테고리를 한 칸 끼워 넣고 싶어지지만, 카테고리는 URL이 없는 클라이언트 필터라
                   마크업에 없는 단계를 화면에만 만들면 구글 기준으로 불일치다. */}
-            <nav aria-label="현재 위치" className="mb-5">
+            <nav aria-label="현재 위치" className="mb-3">
               <ol className="flex flex-wrap items-center gap-1.5 text-xs text-muted-foreground">
                 <li>
                   <Link href="/" className="hover:text-primary transition-colors">홈</Link>
@@ -305,25 +320,34 @@ export default function BlogPost({
               </ol>
             </nav>
 
-            {/* Article Header */}
-            <header className="mb-10">
-              <div className="flex flex-wrap items-center gap-2 mb-4">
+            {/* Article Header
+                ★2026-08-19 구간A 압축: 첫 화면 844px 안에 «제목 · 메타 · 한 줄 정답 · 본문 시작»이
+                  전부 들어가게 한다. 실측 764px → 목표 438px.
+                🔴 **카테고리 배지는 남긴다.** 판정표는 「빵부스러기·내비와 3중 중복」이라 했지만
+                   실제 빵부스러기는 `홈 › 블로그 › 제목`이라 **카테고리가 없고**, 카테고리를 보여주는
+                   상단 바는 스크롤 0 에서 숨어 있다(top:-63). 첫 화면에서 소속을 알리는 건 이것뿐이다. */}
+            <header className="mb-6">
+              <div className="flex flex-wrap items-center gap-2 mb-3">
                 <span className="text-xs font-bold px-3 py-1 rounded-full bg-primary/15 text-primary border border-primary/25">
                   {post.category}
                 </span>
                 <span className="flex items-center gap-1 text-xs text-muted-foreground">
                   <Clock className="w-3.5 h-3.5" /> {post.readTime} 읽기
                 </span>
-                <time dateTime={post.date} className="text-xs text-muted-foreground">
-                  {post.date} 작성
-                </time>
-                {post.updated && post.updated !== post.date && (
+                {/* ★작성일은 «업데이트일이 없을 때만» 보인다.
+                    둘 다 있으면 독자가 신선도 판단에 쓰는 건 업데이트일 하나뿐이고,
+                    나란히 두면 첫 화면에서 같은 축의 정보가 두 줄을 먹는다. */}
+                {post.updated && post.updated !== post.date ? (
                   <time
                     dateTime={post.updated}
                     className="text-xs px-2 py-0.5 rounded-full bg-primary/10 text-primary border border-primary/20"
-                    title="이 글은 최신 정보로 업데이트되었습니다"
+                    title={`${post.date} 작성 · 최신 정보로 업데이트되었습니다`}
                   >
                     {post.updated} 업데이트
+                  </time>
+                ) : (
+                  <time dateTime={post.date} className="text-xs text-muted-foreground">
+                    {post.date} 작성
                   </time>
                 )}
               </div>
@@ -334,17 +358,24 @@ export default function BlogPost({
                   post.emoji 필드는 지운 게 아니다 — 관련글 카드·피드 카드·로드맵에서
                   작은 아이콘으로 계속 쓰인다. 여기 히어로 자리에서만 뺀다.
                   다국어 글(intl-blog-post-client)에는 원래 이 블록이 없었다. */}
-              <h1 className="text-3xl md:text-4xl font-extrabold text-foreground leading-tight mb-4">
+              <h1 className="text-3xl md:text-4xl font-extrabold text-foreground leading-tight mb-3">
                 {post.title}
               </h1>
-              <p className="text-lg text-muted-foreground leading-relaxed">{post.desc}</p>
+              {/* ★desc 는 「한 줄 정답」이 없을 때만 보인다 (2026-08-19).
+                  둘은 같은 일(글 요약)을 하고 바로 붙어 있어, 첫 화면에서 요약이 두 번 나왔다.
+                  남길 쪽은 tldr 이다 — 그쪽이 **질문에 답하는 형태**이고 Featured Snippet 후보다.
+                  🔴 tldr 이 없는 글에서는 desc 가 유일한 도입부라 반드시 남긴다.
+                  🪶 desc 자체는 그대로다 — `<meta name="description">` 은 영향받지 않는다. */}
+              {!post.tldr && (
+                <p className="text-lg text-muted-foreground leading-relaxed">{post.desc}</p>
+              )}
             </header>
 
             {/* 한 줄 정답 — Featured Snippet 후보 */}
             {post.tldr && (
               <aside
                 aria-label="한 줄 정답"
-                className="mb-8 relative bg-gradient-to-br from-primary/10 via-primary/5 to-transparent border border-primary/30 rounded-2xl p-5 md:p-6"
+                className="mb-6 relative bg-gradient-to-br from-primary/10 via-primary/5 to-transparent border border-primary/30 rounded-2xl p-4 md:p-6"
               >
                 <div className="flex items-start gap-3">
                   <span
@@ -506,6 +537,12 @@ export default function BlogPost({
                       { href: "/blog#search",   Icon: Search,     label: "글 검색",       desc: `${totalPosts}편에서 주제 찾기` },
                       { href: "/tournaments",   Icon: Trophy,     label: "대회 일정",     desc: "국내외 홀덤 대회" },
                       { href: "/calculator",    Icon: Calculator, label: "계산기",        desc: "아웃츠·팟오즈·ICM" },
+                      // ★GTO 솔버 (2026-08-19 · 사장님 지적: 「계산기는 있는데 GTO 바로가기가 없다」)
+                      //   솔버 CTA 는 **데스크톱 사이드바에만** 있었고, 그마저 GTO 시리즈 글에서만 떴다
+                      //   (`showMinimap` 조건). 모바일에서 닿을 길이 아예 없었다.
+                      //   🪶 문구는 지어내지 않았다 — 같은 파일 아래 `CalcCtaButton` 의 것을 그대로 쓴다
+                      //      (그 주석대로 `app/solver/page.tsx` 의 TITLE·DESCRIPTION 에서 딴 값이다).
+                      { href: "/solver",        Icon: BrainCircuit, label: "GTO 솔버",    desc: "13×13 GTO 표·EV 즉시" },
                       { href: "/win-rate-quiz", Icon: TrendingUp, label: "승률 시뮬레이터", desc: "핸드별 승률 확인" },
                       { href: "/hand-chart",    Icon: LayoutGrid, label: "핸드 차트",     desc: "포지션별 오픈 범위" },
                       // ⚠ 여기에 «/hands»를 넣지 마라 (2026-08-13에 넣었다가 같은 날 뺐다 — footer도 동일).
@@ -586,7 +623,7 @@ export default function BlogPost({
                       <ChevronLeft className="w-5 h-5 text-primary" />
                     </div>
                     <div className="min-w-0">
-                      <div className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground mb-1">← 이전 글</div>
+                      <div className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground mb-1">{isCourseNav ? "← 이전 강" : "← 이전 글"}</div>
                       <div className="text-sm font-bold text-foreground group-hover:text-primary transition-colors line-clamp-2 leading-snug">
                         {prevPost.title}
                       </div>
@@ -611,18 +648,21 @@ export default function BlogPost({
 
               {nextPost ? (
                 <Link href={`/blog/${nextPost.slug}`} className="group">
+                  {/* ★2026-08-19 색 분리: 이 카드가 스티키 CTA 와 **둘 다 꽉 찬 골드**여서
+                      바닥에서 같은 것이 두 번 있는 것처럼 읽혔다. 꽉 찬 골드는 **떠 있는 버튼(스티키)에만**
+                      남기고, 본문 안의 안내인 이 카드는 크림 + 골드 테두리로 위계를 낮춘다.
+                      🪶 스티키 목적지가 필라 허브로 바뀌어 «목적지» 중복은 이미 없앴다 — 이건 «시각» 중복 쪽이다. */}
                   <div
-                    className="flex items-center justify-between gap-4 p-5 rounded-2xl cursor-pointer transition-all hover:-translate-y-0.5 hover:shadow-lg"
-                    style={{ background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)", boxShadow: "0 2px 12px rgba(var(--gold-dark-rgb),0.25)" }}
+                    className="flex items-center justify-between gap-4 p-5 rounded-2xl cursor-pointer transition-all hover:-translate-y-0.5 hover:shadow-lg bg-primary/[0.07] border-2 border-primary/40 hover:border-primary/70"
                   >
                     <div className="min-w-0">
-                      <div className="text-[10px] font-bold uppercase tracking-widest mb-1" style={{ color: "rgba(13,28,20,0.6)" }}>다음 글 읽기 →</div>
-                      <div className="text-sm font-extrabold leading-snug line-clamp-2" style={{ color: "#0d1c14" }}>
+                      <div className="text-[10px] font-bold uppercase tracking-widest mb-1 text-primary">{isCourseNav ? "다음 강 →" : "다음 글 읽기 →"}</div>
+                      <div className="text-sm font-extrabold leading-snug line-clamp-2 text-foreground">
                         {nextPost.title}
                       </div>
                     </div>
-                    <div className="w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: "rgba(13,28,20,0.12)" }}>
-                      <ChevronRight className="w-5 h-5" style={{ color: "#0d1c14" }} />
+                    <div className="w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0 bg-primary/15">
+                      <ChevronRight className="w-5 h-5 text-primary" />
                     </div>
                   </div>
                 </Link>
@@ -645,32 +685,38 @@ export default function BlogPost({
 
             {/* Related Posts — 이미지 카드형 */}
             {related.length > 0 && (
-              <div className="mt-12">
-                <p className="text-[11px] font-bold uppercase tracking-widest text-muted-foreground mb-4">✦ 함께 읽으면 좋은 글</p>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              /* ★2026-08-19 구간C: 1,057 → ~340px.
+                 모바일에서 카드가 세로였다 — 폭 100% 16:9 이미지(219px) + 텍스트로 **카드당 320px**,
+                 3장이 화면 1.25개를 먹었다. **모바일만 가로 배치**로 바꾼다(데스크톱 3열은 그대로).
+                 🔴 **썸네일은 지우지 않았다.** 인라인 썸네일은 클릭율을 노리고 일부러 넣은 장치다
+                    — 줄일 것은 «그림의 유무»가 아니라 «그림이 차지하는 폭»이었다. */
+              <div className="mt-10">
+                <p className="text-[11px] font-bold uppercase tracking-widest text-muted-foreground mb-3">✦ 함께 읽으면 좋은 글</p>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-2.5 md:gap-4">
                   {related.map((r) => (
                     <Link key={r.slug} href={`/blog/${r.slug}`} className="group">
-                      <div className="bg-card border border-border rounded-2xl overflow-hidden hover:border-primary/40 hover:-translate-y-1 transition-all cursor-pointer h-full flex flex-col">
+                      <div className="bg-card border border-border rounded-2xl overflow-hidden hover:border-primary/40 md:hover:-translate-y-1 transition-all cursor-pointer h-full flex flex-row md:flex-col items-stretch">
                         {r.image ? (
-                          <div className="relative w-full aspect-[16/9] bg-muted overflow-hidden">
+                          <div className="relative w-24 md:w-full aspect-square md:aspect-[16/9] bg-muted overflow-hidden flex-shrink-0">
                             <Image
                               src={r.image}
                               alt={r.imageAlt ?? r.title}
                               fill
-                              sizes="(max-width:768px) 100vw, 33vw"
-                              className="object-cover group-hover:scale-105 transition-transform duration-300"
+                              sizes="(max-width:768px) 96px, 33vw"
+                              className="object-cover md:group-hover:scale-105 transition-transform duration-300"
                               loading="lazy"
                             />
                           </div>
                         ) : (
-                          <div className="flex items-center justify-center aspect-[16/9] bg-primary/5 text-4xl">
+                          <div className="flex items-center justify-center w-24 md:w-full aspect-square md:aspect-[16/9] bg-primary/5 text-2xl md:text-4xl flex-shrink-0">
                             {r.emoji}
                           </div>
                         )}
-                        <div className="p-4 flex flex-col flex-1">
-                          <div className="text-[10px] font-bold uppercase tracking-widest text-primary mb-1.5">{r.category}</div>
-                          <h3 className="text-sm font-bold text-foreground group-hover:text-primary transition-colors line-clamp-2 leading-snug flex-1">{r.title}</h3>
-                          <div className="flex items-center gap-1 mt-3 text-xs text-primary font-semibold">
+                        <div className="p-3 md:p-4 flex flex-col flex-1 min-w-0 justify-center md:justify-start">
+                          <div className="text-[10px] font-bold uppercase tracking-widest text-primary mb-1">{r.category}</div>
+                          <h3 className="text-sm font-bold text-foreground group-hover:text-primary transition-colors line-clamp-2 leading-snug md:flex-1">{r.title}</h3>
+                          {/* 「읽기 →」는 데스크톱에서만 — 모바일은 카드 전체가 탭 영역이라 없어도 눌린다 */}
+                          <div className="hidden md:flex items-center gap-1 mt-3 text-xs text-primary font-semibold">
                             읽기 <ChevronRight className="w-3.5 h-3.5" />
                           </div>
                         </div>
@@ -684,32 +730,42 @@ export default function BlogPost({
             {/* 📋 이 글 전체 요약 — LCP 회피용으로 본문 첫 이미지를 페이지 최하단에 lazy 로드 */}
             {summarySlot}
 
-            {/* Author Bio Card — E-E-A-T 강화 */}
+            {/* Author Bio Card — E-E-A-T
+                ★2026-08-19 구간C 압축 (435 → ~170px)
+                🔴 **경력 신호는 줄이지 않았다.** 이 사이트는 「12년 · WSOP 취재 · 솔버 분석」으로
+                   검색엔진에 전문성을 신고하고 있고 그게 순위 근거의 일부다(CLAUDE.md §13).
+                   판정 기준이 「독자 행동」이라 이 자리를 원리상 못 잡는다 — 기준의 사각지대다.
+                → 줄인 것은 **같은 말을 두 번 하던 곳**뿐이다:
+                  ① 3줄 산문이 아래 4칸 통계와 내용이 겹쳤다 → 한 줄로
+                  ② 태그 3개 중 둘이 같은 `/strategy` 였고, 관련 글·필라 허브가 이미 같은 일을 한다 → 제거 */}
             <aside
-              className="mt-12 bg-card border border-border rounded-2xl p-6 md:p-7"
+              className="mt-10 bg-card border border-border rounded-2xl p-5 md:p-6"
               aria-label="작성자 정보"
             >
-              <div className="flex items-start gap-5 mb-4">
-                <div className="w-16 h-16 rounded-full bg-primary/15 border-2 border-primary/30 flex items-center justify-center text-3xl flex-shrink-0">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-12 h-12 rounded-full bg-primary/15 border-2 border-primary/30 flex items-center justify-center text-2xl flex-shrink-0">
                   ♠
                 </div>
                 <div className="min-w-0 flex-1">
-                  <div className="text-xs text-muted-foreground mb-0.5">작성자</div>
-                  <div className="font-bold text-foreground text-lg mb-1">
+                  <div className="font-bold text-foreground">
                     <Link href="/about" className="hover:text-primary transition-colors">
                       홀덤마스터 편집팀
                     </Link>
                   </div>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    12년 경력의 포커 전략 전문가 팀. WSOP·KPT·APT 토너먼트 현장 취재 경험 보유.
-                    GTO 솔버(GTO+, PioSolver) 분석 기반의 데이터 중심 전략 콘텐츠를 제공합니다.
-                    모든 콘텐츠는 <strong className="text-foreground">실전 검증된 정보</strong>만을
-                    담습니다.
+                  <p className="text-xs text-muted-foreground leading-snug mt-0.5">
+                    12년 경력의 포커 전략 전문가 팀 · 실전 검증된 정보만 싣습니다
                   </p>
                 </div>
+                <Link
+                  href="/about"
+                  className="text-xs font-semibold text-primary hover:underline inline-flex items-center gap-0.5 flex-shrink-0"
+                >
+                  소개 <ChevronRight className="w-3.5 h-3.5" />
+                </Link>
               </div>
 
-              <dl className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 border-t border-border">
+              {/* 🔴 이 4칸이 E-E-A-T 의 «근거» 다 — 산문보다 촘촘하고 기계가 읽기 쉽다. 줄이지 말 것 */}
+              <dl className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-3 border-t border-border">
                 {[
                   { label: "운영 경력", value: "12년+" },
                   { label: "발행 글 수", value: `${totalPosts}편` },
@@ -717,42 +773,22 @@ export default function BlogPost({
                   { label: "솔버 분석", value: "Pio · GTO+" },
                 ].map(({ label, value }) => (
                   <div key={label} className="text-center">
-                    <dt className="text-[10px] uppercase tracking-wider text-muted-foreground/80 mb-0.5">
+                    <dt className="text-[10px] uppercase tracking-wider text-muted-foreground/80">
                       {label}
                     </dt>
                     <dd className="text-xs font-bold text-primary">{value}</dd>
                   </div>
                 ))}
               </dl>
-
-              <div className="mt-4 pt-4 border-t border-border flex flex-wrap items-center justify-between gap-3">
-                <div className="flex flex-wrap gap-2">
-                  {[
-                    { label: "포커 전략", href: "/strategy" },
-                    { label: "GTO 분석", href: "/strategy" },
-                    { label: "토너먼트", href: "/tournaments" },
-                  ].map(({ label, href }) => (
-                    <Link
-                      key={label}
-                      href={href}
-                      className="text-xs px-2.5 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary font-medium hover:bg-primary/25 hover:border-primary/50 transition-all"
-                    >
-                      {label}
-                    </Link>
-                  ))}
-                </div>
-                <Link
-                  href="/about"
-                  className="text-xs font-semibold text-primary hover:underline inline-flex items-center gap-1"
-                >
-                  편집팀 상세 소개 <ChevronRight className="w-3.5 h-3.5" />
-                </Link>
-              </div>
             </aside>
 
-            {/* Social Share Buttons */}
-            <div className="mt-8 bg-card border border-border rounded-xl p-5">
-              <div className="flex items-center gap-3 flex-wrap">
+            {/* Social Share Buttons
+                🔴 **스펙(「링크 복사만 남기고 114→56」)을 따르지 않았다.** 근거가 성립하지 않는다:
+                   «트위터·페북은 OS 공유시트와 중복»이라 했는데, 이 화면엔 **공유시트를 부르는 버튼이 없다**
+                   (`navigator.share` 미사용). 지우면 대체재 없이 공유 경로만 사라진다.
+                   58px 회수를 위해 기능을 잃을 자리가 아니라고 봐 **여백만** 줄였다(114 → ~90). */}
+            <div className="mt-6 bg-card border border-border rounded-xl p-3.5">
+              <div className="flex items-center gap-2 flex-wrap">
                 <span className="flex items-center gap-1.5 text-sm font-semibold text-foreground">
                   <Share2 className="w-4 h-4 text-primary" aria-hidden="true" /> 이 글 공유하기
                 </span>
@@ -822,30 +858,51 @@ export default function BlogPost({
 
       {/* 모바일 스티키 CTA — 스크롤 60% 이후 표시, 다음 글 있을 때만.
           ★bottom을 0 → 하단 탭바 높이(62px)로 올렸다. 그대로 두면 탭바와 겹친다. */}
-      {nextPost && (
+      {/* 모바일 스티키 CTA — 스크롤 60% 이후 표시.
+          ★2026-08-19 목적지 교체 (사장님 지적): 「다음 글」 → **그 글이 속한 필라 허브**.
+            글 끝에 내부 링크 제안이 **이미 15개**였다 — 관련글 표 9 · 이전글 1 · 다음글 1 ·
+            함께읽으면 3 · 스티키 1. 그런데 스티키가 「다음 글」 카드와 **같은 목적지**라,
+            바닥에서 골드 카드 두 개가 같은 글을 가리키고 있었다.
+            제안이 과잉이라 한 번 더 미는 게 값을 못 한다 → 「이 글의 다음 관문」으로 바꾼다.
+            (「어떻게 나가나」를 읽는 독자의 다음 질문은 «다음 강의»가 아니라 «어떤 대회가 있나»다.
+             `/tournaments` 는 425세션·참여율 77.2% — 이 글 58.5% 보다 19p 위다.)
+          🪶 허브 매핑이 없는 클러스터는 기존 「다음 글」로 폴백한다(회귀 없음). */}
+      {(stickyHub || nextPost) && (
         <div
           /* ★pointer-events-none 필수 — opacity-0은 클릭을 막지 않는다.
              bottom을 62px(탭바 위)로 올린 뒤 숨김 상태(translate-y-full)가 정확히
              탭바 자리(-7~62px)에 겹쳤고, z-50이라 탭을 눌러도 이 링크가 먹어
              엉뚱한 포스트로 이동했다. */
           className={`xl:hidden fixed left-0 right-0 z-50 transition-all duration-300 ${showStickyNext ? "translate-y-0 opacity-100" : "translate-y-full opacity-0 pointer-events-none"}`}
-          style={{ bottom: TAB_BAR_HEIGHT, background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)", boxShadow: "0 -4px 24px rgba(var(--gold-dark-rgb),0.35)" }}
+          /* ★2026-08-19: 탭바가 내려가면 이 바도 바닥까지 따라 내려온다.
+             `bottom`을 62 로 고정해 두면 탭바가 사라진 62px 이 그대로 빈칸이 된다. */
+          style={{ bottom: chromeHidden ? 0 : TAB_BAR_HEIGHT, background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)", boxShadow: "0 -4px 24px rgba(var(--gold-dark-rgb),0.35)" }}
         >
-          <Link href={`/blog/${nextPost.slug}`} className="flex items-center justify-between gap-3 px-5 py-4">
-            <div className="min-w-0">
-              <div className="text-[10px] font-bold uppercase tracking-widest mb-0.5" style={{ color: "rgba(13,28,20,0.55)" }}>다음 글 읽기 →</div>
-              <div className="text-sm font-extrabold truncate" style={{ color: "#0d1c14" }}>{nextPost.title}</div>
-            </div>
-            <div className="w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: "rgba(13,28,20,0.15)" }}>
-              <ChevronRight className="w-5 h-5" style={{ color: "#0d1c14" }} />
-            </div>
-          </Link>
+          {stickyHub ? (
+            /* 허브 모드 — 라벨이 짧아 **한 줄**이다. 두 줄짜리 「다음 글」 카드와 모양도 갈린다. */
+            <Link href={stickyHub.href} className="flex items-center justify-between gap-3 px-5 py-3.5">
+              <div className="text-[15px] font-extrabold truncate" style={{ color: "#0d1c14" }}>{stickyHub.label}</div>
+              <div className="w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: "rgba(13,28,20,0.15)" }}>
+                <ChevronRight className="w-5 h-5" style={{ color: "#0d1c14" }} />
+              </div>
+            </Link>
+          ) : (
+            <Link href={`/blog/${nextPost!.slug}`} className="flex items-center justify-between gap-3 px-5 py-4">
+              <div className="min-w-0">
+                <div className="text-[10px] font-bold uppercase tracking-widest mb-0.5" style={{ color: "rgba(13,28,20,0.55)" }}>다음 글 읽기 →</div>
+                <div className="text-sm font-extrabold truncate" style={{ color: "#0d1c14" }}>{nextPost!.title}</div>
+              </div>
+              <div className="w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: "rgba(13,28,20,0.15)" }}>
+                <ChevronRight className="w-5 h-5" style={{ color: "#0d1c14" }} />
+              </div>
+            </Link>
+          )}
         </div>
       )}
 
       {/* ★하단 전역 탭바 (2026-08-04 신설).
           검색으로 이 글에 바로 떨어진 독자가 사이트의 나머지로 갈 길이 상단바뿐이었다. */}
-      <BottomTabBar active="none" locale="ko" />
+      <BottomTabBar active="none" locale="ko" hidden={chromeHidden} />
     </div>
   );
 }

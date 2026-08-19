@@ -154,15 +154,20 @@ export function renderMarkdown(content: string, locale?: string): string {
     .replace(
       /^\*\*Q\. (.+?)\*\*\n\nA\. ([\s\S]+?)(?=\n\n\*\*Q\.|\n\n---|\n\n##|$)/gm,
       (_, q, a) =>
-        `<div style="margin-bottom:12px;border:2px solid rgba(234,88,12,0.55);border-radius:12px;overflow:hidden">` +
-        `<div style="padding:11px 16px;background:rgba(234,88,12,0.10);border-bottom:2px solid rgba(234,88,12,0.30);display:flex;gap:10px;align-items:flex-start">` +
+        // ★2026-08-19: <div> → <details> 아코디언. 펼친 채로 10문항이 2,628px(3.1화면)였다.
+        //   🔴 답변은 DOM 에 그대로 남는다 — 접기지 삭제가 아니다.
+        //      FAQPage JSON-LD 는 서버에서 따로 만들므로 리치결과에 영향이 없다(산출물 실측 확인).
+        `<details class="blog-faq" style="border:2px solid rgba(234,88,12,0.55);border-radius:12px;overflow:hidden">` +
+        `<summary style="padding:11px 16px;background:rgba(234,88,12,0.10);display:flex;gap:10px;align-items:flex-start">` +
         `<span style="flex-shrink:0;width:22px;height:22px;border-radius:50%;background:rgba(234,88,12,0.20);border:1.5px solid rgba(234,88,12,0.70);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#ea580c;margin-top:1px">Q</span>` +
-        `<span style="font-size:15.5px;font-weight:700;color:hsl(var(--foreground));line-height:1.5">${q.trim()}</span>` +
-        `</div>` +
+        `<span style="font-size:15.5px;font-weight:700;color:hsl(var(--foreground));line-height:1.5;flex:1;min-width:0">${q.trim()}</span>` +
+        // 접힘/펼침을 알리는 유일한 신호 — 기본 삼각형을 지웠으므로 이게 없으면 눌러야 하는 줄 모른다
+        `<span class="blog-faq-chevron" aria-hidden="true" style="flex-shrink:0;color:#ea580c;font-size:12px;margin-top:4px">▼</span>` +
+        `</summary>` +
         // FAQ 답변은 본문 글자의 약 11%를 차지한다 — 13.5px는 모바일에서 너무 작았다.
         // 15px로 올린다(본문 16px보다 살짝 작아 위계는 유지). 2026-08-01 실측 근거.
         `<div class="blog-faq-answer" style="padding:12px 16px 12px 48px;font-size:15px;color:hsl(var(--muted-foreground));line-height:1.75">${a.trim()}</div>` +
-        `</div>`
+        `</details>`
     )
     .replace(/==r:(.+?)==/g, '<mark class="brush-hl brush-hl-red">$1</mark>')
     .replace(/==g:(.+?)==/g, '<mark class="brush-hl brush-hl-green">$1</mark>')
