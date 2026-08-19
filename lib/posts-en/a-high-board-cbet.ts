@@ -25,6 +25,11 @@ import type { Post } from "../posts";
  *   BTN: All 463.0 combos · EQ 54.9% · EV 3.41 · EQR 113.1%
  *   BTN Hands에 **Weak Pair 행이 없다** — 0%라 앱이 표시하지 않는다(KO 표의 0.0%와 일치).
  *
+ * 🔴 **벳하는 핸드를 「suited aces에 집중」이라고 쓸 뻔했다 (2026-08-19 검수에서 자기 검출).**
+ *   상세 표가 **가상 스크롤**이라 innerText로는 **31행(벳 1.12콤보)** 만 잡힌다 — 8.4콤보 전체를
+ *   본 적이 없는데 상단 몇 행으로 «집중»을 주장했다. 지금 본문은 **실측한 4개 핸드의 빈도만** 말한다.
+ *   ★전수 집계가 필요하면 innerText가 아니라 표를 정렬하거나 CSV 내보내기로 받아야 한다.
+ *
  * §13 손 검산 (전부 통과):
  *   · A7은 A72에서 A-A-7-7-2 = **투 페어**(탑 페어 아님)
  *   · BB 셋 = 77·22 각 3콤보 = 6콤보 → 6÷464 = 1.29% ≈ 1.3% ✓
@@ -45,13 +50,17 @@ import type { Post } from "../posts";
 export const POST: Post = {
   slug: "a-high-board-cbet",
   title: "Top Pair, Still Checking: A-7-2 C-Bet Frequencies",
-  seoTitle: "Top Pair and the Solver Says Check — Dry Ace-High C-Bet",
+  // ⚠ 초판 "Top Pair and the Solver Says Check"는 명사구 + 절을 and로 이어 반쪽 문장으로 읽혔다
+  //   (교열 렌즈 지적, 확신도 중간~높음). 훅은 살리고 절+절로 고쳤다 — 55자.
+  seoTitle: "You Flop Top Pair, the Solver Checks — Dry Ace C-Bet",
   // 🔴 155자 — EN 하드리밋 160.
   // ⚠ **산출물에서 재면 165자로 보인다.** `'`가 `&#x27;`(6자)로 인코딩되기 때문이다 —
   //   자수는 **디코딩한 문자열**로 세야 한다. 이걸 모르고 초판(실제 158자)을 «초과»로 오판했다.
   //   빌드의 자수 게이트는 `lib/posts-en/`을 검사하지 않으므로 어차피 손으로 세야 한다.
   desc: "You flop top pair on A-7-2 and want to lead. A solver checks 98.2% of the big blind's range — the exact c-bet frequencies, and why equity isn't the reason.",
-  tldr: "On A♥7♦2♣ after a button open and a big blind call, the big blind checks 98.2% of its range — top pair, two pair and trips included. The reason isn't equity (45.1% vs 54.9%, a modest gap) but equity realization: 84.0% out of position against 113.1% in position.",
+  // 🔴 tldr·리드 문단·Quick answer가 같은 세 수치를 세 번 반복하던 것을 역할로 갈랐다
+  //    (교열 렌즈 #6): tldr = 결론 / 리드 = 훅 / Quick answer = 그래서 무엇을 하나.
+  tldr: "On A♥7♦2♣ after a button open and a big blind call, the big blind checks 98.2% of its range — top pair, two pair and sets included. Equity is nearly even at 45.1% against 54.9%; what splits the two seats is equity realization, 84.0% out of position against 113.1% in position.",
   category: "strategy",
   date: "2026-08-19",
   updated: "2026-08-19",
@@ -70,11 +79,9 @@ export const POST: Post = {
     "equity realization",
   ],
   content: `
-The flop comes A-7-2, rainbow. You are in the big blind with A9 — top pair. Leading out feels obvious. It isn't.
+The flop comes **A♥ 7♦ 2♣**, rainbow. You are in the big blind with A9 — top pair. Leading out feels obvious. It isn't.
 
-Run the spot and the solver checks **98.2% of the big blind's entire range** here. Not "checks the weak hands" — checks top pair, two pair, and the sets too. This article shows where that number comes from and why it holds.
-
-Every figure below came out of the [free GTO solver](/en/solver), and you can reproduce all of it in one click from the study spots.
+Every figure below came from HoldemMaster's [free GTO solver](/en/solver), read off the study-spot output on 2026-08-19, and you can pull the same screen up with a single click.
 
 ![HoldemMaster GTO solver results screen for A-7-2 rainbow — the big blind's range shown almost entirely green for check, with action frequencies and hand categories](/images/gto-srp-dry-ace-oop-en.webp "A♥7♦2♣ · the big blind's flop strategy — green is check, 98.2% of the range")
 
@@ -85,12 +92,12 @@ Pot · stack | Pot 5.5bb · effective stack 97.5bb
 Result | BB checks 98.2% — the whole range checks
 :::
 
-> **Short answer**
-> The big blind checks **98.2%** on A-7-2 rainbow. Betting takes 1.9% across both sizes, which is effectively zero. Hands as strong as top pair check, and when a range takes one action with everything, that is a **range check**. The cause is not raw equity — it is **equity realization**. The same 45% is worth less without position.
+> **Quick answer**
+> Check, and plan to keep going. When a range takes one action with everything — strong hands included — that is a **range check**, and it is what the big blind does here. Checking is not giving up on the pot: it keeps the button's bluffs in, and top pair is still a hand you continue with when the c-bet lands.
 
 ## What conditions produced these numbers?
 
-Conditions first, because different inputs give different answers.
+The button opens to 2.5bb, the big blind calls, and everyone else folds — so two players see a 5.5bb pot with 97.5bb behind. Both ranges are the standard 100bb online approximations, the flop is A♥ 7♦ 2♣ rainbow, and the solver is given two bet sizes to work with, roughly a third and three-quarters of the pot. Rake is not modeled. Change any of those and the frequencies change with them.
 
 | Setting | Value |
 |---|---|
@@ -106,7 +113,9 @@ The pot is 5.5bb because the button's 2.5bb open and the big blind's 2.5bb call 
 
 ## What's a good c-bet percentage on a dry ace-high board?
 
-For the preflop raiser, high. For the **caller, essentially zero** — 1.9%, split across two sizes. Almost every article about c-bet frequency is written from the raiser's seat, so if you are the big blind here, the usual advice does not apply to you. This is the other side of the same flop.
+It depends entirely on which seat you are in. For the preflop raiser on a board this dry, roughly **70–100% at a small size** heads-up in position — the [continuation bet](/en/blog/holdem-continuation-bet "thumb:/images/holdem-continuation-bet-hero.webp") guide breaks that down by board type. For the player who called, the answer is **essentially zero**.
+
+Strictly, the caller does not have a c-bet at all — the term means the preflop raiser betting the flop, so the big blind's version is a **lead**. But it is the number people want when they land on this side of the hand, and here it is:
 
 | Big blind's first action | Frequency | Combos |
 |---|---|---|
@@ -114,38 +123,46 @@ For the preflop raiser, high. For the **caller, essentially zero** — 1.9%, spl
 | Bet 1.8bb (33% pot) | 1.0% | 4.5 |
 | Bet 4.1bb (75% pot) | 0.9% | 3.9 |
 
-Out of 464 combos, roughly eight bet. In practice you can round it off: **the big blind does not lead this board.**
+Out of 464 combos, about eight combos bet — 1.9% across both sizes, rounded. In practice you can round it off: **the big blind does not lead this board.**
 
 ## Why does the big blind check top pair too?
 
-Because betting top pair here only gets action from hands that beat it. That 98.2% includes every ace in the range, on purpose.
+Because the pot is easier to win by checking than by betting into it. Leading with one pair, out of position, against the player who took the initiative preflop is the expensive way to play a hand you are happy to see showdown with.
 
-Say you lead with A9. What calls or raises? AK, AQ, AJ — **every one of them wins the kicker fight**. What folds? The junk you were already beating. You get paid when you are behind and nothing when you are ahead. That is the whole argument.
+Three things are working against a lead. First, **equity realization**: the numbers below show the big blind banking 84.0% of its equity and the button 113.1%. Building a bigger pot out of position makes that gap cost more, not less. Second, the button c-bets this flop at a high frequency — **checking keeps its bluffs in the pot**, while leading lets them fold and take nothing. Third, the big blind's range is capped: with no AA, AK or AQ in it, a lead invites a raise from exactly the hands it cannot continue against.
 
-It also matters that "an ace" is not one hand type. A9 loses kicker battles, while A7 and A2 are not top pair at all — on this board A7 plays as ==A-A-7-7-2==, two pair. A range check hides all three behind one action, so your opponent cannot sort them.
+What a lead does **not** do is fold out better hands. The button's opening range keeps every ace down to A2, plus underpairs and sevens, so plenty of worse hands would call — that is not the problem. The problem is the pot you are building to win it.
+
+It also matters that "an ace" is not one hand type. A9 loses kicker battles to AK, AQ, AJ and AT, while A7 and A2 are not top pair at all — on this board A7 plays as ==A-A-7-7-2==, two pair. A range check hides all of them behind one action, so your opponent cannot sort them.
+
+**And the hands that do bet are not the ones you would guess.** Open the detail table and the strongest aces the big blind is allowed to have take the occasional stab: A♣J♣ bets the small size 14.5% of the time, A♦J♦ 12.2%, A♠J♠ 7.1%, A♠T♠ 4.5%. Small frequencies, but they come from the top of the range rather than from air — which is why the check is not a pure surrender.
 
 ## What is a dry board, and why does this one favor the raiser?
 
-A dry board is one with no flush draw and almost no straight draw — three unconnected cards in three different suits, like A-7-2 rainbow. Nothing is chasing anything. That matters here because **71.3% of the big blind's range has no draw at all** — those hands can still pair up, but they have nothing pulling them to the river.
+A dry board is one with no flush draw and almost no straight draw — three unconnected cards in three different suits, like A♥ 7♦ 2♣. Almost nothing is chasing anything: **71.3% of the big blind's range has no draw**, and most of the rest is a backdoor flush draw. It favors the raiser because the button's opening range keeps AK, AQ and AJ while the big blind's calling range does not — the aces are stacked on one side, and there are no draws to even out later.
 
 ![Range composition infographic comparing the big blind and button hand categories on a dry ace-high board, green and gold bars side by side](/images/gto-srp-dry-ace-ranges-en.webp "A♥7♦2♣ · category split — the button holds more top pair, the big blind more air")
 
+Out of position (OOP) is the big blind, acting first; in position (IP) is the button.
+
 | Category | BB (OOP) | BTN (IP) |
 |---|---|---|
-| Trips | 1.3% | **1.9%** |
+| Trips — here always a set | 1.3% | **1.9%** |
 | Two pair | 3.9% | 3.9% |
 | Top pair | 20.7% | **25.9%** |
+| Second pair | 5.2% | 5.2% |
+| Weak pair | 1.3% | 0.0% |
 | Underpair | 9.1% | **13.0%** |
 | King high | **17.2%** | 16.4% |
 | No made hand | **41.4%** | 33.7% |
 
-The button still holds AK, AQ and AJ. The big blind mostly does not — those hands would have three-bet preflop — so its calling range keeps the weak aces and the junk. Same ace on the board, and top pair lands 5.2 points more often on the button's side.
+The gap comes from what each range is allowed to contain. The button opens every ace — A2 through AK. The big blind's calling range **tops out at AJ**: no AA, no AK, no AQ, because those three-bet instead. Same ace on the board, and top pair still lands 5.2 points more often on the button's side, with the strongest aces sitting entirely on one side of the table.
 
 Sets tell the same story by hand count. The pocket pairs that flop a set here are AA, 77 and 22, and **the big blind has only 77 and 22** — three combos each, six of 464, which is the 1.3% on screen. The button keeps all three pairs: nine combos, 1.9%. The arithmetic matches the solver exactly.
 
 ## What does range advantage mean if equity is nearly even?
 
-Equity says 45.1% against 54.9% — a 9.8 point gap, not a disaster. Then look at what each side actually banks.
+Range advantage means one player's whole range fits the board better than the other's. On A♥ 7♦ 2♣ it barely shows up in raw equity — 45.1% against 54.9%, a 9.8 point gap that no one would call a disaster. It shows up in what each side is able to bank from that equity, and there the two seats are not close.
 
 | Metric | BB (OOP) | BTN (IP) |
 |---|---|---|
@@ -153,23 +170,26 @@ Equity says 45.1% against 54.9% — a 9.8 point gap, not a disaster. Then look a
 | EV (bb) | 2.09 | 3.41 |
 | **Equity realization (EQR)** | **84.0%** | **113.1%** |
 
-Equity realization is the share of your equity you actually collect. The big blind's equity is worth ==5.5 × 45.1% = 2.48bb==, but its expected value is 2.09bb — it loses about a sixth of what it "owns". The button's 113.1% means it collects **more than its share**, because it acts last and its range is strong enough to apply pressure. (Screen values are rounded, so recomputing EQR by hand lands within 0.3 points.)
+Equity realization is the share of your equity you actually collect. The big blind's equity is worth ==5.5 × 45.1% = 2.48bb==, but its expected value is 2.09bb — it loses about a sixth of what it "owns". The button's 113.1% means it collects **more than its share**, because it acts last and its range is strong enough to apply pressure. (Screen values are rounded, so recomputing EQR by hand lands within 0.3 points of the displayed figure.)
 
-That is what range advantage buys: not a bigger slice of equity, but a better rate of converting it. The general principle is in the [equity guide](/en/blog/holdem-equity), and why the seat itself is worth so much is covered in [playing position](/en/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp").
+Position and range advantage compound here: the button gets the bigger slice **and** the better rate of converting it. The general principle is in the [equity guide](/en/blog/holdem-equity), and why the seat itself is worth so much is covered in [playing position](/en/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp").
 
-## So how should the button c-bet here?
+## When should the button c-bet a dry ace-high flop?
 
-Small and wide. The big blind has 41.4% no made hand and 71.3% with no draw, so folds come cheap and the hands that stay rarely improve. This is the textbook case for the small size — which is why a 33% option (1.8bb) sits in the tree at all.
+Almost always, small — **against opponents who fold.** The big blind has 41.4% no made hand and 71.3% with no draw, so folds come easily and the hands that stay rarely improve. That is the textbook case for the small size, which is why the 33% bet (1.8bb) is the one to reach for here.
 
-The rule of thumb generalizes: **the side with the range advantage bets small and often.** How that changes across board types is in [continuation bet strategy](/en/blog/holdem-continuation-bet "thumb:/images/holdem-continuation-bet-hero.webp").
+Against a table that calls anything, "bet everything small" stops being free: nothing folds, and you are building pots with hands that do not want one. There the adjustment is fewer stabs and more value.
 
-:::note[Study spots pre-solve the flop's first action only. To see the button's exact c-bet frequency, open "Solve this spot yourself" and run the tree through.]:::
+The rule of thumb generalizes with one condition: **the side with the range advantage — and no clear nut advantage — bets small and often.** On boards where one player also owns the nuts, sizing goes up instead. How that changes across board types is in [continuation bet strategy](/en/blog/holdem-continuation-bet "thumb:/images/holdem-continuation-bet-hero.webp").
+
+:::note[The study spot pre-solves the flop's first action only, so the button's exact c-bet frequency is not one of the numbers on this page. To get it, open "Solve this spot yourself" and run the tree through.]:::
 
 ## What changes at the table?
 
-- **In the big blind on a dry ace-high flop, drop the idea of leading.** Top pair included. Leading splits your range into "bet = strong, check = weak" and hands your opponent a free read.
-- **On the button, this is close to an auto-bet with a small size.** Against a player who never folds, adjust in two directions: fewer bluffs, because raising the size will not make them fold — and bigger value bets, because they will pay.
-- **A check here is not weakness.** The big blind's checking range contains sets (77, 22) and two pair (A7, A2). Push too hard against it and you run into a check-raise.
+- **Having called a raise heads-up, drop the idea of leading a dry ace-high flop.** Top pair included. Leading builds a pot you then have to play out of position with one pair — which is exactly the 84% against 113% gap above. (Limped pots and blind-versus-blind are a different structure and are not what this spot covers.)
+- **Checking is not check-folding.** This is where the number gets misread. Facing the button's small c-bet, the big blind continues very wide — every ace, most sevens, the underpairs, king-high with a backdoor. **A9 is a check-call**, usually through the turn as well. The check-raises come mostly from 77, 22, A7 and A2, plus a few backdoor bluffs.
+- **On the button, bet small and wide against opponents who fold.** Against a player who never folds, adjust in two directions: fewer bluffs, because they will not fold no matter what you bet — especially on the turn and river, where second and third barrels are pure loss — and bigger value bets with **top pair or better**. A9 with its weak kicker is not a size-up hand; it is a hand you simply do not fire three times.
+- **Against a balanced opponent, a check here is not weakness** — the checking range contains sets (77, 22) and two pair (A7, A2), so pushing too hard runs into a check-raise. At low stakes it is often the reverse: many players simply lead their strong hands, so their check really is weak. Keep value-betting; treat the check-raise as an occasional cost, not a reason to slow down.
 
 :::readnext[Keep reading]
 /en/blog/holdem-continuation-bet | Why 'C-Bet Every Flop' Bleeds Chips | /images/holdem-continuation-bet-hero.webp
@@ -178,9 +198,11 @@ The rule of thumb generalizes: **the side with the range advantage bets small an
 
 ## Check it yourself
 
-Open the [free GTO solver](/en/solver), go to **Study Spots → Dry Ace-High Board → [⚡ View results]**, and this exact screen appears with no waiting. Switch the player selector between OOP and IP to compare both ranges, or click through turn and river cards. Change a range and watch the frequencies move.
+Open the [free GTO solver](/en/solver), go to **Study Spots → Dry Ace-High Board → [⚡ View results]**, and this exact screen appears with no waiting. Switch the player selector between OOP and IP to compare both ranges, and sort the detail table by any column to find the hands that bet. The study spots pre-solve **the flop's first action only** — to click through turn and river, or to change a range and watch the frequencies move, use **Solve this spot yourself** and run the tree.
 
 To drill the same spot instead of reading it, open the **GTO Trainer** in the sidebar: it deals you a hand from the real range, you pick an action, and it tells you what that choice cost in big blinds. It is free, with nothing to install and no account.
+
+## FAQ
 
 **Q. Is A7 top pair on an A-7-2 board?**
 
@@ -188,7 +210,7 @@ A. No. The board pairs your 7, so A7 makes ==A-A-7-7-2== — two pair. True top 
 
 **Q. Does 98.2% checking mean I should literally never bet?**
 
-A. As a default, yes on this texture. The betting frequency is 1.9% across both sizes, which is inside the margin where a solver is balancing rather than telling you something. Against an opponent who almost never c-bets, leading becomes reasonable — you are collecting a pot nobody else will bet at.
+A. As a default, yes on this texture. Against an opponent who almost never c-bets, you can mix in a lead — but **only with value hands**. Top pair and sevens build a pot that player will never build for you, while your air should still check, because a passive opponent hands you free cards and free showdowns that are worth more than the bluff.
 
 **Q. What is the difference between a wet board and a dry board?**
 

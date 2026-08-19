@@ -8,7 +8,9 @@ export const POST: Post = {
   tldr: "A continuation bet (c-bet) is a bet on the flop by the player who raised preflop. The modern rule isn't 'c-bet every flop' — it's to bet the flops that favor your range (high, dry boards like K-7-2) small and often, and check the ones that favor your opponent (low, connected boards like 7-6-5). Size small — about one-third pot — on dry boards, big — two-thirds or more — on wet ones, c-bet less out of position, and much less multiway.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-07-19",
+  // 2026-08-19: range advantage 절에 `a-high-board-cbet` 역링크 한 문단 추가(EN·KO 전용 자산이라
+  //   7개 번역본에는 전파하지 않는다 — 의도적 차이. `docs/locale-intentional-diffs.md`에 기록).
+  updated: "2026-08-19",
   keepImagesInBody: true,
   readTime: "15 min",
   emoji: "🔥",
@@ -60,7 +62,7 @@ Here's the crucial thing modern strategy actually says, because it's easy to get
 
 The concept underneath is ==range advantage==: whose overall range is stronger on this particular flop. As the preflop raiser, you hold more big cards and overpairs, so **high, dry boards belong to you** — and boards full of medium connected cards belong to the player who called. Master that one idea and you're ahead of every "just c-bet" player at the table.
 
-How lopsided does it get? On A-7-2 rainbow a solver has the caller checking 98.2% of its range — top pair included. The full breakdown is in [top pair, still checking](/en/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-en.webp").
+And range advantage isn't the whole story — add position on top of it and the effect gets extreme. On A-7-2 rainbow a solver has the caller checking 98.2% of its range, top pair included, even though equity is nearly even. The full breakdown is in [top pair, still checking](/en/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-en.webp").
 
 ---
 
