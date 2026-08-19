@@ -46,6 +46,7 @@ import { POST as wsop2026TournamentGuide } from "./wsop-2026-tournament-guide";
 import { POST as aHighBoardCbet } from "./a-high-board-cbet";
 import { POST as kHighBoardCbet } from "./k-high-board-cbet";
 import { POST as broadwayBoardStrategy } from "./broadway-board-strategy";
+import { POST as donkBetStrategy } from "./donk-bet-strategy";
 
 /**
  * 영어(en) 블로그 포스트.
@@ -53,6 +54,7 @@ import { POST as broadwayBoardStrategy } from "./broadway-board-strategy";
  * 슬러그는 한국어 글과 동일하게 맞춰 hreflang 상호 링크가 성립하도록 한다.
  */
 export const EN_POSTS: Post[] = [
+  donkBetStrategy,
   broadwayBoardStrategy,
   kHighBoardCbet,
   aHighBoardCbet,

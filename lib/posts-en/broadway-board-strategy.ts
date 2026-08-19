@@ -232,7 +232,7 @@ A. Three: AK for A-K-Q-J-T, K9 for K-Q-J-T-9, and 98 for Q-J-T-9-8. With one que
 
 **Q. Isn't a wet board the place to semi-bluff lead?**
 
-A. Only when your draws outnumber theirs. Here open-enders are 28.7% against 27.7% — effectively identical — while completed straights are 7.1% against 10.5% in the button's favor. A lead needs the top of the range on your side, not the average, and this flop is exactly the reverse. There is one board in the study set where the condition genuinely is met — the middle connected 9-8-7 — and it is the only spot in the series where the big blind leads at a meaningful frequency.
+A. Only when your draws outnumber theirs. Here open-enders are 28.7% against 27.7% — effectively identical — while completed straights are 7.1% against 10.5% in the button's favor. A lead needs the top of the range on your side, not the average, and this flop is exactly the reverse. There is a board in the study set where the condition genuinely is met — the [middle connected 9-8-7](/en/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-en.webp"), where the big blind leads instead of checking.
 
 **Q. What is the difference between range advantage and nut advantage?**
 
