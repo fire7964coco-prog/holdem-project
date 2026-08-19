@@ -28,6 +28,31 @@ export type PillarCluster = {
   pillarHref?: string;
 };
 
+/**
+ * 모바일 스티키 CTA 가 가리킬 **허브 라우트** — 클러스터 `id` 로 찾는다.
+ *
+ * ★왜 (2026-08-19 · 사장님 지적)
+ *   스티키가 「다음 글」을 가리키고 있었는데, 글 끝에 내부 링크 제안이 **이미 15개**였다
+ *   (관련글 표 9 · 이전글 1 · 다음글 1 · 함께읽으면 3 · 스티키 1 — 스티키는 «다음글»과 **같은 목적지**).
+ *   제안이 과잉이라 한 번 더 미는 게 값을 할 수 없었다. 그래서 목적지를 **그 글이 속한 필라의 허브**로
+ *   바꾼다 — 「어떻게 나가나」를 읽는 독자의 다음 질문은 «다음 강의»가 아니라 «그럼 어떤 대회가 있나»다.
+ *   `/tournaments` 는 425세션·참여율 **77.2%** 로 사이트 최강 랜딩이다(이 글은 58.5% — 19p 위로 보낸다).
+ *
+ * 🔴 **`pillarSlug` 를 쓰지 않는 이유**: KO 토너먼트 필라의 `pillarSlug` 는
+ *    `holdem-tournament-how-to-enter` 로 **글 자신**이다. 그대로 쓰면 자기 자신을 가리킨다.
+ * 🔴 **`rankings` 는 매핑하지 않는다.** `/ranking` 은 «홀덤사이트 랭킹»이고 이 클러스터는 «족보»다 —
+ *    이름만 닮았고 뜻이 다르다. 넣으면 족보 글에서 사이트 순위표로 보낸다.
+ * 🪶 여기 없는 클러스터(odds·starting·position·rankings)와 클러스터 없는 글은
+ *    **기존 「다음 글」 스티키로 폴백**한다 — 회귀 없음.
+ */
+export const STICKY_HUB: Record<string, { href: string; label: string }> = {
+  tournament: { href: "/tournaments", label: "대회 일정 전체 보기" },
+  strategy: { href: "/strategy", label: "전략 가이드 전체 보기" },
+  rules: { href: "/rules", label: "룰 가이드 전체 보기" },
+  pub: { href: "/pub", label: "홀덤펍 찾아보기" },
+  solver: { href: "/solver", label: "무료 GTO 솔버 열기" },
+};
+
 export const EN_CLUSTERS: PillarCluster[] = [
   {
     id: "rules",

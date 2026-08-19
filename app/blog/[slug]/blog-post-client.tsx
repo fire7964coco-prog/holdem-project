@@ -93,6 +93,8 @@ export default function BlogPost({
   summarySlot,
   prevPost,
   nextPost,
+  stickyHub = null,
+  isCourseNav = false,
   related,
   totalPosts,
 }: {
@@ -116,6 +118,16 @@ export default function BlogPost({
   /** 이전/다음 글 — /blog 피드와 같은 순서(날짜 내림차순)로 **서버에서** 고른 것. */
   prevPost: NavLink | null;
   nextPost: NavLink | null;
+  /**
+   * 모바일 스티키 CTA 목적지 — 그 글이 속한 **필라 허브**(`lib/pillar-clusters.ts` STICKY_HUB).
+   * null 이면 기존 「다음 글」 스티키로 폴백한다.
+   */
+  stickyHub?: { href: string; label: string } | null;
+  /**
+   * 이전/다음이 **커리큘럼(클러스터 학습 순서)** 에서 왔는가. false 면 날짜순 폴백이다.
+   * 🔴 라벨을 「이전 강 / 다음 강」으로 부를 수 있는 건 true 일 때만 — 없는 학습 순서를 지어내지 않는다.
+   */
+  isCourseNav?: boolean;
   /** 관련글 3개 — 서버에서 클러스터 1순위로 선별(lib/related-posts.ts). */
   related: RelatedCard[];
   /**
@@ -605,7 +617,7 @@ export default function BlogPost({
                       <ChevronLeft className="w-5 h-5 text-primary" />
                     </div>
                     <div className="min-w-0">
-                      <div className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground mb-1">← 이전 글</div>
+                      <div className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground mb-1">{isCourseNav ? "← 이전 강" : "← 이전 글"}</div>
                       <div className="text-sm font-bold text-foreground group-hover:text-primary transition-colors line-clamp-2 leading-snug">
                         {prevPost.title}
                       </div>
@@ -630,18 +642,21 @@ export default function BlogPost({
 
               {nextPost ? (
                 <Link href={`/blog/${nextPost.slug}`} className="group">
+                  {/* ★2026-08-19 색 분리: 이 카드가 스티키 CTA 와 **둘 다 꽉 찬 골드**여서
+                      바닥에서 같은 것이 두 번 있는 것처럼 읽혔다. 꽉 찬 골드는 **떠 있는 버튼(스티키)에만**
+                      남기고, 본문 안의 안내인 이 카드는 크림 + 골드 테두리로 위계를 낮춘다.
+                      🪶 스티키 목적지가 필라 허브로 바뀌어 «목적지» 중복은 이미 없앴다 — 이건 «시각» 중복 쪽이다. */}
                   <div
-                    className="flex items-center justify-between gap-4 p-5 rounded-2xl cursor-pointer transition-all hover:-translate-y-0.5 hover:shadow-lg"
-                    style={{ background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)", boxShadow: "0 2px 12px rgba(var(--gold-dark-rgb),0.25)" }}
+                    className="flex items-center justify-between gap-4 p-5 rounded-2xl cursor-pointer transition-all hover:-translate-y-0.5 hover:shadow-lg bg-primary/[0.07] border-2 border-primary/40 hover:border-primary/70"
                   >
                     <div className="min-w-0">
-                      <div className="text-[10px] font-bold uppercase tracking-widest mb-1" style={{ color: "rgba(13,28,20,0.6)" }}>다음 글 읽기 →</div>
-                      <div className="text-sm font-extrabold leading-snug line-clamp-2" style={{ color: "#0d1c14" }}>
+                      <div className="text-[10px] font-bold uppercase tracking-widest mb-1 text-primary">{isCourseNav ? "다음 강 →" : "다음 글 읽기 →"}</div>
+                      <div className="text-sm font-extrabold leading-snug line-clamp-2 text-foreground">
                         {nextPost.title}
                       </div>
                     </div>
-                    <div className="w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: "rgba(13,28,20,0.12)" }}>
-                      <ChevronRight className="w-5 h-5" style={{ color: "#0d1c14" }} />
+                    <div className="w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0 bg-primary/15">
+                      <ChevronRight className="w-5 h-5 text-primary" />
                     </div>
                   </div>
                 </Link>
@@ -837,7 +852,16 @@ export default function BlogPost({
 
       {/* 모바일 스티키 CTA — 스크롤 60% 이후 표시, 다음 글 있을 때만.
           ★bottom을 0 → 하단 탭바 높이(62px)로 올렸다. 그대로 두면 탭바와 겹친다. */}
-      {nextPost && (
+      {/* 모바일 스티키 CTA — 스크롤 60% 이후 표시.
+          ★2026-08-19 목적지 교체 (사장님 지적): 「다음 글」 → **그 글이 속한 필라 허브**.
+            글 끝에 내부 링크 제안이 **이미 15개**였다 — 관련글 표 9 · 이전글 1 · 다음글 1 ·
+            함께읽으면 3 · 스티키 1. 그런데 스티키가 「다음 글」 카드와 **같은 목적지**라,
+            바닥에서 골드 카드 두 개가 같은 글을 가리키고 있었다.
+            제안이 과잉이라 한 번 더 미는 게 값을 못 한다 → 「이 글의 다음 관문」으로 바꾼다.
+            (「어떻게 나가나」를 읽는 독자의 다음 질문은 «다음 강의»가 아니라 «어떤 대회가 있나»다.
+             `/tournaments` 는 425세션·참여율 77.2% — 이 글 58.5% 보다 19p 위다.)
+          🪶 허브 매핑이 없는 클러스터는 기존 「다음 글」로 폴백한다(회귀 없음). */}
+      {(stickyHub || nextPost) && (
         <div
           /* ★pointer-events-none 필수 — opacity-0은 클릭을 막지 않는다.
              bottom을 62px(탭바 위)로 올린 뒤 숨김 상태(translate-y-full)가 정확히
@@ -848,15 +872,25 @@ export default function BlogPost({
              `bottom`을 62 로 고정해 두면 탭바가 사라진 62px 이 그대로 빈칸이 된다. */
           style={{ bottom: chromeHidden ? 0 : TAB_BAR_HEIGHT, background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)", boxShadow: "0 -4px 24px rgba(var(--gold-dark-rgb),0.35)" }}
         >
-          <Link href={`/blog/${nextPost.slug}`} className="flex items-center justify-between gap-3 px-5 py-4">
-            <div className="min-w-0">
-              <div className="text-[10px] font-bold uppercase tracking-widest mb-0.5" style={{ color: "rgba(13,28,20,0.55)" }}>다음 글 읽기 →</div>
-              <div className="text-sm font-extrabold truncate" style={{ color: "#0d1c14" }}>{nextPost.title}</div>
-            </div>
-            <div className="w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: "rgba(13,28,20,0.15)" }}>
-              <ChevronRight className="w-5 h-5" style={{ color: "#0d1c14" }} />
-            </div>
-          </Link>
+          {stickyHub ? (
+            /* 허브 모드 — 라벨이 짧아 **한 줄**이다. 두 줄짜리 「다음 글」 카드와 모양도 갈린다. */
+            <Link href={stickyHub.href} className="flex items-center justify-between gap-3 px-5 py-3.5">
+              <div className="text-[15px] font-extrabold truncate" style={{ color: "#0d1c14" }}>{stickyHub.label}</div>
+              <div className="w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: "rgba(13,28,20,0.15)" }}>
+                <ChevronRight className="w-5 h-5" style={{ color: "#0d1c14" }} />
+              </div>
+            </Link>
+          ) : (
+            <Link href={`/blog/${nextPost!.slug}`} className="flex items-center justify-between gap-3 px-5 py-4">
+              <div className="min-w-0">
+                <div className="text-[10px] font-bold uppercase tracking-widest mb-0.5" style={{ color: "rgba(13,28,20,0.55)" }}>다음 글 읽기 →</div>
+                <div className="text-sm font-extrabold truncate" style={{ color: "#0d1c14" }}>{nextPost!.title}</div>
+              </div>
+              <div className="w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: "rgba(13,28,20,0.15)" }}>
+                <ChevronRight className="w-5 h-5" style={{ color: "#0d1c14" }} />
+              </div>
+            </Link>
+          )}
         </div>
       )}
 
