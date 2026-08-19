@@ -8,7 +8,7 @@ import { getPostByLocale, secondaryLocalesForSlug, postsForLocale } from "@/lib/
 import IntlBlogPostClient from "@/components/intl-blog-post-client";
 import { extractHeadings } from "@/lib/blog-headings";
 import { renderMarkdown } from "@/lib/render-markdown";
-import { relatedFor, courseNeighbors } from "@/lib/related-posts";
+import { relatedFor, courseNeighbors, linkedSlugsIn } from "@/lib/related-posts";
 import { clustersForLocale } from "@/lib/pillar-clusters";
 
 /** 해당 슬러그의 모든 언어 대체 링크 (ko + 번역된 보조 언어 + x-default) */
@@ -160,7 +160,14 @@ export function IntlBlogArticle({ locale, slug }: { locale: SecondaryLocale; slu
   const nextPost =
     navLink(bySlug(course.nextSlug)) ??
     (idx >= 0 && idx < localePosts.length - 1 ? navLink(localePosts[idx + 1]) : null);
-  const related = relatedFor(post.slug, localePosts, clusters)
+  //   ★2026-08-19: KO와 동일하게 «이미 화면에 있는 목적지»를 뒤로 미룬다(related-posts.ts `avoid`).
+  //   🔴 다국어는 본문 링크가 로케일 경로(`/ja/blog/…`)라 slug만 뽑아야 맞물린다 — linkedSlugsIn이 그렇게 판다.
+  const alreadyOnPage = [
+    ...linkedSlugsIn(post.content),
+    prevPost?.slug,
+    nextPost?.slug,
+  ].filter((s): s is string => !!s);
+  const related = relatedFor(post.slug, localePosts, clusters, 3, alreadyOnPage)
     .map((s) => localePosts.find((p) => p.slug === s))
     .filter((p): p is (typeof localePosts)[number] => !!p)
     .map((p) => ({ slug: p.slug, title: p.title, emoji: p.emoji }));

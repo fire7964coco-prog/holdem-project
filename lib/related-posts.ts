@@ -59,6 +59,31 @@ function activeExcludes(): Set<string> {
 
 type MinimalPost = Pick<Post, "slug" | "category" | "noindex">;
 
+/**
+ * 본문이 **이미 링크한** 내부 글 slug 전부. `relatedFor`의 `avoid`에 넣는 용도다.
+ *
+ * ★왜 (2026-08-19 · 라이브 실측 · `holdem-tournament-how-to-enter`)
+ *   글 말미 세 자리의 목적지가 완전한 포함 관계였다 —
+ *   **이전/다음(2) ⊂ 관련글 카드(3) ⊂ 본문 「관련 글」 표(9)**.
+ *   같은 2편(바이인·vs캐시)이 한 화면에서 **세 번** 나왔고, 그래서 카드 1,057px가
+ *   새 목적지를 **1개**밖에 추가하지 못했다(3장 중 2장이 이전/다음과 같은 링크).
+ *   구간 C에서 가장 큰 덩어리인데 정보 기여가 거의 0이었다.
+ *
+ * 🔴 세 형식을 **모두** 잡아야 한다. 하나만 잡으면 조용히 절반만 걸러진다:
+ *   ① 마크다운 `](/blog/slug)`  ② 원시 HTML `href="/blog/slug"`
+ *   ③ `:::readnext` 블록의 `/blog/slug | 제목 | 이미지` 행
+ *   로케일 경로(`/ja/blog/...`)와 절대 URL(`https://…/blog/...`)도 같은 정규식이 덮는다 —
+ *   경로 조각만 보기 때문이다.
+ */
+export function linkedSlugsIn(content: string): string[] {
+  const out = new Set<string>();
+  // 로케일 세그먼트는 있을 수도(`/ja/blog/…`) 없을 수도(`/blog/…`) 있다. zh-hant 같은
+  // 하이픈 로케일까지 덮되, 뒤에 오는 `blog/`가 앵커라 오탐이 생기지 않는다.
+  const re = /\/(?:[a-z]{2}(?:-[a-z]{2,4})?\/)?blog\/([a-z0-9-]+)/g;
+  for (const m of content.matchAll(re)) out.add(m[1]);
+  return [...out];
+}
+
 /** 클러스터의 «학습 순서» 시퀀스: [허브, ...노드]. group이 있으면 현재 글의 group 멤버를 앞으로. */
 function clusterSequence(cluster: PillarCluster, currentSlug: string): string[] {
   const nodes = [...cluster.nodes];
@@ -78,22 +103,35 @@ function clusterSequence(cluster: PillarCluster, currentSlug: string): string[] 
  * @param slug     현재 글
  * @param posts    그 로케일의 전체 글 배열 (KO는 POSTS, 로케일은 postsForLocale(locale))
  * @param clusters 그 로케일의 클러스터 맵 (KO_CLUSTERS / clustersForLocale(locale)). 빈 배열이면 ③만.
+ * @param avoid    **이미 그 화면에 있는** 목적지 — 본문 링크(`linkedSlugsIn`) + 이전/다음 글.
+ *                 🔴 **하드 제외가 아니라 «뒤로 미루기»다.** 후보가 모자라면 마지막에 도로 채운다 —
+ *                 그래야 최악의 경우가 «지금과 동일»이 되고, 카드가 빈 채로 나가는 회귀가 없다.
+ *                 (이 글은 본문 내부링크만 18개다. 하드 제외로 짰다면 클러스터 후보가 말라
+ *                  ④ 전체 회전까지 떨어져 **카테고리가 다른 글**이 카드에 올라왔을 것이다.)
  */
 export function relatedFor(
   slug: string,
   posts: readonly MinimalPost[],
   clusters: PillarCluster[],
   limit = 3,
+  avoid: readonly string[] = [],
 ): string[] {
   const excluded = activeExcludes();
+  const avoidSet = new Set(avoid);
   const bySlug = new Map(posts.map((p) => [p.slug, p]));
   const seen = new Set<string>([slug]);
   const out: string[] = [];
+  /** avoid에 걸려 미뤄 둔 후보 — 원래 우선순위 그대로. 모자랄 때만 쓴다. */
+  const deferred: string[] = [];
   const push = (s: string | undefined) => {
     if (!s || seen.has(s) || out.length >= limit) return;
     const p = bySlug.get(s);
     if (!p || p.noindex || excluded.has(s)) return;
     seen.add(s);
+    if (avoidSet.has(s)) {
+      deferred.push(s);
+      return;
+    }
     out.push(s);
   };
 
@@ -147,6 +185,13 @@ export function relatedFor(
     for (let k = 1; k <= all.length && out.length < limit; k++) {
       push(all[(Math.max(start, 0) + k) % all.length]?.slug);
     }
+  }
+
+  // ⑤ 그래도 모자라면 avoid로 미뤄 둔 후보를 원래 우선순위대로 되돌린다.
+  //    «중복이라도 있는 편이 빈 슬롯보다 낫다» — avoid는 선호이지 금지가 아니다.
+  for (const s of deferred) {
+    if (out.length >= limit) break;
+    out.push(s);
   }
 
   return out;

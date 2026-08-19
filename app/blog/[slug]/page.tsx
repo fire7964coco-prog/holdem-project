@@ -10,7 +10,7 @@ import BlogPostClient from "./blog-post-client";
 import TournamentGuidePost from "@/components/tournament-guide-post";
 import { extractHeadings } from "@/lib/blog-headings";
 import { renderMarkdown } from "@/lib/render-markdown";
-import { relatedFor, courseNeighbors } from "@/lib/related-posts";
+import { relatedFor, courseNeighbors, linkedSlugsIn } from "@/lib/related-posts";
 import { KO_CLUSTERS } from "@/lib/pillar-clusters";
 
 /**
@@ -338,7 +338,16 @@ export default function Page({ params }: { params: { slug: string } }) {
   //   기존 `filter(같은 category).slice(0,3)`은 배열 앞 3편 고정이라 전략 30편이 전부
   //   같은 3편을 띄웠고, 그 상수 목적지 9편이 내부 유입 125세션/28일을 독식했다.
   //   🔴 카드 셰이프(아래 6필드)는 성능 계약이다 — 필드를 늘리면 플라이트가 다시 분다.
-  const relatedPosts = relatedFor(post.slug, POSTS, KO_CLUSTERS)
+  //   ★2026-08-19: 카드가 **이미 화면에 있는 곳**을 다시 가리키지 않게 `avoid`를 넘긴다.
+  //   실측(`holdem-tournament-how-to-enter`): 이전/다음(2) ⊂ 카드(3) ⊂ 본문 표(9)로
+  //   포함 관계가 완전해서, 카드 1,057px가 새 목적지를 1개만 추가하고 있었다.
+  //   🔴 하드 제외가 아니다(related-posts.ts ⑤) — 후보가 마르면 도로 채운다.
+  const alreadyOnPage = [
+    ...linkedSlugsIn(post.content),
+    prevPost?.slug,
+    nextPost?.slug,
+  ].filter((s): s is string => !!s);
+  const relatedPosts = relatedFor(post.slug, POSTS, KO_CLUSTERS, 3, alreadyOnPage)
     .map((s) => POSTS.find((p) => p.slug === s))
     .filter((p): p is (typeof POSTS)[number] => !!p)
     .map((p) => ({
