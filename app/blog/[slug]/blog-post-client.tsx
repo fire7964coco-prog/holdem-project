@@ -288,7 +288,7 @@ export default function BlogPost({
                 ★단계는 JSON-LD와 **정확히 같은 3단**(홈 → 블로그 → 이 글)으로 맞춘다.
                   카테고리를 한 칸 끼워 넣고 싶어지지만, 카테고리는 URL이 없는 클라이언트 필터라
                   마크업에 없는 단계를 화면에만 만들면 구글 기준으로 불일치다. */}
-            <nav aria-label="현재 위치" className="mb-5">
+            <nav aria-label="현재 위치" className="mb-3">
               <ol className="flex flex-wrap items-center gap-1.5 text-xs text-muted-foreground">
                 <li>
                   <Link href="/" className="hover:text-primary transition-colors">홈</Link>
@@ -308,25 +308,34 @@ export default function BlogPost({
               </ol>
             </nav>
 
-            {/* Article Header */}
-            <header className="mb-10">
-              <div className="flex flex-wrap items-center gap-2 mb-4">
+            {/* Article Header
+                ★2026-08-19 구간A 압축: 첫 화면 844px 안에 «제목 · 메타 · 한 줄 정답 · 본문 시작»이
+                  전부 들어가게 한다. 실측 764px → 목표 438px.
+                🔴 **카테고리 배지는 남긴다.** 판정표는 「빵부스러기·내비와 3중 중복」이라 했지만
+                   실제 빵부스러기는 `홈 › 블로그 › 제목`이라 **카테고리가 없고**, 카테고리를 보여주는
+                   상단 바는 스크롤 0 에서 숨어 있다(top:-63). 첫 화면에서 소속을 알리는 건 이것뿐이다. */}
+            <header className="mb-6">
+              <div className="flex flex-wrap items-center gap-2 mb-3">
                 <span className="text-xs font-bold px-3 py-1 rounded-full bg-primary/15 text-primary border border-primary/25">
                   {post.category}
                 </span>
                 <span className="flex items-center gap-1 text-xs text-muted-foreground">
                   <Clock className="w-3.5 h-3.5" /> {post.readTime} 읽기
                 </span>
-                <time dateTime={post.date} className="text-xs text-muted-foreground">
-                  {post.date} 작성
-                </time>
-                {post.updated && post.updated !== post.date && (
+                {/* ★작성일은 «업데이트일이 없을 때만» 보인다.
+                    둘 다 있으면 독자가 신선도 판단에 쓰는 건 업데이트일 하나뿐이고,
+                    나란히 두면 첫 화면에서 같은 축의 정보가 두 줄을 먹는다. */}
+                {post.updated && post.updated !== post.date ? (
                   <time
                     dateTime={post.updated}
                     className="text-xs px-2 py-0.5 rounded-full bg-primary/10 text-primary border border-primary/20"
-                    title="이 글은 최신 정보로 업데이트되었습니다"
+                    title={`${post.date} 작성 · 최신 정보로 업데이트되었습니다`}
                   >
                     {post.updated} 업데이트
+                  </time>
+                ) : (
+                  <time dateTime={post.date} className="text-xs text-muted-foreground">
+                    {post.date} 작성
                   </time>
                 )}
               </div>
@@ -337,17 +346,24 @@ export default function BlogPost({
                   post.emoji 필드는 지운 게 아니다 — 관련글 카드·피드 카드·로드맵에서
                   작은 아이콘으로 계속 쓰인다. 여기 히어로 자리에서만 뺀다.
                   다국어 글(intl-blog-post-client)에는 원래 이 블록이 없었다. */}
-              <h1 className="text-3xl md:text-4xl font-extrabold text-foreground leading-tight mb-4">
+              <h1 className="text-3xl md:text-4xl font-extrabold text-foreground leading-tight mb-3">
                 {post.title}
               </h1>
-              <p className="text-lg text-muted-foreground leading-relaxed">{post.desc}</p>
+              {/* ★desc 는 「한 줄 정답」이 없을 때만 보인다 (2026-08-19).
+                  둘은 같은 일(글 요약)을 하고 바로 붙어 있어, 첫 화면에서 요약이 두 번 나왔다.
+                  남길 쪽은 tldr 이다 — 그쪽이 **질문에 답하는 형태**이고 Featured Snippet 후보다.
+                  🔴 tldr 이 없는 글에서는 desc 가 유일한 도입부라 반드시 남긴다.
+                  🪶 desc 자체는 그대로다 — `<meta name="description">` 은 영향받지 않는다. */}
+              {!post.tldr && (
+                <p className="text-lg text-muted-foreground leading-relaxed">{post.desc}</p>
+              )}
             </header>
 
             {/* 한 줄 정답 — Featured Snippet 후보 */}
             {post.tldr && (
               <aside
                 aria-label="한 줄 정답"
-                className="mb-8 relative bg-gradient-to-br from-primary/10 via-primary/5 to-transparent border border-primary/30 rounded-2xl p-5 md:p-6"
+                className="mb-6 relative bg-gradient-to-br from-primary/10 via-primary/5 to-transparent border border-primary/30 rounded-2xl p-4 md:p-6"
               >
                 <div className="flex items-start gap-3">
                   <span
