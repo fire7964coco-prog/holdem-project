@@ -13,7 +13,17 @@
 | # | 무엇 | 원문 축어 | 우리가 적었던 것 |
 |---|---|---|---|
 | ① | 톱3 APTC 시트 가치 | «**a USD 10,000 (~KRW 14M) seat**» | ko 본문 note 「**1,393만원 상당**」 = KRW 13,930,000 |
-| ② | 출처 기사 제목 | «Hong Kong's Stephen Pang Wins Record APT Incheon Main Event for KRW 411M (~USD 293K) After 3-Way Deal» | «Stephen Pang Wins APT Incheon Main Event After Wild Heads-Up Battle» — **APT 에 그런 기사가 없다** |
+| ② | 출처 기사 **제목 표기** | h1 = «Hong Kong's Stephen Pang Wins Record APT Incheon Main Event for KRW 411M (~USD 293K) After 3-Way Deal» | «Stephen Pang Wins APT Incheon Main Event After Wild Heads-Up Battle» — **그 제목의 기사는 없다** |
+
+🟢 **②를 오해하지 마라 — 출처 «페이지»는 진짜였고 수치도 전부 맞았다.** 틀린 건 **이름표 하나**다.
+   그 문자열의 출처가 어디인지도 원문에서 나왔다: **기사 본문 문장** «capturing the 24K Gold Lion Trophy
+   after a dramatic **heads-up battle** against China's Shoumin Zhang». 즉 h1 을 복사한 게 아니라
+   **본문 표현으로 제목처럼 생긴 문장을 조립**했다.
+   APT 가 제목을 고친 것도 아니다: 뉴스 목록 링크 69개 중 제목에 `heads-up`·`battle` 이 든 것 **0개** ·
+   그 제목대로면 나왔을 슬러그는 **404**(리다이렉트 없음)이고 살아 있는 슬러그는 현재 h1 과 정확히 일치.
+   ⚠ 단 그 URL 의 **Wayback 스냅샷이 없어** 「08-17에도 같은 제목」을 아카이브로 증명하진 못했다 — 위는 정황이다.
+   **왜 그래도 결함인가**: 독자·검수장이 그 제목으로 검색하면 **아무것도 못 찾는다** →
+   데이터가 멀쩡한데 인용 때문에 「출처를 지어냈다」로 읽힌다.
 
 🔴 **①의 정체는 「근사값을 정밀값으로 승격」이다.** APT 는 시트를 **달러로** 적고 원화는 «~14M» 근사만 준다.
 `13,930,000` 은 **원문 어디에도 없는 우리가 만든 숫자**이고, 하필 **엔트리 수 1,393** 과 같은 자릿수다 —
