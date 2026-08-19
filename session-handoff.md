@@ -11,6 +11,68 @@
 
 ## ▶▶▶▶▶▶▶▶▶ 새 세션 START HERE
 
+# 🔵 다음 세션이 할 일 — **솔버가 보낸 요청 처리** (사장님 지시 2026-08-19)
+
+> **본체는 `/en/solver` 랜딩을 새로 만든다.** 요청서는 여기 있다:
+> `~/Downloads/클로드-프로그램만들기/handoff-to-main-site/요청_EN솔버랜딩_2026-08-19.md`
+> 회신은 **본체 레포**에 쓴다 → `docs/reply-to-solver-2026-08-19.md`
+> (🔴 솔버·검수 폴더에 쓰지 마라. MAILBOX 절 규율.)
+
+## 요청 ① — `/en/solver` 랜딩 신설 (본건)
+
+한국어 `/solver` 랜딩의 영어판. **구조는 한국어판 재사용**이면 충분하다는 게 솔버 쪽 판단이다
+(h1 + H2 9개 + FAQ 17문항 + WebApplication·FAQPage·BreadcrumbList JSON-LD).
+재사용 대상 = `app/solver/page.tsx`(114줄) + `app/solver/solver-client.tsx`(559줄).
+
+- **CTA**: `https://solver.holdemmaster.com/?lang=en` — 솔버가 `?lang=en` 과 언어 기억까지 검증돼 있다.
+  한국어 랜딩처럼 **UTM 없이** 간다(기존 관례).
+- **canonical** `/en/solver` + **ko ↔ en hreflang 상호 링크**(한국어 `/solver` 에도 en 대응 추가).
+- **키워드는 후보만 왔다. 실측·선정은 본체 몫이다** — free gto solver / gto solver free /
+  browser gto solver / free poker solver / gto solver online / postflop solver free.
+  🪶 원본 오픈소스(wasm-postflop) 인지도가 있어 «wasm postflop»·«open source gto solver» 도 후보.
+  🔴 채택 전 자동완성으로 **의도 확인**([[keyword-volume-order-of-magnitude-trap]]).
+- FAQ 중 **한국 특화 문항(삼성 인터넷 경고 등)은 영어권 문맥에 맞게 취사선택** — 위임받았다.
+
+### 🔴 착수 전 확인한 사실 4건 (2026-08-19 · 내가 직접 소스에서 셌다)
+
+| 요청서 주장 | 검증 |
+|---|---|
+| `/en/solver` 라우트 부재 | ✅ **맞다** — `app/en/solver` 없음 |
+| GTO 시리즈 13편이 `posts-en` 에 없음 | ✅ **맞다** — `lib/gto-series.ts` 13개 중 **0개** 존재 |
+| 솔버 앱은 계속 noindex · Play 앱 완전 무료 | (솔버 쪽 결정 사항 — 본체가 검증할 대상 아님) |
+| 「`solver-promo.tsx` 의 `!locale` 조건을 고쳐라」 | 🔴 **어긋난다. 그 파일엔 조건이 없다** |
+
+🔴 **네 번째를 그대로 믿고 `components/solver-promo.tsx` 를 열면 조건을 못 찾는다.**
+그 파일엔 **주석만** 있고(“`/en/solver` 를 열면 그때 이 조건을 함께 고친다”), 실제 게이트는 **호출부 2곳**이다:
+
+```
+components/hub-sidebar.tsx:47              {!locale && <SolverPromo />}
+app/community/community-client.tsx:1430    {!pageLocale && <SolverPromo />}
+app/community/community-client.tsx:1181    <SolverPromo />   ← 조건 없음(KO 홈이라 항상)
+```
+
+🔴 그리고 **`SolverPromo` 는 props 를 하나도 받지 않고 `href="/solver"` 가 하드코딩돼 있다.**
+조건만 풀면 **영어 사이드바가 한국어 페이지로 보낸다.** locale/href 를 받도록 먼저 고쳐야 한다.
+🪶 이 컴포넌트가 한 파일인 이유는 «양쪽에 복사하면 갈라진다»는 이 레포의 반복 사고 때문이다
+(side-rail·하단 탭바에서 두 번 겪었다). **파일을 쪼개지 말고 props 로 분기하라.**
+
+## 요청 ② — GTO 시리즈 13편 영어판 (**후순위** · 솔버도 「랜딩이 먼저」라고 명시)
+
+솔버 영어 화면의 해설 링크가 **한국어 글로 간다** — 영어에서 양방향 연결이 끊겨 있다.
+`posts-en` 파이프라인(현 43편)으로 번역·발행하면 롱테일 + 역링크가 영어에서도 성립한다.
+🔴 착수하면 [[translation-local-research-first]]·[[translation-is-contextual-reposting]] 순서를 지켜라 —
+직역이 아니라 현지 맥락 재저작이고, **§13(카드·확률·계산)만 불변**이다.
+🪶 `lib/gto-series.ts` 배열에 **한 줄만** 넣으면 러닝맵·`/solver` 목차·시리즈 내비가 전부 따라온다.
+🔴 `lib/related-posts.ts` 의 `inGtoSeries` 가드는 **지우지 마라**(「13×13 링크 금지」가 깨진다).
+
+## 🪶 솔버 쪽이 이후에 할 일 (요청 아님 · 예고)
+
+`/en/solver` 가 열리면 솔버가 후속 처리한다 — 소개 화면·README 의 영어 링크를 `/en/solver` 로 교체,
+영어 화면의 해설 링크를 영어판 글로 전환(요청 ②가 발행되는 대로).
+→ **본체가 랜딩을 열면 회신에 URL 을 명시해 줘야** 그쪽이 움직인다.
+
+---
+
 ## 🟢 2026-08-19 — 레이아웃 트랙 **배포 완료** (`f9f4260f`). 다음은 «4주 뒤 측정»
 
 > ✅ `layout/mobile-fold` 커밋 8개를 main 에 머지·배포했다. 브랜치는 남겨 뒀다(롤백용).
@@ -164,6 +226,7 @@
 | **검수장 → 본체** (수신) | `~/Downloads/홀덤검수/reports/발신-본체-*.md` + 지시서 `fix-handoff-*.md` | 🔴 **검수 폴더는 읽기 전용.** 절대 수정하지 마라. **착수 전 `git -C ~/Downloads/홀덤검수 log --oneline -5`로 최신인지 확인** |
 | **본체 → 검수장** (발신) | `docs/reply-to-review-<날짜>.md` | 본체 레포에 쓴다. 검수 폴더에 쓰지 마라 |
 | **솔버 → 본체** (수신) | `~/Downloads/클로드-프로그램만들기/handoff-to-main-site/` | 🔴 「배포 대기 중」을 믿지 말고 **라이브 번들을 먼저 확인**하라 |
+| ↳ 🆕 **미처리 1건** | `요청_EN솔버랜딩_2026-08-19.md` (08-19 17:09 수신) | **`/en/solver` 랜딩 신설.** 상세·검증은 **이 파일 최상단**에 있다 — 여기 두 번 적지 않는다 |
 | **본체 → 솔버** (발신) | `docs/reply-to-solver-<날짜>.md` | 회신 경로가 없어 **낡은 요청서가 두 번 왔다**(2026-08-15 신설 경위) |
 
 > 🆕 **08-17부터 우편함이 파일로 바뀌었다** — `홀덤검수/mailbox/MAILBOX.md`가 **유일한 큐**다.
