@@ -1013,6 +1013,25 @@ const NON_COMPARABLE_CELL = new RegExp([
 /** 대회 가이드 slug(연도 포함) — 서로 다른 대회의 수치를 대조하는 건 의미가 없다. */
 const isEventGuide = (s) => /\b(19|20)\d{2}\b/.test(s);
 
+/**
+ * GTO 솔버 시리즈 — **편마다 «다른 보드»의 해설**이라 액션 빈도·등급 비중이 서로 다른 것이 정상이다.
+ * 대회 가이드끼리 엔트리·상금이 다른 것과 같은 성격이라 같은 규율을 적용한다.
+ *
+ * 🔴 2026-08-19 신설 — ②편(K83) 발행 직후 C1이 🔴 6건을 냈는데 **전부 오탐**이었다:
+ *    「"Check" Frequency: k-high=99.8% / a-high=98.2%」 — 두 글은 보드가 다르다(K♠8♦3♣ vs A♥7♦2♣).
+ *    표 이름("Big blind's first action")이 같아 형제로 짝지어진 것뿐이다.
+ * 🔴 **시리즈 «내부» 대조를 포기하는 게 아니다** — 편 간 수치 정합은 `npm run check:gto` 가
+ *    §4-B 확정표를 정본으로 따로 본다. 여기서는 «다른 스팟끼리 값이 같아야 한다»는 잘못된 전제만 끈다.
+ * 단일 출처 = `lib/gto-series.ts` (슬러그를 두 벌로 적지 않는다).
+ */
+const GTO_SPOT_SLUGS = (() => {
+  try {
+    const t = fs.readFileSync(path.join(process.cwd(), 'lib/gto-series.ts'), 'utf8');
+    return new Set([...t.matchAll(/slug:\s*"([^"]+)"/g)].map((m) => m[1]));
+  } catch { return new Set(); }
+})();
+const isGtoSpot = (s) => GTO_SPOT_SLUGS.has(s);
+
 /** 열 이름 비교 — 3-gram으로는 표기차를 못 잡는다("플럽 승률 (×4)" ↔ "플랍 승률(×4)" = 0.25). */
 const keyOf = (h) => (h ?? '').replace(/[\s()（）[\]{}·,:/\-—]/g, '');
 function nearName(x, y) {
@@ -1058,6 +1077,8 @@ function auditClusterTables(cluster, slugs, bySlug, stats, focus = null) {
       if (focus && A.slug !== focus && B.slug !== focus) continue;
       // 서로 다른 대회 가이드끼리는 엔트리·상금·일정이 다른 게 정상이다.
       if (isEventGuide(A.slug) && isEventGuide(B.slug)) continue;
+      // 서로 다른 GTO 스팟끼리는 액션 빈도·등급 비중이 다른 게 정상이다(위 isGtoSpot 주석).
+      if (isGtoSpot(A.slug) && isGtoSpot(B.slug)) continue;
       const mapB = new Map(B.rows.map((r) => [r[0], r]));
       const rowOverlap = A.rows.filter((r) => r[0] && mapB.has(r[0])).length;
       // ★짝짓기 신호 2개 — 어느 하나만 성립해도 대조 대상이다.
