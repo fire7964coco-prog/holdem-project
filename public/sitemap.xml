@@ -75,7 +75,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/solver</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -442,7 +442,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/en</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-08-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/" />
@@ -1410,6 +1410,9 @@
     <lastmod>2026-08-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/a-high-board-cbet" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/a-high-board-cbet" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/a-high-board-cbet" />
   </url>
 
   <url>
@@ -2062,7 +2065,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/wsop-2026-tournament-guide" />
   </url>
 
-  <!-- 다국어 블로그 포스트 (458편) -->
+  <!-- 다국어 블로그 포스트 (459편) -->
+
+  <url>
+    <loc>https://www.holdemmaster.com/en/blog/a-high-board-cbet</loc>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/a-high-board-cbet" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/a-high-board-cbet" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/a-high-board-cbet" />
+  </url>
 
   <url>
     <loc>https://www.holdemmaster.com/en/blog/apt-incheon-2026-guide</loc>

@@ -144,16 +144,16 @@ const COMPARE: string[][] = [
 /**
  * 교육 예제 — 앱의 영어 라벨을 그대로 옮겼다(2026-08-19 축어).
  * 🔴 **개수를 문장에 박지 않는다**(CLAUDE.md §1) — 아래 배열에서 세어 쓴다.
- * 🪶 한국어판은 각 스팟이 해설 글로 링크되지만, **영어판 13편은 아직 발행 전이라 링크가 없다.**
- *    `lib/posts-en/`에 slug가 생기면 여기에 `slug`를 채워 링크를 살린다(핸드오프 T24 ②).
- *    없는 링크를 미리 걸지 않는다 — 404는 색인에 그대로 남는다.
+ * 🪶 각 스팟의 해설 글은 **발행된 것부터** 링크한다. `slug`가 채워진 행만 링크가 되고
+ *    나머지는 이름·요약만 남는다 — **없는 링크를 미리 걸지 않는다**(404는 색인에 남는다).
+ *    영어판을 발행할 때마다 그 행에 `slug`를 채우면 된다(핸드오프 T24 ②).
  */
 const SPOT_GROUPS = [
   {
     label: "Single Raised Pot — BTN vs BB",
     cond: "OOP: BB (caller) · IP: BTN (opener) · Pot 5.5bb · Stack 97.5bb",
     items: [
-      { board: "A♥7♦2♣", name: "Dry Ace-High Board", note: "The textbook range-advantage flop — the ace smashes the opener's range" },
+      { board: "A♥7♦2♣", name: "Dry Ace-High Board", slug: "a-high-board-cbet", note: "The textbook range-advantage flop — the ace smashes the opener's range" },
       { board: "K♠8♦3♣", name: "Dry King-High Board", note: "Still favors the opener, but checks creep up. Compare it with the ace" },
       { board: "Q♠J♦T♠", name: "Connected Broadway, Two-Tone", note: "Both ranges connect hard; big bets and check-raises come alive" },
       { board: "9♥8♥7♣", name: "Middle Connected, Two-Tone", note: "The caller-friendly texture where \"always c-bet\" falls apart" },
@@ -532,14 +532,26 @@ export default function SolverClientEn() {
             <p className="text-sm font-semibold">{g.label}</p>
             <p className="text-xs text-muted-foreground">{g.cond}</p>
             <ul className="mt-2 space-y-1.5">
-              {g.items.map((s) => (
-                <li key={s.board} className="text-sm">
-                  <span className="font-semibold">{s.board}</span>
-                  <span className="mx-1.5 text-muted-foreground">·</span>
-                  <span className="font-medium">{s.name}</span>{" "}
-                  <span className="text-muted-foreground">— {s.note}</span>
-                </li>
-              ))}
+              {g.items.map((s) => {
+                const item = s as { board: string; name: string; note: string; slug?: string };
+                return (
+                  <li key={item.board} className="text-sm">
+                    <span className="font-semibold">{item.board}</span>
+                    <span className="mx-1.5 text-muted-foreground">·</span>
+                    {item.slug ? (
+                      <Link
+                        href={`/en/blog/${item.slug}`}
+                        className="font-semibold text-primary hover:underline"
+                      >
+                        {item.name}
+                      </Link>
+                    ) : (
+                      <span className="font-medium">{item.name}</span>
+                    )}{" "}
+                    <span className="text-muted-foreground">— {item.note}</span>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         ))}
