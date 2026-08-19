@@ -691,6 +691,37 @@ a.brush-link:hover { filter: brightness(0.9); }
   }
 }
 
+/* FAQ 아코디언 (2026-08-19 · 구간C)
+   ★왜: FAQ 10문항이 펼친 채로 2,628px = 모바일 3.1화면이었다. 글이 끝난 뒤 최대 덩어리다.
+   🔴 **삭제가 아니라 접기다.** 답변은 DOM 에 그대로 남는다 —
+      ① 색인 자산이고 ② FAQPage JSON-LD 는 별도 생성이라 화면 렌더와 무관하다
+      ③ 문항 제목 10개는 계속 보이므로 «자기 질문 찾기» 스캔은 그대로 된다.
+   🪶 `<summary>` 기본 삼각형은 의사요소라 인라인 스타일로 못 지운다 — 그래서 여기 있다. */
+.blog-faq > summary {
+  list-style: none;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+.blog-faq > summary::-webkit-details-marker {
+  display: none;
+}
+.blog-faq > summary::marker {
+  content: "";
+}
+.blog-faq[open] > summary {
+  border-bottom-color: rgba(234, 88, 12, 0.3);
+}
+.blog-faq-chevron {
+  transition: transform 0.2s ease;
+}
+.blog-faq[open] .blog-faq-chevron {
+  transform: rotate(180deg);
+}
+/* 접힌 카드는 서로 붙어 목록처럼 읽히는 게 낫다 — 펼친 카드만 간격을 준다 */
+.blog-faq {
+  margin-bottom: 8px;
+}
+
 /* :::compare / :::handtable 모바일 가로 스크롤 컨테이너 */
 .blog-scroll-x {
   overflow-x: auto;

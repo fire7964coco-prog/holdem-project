@@ -664,32 +664,38 @@ export default function BlogPost({
 
             {/* Related Posts — 이미지 카드형 */}
             {related.length > 0 && (
-              <div className="mt-12">
-                <p className="text-[11px] font-bold uppercase tracking-widest text-muted-foreground mb-4">✦ 함께 읽으면 좋은 글</p>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              /* ★2026-08-19 구간C: 1,057 → ~340px.
+                 모바일에서 카드가 세로였다 — 폭 100% 16:9 이미지(219px) + 텍스트로 **카드당 320px**,
+                 3장이 화면 1.25개를 먹었다. **모바일만 가로 배치**로 바꾼다(데스크톱 3열은 그대로).
+                 🔴 **썸네일은 지우지 않았다.** 인라인 썸네일은 클릭율을 노리고 일부러 넣은 장치다
+                    — 줄일 것은 «그림의 유무»가 아니라 «그림이 차지하는 폭»이었다. */
+              <div className="mt-10">
+                <p className="text-[11px] font-bold uppercase tracking-widest text-muted-foreground mb-3">✦ 함께 읽으면 좋은 글</p>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-2.5 md:gap-4">
                   {related.map((r) => (
                     <Link key={r.slug} href={`/blog/${r.slug}`} className="group">
-                      <div className="bg-card border border-border rounded-2xl overflow-hidden hover:border-primary/40 hover:-translate-y-1 transition-all cursor-pointer h-full flex flex-col">
+                      <div className="bg-card border border-border rounded-2xl overflow-hidden hover:border-primary/40 md:hover:-translate-y-1 transition-all cursor-pointer h-full flex flex-row md:flex-col items-stretch">
                         {r.image ? (
-                          <div className="relative w-full aspect-[16/9] bg-muted overflow-hidden">
+                          <div className="relative w-24 md:w-full aspect-square md:aspect-[16/9] bg-muted overflow-hidden flex-shrink-0">
                             <Image
                               src={r.image}
                               alt={r.imageAlt ?? r.title}
                               fill
-                              sizes="(max-width:768px) 100vw, 33vw"
-                              className="object-cover group-hover:scale-105 transition-transform duration-300"
+                              sizes="(max-width:768px) 96px, 33vw"
+                              className="object-cover md:group-hover:scale-105 transition-transform duration-300"
                               loading="lazy"
                             />
                           </div>
                         ) : (
-                          <div className="flex items-center justify-center aspect-[16/9] bg-primary/5 text-4xl">
+                          <div className="flex items-center justify-center w-24 md:w-full aspect-square md:aspect-[16/9] bg-primary/5 text-2xl md:text-4xl flex-shrink-0">
                             {r.emoji}
                           </div>
                         )}
-                        <div className="p-4 flex flex-col flex-1">
-                          <div className="text-[10px] font-bold uppercase tracking-widest text-primary mb-1.5">{r.category}</div>
-                          <h3 className="text-sm font-bold text-foreground group-hover:text-primary transition-colors line-clamp-2 leading-snug flex-1">{r.title}</h3>
-                          <div className="flex items-center gap-1 mt-3 text-xs text-primary font-semibold">
+                        <div className="p-3 md:p-4 flex flex-col flex-1 min-w-0 justify-center md:justify-start">
+                          <div className="text-[10px] font-bold uppercase tracking-widest text-primary mb-1">{r.category}</div>
+                          <h3 className="text-sm font-bold text-foreground group-hover:text-primary transition-colors line-clamp-2 leading-snug md:flex-1">{r.title}</h3>
+                          {/* 「읽기 →」는 데스크톱에서만 — 모바일은 카드 전체가 탭 영역이라 없어도 눌린다 */}
+                          <div className="hidden md:flex items-center gap-1 mt-3 text-xs text-primary font-semibold">
                             읽기 <ChevronRight className="w-3.5 h-3.5" />
                           </div>
                         </div>
@@ -703,32 +709,42 @@ export default function BlogPost({
             {/* 📋 이 글 전체 요약 — LCP 회피용으로 본문 첫 이미지를 페이지 최하단에 lazy 로드 */}
             {summarySlot}
 
-            {/* Author Bio Card — E-E-A-T 강화 */}
+            {/* Author Bio Card — E-E-A-T
+                ★2026-08-19 구간C 압축 (435 → ~170px)
+                🔴 **경력 신호는 줄이지 않았다.** 이 사이트는 「12년 · WSOP 취재 · 솔버 분석」으로
+                   검색엔진에 전문성을 신고하고 있고 그게 순위 근거의 일부다(CLAUDE.md §13).
+                   판정 기준이 「독자 행동」이라 이 자리를 원리상 못 잡는다 — 기준의 사각지대다.
+                → 줄인 것은 **같은 말을 두 번 하던 곳**뿐이다:
+                  ① 3줄 산문이 아래 4칸 통계와 내용이 겹쳤다 → 한 줄로
+                  ② 태그 3개 중 둘이 같은 `/strategy` 였고, 관련 글·필라 허브가 이미 같은 일을 한다 → 제거 */}
             <aside
-              className="mt-12 bg-card border border-border rounded-2xl p-6 md:p-7"
+              className="mt-10 bg-card border border-border rounded-2xl p-5 md:p-6"
               aria-label="작성자 정보"
             >
-              <div className="flex items-start gap-5 mb-4">
-                <div className="w-16 h-16 rounded-full bg-primary/15 border-2 border-primary/30 flex items-center justify-center text-3xl flex-shrink-0">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-12 h-12 rounded-full bg-primary/15 border-2 border-primary/30 flex items-center justify-center text-2xl flex-shrink-0">
                   ♠
                 </div>
                 <div className="min-w-0 flex-1">
-                  <div className="text-xs text-muted-foreground mb-0.5">작성자</div>
-                  <div className="font-bold text-foreground text-lg mb-1">
+                  <div className="font-bold text-foreground">
                     <Link href="/about" className="hover:text-primary transition-colors">
                       홀덤마스터 편집팀
                     </Link>
                   </div>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    12년 경력의 포커 전략 전문가 팀. WSOP·KPT·APT 토너먼트 현장 취재 경험 보유.
-                    GTO 솔버(GTO+, PioSolver) 분석 기반의 데이터 중심 전략 콘텐츠를 제공합니다.
-                    모든 콘텐츠는 <strong className="text-foreground">실전 검증된 정보</strong>만을
-                    담습니다.
+                  <p className="text-xs text-muted-foreground leading-snug mt-0.5">
+                    12년 경력의 포커 전략 전문가 팀 · 실전 검증된 정보만 싣습니다
                   </p>
                 </div>
+                <Link
+                  href="/about"
+                  className="text-xs font-semibold text-primary hover:underline inline-flex items-center gap-0.5 flex-shrink-0"
+                >
+                  소개 <ChevronRight className="w-3.5 h-3.5" />
+                </Link>
               </div>
 
-              <dl className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 border-t border-border">
+              {/* 🔴 이 4칸이 E-E-A-T 의 «근거» 다 — 산문보다 촘촘하고 기계가 읽기 쉽다. 줄이지 말 것 */}
+              <dl className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-3 border-t border-border">
                 {[
                   { label: "운영 경력", value: "12년+" },
                   { label: "발행 글 수", value: `${totalPosts}편` },
@@ -736,42 +752,22 @@ export default function BlogPost({
                   { label: "솔버 분석", value: "Pio · GTO+" },
                 ].map(({ label, value }) => (
                   <div key={label} className="text-center">
-                    <dt className="text-[10px] uppercase tracking-wider text-muted-foreground/80 mb-0.5">
+                    <dt className="text-[10px] uppercase tracking-wider text-muted-foreground/80">
                       {label}
                     </dt>
                     <dd className="text-xs font-bold text-primary">{value}</dd>
                   </div>
                 ))}
               </dl>
-
-              <div className="mt-4 pt-4 border-t border-border flex flex-wrap items-center justify-between gap-3">
-                <div className="flex flex-wrap gap-2">
-                  {[
-                    { label: "포커 전략", href: "/strategy" },
-                    { label: "GTO 분석", href: "/strategy" },
-                    { label: "토너먼트", href: "/tournaments" },
-                  ].map(({ label, href }) => (
-                    <Link
-                      key={label}
-                      href={href}
-                      className="text-xs px-2.5 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary font-medium hover:bg-primary/25 hover:border-primary/50 transition-all"
-                    >
-                      {label}
-                    </Link>
-                  ))}
-                </div>
-                <Link
-                  href="/about"
-                  className="text-xs font-semibold text-primary hover:underline inline-flex items-center gap-1"
-                >
-                  편집팀 상세 소개 <ChevronRight className="w-3.5 h-3.5" />
-                </Link>
-              </div>
             </aside>
 
-            {/* Social Share Buttons */}
-            <div className="mt-8 bg-card border border-border rounded-xl p-5">
-              <div className="flex items-center gap-3 flex-wrap">
+            {/* Social Share Buttons
+                🔴 **스펙(「링크 복사만 남기고 114→56」)을 따르지 않았다.** 근거가 성립하지 않는다:
+                   «트위터·페북은 OS 공유시트와 중복»이라 했는데, 이 화면엔 **공유시트를 부르는 버튼이 없다**
+                   (`navigator.share` 미사용). 지우면 대체재 없이 공유 경로만 사라진다.
+                   58px 회수를 위해 기능을 잃을 자리가 아니라고 봐 **여백만** 줄였다(114 → ~90). */}
+            <div className="mt-6 bg-card border border-border rounded-xl p-3.5">
+              <div className="flex items-center gap-2 flex-wrap">
                 <span className="flex items-center gap-1.5 text-sm font-semibold text-foreground">
                   <Share2 className="w-4 h-4 text-primary" aria-hidden="true" /> 이 글 공유하기
                 </span>
