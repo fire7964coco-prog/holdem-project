@@ -216,6 +216,24 @@ export default function HubShell({
             </span>
           </Link>
 
+          {/* ★모바일 «현재 위치» (2026-08-19 · 사장님 지적)
+              데스크톱은 아래 `hidden lg:flex` nav 안의 `{title}` 이 언더라인으로 현재 위치를 표시한다.
+              그런데 **모바일에서는 그 nav 가 사라져** 스크롤을 내리면 sticky 헤더에 「홀덤마스터」만 남았다
+              — 블로그 상단 바는 스크롤 중에도 「토너먼트 Hub」로 맥락을 유지하는데 허브는 못 했다.
+              빵부스러기는 sticky 밖(스크롤로 지나감)이라 이 자리를 대신할 수 없다.
+
+              🔴 **브랜드 링크 «밖»에 둔다.** 안에 넣으면 「대회 일정」을 눌렀을 때 홈으로 가서
+                 빵부스러기의 «홈» 단계와 뜻이 겹치고 어긋난다. 여기는 링크가 아니라 **표시**다.
+              🪶 블로그 상단 바를 그대로 옮기지는 않았다 — 거기 든 「목차」는 긴 글을 위한 장치라
+                 목록 페이지에선 무의미하고, 「바로가기」는 허브의 가로 칩 바가 이미 하는 일이다. */}
+          <span
+            className="lg:hidden flex items-center gap-2 min-w-0 text-[13px] font-semibold truncate"
+            style={{ color: INK, fontFamily: FONT_SERIF }}
+          >
+            <span aria-hidden="true" style={{ color: MUTED, opacity: 0.6 }}>·</span>
+            <span className="truncate">{title}</span>
+          </span>
+
           {/* 상단 탭 — 데스크톱만. 모바일은 하단 탭바가 같은 역할을 한다. */}
           <nav className="hidden lg:flex items-center gap-6">
             {navTabs(base, locale).map((n) => (
