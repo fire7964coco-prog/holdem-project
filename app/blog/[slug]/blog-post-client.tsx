@@ -537,6 +537,12 @@ export default function BlogPost({
                       { href: "/blog#search",   Icon: Search,     label: "글 검색",       desc: `${totalPosts}편에서 주제 찾기` },
                       { href: "/tournaments",   Icon: Trophy,     label: "대회 일정",     desc: "국내외 홀덤 대회" },
                       { href: "/calculator",    Icon: Calculator, label: "계산기",        desc: "아웃츠·팟오즈·ICM" },
+                      // ★GTO 솔버 (2026-08-19 · 사장님 지적: 「계산기는 있는데 GTO 바로가기가 없다」)
+                      //   솔버 CTA 는 **데스크톱 사이드바에만** 있었고, 그마저 GTO 시리즈 글에서만 떴다
+                      //   (`showMinimap` 조건). 모바일에서 닿을 길이 아예 없었다.
+                      //   🪶 문구는 지어내지 않았다 — 같은 파일 아래 `CalcCtaButton` 의 것을 그대로 쓴다
+                      //      (그 주석대로 `app/solver/page.tsx` 의 TITLE·DESCRIPTION 에서 딴 값이다).
+                      { href: "/solver",        Icon: BrainCircuit, label: "GTO 솔버",    desc: "13×13 GTO 표·EV 즉시" },
                       { href: "/win-rate-quiz", Icon: TrendingUp, label: "승률 시뮬레이터", desc: "핸드별 승률 확인" },
                       { href: "/hand-chart",    Icon: LayoutGrid, label: "핸드 차트",     desc: "포지션별 오픈 범위" },
                       // ⚠ 여기에 «/hands»를 넣지 마라 (2026-08-13에 넣었다가 같은 날 뺐다 — footer도 동일).
