@@ -67,6 +67,16 @@ export const SOLVER_FAQ_EN: FaqItem[] = [
     a: "Mostly in where the calculation happens. Solution libraries such as GTO Wizard let you browse spots that were solved in advance, which is fast and covers preflop. Desktop solvers such as PioSOLVER are installed on a Windows PC and solve locally. This one solves in your browser, so you can rewrite ranges and trees freely with nothing to install.",
   },
   {
+    /**
+     * ★2026-08-19 추가 — lowfruits 실측에서 이 문장 그대로가 winnable로 잡혔다:
+     *   `which gto solver is better, piosolver or gtowizard`(WS3 2 · **LowDA 5**).
+     * 🔴 **어느 쪽이 낫다고 판정하지 않는다.** 우리가 파는 물건이 있어 공정한 심판이 될 수 없고,
+     *   가격·기능은 1차 출처로 확인되지 않는다(§12-B). «무엇을 하려느냐»로 되돌려 준다.
+     */
+    q: "Which GTO solver is better, PioSOLVER or GTO Wizard?",
+    a: "They answer different questions, so the honest answer is what you want to do. A solution library is faster to browse and covers preflop, which suits studying standard spots. An installed desktop solver handles bigger trees than a browser can. If you want to solve your own postflop spot right now without paying or installing anything, that is what this solver is for — and you can compare its answer with either of them.",
+  },
+  {
     q: "Does it work on Mac, Linux or mobile?",
     a: "Yes — any modern browser works, which is the practical advantage over Windows-only desktop solvers. One caveat: on iOS and Safari, browser limits force single-threaded solving, so custom solves are slow there. On phones, use the pre-solved Study Spots and the GTO Trainer, and run your own solves on a desktop browser.",
   },
@@ -99,7 +109,8 @@ export const SOLVER_FAQ_EN: FaqItem[] = [
     a: "It does not mean malware was found. Samsung Internet builds its own install package, and that package is not yet on Google's trusted list, so the browser shows a warning. Installing through Chrome avoids it. To continue in Samsung Internet, tap More details on the warning and choose Install anyway.",
   },
   {
-    q: "Is the solver open source?",
-    a: "Yes. It is based on WASM Postflop by Wataru Inariba, released under AGPL-3.0, and HoldemMaster's localized and enhanced version publishes its full modified source under the same license. The original project is no longer being updated, which is part of why this version is maintained separately.",
+    /** ★2026-08-19 — `gto poker open source` WS10 7·**LowDA 3** · `wasm postflop` LowDA 3. */
+    q: "Is this an open source GTO poker solver?",
+    a: "Yes. It is based on WASM Postflop by Wataru Inariba, released under AGPL-3.0, and HoldemMaster's localized and enhanced version publishes its full modified source under the same license. The original project states on its own site that it will no longer be updated, which is part of why this version is maintained separately.",
   },
 ];

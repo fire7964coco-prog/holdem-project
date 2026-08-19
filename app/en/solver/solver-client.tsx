@@ -275,11 +275,9 @@ export default function SolverClientEn() {
           computes the answer for the exact spot you are in.
         </p>
         <p className="mt-3 text-sm text-muted-foreground">
-          The property that surprises most players is that{" "}
-          <strong className="text-foreground">GTO mixes actions with the same hand</strong> — betting
-          it 70% of the time and checking 30% — so your line cannot be read. Output is therefore a
-          frequency table, not a single instruction. A solver tells you{" "}
-          <em>how often</em> to do something, not <em>what</em> to do.
+          It is not a chart, and it is not a trainer with someone&apos;s opinions baked in. Give it a
+          different flop and it gives you a different answer, because it recomputes rather than
+          recalls.
         </p>
         {/*
           «부르는 이름» 문단 — 같은 것을 가리키는 검색어가 실제로 갈려 있다(실측):
@@ -303,6 +301,31 @@ export default function SolverClientEn() {
             ),
           ])}
         />
+      </section>
+
+      {/* ── GTO 뜻 ───────────────────────────────────────────────────── */}
+      {/*
+        ★2026-08-19 H2 신설 — lowfruits 실측: `gto poker meaning` **390**(WS3 2·LowDA 22) ·
+        `gto poker what is it` · `gto poker explained` · `gto poker definition` · `gto poker term` ·
+        `gto poker full form`이 전부 winnable이다. 종전엔 이 답이 「What is a GTO solver?」 문단
+        안에 묻혀 있어 **질문 형태와 매치되지 않았다.** 근거 = `docs/keyword-bank/en-gto-series.md` §2.
+      */}
+      <section className="mt-12">
+        <h2 className="text-xl font-bold">What does GTO mean in poker?</h2>
+        <p className="mt-2 text-sm text-muted-foreground">
+          GTO stands for <strong className="text-foreground">Game Theory Optimal</strong>: a strategy
+          that cannot be exploited in the long run, no matter how the other player adjusts. It is a
+          baseline rather than a maximum — it does not try to punish a bad opponent, it makes sure a
+          good one cannot punish you.
+        </p>
+        <p className="mt-3 text-sm text-muted-foreground">
+          The property that surprises most players is that{" "}
+          <strong className="text-foreground">GTO mixes actions with the same hand</strong> — betting
+          it 70% of the time and checking 30% — so your line cannot be read. Output is therefore a
+          frequency table, not a single instruction. A solver tells you <em>how often</em> to do
+          something, not <em>what</em> to do, and that is why a study session ends with percentages
+          rather than rules.
+        </p>
       </section>
 
       {/* ── 사용법 5단계 ─────────────────────────────────────────────── */}
@@ -400,11 +423,58 @@ export default function SolverClientEn() {
         </div>
       </section>
 
-      {/* ── GTO 트레이너 ─────────────────────────────────────────────── */}
+      {/* ── 포스트플랍 범위 ──────────────────────────────────────────── */}
+      {/*
+        ★2026-08-19 H2 신설 — `poker postflop *` 444개 중 winnable 68개가 나왔고
+        **LowDA가 한 자리**다: `poker postflop solver free`·`~ online free` **DA1** ·
+        `poker postflop trainer` DA7 · `poker postflop ranges`(WS3 3·DA16) ·
+        `poker postflop strategy` 30(DA21) · `how to study postflop`(WS10 7).
+        🔴 그런데 `poker postflop charts`류는 **`/en/hand-chart` 축과 겹친다** — 본문 언급만 하고
+           제목·H2로는 조준하지 않는다(카니발 방지 · 뱅크 §5).
+      */}
       <section className="mt-12">
-        <h2 className="text-xl font-bold">How does the GTO Trainer grade you?</h2>
+        <h2 className="text-xl font-bold">Why postflop only — and what does that cover?</h2>
         <p className="mt-2 text-sm text-muted-foreground">
-          Not right or wrong, but by <strong className="text-foreground">EV loss</strong>. Because GTO
+          This is a <strong className="text-foreground">postflop solver</strong>: it starts once the
+          flop is down and solves the rest of the hand for two players. Preflop is deliberately left
+          out, because preflop ranges are a different kind of problem — they are stable enough to read
+          off a chart, while postflop changes with every board.
+        </p>
+        <p className="mt-3 text-sm text-muted-foreground">
+          Inside that boundary nothing is held back. You set both{" "}
+          <strong className="text-foreground">postflop ranges</strong>, any flop, turn and river, the
+          starting pot and effective stack, and a full bet-sizing tree per street. So the postflop
+          strategy you get is for your game, not a generic one — including rake, which most study
+          material quietly ignores.
+        </p>
+        <p className="mt-3 text-sm text-muted-foreground">
+          If you want the preflop half, that lives in the{" "}
+          <Link href="/en/hand-chart" className="font-semibold text-primary hover:underline">
+            starting hand chart
+          </Link>
+          . The two together cover a hand end to end: the chart decides what you open with, the solver
+          decides what happens after the flop.
+        </p>
+      </section>
+
+      {/* ── GTO 트레이너 ─────────────────────────────────────────────── */}
+      {/*
+        ★2026-08-19 H2 재조준 — `gto poker trainer` 70이 **LowDA 3**, `gto poker practice free`와
+        `gto poker software free`가 **LowDA 1**이다. 종전 H2는 「How does the GTO Trainer grade you?」로
+        채점만 물었다 — 검색자가 치는 형태(«free gto poker trainer»)와 어긋나 있었다.
+      */}
+      <section className="mt-12">
+        <h2 className="text-xl font-bold">
+          Is there a free GTO poker trainer? How does it grade you?
+        </h2>
+        <p className="mt-2 text-sm text-muted-foreground">
+          Yes — the GTO Trainer is built into the same free software, with no separate signup. It
+          turns the solved spots into practice: you are dealt a hand at a real decision point and pick
+          an action, and it grades you.
+        </p>
+        <p className="mt-3 text-sm text-muted-foreground">
+          Grading is not right or wrong, but by{" "}
+          <strong className="text-foreground">EV loss</strong>. Because GTO
           mixes actions, picking the lower-frequency option is not automatically a mistake — what
           matters is how much expected value the choice gave up. Pick an action and the trainer shows
           every action&apos;s frequency and EV alongside the cost of yours.
