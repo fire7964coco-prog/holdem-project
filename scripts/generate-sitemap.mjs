@@ -105,6 +105,14 @@ const STATIC_ROUTES = [
   { path: "/en/calculator", priority: "0.7", changefreq: "monthly" },
   { path: "/en/quiz", priority: "0.6", changefreq: "monthly" },
   { path: "/en/ranking", priority: "0.7", changefreq: "weekly" },
+  /**
+   * ★2026-08-19 신설 — `/en/solver`. 한국어 `/solver`(0.9)의 영어판이고 같은 구조다.
+   *   robots 확인: 산출물 `.next/server/app/en/solver.html`의 meta가 **index, follow**다
+   *   (위 ★★ 절차대로 확인했다). 솔버 본체는 계속 noindex이므로 검색은 이 랜딩이 전담한다.
+   *   🪶 우선순위를 한국어와 같은 0.9로 두지 않은 이유는 **영어 도구 페이지의 기존 관례**(0.7)를
+   *      따랐기 때문이다 — 색인 여부와 무관한 상대 가중치라 이 자리에서 예외를 만들지 않았다.
+   */
+  { path: "/en/solver", priority: "0.7", changefreq: "monthly" },
 
   /**
    * ★`/holdem-practice` 누락 복구 (2026-08-04). 색인 가능(index, follow)하고 좌측 레일에도

@@ -31,7 +31,15 @@ export const metadata: Metadata = {
   //   즉 «한국어로 된 GTO 도구»를 찾는 수요가 실재하는 자리다.
   title: TITLE,
   description: DESCRIPTION,
-  alternates: { canonical: `${SITE}/solver` },
+  // ★2026-08-19 — `/en/solver`가 열리면서 ko ↔ en 상호 hreflang을 걸었다.
+  //   한쪽만 걸면 구글이 쌍으로 인정하지 않는다(상호 참조가 조건이다).
+  alternates: {
+    canonical: `${SITE}/solver`,
+    languages: {
+      "ko-KR": `${SITE}/solver`,
+      "en-US": `${SITE}/en/solver`,
+    },
+  },
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,

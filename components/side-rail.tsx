@@ -89,6 +89,12 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
     { href: "/en/tournaments",  icon: "🏆", label: "Tournaments" },
     { href: "/en/calculator",   icon: "🧮", label: "Odds Calculator" },
     { href: "/en/hand-chart",   icon: "📊", label: "Starting Hand Chart" },
+    /**
+     * ★2026-08-19 — `/en/solver` 신설과 함께 추가. 한국어 레일의 `/solver`와 같은 자리다
+     *   (그때도 이유는 「홈·다른 허브에 진입점이 0」이었다 — 영어는 그 상태가 더 심했다).
+     *   라벨은 지어내지 않았다: `HubPage title="GTO Solver"`와 같은 값이다.
+     */
+    { href: "/en/solver",       icon: "🧠", label: "GTO Solver" },
     { href: "/en/win-rate-quiz", icon: "📈", label: "Equity Simulator" },
     { href: "/en/glossary",     icon: "📖", label: "Poker Glossary" },
   ],

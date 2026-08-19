@@ -396,10 +396,23 @@ export default function SolverClient() {
           공개합니다.
         </p>
         <ul className="mt-4 space-y-1.5 text-sm">
+          {/*
+            🔴 2026-08-19 정정 — 종전 「0.01bb / 0.05bb」는 **절대 bb 기준의 낡은 값**이었다.
+               앱이 2026-08-15에 팟 대비 비율로 바꿨다(라이브 축어 확인 · 영어판 랜딩과 같은 값).
+               절대 bb로 재면 «같은 0.05bb»가 작은 팟에선 큰 실수, 큰 팟에선 사소한 차이라
+               3벳팟이 실제보다 나쁘게 보인다. **되돌리지 마라.**
+               §13: 5.5×0.35%≈0.02 · 5.5×1%≈0.06 · 22.5×0.35%≈0.08 · 22.5×1%≈0.23
+          */}
           <li>
-            <span className="font-semibold text-emerald-500">0.01bb 이하</span> = 최적 선택 ·{" "}
-            <span className="font-semibold text-blue-500">0.05bb 이하</span> = 허용 가능 ·{" "}
+            <span className="font-semibold text-emerald-500">팟 대비 0.35% 이하</span> = 최적 선택 ·{" "}
+            <span className="font-semibold text-blue-500">1% 이하</span> = 허용 가능 ·{" "}
             <span className="font-semibold text-orange-500">그 이상</span> = 다시 볼 스팟
+          </li>
+          <li className="text-muted-foreground">
+            같은 0.05bb라도 작은 팟에선 큰 실수, 큰 팟에선 사소한 차이입니다 — 그래서 팟 대비로
+            잽니다. 팟 5.5bb 싱글레이즈팟이면{" "}
+            <strong className="text-foreground">0.02bb · 0.06bb</strong>, 팟 22.5bb 3벳팟이면{" "}
+            <strong className="text-foreground">0.08bb · 0.23bb</strong>가 경계입니다
           </li>
           {/*
             ★2026-08-15 — 「문제가 13개뿐인가?」라는 오해가 실제로 나왔다(사장님).

@@ -23,7 +23,7 @@ import ChatTab from "./chat-tab";
 import FeedNavArrows from "@/components/feed-nav-arrows";
 import BottomTabBar from "@/components/bottom-tab-bar";
 import SideRail, { LEGAL_PAGES } from "@/components/side-rail";
-import SolverPromo from "@/components/solver-promo";
+import SolverPromo, { SOLVER_PROMO_LOCALES, type SolverPromoLocale } from "@/components/solver-promo";
 import type { Post } from "@/lib/posts";
 import { isSecondaryLocale } from "@/lib/intl";
 import { getCurrentEventId } from "@/lib/event-config";
@@ -1176,9 +1176,9 @@ export default function CommunityClient({
             정적 카드라 높이가 고정이고 비동기 데이터가 없다 → 피드 CLS에 영향 없음.
             홈 탭에서만 — 채팅·이벤트·프로필 탭 위에 뜨면 자리를 뺏는다.
           */}
-          {!pageLocale && tab === "home" && (
+          {SOLVER_PROMO_LOCALES.has(pageLocale ?? "ko") && tab === "home" && (
             <div className="px-4 pt-3">
-              <SolverPromo />
+              <SolverPromo locale={(pageLocale ?? "ko") as SolverPromoLocale} />
             </div>
           )}
           <TabContent />
@@ -1422,12 +1422,15 @@ export default function CommunityClient({
 
               {/*
                 GTO 솔버 버튼 — ★2026-08-14 사장님 지시. 홈 사이드바 맨 위.
-                🔴 한국어 홈에서만 — `/solver`는 한국어 전용이다. 판정은 `myLanguage`(내 설정)가
-                   아니라 **`pageLocale`(이 페이지가 무슨 언어인가)** 로 한다. 설정 언어로 잡으면
+                🔴 랜딩이 있는 로케일에서만. 판정은 `myLanguage`(내 설정)가 아니라
+                   **`pageLocale`(이 페이지가 무슨 언어인가)** 로 한다. 설정 언어로 잡으면
                    /de 홈을 보던 사람이 언어를 ko로 바꿨을 때 독일어 페이지에 한국어 버튼이 뜬다.
-                마크업은 `components/solver-promo.tsx` 한 곳 — 허브 사이드바도 같은 것을 쓴다.
+                마크업·문구는 `components/solver-promo.tsx` 한 곳 — 허브 사이드바도 같은 것을 쓴다.
+                ★2026-08-19 — `/en/solver` 신설로 en 합류(지원 로케일 판정은 컴포넌트에 맡긴다).
               */}
-              {!pageLocale && <SolverPromo />}
+              {SOLVER_PROMO_LOCALES.has(pageLocale ?? "ko") && (
+                <SolverPromo locale={(pageLocale ?? "ko") as SolverPromoLocale} />
+              )}
 
               {/* 트렌딩 */}
               {trending.length > 0 && (

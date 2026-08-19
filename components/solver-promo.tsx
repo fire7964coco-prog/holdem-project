@@ -13,19 +13,45 @@ import { BG, INK, FONT_SANS, FONT_SERIF } from "@/lib/theme";
  * ★"use client"를 붙이지 않는다 — Link 하나뿐이라 서버 컴포넌트로 두고,
  *   클라이언트 컴포넌트(홈)에서 import해도 그대로 동작한다. 반대로 붙이면 허브(서버)가 손해다.
  *
- * 🔴 **한국어에서만 렌더한다.** `/solver`는 한국어 전용 페이지다(다국어판 없음).
- *   다른 로케일 사이드바에 넣으면 독자를 읽지 못하는 페이지로 보낸다 —
- *   side-rail의 허브 메뉴가 `!locale`일 때만 뜨는 것과 같은 규율이다.
- *   → `/en/solver`를 열면 그때 이 조건을 함께 고친다(핸드오프 「시한」 9월 초 항목).
+ * 🔴 **랜딩이 있는 로케일에서만 렌더한다.** 랜딩 없는 로케일 사이드바에 넣으면 독자를
+ *   읽지 못하는 페이지로 보낸다 — side-rail의 허브 메뉴 규율과 같다.
+ *   ★2026-08-19 — `/en/solver`가 열려 **ko + en 두 곳**이 됐다(T24).
+ *   🔴 **파일을 쪼개지 마라.** 영어판을 따로 만들면 갈라진다(위 ★ 참조) — `locale` prop으로
+ *      분기하고, 지원 로케일은 아래 `COPY` 한 곳에서만 늘린다.
+ *      호출부는 `SOLVER_PROMO_LOCALES.has(...)`로 판정한다 — 조건을 손으로 적지 마라.
  */
 
 /** 골드 액센트 — 이벤트 카드가 쓰는 rgba(212,175,55,…)와 같은 색. */
 const GOLD_ACCENT = "rgb(var(--gold-dark-rgb))";
 
-export default function SolverPromo() {
+/** 로케일별 문구·목적지. 랜딩이 새로 열리면 **여기 한 줄만** 추가한다. */
+const COPY = {
+  ko: {
+    href: "/solver",
+    badge: "♠ 무료 도구",
+    title: "GTO 솔버",
+    desc: "홀덤 GTO 표를 브라우저에서 바로 계산 — 설치도 회원가입도 없이 무료",
+    cta: "솔버 열기 →",
+  },
+  en: {
+    href: "/en/solver",
+    badge: "♠ Free tool",
+    title: "GTO Solver",
+    desc: "Solve postflop spots in your browser — no install, no signup, no limits",
+    cta: "Open the solver →",
+  },
+} as const;
+
+export type SolverPromoLocale = keyof typeof COPY;
+
+/** 호출부가 «이 로케일에 랜딩이 있나»를 물어보는 자리. */
+export const SOLVER_PROMO_LOCALES: ReadonlySet<string> = new Set(Object.keys(COPY));
+
+export default function SolverPromo({ locale = "ko" }: { locale?: SolverPromoLocale }) {
+  const t = COPY[locale] ?? COPY.ko;
   return (
     <Link
-      href="/solver"
+      href={t.href}
       className="block rounded p-4 transition-opacity hover:opacity-90"
       style={{ background: INK, border: `1px solid ${INK}` }}
     >
@@ -33,22 +59,22 @@ export default function SolverPromo() {
         className="text-[10px] font-bold tracking-widest uppercase mb-1"
         style={{ color: GOLD_ACCENT, fontFamily: FONT_SANS }}
       >
-        ♠ 무료 도구
+        {t.badge}
       </p>
       <p className="text-[17px] font-bold mb-1.5" style={{ color: BG, fontFamily: FONT_SERIF }}>
-        GTO 솔버
+        {t.title}
       </p>
       <p
         className="text-[12px] leading-snug"
         style={{ color: "rgba(244,240,231,0.72)", fontFamily: FONT_SANS }}
       >
-        홀덤 GTO 표를 브라우저에서 바로 계산 — 설치도 회원가입도 없이 무료
+        {t.desc}
       </p>
       <span
         className="mt-3 block rounded py-2 text-center text-[13px] font-bold"
         style={{ background: GOLD_ACCENT, color: INK, fontFamily: FONT_SANS }}
       >
-        솔버 열기 →
+        {t.cta}
       </span>
     </Link>
   );
