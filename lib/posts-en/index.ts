@@ -45,6 +45,7 @@ import { POST as wsop2026TournamentGuide } from "./wsop-2026-tournament-guide";
 // GTO 솔버 스팟 해설 시리즈 영어판 (T24 ② · 2026-08-19~). slug는 한국어와 동일하다.
 import { POST as aHighBoardCbet } from "./a-high-board-cbet";
 import { POST as kHighBoardCbet } from "./k-high-board-cbet";
+import { POST as broadwayBoardStrategy } from "./broadway-board-strategy";
 
 /**
  * 영어(en) 블로그 포스트.
@@ -52,6 +53,7 @@ import { POST as kHighBoardCbet } from "./k-high-board-cbet";
  * 슬러그는 한국어 글과 동일하게 맞춰 hreflang 상호 링크가 성립하도록 한다.
  */
 export const EN_POSTS: Post[] = [
+  broadwayBoardStrategy,
   kHighBoardCbet,
   aHighBoardCbet,
   wsop2026TournamentGuide,
