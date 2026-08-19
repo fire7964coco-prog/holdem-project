@@ -60,6 +60,8 @@ Here's the crucial thing modern strategy actually says, because it's easy to get
 
 The concept underneath is ==range advantage==: whose overall range is stronger on this particular flop. As the preflop raiser, you hold more big cards and overpairs, so **high, dry boards belong to you** — and boards full of medium connected cards belong to the player who called. Master that one idea and you're ahead of every "just c-bet" player at the table.
 
+How lopsided does it get? On A-7-2 rainbow a solver has the caller checking 98.2% of its range — top pair included. The full breakdown is in [top pair, still checking](/en/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-en.webp").
+
 ---
 
 ## Which Flops to C-Bet: It's All About Board Texture

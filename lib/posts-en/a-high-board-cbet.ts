@@ -126,7 +126,7 @@ It also matters that "an ace" is not one hand type. A9 loses kicker battles, whi
 
 ## What is a dry board, and why does this one favor the raiser?
 
-A dry board is one with no flush draw and almost no straight draw — three unconnected cards in three different suits, like A-7-2 rainbow. Nothing is chasing anything. That matters here because **71.3% of the big blind's range has no draw at all**, so hands that missed cannot improve.
+A dry board is one with no flush draw and almost no straight draw — three unconnected cards in three different suits, like A-7-2 rainbow. Nothing is chasing anything. That matters here because **71.3% of the big blind's range has no draw at all** — those hands can still pair up, but they have nothing pulling them to the river.
 
 ![Range composition infographic comparing the big blind and button hand categories on a dry ace-high board, green and gold bars side by side](/images/gto-srp-dry-ace-ranges-en.webp "A♥7♦2♣ · category split — the button holds more top pair, the big blind more air")
 
