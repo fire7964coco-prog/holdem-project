@@ -19,7 +19,7 @@ import { SITE } from "@/lib/site";
 import CommunityCTA from "@/components/community-cta";
 import BlogTopBar from "@/components/blog-top-bar";
 import SideRail from "@/components/side-rail";
-import BottomTabBar, { TAB_BAR_HEIGHT } from "@/components/bottom-tab-bar";
+import BottomTabBar, { TAB_BAR_HEIGHT, useHideBottomChrome } from "@/components/bottom-tab-bar";
 import ReadingProgressBar from "@/components/reading-progress-bar";
 import ClusterMinimap, { PILLAR_ICONS } from "@/components/cluster-minimap";
 import RankingTable from "@/components/ranking-table";
@@ -129,6 +129,9 @@ export default function BlogPost({
 
   const [copied, setCopied] = useState(false);
   const [showStickyNext, setShowStickyNext] = useState(false);
+  /* 읽는 중(스크롤 다운)엔 하단 크롬을 비운다 — 탭바와 「다음 글 읽기」 바가 **같은 값**으로 움직인다.
+     따로 판정하면 탭바만 내려가고 CTA 가 62px 허공에 남는다. */
+  const chromeHidden = useHideBottomChrome();
   const contentRef = useRef<HTMLDivElement>(null);
   const stickyToolsRef = useRef<HTMLDivElement>(null); // 모바일 sticky 도구 바
   const tocDetailsRef = useRef<HTMLDetailsElement>(null); // 모바일 목차 <details>
@@ -829,7 +832,9 @@ export default function BlogPost({
              탭바 자리(-7~62px)에 겹쳤고, z-50이라 탭을 눌러도 이 링크가 먹어
              엉뚱한 포스트로 이동했다. */
           className={`xl:hidden fixed left-0 right-0 z-50 transition-all duration-300 ${showStickyNext ? "translate-y-0 opacity-100" : "translate-y-full opacity-0 pointer-events-none"}`}
-          style={{ bottom: TAB_BAR_HEIGHT, background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)", boxShadow: "0 -4px 24px rgba(var(--gold-dark-rgb),0.35)" }}
+          /* ★2026-08-19: 탭바가 내려가면 이 바도 바닥까지 따라 내려온다.
+             `bottom`을 62 로 고정해 두면 탭바가 사라진 62px 이 그대로 빈칸이 된다. */
+          style={{ bottom: chromeHidden ? 0 : TAB_BAR_HEIGHT, background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)", boxShadow: "0 -4px 24px rgba(var(--gold-dark-rgb),0.35)" }}
         >
           <Link href={`/blog/${nextPost.slug}`} className="flex items-center justify-between gap-3 px-5 py-4">
             <div className="min-w-0">
@@ -845,7 +850,7 @@ export default function BlogPost({
 
       {/* ★하단 전역 탭바 (2026-08-04 신설).
           검색으로 이 글에 바로 떨어진 독자가 사이트의 나머지로 갈 길이 상단바뿐이었다. */}
-      <BottomTabBar active="none" locale="ko" />
+      <BottomTabBar active="none" locale="ko" hidden={chromeHidden} />
     </div>
   );
 }

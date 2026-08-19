@@ -14,7 +14,7 @@ import ClusterMinimap from "@/components/cluster-minimap";
 import CommunityCTA from "@/components/community-cta";
 import BlogTopBar from "@/components/blog-top-bar";
 import SideRail from "@/components/side-rail";
-import BottomTabBar from "@/components/bottom-tab-bar";
+import BottomTabBar, { useHideBottomChrome } from "@/components/bottom-tab-bar";
 import ReadingProgressBar from "@/components/reading-progress-bar";
 import CalcCtaButton from "@/components/calc-cta-button";
 
@@ -106,6 +106,8 @@ export default function IntlBlogPostClient({
   const base = `/${locale}/blog`;
 
   const [copied, setCopied] = useState(false);
+  /* 읽는 중(스크롤 다운)엔 하단 탭바를 비운다 — KO 와 같은 처리 */
+  const chromeHidden = useHideBottomChrome();
   const contentRef = useRef<HTMLDivElement>(null);
   const stickyToolsRef = useRef<HTMLDivElement>(null); // 모바일 sticky 도구 바
   const tocDetailsRef = useRef<HTMLDetailsElement>(null); // 모바일 목차 <details>
@@ -497,7 +499,8 @@ export default function IntlBlogPostClient({
       </div>
 
       {/* ★하단 전역 탭바 — 한국어 블로그와 동일 (2026-08-04 신설) */}
-      <BottomTabBar active="none" base={`/${locale}`} locale={locale} />
+      {/* 🪶 여기엔 「다음 글 읽기」 스티키 바가 없어서 함께 움직일 짝이 없다(KO 만 있는 요소). */}
+      <BottomTabBar active="none" base={`/${locale}`} locale={locale} hidden={chromeHidden} />
     </div>
   );
 }

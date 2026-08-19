@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { BG, NAV } from "@/app/community/post-card";
 
@@ -38,6 +39,53 @@ export function hasBottomTabBar(pathname: string): boolean {
 }
 
 export const TAB_BAR_HEIGHT = 62;
+
+/**
+ * 읽는 중에는 하단 크롬을 비운다 — **스크롤 방향**으로 판정한다.
+ *
+ * ★왜 (2026-08-19 · 레이아웃 트랙 묶음 1)
+ *   모바일 세로 844px 중 상단바 62 + 탭바 62 = **124px(15%)** 가 상시 잠식이었다.
+ *   그런데 둘의 성격이 정반대다(실측):
+ *     · 상단 62 = 뒤로 · 허브 · 러닝맵 · 📚목차12 · 바로가기 → **전부 읽기 도구라 남긴다**
+ *     · 하단 62 = 피드 · 채팅 · 이벤트 · 프로필 → **커뮤니티 내비. 글 읽는 중 가치 0**
+ *   그래서 회수 대상은 하단뿐이고, **삭제가 아니라 숨김**이다(다른 섹션에선 그대로 쓴다).
+ *
+ * 🔴 **아래로 = 읽는 중, 위로 = 이동 의사.** 위로 올리면 즉시 되돌린다 —
+ *    「탭바가 사라져서 다른 데로 못 간다」가 되면 2026-08-04에 이 탭바를 만든 이유
+ *    (검색으로 글에 직접 떨어진 독자의 유일한 출구)가 무너진다.
+ *
+ * 🪶 `y > 240` 가드: 첫 화면에서는 숨기지 않는다. 스크롤을 막 시작한 구간에서
+ *    깜빡이면 그게 더 산만하다. 6px 미만의 흔들림도 무시한다(관성 스크롤 대응).
+ */
+export function useHideBottomChrome(): boolean {
+  const [hidden, setHidden] = useState(false);
+
+  useEffect(() => {
+    let lastY = window.scrollY;
+    let ticking = false;
+
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      // rAF 로 묶어 스크롤 이벤트당 setState 를 막는다(모바일에서 초당 수십 회 들어온다).
+      requestAnimationFrame(() => {
+        const y = window.scrollY;
+        const dy = y - lastY;
+        if (Math.abs(dy) > 6) {
+          const next = dy > 0 && y > 240;
+          setHidden((prev) => (prev === next ? prev : next));
+          lastY = y;
+        }
+        ticking = false;
+      });
+    };
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  return hidden;
+}
 
 /**
  * 탭 라벨. community-client의 LABELS와 같은 11개 로케일을 다루고 나머지는 en으로 떨어진다
@@ -84,6 +132,14 @@ interface Props {
   onSelect?: (key: Exclude<BottomTabKey, "blog">) => void;
   /** 데스크톱에서 숨길지 — 홈은 자체 사이드바가 있어 true(기본) */
   hideOnDesktop?: boolean;
+  /**
+   * 읽는 중 숨김 상태. `useHideBottomChrome()` 의 반환값을 그대로 넘긴다.
+   * 🔴 **제어는 부모가 한다** — 블로그 상세는 「다음 글 읽기」 바가 `bottom: TAB_BAR_HEIGHT` 로
+   *    이 바 위에 얹혀 있어서, 같은 값으로 **둘을 함께** 움직여야 한다.
+   *    여기서 자체 스크롤 판정을 하면 두 요소가 따로 놀아 허공에 뜬 바가 생긴다.
+   *    기본 false = 기존 동작(홈·계산기·대회는 그대로 상시 노출).
+   */
+  hidden?: boolean;
 }
 
 export default function BottomTabBar({
@@ -92,6 +148,7 @@ export default function BottomTabBar({
   locale = null,
   onSelect,
   hideOnDesktop = true,
+  hidden = false,
 }: Props) {
   const L = tabLabels(locale);
 
@@ -103,13 +160,17 @@ export default function BottomTabBar({
 
   return (
     <nav
-      className={`${hideOnDesktop ? "lg:hidden " : ""}fixed bottom-0 left-0 right-0 flex items-center`}
+      className={`${hideOnDesktop ? "lg:hidden " : ""}fixed bottom-0 left-0 right-0 flex items-center transition-transform duration-300`}
+      /* 🔴 숨김은 transform 으로만 한다. display:none 이면 초점이 날아가고,
+         높이를 0 으로 접으면 페이지가 리플로우돼 읽던 자리가 튄다. */
       style={{
         background: NAV,
         borderTop: "1px solid rgba(255,255,255,0.06)",
         height: TAB_BAR_HEIGHT,
         zIndex: 40,
+        transform: hidden ? "translateY(100%)" : "translateY(0)",
       }}
+      aria-hidden={hidden || undefined}
     >
       {TABS.map((t) => {
         const color = active === t.key ? BG : "rgba(244,240,231,0.4)";
