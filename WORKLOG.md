@@ -4,6 +4,58 @@
 
 ---
 
+## 2026-08-20 (1) — GTO 시리즈 **영어판 ⑥ `paired-board-strategy` 발행** + 「해석 결함」 6건 KO 소급
+
+**⑥편 6♣6♦3♥. 서치가 뱅크를 뒤집었고, 4렌즈가 기계 게이트 뒤에 숨은 유해 조언 4건을 잡았다.**
+
+### ① 서치 — 뱅크 §3-⑥의 축이 틀렸다 (재료가 얇은 게 아니었다)
+라쿠 English/US 실측 결과 lowfruits가 준 후보가 **전부 볼륨 0**이었다:
+`paired flop` · `paired flops in poker` · `paired board strategy` ·
+`how to play paired boards in poker` · `odds of paired flop` · `how rare is a pair in poker`.
+살아 있는 축은 **trips**였다 — ★`trips vs set poker` **40(12개월 +95.4%)** · `poker trips vs set` 20(+44%) ·
+`trips poker` 210 · `what is trips in poker` 110 · `paired board poker` 10 · `bottom pair poker` 10.
+전수 확인 결과 **verbatim 「trips vs set」을 소유한 영어 글이 없어** 빈 자리였다.
+🔴 **`quads poker` 6,600은 허수** — 2026-01에 74,000 한 번 튀고 나머지 달은 170~590이다(실제 200~400).
+🔴 **`full house poker` 9,900은 `holdem-hand-rankings` 소유**라 조준 금지.
+SERP에 **GTO Wizard 「Attacking Paired Flops From the BB」**가 있어 각도가 겹친다 →
+콤보 수(26 대 20 · 포카드 1 · 풀하우스 3)와 포켓페어 표로 차별화했다. 근거는 뱅크 §3-⑥에 갱신.
+
+### ② 🔴 기계 게이트 통과 **후에** 나온 결함들 — §14-A가 말한 D·F 유형
+`check:gto` 🔴0 · `audit:hard` 🔴0인 상태에서 4렌즈(포커사실·교열·산수·SEO)가 병렬로 잡았다.
+
+| # | 결함 | 왜 위험한가 |
+|---|---|---|
+| ① | 「Only four combos beat trips」가 **키커를 지웠다** | 플랍 5장이라 둘째 키커는 보드 3으로 고정 → 6 옆 한 장이 전부. A6일 때만 참이고 **76s면 18콤보에 진다**. 이대로 팟을 키우면 페어 보드 최대 파산 패턴 |
+| ② | 「리드하는 핸드가 대부분 6x」 | **자기 표가 반증.** 큰 벳 9.6콤보 중 6x 기여 ≈ 2.2(23%). 참인 건 «6x가 작은 사이즈를 안 고른다» |
+| ③ | **EQR 100%를 손익분기로 오독** | EQR은 실현률이지 손익이 아니다. 44는 EV 3.42bb로 레인지 평균 2.17bb의 1.6배 |
+| ④ | 「6보다 높은 포켓페어가 좋다」 | 55·44가 6보다 낮은데 둘 다 좋다. **갈림선은 3**이고 22만 두 랭크 아래라 무너진다 |
+| ⑦ | MDF 처방이 **14%p 미달** | 18.4 + A하이 26.3 + K하이 16.5 = **61.2% < 75.3%**. 미완성 핸드까지 가야 닿는다 |
+| ⑧ | **64.6%가 K하이 15.1%를 빠뜨림** (정답 **79.7%**) | BB는 3등급을 다 더하고 BTN은 2등급만 더해 한 글 안에서 집계 규칙이 갈렸다 |
+
+**①②③④⑦⑧은 한국어판에도 그대로 있었다 → 같은 커밋에서 KO도 고쳤다.**
+①편에서 확인한 것과 같은 패턴이다 — 재저작은 결함을 «다른 문장으로 복제»할 뿐이다.
+
+### ③ 🟢 렌즈D가 **발행 차단급**을 잡았다 — 이 글은 빌드조차 안 되고 있었다
+`lib/posts-en/index.ts`에 **import는 있는데 `EN_POSTS` 배열 등록이 빠졌다.**
+미사용 import라 **TS 에러도 빌드 실패도 없다** — 조용히 통과한다.
+증거: 등록 전 sitemap `intl posts 463` → 등록 후 **464**.
+📌 원인은 **자동 치환 스크립트가 실패했는데 성공 로그만 보고 넘어간 것**이다.
+   («있다» 보고 전에 탐지 방법부터 의심하라 — review-mechanize-not-repeat 재발)
+
+### ④ 그 밖
+- 카니발: set/trips 정의가 glossary·hand-rankings·drawing-odds에 **이미 3중** → FAQ를 스팟형
+  (「왜 페어 보드에서 트리플이 셋보다 약한가」)으로 바꾸고 족보 필라로 링크
+- 태그 `paired board poker`가 `holdem-reading-the-board`와 **문자열 동일** → flop 표기로 교체
+- MDF 링크가 **MDF를 한 번도 안 쓰는** `holdem-pot-odds`로 가 있었다 → 앵커를 낮추고 `holdem-3bet` 추가
+- 버려진 winnable 자리를 FAQ로 흡수 — 「플랍이 페어로 깔릴 확률」 **17.2%** (==(48÷51)×(44÷50)=82.8%==의 여집합)
+- 이미지 2종 신규: `gto-srp-paired-oop-en.webp`(59.1KB) · `gto-srp-paired-ranges-en.webp`(33.1KB)
+- 게이트: `check:gto` ✅57 🔴0 · `audit:hard --locale=en` 49/49 🔴0 · FAQ 스키마 EN 6 / KO 5
+
+🪶 **계산은 4렌즈 전부 「전건 통과」였다 — 5편 연속이다.
+   결함은 늘 계산이 아니라 «계산에서 끌어낸 해석»에서 나온다.**
+
+---
+
 ## 2026-08-19 (4) — GTO 시리즈 **영어판 ①②③ 발행** + 「계산 통일」 게이트 신설
 
 **사장님 판정: 13편은 솔버 예제 해설이라 언어마다 재저작할 필요가 없다 — 특히 계산 부분은 통일한다.**

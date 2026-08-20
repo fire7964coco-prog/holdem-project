@@ -92,9 +92,42 @@
 `monotone flop`(10·DA30) · `monotone flop strategy` · `how to play monotone flop` ·
 `what is a monotone board in poker`(DA30) · `how likely is it to flop a flush`(WS3 2)
 
-### ⑥ paired-board-strategy (6♣6♦3♥)
-`paired flop example`(WS3 2·DA19) · `paired flop poker`(WS3 2) · `paired flop strategy` ·
-`how rare is a pair in poker`(DA12)
+### ⑥ paired-board-strategy (6♣6♦3♥) — 🔴 **2026-08-20 실측으로 축이 바뀌었다 (발행 완료)**
+
+lowfruits가 준 후보(`paired flop example` · `paired flop poker` · `paired flop strategy` ·
+`how rare is a pair in poker`)를 **라쿠 English/US 월간검색량으로 재보니 전부 「데이터 없음」**이었다.
+같이 확인한 `paired flop` · `paired flops in poker` · `paired board strategy` ·
+`how to play paired boards in poker` · `odds of paired flop` · `c bet paired board` ·
+`pair the board poker` · `small pair poker`도 **전부 0**이다.
+→ 뱅크가 이 편을 「재료가 얇다」고 적어 뒀지만 **얇은 게 아니라 축이 틀렸다.**
+
+**살아 있는 축 = trips** (라쿠 English/US 12개월 평균):
+
+| 키워드 | 볼륨 | 추세 | 판정 |
+|---|---|---|---|
+| `trips poker` | 210 | — | 정의는 glossary 소유 |
+| `what is trips in poker` | 110 | — | 정의는 glossary 소유 |
+| ★**`trips vs set poker`** | **40** | **12개월 +95.4%** | ✅ **이 글이 가져간다** |
+| `poker trips vs set` | 20 | +44% | ✅ 같은 축 |
+| `paired board poker` | 10 | — | ✅ |
+| `bottom pair poker` | 10 | — | ✅ (22 문단) |
+
+🔴 **`full house poker` 9,900은 조준 금지** — 족보 용어라 `holdem-hand-rankings` 소유다.
+🔴 **`quads poker` 6,600은 허수다** — 월별을 열면 2026-01에 **74,000** 한 번 튀고 나머지 달은
+   170~590이다. 12개월 평균이 스파이크에 끌려간 값이고 실제 수준은 **200~400**.
+   [[keyword-volume-order-of-magnitude-trap]] 계열이라 채택하지 않았다. **되살리지 마라.**
+
+📌 **분할**: 「trips가 무엇인가」는 `holdem-glossary`·`holdem-hand-rankings`가 갖고,
+   이 글은 **«이 보드에서 trips와 set이 어떻게 갈리는가»**만 가져간다.
+   ③편이 `range advantage`의 «차이»만 가져간 것과 같은 분할이다.
+   전수 확인 결과 **verbatim 「trips vs set」을 소유한 영어 글은 없었다** — 빈 자리였다.
+
+▶ SERP (2026-08-20): Upswing ×2 · SplitSuit · PokerNews ·
+  **GTO Wizard 「Attacking Paired Flops From the BB」** ← 각도가 정확히 겹치는 경쟁글.
+  차별점 = ①콤보 수(트리플 26 대 20 · 포카드 1 · 풀하우스 3) ②BB가 트리플을 더 갖고도 97% 체크
+  ③포켓페어 에퀴티 표(TT 76.0% → 22 50.4%).
+  🪶 상위글의 「low paired flop에서는 작게 자주 친다」는 **레이저 기준**이라 충돌이 아니다 —
+     이 글은 콜러 좌석이고, 콜러의 소수 리드는 오히려 큰 사이즈가 많다(2.0% 대 1.0%).
 
 ### ⑦ low-board-check-raise (6♠5♥2♦)
 ★`what is a good check-raise percentage`(WS3 2·DA28) · `poker check raise size chart`(WS3 2·DA28) ·
