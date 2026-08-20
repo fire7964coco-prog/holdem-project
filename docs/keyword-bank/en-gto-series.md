@@ -129,10 +129,78 @@ lowfruits가 준 후보(`paired flop example` · `paired flop poker` · `paired 
   🪶 상위글의 「low paired flop에서는 작게 자주 친다」는 **레이저 기준**이라 충돌이 아니다 —
      이 글은 콜러 좌석이고, 콜러의 소수 리드는 오히려 큰 사이즈가 많다(2.0% 대 1.0%).
 
-### ⑦ low-board-check-raise (6♠5♥2♦)
-★`what is a good check-raise percentage`(WS3 2·DA28) · `poker check raise size chart`(WS3 2·DA28) ·
-`poker check raise size texas holdem`(WS3 2·DA23) · `can you check-raise in poker`(10·WS3 2·DA34) ·
-`why was check-raising banned`(WS3 2·DA32 — 훅으로 좋다) · `check raise bad etiquette`(10·WS3 2)
+### ⑦ low-board-check-raise (6♠5♥2♦) — 🔴 **2026-08-20 실측으로 축이 바뀌었다 (발행 완료)**
+
+⑥편과 **같은 일이 또 일어났다.** 뱅크가 ★를 달았던 후보를 라쿠 English/US로 재보니 —
+
+| 뱅크 후보 | 라쿠 US 볼륨 | 판정 |
+|---|---|---|
+| ★`what is a good check-raise percentage` | **데이터 없음** | ❌ |
+| `poker check raise size chart` | **데이터 없음** | ❌ |
+| `poker check raise size texas holdem` | **데이터 없음** | ❌ |
+| `why was check-raising banned` | **데이터 없음** | ❌ (훅 아이디어로만) |
+| `can you check-raise in poker` | 10 | △ |
+| `check raise bad etiquette` | 10 (12개월 내내 평탄) | △ |
+
+**6개 중 4개가 볼륨 0이다.** lowfruits의 WS3/DA는 «이길 수 있나»를 재는 값이지 «수요가 있나»가 아니다 —
+두 개를 같은 표에 적어 두면 다음 세션이 ★를 수요로 오독한다.
+
+**실제로 살아 있는 축**
+
+| 키워드 | 볼륨 | 추세(12m/6m/3m) | 판정 |
+|---|---|---|---|
+| ★**`check raise poker`** | **210** | −20.0 / −15.7 / 0 | ✅ 이 축의 유일한 몸통 |
+| ★**`when to check raise`** | **20** | **+56.5 / +38.5 / +28.6** | ✅ **클러스터에서 유일한 상승축** |
+| `what is a check raise in poker` | 70 | −31.0 | ○ FAQ |
+| `wet board poker` | 50 | −27.3 | ○ |
+| **`what is a wet board in poker`** | **40** | **+20.0 / +20.0 / +7.1** | ✅ 상승 |
+| `check raise meaning` | 30 | +9.1 | ○ |
+
+🔴 **`check raise` 단독 260을 제목·태그에 쓰지 마라 — 포커 검색이 아니다.**
+   소총 치크라이저(cheek riser) · 미 연금 인상(social security check raise 2026) · pytest ·
+   **브리즈번/퀸즐랜드/나고야/타이중의 «Check Raise» 포커클럽 매장명** · 포르쉐 브레이크등 ·
+   의학 용어(ICP/JVP)가 섞인 값이다. **`poker` 앵커가 붙은 210 쪽이 진짜다.**
+
+🔴 **`check raise` = `check raising` = `check-raise` 260, 그리고
+   `check raise poker` = `poker check raise` = `check raise in poker` 210은
+   «세 키워드»가 아니라 «한 값의 3중 표시»다** — 월별 12개 값까지 전부 동일하다. **더하지 마라.**
+   이 축의 실질 몸통은 「하이픈·어순·poker 유무 무관 한 덩어리 ≈ 210」이 전부다.
+
+🔴 **라쿠 `suggest-keywords`의 metrics는 일본 DB다.** `check raise`에 **880**을 붙여 주지만
+   location=United States로 `search-volume-history`를 돌리면 **260**이다(3.4배 과대계상).
+   같은 응답에 「名古屋ポーカー 1300」이 섞여 있는 것이 증거다.
+   **판정에 쓸 수 있는 값은 `search-volume-history`(English / United States)뿐이다.**
+
+🔴 **`low board`·`low flop` 축은 검색이 아예 없다.** `low board poker` 데이터 없음,
+   `low flop` 서제스트 95건은 전부 flip-flop 샌들·플립플롭 회로·low taper fade다.
+   `low hand poker rules`(10)는 **로우볼** 의도라 무관하다. **제목·H2에 쓰면 0을 조준하는 것이다.**
+   ⚠ `6 5 2 flop` 같은 **보드 표기 검색은 존재하지 않는다**(전부 인도 영화 흥행).
+
+🪶 **⑥편 §4-1의 「영어권은 board가 아니라 flop」이 이 축에서는 뒤집힌다.**
+   `wet board poker` 50 · `what is a wet board in poker` 40 vs
+   `wet vs dry flop poker` **0** · `dry flop poker` **0**.
+   §4-1의 flop 우세는 「monotone」 같은 **한정어와 붙었을 때**의 얘기다. 텍스처 어휘 단독은 board가 이긴다.
+
+🪶 1월 봉우리(480)는 ⑥의 `quads poker`(단일 74,000 스파이크)와 달리 **클러스터 공통 계절성**이다
+   (`check raise poker` 390 · `what is a check raise in poker` 140이 같은 달에 함께 튄다).
+   다만 연평균 210/260이 그 1월에 끌려 올라간 값이므로 **실질 기준선은 170~210**으로 계획하라.
+
+▶ **카니발 — EN 사이트는 이 자리가 완전히 비어 있었다** (2026-08-20 전수)
+  `lib/posts-en/` 50편 중 slug에 `check`가 든 글 **0개** · H2/H3에 check-raise를 가진 글 **0개**.
+  KO에는 `holdem-check-raise`가 있지만 EN 대응본이 없다 → ⑦편이 이 자리를 가져갔다.
+  🔴 단 **「체크레이즈가 합법인가」류는 `holdem-betting-actions`가 이미 축어로 답한다** — 링크로 넘긴다.
+
+▶ SERP (2026-08-20) — **Upswing이 이 축을 가장 두껍게 점유**한다:
+  `5 Winning Check-Raising Strategies` · `5 Tips For Check-Raising The Flop` ·
+  **플랍 체크레이즈 이후 턴 전개를 4부작**으로 소유. 그 밖 pokercoaching·thepokerbank·cardplayer·888.
+  **GTO Wizard는 check-raise 제목 글이 검색으로 안 잡혔다**(⑥의 페어보드 글 같은 정면충돌은 없다).
+  ⚠ 이 「없다」는 WebSearch 기반이라 확정이 아니다.
+  → 차별점은 **한 스팟의 실측 레인지**다. 일반론 글은 「레이즈 100% 핸드가 정확히 트리플 9콤보 + 65s 2콤보,
+     블러프는 전부 것샷/양방」을 줄 수 없다.
+
+⚠ **SERP DOM 직접 파싱은 이번에 실패했다** — 구글 429/캡차, DuckDuckGo 캡차, Bing 오염.
+   위 Top10은 WebSearch 반환 순서이고 **PAA는 축어로 확보하지 못했다.** 자동완성 질문군으로 대체했다.
+   **이걸 PAA라고 부르지 마라.**
 
 ### ⑧ 3bet-pot-cbet (A♦K♠2♥ · SPR 4.0) — **13편 중 유일하게 볼륨이 있다**
 ★**`poker spr` 480**(DA28) · `what does spr mean in poker`(DA28) · `what is an spr in poker` ·

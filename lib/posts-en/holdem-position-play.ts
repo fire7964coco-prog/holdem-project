@@ -191,7 +191,7 @@ These percentages describe *range sizes* — which specific hands fill them (whe
 
 Most guides stop at "avoid playing OOP." Fine — but you're in the blinds twice every orbit, and sometimes your UTG open gets called by the button. Here's how to lose the least, and occasionally flip the script:
 
-**1. Check-raise is your equalizer.** It's the one weapon OOP has that IP doesn't: because they expect to bet when checked to, ==g:a check-raise turns their positional autopilot against them.== Build the range honestly — strong hands (sets, two pair) plus draws with real equity (open-enders, flush draws) — so it's never all-bluff or all-value.
+**1. [Check-raise](/en/blog/low-board-check-raise) is your equalizer.** It's the one weapon OOP has that IP doesn't: because they expect to bet when checked to, ==g:a check-raise turns their positional autopilot against them.== Build the range honestly — strong hands (sets, two pair) plus draws with real equity (open-enders, flush draws) — so it's never all-bluff or all-value.
 
 **2. Bet bigger when you do bet.** OOP bets need to end hands sooner. A larger sizing (think two-thirds to three-quarters pot rather than a third) denies the free cards and cheap floats that position would otherwise let your opponent take. Playing small-ball OOP just extends the hand — and every extra street favors the player acting last.
 

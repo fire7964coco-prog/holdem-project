@@ -161,7 +161,7 @@ const SPOT_GROUPS = [
       { board: "6♣6♦3♥", name: "Paired Board", slug: "paired-board-strategy", note: "Nobody connects, so the bluffing share goes up" },
       // ⚠ 「peaks」(=13개 중 최대)로 쓸 뻔했다. 앱은 "BB check-raises a lot on this texture"라고만
       //    적고 최대라고 하지 않는다 — 13개를 비교해 확인하지 않은 주장은 쓰지 않는다.
-      { board: "6♠5♥2♦", name: "Low Rainbow Board", note: "An overcard war — the texture where the big blind check-raises a lot" },
+      { board: "6♠5♥2♦", name: "Low Rainbow Board", slug: "low-board-check-raise", note: "An overcard war — the texture where the big blind check-raises a lot" },
     ],
   },
   {
