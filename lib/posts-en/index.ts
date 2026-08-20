@@ -51,6 +51,7 @@ import { POST as monotoneBoardStrategy } from "./monotone-board-strategy";
 import { POST as pairedBoardStrategy } from "./paired-board-strategy";
 import { POST as lowBoardCheckRaise } from "./low-board-check-raise";
 import { POST as threeBetPotCbet } from "./3bet-pot-cbet";
+import { POST as threeBetPotBetSizing } from "./3bet-pot-bet-sizing";
 
 /**
  * 영어(en) 블로그 포스트.
@@ -58,6 +59,7 @@ import { POST as threeBetPotCbet } from "./3bet-pot-cbet";
  * 슬러그는 한국어 글과 동일하게 맞춰 hreflang 상호 링크가 성립하도록 한다.
  */
 export const EN_POSTS: Post[] = [
+  threeBetPotBetSizing,
   threeBetPotCbet,
   lowBoardCheckRaise,
   pairedBoardStrategy,

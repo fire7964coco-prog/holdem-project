@@ -285,7 +285,7 @@ A. This example's calling range does not contain them — most AA and KK four-be
 
 **Q. Why is the small size used more than the big one?**
 
-A. Because the range is condensed — all 63 combos are a pair or better, so it never splits into "nuts or nothing," and condensed ranges bet small. **Not because the stack is shallow:** the Q-T-7 spot has the same SPR of 4.0 and uses the large size 98.4% of the time.
+A. Because the range is condensed — all 63 combos are a pair or better, so it never splits into "nuts or nothing," and condensed ranges bet small. **Not because the stack is shallow:** the [Q-T-7 spot](/en/blog/3bet-pot-bet-sizing "thumb:/images/gto-3bp-dynamic-oop-en.webp") has the same SPR of 4.0 and uses the large size 98.4% of the time.
 
 **Q. Do these numbers hold at my stake?**
 

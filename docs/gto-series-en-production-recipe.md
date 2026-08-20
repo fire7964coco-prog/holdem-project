@@ -179,6 +179,9 @@ git commit -F commit-msg.txt && git push      # 한글·여러 줄이므로 -F �
 | select 인덱스 | 언어 선택기가 앞에 붙는다(§2) |
 | desc 자수 | HTML 인코딩 때문에 길어 보인다(§4) |
 | 이미지 재사용 | 한국어 두 장은 **전부 한글** — 매 편 새로 만든다 |
+| **인포그래픽 로컬 서버** | 🔴 **7788에 옛 세션 서버가 살아 있을 수 있다**(2026-08-20 ⑨에서 EADDRINUSE). 그대로 쓰면 **옛 HTML이 렌더된다** — 포트를 바꾸고, 렌더 결과를 반드시 Read로 눈으로 봐라 |
+| **캡처 해상도** | `browser_take_screenshot`의 `scale:"device"`가 이 환경에선 **DPR 1**이라 1520×940 그대로 나온다. §3-1 크롭 좌표(340/110/1180/790)가 그 전제이므로 **먼저 `metadata()`로 실제 크기를 확인**하라 |
+| **뱅크 배정 노화** | 🔴 **§3 편별 키워드는 «쓰인 시점»의 것이다.** ⑧(홀덤 SPR)·⑨(c bet sizing) **두 편 연속으로 그 사이에 필라가 가져갔다.** 착수 시점에 `lib/posts-en/`을 grep해 소유자를 재확인하라 |
 
 ---
 
@@ -193,8 +196,8 @@ git commit -F commit-msg.txt && git push      # 한글·여러 줄이므로 -F �
 | ⑤ | `monotone-board-strategy` | ⬜ | `monotone flop` 축(보드가 아니라 **flop** 표기) |
 | ⑥ | `paired-board-strategy` | ⬜ | `paired flop` 축 · 재료가 얇다 |
 | ⑦ | `low-board-check-raise` | ⬜ | `what is a good check-raise percentage` |
-| ⑧ | `3bet-pot-cbet` | ⬜ | **`poker spr` 480 — 13편 중 유일하게 볼륨이 있다** |
-| ⑨ | `3bet-pot-bet-sizing` | ⬜ | `geometric bet sizing`(DA7) |
+| ⑧ | `3bet-pot-cbet` | ✅ | **`poker spr` 480** · KO를 먼저 검수하고 쓴 첫 편 |
+| ⑨ | `3bet-pot-bet-sizing` | ✅ | 🔴 **뱅크 배정(`poker c bet sizing`)이 c벳 필라 소유라 폐기** → `poker bet sizing` 110·DA8로 교체. `wet board poker` 50 · `geometric bet sizing` 20 |
 | ⑩ | `3bet-pot-low-board` | ⬜ | `fold equity poker` |
 | ⑪ | `blind-battle-cbet` | ⬜ | `poker blind vs blind strategy` |
 | ⑫ | `blind-battle-connected-board` | ⬜ | `static vs dynamic board poker` |

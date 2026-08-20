@@ -169,7 +169,9 @@ const SPOT_GROUPS = [
     cond: "OOP: BB (3-bettor) · IP: BTN (caller) · Pot 22.5bb · Stack 89bb · SPR ≈ 4.0",
     items: [
       { board: "A♦K♠2♥", name: "Ace-High Board, 3-Bettor's Edge", slug: "3bet-pot-cbet", note: "The best flop for the 3-bettor; at low SPR small bets pressure everything" },
-      { board: "Q♥T♥7♠", name: "Dynamic Two-Tone Board", note: "A board the caller likes too — watch where the 3-bettor slows down" },
+      // 🔴 2026-08-20 정정: 옛 note가 "watch where the 3-bettor slows down"이었는데 **거짓**이다.
+      //    이 스팟의 체크는 0.8%다(§4-B). 3벳터는 여기서 «느려지지» 않는다 — 사이즈가 하나로 뭉칠 뿐이다.
+      { board: "Q♥T♥7♠", name: "Dynamic Two-Tone Board", slug: "3bet-pot-bet-sizing", note: "Two live draws — 98.4% of the range fires the same two-thirds size" },
       { board: "8♦5♣2♠", name: "Low Dry Board", note: "Misses the 3-bettor entirely, yet overpairs keep the pressure on" },
     ],
   },

@@ -266,9 +266,35 @@ lowfruits가 준 후보(`paired flop example` · `paired flop poker` · `paired 
    `polarized range poker`(+12.5%) 셋뿐이고 전부 10~30이다.
 
 ### ⑨ 3bet-pot-bet-sizing (Q♥T♥7♠)
-`poker c bet sizing chart`(DA22) · `poker c bet sizing` · `river bet sizing poker`(WS3 2·DA22) ·
-`bet sizing poker`(110·DA30) · `what is bet sizing in poker` · **`geometric bet sizing`(20·DA7)**
-🪶 앱에 지오메트릭 사이징 옵션이 실재한다 — 근거 있는 조준이다
+
+🔴 **이 항목의 원래 배정은 2026-08-20 착수 시점에 폐기됐다.** 아래 취소선이 옛 배정이다.
+~~`poker c bet sizing chart`(DA22) · `poker c bet sizing` · `river bet sizing poker`(WS3 2·DA22)~~
+→ **`holdem-continuation-bet`이 태그 `c-bet sizing` + H2 「How Much Should You C-Bet? (Sizing)」로
+  이미 소유하고 있었다.** ⑧의 「홀덤 SPR」과 **정확히 같은 사고**이고, 착수 시점 grep이 잡았다.
+  [[absence-may-be-the-standard]] · 「비어 있다」가 아니라 「그 사이에 채워졌다」를 확인하라.
+
+**확정 배정 (2026-08-20 라쿠 English/US 24개월 실측)**
+
+| 키워드 | 월간 | SEO난이도 | 추세 | 자리 |
+|---|---:|---:|---|---|
+| **`poker bet sizing`** | **110** | **8** | 12m −30% · yoy −58.8% | **주 키워드**(seoTitle·태그) |
+| **`wet board poker`** | **50** | 13 | 12m −27% | 보조(seoTitle·H2·FAQ) |
+| `overbet poker` | 40 | 10 | 12m −32% | FAQ 1문항 |
+| **`geometric bet sizing`** | **20** | 18 | 3m **0%**(유일하게 안 빠짐) | **전용 H2** |
+| `how much to bet in poker` | 10 | 12 | — | FAQ 문구 |
+| `poker bet sizing strategy` | 10 | 6 | — | 본문 |
+| `what is bet sizing in poker` | 0 | 11 | — | 미채택 |
+
+🔴 **`poker bet sizing` = `bet sizing poker`는 «한 클러스터»다.** 15개를 제출했는데 14개가 돌아왔다
+   (중복제거). **총합 220이 아니라 110이다. 더하지 마라.** `poker spr`과 같은 현상.
+🔴 **`wet flop poker`는 볼륨 null인데 `wet board poker`는 50이다.**
+   §4-1에서 확립한 「영어권은 board가 아니라 **flop**」(monotone 4.3배·paired 1.5배)이
+   **wet에서는 정반대로 뒤집힌다.** → **텍스처 단어마다 양쪽을 다 재라. 법칙으로 굳히지 마라.**
+🟢 **`geometric bet sizing`은 `lib/` 전체 grep 0건**의 빈자리였고, ⑨는 실제로
+   (1+2f)³ = 200.5÷22.5 = 8.911 → f = **53.7%**를 계산한다. 앱에 지오메트릭 사이징 옵션도 실재한다.
+🪶 카니발 정리 — c벳 필라 L83 보드텍스처 표에 **`Q♥J♥7♣` 투톤 행**이 있고 결론이
+   「Caller-leaning · **check air**」다. ⑨는 같은 텍스처인데 **에어까지 벳**한다(3벳팟이라 그렇다).
+   ⑧이 ①편의 「capped」와 겹쳤을 때처럼 **`:::note`로 명시 대조**했다. 겹침을 대조로 바꾼다.
 
 ### ⑩ 3bet-pot-low-board (8♦5♣2♠)
 `fold equity poker`(WS3 1·DA30) · `what hands should you go all in preflop with`(WS10 5·DA24) ·

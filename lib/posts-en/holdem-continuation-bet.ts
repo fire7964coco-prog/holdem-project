@@ -126,6 +126,8 @@ Put real numbers on it. Say the pot is ==$30== on the flop:
 
 In **tournaments**, lean a touch smaller — often **half pot or less** — because your stack is precious and you can't reload. Whatever you choose, tie the size to the board, not to habit.
 
+Want to see how far the "big on wet boards" gear actually goes? A solver handed two sizes on Q♥T♥7♠ in a three-bet pot puts [98.4% of its range into the two-thirds bet](/en/blog/3bet-pot-bet-sizing "thumb:/images/gto-3bp-dynamic-oop-en.webp") — and the reason is a price you can calculate, not a feel.
+
 ---
 
 ## C-Betting Out of Position
