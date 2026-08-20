@@ -168,7 +168,7 @@ const SPOT_GROUPS = [
     label: "3-Bet Pot — BB 3-bets, BTN calls",
     cond: "OOP: BB (3-bettor) · IP: BTN (caller) · Pot 22.5bb · Stack 89bb · SPR ≈ 4.0",
     items: [
-      { board: "A♦K♠2♥", name: "Ace-High Board, 3-Bettor's Edge", note: "The best flop for the 3-bettor; at low SPR small bets pressure everything" },
+      { board: "A♦K♠2♥", name: "Ace-High Board, 3-Bettor's Edge", slug: "3bet-pot-cbet", note: "The best flop for the 3-bettor; at low SPR small bets pressure everything" },
       { board: "Q♥T♥7♠", name: "Dynamic Two-Tone Board", note: "A board the caller likes too — watch where the 3-bettor slows down" },
       { board: "8♦5♣2♠", name: "Low Dry Board", note: "Misses the 3-bettor entirely, yet overpairs keep the pressure on" },
     ],

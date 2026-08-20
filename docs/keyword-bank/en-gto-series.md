@@ -202,11 +202,68 @@ lowfruits가 준 후보(`paired flop example` · `paired flop poker` · `paired 
    위 Top10은 WebSearch 반환 순서이고 **PAA는 축어로 확보하지 못했다.** 자동완성 질문군으로 대체했다.
    **이걸 PAA라고 부르지 마라.**
 
-### ⑧ 3bet-pot-cbet (A♦K♠2♥ · SPR 4.0) — **13편 중 유일하게 볼륨이 있다**
-★**`poker spr` 480**(DA28) · `what does spr mean in poker`(DA28) · `what is an spr in poker` ·
-`poker spr strategy` · `poker spr rules`(DA30) · `poker spr meaning texas holdem` ·
-`effective stack poker`(WS3 2·DA32)
-⚠ `poker spr calculator / online / app / table / cheat sheet`(DA 4~17)는 **`/en/calculator`의 자리**
+### ⑧ 3bet-pot-cbet (A♦K♠2♥ · SPR 4.0) — 🟢 **2026-08-20 실측: 뱅크가 맞았다 (발행 완료)**
+
+**⑥⑦와 달리 ★후보가 살아남은 첫 편이다.** 그래도 7개 중 4개는 0이었다.
+
+| 뱅크 후보 | 라쿠 US 볼륨 | 추세(12m) | 판정 |
+|---|---|---|---|
+| ★**`poker spr`** | **480** | **−19.9%** | ✅ **주축.** 13편 전체 최대 |
+| `effective stack poker` | 30 | +9.1% | ✅ 보조 |
+| `what does spr mean in poker` | 20 | −7.7% | ✅ FAQ |
+| `what is an spr in poker` | **0** | — | ❌ |
+| `poker spr strategy` | **0** | — | ❌ |
+| `poker spr rules` | **0** | — | ❌ (DA30 표기 무의미) |
+| `poker spr meaning texas holdem` | **0** | — | ❌ |
+
+**새로 찾은 축**
+
+| 키워드 | 볼륨 | 추세(12m/6m/3m) | 판정 |
+|---|---|---|---|
+| ★**`what is spr in poker`** | **140** | 0 / −13.4 / −12.5 | ✅ **H2에 축어로.** 자동완성 후보가 단 3개뿐인 깨끗한 질문형 |
+| `spr poker meaning` | 90 | +1.9 / −6.9 / −12.9 | ✅ FAQ로 흡수 |
+| `spr meaning poker` | 50 | −7.7 | ✅ 위와 한 덩어리 |
+| `stack to pot ratio` | 50 | **−59.3%** | 🔴 반토막. **제목에 풀네임 금지** |
+| `polarized range poker` | 30 | **+12.5 / +12.5 / +12.5** | ✅ 훅 축 최대 + **유일한 상승세** |
+| `capped range poker` | 20 | −11.1 | △ 본문 논거용 |
+| `spr in poker meaning` | 10↗ | **+41.2%** | 🌱 신생·상승 |
+| `stack to pot ratio explained` | 10↗ | 3m **+50%** | 🌱 H2 문구 후보 |
+
+🔴 **`poker spr` = `spr poker` = `spr in poker`는 24개월 배열이 완전히 같은 «한 클러스터»다.
+   총합은 1,440이 아니라 480이다. 더하지 마라.**
+   (같은 현상: `range bet poker`↔`range betting poker` · `3bet pot`↔`3 bet pot`↔`3bet pots`)
+
+🔴 **`what is spr` 720은 포커가 아니다.** 자동완성이 spring water · sprinting · spreadsheet ·
+   spring boot · spravato다. CPC $14.4에 competition 1(비포커 광고).
+   2026-03의 **1900 스파이크**도 포커와 무관한 일회성이다. **조준 금지.**
+   맨 `spr`·`spr meaning`도 다의어(의료·군사·총기)다.
+
+🔴 **`3bet pot` 축은 US 볼륨 10이 상한이다** — 17개 변형(`3bet pot strategy` · `cbet 3bet pot` ·
+   `how to play 3bet pots` · `3bet pots oop` …)이 **전부 0**이고, 0이 아닌 건 `3bet pot(s)` 계열 10 하나뿐.
+   **그런데 SERP는 꽉 차 있다** — GTO Wizard **IP·OOP 2부작**(`c-betting-oop-in-3-bet-pots` ·
+   `c-betting-ip-in-3-bet-pots`) · Upswing `c-bet-3-bet-pots-oop` ·
+   PokerCoaching **보드텍스처 3부작**(low / **high card** / paired — 하이카드가 이 편과 같은 자리).
+   → **볼륨 0 + 강자 정면. 제목 조준 금지, 본문 H2로만.**
+
+🟢 **반대로 SPR 축 SERP는 전부 «용어사전·일반론»이다** (2026-08-20 WebSearch):
+   PokerNews `/pokerterms/stack-to-pot-ratio` · Upswing `/glossary/spr/` **한 장뿐** ·
+   SplitSuit · thepokerbank · 888 · pokercoaching · redchip.
+   **GTO Wizard는 SPR 쿼리 양쪽 다 미출현.**
+   → 「한 스팟(A♦K♠2♥·SPR 4.0)의 실측 솔버 출력」을 가진 글이 SERP에 **없다.** 여기가 빈자리다.
+
+▶ **카니발 — EN은 이 자리가 완전히 비어 있었다** (2026-08-20 전수)
+  `lib/posts-en/`에 **SPR 주력 0편 · 3벳팟 주력 0편 · `condensed` 0건.**
+  `holdem-3bet`은 H2 13개가 **전부 프리플랍**이고 `3bet pot` grep 0건 →
+  카니발이 아니라 **«프리플랍은 저기, 플랍은 여기»로 갈라 붙일 파트너**다(양방향 링크 완료).
+  🔴 **차별화 필수 지점**: ①편이 이미 A하이 보드에서 「BB 레인지가 **capped**」를 썼다.
+     ⑧은 **정반대 구조**(3벳팟에서는 BB가 상단을 독점, BTN이 캡드)임을 `:::note`로 명시 대조했다.
+  🪶 `polarized`는 `holdem-3bet`의 「Linear vs. Polarized 3-Bet Ranges」가 **프리플랍 층**에서 소유 →
+     ⑧은 «플랍에서 콘덴스드 레인지를 상대한다»는 층으로만 썼다.
+
+⚠ `poker spr calculator / chart / online / app / table / cheat sheet`는 **`/en/calculator`의 자리**다.
+⚠ **`poker spr` 480은 하락 중이다**(12m −19.9% · 3m −25.5% · yoy −18.8%). 실재하지만 성장축은 아니다.
+   상승축은 `spr in poker meaning`(+41.2%) · `stack to pot ratio explained`(3m +50%) ·
+   `polarized range poker`(+12.5%) 셋뿐이고 전부 10~30이다.
 
 ### ⑨ 3bet-pot-bet-sizing (Q♥T♥7♠)
 `poker c bet sizing chart`(DA22) · `poker c bet sizing` · `river bet sizing poker`(WS3 2·DA22) ·

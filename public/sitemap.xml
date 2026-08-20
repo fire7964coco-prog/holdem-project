@@ -1396,6 +1396,9 @@
     <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/3bet-pot-cbet" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/3bet-pot-cbet" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/3bet-pot-cbet" />
   </url>
 
   <url>
@@ -2083,7 +2086,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/wsop-2026-tournament-guide" />
   </url>
 
-  <!-- 다국어 블로그 포스트 (465편) -->
+  <!-- 다국어 블로그 포스트 (466편) -->
+
+  <url>
+    <loc>https://www.holdemmaster.com/en/blog/3bet-pot-cbet</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/3bet-pot-cbet" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/3bet-pot-cbet" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/3bet-pot-cbet" />
+  </url>
 
   <url>
     <loc>https://www.holdemmaster.com/en/blog/a-high-board-cbet</loc>
