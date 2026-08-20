@@ -157,7 +157,7 @@ const SPOT_GROUPS = [
       { board: "K♠8♦3♣", name: "Dry King-High Board", slug: "k-high-board-cbet", note: "Still favors the opener, but checks creep up. Compare it with the ace" },
       { board: "Q♠J♦T♠", name: "Connected Broadway, Two-Tone", slug: "broadway-board-strategy", note: "Both ranges connect hard; big bets and check-raises come alive" },
       { board: "9♥8♥7♣", name: "Middle Connected, Two-Tone", slug: "donk-bet-strategy", note: "The caller-friendly texture where \"always c-bet\" falls apart" },
-      { board: "Q♠9♠2♠", name: "Monotone Board", note: "Big bets disappear — even made flushes check often" },
+      { board: "Q♠9♠2♠", name: "Monotone Board", slug: "monotone-board-strategy", note: "Big bets disappear — even made flushes check often" },
       { board: "6♣6♦3♥", name: "Paired Board", note: "Nobody connects, so the bluffing share goes up" },
       // ⚠ 「peaks」(=13개 중 최대)로 쓸 뻔했다. 앱은 "BB check-raises a lot on this texture"라고만
       //    적고 최대라고 하지 않는다 — 13개를 비교해 확인하지 않은 주장은 쓰지 않는다.
