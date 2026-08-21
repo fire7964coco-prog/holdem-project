@@ -163,7 +163,7 @@ Lined up across the series, you can see where this one lands.
 
 | Spot | Who is out of position | OOP bet frequency |
 |---|---|---|
-| A♥7♦2♣ · K♠8♦3♣ · Q♠J♦T♠ (①②③) | BB caller | 0.1–1.9% |
+| A♥7♦2♣ · K♠8♦3♣ · Q♠J♦T♠ (①②③) | BB caller | 0.1%–1.9% |
 | **6♣6♦3♥ paired board (⑥)** | BB caller | **3.0%** |
 | 6♠5♥2♦ low (⑦) | BB caller | 3.2% |
 | 7♦6♦5♣ blind vs blind (⑫) | SB opener | 9.6% |

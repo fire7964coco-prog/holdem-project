@@ -151,8 +151,8 @@ Lined up against the rest of the series, the gap is obvious.
 
 | Spot | Who is out of position | OOP bet frequency |
 |---|---|---|
-| A♥7♦2♣ · K♠8♦3♣ · Q♠J♦T♠ (①②③) | BB caller | 0.1–1.9% |
-| 6♣6♦3♥ · 6♠5♥2♦ (⑥⑦) | BB caller | 3.0–3.2% |
+| A♥7♦2♣ · K♠8♦3♣ · Q♠J♦T♠ (①②③) | BB caller | 0.1%–1.9% |
+| 6♣6♦3♥ · 6♠5♥2♦ (⑥⑦) | BB caller | 3.0%–3.2% |
 | **7♦6♦5♣ blind vs blind (⑫)** | **SB opener** | **9.6%** |
 | Q♠9♠2♠ monotone (⑤) | BB caller | 11.2% |
 | 9♥8♥7♣ connected (④) | BB caller | 23.7% |
@@ -172,7 +172,7 @@ Blind versus blind, the two collapse into one. The small blind raised, and the s
 
 | | Preflop aggressor | First to act on the flop | OOP bet |
 |---|---|---|---|
-| BTN vs BB (①–⑦) | BTN | **BB** | split → 0.1–23.7% |
+| BTN vs BB (①–⑦) | BTN | **BB** | split → 0.1%–23.7% |
 | SB vs BB (⑪ K-T-6) | **SB** | **SB** | together → **67.4%** |
 | SB vs BB (⑫ 7-6-5) | **SB** | **SB** | together, and yet → **9.6%** |
 

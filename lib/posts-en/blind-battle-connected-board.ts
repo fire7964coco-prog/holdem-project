@@ -159,8 +159,8 @@ Placed on the series, you can see where this spot sits.
 
 | Spot | Who is out of position | OOP bet frequency |
 |---|---|---|
-| A♥7♦2♣ · K♠8♦3♣ · Q♠J♦T♠ (①②③) | BB caller | 0.1–1.9% |
-| 6♣6♦3♥ · 6♠5♥2♦ (⑥⑦) | BB caller | 3.0–3.2% |
+| A♥7♦2♣ · K♠8♦3♣ · Q♠J♦T♠ (①②③) | BB caller | 0.1%–1.9% |
+| 6♣6♦3♥ · 6♠5♥2♦ (⑥⑦) | BB caller | 3.0%–3.2% |
 | **7♦6♦5♣ blind vs blind (⑫)** | **SB opener** | **9.6%** |
 | Q♠9♠2♠ monotone (⑤) | BB caller | 11.2% |
 | 9♥8♥7♣ connected (④) | BB caller | 23.7% |

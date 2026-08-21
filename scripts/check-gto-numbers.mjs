@@ -102,6 +102,25 @@ const pctSet = (text) => {
   const body = text.replace(/:::readnext[\s\S]*?:::/g, "");
   return new Set([...body.matchAll(/(?<![\d.])(\d+\.\d)\s*%(?!p)/g)].map((m) => m[1]));
 };
+/**
+ * 🪶 **커버리지 출력 — 이 게이트가 «못 보는» 수치를 매 실행 드러낸다.**
+ *
+ * 「73.4~75.2%」처럼 **범위의 앞 숫자에 %를 안 붙이면** 위 pctSet 이 그 값을 못 잡는다
+ * (정규식이 «숫자.숫자%» 꼴만 잡기 때문이다). 그러면 —
+ *   · A(정본 대조)에서 그 값이 본문에 있는데도 「안 쓴다」로 읽힐 수 있고
+ *   · B(로케일 간 대조)에서 **두 로케일이 같은 표기면 양쪽 다 숨어** 드리프트가 검사 밖이 된다.
+ *
+ * 🔴 이건 «결함»이 아니라 «미검사»다 → 🔴/🟠 로 세지 않고 별도 절로 출력한다.
+ *    「0건」을 커버리지 없이 믿지 않는다는 규율(§14-A)은 게이트의 **초록불에도** 걸린다.
+ *
+ * 실측 근거: 2026-08-21 EN ⑫⑬ 번역 중 **같은 원인으로 🔴가 두 번** 떴다
+ * (⑫ 「73.4~75.2%」 · ⑬ 「106.9~117.8%」·「0.1~26.0%」). 원인은 번역이 아니라 **KO 표기**였다.
+ * → **범위는 늘 「A%~B%」로 쓴다.**
+ */
+const hiddenRanges = (text) => {
+  const body = text.replace(/:::readnext[\s\S]*?:::/g, "");
+  return [...body.matchAll(/(?<![\d.])(\d+\.\d)\s*[~–—-]\s*(\d+\.\d)\s*%/g)].map((m) => m[0].trim());
+};
 
 function run({ locale = null } = {}) {
   const series = loadSeries();
@@ -110,6 +129,7 @@ function run({ locale = null } = {}) {
   const dirs = all.filter(([l]) => !locale || l === locale || l === BASE);
 
   let red = 0, orange = 0, ok = 0, notPublished = 0;
+  const hidden = [];   // 🪶 커버리지: 게이트가 못 보는 「A~B%」 표기
   const lines = [];
 
   for (const row of spec) {
@@ -123,6 +143,7 @@ function run({ locale = null } = {}) {
       if (!existsSync(file)) { notPublished++; continue; }
       const text = extractContent(readFileSync(file, "utf8"));
       present.set(loc, text);
+      for (const h of hiddenRanges(text)) hidden.push({ loc, slug, h });
       for (const [label, v] of [["OOP 에퀴티", row.oopEquity], ["OOP EQR", row.oopEqr], ["IP EQR", row.ipEqr]]) {
         if (v == null) continue;
         if (has(text, v)) ok++;
@@ -160,7 +181,25 @@ function run({ locale = null } = {}) {
   console.log(`\n✅ 일치 ${ok} · 🟠 대조 불가 ${orange} · 🔴 ${red}`);
   console.log(`🪶 미발행 (편 × 로케일) 조합 ${notPublished}개는 검사 대상이 아니다.`);
   console.log("⚠ 🟠 는 «틀렸다»가 아니라 «그 글이 그 수치를 안 써서 대조하지 못했다»는 뜻이다.");
-  console.log("⚠ B(로케일 간 대조)는 «수치 집합»만 본다 — 어느 자리에 쓰였는지는 사람이 본다.\n");
+  console.log("⚠ B(로케일 간 대조)는 «수치 집합»만 본다 — 어느 자리에 쓰였는지는 사람이 본다");
+
+  // 🪶 커버리지 절 — 「0건」을 커버리지 없이 내보내지 않는다
+  console.log("\n── 🪶 커버리지: 이 게이트가 «못 보는» 수치 ──");
+  if (!hidden.length) {
+    console.log("범위 표기 「A~B%」 0건 — 본문의 소수 퍼센트를 전부 보고 있다.");
+  } else {
+    const byFile = new Map();
+    for (const { loc, slug, h } of hidden) {
+      const k = `[${loc}] ${slug}`;
+      if (!byFile.has(k)) byFile.set(k, []);
+      byFile.get(k).push(h);
+    }
+    console.log(`범위 표기 「A~B%」 ${hidden.length}건 — **앞 숫자가 검사 밖이다**(뒤 숫자만 잡힌다).`);
+    for (const [k, v] of byFile) console.log(`   ${k} — ${v.join(" · ")}`);
+    console.log("⚠ 결함이 아니라 **미검사**다. 두 로케일이 같은 표기면 양쪽 다 숨어 드리프트가 안 잡힌다.");
+    console.log("→ 그 값을 검사에 넣으려면 「A%~B%」로 양끝에 % 를 붙여라.");
+  }
+  console.log("");
   return red;
 }
 
@@ -168,6 +207,18 @@ function run({ locale = null } = {}) {
 function selftest() {
   const cases = [
     ["정본 값이 있으면 has=true", () => has("equity 45.1% and EQR 84.0%", 45.1) === true],
+    ["「A~B%」는 앞 숫자가 pctSet에 안 잡힌다", () => {
+      const p = pctSet("체크 빈도는 73.4~75.2% 입니다");
+      return p.has("75.2") && !p.has("73.4");
+    }],
+    ["hiddenRanges가 그 표기를 잡는다", () => hiddenRanges("체크 빈도는 73.4~75.2% 입니다").length === 1],
+    ["「A%~B%」는 hiddenRanges가 안 잡는다(오탐 방지)", () => hiddenRanges("73.4%~75.2%").length === 0],
+    ["양끝에 %가 있으면 둘 다 pctSet에 잡힌다", () => {
+      const p = pctSet("73.4%~75.2%");
+      return p.has("73.4") && p.has("75.2");
+    }],
+    ["en 대시도 잡는다", () => hiddenRanges("106.9–117.8%").length === 1],
+    ["readnext 안은 세지 않는다", () => hiddenRanges(":::readnext\n/blog/x | 1.2~3.4% | /i.webp\n:::").length === 0],
     ["없으면 has=false", () => has("EQR is 84.3% here", 84.0) === false],
     ["앞자리가 붙은 숫자에 안 걸린다", () => has("at 184.0% growth", 84.0) === false],
     ["소수점 없는 값과 구분한다", () => has("100% of the range", 84.0) === false],
