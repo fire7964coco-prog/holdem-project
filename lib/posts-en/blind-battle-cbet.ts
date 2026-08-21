@@ -50,7 +50,8 @@ import type { Post } from "../posts";
  *      있었는데 어순만 바꾼 **`range advantage poker`는 30**이고 12개월 **+54.8%** 상승세다.
  *      ①의 태그를 30 쪽으로 바꿨다(근거는 ① 헤더에 박아 뒀다). **⑪이 가져오지 않았다** — 층이 다르다.
  *
- * 🔴 EN 링크 제약 (⑬ 발행 시 반드시 되돌아올 것)
+ * ✅ EN 링크 제약 — **2026-08-21 전부 해소됐다. 다시 빼지 마라.**
+ *   ⑫·⑬ 모두 같은 회차에 발행돼 링크를 걸었다. 아래는 당시 기록이다.
  *   ✅ **2026-08-21: ⑫ 링크는 걸었다** — 같은 회차에 EN ⑫를 발행해 본문 6곳 + readnext를 복원했다.
  *      **다시 빼지 마라.** ⑫는 이 편의 논거에 필수인 반례다(같은 자리인데 9.6%).
  *   ⚠ 남은 것은 ⑬뿐이다. 아래는 당시 기록이다:
@@ -163,7 +164,7 @@ Lined up against the rest of the series, the gap is obvious.
 
 ## Why does the out-of-position player lead here?
 
-**Because this is the seat where the preflop aggressor also acts first on the flop.** ⚠ That is a *necessary* condition, not a sufficient one — the same structure produces **9.6%** [at ⑫](/en/blog/blind-battle-connected-board "thumb:/images/gto-sb-connected-oop-en.webp") and **80.1%** at ⑬. The seat opens the door; the board decides how far you walk through it.
+**Because this is the seat where the preflop aggressor also acts first on the flop.** ⚠ That is a *necessary* condition, not a sufficient one — the same structure produces **9.6%** [at ⑫](/en/blog/blind-battle-connected-board "thumb:/images/gto-sb-connected-oop-en.webp") and **80.1%** [at ⑬](/en/blog/ace-paired-board-strategy "thumb:/images/gto-sb-paired-ace-oop-en.webp"). The seat opens the door; the board decides how far you walk through it.
 
 In an ordinary hand these two come apart. When the button opens and the big blind calls, **the aggressor is the button but the first to act is the big blind.** That is what builds the check-then-c-bet structure, and it is what ① through ⑦ all looked like.
 
@@ -265,7 +266,7 @@ The big blind's 96.1% is the other face of the same story. **Position, and still
 ## What changes at the table?
 
 - **Blind versus blind, do not default to "no position, so check."** If you opened from the small blind, the **preflop** range edge is yours, and the solver bets 67.4% on this board. **But you still read the board** — a king with a broadway kicker suits the opener, and on boards that fit the caller the check comes back even from this seat. The [7♦6♦5♣ connected board](/en/blog/blind-battle-connected-board) is exactly that: the same small blind bets only 9.6%.
-- **The size is a third of the pot.** With the big blind defending 525 combos, small and wide is right. ⚠ Do not turn that into "betting big is worse" — **this study spot only had the 33% size in the tree.** With no larger size solved, "what if I had bet big" is a question this calculation cannot answer. The A-A-6 spot later in the series does have 75% open alongside it.
+- **The size is a third of the pot.** With the big blind defending 525 combos, small and wide is right. ⚠ Do not turn that into "betting big is worse" — **this study spot only had the 33% size in the tree.** With no larger size solved, "what if I had bet big" is a question this calculation cannot answer. [The A-A-6 spot](/en/blog/ace-paired-board-strategy) later in the series does have 75% open alongside it.
 - **★At SPR 16.2, decide in advance what a raise means.** Betting 67.4% of your range means facing raises often, and with **sixteen pots** left behind you this is not a stack-off spot for top pair. That is the reverse of a three-bet pot at SPR 4.0, where "raise" meant "the stack is going in." Here calling and seeing a turn covers far more of your range, and outside nine set combos and **two pair (K-T, K-6, T-6)** there is little reason to commit — 🪶 note that **A-A is *below* two pair here** (an overpair pinned under the king; the class table reads set 1.7% · two pair 2.4% · overpair 1.1%). ⚠ The node after a raise is not in this solve, so this is judgment drawn from the SPR, not a solver number.
 - **Defending the big blind, remember what three-betting K-K and T-T costs you.** The result is exactly the structure on this board: the big blind's only set is 6-6. The calling range thins out by that much.
 - **Do not read the 32.6% of checks as weakness.** Check-raising hands are mixed in. The general standards in [c-bet strategy](/en/blog/holdem-continuation-bet "thumb:/images/holdem-continuation-bet-hero.webp") are worth double-checking in this seat.

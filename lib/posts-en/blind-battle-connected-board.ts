@@ -56,7 +56,8 @@ import type { Post } from "../posts";
  *      `who has range advantage`는 **전부 US 볼륨 null**이다. 스팟 축은 늘 이렇다 —
  *      **볼륨이 아니라 카니발 정리가 키워드 팩의 값**이다.
  *
- * 🔴 EN 링크 제약 (⑬ 발행 시 되돌아올 것)
+ * ✅ EN 링크 제약 — **2026-08-21 해소됐다. 다시 빼지 마라.**
+ *   같은 회차에 EN ⑬을 발행해 본문 2곳 + readnext를 KO와 같게 복원했다. 아래는 당시 기록이다.
  *   KO ⑫는 ⑬(`ace-paired-board-strategy`)을 **본문 2곳 + readnext**에서 링크한다. EN ⑬가 아직 없어
  *   **문장은 전부 살리고 링크만 뺐다.** → **EN ⑬ 발행 직후 이 파일에 링크를 걸어라.**
  *   대체한 것 하나: `holdem-check-raise` → `low-board-check-raise`(⑦).
@@ -268,7 +269,7 @@ Three kinds of cell carry a visibly thicker stripe. (The frequencies below are c
 - **A-7 suited and K-7 suited** — top pair with a seven. They get picked not for strength but because **thin value comes with an ace or king blocker** (one fewer ace-high or king-high in the opponent's range). Top pair on this board actually trails, 39 combos to 60.
 - **K-4 suited and Q-4 suited** — a suited four. Add a four to 7-6-5 and you hold ==4-5-6-7==, an open-ender completing on a three or an eight. By class average that is Q-4s at 30.9% and K-4s at 27.1%, but **as individual combos Q♠4♠ and Q♥4♥ hit 54.7%, the highest in the entire spot.**
 
-The 9.6% is built by mixing a little value with a few draws. Eight-eight tops the class ranking because **one hand does both jobs at once.** ⚠ That is not a general rule, though — **none of the top three individual combos does both** (Q♠4♠ at 54.7% is a pure draw, A♣7♣ at 54.4% is thin value with a blocker, T♣9♣ at 52.2% is a gutshot). The best single combo of the double-duty hand, 8♦8♣, is *lower* at 47.1%. **The 9.6% was not selected by any one criterion.** **And checking 90.4% is not the small blind giving up on this board** — it is that leading with thin value and then facing a raise costs far more than it makes. ⚠ Do not look for the reason in the 6bb pot, the 97bb stack or the SPR of 16.2, though — those three are **exactly the same constants** on [⑪ K-T-6](/en/blog/blind-battle-cbet "thumb:/images/gto-sb-king-mid-oop-en.webp") and on the A-A-6 board later in the series, where the same small blind bets 67.4% and 80.1%. What produced 9.6% is not the stack; it is **three board cards**.
+The 9.6% is built by mixing a little value with a few draws. Eight-eight tops the class ranking because **one hand does both jobs at once.** ⚠ That is not a general rule, though — **none of the top three individual combos does both** (Q♠4♠ at 54.7% is a pure draw, A♣7♣ at 54.4% is thin value with a blocker, T♣9♣ at 52.2% is a gutshot). The best single combo of the double-duty hand, 8♦8♣, is *lower* at 47.1%. **The 9.6% was not selected by any one criterion.** **And checking 90.4% is not the small blind giving up on this board** — it is that leading with thin value and then facing a raise costs far more than it makes. ⚠ Do not look for the reason in the 6bb pot, the 97bb stack or the SPR of 16.2, though — those three are **exactly the same constants** on [⑪ K-T-6](/en/blog/blind-battle-cbet "thumb:/images/gto-sb-king-mid-oop-en.webp") and on [the A-A-6 board](/en/blog/ace-paired-board-strategy "thumb:/images/gto-sb-paired-ace-oop-en.webp") later in the series, where the same small blind bets 67.4% and 80.1%. What produced 9.6% is not the stack; it is **three board cards**.
 
 :::note[⚠ This study spot was solved with a single bet size — a third of the pot — as the only option. Open a larger size in the tree and the 9.6% can move. Read it as "under these conditions there is almost nothing worth betting, even small."]:::
 
@@ -281,7 +282,7 @@ The 9.6% is built by mixing a little value with a few draws. Eight-eight tops th
 
 :::readnext[Keep reading]
 /en/blog/blind-battle-cbet | The Player With No Position Bets First — 67.4% of the Time | /images/gto-sb-king-mid-oop-en.webp
-/en/blog/3bet-pot-low-board | Three Combos Hit This Flop — and It Still Bets 97.8% | /images/gto-3bp-low-oop-en.webp
+/en/blog/ace-paired-board-strategy | Two Aces on the Flop and the Bet Jumps to 80% | /images/gto-sb-paired-ace-oop-en.webp
 :::
 
 ## Check it yourself
@@ -300,7 +301,7 @@ A. Mostly you check. The solver passes 90.4% into a check on 7♦6♦5♣. Even 
 
 **Q. The small blind has three times as many overpairs. Why is the bet only 9.6%?**
 
-A. Because the opponent holds plenty that beats an overpair on this board: 42 combos of sets, two pairs and straights, plus 24.9% open-enders and 23.8% gutshots. Even the 60 combos of top pair currently behind hold cards that flip it by the river. An overpair here is "ahead now, hard to put in more than once." ⚠ Do not look for the reason in the SPR of 16.2 — a 6bb pot, a 97bb stack and an SPR of 16.2 are **the same constants** on the K-T-6 and A-A-6 boards, where the same small blind bets 67.4% and 80.1%. What produced 9.6% is not the stack; it is three board cards.
+A. Because the opponent holds plenty that beats an overpair on this board: 42 combos of sets, two pairs and straights, plus 24.9% open-enders and 23.8% gutshots. Even the 60 combos of top pair currently behind hold cards that flip it by the river. An overpair here is "ahead now, hard to put in more than once." ⚠ Do not look for the reason in the SPR of 16.2 — a 6bb pot, a 97bb stack and an SPR of 16.2 are **the same constants** on the [K-T-6](/en/blog/blind-battle-cbet) and [A-A-6](/en/blog/ace-paired-board-strategy) boards, where the same small blind bets 67.4% and 80.1%. What produced 9.6% is not the stack; it is three board cards.
 
 **Q. Which of the two spots is the blind-versus-blind default?**
 
