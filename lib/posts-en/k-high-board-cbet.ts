@@ -49,7 +49,7 @@ export const POST: Post = {
   tldr: "On K♠8♦3♣ after a button open and a big blind call, the big blind checks 99.8% of its range — an even purer range check than the 98.2% on an ace-high flop. Two things cause it: the big blind holds no overpair here, because AA three-bets preflop, and equity realization splits 80.7% against 116.7%.",
   category: "strategy",
   date: "2026-08-19",
-  updated: "2026-08-19",
+  updated: "2026-08-21",
   readTime: "9 min",
   emoji: "👑",
   image: "/images/gto-srp-dry-king-oop-en.webp",
@@ -145,11 +145,11 @@ The hand count matches the solver exactly. The big blind has 88 and 33 at three 
 | Ace high | 27.0% | **30.0%** |
 | No made hand | **35.4%** | 28.3% |
 
-Read it top to bottom. **Every category at the top of the range — sets, overpairs, top pair — belongs to the button, and the weakest one, no made hand, is 7.1 points heavier for the big blind.** The categories where the big blind leads are all middling: two pair, second pair, weak pair. Plenty of hands, none of them able to carry a pot. Betting first with a range shaped like that means your weak half is paying off their strong half.
+Read it top to bottom. **Every category at the top of the range — sets, overpairs, top pair — belongs to the button, and the weakest one, no made hand, is 7.1 points heavier for the big blind.** The categories where the big blind leads are two pair, second pair and weak pair. **Two pair is the second-best category on this board**, ahead of an overpair, and the big blind holds twice as much of it — but 0.8% of 474 combos is **four hands.** It fails to carry the range because there is none of it, not because it ranks low. The other two are genuinely middling. Betting first with a range shaped like that means your weak half is paying off their strong half.
 
 ## Why is almost a third of both ranges ace high?
 
-**It is a king-high board — the aces have nowhere to land.** Ace high is 27.0% of the big blind's range and 30.0% of the button's, close to a third each. On A-7-2 that group does not exist, because every ace is instantly top pair.
+**It happens on any board without an ace.** Ace high is 27.0% of the big blind's range and 30.0% of the button's, close to a third each. On A-7-2 that group does not exist, because every ace is instantly top pair. So the contrast is not "king-high against everything else" but **"boards with an ace against boards without one"** — on the 8-5-2 flop later in this series, solved with a three-betting range, ace-high climbs to **48.2%**.
 
 That group is what makes this flop interesting. AQ and AJ have no pair, yet they beat every hand in the opponent's "no made hand" column, so they have showdown value. On the button, they are not automatic c-bets: part of the time they check back and take the free showdown.
 
@@ -169,22 +169,22 @@ The arithmetic: the pot is 5.5bb, so the big blind's equity share is ==5.5 × 46
 
 :::note[The EQR figures in this series are the ones shown on the solver screen. Recomputing them from the rounded equity and EV on the same screen can land a tenth of a point off — that is rounding, not a contradiction.]:::
 
-The ace-high flop was 84.0% against 113.1%. **Same dry texture, wider gap on the king board.** The quieter the board — no draws, nothing forcing action — the longer the player who acts last keeps their information edge. Why the seat itself is worth so much is covered in [playing position](/en/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp").
+The ace-high flop was 84.0% against 113.1%. **Same dry texture, wider gap on the king board.** Not because this board is *quieter*, though — the two widest EQR gaps in this series belong to boards drenched in draws: the [Q-J-T two-tone flop](/en/blog/broadway-board-strategy "thumb:/images/gto-srp-broadway-oop-en.webp") at 41.5 points and the Q-T-7 three-bet pot at 42.7. What opens the gap here is **one column at the top** — on A-7-2 neither player has an overpair, while on K-8-3 the button has 1.3% and the big blind has none. Why the seat itself is worth so much is covered in [playing position](/en/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp").
 
 ## Are there really no draws here?
 
-**No completed draw types at all.** K, 8 and 3 are three different suits and too far apart to connect, so there is no flush draw and no open-ended straight draw for either player.
+**No draws at all.** K, 8 and 3 are three different suits and too far apart to connect, so there is no flush draw and no open-ended straight draw for either player — **and no gutshot either.** A flop straight draw needs two board cards inside one five-card run, since you only hold two, and K to 8 is five ranks apart, as is 8 to 3. No run holds two of them.
 
 | Draw | BB | BTN |
 |---|---|---|
 | Backdoor flush (needs two more of a suit) | 27.8% | 22.3% |
 | No draw | **72.2%** | **77.7%** |
 
-What is left is the backdoor flush. It needs the turn *and* the river to bring the same suit, so it completes only ==10/47 × 9/46 = about 4.2%== of the time. It still matters: when you have to pick bluffs, **a hand with a backdoor beats a hand with nothing**, because if the turn brings that suit you now hold a real draw and a reason to fire again — the setup for a delayed c-bet on the turn.
+What is left is backdoors. The **backdoor flush** the table counts needs the turn *and* the river to bring the same suit, so it completes only ==10/47 × 9/46 = about 4.2%== of the time. The table does not count them, but there are **backdoor straights** too — QJ, JT and T9 run through the board king; 67 and 65 through the eight; 54 through the three. It still matters: when you have to pick bluffs, **a hand with a backdoor beats a hand with nothing**, because if the turn brings that suit you now hold a real draw and a reason to fire again — the setup for a delayed c-bet on the turn.
 
 ## Should you always c-bet a king-high flop?
 
-**Close to it at a small size, but "always" is the wrong word for one group of hands.** The big blind has 35.4% with no made hand and 72.2% with no draw, so a third of the range folds immediately and most of the rest cannot improve. Betting about a third of the pot with most of your range is the standard.
+**Close to it at a small size, but "always" is the wrong word for one group of hands.** The big blind has 35.4% with no made hand, so a third of the range folds immediately. And **72.2% of the whole range has no draw** — note the denominator: that figure counts the entire range, top pair (12.7%), second pair (10.8%) and sets included, so it is not a subset of the no-made-hand block. It means the picture is unlikely to change on later streets. Betting about a third of the pot with most of your range is the standard.
 
 The common advice is that ace-high hands with showdown value should check back. On this board that is **half right**. At a small size, AQ and AJ mix in bets often enough — they fold out hands like QJ, JT and T9 that hold two live cards but no pair, and an ace on a later street gives them the best pair on the board. But they also cost little by checking, so this is where much of the **check-back range** comes from. Neither "always bet" nor "always check back" is correct; the frequency is the answer.
 
@@ -192,7 +192,7 @@ The common advice is that ace-high hands with showdown value should check back. 
 
 ## What changes at the table?
 
-- **In the big blind on a dry king-high flop, leading is not a candidate.** Even with a king. The range-check logic from the ace-high flop applies more strongly here, not less.
+- **Having called a raise heads-up on a dry king-high flop, leading is not a candidate.** Even with a king. The range-check logic from the ace-high flop applies more strongly here, not less. The condition is the **shape of your range**, not the shape of the board, though — where the top of your range is thicker than theirs, the big blind does lead. The counterexample is the [9-8-7 flop](/en/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-en.webp"), where the big blind leads **23.7%** of the time.
 - **Checking is not check-folding.** Facing the small c-bet, the big blind continues wide — every king, the eights, the underpairs, ace-high with a backdoor. Top pair is a call, and the check-raises come mostly from 88, 33 and the two pairs.
 - **On the button, do not give AQ and AJ one fixed treatment.** Betting small and checking back are both defensible; adjust the mix based on whether this opponent actually folds overcards.
 - **Do not read the check as weakness — against a balanced opponent.** That checking range still holds the sets (88, 33) and 12.7% top pair. At low stakes the reverse is often true, because many players simply lead their strong hands, so keep value betting and treat the check-raise as an occasional cost.

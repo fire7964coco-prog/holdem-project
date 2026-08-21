@@ -107,7 +107,7 @@ export const POST: Post = {
   tldr: "On the low rainbow flop 6♠5♥2♦ the big blind checks 96.8% and leads just 3.2% — even though its 48.3% equity is the second highest of the seven spots where it defends. Only one hand makes a straight here, 4-3, and neither range holds it. Nobody has a top end, so nobody leads out of position. The action comes later: re-solve the same tree to see past the flop and the big blind check-raises a 1.8bb bet 14.9% of the time, almost all of it draws.",
   category: "strategy",
   date: "2026-08-20",
-  updated: "2026-08-20",
+  updated: "2026-08-21",
   readTime: "11 min",
   emoji: "🌊",
   image: "/images/gto-srp-low-rainbow-oop-en.webp",
@@ -287,7 +287,7 @@ We read all 487 rows of the per-hand table rather than the first screen of it. S
 Read the second column downward and the pattern is impossible to miss. **Below two pair, every hand in the raise holds a straight draw** — the two that also have a pair (64s and 54s) are raising with the draw attached, not with the pair:
 
 - **98s** holds 5-6-8-9 and needs the ==7==.
-- **87s** holds 5-6-7-8 and takes the ==4 or the 9== — the only open-ender on the board.
+- **87s** holds 5-6-7-8 and takes the ==4 or the 9== — the only open-ender **in this range**. ⚠ Not the only one the board allows: **74 makes 4-5-6-7** and waits on the 3 or the 8, a textbook open-ender, and 84 is a double gutshot with the same eight outs. The 0.8% in the draw table means this solver's ranges have no 74 suited, not that the board has one open-ender.
 - **J4s, Q4s, 54s and 64s** all hold 2-4-5-6 and need the ==3==.
 
 **Not one hand at the top of that list was chosen for its high card.**
@@ -319,7 +319,7 @@ That combination — a low ceiling and a wide floor — is what produces the num
 
 ## What changes at the table?
 
-- **Stop leading low rainbow boards just because you "hit something."** Equity of 48.3% is not a reason. On 6-5-2 the entire range leads 3.2%, and the hands doing it are barely committed to it.
+- **Stop leading low rainbow boards just because you "hit something."** Equity of 48.3% is not a reason. On 6-5-2 the entire range leads 3.2%, and the hands doing it are barely committed to it. The lead here is a single size, a third of the pot, so the button only needs **19.8%** to call — and its ace-highs and king-highs, **42.9%** of the range between them, clear that bar easily. You do not fold them out, and what does call has hands that beat you mixed in.
 - **Check-raise with your sets, all of them.** All nine combos of trips raise 100% of the time. Slow-playing a set here — when the button has just as many — throws away the one big pot you were going to win.
 - **Pick your bluffs by draw, not by high card.** The raising range is built from gutshots. An ace-high with no draw — A-J, A-9 — belongs in the calling range, the 65.6%, not the raise. (A-K never reaches this spot: the big blind's defending range tops out at A-J.)
 - **Do not over-fold to a small bet.** Against 1.8bb into 5.5bb the solver keeps **80.5%** of its range, above the 75.3% break-even figure. Folding your king-high and weak pairs to one small bet is the single most exploitable habit on a board like this.

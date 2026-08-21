@@ -53,7 +53,7 @@ export const POST: Post = {
   tldr: "On Q♠J♦T♠ after a button open and a big blind call, the big blind checks 99.9% — even though 68.4% of its range holds a draw. The cause is nut advantage: straights 10.5% against 7.1%, sets 2.0% against 0.7%, overpairs 2.6% against 0%. Equity realization splits 77.9% against 119.4%, the widest gap of the three dry-to-wet flops so far.",
   category: "strategy",
   date: "2026-08-19",
-  updated: "2026-08-19",
+  updated: "2026-08-21",
   readTime: "10 min",
   emoji: "🎴",
   image: "/images/gto-srp-broadway-oop-en.webp",
@@ -85,7 +85,7 @@ Result | BB checks 99.9% — draws everywhere, still no lead
 :::
 
 > **Quick answer**
-> The big blind checks **99.9%** on Q♠J♦T♠, with 68.4% of its range holding a draw. The reason is **nut advantage**: straights 10.5% against 7.1%, sets 2.0% against 0.7%, overpairs 2.6% against 0%. The top of the range sits entirely with the button, so betting first folds out the hands you beat and gets called by the hands you don't.
+> The big blind checks **99.9%** on Q♠J♦T♠, with 68.4% of its range holding a draw. The reason is **nut advantage**: straights 10.5% against 7.1%, sets 2.0% against 0.7%, overpairs 2.6% against 0%. The nutted categories sit with the button — two pair alone ties at 6.0% against 5.9% — so betting first folds out the hands you beat and gets called by the hands you don't.
 
 ## What conditions produced these numbers?
 
@@ -115,14 +115,16 @@ The dry king-high flop was 99.8%. **Move to a board where two-thirds of the rang
 
 ## What is nut advantage on this flop?
 
-**It is who holds the top of the range — and here it is not close.** On Q-J-T the top three categories are straights, sets and overpairs, and the button leads all three.
+**It is who holds the top of the range.** On Q-J-T the categories rank straight → set → **two pair** → overpair, and the button leads every one of them except two pair.
 
 | Top category | BB (OOP) | BTN (IP) | What causes the gap |
 |---|---|---|---|
 | Straight | 7.1% | **10.5%** | The big blind has **no AK** |
 | Trips (set) | 0.7% | **2.0%** | The big blind has **no QQ, no JJ** |
+| Two pair | **6.0%** | 5.9% | Effectively tied — the one row the big blind leads |
 | Overpair | 0.0% | **2.6%** | The big blind has **no AA, no KK** |
-| Two pair | 6.0% | 5.9% | The one row that ties |
+
+Get the order right: **two pair is the third-best category here, above an overpair.** On Q-J-T, JT makes ==J-J-T-T-Q== — two pair — while AA is a single pair. So "the top belongs entirely to the button" overstates it. The conclusion survives anyway: the two genuinely nutted categories, straights and sets, are the button's, and the tied row loses to both of them on this board.
 
 Every gap was created preflop. The big blind three-bets AA, KK, QQ, JJ and AK, so none of them arrive on the flop; the button opens all of them and brings them along.
 
@@ -194,13 +196,13 @@ Line the three flops up and the trend is clean.
 | K-8-3 (dry) | 80.7% | 116.7% | 36.0 points |
 | **Q-J-T (connected, two-tone)** | **77.9%** | **119.4%** | **41.5 points** |
 
-**The busier the board, the more it costs to act first.** Every street brings a real decision, and one player makes theirs blind while the other makes theirs with the answer already on the table — the argument laid out in [playing position](/en/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp").
+Three spots make it look like *busier board, wider gap*. **That rule breaks in the very next spot** — [9♥8♥7♣](/en/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-en.webp") is more connected than Q-J-T and its gap is **13.2 points, the narrowest of the single-raised pots**, with the big blind realizing 93.2%, the highest of them. What opens the gap is not busyness but **whose range the top of the board belongs to**: Q-J-T hands AK, QQ, JJ, AA and KK straight to the button, while 9-8-7 has nothing to do with any of them. Why acting last is worth what it is: [playing position](/en/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp").
 
 ## How should the button bet a dynamic board like this?
 
 **Less often, and bigger when it does.** With the nut advantage, a large bet is hard to raise: the straights, sets and overpairs are all on one side, so the other player has little to push back with.
 
-That is the opposite of the dry-board recipe. There, small and frequent worked because the goal was folding out air. Here, 68.7% of the opponent's range is drawing, so **folds are expensive to buy** — but not every hand can afford the price, so the frequency drops. Size and frequency move in opposite directions on this texture. The board-by-board version is in [continuation bet strategy](/en/blog/holdem-continuation-bet "thumb:/images/holdem-continuation-bet-hero.webp").
+That is the opposite of the dry-board recipe. There, small and frequent worked because the goal was folding out air. Here, **68.4%** of the opponent's range is drawing, so **folds are expensive to buy** — the small size alone cannot do the work, and the large one has to come along. ⚠ Do not push that as far as "so the frequency drops": this study spot solves the flop's first action only, so the button's actual sizing split and c-bet frequency are not in it. The board-by-board version is in [continuation bet strategy](/en/blog/holdem-continuation-bet "thumb:/images/holdem-continuation-bet-hero.webp").
 
 :::note[⚠ Everything above is solver output; this section is a reading of it. The study spot pre-solves only the big blind's first action, so the button's sizing split is not on this screen. Open "Solve this spot yourself" and run the tree if you want the actual numbers.]:::
 
@@ -208,7 +210,7 @@ That is the opposite of the dry-board recipe. There, small and frequent worked b
 
 - **Holding a draw is not a reason to lead from the big blind.** Both players have roughly the same draws here, so a draw is not an edge — leading with one runs into the made hands that only your opponent has.
 - **Do not play top pair for three streets of value on Q-J-T.** 21.0% of their range is already ahead and most of the rest is drawing at you. Calling down beats betting into it.
-- **Remember what is inside that check.** The big blind's 99.9% contains 32 combos of straights (K9, 98) and 27 combos of two pair. This is the board where a large continuation bet runs into a check-raise.
+- **Remember what is inside that check.** The big blind's 99.9% contains 32 combos of straights (K9, 98) and 27 combos of two pair. Those hands are not checking because they are weak — **the button c-bets this board at a high frequency, so passing the action back earns more than leading into it does**, and it keeps the checking range from collapsing into air. So do not read the check as nothing and rule out a check-raise. ⚠ What the *frequency* of that check-raise is, this solve cannot say: the study spot stops at **the flop's first action**, and everything past it needs "Solve this spot yourself."
 - **Against opponents who never fold draws, size up rather than bet more often.** Buying folds is what fails here; charging draws is what works.
 
 :::readnext[Keep reading]

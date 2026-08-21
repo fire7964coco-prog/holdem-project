@@ -123,7 +123,7 @@ export const POST: Post = {
   tldr: "On Q♥T♥7♠ in a 3-bet pot the big blind bets two thirds of the pot (14.9bb) 98.4% of the time. The small size gets 0.7% and checking 0.8% — together barely one combo out of 73. One board earlier, on A♦K♠2♥, the same range split its sizing 57.8/42.2. What collapsed the split is not strength but price. On a board this wet the size is decided by what it costs the caller to keep drawing, and the small bet does not charge enough.",
   category: "strategy",
   date: "2026-08-20",
-  updated: "2026-08-20",
+  updated: "2026-08-21",
   readTime: "12 min",
   emoji: "💧",
   image: "/images/gto-3bp-dynamic-oop-en.webp",
@@ -154,7 +154,7 @@ Result | Two thirds of pot 98.4% — the split collapses
 :::
 
 > **Quick answer**
-> The big blind bets **14.9bb, two thirds of the pot, 98.4% of the time**. The small size at 0.7% and the check at 0.8% are effectively zero, not a strategy you can act on. The reason is the price. A third of the pot asks the caller for about ==19.8%== equity, which the button's four flush-draw combos clear easily. Two thirds asks for about ==28.5%==, and of the button's **40 draw combos only two still clear it** — the twelve-out combo draws that sailed past the small size no longer get there. On A-K-2 the sizing split instead because 63 combos were all a pair or better — a condensed range, with no draws to charge.
+> The big blind bets **14.9bb, two thirds of the pot, 98.4% of the time**. The small size at 0.7% and the check at 0.8% are effectively zero, not a strategy you can act on. The reason is the price. A third of the pot asks the caller for about ==19.8%== equity, which the button's four flush-draw combos clear easily. Two thirds asks for about ==28.5%==, and of the button's **40 draw combos only two still clear it** — the twelve-out combo draws that sailed past the small size no longer get there. On A-K-2 the sizing split instead because 63 combos were all a pair or better — a range with its bottom cut off, and no draws to charge.
 
 ## What conditions produced these numbers?
 
@@ -219,13 +219,13 @@ Bet a third of the pot, 7.4bb, and the caller needs ==7.4 ÷ (22.5 + 7.4 + 7.4) 
 | Open-ended straight — K-J and 9-8 in the other suits | 6 | 8 | ==8 ÷ 47 = 17.0%== | ❌ | ❌ |
 | Gutshot | 30 | 4 | ==4 ÷ 47 = 8.5%== | ❌ | ❌ |
 
-**Of the button's 40 draw combos, two thirds prices out 38.** K♥J♥ and 9♥8♥ pair a flush draw with an open-ender, and fifteen outs beats any size in this tree — but that is ==2 out of 40==. Drop to a third of the pot and the number clearing the bar doubles to **four**, while the 30 gutshots behind them get a far cheaper look at the turn. (Made hands are a separate question: they continue on value, not on price.)
+**Of the button's 40 draw combos, two thirds prices out 38.** K♥J♥ and 9♥8♥ pair a flush draw with an open-ender, and fifteen outs clears **any size in this tree on immediate odds** — but that is ==2 out of 40==, and ⚠ **the outs are not clean.** The big blind holds exactly four two-heart combos — A♥K♥, A♥J♥, A♥5♥, A♥4♥ — and **every one of them contains the A♥** (the queen of hearts is on the board, so A♥Q♥ and K♥Q♥ cannot exist). The button's king-high and nine-high flush draws are chasing nine hearts against a range whose flushes are **all nuts**, and at an SPR of 4 a heart on the turn is a stack decision — reverse implied odds at their sharpest. Drop to a third of the pot and the number clearing the bar doubles to **four**, while the 30 gutshots behind them get a far cheaper look at the turn. (Made hands are a separate question: they continue on value, not on price.)
 
 ⚠ **The column above prices one card. A draw that needs both is a different question — and it pays twice.** Seeing both cards instead of one takes the fifteen-out draw to ==about 54.1%== and the twelve-out draw to ==about 45.0%==; the eight-out straight draw reaches ==31.5%== and even a gutshot gets to ==16.5%==. The caller also has position, a stack of 74.1bb behind, and the option to raise. **The big size puts a price on all of it.**
 
 One step further, though: **the caller cannot simply fold everything either.** Facing 14.9bb into 22.5bb, denying a pure bluff its profit takes ==22.5 ÷ (22.5 + 14.9) = 60.2%== of the range — the minimum defense frequency. The button's genuinely made hands add up to only **33.9%** (6.8 trips, 20.3 top pair, 6.8 second pair).
 
-So the rest has to come from **underpairs (36.1%) and draws**, and almost none of them are getting a good price. What the big size really does, then, is less "chase the draws away" and more **make the middle of the button's range pay badly to stay.**
+🪶 Filling 60.2% does not need the draws at all, though — **33.9% made plus 36.1% underpairs is already 70.0%.** Even if all 38 priced-out draw combos fold, 71.4% of the range remains, comfortably clear. What the big size really does, then, is less "chase the draws away" and more **make the middle of the button's range pay badly to stay** — those underpairs put the money in surrounded by two overcards and every draw on the board.
 
 :::note[⚠ MDF treats the bet as a pure bluff holding no equity of its own. Most of what bets here is not that — 24.7% of the big blind's range is a gutshot, and a gutshot that gives up still had real equity when it fired. Treat 60.2% as a way to think about defending, not a quota to fill.]:::
 
@@ -322,7 +322,7 @@ Everything below assumes **heads-up, three-bet pot, SPR 4**. Add a cold-caller o
 - **A-K is not a check on this flop.** With a queen and a ten out there it is a gutshot to Broadway. On a board where nothing attaches to it, **the same A-K checks** — the rule to carry is not "A-K bets" but "look at what it connects with."
 - **★This is a flop answer, not a plan.** Betting 14.9bb takes the turn SPR to 1.4, so the next bet is effectively the stack. Decide before you bet whether this hand is going there. **A heart on the turn cuts both ways** — the button's four combo draws get there, but so do your own four, and every one of yours holds the A♥ — which also means that when you are the one holding it, two of the button's four cannot exist. What it does to a non-heart ace-high is subtler: the jack you were drawing to is not gone, it is **contaminated**, because a J♥ completes somebody's flush. One size cannot cover all three cases.
 - **★Decide the raise response in advance.** Betting almost the whole range means almost the whole range gets raised, and at SPR 4 a raise is a question about the stack. Sets and overpairs go with it. **Ace-high without two hearts — 24 of those 28 combos — is the clearest fold**, since a bare gutshot is four outs. The four heart hands are the continuing candidates, and A♥K♥ and A♥J♥ are the strongest of them because they carry the gutshot too. Top pair is the real decision, and a flop-only solve does not answer it.
-- **★From the button's seat, plan where the middle pairs stop.** 36.1% of the calling range is an underpair here, and with an MDF of 60.2% the made hands alone do not get the defense close. **The turn is where they go** — a second big bet folds most of them out, and calling the flop without having decided that is how stacks leak.
+- **★From the button's seat, plan where the middle pairs stop.** 36.1% of the calling range is an underpair here. 🔴 Do not read the **MDF of 60.2% as a calling quota**, though — it is a ceiling derived from treating the bet as a pure bluff with no equity, and **45.1% of the big blind's betting range is already made** (8.2 trips, 16.4 overpairs, 20.5 top pair), so the true optimal defense sits **below** it. **The turn is where those pairs go** — a second big bet folds most of them out, and calling the flop without having decided that is how stacks leak. (The turn node is not in this solve, so that is judgment, not a figure.)
 
 :::readnext[Keep reading]
 /en/blog/3bet-pot-cbet | The Flop Nobody Checks — SPR 4 in a 3-Bet Pot | /images/gto-3bp-ace-king-oop-en.webp
@@ -337,7 +337,7 @@ Watch the action strip first: **Bet 14.9bb (66% pot) · 98.4% · 71.9 combos**, 
 
 Then open the **GTO Trainer** in the sidebar. It deals a hand from the real range weights and grades your action by EV lost. Free, no install, no account.
 
-A useful contrast is the ace-high board from the previous spot. A♦K♠2♥ is a rainbow, so **no flush draw exists on it for anybody**, and the big blind's whole range there is a pair or better. Here the "no draw" row reads 43.8% and everything else is live. **That one line is not the full explanation, though** — the 8-5-2 flop later in this series has 78.3% "no draw" and still fires the large size 97.8% of the time. Draw density and range shape both have a vote.
+A useful contrast is the ace-high board from the previous spot. A♦K♠2♥ is a rainbow, so **no flush draw exists on it for anybody**, and the big blind's whole range there is a pair or better. Here the "no draw" row reads only 43.8%. ⚠ The other 56.2% is not all *live*, mind — 26.0 points of it is a **backdoor**, needing runner-runner hearts and completing about 4.2% of the time. Real draws come to 30.1%. **That one line is not the full explanation, though** — the 8-5-2 flop later in this series has 78.3% "no draw" and still fires the large size 97.8% of the time. Draw density and range shape both have a vote.
 
 ## FAQ
 

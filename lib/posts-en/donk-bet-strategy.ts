@@ -57,7 +57,7 @@ export const POST: Post = {
   tldr: "On 9♥8♥7♣ after a button open and a big blind call, the big blind checks 76.2% and leads 23.7% — the first spot in this series where the lead is a real strategy rather than a rounding artifact. Range advantage has not flipped: equity is still 48.5% against 51.5%. What changed is the gap and where each side's strong hands sit.",
   category: "strategy",
   date: "2026-08-19",
-  updated: "2026-08-19",
+  updated: "2026-08-21",
   readTime: "9 min",
   emoji: "🎯",
   image: "/images/gto-srp-middle-connected-oop-en.webp",
@@ -162,11 +162,14 @@ It cuts the other way too. Overpairs belong to the button.
 | Category | BB (OOP) | BTN (IP) |
 |---|---|---|
 | Straight | **5.2%** | 4.2% |
+| Set (trips) | 1.9% | 1.9% |
 | Overpair | 1.3% | **6.4%** |
 | Top pair (9) | **13.6%** | 12.7% |
 | Ace high | 24.2% | **30.5%** |
 | King high | **13.9%** | 11.9% |
 | No made hand | **15.6%** | 9.3% |
+
+⚠ This table lists **only the categories that differ noticeably**, so the columns do not sum to 100%. Two pair (98, 97, 87) and the lower pairs are left out — a category missing from the table is not a category at zero.
 
 The same holds after the money is counted. Equity realization still favors the button, just by less than anywhere else so far.
 
@@ -211,7 +214,7 @@ The large size still exists for a reason. If every straight went into the small 
 
 **On this flop, as the preflop raiser** — whether the big blind leads or checks. It is the clearest "when not to c-bet" board in the study set, and the reason is not the texture but what your own range looks like on it. How that judgment generalizes across board types is in [continuation bet strategy](/en/blog/holdem-continuation-bet "thumb:/images/holdem-continuation-bet-hero.webp").
 
-The reason is the range composition. Ace-high is 30.5% of the button's range, king-high 11.9%, no made hand 9.3%. **That is 51.7% without a pair.** Betting wide from there runs straight into a **check-raise** — the straights and the top pairs that stayed behind in that checking range are exactly what punishes it.
+The reason is the range composition. Ace-high is 30.5% of the button's range, king-high 11.9%, no made hand 9.3% — 51.7% without a pair. 🔴 **But "no pair" is not the reason on its own.** Add the big blind's column the same way and you get **53.7%** — the big blind has *more* of its range unpaired, by 2.0 points, and it is the one leading 23.7% of the time. What actually stops the button is **what stayed behind in the checking range**: 76.2% of the big blind's hands are still there, straights and 13.6% top pair among them, so betting wide runs into a **check-raise**. ⚠ Some of those 24 straight combos lead rather than check, so they are not all sitting in the checking range — and the check-raise *frequency* is not something this solve contains.
 
 Missed **offsuit** high cards like AKo and AQo are standard check-backs: they hold showdown value, and when a raise comes you have nothing to continue with. The suited versions are a different hand — A♥K♥ and A♥Q♥ are nut flush draws here, and they bet.
 
@@ -219,8 +222,8 @@ Missed **offsuit** high cards like AKo and AQo are standard check-backs: they ho
 
 ## What changes at the table?
 
-- **Leads live on middle connected boards after a wide late-position open** — 9-8-7, 8-7-6, 7-6-5. The monotone board in the next spot has about 11% too, while ace-high and king-high dry flops are effectively zero. The condition is not the texture alone but **which range holds more of the nuts on it.**
-- **You still check three-quarters of the time.** When you do lead: small, and with more than your best hands. A range that only leads straights gets read immediately, so top pair and draws belong in the same size.
+- **Leads live on middle connected boards after a wide late-position open.** The monotone board in the next spot has about 11% too, while ace-high and king-high dry flops are effectively zero. ⚠ The only middle connected board this series actually solves is 9-8-7, though, and the condition is not the texture alone but **which range holds more of the nuts on it.** The proof is inside the series: on a 7-6-5 flop in a blind-versus-blind pot, the small blind — the player who opened — leads just **9.6%** of the time. Connected on its own does not produce a lead.
+- **You still check three-quarters of the time.** When you do lead: small, and with more than your best hands — a range that only leads straights gets read immediately, so top pair and draws belong in the same size. Keep the total in view, though: **the whole lead is 23.7%, 16.8 of it at the small size.** Turned into "lead every draw," it becomes half the range and inverts the strategy. The other 76.2% checks.
 - **On the button, resist the c-bet on this texture.** More than half your range has no pair, and the overpairs want a controlled pot rather than a big one.
 - **Against an opponent who c-bets far too often, checking can be worth more than leading** — and check-**raise**, rather than only check-calling, with the straights and top pairs. Letting them bet your strong hands for you is worth more than taking the initiative, but only if you then charge for it.
 - **Read it the other way too.** Against a player who checks back wet boards, leading is worth more than the solver number suggests: checking there simply loses the street.

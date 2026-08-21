@@ -86,7 +86,7 @@ export const POST: Post = {
   tldr: "On A♦K♠2♥ in a 3-bet pot the big blind bets 100% of the time. Checking is 0.0% — not one combo out of 63. In the seven earlier spots its default was to check, between 76.2% and 99.9% of the time. What flipped is not the board but the preflop action: the big blind three-bet instead of calling, so it owns the top of this flop while the button four-bet its pocket aces and kings away. And with an SPR of 4.0 there is no later street to defer to.",
   category: "strategy",
   date: "2026-08-20",
-  updated: "2026-08-20",
+  updated: "2026-08-21",
   readTime: "12 min",
   emoji: "🔥",
   image: "/images/gto-3bp-ace-king-oop-en.webp",
@@ -197,7 +197,7 @@ Run the same three bets in a single-raised pot and you have spent ==3.67 + 8.56 
 
 ## Why is the smaller size used more often?
 
-**Because of the shape of the range, not the depth of the stack.** All 63 combos here are a pair or better, so the range has no bottom half to bluff with and no gap between its halves. A range bunched in the middle like that is called condensed, and condensed ranges use small bets — which is why 57.8% of this one goes out at a third of the pot.
+**Because of the shape of the range, not the depth of the stack.** All 63 combos here are a pair or better, so **the bottom of the range is gone entirely** and it never splits into "nuts or nothing." With no air to pair up with the large size, the whole range gets pushed toward the small one — which is why 57.8% of it goes out at a third of the pot. ("Condensed" is the usual label for a range with no bottom *and* no top; it does not fit here, because this range owns the top of the board outright — all six combos of sets.)
 
 A-K-2 rainbow gives almost nothing to draw to, so there is no need to charge a draw either. Between the two, the range shape is what does the work.
 
@@ -219,17 +219,19 @@ One caveat worth naming: those 130 combos are what a **theoretically correct def
 
 ## How does the button respond to a third-pot c-bet?
 
-**It is not a spot to call all the way down.** The button calls one bet and gives up on the turn, because an SPR of 4.0 means the third bet is already all in.
+**It is a hard spot to call all the way down.** The button's underpairs are blocked by both the ace and the king, and at an SPR of 4.0 there are only three bets left before the stack is gone.
 
-Facing 7.4bb into 22.5bb, denying a pure bluff any profit takes about ==22.5 ÷ (22.5 + 7.4) = 75.3%== of the range — the **minimum defense frequency**. But the button's hands that actually connected with A-K-2 add up to only ==20.8 + 11.5 + 6.9 + 2.3 = 41.5%==.
+⚠ *Which* bet is the all-in depends on the size. At two-thirds it is 14.9 → 34.5 → 39.6, exactly three. At the **7.4bb (one-third)** bet this section is about, three bets come to ==7.4 + 12.3 + 20.4 = 40.1bb==, only 45% of the stack. And the turn node does not exist in this solve — the study spot stops at the flop's first action, so everything from here is read off the range composition.
 
-**To get near 75% it has to continue with middle pocket pairs**, hands that are drawing to two outs. That is also why the small size earns its keep here: at a third of the pot, those 60 combos are priced in to call at least once.
+Facing 7.4bb into 22.5bb, denying a pure bluff any profit takes about ==22.5 ÷ (22.5 + 7.4) = 75.3%== of the range — the **minimum defense frequency**. But the button's hands that actually connected with A-K-2 add up to only ==20.8 + 11.5 + 6.9 + 2.3 = 41.5%==. 🪶 Note that the 2.3% of sets is **22** — it paired the deuce, not the ace or the king. Counting only the hands that paired an ace or a king gives **39.2%**.
 
-:::note[⚠ MDF simplifies the bet to a pure bluff. In practice the right frequency depends on how well a hand holds up on later streets, so treat it as a starting point rather than a target.]:::
+🔴 **In this spot, though, the premise behind MDF does not hold.** MDF is the frequency that makes a **pure bluff with zero equity** indifferent — and the big blind's betting range contains **0.0% no-made-hand, not one combo.** Against a bet with no bluffs in it there is nothing to make indifferent, and both theory and practice point toward folding **more**, not less. So do not read the 41.5% as "therefore continue with middle pocket pairs." That the small size prices those 60 combos in is separately true, but the reason for the size is the **shape of the range** from the previous section; this is a side effect.
+
+:::note[⚠ MDF simplifies the bet to a pure bluff. It only means something when the opponent actually has bluffs — where the betting range is a pair or better all the way down, as it is here, it does not apply at all. In practice also weigh how well a hand holds up on later streets.]:::
 
 ## Why is the EQR 109.6% when the big blind is out of position?
 
-**Because a big enough range advantage outweighs position.** This is the first spot in the series where the out-of-position player realizes more than its equity.
+**Because a big enough range advantage outweighs position.** This is the first spot in the series where the out-of-position player realizes more than its equity — 68.9% against 31.1% is a different order of gap from the single-raised pots, where the out-of-position player ran **45.1% to 48.5%** against **51.5% to 54.9%**.
 
 | | BB (OOP) | BTN (IP) |
 |---|---|---|
@@ -248,7 +250,7 @@ The button's 78.7% is not separate evidence of that — it is the same fact seen
 - **Stop deciding whether to c-bet a three-bet pot — but only heads-up.** On an ace-high dry board where the three-bettor holds the top, the whole range bets, and the only question is the size. If a cold-caller comes along and three players see the flop, "bet everything" stops being true; drop the underpairs first for every extra player.
 - **Count your SPR before the flop comes.** A bigger pot means fewer bets left, not less money. **SPR 4 is the band where three big bets finish the stack** — there is no fourth. Count the bets you have left, then pick the size.
 - **★Betting the whole range is not the same as stacking off with the whole range.** 38.1% of what bets here is a pocket pair below the king. Even inside that group it splits: QQ beats more than half of the button's calling range and is a hand to check the turn with, while TT and 99 fold to a raise.
-- **★Top pair splits by kicker.** Those 21 combos include **A5s and A4s** — hands three-bet as blockers, with the worst kicker there is. The hands the button calls off 89bb with are mostly A-K and 22 — and **A-4 beats neither.** "SPR 4, so it all goes in" applies to **AA, KK and A-K.**
+- **★Top pair splits by kicker.** Those 21 combos include **A5s and A4s** — hands three-bet as blockers, with the worst kicker there is. The range that calls off 89bb is narrow — **22 and A-K at its core**, with a strong top pair like A-Q attached depending on the opponent. **A-4 beats none of it.** The sets (AA, KK) beat all of it. **A-K sits in between**: it chops with the button's A-K and loses to 22, so "SPR 4, so it all goes in" holds unconditionally only for **AA and KK** — whether A-K belongs there depends on how wide the opponent calls.
 - **★If the flop gets raised, the hand is over right there.** At SPR 4 a raise commits the rest of the stack. It is not a call-and-see-the-turn spot: decide to jam or fold right there — sets and two pair go in, low underpairs and weak-kicker top pairs go out.
 - **Do not carry "check 0%" to every three-bet pot.** What changes it is the board more than the range: the same three-bet range on 8-5-2 checks 2.0%, and on a board that runs against the three-bettor a check appears for real. **"An ace and a king together" is the condition behind this zero.** How to build the three-bet range in the first place is in [3-bet strategy](/en/blog/holdem-3bet).
 
@@ -285,7 +287,7 @@ A. This example's calling range does not contain them — most AA and KK four-be
 
 **Q. Why is the small size used more than the big one?**
 
-A. Because the range is condensed — all 63 combos are a pair or better, so it never splits into "nuts or nothing," and condensed ranges bet small. **Not because the stack is shallow:** the [Q-T-7 spot](/en/blog/3bet-pot-bet-sizing "thumb:/images/gto-3bp-dynamic-oop-en.webp") has the same SPR of 4.0 and uses the large size 98.4% of the time.
+A. Because of the shape of the range — all 63 combos are a pair or better, so the bottom is gone and it never splits into "nuts or nothing," and a range like that bets small. **Not because the stack is shallow:** the [Q-T-7 spot](/en/blog/3bet-pot-bet-sizing "thumb:/images/gto-3bp-dynamic-oop-en.webp") has the same SPR of 4.0 and uses the large size 98.4% of the time.
 
 **Q. Do these numbers hold at my stake?**
 

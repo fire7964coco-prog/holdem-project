@@ -251,7 +251,7 @@ One more group counts as two pair, and it is easy to miss: **any hand with a thr
 
 63 also makes a full house, but neither 63 suited nor 63 offsuit is in either range, **so 33 is the entire full-house category** on this flop.
 
-Those four combos explain why paired boards feel dangerous. 6♠6♥ realizes **359.7%** of its equity share and the 33s around 310% — three to four times their share of the pot. Rare — but when one of them hits, the stacks go in.
+Those four combos explain why paired boards feel dangerous. Open the per-hand table and read the EQR column: 6♠6♥ realizes **359.7%** of its equity share (19.78bb of EV), and the three 33s run **309.8%, 309.8% and 309.5%** — three to four times their share of the pot. Rare — but when one of them hits, the stacks go in.
 
 ## Why is the big bet more common than the small one?
 
@@ -307,7 +307,7 @@ What this arithmetic is good for, then, is not "hit 75%" but **"do not fold on t
 
 Open the [free GTO solver](/en/solver), then go to **Study Spots → Paired Board → [⚡ View results]**.
 
-What to look for is **the single 6♠6♥ row** in the per-hand table — the only quads this board allows, and at 359.7% the highest equity realization in the whole series. Compare it with the three 33 rows just below and you can see how few combos the very top of a paired board actually contains.
+What to look for is **the single 6♠6♥ row** in the per-hand table — the only quads this board allows, and at **359.7%** the highest equity realization anywhere in these thirteen spots (second is 6♥6♣ on the [low rainbow flop](/en/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-en.webp") at **318.9%**). Compare it with the three 33 rows just below and you can see how few combos the very top of a paired board actually contains.
 
 Then open the **GTO Trainer** in the sidebar: it deals you a hand using the actual range weights and grades your action in big blinds lost. Free, nothing to install, no account.
 

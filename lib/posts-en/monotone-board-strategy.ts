@@ -104,7 +104,7 @@ Result | Large bet 3.2% — the sizing collapses
 
 ## How does the big blind play a monotone flop?
 
-**Check 88.8%, lead 11.2%.** That is less leading than the [9-8-7 connected board](/en/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-en.webp") at 23.7%, but far more than the dry flops, where it rounded to zero.
+**Check 88.8%, lead 11.2%.** That is less leading than the [9-8-7 connected board](/en/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-en.webp") at 23.7%, but far more than the dry flops, where it ran 1.9% on A-7-2 and 0.2% on K-8-3.
 
 | Big blind's first action | Frequency | Combos |
 |---|---|---|
@@ -114,7 +114,7 @@ Result | Large bet 3.2% — the sizing collapses
 
 The interesting part is not the split inside the lead — it is that **the whole attack shrank.** The large bet's share of the leading range is 29%, which is almost exactly what it was on 9-8-7 (6.9 of 23.7). What changed is the total: leading fell from 23.7% to 11.2%, and the large bet from 6.9% to 3.2%, both roughly halved.
 
-So this is not "the big bet got removed." It is **the big blind betting less overall** — and the reason shows up most clearly in how made flushes behave.
+So neither side is served by the large size, and only one of them is served by the small one — which is why the whole strategy collapses toward "small, or check." This is not "the big bet got removed": it is **the big blind betting less overall** — and the reason shows up most clearly in how made flushes behave.
 
 ## Why does the big bet disappear on a monotone flop?
 
@@ -125,7 +125,7 @@ Once that is true, large bets stop paying anyone.
 :::compare
 If you have a flush | If you don't have a flush
 A big bet folds out everything without a flush | A big bet only gets called by flushes
-A small bet keeps one pair in | A small bet is what folds out one pair
+A small bet keeps one pair in | A small bet is cheap, but one pair does not fold to it
 :::
 
 **Both sides prefer small.** So the strategy collapses toward "small or check" for everyone. This is the clearest board in the series for the principle that sizing is decided by **what your opponent can call with**, not by how strong you are.
@@ -149,11 +149,11 @@ A small bet keeps one pair in | A small bet is what folds out one pair
 
 Why only eight combos? Three of the ace-suited hands are impossible, because **Q♠, 9♠ and 2♠ are already on the board.** Of the nine that remain, A♠K♠ three-bets preflop and never arrives, leaving eight.
 
-The reason for checking is not what you win now but what you win in total. Bet big and every one pair and high card folds. Check, and your opponent bets their own pair or bluffs into you — money you can keep collecting on the turn and river.
+The reason for checking is not what you win now but what you win in total. Bet big and most of the one pairs and high cards fold; a hand with one spade may come along, but against a made nut flush it is drawing at nothing. Either way the money you were going to collect later stops. Check, and your opponent bets their own pair or bluffs into you — money you can keep collecting on the turn and river.
 
 The numbers say it plainly: **EQR 230%**, more than twice the pot share. The pot is 5.5bb and A♠J♠ has an expected value of ==12.36bb==. What is still to come is worth more than what is already there.
 
-Blockers show up in the same table. **A♠J♠ and A♠T♠ check over 80%, while A♠7♠ through A♠4♠ drop to 52–64% and bet far more.** Holding J♠ or T♠ blocks your opponent's second-best flush, so they cannot come at you hard — which makes trapping worth more. Low kickers block nothing, so betting directly is the better way to get paid. (A♠3♠ jumping back to 79.7% is a reminder that this is a tendency, not a rule.)
+Blockers show up in the same table. **A♠J♠ and A♠T♠ check over 80%, while A♠7♠ through A♠4♠ drop to 52–64% and bet far more.** Holding J♠ or T♠ blocks the **jack-high and ten-high flushes** — not the second-best flush, which is king-high, since the Q♠ is on the board. And those are precisely the hands that would have *called* your bet. Removing them from the deck thins the calling range, so the bet is worth less and the hand drifts to a check. Low kickers block none of them, leaving somebody to pay you off, so betting directly is the better way to get paid. (A♠3♠ jumping back to 79.7% is a reminder that this is a tendency, not a rule.)
 
 ## Are non-nut flushes played differently?
 
@@ -192,7 +192,7 @@ What the button has instead is far more **offsuit ace-x and king-x with one spad
 
 **The same top pair is a different hand depending on whether it holds a spade.**
 
-Take Q♥J♦ — top pair, no spade. Already behind against **12.0%** of the button's range (flushes 5.7 + sets 1.9 + two pair 1.9 + overpairs 2.5), and another **29.2%** can pass it with one card. That is not a hand for three streets of value; it is a hand that catches a bluff once.
+Take Q♥J♦ — top pair, no spade. Already behind against **12.0%** of the button's range (flushes 5.7 + overpairs 2.5, plus sets and two pair), and behind on the kicker to **AQ and KQ** on top of that: the Q♠ is on the board and the Q♥ is in your hand, so two queens remain, making 8 combos of AQ and 8 of KQ. Separately, another **29.2%** can pass it with one card. That is not a hand for three streets of value; it is a hand that catches a bluff once.
 
 Now take 9♥8♠ — middle pair with a spade. It can win now or improve later, which makes it flexible enough to bet or call.
 
@@ -210,11 +210,11 @@ Now take 9♥8♠ — middle pair with a spade. It can win now or improve later,
 
 The big blind's equity share is ==5.5 × 47.7% = 2.62bb== against an actual 2.37bb, which is the 90.4%.
 
-The 18.4 point gap is the second-smallest in the series, behind 9-8-7 at 13.2. When large bets disappear, so do the difficult decisions — and **position is worth exactly as much as the decisions still left to make.**
+The 18.4 point gap is the second-smallest **of the six single-raised pots**, behind 9-8-7 at 13.2. ⚠ Across all thirteen spots it is only fifth — the blind-versus-blind K-T-6 (7.0) and A-A-6 (9.3) and the 8-5-2 three-bet pot (16.6) are all tighter, and they are different seats. When large bets disappear, so do the difficult decisions — and **position is worth exactly as much as the decisions still left to make.**
 
 ## What changes at the table?
 
-- **When a big bet lands on a monotone board, get ready to fold one pair.** Even in theory the large size falls to 3.2% here. In practice a big bet is usually a flush or a strong semi-bluff.
+- **On a monotone board the big bet is rare to begin with.** In theory the big blind's large size falls to **3.2%** here. ⚠ Do not run that straight into "so fold one pair to a big bet." The 3.2% is how often the big blind **leads**, and when you are the one *facing* a bet, the button's sizing frequencies are not in this solve at all. Look at the button's own column too: made flushes are 5.7% while one-spade draws are **29.2%**, more than five times as many — reading a big bet as "flush" folds you out to semi-bluffs. The first thing to check when a big bet lands is whether **your own hand holds the A♠.**
 - **Don't drive a small flush for three big streets.** The solver checks non-nut flushes 81.4% of the time (nuts: 69.9%). Take value with small bets, and treat a large raise as the A♠ until proven otherwise.
 - **Holding the A♠ promotes a hand to bluff candidate.** A bluff made while knowing your opponent cannot hold the nut flush is a different bet from one made blind.
 - **Against an opponent who never folds a pair, stop trapping.** The 69.9% check assumes the other player bets when checked to; if they only call, bet your flushes and take the money.
