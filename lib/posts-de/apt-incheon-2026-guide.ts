@@ -355,7 +355,7 @@ Verglichen mit der EPT Barcelona (~€5.300 Main) oder WPT Australia (~AUD $5.00
 
 | Nationalität | Visum nötig? | Wie du einreist |
 |---|---|---|
-| USA, Kanada, UK, Australien, NZ, elf EU-Staaten (u. a. DE, AT, FR, IT, ES) | **Kein Visum** | **bis 31.12.2026 vom K-ETA befreit** – nur die kostenlose e-Arrival Card |
+| USA, Kanada, UK, Australien, NZ, elf EU-Staaten (u. a. DE, AT, FR, IT, ES), Norwegen, Schweiz, Liechtenstein | **Kein Visum** | **bis 31.12.2026 vom K-ETA befreit** – nur die kostenlose e-Arrival Card |
 | Japan, Singapur, Hongkong, Macau, Taiwan | **Kein Visum** | **ebenfalls bis 31.12.2026 vom K-ETA befreit** – nur die kostenlose e-Arrival Card |
 | Die meisten anderen Länder | Prüfe [mofa.go.kr](https://www.mofa.go.kr) | Ggf. Touristenvisum nötig |
 

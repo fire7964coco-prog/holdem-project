@@ -353,7 +353,7 @@ Comparado ao EPT Barcelona (Main ~€5.300) ou ao WPT Australia (Main ~AUD $5.00
 
 | Nacionalidade | Precisa de visto? | Como entrar |
 |---|---|---|
-| EUA, Canadá, Reino Unido, Austrália, Nova Zelândia, onze países da UE | **Sem visto** | **Isentos de K-ETA até 31 de dezembro de 2026** — basta a e-Arrival Card gratuita; países não isentos: K-ETA ₩10.000 em k-eta.go.kr |
+| EUA, Canadá, Reino Unido, Austrália, Nova Zelândia, onze países da UE, Noruega, Suíça, Liechtenstein | **Sem visto** | **Isentos de K-ETA até 31 de dezembro de 2026** — basta a e-Arrival Card gratuita; países não isentos: K-ETA ₩10.000 em k-eta.go.kr |
 | Japão, Singapura, Hong Kong, Macau, Taiwan | **Sem visto** | Também isentos de K-ETA até 31 de dezembro de 2026 — basta o e-Arrival Card gratuito |
 | Maioria dos outros países | Confira [mofa.go.kr](https://www.mofa.go.kr) | Pode precisar de visto de turista |
 

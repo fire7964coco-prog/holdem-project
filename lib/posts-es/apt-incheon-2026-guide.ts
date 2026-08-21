@@ -51,7 +51,7 @@ Antes del póker: Corea del Sur se ha convertido, casi sin ruido, en uno de los 
 - **Cultura K:** el Palacio Gyeongbokgung, la aldea hanok de Bukchon y la escena de música en vivo de Hongdae son experiencias culturales de primer nivel, sin exagerar.
 - **Costo:** comparada con Tokio, Hong Kong o Sydney, Seúl es sorprendentemente asequible — una cena completa de BBQ coreano con bebidas sale por menos de $20 por persona.
 
-Y para el visitante internacional: ==g:la mayoría de los pasaportes occidentales (EE. UU., Canadá, Reino Unido, Australia, NZ, Japón y 16 más) están temporalmente exentos de la K-ETA hasta el 31 de diciembre de 2026 — embarcas solo con tu pasaporte y presentas la Tarjeta de Llegada electrónica (e-Arrival Card) gratuita antes de aterrizar.==
+Y para el visitante internacional: ==g:la mayoría de los pasaportes occidentales (EE. UU., Canadá, Reino Unido, Australia, NZ y Japón, entre otros) están temporalmente exentos de la K-ETA hasta el 31 de diciembre de 2026 — embarcas solo con tu pasaporte y presentas la Tarjeta de Llegada electrónica (e-Arrival Card) gratuita antes de aterrizar.==
 
 **Y una razón más que aplica solo a este año.** El propio anuncio de APT lo dice sin rodeos: *"with the APT turning twenty in 2026"* (el APT cumple veinte años en 2026). El tour nació en 2006, cuando Antanas "Tony G" Guoga ganó el Main Event inaugural en Singapur. La temporada del vigésimo aniversario cierra con el APT Championship en Taipéi, y eso hace que **los asientos al Championship que se reparten en Incheon valgan más de lo habitual**.
 
@@ -353,7 +353,7 @@ Comparado con el EPT Barcelona (~€5,300 el Main) o el WPT Australia (~AUD $5,0
 
 | Nacionalidad | ¿Visado? | Cómo entrar |
 |---|---|---|
-| EE. UU., Canadá, Reino Unido, Australia, NZ, once países de la UE (entre ellos ES, DE, FR, IT, NL) | **Sin visado** | Exentos de K-ETA hasta el 31 de diciembre de 2026 (presenta la e-Arrival Card gratuita); países no exentos: K-ETA de ₩10,000 en k-eta.go.kr |
+| EE. UU., Canadá, Reino Unido, Australia, NZ, once países de la UE (entre ellos ES, DE, FR, IT, NL), Noruega, Suiza, Liechtenstein | **Sin visado** | Exentos de K-ETA hasta el 31 de diciembre de 2026 (presenta la e-Arrival Card gratuita); países no exentos: K-ETA de ₩10,000 en k-eta.go.kr |
 | Japón, Singapur, Hong Kong, Macao, Taiwán | **Sin visado** | También exentos de K-ETA hasta el 31 de diciembre de 2026 — presenta la e-Arrival Card gratuita |
 | La mayoría del resto de países | Consulta [mofa.go.kr](https://www.mofa.go.kr) | Puede que necesites visado de turista |
 

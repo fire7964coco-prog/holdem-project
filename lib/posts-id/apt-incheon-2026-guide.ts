@@ -358,7 +358,7 @@ Dibanding EPT Barcelona (Main ~€5.300) atau WPT Australia (Main ~AUD $5.000), 
 | Kewarganegaraan | Perlu visa? | Cara masuk |
 |---|---|---|
 | ==r:**Indonesia**== | ==r:**Perlu visa**== | **Visa turis C-3-9** lewat Kedubes Korea di Jakarta / Korea Visa Portal. ⚠️ Bebas visa 30 hari itu **khusus Pulau Jeju** — harus mendarat langsung di Jeju dan **tidak boleh melanjutkan ke Incheon/Seoul** |
-| AS, Kanada, Inggris, Australia, NZ, Jepang, Singapura, sebelas negara UE | **Tanpa visa** | Dibebaskan dari K-ETA sampai 31 Desember 2026 — cukup e-Arrival Card gratis |
+| AS, Kanada, Inggris, Australia, NZ, Jepang, Singapura, sebelas negara UE, Norwegia, Swiss, Liechtenstein | **Tanpa visa** | Dibebaskan dari K-ETA sampai 31 Desember 2026 — cukup e-Arrival Card gratis |
 | Malaysia | **Tanpa visa** | Tidak masuk daftar pembebasan → **perlu K-ETA** (₩10.000, k-eta.go.kr) |
 | Hong Kong, Makau, Taiwan | **Tanpa visa** | Juga dibebaskan dari K-ETA sampai 31 Desember 2026 — cukup e-Arrival Card gratis |
 | Sebagian besar negara lain | Cek [mofa.go.kr](https://www.mofa.go.kr) | Mungkin perlu visa turis |

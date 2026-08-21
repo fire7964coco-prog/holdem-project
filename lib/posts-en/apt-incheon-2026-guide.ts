@@ -50,7 +50,7 @@ Before the poker: South Korea has quietly become one of the best countries to vi
 - **K-culture:** Gyeongbokgung Palace, Bukchon Hanok Village, and Hongdae's live music scene are legitimately world-class cultural experiences.
 - **Cost:** Compared to Tokyo, Hong Kong, or Sydney, Seoul is remarkably affordable — a full Korean BBQ dinner with drinks runs under $20 per person.
 
-And for international visitors: ==g:most Western passport holders (USA, Canada, UK, Australia, NZ, Japan and 16 more) are temporarily K-ETA-exempt through Dec 31, 2026 — you board with just your passport and submit the free digital e-Arrival Card before landing.==
+And for international visitors: ==g:most Western passport holders (the USA, Canada, the UK, Australia, NZ and Japan among them) are temporarily K-ETA-exempt through Dec 31, 2026 — you board with just your passport and submit the free digital e-Arrival Card before landing.==
 
 **One more reason this year specifically:** APT's own announcement puts it plainly — *"with the APT turning twenty in 2026."* The tour was founded in 2006, when Antanas "Tony G" Guoga won the inaugural Main Event in Singapore. The 20th-anniversary season ends with the APT Championship in Taipei, which makes the championship seats given away in Incheon worth more than they'd normally be.
 
@@ -352,7 +352,7 @@ Compared to EPT Barcelona (~€5,300 Main) or WPT Australia (~AUD $5,000 Main), 
 
 | Nationality | Visa required? | How to enter |
 |---|---|---|
-| USA, Canada, UK, Australia, NZ, eleven EU states (incl. DE, FR, IT, NL, ES) | **No visa** | K-ETA-exempt through Dec 31, 2026 (submit free e-Arrival Card); non-exempt countries: K-ETA ₩10,000 at k-eta.go.kr |
+| USA, Canada, UK, Australia, NZ, eleven EU states (incl. DE, FR, IT, NL, ES), Norway, Switzerland, Liechtenstein | **No visa** | K-ETA-exempt through Dec 31, 2026 (submit free e-Arrival Card); non-exempt countries: K-ETA ₩10,000 at k-eta.go.kr |
 | Japan, Singapore, Hong Kong, Macao, Taiwan | **No visa** | Also K-ETA-exempt through Dec 31, 2026 — submit the free e-Arrival Card |
 | Most other countries | Check [mofa.go.kr](https://www.mofa.go.kr) | May need tourist visa |
 
