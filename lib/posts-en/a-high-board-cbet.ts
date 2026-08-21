@@ -47,6 +47,18 @@ import type { Post } from "../posts";
  *   그 규칙은 «AI가 지어낸 일반론»을 막으려는 것인데 이 글은 성격이 정반대다 —
  *   우리 솔버로 계산한 1차 데이터이고 **재현 가능성이 출처를 대신한다.**
  */
+/**
+ * 🔴 2026-08-21 키워드 정정 — 되돌리지 마라 (EN ⑪ 착수 시 키워드 팩이 잡았다):
+ *   `poker range advantage` → **`range advantage poker`**.
+ *   **뜻은 같은데 어순 하나로 US 볼륨이 10 대 30, 세 배다**(rakko 실측 2026-08-21).
+ *   게다가 30 쪽만 상승세다 — 12개월 **+54.8%** · 6개월 +41.2% · 3개월 +33.3%
+ *   (10 쪽은 12개월 내내 월 10으로 평평하다).
+ *   🪶 「동크벳/돈크벳 320 대 0」과 같은 유형이다 — **동의어의 볼륨이 벌어지면 표기를 실측으로 고른다.**
+ *   ⚠ 이 태그는 ①의 것이다. A 하이 보드가 레인지 우위의 교과서 자리이고
+ *      ③(`range advantage vs nut advantage`)·④(`range advantage`)와 층이 다르다.
+ *      ⑪(블라인드전)이 「레인지 우위가 포지션 열세를 넘는다」를 다루지만 **가져가지 않았다** —
+ *      ⑪의 자리는 `blind vs blind poker`다.
+ */
 export const POST: Post = {
   slug: "a-high-board-cbet",
   title: "Top Pair, Still Checking: A-7-2 C-Bet Frequencies",
@@ -74,7 +86,7 @@ export const POST: Post = {
     "when to c bet",
     "dry board poker",
     "range advantage",
-    "poker range advantage",
+    "range advantage poker",
     "gto solver",
     "equity realization",
   ],
