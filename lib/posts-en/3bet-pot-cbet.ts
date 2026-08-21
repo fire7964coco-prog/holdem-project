@@ -45,6 +45,12 @@ import type { Post } from "../posts";
  *        **BB가 상단을 독점하고 BTN이 캡드**다. 겹침을 대조로 바꾼다.
  *   🪶 `polarized`는 `holdem-3bet`의 「Linear vs. Polarized 3-Bet Ranges」가 프리플랍 층에서
  *      소유한다 → ⑧은 «플랍에서 콘덴스드 레인지를 상대한다»는 층으로만 쓴다.
+ *   🔴 **2026-08-21 정정 — `polarized range poker` 태그를 ⑩(`3bet-pot-low-board`)에 넘겼다. 되돌리지 마라.**
+ *      ⑧이 그 태그를 달고 있었지만 **⑧의 레인지는 폴라가 아니다** — 본문은 「아래가 잘린 레인지」로 쓰고,
+ *      정작 `polarized`라는 단어를 쓰는 204줄은 **8-5-2(=⑩)를 가리킨다**("its range splits into
+ *      overpairs and ace-high with nothing between, and a polarized shape bets big").
+ *      즉 재배분이 아니라 **오태깅 정정**이다. 대체 태그는 `spr meaning poker`(US 50).
+ *      🪶 204줄의 `polarized`라는 «단어»는 그대로 둔다 — ⑩을 가리키는 대조 문장이라 오히려 맞다.
  *
  * ▶ 수치 (§4-B/§4-B-2 정본 · 2026-08-20 라이브 재확인 드리프트 0)
  *   BB(OOP·3벳터): Bet 7.4bb **57.8%**(36.6) · Bet 14.9bb **42.2%**(26.4) · **Check 0.0%(0.0)** ·
@@ -97,7 +103,7 @@ export const POST: Post = {
     "what is spr in poker",
     "effective stack poker",
     "spr poker meaning",
-    "polarized range poker",
+    "spr meaning poker",
     "gto solver",
   ],
   content: `
@@ -172,7 +178,7 @@ Look at the top row. **Three hands make a set on A-K-2 — AA, KK and 22 — and
 
 That is the whole spot. When your opponent almost cannot have the best hand, you can bet with the parts of your range that are not strong at all — and 38.1% of this range is a pocket pair *below* the king.
 
-**"No made hand: 0.0%" is not the reason, though it is easy to think so.** The same three-bet range on a low board tells you otherwise: on the 8-5-2 flop later in this series, 48.2% of the big blind's range is ace-high with no pair at all — and it still checks only **2.0%**. Going from 0% air to 48% air moves the check by two points. What makes a check appear is not how much air you hold; it is whether the board turns against the three-bettor.
+**"No made hand: 0.0%" is not the reason, though it is easy to think so.** The same three-bet range on a low board tells you otherwise: on the [8-5-2 flop](/en/blog/3bet-pot-low-board "thumb:/images/gto-3bp-low-oop-en.webp") later in this series, 48.2% of the big blind's range is ace-high with no pair at all — and it still checks only **2.0%**. Going from 0% air to 48% air moves the check by two points. What makes a check appear is not how much air you hold; it is whether the board turns against the three-bettor.
 
 :::note[⚠ This is the mirror image of the [ace-high flop in a single-raised pot](/en/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-en.webp"). There the big blind was the **capped** one — no AA, AK or AQ, because it would have three-bet them — and it checked 98.2%. Same ace-high texture, opposite seats: the player who three-bet is the player who keeps the top.]:::
 
@@ -201,7 +207,7 @@ Run the same three bets in a single-raised pot and you have spent ==3.67 + 8.56 
 
 A-K-2 rainbow gives almost nothing to draw to, so there is no need to charge a draw either. Between the two, the range shape is what does the work.
 
-⚠ **"Shallow stacks mean small bets" is not it.** Two later spots in this series sit at exactly the same SPR of 4.0 and fire the *large* size almost always — Q-T-7 at **98.4%** and 8-5-2 at **97.8%** — for two different reasons. Q-T-7 is a wet board, so a big bet is what puts a price on the draws. 8-5-2 is dry like this one, but its range splits into overpairs and ace-high with nothing between, and a polarized shape bets big. Same stack depth, opposite sizing, and neither reason is the depth.
+⚠ **"Shallow stacks mean small bets" is not it.** Two later spots in this series sit at exactly the same SPR of 4.0 and fire the *large* size almost always — Q-T-7 at **98.4%** and [8-5-2](/en/blog/3bet-pot-low-board) at **97.8%** — for two different reasons. Q-T-7 is a wet board, so a big bet is what puts a price on the draws. 8-5-2 is dry like this one, but its range splits into overpairs and ace-high with nothing between, and a polarized shape bets big. Same stack depth, opposite sizing, and neither reason is the depth.
 
 **And the large size is not "the strong hands' share" either.** Count the combos that can get a whole stack in — sets, two pair and top pair — and you get ==6 + 9 + 21 = 36 combos, 57.1%==, which is more than the 42.2% that bets large.
 
@@ -252,7 +258,7 @@ The button's 78.7% is not separate evidence of that — it is the same fact seen
 - **★Betting the whole range is not the same as stacking off with the whole range.** 38.1% of what bets here is a pocket pair below the king. Even inside that group it splits: QQ beats more than half of the button's calling range and is a hand to check the turn with, while TT and 99 fold to a raise.
 - **★Top pair splits by kicker.** Those 21 combos include **A5s and A4s** — hands three-bet as blockers, with the worst kicker there is. The range that calls off 89bb is narrow — **22 and A-K at its core**, with a strong top pair like A-Q attached depending on the opponent. **A-4 beats none of it.** The sets (AA, KK) beat all of it. **A-K sits in between**: it chops with the button's A-K and loses to 22, so "SPR 4, so it all goes in" holds unconditionally only for **AA and KK** — whether A-K belongs there depends on how wide the opponent calls.
 - **★If the flop gets raised, the hand is over right there.** At SPR 4 a raise commits the rest of the stack. It is not a call-and-see-the-turn spot: decide to jam or fold right there — sets go in, low underpairs and weak-kicker top pairs go out. Two pair (A-K) depends on how wide the raise is: against a raising range of sets and A-K it is never ahead.
-- **Do not carry "check 0%" to every three-bet pot.** What changes it is the board more than the range: the same three-bet range on 8-5-2 checks 2.0%, and on a board that runs against the three-bettor a check appears for real. **"An ace and a king together" is the condition behind this zero.** How to build the three-bet range in the first place is in [3-bet strategy](/en/blog/holdem-3bet).
+- **Do not carry "check 0%" to every three-bet pot.** What changes it is the board more than the range: the same three-bet range on [8-5-2](/en/blog/3bet-pot-low-board) checks 2.0%, and on a board that runs against the three-bettor a check appears for real. **"An ace and a king together" is the condition behind this zero.** How to build the three-bet range in the first place is in [3-bet strategy](/en/blog/holdem-3bet).
 
 :::readnext[Keep reading]
 /en/blog/low-board-check-raise | Neither Range Holds a Straight Here | /images/gto-srp-low-rainbow-oop-en.webp

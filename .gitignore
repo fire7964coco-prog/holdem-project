@@ -24,6 +24,7 @@ commit-msg.txt
 
 # 솔버 라이브 캡처 원본(PNG) — webp만 커밋한다
 .solver-captures/
+.solver-captures-*/
 
 # hookify 로컬 규칙 (.local = 커밋하지 않는다)
 .claude/*.local.md

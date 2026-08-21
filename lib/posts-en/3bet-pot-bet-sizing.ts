@@ -318,7 +318,7 @@ The button's 75.1% is not independent evidence of anything either — the two EV
 Everything below assumes **heads-up, three-bet pot, SPR 4**. Add a cold-caller or shorten the stacks and "bet the whole range" stops being true.
 
 - **Pick the size from the board before you look at your hand.** Choosing by hand strength means big when strong and small when weak, which is readable. The solver puts 98.4% through one size here.
-- **In a three-bet pot on a board with two draw types, reach for the large size first.** A third of the pot announces "19.8% is enough to continue," and every flush draw on this board clears that with room to spare. (In a single-raised pot the same texture is a different question — see the single-raised-pot note earlier.)
+- **In a three-bet pot on a board with two draw types, reach for the large size first.** A third of the pot announces "19.8% is enough to continue," and every flush draw on this board clears that with room to spare. ⚠ Do not file that away as "draws mean bet big," though — **this article quotes its own counterexample.** The [8-5-2 board](/en/blog/3bet-pot-low-board), where 78.3% of the range has no draw at all, also fires the large size 97.8% of the time, and there the reason is a **polarized range** rather than draws. Read draw density and range shape together. (In a single-raised pot the same texture is a different question — see the single-raised-pot note earlier.)
 - **A-K is not a check on this flop.** With a queen and a ten out there it is a gutshot to Broadway. On a board where nothing attaches to it, **the same A-K checks** — the rule to carry is not "A-K bets" but "look at what it connects with."
 - **★This is a flop answer, not a plan.** Betting 14.9bb takes the turn SPR to 1.4, so the next bet is effectively the stack. Decide before you bet whether this hand is going there. **A heart on the turn cuts both ways** — the button's four combo draws get there, but so do your own four, and every one of yours holds the A♥ — which also means that when you are the one holding it, two of the button's four cannot exist. What it does to a non-heart ace-high is subtler: the jack you were drawing to is not gone, it is **contaminated**, because a J♥ completes somebody's flush. One size cannot cover all three cases.
 - **★Decide the raise response in advance.** Betting almost the whole range means almost the whole range gets raised, and at SPR 4 a raise is a question about the stack. Sets and overpairs go with it. **Ace-high without two hearts — 24 of those 28 combos — is the clearest fold**, since a bare gutshot is four outs. The four heart hands are the continuing candidates, and A♥K♥ and A♥J♥ are the strongest of them because they carry the gutshot too. Top pair is the real decision, and a flop-only solve does not answer it.
@@ -326,7 +326,7 @@ Everything below assumes **heads-up, three-bet pot, SPR 4**. Add a cold-caller o
 
 :::readnext[Keep reading]
 /en/blog/3bet-pot-cbet | The Flop Nobody Checks — SPR 4 in a 3-Bet Pot | /images/gto-3bp-ace-king-oop-en.webp
-/en/blog/broadway-board-strategy | Q-J-T and the Big Blind Checks 99.9% | /images/gto-srp-broadway-oop-en.webp
+/en/blog/3bet-pot-low-board | Three Combos Hit This Flop — and It Still Bets 97.8% | /images/gto-3bp-low-oop-en.webp
 :::
 
 ## Check it yourself
@@ -337,7 +337,7 @@ Watch the action strip first: **Bet 14.9bb (66% pot) · 98.4% · 71.9 combos**, 
 
 Then open the **GTO Trainer** in the sidebar. It deals a hand from the real range weights and grades your action by EV lost. Free, no install, no account.
 
-A useful contrast is the ace-high board from the previous spot. A♦K♠2♥ is a rainbow, so **no flush draw exists on it for anybody**, and the big blind's whole range there is a pair or better. Here the "no draw" row reads only 43.8%. ⚠ The other 56.2% is not all *live*, mind — 26.0 points of it is a **backdoor**, needing runner-runner hearts and completing about 4.2% of the time. Real draws come to 30.1%. **That one line is not the full explanation, though** — the 8-5-2 flop later in this series has 78.3% "no draw" and still fires the large size 97.8% of the time. Draw density and range shape both have a vote.
+A useful contrast is the ace-high board from the previous spot. A♦K♠2♥ is a rainbow, so **no flush draw exists on it for anybody**, and the big blind's whole range there is a pair or better. Here the "no draw" row reads only 43.8%. ⚠ The other 56.2% is not all *live*, mind — 26.0 points of it is a **backdoor**, needing runner-runner hearts and completing about 4.2% of the time. Real draws come to 30.1%. **That one line is not the full explanation, though** — the [8-5-2 flop](/en/blog/3bet-pot-low-board "thumb:/images/gto-3bp-low-oop-en.webp") later in this series has 78.3% "no draw" and still fires the large size 97.8% of the time. Draw density and range shape both have a vote.
 
 ## FAQ
 
@@ -347,7 +347,7 @@ A. Work from what the board gives your opponent, not from what you hold. On Q-T-
 
 **Q. Why bet big on a wet board?**
 
-A. To make the draws pay a losing price. Two thirds of the pot asks the caller for about 28.5% equity, and only two of its 40 draw combos get there — K♥J♥ and 9♥8♥, which hold fifteen outs and 31.9%. Everything else falls short, including the twelve-out combo draws at 25.5%. Drop to a third of the pot and the bar falls to 19.8%, which doubles the number of combos clearing it to four.
+A. To make the draws pay a losing price. Two thirds of the pot asks the caller for about 28.5% equity, and only two of its 40 draw combos get there — K♥J♥ and 9♥8♥, which hold fifteen outs and 31.9%. Everything else falls short, including the twelve-out combo draws at 25.5%. Drop to a third of the pot and the bar falls to 19.8%, which doubles the number of combos clearing it to four. Draws are not the only route to the large size, though — where the range splits into strong and weak with no middle, a [dry board like 8-5-2](/en/blog/3bet-pot-low-board) reaches 97.8% too.
 
 **Q. What is geometric bet sizing?**
 

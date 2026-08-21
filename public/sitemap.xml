@@ -1409,6 +1409,9 @@
     <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/3bet-pot-low-board" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/3bet-pot-low-board" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/3bet-pot-low-board" />
   </url>
 
   <url>
@@ -2089,7 +2092,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/wsop-2026-tournament-guide" />
   </url>
 
-  <!-- 다국어 블로그 포스트 (467편) -->
+  <!-- 다국어 블로그 포스트 (468편) -->
 
   <url>
     <loc>https://www.holdemmaster.com/en/blog/3bet-pot-bet-sizing</loc>
@@ -2109,6 +2112,16 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/3bet-pot-cbet" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/3bet-pot-cbet" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/3bet-pot-cbet" />
+  </url>
+
+  <url>
+    <loc>https://www.holdemmaster.com/en/blog/3bet-pot-low-board</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/3bet-pot-low-board" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/3bet-pot-low-board" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/3bet-pot-low-board" />
   </url>
 
   <url>
