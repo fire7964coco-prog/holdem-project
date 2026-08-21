@@ -25,11 +25,16 @@ export const metadata: Metadata = {
   //            영어 페이지 검색 결과에 한국어 브랜드명이 노출된다.
   title: { absolute: TITLE },
   description: DESCRIPTION,
+  // ★2026-08-21 — `/ja/solver` 신설로 **3개로 늘렸다.**
+  //   🔴 세 파일이 **완전히 같은 문자열 세트**를 선언해야 한다 — `check-hreflang`이
+  //      문자열 일치로 세트를 묶으므로, 한 곳만 고치면 `[세트 불일치]`로 빌드가 선다.
+  //      고칠 때는 반드시 `app/solver` · `app/en/solver` · `app/ja/solver` **셋을 함께.**
   alternates: {
     canonical: `${SITE}/en/solver`,
     languages: {
       "ko-KR": `${SITE}/solver`,
       "en-US": `${SITE}/en/solver`,
+      "ja-JP": `${SITE}/ja/solver`,
     },
   },
   // twitter:*를 안 주면 루트 레이아웃의 한국어가 그대로 나간다

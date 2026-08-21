@@ -40,6 +40,22 @@ const COPY = {
     desc: "Solve postflop spots in your browser — no install, no signup, no limits",
     cta: "Open the solver →",
   },
+  /**
+   * ★2026-08-21 — `/ja/solver`가 열려 **ko + en + ja 세 곳**이 됐다.
+   * 🔴 차별화어를 「無料」가 아니라 **「登録不要」**로 잡았다 — 일본어 SERP 실측(2026-08-21):
+   *    `ポーカー GTOツール 無料` top-10 중 **6개가 이미 제목에 「無料」**를 달고 있어 구별되지 않는다.
+   *    「登録不要・インストール不要」를 표방하는 일본어 페이지는 top-30에 사실상 없다.
+   *    🪶 다만 **badge 가 카드 맨 위에 렌더된다** — ja badge 가 「♠ 無料ツール」라
+   *       「無料」는 결국 첫 글자이자 마지막 문장 양쪽에 있다. **뺀 게 아니라 병기다.**
+   *       (초판 주석이 「뒤로 돌렸다」고 적었는데 렌더 순서를 오독한 것이었다 — 2026-08-21 정정.)
+   */
+  ja: {
+    href: "/ja/solver",
+    badge: "♠ 無料ツール",
+    title: "GTOソルバー",
+    desc: "ポストフロップのGTOをブラウザで計算 — インストールも登録も不要で無料",
+    cta: "ソルバーを開く →",
+  },
 } as const;
 
 export type SolverPromoLocale = keyof typeof COPY;

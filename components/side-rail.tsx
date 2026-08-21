@@ -108,8 +108,16 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
    * ★en이 h1("Poker Tournament Schedule 2026")을 "Tournaments"로 줄여 쓴 것과 같은 층위다.
    *   BOARD_STRINGS의 h1은 레일에 넣기엔 너무 길다(ja "ポーカー大会スケジュール 2026").
    */
+  /**
+   * ★2026-08-21 — `/ja/solver` 신설과 함께 추가. ko 레일의 `/solver`·en 레일의 `/en/solver`와 같은 자리다.
+   *   라벨 "GTOソルバー"는 **지어낸 것이 아니라** 솔버 본체를 `?lang=ja`로 열어 읽은 축어다
+   *   (2026-08-21 · `<title>` = "HoldemMaster GTOソルバー — 無料ブラウザGTOソルバー").
+   *   🔴 라벨은 «검색 축»이 아니라 «메뉴 이름»이다 — 여기서는 `ソルバー` 표기가 맞다.
+   *      제목·H2에 쓰지 않는다는 규율(뱅크 §6)과 충돌하지 않는다. 층이 다르다.
+   */
   ja: [
     { href: "/ja/blog",        icon: "📚", label: "ブログ" },
+    { href: "/ja/solver",      icon: "🧠", label: "GTOソルバー" },
     { href: "/ja/tournaments", icon: "🏆", label: "トーナメント" },
   ],
   es: [
