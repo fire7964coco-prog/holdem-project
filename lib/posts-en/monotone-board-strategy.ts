@@ -54,7 +54,7 @@ export const POST: Post = {
   tldr: "On Q♠9♠2♠, where all three flop cards share a suit, the big blind checks 88.8%, bets small 8.0% and bets big just 3.2%. The large size almost vanishes because the nuts are fixed: a made flush gets called by small bets anyway, and anything without a flush only gets called by flushes. Even the nut flush checks 69.9% on average — and non-nut flushes check more, at 81.4%.",
   category: "strategy",
   date: "2026-08-20",
-  updated: "2026-08-20",
+  updated: "2026-08-21",
   readTime: "10 min",
   emoji: "♠️",
   image: "/images/gto-srp-monotone-oop-en.webp",
@@ -184,7 +184,7 @@ Equity barely moves — 94% against 97.7% — but EQR falls to 197%. **You win l
 
 ⚠ The flush-draw row is **derived**: the solver lists "Flush Draw" and "Combo Draw" separately, and a hand with one spade can appear in either. So it is ==20.5 + 5.1 = 25.6%== for the big blind and ==24.1 + 5.1 = 29.2%== for the button. Worth knowing if you are checking these against the screen.
 
-The split comes from preflop. **The big blind defends cheap suited junk** — hands like J5s, 96s and 85s get called from the big blind, and the spade ones turn into flushes. The button never opens them.
+The split comes from preflop. **The big blind defends cheap suited junk** — hands like J5s, 85s and 74s get called from the big blind, and the spade ones turn into flushes. The button never opens them.
 
 What the button has instead is far more **offsuit ace-x and king-x with one spade.** Not made, but drawing — and this is where the A♠ becomes special. It can make the nut flush, and it also tells you your opponent **cannot** have one.
 
@@ -244,7 +244,7 @@ A. No. In this solve the eight nut-flush combos check between 52.7% and 84.2%, a
 
 **Q. Why does the big blind have more flushes than the button?**
 
-A. Because the big blind is already partly invested and defends cheap suited hands like J5s, 96s and 85s. Those turn into flushes on a monotone board. The button never opens them, which is why its made flushes sit at 5.7% against the big blind's 7.1%.
+A. Because the big blind is already partly invested and defends cheap suited hands like J5s, 85s and 74s. Those turn into flushes on a monotone board. The button never opens them, which is why its made flushes sit at 5.7% against the big blind's 7.1%.
 
 **Q. How likely is it to flop a flush?**
 
