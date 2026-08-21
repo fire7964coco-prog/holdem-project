@@ -1491,6 +1491,9 @@
     <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/blind-battle-connected-board" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/blind-battle-connected-board" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/blind-battle-connected-board" />
   </url>
 
   <url>
@@ -2095,7 +2098,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/wsop-2026-tournament-guide" />
   </url>
 
-  <!-- 다국어 블로그 포스트 (469편) -->
+  <!-- 다국어 블로그 포스트 (470편) -->
 
   <url>
     <loc>https://www.holdemmaster.com/en/blog/3bet-pot-bet-sizing</loc>
@@ -2162,6 +2165,16 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/blind-battle-cbet" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/blind-battle-cbet" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/blind-battle-cbet" />
+  </url>
+
+  <url>
+    <loc>https://www.holdemmaster.com/en/blog/blind-battle-connected-board</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/blind-battle-connected-board" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/blind-battle-connected-board" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/blind-battle-connected-board" />
   </url>
 
   <url>

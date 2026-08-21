@@ -54,6 +54,7 @@ import { POST as threeBetPotCbet } from "./3bet-pot-cbet";
 import { POST as threeBetPotBetSizing } from "./3bet-pot-bet-sizing";
 import { POST as threeBetPotLowBoard } from "./3bet-pot-low-board";
 import { POST as blindBattleCbet } from "./blind-battle-cbet";
+import { POST as blindBattleConnectedBoard } from "./blind-battle-connected-board";
 
 /**
  * 영어(en) 블로그 포스트.
@@ -61,6 +62,7 @@ import { POST as blindBattleCbet } from "./blind-battle-cbet";
  * 슬러그는 한국어 글과 동일하게 맞춰 hreflang 상호 링크가 성립하도록 한다.
  */
 export const EN_POSTS: Post[] = [
+  blindBattleConnectedBoard,
   blindBattleCbet,
   threeBetPotLowBoard,
   threeBetPotBetSizing,

@@ -50,7 +50,10 @@ import type { Post } from "../posts";
  *      있었는데 어순만 바꾼 **`range advantage poker`는 30**이고 12개월 **+54.8%** 상승세다.
  *      ①의 태그를 30 쪽으로 바꿨다(근거는 ① 헤더에 박아 뒀다). **⑪이 가져오지 않았다** — 층이 다르다.
  *
- * 🔴 EN 링크 제약 (⑫⑬ 발행 시 반드시 되돌아올 것)
+ * 🔴 EN 링크 제약 (⑬ 발행 시 반드시 되돌아올 것)
+ *   ✅ **2026-08-21: ⑫ 링크는 걸었다** — 같은 회차에 EN ⑫를 발행해 본문 6곳 + readnext를 복원했다.
+ *      **다시 빼지 마라.** ⑫는 이 편의 논거에 필수인 반례다(같은 자리인데 9.6%).
+ *   ⚠ 남은 것은 ⑬뿐이다. 아래는 당시 기록이다:
  *   KO ⑪은 ⑫(`blind-battle-connected-board`)를 **본문 5곳 + readnext**에서 링크한다.
  *   ⑫는 이 편의 **논거에 필수인 반례**다(같은 자리인데 9.6%). EN ⑫가 아직 없어서
  *   **문장은 전부 살리고 링크만 뺐다.** ⑬(`ace-paired-board-strategy`)도 같다.
@@ -112,7 +115,7 @@ Result | SB bets **67.4%** — the first single-raised pot where the out-of-posi
 :::
 
 > **Quick answer**
-> On K-T-6 blind vs blind the small blind's first action is **bet 67.4%, check 32.6%**. That is the reverse of the 0.1%–23.7% seen in spots ① through ⑦, and **two things** are different, not one: the out-of-position player here is **the raiser rather than the caller**, and the board is a king with a broadway kicker. The seat alone does not explain it — the same small-blind raiser bets only **9.6%** on a 7-6-5 board later in this series. Here the two line up, so the preflop aggressor is also first to act and holds the range edge and the action order together. The result is an **out-of-position equity realization of 103.1%** — the first time in a single-raised pot that it clears 100%.
+> On K-T-6 blind vs blind the small blind's first action is **bet 67.4%, check 32.6%**. That is the reverse of the 0.1%–23.7% seen in spots ① through ⑦, and **two things** are different, not one: the out-of-position player here is **the raiser rather than the caller**, and the board is a king with a broadway kicker. The seat alone does not explain it — the same small-blind raiser bets only **9.6%** on [a 7-6-5 board](/en/blog/blind-battle-connected-board) later in this series. Here the two line up, so the preflop aggressor is also first to act and holds the range edge and the action order together. The result is an **out-of-position equity realization of 103.1%** — the first time in a single-raised pot that it clears 100%.
 
 ## What conditions produced these numbers?
 
@@ -160,7 +163,7 @@ Lined up against the rest of the series, the gap is obvious.
 
 ## Why does the out-of-position player lead here?
 
-**Because this is the seat where the preflop aggressor also acts first on the flop.** ⚠ That is a *necessary* condition, not a sufficient one — the same structure produces **9.6%** at ⑫ and **80.1%** at ⑬. The seat opens the door; the board decides how far you walk through it.
+**Because this is the seat where the preflop aggressor also acts first on the flop.** ⚠ That is a *necessary* condition, not a sufficient one — the same structure produces **9.6%** [at ⑫](/en/blog/blind-battle-connected-board "thumb:/images/gto-sb-connected-oop-en.webp") and **80.1%** at ⑬. The seat opens the door; the board decides how far you walk through it.
 
 In an ordinary hand these two come apart. When the button opens and the big blind calls, **the aggressor is the button but the first to act is the big blind.** That is what builds the check-then-c-bet structure, and it is what ① through ⑦ all looked like.
 
@@ -172,13 +175,13 @@ Blind versus blind, the two collapse into one. The small blind raised, and the s
 | SB vs BB (⑪ K-T-6) | **SB** | **SB** | together → **67.4%** |
 | SB vs BB (⑫ 7-6-5) | **SB** | **SB** | together, and yet → **9.6%** |
 
-⚠ **Do not delete the third row.** "Together" **opens the door without deciding how far you go** — ⑫ has a seat structure identical to this one, letter for letter, and bets 9.6%. Without the overlap you rarely lead at all (the first row); with it, you still need **the board to fit your range** before you actually bet.
+⚠ **Do not delete the third row.** "Together" **opens the door without deciding how far you go** — [⑫](/en/blog/blind-battle-connected-board) has a seat structure identical to this one, letter for letter, and bets 9.6%. Without the overlap you rarely lead at all (the first row); with it, you still need **the board to fit your range** before you actually bet.
 
 Equity puts a number on that edge. **SB 55.3% against BB 44.7%.** In ① through ⑦ the out-of-position player sat at 45.1%–48.5%, always short of half — the opposite direction.
 
 :::pull[A check is not something you do because you lack position. It is something you do because your range is weak on this board.]:::
 
-Lacking position is the same for the big blind in ①–⑦ and the small blind here. What splits them is **the relationship between range and board** — ⚠ and you cannot reduce that to "range" alone. On the 7-6-5 board the range is *literally identical* and the check runs to 90.4%.
+Lacking position is the same for the big blind in ①–⑦ and the small blind here. What splits them is **the relationship between range and board** — ⚠ and you cannot reduce that to "range" alone. On [the 7-6-5 board](/en/blog/blind-battle-connected-board) the range is *literally identical* and the check runs to 90.4%.
 
 ## Why 67% here when a three-bet pot is 100%?
 
@@ -253,7 +256,7 @@ Pick seven spots from the series and rank them by EQR:
 | A♦K♠2♥ 3-bet pot (⑧) | three-bettor | 68.9% | 109.6% |
 | Q♥T♥7♠ 3-bet pot (⑨) | three-bettor | 58.3% | 117.8% |
 
-**Every row above 100% belongs to someone who is not the caller.** ⚠ Do not read it backwards — **"not the caller" does not imply "above 100%."** The 7-6-5 board, missing from this table, is the same small-blind opener at **85.3%**, sitting among the callers. And this spot is the closest to the line of any of them: 103.1% clears it barely.
+**Every row above 100% belongs to someone who is not the caller.** ⚠ Do not read it backwards — **"not the caller" does not imply "above 100%."** [The 7-6-5 board](/en/blog/blind-battle-connected-board), missing from this table, is the same small-blind opener at **85.3%**, sitting among the callers. And this spot is the closest to the line of any of them: 103.1% clears it barely.
 
 ⚠ **Nor does a higher EQR mean a bigger edge.** Read the ranking as it stands — the biggest range edge in the table, ⑧ at **68.9%** equity, lands on **109.6%**, *below* ⑨'s **117.8%** at ten points less equity. EQR is ==EV ÷ (equity × pot)==, so **equity is the denominator**: the lower it is, the larger the ratio for the same EV. It is true that one open-raise of edge stops at 103.1%; the reason is not "it could have reached 117.8%."
 
@@ -261,7 +264,7 @@ The big blind's 96.1% is the other face of the same story. **Position, and still
 
 ## What changes at the table?
 
-- **Blind versus blind, do not default to "no position, so check."** If you opened from the small blind, the **preflop** range edge is yours, and the solver bets 67.4% on this board. **But you still read the board** — a king with a broadway kicker suits the opener, and on boards that fit the caller the check comes back even from this seat. The 7♦6♦5♣ connected board is exactly that: the same small blind bets only 9.6%.
+- **Blind versus blind, do not default to "no position, so check."** If you opened from the small blind, the **preflop** range edge is yours, and the solver bets 67.4% on this board. **But you still read the board** — a king with a broadway kicker suits the opener, and on boards that fit the caller the check comes back even from this seat. The [7♦6♦5♣ connected board](/en/blog/blind-battle-connected-board) is exactly that: the same small blind bets only 9.6%.
 - **The size is a third of the pot.** With the big blind defending 525 combos, small and wide is right. ⚠ Do not turn that into "betting big is worse" — **this study spot only had the 33% size in the tree.** With no larger size solved, "what if I had bet big" is a question this calculation cannot answer. The A-A-6 spot later in the series does have 75% open alongside it.
 - **★At SPR 16.2, decide in advance what a raise means.** Betting 67.4% of your range means facing raises often, and with **sixteen pots** left behind you this is not a stack-off spot for top pair. That is the reverse of a three-bet pot at SPR 4.0, where "raise" meant "the stack is going in." Here calling and seeing a turn covers far more of your range, and outside nine set combos and **two pair (K-T, K-6, T-6)** there is little reason to commit — 🪶 note that **A-A is *below* two pair here** (an overpair pinned under the king; the class table reads set 1.7% · two pair 2.4% · overpair 1.1%). ⚠ The node after a raise is not in this solve, so this is judgment drawn from the SPR, not a solver number.
 - **Defending the big blind, remember what three-betting K-K and T-T costs you.** The result is exactly the structure on this board: the big blind's only set is 6-6. The calling range thins out by that much.
@@ -269,7 +272,7 @@ The big blind's 96.1% is the other face of the same story. **Position, and still
 
 :::readnext[Keep reading]
 /en/blog/3bet-pot-low-board | Three Combos Hit This Flop — and It Still Bets 97.8% | /images/gto-3bp-low-oop-en.webp
-/en/blog/donk-bet-strategy | The Flop Where the Big Blind Leads Out | /images/gto-srp-middle-connected-oop-en.webp
+/en/blog/blind-battle-connected-board | Same Seat, Same Stack — and the Bet Falls from 67% to 9.6% | /images/gto-sb-connected-oop-en.webp
 :::
 
 ## Check it yourself
