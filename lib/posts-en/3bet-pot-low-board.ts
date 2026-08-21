@@ -42,6 +42,14 @@ import type { Post } from "../posts";
  *
  * ★이 시리즈는 §8 「경험담 필수」 예외 — 1차 데이터가 본체이고 재현 가능성이 출처를 대신한다.
  *
+ * 🔴 **2026-08-21 (검수장 M-032 §1) — readnext 둘째 카드를 ⑧ → ⑪로 되돌렸다. 다시 바꾸지 마라.**
+ *   발행 당시 EN ⑪이 없어 ⑧으로 «대체»한 것이었는데 **⑪ 발행(`ecb07811`) 후 되돌리지 않았다.**
+ *   사슬 실측: EN ⑨→⑧⑩ · **⑩→⑨⑧** · ⑪→⑩⑫ · ⑫→⑪⑬ — **⑩ 한 편만 KO와 달랐고**,
+ *   본문에도 `blind-battle-cbet`이 0곳이라 ⑨→⑩까지 온 독자가 ⑪로 갈 길이 없었다.
+ *   🔴 **규율(검수장 제안 · 수용)**: **미발행 대체 링크는 «그 편이 발행되는 커밋»에서 되돌리고,
+ *      분모는 KO 쪽에서 세라.** 헤더에 「발행 직후 걸어라」라고 적어 두는 것만으로는 샌다 —
+ *      ⑪⑫⑬은 그렇게 해서 지켰는데 **⑩은 그 메모를 ⑩ 자신에게는 안 남겼다.**
+ *
  * 🔴 KO ⑩이 세 회차 검수로 확정한 것 — 번역에서 떨어뜨리지 마라 (고지 문장 포함):
  *   ① 드로우 3행은 **상호배타**(위 참조). 여집합으로 흡수 금지.
  *   ② 「작게 시작하면 스택을 다 넣을 길이 사라진다」는 **거짓**(33%로도 7.4 → 24.6 → 57.0으로 소진).
@@ -210,7 +218,7 @@ The reason is where the sets live. **The button is the only player who can hold 
 
 :::readnext[Keep reading]
 /en/blog/3bet-pot-bet-sizing | One Size, 98.4% of the Time — Q-T-7 in a 3-Bet Pot | /images/gto-3bp-dynamic-oop-en.webp
-/en/blog/3bet-pot-cbet | The Flop Where the Three-Bettor Never Checks | /images/gto-3bp-ace-king-oop-en.webp
+/en/blog/blind-battle-cbet | The Player With No Position Bets First — 67.4% of the Time | /images/gto-sb-king-mid-oop-en.webp
 :::
 
 ## Check it yourself

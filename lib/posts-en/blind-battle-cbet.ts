@@ -65,6 +65,13 @@ import type { Post } from "../posts";
  *
  * ★이 시리즈는 §8 「경험담 필수」 예외 — 1차 데이터가 본체이고 재현 가능성이 출처를 대신한다.
  *
+ * 🔴 **2026-08-21 (검수장 M-032 §2) — 유손실 산문화를 되돌렸다. 값을 지우지 마라.**
+ *   「⑨'s 117.8% at ten points less equity」로 썼는데 **역산하면 68.9 − 10 = 58.9 ≠ 58.3**이라
+ *   원래 값이 사라졌다. KO는 「에퀴티가 10%p나 낮은 ⑨(**58.3%**)」로 값을 함께 준다.
+ *   → 「at **58.3%** equity — ten points less」로 복원.
+ *   🟢 **판별 규칙(스펙 §4-A-4)**: **무손실 산문화는 정당, 유손실은 이탈.**
+ *      「a third of the pot」·「a fifth or a quarter」·「a 0.2-point gap」은 역산하면 원래 값이 나온다.
+ *
  * 🔴 KO ⑪이 검수로 확정한 것 — 번역에서 떨어뜨리지 마라:
  *   ① **축F — 반례 두 줄(⑫⑬)을 표에서 빼지 마라.** 같은 SB 오픈 레이저가 9.6 / 67.4 / 80.1로
  *      **70.5%p 폭**이고, ⑫의 9.6%는 콜러인 ⑤(11.2)·④(23.7)보다 **낮다.**
@@ -259,7 +266,7 @@ Pick seven spots from the series and rank them by EQR:
 
 **Every row above 100% belongs to someone who is not the caller.** ⚠ Do not read it backwards — **"not the caller" does not imply "above 100%."** [The 7-6-5 board](/en/blog/blind-battle-connected-board), missing from this table, is the same small-blind opener at **85.3%**, sitting among the callers. And this spot is the closest to the line of any of them: 103.1% clears it barely.
 
-⚠ **Nor does a higher EQR mean a bigger edge.** Read the ranking as it stands — the biggest range edge in the table, ⑧ at **68.9%** equity, lands on **109.6%**, *below* ⑨'s **117.8%** at ten points less equity. EQR is ==EV ÷ (equity × pot)==, so **equity is the denominator**: the lower it is, the larger the ratio for the same EV. It is true that one open-raise of edge stops at 103.1%; the reason is not "it could have reached 117.8%."
+⚠ **Nor does a higher EQR mean a bigger edge.** Read the ranking as it stands — the biggest range edge in the table, ⑧ at **68.9%** equity, lands on **109.6%**, *below* ⑨'s **117.8%** at **58.3%** equity — ten points less. EQR is ==EV ÷ (equity × pot)==, so **equity is the denominator**: the lower it is, the larger the ratio for the same EV. It is true that one open-raise of edge stops at 103.1%; the reason is not "it could have reached 117.8%."
 
 The big blind's 96.1% is the other face of the same story. **Position, and still short of its share.** Why position usually pays, and when it is not enough, is in [why position matters](/en/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp").
 
