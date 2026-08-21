@@ -159,7 +159,7 @@ Average equity says this flop is close to a coin flip. The top of the range says
 | Backdoor flush | 6.8% | 5.7% |
 | No draw | **24.7%** | **25.5%** |
 
-**The draws split almost evenly.** On the king-high flop, 72.2% of the big blind's range had no draw at all; here it is a quarter. (This is a separate axis from the category table — each adds to 100% on its own, so a hand like a completed straight is classified a second time on the draw axis and lands somewhere in this table.)
+**The draws split almost evenly.** On the king-high flop, 72.2% of the big blind's range had no draw at all; here it is a quarter. (This is a separate axis from the category table — each adds to 100% on its own, and the draw axis reads **only what is still drawing** — a completed straight that also holds two spades, like K♠9♠, lands in a flush row, while one with nothing attached lands under no draw.)
 
 So the fight on this board is not about who has more draws. Even draws cancel out, and what does not cancel is the nut advantage. If counting outs is the part you want to firm up, start with [drawing odds](/en/blog/holdem-drawing-odds).
 
