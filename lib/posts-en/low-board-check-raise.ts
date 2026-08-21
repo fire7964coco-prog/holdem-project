@@ -277,7 +277,7 @@ We read all 487 rows of the per-hand table rather than the first screen of it. S
 | Hand | What it is | Raises |
 |---|---|---|
 | 66 · 55 · 22 | Three of a kind — **all nine combos** | **100%** |
-| 65s | Two pair — 6♦5♦ and 6♣5♣, the only two combos in either range | **100%** |
+| 65s | Two pair — only 6♦5♦ and 6♣5♣ exist, since the 6♠ and 5♥ are on the board | **100%** |
 | 64s | Top pair **and** a gutshot | **100%** — two of its three combos |
 | 98s | Gutshot to the seven — equity **35.8%** | 99%+ |
 | 87s | Open-ended, the four or the nine — equity **46.2%** | 80–83% |

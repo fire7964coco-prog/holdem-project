@@ -124,11 +124,11 @@ Once that is true, large bets stop paying anyone.
 
 :::compare
 If you have a flush | If you don't have a flush
-A big bet folds out everything without a flush | A big bet only gets called by flushes
+A big bet folds out most hands without a flush | A big bet only gets called by flushes
 A small bet keeps one pair in | A small bet is cheap, but one pair does not fold to it
 :::
 
-**Both sides prefer small.** So the strategy collapses toward "small or check" for everyone. This is the clearest board in the series for the principle that sizing is decided by **what your opponent can call with**, not by how strong you are.
+**One side is served by the small size; the other is served by neither.** So the strategy collapses toward "small or check" for everyone. This is the clearest board in the series for the principle that sizing is decided by **what your opponent can call with**, not by how strong you are.
 
 ## Why does the nut flush check?
 
@@ -192,7 +192,7 @@ What the button has instead is far more **offsuit ace-x and king-x with one spad
 
 **The same top pair is a different hand depending on whether it holds a spade.**
 
-Take Q♥J♦ — top pair, no spade. Already behind against **12.0%** of the button's range (flushes 5.7 + overpairs 2.5, plus sets and two pair), and behind on the kicker to **AQ and KQ** on top of that: the Q♠ is on the board and the Q♥ is in your hand, so two queens remain, making 8 combos of AQ and 8 of KQ. Separately, another **29.2%** can pass it with one card. That is not a hand for three streets of value; it is a hand that catches a bluff once.
+Take Q♥J♦ — top pair, no spade. Already behind against **12.0%** of the button's range (flushes 5.7 + overpairs 2.5, plus sets and two pair), and behind on the kicker to **AQ and KQ** on top of that: the Q♠ is on the board and the Q♥ is in your hand, so two queens remain, making 8 combos of AQ and 8 of KQ — **about 3.4%** of 474, which brings the total already ahead to roughly **15.4%**. On top of that another **29.2%** can pass it with one card (⚠ four of those 16 kicker combos hold a spade and are counted in that 29.2% as well, so do not simply add the two figures). That is not a hand for three streets of value; it is a hand that catches a bluff once.
 
 Now take 9♥8♠ — middle pair with a spade. It can win now or improve later, which makes it flexible enough to bet or call.
 
@@ -210,7 +210,7 @@ Now take 9♥8♠ — middle pair with a spade. It can win now or improve later,
 
 The big blind's equity share is ==5.5 × 47.7% = 2.62bb== against an actual 2.37bb, which is the 90.4%.
 
-The 18.4 point gap is the second-smallest **of the six single-raised pots**, behind 9-8-7 at 13.2. ⚠ Across all thirteen spots it is only fifth — the blind-versus-blind K-T-6 (7.0) and A-A-6 (9.3) and the 8-5-2 three-bet pot (16.6) are all tighter, and they are different seats. When large bets disappear, so do the difficult decisions — and **position is worth exactly as much as the decisions still left to make.**
+The 18.4 point gap is the second-smallest **of the seven single-raised pots**, behind 9-8-7 at 13.2. ⚠ Across all thirteen spots it is only fifth — the blind-versus-blind K-T-6 (7.0) and A-A-6 (9.3) and the 8-5-2 three-bet pot (16.6) are all tighter, and they are different seats. When large bets disappear, so do the difficult decisions — and **position is worth exactly as much as the decisions still left to make.**
 
 ## What changes at the table?
 
@@ -240,7 +240,7 @@ A. A flop where all three cards are the same suit, like Q♠ 9♠ 2♠. Any two 
 
 **Q. Should you always bet a made flush on a monotone board?**
 
-A. No. In this solve the eight nut-flush combos check between 52.7% and 84.2%, averaging 69.9%, and non-nut flushes check 81.4%. A large bet folds out every one pair and high card, so checking to induce a bet and collecting across the turn and river wins more in total.
+A. No. In this solve the eight nut-flush combos check between 52.7% and 84.2%, averaging 69.9%, and non-nut flushes check 81.4%. A large bet folds out most of the one pairs and high cards — and a hand with one spade that does come along is drawing at nothing against a made nut flush — so checking to induce a bet and collecting across the turn and river wins more in total.
 
 **Q. Why does the big blind have more flushes than the button?**
 

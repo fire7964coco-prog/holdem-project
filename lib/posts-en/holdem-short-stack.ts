@@ -77,7 +77,7 @@ The catch is that fold equity ==decays as your stack shrinks==. At 12–15 big b
 | 🟢 Green | 20+ | ~30bb+ | Full arsenal, play normal poker |
 | 🟡 Yellow | 10–20 | ~15–30bb | Tighten up, start looking for shoves |
 | 🟠 Orange | 6–10 | ~9–15bb | Push/fold; first-in aggression, steal blinds |
-| 🔴 Red | 1–5 | ~1.5–8bb | Shove-or-fold any reasonable hand |
+| ⚠ Red | 1–5 | ~1.5–8bb | Shove-or-fold any reasonable hand |
 | ⚫ Dead | under 1 | under ~1.5bb | Shove any two cards, next playable spot |
 
 </div>

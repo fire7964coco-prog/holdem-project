@@ -128,7 +128,7 @@ Get the order right: **two pair is the third-best category here, above an overpa
 
 Every gap was created preflop. The big blind three-bets AA, KK, QQ, JJ and AK, so none of them arrive on the flop; the button opens all of them and brings them along.
 
-The combinations match exactly. Only three hands make a straight here: ==AK (A-K-Q-J-T)==, ==K9 (K-Q-J-T-9)== and ==98 (Q-J-T-9-8)==. With one queen, one jack and one ten on the board, each is 16 combos. The big blind holds K9 and 98 for **32 combos**; the button adds AK for **48**. The solver's 7.1% and 10.5% are 32.2 and 48.1 combos — the same numbers.
+The combinations match exactly. Only three hands make a straight here: ==AK (A-K-Q-J-T)==, ==K9 (K-Q-J-T-9)== and ==98 (Q-J-T-9-8)==. None of the cards they need — the ace, the king, the nine, the eight — is on the board, so each is 4 × 4 = 16 combos. The big blind holds K9 and 98 for **32 combos**; the button adds AK for **48**. The solver's 7.1% and 10.5% are 32.2 and 48.1 combos — the same numbers.
 
 **The entire difference is one hand: AK.** A single preflop three-betting decision moves that much of the flop's nut share.
 
@@ -159,7 +159,7 @@ Average equity says this flop is close to a coin flip. The top of the range says
 | Backdoor flush | 6.8% | 5.7% |
 | No draw | **24.7%** | **25.5%** |
 
-**The draws split almost evenly.** On the king-high flop, 72.2% of the big blind's range had no draw at all; here it is a quarter. (This is a separate axis from the category table — each adds to 100% on its own, and a completed straight counts as "no draw" in this panel.)
+**The draws split almost evenly.** On the king-high flop, 72.2% of the big blind's range had no draw at all; here it is a quarter. (This is a separate axis from the category table — each adds to 100% on its own, so a hand like a completed straight is classified a second time on the draw axis and lands somewhere in this table.)
 
 So the fight on this board is not about who has more draws. Even draws cancel out, and what does not cancel is the nut advantage. If counting outs is the part you want to firm up, start with [drawing odds](/en/blog/holdem-drawing-odds).
 
@@ -196,11 +196,11 @@ Line the three flops up and the trend is clean.
 | K-8-3 (dry) | 80.7% | 116.7% | 36.0 points |
 | **Q-J-T (connected, two-tone)** | **77.9%** | **119.4%** | **41.5 points** |
 
-Three spots make it look like *busier board, wider gap*. **That rule breaks in the very next spot** — [9♥8♥7♣](/en/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-en.webp") is more connected than Q-J-T and its gap is **13.2 points, the narrowest of the single-raised pots**, with the big blind realizing 93.2%, the highest of them. What opens the gap is not busyness but **whose range the top of the board belongs to**: Q-J-T hands AK, QQ, JJ, AA and KK straight to the button, while 9-8-7 has nothing to do with any of them. Why acting last is worth what it is: [playing position](/en/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp").
+Three spots make it look like *busier board, wider gap*. **That rule breaks in the very next spot** — [9♥8♥7♣](/en/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-en.webp") is more connected than Q-J-T and its gap is **13.2 points, the narrowest of the seven single-raised pots**, with the big blind realizing 93.2%, the highest of those seven (across all thirteen spots the 117.8% of the Q-T-7 three-bet pot is higher). What opens the gap is not busyness but **whose range the top of the board belongs to**: Q-J-T hands AK, QQ, JJ, AA and KK straight to the button, while on 9-8-7 those same cards miss the board. ⚠ Not that they are irrelevant there — 9-8-7 splits overpairs **1.3% against 6.4%**, a wider gap than Q-J-T's 0% against 2.6%. But that overpair edge is a fragile one on a connected board, which is why it does not lock down the top. Why acting last is worth what it is: [playing position](/en/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp").
 
 ## How should the button bet a dynamic board like this?
 
-**Less often, and bigger when it does.** With the nut advantage, a large bet is hard to raise: the straights, sets and overpairs are all on one side, so the other player has little to push back with.
+**Not small-only — the large size comes into the mix here.** With the nut advantage, a large bet is hard to raise: the straights, sets and overpairs are all on one side, so the other player has little to push back with.
 
 That is the opposite of the dry-board recipe. There, small and frequent worked because the goal was folding out air. Here, **68.4%** of the opponent's range is drawing, so **folds are expensive to buy** — the small size alone cannot do the work, and the large one has to come along. ⚠ Do not push that as far as "so the frequency drops": this study spot solves the flop's first action only, so the button's actual sizing split and c-bet frequency are not in it. The board-by-board version is in [continuation bet strategy](/en/blog/holdem-continuation-bet "thumb:/images/holdem-continuation-bet-hero.webp").
 
@@ -230,7 +230,7 @@ To drill it instead of reading it, open the **GTO Trainer** in the sidebar: it d
 
 **Q. Which hands make a straight on Q-J-T?**
 
-A. Three: AK for A-K-Q-J-T, K9 for K-Q-J-T-9, and 98 for Q-J-T-9-8. With one queen, one jack and one ten already on the board, each is 16 combos, so 48 in total. The big blind three-bets AK preflop, which leaves it 32.
+A. Three: AK for A-K-Q-J-T, K9 for K-Q-J-T-9, and 98 for Q-J-T-9-8. None of the cards they need — ace, king, nine, eight — is on the board, so each is 4 × 4 = 16 combos, 48 in total. The big blind three-bets AK preflop, which leaves it 32.
 
 **Q. Isn't a wet board the place to semi-bluff lead?**
 
@@ -238,7 +238,7 @@ A. Only when your draws outnumber theirs. Here open-enders are 28.7% against 27.
 
 **Q. What is the difference between range advantage and nut advantage?**
 
-A. Range advantage is about the average — whose range has more equity across all hands. Nut advantage is about the extreme — who holds the straights, sets and overpairs. On Q-J-T equity is nearly even at 46.7% against 53.3%, yet all three top categories favor the button. When they split like that, nut advantage is what sets the bet size.
+A. Range advantage is about the average — whose range has more equity across all hands. Nut advantage is about the extreme — who holds the top of the ranking, which on Q-J-T runs straight, set, two pair, overpair. Equity is nearly even at 46.7% against 53.3%, yet the straights and sets both favor the button (two pair alone is level at 6.0% against 5.9%). When they split like that, nut advantage is what sets the bet size.
 
 **Q. Can I use these numbers at any stake?**
 

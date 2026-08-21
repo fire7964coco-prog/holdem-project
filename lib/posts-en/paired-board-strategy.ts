@@ -125,7 +125,7 @@ Result | BB checks 97.0% — while holding more trips
 :::
 
 > **Quick answer**
-> Check almost everything, and defend far wider than feels right. Holding a six is not a reason to lead — the sixes make more as a check-raise or a call-down, which is why the big blind checks **97.0%** here. The hands that genuinely gain on this flop are the pocket pairs above a six, and the ones to stop folding are ace-high and the better king-high hands.
+> Check almost everything, and defend far wider than feels right. Holding a six is not a reason to lead — leading only folds out what you already beat, so the sixes stay in the checking range, and the big blind checks **97.0%** here. The hands that genuinely gain on this flop are the pocket pairs above a six, and the ones to stop folding are ace-high and the better king-high hands.
 
 ## What conditions produced these numbers?
 
@@ -283,7 +283,7 @@ Facing a 1.8bb bet into 5.5bb, denying a pure bluff any profit means continuing 
 
 Add every ace-high (26.3%) and every king-high (16.5%) and you are still only at **61.2%**, short of 75.3%.
 
-🔴 **Do not read that as "so you must defend more" — it points the other way.** MDF treats the opponent's bet as a pure bluff with zero equity, but a flop bluff still has two streets to come, so it does have equity. And the out-of-position player realizes equity badly, so **the solver's actual solution overfolds relative to MDF on the flop.** Fold frequency only converges toward MDF from the turn onward.
+⚠ **Do not read that as "so you must defend more" — it points the other way.** MDF treats the opponent's bet as a pure bluff with zero equity, but a flop bluff still has two streets to come, so it does have equity. And the out-of-position player realizes equity badly, so **the solver's actual solution overfolds relative to MDF on the flop.** Fold frequency only converges toward MDF from the turn onward.
 
 What this arithmetic is good for, then, is not "hit 75%" but **"do not fold on the strength of one high card."** Plenty of the ace-highs and king-highs are still calls here, and folding all of them to one small c-bet is exactly the habit that gets exploited.
 

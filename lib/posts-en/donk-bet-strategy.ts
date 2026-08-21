@@ -163,13 +163,32 @@ It cuts the other way too. Overpairs belong to the button.
 |---|---|---|
 | Straight | **5.2%** | 4.2% |
 | Set (trips) | 1.9% | 1.9% |
+| Two pair | 2.8% | 2.8% |
 | Overpair | 1.3% | **6.4%** |
 | Top pair (9) | **13.6%** | 12.7% |
+| Second pair (8) | **8.4%** | 7.6% |
+| Third pair or lower | **6.5%** | 6.4% |
+| Underpair | **6.5%** | 6.4% |
 | Ace high | 24.2% | **30.5%** |
 | King high | **13.9%** | 11.9% |
 | No made hand | **15.6%** | 9.3% |
 
-⚠ This table lists **only the categories that differ noticeably**, so the columns do not sum to 100%. Two pair (98, 97, 87) and the lower pairs are left out — a category missing from the table is not a category at zero.
+(The columns come to 99.9 and 100.1 — that is rounding.)
+
+**Only two rows favor the button**: overpairs, 6.4% against 1.3%, and ace-high, 30.5% against 24.2%. Two pair is dead level at 2.8%, and every other row belongs to the big blind.
+
+The draws have to be read alongside it.
+
+| Draw | BB (OOP) | BTN (IP) |
+|---|---|---|
+| Combo draw (straight + flush) | **4.5%** | 3.6% |
+| Flush draw | **3.2%** | 2.3% |
+| Open-ended straight draw | **26.2%** | 23.7% |
+| Gutshot | **21.6%** | 20.6% |
+| Backdoor flush | 14.1% | **17.6%** |
+| No draw | 30.3% | **32.2%** |
+
+**Counting real draws only — backdoors excluded — the big blind has 55.5% against the button's 50.2%.** On this board it is not only the made hands that lean its way; so do the hands still growing.
 
 The same holds after the money is counted. Equity realization still favors the button, just by less than anywhere else so far.
 
@@ -214,7 +233,7 @@ The large size still exists for a reason. If every straight went into the small 
 
 **On this flop, as the preflop raiser** — whether the big blind leads or checks. It is the clearest "when not to c-bet" board in the study set, and the reason is not the texture but what your own range looks like on it. How that judgment generalizes across board types is in [continuation bet strategy](/en/blog/holdem-continuation-bet "thumb:/images/holdem-continuation-bet-hero.webp").
 
-The reason is the range composition. Ace-high is 30.5% of the button's range, king-high 11.9%, no made hand 9.3% — 51.7% without a pair. 🔴 **But "no pair" is not the reason on its own.** Add the big blind's column the same way and you get **53.7%** — the big blind has *more* of its range unpaired, by 2.0 points, and it is the one leading 23.7% of the time. What actually stops the button is **what stayed behind in the checking range**: 76.2% of the big blind's hands are still there, straights and 13.6% top pair among them, so betting wide runs into a **check-raise**. ⚠ Some of those 24 straight combos lead rather than check, so they are not all sitting in the checking range — and the check-raise *frequency* is not something this solve contains.
+The reason is the range composition. Ace-high is 30.5% of the button's range, king-high 11.9%, no made hand 9.3% — 51.7% without a pair. ⚠ **But "no pair" is not the reason on its own.** Add the big blind's column the same way and you get **53.7%** — the big blind has *more* of its range unpaired, by 2.0 points, and it is the one leading 23.7% of the time. What actually stops the button is **what stayed behind in the checking range**: 76.2% of the big blind's hands are still there, straights and 13.6% top pair among them, so betting wide runs into a **check-raise**. ⚠ Some of those 24 straight combos lead rather than check, so they are not all sitting in the checking range — and the check-raise *frequency* is not something this solve contains.
 
 Missed **offsuit** high cards like AKo and AQo are standard check-backs: they hold showdown value, and when a raise comes you have nothing to continue with. The suited versions are a different hand — A♥K♥ and A♥Q♥ are nut flush draws here, and they bet.
 
@@ -222,7 +241,7 @@ Missed **offsuit** high cards like AKo and AQo are standard check-backs: they ho
 
 ## What changes at the table?
 
-- **Leads live on middle connected boards after a wide late-position open.** The monotone board in the next spot has about 11% too, while ace-high and king-high dry flops are effectively zero. ⚠ The only middle connected board this series actually solves is 9-8-7, though, and the condition is not the texture alone but **which range holds more of the nuts on it.** The proof is inside the series: on a 7-6-5 flop in a blind-versus-blind pot, the small blind — the player who opened — leads just **9.6%** of the time. Connected on its own does not produce a lead.
+- **Leads live on middle connected boards after a wide late-position open.** The monotone board in the next spot has about 11% too, while ace-high and king-high dry flops are effectively zero. ⚠ The only middle connected board this series actually solves is 9-8-7, though, and the condition is not the texture alone but **which range holds more of the nuts on it.** The proof is inside the series: the [6-5-2 flop](/en/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-en.webp") is the same button-versus-big-blind single-raised pot and the big blind leads just **3.2%** there, because the only hand that makes a straight is 4-3 and neither range holds it. Low and connected on its own does not produce a lead.
 - **You still check three-quarters of the time.** When you do lead: small, and with more than your best hands — a range that only leads straights gets read immediately, so top pair and draws belong in the same size. Keep the total in view, though: **the whole lead is 23.7%, 16.8 of it at the small size.** Turned into "lead every draw," it becomes half the range and inverts the strategy. The other 76.2% checks.
 - **On the button, resist the c-bet on this texture.** More than half your range has no pair, and the overpairs want a controlled pot rather than a big one.
 - **Against an opponent who c-bets far too often, checking can be worth more than leading** — and check-**raise**, rather than only check-calling, with the straights and top pairs. Letting them bet your strong hands for you is worth more than taking the initiative, but only if you then charge for it.

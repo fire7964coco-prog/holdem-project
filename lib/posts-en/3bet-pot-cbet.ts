@@ -201,7 +201,7 @@ Run the same three bets in a single-raised pot and you have spent ==3.67 + 8.56 
 
 A-K-2 rainbow gives almost nothing to draw to, so there is no need to charge a draw either. Between the two, the range shape is what does the work.
 
-🔴 **"Shallow stacks mean small bets" is not it.** Two later spots in this series sit at exactly the same SPR of 4.0 and fire the *large* size almost always — Q-T-7 at **98.4%** and 8-5-2 at **97.8%** — for two different reasons. Q-T-7 is a wet board, so a big bet is what puts a price on the draws. 8-5-2 is dry like this one, but its range splits into overpairs and ace-high with nothing between, and a polarized shape bets big. Same stack depth, opposite sizing, and neither reason is the depth.
+⚠ **"Shallow stacks mean small bets" is not it.** Two later spots in this series sit at exactly the same SPR of 4.0 and fire the *large* size almost always — Q-T-7 at **98.4%** and 8-5-2 at **97.8%** — for two different reasons. Q-T-7 is a wet board, so a big bet is what puts a price on the draws. 8-5-2 is dry like this one, but its range splits into overpairs and ace-high with nothing between, and a polarized shape bets big. Same stack depth, opposite sizing, and neither reason is the depth.
 
 **And the large size is not "the strong hands' share" either.** Count the combos that can get a whole stack in — sets, two pair and top pair — and you get ==6 + 9 + 21 = 36 combos, 57.1%==, which is more than the 42.2% that bets large.
 
@@ -219,13 +219,13 @@ One caveat worth naming: those 130 combos are what a **theoretically correct def
 
 ## How does the button respond to a third-pot c-bet?
 
-**It is a hard spot to call all the way down.** The button's underpairs are blocked by both the ace and the king, and at an SPR of 4.0 there are only three bets left before the stack is gone.
+**It is a hard spot to call all the way down.** The button's underpairs are blocked by both the ace and the king, and at an SPR of 4.0 there is not much distance left before the stack is gone.
 
 ⚠ *Which* bet is the all-in depends on the size. At two-thirds it is 14.9 → 34.5 → 39.6, exactly three. At the **7.4bb (one-third)** bet this section is about, three bets come to ==7.4 + 12.3 + 20.4 = 40.1bb==, only 45% of the stack. And the turn node does not exist in this solve — the study spot stops at the flop's first action, so everything from here is read off the range composition.
 
 Facing 7.4bb into 22.5bb, denying a pure bluff any profit takes about ==22.5 ÷ (22.5 + 7.4) = 75.3%== of the range — the **minimum defense frequency**. But the button's hands that actually connected with A-K-2 add up to only ==20.8 + 11.5 + 6.9 + 2.3 = 41.5%==. 🪶 Note that the 2.3% of sets is **22** — it paired the deuce, not the ace or the king. Counting only the hands that paired an ace or a king gives **39.2%**.
 
-🔴 **In this spot, though, the premise behind MDF does not hold.** MDF is the frequency that makes a **pure bluff with zero equity** indifferent — and the big blind's betting range contains **0.0% no-made-hand, not one combo.** Against a bet with no bluffs in it there is nothing to make indifferent, and both theory and practice point toward folding **more**, not less. So do not read the 41.5% as "therefore continue with middle pocket pairs." That the small size prices those 60 combos in is separately true, but the reason for the size is the **shape of the range** from the previous section; this is a side effect.
+⚠ **In this spot, though, the premise behind MDF does not hold.** MDF is the frequency that makes a **pure bluff with zero equity** indifferent — and the big blind's betting range contains **0.0% no-made-hand, not one combo.** Against a bet with no bluffs in it there is nothing to make indifferent, and both theory and practice point toward folding **more**, not less. So do not read the 41.5% as "therefore continue with middle pocket pairs." That the small size prices those 60 combos in is separately true, but the reason for the size is the **shape of the range** from the previous section; this is a side effect.
 
 :::note[⚠ MDF simplifies the bet to a pure bluff. It only means something when the opponent actually has bluffs — where the betting range is a pair or better all the way down, as it is here, it does not apply at all. In practice also weigh how well a hand holds up on later streets.]:::
 
@@ -251,7 +251,7 @@ The button's 78.7% is not separate evidence of that — it is the same fact seen
 - **Count your SPR before the flop comes.** A bigger pot means fewer bets left, not less money. **SPR 4 is the band where three big bets finish the stack** — there is no fourth. Count the bets you have left, then pick the size.
 - **★Betting the whole range is not the same as stacking off with the whole range.** 38.1% of what bets here is a pocket pair below the king. Even inside that group it splits: QQ beats more than half of the button's calling range and is a hand to check the turn with, while TT and 99 fold to a raise.
 - **★Top pair splits by kicker.** Those 21 combos include **A5s and A4s** — hands three-bet as blockers, with the worst kicker there is. The range that calls off 89bb is narrow — **22 and A-K at its core**, with a strong top pair like A-Q attached depending on the opponent. **A-4 beats none of it.** The sets (AA, KK) beat all of it. **A-K sits in between**: it chops with the button's A-K and loses to 22, so "SPR 4, so it all goes in" holds unconditionally only for **AA and KK** — whether A-K belongs there depends on how wide the opponent calls.
-- **★If the flop gets raised, the hand is over right there.** At SPR 4 a raise commits the rest of the stack. It is not a call-and-see-the-turn spot: decide to jam or fold right there — sets and two pair go in, low underpairs and weak-kicker top pairs go out.
+- **★If the flop gets raised, the hand is over right there.** At SPR 4 a raise commits the rest of the stack. It is not a call-and-see-the-turn spot: decide to jam or fold right there — sets go in, low underpairs and weak-kicker top pairs go out. Two pair (A-K) depends on how wide the raise is: against a raising range of sets and A-K it is never ahead.
 - **Do not carry "check 0%" to every three-bet pot.** What changes it is the board more than the range: the same three-bet range on 8-5-2 checks 2.0%, and on a board that runs against the three-bettor a check appears for real. **"An ace and a king together" is the condition behind this zero.** How to build the three-bet range in the first place is in [3-bet strategy](/en/blog/holdem-3bet).
 
 :::readnext[Keep reading]
