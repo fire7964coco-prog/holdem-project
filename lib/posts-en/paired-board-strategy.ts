@@ -94,7 +94,7 @@ export const POST: Post = {
   tldr: "On the low paired flop 6♣6♦3♥ the big blind checks 97.0%. The odd part is that it holds more trips than the button: 26 six-x combos against 20. It checks anyway, because only 18.4% of its range has anything beyond the board's pair, and the other 81.6% is a high-card contest the button wins. What does gain value is any pocket pair above a six — TT is 76.0% equity here.",
   category: "strategy",
   date: "2026-08-20",
-  updated: "2026-08-20",
+  updated: "2026-08-21",
   readTime: "10 min",
   emoji: "👯",
   image: "/images/gto-srp-paired-oop-en.webp",
@@ -200,7 +200,23 @@ Now widen the view and the picture flips.
 
 **Anything beyond the board's own pair is 18.4% for the big blind and 20.3% for the button.** The other **81.6%** of the big blind's range is the board's own pair of sixes plus a high card — and the button wins that contest, its ace-high running 31.9% against 26.3%.
 
-Leading into that fails from both ends: with a six you fold out only the hands you already beat, and with everything else you advertise a range that cannot stand a raise. So the sixes stay hidden in the checking range, so you can check-raise or call down with them instead.
+Leading into that fails from both ends: with a six you fold out only the hands you already beat, and with everything else you advertise a range that cannot stand a raise. So the sixes stay in the checking range instead.
+
+## Equity is 47 against 53 — so why is EQR 84 against 115?
+
+**Because the board hits both ranges the same way, but the two players do not collect the same way.** On 6-6-3 almost everybody holds the board's pair of sixes and nothing else, which keeps raw equity close. What each side actually banks is not close at all.
+
+| | Big blind (OOP) | Button (IP) |
+|---|---|---|
+| Equity | 47.2% | 52.8% |
+| EV (bb) | 2.17 | 3.33 |
+| **EQR (equity realization)** | **83.7%** | **114.5%** |
+
+The big blind's share of the pot is ==5.5 × 47.2% = 2.60bb==, and it books 2.17bb — ==2.17 ÷ 2.60 ≈ 83.7%==. The button's share is 2.90bb against 3.33bb of EV, so it collects **114.5%**, more than its winning percentage is worth.
+
+The **30.8-point** gap is almost exactly the 29.1 points of the [dry ace-high board](/en/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-en.webp"). **A paired board plays like a dry one** — four ranges out of five are the same pair of sixes with a different high card, so the hand runs quietly, and the player who acts last gets to see which high card showed up before choosing. That advantage is the whole gap.
+
+:::note[Every EQR in this series is the figure the solver displays. Dividing the rounded equity and EV yourself lands within a tenth of a point of it — that is rounding, not a discrepancy.]:::
 
 ## How strong are pocket pairs on 6-6-3?
 
@@ -239,7 +255,7 @@ Those four combos explain why paired boards feel dangerous. 6♠6♥ realizes **
 
 ## Why is the big bet more common than the small one?
 
-**Because the sixes will only bet large.** Hand by hand, it is obvious:
+**Because trips and quads pick the large size when they bet at all.** Hand by hand:
 
 | Hand | Bet 4.1bb (75% pot) | Bet 1.8bb (33% pot) | Check |
 |---|---|---|---|
@@ -249,9 +265,13 @@ Those four combos explain why paired boards feel dangerous. 6♠6♥ realizes **
 | 6♠6♥ (quads) | **9.6%** | 0.0% | 90.4% |
 | T♠T♥ (two pair) | 0.8% | 1.7% | 97.5% |
 
-Trips and quads pick the large size when they bet at all. A two pair like TT barely bets, and when it does it picks the small one.
+Trips and quads do take the small size occasionally — K♠6♠ 0.3%, Q♥6♥ 0.7%, J♥6♥ 3.3% — but the large size is several times that. The only row at a flat 0.0% is 6♠6♥, and **that is quads, not trips.** A two pair like TT barely bets, and when it does it picks the small one.
 
-It comes down to what the opponent can call with. A six with a strong kicker is close to unbeatable, so the point is to build a pot — and since most sixes are checking anyway, **the few that do bet have every reason to go big.** Two pair is behind every six and all three 33s, so it has no interest in a big pot. That is the whole mechanism: the class that wants a big pot refuses the small size, and the class that only wants a call refuses the large one.
+It comes down to what the opponent can call with. A six is close to unbeatable here, so the point is to build a pot — and since most sixes are checking anyway, **the few that do bet have every reason to go big.** Two pair is behind every six and all three 33s, so it has no interest in a big pot. The class that wants a big pot refuses the small size; the class that only wants a call refuses the large one.
+
+⚠ **Do not read this as "the better the kicker, the bigger the bet" — the table runs the other way.** Large-bet frequency goes K♠6♠ 7.8% < Q♥6♥ 7.9% < **J♥6♥ 9.0%**: the weakest kicker bets most. The reason is blockers, not kickers. J6s, T6s and 96s are not in the button's opening range at all, so holding one removes none of the button's trips. K6 and Q6 are hands the button also holds, so taking one out of the deck thins the very range that would call.
+
+And this does not account for all of the large bets — the sixes are 26 of 486 combos, roughly a quarter of the large-bet total of about 9.7 combos. The rest comes from other classes.
 
 The big blind leads only 3.0% of the time, so you will rarely run into this at the table. It is a clean demonstration of a principle, though: **sizing is chosen by the range, not by the hand.**
 
@@ -261,7 +281,11 @@ The big blind leads only 3.0% of the time, so you will rarely run into this at t
 
 Facing a 1.8bb bet into 5.5bb, denying a pure bluff any profit means continuing roughly ==5.5 ÷ (5.5 + 1.8) = 75.3%== of the time. That estimate is called **minimum defense frequency (MDF)**.
 
-**You cannot get to 75% on 18.4% of made hands.** Add every ace-high (26.3%) and every king-high (16.5%) and you are still only at **61.2%** — the last stretch has to come out of the no-made-hand block, the queen-highs with a backdoor and the gutshots. Folding everything that is not at least king-high defends barely six hands in ten.
+Add every ace-high (26.3%) and every king-high (16.5%) and you are still only at **61.2%**, short of 75.3%.
+
+🔴 **Do not read that as "so you must defend more" — it points the other way.** MDF treats the opponent's bet as a pure bluff with zero equity, but a flop bluff still has two streets to come, so it does have equity. And the out-of-position player realizes equity badly, so **the solver's actual solution overfolds relative to MDF on the flop.** Fold frequency only converges toward MDF from the turn onward.
+
+What this arithmetic is good for, then, is not "hit 75%" but **"do not fold on the strength of one high card."** Plenty of the ace-highs and king-highs are still calls here, and folding all of them to one small c-bet is exactly the habit that gets exploited.
 
 (On a paired board nobody is literally ace-high: you always hold the board's pair of sixes. "Ace-high" here means that pair with an ace as your best card.)
 
@@ -270,7 +294,7 @@ Facing a 1.8bb bet into 5.5bb, denying a pure bluff any profit means continuing 
 ## What changes at the table?
 
 - **Do not undervalue middle pocket pairs on low paired boards.** 77 through TT are 68–76% equity here, the top of the calling range. But the floor is real: 44 and 55 still beat the range average, while 22 keeps only two-thirds of what its equity is worth, because it pairs below both board ranks.
-- **Flopping trips is not a reason to lead.** The sixes lead more than any other class here, and they still check nine times out of ten. Hiding them for a check-raise or a call-down makes far more than a 5.5bb pot does.
+- **Flopping trips is not a reason to lead.** The sixes lead more than any other class here, and they still check nine times out of ten. Leading only folds out the hands you already beat; checking lets those hands put the money in themselves, and leaves you a check-raise or a call-down. ⚠ What this solve cannot tell you is *how much* more the check-raise line makes: the study spot solves **the flop's first action only**, so the button's c-bet frequency and any check-raise EV simply do not exist in it.
 - **Do not fold ace-high to one small bet.** 79.7% of the button’s range has nothing beyond the board’s pair either — ace-high 31.9%, king-high 15.1% and no made hand 32.7%.
 - **Your kicker decides the hand.** Only four combos beat trips outright — but that holds only when your kicker is an ace. The second kicker is fixed by the board's 3, so the single card beside your six is the whole hand: with 76s the button's A6, K6, Q6 and 86 all have you dominated. Trips with a weak kicker is a bluff-catcher, not a hand to build a pot with.
 
