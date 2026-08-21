@@ -3,7 +3,11 @@
  * 두 플레이어의 핸드 등급 분포를 나란히 놓아, 그 보드에서 누가 왜 유리한지를 한 장으로 보여준다.
  *
  *   node scripts/capture-solver-spots.mjs
- *   node scripts/make-solver-range-charts.mjs        → <key>-ranges.png (1200×675 @2x)
+ *   node scripts/make-solver-range-charts.mjs             → <key>-ranges.png (1200×675 @2x)
+ *   node scripts/make-solver-range-charts.mjs --lang=en   → <key>-ranges-en.png (data-en.json 사용)
+ *
+ * 🪶 등급 라벨(Overpair·Ace-High …)은 솔버 화면에서 그대로 오므로 로케일 사전에는
+ *    «이 파일이 만드는 고정 문구» 넷만 있다. 숫자는 어느 쪽이든 솔버 값이다.
  *
  * 글자가 들어가는 그림이므로 이미지 생성 AI를 쓰지 않는다(§9-1: 철자 깨짐). HTML+Playwright다.
  * 문구는 이 파일이 만들고 숫자는 솔버에서 온다 — 오탈자·수치 조작의 여지가 없다.
@@ -15,7 +19,23 @@ import path from 'path';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DIR = process.env.SOLVER_CAPTURE_OUT || path.join(ROOT, '.solver-captures');
-const data = JSON.parse(readFileSync(path.join(DIR, 'data.json'), 'utf8'));
+
+const langArg = process.argv.find(a => a.startsWith('--lang='));
+const LANG = langArg ? langArg.split('=')[1] : 'ko';
+const SUF = LANG === 'ko' ? '' : '-' + LANG;
+
+/** 이 파일이 «만드는» 고정 문구만 담는다. 등급 라벨·숫자는 솔버에서 온다. */
+const CHART_L10N = {
+  ko: { title: '레인지 구성', source: '홀덤마스터 GTO 솔버 계산값 · 레이크 미고려',
+        equity: '에퀴티', eqr: '에퀴티 실현율' },
+  en: { title: 'Range composition', source: 'Calculated with the HoldemMaster GTO solver · rake not modeled',
+        equity: 'Equity', eqr: 'Equity realization' },
+};
+const C = CHART_L10N[LANG];
+if (!C) { console.error('지원하지 않는 로케일:', LANG, '· 아는 것:', Object.keys(CHART_L10N).join(', ')); process.exit(1); }
+
+const data = JSON.parse(readFileSync(path.join(DIR, `data${SUF}.json`), 'utf8'));
+console.log('로케일', LANG, '· 입력 data' + SUF + '.json · 출력 접미', SUF || '(없음)');
 
 const SUIT = { '♠': '#e2e8f0', '♥': '#f87171', '♦': '#60a5fa', '♣': '#4ade80' };
 const num = (s) => parseFloat(String(s).replace('%', '')) || 0;
@@ -87,16 +107,16 @@ function html(d) {
   .foot b{color:#f0ead8}
   .mark{margin-left:auto;font-size:15px;color:#d4af37;font-weight:700;opacity:.9}
   </style></head><body><div class="wrap">
-    <div class="top"><h1>레인지 구성 — ${title}</h1><div class="board">${boardHtml(board)}</div></div>
+    <div class="top"><h1>${C.title} — ${title}</h1><div class="board">${boardHtml(board)}</div></div>
     <div class="legend">
       <span><i class="dot" style="background:#4ade80"></i>${nameX}</span>
       <span><i class="dot" style="background:#e7c15c"></i>${nameY}</span>
-      <span style="margin-left:auto;color:#8b968f;font-size:14px">홀덤마스터 GTO 솔버 계산값 · 레이크 미고려</span>
+      <span style="margin-left:auto;color:#8b968f;font-size:14px">${C.source}</span>
     </div>
     <div class="rows">${body}</div>
     <div class="foot">
-      <span>에퀴티 <b>${d.oop.total[3]}</b> · <b>${d.ip.total[3]}</b></span>
-      <span>에퀴티 실현율 <b>${d.oop.total[5]}</b> · <b>${d.ip.total[5]}</b></span>
+      <span>${C.equity} <b>${d.oop.total[3]}</b> · <b>${d.ip.total[3]}</b></span>
+      <span>${C.eqr} <b>${d.oop.total[5]}</b> · <b>${d.ip.total[5]}</b></span>
       <span class="mark">♠ holdemmaster.com</span>
     </div>
   </div></body></html>`;
@@ -107,7 +127,7 @@ const page = await browser.newPage({ viewport: { width: 1200, height: 675 }, dev
 for (const [key, d] of Object.entries(data)) {
   if (!d.oop?.total || !d.ip?.total) { console.error('✘', key, '데이터 불완전 — 다시 캡처할 것'); continue; }
   await page.setContent(html(d), { waitUntil: 'load' });
-  await page.screenshot({ path: path.join(DIR, `${key}-ranges.png`) });
+  await page.screenshot({ path: path.join(DIR, `${key}-ranges${SUF}.png`) });
   console.log('✔', key);
 }
 await browser.close();

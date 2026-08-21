@@ -407,7 +407,8 @@ npm run check:gto:selftest     # 게이트 자체 검증
 🪶 핸드별 표는 **487행 전수 캡처**(가상 스크롤 누적)로 얻었다. 레이즈 100% = 66·55·22(9콤보) +
    65s(2콤보) + 64s. 블러프는 98s·87s·J4s·Q4s·54s로 **전부 스트레이트 드로우**다.
 
-⚠ **⑫⑬의 `-oop.webp`는 아직 «옛 캡처»다.** 그 편을 쓸 때 `capture-solver-spots.mjs` →
+✅ **2026-08-21: ⑫⑬의 `-oop.webp`를 재캡처했다** — 이제 「벳 2bb (33% 팟)」 현행 UI다. 아래는 절차 기록이다.
+⚠ 옛 서술: 그 편을 쓸 때 `capture-solver-spots.mjs` →
 `make-solver-range-charts.mjs` → `convert-solver-captures.mjs <key>`를 돌려 교체하라(수치도 그때 다시 읽어라).
 
 ⚠ **3벳팟(⑧⑨⑩)과 블라인드전(⑪⑫⑬)은 조건이 다르다.** 솔버 교육 예제 화면에 이렇게 적혀 있다.

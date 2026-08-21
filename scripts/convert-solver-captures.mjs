@@ -5,6 +5,8 @@
  *   node scripts/make-solver-range-charts.mjs    # 레인지 비교 차트 생성
  *   node scripts/convert-solver-captures.mjs srp-paired srp-monotone   # 필요한 스팟만 webp로
  *
+ * 🪶 로케일 접미(-en)가 붙은 캡처도 그대로 변환된다 → gto-<key>-oop-en.webp
+ *
  * <key>-oop.png    → public/images/gto-<key>-oop.webp      (히어로: 첫 액션 플레이어의 전략 화면)
  * <key>-ranges.png → public/images/gto-<key>-ranges.webp   (본문: 레인지 구성 비교)
  * <key>-ip.png     → 변환하지 않는다. 아래 이유를 볼 것.
@@ -39,7 +41,7 @@ if (!existsSync(SRC)) process.exit(console.error("캡처 폴더 없음:", SRC, "
 mkdirSync(DST, { recursive: true });
 
 const files = readdirSync(SRC)
-  .filter((f) => /-(oop|ranges)\.png$/.test(f))
+  .filter((f) => /-(oop|ranges)(-[a-z]{2})?\.png$/.test(f))   // -en 등 로케일 접미 허용
   .filter((f) => !only.length || only.some((k) => f.startsWith(k + "-")));
 
 if (!files.length) process.exit(console.error("변환할 파일 없음. 스팟 키를 확인하라.") || 1);
