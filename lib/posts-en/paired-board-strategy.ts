@@ -331,7 +331,7 @@ A. An estimate of how often you must continue so that a pure bluff cannot profit
 
 **Q. How often does the flop come paired?**
 
-A. About **17.2%** of the time — roughly one flop in six. The three flop cards miss each other only when the second card avoids the first rank and the third avoids both: ==(48 ÷ 51) × (44 ÷ 50) = 82.8%==, and the rest is paired or better. So a paired board is not an oddity you can afford to have no plan for; it shows up more often than you flop a pair with any given unpaired hand.
+A. About **17.2%** of the time — roughly one flop in six. The three flop cards miss each other only when the second card avoids the first rank and the third avoids both: ==(48 ÷ 51) × (44 ÷ 50) = 82.8%==, and the rest is paired or better. So a paired board is not an oddity you can afford to have no plan for — you will sit in one every session. (It is not the *more* common event, though: an unpaired hand misses the flop entirely ==(44 ÷ 50) × (43 ÷ 49) × (42 ÷ 48) = 67.6%== of the time, so it pairs up **32.4%** — closer to twice as often as the board pairs.)
 
 **Q. Do these numbers hold at my stake?**
 
