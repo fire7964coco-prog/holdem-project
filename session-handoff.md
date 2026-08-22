@@ -30,30 +30,37 @@ ja 실측: **`ソルバー ポーカー` 40 대 `ポーカー gto` 880 = 22배.*
 → 제목·H1·H2 금지, 본문 용어로만. **두 층을 섞지 마라.**
 **es·de·pt에서 `solver`/`Solver`가 같은 운명인지 반드시 재실측하라.**
 
-🔴🔴🔴 **다만 «라쿠로»가 아니다 — 2026-08-22 사장님 결정: 라쿠는 ja 전용이다.**
-> *「lowfruits에서 영어권·스페인어 키워드를 검색하고, 락코에서는 ja만 하자.
->   솔직히 못 믿겠어 — 일본 사이트에서 영미권 키워드 검색량 정보를 제공한다는 게.」*
+🔴 **다만 도구를 갈라 써라 — 2026-08-22 확정(사장님이 lowfruits로 직접 대조해 검증).**
 
-**es·de·pt 조사에 라쿠를 쓰지 마라.** 후보도 볼륨도 **lowfruits + 구글 자동완성 직접 + WebSearch PAA**로.
+| 용도 | 도구 |
+|---|---|
+| **키워드 «발굴»** | 🔴 라쿠 금지 → **lowfruits + 구글 자동완성 직접 + WebSearch PAA** |
+| **볼륨·월별 시계열·권역 비교** | 🟢 **라쿠 `search-volume-history`** (`language` + `location`) |
+| **난이도(SD)·CPC** | 🔴 **lowfruits** — 라쿠 SD는 항상 «일본 값»이고 CPC는 자주 null |
 
-배경 두 층을 구분해 둔다 —
-① **기술적으로는** 라쿠 24개 중 `search-volume-history`·`search-rank-history` 둘만 `language`/`location`을 받고,
-   나머지(`suggest`·`question-search`·`headline`·`co-occurrence`·`other-keywords`·`ranking-keywords`…)는
-   **전부 Japan 고정**이다. 공식 축어: *「**あくまで日本国内のデータ**となります」*
-   → 실증(2026-08-22): `suggest`에 `manos de poker`를 넣으면 **볼륨 10**(= 일본 값)이 나오고 30개 중 29개가 null이다.
-② 🔴 **그런데 그 «다국어 2개»조차 검증되지 않았다.** `Mexico` 18,100 대 `Japan` 20으로 A/B 차이는 확인했지만,
-   **18,100이 진짜 멕시코 값인지를 독립 출처와 대조한 적이 없다.** 라쿠를 라쿠로 확인한 것뿐이다.
-   `dataSource` 필드도 전건 null이었다. → **확인 안 된 수치 위에 발행 계획을 세우지 않는다.**
+**근거**: 라쿠 24종 중 `language`/`location`을 받는 건 `search-volume-history`·`search-rank-history`
+**둘뿐**이고 나머지는 **Japan 고정**이다
+(실증: `suggest`에 `manos de poker` → 볼륨 **10**, 30개 중 **29개 null**).
+그 «계측 2종»은 **사장님이 lowfruits(나라 Mexico · 언어 Spanish = 라쿠와 동일 파라미터)로 대조해 통과**했다 —
+`manos de poker` **라쿠 18,100 = lowfruits 18,100**. 둘 다 **구글 KWP 버킷값**을 중계하기 때문이다.
+🪶 location이 실제로 먹는다는 것도 확인: 같은 키워드가 `Japan`에선 **20**이었다(**905배**).
 
-🟢 **되살릴 조건**: lowfruits로 `manos de poker`(라쿠 18,100) · `como jugar poker`(6,600) ·
-   `reglas del poker`(3,600)를 뽑아 **자릿수 대조**. 맞으면 재검토, 어긋나면 영구 배제.
-   ⚠ **그 대조 전에는 위 숫자를 어떤 문서에도 «근거»로 인용하지 마라.**
+🔴🔴 **es 착수 시 반드시 알 것 — US 히스패닉은 «순위 자체»가 다르다** (라쿠 4로케일 실측):
+| 키워드 | Mexico | **US(es)** | Colombia |
+|---|---:|---:|---:|
+| `manos de poker` | **18,100** | 1,600 | 5,400 |
+| **`poker texas holdem`** | 720 | **3,600** | 320 |
 
-⚠ **이 결정으로 잃는 것**: [[es-us-keyword-tool-websearch-paa]]의 「US-히스패닉은 lowfruits로 못 뽑는다」를
-   라쿠 `location:"United States"`가 메울 «수도» 있었으나 **검증 전이라 없는 셈 친다.**
-   → **WebSearch PAA 주별 6각도가 계속 주도구다.**
+MX·CO는 `manos de poker`가 1위인데 **US는 `poker texas holdem`이 1위**다 —
+**미국 스페인어 사용자는 영어 게임명을 그대로 친다. LATAM 데이터를 US에 옮기면 1순위를 틀린다.**
+⚠ US는 **광고 경쟁성 100**짜리가 둘이다(`manos de poker`·`reglas del poker`, MX는 1~2) —
+   상업 가치가 크다는 신호이자 **SERP가 어필리에이트로 덮여 있을 신호**다. 착수 전 육안 확인.
+🟢 3권역 동시 상승 = 진짜 트렌드: `que es un flop` MX **+32%** · CO **+45%** · US **+22%**.
 
-**본체 = `docs/rakko-playbook.md`** (맨 위 「운영 결정」 절 + §8). 착수 전 반드시 읽어라.
+⚠ `seoDifficulty`는 비일본에서 **반드시 OFF**(일본 값이 나온다 + kw당 0.75크레딧) ·
+   `aggregationPeriodMonths: 48`은 **12와 같은 값**이니 항상 48로.
+⚠ 검증된 건 **es-MX 한 로케일**이다 — de·pt는 첫 사용 때 **키워드 1개만 lowfruits와 맞춰** 보면 된다.
+**본체 = `docs/rakko-playbook.md`** (맨 위 「운영 규칙」 절).
 
 ### ③ 🔴 **차별화어는 「무료」가 아닐 수 있다**
 ja SERP 실측: `GTOツール 無料` top-10 중 **6개가 이미 제목에 「無料」**를 달고 있어 구별되지 않았다.
