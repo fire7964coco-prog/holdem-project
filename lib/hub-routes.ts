@@ -58,7 +58,9 @@ const LOCALE_HUB_ROUTES: Record<string, readonly string[]> = {
    * es는 아직 2개뿐이다 (`app/es/`에 있는 건 blog·tournaments 둘뿐).
    */
   ja: ["/ja/blog", "/ja/solver", "/ja/tournaments"],
-  es: ["/es/blog", "/es/tournaments"],
+  // es — ★2026-08-22 `/es/solver` 신설. 스페인어권에 솔버 진입로가 0개였다(본체는 noindex).
+  //      ⚠ `/es/hand-chart`·`/es/calculator`·`/es/win-rate-quiz`는 **여전히 없다** — 넣지 마라.
+  es: ["/es/blog", "/es/solver", "/es/tournaments"],
   // de — 2026-08-10 신설. 독일어 지역·일정 검색 수요(LDA 4~9)를 받을 랜딩이 없었다.
   //      근거: docs/keyword-bank/de-core-volumes.md 시드⑫
   de: ["/de/blog", "/de/tournaments"],

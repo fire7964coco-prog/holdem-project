@@ -120,6 +120,13 @@ const STATIC_ROUTES = [
    *   일본어권 검색은 이 랜딩이 전담한다 — 신설 전까지 그 진입로가 0개였다.
    */
   { path: "/ja/solver", priority: "0.7", changefreq: "monthly" },
+  /**
+   * ★2026-08-22 신설 — `/es/solver`. `/en/solver`·`/ja/solver`와 같은 구조·같은 가중치(0.7)다.
+   *   솔버 본체(`?lang=es`)는 noindex이므로 스페인어권 검색은 이 랜딩이 전담한다
+   *   — 신설 전까지 그 진입로가 0개였다.
+   *   🔴 빌드 후 `.next/server/app/es/solver.html`의 meta가 **index, follow**인지 확인할 것.
+   */
+  { path: "/es/solver", priority: "0.7", changefreq: "monthly" },
 
   /**
    * ★`/holdem-practice` 누락 복구 (2026-08-04). 색인 가능(index, follow)하고 좌측 레일에도

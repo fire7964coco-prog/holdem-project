@@ -43,6 +43,8 @@ export const metadata: Metadata = {
       "ko-KR": `${SITE}/solver`,
       "en-US": `${SITE}/en/solver`,
       "ja-JP": `${SITE}/ja/solver`,
+      // ★2026-08-22 — `/es/solver` 신설. **네 랜딩이 같은 세트**여야 게이트를 통과한다.
+      "es-ES": `${SITE}/es/solver`,
     },
   },
   openGraph: {

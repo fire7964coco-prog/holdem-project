@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Tabla de manos iniciales de póker y las mejores manos",
   seoTitle: "¿Foldear el 80% de tus manos? — Tabla de manos iniciales",
   desc: "La mayoría de tus cartas pierden dinero. Las mejores manos iniciales, la tabla completa por posición y en 6-max, y GTO vs principiante.",
-  tldr: "De los 169 tipos de mano inicial, solo una pequeña franja superior — cerca del 15–20% de las manos que te reparten — es rentable para un principiante. Los pares grandes (AA–TT) y AK suben desde cualquier asiento; cuanto más tarde actúas, más abres tu rango — desde ~13% en UTG hasta ~43% en el botón (más amplio aún en 6-max). Empieza con una tabla simplificada y añade las tablas GTO de preflop cuando el subir-o-foldear ya te salga automático.",
+  tldr: "De los 169 tipos de mano inicial, solo una pequeña franja superior — cerca del 15–20% de las manos que te reparten — es rentable para un principiante. Los pares grandes (AA–TT) y AK suben desde cualquier asiento; cuanto más tarde actúas, más abres tu rango — desde ~13% en UTG hasta ~43% en el botón (más amplio aún en 6-max). Empieza con una tabla simplificada y añade las tablas preflop GTO cuando el subir-o-foldear ya te salga automático.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-08-11",
+  updated: "2026-08-22",
   masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -16,6 +16,8 @@ export const POST: Post = {
   tags: [
     "buenas manos iniciales poker",
     "tabla manos iniciales poker",
+    "tablas preflop",
+    "tablas preflop poker",
     "gto preflop charts",
     "porcentaje manos iniciales",
     "manos iniciales 6-max",
@@ -29,7 +31,7 @@ Igualé una subida, fallé el flop, volví a igualar, fallé el turn. Para cuand
 
 Aquí tienes la matemática incómoda detrás de esa mano: ==el Texas Hold'em tiene 169 tipos distintos de mano inicial — y en torno al 80% de las manos que te reparten deberías foldearlas en preflop.== Aprender qué manos jugar — y desde qué asiento — es la mayor mejora que hace un principiante en su primer mes. La selección de manos es la segunda de las [cinco decisiones](/es/blog/holdem-strategy) que hay detrás de cada mano ganadora: acierta con ella y cada calle posterior se vuelve más fácil.
 
-Esta página es la versión todo-en-uno: las 10 mejores manos iniciales, qué hace que una mano sea *buena* en primer lugar, la tabla de manos iniciales completa por posición (9-max y 6-max), las tablas GTO de preflop frente a las tablas para principiantes, una chuleta imprimible en PDF y un test rápido para ponerte a prueba.
+Esta página es la versión todo-en-uno: las 10 mejores manos iniciales, qué hace que una mano sea *buena* en primer lugar, la tabla de manos iniciales completa por posición (9-max y 6-max), las tablas preflop GTO frente a las tablas para principiantes, una chuleta imprimible en PDF y un test rápido para ponerte a prueba.
 
 ---
 
@@ -167,14 +169,14 @@ Una aclaración de alcance: esto va de qué porcentaje de tu *rango* jugar, no d
 
 ---
 
-## Tablas GTO de preflop vs tablas para principiantes: ¿cuál usar?
+## Tablas preflop GTO vs tablas para principiantes: ¿cuál usar?
 
 Yo mantengo los outputs del solver abiertos cuando estudio, y aun así le doy a cada principiante una tabla simplificada primero. Son dos herramientas distintas, y saber cuál usar vale más que cualquiera de las dos tablas por separado.
 
-**Las tablas GTO de preflop** salen de los solvers (PioSOLVER, GTO Wizard y compañía). Son teóricamente inexplotables — y también están llenas de frecuencias mixtas: abre esta mano el 25% de las veces, foldéala el 75%, haz 3-bet con esta combinación pero solo con estos palos. **Las tablas para principiantes** — como la de esta página — comprimen todo eso en una acción clara por mano.
+**Las tablas preflop GTO** salen de los solvers (PioSOLVER, GTO Wizard y compañía). Son teóricamente inexplotables — y también están llenas de frecuencias mixtas: abre esta mano el 25% de las veces, foldéala el 75%, haz 3-bet con esta combinación pero solo con estos palos. **Las tablas para principiantes** — como la de esta página — comprimen todo eso en una acción clara por mano.
 
 :::compare
-Tablas GTO de preflop | Tabla simplificada de principiante
+Tablas preflop GTO | Tabla simplificada de principiante
 Frecuencias mixtas — subir el 25% / foldear el 75% de las veces | Una acción clara por mano — subir o foldear
 Asumen que los rivales también juegan casi perfecto | Asumen que los rivales cometen errores (los cometen)
 Construidas para una profundidad de stack, rake y formato concretos | Robustas en las partidas típicas en vivo y de bajo nivel
@@ -182,7 +184,7 @@ Mejor para: regs online, sesiones de estudio, revisión de rangos | Mejor para: 
 Mal aplicadas = decisiones al azar que no sabes explicar | Un pelín "demasiado cerrada" — el defecto más barato del póker
 :::
 
-Por esto memorizar tablas de solver a ciegas sale mal: las frecuencias GTO son una defensa contra rivales perfectos. Tus rivales en bajo nivel igualan demasiado, foldean muy poco y nunca hacen 3-bet de farol — contra ellos, los faroles cuidadosamente equilibrados del solver ganan *menos* dinero que simplemente subir las buenas manos y foldear la basura. Acabas haciendo jugadas de frecuencia mixta que no sabes explicar, en partidas donde la jugada sencilla gana más. ==g:Aprende la tabla simplificada hasta que subir-o-foldear te salga automático; añade las tablas GTO de preflop cuando pases al online o empieces a estudiar en serio.== El puente entre las dos es entender la [equity en el póker](/es/blog/holdem-equity "thumb:/images/holdem-equity-hero.webp") — la matemática de reparto de victorias sobre la que se construyen los EV del solver.
+Por esto memorizar tablas de solver a ciegas sale mal: las frecuencias GTO son una defensa contra rivales perfectos. Tus rivales en bajo nivel igualan demasiado, foldean muy poco y nunca hacen 3-bet de farol — contra ellos, los faroles cuidadosamente equilibrados del solver ganan *menos* dinero que simplemente subir las buenas manos y foldear la basura. Acabas haciendo jugadas de frecuencia mixta que no sabes explicar, en partidas donde la jugada sencilla gana más. ==g:Aprende la tabla simplificada hasta que subir-o-foldear te salga automático; añade las tablas preflop GTO cuando pases al online o empieces a estudiar en serio.== El puente entre las dos es entender la [equity en el póker](/es/blog/holdem-equity "thumb:/images/holdem-equity-hero.webp") — la matemática de reparto de victorias sobre la que se construyen los EV del solver.
 
 ---
 
@@ -270,9 +272,9 @@ A. La regla del 7-2 es un juego paralelo de la casa, no una regla oficial del p�
 
 A. El 7-2 de distinto palo se considera ampliamente la peor mano inicial del póker. Las cartas están demasiado separadas para hacer una escalera juntas, son demasiado bajas para ganar sin mejorar, y hasta ligar una pareja te deja con una mano débil y mal kicker.
 
-**Q. ¿Deberían los principiantes usar tablas GTO de preflop?**
+**Q. ¿Deberían los principiantes usar tablas preflop GTO?**
 
-A. No al principio. Las tablas GTO de preflop usan frecuencias mixtas diseñadas para ser inexplotables contra rivales fuertes — una exageración en partidas de principiantes, donde una tabla simplificada de subir-o-foldear gana más. Aprende la tabla simple hasta que te salga automática, y luego añade las tablas GTO cuando estudies o subas de nivel online.
+A. No al principio. Las tablas preflop GTO usan frecuencias mixtas diseñadas para ser inexplotables contra rivales fuertes — una exageración en partidas de principiantes, donde una tabla simplificada de subir-o-foldear gana más. Aprende la tabla simple hasta que te salga automática, y luego añade las tablas GTO cuando estudies o subas de nivel online.
 
 **Q. ¿Importa de verdad ser del mismo palo?**
 

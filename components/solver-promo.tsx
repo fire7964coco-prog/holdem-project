@@ -56,6 +56,18 @@ const COPY = {
     desc: "ポストフロップのGTOをブラウザで計算 — インストールも登録も不要で無料",
     cta: "ソルバーを開く →",
   },
+  /**
+   * ★2026-08-22 신설. 🔴 `GTO`를 단독으로 두지 않았다 — 멕시코에서 과나후아토 주 코드다
+   *   (뱅크 `es-gto-solver.md` §1-①). 항상 `solver`/`poker`와 붙여 쓴다.
+   * 🔴 차별화어는 「무료」가 아니라 **「sin instalar · sin registrarte」**다 — SERP top-10 전부와 갈린다.
+   */
+  es: {
+    href: "/es/solver",
+    badge: "♠ Herramienta gratis",
+    title: "Solver GTO",
+    desc: "Calcula la estrategia GTO postflop en el navegador — sin instalar, sin registrarte y gratis",
+    cta: "Abrir el solver →",
+  },
 } as const;
 
 export type SolverPromoLocale = keyof typeof COPY;

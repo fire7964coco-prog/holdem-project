@@ -90,6 +90,49 @@
 - Traducir lo que tiene término vivo: ballena · tiburón · pez · farol · trío contra trío · retirarse/tirar(fold) · igualar/pagar(call) · pasar(check) · subir(raise). NO traducir jerga cruda: straddle·rake·rakeback·fish·cooler·bad beat·tilt·nit·reg·donk·grinder.
 - §13: manos de ejemplo (cooler set-sobre-set, bad beat) copiadas LITERAL del EN, sin reinventar.
 
+## Solver / GTO — Wave 6 (2026-08-22 · para `/es/solver`. Medición: DataForSEO Labs + SERP API + rakko)
+
+> **Fuente canónica = `lib/posts-es/holdem-glossary.ts` L237-238** (no inventar, ya estaba definido):
+> `| **GTO** | Game Theory Optimal — una estrategia equilibrada e inexplotable de los solvers. |`
+> `| **Rango (range)** | El conjunto completo de manos que un jugador podría tener en un spot; los pros piensan en rangos, no en manos sueltas. |`
+> ⇒ El corpus es **ya usa `solvers` como anglicismo crudo en minúscula**. No hace falta glosarlo como novedad.
+
+- **solver**: **crudo, masculino** — *el solver · los solvers*. ★NO traducir ("resolvedor" no existe en el registro).
+  Glosa 1ª vez: *"un solver (el programa que calcula la estrategia de equilibrio)"*, luego alternar.
+  🔴 **ORDEN DE PALABRAS — decide la dificultad**: `solver poker` **SD 0** vs `poker solver` **SD 46**
+  vs `solver de poker` **SD 46**. **Usar `solver poker` en H2/cuerpo.** (Mismo fenómeno que EN ①
+  `range advantage poker` 30 vs `poker range advantage` 10.)
+  ⚠ Falso positivo de grep: `resolver`/`absolver` contienen "solver" — usar límite de palabra al contar.
+- **GTO**: sigla cruda, **NUNCA sola**. 🔴🔴 **En México `GTO` = código del estado de Guanajuato**
+  (medido: `que es gto mexico`·`que es gto policia`·`historia de guanajuato`·`gto carro`(Pontiac)·`gto anime`).
+  ⇒ **Siempre anclada: `GTO poker` · `poker GTO` · `solver GTO` · `estrategia GTO`.**
+  Volumen: `gto poker`/`poker gto` **ES 210 · MX 260** (SD 6~7) — MX es el único eje donde MX > ES.
+- **rango / rangos**: canónico (ver glosario). El plural es la forma buscada: `rangos poker`/`poker rangos`/
+  `rangos del poker` **ES 480 · MX 170 · SD 0~1** — **el eje más grande de todo el vertical en español.**
+  Variantes vivas: `rangos de poker`(90) · `rangos de manos poker`(50) · `rangos en el poker`(10/20) ·
+  `rangos de apertura poker` · `lectura de rangos poker`.
+- **tablas preflop**: **la expresión nativa para los preflop charts** — `tablas preflop` **ES 210 · SD 0**,
+  `tablas preflop poker` 110. 🔴 **Pertenece a `holdem-starting-hands-chart`, NO a la landing del solver**
+  (decisión 2026-08-22: la canibalización con posts existentes es prioridad máxima).
+  Marcas competidoras que salen pegadas: `zerospoker` · `educapoker` · `preflop vision`.
+- **preflop / postflop / flop / turn / river / board**: **crudos**. `board` alias **tablero**
+  (la app usa `Board`). Calles: **flop, turn y river**.
+- **Crudos que ya venían** (Waves 3-5, no repetir glosa): equity · EV · +EV · stack · all-in · spot ·
+  rake · fold equity · check-raise · c-bet · 3-bet · squeeze.
+- **Interfaz de la app** (`solver.holdemmaster.com/?lang=es` — literal, 2026-08-22):
+  `Spots de estudio` · **`Entrenador GTO`** · `Tablas preflop` · `Equity` · `Rango OOP / Rango IP` ·
+  `Board` · `Bet sizes` · `Calcular` · `Agregar a inicio` · `Estudio offline`.
+  ⚠ **Usar estos literales SOLO como etiqueta de pantalla, nunca como argumento** — la fuente de verdad
+  de los números es `docs/gto-solver-series-spec.md` §4-B (lección ja ⑤: 3 errores de hecho salieron
+  de copiar el texto de la app).
+- ❌ **`simulador de poker` NO es nuestro término** — medido: la SERP de `simulador de poker`(ES 140)
+  la ocupan misjuegos·minijuegos·elpais juegos·zyngapoker·Steam ⇒ **intención = "jugar gratis por diversión"**,
+  no estudiar. No usarlo para el solver.
+- **calculadora**: `calculadora de poker` ES 170 · MX 70 (SD 1) + cola larga con SD ≤10
+  (`calculadora de probabilidades poker` 8 · `calculadora de odds poker` 9 · `~ de outs/equity/icm/varianza`).
+  🔴 **Reservado para `/es/calculator`**, no para la landing del solver.
+- Banco completo con volúmenes, SERP y ganchos: **`docs/keyword-bank/es-gto-solver.md`**.
+
 ## Enlaces internos (regla dura)
 - Todos `/es/blog/slug`.
 - **Whitelist es (solo enlazar a posts que existen) — Wave 5 (Glossary) = 41**: [Waves 1-4, 35 slugs] + **holdem-glossary · holdem-straddle · holdem-rake · holdem-fish · holdem-cooler · holdem-bad-beat**. (42.º y último = holdem-card-counting, tras traducirlo.)
