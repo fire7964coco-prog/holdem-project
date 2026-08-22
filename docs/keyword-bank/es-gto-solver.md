@@ -116,6 +116,26 @@ zyngapoker · Google Play · **math4all.es(계산기)** · Steam · unmasked.pok
 
 ---
 
+## 3-A. 🟢 솔버 본체는 **이미 스페인어를 완역 지원한다** (2026-08-22 라이브 실측)
+
+`solver.holdemmaster.com/?lang=es` → `<html lang="es">` · 완역된 UI.
+**언어 셀렉터 = `ko · en · ja · es · pt · de · zh` 7개** — **pt·de 랜딩도 UI가 이미 준비돼 있다.**
+
+**앱 es 축어** (⚠ ja 교훈 ⑤ — **«보드»에만 쓰고 «해설»에는 쓰지 마라.** 판정은 `docs/gto-solver-series-spec.md` §4-B):
+- `<title>`: `HoldemMaster GTO Solver — Solver GTO gratis en el navegador`
+- `desc`: `Solver GTO gratis que funciona directamente en tu navegador, sin instalar nada. Calcula la estrategia postflop de Texas Hold'em por rango, board y tamaño de apuesta.`
+- H1: **`Estrategia GTO, directo en tu navegador.`**
+- 서브: **`Nada que instalar, nada que pagar.`**
+- 특징 4칸: **`Gratis — Todas las funciones, sin límites de uso`** · `Estudio offline` ·
+  `Cálculo rápido — Multihilo, velocidad de solver de escritorio` · `Entrenador GTO`
+- 네비: `Spots de estudio` · `Entrenador GTO` · **`Tablas preflop`** · `Equity`
+
+🔴 **앱 es 문구 검증 대상 1건**: `Entrenador GTO — recibe tu nota por **pérdida de EV**`.
+앱은 2026-08-15에 채점을 **팟 대비 비율**로 바꿨다(핸드오프 「되돌리지 마라」 표). **es·pt·de·zh 앱 문구가
+낡은 주장을 들고 있을 수 있다** — ja에서 정확히 이 유형으로 사실오류 3건이 나왔다. **솔버 쪽에 확인 요청.**
+
+---
+
 ## 4. 훅 판정 — 「무료」는 쓸 수 없다
 
 영어권 SERP에 무료 브라우저 솔버가 이미 여럿이다:
@@ -123,12 +143,30 @@ zyngapoker · Google Play · **math4all.es(계산기)** · Steam · unmasked.pok
 `pokergtosolver.com` · `PokerMoose`(플랍까지 무료, 이후 $25/월) · `Poker Academy` · `Lucid GTO`(무료 티어)
 → ja 회차의 「無料」와 같은 상황이다. **남들이 다 달고 있는 말은 훅이 못 된다.**
 
-### ✅ 쓸 수 있는 훅 (스페인어 SERP 실측 기준)
-1. **「설명하는 글은 많은데, 지금 바로 돌아가는 것이 없다」** — `solver poker` top-10의 절반이
-   «솔버란 무엇인가» 설명 글이다. **클릭해서 바로 계산이 도는 페이지가 없다.**
-2. **「설치도 등록도 없이」** — `sin instalar, sin registrarte`. 1·3·10위가 전부 설치/구독이다.
+### 🔴 `optimuspoker.com`(7위) 실측 — **반례가 아니다. 오히려 훅을 선명하게 한다**
+Playwright 라이브(2026-08-22). 「Web-Based GTO Solver」를 표방하는 게 맞는데 조건이 다르다:
+
+| | OptimusPoker | **우리** |
+|---|---|---|
+| 무료 티어 | **`STARTER · FREE Forever · SOLVER 1 Solution / Day`** | **무제한** (`sin límites de uso`) |
+| 등록 | **필수** — 모든 CTA가 `Register` | **없음** |
+| 과금 | 크레딧제 — 축어: *"lock a flop in a single-raised pot, that click **makes use of one credit**"* | 없음 |
+| 유료 | `$14.90` / `$23` / `$29.08` per month | — |
+
+→ 「돌아가는 무료 솔버가 없다」는 **부정확했다.** 정확한 훅은 **「등록도 없고, 하루 제한도 없고, 크레딧도 없다」**이다.
+   이 셋이 `solver poker` SERP top-10 **전부와** 갈린다.
+
+### ✅ 확정된 훅 (우선순위 순)
+1. **「등록 없음 · 사용 제한 없음 · 크레딧 없음」** — `sin registrarte, sin límites`.
+   경쟁자 전부가 구독·등록·일일제한 중 하나 이상을 건다. **앱 축어 `Todas las funciones, sin límites de uso`와 일치.**
+2. **「설치가 없다」** — `nada que instalar`. SERP 1·3·10위가 설치형/앱이다.
 3. **「레이크까지 넣고 푼다」** — 무료 경쟁자 중 레이크·레이크캡을 다루는 곳이 SERP 상위에 없다.
-4. **「해설 13편이 붙어 있다」** — 이건 **우리만 갖고 있다.** 솔버는 흔한데 «왜 이렇게 푸는지»가 붙은 솔버는 드물다.
+4. **「해설 13편이 붙어 있다」** — **우리만 갖고 있다.** 솔버는 흔한데 «왜 이렇게 푸는지»가 붙은 솔버는 드물다.
+5. **「오픈소스 · 소스 공개」** — 🔴 **본문·FAQ에만 쓴다. 제목·H1에는 쓰지 않는다**(2026-08-22 사장님 판정).
+   근거: `educapoker.com`이 「TexasSolver. Un GTO solver **gratuito y OpenSource**」 글로 `solver poker`
+   **4위**다 → «무료 오픈소스 솔버»는 스페인어권에서 **실제로 검색되는 개념**이다. GTO Wizard·OptimusPoker의
+   블랙박스와 갈리는 신뢰 신호이자 **AGPL-3.0+ 의무 충족**이기도 하다(솔버는 WASM Postflop 파생 —
+   그래서 도메인을 분리하고 소스를 공개했다).
 
 ⚠ **가격 비교를 본문에 쓰지 마라** — `app/solver/solver-client.tsx`의 `COMPARE` 주석이
 「가격·무료 티어 수치는 넣지 않는다(§12-B)」로 못박아 뒀다. PAA에 `¿Cuánto cuesta GTO Wizard?`가
@@ -170,18 +208,22 @@ zyngapoker · Google Play · **math4all.es(계산기)** · Steam · unmasked.pok
 
 ### 제목·설명 초안 (§17 공식 = 훅 — 키워드 2~3개)
 - `seoTitle` 후보 A: **`Los rangos que nadie te enseña — solver poker postflop gratis`**
-- `seoTitle` 후보 B: **`Deja de mirar tablas preflop — rangos poker en el flop, turn y river`**
-  (⚠ B는 `tablas preflop`을 **부정 대비**로만 쓴다. 그 축을 가져가는 게 아니다)
+- `seoTitle` 후보 B: **`Sabes tu rango preflop, ¿y en el flop? — rangos poker y solver GTO`**
+  (⚠ **`tablas preflop`은 제목에 넣지 않는다** — 그 축은 `holdem-starting-hands-chart`의 것으로 판정됐다.
+   B는 「프리플랍은 알지만」이라는 **상태 서술**로만 대비시킨다)
 - `desc`: 「¿Sabes tu rango preflop pero te pierdes en el flop? Rangos poker postflop con un solver
-  que corre en tu navegador — sin instalar, sin registrarte. N minutos.」
+  que corre en tu navegador — sin instalar, sin registrarte, sin límites. N minutos.」
+- ⚠ **`GTO`는 반드시 `poker`/`solver`와 붙여** 쓴다(§1-① 과나후아토). ⚠ **`OpenSource`는 제목 금지**(§4-5).
 
 ### H2 골격 (질문형 70% · 각 H2 직후 40~75단어 직답 · `> **La respuesta corta**` 블록)
 1. `¿Qué es un solver poker y qué hace realmente?` → `solver poker` · `que es gto en poker`
 2. `¿Por qué tus rangos se rompen después del flop?` → **`rangos poker` 본진**
 3. `¿Cómo se leen los rangos en el poker postflop?` → `lectura de rangos poker` · `rangos en el poker`
-4. `¿Necesitas instalar algo para usar un solver?` → **훅 2** (`sin instalar, sin registrarte`)
+4. `¿Hace falta instalarlo o registrarse?` → **훅 1+2** (`sin registrarte, sin límites, nada que instalar`)
 5. `¿El rake cambia la solución?` → **훅 3** (경쟁자 공백)
-6. `¿Solver gratis o de pago: qué cambia de verdad?` → `solver poker gratis` (⚠ **금액 쓰지 않는다**)
+6. `¿Solver gratis o de pago: qué cambia de verdad?` → `solver poker gratis`
+   ⚠ **금액을 쓰지 않는다.** 「구독이냐 · 하루 몇 번이냐 · 크레딧이냐」라는 **구조**로만 대비시킨다.
+   여기에 **훅 5(오픈소스)를 한 문장** 넣는다 — 「계산이 네 기기에서 돌고, 코드가 공개돼 있다」
 7. `¿Cómo practicar lo que dice el solver?` → 트레이너 + 해설 13편 (**훅 4**)
 
 ### FAQ (PAA 실측에서 그대로)
@@ -201,11 +243,20 @@ EN 랜딩의 `hand-chart`·`calculator`·`win-rate-quiz` 자리를 **es 블로�
 
 ---
 
-## 7. 미결 — 판정이 필요한 것
+## 7. ✅ 판정 완료 (2026-08-22 사장님) — 되돌리지 마라
 
-| # | 무엇 | 왜 |
+| # | 안건 | 판정 |
 |---|---|---|
-| 1 | **`calculadora de poker` 축(170/70 · SD 1 · 롱테일 12개+)을 랜딩이 흡수할지** | `/es/calculator`가 **없다**. 도구 3종 경화 때 만들 자리인데, 그때까지 비워 둘지 랜딩이 임시로 받을지. 롱테일이 전부 SD 10 이하다(`calculadora de probabilidades poker` 8 · `calculadora de odds poker` 9) |
-| 2 | **`optimuspoker.com`(7위)이 실제로 브라우저에서 도는가** | 「plataforma con IA y solver GTO online」을 표방한다. 우리 훅 1(「돌아가는 게 없다」)의 유일한 반례 후보다. **착수 전 라이브 확인 필수** |
-| 3 | **`tablas preflop`(210 · SD 0)을 `holdem-starting-hands-chart`에 소급할지** | 그 글은 `gto preflop charts`만 갖고 있는데 **스페인어 실사용 표기는 `tablas preflop`**이다. 랜딩 회차에 함께 고칠지 별건으로 둘지 |
-| 4 | **우리 솔버가 WASM Postflop(AGPL-3.0+) 파생인가** | 랜딩의 「32비트 FP / 16비트 정수 · 4GB」가 그 사양과 일치한다. **파생이면 소스 공개 의무**가 생긴다. ⚠ **확인 안 했다 — 추측이다.** 솔버 쪽에 물어야 한다 |
+| 1 | `calculadora de poker` 축(170/70 · SD 1 · 롱테일 12개+) | 🔴 **랜딩이 가져가지 않는다.** `/es/calculator`를 붙일 예정이고 **그 키워드는 계산기 페이지의 것**이다. 롱테일 12개(`calculadora de probabilidades poker` SD 8 · `calculadora de odds poker` SD 9 · `~de outs/equity/icm/varianza/manos/fichas/omaha/online/gratis/porcentajes poker`)는 **계산기 페이지 착수 시 이 파일 §2에서 가져다 쓴다** |
+| 2 | `optimuspoker.com`이 반례인가 | ❌ **아니다.** 무료는 **하루 1솔루션 + 등록 필수 + 크레딧제**다(§4 실측표). 훅이 오히려 선명해졌다 |
+| 3 | `tablas preflop`(210 · SD 0)을 어디로 | ✅ **포스팅 `es/holdem-starting-hands-chart`로 소급한다.** 그 글은 영어형 `gto preflop charts`만 갖고 있는데 **스페인어 실사용 표기는 `tablas preflop`**이다. ⚠ 솔버 앱 네비에도 `Tablas preflop`이 있지만 **본체는 noindex**이고, **기존 포스팅과의 카니발이 최우선**이다(사장님). 랜딩은 **포스트플랍으로 깨끗이 갈린다** |
+| 4 | 우리 솔버가 WASM Postflop(AGPL-3.0+) 파생인가 | ✅ **파생이 맞다.** 그래서 **도메인을 `solver.holdemmaster.com`으로 분리하고 소스를 GitHub에 공개**했다. **법적 리스크 없음** — 오히려 §4 훅 5번의 근거가 된다 |
+| 5 | 랜딩 순서 | ✅ **es 하나 먼저 완성 → 검수 → 그 후 pt·de.** 솔버 앱은 이미 7개 언어를 지원하므로 UI는 병목이 아니다 |
+
+## 8. 🔴 남은 확인 — 솔버 쪽에 물을 것
+
+| 무엇 | 왜 |
+|---|---|
+| **앱 es(및 pt·de·zh) 트레이너 문구가 `pérdida de EV`인가** | 앱은 2026-08-15에 채점을 **팟 대비 비율**로 바꿨다. 라이브 es 화면에 아직 `recibe tu nota por pérdida de EV`가 있다. **ja에서 정확히 이 유형으로 사실오류 3건**이 나왔다(핸드오프 「솔버 앱에 통지할 것」) |
+| **GitHub 저장소 URL** | 훅 5번(오픈소스)을 본문에 쓰려면 **링크할 주소가 필요하다.** 지어내지 않는다 |
+| **ja 앱에 남아 있는 사실오류 3건**(⑨ `Q♥T♥7♠` 체크 0.8% · ⑬ `A♠A♥6♦` 트립스 17.5% · ③ `Q♠J♦T♠` 너트 BTN 쏠림) | 이미 통지 대기 중이다. **es 랜딩 작성 시 같은 문장을 스페인어로 복제하지 마라** |
