@@ -30,17 +30,30 @@ ja 실측: **`ソルバー ポーカー` 40 대 `ポーカー gto` 880 = 22배.*
 → 제목·H1·H2 금지, 본문 용어로만. **두 층을 섞지 마라.**
 **es·de·pt에서 `solver`/`Solver`가 같은 운명인지 반드시 재실측하라.**
 
-🔴🔴 **다만 «라쿠로»가 아니다 — 2026-08-22에 판정이 뒤집혔다.**
-라쿠 24개 도구 중 **다국어가 되는 것은 `search-volume-history`와 `search-rank-history` 둘뿐**이다.
-`suggest-keywords`·`question-search`·`co-occurrence`·`headline`·`other-keywords`·`ranking-keywords`는
-**전부 Japan 고정**이다 — 공식 축어: *「日本国外のキーワードデータは取得できません。英語など多言語の
-データを取得することは可能ですが、**あくまで日本国内のデータ**となります」*
-→ **es 시드를 suggest에 넣으면 «일본에서 검색된 스페인어»가 나온다. 숫자가 나온다고 맞는 게 아니다.**
-**절차**: 후보는 **구글 자동완성 직접 + lowfruits + WebSearch PAA**로 모으고,
-       점수는 **`search-volume-history`에 `language`+`location`을 줘서** 매긴다.
-       ⚠ 그때 **`seoDifficulty`는 반드시 OFF** — 언어를 바꿔도 **일본어 난이도**가 나오고 kw당 0.75크레딧이다.
-       🟢 `aggregationPeriodMonths: 48`은 **12와 같은 값**이니 항상 48로.
-**본체 = `docs/rakko-playbook.md` §10.** 착수 전 그 절을 반드시 읽어라.
+🔴🔴🔴 **다만 «라쿠로»가 아니다 — 2026-08-22 사장님 결정: 라쿠는 ja 전용이다.**
+> *「lowfruits에서 영어권·스페인어 키워드를 검색하고, 락코에서는 ja만 하자.
+>   솔직히 못 믿겠어 — 일본 사이트에서 영미권 키워드 검색량 정보를 제공한다는 게.」*
+
+**es·de·pt 조사에 라쿠를 쓰지 마라.** 후보도 볼륨도 **lowfruits + 구글 자동완성 직접 + WebSearch PAA**로.
+
+배경 두 층을 구분해 둔다 —
+① **기술적으로는** 라쿠 24개 중 `search-volume-history`·`search-rank-history` 둘만 `language`/`location`을 받고,
+   나머지(`suggest`·`question-search`·`headline`·`co-occurrence`·`other-keywords`·`ranking-keywords`…)는
+   **전부 Japan 고정**이다. 공식 축어: *「**あくまで日本国内のデータ**となります」*
+   → 실증(2026-08-22): `suggest`에 `manos de poker`를 넣으면 **볼륨 10**(= 일본 값)이 나오고 30개 중 29개가 null이다.
+② 🔴 **그런데 그 «다국어 2개»조차 검증되지 않았다.** `Mexico` 18,100 대 `Japan` 20으로 A/B 차이는 확인했지만,
+   **18,100이 진짜 멕시코 값인지를 독립 출처와 대조한 적이 없다.** 라쿠를 라쿠로 확인한 것뿐이다.
+   `dataSource` 필드도 전건 null이었다. → **확인 안 된 수치 위에 발행 계획을 세우지 않는다.**
+
+🟢 **되살릴 조건**: lowfruits로 `manos de poker`(라쿠 18,100) · `como jugar poker`(6,600) ·
+   `reglas del poker`(3,600)를 뽑아 **자릿수 대조**. 맞으면 재검토, 어긋나면 영구 배제.
+   ⚠ **그 대조 전에는 위 숫자를 어떤 문서에도 «근거»로 인용하지 마라.**
+
+⚠ **이 결정으로 잃는 것**: [[es-us-keyword-tool-websearch-paa]]의 「US-히스패닉은 lowfruits로 못 뽑는다」를
+   라쿠 `location:"United States"`가 메울 «수도» 있었으나 **검증 전이라 없는 셈 친다.**
+   → **WebSearch PAA 주별 6각도가 계속 주도구다.**
+
+**본체 = `docs/rakko-playbook.md`** (맨 위 「운영 결정」 절 + §8). 착수 전 반드시 읽어라.
 
 ### ③ 🔴 **차별화어는 「무료」가 아닐 수 있다**
 ja SERP 실측: `GTOツール 無料` top-10 중 **6개가 이미 제목에 「無料」**를 달고 있어 구별되지 않았다.
