@@ -256,6 +256,82 @@ const LABELS = {
     badge_top: "⭐ TOP用户",
     badge_participant: "🎟️ 活动参与者",
   },
+  /**
+   * zh-hant (번체) — ★2026-08-22 신설. 솔버 세션 요청서로 받아 처리했다
+   *   (`~/Downloads/클로드-프로그램만들기/handoff-to-main-site/요청_zh-hant_커뮤니티라벨_2026-08-22.md`).
+   *
+   * 🔴 **왜 필요했나**: `app/zh-hant/page.tsx`는 실재하고 `<CommunityClient pageLocale="zh-hant" />`를
+   *   렌더하는데 `LABELS`에 키가 없어 `getL()`이 **영어로 폴백**했다. 피드·블로그 티저는 번체
+   *   42편인데 버튼만 영어(`✏️ Write Post`)로 나오고 있었다.
+   *
+   * 🔴 **간체를 글자만 바꾼 게 아니다.** «단어 자체가 다른» 자리를 우리 코퍼스(`lib/posts-zh-hant/` 42편)로
+   *   직접 세어 확정했다(요청서 주장을 받아쓰지 않고 재검산 — §12-B):
+   *     德州撲克 615:0 · 帳號 23:0 · 設定 5:0 · 動態 4:0 · 社群 3:0 · 搜尋 3:0 · 登入 2:0 (번체:간체)
+   *   ⚠ **코퍼스로 판정 못 한 것 여섯**(UI 전용어라 블로그 본문에 안 나온다 — 양쪽 다 0회):
+   *     登出 · 暱稱 · 載入 · 儲存 · 貼文 · 留言 · 雜湊 · 發布.
+   *     대만 표준 표기로 넣었으나 **코퍼스 근거는 없다**. 원어민 확인이 오면 그때 고친다.
+   *   🪶 `貼文`은 코퍼스에 0회이고 `文章`이 56회지만, 그 56회는 **블로그 «글»**을 가리키는 다른 맥락이다.
+   *      소셜 피드의 «게시물»은 대만에서 `貼文`이 표준이라 그쪽으로 갔다.
+   *
+   * ⚠ **금액·시각은 손대지 마라** — `$30 · $200 · $1,000`과 `KST` 시각은 다른 로케일과 **완전히 같은 값**이다
+   *   (`lib/hub-i18n.ts` 상단 경고와 같은 규율: 사람이 옮겨 적는 순간 숫자가 바뀐다).
+   *
+   * 🪶 `LangKey = keyof typeof LABELS`라 이 키를 추가하는 것만으로 타입이 확장된다 — 다른 수정 불필요.
+   */
+  "zh-hant": {
+    siteTitle: "HoldemMaster",
+    siteSubtitle: "Global Poker Community",
+    filterAll: "全部",
+    filterStrategy: "策略",
+    filterCommunity: "社群",
+    logout: "登出",
+    login: "登入",
+    loginArrow: "登入 →",
+    loginSignup: "登入 / 註冊 →",
+    feed: "動態",
+    chat: "聊天",
+    event: "活動",
+    profile: "我的",
+    writePost: "✏️ 發文",
+    searchPlaceholder: "搜尋策略、手牌、玩家...",
+    writePlaceholder: "分享你的手牌、策略或戰果...",
+    postButton: "發布",
+    posting: "發布中...",
+    postNow: "發布",
+    writeModalTitle: "新貼文",
+    draftPlaceholder: "你在想什麼？",
+    cancel: "取消",
+    multiLangBannerFull: "顯示所有語言的貼文。其他語言的貼文有翻譯按鈕。",
+    strategyPosts: "✦ 策略貼文",
+    communityTab: "🌏 社群",
+    communityPostsLong: "🌏 社群貼文",
+    emptyFeedTitle: "暫無貼文",
+    emptyFeedSub: "來發第一則貼文吧！",
+    emptyStrategyTitle: "暫無策略貼文",
+    emptyCommunityTitle: "暫無社群貼文",
+    comingSoon: "即將推出",
+    eventComing: "活動準備中",
+    eventComingSub: "彩票式活動即將開啟",
+    loginRequired: "需要登入",
+    loginRequiredSub: "登入以查看你的貼文和活動紀錄",
+    myPostsStat: "貼文",
+    likesStat: "獲讚",
+    commentsStat: "留言",
+    myPostsSection: "我的貼文",
+    noPostsTitle: "暫無貼文",
+    noPostsSub: "寫下第一則貼文！",
+    trendingTitle: "🔥 本週熱門",
+    eventBadge: "🎰 活動 · 準備中",
+    eventTitle: "選6個數字\n贏取禮品券！",
+    eventDesc: "3個號碼 → $30 · 4 → $200\n5 → $1,000",
+    eventDrawSchedule: "🔗 每週日晚7點 (KST)\n比特幣區塊雜湊自動抽籤",
+    eventButton: "查看活動 →",
+    communityLang: "🌐 社群語言",
+    badge_winner: "🏆 冠軍",
+    badge_hot: "🔥 人氣用戶",
+    badge_top: "⭐ TOP用戶",
+    badge_participant: "🎟️ 活動參與者",
+  },
   es: {
     siteTitle: "HoldemMaster", siteSubtitle: "Global Poker Community",
     filterAll: "Todo", filterStrategy: "Estrategia", filterCommunity: "Comunidad",

@@ -103,9 +103,12 @@
   vs `solver de poker` **SD 46**. **Usar `solver poker` en H2/cuerpo.** (Mismo fenómeno que EN ①
   `range advantage poker` 30 vs `poker range advantage` 10.)
   ⚠ Falso positivo de grep: `resolver`/`absolver` contienen "solver" — usar límite de palabra al contar.
-- **GTO**: sigla cruda, **NUNCA sola**. 🔴🔴 **En México `GTO` = código del estado de Guanajuato**
+- **GTO**: sigla cruda. 🔴 **En títulos, H1 y H2 nunca va sola** (en prosa corrida sí es natural —
+  «como el GTO mezcla acciones»). 🔴🔴 **En México `GTO` = código del estado de Guanajuato**
   (medido: `que es gto mexico`·`que es gto policia`·`historia de guanajuato`·`gto carro`(Pontiac)·`gto anime`).
-  ⇒ **Siempre anclada: `GTO poker` · `poker GTO` · `solver GTO` · `estrategia GTO`.**
+  ⇒ **En las superficies de búsqueda, siempre anclada: `GTO poker` · `poker GTO` · `solver GTO` · `estrategia GTO`.**
+  🪶 근거는 «검색어 표기»의 문제라서다. 산문의 대명사까지 금지로 읽으면 스페인어가 어색해진다
+     (2026-08-22 검수 판정 — 뱅크 §1-①과 랜딩 주석이 처음부터 «제목·H1·H2» 한정이었다).
   Volumen: `gto poker`/`poker gto` **ES 210 · MX 260** (SD 6~7) — MX es el único eje donde MX > ES.
 - **rango / rangos**: canónico (ver glosario). El plural es la forma buscada: `rangos poker`/`poker rangos`/
   `rangos del poker` **ES 480 · MX 170 · SD 0~1** — **el eje más grande de todo el vertical en español.**
@@ -135,7 +138,13 @@
 
 ## Enlaces internos (regla dura)
 - Todos `/es/blog/slug`.
-- **Whitelist es (solo enlazar a posts que existen) — Wave 5 (Glossary) = 41**: [Waves 1-4, 35 slugs] + **holdem-glossary · holdem-straddle · holdem-rake · holdem-fish · holdem-cooler · holdem-bad-beat**. (42.º y último = holdem-card-counting, tras traducirlo.)
+> 🔴 **2026-08-22 정정 — 아래 화이트리스트 절은 낡았다.** `lib/posts-es/`에 **60편**이 있고,
+> 「아직 번역 안 됨」으로 적힌 `holdem-strategy`·`holdem-positions`·`starting-hands-chart`·
+> `holdem-card-counting`은 **전부 실재**한다(커밋 `1ef03d47`가 es 42/42 달성을 이미 선언했다).
+> 이 절을 그대로 따르면 **오늘 `/es/solver`가 건 링크를 도로 떼게 된다.** 링크 대상 판정은
+> **큐레이션 목록이 아니라 `lib/posts-es/` 파일 실존**으로 하라(ja 사건의 교훈과 같다).
+
+- ~~**Whitelist es (solo enlazar a posts que existen) — Wave 5 (Glossary) = 41**~~: [Waves 1-4, 35 slugs] + **holdem-glossary · holdem-straddle · holdem-rake · holdem-fish · holdem-cooler · holdem-bad-beat**. (42.º y último = holdem-card-counting, tras traducirlo.)
 - Glossary (Wave 5): NINGÚN strip — los 6 posts enlazan solo dentro de whitelist(41).
 - ⚠️ Strips PENDIENTES de restaurar en el pase final (ya existen los targets): starting-hands-chart→glossary · limping→fish+glossary · tournament→glossary+rake. Universo = lib/posts-en (42).
 - Slugs fuera de whitelist (holdem-strategy·holdem-positions·starting-hands-chart·holdem-card-counting·etc. aún no traducidos): quitar solo el marcado de enlace + `thumb:`, dejar el texto ancla. Tarjetas `:::readnext`/Related con ese slug: borrar ese ítem. (Se restaurará todo en el pase final de enlaces al completar es, **criterio = corpus real EN de `lib/posts-en/` (42), no una lista curada** — lección del incidente ja.)

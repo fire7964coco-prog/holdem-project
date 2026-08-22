@@ -119,7 +119,10 @@ zyngapoker · Google Play · **math4all.es(계산기)** · Steam · unmasked.pok
 ## 3-A. 🟢 솔버 본체는 **이미 스페인어를 완역 지원한다** (2026-08-22 라이브 실측)
 
 `solver.holdemmaster.com/?lang=es` → `<html lang="es">` · 완역된 UI.
-**언어 셀렉터 = `ko · en · ja · es · pt · de · zh` 7개** — **pt·de 랜딩도 UI가 이미 준비돼 있다.**
+**언어 셀렉터 = `ko en ja es pt de zh zh-hant` 8개** — **pt·de 랜딩도 UI가 이미 준비돼 있다.**
+🔴 **정정(2026-08-22 검수)**: 초판에 「7개」로 적었는데 **8개**다. 첫 렌더가 stale이었고 재조회에서
+`zh-hant`가 나왔다(랜딩 3파일은 처음부터 8로 적혀 있어 뱅크만 갈라져 있었다).
+**같은 날 «라이브 실측»이라고 적힌 두 수가 달랐다는 것 자체가 기록할 값어치다 — 한 번 본 것을 정본으로 삼지 마라.**
 
 **앱 es 축어** (⚠ ja 교훈 ⑤ — **«보드»에만 쓰고 «해설»에는 쓰지 마라.** 판정은 `docs/gto-solver-series-spec.md` §4-B):
 - `<title>`: `HoldemMaster GTO Solver — Solver GTO gratis en el navegador`
@@ -261,7 +264,7 @@ EN 랜딩의 `hand-chart`·`calculator`·`win-rate-quiz` 자리를 **es 블로�
 | 2 | `optimuspoker.com`이 반례인가 | ❌ **아니다.** 무료는 **하루 1솔루션 + 등록 필수 + 크레딧제**다(§4 실측표). 훅이 오히려 선명해졌다 |
 | 3 | `tablas preflop`(210 · SD 0)을 어디로 | ✅ **포스팅 `es/holdem-starting-hands-chart`로 소급한다.** 그 글은 영어형 `gto preflop charts`만 갖고 있는데 **스페인어 실사용 표기는 `tablas preflop`**이다. ⚠ 솔버 앱 네비에도 `Tablas preflop`이 있지만 **본체는 noindex**이고, **기존 포스팅과의 카니발이 최우선**이다(사장님). 랜딩은 **포스트플랍으로 깨끗이 갈린다** |
 | 4 | 우리 솔버가 WASM Postflop(AGPL-3.0+) 파생인가 | ✅ **파생이 맞다.** 그래서 **도메인을 `solver.holdemmaster.com`으로 분리하고 소스를 GitHub에 공개**했다. **법적 리스크 없음** — 오히려 §4 훅 5번의 근거가 된다 |
-| 5 | 랜딩 순서 | ✅ **es 하나 먼저 완성 → 검수 → 그 후 pt·de.** 솔버 앱은 이미 7개 언어를 지원하므로 UI는 병목이 아니다 |
+| 5 | 랜딩 순서 | ✅ **es 하나 먼저 완성 → 검수 → 그 후 pt·de.** 솔버 앱은 이미 **8개** 언어를 지원하므로 UI는 병목이 아니다 |
 
 ## 8. 🔴 남은 확인 — 솔버 쪽에 물을 것
 

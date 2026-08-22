@@ -56,8 +56,8 @@ export interface FaqItem { q: string; a: string; }
 
 export const SOLVER_FAQ_ES: FaqItem[] = [
   {
-    q: "¿Qué es un solver poker y en qué se diferencia de una tabla preflop?",
-    a: "Un solver es el programa que calcula la estrategia de equilibrio de un spot concreto: le das los dos rangos, un board y los tamaños de apuesta, y te devuelve con qué frecuencia cada mano apuesta, pasa o foldea. Una tabla preflop te dice qué manos abrir antes del flop; el solver empieza justo donde esa tabla termina. Son dos herramientas distintas y se usan en momentos distintos.",
+    q: "¿En qué se diferencia un solver poker de una tabla ya calculada?",
+    a: "Una tabla guarda una respuesta que alguien calculó antes; un solver calcula el spot que tienes delante. Cambia una carta del board y la tabla sigue diciendo lo mismo, mientras que el solver devuelve otra respuesta. Por eso una tabla preflop y un solver postflop no compiten: la tabla decide con qué manos entras y el solver decide qué pasa a partir del flop.",
   },
   {
     q: "¿Es realmente gratis?",
@@ -69,7 +69,15 @@ export const SOLVER_FAQ_ES: FaqItem[] = [
   },
   {
     q: "¿Hay que instalar algo?",
-    a: "No hace falta. Corre dentro del navegador con WebAssembly, así que funciona en Windows, macOS, Linux y móvil sin instalador. Si quieres, puedes añadirlo a la pantalla de inicio con «Agregar a inicio», pero es un acceso directo del navegador, no un programa: nunca pide permisos del sistema.",
+    a: "No hace falta. Corre dentro del navegador con WebAssembly, así que funciona en Windows, macOS, Linux y móvil sin instalador. Si quieres, puedes añadirlo a la pantalla de inicio con el botón «Agregar a inicio» de la app, pero es un acceso directo del navegador, no un programa: nunca pide permisos del sistema.",
+  },
+  {
+    // 🔴 2026-08-22 검수로 신설 — `que es gto en poker`(ES 20 · **MX 30**)를 glossary·strategy에
+    //    넘겼는데 **둘 다 seoTitle·태그로 소유하지 않아 아무도 안 갖는 축**이 돼 있었다.
+    //    EN 랜딩은 이 문항을 갖고 있다(`app/en/solver/faq.ts` "What does GTO mean in poker?").
+    //    정의는 짧게 두고 링크로 넘겨 양쪽이 다 살게 한다.
+    q: "¿Qué es el GTO en el póker?",
+    a: "GTO son las siglas de Game Theory Optimal: la estrategia de equilibrio que ningún rival puede explotar de forma sistemática. En la práctica no se expresa como «apuesta» o «foldea», sino como frecuencias — apostar esta mano el 70% de las veces y pasar el 30% restante. Un solver es la herramienta que calcula esas frecuencias para un spot concreto. La definición completa y los malentendidos habituales están en el glosario y en la guía de estrategia.",
   },
   {
     q: "¿Qué son los Solvers?",
@@ -85,7 +93,7 @@ export const SOLVER_FAQ_ES: FaqItem[] = [
   },
   {
     q: "¿También calcula el preflop?",
-    a: "No. Esta herramienta es de postflop heads-up: flop, turn y river. Para los rangos de apertura por posición tienes la tabla de manos iniciales, y dentro de la app hay una sección de Tablas preflop para consultarlas mientras montas un spot.",
+    a: "No. Esta herramienta es de postflop heads-up: flop, turn y river. Los rangos de apertura por posición están en la guía de la tabla de manos iniciales del blog, que es donde conviene empezar. Dentro de la app también puedes consultarlos rápido mientras montas un spot, pero la explicación de por qué cada posición abre lo que abre está en el artículo.",
   },
   {
     q: "¿En qué se diferencia de GTO Wizard o PioSOLVER?",
@@ -97,7 +105,7 @@ export const SOLVER_FAQ_ES: FaqItem[] = [
   },
   {
     q: "¿Mis rangos se envían a algún servidor?",
-    a: "No. El cálculo corre en el procesador de tu propio dispositivo, no en un servidor nuestro. Lo que guardas queda en tu navegador, y solo sale de ahí si tú generas un enlace para compartir un spot o exportas un archivo.",
+    a: "No. El cálculo corre en el procesador de tu propio dispositivo, no en un servidor nuestro. Los rangos que guardas quedan en tu navegador, y solo salen de ahí si tú generas un enlace para compartir un spot o exportas un archivo. La excepción es el historial del Entrenador: si inicias sesión, se guarda en tu cuenta para poder verlo desde otro dispositivo.",
   },
   {
     q: "¿El solver tiene en cuenta el rake?",
@@ -105,7 +113,7 @@ export const SOLVER_FAQ_ES: FaqItem[] = [
   },
   {
     q: "¿Qué es el Entrenador GTO y cómo puntúa mis decisiones?",
-    a: "Es un modo de práctica: te presenta spots ya resueltos, tú eliges una acción y te dice cuánto valor esperado has dejado sobre la mesa. Como el GTO mezcla acciones, elegir una opción poco frecuente no es automáticamente un error — por eso la nota se mide en proporción al bote: hasta el 0,35% del bote es jugada óptima, hasta el 1% es aceptable, y por encima de ahí conviene revisar. Los cortes tienen suelos de 0,02bb y 0,05bb para que las diferencias mínimas no cuenten como fallo.",
+    a: "Es un modo de práctica: te presenta spots ya resueltos, tú eliges una acción y te dice cuánto valor esperado has dejado sobre la mesa. Como el GTO mezcla acciones, elegir una opción poco frecuente no es automáticamente un error — por eso la nota se mide en proporción al bote: hasta el 0,35% del bote es jugada óptima, hasta el 1% es aceptable, y por encima de ahí conviene revisar. Los umbrales tienen mínimos de 0,02bb y 0,05bb para que las diferencias mínimas no cuenten como fallo.",
   },
   {
     q: "¿Puedo guardar un spot y compartirlo?",
@@ -125,7 +133,7 @@ export const SOLVER_FAQ_ES: FaqItem[] = [
   },
   {
     q: "¿Dónde puedo encontrar clases de poker gratis?",
-    a: "Un solver por sí solo te da números, no explicaciones. Por eso cada spot de estudio viene acompañado de guías en el blog que explican por qué la solución es esa — desde la ventaja de rango en boards secos hasta el tamaño de apuesta en botes de 3-bet. Es material gratuito y puedes leerlo con la solución abierta al lado.",
+    a: "Un solver por sí solo te da números, no explicaciones. En el blog tienes guías gratuitas de los conceptos que el solver pone en números: la tabla de manos iniciales, las pot odds, la equity, la apuesta de continuación y el 3-bet. Puedes leerlas con la solución abierta al lado, que es la forma más rápida de que los porcentajes empiecen a significar algo.",
   },
 ];
 

@@ -100,8 +100,11 @@ export const metadata: Metadata = {
 };
 
 /**
- * 🔴 `featureList`는 **화면에 실제로 있는 것만** 적는다 — 전부 2026-08-22에
+ * 🔴 `featureList`는 **화면에 실제로 있는 것만** 적는다 — 2026-08-22에
  *    `solver.holdemmaster.com/?lang=es`를 열어 DOM에서 직접 읽었다.
+ *    ⚠ **단 하나 예외**: 트레이너 항목(«en proporción al bote»)은 **DOM에서 읽은 것이 아니다.**
+ *       화면은 아직 「pérdida de EV」라고만 쓰는데, 앱이 2026-08-15에 팟 대비 비율로 바꿨으므로
+ *       §4-B로 **정정해 넣은 것**이다. 「전부 DOM 실측」이라고 적으면 그 한 줄이 거짓이 된다.
  * 🔴 스키마에만 있고 본문에 없는 정보는 LLM이 못 읽는다(posting.mdc GEO §) →
  *    아래 항목은 전부 `solver-client.tsx`의 기능 표에도 문장으로 있다. **한쪽만 고치지 말 것.**
  * 🔴 트레이너 항목은 **«팟 대비 비율»**이다. 앱 화면이 아직 「pérdida de EV」라고 쓰지만

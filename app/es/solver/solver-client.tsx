@@ -93,6 +93,9 @@ const SOLVER_URL = "https://solver.holdemmaster.com/?lang=es";
  *     mejorada por HoldemMaster. El código fuente modificado completo está publicado en GitHub…»
  *   · 학습 스팟 **13개**(3그룹 7+3+3) · 그룹 조건 «Bote 5.5bb · Stack 97.5bb» /
  *     «Bote 22.5bb · Stack 89bb» / «Bote 6bb · Stack 97bb»
+ *     🔴 **여기 마침표는 오타가 아니라 «앱 축어»다** — 앱 화면이 실제로 `5.5bb`로 쓴다.
+ *        반면 **우리가 렌더하는 `cond`는 쉼표**(`5,5bb`)로 옮겼다(스페인어 소수 구분자).
+ *        두 층이 일부러 다르니 **주석을 «고쳐서» 맞추지 마라.**
  *   §13 산수 검산(EN·ja 랜딩과 동일 · 재검산 완료):
  *     SRP 팟 5.5 = 2.5+2.5+0.5, 스택 100−2.5 = 97.5 ·
  *     3벳팟 22.5 = 11+11+0.5, 100−11 = 89, SPR 89÷22.5 ≈ 4.0 ·
@@ -127,7 +130,7 @@ const SPEC: [string, string][] = [
   ["Alcance", "Postflop heads-up (flop, turn y river)"],
   ["Dónde se calcula", "En tu dispositivo, no en un servidor nuestro"],
   ["Compatibilidad", "Navegadores modernos — Windows, macOS, Linux y móvil"],
-  ["Idioma", "Español (con coreano, inglés, japonés, portugués, alemán y chino)"],
+  ["Idioma", "Español (también en coreano, inglés, japonés, portugués, alemán y chino)"],
   ["Motor", "WASM Postflop de código abierto (AGPL-3.0) · fuente modificada publicada"],
 ];
 
@@ -140,15 +143,15 @@ const PICK_TOOL: readonly [string, string, string | null][] = [
   ["Calcular un spot postflop concreto", "El solver de esta página", null],
   ["Saber qué manos abrir en cada posición", "La tabla de manos iniciales", "/es/blog/holdem-starting-hands-chart"],
   ["Contar outs y calcular pot odds", "La guía de pot odds", "/es/blog/holdem-pot-odds"],
-  ["Ver solo el porcentaje de victoria de una mano", "La calculadora de equity de la app", null],
+  ["Ver solo el porcentaje de victoria de una mano", "La guía de equity", "/es/blog/holdem-equity"],
 ];
 
 /** 사용법 — 앱 사이드바 탭 라벨을 그대로 쓴다(2026-08-22 축어 실측). */
 const STEPS = [
-  { n: "①", title: "Rango OOP", desc: "Pinta el rango preflop del jugador fuera de posición en la cuadrícula 13×13, o escríbelo directamente con notación (22+, A2s+, KTo+). La diagonal son las parejas servidas, arriba a la derecha las suited y abajo a la izquierda las offsuit." },
+  { n: "①", title: "Rango OOP", desc: "Pinta el rango preflop del jugador fuera de posición en la cuadrícula 13×13, o escríbelo directamente con notación (22+, A2s+, KTo+). La diagonal son las parejas servidas, arriba a la derecha las manos del mismo palo (AKs) y abajo a la izquierda las de distinto palo (AKo)." },
   { n: "②", title: "Rango IP", desc: "Haz lo mismo con el jugador en posición. El atajo más rápido no es construir los dos desde cero, sino cargar un spot de estudio y editar sus rangos." },
   { n: "③", title: "Board", desc: "Haz clic en las tres cartas del flop o pulsa flop aleatorio. Si quieres estudiar un run-out concreto, también puedes fijar el turn y el river." },
-  { n: "④", title: "Bet sizes", desc: "Define el bote inicial, el stack efectivo y los tamaños de apuesta y subida de cada calle. La primera vez déjalo por defecto y comprueba solo el bote y el stack." },
+  { n: "④", title: "Bet sizes", desc: "Define el bote inicial, el stack efectivo y los tamaños de apuesta y subida de cada calle. La primera vez deja los valores por defecto y comprueba solo el bote y el stack." },
   { n: "⑤", title: "Calcular", desc: "Construye el árbol y ejecuta. El cálculo corre en tu máquina y tarda de unos segundos a unos minutos; cuando termine, abre la pestaña Resultados." },
 ];
 
@@ -160,11 +163,11 @@ const STARTER_RANGES: [string, string][] = [
 
 /** 결과 화면 읽는 법 — 앱 도움말의 구역 구분을 그대로 옮겼다. */
 const READ_SCREEN: string[][] = [
-  ["Barra de acciones (arriba)", "Cambia de momento dentro de la línea (flop → apuesta → call → turn)", "Haz clic en un nodo para saltar a la estrategia de ese punto"],
-  ["Matriz 13×13 (izquierda)", "Una casilla por mano; el reparto de color dentro de la casilla es la frecuencia de cada acción", "Rojo apuesta o sube (más oscuro = tamaño mayor), verde pasa o iguala, casilla clara = fuera del rango"],
+  ["Barra de acciones (arriba)", "Te mueve por los distintos puntos de la línea (flop → apuesta → call → turn)", "Haz clic en un nodo para saltar a la estrategia de ese punto (en los spots de estudio solo está calculado el flop)"],
+  ["Matriz 13×13 (izquierda)", "Una casilla por mano; el reparto de colores dentro de la casilla es la frecuencia de cada acción", "Rojo apuesta o sube (más oscuro = tamaño mayor), verde pasa o iguala, casilla clara = fuera del rango"],
   ["Frecuencias (arriba a la derecha)", "Frecuencia de acción del rango entero y número de combos", "Aquí es donde lees «este rango pasa el 98% de las veces en este board»"],
   ["Clasificación de manos (centro derecha)", "Cómo encaja el rango con el board — top pair, proyectos, sin mano hecha", "De un vistazo ves a qué jugador favorece el board"],
-  ["Tabla de detalle (abajo a la derecha)", "Peso, equity, EV y realización de equity (EQR) mano a mano, con el % de cada acción", "Se ordena por columna y el resumen se exporta a CSV"],
+  ["Tabla de detalle (abajo a la derecha)", "Peso, equity, EV y realización de equity (EQR) mano por mano, con el % de cada acción", "Se ordena por columna y el resumen se exporta a CSV"],
 ];
 
 /** 무료로 어디까지 되나 — 스키마 featureList와 같은 사실을 본문에도 둔다(GEO 원칙 ④). */
@@ -211,7 +214,7 @@ const COMPARE: string[][] = [
 const SPOT_GROUPS = [
   {
     label: "Bote de subida simple — BTN vs BB (fundamentos)",
-    cond: "OOP: BB (paga) · IP: BTN (abre) · Bote 5.5bb · Stack 97.5bb",
+    cond: "OOP: BB (paga) · IP: BTN (abre) · Bote 5,5bb · Stack 97,5bb",
     items: [
       { board: "A♥7♦2♣", name: "Board seco A-high", note: "El spot de manual de la ventaja de rango: el as encaja de lleno en el rango del que abre" },
       { board: "K♠8♦3♣", name: "Board seco K-high", note: "También favorece a BTN, pero los checks suben un poco — compáralo con el board A-high" },
@@ -224,20 +227,20 @@ const SPOT_GROUPS = [
       //    §4-B ④: OOP(BB) 첫 액션 벳 **23.7%**.
       { board: "9♥8♥7♣", name: "Conectado medio, two-tone", note: "La textura que favorece al que paga: aquí BB toma la iniciativa y apuesta primero el 23,7% de las veces" },
       { board: "Q♠9♠2♠", name: "Board monotone", note: "Las apuestas grandes desaparecen — fíjate con qué frecuencia incluso un color hecho se limita a pasar" },
-      { board: "6♣6♦3♥", name: "Board pareado", note: "Nadie conecta, así que sube la proporción de faroles — búscalos en la tabla de detalle" },
-      { board: "6♠5♥2♦", name: "Board bajo y rainbow", note: "Guerra de overcards. BB hace check-raise muy seguido en esta textura" },
+      { board: "6♣6♦3♥", name: "Board pareado", note: "Nadie conecta con este board, así que sube la proporción de faroles — ni siquiera BB apuesta primero (solo el 3%)" },
+      { board: "6♠5♥2♦", name: "Board bajo y rainbow", note: "Guerra de sobrecartas. BB hace check-raise con mucha frecuencia en esta textura" },
     ],
   },
   {
     label: "Bote de 3-bet — BB hace 3-bet y BTN paga (SPR bajo)",
-    cond: "OOP: BB (3-bet) · IP: BTN (paga) · Bote 22.5bb · Stack 89bb · SPR ≈ 4,0",
+    cond: "OOP: BB (3-bet) · IP: BTN (paga) · Bote 22,5bb · Stack 89bb · SPR ≈ 4,0",
     items: [
       { board: "A♦K♠2♥", name: "Board A-high, ventaja del 3-bettor", note: "El mejor flop posible para el rango de 3-bet: con SPR bajo, las apuestas pequeñas presionan todo el rango" },
       // 🔴 앱 축어 «Observa dónde el 3-bettor empieza a frenar»는 **거짓**이다 —
       //    §4-B ⑨: 벳 합계 **99.1%**(큰 사이즈 98.4 + 작은 사이즈 0.7), 체크는 0.9%다.
       //    EN 랜딩이 이미 «98.4% fires the same two-thirds size»로 철회·정정했다.
       { board: "Q♥T♥7♠", name: "Board dinámico two-tone", note: "Dos proyectos vivos y aun así el 98,4% del rango dispara con el mismo tamaño de dos tercios" },
-      { board: "8♦5♣2♠", name: "Board bajo y seco", note: "No conecta en absoluto con el rango de 3-bet, y aun así los overpairs mantienen la presión" },
+      { board: "8♦5♣2♠", name: "Board bajo y seco", note: "No conecta en absoluto con el rango de 3-bet, y aun así los sobrepares mantienen la presión" },
     ],
   },
   {
@@ -250,7 +253,7 @@ const SPOT_GROUPS = [
       //    실측: A를 든 트리오는 **SB 88콤보 대 BB 66콤보**이고, 수와 질 모두 앞서는 SB가 §4-B ⑬ 기준
       //    **80,1%**를 친다(벳45(75%) 0.5% + 벳20(33%) 79.6% · 체크 19.8%).
       //    ja 랜딩이 같은 자리를 같은 방식으로 정정했다.
-      { board: "A♠A♥6♦", name: "Board con A pareado", note: "Los tríos con as son 88 combos para SB y 66 para BB — gana en número y en calidad, y apuesta el 80,1%" },
+      { board: "A♠A♥6♦", name: "Board con A pareado", note: "Los tríos con as son 88 combos para SB y 66 para BB — el SB gana en número y en calidad, y apuesta el 80,1%" },
     ],
   },
 ];
@@ -325,7 +328,7 @@ export default function SolverClientEs() {
           Un <strong className="text-foreground">solver poker</strong> es el programa que calcula la
           estrategia de equilibrio de una situación concreta: le das los dos rangos, un board y los
           tamaños de apuesta, y te devuelve con qué frecuencia cada mano debe apostar, pasar o foldear.
-          Te lo devuelve para las <strong className="text-foreground">169 manos iniciales</strong> en una
+          Y lo hace para las <strong className="text-foreground">169 manos iniciales</strong>, en una
           cuadrícula de 13×13. El solver de HoldemMaster hace ese cálculo{" "}
           <strong className="text-foreground">dentro de tu navegador — sin descargar nada, sin crear
           una cuenta y sin límite de soluciones</strong>. Junto a la cuadrícula verás la equity, el EV y
@@ -334,7 +337,7 @@ export default function SolverClientEs() {
         <div className="mt-5 text-center">
           <Cta label="Abrir el solver →" />
           <p className="mt-2 text-xs text-muted-foreground">
-            Recomendado Chrome en ordenador — en iOS y Safari el cálculo va con un solo hilo y los
+            Mejor con Chrome en el ordenador — en iOS y Safari el cálculo va con un solo hilo y los
             spots personalizados tardan más
           </p>
         </div>
@@ -366,8 +369,7 @@ export default function SolverClientEs() {
           Lo mismo se busca con nombres distintos:{" "}
           <strong className="text-foreground">solver poker</strong>, solver GTO, solver postflop o
           simplemente <strong className="text-foreground">poker GTO</strong>. A la salida se la llama
-          a veces rangos GTO o gráficos de frecuencias. Cambia la palabra que tecleas, no lo que calcula
-          la herramienta de esta página.
+          a veces rangos GTO. Sea cual sea el nombre, lo que calcula la herramienta de esta página es lo mismo.
         </p>
         <Table
           head={["Lo que quieres hacer", "Dónde mirar"]}
@@ -406,9 +408,9 @@ export default function SolverClientEs() {
         <h2 className="text-xl font-bold">¿Por qué tus rangos se rompen después del flop?</h2>
         <p className="mt-2 text-sm text-muted-foreground">
           Porque un rango preflop es estable y un rango postflop no lo es.{" "}
-          <strong className="text-foreground">Los rangos poker preflop caben en una tabla</strong>{" "}
+          <strong className="text-foreground">Un rango preflop cabe en una tabla</strong>{" "}
           — abres más o menos lo mismo desde el botón cada vez que te sientas. En cuanto caen tres
-          cartas, ese mismo rango se reparte en manos hechas, proyectos y aire, y lo que debe hacer
+          cartas, esos mismos rangos de póker se reparten en manos hechas, proyectos y aire, y lo que debe hacer
           cambia por completo según la textura del board.
         </p>
         <p className="mt-3 text-sm text-muted-foreground">
@@ -427,8 +429,7 @@ export default function SolverClientEs() {
           </li>
         </ul>
         <p className="mt-3 text-sm text-muted-foreground">
-          Los dos boards son conectados y two-tone. Parecen primos hermanos y la respuesta correcta se
-          separa por completo.{" "}
+          Los dos boards son conectados y two-tone. Parecen primos hermanos y, sin embargo, la respuesta correcta no tiene nada que ver.{" "}
           <strong className="text-foreground">Ninguna tabla preflop puede contener esa diferencia</strong>,
           porque la tabla se escribe antes de ver el flop. Eso es exactamente lo que hace un solver:
           te da el rango de después, no el de antes.
@@ -475,15 +476,19 @@ export default function SolverClientEs() {
           55 son 5,5bb). Los spots de estudio y el Entrenador ya usan esa escala.
         </p>
         <p className="mt-4 text-sm text-muted-foreground">
-          Construir los dos rangos desde cero es el camino largo, así que pega estos rangos estándar de
-          100bb BTN vs BB en ① y ②. Son los que usan los propios spots de estudio.
+          Construir los dos rangos desde cero es el camino largo. Los rangos de apertura por posición viven
+          en la{" "}
+          <Link href="/es/blog/holdem-starting-hands-chart" className="font-semibold text-primary hover:underline">
+            tabla de manos iniciales
+          </Link>
+          ; aquí abajo tienes solo los dos que se pegan en ① y ② para empezar. Son los que usan los spots de bote de subida simple (BTN vs BB).
         </p>
-        <Table head={["Asiento", "Rango"]} rows={STARTER_RANGES.map(([seat, r]) => [seat, <code key={seat} className="text-xs break-all">{r}</code>])} />
+        <Table head={["Para pegar en", "Rango"]} rows={STARTER_RANGES.map(([seat, r]) => [seat, <code key={seat} className="text-xs break-all">{r}</code>])} />
       </section>
 
       {/* ── 결과 화면 읽는 법 ────────────────────────────────────────── */}
       <section className="mt-12">
-        <h2 className="text-xl font-bold">Cómo se leen los rangos en la pantalla de resultados</h2>
+        <h2 className="text-xl font-bold">Cómo se leen los rangos en el póker postflop — la pantalla de resultados</h2>
         <p className="mt-2 text-sm text-muted-foreground">
           La pantalla tiene cuatro zonas de trabajo: la{" "}
           <strong className="text-foreground">barra de acciones</strong> arriba, la{" "}
@@ -521,7 +526,7 @@ export default function SolverClientEs() {
           bloqueadas, no hay un número máximo de cálculos al día y no hace falta cuenta. Los ajustes que
           suelen vivir en los solvers de escritorio de pago —{" "}
           <strong className="text-foreground">rake y tope de rake, modos de precisión, edición del árbol
-          nodo a nodo</strong> — también están aquí. La única frontera real es que esta herramienta es{" "}
+          nodo a nodo</strong> — también están aquí. El único límite real es que esta herramienta es{" "}
           <strong className="text-foreground">solo postflop y heads-up</strong>.
         </p>
         <Table
@@ -552,14 +557,14 @@ export default function SolverClientEs() {
           board.
         </p>
         <p className="mt-3 text-sm text-muted-foreground">
-          Dentro de esa frontera no hay nada recortado: los{" "}
+          Dentro de ese límite no hay nada recortado: los{" "}
           <strong className="text-foreground">rangos postflop</strong> de ambos jugadores, cualquier
           flop, turn y river, el bote inicial y el stack efectivo, y el árbol completo de tamaños calle
           por calle. La estrategia que sale no es genérica, es la de tu partida — incluido el rake, que
           la mayoría del material de estudio ni menciona.
         </p>
         <p className="mt-3 text-sm text-muted-foreground">
-          Si necesitas la mitad de antes, la{" "}
+          Si lo que te falta es la parte de antes del flop, la{" "}
           <Link href="/es/blog/holdem-starting-hands-chart" className="font-semibold text-primary hover:underline">
             tabla de manos iniciales
           </Link>{" "}
@@ -582,7 +587,7 @@ export default function SolverClientEs() {
           La nota no es acierto o fallo, sino{" "}
           <strong className="text-foreground">cuánto valor esperado has dejado</strong>. Como el GTO
           mezcla acciones, elegir la opción menos frecuente no es automáticamente un error: la pregunta
-          es cuánto EV renunciaste. Al elegir verás la frecuencia y el EV de cada acción junto al coste
+          es a cuánto EV has renunciado. Al elegir verás la frecuencia y el EV de cada acción junto al coste
           de la tuya.
         </p>
         <ul className="mt-4 space-y-1.5 text-sm">
@@ -599,7 +604,7 @@ export default function SolverClientEs() {
           </li>
           <li className="text-muted-foreground">
             Los mismos 0,08bb son un 1,45% en un bote de 5,5bb (a revisar) y un 0,36% en uno de 22,5bb
-            (aceptable). Los cortes caen en 0,02bb y 0,06bb en el bote de subida simple, y en 0,08bb y
+            (aceptable). Los umbrales caen en 0,02bb y 0,06bb en el bote de subida simple, y en 0,08bb y
             0,23bb en el bote de 3-bet. Hay suelos de 0,02bb y 0,05bb para que las diferencias mínimas
             no se confundan con el propio margen de error del solver
           </li>
@@ -617,7 +622,7 @@ export default function SolverClientEs() {
           <li className="text-muted-foreground">
             La racha de aciertos, el desglose de puntos débiles y la{" "}
             <strong className="text-foreground">cola de repaso</strong> con los ejercicios donde más EV
-            perdiste se construyen con ese historial. Si no inicias sesión, se queda en tu dispositivo
+            has perdido se construyen con ese historial. Si no inicias sesión, se queda en tu dispositivo
           </li>
         </ul>
         <div className="mt-5">
@@ -631,7 +636,7 @@ export default function SolverClientEs() {
           {SPOT_TOTAL} spots de estudio ya resueltos
         </h2>
         <p className="mt-2 text-sm text-muted-foreground">
-          Todos los spots de abajo están calculados, así que la estrategia aparece en cuanto los abres —
+          Todos los spots de abajo ya están calculados, así que la estrategia aparece en cuanto los abres —
           sin esperas y sin configurar nada. Los rangos son aproximaciones del estándar online de 100bb,
           de modo que la mejor forma de usarlos es cargar uno, cambiarle los rangos, volver a calcular y
           mirar qué se movió. No hay atajo más rápido para entender cómo la textura del board reescribe
@@ -709,11 +714,11 @@ export default function SolverClientEs() {
         */}
         <p className="mt-3 text-sm text-muted-foreground">
           Una nota para quien haya llegado buscando{" "}
-          <strong className="text-foreground">WASM Postflop</strong>: el proyecto de código abierto
-          original anunció en su propia web que deja de actualizarse, y su repositorio figura como
-          desarrollo suspendido. Este solver es un fork que mantiene ese motor — misma licencia
-          AGPL-3.0, código igualmente publicado, y encima una interfaz, los spots de estudio y el
-          Entrenador.
+          <strong className="text-foreground">WASM Postflop</strong>: el proyecto original de código
+          abierto anunció en su propia web que dejaba de actualizarse, y su repositorio figura como
+          desarrollo suspendido. Este solver es un fork que mantiene ese motor: misma licencia
+          AGPL-3.0, código igualmente publicado y, encima, una interfaz nueva, los spots de estudio
+          y el Entrenador.
         </p>
       </section>
 
@@ -821,16 +826,13 @@ export default function SolverClientEs() {
           🔴 **「오프라인으로 GTO 계산 가능」이라고 쓰지 마라 — 사실과 다르다.**
              오프라인에서 되는 것은 학습 스팟 열람과 트레이너 풀이뿐이다.
         */}
-        <p className="mt-3 text-xs text-muted-foreground">
-          Si lo añades a la pantalla de inicio, los spots de estudio y el Entrenador se guardan en tu
-          dispositivo y <strong className="text-foreground">puedes practicar sin internet</strong> —
-          desde el icono de instalar de la barra de direcciones en Chrome y Edge, o desde «Añadir a
-          pantalla de inicio» en el menú de compartir del iPhone.
-        </p>
       </section>
       {/*
         🔴 AGPL 고지 — 앱 화면의 축어와 같은 사실이다. **훅으로 키우지 않는다**(2026-08-22 판정:
-           앱스토어 등록 준비 중이라 오픈소스를 마케팅 축으로 세우지 않는다). 제목·H2에 없고 여기 한 줄뿐이다.
+           앱스토어 등록 준비 중이라 오픈소스를 마케팅 축으로 세우지 않는다).
+         🔴 **«여기 한 줄뿐»이 아니다** — 렌더되는 자리가 셋이다: SPEC 표 `Motor` 행 · WASM Postflop 문단 ·
+            이 꼬리 고지. **제목·H1·H2에 없다는 것이 지켜진 것**이고, 뱅크 §4-훅5가 지정한 «FAQ 한 문항»은
+            아직 비어 있다. 배치는 ja 선례와 같으니 옮기려면 판정을 먼저 다시 받을 것.
       */}
       <p className="mt-8 text-xs text-muted-foreground">
         Esta aplicación está basada en WASM Postflop, de Wataru Inariba (AGPL-3.0), localizada y

@@ -58,14 +58,17 @@ const COPY = {
   },
   /**
    * ★2026-08-22 신설. 🔴 `GTO`를 단독으로 두지 않았다 — 멕시코에서 과나후아토 주 코드다
-   *   (뱅크 `es-gto-solver.md` §1-①). 항상 `solver`/`poker`와 붙여 쓴다.
+   *   (뱅크 `es-gto-solver.md` §1-①). 항상 `solver`/`póker`와 붙여 쓴다.
+   *   🔴 **2026-08-22 검수 정정** — 초판 desc에는 `poker`/`póker`가 **0회**였는데 이 주석은
+   *      «항상 붙여 쓴다»고 적어 두었다(주석이 안 지킨 것을 지켰다고 적은 자리다).
+   *      이 카드는 **es 60편이 밀어주는 유일한 앵커**이므로 조준축(`rangos`·`póker`)을 실어야 한다.
    * 🔴 차별화어는 「무료」가 아니라 **「sin instalar · sin registrarte」**다 — SERP top-10 전부와 갈린다.
    */
   es: {
     href: "/es/solver",
     badge: "♠ Herramienta gratis",
     title: "Solver GTO",
-    desc: "Calcula la estrategia GTO postflop en el navegador — sin instalar, sin registrarte y gratis",
+    desc: "Calcula tus rangos de póker postflop con un solver GTO en el navegador — sin instalar, sin registrarte y gratis",
     cta: "Abrir el solver →",
   },
 } as const;
