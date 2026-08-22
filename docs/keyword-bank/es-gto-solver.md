@@ -162,11 +162,20 @@ Playwright 라이브(2026-08-22). 「Web-Based GTO Solver」를 표방하는 게
 2. **「설치가 없다」** — `nada que instalar`. SERP 1·3·10위가 설치형/앱이다.
 3. **「레이크까지 넣고 푼다」** — 무료 경쟁자 중 레이크·레이크캡을 다루는 곳이 SERP 상위에 없다.
 4. **「해설 13편이 붙어 있다」** — **우리만 갖고 있다.** 솔버는 흔한데 «왜 이렇게 푸는지»가 붙은 솔버는 드물다.
-5. **「오픈소스 · 소스 공개」** — 🔴 **본문·FAQ에만 쓴다. 제목·H1에는 쓰지 않는다**(2026-08-22 사장님 판정).
-   근거: `educapoker.com`이 「TexasSolver. Un GTO solver **gratuito y OpenSource**」 글로 `solver poker`
-   **4위**다 → «무료 오픈소스 솔버»는 스페인어권에서 **실제로 검색되는 개념**이다. GTO Wizard·OptimusPoker의
-   블랙박스와 갈리는 신뢰 신호이자 **AGPL-3.0+ 의무 충족**이기도 하다(솔버는 WASM Postflop 파생 —
-   그래서 도메인을 분리하고 소스를 공개했다).
+5. ⬇️ **「오픈소스」는 강조하지 않는다** (2026-08-22 사장님 2차 판정 — **솔버가 앱스토어 등록 준비 중**이라
+   마케팅 축으로 세우지 않는다). **제목·H1·H2 금지 · 본문 강조 금지.**
+   → **FAQ 한 문항 안에서 한 줄**로만 둔다(「계산이 네 기기에서 돌고, 코드가 공개돼 있다」).
+   🪶 근거는 여전히 유효하다 — `educapoker.com`이 「TexasSolver. Un GTO solver **gratuito y OpenSource**」
+   글로 `solver poker` **4위**다. 하지만 **볼륨이 아니라 신뢰 신호**라서 없어도 훅 1~4가 선다.
+
+### 🟢 훅 6 (신설) — **「폰에 담아서 오프라인으로」**
+솔버는 이미 **PWA**다(앱 축어: `Agregar a inicio` · **`Estudio offline — Agrégalo a tu pantalla de
+inicio y practica sin internet`**). 그리고 **네이티브 앱 등록을 준비 중**이다(2026-08-22).
+→ SERP 실측에서 **`play.google.com`이 2위 · `apps.apple.com`이 8위**다 — **스토어 등재물이 이 SERP에서
+   실제로 순위를 먹는다.** 관련 키워드: `poker solver app` · `gto poker app`(ES 10 · MX 10 · US 20) ·
+   `app para practicar poker` · `poker solver apps`.
+⚠ **「sin instalar」와 모순되지 않게 쓴다** — 「설치가 **필요 없고**, 원하면 홈 화면에 담을 수도 있다」.
+   **「설치할 수 없다」로 쓰면 앱 출시 때 거짓이 된다.**
 
 ⚠ **가격 비교를 본문에 쓰지 마라** — `app/solver/solver-client.tsx`의 `COMPARE` 주석이
 「가격·무료 티어 수치는 넣지 않는다(§12-B)」로 못박아 뒀다. PAA에 `¿Cuánto cuesta GTO Wizard?`가
@@ -223,8 +232,9 @@ Playwright 라이브(2026-08-22). 「Web-Based GTO Solver」를 표방하는 게
 5. `¿El rake cambia la solución?` → **훅 3** (경쟁자 공백)
 6. `¿Solver gratis o de pago: qué cambia de verdad?` → `solver poker gratis`
    ⚠ **금액을 쓰지 않는다.** 「구독이냐 · 하루 몇 번이냐 · 크레딧이냐」라는 **구조**로만 대비시킨다.
-   여기에 **훅 5(오픈소스)를 한 문장** 넣는다 — 「계산이 네 기기에서 돌고, 코드가 공개돼 있다」
 7. `¿Cómo practicar lo que dice el solver?` → 트레이너 + 해설 13편 (**훅 4**)
+8. `¿Puedo usarlo en el móvil sin conexión?` → **훅 6** (`Agregar a inicio` · `Estudio offline`)
+   → `poker solver app` · `gto poker app` · `app para practicar poker` 흡수
 
 ### FAQ (PAA 실측에서 그대로)
 - `¿Qué son los solvers?` (PAA 축어)
@@ -258,5 +268,7 @@ EN 랜딩의 `hand-chart`·`calculator`·`win-rate-quiz` 자리를 **es 블로�
 | 무엇 | 왜 |
 |---|---|
 | **앱 es(및 pt·de·zh) 트레이너 문구가 `pérdida de EV`인가** | 앱은 2026-08-15에 채점을 **팟 대비 비율**로 바꿨다. 라이브 es 화면에 아직 `recibe tu nota por pérdida de EV`가 있다. **ja에서 정확히 이 유형으로 사실오류 3건**이 나왔다(핸드오프 「솔버 앱에 통지할 것」) |
-| **GitHub 저장소 URL** | 훅 5번(오픈소스)을 본문에 쓰려면 **링크할 주소가 필요하다.** 지어내지 않는다 |
+| ~~GitHub 저장소 URL~~ | ⬇️ **불필요해졌다** — 오픈소스를 강조하지 않기로 했다(§4-5). FAQ 한 줄에 URL 없이 쓴다 |
+| 🔴 **AGPL-3.0+ 와 앱스토어 약관 충돌 가능성** | 솔버가 **앱 등록 준비 중**이다. GPL 계열과 **애플 App Store 약관이 충돌한 전례**가 있다(약관의 이용 제한 ↔ 라이선스의 「추가 제한 금지」 — **VLC가 2011년에 이 문제로 App Store에서 내려갔다**). Google Play는 상대적으로 문제가 적다. ⚠ **랜딩 작업과는 무관**하지만 **앱 등록 전에 솔버 쪽 확인 권고.** 원 저작자의 별도 라이선스가 있으면 해결된다 |
+| **앱 출시 시점** | 훅 6(「폰에 담아서」)의 문구가 달라진다. **출시가 임박했으면** 「pronto en App Store」류를 넣지 말고 **PWA 축(`Agregar a inicio`)으로만** 쓴다 — 시한이 박힌 약속은 `docs/update-calendar.md` 대상이 된다 |
 | **ja 앱에 남아 있는 사실오류 3건**(⑨ `Q♥T♥7♠` 체크 0.8% · ⑬ `A♠A♥6♦` 트립스 17.5% · ③ `Q♠J♦T♠` 너트 BTN 쏠림) | 이미 통지 대기 중이다. **es 랜딩 작성 시 같은 문장을 스페인어로 복제하지 마라** |
