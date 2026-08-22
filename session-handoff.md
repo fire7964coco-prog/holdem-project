@@ -28,7 +28,19 @@ ja에는 **`/ja/hand-chart`·`/ja/calculator`·`/ja/win-rate-quiz`가 없다.** 
 ### ② 🔴 **번역하지 말고 실측하라 — 「solver」가 그 언어에서 쓰이는 말인지부터**
 ja 실측: **`ソルバー ポーカー` 40 대 `ポーカー gto` 880 = 22배.** 「ソルバー」는 **죽은 표기**였다.
 → 제목·H1·H2 금지, 본문 용어로만. **두 층을 섞지 마라.**
-**es·de·pt에서 `solver`/`Solver`가 같은 운명인지 반드시 라쿠로 재실측하라.**
+**es·de·pt에서 `solver`/`Solver`가 같은 운명인지 반드시 재실측하라.**
+
+🔴🔴 **다만 «라쿠로»가 아니다 — 2026-08-22에 판정이 뒤집혔다.**
+라쿠 24개 도구 중 **다국어가 되는 것은 `search-volume-history`와 `search-rank-history` 둘뿐**이다.
+`suggest-keywords`·`question-search`·`co-occurrence`·`headline`·`other-keywords`·`ranking-keywords`는
+**전부 Japan 고정**이다 — 공식 축어: *「日本国外のキーワードデータは取得できません。英語など多言語の
+データを取得することは可能ですが、**あくまで日本国内のデータ**となります」*
+→ **es 시드를 suggest에 넣으면 «일본에서 검색된 스페인어»가 나온다. 숫자가 나온다고 맞는 게 아니다.**
+**절차**: 후보는 **구글 자동완성 직접 + lowfruits + WebSearch PAA**로 모으고,
+       점수는 **`search-volume-history`에 `language`+`location`을 줘서** 매긴다.
+       ⚠ 그때 **`seoDifficulty`는 반드시 OFF** — 언어를 바꿔도 **일본어 난이도**가 나오고 kw당 0.75크레딧이다.
+       🟢 `aggregationPeriodMonths: 48`은 **12와 같은 값**이니 항상 48로.
+**본체 = `docs/rakko-playbook.md` §10.** 착수 전 그 절을 반드시 읽어라.
 
 ### ③ 🔴 **차별화어는 「무료」가 아닐 수 있다**
 ja SERP 실측: `GTOツール 無料` top-10 중 **6개가 이미 제목에 「無料」**를 달고 있어 구별되지 않았다.
