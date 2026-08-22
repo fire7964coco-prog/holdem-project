@@ -28,34 +28,50 @@ ja에는 **`/ja/hand-chart`·`/ja/calculator`·`/ja/win-rate-quiz`가 없다.** 
 ### ② 🔴 **번역하지 말고 실측하라 — 「solver」가 그 언어에서 쓰이는 말인지부터**
 ja 실측: **`ソルバー ポーカー` 40 대 `ポーカー gto` 880 = 22배.** 「ソルバー」는 **죽은 표기**였다.
 → 제목·H1·H2 금지, 본문 용어로만. **두 층을 섞지 마라.**
-**es·de·pt에서 `solver`/`Solver`가 같은 운명인지 반드시 재실측하라.**
+
+> ✅ **es는 실측 완료(2026-08-22) — 뱅크 = `docs/keyword-bank/es-gto-solver.md`. 다시 재지 마라.**
+> ja와 **정반대**다: es에서 `solver`는 **살아 있다**(`solver poker` SD **0** · 자사 코퍼스 4편이 이미
+> 본문 용어로 쓴다). 다만 **어순이 난이도를 가른다** — `solver poker` SD 0 대 `poker solver` SD **46**.
+> **1순위는 `rangos poker`(ES 480 · MX 170 · SD 0~1)**이고 랜딩은 **포스트플랍**으로 가른다
+> (프리플랍은 `es/holdem-starting-hands-chart`). 🔴 함정 둘: **`GTO` 단독 = 과나후아토 주 코드**(멕시코) ·
+> **`simulador de poker`는 의도가 «무료 게임»이라 조준 금지**. **de·pt는 아직 미실측이다.**
 
 🔴 **다만 도구를 갈라 써라 — 2026-08-22 확정(사장님이 lowfruits로 직접 대조해 검증).**
 
 | 용도 | 도구 |
 |---|---|
 | **키워드 «발굴»** | 🔴 라쿠 금지 → **lowfruits + 구글 자동완성 직접 + WebSearch PAA** |
-| **볼륨·월별 시계열·권역 비교** | 🟢 **라쿠 `search-volume-history`** (`language` + `location`) |
-| **난이도(SD)·CPC** | 🔴 **lowfruits** — 라쿠 SD는 항상 «일본 값»이고 CPC는 자주 null |
+| **볼륨·월별 시계열·권역 비교** | 🟢 **라쿠 `search-volume-history`** (**`location`만** — 아래 정정) |
+| **난이도(SD)·CPC** | 🟢 **DataForSEO Labs** (2026-08-22 도입) — 라쿠 SD는 항상 «일본 값», CPC는 **벤더 간 30배 편차라 폐기** |
 
 **근거**: 라쿠 24종 중 `language`/`location`을 받는 건 `search-volume-history`·`search-rank-history`
 **둘뿐**이고 나머지는 **Japan 고정**이다
 (실증: `suggest`에 `manos de poker` → 볼륨 **10**, 30개 중 **29개 null**).
-그 «계측 2종»은 **사장님이 lowfruits(나라 Mexico · 언어 Spanish = 라쿠와 동일 파라미터)로 대조해 통과**했다 —
-`manos de poker` **라쿠 18,100 = lowfruits 18,100**. 둘 다 **구글 KWP 버킷값**을 중계하기 때문이다.
 🪶 location이 실제로 먹는다는 것도 확인: 같은 키워드가 `Japan`에선 **20**이었다(**905배**).
 
-🔴🔴 **es 착수 시 반드시 알 것 — US 히스패닉은 «순위 자체»가 다르다** (라쿠 4로케일 실측):
-| 키워드 | Mexico | **US(es)** | Colombia |
-|---|---:|---:|---:|
-| `manos de poker` | **18,100** | 1,600 | 5,400 |
-| **`poker texas holdem`** | 720 | **3,600** | 320 |
+### 🔴🔴 2026-08-22 정정 — **`language`는 볼륨을 «나누지 않는다»**
 
-MX·CO는 `manos de poker`가 1위인데 **US는 `poker texas holdem`이 1위**다 —
-**미국 스페인어 사용자는 영어 게임명을 그대로 친다. LATAM 데이터를 US에 옮기면 1순위를 틀린다.**
-⚠ US는 **광고 경쟁성 100**짜리가 둘이다(`manos de poker`·`reglas del poker`, MX는 1~2) —
-   상업 가치가 크다는 신호이자 **SERP가 어필리에이트로 덮여 있을 신호**다. 착수 전 육안 확인.
-🟢 3권역 동시 상승 = 진짜 트렌드: `que es un flop` MX **+32%** · CO **+45%** · US **+22%**.
+이 자리에 있던 「라쿠 계측 2종은 `language`+`location`을 받는다」와
+「US 히스패닉은 순위 자체가 다르다(`poker texas holdem` US 3,600 대 MX 720)」 표는 **둘 다 틀렸다.**
+**그 표는 «US 전체 검색량»이었다** — 스페인어 사용자의 것이 아니다.
+
+**실증 (독립 벤더 2개 · 같은 날)**:
+- 라쿠 `United States`+**English** vs +**Spanish** → **12/12 완전 동일**(볼륨·CPC·경쟁성)
+- DataForSEO `location_code:2840`+`en` vs +`es` → **6/6 완전 동일**
+- 두 벤더의 값도 **6/6 서로 일치**(`gto wizard` 12,100 · `poker solver` 1,600 · `rangos poker` 20 …)
+
+→ **구글 KWP 볼륨은 «키워드 문자열 + 지역»으로만 결정된다.** `language`는 «어떤 키워드 아이디어를
+   돌려줄지»에만 영향하고 **주어진 문자열의 볼륨은 안 나눈다.**
+→ 🔴 **「US 히스패닉 스페인어 수요」는 어떤 도구로도 측정 불가**다. 도구가 눈이 먼 게 아니라
+   **구글이 그 축을 아예 공개하지 않는다.** 자동완성도 안 된다(`gl=us/mx/es`가 집합을 안 바꾸고
+   `client=chrome`에서 **순서만** 미세 변동 · ccTLD는 효과 0 — 서버가 요청 IP를 본다).
+→ ✅ **해석 가능한 것은 «스페인어 문자열»의 지역별 볼륨뿐**이다(문자열이 언어를 함의하므로).
+   그 기준으로 재면 스페인어 솔버 축은 **US 10~20 · MX 10~170 · Spain 20~480**이다.
+→ ✅ **그래서 `/es-us/` 분할은 근거가 없다**(파이 자체가 없다). 상세 = `docs/keyword-bank/es-gto-solver.md`.
+
+🔴 **CPC를 근거로 쓰지 마라** — 같은 키워드가 라쿠 $11.13 대 DataForSEO $0.37(**30배**)이었다
+(`gto wizard`). 볼륨은 두 벤더가 일치하는데 **CPC만 갈린다.** 「CPC가 높으니 상업 가치가 크다」는
+논거를 세우지 마라.
 
 ⚠ `seoDifficulty`는 비일본에서 **반드시 OFF**(일본 값이 나온다 + kw당 0.75크레딧) ·
    `aggregationPeriodMonths: 48`은 **12와 같은 값**이니 항상 48로.
@@ -489,7 +505,8 @@ de 기준선(색인 4 · 미크롤 36)과 거의 판박이다.
 |---|---|
 | **레이아웃(모바일 참여율)** | 배포 완료(`f9f4260f`). **측정 기준선 2026-08-19 → 판정은 9/16경** `node scripts/ga-device.mjs --days 28`. 🔴 **원인이 확정된 적은 없다** — 「구조가 문제」는 가설이고 우리는 가장 큰 낭비를 걷었을 뿐이다. **속도는 원인이 아님이 실측으로 확인됐다**(LCP 988~1,196ms). 남은 축: 구간 B 본문(전체의 71% · 콘텐츠 편집이라 §14 트랙) · 격차 1~3위 글 미실측 |
 | **🆕 ja 색인** | 🔴 **43편 중 색인 4편**(2026-08-22 실측 · `docs/gsc-tracking/index-audit-2026-08-22.json`). 미크롤 38편 — 그중 **「URL is unknown」 10편**이 가장 급하다(사이트맵·내부링크 도달 실패). **콘텐츠가 아니라 크롤 문제라 라쿠·경화로는 못 고친다.** 상세 = START HERE 의 「⏸ 보류」 절 |
-| **🆕 라쿠키워드 활용** | 플레이북 신설 = **`docs/rakko-playbook.md`**(도구 24종 실측·크레딧표·공식 KB 축어·다국어 제약). 🔴 **분업 확정: 발굴·난이도·CPC = lowfruits / 볼륨·월별 시계열·권역 비교 = 라쿠**. ja 에는 라쿠 전 도구 유효 |
+| **🆕 키워드 도구 3종** | 본체 = **`docs/rakko-playbook.md`**. 🔴 **분업 재확정(2026-08-22)**: **발굴·SD = DataForSEO Labs** / **볼륨·월별 시계열·권역 비교 = 라쿠** / **lowfruits = 서버 불안정, SERP 약점 스캔 전용**. ja 에는 라쿠 전 도구 유효. ⚠ **CPC는 어느 도구도 믿지 마라**(벤더 간 30배) |
+| **🆕 DataForSEO** | 2026-08-22 도입·연결 검증 완료. `.mcp.json`에 `dataforseo` 등록(자격증명은 `.env.local`의 `DATAFORSEO_LOGIN`/`_PASSWORD` 참조 — 하드코딩 안 함). 🔴 **MCP는 세션 재시작 후 붙는다** — 그전까지는 `curl`로 REST를 직접 친다(검증된 방식). 잔액은 대시보드 확인 |
 | **검수 트랙** | 아래 §검수 큐 |
 | **es LATAM 보충 패스** | Spain 베이스 42/42 완결. **다음 = Country=Mexico부터, 슬랭 우선** |
 | **de 축A 미해결** | 검수 폴더에 본체 미인지 지시서 3건이 실재(`fix-handoff-de-S4-S5` ⚠rake C44 철회됨 · `de-S6` ⚠bubble #27 룰중립안 교체됨 · `ko-tournament-entry`) |

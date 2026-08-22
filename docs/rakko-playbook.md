@@ -24,6 +24,36 @@
 ④ **location이 실제로 작동한다는 것도 별도로 확인됐다** — 라쿠가 location을 무시했다면
    `Japan`도 18,100이 나왔어야 하는데 **20**이 나왔다(**905배** 차이).
 
+### 🔴🔴 ⑤ 2026-08-22 추가 확정 — **`language`는 볼륨을 «나누지 않는다». `location`만 먹는다**
+
+②의 대조는 **location이 같아서 통과한 것**이고 **`language`를 검증한 게 아니었다.** 그날 늦게 실측했다:
+
+| 시험 | 결과 |
+|---|---|
+| 라쿠 `United States` + **English** vs + **Spanish** (키워드 12개) | 🔴 **12/12 완전 동일** — 볼륨·CPC·경쟁성까지 |
+| **DataForSEO** `location_code:2840` + `en` vs + `es` (키워드 6개) | 🔴 **6/6 완전 동일** |
+| 두 벤더 값 상호 대조 | 🟢 **6/6 일치** (`gto wizard` 12,100 · `poker solver` 1,600 · `rangos poker` 20 …) |
+
+→ **구글 KWP 볼륨은 «키워드 문자열 + 지역»으로만 결정된다.** `language`는 «어떤 키워드 아이디어를
+   돌려줄지»에만 영향하고, **주어진 문자열의 볼륨은 언어로 안 쪼갠다.**
+→ 🔴 **「US 히스패닉 스페인어 수요」는 어떤 도구로도 측정할 수 없다.** 도구가 눈이 먼 게 아니라
+   **구글이 그 축을 공개하지 않는다.** 구글 자동완성도 마찬가지다 — `gl=us/mx/es`가 결과 **집합을
+   바꾸지 않고**(`client=chrome`에서 순서만 미세 변동), ccTLD(`google.com.mx`/`.es`/`.com`)는 효과 0이다.
+   서버가 **요청 IP**를 보기 때문이다.
+→ ✅ **해석 가능한 것은 «스페인어 문자열»의 지역별 볼륨뿐**이다 — 문자열 자체가 언어를 함의하므로.
+
+🔴 **CPC는 근거로 쓰지 마라 — 벤더 간 30배까지 벌어진다.**
+같은 `gto wizard`가 라쿠 **$11.13**, DataForSEO **$0.37**이었다(`gto poker` $9.83 대 $7.87 ·
+`poker solver` $6.72 대 $8.67). **볼륨은 두 벤더가 일치하는데 CPC만 갈린다.**
+「CPC가 높으니 상업 가치가 크다」류의 논거를 세우지 마라.
+
+🟢 **그래서 SD·발굴은 DataForSEO Labs로 옮긴다** (lowfruits 서버 불안정 + 라쿠 발굴 22종 Japan 고정).
+   `dataforseo_labs/google/keyword_suggestions/live`가 **location·language별 서제스트 + `keyword_difficulty`**를
+   준다. ⚠ **요청당 태스크 1개만** 받는다(배열에 여러 개 넣으면 첫 것만 처리되고 나머지는
+   `40000 You can set only one task at a time` — 조용히 실패하니 **태스크별 status를 세라**).
+   ⚠ `keyword_ideas`는 **의미 확장이라 노이즈가 심하다**(`poker gto` 시드에 `liga mx`·`tablas de
+   multiplicar`가 섞였다). **시드 구를 보존하는 `keyword_suggestions`를 써라.**
+
 ### ✅ 그래서 규칙은 이렇게 간다
 | 용도 | 도구 | 비고 |
 |---|---|---|
