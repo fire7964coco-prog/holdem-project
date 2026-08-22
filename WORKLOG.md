@@ -1,3 +1,21 @@
+## 2026-08-22 (es 솔버 랜딩 신설 + 키워드 도구 판정 정정 + zh-hant 라벨)
+
+- **`/es/solver` 신설·검수·배포** — 4번째 다국어 솔버 랜딩(ko·en·ja·es). 커밋 `31c3ac98`(신설) ·
+  `20bc30e2`(적대검수 4렌즈 40건 반영). 뱅크 = `docs/keyword-bank/es-gto-solver.md` 신설.
+  조준 = `rangos poker`(ES 480 · SD 0~1) · `solver poker`(SD 0). SERP top-10이 전부 프리플랍이라
+  **포스트플랍으로 갈랐다.** 함정 셋 = GTO가 과나후아토 주 코드(멕시코) · `simulador de poker`는
+  의도가 «무료 게임» · 어순이 SD를 0 대 46으로 가른다.
+- **🔴 키워드 도구 판정 정정** `c72eecd3` — **`language`는 볼륨을 나누지 않는다. `location`만 먹는다.**
+  라쿠 US(Eng/Spa) 12/12 동일 · DataForSEO 6/6 동일 · 두 벤더 값도 6/6 일치.
+  핸드오프의 「US 히스패닉은 순위가 다르다」 표는 **US 전체 검색량이었다** → 폐기.
+  **CPC는 벤더 간 30배라 근거 금지**(gto wizard 라쿠 $11.13 대 DFS $0.37).
+- **DataForSEO 도입** — `.mcp.json` 등록(자격증명은 `.env.local` 참조). 발굴·SD를 여기로 옮겼다.
+- **`tablas preflop` 소급** — `es/holdem-starting-hands-chart`의 「tablas GTO de preflop」 8곳을
+  「tablas preflop GTO」로 어순 정정(실검색 구가 연속으로 한 번도 없었다). 태그 2개 추가.
+- **zh-hant 커뮤니티 라벨** — 솔버 요청서 처리. `LABELS`에 52키 추가(영어 폴백 상태였다).
+  코퍼스 42편으로 재검산(德州撲克 615:0 등). 회신 = `docs/reply-to-solver-2026-08-22.md`.
+- **🔴 솔버 앱 사실오류 3건 통지** — es가 ja와 «같은 자리»라 원본에서 파생된 것으로 보인다.
+
 ## 2026-08-21 (8) — /ja/solver 신설: 일본어 GTO 솔버 랜딩 + 뱅크 + 적대검수 4렌즈
 
 **커밋** `27789ebb` · 배포 완료 · 사장님 지시(«ja 할 거야 … 고품질 랜딩페이지 만들자»)
