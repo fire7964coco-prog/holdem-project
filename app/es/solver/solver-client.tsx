@@ -225,7 +225,12 @@ const SPOT_GROUPS = [
       // 🔴 앱 축어는 «La frecuencia de c-bet de BTN se desploma»인데 **스팟은 플랍 첫 액션(BB 차례)에서
       //    멈춘다** — 화면에서 BTN의 C벳 빈도를 확인할 수 없다. ja가 같은 이유로 BB 관점으로 바꿨다.
       //    §4-B ④: OOP(BB) 첫 액션 벳 **23.7%**.
-      { board: "9♥8♥7♣", name: "Conectado medio, two-tone", note: "La textura que favorece al que paga: aquí BB toma la iniciativa y apuesta primero el 23,7% de las veces" },
+      // 🔴 M-035 결함1 정정(2026-08-23) — 「콜러 우위 보드」는 **시리즈가 이름까지 대며 폐기한 명제**다.
+      //    KO ④ `donk-bet-strategy` 축어: 「**레인지 우위가 BB로 넘어간 것은 아니다** — 에퀴티는
+      //    **48.5% 대 51.5%**로 여전히 BTN이 앞선다」 · EN ④ FAQ 「Does the big blind have the advantage? → **No.**」
+      //    초판은 앱 문구를 따라 `favorece al que paga` 로 썼다 — 검수장이 ja에서 잡았고 **언어 불변**이라 es에도 있었다.
+      //    ⚠ 「우위가 넘어갔다」가 아니라 **「리드가 처음으로 전략의 한 축이 된다」**가 정확한 서술이다.
+      { board: "9♥8♥7♣", name: "Conectado medio, two-tone", note: "El único board de bote simple donde BB lidera de verdad: apuesta primero el 23,7% (la ventaja de rango sigue siendo de BTN — equity 48,5% contra 51,5%)" },
       { board: "Q♠9♠2♠", name: "Board monotone", note: "Las apuestas grandes desaparecen — fíjate con qué frecuencia incluso un color hecho se limita a pasar" },
       { board: "6♣6♦3♥", name: "Board pareado", note: "Nadie conecta con este board, así que sube la proporción de faroles — ni siquiera BB apuesta primero (solo el 3%)" },
       { board: "6♠5♥2♦", name: "Board bajo y rainbow", note: "Guerra de sobrecartas. BB hace check-raise con mucha frecuencia en esta textura" },
@@ -439,8 +444,7 @@ export default function SolverClientEs() {
           <Link href="/es/blog/holdem-starting-hands-chart" className="font-semibold text-primary hover:underline">
             tabla de manos iniciales
           </Link>{" "}
-          — ahí tienes los rangos de apertura por posición, y son los mismos que se pegan en ① y ② de
-          esta herramienta. Para leer una mano en el rango del rival, la{" "}
+          — ahí tienes los rangos de apertura por posición explicados asiento a asiento. Para leer una mano en el rango del rival, la{" "}
           <Link href="/es/blog/holdem-reading-the-board" className="font-semibold text-primary hover:underline">
             lectura del board
           </Link>{" "}
@@ -481,7 +485,7 @@ export default function SolverClientEs() {
           <Link href="/es/blog/holdem-starting-hands-chart" className="font-semibold text-primary hover:underline">
             tabla de manos iniciales
           </Link>
-          ; aquí abajo tienes solo los dos que se pegan en ① y ② para empezar. Son los que usan los spots de bote de subida simple (BTN vs BB).
+          . Los dos rangos de abajo son otra cosa: **los que usan los spots de bote de subida simple** (BTN vs BB), listos para pegar en ① y ②.
         </p>
         <Table head={["Para pegar en", "Rango"]} rows={STARTER_RANGES.map(([seat, r]) => [seat, <code key={seat} className="text-xs break-all">{r}</code>])} />
       </section>
@@ -764,7 +768,7 @@ export default function SolverClientEs() {
               Tabla de manos iniciales
             </Link>{" "}
             — esta herramienta es solo postflop. <strong>Con qué manos entrar</strong> desde cada
-            posición está en ese artículo, y los rangos que se pegan en ① y ② salen de ahí
+            posición está en ese artículo; los rangos que se pegan en ① y ② vienen de los spots de estudio
           </li>
           <li>
             <Link href="/es/blog/holdem-pot-odds" className="font-semibold text-primary hover:underline">
