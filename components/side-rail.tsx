@@ -132,6 +132,18 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
     { href: "/es/tournaments", icon: "🏆", label: "Torneos" },
   ],
   /**
+   * ★2026-08-23 — `/pt/solver` 신설과 함께 추가. 라벨 "Solver GTO"는 **지어낸 것이 아니라**
+   *   솔버 본체를 `?lang=pt`로 열어 읽은 축어에서 왔다
+   *   (`<title>` = "HoldemMaster GTO Solver — Solver de poker GTO grátis no navegador").
+   *   🔴 라벨은 «검색 축»이 아니라 «메뉴 이름»이다 — 「`solver`를 `poker`와 붙여 쓴다」는
+   *      규율(뱅크 §1-B-①. 브라질에서 단독 `solver`는 엑셀이다)과 **층이 다르다.**
+   *   ⚠ **`/pt/tournaments`는 없다** — es 항목을 그대로 복사하지 마라.
+   */
+  pt: [
+    { href: "/pt/blog",   icon: "📚", label: "Blog" },
+    { href: "/pt/solver", icon: "🧠", label: "Solver GTO" },
+  ],
+  /**
    * de — 2026-08-10 신설. 라벨은 ja·es와 같은 규칙으로 **검증된 값에서 축어 복사**:
    *   - "Blog"     = CHROME.de.blogLabel (lib/intl.ts L728)
    *   - "Turniere" = DE_CLUSTERS의 tournament pillarLabel (lib/pillar-clusters.ts L499)

@@ -61,6 +61,10 @@ const LOCALE_HUB_ROUTES: Record<string, readonly string[]> = {
   // es — ★2026-08-22 `/es/solver` 신설. 스페인어권에 솔버 진입로가 0개였다(본체는 noindex).
   //      ⚠ `/es/hand-chart`·`/es/calculator`·`/es/win-rate-quiz`는 **여전히 없다** — 넣지 마라.
   es: ["/es/blog", "/es/solver", "/es/tournaments"],
+  // pt — ★2026-08-23 `/pt/solver` 신설. 포르투갈어권에 솔버 진입로가 0개였다(본체는 noindex).
+  //      ⚠ **pt는 es보다 가진 것이 적다** — `app/pt/`에 있는 것은 `blog`·`page.tsx`뿐이라
+  //         **`/pt/tournaments`도 없다**(es에는 있다). 없는 라우트를 넣지 마라.
+  pt: ["/pt/blog", "/pt/solver"],
   // de — 2026-08-10 신설. 독일어 지역·일정 검색 수요(LDA 4~9)를 받을 랜딩이 없었다.
   //      근거: docs/keyword-bank/de-core-volumes.md 시드⑫
   de: ["/de/blog", "/de/tournaments"],

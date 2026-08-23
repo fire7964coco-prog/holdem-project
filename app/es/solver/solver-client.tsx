@@ -485,7 +485,7 @@ export default function SolverClientEs() {
           <Link href="/es/blog/holdem-starting-hands-chart" className="font-semibold text-primary hover:underline">
             tabla de manos iniciales
           </Link>
-          . Los dos rangos de abajo son otra cosa: **los que usan los spots de bote de subida simple** (BTN vs BB), listos para pegar en ① y ②.
+          . Los dos rangos de abajo son otra cosa: <strong className="text-foreground">los que usan los spots de bote de subida simple</strong> (BTN vs BB), listos para pegar en ① y ②.
         </p>
         <Table head={["Para pegar en", "Rango"]} rows={STARTER_RANGES.map(([seat, r]) => [seat, <code key={seat} className="text-xs break-all">{r}</code>])} />
       </section>

@@ -1,3 +1,43 @@
+## 2026-08-23 (pt 솔버 랜딩 신설 + pt 고유 함정 4종 실측 + 검수장 작업 요청 M-037)
+
+- **`/pt/solver` 신설** — 5번째 다국어 솔버 랜딩(ko·en·ja·es·pt). 3파일 +
+  뱅크 `docs/keyword-bank/pt-gto-solver.md` 신설 + `docs/translation-terms-pt.md`에
+  「★ 솔버 / GTO / 레인지」절 추가(다음 pt 포스팅이 재사용할 자리).
+  조준 = `range poker`/`poker range`(590 · **SD 2**) · `gto poker`(590 · SD 9) · `solver poker`(170).
+  SERP top-10이 전부 프리플랍이라 **플랍 이후로 갈랐다**(es와 같은 구조의 빈자리).
+  두 벤더 볼륨 **5/5 일치**(라쿠 대 DataForSEO).
+- **🔴 pt 고유 함정 넷 — es 규율을 그대로 옮기면 틀린다**
+  ① **`solver` 단독 = 엑셀 솔버.** `o que é solver` 110·**SD 0**인데 SERP top-10이 **8/8 엑셀**
+     (`support.microsoft.com` 1위 · PAA 「Onde acho o Solver no Excel?」). **es는 `GTO`가
+     과나후아토였고 pt는 `GTO`가 깨끗하다** — 지켜야 할 단어가 언어마다 다르다.
+  ② **`solver de poker` 볼륨 0.** `solver poker` 170 · `poker solver` 50인데 전치사형은 데이터가 없다.
+     **앱 타이틀이 「Solver de poker …」라고 해서 그것이 검색어인 것은 아니다.**
+  ③ **악센트가 볼륨을 가르고 방향이 일정하지 않다.** `poker gratis` 1,000 대 `poker grátis` 210인데
+     `estratégia de poker` 30 대 무악센트 20으로 **반대로 가는 줄도 있다.** 본문은 정서법을 지켰다.
+  ④ **`postflop`·`pós-flop`·`pos flop` 전부 0** — es의 조준축이 pt에선 죽는다. `flop turn river` 260이 산다.
+- **🔴 M-036 §3 약속 이행 — SD 재현 실패가 es에서도 확인됐다.** **같은 벤더의 두 엔드포인트**가
+  다른 SD를 주고 각자 안정적으로 재현된다(`poker solver` sugg 46 대 bulk 0 · 대조군으로 bulk 정상 확인).
+  → **정렬은 볼륨으로. SD는 출처 엔드포인트를 밝혀 참고로만.** ja 뱅크의 「SD 24 = 유일한 低」는 미정정.
+- **🔴 M-035 «언어 불변»이 pt 앱에서도 실측** — ③⑨⑬은 이미 정정본(08-22 배포 반영)인데
+  **④ `9♥8♥7♣`만 「favorece o caller … c-bet do BTN despenca」로 남아 있다.**
+  ja·es·pt **3개 언어 확인** → 솔버 통지 근거가 셋이 됐다. 랜딩은 §4-B 정정본을 썼다.
+- **등록 6곳** — hreflang 5랜딩 세트(`pt-BR` 추가) · `side-rail` · `solver-promo` · `hub-routes` ·
+  `generate-sitemap` · 🔴 **`lib/hub-i18n.ts`에 `PT` 신설**(항목 자체가 없었다 — 안 넣었으면
+  셸·사이드바가 통째로 영어. 그 파일 주석의 경고가 실제로 걸린 첫 사례).
+  값은 `community-client.tsx`의 `LABELS.pt` **9키 축어 복사**.
+- **검수에서 잡은 것** — es 랜딩에 **마크다운 `**`가 그대로 렌더**되던 자리 1곳 정정(M-036 귀속 정정 때
+  넣은 것) · pt 교열 10건(`abrir mão de` · 미래가정법 `cair` · `Single Raised Pot` 용어 통일 +
+  첫 등장에 「(o pote de aumento simples)」 다리) · 예시 퍼센트를 실측값(③ 99,9%)으로 교체 ·
+  🟢 **네 랜딩의 「네 구역 대 실제 다섯」을 pt에서는 복제하지 않고 「cinco」로 썼다.**
+- **🟠 사이트 전역 결함 발견(미수정)** — 비한국어 **537페이지**의 `application-name`·`author`·
+  `keywords`·스킵링크(`본문 바로가기`)가 아직 한국어다. **`check:meta-lang`은 title·og·twitter만 봐서
+  사각지대다.** 랜딩 회차에 끼워 고치지 말 것 — 별건으로 열고 게이트를 넓힐 일이다. 핸드오프에 등재.
+- **📬 M-037 발신(본체→검수장)** `docs/request-to-review-2026-08-23-m037.md` — **반영 보고가 아니라
+  작업 요청 2건.** ① **폐기 명제 목록(스펙 §4-C)** — 본체가 만들면 «고친 결과»에서 역산하게 되어
+  **안 고쳐진 자리가 원리상 빠진다.** ② 랜딩 4종 «횡단» 검수(축 A 폐기명제 재발 · B 귀속오류 · C 열거).
+- 게이트 전건 통과 — `check:hreflang` 0 · `check:directives` 0 · `check:meta-lang` 🔴 0 ·
+  robots `index, follow` · 사이트맵 static 63 → **64**.
+
 ## 2026-08-22 (es 솔버 랜딩 신설 + 키워드 도구 판정 정정 + zh-hant 라벨)
 
 - **`/es/solver` 신설·검수·배포** — 4번째 다국어 솔버 랜딩(ko·en·ja·es). 커밋 `31c3ac98`(신설) ·

@@ -103,3 +103,99 @@ Sources: pokernobrasil.com · checkraise.com.br · pokerlab.com.br · ggpoker.co
 - 공식 문구는 *citizen* + **KYC 국적 검증**. "거주국"으로 쓰면 주소만 바꾸면 된다는 오해를 준다.
 - 2026 인천분 공개된 장 = **「N8TW x APT Incheon 2026」 = 中華民國 국적 한정**
 - 패키지 = 시트 + 여행경비(대만분: **NT$53,888 + NT$16,000**). 일반 위성은 시트만.
+
+---
+
+# ★ 솔버 / GTO / 레인지 (2026-08-23, `/pt/solver` 랜딩 작업 중 확보)
+
+> 나중에 pt 포스팅을 쓸 때 **이 절부터 본다.** 근거는 ① `lib/posts-pt/holdem-glossary.ts` 정본
+> ② pt 43편 실사용 grep ③ 솔버 앱 `?lang=pt` 라이브 축어 ④ DataForSEO/라쿠 실측이다.
+> 키워드 판정 전체는 **`docs/keyword-bank/pt-gto-solver.md`**.
+
+## 1. 정본 용어 (코퍼스가 이미 정해 둔 것 — 다시 번역하지 마라)
+
+| 개념 | pt 정본 | 근거 |
+|---|---|---|
+| **range** | **`range` (영어 그대로)** · 복수 `ranges` | `holdem-glossary` L233 「**Range** — O conjunto completo de mãos que um jogador pode ter num spot」. 🔴 **es는 `rango`로 옮기지만 pt는 옮기지 않는다.** es 번역을 그대로 미러링하면 틀린다 |
+| **GTO** | `GTO` (라틴 약어 그대로) | `holdem-glossary` L232 「Game Theory Optimal — uma estratégia equilibrada e inexplorável vinda dos **solvers**」 |
+| **solver** | **`solver` / `solvers`** (영어 그대로) | pt 코퍼스 **8편**이 본문 용어로 이미 쓴다(`holdem-3bet`·`card-counting`·`continuation-bet`·`glossary`·`limping`·`position-play`·`starting-hands-chart`·`straddle`). es(4편)보다 정착이 강하다 |
+| **spot** | `spot` (영어 그대로) | 위 glossary 정의문이 「num **spot**」으로 쓴다 |
+| pot | **pote** | 이 파일 「용어 (현지 관습)」절 |
+| call · raise | **pagar**/igualar · **aumentar**/subir | 이 파일 「용어 (현지 관습)」절 |
+| check | **dar check** | 이 파일 「용어 (현지 관습)」절 |
+| board / flop / turn / river | 영어 그대로 | 이 파일 「용어 (현지 관습)」절 |
+| **draw** | **draw / draws** | 앱 결과 패널 이름이 「Mãos / **Draws**」 |
+| **trinca** | 트리플(세트/트립스 상위) | 앱 ⑬ 축어 「As **trincas** não são raras」 · 이 파일 「용어 (현지 관습)」절의 브라질 속어 「세트 적중 → trincar」와 같은 뿌리 |
+| **overcard / overpair** | 영어 그대로 | 앱 스팟 축어 「guerra de **overcards**」·「os **overpairs** … mantêm a pressão」 |
+| regular(단골) | **regs** | 이 파일 「4. 용어 (브라질 포커 미디어 실사용)」절. 🟢 `range poker` PAA에 **`O que é reg poker?`**가 실재해 FAQ로 흡수했다 |
+
+## 2. 「플랍 이후」를 뭐라고 쓰나 — 🔴 es 와 갈리는 자리
+
+- 🔴 **`postflop`·`pós-flop`·`pos flop` 셋 다 검색량 0이다.** es는 `postflop`을 조준축으로 삼았지만
+  **브라질은 그 말을 안 친다.**
+- ✅ **산문은 「depois do flop」**으로 쓴다. 기술 용어가 꼭 필요한 한 자리에서만 `pós-flop`.
+- ✅ **살아 있는 검색어는 `flop turn river` 260 · SD 6**이다. H2·본문에서 이 세 단어를 나란히 쓰면 잡힌다.
+
+## 3. 솔버 앱 UI 축어 (`?lang=pt` · 2026-08-23 실측)
+
+> 🔴 **글에서 앱 화면을 가리킬 때는 반드시 이 표기를 쓴다.** 다르게 번역하면 독자가 화면에서 못 찾는다.
+
+| 자리 | pt 축어 |
+|---|---|
+| 사이드바 | `① Range OOP` · `② Range IP` · `③ Board` · `④ Bet sizes` · `⑤ Calcular` |
+| 네비 | `Spots de estudo` · `Treinador GTO` · `Tabelas pré-flop` · `Equity` |
+| 히어로 | `Estratégia GTO, direto no seu navegador.` / `Nada para instalar, nada para pagar.` |
+| 특징 | `Grátis` · `Estudo offline` · `Cálculo rápido — Multithread` · `Treinador GTO` |
+| 트레이너 채점 | `sua nota vem da perda de EV **em relação ao pote**` 🟢 정정본이 이미 들어와 있다 |
+| PWA | `♠ Adicionar à tela` |
+| 결과 패널 | `Mãos / Draws` |
+| 스팟 그룹 | **`Single Raised Pot`**(영어 유지) · `Pote de 3-bet` · `Blind vs Blind` |
+| 자리 이름 | `BB (caller)` · `BTN (open-raiser)` · `BB (3-bettor)` · `SB (open-raiser)` |
+| 그룹 조건 | `Pote 5,5bb · Stack 97,5bb` 🔴 **pt 앱은 소수 구분자로 쉼표**를 쓴다(es 앱은 마침표였다) |
+
+🪶 `Single Raised Pot`은 영어 그대로다 → **첫 등장에 「(o pote de aumento simples)」 다리를 달아 준다.**
+   앱 라벨과 본문 용어가 갈리면 독자가 화면에서 길을 잃는다.
+
+## 4. 🔴 표기 함정 셋 (pt 고유 · 실측)
+
+### ① `solver` 단독 = **Excel 솔버**
+`o que é solver` 110 · SD 0인데 SERP top-10이 **8/8 엑셀**이다(`support.microsoft.com` 1위 ·
+`dicio.com.br` 사전 · PAA 「Onde acho o Solver no Excel?」).
+→ **제목·H1·H2에서 `solver`는 반드시 `poker`와 붙여 쓴다.**
+🪶 es는 `GTO`가 과나후아토 주 코드라 위험했는데 **pt에서 `GTO`는 깨끗하다**(오염 0건).
+   **지켜야 할 단어가 언어마다 다르다 — es 규율을 그대로 옮기지 마라.**
+
+### ② 「자연스러운 쪽」이 검색어가 아니다
+`solver poker` **170** · `poker solver` 50 인데 **`solver de poker`는 볼륨 0**이다.
+→ 산문은 `de`를 넣어 읽히게, **검색어 열거 문단에서만** `solver poker`를 축어로.
+무료 수식어도 `grátis`가 아니라 **`gratuito`** 쪽에만 값이 잡힌다(`solver poker gratuito` 20 대 0).
+
+### ③ 악센트가 볼륨을 가르고 **방향이 일정하지 않다**
+
+| 무악센트 | 볼륨 | 악센트 | 볼륨 |
+|---|---:|---|---:|
+| `poker gratis` | **1,000** | `poker grátis` | 210 |
+| `maos de poker` | **3,600** | `mãos de poker` | 2,400 |
+| `estrategia de poker` | 20 | **`estratégia de poker`** | **30** |
+| `o que e gto no poker` | **0** | **`o que é gto no poker`** | **30** |
+| `poquer` | 2,900 | `pôquer` | 2,900 |
+
+🔴 이 파일 「SERP(검색어 관습)」절의 「검색은 무악센트도 흔함」은 **경향이지 규칙이 아니다** — 위 표에서 **두 줄이 반대로 간다.**
+🟢 **본문은 정서법을 지킨다**(`grátis`·`mãos`). 무악센트형은 **desc·tags에서 흡수**한다.
+
+## 5. 소유 구도 (pt 43편 · 새 글 쓰기 전에 본다)
+
+| 축 | 소유자 | 새 글이 할 일 |
+|---|---|---|
+| 프리플랍 표 (`tabela de range poker` 110 · `range poker por posição` 30) | `holdem-starting-hands-chart` | 넘긴다 |
+| 3벳 레인지 | `holdem-3bet` | 넘긴다 |
+| `estratégia de poker`(30) 외 3형 | `holdem-strategy` | 넘긴다 |
+| 🔴 `calculadora de equity poker` | **`holdem-equity`** | 🔴 **es와 다르다** — pt는 계산기 축 일부를 글이 이미 갖고 있다 |
+| 아웃츠·팟오즈·확률 표 | `holdem-outs`·`holdem-pot-odds`·`holdem-probability` | 넘긴다 |
+| 🟢 `range poker` 일반형 · `solver` · `gto poker` · 플랍 이후 | **소유자 0** | **`/pt/solver` 랜딩이 가져갔다**(2026-08-23) |
+
+## 6. 구조 메모
+
+- `app/pt/`에 있는 것은 **`blog`·`page.tsx`·`solver`뿐**이다. **`/pt/tournaments`는 없다**(es에는 있다).
+  링크를 걸기 전에 `lib/posts-pt/<slug>.ts` 실존을 확인하라.
+- GTO 솔버 해설 시리즈 13편은 **pt에 0편**이다(ko·en에만 있다).

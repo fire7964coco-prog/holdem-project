@@ -13,9 +13,11 @@ import type { SecondaryLocale } from "./intl";
  *   적었다가 원본 대조에서 잡았다 — 실제는 "$30 · $200 · $1,000"이다. 사람이 옮겨 적는
  *   순간 숫자가 바뀐다. LABELS를 고치면 여기도 **복사해서** 맞출 것(다시 쓰지 말 것).
  *
- * ★커버리지: 도구 페이지가 실제로 존재하는 로케일만 넣는다(현재 en·ja·es).
+ * ★커버리지: 도구 페이지가 실제로 존재하는 로케일만 넣는다(현재 en·ja·es·pt).
  *   나머지는 en으로 떨어진다 — 지금은 그 언어에 도구 페이지 자체가 없어 쓰이지 않는다.
  *   새 언어에 도구 페이지를 만들면 **여기 항목을 먼저 추가**할 것. 안 하면 영어가 섞인다.
+ *   🔴 2026-08-23 — `/pt/solver` 신설. **pt 항목이 아예 없어서 그대로 열었으면 포르투갈어
+ *      페이지의 셸·사이드바가 통째로 영어로 떨어졌다.** 위 경고가 실제로 걸린 첫 사례다.
  */
 
 export interface HubLabels {
@@ -83,7 +85,25 @@ const ES: HubLabels = {
   languages: "🌐 Idiomas de la comunidad",
 };
 
-const MAP: Partial<Record<SecondaryLocale, HubLabels>> = { en: EN, ja: JA, es: ES };
+/**
+ * ★2026-08-23 신설 — `/pt/solver` 랜딩과 함께. 값은 전부
+ *   `app/community/community-client.tsx`의 `LABELS.pt`에서 **축어 그대로** 옮겼다
+ *   (login/writePost/trendingTitle/eventBadge/eventTitle/eventDesc/eventDrawSchedule/
+ *    eventButton/communityLang 9키 대조 완료). **다시 번역하지 마라** — 위 ⚠ 경고 참조.
+ */
+const PT: HubLabels = {
+  login: "Entrar",
+  write: "✏️ Escrever",
+  trending: "🔥 Tendências desta semana",
+  eventBadge: "🎰 Evento · Em breve",
+  eventTitle: "Escolha 6 números\nGanhe vales-presente!",
+  eventDesc: "3 acertos → $30 · 4 → $200\n5 → $1,000",
+  eventSchedule: "🔗 Todo domingo 19h KST\nSorteio automático via Bitcoin block hash",
+  eventButton: "Ver evento →",
+  languages: "🌐 Idiomas da comunidade",
+};
+
+const MAP: Partial<Record<SecondaryLocale, HubLabels>> = { en: EN, ja: JA, es: ES, pt: PT };
 
 /** locale이 null/undefined면 한국어 */
 export function hubLabels(locale: SecondaryLocale | null | undefined): HubLabels {

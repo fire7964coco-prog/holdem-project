@@ -80,6 +80,8 @@ export const metadata: Metadata = {
       "en-US": `${SITE}/en/solver`,
       "ja-JP": `${SITE}/ja/solver`,
       "es-ES": `${SITE}/es/solver`,
+      // ★ 2026-08-23 — `/pt/solver` 신설. **다섯 랜딩이 같은 세트**여야 게이트를 통과한다.
+      "pt-BR": `${SITE}/pt/solver`,
     },
   },
   // twitter:*를 안 주면 루트 레이아웃의 한국어가 그대로 나간다

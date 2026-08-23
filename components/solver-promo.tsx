@@ -71,6 +71,21 @@ const COPY = {
     desc: "Calcula tus rangos de póker postflop con un solver GTO en el navegador — sin instalar, sin registrarte y gratis",
     cta: "Abrir el solver →",
   },
+  /**
+   * ★2026-08-23 신설. 🔴 **`solver`를 단독으로 두지 않았다 — 브라질에서 «Excel 솔버»다**
+   *   (뱅크 `pt-gto-solver.md` §1-B-①: `o que é solver` 110 · SD 0인데 SERP top-10이 8/8 엑셀).
+   *   ⚠ **es 주석을 그대로 옮기면 엉뚱한 단어를 지킨다** — es는 `GTO`가 과나후아토였고
+   *      **pt에서 `GTO`는 깨끗하다**(오염 0건). 여기서 지켜야 하는 것은 `solver` 쪽이다.
+   * 🔴 조준축(`range`·`poker`·`GTO`)을 desc에 실었다 — 이 카드는 pt 43편이 밀어주는 유일한 앵커다.
+   * 🔴 차별화어는 「무료」가 아니라 **「sem instalar · sem cadastro」**다 — SERP top-10 전부와 갈린다.
+   */
+  pt: {
+    href: "/pt/solver",
+    badge: "♠ Ferramenta grátis",
+    title: "Solver GTO",
+    desc: "Calcule os seus ranges de poker depois do flop com um solver GTO no navegador — sem instalar, sem cadastro e grátis",
+    cta: "Abrir o solver →",
+  },
 } as const;
 
 export type SolverPromoLocale = keyof typeof COPY;
