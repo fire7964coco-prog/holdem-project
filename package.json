@@ -25,7 +25,7 @@
     "check:meta:selftest": "node scripts/check-meta-length.mjs --selftest",
     "prebuild": "npm run check:hsl && npm run check:intl-links && npm run check:rangechart && npm run check:meta && npm run generate:sitemap",
     "build": "next build",
-    "postbuild": "node scripts/patch-html-lang.mjs && npm run check:hreflang && npm run check:directives",
+    "postbuild": "node scripts/patch-html-lang.mjs && npm run check:hreflang && npm run check:directives && npm run check:meta-lang",
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
@@ -47,7 +47,8 @@
     "ga:page": "node scripts/ga-page.mjs",
     "board": "node scripts/priority-board.mjs",
     "check:hsl": "node scripts/check-hsl-tokens.mjs",
-    "check:hsl:selftest": "node scripts/check-hsl-tokens.mjs --selftest"
+    "check:hsl:selftest": "node scripts/check-hsl-tokens.mjs --selftest",
+    "check:meta-lang": "node scripts/check-meta-lang.mjs"
   },
   "dependencies": {
     "@radix-ui/react-tabs": "^1.1.4",

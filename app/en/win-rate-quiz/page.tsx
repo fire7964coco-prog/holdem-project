@@ -42,6 +42,16 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [{ url: "/opengraph.jpg", width: 1200, height: 630 }],
   },
+  // 🔴 2026-08-23 — twitter 가 빠져 있어 루트 layout 의 «한국어»가 그대로 나가고 있었다.
+  //    EN 도구 페이지 9개 중 **이 페이지만** 누락이었다(나머지 8개는 이미 갖고 있었다).
+  //    라이브 실측으로 잡았다 — DOM 밖 문자열이라 게이트 넷이 전부 못 본다.
+  //    ⚠ 문구는 위 openGraph 를 그대로 재사용한다 — 새로 짓지 않는다.
+  twitter: {
+    card: "summary_large_image",
+    title: "Poker Equity Simulator — Find Out Where You Should Have Folded | HoldemMaster",
+    description:
+      "Their cards stay hidden, just like real poker. Track your equity street by street and your pot odds from the flop on, then review where you should have folded.",
+  },
 };
 
 /**
