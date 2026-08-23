@@ -82,7 +82,7 @@ export const SOLVER_FAQ_EN: FaqItem[] = [
   },
   {
     q: "What is the GTO Trainer?",
-    a: "It is a drill mode built on the solved study spots. The trainer covers 13 study presets and 33 decision nodes, and it deals you hands drawn from the actual GTO range weights — so a hand shows up as often as you would really hold it there. You pick an action and it grades the decision against the solution.",
+    a: "It is a drill mode built on the solved study spots. The trainer draws its questions from several decision points across the solved spots, so the combinations run past ten thousand, and it deals you hands drawn from the actual GTO range weights — so a hand shows up as often as you would really hold it there. You pick an action and it grades the decision against the solution.",
   },
   {
     q: "Why does the trainer grade by EV loss instead of right or wrong?",

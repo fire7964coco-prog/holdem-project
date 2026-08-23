@@ -156,7 +156,12 @@ const SPOT_GROUPS = [
       { board: "A♥7♦2♣", name: "Dry Ace-High Board", slug: "a-high-board-cbet", note: "The textbook range-advantage flop — the ace smashes the opener's range" },
       { board: "K♠8♦3♣", name: "Dry King-High Board", slug: "k-high-board-cbet", note: "Still favors the opener, but checks creep up. Compare it with the ace" },
       { board: "Q♠J♦T♠", name: "Connected Broadway, Two-Tone", slug: "broadway-board-strategy", note: "Both ranges connect hard; big bets and check-raises come alive" },
-      { board: "9♥8♥7♣", name: "Middle Connected, Two-Tone", slug: "donk-bet-strategy", note: "The caller-friendly texture where \"always c-bet\" falls apart" },
+      // 🔴 M-038 RP-01 정정(2026-08-23) — 종전 문구는 이 보드를 «콜러에게 유리한 텍스처»로 불렀는데,
+      //    시리즈 ④가 이름까지 대며 폐기한 명제다. KO ④ `lib/posts/donk-bet-strategy.ts` 축어:
+      //    「레인지 우위가 BB로 넘어간 것은 아니다 — 에퀴티는 48.5% 대 51.5%로 여전히 BTN이 앞선다」 ·
+      //    EN ④ FAQ 「Does the big blind have the advantage? → No.」
+      //    ⚠ BB가 «먼저 친다»(23.7%)는 것과 «우위»는 다른 말이다. 앱 문구로 되돌리지 마라.
+      { board: "9♥8♥7♣", name: "Middle Connected, Two-Tone", slug: "donk-bet-strategy", note: "The only single-raised board where BB truly leads: it bets first 23.7% of the time (the range advantage still belongs to BTN — 48.5% equity against 51.5%)" },
       { board: "Q♠9♠2♠", name: "Monotone Board", slug: "monotone-board-strategy", note: "Big bets disappear — even made flushes check often" },
       { board: "6♣6♦3♥", name: "Paired Board", slug: "paired-board-strategy", note: "Nobody connects, so the bluffing share goes up" },
       // ⚠ 「peaks」(=13개 중 최대)로 쓸 뻔했다. 앱은 "BB check-raises a lot on this texture"라고만
@@ -168,7 +173,12 @@ const SPOT_GROUPS = [
     label: "3-Bet Pot — BB 3-bets, BTN calls",
     cond: "OOP: BB (3-bettor) · IP: BTN (caller) · Pot 22.5bb · Stack 89bb · SPR ≈ 4.0",
     items: [
-      { board: "A♦K♠2♥", name: "Ace-High Board, 3-Bettor's Edge", slug: "3bet-pot-cbet", note: "The best flop for the 3-bettor; at low SPR small bets pressure everything" },
+      // 🔴 M-038 RP-03 정정(2026-08-23) — **이 자리가 발원지다.** 종전 문구는 작은 벳이 통하는 이유를
+      //    «SPR이 낮아서»로 돌렸는데, 시리즈 ⑧ `lib/posts/3bet-pot-cbet.ts`가 그 인과를 반박 문단으로
+      //    폐기했다: 「SPR이 똑같이 4.0인 ⑨는 큰 사이즈 98.4%, ⑩은 97.8%다. 사이즈를 정하는 것은
+      //    스택 깊이가 아니라 레인지의 모양이다」. ja·es가 이 문장을 그대로 옮겨 갔고 ko 랜딩에는 없었다.
+      //    ⚠ 「스택이 얕으면 작게」로 되돌리지 마라.
+      { board: "A♦K♠2♥", name: "Ace-High Board, 3-Bettor's Edge", slug: "3bet-pot-cbet", note: "The best flop the 3-bet range can see — loaded with AK, AA and KK. What lets a small bet squeeze the whole range is the shape of that range, not the low SPR" },
       // 🔴 2026-08-20 정정: 옛 note가 "watch where the 3-bettor slows down"이었는데 **거짓**이다.
       //    이 스팟의 체크는 0.8%다(§4-B). 3벳터는 여기서 «느려지지» 않는다 — 사이즈가 하나로 뭉칠 뿐이다.
       { board: "Q♥T♥7♠", name: "Dynamic Two-Tone Board", slug: "3bet-pot-bet-sizing", note: "Two live draws — 98.4% of the range fires the same two-thirds size" },
@@ -181,7 +191,11 @@ const SPOT_GROUPS = [
     items: [
       { board: "K♥T♦6♠", name: "King-Ten-High Board", note: "Wide ranges, so both players are weak — compare with the BTN version" },
       { board: "7♦6♦5♣", name: "Low Connected, Two-Tone", note: "Two wide ranges on an ultra-connected board: two pairs and draws everywhere" },
-      { board: "A♠A♥6♦", name: "Ace-Paired Board", note: "Trips are rare with two aces down — bluff heaven, so watch the folds" },
+      // 🔴 M-038 RP-04 정정(2026-08-23) — 종전 문구는 A를 든 트리플을 «드물다»고 했다.
+      //    실측은 반대다: SB 88콤보(17.5%) 대 BB 66콤보로 ⑥ 트리플(≈5%)의 3~4배다.
+      //    이유는 «희소»가 아니라 수와 질 양쪽의 SB 우위이고, 그래서 SB가 §4-B ⑬ 기준 80.1%를 친다.
+      //    🪶 앱은 2026-08-22에 8개 언어 전부 정정 배포했다 — **랜딩만 옛 명제를 들고 있었다.**
+      { board: "A♠A♥6♦", name: "Ace-Paired Board", note: "Trips are not rare here — SB simply holds more of them (88 combos against BB's 66), which is why SB fires 80.1%" },
     ],
   },
 ];
@@ -493,13 +507,13 @@ export default function SolverClientEn() {
             <span className="font-semibold text-orange-500">beyond that</span> is a spot to review
           </li>
           <li className="text-muted-foreground">
-            The same 0.05bb is a serious error in a small pot and trivial in a big one. In a 5.5bb
-            single raised pot the cutoffs land at 0.02bb and 0.06bb; in a 22.5bb 3-bet pot, 0.08bb and
-            0.23bb. Floors of 0.02bb and 0.05bb keep grading above solver noise
+            The same 0.08bb is 1.45% in a 5.5bb pot (a spot to review) and 0.36% in a 22.5bb one
+            (acceptable). In a 5.5bb single raised pot the cutoffs land at 0.02bb and 0.06bb; in a
+            22.5bb 3-bet pot, 0.08bb and 0.23bb. Floors of 0.02bb and 0.05bb keep grading above solver noise
           </li>
           <li className="text-muted-foreground">
-            Questions are drawn from{" "}
-            <strong className="text-foreground">13 study presets and 33 decision nodes</strong>{" "}
+            Questions are drawn from several decision points inside each spot, so the combinations{" "}
+            <strong className="text-foreground">run past ten thousand</strong>{" "}
             (target exploitability 0.5%), and you can drill single raised pots, 3-bet pots or blind vs
             blind on their own
           </li>

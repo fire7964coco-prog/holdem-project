@@ -98,7 +98,7 @@ const FEATURES = [
   ["결과 요약 CSV 내보내기", "○", "표를 그대로 스프레드시트로"],
   ["스팟 공유 링크", "○", "내가 만든 상황을 주소 하나로 커뮤니티에 질문"],
   ["교육 예제 즉시 열람", "○", "미리 계산돼 있어 대기 없음"],
-  ["GTO 트레이너", "○", "EV 손실(bb)로 채점 · 약점 분석"],
+  ["GTO 트레이너", "○", "팟 대비 비율로 EV 손실 채점 · 약점 분석"],
 ];
 
 /** 외부 도구 비교 — ⚠ 가격·무료 티어 수치는 넣지 않는다(§12-B, faq.ts 주석 참조). */
@@ -389,8 +389,16 @@ export default function SolverClient() {
       <section className="mt-12">
         <h2 className="text-xl font-bold">GTO 트레이너는 어떻게 채점하나요?</h2>
         <p className="mt-2 text-sm text-muted-foreground">
+          {/*
+            🔴 M-038 RP-07 정정(2026-08-23) — 종전 문장은 채점 «기준»을 절대 bb로 적었다.
+               앱은 2026-08-15에 **팟 대비 비율**로 바꿨다(0.35% / 1% · 하한 0.02bb·0.05bb).
+               🪶 화면에 뜨는 «값»이 bb인 것은 맞다 — 그래서 아래 문장은 bb를 그대로 남긴다.
+                  틀린 것은 «값의 단위»가 아니라 «합격선의 기준»이었다.
+                  (2026-08-23에 솔버와 이 구조를 확인하고 저희 쪽 지적 하나를 철회했다.)
+          */}
           채점 기준은 정답·오답이 아니라{" "}
-          <strong className="text-foreground">EV 손실(bb)</strong>입니다. GTO는 같은 핸드도 액션을
+          <strong className="text-foreground">얼마나 EV를 흘렸는가</strong>이고, 그 크기는{" "}
+          <strong className="text-foreground">팟 대비 비율</strong>로 잽니다. GTO는 같은 핸드도 액션을
           섞기 때문에 빈도가 낮은 선택이 곧 오답은 아닙니다 — 기준은 «얼마나 손해였나»입니다.
           액션을 고르면 그 선택이 GTO 대비 몇 bb 손해였는지와 함께 액션별 혼합 빈도·EV를 전부
           공개합니다.
@@ -409,8 +417,8 @@ export default function SolverClient() {
             <span className="font-semibold text-orange-500">그 이상</span> = 다시 볼 스팟
           </li>
           <li className="text-muted-foreground">
-            같은 0.05bb라도 작은 팟에선 큰 실수, 큰 팟에선 사소한 차이입니다 — 그래서 팟 대비로
-            잽니다. 팟 5.5bb 싱글레이즈팟이면{" "}
+            같은 0.08bb가 팟 5.5bb에선 1.45%(다시 볼 스팟)이고 팟 22.5bb에선 0.36%(허용 가능)입니다
+            — 그래서 팟 대비로 잽니다. 팟 5.5bb 싱글레이즈팟이면{" "}
             <strong className="text-foreground">0.02bb · 0.06bb</strong>, 팟 22.5bb 3벳팟이면{" "}
             <strong className="text-foreground">0.08bb · 0.23bb</strong>가 경계입니다
           </li>

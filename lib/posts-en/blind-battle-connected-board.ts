@@ -257,7 +257,7 @@ Rank the out-of-position EQR of **six selected spots** from low to high and this
 | K♥T♦6♠ blind vs blind (⑪) | opener | 55.3% | 103.1% |
 | 8♦5♣2♠ 3-bet pot (⑩) | three-bettor | 58.6% | 106.9% |
 
-**An opener, sitting among the callers.** Across all thirteen spots there are **five** caller seats below this one (③ 77.9 · ② 80.7 · ⑥ 83.7 · ① 84.0 · ⑦ 84.3), so it is not near the bottom. The point stands anyway: **the same opener seat reads 103.1% at ⑪ and 85.3% here.** The board sets the value, not the seat.
+**An opener, sitting among the callers.** Across the series there are **five** caller seats below this one (③ 77.9 · ② 80.7 · ⑥ 83.7 · ① 84.0 · ⑦ 84.3), so it is not near the bottom. The point stands anyway: **the same opener seat reads 103.1% at ⑪ and 85.3% here.** The board sets the value, not the seat.
 
 ## So which hands make up the 9.6% that bets?
 

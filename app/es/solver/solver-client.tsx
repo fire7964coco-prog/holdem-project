@@ -240,7 +240,10 @@ const SPOT_GROUPS = [
     label: "Bote de 3-bet — BB hace 3-bet y BTN paga (SPR bajo)",
     cond: "OOP: BB (3-bet) · IP: BTN (paga) · Bote 22,5bb · Stack 89bb · SPR ≈ 4,0",
     items: [
-      { board: "A♦K♠2♥", name: "Board A-high, ventaja del 3-bettor", note: "El mejor flop posible para el rango de 3-bet: con SPR bajo, las apuestas pequeñas presionan todo el rango" },
+      // 🔴 M-038 RP-03 정정(2026-08-23) — EN 랜딩에서 옮겨 온 문장이었다. 작은 벳이 통하는 이유를
+      //    «SPR이 낮아서»로 돌리면 시리즈 ⑧이 폐기한 인과가 된다: 「SPR이 똑같이 4.0인 ⑨는 98.4%,
+      //    ⑩은 97.8%다. 사이즈를 정하는 것은 스택 깊이가 아니라 레인지의 모양이다」. 되돌리지 마라.
+      { board: "A♦K♠2♥", name: "Board A-high, ventaja del 3-bettor", note: "El mejor flop posible para el rango de 3-bet — cargado de AK, AA y KK. Lo que permite que una apuesta pequeña apriete a todo el rango es la forma de ese rango, no el SPR bajo" },
       // 🔴 앱 축어 «Observa dónde el 3-bettor empieza a frenar»는 **거짓**이다 —
       //    §4-B ⑨: 벳 합계 **99.1%**(큰 사이즈 98.4 + 작은 사이즈 0.7), 체크는 **0.8%**다(🔴 100−99.1로 «빼서» 구하면 0.9가 나온다 — 개별 반올림값의 합은 100이 아니다).
       //    EN 랜딩이 이미 «98.4% fires the same two-thirds size»로 철회·정정했다.

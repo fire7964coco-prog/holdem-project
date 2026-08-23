@@ -199,14 +199,19 @@ ja `holdem-glossary` L47·L136이 `セット`/`トリップス`를 정본으로 
 | 🔴 **`STARTER_RANGES` 표가 «프리플랍 오픈 레인지 표»다** | `app/en/solver/solver-client.tsx` · `app/ja/solver/solver-client.tsx` (🟢 **ko에는 없다**) | 랜딩이 주석에 「프리플랍은 소유 글의 것」이라 적어놓고 **복붙 가능한 BTN 오픈 레인지 문자열을 표로 인쇄**한다. 소유 글(`holdem-starting-hands-chart`)은 정성적(`Top ~43%`)이라 **랜딩이 더 좋은 형태를 준다** → 구글이 «또 하나의 프리플랍 레인지 표»로 읽을 위험. **es는 2026-08-22에 고쳤다** — 표 앞에 소유 글 링크를 넣고 헤더를 `Asiento/Rango` → `Para pegar en/Rango`(도구 조작 라벨)로 바꿨다. **같은 처방을 en·ja에 적용하라.** ⚠ ko에 이 표가 없다는 것이 «의도적 회피»였는지는 확인 안 했다 |
 | 🟠 **「네 개의 작업 영역」인데 실제로는 다섯을 센다** | `app/solver/` · `app/en/solver/`(`four working areas`) · `app/ja/solver/`(`4つの作業エリア`) · `app/es/solver/`(`cuatro zonas`) | 열거하면 1(상단 바) + 1(13×13) + 3(우측) = **다섯**이고 `READ_SCREEN` 배열도 **5행**이다. **다섯이 맞다.** 🔴 **es만 고치면 네 랜딩이 갈라지므로 손대지 않았다** — **네 파일을 한 번에** 고칠 일이다 |
 
-### ja가 남긴 것 (기존)
-| 무엇 | 어디 | 근거 |
-|---|---|---|
-| 「同じ0.05bb」 예시가 자기 임계값과 모순 | `app/solver/solver-client.tsx` · `app/en/solver/solver-client.tsx` | 0.05÷5.5 = **0.909% = 許容**이지 «중대한 실수»가 아니다. **0.08bb**로 바꾸면 두 구간을 실제로 건넌다 |
-| featureList가 아직 「EV 손실(bb)로 채점」 | `app/solver/page.tsx` · `app/solver/solver-client.tsx` FEATURES | 앱이 2026-08-15에 **팟 대비 비율**로 바꿨다. EN·ja는 반영됨, **KO만 안 됨** |
-| 「13 study presets and 33 decision nodes」 | `app/en/solver/solver-client.tsx` | KO가 이미 폐기한 문장(「문제가 13개뿐인가」 오해). KO 축어 = 「조합이 **1만 가지가 넘습니다**」 |
-| `A♠A♥6♦` 「Trips are rare」 | `app/en/solver/` · `app/solver/` · **솔버 앱** | 실측 **SB 88콤보(17.5%) 대 BB 66콤보** — ⑥ 트리플(≈5%)의 3~4배다. **결론은 옳고 이유가 틀렸다** |
-| `SPOT_GROUPS` slug 4개 미기입 | `app/en/solver/solver-client.tsx` | `3bet-pot-low-board`·`blind-battle-cbet`·`blind-battle-connected-board`·`ace-paired-board-strategy` **전부 EN 발행돼 있다**. `docs/gto-series-en-production-recipe.md:165`가 절차화해 뒀는데 안 채워졌다 |
+### ✅ ja가 남긴 것 — **2026-08-23에 M-038로 4/5 닫혔다**
+
+> 🟢 검수장이 M-038 「폐기 명제 목록」으로 앵커를 걸어 줬고, 회귀
+> (`홀덤검수/reports/regression/폐기명제-2026-08-23.md`)가 **13/13 ✅** 다.
+> 🔴 **남은 것은 마지막 행 하나뿐이다.**
+
+| 무엇 | 상태 |
+|---|---|
+| 「同じ0.05bb」 예시가 자기 임계값과 모순 | ✅ **RP-06 닫힘** — ko·en 본문을 `0.08bb`로. 🪶 **ko 주석의 `0.05bb`는 «남겨야 한다»**(왜 0.08로 갔는지의 기록 · 회귀가 «정확히 1»로 건다) |
+| featureList가 아직 「EV 손실(bb)로 채점」 | ✅ **RP-07 닫힘** — ko `page.tsx`·`solver-client.tsx` 2곳. 🔴 **그런데 앵커가 결함보다 좁았다** — 산출물을 다시 세니 본문에 「채점 기준은 … EV 손실(bb)입니다」가 **한 곳 더** 있었다(회귀는 ✅ 인데 화면은 틀린 상태). 함께 고쳤고 앵커 확장을 요청했다 |
+| 「13 study presets and 33 decision nodes」 | ✅ **RP-05 닫힘** — en `solver-client`·`faq` 2곳 → 「조합이 1만 가지가 넘는다」 |
+| `A♠A♥6♦` 「Trips are rare」 | ✅ **RP-04 닫힘**(랜딩). 🟢 **앱은 08-22에 8언어 배포 완료** — pt 화면이 정정본인 것으로 확인했다 |
+| 🔴 `SPOT_GROUPS` slug 4개 미기입 | **아직 안 했다** — `app/en/solver/solver-client.tsx`의 `3bet-pot-low-board`·`blind-battle-cbet`·`blind-battle-connected-board`·`ace-paired-board-strategy`. **전부 EN 발행돼 있다.** `docs/gto-series-en-production-recipe.md:165`가 절차화해 뒀는데 안 채워졌다 |
 
 ## 🔴 솔버 앱에 통지할 것 (본체 → 솔버)
 
@@ -216,7 +221,7 @@ ja `holdem-glossary` L47·L136이 `セット`/`トリップス`를 정본으로 
 
 ### 🔴 남은 것 = **④ `9♥8♥7♣` (미통지 · 근거 3개 언어)**
 
-앱 축어 — es 「favorece al que paga」 · ja 「コーラー（BB）優位」 ·
+앱 축어 — es 「favorece al que paga」 · ja 「コーラー（BB）優位」+「BTNのCベット頻度が大きく下がる」 ·
 **pt 「A textura clássica que favorece o caller. A frequência de c-bet do BTN despenca —
 este spot mostra exatamente por que «sempre dar c-bet» é um erro.」**(2026-08-23 라이브)
 
@@ -625,6 +630,23 @@ de 기준선(색인 4 · 미크롤 36)과 거의 판박이다.
 ---
 
 ## 📬 MAILBOX — 검수장·솔버와 주고받는 자리
+
+> 🟢🟢 **2026-08-23: M-038 수신 → M-039 발신. 회귀 «문서 2건 · 주장 28개 · ✅ 전부 일치».**
+>    받은 것 = `홀덤검수/reports/폐기명제목록-2026-08-23.md`(16행) +
+>    `.../regression/폐기명제-2026-08-23.md` · 회신 = `docs/reply-to-review-2026-08-23-m038.md`.
+>    **M-035(ja 15주장)와 M-038(13주장)이 같은 회차에 함께 닫혔다.**
+>    🔴 **검수장 §0 진단이 맞았고 그 예측이 «그날 안에» 실현됐다** — 「발원지(EN)를 안 고치면
+>       pt·de·zh 가 또 받는다」고 적었는데 **그 pt 가 목록 도착 전에 이미 받아 갔다**(RP-03).
+>       🔴 그리고 저희는 그것을 **EN 랜딩이 아니라 «앱 pt 축어»에서** 받았다 —
+>       **랜딩 계보와 앱 계보 두 갈래**로 퍼진다는 뜻이다.
+>    🔴 **RP-07 은 앵커가 결함보다 좁았다** — `EV 손실(bb)로 채점` 2곳은 ✅ 인데
+>       빌드 산출물에 `EV 손실(bb)` 가 한 곳 더 살아 있었다(**회귀 ✅ · 화면 🔴**).
+>       **산출물 재검사가 잡았다.** 앵커 확장을 요청해 뒀다.
+>    🔴 **회신에서 판정을 부탁한 것 5건** — ① 앵커 확장 ② pt 행 등재 + 「앱→랜딩」 경로
+>       ③ ⑩ `entirely`·`en absoluto` 를 §1-A 로(저희 판정: **ja 「ほぼ」가 맞다**)
+>       ④ ⑪ 「약하다」 조건부 잠복을 §1-B 로 ⑤ RP-08 나머지 2곳 청구 여부.
+>    ✅ **약속한 것** = 13스팟 축어 **ko·en·de·zh·zh-hant 5개**를 **de 랜딩 회차에 함께 뜬다**
+>       (ja·es·pt 3개는 완료). 그것이 검수장이 (c)를 닫는 조건이다.
 
 > 🔴🔴 **2026-08-23: M-037 발신 — «작업 요청» 2건. 검수장이 놀고 있어서 사장님이 일감을 지시했다.**
 >    본문 = `docs/request-to-review-2026-08-23-m037.md`. **회신 대기.**

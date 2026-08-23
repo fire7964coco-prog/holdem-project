@@ -264,7 +264,13 @@ const SPOT_GROUPS = [
     label: "Pote de 3-bet — BB dá 3-bet e BTN paga (SPR baixo)",
     cond: "OOP: BB (3-bettor) · IP: BTN (caller) · Pote 22,5bb · Stack 89bb",
     items: [
-      { board: "A♦K♠2♥", name: "Board A-high, vantagem do 3-bettor", note: "O melhor flop possível para o range de 3-bet (carregado de AK, AA e KK) — com SPR baixo, apostas pequenas pressionam o range inteiro" },
+      // 🔴 M-038 RP-03 정정(2026-08-23 · 신설 당일) — **앱 pt 축어를 그대로 옮겼다가 걸린 자리다.**
+      //    작은 벳이 통하는 이유를 «SPR이 낮아서»로 돌리면 시리즈 ⑧이 폐기한 인과가 된다:
+      //    「SPR이 똑같이 4.0인 ⑨는 큰 사이즈 98.4%, ⑩은 97.8%다. 사이즈를 정하는 것은
+      //    스택 깊이가 아니라 레인지의 모양이다」(`lib/posts/3bet-pot-cbet.ts` 반박 문단).
+      //    🪶 검수장 목록(M-038)에는 pt 행이 없었다 — **랜딩이 목록보다 하루 늦게 생겼기 때문**이고,
+      //       발원지(EN)를 안 고치면 de·zh가 또 받는다는 그 경고가 pt에서 실제로 일어난 것이다.
+      { board: "A♦K♠2♥", name: "Board A-high, vantagem do 3-bettor", note: "O melhor flop possível para o range de 3-bet — carregado de AK, AA e KK. O que faz uma aposta pequena apertar o range inteiro é o formato desse range, não o SPR baixo" },
       // 🟢 앱 pt 축어가 이미 정정본이다(es·ja는 앱이 «empieza a frenar»여서 우리가 고쳤다).
       //    §4-B ⑨: 벳 합계 99.1%(큰 사이즈 98.4 + 작은 사이즈 0.7), 체크 **0.8%**.
       //    🔴 100−99.1로 «빼서» 구하면 0.9가 나온다 — 개별 반올림값의 합은 100이 아니다.

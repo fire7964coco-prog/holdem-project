@@ -210,7 +210,7 @@ Now take 9♥8♠ — middle pair with a spade. It can win now or improve later,
 
 The big blind's equity share is ==5.5 × 47.7% = 2.62bb== against an actual 2.37bb, which is the 90.4%.
 
-The 18.4 point gap is the second-smallest **of the seven single-raised pots**, behind 9-8-7 at 13.2. ⚠ Across all thirteen spots it is only fifth — the blind-versus-blind K-T-6 (7.0) and A-A-6 (9.3) and the 8-5-2 three-bet pot (16.6) are all tighter, and they are different seats. When large bets disappear, so do the difficult decisions — and **position is worth exactly as much as the decisions still left to make.**
+The 18.4 point gap is the second-smallest **of the seven single-raised pots**, behind 9-8-7 at 13.2. ⚠ Across the series it is only fifth — the blind-versus-blind K-T-6 (7.0) and A-A-6 (9.3) and the 8-5-2 three-bet pot (16.6) are all tighter, and they are different seats. When large bets disappear, so do the difficult decisions — and **position is worth exactly as much as the decisions still left to make.**
 
 ## What changes at the table?
 
