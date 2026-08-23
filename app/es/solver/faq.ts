@@ -42,7 +42,7 @@
  *   판정 기준은 **`docs/gto-solver-series-spec.md` §4-B 확정표**다. 이번 회차에 실제로 걸린 것 —
  *   · **트레이너 채점**: 앱은 «recibe tu nota por **pérdida de EV**»라고 쓰지만, 앱은 2026-08-15에
  *     채점을 **팟 대비 비율**로 바꿨다(0.35% / 1%, 하한 0.02bb·0.05bb). **아래 문항은 정정본을 쓴다.**
- *   · ⑨ `Q♥T♥7♠`: 앱 «Observa dónde el 3-bettor empieza a frenar» → §4-B 벳 **99.1%**(체크 0.9%).
+ *   · ⑨ `Q♥T♥7♠`: 앱 «Observa dónde el 3-bettor empieza a frenar» → §4-B 벳 **99.1%**(체크 **0.8%**).
  *     **멈추지 않는다.** EN이 이미 철회한 주장이다.
  *   · ⑬ `A♠A♥6♦`: 앱 «los tríos son poco frecuentes» → 이유가 틀렸다(§4-B 벳 80.1%).
  *   ⚠ 셋 다 **솔버 앱 es 번역의 결함**이다 — 별건으로 솔버 쪽에 통지할 것.

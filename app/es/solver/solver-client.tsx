@@ -107,7 +107,7 @@ const SOLVER_URL = "https://solver.holdemmaster.com/?lang=es";
  *   판정 기준은 **`docs/gto-solver-series-spec.md` §4-B 확정표**다. 이번에 실제로 걸린 것 셋 —
  *   · **트레이너 채점**: 앱 «recibe tu nota por pérdida de EV» → 앱은 2026-08-15에 **팟 대비 비율**로
  *     바꿨다. 아래는 정정본(0.35% / 1%, 하한 0.02bb·0.05bb)을 쓴다. **절대 bb로 되돌리지 마라.**
- *   · ⑨ `Q♥T♥7♠`: 앱 «Observa dónde el 3-bettor empieza a frenar» → §4-B 벳 **99.1%**(체크 0.9%).
+ *   · ⑨ `Q♥T♥7♠`: 앱 «Observa dónde el 3-bettor empieza a frenar» → §4-B 벳 **99.1%**(체크 **0.8%**).
  *     **멈추지 않는다.** EN이 이미 철회한 주장이라 정정본을 쓴다.
  *   · ⑬ `A♠A♥6♦`: 앱 «los tríos son poco frecuentes» → 결론은 옳고 **이유가 틀렸다**.
  *     실측은 SB 88콤보 대 BB 66콤보이고 SB가 **80.1%** 벳한다.
@@ -237,7 +237,7 @@ const SPOT_GROUPS = [
     items: [
       { board: "A♦K♠2♥", name: "Board A-high, ventaja del 3-bettor", note: "El mejor flop posible para el rango de 3-bet: con SPR bajo, las apuestas pequeñas presionan todo el rango" },
       // 🔴 앱 축어 «Observa dónde el 3-bettor empieza a frenar»는 **거짓**이다 —
-      //    §4-B ⑨: 벳 합계 **99.1%**(큰 사이즈 98.4 + 작은 사이즈 0.7), 체크는 0.9%다.
+      //    §4-B ⑨: 벳 합계 **99.1%**(큰 사이즈 98.4 + 작은 사이즈 0.7), 체크는 **0.8%**다(🔴 100−99.1로 «빼서» 구하면 0.9가 나온다 — 개별 반올림값의 합은 100이 아니다).
       //    EN 랜딩이 이미 «98.4% fires the same two-thirds size»로 철회·정정했다.
       { board: "Q♥T♥7♠", name: "Board dinámico two-tone", note: "Dos proyectos vivos y aun así el 98,4% del rango dispara con el mismo tamaño de dos tercios" },
       { board: "8♦5♣2♠", name: "Board bajo y seco", note: "No conecta en absoluto con el rango de 3-bet, y aun así los sobrepares mantienen la presión" },
