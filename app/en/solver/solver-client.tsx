@@ -199,20 +199,21 @@ const SPOT_GROUPS = [
       //       랜딩들은 그 고침을 못 받았다.
       //    🟢 문안은 «완화»가 아니라 **수치**로 갔다 — KO 표 실측 **탑 페어 0%**
       //       (8이 들어간 핸드가 3벳 레인지에 없다). 오버페어와 층이 달라 뒤 절과 충돌하지 않는다.
-      { board: "8♦5♣2♠", name: "Low Dry Board", note: "The 3-bet range flops no top pair at all here — just gutshots and backdoors — yet overpairs keep the pressure on" },
+      { board: "8♦5♣2♠", name: "Low Dry Board", slug: "3bet-pot-low-board", note: "The 3-bet range flops no top pair at all here — just gutshots and backdoors — yet overpairs keep the pressure on" },
     ],
   },
   {
     label: "Blind vs Blind — SB vs BB",
     cond: "OOP: SB (opener) · IP: BB (caller) · Pot 6bb · Stack 97bb",
     items: [
-      { board: "K♥T♦6♠", name: "King-Ten-High Board", note: "Wide ranges, so both players are weak — compare with the BTN version" },
-      { board: "7♦6♦5♣", name: "Low Connected, Two-Tone", note: "Two wide ranges on an ultra-connected board: two pairs and draws everywhere" },
+      // 🟢 2026-08-24 — 핸드오프 잔여 «slug 4개 미기입» 소급(recipe.md:165 절차). 넷 다 EN 발행 확인.
+      { board: "K♥T♦6♠", name: "King-Ten-High Board", slug: "blind-battle-cbet", note: "Wide ranges, so both players are weak — compare with the BTN version" },
+      { board: "7♦6♦5♣", name: "Low Connected, Two-Tone", slug: "blind-battle-connected-board", note: "Two wide ranges on an ultra-connected board: two pairs and draws everywhere" },
       // 🔴 M-038 RP-04 정정(2026-08-23) — 종전 문구는 A를 든 트리플을 «드물다»고 했다.
       //    실측은 반대다: SB 88콤보(17.5%) 대 BB 66콤보로 ⑥ 트리플(≈5%)의 3~4배다.
       //    이유는 «희소»가 아니라 수와 질 양쪽의 SB 우위이고, 그래서 SB가 §4-B ⑬ 기준 80.1%를 친다.
       //    🪶 앱은 2026-08-22에 8개 언어 전부 정정 배포했다 — **랜딩만 옛 명제를 들고 있었다.**
-      { board: "A♠A♥6♦", name: "Ace-Paired Board", note: "Trips are not rare here — SB simply holds more of them (88 combos against BB's 66), which is why SB fires 80.1%" },
+      { board: "A♠A♥6♦", name: "Ace-Paired Board", slug: "ace-paired-board-strategy", note: "Trips are not rare here — SB simply holds more of them (88 combos against BB's 66), which is why SB fires 80.1%" },
     ],
   },
 ];
