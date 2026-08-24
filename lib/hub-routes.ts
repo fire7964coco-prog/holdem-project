@@ -69,6 +69,10 @@ const LOCALE_HUB_ROUTES: Record<string, readonly string[]> = {
   //      근거: docs/keyword-bank/de-core-volumes.md 시드⑫
   // ★2026-08-24 — `/de/solver` 신설과 함께 추가(6번째 솔버 랜딩).
   de: ["/de/blog", "/de/solver", "/de/tournaments"],
+  // zh — ★2026-08-24 `/zh/solver` 신설과 함께 추가(7번째 솔버 랜딩). 중국어권에 솔버
+  //      진입로가 0개였다(본체는 noindex). ⚠ `app/zh/`에 있는 것은 blog·tournaments·solver
+  //      셋뿐이다 — 없는 라우트(hand-chart·calculator…)를 넣지 마라.
+  zh: ["/zh/blog", "/zh/solver", "/zh/tournaments"],
 };
 
 /**

@@ -95,6 +95,21 @@ const COPY = {
     desc: "Berechne deine Poker Ranges nach dem Flop mit einem GTO Solver im Browser – ohne Installation, ohne Anmeldung, kostenlos",
     cta: "Solver öffnen →",
   },
+  /**
+   * ★2026-08-24 — `/zh/solver` 신설과 함께 추가(7번째). 표기는 앱 zh 축어(«GTO 求解器» ·
+   *   «打开浏览器就能算» · «不用装软件»)와 랜딩 훅(«无需注册»)에서 왔다.
+   * 🔴 **`GTO`도 `solver`도 단독으로 두지 않는다** — zh권에서 `GTO` 단독은 자동차·아니메,
+   *   `solver` 단독은 수학 솔버다(뱅크 `zh-gto-solver.md` §1-①·②). 항상 扑克/求解器와 결합.
+   * 🔴 차별화어는 «무료»가 아니라 **«不用下载 · 无需注册»**다 — 중화권 무료 축의 실질 경쟁자
+   *   (TexasSolver 등)가 전부 설치형이라 SERP 전체와 갈린다.
+   */
+  zh: {
+    href: "/zh/solver",
+    badge: "♠ 免费工具",
+    title: "GTO 求解器",
+    desc: "用浏览器里的 GTO 求解器算德州扑克翻牌后的范围——不用下载、无需注册、完全免费",
+    cta: "打开求解器 →",
+  },
 } as const;
 
 export type SolverPromoLocale = keyof typeof COPY;

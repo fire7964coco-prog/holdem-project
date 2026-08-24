@@ -121,7 +121,25 @@ const DE: HubLabels = {
   languages: "🌐 Community-Sprachen",
 };
 
-const MAP: Partial<Record<SecondaryLocale, HubLabels>> = { en: EN, ja: JA, es: ES, pt: PT, de: DE };
+/**
+ * ★2026-08-24 신설 — `/zh/solver` 랜딩과 함께. 값은 전부
+ *   `app/community/community-client.tsx`의 `LABELS.zh`에서 **축어 그대로** 옮겼다
+ *   (login/writePost/trendingTitle/eventBadge/eventTitle/eventDesc/eventDrawSchedule/
+ *    eventButton/communityLang 9키 대조 완료). **다시 번역하지 마라** — 위 ⚠ 경고 참조.
+ */
+const ZH: HubLabels = {
+  login: "登录",
+  write: "✏️ 发帖",
+  trending: "🔥 本周热帖",
+  eventBadge: "🎰 活动 · 准备中",
+  eventTitle: "选6个数字\n赢取礼品券！",
+  eventDesc: "3个匹配 → $30 · 4 → $200\n5 → $1,000",
+  eventSchedule: "🔗 每周日晚7点 (KST)\n比特币区块哈希自动抽签",
+  eventButton: "查看活动 →",
+  languages: "🌐 社区语言",
+};
+
+const MAP: Partial<Record<SecondaryLocale, HubLabels>> = { en: EN, ja: JA, es: ES, pt: PT, de: DE, zh: ZH };
 
 /** locale이 null/undefined면 한국어 */
 export function hubLabels(locale: SecondaryLocale | null | undefined): HubLabels {

@@ -1,0 +1,193 @@
+# zh(간체) 솔버 랜딩 키워드 뱅크 — `/zh/solver` (+ zh-hant 회차용 대만·홍콩 실측 동봉)
+
+> 2026-08-24 실측. 도구 = **라쿠 `search-volume-history`**(볼륨 · SG requestId 1255796 · MY 1255797 · TW 1255799 · HK 1255800 · 48개월) +
+> **DataForSEO**(Google Ads search_volume 교차검증 + Labs suggestions/SD + SERP API top-10+PAA).
+> 🟢 **두 벤더 볼륨 일치**: SG 10/10 (`gto wizard` 480·480 · `gto poker` 170·170 · `poker solver` 40·40 · `gto solver` 30·30 ·
+> 중국어 문자열 10·10) · HK 근사 일치(`gto poker` 390·390 · `poker solver` 30·30 · `gto wizard` 1,300 대 1,600).
+> 🔴 **대만만 갈렸다 — 아래 §1-④.**
+
+---
+
+## 0. 한 줄 결론
+
+**zh(간체) 구글 도달권(싱가포르·말레이시아 + 홍콩 혼용)의 솔버 축은 «라틴 문자열»이 지배한다.**
+ja(`ソルバー`=죽은 표기)와 정반대 — zh 독자는 도구를 **영어로 검색**한다.
+
+| 축 | SG | MY | HK | TW(참고·zh-hant용) |
+|---|---:|---:|---:|---:|
+| `gto wizard`(브랜드·참고) | 480 | 390 | 1,300~1,600 | **4,400**(DFS) |
+| **`gto poker` / `poker gto`** | **170** | **210** | **390** | 210 |
+| **`poker solver`** | 40 | 20 | 30 | 20 |
+| `piosolver`(브랜드) | 40 | 20 | 50 | 110 |
+| **`gto solver`** | 30 | — | 30~40 | 30 |
+| 중국어 문자열 전부(`德州扑克 gto`·`求解器`·`gto是什么`·`德州扑克软件`…) | ≤10 | ≤10 | 10~70 | 20~140 |
+
+조준 1순위 = **`gto poker`/`poker gto`**(전 지역 최상위 일반형 · seoTitle에 라틴 그대로) +
+**`poker solver`·`gto solver`**(도구 정면 쿼리) + 중국어 축은 **`德州扑克 gto`(10)를 H1 자연문에,
+나머지는 H2·FAQ 흡수**([[low-volume-longtail-aggregation]]).
+🪶 「볼륨 ≤10 = 수요 0」이 아니다(de `kostenlos` 선례) — 知乎·Reddit 중문 스레드·TexasSolver 중문 페이지가
+수요의 실재를 보여준다. 문자열로 안 잡힐 뿐이다.
+
+---
+
+## 1. 🔴 zh 고유 함정 (2026-08-24 실측)
+
+### ① `GTO` 단독 = 자동차·아니메에 오염 (ja 드라마 함정의 간체판)
+
+DFS Labs `gto` 서제스트(SG·zh-CN) top-30: `gto` 1,600 중 포커는 `gto wizard`·`poker gto`·`gto poker`뿐.
+나머지 = **Ferrari 250/288/599 GTO · Mitsubishi GTO · Pontiac GTO · 『GTO(그레이트 티처 오니즈카)』 아니메/드라마/망가**.
+→ 🔴 **제목·H1·H2에서 `GTO`는 반드시 `扑克`/`poker`/`德州扑克`와 붙인다.**
+
+### ② `solver` 단독 = «수학 솔버» (pt·de는 엑셀이었는데 zh권은 수학이다)
+
+DFS Labs `solver` 서제스트(SG): `math solver` **49,500** · `wordle solver` 8,100 · `anagram solver` 4,400 ·
+`rubik's cube solver` 3,600 · `sudoku solver` 1,000. 포커 0.
+→ 🔴 **`solver`도 단독 금지 — poker/GTO/德州扑克 앵커 필수.** 오염의 «내용»은 언어권마다 다르다
+(pt·de=엑셀, zh권=수학·퍼즐). 물려받는 것은 규율이지 오염어가 아니다.
+
+### ③ 🔴 TW `勝率計算器` 1,900은 «게임 승률 계산기» 의도 — 조준 금지 (zh-hant 회차에 그대로 적용)
+
+SERP 실측(TW): top-10 전부 게임 승률 계산기(Clash Royale · 연승 계산 · 미로 게임 · 범용 계산기). **포커 0/10.**
+포커 의도가 확실한 것은 **`德州撲克勝率計算器` 260**(TW·DFS)뿐이다.
+es `simulador de poker`·de `poker simulator`와 동형의 의도 함정.
+
+### ④ 🔴🔴 라쿠 Taiwan location은 «죽은 소스»다 — 대만 볼륨은 DataForSEO로만 재라
+
+라쿠 `Taiwan,Taiwan`: 65개 키워드 중 ≥10이 **2개뿐**이고 그 2개도 **월별이 2023-03 이후 사실상 전부 0**
+(`gto wizard` 연평균 10 · 직전 12개월 거의 0). 같은 날 DataForSEO(location 2158)는
+**`gto wizard` 4,400 · `勝率計算器` 1,900 · `德州撲克教學` 480 · `德州撲克勝率計算器` 260 · `德州撲克 gto` 140 ·
+`piosolver` 110 · `gto poker`/`poker gto` 210 · `gto是什麼` 70 · `德州撲克範圍` 70 · `求解器` 70 · `gto solver` 30**.
+→ 핸드오프가 예고한 «벤더 location 왜곡»이 대만에서 실증됐다(간체 China가 아니라 대만이었다).
+**SG·MY·HK는 두 벤더가 일치**하므로 라쿠 유효, **대만만 DFS 단독**.
+
+### ⑤ 간체/번체 문자열은 구글이 «한 시리즈»로 정규화한다
+
+HK 실측: `德州扑克教学`(간체)와 `德州撲克教學`(번체)가 **월별 시계열까지 완전 동일**(50·50),
+`德州扑克胜率计算器`/`德州撲克勝率計算器`도 동일(40·40). SG에서도 간·번 쌍이 같은 값.
+→ **자형(스크립트) 변형은 볼륨을 가르지 않는다**(악센트가 볼륨을 갈랐던 pt와 다르다).
+SERP에도 양 스크립트가 혼재한다(간체 쿼리 top-10에 vocus.cc·happypoker.tw 번체 글 랭크).
+→ zh 랜딩과 zh-hant 랜딩은 **볼륨 파이를 나눠 갖는 관계**다 — hreflang으로 지역을 가른다.
+
+### ⑥ 금지 축 (de §1-⑤와 동일 규율)
+
+실시간 보조(RTA)·봇 계열은 어떤 각도로도 채택 금지. 랜딩 FAQ에 «실시간 보조가 아니라 공부 도구» 한 줄.
+
+---
+
+## 2. 볼륨표 (라쿠 48개월 · SG/MY/HK + TW는 DFS)
+
+### 조준 (소유자 판정은 §4)
+
+| 키워드 | SG | MY | HK | TW(DFS) | 메모 |
+|---|---:|---:|---:|---:|---|
+| **`gto poker` / `poker gto`** | **170** | **210** | **390** | 210 | 🎯 **1순위 — 제목 편입.** ⚠ 12m 추세 SG −20%·MY −37%(완만한 하강, HK도 −15%) |
+| **`poker solver`** | **40** | 20 | 30 | 20 | 🎯 도구 정면 쿼리. SD(sugg) 40 — 참고만 |
+| **`gto solver`** | 30 | — | 30~40 | 30 | 🎯 |
+| `solver poker` | 10 | — | 20 | — | 병기 흡수(어순은 `poker solver`가 정본 — de와 같고 pt와 반대) |
+| `gto trainer` | 10 | — | 10 | 10 | 트레이너 절이 받는다 |
+| `德州扑克 gto` / `gto 德州扑克` / `德扑 gto` | 10 | 10 | 10~20 | 140 | 🎯 중국어 정면 쿼리 — H1 자연문·본문. TW가 최대(zh-hant 몫) |
+| `gto是什么` / `gto是什么意思` | 10 | — | 10 | 70(是什麼) | FAQ 정의 문항 |
+| `求解器` | 10 | — | 30~40 | 70 | 본문 용어(앱 공식 표기) — 단독 조준은 안 한다(수학 솔버 혼재) |
+| `德州扑克软件` / `德扑软件` | 10 | — | 10 | 20(軟體) | 본문 흡수 |
+| `德州扑克教学` | 10 | — | 50~70 | 480(敎學) | 🟢 12m +38%(HK) — H2·FAQ 흡수. TW 480은 zh-hant 몫 |
+| `德州扑克训练` / `德州扑克练习(软件)` | 10 | — | 10 | — | 트레이너 절 |
+| `德州扑克范围` | 10 | — | 10 | 70(範圍) | 플랍 이후 한정(§4) |
+| `德州扑克胜率计算器` / `胜率计算器` | 10 | 20 | 40 | 260/🔴1,900 | 胜率计算器 절이 받는다. 🔴 TW 1,900은 §1-③ 의도 함정 — `德州撲克勝率計算器` 260만 포커 |
+| `免费德州扑克` | 10 | — | 10 | — | ⚠ 무료 «게임» 의도 혼재 가능 — 훅 카피로만, 조준 안 함 |
+| `德州扑克概率计算` | 10 | — | — | — | FAQ 흡수 |
+
+### 볼륨 null/0 실측 (죽은 문자열 — 수요 0 단정은 금지)
+
+`扑克 solver`·`扑克 gto`(단독)·`手牌范围`·`扑克范围`·`翻牌后`·`翻后策略`·`德州扑克 翻牌后`·
+`德州扑克求解器`·`扑克求解器`·`德州扑克gto策略`·`德州扑克工具`·`起手牌範圍`·`翻牌後策略`·`GTO敎學`.
+→ **`翻牌后`(포스트플랍) 계열 전멸**은 es(`postflop` 0)·pt(`pós-flop` 0)와 같은 그림 — 개념은 쓰되 조준하지 않는다.
+
+### 제외 (이유와 함께)
+
+| 키워드 | 볼륨 | 왜 |
+|---|---:|---|
+| `gto wizard` | 480~4,400 | 브랜드(참고). `piosolver`·`texas solver`·`wasm postflop`도 동일 |
+| `勝率計算器`(TW) | 1,900 | 🔴 게임 계산기 의도(§1-③) |
+| `德州扑克在线`·`德州扑克游戏`·`德州扑克app` | 110·30·70 | 게임 플레이 의도 — 조준 금지 |
+| `德州扑克规则`·`德州扑克大小` | 170·90 | 🔴 `zh/texas-holdem-rules-for-beginners`·`zh/holdem-hand-rankings` 소유 |
+| RTA·봇 계열 | — | 🔴 부정행위 축(§1-⑥) |
+
+---
+
+## 3. SERP 실측 (google · 2026-08-24 · DFS SERP API)
+
+### 🟢🟢 `poker solver`·`gto solver`(SG) — «돌아가는» 무료 브라우저 솔버가 top-10에 0개 (5개 언어 연속 같은 빈자리)
+
+`poker solver`: Reddit(1위) · 앱스토어 ×2 · gtowizard(구독) · medium · solvers.poker(리뷰) · upswing ·
+pokerstrategy · deepsolver(구독).
+`gto solver`: gtowizard(1위) · **Reddit 「Completely Free GTO Trainer/Solver」(2위)** · 앱 ×2 · blog.gtowizard ·
+hudstore(리뷰) · simplepoker · poker.academy.
+**PAA 축어**: `What is the cheapest poker solver?` · `Which GTO solver is better, PioSolver or GTO Wizard?` ·
+`How to use poker solver?` · `Is playing gto profitable?`
+→ **무료 수요가 Reddit 스레드로만 채워지고 있다**(de와 동형) = 우리 자리.
+
+### `德州扑克 gto`(SG) — 중문 SERP는 «개념글 + 앱»뿐, 도구형 중문 페이지 공백
+
+gtowizard(1위) · **NTPoker GTO扑克训练器**(Play 앱) · 知乎 ×2(「GTO是什么？」·「四象限法则」) ·
+Reddit 중문 스레드 · YouTube(번체) · vocus.cc(번체 「學習GTO，但不要死記硬背」) · freebetrange(중문 「GTO 翻前范围构建与训练工具」) ·
+happypoker.tw(번체). → **번체 페이지가 간체 SERP에 그대로 랭크**(§1-⑤ 방증).
+「지금 바로 돌려 보는」 중문 페이지는 0 — 개념은 知乎가, 도구는 영어 앱이 갖고 있고 **둘을 잇는 자리가 비어 있다**.
+
+### `gto poker`(SG) — EN 권위 지배
+
+gtowizard · Reddit · pokercode · upswing · YouTube · pokercoaching · splitsuit · cornell.
+**PAA**: `What does gto in poker mean?` · `Is playing gto profitable?` · `Is gto poker worth it?`
+→ 정면 승부는 어렵고, **중국어 독자용 페이지라는 결이 다른 답**으로 진입한다(태그·제목에는 편입).
+
+### 무료 축의 실질 경쟁자 = **TexasSolver** (WebSearch 실측)
+
+중국산 오픈소스 솔버(bupticybee) — **중문 소개 페이지 보유** · 知乎 「[开源] 一个比piosolver还快的德州扑克GTO solver」 ·
+CSDN 소개글 다수 · 中扑网 「职牌免费分享GTO软件」. **단 전부 «다운로드·설치형»이다**(Desktop Postflop 포함).
+→ **훅 = «免费 + 打开浏览器就能用(무설치) + 无需注册»** — 설치형 무료(TexasSolver)와 구독형 웹(GTO Wizard)
+사이의 빈자리. 커뮤니티 실사용 용어: **求解器**(知乎·CSDN 축어)와 **solver**(라틴) 병용 — 앱 표기(求解器)와 일치.
+
+---
+
+## 4. 카니발 — zh 43편 전수 grep (2026-08-24)
+
+| 축 | 소유자 | 랜딩의 처리 |
+|---|---|---|
+| **`GTO翻前图`·起手牌表(프리플랍)** | 🔴 `zh/holdem-starting-hands-chart`(태그 「GTO翻前图」 + desc 「GTO对新手图的取舍」) | **프리플랍 표는 그 글.** 랜딩은 포스트플랍으로 가른다 — **첫 내부링크** |
+| `德州扑克策略` 계열 | 🔴 `zh/holdem-strategy`(seoTitle+태그) | 가져가지 않는다. 🪶 그 글의 GTO 언급 2회는 참조점 설명뿐, 태그에 GTO 없음 — ja·de 「명목 태그」보다도 얇다. **GTO 축은 완전 무주공산 → 랜딩이 가져간다** |
+| `3bet 范围`·`线性和极化范围` | `zh/holdem-3bet`(태그) | 프리플랍 3벳 축 침범 금지 |
+| `c-bet` 계열 | `zh/holdem-continuation-bet`(태그) | 무관 — 본문 링크로 |
+| `胜率计算/概率` | `zh/holdem-equity`(胜率怎么算)·`zh/holdem-probability` | 개념 소유는 그 글들. 랜딩은 **도구(계산기·범위 단위 계산)** 축만 |
+| **`gto poker`·`poker solver`·`gto solver`·`求解器`·`德州扑克 gto`·`翻牌后` 축** | 🟢 **소유자 0**(43편 seoTitle·태그 전수) | **랜딩이 가져간다** |
+
+🪶 solver/GTO/求解器 «언급»은 10편 33곳이지만 어느 글도 조준축(제목·태그)으로 갖고 있지 않다.
+
+---
+
+## 5. 🔴 앱 실측 (`?lang=zh` · Playwright · 2026-08-24)
+
+13스팟 축어·결함 판정 본체 = **`docs/solver-app-verbatim-5langs-2026-08-24.md`** §5(zh)·§6(zh-hant). 골격만:
+
+- `<html lang="zh-Hans">` · title **`HoldemMaster GTO 求解器 — 免费在线德州扑克 GTO Solver`**
+- meta desc `免费 GTO 求解器，打开浏览器就能用，无需安装。按手牌范围、公共牌和下注尺寸计算德州扑克（德扑）翻后策略。`
+- 히어로 **`GTO 策略，打开浏览器就能算。`** / **`不用装软件，也不用花钱。`**
+- 네비 `教学案例 ⚡ 立刻看` · `GTO 训练器 EV 评分` · `翻前范围表 开池·防守` · `胜率计算器 Equity`
+- 사이드바 `① OOP 范围 ② IP 范围 ③ 公共牌 ④ 下注尺寸 决策树 ⑤ 运行求解器`
+- 특징 4칸: `免费 — 全部功能，不限次数` · `离线学习` · `算得快 — 多线程` · **`GTO 训练器 — 做题，按占底池的 EV 损失打分`** 🟢(팟 대비 정정본)
+- 🔴 **소수 구분자 = 마침표**(de 쉼표와 다름) · 수량 단위 `bb` 소문자 표기 확인
+- 🔴 앱 결함 4자리: **④ 콜러 우위(8언어 전건)** · ⑦ RP-19+조작 지시 · ⑧ RP-03 · **⑩ RP-17 결함형(「整个」— zh·zh-hant·ko 3언어 잔존)**
+  → **랜딩은 전부 §4-B 정정본을 쓴다.** 앱 용어 solver = **求解器**(커뮤니티 실사용과 일치 · §3)
+
+---
+
+## 6. 조준 확정 (발행 시 갱신)
+
+- **1차**: `gto poker`/`poker gto`(170~390) — 제목·태그 · `poker solver`(20~40)+`gto solver`(30) — 제목·어순 정본 ·
+  `德州扑克 gto`(10·TW 140) — H1 자연문
+- **2차**: `求解器`(용어 병기) · `gto是什么(意思)`(FAQ 정의) · `德州扑克教学`(H2) · `德州扑克训练/练习`+`gto trainer`(트레이너 절) ·
+  `德州扑克范围`(플랍 이후 한정) · `德州扑克胜率计算器`(계산기 절) · `德州扑克软件`(본문) · PAA(최저가 솔버·GTO 수익성)
+- **제외**: §2 제외표 전부
+- **훅**: **«免费 · 打开浏览器就能用 · 无需注册/无需下载安装»** — 설치형 무료(TexasSolver)와
+  구독 웹(GTO Wizard) 사이의 빈자리. 경쟁 top-10 제목에 이 조합 없음
+- **zh-hant 회차 인계**: TW는 DFS로만(§1-④) · `德州撲克 gto` 140·`gto是什麼` 70·`德州撲克範圍` 70·`求解器` 70·
+  `德州撲克敎學` 480(단 敎學 일반 축은 카니발 확인 필요) · 🔴 `勝率計算器` 1,900 조준 금지(§1-③) ·
+  HK 값은 §0 표 참조

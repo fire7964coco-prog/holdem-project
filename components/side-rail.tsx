@@ -161,6 +161,19 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
     { href: "/de/solver",      icon: "🧠", label: "GTO Solver" },
     { href: "/de/tournaments", icon: "🏆", label: "Turniere" },
   ],
+  /**
+   * ★2026-08-24 — `/zh/solver` 신설과 함께 추가(7번째 솔버 랜딩). 라벨은 전부 검증된 값에서
+   *   축어 복사: "博客" = CHROME.zh.blogLabel(lib/intl.ts) · "GTO 求解器"는 솔버 본체를
+   *   `?lang=zh`로 열어 읽은 축어(`<title>` = "HoldemMaster GTO 求解器 — 免费在线德州扑克
+   *   GTO Solver") · "锦标赛" = ZH_CLUSTERS tournament pillarLabel(lib/pillar-clusters.ts).
+   *   🔴 라벨은 «검색 축»이 아니라 «메뉴 이름»이다 — «GTO·solver 단독 금지» 규율(뱅크 §1)과
+   *      층이 다르다.
+   */
+  zh: [
+    { href: "/zh/blog",        icon: "📚", label: "博客" },
+    { href: "/zh/solver",      icon: "🧠", label: "GTO 求解器" },
+    { href: "/zh/tournaments", icon: "🏆", label: "锦标赛" },
+  ],
 };
 
 /**
@@ -169,7 +182,8 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
  * ja "詳細ガイド" → ガイド · es "Guía completa" → Guías(복수). 새로 번역하지 않았다.
  * de도 같은 규칙: guideLink "Zum Guide" → "Guides"(독일 포커 매체가 실제로 쓰는 차용어).
  */
-const HUB_HEADING: Record<string, string> = { en: "Guides", ja: "ガイド", es: "Guías", de: "Guides" };
+// zh도 같은 규칙: BOARD_STRINGS.zh guideLink "详细指南" → "指南"(ja 詳細ガイド→ガイド와 동형).
+const HUB_HEADING: Record<string, string> = { en: "Guides", ja: "ガイド", es: "Guías", de: "Guides", zh: "指南" };
 
 /**
  * 그 로케일의 허브 메뉴 — **좌측 레일과 모바일 상단 탭이 같은 목록을 쓴다.**
