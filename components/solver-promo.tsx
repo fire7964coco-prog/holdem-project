@@ -86,6 +86,15 @@ const COPY = {
     desc: "Calcule os seus ranges de poker depois do flop com um solver GTO no navegador — sem instalar, sem cadastro e grátis",
     cta: "Abrir o solver →",
   },
+  // ★2026-08-24 — `/de/solver` 신설과 함께 추가. 표기는 앱 de 축어(«GTO-Strategie, direkt im
+  //   Browser.» · «Nichts zu installieren»)와 랜딩 훅(«ohne Anmeldung»)에서 왔다.
+  de: {
+    href: "/de/solver",
+    badge: "♠ Kostenloses Tool",
+    title: "GTO Solver",
+    desc: "Berechne deine Poker Ranges nach dem Flop mit einem GTO Solver im Browser – ohne Installation, ohne Anmeldung, kostenlos",
+    cta: "Solver öffnen →",
+  },
 } as const;
 
 export type SolverPromoLocale = keyof typeof COPY;

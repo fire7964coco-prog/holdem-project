@@ -67,7 +67,8 @@ const LOCALE_HUB_ROUTES: Record<string, readonly string[]> = {
   pt: ["/pt/blog", "/pt/solver"],
   // de — 2026-08-10 신설. 독일어 지역·일정 검색 수요(LDA 4~9)를 받을 랜딩이 없었다.
   //      근거: docs/keyword-bank/de-core-volumes.md 시드⑫
-  de: ["/de/blog", "/de/tournaments"],
+  // ★2026-08-24 — `/de/solver` 신설과 함께 추가(6번째 솔버 랜딩).
+  de: ["/de/blog", "/de/solver", "/de/tournaments"],
 };
 
 /**

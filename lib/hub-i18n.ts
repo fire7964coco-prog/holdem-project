@@ -103,7 +103,25 @@ const PT: HubLabels = {
   languages: "🌐 Idiomas da comunidade",
 };
 
-const MAP: Partial<Record<SecondaryLocale, HubLabels>> = { en: EN, ja: JA, es: ES, pt: PT };
+/**
+ * ★2026-08-24 신설 — `/de/solver` 랜딩과 함께. 값은 전부
+ *   `app/community/community-client.tsx`의 `LABELS.de`에서 **축어 그대로** 옮겼다
+ *   (login/writePost/trendingTitle/eventBadge/eventTitle/eventDesc/eventDrawSchedule/
+ *    eventButton/communityLang 9키 대조 완료). **다시 번역하지 마라** — 위 ⚠ 경고 참조.
+ */
+const DE: HubLabels = {
+  login: "Anmelden",
+  write: "✏️ Schreiben",
+  trending: "🔥 Trends dieser Woche",
+  eventBadge: "🎰 Event · Demnächst",
+  eventTitle: "6 Zahlen wählen\nGeschenkkarten gewinnen!",
+  eventDesc: "3 Treffer → $30 · 4 → $200\n5 → $1,000",
+  eventSchedule: "🔗 Jeden Sonntag 19 Uhr KST\nAuto-Ziehung per Bitcoin Block Hash",
+  eventButton: "Event ansehen →",
+  languages: "🌐 Community-Sprachen",
+};
+
+const MAP: Partial<Record<SecondaryLocale, HubLabels>> = { en: EN, ja: JA, es: ES, pt: PT, de: DE };
 
 /** locale이 null/undefined면 한국어 */
 export function hubLabels(locale: SecondaryLocale | null | undefined): HubLabels {

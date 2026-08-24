@@ -151,6 +151,14 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
    */
   de: [
     { href: "/de/blog",        icon: "📚", label: "Blog" },
+    /**
+     * ★2026-08-24 — `/de/solver` 신설과 함께 추가. 라벨 "GTO Solver"는 **지어낸 것이 아니라**
+     *   솔버 본체를 `?lang=de`로 열어 읽은 축어에서 왔다
+     *   (`<title>` = "HoldemMaster GTO Solver – Kostenloser Online-Solver für Texas Hold’em").
+     *   🔴 라벨은 «검색 축»이 아니라 «메뉴 이름»이다 — 「`Solver`를 `Poker`와 붙여 쓴다」는
+     *      규율(뱅크 §1-①. 독일에서 단독 `Solver`는 엑셀이다)과 **층이 다르다.**
+     */
+    { href: "/de/solver",      icon: "🧠", label: "GTO Solver" },
     { href: "/de/tournaments", icon: "🏆", label: "Turniere" },
   ],
 };
