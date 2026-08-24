@@ -90,7 +90,9 @@ export const SOLVER_FAQ_EN: FaqItem[] = [
   },
   {
     q: "Why is grading relative to the pot?",
-    a: "Because the same 0.05bb is a serious error in a small pot and trivial in a large one. Absolute-bb grading made 3-bet pots look worse than they were, so grading switched to a percentage of the pot in August 2026. In a 5.5bb single raised pot the cutoffs work out to 0.02bb and 0.06bb; in a 22.5bb 3-bet pot they are 0.08bb and 0.23bb.",
+    // 🔴 M-046 E-1 정정(2026-08-24) — 종전의 «같은 0.05bb» 예시는 자기모순이었다(0.05÷5.5=0.91%는
+    //    자기가 적은 경계로 «acceptable» 구간). solver-client의 RP-06 정정본(0.08bb)과 같은 수치로 맞췄다.
+    a: "Because the same 0.08bb is 1.45% of a 5.5bb pot — a spot to review — and just 0.36% of a 22.5bb pot, which is acceptable. Absolute-bb grading made 3-bet pots look worse than they were, so grading switched to a percentage of the pot in August 2026. In a 5.5bb single raised pot the cutoffs work out to 0.02bb and 0.06bb; in a 22.5bb 3-bet pot they are 0.08bb and 0.23bb.",
   },
   {
     q: "Where is my study progress saved?",

@@ -223,7 +223,10 @@ const SPOT_GROUPS = [
       { board: "9♥8♥7♣", name: "ミドルのコネクトボード（2トーン）", note: "シングルレイズポットで唯一、BBが本当にリードするボード。BBの先制ベットは23.7%です（レンジ優位は依然としてBTN側 — エクイティ48.5%対51.5%）" },
       { board: "Q♠9♠2♠", name: "モノトーンボード（同スート3枚）", note: "大きなベットが消えます。完成したフラッシュでさえ頻繁にチェックします" },
       { board: "6♣6♦3♥", name: "ペアボード", note: "どちらのレンジもボードと噛み合わないため、ブラフの比率が上がります" },
-      { board: "6♠5♥2♦", name: "ロー・レインボーボード", note: "オーバーカードの戦い。BBがチェックレイズで抵抗してくるボードです" },
+      // 🔴 M-045 RP-19 정정(2026-08-24) — 「BB가 체크레이즈로 저항해 온다」(구 문구)는 화면에 없는 값이다.
+      //    KO ⑦ 239줄: 「교육 예제는 플랍의 첫 액션(BB 차례)까지만 … BB의 체크레이즈 빈도가 그 화면에는 없습니다」.
+      //    §4-B ⑦의 화면값은 체크 96.8 · 벳 3.2뿐. 앱 축어로 되돌리지 마라.
+      { board: "6♠5♥2♦", name: "ロー・レインボーボード", note: "オーバーカードの戦い。チェックレイズを設計するためのスポットです — 画面のBBの最初のアクションはチェック96.8%・ベット3.2%" },
     ],
   },
   {
@@ -421,18 +424,27 @@ export default function SolverClientJa() {
           <strong className="text-foreground">10チップ = 1bb</strong> と決めてください
           （ポット55なら5.5bb）。学習スポットとトレーナーは、このスケールで自動的に換算されます。
         </p>
+        {/* 🔴 es 적대검수 처방 소급(2026-08-24) — 표 앞에 소유 글 링크 + 헤더를 도구 조작 라벨로.
+            랜딩이 「또 하나의 프리플랍 레인지 표」로 읽히지 않게 하는 처방(es 08-22 · en과 같은 날 반영).
+            ⚠ 「学習スポットが使っているレンジそのものです」는 회귀 앵커다 — 문구를 지우지 마라. */}
         <p className="mt-4 text-sm text-muted-foreground">
-          ゼロから組むのがいちばん遠回りなので、下の100bb BTN vs BB の標準レンジを①と②に
-          貼り付けてください。学習スポットが使っているレンジそのものです。
+          ゼロから組むのがいちばん遠回りです。ポジション別のオープンレンジは
+          <Link href="/ja/blog/holdem-starting-hands-chart" className="font-semibold text-primary hover:underline">
+            スターティングハンド表
+          </Link>
+          にあります。下の2つのレンジは別物で、Single Raised Pot の
+          学習スポットが使っているレンジそのものです（BTN vs BB）。①と②にそのまま貼り付けてください。
         </p>
-        <Table head={["席", "レンジ"]} rows={STARTER_RANGES.map(([seat, r]) => [seat, <code key={seat} className="text-xs break-all">{r}</code>])} />
+        <Table head={["貼り付け先", "レンジ"]} rows={STARTER_RANGES.map(([seat, r]) => [seat, <code key={seat} className="text-xs break-all">{r}</code>])} />
       </section>
 
       {/* ── 결과 화면 읽는 법 ────────────────────────────────────────── */}
       <section className="mt-12">
         <h2 className="text-xl font-bold">結果画面の見方</h2>
         <p className="mt-2 text-sm text-muted-foreground">
-          結果画面には4つの作業エリアがあります。上部の
+          {/* 🔴 M-046 E-3 소급(2026-08-24) — 열거는 상단1+매트릭스1+우측3=다섯, READ_SCREEN도 5행.
+              「4つ」로 되돌리지 마라(앱 도움말의 4구역은 우측을 하나로 묶은 셈법이다). */}
+          結果画面には5つの作業エリアがあります。上部の
           <strong className="text-foreground">場面を切り替えるアクションバー</strong>、左の
           <strong className="text-foreground">13×13戦略マトリクス</strong>、そして右側の
           <strong className="text-foreground">頻度タイル・ハンド分類・詳細テーブル</strong>です。

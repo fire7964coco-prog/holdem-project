@@ -186,7 +186,7 @@ const STARTER_RANGES: [string, string][] = [
 /**
  * 결과 화면 읽는 법.
  * 🔴 **행이 다섯이면 본문도 «다섯»이라고 쓴다.** ko·en·ja·es 네 랜딩이 전부 「네 구역」이라 적고
- *    다섯을 세고 있다(es `cuatro zonas`) — 소급 대상으로 핸드오프에 올려 뒀다.
+ *    다섯을 세고 있었다 — ✅ 2026-08-24 네 랜딩 전부 「다섯」으로 소급 완료(M-046 E-3).
  *    **pt에서 그 오류를 복제하지 않는다.**
  * 🪶 세 번째 패널의 이름은 앱 축어 «Mãos / Draws»다(스팟 해설이 그렇게 부른다).
  */
@@ -243,11 +243,14 @@ const SPOT_GROUPS = [
     label: "Single Raised Pot — BTN vs BB (fundamentos)",
     cond: "OOP: BB (caller) · IP: BTN (open-raiser) · Pote 5,5bb · Stack 97,5bb",
     items: [
-      { board: "A♥7♦2♣", name: "Board seco A-high", note: "O spot clássico de vantagem de range — o ás acerta em cheio no range de quem abriu, e o BTN dá um c-bet pequeno com um range amplíssimo depois do check do BB" },
+      // 🔴 M-046 P-2 정정(2026-08-24) — 「BB 체크 이후 BTN이 작은 C벳을 넓게 친다」는 화면이 주지 않는다
+      //    (교육 예제는 플랍 첫 액션 = BB 차례에서 멈춘다 · KO ⑦ 239줄). 화면값(체크 98,2%)으로 교체.
+      { board: "A♥7♦2♣", name: "Board seco A-high", note: "O spot clássico de vantagem de range — o ás acerta em cheio no range de quem abriu, e o BB dá check em 98,2%" },
       { board: "K♠8♦3♣", name: "Board seco K-high", note: "Também favorece o BTN, mas os checks aumentam um pouco — compare com o board A-high e tente dizer por quê" },
       // 🟢 앱 pt 축어가 이미 정정본이다(es는 앱이 «ambos rangos conectan fuerte»라 우리가 고쳐야 했다).
       //    §4-B ③: BB의 EQR 77.9%로 13스팟 최저, BTN 119.4%, BB 첫 액션 벳 0.1%(= 체크 99.9%).
-      { board: "Q♠J♦T♠", name: "Board Broadway conectado, two-tone", note: "Um board que parece conectar com os dois ranges, mas o BB realiza menos equity aqui do que em qualquer um dos 13 spots — 77,9% contra 119,4% do BTN — e dá check em 99,9%" },
+      // 🔴 M-046 P-1 정정(2026-08-24) — 편 수 하드코딩 금지(RP-08). 「dos 13 spots」 → 「da série」.
+      { board: "Q♠J♦T♠", name: "Board Broadway conectado, two-tone", note: "Um board que parece conectar com os dois ranges, mas o BB realiza menos equity aqui do que em qualquer outro spot da série — 77,9% contra 119,4% do BTN — e dá check em 99,9%" },
       // 🔴🔴 M-035 결함 1·2 정정 — 앱 pt는 아직 «favorece o caller … c-bet do BTN despenca»다.
       //    ▸ 「콜러 우위」는 **시리즈가 이름까지 대며 폐기한 명제**다(KO ④ `holdem-donk-bet-strategy`:
       //      「레인지 우위가 BB로 넘어간 것은 아니다 — 48.5% 대 51.5%」 · EN ④ FAQ 「→ No.」).
@@ -257,7 +260,10 @@ const SPOT_GROUPS = [
       { board: "9♥8♥7♣", name: "Board médio conectado, two-tone", note: "O único board de pote simples em que o BB realmente lidera: ele aposta primeiro em 23,7% das vezes (a vantagem de range continua sendo do BTN — equity de 48,5% contra 51,5%)" },
       { board: "Q♠9♠2♠", name: "Board monotone", note: "As apostas grandes somem e dão lugar a apostas pequenas e checks — repare com que frequência até um flush fechado só dá check" },
       { board: "6♣6♦3♥", name: "Board pareado", note: "Ninguém conecta com este board, então a proporção de blefes sobe — use a tabela de detalhes para achar quais mãos apostam como blefe" },
-      { board: "6♠5♥2♦", name: "Board baixo e rainbow", note: "Uma guerra de overcards. O BB dá check-raise com muita frequência nesta textura — siga a faixa superior depois de uma aposta para ver as respostas" },
+      // 🔴 M-045 RP-19 + M-046 P-3 정정(2026-08-24) — 결함이 한 문장에 둘이었다:
+      //    ① 「BB가 체크레이즈를 아주 자주 한다」(구 문구)는 화면에 없는 값(KO ⑦ 239줄 · §4-B ⑦ = 체크 96,8 · 벳 3,2뿐)
+      //    ② 「벳 다음의 상단 띠를 따라가 보라」는 화면이 주지 않는 것을 «보라»고 지시했다(교육 예제는 플랍 첫 액션에서 멈춘다).
+      { board: "6♠5♥2♦", name: "Board baixo e rainbow", note: "Uma guerra de overcards. O spot para desenhar o check-raise — na tela, a primeira ação do BB é 96,8% de check e 3,2% de aposta" },
     ],
   },
   {

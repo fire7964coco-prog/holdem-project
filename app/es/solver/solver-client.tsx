@@ -130,6 +130,8 @@ const SPEC: [string, string][] = [
   ["Alcance", "Postflop heads-up (flop, turn y river)"],
   ["Dónde se calcula", "En tu dispositivo, no en un servidor nuestro"],
   ["Compatibilidad", "Navegadores modernos — Windows, macOS, Linux y móvil"],
+  // ⚠ 이 열거는 앱 셀렉터(8개: ko,en,ja,es,pt,de,zh,zh-hant)와 1:1이 아니다 — 산문에서
+  //    간체·번체를 「chino」 하나로 묶었다(숫자를 주장하지 않으므로 허용 · M-046 §3 판정).
   ["Idioma", "Español (también en coreano, inglés, japonés, portugués, alemán y chino)"],
   ["Motor", "WASM Postflop de código abierto (AGPL-3.0) · fuente modificada publicada"],
 ];
@@ -233,7 +235,9 @@ const SPOT_GROUPS = [
       { board: "9♥8♥7♣", name: "Conectado medio, two-tone", note: "El único board de bote simple donde BB lidera de verdad: apuesta primero el 23,7% (la ventaja de rango sigue siendo de BTN — equity 48,5% contra 51,5%)" },
       { board: "Q♠9♠2♠", name: "Board monotone", note: "Las apuestas grandes desaparecen — fíjate con qué frecuencia incluso un color hecho se limita a pasar" },
       { board: "6♣6♦3♥", name: "Board pareado", note: "Nadie conecta con este board, así que sube la proporción de faroles — ni siquiera BB apuesta primero (solo el 3%)" },
-      { board: "6♠5♥2♦", name: "Board bajo y rainbow", note: "Guerra de sobrecartas. BB hace check-raise con mucha frecuencia en esta textura" },
+      // 🔴 M-045 RP-19 정정(2026-08-24) — 「BB가 체크레이즈를 자주 한다」(구 문구)는 화면에 없는 값이다.
+      //    KO ⑦ 239줄: 「BB의 체크레이즈 빈도가 그 화면에는 없습니다」. §4-B ⑦ = 체크 96.8 · 벳 3.2뿐.
+      { board: "6♠5♥2♦", name: "Board bajo y rainbow", note: "Guerra de sobrecartas. El spot para diseñar el check-raise — en pantalla, la primera acción del BB es 96,8% check y 3,2% apuesta" },
     ],
   },
   {
@@ -502,7 +506,9 @@ export default function SolverClientEs() {
       <section className="mt-12">
         <h2 className="text-xl font-bold">Cómo se leen los rangos en el póker postflop — la pantalla de resultados</h2>
         <p className="mt-2 text-sm text-muted-foreground">
-          La pantalla tiene cuatro zonas de trabajo: la{" "}
+          {/* 🔴 M-046 E-3 소급(2026-08-24) — 열거는 상단1+매트릭스1+우측3=다섯, READ_SCREEN도 5행.
+              「cuatro」로 되돌리지 마라. */}
+          La pantalla tiene cinco zonas de trabajo: la{" "}
           <strong className="text-foreground">barra de acciones</strong> arriba, la{" "}
           <strong className="text-foreground">matriz 13×13</strong> a la izquierda y, a la derecha, las{" "}
           <strong className="text-foreground">frecuencias, la clasificación de manos y la tabla de

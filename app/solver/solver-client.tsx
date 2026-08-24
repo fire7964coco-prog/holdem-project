@@ -75,7 +75,9 @@ const STEPS = [
   { n: "⑤", title: "계산 실행", desc: "내 컴퓨터에서 몇 초~몇 분 계산합니다. 완료되면 결과 탭에서 전략 매트릭스와 EV·에퀴티·액션 빈도를 봅니다." },
 ];
 
-/** 결과 화면 읽는 법 — 솔버 도움말의 4구역 구분을 그대로 옮겼다(라이브 축어). */
+/** 결과 화면 읽는 법 — 내용은 솔버 도움말에서 옮겼다(라이브 축어).
+ *  🔴 M-046 E-3 소급(2026-08-24): 앱 도움말은 「4구역」이라 묶지만(우측을 하나로) 이 열거는
+ *  상단1+매트릭스1+우측3=다섯이고 배열도 5행이다 — 본문은 「다섯 구역」. 「네 구역」으로 되돌리지 마라. */
 const READ_SCREEN = [
   ["상단 스트립", "액션 흐름(플랍 → 턴 → 리버)의 장면 선택기", "클릭한 시점의 전략으로 이동한다. 회색뿐이면 상대 차례를 보고 있는 것"],
   ["왼쪽 13×13 매트릭스", "169개 핸드 · 칸 속 색 비율 = 액션 비율", "붉은 계열이 벳·레이즈(진할수록 큰 벳), 초록이 체크·콜, 꺼진 칸은 레인지에 없는 핸드"],
@@ -334,7 +336,7 @@ export default function SolverClient() {
       <section className="mt-12">
         <h2 className="text-xl font-bold">결과 화면은 어떻게 읽나요?</h2>
         <p className="mt-2 text-sm text-muted-foreground">
-          결과 화면은 네 구역입니다 — 위쪽 <strong className="text-foreground">장면 선택기</strong>,
+          결과 화면은 다섯 구역입니다 — 위쪽 <strong className="text-foreground">장면 선택기</strong>,
           왼쪽 <strong className="text-foreground">13×13 전략 매트릭스</strong>, 오른쪽의{" "}
           <strong className="text-foreground">액션 빈도 타일·핸드 분류·상세 표</strong>. 왼쪽에서
           «어떤 핸드가 무엇을 하는지»를 보고, 오른쪽에서 «레인지 전체로는 몇 %인지»를 읽는

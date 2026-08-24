@@ -155,7 +155,10 @@ const SPOT_GROUPS = [
     items: [
       { board: "A♥7♦2♣", name: "Dry Ace-High Board", slug: "a-high-board-cbet", note: "The textbook range-advantage flop — the ace smashes the opener's range" },
       { board: "K♠8♦3♣", name: "Dry King-High Board", slug: "k-high-board-cbet", note: "Still favors the opener, but checks creep up. Compare it with the ace" },
-      { board: "Q♠J♦T♠", name: "Connected Broadway, Two-Tone", slug: "broadway-board-strategy", note: "Both ranges connect hard; big bets and check-raises come alive" },
+      // 🔴 M-046 E-4 정정(2026-08-24) — 종전 문구는 「big bets와 체크레이즈가 살아난다」였는데,
+      //    ③의 BB 첫 액션은 체크 99.9% · 리드 0.1%(§4-B)라 그 둘은 화면이 주지 않는 다음 노드다.
+      //    KO는 M-025 ③ N1에서 같은 것을 고쳤고 EN 랜딩이 그 고침을 못 받았었다. 수치로 쓴다(pt 선례).
+      { board: "Q♠J♦T♠", name: "Connected Broadway, Two-Tone", slug: "broadway-board-strategy", note: "It looks like it hits both ranges, but the BB realizes the least equity of any spot in the series — 77.9% against BTN's 119.4% — and checks 99.9%" },
       // 🔴 M-038 RP-01 정정(2026-08-23) — 종전 문구는 이 보드를 «콜러에게 유리한 텍스처»로 불렀는데,
       //    시리즈 ④가 이름까지 대며 폐기한 명제다. KO ④ `lib/posts/donk-bet-strategy.ts` 축어:
       //    「레인지 우위가 BB로 넘어간 것은 아니다 — 에퀴티는 48.5% 대 51.5%로 여전히 BTN이 앞선다」 ·
@@ -166,7 +169,10 @@ const SPOT_GROUPS = [
       { board: "6♣6♦3♥", name: "Paired Board", slug: "paired-board-strategy", note: "Nobody connects, so the bluffing share goes up" },
       // ⚠ 「peaks」(=13개 중 최대)로 쓸 뻔했다. 앱은 "BB check-raises a lot on this texture"라고만
       //    적고 최대라고 하지 않는다 — 13개를 비교해 확인하지 않은 주장은 쓰지 않는다.
-      { board: "6♠5♥2♦", name: "Low Rainbow Board", slug: "low-board-check-raise", note: "An overcard war — the texture where the big blind check-raises a lot" },
+      // 🔴 M-045 RP-19 정정(2026-08-24) — 「체크레이즈를 많이 한다」 자체가 화면에 없는 값이다.
+      //    KO ⑦ 239줄: 「교육 예제는 플랍의 첫 액션(BB 차례)까지만 … BB의 체크레이즈 빈도가 그 화면에는 없습니다」.
+      //    §4-B ⑦이 주는 값은 체크 96.8 · 벳 3.2뿐이다. 앱 축어(위 주석)로 되돌리지 마라.
+      { board: "6♠5♥2♦", name: "Low Rainbow Board", slug: "low-board-check-raise", note: "An overcard war — the spot for designing the check-raise: on screen the BB's first action is 96.8% check, 3.2% bet" },
     ],
   },
   {
@@ -382,18 +388,28 @@ export default function SolverClientEn() {
           <strong className="text-foreground">10 chips = 1bb</strong> (a pot of 55 is 5.5bb). Study
           spots and the trainer convert on that scale automatically.
         </p>
+        {/* 🔴 es 적대검수 처방 소급(2026-08-24) — 표 앞에 소유 글 링크 + 헤더를 도구 조작 라벨로.
+            랜딩이 「또 하나의 프리플랍 레인지 표」로 읽히지 않게 하는 처방이다(es는 08-22 반영). */}
         <p className="mt-4 text-sm text-muted-foreground">
-          Starting from nothing is the slowest way in, so paste these standard 100bb BTN-vs-BB ranges
-          into ① and ② — they are the ranges the study spots use:
+          Building both ranges from scratch is the slow way in. The opening ranges by position live in
+          the{" "}
+          <Link href="/en/hand-chart" className="font-semibold text-primary hover:underline">
+            starting hand chart
+          </Link>
+          . The two ranges below are a different thing:{" "}
+          <strong className="text-foreground">the ones the Single Raised Pot study spots use</strong>{" "}
+          (BTN vs BB), ready to paste into ① and ②.
         </p>
-        <Table head={["Seat", "Range"]} rows={STARTER_RANGES.map(([seat, r]) => [seat, <code key={seat} className="text-xs break-all">{r}</code>])} />
+        <Table head={["Paste into", "Range"]} rows={STARTER_RANGES.map(([seat, r]) => [seat, <code key={seat} className="text-xs break-all">{r}</code>])} />
       </section>
 
       {/* ── 결과 화면 읽는 법 ────────────────────────────────────────── */}
       <section className="mt-12">
         <h2 className="text-xl font-bold">How do you read the results screen?</h2>
         <p className="mt-2 text-sm text-muted-foreground">
-          The results screen has four working areas: the{" "}
+          {/* 🔴 M-046 E-3(2026-08-24) — 열거하면 상단1 + 매트릭스1 + 우측3 = 다섯이고 READ_SCREEN도 5행이다.
+              앱 도움말은 「4구역」이라 묶지만(우측을 하나로) 이 문단은 다섯을 센다 — 「four」로 되돌리지 마라. */}
+          The results screen has five working areas: the{" "}
           <strong className="text-foreground">scene picker</strong> along the top, the{" "}
           <strong className="text-foreground">13×13 strategy matrix</strong> on the left, and on the
           right the <strong className="text-foreground">frequency tiles, hand categories and detail
@@ -500,8 +516,10 @@ export default function SolverClientEn() {
           an action, and it grades you.
         </p>
         <p className="mt-3 text-sm text-muted-foreground">
+          {/* 🟡 M-046 E-6(2026-08-24) — 같은 페이지의 faq·page가 「relative to the pot」을 붙이는데
+              이 문단만 층이 어긋나 있었다. 팟 대비를 명시해 맞췄다(값 자체가 bb인 것과 합격선 기준은 다른 층). */}
           Grading is not right or wrong, but by{" "}
-          <strong className="text-foreground">EV loss</strong>. Because GTO
+          <strong className="text-foreground">EV loss relative to the pot</strong>. Because GTO
           mixes actions, picking the lower-frequency option is not automatically a mistake — what
           matters is how much expected value the choice gave up. Pick an action and the trainer shows
           every action&apos;s frequency and EV alongside the cost of yours.
@@ -626,8 +644,12 @@ export default function SolverClientEn() {
             <Link href="/en/hand-chart" className="font-semibold text-primary hover:underline">
               Starting hand chart
             </Link>{" "}
+            {/* 🔴 M-046 E-2 정정(2026-08-24) — 종전 「①·②에 붙여넣는 레인지가 거기서 나온다」는 거짓.
+                /en/hand-chart에는 붙여넣기 문자열이 0건이고(13×13 그리드 + ~% 라벨), 값도 갈린다
+                (랜딩 BTN 534콤보=40.3% vs 차트 BTN ~42%). 두 출처를 갈라 적는다(pt 선례). */}
             — this solver is postflop only. Which hands to <strong>open</strong> from each position
-            lives in the chart, and it is where the ranges you paste into ① and ② come from
+            lives in the chart. The paste-ready ranges above are a different thing — the BTN-vs-BB
+            ranges the Single Raised Pot study spots use
           </li>
           <li>
             <Link href="/en/calculator" className="font-semibold text-primary hover:underline">
