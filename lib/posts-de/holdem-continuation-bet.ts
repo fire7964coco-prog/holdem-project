@@ -199,7 +199,7 @@ Gleicher Preflop-Raise, entgegengesetzte Flops, entgegengesetzte richtige Züge.
 | **Jeden Flop auf Autopilot c-betten** | Ignoriert, dass viele Boards den Caller favorisieren | Lies zuerst die Textur |
 | **Groß betten mit einer weiten Range** | Weite Ranges wollen kleines Sizing, nicht großes | Klein auf trocken, groß nur wenn polarisiert |
 | **Multiway light c-betten** | Fold Equity kollabiert mit mehr Spielern | Nur Value & Draws gegen 2+ |
-| **Zu oft OOP c-betten** | Du kannst als Erster keine Equity realisieren | Checke öfter, bau eine Checking-Range auf |
+| **Zu oft OOP c-betten** | Du kannst als Erster deine Equity nicht so gut realisieren | Checke öfter, bau eine Checking-Range auf |
 | **In ein Board betten, das sie getroffen hat** | 7‑6‑5 zerlegte ihre Range, nicht deine | Checke und gib auf |
 | **„One-and-done“-Barreling** | Flop c-betten, Turn immer aufgeben = leicht zu floaten | Hab einen Turn-Plan, bevor du feuerst |
 | **Triple-Barrel ohne Equity** | Einen Stack verbluffen ohne Outs oder Blocker | Bluffe mit Backup-Equity oder guten Blockern |

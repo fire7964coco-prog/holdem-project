@@ -203,7 +203,7 @@ Sei ehrlich darüber, was das Modell weglässt:
 - **Position.** Ein Stack von 3 Big Blinds am Button (der die Blinds zuletzt zahlt und sich damit noch ein paar freie Hände kauft, bevor er reinmuss) ist mehr wert als derselbe Stack im Big Blind (nächste Hand zwangsweise All-in). ICM kann die Sitzplätze nicht sehen.
 - **Blinds und künftiges Spiel.** ICM friert das Turnier in diesem Augenblick ein; es ignoriert steigende Blinds, Antes und wie die nächsten paar Orbits tatsächlich ablaufen werden.
 
-Es gibt sogar empirische Belege für seinen blinden Fleck: Auswertungen aus der Solver-Praxis zeigen, dass ICM dazu neigt, ==Big Stacks zu unterschätzen und Short Stacks zu überschätzen==, teils weil ein starker Chipleader ICM-Druck nutzen kann, um *mehr* zu gewinnen, als das rohe Modell vorhersagt. Fortgeschrittene Solver fügen genau aus diesem Grund eine „Future Game“-Korrektur hinzu. Nichts davon macht ICM falsch – es macht es zu einer starken ersten Näherung, die du für Skill und Position anpasst, nicht zu einem physikalischen Gesetz.
+Es gibt sogar empirische Belege für seinen blinden Fleck: eine großangelegte Auswertung echter Turnierergebnisse (2025, über zehntausend Events) zeigt, dass ICM dazu neigt, ==Big Stacks zu unterschätzen und Short Stacks zu überschätzen==, teils weil ein starker Chipleader ICM-Druck nutzen kann, um *mehr* zu gewinnen, als das rohe Modell vorhersagt. Fortgeschrittene Solver fügen genau aus diesem Grund eine „Future Game“-Korrektur hinzu. Nichts davon macht ICM falsch – es macht es zu einer starken ersten Näherung, die du für Skill und Position anpasst, nicht zu einem physikalischen Gesetz.
 
 ---
 

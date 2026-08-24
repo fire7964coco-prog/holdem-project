@@ -176,7 +176,7 @@ Eine Nachbarfrage ist eine Zeile wert: Beim **Showdown** ist die Vorgabe, dass d
 
 ## Wie ändern sich die Positionen am Tisch je nach Spieleranzahl? (6-Max vs. Full Ring)
 
-Die Positionsnamen ändern sich nicht mit der Tischgröße – ==sie fallen zuerst von der Early Position weg==, während Spieler entfernt werden. Button, Blinds, Cutoff und Hijack überleben am längsten; die UTG-Sitze existieren nur, wenn der Tisch voll ist. Hier die Map von 2 Spielern bis 10, in der Preflop-Handlungsreihenfolge aufgelistet:
+Die Positionsnamen ändern sich nicht mit der Tischgröße – ==sie fallen zuerst von der Early Position weg==, während Spieler entfernt werden. Button, Blinds, Cutoff und Hijack überleben am längsten; die UTG-Sitze fallen als Erste weg – ab 6-Max bleibt nur einer übrig, und darunter übernimmt der Sitz links vom Big Blind dieselbe Rolle unter anderem Namen. Hier die Map von 2 Spielern bis 10, in der Preflop-Handlungsreihenfolge aufgelistet:
 
 | Spieler | Preflop-Handlungsreihenfolge (zuerst → zuletzt) |
 |:---:|:---|

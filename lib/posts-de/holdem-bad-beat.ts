@@ -48,7 +48,7 @@ Der Mechanismus ist immer ein **Suckout**: eine Karte auf dem Turn oder River, d
 ![Infografik von zwei Assen A♠ A♦ gegen zwei Könige K♥ K♦ auf einem K♠ 7♦ 2♣ 8♥ 3♠ Board – das gefloppte Set Könige knackt die Asse](/images/holdem-cooler-vs-badbeat.webp "Die Asse bekommen das Geld vorne rein und verlieren trotzdem – der König auf dem Flop schenkt den Pot dem Set")
 
 > **Kurze Antwort**
-> Entscheidend ist, **wer vorn lag, als das Geld reinging**. Beim Bad Beat warst du der Favorit und wurdest von einer Glückskarte überholt. Beim Cooler lagst du von Anfang an hinten und konntest die Hand trotzdem nicht folden – es kam gar kein Suckout. ==Set über Set ist deshalb kein Bad Beat==, sondern ein Cooler: Das größere Set führte die ganze Zeit.
+> Entscheidend ist, **wer vorn lag, als das Geld reinging**. Beim Bad Beat warst du der Favorit und wurdest von einer Glückskarte überholt. Beim Cooler lagst du von Anfang an hinten und konntest die Hand trotzdem nicht folden – es kam gar kein Suckout. ==Set über Set ist deshalb meist kein Bad Beat==, sondern ein Cooler: Standen beide Sets schon, als das Geld reinging, führte das größere die ganze Zeit.
 
 Die Leute benutzen „Bad Beat“ und „Cooler“ synonym, aber sie sind Gegensätze – und zu wissen, welcher gerade passiert ist, sagt dir, ob du dich über das Deck ärgern oder von ihm beeindruckt sein solltest. Der ganze Unterschied ist, **wer vorne war, als das Geld reinging, und ob ein Suckout stattfand:**
 
@@ -64,7 +64,7 @@ Die Leute benutzen „Bad Beat“ und „Cooler“ synonym, aber sie sind Gegens
 
 </div>
 
-Ein schneller Lackmustest: **Wenn dein Gegner sich *verbessern* musste, um zu gewinnen, ist es ein Bad Beat.** Wenn er schon vorne war, als das Geld reinging, und du dein Monster einfach nicht folden konntest, ist das ein [Cooler](/de/blog/holdem-cooler) – kein Suckout, kein Bad Beat. Und beachte die Falle: **Set über Set ist kein Bad Beat.** Wenn dein Set Damen gegen ein Set Könige verliert, hatte niemand Glück auf dem River – das größere Set war die ganze Zeit vorne. Das ist ein Cooler im Bad-Beat-Gewand.
+Ein schneller Lackmustest: **Wenn dein Gegner sich *verbessern* musste, um zu gewinnen, ist es ein Bad Beat.** Wenn er schon vorne war, als das Geld reinging, und du dein Monster einfach nicht folden konntest, ist das ein [Cooler](/de/blog/holdem-cooler) – kein Suckout, kein Bad Beat. Und beachte die Falle: **Set über Set ist meist kein Bad Beat.** Wenn dein Set Damen gegen ein Set Könige verliert, das schon auf dem Flop stand, hatte niemand Glück auf dem River – das größere Set war die ganze Zeit vorne. Das ist ein Cooler im Bad-Beat-Gewand. Kommt das größere Set dagegen erst auf Turn oder River, lagst du vorn, als das Geld reinging – dann ist es sehr wohl ein Bad Beat.
 
 ---
 

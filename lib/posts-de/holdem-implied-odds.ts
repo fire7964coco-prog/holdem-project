@@ -105,7 +105,7 @@ Derselbe $50-Call, gegensätzliche Entscheidungen – und die Karten haben sich 
 |:---|:---:|:---:|:---:|
 | Flushdraw | 9 | 19,6% (Turn → River) | ~8–10× den Call |
 | Open-Ended-Straße | 8 | 17,4% (Turn → River) | ~8–10× den Call |
-| Set (Pocket Pair) | 2→Set | ~11,8% (Flop) | ~15–20× den Call |
+| Set (Pocket Pair) | 2→Set | ~11,8% – ⚠ über den ganzen Flop, nicht über eine Karte | ~15–20× den Call |
 | Gutshot-Straße | 4 | 8,7% (Turn → River) | ~20×+ (selten lohnend) |
 
 </div>

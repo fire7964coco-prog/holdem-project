@@ -44,7 +44,7 @@ Hier ist die Tabelle, die niemand an einem Ort baut. Die meisten Seiten nennen d
 
 | Holding | Fertig gefloppt | Den Draw gefloppt | Draw bis River komplett |
 |:---|:---:|:---|:---|
-| Pocket Pair → Set | 11,8% (7,5:1) | – | Set→Full House 33% bis River |
+| Pocket Pair → Set | 11,8% (7,5:1) | – | Set→Full House oder Quads 33% bis River |
 | Zwei suited → Flush | 0,84% (118:1) | 10,9% Flushdraw | 35% (9 Outs) |
 | Connectors → Straße | 1,3% (76:1) | ~10% OESD | 31,5% (8 Outs) |
 | Zwei ungepaart → Paar | ~32% | – | – |

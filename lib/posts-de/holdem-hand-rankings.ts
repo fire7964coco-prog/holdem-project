@@ -275,7 +275,7 @@ Der Flush. Bei jedem Duell zwischen zwei *verschiedenen* Handtypen entscheidet a
 
 ## Warum ist die Reihenfolge der Pokerblätter genau so?
 
-Die Rangfolge ist nicht willkürlich – sie ist ==reine Wahrscheinlichkeit==. ==g:**Je schwerer eine Hand zu treffen ist, desto höher steht sie.**== Ein Flush steht über einer Straße, weil es in einem Deck mit 52 Karten schlicht weniger Wege gibt, fünf Karten einer Farbe zu bilden, als fünf in Folge in beliebigen Farben. Dieses eine Prinzip erklärt die gesamte Rangfolge – sieh dir die genauen Zahlen im [Poker-Odds- und Wahrscheinlichkeits-Chart](/de/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp") an.
+Die Rangfolge ist nicht willkürlich – sie ist ==reine Wahrscheinlichkeit==. ==g:**Je schwerer eine Hand aus fünf Karten zu bilden ist, desto höher steht sie.**== ⚠ Die Rangfolge beruht auf den Fünf-Karten-Häufigkeiten; wer in Hold'em sieben Karten sieht, trifft manches deutlich öfter, aber die Reihenfolge der Hände ändert das nicht. Ein Flush steht über einer Straße, weil es in einem Deck mit 52 Karten schlicht weniger Wege gibt, fünf Karten einer Farbe zu bilden, als fünf in Folge in beliebigen Farben. Dieses eine Prinzip erklärt die gesamte Rangfolge – sieh dir die genauen Zahlen im [Poker-Odds- und Wahrscheinlichkeits-Chart](/de/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp") an.
 
 Es erklärt auch die große Ausnahme, der du begegnen wirst: Im **Short Deck (6+) Hold'em**, wo die Zweien bis Fünfen entfernt werden, werden Flushes schwerer als Full Houses – also schlägt dort ein ==r:**Flush ein Full House**==. Die Mathematik hat sich geändert, also hat sich die Reihenfolge geändert. Mehr zu den Unterschieden je Variante unten.
 

@@ -38,7 +38,7 @@ Mathe > Angst | Der einzige Grund zu folden – oder nicht
 
 Steht eine Bet, hast du drei Optionen: folden, callen oder raisen. Steht keine an, hast du zwei: checken oder betten. Folden heißt, den Pot aufzugeben und keine weiteren Chips zu riskieren. Neue Spieler behandeln es als Verlieren. Gewinner behandeln es als ==Weigerung, mehr zu verlieren.==
 
-Hier ist die Idee, die alles neu einordnet: **der Erwartungswert eines Folds ist, ab dieser Entscheidung, null.** Wenn du wirklich geschlagen bist, ist jede andere Option *negativ* – callen kostet dich den Call, raisen kostet dich mehr. Null schlägt negativ. Folden gewinnt nicht den Pot, aber es gewinnt das lange Spiel, indem es keine Chips an Spots verschenkt, in denen du hinten liegst.
+Hier ist die Idee, die alles neu einordnet: **der Erwartungswert eines Folds ist, ab dieser Entscheidung, null.** Wenn du wirklich geschlagen bist und keine ausreichenden Odds auf eine Verbesserung hast, sind alle anderen Optionen *negativ* – callen kostet dich den Call, raisen kostet dich mehr. Null schlägt negativ. Folden gewinnt nicht den Pot, aber es gewinnt das lange Spiel, indem es keine Chips an Spots verschenkt, in denen du hinten liegst.
 
 Ein präziser Vorbehalt, weil er wichtig ist: Folden ist *nicht kostenlos.* Die Chips, die schon im Pot liegen, sind in dem Moment weg, in dem du sie hineingelegt hast – Folden verhindert nur, dass du *gutem Geld schlechtes hinterherwirfst.* Diese Unterscheidung ist die gesamte Psychologie des Foldens, und wir kommen darauf zurück. Zuerst die Mechanik.
 

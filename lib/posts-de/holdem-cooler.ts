@@ -110,7 +110,7 @@ Drei Arten, über dieselbe Katastrophe zu reden, bringen viele Spieler durcheina
 
 - **Setup** – ein informelles Synonym für einen Cooler. Es betont das *gefangene* Gefühl – als wäre das Deck „aufgebaut“ worden, damit du deinen ganzen Stack mit einer Hand verlierst, von der du nicht wegkommst. Wenn jemand sagt „das war ein totales Setup“, meint er einen Cooler.
 - **Gecoolert (Verb)** – auf der Verliererseite eines Coolers zu stehen. „Ich wurde gecoolert“ bedeutet, dass du einen großen Pot mit einer Hand verloren hast, die zu stark zum Folden war. Per Definition ist die korrekte Verwendung ein Eingeständnis, dass du *das richtige Play gemacht* hast und trotzdem verloren hast.
-- **Cold Deck** – ein verwandter Old-School-Begriff für eine Serie unvermeidbarer Verlusthände; historisch bezeichnete er auch einen Betrug (das Einschmuggeln eines vorbereiteten „kalten“ Decks), aber umgangssprachlich heißt es einfach, dass die Karten brutal gegen dich laufen.
+- **Cold Deck** – ein verwandter Old-School-Begriff; im Wörterbuch meint er die einzelne unvermeidbare Verlusthand selbst, historisch bezeichnete er auch einen Betrug (das Einschmuggeln eines vorbereiteten „kalten“ Decks), aber umgangssprachlich heißt es einfach, dass die Karten brutal gegen dich laufen.
 
 Ein wichtiger Mythos, der sterben muss: **Ein Cooler muss nicht all-in sein.** Das entscheidende Merkmal ist die Kollision zweier zu-stark-zum-Folden-Hände, nicht die Größe der Stacks. Du kannst für einen großen Pot gecoolert werden, ohne je deinen letzten Chip reinzulegen – es geht um die Hände, nicht ums All-in.
 
@@ -179,7 +179,7 @@ A. Ein echter Cooler ist reines Pech – du hast korrekt gespielt und trotzdem v
 
 **Q. Was ist ein „Cold Deck“?**
 
-A. Ein älterer Begriff für eine Serie von Händen, in denen die Karten durchgehend gegen dich laufen – du bekommst nichts, oder du bekommst genau das Zweitbeste. Historisch bezeichnete „cold deck“ etwas ganz Konkretes: ein vorbereitetes Deck, das ein Betrüger gegen das echte austauschte. Diese Bedeutung ist heute praktisch verschwunden; am Tisch heißt es einfach, dass eine Phase brutal ungünstig läuft.
+A. Im Wörterbuch meint der ältere Begriff die einzelne unvermeidbare Verlusthand; am Tisch wird er meist für eine Phase benutzt, in der die Karten durchgehend gegen dich laufen – du bekommst nichts, oder du bekommst genau das Zweitbeste. Historisch bezeichnete „cold deck“ etwas ganz Konkretes: ein vorbereitetes Deck, das ein Betrüger gegen das echte austauschte. Diese Bedeutung ist heute praktisch verschwunden; am Tisch heißt es einfach, dass eine Phase brutal ungünstig läuft.
 
 **Q. Ist Pocket Kings vs. Pocket Asse ein Cooler?**
 

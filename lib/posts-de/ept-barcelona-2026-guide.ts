@@ -5,7 +5,7 @@ export const POST: Post = {
   seoTitle: "EPT Barcelona zu teuer? Der $0,50-Weg zum €5.300-Main-Event",
   title: "EPT Barcelona 2026 – kompletter Spieler-Guide: Zeitplan, Buy-ins & Qualifikation",
   desc: "EPT Barcelona 2026 – 16.–29. Aug., Casino Barcelona. $0,50 Power Path zum €5.300-Main-Event. Zeitplan, Buy-ins, Hotels und Tipps für Erstteilnehmer.",
-  tldr: "Die EPT Barcelona 2026 läuft vom 16.–29. Aug. im Casino Barcelona. Main-Event-Buy-in: €5.300. Günstigster Online-Weg: Power Path ab $0,50 → Gold Pass (€5.300 ME + 8 Nächte Hotel + €690 Spesen). Du brauchst ein PokerStars-Live-Konto und einen gültigen Reisepass. Buch die Hotels früh – der August ist Hochsaison.",
+  tldr: "Die EPT Barcelona 2026 läuft vom 16.–29. Aug. im Casino Barcelona. Main-Event-Buy-in: €5.300. Günstigster Online-Weg: Power Path ab $0,50 → Gold Pass (€5.300 ME + 8 Nächte Hotel + €690 Spesen). Du brauchst ein PokerStars-Live-Konto und einen gültigen Personalausweis oder Reisepass. Buch die Hotels früh – der August ist Hochsaison.",
   category: "tournament",
   date: "2026-06-17",
   updated: "2026-08-15",
@@ -38,7 +38,7 @@ Neu bei Live-Turnieren? Überflieg zuerst [den Turnier-Guide](/de/blog/holdem-to
 ---
 
 > **Kurze Antwort**
-> Die EPT Barcelona 2026 läuft vom ==**16.–29. Aug.**== im Casino Barcelona. Main Event: ==**€5.300**==. Günstigster Weg: Power Path ab $0,50 → ==g:Gold Pass (€5.300 ME-Platz + 8 Nächte Hotel + €690 Spesen)==. Du brauchst ein PokerStars-Live-Konto und einen gültigen Reisepass. ==r:Buch jetzt die Hotels – der August ist Hochsaison.==
+> Die EPT Barcelona 2026 läuft vom ==**16.–29. Aug.**== im Casino Barcelona. Main Event: ==**€5.300**==. Günstigster Weg: Power Path ab $0,50 → ==g:Gold Pass (€5.300 ME-Platz + 8 Nächte Hotel + €690 Spesen)==. Du brauchst ein PokerStars-Live-Konto und einen gültigen Personalausweis oder Reisepass. ==r:Buch jetzt die Hotels – der August ist Hochsaison.==
 
 ---
 
@@ -178,7 +178,7 @@ Keine Lust, vier Stufen zu grinden? PokerStars fährt den ganzen Sommer über au
 
 | Posten | Geschätzte Kosten |
 |:---|:---:|
-| Power-Path-Buy-ins bis Step 4 | **$11–$55** |
+| Power-Path-Buy-ins (nur Step 1–3 sind kaufbar) | **$0,50–$11** |
 | Gold Pass deckt: ME-Eintritt + Side Event + 8 Nächte | ==g:✅ Enthalten (~$10.300 USD Wert)== |
 | Flüge (nicht immer enthalten) | €150–€400 |
 | Essen & Extra-Tage | €400–€600 |
@@ -346,7 +346,7 @@ Day 1 ist auf mehrere Start-Flights aufgeteilt (Day 1A, 1B, 1C, manchmal 1D). Du
 
 ### Häufige Fehler von Erstteilnehmern
 
-**1. Zur Startzeit ankommen.** ==r:Die Registrierungsschlangen können 30–45 Minuten lang sein.== Komm zur Registrierungsöffnung, nicht 30 Minuten vor Spielbeginn – bei 30–45 Minuten Schlange sitzt du sonst erst in Level 2.
+**1. Zur Startzeit ankommen.** ==r:Die Registrierungsschlangen können 30–45 Minuten lang sein.== Komm zur Registrierungsöffnung, nicht 30 Minuten vor Spielbeginn – bei 30–45 Minuten Schlange verpasst du sonst die ersten Hände und sitzt erst mitten in Level 1.
 
 **2. Die Blind-Struktur nicht kennen.** Lad den Zeitplan von der offiziellen PokerStars-Live-Seite herunter, bevor du ankommst. Wisse, wann die erste Pause ist, wie lang die Level sind und wie die Blinds bei deinem Start-Stack aussehen.
 
@@ -398,7 +398,7 @@ A. Du brauchst ein ==**PokerStars-Live**==-Konto (getrennt von deinem Online-Spi
 
 **Q. Was ist das Source-of-Funds-Formular und ist es wirklich erforderlich?**
 
-A. Ja. Unter den spanischen Casino-Vorschriften erfordert jede Bar-Transaktion über einem bestimmten Schwellenwert, dass du die Herkunft der Gelder deklarierst. Du kannst das Formular vorab online über dein PokerStars-Live-Konto ausfüllen – ==g:es dauert etwa 10 Minuten==. Zahlungen per Karte oder vorab gekauften Token erfordern es womöglich nicht.
+A. Ja. Unter den spanischen Casino-Vorschriften erfordert **jede** Bar-Transaktion, dass du die Herkunft der Gelder deklarierst – eine Betragsgrenze, unter der du das nicht musst, gibt es nicht. Du kannst das Formular vorab online über dein PokerStars-Live-Konto ausfüllen – ==g:es dauert etwa 10 Minuten==. Zahlungen per Karte oder vorab gekauften Token erfordern es womöglich nicht.
 
 **Q. Was passiert, wenn ich einen Power Path Gold Pass gewinne – wird das Hotel automatisch gebucht?**
 

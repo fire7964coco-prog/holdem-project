@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Short Stack spielen im Poker – Push/Fold-Strategie nach Stacktiefe",
   seoTitle: "Short Stack spielen: Push/Fold einfach erklärt",
   desc: "Short Stack im Turnier? Lerne Push/Fold nach Stacktiefe – wann du bei 15, 10 und 5 Big Blinds shovst, die M-Ratio-Zonen und der ICM-Twist an der Bubble.",
-  tldr: "Ein Short Stack (grob unter 20–25 Big Blinds) kann kein normales Postflop-Poker mehr spielen, und ab rund 15 Big Blinds abwärts wechselt er zu Push/Fold: geh first-in all-in, um deine Fold Equity zu behalten, und open-limpe oder min-raise-fold nie. Shove von Late Position weiter, halte deine Calling-Range enger als deine Shoving-Range, und blinde nicht auf null herunter, während du „auf eine Hand wartest“ – deine Fold Equity ist die Waffe, und unter etwa 8 Big Blinds schwindet sie rapide.",
+  tldr: "Ein Short Stack (grob unter 20–25 Big Blinds) kann kein normales Postflop-Poker mehr spielen, und ab rund 15 Big Blinds abwärts wechselt er zu Push/Fold: geh first-in all-in, um deine Fold Equity zu behalten, und open-limpe oder min-raise-fold fast nie, wenn du first-in bist. Shove von Late Position weiter, halte deine Calling-Range enger als deine Shoving-Range, und blinde nicht auf null herunter, während du „auf eine Hand wartest“ – deine Fold Equity ist die Waffe, und unter etwa 8 Big Blinds schwindet sie rapide.",
   category: "tournament",
   date: "2026-07-09",
   updated: "2026-08-13",
@@ -77,7 +77,7 @@ Der Haken ist, dass Fold Equity ==abnimmt, während dein Stack schrumpft==. Bei 
 > **Kurze Antwort**
 > Die M-Ratio misst, wie viele Orbits du durch Folden überleben kannst – dein Stack geteilt durch die Kosten einer vollen Runde Blinds und Antes – und sie sortiert deinen Stack in fünf Zonen.
 
-Die Kennzahl geht auf Dan Harrington zurück: ==M = dein Stack ÷ (Small Blind + Big Blind + alle Antes pro Orbit)==. Sie beantwortet „wie lange kann ich hier sitzen und nichts tun?“ – und je kleiner sie wird, desto mehr musst du handeln.
+Der Name stammt von Paul Magriel, bekannt gemacht hat die Kennzahl Dan Harrington: ==M = dein Stack ÷ (Small Blind + Big Blind + alle Antes pro Orbit)==. Sie beantwortet „wie lange kann ich hier sitzen und nichts tun?“ – und je kleiner sie wird, desto mehr musst du handeln.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -214,7 +214,7 @@ A. Ja. In einem Cash Game kannst du jederzeit rebuyen oder auf einen vollen Stac
 
 ## Die 3 Dinge, die du dir merken solltest
 
-1. **Shove first-in und behalte deine Fold Equity.** Open-limpe oder min-raise-fold nie. Die freien Blinds und Antes sind der Großteil des Profits eines Short Stacks.
+1. **Shove first-in und behalte deine Fold Equity.** Open-limpe oder min-raise-fold fast nie, wenn du first-in bist. Die freien Blinds und Antes sind der Großteil des Profits eines Short Stacks.
 2. **Calle enger als du shovst.** Zwei verschiedene Ranges – First-in-Shoves sind weit (du gewinnst auch, wenn sie folden); Calls sind eng (du gewinnst nur am Showdown).
 3. **Handle, bevor deine Fold Equity stirbt.** Blinde nicht auf null herunter, während du auf eine Hand wartest. Weite deine Shoves late, verenge early, und bring es rein, solange dein All-in Leute noch erschreckt.
 

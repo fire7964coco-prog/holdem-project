@@ -117,7 +117,7 @@ Beachte das 15-Outs-Monster: mit zwei kommenden Karten ist es tatsächlich ein *
 
 ## Outs im Kopf umrechnen: die Faustregel
 
-Die **Faustregel** (auch „Regel der 2 und 4“) macht aus deiner Out-Zahl in einer Sekunde einen Prozentwert: am Flop Outs × **4**, am Turn Outs × **2**. Bis acht Outs liegt sie weniger als einen Punkt daneben, darüber überschätzt sie – und genau das ist der Grund, warum große Draws sich am Tisch besser anfühlen, als sie sind.
+Die **Faustregel** (auch „Regel der 2 und 4“) macht aus deiner Out-Zahl in einer Sekunde einen Prozentwert: am Flop Outs × **4**, am Turn Outs × **2**. Bis acht Outs liegt die ×4-Regel weniger als einen Punkt daneben, darüber überschätzt sie – und genau das ist der Grund, warum große Draws sich am Tisch besser anfühlen, als sie sind. Die ×2-Regel am Turn geht in die andere Richtung: Sie unterschätzt ab sechs Outs um gut einen Punkt (bei acht Outs sagt sie 16%, richtig sind 17,4%).
 
 Du kannst diese Tabelle nicht mit an den Tisch nehmen, also nutze die Abkürzung, auf die sich jeder Spieler verlässt:
 

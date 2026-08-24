@@ -157,7 +157,7 @@ Dieselbe Logik läuft bei Pots mit Vierling auf dem Board: Alle teilen sich vier
 
 Nimm das Board oben: A♠ K♥ Q♣ J♦ 10♠, Broadway bereits komplett. Deine 9♥ 7♠ *macht* zwar eine Straße – K-Q-J-10-9 – aber sie ist **niedriger** als die Ass-hohe Straße, die auf dem Filz liegt, also ist deine beste Fünf das Board selbst. Genauso wie bei allen anderen.
 
-Die subtilere Variante ist, wenn deine Hand spielt, dein Kicker aber nicht. Board A♥ K♣ Q♦ J♠ 9♥: A♠ 3♠ gegen A♦ 2♦. Beide paaren das Ass, und beide Kicker-Slots füllen sich vom Board – A-A-K-Q-J für jeden Spieler. Die 3 und die 2 sind totes Gewicht; identische beste Fünf, ==g:Chop.==
+Die subtilere Variante ist, wenn deine Hand spielt, dein Kicker aber nicht. Board A♥ K♣ Q♦ J♠ 9♥: A♠ 3♠ gegen A♦ 2♦. Beide paaren das Ass, und alle drei Kicker-Slots füllen sich vom Board – A-A-K-Q-J für jeden Spieler. Die 3 und die 2 sind totes Gewicht; identische beste Fünf, ==g:Chop.==
 
 ![Infografik: Auf einem A-K-Q-J-9-Board spielen A-3 und A-2 beide A-A-K-Q-J, also teilen die identischen Hände den Pot](/images/holdem-tiebreak-split.webp "Wenn die besten Fünf Rang für Rang übereinstimmen, wird der Pot geteilt – Farben brechen den Tie niemals")
 

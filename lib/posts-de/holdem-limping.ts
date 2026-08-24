@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Limpen im Poker: Warum „nur mitgehen“ preflop meist Geld kostet",
   seoTitle: "Limpen im Poker: warum „nur callen“ preflop Geld kostet",
   desc: "Limpen heißt preflop nur den Big Blind zu callen. Warum das meist ein Fehler ist, wo es wirklich okay ist und wie gute Spieler Limper bestrafen.",
-  tldr: "Limpen bedeutet, preflop in einen Pot einzusteigen, indem du nur den Big Blind callst, statt zu raisen oder zu folden. Open-Limpen (als Erster reinzugehen) ist fast immer ein Fehler – du kannst den Pot preflop nicht gewinnen, gibst die Initiative ab und gute Spieler bestrafen dich. Aber Limpen ist nicht immer falsch: den Small Blind zu completen, spekulative Hände hinter anderen Limpern zu over-limpen sowie einige Live- und Short-Stack-Situationen sind legitime Ausnahmen.",
+  tldr: "Limpen bedeutet, preflop in einen Pot einzusteigen, indem du nur den Big Blind callst, statt zu raisen oder zu folden. Open-Limpen (als Erster reinzugehen) ist fast immer ein Fehler – du kannst den Pot preflop nicht kampflos gewinnen, gibst die Initiative ab und gute Spieler bestrafen dich. Aber Limpen ist nicht immer falsch: den Small Blind zu completen, spekulative Hände hinter anderen Limpern zu over-limpen sowie einige Live- und Short-Stack-Situationen sind legitime Ausnahmen.",
   category: "strategy",
   date: "2026-07-05",
   updated: "2026-08-18",
@@ -27,7 +27,7 @@ Ein **Limp** ist, wenn du vor dem Flop in einen Pot einsteigst, indem du den Big
 
 :::stripe
 Den Big Blind callen | Was ein Limp ist (kein Raise)
-0% | Deine Chance, den Pot preflop zu gewinnen
+0% | Deine Chance, den Pot preflop kampflos zu gewinnen
 Open-Limp | Die Variante, die fast immer falsch ist
 Over-Limp / SB | Die Situationen, in denen es wirklich okay ist
 :::
@@ -63,13 +63,13 @@ Diese Unterscheidung ist wichtig, weil die meisten Ratschläge im Stil von „Li
 ## Was kostet dich ein Open-Limp konkret? Vier Gründe
 
 > **Kurze Antwort**
-> Vier Dinge auf einmal: Du kannst den Pot preflop nicht mehr gewinnen, du gibst die Initiative an den Raiser ab, du baust einen aufgeblähten Multiway-Pot – meist ohne Position – und du machst deine Range für aufmerksame Gegner lesbar. Der erste Punkt allein ist teuer genug: Ein Raise gewinnt die Blinds regelmäßig kampflos, ein Limp nie.
+> Vier Dinge auf einmal: Du kannst den Pot preflop nicht mehr kampflos gewinnen, du gibst die Initiative an den Raiser ab, du baust einen aufgeblähten Multiway-Pot – meist ohne Position – und du machst deine Range für aufmerksame Gegner lesbar. Der erste Punkt allein ist teuer genug: Ein Raise gewinnt die Blinds regelmäßig kampflos, ein Limp nie.
 
 ![Infografik mit einem goldenen Dealer-Button und zwei verdeckten Hole Cards vor einem K♦ 7♣ 2♠ Flop – der Button handelt nach dem Flop als Letzter](/images/holdem-button-dealer-board.webp "Open-Limpen lädt zu einem aufgeblähten Multiway-Pot ein, in dem du keine Initiative hast – oft aus schlechter Position")
 
 Wenn du open-limpst, gibst du überraschend viel auf. Genau das hier:
 
-1. **Du kannst den Pot preflop nicht gewinnen.** Das ist der große Punkt. Wenn du first-in *raist*, können alle folden und du kassierst die Blinds kampflos – Gratisgeld, und das nennenswert oft. Wenn du limpst, ist diese Zahl **null**. Du hast garantiert, dass du eine Hand treffen oder ihn später gewinnen musst; du hast den saubersten Weg zu gewinnen weggeworfen.
+1. **Du kannst den Pot preflop nicht kampflos gewinnen.** Das ist der große Punkt. Wenn du first-in *raist*, können alle folden und du kassierst die Blinds kampflos – Gratisgeld, und das nennenswert oft. Wenn du limpst, ist diese Zahl **null**. Du hast garantiert, dass du eine Hand treffen oder ihn später gewinnen musst; du hast den saubersten Weg zu gewinnen weggeworfen.
 2. **Du gibst die Initiative ab.** Der Preflop-Raiser ist der „Aggressor“ – er darf auf dem Flop eine [Continuation Bet](/de/blog/holdem-continuation-bet) abfeuern und eine starke Hand repräsentieren, wodurch er den Pot oft ganz ohne alles nimmt. Limpst du, hast du diese Story jemand anderem überlassen. Du reagierst jetzt, statt zu führen.
 3. **Du baust einen aufgeblähten Multiway-Pot – oft aus schlechter Position.** Limpen lädt mehr Caller ein und lässt den Big Blind billig rein. Je mehr Spieler den Flop sehen, desto weniger ist deine Hand wert, und wenn du aus früher Position gelimpt hast, bist du auf jeder Street *out of position* gegenüber fast dem ganzen Feld – und das ohne Initiative. Das ist der schlechteste Platz am Tisch.
 4. **Du machst dich lesbar – und ausbeutbar.** Gewohnheitslimper tauchen mit einer gedeckelten, transparenten Range auf. Gute Spieler greifen sie unerbittlich an (mehr dazu unten), also landest du immer wieder in kniffligen Spots aus schlechter Position. Wie das alte Sprichwort sagt: Chronische Limper „gewinnen kleine Pots und verlieren große“.
@@ -186,7 +186,7 @@ A. Ein Limper steigt in ungeraiste Pots ein, indem er vor dem Flop nur den Big B
 
 ## Die 3 Dinge zum Merken
 
-1. **Limpen ist das Callen des Big Blinds statt Raisen** – und Open-Limpen, als Erster reinzugehen, ist fast immer ein Fehler: Du kannst den Pot preflop nicht gewinnen, gibst die Initiative ab und markierst dich als leichtes Ziel.
+1. **Limpen ist das Callen des Big Blinds statt Raisen** – und Open-Limpen, als Erster reinzugehen, ist fast immer ein Fehler: Du kannst den Pot preflop nicht kampflos gewinnen, gibst die Initiative ab und markierst dich als leichtes Ziel.
 2. **Aber es ist nicht *immer* falsch.** Den Small Blind zu completen, spekulative Hände hinter anderen Limpern zu over-limpen sowie passive Live- oder shallow-stacked Situationen sind legitime Ausnahmen. Das dogmatische „Limpe niemals“ ist eine Übertreibung.
 3. **Standard = raisen oder folden.** Behalte Limpen für jene konkreten Situationen vor, und du hörst auf, starken Spielern Gratischancen zu geben, dich zu isolieren und auszubeuten.
 

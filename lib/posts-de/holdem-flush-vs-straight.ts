@@ -160,7 +160,7 @@ Die Dame übertrumpft den Buben, also gewinnt A. Sind die besten fünf Karten be
 
 ![9♥ 8♥ 7♥ 6♥ 5♥ – ein Straight Flush in Herz, die #2-Hand im Poker](/images/holdem-flush-vs-straight-sf.webp "Straight Flush – fünf Herz in Folge, nur von einem Royal Flush geschlagen")
 
-Ein **Straight Flush** ist fünf *aufeinanderfolgende* Karten *einer Farbe* – wie 9♥ 8♥ 7♥ 6♥ 5♥. Es ist die **#2-Hand im Poker**, nur von einem Royal Flush geschlagen (der einfach der Ace-High-Straight-Flush ist, A-K-Q-J-10 suited). Mit gerade mal **36 Kombinationen (~0,00139%)** ist er seltener als alles außer dem Royal selbst.
+Ein **Straight Flush** ist fünf *aufeinanderfolgende* Karten *einer Farbe* – wie 9♥ 8♥ 7♥ 6♥ 5♥. Es ist die **#2-Hand im Poker**, nur von einem Royal Flush geschlagen (der einfach der Ace-High-Straight-Flush ist, A-K-Q-J-10 suited). Mit gerade mal **36 Kombinationen** – das sind **0,00139% auf Fünf-Karten-Basis**, in Hold'em mit sieben Karten rund **0,028%** – ist er seltener als alles außer dem Royal selbst.
 
 Der Haken: ==die *gleichen fünf Karten* müssen sowohl suited als auch in Folge sein==. Achte auf den Unterschied auf dem Board **8♥ 7♥ 6♥ Q♠ 3♦**:
 
@@ -198,7 +198,7 @@ A. Reine Mathematik. Eine Straße ignoriert die Farben, also gibt es etwa 10.200
 
 **Q. Welche Hände sind höher als ein Flush?**
 
-A. Ein Full House, ein Vierling, ein Straight Flush und ein Royal Flush schlagen alle einen Flush – und das tut auch ein höherer Flush (bessere Topkarte). Alles darunter (Straße, Drilling, Zwei Paare, Paar, High Card) verliert gegen ihn.
+A. Ein Full House, ein Vierling, ein Straight Flush und ein Royal Flush schlagen alle einen Flush – und das tut auch ein höherer Flush – verglichen wird die höchste Karte, bei Gleichstand die nächste, bis hinunter zur fünften. Alles darunter (Straße, Drilling, Zwei Paare, Paar, High Card) verliert gegen ihn.
 
 **Q. Was schlägt eine Straße beim Poker?**
 

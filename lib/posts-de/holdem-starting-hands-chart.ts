@@ -262,7 +262,7 @@ A. Pocket Aces (AA) ist die beste Starthand im Poker. Preflop gewinnen Asse rund
 
 **Q. Was sind gute Starthände im Poker?**
 
-A. Gute Starthände im Poker sind Premium-Paare (AA–TT), große Asse (AK, AQ) und starke Suited Broadways (KQs, AJs) – grob die oberen 15–20% aller Hände. Spekulative Hände wie kleine Paare und Suited Connectors sind nur aus später Position gut.
+A. Gute Starthände im Poker sind Premium-Paare (AA–TT), große Asse (AK, AQ) und starke Suited Broadways (KQs, AJs). Das sind zusammen 70 der 1.326 möglichen Kombinationen, also gut 5% – auf die 15–20%, die du über eine Session tatsächlich spielst, kommst du erst mit Position und spekulativen Händen. Spekulative Hände wie kleine Paare und Suited Connectors sind nur aus später Position gut.
 
 **Q. Wie viele Starthände gibt es im Poker?**
 

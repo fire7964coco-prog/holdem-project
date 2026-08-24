@@ -63,7 +63,7 @@ Zwei gültige Wege:
 
 ![Texas Hold'em All-in-Showdown – ein Board mit K♠ 10♣ 7♦ 4♥ 2♣, die Chips getrennt in beschrifteten Main Pot und Side Pot](/images/holdem-all-in-declare.webp)
 
-==r:Schieb niemals wortlos einen einzelnen großen Chip nach vorn.== Stehst du **vor einer Bet**, gilt ein einzelner übergroßer Chip ohne Ansage als **Call** – auch wenn es dein letzter Chip ist. Stehst du **nicht** vor einer Bet, zählt er als Bet in Höhe seines Werts. ==r:In keinem der beiden Fälle ist es dein ganzer Stack.== Sag immer laut „All-in“ oder beweg deinen gesamten Stack auf einmal.
+==r:Schieb niemals wortlos einen einzelnen großen Chip nach vorn.== Stehst du **vor einer Bet**, gilt ein einzelner übergroßer Chip ohne Ansage als **Call** – auch wenn es dein letzter Chip ist. Stehst du **nicht** vor einer Bet, zählt er als Bet in Höhe seines Werts. ==r:In keinem der beiden Fälle wird daraus automatisch ein All-in.== Sag immer laut „All-in“ oder beweg deinen gesamten Stack auf einmal.
 
 ---
 

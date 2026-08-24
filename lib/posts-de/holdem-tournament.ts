@@ -68,7 +68,7 @@ Wenn du dich registrierst, zahlst du ein Buy-in. Dieses Geld teilt sich auf zwei
 | **€100** | → Prize Pool, geteilt unter allen Teilnehmern |
 | **€9** | → Hausgebühr (Rake), behält der Veranstaltungsort |
 
-Der Fee-Anteil sinkt, je größer das Buy-in ist: Die Dailies der Spielbank Berlin nehmen bei €70+10 rund 12% und bei €85+15 sogar 15%, ein CAPT-Event mit €500+50 dagegen gut 9%. Hier sind es €9 von €109, also rund 8,3%. Wie diese Fee funktioniert (und warum Online sich von Live unterscheidet), gehört zum Thema, [wie das Poker-Rake funktioniert](/de/blog/holdem-rake).
+Der Fee-Anteil folgt keiner sauberen Kurve – jeder Veranstalter setzt ihn pro Event fest: Die Dailies der Spielbank Berlin nehmen bei €70+10 rund 12,5% und bei €85+15 sogar 15%, ein CAPT-Event mit €500+50 dagegen gut 9%. Hier sind es €9 von €109, also rund 8,3%. Rechne ihn deshalb immer für das konkrete Event aus, statt dich auf eine Faustregel zu verlassen. Wie diese Fee funktioniert (und warum Online sich von Live unterscheidet), gehört zum Thema, [wie das Poker-Rake funktioniert](/de/blog/holdem-rake).
 
 Im Gegenzug erhältst du einen **Startstack** – üblicherweise 10.000 bis 50.000 Turnierchips, bei einem Standard-Event meist 100–200 Big Blinds tief auf Level 1.
 
@@ -131,7 +131,7 @@ Meist bleiben 6–9 Spieler übrig. Die Payouts steigen mit jeder Eliminierung s
 | Format | Wie es funktioniert | Am besten für |
 |:---|:---|:---|
 | **Freezeout** | Ein Buy-in, kein Rebuy. Bust = raus. | Anfänger – feste Kosten |
-| **Rebuy / Re-entry** | Nach dem Busten erneut zahlen (während der frühen Levels) | Aggressive Spieler mit größerer Bankroll |
+| **Rebuy / Re-entry** | Zwei verschiedene Formate: beim **Rebuy** kaufst du Chips nach, während du noch sitzt (meist wenn dein Stack unter eine Schwelle fällt), beim **Re-entry** steigst du nach dem Bust komplett neu ein – beides nur während der frühen Levels | Aggressive Spieler mit größerer Bankroll |
 | **Bounty / KO** | Kassiere ein festes Bounty in bar für jeden Spieler, den du eliminierst | Action-Spieler – Extra-Einkommen pro Knockout |
 | **PKO (Progressive KO)** | Bounties wachsen mit jedem Knockout – ein Teil an dich ausgezahlt, ein Teil auf deinen Kopf addiert | High-Variance-Spieler mit großem Upside |
 | **Deepstack** | Startstack deutlich über dem Standard-Event derselben Serie, dazu langsamere Levels | Spieler, die mehr Postflop-Spiel wollen |
@@ -229,15 +229,15 @@ Die dichteste Auswahl hat die **Spielbank Berlin** am Potsdamer Platz: Dort läu
 
 Im Norden setzt das **Casino Schenefeld** bei Hamburg dienstags die Double Chance (€110) und sonntags den Monster Stack (€220) an. Die **Spielbank Hamburg** im Casino Esplanade führt dagegen ausschließlich Cash Games – dort findest du kein Turnier.
 
-**Nordrhein-Westfalen: drei Häuser mit Poker – aber kein veröffentlichter Turnierplan.** Im bevölkerungsreichsten Bundesland betreibt die MERKUR SPIELBANKEN NRW GmbH drei Standorte, die Poker im Spielangebot führen:
+**Nordrhein-Westfalen: drei Häuser – aber nur eines mit belegtem Poker-Angebot.** Im bevölkerungsreichsten Bundesland betreibt die MERKUR SPIELBANKEN NRW GmbH drei Spielbanken. Poker als Ring- oder Turnierspiel ist davon nur an einem Standort belegt:
 
 | Standort in NRW | Was das Haus selbst dazu sagt |
 |:---|:---|
 | **Dortmund-Hohensyburg** | Hohensyburgstraße 200 – „Roulette, Black Jack und Poker sowie moderne Slots“, So–Do 11–3 Uhr, Fr/Sa bis 4 Uhr |
-| **Duisburg** | Im CityPalais neben der Mercatorhalle – nach eigener Angabe „das mit Abstand besucherstärkste Casino im Land“ |
-| **Aachen** | „Deutschlands einzige Spielbank in einem Fußballstadion“ – mitten im Tivoli |
+| **Duisburg** | Im CityPalais neben der Mercatorhalle – nach eigener Angabe „das mit Abstand besucherstärkste Casino im Land“ – **Poker steht dort nicht im Spielangebot** (geprüft 13.08.2026) |
+| **Aachen** | „Deutschlands einzige Spielbank in einem Fußballstadion“ – mitten im Tivoli. **Poker erscheint dort nur als Bankspiel** (Poker Heads Up Hold'em), nicht als Ring- oder Turnierspiel |
 
-⚠ **Der Haken:** Alle drei führen Poker, aber **keines der drei veröffentlicht einen Turnierplan auf seiner Website** (geprüft am 12.08.2026). Anders als in Berlin, wo der Wochenplan online steht, musst du hier vor der Anfahrt anrufen oder vor Ort fragen, ob an dem Abend überhaupt ein Turnier läuft – und mit reinem Cash Game rechnen, wenn nicht.
+⚠ **Der Haken:** Auch Hohensyburg **veröffentlicht keinen Turnierplan auf seiner Website** (geprüft am 13.08.2026). Anders als in Berlin, wo der Wochenplan online steht, musst du hier vor der Anfahrt anrufen oder vor Ort fragen, ob an dem Abend überhaupt ein Turnier läuft – und mit reinem Cash Game rechnen, wenn nicht.
 
 **Bayern: neun Spielbanken – und keine davon steht in München.** Die Staatliche Lotterie- und Spielbankverwaltung betreibt neun Häuser im Freistaat; München ist keines davon. Deshalb heißt die Turnierseite des Betreibers auch „Die besten Pokerturniere **um** München“. Am nächsten liegen **Bad Wiessee** am Tegernsee und **Garmisch-Partenkirchen**.
 

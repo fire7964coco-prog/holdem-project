@@ -399,7 +399,7 @@ A. Eine gängige Regel sind 20-40 Buy-ins für Cash Games und 100+ Buy-ins für 
 
 **Q. Wie viele Chips brauche ich für ein Cash Game zu Hause?**
 
-A. Ein Standard-Set mit 300 Chips deckt bequem bis etwa 6 Spieler ab – bei 7-8 sind es 300 ÷ 8 = keine 40 Chips pro Person, dann lohnt sich ein 500er-Set. Gib allen denselben Startstack über 3-4 Nennwerte, mit den meisten Chips in den kleinsten Werten, damit die Spieler leicht setzen und wechseln können. Die genaue Anzahl zählt weniger als die Einigung aller, was jede Farbe vor der ersten Hand in echtem Geld wert ist.
+A. Ein Standard-Set mit 300 Chips deckt bequem bis etwa 6 Spieler ab – bei acht Spielern sind es 300 ÷ 8 = keine 40 Chips pro Person (bei sieben immerhin noch rund 43), dann lohnt sich ein 500er-Set. Gib allen denselben Startstack über 3-4 Nennwerte, mit den meisten Chips in den kleinsten Werten, damit die Spieler leicht setzen und wechseln können. Die genaue Anzahl zählt weniger als die Einigung aller, was jede Farbe vor der ersten Hand in echtem Geld wert ist.
 
 **Q. Spielen Profis Cash Games oder Turniere?**
 

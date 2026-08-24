@@ -270,7 +270,7 @@ Diese Kürzel stehen in jedem Turnierplan und in jeder Online-Lobby, werden aber
 |:---|:---|:---|
 | **GTD** | Guaranteed | Der garantierte Preispool. „100.000 € GTD“ wird ausgezahlt, egal wie viele Spieler tatsächlich antreten. |
 | **Overlay** | – | Die Differenz, die der Room drauflegt, wenn die Buy-ins die Garantie nicht erreichen. ==g:Für dich geschenktes Geld== – ein Overlay-Turnier ist der seltene Fall, in dem der Preispool größer ist als das, was die Spieler eingezahlt haben. |
-| **ITM** | In The Money | Du hast die bezahlten Plätze erreicht. Bezahlt werden meist die obersten 10–15% des Feldes. |
+| **ITM** | In The Money | Du hast die bezahlten Plätze erreicht. Bezahlt werden je nach Room und Format grob die obersten 10–20% des Feldes – große Online-Rooms zahlen eher 14–20% aus. |
 | **FT** | Final Table | Der letzte Tisch eines Turniers, meist die letzten 8–9 Spieler. |
 | **Late Reg** | Late Registration | Anmeldung nach dem Start, üblicherweise bis zu einem festgelegten Level. |
 | **Re-Entry** | – | Nach dem Bust erneut anmelden – ein komplett neuer Eintrag mit vollem Startstack. |

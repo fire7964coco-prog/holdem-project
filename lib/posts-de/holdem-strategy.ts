@@ -174,7 +174,7 @@ Wenn du Strategie auf das herunterbrichst, was neue Spieler wirklich Geld kostet
 | Das Leck | Warum es Chips ausblutet | Die Korrektur |
 |:---|:---|:---|
 | **Zu viele Hände spielen** | Schwache Starthände floppen schwache Made Hands, die dich postflop kosten | Folde ~80% preflop (Entscheidung 2) |
-| **Zu viel callen** | Ein Call kann nur gewinnen, wenn du schon vorne liegst – er foldet nie jemanden raus | Raise oder fold; hör auf, „zum Sehen zu callen“ (Entscheidung 3) |
+| **Zu viel callen** | Ein Call gewinnt nur am Showdown – er foldet nie jemanden raus | Raise oder fold; hör auf, „zum Sehen zu callen“ (Entscheidung 3) |
 | **Zu passiv sein** | Gewinner betten und raisen um Value; Passivität gewinnt winzige Pots und verliert große | Nimm die aggressive Linie, wenn du sie hast |
 | **Position ignorieren** | Müll out of position zu spielen heißt, jede Street zu raten | Spiele tighter früh, looser spät (Entscheidung 1) |
 | **Draws ohne Odds jagen** | „Hoffnungs“-Calls, die der Pot nicht rechtfertigt | Prüfe Pot Odds vor jedem Draw-Call (Entscheidung 5) |
@@ -250,7 +250,7 @@ A. 3-bette (re-raise einen Preflop-Raiser) um Value mit deinen stärksten Hände
 
 **Q. Wann sollte man raisen vs. callen?**
 
-A. Ziehe Raisen dem Callen vor, wann immer du eine Hand hast, mit der es sich lohnt weiterzumachen. Raisen gewinnt Pots auf zwei Wegen (Fold Equity plus die beste Hand) und ergreift die Initiative; Callen kann nur gewinnen, wenn du schon vorne liegst, und lässt andere billig rein. Calle, wenn deine Hand stark genug ist, um weiterzumachen, aber nicht, um einen großen Pot aufzubauen, wenn du ein kleines Pair set-minest, oder wenn du die Bluffs eines schwächeren Spielers drinbehalten willst.
+A. Ziehe Raisen dem Callen vor, wann immer du eine Hand hast, mit der es sich lohnt weiterzumachen. Raisen gewinnt Pots auf zwei Wegen (Fold Equity plus die beste Hand) und ergreift die Initiative; Callen gewinnt nur am Showdown – entweder liegst du schon vorn, oder du musst dich verbessern – und lässt andere billig rein. Calle, wenn deine Hand stark genug ist, um weiterzumachen, aber nicht, um einen großen Pot aufzubauen, wenn du ein kleines Pair set-minest, oder wenn du die Bluffs eines schwächeren Spielers drinbehalten willst.
 
 **Q. Wie viele Hände sollte man bei Texas Hold'em spielen?**
 
