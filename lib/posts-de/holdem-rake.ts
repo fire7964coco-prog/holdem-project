@@ -4,8 +4,8 @@ export const POST: Post = {
   slug: "holdem-rake",
   title: "Was ist der Rake beim Poker? Wie das Haus kassiert – und wie viel du wirklich zahlst",
   seoTitle: "Was ist der Rake beim Poker? Die stille Gebühr",
-  desc: "Der Rake ist die Gebühr, die das Haus aus jedem Cashgame-Pot nimmt. So funktionieren Pot Rake, Time Charge und Turniergebühr – und was Rakeback zurückgibt.",
-  tldr: "Der Rake ist der kleine Anteil, den der Cardroom aus jedem Pot nimmt, um das Spiel auszurichten – meist 2,5–10% bis zu einem Cap von ein paar Dollar. Die meisten Räume nehmen nichts, wenn vor dem Flop alle folden („no flop, no drop“). Er trifft Low-Stakes- und Short-handed-Spieler am härtesten, und Rakeback gibt Stammspielern einen Teil zurück.",
+  desc: "Der Rake ist die Gebühr, die das Haus aus den meisten Cashgame-Pots nimmt. So funktionieren Pot Rake, Time Charge und Turniergebühr – und was Rakeback bringt.",
+  tldr: "Der Rake ist der kleine Anteil, den der Cardroom aus jedem Pot nimmt, um das Spiel auszurichten – meist 2,5–10% bis zu einem Cap – in deutschen Spielbanken €10 bis €20. Die meisten Räume nehmen nichts, wenn vor dem Flop alle folden („no flop, no drop“). Er trifft Low-Stakes- und Short-handed-Spieler am härtesten, und Rakeback gibt Stammspielern einen Teil zurück.",
   category: "glossary",
   date: "2026-07-04",
   updated: "2026-08-18",
@@ -27,7 +27,7 @@ Der Rake (die Gebühr) ist die Art, wie ein Cardroom an einem Spiel verdient, in
 
 :::stripe
 2,5–10% | Typische Pot-Rake-Spanne
-$3–$6 | Übliches Live-Rake-Cap
+€10–€20 | Live-Rake-Cap (Spielbank Berlin)
 No flop, no drop | Meist kein Rake, wenn alle preflop folden
 20–40% | Typischer Rakeback-Deal
 :::
@@ -37,7 +37,7 @@ No flop, no drop | Meist kein Rake, wenn alle preflop folden
 ## Was ist der Rake beim Poker?
 
 > **Kurze Antwort**
-> Der Rake ist die Provision, die ein Cardroom aus einem Cashgame nimmt, weil er es ausrichtet – üblicherweise 2,5–10% jedes Pots bis zu einem Cap von wenigen Dollar. Da Poker Spieler gegen Spieler gespielt wird und das Haus nie selbst setzt, ist der Rake seine eigentliche Einnahmequelle: eine Servicegebühr für Dealer, Tisch, Chips und Security.
+> Der Rake ist die Provision, die ein Cardroom aus einem Cashgame nimmt, weil er es ausrichtet – üblicherweise 2,5–10% jedes Pots bis zu einem Cap – in deutschen Spielbanken €10 bis €20. Da Poker Spieler gegen Spieler gespielt wird und das Haus nie selbst setzt, ist der Rake seine eigentliche Einnahmequelle: eine Servicegebühr für Dealer, Tisch, Chips und Security.
 
 Abgeschöpft wird er nach und nach, Pot für Pot – und genau deshalb merkt man ihn so selten.
 
@@ -58,7 +58,7 @@ Welcher Weg gilt, hängt von den Stakes und vom Raum ab, und die Unterschiede si
 
 | Art | Wie sie genommen wird | Typischer Betrag | Wo du sie siehst |
 |:---|:---|:---:|:---|
-| **Pot Rake (skaliert)** | % jedes Pots, bis zu einem Cap | 2,5–10%, gecappt $1–$6 | Die meisten Low-/Mid-Cashgames, online |
+| **Pot Rake (skaliert)** | % jedes Pots, bis zu einem Cap | Online 2,5–10%, gecappt $1–$3 · live in DE eine Staffel mit Cap €10–€20 | Die meisten Low-/Mid-Cashgames |
 | **Time Charge** | Pauschalgebühr pro Spieler, alle 30 Min. | ~$10–$15 pro Stunde | High-Stakes live ($10/$20+) – und jedes Limit, in dem Pot-Rake nicht möglich ist |
 | **Dead Drop** | Der Button zahlt jede Hand einen festen Rake | Fix pro Hand | Manche Live-Räume |
 | **Turniergebühr** | Vorab aufs Buy-in aufgeschlagen | ~5–20% des Buy-ins | Jedes Turnier |
@@ -69,8 +69,8 @@ Welcher Weg gilt, hängt von den Stakes und vom Raum ab, und die Unterschiede si
 Ein paar Regeln bestimmen, wie der Pot Rake tatsächlich abgeschöpft wird:
 
 - **No flop, no drop.** In den meisten Räumen nimmt das Haus **gar keinen Rake**, wenn die Hand vor dem Flop endet (der Jackpot-Drop läuft davon getrennt) – alle folden auf einen Preflop-Raise. (Nicht überall so: ein paar Seiten, allen voran GGPoker, raken manche Preflop-Pots, prüf also deinen Raum.)
-- **Das Rake-Cap.** Das Haus nimmt auf einem riesigen Pot nie den vollen Prozentsatz – es stoppt bei einem Maximum, meist **$3–$6 live** und **$1–$3 online**. ==Steigen die Stakes, steigt auch das Cap – aber nicht proportional, sondern in groben Stufen==, sodass mehrere Stakes sich dasselbe Cap teilen. Zusätzlich schrumpft es oft, wenn weniger Spieler ausgeteilt bekommen (ein Heads-up-Pot ist vielleicht bei $1 gecappt).
-- **Time Charge statt Pot Rake.** Bei höheren Stakes hören Räume oft auf, Pots zu raken, und kassieren stattdessen eine Pauschalgebühr – sagen wir $10–$15 pro Stunde pro Spieler, alle halbe Stunde genommen. Das ist ein **Fixkosten-Modell**: Wer viele Pots spielt, fährt damit besser; wer tight sitzt oder nur eine Stunde bleibt, zahlt relativ am meisten. Bei großen Pots ist die Ersparnis dagegen klein – gegen ein Cap von $3–$6 hat ein $2.000-Pot ohnehin nur ein paar Dollar abgegeben.
+- **Das Rake-Cap.** Das Haus nimmt auf einem riesigen Pot nie den vollen Prozentsatz – es stoppt bei einem Maximum: live in deutschen Spielbanken **€10 bis €20**, online **$1–$3**. ==Steigen die Stakes, steigt auch das Cap – aber nicht proportional, sondern in groben Stufen==, sodass mehrere Stakes sich dasselbe Cap teilen. Die Rake-Tabelle der Spielbank Berlin zeigt genau das: bei den kleinsten Blinds liegt das Cap bei **€10**, und ab der nächsten Stufe bei **€20** – für alle höheren Limits gleich. Zusätzlich schrumpft es oft, wenn weniger Spieler ausgeteilt bekommen (ein Heads-up-Pot ist vielleicht bei $1 gecappt).
+- **Time Charge statt Pot Rake.** Bei höheren Stakes hören Räume oft auf, Pots zu raken, und kassieren stattdessen eine Pauschalgebühr – sagen wir $10–$15 pro Stunde pro Spieler, alle halbe Stunde genommen. Das ist ein **Fixkosten-Modell**: Wer viele Pots spielt, fährt damit besser; wer tight sitzt oder nur eine Stunde bleibt, zahlt relativ am meisten. Bei großen Pots ist die Ersparnis dagegen klein – gegen ein Cap von €20 hat ein €2.000-Pot ohnehin nur diese €20 abgegeben.
 - **Dead Drop.** Eine seltenere Methode, bei der nur der Spieler am Button jede Hand einen festen Rake zahlt, kassiert bevor die Karten ausgeteilt werden – so konzipiert, dass Gewinner großer Pots nicht stärker besteuert werden als alle anderen.
 
 ---
@@ -80,11 +80,11 @@ Ein paar Regeln bestimmen, wie der Pot Rake tatsächlich abgeschöpft wird:
 > **Kurze Antwort**
 > Deutlich mehr, als der Prozentsatz vermuten lässt – denn er fällt nicht einmal an, sondern auf fast jedem Pot, den du über Stunden gewinnst. Dazu kommt die ==Rake-Falle==: Weil das Cap nach unten kaum nachgibt, nimmt dieselbe Gebühr ganz unten in den Stakes den proportional größten Bissen. Zwei Beispielrechnungen – live und online – stehen gleich hier.
 
-![Ein bescheidener Chip-Pot auf dem Filz, ein paar Dollar bereits als Rake beiseitegezogen, zeigt wie viel eine einzelne Hand still kostet](/images/holdem-rake-lowstakes.webp "In Low-Stakes-Games bewegt sich das Cap kaum, wenn die Pots wachsen, also werden kleine Pots proportional am härtesten gerakt")
+![Ein bescheidener Chip-Pot auf dem Filz, ein paar Euro bereits als Rake beiseitegezogen, zeigt wie viel eine einzelne Hand still kostet](/images/holdem-rake-lowstakes.webp "In Low-Stakes-Games bewegt sich das Cap kaum, wenn die Pots wachsen, also werden kleine Pots proportional am härtesten gerakt")
 
-Hier kommt der Teil, der geändert hat, wie ich über das Spiel denke. Der Prozentsatz klingt winzig – 5%, gecappt bei ein paar Dollar – aber du zahlst ihn auf fast jeden Pot, den du gewinnst, stundenlang.
+Hier kommt der Teil, der geändert hat, wie ich über das Spiel denke. Der Betrag klingt winzig – ein paar Euro pro Pot – aber du zahlst ihn auf fast jeden Pot, den du gewinnst, stundenlang.
 
-**Ein Live-$1/$2-Game.** Bei 10% Rake gecappt bei $5 und rund 30 ausgeteilten Händen pro Stunde erreichen die meisten umkämpften Pots das Cap oder liegen nah dran. Ein einziger belebter Tisch kann **$100+ pro Stunde** in den Drop zahlen, über alle Spieler zusammen. Dieses Geld kommt direkt aus den gemeinsamen Gewinnen – es ist der Grund, warum ein Tisch voller etwa gleich starker Spieler langsam Chips ans Haus verliert.
+**Ein Live-Spiel in einer deutschen Spielbank.** Hier gibt es keine feste Prozentzahl, sondern eine Staffel. Die Spielbank Berlin nimmt in der untersten Blind-Stufe aus einem Pot von €60 bis €99 genau **€4**, ab €100 sind es **€6**, und ab €150 greift das Cap von **€10**. Bei rund 30 ausgeteilten Händen pro Stunde, von denen etwa 20 überhaupt gerakt werden, sind das ==20 × €4 bis 20 × €6 = **€80 bis €120 pro Stunde**== an einem einzigen Tisch, über alle Spieler zusammen. Dieses Geld kommt direkt aus den gemeinsamen Gewinnen – es ist der Grund, warum ein Tisch voller etwa gleich starker Spieler langsam Chips ans Haus verliert.
 
 **Die Low-Stakes-„Rake-Falle“.** Das ist die Pointe, die jeder Anfänger hören sollte. Weil das Cap kaum sinkt, wenn du in den Stakes runtergehst, nimmt der Rake proportional einen *größeren* Bissen, je *niedriger* du spielst. Ein durchgerechnetes Beispiel bei Online-NL50 (illustrativ, und es schwankt damit, wie viele Hände du spielst):
 
@@ -141,7 +141,7 @@ Diese Gebühr – auch **Juice** oder **Vig** genannt – ist das Turnier-Äquiv
 
 Es ist ein echter Trade-off:
 
-- **Live-Rake** tendiert zu einem **höheren Prozentsatz (oft 10%) mit einem höheren Cap ($4–$6)** – aber du spielst nur ~30 Hände pro Stunde, also zahlst du ihn seltener.
+- **Live-Rake** läuft in deutschen Spielbanken gar nicht über eine feste Prozentzahl, sondern über eine **Staffel mit einem Cap von €10 bis €20** – pro Pot deutlich mehr als online, aber du spielst nur ~30 Hände pro Stunde, also zahlst du ihn seltener.
 - **Online-Rake** ist meist ein **niedrigerer Prozentsatz (3–5%) mit einem kleineren Cap ($1–$3)** – aber du siehst vielleicht 250+ Hände pro Stunde über mehrere Tische, sodass ein Volume-Grinder trotz des niedrigeren Satzes *mehr* Rake pro Stunde zahlen kann als ein Live-Spieler.
 
 Die Lektion: Beurteile den Rake nie allein am Prozentsatz. Was zählt, ist der Prozentsatz **mal wie oft du ihn zahlst.** Ein „günstiges“ 5%-Online-Game, das du an vier Tischen spielst, kann dich mehr kosten als ein „teures“ 10%-Live-Game – was genau der Grund ist, warum Rakeback und Tischauswahl online mehr zählen.
@@ -167,9 +167,9 @@ A. Das kommt auf die Methode an. Der Pot Rake wird aus dem Pot genommen, bevor e
 
 A. Meist nicht. Die meisten Räume folgen „no flop, no drop“ – wenn die Hand preflop endet, wird kein Rake genommen. Es ist aber nicht überall so: Ein paar Seiten (allen voran GGPoker) raken manche Preflop-Pots, es lohnt sich also, die Regel deines Raums zu bestätigen.
 
-**Q. Wie viel Rake wird in einem Live-$1/$2-Game genommen?**
+**Q. Wie viel Rake nimmt eine deutsche Spielbank im Cashgame?**
 
-A. Üblicherweise 10% des Pots gecappt bei rund $5. Die meisten umkämpften Pots erreichen das Cap, sodass ein einziger belebter Tisch zusammen $100 oder mehr pro Stunde droppen kann. Diese Gebühr ist der Grund, warum ein Tisch gleich starker Spieler mit der Zeit langsam Chips ans Haus verliert.
+A. Nicht als feste Prozentzahl, sondern nach einer veröffentlichten Staffel. Die Rake-Tabelle der Spielbank Berlin nimmt in der untersten Blind-Stufe aus einem Pot von €10 bis €19 genau **€1**, aus €20 bis €59 **€2**, aus €60 bis €99 **€4** – und ab €150 greift das Cap von **€10**. In den höheren Stufen liegt das Cap bei **€20**. Auf derselben Tabelle steht ausdrücklich **no flop, no drop** und **split pot, no drop**. Jede Spielbank veröffentlicht ihre eigene Tabelle, also lies vor dem Platznehmen die deines Hauses.
 
 **Q. Wie viel Rakeback ist ein guter Deal?**
 
@@ -195,7 +195,7 @@ A. Vier Angaben genügen, und alle vier stehen in den Tischinformationen deines 
 
 ## Die 3 Dinge zum Merken
 
-1. **Der Rake ist der Anteil des Hauses fürs Ausrichten des Spiels** – meist 2,5–10% jedes Pots bis zu einem kleinen Cap, und er ist getrennt von dem, was du gegen Gegner gewinnst oder verlierst.
+1. **Der Rake ist der Anteil des Hauses fürs Ausrichten des Spiels** – meist 2,5–10% jedes Pots bis zu einem Cap, das in deutschen Spielbanken bei €10 bis €20 liegt, und er ist getrennt von dem, was du gegen Gegner gewinnst oder verlierst.
 2. **Er trifft Low Stakes am härtesten.** Das Cap bewegt sich kaum, wenn du runtergehst, also zahlst du proportional den meisten Rake ganz unten – die „Rake-Falle“, die Micro-Stakes so schwer schlagbar macht.
 3. **Rakeback und Struktur zählen.** 20–40% deines Rakes zurückzubekommen und Räume mit spielerfreundlichen Caps zu wählen kann dein langfristiges Ergebnis kippen – miss alles *nach* dem Rake.
 

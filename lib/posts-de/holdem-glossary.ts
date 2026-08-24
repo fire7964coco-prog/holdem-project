@@ -336,7 +336,7 @@ A. Alle drei bringen dir Chips nach, aber zu verschiedenen Zeitpunkten. Ein Rebu
 
 **Q. Was heißt „Cap“ beim Poker?**
 
-A. Das kommt darauf an, wovon gerade die Rede ist. Die Rake-Cap ist die Obergrenze dessen, was das Haus aus einem einzelnen Pot nimmt – live oft ein paar Dollar. Ein Cap-Game deckelt stattdessen den Gesamteinsatz pro Hand, sodass du nie mehr als einen festgelegten Betrag verlieren kannst. Und eine „capped Range“ ist etwas ganz anderes: eine Range, in der die stärksten Hände fehlen, weil der Spieler sie früher geraist hätte.
+A. Das kommt darauf an, wovon gerade die Rede ist. Die Rake-Cap ist die Obergrenze dessen, was das Haus aus einem einzelnen Pot nimmt – in deutschen Spielbanken €10 bis €20, online meist $1 bis $3. Ein Cap-Game deckelt stattdessen den Gesamteinsatz pro Hand, sodass du nie mehr als einen festgelegten Betrag verlieren kannst. Und eine „capped Range“ ist etwas ganz anderes: eine Range, in der die stärksten Hände fehlen, weil der Spieler sie früher geraist hätte.
 
 ---
 
