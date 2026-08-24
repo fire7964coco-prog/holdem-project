@@ -236,7 +236,7 @@ Jetzt dreh es um: Hätte ich dort eine **light** Hand wie A5s 3-gebettet und der
 | **Nie 3-Bet-Bluffen** | Lässt Geld liegen vs. weite Steals; deine Flats werden zu schwach | Balanciere Value mit ein paar Light-3-Bets |
 | **Merged 3-betten vs. einen Nit** | Deine „Value“ ist von ihrer premium-only Range dominiert | Geh polarisiert oder folde einfach vs. einen echten Nit |
 | **Müll 3-Bet-bluffen (Q7o)** | Keine Blocker, keine Equity – du musst gegen jede 4-Bet folden | Wähle nur Blocker-/Playability-Hände |
-| **Zu viel Flatten in den Blinds** | Schlechte Equity-Realisierung OOP; eine schwache, cappbare Range | Bevorzuge eine polarisierte 3-Bet-oder-Fold |
+| **Zu viel Flatten in den Blinds** | Schlechte Equity-Realisierung OOP; eine schwache, cappbare Range | Im Small Blind eine polarisierte 3-Bet-oder-Fold; der Big Blind ist die Ausnahme und verteidigt per Call breiter |
 
 </div>
 
@@ -277,7 +277,7 @@ A. Teile deine 3-Bets in Value und Bluffs. Der Value-Kern ist QQ+ und AK, erweit
 
 **Q. Wann solltest du 3-betten vs. nur callen (flatten)?**
 
-A. 3-bette, wenn du eine Premium hast, wenn der Opener weit und schwach ist, oder wenn du out of Position bist und einen schlechten Flat vermeiden willst. Flatten ist in Position mit spekulativen Händen in Ordnung (kleine Paare, suited Connectors), wo du billige Flops mit dem Button sehen kannst. Out of Position bevorzuge 3-Betten oder Folden gegenüber Callen.
+A. 3-bette, wenn du eine Premium hast, wenn der Opener weit und schwach ist, oder wenn du out of Position bist und einen schlechten Flat vermeiden willst. Flatten ist in Position mit spekulativen Händen in Ordnung (kleine Paare, suited Connectors), wo du billige Flops mit dem Button sehen kannst. Out of Position bevorzuge 3-Betten oder Folden gegenüber Callen – außer im Big Blind: Der schließt die Action und bekommt ohnehin einen Preis, deshalb verteidigt er breiter per Call.
 
 **Q. Was ist eine Light-3-Bet?**
 

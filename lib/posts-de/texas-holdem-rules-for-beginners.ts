@@ -352,7 +352,7 @@ Wenn du eine Draw-Hand hast (z. B. vier Karten zum Flush), zähle deine **Outs**
 
 ⚠ Die ×4-Regel gilt nur, wenn du bis zum River keine weitere Bet mehr zahlst – praktisch also fast nur all-in. Zahlst du am Flop eine Bet und musst am Turn erneut entscheiden, rechne mit **einer** Karte: 9 Outs sind dann 9 ÷ 47 = **~19%**.
 
-Ist deine Gewinnwahrscheinlichkeit **höher** als der Prozentsatz, den die Pot Odds verlangen, ist der Call profitabel. Ist sie niedriger, folde.
+Ist deine Gewinnwahrscheinlichkeit **höher** als der Prozentsatz, den die Pot Odds verlangen, ist der Call profitabel – nimm dafür den Wert, der zu deinem Preis passt: Für einen einzelnen Call am Flop ist das der Ein-Karten-Wert (9 ÷ 47 = **~19%**), nicht die ×4-Zahl. Ist sie niedriger, folde.
 
 ==r:Das ist das wichtigste Mathe-Konzept für Anfänger. Beherrsche es, und du vermeidest automatisch die Hälfte der teuren Fehler, die neue Spieler machen.==
 
