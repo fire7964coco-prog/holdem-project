@@ -277,8 +277,11 @@ const SPOT_GROUPS = [
       { board: "Q♥T♥7♠", name: "Board dinâmico two-tone", note: "Um pote de 3-bet num board que também agrada ao caller — e mesmo assim o 3-bettor não freia: 98,4% do range aposta com o mesmo tamanho de dois terços, e só 0,8% dá check" },
       // 🔴 M-042 RP-17 정정(2026-08-24) — **pt 는 목록에 없던 자리다**(RP-03 과 같은 이유로
       //    랜딩이 목록보다 늦게 생겼다). 종전 「em nada」는 en 의 절대 서술과 같은 형태였다.
-      //    반례 = **백도어 플러시 16.9%(14콤보)**. 🟢 정본은 ja 「ほぼ丸ごと外れる」다.
-      { board: "8♦5♣2♠", name: "Board baixo e seco", note: "Erra quase todo o range de 3-bet e, mesmo assim, os overpairs e as mãos A-high mantêm a pressão — equity contra fold equity" },
+      //    반례: **거트샷 4.8% · 백도어 플러시 16.9%(14콤보)**.
+      //    🔴 **정본은 KO ⑩ `lib/posts/3bet-pot-low-board.ts` 142줄이다** — 초판 주석의 「정본은 ja」는
+      //       **틀렸다**(2026-08-24 사장님 지적). ja 는 «정본과 어긋나지 않은 유일한 랜딩»이었을 뿐이다.
+      //    🟢 문안은 수치로 갔다 — KO 표 실측 **탑 페어 0%**(8이 들어간 핸드가 3벳 레인지에 없다).
+      { board: "8♦5♣2♠", name: "Board baixo e seco", note: "O range de 3-bet não liga nenhum top pair aqui — só gutshots e backdoors — e mesmo assim os overpairs e as mãos A-high mantêm a pressão" },
     ],
   },
   {

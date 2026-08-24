@@ -249,9 +249,11 @@ const SPOT_GROUPS = [
       //    EN 랜딩이 이미 «98.4% fires the same two-thirds size»로 철회·정정했다.
       { board: "Q♥T♥7♠", name: "Board dinámico two-tone", note: "Dos proyectos vivos y aun así el 98,4% del rango dispara con el mismo tamaño de dos tercios" },
       // 🔴 M-042 RP-17 정정(2026-08-24) — 종전 문구는 이 보드가 3벳 레인지를 «통째로» 빗나간다고
-      //    단정했다. 반례 = **백도어 플러시 16.9%(14콤보)**. 🟢 정본은 ja 「ほぼ丸ごと外れる」다.
-      //    🪶 뒤 절이 오버페어로 메이드 핸드를 대비시키므로 앞 절이 말하는 것은 **드로우**다.
-      { board: "8♦5♣2♠", name: "Board bajo y seco", note: "Falla con casi todo el rango de 3-bet, y aun así los sobrepares mantienen la presión" },
+      //    단정했다. 반례: **거트샷 4.8% · 백도어 플러시 16.9%(14콤보)**.
+      //    🔴 **정본은 KO ⑩ `lib/posts/3bet-pot-low-board.ts` 142줄이다** — 초판 주석의 「정본은 ja」는
+      //       **틀렸다**(2026-08-24 사장님 지적). ja 는 «정본과 어긋나지 않은 유일한 랜딩»이었을 뿐이다.
+      //    🟢 문안은 수치로 갔다 — KO 표 실측 **탑 페어 0%**(8이 들어간 핸드가 3벳 레인지에 없다).
+      { board: "8♦5♣2♠", name: "Board bajo y seco", note: "El rango de 3-bet no liga ni un top pair aquí — solo gutshots y proyectos de puerta trasera — y aun así los sobrepares mantienen la presión" },
     ],
   },
   {

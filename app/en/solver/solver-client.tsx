@@ -183,11 +183,17 @@ const SPOT_GROUPS = [
       //    이 스팟의 체크는 0.8%다(§4-B). 3벳터는 여기서 «느려지지» 않는다 — 사이즈가 하나로 뭉칠 뿐이다.
       { board: "Q♥T♥7♠", name: "Dynamic Two-Tone Board", slug: "3bet-pot-bet-sizing", note: "Two live draws — 98.4% of the range fires the same two-thirds size" },
       // 🔴 M-042 RP-17 정정(2026-08-24) — 종전 문구는 이 보드가 3벳 레인지를 «통째로» 빗나간다고
-      //    단정했다. 반례가 있다: **백도어 플러시가 16.9%(14콤보)** 다(M-023 축B 가 ⑩ 본문에서 잡은 값).
-      //    🟢 정본은 ja 「ほぼ丸ごと外れる」이고 en·es·pt 를 거기 맞췄다 — **반대로 하지 마라.**
-      //    🪶 뒤 절이 오버페어로 «메이드 핸드»를 대비시키므로 앞 절이 말하는 것은 **드로우**다.
-      //       그 구분이 이 자리의 판정 근거였다.
-      { board: "8♦5♣2♠", name: "Low Dry Board", note: "Misses almost all of the 3-bet range, yet overpairs keep the pressure on" },
+      //    단정했다. 반례: **거트샷 4.8% · 백도어 플러시 16.9%(14콤보)** 로 ~21.7%가 무언가를 갖는다.
+      //    🔴 **정본은 KO ⑩ `lib/posts/3bet-pot-low-board.ts` 142줄이다** —
+      //       「거트샷 4.8% · 백도어 플러시 16.9%(14콤보) · 드로우 없음 78.3%. 셋을 더해야 100이 된다」.
+      //       ⚠ 초판 주석은 「정본은 ja」라고 적었는데 **틀렸다**(2026-08-24 사장님 지적).
+      //       ja 는 정본이 아니라 **«정본과 어긋나지 않은 유일한 랜딩»**이었을 뿐이고,
+      //       그 완화가 판단이었다는 근거도 없다(ja 파일에 16.9·78.3 언급 0건).
+      //    🪶 같은 글 헤더 41~43줄이 **KO 자신도 같은 오류를 냈다가 M-023 축B 로 고쳤다**고 기록한다.
+      //       랜딩들은 그 고침을 못 받았다.
+      //    🟢 문안은 «완화»가 아니라 **수치**로 갔다 — KO 표 실측 **탑 페어 0%**
+      //       (8이 들어간 핸드가 3벳 레인지에 없다). 오버페어와 층이 달라 뒤 절과 충돌하지 않는다.
+      { board: "8♦5♣2♠", name: "Low Dry Board", note: "The 3-bet range flops no top pair at all here — just gutshots and backdoors — yet overpairs keep the pressure on" },
     ],
   },
   {
