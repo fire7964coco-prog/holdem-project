@@ -139,7 +139,26 @@ const ZH: HubLabels = {
   languages: "🌐 社区语言",
 };
 
-const MAP: Partial<Record<SecondaryLocale, HubLabels>> = { en: EN, ja: JA, es: ES, pt: PT, de: DE, zh: ZH };
+/**
+ * ★2026-08-24 신설 — `/zh-hant/solver` 랜딩과 함께(8번째 = 마지막). 값은 전부
+ *   `app/community/community-client.tsx`의 `LABELS["zh-hant"]`에서 **축어 그대로** 옮겼다
+ *   (login/writePost/trendingTitle/eventBadge/eventTitle/eventDesc/eventDrawSchedule/
+ *    eventButton/communityLang 9키 대조 완료). **다시 번역하지 마라** — 위 ⚠ 경고 참조.
+ *   pt 사례(항목이 없어서 셸·사이드바가 통째로 영어로 떨어질 뻔한 것)를 여기서도 막는다.
+ */
+const ZH_HANT: HubLabels = {
+  login: "登入",
+  write: "✏️ 發文",
+  trending: "🔥 本週熱門",
+  eventBadge: "🎰 活動 · 準備中",
+  eventTitle: "選6個數字\n贏取禮品券！",
+  eventDesc: "3個號碼 → $30 · 4 → $200\n5 → $1,000",
+  eventSchedule: "🔗 每週日晚7點 (KST)\n比特幣區塊雜湊自動抽籤",
+  eventButton: "查看活動 →",
+  languages: "🌐 社群語言",
+};
+
+const MAP: Partial<Record<SecondaryLocale, HubLabels>> = { en: EN, ja: JA, es: ES, pt: PT, de: DE, zh: ZH, "zh-hant": ZH_HANT };
 
 /** locale이 null/undefined면 한국어 */
 export function hubLabels(locale: SecondaryLocale | null | undefined): HubLabels {

@@ -83,6 +83,8 @@ export const metadata: Metadata = {
       "pt-BR": `${SITE}/pt/solver`,
       "de-DE": `${SITE}/de/solver`,
       "zh-Hans": `${SITE}/zh/solver`,
+      // ★ 2026-08-24 — `/zh-hant/solver` 신설. **여덟 랜딩이 같은 세트**여야 게이트를 통과한다.
+      "zh-Hant": `${SITE}/zh-hant/solver`,
     },
   },
   // twitter:*를 안 주면 루트 레이아웃의 한국어가 그대로 나간다(2026-08-23 게이트 `check:meta-lang`)

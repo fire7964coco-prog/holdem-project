@@ -174,6 +174,21 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
     { href: "/zh/solver",      icon: "🧠", label: "GTO 求解器" },
     { href: "/zh/tournaments", icon: "🏆", label: "锦标赛" },
   ],
+  /**
+   * ★2026-08-24 — `/zh-hant/solver` 신설과 함께 추가(8번째 = 마지막 솔버 랜딩). 라벨은 전부
+   *   검증된 값에서 축어 복사: "部落格" = CHROME["zh-hant"].blogLabel(lib/intl.ts) ·
+   *   "GTO 解算器"는 솔버 본체를 `?lang=zh-hant`로 열어 읽은 축어(`<title>` = "HoldemMaster
+   *   GTO 解算器 —— 免費線上德州撲克 GTO Solver" — 🔴 간체 앱의 «求解器»와 **다른 표기**다.
+   *   간체 항목을 자형만 바꿔 복사하지 마라) · "錦標賽" = ZH_HANT_CLUSTERS tournament
+   *   pillarLabel(lib/pillar-clusters.ts).
+   *   🔴 라벨은 «검색 축»이 아니라 «메뉴 이름»이다 — «GTO·solver 단독 금지» 규율(뱅크 §1)과
+   *      층이 다르다.
+   */
+  "zh-hant": [
+    { href: "/zh-hant/blog",        icon: "📚", label: "部落格" },
+    { href: "/zh-hant/solver",      icon: "🧠", label: "GTO 解算器" },
+    { href: "/zh-hant/tournaments", icon: "🏆", label: "錦標賽" },
+  ],
 };
 
 /**
@@ -183,7 +198,8 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
  * de도 같은 규칙: guideLink "Zum Guide" → "Guides"(독일 포커 매체가 실제로 쓰는 차용어).
  */
 // zh도 같은 규칙: BOARD_STRINGS.zh guideLink "详细指南" → "指南"(ja 詳細ガイド→ガイド와 동형).
-const HUB_HEADING: Record<string, string> = { en: "Guides", ja: "ガイド", es: "Guías", de: "Guides", zh: "指南" };
+// zh-hant도 동일: BOARD_STRINGS["zh-hant"] guideLink "詳細指南" → "指南"(2026-08-24).
+const HUB_HEADING: Record<string, string> = { en: "Guides", ja: "ガイド", es: "Guías", de: "Guides", zh: "指南", "zh-hant": "指南" };
 
 /**
  * 그 로케일의 허브 메뉴 — **좌측 레일과 모바일 상단 탭이 같은 목록을 쓴다.**

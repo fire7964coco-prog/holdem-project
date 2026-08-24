@@ -151,6 +151,14 @@ const STATIC_ROUTES = [
   { path: "/zh/solver", priority: "0.7", changefreq: "monthly" },
 
   /**
+   * ★2026-08-24 신설 — `/zh-hant/solver`(8번째 = 마지막 솔버 랜딩). 위 여섯과 같은 구조·
+   *   같은 가중치(0.7)다. 솔버 본체(`?lang=zh-hant`)는 noindex이므로 번체권(대만·홍콩) 검색은
+   *   이 랜딩이 전담한다 — 신설 전까지 그 진입로가 0개였다.
+   *   🔴 빌드 후 `.next/server/app/zh-hant/solver.html`의 meta가 **index, follow**인지 확인할 것.
+   */
+  { path: "/zh-hant/solver", priority: "0.7", changefreq: "monthly" },
+
+  /**
    * ★`/holdem-practice` 누락 복구 (2026-08-04). 색인 가능(index, follow)하고 좌측 레일에도
    *   있는 한국어 도구 페이지인데 사이트맵에만 빠져 있었다.
    *   `npm run canonical:check`의 C-6 검사가 잡았다.

@@ -73,6 +73,10 @@ const LOCALE_HUB_ROUTES: Record<string, readonly string[]> = {
   //      진입로가 0개였다(본체는 noindex). ⚠ `app/zh/`에 있는 것은 blog·tournaments·solver
   //      셋뿐이다 — 없는 라우트(hand-chart·calculator…)를 넣지 마라.
   zh: ["/zh/blog", "/zh/solver", "/zh/tournaments"],
+  // zh-hant — ★2026-08-24 `/zh-hant/solver` 신설과 함께 추가(8번째 = 마지막 솔버 랜딩 —
+  //      앱 8언어 = 랜딩 8개 완성). 번체권(대만·홍콩)에 솔버 진입로가 0개였다(본체는 noindex).
+  //      ⚠ `app/zh-hant/`에 있는 것은 blog·tournaments·solver 셋뿐이다 — 없는 라우트를 넣지 마라.
+  "zh-hant": ["/zh-hant/blog", "/zh-hant/solver", "/zh-hant/tournaments"],
 };
 
 /**

@@ -59,7 +59,8 @@ export const metadata: Metadata = {
     //    구글은 세트 전체를 무시하고 게이트는 빌드를 세운다.
     //    ⚠ `zh-CN`이 아니라 **`zh-Hans`(스크립트 서브태그)**다 — 대상이 «중국»이 아니라
     //       «구글 도달 간체 독자»(SG·MY 등)이고, 블로그 hreflang 컨벤션(lib/intl.ts
-    //       HTML_LANG: zh → zh-Hans)과도 맞춘다. zh-hant 랜딩이 열리면 `zh-Hant`가 나란히 선다.
+    //       HTML_LANG: zh → zh-Hans)과도 맞춘다.
+    //    ★2026-08-24 — `/zh-hant/solver` 신설과 함께 `zh-Hant`가 나란히 섰다(여덟 파일 동시).
     languages: {
       "ko-KR": `${SITE}/solver`,
       "en-US": `${SITE}/en/solver`,
@@ -68,6 +69,7 @@ export const metadata: Metadata = {
       "pt-BR": `${SITE}/pt/solver`,
       "de-DE": `${SITE}/de/solver`,
       "zh-Hans": `${SITE}/zh/solver`,
+      "zh-Hant": `${SITE}/zh-hant/solver`,
     },
   },
   // twitter:*를 안 주면 루트 레이아웃의 한국어가 그대로 나간다(check:meta-lang 게이트)
