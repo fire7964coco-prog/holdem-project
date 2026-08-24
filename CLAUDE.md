@@ -8,7 +8,8 @@
 > (2026-08-11에 532줄 → 이 크기로 축약. 원본 전문은 `docs/CLAUDE-full-backup-2026-08-11.md`)
 
 ### 세션 시작 시
-1. `session-handoff.md` **통독** — «지금 할 일»만 담겨 있다
+1. `session-handoff.md` **통독** — «다음 할 일 + 미결»만 담겨 있다(2026-08-24 재구조화로 슬림).
+   경위는 `WORKLOG.md`, 지난 핸드오프 전문은 `docs/handoff-archive/`(통독 금지)
 2. 🔴 **`git status`를 먼저 본다.** 커밋 안 된 수정이 있으면 `git diff --stat`으로 내용을 확인하라 —
    이 레포는 **편집기 사고로 문서가 통째로 비워지는 일이 두 번 있었다**(2026-06-10 `SEO_COPY_GUIDELINES.md`
    10KB → 0, 2026-08-11 같은 파일 재발 + `session-handoff.md`가 낡은 7월판으로 덮임 +
@@ -155,7 +156,11 @@ Phase 6 완료(로그인·피드·다국어·번역·이벤트·실시간 채팅
 - [ ] (FAQ 손댔으면) `npm run audit:hard -- --schema`
 - [ ] `git push` → Vercel 배포 확인
 - [ ] `WORKLOG.md` 최상단에 날짜·작업내용 기록
-- [ ] `session-handoff.md` 다음 세션 할 일 갱신
+- [ ] `session-handoff.md` 갱신 — 🔴 **3단 마감**(2026-08-24 재구조화): ① 이번 회차 경위는
+      `WORKLOG.md`로 ② 새로 생긴 **영구 규율·확정 결정은 정본 문서로 승격**(§19 라우팅의
+      `settled-decisions`·플레이북·프로토콜 등) ③ 핸드오프에는 **«다음 할 일 + 미결»만** 남긴다
+      (미결은 해결될 때까지 유지 — 지우지 않고 다음 세션으로 넘긴다). 시한 항목은
+      `docs/update-calendar.md`로. 핸드오프를 대청소하면 이전본을 `docs/handoff-archive/`에 보관
 - [ ] 임시 스크립트(`*.mjs`, `commit-msg.txt`) 삭제
 
 ## 12-A. 🔴 백틱 금지 (빌드 파손)
@@ -281,6 +286,11 @@ D유형(전략적 유해 조언)·F유형(사실 오류)에 시간을 쓴다) **
 | **로케일마다 «일부러 다른» 자리인지 판정** | `docs/locale-intentional-diffs.md` ← 없으면 «아직 판정 안 함»이다 |
 | **키워드를 조사한다 (전 언어)** | `docs/rakko-playbook.md` ← **본체.** 도구 3종 분업(**발굴·SD=DataForSEO / 볼륨·시계열=라쿠 / lowfruits=SERP 약점**) · 🔴 **`language`는 볼륨을 안 나눈다** · 🔴 **CPC는 벤더 간 30배라 근거 금지** |
 | 키워드·발행 우선순위 | `docs/keyword-bank/00-SYNTHESIS-roadmap.md` · `docs/en-blog-pillar-cluster-map.md` |
+| **«이거 해도 되나?» — 확정 결정·상시 규율 확인** | `docs/settled-decisions.md` ← **재론 금지 목록.** 되살리기 전 필독 |
+| **검수장·솔버 세션과 주고받기(우편함·라이브 확인)** | `docs/mailbox-protocol.md` |
+| **다국어 솔버 랜딩(`/{locale}/solver`) 신설·유지보수** | `docs/solver-landing-playbook.md` |
+| **시한이 박힌 갱신 항목** | `docs/update-calendar.md` ← 시한은 핸드오프가 아니라 여기 |
+| 지난 핸드오프 원문(경위 추적) | `docs/handoff-archive/` ← 통독 금지, grep으로 찾을 때만 |
 | 커뮤니티 손댈 때 | `docs/community-status.md` · `supabase/schema.sql` |
 | 성능·빌드·GSC 루틴 | `.cursor/rules/tech.mdc` |
 | Windows 함정 | `docs/windows-notes.md` |
