@@ -248,7 +248,10 @@ const SPOT_GROUPS = [
       //    §4-B ⑨: 벳 합계 **99.1%**(큰 사이즈 98.4 + 작은 사이즈 0.7), 체크는 **0.8%**다(🔴 100−99.1로 «빼서» 구하면 0.9가 나온다 — 개별 반올림값의 합은 100이 아니다).
       //    EN 랜딩이 이미 «98.4% fires the same two-thirds size»로 철회·정정했다.
       { board: "Q♥T♥7♠", name: "Board dinámico two-tone", note: "Dos proyectos vivos y aun así el 98,4% del rango dispara con el mismo tamaño de dos tercios" },
-      { board: "8♦5♣2♠", name: "Board bajo y seco", note: "No conecta en absoluto con el rango de 3-bet, y aun así los sobrepares mantienen la presión" },
+      // 🔴 M-042 RP-17 정정(2026-08-24) — 종전 문구는 이 보드가 3벳 레인지를 «통째로» 빗나간다고
+      //    단정했다. 반례 = **백도어 플러시 16.9%(14콤보)**. 🟢 정본은 ja 「ほぼ丸ごと外れる」다.
+      //    🪶 뒤 절이 오버페어로 메이드 핸드를 대비시키므로 앞 절이 말하는 것은 **드로우**다.
+      { board: "8♦5♣2♠", name: "Board bajo y seco", note: "Falla con casi todo el rango de 3-bet, y aun así los sobrepares mantienen la presión" },
     ],
   },
   {

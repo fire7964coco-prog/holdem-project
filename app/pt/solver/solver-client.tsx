@@ -275,7 +275,10 @@ const SPOT_GROUPS = [
       //    §4-B ⑨: 벳 합계 99.1%(큰 사이즈 98.4 + 작은 사이즈 0.7), 체크 **0.8%**.
       //    🔴 100−99.1로 «빼서» 구하면 0.9가 나온다 — 개별 반올림값의 합은 100이 아니다.
       { board: "Q♥T♥7♠", name: "Board dinâmico two-tone", note: "Um pote de 3-bet num board que também agrada ao caller — e mesmo assim o 3-bettor não freia: 98,4% do range aposta com o mesmo tamanho de dois terços, e só 0,8% dá check" },
-      { board: "8♦5♣2♠", name: "Board baixo e seco", note: "Não conecta em nada com o range do 3-bet e, mesmo assim, os overpairs e as mãos A-high mantêm a pressão — equity contra fold equity" },
+      // 🔴 M-042 RP-17 정정(2026-08-24) — **pt 는 목록에 없던 자리다**(RP-03 과 같은 이유로
+      //    랜딩이 목록보다 늦게 생겼다). 종전 「em nada」는 en 의 절대 서술과 같은 형태였다.
+      //    반례 = **백도어 플러시 16.9%(14콤보)**. 🟢 정본은 ja 「ほぼ丸ごと外れる」다.
+      { board: "8♦5♣2♠", name: "Board baixo e seco", note: "Erra quase todo o range de 3-bet e, mesmo assim, os overpairs e as mãos A-high mantêm a pressão — equity contra fold equity" },
     ],
   },
   {

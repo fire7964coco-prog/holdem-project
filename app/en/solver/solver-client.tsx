@@ -182,7 +182,12 @@ const SPOT_GROUPS = [
       // 🔴 2026-08-20 정정: 옛 note가 "watch where the 3-bettor slows down"이었는데 **거짓**이다.
       //    이 스팟의 체크는 0.8%다(§4-B). 3벳터는 여기서 «느려지지» 않는다 — 사이즈가 하나로 뭉칠 뿐이다.
       { board: "Q♥T♥7♠", name: "Dynamic Two-Tone Board", slug: "3bet-pot-bet-sizing", note: "Two live draws — 98.4% of the range fires the same two-thirds size" },
-      { board: "8♦5♣2♠", name: "Low Dry Board", note: "Misses the 3-bettor entirely, yet overpairs keep the pressure on" },
+      // 🔴 M-042 RP-17 정정(2026-08-24) — 종전 문구는 이 보드가 3벳 레인지를 «통째로» 빗나간다고
+      //    단정했다. 반례가 있다: **백도어 플러시가 16.9%(14콤보)** 다(M-023 축B 가 ⑩ 본문에서 잡은 값).
+      //    🟢 정본은 ja 「ほぼ丸ごと外れる」이고 en·es·pt 를 거기 맞췄다 — **반대로 하지 마라.**
+      //    🪶 뒤 절이 오버페어로 «메이드 핸드»를 대비시키므로 앞 절이 말하는 것은 **드로우**다.
+      //       그 구분이 이 자리의 판정 근거였다.
+      { board: "8♦5♣2♠", name: "Low Dry Board", note: "Misses almost all of the 3-bet range, yet overpairs keep the pressure on" },
     ],
   },
   {
