@@ -584,11 +584,13 @@ export default function SolverClientFr() {
             0,05bb) évitent de compter les écarts minuscules comme des erreurs
           </li>
           {/*
-            🔴 2026-08-25 정정(검수장 M-061 F-1) — 초판은 «des dizaines de milliers»(수만)였다.
-            실측은 **13,743**(ko 랜딩 주석의 라이브 계수 산식)이라 «복수 dizaines = 2만 이상»
-            함의가 위로 벗어난다. ko 주석이 세운 자기 규율은 «스팟이 늘어도 참인 **하한 표현**»이고,
+            🔴 2026-08-25 정정(검수장 M-061 F-1) — **초판은 «수만 가지»라는 복수형 표현이었다.**
+            실측은 **13,743**(ko 랜딩 주석의 라이브 계수 산식)이라 «수만 = 2만 이상» 함의가
+            위로 벗어난다. ko 주석이 세운 자기 규율은 «스팟이 늘어도 참인 **하한 표현**»이고,
             나머지 7로케일도 전부 하한형이다(en «run past ten thousand» · es «pasan de diez mil» ·
             pt «passam de dez mil»). 그래서 «plus de dix mille»로 맞췄다.
+            ⚠ **폐기 문구를 원어 축어로 적지 마라**(M-047 §2 · LESSONS §5-7 — 원어를 박으면
+               회귀 앵커가 «결함형 0»을 검사하지 못하고 «기준선 1»로 타협해야 한다. 한국어 의역으로).
             ⚠ **정확한 수를 박지 마라** — 그 데이터는 솔버가 소유해 우리 빌드가 못 읽는다(반드시 낡는다).
           */}
           <li className="text-muted-foreground">
