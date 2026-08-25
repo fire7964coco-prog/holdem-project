@@ -2,7 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { localeFromPath, HTML_LANG, NAV_CTA, NAV_HOME_FEED, dirForLocale, SECONDARY_LOCALES } from "@/lib/intl";
+import { localeFromPath, HTML_LANG, NAV_CTA, NAV_HOME_FEED, dirForLocale, SECONDARY_LOCALES, CHROME } from "@/lib/intl";
 import BlogTopBar from "@/components/blog-top-bar";
 import { hasBottomTabBar } from "@/components/bottom-tab-bar";
 import { FixedSideRail, hasFixedSideRail } from "@/components/side-rail";
@@ -66,6 +66,34 @@ const BACK_TO_TOP: Record<string, string> = {
   fa: "بازگشت به بالا", sw: "Rudi juu", bn: "উপরে ফিরে যান",
   ro: "Înapoi sus", fil: "Bumalik sa itaas", uk: "Догори", he: "חזרה למעלה",
 };
+
+/**
+ * ★접근성 skip-link — **body의 첫 포커스 요소**라 위치를 바꾸지 마라.
+ *
+ * 2026-08-16에 죽은 `components/header.tsx`에서 app/layout.tsx로 이식했는데,
+ * 그때 라벨을 «본문 바로가기» 한국어로 하드코딩했다. 루트 레이아웃은 서버 컴포넌트라
+ * 경로를 못 봐서 **비한국어 541페이지 전부**가 한국어 라벨을 내보내고 있었다
+ * (2026-08-25 빌드 산출물 실측). 시각적으로 숨겨져 있어 «무해하다»고 적어 뒀지만
+ * 스크린리더는 이 문자열을 **읽는다** — 독일어 페이지에서 한국어가 낭독됐다.
+ *
+ * 🔴 새 문자열을 짓지 않았다. `CHROME[locale].skip`이 25개 언어 전부 이미 있었는데
+ *    (죽은 header.tsx가 쓰던 것) 이식 때 아무도 안 가져다 썼을 뿐이다.
+ *
+ * 클라이언트 컴포넌트지만 정적 프리렌더에 라벨이 그대로 박힌다 — SiteFooter가 같은
+ * 방식으로 de/blog.html에 독일어 tagline을 이미 넣고 있는 것이 그 증거다.
+ */
+export function SkipLink() {
+  const pathname = usePathname() || "/";
+  const locale = localeFromPath(pathname);
+  return (
+    <a
+      href="#main-content"
+      className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-primary focus:text-primary-foreground focus:px-4 focus:py-2 focus:rounded-md"
+    >
+      {locale ? CHROME[locale].skip : "본문 바로가기"}
+    </a>
+  );
+}
 
 /** 스크롤 300px 이상 시 나타나는 맨 위로 버튼 */
 export function ScrollToTopButton() {

@@ -4,7 +4,7 @@ import { Inter, Lora } from "next/font/google";
 import localFont from "next/font/local";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
-import { SiteHeader, SiteFooter, HtmlLangSync, MainContent, ScrollToTopButton, SiteRail } from "@/components/site-chrome";
+import { SiteHeader, SiteFooter, HtmlLangSync, MainContent, ScrollToTopButton, SiteRail, SkipLink } from "@/components/site-chrome";
 import { BrushDefs } from "@/components/brush-defs";
 import SitePopup from "@/components/site-popup";
 import "./globals.css";
@@ -243,18 +243,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         {/*
-         * ★접근성 skip-link (2026-08-16 이식). 원래 components/header.tsx에 있었지만
-         *   그 컴포넌트는 어디서도 import되지 않는 죽은 코드여서 **사이트에 skip-link가
-         *   0개**였다. 대상 앵커 #main-content는 site-chrome.tsx의 <main>에 이미 있다.
-         *   한국어 하드코딩이 아니라 시각적으로 숨겨진 요소라 다국어 페이지에도 무해하다
-         *   (포커스 시에만 노출 — 스크린리더·키보드 사용자용).
+         * ★접근성 skip-link (2026-08-16 이식 · 2026-08-25 다국어화).
+         *   원래 components/header.tsx에 있었지만 그 컴포넌트는 어디서도 import되지 않는
+         *   죽은 코드여서 **사이트에 skip-link가 0개**였다. 대상 앵커 #main-content는
+         *   site-chrome.tsx의 <main>에 이미 있다.
+         *   ⚠ 2026-08-16 이식 때 «시각적으로 숨겨진 요소라 다국어 페이지에도 무해하다»고
+         *     적었는데 **틀렸다** — 스크린리더는 이 문자열을 읽는다. 라벨 다국어화는
+         *     site-chrome.tsx의 SkipLink 주석 참조(경로를 봐야 해서 클라이언트 컴포넌트다).
          */}
-        <a
-          href="#main-content"
-          className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-primary focus:text-primary-foreground focus:px-4 focus:py-2 focus:rounded-md"
-        >
-          본문 바로가기
-        </a>
+        <SkipLink />
         <BrushDefs />
         <HtmlLangSync />
         <SiteHeader />
