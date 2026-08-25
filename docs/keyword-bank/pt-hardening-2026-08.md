@@ -95,7 +95,63 @@ quais sao as maos de poker
   → **rules-for-beginners** H2/FAQ 편입 + «연습은 트레이너» CTA 명분(솔버 랜딩 연계)
 - `melhor site de poker para iniciantes`(2/1) — 사이트 추천 의도, 우리 톤에서는 «어디서 배우나»로만
 
-### 시드 4·5·7~10 — 대기 (도착 순 편입)
+### 시드 7 `probabilidade * poker` (78행 · analyzed 26)
+
+- **winnable = 개별 족보 확률 롱테일** → `holdem-probability` H2/FAQ 몫:
+  `probabilidade aa poker`(5/2 · DA20) · `probabilidade flush poker`(3/1) ·
+  `probabilidade quadra poker`(10 · 2/1) · `probabilidade sequencia poker`(1/1 · FS)
+- 🟢 **`calculadora (de) probabilidade poker` 40+30+10 · 최저 DA 6** + `simulador de probabilidade
+  poker`(DA6) — 계산기·도구 수요의 약점층 → **pot-odds 글 + 솔버 랜딩 Equity 탭**이 받는다
+- `tabela de probabilidade poker` 20 · `probabilidade das maos do poker`(FS) — probability 표 H2 ·
+  rankings 연결
+
+### 시드 8 `estrategia de poker` (139행 · analyzed 36)
+
+- 코어 축이 표기 변형으로 잘게 분산(estrategia poker/do/de/estratégia… 90×4+30+20×2+10×2 ≈
+  합 450+) — 개별 볼륨은 작아도 **합산 수요는 실재**, 대부분 약점 1/1
+- **전략 서브축 winnable** — `holdem-strategy`·tournament 클러스터·솔버 랜딩 몫:
+  `estrategia mtt poker`(약점 4/3! · DA6) · `estrategia zoom poker`(4/2 · DA3) ·
+  **`estrategia gto poker`(3/2 · DA14 — pt 솔버 랜딩·strategy GTO 축 연결)** ·
+  `estrategia preflop poker`(3/1 · DA14) · `estrategia poker cash`(2/2) · `cash 6 max`(2/1) ·
+  `estratégia torneio de poker`(2/1) · `pko`(2/1 · FS) · `deepstack`(2/1) · `pdf`(10)
+- ⚠ **스페인어 혼입 신호**: `estrategia del poker`(90) · `para torneos` · `libros de` — 브라질
+  SERP에 es 콘텐츠가 랭크 중 = pt-BR 네이티브 글이 비어 있다는 약점 방증
+- 노이즈 제외: `estrategia pokerogue`(게임) · `video poker`(카지노 머신)
+
+### 시드 9 `range * poker` (915행 · analyzed 335) — ★이번 수확의 금맥
+
+🔴 **«레인지» 축 전체가 pt-BR에서 무주공산이다** — 분석 335행 중 winnable 300+.
+⚠ 단 다국어 노이즈 대량 혼입(fr `tableau/ouverture` · it `cosa sono` · vi `trong poker`) —
+브라질 SERP가 약해 외국어 결과가 끌려온 것 자체가 약점의 방증. **pt 문자열만 채택한다.**
+
+- **pt 코어(볼륨+약점 동시)**: **`range poker` 590(약점 5/2 · 최저 DA 10)** ·
+  `range de mão poker` 210(FS) · `range de maos poker` 210(5/1 · DA11 · FS) ·
+  `tabela de range poker` 110(5/0 · DA10) · `range de poker` 70(4/2) ·
+  **`range calculator poker` 50(4/2 · DA7)** · `range de mãos poker pdf` 40 ·
+  `range de mãos por posição poker` 30(6/1 · DA11) · `range poker por posição` 20(4/0)
+- **pt 개념 롱테일(전부 약점층)**: `vantagem de range poker`(6/2 · DA7 — **레인지 우위!** GTO
+  시리즈 ①~④ 개념) · `range polarizado`(6/3 · FS) · `range capado`(4/2) · `range inelastico`(7/2) ·
+  `range complementar`(4/2) · `montar range poker`(5/3) · `tipos de range poker`(5/2) ·
+  `o'que é range poker`(5/2) · `range mao poker` · `range 3bet`(5/2 · FS) · `4bet range`(5/1 · DA1)
+- **도구 수요**: `aplicativo de range poker`(5/1 · DA3) · `calculadora de range poker`(5/1 · DA7) ·
+  `range vs range poker calculator`(7/2 · DA1) · `range trainer/training/practice/drills`(5/3계) —
+  **pt 솔버 랜딩 + 앱 Charts préflop·트레이너가 정면으로 받는 자리**
+- 배정: **starting-hands-chart(레인지 표 본진) + holdem-strategy(개념) + pt 솔버 랜딩(도구·GTO)**
+- 노이즈 제외: rampart range poker run(오토바이 행사) · the range ×n(영국 리테일러) ·
+  range rover · outer range(TV) · 외국어 행 전부
+
+### 시드 10 `* torneio de poker` (178행 · analyzed 38)
+
+- **«토너먼트 운영자» 수요가 약점층 최저 DA 1~6**: sistema/software/gerenciador/planilha/
+  programa/organizar/estrutura/blinds/fichas para torneio — 🪶 **코퍼스 밖(주최자 도구·콘텐츠
+  신설 후보로만 기록.** 단 `estrutura de torneio`(5/3 · DA4)·`blinds torneio de poker`(5/3 · FS)는
+  **holdem-tournament 글의 블라인드 구조 H2**가 일부 흡수 가능
+- 플레이어 의도 winnable: `o que e torneio de poker`(4/1) · `tipos de torneio de poker`(4/1 · DA8) ·
+  `dicas (para jogar) torneio`(4/2·2/2) · `regras (de) torneio de poker`(10 · 3/1 · DA5) ·
+  `maior torneio de poker`(1/1 · FS) → **holdem-tournament·tournament-vs-cash-game 몫**
+- 노이즈: neymar 뉴스류(DA83~92) · banner/flyer/trofeu(인쇄물)
+
+### 시드 4 `como * no poker` · 시드 5 `o que e * no poker` — 대기
 
 ## 3. 다음 실측 할 일
 
