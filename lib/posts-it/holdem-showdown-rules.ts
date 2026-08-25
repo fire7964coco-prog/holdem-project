@@ -57,7 +57,7 @@ Sì — **se hai perso**.
 
 Una volta che l'ultimo aggressore mostra la sua mano, gli altri giocatori possono:
 - **Mostrare la propria mano** se pensano di vincere
-- **Passarla coperta nel muck** se vedono di aver perso — non serve rivelare le tue carte. Vale però solo finché nessuno è andato all-in: appena un giocatore è all-in, la regola 16 TDA impone di mostrare tutte le mani del piatto e nessuno può passare
+- **Passarla coperta nel muck** se vedono di aver perso — non serve rivelare le tue carte. Vale però solo finché nessuno è andato all-in: nei tornei, appena un giocatore è all-in, la regola 16 TDA impone di mostrare tutte le mani del piatto e nessuno può passare (nel cash valgono le regole della casa, e nella maggior parte delle sale chi paga può passare coperto)
 
 ==r:Ma c'è un'eccezione importante:== se la tua puntata al river è stata pagata, chi ha pagato ha versato il prezzo pieno per vedere la tua mano. Chiedere al dealer di girare una mano finita nel muck è la regola del **"I want to see that hand"**. Nei tornei la regola 18 TDA la restringe: chi allo showdown non ha più carte, o le ha passate coperte, perde il diritto di chiederlo; il diritto è intoccabile solo per chi ha pagato la puntata al river e ha mostrato o trattenuto le proprie carte, e solo sulla mano dell'ultimo aggressore. Tutto il resto è a discrezione del direttore di torneo, e nel cash molte sale sono più larghe di manica. (Da non confondere con "show one, show all", che significa che se mostri le tue carte volontariamente a un giocatore, tutto il tavolo ha diritto di vederle.)
 
@@ -84,7 +84,7 @@ Quando un giocatore va all-in e non sono più possibili puntate, di solito si di
 | Scenario di all-in | Regola dello showdown |
 |----------------|---------------|
 | Un giocatore va all-in, gli altri pagano, nessuna puntata ulteriore possibile | Tutte le mani scoperte prima o durante la distribuzione |
-| Una puntata all-in al river viene pagata | Chi è andato all-in mostra per primo come ultimo aggressore — ma ==r:qui non può passare nessuno==: per la regola 16 TDA anche chi paga deve mostrare |
+| Una puntata all-in al river viene pagata | Chi è andato all-in mostra per primo come ultimo aggressore — e in torneo ==r:qui non può passare nessuno==: per la regola 16 TDA anche chi paga deve mostrare |
 | Più all-in che creano più side pot | Ogni piatto si risolve separatamente; si mostrano tutte le mani coinvolte |
 
 </div>
@@ -166,7 +166,7 @@ A. L'ultimo giocatore che ha fatto un'azione aggressiva (puntare o rilanciare) n
 
 **Q. Devi mostrare le carte se ti pagano allo showdown?**
 
-A. Sì — se sei stato l'ultimo a puntare o rilanciare al river, devi mostrare per primo quando ti pagano. Se hai pagato la puntata di un altro, puoi passare le carte coperte dopo aver visto la sua mano se hai perso. L'eccezione è l'all-in: per la regola 16 TDA anche chi paga deve mostrare. E nei tornei può chiedere di vedere una mano solo chi ha ancora le carte o le ha mostrate — in modo intoccabile, solo quella dell'ultimo aggressore.
+A. Sì — se sei stato l'ultimo a puntare o rilanciare al river, devi mostrare per primo quando ti pagano. Se hai pagato la puntata di un altro, puoi passare le carte coperte dopo aver visto la sua mano se hai perso. L'eccezione è l'all-in in torneo: per la regola 16 TDA anche chi paga deve mostrare. E nei tornei può chiedere di vedere una mano solo chi ha ancora le carte o le ha mostrate — in modo intoccabile, solo quella dell'ultimo aggressore.
 
 **Q. Puoi passare le carte allo showdown senza mostrarle?**
 

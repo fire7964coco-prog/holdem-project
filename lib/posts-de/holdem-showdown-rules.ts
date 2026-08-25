@@ -57,7 +57,7 @@ Ja – **wenn du verloren hast**.
 
 Sobald der letzte Aggressor seine Hand gezeigt hat, können die übrigen Spieler entweder:
 - **Ihre Hand zeigen**, wenn sie glauben zu gewinnen
-- **Verdeckt mucken**, wenn sie sehen, dass sie verloren haben – du musst deine Karten nicht aufdecken. Das gilt aber nur, solange niemand all-in war: Sobald ein Spieler all-in ist, werden nach ==TDA-Regel 16== alle beteiligten Hände getablet, und mucken darf dort niemand
+- **Verdeckt mucken**, wenn sie sehen, dass sie verloren haben – du musst deine Karten nicht aufdecken. Das gilt aber nur, solange niemand all-in war: Sobald im Turnier ein Spieler all-in ist, werden nach ==TDA-Regel 16== alle beteiligten Hände getablet, und mucken darf dort niemand (in Cashgames gelten die Hausregeln, und die meisten Cardrooms lassen den Caller mucken)
 
 ==r:Aber es gibt eine wichtige Ausnahme:== Wurde deine River-Bet gecallt, hat der Caller den vollen Preis bezahlt, um deine Hand zu sehen – er kann den Dealer bitten, eine schon gemuckte Hand aufzudecken. Das ist die **„I want to see that hand“-Regel**. Im Turnier zieht ==TDA-Regel 18== ihre Grenzen eng: Wer am Showdown keine Karten mehr hält oder verdeckt gemuckt hat, verliert das Recht, eine fremde Hand einzufordern. Unantastbar ist der Anspruch nur für den, der die River-Bet gecallt und seine Karten getablet oder behalten hat – und auch dann nur auf die Hand des ==letzten Aggressors==, also auf die Hand, für die er bezahlt hat. Über alles Weitere entscheidet der Turnierleiter. In Cashgames legen viele Cardrooms die Regel großzügiger aus. (Nicht zu verwechseln mit „show one, show all“: Die besagt, dass jeder am Tisch deine Karten sehen darf, wenn du sie freiwillig einem einzelnen Spieler zeigst.)
 
@@ -84,7 +84,7 @@ Geht ein Spieler All-in und sind keine weiteren Bets mehr möglich, werden die r
 | All-in-Szenario | Showdown-Regel |
 |----------------|---------------|
 | Spieler geht All-in, andere callen, keine Bets mehr möglich | Alle Hände werden vor oder während des Runouts offen gezeigt |
-| All-in-Bet am River wird gecallt | Der All-in-Spieler zeigt als letzter Aggressor zuerst – ==r:mucken darf hier aber niemand==, nach TDA-Regel 16 muss auch der Caller seine Hand tablen |
+| All-in-Bet am River wird gecallt | Der All-in-Spieler zeigt als letzter Aggressor zuerst – und ==r:im Turnier darf hier niemand mucken==, nach TDA-Regel 16 muss auch der Caller seine Hand tablen |
 | Mehrere All-ins mit mehreren Side Pots | Jeder Pot wird separat vergeben; alle beteiligten Hände werden gezeigt |
 
 </div>
@@ -168,7 +168,7 @@ A. Der Spieler, der in der letzten Setzrunde die letzte aggressive Aktion gemach
 
 **Q. Muss man seine Karten zeigen, wenn man beim Showdown gecallt wird?**
 
-A. Ja – warst du am River der Letzte, der gesetzt oder erhöht hat, musst du nach dem Call zuerst zeigen. Hast du die Bet eines anderen gecallt, darfst du nach dem Blick auf seine Hand verdeckt mucken, wenn du verloren hast – es sei denn, jemand war all-in: Dann muss nach ==TDA-Regel 16== auch der Caller tablen. Allerdings darf im Turnier nach ==TDA-Regel 18== nur derjenige verlangen, eine Hand zu sehen, der selbst noch Karten hält oder sie getablet hat – und das unantastbare Recht gilt allein der Hand des letzten Aggressors am River. In Cashgames sind viele Cardrooms großzügiger.
+A. Ja – warst du am River der Letzte, der gesetzt oder erhöht hat, musst du nach dem Call zuerst zeigen. Hast du die Bet eines anderen gecallt, darfst du nach dem Blick auf seine Hand verdeckt mucken, wenn du verloren hast – es sei denn, jemand war all-in: Dann muss im Turnier nach ==TDA-Regel 16== auch der Caller tablen. Allerdings darf im Turnier nach ==TDA-Regel 18== nur derjenige verlangen, eine Hand zu sehen, der selbst noch Karten hält oder sie getablet hat – und das unantastbare Recht gilt allein der Hand des letzten Aggressors am River. In Cashgames sind viele Cardrooms großzügiger.
 
 **Q. Muss ich allen meine Karten zeigen, wenn ich sie einem Spieler zeige?**
 

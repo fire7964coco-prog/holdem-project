@@ -57,7 +57,7 @@ Da — **dacă ai pierdut**.
 
 Odată ce ultimul agresor își arată mâna, ceilalți jucători pot fie:
 - **Să-și arate mâna** dacă cred că au câștigat
-- **Să facă muck cu fața în jos** dacă văd că au pierdut — nu e nevoie să-ți dezvălui cărțile. Asta e valabil doar cât timp nimeni nu a fost all-in: din clipa în care un jucător e all-in, regula 16 TDA cere ca toate mâinile din pot să fie arătate și nimeni nu mai poate face muck
+- **Să facă muck cu fața în jos** dacă văd că au pierdut — nu e nevoie să-ți dezvălui cărțile. Asta e valabil doar cât timp nimeni nu a fost all-in: în turneu, din clipa în care un jucător e all-in, regula 16 TDA cere ca toate mâinile din pot să fie arătate și nimeni nu mai poate face muck (la cash se aplică regulile casei, iar majoritatea sălilor îl lasă pe cel care a plătit să facă muck)
 
 ==r:Dar există o excepție importantă:== dacă pariul tău de la river a fost plătit, cel care a plătit a dat prețul întreg ca să-ți vadă mâna. Să-i ceri dealerului să întoarcă o mână ajunsă în muck este regula **„I want to see that hand"**. În turneu, regula 18 TDA o îngustează: cine nu mai are cărți la showdown, sau le-a dat cu fața în jos, pierde dreptul de a cere; dreptul e de neatins doar pentru cel care a plătit pariul de la river și și-a arătat sau păstrat cărțile, și doar asupra mâinii ultimului agresor. Restul rămâne la latitudinea directorului de turneu, iar la cash multe săli sunt mai permisive. (Să nu o confunzi cu „show one, show all", care înseamnă că, dacă îți arăți cărțile de bunăvoie unui jucător, toată masa are dreptul să le vadă.)
 
@@ -84,7 +84,7 @@ Când un jucător merge all-in și nu mai sunt posibile pariuri, de obicei se di
 | Scenariu de all-in | Regula de showdown |
 |----------------|---------------|
 | Un jucător merge all-in, ceilalți plătesc, nu mai e posibil niciun pariu | Toate mâinile se arată cu fața în sus înainte sau în timpul distribuirii |
-| Un pariu all-in la river este plătit | Cel care a mers all-in arată primul, ca ultim agresor — dar ==r:aici nu poate face muck nimeni==: conform regulii 16 TDA și cel care plătește trebuie să arate |
+| Un pariu all-in la river este plătit | Cel care a mers all-in arată primul, ca ultim agresor — iar în turneu ==r:aici nu poate face muck nimeni==: conform regulii 16 TDA și cel care plătește trebuie să arate |
 | Mai multe all-in-uri care creează mai multe side pot-uri | Fiecare pot se rezolvă separat; se arată toate mâinile implicate |
 
 </div>
@@ -166,7 +166,7 @@ A. Ultimul jucător care a făcut o acțiune agresivă (a pariat sau a mărit) �
 
 **Q. Trebuie să-ți arăți cărțile dacă ești plătit la showdown?**
 
-A. Da — dacă ai fost ultimul care a pariat sau a mărit la river, trebuie să arăți primul când ești plătit. Dacă tu ai plătit pariul altcuiva, poți face muck cu fața în jos după ce i-ai văzut mâna, dacă ai pierdut. Excepția e all-in-ul: conform regulii 16 TDA și cel care plătește trebuie să arate. Iar în turneu poate cere să vadă o mână doar cine mai are cărți sau le-a arătat — de neatins, numai mâna ultimului agresor.
+A. Da — dacă ai fost ultimul care a pariat sau a mărit la river, trebuie să arăți primul când ești plătit. Dacă tu ai plătit pariul altcuiva, poți face muck cu fața în jos după ce i-ai văzut mâna, dacă ai pierdut. Excepția e all-in-ul în turneu: conform regulii 16 TDA și cel care plătește trebuie să arate. Iar în turneu poate cere să vadă o mână doar cine mai are cărți sau le-a arătat — de neatins, numai mâna ultimului agresor.
 
 **Q. Poți face muck la showdown fără să arăți?**
 

@@ -1,3 +1,43 @@
+## 2026-08-25 (4) — showdown-rules TDA Rule 16 «토너먼트 한정» 23로케일 미러 (+es 규칙번호 정정)
+
+**미결 1건 종결.** 회차 1(8ee6b047) 딜러 렌즈가 EN·pt에서 닫은 결함을 나머지 23로케일에 전파했다.
+선례 = `97e46572`(betting-actions 25로케일 × 2자리).
+
+- **결함**: TDA Rule 16(올인 시 전 핸드 테이블·muck 금지)은 **토너먼트 룰**인데 무한정 서술이라
+  같은 사이트 `all-in-rules`와 모순이었다. all-in-rules EN 축어 3곳이 반증 —
+  «In cash games, standard showdown order applies and players can muck» ·
+  «the caller can muck if they lose after seeing the all-in player's hand» ·
+  «in tournaments all hands involved in an all-in are tabled face-up … (TDA Rule 16)»
+- **자리 수는 로케일마다 다르다**(4개라 가정하면 틀린다): 대부분 **3자리**(본문 불릿·올인 표 행·
+  FAQ「콜당하면 보여줘야 하나」), **ja는 2자리** — EN ④「muck 가능?」 FAQ의 올인 절이 재저작
+  과정에서 아예 없는 로케일이 다수였다. 캐시 보완구는 **본문 불릿에만**(정본 밀도 유지)
+- 🔴 **날짜 필드 전부 무변경** — 선례가 그랬고, 무엇보다 `masterUpdated`를 올리면 «EN 최신과
+  동기화됨»이라는 **거짓 신호**가 된다(이번엔 Rule 16 한 건만 미러했고 경험담·FAQ 개정 등
+  나머지 EN 드리프트는 그대로다). 게이트가 계속 드리프트를 보고하는 게 **의도된 상태**다
+- 🆕 **범위 밖 사실오류 1건 동시 정정**: `es` 62행이 "I want to see that hand" 조항을
+  «regla **16**»으로 적고 있었다 — 20개 로케일 실측 결과 **es만 16, 나머지 19개와 EN 정본은 18**.
+  내용(쇼다운에 카드 없는 자는 요청권 상실)도 Rule 18 조항이라 오류 확정 → 18로 정정
+- **2차 교열이 실제로 잡은 것**(삽입이 새 결함을 만든다 — 생략했으면 그대로 배포됐다):
+  ① 🔴 **de 87행 V2 어순 비문** — `mucken`이 전장을 차지한 문장 앞에 `im Turnier`를 끼워
+  정동사 앞에 두 성분이 섰다 → `im Turnier darf hier niemand mucken`
+  ② **선행사 없는 «대부분»** 4언어(it·ro·es·pl) — 앞 명사가 «규칙»이라 「규칙의 대부분」으로
+  오독되는 자리 → `delle sale`·`sălilor`·`de los casinos`·`pokojów` 명시
+  ③ **역접 소실** 9언어(ru·uk·pl·tr·id·ms·fil·sw·ar·he·fa·hi·bn·th·vi·zh·zh-hant) — EN이 but→and로
+  바꾼 걸 그대로 옮기자 대비가 사라진 자리. 로망스·게르만은 and 유지가 자연스러워 언어별로 갈렸다
+  ④ **ar FAQ 가짜 대비** — 앞 문장에 «토너먼트»가 들어가며 뒤의 `أما … فـ`가 «토너먼트↔토너먼트»
+  대비가 됐다 → 가산 접속으로 교체
+  ⑤ **zh·zh-hant CJK 런 내 ASCII 공백 2건** — `锦标赛里 ==r:`의 공백은 하이라이트가 태그로
+  치환된 뒤 본문에 그대로 보인다(핸드오프 「zh·ja JSX 공백」과 같은 계열)
+  ⑥ ja는 **무수정이 정답** — `トーナメントの場合`이 `では` 중복을 피한 형태
+- **검증**: `audit:hard` **25로케일 전수 🔴 0건** · 빌드 성공 + postbuild 3게이트(hreflang·디렉티브·
+  메타언어) 통과 · **빌드 산출물 25개 HTML 직접 확인**(CJK 런 내 공백 본문 0건 — ja 72건은 전부
+  `meta keywords`·`article:tag`의 의도된 구분 공백)
+- ⚠ **검사기 오탐 기록**(다음에 같은 걸 만들면 또 걸린다): 렌더 HTML을 문장 단위로 쪼개
+  판정하는 방식은 **콜론에서 잘려 EN 정본까지 «무한정»으로 잡는다**. 행 단위 판정이 맞다.
+  또 `<script>`를 공백으로 치환하면 앞뒤 텍스트가 붙어 **가짜 CJK 공백**이 생긴다
+
+---
+
 ## 2026-08-25 (3) — pt 경화 회차 1: rules 클러스터 6편 완료 (커밋 8ee6b047)
 
 **대상**: texas-holdem-rules-for-beginners · holdem-game-order · holdem-betting-actions ·

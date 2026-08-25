@@ -57,9 +57,9 @@ Sí — **si has perdido**.
 
 Una vez que el último agresor enseña su mano, el resto de jugadores puede:
 - **Enseñar su mano** si creen que ganan
-- **Tirarla boca abajo al muck** si ven que han perdido — no hace falta revelar tus cartas. Eso solo vale mientras nadie haya ido all-in: en cuanto un jugador está all-in, la regla 16 de la TDA obliga a enseñar todas las manos del bote y nadie puede tirar
+- **Tirarla boca abajo al muck** si ven que han perdido — no hace falta revelar tus cartas. Eso solo vale mientras nadie haya ido all-in: en torneo, en cuanto un jugador está all-in, la regla 16 de la TDA obliga a enseñar todas las manos del bote y nadie puede tirar (en cash mandan las reglas de la casa, y la mayoría de los casinos deja tirar al que pagó)
 
-==r:Pero hay una excepción importante:== si tu apuesta del river fue pagada, el que pagó puso el precio completo por ver tu mano. Pedirle al dealer que dé la vuelta a una mano tirada al muck es la regla de **"I want to see that hand"**. En torneo la regla 16 de la TDA la acota: quien ya no tiene cartas en el showdown, o las tiró boca abajo, pierde el derecho a pedirlo; el derecho es intocable solo para quien pagó la apuesta del river y conserva o ha enseñado sus cartas, y solo sobre la mano del último agresor. Lo demás queda a criterio del director del torneo, y en cash muchos casinos la aplican con más manga ancha. (No la confundas con "show one, show all", que significa que si enseñas tus cartas voluntariamente a un jugador, toda la mesa tiene derecho a verlas.)
+==r:Pero hay una excepción importante:== si tu apuesta del river fue pagada, el que pagó puso el precio completo por ver tu mano. Pedirle al dealer que dé la vuelta a una mano tirada al muck es la regla de **"I want to see that hand"**. En torneo la regla 18 de la TDA la acota: quien ya no tiene cartas en el showdown, o las tiró boca abajo, pierde el derecho a pedirlo; el derecho es intocable solo para quien pagó la apuesta del river y conserva o ha enseñado sus cartas, y solo sobre la mano del último agresor. Lo demás queda a criterio del director del torneo, y en cash muchos casinos la aplican con más manga ancha. (No la confundas con "show one, show all", que significa que si enseñas tus cartas voluntariamente a un jugador, toda la mesa tiene derecho a verlas.)
 
 Regla práctica: ==como último agresor enseñas tú, también con el farol pagado.== Tirar boca abajo es la opción del que paga, después de ver la mano del apostador. Si apuestas y tiras rápido pierdes dos veces: el que pagó puede exigir tu mano igualmente y, como mandan las cartas, más de un bote se ha tirado con un as alto que iba ganando.
 
@@ -84,7 +84,7 @@ Cuando un jugador va all-in y ya no hay más apuestas posibles, lo habitual es r
 | Escenario de all-in | Regla del showdown |
 |----------------|---------------|
 | Un jugador va all-in, los demás pagan, no hay más apuestas posibles | Todas las manos boca arriba antes o durante el reparto |
-| Una apuesta all-in en el river es pagada | El que fue all-in enseña primero como último agresor — pero ==r:aquí no puede tirar nadie==: por la regla 16 de la TDA el que paga también tiene que enseñar |
+| Una apuesta all-in en el river es pagada | El que fue all-in enseña primero como último agresor — y en torneo ==r:aquí no puede tirar nadie==: por la regla 16 de la TDA el que paga también tiene que enseñar |
 | Varios all-ins que crean varios side pots | Cada bote se resuelve por separado; se enseñan todas las manos implicadas |
 
 </div>
@@ -176,7 +176,7 @@ A. El último jugador que hizo una acción agresiva (apostar o subir) en la últ
 
 **Q. ¿Tienes que enseñar tus cartas si te pagan en el showdown?**
 
-A. Sí — si fuiste el último en apostar o subir en el river, debes enseñar primero cuando te pagan. Si pagaste la apuesta de otro, puedes tirar tus cartas boca abajo tras ver su mano si has perdido. La excepción es un all-in: por la regla 16 de la TDA el que paga también tiene que enseñar. Y en torneo solo puede pedir ver una mano quien todavía conserva sus cartas o las ha enseñado — intocable, únicamente la del último agresor.
+A. Sí — si fuiste el último en apostar o subir en el river, debes enseñar primero cuando te pagan. Si pagaste la apuesta de otro, puedes tirar tus cartas boca abajo tras ver su mano si has perdido. La excepción es un all-in en torneo: por la regla 16 de la TDA el que paga también tiene que enseñar. Y en torneo solo puede pedir ver una mano quien todavía conserva sus cartas o las ha enseñado — intocable, únicamente la del último agresor.
 
 **Q. ¿Puedes tirar tus cartas en el showdown sin enseñarlas?**
 

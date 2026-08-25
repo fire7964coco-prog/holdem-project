@@ -57,7 +57,7 @@ Oui — **si tu as perdu**.
 
 Une fois que le dernier relanceur a montré sa main, les autres joueurs peuvent :
 - **Montrer leur main** s'ils pensent gagner
-- **La jeter face cachée au muck** s'ils voient qu'ils ont perdu — pas besoin de dévoiler tes cartes. Cela ne vaut toutefois que si personne n'était à tapis : dès qu'un joueur est all-in, la règle 16 de la TDA impose d'étaler toutes les mains du pot et plus personne ne peut jeter
+- **La jeter face cachée au muck** s'ils voient qu'ils ont perdu — pas besoin de dévoiler tes cartes. Cela ne vaut toutefois que si personne n'était à tapis : en tournoi, dès qu'un joueur est all-in, la règle 16 de la TDA impose d'étaler toutes les mains du pot et plus personne ne peut jeter (en cash game, ce sont les règles de la maison qui s'appliquent, et la plupart des cardrooms laissent celui qui paie jeter ses cartes)
 
 ==r:Mais il y a une exception importante :== si ta mise à la rivière a été payée, celui qui a suivi a mis le prix fort pour voir ta main. Demander au donneur de retourner une main jetée au muck, c'est la règle du **« I want to see that hand »**. En tournoi, la règle 18 de la TDA la resserre : celui qui n'a plus de cartes à l'abattage, ou qui a jeté face cachée, perd le droit de le demander ; ce droit n'est inaliénable que pour celui qui a payé la mise de la rivière et qui a étalé ou conservé ses cartes, et seulement sur la main du dernier relanceur. Le reste relève du directeur de tournoi, et en cash game beaucoup de cardrooms sont plus souples. (Ne la confonds pas avec « show one, show all » : si tu montres volontairement tes cartes à un joueur, toute la table a le droit de les voir.)
 
@@ -84,7 +84,7 @@ Quand un joueur fait tapis et qu'aucune mise n'est plus possible, on déroule en
 | Scénario d'all-in | Règle d'abattage |
 |----------------|---------------|
 | Un joueur fait tapis, les autres suivent, plus aucune mise possible | Toutes les mains face visible avant ou pendant le déroulement |
-| Une mise all-in à la rivière est payée | Le joueur à tapis montre en premier comme dernier relanceur — mais ==r:personne ne peut jeter ici== : selon la règle 16 de la TDA, celui qui paie doit lui aussi étaler sa main |
+| Une mise all-in à la rivière est payée | Le joueur à tapis montre en premier comme dernier relanceur — et en tournoi ==r:personne ne peut jeter ici== : selon la règle 16 de la TDA, celui qui paie doit lui aussi étaler sa main |
 | Plusieurs all-ins créant plusieurs pots annexes | Chaque pot se résout séparément ; toutes les mains impliquées sont montrées |
 
 </div>
@@ -166,7 +166,7 @@ A. Le dernier joueur à avoir fait une action agressive (miser ou relancer) au d
 
 **Q. Es-tu obligé de montrer tes cartes si on te paie à l'abattage ?**
 
-A. Oui — si tu étais le dernier à miser ou relancer à la rivière, tu dois montrer en premier quand on te paie. Si tu as payé la mise d'un autre, tu peux jeter tes cartes face cachée après avoir vu sa main si tu as perdu. L'exception, c'est le tapis : selon la règle 16 de la TDA, celui qui paie doit lui aussi étaler sa main. Et en tournoi, seul un joueur qui a encore ses cartes ou les a étalées peut demander à voir une main — de façon inaliénable, uniquement celle du dernier relanceur.
+A. Oui — si tu étais le dernier à miser ou relancer à la rivière, tu dois montrer en premier quand on te paie. Si tu as payé la mise d'un autre, tu peux jeter tes cartes face cachée après avoir vu sa main si tu as perdu. L'exception, c'est le tapis en tournoi : selon la règle 16 de la TDA, celui qui paie doit lui aussi étaler sa main. Et en tournoi, seul un joueur qui a encore ses cartes ou les a étalées peut demander à voir une main — de façon inaliénable, uniquement celle du dernier relanceur.
 
 **Q. Peux-tu jeter tes cartes à l'abattage sans les montrer ?**
 

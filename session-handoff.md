@@ -62,13 +62,12 @@
 
 | 무엇 | 메모 |
 |---|---|
-| 🔴 **showdown-rules TDA Rule 16 «토너먼트 한정» 누락 — 23로케일 잔존** | pt 회차 1의 딜러 렌즈가 잡은 EN 발원 결함(캐시에선 pagador가 muck 가능한데 전면 규칙처럼 서술 — all-in-rules와 모순). EN·pt는 8ee6b047로 정정(4곳: 본문 불릿·표·FAQ 2). **나머지 23로케일 미러 필요** — 각 로케일을 여는 회차에서, 또는 별건 미러 커밋으로(선례: 97e46572 «25 로케일 × 2자리») |
 | 🟠 pt 도구 링크 `/calculator`(KO 도구) 잔존 9곳 — bubble 2·icm 2·short-stack 2·starting-hands-chart의 `/hand-chart` 1 등 5파일 | rules 필라는 8ee6b047에서 `/pt/solver`로 교체 완료. 나머지는 **해당 클러스터 회차**(odds·tournament·strategy)에서 /pt/solver(Equity·Tabelas pré-flop 탭)로 전환 검토 |
 | 🟠 규칙 PDF pt판 부재 — `public/downloads/`에 ko·ja·zh·de판만 있고 beginners는 «PDF (em inglês)» 링크 | `poker para iniciantes pdf`(약점 3/1·DA20) 수요 실재. pt판 제작은 사장님 판단(제작 시 beginners 링크 교체) |
 | 🟠 **비한국어 537페이지 «메타 4종 + 스킵링크»가 한국어** | `application-name`·`author`·`keywords`·언어 전환 라벨·스킵링크 `본문 바로가기` — 루트 레이아웃 소관. `check:meta-lang`은 이 4종을 못 본다(사각지대). ⚠ **537페이지라 랜딩 회차에 끼우지 마라 — 별건으로 열고 게이트를 그 4종까지 넓혀라.** 우선순위: 스킵링크 → application-name → author → keywords |
 | 🆕 **fr 랜딩 내부링크 보강** — fr 코퍼스가 규칙 6편뿐이라 표준 링크 세트(chart·pot-odds·equity·3bet·strategy·glossary) 불성립. 프리플랍 안내는 앱 Charts préflop 탭으로 임시 대체 중 | **fr 전략 코퍼스 확장 시 함께**(위 착수 후보 1번). 뱅크 §3·랜딩 헤더에 명기 |
 | ⚠ **fr 뱅크는 라쿠 단일 벤더** — DFS 인증 만료(40100)로 교차검증 미실시 | DFS 복구 시 `solver poker`·`gto poker`·`range poker`·`solver poker gratuit` 4종 교차검증 + France SERP 실측(뱅크 §7) |
-| 🆕 **zh·ja 랜딩 JSX 개행 공백 소급** — JSX가 텍스트 런 안의 개행을 공백으로 치환해 중문·일문 문장 한가운데 ASCII 공백이 렌더된다(zh-hant 회차가 빌드 산출물로 실측: zh «不限 次数» 등 3곳+ · ja «を 計算» 1곳+) | zh-hant는 신설 시점에 제거(중문 텍스트 런은 한 줄 규칙 — client 파일 헤더). **zh·ja는 검수된 파일이라 별건으로 열고 수정 후 재검수** — M-055 §4-④로 검수장에 공유됨 |
+| 🆕 **zh·ja 랜딩 JSX 개행 공백 소급** — JSX가 텍스트 런 안의 개행을 공백으로 치환해 중문·일문 문장 한가운데 ASCII 공백이 렌더된다(zh-hant 회차가 빌드 산출물로 실측: zh «不限 次数» 등 3곳+ · ja «を 計算» 1곳+) | zh-hant는 신설 시점에 제거(중문 텍스트 런은 한 줄 규칙 — client 파일 헤더). **zh·ja는 검수된 파일이라 별건으로 열고 수정 후 재검수** — M-055 §4-④로 검수장에 공유됨. 🆕 08-25 실측: **블로그 본문에도 같은 유형이 생길 수 있다** — Rule 16 미러 때 `==r:` 앞에 공백을 두자 하이라이트가 태그로 치환되며 본문에 노출되는 자리가 zh·zh-hant에서 2건 발생(2차 교열이 제거). 다만 **빌드 산출물 기준 `holdem-showdown-rules` 3편(zh·zh-hant·ja) 본문은 현재 0건**이고 ja의 72건은 전부 `meta keywords`·`article:tag`의 의도된 구분 공백이다 — 본문 전수는 미확인 |
 | 🪶 de `solver-client.tsx` «drei der Lernspots» 개수 하드코딩(RP-08 계급) | de를 다음에 열 때 함께 (zh는 «专门有一组»로 회피) |
 | ⚠ ja 뱅크의 「SD 24 = 유일한 低」는 거짓 근거 | 다음 ja 회차에 정정 (SD 엔드포인트 불일치 실증 후 남은 것) |
 | **GTO 13편 → 12개 언어 전파** | 블로커 = **M-033 판정 대기**(본문 용어 표기를 여섯 번째 언어별 항목으로 — §4-A-3 수정). 폐기 명제 목록은 확보됨(19행+ · 회귀 77/77). 번역 방식 = «번역 + 5필드»(스펙 §4-A-3) · 조건 넷은 아카이브 「다국어 방식이 바뀐다」 절 |

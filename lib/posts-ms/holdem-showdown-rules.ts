@@ -57,7 +57,7 @@ Boleh — **jika anda kalah**.
 
 Sebaik sahaja last aggressor menunjukkan tangannya, pemain lain boleh memilih:
 - **Tunjuk tangan mereka** jika mereka rasa mereka menang
-- **Muck menghadap ke bawah** (buang kad tanpa buka) jika mereka nampak mereka sudah kalah — tidak perlu mendedahkan kad anda. Ini hanya berlaku selagi tiada sesiapa all-in: sebaik sahaja seorang pemain all-in, TDA Rule 16 mewajibkan semua tangan dalam pot itu dibuka dan tiada sesiapa boleh muck
+- **Muck menghadap ke bawah** (buang kad tanpa buka) jika mereka nampak mereka sudah kalah — tidak perlu mendedahkan kad anda. Ini hanya berlaku selagi tiada sesiapa all-in: dalam kejohanan, sebaik sahaja seorang pemain all-in, TDA Rule 16 mewajibkan semua tangan dalam pot itu dibuka dan tiada sesiapa boleh muck (cash game pula mengikut peraturan rumah, dan kebanyakannya membenarkan pemain yang call untuk muck)
 
 ==r:Tetapi ada satu pengecualian penting:== jika pertaruhan river anda di-call, pemain yang call itu sudah membayar harga penuh untuk melihat tangan anda. Meminta pengedar membuka semula tangan yang sudah di-muck itulah peraturan **"I want to see that hand"**. Dalam kejohanan, ==TDA Rule 18== mengetatkannya: sesiapa yang pada showdown sudah tiada kad, atau sudah muck tertutup, hilang hak untuk memintanya. Hak yang tidak boleh disangkal hanya milik pemain yang meng-call pertaruhan river dan membuka atau masih memegang kadnya — dan hanya ke atas tangan ==agresor terakhir==, iaitu tangan yang dia bayar untuk lihat. Selebihnya terpulang kepada pengarah kejohanan; dalam cash game banyak bilik kad lebih longgar. (Jangan keliru dengan "show one, show all" — tunjuk pada satu, tunjuk pada semua — yang bermaksud jika anda secara sukarela menunjukkan kad anda kepada seorang pemain, semua orang di meja berhak melihatnya.)
 
@@ -84,7 +84,7 @@ Apabila seorang pemain all-in dan tiada lagi pertaruhan yang mungkin, kebiasaann
 | Senario all-in | Peraturan showdown |
 |----------------|---------------|
 | Pemain all-in, yang lain call, tiada lagi pertaruhan mungkin | Semua tangan dibuka menghadap ke atas sebelum atau semasa runout |
-| Pertaruhan all-in di river di-call | Pemain yang all-in buka dulu sebagai last aggressor — tetapi ==r:di sini tiada sesiapa boleh muck==: menurut TDA Rule 16 pemain yang call juga wajib membuka tangannya |
+| Pertaruhan all-in di river di-call | Pemain yang all-in buka dulu sebagai last aggressor — tetapi dalam kejohanan ==r:tiada sesiapa boleh muck==: menurut TDA Rule 16 pemain yang call juga wajib membuka tangannya |
 | Beberapa all-in mewujudkan beberapa side pot | Setiap pot diselesaikan berasingan; semua tangan yang terlibat dibuka |
 
 </div>
@@ -166,7 +166,7 @@ A. Pemain terakhir yang membuat aksi agresif (bertaruh atau raise) pada pusingan
 
 **Q. Perlukah anda tunjuk kad jika di-call semasa showdown?**
 
-A. Ya — jika anda pemain terakhir yang bertaruh atau raise di river, anda mesti buka dulu apabila di-call. Jika anda yang call pertaruhan orang lain, anda boleh muck menghadap ke bawah selepas melihat tangannya jika anda kalah. Pengecualiannya ialah all-in: menurut TDA Rule 16 pemain yang call juga wajib membuka kadnya. Dan dalam kejohanan, hanya pemain yang masih memegang kad atau sudah membukanya boleh meminta melihat sesuatu tangan — tanpa boleh dinafikan, hanya tangan agresor terakhir.
+A. Ya — jika anda pemain terakhir yang bertaruh atau raise di river, anda mesti buka dulu apabila di-call. Jika anda yang call pertaruhan orang lain, anda boleh muck menghadap ke bawah selepas melihat tangannya jika anda kalah. Pengecualiannya ialah all-in dalam kejohanan: menurut TDA Rule 16 pemain yang call juga wajib membuka kadnya. Dan dalam kejohanan, hanya pemain yang masih memegang kad atau sudah membukanya boleh meminta melihat sesuatu tangan — tanpa boleh dinafikan, hanya tangan agresor terakhir.
 
 **Q. Boleh muck semasa showdown tanpa tunjuk kad?**
 

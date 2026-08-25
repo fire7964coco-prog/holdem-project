@@ -57,7 +57,7 @@ Tak — **jeśli przegrałeś**.
 
 Kiedy ostatni agresor pokaże swój układ, reszta graczy może:
 - **Pokazać swój układ**, jeśli myślą, że wygrywają
-- **Zrzucić karty zakryte do muck**, jeśli widzą, że przegrali — nie trzeba odsłaniać swoich kart. Dotyczy to jednak tylko sytuacji, gdy nikt nie był all-in: gdy któryś gracz jest all-in, zasada 16 TDA nakazuje odsłonić wszystkie układy w puli i nikt nie może zrzucić
+- **Zrzucić karty zakryte do muck**, jeśli widzą, że przegrali — nie trzeba odsłaniać swoich kart. Dotyczy to jednak tylko sytuacji, gdy nikt nie był all-in: w turnieju, gdy któryś gracz jest all-in, zasada 16 TDA nakazuje odsłonić wszystkie układy w puli i nikt nie może zrzucić (w grach cash obowiązują zasady pokoju, a większość pokojów pozwala sprawdzającemu zrzucić karty)
 
 ==r:Jest jednak jeden ważny wyjątek:== jeśli twój zakład na riverze został sprawdzony, sprawdzający zapłacił pełną cenę za obejrzenie twojego układu. Prośba, by rozdający odwrócił zrzucony układ, to zasada **„I want to see that hand"**. W turnieju zasada 18 TDA mocno ją zawęża: kto na showdownie nie ma już kart albo zrzucił je zakryte, traci prawo do takiej prośby; nienaruszalne jest ono tylko dla gracza, który sprawdził zakład na riverze i odsłonił lub zachował swoje karty — i tylko wobec układu ostatniego agresora. O reszcie decyduje dyrektor turnieju, a w grach cash wiele pokojów podchodzi do tego swobodniej. (Nie myl jej z „show one, show all", która mówi, że jeśli dobrowolnie pokażesz karty jednemu graczowi, cały stół ma prawo je zobaczyć.)
 
@@ -84,7 +84,7 @@ Kiedy gracz idzie all-in i nie ma już możliwości dalszego betowania, zwykle d
 | Scenariusz all-in | Zasada showdownu |
 |----------------|---------------|
 | Gracz idzie all-in, inni sprawdzają, nie ma już betowania | Wszystkie układy odkryte przed dobiciem lub w jego trakcie |
-| Zakład all-in na riverze zostaje sprawdzony | Grający all-in odkrywa pierwszy jako ostatni agresor — ale ==r:tu nikt nie może zrzucić==: według zasady 16 TDA sprawdzający też musi odsłonić karty |
+| Zakład all-in na riverze zostaje sprawdzony | Grający all-in odkrywa pierwszy jako ostatni agresor — ale w turnieju ==r:nikt nie może zrzucić==: według zasady 16 TDA sprawdzający też musi odsłonić karty |
 | Kilka all-inów tworzących kilka pul bocznych | Każda pula rozstrzygana osobno; odkrywane wszystkie zaangażowane układy |
 
 </div>
@@ -166,7 +166,7 @@ A. Karty musi odkryć najpierw ten gracz, który jako ostatni wykonał akcję ag
 
 **Q. Czy musisz pokazać karty, jeśli zostałeś sprawdzony przy showdownie?**
 
-A. Tak — jeśli byłeś ostatnim, który postawił lub przebił na riverze, musisz odkryć pierwszy, gdy cię sprawdzą. Jeśli sam sprawdziłeś zakład kogoś innego, możesz zrzucić karty zakryte do muck po zobaczeniu jego układu, o ile przegrałeś. Wyjątkiem jest all-in: według zasady 16 TDA sprawdzający również musi odsłonić karty. A w turnieju o pokazanie układu może poprosić tylko ten, kto wciąż ma karty albo je odsłonił — nienaruszalnie wyłącznie o układ ostatniego agresora.
+A. Tak — jeśli byłeś ostatnim, który postawił lub przebił na riverze, musisz odkryć pierwszy, gdy cię sprawdzą. Jeśli sam sprawdziłeś zakład kogoś innego, możesz zrzucić karty zakryte do muck po zobaczeniu jego układu, o ile przegrałeś. Wyjątkiem jest all-in w turnieju: według zasady 16 TDA sprawdzający również musi odsłonić karty. A w turnieju o pokazanie układu może poprosić tylko ten, kto wciąż ma karty albo je odsłonił — nienaruszalnie wyłącznie o układ ostatniego agresora.
 
 **Q. Czy możesz zrzucić karty przy showdownie bez pokazywania?**
 

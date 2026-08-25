@@ -57,7 +57,7 @@ Evet — **kaybettiysen**.
 
 Son agresör elini gösterdikten sonra, diğer oyuncular şunlardan birini yapabilir:
 - **Elini gösterir** — kazandığını düşünüyorsa
-- **Yüzü kapalı muck'a atar** — kaybettiğini görüyorsa, kartlarını açmasına gerek yok. Ama bu yalnızca kimse all-in değilken geçerlidir: bir oyuncu all-in olduğu anda TDA 16. kural potdaki bütün ellerin açılmasını şart koşar ve kimse muck yapamaz
+- **Yüzü kapalı muck'a atar** — kaybettiğini görüyorsa, kartlarını açmasına gerek yok. Ama bu yalnızca kimse all-in değilken geçerlidir: turnuvada bir oyuncu all-in olduğu anda TDA 16. kural potdaki bütün ellerin açılmasını şart koşar ve kimse muck yapamaz (cash oyunlarda salon kuralları geçerlidir ve çoğu salon call eden oyuncunun muck yapmasına izin verir)
 
 ==r:Ama önemli bir istisna var:== river'daki bahsin call edildiyse, call eden senin elini görmek için tam bedeli ödedi. Muck'a atılmış bir eli krupiyeye açtırmayı istemek, işte bu **"o eli görmek istiyorum"** kuralıdır. Turnuvada ==TDA 18. kural== sınırı dar çizer: showdown'da elinde kart kalmayan ya da kapalı muck yapan kişi isteme hakkını yitirir. Bu hak yalnızca river bahsini call eden ve kartlarını açan ya da elinde tutan oyuncu için dokunulmazdır, o da sadece parasını ödediği ==son agresörün== eli için. Gerisi turnuva direktörünün takdirindedir; cash oyunlarda birçok salon kuralı daha geniş uygular. (Bunu "birine göster, herkese göster" kuralıyla karıştırma — o kural, kartlarını gönüllü olarak bir oyuncuya gösterirsen masadaki herkesin de görme hakkı kazanması demektir.)
 
@@ -84,7 +84,7 @@ Bir oyuncu all-in gittiğinde ve artık bahis yapmak mümkün olmadığında, ka
 | All-in senaryosu | Showdown kuralı |
 |----------------|---------------|
 | Bir oyuncu all-in gider, diğerleri call eder, artık bahis mümkün değil | Tüm eller kartlar açılmadan önce/açılırken yüzü açık konur |
-| River'da all-in bahsi call edilir | All-in giden son agresör olarak önce gösterir — ama ==r:burada kimse muck yapamaz==: TDA 16. kurala göre call eden de elini açmak zorundadır |
+| River'da all-in bahsi call edilir | All-in giden son agresör olarak önce gösterir — ama turnuvada ==r:kimse muck yapamaz==: TDA 16. kurala göre call eden de elini açmak zorundadır |
 | Birden fazla side pot yaratan çoklu all-in | Her pot ayrı ayrı çözülür; dahil olan tüm eller gösterilir |
 
 </div>
@@ -166,7 +166,7 @@ A. Son bahis turunda agresif aksiyon yapan (bahis ya da yükseltme) son oyuncu �
 
 **Q. Showdown'da call edilirsen kartlarını göstermek zorunda mısın?**
 
-A. Evet — river'da son bahis yapan ya da yükselten sensen, call edildiğinde önce sen göstermek zorundasın. Başkasının bahsini call ettiysen, elini gördükten sonra kaybettiysen yüzü kapalı muck yapabilirsin. İstisna all-in'dir: TDA 16. kurala göre call eden de elini açmak zorundadır. Turnuvada ise bir eli görmeyi yalnızca hâlâ kartı olan ya da kartlarını açmış oyuncu isteyebilir — dokunulmaz biçimde, sadece son agresörün eli için.
+A. Evet — river'da son bahis yapan ya da yükselten sensen, call edildiğinde önce sen göstermek zorundasın. Başkasının bahsini call ettiysen, elini gördükten sonra kaybettiysen yüzü kapalı muck yapabilirsin. İstisna turnuvadaki all-in'dir: TDA 16. kurala göre call eden de elini açmak zorundadır. Turnuvada ise bir eli görmeyi yalnızca hâlâ kartı olan ya da kartlarını açmış oyuncu isteyebilir — dokunulmaz biçimde, sadece son agresörün eli için.
 
 **Q. Showdown'da göstermeden muck yapabilir misin?**
 

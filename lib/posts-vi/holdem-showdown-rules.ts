@@ -57,7 +57,7 @@ Luật phụ thuộc vào cách vòng cược cuối cùng kết thúc (để xe
 
 Sau khi người chủ động cuối cùng lật bài, những người còn lại có thể:
 - **Lật bài của mình** nếu nghĩ rằng mình thắng
-- **Bỏ bài úp vào muck** nếu thấy mình đã thua — không cần để lộ bài. Nhưng điều này chỉ đúng khi chưa ai all-in: ngay khi có người all-in, TDA Rule 16 buộc mọi tay bài trong pot phải ngửa và không ai được muck
+- **Bỏ bài úp vào muck** nếu thấy mình đã thua — không cần để lộ bài. Nhưng điều này chỉ đúng khi chưa ai all-in: trong giải đấu, ngay khi có người all-in, TDA Rule 16 buộc mọi tay bài trong pot phải ngửa và không ai được muck (cash game theo luật riêng của từng phòng bài, và đa số cho phép người theo được muck)
 
 ==r:Nhưng có một ngoại lệ quan trọng:== nếu cú cược river của bạn bị theo, người theo đã trả đủ giá để được xem bài bạn. Yêu cầu Dealer lật một tay bài đã bỏ úp — đó chính là luật **"I want to see that hand" (tôi muốn xem tay bài đó)**. Trong giải đấu, ==TDA Rule 18== khoanh rất hẹp: ai không còn cầm bài lúc showdown, hoặc đã muck úp, thì mất quyền yêu cầu. Quyền này chỉ bất khả xâm phạm với người đã theo cú cược river và đã ngửa hoặc còn giữ bài của mình — và cũng chỉ với tay bài của ==người chủ động cuối cùng==, tay bài mà anh ta đã trả tiền để xem. Phần còn lại do giám đốc giải quyết định; ở cash game nhiều phòng bài áp dụng thoáng hơn. (Đừng nhầm với luật "show one, show all" — cho một người xem thì cho cả bàn xem: nếu bạn tự nguyện cho một người xem bài, cả bàn đều có quyền xem.)
 
@@ -84,7 +84,7 @@ Khi một người all-in và không còn khả năng cược thêm, thông lệ
 | Tình huống all-in | Luật showdown |
 |----------------|---------------|
 | Một người all-in, những người khác theo, không còn cược được nữa | Mọi tay bài lật ngửa trước hoặc trong lúc chia nốt bài |
-| Cú all-in ở river bị theo | Người all-in lật trước với tư cách người chủ động cuối cùng — nhưng ==r:ở đây không ai được muck==: theo TDA Rule 16, người theo cũng phải ngửa bài |
+| Cú all-in ở river bị theo | Người all-in lật trước với tư cách người chủ động cuối cùng — nhưng trong giải đấu, ==r:ở đây không ai được muck==: theo TDA Rule 16, người theo cũng phải ngửa bài |
 | Nhiều cú all-in tạo ra nhiều side pot | Mỗi pot được phân xử riêng; mọi tay bài liên quan đều phải lật |
 
 </div>
@@ -166,7 +166,7 @@ A. Người thực hiện hành động chủ động cuối cùng (cược ho�
 
 **Q. Bị theo (call) khi showdown thì có bắt buộc lật bài không?**
 
-A. Có — nếu bạn là người cược hoặc tố cuối cùng ở river, bạn phải lật trước khi bị theo. Nếu bạn là người theo cược của người khác, bạn được bỏ bài úp sau khi xem bài họ nếu bạn thua. Ngoại lệ là all-in: theo TDA Rule 16, người theo cũng phải ngửa bài. Và trong giải đấu, chỉ người còn cầm bài hoặc đã ngửa bài mới được yêu cầu xem một tay bài — bất khả xâm phạm, chỉ với tay bài của người chủ động cuối cùng.
+A. Có — nếu bạn là người cược hoặc tố cuối cùng ở river, bạn phải lật trước khi bị theo. Nếu bạn là người theo cược của người khác, bạn được bỏ bài úp sau khi xem bài họ nếu bạn thua. Ngoại lệ là all-in trong giải đấu: theo TDA Rule 16, người theo cũng phải ngửa bài. Cũng trong giải đấu, chỉ người còn cầm bài hoặc đã ngửa bài mới được yêu cầu xem một tay bài — bất khả xâm phạm, chỉ với tay bài của người chủ động cuối cùng.
 
 **Q. Có được muck khi showdown mà không lật bài không?**
 
