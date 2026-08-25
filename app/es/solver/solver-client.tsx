@@ -94,8 +94,13 @@ const SOLVER_URL = "https://solver.holdemmaster.com/?lang=es";
  *   · 학습 스팟 **13개**(3그룹 7+3+3) · 그룹 조건 «Bote 5.5bb · Stack 97.5bb» /
  *     «Bote 22.5bb · Stack 89bb» / «Bote 6bb · Stack 97bb»
  *     🔴 **여기 마침표는 오타가 아니라 «앱 축어»다** — 앱 화면이 실제로 `5.5bb`로 쓴다.
- *        반면 **우리가 렌더하는 `cond`는 쉼표**(`5,5bb`)로 옮겼다(스페인어 소수 구분자).
- *        두 층이 일부러 다르니 **주석을 «고쳐서» 맞추지 마라.**
+ *        🔴 **2026-08-25 결정 변경(검수장 M-062 · 사장님 판단) — 랜딩도 마침표로 통일했다.**
+ *        이전에는 `cond`를 쉼표(`5,5bb`)로 옮겨 두 층이 일부러 달랐다. 그러나 실측 결과
+ *        브리프 `docs/translation-terms-es.md`가 «EN 형식 유지 · 유럽식 변환 금지»를 명문화했고
+ *        코퍼스 1,960:241 · 앱 36:0으로 **마침표가 명문이자 압도적 다수**였다 — 3층 대 1층의
+ *        정본 충돌이라 다수·명문 쪽으로 맞췄다(랜딩 32건 소급 · 천 단위 `5,400`은 EN 형식이라 유지).
+ *        ⚠ **쉼표로 되돌리지 마라.** RAE 규범은 쉼표지만 이 프로젝트는 배포 일관성을 택했다 —
+ *        근거·재론 조건은 `docs/settled-decisions.md`에 있다.
  *   §13 산수 검산(EN·ja 랜딩과 동일 · 재검산 완료):
  *     SRP 팟 5.5 = 2.5+2.5+0.5, 스택 100−2.5 = 97.5 ·
  *     3벳팟 22.5 = 11+11+0.5, 100−11 = 89, SPR 89÷22.5 ≈ 4.0 ·
@@ -217,7 +222,7 @@ const COMPARE: string[][] = [
 const SPOT_GROUPS = [
   {
     label: "Bote de subida simple — BTN vs BB (fundamentos)",
-    cond: "OOP: BB (paga) · IP: BTN (abre) · Bote 5,5bb · Stack 97,5bb",
+    cond: "OOP: BB (paga) · IP: BTN (abre) · Bote 5.5bb · Stack 97.5bb",
     items: [
       { board: "A♥7♦2♣", name: "Board seco A-high", note: "El spot de manual de la ventaja de rango: el as encaja de lleno en el rango del que abre" },
       { board: "K♠8♦3♣", name: "Board seco K-high", note: "También favorece a BTN, pero los checks suben un poco — compáralo con el board A-high" },
@@ -233,17 +238,17 @@ const SPOT_GROUPS = [
       //    **48.5% 대 51.5%**로 여전히 BTN이 앞선다」 · EN ④ FAQ 「Does the big blind have the advantage? → **No.**」
       //    초판은 앱 문구를 따라 `favorece al que paga` 로 썼다 — 검수장이 ja에서 잡았고 **언어 불변**이라 es에도 있었다.
       //    ⚠ 「우위가 넘어갔다」가 아니라 **「리드가 처음으로 전략의 한 축이 된다」**가 정확한 서술이다.
-      { board: "9♥8♥7♣", name: "Conectado medio, two-tone", note: "El único board de bote simple donde BB lidera de verdad: apuesta primero el 23,7% (la ventaja de rango sigue siendo de BTN — equity 48,5% contra 51,5%)" },
+      { board: "9♥8♥7♣", name: "Conectado medio, two-tone", note: "El único board de bote simple donde BB lidera de verdad: apuesta primero el 23.7% (la ventaja de rango sigue siendo de BTN — equity 48.5% contra 51.5%)" },
       { board: "Q♠9♠2♠", name: "Board monotone", note: "Las apuestas grandes desaparecen — fíjate con qué frecuencia incluso un color hecho se limita a pasar" },
       { board: "6♣6♦3♥", name: "Board pareado", note: "Nadie conecta con este board, así que sube la proporción de faroles — ni siquiera BB apuesta primero (solo el 3%)" },
       // 🔴 M-045 RP-19 정정(2026-08-24) — 「BB가 체크레이즈를 자주 한다」(구 문구)는 화면에 없는 값이다.
       //    KO ⑦ 239줄: 「BB의 체크레이즈 빈도가 그 화면에는 없습니다」. §4-B ⑦ = 체크 96.8 · 벳 3.2뿐.
-      { board: "6♠5♥2♦", name: "Board bajo y rainbow", note: "Guerra de sobrecartas. El spot para diseñar el check-raise — en pantalla, la primera acción del BB es 96,8% check y 3,2% apuesta" },
+      { board: "6♠5♥2♦", name: "Board bajo y rainbow", note: "Guerra de sobrecartas. El spot para diseñar el check-raise — en pantalla, la primera acción del BB es 96.8% check y 3.2% apuesta" },
     ],
   },
   {
     label: "Bote de 3-bet — BB hace 3-bet y BTN paga (SPR bajo)",
-    cond: "OOP: BB (3-bet) · IP: BTN (paga) · Bote 22,5bb · Stack 89bb · SPR ≈ 4,0",
+    cond: "OOP: BB (3-bet) · IP: BTN (paga) · Bote 22.5bb · Stack 89bb · SPR ≈ 4.0",
     items: [
       // 🔴 M-038 RP-03 정정(2026-08-23) — EN 랜딩에서 옮겨 온 문장이었다. 작은 벳이 통하는 이유를
       //    «SPR이 낮아서»로 돌리면 시리즈 ⑧이 폐기한 인과가 된다: 「SPR이 똑같이 4.0인 ⑨는 98.4%,
@@ -252,7 +257,7 @@ const SPOT_GROUPS = [
       // 🔴 앱 축어 «Observa dónde el 3-bettor empieza a frenar»는 **거짓**이다 —
       //    §4-B ⑨: 벳 합계 **99.1%**(큰 사이즈 98.4 + 작은 사이즈 0.7), 체크는 **0.8%**다(🔴 100−99.1로 «빼서» 구하면 0.9가 나온다 — 개별 반올림값의 합은 100이 아니다).
       //    EN 랜딩이 이미 «98.4% fires the same two-thirds size»로 철회·정정했다.
-      { board: "Q♥T♥7♠", name: "Board dinámico two-tone", note: "Dos proyectos vivos y aun así el 98,4% del rango dispara con el mismo tamaño de dos tercios" },
+      { board: "Q♥T♥7♠", name: "Board dinámico two-tone", note: "Dos proyectos vivos y aun así el 98.4% del rango dispara con el mismo tamaño de dos tercios" },
       // 🔴 M-042 RP-17 정정(2026-08-24) — 종전 문구는 이 보드가 3벳 레인지를 «통째로» 빗나간다고
       //    단정했다. 반례: **거트샷 4.8% · 백도어 플러시 16.9%(14콤보)**.
       //    🔴 **정본은 KO ⑩ `lib/posts/3bet-pot-low-board.ts` 142줄이다** — 초판 주석의 「정본은 ja」는
@@ -269,9 +274,9 @@ const SPOT_GROUPS = [
       { board: "7♦6♦5♣", name: "Bajo conectado, two-tone", note: "Dos rangos amplios chocan en un board ultraconectado: dobles parejas, escaleras y proyectos por todos lados" },
       // 🔴 앱 축어 «los tríos son poco frecuentes — el paraíso del bluff»는 **결론은 옳고 이유가 틀렸다.**
       //    실측: A를 든 트리오는 **SB 88콤보 대 BB 66콤보**이고, 수와 질 모두 앞서는 SB가 §4-B ⑬ 기준
-      //    **80,1%**를 친다(벳45(75%) 0.5% + 벳20(33%) 79.6% · 체크 19.8%).
+      //    **80.1%**를 친다(벳45(75%) 0.5% + 벳20(33%) 79.6% · 체크 19.8%).
       //    ja 랜딩이 같은 자리를 같은 방식으로 정정했다.
-      { board: "A♠A♥6♦", name: "Board con A pareado", note: "Los tríos con as son 88 combos para SB y 66 para BB — el SB gana en número y en calidad, y apuesta el 80,1%" },
+      { board: "A♠A♥6♦", name: "Board con A pareado", note: "Los tríos con as son 88 combos para SB y 66 para BB — el SB gana en número y en calidad, y apuesta el 80.1%" },
     ],
   },
 ];
@@ -438,12 +443,12 @@ export default function SolverClientEs() {
         <ul className="mt-3 space-y-1.5 text-sm text-muted-foreground">
           <li>
             En <strong className="text-foreground">Q♠J♦T♠</strong>, BB apuesta primero{" "}
-            <span className="font-semibold text-orange-500">el 0,1% de las veces</span>. Prácticamente
+            <span className="font-semibold text-orange-500">el 0.1% de las veces</span>. Prácticamente
             nunca toma la iniciativa.
           </li>
           <li>
             En <strong className="text-foreground">9♥8♥7♣</strong>, BB apuesta primero{" "}
-            <span className="font-semibold text-emerald-500">el 23,7% de las veces</span>.
+            <span className="font-semibold text-emerald-500">el 23.7% de las veces</span>.
           </li>
         </ul>
         <p className="mt-3 text-sm text-muted-foreground">
@@ -490,7 +495,7 @@ export default function SolverClientEs() {
         <p className="mt-4 text-sm text-muted-foreground">
           En el spot personalizado las fichas son números enteros cualesquiera. Si prefieres pensar en
           ciegas grandes, fija <strong className="text-foreground">10 fichas = 1bb</strong> (un bote de
-          55 son 5,5bb). Los spots de estudio y el Entrenador ya usan esa escala.
+          55 son 5.5bb). Los spots de estudio y el Entrenador ya usan esa escala.
         </p>
         <p className="mt-4 text-sm text-muted-foreground">
           Construir los dos rangos desde cero es el camino largo. Los rangos de apertura por posición viven
@@ -617,20 +622,20 @@ export default function SolverClientEs() {
           */}
           <li className="text-muted-foreground">
             El umbral se mide <strong className="text-foreground">en proporción al bote</strong> —{" "}
-            <span className="font-semibold text-emerald-500">hasta el 0,35%</span> es jugada óptima ·{" "}
+            <span className="font-semibold text-emerald-500">hasta el 0.35%</span> es jugada óptima ·{" "}
             <span className="font-semibold text-blue-500">hasta el 1%</span> es aceptable ·{" "}
             <span className="font-semibold text-orange-500">por encima</span> conviene revisar
           </li>
           <li className="text-muted-foreground">
-            Los mismos 0,08bb son un 1,45% en un bote de 5,5bb (a revisar) y un 0,36% en uno de 22,5bb
-            (aceptable). Los umbrales caen en 0,02bb y 0,06bb en el bote de subida simple, y en 0,08bb y
-            0,23bb en el bote de 3-bet. Hay suelos de 0,02bb y 0,05bb para que las diferencias mínimas
+            Los mismos 0.08bb son un 1.45% en un bote de 5.5bb (a revisar) y un 0.36% en uno de 22.5bb
+            (aceptable). Los umbrales caen en 0.02bb y 0.06bb en el bote de subida simple, y en 0.08bb y
+            0.23bb en el bote de 3-bet. Hay suelos de 0.02bb y 0.05bb para que las diferencias mínimas
             no se confundan con el propio margen de error del solver
           </li>
           <li className="text-muted-foreground">
             Las preguntas salen de varios puntos de decisión de cada spot, así que las combinaciones{" "}
             <strong className="text-foreground">pasan de diez mil</strong> (explotabilidad objetivo del
-            0,5%). También puedes entrenar un solo tipo: bote de subida simple, bote de 3-bet o guerra
+            0.5%). También puedes entrenar un solo tipo: bote de subida simple, bote de 3-bet o guerra
             de ciegas
           </li>
           <li className="text-muted-foreground">

@@ -649,9 +649,17 @@ export default function SolverClientDe() {
             und 0,23bb im 3-Bet-Pot. Untergrenzen von 0,02bb und 0,05bb sorgen dafür, dass
             Kleinstunterschiede nicht mit der Fehlermarge des Solvers verwechselt werden
           </li>
+          {/*
+            🔴 2026-08-25 정정(검수장 M-061 ② — fr F-1 동형 소급) — 초판은 «gehen in die
+            Zehntausende»(수만대)였다. 실측은 **13,743**(ko 랜딩 주석의 라이브 계수 산식)이라
+            «Zehntausende»가 위로 벗어난다. ko 주석의 자기 규율은 «스팟이 늘어도 참인 **하한 표현**»이고
+            나머지 로케일도 전부 하한형이다(en «run past ten thousand» · fr «plus de dix mille»).
+            ⚠ 이 자리는 M-053 «당일 0» 회차 원장 14행에 **미등재였다**(그때 못 본 자리) — 되살리지 마라.
+            ⚠ **정확한 수를 박지 마라** — 그 데이터는 솔버가 소유해 우리 빌드가 못 읽는다(반드시 낡는다).
+          */}
           <li className="text-muted-foreground">
             Die Fragen kommen aus mehreren Entscheidungspunkten jedes Spots, die Kombinationen{" "}
-            <strong className="text-foreground">gehen in die Zehntausende</strong>{" "}
+            <strong className="text-foreground">liegen über zehntausend</strong>{" "}
             (Ziel-Exploitability 0,5%). Du kannst auch gezielt einen Spot-Typ üben: Single Raised Pot,
             3-Bet-Pot oder Blind vs Blind
           </li>

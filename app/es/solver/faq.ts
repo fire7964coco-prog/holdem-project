@@ -113,7 +113,7 @@ export const SOLVER_FAQ_ES: FaqItem[] = [
   },
   {
     q: "¿Qué es el Entrenador GTO y cómo puntúa mis decisiones?",
-    a: "Es un modo de práctica: te presenta spots ya resueltos, tú eliges una acción y te dice cuánto valor esperado has dejado sobre la mesa. Como el GTO mezcla acciones, elegir una opción poco frecuente no es automáticamente un error — por eso la nota se mide en proporción al bote: hasta el 0,35% del bote es jugada óptima, hasta el 1% es aceptable, y por encima de ahí conviene revisar. Los umbrales tienen mínimos de 0,02bb y 0,05bb para que las diferencias mínimas no cuenten como fallo.",
+    a: "Es un modo de práctica: te presenta spots ya resueltos, tú eliges una acción y te dice cuánto valor esperado has dejado sobre la mesa. Como el GTO mezcla acciones, elegir una opción poco frecuente no es automáticamente un error — por eso la nota se mide en proporción al bote: hasta el 0.35% del bote es jugada óptima, hasta el 1% es aceptable, y por encima de ahí conviene revisar. Los umbrales tienen mínimos de 0.02bb y 0.05bb para que las diferencias mínimas no cuenten como fallo.",
   },
   {
     q: "¿Puedo guardar un spot y compartirlo?",

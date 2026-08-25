@@ -583,9 +583,17 @@ export default function SolverClientFr() {
             0,02bb et 0,06bb, ceux du pot 3-bet à 0,08bb et 0,23bb. Deux planchers (0,02bb et
             0,05bb) évitent de compter les écarts minuscules comme des erreurs
           </li>
+          {/*
+            🔴 2026-08-25 정정(검수장 M-061 F-1) — 초판은 «des dizaines de milliers»(수만)였다.
+            실측은 **13,743**(ko 랜딩 주석의 라이브 계수 산식)이라 «복수 dizaines = 2만 이상»
+            함의가 위로 벗어난다. ko 주석이 세운 자기 규율은 «스팟이 늘어도 참인 **하한 표현**»이고,
+            나머지 7로케일도 전부 하한형이다(en «run past ten thousand» · es «pasan de diez mil» ·
+            pt «passam de dez mil»). 그래서 «plus de dix mille»로 맞췄다.
+            ⚠ **정확한 수를 박지 마라** — 그 데이터는 솔버가 소유해 우리 빌드가 못 읽는다(반드시 낡는다).
+          */}
           <li className="text-muted-foreground">
-            Les questions viennent de plusieurs points de décision par spot — des{" "}
-            <strong className="text-foreground">dizaines de milliers</strong> de combinaisons
+            Les questions viennent de plusieurs points de décision par spot —{" "}
+            <strong className="text-foreground">plus de dix mille</strong> combinaisons
             (exploitabilité cible 0,5 %). Tu peux aussi filtrer un seul type de situation : single
             raised pot, pot 3-bet ou blind vs blind
           </li>
