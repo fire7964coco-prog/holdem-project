@@ -1,4 +1,28 @@
-## 2026-08-25 — /fr/solver 신설: 9번째 솔버 랜딩(앱 fr 배포 당일 착수) + fr 앱 축어 납품(M-056)
+## 2026-08-25 (2) — pt 경화 회차 0: 드리프트 diff 42편 + 키워드 수확(라쿠 39종·lowfruits 9시드) + 전략 확정
+
+**다음 세션 = 회차 1(rules 6편)** · 재료 = `docs/keyword-bank/pt-hardening-2026-08.md`
+
+### 사장님 판정 2건
+- **«ja 색인 문제는 잊어라 — 포스팅만 잘 쓰면 색인은 따라온다»** → ja 색인 트랙(B) 폐기(`4c8e5569`)
+- **«브라질은 경쟁도 많다 — 롱테일로 진입한다»** → 뱅크 §4 명문화(정면 축은 태그·H1 편입까지만)
+
+### 회차 0 산출물
+- **드리프트 diff 42편**(스크립트 · masterUpdated/updated 2단 판정): **실질 드리프트 10편** —
+  rules 5편(07-02~12 vs EN 07-19~08-14) + continuation-bet·glossary·kicker·tournament-vs-cash ·
+  apt-incheon(하루 차). 클러스터 순서 확정: rules→rankings→odds→strategy→glossary→tournament
+- **라쿠 Brazil 48개월 39종**(requestId 1256433): `sequencia poker` 27,100(의도 실측 대기) ·
+  `regras` 12,100 · `como jogar` 9,900(+13%) · 🔴 **`maos DO poker` 8,100 > `maos DE` 3,600**
+  (별도 시리즈 — do 형태 편입이 족보 회차 핵심)
+- **lowfruits 9시드 편입**(Brazil·MaxDA25 · 사장님 실행): ★금맥 = **`range poker` 590 · 약점 5/2 ·
+  DA10 — 레인지 축 전체 무주공산**(외국어 글이 브라질 SERP에 랭크 중) · rules 세부 FS 자리
+  다수(desempate·blinds·all in·dealer·flush DA2) · 개별 족보 확률 약점층 · 전략 서브축
+  (mtt 4/3·gto DA14) · termos 용어집 전체 약점층 · 중간 와일드카드 시드는 lowfruits가 못
+  펼침(narrow) — 질문 수확은 question/PAA 탭+회차별 라쿠·exa 보완으로 확정
+- 파서 `lf_parse.py`(inlineStr 대응 · winnable=약점3≥1 or 약점10≥3) — 스크래치패드
+
+---
+
+## 2026-08-25 — /fr/solver 신설: 9번째 솔버 랜딩(앱 fr 배포 당일 착수) + fr 앱 전수 축어 납품(발신 = M-057 — ID 충돌로 M-056→M-057 조정)
 
 **통지** = M-057(`docs/reply-to-review-2026-08-25-m057.md` — ⚠ ID 충돌로 M-056→M-057 조정: 발신 직전
 재확인에서 검수장 M-056 선점 발견, 규약 2 이행) + 납품 `docs/solver-app-verbatim-fr-2026-08-24.md`

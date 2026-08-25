@@ -16,13 +16,25 @@
 「2026-08-25」 · 뱅크 = `docs/keyword-bank/fr-gto-solver.md` · 절차 정본 = `docs/solver-landing-playbook.md`
 (⚠ 플레이북 머리의 «8언어·zh-hant가 마지막» 서술은 낡았다 — 다음에 열 때 9언어로 갱신).
 
-**▶ 다음 착수 = 🔴 pt 경화 (사장님 판정 2026-08-25: «시급한 것은 pt 경화»)**
-- 대상 42편 · 두 겹이다: ① **EN 마스터 후속분 드리프트 소급**(EN 07-19 이후 추가된 도입부
-  링크·FAQ·§13 — `masterUpdated < EN updated`면 §14 전수대조 · [[rehardening-stale-link-drift]])
-  ② **브라질 현지 재조준**(es Spain 재경화 42/42 방법론 재사용 — lowfruits/라쿠 pt-BR 실측 +
-  §13 안전망 + 이벤트 글 §14 EN verbatim + 현지 슬랭 WebSearch)
-- 절차 = `REVIEW-PROTOCOL.md` 3층 게이트 + `npm run audit:hard -- --slug=` 🔴 0건 · posting.mdc 필독
-- 경화된 글 재수정 = **2차 교열 패스 필수**(수정이 새 결함을 만든다)
+**▶ 다음 착수 = 🔴 pt 경화 «회차 1: rules 클러스터 6편» (사장님 확정 2026-08-25 · 회차 0 완료)**
+
+**회차 0(2026-08-25)이 끝났다 — 재료는 전부 준비돼 있다. 다시 만들지 마라:**
+1. **뱅크 = `docs/keyword-bank/pt-hardening-2026-08.md` 통독이 선행** — 라쿠 39종(requestId
+   1256433) + lowfruits 9시드 전부 클러스터별 배정 완료. **§4 전략 방침(사장님 축어: 정면 금지 ·
+   롱테일 진입) 필독.**
+2. **드리프트 diff 완료** — 실질 드리프트 10편. **rules 6편 중 5편이 드리프트 확정**(betting-actions ·
+   blind-meaning · game-order · showdown-rules · texas-holdem-rules-for-beginners — pt 기준일
+   07-02~12 vs EN 07-19~08-14). 나머지 드리프트: continuation-bet(EN 08-19) · glossary · kicker ·
+   tournament-vs-cash-game(EN 08-11 vs pt 06-11) · apt-incheon(하루 차 — 자산화 전환분 확인).
+3. **회차 1 케이던스**: EN 대응 6편 diff 대조(후속 링크·FAQ·§13 소급) → 시드 3 롱테일 재조준
+   (desempate→tiebreak 연계 · small/big blind FS · all in FS · dealer FS · `regras do poker flush`
+   DA2 · cash game · fichas · iniciantes pdf/dicas) → 글별 편집→`audit:hard --slug` 0건→빌드→커밋→
+   푸시 → 클러스터 마감: **브라질 네이티브 적대 QA + 4렌즈 + 2차 교열**.
+4. 회차 순서(확정): ①rules 6 → ②hand-rankings 6(«maos DO poker» 8,100 편입 · sequencia 27,100
+   의도 실측 선행) → ③odds 7 → ④strategy 8(range 축 금맥 — 시드 9) → ⑤glossary 6(termos 약점층) →
+   ⑥tournament 9(§14 EN verbatim + apt-incheon 자산화 확인).
+5. 절차 = `REVIEW-PROTOCOL.md` 3층 게이트 · posting.mdc 필독 · 경화된 글 재수정 = **2차 교열 필수**.
+   EN 소급분(es 회차발 «불일치 5건» 포함)은 발견 즉시 같은 커밋으로.
 
 **그다음 후보(지시 대기)**:
 - fr 전략 코퍼스 확장(랜딩 내부링크 보강 겸 — `docs/local-voice/fr-fr.md`·fr 뱅크 준비됨)
