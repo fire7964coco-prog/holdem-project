@@ -151,7 +151,32 @@ quais sao as maos de poker
   `maior torneio de poker`(1/1 · FS) → **holdem-tournament·tournament-vs-cash-game 몫**
 - 노이즈: neymar 뉴스류(DA83~92) · banner/flyer/trofeu(인쇄물)
 
-### 시드 4 `como * no poker` · 시드 5 `o que e * no poker` — 대기
+### 시드 11(대체) `termos de poker` (44행 · analyzed 15)
+
+- **용어집 축 전체가 약점층** — analyzed 15행 중 winnable 12(최저 DA 20~21 · 약점 3~4/10 ·
+  등록 볼륨 없음 = 저볼륨×약한 SERP = 전형적 롱테일 진입로):
+  `termos do poker (em português)` · `termos poker significado` · **`dicionario termos do poker`(FS)** ·
+  `termos de poker com a letra b`(FS — **알파벳 브라우징 의도** · glossary 글의 알파벳 구조와 정합) ·
+  `em inglês` 쌍(영·포 대응 수요 — glossary의 中(英) 병기 관습과 정합) → **holdem-glossary 몫**
+- `quais são os termos de poker`(질문) — FAQ 후보
+
+### ⚠ 중간 와일드카드 시드 2종(`como * no poker`·`o que e * no poker`) = lowfruits가 못 펼침(narrow)
+
+`como ganhar no poker`도 narrow. → **대체 경로 확정**: 질문형 수확은 각 시드의 question/PAA 탭
+(이미 확보)이 본체이고, glossary·strategy 회차 때 라쿠 서제스트 + exa PAA로 보완한다.
+
+## 4. ★전략 방침 (사장님 확정 2026-08-25)
+
+> **«브라질은 포커 시장이 폭발적으로 성장하는 나라 — 그만큼 경쟁 사이트도 많다.
+> 우리는 롱테일 키워드로 전략을 잘 짜서 진입한다.»**
+
+- 정면 축(`regras do poker` 12,100 · `sequencia poker` 27,100 · `maos do poker` 8,100)은
+  **태그·H1 자연문 편입까지만** — 정면 승부 금지.
+- **조준 본체 = 약점 실측된 롱테일**: 이 뱅크의 winnable 행들(약점 ≥1/3 · 최저 DA ≤25) —
+  range 축(§시드 9) · 개별 족보 확률(§시드 7) · 전략 서브축(§시드 8) · 용어집(§시드 11) ·
+  규칙 세부(§시드 3). H2/FAQ가 롱테일 질문을 그대로 받는다(Q-A-E · 저볼륨 집합 전략
+  [[low-volume-longtail-aggregation]]).
+- 얇은 글 신설로 흩지 않는다 — **기존 42편에 흡수**가 기본, 신설은 후보 기록만(§오마하·§운영자 도구).
 
 ## 3. 다음 실측 할 일
 
