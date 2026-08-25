@@ -48,7 +48,8 @@
     "board": "node scripts/priority-board.mjs",
     "check:hsl": "node scripts/check-hsl-tokens.mjs",
     "check:hsl:selftest": "node scripts/check-hsl-tokens.mjs --selftest",
-    "check:meta-lang": "node scripts/check-meta-lang.mjs"
+    "check:meta-lang": "node scripts/check-meta-lang.mjs",
+    "check:meta-lang:selftest": "node scripts/check-meta-lang.mjs --selftest"
   },
   "dependencies": {
     "@radix-ui/react-tabs": "^1.1.4",
